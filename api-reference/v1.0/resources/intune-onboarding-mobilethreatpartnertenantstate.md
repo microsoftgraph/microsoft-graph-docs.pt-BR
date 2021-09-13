@@ -2,15 +2,15 @@
 title: Tipo denum mobileThreatPartnerTenantState
 description: Estado do parceiro desse locatário.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 8c1280b6803188a7001a1e4ea1c064f9cfbc93eaca6323a748403ae457da3647
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: aed5a2184d5cdb1bb10628001a96902ffcaaf367
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54235503"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59094265"
 ---
 # <a name="mobilethreatpartnertenantstate-enum-type"></a>Tipo denum mobileThreatPartnerTenantState
 

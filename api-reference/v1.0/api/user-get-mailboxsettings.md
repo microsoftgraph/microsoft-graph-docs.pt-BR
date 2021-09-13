@@ -1,16 +1,16 @@
 ---
 title: Obter as configurações da caixa de correio do usuário
 description: 'Obtenha as configurações de caixa de correio do usuário. Isso inclui configurações para respostas automáticas (notificar pessoas automaticamente quando '
-localization_priority: Normal
+ms.localizationpriority: medium
 author: abheek-das
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: e2f697a332eb4912f0f4f442f57ccf79b86d03ca
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: db605ea1abc7d288068ade7c844ed45ce85ef63c
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52054305"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59089995"
 ---
 # <a name="get-user-mailbox-settings"></a>Obter as configurações da caixa de correio do usuário
 
@@ -114,7 +114,7 @@ GET https://graph.microsoft.com/v1.0/me/mailboxSettings
 
 #### <a name="response"></a>Resposta
 A resposta inclui todas as configurações da caixa de correio do usuário conectado.
-Observação: o objeto de resposta exibido aqui pode ser encurtado para legibilidade.
+Observação: o objeto de resposta mostrado aqui pode ser encurtado para legibilidade.
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -198,7 +198,7 @@ GET https://graph.microsoft.com/v1.0/me/mailboxSettings/automaticRepliesSetting
 
 #### <a name="response"></a>Resposta
 A resposta inclui apenas as configurações de respostas automáticas.
-Observação: o objeto de resposta exibido aqui pode ser encurtado para legibilidade.
+Observação: o objeto de resposta mostrado aqui pode ser encurtado para legibilidade.
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -258,7 +258,7 @@ GET https://graph.microsoft.com/v1.0/me/mailboxSettings/workingHours
 
 #### <a name="response"></a>Resposta
 A resposta inclui apenas as configurações de horário de trabalho. As horas de trabalho do usuário estão em um [fuso horário personalizado](../resources/customtimezone.md).
-Observação: o objeto de resposta exibido aqui pode ser encurtado para legibilidade.
+Observação: o objeto de resposta mostrado aqui pode ser encurtado para legibilidade.
 <!-- {
   "blockType": "response",
   "name": "get_mailboxsettings_3",

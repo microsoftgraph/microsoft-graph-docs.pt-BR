@@ -1,16 +1,16 @@
 ---
 title: Tipo de recurso onPremisesExtensionAttributes
 description: A **propriedade onPremisesExtensionAttributes** da entidade do usuário contém quinze propriedades de atributo de extensão personalizadas. Para um usuário **onPremisesSyncEnabled,** esse conjunto de propriedades é mestre no Active Directory local e sincronizado com o Azure AD, e é somente leitura. Para um usuário somente na nuvem (onde **onPremisesSyncEnabled** é false), essas propriedades podem ser definidas sobre Exchange Online. Os atributos são lidos somente no Microsoft Graph.
-localization_priority: Normal
+ms.localizationpriority: medium
 author: jpettere
 ms.prod: users
 doc_type: resourcePageType
-ms.openlocfilehash: 8bc170e1878c1382cdf999211aae8ee0fbf05231c92c297ec87ca11ce64f505e
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 5b1ef010abec3ab0e3e4c5279654603faed4e220
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54189405"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59072005"
 ---
 # <a name="onpremisesextensionattributes-resource-type"></a>Tipo de recurso onPremisesExtensionAttributes
 
@@ -24,13 +24,13 @@ A **propriedade onPremisesExtensionAttributes** da entidade do usuário contém 
 | Propriedade     | Tipo   |Descrição|
 |:---------------|:--------|:----------|
 |extensionAttribute1|Cadeia de caracteres| Primeiro atributo de extensão personalizável. |
-|extensionAttribute2|Cadeia de caracteres| Segundo atributo de extensão personalizável. |
+|extensionAttribute2|String| Segundo atributo de extensão personalizável. |
 |extensionAttribute3|Cadeia de caracteres| Terceiro atributo de extensão personalizável. |
-|extensionAttribute4|Cadeia de caracteres| Quarto atributo de extensão personalizável. |
-|extensionAttribute5|Cadeia de caracteres| Quinto atributo de extensão personalizável. |
+|extensionAttribute4|String| Quarto atributo de extensão personalizável. |
+|extensionAttribute5|String| Quinto atributo de extensão personalizável. |
 |extensionAttribute6|Cadeia de caracteres| Sexto atributo de extensão personalizável. |
 |extensionAttribute7|Cadeia de caracteres| Sétimo atributo de extensão personalizável. |
-|extensionAttribute8|String| Oitavo atributo de extensão personalizável. |
+|extensionAttribute8|Cadeia de caracteres| Oitavo atributo de extensão personalizável. |
 |extensionAttribute9|String| Nono atributo de extensão personalizável. |
 |extensionAttribute10|Cadeia de caracteres| Décimo atributo de extensão personalizável. |
 |extensionAttribute11|Cadeia de caracteres| Décimo primeiro atributo de extensão personalizável. |

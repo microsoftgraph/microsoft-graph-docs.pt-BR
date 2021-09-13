@@ -2,15 +2,15 @@
 title: Tipo de recurso accessReviewInactiveUsersQueryScope
 description: Um tipo de accessReviewQueryScope que permite que apenas usuários inativos sejam selecionados no escopo de uma revisão de acesso.
 author: isabelleatmsft
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: governance
 doc_type: resourcePageType
-ms.openlocfilehash: c7c0fcfb14041888ba760492bcfe6a2a224eb8656fdab8d7fee922f3e86b2af9
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 5b41f9e60ab25b903a20a31a3b734bf34173bcb1
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54230820"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59021747"
 ---
 # <a name="accessreviewinactiveusersqueryscope-resource-type"></a>Tipo de recurso accessReviewInactiveUsersQueryScope
 
@@ -25,7 +25,7 @@ Herda de [accessReviewQueryScope](../resources/accessreviewqueryscope.md).
 |:---|:---|:---|
 |inactiveDuration|Duration|Define a duração da inatividade. A inatividade é baseada na última data de entrada do usuário em comparação com a data de início da instância de revisão de acesso. Se essa propriedade não for especificada, ela será atribuída ao valor padrão `PT0S` .|
 |consulta|Cadeia de caracteres|Herdado [de accessReviewQueryScope](../resources/accessreviewqueryscope.md).|
-|queryRoot|String|Herdado [de accessReviewQueryScope](../resources/accessreviewqueryscope.md).|
+|queryRoot|Cadeia de caracteres|Herdado [de accessReviewQueryScope](../resources/accessreviewqueryscope.md).|
 |queryType|Cadeia de caracteres|Herdado [de accessReviewQueryScope](../resources/accessreviewqueryscope.md).|
 
 Você também deve especificar a **propriedade @odata.type com** o valor `#microsoft.graph.accessReviewInactiveUsersQueryScope` . Para obter mais  informações sobre opções de configuração para escopo usando **accessReviewInactiveUsersQueryScope**, consulte Configure the scope of your [access review definition using the Microsoft Graph API](/graph/accessreviews-scope-concept).

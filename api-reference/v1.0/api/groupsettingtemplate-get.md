@@ -1,16 +1,16 @@
 ---
 title: Obter um modelo de configuração de grupo
 description: Obter um modelo de configuração de grupo que representa um modelo de configurações a partir dos quais as configurações podem ser criadas em um locatário.
-localization_priority: Normal
+ms.localizationpriority: medium
 author: Jordanndahl
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: 11e44dbaa2b90676b09dde4f08b1f9ec9b537843
-ms.sourcegitcommit: 9b8abc940a68dac6ee5da105ca29800cb59775f6
+ms.openlocfilehash: 5c87667e88506cab2cf9fd900170d776d08d94ed
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/25/2021
-ms.locfileid: "58513615"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59022284"
 ---
 # <a name="get-a-group-setting-template"></a>Obter um modelo de configuração de grupo
 

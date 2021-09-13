@@ -1,16 +1,16 @@
 ---
 title: 'servicePrincipal: addPassword'
 description: Adicione uma senha forte a uma servicePrincipal.
-localization_priority: Normal
+ms.localizationpriority: medium
 author: sureshja
 ms.prod: applications
 doc_type: apiPageType
-ms.openlocfilehash: c5343a6d08df634538840c92c2fa9823ff4811dc
-ms.sourcegitcommit: c6f7a931a8d83ac54f577b7bec08237fd17ce51a
+ms.openlocfilehash: 8758b78b1fda57451905a076059b5083a27d1feb
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/24/2021
-ms.locfileid: "58490585"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59053277"
 ---
 # <a name="serviceprincipal-addpassword"></a>servicePrincipal: addPassword
 

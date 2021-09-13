@@ -1,16 +1,16 @@
 ---
 title: 'usuário: getMemberGroups'
 description: Retorne todos os grupos dos quais o usuário é membro. A verificação é transitiva, ao contrário da leitura do
-localization_priority: Priority
+ms.localizationpriority: high
 author: jpettere
 ms.prod: users
 doc_type: apiPageType
-ms.openlocfilehash: 05d2bc10f18acf92bd21486961fc299e3e0e7611
-ms.sourcegitcommit: 01755ac7c0ab7becf28052e05e58567caa8364cd
+ms.openlocfilehash: c96cc15e2d910e03f7f425081ac0a1b2400d7fbf
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/21/2021
-ms.locfileid: "58454021"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59021887"
 ---
 # <a name="user-getmembergroups"></a>usuário: getMemberGroups
 

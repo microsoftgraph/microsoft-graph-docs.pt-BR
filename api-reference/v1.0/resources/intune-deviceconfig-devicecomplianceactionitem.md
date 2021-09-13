@@ -2,15 +2,15 @@
 title: Tipo de recurso deviceComplianceActionItem
 description: Configuração de ação agendada
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: e1ec5b138d3b2a5b949c072f7536fa9b482987ecfbbb4fb57e725e9a6c911890
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 419634d630682bed3c0987d4023b2eb8bc3aa84c
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54212008"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59036463"
 ---
 # <a name="devicecomplianceactionitem-resource-type"></a>Tipo de recurso deviceComplianceActionItem
 

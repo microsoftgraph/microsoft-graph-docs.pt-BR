@@ -1,16 +1,16 @@
 ---
 title: Remover claimsMappingPolicy
 description: Remova um claimsMappingPolicy de um servicePrincipal.
-localization_priority: Normal
+ms.localizationpriority: medium
 author: paulgarn
 ms.prod: applications
 doc_type: apiPageType
-ms.openlocfilehash: f39d2b80d893ce9a3f6241bafe17e5c76c83b798
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: 5c16073f8949428a10d136970db3debb27af6a33
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52049433"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59053249"
 ---
 # <a name="remove-claimsmappingpolicy"></a>Remover claimsMappingPolicy
 
@@ -24,8 +24,8 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 | Tipo de permissão                        | Permissões (da com menos para a com mais privilégios) |
 |:---------------------------------------|:--------------------------------------------|
-| Delegado (conta corporativa ou de estudante)     | Policy.Read.All e Application.ReadWrite.All, Policy.ReadWrite.ApplicationConfiguration e Application.ReadWrite.All |
-| Delegado (conta pessoal da Microsoft) | Sem suporte. |
+| Delegada (conta corporativa ou de estudante)     | Policy.Read.All e Application.ReadWrite.All, Policy.ReadWrite.ApplicationConfiguration e Application.ReadWrite.All |
+| Delegada (conta pessoal da Microsoft) | Sem suporte. |
 | Aplicativo                            | Policy.Read.All e Application.ReadWrite.OwnedBy, Policy.Read.All e Application.ReadWrite.All, Policy.ReadWrite.ApplicationConfiguration e Application.ReadWrite.OwnedBy, Policy.ReadWrite.ApplicationConfiguration e Application.ReadWrite.All |
 
 ## <a name="http-request"></a>Solicitação HTTP
@@ -88,8 +88,6 @@ DELETE https://graph.microsoft.com/v1.0/servicePrincipals/{id}/claimsMappingPoli
 ### <a name="response"></a>Resposta
 
 Este é um exemplo de resposta.
-
-> **Observação:** o objeto de resposta mostrado aqui pode ser encurtado para legibilidade.
 
 <!-- {
   "blockType": "response",

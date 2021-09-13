@@ -2,16 +2,16 @@
 author: daspek
 ms.date: 09/12/2017
 title: DefaultColumnValue
-localization_priority: Normal
+ms.localizationpriority: medium
 description: defaultColumnValue em um recurso columnDefinition especifica o valor padrão dessa coluna.
 ms.prod: ''
 doc_type: resourcePageType
-ms.openlocfilehash: 27c4d687ca1ef1601a1f687aef1af5b93906405e2a533cb4f924fc91d325d26d
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 93ba93e33359f17aaad8f5cc9f814f0b67758e3e
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54152765"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59029056"
 ---
 # <a name="defaultcolumnvalue-resource-type"></a>Tipo de recurso DefaultColumnValue
 

@@ -2,15 +2,15 @@
 title: Visão geral da API de Segurança do Microsoft Graph
 description: Você pode usar a API de Segurança do Microsoft Graph para se conectar aos produtos, serviços e parceiros de segurança da Microsoft para simplificar operações de segurança e melhorar a proteção contra ameaças, a detecção de ameaças e a capacidade de resposta. A API de Segurança do Microsoft Graph é um serviço (ou agente) intermediário que proporciona uma interface de programação única para conectar diversos provedores de Segurança do Microsoft Graph (também chamados provedores de segurança ou provedores). As solicitações para a API de Segurança do Microsoft Graph são federadas para todos os provedores de segurança aplicáveis. Os resultados são agregados e retornam ao aplicativo solicitantes em um esquema comum, como mostrado no diagrama a seguir. Para saber detalhes, confira o fluxo de dados da API de Segurança do Microsoft Graph.
 author: preetikr
-localization_priority: Priority
+ms.localizationpriority: high
 ms.prod: security
 ms.custom: scenarios:getting-started
-ms.openlocfilehash: 459f82f08ac8024ff1773809cd860e3b13acd051c822bb181b2ddd1718dff377
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: eb11b07c2770fc3724ed374b42f94bf1b4ade520
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54235077"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59093943"
 ---
 # <a name="microsoft-graph-security-api-overview"></a>Visão geral da API de Segurança do Microsoft Graph
 

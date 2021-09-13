@@ -1,16 +1,16 @@
 ---
 title: Tipo de recurso passwordCredential
 description: Contém uma credencial de senha associada a um aplicativo ou uma entidade de serviço.
-localization_priority: Normal
+ms.localizationpriority: medium
 doc_type: resourcePageType
 ms.prod: applications
 author: sureshja
-ms.openlocfilehash: 19adf39e385cd1c2015c471b3d1890372608499f
-ms.sourcegitcommit: c6f7a931a8d83ac54f577b7bec08237fd17ce51a
+ms.openlocfilehash: 7b054fde11959055f5b5219475055ce0a97c6607
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/24/2021
-ms.locfileid: "58490396"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59036022"
 ---
 # <a name="passwordcredential-resource-type"></a>Tipo de recurso passwordCredential
 
@@ -34,7 +34,7 @@ Representa uma credencial de senha associada a um aplicativo ou uma entidade de 
 | endDateTime | DateTimeOffset | A data e a hora em que a senha expira representada usando o formato ISO 8601 e está sempre em horário UTC. Por exemplo, meia-noite UTC em 1 de janeiro de 2014 é `2014-01-01T00:00:00Z`. Opcional. |
 | dica | Cadeia de caracteres | Contém os três primeiros caracteres da senha. Somente leitura. |
 | keyId | Guid | O identificador exclusivo da senha. |
-| secretText | Cadeia de caracteres | Somente leitura; Contém as senhas fortes geradas pelo Azure AD que têm entre 16 e 64 caracteres. O valor de senha gerado só é retornado durante a solicitação POST inicial [para addPassword](../api/application-addpassword.md). Não há como recuperar essa senha no futuro. |
+| secretText | String | Somente leitura; Contém as senhas fortes geradas pelo Azure AD que têm entre 16 e 64 caracteres. O valor de senha gerado só é retornado durante a solicitação POST inicial [para addPassword](../api/application-addpassword.md). Não há como recuperar essa senha no futuro. |
 | startDateTime | DateTimeOffset | A data e a hora em que a senha se torna válida. O tipo Timestamp representa informações de data e hora usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite UTC em 1 de janeiro de 2014 é `2014-01-01T00:00:00Z`. Opcional. |
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79

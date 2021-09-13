@@ -2,15 +2,15 @@
 title: Listar linkedResources
 description: Obter o linkedResources da propriedade de navegação linkedResources.
 author: avijityadav
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: ab6f7984a7202ebe12cab0be465deb8e6797dee0
-ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
+ms.openlocfilehash: 73068ae17615b1125793465f7cfb9e3fd119d5a7
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "50963434"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59049792"
 ---
 # <a name="list-linkedresources"></a>Listar linkedResources
 Namespace: microsoft.graph
@@ -22,8 +22,8 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 |Tipo de permissão|Permissões (da com menos para a com mais privilégios)|
 |:---|:---|
-|Delegado (conta corporativa ou de estudante)|Tasks.ReadWrite|
-|Delegado (conta pessoal da Microsoft)|Tasks.ReadWrite|
+|Delegada (conta corporativa ou de estudante)|Tasks.ReadWrite|
+|Delegada (conta pessoal da Microsoft)|Tasks.ReadWrite|
 |Aplicativo|Sem suporte.|
 
 ## <a name="http-request"></a>Solicitação HTTP

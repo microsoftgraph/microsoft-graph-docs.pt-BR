@@ -2,15 +2,15 @@
 title: Tipo de recurso win32LobAppFileSystemRule
 description: Um tipo complexo para armazenar dados de regra de arquivo ou pasta para um aplicativo LOB win32.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: f362d0a2a48c3b30c99ee847cd7a846ea64cf14c605b0fee656e9674081a6fbf
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: f3be90843d9facaa04b430e4a00a64a60499aaf0
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54189657"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59044696"
 ---
 # <a name="win32lobappfilesystemrule-resource-type"></a>Tipo de recurso win32LobAppFileSystemRule
 
@@ -32,7 +32,7 @@ Herda de [win32LobAppRule](../resources/intune-apps-win32lobapprule.md)
 |check32BitOn64System|Booliano|Um valor que indica se as variáveis de ambiente devem ser expandidas no contexto de 32 bits em sistemas de 64 bits.|
 |operationType|[win32LobAppFileSystemOperationType](../resources/intune-apps-win32lobappfilesystemoperationtype.md)|O tipo de operação do sistema de arquivos. Os possíveis valores são: `notConfigured`, `exists`, `modifiedDate`, `createdDate`, `version`, `sizeInMB`.|
 |operator|[win32LobAppRuleOperator](../resources/intune-apps-win32lobappruleoperator.md)|O operador para detecção de arquivo ou pasta. Os valores possíveis são: `notConfigured`, `equal`, `notEqual`, `greaterThan`, `greaterThanOrEqual`, `lessThan`, `lessThanOrEqual`.|
-|comparisonValue|Cadeia de caracteres|O valor de comparação de arquivo ou pasta.|
+|comparisonValue|String|O valor de comparação de arquivo ou pasta.|
 
 ## <a name="relationships"></a>Relações
 Nenhum

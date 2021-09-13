@@ -1,16 +1,16 @@
 ---
 title: Atualizar tokenIssuancePolicy
 description: Atualize as propriedades do objeto tokenIssuancePolicy.
-localization_priority: Normal
+ms.localizationpriority: medium
 author: luleonpla
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: 3e9784557a973f38dc7a172ae0a0fec57c763292
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: 1553f719813e4879b0130a431f8f52721afea0da
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52033752"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59094524"
 ---
 # <a name="update-tokenissuancepolicy"></a>Atualizar tokenIssuancePolicy
 
@@ -53,7 +53,7 @@ No corpo da solicitação, forneça os valores para os campos relevantes que dev
 |:-------------|:------------|:------------|
 |definition|Coleção String| Uma coleção de cadeias de caracteres que contém uma cadeia de caracteres JSON que define as regras e as configurações dessa política.  Obrigatório.|
 |description|Cadeia de caracteres| Descrição dessa política.|
-|displayName|Cadeia de caracteres| Nome de exibição para esta política. Obrigatório.|
+|displayName|String| Nome de exibição para esta política. Obrigatório.|
 |isOrganizationDefault|Boolean|Se definido como true, ativa essa política. Pode haver muitas políticas para o mesmo tipo de política, mas apenas uma pode ser ativada como o padrão da organização. Opcional, o valor padrão é false.|
 
 ## <a name="response"></a>Resposta

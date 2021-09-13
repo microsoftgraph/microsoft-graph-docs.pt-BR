@@ -2,15 +2,15 @@
 title: Atualizar contato
 description: Atualize as propriedades de um objeto contact.
 author: kevinbellinger
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 51231bdca731fb1636a3b52cdc1a27b36a21c28b
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: 7efb9013b43958ceee585975b8296a4ec607c016
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52048796"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59053655"
 ---
 # <a name="update-contact"></a>Atualizar contato
 
@@ -62,7 +62,7 @@ No corpo da solicitação, forneça os valores para os campos relevantes que dev
 |categories|String|As categorias associadas ao contato.|
 |children|String|Os nomes dos filhos do contato.|
 |nomeDaEmpresa|String|O nome da empresa do contato.|
-|department|String|O departamento do contato.|
+|departamento|String|O departamento do contato.|
 |displayName|String|O nome para exibição do contato. Observe que atualizações posteriores em outras propriedades podem fazer com que um valor gerado automaticamente sobrescreva o valor de displayName que você especificou. Para preservar a um valor preexistente, inclua-o como o displayName na operação atualizar.|
 |emailAddresses|Coleção [EmailAddress](../resources/emailaddress.md)|Os endereços de email do contato.|
 |fileAs|String|O nome com o qual o contato está arquivado.|
@@ -135,7 +135,7 @@ Content-length: 1977
 ---
 
 ##### <a name="response"></a>Resposta
-Veja a seguir um exemplo da resposta. Observação: o objeto de resposta exibido aqui pode ser encurtado para legibilidade.
+Aqui está um exemplo da resposta. Observação: o objeto de resposta mostrado aqui pode ser reduzido para facilitar a leitura.
 <!-- {
   "blockType": "response",
   "truncated": true,

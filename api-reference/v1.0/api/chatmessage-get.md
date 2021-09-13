@@ -2,15 +2,15 @@
 title: Receber chatMessagem em um canal ou chat
 description: Recupere uma única mensagem (sem suas respostas) em um canal ou chat.
 author: RamjotSingh
-localization_priority: Priority
+ms.localizationpriority: high
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: aabaf023d028a30b3d0ce13c0521bc843e6837ce
-ms.sourcegitcommit: 22bd45d272681658d46a8b99af3c3eabc7b05cb1
+ms.openlocfilehash: db192a1220d7f515988a8b88d13246e87a0641fd
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/18/2021
-ms.locfileid: "58384088"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59022867"
 ---
 # <a name="get-chatmessage-in-a-channel-or-chat"></a>Receber chatMessagem em um canal ou chat
 

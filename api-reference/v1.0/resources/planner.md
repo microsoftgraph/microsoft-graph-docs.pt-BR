@@ -1,16 +1,16 @@
 ---
 title: Tipo de recurso do planner
 description: O **recurso** planner é o ponto de entrada para o modelo de objeto do Planner. Ele retorna um recurso de **planejador de singleton.**  Ele não contém propriedades usáveis.
-localization_priority: Normal
+ms.localizationpriority: medium
 author: TarkanSevilmis
 ms.prod: planner
 doc_type: resourcePageType
-ms.openlocfilehash: 430235e1a69a50b6c7cc3031cfd4bc3efd605f1c57333da2e427eb6c3f34905e
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: cdb0234edce0e28456ab830b259f09d1f874b1c7
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54218440"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59044381"
 ---
 # <a name="planner-resource-type"></a>Tipo de recurso do planner
 

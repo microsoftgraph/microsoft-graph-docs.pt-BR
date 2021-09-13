@@ -2,15 +2,15 @@
 title: 'call: subscribeToTone'
 description: Inscreva-se em DTMF (sinalização multifrequência de tom duplo). Isso permite que você seja notificado quando o usuário pressionar teclas em um "Dialpad".
 author: ananmishr
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: bca2ba67be2f62f87c84390a5a1bc3a2799e9498
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: a7b4cec6eac6d927c3120d13239480de5979fd1d
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52051596"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59016824"
 ---
 # <a name="call-subscribetotone"></a>call: subscribeToTone
 
@@ -49,7 +49,7 @@ Forneça um objeto JSON com os seguintes parâmetros no corpo da solicitação.
 
 | Parâmetro      | Tipo    | Descrição |
 |:---------------|:--------|:------------|
-| clientContext  | Cadeia de caracteres  | Cadeia de caracteres de contexto de cliente exclusiva. Pode ter no máximo 256 caracteres. |
+| clientContext  | String  | Cadeia de caracteres de contexto de cliente exclusiva. Pode ter no máximo 256 caracteres. |
 
 ## <a name="response"></a>Resposta
 Se bem sucedido, este método retorna um código de resposta `200 OK`.

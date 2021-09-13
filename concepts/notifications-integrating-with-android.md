@@ -1,14 +1,14 @@
 ---
 title: Integração do aplicativo Android no SDK do lado do cliente para notificações ao usuário
 description: Integre o aplicativo Android com notificações de usuário no SDK do cliente.
-localization_priority: Priority
+ms.localizationpriority: high
 ms.prod: notifications
-ms.openlocfilehash: 720991eb253a9f1a23ff0299997e99c9c24345439d2f85c897a0e758e346a79a
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 8f7615b963e5d423e2195d9791ac9f1f2af0244a
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54211700"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59062310"
 ---
 # <a name="integrate-your-android-app-with-the-client-side-sdk-for-user-notifications"></a>Integração do aplicativo Android no SDK do lado do cliente para notificações ao usuário
 
@@ -31,7 +31,7 @@ O processo envolve alguns componentes:
 
 O diagrama mostra as próximas etapas: 
 
-1. Lógica do aplicativo. Esta etapa captura o que aciona a notificação a ser publicada para o usuário. Esta é uma lógica específica do aplicativo e pode ser um evento ou atualização de dados sobre alguma outra coisa no Microsoft Graph, como um novo evento de calendário ou atribuição de tarefa, ou então seu serviço de aplicativo deseja notificar o usuário sobre.
+1. Lógica do aplicativo. Esta etapa captura o que aciona a notificação a ser publicada para o usuário. Esta é uma lógica específica do aplicativo e pode ser um evento ou atualização de dados sobre alguma outra coisa no Microsoft Graph, como um novo evento de calendário ou atribuição de tarefa, ou o que seu serviço de aplicativo desejar notificar ao usuário.
 2. O servidor do aplicativo publica uma notificação para o usuário alvo pela API de notificações do Microsoft Graph. Para saber mais, consulte [integração com o lado do servidor](notifications-integrating-app-server.md).
 3. Ao receber a solicitação Web com nova notificação, as notificações do Microsoft Graph mantêm o conteúdo da notificação em segurança na nuvem para esse aplicativo e esse usuário.
 4. Para cada instância do cliente do aplicativo inscrita para receber notificações para esse usuário, as notificações do Microsoft Graph envia um sinal para notificar cliente do aplicativo, por meio do serviço de envio por push nativo fornecido pelo sistema operacional. Nesse caso, o aplicativo é um aplicativo Android, e ele usa [mensagens de dados FCM](https://firebase.google.com/docs/cloud-messaging/concept-options) para enviar o sinal. 
@@ -284,7 +284,7 @@ public UserNotificationsManager(@NonNull Context context, @NonNull ConnectedDevi
 
 ## <a name="receiving-and-managing-user-notifications"></a>Receber e gerenciar as notificações do usuário
 
-O diagrama de fluxo já apresentado nesse tópico mostra que os padrões de programação para lidar com novas notificações de entrada de um servidor do aplicativo e uma atualização de notificação ou exclusão iniciado de outra instância do aplicativo do cliente são semelhantes. A seguir estão as etapas para lidar com essas alterações de dados. 
+O diagrama de fluxo anterior neste tópico mostra que os padrões de programação para lidar com novas notificações de entrada de um servidor de aplicativo e uma atualização ou exclusão de notificação iniciada a partir de outra instância do aplicativo cliente são semelhantes. A seguir estão as etapas para lidar com essas alterações de dados. 
 
 ### <a name="handling-incoming-push-notification-signal"></a>Gerenciar sinal de notificações por push de entrada
 

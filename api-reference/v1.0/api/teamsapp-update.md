@@ -1,22 +1,22 @@
 ---
 title: Atualizar teamsApp
-description: 'Atualize um aplicativo publicado anteriormente em um catálogo de aplicativos do Teams. '
+description: 'Atualize um aplicativo publicado anteriormente em um Teams de aplicativos. '
 author: nkramer
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 8610c51922989d96f455073ea824c258d6d454ba
-ms.sourcegitcommit: 40947e6f4337c8c4193d85bb862e15f67263e1e7
+ms.openlocfilehash: f10ae41876d4001c0de0592984019e3271ecb964
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/13/2021
-ms.locfileid: "50774796"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59084906"
 ---
 # <a name="update-teamsapp"></a>Atualizar teamsApp
 
 Namespace: microsoft.graph
 
-Atualize [um aplicativo](../resources/teamsapp.md) publicado anteriormente no catálogo de aplicativos do Microsoft Teams. Para atualizar um aplicativo, a **propriedade distributionMethod** para o aplicativo deve ser definida como `organization` .
+Atualize [um aplicativo](../resources/teamsapp.md) publicado anteriormente no Microsoft Teams de aplicativos. Para atualizar um aplicativo, a **propriedade distributionMethod** para o aplicativo deve ser definida como `organization` .
 
 Essa API atualiza especificamente um aplicativo publicado no catálogo de aplicativos da sua organização (o catálogo de aplicativos de locatário).
 
@@ -55,7 +55,7 @@ POST /appCatalogs/teamsApps/{id}/appDefinitions
 
 ## <a name="request-body"></a>Corpo da solicitação
 
-No corpo da solicitação, inclua uma carga de manifesto zip do Teams. Para obter detalhes, consulte [Create an app package](/microsoftteams/platform/concepts/apps/apps-package)
+No corpo da solicitação, inclua uma carga Teams de manifesto zip. Para obter detalhes, consulte [Create an app package](/microsoftteams/platform/concepts/apps/apps-package)
 
 >**Observação:** Use a ID retornada da chamada Lista [de](./appcatalogs-list-teamsapps.md) aplicativos publicados para fazer referência ao aplicativo que você gostaria de atualizar. Não use a ID do manifesto do pacote do aplicativo zip.
 
@@ -65,7 +65,7 @@ Se tiver êxito, este método retornará um código de resposta `204 No Content`
 
 ## <a name="examples"></a>Exemplos
 
-### <a name="example-1-update-an-application-previously-published-to-the-microsoft-teams-app-catalog"></a>Exemplo 1: atualizar um aplicativo publicado anteriormente no catálogo de aplicativos do Microsoft Teams
+### <a name="example-1-update-an-application-previously-published-to-the-microsoft-teams-app-catalog"></a>Exemplo 1: atualizar um aplicativo publicado anteriormente no catálogo de Microsoft Teams de aplicativos
 
 #### <a name="request"></a>Solicitação
 
@@ -79,7 +79,7 @@ Content-length: 244
 [Zip file containing a Teams app package]
 ```
 
-Para obter detalhes sobre o arquivo zip do aplicativo Teams, consulte [Create app package](/microsoftteams/platform/concepts/apps/apps-package).
+Para obter detalhes sobre o arquivo zip Teams aplicativo, consulte [Create app package](/microsoftteams/platform/concepts/apps/apps-package).
 <!-- markdownlint-disable MD024 -->
 
 #### <a name="response"></a>Resposta

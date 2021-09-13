@@ -1,14 +1,14 @@
 ---
 title: Componente de arquivo no Microsoft Graph Toolkit
 description: O componente de arquivo é usado para exibir um arquivo mostrando o ícone e o nome
-localization_priority: Normal
+ms.localizationpriority: medium
 author: beth-panx
-ms.openlocfilehash: a5e3569822d01c06d881070b56653f5bd2e2a89f2905c787699caa926c9b98b6
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 8b3aaac8e0216cad39b0dd566de763d26eacfb4a
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54196324"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59035329"
 ---
 # <a name="file-component-in-the-microsoft-graph-toolkit"></a>Componente de arquivo no Microsoft Graph Toolkit
 
@@ -135,8 +135,8 @@ O `mgt-file` componente dá suporte a vários [modelos](../customize-components/
 
 | Tipo de dados | Contexto de dados | Descrição |
 | ----------- | -------------- | ------------- |
-| loading | nenhuma | O modelo a ser render enquanto o componente está em um estado de carregamento. |
-| no-data | nenhuma | O modelo a ser renderização quando nenhum dado de arquivo estiver disponível. |
+| loading | Nenhuma | O modelo a ser render enquanto o componente está em um estado de carregamento. |
+| no-data | Nenhuma | O modelo a ser renderização quando nenhum dado de arquivo estiver disponível. |
 | Padrão. | file: o objeto de detalhes do arquivo | O modelo padrão substitui todo o componente por seu próprio. |
 
 ## <a name="authentication"></a>Autenticação

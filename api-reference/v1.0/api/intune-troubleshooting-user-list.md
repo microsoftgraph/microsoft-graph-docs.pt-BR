@@ -2,15 +2,15 @@
 title: Listar usuários
 description: Listar propriedades e relações de objetos de usuário.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 455175da4ae011b34ab77277b81bcfe946a16920
-ms.sourcegitcommit: 0116750a01323bc9bedd192d4a780edbe7ce0fdc
+ms.openlocfilehash: 66b8b5c8a36d1668f567955f7a5c22350bee4751
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58263087"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59019787"
 ---
 # <a name="list-users"></a>Listar usuários
 

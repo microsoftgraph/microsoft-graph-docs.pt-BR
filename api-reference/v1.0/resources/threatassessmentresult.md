@@ -1,16 +1,16 @@
 ---
 title: Tipo de recurso threatAssessmentResult
 description: Representa um item de resultado de avaliação de ameaça.
-localization_priority: Normal
+ms.localizationpriority: medium
 author: hafen-ms
 ms.prod: security
 doc_type: resourcePageType
-ms.openlocfilehash: 82b67910881ceb6029e7c64a54dcd956bef17e74aaae44b23b5f816b8cf01ced
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 3458a4b363bda0ebec1e245e939121aa0647347b
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54163625"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59055791"
 ---
 # <a name="threatassessmentresult-resource-type"></a>Tipo de recurso threatAssessmentResult
 
@@ -21,7 +21,7 @@ Representa um item de resultado de avaliação de ameaça.
 | Propriedade     | Tipo        | Descrição |
 |:-------------|:------------|:------------|
 |createdDateTime|DateTimeOffset|O tipo Timestamp representa informações de data e hora usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite UTC em 1 de janeiro de 2014 é `2014-01-01T00:00:00Z`.|
-|id|Cadeia de caracteres|A ID do resultado da avaliação de ameaças é um GUID (identificador global exclusivo).|
+|id|String|A ID do resultado da avaliação de ameaças é um GUID (identificador global exclusivo).|
 |mensagem|String|A mensagem de resultado para cada avaliação de ameaça.|
 |resultType|[threatAssessmentResultType](enums.md#threatassessmentresulttype-values)|O tipo de resultado da avaliação de ameaça. Os valores possíveis são: `checkPolicy` e `rescan`.|
 

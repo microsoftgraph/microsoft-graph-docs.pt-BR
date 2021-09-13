@@ -2,15 +2,15 @@
 title: ratingAustraliaTelevisionType tipo de número
 description: Rótulos de classificação de conteúdo de TV na Austrália
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 2374d8b29ceb2619fc4512c03bd509716cb28c7b
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: e713ef2884ddbdda7a8bc6e14ed34a202a738d00
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58782956"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59017433"
 ---
 # <a name="ratingaustraliatelevisiontype-enum-type"></a>ratingAustraliaTelevisionType tipo de número
 

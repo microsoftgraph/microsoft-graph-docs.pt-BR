@@ -1,16 +1,16 @@
 ---
 title: Atualizar extensão aberta
 description: 'Atualize uma extensão aberta (objeto openTypeExtension) com as propriedades no corpo da solicitação:'
-localization_priority: Normal
+ms.localizationpriority: medium
 author: dkershaw10
 ms.prod: extensions
 doc_type: apiPageType
-ms.openlocfilehash: e32fc9a5a37453bfe77a2fa4a8539d69ebedef6f
-ms.sourcegitcommit: d014f72cf2cd130bedb02651092c0be12967b679
+ms.openlocfilehash: 8dfdb00a759f89ed4650d9cd3fcad55a05f1403e
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "50470708"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59079271"
 ---
 # <a name="update-open-extension"></a>Atualizar extensão aberta
 
@@ -69,7 +69,7 @@ Confira a seção [Solicitar corpo](#request-body) sobre como incluir no corpo d
 ## <a name="path-parameters"></a>Parâmetros do caminho
 |Parâmetro|Tipo|Descrição|
 |:-----|:-----|:-----|
-|id|string|Um identificador exclusivo para uma instância da coleção correspondente. Obrigatório.|
+|id|cadeia de caracteres|Um identificador exclusivo para uma instância da coleção correspondente. Obrigatório.|
 |extensionId|string|Espaço reservado para um nome de extensão que é um identificador de texto exclusivo para a extensão ou um nome totalmente qualificado que concatena o tipo de extensão e o identificador de texto exclusivo. O nome totalmente qualificado é retornado na propriedade `id` quando você cria a extensão. Obrigatório.|
 
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
@@ -82,7 +82,7 @@ Confira a seção [Solicitar corpo](#request-body) sobre como incluir no corpo d
 
 Forneça um corpo JSON de um objeto [openTypeExtension](../resources/opentypeextension.md), com os seguintes pares de nome e valor obrigatórios e os dados personalizados para alterar ou adicionar a essa extensão. Os dados na carga JSON podem ser tipos primitivos ou matrizes de tipos primitivos.
 
-| Nome       | Valor |
+| Name       | Valor |
 |:---------------|:----------|
 | @odata.type | microsoft.graph.openTypeExtension |
 | extensionName | %unique_string% |

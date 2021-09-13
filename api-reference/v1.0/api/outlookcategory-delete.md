@@ -2,15 +2,15 @@
 title: Excluir categoria do Outlook
 description: Exclua o objeto outlookCategory especificado.
 author: abheek-das
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: bf557fcefa48857a93557be8a87c3394d936f149
-ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
+ms.openlocfilehash: da3a84b70b0af55beb85a6f74a012ed876b13326
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/06/2021
-ms.locfileid: "50133109"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59037359"
 ---
 # <a name="delete-outlook-category"></a>Excluir categoria do Outlook
 
@@ -19,7 +19,7 @@ Namespace: microsoft.graph
 
 Exclua o objeto [outlookCategory](../resources/outlookcategory.md) especificado.
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |

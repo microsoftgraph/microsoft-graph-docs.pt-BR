@@ -1,16 +1,16 @@
 ---
 title: Criar identityUserFlowAttribute
 description: Crie um novo objeto identityUserFlowAttribute.
-localization_priority: Normal
+ms.localizationpriority: medium
 doc_type: apiPageType
 author: jkdouglas
 ms.prod: identity-and-sign-in
-ms.openlocfilehash: ac068b6956c48f67245f6c93dca764cb575e3ba3
-ms.sourcegitcommit: 32c83957ee69f21a10cd5f759adb884ce4b41c52
+ms.openlocfilehash: c02baf42a497ff10324c4ad26f0eb268c2fd0af2
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "51920838"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59045684"
 ---
 # <a name="create-identityuserflowattribute"></a>Criar identityUserFlowAttribute
 
@@ -26,12 +26,12 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |:--------------------|:---------------------------------------------------------|
 |Delegada (conta corporativa ou de estudante)|IdentityUserFlow.ReadWrite.All|
 |Delegada (conta pessoal da Microsoft)| Sem suporte.|
-|Application|IdentityUserFlow.ReadWrite.All|
+|Aplicativo|IdentityUserFlow.ReadWrite.All|
 
 A conta de trabalho ou de estudante precisa pertencer a uma das seguintes funções:
 
 * Administrador global
-* Administrador de Atributo de Fluxo de Usuário de Identidade Externa
+* Administrador de atributos Flow usuário de identidade externa
 
 ## <a name="http-request"></a>Solicitação HTTP
 
@@ -56,7 +56,7 @@ No corpo da solicitação, forneça uma representação JSON de [identityUserFlo
 |:---------------|:--------|:----------|
 |id|String|O identificador do atributo de fluxo do usuário. Esse é um atributo somente leitura criado automaticamente.|
 |displayName|String|O nome de exibição do atributo de fluxo do usuário.|
-|descrição|String|A descrição do atributo de fluxo do usuário. Ele é mostrado para o usuário no momento da assinatura.|
+|descrição|Cadeia de caracteres|A descrição do atributo de fluxo do usuário. Ele é mostrado para o usuário no momento da assinatura.|
 |userFlowAttributeType|String|O tipo do atributo de fluxo do usuário. Esse é um atributo somente leitura que é definido automaticamente. Dependendo do tipo de atributo, os valores dessa propriedade serão `builtIn` ou `custom`.|
 |dataType|Cadeia de caracteres|O tipo de dados do atributo de fluxo do usuário. Isso não pode ser modificado depois que o atributo de fluxo de usuário personalizado é criado. Os valores com suporte para **tipo de dados** são:<br/><ul><li>`string` </li><li>`boolean`</li><li>`int64`</li></ul>|
 

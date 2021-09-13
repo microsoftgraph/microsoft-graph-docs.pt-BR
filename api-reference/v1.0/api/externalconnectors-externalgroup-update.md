@@ -2,15 +2,15 @@
 title: Atualizar externalGroup
 description: Atualize as propriedades de um objeto externalGroup.
 author: sacampbe-msft
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: search
 doc_type: apiPageType
-ms.openlocfilehash: 52a818e5679d212a0afe1318c9125d1d8f88ffcd
-ms.sourcegitcommit: 6efd9df497d795988cd85474f379d1989b0995b7
+ms.openlocfilehash: f0a6f079adc463392475d743413210d980a4c6b5
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/30/2021
-ms.locfileid: "58697490"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59022363"
 ---
 # <a name="update-externalgroup"></a>Atualizar externalGroup
 Namespace: microsoft.graph.externalConnectors
@@ -52,7 +52,7 @@ No corpo da solicitação, fornece os valores para propriedades relevantes que d
 | Propriedade    | Tipo   | Descrição                                                                                                              |
 |:------------|:-------|:-------------------------------------------------------------------------------------------------------------------------|
 | displayName | Cadeia de caracteres | O nome amigável do grupo externo. Opcional.                                                                      |
-| descrição | Cadeia de caracteres | A descrição do grupo externo. Opcional.                                                                         |
+| description | String | A descrição do grupo externo. Opcional.                                                                         |
 
 
 
@@ -63,6 +63,8 @@ Se tiver êxito, este método retornará um código de resposta `204 No Content`
 ## <a name="example"></a>Exemplo
 
 ### <a name="request"></a>Solicitação
+
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "update_externalgroup"
@@ -77,6 +79,24 @@ Content-Type: application/json
   "description": "The product marketing team"
 }
 ```
+# <a name="c"></a>[C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/update-externalgroup-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/update-externalgroup-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/update-externalgroup-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/update-externalgroup-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 
 ### <a name="response"></a>Resposta

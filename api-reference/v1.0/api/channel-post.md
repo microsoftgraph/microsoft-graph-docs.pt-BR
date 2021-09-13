@@ -1,16 +1,16 @@
 ---
 title: Criar canal
 description: Crie um novo canal em uma equipe, conforme especificado no corpo da solicitação.
-localization_priority: Normal
+ms.localizationpriority: medium
 author: nkramer
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: ac06a2898662ce13db588ea0f243f6d3eea65805
-ms.sourcegitcommit: 08d47a31c48fd69ae4fcee26e34fdd65ad1ba69f
+ms.openlocfilehash: 594df9389c42de62e87064881f9dc1f41d0a9fe9
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/02/2021
-ms.locfileid: "51508429"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59056918"
 ---
 # <a name="create-channel"></a>Criar canal
 
@@ -24,8 +24,8 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegado (conta corporativa ou de estudante) | Channel.Create, Group.ReadWrite.All, Directory.ReadWrite.All |
-|Delegado (conta pessoal da Microsoft) | Sem suporte.    |
+|Delegada (conta corporativa ou de estudante) | Channel.Create, Group.ReadWrite.All, Directory.ReadWrite.All |
+|Delegada (conta pessoal da Microsoft) | Sem suporte.    |
 |Aplicativo | Channel.Create.Group*, Channel.Create, Teamwork.Migrate.All, Group.ReadWrite.All, Directory.ReadWrite.All |
 
 > **Observações**: Permissões marcadas com * use [o consentimento específico do recurso]( https://aka.ms/teams-rsc).

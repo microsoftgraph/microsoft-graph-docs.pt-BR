@@ -1,16 +1,16 @@
 ---
 title: tipo de recurso targetResource
 description: Representa tipos de recursos de destino associados à atividade de auditoria.
-localization_priority: Normal
+ms.localizationpriority: medium
 author: dhanyahk
 ms.prod: identity-and-access-reports
 doc_type: resourcePageType
-ms.openlocfilehash: 4a98ccc2bf577289e867345a256c737275a295ca0a7954d23138f1cb68d669bc
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 3c922888888971a6dc46ddddc88fbef4e77873a2
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54222627"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59032101"
 ---
 # <a name="targetresource-resource-type"></a>tipo de recurso targetResource
 
@@ -23,7 +23,7 @@ Representa tipos de recursos de destino associados à atividade de auditoria.
 | Propriedade     | Tipo   |Descrição|
 |:---------------|:--------|:----------|
 |id|Cadeia de caracteres|Indica a ID exclusiva do recurso.|
-|displayName|Cadeia de caracteres|Indica o nome visível definido para o recurso. Normalmente especificado quando o recurso é criado.|
+|displayName|String|Indica o nome visível definido para o recurso. Normalmente especificado quando o recurso é criado.|
 |tipo|Cadeia de caracteres|Descreve o tipo de recurso.  Os valores de `Application` exemplo `Group` incluem , `ServicePrincipal` , e `User` .|
 |userPrincipalName|Cadeia de caracteres|Quando **o** tipo é definido como , isso inclui o nome de usuário que iniciou a `User` ação; para outros `null` tipos.|
 |groupType|groupType|Quando **o** tipo é definido como `Group` , isso indica o tipo de grupo. Os valores possíveis são: `unifiedGroups` `azureAD` , e `unknownFutureValue`|

@@ -1,16 +1,16 @@
 ---
 title: Criar uma propriedade estendida de valor único
 description: 'Crie uma ou mais propriedades estendidas de vários valores em uma instância nova ou existente de um recurso. '
-localization_priority: Normal
+ms.localizationpriority: medium
 author: abheek-das
 ms.prod: ''
 doc_type: apiPageType
-ms.openlocfilehash: 3e2a47d9570f946e66e2722d476a4fbbd302705878bce91f6713b150991e1670
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: ba741a172d8c93616626c4848cb6f8e2793155b4
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54235776"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59085081"
 ---
 # <a name="create-single-value-extended-property"></a>Criar uma propriedade estendida de valor único
 
@@ -129,7 +129,7 @@ Forneça um corpo JSON de cada objeto [singleValueLegacyExtendedProperty](../res
 |Propriedade|Tipo|Descrição|
 |:-----|:-----|:-----|
 |singleValueExtendedProperties|Coleção [singleValueLegacyExtendedProperty](../resources/singlevaluelegacyextendedproperty.md)| Uma matriz de uma ou mais propriedades estendidas de valor único. |
-|id|String|Para cada propriedade na coleção **singleValueExtendedProperties**, especifique isso para identificar a propriedade. Deve seguir um dos formatos com suporte. Para saber mais, confira [Visão geral das propriedades estendidas do Outlook](../resources/extended-properties-overview.md). Obrigatório.|
+|id|Cadeia de caracteres|Para cada propriedade na coleção **singleValueExtendedProperties**, especifique isso para identificar a propriedade. Deve seguir um dos formatos com suporte. Para saber mais, confira [Visão geral das propriedades estendidas do Outlook](../resources/extended-properties-overview.md). Obrigatório.|
 |valor|string|Para cada propriedade na coleção **singleValueExtendedProperties**, especifique o valor da propriedade. Obrigatório.|
 
 Ao criar uma propriedade estendida em uma _nova_ instância de recurso, além da nova coleção **singleValueExtendedProperties**, forneça uma representação JSON dessa instância de recurso (ou seja, [message](../resources/message.md), [mailFolder](../resources/mailfolder.md), [event](../resources/event.md), etc.)

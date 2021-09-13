@@ -1,16 +1,16 @@
 ---
 title: Tipo de recurso visualInfo
 description: Um tipo complexo para representar a **propriedade visualElements** no objeto activity.
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: project-rome
 author: ailae
 doc_type: resourcePageType
-ms.openlocfilehash: 400c5ec8746502e08023584a2a76e6c27af54efe28e81e866c9196499a79b5b6
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 3c71a3613c51c1b7494fd44550108d8cd63645ff
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54152296"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59019185"
 ---
 # <a name="visualinfo-resource-type"></a>Tipo de recurso visualInfo
 

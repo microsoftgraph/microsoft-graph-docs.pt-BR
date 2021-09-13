@@ -3,14 +3,14 @@ title: Configurar notificações para alterações nos dados de usuário
 description: A API do Microsoft Graph usa um mecanismo de webhook para fornecer notificações de alteração aos clientes. Um cliente é um serviço Web que configura sua própria URL para receber notificações. Aplicativos cliente usam notificações de alteração para atualizar seu estado após alterações.
 author: davidmu1
 ms.prod: non-product-specific
-localization_priority: Priority
+ms.localizationpriority: high
 ms.custom: graphiamtop20
-ms.openlocfilehash: fc374f2245e405a32012c8d75c515f76838714c4b36b8e1aa7dfac7ff1558703
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: b97e13f410716f9c733a48e83bb842f8ae1702a9
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54221031"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59028769"
 ---
 # <a name="set-up-notifications-for-changes-in-user-data"></a>Configurar notificações para alterações nos dados de usuário
 

@@ -1,16 +1,16 @@
 ---
 title: Criar featureRolloutPolicy
 description: Crie um novo objeto featureRolloutPolicy.
-localization_priority: Normal
+ms.localizationpriority: medium
 author: madhavpatel6
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: 5d1d55faa62ea070287692298c568b0db48f8d15
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: 47105bb6d4ffb267e5c7c700f14f900bea548264
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52052387"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59046096"
 ---
 # <a name="create-featurerolloutpolicy"></a>Criar featureRolloutPolicy
 
@@ -24,8 +24,8 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 | Tipo de permissão                        | Permissões (da com menos para a com mais privilégios) |
 |:---------------------------------------|:--------------------------------------------|
-| Delegado (conta corporativa ou de estudante)     | Directory.ReadWrite.All |
-| Delegado (conta pessoal da Microsoft) | Sem suporte. |
+| Delegada (conta corporativa ou de estudante)     | Directory.ReadWrite.All |
+| Delegada (conta pessoal da Microsoft) | Sem suporte. |
 | Aplicativo                            | Sem suporte. |
 
 ## <a name="http-request"></a>Solicitação HTTP
@@ -50,9 +50,9 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar [um feat
 
 | Parâmetro | Tipo | Descrição|
 |:---------------|:--------|:----------|
-|displayName |string |O nome de exibição dessa política de lançamento de recursos.|
+|displayName |cadeia de caracteres |O nome de exibição dessa política de lançamento de recursos.|
 |feature |stagedFeatureName |O recurso que seria lançado usando essa política.|
-|isEnabled |string |Indica se a adoção de recursos está habilitada.|
+|isEnabled |cadeia de caracteres |Indica se a adoção de recursos está habilitada.|
 
 ## <a name="response"></a>Resposta
 

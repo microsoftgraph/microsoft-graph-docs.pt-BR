@@ -1,16 +1,16 @@
 ---
 title: Obter página
 description: Recupere as propriedades e as relações de um objeto page.
-localization_priority: Normal
+ms.localizationpriority: medium
 author: jewan-microsoft
 ms.prod: onenote
 doc_type: apiPageType
-ms.openlocfilehash: 58b77a00299656cb145f64ae83647717619ada8ff5383d2de27f3ad6c2da28ee
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: db7ebc0bc914da35ff019c767d350cf0079f8167
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54212316"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59045018"
 ---
 # <a name="get-page"></a>Obter página
 
@@ -42,8 +42,8 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegado (conta corporativa ou de estudante) | Notes.Read, Notes.ReadWrite, Notes.Read.All, Notes.ReadWrite.All    |
-|Delegado (conta pessoal da Microsoft) | Notes.Read, Notes.ReadWrite    |
+|Delegada (conta corporativa ou de estudante) | Notes.Read, Notes.ReadWrite, Notes.Read.All, Notes.ReadWrite.All    |
+|Delegada (conta pessoal da Microsoft) | Notes.Read, Notes.ReadWrite    |
 |Aplicativo | Notes.Read.All, Notes.ReadWrite.All |
 
 ## <a name="http-request"></a>Solicitação HTTP

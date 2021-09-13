@@ -1,16 +1,16 @@
 ---
 title: Tipo de recurso shiftAvailability
 description: Disponibilidade do usuário a ser agendado para o trabalho e seu padrão de recorrência.
-localization_priority: Normal
+ms.localizationpriority: medium
 author: akumar39
 ms.prod: microsoft-teams
 doc_type: resourcePageType
-ms.openlocfilehash: d1c75c5496df6e8d858be74b8001c57fe16de0b3d44a98d4229e1ad09ab77f8c
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: e04cbdd14349b4ffc3f01ce22c10948e5fbaff0e
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54174875"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59032178"
 ---
 # <a name="shiftavailability-resource-type"></a>Tipo de recurso shiftAvailability
 

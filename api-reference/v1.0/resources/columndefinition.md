@@ -3,15 +3,15 @@ author: JeremyKelley
 description: Representa uma coluna em um site, uma lista ou um tipo de conteúdo.
 ms.date: 09/11/2017
 title: Tipo de recurso columnDefinition
-localization_priority: Normal
+ms.localizationpriority: medium
 doc_type: resourcePageType
 ms.prod: sites-and-lists
-ms.openlocfilehash: 05357e3282dfe578ed6756ddff493df9e62c8248
-ms.sourcegitcommit: c333953a9188b4cd4a9ab94cbe68871e8f3563e5
+ms.openlocfilehash: 4d5dc9bc55778b32990be19688861a590a658523
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/30/2021
-ms.locfileid: "58695102"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59062793"
 ---
 # <a name="columndefinition-resource-type"></a>Tipo de recurso columnDefinition
 
@@ -36,7 +36,7 @@ Para listar **valores de campo** [ocultos em listItems][listItem], inclua as col
 |[Criar columnDefinition para um tipo de conteúdo](../api/contenttype-post-columns.md)|[columnDefinition](../resources/columndefinition.md)|Criar um novo [objeto columnDefinition](../resources/columndefinition.md) em um [tipo de conteúdo](../resources/contenttype.md).|
 |[Obter columnDefinition](../api/columndefinition-get.md)|[columnDefinition](../resources/columndefinition.md)|Leia as propriedades e as relações de um [objeto columnDefinition.](../resources/columndefinition.md)|
 |[Atualizar columnDefinition](../api/columndefinition-update.md)|[columnDefinition](../resources/columndefinition.md)|Atualize as propriedades de um [objeto columnDefinition.](../resources/columndefinition.md)|
-|[Excluir columnDefinition](../api/columndefinition-delete.md)|Nenhum|Exclui um [objeto columnDefinition.](../resources/columndefinition.md)|
+|[Excluir columnDefinition](../api/columndefinition-delete.md)|None|Exclui um [objeto columnDefinition.](../resources/columndefinition.md)|
 
 ## <a name="properties"></a>Propriedades
 
@@ -48,14 +48,14 @@ As propriedades relacionadas ao tipo (boolean, calculated, choice, currency, dat
 |:------------------------|:--------|:-----------------------------------------|
 | **columnGroup**         | string  | Para colunas de site, o nome do grupo ao qual esta coluna pertence. Ajuda a organizar as colunas relacionadas.|
 | **description**         | string  | A descrição voltado para o usuário da coluna.|
-| **displayName**         | string  | O nome voltado para o usuário da coluna.|
+| **displayName**         | cadeia de caracteres  | O nome voltado para o usuário da coluna.|
 | **enforceUniqueValues** | Booliano | If `true` , no two list items may have the same value for this column.|
 | **hidden**              | Booliano | Especifica se a coluna é exibida na interface do usuário.|
 | **id**                  | cadeia de caracteres  | O identificador exclusivo da coluna.|
-| **indexed**             | Booliano | Especifica se os valores de coluna podem ser usados para classificação e pesquisa.|
+| **indexed**             | Boolean | Especifica se os valores de coluna podem ser usados para classificação e pesquisa.|
 | **name**                | string  | O nome voltado para a API da coluna, conforme ele aparece nos [campos][] em uma [listItem][]. Para o nome voltado ao usuário, consulte **displayName**.|
 | **readOnly**            | Booliano    | Especifica se os valores da coluna podem ser modificados.|
-| **required**            | Booliano | Especifica se o valor da coluna não é opcional.|
+| **required**            | Boolean | Especifica se o valor da coluna não é opcional.|
 | **boolean**       | [booleanColumn][]       | Esta coluna armazena valores boolianos.|
 | **calculated**    | [calculatedColumn][]    | Os dados dessa coluna são calculados com base em outras colunas.|
 | **choice**        | [choiceColumn][]        | Esta coluna armazena dados de uma lista de opções.|
@@ -68,7 +68,7 @@ As propriedades relacionadas ao tipo (boolean, calculated, choice, currency, dat
 | **personOrGroup** | [personOrGroupColumn][] | Esta coluna armazena valores de Pessoa ou Grupo.|
 | **text**          | [textColumn][]          | Esta coluna armazena valores de texto.|
 | **isDeletable**       | Booliano | Indica se essa coluna pode ser excluída.|
-| **propagateChanges**     | Booliano | Se 'true', as alterações nesta coluna serão propagadas para listas que implementam a coluna. |
+| **propagateChanges**     | Boolean | Se 'true', as alterações nesta coluna serão propagadas para listas que implementam a coluna. |
 | **isReorderable**         | Booliano | Indica se os valores na coluna podem ser reordenados. Somente leitura.|
 | **isSealed**              | Booliano | Especifica se a coluna pode ser alterada.|
 | **validation**   |  [columnValidation][]    | Esta coluna armazena a fórmula e a mensagem de validação da coluna.| 

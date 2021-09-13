@@ -2,15 +2,15 @@
 title: tipo de número complianceStatus
 description: Ainda não documentado
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: e7a979fd8c7da4c4ee4ed533b06f57f83db489e502db983d4ad5f0fb8a5e1f90
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: ebecdbf32afc5aa9040d382b9310d4a2174c6c3d
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54130118"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59021600"
 ---
 # <a name="compliancestatus-enum-type"></a>tipo de número complianceStatus
 

@@ -1,16 +1,16 @@
 ---
 title: 'channel: completeMigration'
 description: Conclua a migração de mensagens externas removendo o modo de migração de um canal.
-localization_priority: Normal
+ms.localizationpriority: medium
 author: RamjotSingh
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 1a667941df3246873876e03128cb55c207b55798
-ms.sourcegitcommit: 16ee16e7fddd662ca42dc5c9352cfb109e31ed1a
+ms.openlocfilehash: ce0661914bf3ce865f6d9501a93870c6fa1cc3f8
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/03/2021
-ms.locfileid: "51582841"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59029679"
 ---
 # <a name="channel-completemigration"></a>channel: completeMigration
 

@@ -2,15 +2,15 @@
 author: swapnil1993
 title: 'contentType: isPublished'
 description: Verifique o status de publicação de um tipo de conteúdo em um site de hub de tipo de conteúdo.
-localization_priority: Normal
+ms.localizationpriority: medium
 doc_type: apiPageType
 ms.prod: sites-and-lists
-ms.openlocfilehash: 1b50b178c49af99a630aa6a09d64222d98a0285a
-ms.sourcegitcommit: c333953a9188b4cd4a9ab94cbe68871e8f3563e5
+ms.openlocfilehash: b7f6d4081a8ab434167b40afb6a9cd5d26c8bf60
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/30/2021
-ms.locfileid: "58696491"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59038192"
 ---
 # <a name="contenttype-ispublished"></a>contentType: isPublished
 Namespace: microsoft.graph
@@ -24,8 +24,8 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegado (conta corporativa ou de estudante) | Sites.FullControl.All    |
-|Delegado (conta pessoal da Microsoft) | Não suportado   |
+|Delegada (conta corporativa ou de estudante) | Sites.FullControl.All    |
+|Delegada (conta pessoal da Microsoft) | Não suportado   |
 |Aplicativo | Sites.FullControl.All |
 
 ## <a name="http-request"></a>Solicitação HTTP
@@ -52,14 +52,34 @@ Não forneça um corpo de solicitação para esse método.
 
 ### <a name="request"></a>Solicitação
 
+
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "contenttype_ispublished"
 }
 -->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/sites/{siteId}/contentTypes/{contentTypeId}/isPublished
 ```
+# <a name="c"></a>[C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/contenttype-ispublished-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/contenttype-ispublished-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/contenttype-ispublished-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/contenttype-ispublished-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 ### <a name="response"></a>Resposta
 <!-- {

@@ -1,14 +1,14 @@
 ---
 author: davidmu1
-localization_priority: Priority
+ms.localizationpriority: high
 ms.prod: msgraph
 ms.topic: include
-ms.openlocfilehash: 0e3541636f899979721722ba98722b3a4295663abe8e1f42931af3a955fdc94b
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 560eb105de3808e113fd7a419eb7cd60a8616ec4
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54196606"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59035683"
 ---
 <!-- markdownlint-disable MD041 -->
 <!-- this file is auto-generated don't edit it manually! -->
@@ -19,5 +19,9 @@ ms.locfileid: "54196606"
 | POST, PUT, DELATE, PATCH | 200 solicitações por 20 segundos | 100 solicitações por 20 segundos |
 | Qualquer | 2000 solicitações por 20 segundos | 1000 solicitações por 20 segundos |
 
-Os limites anteriores se aplicam aos seguintes recursos:  
-appleVppTokenTroubleshootingEvent, deviceManagementAutopilotEvent, deviceManagementAutopilotPolicyStatusDetail, deviceManagementTroubleshootingEvent, enrollmentTroubleshootingEvent, mobileAppIntentAndState, mobileAppTroubleshootingEvent.
+Os limites anteriores se aplicam aos seguintes recursos: 
+
+ 
+| <!-- fake header-->                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 |
+|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| <ul> <li> [appleVppTokenTroubleshootingEvent](/graph/api/resources/applevpptokentroubleshootingevent) <li> [deviceManagementAutopilotEvent](/graph/api/resources/devicemanagementautopilotevent) <li> [deviceManagementAutopilotPolicyStatusDetail](/graph/api/resources/devicemanagementautopilotpolicystatusdetail) <li> [deviceManagementTroubleshootingEvent](/graph/api/resources/devicemanagementtroubleshootingevent) <li> [enrollmentTroubleshootingEvent](/graph/api/resources/enrollmenttroubleshootingevent) <li> [mobileAppIntentAndState](/graph/api/resources/mobileappintentandstate) <li> [mobileAppTroubleshootingEvent](/graph/api/resources/mobileapptroubleshootingevent) </ul> |

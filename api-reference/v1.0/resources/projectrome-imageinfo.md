@@ -1,16 +1,16 @@
 ---
 title: Tipo de recurso imageInfo
 description: Um tipo complexo para representar **a propriedade de atribuição** na parte visualInfo do objeto activity.
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: project-rome
 author: ailae
 doc_type: resourcePageType
-ms.openlocfilehash: 1f8f4a69304412296030eb50a907bdf9ca6f6c000b16e295688c836585fbb775
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: cf76bd7e81f913f9641568bbd20c62a1c3ed16a8
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54229000"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59019192"
 ---
 # <a name="imageinfo-resource-type"></a>Tipo de recurso imageInfo
 
@@ -22,9 +22,9 @@ Um tipo complexo para representar **a propriedade de atribuição** na parte [vi
 
 |Nome | Tipo | Descrição|
 |:----|:-----|:-----------|
-|iconUrl | String | Opcional; URI que aponta para um ícone que representa o aplicativo usado para gerar a atividade|
+|iconUrl | Cadeia de caracteres | Opcional; URI que aponta para um ícone que representa o aplicativo usado para gerar a atividade|
 |alternateText | Cadeia de caracteres | Opcional; alt-text accessible content for the image|
-|addImageQuery | Booliano | Opcional; usado para indicar que o servidor é capaz de renderizar a imagem dinamicamente em resposta à parametrização. Por exemplo: uma imagem de alto contraste|
+|addImageQuery | Boolean | Opcional; usado para indicar que o servidor é capaz de renderizar a imagem dinamicamente em resposta à parametrização. Por exemplo: uma imagem de alto contraste|
 
 ## <a name="json-representation"></a>Representação JSON
 

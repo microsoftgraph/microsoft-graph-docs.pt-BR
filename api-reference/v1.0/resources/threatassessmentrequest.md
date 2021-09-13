@@ -1,20 +1,20 @@
 ---
 title: Tipo de recurso threatAssessmentRequest
 description: Um tipo de resouce abstrato usado para representar um item de solicitação de avaliação de ameaça.
-localization_priority: Normal
+ms.localizationpriority: medium
 author: hafen-ms
 ms.prod: security
 doc_type: resourcePageType
-ms.openlocfilehash: 5530b56d2d220f164f2e41561bec611b04a8e45bff94f4608b3b6c812346ea7b
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 982638e082f958651a38f24cc2b3c6a53e24115f
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54216543"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59055798"
 ---
 # <a name="threatassessmentrequest-resource-type"></a>Tipo de recurso threatAssessmentRequest
 
-Um tipo de resouce abstrato usado para representar um item de solicitação de avaliação de ameaça.
+Um tipo de recurso abstrato usado para representar um item de solicitação de avaliação de ameaça.
 
 Uma solicitação de avaliação de ameaças pode ser um dos seguintes tipos:
 

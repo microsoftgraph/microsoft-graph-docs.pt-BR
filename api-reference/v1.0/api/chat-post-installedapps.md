@@ -2,15 +2,15 @@
 title: Adicionar o aplicativo ao chat
 description: Instalar um aplicativo para chat.
 author: subray
-localization_priority: Priority
+ms.localizationpriority: high
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 3401626f73355a2f1095389c578c8abac96cdf64
-ms.sourcegitcommit: 94c4acf8bd03c10a44b12952b6cb4827df55b978
+ms.openlocfilehash: c8323c9a6ef8e0d7f252aa6ad579426e35669ec2
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/06/2021
-ms.locfileid: "52786296"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59022937"
 ---
 # <a name="add-app-to-chat"></a>Adicionar o aplicativo ao chat
 

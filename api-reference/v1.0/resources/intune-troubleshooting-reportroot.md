@@ -2,15 +2,15 @@
 title: Tipo de recurso reportRoot
 description: O recurso que representa uma instância de Relatórios de Falha de Registro.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: c3ca385b92069271a4facc8e3ecd68fa5049db8f
-ms.sourcegitcommit: 0116750a01323bc9bedd192d4a780edbe7ce0fdc
+ms.openlocfilehash: 0545c2f2b0fbabc03fbc2b628a9d1752fc3f0748
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58258811"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59021509"
 ---
 # <a name="reportroot-resource-type"></a>Tipo de recurso reportRoot
 

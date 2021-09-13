@@ -2,15 +2,15 @@
 title: Listar deviceComplianceScheduledActionForRules
 description: Listar propriedades e relações dos objetos deviceComplianceScheduledActionForRule.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: e44e5656201069c51e942447ee5c89025ddd65f19b49b80b46b0cf97153a126b
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 77ebe6bb9232284e2ff8ff277a8a4db666e72288
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54169981"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59079782"
 ---
 # <a name="list-devicecompliancescheduledactionforrules"></a>Listar deviceComplianceScheduledActionForRules
 

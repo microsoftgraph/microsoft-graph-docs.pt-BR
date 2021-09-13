@@ -1,16 +1,16 @@
 ---
 title: Obter singleValueLegacyExtendedProperty
-description: Você pode obter uma única instância de recurso expandida com uma propriedade estendida específica ou uma coleção de instâncias de recursos
-localization_priority: Normal
+description: Você pode obter uma única instância de recurso expandida com uma propriedade estendida específica ou uma coleção de instâncias de recurso
+ms.localizationpriority: medium
 author: abheek-das
 ms.prod: ''
 doc_type: apiPageType
-ms.openlocfilehash: 058d52ed48aece0c6076dceed0e2d48d71332850
-ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
+ms.openlocfilehash: fee49a863f56effc9c635dc6c868455eed88a6b0
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/06/2021
-ms.locfileid: "50134852"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59085095"
 ---
 # <a name="get-singlevaluelegacyextendedproperty"></a>Obter singleValueLegacyExtendedProperty
 
@@ -50,10 +50,10 @@ Dependendo do recurso do qual você está recebendo a propriedade estendida e do
 |:-----|:-----|:-----|:-----|
 | [calendar](../resources/calendar.md) | Calendars.Read | Calendars.Read | Calendars.Read |
 | [contato](../resources/contact.md) | Contacts.Read | Contacts.Read | Contacts.Read |
-| [contactFolder](../resources/contactfolder.md) | Contacts.Read | Contacts.Read | Contacts.Read |
+| [pastadeContatos](../resources/contactfolder.md) | Contacts.Read | Contacts.Read | Contacts.Read |
 | [evento](../resources/event.md) | Calendars.Read | Calendars.Read |  Calendars.Read|
-| grupo [calendar](../resources/calendar.md) | Group.Read.All | Sem suporte | Incompatível |
-| grupo [event](../resources/event.md) | Group.Read.All | Sem suporte | Incompatível |
+| grupo [calendar](../resources/calendar.md) | Group.Read.All | Sem suporte | Sem suporte |
+| grupo [event](../resources/event.md) | Group.Read.All | Sem suporte | Sem suporte |
 | grupo [post](../resources/post.md) | Group.Read.All | Sem suporte | Group.Read.All |
 | [mailFolder](../resources/mailfolder.md) | Mail.Read | Mail.Read | Mail.Read |
 | [message](../resources/message.md) | Mail.Read | Mail.Read | Mail.Read |
@@ -242,7 +242,7 @@ Não forneça um corpo de solicitação para esse método.
 
 ## <a name="response"></a>Resposta
 
-Se tiver êxito, este método retornará um código de resposta `200 OK`.
+Se bem-sucedido, este método retorna um código de resposta `200 OK`.
 
 #### <a name="get-resource-instance-expanded-with-a-matching-extended-property"></a>Instância de recurso GET expandida com uma propriedade estendida correspondente.
 O corpo da resposta inclui um objeto que representa a instância de recurso solicitada, expandida com o objeto [singleValueLegacyExtendedProperty](../resources/singlevaluelegacyextendedproperty.md) correspondente.

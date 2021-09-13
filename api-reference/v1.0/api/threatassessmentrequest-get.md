@@ -1,16 +1,16 @@
 ---
 title: Get threatAssessmentRequest
 description: Recupere as propriedades e as relações de um objeto threatassessmentrequest especificado.
-localization_priority: Normal
+ms.localizationpriority: medium
 author: hafen-ms
 ms.prod: security
 doc_type: apiPageType
-ms.openlocfilehash: b21b7d69d241c5d986713b9e905822faf879147a
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: 6db1ce538d676c72f4373793d2e89a0333c7360c
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52053801"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59079082"
 ---
 # <a name="get-threatassessmentrequest"></a>Get threatAssessmentRequest
 
@@ -29,8 +29,8 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 | Tipo de permissão                        | Permissões (da com menos para a com mais privilégios) |
 |:---------------------------------------|:--------------------------------------------|
-| Delegado (conta corporativa ou de estudante)     | ThreatAssessment.ReadWrite.All             |
-| Delegado (conta pessoal da Microsoft) | Sem suporte.                              |
+| Delegada (conta corporativa ou de estudante)     | ThreatAssessment.ReadWrite.All             |
+| Delegada (conta pessoal da Microsoft) | Sem suporte.                              |
 | Aplicativo                            | ThreatAssessment.Read.All                  |
 
 ## <a name="http-request"></a>Solicitação HTTP
@@ -45,7 +45,7 @@ GET /informationProtection/threatAssessmentRequests/{id}
 
 Este método dá suporte aos seguintes parâmetros de consulta OData para ajudar a personalizar a resposta. Para obter informações gerais, acesse [Parâmetros de consulta OData](/graph/query-parameters).
 
-|Nome            |Valor    |Descrição                                                                                                                                                                 |
+|Name            |Valor    |Descrição                                                                                                                                                                 |
 |:---------------|:--------|:---------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 |$expand         |string   |Usando `$expand=results` na consulta para recuperar o resultado da avaliação de ameaças.                                                                                              |
 |$select         |string   |Lista separada por vírgulas de propriedades para incluir na resposta. Para um desempenho ideal, selecione apenas o subconjunto de propriedades necessário.                                        |

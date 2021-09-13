@@ -2,15 +2,15 @@
 title: função getOmaSettingPlainTextValue
 description: Ainda não documentado
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: d8e1f068b2c88260f8424ae2b089b79be9b1dd6e1b6b386917d96956462afd70
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 8b019c53bdb1d9dc4efedd6720fd989335aef052
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54121729"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59079733"
 ---
 # <a name="getomasettingplaintextvalue-function"></a>função getOmaSettingPlainTextValue
 

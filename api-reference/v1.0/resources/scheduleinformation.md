@@ -1,16 +1,16 @@
 ---
 title: Tipo de recurso scheduleInformation
 description: Representa a disponibilidade de um usuário, lista de distribuição ou recurso para um período de tempo especificado.
-localization_priority: Normal
+ms.localizationpriority: medium
 author: harini84
 ms.prod: ''
 doc_type: resourcePageType
-ms.openlocfilehash: 67b7396cfebc19baa3771c2ec8d153950928288506cfc699851b891e15409a0f
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 5e59fdfa4b874562aaf268b9fc7fea712ad056e8
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54231478"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59035973"
 ---
 # <a name="scheduleinformation-resource-type"></a>Tipo de recurso scheduleInformation
 
@@ -21,7 +21,7 @@ Representa a disponibilidade de um usuário, lista de distribuição ou recurso 
 ## <a name="properties"></a>Propriedades
 | Propriedade     | Tipo   |Descrição|
 |:---------------|:--------|:----------|
-|availabilityView |Cadeia de caracteres |Representa uma exibição mesclada de disponibilidade de todos os itens em `scheduleItems` . A exibição consiste em intervalos de tempo. A disponibilidade durante cada intervalo de tempo é indicada com: `0` = livre, `1` = provisório, = ocupado, = sem `2` `3` escritório, = trabalhando em outro `4` lugar.|
+|availabilityView |String |Representa uma exibição mesclada de disponibilidade de todos os itens em `scheduleItems` . A exibição consiste em intervalos de tempo. A disponibilidade durante cada intervalo de tempo é indicada com: `0` = livre, `1` = provisório, = ocupado, = sem `2` `3` escritório, = trabalhando em outro `4` lugar.|
 |erro |[freeBusyError](freebusyerror.md) |Informações de erro da tentativa de obter a disponibilidade do usuário, lista de distribuição ou recurso. |
 |scheduleId |Cadeia de caracteres |Um endereço SMTP do usuário, lista de distribuição ou recurso, identificando uma instância de **scheduleInformation**. |
 |scheduleItems |[Coleção scheduleItem](scheduleitem.md) |Contém os itens que descrevem a disponibilidade do usuário ou do recurso. |

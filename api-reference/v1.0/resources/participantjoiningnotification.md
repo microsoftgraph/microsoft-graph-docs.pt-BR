@@ -2,15 +2,15 @@
 title: Tipo de recurso participantJoiningNotification
 description: Contém detalhes sobre o participante baseado em política ingressar em uma chamada.
 author: yizhenww
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: cloud-communications
 doc_type: resourcePageType
-ms.openlocfilehash: c3cac84db6b08a26c35bd01294bc476b2859bcd4eef2d61db9a4d65dc1ad9af1
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 9e9b0186035e055b06c99fe60a52ca1ff63dc5bc
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54152331"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59036057"
 ---
 # <a name="participantjoiningnotification-resource-type"></a>Tipo de recurso participantJoiningNotification
 

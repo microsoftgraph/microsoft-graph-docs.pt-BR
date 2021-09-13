@@ -2,15 +2,15 @@
 title: Tipo de recurso ChartPoint
 description: Representa o ponto de uma série do gráfico.
 author: lumine2008
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: excel
 doc_type: resourcePageType
-ms.openlocfilehash: 870f29df417e401e2c69500f2677b9c5da95c88bb5dd57ede33aa26e125e0869
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: e49df91420d27ea36aa3bda4c410299d61273550
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54202536"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59062800"
 ---
 # <a name="chartpoint-resource-type"></a>Tipo de recurso ChartPoint
 
@@ -31,7 +31,7 @@ Representa o ponto de uma série do gráfico.
 | Propriedade     | Tipo   |Descrição|
 |:---------------|:--------|:----------|
 |valor|Json|Retorna o valor de um ponto do gráfico. Somente leitura.|
-|id|string|identificador exclusivo|
+|id|cadeia de caracteres|identificador exclusivo|
 
 ## <a name="relationships"></a>Relações
 | Relação | Tipo   |Descrição|

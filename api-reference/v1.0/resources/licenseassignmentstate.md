@@ -2,15 +2,15 @@
 title: Tipo de recurso licenseAssignmentState
 description: A **propriedade licenseAssignmentStates** da entidade do usuário é uma coleção de **objetos licenseAssignmentState.** Ele fornece detalhes sobre atribuições de licença para um usuário.
 author: dkershaw10
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: groups
 doc_type: resourcePageType
-ms.openlocfilehash: 64acc65a2316e017165feb6aad21c6cf788a8bed87fbb8d0479152960f6fd824
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 260ce66248934772e386b8d4277970b1db3ee852
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54174994"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59036197"
 ---
 # <a name="licenseassignmentstate-resource-type"></a>Tipo de recurso licenseAssignmentState
 
@@ -28,11 +28,11 @@ A **propriedade licenseAssignmentStates** da entidade [do](user.md) usuário é 
 ## <a name="properties"></a>Propriedades
 | Propriedade     | Tipo   |Descrição|
 |:---------------|:--------|:----------|
-|assignedByGroup|string|A id do grupo que atribui essa licença. Se a atribuição for uma licença atribuída diretamente, esse campo será Null. Somente Leitura.|
+|assignedByGroup|cadeia de caracteres|A id do grupo que atribui essa licença. Se a atribuição for uma licença atribuída diretamente, esse campo será Null. Somente Leitura.|
 |disabledPlans|Collection(String)|Os planos de serviço que estão desabilitados nesta atribuição. Somente Leitura.|
 |erro|Cadeia de caracteres|Erro de falha de atribuição de licença. Se a licença for atribuída com êxito, esse campo será Null. Somente Leitura. Valores possíveis: `CountViolation` , , , , e `MutuallyExclusiveViolation` `DependencyViolation` `ProhibitedInUsageLocationViolation` `UniquenessViolation` `Others` . Para obter mais informações sobre como identificar e resolver erros de atribuição de licença, [consulte aqui](/azure/active-directory/users-groups-roles/licensing-groups-resolve-problems).|
 |skuId|Cadeia de caracteres|O identificador exclusivo da SKU. Somente Leitura.|
-|state|Cadeia de caracteres|Indique o estado atual dessa atribuição. Somente Leitura. Valores possíveis: Active, ActiveWithError, Disabled e Error.|
+|state|String|Indique o estado atual dessa atribuição. Somente Leitura. Valores possíveis: Active, ActiveWithError, Disabled e Error.|
 
 ## <a name="json-representation"></a>Representação JSON
 

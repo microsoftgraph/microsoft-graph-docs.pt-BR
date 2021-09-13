@@ -1,16 +1,16 @@
 ---
 title: Tipo de recurso outlookCategory
 description: Representa uma categoria pela qual um usuário pode agrupar itens do Outlook como mensagens e eventos. O usuário define categorias em uma lista mestra e pode aplicar uma ou mais dessas definidas pelo usuário
-localization_priority: Normal
+ms.localizationpriority: medium
 author: abheek-das
 ms.prod: outlook
 doc_type: resourcePageType
-ms.openlocfilehash: 30bed7723cc25b668029bae494a24cbc6c4278fc4caeb6d55f039e65c68e63f9
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 907f2e96f3f37ff62a6189970c5149241035c9b9
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54182375"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59094146"
 ---
 # <a name="outlookcategory-resource-type"></a>Tipo de recurso outlookCategory
 
@@ -88,7 +88,7 @@ Veja a seguir uma representação JSON do recurso.
 |[Obter categoria](../api/outlookcategory-get.md) | [outlookCategory](../resources/outlookcategory.md) |Obtenha as propriedades e as relações do objeto **outlookCategory** especificado.|
 |[Criar](../api/outlookuser-post-mastercategories.md) | [outlookCategory](../resources/outlookcategory.md) |Cria um objeto **outlookCategory** na lista mestra de categorias do usuário.|
 |[Atualizar](../api/outlookcategory-update.md) | [outlookCategory](../resources/outlookcategory.md) |Atualize a propriedade gravável, **color**, do objeto **outlookCategory** especificado. |
-|[Delete](../api/outlookcategory-delete.md) | None |Exclua o objeto **outlookCategory** especificado. |
+|[Delete](../api/outlookcategory-delete.md) | Nenhum(a) |Exclua o objeto **outlookCategory** especificado. |
 
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79

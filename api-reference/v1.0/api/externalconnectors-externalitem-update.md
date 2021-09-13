@@ -2,15 +2,15 @@
 title: Atualizar externalItem
 description: Atualize as propriedades de um objeto externalItem.
 author: mecampos
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: search
 doc_type: apiPageType
-ms.openlocfilehash: b93fa76181e907987add5196bd8dc56481aef6e3
-ms.sourcegitcommit: 5bb981b4853663354a566d4a4a5cbf288939e441
+ms.openlocfilehash: 4a7ee4b656bf3552dcfa3c45fbd76bb541250fad
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/24/2021
-ms.locfileid: "53580743"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59029588"
 ---
 # <a name="update-externalitem"></a>Atualizar externalItem
 Namespace: microsoft.graph.externalConnectors
@@ -40,8 +40,8 @@ PATCH /external/connections/{connection-id}/items/{item-id}
 
 | Parâmetro     | Tipo   | Descrição                                         |
 |:--------------|:-------|:----------------------------------------------------|
-| connection-id | string | A `id` propriedade do [externalConnection que](../resources/externalconnectors-externalconnection.md) contém |
-| item-id       | string | A propriedade fornecida `id` pelo desenvolvedor do [externalItem](../resources/externalconnectors-externalitem.md). |
+| connection-id | cadeia de caracteres | A `id` propriedade do [externalConnection que](../resources/externalconnectors-externalconnection.md) contém |
+| item-id       | cadeia de caracteres | A propriedade fornecida `id` pelo desenvolvedor do [externalItem](../resources/externalconnectors-externalitem.md). |
 
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
 

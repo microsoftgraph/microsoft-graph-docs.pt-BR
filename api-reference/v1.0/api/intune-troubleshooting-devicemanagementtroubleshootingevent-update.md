@@ -2,15 +2,15 @@
 title: Atualizar deviceManagementTroubleshootingEvent
 description: Atualizar as propriedades de um objeto deviceManagementTroubleshootingEvent.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: f161944eaa6032c65840748c84f4d7e7a1eee4a1
-ms.sourcegitcommit: 0116750a01323bc9bedd192d4a780edbe7ce0fdc
+ms.openlocfilehash: e7454b9eefe39f64b7e5c676434d329bd5e2d04b
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58264497"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59045095"
 ---
 # <a name="update-devicemanagementtroubleshootingevent"></a>Atualizar deviceManagementTroubleshootingEvent
 
@@ -51,7 +51,7 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar [deviceM
 
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|id|Cadeia de caracteres|O UUID do objeto.|
+|id|String|O UUID do objeto.|
 |eventDateTime|DateTimeOffset|A hora em que o evento ocorreu.|
 |correlationId|Cadeia de caracteres|ID usada para rastrear a falha no serviço.|
 
