@@ -2,15 +2,15 @@
 title: Tipo de recurso win32LobAppDetection
 description: Classe base para detectar um aplicativo Win32
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 58bab46d5b1cb29ac11690411d893efaaf090e70
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 7e2738bb1aa77c0327098a8c8be05ad65eeace5f
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58821778"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59075806"
 ---
 # <a name="win32lobappdetection-resource-type"></a>Tipo de recurso win32LobAppDetection
 

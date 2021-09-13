@@ -2,15 +2,15 @@
 title: Tipo de recurso androidMobileAppIdentifier
 description: O identificador de um app Android.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: ec2a86ae86f7c7dd4e8e8edef4b0715f52bb2744
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 33e04be6f4c661cf49aecda877c83d4dff7a849a
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58818038"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59075211"
 ---
 # <a name="androidmobileappidentifier-resource-type"></a>Tipo de recurso androidMobileAppIdentifier
 

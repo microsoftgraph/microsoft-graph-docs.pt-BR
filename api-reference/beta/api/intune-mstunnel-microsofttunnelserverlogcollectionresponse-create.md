@@ -2,15 +2,15 @@
 title: Criar microsoftTunnelServerLogCollectionResponse
 description: Crie um novo objeto microsoftTunnelServerLogCollectionResponse.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 5202b524398f0794ee9477942821fbf0657aff5a
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: a5d0e3ec207d97fd3a7d9c54aed9504f504490ab
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58802275"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59041693"
 ---
 # <a name="create-microsofttunnelserverlogcollectionresponse"></a>Criar microsoftTunnelServerLogCollectionResponse
 
@@ -29,7 +29,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |:---|:---|
 |Delegado (conta corporativa ou de estudante)|DeviceManagementServiceConfig.ReadWrite.All, DeviceManagementConfiguration.ReadWrite.All|
 |Delegado (conta pessoal da Microsoft)|Sem suporte.|
-|Application|DeviceManagementConfiguration.ReadWrite.All|
+|Aplicativo|DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- {
@@ -58,7 +58,7 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar o micros
 |startDateTime|DateTimeOffset|A hora de início dos logs coletados |
 |endDateTime|DateTimeOffset|A hora de término dos logs coletados|
 |sizeInBytes|Int64|O tamanho dos logs em bytes|
-|serverId|Cadeia de caracteres|ID do servidor em que o conjunto de log é solicitado|
+|serverId|Cadeia de Caracteres|ID do servidor em que o conjunto de log é solicitado|
 |requestDateTime|DateTimeOffset|A hora em que o conjunto de log foi solicitado|
 |expiryDateTime|DateTimeOffset|O tempo em que o conjunto de log expira|
 

@@ -2,15 +2,15 @@
 title: Tipo de recurso vppLicensingType
 description: Contém propriedades para o tipo de licenciamento iOS Volume-Purchased Program (VPP).
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 847fa7517bd3c3a527fac54932c8ace8f0660d2d
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: adea23063ca440ae9b0199898da7a51055c7d980
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58793355"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59047160"
 ---
 # <a name="vpplicensingtype-resource-type"></a>Tipo de recurso vppLicensingType
 

@@ -2,15 +2,15 @@
 title: tipo denum ratingFranceTelevisionType
 description: Rótulos de classificação de conteúdo de TV na França
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 20ec73ae3c1820f58ec749d279665a6103717155
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: bc388b9b94969d9b542402deafda520f9f8b0f79
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58817093"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59081293"
 ---
 # <a name="ratingfrancetelevisiontype-enum-type"></a>tipo denum ratingFranceTelevisionType
 

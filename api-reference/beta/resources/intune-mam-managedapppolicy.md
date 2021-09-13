@@ -2,15 +2,15 @@
 title: Tipo de recurso managedAppPolicy
 description: O recurso ManagedAppPolicy representa um tipo de base para políticas específicas de plataformas.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 0e03efcfdc49f41ee52c401ff7a70a8734cb3a3c
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: bc10be26a13b8f6d72a53ea327c468b3712d28fd
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58821091"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59068904"
 ---
 # <a name="managedapppolicy-resource-type"></a>Tipo de recurso managedAppPolicy
 
@@ -33,11 +33,11 @@ O recurso ManagedAppPolicy representa um tipo de base para políticas específic
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
 |displayName|Cadeia de caracteres|Nome de exibição da política.|
-|description|Cadeia de caracteres|Descrição da política.|
+|description|String|Descrição da política.|
 |createdDateTime|DateTimeOffset|A data e a hora da criação da política.|
 |lastModifiedDateTime|DateTimeOffset|Última vez em que a política foi modificada.|
-|roleScopeTagIds|Coleção String|Lista de marcas de escopo para esta instância entity.|
-|id|Cadeia de caracteres|Chave da entidade.|
+|roleScopeTagIds|Conjunto de cadeias de caracteres|Lista de marcas de escopo para esta instância entity.|
+|id|String|Chave da entidade.|
 |versão|String|Versão da entidade.|
 
 ## <a name="relationships"></a>Relações

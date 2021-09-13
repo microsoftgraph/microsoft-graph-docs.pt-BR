@@ -2,15 +2,15 @@
 title: Tipo de recurso deviceManagementExchangeAccessRule
 description: Regras de Acesso a Dispositivos Exchange.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: efb0b46002ae77fcb10629756ef366eea69d9ca9
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 32a8f83c340aa1beb02124c41d3cbd3255aba2aa
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58815509"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59051150"
 ---
 # <a name="devicemanagementexchangeaccessrule-resource-type"></a>Tipo de recurso deviceManagementExchangeAccessRule
 
