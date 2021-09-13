@@ -2,15 +2,15 @@
 title: Tipo de recurso appleOwnerTypeEnrollmentType
 description: Ainda não documentado
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 56f868e89ef9b217186837e27bbe6829daebe218
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: b081cf3199b1f6f84ed90d1151f8480dcae12a39
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58802961"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59101223"
 ---
 # <a name="appleownertypeenrollmenttype-resource-type"></a>Tipo de recurso appleOwnerTypeEnrollmentType
 

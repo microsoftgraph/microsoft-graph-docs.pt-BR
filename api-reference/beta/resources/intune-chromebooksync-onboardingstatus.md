@@ -2,15 +2,15 @@
 title: Tipo de número onboardingStatus
 description: O status de integração do locatário.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 374d7384a50ebe13aa620adc0e1e3382127e8292
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 117dbc9cfaf3dd473b00d8a59d052670ebb6ad20
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58806072"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59120427"
 ---
 # <a name="onboardingstatus-enum-type"></a>Tipo de número onboardingStatus
 

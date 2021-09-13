@@ -2,15 +2,15 @@
 title: Tipo denum windowsFirewallRuleTrafficDirectionType
 description: Direções de tráfego de regras de firewall.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 4855c43baab9a33a5c5bfe1fe2a8653417f5f53b
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 20bcd266fab7eee9b5d851ab04c6f9e5f9336a06
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58799476"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59106004"
 ---
 # <a name="windowsfirewallruletrafficdirectiontype-enum-type"></a>Tipo denum windowsFirewallRuleTrafficDirectionType
 

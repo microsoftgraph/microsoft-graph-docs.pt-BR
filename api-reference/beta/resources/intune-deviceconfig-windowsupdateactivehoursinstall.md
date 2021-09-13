@@ -2,15 +2,15 @@
 title: Tipo de recurso windowsUpdateActiveHoursInstall
 description: Ainda não documentado
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: ba2348ab49e81e9d58629886dafd6c31d1a8582c
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 6bf6a82a7e6ff7baf836badc6ae407fc7a5d2139
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58801490"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59101286"
 ---
 # <a name="windowsupdateactivehoursinstall-resource-type"></a>Tipo de recurso windowsUpdateActiveHoursInstall
 

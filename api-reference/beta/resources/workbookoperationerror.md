@@ -1,16 +1,16 @@
 ---
 title: tipo de recurso workbookOperationError
 description: Representa um erro de uma operação de workbook com falha.
-localization_priority: Normal
+ms.localizationpriority: medium
 author: grangeryy
 ms.prod: excel
 doc_type: resourcePageType
-ms.openlocfilehash: 9c5e3fa689cc830bf1041c240bf135de2fbab116ef876871a086fe66595b3e89
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: ef27d5c3efe782c4d865e2badfb306aa93068ccc
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54241111"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59119748"
 ---
 # <a name="workbookoperationerror-resource-type"></a>tipo de recurso workbookOperationError
 
@@ -20,7 +20,7 @@ Representa um erro de uma operação de workbook com falha.
 
 | Propriedade     | Tipo        | Descrição |
 |:-------------|:------------|:------------|
-|código|Cadeia de caracteres| O código de erro.|
+|código|Cadeia de Caracteres| O código de erro.|
 |mensagem|String| A mensagem de erro.|
 |innererror|error object| Opcional. Objetos error adicionais que podem ser mais específicos do que o erro de nível superior.|
 

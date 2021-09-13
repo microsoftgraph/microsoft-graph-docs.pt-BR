@@ -2,15 +2,15 @@
 title: Tipo de número deviceManagementTemplateType
 description: Tipo de modelo
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 3e50a950819198766d5e6d0a1372010d69ebfa39
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 337ea607bbc14822d5efe470c3347fe5033a5175
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58793835"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59086376"
 ---
 # <a name="devicemanagementtemplatetype-enum-type"></a>Tipo de número deviceManagementTemplateType
 
@@ -36,7 +36,7 @@ Tipo de modelo
 |deviceCompliance|8 |Modelo de conformidade de dispositivo|
 |deviceConfigurationForOffice365|9 |Configuração do dispositivo para Microsoft Office 365 configurações|
 |cloudPC|10 |Windows modelo de linha de base de segurança 365|
-|firewallSharedSettings|11 |Modelos de Objeto Compartilhado do Firewall para configurações de referência|
+|firewallSharedSettings|11|Modelos de Objeto Compartilhado do Firewall para configurações de referência|
 
 
 

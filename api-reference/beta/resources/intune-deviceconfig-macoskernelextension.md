@@ -2,15 +2,15 @@
 title: Tipo de recurso macOSKernelExtension
 description: Representa uma extensão de kernel do macOS específica. Uma extensão de kernel macOS pode ser descrita pelo identificador de equipe, além do identificador de pacote.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 281fcab335fc5638c3d376d086bc3d7de6e07aac
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 8f430f83dbd166ee93f9e0ebfc4baa4ddb9f39db
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58789647"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59095567"
 ---
 # <a name="macoskernelextension-resource-type"></a>Tipo de recurso macOSKernelExtension
 
@@ -25,7 +25,7 @@ Representa uma extensão de kernel do macOS específica. Uma extensão de kernel
 ## <a name="properties"></a>Propriedades
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|teamIdentifier|Cadeia de caracteres|O identificador de equipe usado para assinar a extensão do kernel.|
+|teamIdentifier|Cadeia de Caracteres|O identificador de equipe usado para assinar a extensão do kernel.|
 |bundleId|String|ID do pacote da extensão do kernel.|
 
 ## <a name="relationships"></a>Relações

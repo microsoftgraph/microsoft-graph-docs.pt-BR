@@ -1,23 +1,23 @@
 ---
 title: Atualizar personCertification
 description: Atualize as propriedades de um objeto personCertification.
-localization_priority: Normal
+ms.localizationpriority: medium
 author: kevinbellinger
 ms.prod: people
 doc_type: apiPageType
-ms.openlocfilehash: ac176cccb93d7cfce617c30aa7be27c4d061f393
-ms.sourcegitcommit: 40947e6f4337c8c4193d85bb862e15f67263e1e7
+ms.openlocfilehash: eadaf0997d673fff4c3e4ca10f439be2c7577762
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/13/2021
-ms.locfileid: "50774576"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59120791"
 ---
 # <a name="update-personcertification"></a>Atualizar personCertification
 Namespace: microsoft.graph
 
 Atualize as propriedades de [um objeto personCertification](../resources/personcertification.md) do perfil de um [usuário.](../resources/profile.md)
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>Permissões
 
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
@@ -50,17 +50,17 @@ No corpo da solicitação, forneça os valores para os campos relevantes que dev
 
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|allowedAudiences|String|As audiências que são capazes de ver os valores contidos na entidade. Herdado [do itemFacet](../resources/itemfacet.md). Os valores possíveis são: `me`, `family`, `contacts`, `groupMembers`, `organization`, `federatedOrganizations`, `everyone`, `unknownFutureValue`.|
-|certificationId  |String      |O identificador referencial para a certificação. |
-|descrição      |String      |Descrição da certificação.                   |
-|displayName      |String      |Título da certificação.                         |
+|allowedAudiences|Cadeia de Caracteres|As audiências que são capazes de ver os valores contidos na entidade. Herdado [do itemFacet](../resources/itemfacet.md). Os valores possíveis são: `me`, `family`, `contacts`, `groupMembers`, `organization`, `federatedOrganizations`, `everyone`, `unknownFutureValue`.|
+|certificationId  |Cadeia de Caracteres      |O identificador referencial para a certificação. |
+|description      |Cadeia de caracteres      |Descrição da certificação.                   |
+|displayName      |Cadeia de caracteres      |Título da certificação.                         |
 |endDate          |Data        |A data em que a certificação expira.            |
 |inferência|[inferenceData](../resources/inferencedata.md)|Contém detalhes de inferência se a entidade for inferida pelo aplicativo de criação ou modificação. Herdado [do itemFacet](../resources/itemfacet.md).|
 |issuedDate       |Data        |A data em que a certificação foi emitida.         |
-|issuingAuthority |String      |Autoridade que concedeu a certificação.          |
-|emissãoCompany   |String      |Autoridade que concedeu a certificação.          |
+|issuingAuthority |Cadeia de Caracteres      |Autoridade que concedeu a certificação.          |
+|emissãoCompany   |Cadeia de Caracteres      |Autoridade que concedeu a certificação.          |
 |startDate        |Data        |A data em que a certificação se tornou válida.       |
-|thumbnailUrl     |String      |URL fazendo referência a uma miniatura da certificação.   |
+|thumbnailUrl     |Cadeia de Caracteres      |URL fazendo referência a uma miniatura da certificação.   |
 |webUrl           |String      |URL fazendo referência à certificação.                  |
 
 ## <a name="response"></a>Resposta

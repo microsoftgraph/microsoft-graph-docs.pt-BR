@@ -1,16 +1,16 @@
 ---
 title: tipo de recurso mailboxUsageStorage
 description: Veja a seguir uma representação JSON do recurso.
-localization_priority: Normal
+ms.localizationpriority: medium
 author: sarahwxy
 ms.prod: outlook
 doc_type: resourcePageType
-ms.openlocfilehash: b77f04fd94062bd3bdd4a26045d1e5b3e2cdd75bf5cee817143afcb2a4bf049a
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 4e16a69e5ae266607c4d257e4d32901a20af6975
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54195061"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59119986"
 ---
 # <a name="mailboxusagestorage-resource-type"></a>tipo de recurso mailboxUsageStorage
 
@@ -23,7 +23,7 @@ Namespace: microsoft.graph
 | reportRefreshDate  | Data   |
 | storageUsedInBytes | Int64  |
 | reportDate         | Data   |
-| reportPeriod       | Cadeia de caracteres |
+| reportPeriod       | Cadeia de Caracteres |
 
 ## <a name="json-representation"></a>Representação JSON
 

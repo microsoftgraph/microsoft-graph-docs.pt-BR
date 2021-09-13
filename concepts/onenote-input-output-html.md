@@ -2,14 +2,14 @@
 title: HTML de entrada e saída nas páginas do OneNote
 description: 'O HTML que define o conteúdo e a estrutura da página quando você cria ou atualiza uma página do OneNote é chamado de *HTML de entrada*. '
 author: jewan-microsoft
-localization_priority: Priority
+ms.localizationpriority: high
 ms.prod: onenote
-ms.openlocfilehash: 0d1aec43ad96c5d076f08928d554e639afc6f7164fde258235161ccf1433cfa3
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 63898d10a7901ae9a3fd764de0550423a7482a38
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54123944"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59035546"
 ---
 # <a name="input-and-output-html-in-onenote-pages"></a>HTML de entrada e saída nas páginas do OneNote
 
@@ -280,7 +280,7 @@ As páginas do OneNote contêm anexos de arquivo representados pelos elementos *
 |Atributo de entrada|Descrição|
 |:------|:------|
 | data | Obrigatório. O nome da parte que representa o arquivo na [solicitação de partes múltiplas](/graph/api/section-post-pages?view=graph-rest-1.0#example). |
-| data-attachment | Obrigatório. O nome do arquivo. |
+| data-attachment | Necessário. O nome do arquivo. |
 | data-id | Uma referência para o elemento.<br/><br/>Usado para [atualizar conteúdo da página](onenote-update-page.md). |
 | style | As propriedades de posição e tamanho para o objeto: **position** (somente **absolute**), **left**, **top** e **width**.<br/><br/>Usado para criar um objeto [posicionado absoluto](onenote-abs-pos.md), somente se o objeto for um filho direto do corpo quando o corpo define `data-absolute-enabled="true"`.<br/><br/>Exemplo: `<object style="position:absolute;top:350px;left:300px" ... />` |
 | type | Obrigatório.<br/><br/>O tipo de arquivo de mídia padrão. Os tipos de arquivo conhecidos exibem o ícone associado ao tipo de arquivo na página do OneNote. Os tipos de arquivo desconhecidos exibem um ícone de arquivo genérico. |
@@ -522,22 +522,22 @@ Os seguintes estilos de caractere embutidos também têm suporte:
 
 <table id="simpletable">
 <tr>
-<td id="simplecell"><b></td>
-<td id="simplecell"><i></td>
-<td id="simplecell"><u></td>
+<td id="simplecell">&lt;b&gt;</td>
+<td id="simplecell">&lt;i&gt;</td>
+<td id="simplecell">&lt;u&gt;</td>
 </tr>
 <tr>
-<td id="simplecell"><em></td>
-<td id="simplecell"><strong></td>
-<td id="simplecell"><strike></td>
+<td id="simplecell">&lt;em&gt;</td>
+<td id="simplecell">&lt;strong&gt;</td>
+<td id="simplecell">&lt;strike&gt;</td>
 </tr>
 <tr>
-<td id="simplecell"><sup></td>
-<td id="simplecell"><sub></td>
-<td id="simplecell"><del></td>
+<td id="simplecell">&lt;sup&gt;</td>
+<td id="simplecell">&lt;sub&gt;</td>
+<td id="simplecell">&lt;del&gt;</td>
 </tr>
 <tr>
-<td id="simplecell"><cite></td>
+<td id="simplecell">&lt;cite&gt;</td>
 <td id="simplecell">&nbsp;</td>
 <td id="simplecell">&nbsp;</td>
 </tr>

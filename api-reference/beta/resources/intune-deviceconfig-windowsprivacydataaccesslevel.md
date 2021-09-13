@@ -2,15 +2,15 @@
 title: Tipo de número do windowsPrivacyDataAccessLevel
 description: Determine o nível de acesso para a categoria Windows dados de privacidade específicos.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 5fa4ee09c3e931766fe3f76131841e0d69bdc65d
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: c45d78e06ac44fc30cb631359f213a90d8ba8f6a
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58793842"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59105892"
 ---
 # <a name="windowsprivacydataaccesslevel-enum-type"></a>Tipo de número do windowsPrivacyDataAccessLevel
 

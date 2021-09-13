@@ -2,15 +2,15 @@
 title: Criar macOSSoftwareUpdateCategorySummary
 description: Crie um novo objeto macOSSoftwareUpdateCategorySummary.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: fc7f6dc68ba097c1b835db16b8d0905d3b3b23f4
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 80f7155c96ddd377338ded6f046b60fd25cef3ed
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58795736"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59112752"
 ---
 # <a name="create-macossoftwareupdatecategorysummary"></a>Criar macOSSoftwareUpdateCategorySummary
 
@@ -29,7 +29,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |:---|:---|
 |Delegado (conta corporativa ou de estudante)|DeviceManagementConfiguration.ReadWrite.All|
 |Delegado (conta pessoal da Microsoft)|Sem suporte.|
-|Application|DeviceManagementConfiguration.ReadWrite.All|
+|Aplicativo|DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- {

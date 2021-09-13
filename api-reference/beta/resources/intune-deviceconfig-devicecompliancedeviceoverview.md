@@ -2,15 +2,15 @@
 title: Tipo de recurso deviceComplianceDeviceOverview
 description: Ainda não documentado
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 607b85e9cbfbc5ee8d9be792a7f6f29bf6f6ace1
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 06bb0628072431fe3cba49d738b962a726db3137
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58819203"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59086887"
 ---
 # <a name="devicecompliancedeviceoverview-resource-type"></a>Tipo de recurso deviceComplianceDeviceOverview
 

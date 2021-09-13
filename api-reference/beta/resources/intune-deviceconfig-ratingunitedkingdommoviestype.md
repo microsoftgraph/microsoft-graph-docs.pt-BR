@@ -2,15 +2,15 @@
 title: tipo de número ratingUnitedKingdomMoviesType
 description: Rótulos de classificação de filmes no Reino Unido
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 7112347d7ad2451e096f973835e44e3431bdade4
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 17bb209df6210476f71042e0881954c8dc6ca45d
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58819105"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59106081"
 ---
 # <a name="ratingunitedkingdommoviestype-enum-type"></a>tipo de número ratingUnitedKingdomMoviesType
 

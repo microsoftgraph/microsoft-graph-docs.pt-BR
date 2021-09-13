@@ -2,15 +2,15 @@
 title: Tipo de recurso windowsPhoneXAP
 description: Contém propriedades e propriedades herdadas para Windows Phone aplicativos XAP Line Of Business.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 1af425d530d5553324e59c0881ecc45482a187d1
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: da7a1afaededd30679238345a3c4855b6c81980d
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58788987"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59091871"
 ---
 # <a name="windowsphonexap-resource-type"></a>Tipo de recurso windowsPhoneXAP
 
@@ -31,7 +31,7 @@ Herda de [mobileLobApp](../resources/intune-apps-mobilelobapp.md)
 |[Listar windowsPhoneXAPs](../api/intune-apps-windowsphonexap-list.md)|[Coleção windowsPhoneXAP](../resources/intune-apps-windowsphonexap.md)|Listar propriedades e relações dos objetos [windowsPhoneXAP.](../resources/intune-apps-windowsphonexap.md)|
 |[Obter windowsPhoneXAP](../api/intune-apps-windowsphonexap-get.md)|[windowsPhoneXAP](../resources/intune-apps-windowsphonexap.md)|Leia propriedades e relações do [objeto windowsPhoneXAP.](../resources/intune-apps-windowsphonexap.md)|
 |[Criar windowsPhoneXAP](../api/intune-apps-windowsphonexap-create.md)|[windowsPhoneXAP](../resources/intune-apps-windowsphonexap.md)|Crie um novo [objeto windowsPhoneXAP.](../resources/intune-apps-windowsphonexap.md)|
-|[Excluir windowsPhoneXAP](../api/intune-apps-windowsphonexap-delete.md)|Nenhum(a)|Exclui um [windowsPhoneXAP](../resources/intune-apps-windowsphonexap.md).|
+|[Excluir windowsPhoneXAP](../api/intune-apps-windowsphonexap-delete.md)|Nenhum|Exclui um [windowsPhoneXAP](../resources/intune-apps-windowsphonexap.md).|
 |[Atualizar windowsPhoneXAP](../api/intune-apps-windowsphonexap-update.md)|[windowsPhoneXAP](../resources/intune-apps-windowsphonexap.md)|Atualize as propriedades de um [objeto windowsPhoneXAP.](../resources/intune-apps-windowsphonexap.md)|
 
 ## <a name="properties"></a>Propriedades
@@ -39,7 +39,7 @@ Herda de [mobileLobApp](../resources/intune-apps-mobilelobapp.md)
 |:---|:---|:---|
 |id|Cadeia de caracteres|Chave da entidade. Herdado de [mobileApp](../resources/intune-shared-mobileapp.md)|
 |displayName|Cadeia de caracteres|O título do aplicativo importado ou definido pelo administrador. Herdado de [mobileApp](../resources/intune-shared-mobileapp.md)|
-|descrição|Cadeia de caracteres|A descrição do aplicativo. Herdado de [mobileApp](../resources/intune-shared-mobileapp.md)|
+|description|Cadeia de caracteres|A descrição do aplicativo. Herdado de [mobileApp](../resources/intune-shared-mobileapp.md)|
 |publicador|String|O publicador do aplicativo. Herdado de [mobileApp](../resources/intune-shared-mobileapp.md)|
 |largeIcon|[mimeContent](../resources/intune-shared-mimecontent.md)|O ícone grande, a ser exibido nos detalhes do aplicativo e usado para o carregamento do ícone. Herdado de [mobileApp](../resources/intune-shared-mobileapp.md)|
 |createdDateTime|DateTimeOffset|A data e a hora da criação do aplicativo. Herdado de [mobileApp](../resources/intune-shared-mobileapp.md)|
@@ -53,7 +53,7 @@ Herda de [mobileLobApp](../resources/intune-apps-mobilelobapp.md)
 |uploadState|Int32|O estado de carregamento. Os valores possíveis são: 0 - `Not Ready` , 1 - `Ready` , 2 - `Processing` . Herdado de [mobileApp](../resources/intune-shared-mobileapp.md)|
 |publishingState|[mobileAppPublishingState](../resources/intune-apps-mobileapppublishingstate.md)|O estado de publicação do aplicativo. O aplicativo não pode ser assinado, a menos que ele seja publicado. Herdado de [mobileApp](../resources/intune-shared-mobileapp.md). Os valores possíveis são: `notPublished`, `processing`, `published`.|
 |isAssigned|Boolean|O valor que indica se o aplicativo é atribuído a pelo menos um grupo. Herdado de [mobileApp](../resources/intune-shared-mobileapp.md)|
-|roleScopeTagIds|Coleção de cadeias de caracteres|Lista de ids de marca de escopo para este aplicativo móvel. Herdado de [mobileApp](../resources/intune-shared-mobileapp.md)|
+|roleScopeTagIds|String collection|Lista de ids de marca de escopo para este aplicativo móvel. Herdado de [mobileApp](../resources/intune-shared-mobileapp.md)|
 |dependentAppCount|Int32|O número total de dependências que o aplicativo filho tem. Herdado de [mobileApp](../resources/intune-shared-mobileapp.md)|
 |supersedingAppCount|Int32|O número total de aplicativos que esse aplicativo sobressede direta ou indiretamente. Herdado de [mobileApp](../resources/intune-shared-mobileapp.md)|
 |supersededAppCount|Int32|O número total de aplicativos pelos quais esse aplicativo é, direta ou indiretamente, é suplido. Herdado de [mobileApp](../resources/intune-shared-mobileapp.md)|
@@ -61,7 +61,7 @@ Herda de [mobileLobApp](../resources/intune-apps-mobilelobapp.md)
 |fileName|String|O nome do arquivo do aplicativo Lob principal. Herdado de [mobileLobApp](../resources/intune-apps-mobilelobapp.md)|
 |size|Int64|O tamanho total, incluindo todos os arquivos carregados. Herdado de [mobileLobApp](../resources/intune-apps-mobilelobapp.md)|
 |minimumSupportedOperatingSystem|[windowsMinimumOperatingSystem](../resources/intune-apps-windowsminimumoperatingsystem.md)|O valor do sistema de operacional mínimo aplicável.|
-|productIdentifier|Cadeia de caracteres|O Identificador de Produto.|
+|productIdentifier|Cadeia de Caracteres|O Identificador de Produto.|
 |identityVersion|String|A versão da identidade.|
 
 ## <a name="relationships"></a>Relações

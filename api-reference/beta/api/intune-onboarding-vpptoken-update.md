@@ -2,15 +2,15 @@
 title: Atualizar vppToken
 description: Atualizar as propriedades de um objeto vppToken.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 030a5467659edfa2754819bb20b1e44e28e6de4a
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 3fe82371ed0fdd12f6452cecce98248101738e32
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58787957"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59116504"
 ---
 # <a name="update-vpptoken"></a>Atualizar vppToken
 
@@ -29,7 +29,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |:---|:---|
 |Delegado (conta corporativa ou de estudante)|DeviceManagementServiceConfig.ReadWrite.All|
 |Delegado (conta pessoal da Microsoft)|Sem suporte.|
-|Application|DeviceManagementServiceConfig.ReadWrite.All|
+|Aplicativo|DeviceManagementServiceConfig.ReadWrite.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- {
@@ -68,9 +68,9 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar o [vppTo
 |countryOrRegion|Cadeia de caracteres|Se os aplicativos para o token VPP serão automaticamente atualizados ou não.|
 |dataSharingConsentGranted|Boleano|Consentimento concedido para compartilhamento de dados com o Programa de Compra de Volume da Apple.|
 |displayName|Cadeia de caracteres|Um nome amigável de token especificado pelo administrador.|
-|locationName|Cadeia de caracteres|Local do token retornado do VPP da Apple.|
+|locationName|Cadeia de Caracteres|Local do token retornado do VPP da Apple.|
 |claimTokenManagementFromExternalMdm|Boleano|Consentimento do administrador para permitir o gerenciamento de token de declaração do MDM externo.|
-|roleScopeTagIds|Coleção de cadeias de caracteres|IDs de marcas de escopo de função atribuídas a essa entidade.|
+|roleScopeTagIds|String collection|IDs de marcas de escopo de função atribuídas a essa entidade.|
 
 
 

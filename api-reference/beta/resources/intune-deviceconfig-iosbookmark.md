@@ -2,15 +2,15 @@
 title: Tipo de recurso iosBookmark
 description: Indicador de URL do iOS
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: ee61f1b0b45d735c6c738db6220d84b3cc962b6b
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 2df99ad3410864cc6bae922a6c8dafac4f022f2e
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58788230"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59086845"
 ---
 # <a name="iosbookmark-resource-type"></a>Tipo de recurso iosBookmark
 
@@ -26,7 +26,7 @@ Indicador de URL do iOS
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
 |url|Cadeia de caracteres|URL permitida para acessar|
-|bookmarkFolder|Cadeia de caracteres|A pasta na qual o indicador deve ser adicionado no Safari|
+|bookmarkFolder|Cadeia de Caracteres|A pasta na qual o indicador deve ser adicionado no Safari|
 |displayName|Cadeia de caracteres|O nome de exibição do indicador|
 
 ## <a name="relationships"></a>Relações

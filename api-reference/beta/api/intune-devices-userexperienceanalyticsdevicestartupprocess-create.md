@@ -2,15 +2,15 @@
 title: Criar userExperienceAnalyticsDeviceStartupProcess
 description: Crie um novo objeto userExperienceAnalyticsDeviceStartupProcess.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 95b0a022c71ef805a81e6399427f59523951073b
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 52ff897c348657b5862ed9bf41d531691cd55439
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58797041"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59097205"
 ---
 # <a name="create-userexperienceanalyticsdevicestartupprocess"></a>Criar userExperienceAnalyticsDeviceStartupProcess
 
@@ -29,7 +29,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |:---|:---|
 |Delegado (conta corporativa ou de estudante)|DeviceManagementManagedDevices.ReadWrite.All|
 |Delegado (conta pessoal da Microsoft)|Sem suporte.|
-|Application|DeviceManagementManagedDevices.ReadWrite.All|
+|Aplicativo|DeviceManagementManagedDevices.ReadWrite.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- {
@@ -54,8 +54,8 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar o userEx
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
 |id|Cadeia de caracteres|O identificador exclusivo do processo de inicialização do dispositivo de análise de experiência do usuário.|
-|managedDeviceId|Cadeia de caracteres|A ID do dispositivo de análise de experiência do usuário.|
-|processName|Cadeia de caracteres|Nome do processo de inicialização do dispositivo de análise de experiência do usuário.|
+|managedDeviceId|Cadeia de Caracteres|A ID do dispositivo de análise de experiência do usuário.|
+|processName|Cadeia de Caracteres|Nome do processo de inicialização do dispositivo de análise de experiência do usuário.|
 |productName|Cadeia de caracteres|O nome do produto do processo de inicialização do dispositivo de análise de experiência do usuário.|
 |publicador|String|O editor de processo de inicialização do dispositivo de análise de experiência do usuário.|
 |startupImpactInMs|Int32|Impacto no processo de inicialização do dispositivo de análise de experiência do usuário em milissegundos.|

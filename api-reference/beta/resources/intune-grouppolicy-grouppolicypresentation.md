@@ -2,15 +2,15 @@
 title: Tipo de recurso groupPolicyPresentation
 description: A entidade base para a apresentação de exibição de qualquer uma das opções adicionais em uma definição de política de grupo.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 424bda396ce51d9abc54b1330febc8230f7576cb
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 5f05c34b34856b0e038d96a71aeb49117cab0d30
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58816477"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59086103"
 ---
 # <a name="grouppolicypresentation-resource-type"></a>Tipo de recurso groupPolicyPresentation
 
@@ -31,7 +31,7 @@ A entidade base para a apresentação de exibição de qualquer uma das opções
 ## <a name="properties"></a>Propriedades
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|rótulo|Cadeia de caracteres|Rótulo de texto localizado para qualquer entidade de apresentação. O valor padrão é vazio.|
+|rótulo|Cadeia de Caracteres|Rótulo de texto localizado para qualquer entidade de apresentação. O valor padrão é vazio.|
 |id|Cadeia de caracteres|Chave da entidade.|
 |lastModifiedDateTime|DateTimeOffset|A data e a hora em que a entidade foi modificada pela última vez.|
 

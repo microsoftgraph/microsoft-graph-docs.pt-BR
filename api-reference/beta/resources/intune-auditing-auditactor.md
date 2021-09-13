@@ -2,15 +2,15 @@
 title: Tipo de recurso auditActor
 description: Uma classe que contém as propriedades para Ator de auditoria.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: b94cfecfa00378832c58ef048454eb9cbf98edb4
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 258624d97663da9b25ee6552e7eb3430191c135b
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58784860"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59146797"
 ---
 # <a name="auditactor-resource-type"></a>Tipo de recurso auditActor
 
@@ -34,8 +34,8 @@ Uma classe que contém as propriedades para Ator de auditoria.
 |ipAddress|Cadeia de caracteres|IPAddress.|
 |userId|Cadeia de caracteres|ID do usuário.|
 |userRoleScopeTags|[Coleção roleScopeTagInfo](../resources/intune-auditing-rolescopetaginfo.md)|Lista de marcas de escopo do usuário quando a auditoria foi realizada.|
-|remoteTenantId|Cadeia de caracteres|ID de locatário remoto|
-|remoteUserId|Cadeia de caracteres|ID do usuário remoto|
+|remoteTenantId|Cadeia de Caracteres|ID de locatário remoto|
+|remoteUserId|Cadeia de Caracteres|ID do usuário remoto|
 
 ## <a name="relationships"></a>Relações
 Nenhum

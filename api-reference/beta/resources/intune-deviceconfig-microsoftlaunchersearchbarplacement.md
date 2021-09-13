@@ -2,15 +2,15 @@
 title: Tipo denum microsoftLauncherSearchBarPlacement
 description: Microsoft Launcher Seleção de Posicionamento da Barra de Pesquisa.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 5b7a7fae08a6c5b34b947edf757fd0dcf4864c51
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 8a381ac3fdb29d37f11adc374274e9a5869d16f5
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58810643"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59091668"
 ---
 # <a name="microsoftlaunchersearchbarplacement-enum-type"></a>Tipo denum microsoftLauncherSearchBarPlacement
 

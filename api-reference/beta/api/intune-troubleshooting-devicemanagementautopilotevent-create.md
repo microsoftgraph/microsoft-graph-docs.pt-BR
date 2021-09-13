@@ -2,15 +2,15 @@
 title: Criar deviceManagementAutopilotEvent
 description: Crie um novo objeto deviceManagementAutopilotEvent.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 2e6909690f7289d5c91d171d520efd6d7f75d3c8
-ms.sourcegitcommit: 0116750a01323bc9bedd192d4a780edbe7ce0fdc
+ms.openlocfilehash: d1197d1a542df099243a00d989c25273db124a07
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58258037"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59116168"
 ---
 # <a name="create-devicemanagementautopilotevent"></a>Criar deviceManagementAutopilotEvent
 
@@ -25,8 +25,8 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 |Tipo de permissão|Permissões (da com menos para a com mais privilégios)|
 |:---|:---|
-|Delegada (conta corporativa ou de estudante)|DeviceManagementManagedDevices.ReadWrite.All|
-|Delegada (conta pessoal da Microsoft)|Sem suporte.|
+|Delegado (conta corporativa ou de estudante)|DeviceManagementManagedDevices.ReadWrite.All|
+|Delegado (conta pessoal da Microsoft)|Sem suporte.|
 |Aplicativo|DeviceManagementManagedDevices.ReadWrite.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
@@ -57,13 +57,13 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar deviceMa
 |deviceRegisteredDateTime|DateTimeOffset|Data do registro do dispositivo.|
 |enrollmentStartDateTime|DateTimeOffset|Data de início do registro do dispositivo.|
 |enrollmentType|[windowsAutopilotEnrollmentType](../resources/intune-troubleshooting-windowsautopilotenrollmenttype.md)|Tipo de registro. Os valores possíveis são: `unknown`, `azureADJoinedWithAutopilotProfile`, `offlineDomainJoined`, `azureADJoinedUsingDeviceAuthWithAutopilotProfile`, `azureADJoinedUsingDeviceAuthWithoutAutopilotProfile`, `azureADJoinedWithOfflineAutopilotProfile`, `azureADJoinedWithWhiteGlove`, `offlineDomainJoinedWithWhiteGlove`, `offlineDomainJoinedWithOfflineAutopilotProfile`.|
-|deviceSerialNumber|Cadeia de caracteres|Número de série do dispositivo.|
+|deviceSerialNumber|Cadeia de Caracteres|Número de série do dispositivo.|
 |managedDeviceName|String|Nome do dispositivo gerenciado.|
 |userPrincipalName|Cadeia de caracteres|Nome principal do usuário usado para registrar o dispositivo.|
-|windowsAutopilotDeploymentProfileDisplayName|Cadeia de caracteres|Nome do perfil do piloto automático.|
+|windowsAutopilotDeploymentProfileDisplayName|Cadeia de Caracteres|Nome do perfil do piloto automático.|
 |enrollmentState|[enrollmentState](../resources/intune-shared-enrollmentstate.md)|Estado de registro como Inscrito, Falha. Os possíveis valores são: `unknown`, `enrolled`, `pendingReset`, `failed`, `notContacted`, `blocked`.|
-|windows10EnrollmentCompletionPageConfigurationDisplayName|Cadeia de caracteres|Nome do perfil da Página de Status do Registro|
-|windows10EnrollmentCompletionPageConfigurationId|Cadeia de caracteres|ID do perfil da página de status de registro|
+|windows10EnrollmentCompletionPageConfigurationDisplayName|Cadeia de Caracteres|Nome do perfil da Página de Status do Registro|
+|windows10EnrollmentCompletionPageConfigurationId|Cadeia de Caracteres|ID do perfil da página de status de registro|
 |deploymentState|[windowsAutopilotDeploymentState](../resources/intune-troubleshooting-windowsautopilotdeploymentstate.md)|Estado de implantação como Sucesso, Falha, InProgress, SuccessWithTimeout. Os valores possíveis são: `unknown`, `success`, `inProgress`, `failure`, `successWithTimeout`, `notAttempted`, `disabled`.|
 |deviceSetupStatus|[windowsAutopilotDeploymentState](../resources/intune-troubleshooting-windowsautopilotdeploymentstate.md)|Status de implantação para a fase de configuração do dispositivo de página de status de registro. Os valores possíveis são: `unknown`, `success`, `inProgress`, `failure`, `successWithTimeout`, `notAttempted`, `disabled`.|
 |accountSetupStatus|[windowsAutopilotDeploymentState](../resources/intune-troubleshooting-windowsautopilotdeploymentstate.md)|Status de implantação para a fase de configuração da conta de página de status de registro. Os valores possíveis são: `unknown`, `success`, `inProgress`, `failure`, `successWithTimeout`, `notAttempted`, `disabled`.|
@@ -77,7 +77,7 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar deviceMa
 |deploymentEndDateTime|DateTimeOffset|Hora de término da implantação.|
 |targetedAppCount|Int32|Contagem de aplicativos direcionados.|
 |targetedPolicyCount|Int32|Contagem de políticas direcionadas.|
-|enrollmentFailureDetails|Cadeia de caracteres|Detalhes de falha de registro.|
+|enrollmentFailureDetails|Cadeia de Caracteres|Detalhes de falha de registro.|
 
 
 

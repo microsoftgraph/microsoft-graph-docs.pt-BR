@@ -1,16 +1,16 @@
 ---
 title: Tipo de recurso physicalOfficeAddress
 description: Representa o endereço comercial de um recurso, como um contato ou evento.
-localization_priority: Normal
+ms.localizationpriority: medium
 doc_type: resourcePageType
 ms.prod: directory-management
 author: dkershaw10
-ms.openlocfilehash: 55faeb615225aa7c3f3f3c9babf69ad8f9952fc8acdf2d5bf9f05b1a94edc236
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: ba9210df47c81f3714ea0fa11a9c3d2d9c1a359e
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54187606"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59091178"
 ---
 # <a name="physicalofficeaddress-resource-type"></a>Tipo de recurso physicalOfficeAddress
 

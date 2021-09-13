@@ -2,15 +2,15 @@
 title: Tipo de recurso windowsKioskDesktopApp
 description: A classe base para um tipo de aplicativo
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 6af178603f33bb851e33c9fcbdc6ed8d444a63cd
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 1264789f771be245ef62b3328b27f5211464f0c2
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58805404"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59086523"
 ---
 # <a name="windowskioskdesktopapp-resource-type"></a>Tipo de recurso windowsKioskDesktopApp
 
@@ -33,8 +33,8 @@ Herda do [windowsKioskAppBase](../resources/intune-deviceconfig-windowskioskappb
 |appType|[windowsKioskAppType](../resources/intune-deviceconfig-windowskioskapptype.md)|O tipo de aplicativo Herdado do [windowsKioskAppBase](../resources/intune-deviceconfig-windowskioskappbase.md). Os valores possíveis são: `unknown`, `store`, `desktop`, `aumId`.|
 |autoLaunch|Boleano|Permitir que o aplicativo seja lançado automaticamente no modo de quiosque de vários aplicativos Herdado do [windowsKioskAppBase](../resources/intune-deviceconfig-windowskioskappbase.md)|
 |caminho|String|Definir o caminho de um aplicativo de área de trabalho|
-|desktopApplicationId|Cadeia de caracteres|Definir o DesktopApplicationID do aplicativo|
-|desktopApplicationLinkPath|Cadeia de caracteres|Definir o DesktopApplicationLinkPath do aplicativo|
+|desktopApplicationId|Cadeia de Caracteres|Definir o DesktopApplicationID do aplicativo|
+|desktopApplicationLinkPath|Cadeia de Caracteres|Definir o DesktopApplicationLinkPath do aplicativo|
 
 ## <a name="relationships"></a>Relações
 Nenhum
