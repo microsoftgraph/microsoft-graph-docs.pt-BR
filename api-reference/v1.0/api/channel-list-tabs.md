@@ -2,15 +2,15 @@
 title: Listar guias no canal
 description: 'Recupere a lista de guias no canal especificado dentro de uma equipe. '
 author: nkramer
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: a5754c443d323dc67b0500f7ad6f198921ed887d
-ms.sourcegitcommit: b736af7020db7311f7d28b301752b5669d7badba
+ms.openlocfilehash: 8e59f54eef9167b8a4f09a15e7fd0583cf20b3de
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "51202230"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59105654"
 ---
 # <a name="list-tabs-in-channel"></a>Listar guias no canal
 
@@ -30,7 +30,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 > **Observação**: Permissões marcadas com * usam [consentimento específico de recurso]( https://aka.ms/teams-rsc).
 
-> **Observação**: esta API oferece transporte a permissões de administrador. Os administradores globais e os administradores do serviço do Microsoft Teams podem acessar equipes das quais eles não são membros.
+> **Observação**: esta API dá suporte a permissões de administrador. Os administradores globais e os administradores de serviços do Microsoft Teams podem acessar equipes das quais não são membros.
 
 ## <a name="http-request"></a>Solicitação HTTP
 
@@ -55,7 +55,7 @@ Se tiver êxito, este método retornará um código de resposta e uma coleção 
 
 ## <a name="examples"></a>Exemplos
 
-### <a name="example-1-list-all-the-tabs-in-the-channel-along-with-associated-teams-app"></a>Exemplo 1: listar todas as guias do canal juntamente com o aplicativo do Teams associado
+### <a name="example-1-list-all-the-tabs-in-the-channel-along-with-associated-teams-app"></a>Exemplo 1: listar todas as guias do canal juntamente com o aplicativo Teams associado
 #### <a name="request"></a>Solicitação
 Este é um exemplo de solicitação.
 

@@ -2,15 +2,15 @@
 title: Limites de API de conector do Microsoft Graph
 description: Limites de API de conector do Microsoft Graph
 author: mecampos
-localization_priority: Priority
+ms.localizationpriority: high
 doc_type: conceptualPageType
 ms.prod: search
-ms.openlocfilehash: f70b33d5f5fdf56786e13d4f3e00f1b5f20a2009ef947ea5be415e149eb7b839
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: f83136adcd1900f6e192ac763150128fa2ec0bcd
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54246406"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59136121"
 ---
 # <a name="microsoft-graph-connector-api-limits"></a>Limites de API de conector do Microsoft Graph
 

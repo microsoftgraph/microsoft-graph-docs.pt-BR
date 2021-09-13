@@ -2,15 +2,15 @@
 title: Tipo de recurso teamworkActivityTopic
 description: Representa o tópico de uma notificação de feed de atividade.
 author: eddie-lee-msft
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: microsoft-teams
 doc_type: resourcePageType
-ms.openlocfilehash: aad39f0f28ada3c0b300c5b4fd580a3d2f1b722ed6f6e77741213e87bd569483
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 721553521d202788f894381650ccf8e45c364805
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54231443"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59122954"
 ---
 # <a name="teamworkactivitytopic-resource-type"></a>Tipo de recurso teamworkActivityTopic
 

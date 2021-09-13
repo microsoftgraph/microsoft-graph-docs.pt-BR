@@ -2,15 +2,15 @@
 title: 'team: sendActivityNotification'
 description: Envie uma notificação de feed de atividade no escopo de uma equipe.
 author: eddie-lee-msft
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: be51a4094a0da78fa4382e568a333f492c57caf9
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 7ce1413e550d1a2102e00f2ac4fc6c895bc47f62
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58818965"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59109924"
 ---
 # <a name="team-sendactivitynotification"></a>team: sendActivityNotification
 Namespace: microsoft.graph
@@ -22,9 +22,9 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 |Tipo de permissão|Permissões (da com menos para a com mais privilégios)|
 |:---|:---|
-|Delegado (conta corporativa ou de estudante)|TeamsActivity.Send|
-|Delegado (conta pessoal da Microsoft)|Sem suporte.|
-|Application|TeamsActivity.Send.Group*, TeamsActivity.Send|
+|Delegada (conta corporativa ou de estudante)|TeamsActivity.Send|
+|Delegada (conta pessoal da Microsoft)|Sem suporte.|
+|Aplicativo|TeamsActivity.Send.Group*, TeamsActivity.Send|
 
 >**Observação:** Permissões marcadas com * use [o consentimento específico do recurso.](https://aka.ms/teams-rsc)
 

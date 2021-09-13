@@ -1,25 +1,25 @@
 ---
 title: Publicar teamsapp
-description: 'Publique um aplicativo no catálogo de aplicativos do Microsoft Teams. '
+description: 'Publique um aplicativo no catálogo Microsoft Teams aplicativos. '
 author: nkramer
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 1d746d4733301d8fcace84a0dba82a9a7234f320
-ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
+ms.openlocfilehash: f0938ab284ae9338b8d3c210820e207b4c164802
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "50948669"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59104667"
 ---
 # <a name="publish-teamsapp"></a>Publicar teamsapp
 
 Namespace: microsoft.graph
 
-Publique [um aplicativo](../resources/teamsapp.md) no catálogo de aplicativos do Microsoft Teams.
+Publique [um aplicativo](../resources/teamsapp.md) no catálogo Microsoft Teams aplicativos.
 Especificamente, essa API publica o aplicativo no catálogo da sua organização (o catálogo de aplicativos de locatários); o recurso criado terá um **valor de propriedade distributionMethod** de `organization` .
 
-A **propriedade requiresReview** permite que qualquer usuário envie um aplicativo para revisão por um administrador. Os administradores podem aprovar ou rejeitar esses aplicativos por meio dessa API ou do Centro de administração do Microsoft Teams.
+A **propriedade requiresReview** permite que qualquer usuário envie um aplicativo para revisão por um administrador. Os administradores podem aprovar ou rejeitar esses aplicativos por meio dessa API ou do Microsoft Teams de administração.
 
 ## <a name="permissions"></a>Permissões
 
@@ -27,7 +27,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 | Tipo de permissão                        | Permissões (da com menos para a com mais privilégios)|
 |:----------------------------------     |:-------------|
-| Delegado (conta corporativa ou de estudante) | AppCatalog.Submit, AppCatalog.ReadWrite.All, Directory.ReadWrite.All |
+| Delegada (conta corporativa ou de estudante) | AppCatalog.Submit, AppCatalog.ReadWrite.All, Directory.ReadWrite.All |
 | Delegado (conta pessoal da Microsoft) | Sem suporte|
 | Aplicativo                            | Sem suporte. |
 
@@ -47,7 +47,7 @@ POST /appCatalogs/teamsApps?requiresReview:{Boolean}
 
 |Propriedade|Tipo|Descrição|
 |----|----|----|
-|requiresReview| Booliano | Esse parâmetro de consulta opcional aciona o processo de revisão do aplicativo. Os usuários com privilégios de administrador podem enviar aplicativos sem disparar uma revisão. Se os usuários quiserem solicitar uma revisão antes da publicação, eles deverão definir  `requiresReview` como `true` . Um usuário com privilégios de administrador pode optar por não definir ou definir o valor como e o aplicativo será considerado aprovado e `requiresReview` `false`  publicará instantaneamente.|
+|requiresReview| Boolean | Esse parâmetro de consulta opcional aciona o processo de revisão do aplicativo. Os usuários com privilégios de administrador podem enviar aplicativos sem disparar uma revisão. Se os usuários quiserem solicitar uma revisão antes da publicação, eles deverão definir  `requiresReview` como `true` . Um usuário com privilégios de administrador pode optar por não definir ou definir o valor como e o aplicativo será considerado aprovado e `requiresReview` `false`  publicará instantaneamente.|
 
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
 
@@ -58,7 +58,7 @@ POST /appCatalogs/teamsApps?requiresReview:{Boolean}
 
 ## <a name="request-body"></a>Corpo da solicitação
 
-No corpo da solicitação, inclua uma carga de manifesto zip do Teams. Para obter detalhes, consulte [Create an app package](/microsoftteams/platform/concepts/apps/apps-package).
+No corpo da solicitação, inclua uma carga Teams de manifesto zip. Para obter detalhes, consulte [Create an app package](/microsoftteams/platform/concepts/apps/apps-package).
 
 Cada aplicativo no catálogo de aplicativos deve ter uma ID de manifesto exclusiva.
 
@@ -94,7 +94,7 @@ Content-length: 244
 
 
 ---
-Para obter informações sobre como criar um arquivo zip de aplicativo do Microsoft Teams, consulte [Create an app package](/microsoftteams/platform/concepts/apps/apps-package).
+Para obter informações sobre como criar um arquivo zip Microsoft Teams aplicativo, consulte [Create an app package](/microsoftteams/platform/concepts/apps/apps-package).
 
 #### <a name="response"></a>Resposta
 
@@ -117,7 +117,7 @@ Content-Type: application/json
 }
 ```
 
-### <a name="example-2-upload-a-new-application-for-review-to-an-organizations-app-catalog"></a>Exemplo 2: Carregar um novo aplicativo para revisão no catálogo de aplicativos de uma organização
+### <a name="example-2-upload-a-new-application-for-review-to-an-organizations-app-catalog"></a>Exemplo 2: Upload um novo aplicativo para revisão para o catálogo de aplicativos de uma organização
 
 #### <a name="request"></a>Solicitação
 

@@ -2,15 +2,15 @@
 title: Ação wipeManagedAppRegistrationsByDeviceTag
 description: Emite uma operação de apagamento em um registro de aplicativo com uma marcação de dispositivo específica.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: e4f814281a86ae1d5a6a4de14318dea3d96f2485147c3da5bff1f08a97916a21
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 558a58f78ec2c14a17fac1aff77804a9fe524e41
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54130699"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59147175"
 ---
 # <a name="wipemanagedappregistrationsbydevicetag-action"></a>Ação wipeManagedAppRegistrationsByDeviceTag
 

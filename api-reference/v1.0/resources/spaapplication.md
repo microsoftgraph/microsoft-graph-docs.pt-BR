@@ -1,16 +1,16 @@
 ---
 title: Tipo de recurso spaApplication
 description: Especifica configurações para um aplicativo de página única.
-localization_priority: Normal
+ms.localizationpriority: medium
 doc_type: resourcePageType
 ms.prod: applications
 author: sureshja
-ms.openlocfilehash: bc1974925713354484ea3998d394b9a212432caec2b2f56d12ee7072bb825f97
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 6511dfc95523098c96448bf2f39dbedc313217cc
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54152002"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59136338"
 ---
 # <a name="spaapplication-resource-type"></a>Tipo de recurso spaApplication
 
@@ -22,7 +22,7 @@ Especifica configurações para um aplicativo de página única.
 
 | Propriedade | Tipo | Descrição |
 |:---------|:-----|:------------|
-| redirectUris | Coleção de cadeias de caracteres | Especifica as URLs para as quais os tokens de usuário são enviados para entrar ou as URIs de redirecionamento para as quais os códigos de autorização do OAuth 2.0 e tokens de acesso são enviados. |
+| redirectUris | Coleção String | Especifica as URLs para as quais os tokens de usuário são enviados para entrar ou as URIs de redirecionamento para as quais os códigos de autorização do OAuth 2.0 e tokens de acesso são enviados. |
 
 ## <a name="json-representation"></a>Representação JSON
 Veja a seguir uma representação JSON do recurso.

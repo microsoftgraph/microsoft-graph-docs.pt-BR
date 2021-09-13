@@ -1,16 +1,16 @@
 ---
 title: Tipo de recurso changeTrackedEntity
 description: Representa uma entidade para controlar as alterações feitas em qualquer recurso Shifts com suporte
-localization_priority: Normal
+ms.localizationpriority: medium
 author: akumar39
 ms.prod: microsoft-teams
 doc_type: resourcePageType
-ms.openlocfilehash: 8f1326d316c686d6f9480b6117f189d3ef7ce70808eb28bd1c5aaf3bc66a1e71
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: b1a6ae5aefc3172e87fd3bad61838c110a4f14b4
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54218811"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59126937"
 ---
 # <a name="changetrackedentity-resource-type"></a>Tipo de recurso changeTrackedEntity
 
@@ -22,10 +22,10 @@ Representa uma entidade para controlar as alterações feitas em qualquer agenda
 
 | Propriedade     | Tipo        | Descrição |
 |:-------------|:------------|:------------|
-|createdDateTime|DateTimeOffset|O tipo Timestamp representa informações de data e hora usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite UTC em 1 de janeiro de 2014 é `2014-01-01T00:00:00Z`|
+|createdDateTime|DateTimeOffset|O tipo de carimbo de data/hora representa informações de data e hora usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite UTC em 1º de janeiro de 2014 é `2014-01-01T00:00:00Z`|
 |id|String| Somente leitura.|
 |lastModifiedBy|[identitySet](identityset.md)|Identidade da pessoa que modificou a entidade pela última vez.|
-|lastModifiedDateTime|DateTimeOffset|O tipo Timestamp representa informações de data e hora usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite UTC em 1 de janeiro de 2014 é `2014-01-01T00:00:00Z`|
+|lastModifiedDateTime|DateTimeOffset|O tipo de carimbo de data/hora representa informações de data e hora usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite UTC em 1º de janeiro de 2014 é `2014-01-01T00:00:00Z`|
 
 ## <a name="relationships"></a>Relações
 

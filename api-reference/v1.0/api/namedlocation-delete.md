@@ -1,16 +1,16 @@
 ---
 title: Excluir namedLocation
 description: Exclua um objeto namedLocation.
-localization_priority: Normal
+ms.localizationpriority: medium
 author: videor
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: 6a51da64e4e04d962991303d2cd23f5a4f71372a
-ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
+ms.openlocfilehash: 5d4f99926332e9beee86437ddc94985498f6da61
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50448232"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59099371"
 ---
 # <a name="delete-namedlocation"></a>Excluir namedLocation
 
@@ -24,8 +24,8 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 | Tipo de permissão                        | Permissões (da com menos para a com mais privilégios) |
 |:---------------------------------------|:--------------------------------------------|
-| Delegado (conta corporativa ou de estudante)     | Policy.Read.All e Policy.ReadWrite.ConditionalAccess |
-| Delegado (conta pessoal da Microsoft) | Sem suporte. |
+| Delegada (conta corporativa ou de estudante)     | Policy.Read.All e Policy.ReadWrite.ConditionalAccess |
+| Delegada (conta pessoal da Microsoft) | Sem suporte. |
 | Aplicativo                            | Policy.Read.All e Policy.ReadWrite.ConditionalAccess |
 
 ## <a name="http-request"></a>Solicitação HTTP

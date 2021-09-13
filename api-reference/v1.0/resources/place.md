@@ -1,16 +1,16 @@
 ---
 title: tipo de recurso place
 description: Representa um lugar. Esse é o tipo base para uma sala ou roomList.
-localization_priority: Normal
+ms.localizationpriority: medium
 author: vrod9429
 ms.prod: outlook
 doc_type: resourcePageType
-ms.openlocfilehash: a9e062bc2571f7496aab6d589d5556f309cde1a9228b0f1f1b25eba86a417515
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 351430fa75abf9e49fb82d69aa854fe57efcefdd
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54174910"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59044459"
 ---
 # <a name="place-resource-type"></a>tipo de recurso place
 
@@ -49,7 +49,7 @@ As [funções findRooms](/graph/api/user-findrooms) e [findRoomLists](/graph/api
 | address        | [physicalAddress](physicaladdress.md)             | O endereço de rua do local. |
 | displayName    | Cadeia de caracteres                                            | O nome associado ao local. |
 | geoCoordinates | [outlookGeoCoordinates](outlookgeocoordinates.md) | Especifica o local do local nas coordenadas de latitude, longitude e (opcionalmente). |
-| id             | Cadeia de caracteres                                            | Identificador exclusivo do local. Somente leitura. |
+| id             | String                                            | Identificador exclusivo do local. Somente leitura. |
 | phone          | Cadeia de caracteres                                            | O número de telefone do local. |
 
 ## <a name="relationships"></a>Relações

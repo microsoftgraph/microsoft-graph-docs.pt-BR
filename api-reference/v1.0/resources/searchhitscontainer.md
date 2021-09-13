@@ -1,16 +1,16 @@
 ---
 title: Tipo de recurso searchHitsContainer
 description: Represente a lista de resultados da pesquisa.
-localization_priority: Normal
+ms.localizationpriority: medium
 author: nmoreau
 ms.prod: search
 doc_type: resourcePageType
-ms.openlocfilehash: 42abefb12b0ae1953caf9ecbfa04cd2bc29b69d8c9d8ca2a0797497efb8d6271
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: ebd8440c5f417786c002f074ef90646f156549d4
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54134956"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59137536"
 ---
 # <a name="searchhitscontainer-resource-type"></a>Tipo de recurso searchHitsContainer
 

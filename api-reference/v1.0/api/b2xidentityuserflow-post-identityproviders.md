@@ -1,16 +1,16 @@
 ---
 title: Adicionar identityProvider
 description: Adicione um provedor de identidade a um fluxo de usuário B2X.
-localization_priority: Normal
+ms.localizationpriority: medium
 doc_type: apiPageType
 author: jkdouglas
 ms.prod: identity-and-sign-in
-ms.openlocfilehash: 6ec01ec32cedf3bd1464058c9a8261e925505422
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: 2d730bcae52f0cf99e0112015effac975a992350
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52054613"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59100369"
 ---
 # <a name="add-identityprovider"></a>Adicionar identityProvider
 
@@ -24,8 +24,8 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegado (conta corporativa ou de estudante)|IdentityUserFlow.ReadWrite.All|
-|Delegado (conta pessoal da Microsoft)| Sem suporte.|
+|Delegada (conta corporativa ou de estudante)|IdentityUserFlow.ReadWrite.All|
+|Delegada (conta pessoal da Microsoft)| Sem suporte.|
 |Aplicativo| IdentityUserFlow.ReadWrite.All|
 
 A conta de trabalho ou de estudante precisa pertencer a uma das seguintes funções:

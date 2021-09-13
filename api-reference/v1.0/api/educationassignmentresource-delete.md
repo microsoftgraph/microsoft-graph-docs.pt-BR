@@ -2,15 +2,15 @@
 title: Excluir educationAssignmentResource
 description: Exclua um recurso específico anexado a uma atribuição.
 author: sharad-sharma-msft
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: 16cb969fc4f1980c7ec5b37f5dfb8c1c384c6e7f
-ms.sourcegitcommit: 979fe005c74eb99cd971df6b9511b2d3f7fe3cd4
+ms.openlocfilehash: fedf0dc0a72aed534b20a09c3eda1ff0db867997
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/17/2021
-ms.locfileid: "52993000"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59074473"
 ---
 # <a name="delete-educationassignmentresource"></a>Excluir educationAssignmentResource
 
@@ -25,8 +25,8 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegado (conta corporativa ou de estudante) |  EduAssignments.ReadWriteBasic, EduAssignments.ReadWrite  |
-|Delegado (conta pessoal da Microsoft) |  Sem suporte.  |
+|Delegada (conta corporativa ou de estudante) |  EduAssignments.ReadWriteBasic, EduAssignments.ReadWrite  |
+|Delegada (conta pessoal da Microsoft) |  Sem suporte.  |
 |Aplicativo | Sem suporte. | 
 
 ## <a name="http-request"></a>Solicitação HTTP

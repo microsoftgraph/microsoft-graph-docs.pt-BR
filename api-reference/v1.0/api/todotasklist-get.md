@@ -2,15 +2,15 @@
 title: Obter todoTaskList
 description: Leia as propriedades e as relações de um objeto todoTaskList.
 author: avijityadav
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 62dfcfbc7fd3b9c88be39f18e8cc1da56a3fd584
-ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
+ms.openlocfilehash: 46dadfc54912976e38da320bdf0cd8e1f4531046
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "50963399"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59104639"
 ---
 # <a name="get-todotasklist"></a>Obter todoTaskList
 Namespace: microsoft.graph

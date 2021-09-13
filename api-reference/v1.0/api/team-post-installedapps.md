@@ -2,15 +2,15 @@
 title: Adicionar aplicativo à equipe
 description: Instala um aplicativo à equipe especificada.
 author: akjo
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 2131639eaf6b5ecda41b764a17049c4b61347d1e
-ms.sourcegitcommit: 456ec9510807d05623c0ed1dd049c9676f53f56b
+ms.openlocfilehash: 6b0225960b6a0a3603d76ae66af4323e4c7f3476
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/22/2021
-ms.locfileid: "53059382"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59109994"
 ---
 # <a name="add-app-to-team"></a>Adicionar aplicativo à equipe
 
@@ -44,7 +44,7 @@ POST /teams/{team-id}/installedApps
 
 | Propriedade   | Tipo |Descrição|
 |:---------------|:--------|:----------|
-|teamsApp|String|A id do aplicativo a ser acrescentado.|
+|teamsApp|Cadeia de caracteres|A id do aplicativo a ser acrescentado.|
 
 ## <a name="response"></a>Resposta
 

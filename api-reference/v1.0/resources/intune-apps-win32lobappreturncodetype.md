@@ -2,15 +2,15 @@
 title: Tipo denum win32LobAppReturnCodeType
 description: Indica o tipo de código de retorno.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 0a07beccc5dfc0529a8966ae11441341aee2a4385d1e8b10ef9db4d8d88a7c85
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: cfbb030b2fe5083694dae3a12da9b16341d7c341
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54180751"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59021677"
 ---
 # <a name="win32lobappreturncodetype-enum-type"></a>Tipo denum win32LobAppReturnCodeType
 

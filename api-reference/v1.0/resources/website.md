@@ -1,16 +1,16 @@
 ---
 title: tipo de recurso de site
 description: Representa um site.
-localization_priority: Normal
+ms.localizationpriority: medium
 author: AAmatino
 ms.prod: ''
 doc_type: resourcePageType
-ms.openlocfilehash: f6e237756f96df9ed0592ab38cf7af04e0fb43f90323e1b63ffc9902d4a329a1
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: c0daa5106f70f049d070968749e5a7d391783d59
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54196457"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59134210"
 ---
 # <a name="website-resource-type"></a>tipo de recurso de site
 
@@ -24,7 +24,7 @@ Representa um site.
 |:---------------|:--------|:----------|
 |type|websiteType| Os valores possíveis são: `other`, `home`, `work`, `blog`, `profile`.|
 |address|cadeia de caracteres|A URL do site.|
-|displayName|string|O nome de exibição do site.|
+|displayName|cadeia de caracteres|O nome de exibição do site.|
 
 ## <a name="json-representation"></a>Representação JSON
 

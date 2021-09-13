@@ -2,15 +2,15 @@
 title: Atualizar settingStateDeviceSummary
 description: Atualizar as propriedades de um objeto settingStateDeviceSummary.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 4de0edcf4e6bdd6e30049a075a5dfb09918d0453721eaa2de598a4358a0ce52b
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: ff33af4410a4c90fb2033db6ccc4a61f7427e315
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54250513"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59144095"
 ---
 # <a name="update-settingstatedevicesummary"></a>Atualizar settingStateDeviceSummary
 
@@ -52,7 +52,7 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar [setting
 
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|id|Cadeia de caracteres|Chave da entidade.|
+|id|String|Chave da entidade.|
 |settingName|Cadeia de caracteres|Nome da configuração|
 |instancePath|Cadeia de caracteres|Nome de InstancePath para a configuração|
 |unknownDeviceCount|Int32|Contagem desconhecida de dispositivos para a configuração|

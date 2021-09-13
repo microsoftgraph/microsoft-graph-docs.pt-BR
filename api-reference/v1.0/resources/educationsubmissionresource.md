@@ -2,15 +2,15 @@
 title: Tipo de recurso educationSubmissionResource
 description: Um wrapper em torno de um recurso para uso em um envio.
 author: sharad-sharma-msft
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: education
 doc_type: resourcePageType
-ms.openlocfilehash: b24f1ea91691dd66d66848abcdb0069e9a25e4865f18f05b7682d2fb4a8f3d88
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 632e2d746e4204e2c3c64f429f443ff40ed5a69f
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54141746"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59118733"
 ---
 # <a name="educationsubmissionresource-resource-type"></a>Tipo de recurso educationSubmissionResource
 
@@ -26,12 +26,12 @@ O wrapper adiciona um ponteiro ao recurso de atribuição se ele foi copiado da 
 | Método           | Tipo de retorno    |Descrição|
 |:---------------|:--------|:----------|
 |[Obter educationSubmissionResource](../api/educationsubmissionresource-get.md) | [educationSubmissionResource](educationsubmissionresource.md) |Leia propriedades e relações de um **objeto educationSubmissionResource.**|
-|[Delete](../api/educationsubmissionresource-delete.md) | None |**Exclua um objeto educationSubmissionResource.** |
+|[Delete](../api/educationsubmissionresource-delete.md) | Nenhum(a) |**Exclua um objeto educationSubmissionResource.** |
 
 ## <a name="properties"></a>Propriedades
 | Propriedade     | Tipo   |Descrição|
 |:---------------|:--------|:----------|
-|assignmentResourceUrl|String|Ponteiro para a atribuição da qual esse recurso foi copiado. Se for nulo, o aluno carregará o recurso.|
+|assignmentResourceUrl|Cadeia de caracteres|Ponteiro para a atribuição da qual esse recurso foi copiado. Se for nulo, o aluno carregará o recurso.|
 |id|String| Somente leitura.|
 |recurso|[educationResource](educationresource.md)|Objeto Resource.|
 

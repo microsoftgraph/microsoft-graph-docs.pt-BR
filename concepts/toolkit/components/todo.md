@@ -1,14 +1,14 @@
 ---
 title: To Do componente no microsoft Graph Toolkit
 description: O To Do componente permite ao usuário exibir, adicionar, remover, concluir ou editar todas as tarefas. Ele funciona com qualquer tarefa no Microsoft To-Do.
-localization_priority: Normal
+ms.localizationpriority: medium
 author: shweaver-MSFT
-ms.openlocfilehash: 215315c67931c36019a4a83f1b295193ed0c7375487202c2ce58156aa64db42a
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 4c2b54d0c6b5307762d38a9cb204a896aaaa4e9d
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54143644"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59129625"
 ---
 # <a name="to-do-component-in-the-microsoft-graph-toolkit"></a>To Do componente no microsoft Graph Toolkit
 
@@ -95,7 +95,7 @@ mgt-todo {
 
 Para saber mais, confira [componentes de estilo](https://docs.microsoft.com/graph/toolkit/style.md).
 
-## <a name="events"></a>Eventos
+## <a name="events"></a>Events
 
 Os eventos a seguir são disparados do componente.
 

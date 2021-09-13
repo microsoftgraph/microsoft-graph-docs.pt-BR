@@ -1,16 +1,16 @@
 ---
 title: Usar a API de avaliação de ameaças do Microsoft Graph
 description: O Microsoft Graph permite que seu aplicativo obtenha acesso autorizado aos dados de avaliação de ameaças da organização.
-localization_priority: Priority
+ms.localizationpriority: high
 author: preetikr
 ms.prod: security
 doc_type: resourcePageType
-ms.openlocfilehash: 0837dae4482174bb8ccab05791c61dfb17eb6c80d6e1cdc3337cdfddb6d1636b
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: cff55ff2e26de97fecec93a05910c5b44b26a6d2
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54124021"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59055819"
 ---
 # <a name="use-the-microsoft-graph-threat-assessment-api"></a>Usar a API de avaliação de ameaças do Microsoft Graph
 

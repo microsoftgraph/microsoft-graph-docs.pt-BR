@@ -2,15 +2,15 @@
 title: Tipo de recurso managedAppRegistration
 description: O ManagedAppEntity é o tipo de entidade de base para todos os outros tipos de entidades em um fluxo de trabalho de gerenciamento de aplicativos. O recurso ManagedAppRegistration representa os detalhes de um aplicativo, com capacidade de gerenciamento, usado por um membro da organização.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: c2efba9301c42434efb2876e91e6b0ddcee2611d1f1efbe02cadbf51e47467c5
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 0972c5fffb6a8ab7e7ce2549af4ce621c88bb3d7
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54205651"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59148253"
 ---
 # <a name="managedappregistration-resource-type"></a>Tipo de recurso managedAppRegistration
 
@@ -42,7 +42,7 @@ O recurso ManagedAppRegistration representa os detalhes de um aplicativo, com ca
 |flaggedReasons|[Coleção managedAppFlaggedReason](../resources/intune-mam-managedappflaggedreason.md)|Zero ou mais motivos para a sinalização de um registro de aplicativo. E.g. aplicativo usado em dispositivo modificado|
 |userId|Cadeia de caracteres|A ID de usuário à qual este registro de aplicativo pertence.|
 |appIdentifier|[mobileAppIdentifier](../resources/intune-mam-mobileappidentifier.md)|O identificador do pacote do aplicativo|
-|id|Cadeia de caracteres|Chave da entidade.|
+|id|String|Chave da entidade.|
 |versão|String|Versão da entidade.|
 
 ## <a name="relationships"></a>Relações

@@ -2,14 +2,14 @@
 title: 'Tutorial: use a API de críticas de acesso para revisar o acesso aos seus grupos de segurança'
 description: Usar a API de avaliações de acesso para revisar o acesso aos seus grupos de segurança
 author: FaithOmbongi
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: governance
-ms.openlocfilehash: a2237efa8be245519f9494473460ea3ef1a4875b1a3a5b745b687ebe430c880d
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 6ac5bdc6432c372120ddc3725bfe2143fb435104
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54237352"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59143486"
 ---
 # <a name="tutorial-use-the-access-reviews-api-to-review-access-to-your-security-groups"></a>Tutorial: use a API de críticas de acesso para revisar o acesso aos seus grupos de segurança
 

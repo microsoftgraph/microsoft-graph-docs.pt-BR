@@ -2,15 +2,15 @@
 title: Adicionar uma guia ao canal
 description: 'Adiciona (pins) a uma guia para o canal especificado dentro de uma equipe. '
 author: nkramer
-localization_priority: Priority
+ms.localizationpriority: high
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: f4f175955a2c3beb78e0ca3bebf8a6591f6fa35d58d939f86cecbc0d0a6f8043
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 6367aabfe05116d61a524e330001287aaea87fb6
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54200212"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59130976"
 ---
 # <a name="add-tab-to-channel"></a>Adicionar uma guia ao canal
 

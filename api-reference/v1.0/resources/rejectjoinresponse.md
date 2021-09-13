@@ -2,15 +2,15 @@
 title: Tipo de recurso rejectJoinResponse
 description: Contém uma resposta para rejeitar um participante que tenta ingressar na reunião.
 author: yizhenww
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: cloud-communications
 doc_type: resourcePageType
-ms.openlocfilehash: 4a8868b07b84717176af01d70cdc6e86b671b8f4c0fe588db2c183909c252848
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: f16c061d6652f68ca27744d32e1203ef46c1d1fd
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54163681"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59044241"
 ---
 # <a name="rejectjoinresponse-resource-type"></a>Tipo de recurso rejectJoinResponse
 
@@ -24,7 +24,7 @@ Isso tem o mesmo efeito que rejeitar uma notificação de chamada de entrada de 
 
 | Propriedade         | Tipo                            | Descrição                                                                                                                                                  |
 | :--------------- | :------------------------------ | :----------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| motivo           | Cadeia de caracteres                          | O motivo da rejeição. Os valores possíveis são: `None`, `Busy` e `Forbidden`.                                                                                     |
+| motivo           | String                          | O motivo da rejeição. Os valores possíveis são: `None`, `Busy` e `Forbidden`.                                                                                     |
 
 ## <a name="json-representation"></a>Representação JSON
 

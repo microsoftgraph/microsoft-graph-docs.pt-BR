@@ -1,21 +1,21 @@
 ---
 title: Criar todoTask
-description: Crie um novo objeto task em um todoTaskList especificado.
+description: Crie um novo objeto de tarefa em um todoTaskList especificado.
 author: avijityadav
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 2fcca012cfb1b7e569296cbb892e1f523f7f257a
-ms.sourcegitcommit: eacd2a6e46c19dd3cd8519592b1668fabe14d85d
+ms.openlocfilehash: e1f183c1097fb0d8ee53147556c095d1fb4a79e4
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "49873525"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59104625"
 ---
 # <a name="create-todotask"></a>Criar todoTask
 Namespace: microsoft.graph
 
-Criar um novo objeto task em um [todoTaskList especificado.](../resources/todotasklist.md)
+Crie um novo objeto de tarefa em [um todoTaskList especificado.](../resources/todotasklist.md)
 
 ## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
@@ -51,7 +51,7 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar [todoTas
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
 |id|Cadeia de caracteres|Identificador exclusivo para a tarefa. Por padrão, esse valor muda quando o item é movido de uma lista para outra.|
-|body|[itemBody](../resources/itembody.md)|Corpo da tarefa que normalmente contém informações sobre a tarefa.|
+|corpo|[itemBody](../resources/itembody.md)|Corpo da tarefa que normalmente contém informações sobre a tarefa.|
 |completedDateTime|[dateTimeTimeZone](../resources/datetimetimezone.md)|A data no fuso horário especificado que a tarefa foi concluída.|
 |dueDateTime|[dateTimeTimeZone](../resources/datetimetimezone.md)|A data no fuso horário especificado que a tarefa será concluída.|
 |importância|importância|A importância da tarefa. Os valores possíveis são: `low`, `normal`, `high`.|
@@ -59,16 +59,16 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar [todoTas
 |recurrence|[patternedRecurrence](../resources/patternedrecurrence.md)|O padrão de recorrência da tarefa.|
 |reminderDateTime|[dateTimeTimeZone](../resources/datetimetimezone.md)|A data e hora do alerta de lembrete da tarefa.|
 |status|taskStatus|Indica o estado ou o andamento da tarefa. Os valores possíveis são: `notStarted`, `inProgress`, `completed`, `waitingOnOthers`, `deferred`.|
-|title|Cadeia de caracteres|Uma breve descrição da tarefa.|
-|createdDateTime|DateTimeOffset|A data e a hora da criação da tarefa. Por padrão, está definida em UTC. Você pode fornecer um fuso horário personalizado no cabeçalho da solicitação. O valor da propriedade usa o formato ISO 8601. Por exemplo, meia-noite em UTC no dia 1º de janeiro de 2020 teria esta aparência: '2020-01-01T00:00:00Z'.|
-|lastModifiedDateTime|DateTimeOffset|A data e hora da última modificação da tarefa. Por padrão, está definida em UTC. Você pode fornecer um fuso horário personalizado no cabeçalho da solicitação. O valor da propriedade usa o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite em UTC no dia 1º de janeiro de 2020 teria esta aparência: '2020-01-01T00:00:00Z'.|
-|bodyLastModifiedDateTime|DateTimeOffset|A data e hora da última modificação da tarefa. Por padrão, está definida em UTC. Você pode fornecer um fuso horário personalizado no cabeçalho da solicitação. O valor da propriedade usa o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite em UTC no dia 1º de janeiro de 2020 teria esta aparência: '2020-01-01T00:00:00Z'.|
+|title|String|Uma breve descrição da tarefa.|
+|createdDateTime|DateTimeOffset|A data e a hora da criação da tarefa. Por padrão, está definida em UTC. Você pode fornecer um fuso horário personalizado no cabeçalho da solicitação. O valor da propriedade usa o formato ISO 8601. Por exemplo, meia-noite UTC em 1º de janeiro de 2020 teria esta aparência: '2020-01-01T00:00:00Z'.|
+|lastModifiedDateTime|DateTimeOffset|A data e hora da última modificação da tarefa. Por padrão, está definida em UTC. Você pode fornecer um fuso horário personalizado no cabeçalho da solicitação. O valor da propriedade usa o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite UTC em 1º de janeiro de 2020 teria esta aparência: '2020-01-01T00:00:00Z'.|
+|bodyLastModifiedDateTime|DateTimeOffset|A data e hora da última modificação da tarefa. Por padrão, está definida em UTC. Você pode fornecer um fuso horário personalizado no cabeçalho da solicitação. O valor da propriedade usa o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite UTC em 1º de janeiro de 2020 teria esta aparência: '2020-01-01T00:00:00Z'.|
 
 
 
 ## <a name="response"></a>Resposta
 
-Se bem-sucedido, este método retorna `201 Created` um código de resposta e um objeto [todoTask](../resources/todotask.md) no corpo da resposta.
+Se tiver êxito, este método retornará um código `201 Created` de resposta e um objeto [todoTask](../resources/todotask.md) no corpo da resposta.
 
 ## <a name="examples"></a>Exemplos
 

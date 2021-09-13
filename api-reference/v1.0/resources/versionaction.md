@@ -2,15 +2,15 @@
 author: daspek
 title: Tipo de recurso versionAction
 description: O objeto VersionAction fornece informações sobre uma atividade que resultou em uma nova versão de item.
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: sharepoint
 doc_type: resourcePageType
-ms.openlocfilehash: bb1061e09b78a2069b1182811573564804b25d9dfe7d1f8dced0cfb55e62e5dd
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 4fbeb09d0fd2f209d436578e29ae7bf1fd404c3c
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54129880"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59139550"
 ---
 # <a name="versionaction-resource-type"></a>Tipo de recurso versionAction
 

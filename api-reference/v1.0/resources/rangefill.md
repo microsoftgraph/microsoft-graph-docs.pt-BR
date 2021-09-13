@@ -2,15 +2,15 @@
 title: Tipo de recurso RangeFill
 description: Representa a tela de fundo de um objeto Range.
 author: lumine2008
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: excel
 doc_type: resourcePageType
-ms.openlocfilehash: c1485d3465818b9daccf039c13c21c7557206025886747110813e5b3834e6504
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: c601b569db032c999ecc88300ca98b698500ca8f
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54159852"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59143773"
 ---
 # <a name="rangefill-resource-type"></a>Tipo de recurso RangeFill
 

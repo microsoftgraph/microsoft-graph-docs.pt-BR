@@ -2,15 +2,15 @@
 title: Tipo de recurso serviceUpdateMessageViewpoint
 description: Representa os dados de pontos de exibição do usuário para um serviceUpdateMessage."
 author: payiAzure
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: service-communications
 doc_type: resourcePageType
-ms.openlocfilehash: 57d5bf64069d0799514eafc78fbfb5d221ccf82b
-ms.sourcegitcommit: 0116750a01323bc9bedd192d4a780edbe7ce0fdc
+ms.openlocfilehash: 080d739d2111d383c5e5d7cf8ec3ec510e1cb5ba
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58250894"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59108762"
 ---
 # <a name="serviceupdatemessageviewpoint-resource-type"></a>Tipo de recurso serviceUpdateMessageViewpoint
 
@@ -22,7 +22,7 @@ Representa dados de pontos de exibição do usuário para [um serviceUpdateMessa
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
 |isArchived|Booliano|Indica se o usuário arquivou a mensagem.|
-|isFavorited|Boolean|Indica se o usuário marcou a mensagem como favorita.|
+|isFavorited|Booliano|Indica se o usuário marcou a mensagem como favorita.|
 |isRead|Boolean|Indica se o usuário leu a mensagem.|
 
 ## <a name="relationships"></a>Relações

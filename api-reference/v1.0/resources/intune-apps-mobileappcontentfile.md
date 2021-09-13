@@ -2,15 +2,15 @@
 title: Tipo de recurso mobileAppContentFile
 description: Contém propriedades de um único arquivo de instalação associado uma versão específica de mobileAppContent.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 00d05b36cb2ca06a459d7065a2f5fde6d3e993a270d1c5b61fd95aa53bde9716
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 36d626a21e76b89d2fa3e3f26ba62875c439a281
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54205812"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59137599"
 ---
 # <a name="mobileappcontentfile-resource-type"></a>Tipo de recurso mobileAppContentFile
 
@@ -38,7 +38,7 @@ Contém propriedades de um único arquivo de instalação associado uma versão 
 |isCommitted|Booliano|Um valor que indica se o arquivo tem está confirmado.|
 |id|Cadeia de caracteres|A ID do arquivo.|
 |createdDateTime|DateTimeOffset|A hora em que o arquivo foi criado.|
-|nome|Cadeia de caracteres|O nome do arquivo.|
+|nome|String|O nome do arquivo.|
 |size|Int64|O tamanho do arquivo antes da criptografia.|
 |sizeEncrypted|Int64|O tamanho do arquivo após a criptografia.|
 |azureStorageUriExpirationDateTime|DateTimeOffset|A hora de expiração do URI do armazenamento do Azure.|

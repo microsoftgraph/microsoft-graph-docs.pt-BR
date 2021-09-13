@@ -2,15 +2,15 @@
 title: tipo de recurso localizedNotificationMessage
 description: O conteúdo do texto de um Modelo de mensagem de notificação para a localidade especificada.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: c4fcff0fb646e3a1f20c9a9d2c717a0ae1190067cf9f6914e186328c7ada2f8f
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 1fe179c45c4ce332880eb5532720a2df141e1243
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54175008"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59044549"
 ---
 # <a name="localizednotificationmessage-resource-type"></a>tipo de recurso localizedNotificationMessage
 
@@ -35,7 +35,7 @@ O conteúdo do texto de um Modelo de mensagem de notificação para a localidade
 |id|String|Chave da entidade.|
 |lastModifiedDateTime|DateTimeOffset|DateTime da última modificação do objeto.|
 |localidade|Cadeia de caracteres|A localidade para a qual esta mensagem se destina.|
-|Assunto|String|O assunto do modelo da mensagem.|
+|assunto|Cadeia de caracteres|O assunto do modelo da mensagem.|
 |messageTemplate|Cadeia de caracteres|O conteúdo do modelo da mensagem.|
 |isDefault|Booliano|Sinaliza para indicar se esta é ou não a localidade padrão do fallback de idioma. Esse sinalizador só pode ser definido. Para remover a definição, defina esta propriedade como verdadeira na outra Mensagem de notificação localizada.|
 

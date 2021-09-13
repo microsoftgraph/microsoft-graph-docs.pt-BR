@@ -2,14 +2,14 @@
 title: 'Referência de permissões do Microsoft Graph '
 description: O Microsoft Graph expõe as permissões granulares que controlam o acesso que os aplicativos têm aos recursos, como email, grupos e usuários. Como desenvolvedor, você decide quais permissões para o Microsoft Graph seu aplicativo deverá solicitar.
 author: jackson-woods
-localization_priority: Priority
+ms.localizationpriority: high
 ms.custom: graphiamtop20, scenarios:getting-started
-ms.openlocfilehash: 7c8e37f1ce6d802e303566e72e600471bd796118
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 790bfb908c54a5eec2e2274495f761baaea5fec9
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58796177"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59089316"
 ---
 # <a name="microsoft-graph-permissions-reference"></a>Referência de permissões do Microsoft Graph
 
@@ -96,7 +96,7 @@ Segue a resposta de JSON:
 }
 ```
 
-## <a name="retriving-permission-ids"></a>Recuperando as IDs de permissão
+## <a name="retrieving-permission-ids"></a>Recuperando as IDs de permissão
 
 Se precisar definir permissões usando a CLI do Azure, PowerShell ou infraestrutura como estruturas de código, talvez seja necessário o identificador da permissão que deseja usar em vez do nome. Você pode usar a CLI do Azure para recuperar o identificador executando `az ad sp list`. No entanto, isso gera uma lista muito longa e pode ser difícil encontrar a permissão específica desejada. Se você já sabe o nome da permissão de que precisa, pode executar o seguinte comando usando a CLI do Azure:
 
@@ -1321,7 +1321,7 @@ _Notes.ReadWrite_ e _Notes.ReadWrite.All_ também permitem que o aplicativo modi
 Para contas corporativas ou de estudante, _Notes.Read.All_ e _Notes.ReadWrite.All_ permitem que o aplicativo acesse o conteúdo do OneNote de outros usuários ao qual o usuário conectado tenha permissão dentro da organização.
 
 ### <a name="example-usage"></a>Exemplo de uso
-#### <a name="delegated"></a>Delegated
+#### <a name="delegated"></a>Delegado
 
 * _Notes.Create_: Criar novos blocos de anotações para o usuário conectado (`POST /me/onenote/notebooks`).
 * _Notes.Read_: Criar blocos de anotações para o usuário conectado (`GET /me/onenote/notebooks`).
@@ -2435,7 +2435,7 @@ Para que um aplicativo leia ou grave todas as configurações de implantação d
 
 ### <a name="example-usage"></a>Exemplo de uso
 
-#### <a name="delegated"></a>Delegated
+#### <a name="delegated"></a>Delegado
 
 * _WindowsUpdates.ReadWrite.All_: crie uma implantação (`POST /beta/admin/windows/updates/deployments`).
 

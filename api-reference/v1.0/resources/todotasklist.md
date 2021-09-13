@@ -2,15 +2,15 @@
 title: Tipo de recurso todoTaskList
 description: Uma lista em Microsoft To Do que contém um ou mais recursos todoTask.
 author: avijityadav
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: outlook
 doc_type: resourcePageType
-ms.openlocfilehash: 7e0b51647ed53a7e1f7500f3322c840f7476218f0c99888de7c700fb36c4820e
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 24d98f5fa351db7aed56a637eee2d606d42fb504
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54124007"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59134287"
 ---
 # <a name="todotasklist-resource-type"></a>Tipo de recurso todoTaskList
 
@@ -31,7 +31,7 @@ Esse recurso oferece suporte
 |[Criar todoTaskList](../api/todo-post-lists.md) | [todoTaskList](todotasklist.md) | Crie um [todoTaskList](todotasklist.md) na caixa de correio do usuário. |
 |[Obter lista de tarefas](../api/todotasklist-get.md)|[todoTaskList](todotasklist.md)|Leia as propriedades e as relações do [todoTaskList especificado.](todotasklist.md)|
 |[Atualizar lista de tarefas](../api/todotasklist-update.md)|[todoTaskList](todotasklist.md)| Atualize as propriedades writable do [todoTaskList especificado.](todotasklist.md)|
-|[Excluir lista de tarefas](../api/todotasklist-delete.md)|None| Exclua [todoTaskList especificado.](todotasklist.md)|
+|[Excluir lista de tarefas](../api/todotasklist-delete.md)|Nenhum(a)| Exclua [todoTaskList especificado.](todotasklist.md)|
 |[Listar tarefas](../api/todotasklist-list-tasks.md)|Coleção [todoTask](todotask.md)|Obtenha todos os recursos [todoTask](todotask.md) na lista especificada.|
 |[Criar tarefa](../api/todotasklist-post-tasks.md)|[todoTask](todotask.md)| Crie um [todoTask](todotask.md) na lista de tarefas especificada.|
 
@@ -39,15 +39,15 @@ Esse recurso oferece suporte
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
 |displayName|String|O nome da lista de tarefas.|
-|id|Cadeia de caracteres| O identificador da lista de tarefas, exclusivo na caixa de correio do usuário. Somente leitura. Herdado da [entidade](entity.md)|
-|isOwner|Booliano| True se o usuário for proprietário da lista de tarefas determinada.|
+|id|String| O identificador da lista de tarefas, exclusivo na caixa de correio do usuário. Somente leitura. Herdado da [entidade](entity.md)|
+|isOwner|Boolean| True se o usuário for proprietário da lista de tarefas determinada.|
 |isShared|Booliano| True se a lista de tarefas for compartilhada com outros usuários|
 |wellknownListName|wellknownListName| Propriedade indicando o nome da lista se a lista determinada for uma lista conhecida. Os valores possíveis são: `none`, `defaultList`, `flaggedEmails`, `unknownFutureValue`.|
 
 ### <a name="wellknownlistname-values"></a>valores wellknownListName
 |Member|Descrição|
 |:---|:---|
-|nenhuma| Lista criada pelo usuário.|
+|Nenhuma| Lista criada pelo usuário.|
 |defaultList| Lista de **tarefas** integrados.|
 |flaggedEmails| Lista de **email sinalizada** embutida. Tarefas de emails sinalizados estão presentes nesta lista.|
 |unknownFutureValue| Valor de sentinela de enumeração evolvável. Não usar.|

@@ -4,12 +4,13 @@ description: Saiba mais sobre grupos externos para gerenciar permissões para it
 author: mecampos
 doc_type: conceptualPageType
 ms.prod: search
-ms.openlocfilehash: 369ca51c3a7e344d21bf92eaa3ab3985c4f6875227962555f564ff7049a5bbeb
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.localizationpriority: medium
+ms.openlocfilehash: 5a4da4e8dbe61f73f2806cc2f9e2bc41b18ac1f7
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54129684"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59139314"
 ---
 # <a name="use-external-groups-to-manage-permissions-to-microsoft-graph-connector-data-sources"></a>Usar grupos externos para gerenciar permissões para o Microsoft Graph de dados do conector
 
@@ -42,7 +43,7 @@ A imagem a seguir mostra a estrutura das informações de associação no Salesf
 Para usar grupos externos em suas conexões:
 
 1. Para cada grupo que não seja do Azure AD, crie um grupo externo no Microsoft Graph usando a [API de grupos.](/en-us/graph/api/resources/group?view=graph-rest-beta&preserve-view=true)
-2. Use o grupo externo ao definir a ACL para seus itens externos, conforme necessário.  
+2. Use o grupo externo ao definir a ACL para seus itens externos, conforme necessário.
 3. Mantenha a associação dos grupos externos atualizada e em sincronia.
 
 ### <a name="create-external-groups"></a>Criar grupos externos
@@ -54,13 +55,13 @@ Grupos externos pertencem a uma conexão. Para criar grupos externos em suas con
     > [DisplayName](/graph/api/resources/externalgroup?view=graph-rest-beta&preserve-view=true) e **descrição** são campos opcionais.
 
     ```http
-    POST /connections/{connectionId}/groups 
+    POST /connections/{connectionId}/groups
 
-    {  
-      "id": "contosoEscalations",  
-      "displayName": "Contoso Escalations",  
+    { 
+      "id": "contosoEscalations", 
+      "displayName": "Contoso Escalations", 
       "description": "Tier-1 escalations within Contoso"
-    }  
+    } 
     ```
 
 * Forneça um identificador ou um nome no [campo ID.](/graph/api/resources/externalgroup?view=graph-rest-beta&preserve-view=true) Use esse valor para chamar o grupo externo em solicitações subsequentes.
@@ -78,28 +79,28 @@ Depois de criar o grupo, você pode adicionar membros ao grupo, conforme mostrad
 ```http
 POST https://graph.microsoft.com/beta/connections/{connectionId}/groups/{groupId}/members
 
-{ 
-  "id": "contosoSupport", 
-  "type": "group", 
-  "identitySource": "external" 
+{
+  "id": "contosoSupport",
+  "type": "group",
+  "identitySource": "external"
 }
 ```
 ```http
-POST https://graph.microsoft.com/beta/connections/{connectionId}/groups/{groupId}/members 
+POST https://graph.microsoft.com/beta/connections/{connectionId}/groups/{groupId}/members
 
-{ 
-  "id": "25f143de-be82-4afb-8a57-e032b9315752", 
-  "type": "user", 
-  "identitySource": "azureActiveDirectory" 
+{
+  "id": "25f143de-be82-4afb-8a57-e032b9315752",
+  "type": "user",
+  "identitySource": "azureActiveDirectory"
 }
 ```
 ```http
-POST https://graph.microsoft.com/beta/connections/{connectionId}/groups/{groupId}/members 
+POST https://graph.microsoft.com/beta/connections/{connectionId}/groups/{groupId}/members
 
-{ 
-  "id": "99a3b3d6-71ee-4d21-b08b-4b6f22e3ae4b", 
-  "type": "group", 
-  "identitySource": "azureActiveDirectory" 
+{
+  "id": "99a3b3d6-71ee-4d21-b08b-4b6f22e3ae4b",
+  "type": "group",
+  "identitySource": "azureActiveDirectory"
 }
 ```
 
@@ -108,41 +109,41 @@ POST https://graph.microsoft.com/beta/connections/{connectionId}/groups/{groupId
 Você pode usar grupos externos ao definir ACLs para itens [externos,](connecting-external-content-manage-items.md#access-control-list) conforme mostrado no exemplo a seguir. Além de usuários e grupos do Azure AD, um item externo pode ter grupos externos em suas entradas de controle de acesso.
 
 ```http
-PUT https://graph.microsoft.com/beta/external/connections/{id}/items/{id}  
+PUT https://graph.microsoft.com/beta/external/connections/{id}/items/{id} 
 
-Content-type: application/json  
-{  
-  "@odata.type": "microsoft.graph.externalItem",  
-  "acl": [  
-    {  
-      "type": "group",  
-      "value": "contosEscalations",  
-      "accessType": "grant",  
-      "identitySource": "External"  
-    },  
-    {  
-      "type": "user",  
-      "value": "87e9089a-08d5-4d9e-9524-b7bd6be580d5",  
-      "accessType": "grant",  
-      "identitySource": "azureActiveDirectory"  
-    },  
-    {  
-      "type": "group",  
-      "value": "96fbeb4f-f71c-4405-9f0b-1d6988eda2d2",  
-      "accessType": "deny",  
-      "identitySource": "azureActiveDirectory"  
-    }  
-  ],  
-  "properties": {  
-    "title": "Error in the payment gateway",  
-    "priority": 1,  
-    "assignee": "john@contoso.com"  
-  },  
-  "content": {  
-    "value": "<h1>Error in payment gateway</h1><p>Error details...</p>",  
-    "type": "html"  
-  }  
-}  
+Content-type: application/json 
+{ 
+  "@odata.type": "microsoft.graph.externalItem", 
+  "acl": [ 
+    { 
+      "type": "group", 
+      "value": "contosEscalations", 
+      "accessType": "grant", 
+      "identitySource": "External" 
+    }, 
+    { 
+      "type": "user", 
+      "value": "87e9089a-08d5-4d9e-9524-b7bd6be580d5", 
+      "accessType": "grant", 
+      "identitySource": "azureActiveDirectory" 
+    }, 
+    { 
+      "type": "group", 
+      "value": "96fbeb4f-f71c-4405-9f0b-1d6988eda2d2", 
+      "accessType": "deny", 
+      "identitySource": "azureActiveDirectory" 
+    } 
+  ], 
+  "properties": { 
+    "title": "Error in the payment gateway", 
+    "priority": 1, 
+    "assignee": "john@contoso.com" 
+  }, 
+  "content": { 
+    "value": "<h1>Error in payment gateway</h1><p>Error details...</p>", 
+    "type": "html" 
+  } 
+} 
 ```
 
 > [!NOTE]

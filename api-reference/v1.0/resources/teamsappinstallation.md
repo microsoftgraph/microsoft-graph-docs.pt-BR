@@ -2,15 +2,15 @@
 title: Tipo de recurso teamsAppInstallation
 description: Representa um teamsApp instalado em uma equipe ou no escopo pessoal de um usuário.
 author: AkJo
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: microsoft-teams
 doc_type: resourcePageType
-ms.openlocfilehash: 131f809955d61ea186685df6c874464d44229bc972f82a20e12722c6f42b4e15
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 81626d05c7cc417b083b8c08b0fab02cc0dbad08
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54141291"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59128177"
 ---
 # <a name="teamsappinstallation-resource-type"></a>Tipo de recurso teamsAppInstallation
 
@@ -41,7 +41,7 @@ Representa um [teamsApp](teamsapp.md) instalado em uma [equipe](team.md) ou no e
 
 | Propriedade            | Tipo     | Descrição |
 |:------------------- |:-------- |:----------- |
-| id                  | string   | Uma ID exclusiva (não Teams ID do aplicativo). |
+| id                  | cadeia de caracteres   | Uma ID exclusiva (não Teams ID do aplicativo). |
 
 ## <a name="relationships"></a>Relações
 

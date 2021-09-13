@@ -2,15 +2,15 @@
 title: Atualizar educationSchool
 description: Atualize as propriedades de um objeto educationSchool.
 author: mlafleur
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: e6c53b2b9b5934559a352378ee5316618ae69abe
-ms.sourcegitcommit: 34891a1c601976166958be1aa04bab5936592b44
+ms.openlocfilehash: cae56a4aef0111dd12f2968a7c1b8f0f7ed52f7d
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/06/2021
-ms.locfileid: "52231868"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59046180"
 ---
 # <a name="update-educationschool"></a>Atualizar educationSchool
 
@@ -50,10 +50,10 @@ A tabela a seguir mostra as propriedades que são necessárias ao atualizar [o e
 
 | Propriedade             | Tipo                                               | Descrição                                                                                                                                                           |
 | :------------------- | :------------------------------------------------- | :-------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| displayName          | String                                             | Nome de exibição da escola. Herdado de [educationOrganization](../resources/educationorganization.md).                                                            |
-| descrição          | String                                             | Descrição da escola. Herdado de [educationOrganization](../resources/educationorganization.md).                                                             |
+| displayName          | Cadeia de caracteres                                             | Nome de exibição da escola. Herdado de [educationOrganization](../resources/educationorganization.md).                                                            |
+| description          | String                                             | Descrição da escola. Herdado de [educationOrganization](../resources/educationorganization.md).                                                             |
 | externalSource       | educationExternalSource                            | Fonte de onde essa organização foi criada. Herdado de [educationOrganization](../resources/educationorganization.md). Os valores possíveis são: `sis` e `manual`. |
-| externalSourceDetail | String                                             | O nome da fonte externa de onde esses recursos foram gerados.                                                                                                    |
+| externalSourceDetail | Cadeia de caracteres                                             | O nome da fonte externa de onde esses recursos foram gerados.                                                                                                    |
 | principalEmail       | Cadeia de caracteres                                             | Endereço de email da entidade de segurança.                                                                                                                                       |
 | principalName        | Cadeia de caracteres                                             | Nome da entidade de segurança.                                                                                                                                                |
 | externalPrincipalId  | Cadeia de caracteres                                             | ID da entidade de segurança no sistema de sincronização.                                                                                                                                    |

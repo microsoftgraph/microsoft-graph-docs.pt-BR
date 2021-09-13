@@ -2,15 +2,15 @@
 title: Atualizar regra
 description: Altere as propriedades graváveis em um objeto messageRule e salve as alterações.
 author: abheek-das
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 2b4aa70734a0dad302433f33b6f1ab2de888414a
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: d9b2977acf39b55efa5d085026d11c491cf77296
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52039374"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59072978"
 ---
 # <a name="update-rule"></a>Atualizar regra
 
@@ -24,7 +24,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegado (conta corporativa ou de estudante) | MailboxSettings.ReadWrite    |
+|Delegada (conta corporativa ou de estudante) | MailboxSettings.ReadWrite    |
 |Delegado (conta pessoal da Microsoft) | MailboxSettings.ReadWrite    |
 |Aplicativo | MailboxSettings.ReadWrite |
 
@@ -35,7 +35,7 @@ PATCH /me/mailFolders/inbox/messageRules/{id}
 PATCH /users/{id | userPrincipalName}/mailFolders/inbox/messageRules/{id}
 ```
 ## <a name="optional-request-headers"></a>Cabeçalhos de solicitação opcionais
-| Nome       | Descrição|
+| Name       | Descrição|
 |:-----------|:-----------|
 | Autorização  | {token} de portador. Obrigatório. |
 
@@ -96,7 +96,7 @@ Content-type: application/json
 ---
 
 ##### <a name="response"></a>Resposta
-Veja a seguir um exemplo da resposta. Observação: o objeto de resposta exibido aqui pode ser encurtado para legibilidade.
+Aqui está um exemplo da resposta. Observação: o objeto de resposta mostrado aqui pode ser reduzido para facilitar a leitura.
 <!-- {
   "blockType": "response",
   "truncated": true,

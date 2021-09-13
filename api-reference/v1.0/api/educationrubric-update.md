@@ -1,16 +1,16 @@
 ---
 title: Atualizar educationRubric
 description: Atualize as propriedades do objeto educationRubric.
-localization_priority: Normal
+ms.localizationpriority: medium
 author: sharad-sharma-msft
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: bb4e16297119915ab10805f078339688d0373738
-ms.sourcegitcommit: 979fe005c74eb99cd971df6b9511b2d3f7fe3cd4
+ms.openlocfilehash: a497d2c9c6e9e35af5c9e18c73cb21010c140961
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/17/2021
-ms.locfileid: "52990925"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59147413"
 ---
 # <a name="update-educationrubric"></a>Atualizar educationRubric
 

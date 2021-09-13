@@ -1,14 +1,14 @@
 ---
 title: Provedor do SharePoint
 description: Use o provedor SharePoint seu SharePoint web parts para dar energia aos componentes com o microsoft Graph acesso.
-localization_priority: Normal
+ms.localizationpriority: medium
 author: nmetulev
-ms.openlocfilehash: 9b0f126426b2506ad5686449088393cd1f5c15d3aefe4102996ebdad3539a62c
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: f1906598eaa0218a9adb7749ecf9276b105f437b
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54194935"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59126531"
 ---
 # <a name="sharepoint-provider"></a>Provedor do SharePoint
 

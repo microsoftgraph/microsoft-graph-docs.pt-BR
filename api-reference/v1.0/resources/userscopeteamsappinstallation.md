@@ -2,15 +2,15 @@
 title: Tipo de recurso userScopeTeamsAppInstallation
 description: Representa um teamsApp instalado no escopo pessoal de um usuário.
 author: AkJo
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: microsoft-teams
 doc_type: resourcePageType
-ms.openlocfilehash: 46532e7808e30359c82448287fcdbcf0dd87a75421fdff7012e77792f02d0212
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: e0ebe4544d419c7cdf4ea72c79b2e76fc231d004
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54211820"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59136254"
 ---
 # <a name="userscopeteamsappinstallation-resource-type"></a>Tipo de recurso userScopeTeamsAppInstallation
 
@@ -37,7 +37,7 @@ Esse tipo herda de [teamsAppInstallation](teamsappinstallation.md).
 
 | Propriedade            | Tipo     | Descrição |
 |:------------------- |:-------- |:----------- |
-| id                  | string   | Uma ID exclusiva (não Teams ID do aplicativo). |
+| id                  | cadeia de caracteres   | Uma ID exclusiva (não Teams ID do aplicativo). |
 
 ## <a name="relationships"></a>Relações
 

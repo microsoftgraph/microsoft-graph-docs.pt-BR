@@ -2,14 +2,14 @@
 title: Anexar arquivos grandes a mensagens ou eventos do Outlook
 description: Dependendo do tamanho do arquivo, você pode escolher uma das duas maneiras de anexar um arquivo a uma mensagem ou evento.
 author: abheek-das
-localization_priority: Priority
+ms.localizationpriority: high
 ms.prod: outlook
-ms.openlocfilehash: e33619e77e35b9260c6ff802c6ca8da4dc8051ce075c56d6bcf9ec61bb85d8dc
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: af7c1445cedee69306bb23fc627d2020c698600a
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54240405"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59071879"
 ---
 # <a name="attach-large-files-to-outlook-messages-or-events"></a>Anexar arquivos grandes a mensagens ou eventos do Outlook
 

@@ -1,14 +1,14 @@
 ---
 title: People-Picker componente
 description: Você pode usar o componente web mgt-people-picker para pesquisar um número especificado de pessoas e renderizar a lista de resultados por meio do Microsoft Graph.
-localization_priority: Normal
+ms.localizationpriority: medium
 author: elisenyang
-ms.openlocfilehash: 8c42a4dbdf6881a86794594e13ec6e799fbbd8ac556a499bef868926a7d49e56
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 277a8423ef018d5663fa6aaae94e384554914686
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54216285"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59103848"
 ---
 # <a name="people-picker-component-in-the-microsoft-graph-toolkit"></a>People-Picker componente no microsoft Graph Toolkit
 
@@ -73,7 +73,14 @@ Você pode preencher dados de pessoas selecionadas fazendo um dos seguintes:
     document.querySelector('mgt-people-picker').selectUsersById(["id","id"])
     ```
 
-## <a name="events"></a>Eventos
+- Usando o método, que aceita uma matriz de IDs de grupo do Microsoft Graph para encontrar os `selectGroupsById()` grupos com usuários associados. [](/graph/api/resources/group)
+
+    ```javascript
+    // groupid = Microsoft graph group "id"
+    document.querySelector('mgt-people-picker').selectGroupsById(["groupid","groupid"])
+    ```
+
+## <a name="events"></a>Events
 
 Os eventos a seguir são disparados do componente.
 
@@ -123,7 +130,7 @@ mgt-people-picker {
 | erro | null: sem dados | O modelo usado se a pesquisa do usuário não retornar usuários. |
 | no-data | null: sem dados | Um modelo alternativo usado se a pesquisa do usuário não retornar usuários. |
 | selected-person | pessoa: o objeto de detalhes da pessoa | O modelo para renderizar as pessoas selecionadas. |
-| person | pessoa: o objeto de detalhes da pessoa | O modelo para renderizar pessoas no menu suspenso. |
+| pessoa | pessoa: o objeto de detalhes da pessoa | O modelo para renderizar pessoas no menu suspenso. |
 
 Os exemplos a seguir mostram como usar o `error` modelo.
 

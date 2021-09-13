@@ -1,16 +1,16 @@
 ---
 title: Tipo de recurso conditionalAccessGrantControls
 description: Representa os controles de concessão que devem ser cumpridos para passar a política.
-localization_priority: Normal
+ms.localizationpriority: medium
 author: videor
 ms.prod: identity-and-sign-in
 doc_type: resourcePageType
-ms.openlocfilehash: 6bd2c8dbcd6a57b9f97d810e5691cb2c705c67d2cf322a7b3d26369aa57489dd
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: d4e1b01338011e41994347beeeaeb2c7d53fbb16
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54223631"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59104219"
 ---
 # <a name="conditionalaccessgrantcontrols-resource-type"></a>Tipo de recurso conditionalAccessGrantControls
 
@@ -22,10 +22,10 @@ Representa os controles de concessão que devem ser cumpridos para passar a pol�
 
 | Propriedade | Tipo | Descrição |
 |:-------- |:---- |:----------- |
-| operator | Cadeia de caracteres | Define a relação dos controles de concessão. Valores possíveis: `AND` , `OR` . |
+| operator | String | Define a relação dos controles de concessão. Valores possíveis: `AND` , `OR` . |
 | builtInControls | Coleção conditionalAccessGrantControl | Lista de valores de controles internos exigidos pela política. Valores possíveis: `block` , , , , , , , `mfa` `compliantDevice` `domainJoinedDevice` `approvedApplication` `compliantApplication` `passwordChange` `unknownFutureValue` . |
-| customAuthenticationFactors | Coleção de cadeias de caracteres | Lista de IDs de controles personalizados exigidas pela política. Para obter mais informações, consulte [Controles personalizados](/azure/active-directory/conditional-access/controls). |
-| termsOfUse | Coleção de cadeias de caracteres | Lista de [termos de](/graph/api/resources/agreement) IDs de uso exigidos pela política. |
+| customAuthenticationFactors | Coleção String | Lista de IDs de controles personalizados exigidas pela política. Para obter mais informações, consulte [Controles personalizados](/azure/active-directory/conditional-access/controls). |
+| termsOfUse | Coleção String | Lista de [termos de](/graph/api/resources/agreement) IDs de uso exigidos pela política. |
 
 ### <a name="special-considerations-when-using-passwordchange-as-a-control"></a>Considerações especiais ao usar `passwordChange` como um controle
 

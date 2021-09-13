@@ -2,15 +2,15 @@
 title: Listar settingStateDeviceSummaries
 description: Listar propriedades e relações dos objetos settingStateDeviceSummary.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 00ce9865dd0ef192e6f32d26fe0a3eb6e197c5be2f8a6b8046ddc1b5b79b03f0
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 6a9d52e4e52e695a754d16761369bd1252a56f7a
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54175781"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59119573"
 ---
 # <a name="list-settingstatedevicesummaries"></a>Listar settingStateDeviceSummaries
 

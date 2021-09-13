@@ -2,14 +2,14 @@
 title: Usar a API Pesquisa da Microsoft no Microsoft Graph refinar consultas com agregação
 description: Você pode usar a API Pesquisa da Microsoft para recuperar agregações
 author: nmoreau
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: search
-ms.openlocfilehash: edb0618751d54ca58578d56f7ee835bd9eeb7638fd9d4a4f5602708c11d48e5a
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 48462a3bbf08e4836227cf73c21e4949766da62e
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54138291"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59129716"
 ---
 # <a name="refine-search-results-using-aggregations-preview"></a>Refinar resultados de pesquisa usando agregação (visualização)
 

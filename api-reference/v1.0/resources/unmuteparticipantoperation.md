@@ -2,15 +2,15 @@
 title: Tipo de recurso unmuteParticipantOperation
 description: Descreve o formato de resposta de uma operação de desinteressar do participante da chamada.
 author: ananmishr
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: cloud-communications
 doc_type: resourcePageType
-ms.openlocfilehash: f829a71905275a338e5bb76cb6e86fd9cb425b50eb7a15b1f5bbdeaf2d1f7089
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: e030dc47f0f6acba12e03057ff43f354748c9543
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54235237"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59055742"
 ---
 # <a name="unmuteparticipantoperation-resource-type"></a>Tipo de recurso unmuteParticipantOperation
 
@@ -22,7 +22,7 @@ Descreve o formato de resposta de uma operação de desinteressar do participant
 
 | Propriedade                       | Tipo                        | Descrição                                                                                                                                       |
 | :----------------------------- | :---------------------------| :-------------------------------------------------------------------------------------------------------------------------------------------------|
-| clientContext                  | Cadeia de caracteres                      | Cadeia de caracteres de contexto de cliente exclusiva. Pode ter no máximo 256 caracteres.                                                                               |
+| clientContext                  | String                      | Cadeia de caracteres de contexto de cliente exclusiva. Pode ter no máximo 256 caracteres.                                                                               |
 | id                             | Cadeia de caracteres                      | A ID da operação do servidor. Somente leitura.                                                                                            |
 | resultInfo                     | [resultInfo](resultinfo.md) | As informações de resultado.  Somente leitura.                                                                                            |
 | status                         | String                      | Os valores possíveis são: `notStarted`, `running`, `completed`, `failed`. Somente leitura.                                                 |

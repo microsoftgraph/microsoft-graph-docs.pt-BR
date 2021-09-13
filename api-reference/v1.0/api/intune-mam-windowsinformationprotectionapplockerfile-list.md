@@ -2,15 +2,15 @@
 title: Listar windowsInformationProtectionAppLockerFiles
 description: Listar propriedades e relações de objetos de windowsInformationProtectionAppLockerFile.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 33b71bd298e7750b4df18e4b6f540621290c943b71ba4f88ac6154d519ce5717
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 8b705883b190a35c188adae7f5dc6576b9d66181
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54225885"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59147112"
 ---
 # <a name="list-windowsinformationprotectionapplockerfiles"></a>Listar windowsInformationProtectionAppLockerFiles
 

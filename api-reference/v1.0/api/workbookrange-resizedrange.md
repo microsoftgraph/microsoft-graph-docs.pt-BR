@@ -1,16 +1,16 @@
 ---
 title: 'workbookRange: resizedRange'
 description: Obtém um objeto range semelhante ao objeto range atual, mas com seu canto inferior direito expandido (ou recolhido) por um determinado número de linhas e colunas.
-localization_priority: Normal
+ms.localizationpriority: medium
 author: lumine2008
 ms.prod: excel
 doc_type: apiPageType
-ms.openlocfilehash: 9a238749a52b13190891df6a51c0f04da58cfafce62c15a5a14db9b16b1e5e98
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 96c5e0e58a70b6cbca16c001e8396b62b872889e
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54192618"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59104380"
 ---
 # <a name="workbookrange-resizedrange"></a>workbookRange: resizedRange
 

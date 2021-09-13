@@ -1,18 +1,18 @@
 ---
 description: Arquivo gerado automaticamente. NÃO MODIFICAR
-ms.openlocfilehash: 4ec0200604f94aec4fedb8dd053fb5a5f1f17acc
-ms.sourcegitcommit: 1a84f80798692fc0381b1acecfe023b3ce6ab02c
+ms.openlocfilehash: 77a4138e6d6b0745957feae131caca9fa5a81b29
+ms.sourcegitcommit: 9b8abc940a68dac6ee5da105ca29800cb59775f6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/12/2020
-ms.locfileid: "41953661"
+ms.lasthandoff: 08/25/2021
+ms.locfileid: "58513654"
 ---
 ```objc
 
 MSHTTPClient *httpClient = [MSClientFactory createHTTPClientWithAuthenticationProvider:authenticationProvider];
 
 NSString *MSGraphBaseURL = @"https://graph.microsoft.com/v1.0/";
-NSMutableURLRequest *urlRequest = [NSMutableURLRequest requestWithURL:[NSURL URLWithString:[MSGraphBaseURL stringByAppendingString:@"/groups/1ad75eeb-7e5a-4367-a493-9214d90d54d0/assignLicense"]]];
+NSMutableURLRequest *urlRequest = [NSMutableURLRequest requestWithURL:[NSURL URLWithString:[MSGraphBaseURL stringByAppendingString:@"/groups/1132b215-826f-42a9-8cfe-1643d19d17fd/assignLicense"]]];
 [urlRequest setHTTPMethod:@"POST"];
 [urlRequest setValue:@"application/json" forHTTPHeaderField:@"Content-Type"];
 
@@ -22,8 +22,8 @@ NSMutableArray *addLicensesList = [[NSMutableArray alloc] init];
 payloadDictionary[@"addLicenses"] = addLicensesList;
 
 NSMutableArray *removeLicensesList = [[NSMutableArray alloc] init];
-[removeLicensesList addObject: @"skuId-value-1"];
-[removeLicensesList addObject: @"skuId-value-2"];
+[removeLicensesList addObject: @"c7df2760-2c81-4ef7-b578-5b5392b571df"];
+[removeLicensesList addObject: @"b05e124f-c7cc-45a0-a6aa-8cf78c946968"];
 payloadDictionary[@"removeLicenses"] = removeLicensesList;
 
 NSData *data = [NSJSONSerialization dataWithJSONObject:payloadDictionary options:kNilOptions error:&error];

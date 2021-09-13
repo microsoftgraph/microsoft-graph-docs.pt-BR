@@ -2,15 +2,15 @@
 title: Tipo de recurso educationSubmission
 description: Um envio representa os recursos que um indivíduo (ou grupo) entrega para uma atribuição e os resultados (como notas ou comentários) associados ao envio.
 author: sharad-sharma-msft
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: education
 doc_type: resourcePageType
-ms.openlocfilehash: 301aa5daab5b89291c8b12cda64b9d79e1ae3279ffb6abbdff41d1f75ba63670
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 8b309c887d431fd4b4f23fc6418965e5857d468e
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54155145"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59123626"
 ---
 # <a name="educationsubmission-resource-type"></a>Tipo de recurso educationSubmission
 

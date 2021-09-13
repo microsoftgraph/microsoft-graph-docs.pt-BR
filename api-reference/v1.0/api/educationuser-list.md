@@ -2,15 +2,15 @@
 title: Listar educationUser
 description: Obter uma lista dos objetos educationUser e suas propriedades.
 author: mlafleur
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: 6cf915d28369314d960ee4b868bafd2852819c7f
-ms.sourcegitcommit: b8b0e88b3ba9a434dc45f5ab640cb46f66fae299
+ms.openlocfilehash: 85e4ee78ebc0859f6e641f6bd51e573751189272
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/13/2021
-ms.locfileid: "52475370"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59114527"
 ---
 # <a name="list-educationusers"></a>Listar educationUsers
 

@@ -2,15 +2,15 @@
 title: Tipo de recurso iosMinimumOperatingSystem
 description: Contém as propriedades do sistema operacional mínimo obrigatório para um aplicativo móvel iOS.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 30683c35ae92cd1172fd3a83ab8110b3b07c7afb53a33686db27911678441717
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: f7e10245c8541dd67435b7164760931ffa624435
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54243557"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59109126"
 ---
 # <a name="iosminimumoperatingsystem-resource-type"></a>Tipo de recurso iosMinimumOperatingSystem
 
@@ -27,7 +27,7 @@ Contém as propriedades do sistema operacional mínimo obrigatório para um apli
 |v9_0|Booliano|Versão 9.0 ou posterior.|
 |v10_0|Booliano|Versão 10.0 ou posterior.|
 |v11_0|Booliano|Versão 11.0 ou posterior.|
-|v12_0|Booliano|Versão 12.0 ou posterior.|
+|v12_0|Boolean|Versão 12.0 ou posterior.|
 |v13_0|Booliano|Versão 13.0 ou posterior.|
 |v14_0|Booliano|Versão 14.0 ou posterior.|
 

@@ -1,16 +1,16 @@
 ---
 title: Listar classes de um educationUser
 description: 'Recupere uma lista de objetos de classe. Se o token delegado for usado, os membros só poderão ver informações sobre suas próprias aulas. '
-localization_priority: Normal
+ms.localizationpriority: medium
 author: mmast-msft
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: 6530d0fd060381a0e2f3281f23cad60f98b2dfef
-ms.sourcegitcommit: b8b0e88b3ba9a434dc45f5ab640cb46f66fae299
+ms.openlocfilehash: 1c5d94f418bfdf5c88fc6a5cb3bd6001eeb17cbf
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/13/2021
-ms.locfileid: "52475427"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59114621"
 ---
 # <a name="list-classes-of-an-educationuser"></a>Listar classes de um educationUser
 

@@ -3,14 +3,14 @@ title: Adicionar membro ao canal
 description: Adicionar membro ao canal.
 author: akjo
 doc_type: apiPageType
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: microsoft-teams
-ms.openlocfilehash: 4dd08d42edfe1f4601a3e97116f0431bb03ccbd4
-ms.sourcegitcommit: 486fe9c77d4d89c5416bb83e8c716e6918c47370
+ms.openlocfilehash: 39f3f5d863a63d66197181425f4e3a3cb2fbc8fe
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/15/2021
-ms.locfileid: "53441658"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59131018"
 ---
 # <a name="add-member-to-channel"></a>Adicionar membro ao canal
 

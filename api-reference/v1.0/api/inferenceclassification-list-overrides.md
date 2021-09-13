@@ -1,16 +1,16 @@
 ---
 title: List overrides
 description: Obtenha as substituições que um usuário configurou para sempre classificar as mensagens de determinados remetentes de maneiras específicas.
-localization_priority: Normal
+ms.localizationpriority: medium
 author: abheek-das
 ms.prod: ''
 doc_type: apiPageType
-ms.openlocfilehash: fb6cd4c87c5ee06e0d9849bdaa13e62b616c7d3c
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: 1c6ebcf444af1b49f7543ad657e17118ed221de6
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52051372"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59045575"
 ---
 # <a name="list-overrides"></a>List overrides
 
@@ -77,7 +77,7 @@ GET https://graph.microsoft.com/v1.0/me/inferenceClassification/overrides
 ---
 
 ##### <a name="response"></a>Resposta
-Veja a seguir um exemplo da resposta. Observação: o objeto de resposta exibido aqui pode ser encurtado para legibilidade.
+Aqui está um exemplo da resposta. Observação: o objeto de resposta mostrado aqui pode ser reduzido para facilitar a leitura.
 <!-- {
   "blockType": "response",
   "truncated": true,

@@ -1,16 +1,16 @@
 ---
 title: Tipo de recurso automaticRepliesMailTips
 description: Dicas de Email sobre quaisquer respostas automáticas que tenham sido configuradas em uma caixa de correio.
-localization_priority: Normal
+ms.localizationpriority: medium
 author: abheek-das
 ms.prod: ''
 doc_type: resourcePageType
-ms.openlocfilehash: 98f509f1bf8010e40924de0a525d876f2a08e9e08df0a9b5826e98a00f14696c
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 3e9904fe54d14fe707f4917934b81750aa9ec5fd
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54147039"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59089862"
 ---
 # <a name="automaticrepliesmailtips-resource-type"></a>Tipo de recurso automaticRepliesMailTips
 

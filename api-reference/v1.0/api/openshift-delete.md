@@ -1,22 +1,22 @@
 ---
 title: Excluir openShift
-description: Excluir um objeto openShift.
-localization_priority: Normal
+description: Exclua um objeto openShift.
+ms.localizationpriority: medium
 author: akumar39
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: b64df2cc2af979f783688bb8d83fa6e17fc1b834
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: e1cf55e12555c2dd8cd8c9934da06050d606e9d0
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48057136"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59056239"
 ---
 # <a name="delete-openshift"></a>Excluir openShift
 
 Namespace: microsoft.graph
 
-Excluir um objeto [openShift](../resources/openshift.md) .
+[Exclua um objeto openShift.](../resources/openshift.md)
 
 ## <a name="permissions"></a>Permissões
 
@@ -24,11 +24,11 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 | Tipo de permissão                        | Permissões (da com menos para a com mais privilégios) |
 |:---------------------------------------|:--------------------------------------------|
-| Delegado (conta corporativa ou de estudante)     | Schedule. ReadWrite. All, Group. ReadWrite. All |
-| Delegado (conta pessoal da Microsoft) | Sem suporte. |
+| Delegada (conta corporativa ou de estudante)     | Schedule.ReadWrite.All, Group.ReadWrite.All |
+| Delegada (conta pessoal da Microsoft) | Sem suporte. |
 | Aplicativo                            | Schedule.ReadWrite.All |
 
-> **Observação**: esta API oferece transporte a permissões de administrador. Os administradores globais podem acessar grupos dos quais eles não são membros.
+> **Observação**: esta API oferece transporte a permissões de administrador. Os administradores globais podem acessar grupos dos que não são membros.
 
 ## <a name="http-request"></a>Solicitação HTTP
 

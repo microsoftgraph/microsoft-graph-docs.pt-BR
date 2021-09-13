@@ -2,15 +2,15 @@
 title: Tipo de recurso educationAssignmentDefaults
 description: Especifica os padrões de nível de classe respeitados por novas atribuições criadas na classe
 author: sharad-sharma-msft
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: d9b9b624030129e85b2d89dc05db605af3cae7a4de72d019b41144a9453a23d8
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 7a21494ca3bd039e0ac5ac28c5f02be3c802dea0
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54230764"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59021712"
 ---
 # <a name="educationassignmentdefaults-resource-type"></a>Tipo de recurso educationAssignmentDefaults
 

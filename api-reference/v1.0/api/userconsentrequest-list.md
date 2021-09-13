@@ -2,15 +2,15 @@
 title: Listar userConsentRequests
 description: Recupere objetos userConsentRequest e suas propriedades.
 author: psignoret
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: dca8bb6e38e3bb828327888dedfe86f54565dcb9
-ms.sourcegitcommit: ad1e4d758d4fe6025987c1c3528ce644edb27062
+ms.openlocfilehash: f4ca431f0cb12361722b690dfdb1a5e6619e18aa
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "51698081"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59109567"
 ---
 # <a name="list-userconsentrequests"></a>Listar userConsentRequests
 
@@ -24,8 +24,8 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 |Tipo de permissão|Permissões (da com menos para a com mais privilégios)|
 |:---|:---|
-|Delegado (conta corporativa ou de estudante)|ConsentRequest.Read.All, ConsentRequest.ReadWrite.All|
-|Delegado (conta pessoal da Microsoft)|Sem suporte.|
+|Delegada (conta corporativa ou de estudante)|ConsentRequest.Read.All, ConsentRequest.ReadWrite.All|
+|Delegada (conta pessoal da Microsoft)|Sem suporte.|
 |Aplicativo|ConsentRequest.Read.All, ConsentRequest.ReadWrite.All|
 
 ## <a name="http-request"></a>Solicitação HTTP

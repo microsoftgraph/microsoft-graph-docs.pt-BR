@@ -1,16 +1,16 @@
 ---
 title: 'servicePrincipal: getMemberObjects'
 description: Obtenha a lista de grupos dos quais essa entidade de serviço é membro.  A verificação é transitiva.
-localization_priority: Priority
+ms.localizationpriority: high
 doc_type: apiPageType
 ms.prod: applications
 author: sureshja
-ms.openlocfilehash: a5a6d7037c860d421fc5e45b031da0321699fd18
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: 0c9082f8bfb1bb984808b1b9f8ae2c815b32d85e
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52053829"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59110050"
 ---
 # <a name="serviceprincipal-getmembergroups"></a>servicePrincipal: getMemberObjects
 
@@ -92,7 +92,7 @@ Content-length: 33
 
 ### <a name="response"></a>Resposta
 Veja a seguir um exemplo da resposta. 
->Observação: o objeto de resposta exibido aqui pode ser encurtado para legibilidade.
+>Observação: o objeto de resposta mostrado aqui pode ser encurtado para legibilidade.
 <!-- {
   "blockType": "response",
   "truncated": true,

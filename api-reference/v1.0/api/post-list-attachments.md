@@ -2,15 +2,15 @@
 title: Listar anexos
 description: Recupere uma lista de objetos attachment anexados a uma postagem.
 author: dkershaw10
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: 581080cb2177e13df8518958a1a6b312d7d7aeaa
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: 51056de2d302b1128c15f1d29cdc2c506d46cc29
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52053920"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59085375"
 ---
 # <a name="list-attachments"></a>Listar anexos
 
@@ -86,7 +86,7 @@ GET https://graph.microsoft.com/v1.0/groups/1848753d-185d-4c08-a4e4-6ee40521d115
 ---
 
 ##### <a name="response"></a>Resposta
-Veja a seguir um exemplo da resposta. Observação: o objeto de resposta exibido aqui pode ser encurtado para legibilidade.
+Aqui está um exemplo da resposta. Observação: o objeto de resposta mostrado aqui pode ser reduzido para facilitar a leitura.
 <!-- {
   "blockType": "response",
   "name": "post_get_attachments_v1",

@@ -1,15 +1,15 @@
 ---
 title: Implantar, testar e estender aplicativos migrados
-description: 'Descreve como migrar aplicativos Azure Active Directory (Azure AD) para usar a API do Microsoft Graph (REST); isso aborda a etapa 3: implantar, testar e estender.'
+description: 'Descreve como migrar Azure Active Directory (Azure AD) Graph aplicativos para usar a API do Microsoft Graph (REST); isso aborda a etapa 3: implantar, testar e estender.'
 author: dkershaw10
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: applications
-ms.openlocfilehash: c950e8fe97fd6a7e5a269824b1745af08b256c6795bbebb9186f105550233e1b
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: ec5b9b80ed42e1701619cca9153d7562b663d08f
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54163526"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59135974"
 ---
 # <a name="deploy-test-and-extend"></a>Implantar, testar e estender
 
@@ -30,24 +30,12 @@ Esta é a etapa 4 do [processo para migrar aplicativos.](migrate-azure-ad-graph-
 3.  **Explorar novo valor**
 
     Agora que você alternou para o Microsoft Graph, nunca foi mais fácil desbloquear muitos mais conjuntos de dados e recursos que agora estão à sua ponta dos dedos. 
-    O Microsoft Graph oferece suporte a muitos novos conjuntos de dados e recursos do Azure AD que não estão disponíveis no Azure AD Graph, incluindo: 
-
-    - [Microsoft 365 gerenciamento de grupo](./office365-groups-concept-overview.md)
-    - [Convites de usuário externos](/graph/api/resources/invitation)
-    - A capacidade de [restaurar usuários e Microsoft 365 grupos depois](/graph/api/resources/directory) que eles foram excluídos
-    - [Notificações de webhook em usuários e grupos](./webhooks.md?toc=.%252fref%252ftoc.json)
-    - Recursos de governança de identidade, como:
-      - [PiM](/graph/api/resources/privilegedidentitymanagement-root?view=graph-rest-beta&preserve-view=true) (gerenciamento de identidade privilegiada) para elevar os usuários a funções privilegiadas somente quando necessário e por um período de tempo limitado
-      - [Avaliações do Access](/graph/api/resources/accessreviewsv2-root?view=graph-rest-beta&preserve-view=true) para análises de acesso única ou recorrentes para atestado dos direitos de acesso do usuário
-      - [Termos de uso para permitir que](/graph/api/resources/agreement) as organizações apresentem informações para requisitos legais ou de conformidade, como avisos de isenção de responsabilidade
-    - Recursos de segurança como:
-      - [Eventos de risco de identidade](/graph/api/resources/riskdetection)
-      - [Usuários de risco](/graph/api/resources/riskyuser)
-    - [Bibliotecas de clientes e exemplos](/graph/sdks/sdks-overview) disponíveis em muitas outras plataformas e idiomas. Os SDKs do Microsoft Graph fornecem uma interface descobrivel para acessar facilmente seus dados enquanto manipulam de forma transparente a aquisição de tokens, a manipulação de novo devido a erros e a throttling, tratamento seguro de redirecionamento e serialização de modelo e dessarialização.
+    O Microsoft Graph oferece suporte a muitos novos conjuntos de dados do Azure Active Directory (Azure AD) e recursos que não estão disponíveis no Azure Active Directory (Azure AD) Graph.
 
     O Microsoft Graph oferece acesso a muito mais serviços do que apenas Azure Active Directory. É o gateway [da API para Microsoft 365 serviços também.](./index.yml)
     Verifique novos conjuntos de dados e recursos regularmente.  
 
+    - Consulte [Principais serviços e recursos no Microsoft Graph](overview-major-services.md).
     - Confira algumas soluções [de parceiros.](https://developer.microsoft.com/graph/partners)
     - Explore o [blog do Microsoft Graph](https://developer.microsoft.com/graph/blogs) para saber mais sobre o Microsoft Graph e algumas ótimas séries de aprendizado.
     - O [changelog](/graph/changelog) resume atualizações de serviço e documento. Após essas atualizações, você acompanhará novas APIs introduzidas para /beta (visualização) e aquelas promovidas para v1.0 (GA).  Essas novas APIs podem fornecer novas maneiras de adicionar mais valor e novas experiências aos seus aplicativos.  
@@ -57,12 +45,12 @@ Esta é a etapa 4 do [processo para migrar aplicativos.](migrate-azure-ad-graph-
 Se você tiver problemas ou precisar de ajuda durante o processo de migração, poderá:
 
 - Revisar a [lista de verificação](migrate-azure-ad-graph-planning-checklist.md) novamente
-- Postar perguntas para [o Microsoft Q&A](/answers/topics/microsoft-graph-applications.html) 
+- Postar perguntas para [o Microsoft Graph em Q&A](/answers/topics/microsoft-graph-applications.html) 
 - Revise amostras Graph Microsoft para contrastar e comparar com seu código de aplicativo existente:
-  - **Aplicativos que usam** a API REST : explorar [inícios rápidos e exemplos,](https://developer.microsoft.com/graph/get-started)escolher sua plataforma de escolha e executar o início rápido ou pesquisar por um exemplo apropriado
-  - **App that use the .NET client library**: [review console-csharp-snippets-sample](https://github.com/microsoftgraph/console-csharp-snippets-sample) and/or [dotnetcore-console-sample](https://github.com/microsoftgraph/dotnetcore-console-sample)
+  - **Aplicativos que usam** a API REST: explorem [inícios rápidos e exemplos,](https://developer.microsoft.com/graph/get-started)escolham sua plataforma de escolha e executem o início rápido ou pesquisem por um exemplo apropriado
+  - **App that use the .NET client library**: [review console-csharp-snippets-sample](https://github.com/microsoftgraph/console-csharp-snippets-sample) or [dotnetcore-console-sample](https://github.com/microsoftgraph/dotnetcore-console-sample)
 
-## <a name="next-steps"></a>Próximos passos
+## <a name="next-steps"></a>Próximas etapas
 
 - Use [inícios rápidos e exemplos](https://developer.microsoft.com/graph/get-started) para acelerar rapidamente.
 - Aproveitar [bibliotecas de clientes e SDKs](/graph/sdks/sdks-overview) para desenvolver aplicativos personalizados 

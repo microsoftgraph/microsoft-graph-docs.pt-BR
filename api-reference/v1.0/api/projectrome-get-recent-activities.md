@@ -1,16 +1,16 @@
 ---
 title: Obter atividades de usuário recentes
 description: " API. O serviço consultará os historyItems mais recentes e, em seguida, puxará essas atividades relacionadas. As atividades serão classificação de acordo com o **últimoModified mais recente** no **historyItem**. Isso significa que as atividades **sem historyItems** não serão incluídas na resposta. A permissão UserActivity.ReadWrite.CreatedByApp também aplicará filtragem extra à resposta, para que somente as atividades criadas pelo aplicativo sejam retornadas. Essa filtragem do lado do servidor pode resultar em páginas vazias se o usuário estiver particularmente ativo e outros aplicativos criarem atividades mais recentes. Para obter as atividades do aplicativo, use a **propriedade nextLink** para paginar."
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: project-rome
 author: ailae
 doc_type: apiPageType
-ms.openlocfilehash: 429eda595702f315bed329ffe329068d7c16b8c8
-ms.sourcegitcommit: 8b23038be1141d7f22eb61de6aafdb16d4f9c826
+ms.openlocfilehash: 493c5e89cf5d03cdbb11aff474be2e237ee2a2c9
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/13/2021
-ms.locfileid: "53401343"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59104772"
 ---
 # <a name="get-recent-user-activities"></a>Obter atividades de usuário recentes
 

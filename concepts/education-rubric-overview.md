@@ -2,14 +2,14 @@
 title: Visão geral do Rubric Education
 description: O Rubrics é uma maneira eficaz e amplamente utilizada de gradação de tarefas, e a API Education no Microsoft Graph dá suporte a elas.
 author: mmast-msft
-localization_priority: Priority
+ms.localizationpriority: high
 ms.prod: education
-ms.openlocfilehash: 824cffcf385e1f5d8f2776cfa898335c5708a288c90ea0c6eb3bc01d02958eb5
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 6df1ad373de6e0f6f5fe59b0a4b3e48a68bcf0e8
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54151799"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59137389"
 ---
 # <a name="education-rubric-overview"></a>Visão geral do Rubric Education
 

@@ -1,16 +1,16 @@
 ---
 title: tipo de recurso workbookApplication
 description: Representa o aplicativo Excel que gerencia a pasta de trabalho.
-localization_priority: Normal
+ms.localizationpriority: medium
 author: grangeryy
 ms.prod: excel
 doc_type: resourcePageType
-ms.openlocfilehash: a8cb375493b018d2d6f277f2cbc7944e9d662f018e301eec551bd3b5ab648368
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 3663ba238ac0ab7a2346786d775b16326ddf0193
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54251691"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59139468"
 ---
 # <a name="workbookapplication-resource-type"></a>tipo de recurso workbookApplication
 
@@ -24,7 +24,7 @@ Representa o aplicativo Excel que gerencia a pasta de trabalho.
 | Método           | Tipo de retorno    |Descrição|
 |:---------------|:--------|:----------|
 |[Obter workbookApplication](../api/workbookapplication-get.md) | [workbookApplication](workbookapplication.md) |Ler propriedades e relações do objeto workbookApplication.|
-|[Calculate](../api/workbookapplication-calculate.md)|None|Recalcula todas as pastas de trabalho abertas no Excel no momento.|
+|[Calculate](../api/workbookapplication-calculate.md)|Nenhum(a)|Recalcula todas as pastas de trabalho abertas no Excel no momento.|
 
 ## <a name="properties"></a>Propriedades
 | Propriedade     | Tipo   |Descrição|

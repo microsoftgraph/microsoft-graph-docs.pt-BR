@@ -2,15 +2,15 @@
 title: Visão geral da inteligência pessoal e de local de trabalho no Microsoft Graph
 description: As centenas de milhões de usuários que utilizam os serviços de nuvem do Microsoft 365 fazem parte do núcleo do Microsoft Graph. Os dados dos usuários são cuidadosamente gerenciados, protegidos e, com a autorização adequada, disponibilizados pelos serviços do Microsoft Graph para promover a criatividade e a produtividade em empresas. Mesmo os dados do usuário sendo onipresentes no Microsoft Graph, os dados derivados das interações do usuário são especialmente interessantes.
 author: simonhult
-localization_priority: Priority
+ms.localizationpriority: high
 ms.prod: insights
 ms.custom: scenarios:getting-started
-ms.openlocfilehash: bb8862b6be2b942c99554df5d547db56c068a6cce1ea855e7df6617afd292cc7
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 3107e7dbfcc54e1a2b9c76bdf35cecf1e80ef527
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54121312"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59103939"
 ---
 # <a name="overview-of-people-and-workplace-intelligence-in-microsoft-graph"></a>Visão geral da inteligência pessoal e de local de trabalho no Microsoft Graph
 

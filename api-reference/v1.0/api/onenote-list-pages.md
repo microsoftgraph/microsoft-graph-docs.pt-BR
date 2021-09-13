@@ -2,15 +2,15 @@
 title: Listar páginas
 description: Recupere uma lista de objetos de página.
 author: jewan-microsoft
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: onenote
 doc_type: apiPageType
-ms.openlocfilehash: 754a14703f02bfe5e9ef92d28ae67beb4e0365f1b5882f0074aca918fd3ea724
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: f928dcb7a03ab4966c91ec55f3744a21c7091009
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54218930"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59015907"
 ---
 # <a name="list-pages"></a>Listar páginas
 
@@ -22,8 +22,8 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegado (conta corporativa ou de estudante) | Notes.Read, Notes.ReadWrite, Notes.Read.All, Notes.ReadWrite.All    |
-|Delegado (conta pessoal da Microsoft) | Notes.Read, Notes.ReadWrite    |
+|Delegada (conta corporativa ou de estudante) | Notes.Read, Notes.ReadWrite, Notes.Read.All, Notes.ReadWrite.All    |
+|Delegada (conta pessoal da Microsoft) | Notes.Read, Notes.ReadWrite    |
 |Aplicativo | Notes.Read.All, Notes.ReadWrite.All |
 
 ## <a name="http-request"></a>Solicitação HTTP

@@ -2,20 +2,18 @@
 title: Usar a API Pesquisa da Microsoft no Microsoft Graph pesquisar tipos personalizados
 description: Você pode usar a API Pesquisa da Microsoft para importar dados externos por meio do recurso [externalItem](/graph/api/resources/externalitem?view=graph-rest-beta&preserve-view=true) e executar consultas de pesquisa nesse conteúdo externo.
 author: nmoreau
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: search
-ms.openlocfilehash: 9ffe24dbb1bd6d6154edacb7ce515cae5987b0bd0308be517acc8dcced0cd1e7
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 53716d886f586207fce607234d3cae993fc38794
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54121339"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59127903"
 ---
 # <a name="use-the-microsoft-search-api-to-search-custom-types-imported-using-microsoft-graph-connectors-preview"></a>Use a API Pesquisa da Microsoft para pesquisar tipos personalizados importados usando conectores Graph Microsoft (visualização) 
 
 Use a API Pesquisa da Microsoft para pesquisar o conteúdo ingerido e indexado pelos conectores [Graph Microsoft.](/microsoftsearch/connectors-overview) O conteúdo é importado por meio de conectores [integrados fornecidos](/microsoftsearch/connectors-gallery) pela Microsoft ou por meio de conectores personalizados implementados usando a API de ingestão de conectores do [Microsoft Graph](/graph/api/resources/indexing-api-overview?view=graph-rest-beta&preserve-view=true).
-
-[!INCLUDE [search-api-preview-signup](../includes/search-api-preview-signup.md)]
 
 [!INCLUDE [search-schema-updated](../includes/search-schema-updated.md)]
 

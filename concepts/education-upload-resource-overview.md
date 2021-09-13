@@ -1,16 +1,16 @@
 ---
 title: Upload arquivos para atribuições e envios de educação usando a API do Microsoft Graph
 description: Saiba como carregar um arquivo em uma atribuição ou um recurso de envio usando as APIs de educação no Microsoft Graph.
-localization_priority: Normal
+ms.localizationpriority: medium
 author: sharad-sharma-msft
 ms.prod: education
 doc_type: conceptualPageType
-ms.openlocfilehash: 0d7c60fbb88c6c6eec9f4748f2921a800f20b99e2248d6f6c26cad188591721c
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 055d454f0ca58dab5c51687fa7b311a30828ac15
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54151792"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59137382"
 ---
 # <a name="upload-files-for-education-assignments-and-submissions-using-the-microsoft-graph-api"></a>Upload arquivos para atribuições e envios de educação usando a API do Microsoft Graph
 
