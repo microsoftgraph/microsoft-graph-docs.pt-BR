@@ -1,16 +1,16 @@
 ---
 title: Desarquivar equipe
-description: Restaurar uma equipe arquivada. Isso restaura a capacidade dos usuários de enviar mensagens e editar a equipe, Abiding por definições de locatários e de equipe. As equipes são arquivadas usando a API de arquivo morto.
-localization_priority: Normal
+description: Restaure uma equipe arquivada. Isso restaura a capacidade dos usuários de enviar mensagens e editar a equipe, acatando as configurações de locatário e equipe. Teams são arquivados usando a API de arquivo morto.
+ms.localizationpriority: medium
 author: nkramer
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: a6fd0aede34593d1e5ed8e0d225d16f8e74f70bf
-ms.sourcegitcommit: d1e72c8d36aad78732133f9ecefaf66c433b8530
+ms.openlocfilehash: 4040c7368f0b222371462bd6aa6e517710aff62c
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "48849162"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59109889"
 ---
 # <a name="unarchive-team"></a>Desarquivar equipe
 
@@ -18,9 +18,9 @@ Namespace: microsoft.graph
 
 
 
-Restaurar uma [equipe](../resources/team.md)arquivada. Isso restaura a capacidade dos usuários de enviar mensagens e editar a equipe, Abiding por definições de locatários e de equipe. As equipes são arquivadas usando a API de [arquivo morto](team-archive.md) .
+Restaurar uma equipe [arquivada.](../resources/team.md) Isso restaura a capacidade dos usuários de enviar mensagens e editar a equipe, acatando as configurações de locatário e equipe. Teams são arquivados usando a API [de](team-archive.md) arquivo morto.
 
-O desarquivamento é uma operação assíncrona. Uma equipe é desarquivada depois que a operação assíncrona é concluída com êxito, o que pode ocorrer após uma resposta dessa API.
+A desarquivação é uma operação assíncrona. Uma equipe é desarquivada quando a operação assíncrona é concluída com êxito, o que pode ocorrer subsequentemente a uma resposta dessa API.
 
 ## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
@@ -29,11 +29,11 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |:--------------------|:---------------------------------------------------------|
 |Delegado (conta corporativa ou de estudante) | TeamSettings.ReadWrite.All, Group.ReadWrite.All, Directory.ReadWrite.All |
 |Delegado (conta pessoal da Microsoft) | Sem suporte.    |
-|Aplicativo | TeamSettings. ReadWrite. Group *, TeamSettings. ReadWrite. All, Group. ReadWrite. All, Directory. ReadWrite. All |
+|Aplicativo | TeamSettings.ReadWrite.Group*, TeamSettings.ReadWrite.All, Group.ReadWrite.All, Directory.ReadWrite.All |
 
-> **Observação** : Permissões marcadas com * usam [consentimento específico de recurso]( https://aka.ms/teams-rsc).
+> **Observação**: Permissões marcadas com * usam [consentimento específico de recurso]( https://aka.ms/teams-rsc).
 
-> **Observação** : esta API oferece transporte a permissões de administrador. Os administradores globais e os administradores do serviço do Microsoft Teams podem acessar equipes das quais eles não são membros.
+> **Observação**: esta API dá suporte a permissões de administrador. Os administradores globais e os administradores de serviços do Microsoft Teams podem acessar equipes das quais não são membros.
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- { "blockType": "ignored" } -->
@@ -51,7 +51,7 @@ Não forneça um corpo de solicitação para esse método.
 
 ## <a name="response"></a>Resposta
 
-Se o desarquivamento for iniciado com êxito, este método retornará um `202 Accepted` código de resposta. A resposta também conterá um `Location` cabeçalho, que contém o local do [teamsAsyncOperation](../resources/teamsasyncoperation.md) que foi criado para lidar com o cancelamento de arquivamento da equipe. Verifique o status da operação de desarquivamento fazendo uma solicitação GET para esse local.
+Se a desarquivação for iniciada com êxito, este método retornará um `202 Accepted` código de resposta. A resposta também conterá um header, que contém o local do `Location` [teamsAsyncOperation](../resources/teamsasyncoperation.md) que foi criado para lidar com a desarquivação da equipe. Verifique o status da operação de desarquivamento fazendo uma solicitação GET para esse local.
 
 ## <a name="example"></a>Exemplo
 #### <a name="request"></a>Solicitação

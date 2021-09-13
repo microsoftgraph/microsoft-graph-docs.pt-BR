@@ -1,16 +1,16 @@
 ---
 title: Tipo de recurso changeNotificationCollection
 description: Representa uma coleção de notificações de assinatura enviadas ao assinante.
-localization_priority: Normal
+ms.localizationpriority: medium
 author: Jumaodhiss
 doc_type: resourcePageType
 ms.prod: change-notifications
-ms.openlocfilehash: f4fd69bca39042c00630d21905e26d587b8d3ad8b0d014656eb2e9cf6a57d342
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: a024481ed1cd5076d5e97a415448375700c522f5
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54189892"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59104240"
 ---
 # <a name="changenotificationcollection-resource-type"></a>Tipo de recurso changeNotificationCollection
 

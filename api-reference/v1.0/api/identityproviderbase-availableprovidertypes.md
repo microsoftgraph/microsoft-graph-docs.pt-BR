@@ -1,16 +1,16 @@
 ---
 title: Listar availableProviderTypes
 description: Recupere todos os provedores de identidade com suporte no diretório.
-localization_priority: Normal
+ms.localizationpriority: medium
 doc_type: apiPageType
 author: namkedia
 ms.prod: identity-and-sign-in
-ms.openlocfilehash: ac4f877b3b1391254bb096fd38f94533c7444309
-ms.sourcegitcommit: f99dc2b6c8b4cb6f9f74cd780dccc47a2bccfaa6
+ms.openlocfilehash: ccab05cea622dc6fe987ae0617a007e2d6837a66
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/27/2021
-ms.locfileid: "58667983"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59105318"
 ---
 # <a name="list-availableprovidertypes"></a>Listar availableProviderTypes
 Namespace: microsoft.graph

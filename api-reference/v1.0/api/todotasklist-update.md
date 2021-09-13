@@ -2,15 +2,15 @@
 title: Atualizar todoTaskList
 description: Atualize as propriedades de um objeto todoTaskList.
 author: avijityadav
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 8c575a938bb2a2689860cf3c58e46ae9d43d24c6
-ms.sourcegitcommit: eacd2a6e46c19dd3cd8519592b1668fabe14d85d
+ms.openlocfilehash: 52c39a44b0720fc3410eca15eae84a1403e524f5
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "49873518"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59104618"
 ---
 # <a name="update-todotasklist"></a>Atualizar todoTaskList
 Namespace: microsoft.graph
@@ -50,13 +50,13 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar [todoTas
 
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|displayName|Cadeia de caracteres|Campo que indica o título atualizado da lista de tarefas.|
+|displayName|Cadeia de caracteres|Campo indicando o título atualizado da lista de tarefas.|
 
 
 
 ## <a name="response"></a>Resposta
 
-Se bem-sucedido, este método retorna um código de resposta e um objeto `200 OK` [todoTaskList](../resources/todotasklist.md) atualizado no corpo da resposta.
+Se tiver êxito, este método retornará um código de resposta e um `200 OK` [objeto todoTaskList](../resources/todotasklist.md) atualizado no corpo da resposta.
 
 ## <a name="examples"></a>Exemplos
 

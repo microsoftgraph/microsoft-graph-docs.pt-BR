@@ -2,16 +2,16 @@
 author: JeremyKelley
 ms.date: 09/11/2017
 title: Criar uma lista do SharePoint
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: sharepoint
 description: Criar uma nova lista em um site.
 doc_type: apiPageType
-ms.openlocfilehash: 128e772681bae4b4fcc60eefb0b224fd2a4205d1
-ms.sourcegitcommit: e440d855f1106390d842905d97ceb16f143db2e5
+ms.openlocfilehash: 94256d6eb2a0b89a5cd9c8ac0fec830232061851
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/29/2021
-ms.locfileid: "52080425"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59110393"
 ---
 # <a name="create-a-new-list"></a>Crie uma nova lista
 
@@ -27,7 +27,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 | :------------------------------------- | :------------------------------------------ |
 | Delegada (conta corporativa ou de estudante)     | Sites.Manage.All                            |
 | Delegada (conta pessoal da Microsoft) | Sem suporte.                              |
-| Application                            | Sites.Manage.All                            |
+| Aplicativo                            | Sites.Manage.All                            |
 
 ## <a name="http-request"></a>Solicitação HTTP
 

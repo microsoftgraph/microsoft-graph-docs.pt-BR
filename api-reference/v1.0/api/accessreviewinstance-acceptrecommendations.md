@@ -2,15 +2,15 @@
 title: 'accessReviewInstance: acceptRecommendations'
 description: Permite a aceitação de recomendações sobre decisões para uma instância de revisão de acesso que não tenha sido revisada pelo usuário chamador que é um revistor.
 author: isabelleatmsft
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: d8548340af184f703e89fcfd8aeda469d81cb566
-ms.sourcegitcommit: 7f674112f5b95446fac86d829509f889c60f1693
+ms.openlocfilehash: df76d1a7ce74587c8c4bcb6cd984763c7bb226fc
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/30/2021
-ms.locfileid: "53208152"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59123887"
 ---
 # <a name="accessreviewinstance-acceptrecommendations"></a>accessReviewInstance: acceptRecommendations
 
@@ -23,7 +23,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 |Tipo de permissão|Permissões (da com menos para a com mais privilégios)|
 |:---|:---|
-|Delegada (conta corporativa ou de estudante)|AccessReview.ReadWrite.All|
+|Delegado (conta corporativa ou de estudante)|AccessReview.ReadWrite.All|
 |Delegado (conta pessoal da Microsoft)|Sem suporte.|
 
 ## <a name="http-request"></a>Solicitação HTTP

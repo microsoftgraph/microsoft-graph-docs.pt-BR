@@ -2,14 +2,14 @@
 title: Usar a API Pesquisa da Microsoft no Microsoft Graph para pesquisar arquivos
 description: Você pode usar a API Pesquisa da Microsoft para pesquisar arquivos armazenados OneDrive ou SharePoint.
 author: nmoreau
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: search
-ms.openlocfilehash: 321242bd694eb244f9fe688186d91e484587466e19a1c4520f96ae96f0741ec2
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: c1c4851e84a57a024341c8ab342e7ec7243086c0
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54182263"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59103967"
 ---
 # <a name="use-the-microsoft-search-api-to-search-content-in-onedrive-and-sharepoint"></a>Use a API Pesquisa da Microsoft para pesquisar conteúdo em OneDrive e SharePoint
 

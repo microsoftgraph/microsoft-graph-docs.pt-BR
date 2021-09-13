@@ -2,15 +2,15 @@
 title: Atualizar reportRoot
 description: Atualizar as propriedades de um objeto reportRoot.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 0dbe8b19d83e37ad222cd0cc404d70c2120b4c019bd684fb14f405936aaf8a32
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 51b0bca2b131d0d1ec56b37c6947159ac8e911ec
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54144638"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59105179"
 ---
 # <a name="update-reportroot"></a>Atualizar reportRoot
 

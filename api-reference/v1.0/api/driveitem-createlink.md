@@ -2,16 +2,16 @@
 author: JeremyKelley
 ms.date: 09/10/2017
 title: Compartilhar um arquivo com um link
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: sharepoint
 description: Você pode usar a ação createLink para compartilhar um DriveItem por meio de um link de compartilhamento.
 doc_type: apiPageType
-ms.openlocfilehash: 51470bd3f0ebc0044b0dbe06d718002a368d66eb
-ms.sourcegitcommit: 5b0aab5422e0619ce8806664c479479d223129ec
+ms.openlocfilehash: 9e4a7ae41739c985ebf539ad4b913eb2a971c6fc
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/14/2021
-ms.locfileid: "50239027"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59105451"
 ---
 # <a name="create-a-sharing-link-for-a-driveitem"></a>Criar um link de compartilhamento para um DriveItem
 
@@ -53,8 +53,8 @@ A solicitação deve ser um objeto JSON com as seguintes propriedades.
 |   Nome       |  Tipo  |                                 Descrição                                  |
 | :------------| :----- | :--------------------------------------------------------------------------- |
 | **type**     | string | O tipo de link de compartilhamento a ser criado. Pode ser `view`, `edit` ou `embed`.       |
-| **password** | string | A senha do link de compartilhamento definido pelo criador. Opcional e somente OneDrive Personal.
-| **expirationDateTime** | string | Uma cadeia de caracteres com formato yyyy-MM-ddTHH:mm:ssZ de DateTime indica a hora de expiração da permissão. |
+| **password** | cadeia de caracteres | A senha do link de compartilhamento definido pelo criador. Opcional e OneDrive somente pessoal.
+| **expirationDateTime** | cadeia de caracteres | Uma cadeia de caracteres com formato de yyyy-MM-ddTHH:mm:ssZ de DateTime indica o tempo de expiração da permissão. |
 | **scope** | string | Opcional. O escopo do link a ser criado. Pode ser `anonymous` ou `organization`. |
 
 
