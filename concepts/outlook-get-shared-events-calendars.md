@@ -2,14 +2,14 @@
 title: Obter calendário do Outlook compartilhado ou delegado e seus eventos
 description: No Outlook, um proprietário de calendário pode compartilhar um calendário com outros usuários e deixá-los exibir ou modificar eventos nesse calendário. o calendário pode ser um calendário personalizado ou o calendário principal. O proprietário também podem permitir que um representante aja em nome deles, para receber ou responder a solicitações de reunião ou então para criar ou alterar itens no calendário da conta de email.
 author: juforan
-localization_priority: Priority
+ms.localizationpriority: high
 ms.prod: outlook
-ms.openlocfilehash: 308381b951371943dea2c88a29a299f5190eab5bb99bca8b8a196acc5884023b
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 89752e74222dadeb424d5c2a8b865c8b5536b572
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54126036"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59135883"
 ---
 # <a name="get-shared-or-delegated-outlook-calendar-and-its-events"></a>Obter calendário do Outlook compartilhado ou delegado e seus eventos
 

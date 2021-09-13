@@ -2,15 +2,15 @@
 title: Tipo de recurso microsoftAuthenticatorAuthenticationMethodTarget
 description: Uma coleção de usuários ou grupos habilitados para usar Microsoft Authenticator de autenticação.
 author: mmcla
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: identity-and-sign-in
 doc_type: resourcePageType
-ms.openlocfilehash: 5fc1f6dfd2d28e6a0e6e4643b239ed50ba41309dce90448e373f8851040a1478
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 810403eff5801ebcbafd56cf3de6252fe1f68bf8
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54249164"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59067077"
 ---
 # <a name="microsoftauthenticatorauthenticationmethodtarget-resource-type"></a>Tipo de recurso microsoftAuthenticatorAuthenticationMethodTarget
 Namespace: microsoft.graph

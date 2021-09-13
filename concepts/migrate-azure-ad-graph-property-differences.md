@@ -1,17 +1,17 @@
 ---
-title: Diferenças de propriedade entre o Azure AD Graph e o Microsoft Graph
+title: Diferenças de propriedades entre o Azure Active Directory (Azure AD) Graph e o Microsoft Graph
 description: Descreve as diferenças de propriedade entre os recursos do Azure AD Graph (entidades) e o Microsoft Graph, para ajudar a migrar os aplicativos de acordo.
 author: dkershaw10
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: applications
-ms.openlocfilehash: 6e630882afb7cc4e6423e5c46c76447f23e9a6ad
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: f060a59ff26e8d8279c3ac4e1e83fde0f7ff25ec
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58789541"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59098416"
 ---
-# <a name="property-differences-between-azure-ad-graph-and-microsoft-graph"></a>Diferenças de propriedade entre o Azure AD Graph e o Microsoft Graph
+# <a name="property-differences-between-azure-active-directory-azure-ad-graph-and-microsoft-graph"></a>Diferenças de propriedades entre o Azure Active Directory (Azure AD) Graph e o Microsoft Graph
 
 Este artigo faz parte da *etapa 1: analisar as* diferenças de API do processo para [migrar aplicativos.](migrate-azure-ad-graph-planning-checklist.md)
 
@@ -27,7 +27,7 @@ Como o usuário e o grupo são usados com tanta frequência, esses recursos apar
 
 ## <a name="user-property-differences"></a>Diferenças de propriedade do usuário
 
-|Azure AD Graph. <br>Propriedade (v1.6) |Microsoft Graph<br>propriedade|Comments|
+|Azure AD Graph. <br>Propriedade (v1.6) |Microsoft Graph<br>propriedade|Comentários|
 |---|---|---|
 | **deletedTimestamp**| beta &nbsp; - &nbsp; **deletedDateTime** <br> v1.0 &nbsp; - &nbsp; **deletedDateTime** | |
 | **dirSyncEnabled** | beta &nbsp; - &nbsp; **onPremisesSyncEnabled** <br> v1.0 &nbsp; - &nbsp; **onPremisesSyncEnabled** | |
@@ -47,7 +47,7 @@ Como o usuário e o grupo são usados com tanta frequência, esses recursos apar
 
 ## <a name="group-property-differences"></a>Diferenças de propriedades de grupo
 
-|Azure AD Graph. <br>Propriedade (v1.6) |Microsoft Graph<br> propriedade|Comments|
+|Azure AD Graph. <br>Propriedade (v1.6) |Microsoft Graph<br> propriedade|Comentários|
 |---|---|---|
 | **dirSyncEnabled** | beta &nbsp; - &nbsp; **onPremisesSyncEnabled** <br> v1.0 &nbsp; - &nbsp; **onPremisesSyncEnabled** | |
 | **immutableId** | beta &nbsp; - &nbsp; **onPremisesImmutableId** <br> v1.0 &nbsp; - &nbsp; **onPremisesImmutableId** | |
@@ -56,7 +56,7 @@ Como o usuário e o grupo são usados com tanta frequência, esses recursos apar
 
 ## <a name="application-property-differences"></a>Diferenças de propriedades do aplicativo
 
-| Azure AD Graph. <br>Propriedade (v1.6) | Microsoft Graph<br> propriedade                                                                                                                          | Comments                                                                                                                                                                                                                                                                                                                     |
+| Azure AD Graph. <br>Propriedade (v1.6) | Microsoft Graph<br> propriedade                                                                                                                          | Comentários                                                                                                                                                                                                                                                                                                                     |
 |------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | **acceptMappedClaims**             | api &nbsp; - &nbsp; **beta/acceptMappedClaims** <br> &nbsp; - &nbsp; **api/acceptMappedClaims** v1.0                                                       | acceptMappedClaims agora faz parte do novo recurso de api.                                                                                                                                                                                                                                                                      |
 | **availableToOtherTenants**        | beta &nbsp; - &nbsp; **signInAudience** <br> v1.0 &nbsp; - &nbsp; **signInAudience**                                                                      | O valor padrão para availableToOtherTenants `false` é `AzureADMyOrg` (significando ) enquanto para signInAudience é `AzureADandPersonalMicrosoftAccount` .                                                                                                                                                                                                                                                                                                                              |
@@ -79,7 +79,7 @@ Como o usuário e o grupo são usados com tanta frequência, esses recursos apar
 
 ## <a name="approleassignment-differences"></a>Diferenças de AppRoleAssignment
 
-|Azure AD Graph. <br>Propriedade (v1.6) |Microsoft Graph<br> propriedade|Comments|
+|Azure AD Graph. <br>Propriedade (v1.6) |Microsoft Graph<br> propriedade|Comentários|
 |---|---|---|
 | **creationTimestamp** | beta &nbsp; - &nbsp; **creationTimestamp** <br> v1.0 &nbsp; - &nbsp; **createdDateTime** | |
 | **id** | beta &nbsp; - &nbsp; **appRoleId** <br> v1.0 &nbsp; - &nbsp; **appRoleId** | |
@@ -88,7 +88,7 @@ Como o usuário e o grupo são usados com tanta frequência, esses recursos apar
 
 O recurso Graph contato do Azure AD foi renomeado para orgContact no Microsoft Graph.  Aqui estão as diferenças de propriedade:
 
-|Azure AD Graph. <br>Propriedade (v1.6) |Microsoft Graph<br> propriedade|Comments|
+|Azure AD Graph. <br>Propriedade (v1.6) |Microsoft Graph<br> propriedade|Comentários|
 |---|---|---|
 | **city** | endereços beta &nbsp; - &nbsp; **(cidade)** <br> endereços v1.0 &nbsp; - &nbsp; **(cidade)**  | A propriedade city faz parte da coleção de recursos de endereços. |
 | **country** | endereços beta &nbsp; - &nbsp;  &nbsp; **(countryOrRegion)**<br> endereços v1.0 &nbsp; - &nbsp;  &nbsp; **(countryOrRegion)**  | A propriedade countryOrRegion faz parte da coleção de recursos de endereços. |
@@ -105,13 +105,13 @@ O recurso Graph contato do Azure AD foi renomeado para orgContact no Microsoft G
 
 ## <a name="contract-property-differences"></a>Diferenças de propriedades de contrato
 
-|Azure AD Graph. <br>Propriedade (v1.6) |Microsoft Graph<br> propriedade|Comments|
+|Azure AD Graph. <br>Propriedade (v1.6) |Microsoft Graph<br> propriedade|Comentários|
 |---|---|---|
 | **customerContextId** | beta &nbsp; - &nbsp; **customerId** <br> v1.0 &nbsp; - &nbsp; **customerId**  |  |
 
 ## <a name="device-property-differences"></a>Diferenças de propriedade de dispositivo
 
-|Azure AD Graph. <br>Propriedade (v1.6) |Microsoft Graph<br> propriedade|Comments|
+|Azure AD Graph. <br>Propriedade (v1.6) |Microsoft Graph<br> propriedade|Comentários|
 |---|---|---|
 | **approximateLastLogonTimestamp** | beta &nbsp; - &nbsp; **approximateLastSignInDateTime** <br> v1.0 &nbsp; - &nbsp; **approximateLastSignInDateTime** |  |
 | **complianceExpiryTime** | conformidade &nbsp; - &nbsp; **betaExpirationDateTime** <br> conformidade &nbsp; - v1.0ExpirationDateTime &nbsp;  |  |
@@ -127,13 +127,13 @@ O recurso Graph contato do Azure AD foi renomeado para orgContact no Microsoft G
 
 O recurso Graph directoryObjectReference do Azure AD foi renomeado para directoryObjectPartnerReference no Microsoft Graph.  Aqui estão as diferenças de propriedade:
 
-|Azure AD Graph. <br>Propriedade (v1.6) |Microsoft Graph<br> propriedade|Comments|
+|Azure AD Graph. <br>Propriedade (v1.6) |Microsoft Graph<br> propriedade|Comentários|
 |---|---|---|
 | **externalContextId** | beta &nbsp; - &nbsp; **externalPartnerTenantId** <br> v1.0 &nbsp; - &nbsp; **externalPartnerTenantId** |  |
 
 ## <a name="domain-property-differences"></a>Diferenças de propriedades de domínio
 
-|Azure AD Graph. <br>Propriedade (v1.6) |Microsoft Graph<br> propriedade|Comments|
+|Azure AD Graph. <br>Propriedade (v1.6) |Microsoft Graph<br> propriedade|Comentários|
 |---|---|---|
 | **name** | id beta &nbsp; - &nbsp;  <br> id v1.0 &nbsp; - &nbsp;  | No Microsoft Graph, o identificador exclusivo (id) contém o nome de domínio; a `name` propriedade não existe. |
 | **forceDeleteState** |  estado &nbsp; - &nbsp; **beta** <br> estado v1.0 &nbsp; - &nbsp;  | No Azure AD Graph, há propriedades forceDelete e estado de domínio separadas.  No Microsoft Graph, todos os estados de domínio são manipulados pela propriedade state. |
@@ -141,7 +141,7 @@ O recurso Graph directoryObjectReference do Azure AD foi renomeado para director
 
 ## <a name="oauth2permissionsgrant-property-differences"></a>Diferenças de propriedade OAuth2PermissionsGrant
 
-|Azure AD Graph. <br>Propriedade (v1.6) |Microsoft Graph<br> propriedade|Comments|
+|Azure AD Graph. <br>Propriedade (v1.6) |Microsoft Graph<br> propriedade|Comentários|
 |---|---|---|
 | **expiryTime** | beta &nbsp; - &nbsp; **expiryTime** <br> v1.0 &nbsp; - &nbsp; _Removido_ | Essa propriedade não é usada e é removida no Microsoft Graph v1.0. |
 | **startTime** | beta &nbsp; - &nbsp; **startTime** <br> v1.0 &nbsp; - &nbsp; _Removido_  | Essa propriedade não é usada e é removida no Microsoft Graph v1.0. |
@@ -154,7 +154,7 @@ No Microsoft Graph existem tipos de política nomeados (como tokenIssuancePolicy
 
 O recurso serviceEndpoint do Azure AD Graph é renomeado para ponto de extremidade no Microsoft Graph.
 
-|Azure AD Graph. <br>Propriedade (v1.6) |Microsoft Graph<br> propriedade|Comments|
+|Azure AD Graph. <br>Propriedade (v1.6) |Microsoft Graph<br> propriedade|Comentários|
 |---|---|---|
 | **serviceId** | beta &nbsp; - &nbsp; **providerId**<br> v1.0 &nbsp; - &nbsp; **providerId** | |
 | **serviceName** | beta &nbsp; - &nbsp; **providerName**<br> v1.0 &nbsp; - &nbsp; **providerName** | |
@@ -162,7 +162,7 @@ O recurso serviceEndpoint do Azure AD Graph é renomeado para ponto de extremida
 
 ## <a name="serviceprincipal-property-differences"></a>Diferenças de propriedade ServicePrincipal
 
-|Azure AD Graph. <br>Propriedade (v1.6) |Microsoft Graph<br> propriedade|Comments|
+|Azure AD Graph. <br>Propriedade (v1.6) |Microsoft Graph<br> propriedade|Comentários|
 |---|---|---|
 | **appOwnerTenantId** | beta &nbsp; - &nbsp; **appOwnerOrganizationId** <br> v1.0 &nbsp; - &nbsp; **appOwnerOrganizationId** | Renomeado. |
 | **informationalUrls**| informações &nbsp; - &nbsp; **beta** <br> informações v1.0 &nbsp; - &nbsp;  | |
@@ -175,7 +175,7 @@ O recurso serviceEndpoint do Azure AD Graph é renomeado para ponto de extremida
 
 O recurso tenantDetails Graph Azure AD é renomeado para organização no Microsoft Graph.  Aqui estão as diferenças de propriedade:
 
-|Azure AD Graph. <br>Propriedade (v1.6) |Microsoft Graph<br> propriedade|Comments|
+|Azure AD Graph. <br>Propriedade (v1.6) |Microsoft Graph<br> propriedade|Comentários|
 |---|---|---|
 | **companyLastDirSyncTime** | beta &nbsp; - &nbsp; **onPremisesLastSyncDateTime** <br> v1.0 &nbsp; - &nbsp; **onPremisesLastSyncDateTime** |  |
 | **dirSyncEnabled** | beta &nbsp; - &nbsp; **onPremisesSyncEnabled** <br> v1.0 &nbsp; - &nbsp; **onPremisesSyncEnabled** |  |
@@ -190,7 +190,7 @@ O recurso do Azure AD Graph TrustedCasForPasswordlessAuth foi renomeado para [ce
 
 O certificado do Azure AD Graph CertificateAuthorityInformation é renomeado para **certificateAuthority** no Microsoft Graph. A seguir estão as diferenças de propriedade.
 
-|Azure AD Graph. <br>Propriedade (v1.6) |Microsoft Graph<br> propriedade|Comments|
+|Azure AD Graph. <br>Propriedade (v1.6) |Microsoft Graph<br> propriedade|Comentários|
 |---|---|---|
 | **authorityType** | beta &nbsp; - &nbsp; **isRootAuthority**<br> v1.0 &nbsp; - &nbsp; **isRootAuthority** | O tipo dessa propriedade também foi alterado para um Boolean. Anteriormente, essa propriedade precisava ser definida como "RootAuthority" ou "IntermediateAuthority". Definir a nova propriedade como **true** é equivalente a "RootAuthority". |
 | **crlDistributionPoint** | beta &nbsp; - &nbsp; **certificateRevocationListUrl** <br> v1.0 &nbsp; - &nbsp; **certificateRevocationListUrl** | |

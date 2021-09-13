@@ -1,16 +1,16 @@
 ---
 title: Excluir permissionGrantConditionSet de inclui coleção de permissionGrantPolicy
 description: Exclui um conjunto de condições incluído da política de concessão de permissão.
-localization_priority: Normal
+ms.localizationpriority: medium
 doc_type: apiPageType
 ms.prod: identity-and-sign-in
 author: psignoret
-ms.openlocfilehash: 2c19e048428456e88fa0d9ce80879630044e7a71
-ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
+ms.openlocfilehash: bfff41ac2613722528267a790fcf629f4abea4f7
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50441701"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59072782"
 ---
 # <a name="delete-permissiongrantconditionset-from-includes-collection-of-permissiongrantpolicy"></a>Excluir permissionGrantConditionSet de inclui coleção de permissionGrantPolicy
 
@@ -24,8 +24,8 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 | Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
 |:--------------------|:---------------------------------------------------------|
-| Delegado (conta corporativa ou de estudante) | PermissionGrantPolicy.ReadWrite.All |
-| Delegado (conta pessoal da Microsoft) | Sem suporte.    |
+| Delegada (conta corporativa ou de estudante) | PermissionGrantPolicy.ReadWrite.All |
+| Delegada (conta pessoal da Microsoft) | Sem suporte.    |
 | Aplicativo | PermissionGrantPolicy.ReadWrite.All |
 
 ## <a name="http-request"></a>Solicitação HTTP

@@ -1,22 +1,22 @@
 ---
 title: Obter alerta
-description: " Recupere as propriedades e os relacionamentos de um objeto Alert."
+description: " Recupere as propriedades e as relações de um objeto de alerta."
 author: preetikr
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: security
 doc_type: apiPageType
-ms.openlocfilehash: 19d371bb2b61ae33c310251420e88df67b53a4df
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 2ee372c3f4bbbe68ec874520261a15440f2e391a
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47992850"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59017020"
 ---
 # <a name="get-alert"></a>Obter alerta
 
 Namespace: microsoft.graph
 
- Recupere as propriedades e os relacionamentos de um objeto [Alert](../resources/alert.md) .
+ Recupere as propriedades e as relações de um [objeto de](../resources/alert.md) alerta.
 
 ## <a name="permissions"></a>Permissões
 
@@ -48,7 +48,7 @@ Não forneça um corpo de solicitação para esse método.
 
 ## <a name="response"></a>Resposta
 
-Se tiver êxito, este método retornará um `200 OK` código de resposta e um objeto **Alert** no corpo da resposta. Se um código de status diferente de 2xx ou 404 for retornado de um provedor ou se um provedor expirar, a resposta será um código de status `206 Partial Content` com a resposta do provedor em um cabeçalho de aviso. Para obter mais informações, consulte as [respostas de erro da API de segurança do Microsoft Graph](../resources/security-error-codes.md).
+Se tiver êxito, este método retornará `200 OK` um código de resposta e um **objeto** de alerta no corpo da resposta. Se um código de status diferente de 2xx ou 404 for retornado de um provedor ou se um provedor expirar, a resposta será um código de status `206 Partial Content` com a resposta do provedor em um cabeçalho de aviso. Para obter mais informações, consulte as [respostas de erro da API de segurança do Microsoft Graph](../resources/security-error-codes.md).
 
 ## <a name="example"></a>Exemplo
 

@@ -1,16 +1,16 @@
 ---
 title: Tipo de recurso teamsTab
 description: 'Um teamsTab é uma guia que é fixada (anexada) a um canal dentro de uma equipe. '
-localization_priority: Normal
+ms.localizationpriority: medium
 author: AkJo
 ms.prod: microsoft-teams
 doc_type: resourcePageType
-ms.openlocfilehash: e77c6c20705856700717a0312178c5d9fe330df349293920293ebc54019a7409
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 66dfa63b09463fac67b95bf4e635d90ffa4348a7
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54231457"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59066972"
 ---
 # <a name="teamstab-resource-type"></a>Tipo de recurso teamsTab
 
@@ -35,8 +35,8 @@ Um teamsTab é uma [guia](../resources/teamstab.md) fixada (anexada) a um [canal
 
 |Propriedade|Tipo|Descrição|
 |:---------------|:--------|:----------|
-|  id              |   string                  |  Identificador que identifica exclusivamente uma instância específica de uma guia de canal. Somente leitura.     |
-|  displayName            |   string                  |  Nome da guia.     |
+|  id              |   cadeia de caracteres                  |  Identificador que identifica exclusivamente uma instância específica de uma guia de canal. Somente leitura.     |
+|  displayName            |   cadeia de caracteres                  |  Nome da guia.     |
 |  webUrl          |   cadeia de caracteres                  |  URL de link profundo da instância da guia. Somente leitura.     |
 |  configuração        |   [teamsTabConfiguration](teamstabconfiguration.md) |  Contêiner para configurações personalizadas aplicadas a uma guia. A guia é considerada configurada somente depois que essa propriedade é definida.     |
 

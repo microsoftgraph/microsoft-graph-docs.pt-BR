@@ -2,15 +2,15 @@
 title: tipo de recurso removeAccessApplyAction
 description: Remove o acesso a um recurso para aqueles negados em uma revisão de acesso.
 author: isabelleatmsft
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: governance
 doc_type: resourcePageType
-ms.openlocfilehash: 5265f63f540a09b185d11c4ba3de664f73b857639b130257dcf14940e4c3bcd4
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: ea48071ed685bd25e4cbc71cdb946eb23a30ef53
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54251826"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59055896"
 ---
 # <a name="removeaccessapplyaction-resource-type"></a>tipo de recurso removeAccessApplyAction
 

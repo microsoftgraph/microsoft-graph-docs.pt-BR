@@ -1,22 +1,27 @@
 ---
 title: Provedor do Microsoft Teams
 description: Use o provedor Teams sua guia Microsoft Teams para facilitar a autenticação e o acesso Graph Microsoft a todos os componentes.
-localization_priority: Normal
+ms.localizationpriority: medium
 author: nmetulev
-ms.openlocfilehash: 3ede17c756a5b8af009f03555041d2a1c08a1b0d8c6d0671522273aa445afbad
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: c26df2772b974288eaba2bb239a46790f7229f0b
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54208640"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59126524"
 ---
 # <a name="microsoft-teams-provider"></a>Provedor do Microsoft Teams
 
-Use o provedor Teams sua guia Microsoft Teams para facilitar a autenticação e o acesso Graph Microsoft a todos os componentes.
+Use o TeamsProvider dentro da guia Microsoft Teams para facilitar a autenticação e o acesso Graph Microsoft a todos os componentes.
 
 Para saber mais sobre provedores de autenticação, consulte [provedores](./providers.md).
 
 >**Dica:** Para obter detalhes sobre como começar a criar um aplicativo Microsoft Teams com o provedor Teams, consulte o guia Criar um Microsoft Teams [de](../get-started/build-a-microsoft-teams-tab.md) início.
+
+### <a name="difference-between-teams-provider-and-teams-msal2-provider"></a>Diferença entre Teams provedor e Teams MSAL2
+Ao contrário do TeamsProvider, o provedor Teams MSAL2 suporta o SSO (Single Sign-On) e é criado sobre o [msal-browser](https://github.com/AzureAD/microsoft-authentication-library-for-js/tree/dev/lib/msal-browser) para autenticação do lado do cliente. [O msal-browser](https://github.com/AzureAD/microsoft-authentication-library-for-js/tree/dev/lib/msal-browser) implementa o Código de [](/azure/active-directory/develop/v2-oauth2-auth-code-flow) Autorização OAuth 2.0 Flow com PKCE. O Código de Autorização Flow é considerado mais seguro do que a concessão implícita Flow para aplicativos Web, portanto, recomendamos o uso do provedor Teams MSAL2 no provedor Teams. Para obter detalhes sobre problemas de segurança relacionados ao fluxo de concessão implícito, consulte [Desvantagens do fluxo implícito](https://tools.ietf.org/html/draft-ietf-oauth-browser-based-apps-04#section-9.8.6).
+
+Todos os novos aplicativos devem usar o provedor Teams MSAL2 sempre que possível. Consulte [Teams Provedor MSAL2 para](./teams-msal2.md) documentação de migração.
 
 ## <a name="get-started"></a>Introdução
 

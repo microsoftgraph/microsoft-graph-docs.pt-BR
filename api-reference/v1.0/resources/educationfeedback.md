@@ -2,15 +2,15 @@
 title: Tipo de recurso educationFeedback
 description: Comentários de um professor para um aluno.
 author: mmast-msft
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: education
 doc_type: resourcePageType
-ms.openlocfilehash: 87aba918c8766434c3bfc18e3020c2d05517d612887179f04c3bf3a427be1aef
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 795302823311169b11bd57ae89f252abba833ef0
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54218734"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59036680"
 ---
 # <a name="educationfeedback-resource-type"></a>Tipo de recurso educationFeedback
 
@@ -26,7 +26,7 @@ Essa propriedade representa a parte de texto dos comentários juntamente com que
 |:---------------|:--------|:----------|
 |feedbackBy|[identitySet](identityset.md)|Usuário que criou os comentários.|
 |feedbackDateTime|DateTimeOffset|Momento no tempo em que os comentários foram dados. O tipo Timestamp representa informações de data e hora usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite UTC em 1 de janeiro de 2014 é `2014-01-01T00:00:00Z`|
-|texto|[itemBody](itembody.md)|Feedback.|
+|texto|[itemBody](itembody.md)|Comentários.|
 
 ## <a name="json-representation"></a>Representação JSON
 

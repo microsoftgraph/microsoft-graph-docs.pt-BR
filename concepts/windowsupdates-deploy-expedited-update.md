@@ -2,15 +2,15 @@
 title: Implantar uma atualização de segurança acelerada usando o serviço de implantação Windows Update for Business
 description: Com o serviço de implantação do Windows Update for Business, você pode implantar atualizações de segurança Windows em dispositivos em um locatário do Azure AD caso surja uma emergência e você precise implantar imediatamente uma atualização de segurança.
 author: Alice-at-Microsoft
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: w10
 doc_type: conceptualPageType
-ms.openlocfilehash: ea65dc16cd45d4b5da2ba5c850e97fd662b39bedd02eb9502e970d789ca98d0b
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 097e08f49f59bca60279e8320595bc9d30f7feaa
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54225661"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59117603"
 ---
 # <a name="deploy-an-expedited-security-update-using-the-windows-update-for-business-deployment-service"></a>Implantar uma atualização de segurança acelerada usando o serviço de implantação Windows Update for Business
 

@@ -2,14 +2,14 @@
 title: Integração das soluções de segurança usando a API de segurança do Microsoft Graph
 description: Você pode se conectar à API de segurança do Microsoft Graph usando qualquer uma das opções descritas neste artigo. Essas opções permitem que você trabalhe com dados em um formato unificado entre os provedores de segurança da Microsoft e parceiros com suporte por meio de uma única integração.
 author: preetikr
-localization_priority: Priority
+ms.localizationpriority: high
 ms.prod: security
-ms.openlocfilehash: 7f54a86d254222c4b7f3f4269f57e420727cc5625e9085e8fcbab506dd943028
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: d083cdcbf6bd1cfaa717b5b88682cdbd0ed57398
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54168987"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59093894"
 ---
 # <a name="security-solution-integrations-using-the-microsoft-graph-security-api"></a>Integração das soluções de segurança usando a API de segurança do Microsoft Graph
 

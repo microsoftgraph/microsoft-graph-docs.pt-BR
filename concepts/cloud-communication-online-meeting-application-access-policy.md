@@ -2,14 +2,14 @@
 title: Permitir que os aplicativos acessem reuniões online em nome de um usuário
 description: Saiba como configurar aplicativos para acessar reuniões online em nome de um usuário.
 author: mkhribech
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: cloud-communications
-ms.openlocfilehash: 6856e35fa9bad4f220b10e5a8c945f91ae4a2ff6a43c65ed5fe7af34ce69ded5
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 15e1fca9df26eb6302ecab9bb1fc8d43a666abe5
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54235174"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59127924"
 ---
 # <a name="allow-applications-to-access-online-meetings-on-behalf-of-a-user"></a>Permitir que os aplicativos acessem reuniões online em nome de um usuário
 

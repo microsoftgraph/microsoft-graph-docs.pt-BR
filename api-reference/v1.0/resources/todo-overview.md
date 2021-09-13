@@ -2,15 +2,15 @@
 title: Usar a API do Microsoft To Do
 description: Você pode usar a API do Microsoft Graph para criar um aplicativo que se conecta com tarefas no Microsoft To Do.
 author: avijityadav
-localization_priority: Priority
+ms.localizationpriority: high
 ms.prod: outlook
 doc_type: conceptualPageType
-ms.openlocfilehash: e5e28602f2a8c3b057984af75d06e5f8cbde20de822f39dca146ccc1e6dc981e
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: e24dfe413f46c4d8e4cc65dd6327ff17ef8d7927
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54189174"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59071858"
 ---
 # <a name="use-the-microsoft-to-do-api"></a>Usar a API do Microsoft To Do
 

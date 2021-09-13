@@ -1,16 +1,16 @@
 ---
 title: 'application: addKey'
 description: Adicione uma credencial de chave a um aplicativo.
-localization_priority: Normal
+ms.localizationpriority: medium
 author: sureshja
 ms.prod: applications
 doc_type: apiPageType
-ms.openlocfilehash: 2194af555769d8eb5423a5c08a59926cb3e004f4
-ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
+ms.openlocfilehash: c96de52426a85e6ffd50ddea77d9197795d416e5
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "50958745"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59016950"
 ---
 # <a name="application-addkey"></a>application: addKey
 
@@ -29,9 +29,9 @@ Os aplicativos que não têm certificados válidos existentes (nenhum certificad
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegado (conta corporativa ou de estudante) | Nenhum  |
-|Delegado (conta pessoal da Microsoft) | Nenhum.    |
-|Aplicativo | Nenhum |
+|Delegada (conta corporativa ou de estudante) | Nenhum.  |
+|Delegada (conta pessoal da Microsoft) | Nenhum.    |
+|Aplicativo | Nenhum. |
 
 > [!NOTE] 
 > Um aplicativo não precisa de nenhuma permissão específica para rolar suas próprias chaves.

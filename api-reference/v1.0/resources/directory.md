@@ -1,18 +1,18 @@
 ---
 title: Tipo de recurso directory (itens excluídos)
 description: . Itens excluídos permanecerão disponíveis para restauração por até 30 dias. Após 30 dias, esses itens serão excluídos permanentemente.
-localization_priority: Normal
+ms.localizationpriority: medium
 author: keylimesoda
 ms.prod: directory-management
 doc_type: resourcePageType
-ms.openlocfilehash: d4a68680c62fd97229190bac921a22246e01b79f
-ms.sourcegitcommit: c333953a9188b4cd4a9ab94cbe68871e8f3563e5
+ms.openlocfilehash: 9f337a8a516dbd1bc3bd772a52f74000d412c071
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/30/2021
-ms.locfileid: "58695291"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59072551"
 ---
-# <a name="directory-resource-type-deleted-items"></a>Tipo de recurso directory (itens excluídos)
+# <a name="directory-resource-type"></a>tipo de recurso de diretório
 
 Namespace: microsoft.graph
 
@@ -53,28 +53,14 @@ Veja a seguir uma representação JSON do recurso.
 
 <!-- {
   "blockType": "resource",
-  "baseType": "microsoft.graph.entity",
+  "keyProperty":"id",
+  "optionalProperties": [],
   "@odata.type": "microsoft.graph.directory"
 }-->
 
 ```json
 {
-}
-```
-
-## <a name="example"></a>Exemplo
-
-<!--{"blockType": "request"}-->
-```http
-GET https://graph.microsoft.com/v1.0/directory
-```
-
-<!--{"blockType": "response", "truncated": true, "@odata.type": "microsoft.graph.directory"}-->
-```http
-HTTP/1.1 200 OK
-Content-Type: application/json
-
-{
+  "@odata.type": "#microsoft.graph.directory"
 }
 ```
 

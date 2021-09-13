@@ -1,14 +1,14 @@
 ---
 title: Criar um aplicativo no Azure Active Directory
 description: Criar um registro Azure Active Directory aplicativo para se comunicar com Microsoft 365
-localization_priority: Normal
+ms.localizationpriority: medium
 author: waldekmastykarz
-ms.openlocfilehash: 4038b1dbdd124923f949cc48c4ebda75106365d74bd97dfee87466a58c34ea28
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 21a298874beb7cc3c67bc807b4c51fce42a39564
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54159663"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59078522"
 ---
 # <a name="create-an-azure-active-directory-app-to-use-with-the-microsoft-graph-toolkit"></a>Criar um Azure Active Directory para usar com o microsoft Graph Toolkit
 
@@ -26,10 +26,12 @@ Para criar o aplicativo em Azure Active Directory:
 1. No menu superior, selecione o **botão Novo registro.**
 1. Insira o nome do seu aplicativo; por exemplo, `My M365 app` .
 1. Para o tipo de tipos de conta com [suporte,](/azure/active-directory/develop/single-and-multi-tenant-apps#who-can-sign-in-to-your-app)selecione Contas em qualquer diretório organizacional (Qualquer diretório **do Azure AD - Multitenant) e contas pessoais da Microsoft (por exemplo, Skype, Xbox)**.
-1. No campo **Redirecionar URI,** no menu suspenso, selecione Aplicativo de Página Única **(SPA)** e, no campo URL, insira `http://localhost:3000` . Observação: se você estiver usando o Provedor MSAL e não o Provedor MSAL 2.0, precisará selecionar **Web** em vez de **SPA**.
+1. Para o **campo Redirecionar URI:**
+    - Se estiver usando ou , selecione Aplicativo de Página Única (SPA) e, no campo URL, insira sua URL de redirecionamento `Msal2Provider` `TeamsMsal2Provider` (e/ou se estiver testando  `http://localhost` localmente). 
+    - Se estiver usando ou , selecione Web e no campo URL, insira sua URL de `MsalProvider` `TeamsProvider` redirecionamento (e/ou se estiver testando  `http://localhost` localmente). 
 1. Confirme as alterações selecionando o **botão Registrar.**
 
-## <a name="enable-oauth-implicit-flow-only-for-msal-10-provider"></a>Habilitar o fluxo implícito OAuth (somente para provedor MSAL 1.0)
+## <a name="enable-oauth-implicit-flow-only-for-msalprovider-and-teamsprovider"></a>Habilitar o fluxo implícito OAuth (somente para MsalProvider e TeamsProvider)
 
 Na maioria dos casos, você usará o Microsoft Graph Toolkit em aplicativos do lado do cliente que consistem apenas em código do lado do cliente. Como os aplicativos do lado do cliente não podem armazenar segredos com segurança, você precisa usar o fluxo implícito [OAuth,](/azure/active-directory/develop/v2-oauth2-implicit-grant-flow?WT.mc_id=m365-10340-wmastyka)que pressu assume a identidade de um aplicativo com base em sua ID e URL.
 

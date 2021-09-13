@@ -2,15 +2,15 @@
 title: Tipo de número runAsAccountType
 description: Indica o tipo de contexto de execução em que o aplicativo é executado.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 122761cd0584b78f461af210522621ae1b12acd92a35cf69d71893c9f674152c
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 41f651192561fdb7e1b22838243c3be78d0ecaa0
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54124427"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59072523"
 ---
 # <a name="runasaccounttype-enum-type"></a>Tipo de número runAsAccountType
 

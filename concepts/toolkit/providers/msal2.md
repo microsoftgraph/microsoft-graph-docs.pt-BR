@@ -1,27 +1,34 @@
 ---
-title: Provedor MSAL 2
+title: Provedor MSAL2
 description: O provedor MSAL 2 usa o msal-browser para entrar em usuários e adquirir tokens para usar com o microsoft Graph
-localization_priority: Normal
+ms.localizationpriority: medium
 author: amrutha95
-ms.openlocfilehash: f856c900b0b8aace7a1c2248d2921b39fe0a2c44c6fc9e05c35003c0d0c53d50
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 80178f379d0f6d9101cec794bc1d0d36ccb640d7
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54204904"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59143479"
 ---
-# <a name="msal-2--provider"></a>Provedor MSAL 2
+# <a name="msal2-provider"></a>Provedor MSAL2
 
-O provedor MSAL 2 usa [o msal-browser](https://github.com/AzureAD/microsoft-authentication-library-for-js/tree/dev/lib/msal-browser) para entrar nos usuários e adquirir tokens para usar com o Microsoft Graph.
+O Provedor MSAL2 usa [o msal-browser](https://github.com/AzureAD/microsoft-authentication-library-for-js/tree/dev/lib/msal-browser) para entrar em usuários e adquirir tokens para usar com o Microsoft Graph.
+
 Para saber mais, confira [provedores](./providers.md).
+
+## <a name="difference-between-msal2-provider-and-msal-provider"></a>Diferença entre Provedor MSAL2 e Provedor MSAL
+Embora o uso seja semelhante, o Provedor MSAL e o Provedor MSAL2 são construídos em fluxos OAuth diferentes. O Provedor MSAL é criado msal.js, que implementa o Flow [.](/azure/active-directory/develop/v2-oauth2-implicit-grant-flow) O Provedor MSAL2 é criado com [o msal-browser](https://github.com/AzureAD/microsoft-authentication-library-for-js/tree/dev/lib/msal-browser), que implementa o código de autorização [OAuth](/azure/active-directory/develop/v2-oauth2-auth-code-flow) 2.0 Flow com PKCE.
+Como o Código de Autorização Flow é considerado mais seguro do que o Flow de Concessão Implícita para aplicativos Web, recomendamos usar Msal2Provider sobre MsalProvider. Para obter detalhes sobre problemas de segurança relacionados ao fluxo de concessão implícito, consulte [Desvantagens do fluxo implícito](https://tools.ietf.org/html/draft-ietf-oauth-browser-based-apps-04#section-9.8.6).
+
+Todos os novos aplicativos devem usar o Provedor MSAL2 sempre que possível. 
 
 ## <a name="get-started"></a>Introdução
 
-Você pode inicializar o provedor MSAL 2.0 em HTML ou JavaScript.
+Você pode inicializar o Provedor MSAL2 em HTML ou JavaScript.
 
 ### <a name="initialize-in-your-html-page"></a>Inicializar em sua página HTML
 
-Inicializar o provedor MSAL 2 em HTML é a maneira mais simples de criar um novo provedor. Use o `mgt-msal2-provider` componente para definir a **id do** cliente e outras propriedades. Isso criará uma nova instância que será usada para todos os tokens de autenticação `PublicClientApplication` e aquisição.
+Inicializar o provedor MSAL2 em HTML é a maneira mais simples de criar um novo provedor. Use o `mgt-msal2-provider` componente para definir a **id do** cliente e outras propriedades. Isso criará uma nova instância que será usada para todos os tokens de autenticação `PublicClientApplication` e aquisição.
 
 ```html
     <mgt-msal2-provider client-id="<YOUR_CLIENT_ID>"
@@ -46,34 +53,61 @@ Inicializar o provedor MSAL 2 em HTML é a maneira mais simples de criar um novo
 Você pode fornecer mais opções inicializando o provedor em JavaScript.
 
 ```ts
-    import {Providers, LoginType} from '@microsoft/mgt-element';
-    import {Msal2Provider, PromptType} from '@microsoft/mgt-msal2-provider';
+    import {Providers} from '@microsoft/mgt-element';
+    import {Msal2Provider, Msal2Config, Msal2PublicClientApplicationConfig} from '@microsoft/mgt-msal2-provider';
 
     // initialize the auth provider globally
-    Providers.globalProvider = new Msal2Provider({
-      clientId: 'REPLACE_WITH_CLIENTID',
-      scopes?: string[],
-      authority?: string,
-      redirectUri?: string,
-      loginType?: LoginType, // LoginType.Popup or LoginType.Redirect (redirect is default)
-      prompt?: PromptType, // PromptType.CONSENT, PromptType.LOGIN or PromptType.SELECT_ACCOUNT
-      sid?: string, // Session ID
-      loginHint?: string,
-      domainHint?: string,
-      options?: Configuration // msal js Configuration object
-    });
+    Providers.globalProvider = new Msal2Provider(config: Msal2Config | Msal2PublicClientApplicationConfig);
+```
+
+Você pode configurar o `Msal2Provider` parâmetro construtor de duas maneiras, conforme descrito nas seções a seguir.
+
+#### <a name="provide-a-clientid-to-create-a-new-publicclientapplication"></a>Fornecer um `clientId` para criar um novo `PublicClientApplication`
+
+Essa opção faz sentido quando o microsoft Graph Toolkit é responsável por toda a autenticação em seu aplicativo.
+
+```ts
+interface Msal2Config {
+  clientId: string;
+  scopes?: string[];
+  authority?: string;
+  redirectUri?: string;
+  loginType?: LoginType; // LoginType.Popup or LoginType.Redirect (redirect is default)
+  prompt?: PromptType; // PromptType.CONSENT, PromptType.LOGIN or PromptType.SELECT_ACCOUNT
+  sid?: string; // Session ID
+  loginHint?: string;
+  domainHint?: string;
+  options?: Configuration // msal-browser Configuration object
+}
+```
+
+#### <a name="pass-an-existing-publicclientapplication-in-the-publicclientapplication-property"></a>Passe um existente `PublicClientApplication` na `publicClientApplication` propriedade.
+
+Use isso quando seu aplicativo usa a funcionalidade MSAL além do que é exposto pelos recursos `Msal2Provider` do Microsoft Graph Toolkit. Isso é particularmente apropriado se uma estrutura instancie e exponha automaticamente um para você; por exemplo, ao `PublicClientApplication` usar [msal-angular](/azure/active-directory/develop/tutorial-v2-angular). Para obter mais orientações, consulte `angular-app` o exemplo no microsoft Graph Toolkit [repo](https://github.com/microsoftgraph/microsoft-graph-toolkit).
+
+Certifique-se de entender as oportunidades de colisões ao usar essa opção. Por sua própria natureza, há o risco de que o estado de uma sessão possa ser alterado; por exemplo, fazendo com que o usuário entre ou consenta com `Msal2Provider` escopos adicionais. Certifique-se de que seu aplicativo e outras estruturas respondam normalmente a essas alterações no estado ou considere usar um [provedor personalizado](./custom.md) em vez disso.
+
+```ts
+interface Msal2PublicClientApplicationConfig {
+  publicClientApplication: PublicClientApplication;
+  scopes?: string[];
+  authority?: string;
+  redirectUri?: string;
+  loginType?: LoginType; // LoginType.Popup or LoginType.Redirect (redirect is default)
+  prompt?: PromptType; // PromptType.CONSENT, PromptType.LOGIN or PromptType.SELECT_ACCOUNT
+  sid?: string; // Session ID
+  loginHint?: string;
+  domainHint?: string;
+  options?: Configuration // msal-browser Configuration object
+}
 ```
 
 ## <a name="creating-an-appclient-id"></a>Criando uma ID de aplicativo/cliente
 
 Para obter detalhes sobre como registrar um aplicativo e obter uma ID do cliente, consulte [Create an Azure Active Directory app](../get-started/add-aad-app-registration.md).
 
-## <a name="difference-between-msal2provider-and-msalprovider"></a>Diferença entre Msal2Provider e MsalProvider
-Embora o uso seja muito semelhante, MsalProvider e Msal2Provider são construídos em cima de fluxos OAuth diferentes. O MsalProvider é criado sobre o MSAL.js, que implementa o Flow [.](/azure/active-directory/develop/v2-oauth2-implicit-grant-flow) Msal2Provider é criado sobre [o msal-browser](https://github.com/AzureAD/microsoft-authentication-library-for-js/tree/dev/lib/msal-browser), que implementa o código de autorização [OAuth](/azure/active-directory/develop/v2-oauth2-auth-code-flow) 2.0 Flow com PKCE.
-O Código de Autorização Flow é considerado mais seguro do que a concessão implícita Flow aplicativos Web, portanto, recomendamos o uso do MSAL2Provider sobre o MSALProvider. Para obter detalhes sobre problemas de segurança relacionados ao fluxo de concessão implícito, consulte [Desvantagens do fluxo implícito](https://tools.ietf.org/html/draft-ietf-oauth-browser-based-apps-04#section-9.8.6).
-
-## <a name="migrating-from-msal-provider-to-msal-2-provider"></a>Migrando do provedor MSAL para o provedor MSAL 2
-Para migrar um aplicativo que está usando o provedor MSAL para o Provedor MSAL 2:
+## <a name="migrating-from-msal-provider-to-msal2-provider"></a>Migrando do provedor MSAL para o provedor MSAL2
+Para migrar um aplicativo que está usando o provedor MSAL para o Provedor MSAL2:
 1. Vá para o portal do Azure em https://portal.azure.com .
 1. No menu, selecione **Azure Active Directory**.
 1. No menu Azure Active Directory, selecione **Registros de aplicativos**.
@@ -81,7 +115,7 @@ Para migrar um aplicativo que está usando o provedor MSAL para o Provedor MSAL 
 1. Vá para **Autenticação** no menu esquerdo.
 1. Em **Configurações de plataforma,** clique em **Adicionar uma plataforma** e selecione Aplicativo de página **única.**
 1. Remova todas as URIs de redirecionamento que você registrou no momento na **Web** e, em vez disso, **adicione-as** em aplicativo de página única.
-1. Em seu código, substitua MSALProvider por MSAL2Provider.
+1. Em seu código, substitua `MSALProvider` por `MSAL2Provider` .
 
     Se você estiver inicializando seu provedor no código JS/TS, siga estas etapas:
     

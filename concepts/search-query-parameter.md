@@ -2,14 +2,14 @@
 title: Use o parâmetro de consulta $search no Microsoft Graph
 description: Microsoft Graph dá suporte ao parâmetro de consulta $search OData para restringir os resultados de uma solicitação para corresponder a um critério de pesquisa.
 author: mumbi-o
-localization_priority: Priority
+ms.localizationpriority: high
 ms.custom: graphiamtop20, scenarios:getting-started
-ms.openlocfilehash: 4655d94e868ae5125d9bf12da989906aeb47bae8b62005d51ae3efed741ba790
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: f6cb8f9d8fe1a1c8b14872f5979dabed2eff4717
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54177741"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59093971"
 ---
 # <a name="use-the-search-query-parameter-to-match-a-search-criterion"></a>Usar o parâmetro de consulta de pesquisa para corresponder a um critério de pesquisa
 

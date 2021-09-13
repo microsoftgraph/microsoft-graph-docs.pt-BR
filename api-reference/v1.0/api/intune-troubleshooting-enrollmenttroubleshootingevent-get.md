@@ -2,15 +2,15 @@
 title: Get enrollmentTroubleshootingEvent
 description: Propriedades de leitura e relações do objeto enrollmentTroubleshootingEvent.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 1762b0aea8a1d64e409b019c1bcc2b2bad31be42
-ms.sourcegitcommit: 0116750a01323bc9bedd192d4a780edbe7ce0fdc
+ms.openlocfilehash: 5cb93bda19abd12c4eb00f16e6e26bf9eb17f75d
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58265816"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59079418"
 ---
 # <a name="get-enrollmenttroubleshootingevent"></a>Get enrollmentTroubleshootingEvent
 

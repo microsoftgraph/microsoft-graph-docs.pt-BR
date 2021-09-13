@@ -2,15 +2,15 @@
 title: Obter calendarGroup
 description: Recupera as propriedades e os relacionamentos de um objeto de grupo de calendários.
 author: harini84
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: d486f1c03bf0d0aa86ab97d2c694a1313098a9dd
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: 0013738dd004ad48fd8a178b2dfa1f6d5ceb5ca6
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52039962"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59038437"
 ---
 # <a name="get-calendargroup"></a>Obter calendarGroup
 
@@ -94,7 +94,7 @@ GET https://graph.microsoft.com/v1.0/me/calendarGroups/{id}
 
 ##### <a name="response"></a>Resposta
 
-Veja a seguir um exemplo da resposta. Observação: o objeto de resposta exibido aqui pode ser encurtado para legibilidade.
+Aqui está um exemplo da resposta. Observação: o objeto de resposta mostrado aqui pode ser reduzido para facilitar a leitura.
 
 <!-- {
   "blockType": "response",

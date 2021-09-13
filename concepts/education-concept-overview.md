@@ -2,15 +2,15 @@
 title: Visão geral da API de educação
 description: A API educacional do Microsoft Graph aprimora os recursos do Microsoft 365 com informações relevantes para cenários educacionais, incluindo informações sobre escolas, aulas, usuários (alunos e professores), tarefas e trabalhos. Isso facilita a criação de soluções que se integrem aos recursos educacionais para vários cenários da escola e da sala de aula.
 author: mmast-msft
-localization_priority: Priority
+ms.localizationpriority: high
 ms.prod: education
 ms.custom: scenarios:getting-started
-ms.openlocfilehash: 5bfe1d00042ec5aae535a08552ee2d2654cf28f8c3e0aabf52ba5c9a47251779
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 35f964c25d11c33037db399212acfeb7ffaf6075
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54243263"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59137396"
 ---
 # <a name="education-api-overview"></a>Visão geral da API de educação
 

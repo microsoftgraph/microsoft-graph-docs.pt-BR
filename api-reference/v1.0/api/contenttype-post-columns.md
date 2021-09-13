@@ -3,15 +3,15 @@ author: swapnil1993
 ms.date: 08/30/2020
 title: Criar uma columnDefinition em um tipo de conteúdo
 description: Adicione uma coluna a um tipo de conteúdo.
-localization_priority: Normal
+ms.localizationpriority: medium
 doc_type: apiPageType
 ms.prod: sites-and-lists
-ms.openlocfilehash: ece60217b08c6487a7d1cf33c725665f9ede38ac
-ms.sourcegitcommit: c333953a9188b4cd4a9ab94cbe68871e8f3563e5
+ms.openlocfilehash: 1addef36f4c1b8b3974c82f47d181dd1a333795b
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/30/2021
-ms.locfileid: "58696470"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59038178"
 ---
 # <a name="create-a-columndefinition-in-a-content-type"></a>Criar uma columnDefinition em um tipo de conteúdo
 Namespace: microsoft.graph
@@ -27,8 +27,8 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 |Tipo de permissão | Permissões (da com menos para a com mais privilégios) |
 |:--------------------|:---------------------------------------------------------|
-|Delegado (conta corporativa ou de estudante) | Sites.Manage.All, Sites.FullControl.All |
-|Delegado (conta pessoal da Microsoft) | Sem suporte. |
+|Delegada (conta corporativa ou de estudante) | Sites.Manage.All, Sites.FullControl.All |
+|Delegada (conta pessoal da Microsoft) | Sem suporte. |
 |Aplicativo | Sites.Manage.All, Sites.FullControl.All |
 
   

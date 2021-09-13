@@ -1,13 +1,13 @@
 ---
 title: Respostas de erros e tipos de recurso do Microsoft Graph
 description: Este tópico descreve alguns dos erros que podem ser retornados nas respostas do Microsoft Graph.
-localization_priority: Priority
-ms.openlocfilehash: 1f29f178161f322ac9e5d1096d54e12d9bebb833b1934499e192782d974ad089
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.localizationpriority: high
+ms.openlocfilehash: c5b1dcc6a6540580483b4bf668c5c7ae9f28676c
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54177762"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59136114"
 ---
 # <a name="microsoft-graph-error-responses-and-resource-types"></a>Respostas de erros e tipos de recurso do Microsoft Graph
 

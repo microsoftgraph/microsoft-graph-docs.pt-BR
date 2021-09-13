@@ -1,16 +1,16 @@
 ---
 title: tipo de recurso do aplicativo
 description: Representa um aplicativo.
-localization_priority: Priority
+ms.localizationpriority: high
 author: sureshja
 ms.prod: applications
 doc_type: resourcePageType
-ms.openlocfilehash: 942b3c8783dcacd044ed97331867f4cf7b156e73
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 525d35c68165445d3ae99255a91024cddcf07099
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58794347"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59079019"
 ---
 # <a name="application-resource-type"></a>tipo de recurso do aplicativo
 

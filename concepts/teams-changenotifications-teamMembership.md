@@ -2,15 +2,15 @@
 title: Obter notificações de alteração para qualquer alteração na associação do Teams usando o Microsoft Graph
 description: Obter notificações de alteração para quaisquer alterações (criar, atualizar e excluir) na associação do Teams usando o Microsoft Graph
 author: anandab
-localization_priority: Priority
+ms.localizationpriority: high
 ms.prod: microsoft-teams
 ms.custom: scenarios:getting-started
-ms.openlocfilehash: 8d136e81c51ee470577706f1515f5950abdd58c641a30f340a62f1f9298626e1
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: bcd2a7e936b52932a67dde4a83642ba7d980323a
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54165501"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59071697"
 ---
 # <a name="get-change-notifications-for-changes-in-teams-membership-using-microsoft-graph"></a>Obter notificações de alteração para alterações na associação do Teams usando o Microsoft Graph
 

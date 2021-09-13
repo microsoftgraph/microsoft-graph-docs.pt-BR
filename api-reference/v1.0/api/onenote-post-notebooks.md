@@ -2,27 +2,27 @@
 title: Criar blocos de anotações
 description: Crie um novo bloco de anotações do OneNote.
 author: jewan-microsoft
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: onenote
 doc_type: apiPageType
-ms.openlocfilehash: f6adea8f324d856e8b22c778f25f3c304d450532
-ms.sourcegitcommit: 08d47a31c48fd69ae4fcee26e34fdd65ad1ba69f
+ms.openlocfilehash: 0ff912cdefa30d7c38e9e82419ba6989ae3e9e98
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/02/2021
-ms.locfileid: "51509065"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59022090"
 ---
 # <a name="create-notebook"></a>Criar blocos de anotações
 
 Namespace: microsoft.graph
 
-Crie um novo bloco de [anotações](../resources/notebook.md)do OneNote.
+Crie um novo bloco OneNote [bloco de anotações](../resources/notebook.md).
 ## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegado (conta corporativa ou de estudante) | Notes.Create, Notes.ReadWrite, Notes.ReadWrite.All    |
+|Delegada (conta corporativa ou de estudante) | Notes.Create, Notes.ReadWrite, Notes.ReadWrite.All    |
 |Delegado (conta pessoal da Microsoft) | Notes.Create, Notes.ReadWrite    |
 |Aplicativo | Notes.ReadWrite.All |
 

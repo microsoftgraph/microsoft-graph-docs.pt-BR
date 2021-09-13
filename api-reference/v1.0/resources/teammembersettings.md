@@ -1,16 +1,16 @@
 ---
 title: Tipo de recurso teamMemberSettings
 description: Configurações para configurar se os membros podem executar determinadas ações, por exemplo, criar canais e adicionar bots na equipe.
-localization_priority: Normal
+ms.localizationpriority: medium
 author: nkramer
 ms.prod: microsoft-teams
 doc_type: resourcePageType
-ms.openlocfilehash: 0383392f47c7f386e20860ad83ba090ce9ebe7244e62e19397525dcf7835c0dd
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 215efff423e417d83f2416021b877c8d0c08897e
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54189279"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59049491"
 ---
 # <a name="teammembersettings-resource-type"></a>Tipo de recurso teamMemberSettings
 
@@ -23,8 +23,8 @@ Configurações configurar se os membros podem executar determinadas ações, po
 ## <a name="properties"></a>Propriedades
 | Propriedade     | Tipo   |Descrição|
 |:---------------|:--------|:----------|
-|allowCreatePrivateChannels|Booliano|Se definido como true, os membros podem adicionar e atualizar canais privados.|
-|allowCreateUpdateChannels|Booliano|Se definido como true, os membros podem adicionar e atualizar canais.|
+|allowCreatePrivateChannels|Boolean|Se definido como true, os membros podem adicionar e atualizar canais privados.|
+|allowCreateUpdateChannels|Boolean|Se definido como true, os membros podem adicionar e atualizar canais.|
 |allowDeleteChannels|Booliano|Se definido como true, os membros poderão excluir canais.|
 |allowAddRemoveApps|Booliano|Se definido como true, os membros podem adicionar e remover aplicativos.|
 |allowCreateUpdateRemoveTabs|Booliano|Se definido como true, os membros podem adicionar, atualizar e remover guias. |

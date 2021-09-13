@@ -1,16 +1,16 @@
 ---
 title: Listar orgContacts
 description: Recupere a lista de contatos organizacionais dessa organização.
-localization_priority: Normal
+ms.localizationpriority: medium
 author: dkershaw10
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: d0c9cfb72040cb5922e672e8dd233dda8fef279b19702314fd175f91ebac9284
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: d8c795920e3c7d0d4b2643278bcd7e30fac59c0f
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "57158943"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59037380"
 ---
 # <a name="list-orgcontacts"></a>Listar orgContacts
 

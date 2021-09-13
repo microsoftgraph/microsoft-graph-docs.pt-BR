@@ -2,15 +2,15 @@
 title: Visão geral dos grupos do Microsoft 365 no Microsoft Graph
 description: 'Os grupos do Microsoft 365 fornecem o serviço de associação fundamental para os usuários compartilharem conversas, arquivos, anotações, calendários, planos e muitos outros ativos. '
 author: dkershaw10
-localization_priority: Priority
+ms.localizationpriority: high
 ms.prod: groups
 ms.custom: scenarios:getting-started
-ms.openlocfilehash: 5539b392b77e7c121e9b69cfea1651d929e010ed00945c28ec783bf8f373da30
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 791154c1d1f7e89f277c7a974f24cde5cb83fe03
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54146164"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59019087"
 ---
 # <a name="overview-of-microsoft-365-groups-in-microsoft-graph"></a>Visão geral dos grupos do Microsoft 365 no Microsoft Graph
 

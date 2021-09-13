@@ -2,15 +2,15 @@
 title: Tipo de recurso commsOperation
 description: O status de determinadas operações de longa duração.
 author: ananmishr
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: cloud-communications
 doc_type: resourcePageType
-ms.openlocfilehash: dd924966c34d39ceb26e7b92077f01f085f9f6779896db439c1ae6c7a57eae9c
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 37283084060d555957f6de7a476b87ba6b32a84c
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54130384"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59036764"
 ---
 # <a name="commsoperation-resource-type"></a>Tipo de recurso commsOperation
 
@@ -30,7 +30,7 @@ Se uma operação ou uma operação com um status de ou for retornada, as atuali
 | :----------------- | :-------------------------- | :-------------------------------------------------------------------------------|
 | clientContext      | Cadeia de caracteres                      | Cadeia de caracteres de contexto de cliente exclusiva. O limite máximo é 256 caracteres.                           |
 | id                 | Cadeia de caracteres                      | A ID da operação. Somente leitura.                                                    |
-| resultInfo         | [resultInfo](resultinfo.md) | As informações de resultado. Apenas leitura.                                              |
+| resultInfo         | [resultInfo](resultinfo.md) | As informações de resultado. Somente leitura.                                              |
 | status             | String                      | Os valores possíveis são: `notStarted`, `running`, `completed`, `failed`. Somente leitura. |
 
 ## <a name="relationships"></a>Relações

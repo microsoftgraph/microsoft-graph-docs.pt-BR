@@ -2,15 +2,15 @@
 title: Atualizar usuário
 description: Atualize as propriedades de um objeto user.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 749bb33cdef59bc6f1c4a6dd4038268b337e06f9
-ms.sourcegitcommit: 0116750a01323bc9bedd192d4a780edbe7ce0fdc
+ms.openlocfilehash: b47dd86147597e73aeba7ba3bf68d763727c4471
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58256587"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59045193"
 ---
 # <a name="update-user"></a>Atualizar usuário
 

@@ -1,17 +1,17 @@
 ---
-title: Examinar o uso do aplicativo Graph APIs do Azure AD
-description: Descreve como auditar Azure Active Directory APIs (Azure AD) para migrar um aplicativo para a API Graph Microsoft.
+title: Examinar Azure Active Directory (Azure AD) Graph uso do aplicativo APIs
+description: Descreve como auditar Azure Active Directory (Azure AD) Graph APIs para migrar um aplicativo para a API Graph Microsoft.
 author: dkershaw10
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: applications
-ms.openlocfilehash: fbd75626e03cbd4c433a7fa955aa0bc476ed76e6375261bb3bad9d32409302c7
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 8386c3c77a5f42115236875d8405f97c5f49ff42
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54216389"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59139167"
 ---
-# <a name="examine-azure-ad-graph-apis-app-usage"></a>Examinar o uso do aplicativo Graph APIs do Azure AD
+# <a name="examine-azure-active-directory-azure-ad-graph-apis-app-usage"></a>Examinar Azure Active Directory (Azure AD) Graph uso do aplicativo APIs
 
 Esta é a etapa 2 do [processo para migrar aplicativos.](migrate-azure-ad-graph-planning-checklist.md)
 
@@ -31,7 +31,7 @@ Você também vai querer verificar as permissões necessárias para os recursos 
 
 Para saber mais, confira [permissões](permissions-reference.md).
 
-## <a name="next-steps"></a>Próximos passos
+## <a name="next-steps"></a>Próximas etapas
 
 - Saiba mais [sobre o registro de aplicativos, permissões](migrate-azure-ad-graph-app-registration.md) e diferenças de consentimento entre o Azure AD Graph e o Microsoft Graph.
 - Revise a [lista de verificação](migrate-azure-ad-graph-planning-checklist.md) novamente.

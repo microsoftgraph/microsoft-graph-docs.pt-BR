@@ -1,16 +1,16 @@
 ---
 title: Tipo de recurso appliedConditionalAccessPolicy
 description: Indica os atributos relacionados à política de acesso condicional ou políticas aplicadas que são disparadas pela atividade de entrada correspondente.
-localization_priority: Normal
+ms.localizationpriority: medium
 author: dhanyahk
 ms.prod: identity-and-access-reports
 doc_type: resourcePageType
-ms.openlocfilehash: a8d27d1db94b85bc78fcb58b7ba08f54499302ac901fe7ade0b59e87da30469e
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 140402be929fc6d0d906b084251e21bab80f1a24
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54126687"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59078963"
 ---
 # <a name="appliedconditionalaccesspolicy-resource-type"></a>Tipo de recurso appliedConditionalAccessPolicy
 
@@ -22,9 +22,9 @@ Indica os atributos relacionados à política de acesso condicional ou política
 
 | Propriedade   | Tipo |Descrição|
 |:---------------|:--------|:----------|
-|displayName|Cadeia de caracteres|Refere-se ao Nome da política de acesso condicional (exemplo: "Exigir MFA para Salesforce").|
-|enforcedGrantControls|Coleção de cadeias de caracteres|Refere-se aos controles de concessão imposto pela política de acesso condicional (exemplo: "Exigir autenticação multifacional").|
-|enforcedSessionControls|Coleção de cadeias de caracteres|Refere-se aos controles de sessão impostos pela política de acesso condicional (exemplo: "Exigir controles aplicados ao aplicativo").|
+|displayName|String|Refere-se ao Nome da política de acesso condicional (exemplo: "Exigir MFA para Salesforce").|
+|enforcedGrantControls|Coleção String|Refere-se aos controles de concessão imposto pela política de acesso condicional (exemplo: "Exigir autenticação multifacional").|
+|enforcedSessionControls|Coleção String|Refere-se aos controles de sessão impostos pela política de acesso condicional (exemplo: "Exigir controles aplicados ao aplicativo").|
 |id|Cadeia de caracteres|Um identificador da política de acesso condicional.|
 |resultado|appliedConditionalAccessPolicyResult| Indica o resultado da política de AC que foi disparada. Os valores possíveis são: , , , (A política não é aplicada porque as condições de política não foram atendidas), (Isso ocorre devido à política em estado `success` `failure` `notApplied` `notEnabled` desabilitado), `unknown` , `unknownFutureValue` .|
 

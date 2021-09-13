@@ -1,14 +1,14 @@
 ---
 title: Navegando o SDK do Microsoft Graph PowerShell
 description: O Microsoft Graph PowerShell SDK contém um grande número de comandos. Saiba como encontrar o comando certo para o que você deseja alcançar.
-localization_priority: Normal
+ms.localizationpriority: medium
 author: jasonjoh
-ms.openlocfilehash: 40e441d620e72283f5c376422ebdc121cc461cb31d6bee8506a833ed4331b291
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 2c231ca186e9274a09500247827141cbf03e0e7c
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54230274"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59139034"
 ---
 # <a name="navigating-the-microsoft-graph-powershell-sdk"></a>Navegando o SDK do Microsoft Graph PowerShell
 
@@ -27,10 +27,10 @@ Para operações REST básicas, o verbo é determinado pelo método HTTP usado p
 | Método HTTP | Verbo de comando | Exemplo |
 |-------------|--------------|---|
 | OBTER         | Obter          | `Get-MgUser` [Referência da API](/graph/api/user-get?view=graph-rest-1.0&preserve-view=true) |
-| POSTAR        | Novo          | `New-MgUserMessage` [Referência da API](/graph/api/user-post-messages?view=graph-rest-1.0&preserve-view=true) |
+| POST        | Novo          | `New-MgUserMessage` [Referência da API](/graph/api/user-post-messages?view=graph-rest-1.0&preserve-view=true) |
 | PUT         | Novo          | `New-MgTeam` [Referência da API](/graph/api/team-put-teams?view=graph-rest-1.0&preserve-view=true) |
 | PATCH       | Atualizar       | `Update-MgUserEvent` [Referência da API](/graph/api/event-update?view=graph-rest-1.0&preserve-view=true) |
-| EXCLUIR      | Remover       | `Remove-MgDriveItem` [Referência da API](/graph/api/driveitem-delete?view=graph-rest-1.0&preserve-view=true) |
+| DELETE      | Remover       | `Remove-MgDriveItem` [Referência da API](/graph/api/driveitem-delete?view=graph-rest-1.0&preserve-view=true) |
 
 Para funções e ações, é um pouco mais complicado. APIs no Microsoft Graph que são implementadas como funções ou ações OData geralmente são nomeadas com pelo menos um verbo. O verbo do comando correspondente é baseado no verbo na função ou no nome da ação. No entanto, os verbos de comando [](/powershell/scripting/developer/cmdlet/approved-verbs-for-windows-powershell-commands)no PowerShell devem estar em conformidade com regras de nomenis específicas, portanto, isso pode resultar em mapeamentos não intuitivos de nome para comando.
 

@@ -2,15 +2,15 @@
 title: Atualizar identityApiConnector
 description: Atualize as propriedades de um objeto identityApiConnector.
 author: nickgmicrosoft
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: 09733c849f99c2928ba7c2cc3b1702f411952cd7
-ms.sourcegitcommit: 32c83957ee69f21a10cd5f759adb884ce4b41c52
+ms.openlocfilehash: 5b41679d67ddbc44d908523f9d8c40cef8007dce
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "51921606"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59073895"
 ---
 # <a name="update-identityapiconnector"></a>Atualizar identityApiConnector
 
@@ -26,12 +26,12 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 | :------------------------------------- | :------------------------------------------ |
 | Delegada (conta corporativa ou de estudante)     | APIConnectors.ReadWrite.All |
 | Delegada (conta pessoal da Microsoft) | Sem suporte.  |
-| Application                            | APIConnectors.ReadWrite.All |
+| Aplicativo                            | APIConnectors.ReadWrite.All |
 
 A conta de trabalho ou de estudante precisa pertencer a uma das seguintes funções:
 
 * Administrador global
-* Administrador de Fluxo de Usuário de Identidade Externa
+* Administrador de identidade externa Flow usuário
 
 ## <a name="http-request"></a>Solicitação HTTP
 
@@ -58,8 +58,8 @@ A tabela a seguir mostra as propriedades do [identityApiConnector](../resources/
 
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|displayName|String| O nome do conector da API. |
-|targetUrl|String| A URL do ponto de extremidade da API a ser chamada. |
+|displayName|Cadeia de caracteres| O nome do conector da API. |
+|targetUrl|Cadeia de caracteres| A URL do ponto de extremidade da API a ser chamada. |
 |authenticationConfiguration|[apiAuthenticationConfigurationBase](../resources/apiauthenticationconfigurationbase.md)|O objeto que descreve os detalhes de configuração de autenticação para chamar a API. Somente [autenticação básica e](../resources/basicauthentication.md) certificado cliente [PKCS 12](../resources/pkcs12certificate.md) são suportados.|
 
 ## <a name="response"></a>Resposta
@@ -130,7 +130,7 @@ HTTP/1.1 204 No Content
 
 ### <a name="example-2-changing-api-connector-to-use-client-certificate-authentication"></a>Exemplo 2: Alterar o conector da API para usar a autenticação de certificado do cliente
 
-Isso substituirá qualquer configuração anterior authenticationConfiguration. Para alterar a autenticação básica para a autenticação de certificado, use isso. Para adicionar certificados adicionais à lista de certificados, use o [método Carregar certificado do](../api/identityapiconnector-uploadclientcertificate.md) cliente. Ao usar esse método, as operações "Get" ou "List" dos conectores de API serão do tipo `authenticationConfiguration` [microsoft.graph.clientCertificateAuthentication](../resources/clientcertificateauthentication.md).
+Isso substituirá qualquer configuração anterior authenticationConfiguration. Para alterar a autenticação básica para a autenticação de certificado, use isso. Para adicionar certificados adicionais à lista de certificados, use o método [Upload certificado do](../api/identityapiconnector-uploadclientcertificate.md) cliente. Ao usar esse método, as operações "Get" ou "List" dos conectores de API serão do tipo `authenticationConfiguration` [microsoft.graph.clientCertificateAuthentication](../resources/clientcertificateauthentication.md).
 
 #### <a name="request"></a>Solicitação
 

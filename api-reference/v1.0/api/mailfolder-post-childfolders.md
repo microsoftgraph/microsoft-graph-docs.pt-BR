@@ -2,15 +2,15 @@
 title: Criar pasta filho
 description: Use essa API para criar uma nova mailfolder filha.
 author: abheek-das
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 4d8d43e4bb3840fa248ab6b1f1109dc2061ff695
-ms.sourcegitcommit: 276a13a37c3772689dfc71f7cd47586c9581f27d
+ms.openlocfilehash: 2f5cd821c8b78a76b85640c8748432ff9d50519f
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/24/2021
-ms.locfileid: "52629137"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59053480"
 ---
 # <a name="create-child-folder"></a>Criar pasta filho
 
@@ -55,7 +55,7 @@ Forneça um objeto JSON com os seguintes parâmetros no corpo da solicitação. 
 | Parâmetro | Tipo | Descrição |
 |:----------|:-----|:------------|
 |displayName|Cadeia de caracteres|O nome de exibição da nova pasta.|
-|isHidden|Booliano|Indica se a nova pasta está oculta. O valor padrão é `false`. A configuração da propriedade é opcional. Depois de definido, você não pode atualizar essa propriedade. Confira mais informações em [Pastas de email ocultas](../resources/mailfolder.md#hidden-mail-folders)|
+|IsHidden|Booleano|Indica se a nova pasta está oculta. O valor padrão é `false`. A configuração da propriedade é opcional. Depois de definido, você não pode atualizar essa propriedade. Confira mais informações em [Pastas de email ocultas](../resources/mailfolder.md#hidden-mail-folders)|
 
 ## <a name="response"></a>Resposta
 

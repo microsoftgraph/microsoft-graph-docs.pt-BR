@@ -2,15 +2,15 @@
 title: Obter notificações de alteração para equipes e canais usando o Microsoft Graph
 description: Saiba como obter notificações de alterações (criar, atualizar e excluir) para equipes e canais usando as APIs do Microsoft Graph.
 author: anandab
-localization_priority: Priority
+ms.localizationpriority: high
 ms.prod: microsoft-teams
 ms.custom: scenarios:getting-started
-ms.openlocfilehash: 8d26a1c291fb7fb6120ceb360ca78c780f7f950b426f8e49b4a01787fc754a89
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 733a52f6b69adc7a5d0c526b481018420af3db2e
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54249052"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59117645"
 ---
 # <a name="get-change-notifications-for-teams-and-channels-using-microsoft-graph"></a>Obter notificações de alteração para equipes e canais usando o Microsoft Graph
 

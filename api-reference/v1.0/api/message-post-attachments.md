@@ -2,15 +2,15 @@
 title: Adicionar anexo
 description: 'Use esta API para adicionar um anexo a uma mensagem. '
 author: abheek-das
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 0d282afb127dba1222f208d0660e6ff584c22834
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: 722f51d2e2c321b8361c5471d9ff945168e4fe3a
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52052233"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59016117"
 ---
 # <a name="add-attachment"></a>Adicionar anexo
 
@@ -176,7 +176,7 @@ Content-length: 200
 
 
 ##### <a name="response"></a>Resposta
-Veja a seguir um exemplo da resposta. Observação: o objeto de resposta exibido aqui pode ser encurtado para legibilidade.
+Aqui está um exemplo da resposta. Observação: o objeto de resposta mostrado aqui pode ser reduzido para facilitar a leitura.
 <!-- {
   "blockType": "response",
   "name": "create_item_attachment_from_message_v1",

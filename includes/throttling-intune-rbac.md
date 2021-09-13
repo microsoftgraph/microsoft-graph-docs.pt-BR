@@ -1,14 +1,14 @@
 ---
 author: davidmu1
-localization_priority: Priority
+ms.localizationpriority: high
 ms.prod: msgraph
 ms.topic: include
-ms.openlocfilehash: 7cb9d252a985c5c800bce56f8ff69cb03e1822d4ebecbc42819752f190c724db
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 91d8e5c4832a2b557b1ba663a38462b9b9824928
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54196599"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59035646"
 ---
 <!-- markdownlint-disable MD041 -->
 <!-- this file is auto-generated don't edit it manually! -->
@@ -20,4 +20,7 @@ ms.locfileid: "54196599"
 | Qualquer | 2000 solicitações por 20 segundos | 1000 solicitações por 20 segundos |
 
 Os limites anteriores se aplicam aos seguintes recursos:  
-deviceAndAppManagementRoleAssignment, deviceAndAppManagementRoleDefinition, resourceOperation, roleAssignment, roleDefinition, roleScopeTag, roleScopeTagAutoAssignment.
+
+| <!-- fake header-->                                                                                                                                                                                                                                                                                                                                                                            |
+|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| <ul> <li> [deviceAndAppManagementRoleAssignment](/graph/api/resources/deviceandappmanagementroleassignment) <li> [deviceAndAppManagementRoleDefinition](/graph/api/resources/deviceandappmanagementroledefinition) <li> [resourceOperation](/graph/api/resources/resourceoperation) <li> [roleAssignment](/graph/api/resources/roleassignment) <li> [roleDefinition](/graph/api/resources/roledefinition) <li> [roleScopeTag](/graph/api/resources/rolescopetag) <li> [roleScopeTagAutoAssignment](/graph/api/resources/rolescopetagautoassignment) </ul> |

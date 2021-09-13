@@ -2,15 +2,15 @@
 title: 'Table: delete'
 description: Exclui a tabela.
 author: lumine2008
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: excel
 doc_type: apiPageType
-ms.openlocfilehash: 378204783e631818777d9bce7ec77ecf801f1184
-ms.sourcegitcommit: 40947e6f4337c8c4193d85bb862e15f67263e1e7
+ms.openlocfilehash: 7c6a4ffba769114cd1148c24ab6078710563b914
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/13/2021
-ms.locfileid: "50777514"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59037058"
 ---
 # <a name="table-delete"></a>Table: delete
 

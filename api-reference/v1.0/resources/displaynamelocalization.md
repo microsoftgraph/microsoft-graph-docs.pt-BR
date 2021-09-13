@@ -1,16 +1,16 @@
 ---
 title: Tipo de recurso displayNameLocalization
 description: Fornece a capacidade de um administrador personalizar a cadeia de caracteres usada em uma experiência Microsoft 365 compartilhada.
-localization_priority: Normal
+ms.localizationpriority: medium
 author: kevinbellinger
 ms.prod: people
 doc_type: resourcePageType
-ms.openlocfilehash: a45c64d8cb80d94a702cfd4be57012949a7c86e3
-ms.sourcegitcommit: c333953a9188b4cd4a9ab94cbe68871e8f3563e5
+ms.openlocfilehash: c20e4a9478c25a785253f47e86cb0f84db649e0f
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/30/2021
-ms.locfileid: "58696464"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59072544"
 ---
 # <a name="displaynamelocalization-resource-type"></a>Tipo de recurso displayNameLocalization
 

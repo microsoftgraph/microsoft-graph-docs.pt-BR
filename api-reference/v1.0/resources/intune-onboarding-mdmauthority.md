@@ -2,15 +2,15 @@
 title: Tipo de número mdmAuthority
 description: Define autoridade de gerenciamento de dispositivo móvel.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 7a8c76305f614d787f4e243ff2c1fc47a02bdff927c7b44731ecdb665ac09e3c
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 78d9f2e3d6b0abd663584245bf2ef85e08eb6d87
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54235510"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59072117"
 ---
 # <a name="mdmauthority-enum-type"></a>Tipo de número mdmAuthority
 

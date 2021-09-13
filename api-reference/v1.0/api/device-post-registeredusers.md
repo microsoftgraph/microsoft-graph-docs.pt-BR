@@ -2,15 +2,15 @@
 title: Criar registeredUser
 description: Adiciona um usuário registrado ao dispositivo.
 author: spunukol
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: f991671ec124bde21785e6dcb196505114e5288d
-ms.sourcegitcommit: 998c63e6290cfb5ad4a6bd3eb3e249d282f962a3
+ms.openlocfilehash: 0acf0f9a29f7a17943eca71d36becea196b7f034
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58531254"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59053656"
 ---
 # <a name="create-registereduser"></a>Criar registeredUser
 

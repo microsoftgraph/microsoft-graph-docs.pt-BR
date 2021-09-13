@@ -2,16 +2,16 @@
 author: JeremyKelley
 ms.date: 09/10/2017
 title: Sincronizar o conteúdo de uma unidade
-localization_priority: Priority
+ms.localizationpriority: high
 ms.prod: sharepoint
 description: Esse método permite que o seu aplicativo controle alterações em uma unidade e seus filhos com o passar do tempo.
 doc_type: apiPageType
-ms.openlocfilehash: bcf638e5217768012a7e361ebed3cd760ac079c0
-ms.sourcegitcommit: f77c1385306fd40557aceb24fdfe4832cbb60a27
+ms.openlocfilehash: 93a88baa4db9ea48ebed18a0b8ad2cfb184448af
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/12/2021
-ms.locfileid: "52911309"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59038010"
 ---
 # <a name="track-changes-for-a-drive"></a>Controlar alterações para uma unidade
 
@@ -272,9 +272,8 @@ Content-type: application/json
     
     | Tipo de operação | Propriedades omitidas pela consulta delta |
     |---------|----------|
-    | Criar/Modificar | `ctag`, `lastModifiedBy` |
-    | Excluir | `ctag`, `lastModifiedBy`, `name` |
-
+    | Criar/Modificar | `ctag` |
+    | Excluir | `ctag`, `name` |
 
     **OneDrive (consumidor)**
     

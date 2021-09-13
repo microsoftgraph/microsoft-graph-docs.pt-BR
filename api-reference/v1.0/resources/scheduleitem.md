@@ -1,16 +1,16 @@
 ---
 title: Tipo de recurso scheduleItem
 description: Um item que descreve a disponibilidade de um usuário correspondente a um evento real no calendário padrão do usuário. Este item também se aplica a um recurso (sala ou equipamento).
-localization_priority: Normal
+ms.localizationpriority: medium
 author: harini84
 ms.prod: ''
 doc_type: resourcePageType
-ms.openlocfilehash: c097bb722e69c25e4709f1ef5465eb5d603e1f6a96591a94f799009a9c97c51c
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 86dc2c44f93635bd38363984d7dda8debe21147f
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54216634"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59035966"
 ---
 # <a name="scheduleitem-resource-type"></a>Tipo de recurso scheduleItem
 
@@ -23,10 +23,10 @@ Um item que descreve a disponibilidade de um usuário correspondente a um evento
 |:---------------|:--------|:----------|
 |end |[dateTimeTimeZone](datetimetimezone.md) |A data, hora e fuso horário que o evento correspondente termina. |
 |isPrivate |Booliano |A sensibilidade do evento correspondente. True se o evento for marcado `private` , false caso contrário. Opcional.|
-|localização |Cadeia de caracteres | O local do qual o evento correspondente é realizado ou atendido. Opcional.|
+|location |Cadeia de caracteres | O local do qual o evento correspondente é realizado ou atendido. Opcional.|
 |iniciar |[dateTimeTimeZone](datetimetimezone.md) |A data, a hora e o fuso horário que o evento correspondente inicia. |
 |status |freeBusyStatus | O status de disponibilidade do usuário ou recurso durante o evento correspondente. Os valores possíveis são: `free`, `tentative`, `busy`, `oof`, `workingElsewhere`, `unknown`. |
-|Assunto |Cadeia de caracteres | A linha de assunto do evento correspondente. Opcional.|
+|assunto |Cadeia de caracteres | A linha de assunto do evento correspondente. Opcional.|
 
 
 ## <a name="json-representation"></a>Representação JSON

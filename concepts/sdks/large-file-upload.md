@@ -1,14 +1,14 @@
 ---
 title: Upload arquivos grandes usando o Microsoft Graph SDKs
 description: Fornece diretrizes para carregar arquivos grandes usando o Microsoft Graph SDKs.
-localization_priority: Normal
+ms.localizationpriority: medium
 author: DarrelMiller
-ms.openlocfilehash: 4d78c8be73f154f206d62ae8a52c0c2c8dc5ab4c
-ms.sourcegitcommit: c6f7a931a8d83ac54f577b7bec08237fd17ce51a
+ms.openlocfilehash: 7baac0871a189a4dc7f3965b8459314fd2b32615
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/24/2021
-ms.locfileid: "58490501"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59142373"
 ---
 # <a name="upload-large-files-using-the-microsoft-graph-sdks"></a>Upload arquivos grandes usando o Microsoft Graph SDKs
 

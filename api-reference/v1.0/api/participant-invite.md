@@ -2,15 +2,15 @@
 title: 'participante: invite'
 description: Convide participantes para a chamada ativa.
 author: ananmishr
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: 9d39f5c00cafff7697c48b75fbf4c75bbfbe8ca0
-ms.sourcegitcommit: 7b8ad226dc9dfee61b8c3d32892534855dad3fa0
+ms.openlocfilehash: 203e57415d87795846928631c5fe710d82143a06
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/26/2021
-ms.locfileid: "52664801"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59072859"
 ---
 # <a name="participant-invite"></a>participante: invite
 

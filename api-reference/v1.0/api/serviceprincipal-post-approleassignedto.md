@@ -1,16 +1,16 @@
 ---
 title: Conceder um appRoleAssignment para uma entidade de serviço
 description: Conceder uma atribuição de função de aplicativo a uma entidade de serviço.
-localization_priority: Priority
+ms.localizationpriority: high
 doc_type: apiPageType
 ms.prod: applications
 author: psignoret
-ms.openlocfilehash: bda33fd1ae7fed99bf440f604208a7eef3afabf7
-ms.sourcegitcommit: f99dc2b6c8b4cb6f9f74cd780dccc47a2bccfaa6
+ms.openlocfilehash: a9dfbf660d19ff1d903374e748089b9b3386d74a
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/27/2021
-ms.locfileid: "58667791"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59019549"
 ---
 # <a name="grant-an-approleassignment-for-a-service-principal"></a>Conceder um appRoleAssignment para uma entidade de serviço
 

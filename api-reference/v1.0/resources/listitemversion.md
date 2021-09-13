@@ -1,16 +1,16 @@
 ---
 title: Tipo de recurso ListItemVersion
 description: O recurso **listItemVersion** representa uma versão anterior de um recurso ListItem.
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: sharepoint
 author: JeremyKelley
 doc_type: resourcePageType
-ms.openlocfilehash: 59f7672c0569c3965bf7b473ca1584f77fc4694bd0a06dfc46374d4f7c8826ed
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 3b8881ed9e2fbf13176562f25397e5596a25257a
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54163716"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59062464"
 ---
 # <a name="listitemversion-resource-type"></a>Tipo de recurso ListItemVersion
 
@@ -56,7 +56,7 @@ As seguintes tarefas estão disponíveis para os recursos listItemVersion.
 
 |      Nome da propriedade       |                         Tipo                         |                               Descrição                               |
 | :----------------------- | :--------------------------------------------------- | :---------------------------------------------------------------------- |
-| **id**                   | string                                               | A ID da versão. Somente leitura.                                       |
+| **id**                   | cadeia de caracteres                                               | A ID da versão. Somente leitura.                                       |
 | **lastModifiedBy**       | [IdentitySet](../resources/identityset.md)           | Identidade do usuário que modificou a versão pela última vez. Somente leitura.        |
 | **lastModifiedDateTime** | [DateTimeOffset](../resources/timestamp.md)          | Data e hora em que a versão foi modificada pela última vez. Somente leitura.                 |
 | **published**            | [PublicationFacet](../resources/publicationfacet.md) | Indica o status de publicação desta versão específica. Somente leitura. |

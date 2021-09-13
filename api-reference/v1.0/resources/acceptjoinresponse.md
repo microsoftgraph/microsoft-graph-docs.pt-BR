@@ -2,15 +2,15 @@
 title: Tipo de recurso acceptJoinResponse
 description: Representa uma resposta para aceitar um participante que tenta ingressar na reunião.
 author: yizhenww
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: cloud-communications
 doc_type: resourcePageType
-ms.openlocfilehash: b1076407432e416e3defa4c5f2f4d76f1865c7b3db8f37b006194d8b4d08aa28
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 2f357aeeb20972b2de182d4bdf80cdd573f69df0
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54230862"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59021768"
 ---
 # <a name="acceptjoinresponse-resource-type"></a>Tipo de recurso acceptJoinResponse
 

@@ -2,16 +2,16 @@
 author: JeremyKelley
 ms.date: 09/11/2017
 title: ListInfo
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: sharepoint
 description: O tipo complexo listInfo oferece informações adicionais sobre uma lista.
 doc_type: resourcePageType
-ms.openlocfilehash: 90d216101ba9844e1c607fcdfc92bd774add11d8258ec6dd42984b3eadb50b06
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 965355dd04b68c72c701e9ed6fd62253d1620fdb
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54196947"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59021467"
 ---
 # <a name="listinfo-resource"></a>Recurso de ListInfo
 

@@ -2,16 +2,16 @@
 author: JeremyKelley
 ms.date: 09/10/2017
 title: Listar o conteúdo de uma pasta
-localization_priority: Priority
+ms.localizationpriority: high
 ms.prod: sharepoint
 description: Retornar uma coleção de DriveItems no relacionamento filho de um DriveItem.
 doc_type: apiPageType
-ms.openlocfilehash: 8938cccdb0a8b2f1de76327d968aaceba1aedee0
-ms.sourcegitcommit: 5b0aab5422e0619ce8806664c479479d223129ec
+ms.openlocfilehash: d9acc9d0fd087c39aac5a71336c9ee2ccf2b4d21
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/14/2021
-ms.locfileid: "50240280"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59063451"
 ---
 # <a name="list-children-of-a-driveitem"></a>Listar os filhos de um driveItem
 
@@ -50,7 +50,7 @@ Este método oferece suporte aos [Parâmetros de consulta OData](/graph/query-pa
 
 ### <a name="optional-request-headers"></a>Cabeçalhos de solicitação opcionais
 
-| Nome     | Valor | Descrição                                                                                                                                              |
+| Name     | Valor | Descrição                                                                                                                                              |
 |:----------------|:------|:---------------------------------------------------------------------------------------------------------------------------------------------------------|
 | _if-none-match_ | etag  | Se este cabeçalho de solicitação estiver incluso e a eTag (ou cTag) fornecida corresponder à marca atual do arquivo, uma resposta `HTTP 304 Not Modified` será exibida. |
 
@@ -127,8 +127,7 @@ GET /drives/{drive-id}/root:/{path-relative-to-root}:/children
 
 ## <a name="response"></a>Resposta
 
-Se tiver êxito, esse método retornará a lista de itens no conjunto de filhos do item de destino.
-A coleção secundária será composta de recursos [driveItem][item-resource].
+Se tiver êxito, esse método retornará a lista de itens no conjunto de filhos do item de destino. A coleção de filhos será composta de recursos [driveItem][item-resource].
 
 <!-- { "blockType": "response", 
        "@odata.type": "Collection(microsoft.graph.driveItem)", 

@@ -2,14 +2,14 @@
 title: Use a API Pesquisa da Microsoft para classificar os resultados da pesquisa (visualização)
 description: Você classificará os resultados da pesquisa usando Pesquisa da Microsoft API.
 author: nmoreau
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: search
-ms.openlocfilehash: f0914633d1d1d080f10205f1cd387d3aa5620cad79f707508930fa146ca477dd
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 03d1b7e9751cb10f6936043ff9a620df9bf98741
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54151715"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59055707"
 ---
 # <a name="use-the-microsoft-search-api-to-sort-search-results-preview"></a>Use a API Pesquisa da Microsoft para classificar os resultados da pesquisa (visualização)
 
