@@ -2,15 +2,15 @@
 title: Tipo de recurso WorksheetProtectionOptions
 description: Representa as opções de proteção da planilha.
 author: lumine2008
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: excel
 doc_type: resourcePageType
-ms.openlocfilehash: 727d05b1819299f938c21f71e859d06e2455ebb25819bbd96c78dec746cbd753
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: b54add168fa613b4a380da1aced3806e97effedd
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54182340"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59139377"
 ---
 # <a name="worksheetprotectionoptions-resource-type"></a>Tipo de recurso WorksheetProtectionOptions
 

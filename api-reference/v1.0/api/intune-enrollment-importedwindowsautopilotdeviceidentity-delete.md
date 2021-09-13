@@ -2,15 +2,15 @@
 title: Excluir importedWindowsAutopilotDeviceIdentity
 description: Exclui uma importedWindowsAutopilotDeviceIdentity.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: e4225f72c0614302615783a64d6fefd9158b4f7d66621a6a16c949dfd37948a2
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: b6f336671a10b32ee08927c8347f944afa1d0c30
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54209242"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59019934"
 ---
 # <a name="delete-importedwindowsautopilotdeviceidentity"></a>Excluir importedWindowsAutopilotDeviceIdentity
 
@@ -25,8 +25,8 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 |Tipo de permissão|Permissões (da com menos para a com mais privilégios)|
 |:---|:---|
-|Delegado (conta corporativa ou de estudante)|DeviceManagementServiceConfig.ReadWrite.All|
-|Delegado (conta pessoal da Microsoft)|Sem suporte.|
+|Delegada (conta corporativa ou de estudante)|DeviceManagementServiceConfig.ReadWrite.All|
+|Delegada (conta pessoal da Microsoft)|Sem suporte.|
 |Aplicativo|DeviceManagementServiceConfig.ReadWrite.All|
 
 ## <a name="http-request"></a>Solicitação HTTP

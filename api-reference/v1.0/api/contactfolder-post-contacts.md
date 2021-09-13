@@ -2,15 +2,15 @@
 title: Criar contato
 description: Adicione um contato na pasta de contatos raiz ou no ponto de extremidade do `contacts` de outra pasta de contatos.
 author: kevinbellinger
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: cf20b2b9388dea809214e5978737c098892812b0
-ms.sourcegitcommit: eb67b0a619a4004c1611304f1252a382264a97f3
+ms.openlocfilehash: 0905251c5e45e6100927223bf0122099d445e263
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52061865"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59147735"
 ---
 # <a name="create-contact"></a>Criar contato
 

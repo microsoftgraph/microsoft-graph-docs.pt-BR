@@ -2,15 +2,15 @@
 title: Tipo de recurso deviceManagementTroubleshootingEvent
 description: Evento que representa uma falha geral.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 91c9bb5daf4140f61154fddeeb2b8efce3de95c4
-ms.sourcegitcommit: 0116750a01323bc9bedd192d4a780edbe7ce0fdc
+ms.openlocfilehash: f801af2118094424e835943061567f46e4c20e7c
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58264973"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59021530"
 ---
 # <a name="devicemanagementtroubleshootingevent-resource-type"></a>Tipo de recurso deviceManagementTroubleshootingEvent
 
@@ -32,7 +32,7 @@ Evento que representa uma falha geral.
 ## <a name="properties"></a>Propriedades
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|id|Cadeia de caracteres|O UUID do objeto.|
+|id|String|O UUID do objeto.|
 |eventDateTime|DateTimeOffset|A hora em que o evento ocorreu.|
 |correlationId|Cadeia de caracteres|ID usada para rastrear a falha no serviço.|
 

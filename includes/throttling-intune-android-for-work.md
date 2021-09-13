@@ -1,14 +1,14 @@
 ---
 author: davidmu1
-localization_priority: Priority
+ms.localizationpriority: high
 ms.prod: msgraph
 ms.topic: include
-ms.openlocfilehash: 12f3a2e790ad96744a0b3e125a155042add29e7cbc2310f3e31d71d94a89e65a
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 94d4efe3f15c6d4793521e400cef1731c030c637
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54196583"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59035626"
 ---
 <!-- markdownlint-disable MD041 -->
 <!-- this file is auto-generated don't edit it manually! -->
@@ -19,5 +19,9 @@ ms.locfileid: "54196583"
 | POST, PUT, DELATE, PATCH | 200 solicitações por 20 segundos | 100 solicitações por 20 segundos |
 | Qualquer | 2000 solicitações por 20 segundos | 1000 solicitações por 20 segundos |
 
-Os limites anteriores se aplicam aos seguintes recursos:  
-androidDeviceOwnerEnrollmentProfile, androidForWorkAppConfigurationSchema, androidForWorkEnrollmentProfile, androidForWorkSettings, androidManagedStoreAccountEnterpriseSettings, androidManagedStoreAppConfigurationSchema.
+Os limites anteriores se aplicam aos seguintes recursos: 
+
+ 
+| <!-- fake header--> | <!-- fake header--> |
+|--|--|
+|<ul> <li> [androidDeviceOwnerEnrollmentProfile](/graph/api/resources/androiddeviceownerenrollmentprofile) <li> [androidForWorkAppConfigurationSchema](/graph/api/resources/androidforworkappconfigurationschema) <li> [androidForWorkEnrollmentProfile](/graph/api/resources/androidforworkenrollmentprofile) <li> [androidForWorkSettings](/graph/api/resources/androidforworksettings) <li> [androidManagedStoreAccountEnterpriseSettings](/graph/api/resources/androidmanagedstoreaccountenterprisesettings) <li> [androidManagedStoreAppConfigurationSchema](/graph/api/resources/) </ul>|

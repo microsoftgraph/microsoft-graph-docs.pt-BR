@@ -2,15 +2,15 @@
 title: Tipo de recurso windowsHelloForBusinessAuthenticationMethod
 description: Uma representação de uma instância Windows Hello para Empresas registrada em um usuário. Windows Hello for Business é um método de autenticação de login.
 author: mmcla
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: identity-and-sign-in
 doc_type: resourcePageType
-ms.openlocfilehash: 9381749d42a61a8704a54434cf233dea8ad69240538de0022157656f522f1292
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 619733961a54f2b8489d3eacc40a6ca060921ab9
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54196464"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59139461"
 ---
 # <a name="windowshelloforbusinessauthenticationmethod-resource-type"></a>Tipo de recurso windowsHelloForBusinessAuthenticationMethod
 
@@ -25,14 +25,14 @@ Herda de [authenticationMethod](../resources/authenticationmethod.md).
 |:---|:---|:---|
 |[Listar windowsHelloForBusinessAuthenticationMethods](../api/windowshelloforbusinessauthenticationmethod-list.md)|[coleção windowsHelloForBusinessAuthenticationMethod](../resources/windowshelloforbusinessauthenticationmethod.md)|Obter uma lista dos [objetos windowsHelloForBusinessAuthenticationMethod](../resources/windowshelloforbusinessauthenticationmethod.md) e suas propriedades.|
 |[Obter windowsHelloForBusinessAuthenticationMethod](../api/windowshelloforbusinessauthenticationmethod-get.md)|[windowsHelloForBusinessAuthenticationMethod](../resources/windowshelloforbusinessauthenticationmethod.md)|Leia as propriedades e as relações de um [objeto windowsHelloForBusinessAuthenticationMethod.](../resources/windowshelloforbusinessauthenticationmethod.md)|
-|[Excluir windowsHelloForBusinessAuthenticationMethod](../api/windowshelloforbusinessauthenticationmethod-delete.md)|None|Exclui um [objeto windowsHelloForBusinessAuthenticationMethod.](../resources/windowshelloforbusinessauthenticationmethod.md)|
+|[Excluir windowsHelloForBusinessAuthenticationMethod](../api/windowshelloforbusinessauthenticationmethod-delete.md)|Nenhum(a)|Exclui um [objeto windowsHelloForBusinessAuthenticationMethod.](../resources/windowshelloforbusinessauthenticationmethod.md)|
 
 ## <a name="properties"></a>Propriedades
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
 |createdDateTime|DateTimeOffset|A data e a hora em que essa chave Windows Hello para Empresas foi registrada.|
-|displayName|String|O nome do dispositivo no qual o Windows Hello for Business está registrado|
-|id|Cadeia de caracteres|Um identificador exclusivo para esse método de autenticação. Herdado da [autenticaçãoMethod](../resources/authenticationmethod.md)|
+|displayName|Cadeia de caracteres|O nome do dispositivo no qual o Windows Hello for Business está registrado|
+|id|String|Um identificador exclusivo para esse método de autenticação. Herdado da [autenticaçãoMethod](../resources/authenticationmethod.md)|
 |keyStrength|authenticationMethodKeyStrength|Chave forte dessa chave de Windows Hello para Empresas. Os valores possíveis são: `normal`, `weak`, `unknown`.|
 
 ## <a name="relationships"></a>Relações

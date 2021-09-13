@@ -2,15 +2,15 @@
 title: Obter permissão
 description: Recupere as propriedades e as relações de um objeto de permissão em um site.
 author: BarrySh
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: sharepoint
 doc_type: apiPageType
-ms.openlocfilehash: 65284bfb79121c49ed9323eef005f0276e8d0d20
-ms.sourcegitcommit: 17f1c9cff2e59049b894db32435af02e4ae32a70
+ms.openlocfilehash: 7534515d413fcc1693cb38b60f5a25c5919bb1d8
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "51473714"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59085040"
 ---
 # <a name="get-permission"></a>Obter permissão
 Namespace: microsoft.graph

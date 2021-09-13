@@ -2,15 +2,15 @@
 title: Ação sendTestMessage
 description: Envia mensagens de teste usando o notificationMessageTemplate especificado no local padrão
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: b02f3407bc74f2936d1914aef376adddda66bb81525564c6992ed5fd2eac23f5
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 2d644823366e23289ac5f5687aa0055e5d3ad169
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54249500"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59146993"
 ---
 # <a name="sendtestmessage-action"></a>Ação sendTestMessage
 

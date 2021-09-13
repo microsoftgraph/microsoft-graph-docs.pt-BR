@@ -2,15 +2,15 @@
 title: Criar evento
 description: Use essa API para criar um novo evento no calendário especificado ou no padrão.
 author: harini84
-localization_priority: Priority
+ms.localizationpriority: high
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: fe894ed0ceb5cdeceadcc615503b0993f64c1c17
-ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
+ms.openlocfilehash: 0157897e2ba9c8342602e3948f54b4e570f2c65f
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50434878"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59090793"
 ---
 # <a name="create-event"></a>Criar evento
 
@@ -19,7 +19,7 @@ Namespace: microsoft.graph
 Use esta API para criar um novo evento em um calendário. O calendário pode ser um para um [usuário](../resources/user.md) ou o calendário padrão de um [grupo](../resources/group.md) do Microsoft 365. 
 
 ## <a name="permissions"></a>Permissões
-Dependendo do tipo de calendário em que o evento se encontra e do tipo de permissão (delegada ou aplicativo) solicitada, para chamar essa API é necessário ter umas das seguintes permissões. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
+Dependendo do tipo de calendário em que o evento é criado e do tipo de permissão (delegada ou aplicativo) solicitada, uma das seguintes permissões é necessária para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 | Calendário | Delegado (conta corporativa ou de estudante) | Delegada (conta pessoal da Microsoft) | Aplicativo |
 |:-----|:-----|:-----|:-----|

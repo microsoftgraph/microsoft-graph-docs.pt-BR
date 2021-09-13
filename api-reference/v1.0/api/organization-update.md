@@ -1,16 +1,16 @@
 ---
 title: Atualize a organização
 description: Atualize as propriedades da organização autenticada no momento.
-localization_priority: Normal
+ms.localizationpriority: medium
 author: adimitui
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: 6e848342b2a14d836f2fc9c0df68db2f44e0531b
-ms.sourcegitcommit: 94c4acf8bd03c10a44b12952b6cb4827df55b978
+ms.openlocfilehash: 454ba60b4cd76c52b0e14aaccec8b910c825c2ce
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/06/2021
-ms.locfileid: "52787447"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59079190"
 ---
 # <a name="update-organization"></a>Atualize a organização
 
@@ -24,8 +24,8 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 |Tipo de permissão | Permissões (da com menos para a com mais privilégios) |
 |:--------------------|:---------------------------------------------------------|
-|Delegado (conta corporativa ou de estudante) | Organization.ReadWrite.All, Directory.AccessAsUser.All    |
-|Delegado (conta pessoal da Microsoft) | Sem suporte.    |
+|Delegada (conta corporativa ou de estudante) | Organization.ReadWrite.All, Directory.AccessAsUser.All    |
+|Delegada (conta pessoal da Microsoft) | Sem suporte.    |
 |Aplicativo | Organization.ReadWrite.All |
 
 ## <a name="http-request"></a>Solicitação HTTP

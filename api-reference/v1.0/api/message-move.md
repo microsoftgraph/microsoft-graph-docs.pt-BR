@@ -2,21 +2,21 @@
 title: 'message: move'
 description: Mover uma mensagem para uma pasta. Isto criará uma nova cópia da mensagem na pasta de destino e removerá a mensagem original.
 author: abheek-das
-localization_priority: Priority
+ms.localizationpriority: high
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 036af1498e821ca898c12c86d1a3c509504b2aed
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: cdabadf1bede85c77620516f8d76339cdca8abb1
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52035341"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59016138"
 ---
 # <a name="message-move"></a>message: move
 
 Namespace: microsoft.graph
 
-Mover uma mensagem para outra pasta na caixa de correio do usuário especificado. Isso cria uma nova cópia da mensagem na pasta de destino e remove a mensagem original.
+Mova uma mensagem para outra pasta na caixa de correio do usuário especificado. Isso cria uma nova cópia da mensagem na pasta de destino e remove a mensagem original.
 
 ## <a name="permissions"></a>Permissões
 

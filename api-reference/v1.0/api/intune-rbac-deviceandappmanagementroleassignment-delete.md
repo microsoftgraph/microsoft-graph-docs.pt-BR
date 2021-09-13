@@ -2,15 +2,15 @@
 title: Excluir deviceAndAppManagementRoleAssignment
 description: Exclui deviceAndAppManagementRoleAssignment.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: b4e4526d43377d4307a0d1b635754fac8491618be2672926ba25dce614a5022c
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 200df722082c24e1d1f98a121b0f7330b46efb7b
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54249444"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59019913"
 ---
 # <a name="delete-deviceandappmanagementroleassignment"></a>Excluir deviceAndAppManagementRoleAssignment
 
@@ -25,8 +25,8 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 |Tipo de permissão|Permissões (da com menos para a com mais privilégios)|
 |:---|:---|
-|Delegado (conta corporativa ou de estudante)|DeviceManagementRBAC.ReadWrite.All|
-|Delegado (conta pessoal da Microsoft)|Sem suporte.|
+|Delegada (conta corporativa ou de estudante)|DeviceManagementRBAC.ReadWrite.All|
+|Delegada (conta pessoal da Microsoft)|Sem suporte.|
 |Aplicativo|DeviceManagementRBAC.ReadWrite.All|
 
 ## <a name="http-request"></a>Solicitação HTTP

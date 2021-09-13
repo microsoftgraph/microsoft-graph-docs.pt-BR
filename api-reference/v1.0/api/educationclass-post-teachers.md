@@ -2,15 +2,15 @@
 title: Adicionar professor
 description: Adicione um professor a uma aula.
 author: mmast-msft
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: 9ad7803ccda65174fa6ea24df5275a1afdec05bd
-ms.sourcegitcommit: 94c4acf8bd03c10a44b12952b6cb4827df55b978
+ms.openlocfilehash: 074745277b1d95585d0a0673cc15fa7fcd9919f3
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/06/2021
-ms.locfileid: "52783670"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59147441"
 ---
 # <a name="add-teacher"></a>Adicionar professor
 

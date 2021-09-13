@@ -2,22 +2,22 @@
 title: Obter mensagens do Outlook em uma pasta compartilhada ou delegada
 description: O Outlook permite que os clientes compartilhem pastas de e-mail entre si e forneçam acesso de "leitura", "criação", "modificação" ou "exclusão" a pastas individuais. O Outlook também permite que um cliente representante a outro usuário agir em nome do cliente.
 author: abheek-das
-localization_priority: Priority
+ms.localizationpriority: high
 ms.prod: outlook
-ms.openlocfilehash: 1687c6ca82c4188f4001e2cf4c472af9e39387f38746bb1e3726620f2af6859d
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: c2798e01d29badc1d3228692d02caca1ab89fa87
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54233655"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59071746"
 ---
 # <a name="get-outlook-messages-in-a-shared-or-delegated-folder"></a>Obtenha mensagens do Outlook em uma pasta compartilhada ou delegada
 
 O Outlook permite que os clientes compartilhem pastas de email entre si e forneçam acesso de "leitura", "criação", "modificação" ou "exclusão" a pastas individuais. O Outlook também permite que um cliente delegue outro usuário para agir em nome do cliente e acesse pastas de correio específicas ou toda a caixa de correio do cliente; isso também é conhecido como "delegação" no Outlook.
 
-O Microsoft Graph oferece suporte de forma programática para receber mensagens em pastas de email que foram compartilhadas por outros usuários, além de receber as pastas compartilhadas em si. O suporte também se aplica a pastas que foram delegadas.
+Programaticamente, o Microsoft Graph oferece suporte à obtenção de mensagens em pastas de email compartilhadas por outros usuários, bem como à obtenção das próprias pastas compartilhadas. O suporte também se aplica a pastas que foram delegadas.
 
-Por exemplo, Henrique compartilhou com Diogo e deu a ele acesso de leitura à sua caixa de entrada. Se Diogo estiver conectado em seu aplicativo e tiver fornecido permissões delegadas (Mail.Read.Shared ou Mail.ReadWrite.Shared), o aplicativo poderá acessar o email e a caixa de entrada do Henrique conforme descrito abaixo.
+Por exemplo, Garth compartilhou com John e deu acesso de leitura à caixa de entrada de Garth. Se John fez login em seu aplicativo e forneceu permissões delegadas (Mail.Read.Shared ou Mail.ReadWrite.Shared), seu aplicativo poderá acessar o email de Garth e a caixa de entrada de Garth conforme descrito abaixo.
 
 ## <a name="microsoft-graph-permissions"></a>Permissões do Microsoft Graph
 

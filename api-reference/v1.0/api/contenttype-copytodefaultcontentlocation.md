@@ -2,15 +2,15 @@
 author: swapnil1993
 title: 'contentType: copyToDefaultContentLocation'
 description: Copie um arquivo para um local de conteúdo padrão em um tipo de conteúdo.
-localization_priority: Normal
+ms.localizationpriority: medium
 doc_type: apiPageType
 ms.prod: sites-and-lists
-ms.openlocfilehash: 4ca64f9a29b1471815784d10d0e23ec14c6a08fd
-ms.sourcegitcommit: c333953a9188b4cd4a9ab94cbe68871e8f3563e5
+ms.openlocfilehash: 4e7d255c2a6e1115349260f717db49cb05c9d6bb
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/30/2021
-ms.locfileid: "58696447"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59147623"
 ---
 # <a name="contenttype-copytodefaultcontentlocation"></a>contentType: copyToDefaultContentLocation
 Namespace: microsoft.graph
@@ -69,6 +69,8 @@ Se tiver êxito, essa chamada retornará uma `204 No Content` resposta.
 
 ### <a name="request"></a>Solicitação
 
+
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "contenttype_copytodefaultcontentlocation"
@@ -88,6 +90,24 @@ Content-Type: application/json
    "destinationFileName":"newname.txt"
 }
 ```
+# <a name="c"></a>[C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/contenttype-copytodefaultcontentlocation-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/contenttype-copytodefaultcontentlocation-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/contenttype-copytodefaultcontentlocation-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/contenttype-copytodefaultcontentlocation-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 ### <a name="response"></a>Resposta
 

@@ -2,15 +2,15 @@
 title: Obter conversation
 description: Recupera as propriedades e os relacionamentos do objeto conversation.
 author: dkershaw10
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: ed7f7ded7d9d29478d1ce34cdf7b4ed47d8b57e8
-ms.sourcegitcommit: 9b8abc940a68dac6ee5da105ca29800cb59775f6
+ms.openlocfilehash: aa33de27db1c56b2974ca297df334d1b7e9ccfe3
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/25/2021
-ms.locfileid: "58513795"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59147507"
 ---
 # <a name="get-conversation"></a>Obter conversa
 

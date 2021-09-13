@@ -2,15 +2,15 @@
 title: Criar externalGroup
 description: Crie um novo objeto externalGroup.
 author: sacampbe-msft
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: search
 doc_type: apiPageType
-ms.openlocfilehash: bd7a09ae83540ab739bdda97fcdbfc14827a7e25
-ms.sourcegitcommit: 6efd9df497d795988cd85474f379d1989b0995b7
+ms.openlocfilehash: 92b381434c664942aba9eb1e78ed4da6c62e2fec
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/30/2021
-ms.locfileid: "58697485"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59022473"
 ---
 # <a name="create-externalgroup"></a>Criar externalGroup
 Namespace: microsoft.graph.externalConnectors
@@ -52,9 +52,9 @@ Você pode especificar as seguintes propriedades ao criar **um externalGroup**.
 
 | Propriedade    | Tipo   | Descrição                                                                                                              |
 |:------------|:-------|:-------------------------------------------------------------------------------------------------------------------------|
-| id          | Cadeia de caracteres | A ID exclusiva do grupo externo dentro de uma conexão. Ele deve ser alfanumérico e pode ter até 128 caracteres. Obrigatório. |
-| displayName | Cadeia de caracteres | O nome amigável do grupo externo. Opcional.                                                                      |
-| descrição | Cadeia de caracteres | A descrição do grupo externo. Opcional.                                                                         |
+| id          | String | A ID exclusiva do grupo externo dentro de uma conexão. Ele deve ser alfanumérico e pode ter até 128 caracteres. Obrigatório. |
+| displayName | String | O nome amigável do grupo externo. Opcional.                                                                      |
+| description | Cadeia de caracteres | A descrição do grupo externo. Opcional.                                                                         |
 
 
 
@@ -66,6 +66,8 @@ Se tiver êxito, este método retornará um código `201 Created` de resposta e 
 
 ### <a name="request"></a>Solicitação
 
+
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "create_externalgroup_from_connection"
@@ -82,6 +84,24 @@ Content-Type: application/json
   "description": "The product marketing team"
 }
 ```
+# <a name="c"></a>[C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/create-externalgroup-from-connection-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/create-externalgroup-from-connection-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/create-externalgroup-from-connection-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/create-externalgroup-from-connection-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 <!-- markdownlint-disable MD024 -->
 ### <a name="response"></a>Resposta

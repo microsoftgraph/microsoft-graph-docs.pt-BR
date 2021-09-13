@@ -2,15 +2,15 @@
 title: Atualizar windowsInformationProtectionAppLockerFile
 description: Atualizar as propriedades de um objeto windowsInformationProtectionAppLockerFile.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: b498ed893a97fb6af88e82386201fe0e2559083a29d686b6967b86c9745c4a17
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 8bc4cefa16e14ae9694b154da67fec2c9d56488f
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54223883"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59147119"
 ---
 # <a name="update-windowsinformationprotectionapplockerfile"></a>Atualizar windowsInformationProtectionAppLockerFile
 
@@ -54,7 +54,7 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar [windows
 
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|displayName|Cadeia de caracteres|O nome amigável|
+|displayName|String|O nome amigável|
 |fileHash|Cadeia de caracteres|Hash SHA256 do arquivo|
 |file|Binária|Arquivo como uma matriz de bytes|
 |id|Cadeia de caracteres|Chave da entidade.|

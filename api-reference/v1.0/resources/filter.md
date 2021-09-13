@@ -1,16 +1,16 @@
 ---
 title: Tipo de recurso Filter
 description: Gerencia a filtragem da coluna de uma tabela.
-localization_priority: Normal
+ms.localizationpriority: medium
 author: ruoyingl
 ms.prod: ''
 doc_type: resourcePageType
-ms.openlocfilehash: 0d3204213fe70fa66cd9fac569a5c4629a414a780b65e8e8d6f238b901a4a2ec
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: f0abc2b341e8833472593db8ce9ceb21a9e5e6a6
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54205819"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59137662"
 ---
 # <a name="filter-resource-type"></a>Tipo de recurso Filter
 

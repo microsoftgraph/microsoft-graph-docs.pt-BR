@@ -2,13 +2,13 @@
 title: Destaques de versões anteriores no Microsoft Graph
 description: O que havia de novo no Microsoft Graph
 author: angelgolfer-ms
-localization_priority: Priority
-ms.openlocfilehash: 1a4f37f025beb5f84bb822940d8bbbb8c870caeb
-ms.sourcegitcommit: 22bd45d272681658d46a8b99af3c3eabc7b05cb1
+ms.localizationpriority: high
+ms.openlocfilehash: 81da196b195056d59efbbb9f53c2e1cbfc630d28
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/18/2021
-ms.locfileid: "58384440"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59127882"
 ---
 # <a name="highlights-of-earlier-releases"></a>Destaques de versões anteriores
 

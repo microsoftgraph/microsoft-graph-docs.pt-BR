@@ -2,15 +2,15 @@
 title: Excluir windowsInformationProtectionPolicy
 description: Exclui windowsInformationProtectionPolicy.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: a5ed70b6be3444c07a4ba77e0290b4ff1abccbbc3c309b94f283dbd13289eb78
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 73bc87ecdbc5ef85d92cbccbd9b1e0c8ca1b1a6d
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54252316"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59147105"
 ---
 # <a name="delete-windowsinformationprotectionpolicy"></a>Excluir windowsInformationProtectionPolicy
 

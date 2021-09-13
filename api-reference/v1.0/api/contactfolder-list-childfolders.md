@@ -2,15 +2,15 @@
 title: Listar childFolders
 description: Obtenha uma coleção de pastas filho sob a pasta de contatos especificada.
 author: kevinbellinger
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 805903a3a8b04b5f83428edea379d32a4a0fde7a
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: e8f9df352806b4f810192b029ccf06ebe136ec24
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52048782"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59147756"
 ---
 # <a name="list-childfolders"></a>Listar childFolders
 
@@ -76,7 +76,7 @@ GET https://graph.microsoft.com/v1.0/me/contactFolders/{id}/childFolders
 ---
 
 ##### <a name="response"></a>Resposta
-Veja a seguir um exemplo da resposta. Observação: o objeto de resposta exibido aqui pode ser encurtado para legibilidade.
+Aqui está um exemplo da resposta. Observação: o objeto de resposta mostrado aqui pode ser reduzido para facilitar a leitura.
 <!-- {
   "blockType": "response",
   "truncated": true,

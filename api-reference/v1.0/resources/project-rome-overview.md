@@ -1,16 +1,16 @@
 ---
 title: Usar a API Graph Microsoft para trabalhar com Project Rome
 description: Project Roma é uma iniciativa da Microsoft para criar uma plataforma de experiências entre dispositivos. Project Roma permite que um aplicativo em um cliente ou serviço local interaja com aplicativos e serviços em um host remoto quando o usuário entrar com a mesma conta da Microsoft usada para entrar no dispositivo cliente. Isso permite que você programe experiências entre dispositivos e plataformas centralizadas em torno de tarefas do usuário, em vez de dispositivos.
-localization_priority: Normal
+ms.localizationpriority: medium
 author: ailae
 ms.prod: ''
 doc_type: conceptualPageType
-ms.openlocfilehash: 4b011f217d4ef3f55afdafa6880e60a8cd38bf53cecadee70f4355dafbdb7642
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 4302969e34b2100bd7c1c9784763c9db2e588f55
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54152310"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59143801"
 ---
 # <a name="use-the-microsoft-graph-api-to-work-with-project-rome"></a>Usar a API Graph Microsoft para trabalhar com Project Rome
 

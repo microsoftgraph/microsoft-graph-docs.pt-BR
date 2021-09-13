@@ -1,16 +1,16 @@
 ---
 title: Tipo de recurso itemAttachment
 description: 'Um contato, evento ou mensagem que está anexado a outro evento, mensagem ou postagem.  '
-localization_priority: Priority
+ms.localizationpriority: high
 ms.prod: outlook
 author: abheek-das
 doc_type: resourcePageType
-ms.openlocfilehash: 07bf925b83be912f0ed50fb072fb2deadc59e0e18729c13ea76acd975a9193ba
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 92c9b42c70780d564e252dbde5cef39734c6afd3
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54192219"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59084311"
 ---
 # <a name="itemattachment-resource-type"></a>Tipo de recurso itemAttachment
 

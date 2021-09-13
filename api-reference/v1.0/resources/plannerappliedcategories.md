@@ -1,16 +1,16 @@
 ---
 title: Tipo de recurso plannerAppliedCategories
 description: O **recurso AppliedCategoriesCollection** representa a coleção de categorias (ou rótulos) que foram aplicadas a uma tarefa. Ele faz parte do objeto plannerTask.
-localization_priority: Normal
+ms.localizationpriority: medium
 author: TarkanSevilmis
 ms.prod: planner
 doc_type: resourcePageType
-ms.openlocfilehash: 1a7513ed9746cb73a08882f3b9c9167ef5336e281bf21fa7f359c80541232c81
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 7095c2f2069b89009c9f8cdbe5908812dd03620f
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54246651"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59044395"
 ---
 # <a name="plannerappliedcategories-resource-type"></a>Tipo de recurso plannerAppliedCategories
 

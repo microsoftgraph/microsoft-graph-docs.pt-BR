@@ -2,16 +2,16 @@
 author: JeremyKelley
 ms.date: 09/10/2017
 title: FileSystemInfo
-localization_priority: Normal
+ms.localizationpriority: medium
 description: O recurso FileSystemInfo contém propriedades que são relatadas pelo sistema de arquivos local do dispositivo para a versão local de um item.
 ms.prod: ''
 doc_type: resourcePageType
-ms.openlocfilehash: aa57f62e5acd4ed80b929df3637ee0f4c5c861a69086abfea7cb3f522bff509b
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 706128b116a7a8f8b4ff1450096f3335c44b165c
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54205826"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59137676"
 ---
 # <a name="filesysteminfo-facet"></a>Faceta fileSystemInfo
 

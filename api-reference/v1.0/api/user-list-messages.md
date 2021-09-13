@@ -1,16 +1,16 @@
 ---
 title: Listar mensagens
 description: Obtenha as mensagens na caixa de correio do usuário conectado (incluindo as pastas Itens Excluídos e Email Secundário).
-localization_priority: Priority
+ms.localizationpriority: high
 author: abheek-das
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: ad594f12603668d0684523a25cd708be8b61eae8
-ms.sourcegitcommit: 17f1c9cff2e59049b894db32435af02e4ae32a70
+ms.openlocfilehash: 398642777da6426278e2292cef252ea44b893809
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "51473959"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59072657"
 ---
 # <a name="list-messages"></a>Listar mensagens
 
@@ -31,7 +31,7 @@ No momento, essa operação retorna corpos de mensagens somente no formato HTML.
 Existem dois cenários em que um aplicativo pode receber mensagens na pasta de email de outro usuário:
 
 * Se o aplicativo tiver permissões de aplicativo ou
-* Se o aplicativo tiver as [permissões](#permissions) delegadas apropriadas de um usuário e outro usuário tiver compartilhado uma pasta de email com esse usuário, ou tiver concedido acesso delegado a esse usuário. Confira [detalhes e um exemplo](/graph/outlook-share-messages-folders).
+* Se o aplicativo tiver as [permissões](#permissions) delegadas apropriadas de um usuário e outro usuário tiver compartilhado uma pasta de email com esse usuário, ou tiver concedido acesso delegado a esse usuário. Veja [detalhes e um exemplo](/graph/outlook-share-messages-folders).
 
 > **Observação** Lembre-se da [questão conhecida](/graph/known-issues#get-messages-returns-chats-in-microsoft-teams) essa operação inclui mensagens de chat do Microsoft Teams em sua resposta.
 
@@ -123,7 +123,7 @@ GET https://graph.microsoft.com/v1.0/me/messages?$select=sender,subject
 ---
 
 #### <a name="response"></a>Resposta
-Veja a seguir um exemplo da resposta. Para obter a próxima página de mensagens, aplique a URL retornada em `@odata.nextLink` a uma solicitação GET subsequente.
+Aqui está um exemplo da resposta. Para obter a próxima página de mensagens, aplique o URL retornado em `@odata.nextLink` uma solicitação GET subsequente.
 
 <!-- {
   "blockType": "response",

@@ -1,3 +1,12 @@
+---
+ms.localizationpriority: medium
+ms.openlocfilehash: a31594b0add328d1515eeb4965334be724b02a05
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.translationtype: MT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59289500"
+---
 <!-- markdownlint-disable MD002 MD041 -->
 
 Neste exercício, você criará, executará e aprovará um pipeline da Fábrica de Dados do Azure para extrair dados do Microsoft 365 para um Blob do Azure Armazenamento para processamento adicional.

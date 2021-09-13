@@ -2,15 +2,15 @@
 title: Criar windowsAutopilotDeviceIdentity
 description: Crie um novo objeto windowsAutopilotDeviceIdentity.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 28cf9132c6cad73157fc246254545b77ea7679d71c9bb62195542e6a40242452
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 154edcd01c4cca64172f583981f2b8f513653811
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54190070"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59147259"
 ---
 # <a name="create-windowsautopilotdeviceidentity"></a>Criar windowsAutopilotDeviceIdentity
 
@@ -51,9 +51,9 @@ A tabela a seguir mostra as propriedades necessárias ao criar o windowsAutopilo
 
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|id|Cadeia de caracteres|O GUID do objeto.|
-|groupTag|Cadeia de caracteres|Marca de grupo do dispositivo Windows piloto automático.|
-|purchaseOrderIdentifier|Cadeia de caracteres|Purchase Order Identifier of the Windows autopilot device.|
+|id|String|O GUID do objeto.|
+|groupTag|String|Marca de grupo do dispositivo Windows piloto automático.|
+|purchaseOrderIdentifier|String|Purchase Order Identifier of the Windows autopilot device.|
 |serialNumber|Cadeia de caracteres|Número de série do dispositivo do Windows AutoPilot.|
 |productKey|Cadeia de caracteres|Chave do produto (Product Key) do dispositivo do Windows AutoPilot.|
 |fabricante|String|Fabricante Oem do dispositivo Windows piloto automático.|
@@ -61,13 +61,13 @@ A tabela a seguir mostra as propriedades necessárias ao criar o windowsAutopilo
 |enrollmentState|[enrollmentState](../resources/intune-enrollment-enrollmentstate.md)|Estado de registro do intune do dispositivo Windows piloto automático. Os valores possíveis são: `unknown`, `enrolled`, `pendingReset`, `failed`, `notContacted`.|
 |lastContactedDateTime|DateTimeOffset|Intune Last Contacted Date Time of the Windows autopilot device.|
 |addressableUserName|String|Nome de usuário acessível.|
-|userPrincipalName|Cadeia de caracteres|Nome principal do usuário.|
+|userPrincipalName|String|Nome principal do usuário.|
 |resourceName|Cadeia de caracteres|Nome do recurso.|
-|skuNumber|Cadeia de caracteres|Número SKU|
-|systemFamily|Cadeia de caracteres|Família do Sistema|
+|skuNumber|String|Número SKU|
+|systemFamily|String|Família do Sistema|
 |azureActiveDirectoryDeviceId|String|ID do dispositivo AAD - a ser preterida|
-|managedDeviceId|Cadeia de caracteres|ID de dispositivo gerenciado|
-|displayName|Cadeia de caracteres|Nome de exibição|
+|managedDeviceId|String|ID de dispositivo gerenciado|
+|displayName|String|Nome de exibição|
 
 
 

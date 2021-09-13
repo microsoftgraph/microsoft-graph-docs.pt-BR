@@ -2,15 +2,15 @@
 title: Ação setPriority
 description: Ainda não documentado
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 6c3c0a57bcb6f0d0888203aa2c7917691000f0369e8f8e0296087183b0fd05ab
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: f692fc4fca4b8b09441b77d17a7c771735c3ef79
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54163961"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59146860"
 ---
 # <a name="setpriority-action"></a>ação setPriority
 

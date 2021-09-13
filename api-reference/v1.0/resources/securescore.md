@@ -1,16 +1,16 @@
 ---
 title: Tipo de recurso secureScore
 description: Representa a pontuação segura de um locatário por dia de dados de pontuação, no nível de locatário e controle.
-localization_priority: Normal
+ms.localizationpriority: medium
 author: preetikr
 ms.prod: ''
 doc_type: resourcePageType
-ms.openlocfilehash: fbc942784813545f5d276addbd4581cf30ea82c8c2d8d6cf17d5f3ef3fbc7246
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 01499bbd755739310bc309656379bde278401544
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54180478"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59084122"
 ---
 # <a name="securescore-resource-type"></a>Tipo de recurso secureScore
 
@@ -37,7 +37,7 @@ Representa a pontuação segura de um locatário por dia de dados de pontuação
 |   activeUserCount |   Int32   |   Contagem ativa do usuário do locatário determinado.  |
 |   createdDateTime |   DateTimeOffset  |   A data em que a entidade é criada.  |
 |   currentScore    |   Duplo  |   Pontuação atual atingida pelo locatário na data especificada.    |
-|   enabledServices |   Coleção de cadeias de caracteres   |   Serviços fornecidos pela Microsoft para o locatário (por exemplo, Exchange online, Skype, Sharepoint).   |
+|   enabledServices |   Coleção String   |   Serviços fornecidos pela Microsoft para o locatário (por exemplo, Exchange online, Skype, Sharepoint).   |
 |   licensedUserCount   |   Int32   |   Contagem de usuários licenciados do locatário determinado.    |
 |   maxScore |  Duplo  |   Pontuação máxima possível do locatário na data especificada.    |
 |   averageComparativeScores |  [Coleção averageComparativeScore](averagecomparativescore.md)    |Pontuação média por escopos diferentes (por exemplo, média por setor, média por assento) e categoria de controle (Identidade, Dados, Dispositivo, Aplicativos, Infraestrutura) dentro do escopo. |

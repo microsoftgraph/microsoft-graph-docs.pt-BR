@@ -2,15 +2,15 @@
 title: Criar equipe
 description: Criar uma nova equipe.
 author: anandjo
-localization_priority: Priority
+ms.localizationpriority: high
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 18e752c01df3f1b8eafffdf75085e470a2bc70b6
-ms.sourcegitcommit: 94c4acf8bd03c10a44b12952b6cb4827df55b978
+ms.openlocfilehash: d7a38f0452e3560d189fb2e58d8aa56dd8448d92
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/06/2021
-ms.locfileid: "52787755"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59110001"
 ---
 # <a name="create-team"></a>Criar equipe
 
@@ -52,7 +52,7 @@ No corpo da solicitação, forneça uma representação JSON de um objeto [team]
 
 ## <a name="response"></a>Resposta
 
-Se bem-sucedida, essa API retornará uma resposta `202 Accepted` contendo um link para a [teamsAsyncOperation](../resources/teamsasyncoperation.md).
+Se for bem-sucedido, esta API retornará uma resposta `202 Accepted` que contém um link para [teamsAsyncOperation](../resources/teamsasyncoperation.md).
 
 ## <a name="examples"></a>Exemplos
 
@@ -100,7 +100,7 @@ Content-Type: application/json
 ---
 
 
-##### <a name="response"></a>Resposta
+#### <a name="response"></a>Resposta
 <!-- {
   "blockType": "response",
   "name": "create_team_post"

@@ -1,16 +1,16 @@
 ---
 title: 'entre em contato com: delta'
 description: Obtenha um conjunto de contatos que foram adicionados, excluídos ou atualizados em uma pasta especificada.
-localization_priority: Normal
+ms.localizationpriority: medium
 author: kevinbellinger
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 1956d285daebfd4a5d7916b33ade459d7869319a
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: c4cf8f2d59fb72f15a36d352cd129fb6f65af6f0
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52051540"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59147791"
 ---
 # <a name="contact-delta"></a>entre em contato com: delta
 

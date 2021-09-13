@@ -1,16 +1,16 @@
 ---
 title: Tipo de recurso FormatProtection
 description: Representa a proteção de formatação de um objeto range.
-localization_priority: Normal
+ms.localizationpriority: medium
 author: ruoyingl
 ms.prod: ''
 doc_type: resourcePageType
-ms.openlocfilehash: b0f48ec6bdd7ce1a0c02279260840c53a86e3bdd50436c901891c321f1b48b01
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 7f4c6b3c29092e74dbbd749e9d75319b7f1fe028
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54216914"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59084570"
 ---
 # <a name="formatprotection-resource-type"></a>Tipo de recurso FormatProtection
 

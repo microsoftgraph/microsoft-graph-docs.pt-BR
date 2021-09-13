@@ -2,15 +2,15 @@
 title: Listar eventos
 description: Recupera uma lista de eventos em um calendário.  A lista contém reuniões de instância única e reuniões mestres da série.
 author: harini84
-localization_priority: Priority
+ms.localizationpriority: high
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 33bdadb28129183972f8fb6f7ee051708a3f2e55
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: df1a469ee464eb3299f21e3c4fda5a8a1e5fdd03
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52054599"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59125414"
 ---
 # <a name="list-events"></a>Listar eventos
 
@@ -21,7 +21,7 @@ Recupere uma lista de eventos em um calendário.  O calendário pode ser um para
 Para obter instâncias de evento expandidas, [obtenha a visualização de calendário](calendar-list-calendarview.md) ou [obtenha as instâncias de um evento](event-list-instances.md).
 
 ## <a name="permissions"></a>Permissões
-Dependendo do tipo de calendário em que o evento se encontra e do tipo de permissão (delegada ou aplicativo) solicitada, para chamar essa API é necessário ter umas das seguintes permissões. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
+Dependendo do tipo de calendário em que os eventos estão e do tipo de permissão (delegada ou aplicativo) solicitada, uma das seguintes permissões é necessária para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 | Calendário | Delegado (conta corporativa ou de estudante) | Delegada (conta pessoal da Microsoft) | Aplicativo |
 |:-----|:-----|:-----|:-----|
@@ -91,7 +91,7 @@ GET https://graph.microsoft.com/v1.0/me/calendar/events
 ---
 
 ##### <a name="response"></a>Resposta
-Veja a seguir um exemplo da resposta. Observação: o objeto de resposta exibido aqui pode ser encurtado para legibilidade.
+Aqui está um exemplo da resposta. Observação: o objeto de resposta mostrado aqui pode ser reduzido para facilitar a leitura.
 <!-- {
   "blockType": "response",
   "truncated": true,

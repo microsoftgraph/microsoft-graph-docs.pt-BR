@@ -2,15 +2,15 @@
 title: Excluir externalConnection
 description: Exclui um objeto externalConnection.
 author: mecampos
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: search
 doc_type: apiPageType
-ms.openlocfilehash: f921569ac5f1b22eb4a2b14a84df1ac71f2cbb30
-ms.sourcegitcommit: 5bb981b4853663354a566d4a4a5cbf288939e441
+ms.openlocfilehash: b89d48eacacae956ce91a8c0c663b554e924a4e7
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/24/2021
-ms.locfileid: "53580062"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59022505"
 ---
 # <a name="delete-externalconnection"></a>Excluir externalConnection
 Namespace: microsoft.graph.externalConnectors

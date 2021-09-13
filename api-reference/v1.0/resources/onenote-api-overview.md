@@ -1,20 +1,20 @@
 ---
 title: Usar o API REST do OneNote
 description: O Microsoft Graph permite que seu aplicativo obtenha acesso autorizado aos blocos de anotações, seções e páginas do OneNote de um usuário em uma conta pessoal ou de organização. Com as permissões delegadas ou de aplicativo apropriadas, seu aplicativo pode acessar os dados do OneNote do usuário conectado ou de qualquer usuário em um locatário.
-localization_priority: Priority
+ms.localizationpriority: high
 author: jewan-microsoft
 ms.prod: onenote
 doc_type: conceptualPageType
-ms.openlocfilehash: 1d9543a7192d8f4f4d6603d1ccd6df237b2ee4bf84d3f1d1882492901175ee48
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 9d34da129e354134a55efb682c5be098c73baaad
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54141410"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59094181"
 ---
 # <a name="use-the-onenote-rest-api"></a>Usar o API REST do OneNote
 
-O Microsoft Graph permite que o seu aplicativo obtenha acesso autorizado às sessões, páginas e blocos de notas do usuário do OneNote em uma conta pessoal ou da organização. Com as [permissões delegadas ou permissões de aplicativo apropriadas](/graph/permissions-reference#notes-permissions) seu aplicativo pode acessar dados do OneNote do usuário conectado ou de todos os usuários em um locatário.
+O Microsoft Graph permite que seu aplicativo obtenha acesso autorizado aos blocos de anotações, seções e páginas de um usuário do OneNote em uma conta pessoal ou organizacional. Com as [permissões delegadas ou de aplicativo apropriadas](/graph/permissions-reference#notes-permissions), seu aplicativo pode acessar os dados do OneNote do usuário conectado ou de qualquer usuário em um locatário.
 
 ## <a name="root-url"></a>URL raiz
 A URL raiz de serviço do OneNote usa o formato a seguir para todas as chamadas da API do OneNote.
@@ -24,7 +24,7 @@ https://graph.microsoft.com/{version}/{location}/onenote/
 O segmento `version` na URL representa a versão do Microsoft Graph que você deseja usar:
 
 - `v1.0` serve para o código de produção estável.
-- `beta` serve para experimentar um recurso que está em desenvolvimento. Os recursos e funcionalidades na extremidade beta podem mudar; não recomendamos usá-lo no seu código de produção.
+- `beta` é experimentar um recurso que está em desenvolvimento. Os recursos e a funcionalidade do ponto de extremidade beta podem alterar; não recomendamos que você o use em seu código de produção.
 
 A localização pode ser blocos de anotações do usuário no Microsoft 365 ou no OneDrive do consumidor, blocos de anotações de grupo ou blocos de anotações hospedado no site de equipe do SharePoint no Microsoft 365. 
 
@@ -40,7 +40,7 @@ https://graph.microsoft.com/{version}/users/{id}/onenote/{notebooks | sections |
 ```
 
 - `me` serve para o conteúdo do OneNote que o usuário atual pode acessar (exclusivo e compartilhado).
-- `users/{id}` serve para o conteúdo do OneNote que o usuário especificado (na URL) compartilhou com o usuário atual. Use a API de [usuários](users.md).
+- `users/{id}` é para conteúdo do OneNote que o usuário especificado (na URL) compartilhou com o usuário atual. Use a API de [usuários](users.md).
 > **Observação:** Para obter as IDs de usuário, faça uma solicitação GET em `https://graph.microsoft.com/v1.0/users`.
 
 ## <a name="group-notebooks"></a>Blocos de anotações de grupo

@@ -2,15 +2,15 @@
 title: Listar deviceEnrollmentPlatformRestrictionsConfigurations
 description: Listar propriedades e relações de objeto de deviceEnrollmentPlatformRestrictionsConfiguration.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 3eddc30e1d4cd679841db5554b4330eaa03969b48ec3f2c0c92af83391c8e89f
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: dee83a53c4f510644707ff737f420d6494c7331e
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54209088"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59146846"
 ---
 # <a name="list-deviceenrollmentplatformrestrictionsconfigurations"></a>Listar deviceEnrollmentPlatformRestrictionsConfigurations
 

@@ -1,16 +1,16 @@
 ---
 title: tipo de recurso de processo
 description: Contém informações de estado sobre o processo relacionado ao alerta.
-localization_priority: Normal
+ms.localizationpriority: medium
 author: preetikr
 ms.prod: ''
 doc_type: resourcePageType
-ms.openlocfilehash: 5fa15502d380d651128f55e6854bfe3592a290d1fb413b591a3f8f2571dca19f
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 4c8f24c0df5c4481c51859ff5f22ef0d619d00fd
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54222711"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59143829"
 ---
 # <a name="process-resource-type"></a>tipo de recurso de processo
 
@@ -27,8 +27,8 @@ Contém informações de estado sobre o processo relacionado ao alerta.
 |createdDateTime|DateTimeOffset|Hora em que o processo foi iniciado. O tipo Timestamp representa informações de data e hora usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite UTC em 1 de janeiro de 2014 é `2014-01-01T00:00:00Z`.|
 |fileHash|[fileHash](filehash.md)|Tipo complexo que contém hashes de arquivo (criptográficos e sensíveis ao local).|
 |integrityLevel|processIntegrityLevel|O nível de integridade do processo. Os possíveis valores são: `unknown`, `untrusted`, `low`, `medium`, `high`, `system`.|
-|isElevated|Booliano|True se o processo estiver elevado.|
-|nome|Cadeia de caracteres|O nome do arquivo de imagem do processo.|
+|isElevated|Boolean|True se o processo estiver elevado.|
+|nome|String|O nome do arquivo de imagem do processo.|
 |parentProcessCreatedDateTime|DateTimeOffset|DateTime no qual o processo pai foi iniciado. O tipo Timestamp representa informações de data e hora usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite UTC em 1 de janeiro de 2014 é `2014-01-01T00:00:00Z`.|
 |parentProcessId|Int32|A ID do Processo (PID) do processo pai.|
 |parentProcessName|String|O nome do arquivo de imagem do processo pai.|

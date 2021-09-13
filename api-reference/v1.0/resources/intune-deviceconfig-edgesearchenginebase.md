@@ -2,15 +2,15 @@
 title: Tipo de recurso edgeSearchEngineBase
 description: Permite aos administradores de TI definir um mecanismo de pesquisa padrão para dispositivos controlados por MDM. Os usuários podem substituí-lo e alterar o mecanismo de pesquisa padrão fornecido, caso a política AllowSearchEngineCustomization não esteja definida.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 0ed6f1f59784bdcb08fcf5312b050bef9bbe4fb03d246688ad8dda395c828d87
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: fa6cbe06e48228c294c862cf097333e3305d821f
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54189608"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59146832"
 ---
 # <a name="edgesearchenginebase-resource-type"></a>Tipo de recurso edgeSearchEngineBase
 

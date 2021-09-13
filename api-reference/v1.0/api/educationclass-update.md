@@ -2,15 +2,15 @@
 title: Atualizar educationClass
 description: Atualize as propriedades de uma aula.
 author: mlafleur
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: 5340a05df5068942c2f895c9858e2f5cd280e24a
-ms.sourcegitcommit: 34891a1c601976166958be1aa04bab5936592b44
+ms.openlocfilehash: 3e32688d0dd469b3d91df102dabb20e0f19bcea8
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/06/2021
-ms.locfileid: "52231959"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59147427"
 ---
 # <a name="update-educationclass"></a>Atualizar educationClass
 
@@ -43,14 +43,14 @@ No corpo da solicitação, forneça os valores para os campos relevantes que dev
 
 | Propriedade             | Tipo                                               | Descrição                                                        |
 | :------------------- | :------------------------------------------------- | :----------------------------------------------------------------- |
-| displayName          | String                                             | Nome da aula.                                                 |
+| displayName          | Cadeia de caracteres                                             | Nome da aula.                                                 |
 | mailNickname         | String                                             | Nome de email para enviar email a todos os membros, se essa propriedade estiver habilitada.    |
-| descrição          | String                                             | Descrição da aula.                                          |
+| description          | Cadeia de caracteres                                             | Descrição da aula.                                          |
 | createdBy            | [identitySet](../resources/identityset.md)         | Entidade que criou a aula                                       |
 | classCode            | Cadeia de caracteres                                             | Código de aula usada pela escola para identificar a aula.               |
 | externalId           | Cadeia de caracteres                                             | ID da aula no sistema de sincronização.                           |
 | externalSource       | educationExternalSource                            | Como essa aula foi criada. Os valores possíveis são: `sis` , `manual`   |
-| externalSourceDetail | String                                             | O nome da fonte externa de onde esses recursos foram gerados. |
+| externalSourceDetail | Cadeia de caracteres                                             | O nome da fonte externa de onde esses recursos foram gerados. |
 | grade                | Cadeia de caracteres                                             | Nível de nota da classe.                                          |
 | term                 | [educationTerm](../resources/educationterm.md)     | Termos dessa aula.                                               |
 

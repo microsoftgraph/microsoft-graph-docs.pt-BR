@@ -1,16 +1,16 @@
 ---
 title: Tipo de recurso educationClass
 description: 'Representa uma aula em uma escola. O **recurso educationClass** corresponde ao grupo Microsoft 365 e compartilha a mesma ID. Os alunos são membros regulares da aula e os professores são proprietários e têm direitos apropriados. Para que as experiências do Office funcionem corretamente, os professores devem ser membros das coleções de professores e membros.  '
-localization_priority: Normal
+ms.localizationpriority: medium
 author: mlafleur
 ms.prod: education
 doc_type: resourcePageType
-ms.openlocfilehash: 3d1d6eb24e9d9b21ed8e828488ae306ec5c4bae549e51ecf0e69d63c5319e3a5
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: dfe36d8068d0a9fa8d2c9f6c8d38b504ee9c83c5
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54160055"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59084556"
 ---
 # <a name="educationclass-resource-type"></a>Tipo de recurso educationClass
 
@@ -28,7 +28,7 @@ Herda da [entidade](../resources/entity.md).
 | [Criar educationClass](../api/educationclass-post.md) | [educationClass](../resources/educationclass.md)            | Crie um novo [objeto educationClass.](../resources/educationclass.md)                                |
 | [Obter educationClass](../api/educationclass-get.md)       | [educationClass](../resources/educationclass.md)            | Leia as propriedades e as relações de um [objeto educationClass.](../resources/educationclass.md) |
 | [Atualizar educationClass](../api/educationclass-update.md) | [educationClass](../resources/educationclass.md)            | Atualize as propriedades de um [objeto educationClass.](../resources/educationclass.md)                 |
-| [Excluir educationClass](../api/educationclass-delete.md) | None                                                        | [Exclua um objeto educationClass.](../resources/educationclass.md)                                  |
+| [Excluir educationClass](../api/educationclass-delete.md) | Nenhum(a)                                                        | [Exclua um objeto educationClass.](../resources/educationclass.md)                                  |
 | [delta](../api/educationclass-delta.md)                  | Coleção [educationClass](../resources/educationclass.md) | Obter alterações incrementais na coleção de recursos.                                                  |
 
 ## <a name="properties"></a>Propriedades

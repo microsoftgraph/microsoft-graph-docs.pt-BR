@@ -1,16 +1,16 @@
 ---
 title: Criar educationRubric
 description: Crie um novo objeto educationRubric.
-localization_priority: Normal
+ms.localizationpriority: medium
 author: sharad-sharma-msft
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: 1fc070c5bba0db2924d3c9676602d393529e1ce5
-ms.sourcegitcommit: 979fe005c74eb99cd971df6b9511b2d3f7fe3cd4
+ms.openlocfilehash: 21d391ef4f042c514d20ff211ff9b49fe13cceb3
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/17/2021
-ms.locfileid: "52992902"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59114523"
 ---
 # <a name="create-educationrubric"></a>Criar educationRubric
 

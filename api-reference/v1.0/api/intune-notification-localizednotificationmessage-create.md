@@ -2,15 +2,15 @@
 title: Criar localizedNotificationMessage
 description: Criar um novo objeto localizedNotificationMessage.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 3a7ecf285d68f3f130d45d7daf2ee2b53cf268d6d4187f84fd403dd7c0bac8f4
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 0f9516425d3df22d970485ed571b42b07a8d1d94
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54247148"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59147056"
 ---
 # <a name="create-localizednotificationmessage"></a>Criar localizedNotificationMessage
 
@@ -51,10 +51,10 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar localize
 
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|id|Cadeia de caracteres|Chave da entidade.|
+|id|String|Chave da entidade.|
 |lastModifiedDateTime|DateTimeOffset|DateTime da última modificação do objeto.|
 |localidade|Cadeia de caracteres|A localidade para a qual esta mensagem se destina.|
-|Assunto|Cadeia de caracteres|O assunto do modelo da mensagem.|
+|assunto|String|O assunto do modelo da mensagem.|
 |messageTemplate|Cadeia de caracteres|O conteúdo do modelo da mensagem.|
 |isDefault|Booliano|Sinaliza para indicar se esta é ou não a localidade padrão do fallback de idioma. Esse sinalizador só pode ser definido. Para remover a definição, defina esta propriedade como verdadeira na outra Mensagem de notificação localizada.|
 

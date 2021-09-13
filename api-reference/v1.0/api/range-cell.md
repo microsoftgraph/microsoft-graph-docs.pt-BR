@@ -1,16 +1,16 @@
 ---
 title: 'Range: Cell'
 description: Obtém o objeto de intervalo que contém a célula única com base nos números de linha e de coluna. A célula pode estar fora dos limites do respectivo intervalo pai, desde que permaneça dentro da grade da planilha. A localização da célula retornada está relacionada à célula superior esquerda do intervalo.
-localization_priority: Normal
+ms.localizationpriority: medium
 author: lumine2008
 ms.prod: excel
 doc_type: apiPageType
-ms.openlocfilehash: cb55594acc0b31ca9ce8f4f18d87df4f1529b2a0
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: b4395e8b0657c76c0328d085874c7e26e86dfa4f
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52050357"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59022069"
 ---
 # <a name="range-cell"></a>Range: Cell
 
@@ -22,8 +22,8 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegado (conta corporativa ou de estudante) | Files.ReadWrite    |
-|Delegado (conta pessoal da Microsoft) | Sem suporte.    |
+|Delegada (conta corporativa ou de estudante) | Files.ReadWrite    |
+|Delegada (conta pessoal da Microsoft) | Sem suporte.    |
 |Aplicativo | Sem suporte. |
 
 ## <a name="http-request"></a>Solicitação HTTP
@@ -90,7 +90,7 @@ GET https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/names/{name}/r
 
 
 ##### <a name="response"></a>Resposta
-Veja a seguir um exemplo da resposta. Observação: o objeto de resposta exibido aqui pode ser encurtado para legibilidade.
+Aqui está um exemplo da resposta. Observação: o objeto de resposta mostrado aqui pode ser reduzido para facilitar a leitura.
 <!-- {
   "blockType": "response",
   "truncated": true,

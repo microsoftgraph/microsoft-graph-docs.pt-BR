@@ -2,15 +2,15 @@
 title: Listar deviceManagementExchangeConnectors
 description: Listar propriedades e relações de objeto de deviceManagementExchangeConnector.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 57d13de3536a2c07849077016c5d8fcab67de864c07e7ba17a97d3153f1cb571
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 459524afa2258cd136eff593d380eed744b05b6a
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54249479"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59114110"
 ---
 # <a name="list-devicemanagementexchangeconnectors"></a>Listar deviceManagementExchangeConnectors
 

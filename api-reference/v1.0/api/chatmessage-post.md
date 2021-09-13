@@ -1,16 +1,16 @@
 ---
 title: Enviar chatMessage em um canal ou chat
 description: Envie um novo chatMessage no canal especificado ou em um chat.
-localization_priority: Normal
+ms.localizationpriority: medium
 author: RamjotSingh
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 6e9b28d3e6992ad430100b9c915741d69a12b1f5
-ms.sourcegitcommit: f99dc2b6c8b4cb6f9f74cd780dccc47a2bccfaa6
+ms.openlocfilehash: 595323bce69b31a4193ebfc2f96cb8cbb2d566d8
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/27/2021
-ms.locfileid: "58667945"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59147854"
 ---
 # <a name="send-chatmessage-in-a-channel-or-a-chat"></a>Enviar chatMessage em um canal ou chat
 

@@ -2,14 +2,14 @@
 title: Obter as alterações incrementais para grupos
 description: A consulta delta permite consultar adições, exclusões ou atualizações de grupos, por meio de uma série de chamadas de função delta. A consulta delta permite que você descubra alterações nos grupos
 author: davidmu1
-localization_priority: Priority
+ms.localizationpriority: high
 ms.custom: graphiamtop20
-ms.openlocfilehash: 4fc09f8005e72480e6b716ebdacc6a7f0242a80ef4f01f2311205e32f0c1e6c7
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: cea4e335a02c2ebdf107cdfbca72072b0b18d2f3
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54189139"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59142381"
 ---
 # <a name="get-incremental-changes-for-groups"></a>Obter as alterações incrementais para grupos
 
@@ -173,7 +173,7 @@ Content-type: application/json
 
 ## <a name="deltalink-request"></a>Solicitação deltaLink
 
-Usando o `deltaLink` da [última resposta](#final-nextlink-response), é possível obter as novas alterações de rede do grupo desde a última solicitação. As alterações incluem:
+Usando a partir da última resposta, você poderá obter novas mudanças líquidas para grupos desde a `deltaLink`[última réplica](#final-nextlink-response). As alterações incluem:
 - Objetos de grupo recém-criados.
 - Objetos de grupo excluídos.
 - Objetos de grupo cuja propriedade mudou (por exemplo, **displayName** foi modificada).
@@ -234,7 +234,7 @@ Alguns aspectos a observar sobre a resposta do exemplo acima:
 
 - Os objetos são retornados com o mesmo conjunto de propriedades originalmente especificado pelo parâmetro de consulta `$select`.
 
-- Propriedades alteradas e inalteradas estão incluídas. No exemplo acima, a propriedade `description` tem um novo valor, e a propriedade `displayName` não foi alterada.
+- As propriedades alteradas e inalteradas são incluídas. No exemplo acima, a `description` propriedade tem um novo valor, enquanto a `displayName` propriedade não foi alterada.
 
 - `members@delta` contém todas as alterações de associação.
 

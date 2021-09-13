@@ -2,15 +2,15 @@
 title: Excluir dispositivo
 description: Exclui um dispositivo registrado.
 author: spunukol
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: 9aa477f6b5ef1505a6fe8b26a0afc980d0adc04e
-ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
+ms.openlocfilehash: fe73c6c8e083d3021e31dff1721e2d68b2594f73
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50434612"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59114684"
 ---
 # <a name="delete-device"></a>Excluir dispositivo
 
@@ -24,7 +24,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegado (conta corporativa ou de estudante) | Directory.AccessAsUser.All |
+|Delegado (conta corporativa ou de estudante) | Device.ReadWrite.All, Directory.AccessAsUser.All |
 |Delegado (conta pessoal da Microsoft) | Sem suporte.    |
 |Aplicativo | Sem suporte. |
 
@@ -48,7 +48,7 @@ Não forneça um corpo de solicitação para esse método.
 Se bem-sucedido, este método retorna um código de resposta `204 No Content`. Não retorna nada no corpo da resposta.
 
 ## <a name="example"></a>Exemplo
-##### <a name="request"></a>Solicitação
+### <a name="request"></a>Solicitação
 
 
 # <a name="http"></a>[HTTP](#tab/http)
@@ -77,7 +77,7 @@ DELETE https://graph.microsoft.com/v1.0/devices/{id}
 
 ---
 
-##### <a name="response"></a>Resposta
+### <a name="response"></a>Resposta
 
 <!-- {
   "blockType": "response",

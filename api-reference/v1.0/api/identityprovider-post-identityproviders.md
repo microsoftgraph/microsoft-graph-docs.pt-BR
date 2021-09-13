@@ -1,16 +1,16 @@
 ---
 title: Criar identityProvider
 description: Criar um novo identityProvider
-localization_priority: Priority
+ms.localizationpriority: high
 author: namkedia
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: abe7e5a3fff0c677499d5c47a42cf2fbc43f26f9705f0e51dd108c1e1367e719
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 5442e2a05d87e22f7c6f545ff68c78dbb1f4158f
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54219294"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59080027"
 ---
 # <a name="create-identityprovider-deprecated"></a>Criar IdentityProvider (obsoleto)
 Namespace: microsoft.graph

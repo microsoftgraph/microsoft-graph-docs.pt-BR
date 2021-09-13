@@ -2,14 +2,14 @@
 title: Diretrizes de limitação do Microsoft Graph
 description: Os limites de controle limitam número de chamadas simultâneas para um serviço para evitar a utilização exagerada dos recursos. O Microsoft Graph foi projetado para lidar com um alto volume de solicitações. Se ocorrer um número impressionante de solicitações, a limitação ajuda a manter um desempenho ideal e a confiabilidade do serviço Microsoft Graph.
 author: davidmu1
-localization_priority: Priority
+ms.localizationpriority: high
 ms.custom: graphiamtop20
-ms.openlocfilehash: 7ea2c6211fb0077d9dda055d1326a420e260e51e
-ms.sourcegitcommit: c541d3eceafda4812e2c0c029c95ddfb92ef58b3
+ms.openlocfilehash: 3290c1fee3921d0c367496871a5753eb1afc5fbc
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/04/2021
-ms.locfileid: "53726744"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59035621"
 ---
 # <a name="microsoft-graph-throttling-guidance"></a>Diretrizes de limitação do Microsoft Graph
 
@@ -121,52 +121,16 @@ Os limites de serviço do Outlook são avaliados para cada combinação de ID de
 
 #### <a name="outlook-service-resources"></a>Recursos de serviço do Outlook
 
-Os recursos a seguir são fornecidos pelo serviço do Outlook.
+| API                                                      | Recursos      |
+|------------------------------------------------------------|-----------------|
+| Pesquisar API (visualização)                  | <li>[Item externo (Pesquisa da Microsoft)](/graph/api/resources/externalitem) |
+| API de perfil                                      | <li>[Foto](/graph/api/resources/profilephoto)   |
+| API de Calendário | <li>[event](/graph/api/resources/event) <li> [eventMessage](/graph/api/resources/eventmessage) <li> [calendar](/graph/api/resources/calendar) <li>  [calendarGroup](/graph/api/resources/calendargroup) <li> [outlookCategory](/graph/api/resources/outlookcategory) <li> [attachment](/graph/api/resources/attachment) <li> [place (preview)](/graph/api/resources/place)   |
+| API de Email do Outolook                                      | <li>[message](/graph/api/resources/message) <li>  [message](/graph/api/resources/message) <li> [mailFolder](/graph/api/resources/mailfolder) <li> [mailSearchFolder](/graph/api/resources/mailsearchfolder) <li> [messageRule](/graph/api/resources/messagerule) <li> [outlookCategory](/graph/api/resources/outlookcategory) <li> [attachment](/graph/api/resources/attachment)|
+| API de contatos pessoais | <li>[contato](/graph/api/resources/contact) <li> [contactFolder](/graph/api/resources/contactfolder) <li> [outlookCategory](/graph/api/resources/outlookcategory)|
+| Inteligência social e do local de trabalho | <li>[pessoa](/graph/api/resources/person) |
+| API de tarefas pendentes (visualização) | <li>[outlookTask](/graph/api/resources/outlooktask) <li> [outlookTaskFolder](/graph/api/resources/outlooktaskfolder) <li>[outlookTaskGroup](/graph/api/resources/outlooktaskgroup) <li> [outlookCategory](/graph/api/resources/outlookcategory) <li> [attachment](/graph/api/resources/attachment)|
 
-##### <a name="search-api-resources-preview"></a>Pesquisar recursos da API (visualização)
-
-- [Item externo (Pesquisa da Microsoft)](/graph/api/resources/externalitem?view=graph-rest-beta)
-
-##### <a name="profile-api-resources"></a>Recursos da API de perfil
-
-- [Foto](/graph/api/resources/profilephoto?view=graph-rest-1.0)
-
-##### <a name="calendar-api-resources"></a>Recursos da API do calendário
-
-- [event](/graph/api/resources/event)
-- [eventMessage](/graph/api/resources/eventmessage)
-- [calendar](/graph/api/resources/calendar)
-- [calendarGroup](/graph/api/resources/calendargroup)
-- [outlookCategory](/graph/api/resources/outlookcategory)
-- [attachment](/graph/api/resources/attachment)
-- [place (preview)](/graph/api/resources/place)
-
-##### <a name="mail-api-resources"></a>Recursos da API do email
-
-- [message](/graph/api/resources/message)
-- [mailFolder](/graph/api/resources/mailfolder)
-- [mailSearchFolder](/graph/api/resources/mailsearchfolder)
-- [messageRule](/graph/api/resources/messagerule)
-- [outlookCategory](/graph/api/resources/outlookcategory)
-- [attachment](/graph/api/resources/attachment)
-
-##### <a name="personal-contacts-api-resources"></a>Recursos da API de contatos pessoais
-
-- [contato](/graph/api/resources/contact)
-- [contactFolder](/graph/api/resources/contactfolder)
-- [outlookCategory](/graph/api/resources/outlookcategory)
-
-##### <a name="social-and-workplace-intelligence-resources"></a>Recursos da inteligência social e do local de trabalho 
-
-- [person](/graph/api/resources/person)
-
-##### <a name="to-do-tasks-api-preview-resources"></a>Recursos da API de tarefas pendentes (visualização)
-
-- [outlookTask](/graph/api/resources/outlooktask)
-- [outlookTaskFolder](/graph/api/resources/outlooktaskfolder)
-- [outlookTaskGroup](/graph/api/resources/outlooktaskgroup)
-- [outlookCategory](/graph/api/resources/outlookcategory)
-- [attachment](/graph/api/resources/attachment)
 
 ### <a name="cloud-communication-service-limits"></a>Limites dos serviços de comunicação em nuvem
 
@@ -183,12 +147,13 @@ Os recursos a seguir são fornecidos pelo serviço do Outlook.
 | Taxa de solicitações | 120 solicitações por 1 minuto e 400 por 1 hora | 240 solicitações por 1 minuto e 800 por 1 hora |
 | Solicitações simultâneas | 5 solicitações simultâneas | 20 solicitações simultâneas |
 
-Os limites anteriores se aplicam aos seguintes recursos:  
-onenote, notebook, sectionGroup, onenoteSection, onenotePage, onenoteResource, onenoteOperation
+Os limites anteriores se aplicam aos seguintes recursos:
 
-Você pode encontrar informações adicionais sobre as práticas recomendadas no [limitação da API do OneNote e como evitá-la](https://developer.microsoft.com/pt-BR/office/blogs/onenote-api-throttling-and-how-to-avoid-it/).  
+[!INCLUDE [Onenote throttling documentation](../includes/throttling-onenote.md)]
 
-> **Observação:** os recursos listados acima não retornam um cabeçalho `Retry-After` em respostas `429 Too Many Requests`.
+Você pode encontrar informações adicionais sobre as práticas recomendadas no [limitação da API do OneNote e como evitá-la](https://developer.microsoft.com/en-us/office/blogs/onenote-api-throttling-and-how-to-avoid-it/).
+
+**Observação:** os recursos listados acima não retornam um cabeçalho `Retry-After` em respostas `429 Too Many Requests`.
 
 ### <a name="project-rome-service-limits"></a>Limites de serviços do Project Rome
 
@@ -197,8 +162,11 @@ Você pode encontrar informações adicionais sobre as práticas recomendadas no
 | OBTER          | 400 solicitações a cada 5 minutos e 12000 solicitações por dia |
 | POSTAR, COLOCAR, CORRIGIR, EXCLUIR | 100 solicitações a cada 5 minutos e 8000 solicitações por dia |
 
-Os limites anteriores se aplicam aos seguintes recursos:  
-activityHistoryItem, userActivity
+Os limites anteriores se aplicam aos seguintes recursos:
+
+| <!-- fake header--> |
+|--|
+| <ul> <li> [activityHistoryItem](/graph/api/resources/activityhistoryitem) <li> [userActivity](/graph/api/resources/useractivity) </ul>|
 
 ### <a name="microsoft-teams-service-limits"></a>Limites do serviço do Microsoft Teams
 
@@ -226,50 +194,13 @@ Um máximo 3.000 mensagens por aplicativo por dia podem ser enviadas para um det
 
 Confira também [limites do Microsoft Teams](/graph/api/resources/teams-api-overview#microsoft-teams-limits) e [requisitos de votação](/graph/api/resources/teams-api-overview#polling-requirements).
 
-Os limites anteriores se aplicam aos seguintes recursos:  
-aadUserConversationMember, appCatalogs, changeTrackedEntity, channel, chatMessage, chatMessageHostedContent, conversationMember, offerShiftRequest, openShift, openShiftChangeRequest, schedule, scheduleChangeRequest, schedulingGroup, shift, shiftPreferences, swapShiftsChangeRequest, team, teamsApp, teamsAppDefinition, teamsAppInstallation, teamsAsyncOperation, teamsTab, teamsTemplate, teamwork, timeOff, timeOffReason, timeOffRequest, userSettings, workforceIntegration.
+[!INCLUDE [Teams throttling documentation](../includes/throttling-teams.md)]
 
 ### <a name="identity-and-access-service-limits"></a>Limites do serviço de identidade e acesso
 
-Estes limites de serviço se aplicam às seguintes entidades:
+Os limites de serviço nesta seção se aplicam às seguintes entidades:
 
-- [Objeto de diretório](/graph/api/resources/directoryobject)
-- [Propriedade de extensão](/graph/api/resources/extensionproperty)
-- [Unidade administrativa](/graph/api/resources/administrativeunit)
-- [Aplicação](/graph/api/resources/application)
-- [Atribuição de função da aplicação](/graph/api/resources/approleassignment)
-- [Configuração de autentificação baseada em certificados](/graph/api/resources/certificatebasedauthconfiguration)
-- [Contatos organizacionais](/graph/api/resources/orgcontact)
-- [Dispositivo](/graph/api/resources/device)
-- [Referência sobre o objetivo do parceiro do diretório](/graph/api/resources/directoryobjectpartnerreference)
-- [Função de diretório](/graph/api/resources/directoryrole)
-- [Modelo de função de diretório](/graph/api/resources/directoryroletemplate)
-- [Domínio](/graph/api/resources/domain)
-- [Registro dns domínio](/graph/api/resources/domaindnsrecord)
-- [registro nome dns domínio](/graph/api/resources/domaindnscnamerecord)
-- [Registro ms dns domínio](/graph/api/resources/domaindnsmxrecord)
-- [Registro srv dns domínio](/graph/api/resources/domaindnssrvrecord)
-- [Registro txt dns domínio](/graph/api/resources/domaindnstxtrecord)
-- [Registro indisponível dns domínio](/graph/api/resources/domaindnsunavailablerecord)
-- [Ponto de extremidade](/graph/api/resources/endpoint)
-- [Propriedade de extensão](/graph/api/resources/extensionproperty)
-- [Detalhes da licença](/graph/api/resources/licensedetails)
-- [Grupo](/graph/api/resources/group)
-- [Política de tempo limite baseada na atividade](/graph/api/resources/activitybasedtimeoutpolicy)
-- [Política de mapeamento de declarações](/graph/api/resources/claimsmappingpolicy)
-- [Política de descoberta de realm inicial](/graph/api/resources/homerealmdiscoverypolicy)
-- [Política de emissão de tokens](/graph/api/resources/tokenissuancepolicy)
-- [Política do tempo de vida do token](/graph/api/resources/tokenlifetimepolicy)
-- [Base da política](/graph/api/resources/policybase)
-- [Política de STS](/graph/api/resources/stspolicy)
-- [Contrato](/graph/api/resources/contract)
-- [Entidade de serviço](/graph/api/resources/serviceprincipal)
-- [Sku inscrita](/graph/api/resources/subscribedsku)
-- [Concessão de permissão do OAuth2](/graph/api/resources/oauth2permissiongrant)
-- [Organização](/graph/api/resources/organization)
-- [Usuário](/graph/api/resources/user)
-- [Configuração de grupo](/graph/api/resources/groupsetting)
-- [Modelo de configuração de grupo](/graph/api/resources/groupsettingtemplate)
+[!INCLUDE [Identity and access throttling documentation](../includes/throttling-identity-and-access.md)]
 
 #### <a name="pattern"></a>Padrão
 
@@ -357,7 +288,18 @@ Outros fatores que afetam um custo da solicitação:
   - WriteLimitExceeded - limitando porque o limite para gravação está excedido.
   - ResourceUnitLimitExceeded - Limitando porque o limite para a unidade de recurso alocada foi excedido.
 
-### <a name="information-protection"></a>Proteção de informações
+### <a name="identity-and-access-reports-service-limits"></a>Limites do serviço de relatórios de identidade e acesso
+
+| Tipo de solicitação | Limitar por locatário para todos os aplicativos | Limitar por aplicativo por locatário |
+| ------------ | ----------------------------- | ------------------------ |
+| POST, PUT, DELATE, PATCH | 200 solicitações por 20 segundos | 100 solicitações por 20 segundos |
+| Qualquer | 2000 solicitações por 20 segundos | 1000 solicitações por 20 segundos |
+
+Os limites anteriores se aplicam aos seguintes recursos:
+
+[!INCLUDE [Azure AD identity and access reports throttling documentation](../includes/throttling-aad-reports.md)]
+
+### <a name="information-protection-service-limits"></a>Limites do serviço de proteção de informações
 
 Os seguintes limites se aplicam a qualquer solicitação no `/informationProtection`.
 
@@ -365,8 +307,7 @@ Os seguintes limites se aplicam a qualquer solicitação no `/informationProtect
 |---------------------------|-------------------------------------------------------------|------------------------------------------------------|
 | POST                      | 150 solicitações a cada 15 minutos e 10000 solicitações a cada 24 horas | 1 solicitação a cada 15 minutos e 3 solicitações a cada 24 horas |
 
-Os limites anteriores se aplicam aos seguintes recursos:  
-threatAssessmentRequest, threatAssessmentResult, mailAssessmentRequest, emailFileAssessmentRequest, fileAssessmentRequest, urlAssessmentRequest.
+[!INCLUDE [Information protection throttling documentation](../includes/throttling-information-protection.md)]
 
 ### <a name="identity-protection-and-conditional-access-service-limits"></a>Proteção da identidade e limites do serviço de acesso condicional
 
@@ -374,8 +315,8 @@ threatAssessmentRequest, threatAssessmentResult, mailAssessmentRequest, emailFil
 | ------------ | ------- |
 | Qualquer | 1 solicitação por segundo |
 
-Os limites anteriores aplicam-se aos seguintes recursos:  
-Detecçãoderisco, Usuárioderisco, HistóricodeItemdeUsuárioderisco, NomedoLocal, paísNomedoLocal, ipNomedoLocal, PolíticadeAcessoCondicional.
+[!INCLUDE [Information protection throttling documentation](../includes/throttling-identityprotection-ca.md)]
+
 
 > **Observação:** os recursos listados acima não retornam um cabeçalho `Retry-After` em respostas `429 Too Many Requests`.
 
@@ -388,8 +329,12 @@ Os seguintes limites se aplicam a qualquer pedido em `me/insights` ou `users/{id
 | 10.000 solicitações de API em um período de 10 minutos                  | pontos de extremidade v1.0 e beta |
 | 4 solicitações simultâneas                                      | v1.0 e pontos finais beta   |
 
-Os limites anteriores se aplicam aos seguintes recursos:  
-pessoas, tendências, usedinsight, sharedInsight.
+Os limites anteriores se aplicam aos seguintes recursos:
+
+| <!-- fake header--> |
+|--|
+| <ul> <li> [Pessoas](/graph/api/resources/people) <li> [sharedInsight](/graph/api/resources/sharedinsight) <li> [tendências](/graph/api/resources/trending)  <li> [usedInsight](/graph/api/resources/usedinsight) </ul>|
+
 
 ### <a name="microsoft-graph-reports-service-limits"></a>Limites do serviço de relatórios do Microsoft Graph
 
@@ -402,7 +347,8 @@ Os seguintes limites se aplicam a qualquer solicitação no `/reports`.
 
 Os limites anteriores aplicam-se individualmente a cada relatório de API. Por exemplo, uma solicitação da API do relatório de atividades do usuário do Microsoft Teams e uma solicitação de relatório da API do usuário do Outlook dentro de 10 minutos contará como uma solicitação entre 14 para cada API e não duas solicitações entre 14 para ambas.
 
-Os limites anteriores se aplicam aos seguintes recursos de **relatório**.  
+Os limites anteriores se aplicam a todos os recursos de [relatórios de uso](/graph/api/resources/report).
+
 
 ### <a name="invitation-manager-service-limits"></a>Limites de serviço do gerenciador de convite
 
@@ -429,21 +375,22 @@ Os seguintes limites se aplicam a qualquer solicitação no `/security`.
 | ------------ | ------------------------ |
 | Qualquer          | 455 solicitações a cada 10 segundos |
 
-Os limites acima se aplicam aos seguintes recursos: openTypeExtension, schemaExtension, administrativeUnit, contato, dispositivo, evento, grupo, mensagem, organização, postagem e usuário.
+Os limites anteriores se aplicam aos seguintes recursos:[!INCLUDE [Open and schema extensions throttling documentation](../includes/throttling-extensions.md)]
+
 
 ### <a name="files-and-lists-service-limits"></a>Limites de serviço dos arquivos e listas
 
 Os limites de serviço do OneDrive, OneDrive for Business e SharePoint Online não estão disponíveis. Para mais informações, confira [Por que não é possível saber o limites exatos?](/sharepoint/dev/general-development/how-to-avoid-getting-throttled-or-blocked-in-sharepoint-online#why-cant-you-just-tell-me-the-exact-throttling-limits).
 
-As informações anteriores aplicam-se aos seguintes recursos:  
-baseItem, baseItemVersion, columnDefinition, columnLink, contentType, drive, driveItem, driveItemVersion, fieldValueSet, itemActivity, itemActivityStat, List, listItem, listItemVersion, permission, sharedDriveItem, site e thumbnailSet.
+As informações anteriores aplicam-se aos seguintes recursos:
+
+[!INCLUDE [Files and lists throttling documentation](../includes/throttling-files-and-lists.md)]
 
 ### <a name="tasks-and-plans-service-limits"></a>Limites de serviços de tarefas e planos
 
 Os limites de serviço do Planner não estão disponíveis.
 
-As informações anteriores aplicam-se aos seguintes recursos:  
-planner, plannerAssignedToTaskBoardTaskFormat, plannerBucket, plannerBucketTaskBoardTaskFormat, plannerGroup, plannerPlan, plannerPlanDetails, plannerProgressTaskBoardTaskFormat, plannerTask, plannerTaskDetails, e plannerUser.
+As informações anteriores se aplicam aos seguintes recursos:[!INCLUDE [Tasks and plans throttling documentation](../includes/throttling-tasks-and-plans.md)]
 
 ### <a name="identity-and-access-data-policy-operation-service-limits"></a>Limites de operação de serviços de política de dados de identidade e acesso
 
@@ -452,7 +399,11 @@ planner, plannerAssignedToTaskBoardTaskFormat, plannerBucket, plannerBucketTaskB
 | Postar no `exportPersonalData` | 1.000 solicitações por dia para todos os assuntos e 100 por assunto por dia |
 | Qualquer outra solicitação | 10.000 solicitações por minuto |
 
-Os limites anteriores se aplicam aos seguintes recursos: dataPolicyOperation.
+Os limites anteriores se aplicam aos seguintes recursos:
+
+| <!-- fake header--> |
+|--|
+| <ul> <li> [dataPolicyOperation](/graph/api/resources/datapolicyoperation) </ul>|
 
 > **Observação:** os recursos listados acima não retornam um cabeçalho `Retry-After` nas respostas `429 Too Many Requests`.
 
@@ -479,7 +430,7 @@ Os limites anteriores se aplicam aos seguintes recursos: dataPolicyOperation.
 [!INCLUDE [Intune bundles throttling documentation](../includes/throttling-intune-bundles.md)]
 [!INCLUDE [Intune chromebook sync throttling documentation](../includes/throttling-intune-chromebook-sync.md)]
 [!INCLUDE [Intune company terms throttling documentation](../includes/throttling-intune-company-terms.md)]
-[!INCLUDE [Intune device config V2 throttling documentation](../includes/throttling-intune-device-config-v2.md)]
+[!INCLUDE [Intune device config v2 throttling documentation](../includes/throttling-intune-device-config-v2.md)]
 [!INCLUDE [Intune device configuration throttling documentation](../includes/throttling-intune-device-configuration.md)]
 [!INCLUDE [Intune device enrollment throttling documentation](../includes/throttling-intune-device-enrollment.md)]
 [!INCLUDE [Intune device intent throttling documentation](../includes/throttling-intune-device-intent.md)]
@@ -494,7 +445,6 @@ Os limites anteriores se aplicam aos seguintes recursos: dataPolicyOperation.
 [!INCLUDE [Intune partner integration throttling documentation](../includes/throttling-intune-partner-integration.md)]
 [!INCLUDE [Intune rbac throttling documentation](../includes/throttling-intune-rbac.md)]
 [!INCLUDE [Intune remote assistance throttling documentation](../includes/throttling-intune-remote-assistance.md)]
-[!INCLUDE [Intune reporting throttling documentation](../includes/throttling-intune-reporting.md)]
 [!INCLUDE [Intune telephony throttling documentation](../includes/throttling-intune-telephony.md)]
 [!INCLUDE [Intune TEM throttling documentation](../includes/throttling-intune-tem.md)]
 [!INCLUDE [Intune troubleshooting throttling documentation](../includes/throttling-intune-troubleshooting.md)]
@@ -524,8 +474,10 @@ Os limites a seguir se aplicam às solicitações no serviço de atribuição AP
 |---------------------------|------------------------------|----------------------------|
 | Qualquer         | 500 solicitações a cada 10 segundos   | 1000 solicitações a cada 10 segundos
 |Qualquer          | 15000 solicitações a cada 3600 segundos|30000 solicitações a cada 3600 segundos|
-| GET me/Assignment  | 50 solicitações a cada 10 segundos | 150 solicitações a cada 10 segundos |  
+| GET me/Assignment  | 50 solicitações a cada 10 segundos | 150 solicitações a cada 10 segundos |
 
-Os limites anteriores se aplicam aos seguintes recursos: [educationAssignment](/graph/api/resources/educationassignment?view=graph-rest)
-[educationSubmission](/graph/api/resources/educationsubmission?view=graph-rest)
-[educationResource](/graph/api/resources/educationresource?view=graph-rest)
+Os limites anteriores se aplicam aos seguintes recursos:
+
+| <!-- fake header--> |
+|--|
+| <ul> <li> [educationAssignment](/graph/api/resources/educationassignment) <li> [educationSubmission](/graph/api/resources/educationsubmission) <li> [tendências](/graph/api/resources/trending)  <li> [educationResource](/graph/api/resources/educationresource) </ul>|

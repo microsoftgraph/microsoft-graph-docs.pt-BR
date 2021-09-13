@@ -1,3 +1,12 @@
+---
+ms.localizationpriority: medium
+ms.openlocfilehash: 9a98117bc0021e1f51054f35f8de74f1aeed17f7
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.translationtype: MT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59289502"
+---
 <!-- markdownlint-disable MD002 MD041 -->
 
 Nesta etapa, você criará uma conta do Azure Armazenamento onde Conexão de dados do Microsoft Graph armazenará os dados extraídos do Microsoft 365 para processamento posterior.

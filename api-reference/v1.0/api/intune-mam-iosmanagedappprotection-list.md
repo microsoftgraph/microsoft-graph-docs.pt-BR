@@ -2,15 +2,15 @@
 title: Listar iosManagedAppProtections
 description: Listar propriedades e relações dos objetos iosManagedAppProtection.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: b4cb580742e0315accbd74b71c4a45a109be377c744f5b3e0265bd07ede49268
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: d94695f59ecfcd903dc7cf22432d81cd5505c6b6
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54240837"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59147245"
 ---
 # <a name="list-iosmanagedappprotections"></a>Listar iosManagedAppProtections
 

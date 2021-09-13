@@ -2,15 +2,15 @@
 title: Acessar deviceCompliancePolicyDeviceStateSummary
 description: Leia as propriedades e as relações do objeto deviceCompliancePolicyDeviceStateSummary.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 3308e100238f35a1a29787502247a59141ef3c2366d9956c42f293d2736938ed
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 2e94fa7bb6b6c72f8ec49a0b0423f7efde502fb3
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54247288"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59114264"
 ---
 # <a name="get-devicecompliancepolicydevicestatesummary"></a>Acessar deviceCompliancePolicyDeviceStateSummary
 

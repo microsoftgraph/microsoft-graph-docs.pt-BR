@@ -2,15 +2,15 @@
 title: Excluir contato
 description: Exclui um contato.
 author: kevinbellinger
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 795a3bc5526f3276cc04cae294a886c5966160b5
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: af47601d932781dc14b154396d38a774d0b02445
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52053262"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59147794"
 ---
 # <a name="delete-contact"></a>Excluir contato
 
@@ -86,7 +86,7 @@ DELETE https://graph.microsoft.com/v1.0/me/contacts/{id}
 ---
 
 ##### <a name="response"></a>Resposta
-Veja a seguir um exemplo da resposta. Observação: o objeto de resposta exibido aqui pode ser encurtado para legibilidade.
+Aqui está um exemplo da resposta. Observação: o objeto de resposta mostrado aqui pode ser reduzido para facilitar a leitura.
 <!-- {
   "blockType": "response",
   "truncated": true

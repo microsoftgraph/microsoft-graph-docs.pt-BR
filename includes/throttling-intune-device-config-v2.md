@@ -1,18 +1,18 @@
 ---
 author: davidmu1
-localization_priority: Priority
+ms.localizationpriority: high
 ms.prod: msgraph
 ms.topic: include
-ms.openlocfilehash: 4b47b0875e52e56adade941d96ab3fe59a0ca1ae41a5fba55f11ef7db0db9a6e
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: fbb9c13f74c3bd6ab99179b96d40ccb70b7a2991
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54196587"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59035634"
 ---
 <!-- markdownlint-disable MD041 -->
 <!-- this file is auto-generated don't edit it manually! -->
-#### <a name="intune-device-config-v2-service-limits"></a>Limites de serviço V2 de configuração de dispositivo do Intune
+#### <a name="intune-device-config-v2-service-limits"></a>Limites do serviço de configuração do dispositivo Intune v2
 
 | Tipo de solicitação | Limitar por locatário para todos os aplicativos | Limitar por aplicativo por locatário |
 | ------------ | ----------------------------- | ------------------------ |
@@ -20,4 +20,7 @@ ms.locfileid: "54196587"
 | Qualquer | 2000 solicitações por 20 segundos | 1000 solicitações por 20 segundos |
 
 Os limites anteriores se aplicam aos seguintes recursos:  
-deviceManagementConfigurationCategory, deviceManagementConfigurationChoiceSettingCollectionDefinition, deviceManagementConfigurationChoiceSettingDefinition, deviceManagementConfigurationPolicy, deviceManagementConfigurationPolicyAssignment, deviceManagementConfigurationPolicyTemplate, deviceManagementConfigurationSetting, deviceManagementConfigurationSettingDefinition, deviceManagementConfigurationSettingGroupCollectionDefinition, deviceManagementConfigurationSettingGroupDefinition, deviceManagementConfigurationSettingTemplate, deviceManagementConfigurationSimpleSettingCollectionDefinition, deviceManagementConfigurationSimpleSettingDefinition, deviceManagementReusablePolicySetting.
+
+| <!-- fake header--> | <!-- fake header--> |
+|--|--|
+|<ul> <li> [deviceManagementConfigurationCategory](/graph/api/resources/devicemanagementconfigurationcategory) <li> [deviceManagementConfigurationChoiceSettingCollectionDefinition](/graph/api/resources/devicemanagementconfigurationchoicesettingcollectiondefinition) <li> [deviceManagementConfigurationChoiceSettingDefinition](/graph/api/resources/devicemanagementconfigurationchoicesettingdefinition) <li> [deviceManagementConfigurationPolicy](/graph/api/resources/devicemanagementconfigurationpolicy) <li> [deviceManagementConfigurationPolicyAssignment](/graph/api/resources/devicemanagementconfigurationpolicyassignment) <li> [deviceManagementConfigurationPolicyTemplate](/graph/api/resources/devicemanagementconfigurationpolicytemplate) <li> [deviceManagementConfigurationSetting](/graph/api/resources/devicemanagementconfigurationsetting)  </ul>| <ul><li> [deviceManagementConfigurationSettingDefinition](/graph/api/resources/devicemanagementconfigurationsettingdefinition) <li> [deviceManagementConfigurationSettingGroupCollectionDefinition](/graph/api/resources/devicemanagementconfigurationsettinggroupcollectiondefinition) <li> [deviceManagementConfigurationSettingGroupDefinition](/graph/api/resources/devicemanagementconfigurationsettinggroupdefinition) <li> [deviceManagementConfigurationSettingTemplate](/graph/api/resources/devicemanagementconfigurationsettingtemplate) <li> [deviceManagementConfigurationSimpleSettingCollectionDefinition](/graph/api/resources/devicemanagementconfigurationsimplesettingcollectiondefinition) <li> [deviceManagementConfigurationSimpleSettingDefinition](/graph/api/resources/devicemanagementconfigurationsimplesettingdefinition) <li> [deviceManagementReusablePolicySetting](/graph/api/resources/devicemanagementreusablepolicysetting) </ul>|
