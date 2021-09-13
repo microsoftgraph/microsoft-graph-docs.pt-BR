@@ -1,16 +1,16 @@
 ---
 title: Criar ContactFolder
 description: Crie uma nova contactFolder sob a pasta de contatos padrão do usuário.
-localization_priority: Normal
+ms.localizationpriority: medium
 author: kevinbellinger
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 45f0e9a667747b522f2a3a8831ae9b3b684ad41c
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: 565f0a61749f381e836fef0d2503e14a70c72b73
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52031512"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59099193"
 ---
 # <a name="create-contactfolder"></a>Criar ContactFolder
 
@@ -87,7 +87,7 @@ Content-type: application/json
 
 No corpo da solicitação, forneça uma representação JSON do objeto [contactFolder](../resources/contactfolder.md).
 ### <a name="response"></a>Resposta
-Veja a seguir um exemplo da resposta. Observação: o objeto de resposta exibido aqui pode ser encurtado para legibilidade.
+Aqui está um exemplo da resposta. Observação: o objeto de resposta mostrado aqui pode ser reduzido para facilitar a leitura.
 <!-- {
   "blockType": "response",
   "truncated": true,

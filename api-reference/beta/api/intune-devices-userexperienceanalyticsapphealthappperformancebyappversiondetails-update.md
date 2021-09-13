@@ -2,15 +2,15 @@
 title: Atualizar userExperienceAnalyticsAppHealthAppPerformanceByAppVersionDetails
 description: Atualize as propriedades de um objeto userExperienceAnalyticsAppHealthAppPerformanceByAppVersionDetails.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 49c751e486ead24f62f815664c3acdbb281686dc
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: a7476b37753b0d6afa2bfaa19aac05e7f1202c18
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58784944"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59020718"
 ---
 # <a name="update-userexperienceanalyticsapphealthappperformancebyappversiondetails"></a>Atualizar userExperienceAnalyticsAppHealthAppPerformanceByAppVersionDetails
 
@@ -29,7 +29,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |:---|:---|
 |Delegado (conta corporativa ou de estudante)|DeviceManagementManagedDevices.ReadWrite.All|
 |Delegado (conta pessoal da Microsoft)|Sem suporte.|
-|Application|DeviceManagementManagedDevices.ReadWrite.All|
+|Aplicativo|DeviceManagementManagedDevices.ReadWrite.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- {
@@ -53,13 +53,13 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar [o userE
 
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|id|Cadeia de caracteres|O identificador exclusivo do objeto de desempenho do aplicativo de análise de experiência do usuário.|
+|id|String|O identificador exclusivo do objeto de desempenho do aplicativo de análise de experiência do usuário.|
 |deviceCountWithCrashes|Int32|O número total de dispositivos que relataram falhas de um ou mais aplicativos para este aplicativo e versão. Valores válidos -2147483648 para 2147483647|
-|isMostUsedVersion|Boleano|É a versão do aplicativo a versão mais usada para esse aplicativo.|
-|isLatestUsedVersion|Booliano|É a versão do aplicativo a versão mais recente para esse aplicativo que está em uso.|
+|isMostUsedVersion|Booliano|É a versão do aplicativo a versão mais usada para esse aplicativo.|
+|isLatestUsedVersion|Boleano|É a versão do aplicativo a versão mais recente para esse aplicativo que está em uso.|
 |appName|Cadeia de caracteres|O nome do aplicativo.|
 |appDisplayName|Cadeia de caracteres|O nome amigável do aplicativo.|
-|appPublisher|Cadeia de caracteres|O editor do aplicativo.|
+|appPublisher|String|O editor do aplicativo.|
 |appVersion|Cadeia de caracteres|A versão do aplicativo.|
 |appCrashCount|Int32|O número de falhas para o aplicativo. Valores válidos -2147483648 para 2147483647|
 

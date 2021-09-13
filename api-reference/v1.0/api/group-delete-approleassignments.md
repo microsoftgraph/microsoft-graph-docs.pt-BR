@@ -1,18 +1,18 @@
 ---
-title: Excluir um appRoleAssignment de um grupo
+title: Excluir appRoleAssignment
 description: Exclua um appRoleAssignment que foi concedido a um grupo.
-localization_priority: Normal
+ms.localizationpriority: medium
 doc_type: apiPageType
 ms.prod: groups
 author: psignoret
-ms.openlocfilehash: b1d8898da9b71474d298de5f76b17000f7ef7b8b
-ms.sourcegitcommit: 8ca598ac70647bf4f897361ee90d3aa31d2ecca5
+ms.openlocfilehash: bb42cc48411da9deddce794ffdfcc6c2843df11e
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "51469413"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59114474"
 ---
-# <a name="delete-an-approleassignment-granted-to-a-group"></a>Excluir um appRoleAssignment concedido a um grupo
+# <a name="delete-approleassignment"></a>Excluir appRoleAssignment
 
 Namespace: microsoft.graph
 
@@ -37,7 +37,7 @@ DELETE /groups/{id}/appRoleAssignments/{id}
 ```
 
 > [!NOTE]
-> Como prática prática, recomendamos excluir atribuições de função de aplicativo por meio da relação da entidade de serviço de recursos, em vez da relação do usuário, grupo ou entidade de `appRoleAssignedTo` serviço  `appRoleAssignments` atribuída.
+> Como prática prática, recomendamos excluir atribuições de função de aplicativo usando o método [Delete appRoleAssignedTo](serviceprincipal-delete-approleassignedto.md) que exclui por meio da relação **appRoleAssignedTo** da entidade de serviço de recursos, em vez deste método. 
 
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
 

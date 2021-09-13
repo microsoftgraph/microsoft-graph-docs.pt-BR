@@ -1,16 +1,16 @@
 ---
 title: pendingOperations
 description: O recurso pendingOperations indica que uma ou mais operações que podem afetar o estado do driveItem estão pendentes de conclusão.
-localization_priority: Normal
+ms.localizationpriority: medium
 author: learafa
 ms.prod: files
 doc_type: resourcePageType
-ms.openlocfilehash: 8fac755c6bcce65af03a96b1c13d6186ae3c1f86e975cf9577d0a5e568ebe62a
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 3dd6bccaeadbd98fc28a986f8983c7837a3a8f1d
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54178116"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59117904"
 ---
 # <a name="pendingoperations-resource-type"></a>Tipo de recurso pendingOperations
 

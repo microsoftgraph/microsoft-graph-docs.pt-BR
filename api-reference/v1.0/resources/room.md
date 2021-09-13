@@ -1,16 +1,16 @@
 ---
 title: tipo de recurso de sala
 description: Especifica as propriedades de uma sala em um locatário.
-localization_priority: Normal
+ms.localizationpriority: medium
 author: vrod9429
 ms.prod: outlook
 doc_type: resourcePageType
-ms.openlocfilehash: 051fcfc0f9a5211ae2210eee6c7942d9b7d9efd6b334ea6491a406982e9224a1
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: d676dbcd36760bc14edb38b35f6f93573f03b9b5
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54246595"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59117771"
 ---
 # <a name="room-resource-type"></a>tipo de recurso de sala
 
@@ -32,9 +32,9 @@ Em Exchange Online, cada sala é associada a uma caixa de correio de sala. Deriv
 | Propriedade               | Tipo                                              | Descrição |
 |:-----------------------|:--------------------------------------------------|:--|
 | address                | [physicalAddress](physicaladdress.md)             | O endereço da sala. |
-| audioDeviceName        | Cadeia de caracteres                                            | Especifica o nome do dispositivo de áudio na sala. |
+| audioDeviceName        | String                                            | Especifica o nome do dispositivo de áudio na sala. |
 | bookingType            | [bookingType](#bookingtype-values)                | Tipo de sala. Os valores possíveis `standard` são e `reserved` . |
-| building               | Cadeia de caracteres                                            | Especifica o nome do edifício ou o número de construção em que a sala está. |
+| building               | String                                            | Especifica o nome do edifício ou o número de construção em que a sala está. |
 | capacity               | Int32                                             | Especifica a capacidade da sala. |
 | displayName            | Cadeia de caracteres                                            | O nome associado à sala. |
 | displayDeviceName      | String                                            | Especifica o nome do dispositivo de exibição na sala. |
@@ -42,13 +42,13 @@ Em Exchange Online, cada sala é associada a uma caixa de correio de sala. Deriv
 | floorLabel             | Cadeia de caracteres                                            | Especifica um rótulo descritivo para o piso, por exemplo, P. |
 | floorNumber            | Int32                                             | Especifica o número do piso em que a sala está. |
 | geoCoordinates         | [outlookGeoCoordinates](outlookgeocoordinates.md) | Especifica o local da sala em latitude, longitude e, opcionalmente, coordenadas de altitude. |
-| id                     | Cadeia de caracteres                                            | Identificador exclusivo da sala. Somente leitura. |
+| id                     | String                                            | Identificador exclusivo da sala. Somente leitura. |
 | isWheelChairAccessible | Booliano                                           | Especifica se a sala está acessível para cadeira de rodas. |
 | rótulo                  | Cadeia de caracteres                                            | Especifica um rótulo descritivo para a sala, por exemplo, um número ou nome. |
 | nickname               | Cadeia de caracteres                                            | Especifica um apelido para a sala, por exemplo, "conf room". |
 | phone                  | Cadeia de caracteres                                            | O número de telefone da sala. |
-| categorias                   | Coleção de cadeias de caracteres                                 | Especifica recursos adicionais da sala, por exemplo, detalhes como o tipo de exibição ou tipo de móvel. |
-| videoDeviceName        | Cadeia de caracteres                                            | Especifica o nome do dispositivo de vídeo na sala. |
+| categorias                   | Coleção String                                 | Especifica recursos adicionais da sala, por exemplo, detalhes como o tipo de exibição ou tipo de móvel. |
+| videoDeviceName        | String                                            | Especifica o nome do dispositivo de vídeo na sala. |
 
 ### <a name="bookingtype-values"></a>valores bookingType
 

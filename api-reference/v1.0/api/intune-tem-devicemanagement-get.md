@@ -2,15 +2,15 @@
 title: Acessar deviceManagement
 description: Leia as propriedades e as relações do objeto deviceManagement.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 279ccf6858647ce353997865f46edb39cd763f28e089ea6eb523a1a9536d1759
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 9511beb158569a9dfaaac422b324aeee3a2309c9
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54238346"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59099445"
 ---
 # <a name="get-devicemanagement"></a>Acessar deviceManagement
 

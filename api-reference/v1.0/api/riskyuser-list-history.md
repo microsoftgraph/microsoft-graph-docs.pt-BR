@@ -2,15 +2,15 @@
 title: Histórico de listas
 description: Obter os riskyUserHistoryItems da propriedade de navegação histórico.
 author: cloudhandler
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: 9da2c0f309ef4cea20eac95799c04aa5fb02e1644c764d9f4885d41c30731aeb
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: fc45d2de702b279f19f587bc74588f876870ff8b
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54202627"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59119034"
 ---
 # <a name="list-history"></a>Histórico de listas
 Namespace: microsoft.graph

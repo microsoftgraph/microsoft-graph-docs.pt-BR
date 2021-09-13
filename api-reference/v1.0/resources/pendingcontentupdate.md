@@ -1,16 +1,16 @@
 ---
 title: pendingContentUpdate
 description: O recurso pendingContentUpdate indica que uma operação que pode afetar o conteúdo binário do driveItem está pendente de conclusão.
-localization_priority: Normal
+ms.localizationpriority: medium
 author: learafa
 ms.prod: files
 doc_type: resourcePageType
-ms.openlocfilehash: 917a952ba9694178c17b3ef6ccb89780790528860f227a3a5f02f5cb5f44cf5e
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: d472ba41c26885bdefad13f35ea66f7b4e974d6a
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54178133"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59117929"
 ---
 # <a name="pendingcontentupdate-resource-type"></a>Tipo de recurso pendingContentUpdate
 

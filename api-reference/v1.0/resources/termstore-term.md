@@ -2,15 +2,15 @@
 title: tipo de recurso term
 description: Define uma entidade de termo em um armazenamento de termos.
 author: vishriv
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: taxonomy
 doc_type: resourcePageType
-ms.openlocfilehash: 5a8c429a20ed533c6de8fb11bb13aa877e2c41be
-ms.sourcegitcommit: 9b8abc940a68dac6ee5da105ca29800cb59775f6
+ms.openlocfilehash: 570a4a365b86a48859608798ba3eb5be9958cd1e
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/25/2021
-ms.locfileid: "58514853"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59084031"
 ---
 # <a name="term-resource-type"></a>tipo de recurso term
 
@@ -23,13 +23,13 @@ Herda da [entidade](../resources/entity.md).
 ## <a name="methods"></a>Métodos
 |Método|Tipo de retorno|Descrição|
 |:---|:---|:---|
-|[Listar filhos](../api/termstore-term-list-children.md)|[coleção microsoft.graph.termStore.term](../resources/termstore-term.md)|Obter os filhos de primeiro nível de um termo em um armazenamento de [termos.]|
+|[Filhos de lista](../api/termstore-term-list-children.md)|[coleção microsoft.graph.termStore.term](../resources/termstore-term.md)|Obter os filhos de primeiro nível de um termo em um armazenamento de [termos.]|
 |[Listar relações](../api/termstore-term-list-relations.md)|[coleção microsoft.graph.termStore.relation](../resources/termstore-relation.md)|Obter as relações de um termo em um armazenamento de [termos.]|
 |[Criar relação](../api/termstore-relation-post.md)|[microsoft.graph.termStore.relation](../resources/termstore-relation.md)|Crie uma nova relação para um termo ou [um conjunto] em um armazenamento de [termos.]|
 |[Criar termo](../api/termstore-term-post.md)|[microsoft.graph.termStore.term](../resources/termstore-term.md)|Criar um novo objeto de termo em um armazenamento de [termos.]|
 |[Obter termo](../api/termstore-term-get.md)|[microsoft.graph.termStore.term](../resources/termstore-term.md)|Leia as propriedades e as relações de um objeto term em um armazenamento de [termos.]|
 |[Termo de atualização](../api/termstore-term-update.md)|[microsoft.graph.termStore.term](../resources/termstore-term.md)|Atualize as propriedades de um objeto term em um armazenamento de [termos.]|
-|[Excluir termo](../api/termstore-term-delete.md)|Nenhuma|Excluir um objeto term em um armazenamento de [termos.]|
+|[Excluir termo](../api/termstore-term-delete.md)|Nenhum(a)|Excluir um objeto term em um armazenamento de [termos.]|
 
 ## <a name="properties"></a>Propriedades
 |Propriedade|Tipo|Descrição|
@@ -82,7 +82,7 @@ Veja a seguir uma representação JSON do recurso.
 }
 ```
 
-[store]: ../resources/termstore-store.md
+[loja]: ../resources/termstore-store.md
 [set]: ../resources/termstore-set.md
 [term]: ../resources/termstore-term.md
 [group]: ../resources/termstore-group.md

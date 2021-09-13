@@ -2,15 +2,15 @@
 title: Tipo de recurso settingSource
 description: Ainda não documentado
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: efa48a2df096512ba8832a28615bb9f189f227f267b6a99b72be1652df8b800c
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: b6c832f0fb8d55f58318f36c64dfef836b17ee64
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54130188"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59067210"
 ---
 # <a name="settingsource-resource-type"></a>Tipo de recurso settingSource
 
@@ -23,7 +23,7 @@ Ainda não documentado
 ## <a name="properties"></a>Propriedades
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|id|Cadeia de caracteres|Ainda não documentado|
+|id|String|Ainda não documentado|
 |displayName|Cadeia de caracteres|Ainda não documentado|
 |sourceType|[settingSourceType](../resources/intune-deviceconfig-settingsourcetype.md)|Ainda não documentado. Os valores possíveis são: `deviceConfiguration`, `deviceIntent`.|
 

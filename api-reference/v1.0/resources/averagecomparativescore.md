@@ -1,16 +1,16 @@
 ---
 title: Tipo de recurso averageComparativeScore
 description: Contém várias pontuações diferentes com base em escopos diferentes.
-localization_priority: Normal
+ms.localizationpriority: medium
 author: preetikr
 ms.prod: ''
 doc_type: resourcePageType
-ms.openlocfilehash: 2041a366fcf37ff8a850fb8d6fd41e9c3fd6002a17916d41718588674a30a3e6
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: eb78b045105725d8151d229525396fd205cd427f
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54147018"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59089848"
 ---
 #  <a name="averagecomparativescore-resource-type"></a>Tipo de recurso averageComparativeScore
 

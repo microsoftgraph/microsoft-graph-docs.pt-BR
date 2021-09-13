@@ -2,15 +2,15 @@
 author: daspek
 title: Tipo de recurso shareAction
 description: O objeto shareAction fornece informações sobre a quem um item foi compartilhado em uma ação de compartilhamento.
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: sharepoint
 doc_type: resourcePageType
-ms.openlocfilehash: b9d252df884e90d7351edb9544a354d88fbc78baebcc5926686b016c38e58f37
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 65fc9fb0c9eb5aa71bc854f0fcfa25a6574898e0
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54251775"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59126636"
 ---
 # <a name="shareaction-resource-type"></a>Tipo de recurso shareAction
 

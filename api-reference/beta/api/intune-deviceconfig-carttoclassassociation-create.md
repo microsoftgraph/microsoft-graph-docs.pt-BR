@@ -2,15 +2,15 @@
 title: Criar cartToClassAssociation
 description: Crie um novo objeto cartToClassAssociation.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 2782ae7fc30dc5ae85801f500c7837556faec4ed
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 864b863bea71c4a1dc7d5d9876b5125b0bf2c334
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58785364"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59031156"
 ---
 # <a name="create-carttoclassassociation"></a>Criar cartToClassAssociation
 
@@ -29,7 +29,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |:---|:---|
 |Delegado (conta corporativa ou de estudante)|DeviceManagementConfiguration.ReadWrite.All|
 |Delegado (conta pessoal da Microsoft)|Sem suporte.|
-|Application|DeviceManagementConfiguration.ReadWrite.All|
+|Aplicativo|DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- {
@@ -53,14 +53,14 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar o cartTo
 
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|id|Cadeia de caracteres|Chave da entidade.|
+|id|String|Chave da entidade.|
 |createdDateTime|DateTimeOffset|DateTime em que o objeto foi criado.|
 |lastModifiedDateTime|DateTimeOffset|DateTime da última modificação do objeto.|
 |versão|Int32|Versão do CartToClassAssociation.|
-|displayName|Cadeia de caracteres|O administrador forneceu o nome da Configuração do dispositivo.|
-|descrição|Cadeia de caracteres|O administrador forneceu a descrição do CartToClassAssociation.|
-|deviceCartIds|Coleção de cadeias de caracteres|Identificadores de carrinhos de dispositivo a serem associados a classes.|
-|classroomIds|Coleção de cadeias de caracteres|Identificadores de salas de aula a serem associadas a carrinhos de dispositivo.|
+|displayName|String|O administrador forneceu o nome da Configuração do dispositivo.|
+|description|Cadeia de caracteres|O administrador forneceu a descrição do CartToClassAssociation.|
+|deviceCartIds|Conjunto de cadeias de caracteres|Identificadores de carrinhos de dispositivo a serem associados a classes.|
+|classroomIds|Conjunto de cadeias de caracteres|Identificadores de salas de aula a serem associadas a carrinhos de dispositivo.|
 
 
 

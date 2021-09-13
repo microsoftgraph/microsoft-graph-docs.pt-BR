@@ -1,16 +1,16 @@
 ---
 title: Tipo de recurso orgContact
 description: Representa um contato organizacional
-localization_priority: Normal
+ms.localizationpriority: medium
 author: dkershaw10
 ms.prod: directory-management
 doc_type: resourcePageType
-ms.openlocfilehash: 95fc44a7f763fece03450ba18246ff074038e262243c1a5f2833508cebd88714
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: b577eb9d1f722e1612f683db63ba4c7f26e64f6c
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54159943"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59094132"
 ---
 # <a name="orgcontact-resource-type"></a>Tipo de recurso orgContact
 
@@ -33,8 +33,8 @@ Esse recurso tem suporte para o uso da [consulta delta](/graph/delta-query-overv
 | [Listar memberOf](../api/orgcontact-list-memberof.md)                     | Coleção [directoryObject](directoryobject.md) | Listar os grupos de que um contato organizacional é membro.                                                                   |
 | [Listar transitiveMemberOf](../api/orgcontact-list-transitivememberof.md) | Coleção [directoryObject](directoryobject.md) | Listar os grupos dos quais um contato organizacional é membro, incluindo grupos nos quais o contato organizacional está aninhado. |
 | [checkMemberGroups](../api/orgcontact-checkmembergroups.md)             | Coleção de cadeias de caracteres                                | Verifique se há associação ao grupo.                                                                                                 |
-| [getMemberGroups](../api/orgcontact-getmembergroups.md)                 | String collection                                | Retorne todos os grupos dos que o contato organizacional especificado é membro.                                             |
-| [getMemberObjects](../api/orgcontact-getmemberobjects.md)               | Coleção de cadeias de caracteres                                | Retorna uma lista de directoryObjects do qual o contato organizacional é membro.                                               |
+| [getMemberGroups](../api/orgcontact-getmembergroups.md)                 | Coleção de cadeias de caracteres                                | Retorne todos os grupos dos que o contato organizacional especificado é membro.                                             |
+| [getMemberObjects](../api/orgcontact-getmemberobjects.md)               | Coleção String                                | Retorna uma lista de directoryObjects do qual o contato organizacional é membro.                                               |
 
 ## <a name="properties"></a>Propriedades
 
@@ -45,7 +45,7 @@ Esse recurso tem suporte para o uso da [consulta delta](/graph/delta-query-overv
 |:-----------------------------|:-------------------------------------------------------------------------|:-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | addresses                    | [Coleção physicalOfficeAddress](physicalofficeaddress.md)             | Endereços postais para esse contato organizacional. Por enquanto, um contato só pode ter um endereço físico.                                                                                                                                                                                                                            |
 | companyName                  | String                                                                   | Nome da empresa à que esse contato organizacional pertence.  Suporta `$filter` (`eq`, `ne`, `NOT`, `ge`, `le`, `in`, `startsWith`).                                                                                                                                                                                          |
-| department                   | String                                                                   | O nome do departamento no qual o contato funciona.  Suporta `$filter` (`eq`, `ne`, `NOT`, `ge`, `le`, `in`, `startsWith`).                                                                                                                                                                                                   |
+| departamento                   | String                                                                   | O nome do departamento no qual o contato funciona.  Suporta `$filter` (`eq`, `ne`, `NOT`, `ge`, `le`, `in`, `startsWith`).                                                                                                                                                                                                   |
 | displayName                  | String                                                                   | Nome de exibição para esse contato organizacional. Suporta `$filter` (`eq`, `ne`, `NOT`, `ge`, `le`, `in`, `startsWith`), `$search`, e `$orderBy`.                                                                                                                                                                                   |
 | givenName                    | Cadeia de caracteres                                                                   | Primeiro nome para esse contato organizacional. Suporta `$filter` (`eq`, `ne`, `NOT`, `ge`, `le`, `in`, `startsWith`).                                                                                                                                                                                                                |
 | id                           | String                                                                   | Identificador exclusivo para esse contato organizacional.  Suporta `$filter` (`eq`, `ne`, `NOT`, `in`).                                                                                                                                                                                                                                  |
@@ -54,9 +54,9 @@ Esse recurso tem suporte para o uso da [consulta delta](/graph/delta-query-overv
 | mailNickname                 | String                                                                   | Alias de email (parte do endereço de email pré-pendente do símbolo @) para esse contato organizacional. Suporta `$filter` (`eq`, `ne`, `NOT`, `ge`, `le`, `in`, `startsWith`).                                                                                                                                                           |
 | onPremisesLastSyncDateTime   | DateTimeOffset                                                           | Data e hora em que esse contato organizacional foi sincronizado pela última vez do AD local. Essas informações de data e hora usam o formato ISO 8601 e estão sempre em horário UTC. Por exemplo, meia-noite UTC em 1 de janeiro de 2014 é `2014-01-01T00:00:00Z`. Suporta `$filter` (`eq`, `ne`, `NOT`, `ge`, `le`, `in`).                             |
 | onPremisesProvisioningErrors | coleção [OnPremisesProvisioningError](onpremisesprovisioningerror.md) | Lista de erros de provisionamento de sincronização para esse contato organizacional. Suporta `$filter` (`eq`, `NOT`).                                                                                                                                                                                                                 |
-| onPremisesSyncEnabled        | Booliano                                                                  | `true`se esse objeto for sincronizado de um diretório local; se esse objeto foi originalmente sincronizado de um diretório local, mas não está mais sincronizado e agora é mestre `false` em Exchange; `null` se esse objeto nunca tiver sido sincronizado de um diretório local (padrão). Suporta `$filter` (`eq`, `ne`, `NOT`, `in`). |
+| onPremisesSyncEnabled        | Boolean                                                                  | `true`se esse objeto for sincronizado de um diretório local; se esse objeto foi originalmente sincronizado de um diretório local, mas não está mais sincronizado e agora é mestre `false` em Exchange; `null` se esse objeto nunca tiver sido sincronizado de um diretório local (padrão). Suporta `$filter` (`eq`, `ne`, `NOT`, `in`). |
 | telefones                       | Coleção [phone](phone.md)                                             | Lista de telefones para esse contato organizacional. Telefone tipos podem ser móveis, comerciais e businessFax. Somente um de cada tipo pode estar presente na coleção.                                                                                                                                                                 |
-| proxyAddresses               | String collection                                                        | Por exemplo: "SMTP: bob@contoso.com", "smtp: bob@sales.contoso.com". O operador **any** é obrigatório para expressões de filtro em propriedades de vários valores. Suporta `$filter` (`eq`, `NOT`, `ge`, `le`, `startsWith`).                                                                                                               |
+| proxyAddresses               | Coleção de cadeias de caracteres                                                        | Por exemplo: "SMTP: bob@contoso.com", "smtp: bob@sales.contoso.com". O operador **any** é obrigatório para expressões de filtro em propriedades de vários valores. Suporta `$filter` (`eq`, `NOT`, `ge`, `le`, `startsWith`).                                                                                                               |
 | surname                      | Cadeia de caracteres                                                                   | Sobrenome para esse contato organizacional. Suporta `$filter` (`eq`, `ne`, `NOT`, `ge`, `le`, `in`, `startsWith`).                                                                                                                                                                                                                 |
 
 ## <a name="relationships"></a>Relações

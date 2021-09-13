@@ -1,16 +1,16 @@
 ---
 title: Listar mensagens do canal
 description: 'Recupere a lista de mensagens (sem as respostas) em um canal de equipe. Para obter as respostas de uma mensagem, chame as respostas da mensagem da lista ou a API de resposta da mensagem recebida. '
-localization_priority: Priority
+ms.localizationpriority: high
 author: RamjotSingh
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 44927136999ed891eb281932f58b99624ced2800
-ms.sourcegitcommit: f99dc2b6c8b4cb6f9f74cd780dccc47a2bccfaa6
+ms.openlocfilehash: 795e0dbac2165b182e188ff442e6cc77ec76243a
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/27/2021
-ms.locfileid: "58667924"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59038388"
 ---
 # <a name="list-channel-messages"></a>Listar mensagens do canal
 

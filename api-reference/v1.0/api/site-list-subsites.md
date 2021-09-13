@@ -2,16 +2,16 @@
 author: JeremyKelley
 ms.date: 09/10/2017
 title: Listar os subsites de um site do SharePoint
-localization_priority: Priority
+ms.localizationpriority: high
 ms.prod: sharepoint
 description: Obtém uma coleção de subsites definidos para um site.
 doc_type: apiPageType
-ms.openlocfilehash: f4317dd8162d23579838d9b6d0f18b18e1fbae4a
-ms.sourcegitcommit: d014f72cf2cd130bedb02651092c0be12967b679
+ms.openlocfilehash: 929b734c71d391e9ef557001c0f944a31e2acf0b
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "50473683"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59037072"
 ---
 # <a name="enumerate-subsites"></a>Enumerar subsites
 
@@ -28,7 +28,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
 |:--------------------|:---------------------------------------------------------|
 |Delegado (conta corporativa ou de estudante) | Sites.Read.All, Sites.ReadWrite.All    |
-|Delegado (conta pessoal da Microsoft) | Sem suporte.    |
+|Delegada (conta pessoal da Microsoft) | Sem suporte.    |
 |Aplicativo | Sites.Read.All, Sites.ReadWrite.All |
 
 ## <a name="http-request"></a>Solicitação HTTP

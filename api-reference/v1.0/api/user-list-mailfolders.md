@@ -2,15 +2,15 @@
 title: Listar mailFolders
 description: 'Obter o conjunto de pastas de email sob a pasta raiz do usuário conectado. '
 author: abheek-das
-localization_priority: Priority
+ms.localizationpriority: high
 doc_type: apiPageType
 ms.prod: outlook
-ms.openlocfilehash: 2f6d8a749cd01f921f201657fd047a90642e4fe9
-ms.sourcegitcommit: 7b8ad226dc9dfee61b8c3d32892534855dad3fa0
+ms.openlocfilehash: 9a0198a2e071d64680b2f46ffa9cbcfcdbc5aa48
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/26/2021
-ms.locfileid: "52666196"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59130010"
 ---
 # <a name="list-mailfolders"></a>Listar mailFolders
 

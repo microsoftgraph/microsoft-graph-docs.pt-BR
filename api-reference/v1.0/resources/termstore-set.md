@@ -2,15 +2,15 @@
 title: definir tipo de recurso
 description: Representa um conjunto em um armazenamento de termos.
 author: vishriv
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: taxonomy
 doc_type: resourcePageType
-ms.openlocfilehash: d56bc436dca1c645d7e5d24face75a9bf5acd957
-ms.sourcegitcommit: 9b8abc940a68dac6ee5da105ca29800cb59775f6
+ms.openlocfilehash: 70e3aa48231c6efd28dd9577b8709ce86fcb62ae
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/25/2021
-ms.locfileid: "58514855"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59128015"
 ---
 # <a name="set-resource-type"></a>definir tipo de recurso
 
@@ -29,14 +29,14 @@ Herda da [entidade](../resources/entity.md).
 |[Obter conjunto](../api/termstore-set-get.md)|[microsoft.graph.termStore.set](../resources/termstore-set.md)| Obter um objeto set em um armazenamento de [termos.]|
 |[Obter termo](../api/termstore-term-get.md)|[microsoft.graph.termStore.term](../resources/termstore-term.md)| Obter um [objeto term] em um armazenamento de [termos.]|
 |[Conjunto de atualizações](../api/termstore-set-update.md)|[microsoft.graph.termStore.set](../resources/termstore-set.md)|Atualize as propriedades de um objeto set em um armazenamento de [termos.]|
-|[Excluir conjunto](../api/termstore-set-delete.md)|Nenhuma|Exclui um objeto set em um armazenamento de [termos.]|
+|[Excluir conjunto](../api/termstore-set-delete.md)|Nenhum(a)|Exclui um objeto set em um armazenamento de [termos.]|
 
 ## <a name="properties"></a>Propriedades
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
 |createdDateTime|DateTimeOffset|Data e hora da criação do conjunto. Somente leitura.|
 |description|Cadeia de caracteres|Descrição que fornece detalhes sobre o uso do termo.|
-|id|Cadeia de caracteres|Identificador exclusivo. Somente leitura.|
+|id|String|Identificador exclusivo. Somente leitura.|
 |localizedNames|[coleção microsoft.graph.termStore.localizedName](../resources/termstore-localizedname.md)|Nome do conjunto para cada languageTag.|
 |properties|[coleção microsoft.graph.keyValue](../resources/keyvalue.md)|Propriedades personalizadas para o conjunto.|
 
@@ -83,7 +83,7 @@ Veja a seguir uma representação JSON do recurso.
 [microsoft.graph.termStore.relation]: termstore-relation.md
 [microsoft.graph.termStore.store]: termstore-store.md
 [microsoft.graph.termStore.localizedName]: termstore-localizedname.md
-[store]: ../resources/termstore-store.md
+[loja]: ../resources/termstore-store.md
 [group]: ../resources/termstore-group.md
 [set]: ../resources/termstore-set.md
 [term]: ../resources/termstore-term.md

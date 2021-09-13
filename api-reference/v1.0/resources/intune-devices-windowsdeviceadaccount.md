@@ -2,15 +2,15 @@
 title: Tipo de recurso windowsDeviceADAccount
 description: Ainda não documentado
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 422f8aa2099c04fa46ca0543fec1c6b11d2c660ce04ed8002d0eb308c5ddedbd
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 0cb3f8291540be00b7704ccf487ec2d7bfd564bd
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54243410"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59019318"
 ---
 # <a name="windowsdeviceadaccount-resource-type"></a>Tipo de recurso windowsDeviceADAccount
 

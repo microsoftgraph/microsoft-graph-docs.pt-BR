@@ -2,15 +2,15 @@
 title: 'serviceUpdateMessage: archive'
 description: Arquivar uma lista de mensagens de atualização de serviço para o usuário inscrevedo.
 author: payiAzure
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: service-communications
 doc_type: apiPageType
-ms.openlocfilehash: 9a817d5c01164be4431ebf29a0c88c906ed2c922
-ms.sourcegitcommit: 0116750a01323bc9bedd192d4a780edbe7ce0fdc
+ms.openlocfilehash: ad06decb25df1725831c267e4a3938d8a23b0c08
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58265334"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59019486"
 ---
 # <a name="serviceupdatemessage-archive"></a>serviceUpdateMessage: archive
 Namespace: microsoft.graph
@@ -49,7 +49,7 @@ A tabela a seguir mostra os parâmetros que podem ser usados com esta ação.
 
 |Parâmetro|Tipo|Descrição|
 |:---|:---|:---|
-|messageIds|String collection|Lista de IDs de mensagens para arquivar.|
+|messageIds|Coleção String|Lista de IDs de mensagens para arquivar.|
 
 ## <a name="response"></a>Resposta
 

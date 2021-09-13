@@ -1,16 +1,16 @@
 ---
 title: Listar calendarGroups
 description: Obter os grupos de calendários do usuário.
-localization_priority: Normal
+ms.localizationpriority: medium
 author: harini84
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 908406b612b97bc554815ad79928a00af7a59af9
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: dde0ab65359822d7a7a9b41d7a3b3a0aa9aae598
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52049391"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59021831"
 ---
 # <a name="list-calendargroups"></a>Listar calendarGroups
 
@@ -77,7 +77,7 @@ GET https://graph.microsoft.com/v1.0/me/calendarGroups
 ---
 
 ##### <a name="response"></a>Resposta
-Veja a seguir um exemplo da resposta. Observação: o objeto de resposta exibido aqui pode ser encurtado para legibilidade.
+Aqui está um exemplo da resposta. Observação: o objeto de resposta mostrado aqui pode ser reduzido para facilitar a leitura.
 <!-- {
   "blockType": "response",
   "truncated": true,

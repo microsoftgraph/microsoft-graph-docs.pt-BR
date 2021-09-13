@@ -2,15 +2,15 @@
 title: tipo de número windowsUserAccountControlSettings
 description: Valores possíveis para Windows configurações de controle de conta de usuário.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: df280f5f5aafeccaa13a0f9ae639b233a8e3749f8e20036bb12a6704aa205e19
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 4414bc5fdb6d6febd2d38b076a50afd2cecfe832
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54130160"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59148316"
 ---
 # <a name="windowsuseraccountcontrolsettings-enum-type"></a>tipo de número windowsUserAccountControlSettings
 

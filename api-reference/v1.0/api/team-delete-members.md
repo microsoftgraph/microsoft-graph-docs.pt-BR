@@ -2,15 +2,15 @@
 title: Remover membro da equipe
 description: Remover um conversationMember de uma equipe.
 author: nkramer
-localization_priority: Priority
+ms.localizationpriority: high
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: efe094094ee8777d1590a86bbbc6bbb9bfb6abd9
-ms.sourcegitcommit: eacd2a6e46c19dd3cd8519592b1668fabe14d85d
+ms.openlocfilehash: 276683d3916d6c49ddc646a3b603fffd8ce0df2d
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "49872237"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59084913"
 ---
 # <a name="remove-member-from-team"></a>Remover membro da equipe
 Namespace: microsoft.graph

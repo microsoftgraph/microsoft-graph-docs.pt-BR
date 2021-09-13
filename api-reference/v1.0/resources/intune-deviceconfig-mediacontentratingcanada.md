@@ -2,15 +2,15 @@
 title: Tipo de recurso mediaContentRatingCanada
 description: Ainda não documentado
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: a29ca4f3aeadf46fb0bbe17cf72b96ca8df7d991e19ad58bd8337bec94596360
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 25b5f33e75f26936eaa130697853a84cd6f6a5e0
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54231632"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59128218"
 ---
 # <a name="mediacontentratingcanada-resource-type"></a>Tipo de recurso mediaContentRatingCanada
 

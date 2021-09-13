@@ -2,15 +2,15 @@
 title: tipo de recurso de armazenamento
 description: Representa um armazenamento de termos de taxonomia.
 author: vishriv
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: taxonomy
 doc_type: resourcePageType
-ms.openlocfilehash: 840e22fc3031787cbc550f0ee0e32d5e6243bed9
-ms.sourcegitcommit: 9b8abc940a68dac6ee5da105ca29800cb59775f6
+ms.openlocfilehash: c94c0edb6589bd467676ac42294ead8416e829df
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/25/2021
-ms.locfileid: "58514854"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59084038"
 ---
 # <a name="store-resource-type"></a>tipo de recurso de armazenamento
 
@@ -32,7 +32,7 @@ Herda da [entidade](../resources/entity.md).
 |:---|:---|:---|
 |defaultLanguageTag | Cadeia de caracteres | Idioma padrão do armazenamento de termos.|
 |id|Cadeia de caracteres | Identificador exclusivo do armazenamento de termos. Somente leitura.|
-|languageTags | String collection | Lista de idiomas para o armazenamento de termos.|
+|languageTags | Coleção String | Lista de idiomas para o armazenamento de termos.|
 
 ## <a name="relationships"></a>Relações
 |Relação|Tipo|Descrição|

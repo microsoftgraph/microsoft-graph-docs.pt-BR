@@ -2,15 +2,15 @@
 title: Tipo de recurso mediaContentRatingIreland
 description: Ainda não documentado
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 67eeb0f0f4be456b5c4c56df1e84a428e72bf7effe96290171c47ead7135df19
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 2b6be6e0a60f56ec5441e31687cced78b76a8ec6
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54192464"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59148330"
 ---
 # <a name="mediacontentratingireland-resource-type"></a>Tipo de recurso mediaContentRatingIreland
 

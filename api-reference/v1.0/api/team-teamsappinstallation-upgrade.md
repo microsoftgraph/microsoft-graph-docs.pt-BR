@@ -2,15 +2,15 @@
 title: 'teamsAppInstallation na equipe: atualização'
 description: Atualizar uma instalação de aplicativo em uma equipe
 author: akjo
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 4c3df922e9fc15238bb5531fc38a935f613b1c98
-ms.sourcegitcommit: 456ec9510807d05623c0ed1dd049c9676f53f56b
+ms.openlocfilehash: 6e3be0833e58f046efcd6460b64aa3a5a702d937
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/22/2021
-ms.locfileid: "53060025"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59109903"
 ---
 # <a name="teamsappinstallation-in-team-upgrade"></a>teamsAppInstallation na equipe: atualização
 

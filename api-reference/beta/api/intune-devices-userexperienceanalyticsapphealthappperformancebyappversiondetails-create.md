@@ -2,15 +2,15 @@
 title: Criar userExperienceAnalyticsAppHealthAppPerformanceByAppVersionDetails
 description: Crie um novo objeto userExperienceAnalyticsAppHealthAppPerformanceByAppVersionDetails.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 7c7582dbb669bacd7bd6e5d11d8b3c1289dfcffb
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: abbb292a72c5767cbbb7cb347079f036687768dd
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58780520"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59027768"
 ---
 # <a name="create-userexperienceanalyticsapphealthappperformancebyappversiondetails"></a>Criar userExperienceAnalyticsAppHealthAppPerformanceByAppVersionDetails
 
@@ -29,7 +29,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |:---|:---|
 |Delegado (conta corporativa ou de estudante)|DeviceManagementManagedDevices.ReadWrite.All|
 |Delegado (conta pessoal da Microsoft)|Sem suporte.|
-|Application|DeviceManagementManagedDevices.ReadWrite.All|
+|Aplicativo|DeviceManagementManagedDevices.ReadWrite.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- {
@@ -53,13 +53,13 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar o userEx
 
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|id|Cadeia de caracteres|O identificador exclusivo do objeto de desempenho do aplicativo de análise de experiência do usuário.|
+|id|String|O identificador exclusivo do objeto de desempenho do aplicativo de análise de experiência do usuário.|
 |deviceCountWithCrashes|Int32|O número total de dispositivos que relataram falhas de um ou mais aplicativos para este aplicativo e versão. Valores válidos -2147483648 para 2147483647|
-|isMostUsedVersion|Boleano|É a versão do aplicativo a versão mais usada para esse aplicativo.|
-|isLatestUsedVersion|Booliano|É a versão do aplicativo a versão mais recente para esse aplicativo que está em uso.|
+|isMostUsedVersion|Booliano|É a versão do aplicativo a versão mais usada para esse aplicativo.|
+|isLatestUsedVersion|Boleano|É a versão do aplicativo a versão mais recente para esse aplicativo que está em uso.|
 |appName|Cadeia de caracteres|O nome do aplicativo.|
 |appDisplayName|Cadeia de caracteres|O nome amigável do aplicativo.|
-|appPublisher|Cadeia de caracteres|O editor do aplicativo.|
+|appPublisher|String|O editor do aplicativo.|
 |appVersion|Cadeia de caracteres|A versão do aplicativo.|
 |appCrashCount|Int32|O número de falhas para o aplicativo. Valores válidos -2147483648 para 2147483647|
 

@@ -2,15 +2,15 @@
 title: Criar unsupportedGroupPolicyExtension
 description: Crie um novo objeto UnsupportedGroupPolicyExtension.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 6ea39cfba314c1f6b68f9b09f3e1418de978cae5
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 98fd00744ae068f55319321cbe853af9cce3582f
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58802590"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59020599"
 ---
 # <a name="create-unsupportedgrouppolicyextension"></a>Criar unsupportedGroupPolicyExtension
 
@@ -29,7 +29,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |:---|:---|
 |Delegado (conta corporativa ou de estudante)|DeviceManagementConfiguration.ReadWrite.All|
 |Delegado (conta pessoal da Microsoft)|Sem suporte.|
-|Application|DeviceManagementConfiguration.ReadWrite.All|
+|Aplicativo|DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- {
@@ -56,8 +56,8 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar o Unsupp
 |id|Cadeia de caracteres|Ainda não documentado|
 |settingScope|[groupPolicySettingScope](../resources/intune-gpanalyticsservice-grouppolicysettingscope.md)|Definindo Escopo da extensão sem suporte. Os valores possíveis são: `unknown`, `device`, `user`.|
 |namespaceUrl|Cadeia de caracteres|Url do namespace da extensão sem suporte.|
-|extensionType|Cadeia de caracteres|ExtensionType da extensão sem suporte.|
-|nodeName|Cadeia de caracteres|Nome do nó da extensão sem suporte.|
+|extensionType|Cadeia de Caracteres|ExtensionType da extensão sem suporte.|
+|nodeName|Cadeia de Caracteres|Nome do nó da extensão sem suporte.|
 
 
 

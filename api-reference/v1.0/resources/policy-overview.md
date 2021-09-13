@@ -1,16 +1,16 @@
 ---
 title: visão geral da API de política
 description: Azure Active Directory usa políticas para controlar os comportamentos de recursos do Azure AD em sua organização.
-localization_priority: Normal
+ms.localizationpriority: medium
 author: lujiangfeng666
 ms.prod: identity-and-sign-in
 doc_type: conceptualPageType
-ms.openlocfilehash: ea3dd1f653a8e7295757ef1e1c50c2b3c4d8aad77530e7a83473a93c014aebbe
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: f707e34fd0db7e37efecb03883e512e367192a2b
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54189377"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59098500"
 ---
 # <a name="azure-ad-policy-overview"></a>Visão geral da política do Azure AD
 

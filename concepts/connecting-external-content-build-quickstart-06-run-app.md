@@ -1,3 +1,12 @@
+---
+ms.localizationpriority: medium
+ms.openlocfilehash: 37aff56957c52c05145546c4df4d5f017e50f5f9
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.translationtype: MT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59289495"
+---
 <!-- markdownlint-disable MD002 MD025 MD041 -->
 
 Nesta etapa, você criará e executará o exemplo. Este exemplo de código criará uma nova conexão, registrará o esquema e, em seguida, empurrará itens do arquivoApplianceParts.csv[ para ](https://github.com/microsoftgraph/msgraph-search-connector-sample/blob/master/ApplianceParts.csv) essa conexão.

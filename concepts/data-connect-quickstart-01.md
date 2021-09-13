@@ -1,3 +1,12 @@
+---
+ms.localizationpriority: medium
+ms.openlocfilehash: f0ba3bbafa065bce8bb29fa760704df691bd5d79
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.translationtype: MT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59289501"
+---
 <!-- markdownlint-disable MD002 MD041 -->
 
 A Conexão de Dados do Microsoft Graph aumenta o modelo transacional do Microsoft Graph com uma maneira inteligente de acessar dados avançados em escala. Os dados abordam como os trabalhadores se comunicam, colaboram e gerenciam seu tempo em todos os aplicativos e serviços no Microsoft 365. Ideal para big data e aprendizado de máquina, A Conexão de Dados permite que você desenvolva aplicativos para análise, inteligência e otimização de processos de negócios, estendendo dados do Microsoft 365 para o Azure. Ao integrar desta forma, você poderá aproveitar o vasto conjunto de computação, armazenamento no Azure, mantendo a conformidade com os padrões do setor e mantendo seus dados seguros.
@@ -17,7 +26,7 @@ Neste tutorial, você criará seu primeiro aplicativo de Conexão de Dados do Mi
 Para concluir esse laboratório, você precisará das seguintes assinaturas ou licenças.
 
 1. **Microsoft 365 deenancy**
-  
+
    - Se você não tiver um, você obterá um (gratuitamente) ao se inscrever no programa Microsoft 365 [Desenvolvedor.](https://developer.microsoft.com/microsoft-365/dev-program)
    - Vários Microsoft 365 usuários com emails enviados e recebidos.
    - Acesso a pelo menos duas contas que atendem aos seguintes requisitos:
@@ -25,7 +34,7 @@ Para concluir esse laboratório, você precisará das seguintes assinaturas ou l
       - Deve ter acesso à Central Administração Microsoft 365.
 
 1. **Assinatura do Microsoft Azure**
-  
+
    - Se você não tiver um, poderá obter um (gratuitamente) em nosso [site do Azure.](https://azure.microsoft.com/free/)
    - A conta usada para entrar deve ter a função de administrador **global** concedida a ela.
    - A assinatura do Azure deve estar no mesmo locatário que o locatário Microsoft 365, pois o Graph Data Conexão exportará apenas dados para uma assinatura do Azure no mesmo locatário, não entre locatários.

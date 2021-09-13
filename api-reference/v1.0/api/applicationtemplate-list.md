@@ -1,16 +1,16 @@
 ---
 title: Listar applicationTemplates
 description: Recupere uma lista de objetos applicationtemplate.
-localization_priority: Normal
+ms.localizationpriority: medium
 author: luleonpla
 ms.prod: applications
 doc_type: apiPageType
-ms.openlocfilehash: 7d8a80b6f2cee8726f50cf32a7c5c6efa5e947c6
-ms.sourcegitcommit: 40947e6f4337c8c4193d85bb862e15f67263e1e7
+ms.openlocfilehash: 77b83a279bf513877ee3ac18ee6f4ed7efae8a5e
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/13/2021
-ms.locfileid: "50775134"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59125439"
 ---
 # <a name="list-applicationtemplates"></a>Listar applicationTemplates
 
@@ -18,17 +18,17 @@ Namespace: microsoft.graph
 
 Recupere uma lista de [objetos applicationTemplate](../resources/applicationtemplate.md) da galeria de aplicativos do Azure AD.
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>Permissões
 
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 | Tipo de permissão                        | Permissões (da com menos para a com mais privilégios) |
 | :------------------------------------- | :------------------------------------------ |
-| Delegada (conta corporativa ou de estudante)     | Nenhum                                       |
+| Delegado (conta corporativa ou de estudante)     | Nenhum.                                       |
 | Delegado (conta pessoal da Microsoft) | Sem suporte.                              |
-| Aplicativo                            | Nenhum                                       |
+| Aplicativo                            | Nenhum.                                       |
 
-Permissões adicionais não são necessárias para chamar essa API, desde que seu aplicativo tenha um token de acesso válido para chamar o Microsoft Graph.
+Permissões adicionais não são necessárias para chamar essa API, desde que seu aplicativo tenha um token de acesso válido para chamar a Microsoft Graph.
 
 ## <a name="http-request"></a>Solicitação HTTP
 

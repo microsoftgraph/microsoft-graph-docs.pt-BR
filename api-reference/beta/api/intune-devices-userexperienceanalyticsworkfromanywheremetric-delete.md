@@ -2,15 +2,15 @@
 title: Excluir userExperienceAnalyticsWorkFromAnywhereMetric
 description: Exclui um userExperienceAnalyticsWorkFromAnywhereMetric.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 70060b208c751e6c9794912101ab39f4fe19f401
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 3ed5e9458f4c0ed9be99b3f3dd452c07d1c5a549
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58786127"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59020711"
 ---
 # <a name="delete-userexperienceanalyticsworkfromanywheremetric"></a>Excluir userExperienceAnalyticsWorkFromAnywhereMetric
 
@@ -28,8 +28,8 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |Tipo de permissão|Permissões (da com menos para a com mais privilégios)|
 |:---|:---|
 |Delegado (conta corporativa ou de estudante)|DeviceManagementManagedDevices.ReadWrite.All|
-|Delegado (conta pessoal da Microsoft)|Sem suporte.|
-|Application|DeviceManagementManagedDevices.ReadWrite.All|
+|Delegada (conta pessoal da Microsoft)|Sem suporte.|
+|Aplicativo|DeviceManagementManagedDevices.ReadWrite.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- {

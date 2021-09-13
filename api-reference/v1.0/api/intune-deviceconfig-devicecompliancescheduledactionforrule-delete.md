@@ -2,15 +2,15 @@
 title: Excluir deviceComplianceScheduledActionForRule
 description: Exclui deviceComplianceScheduledActionForRule.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: fb1a817df141f65d9edacbbef11e114066cc9351f0d83162c2ec2e9671dde8e6
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 0cb6741a808e9d0c9dceb560a2e837245f80a5fc
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54121785"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59114257"
 ---
 # <a name="delete-devicecompliancescheduledactionforrule"></a>Excluir deviceComplianceScheduledActionForRule
 

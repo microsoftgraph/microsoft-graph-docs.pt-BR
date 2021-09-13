@@ -2,15 +2,15 @@
 title: Excluir userExperienceAnalyticsAppHealthApplicationPerformance
 description: Exclui um userExperienceAnalyticsAppHealthApplicationPerformance.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 063a814896b40a251a266f752b8e89a1edf6205d
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: f76b436c67f351e74627f0d0d9d32ea8e1ce64cd
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58788826"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59027894"
 ---
 # <a name="delete-userexperienceanalyticsapphealthapplicationperformance"></a>Excluir userExperienceAnalyticsAppHealthApplicationPerformance
 
@@ -29,7 +29,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |:---|:---|
 |Delegado (conta corporativa ou de estudante)|DeviceManagementManagedDevices.ReadWrite.All|
 |Delegado (conta pessoal da Microsoft)|Sem suporte.|
-|Application|DeviceManagementManagedDevices.ReadWrite.All|
+|Aplicativo|DeviceManagementManagedDevices.ReadWrite.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- {

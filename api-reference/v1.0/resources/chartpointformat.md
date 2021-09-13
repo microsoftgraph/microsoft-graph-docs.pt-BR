@@ -2,15 +2,15 @@
 title: Tipo de recurso ChartPointFormat
 description: Representa um objeto de formatação para os pontos do gráfico.
 author: lumine2008
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: excel
 doc_type: resourcePageType
-ms.openlocfilehash: 330880d00e12dc7f42128be80f02855a382ebe407478e3d24a88e823ef26137c
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: f7ed3dc7fab84afb91bbcfc7a2a8b17a38d3d42f
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54249318"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59036757"
 ---
 # <a name="chartpointformat-resource-type"></a>Tipo de recurso ChartPointFormat
 

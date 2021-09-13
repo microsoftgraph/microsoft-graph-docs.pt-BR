@@ -1,14 +1,14 @@
 ---
 title: Use o microsoft Graph Toolkit com React
 description: Começar a usar o microsoft Graph Toolkit em um React aplicativo.
-localization_priority: Normal
+ms.localizationpriority: medium
 author: waldekmastykarz
-ms.openlocfilehash: d7bf063a869e756554fa280406dfee3b5a569607f39bdd1763e15086dd2f29b2
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 464542cc85b9baab8c13a68a788d28d557effcde
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54132946"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59089226"
 ---
 # <a name="use-the-microsoft-graph-toolkit-with-react"></a>Use o microsoft Graph Toolkit com React
 
@@ -45,7 +45,7 @@ Em seguida, instale o `mgt-react` pacote npm, que contém os componentes Graph T
 npm i @microsoft/mgt-react
 ```
 
-Instale o `mgt-msal2-provider` `mgt-element` pacote e npm também, que contém o provedor de auth MSAL 2.0.
+Instale o `mgt-msal2-provider` `mgt-element` pacote e npm também, que contém o provedor de auth MSAL2.
 
 ```Command Line
 npm i @microsoft/mgt-element @microsoft/mgt-msal2-provider
@@ -76,7 +76,7 @@ Agora que você registrou seu aplicativo com o Azure Active Directory (Azure AD)
 Em seguida, configure o provedor de autenticação que o microsoft Graph Toolkit deve usar. Nesse caso, você usará o MSAL, que é um bom padrão para a criação de aplicativos autônomos. Se você usar qualquer um dos pontos de extensibilidade no Microsoft 365, como Teams ou SharePoint, você usará [outros provedores](../providers/providers.md).
 
 >[!NOTE] 
->Se você estiver usando o Provedor MSAL no momento e quiser atualizar para o Provedor MSAL 2, siga as etapas no artigo do provedor [MSAL 2.](../providers/msal2.md#migrating-from-msal-provider-to-msal-2-provider)
+>Se você estiver usando o Provedor MSAL no momento e quiser atualizar para o Provedor MSAL2, siga as etapas no artigo provedor [MSAL2.](../providers/msal2.md#migrating-from-msal-provider-to-msal2-provider)
 
 1. No editor de código, abra **o src/index.** e à lista de importações, adicione:
 

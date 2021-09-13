@@ -2,15 +2,15 @@
 title: Tipo de recurso domainDnsCnameRecord
 description: Representa um registro CNAME adicionado ao arquivo de zona DNS de um determinado domínio no locatário.
 author: adimitui
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: directory-management
 doc_type: resourcePageType
-ms.openlocfilehash: 3b626a13af3087eb65be24d3b33958cdba3c57cd71cc402a27f8547f44e45256
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 63151892c0e4d18e692cf740bd8b0bb711dcd1e2
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54169645"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59062765"
 ---
 # <a name="domaindnscnamerecord-resource-type"></a>Tipo de recurso domainDnsCnameRecord
 
@@ -29,7 +29,7 @@ Não há suporte para consultas diretas a esse recurso. Consulte o tópico [de d
 |id|Cadeia de caracteres| Identificador exclusivo atribuído a essa entidade. Não anulada, somente leitura|
 |isOptional|Booliano| Se for falso, o registro CNAME deverá ser configurado pelo cliente no host DNS para que Microsoft Online Services funcione corretamente com o domínio. Não anulada |
 |rótulo|Cadeia de caracteres| Valor usado ao configurar *o alias/host/nome* do registro CNAME no host DNS. |
-|recordType|String| Tipo de registro DNS. O valor é sempre *CName*. Chave|
+|recordType|Cadeia de caracteres| Tipo de registro DNS. O valor é sempre *CName*. Chave|
 |supportedService|Cadeia de caracteres| Serviço ou recurso do Microsoft Online que tem uma dependência nesse registro CNAME.</br></br>Pode ser um dos seguintes valores: **null**, *Email*, *Sharepoint*, *EmailInternalRelayOnly*, *OfficeCommunicationsOnline*, *SharePointDefaultDomain*, *FullRedelegation*, *SharePointPublic*, *OrgIdAuthentication*, *Yammer*, *Intune*|
 |ttl|Int32| Valor a ser usado ao configurar a propriedade time-to-live (ttl) do registro CNAME no host DNS. Não anulada |
 

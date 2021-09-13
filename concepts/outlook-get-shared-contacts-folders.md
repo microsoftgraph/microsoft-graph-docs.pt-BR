@@ -2,14 +2,14 @@
 title: Obter contatos do Outlook em uma pasta compartilhada
 description: O Outlook permite que os clientes compartilhem pastas entre si e forneçam acesso de "leitura", "criação", "modificação" ou "exclusão" a pastas de contatos individuais. O Outlook também permite que um cliente representante a outro usuário agir em nome do cliente.
 author: angelgolfer-ms
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: outlook
-ms.openlocfilehash: 50b9e819e3d95b799b55a0b7898aec01e9870c65f9a6d848b2dfc9f5e7055bed
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 3c1673dd6b551d1626187ee120ccc5e08550933b
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54138292"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59135925"
 ---
 # <a name="get-outlook-contacts-in-a-shared-folder"></a>Obter contatos do Outlook em uma pasta compartilhada
 

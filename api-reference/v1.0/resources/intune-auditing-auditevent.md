@@ -2,15 +2,15 @@
 title: Tipo de recurso auditEvent
 description: Uma classe que contém as propriedades de Evento de Auditoria.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 29832a77c0cd37d025153fa3afab8bdfb53699a73c52c1a930b6c6e44ba48bdf
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 8cfbc2dcd577dcc73ecc0f3187d9fa57f86e091f
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54182494"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59123094"
 ---
 # <a name="auditevent-resource-type"></a>Tipo de recurso auditEvent
 
@@ -35,7 +35,7 @@ Uma classe que contém as propriedades de Evento de Auditoria.
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
 |id|String|Chave da entidade.|
-|displayName|String|Nome de exibição do evento.|
+|displayName|Cadeia de caracteres|Nome de exibição do evento.|
 |componentName|Cadeia de caracteres|Nome do componente.|
 |actor|[auditActor](../resources/intune-auditing-auditactor.md)|Usuários e aplicativos do AAD associados com o evento de auditoria.|
 |atividade|Cadeia de caracteres|Nome amigável da atividade.|
@@ -45,7 +45,7 @@ Uma classe que contém as propriedades de Evento de Auditoria.
 |activityResult|Cadeia de caracteres|O resultado da atividade.|
 |correlationId|Guid|A ID da solicitação de cliente usada para correlacionar a atividade dentro do sistema.|
 |recursos|Coleção [auditResource](../resources/intune-auditing-auditresource.md)|Recursos em modificação.|
-|category|Cadeia de caracteres|Categoria de auditoria.|
+|category|String|Categoria de auditoria.|
 
 ## <a name="relationships"></a>Relações
 Nenhum

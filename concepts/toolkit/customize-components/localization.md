@@ -1,14 +1,14 @@
 ---
 title: Localizando os componentes Graph Toolkit Microsoft
 description: Use LocalizationHelper para localização dos componentes Graph Toolkit Microsoft.
-localization_priority: Normal
+ms.localizationpriority: medium
 author: vogtn
-ms.openlocfilehash: 0aeb18b5606c761b9e4e853509bd4ef0dc58682259c3bb0522b65047ed40cf7c
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: f3cba31d7b02370d30e1caa128a671534f9e4cae
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54123888"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59129576"
 ---
 # <a name="localizing-the-microsoft-graph-toolkit-components"></a>Localizando os componentes Graph Toolkit Microsoft
 
@@ -103,7 +103,7 @@ As cadeias de caracteres podem ser definidas em nível global ou por componente 
 }
 ```
 
-### <a name="tasks"></a>Tarefas
+### <a name="tasks"></a>Tasks
 
 ```ts
 "tasks": {

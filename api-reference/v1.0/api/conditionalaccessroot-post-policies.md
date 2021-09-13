@@ -1,16 +1,16 @@
 ---
 title: Criar conditionalAccessPolicy
 description: Crie um novo conditionalAccessPolicy.
-localization_priority: Normal
+ms.localizationpriority: medium
 author: videor
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: 60ffa83de871400c49aff07f8508d562e786c73c
-ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
+ms.openlocfilehash: ea92dc2a045195ad87f79175eba4d82e38fadd41
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "50964020"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59147826"
 ---
 # <a name="create-conditionalaccesspolicy"></a>Criar conditionalAccessPolicy
 
@@ -59,10 +59,10 @@ Se tiver êxito, este método retornará um código de resposta e um novo `201 C
 
 ## <a name="examples"></a>Exemplos
 
-### <a name="example-1-require-mfa-to-access-exchange-online-outside-of-trusted-locations"></a>Exemplo 1: Exigir que o MFA acesse o Exchange Online fora de locais confiáveis
+### <a name="example-1-require-mfa-to-access-exchange-online-outside-of-trusted-locations"></a>Exemplo 1: Exigir que o MFA acesse Exchange Online fora de locais confiáveis
 
 #### <a name="request"></a>Solicitação
-O exemplo a seguir mostra uma solicitação comum para exigir autenticação multifa factor para acesso ao Exchange Online de clientes de autenticação modernos fora de locais confiáveis para um determinado grupo.
+O exemplo a seguir mostra uma solicitação comum para exigir autenticação multifafação para acesso Exchange Online de clientes de autenticação moderna fora de locais confiáveis para um determinado grupo.
 
 >**Observação:** Você deve configurar seus locais confiáveis antes de usar essa operação.
 
@@ -196,10 +196,10 @@ Content-type: application/json
 }
 ```
 
-### <a name="example-2-block-access-to-exchange-online-from-non-trusted-regions"></a>Exemplo 2: Bloquear o acesso ao Exchange Online de regiões não confiáveis
+### <a name="example-2-block-access-to-exchange-online-from-non-trusted-regions"></a>Exemplo 2: Bloquear o acesso a Exchange Online de regiões não confiáveis
 
 #### <a name="request"></a>Solicitação
-O exemplo a seguir mostra uma solicitação para bloquear o acesso ao Exchange Online de regiões não confiáveis/desconhecidas.
+O exemplo a seguir mostra uma solicitação para bloquear o acesso Exchange Online de regiões não confiáveis/desconhecidas.
 Este exemplo supõe que o local nomeado com id = 198ad66e-87b3-4157-85a3-8a7b51794ee9 corresponde a uma lista de regiões não confiáveis/desconhecidas.
 
 
@@ -569,10 +569,10 @@ Content-type: application/json
 }
 ```
 
-### <a name="example-4-require-mfa-to-exchange-online-from-non-compliant-devices"></a>Exemplo 4: Exigir MFA para o Exchange Online de dispositivos não compatíveis
+### <a name="example-4-require-mfa-to-exchange-online-from-non-compliant-devices"></a>Exemplo 4: Exigir que o MFA Exchange Online de dispositivos não compatíveis
 
 #### <a name="request"></a>Solicitação
-O exemplo a seguir mostra uma solicitação para exigir MFA para o Exchange Online de dispositivos não compatíveis.
+O exemplo a seguir mostra uma solicitação para exigir que o MFA Exchange Online de dispositivos não compatíveis.
 
 
 # <a name="http"></a>[HTTP](#tab/http)

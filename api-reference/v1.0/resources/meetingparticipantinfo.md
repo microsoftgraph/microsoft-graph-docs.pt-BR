@@ -2,15 +2,15 @@
 title: Tipo de recurso meetingParticipantInfo
 description: Informações sobre um participante em uma reunião.
 author: ananmishr
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: cloud-communications
 doc_type: resourcePageType
-ms.openlocfilehash: f262c6b2b13dc430173e585f6afa25c231bfea858b52bc56803a726ba893acff
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 505a31673ea110f899b37b7d6404b5020ed6d88e
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54126400"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59113648"
 ---
 # <a name="meetingparticipantinfo-resource-type"></a>Tipo de recurso meetingParticipantInfo
 
@@ -23,8 +23,8 @@ Informações sobre um participante em uma reunião.
 | Propriedade | Tipo                          | Descrição                                                                         |
 | :------- | :---------------------------- | :---------------------------------------------------------------------------------- |
 | identity | [identitySet](identityset.md) | Informações de identidade do participante.                                            |
-| upn      | Cadeia de caracteres                        | Nome principal do usuário do participante.                                             |
-| role     | onlineMeetingRole             | Especifica a função do participante na reunião.  Os valores possíveis são: `attendee`, `presenter` e `unknownFutureValue`.|
+| upn      | String                        | Nome principal do usuário do participante.                                             |
+| role     | onlineMeetingRole             | Especifica a função do participante na reunião.  Os valores possíveis `attendee` `presenter` são , e `producer` `unknownFutureValue` .|
 
 ## <a name="json-representation"></a>Representação JSON
 

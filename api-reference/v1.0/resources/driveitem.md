@@ -2,15 +2,15 @@
 author: JeremyKelley
 title: tipo de recurso driveItem
 description: Item é o principal modelo de dados na API do OneDrive. Tudo é um item.
-localization_priority: Priority
+ms.localizationpriority: high
 ms.prod: sharepoint
 doc_type: resourcePageType
-ms.openlocfilehash: c7e611b40ab2d0f770760bbedcbddaea8d0c3eecbd6efcd1c437a1ab1a9ef326
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 1113752f33fe5cf1773359b940e15083a449a253
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54182564"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59094349"
 ---
 # <a name="driveitem-resource-type"></a>tipo de recurso driveItem
 
@@ -36,6 +36,37 @@ Itens com a faceta **folder** atuam como contêineres de itens e, portanto, têm
 
 >**Observação:** No OneDrive for Business ou nas bibliotecas de documentos do SharePoint, a propriedade **cTag** não é retornada se o **driveItem** tiver uma faceta de [pasta][].
 
+## <a name="methods"></a>Métodos
+
+| Método                                                   | Tipo de retorno | Descrição
+|:---------------------------------------------------------|:------------|:------------
+| [Obter item](../api/driveitem-get.md)                      | driveItem |Recupere os metadados de um DriveItem em uma unidade.
+| [Obter análises][]                                        | [itemAnalytics][] | Obter análises para este recurso. 
+| [Obter atividades por intervalo][]                           | [itemActivityStat][] | Obter uma coleção de itemActivityStats dentro do intervalo de tempo especificado.
+| [Listar filhos](../api/driveitem-list-children.md)       | coleção de driveItem | Retornar uma coleção de DriveItems no relacionamento filho de um DriveItem.
+| [Listar versões](../api/driveitem-list-versions.md)       | coleção de [DriveItemVersion][] | Recupera as versões de um arquivo na unidade do usuário atual.
+| [Criar item](../api/driveitem-post-children.md)         | driveItem | Cria um driveItem na unidade especificada.
+| [Atualizar item](../api/driveitem-update.md)                | driveItem | Atualiza um driveItem na unidade.
+| [Carregar conteúdo](../api/driveitem-put-content.md)        | driveItem | Carrega conteúdo para o driveItem.
+| [Baixar conteúdo](../api/driveitem-get-content.md)      | URL de download | Baixa o conteúdo de um driveItem.
+| [Baixar o formato de arquivo específico][download-format]         | URL de download | Baixa o conteúdo de um driveItem com um formato específico.
+| [Excluir item](../api/driveitem-delete.md)                | Sem Conteúdo | Exclui um driveItem.
+| [Mover item](../api/driveitem-move.md)                    | driveItem | Move um DriveItem para um novo item pai.
+| [Copiar item](../api/driveitem-copy.md)                    | detalhes sobre como [monitorar o progresso](/graph/long-running-actions-overview) da cópia | Cria uma cópia de um driveItem (incluindo qualquer filho).
+| [Pesquisar itens](../api/driveitem-search.md)               | coleção de driveItem | Pesquise a hierarquia de itens para itens que correspondam a uma consulta.
+| [Listar alterações em uma unidade](../api/driveitem-delta.md)     | link delta | Listar quaisquer alterações na unidade.
+| [Seguir o item](../api/driveitem-follow.md)                | driveItem  | Seguir um driveItem.
+| [Deixar de seguir o item](../api/driveitem-unfollow.md)            | Sem conteúdo | Deixar de seguir um driveItem.
+| [Listar miniaturas](../api/driveitem-list-thumbnails.md)   | coleção de driveItem | Listar driveItems com suas miniaturas. 
+| [Criar link de compartilhamento](../api/driveitem-createlink.md)    | link de compartilhamento | Criar um link para compartilhar o driveItem.
+| [Adicionar permissões](../api/driveitem-invite.md)            | coleção de [permissão][] | Envia um convite de compartilhamento a um usuário.
+| [Listar permissões](../api/driveitem-list-permissions.md) | coleção de [permissão][] | Recupera a coleção de permissões em um driveItem.
+| [Excluir permissão](../api/permission-delete.md)         | Sem Conteúdo | Remove a permissão do driveItem.
+| [Obter canal WebSocket][getWebSocket]                    | [assinatura][] | Recebe notificações de alteração quase em tempo real para uma unidade usando o socket.io.
+| [Item de visualização][item-preview]                             | objeto json | Obtenha URLs incorporáveis de curta duração para um item de modo a renderizar uma visualização temporária.
+| [Fazer ceck-in](../api/driveitem-checkin.md)                  | `POST /drives/{driveId}/items/{itemId}/checkin`
+| [Fazer check-out](../api/driveitem-checkout.md)                | `POST /drives/{driveId}/items/{itemId}/checkout`
+
 ## <a name="properties"></a>Propriedades
 
 | Propriedade             | Tipo               | Descrição
@@ -56,6 +87,7 @@ Itens com a faceta **folder** atuam como contêineres de itens e, portanto, têm
 | lastModifiedBy       | [identitySet][]    | Identidade do usuário, dispositivo e aplicativo que modificou o item pela última vez. Somente leitura.
 | lastModifiedDateTime | DateTimeOffset     | Data e hora em que o item foi modificado pela última vez. Somente leitura.
 | location             | [geoCoordinates][] | Metadados de localização, se o item tiver dados de localização. Somente leitura.
+| malware              | [malware][]        | Metadados de malware, se o item for detectado como contendo malware. Somente leitura.
 | nome                 | String             | O nome do item (nome do arquivo e extensão). Leitura e gravação.
 | pacote              | [package][]        | Se presente, indica que esse item é um pacote, e não uma pasta ou um arquivo. Pacotes são tratados como arquivos em alguns contextos e como pastas em outros. Somente leitura.
 | parentReference      | [itemReference][]  | Informações do pai, se o item tiver um pai. Leitura e gravação.
@@ -134,6 +166,7 @@ O recurso **driveItem** é derivado de [**baseItem**][baseItem] e herda propried
   "folder": { "@odata.type": "microsoft.graph.folder" },
   "image": { "@odata.type": "microsoft.graph.image" },
   "location": { "@odata.type": "microsoft.graph.geoCoordinates" },
+  "malware": { "@odata.type": "microsoft.graph.malware" },
   "package": { "@odata.type": "microsoft.graph.package" },
   "pendingOperations": { "@odata.type": "microsoft.graph.pendingOperations" },
   "photo": { "@odata.type": "microsoft.graph.photo" },
@@ -177,37 +210,6 @@ O recurso **driveItem** é derivado de [**baseItem**][baseItem] e herda propried
 }
 ```
 
-## <a name="methods"></a>Métodos
-
-| Método                                                   | Tipo de retorno | Descrição
-|:---------------------------------------------------------|:------------|:------------
-| [Obter item](../api/driveitem-get.md)                      | driveItem |Recupere os metadados de um DriveItem em uma unidade.
-| [Obter análises][]                                        | [itemAnalytics][] | Obter análises para este recurso. 
-| [Obter atividades por intervalo][]                           | [itemActivityStat][] | Obter uma coleção de itemActivityStats dentro do intervalo de tempo especificado.
-| [Listar filhos](../api/driveitem-list-children.md)       | coleção de driveItem | Retornar uma coleção de DriveItems no relacionamento filho de um DriveItem.
-| [Listar versões](../api/driveitem-list-versions.md)       | coleção de [DriveItemVersion][] | Recupera as versões de um arquivo na unidade do usuário atual.
-| [Criar item](../api/driveitem-post-children.md)         | driveItem | Cria um driveItem na unidade especificada.
-| [Atualizar item](../api/driveitem-update.md)                | driveItem | Atualiza um driveItem na unidade.
-| [Carregar conteúdo](../api/driveitem-put-content.md)        | driveItem | Carrega conteúdo para o driveItem.
-| [Baixar conteúdo](../api/driveitem-get-content.md)      | URL de download | Baixa o conteúdo de um driveItem.
-| [Baixar o formato de arquivo específico][download-format]         | URL de download | Baixa o conteúdo de um driveItem com um formato específico.
-| [Excluir item](../api/driveitem-delete.md)                | Sem Conteúdo | Exclui um driveItem.
-| [Mover item](../api/driveitem-move.md)                    | driveItem | Move um DriveItem para um novo item pai.
-| [Copiar item](../api/driveitem-copy.md)                    | detalhes sobre como [monitorar o progresso](/graph/long-running-actions-overview) da cópia | Cria uma cópia de um driveItem (incluindo qualquer filho).
-| [Pesquisar itens](../api/driveitem-search.md)               | coleção de driveItem | Pesquise a hierarquia de itens para itens que correspondam a uma consulta.
-| [Listar alterações em uma unidade](../api/driveitem-delta.md)     | link delta | Listar quaisquer alterações na unidade.
-| [Seguir o item](../api/driveitem-follow.md)                | driveItem  | Seguir um driveItem.
-| [Deixar de seguir o item](../api/driveitem-unfollow.md)            | Sem conteúdo | Deixar de seguir um driveItem.
-| [Listar miniaturas](../api/driveitem-list-thumbnails.md)   | coleção de driveItem | Listar driveItems com suas miniaturas. 
-| [Criar link de compartilhamento](../api/driveitem-createlink.md)    | link de compartilhamento | Criar um link para compartilhar o driveItem.
-| [Adicionar permissões](../api/driveitem-invite.md)            | coleção de [permissão][] | Envia um convite de compartilhamento a um usuário.
-| [Listar permissões](../api/driveitem-list-permissions.md) | coleção de [permissão][] | Recupera a coleção de permissões em um driveItem.
-| [Excluir permissão](../api/permission-delete.md)         | Sem Conteúdo | Remove a permissão do driveItem.
-| [Obter canal WebSocket][getWebSocket]                    | [assinatura][] | Recebe notificações de alteração quase em tempo real para uma unidade usando o socket.io.
-| [Item de visualização][item-preview]                             | objeto json | Obtenha URLs incorporáveis de curta duração para um item de modo a renderizar uma visualização temporária.
-| [Fazer ceck-in](../api/driveitem-checkin.md)                  | `POST /drives/{driveId}/items/{itemId}/checkin`
-| [Fazer check-out](../api/driveitem-checkout.md)                | `POST /drives/{driveId}/items/{itemId}/checkout`
-
 [item-preview]: ../api/driveitem-preview.md
 [Obter análises]: ../api/itemanalytics-get.md
 [Obter atividades por intervalo]: ../api/itemactivitystat-getactivitybyinterval.md
@@ -230,6 +232,7 @@ O recurso **driveItem** é derivado de [**baseItem**][baseItem] e herda propried
 [itemReference]: itemreference.md
 [geoCoordinates]: geocoordinates.md
 [listItem]: listitem.md
+[malware]: malware.md
 [package]: package.md
 [permissão]: permission.md
 [pendingOperations]: pendingoperations.md

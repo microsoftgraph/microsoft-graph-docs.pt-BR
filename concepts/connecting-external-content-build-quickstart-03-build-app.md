@@ -1,3 +1,12 @@
+---
+ms.localizationpriority: medium
+ms.openlocfilehash: 5fb7ccc1c9e44db77f2ba199a556d229292cf7a4
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.translationtype: MT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59289492"
+---
 <!-- markdownlint-disable MD002 MD025 MD041 -->
 
 Nesta etapa, você criará um aplicativo de console .NET Core. Depois disso, você criará uma nova conexão, registrará o esquema e sincronizará os itens.
@@ -768,7 +777,7 @@ private static async Task RegisterSchemaAsync()
 1. Em **Microsoft Graph**, abra o arquivo MicrosoftGraphHelper.cs e adicione o seguinte código após o método **Constructor.**
 
 ```c
-#region PushData   
+#region PushData
 
         public async Task AddOrUpdateItem(string connectionId, ExternalItem item)
         {

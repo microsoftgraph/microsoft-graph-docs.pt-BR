@@ -2,15 +2,15 @@
 title: ação sync
 description: Ainda não documentado
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 535efeda4c08c3368de44ba9347b133f114c799f1ff55356958e4897af1f43bf
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: a8dbd546eef03dc9792d45511d286217d4a1c551
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54250459"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59114103"
 ---
 # <a name="sync-action"></a>Ação sync
 

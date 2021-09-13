@@ -1,16 +1,16 @@
 ---
 title: Tipo de recurso personAward
 description: Tipo de recurso personAward
-localization_priority: Normal
+ms.localizationpriority: medium
 author: kevinbellinger
 ms.prod: people
 doc_type: resourcePageType
-ms.openlocfilehash: 4af72499276b6eb4e90333243462e94f0cfa02b92aa014cbcdc59e1a111d1afa
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 3e1ec26b6df9ccc83f47eb26fc502c3756564629
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54251047"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59020165"
 ---
 # <a name="personaward-resource-type"></a>Tipo de recurso personAward
 
@@ -32,19 +32,19 @@ Herda do [itemFacet](../resources/itemfacet.md).
 ## <a name="properties"></a>Propriedades
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|allowedAudiences|Cadeia de caracteres|As audiências que são capazes de ver os valores contidos na entidade. Herdado [do itemFacet](../resources/itemfacet.md). Os valores possíveis são: `me`, `family`, `contacts`, `groupMembers`, `organization`, `federatedOrganizations`, `everyone`, `unknownFutureValue`.|
+|allowedAudiences|Cadeia de Caracteres|As audiências que são capazes de ver os valores contidos na entidade. Herdado [do itemFacet](../resources/itemfacet.md). Os valores possíveis são: `me`, `family`, `contacts`, `groupMembers`, `organization`, `federatedOrganizations`, `everyone`, `unknownFutureValue`.|
 |createdBy|[identitySet](../resources/identityset.md)|Fornece o identificador do usuário e/ou aplicativo que criou a entidade. Herdado [do itemFacet](../resources/itemfacet.md).|
 |createdDateTime|DateTimeOffset|Fornece a dataTimeOffset para quando a entidade foi criada. Herdado [do itemFacet](../resources/itemfacet.md).|
 |description|Cadeia de caracteres|Descpription of the award or honor. |
-|displayName|Cadeia de caracteres|Nome do prêmio ou da honra. |
+|displayName|String|Nome do prêmio ou da honra. |
 |id|Cadeia de caracteres|Identificador usado para endereçamento individual da entidade. Herdado da [entidade](../resources/entity.md)|
 |inferência|[inferenceData](../resources/inferencedata.md)|Contém detalhes de inferência se a entidade for inferida pelo aplicativo de criação ou modificação. Herdado [do itemFacet](../resources/itemfacet.md).|
 |issuedDate|Data|A data em que o prêmio ou a honra foi concedido. |
-|issuingAuthority|Cadeia de caracteres|Autoridade que concedeu o prêmio ou a honra.  |
+|issuingAuthority|Cadeia de Caracteres|Autoridade que concedeu o prêmio ou a honra.  |
 |lastModifiedBy|[identitySet](../resources/identityset.md)|Fornece o identificador do usuário e/ou aplicativo que modificou a entidade pela última vez. Herdado [do itemFacet](../resources/itemfacet.md).|
 |lastModifiedDateTime|DateTimeOffset|Fornece a dataTimeOffset para quando a entidade foi criada. Herdado [do itemFacet](../resources/itemfacet.md).|
 |source|[personDataSource](../resources/persondatasource.md)|Onde os valores se originaram se sincronizados de outro serviço. Herdado [do itemFacet](../resources/itemfacet.md).|
-|thumbnailUrl|Cadeia de caracteres|URL fazendo referência a uma miniatura do prêmio ou da honra.  |
+|thumbnailUrl|String|URL fazendo referência a uma miniatura do prêmio ou da honra.  |
 |webUrl|String|URL referenciando o prêmio ou a honra. |
 
 ## <a name="relationships"></a>Relações

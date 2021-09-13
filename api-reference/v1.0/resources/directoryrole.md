@@ -1,16 +1,16 @@
 ---
 title: tipo de recurso directoryRole
 description: Representa uma função do diretório do Azure AD. As funções de diretório do AD do Azure também são conhecidas como *funções de administrador*.
-localization_priority: Priority
+ms.localizationpriority: high
 author: abhijeetsinha
 ms.prod: directory-management
 doc_type: resourcePageType
-ms.openlocfilehash: b54b743addeae4b8ff171da68079f487279234ac5d8d65b47271bca16b872840
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 3effb90d2ddeffccd59de35b04295fc83b86e5f8
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54146983"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59089743"
 ---
 # <a name="directoryrole-resource-type"></a>tipo de recurso directoryRole
 

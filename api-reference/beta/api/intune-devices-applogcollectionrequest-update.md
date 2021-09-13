@@ -2,15 +2,15 @@
 title: Atualizar appLogCollectionRequest
 description: Atualize as propriedades de um objeto appLogCollectionRequest.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: aca4dd88960d952d1a6a445c3508b3c00850d60a
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 945e6b2cbdaa79db3a426fb9e63d61ef62113e64
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58788840"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59020725"
 ---
 # <a name="update-applogcollectionrequest"></a>Atualizar appLogCollectionRequest
 
@@ -29,7 +29,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |:---|:---|
 |Delegado (conta corporativa ou de estudante)|DeviceManagementManagedDevices.ReadWrite.All|
 |Delegado (conta pessoal da Microsoft)|Sem suporte.|
-|Application|DeviceManagementManagedDevices.ReadWrite.All|
+|Aplicativo|DeviceManagementManagedDevices.ReadWrite.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- {
@@ -55,8 +55,8 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar [o appLo
 |:---|:---|:---|
 |id|Cadeia de caracteres|O Identificador exclusivo. Esta é userId_DeviceId_AppId id.|
 |status|[appLogUploadState](../resources/intune-devices-apploguploadstate.md)|Status do carregamento de log. Os valores possíveis são: `pending`, `completed`, `failed`.|
-|errorMessage|Cadeia de caracteres|Mensagem de erro se alguma durante o processo de carregamento|
-|customLogFolders|Coleção de cadeias de caracteres|Lista de pastas de log. |
+|errorMessage|Cadeia de Caracteres|Mensagem de erro se alguma durante o processo de carregamento|
+|customLogFolders|String collection|Lista de pastas de log. |
 |completedDateTime|DateTimeOffset|Hora em que a solicitação de log de carregamento atingiu um estado de terminal|
 
 

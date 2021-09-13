@@ -1,3 +1,12 @@
+---
+ms.localizationpriority: medium
+ms.openlocfilehash: b1e82e19b7c9574bef62c4e3c474a5228b4d6170
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.translationtype: MT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59289498"
+---
 <!-- markdownlint-disable MD002 MD041 -->
 
 Depois de todos os pré-requisitos, você poderá registrar um aplicativo no centro de administração do Azure AD. O registro é necessário para autenticar o aplicativo e usá-lo para fazer chamadas para a API de conectores Graph Microsoft.

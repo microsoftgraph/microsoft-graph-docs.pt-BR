@@ -2,15 +2,15 @@
 title: Atualizar groupPolicyPresentationCheckBox
 description: Atualize as propriedades de um objeto groupPolicyPresentationCheckBox.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 21c196e627d820631174f3c14bad8f409020e461
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 5e9bf3a0737eac2ad5dab86343b4d413e827acef
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58798536"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59024408"
 ---
 # <a name="update-grouppolicypresentationcheckbox"></a>Atualizar groupPolicyPresentationCheckBox
 
@@ -29,7 +29,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |:---|:---|
 |Delegado (conta corporativa ou de estudante)|DeviceManagementConfiguration.ReadWrite.All|
 |Delegado (conta pessoal da Microsoft)|Sem suporte.|
-|Application|DeviceManagementConfiguration.ReadWrite.All|
+|Aplicativo|DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- {

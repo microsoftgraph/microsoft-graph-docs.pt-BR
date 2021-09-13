@@ -2,14 +2,14 @@
 title: Use a API Pesquisa da Microsoft no Microsoft Graph para pesquisar eventos de calendário
 description: Você pode pesquisar no próprio calendário do usuário.
 author: knightsu
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: search
-ms.openlocfilehash: 277c46e6298aa532d300b23fcba707c678e38e035007d2ef63fa249951afa633
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: de2e5ed0ccb015ae6566acf04664ed1885c61924
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54171970"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59093999"
 ---
 # <a name="use-the-microsoft-search-api-to-search-calendar-events"></a>Usar a API Pesquisa da Microsoft para pesquisar eventos de calendário
 

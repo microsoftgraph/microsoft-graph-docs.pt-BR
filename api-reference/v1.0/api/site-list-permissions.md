@@ -2,15 +2,15 @@
 title: Listar permissões
 description: Obter os recursos de permissão da propriedade de navegação de permissões em um site.
 author: BarrySh
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: sharepoint
 doc_type: apiPageType
-ms.openlocfilehash: 33085513c2a6279a9c765fe43fa9eb8a025d1057
-ms.sourcegitcommit: 17f1c9cff2e59049b894db32435af02e4ae32a70
+ms.openlocfilehash: 103980ad29f36a3266bd4bcf4c58438f1e586bb1
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "51473698"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59026011"
 ---
 # <a name="list-permissions"></a>Listar permissões
 Namespace: microsoft.graph

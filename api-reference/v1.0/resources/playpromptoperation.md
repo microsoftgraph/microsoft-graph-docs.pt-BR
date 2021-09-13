@@ -2,15 +2,15 @@
 title: Tipo de recurso playPromptOperation
 description: A operação playPrompt para obter o resultado da ação playPrompt.
 author: ananmishr
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: cloud-communications
 doc_type: resourcePageType
-ms.openlocfilehash: ab75f0346bf0739a08e2608d1348ccf52030982fb0a75e0d0670f20debc362fe
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 2925224545b1615c87a9deac161c6d8b9429c545
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54251847"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59019227"
 ---
 # <a name="playpromptoperation-resource-type"></a>Tipo de recurso playPromptOperation
 
@@ -22,9 +22,9 @@ A operação playPrompt para obter o resultado da ação playPrompt.
 
 | Propriedade            | Tipo                        | Descrição|
 |:--------------------|:----------------------------|:-----------------------------------------------------------------------------------|
-| clientContext       | String                      | Cadeia de caracteres de contexto de cliente exclusiva. O limite máximo é 256 caracteres.                              |
+| clientContext       | Cadeia de caracteres                      | Cadeia de caracteres de contexto de cliente exclusiva. O limite máximo é 256 caracteres.                              |
 | id                  | String                      | Somente leitura.                                                                         |
-| resultInfo          | [resultInfo](resultinfo.md) | As informações de resultado. Apenas leitura.                                |
+| resultInfo          | [resultInfo](resultinfo.md) | As informações de resultado. Somente leitura.                                |
 | status              | String                      | Os valores possíveis são: `notStarted`, `running`, `completed`, `failed`.               |
 
 ## <a name="relationships"></a>Relações

@@ -2,15 +2,15 @@
 title: Tipo de recurso variableManagementConditionExpression
 description: Avalia o estado da condição de gerenciamento como uma expressão Boolean.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 417908e82257bb823d8d4e93d0c96cb846c5e5ed
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 46ee87a0c988f5fa651de190928c308135967cf3
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58782935"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59026865"
 ---
 # <a name="variablemanagementconditionexpression-resource-type"></a>Tipo de recurso variableManagementConditionExpression
 
@@ -28,7 +28,7 @@ Herda de [managementConditionExpressionModel](../resources/intune-fencing-manage
 ## <a name="properties"></a>Propriedades
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|managementConditionId|Cadeia de caracteres|A ID da condição de gerenciamento usada para avaliar a expressão.|
+|managementConditionId|String|A ID da condição de gerenciamento usada para avaliar a expressão.|
 
 ## <a name="relationships"></a>Relações
 Nenhum

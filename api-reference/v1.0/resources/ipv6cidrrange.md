@@ -1,22 +1,22 @@
 ---
 title: Tipo de recurso iPv6CidrRange
 description: Representa um intervalo IPv6 usando a notação CIDR.
-localization_priority: Normal
+ms.localizationpriority: medium
 author: videor
 ms.prod: directory-management
 doc_type: resourcePageType
-ms.openlocfilehash: 785df5cc15d1d052c987083fac9763982c64142309b5b361785be918803483fe
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: d36d19d3d0d10da58a3223c146be542c9f57878c
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54182423"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59062478"
 ---
 # <a name="ipv6cidrrange-resource-type"></a>Tipo de recurso iPv6CidrRange
 
 Namespace: microsoft.graph
 
-Representa um intervalo IPv6 usando a notação CIDR.
+Representa um intervalo IPv6 usando a notação CIDR (roteamento entre domínios sem classe).
 
 Herda de [ipRange](../resources/iprange.md)
 
@@ -24,7 +24,7 @@ Herda de [ipRange](../resources/iprange.md)
 
 | Propriedade     | Tipo        | Descrição |
 |:-------------|:------------|:------------|
-|cidrAddress|Cadeia de caracteres|Endereço IPv6 na notação CIDR|
+|cidrAddress|String|Endereço IPv6 na notação CIDR. Não anulável.|
 
 ## <a name="json-representation"></a>Representação JSON
 
@@ -41,6 +41,7 @@ Veja a seguir uma representação JSON do recurso.
 
 ```json
 {
+  "@odata.type": "#microsoft.graph.iPv6CidrRange", 
   "cidrAddress": "String"
 }
 ```

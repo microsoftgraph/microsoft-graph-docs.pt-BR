@@ -1,14 +1,14 @@
 ---
 title: Biblioteca da Estrutura do SharePoint para o Kit de ferramentas do Microsoft Graph
 description: Use a Estrutura do SharePoint do Microsoft Graph Toolkit para usar o Microsoft Graph Toolkit em Estrutura do SharePoint soluções.
-localization_priority: Normal
+ms.localizationpriority: medium
 author: waldekmastykarz
-ms.openlocfilehash: 6d2f354dd8913fe7cf5807bae05dde803ad74aae78243ae9bc64b5d2afd70e96
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 37f2570606b62de12f81e779fdcd4c33cb586f2c
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54249031"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59032087"
 ---
 # <a name="sharepoint-framework-library-for-microsoft-graph-toolkit"></a>Biblioteca da Estrutura do SharePoint para o Kit de ferramentas do Microsoft Graph
 
@@ -104,7 +104,7 @@ export default class MgtReact extends React.Component<IMgtReactProps, {}> {
 > 
 > Não importe de nenhum outro pacote do Microsoft Graph Toolkit ( ) para evitar empacotar sua própria cópia do kit de ferramentas e colidir `@microsoft/mgt-*` com a biblioteca compartilhada.
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Veja também
 
 * [Criar uma web part do Microsoft Office SharePoint Online com o Kit de ferramentas do Microsoft Graph](./build-a-sharepoint-web-part.md)
 * [Saiba mais sobre provedores de autenticação](../providers/providers.md)

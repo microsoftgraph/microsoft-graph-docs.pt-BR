@@ -1,16 +1,16 @@
 ---
 title: tipo de recurso directoryRoleTemplate
 description: Representa um modelo de função de diretório.
-localization_priority: Normal
+ms.localizationpriority: medium
 author: abhijeetsinha
 ms.prod: directory-management
 doc_type: resourcePageType
-ms.openlocfilehash: feffbf6c0771d367b7d5c96aba849684bfed9507ecfc6166580a749cb6009257
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 216b149be66a252e3c10163cd48cd2451c037d22
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54231849"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59089749"
 ---
 # <a name="directoryroletemplate-resource-type"></a>tipo de recurso directoryRoleTemplate
 
@@ -29,7 +29,7 @@ Representa um modelo de função de diretório. Um modelo de função de diretó
 ## <a name="properties"></a>Propriedades
 | Propriedade     | Tipo   |Descrição|
 |:---------------|:--------|:----------|
-|description|Cadeia de caracteres|A descrição definida para a função de diretório. Somente leitura.|
+|description|String|A descrição definida para a função de diretório. Somente leitura.|
 |displayName|Cadeia de caracteres|O nome de exibição para definir para a função de diretório. Somente leitura. |
 |id|String|O identificador exclusivo do modelo. Herdado de [directoryObject](directoryobject.md). Você especifica a **id** do modelo de função do diretório para a propriedade **roleTemplateId** na solicitação POST para ativar um [directoryRole](directoryrole.md) em um locatário. Chave, Não anulável. Somente leitura.|
 

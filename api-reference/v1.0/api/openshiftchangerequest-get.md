@@ -1,16 +1,16 @@
 ---
 title: Obter openShiftChangeRequest
 description: Recupere as propriedades e as relações de um objeto openShiftChangeRequest.
-localization_priority: Normal
+ms.localizationpriority: medium
 author: akumar39
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: c1b0e8e298fe862d889884ac38f20afa0083782c
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: 5e8786578d26ae3ae16b41c2e9c9367e077b9682
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52052226"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59085443"
 ---
 # <a name="get-openshiftchangerequest"></a>Obter openShiftChangeRequest
 
