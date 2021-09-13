@@ -2,15 +2,15 @@
 title: Tipo de recurso androidDeviceOwnerGlobalProxyDirect
 description: Android Device Owner Global Proxy Direct.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: af5a53d35ce552e0c9a5b04c25d03f000bff3385
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 6f1c3e169492176e2420af46c85fbd3c596c5b77
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58813646"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59148036"
 ---
 # <a name="androiddeviceownerglobalproxydirect-resource-type"></a>Tipo de recurso androidDeviceOwnerGlobalProxyDirect
 
@@ -28,9 +28,9 @@ Herda de [androidDeviceOwnerGlobalProxy](../resources/intune-deviceconfig-androi
 ## <a name="properties"></a>Propriedades
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|host|Cadeia de caracteres|O nome do host|
+|host|Cadeia de Caracteres|O nome do host|
 |port|Int32|A porta|
-|excludedHosts|Coleção de cadeias de caracteres|Os hosts excluídos|
+|excludedHosts|String collection|Os hosts excluídos|
 
 ## <a name="relationships"></a>Relações
 Nenhum

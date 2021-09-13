@@ -2,15 +2,15 @@
 title: Tipo de recurso windowsKioskProfile
 description: Ainda não documentado
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 7703d10ae28e0700905fb1360be58404a656c3ef
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 453bd7169500105a82120cfe1b50e5390e1728e3
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58799174"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59086411"
 ---
 # <a name="windowskioskprofile-resource-type"></a>Tipo de recurso windowsKioskProfile
 
@@ -26,7 +26,7 @@ Ainda não documentado
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
 |profileId|String|Chave da entidade.|
-|profileName|Cadeia de caracteres|Esse é um nome amigável usado para identificar um grupo de aplicativos, o layout desses aplicativos no menu inicial e os usuários aos quais essa configuração de quiosque é atribuída.|
+|profileName|Cadeia de Caracteres|Esse é um nome amigável usado para identificar um grupo de aplicativos, o layout desses aplicativos no menu inicial e os usuários aos quais essa configuração de quiosque é atribuída.|
 |appConfiguration|[windowsKioskAppConfiguration](../resources/intune-deviceconfig-windowskioskappconfiguration.md)|A configuração do aplicativo que será usada para essa configuração de quiosque.|
 |userAccountsConfiguration|[Coleção windowsKioskUser](../resources/intune-deviceconfig-windowskioskuser.md)|As contas de usuário que serão bloqueadas para essa configuração de quiosque. Essa coleção pode conter no máximo 100 elementos.|
 

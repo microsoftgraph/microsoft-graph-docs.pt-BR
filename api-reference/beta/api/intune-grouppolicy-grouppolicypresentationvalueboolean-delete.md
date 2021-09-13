@@ -2,15 +2,15 @@
 title: Excluir groupPolicyPresentationValueBoolean
 description: Exclui um groupPolicyPresentationValueBoolean.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 3d0d74a9fa4ec5cb3932b4acd5c504be4a161bd0
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: b6e7b7a79c96da60b0ec79373698102f2aed51df
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58786085"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59112136"
 ---
 # <a name="delete-grouppolicypresentationvalueboolean"></a>Excluir groupPolicyPresentationValueBoolean
 
@@ -29,7 +29,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |:---|:---|
 |Delegado (conta corporativa ou de estudante)|DeviceManagementConfiguration.ReadWrite.All|
 |Delegado (conta pessoal da Microsoft)|Sem suporte.|
-|Application|DeviceManagementConfiguration.ReadWrite.All|
+|Aplicativo|DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- {

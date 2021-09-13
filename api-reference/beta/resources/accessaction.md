@@ -3,15 +3,15 @@ author: daspek
 description: A presença do recurso accessAction em um itemActivity indica que a atividade acessou um item.
 ms.date: 09/12/2018
 title: AccessAction
-localization_priority: Normal
+ms.localizationpriority: medium
 doc_type: resourcePageType
 ms.prod: sites-and-lists
-ms.openlocfilehash: 372caa82e979cdb2e76e1ee327119cc0bf607480e6713311cacdf7fc6ba89223
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 0650992362d28b359b7d53a193c5c524bcb2ed30
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54246308"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59095861"
 ---
 # <a name="accessaction-resource-type"></a>Tipo de recurso accessAction
 

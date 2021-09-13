@@ -2,15 +2,15 @@
 title: tipo de número editionUpgradeLicenseType
 description: Tipo de Licença de Atualização da Edição
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 38c39f0370d6b43c9156c3cd4093dd2b4f417974
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 6805f5cb7b3531331fffbc80624c97a98516c1be
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58786996"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59101496"
 ---
 # <a name="editionupgradelicensetype-enum-type"></a>tipo de número editionUpgradeLicenseType
 

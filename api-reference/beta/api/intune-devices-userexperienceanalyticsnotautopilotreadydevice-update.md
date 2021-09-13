@@ -2,15 +2,15 @@
 title: Atualizar userExperienceAnalyticsNotAutopilotReadyDevice
 description: Atualize as propriedades de um objeto userExperienceAnalyticsNotAutopilotReadyDevice.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: a6f2987c85c6322c2b3d0447f0cb59806d91bff4
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 7e0eb200c25fa2d1bdf025e91b037a4fea6c8e4d
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58798613"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59142184"
 ---
 # <a name="update-userexperienceanalyticsnotautopilotreadydevice"></a>Atualizar userExperienceAnalyticsNotAutopilotReadyDevice
 
@@ -29,7 +29,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |:---|:---|
 |Delegado (conta corporativa ou de estudante)|DeviceManagementManagedDevices.ReadWrite.All|
 |Delegado (conta pessoal da Microsoft)|Sem suporte.|
-|Application|DeviceManagementManagedDevices.ReadWrite.All|
+|Aplicativo|DeviceManagementManagedDevices.ReadWrite.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- {
@@ -58,11 +58,11 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar [o userE
 |serialNumber|String|O número de série do dispositivo intune.|
 |fabricante|String|O fabricante do dispositivo intune.|
 |modelo|String|O modelo do dispositivo intune.|
-|managedBy|Cadeia de caracteres|O dispositivo do intune é gerenciado por.|
+|managedBy|Cadeia de Caracteres|O dispositivo do intune é gerenciado por.|
 |autoPilotRegistered|Boleano|O piloto automático do dispositivo intuneRegistered.|
 |autoPilotProfileAssigned|Boleano|O autopilotProfileAssigned do dispositivo intune.|
 |azureAdRegistered|Boleano|O dispositivo do intune é azureAdRegistered.|
-|azureAdJoinType|Cadeia de caracteres|O azure Ad joinType do dispositivo do intune.|
+|azureAdJoinType|Cadeia de Caracteres|O azure Ad joinType do dispositivo do intune.|
 
 
 

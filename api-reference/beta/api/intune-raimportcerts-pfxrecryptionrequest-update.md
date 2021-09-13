@@ -2,15 +2,15 @@
 title: Atualizar pfxRecryptionRequest
 description: Atualize as propriedades de um objeto pfxRecryptionRequest.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: cbfcf353a3549cfb49a5c0f188dd21ebb42be90a
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 537a35351ae04a3f6a4b4b220a0a4c4ef47cdb85
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58800804"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59107488"
 ---
 # <a name="update-pfxrecryptionrequest"></a>Atualizar pfxRecryptionRequest
 
@@ -29,7 +29,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |:---|:---|
 |Delegado (conta corporativa ou de estudante)|DeviceManagementConfiguration.ReadWrite.All|
 |Delegado (conta pessoal da Microsoft)|Sem suporte.|
-|Application|DeviceManagementConfiguration.ReadWrite.All|
+|Aplicativo|DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- {

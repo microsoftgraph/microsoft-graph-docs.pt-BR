@@ -1,16 +1,16 @@
 ---
 title: Tipo de recurso yammerGroupsActivityDetail
 description: Veja a seguir uma representação JSON do recurso.
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: reports
 author: sarahwxy
 doc_type: resourcePageType
-ms.openlocfilehash: 7c3b10b7b96c40ae7b7404eee2c9af99ea4bc2d602c93f9f6c68ef2ed7ad8cbe
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 1cb26b450d5007caf42521a2265c25a57c8d7793
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54176082"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59128470"
 ---
 # <a name="yammergroupsactivitydetail-resource-type"></a>Tipo de recurso yammerGroupsActivityDetail
 
@@ -21,18 +21,18 @@ Namespace: microsoft.graph
 | Propriedade           | Tipo    |
 | :----------------- | :------ |
 | reportRefreshDate  | Data    |
-| groupDisplayName   | Cadeia de caracteres  |
-| isDeleted          | Boolean |
-| ownerPrincipalName | Cadeia de caracteres  |
+| groupDisplayName   | Cadeia de Caracteres  |
+| isDeleted          | Boleano |
+| ownerPrincipalName | Cadeia de Caracteres  |
 | lastActivityDate   | Data    |
-| groupType          | Cadeia de caracteres  |
-| office365Connected | Boolean |
+| groupType          | Cadeia de Caracteres  |
+| office365Connected | Boleano |
 | memberCount        | Int64   |
 | postedCount        | Int64   |
 | readCount          | Int64   |
 | likedCount         | Int64   |
-| networkDisplayName | Cadeia de caracteres  |
-| reportPeriod       | Cadeia de caracteres  |
+| networkDisplayName | Cadeia de Caracteres  |
+| reportPeriod       | Cadeia de Caracteres  |
 
 ## <a name="json-representation"></a>Representação JSON
 

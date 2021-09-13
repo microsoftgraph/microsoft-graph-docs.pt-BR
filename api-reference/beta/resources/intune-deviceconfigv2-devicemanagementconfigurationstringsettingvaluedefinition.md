@@ -2,15 +2,15 @@
 title: Tipo de recurso deviceManagementConfigurationStringSettingValueDefinition
 description: Restrições de cadeia de caracteres
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 9731c46e9ae80f346bef29d951f4e430d76743f3
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: a497972c8d84781cb5984993389fdb1163514f0d
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58815075"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59128841"
 ---
 # <a name="devicemanagementconfigurationstringsettingvaluedefinition-resource-type"></a>Tipo de recurso deviceManagementConfigurationStringSettingValueDefinition
 
@@ -29,7 +29,7 @@ Herda [de deviceManagementConfigurationSettingValueDefinition](../resources/intu
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
 |formato|[deviceManagementConfigurationStringFormat](../resources/intune-deviceconfigv2-devicemanagementconfigurationstringformat.md)|Formato pré-definido da cadeia de caracteres. Os valores possíveis são: `none` , , , , , , , , , `email` , , `guid` , , , `ip` `base64` `url` , `version` `xml` `date` `time` `binary` `regEx` `json` `dateTime` `surfaceHub` .|
-|inputValidationSchema|Cadeia de caracteres|Expressão regular ou qualquer esquema xml ou json que a cadeia de caracteres de entrada deve corresponder|
+|inputValidationSchema|Cadeia de Caracteres|Expressão regular ou qualquer esquema xml ou json que a cadeia de caracteres de entrada deve corresponder|
 |maximumLength|Int64|Comprimento máximo da cadeia de caracteres. Valores válidos de 0 a 87516|
 |minimumLength|Int64|Comprimento mínimo da cadeia de caracteres. Valores válidos de 0 a 87516|
 |isSecret|Boleano|Especifica se a configuração precisa ser tratada como um segredo. Configurações marcados como sim serão criptografados em trânsito e em repouso e serão exibidos como asteriscos quando representados no UX.|

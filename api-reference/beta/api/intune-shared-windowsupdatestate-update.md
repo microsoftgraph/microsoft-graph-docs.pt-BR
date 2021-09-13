@@ -2,15 +2,15 @@
 title: Atualizar windowsUpdateState
 description: Atualize as propriedades de um objeto windowsUpdateState.
 author: rolyon
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 91a086fe3ab6a1b5932dff53a700a268f6cab40c
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: a32c93de0c652800eac00279d39ff60c5947c488
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58791920"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59138607"
 ---
 # <a name="update-windowsupdatestate"></a>Atualizar windowsUpdateState
 
@@ -31,7 +31,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 | &nbsp; &nbsp; **Configuração do dispositivo** | DeviceManagementConfiguration.ReadWrite.All|
 | &nbsp; &nbsp; **Atualização de Software** | DeviceManagementConfiguration.ReadWrite.All|
 |Delegado (conta pessoal da Microsoft)|Sem suporte.|
-|Application||
+|Aplicativo||
 | &nbsp; &nbsp; **Configuração do dispositivo** | DeviceManagementConfiguration.ReadWrite.All|
 | &nbsp; &nbsp; **Atualização de Software** | DeviceManagementConfiguration.ReadWrite.All|
 
@@ -63,8 +63,8 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar [o windo
 |deviceDisplayName|Cadeia de caracteres|Nome de exibição do dispositivo.|
 |userPrincipalName|Cadeia de caracteres|Nome principal do usuário.|
 |status|[windowsUpdateStatus](../resources/intune-shared-windowsupdatestatus.md)|Windows status udpate. Os valores possíveis são: `upToDate`, `pendingInstallation`, `pendingReboot`, `failed`.|
-|qualityUpdateVersion|Cadeia de caracteres|A Versão de Atualização de Qualidade do dispositivo.|
-|featureUpdateVersion|Cadeia de caracteres|A versão atual de atualização de recursos do dispositivo.|
+|qualityUpdateVersion|Cadeia de Caracteres|A Versão de Atualização de Qualidade do dispositivo.|
+|featureUpdateVersion|Cadeia de Caracteres|A versão atual de atualização de recursos do dispositivo.|
 |lastScanDateTime|DateTimeOffset|A data em que o Windows Update Agent fez uma verificação bem-sucedida.|
 |lastSyncDateTime|DateTimeOffset|Última data em que o dispositivo sincroniza com Microsoft Intune.|
 

@@ -2,13 +2,13 @@
 title: Problemas conhecidos com o Microsoft Graph
 description: Este artigo descreve os problemas conhecidos com o Microsoft Graph.
 author: MSGraphDocsVTeam
-localization_priority: Priority
-ms.openlocfilehash: e6ef743a04d7b3edce53ef1a13d59b7f090c0c05
-ms.sourcegitcommit: 6f04ad0e0cde696661511dcdf343942b43f73fc6
+ms.localizationpriority: high
+ms.openlocfilehash: c783cb4c277b4a711b8d9b146587f6856a4743b4
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/19/2021
-ms.locfileid: "58397072"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59062401"
 ---
 # <a name="known-issues-with-microsoft-graph"></a>Problemas conhecidos com o Microsoft Graph
 
@@ -17,6 +17,28 @@ Este artigo descreve os problemas conhecidos com o Microsoft Graph.
 Para relatar um problema conhecido, confira a página [Suporte Microsoft Graph](https://developer.microsoft.com/graph/support).
 
 Para saber mais sobre as atualizações mais recentes da API do Microsoft Graph, confira o [changelog do Microsoft Graph](changelog.md).
+
+## <a name="application-and-service-principal-apis"></a>APIs de aplicativo e entidade de serviço
+
+Há alterações para as entidades [application](/graph/api/resources/application?view=graph-rest-beta&preserve-view=true) e [servicePrincipal](/graph/api/resources/serviceprincipal?view=graph-rest-beta&preserve-view=true) atualmente em desenvolvimento. A seguir, encontra-se um resumo das limitações atuais e os recursos da API em desenvolvimento:
+
+Limitações atuais:
+
+* Algumas propriedades do aplicativo (como appRoles e addIns) não estarão disponíveis até que todas as alterações sejam concluídas.
+* Somente aplicativos multilocatários podem ser registrados.
+* Atualizar aplicativos é restrito aos aplicativos registrados após a atualização inicial beta.
+* Usuários do Azure Active Directory podem registrar aplicativos e adicionar proprietários adicionais.
+* Suporte para protocolos OpenID Connect e OAuth.
+* Atribuições de política para uma falha de aplicativo.
+* Falha em operações em ownedObjects que exigem appId (por exemplo, users/{id|userPrincipalName}/ownedObjects/{id}/...).
+
+Em desenvolvimento:
+
+* Capacidade de registrar aplicativos de um único locatário.
+* Atualizações para o servicePrincipal.
+* Migração de aplicativos Azure AD existentes para um modelo atualizado.
+* Suporte para appRoles, clientes pré-autorizados, reivindicações opcionais, reivindicações de associação de grupo e identidade visual.
+* Os usuários de conta Microsoft (MSA) podem registrar aplicativos.
 
 ## <a name="bookings"></a>Reservas
 
@@ -134,10 +156,6 @@ Enquanto isso, para desbloquear o desenvolvimento e testes, você pode usar a se
     New-AzureADServicePrincipal -AppId 00000003-0000-0000-c000-000000000000
     ```
 ## <a name="contacts"></a>Contatos
-
-### <a name="organization-contacts-available-in-only-beta"></a>Contatos de organização disponíveis somente na versão beta
-
-Somente os contatos pessoais têm suporte no momento. Os contatos organizacionais atualmente não têm suporte na `/v1.0`, mas podem ser encontrados na versão `/beta`.
 
 ### <a name="default-contacts-folder"></a>Pasta Contatos padrão
 
@@ -265,34 +283,20 @@ Para saber mais sobre problemas conhecidos com o uso da consulta delta, veja a [
 
 Quando [DELETE /groups/{id}/owners](/graph/api/group-delete-owners.md) é chamado para um grupo que está associado a uma [equipe](/graph/api/resources/team.md), o usuário também é removido da lista /groups/{id}/members. Para contornar isso, remova o usuário tanto dos proprietários quanto dos membros, espere 10 segundos e o adicione de volta aos membros.
 
-## <a name="identity-and-access--application-and-service-principal-apis"></a>Identidade e acesso | APIs da entidade de serviço e aplicativo
+## <a name="identity-and-access"></a>Identidade e acesso
 
-Há alterações para as entidades [application](/graph/api/resources/application?view=graph-rest-beta&preserve-view=true) e [servicePrincipal](/graph/api/resources/serviceprincipal?view=graph-rest-beta&preserve-view=true) atualmente em desenvolvimento. A seguir, encontra-se um resumo das limitações atuais e os recursos da API em desenvolvimento:
+### <a name="conditional-access-policy"></a>Política de acesso condicional
 
-Limitações atuais:
+Atualmente, a API [conditionalAccessPolicy](/graph/api/resources/conditionalaccesspolicy) requer o consentimento da permissão **Policy.Read.All** para chamar os métodos POST e PATCH. No futuro, a permissão **Policy.ReadWrite.ConditionalAccess** permitirá que você leia as políticas do diretório.
 
-* Algumas propriedades do aplicativo (como appRoles e addIns) não estarão disponíveis até que todas as alterações sejam concluídas.
-* Somente aplicativos multilocatários podem ser registrados.
-* Atualizar aplicativos é restrito aos aplicativos registrados após a atualização inicial beta.
-* Usuários do Azure Active Directory podem registrar aplicativos e adicionar proprietários adicionais.
-* Suporte para protocolos OpenID Connect e OAuth.
-* Atribuições de política para uma falha de aplicativo.
-* Falha em operações em ownedObjects que exigem appId (por exemplo, users/{id|userPrincipalName}/ownedObjects/{id}/...).
+### <a name="claims-mapping-policy"></a>Política de mapeamento de declarações
 
-Em desenvolvimento:
+A API [claimsMappingPolicy](/graph/api/resources/claimsmappingpolicy) pode exigir o consentimento das permissões **Policy.Read.All** e **Policy.ReadWrite.ConditionalAccess** para os métodos `LIST /policies/claimsMappingPolicies` e `GET /policies/claimsMappingPolicies/{id}` da seguinte forma:
 
-* Capacidade de registrar aplicativos de um único locatário.
-* Atualizações para o servicePrincipal.
-* Migração de aplicativos Azure AD existentes para um modelo atualizado.
-* Suporte para appRoles, clientes pré-autorizados, reivindicações opcionais, reivindicações de associação de grupo e identidade visual.
-* Os usuários de conta Microsoft (MSA) podem registrar aplicativos.
-* Suporte para protocolos SAML e WsFed.
++ Se nenhum objeto claimsMappingPolicy estiver disponível para ser recuperado em uma operação LIST, qualquer permissão será suficiente para chamar esse método.
++ Se houver objetos claimsMappingPolicy a serem recuperados, seu aplicativo deverá consentir com ambas as permissões. Caso contrário, um `403 Forbidden` erro será retornado.
 
-## <a name="identity-and-access--conditional-access"></a>Identidade e acesso | Acesso condicional
-
-### <a name="permissions"></a>Permissões
-
-Atualmente, a permissão Policy.Read.All é necessária para chamar as APIs POST e PATCH. No futuro, a permissão Policy.ReadWrite.ConditionalAccess possibilitará que você leia as políticas do diretório.
+No futuro, qualquer permissão será suficiente para chamar ambos os métodos.
 
 ## <a name="json-batching"></a>Envio em lote JSON
 
@@ -338,6 +342,30 @@ O parâmetro **comment** para criar uma resposta ou rascunho de encaminhamento (
 ### <a name="get-messages-returns-chats-in-microsoft-teams"></a>As mensagens GET retornam chats no Microsoft Teams
 
 Em pontos de extremidade beta e v1, a resposta de `GET /users/id/messages` inclui chats do usuário no Microsoft Teams que ocorreu fora do escopo de uma equipe ou de um canal. Essas mensagens de chat tem "IM" como o assunto.
+
+## <a name="reports"></a>Relatórios
+
+### <a name="azure-ad-activity-reports"></a>Relatórios de atividade do Azure AD
+
+Quando você tiver uma licença válida do Azure AD Premium e chamar [directoryAudit](/graph/api/resources/directoryaudit), [signIn](/graph/api/resources/signin)ou [provisionar](/graph/api/resources/provisioningobjectsummary) as APIs de relatórios de atividade do Azure AD, você ainda poderá encontrar uma mensagem de erro semelhante à seguinte:
+
+```json
+{
+    "error": {
+        "code": "Authentication_RequestFromNonPremiumTenantOrB2CTenant",
+        "message": "Neither tenant is B2C or tenant doesn't have premium license",
+        "innerError": {
+            "date": "2021-09-02T17:15:30",
+            "request-id": "73badd94-c0ca-4b09-a3e6-20c1f5f9a307",
+            "client-request-id": "73badd94-c0ca-4b09-a3e6-20c1f5f9a307"
+        }
+    }
+}
+```
+Esse erro também pode ocorrer ao recuperar a propriedade **signInActivity** do recurso do [usuário](/graph/api/resources/user?view=graph-rest-beta&preserve-view=true); por exemplo, `https://graph.microsoft.com/beta/users?$select=signInActivity`.
+
+Esse erro ocorre por causa das falhas de verificação de licença intermitentes, que estamos trabalhando para corrigir. Como solução alternativa temporária, adicione a permissão **Directory.Read.All**. Essa solução alternativa temporária não será necessária quando o problema for resolvido.
+
 
 ## <a name="teamwork-microsoft-teams"></a>Trabalho em equipe (Microsoft Teams)
 

@@ -1,16 +1,16 @@
 ---
 title: Tipo de recurso oneDriveActivityUserDetail
 description: Veja a seguir uma representação JSON do recurso.
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: sharepoint
 doc_type: resourcePageType
 author: JeremyKelley
-ms.openlocfilehash: e2c2a0155d0bd571dad12ba94efaf080343d984560feefd9aa354241b4c61e9d
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 89b6cd03e4f4b4876806ca0588073b98e3c235c7
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54229399"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59085886"
 ---
 # <a name="onedriveactivityuserdetail-resource-type"></a>Tipo de recurso oneDriveActivityUserDetail
 
@@ -22,7 +22,7 @@ Namespace: microsoft.graph
 | :------------------------ | :---------------- |
 | reportRefreshDate         | Data              |
 | userPrincipalName         | Cadeia de caracteres            |
-| isDeleted                 | Boolean           |
+| isDeleted                 | Boleano           |
 | deletedDate               | Data              |
 | lastActivityDate          | Data              |
 | viewedOrEditedFileCount   | Int64             |
@@ -30,7 +30,7 @@ Namespace: microsoft.graph
 | sharedInternallyFileCount | Int64             |
 | sharedExternallyFileCount | Int64             |
 | assignedProducts          | String collection |
-| reportPeriod              | Cadeia de caracteres            |
+| reportPeriod              | Cadeia de Caracteres            |
 
 ## <a name="json-representation"></a>Representação JSON
 

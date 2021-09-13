@@ -2,15 +2,15 @@
 title: Tipo de recurso mobileAppInstallSummary
 description: Contém propriedades para o resumo de instalação de um aplicativo móvel.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: d92ba2afe56607490c4bdf8b1d0443eb500be912
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 1cc168933bad8a1eef5e177cc5361dd196c31cb5
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58817415"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59124228"
 ---
 # <a name="mobileappinstallsummary-resource-type"></a>Tipo de recurso mobileAppInstallSummary
 

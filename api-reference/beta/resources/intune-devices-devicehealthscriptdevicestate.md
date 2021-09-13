@@ -2,15 +2,15 @@
 title: Tipo de recurso deviceHealthScriptDeviceState
 description: Contém propriedades para o estado de executar o dispositivo do script de saúde do dispositivo.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: dfdf8398f9551a68a450d053060959f92463779c
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: e6bfea941ad34a0fd2d58277d544d4e5ea0daf5e
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58793821"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59115342"
 ---
 # <a name="devicehealthscriptdevicestate-resource-type"></a>Tipo de recurso deviceHealthScriptDeviceState
 
@@ -28,7 +28,7 @@ Contém propriedades para o estado de executar o dispositivo do script de saúde
 |[Listar deviceHealthScriptDeviceStates](../api/intune-devices-devicehealthscriptdevicestate-list.md)|[Coleção deviceHealthScriptDeviceState](../resources/intune-devices-devicehealthscriptdevicestate.md)|Listar propriedades e relações dos [objetos deviceHealthScriptDeviceState.](../resources/intune-devices-devicehealthscriptdevicestate.md)|
 |[Obter deviceHealthScriptDeviceState](../api/intune-devices-devicehealthscriptdevicestate-get.md)|[deviceHealthScriptDeviceState](../resources/intune-devices-devicehealthscriptdevicestate.md)|Leia propriedades e relações do [objeto deviceHealthScriptDeviceState.](../resources/intune-devices-devicehealthscriptdevicestate.md)|
 |[Criar deviceHealthScriptDeviceState](../api/intune-devices-devicehealthscriptdevicestate-create.md)|[deviceHealthScriptDeviceState](../resources/intune-devices-devicehealthscriptdevicestate.md)|Crie um novo [objeto deviceHealthScriptDeviceState.](../resources/intune-devices-devicehealthscriptdevicestate.md)|
-|[Excluir deviceHealthScriptDeviceState](../api/intune-devices-devicehealthscriptdevicestate-delete.md)|Nenhum(a)|Exclui um [deviceHealthScriptDeviceState](../resources/intune-devices-devicehealthscriptdevicestate.md).|
+|[Excluir deviceHealthScriptDeviceState](../api/intune-devices-devicehealthscriptdevicestate-delete.md)|Nenhum|Exclui um [deviceHealthScriptDeviceState](../resources/intune-devices-devicehealthscriptdevicestate.md).|
 |[Atualizar deviceHealthScriptDeviceState](../api/intune-devices-devicehealthscriptdevicestate-update.md)|[deviceHealthScriptDeviceState](../resources/intune-devices-devicehealthscriptdevicestate.md)|Atualize as propriedades de [um objeto deviceHealthScriptDeviceState.](../resources/intune-devices-devicehealthscriptdevicestate.md)|
 
 ## <a name="properties"></a>Propriedades
@@ -39,13 +39,13 @@ Contém propriedades para o estado de executar o dispositivo do script de saúde
 |lastStateUpdateDateTime|DateTimeOffset|O último período de data/hora de quando o script de saúde do dispositivo foi executado|
 |expectedStateUpdateDateTime|DateTimeOffset|O próximo horário de quando o script de saúde do dispositivo deve ser executado|
 |lastSyncDateTime|DateTimeOffset|A última vez que a Extensão de Managment do Intune foi sincronizada com o Intune|
-|preRemediationDetectionScriptOutput|Cadeia de caracteres|Saída do script de detecção antes da correção|
-|preRemediationDetectionScriptError|Cadeia de caracteres|Erro do script de detecção antes da correção|
-|remediationScriptError|Cadeia de caracteres|Saída de erro do script de correção|
-|postRemediationDetectionScriptOutput|Cadeia de caracteres|Saída de script de detecção após correção|
-|postRemediationDetectionScriptError|Cadeia de caracteres|Erro do script de detecção após a correção|
+|preRemediationDetectionScriptOutput|Cadeia de Caracteres|Saída do script de detecção antes da correção|
+|preRemediationDetectionScriptError|Cadeia de Caracteres|Erro do script de detecção antes da correção|
+|remediationScriptError|Cadeia de Caracteres|Saída de erro do script de correção|
+|postRemediationDetectionScriptOutput|Cadeia de Caracteres|Saída de script de detecção após correção|
+|postRemediationDetectionScriptError|Cadeia de Caracteres|Erro do script de detecção após a correção|
 |remediationState|[remediationState](../resources/intune-devices-remediationstate.md)|Estado de correção da última execução do script de saúde do dispositivo. Os valores possíveis são: `unknown`, `skipped`, `success`, `remediationFailed`, `scriptError`.|
-|assignmentFilterIds|Coleção de cadeias de caracteres|Uma lista das IDs de filtro de atribuição usadas para avaliação de aplicabilidade do script de saúde|
+|assignmentFilterIds|String collection|Uma lista das IDs de filtro de atribuição usadas para avaliação de aplicabilidade do script de saúde|
 
 ## <a name="relationships"></a>Relações
 |Relação|Tipo|Descrição|

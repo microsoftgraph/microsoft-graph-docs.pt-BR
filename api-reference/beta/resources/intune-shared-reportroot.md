@@ -1,16 +1,16 @@
 ---
 title: Tipo de recurso reportRoot
 description: O recurso que representa uma instância de um dispositivo ou relatório de solução de problemas, dependendo do contexto.
-localization_priority: Normal
+ms.localizationpriority: medium
 author: rolyon
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: b8dc76b595e5a9d628dc19ef464238d844864073a8ecbb80d0d8db2baa3292b3
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 56e3bc6d11c913a35ee69a803a7e038a86971518
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54160986"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59115272"
 ---
 # <a name="reportroot-resource-type"></a>Tipo de recurso reportRoot
 
@@ -59,7 +59,6 @@ Veja a seguir uma representação JSON do recurso.
   "id": "String (identifier)"
 }
 ```
-
 
 
 

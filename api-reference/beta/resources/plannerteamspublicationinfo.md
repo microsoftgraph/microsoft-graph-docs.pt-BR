@@ -2,15 +2,15 @@
 title: Tipo de recurso plannerTeamsPublicationInfo
 description: Contém informações detalhadas sobre o processo de publicação que criou um plannerTask.
 author: TarkanSevilmis
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: planner
 doc_type: resourcePageType
-ms.openlocfilehash: 7cf298b4e9933e3019a72b0750cf01a95c2bf892609f3b601c0742eaf3b9e27d
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 77441184468a87e6d12d32adedc98a26c228db68
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54244292"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59115041"
 ---
 # <a name="plannerteamspublicationinfo-resource-type"></a>Tipo de recurso plannerTeamsPublicationInfo
 
@@ -22,10 +22,10 @@ Contém informações detalhadas sobre o processo de publicação que criou um [
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
 |lastModifiedDateTime|DateTimeOffset|A data e a hora em que essa tarefa foi modificada pela última vez pelo processo de publicação. Somente leitura. |
-|publicationId|Cadeia de caracteres| O identificador da publicação. Somente leitura.|
-|publishedToPlanId|Cadeia de caracteres|O identificador do **plannerPlan essa** tarefa foi originalmente colocada. Somente leitura. |
-|publishingTeamId|Cadeia de caracteres| O identificador da equipe [que](team.md) iniciou o processo de publicação. Somente leitura.|
-|publishingTeamName|Cadeia de caracteres|O nome de exibição da equipe que iniciou o processo de publicação. Esse nome de exibição é apenas para referência e pode não representar o nome mais atualizado da equipe. Somente leitura. |
+|publicationId|Cadeia de Caracteres| O identificador da publicação. Somente leitura.|
+|publishedToPlanId|Cadeia de Caracteres|O identificador do **plannerPlan essa** tarefa foi originalmente colocada. Somente leitura. |
+|publishingTeamId|Cadeia de Caracteres| O identificador da equipe [que](team.md) iniciou o processo de publicação. Somente leitura.|
+|publishingTeamName|Cadeia de Caracteres|O nome de exibição da equipe que iniciou o processo de publicação. Esse nome de exibição é apenas para referência e pode não representar o nome mais atualizado da equipe. Somente leitura. |
 
 ## <a name="relationships"></a>Relações
 Nenhum
