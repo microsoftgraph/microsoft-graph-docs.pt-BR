@@ -2,15 +2,15 @@
 title: Listar cloudPcDeviceImages
 description: Listar as propriedades e as relações das imagens do sistema operacional carregadas no Cloud PC.
 author: AshleyYangSZ
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: cloud-pc
 doc_type: apiPageType
-ms.openlocfilehash: dd5d6ea1f3363963fdb978766d788c167437bd66
-ms.sourcegitcommit: a598c09b73e4e43eea5f4aaefea7ffe062e15c39
+ms.openlocfilehash: 6f8ec3ee7638c5ba30d329c714fcc154c514dab1
+ms.sourcegitcommit: 08e9b0bac39c1b1d2c8a79539d24aaa93364baf2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/22/2021
-ms.locfileid: "53534085"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59507519"
 ---
 # <a name="list-deviceimages"></a>Listar deviceImages
 
@@ -19,8 +19,6 @@ Namespace: microsoft.graph
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Listar as propriedades e as relações dos objetos [cloudPcDeviceImage](../resources/cloudpcdeviceimage.md) (imagens do sistema operacional) carregados no Cloud PC.
-
-[!INCLUDE [cloudpc-api-preview](../../includes/cloudpc-api-preview.md)]
 
 ## <a name="permissions"></a>Permissões
 

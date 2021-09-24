@@ -2,15 +2,15 @@
 title: Tipo de recurso cloudPcAuditEvent
 description: Representa a entidade de evento de auditoria.
 author: ecmadao
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: cloud-pc
 doc_type: resourcePageType
-ms.openlocfilehash: a863ea4128b7383c70bd14f025fcc5ce116dda25
-ms.sourcegitcommit: 7f674112f5b95446fac86d829509f889c60f1693
+ms.openlocfilehash: 155ecf60bcd160877fe905ef1bd6b328b60bb49d
+ms.sourcegitcommit: 08e9b0bac39c1b1d2c8a79539d24aaa93364baf2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/30/2021
-ms.locfileid: "53211193"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59507512"
 ---
 # <a name="cloudpcauditevent-resource-type"></a>Tipo de recurso cloudPcAuditEvent
 
@@ -20,9 +20,7 @@ Namespace: microsoft.graph
 
 Representa a entidade de evento de auditoria.
 
-[!INCLUDE [cloudpc-api-preview](../../includes/cloudpc-api-preview.md)]
-
-## <a name="methods"></a>Métodos
+## <a name="methods"></a>Methods
 
 |Método|Tipo de retorno|Descrição|
 |:---|:---|:---|
@@ -34,18 +32,18 @@ Representa a entidade de evento de auditoria.
 
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|id|String|Chave da entidade de auditoria. Somente leitura.|
-|displayName|String|Nome de exibição do evento. Só leitura.|
+|id|Cadeia de caracteres|Chave da entidade de auditoria. Somente leitura.|
+|displayName|Cadeia de caracteres|Nome de exibição do evento. Somente leitura.|
 |componentName|Cadeia de caracteres|Nome do componente. Somente leitura.|
-|actor|[cloudPcAuditActor](../resources/cloudpcauditactor.md)|Usuário e aplicativo do Azure AD associados ao evento de auditoria. Só leitura.|
+|actor|[cloudPcAuditActor](../resources/cloudpcauditactor.md)|Usuário e aplicativo do Azure AD associados ao evento de auditoria. Somente leitura.|
 |atividade|Cadeia de caracteres|Nome amigável da atividade.Opcional.|
-|activityDateTime|DateTimeOffset|A hora e data em UTC em que a atividade foi executada.Só leitura.|
-|activityType|Cadeia de caracteres|O tipo de atividade que foi realizada.Só leitura.|
-|activityOperationType|[cloudPcAuditActivityOperationType](#cloudpcauditactivityoperationtype-values)|O tipo de operação HTTP da atividade. Os valores possíveis  `create` `delete` incluem , e `patch` `other` . Só leitura.|
-|activityResult|[cloudPcAuditActivityResult](#cloudpcauditactivityresult-values)|O resultado da atividade.Só leitura.|
-|correlationId|Cadeia de caracteres|O identificador de solicitação do cliente, usado para correlacionar a atividade no sistema.Só leitura.|
-|recursos|[Coleção cloudPcAuditResource](../resources/cloudpcauditresource.md)|Lista de objetos cloudPcAuditResource.Só leitura.|
-|category|[cloudPcAuditCategory](#cloudpcauditcategory-values)|Categoria de auditoria. Só leitura.|
+|activityDateTime|DateTimeOffset|A hora e data em UTC em que a atividade foi executada.Somente leitura.|
+|activityType|Cadeia de caracteres|O tipo de atividade que foi realizada.Somente leitura.|
+|activityOperationType|[cloudPcAuditActivityOperationType](#cloudpcauditactivityoperationtype-values)|O tipo de operação HTTP da atividade. Os valores possíveis  `create` `delete` incluem , e `patch` `other` . Somente leitura.|
+|activityResult|[cloudPcAuditActivityResult](#cloudpcauditactivityresult-values)|O resultado da atividade.Somente leitura.|
+|correlationId|Cadeia de caracteres|O identificador de solicitação do cliente, usado para correlacionar a atividade no sistema.Somente leitura.|
+|recursos|[Coleção cloudPcAuditResource](../resources/cloudpcauditresource.md)|Lista de objetos cloudPcAuditResource.Somente leitura.|
+|category|[cloudPcAuditCategory](#cloudpcauditcategory-values)|Categoria de auditoria. Somente leitura.|
 
 ### <a name="cloudpcauditactivityoperationtype-values"></a>valores cloudPcAuditActivityOperationType
 

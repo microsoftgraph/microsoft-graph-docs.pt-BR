@@ -1,16 +1,16 @@
 ---
 title: Excluir unifiedRoleAssignmentMultiple
 description: Exclua um objeto unifiedRoleAssignmentMultiple.
-localization_priority: Normal
+ms.localizationpriority: medium
 author: abhijeetsinha
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: 6d888d8755ca39fd4cfb7e9b8d4c93c18bfcb487
-ms.sourcegitcommit: a598c09b73e4e43eea5f4aaefea7ffe062e15c39
+ms.openlocfilehash: b2e933da27e57496d9584c570f71e23a02a750ec
+ms.sourcegitcommit: 08e9b0bac39c1b1d2c8a79539d24aaa93364baf2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/22/2021
-ms.locfileid: "53534078"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59507218"
 ---
 # <a name="delete-unifiedroleassignmentmultiple"></a>Excluir unifiedRoleAssignmentMultiple
 
@@ -23,8 +23,6 @@ Namespace: microsoft.graph
 Isso é aplicável a um aplicativo RBAC que oferece suporte a várias entidades e escopos. No momento, há suporte para os seguintes provedores RBAC:
 - Cloud PC 
 - gerenciamento de dispositivos (Intune)
-
-[!INCLUDE [cloudpc-api-preview](../../includes/cloudpc-api-preview.md)]
 
 ## <a name="permissions"></a>Permissões
 

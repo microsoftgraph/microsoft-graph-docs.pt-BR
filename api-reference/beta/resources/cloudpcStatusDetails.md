@@ -1,34 +1,32 @@
 ---
-title: tipo de recurso cloudPcStatusDetails
-description: Os detalhes do status do PC de nuvem.
+title: Tipo de recurso cloudPcStatusDetails
+description: Os detalhes do status do computador na nuvem.
 author: AshleyYangSZ
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: cloud-pc
 doc_type: resourcePageType
-ms.openlocfilehash: 61260bc7f3437fe1f10575afc616462eec2e47dc
-ms.sourcegitcommit: 958b540f118ef3ce64d4d4e96b29264e2b56d703
+ms.openlocfilehash: ae9054e92279d976d65aafc72ac2c38190c88b84
+ms.sourcegitcommit: 08e9b0bac39c1b1d2c8a79539d24aaa93364baf2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/03/2020
-ms.locfileid: "49563828"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59507813"
 ---
-# <a name="cloudpcstatusdetails-resource-type"></a>tipo de recurso cloudPcStatusDetails
+# <a name="cloudpcstatusdetails-resource-type"></a>Tipo de recurso cloudPcStatusDetails
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Os detalhes do status do PC de nuvem.
-
-[!INCLUDE [cloudpc-api-preview](../../includes/cloudpc-api-preview.md)]
+Os detalhes do status do computador na nuvem.
 
 ## <a name="properties"></a>Propriedades
 
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|código|String|O código associado ao status do PC de nuvem.|
+|código|Cadeia de caracteres|O código associado ao status do computador na nuvem.|
 |mensagem|String|A mensagem de status.|
-|additionalInformation|Coleção [KeyValuePair](../resources/keyvaluepair.md)|Informações adicionais sobre o status do PC de nuvem.|
+|additionalInformation|[Coleção KeyValuePair](../resources/keyvaluepair.md)|Qualquer informação adicional sobre o status do computador na nuvem.|
 
 ## <a name="relationships"></a>Relações
 

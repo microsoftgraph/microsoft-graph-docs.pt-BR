@@ -2,15 +2,15 @@
 title: Listar logons
 doc_type: apiPageType
 description: Obter uma lista dos logins do usuário em um Azure Active Directory locatário.
-localization_priority: Normal
+ms.localizationpriority: medium
 author: besiler
 ms.prod: identity-and-access-reports
-ms.openlocfilehash: 78d6a80103e3c5328f9ed69729c72195d3254885
-ms.sourcegitcommit: c6f7a931a8d83ac54f577b7bec08237fd17ce51a
+ms.openlocfilehash: ed5e9d304278040a957347e8e2550b53f2e562b5
+ms.sourcegitcommit: 08e9b0bac39c1b1d2c8a79539d24aaa93364baf2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/24/2021
-ms.locfileid: "58490116"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59507827"
 ---
 # <a name="list-signins"></a>Listar logons
 
@@ -32,14 +32,17 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 | Delegado (conta pessoal da Microsoft) | Sem suporte |
 | Aplicativo | AuditLog.Read.All e Directory.Read.All | 
 
+> [!IMPORTANT]
+> Esta API tem um [problema conhecido](/graph/known-issues#azure-ad-activity-reports) e atualmente requer consentimento para as permissões **AuditLog.Read.All** e **Directory.Read.All.**
+
 Os aplicativos devem [estar registrados corretamente](/azure/active-directory/active-directory-reporting-api-prerequisites-azure-portal) no Azure AD.
 
 Além das permissões delegadas, o usuário inscreveu precisa pertencer a uma das seguintes funções de diretório que permitem ler relatórios de logons. Para saber mais sobre funções de diretório, consulte Funções do [Azure AD integrados](/azure/active-directory/roles/permissions-reference):
 + Administrador global
-+ Leitor global
++ Leitor Global
 + Leitor de Relatórios
-+ Administrador de segurança
-+ Operador de segurança
++ Administrador de Segurança
++ Operador de Segurança
 + Leitor de Segurança
 
 ## <a name="http-request"></a>Solicitação HTTP
@@ -50,7 +53,7 @@ GET auditLogs/signIns
 
 ## <a name="optional-query-parameters"></a>Parâmetros de consulta opcionais
 
-Este método dá suporte `$top` aos `$skiptoken` parâmetros , e `$filter` OData Query para ajudar a personalizar a resposta. Para obter detalhes sobre como usar esses parâmetros, confira [Parâmetros de consulta do OData](/graph/query_parameters).
+Este método dá suporte `$top` aos `$skiptoken` parâmetros , e `$filter` OData Query para ajudar a personalizar a resposta. Para obter detalhes sobre como usar esses parâmetros, confira [Parâmetros de consulta do OData](/graph/query-parameters).
 
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
 

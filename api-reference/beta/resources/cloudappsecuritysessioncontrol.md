@@ -1,16 +1,16 @@
 ---
 title: Tipo de recurso cloudAppSecuritySessionControl
 description: Controle de sessão usado para impor verificações de segurança do aplicativo na nuvem.
-localization_priority: Normal
+ms.localizationpriority: medium
 author: dkershaw10
 ms.prod: identity-and-sign-in
 doc_type: resourcePageType
-ms.openlocfilehash: 630c558981b3dc9bbb0ec48c9a81ff74868c43bb
-ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
+ms.openlocfilehash: cb199328c95d1f60cd1149f7aa5a686218b0ee76
+ms.sourcegitcommit: 08e9b0bac39c1b1d2c8a79539d24aaa93364baf2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "50941827"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59507806"
 ---
 # <a name="cloudappsecuritysessioncontrol-resource-type"></a>Tipo de recurso cloudAppSecuritySessionControl
 
@@ -25,7 +25,7 @@ Controle de sessão usado para impor verificações de segurança do aplicativo 
 | Propriedade     | Tipo        | Descrição |
 |:-------------|:------------|:------------|
 |isEnabled     |Booliano      | Especifica se o controle de sessão está habilitado. |
-|cloudAppSecurityType|cloudAppSecuritySessionControlType| Os valores possíveis são: `mcasConfigured`, `monitorOnly`, `blockDownloads`. Saiba mais sobre esses valores aqui: https://docs.microsoft.com/cloud-app-security/proxy-deployment-aad#step-1-create-an-azure-ad-conditional-access-test-policy- |
+|cloudAppSecurityType|cloudAppSecuritySessionControlType| Os valores possíveis são: `mcasConfigured`, `monitorOnly`, `blockDownloads`. Para saber mais sobre esses valores, Implante o Controle de Aplicativo de [Acesso Condicional para aplicativos em destaque.](https://docs.microsoft.com/en-us/cloud-app-security/proxy-deployment-aad#step-1--configure-your-idp-to-work-with-cloud-app-security) |
 
 ## <a name="relationships"></a>Relações
 

@@ -2,15 +2,15 @@
 title: Listar includedGroups
 description: Obter a lista de grupos incluídos em uma política de gerenciamento de dispositivo móvel.
 author: ravennMSFT
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: 9cdb9724c19fbf8af2fa15e86c29fee11632ec72
-ms.sourcegitcommit: 486fe9c77d4d89c5416bb83e8c716e6918c47370
+ms.openlocfilehash: 6644d15cf564304bf2cd3a0ba5894caa10f76e35
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/15/2021
-ms.locfileid: "53441027"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59507855"
 ---
 # <a name="list-includedgroups"></a>Listar includedGroups
 
@@ -20,14 +20,14 @@ Namespace: microsoft.graph
 
 Obter a lista de grupos incluídos em uma política de gerenciamento de dispositivo móvel.
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>Permissões
 
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão|Permissões (da com menos para a com mais privilégios)|
 |:---|:---|
 |Delegado (conta corporativa ou de estudante)|Policy.Read.All, Policy.ReadWrite.MobilityManagement|
-|Delegada (conta pessoal da Microsoft) | Sem suporte.|
+|Delegado (conta pessoal da Microsoft) | Sem suporte.|
 |Aplicativo | Sem suporte.|
 
 ## <a name="http-request"></a>Solicitação HTTP

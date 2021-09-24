@@ -1,16 +1,16 @@
 ---
 title: Lista directoryAudits
 description: Descreve o método de lista do recurso directoryAudit (entidade) da API do Microsoft Graph (versão beta).
-localization_priority: Normal
+ms.localizationpriority: medium
 author: SarahBar
 ms.prod: identity-and-access-reports
 doc_type: apiPageType
-ms.openlocfilehash: 63b29589d1aef21b8d832bb7b2e329d6f4eaee69
-ms.sourcegitcommit: 5bb981b4853663354a566d4a4a5cbf288939e441
+ms.openlocfilehash: 0bc052fdb4d812bb733f9628b6d842f4ff8c50a3
+ms.sourcegitcommit: 08e9b0bac39c1b1d2c8a79539d24aaa93364baf2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/24/2021
-ms.locfileid: "53579404"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59507393"
 ---
 # <a name="list-directoryaudits"></a>Lista directoryAudits
 
@@ -26,9 +26,12 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegada (conta corporativa ou de estudante) | AuditLog.Read.All e Directory.Read.All |
-|Delegado (conta pessoal da Microsoft) | Sem suporte   |
-|Aplicativo | AuditLog.Read.All e Directory.Read.All | 
+|Delegado (conta corporativa ou de estudante) | AuditLog.Read.All e Directory.Read.All |
+|Delegado (conta pessoal da Microsoft) | Sem suporte.   |
+|Application | AuditLog.Read.All e Directory.Read.All | 
+
+> [!IMPORTANT]
+> Esta API tem um [problema conhecido](/graph/known-issues#azure-ad-activity-reports) e atualmente requer consentimento para as permissões **AuditLog.Read.All** e **Directory.Read.All.**
 
 Além disso, os aplicativos devem ser [corretamente registrados](/azure/active-directory/active-directory-reporting-api-prerequisites-azure-portal) no Azure AD.
 
@@ -41,7 +44,7 @@ GET /auditLogs/directoryAudits
 
 ## <a name="optional-query-parameters"></a>Parâmetros de consulta opcionais
 
-Este método dá suporte aos seguintes parâmetros de consulta OData para ajudar a personalizar a resposta. Para obter detalhes sobre como usar esses parâmetros, consulte [Parâmetros de consulta OData](/graph/query_parameters).
+Este método dá suporte aos seguintes parâmetros de consulta OData para ajudar a personalizar a resposta. Para obter detalhes sobre como usar esses parâmetros, consulte [Parâmetros de consulta OData](/graph/query-parameters).
 
 |Parâmetro     |Descrição                            |Exemplo|
 |:--------------------|----------------|------------------------------------------------------------------------|

@@ -5,12 +5,12 @@ author: nickgmicrosoft
 ms.localizationpriority: medium
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: d8a3dd21cce42a59217540ec9b266bd7a805941a
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 20a2e5b41d21525cab27108905d976306a6a3564
+ms.sourcegitcommit: 08e9b0bac39c1b1d2c8a79539d24aaa93364baf2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59090807"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59507211"
 ---
 # <a name="update-apiconnectorconfiguration"></a>Atualizar apiConnectorConfiguration
 
@@ -176,6 +176,7 @@ HTTP/1.1 204 No Content
 Este é um exemplo de solicitação.
 
 
+
 # <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
@@ -202,6 +203,7 @@ Content-Type: application/json
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
+
 
 
 

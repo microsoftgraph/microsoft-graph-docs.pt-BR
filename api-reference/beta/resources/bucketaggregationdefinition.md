@@ -1,34 +1,34 @@
 ---
-title: tipo de recurso bucketAggregationDefinition
-description: Fornece os detalhes sobre como o agregations deve ser gerado nos resultados
-localization_priority: Normal
+title: Tipo de recurso bucketAggregationDefinition
+description: Fornece os detalhes sobre como gerar as agregações nos resultados
+ms.localizationpriority: medium
 author: nmoreau
 ms.prod: search
 doc_type: resourcePageType
-ms.openlocfilehash: 1f9fdadefc43b99b8772217db9a9b101357a1c9c
-ms.sourcegitcommit: b70ee16cdf24daaec923acc477b86dbf76f2422b
+ms.openlocfilehash: 0100852456ec9431e0d0d0bb5cd78d2f236392bb
+ms.sourcegitcommit: 08e9b0bac39c1b1d2c8a79539d24aaa93364baf2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48193837"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59507505"
 ---
-# <a name="bucketaggregationdefinition-resource-type"></a>tipo de recurso bucketAggregationDefinition
+# <a name="bucketaggregationdefinition-resource-type"></a>Tipo de recurso bucketAggregationDefinition
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Especifica detalhes para agregar resultados de pesquisa.
+Fornece os detalhes sobre como gerar as agregações nos resultados.
 
 ## <a name="properties"></a>Propriedades
 
 | Propriedade     | Tipo        | Descrição |
 |:-------------|:------------|:------------|
-|sortBy|bucketAggregationSortProperty| Os valores possíveis são `count` classificados pelo número de correspondências na agregação `keyAsString` para classificar o alphabeticaly com base na chave da agregação, `keyAsNumber` para a classificação numérica com base na chave da agregação. Obrigatório.
 |isDescending|Booliano|`True` para especificar a ordem de classificação como decrescente. O padrão é `false` , com a ordem de classificação como crescente. Opcional.|
-|prefixFilter|String|Um filtro para definir um critério de correspondência. A chave deve começar com o prefixo especificado a ser retornado na resposta. Opcional.|
-|minimumCount|Int32|O número mínimo de itens que devem estar presentes na agregação a serem retornados em um Bucket. Opcional.|
-|ranges|coleção [bucketAggregationRange](bucketaggregationrange.md)|Especifica os intervalos manuais para calcular as agregações. Isso é válido apenas para refinadores que não são de cadeia de caracteres do tipo data ou numérico. Opcional.|
+|minimumCount|Int32|O número mínimo de itens que devem estar presentes na agregação a ser retornado em um bucket. Opcional.|
+|prefixFilter|Cadeia de caracteres|Um filtro para definir um critério correspondente. A chave deve começar com o prefixo especificado a ser retornado na resposta. Opcional.|
+|ranges|[Coleção bucketAggregationRange](bucketaggregationrange.md)|Especifica os intervalos manuais para calcular as agregação. Isso só é válido para refinadores que não são de cadeia de caracteres de data ou tipo numérico. Opcional.|
+|sortBy|bucketAggregationSortProperty| Os valores possíveis são classificar pelo número de combinações na agregação, classificar alfabética com base na chave na agregação, para classificação numérica com base na chave na `count` `keyAsString` `keyAsNumber` agregação. Obrigatório.
 
 ## <a name="json-representation"></a>Representação JSON
 

@@ -2,15 +2,15 @@
 title: Tipo de recurso cloudPcManagementAssignmentTarget
 description: destino de atribuição cloudPcManagement. Tipo base.
 author: AshleyYangSZ
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: cloud-pc
 doc_type: resourcePageType
-ms.openlocfilehash: eab9b1041a78ac5b497174febe33d0db3d5ac566
-ms.sourcegitcommit: 9ac6bbab3df22e7629cf2bde796b527337c680aa
+ms.openlocfilehash: 79b7d4c7c338b8b49b28654a1329fc1220987ca0
+ms.sourcegitcommit: 08e9b0bac39c1b1d2c8a79539d24aaa93364baf2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/23/2021
-ms.locfileid: "53082262"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59507498"
 ---
 # <a name="cloudpcmanagementassignmenttarget-resource-type"></a>Tipo de recurso cloudPcManagementAssignmentTarget
 
@@ -21,8 +21,6 @@ Namespace: microsoft.graph
 Tipo base para destinos de atribuição.
 
 O [recurso cloudPcManagementGroupAssignmentTarget,](cloudpcmanagementgroupassignmenttarget.md) que representa um grupo de destino de atribuição, herda desse tipo base.
-
-[!INCLUDE [cloudpc-api-preview](../../includes/cloudpc-api-preview.md)]
 
 ## <a name="properties"></a>Propriedades
 
