@@ -2,15 +2,15 @@
 title: Obter educationAssignmentSettings
 description: Leia as propriedades e as relações de um objeto educationAssignmentSettings.
 author: dipakboyed
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: a8120bb03ca21885ef7cb6f08148a9638bf7582a
-ms.sourcegitcommit: 1e9a53e7b8e67349288f5cfbabe8355de83817b0
+ms.openlocfilehash: bfd8a3377407ccdabfd2f9afece73fb2408e8945
+ms.sourcegitcommit: 08e9b0bac39c1b1d2c8a79539d24aaa93364baf2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/17/2021
-ms.locfileid: "58367251"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59508769"
 ---
 # <a name="get-educationassignmentsettings"></a>Obter educationAssignmentSettings
 Namespace: microsoft.graph
@@ -24,9 +24,9 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 |Tipo de permissão|Permissões (da com menos para a com mais privilégios)|
 |:---|:---|
-|Delegada (conta corporativa ou de estudante)|EduAssignments.ReadBasic, EduAssignments.ReadWriteBasic, EduAssignments.Read, EduAssignments.ReadWrite|
-|Delegada (conta pessoal da Microsoft)|Sem suporte.|
-|Aplicativo| EduAssignments.ReadBasic.All, EduAssignments.ReadWriteBasic.All, EduAssignments.Read.All, EduAssignments.ReadWrite.All |
+|Delegado (conta corporativa ou de estudante)|EduAssignments.ReadBasic, EduAssignments.ReadWriteBasic, EduAssignments.Read, EduAssignments.ReadWrite|
+|Delegado (conta pessoal da Microsoft)|Sem suporte.|
+|Application| EduAssignments.ReadBasic.All, EduAssignments.ReadWriteBasic.All, EduAssignments.Read.All, EduAssignments.ReadWrite.All |
 
 ## <a name="http-request"></a>Solicitação HTTP
 
@@ -47,13 +47,13 @@ Este método dá suporte a alguns parâmetros de consulta OData para ajudar a pe
 |Autorização|{token} de portador. Obrigatório.|
 
 ## <a name="request-body"></a>Corpo da solicitação
-Não forneça um corpo de solicitação para esse método.
+Não fornece um corpo de solicitação para este método.
 
 ## <a name="response"></a>Resposta
 
 Se tiver êxito, este método retornará um código de resposta e um `200 OK` [objeto educationAssignmentSettings](../resources/educationassignmentsettings.md) no corpo da resposta.
 
-## <a name="examples"></a>Exemplos
+## <a name="example"></a>Exemplo
 
 ### <a name="request"></a>Solicitação
 
@@ -64,7 +64,7 @@ Se tiver êxito, este método retornará um código de resposta e um `200 OK` [o
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta/education/classes/{id}/assignmentSettings
+GET https://graph.microsoft.com/beta/education/classes/f4a941ff-9da6-4707-ba5b-0eae93cad0b4/assignmentsettings
 ```
 # <a name="c"></a>[C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-educationassignmentsettings-csharp-snippets.md)]
@@ -98,9 +98,7 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-  "value": {
     "submissionAnimationDisabled": false
-  }
 }
 ```
 

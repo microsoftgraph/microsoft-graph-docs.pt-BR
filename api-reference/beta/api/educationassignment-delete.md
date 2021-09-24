@@ -2,15 +2,15 @@
 title: Excluir educationAssignment
 description: Exclua uma atribuição existente. Somente professores em uma classe podem excluir atribuições.
 author: dipakboyed
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: bbab9c5a42c54d660e7962e16211158bdde7da05
-ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
+ms.openlocfilehash: f72c23507076265013f19686b23b93cfd09c56e7
+ms.sourcegitcommit: 08e9b0bac39c1b1d2c8a79539d24aaa93364baf2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "50951865"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59508167"
 ---
 # <a name="delete-educationassignment"></a>Excluir educationAssignment
 
@@ -28,7 +28,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 | :------------------------------------- | :------------------------------------------------------ |
 | Delegado (conta corporativa ou de estudante)     | EduAssignments.ReadWriteBasic, EduAssignments.ReadWrite |
 | Delegado (conta pessoal da Microsoft) | Sem suporte.                                          |
-| Aplicativo                            | Sem suporte.                                          |
+| Application                            | Sem suporte.                                          |
 
 ## <a name="http-request"></a>Solicitação HTTP
 
@@ -46,7 +46,7 @@ DELETE /education/classes/{id}/assignments/{id}
 
 ## <a name="request-body"></a>Corpo da solicitação
 
-Não forneça um corpo de solicitação para esse método.
+Não fornece um corpo de solicitação para este método.
 
 ## <a name="response"></a>Resposta
 
@@ -66,7 +66,7 @@ Este é um exemplo de solicitação.
 }-->
 
 ```http
-DELETE https://graph.microsoft.com/beta/education/classes/11014/assignments/19002
+DELETE https://graph.microsoft.com/beta/education/classes/c42f493f-42b4-4e7d-8148-af894cbc518b/assignments/ad8afb28-c138-4ad7-b7f5-a6986c2655a8
 ```
 # <a name="c"></a>[C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/delete-educationassignment-1-csharp-snippets.md)]

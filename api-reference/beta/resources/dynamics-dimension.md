@@ -1,38 +1,38 @@
 ---
-title: tipo de recurso de dimensões
-description: Uma dimensão no Dynamics 365 Business central.
+title: tipo de recurso dimensions
+description: Uma dimensão no Dynamics 365 Business Central.
 author: SusanneWindfeldPedersen
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: dynamics-365-business-central
 doc_type: resourcePageType
-ms.openlocfilehash: 61666cdaf87e095707e90345128b5ad2cda47426
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: db1a243a9f7eabb8436a6f1ca2b64fe5b74508b5
+ms.sourcegitcommit: 08e9b0bac39c1b1d2c8a79539d24aaa93364baf2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48071351"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59508815"
 ---
-# <a name="dimensions-resource-type"></a>Tipo de recurso de dimensões
+# <a name="dimensions-resource-type"></a>Tipo de recurso Dimensions
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Representa uma dimensão no Dynamics 365 Business central.
+Representa uma dimensão no Dynamics 365 Business Central.
 
-## <a name="methods"></a>Métodos
+## <a name="methods"></a>Methods
 | Método       | Tipo de retorno  |Descrição|
 |:-------------|:-------------|:----------|
-|[Obter dimensões](../api/dynamics-dimension-get.md)|expressão|Obtém uma dimensão.|
+|[Obter dimensões](../api/dynamics-dimension-get.md)|dimension|Obtém uma dimensão.|
 
 
 ## <a name="properties"></a>Propriedades
 | Propriedade           | Tipo                  |Descrição               |
 |:-------------------|:----------------------|:-------------------------|
 |id                  |GUID                   |A ID exclusiva do item.|
-|código                |Cadeia de caracteres, tamanho máximo 20|O código de dimensão.       |
+|código                |string, tamanho máximo 20|O código de dimensão.       |
 |displayName         |cadeia de caracteres                 |Especifica o nome da dimensão. Esse nome aparecerá onde a dimensão é usada.|
-|lastModifiedDateTime|datetime               |O último DateTime que a dimensão foi modificada.|  
+|lastModifiedDateTime|datetime               |A última data em que a dimensão foi modificada.|  
 
 
 ## <a name="json-representation"></a>Representação JSON
@@ -42,7 +42,6 @@ Veja a seguir uma representação JSON do recurso.
 
 ```json
 {
-
     "id": "GUID",
     "code": "string",
     "displayName": "string",

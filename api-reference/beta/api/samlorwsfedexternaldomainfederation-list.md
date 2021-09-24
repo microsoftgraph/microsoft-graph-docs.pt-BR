@@ -2,15 +2,15 @@
 title: Listar samlOrWsFedExternalDomainFederations
 description: Obter uma lista dos objetos samlOrWsFedExternalDomainFederation e suas propriedades.
 author: namkedia
-localization_priority: medium
+ms.localizationpriority: medium
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: 9dd6473ec730e8c83f57f2075141fe468de4cfbd
-ms.sourcegitcommit: c333953a9188b4cd4a9ab94cbe68871e8f3563e5
+ms.openlocfilehash: 210dd689ea2489003f5355395a76c4bd6da513a3
+ms.sourcegitcommit: 08e9b0bac39c1b1d2c8a79539d24aaa93364baf2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/30/2021
-ms.locfileid: "58696996"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59508584"
 ---
 # <a name="list-samlorwsfedexternaldomainfederations"></a>Listar samlOrWsFedExternalDomainFederations
 Namespace: microsoft.graph
@@ -27,11 +27,11 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |:--------------------|:---------------------------------------------------------|
 |Delegado (conta corporativa ou de estudante)|Domain.Read.All, Domain.ReadWrite.All|
 |Delegado (conta pessoal da Microsoft)| Sem suporte.|
-|Aplicativo|Domain.Read.All, Domain.ReadWrite.All|
+|Application|Domain.Read.All, Domain.ReadWrite.All|
 
 A conta de trabalho ou de estudante precisa pertencer a uma das seguintes funções:
 
-* Administrador global
+* Administrador Global
 * Administrador do Provedor de Identidade Externa
 
 ## <a name="http-request"></a>Solicitação HTTP
@@ -63,6 +63,8 @@ Se tiver êxito, este método retornará um código de resposta e uma coleção 
 
 ### <a name="request"></a>Solicitação
 
+
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "list_samlorwsfedexternaldomainfederation"
@@ -72,6 +74,24 @@ Se tiver êxito, este método retornará um código de resposta e uma coleção 
 ``` http
 GET https://graph.microsoft.com/beta/directory/federationConfigurations/graph.samlOrWsFedExternalDomainFederation
 ```
+# <a name="c"></a>[C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/list-samlorwsfedexternaldomainfederation-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/list-samlorwsfedexternaldomainfederation-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/list-samlorwsfedexternaldomainfederation-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/list-samlorwsfedexternaldomainfederation-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 ### <a name="response"></a>Resposta
 

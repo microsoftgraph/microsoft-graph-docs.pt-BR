@@ -2,15 +2,15 @@
 title: Criar cloudPcUserSetting
 description: Crie um novo cloudPcUserSetting .
 author: AshleyYangSZ
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: cloud-pc
 doc_type: apiPageType
-ms.openlocfilehash: 3edffeab1a7eaf4cac05200093d0f7a49d840614
-ms.sourcegitcommit: 7f674112f5b95446fac86d829509f889c60f1693
+ms.openlocfilehash: deea9748828a464d87b045002bd6dc9c53c861a4
+ms.sourcegitcommit: 08e9b0bac39c1b1d2c8a79539d24aaa93364baf2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/30/2021
-ms.locfileid: "53208495"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59508030"
 ---
 # <a name="create-cloudpcusersetting"></a>Criar cloudPcUserSetting
 
@@ -20,8 +20,6 @@ Namespace: microsoft.graph
 
 Crie um novo [objeto cloudPcUserSetting.](../resources/cloudpcusersetting.md)
 
-[!INCLUDE [cloudpc-api-preview](../../includes/cloudpc-api-preview.md)]
-
 ## <a name="permissions"></a>Permissões
 
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
@@ -30,7 +28,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |:---|:---|
 |Delegado (conta corporativa ou de estudante)|CloudPC.ReadWrite.All|
 |Delegado (conta pessoal da Microsoft)|Sem suporte.|
-|Aplicativo|CloudPC.ReadWrite.All|
+|Application|CloudPC.ReadWrite.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
 
@@ -58,7 +56,7 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar [o cloud
 
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|displayName|String|O nome da configuração como ele aparece na interface do usuário. |
+|displayName|Cadeia de caracteres|O nome da configuração como ele aparece na interface do usuário. |
 |localAdminEnabled|Booliano|Para ativar a opção de administrador local, altere essa configuração para `True` .  |
 |selfServiceEnabled|Booliano|Para ativar a opção self service, altere essa configuração para `True` . |
 |lastModifiedDateTime|DateTimeOffset|A última data e hora em que a configuração foi modificada. O tipo Timestamp representa as informações de data e hora usando o formato ISO 8601 e está sempre em horário UTC. Por exemplo, meia-noite UTC em 1º de janeiro de 2014 tem esta aparência: '2014-01-01T00:00:00Z'. |

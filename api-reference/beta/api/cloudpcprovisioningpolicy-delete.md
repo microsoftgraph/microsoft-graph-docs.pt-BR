@@ -2,15 +2,15 @@
 title: Excluir cloudPcProvisioningPolicy
 description: Exclua um objeto cloudPcProvisioningPolicy.
 author: AshleyYangSZ
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: cloud-pc
 doc_type: apiPageType
-ms.openlocfilehash: 8c423bdc23ec090b56bc096a797daeaed61bdcd0
-ms.sourcegitcommit: d700b7e3b411e3226b5adf1f213539f05fe802e8
+ms.openlocfilehash: 3115719fc57ba4682133a56e4076762742af38a5
+ms.sourcegitcommit: 08e9b0bac39c1b1d2c8a79539d24aaa93364baf2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52546816"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59508261"
 ---
 # <a name="delete-cloudpcprovisioningpolicy"></a>Excluir cloudPcProvisioningPolicy
 
@@ -20,7 +20,6 @@ Namespace: microsoft.graph
 
 [Exclua um objeto cloudPcProvisioningPolicy.](../resources/cloudpcprovisioningpolicy.md) Você não poderá excluir uma política que estiver em uso.
 
-[!INCLUDE [cloudpc-api-preview](../../includes/cloudpc-api-preview.md)]
 ## <a name="permissions"></a>Permissões
 
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
@@ -29,7 +28,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |:---|:---|
 |Delegado (conta corporativa ou de estudante)|CloudPC.ReadWrite.All|
 |Delegado (conta pessoal da Microsoft)|Sem suporte.|
-|Aplicativo|CloudPC.ReadWrite.All|
+|Application|CloudPC.ReadWrite.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
 

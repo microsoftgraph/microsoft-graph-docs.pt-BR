@@ -2,15 +2,15 @@
 title: Atualizar dispositivo
 description: Atualize as propriedades de um dispositivo.
 author: spunukol
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: 0d3edaef650d51cdf28dded577c79a80d49d8fd3
-ms.sourcegitcommit: 998c63e6290cfb5ad4a6bd3eb3e249d282f962a3
+ms.openlocfilehash: 845b76fa0643d2991ae0186a94858c55d30f3937
+ms.sourcegitcommit: 08e9b0bac39c1b1d2c8a79539d24aaa93364baf2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58531282"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59508198"
 ---
 # <a name="update-device"></a>Atualizar dispositivo
 
@@ -27,17 +27,18 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegado (conta corporativa ou de estudante) | Directory.ReadWrite.All, Directory.AccessAsUser.All |
+|Delegado (conta corporativa ou de estudante) | Device.ReadWrite.All, Directory.ReadWrite.All, Directory.AccessAsUser.All |
 |Delegado (conta pessoal da Microsoft) | Sem suporte. |
-|Aplicativo | Directory.ReadWrite.All |
+|Application | Device.ReadWrite.All, Directory.ReadWrite.All |
 
 ## <a name="http-request"></a>Solicitação HTTP
+
+O `{id}` na solicitação é o valor da **propriedade id** do dispositivo, não a **propriedade deviceId.**
+
 <!-- { "blockType": "ignored" } -->
 ```http
 PATCH /devices/{id}
 ```
-
-> Observação: A "id" na solicitação é a propriedade "id" do dispositivo, não a propriedade "deviceId".
 
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
 | Nome       | Tipo | Descrição|
@@ -50,12 +51,12 @@ No corpo da solicitação, forneça os valores para as propriedades [device](../
 
 | Propriedade     | Tipo   |Descrição|
 |:---------------|:--------|:----------|
-|accountEnabled|Booliano| **true** se a conta estiver habilitada; caso contrário, **false**. |
+|accountEnabled|Booliano| `true` se a conta estiver habilitada; caso contrário, `false`. Somente chamadores nas funções Administrador Global e Administrador de Dispositivos de Nuvem podem atualizar essa propriedade. |
 |operatingSystem|String|O tipo de sistema operacional do dispositivo.|
 |operatingSystemVersion|Cadeia de caracteres|A versão do sistema operacional do dispositivo.|
 |displayName|Cadeia de caracteres|O nome de exibição do dispositivo.|
-|isCompliant|Booliano|**True** se o dispositivo está em conformidade com políticas de MDM (Gerenciamento de Dispositivo Móvel); caso contrário, **false**. Isso só pode ser atualizado pelo Intune para qualquer tipo de sistema operacional de dispositivo ou por um [aplicativo MDM](/windows/client-management/mdm/azure-active-directory-integration-with-mdm) aprovado para Windows do sistema operacional. |
-|isManaged|Booliano|**true** se o dispositivo for gerenciado por um aplicativo de gerenciamento de dispositivo móvel (MDM); caso contrário, **false**. Isso só pode ser atualizado pelo Intune para qualquer tipo de sistema operacional de dispositivo ou por um [aplicativo MDM](/windows/client-management/mdm/azure-active-directory-integration-with-mdm) aprovado para Windows do sistema operacional. |
+|isCompliant|Booliano|`true` se o dispositivo estiver em conformidade com políticas de Gerenciamento de Dispositivo Móvel (MDM); caso contrário, `false` . Isso só pode ser atualizado pelo Intune para qualquer tipo de sistema operacional de dispositivo ou por um [aplicativo MDM](/windows/client-management/mdm/azure-active-directory-integration-with-mdm) aprovado para Windows do sistema operacional. |
+|isManaged|Booliano|`true` se o dispositivo for gerenciado por um aplicativo MDM (Gerenciamento de Dispositivo Móvel). caso contrário, `false` . Isso só pode ser atualizado pelo Intune para qualquer tipo de sistema operacional de dispositivo ou por um [aplicativo MDM](/windows/client-management/mdm/azure-active-directory-integration-with-mdm) aprovado para Windows do sistema operacional. |
 
 Como o **recurso de** dispositivo dá suporte a extensões, você pode usar a operação para adicionar, atualizar ou excluir seus próprios dados específicos do aplicativo em propriedades [personalizadas](/graph/extensibility-overview)de uma extensão em uma instância de dispositivo `PATCH` existente. 
 
@@ -65,7 +66,7 @@ Se tiver êxito, este método retornará um código de resposta `204 No Content`
 
 ## <a name="example"></a>Exemplo
 
-##### <a name="request"></a>Solicitação
+### <a name="request"></a>Solicitação
 
 
 # <a name="http"></a>[HTTP](#tab/http)
@@ -100,7 +101,7 @@ Content-length: 31
 
 ---
 
-##### <a name="response"></a>Resposta
+### <a name="response"></a>Resposta
 
 <!-- {
   "blockType": "response"

@@ -4856,24 +4856,27 @@ items:
                   - name: Criar convite
                     href: api/invitation-post.md
               - name: Identidade visual organizacional
-                href: resources/organizationalbrandingproperties.md
+                href: resources/organizationalbranding.md
                 items:
-                  - name: Criar
-                    href: api/organizationalbrandingproperties-create.md
                   - name: Obter
-                    href: api/organizationalbrandingproperties-get.md
+                    href: api/organizationalbranding-get.md
                   - name: Atualizar
-                    href: api/organizationalbrandingproperties-update.md
+                    href: api/organizationalbranding-update.md
                   - name: Excluir
-                    href: api/organizationalbrandingproperties-delete.md
-                  - name: Criar localizado
-                    href: api/organizationalbrandingpropertieslocalization-create.md
-                  - name: Obter localização
-                    href: api/organizationalbrandingpropertieslocalization-get.md
-                  - name: Atualizar localizado
-                    href: api/organizationalbrandingpropertieslocalization-update.md
-                  - name: Excluir localizado
-                    href: api/organizationalbrandingpropertieslocalization-delete.md
+                    href: api/organizationalbranding-delete.md
+                  - name: Localização de identidade visual
+                    href: resources/organizationalbrandinglocalization.md
+                    items:
+                      - name: Listar
+                        href: api/organizationalbranding-list-localizations.md
+                      - name: Criar
+                        href: api/organizationalbranding-post-localizations.md
+                      - name: Obter
+                        href: api/organizationalbrandinglocalization-get.md
+                      - name: Atualizar
+                        href: api/organizationalbrandinglocalization-update.md
+                      - name: Excluir
+                        href: api/organizationalbrandinglocalization-delete.md
               - name: Política
                 href: resources/policy-overview.md
                 items:
@@ -5588,7 +5591,7 @@ items:
         items:
           - name: Relatórios de atividade do Azure AD
             items:
-              - name: Visão Geral
+              - name: Visão geral
                 href: resources/azure-ad-auditlog-overview.md
               - name: Auditoria de diretório
                 href: resources/directoryaudit.md
@@ -5611,7 +5614,7 @@ items:
                     href: api/provisioningobjectsummary-list.md
           - name: Microsoft 365 de uso
             items:
-              - name: Visão Geral
+              - name: Visão geral
                 href: resources/report.md
               - name: Uso do dispositivo do Microsoft Teams
                 href: resources/microsoft-teams-device-usage-reports.md
@@ -5814,7 +5817,7 @@ items:
         items:
           - name: Consulta
             items:
-              - name: Visão Geral
+              - name: Visão geral
                 href: resources/search-api-overview.md
               - name: Tipo de solicitação de pesquisa
                 href: resources/searchrequest.md

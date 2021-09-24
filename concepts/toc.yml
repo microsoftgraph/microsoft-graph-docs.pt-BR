@@ -161,6 +161,8 @@ items:
             href: cloud-communications-callrecords.md
           - name: Gerenciar números de telefone para bots
             href: cloud-communications-phone-number.md
+          - name: Permissões e artefatos de reunião online
+            href: cloud-communications-online-meeting-artifacts.md
       - name: Conformidade (pré-visualização)
         href: compliance-concept-overview.md
       - name: Conectando conteúdo externo
@@ -261,10 +263,14 @@ items:
         items:
           - name: Visão geral
             href: azuread-identity-access-management-concept-overview.md
-          - name: Métodos de autenticação
-            href: authenticationmethods-get-started.md
+          - name: Gerenciamento de diretório
+            items:
+              - name: Usar o PIM para atribuir funções privilegiadas
+                href: tutorial-assign-azureadroles.md
           - name: Identidade e entrada
             items:
+              - name: Métodos de autenticação
+                href: authenticationmethods-get-started.md
               - name: Identificar e corrigir o risco
                 href: tutorial-riskdetection-api.md
           - name: Governança
@@ -395,9 +401,9 @@ items:
             href: search-concept-custom-types.md
           - name: Pesquisar pessoas (visualização)
             href: search-concept-person.md
-          - name: Classificar os resultados da busca (visualização)
+          - name: Classificar resultados de pesquisa
             href: search-concept-sort.md
-          - name: Refinar os resultados da busca (visualização)
+          - name: Refinar resultados de pesquisa
             href: search-concept-aggregation.md
           - name: Solicitar correção ortográfica (prévia)
             href: search-concept-speller.md
@@ -443,7 +449,6 @@ items:
           - name: Enviar mensagens proativas com um bot
             href: /microsoftteams/platform/graph-api/proactive-bots-and-messages/graph-proactive-bots-and-messages?context=graph/context
           - name: Notificações de feed de atividades
-            href: teams-send-activityfeednotifications.md
             items:
               - name: Enviar notificações de feed de atividades
                 href: teams-send-activityfeednotifications.md
@@ -541,7 +546,7 @@ items:
                     href: teams-change-notification-in-microsoft-teams-overview.md
                   - name: Equipes e canais
                     href: teams-changenotifications-team-and-channel.md
-                  - name: Associação da equipe
+                  - name: Associação de equipe e canal
                     href: teams-changenotifications-teamMembership.md
                   - name: Mensagens de chat e de canal
                     href: teams-changenotifications-chatmessage.md

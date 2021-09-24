@@ -1,16 +1,16 @@
 ---
 title: Criar convite
 description: Use essa API para criar um novo convite. O convite adiciona um usuário externo à organização.
-localization_priority: Normal
+ms.localizationpriority: medium
 author: Sammak
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: 99fb4703e4ae2b4d8714475577c7e34c1c34c8c6
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: 1b30943cc2212c9df6a5da66993a7a265da2d56a
+ms.sourcegitcommit: 08e9b0bac39c1b1d2c8a79539d24aaa93364baf2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52053661"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59508714"
 ---
 # <a name="create-invitation"></a>Criar convite
 
@@ -61,8 +61,8 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar um convi
 Se bem-sucedido, este método retorna um código de resposta `201 Created` e um objeto [invitation](../resources/invitation.md) no corpo da resposta.
 
 ## <a name="example"></a>Exemplo
-##### <a name="request"></a>Solicitação
-Este é um exemplo da solicitação.
+### <a name="request"></a>Solicitação
+Este é um exemplo de solicitação.
 
 # <a name="http"></a>[HTTP](#tab/http)
 <!-- {
@@ -72,10 +72,9 @@ Este é um exemplo da solicitação.
 ```http
 POST https://graph.microsoft.com/beta/invitations
 Content-type: application/json
-Content-length: 551
 
 {
-  "invitedUserEmailAddress": "yyy@test.com",
+  "invitedUserEmailAddress": "admin@fabrikam.com",
   "inviteRedirectUrl": "https://myapp.contoso.com"
 }
 ```
@@ -98,8 +97,9 @@ Content-length: 551
 ---
 
 
-##### <a name="response"></a>Resposta
-Veja a seguir um exemplo da resposta. Observação: o objeto de resposta mostrado aqui pode ser encurtado para legibilidade.
+### <a name="response"></a>Resposta
+Este é um exemplo de resposta. 
+>**Observação:** o objeto de resposta mostrado aqui pode ser encurtado para legibilidade.
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -108,13 +108,14 @@ Veja a seguir um exemplo da resposta. Observação: o objeto de resposta mostrad
 ```http
 HTTP/1.1 201 OK
 Content-type: application/json
-Content-length: 551
 
 {
+  "@odata.context": "https://graph.microsoft.com/beta/$metadata#invitations/$entity",
   "id": "7b92124c-9fa9-406f-8b8e-225df8376ba9",
   "inviteRedeemUrl": "https://invitations.microsoft.com/redeem/?tenant=04dcc6ab-388a-4559-b527-fbec656300ea&user=7b92124c-9fa9-406f-8b8e-225df8376ba9&ticket=VV9dmiExBsfRIVNFjb9ITj9VXAd07Ypv4gTg%2f8PiuJs%3d&lc=1033&ver=2.0",
-  "invitedUserDisplayName": "yyy",
-  "invitedUserEmailAddress": "yyy@test.com",
+  "invitedUserDisplayName": "Fabrikam Admin",
+  "invitedUserEmailAddress": "admin@fabrikam.com",
+  "resetRedemption": false,
   "sendInvitationMessage": false,
   "invitedUserMessageInfo": {
      "messageLanguage": null,

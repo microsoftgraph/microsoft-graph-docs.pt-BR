@@ -2,15 +2,15 @@
 title: Atualizar samlOrWsFedExternalDomainFederation
 description: Atualize as propriedades de um objeto samlOrWsFedExternalDomainFederation.
 author: namkedia
-localization_priority: medium
+ms.localizationpriority: medium
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: 206c19967502efa0a700c3d68915769432264acd
-ms.sourcegitcommit: c333953a9188b4cd4a9ab94cbe68871e8f3563e5
+ms.openlocfilehash: b5997fc1a2f3d4f47d03b2c37df8c87a09419477
+ms.sourcegitcommit: 08e9b0bac39c1b1d2c8a79539d24aaa93364baf2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/30/2021
-ms.locfileid: "58696994"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59508633"
 ---
 # <a name="update-samlorwsfedexternaldomainfederation"></a>Atualizar samlOrWsFedExternalDomainFederation
 Namespace: microsoft.graph
@@ -26,11 +26,11 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |:--------------------|:---------------------------------------------------------|
 |Delegado (conta corporativa ou de estudante)|Domain.ReadWrite.All|
 |Delegado (conta pessoal da Microsoft)| Sem suporte.|
-|Aplicativo|Domain.ReadWrite.All|
+|Application|Domain.ReadWrite.All|
 
 A conta de trabalho ou de estudante precisa pertencer a uma das seguintes [funções Azure Active Directory (Azure AD)](/azure/active-directory/roles/permissions-reference):
 
-* Administrador global
+* Administrador Global
 * Administrador do Provedor de Identidade Externa
 
 ## <a name="http-request"></a>Solicitação HTTP
@@ -73,6 +73,8 @@ Se tiver êxito, este método retornará um código de resposta e um `200 OK` [o
 ## <a name="examples"></a>Exemplos
 
 ### <a name="request"></a>Solicitação
+
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "update_samlorwsfedexternaldomainfederation"
@@ -94,6 +96,24 @@ Content-Type: application/json
 
 
 ```
+# <a name="c"></a>[C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/update-samlorwsfedexternaldomainfederation-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/update-samlorwsfedexternaldomainfederation-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/update-samlorwsfedexternaldomainfederation-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/update-samlorwsfedexternaldomainfederation-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 ### <a name="response"></a>Resposta
 

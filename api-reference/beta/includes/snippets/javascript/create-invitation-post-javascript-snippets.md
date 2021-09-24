@@ -1,11 +1,11 @@
 ---
 description: Arquivo gerado automaticamente. NÃO MODIFICAR
-ms.openlocfilehash: 417770aa2341f684d1f1dba562ed3a2969bf8f83
-ms.sourcegitcommit: 40947e6f4337c8c4193d85bb862e15f67263e1e7
+ms.openlocfilehash: a3ded1b564fec949c8a7aa4e59d78198e835829a
+ms.sourcegitcommit: 08e9b0bac39c1b1d2c8a79539d24aaa93364baf2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/13/2021
-ms.locfileid: "50809810"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59508713"
 ---
 ```javascript
 
@@ -16,7 +16,7 @@ const options = {
 const client = Client.init(options);
 
 const invitation = {
-  invitedUserEmailAddress: 'yyy@test.com',
+  invitedUserEmailAddress: 'admin@fabrikam.com',
   inviteRedirectUrl: 'https://myapp.contoso.com'
 };
 

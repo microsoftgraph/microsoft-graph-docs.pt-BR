@@ -5,12 +5,12 @@ ms.localizationpriority: high
 doc_type: apiPageType
 ms.prod: groups
 author: psignoret
-ms.openlocfilehash: 97f8661784d775c3d67d54250c40f3bfecef7ee6
-ms.sourcegitcommit: c333953a9188b4cd4a9ab94cbe68871e8f3563e5
+ms.openlocfilehash: c3b5dc6fa1121c945c93382d47b6e09efb5cf015
+ms.sourcegitcommit: 08e9b0bac39c1b1d2c8a79539d24aaa93364baf2
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/30/2021
-ms.locfileid: "58695837"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59508166"
 ---
 # <a name="list-approleassignments-granted-to-a-group"></a>Listar appRoleAssignments concedido a um grupo
 
@@ -39,7 +39,7 @@ GET /groups/{id}/appRoleAssignments
 
 ## <a name="optional-query-parameters"></a>Parâmetros de consulta opcionais
 
-Este método dá suporte a [Parâmetros de consulta OData](/graph/query_parameters) para ajudar a personalizar a resposta.
+Este método dá suporte a [Parâmetros de consulta OData](/graph/query-parameters) para ajudar a personalizar a resposta.
 
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
 

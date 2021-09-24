@@ -2,15 +2,15 @@
 title: Excluir dispositivo
 description: Exclui um dispositivo registrado.
 author: spunukol
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: 9753faebf1d66604ba52657561387b8a43d7a96d
-ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
+ms.openlocfilehash: 9533c8010dfc2468eca4b08e7ec7c48bb2938a60
+ms.sourcegitcommit: 08e9b0bac39c1b1d2c8a79539d24aaa93364baf2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50437209"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59508528"
 ---
 # <a name="delete-device"></a>Excluir dispositivo
 
@@ -26,18 +26,19 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegado (conta corporativa ou de estudante) | Directory.AccessAsUser.All |
+|Delegado (conta corporativa ou de estudante) | Device.ReadWrite.All, Directory.AccessAsUser.All |
 |Delegado (conta pessoal da Microsoft) | Sem suporte.    |
 |Aplicativo | Sem suporte. |
 
 ## <a name="http-request"></a>Solicitação HTTP
+
+O `{id}` na solicitação é o valor da **propriedade id** do dispositivo, não a **propriedade deviceId.**
 <!-- { "blockType": "ignored" } -->
 ```http
 DELETE /devices/{id}
 
 ```
 
-> Observação: A "id" na solicitação é a propriedade "id" do dispositivo, não a propriedade "deviceId".
 
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
 | Nome       | Tipo | Descrição|
@@ -52,7 +53,7 @@ Não forneça um corpo de solicitação para esse método.
 Se bem-sucedido, este método retorna um código de resposta `204 No Content`. Não retorna nada no corpo da resposta.
 
 ## <a name="example"></a>Exemplo
-##### <a name="request"></a>Solicitação
+### <a name="request"></a>Solicitação
 
 
 # <a name="http"></a>[HTTP](#tab/http)
@@ -81,7 +82,7 @@ DELETE https://graph.microsoft.com/beta/devices/{id}
 
 ---
 
-##### <a name="response"></a>Resposta
+### <a name="response"></a>Resposta
 
 <!-- {
   "blockType": "response",

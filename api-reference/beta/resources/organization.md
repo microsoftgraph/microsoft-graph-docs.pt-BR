@@ -1,16 +1,16 @@
 ---
 title: tipo de recurso organization
 description: 'Representa um locatário do Azure Active Directory. '
-localization_priority: Normal
+ms.localizationpriority: medium
 author: adimitui
 ms.prod: directory-management
 doc_type: resourcePageType
-ms.openlocfilehash: 13323ebf6560fc54c8fc22e26c4d6e97d6678d73
-ms.sourcegitcommit: d586ddb253d27f9ccb621bd128f6a6b4b1933918
+ms.openlocfilehash: 1c666363d6eeb823373258a82ae1459c71ccea72
+ms.sourcegitcommit: 08e9b0bac39c1b1d2c8a79539d24aaa93364baf2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/24/2021
-ms.locfileid: "53108863"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59508366"
 ---
 # <a name="organization-resource-type"></a>tipo de recurso organization
 
@@ -34,10 +34,17 @@ Esse recurso permite que você adicione seus próprios dados às propriedades pe
 |[Obter extensão aberta](../api/opentypeextension-get.md) |Coleção [openTypeExtension](opentypeextension.md)| Obtenha uma extensão aberta identificada pelo nome da extensão.|
 |**Extensões de esquema**| | |
 |[Adicionar valores de extensões de esquema](../api/schemaextension-post-schemaextensions.md) | [schemaExtension](schemaextension.md) | Cria uma definição para a extensão de esquema e usa-a para adicionar dados digitados personalizados a um recurso.|
-|[Criar organizationalBrandingProperties](../api/organizationalbrandingproperties-create.md) | [organizationalBrandingProperties](organizationalbrandingproperties.md) | Crie uma nova organizationalBrandingProperties postando na coleção de identidade visual. |
-|[Obter a identidade visual](../api/organizationalbrandingproperties-get.md) | coleção [organizationalBrandingProperties](organizationalbrandingproperties.md) | Obtenha uma coleção de objetos organizationalBrandingProperties. |
-|[Obter a identidade visual](../api/organizationalbrandingproperties-get.md) | coleção [organizationalBrandingProperties](organizationalbrandingproperties.md) | Obter uma coleção de objetos organizationalBrandingProperties. |
+|**Licenças da organização**| | |
 |[activateService](../api/organization-activateservice.md) | Nenhum |  Ative um serviço para uma organização. |
+|**Identidade visual organizacional**| | |
+|[Criar organizationalBrandingLocalization](../api/organizationalbranding-post-localizations.md) | [organizationalBrandingLocalization](organizationalbrandinglocalization.md) | Crie uma nova identidade visual de localização (específica do idioma) e um objeto de identidade visual padrão, caso não exista. |
+|[Obter organizationalBranding](../api/organizationalbranding-get.md) | [organizationalBranding](organizationalbranding.md) | Obter o objeto de identidade visual organizacional padrão. |
+|[Atualizar organizationalBranding](../api/organizationalbranding-update.md) | [organizationalBranding](organizationalbranding.md) | Atualize o objeto de identidade visual organizacional padrão. |
+|[Excluir organizationalBranding](../api/organizationalbranding-update.md) | [organizationalBranding](organizationalbranding.md) | Exclua o objeto de identidade visual organizacional padrão. |
+|[Listar organizationalBrandingLocalization](../api/organizationalbrandinglocalization-get.md) | [coleção organizationalBrandingLocalization](organizationalbrandinglocalization.md) | Recupere todos os objetos de identidade visual de localização no locatário. |
+|[Obter organizationalBrandingLocalization](../api/organizationalbrandinglocalization-get.md) | [organizationalBrandingLocalization](organizationalbrandinglocalization.md) | Leia as propriedades de um objeto de identidade visual de localização. |
+|[Atualizar organizationalBranding](../api/organizationalbranding-update.md) | [organizationalBranding](organizationalbranding.md) | Atualize um objeto de identidade visual de localização. |
+|[Excluir organizationalBranding](../api/organizationalbranding-update.md) | [organizationalBranding](organizationalbranding.md) | Exclua um objeto de identidade visual de localização. |
 
 ## <a name="properties"></a>Propriedades
 
@@ -73,10 +80,10 @@ Esse recurso permite que você adicione seus próprios dados às propriedades pe
 
 | Relação  | Tipo  |Descrição|
 |:---------------|:--------|:----------|
-|certificateBasedAuthConfiguration|coleção [certificateBasedAuthConfiguration](certificatebasedauthconfiguration.md)| Propriedade navigation para gerenciar a configuração de autenticação baseada em certificado. Somente uma única instância de certificateBasedAuthConfiguration pode ser criada na coleção.  |
-|extensions|Coleção [extension](extension.md)|A coleção de extensões abertas definidas para o recurso da organização. Anulável.| 
-|organizationalBranding|coleção [organizationalBrandingProperties](organizationalbrandingproperties.md)| Identidade visual da organização. Anulável.|
-|configurações|[organizationSettings](organizationsettings.md) | Recupere as propriedades e as relações do objeto organizationSettings. Anulável.|
+|certificateBasedAuthConfiguration|coleção [certificateBasedAuthConfiguration](certificatebasedauthconfiguration.md)| Propriedade de navegação para gerenciar a configuração de autenticação baseada em certificado. Somente uma única instância de certificateBasedAuthConfiguration pode ser criada na coleção.  |
+|extensions|[extension](extension.md) collection|A coleção de extensões abertas definidas para o recurso da organização. Anulável.| 
+|organizationalBranding|[Coleção organizationalBranding](organizationalbranding.md)| Recurso para gerenciar a identidade visual padrão da organização. Anulável.|
+|settings|[organizationSettings](organizationsettings.md) | Recupere as propriedades e as relações do objeto organizationSettings. Anulável.|
 
 ## <a name="json-representation"></a>Representação JSON
 
@@ -94,29 +101,29 @@ Veja a seguir uma representação JSON do recurso
 ```json
 {
   "assignedPlans": [{"@odata.type": "microsoft.graph.assignedPlan"}],
-  "businessPhones": ["string"],
-  "city": "string",
-  "country": "string",
-  "countryLetterCode": "string",
+  "businessPhones": ["String"],
+  "city": "String",
+  "country": "String",
+  "countryLetterCode": "String",
   "createdDateTime": "String (timestamp)",
   "deletedDateTime": "String (timestamp)",
   "directorySizeQuota": {"@odata.type": "microsoft.graph.directorySizeQuota"},
-  "displayName": "string",
-  "id": "string (identifier)",
-  "isMultipleDataLocationsForServicesEnabled": "boolean",
-  "marketingNotificationEmails": ["string"],
-  "objectType": "string",
+  "displayName": "String",
+  "id": "String (identifier)",
+  "isMultipleDataLocationsForServicesEnabled": "Boolean",
+  "marketingNotificationEmails": ["String"],
+  "objectType": "String",
   "onPremisesLastSyncDateTime": "String (timestamp)",
   "onPremisesSyncEnabled": true,
-  "postalCode": "string",
-  "preferredLanguage": "string",
+  "postalCode": "String",
+  "preferredLanguage": "String",
   "privacyProfile": {"@odata.type": "microsoft.graph.privacyProfile"},
   "provisionedPlans": [{"@odata.type": "microsoft.graph.provisionedPlan"}],
-  "securityComplianceNotificationMails": ["string"],
-  "securityComplianceNotificationPhones": ["string"],
-  "state": "string",
-  "street": "string",
-  "technicalNotificationMails": ["string"],
+  "securityComplianceNotificationMails": ["String"],
+  "securityComplianceNotificationPhones": ["String"],
+  "state": "String",
+  "street": "String",
+  "technicalNotificationMails": ["String"],
   "verifiedDomains": [{"@odata.type": "microsoft.graph.verifiedDomain"}],
   "companyLastDirSyncTime": "2019-02-07T20:33:52.942Z",
   "dirSyncEnabled": true
