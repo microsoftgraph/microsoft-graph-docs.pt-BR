@@ -2,15 +2,15 @@
 title: Tipo de recurso cloudPcAuditProperty
 description: Representa a propriedade de auditoria.Isso mostra o nome da propriedade editada, o valor antigo e o novo valor.
 author: ecmadao
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: cloud-pc
 doc_type: resourcePageType
-ms.openlocfilehash: 1f73733f0ace4526d3cbae226c963887d5af37ce
-ms.sourcegitcommit: 7f674112f5b95446fac86d829509f889c60f1693
+ms.openlocfilehash: 769ba5aa685755477a0ee0dbcdaa05696ed96a79
+ms.sourcegitcommit: 08e9b0bac39c1b1d2c8a79539d24aaa93364baf2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/30/2021
-ms.locfileid: "53211235"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59767199"
 ---
 # <a name="cloudpcauditproperty-resource-type"></a>Tipo de recurso cloudPcAuditProperty
 
@@ -20,12 +20,10 @@ Namespace: microsoft.graph
 
 Representa a propriedade de auditoria.Isso mostra o nome da propriedade editada, o valor antigo e o novo valor.
 
-[!INCLUDE [cloudpc-api-preview](../../includes/cloudpc-api-preview.md)]
-
 ## <a name="properties"></a>Propriedades
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|displayName|String|Nome de exibição.|
+|displayName|Cadeia de caracteres|Nome de exibição.|
 |oldValue|Cadeia de caracteres|Valor antigo.|
 |newValue|Cadeia de caracteres|Novo valor.|
 

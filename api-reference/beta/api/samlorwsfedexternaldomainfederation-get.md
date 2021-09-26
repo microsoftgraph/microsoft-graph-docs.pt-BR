@@ -2,15 +2,15 @@
 title: Obter samlOrWsFedExternalDomainFederation
 description: Leia as propriedades e as relações de um objeto samlOrWsFedExternalDomainFederation.
 author: namkedia
-localization_priority: medium
+ms.localizationpriority: medium
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: 2622ab603d45fe85f2101441ea22380a80f41cc8
-ms.sourcegitcommit: c333953a9188b4cd4a9ab94cbe68871e8f3563e5
+ms.openlocfilehash: e4bdd9a2d1e4c8e39f1de0159791b265a0d4aeb1
+ms.sourcegitcommit: 08e9b0bac39c1b1d2c8a79539d24aaa93364baf2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/30/2021
-ms.locfileid: "58697019"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59766548"
 ---
 # <a name="get-samlorwsfedexternaldomainfederation"></a>Obter samlOrWsFedExternalDomainFederation
 Namespace: microsoft.graph
@@ -31,7 +31,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 A conta de trabalho ou de estudante precisa pertencer a uma das seguintes [funções Azure Active Directory (Azure AD)](/azure/active-directory/roles/permissions-reference):
 
-* Administrador global
+* Administrador Global
 * Administrador do Provedor de Identidade Externa
 
 ## <a name="http-request"></a>Solicitação HTTP
@@ -47,7 +47,7 @@ GET /directory/federationConfigurations/graph.samlOrWsFedExternalDomainFederatio
 
 ## <a name="query-parameters"></a>Parâmetros de consulta
 
-Este método requer o parâmetro `$filter` de consulta OData. Para recuperar um filtro [samlOrWsFedExternalDomainFederation](../resources/samlorwsfedexternaldomainfederation.md) específico com base em [externalDomainName,](../resources/externaldomainname.md)adicione `?$filter=domains/any(x: x/id eq 'domainName-value')` . 
+Este método requer o parâmetro `$filter` de consulta OData. Para recuperar um filtro [samlOrWsFedExternalDomainFederation](../resources/samlorwsfedexternaldomainfederation.md) específico com base em [externalDomainName,](../resources/externaldomainname.md)adicione `?$filter=domains/any(x: x/id eq 'domainName-value')` .
 
 Para obter informações gerais, acesse [Parâmetros de consulta OData](/graph/query-parameters).
 
@@ -69,6 +69,8 @@ Se tiver êxito, este método retornará um código de resposta e um `200 OK` [o
 
 ### <a name="request"></a>Solicitação
 
+
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "get_samlorwsfedexternaldomainfederation"
@@ -78,6 +80,24 @@ Se tiver êxito, este método retornará um código de resposta e um `200 OK` [o
 ``` http
 GET https://graph.microsoft.com/beta/directory/federationConfigurations/graph.samlOrWsFedExternalDomainFederation?$filter=domains/any(x: x/id eq 'contoso.com')
 ```
+# <a name="c"></a>[C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/get-samlorwsfedexternaldomainfederation-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/get-samlorwsfedexternaldomainfederation-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/get-samlorwsfedexternaldomainfederation-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/get-samlorwsfedexternaldomainfederation-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 ### <a name="response"></a>Resposta
 

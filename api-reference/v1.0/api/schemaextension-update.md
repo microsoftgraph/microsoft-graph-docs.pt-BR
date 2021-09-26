@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: dkershaw10
 ms.prod: extensions
 doc_type: apiPageType
-ms.openlocfilehash: 2cfe89bb5ece2c691976e21a81bcbe33680713a1
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: d7f73406547770f8c24bbdafc311fd6a1e0a2e36
+ms.sourcegitcommit: 08e9b0bac39c1b1d2c8a79539d24aaa93364baf2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59099270"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59764669"
 ---
 # <a name="update-schemaextension"></a>Update schemaExtension
 
@@ -65,13 +65,13 @@ No corpo da solicitação, forneça os valores para os campos relevantes que dev
 
 ## <a name="response"></a>Resposta
 
-Se tiver êxito, este método retornará um código de resposta `204 No Content`.
+Se tiver êxito, este método retornará um código de resposta `204 No Content`. Tentar executar essa solicitação de um aplicativo que você não possui (e sem definir a propriedade **owner** como **appId** de um aplicativo que você possui) retorna um código `403 Forbidden` de resposta.
 
 ## <a name="example"></a>Exemplo
 
-##### <a name="request"></a>Solicitação
+### <a name="request"></a>Solicitação
 
-Este é um exemplo da solicitação.
+Este é um exemplo de solicitação. Você deve incluir **a propriedade owner** se estiver executando a solicitação de um aplicativo que você não possui. Nesse caso, de definir a **propriedade owner** como **appId** de um aplicativo que você possui.
 
 # <a name="http"></a>[HTTP](#tab/http)
 <!-- {
@@ -79,21 +79,29 @@ Este é um exemplo da solicitação.
   "name": "update_schemaextension"
 }-->
 ```http
-PATCH https://graph.microsoft.com/v1.0/schemaExtensions/{id}
+PATCH https://graph.microsoft.com/v1.0/schemaExtensions/exto6x7sfft_courses
 Content-type: application/json
-Content-length: 201
 
 {
-  "properties": [
-    {
-      "name":"new-name-value",
-      "type":"new-type-value"
-    },
-    {
-      "name":"additional-name-value",
-      "type":"additional-type-value"
-    }
-  ]
+    "owner": "ef4cb9a8-97c3-4ca7-854b-5cb5ced376fa",
+    "properties": [
+        {
+            "name": "courseId",
+            "type": "Integer"
+        },
+        {
+            "name": "courseName",
+            "type": "String"
+        },
+        {
+            "name": "courseType",
+            "type": "String"
+        },
+        {
+            "name": "courseSupervisors",
+            "type": "String"
+        }
+    ]
 }
 ```
 # <a name="c"></a>[C#](#tab/csharp)
@@ -115,7 +123,7 @@ Content-length: 201
 ---
 
 
-##### <a name="response"></a>Resposta
+### <a name="response"></a>Resposta
 
 <!-- {
   "blockType": "response"

@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: sharmas
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: de863d94f5f4e3504664a19effc1c62c826dda75
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 98458e5d0f3731631c4f520f1a17e615270c5d26
+ms.sourcegitcommit: 08e9b0bac39c1b1d2c8a79539d24aaa93364baf2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59020060"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59767003"
 ---
 # <a name="educationassignment-setupresourcesfolder"></a>educationAssignment: setUpResourcesFolder
 
@@ -25,13 +25,12 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegada (conta corporativa ou de estudante) |  EduAssignments.ReadBasic, EduAssignments.Read  |
-|Delegada (conta pessoal da Microsoft) |  Sem suporte.  |
+|Delegado (conta corporativa ou de estudante) |  EduAssignments.ReadBasic, EduAssignments.Read  |
+|Delegado (conta pessoal da Microsoft) |  Sem suporte.  |
 |Aplicativo | Sem suporte. | 
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- { "blockType": "ignored" } -->
-
 ```http
 POST /education/classes/{id}/assignments/{id}/setUpResourcesFolder
 ```
@@ -43,7 +42,9 @@ POST /education/classes/{id}/assignments/{id}/setUpResourcesFolder
 ## <a name="request-body"></a>Corpo da solicitação
 Você precisa fornecer um json vazio `{}` como corpo da solicitação para este método.
 ## <a name="response"></a>Resposta
-Se tiver êxito, este método retornará um código de resposta 200 Ok e um [objeto educationAssignment](/graph/api/resources/educationAssignment?view=graph-rest-beta&preserve-view=true) no corpo da solicitação.
+Se tiver êxito, este método retornará um código de resposta e um `200 OK` [objeto educationAssignment](/graph/api/resources/educationAssignment?view=graph-rest-1.0&preserve-view=true) no corpo da solicitação.
+
+Se a atribuição **especificada já** tiver uma pasta, este método retornará uma e uma resposta `400 Bad request` de erro.
 
 ## <a name="example"></a>Exemplo
 O exemplo a seguir mostra como chamar essa API.
@@ -55,7 +56,7 @@ Veja a seguir um exemplo de uma solicitação.
 # <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "sampleKeys": ["ad8afb28-c138-4ad7-b7f5-a6986c2655a8"],
+  "sampleKeys": ["d38ffdea-da93-46ac-90ba-d568c6073075", "ad8afb28-c138-4ad7-b7f5-a6986c2655a8"],  
   "name": "educationassignment_setupresourcesfolder"
 }-->
 ```msgraph-interactive
@@ -143,6 +144,33 @@ Content-length: 279
         "user": {
             "id": "42ff222c-571f-497c-a9d3-f77ea9ece327",
             "displayName": null
+        }
+    }
+}
+```
+
+Se a atribuição **especificada já** tiver uma pasta, este método retornará uma e uma resposta `400 Bad request` de erro.
+
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "odata.error"
+} -->
+```http
+HTTP/1.1 400 Bad request
+Content-type: application/json
+Content-length: 158
+
+{
+    "error": {
+        "code": "badRequest",
+        "message": "Bad request.",
+        "innerError": {
+            "code": "folderAlreadyExists",
+            "message": "Resource folder already exists and has previously been set up.",
+            "date": "2021-09-14T19:05:24",
+            "request-id": "f88be238-1339-49c8-b03d-37f45d54761f",
+            "client-request-id": "30d8081a-f3e8-73e0-2da4-3480fb56ccdb"
         }
     }
 }

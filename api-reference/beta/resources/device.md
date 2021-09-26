@@ -1,16 +1,16 @@
 ---
 title: tipo de recurso de dispositivo
 description: Representa um dispositivo registrado no diretório.
-localization_priority: Normal
+ms.localizationpriority: medium
 author: spunukol
 ms.prod: directory-management
 doc_type: resourcePageType
-ms.openlocfilehash: 437e02f3a57cd93d9ee5e01ff310d681e5a04934
-ms.sourcegitcommit: 6d247f44a6ee4d8515c3863ee8a2683163c9f829
+ms.openlocfilehash: db958d3789e0e98f19e258d6f833206ade738f5c
+ms.sourcegitcommit: 08e9b0bac39c1b1d2c8a79539d24aaa93364baf2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/14/2021
-ms.locfileid: "53430218"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59763052"
 ---
 # <a name="device-resource-type"></a>tipo de recurso de dispositivo
 
@@ -31,7 +31,7 @@ Esse recurso permite que você adicione seus próprios dados às propriedades pe
 |[Atualizar dispositivo](../api/device-update.md) | [device](device.md)  |Atualize as propriedades do objeto device. |
 |[Excluir dispositivo](../api/device-delete.md) | Nenhuma |Exclua o objeto device. |
 |[Listar memberOf](../api/device-list-memberof.md) |Coleção [directoryObject](directoryobject.md)| Listar os grupos dos que o dispositivo é um membro direto. |
-|[List transitive memberOf](../api/device-list-transitivememberof.md) |Coleção [directoryObject](directoryobject.md)| Listar os grupos dos que o dispositivo é membro. Esta operação é transitiva. |
+|[Listar memberOf transitivos](../api/device-list-transitivememberof.md) |Coleção [directoryObject](directoryobject.md)| Listar os grupos dos que o dispositivo é membro. Esta operação é transitiva. |
 |[Listar registeredOwners](../api/device-list-registeredowners.md) |Coleção [directoryObject](directoryobject.md)| Obtenha os usuários que são proprietários registrados do dispositivo da propriedade de navegação registeredOwners.|
 |[Listar registeredUsers](../api/device-list-registeredusers.md) |Coleção [directoryObject](directoryobject.md)| Obtenha os usuários registrados do dispositivo da propriedade de navegação registeredUsers.|
 |[List usageRights](../api/device-list-usagerights.md) | Coleção [usageRight](usageright.md) | Obter uma coleção de direitos de uso concedidos ao dispositivo.|
@@ -49,23 +49,23 @@ Esse recurso permite que você adicione seus próprios dados às propriedades pe
 
 | Propriedade     | Tipo   |Descrição|
 |:---------------|:--------|:----------|
-|accountEnabled|Booliano| `true` se a conta estiver habilitada; caso contrário, `false`. O padrão é `true`. Suporta `$filter` (`eq`, `ne`, `NOT`, `in`).|
+|accountEnabled|Booliano| `true` se a conta estiver habilitada; caso contrário, `false`. O padrão é `true`. <br/><br/> Suporta `$filter` (`eq`, `ne`, `NOT`, `in`). Somente chamadores nas funções Administrador Global e Administrador de Dispositivos de Nuvem podem definir essa propriedade.|
 |alternativeSecurityIds|Coleção [alternativeSecurityId](alternativeSecurityId.md)| Apenas para uso interno. Não anulável. Suporta `$filter` (`eq`, `NOT`, `ge`, `le`). |
 |approximateLastSignInDateTime|DateTimeOffset| O tipo de data/hora representa informações de data e hora usando o formato ISO 8601 e está sempre em horário UTC. Por exemplo, meia-noite UTC em 1 de janeiro de 2014 é `2014-01-01T00:00:00Z`. Somente leitura. Suporta `$filter` ( , , , , ) e `eq` `ne` `NOT` `ge` `le` `$orderBy` . |
 |complianceExpirationDateTime|DateTimeOffset| O timestamp quando o dispositivo não é mais considerado compatível. O tipo de data/hora representa informações de data e hora usando o formato ISO 8601 e está sempre em horário UTC. Por exemplo, meia-noite UTC em 1 de janeiro de 2014 é `2014-01-01T00:00:00Z`. Somente leitura. |
-|deviceCategory|Cadeia de caracteres|Propriedade definida pelo usuário definida pelo Intune para adicionar automaticamente dispositivos a grupos e simplificar o gerenciamento de dispositivos.|
+|deviceCategory|String|Propriedade definida pelo usuário definida pelo Intune para adicionar automaticamente dispositivos a grupos e simplificar o gerenciamento de dispositivos.|
 |deviceId|Cadeia de caracteres| Identificador definido pelo Serviço de Registro de Dispositivo do Azure no momento do registro. Suporta `$filter` (`eq`, `ne`, `NOT`, `startsWith`). |
 |deviceMetadata|String| Apenas para uso interno. Definido como `null`. |
 |deviceOwnership|Cadeia de caracteres|Propriedade do dispositivo. Essa propriedade é definida pelo Intune. Os valores possíveis são: `unknown`, `company`, `personal`.|
 |deviceVersion|Int32| Apenas para uso interno. |
 |displayName|Cadeia de caracteres| O nome de exibição do dispositivo. Obrigatório. Suporta `$filter` (`eq`, `ne`, `NOT`, `ge`, `le`, `in`, `startsWith`), `$search`, e `$orderBy`.  |
 |domainName|Cadeia de caracteres|O nome de domínio local dos dispositivos ingressados no Azure AD híbrido. Essa propriedade é definida pelo Intune.|
-|enrollmentProfileName|Cadeia de caracteres|Perfil de registro aplicado ao dispositivo. Por exemplo, `Apple Device Enrollment Profile` , `Device enrollment - Corporate device identifiers` ou `Windows Autopilot profile name` . Essa propriedade é definida pelo Intune.|
+|enrollmentProfileName|String|Perfil de registro aplicado ao dispositivo. Por exemplo, `Apple Device Enrollment Profile` , `Device enrollment - Corporate device identifiers` ou `Windows Autopilot profile name` . Essa propriedade é definida pelo Intune.|
 |enrollmentType|String|Tipo de registro do dispositivo. Essa propriedade é definida pelo Intune. Os valores possíveis são: `unknown`, `userEnrollment`, `deviceEnrollmentManager`, `appleBulkWithUser`, `appleBulkWithoutUser`, `windowsAzureADJoin`, `windowsBulkUserless`, `windowsAutoEnrollment`, `windowsBulkAzureDomainJoin`, `windowsCoManagement`.|
 |id|Cadeia de caracteres|O identificador exclusivo do dispositivo. Herdado de [directoryObject](directoryobject.md). Chave, Não anulável. Somente leitura. Suporta `$filter` (`eq`, `ne`, `NOT`, `in`). |
 |isCompliant|Booliano|`true` se o dispositivo estiver em conformidade com políticas de Gerenciamento de Dispositivo Móvel (MDM); caso contrário, `false` . Somente leitura. Isso só pode ser atualizado pelo Intune para qualquer tipo de sistema operacional de dispositivo ou por um [aplicativo MDM](/windows/client-management/mdm/azure-active-directory-integration-with-mdm) aprovado para Windows do sistema operacional. Suporta `$filter` (`eq`, `ne`, `NOT`).|
 |isManaged|Booliano|`true` se o dispositivo for gerenciado por um aplicativo MDM (Gerenciamento de Dispositivo Móvel). caso contrário, `false` . Isso só pode ser atualizado pelo Intune para qualquer tipo de sistema operacional de dispositivo ou por um [aplicativo MDM](/windows/client-management/mdm/azure-active-directory-integration-with-mdm) aprovado para Windows do sistema operacional. Suporta `$filter` (`eq`, `ne`, `NOT`). |
-|isRooted|Booliano|`true` se o dispositivo estiver enraizado; `false` se o dispositivo estiver com a cadeia quebrada. Isso só pode ser atualizado pelo Intune.|
+|isRooted|Boolean|`true` se o dispositivo estiver enraizado; `false` se o dispositivo estiver com a cadeia quebrada. Isso só pode ser atualizado pelo Intune.|
 |managementType|String|Canal de gerenciamento do dispositivo.  Essa propriedade é definida pelo Intune. Os valores possíveis são: `eas`, `mdm`, `easMdm`, `intuneClient`, `easIntuneClient`, `configurationManagerClient`, `configurationManagerClientMdm`, `configurationManagerClientMdmEas`, `unknown`, `jamf`, `googleCloudDevicePolicyController`.|
 |fabricante|String| Fabricante do dispositivo. Somente leitura. |
 |mdmAppId|Cadeia de caracteres|Identificador de aplicativo usado para registrar o dispositivo no MDM. Somente leitura. Suporta `$filter` (`eq`, `ne`, `NOT`, `startsWith`).|
@@ -80,10 +80,10 @@ Esse recurso permite que você adicione seus próprios dados às propriedades pe
 |systemLabels|Coleção de cadeias de caracteres| Lista de rótulos aplicados ao dispositivo pelo sistema. |
 |hostnames|Coleção de cadeias de caracteres| Lista de hostNames do dispositivo.|
 |trustType|Cadeia de caracteres| Tipo de relação de confiança para o dispositivo associado. Somente leitura. Valores possíveis: (indica trazer seus próprios dispositivos pessoais ), (Dispositivos ingressados apenas na nuvem) (dispositivos ingressados no domínio local `Workplace`  `AzureAd` `ServerAd` ingressados no Azure AD). Saiba mais em [Introdução ao gerenciamento de dispositivo no Azure Active Directory](/azure/active-directory/device-management-introduction) |
-|nome| Cadeia de caracteres | Nome amigável de um dispositivo. Somente retornado se o usuário entrar com uma conta da Microsoft como parte Project Roma. |
-|status | Cadeia de caracteres| O dispositivo é `online` ou `offline` . Somente retornado se o usuário entrar com uma conta da Microsoft como parte Project Roma. |
+|name| Cadeia de caracteres | Nome amigável de um dispositivo. Somente retornado se o usuário entrar com uma conta da Microsoft como parte Project Roma. |
+|status | String| O dispositivo é `online` ou `offline` . Somente retornado se o usuário entrar com uma conta da Microsoft como parte Project Roma. |
 |plataforma |Cadeia de caracteres|Plataforma do dispositivo. Somente retornado se o usuário entrar com uma conta da Microsoft como parte Project Roma. Somente retornado se o usuário entrar com uma conta da Microsoft como parte Project Roma.|
-|Tipo| Cadeia de caracteres| Fator de formulário do dispositivo. Somente retornado se o usuário entrar com uma conta da Microsoft como parte Project Roma. |
+|Tipo| String| Fator de formulário do dispositivo. Somente retornado se o usuário entrar com uma conta da Microsoft como parte Project Roma. |
 |modelo| String| Modelo de dispositivo. Somente retornado se o usuário entrar com uma conta da Microsoft como parte Project Roma. |
 |fabricante| String| Fabricante do dispositivo. Somente retornado se o usuário entrar com uma conta da Microsoft como parte Project Roma. |
 
@@ -91,11 +91,11 @@ Esse recurso permite que você adicione seus próprios dados às propriedades pe
 | Relação | Tipo   |Descrição|
 |:---------------|:--------|:----------|
 | comandos | [coleção command](command.md) | Conjunto de comandos enviados para este dispositivo.|
-|extensions|Coleção [extension](extension.md)|A coleção de extensões abertas definidas para o dispositivo. Somente leitura. Anulável. |
+|extensions|[extension](extension.md) collection|A coleção de extensões abertas definidas para o dispositivo. Somente leitura. Anulável. |
 |memberOf|Coleção [directoryObject](directoryobject.md)|Grupos dos que esse dispositivo é membro. Somente leitura. Anulável. Suporta o `$expand`. |
 |registeredOwners|Coleção [directoryObject](directoryobject.md)| O usuário que associou o dispositivo na nuvem ou registrou seu dispositivo pessoal. O proprietário registrado é definido no momento do registro. Atualmente, só pode haver um proprietário. Somente leitura. Anulável. Suporta o `$expand`. |
 |registeredUsers|Coleção [directoryObject](directoryobject.md)| Coleção de usuários registrados do dispositivo. Para dispositivos associados em nuvem e dispositivos pessoais registrados, os usuários registrados são definidos para o mesmo valor que proprietários registrados no momento do registro. Somente leitura. Anulável. Suporta o `$expand`. |
-|transitiveMemberOf |Coleção [directoryObject](directoryobject.md)| Grupos dos que esse dispositivo é membro. Esta operação é transitiva. Suporta `$expand`.  |
+|transitiveMemberOf |Coleção [directoryObject](directoryobject.md)| Grupos dos que esse dispositivo é membro. Esta operação é transitiva. Suporta o `$expand`.  |
 |usageRights|Coleção [usageRight](usageright.md)|Representa os direitos de uso que um dispositivo recebeu. |
 
 ## <a name="json-representation"></a>Representação JSON

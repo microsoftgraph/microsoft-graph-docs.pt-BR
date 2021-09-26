@@ -2,15 +2,15 @@
 title: Excluir cloudPcOnPremisesConnection
 description: Exclua um objeto cloudPcOnPremisesConnection.
 author: AshleyYangSZ
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: cloud-pc
 doc_type: apiPageType
-ms.openlocfilehash: 01f9b5a7e4091492be7aa8eae0f0d3f8354169e6
-ms.sourcegitcommit: eacd2a6e46c19dd3cd8519592b1668fabe14d85d
+ms.openlocfilehash: cb2e8fa21331f005b44c054e4451976c2a6c8691
+ms.sourcegitcommit: 08e9b0bac39c1b1d2c8a79539d24aaa93364baf2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "49872762"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59764623"
 ---
 # <a name="delete-cloudpconpremisesconnection"></a>Excluir cloudPcOnPremisesConnection
 
@@ -18,15 +18,14 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-[Exclua um objeto cloudPcOnPremisesConnection](../resources/cloudpconpremisesconnection.md) específico.
+Exclua um [objeto cloudPcOnPremisesConnection](../resources/cloudpconpremisesconnection.md) específico.
 
 Quando você exclui uma conexão, as permissões para o serviço são removidas dos recursos especificados do Azure.
 
-Você não pode excluir uma conexão local depois que ela passar na verificação de saúde, que é indicada pela `healthCheckStatus` propriedade.
+Não é possível excluir uma conexão local depois que ela passar na verificação de saúde, que é indicada pela `healthCheckStatus` propriedade.
 
-Você também não pode excluir uma conexão quando ela está em uso, conforme indicado pela `inUse` propriedade.
+Você não pode excluir uma conexão quando ela estiver em uso, conforme indicado pela `inUse` propriedade.
 
-[!INCLUDE [cloudpc-api-preview](../../includes/cloudpc-api-preview.md)]
 ## <a name="permissions"></a>Permissões
 
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).

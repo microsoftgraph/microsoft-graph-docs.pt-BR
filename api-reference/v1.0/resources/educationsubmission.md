@@ -1,24 +1,24 @@
 ---
 title: Tipo de recurso educationSubmission
-description: Um envio representa os recursos que um indivíduo (ou grupo) entrega para uma atribuição e os resultados (como notas ou comentários) associados ao envio.
+description: Representa os recursos que um indivíduo (ou grupo) envia para uma atribuição e os resultados (como notas ou comentários) associados ao envio.
 author: sharad-sharma-msft
 ms.localizationpriority: medium
 ms.prod: education
 doc_type: resourcePageType
-ms.openlocfilehash: 8b309c887d431fd4b4f23fc6418965e5857d468e
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 3948df5989cf1800b84e5587c75d8a51b52bbd2e
+ms.sourcegitcommit: 08e9b0bac39c1b1d2c8a79539d24aaa93364baf2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59123626"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59766541"
 ---
 # <a name="educationsubmission-resource-type"></a>Tipo de recurso educationSubmission
 
 Namespace: microsoft.graph
 
-Um envio representa os recursos que um indivíduo (ou grupo) entrega para uma atribuição e os resultados (como notas ou comentários) associados ao envio.
+Representa os recursos que um indivíduo (ou grupo) entrega para uma [atribuição](educationassignment.md) e os resultados (como notas ou comentários) associados ao **envio**.
 
-Os envios pertencem a uma atribuição. Os envios são criados automaticamente quando uma atribuição é publicada. O envio possui duas listas de recursos. Os recursos representam a área de trabalho usuário/grupos enquanto os recursos enviados representam os recursos que foram ativamente entregues pelos alunos.  
+Os envios pertencem a uma **atribuição**. Os envios são criados automaticamente quando uma **atribuição** é publicada. O **envio** possui duas listas de recursos. Os recursos representam a área de trabalho usuário/grupos enquanto os recursos enviados representam os recursos que foram ativamente entregues pelos alunos.  
 
 A **propriedade status** é somente leitura e o objeto é movido através do fluxo de trabalho por meio de ações. 
 
@@ -34,7 +34,7 @@ Se [setUpResourcesFolder](../api/educationsubmission-setupResourcesFolder.md) n�
 |[Listar resultados](../api/educationsubmission-list-outcomes.md) |[Coleção educationOutcome](educationoutcome.md)| Obter uma **coleção de objetos educationOutcome.**|
 |[return](../api/educationsubmission-return.md)|[educationSubmission](educationsubmission.md)|Um professor usa o retorno para indicar que as notas/comentários podem ser mostradas ao aluno.|
 |[Configurar pasta de recursos específicos do envio](../api/educationsubmission-setupResourcesFolder.md) |[educationSubmission](educationsubmission.md) | Crie uma SharePoint (em local pré-definido) para carregar arquivos como recursos de envio. |
-|[Enviar](../api/educationsubmission-submit.md)|[educationSubmission](educationsubmission.md)|Um aluno usa enviar para entregar a atribuição. Isso copiará os recursos para a **pasta submittedResources** para a classificação e atualiza o status.|
+|[Enviar](../api/educationsubmission-submit.md)|[educationSubmission](educationsubmission.md)|Um aluno usa enviar para entregar a **atribuição**. Isso copiará os recursos para a **pasta submittedResources** para a classificação e atualiza o status.|
 |[unsubmit](../api/educationsubmission-unsubmit.md)|[educationSubmission](educationsubmission.md)|Um aluno usa o cancelamento para mover o estado do envio do envio de volta ao trabalho. Isso copiará os recursos para a **pasta workingResources** para a classificação e atualiza o status.|
 
 ## <a name="properties"></a>Propriedades

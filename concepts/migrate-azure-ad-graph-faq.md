@@ -4,12 +4,12 @@ description: Azure Active Directory (Azure AD) Graph perguntas frequentes sobre 
 author: FaithOmbongi
 ms.localizationpriority: medium
 ms.prod: applications
-ms.openlocfilehash: fce5d843994526f5546375c72c1d6b536352b4f6
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 93d5fe0df29b09b083c15a2287b4f47dc6fe166f
+ms.sourcegitcommit: 08e9b0bac39c1b1d2c8a79539d24aaa93364baf2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59139160"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59763349"
 ---
 # <a name="azure-active-directory-azure-ad-graph-to-microsoft-graph-migration-faq"></a>Azure Active Directory (Azure AD) Graph perguntas frequentes sobre Graph migração da Microsoft
 
@@ -34,7 +34,7 @@ Se você possuir o código-fonte de um aplicativo, procure o `https://graph.wind
 1. Entre no [portal do Azure](https://portal.azure.com) como administrador global.
 1. Pesquise e **selecione Azure Active Directory**.
 1. Em **Gerenciar**, selecione **Registros de aplicativo**.
-1. Na janela **Registros de aplicativo,** selecione a guia Todos os **Aplicativos** e selecione a **opção Adicionar filtros.** Escolha a **opção ID de aplicativo (cliente)** na lista de filtros disponíveis e selecione **Aplicar**.  Um filtro aparece.
+1. Na janela **Registros de aplicativos,** habilita a visualização de pesquisa **registros de aplicativos**. Selecione a **guia Todos os Aplicativos** e selecione a **opção Adicionar filtros.** Escolha a **opção ID de aplicativo (cliente)** na lista de filtros disponíveis e selecione **Aplicar**.  Um filtro aparece.
 1. Na caixa de texto, insira a ID do aplicativo que você recuperou na Etapa 1 e selecione **Aplicar**. A lista foi limitada ao aplicativo especificado.
 
     :::image type="content" source="/graph/images/aadgraph-to-msgraph-migration/AppClientIDFilter.png" alt-text="Filtrar por aplicativos por ID do aplicativo." border="true":::
@@ -58,7 +58,7 @@ Verifique os logs de tráfego do servidor de rede por meio de um proxy de filtro
 1. Entre no [portal do Azure](https://portal.azure.com) como administrador global.
 1. Pesquise e **selecione Azure Active Directory**.
 1. Em **Gerenciar**, selecione **Registros de aplicativo**.
-1. Na janela Registros de aplicativo, selecione a guia **Todos os Aplicativos** e selecione a **opção Adicionar filtros.** Escolha a **opção API Solicitada** na lista de filtros disponíveis e selecione **Aplicar**. O **filtro API Solicitado** é apasado.
+1. Na janela **Registros de aplicativos,** habilita a visualização de pesquisa **registros de aplicativos**. Selecione a **guia Todos os Aplicativos** e selecione a **opção Adicionar filtros.** Escolha a **opção API Solicitada** na lista de filtros disponíveis e selecione **Aplicar**. O **filtro API Solicitado** é apasado.
 
     :::image type="content" source="/graph/images/aadgraph-to-msgraph-migration/RequestedAPI.png" alt-text="Filtrar aplicativos pela API solicitada." border="true":::
 
@@ -77,7 +77,7 @@ Baixe e execute [este script do PowerShell.](https://github.com/microsoft/AzureA
 1. Entre no [portal do Azure](https://portal.azure.com) como administrador global.
 1. Pesquise e **selecione Azure Active Directory**.
 1. Em **Gerenciar**, selecione **Registros de aplicativo**.
-1. Na janela Registros de aplicativos, selecione a guia **Todos os Aplicativos** e selecione **Adicionar filtros.** Escolha a **opção ID de aplicativo (cliente)** na lista de filtros disponíveis e selecione **Aplicar**.  Um filtro aparece.
+1. Na janela **Registros de aplicativos,** habilita a visualização de pesquisa **registros de aplicativos**. Selecione a **guia Todos os Aplicativos** e selecione a **opção Adicionar filtros.** Escolha a **opção ID de aplicativo (cliente)** na lista de filtros disponíveis e selecione **Aplicar**.  Um filtro aparece.
 1. Insira uma ID de aplicativo na caixa de texto e selecione **Aplicar**. A lista foi limitada ao aplicativo especificado.
 
     :::image type="content" source="/graph/images/aadgraph-to-msgraph-migration/AppClientIDFilter.png" alt-text="Filtrar por aplicativos por ID do aplicativo." border="true":::

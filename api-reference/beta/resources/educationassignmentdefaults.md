@@ -2,15 +2,15 @@
 title: Tipo de recurso educationAssignmentDefaults
 description: Especifica os padrões de nível de classe respeitados por novas atribuições criadas na classe
 author: dipakboyed
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: d13626996917160bdb2b9cb60b67750fe6a89f2f
-ms.sourcegitcommit: 0116750a01323bc9bedd192d4a780edbe7ce0fdc
+ms.openlocfilehash: 359acda9530b7aa3de10903aca42ca825cde3503
+ms.sourcegitcommit: 08e9b0bac39c1b1d2c8a79539d24aaa93364baf2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58255590"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59763615"
 ---
 # <a name="educationassignmentdefaults-resource-type"></a>Tipo de recurso educationAssignmentDefaults
 
@@ -30,7 +30,7 @@ Especifica os padrões de nível de classe respeitados por novas atribuições c
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
 |addedStudentAction|educationAddedStudentAction|Comportamento padrão no nível de classe para lidar com alunos que são adicionados após a publicação da atribuição. Os valores possíveis são: `none` e `assignIfOpen`.|
-|addToCalendarAction| educationAddToCalendarOptions|Campo opcional para controlar a adição de atribuições aos calendários dos alunos e professores quando a atribuição for publicada. Os valores possíveis são: `studentsAndPublisher` e `studentsAndTeamOwners` . |
+|addToCalendarAction| educationAddToCalendarOptions|Campo opcional para controlar a adição de atribuições aos calendários dos alunos e professores quando a atribuição for publicada. Os valores possíveis são: `none` , , , e `studentsAndPublisher` `studentsAndTeamOwners` `unknownFutureValue` `studentsOnly` . Observe que você deve usar o header de solicitação para obter os seguintes valores nesta `Prefer: include-unknown-enum-members` [enum evolvável](/graph/best-practices-concept#handling-future-members-in-evolvable-enumerations): `studentsOnly` . O valor padrão é `none`.|
 |dueTime|TimeOfDay|Valor padrão de nível de classe para o campo de tempo de vencimento. O valor padrão é `23:59:00`.|
 |notificationChannelUrl|Cadeia de caracteres|Canal Teams padrão para o qual as notificações serão enviadas. O valor padrão é `null`.|
 

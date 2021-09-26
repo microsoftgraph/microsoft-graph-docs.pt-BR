@@ -5,12 +5,12 @@ ms.localizationpriority: high
 author: Jordanndahl
 ms.prod: groups
 doc_type: resourcePageType
-ms.openlocfilehash: bd3edb246ab9fce3b9b088d94ce043cbc690839a
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: a8e31222c36d88b3d0aed4453da9d89230d169c6
+ms.sourcegitcommit: 08e9b0bac39c1b1d2c8a79539d24aaa93364baf2
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59084563"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59765638"
 ---
 # <a name="group-resource-type"></a>tipo de recurso de grupo
 
@@ -43,7 +43,7 @@ Esse recurso permite:
 | [Adicionar membro](../api/group-post-members.md) | Nenhum | Adicionar um usuário ou grupo a esse grupo postando na propriedade de navegação **members** (com suporte somente para grupos de segurança e grupos de segurança habilitados para email). |
 | [Adicionar proprietário](../api/group-post-owners.md) | Nenhum | Adicionar um novo proprietário para o grupo postando na propriedade de navegação **owners** (com suporte somente para grupos de segurança e grupos de segurança habilitados para email). |
 | [Criar configuração](../api/groupsetting-post-groupsettings.md) | [groupSetting](groupsetting.md) | Crie um objeto de configuração com base em um groupSettingTemplate. A solicitação POST deve fornecer settingValues para todas as configurações definidas no modelo. Somente modelos específicos de grupos podem ser usados para essa operação. |
-| [Excluir configuração](../api/groupsetting-delete.md) | None | Excluir um objeto de configuração. |
+| [Excluir configuração](../api/groupsetting-delete.md) | Nenhum | Excluir um objeto de configuração. |
 | [Obter configuração](../api/groupsetting-get.md) | [groupSetting](groupsetting.md) | Ler propriedades de um objeto de configuração específico. |
 | [Listar groupLifecyclePolicies](../api/group-list-grouplifecyclepolicies.md)  | Coleção [groupLifecyclePolicy](grouplifecyclepolicy.md) | Listar políticas de ciclo de vida de grupo. |
 | [Listar membros](../api/group-list-members.md) | Coleção [directoryObject](directoryobject.md) | Obter os usuários e grupos que são membros diretos desse grupo da propriedade de navegação **members**. |
@@ -92,7 +92,7 @@ Esse recurso permite:
 | [Obter configuração](../api/groupsetting-get.md) | [groupSetting](groupsetting.md) | Ler propriedades de um objeto de configuração específico. |
 | [Listar configurações](../api/groupsetting-list.md) | Conjunto [groupSetting](groupsetting.md) | Lista propriedades de todos os objetos de configuração. |
 | [Atualizar configuração](../api/groupsetting-update.md) | Nenhum | Atualizar um objeto setting. |
-| [Excluir configuração](../api/groupsetting-delete.md) | None | Excluir um objeto de configuração. |
+| [Excluir configuração](../api/groupsetting-delete.md) | Nenhum | Excluir um objeto de configuração. |
 | [Obter modelo de configuração](../api/groupsettingtemplate-get.md) | Nenhum | Ler as propriedades de um modelo de configuração. |
 | [Listar modelo de configuração](../api/groupsettingtemplate-list.md) | Nenhum | Listar propriedades de todos os modelos de configuração. |
 | **Extensões abertas** |||
@@ -146,8 +146,8 @@ Esse recurso permite:
 |onPremisesSamAccountName|Cadeia de Caracteres|Contém o **nome da conta SAM** local sincronizado no diretório local. A propriedade somente é preenchida para os clientes que estejam sincronizando o seu diretório local com o Azure Active Directory pelo Azure AD Connect.<br><br>Retornado por padrão. Suporta `$filter` (`eq`, `ne`, `NOT`, `ge`, `le`, `in`, `startsWith`). Somente leitura. |
 |onPremisesSecurityIdentifier|String|Contém o identificador de segurança (SID) local do grupo que foi sincronizado do local com a nuvem. <br><br>Retornado por padrão. Suporta `$filter` em `null` valores. Somente leitura. |
 |onPremisesSyncEnabled|Booliano|`true` se esse grupo está sincronizado de um diretório local; `false` se esse grupo foi originalmente sincronizado de um diretório local, mas não está mais sincronizado; **null** se esse objeto nunca foi sido sincronizado de um diretório local (padrão). <br><br>Retornado por padrão. Somente leitura. Suporta `$filter` (`eq`, `ne`, `NOT`, `in`).|
-|preferredDataLocation|String|O local de data preferido para o grupo. Saiba mais em [OneDrive Online com Multi-Geo](/sharepoint/dev/solution-guidance/multigeo-introduction). <br><br>Retornado por padrão.|
-|preferredLanguage|String|O idioma preferido para um grupo Microsoft 365. Deve seguir o Código ISO 639-1; por exemplo "en-US".<br><br>Retornado por padrão. Suporta `$filter` (`eq`, `ne`, `NOT`, `ge`, `le`, `in`, `startsWith`). |
+|preferredDataLocation|String|O local de data preferido para o grupo do Microsoft 365. Por padrão, o grupo herda o local de dados preferencial do criador do grupo. Para definir essa propriedade, o usuário de chamada deve ter uma das seguintes [funções do Azure AD](/azure/active-directory/roles/permissions-reference): <br><ul><li> Administrador Global <li> Administrador de Conta de Usuário <li>Escritor de Diretórios <li> Administrador do Exchange <li> Administrador do SharePoint </ul><br/> Para obter mais informações sobre essa propriedade, consulte [OneDrive Online Multi-Geo](/sharepoint/dev/solution-guidance/multigeo-introduction). <br><br>Anulável. Retornado por padrão.|
+|preferredLanguage|Cadeia de caracteres|Idioma de preferência de um grupo do Microsoft 365. Deve seguir o Código ISO 639-1; por exemplo `en-US`. <br><br>Devolvido por padrão. Suporta `$filter` (`eq`, `ne`, `NOT`, `ge`, `le`, `in`, `startsWith`). |
 |proxyAddresses|String collection| Endereços de email para o grupo que direcionam para a mesma caixa de correio do grupo. Por exemplo: `["SMTP: bob@contoso.com", "smtp: bob@sales.contoso.com"]`. O operador **any** é obrigatório para filtrar expressões em propriedades de vários valores. <br><br>Retornado por padrão. Somente leitura. Não anulável. Suporta `$filter` (`eq`, `NOT`, `ge`, `le`, `startsWith`). |
 |renewedDateTime|DateTimeOffset| Carimbo de data/hora da ocasião em que o grupo foi renovado pela última vez. Não é possível modificar isso diretamente e a atualização ocorre apenas por meio da [ação de renovação de serviço](../api/group-renew.md). O tipo Timestamp representa informações de data e hora usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite UTC em 1 de janeiro de 2014 é `2014-01-01T00:00:00Z`. <br><br>Retornado por padrão. Suporta `$filter` (`eq`, `ne`, `NOT`, `ge`, `le`, `in`). Apenas leitura.|
 |resourceBehaviorOptions|Conjunto de cadeias de caracteres|Especifica os comportamentos de grupo que podem ser configurados para um grupo do Microsoft 365 durante sua criação. Isso só pode ser definido como parte da criação (POST). Os valores possíveis são `AllowOnlyMembersToPost`, `HideGroupInOutlook`, `SubscribeNewGroupMembers`, `WelcomeEmailDisabled`. Para obter mais informações, confira o artigo [Definir as opções de provisionamento e comportamentos de grupo do Microsoft 365 ](/graph/group-set-options).|
@@ -156,7 +156,7 @@ Esse recurso permite:
 |securityIdentifier|Cadeia de Caracteres|Identificador de segurança do grupo, usado em cenários do Windows. <br><br>Retornado por padrão.|
 |tema|cadeia de caracteres|Especifica o tema de cor de um grupo do Microsoft 365. Os valores possíveis são: `Teal`, `Purple`, `Green`, `Blue`,`Pink`, `Orange` ou `Red`. <br><br>Retornado por padrão. |
 |unseenCount|Int32|Contagem das conversas que receberam novas postagens desde que o usuário conectado visitou o grupo pela última vez. <br><br>Retornado apenas em `$select`. Com suporte apenas para Obter API de grupo (`GET /groups/{ID}`) |
-|visibility|Cadeia de caracteres| Especifica a política de associação ao grupo e a visibilidade do conteúdo do grupo para grupos. Os valores possíveis são: `Private`, `Public` ou `Hiddenmembership`. `Hiddenmembership` pode ser definido apenas para grupos do Microsoft 365, quando os grupos são criados. Não pode ser atualizado posteriormente. Outros valores de visibilidade podem ser atualizados após a criação do grupo.<br> Se o valor de visibilidade não for especificado durante a criação do grupo no Microsoft Graph, um grupo de segurança é criado como `Private` por padrão e o grupo Microsoft 365 é `Public`. Saiba mais em [Opções de visibilidade do grupo](#group-visibility-options). <br><br>Retornado por padrão. Anulável.|
+|visibility|Cadeia de caracteres| Especifica a política de associação ao grupo e a visibilidade do conteúdo do grupo para grupos. Os valores possíveis são: `Private`, `Public` ou `Hiddenmembership`. `Hiddenmembership` pode ser definido apenas para grupos do Microsoft 365, quando os grupos são criados. Não pode ser atualizado posteriormente. Outros valores de visibilidade podem ser atualizados após a criação do grupo.<br> Se o valor de visibilidade não for especificado durante a criação do grupo no Microsoft Graph, um grupo de segurança é criado como `Private` por padrão e o grupo Microsoft 365 é `Public`. Grupos atribuídos a funções são sempre `Private`. Saiba mais em [Opções de visibilidade do grupo](#group-visibility-options). <br><br>Retornado por padrão. Anulável.|
 
 
 ### <a name="group-visibility-options"></a>Opções de visibilidade do grupo

@@ -1,16 +1,16 @@
 ---
 title: Tipo de recurso accessPackageAssignmentRequest
 description: Uma solicitação de atribuição de pacote de acesso é criada por um usuário que deseja obter uma atribuição de pacote de acesso.
-localization_priority: Normal
+ms.localizationpriority: medium
 author: markwahl-msft
 ms.prod: governance
 doc_type: resourcePageType
-ms.openlocfilehash: ed2b59e5e20977f6be54a7967cd1cfd94cea7699
-ms.sourcegitcommit: 6f04ad0e0cde696661511dcdf343942b43f73fc6
+ms.openlocfilehash: 765c5259a4295160f7b776a883ef9cc29bb7dc52
+ms.sourcegitcommit: 08e9b0bac39c1b1d2c8a79539d24aaa93364baf2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/19/2021
-ms.locfileid: "58396715"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59767129"
 ---
 # <a name="accesspackageassignmentrequest-resource-type"></a>Tipo de recurso accessPackageAssignmentRequest
 
@@ -27,6 +27,7 @@ No [Azure AD Entitlement Management](entitlementmanagement-root.md), uma solicit
 | [Listar accessPackageAssignmentRequests](../api/accesspackageassignmentrequest-list.md) | [coleção accessPackageAssignmentRequest](accesspackageassignmentrequest.md) | Recupere uma lista **de objetos accesspackageassignmentrequest.** |
 | [Criar accessPackageAssignmentRequest](../api/accesspackageassignmentrequest-post.md) | [accessPackageAssignmentRequest](accesspackageassignmentrequest.md) | Crie um novo **accessPackageAssignmentRequest**. |
 | [Obter accessPackageAssignmentRequest](../api/accesspackageassignmentrequest-get.md) | [accessPackageAssignmentRequest](accesspackageassignmentrequest.md) | Leia propriedades e relações de um **objeto accessPackageAssignmentRequest.** |
+| [Excluir accessPackageAssignmentRequest](../api/accesspackageassignmentrequest-delete.md) |Nenhum | Excluir um **accessPackageAssignmentRequest**. |
 |[filterByCurrentUser](../api/accesspackageassignmentrequest-filterbycurrentuser.md)|[coleção accessPackageAssignmentRequest](../resources/accesspackageassignmentrequest.md)|Recupere a lista de **objetos accessPackageAssignmentRequest** filtrados no usuário de entrada.|
 |[cancel](../api/accesspackageassignmentrequest-cancel.md)|[coleção accessPackageAssignmentRequest](../resources/accesspackageassignmentrequest.md)|Cancele **um objeto accessPackageAssignmentRequest** que está em estado cancelável.|
 | [reprocessamento](../api/accesspackageassignmentrequest-reprocess.md) | Nenhum | Repetir automaticamente a solicitação de acesso de um usuário a um pacote de acesso.|
@@ -38,10 +39,10 @@ No [Azure AD Entitlement Management](entitlementmanagement-root.md), uma solicit
 |completedDate|DateTimeOffset|A data do final do processamento, bem-sucedida ou falha, de uma solicitação. O tipo Timestamp representa informações de data e hora usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite UTC em 1 de janeiro de 2014 é `2014-01-01T00:00:00Z`. Somente leitura.|
 |createdDateTime|DateTimeOffset|O tipo Timestamp representa informações de data e hora usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite UTC em 1 de janeiro de 2014 é `2014-01-01T00:00:00Z`. Somente leitura.|
 |id|String| Somente leitura.|
-|isValidationOnly|Booliano|True se a solicitação não for processada para atribuição.|
-|justification|Cadeia de caracteres|A justificativa fornecida pelo solicitante.|
+|isValidationOnly|Boolean|True se a solicitação não for processada para atribuição.|
+|justification|String|A justificativa fornecida pelo solicitante.|
 |requestState|Cadeia de caracteres|Um de `PendingApproval` , , , , , , , `Canceled` ou  `Denied` `Delivering` `Delivered` `PartiallyDelivered` `DeliveryFailed` `Submitted` `Scheduled` . Somente leitura.|
-|requestStatus|Cadeia de caracteres|Mais informações sobre o status do processamento de solicitação. Somente leitura.|
+|requestStatus|String|Mais informações sobre o status do processamento de solicitação. Somente leitura.|
 |requestType|Cadeia de caracteres|Um dos `UserAdd` , `UserRemove` , ou `AdminAdd` `AdminRemove` `SystemRemove` . Uma solicitação do próprio usuário teria requestType de `UserAdd` ou `UserRemove` . Somente leitura.|
 |Cronograma|[requestSchedule](requestschedule.md)| O intervalo de datas que o acesso deve ser atribuído ao solicitante. Somente leitura.|
 |answers|[Coleção accessPackageAnswer](accesspackageanswer.md)|Respostas fornecidas pelo solicitante para [acessarPackageQuestions solicitadas](accesspackagequestion.md) no momento da solicitação.|

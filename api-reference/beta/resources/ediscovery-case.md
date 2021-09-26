@@ -2,15 +2,15 @@
 title: tipo de recurso case
 description: No contexto da Descoberta eDiscovery, contém custodiantes, regiões, coleções, conjuntos de revisão e exportações.
 author: mahage-msft
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: ediscovery
 doc_type: resourcePageType
-ms.openlocfilehash: 112a5551608df02378fca1793e0b3f469baf322d
-ms.sourcegitcommit: e440d855f1106390d842905d97ceb16f143db2e5
+ms.openlocfilehash: ea4907edc66cd2c8d7713e816d561a0181c84d92
+ms.sourcegitcommit: 08e9b0bac39c1b1d2c8a79539d24aaa93364baf2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/29/2021
-ms.locfileid: "52080530"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59766303"
 ---
 # <a name="case-resource-type"></a>tipo de recurso case
 
@@ -19,6 +19,9 @@ Namespace: microsoft.graph.ediscovery
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 No contexto da Descoberta eDiscovery, contém custodiantes, regiões, coleções, conjuntos de revisão e exportações. Para obter detalhes, [consulte Advanced eDiscovery](/microsoft-365/compliance/overview-ediscovery-20).
+
+>[!NOTE]
+>A partir de setembro de 2021, as operações POST criarão casos grandes. Para saber mais sobre casos grandes, consulte [Use large cases in Advanced eDiscovery](/microsoft-365/compliance/advanced-ediscovery-large-cases). Para obter detalhes, consulte a [postagem do](https://go.microsoft.com/fwlink/?linkid=2172604) blog Alterações na descoberta Microsoft 365 criar API de caso avançada.
 
 ## <a name="methods"></a>Métodos
 
@@ -59,10 +62,10 @@ No contexto da Descoberta eDiscovery, contém custodiantes, regiões, coleções
 |closedDateTime|DateTimeOffset|A data e a hora em que o caso foi fechado. O tipo Timestamp representa informações de data e hora usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite UTC em 1 de janeiro de 2014 é `2014-01-01T00:00:00Z`|
 |createdBy|[identitySet](/graph/api/resources/identityset)|O usuário que criou o caso.|
 |createdDateTime|DateTimeOffset|A data e a hora em que a entidade foi criada. O tipo Timestamp representa informações de data e hora usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite UTC em 1 de janeiro de 2014 é `2014-01-01T00:00:00Z`|
-|description|String|A descrição do caso.|
+|description|Cadeia de caracteres|A descrição do caso.|
 |displayName|String|O nome do caso.|
 |externalId|Cadeia de caracteres|O número de caso externo para referência do cliente.|
-|id|String| A ID do caso de Descoberta e. Somente leitura. |
+|id|Cadeia de caracteres| A ID do caso de Descoberta e. Somente leitura. |
 |lastModifiedBy|[identitySet](/graph/api/resources/identityset)|O último usuário que modificou a entidade.|
 |lastModifiedDateTime|DateTimeOffset| A data e a hora mais recentes em que o caso foi modificado. O tipo Timestamp representa informações de data e hora usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite UTC em 1 de janeiro de 2014 é `2014-01-01T00:00:00Z`|
 |status|microsoft.graph.ediscovery.caseStatus| O status do caso. Os valores possíveis `unknown` são , , , , e `active` `pendingDelete` `closing` `closed` `closedWithError` . Para obter detalhes, consulte a tabela a seguir.|
@@ -89,7 +92,7 @@ No contexto da Descoberta eDiscovery, contém custodiantes, regiões, coleções
 |reviewSets|[coleção microsoft.graph.ediscovery.reviewSet](../resources/ediscovery-reviewset.md)| Retorna uma lista de **objetos reviewSet** no caso. Somente leitura. Anulável. |
 |Configurações|[coleção microsoft.graph.ediscovery.settings](../resources/ediscovery-settings.md)| Retorna uma lista **de objetos de configurações** no caso. Somente leitura. Anulável. |
 |sourceCollections|[coleção microsoft.graph.ediscovery.sourceCollection](../resources/ediscovery-sourcecollection.md)|Retorna uma lista de **objetos sourceCollection** associados a esse caso.|
-|tags|[coleção microsoft.graph.ediscovery.tag](../resources/ediscovery-tag.md)|Retorna uma lista **de objetos de** marca associados a esse caso.|
+|categorias|[coleção microsoft.graph.ediscovery.tag](../resources/ediscovery-tag.md)|Retorna uma lista **de objetos de** marca associados a esse caso.|
 
 ## <a name="json-representation"></a>Representação JSON
 

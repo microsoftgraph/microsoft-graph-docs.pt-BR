@@ -1,16 +1,16 @@
 ---
 title: Update schemaExtension
 description: Atualizar propriedades na definição do esquemaExtension especificado.
-localization_priority: Normal
+ms.localizationpriority: medium
 author: dkershaw10
 doc_type: apiPageType
 ms.prod: extensions
-ms.openlocfilehash: 6e5bef7a1ac978ccde1c84a9ee074d7fc6d91c28
-ms.sourcegitcommit: 94c4acf8bd03c10a44b12952b6cb4827df55b978
+ms.openlocfilehash: b0736ce3becf49c0b308c6fc0932fc8bc2648f55
+ms.sourcegitcommit: 08e9b0bac39c1b1d2c8a79539d24aaa93364baf2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/06/2021
-ms.locfileid: "52787371"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59767301"
 ---
 # <a name="update-schemaextension"></a>Update schemaExtension
 
@@ -26,7 +26,7 @@ Para fluxos delegados, o usuário inscreveu pode atualizar  uma extensão de esq
 
 Esse critério para a propriedade **owner** permite que um usuário in-loco faça atualizações por meio de outros aplicativos que eles não têm, como o Microsoft Graph Explorer. Ao usar Graph Explorer para atualizar um recurso **schemaExtension,** inclua a propriedade **owner** no corpo da solicitação PATCH. Para obter mais informações, consulte a seção [Extensões](/graph/known-issues#extensions) em [Problemas conhecidos com a Microsoft Graph](/graph/known-issues).
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>Permissões
 
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
@@ -64,13 +64,13 @@ No corpo da solicitação, forneça os valores para os campos relevantes que dev
 
 ## <a name="response"></a>Resposta
 
-Se tiver êxito, este método retornará um código de resposta `204 No Content`.
+Se tiver êxito, este método retornará um código de resposta `204 No Content`. Tentar executar essa solicitação de um aplicativo que você não possui (e sem definir a propriedade **owner** como **appId** de um aplicativo que você possui) retorna um código `403 Forbidden` de resposta.
 
 ## <a name="example"></a>Exemplo
 
-##### <a name="request"></a>Solicitação
+### <a name="request"></a>Solicitação
 
-
+Este é um exemplo de solicitação. Você deve incluir **a propriedade owner** se estiver executando a solicitação de um aplicativo que você não possui. Nesse caso, de definir a **propriedade owner** como **appId** de um aplicativo que você possui.
 
 # <a name="http"></a>[HTTP](#tab/http)
 <!-- {
@@ -78,21 +78,29 @@ Se tiver êxito, este método retornará um código de resposta `204 No Content`
   "name": "update_schemaextension"
 }-->
 ```http
-PATCH https://graph.microsoft.com/beta/schemaExtensions/{id}
+PATCH https://graph.microsoft.com/beta/schemaExtensions/exto6x7sfft_courses
 Content-type: application/json
-Content-length: 201
 
 {
-  "properties": [
-    {
-      "name":"new-name-value",
-      "type":"new-type-value"
-    },
-    {
-      "name":"additional-name-value",
-      "type":"additional-type-value"
-    }
-  ]
+    "owner": "ef4cb9a8-97c3-4ca7-854b-5cb5ced376fa",
+    "properties": [
+        {
+            "name": "courseId",
+            "type": "Integer"
+        },
+        {
+            "name": "courseName",
+            "type": "String"
+        },
+        {
+            "name": "courseType",
+            "type": "String"
+        },
+        {
+            "name": "courseSupervisors",
+            "type": "String"
+        }
+    ]
 }
 ```
 # <a name="c"></a>[C#](#tab/csharp)
@@ -114,7 +122,7 @@ Content-length: 201
 ---
 
 
-##### <a name="response"></a>Resposta
+### <a name="response"></a>Resposta
 
 <!-- {
   "blockType": "response"

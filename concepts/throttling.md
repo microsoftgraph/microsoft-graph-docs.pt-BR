@@ -4,12 +4,12 @@ description: Os limites de controle limitam número de chamadas simultâneas par
 author: davidmu1
 ms.localizationpriority: high
 ms.custom: graphiamtop20
-ms.openlocfilehash: 3290c1fee3921d0c367496871a5753eb1afc5fbc
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 655509eec37b9010596d4418e2873ad85f7345c8
+ms.sourcegitcommit: 08e9b0bac39c1b1d2c8a79539d24aaa93364baf2
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59035621"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59508044"
 ---
 # <a name="microsoft-graph-throttling-guidance"></a>Diretrizes de limitação do Microsoft Graph
 
@@ -251,6 +251,7 @@ Outros fatores que afetam um custo da solicitação:
 - Usar o `$select` reduz os custos por 1
 - Usar o `$expand` aumenta os custos por 1
 - Usar o `$top` com um valor menor que 20 reduz os custos por 1
+- Criar um usuário em um locatário Azure Active Directory B2C aumenta o custo em 4
 
 > **Observação:** Um custo da solicitação nunca pode ser menor do que 1. Qualquer custo da solicitação que se aplica a um caminho da solicitação iniciado por `me/` também se aplica a solicitações equivalentes iniciadas por `users/{id | userPrincipalName}/`.
 
@@ -302,6 +303,8 @@ Os limites anteriores se aplicam aos seguintes recursos:
 ### <a name="information-protection-service-limits"></a>Limites do serviço de proteção de informações
 
 Os seguintes limites se aplicam a qualquer solicitação no `/informationProtection`.
+  
+Para o email, o recurso é um par único de mensagens de rede ID/recipiente. Por exemplo, enviar um email com o mesmo ID de mensagem enviado à mesma pessoa várias vezes em um período de 15 minutos acionará o limite por limite de recursos estabelecido na tabela a seguir. Entretanto, você pode enviar até 150 emails únicos a cada 15 minutos (limite de locatário).
 
 | Operation                 | Limite por inquilino                                            | Limite por recurso (email, URL, arquivo)                |
 |---------------------------|-------------------------------------------------------------|------------------------------------------------------|

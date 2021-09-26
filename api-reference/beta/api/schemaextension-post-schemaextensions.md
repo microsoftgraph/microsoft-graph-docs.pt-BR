@@ -1,16 +1,16 @@
 ---
 title: Criar schemaExtension
 description: Criar uma nova definição schemaExtension para estender um tipo de recurso de suporte.
-localization_priority: Normal
+ms.localizationpriority: medium
 author: dkershaw10
 doc_type: apiPageType
 ms.prod: extensions
-ms.openlocfilehash: a16c8e75d8e07f55a1592374b3d393362ef34252
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: 2d9dc44af2bda69d9451ab76d1abdd3cabf64d37
+ms.sourcegitcommit: 08e9b0bac39c1b1d2c8a79539d24aaa93364baf2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52053493"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59766982"
 ---
 # <a name="create-schemaextension"></a>Criar schemaExtension
 
@@ -72,7 +72,7 @@ Se bem-sucedido, este método retorna o código de resposta `201 Created` e o ob
 
 #### <a name="request"></a>Solicitação
 
-Este exemplo mostra como usar um nome de domínio verificado, `graphlearn` e um nome de esquema, `courses`, para formar uma cadeia de caracteres exclusiva para a propriedade **id** da definição da extensão de esquema. A cadeia de caracteres exclusiva é baseada neste formato,\{_&#65279;domainName_\}\_\{_&#65279;schemaName_\}.
+O exemplo a seguir mostra o uso de um nome de domínio verificado e um nome de esquema, para formar uma cadeia de caracteres exclusiva para a propriedade id da definição de extensão `graphlearn` `courses` de esquema.  A cadeia de caracteres exclusiva é baseada neste formato,\{_&#65279;domainName_\}\_\{_&#65279;schemaName_\}.
 
 No corpo da solicitação, forneça uma representação JSON do objeto [schemaExtension](../resources/schemaextension.md).
 
@@ -128,7 +128,8 @@ Content-type: application/json
 
 #### <a name="response"></a>Resposta
 
-Veja a seguir um exemplo da resposta. Observação: o objeto de resposta mostrado aqui pode ser encurtado para legibilidade.
+Este é um exemplo de resposta. 
+>**Observação:** o objeto de resposta mostrado aqui pode ser encurtado para legibilidade.
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -137,7 +138,6 @@ Veja a seguir um exemplo da resposta. Observação: o objeto de resposta mostrad
 ```http
 HTTP/1.1 201 Created
 Content-type: application/json
-Content-length: 420
 
 {
     "id": "graphlearn_courses",
@@ -168,7 +168,7 @@ Content-length: 420
 
 #### <a name="request"></a>Solicitação
 
-Este exemplo mostra a especificação de apenas um nome de esquema, `courses`, na propriedade **id** da solicitação, juntamente com a representação JSON do restante das propriedades no objeto [schemaExtension](../resources/schemaextension.md). O Microsoft Graph atribuirá e retornará um valor de cadeia de caracteres exclusivo na resposta.
+O exemplo a seguir mostra a especificação apenas de um nome de esquema, , na propriedade id na solicitação, juntamente com a representação JSON do restante das propriedades no objeto `courses` [schemaExtension.](../resources/schemaextension.md)  O Microsoft Graph atribuirá e retornará um valor de cadeia de caracteres exclusivo na resposta.
 
 
 # <a name="http"></a>[HTTP](#tab/http)
@@ -223,7 +223,8 @@ Content-type: application/json
 
 #### <a name="response"></a>Resposta
 
-A resposta inclui uma cadeia de caracteres exclusiva na propriedade **id** que se baseia no nome do esquema fornecido na solicitação, juntamente com o restante da definição de esquema recém-criada. O valor na **id** na resposta é baseado no formato, ext \{ _&#65279;8-random-alphanumeric-chars_&#65279;\} \_ \{ _nome do esquema_ \} . Observação: o objeto de resposta mostrado aqui pode ser encurtado para legibilidade.
+A resposta inclui uma cadeia de caracteres exclusiva na propriedade **id** com base no nome do esquema fornecido na solicitação, junto com o resto da definição de esquema recém-criada. O valor em **id** na resposta se baseia no formato, ext\{_&#65279;8-random-alphanumeric-chars_\}\_\{_&#65279;schema-name_\}.
+>**Observação:** O objeto de resposta mostrado aqui pode ser encurtado para legibilidade.
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -232,7 +233,6 @@ A resposta inclui uma cadeia de caracteres exclusiva na propriedade **id** que s
 ```http
 HTTP/1.1 201 Created
 Content-type: application/json
-Content-length: 420
 
 {
     "id": "extk9eruy7c_courses",
@@ -263,7 +263,7 @@ Content-length: 420
 
 #### <a name="request"></a>Solicitação
 
-Este exemplo mostra como criar uma extensão de esquema configurando o **proprietário**.  Neste cenário, o usuário do aplicativo pode não ser o proprietário do aplicativo (por exemplo, se você estiver usando o Microsoft Graph Explorer).  Neste caso, você deve definir a propriedade do **proprietário** como a **appId** de um aplicativo que você possui, caso contrário, você não terá autorização para criar uma extensão de esquema. Defina a propriedade **proprietário** na solicitação, juntamente com a representação JSON do restante das propriedades no objeto [schemaExtension](../resources/schemaextension.md).
+O exemplo a seguir mostra como criar uma extensão de esquema definindo o **proprietário**.  Neste cenário, o usuário do aplicativo pode não ser o proprietário do aplicativo (por exemplo, se você estiver usando o Microsoft Graph Explorer).  Neste caso, você deve definir a propriedade do **proprietário** como a **appId** de um aplicativo que você possui, caso contrário, você não terá autorização para criar uma extensão de esquema. Defina a propriedade **proprietário** na solicitação, juntamente com a representação JSON do restante das propriedades no objeto [schemaExtension](../resources/schemaextension.md).
 
 
 # <a name="http"></a>[HTTP](#tab/http)
@@ -320,7 +320,8 @@ Content-type: application/json
 
 #### <a name="response"></a>Resposta
 
-A resposta inclui o **proprietário** definido como o valor fornecido na solicitação. Observação: o objeto de resposta mostrado aqui pode ser encurtado para legibilidade.
+A resposta inclui o **proprietário** definido como o valor fornecido na solicitação. 
+>**Observação:** o objeto de resposta mostrado aqui pode ser encurtado para legibilidade.
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -330,7 +331,6 @@ A resposta inclui o **proprietário** definido como o valor fornecido na solicit
 ```http
 HTTP/1.1 201 Created
 Content-type: application/json
-Content-length: 420
 
 {
     "id": "extk9eruy7c_courses",

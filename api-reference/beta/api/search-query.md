@@ -1,16 +1,16 @@
 ---
 title: 'searchEntity: consulta'
-description: Executa a consulta especificada no corpo da solicitação. Os resultados da pesquisa são fornecidos na resposta.
-localization_priority: Normal
+description: Executa a consulta especificada no corpo da solicitação. Os resultados da pesquisa são fornecidos na resposta
+ms.localizationpriority: medium
 author: nmoreau
 ms.prod: search
 doc_type: apiPageType
-ms.openlocfilehash: f2e3fa1aff81051820fda4444a55d9916e99128b
-ms.sourcegitcommit: ae83b2b372902268517fd17a8b10d6d9add422af
+ms.openlocfilehash: d974311d25fcd887cf5714e71c777fa26a2f9076
+ms.sourcegitcommit: 08e9b0bac39c1b1d2c8a79539d24aaa93364baf2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/08/2021
-ms.locfileid: "53334574"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59766842"
 ---
 # <a name="searchentity-query"></a>searchEntity: consulta
 

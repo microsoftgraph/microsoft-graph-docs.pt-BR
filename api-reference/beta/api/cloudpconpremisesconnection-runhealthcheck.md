@@ -2,15 +2,15 @@
 title: 'CloudPcOnPremisesConnection: runHealthChecks'
 description: Execute verificações de saúde na conexão local do Cloud PC.
 author: AshleyYangSZ
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: cloud-pc
 doc_type: apiPageType
-ms.openlocfilehash: f7a58fa6e449276b90dfaa59f861f0c2c3038edb
-ms.sourcegitcommit: a598c09b73e4e43eea5f4aaefea7ffe062e15c39
+ms.openlocfilehash: b4bf84f98b086095cfab1f765d782f368a3a78ff
+ms.sourcegitcommit: 08e9b0bac39c1b1d2c8a79539d24aaa93364baf2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/22/2021
-ms.locfileid: "53533733"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59766065"
 ---
 # <a name="cloudpconpremisesconnection-runhealthchecks"></a>CloudPcOnPremisesConnection: runHealthChecks
 
@@ -22,7 +22,6 @@ Execute verificações de saúde no [objeto cloudPcOnPremisesConnection.](../res
 
 Isso disparará uma nova verificação de saúde para este objeto [cloudPcOnPremisesConnection](../resources/cloudpconpremisesconnection.md) e alterará as propriedades healthCheckStatus e [healthCheckStatusDetails](../resources/cloudpconpremisesconnectionstatusdetails.md) quando a verificação for concluída.
 
-[!INCLUDE [cloudpc-api-preview](../../includes/cloudpc-api-preview.md)]
 
 ## <a name="permissions"></a>Permissões
 

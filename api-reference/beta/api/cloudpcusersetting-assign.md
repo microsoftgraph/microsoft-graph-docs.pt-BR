@@ -2,15 +2,15 @@
 title: 'cloudPcUserSetting: assign'
 description: Atribua uma configuração de usuário do Computador na Nuvem a grupos de usuários.
 author: AshleyYangSZ
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: cloud-pc
 doc_type: apiPageType
-ms.openlocfilehash: 7e2835e3882705a123626d84395e29d7f402628e
-ms.sourcegitcommit: a598c09b73e4e43eea5f4aaefea7ffe062e15c39
+ms.openlocfilehash: a77bd06273476768ec0c4e4e5deaff151808a417
+ms.sourcegitcommit: 08e9b0bac39c1b1d2c8a79539d24aaa93364baf2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/22/2021
-ms.locfileid: "53533432"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59765848"
 ---
 # <a name="cloudpcusersetting-assign"></a>cloudPcUserSetting: assign
 
@@ -20,8 +20,6 @@ Namespace: microsoft.graph
 
 Atribua [um cloudPcUserSetting a](../resources/cloudpcusersetting.md) grupos de usuários.
 
-[!INCLUDE [cloudpc-api-preview](../../includes/cloudpc-api-preview.md)]
-
 ## <a name="permissions"></a>Permissões
 
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
@@ -30,7 +28,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |:---|:---|
 |Delegado (conta corporativa ou de estudante)|CloudPC.ReadWrite.All|
 |Delegado (conta pessoal da Microsoft)|Sem suporte.|
-|Application|CloudPC.ReadWrite.All|
+|Aplicativo|CloudPC.ReadWrite.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
 

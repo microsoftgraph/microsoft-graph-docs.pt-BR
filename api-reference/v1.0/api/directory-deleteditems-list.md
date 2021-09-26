@@ -2,15 +2,15 @@
 title: Listar itens excluídos
 description: Recupere uma lista de itens recentemente excluídos em itens excluídos.
 author: keylimesoda
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: b9cf3fc43b8baedd7d96b0635d7590c3c57f3aac387f38ca6f71a773e248e024
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 209976d14fc1c442f6015dd470cf98a51101ee88
+ms.sourcegitcommit: 08e9b0bac39c1b1d2c8a79539d24aaa93364baf2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54202929"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59767244"
 ---
 # <a name="list-deleted-items"></a>Listar itens excluídos
 
@@ -59,10 +59,18 @@ GET /directory/deletedItems/microsoft.graph.user
 GET /directory/deletedItems/microsoft.graph.device
 ```
 
-Essa API dá suporte atualmente à recuperação de tipos de objeto de grupos (microsoft.graph.group) ou usuários (microsoft.graph.user) de itens excluídos. O tipo é especificado como uma parte obrigatória do URI. Não há suporte para chamar GET /directory/deletedItems sem um tipo.
+Atualmente, essa API dá suporte à recuperação de tipos de objeto de aplicativos ( `microsoft.graph.application` ), grupos ( ) ou usuários ( ) de itens `microsoft.graph.group` `microsoft.graph.user` excluídos. O tipo de cast OData é uma parte necessária do URI e não há suporte para chamada sem `GET /directory/deleteditems` um tipo. 
 
 ## <a name="optional-query-parameters"></a>Parâmetros de consulta opcionais
-Este método dá suporte ao `$orderBy` [parâmetro de consulta OData](/graph/query-parameters) para ajudar a personalizar a resposta. 
+
+Este método dá suporte aos parâmetros de consulta compatíveis com o recurso especificado pelo cast OData. Ou seja, `$count` , , , , , e `$expand` `$filter` `$orderBy` `$search` `$select` `$top` parâmetros de consulta. Algumas consultas são suportadas somente quando se usa o cabeçalho **ConsistencyLevel** definido como `eventual` e `$count`. Por exemplo:
+
+```msgraph-interactive
+https://graph.microsoft.com/beta/directory/deletedItems/microsoft.graph.group?&$count=true&$orderBy=deletedDateTime desc&$select=id,displayName,deletedDateTime
+ConsistencyLevel: eventual
+```
+
+Este exemplo requer o header **ConsistencyLevel** porque os parâmetros e de consulta `$orderBy` são usados na `$count` consulta.
 
 ### <a name="examples-using-the-orderby-odata-query-parameter"></a>Exemplos usando o parâmetro $orderBy consulta OData
 
@@ -87,8 +95,11 @@ Não forneça um corpo de solicitação para esse método.
 ## <a name="response"></a>Resposta
 
 Se bem-sucedido, este método retorna um código de resposta `200 OK` e uma coleção de objetos [directoryObject](../resources/directoryobject.md) no corpo da resposta.
-## <a name="example"></a>Exemplo
-### <a name="request"></a>Solicitação
+## <a name="examples"></a>Exemplos
+
+### <a name="example-1-retrieve-deleted-groups"></a>Exemplo 1: Recuperar grupos excluídos
+
+#### <a name="request"></a>Solicitação
 
 <!-- {
   "blockType": "ignored",
@@ -98,8 +109,9 @@ Se bem-sucedido, este método retorna um código de resposta `200 OK` e uma cole
 GET https://graph.microsoft.com/v1.0/directory/deletedItems/microsoft.graph.group
 ```
 
-### <a name="response"></a>Resposta
-Observação: o objeto de resposta exibido aqui pode ser encurtado para legibilidade.
+#### <a name="response"></a>Resposta
+
+> **Observação:** o objeto de resposta mostrado aqui pode ser encurtado para legibilidade.
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -124,6 +136,78 @@ Content-type: application/json
       "visibility":"Public"
     }
   ]
+}
+```
+
+### <a name="example-2-retrieve-the-count-of-deleted-user-objects-and-order-the-results-by-the-deleteddatetime-property"></a>Exemplo 2: recupere a contagem de objetos de usuário excluídos e peça os resultados pela propriedade deletedDateTime
+
+#### <a name="request"></a>Solicitação
+
+
+# <a name="http"></a>[HTTP](#tab/http)
+<!-- {
+  "blockType": "request",
+  "name": "get_deleteditems_count"
+}-->
+```msgraph-interactive
+GET https://graph.microsoft.com/v1.0/directory/deletedItems/microsoft.graph.group?$count=true&$orderBy=deletedDateTime asc&$select=id,DisplayName,deletedDateTime
+ConsistencyLevel: eventual
+```
+# <a name="c"></a>[C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/get-deleteditems-count-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/get-deleteditems-count-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/get-deleteditems-count-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/get-deleteditems-count-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
+
+#### <a name="response"></a>Resposta
+
+> **Observação:** o objeto de resposta mostrado aqui pode ser encurtado para legibilidade.
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.directoryObject",
+  "isCollection": true
+} -->
+```http
+HTTP/1.1 200 OK
+Content-type: application/json
+
+{
+    "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#groups(id,displayName,deletedDateTime)",
+    "@odata.count": 3,
+    "value": [
+        {
+            "@odata.id": "https://graph.microsoft.com/v2/84841066-274d-4ec0-a5c1-276be684bdd3/deletedItems/54c8f8fa-7217-4846-baf9-94af2381864f/Microsoft.DirectoryServices.Group",
+            "id": "54c8f8fa-7217-4846-baf9-94af2381864f",
+            "displayName": "Digital Initiative Public Relations",
+            "deletedDateTime": "2021-09-07T15:41:06Z"
+        },
+        {
+            "@odata.id": "https://graph.microsoft.com/v2/84841066-274d-4ec0-a5c1-276be684bdd3/deletedItems/a7acbd5f-07ec-4b97-9fbf-8fe94d44b044/Microsoft.DirectoryServices.Group",
+            "id": "a7acbd5f-07ec-4b97-9fbf-8fe94d44b044",
+            "displayName": "GitHub issue #13843",
+            "deletedDateTime": "2021-09-07T15:41:57Z"
+        },
+        {
+            "@odata.id": "https://graph.microsoft.com/v2/84841066-274d-4ec0-a5c1-276be684bdd3/deletedItems/1a5999a0-3b42-498e-b408-0c2f9951db1d/Microsoft.DirectoryServices.Group",
+            "id": "1a5999a0-3b42-498e-b408-0c2f9951db1d",
+            "displayName": "GitHub issue #13843",
+            "deletedDateTime": "2021-09-07T15:42:03Z"
+        }
+    ]
 }
 ```
 

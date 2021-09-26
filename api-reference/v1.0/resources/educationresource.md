@@ -1,22 +1,24 @@
 ---
 title: Tipo de recurso educationResource
-description: Uma superclasse para todos os objetos de recurso no sistema.
+description: Uma classe base para todos os objetos de recurso no sistema.
 ms.localizationpriority: medium
 author: mmast-msft
 ms.prod: education
 doc_type: resourcePageType
-ms.openlocfilehash: e13ce13fd6bba8a67b1b10103d0c5225736b8360
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 0706df40990468180e987f758f3217842631f214
+ms.sourcegitcommit: 08e9b0bac39c1b1d2c8a79539d24aaa93364baf2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59036603"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59765645"
 ---
 # <a name="educationresource-resource-type"></a>Tipo de recurso educationResource
 
 Namespace: microsoft.graph
 
-Uma superclasse para todos os objetos de recurso no sistema. Um recurso é associado a um **Assignment** and/or **Submission**, que representa o objeto de aprendizagem que está sendo entregue ou entregue. Não é possível instaurá-lo diretamente; você deve fazer uma subclasse que representará o tipo de recurso que está sendo usado.
+Uma classe base para todos os objetos de recurso no sistema. 
+
+Um educationResource está associado [a](educationassignment.md) uma atribuição e/ou [envio](educationsubmission.md), que representa o objeto de aprendizagem que está sendo entregue ou entregue. Não é possível instaurá-lo diretamente; você deve fazer uma subclasse que representará o tipo de recurso que está sendo usado.
 
 Esse recurso armazena as propriedades comuns em todos os tipos de recursos.
 

@@ -2,15 +2,15 @@
 title: Listar cloudPCs
 description: Listar propriedades e relações dos objetos cloudPC.
 author: AshleyYangSZ
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: cloud-pc
 doc_type: apiPageType
-ms.openlocfilehash: 49cdea1b601e33210bc2861ee350086377fe05f8
-ms.sourcegitcommit: 9ac6bbab3df22e7629cf2bde796b527337c680aa
+ms.openlocfilehash: 2d1f98238fa584b735339e066f488de8ea9cf2e9
+ms.sourcegitcommit: 08e9b0bac39c1b1d2c8a79539d24aaa93364baf2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/23/2021
-ms.locfileid: "53082381"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59763076"
 ---
 # <a name="list-cloudpcs"></a>Listar cloudPCs
 
@@ -19,8 +19,6 @@ Namespace: microsoft.graph
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Listar propriedades e relações dos objetos [cloudPC.](../resources/cloudpc.md)
-
-[!INCLUDE [cloudpc-api-preview](../../includes/cloudpc-api-preview.md)]
 
 ## <a name="permissions"></a>Permissões
 

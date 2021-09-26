@@ -1,16 +1,16 @@
 ---
 title: Listar membros transitivos de grupo
 description: Obter uma lista dos membros do grupo.
-localization_priority: Normal
+ms.localizationpriority: medium
 author: Jordanndahl
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: 923c94f61e319e70639e00d33ad709f5242117a4c8b38de7e48a82aeda13a7cc
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: f4af4dc2076a481793bbef87adc0f7c045ed9c39
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "57214843"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59766401"
 ---
 # <a name="list-group-transitive-members"></a>Listar membros transitivos de grupo
 

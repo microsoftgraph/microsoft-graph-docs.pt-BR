@@ -1,45 +1,45 @@
 ---
-title: tipo de recurso moedas
-description: Um objeto Currency no Dynamics 365 Business central
+title: tipo de recurso de moedas
+description: Um objeto currency no Dynamics 365 Business Central
 services: project-madeira
 documentationcenter: ''
 author: SusanneWindfeldPedersen
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: dynamics-365-business-central
 doc_type: resourcePageType
-ms.openlocfilehash: 42dc5fec859aff758b2f46812a63b10f49f0498a
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 228f4c227cd8c0efa5f2ed6dcd885c81a2f5f9ab
+ms.sourcegitcommit: 08e9b0bac39c1b1d2c8a79539d24aaa93364baf2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48071364"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59767080"
 ---
-# <a name="currencies-resource-type"></a>tipo de recurso moedas
+# <a name="currencies-resource-type"></a>tipo de recurso de moedas
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Representa uma moeda usada no Dynamics 365 Business central.
+Representa uma moeda usada no Dynamics 365 Business Central.
 
 ## <a name="methods"></a>Métodos
 | Método                                                  |Tipo de retorno|Descrição       |
 |:--------------------------------------------------------|:----------|:-----------------|
-|[Obter moedas](../api/dynamics-currencies-get.md)      |monetária |Obter uma moeda.   |
-|[Lançar moedas](../api/dynamics-create-currencies.md)  |monetária |Criar uma moeda.|
-|[Corrigir moedas](../api/dynamics-currencies-update.md) |monetária |Atualize uma moeda.|
-|[Excluir moedas](../api/dynamics-currencies-delete.md)|Nenhuma       |Excluir uma moeda.|
+|[Obter moedas](../api/dynamics-currencies-get.md)      |moedas |Obter uma Conversor de Moedas.   |
+|[Post currencies](../api/dynamics-create-currencies.md)  |moedas |Crie uma Conversor de Moedas.|
+|[Patch currencies](../api/dynamics-currencies-update.md) |moedas |Atualize um Conversor de Moedas.|
+|[Excluir moedas](../api/dynamics-currencies-delete.md)|none       |Exclua um Conversor de Moedas.|
 
 ## <a name="properties"></a>Propriedades
 | Propriedade              | Tipo   |Descrição                                                   |
 |:----------------------|:-------|:-------------------------------------------------------------|
-|id                     |GUID    |A identificação exclusiva da moeda. Não editável.                  |
-|código                   |cadeia de caracteres  |Especifica o código da moeda.                                  |
-|displayName            |cadeia de caracteres  |Especifica o nome de exibição da moeda.                          |
-|formato                 |cadeia de caracteres  |Especifica o símbolo para esta moeda que aparece nos cheques.|
-|amountDecimalPlaces    |cadeia de caracteres  |Especifica o número de casas decimais que o sistema exibirá em valores dessa moeda.|
-|amountRoundingPrecision|dígitos |Especifica o tamanho do intervalo a ser usado ao arredondar valores para esta moeda.|
-|lastModifiedDateTime   |datetime|O último DateTime que a moeda foi modificada. Somente leitura.       |  
+|id                     |GUID    |A ID exclusiva da moeda. Não editável.                  |
+|código                   |cadeia de caracteres  |Especifica o código de moeda.                                  |
+|displayName            |string  |Especifica o nome de exibição de moeda.                          |
+|symbol                 |string  |Especifica o símbolo dessa moeda que aparece em verificações.|
+|amountDecimalPlaces    |string  |Especifica o número de casas decimais que o sistema exibirá em valores para essa moeda.|
+|amountRoundingPrecision|decimal |Especifica o tamanho do intervalo a ser usado ao arredondamento de valores para essa moeda.|
+|lastModifiedDateTime   |datetime|A última data em que a moeda foi modificada. Somente leitura.       |  
 
 
 ## <a name="relationships"></a>Relações
@@ -47,7 +47,7 @@ Nenhum
 
 ## <a name="json-representation"></a>Representação JSON
 
-Veja a seguir uma representação JSON das moedas.
+Aqui está uma representação JSON das moedas.
 
 
 ```json
@@ -60,7 +60,6 @@ Veja a seguir uma representação JSON das moedas.
   "amountRoundingPrecision": "decimal",
   "lastModifiedDateTime": "datetime"
 }
-
 ```
 
 

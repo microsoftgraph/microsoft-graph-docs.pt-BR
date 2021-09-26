@@ -1,20 +1,22 @@
 ---
 title: Atualizar calendarpermission
 description: Atualize as propriedades do objeto calendarpermission.
+author: Harini84
 ms.localizationpriority: medium
-author: sochowdh
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 7b72241d0e7b266ae90408702eeef82383620968
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: fe98657de5e0b96db4b38b3a26ffed1521736d4e
+ms.sourcegitcommit: 08e9b0bac39c1b1d2c8a79539d24aaa93364baf2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59049407"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59766170"
 ---
 # <a name="update-calendarpermission"></a>Atualizar calendarPermission
 
 Namespace: microsoft.graph
+
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Atualize as permissões atribuídas a um compartilhamento ou representante existente, por meio do [objeto calendarPermission](../resources/calendarpermission.md) correspondente para um calendário.
 
@@ -51,7 +53,8 @@ PATCH /users/{id}/events/{id}/calendar/calendarPermissions/{id}
 
 | Nome       | Descrição|
 |:-----------|:-----------|
-| Autorização | Portador {token} |
+| Autorização | {token} de portador. Obrigatório.  |
+| Content-Type  | application/json. Obrigatório.  |
 
 ## <a name="request-body"></a>Corpo da solicitação
 
@@ -101,9 +104,7 @@ Content-type: application/json
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/update-calendarpermission-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
 ---
-
 
 ### <a name="response"></a>Resposta
 
@@ -123,7 +124,7 @@ HTTP/1.1 200 OK
 Content-type: application/json
 
 {
-    "id": "L289RXhlbGVW",
+    "id": "RGVmYXVsdA==",
     "isRemovable": true,
     "isInsideOrganization": true,
     "role": "write",

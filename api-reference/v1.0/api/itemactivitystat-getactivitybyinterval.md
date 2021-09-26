@@ -5,12 +5,12 @@ description: Obter itemAnalyticyStats para as atividades que ocorreram nesse rec
 ms.localizationpriority: medium
 ms.prod: sharepoint
 doc_type: apiPageType
-ms.openlocfilehash: 2637dbf01a3b469f588c6b24f15dd65fe7af8061
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 12edde3889cb8cdfac9e524d972e5baf47bf23ce
+ms.sourcegitcommit: 08e9b0bac39c1b1d2c8a79539d24aaa93364baf2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59019808"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59767493"
 ---
 # <a name="get-item-activity-stats-by-interval"></a>Obter estatísticas de atividade de item por intervalo
 
@@ -48,18 +48,18 @@ GET /sites/{site-id}/lists/{list-id}/items/{item-id}/getActivitiesByInterval(sta
 |:---------------|:-------------------|:---------------------------------------
 | startDateTime  | string (timestamp) | O tempo de início sobre o qual agregar atividades.
 | endDateTime    | string (timestamp) | O tempo final sobre o qual agregar atividades.
-| interval       | cadeia de caracteres             | O intervalo de agregação.
+| interval       | string             | O intervalo de agregação.
 
 >**Observação:** Essa API só dá suporte a um intervalo de tempo de 90 dias para contagens diárias. O valor dos parâmetros e deve representar um intervalo `startDateTime` de tempo inferior a `endDateTime` 90 dias.
 
 ## <a name="optional-query-parameters"></a>Parâmetros de consulta opcionais
-Este método dá suporte a [Parâmetros de consulta OData](/graph/query_parameters) para ajudar a personalizar a resposta.
+Este método dá suporte a [Parâmetros de consulta OData](/graph/query-parameters) para ajudar a personalizar a resposta.
 
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
 
 | Nome      |Descrição|
 |:----------|:----------|
-| Autorização  | Portador {código}. Obrigatório.|
+| Autorização  | {code} do portador. Obrigatório.|
 
 ## <a name="request-body"></a>Corpo da solicitação
 

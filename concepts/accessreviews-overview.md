@@ -4,12 +4,13 @@ description: A API de críticas de acesso permite que você revise programaticam
 author: FaithOmbongi
 ms.localizationpriority: medium
 ms.prod: governance
-ms.openlocfilehash: 6eda31e5f35d03d5b5db136d46b14e93470389e0
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+doc_type: conceptualPageType
+ms.openlocfilehash: 53e7d075323297b6e152cc9458266d571f26477b
+ms.sourcegitcommit: 08e9b0bac39c1b1d2c8a79539d24aaa93364baf2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59143591"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59766954"
 ---
 # <a name="overview-of-the-access-reviews-api"></a>Visão geral da API de análises de acesso
 
@@ -41,11 +42,5 @@ As avaliações do Access são estruturadas logicamente e são compostas por ess
 
 Experimente os seguintes tutoriais para gerenciar análises de acesso:
 
-+ [Usar a API de avaliações de acesso para grupos para revisar o acesso aos seus grupos de segurança](tutorial-accessreviews-securitygroup.md)
-+ [Usar a API de críticas de acesso para grupos para revisar o acesso a todos os grupos Microsoft 365 com usuários convidados](tutorial-accessreviews-M365group.md)
-
-## <a name="see-also"></a>Confira também
-
-+ [Revisões de acesso ao Azure AD](/graph/api/resources/accessreviewsv2-root)
-+ [Planejamento Azure Active Directory implantação de Avaliações do Access](/azure/active-directory/governance/deploy-access-reviews)
-+ [Criar uma revisão de acesso de grupos & aplicativos](/azure/active-directory/governance/create-access-review)
++ [Tutorial: use a API de críticas de acesso para revisar o acesso aos seus grupos de segurança](tutorial-accessreviews-securitygroup.md)
++ [Tutorial: use a API de críticas de acesso para revisar o acesso de convidados aos grupos Microsoft 365 seus clientes](tutorial-accessreviews-M365group.md)

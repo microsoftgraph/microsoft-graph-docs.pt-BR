@@ -1,26 +1,26 @@
 ---
-title: Obter notificações de alteração para qualquer alteração na associação do Teams usando o Microsoft Graph
-description: Obter notificações de alteração para quaisquer alterações (criar, atualizar e excluir) na associação do Teams usando o Microsoft Graph
+title: Receba notificações de alteração de membros em equipes e canais usando o Microsoft Graph
+description: Obtenha notificações de qualquer alteração (criar, atualizar e excluir) em equipes e canais de filiação usando o Microsoft Graph.
 author: anandab
 ms.localizationpriority: high
 ms.prod: microsoft-teams
 ms.custom: scenarios:getting-started
-ms.openlocfilehash: bcd2a7e936b52932a67dde4a83642ba7d980323a
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 8f84a824825db4b174ec4b568afd1d0e1fdf2dfa
+ms.sourcegitcommit: 08e9b0bac39c1b1d2c8a79539d24aaa93364baf2
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59071697"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59764322"
 ---
-# <a name="get-change-notifications-for-changes-in-teams-membership-using-microsoft-graph"></a>Obter notificações de alteração para alterações na associação do Teams usando o Microsoft Graph
+# <a name="get-change-notifications-for-membership-changes-in-teams-and-channels-using-microsoft-graph"></a>Receba notificações de alteração de membros em equipes e canais usando o Microsoft Graph
 
-As notificações de alteração permitem que você se inscreva para receber alterações (criar, atualizar e excluir) na associação do Teams. Você pode ser notificado sempre que um membro for adicionado, removido ou atualizado em uma equipe. Você também pode obter os dados do recurso nas notificações e, portanto, evitar chamar a API para obter o conteúdo.
+As notificações de alteração permitem que você assine as alterações de membros (criar, atualizar e excluir) em equipes e canais privados. Você pode ser notificado sempre que um membro é adicionado, removido ou atualizado em uma equipe ou em um canal privado. Você também pode obter os dados do recurso nas notificações e, portanto, evitar chamar a API para obter o conteúdo.
 
 ## <a name="subscribe-to-changes-in-membership-of-a-particular-team"></a>Inscrever-se para receber alterações na associação de uma equipe específica
 
 Para obter notificações de alterações para alterações de membros em uma equipe específica, inscreva-se em `/teams/{team-id}/members`. Este recurso oferece suporte a [ incluindo dados de recursos ](webhooks-with-resource-data.md) na notificação.
 
-#### <a name="permissions"></a>Permissões
+### <a name="permissions"></a>Permissões
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              | Versões com suporte |
 |:--------------------|:---------------------------------------------------------|:-------------------|
@@ -30,7 +30,7 @@ Para obter notificações de alterações para alterações de membros em uma eq
 
 >**Nota:** As permissões marcadas com * são suportadas como parte do [consentimento específico do recurso](/microsoftteams/platform/graph-api/rsc/resource-specific-consent).
 
-#### <a name="example"></a>Exemplo
+### <a name="example"></a>Exemplo
 
 ```http
 POST https://graph.microsoft.com/beta/subscriptions
@@ -47,6 +47,38 @@ Content-Type: application/json
   "clientState": "{secretClientState}"
 }
 ```
+
+## <a name="subscribe-to-membership-changes-in-all-private-channels-of-a-particular-team"></a>Assinar as alterações de membros em todos os canais privados de uma determinada equipe
+
+Para obter notificações de alteração de membros em todos os canais privados de uma determinada equipe, inscreva-se em `/teams/{team-id}/channels/getAllMembers`. Este recurso oferece suporte a [ incluindo dados de recursos ](webhooks-with-resource-data.md) na notificação.
+
+### <a name="permissions"></a>Permissões
+
+|Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              | Versões com suporte |
+|:--------------------|:---------------------------------------------------------|:-------------------|
+|Delegado (conta corporativa ou de estudante) | Sem suporte. | Sem suporte. |
+|Delegado (conta pessoal da Microsoft) | Sem suporte.    | Sem suporte. |
+|Aplicativo | ChannelMember.Read.All   | beta |
+
+
+### <a name="example"></a>Exemplo
+
+```http
+POST https://graph.microsoft.com/beta/subscriptions
+Content-Type: application/json
+
+{
+  "changeType": "created,deleted,updated",
+  "notificationUrl": "https://webhook.azurewebsites.net/api/resourceNotifications",
+  "resource": "/teams/{team-id}/channels/getAllMembers",
+  "includeResourceData": true,
+  "encryptionCertificate": "{base64encodedCertificate}",
+  "encryptionCertificateId": "{customId}",
+  "expirationDateTime": "2019-09-19T11:00:00.0000000Z",
+  "clientState": "{secretClientState}"
+}
+```
+
 
 
 
@@ -78,6 +110,8 @@ Para notificações com dados de recursos, a carga se parece com a seguinte. Ess
     "validationTokens": ["<<--ValidationTokens-->>"]
 }
 ```
+
+A carga útil para os eventos de adesão ao canal é semelhante à carga útil anterior, exceto que o **recurso** propriedade aponta para um membro do canal em vez de um membro da equipe.
 
 Para obter detalhes sobre como validar tokens e descriptografar a carga útil, consulte [Definir notificações de alteração que incluem dados de recursos](webhooks-with-resource-data.md).
 
@@ -116,6 +150,8 @@ Para notificações sem dados de recursos, a carga se parecerá com o seguinte. 
   }
 }
 ```
+
+A carga útil para os eventos de adesão ao canal é semelhante à carga útil anterior, exceto que o **recurso** propriedade aponta para um membro do canal em vez de um membro da equipe.
 
 As propriedades **recurso** e **@odata.id** podem ser usados para fazer chamadas para o Microsoft Graph para obter o conteúdo para a mensagem. As chamadas GET sempre retornarão o estado atual da mensagem. Se a mensagem for alterada entre quando a notificação for enviada e quando a mensagem for recuperada, a operação retornará a mensagem atualizada.
 

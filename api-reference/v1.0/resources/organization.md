@@ -5,12 +5,12 @@ ms.localizationpriority: high
 author: adimitui
 ms.prod: directory-management
 doc_type: resourcePageType
-ms.openlocfilehash: cacbe0cb6bd3b12c75a09299710ab5f71aef14d0
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: ef6a84303ad63e673ffbca0b061e23346208489a
+ms.sourcegitcommit: 7ce66321abb6a2cdca8685d3ce0a004c376ae33b
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59104086"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59777517"
 ---
 # <a name="organization-resource-type"></a>tipo de recurso organization
 
@@ -31,8 +31,15 @@ Esse recurso permite que você adicione seus próprios dados às propriedades pe
 |[Obter extensão aberta](../api/opentypeextension-get.md) |Coleção [openTypeExtension](opentypeextension.md)| Obtenha uma extensão aberta identificada pelo nome da extensão.|
 |**Extensões de esquema**| 
 |[Adicionar valores de extensões de esquema](/graph/extensibility-schema-groups) || Cria uma definição para a extensão de esquema e usa-a para adicionar dados digitados personalizados a um recurso.|
-| [Obter a identidade visual](../api/organizationalbrandingproperties-get.md) | coleção [organizationalBrandingProperties](organizationalbrandingproperties.md) | Obtenha uma coleção de objetos organizationalBrandingProperties. |
-
+|**Identidade visual organizacional**| | |
+|[Criar organizationalBrandingLocalization](../api/organizationalbranding-post-localizations.md) | [organizationalBrandingLocalization](organizationalbrandinglocalization.md) | Crie uma nova identidade visual de localização (específica do idioma) e um objeto de identidade visual padrão, caso não exista. |
+|[Obter organizationalBranding](../api/organizationalbranding-get.md) | [organizationalBranding](organizationalbranding.md) | Obtenha o objeto de identidade visual organizacional padrão. |
+|[Atualizar organizationalBranding](../api/organizationalbranding-update.md) | [organizationalBranding](organizationalbranding.md) | Atualize o objeto de identidade visual organizacional padrão. |
+|[Excluir organizationalBranding](../api/organizationalbranding-update.md) | [organizationalBranding](organizationalbranding.md) | Exclua o objeto de identidade visual organizacional padrão. |
+|[Listar organizationalBrandingLocalization](../api/organizationalbrandinglocalization-get.md) | coleção [organizationalBrandingLocalization](organizationalbrandinglocalization.md) | Recupere todos os objetos de identidade visual de localização no locatário. |
+|[Obter organizationalBrandingLocalization](../api/organizationalbrandinglocalization-get.md) | [organizationalBrandingLocalization](organizationalbrandinglocalization.md) | Leia as propriedades de um objeto de identidade visual de localização. |
+|[Atualizar organizationalBranding](../api/organizationalbranding-update.md) | [organizationalBranding](organizationalbranding.md) | Atualize um objeto de identidade visual de localização. |
+|[Excluir organizationalBranding](../api/organizationalbranding-update.md) | [organizationalBranding](organizationalbranding.md) | Exclua um objeto de identidade visual de localização. |
 ## <a name="properties"></a>Propriedades
 
 | Propriedade | Tipo | Descrição |
@@ -66,7 +73,7 @@ Esse recurso permite que você adicione seus próprios dados às propriedades pe
 |:---------------|:--------|:----------|
 |certificateBasedAuthConfiguration|coleção [certificateBasedAuthConfiguration](certificatebasedauthconfiguration.md)| Propriedade de navegação para gerenciar a configuração de autenticação baseada em certificado. Somente uma única instância de certificateBasedAuthConfiguration pode ser criada na coleção.  |
 |extensions|Coleção [extension](extension.md)|A coleção de extensões abertas definidas para a organização. Somente leitura. Anulável.|
-|organizationalBranding|coleção [organizationalBrandingProperties](organizationalbrandingproperties.md)| Identidade visual da organização. Anulável.|
+|organizationalBranding|coleção [organizationalBranding](organizationalbranding.md)| Identidade visual da organização. Anulável.|
 
 ## <a name="json-representation"></a>Representação JSON
 

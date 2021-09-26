@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: cristobal-buenrostro
 ms.prod: education
 doc_type: conceptualPageType
-ms.openlocfilehash: 83589986cd0c490f4947744896665244a8de3633
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 1cedb6c2ab34511134716efe5c205a4738d10f0c
+ms.sourcegitcommit: 08e9b0bac39c1b1d2c8a79539d24aaa93364baf2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59117666"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59767333"
 ---
 # <a name="states-transitions-and-limitations-for-assignments-and-submissions-in-microsoft-graph"></a>Estados, transições e limitações para atribuições e envios no Microsoft Graph
 
@@ -33,12 +33,12 @@ O diagrama a seguir mostra as transições de estado que podem ocorrer para atri
 ![Diagrama de transições de estados de atribuição](images/states-transitions/diagram-assignments.PNG)
 
 ### <a name="how-to-verify-that-an-assignment-is-published"></a>Como verificar se uma atribuição foi publicada
-O chamador deve usar a operação de atribuição GET t o verificar o status de atribuição atual e verificar se o processo de publicação foi bem-sucedido.
+O chamador deve usar a operação [de atribuição GET](/graph/api/educationassignment-get.md) para verificar o status atual da atribuição e verificar se o processo de publicação foi bem-sucedido.
 
 ### <a name="assignments-states-transitions-based-on-the-allowed-actions"></a>Estados de atribuições transições com base nas ações permitidas
-| Estado atual da atribuição | Action | Novo estado |
+| Estado atual da atribuição | Ação | Novo estado |
 |:--|:--|:--|
-| Rascunho | O professor define uma data de vencimento. | Agendada |
+| Rascunho | O professor agenda a atribuição | Agendada |
 | Rascunho | Publicar | Published |
 | Rascunho | Editado | Rascunho |
 | Rascunho | Descartado | | 
@@ -60,10 +60,10 @@ Operações síncronas são executadas uma de cada vez e somente quando uma oper
 
 | API | Sincronizar ou assíncrono | Mecanismo para obter o estado mais recente |
 |:--|:--|:--|
-| `DELETE /education/classes/{id}/assignments/{id}` | Async | Sondagem |
-| `POST /education/classes/{id}/assignments/{id}/publish` | Async | Sondagem |
-| `PATCH /education/classes/{id}/assignments/{id}` | Async | Sondagem |
-| `POST /education/classes/{id}/assignments` | Async | Sondagem |
+| `DELETE /education/classes/{id}/assignments/{id}` | Async | Enquete |
+| `POST /education/classes/{id}/assignments/{id}/publish` | Async | Enquete |
+| `PATCH /education/classes/{id}/assignments/{id}` | Async | Enquete |
+| `POST /education/classes/{id}/assignments` | Async | Enquete |
 
 ## <a name="submission-states-and-transitions"></a>Estados de envio e transições
 
@@ -77,19 +77,27 @@ O status é uma propriedade somente leitura no envio e muda com base nas ações
 | Trabalhando | Estado inicial após a criação do envio. | `POST /education/classes/{id}/assignments`<br/>`POST /education/classes/{id}/assignments/{id}/submissions/{id}/unsubmit` |
 | Submitted | Isso acontece depois que o aluno se transforma na atribuição. | `POST /education/classes/{id}/assignments/{id}/submissions/{id}/submit` |
 | Retornado | Depois que o professor retornou a atribuição ao aluno. | `POST /education/classes/{id}/assignments/{id}/submissions/{id}/return` |
+| Reatribuido | Depois que o professor retornou a atribuição ao aluno para revisão. | `POST /education/classes/{id}/assignments/{id}/submissions/{id}/reassign` |
 
 O diagrama a seguir mostra o fluxo de transição de estado.
 
 ![Diagrama de transições de estados de envio](images/states-transitions/diagram-submissions.PNG)
 
 ### <a name="submissions-states-transitions-based-on-allowed-actions"></a>Transições de estados de envios com base em ações permitidas
-| Estado atual do envio | Action | Novo estado |
+| Estado atual do envio | Ação | Novo estado |
 |:--|:--|:--|
 | Trabalhando | Ativar | Submitted |
+| Trabalhando | Retornar para revisão | Reatribuido |
 | Trabalhando | retornar | Retornado |
 | Submitted | Desfazer a ida e volta | Trabalhando |
 | Submitted | retornar | Retornado |
+| Submitted | Retornar para revisão | Reatribuido |
 | Retornado | Ativar | Submitted |
+| Retornado | retornar | Retornado |
+| Retornado | Retornar para revisão | Reatribuido |
+| Reatribuido | Ativar | Submitted |
+| Reatribuido | retornar | Retornado |
+| Reatribuido | Retornar para revisão | Reatribuido |
 
 `Note: Any action and state transition not listed in the table is NOT allowed`
 
@@ -100,9 +108,10 @@ Nesse caso, todas as chamadas são assíncronas, o que significa que a operaçã
 
 | API | Sincronizar ou assíncrono | Mecanismo para obter o estado mais recente |
 |:--|:--|:--|
-| `POST /education/classes/{id}/assignments/{id}/submissions/{id}/submit` | Async | Sondagem |
-| `POST /education/classes/{id}/assignments/{id}/submissions/{id}/unsubmit` | Async | Sondagem |
-| `POST /education/classes/{id}/assignments/{id}/submissions/{id}/return` | Async | Sondagem |
+| `POST /education/classes/{id}/assignments/{id}/submissions/{id}/submit` | Async | Enquete |
+| `POST /education/classes/{id}/assignments/{id}/submissions/{id}/unsubmit` | Async | Enquete |
+| `POST /education/classes/{id}/assignments/{id}/submissions/{id}/return` | Async | Enquete |
+| `POST /education/classes/{id}/assignments/{id}/submissions/{id}/reassign` | Async | Enquete |
 
 ### <a name="limits"></a>Limites
 Os seguintes limites se aplicam a todas as chamadas de API:

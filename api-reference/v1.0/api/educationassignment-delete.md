@@ -5,20 +5,18 @@ author: sharad-sharma-msft
 ms.localizationpriority: medium
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: 2d679a13a3a90853e246616930c0dc5e834fe9f8
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 3f5f932b32b419863f61d784e7fe93cbd821b16b
+ms.sourcegitcommit: 08e9b0bac39c1b1d2c8a79539d24aaa93364baf2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59100215"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59507774"
 ---
 # <a name="delete-educationassignment"></a>Excluir educationAssignment
 
 Namespace: microsoft.graph
 
-Exclua uma atribuição existente. 
-
-Somente professores em uma classe podem excluir atribuições.
+Exclua uma atribuição existente. Somente professores em uma classe podem excluir atribuições.
 
 ## <a name="permissions"></a>Permissões
 
@@ -26,8 +24,8 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 | Tipo de permissão                        | Permissões (da com menos para a com mais privilégios)             |
 | :------------------------------------- | :------------------------------------------------------ |
-| Delegada (conta corporativa ou de estudante)     | EduAssignments.ReadWriteBasic, EduAssignments.ReadWrite |
-| Delegada (conta pessoal da Microsoft) | Sem suporte.                                          |
+| Delegado (conta corporativa ou de estudante)     | EduAssignments.ReadWriteBasic, EduAssignments.ReadWrite |
+| Delegado (conta pessoal da Microsoft) | Sem suporte.                                          |
 | Aplicativo                            | Sem suporte.                                          |
 
 ## <a name="http-request"></a>Solicitação HTTP
@@ -35,7 +33,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 <!-- { "blockType": "ignored" } -->
 
 ```http
-DELETE /education/classes/acdefc6b-2dc6-4e71-b1e9-6d9810ab1793/assignments/cf6005fc-9e13-44a2-a6ac-a53322006454
+DELETE /education/classes/{id}/assignments/{id}
 ```
 
 ## <a name="request-headers"></a>Cabeçalhos de solicitação

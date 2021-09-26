@@ -2,15 +2,15 @@
 title: Obter dispositivo
 description: Obtém as propriedades e os relacionamentos de um objeto device.
 author: spunukol
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: 8c1c70578ed95ead160895e5d471a8c4ba56e6c8
-ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
+ms.openlocfilehash: c4b811a20fcb3d11cb420e29ba383325d2885f6a
+ms.sourcegitcommit: 08e9b0bac39c1b1d2c8a79539d24aaa93364baf2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50437202"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59765676"
 ---
 # <a name="get-device"></a>Obter dispositivo
 
@@ -28,17 +28,19 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegado (conta corporativa ou de estudante) | Directory.Read.All, Directory.ReadWrite.All, Directory.AccessAsUser.All    |
+|Delegado (conta corporativa ou de estudante) | Device.Read.All, Device.ReadWrite.All, Directory.Read.All, Directory.ReadWrite.All, Directory.AccessAsUser.All    |
 |Delegado (conta pessoal da Microsoft) | Sem suporte.    |
-|Aplicativo | Device.ReadWrite.All, Directory.Read.All, Directory.ReadWrite.All |
+|Aplicativo | Device.Read.All, Device.ReadWrite.All, Directory.Read.All, Directory.ReadWrite.All |
 
 ## <a name="http-request"></a>Solicitação HTTP
+
+O `{id}` na solicitação é o valor da **propriedade id** do dispositivo, não a **propriedade deviceId.**
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /devices/{id}
 ```
 ## <a name="optional-query-parameters"></a>Parâmetros de consulta opcionais
-Este método dá suporte a [Parâmetros de consulta OData](/graph/query-parameters) para ajudar a personalizar a resposta.
+Este método dá suporte ao `$select` [parâmetro de consulta OData](/graph/query-parameters) para ajudar a personalizar a resposta.
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
 | Nome       | Tipo | Descrição|
 |:-----------|:------|:----------|
@@ -60,7 +62,7 @@ O exemplo a seguir mostra uma solicitação.
   "name": "get_device"
 }-->
 ```msgraph-interactive
-GET https://graph.microsoft.com/beta/devices/{id}
+GET https://graph.microsoft.com/beta/devices/000005c3-b7a6-4c61-89fc-80bf5ccfc366
 ```
 # <a name="c"></a>[C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-device-csharp-snippets.md)]
@@ -95,14 +97,15 @@ O exemplo a seguir mostra uma resposta para um dispositivo sem **hostNames**.
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 322
 
 {
+  "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#devices/$entity",
+  "@odata.id": "https://graph.microsoft.com/v2/72f988bf-86f1-41af-91ab-2d7cd011db47/directoryObjects/000005c3-b7a6-4c61-89fc-80bf5ccfc366/Microsoft.DirectoryServices.Device",
   "accountEnabled": true,
-  "approximateLastSignInDateTime": "2016-10-19T10:37:00Z",
-  "deviceId": "deviceId-value",
-  "deviceMetadata": "deviceMetadata-value",
-  "deviceVersion": 99,
+  "approximateLastSignInDateTime": "2021-08-26T21:15:01Z",
+  "deviceId": "000005c3-b7a6-4c61-89fc-80bf5ccfc366",
+  "deviceMetadata": null,
+  "deviceVersion": 2,
   "hostNames": []
 }
 ```
@@ -118,7 +121,6 @@ O exemplo a seguir mostra uma resposta para um dispositivo com **hostNames**.
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 322
 
 {
   "accountEnabled": true,

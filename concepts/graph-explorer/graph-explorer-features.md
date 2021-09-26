@@ -3,12 +3,12 @@ title: Trabalhar com Graph Explorer
 description: Saiba como usar alguns dos recursos importantes no Graph Explorer.
 ms.localizationpriority: medium
 author: bettirosengugi
-ms.openlocfilehash: 97c4f3ccd0fdfd08da7f4696419df813f19840e3
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 99404ccf7e38ecf2f2cfd2f8e627aee32b42bda7
+ms.sourcegitcommit: 08e9b0bac39c1b1d2c8a79539d24aaa93364baf2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59014325"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59766989"
 ---
 # <a name="working-with-graph-explorer"></a>Trabalhar com Graph Explorer
 
@@ -36,7 +36,7 @@ O **recurso Modificar permissões** está atualmente em visualização, e alguma
 
 ## <a name="get-an-access-or-authentication-token"></a>Obter um token de acesso ou autenticação
 
-Graph O Explorer inclui uma **guia de tokens do Access** que mostra seu token de acesso quando você está dentro. Na guia **Token de Acesso,** você pode copiar o token se precisar usá-lo em seu aplicativo cliente REST favorito.
+Graph O Explorer inclui uma **guia de tokens do Access** que mostra seu token de acesso quando você está assinado. Na guia **Token de Acesso,** você pode copiar o token se precisar usá-lo em seu aplicativo cliente REST favorito.
 
 ![Captura de tela da guia Token de Acesso no Graph Explorer com o botão Copiar realçada](./images/access-token.png)
 
@@ -84,12 +84,12 @@ Escolha o tema do Graph Explorer selecionando a opção **Alterar tema** na engr
 
 As consultas são Graph Explorer são salvas por 30 dias na **guia** Histórico. Na guia Histórico, você pode:
 
-1.  Exportar todos os itens de histórico no formato .har.
+1.  Exportar todos os itens de histórico no `.har` formato.
 2.  Exclua todos os itens de histórico.
-3.  Exibir esse item de histórico.
-4.  Execute essa consulta.
-5.  Exporte esse item de histórico no formato .har.
-6.  Exclua esse item de histórico.
+3.  Exibir um item de histórico.
+4.  Execute uma consulta.
+5.  Exportar um item de histórico no `.har` formato.
+6.  Exclua um item de histórico.
 
 ![Captura de tela da guia Histórico com opções realçadas](./images/storing-and-sharing-queries.png)
 

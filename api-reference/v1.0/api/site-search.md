@@ -6,12 +6,12 @@ description: Pesquise num locatário do SharePoint por sites que correspondam a 
 ms.localizationpriority: medium
 ms.prod: sharepoint
 doc_type: apiPageType
-ms.openlocfilehash: 78132ed16539ebf1c0b2085e019f40ad6c19b977
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 93b0405ac8aeb48f4dc4bf0d40e23dde108ec9aa
+ms.sourcegitcommit: 08e9b0bac39c1b1d2c8a79539d24aaa93364baf2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59118880"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59765792"
 ---
 # <a name="search-for-sites"></a>Procurar sites
 
@@ -30,10 +30,10 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |Tipo de permissão                        | Permissões (da com menos para a com mais privilégios)
 |:--------------------------------------|:-------------------------------------
 |Delegado (conta corporativa ou de estudante)     | Sites.Read.All, Sites.ReadWrite.All
-|Delegada (conta pessoal da Microsoft) | Sem suporte.
+|Delegado (conta pessoal da Microsoft) | Sem suporte.
 |Aplicativo                            | Sites.Read.All, Sites.ReadWrite.All
 
->**Observação:** Este método não dá suporte à permissão de aplicativo Sites.Selected.
+>**Observação:** esse método não oferece suporte à permissão de aplicativo Sites.Selected.
 
 ## <a name="http-request"></a>Solicitação HTTP
 
@@ -58,6 +58,8 @@ Se tiver êxito, este método retornará um código `200 OK` de resposta e a col
 ## <a name="examples"></a>Exemplos
 
 ### <a name="request"></a>Solicitação
+
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "list_permission"
@@ -66,6 +68,24 @@ Se tiver êxito, este método retornará um código `200 OK` de resposta e a col
 ``` http
 GET https://graph.microsoft.com/v1.0/sites?search={query}
 ```
+# <a name="c"></a>[C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/list-permission-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/list-permission-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/list-permission-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/list-permission-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 ### <a name="response"></a>Resposta
 >**Observação:** o objeto de resposta mostrado aqui pode ser encurtado para legibilidade.

@@ -5,12 +5,12 @@ author: jackson-woods
 ms.localizationpriority: high
 ms.prod: identity-and-access
 ms.custom: scenarios:getting-started
-ms.openlocfilehash: f21e6973d9c1dc79925c7361a51ef28c559d823e
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: ea9fd66eb24b4293a4b86af1e2fbbe2eb55a46e2
+ms.sourcegitcommit: 08e9b0bac39c1b1d2c8a79539d24aaa93364baf2
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59122898"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59507953"
 ---
 # <a name="azure-ad-identity-and-access-management-api-overview"></a>Visão geral da API de gerenciamento de identidade e acesso do Azure AD
 
@@ -30,7 +30,7 @@ Você pode usar o Microsoft Graph e o Azure AD como uma maneira rápida e fácil
 
 Você pode usar as APIs do Azure AD no Microsoft Graph para consultar o perfil do usuário, encontrar outros usuários, gerenciar relações organizacionais, rastrear atribuições ou criar soluções originais que incorporem dados organizacionais existentes. Essas APIs fornecem uma base sólida para integrar aplicativos de negócios personalizados aos serviços digitais existentes de uma organização.
 
-### <a name="access-users-and-groups"></a>Acessar usuários e grupos
+### <a name="manage-users-and-groups"></a>Gerenciar usuários e grupos
 
 Você pode usar as APIs do Azure AD no Microsoft Graph para:
 
@@ -60,21 +60,21 @@ As APIs do Azure AD para o gerenciamento de locatários permitem:
 - Obter informações sobre [SKUs do serviço](/graph/api/resources/subscribedsku) nos quais a empresa está inscrita.
 - [Convidar usuários externos](/graph/api/resources/invitation) (convidados) para uma organização.
 
-### <a name="monitor-identity-risks-preview"></a>Monitorar os riscos de identidade (prévia)
+### <a name="monitor-identity-risks"></a>Monitorar riscos de identidade
 
 A maioria das violações de segurança resulta de invasores que roubam a identidade do usuário. Os invasores tem sido muito eficientes em aproveitar de violações de terceiros, ataques de pulverização de senhas e ataques de phishing sofisticados. Isso significa que você precisa proteger todas as suas contas de usuário desses ataques e proativamente evitar identidades comprometidas de serem violadas.
 
 O Azure AD usa algoritmos de aprendizado de máquina adaptativos e heurística para detectar anomalias que indicam potencialmente contas comprometidas. Com esses dados, o Azure Active Directory Identity Protection protege os usuários com políticas de acesso condicional baseadas em risco e gera relatórios e alertas com base em suas detecções.
 
-Hoje, o Microsoft Graph oferece acesso fácil aos clientes do Azure AD Premium P2 para [consultar eventos de risco detectados pelo Identity Protection](/graph/api/resources/identityprotection-root), incluindo o tipo do evento de risco, a gravidade, a data, a hora, o local, o usuário afetado e mais. Os clientes podem então usar esses eventos em sistemas SIEM e aplicativos de segurança.
+Hoje, o Microsoft Graph oferece acesso fácil aos clientes do Azure AD Premium P2 para [consultar eventos de risco detectados pelo Identity Protection](/graph/api/resources/identityprotectionroot), incluindo o tipo do evento de risco, a gravidade, a data, a hora, o local, o usuário afetado e mais. Os clientes podem então usar esses eventos em sistemas SIEM e aplicativos de segurança.
 
-### <a name="activate-users-into-privileged-roles-preview"></a>Ativar usuários em funções privilegiadas (prévia)
+### <a name="review-access-to-organizational-resources"></a>Analisar acesso aos recursos organizacionais
 
-Você pode garantir o acesso a recursos ativando privilégios administrativos sob demanda. O [Gerenciamento de Identidade Privilegiada](/graph/api/resources/privilegedidentitymanagement-root) é oferecido no Azure AD Premium P2.
+Analisar acesso a grupos, aplicações, e até mesmo papéis privilegiados em sua organização. [As análises de acesso](/graph/api/resources/accessreviews-root) são apresentadas no Azure AD Premium P2.
 
-### <a name="manage-user-access-reviews-preview"></a>Gerenciar as revisões de acesso do usuário (prévia)
+### <a name="activate-users-into-privileged-roles-preview"></a>Ativar usuários em papéis privilegiados (visualização)
 
-Você pode configurar revisões de acesso de associações a grupos e acesso a aplicativos. As [Revisões de Acesso](/graph/api/resources/accessreviews-root) são apresentadas no Azure AD Premium P2.
+Usar o [Gerenciamento de Identidade Privilegiado (PIM) API](/graph/api/resources/rolemanagement?view=graph-rest-beta&preserve-view=true) para ativar o privilégio de administrador sob demanda. Forçar a justificação obrigatória da ativação de papéis, e autenticação multifatorial para os atores em papéis privilegiados.
 
 ## <a name="api-reference"></a>Referência da API
 
@@ -89,4 +89,4 @@ Está procurando a referência de API para esse serviço?
 - Use o Azure AD para se [autenticar](./auth/index.yml) no Microsoft Graph.
 - Integre o [logon do Azure AD](https://azure.microsoft.com/develop/identity/signin/) ao seu aplicativo ou website.
 - Confira o [Changelog](changelog.md) para obter informações sobre novidades nas APIs do Azure AD.
-- Explore [exemplos](https://developer.microsoft.com/graph/graph/examples) para obter mais ideias sobre como usar o Microsoft Graph.
+- Explorar [exemplos](https://developer.microsoft.com/en-us/graph/gallery/?filterBy=Samples) para mais ideias sobre como usar o Microsoft Graph.

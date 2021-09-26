@@ -2,15 +2,15 @@
 title: 'channel: removeEmail'
 description: Remova o email provisionado de um canal.
 author: anandab-msft
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 66efdd201217d34ba367df4ae1f30713cd939df4
-ms.sourcegitcommit: 503c72036c376a30e08c29df8e7730a7afcab66e
+ms.openlocfilehash: 7c958496ffc34b958b817fb69f5cf49d958334a2
+ms.sourcegitcommit: 08e9b0bac39c1b1d2c8a79539d24aaa93364baf2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/10/2021
-ms.locfileid: "52869586"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59765729"
 ---
 # <a name="channel-removeemail"></a>channel: removeEmail
 
@@ -18,17 +18,17 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Remova o endereço de email provisionado de um [canal](../resources/channel.md).
+Remova o endereço de email de um [canal](../resources/channel.md).
 
 Você só poderá remover um endereço de email se ele tiver sido provisionado usando o [método provisionEmail](channel-provisionemail.md) ou por meio do Microsoft Teams cliente.
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>Permissões
 
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 | Tipo de permissão                        | Permissões (da com menos para a com mais privilégios) |
 | :------------------------------------- | :------------------------------------------ |
-| Delegada (conta corporativa ou de estudante)     | ChannelSettings.ReadWrite.All               |
+| Delegado (conta corporativa ou de estudante)     | ChannelSettings.ReadWrite.All               |
 | Delegado (conta pessoal da Microsoft) | Sem suporte.                              |
 | Aplicativo                            | Sem suporte.                              |
 

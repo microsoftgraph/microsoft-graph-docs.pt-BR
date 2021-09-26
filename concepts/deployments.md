@@ -3,12 +3,12 @@ title: Implantações de nuvens nacionais
 description: Além de uma rede global de datacenters, os serviços em nuvem da Microsoft estão disponíveis em três nuvens nacionais separadas.
 author: arpitha-dhanapathi
 ms.localizationpriority: medium
-ms.openlocfilehash: 9ec835a37863ee2bb39fed65d2c4748d0f797bef
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 5ddbd3bcb9717d49efe109e2edc371e7fc623b42
+ms.sourcegitcommit: 08e9b0bac39c1b1d2c8a79539d24aaa93364baf2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59137417"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59766149"
 ---
 # <a name="national-cloud-deployments"></a>Implantações de nuvem nacional
 
@@ -77,7 +77,7 @@ Os seguintes recursos do Microsoft Graph estão geralmente disponíveis no ponto
 | Alterar notificações (Webhooks) | ✔ | ✔ | ✔\* |
 | Consulta delta | ✔ | ✔ | ➖ |
 | Extensões de esquema de diretório | ✔ | ✔ | ➖ |
-| Excel | ✔ | ✔\* | ✔ |
+| Excel | ✔ | ➖ | ✔ |
 | Grupos | ✔ | ✔ | ✔ |
 | OneDrive | ✔ | ✔\* | ✔ |
 | Extensões de tipo aberto | ✔ | ➖ | ➖ |

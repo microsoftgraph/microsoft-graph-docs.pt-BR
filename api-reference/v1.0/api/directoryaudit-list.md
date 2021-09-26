@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: SarahBar
 ms.prod: identity-and-access-reports
 doc_type: apiPageType
-ms.openlocfilehash: 7dcf6aeeb5a9053503de9f43d0945f77d2fe7788
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 4ce9c6c23b474c9100b66f463e790bccf0240887
+ms.sourcegitcommit: 08e9b0bac39c1b1d2c8a79539d24aaa93364baf2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59038073"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59765813"
 ---
 # <a name="list-directoryaudits"></a>Lista directoryAudits
 
@@ -24,8 +24,8 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 | Tipo de permissão                        | Permissões (da com menos para a com mais privilégios) |
 | :------------------------------------- | :------------------------------------------ |
-| Delegada (conta corporativa ou de estudante)     | AuditLog.Read.All e Directory.Read.All    |
-| Delegado (conta pessoal da Microsoft) | Sem suporte                               |
+| Delegado (conta corporativa ou de estudante)     | AuditLog.Read.All e Directory.Read.All    |
+| Delegado (conta pessoal da Microsoft) | Sem suporte.                              |
 | Aplicativo                            | AuditLog.Read.All e Directory.Read.All    |
 
 > [!IMPORTANT]
@@ -41,13 +41,13 @@ GET /auditLogs/directoryaudits
 
 ## <a name="optional-query-parameters"></a>Parâmetros de consulta opcionais
 
-Este método dá suporte aos seguintes parâmetros de consulta OData para ajudar a personalizar a resposta. Para obter detalhes sobre como usar esses parâmetros, confira [Parâmetros de consulta do OData](/graph/query_parameters).
+Este método dá suporte aos seguintes parâmetros de consulta OData para ajudar a personalizar a resposta. Para obter detalhes sobre como usar esses parâmetros, confira [Parâmetros de consulta do OData](/graph/query-parameters).
 
 | Parâmetro                                                       | Descrição                                                                   | Exemplo                                                                     |
 | :--------------------------------------------------------- | :---------------------------------------------------------------------------- | :-------------------------------------------------------------------------- |
-| [\$filter](/graph/query_parameters#filter-parameter)       | Filtra os resultados (linhas).                                                       | `/auditLogs/directoryAudits?&$filter=activityDateTime le 2018-01-24`         |
-| [\$Início](/graph/query_parameters#top-parameter)             | Define o tamanho de página de resultados.                                                | `/auditLogs/directoryAudits?$top=1`                                         |
-| [\$skiptoken](/graph/query_parameters#skiptoken-parameter) | Recupera a próxima página de resultados de conjuntos de resultados que abrangem várias páginas. | `/auditLogs/directoryAudits?$skiptoken=01fa0e77c60c2d3d63226c8e3294c860__1` |
+| [\$filter](/graph/query-parameters#filter-parameter)       | Filtra os resultados (linhas).                                                       | `/auditLogs/directoryAudits?&$filter=activityDateTime le 2018-01-24`         |
+| [\$Início](/graph/query-parameters#top-parameter)             | Define o tamanho de página de resultados.                                                | `/auditLogs/directoryAudits?$top=1`                                         |
+| [\$skiptoken](/graph/query-parameters#skiptoken-parameter) | Recupera a próxima página de resultados de conjuntos de resultados que abrangem várias páginas. | `/auditLogs/directoryAudits?$skiptoken=01fa0e77c60c2d3d63226c8e3294c860__1` |
 
 ### <a name="attributes-supported-by-filter-parameter"></a>Atributos suportados pelo \$ parâmetro filter
 
