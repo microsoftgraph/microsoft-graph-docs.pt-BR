@@ -1,16 +1,16 @@
 ---
 title: Criar unifiedRoleAssignmentMultiple
 description: Crie um novo objeto unifiedRoleAssignmentMultiple.
-localization_priority: Normal
+ms.localizationpriority: medium
 author: abhijeetsinha
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: 4f01f0ad367362110366f297f6175b6943980fcf
-ms.sourcegitcommit: a598c09b73e4e43eea5f4aaefea7ffe062e15c39
+ms.openlocfilehash: 99fccb763d9442881b37c79e88a2902eb5fe1070
+ms.sourcegitcommit: 08e9b0bac39c1b1d2c8a79539d24aaa93364baf2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/22/2021
-ms.locfileid: "53533306"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59767346"
 ---
 # <a name="create-unifiedroleassignmentmultiple"></a>Criar unifiedRoleAssignmentMultiple
 
@@ -26,8 +26,6 @@ No momento, há suporte para os seguintes provedores RBAC:
 
 Para outros Microsoft 365 (como o Azure AD), use [unifiedRoleAssignment](../resources/unifiedroleassignment.md).
 
-[!INCLUDE [cloudpc-api-preview](../../includes/cloudpc-api-preview.md)]
-
 ## <a name="permissions"></a>Permissões
 
 Dependendo do provedor RBAC e do tipo de permissão (delegado ou aplicativo) necessário, escolha na tabela a seguinte permissão com menos privilégios necessária para chamar essa API. Para saber mais, incluindo [ter cuidado antes](/graph/auth/auth-concepts#best-practices-for-requesting-permissions) de escolher permissões mais privilegiadas, consulte [Permissions](/graph/permissions-reference). 
@@ -38,7 +36,7 @@ Dependendo do provedor RBAC e do tipo de permissão (delegado ou aplicativo) nec
 |:--------------------|:---------------------------------------------------------|
 |Delegado (conta corporativa ou de estudante) |  CloudPC.ReadWrite.All   |
 |Delegado (conta pessoal da Microsoft) | Sem suporte.    |
-|Application | CloudPC.ReadWrite.All  |
+|Aplicativo | CloudPC.ReadWrite.All  |
 
 ### <a name="for-device-management-intune-provider"></a>Para o provedor de gerenciamento de dispositivos (Intune)
 
@@ -46,7 +44,7 @@ Dependendo do provedor RBAC e do tipo de permissão (delegado ou aplicativo) nec
 |:--------------------|:---------------------------------------------------------|
 |Delegado (conta corporativa ou de estudante) |  DeviceManagementRBAC.ReadWrite.All   |
 |Delegado (conta pessoal da Microsoft) | Sem suporte.    |
-|Application | DeviceManagementRBAC.ReadWrite.All |
+|Aplicativo | DeviceManagementRBAC.ReadWrite.All |
 
 
 ## <a name="http-request"></a>Solicitação HTTP

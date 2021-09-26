@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: besiler
 ms.prod: identity-and-access-reports
 doc_type: apiPageType
-ms.openlocfilehash: 5aa455af30927df4e983d2374f456f442af71b86
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 6c37757c55d0720d1ce3b210fe317ee84385bd33
+ms.sourcegitcommit: 08e9b0bac39c1b1d2c8a79539d24aaa93364baf2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59130199"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59767479"
 ---
 # <a name="list-signins"></a>Listar logons
 
@@ -37,11 +37,11 @@ Os aplicativos devem [estar registrados corretamente](/azure/active-directory/ac
 
 Além das permissões delegadas, o usuário inscreveu precisa pertencer a uma das seguintes funções de diretório que permitem ler relatórios de logons. Para saber mais sobre funções de diretório, consulte Funções do [Azure AD integrados](/azure/active-directory/roles/permissions-reference):
 + Administrador global
-+ Leitor global
++ Leitor Global
 + Leitor de Relatórios
 + Administrador de Segurança
-+ Operador de segurança
-+ Leitor de segurança
++ Operador de Segurança
++ Leitor de Segurança
 
 ## <a name="http-request"></a>Solicitação HTTP
 
@@ -52,7 +52,7 @@ GET auditLogs/signIns
 
 ## <a name="optional-query-parameters"></a>Parâmetros de consulta opcionais
 
-Este método dá suporte `$top` aos `$skiptoken` parâmetros , e `$filter` OData Query para ajudar a personalizar a resposta. Para obter detalhes sobre como usar esses parâmetros, confira [Parâmetros de consulta do OData](/graph/query_parameters).
+Este método dá suporte `$top` aos `$skiptoken` parâmetros , e `$filter` OData Query para ajudar a personalizar a resposta. Para obter detalhes sobre como usar esses parâmetros, confira [Parâmetros de consulta do OData](/graph/query-parameters).
 
 ## <a name="response"></a>Resposta
 

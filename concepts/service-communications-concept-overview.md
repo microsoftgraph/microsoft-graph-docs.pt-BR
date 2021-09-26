@@ -5,12 +5,12 @@ author: payiAzure
 ms.localizationpriority: high
 ms.prod: service-communications
 ms.custom: scenarios:getting-started
-ms.openlocfilehash: 0cd76530511ac5f8d59018d7bb8abcd69a1c5c53
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: aa4654fdb1d3ebfaba2a4cf62000477d9c978684
+ms.sourcegitcommit: 08e9b0bac39c1b1d2c8a79539d24aaa93364baf2
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59093873"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59766142"
 ---
 # <a name="overview-for-accessing-service-health-and-communications-in-microsoft-graph"></a>Visão geral para acessar as comunicações e a integridade do serviço no Microsoft Graph
 Você pode usar a API de comunicações de serviço no Microsoft Graph para acessar o status de integridade e as postagens do centro de mensagens sobre os serviços em nuvem da Microsoft. O status de integridade real e as postagens correspondem aos serviços do Microsoft 365 e Dynamics 365 que são suportados pela API e assinados pelo locatário.
@@ -40,7 +40,7 @@ Esta seção mostra exemplos no [Centro de administração do Microsoft 365](htt
 
 ### <a name="service-health-dashboard"></a>Painel de integridade do serviço
 
-No painel **Integridade do serviço**, você pode visualizar a integridade dos serviços Microsoft assinados, que podem incluir Office na web, Yammer, Microsoft Dynamics CRM e serviços de gerenciamento de dispositivos móveis de nuvem. Veja os exemplos demarcados na figura 1.
+No painel de **Integridade do serviço**, você pode exibir a integridade de seus serviços assinados da Microsoft, que podem incluir o Office na web, Yammer, Microsoft Dynamics CRM e serviços em nuvem de gerenciamento de dispositivo móvel. Veja os exemplos demarcados na figura 1.
 
 **Figura 1. Painel de integridade do serviço no Centro de administração do Microsoft 365**
 
@@ -48,7 +48,7 @@ No painel **Integridade do serviço**, você pode visualizar a integridade dos s
 
 ### <a name="windows-release-health-dashboard"></a>Painel de integridade da versão do Windows
 
-No painel de **integridade da versão do Windows**, você pode exibir informações essenciais sobre a qualidade mensal e atualizações de recursos, além dos recursos e aprimoramentos mais recentes do Windows. Veja um exemplo conforme demarcado na figura 2.
+No painel de controle de **integridade do Windows**, você pode exibir informações essenciais sobre a qualidade mensal e atualizações de recursos, além dos recursos e aprimoramentos mais recentes do Windows. Veja um exemplo conforme demarcado na figura 2.
 
 **Figura 2. Painel de integridade da versão do Windows no Centro de administração do Microsoft 365**
 
@@ -56,7 +56,7 @@ No painel de **integridade da versão do Windows**, você pode exibir informaç�
 
 
 ### <a name="message-center-dashboard"></a>Painel do centro de mensagens
-No painel do **Centro de mensagens**, você pode exibir as alterações futuras, incluindo recursos novos e alterados, manutenção planejada e outros anúncios importantes. Veja os exemplos demarcados na figura 3.
+No painel da **Central de mensagens**, você pode exibir as alterações futuras, incluindo recursos novos e alterados, manutenção planejada e outros anúncios importantes. Veja os exemplos demarcados na figura 3.
 
 **Figura 3. Painel do centro de mensagens no Centro de administração do Microsoft 365**
 

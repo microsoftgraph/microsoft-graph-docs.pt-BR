@@ -1,16 +1,16 @@
 ---
 title: Listar transitivo de grupo memberOf
 description: Obter grupos e unidades administrativas de que o grupo é membro.
-localization_priority: Normal
+ms.localizationpriority: medium
 author: Jordanndahl
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: f2a1daf44989034c02abb780d3d53cdce9c6a166
-ms.sourcegitcommit: 4fa6fcc058c7f8d8cad58c0b82db23d6c7da37d2
+ms.openlocfilehash: c6df727204f92e6ea3d97058079dd910613f47bb
+ms.sourcegitcommit: 08e9b0bac39c1b1d2c8a79539d24aaa93364baf2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/27/2021
-ms.locfileid: "52681479"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59764525"
 ---
 # <a name="list-group-transitive-memberof"></a>Listar transitivo de grupo memberOf
 
@@ -41,7 +41,7 @@ GET /groups/{id}/transitiveMemberOf
 
 ## <a name="optional-query-parameters"></a>Parâmetros de consulta opcionais
 
-Este método dá suporte a [Parâmetros de consulta OData](/graph/query_parameters) para ajudar a personalizar a resposta, incluindo `$search`, `$count`, e `$filter`. O OData cast também está habilitado, por exemplo, você pode lançar para obter apenas os membros do grupo transitivo de um grupo. Você pode usar `$search`na propriedade **displayName**. Quando itens são adicionados ou atualizados para este recurso, eles são indexados especialmente para uso com os `$count` e `$search` parâmetros de consulta. Pode haver um pequeno atraso entre quando um item é adicionado ou atualizado e quando está disponível no índice.
+Este método dá suporte a [Parâmetros de consulta OData](/graph/query-parameters) para ajudar a personalizar a resposta, incluindo `$search`, `$count`, e `$filter`. O OData cast também está habilitado, por exemplo, você pode lançar para obter apenas os membros do grupo transitivo de um grupo. Você pode usar `$search`na propriedade **displayName**. Quando itens são adicionados ou atualizados para este recurso, eles são indexados especialmente para uso com os `$count` e `$search` parâmetros de consulta. Pode haver um pequeno atraso entre quando um item é adicionado ou atualizado e quando está disponível no índice.
 
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
 

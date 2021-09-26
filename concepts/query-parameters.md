@@ -4,12 +4,12 @@ description: O Microsoft Graph fornece parâmetros de consulta opcionais que voc
 author: mumbi-o
 ms.localizationpriority: high
 ms.custom: graphiamtop20, scenarios:getting-started
-ms.openlocfilehash: a6165b4172ebb97e42883e9bd857242873503388
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 38cd97227c6f39b88042f1361815cc2c4b6fb94e
+ms.sourcegitcommit: 08e9b0bac39c1b1d2c8a79539d24aaa93364baf2
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59139027"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59766394"
 ---
 # <a name="use-query-parameters-to-customize-responses"></a>Usar parâmetros de consulta para personalizar respostas
 
@@ -97,7 +97,7 @@ Por exemplo, a solicitação a seguir retornará tanto o conjunto **contato** do
 GET  https://graph.microsoft.com/v1.0/me/contacts?$count=true
 ```
 
-O parâmetro de consulta `$count` tem suporte para essas coleções de recursos e suas relações que derivam de [directoryObject](/graph/api/resources/directoryobject) e somente em [consultas avançadas](/graph/filter-directory-objects):
+O parâmetro de consulta `$count` tem suporte para essas coleções de recursos e suas relações que derivam de [directoryObject](/graph/api/resources/directoryobject) e somente em [consultas avançadas](/graph/aad-advanced-queries):
 - [aplicativo](/graph/api/resources/application)
 - [orgContact](/graph/api/resources/orgcontact)
 - [device](/graph/api/resources/device)

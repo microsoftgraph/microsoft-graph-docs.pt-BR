@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: grangeryy
 ms.prod: excel
 doc_type: resourcePageType
-ms.openlocfilehash: 0ec98d72f56eb2f066f221a0c7aadc389d01109b
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 0d452584898c24cf482733810acfc26479fae07c
+ms.sourcegitcommit: 08e9b0bac39c1b1d2c8a79539d24aaa93364baf2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59134161"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59766317"
 ---
 # <a name="workbookoperation-resource-type"></a>tipo de recurso workbookOperation
 
@@ -21,7 +21,7 @@ Representa o status de uma operação de manual de trabalho de longa duração.
 
 | Método       | Tipo de retorno | Descrição |
 |:-------------|:------------|:------------|
-| [Obter workbookOperation](../api/workbookoperation-get.md) | [workbookOperation](workbookoperation.md) | Obter a operação com `{operation-id}` . |
+| [Obter workbookOperation](../api/workbookoperation-get.md) | coleção [workbookOperation](workbookoperation.md) | Obter a operação com `{operation-id}` . |
 
 
 ## <a name="properties"></a>Propriedades
@@ -44,7 +44,7 @@ Veja a seguir uma representação JSON do recurso.
 <!-- {
   "blockType": "resource",
   "optionalProperties": [
-
+    "id", "status", "error", "resourceLocation"
   ],
   "@odata.type": "microsoft.graph.workbookOperation",
   "keyProperty": "id"
@@ -52,10 +52,14 @@ Veja a seguir uma representação JSON do recurso.
 
 ```json
 {
+  "@odata.type": "#microsoft.graph.workbookOperation",
   "id": "String (identifier)",
-  "status": {"@odata.type": "microsoft.graph.workbookOperationStatus"},
-  "error": {"@odata.type": "microsoft.graph.workbookOperationError"},
+  "status": "String",
   "resourceLocation": "String",
+  "statusCode": "Integer",
+  "error": {
+    "@odata.type": "microsoft.graph.workbookOperationError"
+  }
 }
 ```
 

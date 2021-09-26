@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: ArvindHarinder1
 ms.prod: identity-and-access-reports
 doc_type: apiPageType
-ms.openlocfilehash: a3a1f1a2536ebb125d778dedc4000a18ab3cc3a6
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: cf13e19796e96ba63bef79e7cc8b5aa41bc9af4c
+ms.sourcegitcommit: 08e9b0bac39c1b1d2c8a79539d24aaa93364baf2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59079236"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59763426"
 ---
 # <a name="list-provisioningobjectsummary"></a>Listar provisioningObjectSummary
 
@@ -24,7 +24,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 |Tipo de permissão | Permissões (da com menos para a com mais privilégios)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegada (conta corporativa ou de estudante) | AuditLog.Read.All e Directory.Read.All |
+|Delegado (conta corporativa ou de estudante) | AuditLog.Read.All e Directory.Read.All |
 |Delegado (conta pessoal da Microsoft) | Sem suporte   |
 |Aplicativo | AuditLog.Read.All e Directory.Read.All |
 
@@ -43,13 +43,13 @@ GET /auditLogs/provisioning
 
 Este método dá suporte aos seguintes parâmetros de consulta OData para ajudar a personalizar a resposta. Observe que os filtros são todos sensíveis a minúsculas, exceto para status. 
 
-|Name     |Descrição                            |Exemplo|
+|Nome     |Descrição                            |Exemplo|
 |:--------------------|----------------|------------------------------------------------------------------------|
 |[$filter](/graph/query-parameters#filter-parameter)|Filtra os resultados (linhas). |/`auditLogs/provisioning?$filter=id eq '74c3b0ae-9cc5-850e-e0a5-7r6a4231de87'`
 |[$top](/graph/query-parameters#top-parameter)|Define o tamanho de página de resultados.|`/auditLogs/provisioning?$top=20`|
 |[$skiptoken](/graph/query-parameters#skiptoken-parameter)|Recupera a próxima página de resultados de conjuntos de resultados que abrangem várias páginas. Você deve passar o filtro superior na consulta para gerar o token. Não é possível especificar o número de resultados a serem ignorados.|`/auditLogs/provisioning?$top=20&$skiptoken=g822a72df43b19c8ce94b71d153981b680a08800bc3e35f239dffb378ff72c25"`|
 
-Para obter informações gerais, acesse [Parâmetros de consulta OData](/graph/query_parameters).
+Para obter informações gerais, acesse [Parâmetros de consulta OData](/graph/query-parameters).
 
 ### <a name="attributes-supported-by-the-filter-parameter"></a>Atributos suportados pelo parâmetro $filter
 
@@ -131,7 +131,7 @@ GET https://graph.microsoft.com/v1.0/auditLogs/provisioning
 
 A seguir, um exemplo da resposta para um evento bem-sucedido.
 
->**Observação:** o objeto de resposta mostrado aqui pode ser encurtado para legibilidade. 
+>**Observação:** O objeto de resposta mostrado aqui pode ser encurtado para legibilidade. 
 
 <!-- {
   "blockType": "response",

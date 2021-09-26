@@ -2,15 +2,15 @@
 title: Obter cloudPcProvisioningPolicy
 description: Leia as propriedades e as relações de um objeto cloudPcProvisioningPolicy.
 author: AshleyYangSZ
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: cloud-pc
 doc_type: apiPageType
-ms.openlocfilehash: 7a5f0c1bab5b0bd05667d6d4e75fc5ff19ef03c4
-ms.sourcegitcommit: d700b7e3b411e3226b5adf1f213539f05fe802e8
+ms.openlocfilehash: 9a7a7a22cfe71fc57e2c4ffdfc46f7a06219d1a9
+ms.sourcegitcommit: 08e9b0bac39c1b1d2c8a79539d24aaa93364baf2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52546697"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59764140"
 ---
 # <a name="get-cloudpcprovisioningpolicy"></a>Obter cloudPcProvisioningPolicy
 
@@ -20,7 +20,6 @@ Namespace: microsoft.graph
 
 Leia as propriedades e as relações de um [objeto cloudPcProvisioningPolicy.](../resources/cloudpcprovisioningpolicy.md)
 
-[!INCLUDE [cloudpc-api-preview](../../includes/cloudpc-api-preview.md)]
 
 ## <a name="permissions"></a>Permissões
 

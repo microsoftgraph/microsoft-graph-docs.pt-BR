@@ -1,11 +1,11 @@
 ---
 ms.localizationpriority: medium
-ms.openlocfilehash: 6bfe8ca4e21425b6630d1213ff217b0b28db4eb7
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: a78f3a256688e54a6232bb79e2a5bb792ff3dc00
+ms.sourcegitcommit: 08e9b0bac39c1b1d2c8a79539d24aaa93364baf2
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59142444"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59765316"
 ---
 ### <a name="application-properties"></a>Propriedades do aplicativo
 
@@ -66,15 +66,16 @@ ms.locfileid: "59142444"
 
 ### <a name="group-properties"></a>Propriedades do grupo
 
-| Propriedade                                             | eq                                         | startsWith                                 | ge                                         | le                                         | Valor nulo                                 |
-| ---------------------------------------------------------- | ------------------------------------------ | ------------------------------------------ | ------------------------------------------ | ------------------------------------------ | ------------------------------------------ |
+| Propriedade                                                   | eq                                         | startsWith                                 | ge                                         | le                                         | Valor nulo                                 |
+|------------------------------------------------------------|--------------------------------------------|--------------------------------------------|--------------------------------------------|--------------------------------------------|--------------------------------------------|
 | assignedLicenses/any(a:a/skuId)                            | ![Com suporte por Padrão][RDS]               |                                            |                                            |                                            | ![Não suportado][NS]                       |
 | classificação                                             | ![Com suporte por Padrão][RDS]               | ![Com suporte por Padrão][RDS]               |                                            |                                            | ![Não suportado][NS]                       |
 | createdOnBehalfOf/deletedDateTime                          | ![Com suporte por Padrão][RDS]               |                                            | ![Com suporte por Padrão][RDS]               | ![Com suporte por Padrão][RDS]               | ![Não suportado][NS]                       |
 | descrição                                                | ![Requer parâmetros de consulta avançados][AQP] | ![Requer parâmetros de consulta avançados][AQP] |                                            |                                            | ![Não suportado][NS]                       |
 | displayName                                                | ![Com suporte por Padrão][RDS]               | ![Com suporte por Padrão][RDS]               |                                            |                                            | ![Requer parâmetros de consulta avançados][AQP] |
 | expirationDateTime                                         | ![Requer parâmetros de consulta avançados][AQP] |                                            | ![Requer parâmetros de consulta avançados][AQP] | ![Requer parâmetros de consulta avançados][AQP] | ![Não suportado][NS]                       |
-| hasMembersWithLicenseErrors                                | ![Com suporte por Padrão][RDS]               |                                            |                                            |                                            | ![Com suporte por Padrão][RDS]               |
+| groupTypes                                                 | ![Com suporte por Padrão][RDS]               |                                            |                                            |                                            | ![Não suportado][NS]                       |
+| infoCatalogs                                               | ![Com suporte por Padrão][RDS]               | ![Com suporte por Padrão][RDS]               | ![Com suporte por Padrão][RDS]               | ![Com suporte por Padrão][RDS]               |                                            |
 | email                                                       | ![Com suporte por Padrão][RDS]               | ![Com suporte por Padrão][RDS]               |                                            |                                            | ![Requer parâmetros de consulta avançados][AQP] |
 | mailEnabled                                                | ![Com suporte por Padrão][RDS]               |                                            |                                            |                                            | ![Não suportado][NS]                       |
 | mailNickname                                               | ![Com suporte por Padrão][RDS]               | ![Com suporte por Padrão][RDS]               |                                            |                                            | ![Requer parâmetros de consulta avançados][AQP] |
@@ -87,18 +88,20 @@ ms.locfileid: "59142444"
 | onPremisesSyncEnabled                                      | ![Com suporte por Padrão][RDS]               |                                            |                                            |                                            | ![Requer parâmetros de consulta avançados][AQP] |
 | preferredLanguage                                          | ![Requer parâmetros de consulta avançados][AQP] | ![Requer parâmetros de consulta avançados][AQP] |                                            |                                            | ![Requer parâmetros de consulta avançados][AQP] |
 | renewedDateTime                                            | ![Com suporte por Padrão][RDS]               |                                            | ![Com suporte por Padrão][RDS]               | ![Com suporte por Padrão][RDS]               | ![Não suportado][NS]                       |
+| resourceProvisioningOptions (somente beta)                    | ![Com suporte por Padrão][RDS]               | ![Com suporte por Padrão][RDS]               |                                            |                                            |                                            |
 | securityEnabled                                            | ![Com suporte por Padrão][RDS]               |                                            |                                            |                                            | ![Não suportado][NS]                       |
 
 
 
 ### <a name="organizational-contact-properties"></a>Propriedades de contato organizacional
 
-| Propriedade                                           | eq                                         | startsWith                                 | ge                           | le                           | Valor nulo                                 |
-| ---------------------------------------------------------- | ------------------------------------------ | ------------------------------------------ | ---------------------------- | ---------------------------- | ------------------------------------------ |
+| Propriedade                                                   | eq                                         | startsWith                                 | ge                           | le                           | Valor nulo                                 |
+|------------------------------------------------------------|--------------------------------------------|--------------------------------------------|------------------------------|------------------------------|--------------------------------------------|
 | companyName                                                | ![Requer parâmetros de consulta avançados][AQP] | ![Requer parâmetros de consulta avançados][AQP] |                              |                              | ![Requer parâmetros de consulta avançados][AQP] |
 | department                                                 | ![Com suporte por Padrão][RDS]               | ![Com suporte por Padrão][RDS]               |                              |                              | ![Requer parâmetros de consulta avançados][AQP] |
 | displayName                                                | ![Com suporte por Padrão][RDS]               | ![Com suporte por Padrão][RDS]               |                              |                              | ![Requer parâmetros de consulta avançados][AQP] |
 | givenName                                                  | ![Com suporte por Padrão][RDS]               | ![Com suporte por Padrão][RDS]               |                              |                              | ![Requer parâmetros de consulta avançados][AQP] |
+| imAddresses                                                | ![Com suporte por Padrão][RDS]               | ![Com suporte por Padrão][RDS]               | ![Com suporte por Padrão][RDS] | ![Com suporte por Padrão][RDS] |                                            |
 | jobTitle                                                   | ![Com suporte por Padrão][RDS]               | ![Com suporte por Padrão][RDS]               |                              |                              | ![Requer parâmetros de consulta avançados][AQP] |
 | email                                                       | ![Com suporte por Padrão][RDS]               | ![Com suporte por Padrão][RDS]               |                              |                              | ![Requer parâmetros de consulta avançados][AQP] |
 | mailNickname                                               | ![Com suporte por Padrão][RDS]               | ![Com suporte por Padrão][RDS]               |                              |                              | ![Requer parâmetros de consulta avançados][AQP] |
@@ -113,8 +116,8 @@ ms.locfileid: "59142444"
 
 ### <a name="user-properties"></a>Propriedades de usuário
 
-| Propriedade                                              | eq                                         | startsWith                                 | ge                                         | le                                         | Valor nulo                                 |
-| ---------------------------------------------------------- | ------------------------------------------ | ------------------------------------------ | ------------------------------------------ | ------------------------------------------ | ------------------------------------------ |
+| Propriedade                                                   | eq                                         | startsWith                                 | ge                                         | le                                         | Valor nulo                                 |
+|------------------------------------------------------------|--------------------------------------------|--------------------------------------------|--------------------------------------------|--------------------------------------------|--------------------------------------------|
 | accountEnabled                                             | ![Com suporte por Padrão][RDS]               |                                            |                                            |                                            | ![Não suportado][NS]                       |
 | ageGroup                                                   | ![Com suporte por Padrão][RDS]               |                                            |                                            |                                            | ![Não suportado][NS]                       |
 | assignedLicenses/any(a:a/skuId)                            | ![Com suporte por Padrão][RDS]               |                                            |                                            |                                            | ![Não suportado][NS]                       |
@@ -140,6 +143,8 @@ ms.locfileid: "59142444"
 | faxNumber                                                  | ![Requer parâmetros de consulta avançados][AQP] | ![Requer parâmetros de consulta avançados][AQP] |                                            |                                            | ![Requer parâmetros de consulta avançados][AQP] |
 | givenName                                                  | ![Com suporte por Padrão][RDS]               | ![Com suporte por Padrão][RDS]               |                                            |                                            | ![Requer parâmetros de consulta avançados][AQP] |
 | identities/any(i:i/issuer)                                 | ![Com suporte por Padrão][RDS]               | ![Não suportado][NS]                       |                                            |                                            | ![Com suporte por Padrão][RDS]               |
+| imAddresses                                                | ![Com suporte por Padrão][RDS]               | ![Com suporte por Padrão][RDS]               | ![Com suporte por Padrão][RDS]               | ![Com suporte por Padrão][RDS]               |                                            |
+| infoCatalogs                                               | ![Com suporte por Padrão][RDS]               | ![Com suporte por Padrão][RDS]               | ![Com suporte por Padrão][RDS]               | ![Com suporte por Padrão][RDS]               |                                            |
 | isResourceAccount                                          | ![Com suporte por Padrão][RDS]               |                                            |                                            |                                            | ![Não suportado][NS]                       |
 | jobTitle                                                   | ![Com suporte por Padrão][RDS]               | ![Com suporte por Padrão][RDS]               |                                            |                                            | ![Requer parâmetros de consulta avançados][AQP] |
 | email                                                       | ![Com suporte por Padrão][RDS]               | ![Com suporte por Padrão][RDS]               |                                            |                                            | ![Requer parâmetros de consulta avançados][AQP] |

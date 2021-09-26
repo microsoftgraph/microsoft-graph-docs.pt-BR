@@ -10,7 +10,7 @@ ms.sourcegitcommit: 08e9b0bac39c1b1d2c8a79539d24aaa93364baf2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
 ms.lasthandoff: 09/24/2021
-ms.locfileid: "59508815"
+ms.locfileid: "59767073"
 ---
 # <a name="dimensions-resource-type"></a>Tipo de recurso Dimensions
 
@@ -20,7 +20,7 @@ Namespace: microsoft.graph
 
 Representa uma dimensão no Dynamics 365 Business Central.
 
-## <a name="methods"></a>Methods
+## <a name="methods"></a>Métodos
 | Método       | Tipo de retorno  |Descrição|
 |:-------------|:-------------|:----------|
 |[Obter dimensões](../api/dynamics-dimension-get.md)|dimension|Obtém uma dimensão.|
@@ -31,7 +31,7 @@ Representa uma dimensão no Dynamics 365 Business Central.
 |:-------------------|:----------------------|:-------------------------|
 |id                  |GUID                   |A ID exclusiva do item.|
 |código                |string, tamanho máximo 20|O código de dimensão.       |
-|displayName         |cadeia de caracteres                 |Especifica o nome da dimensão. Esse nome aparecerá onde a dimensão é usada.|
+|displayName         |string                 |Especifica o nome da dimensão. Esse nome aparecerá onde a dimensão é usada.|
 |lastModifiedDateTime|datetime               |A última data em que a dimensão foi modificada.|  
 
 

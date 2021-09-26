@@ -5,12 +5,12 @@ ms.localizationpriority: high
 author: Jordanndahl
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: e604475c8c722e9a57c960fcdf60db2685c19f1b
-ms.sourcegitcommit: c333953a9188b4cd4a9ab94cbe68871e8f3563e5
+ms.openlocfilehash: dfee54c81e061b35bb1b3c40f32b509122ef8892
+ms.sourcegitcommit: 08e9b0bac39c1b1d2c8a79539d24aaa93364baf2
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/30/2021
-ms.locfileid: "58695424"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59508135"
 ---
 # <a name="list-groups"></a>Listar grupos
 
@@ -409,12 +409,11 @@ Content-type: application/json
 }
 ```
 
-### <a name="example-7-list-dynamic-groups-filtered-by-enabled-membershipruleprocessingstate"></a>Exemplo 7: Listar grupos dinâmicos, filtrados por MembershipRuleProcessingState habilitado
+### <a name="example-7-list-dynamic-groups"></a>Exemplo 7: listar grupos dinâmicos
 
 #### <a name="request"></a>Solicitação
 
-Este é um exemplo de solicitação.
-
+A seguir está um exemplo da solicitação que filtra por **MembershipRuleProcessingState** para recuperar grupos dinâmicos. Você também pode filtrar pelas propriedades **groupTypes** (ou seja, `$filter=groupTypes/any(s:s eq 'DynamicMembership')`). Essa solicitação requer o cabeçalho **ConsistencyLevel** definido como `eventual` e a cadeia de caracteres de consulta `$count=true` porque a solicitação usa o operador `NOT` do parâmetro de consulta `$filter`. Para obter mais informações sobre o uso de **ConsistencyLevel** e `$count`, consulte [Funcionalidades avançadas de consulta nos objetos de diretório do Microsoft Azure AD](/graph/aad-advanced-queries).
 
 # <a name="http"></a>[HTTP](#tab/http)
 <!-- {
@@ -422,7 +421,7 @@ Este é um exemplo de solicitação.
   "name": "get_enabled_dynamic_groups"
 }-->
 ```msgraph-interactive
-GET https://graph.microsoft.com/beta/groups?$select=id,membershipRule,membershipRuleProcessingState,membershipRuleProcessingStatus&$filter=membershipRuleProcessingState eq 'On'
+GET https://graph.microsoft.com/beta/groups?$filter=mailEnabled eq false and securityEnabled eq true and NOT(groupTypes/any(s:s eq 'Unified')) and membershipRuleProcessingState eq 'On'&$count=true&$select=id,membershipRule,membershipRuleProcessingState
 ```
 # <a name="c"></a>[C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-enabled-dynamic-groups-csharp-snippets.md)]
@@ -458,21 +457,19 @@ HTTP/1.1 200 OK
 Content-type: application/json
 
 {
-   "@odata.context":"https://graph.microsoft.com/beta/$metadata#groups(id,membershipRule,membershipRuleProcessingState,membershipRuleProcessingStatus)",
-   "value":[
-      {
-         "id":"1cdf9c18-a7dc-46b1-b47f-094d5656376d",
-         "membershipRule":"user.accountEnabled -eq false",
-         "membershipRuleProcessingState":"On",
-         "membershipRuleProcessingStatus":{
-            "status":"Succeeded",
-            "lastMembershipUpdated":"2020-09-14T00:00:00Z",
-            "errorMessage":null
-         }
-      }
-   ]
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#groups(id,membershipRule,membershipRuleProcessingState)",
+    "@odata.count": 1,
+    "value": [
+        {
+            "@odata.id": "https://graph.microsoft.com/v2/84841066-274d-4ec0-a5c1-276be684bdd3/directoryObjects/e9f4a701-e7b5-4401-a0ca-5bd5f3cdcf4b/Microsoft.DirectoryServices.Group",
+            "id": "e9f4a701-e7b5-4401-a0ca-5bd5f3cdcf4b",
+            "membershipRule": "(user.userType -contains \"Guest\" and user.accountEnabled -eq true) or (user.city -eq \"Nairobi\")",
+            "membershipRuleProcessingState": "On"
+        }
+    ]
 }
 ```
+
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
 <!--

@@ -5,12 +5,12 @@ ms.localizationpriority: high
 ms.prod: search
 author: snlraju-msft
 scenarios: getting-started
-ms.openlocfilehash: b936bc0dd26ae3287f0a186d3309cc972a184da4
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: f501f90a8e7b82759db4f54f014de93fc0806047
+ms.sourcegitcommit: 08e9b0bac39c1b1d2c8a79539d24aaa93364baf2
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59129702"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59765162"
 ---
 # <a name="overview-of-the-microsoft-search-api-in-microsoft-graph"></a>Visão geral da API da Pesquisa da Microsoft no Microsoft Graph
 
@@ -23,7 +23,7 @@ A Pesquisa da Microsoft é um mecanismo de pesquisa empresarial que proporciona 
 
 A API da Pesquisa da Microsoft fornece um ponto de extremidade de pesquisa que você pode usar para permitir que os desenvolvedores [consultem](/graph/api/search-query) dados na nuvem da Microsoft que a Pesquisa da Microsoft já indexa, como mensagens e eventos nas caixas de correio do Outlook e arquivos no OneDrive e no SharePoint.
 
-### <a name="include-custom-external-data-in-search-experience-preview"></a>Incluir dados externos personalizados na experiência de pesquisa (visualização)
+### <a name="include-custom-external-data-in-search-experience"></a>Incluir dados externos personalizados na experiência de pesquisa
 
 Use[conectores do Microsoft Graph](/microsoftsearch/connectors-overview) para incluir dados de fora da nuvem da Microsoft em sua experiência de busca. Por exemplo, estabeleça uma conexão com o banco de dados de recursos humanos ou com o catálogo de produtos de uma organização. Em seguida, utilize a API de Pesquisa da Microsoft para [consultar](/graph/api/search-query) perfeitamente a fonte de dados externa. 
 

@@ -5,12 +5,12 @@ author: sureshja
 ms.localizationpriority: high
 ms.prod: applications
 doc_type: apiPageType
-ms.openlocfilehash: 80292cfbd0b7059919987b737c4d78e5c617ac6d
-ms.sourcegitcommit: c333953a9188b4cd4a9ab94cbe68871e8f3563e5
+ms.openlocfilehash: 1e0a592f13975e9a988fe36b0259d578deb651a1
+ms.sourcegitcommit: 08e9b0bac39c1b1d2c8a79539d24aaa93364baf2
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/30/2021
-ms.locfileid: "58696860"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59765246"
 ---
 # <a name="get-serviceprincipal"></a>Obter um servicePrincipal
 
@@ -38,6 +38,13 @@ GET /servicePrincipals/{id}
 
 ## <a name="optional-query-parameters"></a>Parâmetros de consulta opcionais
 Este método dá suporte a [Parâmetros de consulta OData](/graph/query-parameters) para ajudar a personalizar a resposta.
+
+Este método suporta aos parâmetros de consulta `$count`, `$expand`, `$filter`, `$orderBy`, `$search`, `$select`, e `$top` [OData](/graph/query-parameters) para ajudar a personalizar a resposta. Algumas consultas são suportadas somente quando se usa o cabeçalho **ConsistencyLevel** definido como `eventual` e `$count`. Para obter mais informações, consulte [Funcionalidades avançadas de consulta nos objetos de diretório do Microsoft Azure AD](/graph/aad-advanced-queries).
+
+Por padrão, esta API não retorna o valor da chave pública da **chave** na propriedade **keyCredentials** a menos que **keyCredentials** seja especificado em uma `$select`consulta.
+Por exemplo, `$select=id,appId,keyCredentials`.
+
+O uso de `$select` para obter **keyCredentials** para diretores de serviços tem um limite de 150 pedidos por minuto para cada locatário.
 
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
 | Nome           | Descrição                |

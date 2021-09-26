@@ -2,15 +2,15 @@
 title: Obter cloudPcAuditEvent
 description: Leia as propriedades e as relações de um objeto cloudPcAuditEvent.
 author: ecmadao
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: cloud-pc
 doc_type: apiPageType
-ms.openlocfilehash: 9dc44e92d4e332a2e682c25f525d72faa7a62847
-ms.sourcegitcommit: ada6eab637b9b318129aefb98edbe7316399d9ba
+ms.openlocfilehash: 31fbfe0e1aba23cded00fd0fddfe73a9ebfa669b
+ms.sourcegitcommit: 08e9b0bac39c1b1d2c8a79539d24aaa93364baf2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/07/2021
-ms.locfileid: "53316871"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59766730"
 ---
 # <a name="get-cloudpcauditevent"></a>Obter cloudPcAuditEvent
 
@@ -19,8 +19,6 @@ Namespace: microsoft.graph
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Leia as propriedades e as relações de um [objeto cloudPcAuditEvent.](../resources/cloudpcauditevent.md)
-
-[!INCLUDE [cloudpc-api-preview](../../includes/cloudpc-api-preview.md)]
 
 ## <a name="permissions"></a>Permissões
 

@@ -5,12 +5,12 @@ author: jpettere
 ms.localizationpriority: high
 ms.prod: users
 doc_type: resourcePageType
-ms.openlocfilehash: 929f647a68e453529daaabf2b3f0b0dfdd3a76c7
-ms.sourcegitcommit: c333953a9188b4cd4a9ab94cbe68871e8f3563e5
+ms.openlocfilehash: 8eb6d03523bab9824fe4164bdf509fcc4528a200
+ms.sourcegitcommit: 08e9b0bac39c1b1d2c8a79539d24aaa93364baf2
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/30/2021
-ms.locfileid: "58696964"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59766324"
 ---
 # <a name="user-resource-type"></a>Tipo de recurso de usuário
 
@@ -233,13 +233,13 @@ Esse recurso permite:
 | showInAddressList | Booliano | `true` se a lista de endereços global do Outlook deve conter o usuário, caso contrário `false`. Se não estiver configurado, isso será tratado como `true`. Para os usuários convidados por meio do Gerenciador de convites, essa propriedade será definida como `false`. <br><br>Suporta `$filter` (`eq`, `ne`, `NOT`, `in`). |
 | signInSessionsValidFromDateTime | DateTimeOffset | Os tokens de atualização ou de sessão (cookies de sessão) emitidos antes dessa hora são inválidos e os aplicativos recebem um erro ao usar um token de atualização ou de sessão inválido para adquirir um token de acesso delegado (para acessar APIs como o Microsoft Graph).  Se isso acontecer, o aplicativo precisará adquirir um novo token de atualização, fazendo uma solicitação ao ponto de extremidade de autorização. Somente leitura. Use [revokeSignInSessions](../api/user-revokesigninsessions.md) para redefinir.|
 | skills | Coleção de cadeias de caracteres | Uma lista para o usuário enumerar suas qualificações. <br><br>Retornado apenas em `$select`. |
-| signInActivity | [signInActivity](signinactivity.md) | Obter a última data de login e solicitar a ID de login para um determinado usuário. Somente leitura.<br><br>Retornado apenas em `$select`. Suporta `$filter` (`eq`, `ne`, `NOT`, `ge`, `le`) *mas*, não com quaisquer outras propriedades filtráveis. **Observação:** os detalhes dessa propriedade exigem uma licença do Azure Active Directory Premium P1/P2 e a permissão **AuditLog.Read.All**.|
-| state | String | O estado ou município no endereço do usuário. O comprimento máximo é de 128 caracteres. <br><br>Suporta `$filter` (`eq`, `ne`, `NOT`, `ge`, `le`, `in`, `startsWith`). |
+| signInActivity | [signInActivity](signinactivity.md) | Obter a última data de login e solicitar a ID de login para um determinado usuário. Somente leitura.<br><br>Retornado apenas em `$select`. Suporta `$filter` (`eq`, `ne`, `NOT`, `ge`, `le`) *mas*, não com quaisquer outras propriedades filtráveis. **Observação:** os detalhes dessa propriedade exigem uma licença do Azure Active Directory Premium P1/P2 e a permissão **AuditLog.Read.All**.<br><br>**Observação**: há um [problema conhecido](/graph/known-issues#azure-ad-activity-reports) ao recuperar esta propriedade.|
+| estado | String | O estado ou município no endereço do usuário. O comprimento máximo é de 128 caracteres. <br><br>Suporta `$filter` (`eq`, `ne`, `NOT`, `ge`, `le`, `in`, `startsWith`). |
 | streetAddress | String | O endereço do local de trabalho do usuário. O comprimento máximo é de 1024 caracteres. <br><br>Suporta `$filter` (`eq`, `ne`, `NOT`, `ge`, `le`, `in`, `startsWith`).|
 | surname | String | O sobrenome do usuário (nome de família ou sobrenome). O comprimento máximo é de 64 caracteres. <br><br>Suporta `$filter` (`eq`, `ne`, `NOT`, `ge`, `le`, `in`, `startsWith`). |
 | usageLocation | String | Um código de duas letras (padrão ISO 3166). Obrigatório para os usuários que receberão licenças devido à exigência legal de verificar a disponibilidade de serviços nos países.  Os exemplos incluem:`US`,`JP` e `GB`. Não anulável. <br><br>Suporta `$filter` (`eq`, `ne`, `NOT`, `ge`, `le`, `in`, `startsWith`).|
 | userPrincipalName | String | O nome UPN do usuário. O nome UPN é um nome de logon para o usuário ao estilo da Internet com base na RFC 822 padrão da Internet. Por convenção, ele deve ser mapeado para o nome de email do usuário. O formato geral é alias@domain, onde o domínio deve estar presente na coleta de domínios verificados pelo locatário. Essa propriedade é obrigatória quando um usuário é criado. Os domínios verificados para o locatário podem ser acessados pela propriedade **verifiedDomains** de [organization](organization.md).<br>NOTA: Esta propriedade não pode conter caracteres de destaque. <br><br>Suporta `$filter` (`eq`, `ne`, `NOT`, `ge`, `le`, `in`, `startsWith`, `endsWith`) e `$orderBy`.
-| userType | String | Um valor de string que pode ser usado para classificar tipos de usuário em seu diretório, como `Member` e `Guest`. <br><br>Suporta `$filter` (`eq`, `ne`, `NOT`, `in`,). |
+| userType | String | Um valor de String que pode ser usado para classificar tipos de usuário em seu diretório, como `Member` e `Guest`. <br><br>Suporta `$filter` (`eq`, `ne`, `NOT`, `in`,). |
 
 ### <a name="legal-age-group-property-definitions"></a>Definições de propriedade da faixa etária legal
 
@@ -250,7 +250,7 @@ Esta seção explica como as três propriedades de grupo idade (**legalAgeGroupC
 Por exemplo: Cameron é o administrador de um diretório em uma escola de ensino fundamental em Holyport, no Reino Unido. No início do ano letivo ele usa a documentação de admissão para obter o consentimento dos pais dos menores baseado nos regulamentos relacionadas com a idade no Reino Unido. O consentimento obtido do pai permite que a conta do menor seja usado pela escola de Holyport e os aplicativos da Microsoft. Cameron cria todas as contas e define o ageGroup para "menor" e consentProvidedForMinor para "concedido". Os aplicativos usados por seus alunos poderão, então suprimir recursos que não são adequados para menores.
 <!-- Note that the following 3 sub-sections are only documented like enums for a consistent user experience.
 For some reason they are not defined as enums in the CSDL.
-Hence the type of the corresponding 3 properties remain as string type in the Properties table.
+Hence the type of the corresponding 3 properties remain as String type in the Properties table.
 -->
 
 #### <a name="legalagegroupclassification-values"></a>legalAgeGroupClassification values
@@ -373,76 +373,76 @@ Veja a seguir uma representação JSON do recurso
 
 ```json
 {
-  "aboutMe": "string",
+  "aboutMe": "String",
   "accountEnabled": true,
-  "ageGroup": "string",
+  "ageGroup": "String",
   "assignedLicenses": [{"@odata.type": "microsoft.graph.assignedLicense"}],
   "assignedPlans": [{"@odata.type": "microsoft.graph.assignedPlan"}],
   "birthday": "String (timestamp)",
-  "businessPhones": ["string"],
-  "city": "string",
-  "companyName": "string",
-  "consentProvidedForMinor": "string",
-  "country": "string",
+  "businessPhones": ["String"],
+  "city": "String",
+  "companyName": "String",
+  "consentProvidedForMinor": "String",
+  "country": "String",
   "createdDateTime": "2019-02-07T21:53:13.067Z",
-  "creationType": "string",
+  "creationType": "String",
   "deletedDateTime": "String (timestamp)",
-  "department": "string",
-  "displayName": "string",
+  "department": "String",
+  "displayName": "String",
   "employeeHireDate": "2020-01-01T00:00:00Z",
-  "employeeId": "string",
+  "employeeId": "String",
   "employeeOrgData": {"@odata.type": "microsoft.graph.employeeOrgData"},
-  "employeeType": "string",
+  "employeeType": "String",
   "externalUserState": "PendingAcceptance",
   "externalUserStateChangeDateTime": "2018-11-12T01:13:13Z",
-  "faxNumber": "string",
-  "givenName": "string",
+  "faxNumber": "String",
+  "givenName": "String",
   "hireDate": "String (timestamp)",
-  "id": "string (identifier)",
+  "id": "String (identifier)",
   "identities": [{"@odata.type": "microsoft.graph.objectIdentity"}],
-  "interests": ["string"],
+  "interests": ["String"],
   "isResourceAccount": false,
-  "jobTitle": "string",
-  "legalAgeGroupClassification": "string",
+  "jobTitle": "String",
+  "legalAgeGroupClassification": "String",
   "licenseAssignmentStates": [{"@odata.type": "microsoft.graph.licenseAssignmentState"}],
-  "mail": "string",
+  "mail": "String",
   "mailboxSettings": {"@odata.type": "microsoft.graph.mailboxSettings"},
-  "mailNickname": "string",
-  "mobilePhone": "string",
-  "mySite": "string",
-  "officeLocation": "string",
-  "onPremisesDistinguishedName": "string",
-  "onPremisesDomainName": "string",
+  "mailNickname": "String",
+  "mobilePhone": "String",
+  "mySite": "String",
+  "officeLocation": "String",
+  "onPremisesDistinguishedName": "String",
+  "onPremisesDomainName": "String",
   "onPremisesExtensionAttributes": {"@odata.type": "microsoft.graph.onPremisesExtensionAttributes"},
-  "onPremisesImmutableId": "string",
+  "onPremisesImmutableId": "String",
   "onPremisesLastSyncDateTime": "String (timestamp)",
   "onPremisesProvisioningErrors": [{"@odata.type": "microsoft.graph.onPremisesProvisioningError"}],
-  "onPremisesSamAccountName": "string",
-  "onPremisesSecurityIdentifier": "string",
+  "onPremisesSamAccountName": "String",
+  "onPremisesSecurityIdentifier": "String",
   "onPremisesSyncEnabled": true,
-  "onPremisesUserPrincipalName": "string",
-  "otherMails": ["string"],
-  "passwordPolicies": "string",
+  "onPremisesUserPrincipalName": "String",
+  "otherMails": ["String"],
+  "passwordPolicies": "String",
   "passwordProfile": {"@odata.type": "microsoft.graph.passwordProfile"},
-  "pastProjects": ["string"],
-  "postalCode": "string",
-  "preferredDataLocation": "string",
-  "preferredLanguage": "string",
-  "preferredName": "string",
+  "pastProjects": ["String"],
+  "postalCode": "String",
+  "preferredDataLocation": "String",
+  "preferredLanguage": "String",
+  "preferredName": "String",
   "provisionedPlans": [{"@odata.type": "microsoft.graph.provisionedPlan"}],
-  "proxyAddresses": ["string"],
+  "proxyAddresses": ["String"],
   "refreshTokensValidFromDateTime": "2019-02-07T21:53:13.084Z",
-  "responsibilities": ["string"],
-  "schools": ["string"],
+  "responsibilities": ["String"],
+  "schools": ["String"],
   "showInAddressList": true,
   "signInSessionsValidFromDateTime": "2019-02-07T21:53:13.084Z",
-  "skills": ["string"],
-  "state": "string",
-  "streetAddress": "string",
-  "surname": "string",
-  "usageLocation": "string",
-  "userPrincipalName": "string",
-  "userType": "string",
+  "skills": ["String"],
+  "state": "String",
+  "streetAddress": "String",
+  "surname": "String",
+  "usageLocation": "String",
+  "userPrincipalName": "String",
+  "userType": "String",
   "calendar": {"@odata.type": "microsoft.graph.calendar"},
   "calendarGroups": [{"@odata.type": "microsoft.graph.calendarGroup"}],
   "calendarView": [{"@odata.type": "microsoft.graph.event"}],

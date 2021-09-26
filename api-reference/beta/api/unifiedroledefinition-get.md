@@ -1,16 +1,16 @@
 ---
 title: Obter unifiedRoleDefinition
 description: Recupere as propriedades e as relações de um objeto unifiedRoleDefinition.
-localization_priority: Normal
+ms.localizationpriority: medium
 author: abhijeetsinha
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: 33888a767e33300032ecd4f08788e04541b1f65d
-ms.sourcegitcommit: a598c09b73e4e43eea5f4aaefea7ffe062e15c39
+ms.openlocfilehash: 078e31513d31803728681d1460a631c5d144a017
+ms.sourcegitcommit: 08e9b0bac39c1b1d2c8a79539d24aaa93364baf2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/22/2021
-ms.locfileid: "53534541"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59765582"
 ---
 # <a name="get-unifiedroledefinition"></a>Obter unifiedRoleDefinition
 
@@ -26,8 +26,6 @@ No momento, há suporte para os seguintes provedores RBAC:
 - directory (funções de diretório do Azure AD)
 - gerenciamento de direitos (gerenciamento de direitos do Azure AD)
 
-[!INCLUDE [cloudpc-api-preview](../../includes/cloudpc-api-preview.md)]
-
 ## <a name="permissions"></a>Permissões
 
 Dependendo do provedor RBAC e do tipo de permissão (delegado ou aplicativo) necessário, escolha na tabela a seguinte permissão com menos privilégios necessária para chamar essa API. Para saber mais, incluindo [ter cuidado antes](/graph/auth/auth-concepts#best-practices-for-requesting-permissions) de escolher permissões mais privilegiadas, consulte [Permissions](/graph/permissions-reference). 
@@ -38,7 +36,7 @@ Dependendo do provedor RBAC e do tipo de permissão (delegado ou aplicativo) nec
 |:--------------------|:---------------------------------------------------------|
 |Delegado (conta corporativa ou de estudante) |  CloudPC.Read.All, CloudPC.ReadWrite.All   |
 |Delegado (conta pessoal da Microsoft) | Sem suporte.    |
-|Application | CloudPC.Read.All, CloudPC.ReadWrite.All  |
+|Aplicativo | CloudPC.Read.All, CloudPC.ReadWrite.All  |
 
 ### <a name="for-device-management-intune-provider"></a>Para o provedor de gerenciamento de dispositivos (Intune)
 
@@ -46,7 +44,7 @@ Dependendo do provedor RBAC e do tipo de permissão (delegado ou aplicativo) nec
 |:--------------------|:---------------------------------------------------------|
 |Delegado (conta corporativa ou de estudante) |  DeviceManagementRBAC.Read.All, DeviceManagementRBAC.ReadWrite.All   |
 |Delegado (conta pessoal da Microsoft) | Sem suporte.    |
-|Application | DeviceManagementRBAC.Read.All, DeviceManagementRBAC.ReadWrite.All |
+|Aplicativo | DeviceManagementRBAC.Read.All, DeviceManagementRBAC.ReadWrite.All |
 
 ### <a name="for-directory-azure-ad-provider"></a>Provedor do Azure AD (Diretório)
 
@@ -54,7 +52,7 @@ Dependendo do provedor RBAC e do tipo de permissão (delegado ou aplicativo) nec
 |:--------------------|:---------------------------------------------------------|
 |Delegado (conta corporativa ou de estudante) |  RoleManagement.Read.Directory, Directory.Read.All, RoleManagement.ReadWrite.Directory, Directory.ReadWrite.All, Directory.AccessAsUser.All   |
 |Delegado (conta pessoal da Microsoft) | Sem suporte.    |
-|Application | RoleManagement.Read.Directory, Directory.Read.All, RoleManagement.ReadWrite.Directory, Directory.ReadWrite.All |
+|Aplicativo | RoleManagement.Read.Directory, Directory.Read.All, RoleManagement.ReadWrite.Directory, Directory.ReadWrite.All |
 
 ### <a name="for-entitlement-management-provider"></a>Para provedor de gerenciamento de direitos
 

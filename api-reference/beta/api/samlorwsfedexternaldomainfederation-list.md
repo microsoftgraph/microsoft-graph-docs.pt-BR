@@ -10,7 +10,7 @@ ms.sourcegitcommit: 08e9b0bac39c1b1d2c8a79539d24aaa93364baf2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
 ms.lasthandoff: 09/24/2021
-ms.locfileid: "59508584"
+ms.locfileid: "59766682"
 ---
 # <a name="list-samlorwsfedexternaldomainfederations"></a>Listar samlOrWsFedExternalDomainFederations
 Namespace: microsoft.graph
@@ -27,7 +27,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |:--------------------|:---------------------------------------------------------|
 |Delegado (conta corporativa ou de estudante)|Domain.Read.All, Domain.ReadWrite.All|
 |Delegado (conta pessoal da Microsoft)| Sem suporte.|
-|Application|Domain.Read.All, Domain.ReadWrite.All|
+|Aplicativo|Domain.Read.All, Domain.ReadWrite.All|
 
 A conta de trabalho ou de estudante precisa pertencer a uma das seguintes funções:
 

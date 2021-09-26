@@ -1,16 +1,16 @@
 ---
 title: Excluir assinatura
 description: Exclua uma assinatura.
-localization_priority: Normal
+ms.localizationpriority: medium
 author: Jumaodhiss
 doc_type: apiPageType
 ms.prod: change-notifications
-ms.openlocfilehash: 8f57db6f84ff0b4afa90a586532f80241d8537e8
-ms.sourcegitcommit: 3873c85f53e026073addca92d31d234af244444c
+ms.openlocfilehash: bb0b68dc4075ec617fd5200b7e3e3b108e181a34
+ms.sourcegitcommit: 08e9b0bac39c1b1d2c8a79539d24aaa93364baf2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/10/2021
-ms.locfileid: "53366979"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59764448"
 ---
 # <a name="delete-subscription"></a>Excluir assinatura
 
@@ -29,18 +29,20 @@ Dependendo do recurso e do tipo de permissão (delegado ou aplicativo) solicitad
 | Recurso com suporte | Delegada (conta corporativa ou de estudante) | Delegada (conta pessoal da Microsoft) | Aplicativo |
 |:-----|:-----|:-----|:-----|
 |[callRecord](../resources/callrecords-callrecord.md) | Incompatível | Incompatível | CallRecords.Read.All  |
-|[canais](../resources/channel.md) (/teams/getAllChannels – todos os canais em uma organização) | Sem suporte  | Sem suporte | Channel.ReadBasic.All, ChannelSettings.Read.All |
-|[canais](../resources/channel.md) (/teams/{id}/channels) | Channel.ReadBasic.All, ChannelSettings.Read.All  | Sem suporte | Channel.ReadBasic.All, ChannelSettings.Read.All  |
-|[chat](../resources/chat.md) (/chats – todos os chats em uma organização) | Sem suporte | Sem suporte | Chat.ReadBasic.All, Chat.Read.All, Chat.ReadWrite.All |
+|[canais](../resources/channel.md) (/teams/getAllChannels – todos os canais em uma organização) | Sem suporte  | Incompatível | Channel.ReadBasic.All, ChannelSettings.Read.All |
+|[canais](../resources/channel.md) (/teams/{id}/channels) | Channel.ReadBasic.All, ChannelSettings.Read.All  | Incompatível | Channel.ReadBasic.All, ChannelSettings.Read.All  |
+|[chat](../resources/chat.md) (/chats – todos os chats em uma organização) | Incompatível | Sem suporte | Chat.ReadBasic.All, Chat.Read.All, Chat.ReadWrite.All |
 |[chat](../resources/chat.md) (/chats/{id}) | Chat.ReadBasic, Chat.Read, Chat.ReadWrite | Sem suporte | ChatSettings.Read.Chat *, ChatSettings.ReadWrite.Chat*, Chat.Manage.Chat*, Chat.ReadBasic.All, Chat.Read.All, Chat.ReadWrite.All |
 |[chatMessage](../resources/chatmessage.md) (/teams/{id}/channels/{id}/messages) | ChannelMessage.Read.All, Group.Read.All, Group.ReadWrite.All | Sem suporte | ChannelMessage.Read.Group*, ChannelMessage.Read.All  |
 |[chatMessage](../resources/chatmessage.md) (/teams/getAllMessages -- todas as mensagens de canal na organização) | Sem suporte | Sem suporte | ChannelMessage.Read.All  |
 |[chatMessage](../resources/chatmessage.md) (/chats/{id}/messages) | Chat.Read, Chat.ReadWrite | Sem suporte | Chat.Read.All  |
 |[chatMessage](../resources/chatmessage.md) (/teams/getAllMessages -- todas as mensagens de chat na organização) | Sem suporte | Sem suporte | Chat.Read.All  |
+|[chatMessage](../resources/chatmessage.md) (/users/{id}/chats/getAllMessages -- mensagens de chat para todos os chats de que um determinado usuário faz parte) | Chat.Read, Chat.ReadWrite | Sem suporte | Chat.Read.All, Chat.ReadWrite.All |
 |[contato](../resources/contact.md) | Contacts.Read | Contacts.Read | Contacts.Read |
-|[conversationMember](../resources/conversationmember.md) (/chats/getAllMembers) | Sem suporte | Sem suporte | ChatMember.Read.All, ChatMember.ReadWrite.All, Chat.ReadBasic.All, Chat.Read.All, Chat.ReadWrite.All |
+|[conversationMember](../resources/conversationmember.md) (/teams/{id}/channels/getAllMembers) | Sem suporte | Incompatível | ChannelMember.Read.All |
+|[conversationMember](../resources/conversationmember.md) (/chats/getAllMembers) | Sem suporte | Incompatível | ChatMember.Read.All, ChatMember.ReadWrite.All, Chat.ReadBasic.All, Chat.Read.All, Chat.ReadWrite.All |
 |[conversationMember](../resources/conversationmember.md) (/chats/{id}/members) | ChatMember.Read, ChatMember.ReadWrite, Chat.ReadBasic, Chat.Read, Chat.ReadWrite | Sem suporte | ChatMember.Read.Chat *, Chat.Manage.Chat*, ChatMember.Read.All, ChatMember.ReadWrite.All, Chat.ReadBasic.All, Chat.Read.All, Chat.ReadWrite.All |
-|[conversationMember](../resources/conversationmember.md) (/teams/{id}/members) | TeamMember.Read.All | Sem suporte | TeamMember.Read.All |
+|[conversationMember](../resources/conversationmember.md) (/teams/{id}/members) | TeamMember.Read.All | Incompatível | TeamMember.Read.All |
 |[driveItem](../resources/driveitem.md) (OneDrive pessoal de um usuário) | Sem suporte | Files.ReadWrite | Sem suporte |
 |[driveItem](../resources/driveitem.md) (OneDrive for Business) | Files.ReadWrite.All | Sem suporte | Files.ReadWrite.All |
 |[evento](../resources/event.md) | Calendars.Read | Calendars.Read | Calendars.Read |
@@ -48,12 +50,12 @@ Dependendo do recurso e do tipo de permissão (delegado ou aplicativo) solicitad
 |[conversa em grupo](../resources/conversation.md) | Group.Read.All | Sem suporte | Sem suporte |
 |[list](../resources/list.md) | Sites.ReadWrite.All | Sem suporte | Sites.ReadWrite.All |
 |[message](../resources/message.md) | Mail.ReadBasic, Mail.Read | Mail.ReadBasic, Mail.Read | Mail.ReadBasic, Mail.Read |
-|[presence](../resources/presence.md) | Presence.Read.All | Sem suporte | Sem suporte |
+|[presença](../resources/presence.md) | Presence.Read.All | Incompatível | Incompatível |
 |[printer](../resources/printer.md) | Sem suporte | Sem suporte | Printer.Read.All, Printer.ReadWrite.All |
 |[printTaskDefinition](../resources/printtaskdefinition.md) | Sem suporte | Sem suporte | PrintTaskDefinition.ReadWrite.All |
 |[alerta de segurança](../resources/alert.md) | SecurityEvents.ReadWrite.All | Sem suporte | SecurityEvents.ReadWrite.All |
-|[teams](../resources/team.md) (/teams – todas as equipes em uma organização) | Sem suporte | Sem suporte | Team.ReadBasic.All, TeamSettings.Read.All |
-|[teams](../resources/team.md) (/teams/{id}) | Team.ReadBasic.All, TeamSettings.Read.All | Sem suporte | Team.ReadBasic.All, TeamSettings.Read.All |
+|[teams](../resources/team.md) (/teams – todas as equipes em uma organização) | Sem suporte | Incompatível | Team.ReadBasic.All, TeamSettings.Read.All |
+|[teams](../resources/team.md) (/teams/{id}) | Team.ReadBasic.All, TeamSettings.Read.All | Incompatível | Team.ReadBasic.All, TeamSettings.Read.All |
 |[todoTask](../resources/todotask.md) | Tasks.ReadWrite | Tasks.ReadWrite | Sem suporte |
 |[Usuário](../resources/user.md) | User.Read.All | User.Read.All | User.Read.All |
 
@@ -163,5 +165,4 @@ HTTP/1.1 204 No Content
   ]
 }
 -->
-
 

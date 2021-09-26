@@ -4,15 +4,15 @@ description: Obtém um objeto de conta no Dynamics 365 Business Central.
 services: project-madeira
 documentationcenter: ''
 author: SusanneWindfeldPedersen
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: dynamics-365-business-central
 doc_type: apiPageType
-ms.openlocfilehash: 0f3db2e969369198f716dbcde4c7147717fd47b1
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: 99774e726c11cbeac68bc196944e0254e968d604
+ms.sourcegitcommit: 08e9b0bac39c1b1d2c8a79539d24aaa93364baf2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52046220"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59766156"
 ---
 # <a name="get-accounts"></a>Obter contas
 
@@ -28,8 +28,8 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |Tipo de permissão |Permissões (da com menos para a com mais privilégios)|
 |:---------------|:------------------------------------------|
 |Delegado (conta corporativa ou de estudante)|Financials.ReadWrite.All |
-|Delegada (conta pessoal da Microsoft|Sem suporte.|
-|Application|Financials.ReadWrite.All|
+|Delegado (conta pessoal da Microsoft)|Sem suporte.|
+|Aplicativo|Financials.ReadWrite.All|
 
 
 ## <a name="http-request"></a>Solicitação HTTP

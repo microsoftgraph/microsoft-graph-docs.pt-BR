@@ -5,12 +5,12 @@ author: lumine2008
 ms.localizationpriority: high
 ms.prod: excel
 doc_type: resourcePageType
-ms.openlocfilehash: 1e1d386af6f1b073f039e911668249224005acf5
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 35764b91133a943f378df3aaa359447727249ec3
+ms.sourcegitcommit: 08e9b0bac39c1b1d2c8a79539d24aaa93364baf2
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59134413"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59764000"
 ---
 # <a name="table-resource-type"></a>Tipo de recurso Table
 
@@ -26,8 +26,8 @@ Representa uma tabela do Excel.
 |[Get Table](../api/table-get.md) | [WorkbookTable](table.md) |Leia as propriedades e relacionamentos do objeto de tabela.|
 |[Create TableColumn](../api/table-post-columns.md) |[WorkbookTableColumn](workbooktablecolumn.md)| Crie uma nova TableColumn postando na coleção de colunas.|
 |[List columns](../api/table-list-columns.md) |Conjunto [WorkbookTableColumn](workbooktablecolumn.md)| Obtenha uma coleção de objetos TableColumn.|
-|[Create TableRow](../api/table-post-rows.md) |[WorkbookTableRow](tablerow.md)| Crie uma nova TableRow postando na coleção de linhas.|
-|[List rows](../api/table-list-rows.md) |Conjunto [WorkbookTableRow](tablerow.md)| Obtenha uma coleção de objetos TableRow.|
+|[Create TableRow](../api/table-post-rows.md) |[WorkbookTableRow]( workbooktablerow.md)| Crie uma nova TableRow postando na coleção de linhas.|
+|[List rows](../api/table-list-rows.md) |Conjunto [WorkbookTableRow]( workbooktablerow.md)| Obtenha uma coleção de objetos TableRow.|
 |[Atualizar](../api/table-update.md) | [WorkbookTable](table.md)   |Atualize o objeto Table. |
 |[Databodyrange](../api/table-databodyrange.md)|[Range](range.md)|Obtém o objeto de intervalo associado ao corpo de dados da tabela.|
 |[Headerrowrange](../api/table-headerrowrange.md)|[Range](range.md)|Obtém o objeto de intervalo associado à linha de cabeçalho da tabela.|
@@ -59,7 +59,7 @@ Representa uma tabela do Excel.
 | Relação | Tipo   |Descrição|
 |:---------------|:--------|:----------|
 |columns|Conjunto [WorkbookTableColumn](workbooktablecolumn.md)|Representa uma coleção de todas as colunas na tabela. Somente leitura.|
-|rows|Conjunto [WorkbookTableRow](tablerow.md)|Representa uma coleção de todas as linhas na tabela. Somente leitura.|
+|rows|Conjunto [WorkbookTableRow]( workbooktablerow.md)|Representa uma coleção de todas as linhas na tabela. Somente leitura.|
 |sort|[WorkbookTableSort](tablesort.md)|Representa a classificação da tabela. Somente leitura.|
 |planilha|[WorkbookWorksheet](worksheet.md)|A planilha que contém a tabela atual. Somente leitura.|
 

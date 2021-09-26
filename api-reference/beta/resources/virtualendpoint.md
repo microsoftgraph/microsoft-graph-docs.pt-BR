@@ -2,15 +2,15 @@
 title: Tipo de recurso virtualEndpoint
 description: O recurso virtualEndpoint representa um contêiner para a funcionalidade de gerenciamento de computador na nuvem.
 author: AshleyYangSZ
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: cloud-pc
 doc_type: resourcePageType
-ms.openlocfilehash: 929b6e1c404dad30d6009264ed8e6eb27985c9e8
-ms.sourcegitcommit: a598c09b73e4e43eea5f4aaefea7ffe062e15c39
+ms.openlocfilehash: cdb6b2d7eaa8d021f378f7046dec405054502d0a
+ms.sourcegitcommit: 08e9b0bac39c1b1d2c8a79539d24aaa93364baf2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/22/2021
-ms.locfileid: "53533261"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59767115"
 ---
 # <a name="virtualendpoint-resource-type"></a>Tipo de recurso virtualEndpoint
 
@@ -22,7 +22,6 @@ Representa um contêiner para APIs gerenciar o Cloud PC.
 
 Use a API do Cloud PC para provisionar e gerenciar áreas de trabalho virtuais para funcionários em uma organização. Use-o em conjunto com a [API do Intune](../resources/intune-graph-overview.md) para gerenciar pontos de extremidade físicos e virtuais.
 
-[!INCLUDE [cloudpc-api-preview](../../includes/cloudpc-api-preview.md)]
 ## <a name="methods"></a>Métodos
 
 |Método|Tipo de retorno|Descrição|
@@ -43,7 +42,7 @@ Use a API do Cloud PC para provisionar e gerenciar áreas de trabalho virtuais p
 
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|id|String|O identificador exclusivo da ID do ponto de extremidade virtual. Somente leitura.|
+|id|Cadeia de caracteres|O identificador exclusivo da ID do ponto de extremidade virtual. Somente leitura.|
 
 ## <a name="relationships"></a>Relações
 

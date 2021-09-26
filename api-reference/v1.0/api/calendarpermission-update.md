@@ -1,20 +1,22 @@
 ---
 title: Atualizar calendarpermission
 description: Atualize as propriedades do objeto calendarpermission.
+author: Harini84
 ms.localizationpriority: medium
-author: sochowdh
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 9faf61ef7f0236e5d39d9550a8f9e6199cfe9341
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: ecd2dcd942839dce2276f03db37fb81043bc0f19
+ms.sourcegitcommit: 08e9b0bac39c1b1d2c8a79539d24aaa93364baf2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59105647"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59508444"
 ---
 # <a name="update-calendarpermission"></a>Atualizar calendarPermission
 
-Atualize as permissões atribuídas a um compartilhamento ou representante existente, por meio do [objeto calendarPermission](../resources/calendarpermission.md) correspondente para um calendário.
+Namespace: microsoft.graph
+
+Atualize as permissões atribuídas a um compartilhamento ou representante existente, por meio do <b>[objeto calendarPermission](../resources/calendarpermission.md)</b> correspondente para um calendário.
 
 ## <a name="permissions"></a>Permissões
 
@@ -49,7 +51,8 @@ PATCH /users/{id}/events/{id}/calendar/calendarPermissions/{id}
 
 | Nome       | Descrição|
 |:-----------|:-----------|
-| Autorização | Portador {token} |
+| Autorização | {token} de portador. Obrigatório.  |
+| Content-Type  | application/json. Obrigatório.  |
 
 ## <a name="request-body"></a>Corpo da solicitação
 
@@ -68,7 +71,6 @@ Se tiver êxito, este método retornará um código `200 OK` de resposta e um ob
 ### <a name="request"></a>Solicitação
 
 O exemplo a seguir altera o nível de permissão do compartilhamento, Adele, para `write` .
-
 
 # <a name="http"></a>[HTTP](#tab/http)
 <!-- {
@@ -100,9 +102,7 @@ Content-type: application/json
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/update-calendarpermission-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
 ---
-
 
 ### <a name="response"></a>Resposta
 
@@ -122,7 +122,7 @@ HTTP/1.1 200 OK
 Content-type: application/json
 
 {
-    "id": "L289RXhlbGVW",
+    "id": "RGVmYXVsdA==",
     "isRemovable": true,
     "isInsideOrganization": true,
     "role": "write",
@@ -148,4 +148,3 @@ Content-type: application/json
   "section": "documentation",
   "tocPath": ""
 }-->
-

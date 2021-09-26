@@ -2,15 +2,15 @@
 title: Obter cloudPcDeviceImage
 description: Leia as propriedades e as relações de um objeto cloudPcDeviceImage.
 author: AshleyYangSZ
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: cloud-pc
 doc_type: apiPageType
-ms.openlocfilehash: 78b6bedd6afcd16cfdc79c5be5dc49454889d419
-ms.sourcegitcommit: 979fe005c74eb99cd971df6b9511b2d3f7fe3cd4
+ms.openlocfilehash: f64c0e84f135388d23ada36a47e380db21bba80c
+ms.sourcegitcommit: 08e9b0bac39c1b1d2c8a79539d24aaa93364baf2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/17/2021
-ms.locfileid: "52991808"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59765267"
 ---
 # <a name="get-cloudpcdeviceimage"></a>Obter cloudPcDeviceImage
 
@@ -20,14 +20,13 @@ Namespace: microsoft.graph
 
 Leia as propriedades e as relações de um objeto [cloudPcDeviceImage](../resources/cloudpcdeviceimage.md) específico.
 
-[!INCLUDE [cloudpc-api-preview](../../includes/cloudpc-api-preview.md)]
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>Permissões
 
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão|Permissões (da com menos para a com mais privilégios)|
 |:---|:---|
-|Delegada (conta corporativa ou de estudante)|CloudPC.Read.All, CloudPC.ReadWrite.All|
+|Delegado (conta corporativa ou de estudante)|CloudPC.Read.All, CloudPC.ReadWrite.All|
 |Delegado (conta pessoal da Microsoft)|Sem suporte.|
 |Aplicativo|CloudPC.Read.All, CloudPC.ReadWrite.All|
 

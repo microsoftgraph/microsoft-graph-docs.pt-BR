@@ -5,12 +5,12 @@ author: nkramer
 ms.localizationpriority: high
 ms.prod: microsoft-teams
 doc_type: resourcePageType
-ms.openlocfilehash: 27a81643c85d083ffcb526c0139ed3953191360c
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 3f072392c763a9da4a759ebd8978847d659fae4b
+ms.sourcegitcommit: 08e9b0bac39c1b1d2c8a79539d24aaa93364baf2
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59032458"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59765764"
 ---
 # <a name="channel-resource-type"></a>Tipo de recurso de usuário
 
@@ -44,7 +44,8 @@ Namespace: microsoft.graph
 |[Guia obter no canal](../api/channel-get-tabs.md) | [teamsTab](teamstab.md) | Ler uma guia fixada a um canal.|
 |[Guia atualizar no canal](../api/channel-patch-tabs.md) | [teamsTab](teamstab.md) | Atualiza as propriedades de uma guia em um canal.|
 |[Remover guia do canal](../api/channel-delete-tabs.md) | Nenhum | Remover (Desafixar) uma Tabulação de um canal.|
-
+|[Endereço de email do canal de provisão](../api/channel-provisionemail.md) |[provisionChannelEmailResult](../resources/provisionchannelemailresult.md)| Provisione um endereço de e-mail para o canal.|
+|[Remover o endereço de email do canal](../api/channel-removeemail.md) | Nenhum | Remova o endereço de e-mail do canal.|
 
 ## <a name="properties"></a>Propriedades
 

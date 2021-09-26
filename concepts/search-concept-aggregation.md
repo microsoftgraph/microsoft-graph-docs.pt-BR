@@ -4,14 +4,14 @@ description: Você pode usar a API Pesquisa da Microsoft para recuperar agregaç
 author: nmoreau
 ms.localizationpriority: medium
 ms.prod: search
-ms.openlocfilehash: 48462a3bbf08e4836227cf73c21e4949766da62e
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 83f7b347739719a4100afb0cbecfb3009c454fbc
+ms.sourcegitcommit: 08e9b0bac39c1b1d2c8a79539d24aaa93364baf2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59129716"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59763978"
 ---
-# <a name="refine-search-results-using-aggregations-preview"></a>Refinar resultados de pesquisa usando agregação (visualização)
+# <a name="refine-search-results-using-aggregations"></a>Refinar resultados de pesquisa usando agregação
 
 Refine os resultados da pesquisa e mostre sua distribuição no índice.
 

@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: dkershaw10
 ms.prod: extensions
 doc_type: apiPageType
-ms.openlocfilehash: f363d49d5d102470bcdef74f5832935e2c986f4f
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: fe745af4edf572d196bfd2a00c364e3cccadf2b3
+ms.sourcegitcommit: 08e9b0bac39c1b1d2c8a79539d24aaa93364baf2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59019598"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59766597"
 ---
 # <a name="delete-schemaextension"></a>Excluir schemaExtension
 
@@ -53,8 +53,8 @@ Não forneça um corpo de solicitação para esse método.
 Se bem-sucedido, este método retorna um código de resposta `204 No Content`. Não retorna nada no corpo da resposta.
 
 ## <a name="example"></a>Exemplo
-##### <a name="request"></a>Solicitação
-Este é um exemplo da solicitação.
+### <a name="request"></a>Solicitação
+Este é um exemplo de solicitação.
 
 # <a name="http"></a>[HTTP](#tab/http)
 <!-- {
@@ -82,8 +82,8 @@ DELETE https://graph.microsoft.com/v1.0/schemaExtensions/{id}
 
 ---
 
-##### <a name="response"></a>Resposta
-Veja a seguir um exemplo da resposta. 
+### <a name="response"></a>Resposta
+Este é um exemplo de resposta. 
 <!-- {
   "blockType": "response",
   "truncated": true

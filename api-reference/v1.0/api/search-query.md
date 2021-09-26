@@ -1,16 +1,16 @@
 ---
 title: 'searchEntity: consulta'
-description: Executa a consulta especificada no corpo da solicitação. Os resultados da pesquisa são fornecidos na resposta.
+description: Executa a consulta especificada no corpo da solicitação. Os resultados da pesquisa são fornecidos na resposta
 ms.localizationpriority: medium
 author: nmoreau
 ms.prod: search
 doc_type: apiPageType
-ms.openlocfilehash: 3eead1fc16f99aebf81b0053d90cef06d05bde6d
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: a8271e5ff88616a2e6b91561c0bd278462eafc83
+ms.sourcegitcommit: 08e9b0bac39c1b1d2c8a79539d24aaa93364baf2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59015760"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59507967"
 ---
 # <a name="searchentity-query"></a>searchEntity: consulta
 
@@ -25,8 +25,8 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 | Tipo de permissão                        | Permissões (da com menos para a com mais privilégios) |
 |:---------------------------------------|:--------------------------------------------|
-| Delegada (conta corporativa ou de estudante)     | Mail.Read, Calendars.Read, Files.Read.All, Sites.Read.All, ExternalItem.Read.All |
-| Delegada (conta pessoal da Microsoft) | Sem suporte. |
+| Delegado (conta corporativa ou de estudante)     | Mail.Read, Calendars.Read, Files.Read.All, Sites.Read.All, ExternalItem.Read.All |
+| Delegado (conta pessoal da Microsoft) | Sem suporte. |
 | Aplicativo                            | Sem suporte. |
 
 ## <a name="http-request"></a>Solicitação HTTP
@@ -167,6 +167,8 @@ Content-type: application/json
 - Eventos [de calendário de pesquisa](/graph/search-concept-events)
 - Pesquisar conteúdo em SharePoint e OneDrive ([arquivos, listas e sites](/graph/search-concept-files))
 - Pesquisar [tipos personalizados (Graph conectores)](/graph/search-concept-custom-types) dados
+- [Classificar resultados](/graph/search-concept-sort) da pesquisa
+- Usar [agregação para](/graph/search-concept-aggregations) refinar resultados de pesquisa
 
 
 <!-- uuid: 16cd6b66-4b1a-43a1-adaf-3a886856ed98

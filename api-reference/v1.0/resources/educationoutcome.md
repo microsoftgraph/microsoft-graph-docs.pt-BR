@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: sharad-sharma-msft
 ms.prod: education
 doc_type: resourcePageType
-ms.openlocfilehash: bc600835885037177df3a4e1039a2c6b1ad052ab
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: e2192002b69a796b0dcff0a76a5004f66e2fa2c8
+ms.sourcegitcommit: 08e9b0bac39c1b1d2c8a79539d24aaa93364baf2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59036624"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59766961"
 ---
 # <a name="educationoutcome-resource-type"></a>Tipo de recurso educationOutcome
 
@@ -25,6 +25,13 @@ Esta é uma classe base; os tipos derivados [são educationFeedbackOutcome](educ
 | Método       | Tipo de retorno | Descrição |
 |:-------------|:------------|:------------|
 | [Atualizar educationOutcome](../api/educationoutcome-update.md) | [educationOutcome](educationoutcome.md) | Atualizar o objeto educationOutcome. |
+
+## <a name="properties"></a>Propriedades
+| Propriedade     | Tipo   |Descrição|
+|:---------------|:--------|:----------|
+|id|String|Somente leitura.|
+|lastModifiedBy|[identitySet](identityset.md)|O indivíduo que atualizou o recurso.|
+|lastModifiedDateTime|DateTimeOffset|Momento no tempo em que o recurso foi modificado pela última vez.  O tipo Timestamp representa informações de data e hora usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite UTC em 1º de janeiro de 2021 é `2021-01-01T00:00:00Z` .|
 
 ## <a name="relationships"></a>Relações
 

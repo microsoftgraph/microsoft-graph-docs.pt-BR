@@ -1,18 +1,18 @@
 ---
-title: tipo de recurso searchBucket
-description: Fornece uma agregação específica na resposta, o valor de um Bucket específico.
-localization_priority: Normal
+title: Tipo de recurso searchBucket
+description: Representa um contêiner para um ou mais resultados de pesquisa que compartilham o mesmo valor para o campo de entidade que os agrega
+ms.localizationpriority: medium
 author: nmoreau
 ms.prod: search
 doc_type: resourcePageType
-ms.openlocfilehash: a6b26c01133f519b0308ffee430d85c9df6d868b
-ms.sourcegitcommit: c20276369a8834a259f24038e7ee5c33de02660b
+ms.openlocfilehash: e9323bac249216cc1355e3944f4437d738da89b1
+ms.sourcegitcommit: 08e9b0bac39c1b1d2c8a79539d24aaa93364baf2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/07/2020
-ms.locfileid: "48373850"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59764588"
 ---
-# <a name="searchbucket-resource-type"></a>tipo de recurso searchBucket
+# <a name="searchbucket-resource-type"></a>Tipo de recurso searchBucket
 
 Namespace: microsoft.graph
 
@@ -24,9 +24,9 @@ Representa um contêiner para um ou mais resultados de pesquisa que compartilham
 
 | Propriedade     | Tipo        | Descrição |
 |:-------------|:------------|:------------|
-|key|String| O valor discreto do campo no qual uma agregação foi calculada.|
-|Count|Int32| O número aproximado de correspondências de pesquisa que compartilham o mesmo valor especificado na propriedade **Key** . Observe que esse número não é o número exato de correspondências.|
-|aggregationFilterToken|String| Um token contendo o filtro codificado para agregar correspondências de pesquisa pelo valor da **chave** específica. Para usar o filtro, passe o token como parte da propriedade **aggregationFilter** em um objeto **searchRequest** , no formato **"{Field}: \\ " {aggregationFilterToken} \\ ""**. Veja um [exemplo](/graph/search-concept-aggregation#example-2-apply-an-aggregation-filter-based-on-a-previous-request).|
+|aggregationFilterToken|Cadeia de caracteres| Um token que contém o filtro codificado para agregar as combinações de pesquisa pelo valor **de chave** específico. Para usar o filtro, passe o token como parte da propriedade **aggregationFilter** em um **objeto searchRequest,** no formato **"{field}: \\ "{aggregationFilterToken} \\ ""**. Veja um [exemplo](/graph/search-concept-aggregation#example-2-apply-an-aggregation-filter-based-on-a-previous-request).|
+|Count|Int32| O número aproximado de combinações de pesquisa que compartilham o mesmo valor especificado na **propriedade key.** Observe que esse número não é o número exato de combinações.|
+|chave|String| O valor discreto do campo em que uma agregação foi calculada.|
 
 ## <a name="json-representation"></a>Representação JSON
 

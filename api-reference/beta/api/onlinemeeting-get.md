@@ -2,15 +2,15 @@
 title: Obter onlineMeeting
 description: Recupere as propriedades e as relações de um objeto onlineMeeting.
 author: mkhribech
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: 97a87a592651fd963f979ebb14078b02a6cfe88d
-ms.sourcegitcommit: 01755ac7c0ab7becf28052e05e58567caa8364cd
+ms.openlocfilehash: 5290eb9b5868de908cef6d26404691bfe2d53ebe
+ms.sourcegitcommit: 08e9b0bac39c1b1d2c8a79539d24aaa93364baf2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/21/2021
-ms.locfileid: "58452880"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59767409"
 ---
 # <a name="get-onlinemeeting"></a>Obter onlineMeeting
 
@@ -21,63 +21,71 @@ Namespace: microsoft.graph
 Recupere as propriedades e as relações de um [objeto onlineMeeting.](../resources/onlinemeeting.md)
 
 Por exemplo, você pode:
-- Obter detalhes de um onlineMeeting usando [VideoTeleconferenceId](#example-1-retrieve-an-online-meeting-by-videoteleconferenceid), [ID](#example-2-retrieve-an-online-meeting-by-meeting-id)da reunião ou [JoinWebURL](#example-3-retrieve-an-online-meeting-by-joinweburl).
-- Use o caminho para obter um relatório do participante `/attendeeReport` de um evento ao vivo, conforme mostrado no exemplo [4](#example-4-retrieve-the-attendee-report-of-a-live-event).
-- Use os caminhos e para obter as gravações de um `/recording` `/alternativeRecording` evento ao vivo, conforme mostrado no exemplo [5](#example-5-retrieve-the-recording-of-a-live-event).
-- Use o `/meetingAttendanceReport` caminho para obter o relatório de participação de uma reunião agendada, conforme mostrado no [exemplo 6](#example-6-retrieve-the-attendance-report-of-a-meeting).
 
-> [!NOTE]
->- Os relatórios de participação da reunião estão disponíveis para reuniões que não sejam eventos ao vivo e só estão disponíveis quando a reunião for concluída.
->- Somente o organizador da reunião pode acessar relatórios de participação na reunião.
->- Gravações e relatórios de participantes só estão disponíveis para eventos ao vivo e estão disponíveis somente quando o evento ao vivo for concluído.
->- Somente o organizador do evento ao vivo pode acessar relatórios e gravações do participante.
->- Os links de download para o relatório do participante do evento ao vivo e as gravações expiram em 60 segundos.
+- Obter detalhes de um onlineMeeting usando [VideoTeleconferenceId](#example-1-retrieve-an-online-meeting-by-videoteleconferenceid), [ID](#example-2-retrieve-an-online-meeting-by-meeting-id)da reunião ou [JoinWebURL](#example-3-retrieve-an-online-meeting-by-joinweburl).
+- Use o caminho para obter o relatório do participante de um evento ao vivo na forma de um link de download, conforme `/attendeeReport` mostrado no exemplo [4](#example-4-fetch-attendee-report-of-a-live-event).
+- Use os caminhos e para obter as gravações de um evento ao vivo na forma de um link de download, conforme `/recording` mostrado no exemplo `/alternativeRecording` [5](#example-5-fetch-recording-of-a-live-event).
+- Use o `/meetingAttendanceReport` caminho para obter o relatório de participação de uma reunião agendada, conforme mostrado no [exemplo 6](#example-6-fetch-attendance-report-of-an-online-meeting).
+
+O relatório de participação da reunião, o relatório do participante do evento ao vivo e as gravações de eventos ao vivo são artefatos de reunião online. Para obter detalhes, consulte [Artefatos e permissões de](/graph/cloud-communications-online-meeting-artifacts)reunião online.
 
 ## <a name="permissions"></a>Permissões
 
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
-| Tipo de permissão                        | Permissões (da com menos para a com mais privilégios)           |
-| :------------------------------------- | :---------------------------------------------------- |
-| Delegado (conta corporativa ou de estudante)     | OnlineMeetings.Read, OnlineMeetings.ReadWrite         |
-| Delegado (conta pessoal da Microsoft) | Sem suporte.                                        |
-| Aplicativo                            | OnlineMeetings.Read.All, OnlineMeetings.ReadWrite.All* |
+| Tipo de permissão                        | Permissões (da com menos para a com mais privilégios)                                            |
+|:---------------------------------------|:---------------------------------------------------------------------------------------|
+| Delegado (conta corporativa ou de estudante)     | OnlineMeetingArtifact.Read.ALl, OnlineMeetings.Read, OnlineMeetings.ReadWrite          |
+| Delegado (conta pessoal da Microsoft) | Sem suporte.                                                                         |
+| Aplicativo                            | OnlineMeetingArtifact.Read.ALl, OnlineMeetings.Read.All, OnlineMeetings.ReadWrite.All  |
 
-> [!IMPORTANT]
-> \*Os administradores [](/graph/cloud-communication-online-meeting-application-access-policy) devem criar uma política de acesso a aplicativos e concedi-la a um usuário, autorizando o aplicativo configurado na política para recuperar uma reunião online em nome desse usuário (ID do usuário especificada no caminho da solicitação).
+Para usar a permissão do aplicativo para [](/graph/cloud-communication-online-meeting-application-access-policy) essa API, os administradores de locatários devem criar uma política de acesso a aplicativos e concedi-la a um usuário para autorizar o aplicativo configurado na política para obter artefatos de reunião online em nome desse usuário (com a ID do usuário especificada no caminho da solicitação).
+
+> [!CAUTION]
+> Somente as _permissões OnlineMeetingArtifact.Read.All_ são necessárias se você buscar artefatos de reunião online. Você ainda pode buscar artefatos de reunião sem eles até 15 de janeiro de **2022**. Para obter detalhes, consulte [Artefatos e permissões de](/graph/cloud-communications-online-meeting-artifacts)reunião online.
 
 ## <a name="http-request"></a>Solicitação HTTP
 
-Para obter uma onlineMeeting usando a ID de reunião com permissão delegada e de aplicativo:
+Para obter uma **onlineMeeting** usando a ID de reunião com permissão delegada ( `/me` ) e app ( ) `/users/{userId}` :
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /me/onlineMeetings/{meetingId}
 GET /users/{userId}/onlineMeetings/{meetingId}
 ```
 
-Para obter uma onlineMeeting usando **videoTeleconferenceId** com permissão do aplicativo:
+Para obter uma **onlineMeeting** usando **videoTeleconferenceId** com permissão do aplicativo:
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /app/onlineMeetings/?$filter=VideoTeleconferenceId%20eq%20'{videoTeleconferenceId}'
 GET /communications/onlineMeetings/?$filter=VideoTeleconferenceId%20eq%20'{videoTeleconferenceId}'
 ```
 
-Para obter uma onlineMeeting usando **joinWebUrl** com permissão delegada e de aplicativo:
+Para obter uma **onlineMeeting** usando **joinWebUrl** com permissão delegada ( `/me` ) e app ( `/users/{userId}` )
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /me/onlineMeetings?$filter=JoinWebUrl%20eq%20'{joinWebUrl}'
 GET /users/{userId}/onlineMeetings?$filter=JoinWebUrl%20eq%20'{joinWebUrl}'
 ```
 
-Para obter o relatório do participante de um evento ao vivo com permissão delegada e de aplicativo:
-<!-- { "blockType": "ignored" } -->
+Para obter o relatório de participação de uma reunião online com permissão delegada ( `/me` ) e de aplicativo ( ) `/users/{userId}` :
+<!-- { "blockType": "ignored" }-->
+
+```http
+GET /me/onlineMeetings/{meetingId}/meetingAttendanceReport
+GET /users/{userId}/onlineMeetings/{meetingId}/meetingAttendanceReport
+```
+
+Para obter o relatório do participante de um evento ao vivo com permissão delegada ( `/me` ) e de aplicativo ( ) `/users/{userId}` :
+<!-- { "blockType": "ignored" }-->
+
 ```http
 GET /me/onlineMeetings/{meetingId}/attendeeReport
 GET /users/{userId}/onlineMeetings/{meetingId}/attendeeReport
 ```
 
-Para obter as gravações de um evento ao vivo com permissão delegada e de aplicativo:
-<!-- { "blockType": "ignored" } -->
+Para obter as gravações de um evento ao vivo com permissão delegada ( `/me` ) e de aplicativo ( ) `/users/{userId}` :
+<!-- { "blockType": "ignored" }-->
+
 ```http
 GET /me/onlineMeetings/{meetingId}/recording
 GET /me/onlineMeetings/{meetingId}/alternativeRecording
@@ -85,17 +93,11 @@ GET /users/{userId}/onlineMeetings/{meetingId}/recording
 GET /users/{userId}/onlineMeetings/{meetingId}/alternativeRecording
 ```
 
-Para obter o relatório de participação de uma reunião com permissão delegada:
-<!-- { "blockType": "ignored" } -->
-```http
-GET /me/onlineMeetings/{meetingId}/meetingAttendanceReport
-```
-
 > [!NOTE]
 >- O caminho `/app` foi preterido. Daqui em diante, use o caminho `/communications`.
 >- `userId` é a ID de objeto de um usuário no [Portal de gerenciamento de usuário do Azure](https://portal.azure.com/#blade/Microsoft_AAD_IAM/UsersManagementMenuBlade). Para obter mais detalhes, consulte [política de acesso ao aplicativo](/graph/cloud-communication-online-meeting-application-access-policy).
 >- `meetingId`é a **id** de um [objeto onlineMeeting.](../resources/onlinemeeting.md)
-> - **videoTeleconferenceId** é gerado para usuários licenciados do Cloud-Video-Interop e pode ser encontrado em um [objeto onlineMeeting.](../resources/onlinemeeting.md) Consulte a [ID da conferência VTC](/microsoftteams/cloud-video-interop-for-teams-set-up) para obter mais detalhes.
+> - **videoTeleconferenceId** é gerado para usuários licenciados do Cloud-Video-Interop e pode ser encontrado em um [objeto onlineMeeting.](../resources/onlinemeeting.md) Para obter detalhes, consulte [ID da conferência VTC](/microsoftteams/cloud-video-interop-for-teams-set-up).
 >- `joinWebUrl` deve ser codificada por URL.
 
 ## <a name="optional-query-parameters"></a>Parâmetros de consulta opcionais
@@ -113,15 +115,14 @@ Se a solicitação contiver um `Accept-Language`cabeçalho HTTP, o `content` de 
 Não forneça um corpo de solicitação para esse método.
 
 ## <a name="response"></a>Resposta
-Se bem-sucedido, este método retorna um código de resposta `200 OK`. O método também inclui um dos seguintes:
 
-- Se você estiver recebendo uma reunião online com base na ID da reunião, **videoTeleconferenceId** ou **joinWebUrl,** este método também retornará um [objeto onlineMeeting](../resources/onlinemeeting.md) no corpo da resposta.
-- Se você estiver recebendo o relatório do participante ou a gravação de uma reunião online ao vivo, este método também retorna um header que indica o URI para o relatório ou gravação do `Location` participante, respectivamente.
+Se tiver êxito, este método retornará um código de resposta `200 OK`. A resposta também inclui um dos seguintes:
+
+- Se você buscar uma reunião online por ID de reunião, **videoTeleconferenceId** ou **joinWebUrl**, este método retornará um [objeto onlineMeeting](../resources/onlinemeeting.md) no corpo da resposta.
+- Se você buscar o relatório de participação de uma reunião online, este método retornará um [objeto meetingAttendanceReport](../resources/meetingAttendanceReport.md) no corpo da resposta.
+- Se você buscar o relatório do participante ou a gravação de um evento ao vivo, este método retornará um header que indica o URI para o relatório ou gravação do `Location` participante, respectivamente.
 
 ## <a name="examples"></a>Exemplos
-
-> [!NOTE]
-> Os objetos de resposta dos exemplos a seguir foram reduzidos para a capacidade de leitura. Todas as propriedades serão retornadas de uma chamada real.
 
 ### <a name="example-1-retrieve-an-online-meeting-by-videoteleconferenceid"></a>Exemplo 1: Recuperar uma reunião online por VideoTeleconferenceId
 
@@ -155,6 +156,8 @@ GET https://graph.microsoft.com/beta/communications/onlineMeetings/?$filter=Vide
 ---
 
 #### <a name="response"></a>Resposta
+
+> **Observação:** o objeto de resposta mostrado aqui pode ser encurtado para legibilidade. 
 
 <!-- {
   "blockType": "response",
@@ -257,6 +260,8 @@ GET https://graph.microsoft.com/beta/users/dc17674c-81d9-4adb-bfb2-8f6a442e4622/
 
 #### <a name="response"></a>Resposta
 
+> **Observação:** o objeto de resposta mostrado aqui pode ser encurtado para legibilidade. 
+
 ```json
 {
     "id": "MSpkYzE3Njc0Yy04MWQ5LTRhZGItYmZiMi04ZdFpHRTNaR1F6WGhyZWFkLnYy",
@@ -314,6 +319,8 @@ GET https://graph.microsoft.com/beta/users/dc17674c-81d9-4adb-bfb2-8f6a442e4622/
 
 #### <a name="response"></a>Resposta
 
+> **Observação:** o objeto de resposta mostrado aqui pode ser encurtado para legibilidade. 
+
 ```json
 {
     "value": [
@@ -356,166 +363,111 @@ GET https://graph.microsoft.com/beta/users/dc17674c-81d9-4adb-bfb2-8f6a442e4622/
 }
 ```
 
-### <a name="example-4-retrieve-the-attendee-report-of-a-live-event"></a>Exemplo 4: Recuperar o relatório do participante de um evento ao vivo
+### <a name="example-4-fetch-attendee-report-of-a-live-event"></a>Exemplo 4: Buscar relatório do participante de um evento ao vivo
+
 O exemplo a seguir mostra uma solicitação para baixar um relatório do participante.
 
 #### <a name="request"></a>Solicitação
-A solicitação a seguir usa um token de usuário.
-<!-- { "blockType": "ignored" } -->
-```http
-GET https://graph.microsoft.com/beta/me/onlineMeetings/dc17674c-81d9-4adb-bfb2-8f6a442e4622_19:meeting_ZWE0YzQwMzItYjEyNi00NjJjLWE4MjYtOTUxYjE1NmFjYWIw@thread.v2/attendeeReport
-```
 
-A solicitação a seguir usa um token de aplicativo.
-# <a name="http"></a>[HTTP](#tab/http)
+A solicitação a seguir usa permissão delegada.
 <!-- {
   "blockType": "request",
-  "sampleKeys": ["dc74d9bb-6afe-433d-8eaa-e39d80d3a647", "dc17674c-81d9-4adb-bfb2-8f6a442e4622_19:meeting_ZWE0YzQwMzItYjEyNi00NjJjLWE4MjYtOTUxYjE1NmFjYWIw@thread.v2"],
-  "name": "get-attendeeReport-app-token"
-}-->
-```msgraph-interactive
-GET https://graph.microsoft.com/beta/users/dc74d9bb-6afe-433d-8eaa-e39d80d3a647/onlineMeetings/dc17674c-81d9-4adb-bfb2-8f6a442e4622_19:meeting_ZWE0YzQwMzItYjEyNi00NjJjLWE4MjYtOTUxYjE1NmFjYWIw@thread.v2/attendeeReport
-```
-# <a name="c"></a>[C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/get-attendeereport-app-token-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# <a name="javascript"></a>[JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/get-attendeereport-app-token-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# <a name="objective-c"></a>[Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/get-attendeereport-app-token-objc-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# <a name="java"></a>[Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/get-attendeereport-app-token-java-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
----
-
-
-#### <a name="response"></a>Resposta
-<!-- {
-  "blockType": "response"
-} -->
-```http
-HTTP/1.1 302 Found
-Location: https://01-a-noam.dog.attend.teams.microsoft.com/broadcast/909c6581-5130-43e9-88f3-fcb3582cde37/dc17674c-81d9-4adb-bfb2-8f6a442e4622/19%3Ameeting_ZWE0YzQwMzItYjEyNi00NjJjLWE4MjYtOTUxYjE1NmFjYWIw%40thread.v2/0/resource/attendeeReport
-```
-
-### <a name="example-5-retrieve-the-recording-of-a-live-event"></a>Exemplo 5: Recuperar a gravação de um evento ao vivo
-O exemplo a seguir mostra uma solicitação para baixar uma gravação.
-
-#### <a name="request"></a>Solicitação
-A solicitação a seguir usa um token de usuário.
-<!-- { "blockType": "ignored" } -->
-```http
-GET https://graph.microsoft.com/beta/me/onlineMeetings/dc17674c-81d9-4adb-bfb2-8f6a442e4622_19:meeting_ZWE0YzQwMzItYjEyNi00NjJjLWE4MjYtOTUxYjE1NmFjYWIw@thread.v2/recording
-```
-
-A solicitação a seguir usa um token de aplicativo.
-# <a name="http"></a>[HTTP](#tab/http)
-<!-- {
-  "blockType": "request",
-  "sampleKeys": ["dc74d9bb-6afe-433d-8eaa-e39d80d3a647", "dc17674c-81d9-4adb-bfb2-8f6a442e4622_19:meeting_ZWE0YzQwMzItYjEyNi00NjJjLWE4MjYtOTUxYjE1NmFjYWIw@thread.v2"],
-  "name": "get-recording-app-token"
-}-->
-```msgraph-interactive
-GET https://graph.microsoft.com/beta/users/dc74d9bb-6afe-433d-8eaa-e39d80d3a647/onlineMeetings/dc17674c-81d9-4adb-bfb2-8f6a442e4622_19:meeting_ZWE0YzQwMzItYjEyNi00NjJjLWE4MjYtOTUxYjE1NmFjYWIw@thread.v2/recording
-```
-# <a name="c"></a>[C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/get-recording-app-token-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# <a name="javascript"></a>[JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/get-recording-app-token-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# <a name="objective-c"></a>[Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/get-recording-app-token-objc-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# <a name="java"></a>[Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/get-recording-app-token-java-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
----
-
-
-#### <a name="response"></a>Resposta
-<!-- {
-  "blockType": "response"
-} -->
-```http
-HTTP/1.1 302 Found
-Location: https://01-a-noam.dog.attend.teams.microsoft.com/broadcast/909c6581-5130-43e9-88f3-fcb3582cde37/dc17674c-81d9-4adb-bfb2-8f6a442e4622/19%3Ameeting_ZWE0YzQwMzItYjEyNi00NjJjLWE4MjYtOTUxYjE1NmFjYWIw%40thread.v2/0/resource/recording
-```
-
-
-<!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
-2015-10-25 14:57:30 UTC -->
-<!--
-{
-  "type": "#page.annotation",
-  "description": "Get onlineMeeting",
-  "keywords": "",
-  "section": "documentation",
-  "tocPath": "",
-  "suppressions": [
-  ]
-}
--->
-
-### <a name="example-6-retrieve-the-attendance-report-of-a-meeting"></a>Exemplo 6: Recuperar o relatório de participação de uma reunião
-O exemplo a seguir mostra uma solicitação para obter um relatório de participação na reunião.
-
-#### <a name="request"></a>Solicitação
-
-
-# <a name="http"></a>[HTTP](#tab/http)
-<!-- {
-  "blockType": "request",
-  "sampleKeys": ["dc74d9bb-6afe-433d-8eaa-e39d80d3a647", "MSpkYzE3Njc0Yy04MWQ5LTRhZGItYmZiMi04ZdFpHRTNaR1F6WGhyZWFkLnYy"],
-  "name": "get-meetingAttendanceReport"
+  "name": "get_attendee_report"
 }-->
 
-```msgraph-interactive
-GET https://graph.microsoft.com/beta/me/onlineMeetings/MSpkYzE3Njc0Yy04MWQ5LTRhZGItYmZiMi04ZdFpHRTNaR1F6WGhyZWFkLnYy/meetingAttendanceReport
+```http
+GET https://graph.microsoft.com/beta/me/onlineMeetings/MSpkYzE3Njc0Yy04MWQ5LTRhZGItYmZiMi04ZdFpHRTNaR1F6WGhyZWFkLnYy/attendeeReport
 ```
-# <a name="c"></a>[C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/get-meetingattendancereport-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascript"></a>[JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/get-meetingattendancereport-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+A solicitação a seguir usa a permissão do aplicativo.
 
-# <a name="objective-c"></a>[Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/get-meetingattendancereport-objc-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# <a name="java"></a>[Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/get-meetingattendancereport-java-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
----
-
-
----
+<!-- { "blockType": "ignored" }-->
+```msgraph-interactive
+GET https://graph.microsoft.com/beta/users/dc74d9bb-6afe-433d-8eaa-e39d80d3a647/onlineMeetings/MSpkYzE3Njc0Yy04MWQ5LTRhZGItYmZiMi04ZdFpHRTNaR1F6WGhyZWFkLnYy/attendeeReport
+```
 
 #### <a name="response"></a>Resposta
 
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.meetingAttendanceReport"
+  "name": "get_attendee_report"
+} -->
+
+```http
+HTTP/1.1 302 Found
+Location: https://01-a-noam.dog.attend.teams.microsoft.com/broadcast/909c6581-5130-43e9-88f3-fcb3582cde37/dc17674c-81d9-4adb-bfb2-8f6a442e4622/19%3Ameeting_ZWE0YzQwMzItYjEyNi00NjJjLWE4MjYtOTUxYjE1NmFjYWIw%40thread.v2/0/resource/attendeeReport
+```
+
+### <a name="example-5-fetch-recording-of-a-live-event"></a>Exemplo 5: buscar gravação de um evento ao vivo
+
+O exemplo a seguir mostra uma solicitação para baixar uma gravação.
+
+#### <a name="request"></a>Solicitação
+
+A solicitação a seguir usa permissão delegada.
+<!-- {
+  "blockType": "request",
+  "name": "get_live_event_recording"
+}-->
+```http
+GET https://graph.microsoft.com/beta/me/onlineMeetings/MSpkYzE3Njc0Yy04MWQ5LTRhZGItYmZiMi04ZdFpHRTNaR1F6WGhyZWFkLnYy/recording
+```
+
+A solicitação a seguir usa a permissão do aplicativo.
+<!-- { "blockType": "ignored" }-->
+```msgraph-interactive
+GET https://graph.microsoft.com/beta/users/dc74d9bb-6afe-433d-8eaa-e39d80d3a647/onlineMeetings/MSpkYzE3Njc0Yy04MWQ5LTRhZGItYmZiMi04ZdFpHRTNaR1F6WGhyZWFkLnYy/recording
+```
+
+#### <a name="response"></a>Resposta
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "name": "get_live_event_recording"
+} -->
+
+```http
+HTTP/1.1 302 Found
+Location: https://01-a-noam.dog.attend.teams.microsoft.com/broadcast/909c6581-5130-43e9-88f3-fcb3582cde37/dc17674c-81d9-4adb-bfb2-8f6a442e4622/19%3Ameeting_ZWE0YzQwMzItYjEyNi00NjJjLWE4MjYtOTUxYjE1NmFjYWIw%40thread.v2/0/resource/recording
+```
+
+### <a name="example-6-fetch-attendance-report-of-an-online-meeting"></a>Exemplo 6: Buscar relatório de participação de uma reunião online
+
+O exemplo a seguir mostra uma solicitação para obter um relatório de participação na reunião.
+
+#### <a name="request"></a>Solicitação
+
+A solicitação a seguir usa permissão delegada.
+<!-- {
+  "blockType": "request",
+  "name": "get_attendance_report"
+}-->
+
+```msgraph-interactive
+GET https://graph.microsoft.com/beta/me/onlineMeetings/MSpkYzE3Njc0Yy04MWQ5LTRhZGItYmZiMi04ZdFpHRTNaR1F6WGhyZWFkLnYy/meetingAttendanceReport
+```
+
+A solicitação a seguir usa a permissão do aplicativo.
+<!-- { "blockType": "ignored" }-->
+```msgraph-interactive
+GET https://graph.microsoft.com/beta/users/dc74d9bb-6afe-433d-8eaa-e39d80d3a647/onlineMeetings/MSpkYzE3Njc0Yy04MWQ5LTRhZGItYmZiMi04ZdFpHRTNaR1F6WGhyZWFkLnYy/meetingAttendanceReport
+```
+
+#### <a name="response"></a>Resposta
+
+> **Observação:** o objeto de resposta mostrado aqui pode ser encurtado para legibilidade. 
+
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.meetingAttendanceReport",
+  "name": "get_attendance_report"
 } -->
 
 ```http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 1876
 
 {
     "@odata.context": "https://graph.microsoft.com/beta/$metadata#users('dc74d9bb-6afe-433d-8eaa-e39d80d3a647')/onlineMeetings('MSpkYzE3Njc0Yy04MWQ5LTRhZGItYmZiMi04ZdFpHRTNaR1F6WGhyZWFkLnYy')/meetingAttendanceReport/$entity",
@@ -564,7 +516,7 @@ Content-Length: 1876
                 }
             ]
         }
-    ]
+    ],
+    "totalParticipantCount": 2
 }
-
 ```

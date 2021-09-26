@@ -5,12 +5,12 @@ author: isabelleatmsft
 ms.localizationpriority: medium
 ms.prod: governance
 doc_type: conceptualPageType
-ms.openlocfilehash: bbd290d3be3acdbff45f3bb8739dca4ba86ecb4a
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: d261fd40629c75c40bf0c93fd42ac8221fdb09e1
+ms.sourcegitcommit: 08e9b0bac39c1b1d2c8a79539d24aaa93364baf2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59136212"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59766723"
 ---
 # <a name="configure-the-scope-of-your-access-review-using-the-microsoft-graph-api"></a>Configurar o escopo da sua revisão de acesso usando a API Graph Microsoft
 
@@ -39,6 +39,7 @@ Para configurar o escopo usando o **tipo accessReviewQueryScope,** de definir os
     "queryType": "MicrosoftGraph"
 }
 ```
+
 Para revisar *somente usuários inativos* atribuídos ao grupo:
 
 ```http
@@ -48,14 +49,14 @@ Para revisar *somente usuários inativos* atribuídos ao grupo:
     "query": "/groups/{group id}/transitiveMembers",
     "queryType": "MicrosoftGraph"
 }
-````
+```
 
 ### <a name="example-2-review-guest-users-assigned-to-a-group"></a>Exemplo 2: Revisar usuários convidados atribuídos a um grupo
 
 ```http
 "scope": {
     "@odata.type": "#microsoft.graph.accessReviewQueryScope",
-    "query": "/groups/{group id}/transitiveMembers/microsoft.graph.user/?$count=true&$filter=(userType eq 'Guest')",    
+    "query": "/groups/{group id}/transitiveMembers/microsoft.graph.user/?$filter=(userType eq 'Guest')",    
     "queryType": "MicrosoftGraph"
 }
 ```
@@ -64,22 +65,7 @@ Para revisar *somente usuários inativos* atribuídos ao grupo:
 
 ```http
 "instanceEnumerationScope": {
-    "query": "/groups?$filter=(groupTypes/any(c:c+eq+'Unified'))&$count=true ",
-    "queryType": "MicrosoftGraph"
-},
-"scope": {
-    "@odata.type": "#microsoft.graph.accessReviewQueryScope",
-    "query": "./members/microsoft.graph.user/?$count=true&$filter=(userType eq 'Guest')",
-    "queryType": "MicrosoftGraph"
-}
-```
-Como essa revisão é aplicada em todos os grupos Microsoft 365, configure **a instânciaEnumerationScope** para especificar os grupos Microsoft 365 a revisar.
-    
-### <a name="example-4-review-of-all-guest-users-assigned-to-all-teams"></a>Exemplo 4: Revisão de todos os usuários convidados atribuídos a todos os Teams
-
-```http
-"instanceEnumerationScope": {
-    "query": "/groups?$filter=(groupTypes/any(c:c+eq+'Unified') and resourceProvisioningOptions/Any(x:x eq 'Team')')",
+    "query": "/groups?$filter=(groupTypes/any(c:c eq 'Unified'))",
     "queryType": "MicrosoftGraph"
 },
 "scope": {
@@ -87,15 +73,32 @@ Como essa revisão é aplicada em todos os grupos Microsoft 365, configure **a i
     "query": "./members/microsoft.graph.user/?$filter=(userType eq 'Guest')",
     "queryType": "MicrosoftGraph"
 }
-    
-Because this review is applied on all Teams-enabled Microsoft 365 groups, configure the **instanceEnumerationScope** to specify the Teams-enabled Microsoft 365 groups to review.
+```
 
-### Example 5: Review access of all inactive guest users to all groups
+Como essa revisão é aplicada em todos os grupos Microsoft 365, configure **a instânciaEnumerationScope** para especificar os grupos Microsoft 365 a revisar.
+    
+### <a name="example-4-review-of-all-guest-users-assigned-to-all-teams"></a>Exemplo 4: Revisão de todos os usuários convidados atribuídos a todos os Teams
+
+```http
+"instanceEnumerationScope": {
+    "query": "/groups?$filter=(groupTypes/any(c:c eq 'Unified') and resourceProvisioningOptions/Any(x:x eq 'Team')')",
+    "queryType": "MicrosoftGraph"
+},
+"scope": {
+    "@odata.type": "#microsoft.graph.accessReviewQueryScope",
+    "query": "./members/microsoft.graph.user/?$filter=(userType eq 'Guest')",
+    "queryType": "MicrosoftGraph"
+}
+```
+    
+Como essa revisão é aplicada Teams todos os grupos Microsoft 365 habilitados para Microsoft 365, configure **a instânciaEnumerationScope** para especificar os grupos Microsoft 365 habilitados para Teams para revisão.
+
+### <a name="example-5-review-access-of-all-inactive-guest-users-to-all-groups"></a>Exemplo 5: revisar o acesso de todos os usuários convidados inativos a todos os grupos
 
 ```http
 "scope": {
     "@odata.type": "#microsoft.graph.accessReviewInactiveUsersQueryScope",
-    "query": "./members/microsoft.graph.user/?$count=true&$filter=(userType eq 'Guest')",
+    "query": "./members/microsoft.graph.user/?$filter=(userType eq 'Guest')",
     "queryType": "MicrosoftGraph",
     "inactiveDuration": "P30D"
 }
@@ -107,7 +110,7 @@ Como essa revisão é aplicada a usuários inativos, use o **recurso accessRevie
 
 ```http
 "instanceEnumerationScope": {
-    "query": "/groups?$filter=(groupTypes/any(c:c+eq+'Unified') and resourceProvisioningOptions/Any(x:x eq 'Team')')",
+    "query": "/groups?$filter=(groupTypes/any(c:c eq 'Unified') and resourceProvisioningOptions/Any(x:x eq 'Team')')",
     "queryType": "MicrosoftGraph"
 },
 "scope": {
@@ -174,7 +177,7 @@ Como essa revisão é aplicada a todas as equipes, configure a **propriedade ins
 
 O **principalResourceMembershipsScope** expõe as propriedades **principalScopes** e **resourceScopes** para dar suporte a opções de configuração mais personalizadas para o escopo **do accessReviewScheduleDefinition**. Isso inclui a revisão do acesso a várias entidades ou grupos de entidades para vários recursos.
 
-### <a name="example-1-review-access-of-all-inactive-guest-users-to-all-groups"></a>Exemplo 1: Revisar o acesso de todos os usuários convidados inativos a todos os grupos
+### <a name="example-12-review-access-of-all-inactive-guest-users-to-all-groups"></a>Exemplo 12: Revisar o acesso de todos os usuários convidados inativos a todos os grupos
 
 ```http
 "scope": {
@@ -199,7 +202,7 @@ O **principalResourceMembershipsScope** expõe as propriedades **principalScopes
 
 Neste exemplo, as entidades principais são todos usuários convidados inativos com o período de sua inatividade calculado como 30 dias a partir da data de início da instância de revisão de acesso.
 
-### <a name="example-2-review-access-of-all-guest-users-to-a-directory-role"></a>Exemplo 2: revisar o acesso de todos os usuários convidados a uma função de diretório
+### <a name="example-13-review-access-of-all-guest-users-to-a-directory-role"></a>Exemplo 13: Revisar o acesso de todos os usuários convidados a uma função de diretório
 
 ```http
 "scope": {
@@ -221,6 +224,7 @@ Neste exemplo, as entidades principais são todos usuários convidados inativos 
 }
 ```
 
-## <a name="see-also"></a>Confira também
+## <a name="next-steps"></a>Próximas etapas
 
 + [Atribuir revisadores à sua definição de revisão de acesso](/graph/accessreviews-reviewers-concept)
++ [Experimente tutoriais para](/graph/accessreviews-overview) saber como usar a API de avaliações de acesso para revisar o acesso aos recursos do Azure AD

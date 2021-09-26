@@ -5,12 +5,12 @@ author: spunukol
 ms.localizationpriority: medium
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: 9216f5f879bee4b600fadf459ad67d11d392ca31
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 2547ededb4657b3d185245ad0fadfdca82cf1fd5
+ms.sourcegitcommit: 08e9b0bac39c1b1d2c8a79539d24aaa93364baf2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59074474"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59766135"
 ---
 # <a name="get-device"></a>Obter dispositivo
 
@@ -23,16 +23,17 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegada (conta corporativa ou de estudante) | Device.Read.All, Device.ReadWrite.All, Directory.Read.All, Directory.ReadWrite.All, Directory.AccessAsUser.All    |
-|Delegada (conta pessoal da Microsoft) | Sem suporte.    |
+|Delegado (conta corporativa ou de estudante) | Device.Read.All, Device.ReadWrite.All, Directory.Read.All, Directory.ReadWrite.All, Directory.AccessAsUser.All    |
+|Delegado (conta pessoal da Microsoft) | Sem suporte.    |
 |Aplicativo | Device.Read.All, Device.ReadWrite.All, Directory.Read.All, Directory.ReadWrite.All |
 
 ## <a name="http-request"></a>Solicitação HTTP
+
+O `{id}` na solicitação é o valor da **propriedade id** do dispositivo, não a **propriedade deviceId.**
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /devices/{id}
 ```
-> Observação: A "id" na solicitação é a propriedade "id" do dispositivo, não a propriedade "deviceId".
 
 ## <a name="optional-query-parameters"></a>Parâmetros de consulta opcionais
 Este método dá suporte ao `$select` [parâmetro de consulta OData](/graph/query-parameters) para ajudar a personalizar a resposta.

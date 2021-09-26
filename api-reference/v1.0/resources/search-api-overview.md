@@ -5,12 +5,12 @@ ms.localizationpriority: high
 author: nmoreau
 ms.prod: search
 doc_type: resourcePageType
-ms.openlocfilehash: e7d2ce6d2eb973eb68b4cbe14754c374eec9bd3c
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 04a9f843da8326f257a7a48537353a10ac458a81
+ms.sourcegitcommit: 08e9b0bac39c1b1d2c8a79539d24aaa93364baf2
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59035609"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59766933"
 ---
 # <a name="use-the-microsoft-search-api-to-query-data"></a>Usar a API de Pesquisa da Microsoft para consultar dados
 
@@ -33,6 +33,8 @@ As solicitações de pesquisa são executadas em nome do usuário. Os resultados
 |[Obter os emails mais relevantes](#get-the-most-relevant-emails) | **enableTopResults** |
 |[Obter as propriedades selecionadas](#get-selected-properties) | **campos** |
 |[Usar KQL em termos de consulta](#keyword-query-language-kql-support) | **query** |
+|[Classificar resultados de pesquisa](#sort-search-results)| **sort** |
+|[Refinar os resultados usando agregações](#refine-results-using-aggregations)| **aggregations** |
 
 ## <a name="scope-search-based-on-entity-types"></a>Pesquisa de escopo com base em tipos de entidade
 
@@ -104,6 +106,37 @@ Dependendo do tipo de entidade, as propriedades pesquisáveis variam. Veja mais 
 - [Propriedades do email](/microsoft-365/compliance/keyword-queries-and-search-conditions#searchable-email-properties)
 - [Propriedades do site](/microsoft-365/compliance/keyword-queries-and-search-conditions#searchable-site-properties)
 
+## <a name="sort-search-results"></a>Classificar resultados de pesquisa
+
+Os resultados da pesquisa na resposta são classificados na ordem de classificação padrão a seguir:
+
+- **mensagem** e **evento** são classificados por data.
+- Todos os tipos de SharePoint, OneDrive, pessoas e conectores são classificados por relevância.
+
+O método de [consulta](../api/search-query.md) permite que você personalize a ordem de pesquisa especificando as **sortProperties** no parâmetro `requests`, que é uma coleção de objetos [searchRequest](./searchrequest.md). Isso permite especificar uma lista de uma ou mais propriedades classificáveis e a ordem de classificação.
+
+Atualmente, só há suporte para a classificação de resultados nos seguintes tipos de SharePoint e OneDrive: [driveItem](driveitem.md), [listItem](listitem.md), [list](list.md) e [site](site.md).
+
+As propriedades nas quais a cláusula de classificação é aplicada devem ser classificáveis no [esquema de pesquisa](/sharepoint/manage-search-schema) do SharePoint. Se a propriedade especificada na solicitação não for classificável ou não existir, a resposta retornará um erro, `HTTP 400 Bad Request`. Observe que você não pode especificar a classificação de documentos por relevância usando [sortProperty](sortproperty.md).
+
+Ao especificar o **nome** de um objeto [sortProperty](sortproperty.md), você pode usar o nome da propriedade do tipo Microsoft Graph (por exemplo, em [driveItem](driveitem.md)) ou o nome da propriedade gerenciada no índice de pesquisa.
+
+Confira [classificar resultados de pesquisa](/graph/search-concept-sort) para obter exemplos que mostram como classificar resultados.
+
+## <a name="refine-results-using-aggregations"></a>Refinar os resultados usando agregações
+
+As agregações (também conhecidas como refinadores no SharePoint) são uma maneira muito popular de melhorar a experiência de pesquisa. Além dos resultados, eles fornecem algum nível de informações agregadas no conjunto de resultados de pesquisa. Por exemplo, você pode fornecer informações sobre os autores mais representados dos documentos correspondentes à consulta, ou os tipos de arquivo mais representados, etc.
+
+Na[searchRequest](./searchrequest.md), especifique as agregações que devem ser retornadas além dos resultados da pesquisa. A descrição de cada agregação é definida na[aggregationOption](./aggregationoption.md), que especifica a propriedade na qual a agregação deve ser calculada, e o número de [searchBucket](searchBucket.md) a ser retornado na resposta.
+
+As propriedades nas quais a agregação é solicitada devem ser refináveis no [esquema de pesquisa](/sharepoint/manage-search-schema) do SharePoint. Se a propriedade especificada não for refinável ou não existir, a resposta retornará `HTTP 400 Bad Request`.
+
+Uma vez que a resposta é retornada contendo a coleção de objetos [searchBucket](searchBucket.md), é possível refinar a solicitação de pesquisa somente aos elementos correspondentes contidos em uma [searchBucket](searchBucket.md). Isso é conseguido passando o valor **aggregationsFilterToken** na propriedade **aggregationsFilters** na posterior [searchRequest](./searchrequest.md).
+
+As agregações atualmente têm suporte para qualquer propriedade refinável nos seguintes tipos do SharePoint e OneDrive: [driveItem](driveitem.md), [listItem](listitem.md), [list](list.md), [site](site.md) e nos conectores do Microsoft Graph [externalItem](externalconnectors-externalitem.md).
+
+Confira [refinar os resultados da pesquisa](/graph/search-concept-aggregation) para obter exemplos que mostram como usar a agregação para melhorar e restringir os resultados da pesquisa.
+
 ## <a name="error-handling"></a>Tratamento de erros
 
 A API de pesquisa retorna respostas de erro conforme estipulado pela [definição de objeto de erro OData](http://docs.oasis-open.org/odata/odata-json-format/v4.01/cs01/odata-json-format-v4.01-cs01.html#sec_ErrorResponse). Cada uma delas é um objeto JSON que contém um código e uma mensagem.
@@ -133,6 +166,8 @@ As combinações envolvendo **mensagem**, **evento**, tipos do SharePoint e do O
   - [Pesquisar mensagens do Outlook](/graph/search-concept-messages)
   - [Pesquisar eventos do calendário](/graph/search-concept-events)
   - [Pesquisar conteúdo no OneDrive e Microsoft Office SharePoint Online](/graph/search-concept-files)
+  - [Classificar resultados de pesquisa](/graph/search-concept-sort)
+  - [Refinar resultados de pesquisa](/graph/search-concept-aggregation)
 
 - Explore as APIs no [Explorador do Graph](https://developer.microsoft.com/graph/graph-explorer).
 - Saiba mais sobre os [novos recursos e atualizações mais recentes](/graph/whats-new-overview) para este conjunto de APIs.

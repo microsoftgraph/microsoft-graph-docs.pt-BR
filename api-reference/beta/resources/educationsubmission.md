@@ -1,16 +1,16 @@
 ---
 title: Tipo de recurso educationSubmission
-description: Os envios pertencem a uma atribuição. Um envio representa os recursos que um indivíduo (ou grupo) entrega para uma atribuição e a nota/feedback que é retornada.
+description: Representa os recursos que um indivíduo (ou grupo) envia para uma atribuição e os resultados (como notas ou comentários) associados ao envio.
 author: dipakboyed
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: education
 doc_type: resourcePageType
-ms.openlocfilehash: f468e0715a07320233db1224c3fcee62e0c8fe63
-ms.sourcegitcommit: 276a13a37c3772689dfc71f7cd47586c9581f27d
+ms.openlocfilehash: 458d30bdf4955e2977903cbaf4ca384b63510bea
+ms.sourcegitcommit: 08e9b0bac39c1b1d2c8a79539d24aaa93364baf2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/24/2021
-ms.locfileid: "52629438"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59767283"
 ---
 # <a name="educationsubmission-resource-type"></a>Tipo de recurso educationSubmission
 
@@ -18,9 +18,9 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Um envio representa os recursos que um indivíduo (ou grupo) entrega para uma atribuição e os resultados (como notas ou comentários) associados ao envio.
+Representa os recursos que um indivíduo (ou grupo) entrega para uma [atribuição](educationassignment.md) e os resultados (como notas ou comentários) associados ao **envio**.
 
-Os envios pertencem a uma atribuição. Os envios são criados automaticamente quando uma atribuição é publicada. O envio possui duas listas de recursos. Os recursos representam a área de trabalho usuário/grupos enquanto os recursos enviados representam os recursos que foram ativamente entregues pelos alunos.  
+Os envios pertencem a uma **atribuição**. Os envios são criados automaticamente quando uma **atribuição** é publicada. O **envio** possui duas listas de recursos. Os recursos representam a área de trabalho usuário/grupos enquanto os recursos enviados representam os recursos que foram ativamente entregues pelos alunos.  
 
 A **propriedade status** é somente leitura e o objeto é movido através do fluxo de trabalho por meio de ações. 
 
@@ -35,8 +35,9 @@ Se [setUpResourcesFolder](../api/educationsubmission-setupResourcesFolder.md) n�
 |[Listar submittedResources](../api/educationsubmission-list-submittedresources.md) |[Coleção educationSubmissionResource](educationsubmissionresource.md)| Obter uma **coleção de objetos educationSubmissionResource.**|
 |[Listar resultados](../api/educationsubmission-list-outcomes.md) |[Coleção educationOutcome](educationoutcome.md)| Obter uma **coleção de objetos educationOutcome.**|
 |[return](../api/educationsubmission-return.md)|[educationSubmission](educationsubmission.md)|Um professor usa o retorno para indicar que as notas/comentários podem ser mostradas ao aluno.|
+|[reatribuir](../api/educationsubmission-reassign.md)|[educationSubmission](educationsubmission.md)|Reatribua o envio ao aluno com comentários para revisão.|
 |[Configurar pasta de recursos específicos do envio](../api/educationsubmission-setupResourcesFolder.md) |[educationSubmission](educationsubmission.md) | Crie uma SharePoint (em local pré-definido) para carregar arquivos como recursos de envio. |
-|[Enviar](../api/educationsubmission-submit.md)|[educationSubmission](educationsubmission.md)|Um aluno usa enviar para entregar a atribuição. Isso copiará os recursos para a **pasta submittedResources** para a classificação e atualiza o status.|
+|[Enviar](../api/educationsubmission-submit.md)|[educationSubmission](educationsubmission.md)|Um aluno usa enviar para entregar a **atribuição**. Isso copiará os recursos para a **pasta submittedResources** para a classificação e atualiza o status.|
 |[unsubmit](../api/educationsubmission-unsubmit.md)|[educationSubmission](educationsubmission.md)|Um aluno usa o cancelamento para mover o estado do envio do envio de volta ao trabalho. Isso copiará os recursos para a **pasta workingResources** para a classificação e atualiza o status.|
 
 ## <a name="properties"></a>Propriedades
@@ -46,11 +47,13 @@ Se [setUpResourcesFolder](../api/educationsubmission-setupResourcesFolder.md) n�
 |returnedBy|[identitySet](identityset.md)|Usuário que moveu o status desse envio para retornado.|
 |returnedDateTime|DateTimeOffset|Momento no tempo em que o envio foi retornado. O tipo Timestamp representa informações de data e hora usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite UTC em 1 de janeiro de 2014 é `2014-01-01T00:00:00Z`|
 |resourcesFolderUrl|Cadeia de caracteres|Pasta onde todos os recursos de arquivo para esse envio precisam ser armazenados.|
-|status|cadeia de caracteres| Somente Leitura. Os valores possíveis são: `working`, `submitted`, `released`, `returned`.|
+|status|cadeia de caracteres| Somente leitura. Os valores possíveis são: `working` , , , e `submitted` `released` `returned` `reassigned` . Observe que você deve usar o header de solicitação para obter os seguintes valores nesta `Prefer: include-unknown-enum-members` [enum evolvável](/graph/best-practices-concept#handling-future-members-in-evolvable-enumerations): `reassigned` .|
 |submittedBy|[identitySet](identityset.md)|Usuário que moveu o recurso para o estado enviado.|
 |submittedDateTime|DateTimeOffset|Momento no tempo em que o envio foi movido para o estado enviado. O tipo Timestamp representa informações de data e hora usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite UTC em 1 de janeiro de 2014 é `2014-01-01T00:00:00Z`|
 |unsubmittedBy|[identitySet](identityset.md)|Usuário que moveu o recurso de enviado para o estado de trabalho.|
 |unsubmittedDateTime|DateTimeOffset|Momento no tempo em que o envio foi movido do envio para o estado de trabalho. O tipo Timestamp representa informações de data e hora usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite UTC em 1 de janeiro de 2014 é `2014-01-01T00:00:00Z`|
+|reassignedBy|[identitySet](identityset.md)|Usuário que moveu o status desse envio para reatribuido.|
+|reassignedDateTime|DateTimeOffset|Momento no tempo em que o envio foi reatribuido. O tipo Timestamp representa informações de data e hora usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite UTC em 1 de janeiro de 2014 é `2014-01-01T00:00:00Z`|
 
 ## <a name="relationships"></a>Relações
 | Relação | Tipo   |Descrição|
@@ -83,7 +86,9 @@ Veja a seguir uma representação JSON do recurso.
     "submittedBy":{"@odata.type":"microsoft.graph.identitySet"},
     "submittedDateTime":"String (timestamp)",
     "unsubmittedBy":{"@odata.type":"microsoft.graph.identitySet"},
-    "unsubmittedDateTime":"String (timestamp)"
+    "unsubmittedDateTime":"String (timestamp)",
+    "reassignedBy":{"@odata.type":"microsoft.graph.identitySet"},
+    "reassignedDateTime":"String (timestamp)"
 }
 ```
 

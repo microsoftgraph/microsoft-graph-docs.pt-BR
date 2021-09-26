@@ -5,27 +5,27 @@ author: sharad-sharma-msft
 ms.localizationpriority: medium
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: 6952d61cacc57af3ac2d27202228a5f26e7195ee
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 72c16bb23d0c98aa3e7ed8ea5ef86cf4faa9b99a
+ms.sourcegitcommit: 08e9b0bac39c1b1d2c8a79539d24aaa93364baf2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59020032"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59767090"
 ---
 # <a name="get-educationassignmentdefaults"></a>Obter educationAssignmentDefaults
 Namespace: microsoft.graph
 
 Leia as propriedades e as relações de um [objeto educationAssignmentDefaults.](../resources/educationassignmentdefaults.md) 
 
-Esses são os padrões de atribuição de nível de classe respeitados pelas novas atribuições criadas na classe. Os chamadores podem continuar a especificar valores personalizados em cada criação de atribuição se não quiserem os comportamentos padrão.
+Esses são os padrões de atribuição de nível de classe respeitados pelas novas [atribuições criadas](../resources/educationassignment.md) na classe. Os chamadores podem continuar a especificar valores personalizados em **cada** criação de atribuição se não quiserem os comportamentos padrão.
 
 ## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão|Permissões (da com menos para a com mais privilégios)|
 |:---|:---|
-|Delegada (conta corporativa ou de estudante)| EduAssignments.ReadBasic, EduAssignments.ReadWriteBasic, EduAssignments.Read, EduAssignments.ReadWrite |
-|Delegada (conta pessoal da Microsoft)| Sem suporte. |
+|Delegado (conta corporativa ou de estudante)| EduAssignments.ReadBasic, EduAssignments.ReadWriteBasic, EduAssignments.Read, EduAssignments.ReadWrite |
+|Delegado (conta pessoal da Microsoft)| Sem suporte. |
 |Aplicativo| EduAssignments.ReadBasic.All, EduAssignments.ReadWriteBasic.All, EduAssignments.Read.All, EduAssignments.ReadWrite.All |
 
 ## <a name="http-request"></a>Solicitação HTTP
@@ -35,7 +35,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 }
 -->
 ``` http
-GET /education/classes/acdefc6b-2dc6-4e71-b1e9-6d9810ab1793/assignmentDefaults
+GET /education/classes/{id}/assignmentDefaults
 ```
 
 ## <a name="optional-query-parameters"></a>Parâmetros de consulta opcionais
@@ -53,19 +53,19 @@ Não fornece um corpo de solicitação para este método.
 
 Se tiver êxito, este método retornará um código de resposta e um `200 OK` [objeto educationAssignmentDefaults](../resources/educationassignmentdefaults.md) no corpo da resposta.
 
-## <a name="examples"></a>Exemplos
+## <a name="example"></a>Exemplo
 
 ### <a name="request"></a>Solicitação
-
 
 # <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
+  "sampleKeys": ["72a7baec-c3e9-4213-a850-f62de0adad5f"],
   "name": "get_educationassignmentdefaults"
 }
 -->
 ``` http
-GET https://graph.microsoft.com/v1.0/education/classes/acdefc6b-2dc6-4e71-b1e9-6d9810ab1793/assignmentDefaults
+GET https://graph.microsoft.com/v1.0/education/classes/72a7baec-c3e9-4213-a850-f62de0adad5f/assignmentDefaults
 ```
 # <a name="c"></a>[C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-educationassignmentdefaults-csharp-snippets.md)]
@@ -99,11 +99,10 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-  "value": {
-    "addedStudentAction": "none",
-    "dueTime": "23:59:00",
-    "notificationChannelUrl": "https://graph.microsoft.com/beta/teams('acdefc6b-2dc6-4e71-b1e9-6d9810ab1793')/channels('c6f4e171-da1f-4598-a648-05fcec6cd9ba')"
-  }
+    "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#education/classes('72a7baec-c3e9-4213-a850-f62de0adad5f')/assignmentDefaults/$entity",
+    "dueTime": "2021-08-30T23:59:00Z",
+    "notificationChannelUrl": null,
+    "addedStudentAction": "none"
 }
 ```
 

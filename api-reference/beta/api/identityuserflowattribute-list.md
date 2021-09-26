@@ -1,16 +1,16 @@
 ---
 title: Listar identityUserFlowAttributes
 description: Recupere uma lista de objetos identityUserFlowAttribute.
-localization_priority: Normal
+ms.localizationpriority: medium
 doc_type: apiPageType
 author: jkdouglas
 ms.prod: identity-and-sign-in
-ms.openlocfilehash: af97b488cbc571c53363e088f6507d8c48593f42
-ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
+ms.openlocfilehash: fd7d9809d417ca9824d7f29c1471f53197d496a8
+ms.sourcegitcommit: 08e9b0bac39c1b1d2c8a79539d24aaa93364baf2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50435249"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59763482"
 ---
 # <a name="list-identityuserflowattributes"></a>Listar identityUserFlowAttributes
 
@@ -26,14 +26,14 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegado (conta corporativa ou de estudante)|IdentityUserFlow.Read.All, IdentityUserflow.ReadWrite.All|
+|Delegado (conta corporativa ou de estudante)|IdentityUserFlow.Read.All, IdentityUserFlow.ReadWrite.All|
 |Delegado (conta pessoal da Microsoft)| Sem suporte.|
 |Aplicativo|IdentityUserFlow.Read.All, IdentityUserFlow.ReadWrite.All|
 
 A conta de trabalho ou de estudante precisa pertencer a uma das seguintes funções:
 
 * Administrador global
-* Administrador de Atributo de Fluxo de Usuário de Identidade Externa
+* Administrador de atributos Flow usuário de identidade externa
 
 ## <a name="http-request"></a>Solicitação HTTP
 

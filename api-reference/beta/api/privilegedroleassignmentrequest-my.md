@@ -1,22 +1,24 @@
 ---
 title: 'privilegedRoleAssignmentRequest: my'
 description: Obter as solicitações de atribuição de função privilegiada do solicitante.
-localization_priority: Normal
+ms.localizationpriority: medium
 doc_type: apiPageType
 ms.prod: governance
 author: shauliu1
-ms.openlocfilehash: 8c2fec79729b4ede406b27e973eaa23ae912baf3
-ms.sourcegitcommit: 01755ac7c0ab7becf28052e05e58567caa8364cd
+ms.openlocfilehash: ffb0a8a8b742df4b7549964f975484be71f7dc51
+ms.sourcegitcommit: 08e9b0bac39c1b1d2c8a79539d24aaa93364baf2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/21/2021
-ms.locfileid: "58454224"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59767214"
 ---
 # <a name="privilegedroleassignmentrequest-my"></a>privilegedRoleAssignmentRequest: my
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
+[!INCLUDE [pim-v1AADRoles-deprecation](../../includes/pim-v1aadroles-deprecation.md)]
 
 Obter as solicitações de atribuição de função privilegiada do solicitante.
 
@@ -35,7 +37,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 POST /privilegedRoleAssignmentRequests/my
 ```
 ## <a name="optional-query-parameters"></a>Parâmetros de consulta opcionais
-Este método dá suporte a [Parâmetros de consulta OData](http://graph.microsoft.io/docs/overview/query_parameters) para ajudar a personalizar a resposta.
+Este método dá suporte a [Parâmetros de consulta OData](/graph/query-parameters) para ajudar a personalizar a resposta.
 
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
 | Nome      |Descrição|

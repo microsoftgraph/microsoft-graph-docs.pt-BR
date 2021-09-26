@@ -2,15 +2,15 @@
 title: Listar recursos de tarefa
 description: Obter todos os recursos associados a uma atribuição.
 author: dipakboyed
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: ba3c42452b589a27ebf60face8e7629eed8bf966
-ms.sourcegitcommit: 1e9a53e7b8e67349288f5cfbabe8355de83817b0
+ms.openlocfilehash: 53414b73b6e069da32c1cee41c3280cdca6199b8
+ms.sourcegitcommit: 08e9b0bac39c1b1d2c8a79539d24aaa93364baf2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/17/2021
-ms.locfileid: "58367034"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59765557"
 ---
 # <a name="list-assignment-resources"></a>Listar recursos de tarefa
 
@@ -18,15 +18,15 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Obter todos os recursos associados a uma atribuição.
+Obter todos os recursos associados a uma [atribuição](../resources/educationassignment.md).
 
 ## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegada (conta corporativa ou de estudante) |  EduAssignments.ReadBasic, EduAssignments.ReadWriteBasic, EduAssignments.Read, EduAssignments.ReadWrite  |
-|Delegada (conta pessoal da Microsoft) |  Sem suporte.  |
+|Delegado (conta corporativa ou de estudante) |  EduAssignments.ReadBasic, EduAssignments.ReadWriteBasic, EduAssignments.Read, EduAssignments.ReadWrite  |
+|Delegado (conta pessoal da Microsoft) |  Sem suporte.  |
 |Aplicativo | EduAssignments.ReadBasic.All, EduAssignments.ReadWriteBasic.All, EduAssignments.Read.All, EduAssignments.ReadWrite.All | 
 
 ## <a name="http-request"></a>Solicitação HTTP
@@ -34,6 +34,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 ```http
 GET /education/classes/{id}/assignments/{id}/resources
 ```
+
 ## <a name="optional-query-parameters"></a>Parâmetros de consulta opcionais
 Este método dá suporte a [Parâmetros de consulta OData](/graph/query-parameters) para ajudar a personalizar a resposta.
 
@@ -43,20 +44,23 @@ Este método dá suporte a [Parâmetros de consulta OData](/graph/query-paramete
 | Autorização  | {token} de portador. Obrigatório.  |
 
 ## <a name="request-body"></a>Corpo da solicitação
-Não forneça um corpo de solicitação para esse método.
+Não fornece um corpo de solicitação para este método.
+
 ## <a name="response"></a>Resposta
 Se tiver êxito, este método retornará um código de resposta e uma coleção de objetos `200 OK` [educationAssignmentResource](../resources/educationassignmentresource.md) no corpo da resposta.
+
 ## <a name="example"></a>Exemplo
-##### <a name="request"></a>Solicitação
+### <a name="request"></a>Solicitação
 Este é um exemplo de solicitação.
 
 # <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
+  "sampleKeys": ["f4a941ff-9da6-4707-ba5b-0eae93cad0b4","9018ae7a-9953-4796-a152-4c54e0910922"],
   "name": "get_resources_1"
 }-->
 ```msgraph-interactive
-GET https://graph.microsoft.com/beta/education/classes/11012/assignments/19002/resources
+GET https://graph.microsoft.com/beta/education/classes/f4a941ff-9da6-4707-ba5b-0eae93cad0b4/assignments/9018ae7a-9953-4796-a152-4c54e0910922/resources
 ```
 # <a name="c"></a>[C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-resources-1-csharp-snippets.md)]
@@ -76,7 +80,7 @@ GET https://graph.microsoft.com/beta/education/classes/11012/assignments/19002/r
 
 ---
 
-##### <a name="response"></a>Resposta
+### <a name="response"></a>Resposta
 Este é um exemplo de resposta. 
 
 >**Observação:** o objeto de resposta mostrado aqui pode ser encurtado para legibilidade.
@@ -93,62 +97,62 @@ Content-type: application/json
 Content-length: 1011
 
 {
-  "value": [
-    {
-      "distributeForStudentWork": false,
-      "resource": {
-          "@odata.type": "#microsoft.graph.educationLinkResource",
-          "displayName": "Microsoft Homepage",
-          "createdDateTime": "2017-10-21T07:52:45.5675913Z",
-          "createdBy": {
-              "application": null,
-              "device": null,
-              "user": {
-                  "id": "63cc91d2-59c7-4732-9594-35b91a26b340",
-                  "displayName": null
-              }
-          },
-          "lastModifiedDateTime": "2017-10-21T07:52:45.5675913Z",
-          "lastModifiedBy": {
-              "application": null,
-              "device": null,
-              "user": {
-                  "id": "63cc91d2-59c7-4732-9594-35b91a26b340",
-                  "displayName": null
-              }
-          },
-          "link": "https://www.microsoft.com"
-      },
-      "id": "850f51b7-1df9-4ec0-bd62-64a0214b9cbf"
-    },
-    {
-      "distributeForStudentWork": true,
-      "resource": {
-          "@odata.type": "#microsoft.graph.educationWordResource",
-          "displayName": "Report.docx",
-          "createdDateTime": "2017-10-21T07:52:53.9863696Z",
-          "createdBy": {
-              "application": null,
-              "device": null,
-              "user": {
-                  "id": "63cc91d2-59c7-4732-9594-35b91a26b340",
-                  "displayName": null
-              }
-          },
-          "lastModifiedDateTime": "2017-10-21T07:52:53.9863696Z",
-          "lastModifiedBy": {
-              "application": null,
-              "device": null,
-              "user": {
-                  "id": "63cc91d2-59c7-4732-9594-35b91a26b340",
-                  "displayName": null
-              }
-          },
-          "fileUrl": "https://graph.microsoft.com/v1.0/drives/b!8-QjN2tsv0WyGnTv7vOvnQkmGHbbeMNLqYKONmHLVnvCVmBYIGpeTZ_iul5AdW9f/items/017NJZI27BCN2QI2H7HJGLIVPXR6SD2DH6"
-      },
-      "id": "f2387c3b-ec39-4bf2-a399-d7242677f024"
-    }
-  ]
+    "value": [
+        {
+            "distributeForStudentWork": false,
+            "id": "eec7f642-9d9a-406f-bbae-4b3b2c12e273",
+            "resource": {
+                "@odata.type": "#microsoft.graph.educationFileResource",
+                "displayName": "First file uploaded as Education resource by t-cristobalb",
+                "createdDateTime": "2021-07-16T23:41:53.9378423Z",
+                "lastModifiedDateTime": "2021-07-16T23:41:53.9378423Z",
+                "fileUrl": "https://graph.microsoft.com/beta/drives/b!DPA6q59Tw0mtgmyXRUmrQRqBZTesG-lMkl1cBmvvMeU6BLWBcGc_R6UgCKyYyTin/items/016XPCQEA5VVDIMU4BSFG3VBI37MPHZ3OE",
+                "createdBy": {
+                    "application": null,
+                    "device": null,
+                    "user": {
+                        "id": "f3a5344e-dbde-48b0-be24-b5b62a243836",
+                        "displayName": null
+                    }
+                },
+                "lastModifiedBy": {
+                    "application": null,
+                    "device": null,
+                    "user": {
+                        "id": "f3a5344e-dbde-48b0-be24-b5b62a243836",
+                        "displayName": null
+                    }
+                }
+            }
+        },
+        {
+            "distributeForStudentWork": false,
+            "id": "ceb3a7e7-158e-4164-9f80-104d14884389",
+            "resource": {
+                "@odata.type": "#microsoft.graph.educationPowerPointResource",
+                "displayName": "state diagram.pptx",
+                "createdDateTime": "2021-08-27T14:42:04.8778499Z",
+                "lastModifiedDateTime": "2021-08-27T14:42:04.8778499Z",
+                "fileUrl": "https://graph.microsoft.com/beta/drives/b!DPA6q59Tw0mtgmyXRUmrQRqBZTesG-lMkl1cBmvvMeU6BLWBcGc_R6UgCKyYyTin/items/016XPCQEGRJFHRKPSI6RB3XQ6HGTB4L4FV",
+                "createdBy": {
+                    "application": null,
+                    "device": null,
+                    "user": {
+                        "id": "f3a5344e-dbde-48b0-be24-b5b62a243836",
+                        "displayName": null
+                    }
+                },
+                "lastModifiedBy": {
+                    "application": null,
+                    "device": null,
+                    "user": {
+                        "id": "f3a5344e-dbde-48b0-be24-b5b62a243836",
+                        "displayName": null
+                    }
+                }
+            }
+        }
+    ]
 }
 ```
 

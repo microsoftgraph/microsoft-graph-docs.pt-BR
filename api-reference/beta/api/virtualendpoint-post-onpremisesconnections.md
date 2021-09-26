@@ -2,15 +2,15 @@
 title: Criar cloudPcOnPremisesConnection
 description: Crie uma conexão local para provisionar PCs na Nuvem.
 author: AshleyYangSZ
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: cloud-pc
 doc_type: apiPageType
-ms.openlocfilehash: eba6d573f22e07c125349efb72667e458642e7e7
-ms.sourcegitcommit: a598c09b73e4e43eea5f4aaefea7ffe062e15c39
+ms.openlocfilehash: 6562bfb388a9bcb3997e36cea1ac02bd0043375e
+ms.sourcegitcommit: 08e9b0bac39c1b1d2c8a79539d24aaa93364baf2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/22/2021
-ms.locfileid: "53534527"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59763097"
 ---
 # <a name="create-cloudpconpremisesconnection"></a>Criar cloudPcOnPremisesConnection
 
@@ -19,8 +19,6 @@ Namespace: microsoft.graph
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Crie um novo [objeto cloudPcOnPremisesConnection](../resources/cloudpconpremisesconnection.md) para provisionar PCs de nuvem.
-
-[!INCLUDE [cloudpc-api-preview](../../includes/cloudpc-api-preview.md)]
 
 ## <a name="permissions"></a>Permissões
 
@@ -58,14 +56,14 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar [o cloud
 
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|displayName|String|O nome de exibição da conexão local.|
-|subscriptionId|Cadeia de Caracteres|A ID da assinatura de destino do Azure associada ao seu locatário.|
-|adDomainName|Cadeia de Caracteres|O FQDN (nome de domínio totalmente qualificado) do domínio do Active Directory que você deseja ingressar.|
-|adDomainUsername|Cadeia de Caracteres|O nome de usuário de uma conta do Active Directory (conta de usuário ou serviço) que tem permissões para criar objetos de computador no Active Directory. Formato obrigatório: admin@contoso.com.|
-|adDomainPassword|Cadeia de Caracteres|A senha associada a adDomainUsername.|
-|resourceGroupId|Cadeia de Caracteres|A ID do grupo de recursos de destino. Formato obrigatório: "/subscriptions/{subscription-id}/resourceGroups/{resourceGroupName}".|
-|virtualNetworkId|Cadeia de Caracteres|A ID da rede virtual de destino. Formato obrigatório: "/subscriptions/{subscription-id}/resourceGroups/{resourceGroupName}/providers/Microsoft.Network/virtualNetworks/{virtualNetworkName}".|
-|subnetId|Cadeia de Caracteres|A ID da sub-rede de destino. Formato obrigatório: "/subscriptions/{subscription-id}/resourceGroups/{resourceGroupName}/providers/Microsoft.Network/virtualNetworks/{virtualNetworkId}/subnets/{subnetName}".|
+|displayName|Cadeia de caracteres|O nome de exibição da conexão local.|
+|subscriptionId|String|A ID da assinatura de destino do Azure associada ao seu locatário.|
+|adDomainName|String|O FQDN (nome de domínio totalmente qualificado) do domínio do Active Directory que você deseja ingressar.|
+|adDomainUsername|Cadeia de caracteres|O nome de usuário de uma conta do Active Directory (conta de usuário ou serviço) que tem permissões para criar objetos de computador no Active Directory. Formato obrigatório: admin@contoso.com.|
+|adDomainPassword|String|A senha associada a adDomainUsername.|
+|resourceGroupId|Cadeia de caracteres|A ID do grupo de recursos de destino. Formato obrigatório: "/subscriptions/{subscription-id}/resourceGroups/{resourceGroupName}".|
+|virtualNetworkId|String|A ID da rede virtual de destino. Formato obrigatório: "/subscriptions/{subscription-id}/resourceGroups/{resourceGroupName}/providers/Microsoft.Network/virtualNetworks/{virtualNetworkName}".|
+|subnetId|Cadeia de caracteres|A ID da sub-rede de destino. Formato obrigatório: "/subscriptions/{subscription-id}/resourceGroups/{resourceGroupName}/providers/Microsoft.Network/virtualNetworks/{virtualNetworkId}/subnets/{subnetName}".|
 
 ## <a name="response"></a>Resposta
 

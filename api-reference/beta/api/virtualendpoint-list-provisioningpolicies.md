@@ -2,15 +2,15 @@
 title: Listar cloudPcProvisioningPolicies
 description: Exibir as propriedades e as relações de todas as políticas de provisionamento do Cloud PC.
 author: AshleyYangSZ
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: cloud-pc
 doc_type: apiPageType
-ms.openlocfilehash: 1e363698ad649116c67ab3dcf117b8b0978068a8
-ms.sourcegitcommit: a598c09b73e4e43eea5f4aaefea7ffe062e15c39
+ms.openlocfilehash: 511ac27c2493cd11afc02ccc927472ab21133d24
+ms.sourcegitcommit: 08e9b0bac39c1b1d2c8a79539d24aaa93364baf2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/22/2021
-ms.locfileid: "53534534"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59763090"
 ---
 # <a name="list-provisioningpolicies"></a>Listar provisioningPolicies
 
@@ -20,8 +20,6 @@ Namespace: microsoft.graph
 
 Listar propriedades e relações dos objetos [cloudPcProvisioningPolicy.](../resources/cloudpcprovisioningpolicy.md)
 
-[!INCLUDE [cloudpc-api-preview](../../includes/cloudpc-api-preview.md)]
-
 ## <a name="permissions"></a>Permissões
 
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
@@ -30,7 +28,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |:---|:---|
 |Delegado (conta corporativa ou de estudante)|CloudPC.Read.All, CloudPC.ReadWrite.All|
 |Delegado (conta pessoal da Microsoft)|Sem suporte.|
-|Application|CloudPC.Read.All, CloudPC.ReadWrite.All|
+|Aplicativo|CloudPC.Read.All, CloudPC.ReadWrite.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
 

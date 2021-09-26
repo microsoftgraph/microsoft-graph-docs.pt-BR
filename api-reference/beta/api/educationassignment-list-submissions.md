@@ -1,16 +1,16 @@
 ---
 title: Listar envios
-description: Listar todos os envios associados a essa atribuição. Um professor ou um aplicativo com permissões de aplicativo pode obter todos os envios enquanto um aluno só pode receber envios aos que estão associados.
+description: Listar todos os envios associados a uma atribuição.
 author: dipakboyed
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: c71799d74a2714028d90531f6c8dcb8257e13e84
-ms.sourcegitcommit: 1e9a53e7b8e67349288f5cfbabe8355de83817b0
+ms.openlocfilehash: 0f28375a67b7db090fa1a3dda5f7bb91ddc900cd
+ms.sourcegitcommit: 08e9b0bac39c1b1d2c8a79539d24aaa93364baf2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/17/2021
-ms.locfileid: "58367104"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59763176"
 ---
 # <a name="list-submissions"></a>Listar envios
 
@@ -18,15 +18,17 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Listar todos os envios associados a essa atribuição. Um professor ou um aplicativo com permissões de aplicativo pode obter todos os envios enquanto um aluno só pode receber envios aos que estão associados.
+Listar todos os envios associados a uma [atribuição](../resources/educationassignment.md).
+
+Um professor ou um aplicativo com permissões de aplicativo pode obter todos os envios enquanto um aluno só pode receber envios aos que estão associados.
 
 ## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegada (conta corporativa ou de estudante) |  EduAssignments.ReadBasic, EduAssignments.ReadWriteBasic, EduAssignments.Read, EduAssignments.ReadWrite  |
-|Delegada (conta pessoal da Microsoft) |  Sem suporte.  |
+|Delegado (conta corporativa ou de estudante) |  EduAssignments.ReadBasic, EduAssignments.ReadWriteBasic, EduAssignments.Read, EduAssignments.ReadWrite  |
+|Delegado (conta pessoal da Microsoft) |  Sem suporte.  |
 |Aplicativo | EduAssignments.ReadBasic.All, EduAssignments.ReadWriteBasic.All, EduAssignments.Read.All, EduAssignments.ReadWrite.All | 
 
 ## <a name="http-request"></a>Solicitação HTTP
@@ -34,6 +36,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 ```http
 GET /education/classes/{id}/assignments/{id}/submissions
 ```
+
 ## <a name="optional-query-parameters"></a>Parâmetros de consulta opcionais
 Este método dá suporte a [Parâmetros de consulta OData](/graph/query-parameters) para ajudar a personalizar a resposta.
 
@@ -43,20 +46,23 @@ Este método dá suporte a [Parâmetros de consulta OData](/graph/query-paramete
 | Autorização  | {token} de portador. Obrigatório.  |
 
 ## <a name="request-body"></a>Corpo da solicitação
-Não forneça um corpo de solicitação para esse método.
+Não fornece um corpo de solicitação para este método.
+
 ## <a name="response"></a>Resposta
 Se tiver êxito, este método retornará um código `200 OK` de resposta e uma coleção de objetos [educationSubmission](../resources/educationsubmission.md) no corpo da resposta.
+
 ## <a name="example"></a>Exemplo
-##### <a name="request"></a>Solicitação
+### <a name="request"></a>Solicitação
 Este é um exemplo de solicitação.
 
 # <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
+  "sampleKeys": ["f4a941ff-9da6-4707-ba5b-0eae93cad0b4","3c77de7f-539b-49e1-9c96-1274f2f0ee3b"],
   "name": "get_submissions"
 }-->
 ```msgraph-interactive
-GET https://graph.microsoft.com/beta/education/classes/11021/assignments/19002/submissions
+GET https://graph.microsoft.com/beta/education/classes/f4a941ff-9da6-4707-ba5b-0eae93cad0b4/assignments/3c77de7f-539b-49e1-9c96-1274f2f0ee3b/submissions
 ```
 # <a name="c"></a>[C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-submissions-csharp-snippets.md)]
@@ -76,7 +82,7 @@ GET https://graph.microsoft.com/beta/education/classes/11021/assignments/19002/s
 
 ---
 
-##### <a name="response"></a>Resposta
+### <a name="response"></a>Resposta
 Este é um exemplo de resposta. 
 
 >**Observação:** o objeto de resposta mostrado aqui pode ser encurtado para legibilidade.
@@ -93,31 +99,44 @@ Content-type: application/json
 Content-length: 873
 
 {
-  "value": [
-    {
-      "id": "33223",
-      "recipient": {
-        "userId": "13015",
-        "@Odata.type":"microsoft.graph.educationSubmissionRecipient"
-      },
-      "releasedBy": {
-          "user": {
-            "displayName": "Susana Rocha",
-            "id": "14012"
-          },
-        },
-      "releasedDateTime": "2014-01-01T00:00:00Z",
-      "resourcesFolderUrl": "https://graph.microsoft.com/v1.0/drives/b!8-QjN2tsv0WyGnTv7vOvnQkmGHbbeMNLqYKONmHLVnvCVmBYIGpeT456457AdW9f/items/017NJZI25NOB5XZNLABF7646XAMDZTQQ6T",
-      "status": "working",
-      "submittedBy": {
-          "user": {
-            "displayName": "Susana Rocha",
-            "id": "14012"
-          },
-        },
-      "submittedDateTime": "2014-01-01T00:00:00Z"
-    }
-  ]
+    "value": [
+        {
+            "status": "working",
+            "submittedDateTime": null,
+            "unsubmittedDateTime": null,
+            "returnedDateTime": null,
+            "resourcesFolderUrl": "https://graph.microsoft.com/beta/drives/b!DPA6q59Tw0mtgmyXRUmrQRqBZTesG-lMkl1cBmvvMeUEWrOk89nKRpUEr4ZhNYBc/items/016XPCQEDJCE5LX4OXABF37QSORAK5WKQD",
+            "id": "4af73d2b-6b9c-493f-0688-979087bed39b",
+            "recipient": {
+                "@odata.type": "#microsoft.graph.educationSubmissionIndividualRecipient",
+                "userId": "80cefd93-8d88-40e2-b5d3-67898383e226"
+            },
+            "submittedBy": {
+                "application": null,
+                "device": null,
+                "user": {
+                    "id": "80cefd93-8d88-40e2-b5d3-67898383e226",
+                    "displayName": null
+                }
+            },
+            "unsubmittedBy": {
+                "application": null,
+                "device": null,
+                "user": {
+                    "id": null,
+                    "displayName": null
+                }
+            },
+            "returnedBy": {
+                "application": null,
+                "device": null,
+                "user": {
+                    "id": null,
+                    "displayName": null
+                }
+            }
+        }
+    ]
 }
 ```
 

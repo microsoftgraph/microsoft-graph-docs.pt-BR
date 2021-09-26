@@ -1,16 +1,16 @@
 ---
 title: Usar a API do Microsoft Graph para acessar as notificações de alteração
 description: Fornecer notificações de alteração aos clientes.
-localization_priority: Normal
+ms.localizationpriority: medium
 author: Jumaodhiss
 doc_type: conceptualPageType
 ms.prod: change-notifications
-ms.openlocfilehash: 6fcbfe79462bdd96e38a817f299feb4b43566fe5
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 9f38f0b8539652e2eaf68d1ef285c325e9501c51
+ms.sourcegitcommit: 08e9b0bac39c1b1d2c8a79539d24aaa93364baf2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58751899"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59763419"
 ---
 # <a name="use-the-microsoft-graph-api-to-get-change-notifications"></a>Usar a API do Microsoft Graph para acessar as notificações de alteração
 
@@ -38,8 +38,8 @@ Usando a API do Microsoft Graph, um aplicativo pode se inscrever para alteraçõ
 | Teams [callRecord][] | Mudanças para _todos os_ registros de chamadas: `/communications/callRecords` | Não |
 | [Canal][] do Teams | Alterações nos canais em todas as equipes:<br>`/teams/getAllChannels` <br>Alterações no canal em uma equipe específica:<br>`/teams/{id}/channels` | Sim |
 | [Chat][] do Teams | Alterações em qualquer chat no locatário:<br>`/chats` <br>Alterações em um chat específico:<br>`/chats/{id}` | Sim |
-| Teams [chatMessage][] | Alterações nas mensagens de chat em todos os canais de todas as equipes:<br>`/teams/getAllMessages` <br>Alterações nas mensagens de um chat específico:<br>`/teams/{id}/channels/{id}/messages`<br>Alterações nas mensagens de todos os chats:<br>`/chats/getAllMessages` <br>Alterações nas mensagens de um chat específico:<br>`/chats/{id}/messages` | Sim |
-| [conversationMember][] do Teams | Alterações na associação em uma equipe específica:<br>`/teams/{id}/members` <br> Alterações na associação em um chat específico:<br>`/chats/{id}/members` <br> Alterações na associação em todos os chats:<br>`/chats/getAllMembers` | Sim |
+| Equipes [chatmessage][] | Alterações nas mensagens de chat em todos os canais de todas as equipes:<br>`/teams/getAllMessages` <br>Alterações nas mensagens de um chat específico:<br>`/teams/{id}/channels/{id}/messages`<br>Alterações nas mensagens de todos os chats:<br>`/chats/getAllMessages` <br>Alterações nas mensagens de um chat específico:<br>`/chats/{id}/messages`<br>Alterações nas mensagens de chat em todos os chats de que um usuário específico faz parte:<br>`/users/{id}/chats/getAllMessages` | Sim |
+| [conversationMember][] do Teams | Alterações na associação em uma equipe específica:<br>`/teams/{id}/members` <br> Alterações na associação em um chat específico:<br>`/chats/{id}/members` <br> Alterações na associação em todos os chats:<br>`/chats/getAllMembers` <br> Alterações na associação em todos os canais em uma equipe específica:<br>`teams/{id}/channels/getAllMembers` | Sim |
 | Teams [presença][] | Alterações na presença de um único usuário: `/communications/presences/{id}` <br> Alterações em várias presenças de usuário:<br> `/communications/presences?$filter=id in ({id},{id}...)` | Sim |
 | Equipe do [Teams][] | Alterações em qualquer equipe no locatário:<br>`/teams` <br>Alterações em uma equipe específica:<br>`/teams/{id}` | Sim |
 | [todoTask][] | Alterações em todas as tarefas em uma lista de tarefas específica:<br>`/me/todo/lists/{todoTaskListId}/tasks` | Não |
@@ -56,7 +56,7 @@ Em geral, as operações de assinatura exigem permissão de leitura ao recurso. 
 | :------------------------------------- | :------------------------------------------------------------------------------------ |
 | Delegado - conta corporativa ou de estudante     | [alert][], channel , chat , [contact][], [conversation][], [conversationMember][], [driveItem][], [list][], [event][], [group][] [,][] [message][], user , [][] [presence][], [chatMessage][] (preview), [team][], [todoTask][] [][] |
 | Delegado - conta pessoal da Microsoft | [contact][], [driveItem][], [list][], [event][], [message][],[todoTask][]                                     |
-| Application                            | [alert][], [channel][], [chat][], [contact][], [driveItem][], [list][] [,][]event , [group][] [,][] [message][], user , [callRecord][], [chatMessage][], [conversationMember][], [printer][], [printTaskDefinition][], [team][] |
+| Aplicativo                            | [alert][], [channel][], [chat][], [contact][], [driveItem][], [list][] [,][]event , [group][] [,][] [message][], user , [callRecord][], [chatMessage][], [conversationMember][], [printer][], [printTaskDefinition][], [team][] |
 
 ## <a name="see-also"></a>Confira também
 

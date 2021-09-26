@@ -2,15 +2,15 @@
 title: Excluir cloudPcDeviceImage
 description: Exclua um objeto cloudPcDeviceImage.
 author: AshleyYangSZ
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: cloud-pc
 doc_type: apiPageType
-ms.openlocfilehash: 6e2e3a3bef480c8b269a57819f32f4a00e3b08f3
-ms.sourcegitcommit: d700b7e3b411e3226b5adf1f213539f05fe802e8
+ms.openlocfilehash: 9bceb3f3f0bb89047a4710a779096ec72c16d600
+ms.sourcegitcommit: 08e9b0bac39c1b1d2c8a79539d24aaa93364baf2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52546858"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59766611"
 ---
 # <a name="delete-cloudpcdeviceimage"></a>Excluir cloudPcDeviceImage
 
@@ -20,7 +20,6 @@ Namespace: microsoft.graph
 
 [Exclua um objeto cloudPcDeviceImage.](../resources/cloudpcdeviceimage.md)
 
-[!INCLUDE [cloudpc-api-preview](../../includes/cloudpc-api-preview.md)]
 ## <a name="permissions"></a>Permissões
 
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).

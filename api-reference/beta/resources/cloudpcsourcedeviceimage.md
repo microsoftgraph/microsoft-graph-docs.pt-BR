@@ -2,15 +2,15 @@
 title: Tipo de recurso cloudPcSourceDeviceImage
 description: 'A imagem de origem associada à sua assinatura do Azure. '
 author: AshleyYangSZ
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: cloud-pc
 doc_type: resourcePageType
-ms.openlocfilehash: 1b0c656142ddad5af3d0af7778d0ae04f0c5d7b4
-ms.sourcegitcommit: de175a11806f9e9ba3c916384e897aee1cc7f75c
+ms.openlocfilehash: 3de1c3582ca792225b6aa7e6d36b5b33594249e2
+ms.sourcegitcommit: 08e9b0bac39c1b1d2c8a79539d24aaa93364baf2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/09/2021
-ms.locfileid: "49790738"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59766471"
 ---
 # <a name="cloudpcsourcedeviceimage-resource-type"></a>Tipo de recurso cloudPcSourceDeviceImage
 
@@ -20,13 +20,11 @@ Namespace: microsoft.graph
 
 A imagem de origem associada à sua assinatura do Azure.
 
-[!INCLUDE [cloudpc-api-preview](../../includes/cloudpc-api-preview.md)]
-
 ## <a name="properties"></a>Propriedades
 
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|id|Cadeia de caracteres|A ID da imagem de origem.|
+|id|String|A ID da imagem de origem.|
 |displayName|Cadeia de caracteres|O nome de exibição da imagem de origem.|
 
 ## <a name="relationships"></a>Relações

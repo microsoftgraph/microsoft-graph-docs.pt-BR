@@ -5,12 +5,12 @@ author: sureshja
 ms.localizationpriority: high
 ms.prod: applications
 doc_type: apiPageType
-ms.openlocfilehash: f6b8332b072fa29feabf60083712086990ade28b
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 8e9fe8f5d37b8613a081c603145822048685cbf8
+ms.sourcegitcommit: 08e9b0bac39c1b1d2c8a79539d24aaa93364baf2
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59023049"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59508331"
 ---
 # <a name="get-application"></a>Obter aplicativo
 
@@ -32,21 +32,31 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 ```http
 GET /applications/{id}
 ```
+
 ## <a name="optional-query-parameters"></a>Parâmetros de consulta opcionais
-Este método suporta o `$select` [parâmetro de consulta OData](/graph/query-parameters) para recuperar as propriedades específicas do aplicativo. 
+
+Este método suporta o `$select` [parâmetro de consulta OData](/graph/query-parameters) para recuperar as propriedades específicas do aplicativo.
+
+Por padrão, esta API não retorna o valor da **chave** pública da chave na propriedade **keyCredential**, a menos que **keyCredentials** seja especificado em uma `$select`consulta. Por exemplo, `$select=id,appId,keyCredentials`.
+
+O uso de `$select` para obter **keyCredentials** para aplicativos tem um limite de aceleração de 150 solicitações por minuto para cada locatário.
 
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
+
 | Nome           | Descrição                |
 |:---------------|:---------------------------|
 | Autorização  | {token} de portador. Obrigatório.  |
 
 ## <a name="request-body"></a>Corpo da solicitação
+
 Não forneça um corpo de solicitação para esse método.
 
 ## <a name="response"></a>Resposta
 
 Se bem-sucedido, este método retorna um código de resposta `200 OK` e um objeto [application](../resources/application.md) no corpo da resposta.
+
 ## <a name="examples"></a>Exemplos
+
 ### <a name="request"></a>Solicitação
 Este é um exemplo da solicitação.
 

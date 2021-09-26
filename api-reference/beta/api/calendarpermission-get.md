@@ -1,20 +1,22 @@
 ---
 title: Obter calendarPermission
 description: Obter as propriedades e as relações do objeto calendarpermission.
+author: Harini84
 ms.localizationpriority: medium
-author: sochowdh
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 6e950d3a8d8fd860408a266c7fed8e4b361bf51c
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 79ee15b890fb8acbb69523982c0f087aa60cf4ef
+ms.sourcegitcommit: 08e9b0bac39c1b1d2c8a79539d24aaa93364baf2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59031842"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59765750"
 ---
 # <a name="get-calendarpermission"></a>Obter calendarPermission
 
 Namespace: microsoft.graph
+
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Obter o objeto de permissões especificado de um usuário ou calendário de grupo que foi compartilhado.
 
@@ -55,7 +57,7 @@ Este método dá suporte a alguns parâmetros de consulta OData para ajudar a pe
 
 | Nome      |Descrição|
 |:----------|:----------|
-| Autorização | Portador {token} |
+| Autorização | {token} de portador. Obrigatório. |
 
 ## <a name="request-body"></a>Corpo da solicitação
 
@@ -98,7 +100,6 @@ GET https://graph.microsoft.com/beta/users/{id}/calendar/calendarPermissions/{id
 
 ---
 
-
 ### <a name="response"></a>Resposta
 
 Este é um exemplo de resposta.
@@ -119,7 +120,7 @@ Content-type: application/json
   "emailAddress": {
     "name": "My Organization",
   },
-  "isRemovable": true,
+  "isRemovable": false,
   "isInsideOrganization": true,
   "role": "write",
   "allowedRoles": [
@@ -142,5 +143,3 @@ Content-type: application/json
   "section": "documentation",
   "tocPath": ""
 }-->
-
-

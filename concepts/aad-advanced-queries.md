@@ -4,12 +4,12 @@ description: Os objetos do diretório Microsoft Azure Active Directory suportam 
 author: Licantrop0
 ms.localizationpriority: high
 ms.custom: graphiamtop20, scenarios:getting-started
-ms.openlocfilehash: 98147475615b34ad45d9f4f14fb67c69e1f8b96a
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: a1036aefdd9debaa54631a43f08867a1ef430c02
+ms.sourcegitcommit: 08e9b0bac39c1b1d2c8a79539d24aaa93364baf2
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59142443"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59765317"
 ---
 # <a name="advanced-query-capabilities-on-azure-ad-directory-objects"></a>Recursos avançados de consulta nos objetos do diretório Microsoft Azure Active Directory
 
@@ -213,3 +213,4 @@ Content-type: application/json
 + [Usar parâmetros de consulta para personalizar respostas](/graph/query-parameters)
 + [Limitações do parâmetro de consulta](known-issues.md#query-parameter-limitations)
 + [Usar o parâmetro de consulta $search para corresponder a um critério de pesquisa](/graph/search-query-parameter)
++ [Explorar os recursos de consulta avançados para objetos de diretório do Azure Active Directory com o .NET SDK](https://github.com/microsoftgraph/dotnet-aad-query-sample/)

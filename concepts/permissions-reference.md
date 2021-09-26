@@ -4,12 +4,12 @@ description: O Microsoft Graph expõe as permissões granulares que controlam o 
 author: jackson-woods
 ms.localizationpriority: high
 ms.custom: graphiamtop20, scenarios:getting-started
-ms.openlocfilehash: 790bfb908c54a5eec2e2274495f761baaea5fec9
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: eb6644eae1f41f3eb5422a385720f22d88b0aa19
+ms.sourcegitcommit: 08e9b0bac39c1b1d2c8a79539d24aaa93364baf2
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59089316"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59763328"
 ---
 # <a name="microsoft-graph-permissions-reference"></a>Referência de permissões do Microsoft Graph
 
@@ -924,7 +924,7 @@ Para cenários mais complexos que envolvem várias permissões, confira [Cenári
 | _Group.ReadWrite.All_ | Ler e gravar todos os grupos | Permite que o aplicativo crie grupos, leia e atualize as associações do grupo e exclua grupos. Também permite ao aplicativo ler e escrever o calendário, as conversas, os arquivos e outros tipos de conteúdo de grupos para todos os grupos. Todas essas operações podem ser executadas pelo aplicativo sem um usuário conectado.<br/><br/>**Observação:** nem todas as APIs de grupo oferecem suporte ao acesso usando permissões somente de aplicativo. Confira exemplos nos [problemas conhecidos](known-issues.md).| Sim |
 | _Group.Selected_ |    Acessar grupos selecionados | **Observação: Essa permissão está exposta no portal do Azure para um recurso que não está disponível para uso geral. Não use essa permissão, pois ela está sujeita a alterações.** | Sim |
 | _GroupMember.Read.All_ |    Ler associações de grupo | Permite que o aplicativo leia grupos e as propriedades básicas do grupo para todos os grupos sem um usuário conectado. | Sim |
-| _GroupMember.ReadWrite.All_ |    Ler e gravar associações de grupo | Permite que o aplicativo liste grupos, leia propriedades básicas, leia e atualize a associação dos grupos aos quais esse aplicativo tem acesso sem um usuário conectado. As propriedades e os proprietários do grupo não podem ser atualizados e os grupos não podem ser excluídos. | Sim |
+| _GroupMember.ReadWrite.All_ |    Ler e gravar associações de grupo | Permite que o aplicativo liste grupos, leia propriedades básicas, leia e atualize a associação dos grupos sem um usuário conectado. As propriedades e os proprietários do grupo não podem ser atualizados e os grupos não podem ser excluídos. | Sim |
 | _Group.Create_ |    Criar grupos | Permite que o aplicativo de chamada crie grupos sem um usuário conectado. Não permite ler, atualizar ou excluir grupos. | Sim |
 
 ### <a name="remarks"></a>Comentários
@@ -1359,13 +1359,15 @@ Publique uma notificação centrada no usuário, que pode ser entregue aos vári
 |:----------------|:------------------|:-------------|:-----------------------|:--------------|
 |_OnlineMeetings.Read_|Ler Reunião Online.|Permite que um aplicativo leia detalhes da reunião online em nome do usuário conectado.|Não|Não|
 |_OnlineMeetings.ReadWrite_|Leia e Crie Reuniões Online.|Permite que um aplicativo crie e leia as reuniões online em nome do usuário conectado. |Não|Não|
+|_OnlineMeetingArtifact.Read.All_|Ler artefatos de Reunião Online.|Permite que o aplicativo leia os artefatos da reunião online em nome do usuário conectado. |Não|Não|
 
 #### <a name="application-permissions"></a>Permissões de aplicativos
 
 |Permissão    |Exibir Cadeia de Caracteres   |Descrição |Consentimento Obrigatório do Administrador |
 |:-----------------------------|:-----------------------------------------|:-----------------|:-----------------|
-|_OnlineMeetings.Read.All_|Ler detalhes de Reunião Online do aplicativo |Permite que o aplicativo leia os detalhes da reunião online em sua organização, sem um usuário conectado.|Sim|
-|_OnlineMeetings.ReadWrite.All_|Ler detalhes de Reunião Online a partir do aplicativo|Permite que um aplicativo crie e leia as reuniões online sem um usuário conectado.|Sim|
+|_OnlineMeetings.Read.All_|Ler detalhes de Reunião Online do aplicativo |Permite que o aplicativo leia os detalhes da Reunião Online em sua organização, sem um usuário conectado.|Sim|
+|_OnlineMeetings.ReadWrite.All_|Ler detalhes de Reunião Online a partir do aplicativo|Permite que um aplicativo crie e leia as Reuniões Online sem um usuário conectado.|Sim|
+|_OnlineMeetingArtifact.Read.All_|Ler artefatos de Reunião Online do aplicativo |Permite que o aplicativo leia os artefatos da Reunião Online em sua organização, sem um usuário conectado.|Sim|
 
 > **Importante** os administradores podem configurar [política de acesso a aplicativos](cloud-communication-online-meeting-application-access-policy.md) para permitir que os aplicativos acessem as reuniões online em nome de um usuário.
 

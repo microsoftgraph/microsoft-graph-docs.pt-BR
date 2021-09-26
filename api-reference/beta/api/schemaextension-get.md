@@ -1,16 +1,16 @@
 ---
 title: Get schemaExtension
 description: Obter as propriedades da definição de esquemaExtension especificada.
-localization_priority: Normal
+ms.localizationpriority: medium
 author: dkershaw10
 doc_type: apiPageType
 ms.prod: extensions
-ms.openlocfilehash: bb1cd6e7869faaf67e378a2e24709226c0afc14f
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: 40a8c9a413d35b2f9817d673bedb3e90e3a7d00b
+ms.sourcegitcommit: 08e9b0bac39c1b1d2c8a79539d24aaa93364baf2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52051988"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59766849"
 ---
 # <a name="get-schemaextension"></a>Get schemaExtension
 
@@ -28,15 +28,13 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |:--------------------|:---------------------------------------------------------|
 |Delegado (conta corporativa ou de estudante) | User.Read, Application.Read.All  |
 |Delegado (conta pessoal da Microsoft) | Sem suporte.    |
-|Application | Application.Read.All |
+|Aplicativo | Application.Read.All |
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /schemaExtensions/{id}
 ```
-## <a name="optional-query-parameters"></a>Parâmetros de consulta opcionais
-Este método dá suporte a [Parâmetros de consulta OData](/graph/query-parameters) para ajudar a personalizar a resposta.
 
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
 | Nome      |Descrição|
@@ -51,8 +49,8 @@ Não forneça um corpo de solicitação para esse método.
 
 Se tiver êxito, este método retornará um código de resposta e um `200 OK` [objeto schemaExtension](../resources/schemaextension.md) no corpo da resposta.
 ## <a name="example"></a>Exemplo
-##### <a name="request"></a>Solicitação
-Este é um exemplo da solicitação.
+### <a name="request"></a>Solicitação
+Este é um exemplo de solicitação.
 
 # <a name="http"></a>[HTTP](#tab/http)
 <!-- {
@@ -80,8 +78,8 @@ GET https://graph.microsoft.com/beta/schemaExtensions/graphlearn_test
 
 ---
 
-##### <a name="response"></a>Resposta
-Veja a seguir um exemplo da resposta. Observação: o objeto de resposta mostrado aqui pode ser encurtado para legibilidade.
+### <a name="response"></a>Resposta
+Eis um exemplo da resposta. Observação: o objeto de resposta exibido aqui pode ser reduzido para facilitar a leitura.
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -90,7 +88,6 @@ Veja a seguir um exemplo da resposta. Observação: o objeto de resposta mostrad
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 201
 
 {
     "id":"graphlearn_test",

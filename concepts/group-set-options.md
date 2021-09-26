@@ -3,12 +3,12 @@ title: Defina os comportamentos de grupo do Microsoft 365 e opções de provisio
 description: Usando o recurso de grupo no Microsoft Graph, você pode definir comportamentos e recursos de grupo específicos para provisionar ao criar um grupo do Microsoft 365.
 author: Jordanndahl
 ms.localizationpriority: high
-ms.openlocfilehash: fb7de5a435b781d7b1a6aefd899420476b4ac468
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 7a57dc26a5d1dafe59196edbe0750f78955be612
+ms.sourcegitcommit: 08e9b0bac39c1b1d2c8a79539d24aaa93364baf2
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59126580"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59507743"
 ---
 # <a name="set-microsoft-365-group-behaviors-and-provisioning-options-preview"></a>Definir comportamentos de grupo do Microsoft 365 e opções de provisionamento (visualização)
 
@@ -30,11 +30,11 @@ O recurso **grupo** expõe duas propriedades, **resourceBehaviorOptions** e **re
 | SubscribeNewGroupMembers|Os membros do grupo se inscreveram para receber conversas em grupo. |Os membros do grupo não recebem conversas em grupo.|
 | WelcomeEmailDisabled|Os emails de boas-vindas não serão enviados para novos membros.|Um email de boas-vindas será enviado para um novo membro do grupo.|
 
-**resourceProvisioningOptions** é uma coleção de strings que especifica os recursos do grupo a serem provisionados como parte da criação do grupo Microsoft 365, que normalmente não fazem parte da criação do grupo padrão.
+**resourceProvisioningOptions** é uma coleção de cadeia de caracteres que especifica os recursos do grupo a serem provisionados como parte do grupo Microsoft 365. Esses recursos podem ser especificados durante a criação ou atualização do grupo.
 
 | Valores com suporte para resourceProvisioningOptions   |Descrição| Padrão se não for definido |
 |:---------------|:--------|:------------|
-| Teams|Provisione este grupo como uma equipe no Microsoft Teams. Além disso, esse valor pode ser adicionado à coleção de cadeias de caracteres do **resourceProvisioningOptions** em uma [atualização de grupo](/graph/api/group-update?view=graph-rest-beta&preserve-view=true) por meio de uma `PATCH` operação, para converter um grupo existente do Microsoft 365 em uma equipe.| O grupo é um grupo normal do Microsoft 365 sem recursos do Teams.|
+| Teams|Provisione este grupo como uma equipe no Microsoft Teams. Além disso, esse valor também pode ser adicionado na [atualização do grupo](/graph/api/group-update?view=graph-rest-beta&preserve-view=true) por meio de uma operação `PATCH`, a fim de provisionar uma equipe de um grupo Microsoft 365 existente.| O grupo é um grupo normal do Microsoft 365 sem recursos do Teams.|
 
 
 ## <a name="see-also"></a>Confira também

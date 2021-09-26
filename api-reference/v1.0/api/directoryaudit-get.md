@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: SarahBar
 ms.prod: identity-and-access-reports
 doc_type: apiPageType
-ms.openlocfilehash: 766feedea9f514e9629adeac1930bdfe991b2b71
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 0f037471b4edddf11c954d15a12f0e425c639496
+ms.sourcegitcommit: 08e9b0bac39c1b1d2c8a79539d24aaa93364baf2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59038048"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59766296"
 ---
 # <a name="get-directoryaudit"></a>Obter directoryAudit
 
@@ -24,7 +24,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegada (conta corporativa ou de estudante) | AuditLog.Read.All e Directory.Read.All |
+|Delegado (conta corporativa ou de estudante) | AuditLog.Read.All e Directory.Read.All |
 |Delegado (conta pessoal da Microsoft) | Sem suporte   |
 |Aplicativo | AuditLog.Read.All e Directory.Read.All |
 
@@ -40,7 +40,7 @@ GET /auditLogs/directoryAudits/{id}
 
 ## <a name="optional-query-parameters"></a>Parâmetros de consulta opcionais
 
-Este método dá suporte a Parâmetros de consulta do OData para ajudar a personalizar a resposta. Para obter detalhes sobre como usar esses parâmetros, confira [Parâmetros de consulta do OData](/graph/query_parameters).
+Este método dá suporte a Parâmetros de consulta do OData para ajudar a personalizar a resposta. Para obter detalhes sobre como usar esses parâmetros, confira [Parâmetros de consulta do OData](/graph/query-parameters).
 
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
 

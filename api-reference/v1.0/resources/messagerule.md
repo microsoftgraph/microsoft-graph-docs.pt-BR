@@ -5,12 +5,12 @@ author: abheek-das
 ms.localizationpriority: medium
 ms.prod: outlook
 doc_type: resourcePageType
-ms.openlocfilehash: 3be807b263d7f437e4f6abc3ac7512619e93eaaa
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 7511c4255fd17e4ee14d848c661bd8c016e385f2
+ms.sourcegitcommit: 08e9b0bac39c1b1d2c8a79539d24aaa93364baf2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59134581"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59763363"
 ---
 # <a name="messagerule-resource-type"></a>Tipo de recurso messageRule
 
@@ -23,6 +23,14 @@ No Outlook, é possível configurar regras para mensagens recebidas na Caixa de 
 
 Programaticamente, você pode acessar regras por meio da propriedade de navegação **messageRules** da [pasta](mailfolder.md) Caixa de Entrada. Cada regra é representada por esse recurso **messageRule**, as ações de regra disponíveis são representadas pelo tipo complexo [messageRuleActions](messageruleactions.md) e as condições e exceções de regra disponíveis são representadas pelo tipo complexo [messageRulePredicates](messagerulepredicates.md).
 
+## <a name="methods"></a>Métodos
+| Método           | Tipo de retorno    |Descrição|
+|:---------------|:--------|:----------|
+|[Listar regras](../api/mailfolder-list-messagerules.md) | Coleção [messageRule](messagerule.md) |Obtenha todos os objetos **messageRule** definidos para a Caixa de Entrada do usuário.|
+|[Obter regra](../api/messagerule-get.md) | [messageRule](messagerule.md) |Leia as propriedades e as relações de um objeto **messageRule**.|
+|[Criar](../api/mailfolder-post-messagerules.md) | [messageRule](messagerule.md) |Crie um objeto **messageRule** especificando um conjunto de condições e ações.|
+|[Atualizar](../api/messagerule-update.md) | [messageRule](messagerule.md) |Altere as propriedades graváveis em um objeto **messageRule** e salve as alterações. |
+|[Delete](../api/messagerule-delete.md) | Nenhum |Exclua o objeto **messageRule** especificado. |
 
 ## <a name="properties"></a>Propriedades
 | Propriedade     | Tipo   |Descrição|
@@ -61,17 +69,7 @@ Veja a seguir uma representação JSON do recurso.
   "isReadOnly": "Boolean",
   "sequence": "Int32"
 }
-
 ```
-
-## <a name="methods"></a>Métodos
-| Método           | Tipo de retorno    |Descrição|
-|:---------------|:--------|:----------|
-|[Listar regras](../api/mailfolder-list-messagerules.md) | Coleção [messageRule](messagerule.md) |Obtenha todos os objetos **messageRule** definidos para a Caixa de Entrada do usuário.|
-|[Obter regra](../api/messagerule-get.md) | [messageRule](messagerule.md) |Leia as propriedades e as relações de um objeto **messageRule**.|
-|[Criar](../api/mailfolder-post-messagerules.md) | [messageRule](messagerule.md) |Crie um objeto **messageRule** especificando um conjunto de condições e ações.|
-|[Atualizar](../api/messagerule-update.md) | [messageRule](messagerule.md) |Altere as propriedades graváveis em um objeto **messageRule** e salve as alterações. |
-|[Delete](../api/messagerule-delete.md) | Nenhum(a) |Exclua o objeto **messageRule** especificado. |
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->

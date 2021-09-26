@@ -1,16 +1,16 @@
 ---
 title: Obter organizationSettings
 description: Recupere as propriedades e as relações do objeto organizationSettings.
-localization_priority: Normal
+ms.localizationpriority: medium
 author: kevinbellinger
 ms.prod: people
 doc_type: apiPageType
-ms.openlocfilehash: 53bf7e03d56ad949683b0c363af3d4aa017502d6
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: 9fcbe8041bd421d2d69cffb49814af82453a3a56
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52052065"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59763923"
 ---
 # <a name="get-organizationsettings"></a>Obter organizationSettings
 
@@ -39,7 +39,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 <!-- { "blockType": "ignored" } -->
 
 ```http
-GET https://graph.microsoft.com/beta/organization/settings
+GET https://graph.microsoft.com/beta/organization/{organizationId}/settings
 ```
 
 ## <a name="optional-query-parameters"></a>Parâmetros de consulta opcionais
@@ -70,11 +70,12 @@ Este é um exemplo de solicitação.
 # <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
+  "sampleKeys": ["a9f3c90b-04fd-4504-a302-47672bbca6c8"],
   "name": "get_organizationsettings"
 }-->
 
 ```msgraph-interactive
-GET https://graph.microsoft.com/beta/organization/settings
+GET https://graph.microsoft.com/beta/organization/a9f3c90b-04fd-4504-a302-47672bbca6c8/settings
 ```
 # <a name="c"></a>[C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-organizationsettings-csharp-snippets.md)]
@@ -112,23 +113,25 @@ HTTP/1.1 200 OK
 Content-type: application/json
 
 {
-  "id": "345233-676277-644334-445677-334556",
-  "profileCardProperties": [
-    {
-      "directoryPropertyName": "CustomAttribute1",
-      "annotations": [
-        {
-          "displayName": "Cost Center",
-          "localizations": [
-            {
-              "languageTag": "ru-RU",
-              "displayName": "центр затрат"
-            }
-          ]
-        }
-      ]
-    }
-  ]
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#organization('a9f3c90b-04fd-4504-a302-47672bbca6c8')/settings/$entity",
+    "id": "",
+    "profileCardProperties@odata.context": "https://graph.microsoft.com/beta/$metadata#organization('a9f3c90b-04fd-4504-a302-47672bbca6c8')/settings/profileCardProperties",
+    "profileCardProperties": [
+      {
+        "directoryPropertyName": "CustomAttribute1",
+        "annotations": [
+          {
+            "displayName": "Cost Center",
+            "localizations": [
+              {
+                "languageTag": "ru-RU",
+                "displayName": "центр затрат"
+              }
+            ]
+          }
+        ]
+      }
+    ]
 }
 ```
 

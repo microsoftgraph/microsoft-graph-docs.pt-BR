@@ -1,16 +1,16 @@
 ---
 title: Listar provisioningObjectSummary
 description: Obter todos os eventos de provisionamento que ocorreram em seu locatário.
-localization_priority: Normal
+ms.localizationpriority: medium
 author: ArvindHarinder1
 ms.prod: identity-and-access-reports
 doc_type: apiPageType
-ms.openlocfilehash: 9e907b5fd55d6022fde87816179c89a7689be41b
-ms.sourcegitcommit: 34891a1c601976166958be1aa04bab5936592b44
+ms.openlocfilehash: 52b5348218817fd4f8974a529879d15df588ee91
+ms.sourcegitcommit: 08e9b0bac39c1b1d2c8a79539d24aaa93364baf2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/06/2021
-ms.locfileid: "52231370"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59766891"
 ---
 # <a name="list-provisioningobjectsummary"></a>Listar provisioningObjectSummary
 
@@ -28,7 +28,10 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |:--------------------|:---------------------------------------------------------|
 |Delegado (conta corporativa ou de estudante) | AuditLog.Read.All e Directory.Read.All |
 |Delegado (conta pessoal da Microsoft) | Sem suporte   |
-|Aplicativo | AuditLog.Read.All |
+|Aplicativo | AuditLog.Read.All e Directory.Read.All |
+
+ > [!IMPORTANT]
+> Esta API tem um [problema conhecido](/graph/known-issues#azure-ad-activity-reports) e atualmente requer consentimento para as permissões **AuditLog.Read.All** e **Directory.Read.All.**
 
 ## <a name="http-request"></a>Solicitação HTTP
 
@@ -48,7 +51,7 @@ Este método dá suporte aos seguintes parâmetros de consulta OData para ajudar
 |[$top](/graph/query-parameters#top-parameter)|Define o tamanho de página de resultados.|`/auditLogs/provisioning?$top=20`|
 |[$skiptoken](/graph/query-parameters#skiptoken-parameter)|Recupera a próxima página de resultados de conjuntos de resultados que abrangem várias páginas. Você deve passar o filtro superior na consulta para gerar o token. Não é possível especificar o número de resultados a serem ignorados.|`/auditLogs/provisioning?$top=20&$skiptoken=g822a72df43b19c8ce94b71d153981b680a08800bc3e35f239dffb378ff72c25"`|
 
-Para obter informações gerais, acesse [Parâmetros de consulta OData](/graph/query_parameters).
+Para obter informações gerais, acesse [Parâmetros de consulta OData](/graph/query-parameters).
 
 ### <a name="attributes-supported-by-the-filter-parameter"></a>Atributos suportados pelo parâmetro $filter
 
@@ -131,7 +134,7 @@ GET https://graph.microsoft.com/beta/auditLogs/provisioning
 
 A seguir, um exemplo da resposta para um evento bem-sucedido.
 
->**Observação:** o objeto de resposta mostrado aqui pode ser encurtado para legibilidade.
+>**Observação:** O objeto de resposta mostrado aqui pode ser encurtado para legibilidade.
 
 <!-- {
   "blockType": "response",

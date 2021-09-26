@@ -4,12 +4,12 @@ description: Saiba como configurar aplicativos para acessar reuniões online em 
 author: mkhribech
 ms.localizationpriority: medium
 ms.prod: cloud-communications
-ms.openlocfilehash: 15e1fca9df26eb6302ecab9bb1fc8d43a666abe5
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 89e53bdceee530d314f22f6ab0788ef9f2cbc811
+ms.sourcegitcommit: 08e9b0bac39c1b1d2c8a79539d24aaa93364baf2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59127924"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59764560"
 ---
 # <a name="allow-applications-to-access-online-meetings-on-behalf-of-a-user"></a>Permitir que os aplicativos acessem reuniões online em nome de um usuário
 
@@ -59,10 +59,11 @@ Para configurar uma política de acesso a aplicativos e permitir que os aplicati
 
 ## <a name="supported-permissions-and-additional-resources"></a>Permissões compatíveis e recursos adicionais
 
-Os administradores podem usar cmdlets ApplicationAccessPolicy para controlar o acesso à caixa de correio de um aplicativo que recebeu qualquer uma das seguintes permissões de aplicativo:
+Os administradores podem usar cmdlets ApplicationAccessPolicy para controlar o acesso à reunião online para um aplicativo que recebeu qualquer uma das seguintes permissões de aplicativo:
 
 - OnlineMeetings.Read.All
 - OnlineMeetings.ReadWrite.All
+- OnlineMeetingArtifact.Read.All
 
 Para obter mais informações sobre como configurar a política de acesso a aplicativos, consulte a [referência de cmdlet do PowerShell para New-ApplicationAccessPolicy](/powershell/module/skype/new-csapplicationaccesspolicy).
 

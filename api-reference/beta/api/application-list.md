@@ -5,12 +5,12 @@ author: sureshja
 ms.localizationpriority: high
 ms.prod: applications
 doc_type: apiPageType
-ms.openlocfilehash: c2311687881cd8f74e875f9d6c4fde3f6bcf69ed
-ms.sourcegitcommit: c333953a9188b4cd4a9ab94cbe68871e8f3563e5
+ms.openlocfilehash: 0eddbe4e5e1f0b5197593214417642ce3706fa91
+ms.sourcegitcommit: 08e9b0bac39c1b1d2c8a79539d24aaa93364baf2
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/30/2021
-ms.locfileid: "58695081"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59764014"
 ---
 # <a name="list-applications"></a>Listar aplicativos
 
@@ -42,6 +42,11 @@ GET /applications
 ## <a name="optional-query-parameters"></a>Parâmetros de consulta opcionais
 
 Este método suporta aos parâmetros de consulta `$count`, `$expand`, `$filter`, `$orderBy`, `$search`, `$select`, e `$top` [OData](/graph/query-parameters) para ajudar a personalizar a resposta. Algumas consultas são suportadas somente quando se usa o cabeçalho **ConsistencyLevel** definido como `eventual` e `$count`. Para obter mais informações, consulte [Funcionalidades avançadas de consulta nos objetos de diretório do Microsoft Azure AD](/graph/aad-advanced-queries).
+
+
+Por padrão, essa API não retorna o valor da **chave** impressão digital na propriedade **keyCredentials** ao listar todos os aplicativos. Para recuperar a **chave** impressão digital, a propriedade **keyCredentials** deve ser especificada em uma consulta `$select`. Por exemplo, `$select=id,appId,keyCredentials`.
+
+O uso de `$select` para obter **keyCredentials** para aplicativos tem um limite de aceleração de 150 solicitações por minuto para cada locatário.
 
 
 ## <a name="request-headers"></a>Cabeçalhos de solicitação

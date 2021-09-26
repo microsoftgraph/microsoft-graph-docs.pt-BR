@@ -2,15 +2,15 @@
 title: Tipo de recurso accessreviewnotificationrecipientscope
 description: Representa quem receberá notificações de revisão de acesso.
 author: isabelleatmsft
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: governance
 doc_type: resourcePageType
-ms.openlocfilehash: 6598785d9af51ecdb826e4cbf0503da0578fa002
-ms.sourcegitcommit: 7abb0672a38a6d9b11a2e0d2cc221222cb8358bb
+ms.openlocfilehash: 00cbb477eb27f170fe1c16e5c77696b874951708
+ms.sourcegitcommit: 08e9b0bac39c1b1d2c8a79539d24aaa93364baf2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/11/2021
-ms.locfileid: "52896540"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59764820"
 ---
 # <a name="accessreviewnotificationrecipientscope-resource-type"></a>Tipo de recurso accessreviewnotificationrecipientscope
 
@@ -39,6 +39,3 @@ Veja a seguir uma representação JSON do recurso.
   "@odata.type": "#microsoft.graph.accessReviewNotificationRecipientScope"
 }
 ```
-
-## <a name="relationships"></a>Relações
-Nenhum

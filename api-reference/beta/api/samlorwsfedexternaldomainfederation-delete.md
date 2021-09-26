@@ -2,15 +2,15 @@
 title: Excluir samlOrWsFedExternalDomainFederation
 description: Exclua um objeto samlOrWsFedExternalDomainFederation.
 author: namkedia
-localization_priority: medium
+ms.localizationpriority: medium
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: 98365e11649c5e4bd90ad2893a53a9c65fa36fc1
-ms.sourcegitcommit: c333953a9188b4cd4a9ab94cbe68871e8f3563e5
+ms.openlocfilehash: 5b34adde1f0a76197d810f78f6b0372830bc8368
+ms.sourcegitcommit: 08e9b0bac39c1b1d2c8a79539d24aaa93364baf2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/30/2021
-ms.locfileid: "58697002"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59765005"
 ---
 # <a name="delete-samlorwsfedexternaldomainfederation"></a>Excluir samlOrWsFedExternalDomainFederation
 Namespace: microsoft.graph
@@ -31,7 +31,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 A conta de trabalho ou de estudante precisa pertencer a uma das seguintes [funções Azure Active Directory (Azure AD)](/azure/active-directory/roles/permissions-reference):
 
-* Administrador global
+* Administrador Global
 * Administrador do Provedor de Identidade Externa
 
 ## <a name="http-request"></a>Solicitação HTTP
@@ -63,6 +63,8 @@ Se tiver êxito, este método retornará um código de resposta `204 No Content`
 
 ### <a name="request"></a>Solicitação
 
+
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "delete_samlorwsfedexternaldomainfederation"
@@ -72,6 +74,24 @@ Se tiver êxito, este método retornará um código de resposta `204 No Content`
 ``` http
 DELETE https://graph.microsoft.com/beta/directory/federationConfigurations/96db02e2-80c1-5555-bc3a-de92ffb8c5be
 ```
+# <a name="c"></a>[C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/delete-samlorwsfedexternaldomainfederation-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/delete-samlorwsfedexternaldomainfederation-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/delete-samlorwsfedexternaldomainfederation-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/delete-samlorwsfedexternaldomainfederation-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 ### <a name="response"></a>Resposta
 

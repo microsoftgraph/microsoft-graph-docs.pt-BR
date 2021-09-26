@@ -1,16 +1,16 @@
 ---
 title: Listar usuário transitivo memberOf
 description: Obter grupos, funções de diretório e unidades administrativas das quais o usuário é membro. Essa solicitação de API é transitiva e também retornará todos os grupos de que o usuário é membro aninhado.
-localization_priority: Normal
+ms.localizationpriority: medium
 author: jpettere
 ms.prod: users
 doc_type: apiPageType
-ms.openlocfilehash: 7cad5f8693bd3f22a49a467b8ff2f764ce912461
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: 4e4ff676d8c4c7761a3fa9955209f9c88bf4829c
+ms.sourcegitcommit: 08e9b0bac39c1b1d2c8a79539d24aaa93364baf2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52052590"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59764056"
 ---
 # <a name="list-user-transitive-memberof"></a>Listar usuário transitivo memberOf
 
@@ -40,7 +40,7 @@ GET /users/{id | userPrincipalName}/transitiveMemberOf
 
 ## <a name="optional-query-parameters"></a>Parâmetros de consulta opcionais
 
-Este método dá suporte a [Parâmetros de consulta OData](/graph/query_parameters) para ajudar a personalizar a resposta, incluindo `$search`, `$count`, e `$filter`. O OData cast também está habilitado, por exemplo, você pode lançar para obter apenas a associação transitiva em grupos. Você pode usar `$search`na propriedade **displayName**. Quando itens são adicionados ou atualizados para este recurso, eles são indexados especialmente para uso com os `$count` e `$search` parâmetros de consulta. Pode haver um pequeno atraso entre quando um item é adicionado ou atualizado e quando está disponível no índice.
+Este método dá suporte a [Parâmetros de consulta OData](/graph/query-parameters) para ajudar a personalizar a resposta, incluindo `$search`, `$count`, e `$filter`. O OData cast também está habilitado, por exemplo, você pode lançar para obter apenas a associação transitiva em grupos. Você pode usar `$search`na propriedade **displayName**. Quando itens são adicionados ou atualizados para este recurso, eles são indexados especialmente para uso com os `$count` e `$search` parâmetros de consulta. Pode haver um pequeno atraso entre quando um item é adicionado ou atualizado e quando está disponível no índice.
 
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
 

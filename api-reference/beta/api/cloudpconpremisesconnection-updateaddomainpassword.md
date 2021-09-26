@@ -2,15 +2,15 @@
 title: 'cloudPcOnPremisesConnection: updateAdDomainPassword'
 description: Atualize a senha de domínio do AD para um onPremisesConnection bem-sucedido.
 author: AshleyYangSZ
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: cloud-pc
 doc_type: apiPageType
-ms.openlocfilehash: 9298b09db0d3016f8bbc117fdf9adfe56b7ac94e
-ms.sourcegitcommit: 0116750a01323bc9bedd192d4a780edbe7ce0fdc
+ms.openlocfilehash: 41028c64e54f2149443b4ceabef41ce1a58ff04d
+ms.sourcegitcommit: 08e9b0bac39c1b1d2c8a79539d24aaa93364baf2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58262971"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59766184"
 ---
 # <a name="cloudpconpremisesconnection-updateaddomainpassword"></a>cloudPcOnPremisesConnection: updateAdDomainPassword
 Namespace: microsoft.graph
@@ -19,15 +19,14 @@ Namespace: microsoft.graph
 
 Atualize a senha de domínio do Active Directory para [um onPremisesConnection](../resources/cloudpconpremisesconnection.md).
 
-[!INCLUDE [cloudpc-api-preview](../../includes/cloudpc-api-preview.md)]
 
 ## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão|Permissões (da com menos para a com mais privilégios)|
 |:---|:---|
-|Delegada (conta corporativa ou de estudante)|CloudPC.ReadWrite.All|
-|Delegada (conta pessoal da Microsoft)|Sem suporte.|
+|Delegado (conta corporativa ou de estudante)|CloudPC.ReadWrite.All|
+|Delegado (conta pessoal da Microsoft)|Sem suporte.|
 |Aplicativo|CloudPC.ReadWrite.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
@@ -53,7 +52,7 @@ A tabela a seguir mostra os parâmetros que podem ser usados com esta ação.
 
 |Parâmetro|Tipo|Descrição|
 |:---|:---|:---|
-|adDomainPassword|Cadeia de caracteres|A senha associada **a adDomainUsername**.|
+|adDomainPassword|String|A senha associada **a adDomainUsername**.|
 
 
 

@@ -2,15 +2,15 @@
 title: Obter entrada
 doc_type: apiPageType
 description: Obter um objeto signIn que contém todas as assinaturas de um Azure Active Directory locatário.
-localization_priority: Normal
+ms.localizationpriority: medium
 author: besiler
 ms.prod: identity-and-access-reports
-ms.openlocfilehash: 70691669c6047473c2ee98ed9c2c9e810bc061f0
-ms.sourcegitcommit: 5bb981b4853663354a566d4a4a5cbf288939e441
+ms.openlocfilehash: a00e547ca360e0fa9c5fc9895ffade44289e968c
+ms.sourcegitcommit: 08e9b0bac39c1b1d2c8a79539d24aaa93364baf2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/24/2021
-ms.locfileid: "53579754"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59763069"
 ---
 # <a name="get-signin"></a>Obter entrada
 
@@ -26,9 +26,12 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
 |:--------------------|:---------------------------------------------------------|
-| Delegada (conta corporativa ou de estudante) | AuditLog.Read.All e Directory.Read.All |
+| Delegado (conta corporativa ou de estudante) | AuditLog.Read.All e Directory.Read.All |
 | Delegado (conta pessoal da Microsoft) | Sem suporte |
 | Aplicativo | AuditLog.Read.All e Directory.Read.All | 
+
+> [!IMPORTANT]
+> Esta API tem um [problema conhecido](/graph/known-issues#azure-ad-activity-reports) e atualmente requer consentimento para as permissões **AuditLog.Read.All** e **Directory.Read.All.**
 
 Os aplicativos devem [estar registrados corretamente](/azure/active-directory/active-directory-reporting-api-prerequisites-azure-portal) no Azure AD.
 
@@ -49,7 +52,7 @@ GET /auditLogs/signIns/{id}
 
 ## <a name="optional-query-parameters"></a>Parâmetros de consulta opcionais
 
-Este método dá suporte a Parâmetros de consulta do OData para ajudar a personalizar a resposta. Para obter detalhes sobre como usar esses parâmetros, confira [Parâmetros de consulta do OData](/graph/query_parameters).
+Este método dá suporte a Parâmetros de consulta do OData para ajudar a personalizar a resposta. Para obter detalhes sobre como usar esses parâmetros, confira [Parâmetros de consulta do OData](/graph/query-parameters).
 
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
 

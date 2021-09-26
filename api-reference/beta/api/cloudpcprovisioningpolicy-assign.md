@@ -2,15 +2,15 @@
 title: 'cloudPcProvisioningPolicy: assign'
 description: Atribua a política de provisionamento do Cloud PC ao seu grupo.
 author: AshleyYangSZ
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: cloud-pc
 doc_type: apiPageType
-ms.openlocfilehash: 3dc0382bc32b459fa07abd5a763c6e62d4fd60ea
-ms.sourcegitcommit: a598c09b73e4e43eea5f4aaefea7ffe062e15c39
+ms.openlocfilehash: 1be95d8b2402e90f8d4d4e308c4cb86266bfd4b6
+ms.sourcegitcommit: 08e9b0bac39c1b1d2c8a79539d24aaa93364baf2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/22/2021
-ms.locfileid: "53533952"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59764644"
 ---
 # <a name="cloudpcprovisioningpolicy-assign"></a>cloudPcProvisioningPolicy: assign
 
@@ -20,7 +20,6 @@ Namespace: microsoft.graph
 
 Atribua [cloudPcProvisioningPolicy a](../resources/cloudpcprovisioningpolicy.md) grupos de usuários.
 
-[!INCLUDE [cloudpc-api-preview](../../includes/cloudpc-api-preview.md)]
 
 ## <a name="permissions"></a>Permissões
 
@@ -30,7 +29,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |:---|:---|
 |Delegado (conta corporativa ou de estudante)|CloudPC.ReadWrite.All|
 |Delegado (conta pessoal da Microsoft)|Sem suporte.|
-|Application|CloudPC.ReadWrite.All|
+|Aplicativo|CloudPC.ReadWrite.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
 

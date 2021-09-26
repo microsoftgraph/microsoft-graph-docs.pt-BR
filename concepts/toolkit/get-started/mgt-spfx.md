@@ -3,18 +3,21 @@ title: Biblioteca da Estrutura do SharePoint para o Kit de ferramentas do Micros
 description: Use a Estrutura do SharePoint do Microsoft Graph Toolkit para usar o Microsoft Graph Toolkit em Estrutura do SharePoint soluções.
 ms.localizationpriority: medium
 author: waldekmastykarz
-ms.openlocfilehash: 37f2570606b62de12f81e779fdcd4c33cb586f2c
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 41a1b3703440ce42866c3aaf720bdda55e9d2b20
+ms.sourcegitcommit: 08e9b0bac39c1b1d2c8a79539d24aaa93364baf2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59032087"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59507757"
 ---
 # <a name="sharepoint-framework-library-for-microsoft-graph-toolkit"></a>Biblioteca da Estrutura do SharePoint para o Kit de ferramentas do Microsoft Graph
 
 Use a Estrutura do SharePoint do Microsoft Graph Toolkit para usar o Microsoft Graph Toolkit em Estrutura do SharePoint soluções.
 
 Para impedir que vários componentes registrem seu próprio conjunto de componentes do Microsoft Graph Toolkit na página, você deve implantar essa biblioteca em seu locatário e fazer referência aos componentes do Microsoft Graph Toolkit que você usa em sua solução a partir desta biblioteca.
+
+> [!CAUTION]
+> A Estrutura do SharePoint do Microsoft Graph Toolkit deve ser usada com extensões Estrutura do SharePoint e **web parts não isoladas.** Se você estiver criando web parts isoladas, não use a biblioteca Estrutura do SharePoint para o Microsoft Graph Toolkit. Em vez disso, carregue o Microsoft Graph Toolkit diretamente do pacote @microsoft/mgt (ou @microsoft/mgt-react se você usar React). Estrutura do SharePoint não dá suporte a referenciar componentes de biblioteca de web parts isoladas e isso causará erros de tempo de execução na Web Part isolada.
 
 ## <a name="installation"></a>Instalação
 
@@ -104,7 +107,7 @@ export default class MgtReact extends React.Component<IMgtReactProps, {}> {
 > 
 > Não importe de nenhum outro pacote do Microsoft Graph Toolkit ( ) para evitar empacotar sua própria cópia do kit de ferramentas e colidir `@microsoft/mgt-*` com a biblioteca compartilhada.
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 
 * [Criar uma web part do Microsoft Office SharePoint Online com o Kit de ferramentas do Microsoft Graph](./build-a-sharepoint-web-part.md)
 * [Saiba mais sobre provedores de autenticação](../providers/providers.md)

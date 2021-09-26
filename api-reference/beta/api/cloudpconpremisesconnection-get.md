@@ -2,15 +2,15 @@
 title: Obter cloudPcOnPremisesConnection
 description: Leia as propriedades e as relações do objeto cloudPcOnPremisesConnection.
 author: AshleyYangSZ
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: cloud-pc
 doc_type: apiPageType
-ms.openlocfilehash: 291e6e17494bf8dcfc467b8d3c594f27d6b2e710
-ms.sourcegitcommit: d700b7e3b411e3226b5adf1f213539f05fe802e8
+ms.openlocfilehash: a51ce6f56d0586bd8cbfbd953f3051a9f726b176
+ms.sourcegitcommit: 08e9b0bac39c1b1d2c8a79539d24aaa93364baf2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52546837"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59766737"
 ---
 # <a name="get-cloudpconpremisesconnection"></a>Obter cloudPcOnPremisesConnection
 
@@ -20,7 +20,6 @@ Namespace: microsoft.graph
 
 Leia as propriedades e as relações do [objeto cloudPcOnPremisesConnection.](../resources/cloudpconpremisesconnection.md)
 
-[!INCLUDE [cloudpc-api-preview](../../includes/cloudpc-api-preview.md)]
 ## <a name="permissions"></a>Permissões
 
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).

@@ -5,12 +5,12 @@ doc_type: enumPageType
 ms.localizationpriority: medium
 ms.prod: non-product-specific
 author: MSGraphDocsvTeam
-ms.openlocfilehash: 0bdb3293c6b5068ebb8a2e71a5c7923ce788c32f
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 0c54457f5b9a266cbdda0aa039fa6ff50ff8936f
+ms.sourcegitcommit: 08e9b0bac39c1b1d2c8a79539d24aaa93364baf2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59023742"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59766275"
 ---
 # <a name="enum-values"></a>Valores denum
 
@@ -157,7 +157,7 @@ Namespace: microsoft.graph
 |Membro|
 |:---|
 |String|
-|Inteiro|
+|Número inteiro|
 |Referência|
 |Binário|
 |Boolean|
@@ -276,7 +276,7 @@ Namespace: microsoft.graph
 
 |Membro|
 |:---|
-|Nenhuma|
+|none|
 |noMissedCall|
 |disableForwardingExceptPhone|
 |disableForwarding|
@@ -352,7 +352,7 @@ Namespace: microsoft.graph
 ### <a name="recipientscopetype-values"></a>valores recipientScopeType
 |Membro|
 |:---|
-|Nenhuma|
+|none|
 |internal|
 |external|
 |externalPartner|
@@ -418,7 +418,7 @@ Namespace: microsoft.graph
 
 |Membro|
 |:---|
-|Nenhuma|
+|none|
 |gratuito|
 |basic|
 |premiumP1|
@@ -429,7 +429,7 @@ Namespace: microsoft.graph
 
 |Membro|
 |:---|
-|Nenhuma|
+|none|
 |aplicação|
 |usuários|
 |devicePlatform|
@@ -582,7 +582,7 @@ Namespace: microsoft.graph
 
 |Membro|
 |:---|
-|Nenhuma|
+|none|
 |internal|
 |external|
 |externalPartner|
@@ -627,14 +627,14 @@ Namespace: microsoft.graph
 |medium|
 |high|
 |hidden|
-|Nenhuma|
+|none|
 |unknownFutureValue|
 
 ### <a name="riskstate-values"></a>valores riskState 
 
 |Membro|
 |:---|
-|Nenhuma|
+|none|
 |confirmedSafe|
 |remediado|
 |dismissed|
@@ -678,17 +678,36 @@ Namespace: microsoft.graph
 
 |Membro|
 |:---|
-|Nenhuma|
+|none|
 |assignIfOpen|
 |unknownFutureValue|
 
 ### <a name="educationaddtocalendaroptions-values"></a>valores educationAddToCalendarOptions
 |Membro|
 |:---|
-|Nenhuma|
+|none|
 |studentsAndPublisher|
 |studentsAndTeamOwners|
 |unknownFutureValue|
+|studentsOnly|
+
+### <a name="educationassignmentstatus-values"></a>valores educationAssignmentStatus
+|Membro|
+|:---|
+|draft|
+|publicado|
+|atribuído|
+|unknownFutureValue|
+
+### <a name="educationsubmissionstatus-values"></a>valores educationSubmissionStatus
+|Membro|
+|:---|
+|Trabalhando|
+|enviado|
+|released|
+|retornado|
+|unknownFutureValue|
+|reatribuido|
 
 ### <a name="externalemailotpstate-values"></a>valores externalEmailOtpState
 
@@ -927,7 +946,7 @@ Namespace: microsoft.graph
 | aide               | 2     | O assistente do usuário.                         |
 | dr             | 3     | O médico do usuário.                       |
 | guardian           | 4      | O tutor do usuário.                     |
-| filho              | 5      | O filho do usuário.                        |
+| filho              | 5     | O filho do usuário.                        |
 | other              | 6      | Uma relação não especificada com o usuário. |
 | unknownFutureValue | 7      | Valor do marcador para compatibilidade futura.   |
 
@@ -954,7 +973,7 @@ Namespace: microsoft.graph
 
 |Membro|
 |:---|
-|Nenhuma|
+|none|
 |car|
 |calendar|
 |running|
@@ -1016,7 +1035,7 @@ Namespace: microsoft.graph
 
 |Membro|
 |:---|
-|Nenhuma|
+|none|
 |shift|
 |swapRequest|
 |userShiftPreferences|
@@ -1033,7 +1052,7 @@ Namespace: microsoft.graph
 
 | Membro
 |:-----------------
-| Nenhuma|
+| none|
 | usuário|
 | manager|
 | unknownFutureValue|
@@ -1081,7 +1100,7 @@ Namespace: microsoft.graph
 
 | Membro
 |:-------------------------
-| Nenhuma
+| none
 | contactsOnly
 | all
 
@@ -1105,7 +1124,7 @@ Namespace: microsoft.graph
 | lightOrange | 2     |
 | lightGray   | 3     |
 | lightYellow | 4      |
-| lightTeal   | 5      |
+| lightTeal   | 5     |
 | lightPink   | 6      |
 | lightBrown  | 7      |
 | lightRed    | 8      |
@@ -1118,7 +1137,7 @@ Namespace: microsoft.graph
 | :----------------- | :---- |
 | exclusão           | 2     |
 | deletionFailed     | 3     |
-| provisioningFailed | 5      |
+| provisioningFailed | 5     |
 | provisionado        | 6      |
 | provisionamento       | 7      |
 | unknownFutureValue | 8      |
@@ -1198,7 +1217,7 @@ Namespace: microsoft.graph
 
 | Membro
 |:-----------------
-| Nenhuma
+| none
 | meetingRequest
 | meetingCancelled
 | meetingAccepted
@@ -1230,7 +1249,7 @@ Namespace: microsoft.graph
 | deviceDefault
 | banner
 | modal
-| Nenhuma
+| none
 
 ### <a name="deviceenrollmentfailurereason-values"></a>Valores deviceEnrollmentFailureReason
 
@@ -1432,7 +1451,7 @@ Namespace: microsoft.graph
 
 | Membro
 |:-------------------------
-| Nenhuma
+| none
 | organizer
 | tentativelyAccepted
 | aceito
@@ -1465,13 +1484,13 @@ Namespace: microsoft.graph
 
 | Membro   | Valor |
 | :------- | :---- |
-| Nenhuma     | -1    |
+| none     | -1    |
 | preset0  | 0     |
 | preset1  | 1     |
 | preset2  | 2     |
 | preset3  | 3     |
 | preset4  | 4      |
-| preset5  | 5      |
+| preset5  | 5     |
 | preset6  | 6      |
 | preset7  | 7      |
 | preset8  | 8      |
@@ -1512,7 +1531,7 @@ Possíveis valores de comentários sobre o alerta fornecido por um analista.
 | sha256              | 2     | Tipo de hash SHA256.              |
 | md5                 | 3     | Tipo de hash MD5.                 |
 | authenticodeHash256 | 4      | Tipo de hash AuthenticodeHash256. |
-| lsHash              | 5      | Tipo de hash LsHash.              |
+| lsHash              | 5     | Tipo de hash LsHash.              |
 | ctph                | 6      | Tipo de hash CTPH.                |
 | peSha1              | 7      | Tipo de hash PESHA1.              |
 | peSha256            | 8      | Tipo de hash PESHA256.            |
@@ -1557,7 +1576,7 @@ Enum para hives do Registro conforme definido por [https://docs.microsoft.com/wi
 | currentUser             | 2     | HKEY_CURRENT_USER hive.           |
 | localMachineSam         | 3     | HKEY_LOCAL_MACHINE\SAM hive.      |
 | localMachineSamSoftware | 4      | HKEY_LOCAL_MACHINE\Software hive. |
-| localMachineSystem      | 5      | HKEY_LOCAL_MACHINE\System hive.   |
+| localMachineSystem      | 5     | HKEY_LOCAL_MACHINE\System hive.   |
 | usersDefault            | 6      | HKEY_USERS \\ . Hive PADRÃO.        |
 
 ### <a name="registryoperation-values"></a>valores registryOperation
@@ -1582,10 +1601,10 @@ Enum para tipos de valor do Registro conforme definido pelos [tipos de valor do 
 | dword             | 2     | REG_DWORD tipo de valor do Registro.               |
 | dwordLittleEndian | 3     | REG_DWORD_LITTLE_ENDIAN tipo de valor do Registro. |
 | dwordBigEndian    | 4      | REG_DWORD_BIG_ENDIAN tipo de valor do Registro.    |
-| expandSz          | 5      | REG_EXPAND_SZ tipo de valor do Registro.           |
+| expandSz          | 5     | REG_EXPAND_SZ tipo de valor do Registro.           |
 | link              | 6      | REG_LINK tipo de valor do Registro.                |
 | multiSz           | 7      | REG_MULTI_SZ tipo de valor do Registro.            |
-| Nenhuma              | 8      | REG_NONE tipo de valor do Registro.                |
+| none              | 8      | REG_NONE tipo de valor do Registro.                |
 | qword             | 9      | REG_QWORD tipo de valor do Registro.               |
 | qwordlittleEndian | 10     | REG_QWORD_LITTLE_ENDIAN tipo de valor do Registro. |
 | sz                | 11    | REG_SZ tipo de valor do Registro.                  |
@@ -1651,7 +1670,7 @@ Valores possíveis para tipos de conta de usuário (associação ao grupo), por 
 
 | Valor |
 |:-----------------|
-| Nenhuma |
+| none |
 | NotifySender |
 | BlockAccess |
 | BlockAccessExternal |
@@ -1671,14 +1690,14 @@ Valores possíveis para tipos de conta de usuário (associação ao grupo), por 
 |medium|
 |high|
 |hidden|
-|Nenhuma|
+|none|
 |unknownFutureValue|
 
 ### <a name="riskstate-values"></a>valores riskState
 
 |Membro|
 |:---|
-|Nenhuma|
+|none|
 |confirmedSafe|
 |remediado|
 |dismissed|
@@ -1690,7 +1709,7 @@ Valores possíveis para tipos de conta de usuário (associação ao grupo), por 
 
 |Membro|
 |:---|
-|Nenhuma|
+|none|
 |adminGeneratedTemporaryPassword|
 |userPerformedSecuredPasswordChange|
 |userPerformedSecuredPasswordReset|
@@ -1909,7 +1928,7 @@ Valores possíveis para tipos de conta de usuário (associação ao grupo), por 
 
 |Membro|
 |:---|
-|Nenhuma|
+|none|
 |freeBusyRead|
 |limitedRead|
 |leitura|
@@ -2080,12 +2099,12 @@ Valores possíveis para tipos de conta de usuário (associação ao grupo), por 
 
 | Membro                | Valor | Descrição                         |
 |:----------------------|:------|:------------------------------------|
-| Nenhuma                  | 0     | Ainda não sabemos.                       |
+| none                  | 0     | Ainda não sabemos.                       |
 | mailFlowRule          | 1     | Exchange regra de transporte.            |
 | safeSender            | 2     | Cofre lista de remetentes.                   |
 | blockedSender         | 3     | Lista de remetentes bloqueados.                |
 | advancedSpamFiltering | 4      | Opção avançada de filtragem de spam.     |
-| domainAllowList       | 5      | Lista de permitir domínio de remetente.           |
+| domainAllowList       | 5     | Lista de permitir domínio de remetente.           |
 | domainBlockList       | 6      | Lista de bloqueios de domínio do remetente.           |
 | notInAddressBook      | 7      | Excluir remetente que não está no livro de endereços. |
 | firstTimeSender       | 8      | Bloqueado devido ao remetente da primeira vez.   |
@@ -2128,7 +2147,7 @@ Valores possíveis para tipos de conta de usuário (associação ao grupo), por 
 
 | Membro
 |:----------------------
-| Nenhuma
+| none
 | defaultList
 | flaggedEmails
 | unknownFutureValue
@@ -2183,7 +2202,7 @@ Valores possíveis para tipos de conta de usuário (associação ao grupo), por 
 | booliano               | 2     | Tipo de dados Booliano                   |
 | int64                 | 3     | Tipo de dados de int                       |
 | stringCollection      | 4      | Tipo de dados da coleção String         |
-|dateTime|5 ||
+|dateTime|5||
 | unknownFutureValue    | 6      | Um membro do sentinel.                  |
 
 ### <a name="identityuserflowattributetype-values"></a>identityUserFlowAttributeType values
@@ -2247,7 +2266,7 @@ Valores possíveis para tipos de conta de usuário (associação ao grupo), por 
 
 |Membro|
 |:---|
-|Nenhuma|
+|none|
 |onPremisesKerberos|
 |aadHeaderBased|
 |pingHeaderBased|
@@ -2274,7 +2293,7 @@ Valores possíveis para tipos de conta de usuário (associação ao grupo), por 
 
 |Membro|
 |:---|
-|Nenhuma|
+|none|
 |all|
 |selected|
 

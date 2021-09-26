@@ -5,12 +5,12 @@ author: anandab
 ms.localizationpriority: high
 ms.prod: microsoft-teams
 ms.custom: scenarios:getting-started
-ms.openlocfilehash: 733a52f6b69adc7a5d0c526b481018420af3db2e
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 08a6b996d3ddbe721775a888b161e14788a485a9
+ms.sourcegitcommit: 08e9b0bac39c1b1d2c8a79539d24aaa93364baf2
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59117645"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59507763"
 ---
 # <a name="get-change-notifications-for-teams-and-channels-using-microsoft-graph"></a>Obter notificações de alteração para equipes e canais usando o Microsoft Graph
 
@@ -84,7 +84,6 @@ Content-Type: application/json
 
 Para obter notificações de alteração para todas as alterações (criar, atualizar e excluir) relacionadas a qualquer canal de um locatário, inscreva-se em `/teams/getAllChannels`. Este recurso oferece suporte a [ incluindo dados de recursos ](webhooks-with-resource-data.md) na notificação.
 
->**Observação:** Não há suporte para canais privados.
 
 ### <a name="permissions"></a>Permissões
 
@@ -115,7 +114,8 @@ Content-Type: application/json
 ## <a name="subscribe-to-changes-in-any-channel-of-a-particular-team"></a>Inscrever-se para alterações em qualquer canal em particular
 
 
-Para obter notificações de alteração para todas as alterações relacionadas a qualquer canal em particular, inscreva-se em `/teams/{team-id}/channels`. Este recurso oferece suporte a [ incluindo dados de recursos ](webhooks-with-resource-data.md) na notificação.
+Para obter notificações de alteração para todas as alterações relacionadas a qualquer canal em particular, inscreva-se em `/teams/{team-id}/channels`. Este recurso oferece suporte a [ incluindo dados de recursos ](webhooks-with-resource-data.md) na notificação. Notificações de alteração para canais privados não são suportadas no contexto de delegação. Neste caso, um assinante deste recurso em contexto delegado receberá notificações somente para canais padrão sob uma equipe específica, não para canais privados.
+
 
 ### <a name="permissions"></a>Permissões
 

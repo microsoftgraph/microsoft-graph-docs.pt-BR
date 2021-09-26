@@ -5,12 +5,12 @@ ms.localizationpriority: high
 doc_type: conceptualPageType
 ms.prod: identity-and-access
 author: dkershaw10
-ms.openlocfilehash: f9556ca4f908533b2934ec381368b0845917819e
-ms.sourcegitcommit: c333953a9188b4cd4a9ab94cbe68871e8f3563e5
+ms.openlocfilehash: f4d1b364a44ff6fd6af3c5f7869dcaa8954cf846
+ms.sourcegitcommit: 08e9b0bac39c1b1d2c8a79539d24aaa93364baf2
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/30/2021
-ms.locfileid: "58696320"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59766674"
 ---
 # <a name="working-with-azure-active-directory-resources-in-microsoft-graph"></a>Trabalhar com os recursos do Azure Active Directory no Microsoft Graph
 
@@ -58,8 +58,8 @@ A tabela a seguir lista alguns casos comuns de uso de recursos do Azure AD.
 | **Gerenciamento de locatário** | | |
 | Obter informações sobre uma organização, como seu endereço comercial, contatos de notificação e técnicos, os planos de serviço em que está inscrita em e os domínios associados a ela. | [organization](../resources/organization.md) | N/D |
 | Obter informações sobre SKUs do serviço nos quais a empresa está inscrita. | [subscribedSku](../resources/subscribedsku.md) | N/D |
-| Convidar usuários externos (convidado) para uma organização. | [invitation](../resources/invitation.md) | [O que é a colaboração B2B do Azure AD?](https://docs.microsoft.com/azure/active-directory/active-directory-b2b-what-is-azure-ad-b2b)|
-| Gerenciar a identidade visual da experiência de entrada de uma organização. | [organizationalbranding](../resources/organizationalbrandingproperties.md) | [Adicionar identidade visual à página de entrada do Azure Active Directory da sua organização](https://docs.microsoft.com/azure/active-directory/fundamentals/customize-branding)|
+| Convidar usuários externos (convidado) para uma organização. | [invitation](../resources/invitation.md) | [O que é a colaboração B2B do Azure AD?](/azure/active-directory/active-directory-b2b-what-is-azure-ad-b2b)|
+| Gerenciar a identidade visual da experiência de entrada de uma organização. | [organizationalbranding](../resources/organizationalbrandingproperties.md) | [Adicionar identidade visual à página de entrada do Azure Active Directory da sua organização](/azure/active-directory/fundamentals/customize-branding)|
 | **Avaliações do Access** | | |
 | Certifique-se de que as associações ao grupo e os direitos de acesso ao aplicativo estejam corretos com as análises de acesso. | [API de revisões de acesso](../resources/accessreviews-root.md) |[Revisões de acesso ao Azure AD](/azure/active-directory/active-directory-azure-ad-controls-access-reviews-overview) |
 | **Solicitações de consentimento** | | |

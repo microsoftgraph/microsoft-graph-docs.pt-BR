@@ -5,12 +5,12 @@ ms.localizationpriority: high
 author: Sammak
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: 98e29dfa3cd6b1b4024559c94781ee00b29fc008
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: ac54962b5360e92ad48c6b3e34874524252e746e
+ms.sourcegitcommit: 08e9b0bac39c1b1d2c8a79539d24aaa93364baf2
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59032640"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59764739"
 ---
 # <a name="create-invitation"></a>Criar convite
 
@@ -59,8 +59,10 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar um convi
 Se bem-sucedido, este método retorna um código de resposta `201 Created` e um objeto [invitation](../resources/invitation.md) no corpo da resposta.
 
 ## <a name="example"></a>Exemplo
-##### <a name="request"></a>Solicitação
-Este é um exemplo da solicitação.
+
+### <a name="request"></a>Solicitação
+
+Este é um exemplo de solicitação.
 
 # <a name="http"></a>[HTTP](#tab/http)
 <!-- {
@@ -70,10 +72,9 @@ Este é um exemplo da solicitação.
 ```http
 POST https://graph.microsoft.com/v1.0/invitations
 Content-type: application/json
-Content-length: 551
 
 {
-  "invitedUserEmailAddress": "yyy@test.com",
+  "invitedUserEmailAddress": "admin@fabrikam.com",
   "inviteRedirectUrl": "https://myapp.contoso.com"
 }
 ```
@@ -96,8 +97,10 @@ Content-length: 551
 ---
 
 
-##### <a name="response"></a>Resposta
-Aqui está um exemplo da resposta. Observação: o objeto de resposta mostrado aqui pode ser reduzido para facilitar a leitura.
+### <a name="response"></a>Resposta
+
+Este é um exemplo de resposta. 
+>**Observação:** o objeto de resposta mostrado aqui pode ser encurtado para legibilidade.
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -106,13 +109,13 @@ Aqui está um exemplo da resposta. Observação: o objeto de resposta mostrado a
 ```http
 HTTP/1.1 201 OK
 Content-type: application/json
-Content-length: 551
 
 {
+  "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#invitations/$entity",
   "id": "7b92124c-9fa9-406f-8b8e-225df8376ba9",
   "inviteRedeemUrl": "https://invitations.microsoft.com/redeem/?tenant=04dcc6ab-388a-4559-b527-fbec656300ea&user=7b92124c-9fa9-406f-8b8e-225df8376ba9&ticket=VV9dmiExBsfRIVNFjb9ITj9VXAd07Ypv4gTg%2f8PiuJs%3d&lc=1033&ver=2.0",
-  "invitedUserDisplayName": "yyy",
-  "invitedUserEmailAddress": "yyy@test.com",
+  "invitedUserDisplayName": "Fabrikam Admin",
+  "invitedUserEmailAddress": "admin@fabrikam.com",
   "sendInvitationMessage": false,
   "invitedUserMessageInfo": {
      "messageLanguage": null,

@@ -1,16 +1,16 @@
 ---
 title: Tipo de recurso unifiedRoleAssignmentMultiple
 description: Uma definição de função atribuída a uma matriz de entidades (normalmente um usuário) sobre uma matriz de escopo.
-localization_priority: Normal
+ms.localizationpriority: medium
 author: abhijeetsinha
 ms.prod: directory-management
 doc_type: resourcePageType
-ms.openlocfilehash: 7db7ababef04111146c4a39c3dc6550339e67d3a
-ms.sourcegitcommit: a598c09b73e4e43eea5f4aaefea7ffe062e15c39
+ms.openlocfilehash: 4dc43e36ce1f224a920f99d02210268d68b42d40
+ms.sourcegitcommit: 08e9b0bac39c1b1d2c8a79539d24aaa93364baf2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/22/2021
-ms.locfileid: "53533882"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59764028"
 ---
 # <a name="unifiedroleassignmentmultiple-resource-type"></a>Tipo de recurso unifiedRoleAssignmentMultiple
 
@@ -28,8 +28,6 @@ No momento, há suporte para os seguintes provedores RBAC:
 - Cloud PC 
 - Microsoft Intune
 
-[!INCLUDE [cloudpc-api-preview](../../includes/cloudpc-api-preview.md)]
-
 ## <a name="methods"></a>Métodos
 
 | Método       | Tipo de retorno | Descrição |
@@ -45,11 +43,11 @@ No momento, há suporte para os seguintes provedores RBAC:
 | Propriedade     | Tipo        | Descrição |
 |:-------------|:------------|:------------|
 | appScopeIds | Coleção de cadeias de caracteres | Ids dos escopos específicos do aplicativo quando os escopos de atribuição são específicos do aplicativo. Os escopos de uma atribuição determinam o conjunto de recursos para os quais a entidade recebeu acesso. Os escopos de diretório são escopos compartilhados armazenados no diretório que são compreendidos por vários aplicativos. Use `/` para escopo de todo o locatário. Os escopos do aplicativo são escopos definidos e compreendidos somente por esse aplicativo. |
-| description | String | Descrição da atribuição de função. |
+| description | Cadeia de caracteres | Descrição da atribuição de função. |
 | directoryScopeIds | Coleção de cadeias de caracteres | Ids dos objetos de diretório que representam os escopos da atribuição. Os escopos de uma atribuição determinam o conjunto de recursos para os quais as entidades foram concedidas acesso. Os escopos de diretório são escopos compartilhados armazenados no diretório que são compreendidos por vários aplicativos. Os escopos do aplicativo são escopos definidos e compreendidos somente por esse aplicativo. |
 | displayName | String | Nome da atribuição de função. Obrigatório. |
 | id | String | O identificador exclusivo do unifiedRoleAssignmentMultiple. Chave, não anulada, somente leitura. |
-| roleDefinitionId | Cadeia de Caracteres | Identificador do unifiedRoleDefinition para o que a atribuição se destina. |
+| roleDefinitionId | Cadeia de caracteres | Identificador do unifiedRoleDefinition para o que a atribuição se destina. |
 | principalIds | Coleção de cadeias de caracteres | Identificadores das entidades a que a atribuição é concedida.  Suporta `$filter` ( `any` somente operador). |
 
 

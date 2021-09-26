@@ -1,16 +1,16 @@
 ---
 title: tipo de recurso convite
 description: Representa um convite usado para adicionar usuários externos a uma organização.
-localization_priority: Normal
+ms.localizationpriority: medium
 author: Sammak
 ms.prod: identity-and-sign-in
 doc_type: resourcePageType
-ms.openlocfilehash: 9537b8ce7d677d6430a8690916996f3e80f2dd9c
-ms.sourcegitcommit: 0116750a01323bc9bedd192d4a780edbe7ce0fdc
+ms.openlocfilehash: 6998b38dc51af04d5f7314a52663fa2b9b5cccb2
+ms.sourcegitcommit: 08e9b0bac39c1b1d2c8a79539d24aaa93364baf2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58263804"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59766352"
 ---
 # <a name="invitation-resource-type"></a>tipo de recurso convite
 
@@ -43,10 +43,11 @@ A criação de um convite retornará uma URL de resgate na resposta (*inviteRede
 |invitedUserDisplayName|String|O nome de exibição do usuário que está sendo convidado.|
 |invitedUserEmailAddress|String|O endereço de email do usuário que está sendo convidado. Obrigatório. Os seguintes caracteres especiais não são permitidos no endereço de email:<br><ul><li>Til (~)</li><li>Ponto de exclamação (`!`)</li><li>Arroba (`@`)</li><li>Hashtag (`#`)</li><li>Cifrão (`$`)</li><li>Percentagem (`%`)</li><li>Acento circunflexo (`^`)</li><li>E comercial (`&`)</li><li>Asterisco (`*`)</li><li>Parênteses (`( )`)</li><li>Hífen (`-`)</li><li>Sinal de mais (`+`)</li><li>Sinal de igualdade (`=`)</li><li>Colchetes (`[ ]`)</li><li>Chaves (`{ }`)</li><li>Barra invertida (`\`)</li><li>Barra (`/`)</li><li>Barra vertical (`|`)</li><li>Ponto e vírgula (`;`)</li><li>Dois pontos (`:`)</li><li>Aspas (`"`)</li><li>Sinais de maior-que e menor-que(`< >`)</li><li>Sinal de interrogação (`?`)</li><li>Vírgula (`,`)</li></ul><br>No entanto, as seguintes exceções se aplicam:<br><ul><li>Um ponto (`.`) ou um hífen (`-`) é permitido em qualquer lugar no nome de usuário, exceto no início ou no final do nome.</li><li>Um underline (`_`) é permitido em qualquer lugar no nome de usuário. Isso inclui no início ou no final do nome.</li></ul>|
 |invitedUserMessageInfo|[invitedUserMessageInfo](invitedusermessageinfo.md)|Configurações adicionais para a mensagem que está sendo enviada ao usuário convidado, incluindo a lista de destinatários cc, o idioma e o texto da mensagem de personalização.|
-|sendInvitationMessage|Boolean|Indica se um email deve ser enviado para o usuário que está sendo convidado. O padrão é `false`.|
 |inviteRedirectUrl|String|A URL para a qual o usuário deve ser redirecionado após o resgate do convite. Obrigatório.|
 |inviteRedeemUrl|Cadeia de caracteres|O URL que o usuário pode usar para resgatar seu convite. Somente leitura.|
-|invitedUserType|String|O userType do usuário que está sendo convidado. Por padrão, é `Guest` Você pode convidar `Member` como se fosse administrador da empresa. |
+|invitedUserType|String|O userType do usuário que está sendo convidado. Por padrão, é `Guest` Você pode convidar `Member` como se fosse administrador da empresa. O padrão é `false`. |
+|resetRedemption|Boolean|Reset the user's redemption status and reinvite a user while retaining their user identifier, group memberships, and app assignments. Essa propriedade permite que você habilita um usuário a entrar usando um endereço de email diferente do do convite anterior. Para obter mais informações sobre como usar essa propriedade, consulte [Reset redemption status for a guest user (Preview)](/azure/active-directory/external-identities/reset-redemption-status#use-microsoft-graph-api-to-reset-redemption-status).|
+|sendInvitationMessage|Boolean|Indica se um email deve ser enviado ao usuário que está sendo convidado. O padrão é `false`.|
 |status|Cadeia de caracteres|O status do convite. Valores possíveis: `PendingAcceptance` `Completed` , , `InProgress` e `Error`|
 
 ## <a name="relationships"></a>Relações
@@ -70,16 +71,17 @@ Veja a seguir uma representação JSON do recurso
 -->
 ```json
 {
-  "id": "string",
-  "invitedUserDisplayName": "string",
-  "invitedUserEmailAddress": "string",
+  "id": "String",
+  "invitedUserDisplayName": "String",
+  "invitedUserEmailAddress": "String",
   "invitedUserMessageInfo": {"@odata.type": "microsoft.graph.invitedUserMessageInfo"},
   "sendInvitationMessage": false,
-  "inviteRedirectUrl": "string",
-  "inviteRedeemUrl": "string",
-  "status": "string",
+  "inviteRedirectUrl": "String",
+  "inviteRedeemUrl": "String",
+  "resetRedemption": false,
+  "status": "String",
   "invitedUser": {"@odata.type": "microsoft.graph.user"},
-  "invitedUserType": "string"
+  "invitedUserType": "String"
 }
 ```
 

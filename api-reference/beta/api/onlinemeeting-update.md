@@ -2,15 +2,15 @@
 title: Atualizar onlineMeeting
 description: Atualize as propriedades de uma reunião online.
 author: mkhribech
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: 90b9aeb3a428c90d19d1161ebc12fcad9bbd0cf4
-ms.sourcegitcommit: ac0e544853ce8476d76dc321e0d34e4b668b7651
+ms.openlocfilehash: cc81f0cd54c7a6e831339098510b1b4cde37bab7
+ms.sourcegitcommit: 08e9b0bac39c1b1d2c8a79539d24aaa93364baf2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/14/2021
-ms.locfileid: "58351007"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59766387"
 ---
 # <a name="update-onlinemeeting"></a>Atualizar onlineMeeting
 
@@ -28,35 +28,33 @@ Consulte [a seção Solicitar corpo](#request-body) para a lista de propriedades
 | :------------------------------------- | :------------------------------------------ |
 | Delegado (conta corporativa ou de estudante)     | OnlineMeetings.ReadWrite                    |
 | Delegado (conta pessoal da Microsoft) | Sem suporte.                              |
-| Aplicativo                            | OnlineMeetings.ReadWrite.All*                |
+| Aplicativo                            | OnlineMeetings.ReadWrite.All                |
 
-> [!IMPORTANT]
-> \*Os administradores [](/graph/cloud-communication-online-meeting-application-access-policy) devem criar uma política de acesso a aplicativos e concedi-la a um usuário, autorizando o aplicativo configurado na política para atualizar uma reunião online em nome desse usuário (ID do usuário especificada no caminho da solicitação).
+Para usar a permissão do aplicativo para [](/graph/cloud-communication-online-meeting-application-access-policy) essa API, os administradores de locatários devem criar uma política de acesso a aplicativos e concedi-la a um usuário para autorizar o aplicativo configurado na política para obter artefatos de reunião online em nome desse usuário (com a ID do usuário especificada no caminho da solicitação).
 
 ## <a name="http-request"></a>Solicitação HTTP
-Para atualizar o onlineMeeting especificado por meio da ID de reunião com o token delegado:
+
+Para atualizar o **onlineMeeting** especificado usando a ID da reunião com a permissão delegada ( `/me` ) e do aplicativo ( ) `/users/{userId}/` :
 <!-- { "blockType": "ignored" } -->
 ```http
 PATCH /me/onlineMeetings/{meetingId}
-```
-
-Para atualizar o onlineMeeting especificado pela ID de reunião com o token de aplicativo:
-<!-- { "blockType": "ignored" } -->
-```http
 PATCH /users/{userId}/onlineMeetings/{meetingId}
 ```
 
 > [!NOTE]
+>
 > - `userId` é a ID de objeto de um usuário no [Portal de gerenciamento de usuário do Azure](https://portal.azure.com/#blade/Microsoft_AAD_IAM/UsersManagementMenuBlade). Para obter mais detalhes, consulte [política de acesso ao aplicativo](/graph/cloud-communication-online-meeting-application-access-policy).
 > - `meetingId`é a **id** de um [objeto onlineMeeting.](../resources/onlinemeeting.md)
 
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
+
 | Nome          | Descrição                 |
 | :------------ | :-------------------------- |
 | Autorização | {token} de portador. Obrigatório.   |
 | Content-type  | application/json. Obrigatório. |
 
 ## <a name="request-body"></a>Corpo da solicitação
+
 A tabela a seguir lista as propriedades que podem ser atualizadas. No corpo da solicitação, inclua apenas as propriedades que precisam ser atualizadas, com as seguintes exceções:
 
 - Atualizar a data/hora inicial ou final de uma reunião online sempre requer as propriedades **startDateTime** e **endDateTime** no corpo da solicitação.
@@ -73,17 +71,20 @@ A última coluna indica se a atualização dessa propriedade terá efeito para u
 | participants                | [meetingParticipants](../resources/meetingparticipants.md) | Os participantes associados à reunião online. Somente participantes podem ser atualizados. | Não                           |
 | isEntryExitAnnounced        | Boolean                                                    | Se os chamadores ingressarão ou sairão.                              | Sim                          |
 | lobbyBypassSettings         | [lobbyBypassSettings](../resources/lobbyBypassSettings.md) | Especifica quais participantes podem ignorar o lobby da reunião.                          | Sim                          |
-| allowedPresenters           | onlineMeetingPresenters                                    | Especifica quem pode ser um apresentador em uma reunião.                                      | Sim, exceto quando o valor é `roleIsPresenter` |
+| allowedPresenters           | onlineMeetingPresenters                                    | Especifica quem pode ser um apresentador em uma reunião.                                      | Sim |
 | allowAttendeeToEnableCamera | Boolean                                                    | Indica se os participantes podem ativar a câmera.                               | Sim                          |
 | allowAttendeeToEnableMic    | Boolean                                                    | Indica se os participantes podem ativar o microfone.                           | Sim                          |
 | allowMeetingChat            | meetingChatMode                                            | Especifica o modo de chat de reunião.                                                 | Sim                          |
 | allowTeamworkReactions      | Boolean                                                    | Indica se Teams reações estão habilitadas para a reunião.                      | Sim                          |
 
 > [!NOTE]
-> Para ver a lista de valores possíveis **para allowedPresenters** e **allowMeetingChat,** consulte [onlineMeeting](../resources/onlinemeeting.md).
+>
+>- Para ver a lista de valores possíveis **para allowedPresenters** e **allowMeetingChat,** consulte [onlineMeeting](../resources/onlinemeeting.md).
+>- Ao atualizar o valor **de allowedPresenters** para , inclua uma lista completa de participantes com participantes especificados definido como no corpo `roleIsPresenter` da  `role` `presenter` solicitação.
 
 ## <a name="response"></a>Resposta
-Se bem-sucedido, este método retorna o código de resposta `200 OK` e um objeto [onlineMeeting](../resources/onlinemeeting.md) no corpo da resposta.
+
+Se tiver êxito, este método retornará um código de resposta e um `200 OK` [objeto onlineMeeting](../resources/onlinemeeting.md) atualizado no corpo da resposta.
 
 ## <a name="examples"></a>Exemplos
 

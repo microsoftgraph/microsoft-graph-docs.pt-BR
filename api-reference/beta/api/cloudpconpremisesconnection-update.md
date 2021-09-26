@@ -1,16 +1,16 @@
 ---
 title: Atualizar cloudPcOnPremisesConnection
-description: Atualizar as propriedades de um objeto cloudPcOnPremisesConnection.
+description: Atualize as propriedades de um objeto cloudPcOnPremisesConnection.
 author: AshleyYangSZ
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: cloud-pc
 doc_type: apiPageType
-ms.openlocfilehash: fa4e7470b607ff75df51de4ce978002ce4d59af1
-ms.sourcegitcommit: eb31a6b4a582a59b44df3453450a82fd366342d0
+ms.openlocfilehash: 26e856dae2e1c34b615330809c0cd4fe26398d36
+ms.sourcegitcommit: 08e9b0bac39c1b1d2c8a79539d24aaa93364baf2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/09/2021
-ms.locfileid: "50158167"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59766457"
 ---
 # <a name="update-cloudpconpremisesconnection"></a>Atualizar cloudPcOnPremisesConnection
 
@@ -18,10 +18,9 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Atualizar as propriedades de um [objeto cloudPcOnPremisesConnection.](../resources/cloudpconpremisesconnection.md)
-Depois que a conexão local passar na verificação de saúde, indicada pela `healthCheckStatus` propriedade, você não poderá atualizá-la.
+Atualize as propriedades de [um objeto cloudPcOnPremisesConnection.](../resources/cloudpconpremisesconnection.md)
+Depois que a conexão local passar pela verificação de saúde, que é indicada pela `healthCheckStatus` propriedade, você não poderá atualizá-la.
 
-[!INCLUDE [cloudpc-api-preview](../../includes/cloudpc-api-preview.md)]
 
 ## <a name="permissions"></a>Permissões
 
@@ -53,24 +52,24 @@ PATCH /deviceManagement/virtualEndpoint/onPremisesConnections/{id}
 
 ## <a name="request-body"></a>Corpo da solicitação
 
-No corpo da solicitação, fornece uma representação JSON do objeto [cloudPcOnPremisesConnection.](../resources/cloudpconpremisesconnection.md)
+No corpo da solicitação, fornece uma representação JSON do [objeto cloudPcOnPremisesConnection.](../resources/cloudpconpremisesconnection.md)
 
-A tabela a seguir mostra as propriedades que são necessárias ao criar [cloudPcOnPremisesConnection](../resources/cloudpconpremisesconnection.md).
+A tabela a seguir mostra as propriedades que são necessárias ao criar [o cloudPcOnPremisesConnection](../resources/cloudpconpremisesconnection.md).
 
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|displayName|String|O nome de exibição da conexão local.|
-|subscriptionId|String|A ID da assinatura do Azure de destino que está associada ao seu locatário.|
-|adDomainName|String|O nome de domínio totalmente qualificado (FQDN) do domínio do Active Directory no qual você deseja ingressar.|
-|adDomainUsername|String|O nome de usuário de uma conta do Active Directory (usuário ou conta de serviço) que tem permissões para criar objetos de computador no Active Directory. Formato obrigatório: username@contoso.com.|
-|adDomainPassword|String|A senha associada a adDomainUsername.|
-|resourceGroupId|String|A ID do grupo de recursos de destino. Formato obrigatório: "/subscriptions/{subscription-id}/resourceGroups/{resourceGroupName}".|
+|displayName|Cadeia de caracteres|O nome de exibição da conexão local.|
+|subscriptionId|String|A ID da assinatura de destino do Azure associada ao seu locatário.|
+|adDomainName|Cadeia de caracteres|O FQDN (nome de domínio totalmente qualificado) do domínio do Active Directory que você deseja ingressar.|
+|adDomainUsername|Cadeia de caracteres|O nome de usuário de uma conta do Active Directory (conta de usuário ou serviço) que tem permissões para criar objetos de computador no Active Directory. Formato obrigatório: username@contoso.com.|
+|adDomainPassword|Cadeia de caracteres|A senha associada a adDomainUsername.|
+|resourceGroupId|Cadeia de caracteres|A ID do grupo de recursos de destino. Formato obrigatório: "/subscriptions/{subscription-id}/resourceGroups/{resourceGroupName}".|
 |virtualNetworkId|String|A ID da rede virtual de destino. Formato obrigatório: "/subscriptions/{subscription-id}/resourceGroups/{resourceGroupName}/providers/Microsoft.Network/virtualNetworks/{virtualNetworkName}".|
-|subnetId|String|A ID da sub-rede de destino. Formato obrigatório: "/subscriptions/{subscription-id}/resourceGroups/{resourceGroupName}/providers/Microsoft.Network/virtualNetworks/{virtualNetworkId}/subnets/{subnetName}".|
+|subnetId|Cadeia de caracteres|A ID da sub-rede de destino. Formato obrigatório: "/subscriptions/{subscription-id}/resourceGroups/{resourceGroupName}/providers/Microsoft.Network/virtualNetworks/{virtualNetworkId}/subnets/{subnetName}".|
 
 ## <a name="response"></a>Resposta
 
-Se bem-sucedido, este método retorna um código de resposta e um objeto `200 OK` [cloudPcOnPremisesConnection](../resources/cloudpconpremisesconnection.md) atualizado no corpo da resposta.
+Se tiver êxito, este método retornará um código de resposta e um `200 OK` objeto [cloudPcOnPremisesConnection](../resources/cloudpconpremisesconnection.md) atualizado no corpo da resposta.
 
 ## <a name="examples"></a>Exemplos
 

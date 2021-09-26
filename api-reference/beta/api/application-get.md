@@ -5,12 +5,12 @@ author: sureshja
 ms.localizationpriority: high
 ms.prod: applications
 doc_type: apiPageType
-ms.openlocfilehash: 1c4b5d524074d687672f3ba7df651e236318d603
-ms.sourcegitcommit: c333953a9188b4cd4a9ab94cbe68871e8f3563e5
+ms.openlocfilehash: 5f11cbd1753970749ccc6c22cdb1ccfc1ae1c0b8
+ms.sourcegitcommit: 08e9b0bac39c1b1d2c8a79539d24aaa93364baf2
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/30/2021
-ms.locfileid: "58695088"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59763531"
 ---
 # <a name="get-application"></a>Obter aplicativo
 
@@ -35,7 +35,13 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 GET /applications/{id}
 ```
 ## <a name="optional-query-parameters"></a>Parâmetros de consulta opcionais
+
 Este método suporta o `$select` [parâmetro de consulta OData](/graph/query-parameters) para recuperar as propriedades específicas do aplicativo.
+
+Por padrão, esta API não retorna o valor da **chave** impressão digital na propriedade **keyCredentials** a menos que **keyCredentials** seja especificado em uma `$select`consulta. Por exemplo, `$select=id,appId,keyCredentials`.
+
+O uso de `$select` para obter **keyCredentials** para aplicativos tem um limite de aceleração de 150 solicitações por minuto para cada locatário.
+
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
 | Nome           | Descrição                |
 |:---------------|:---------------------------|

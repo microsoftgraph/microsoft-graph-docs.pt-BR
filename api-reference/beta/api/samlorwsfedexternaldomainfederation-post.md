@@ -10,7 +10,7 @@ ms.sourcegitcommit: 08e9b0bac39c1b1d2c8a79539d24aaa93364baf2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
 ms.lasthandoff: 09/24/2021
-ms.locfileid: "59508479"
+ms.locfileid: "59766866"
 ---
 # <a name="create-samlorwsfedexternaldomainfederation"></a>Criar samlOrWsFedExternalDomainFederation
 Namespace: microsoft.graph
@@ -27,7 +27,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |:--------------------|:---------------------------------------------------------|
 |Delegado (conta corporativa ou de estudante)|Domain.Read.All, Domain.ReadWrite.All|
 |Delegado (conta pessoal da Microsoft)| Sem suporte.|
-|Application|Domain.Read.All, Domain.ReadWrite.All|
+|Aplicativo|Domain.Read.All, Domain.ReadWrite.All|
 
 A conta de trabalho ou de estudante precisa pertencer a uma das seguintes funções:
 
@@ -61,10 +61,10 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar [samlOrW
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
 |displayName|Cadeia de caracteres|O nome de exibição do provedor de identidade baseado em SAML/WS-Fed. Herdado de [identityProviderBase](../resources/identityproviderbase.md).|
-|issuerUri|Cadeia de caracteres|URI do emissor do servidor de federação. Herdado [de samlOrWsFedProvider](../resources/samlorwsfedprovider.md).|
-|metadataExchangeUri|Cadeia de caracteres|URI do ponto de extremidade do exchange de metadados usado para autenticação de aplicativos cliente ricos. Herdado [de samlOrWsFedProvider](../resources/samlorwsfedprovider.md).|
-|passiveSignInUri|Cadeia de caracteres|URI para os quais os clientes baseados na Web são direcionados ao entrar nos serviços do Azure AD. Herdado [de samlOrWsFedProvider](../resources/samlorwsfedprovider.md).|
-|preferredAuthenticationProtocol|Cadeia de caracteres|Protocolo de autenticação preferencial. Os valores com suporte incluem `saml` ou `wsfed` . Herdado [de samlOrWsFedProvider](../resources/samlorwsfedprovider.md).|
+|issuerUri|String|URI do emissor do servidor de federação. Herdado [de samlOrWsFedProvider](../resources/samlorwsfedprovider.md).|
+|metadataExchangeUri|String|URI do ponto de extremidade do exchange de metadados usado para autenticação de aplicativos cliente ricos. Herdado [de samlOrWsFedProvider](../resources/samlorwsfedprovider.md).|
+|passiveSignInUri|String|URI para os quais os clientes baseados na Web são direcionados ao entrar nos serviços do Azure AD. Herdado [de samlOrWsFedProvider](../resources/samlorwsfedprovider.md).|
+|preferredAuthenticationProtocol|String|Protocolo de autenticação preferencial. Os valores com suporte incluem `saml` ou `wsfed` . Herdado [de samlOrWsFedProvider](../resources/samlorwsfedprovider.md).|
 |signingCertificate|Cadeia de caracteres|Certificado atual usado para assinar tokens passados para o plataforma de identidade da Microsoft. O certificado é formatado como uma cadeia de caracteres codificada base64 da parte pública do certificado de assinatura de token do IdP federado e deve ser compatível com a classe X509Certificate2.  <br/><br/> Essa propriedade é usada nos seguintes cenários: <ul><li> se uma rolagem for necessária fora da atualização de rolagem automática <li>um novo serviço de federação está sendo criado <li> se o novo certificado de assinatura de token não estiver presente nas propriedades de federação após a atualização do certificado de serviço de federação. </ul> <br/><br/> O Azure AD atualiza certificados por meio de um processo de autorollover no qual tenta recuperar um novo certificado dos metadados do serviço de federação, 30 dias antes da expiração do certificado atual. Se um novo certificado não estiver disponível, o Azure AD monitorará os metadados diariamente e atualizará as configurações de federação para o domínio quando um novo certificado estiver disponível.|
 
 ## <a name="response"></a>Resposta

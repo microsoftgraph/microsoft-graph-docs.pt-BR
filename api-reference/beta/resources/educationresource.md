@@ -1,16 +1,16 @@
 ---
 title: Tipo de recurso educationResource
-description: Uma superclasse para todos os objetos de recurso no sistema. Um recurso é associado a um **Assignment** and/or **Submission**, que representa o objeto de aprendizagem que está sendo
-localization_priority: Normal
+description: Uma classe base para todos os objetos de recurso no sistema.
+ms.localizationpriority: medium
 author: mmast-msft
 ms.prod: education
 doc_type: resourcePageType
-ms.openlocfilehash: f82274782f84204be288c67365288891f64fedf6
-ms.sourcegitcommit: 486fe9c77d4d89c5416bb83e8c716e6918c47370
+ms.openlocfilehash: eded1c6ff9362987634093602cbbb5d727a523d6
+ms.sourcegitcommit: 08e9b0bac39c1b1d2c8a79539d24aaa93364baf2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/15/2021
-ms.locfileid: "53440943"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59766604"
 ---
 # <a name="educationresource-resource-type"></a>Tipo de recurso educationResource
 
@@ -18,7 +18,9 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Uma superclasse para todos os objetos de recurso no sistema. Um recurso é associado a um **Assignment** and/or **Submission**, que representa o objeto de aprendizagem que está sendo entregue ou entregue. Não é possível instaurá-lo diretamente; você deve fazer uma subclasse que representará o tipo de recurso que está sendo usado.
+Uma classe base para todos os objetos de recurso no sistema. 
+
+Um educationResource está associado [a](educationassignment.md) uma atribuição e/ou [envio](educationsubmission.md), que representa o objeto de aprendizagem que está sendo entregue ou entregue. Não é possível instaurá-lo diretamente; você deve fazer uma subclasse que representará o tipo de recurso que está sendo usado.
 
 Esse recurso armazena as propriedades comuns em todos os tipos de recursos.
 
@@ -27,7 +29,7 @@ Esse recurso armazena as propriedades comuns em todos os tipos de recursos.
 | Propriedade     | Tipo   |Descrição|
 |:---------------|:--------|:----------|
 |createdBy|[identitySet](identityset.md)|Who criou o recurso.|
-|createdDateTime|Momento no tempo em que o recurso foi criado.  DateTimeOffset|O tipo Timestamp representa informações de data e hora usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite UTC em 1 de janeiro de 2014 é `2014-01-01T00:00:00Z`|
+|createdDateTime|Momento no tempo em que o recurso foi criado.  DateTimeOffset|O tipo de carimbo de data/hora representa informações de data e hora usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite UTC em 1º de janeiro de 2014 é `2014-01-01T00:00:00Z`|
 |displayName|Cadeia de caracteres|Nome de exibição do recurso.|
 |lastModifiedBy|[identitySet](identityset.md)|Who foi o último usuário a modificar o recurso.|
 |lastModifiedDateTime|DateTimeOffset|Momento no tempo em que o recurso foi modificado pela última vez.  O tipo Timestamp representa informações de data e hora usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite UTC em 1 de janeiro de 2014 é `2014-01-01T00:00:00Z`|

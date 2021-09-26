@@ -2,15 +2,15 @@
 title: Criar cloudPcDeviceImage
 description: Upload uma imagem personalizada do sistema operacional que você pode provisioná-la posteriormente em PCs na Nuvem.
 author: AshleyYangSZ
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: cloud-pc
 doc_type: apiPageType
-ms.openlocfilehash: 3db7f2b479bb00f07dc11a64d058a59d2cc02168
-ms.sourcegitcommit: a598c09b73e4e43eea5f4aaefea7ffe062e15c39
+ms.openlocfilehash: 721044cda7eb72db8dd86dd36c48df56a432b0dc
+ms.sourcegitcommit: 08e9b0bac39c1b1d2c8a79539d24aaa93364baf2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/22/2021
-ms.locfileid: "53534155"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59767290"
 ---
 # <a name="create-cloudpcdeviceimage"></a>Criar cloudPcDeviceImage
 
@@ -20,8 +20,6 @@ Namespace: microsoft.graph
 
 Crie um novo [objeto cloudPcDeviceImage.](../resources/cloudpcdeviceimage.md) Upload uma imagem personalizada do sistema operacional que você pode provisioná-la posteriormente em PCs na Nuvem.
 
-[!INCLUDE [cloudpc-api-preview](../../includes/cloudpc-api-preview.md)]
-
 ## <a name="permissions"></a>Permissões
 
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
@@ -30,7 +28,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |:---|:---|
 |Delegado (conta corporativa ou de estudante)|CloudPC.ReadWrite.All|
 |Delegado (conta pessoal da Microsoft)|Sem suporte.|
-|Application|CloudPC.ReadWrite.All|
+|Aplicativo|CloudPC.ReadWrite.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
 
@@ -58,10 +56,10 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar [o cloud
 
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|displayName|String|O nome de exibição da imagem.|
-|sourceImageResourceId|Cadeia de Caracteres|A ID do recurso de imagem de origem no Azure. Formato obrigatório: "/subscriptions/{subscription-id}/resourceGroups/{resourceGroupName}/providers/Microsoft.Compute/images/{imageName}".|
+|displayName|Cadeia de caracteres|O nome de exibição da imagem.|
+|sourceImageResourceId|String|A ID do recurso de imagem de origem no Azure. Formato obrigatório: "/subscriptions/{subscription-id}/resourceGroups/{resourceGroupName}/providers/Microsoft.Compute/images/{imageName}".|
 |operatingSystem|String|O sistema operacional da imagem. Por exemplo: Windows 10 Enterprise.|
-|osBuildNumber|Cadeia de Caracteres|A versão de com build do sistema operacional da imagem. Por exemplo: 1909.|
+|osBuildNumber|Cadeia de caracteres|A versão de com build do sistema operacional da imagem. Por exemplo: 1909.|
 |versão|String|A versão da imagem. Por exemplo: 0.0.1, 1.5.13.|
 
 ## <a name="response"></a>Resposta

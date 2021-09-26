@@ -5,12 +5,12 @@ ms.localizationpriority: high
 author: dkershaw10
 ms.prod: extensions
 doc_type: apiPageType
-ms.openlocfilehash: 97ae815c8eead9e77eadebad03d5aa5fc7e881c8
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 8e57fa0498529cc7ae5679eddd6a242b7514d7d7
+ms.sourcegitcommit: 08e9b0bac39c1b1d2c8a79539d24aaa93364baf2
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59085165"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59767157"
 ---
 # <a name="create-schemaextension"></a>Criar schemaExtension
 
@@ -124,7 +124,8 @@ Content-type: application/json
 
 #### <a name="response"></a>Resposta
 
-Aqui está um exemplo da resposta. Observação: o objeto de resposta mostrado aqui pode ser reduzido para facilitar a leitura.
+Este é um exemplo de resposta.
+>**Observação:** o objeto de resposta mostrado aqui pode ser encurtado para legibilidade.
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -164,7 +165,7 @@ Content-length: 420
 
 #### <a name="request"></a>Solicitação
 
-Este exemplo mostra a especificação de apenas um nome de esquema, `courses`, na propriedade **id** na solicitação, junto com a representação JSON do resto das propriedades no objeto [schemaExtension](../resources/schemaextension.md). O Microsoft Graph atribuirá e retornará um valor exclusivo de cadeia de caracteres na resposta.
+O exemplo a seguir mostra a especificação de apenas um nome de esquema, `courses`, na propriedade **id** na solicitação, junto com a representação JSON do resto das propriedades no objeto [schemaExtension](../resources/schemaextension.md). O Microsoft Graph atribuirá e retornará um valor exclusivo de cadeia de caracteres na resposta.
 
 
 # <a name="http"></a>[HTTP](#tab/http)
@@ -219,7 +220,8 @@ Content-type: application/json
 
 #### <a name="response"></a>Resposta
 
-A resposta inclui uma cadeia de caracteres exclusiva na propriedade **id** com base no nome do esquema fornecido na solicitação, junto com o resto da definição de esquema recém-criada. O valor em **id** na resposta se baseia no formato, ext\{_&#65279;8-random-alphanumeric-chars_\}\_\{_&#65279;schema-name_\}. Observação: o objeto da resposta mostrado aqui pode estar abreviado por motivos de legibilidade.
+A resposta inclui uma cadeia de caracteres exclusiva na propriedade **id** com base no nome do esquema fornecido na solicitação, junto com o resto da definição de esquema recém-criada. O valor em **id** na resposta se baseia no formato, ext\{_&#65279;8-random-alphanumeric-chars_\}\_\{_&#65279;schema-name_\}. 
+>**Observação:** o objeto de resposta mostrado aqui pode ser encurtado para legibilidade.
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -228,7 +230,6 @@ A resposta inclui uma cadeia de caracteres exclusiva na propriedade **id** com b
 ```http
 HTTP/1.1 201 Created
 Content-type: application/json
-Content-length: 420
 
 {
     "id": "extk9eruy7c_courses",
@@ -316,7 +317,8 @@ Content-type: application/json
 
 #### <a name="response"></a>Resposta
 
-A resposta inclui o **proprietário** definido como o valor fornecido na solicitação. Observação: o objeto de resposta mostrado aqui pode ser encurtado para legibilidade.
+A resposta inclui o **proprietário** definido como o valor fornecido na solicitação. 
+>**Observação:** o objeto de resposta mostrado aqui pode ser encurtado para legibilidade.
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -326,7 +328,6 @@ A resposta inclui o **proprietário** definido como o valor fornecido na solicit
 ```http
 HTTP/1.1 201 Created
 Content-type: application/json
-Content-length: 420
 
 {
     "id": "extk9eruy7c_courses",

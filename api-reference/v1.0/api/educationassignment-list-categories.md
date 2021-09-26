@@ -1,22 +1,22 @@
 ---
 title: Listar categorias
-description: Listar todas as categorias associadas a essa atribuição.
+description: Lista todas as categorias associadas a uma atribuição.
 author: sharad-sharma-msft
 ms.localizationpriority: medium
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: 000d3511973da64a12dfd14ed33a2c591d5babde
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: e334957c900c56607e16db6f52d9a3a7b7173ccd
+ms.sourcegitcommit: 08e9b0bac39c1b1d2c8a79539d24aaa93364baf2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59130892"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59507773"
 ---
 # <a name="list-categories"></a>Listar categorias
 
 Namespace: microsoft.graph
 
-Lista todas as categorias associadas a uma atribuição.
+Listar todas as categorias associadas a uma [atribuição](../resources/educationassignment.md).
 
 ## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
@@ -53,11 +53,11 @@ Este é um exemplo de solicitação.
 # <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "sampleKeys": ["1fdf61ee-c129-4960-9b7c-8df159aa64b0"],
+  "sampleKeys": ["f4a941ff-9da6-4707-ba5b-0eae93cad0b4","9018ae7a-9953-4796-a152-4c54e0910922"],  
   "name": "get_assignment_categories"
 }-->
 ```msgraph-interactive
-GET https://graph.microsoft.com/v1.0/education/classes/a17025d0-62a8-4450-9e6e-db31d8c8feb8/assignments/1fdf61ee-c129-4960-9b7c-8df159aa64b0/categories
+GET https://graph.microsoft.com/v1.0/education/classes/f4a941ff-9da6-4707-ba5b-0eae93cad0b4/assignments/9018ae7a-9953-4796-a152-4c54e0910922/categories
 ```
 # <a name="c"></a>[C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-assignment-categories-csharp-snippets.md)]
@@ -95,11 +95,11 @@ Content-type: application/json
 Content-length: 873
 
 {
-    "@odata.context": "https://graph.microsoft.com/v1.0/education/classes('a17025d0-62a8-4450-9e6e-db31d8c8feb8')/assignments('1fdf61ee-c129-4960-9b7c-8df159aa64b0')/categories",
+    "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#education/classes('f4a941ff-9da6-4707-ba5b-0eae93cad0b4')/assignments('9018ae7a-9953-4796-a152-4c54e0910922')/categories",
     "value": [
         {
-            "displayName": "Quizzes",
-            "id": "9b8f8f88-ddfc-4aad-9fe9-280513fffc74"
+            "displayName": "August Unit 2",
+            "id": "70563636-801f-440a-989e-14d417cc5c05"
         }
     ]
 }

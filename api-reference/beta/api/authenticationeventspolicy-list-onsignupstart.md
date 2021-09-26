@@ -2,15 +2,15 @@
 title: Listar ouvintes onSignUpStart
 description: Obter a coleção de recursos authenticationListener suportados pelo evento onSignupStart.
 author: jkdouglas
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: 1cdf120afeb553124e18488cb0cde20b6de23056
-ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
+ms.openlocfilehash: e8a9df7abd1229b38c0939372f6595a2bd4f073b
+ms.sourcegitcommit: 08e9b0bac39c1b1d2c8a79539d24aaa93364baf2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50438544"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59764637"
 ---
 # <a name="list-onsignupstart-listeners"></a>Listar ouvintes onSignUpStart
 
@@ -20,7 +20,7 @@ Namespace: microsoft.graph
 
 Obter a coleção de recursos authenticationListener suportados pelo evento onSignupStart. O evento onSignUpStart dá suporte ao [tipo invokeUserFlowListener.](../resources/invokeuserflowlistener.md)
 
-Quando [um invokeUserFlowListener](../resources/invokeuserflowlistener.md) é atribuído a um evento onSignUpStart, um aplicativo é associado [a](https://docs.microsoft.com/azure/active-directory/external-identities/self-service-sign-up-overview) um fluxo de usuários, portanto, habilitando um processo de inscrição de autoatendência nele. Depois que o evento de autenticação para invocar um fluxo de usuário for criado, os usuários que vão para esse aplicativo poderão iniciar um fluxo de inscrição que provisiona uma conta de convidado.
+Quando [um invokeUserFlowListener](../resources/invokeuserflowlistener.md) é atribuído a um evento onSignUpStart, um aplicativo é associado [a](/azure/active-directory/external-identities/self-service-sign-up-overview) um fluxo de usuários, portanto, habilitando um processo de inscrição de autoatendência nele. Depois que o evento de autenticação para invocar um fluxo de usuário for criado, os usuários que vão para esse aplicativo poderão iniciar um fluxo de inscrição que provisiona uma conta de convidado.
 
 ## <a name="permissions"></a>Permissões
 
@@ -83,7 +83,7 @@ GET https://graph.microsoft.com/beta/identity/events/onSignupStart
 
 Este é um exemplo de resposta.
 
-**Observação:** o objeto de resposta mostrado aqui pode ser encurtado para legibilidade.
+>**Observação:** o objeto de resposta mostrado aqui pode ser encurtado para legibilidade.
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -144,7 +144,7 @@ GET https://graph.microsoft.com/beta/identity/events/onSignupStart?$expand=micro
 
 Este é um exemplo de resposta.
 
-**Observação:** o objeto de resposta mostrado aqui pode ser encurtado para legibilidade.
+>**Observação:** o objeto de resposta mostrado aqui pode ser encurtado para legibilidade.
 <!-- {
   "blockType": "response",
   "truncated": true,

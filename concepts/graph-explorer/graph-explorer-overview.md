@@ -3,12 +3,12 @@ title: Usar Graph Explorer para experimentar APIs do Microsoft Graph
 description: Use o Graph Explorer para tentar apIs do Microsoft Graph no locatário de exemplo padrão para explorar recursos ou entrar no seu próprio locatário e usá-lo como uma ferramenta de prototipagem para atender aos cenários do aplicativo.
 ms.localizationpriority: medium
 author: bettirosengugi
-ms.openlocfilehash: 10929ab2a8dfccc54ccf7cab93e0274716b4aad8
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 14b16562c05b22000d299d3d2cd7dc608fa29293
+ms.sourcegitcommit: 08e9b0bac39c1b1d2c8a79539d24aaa93364baf2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59014318"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59766975"
 ---
 # <a name="use-graph-explorer-to-try-microsoft-graph-apis"></a>Usar Graph Explorer para experimentar APIs do Microsoft Graph
 
@@ -17,7 +17,7 @@ ms.locfileid: "59014318"
 Use Graph Explorer para:
 
 - Faça solicitações Graph API da Microsoft (GET, POST, PUT, PATCH e DELETE) e consulte respostas, incluindo código de resposta e quaisquer headers e corpos.
-- Consentimento para permissões.
+- Consentimento para permissões. Graph O Explorer dá suporte [apenas a permissões delegadas](/graph/auth/auth-concepts#delegated-and-application-permissions).
 - Adicione um corpo de solicitação e um header de solicitação à consulta.
 - Exibir e copiar o token de acesso.
 - Exibir consultas de exemplo para diferentes serviços no Microsoft Graph.
@@ -26,7 +26,7 @@ Use Graph Explorer para:
 - Acesse os Graph Toolkit microsoft e cartões adaptáveis para algumas consultas de exemplo.
 - Compartilhe consultas, incluindo o corpo da solicitação e os headers de solicitação.
 
-Graph O Explorer lida com o processo de autenticação para você. Personalize a experiência desmontando a barra lateral e alterando o tema.
+Graph O Explorer lida com o processo de autenticação para você. Personalize a experiência repondo a barra lateral ou alterando o tema.
 
 ## <a name="get-started"></a>Introdução
 
@@ -40,13 +40,13 @@ Graph O Explorer inclui os seguintes elementos:
 4. Consulta de exemplo
 5. Link de documentação para a consulta de exemplo
 
-![Captura de tela da interface do usuário Graph Explorer](./images/getting-started.png)
+:::image type="content" source="./images/getting-started.png" alt-text="Captura de tela da interface do usuário Graph Explorer." border="true":::
 
 ### <a name="make-a-get-request-in-graph-explorer"></a>Fazer uma solicitação GET no Graph Explorer
 
 Para executar uma solicitação GET no Graph Explorer, não é preciso entrar. Basta clicar em uma consulta de exemplo e os dados de exemplo mostrarão na visualização da resposta. 
 
-![Captura de tela de uma solicitação de exemplo no Graph Explorer](./images/making-a-get-request.png)
+:::image type="content" source="./images/making-a-get-request.png" alt-text="Captura de tela de uma solicitação de exemplo no Graph Explorer." border="true":::
 
 Para fazer uma solicitação:
 
@@ -65,7 +65,7 @@ Para experimentar solicitações POST, PUT, PATCH e DELETE, entre no Graph Explo
 
 Por exemplo, para executar uma solicitação POST, selecione POST na lista drop-down do verbo HTTP e adicione um corpo de solicitação e cabeçalhos de solicitação conforme apropriado.
 
-![Captura de tela de uma solicitação POST no Graph Explorer](./images/making-a-post-request.png)
+:::image type="content" source="./images/making-a-post-request.png" alt-text="Captura de tela de uma solicitação POST no Graph Explorer." border="true":::
 
 1. Selecione uma consulta de exemplo POST.
 2. Atualizar **corpo da solicitação;** por exemplo, dê um nome ao aplicativo.
@@ -74,7 +74,7 @@ Por exemplo, para executar uma solicitação POST, selecione POST na lista drop-
 
 Para exibir a resposta em um formato diferente do JSON padrão, escolha a guia Solicitar **headers** no painel de solicitação, defina o par chave/valor e clique em **Adicionar**.
 
-![Captura de tela que mostra a guia Solicitação de headers no Graph Explorer](./images/adding-key-value-pairs.png)
+:::image type="content" source="./images/adding-key-value-pairs.png" alt-text="Captura de tela que mostra a guia Solicitação de headers no Graph Explorer." border="true":::
 
 ## <a name="next-steps"></a>Próximas etapas
 

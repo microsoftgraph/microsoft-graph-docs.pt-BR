@@ -1,11 +1,11 @@
 ---
 ms.localizationpriority: medium
-ms.openlocfilehash: 5fb7ccc1c9e44db77f2ba199a556d229292cf7a4
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 93112b4ae67b3fe6352f0569613f8df064bc9de3
+ms.sourcegitcommit: 08e9b0bac39c1b1d2c8a79539d24aaa93364baf2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59289492"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59929112"
 ---
 <!-- markdownlint-disable MD002 MD025 MD041 -->
 
@@ -429,7 +429,7 @@ namespace PartsInventoryConnector.MicrosoftGraph
 {
     public class MicrosoftGraphHelper
     {
-        private class MicrosoftGraphServiceClient _microsoftGraphClient;
+        private GraphServiceClient _microsoftGraphClient;
 
         public MicrosoftGraphHelper(IAuthenticationProvider authProvider)
         {
@@ -439,7 +439,7 @@ namespace PartsInventoryConnector.MicrosoftGraph
             var httpProvider = new HttpProvider(serializer);
 
             // Initialize the Microsoft Graph client
-            _microsoftGraphClient = new MicrosoftGraphServiceClient(authProvider, httpProvider);
+            _microsoftGraphClient = new GraphServiceClient(authProvider, httpProvider);
         }
     }
 }

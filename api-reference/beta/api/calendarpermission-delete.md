@@ -1,20 +1,22 @@
 ---
 title: Excluir calendarPermission
 description: Excluir calendarPermission.
+author: Harini84
 ms.localizationpriority: medium
-author: sochowdh
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 6be5fe8431364f12be8e034930d80b0acf87adb8
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: ad436fb8dd52abcf29b11b83e057a59e81a0390d
+ms.sourcegitcommit: 08e9b0bac39c1b1d2c8a79539d24aaa93364baf2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59052759"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59766450"
 ---
 # <a name="delete-calendarpermission"></a>Excluir calendarPermission
 
 Namespace: microsoft.graph
+
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Excluir calendarPermission.
 
@@ -27,6 +29,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |Delegado (conta corporativa ou de estudante) | Calendars.ReadWrite    |
 |Delegado (conta pessoal da Microsoft) | Calendars.ReadWrite    |
 |Aplicativo | Calendars.ReadWrite |
+
 ## <a name="http-request"></a>Solicitação HTTP
 
 Exclua as permissões especificadas do calendário principal de um usuário:
@@ -51,7 +54,7 @@ DELETE /users/{id}/events/{id}/calendar/calendarPermissions/{id}
 
 | Nome          | Descrição   |
 |:--------------|:--------------|
-| Autorização | Portador {token} |
+| Autorização | {token} de portador. Obrigatório. |
 
 ## <a name="request-body"></a>Corpo da solicitação
 
@@ -76,24 +79,6 @@ Este é um exemplo de solicitação.
 ```http
 DELETE https://graph.microsoft.com/beta/users/{id}/calendar/calendarPermissions/{id}
 ```
-# <a name="c"></a>[C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/delete-calendarpermission-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# <a name="javascript"></a>[JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/delete-calendarpermission-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# <a name="objective-c"></a>[Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/delete-calendarpermission-objc-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# <a name="java"></a>[Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/delete-calendarpermission-java-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
----
-
 
 ### <a name="response"></a>Resposta
 

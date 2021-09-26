@@ -5,12 +5,12 @@ ms.localizationpriority: high
 doc_type: conceptualPageType
 ms.prod: identity-and-access-reports
 author: besiler
-ms.openlocfilehash: c718e6dbe95d1aaf4b891470d07e714d4e0a9ee7
-ms.sourcegitcommit: c333953a9188b4cd4a9ab94cbe68871e8f3563e5
+ms.openlocfilehash: de22cfb9134afcb846b2679895c5cd8bb46f701f
+ms.sourcegitcommit: 08e9b0bac39c1b1d2c8a79539d24aaa93364baf2
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/30/2021
-ms.locfileid: "58695124"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59766478"
 ---
 # <a name="activity-reports-api-overview"></a>Visão geral da API de relatórios de atividades
 
@@ -20,7 +20,7 @@ Namespace: microsoft.graph
 
 O Azure Active Directory (Azure AD) rastreia a atividade do usuário e cria relatórios que ajudam a entender como seus usuários acessam e usam os serviços do Azure AD. Use a API do Microsoft Graph para Azure AD para analisar os dados nesses relatórios e criar soluções personalizadas adaptadas às necessidades específicas da sua organização.
 
-A disponibilidade desses relatórios de atividades é regida pelas políticas de retenção de dados do Microsoft Azure Active Directory. Para saber mais, confira [políticas de retenção de dados](https://docs.microsoft.com/azure/active-directory/reports-monitoring/reference-reports-data-retention#how-long-does-azure-ad-store-the-data).
+A disponibilidade desses relatórios de atividades é regida pelas políticas de retenção de dados do Microsoft Azure Active Directory. Para saber mais, confira [políticas de retenção de dados](/azure/active-directory/reports-monitoring/reference-reports-data-retention#how-long-does-azure-ad-store-the-data).
 
 ## <a name="what-are-activity-reports"></a>O que são relatórios de atividades?
 

@@ -5,12 +5,12 @@ author: sureshja
 ms.localizationpriority: high
 ms.prod: applications
 doc_type: apiPageType
-ms.openlocfilehash: f0946da403754db4cb9edf5ec2f42ed0e9428d1e
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: c3c749ed158c9553bc63946629631f3bdd16f071
+ms.sourcegitcommit: 08e9b0bac39c1b1d2c8a79539d24aaa93364baf2
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59110106"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59507974"
 ---
 # <a name="get-serviceprincipal"></a>Obter um servicePrincipal
 
@@ -35,6 +35,11 @@ GET /servicePrincipals/{id}
 
 ## <a name="optional-query-parameters"></a>Parâmetros de consulta opcionais
 Este método dá suporte a [Parâmetros de consulta OData](/graph/query-parameters) para ajudar a personalizar a resposta.
+
+Por padrão, esta API não retorna o valor da chave pública da **chave** na propriedade **keyCredentials** a menos que **keyCredentials** seja especificado em uma `$select`consulta.
+Por exemplo, `$select=id,appId,keyCredentials`.
+
+O uso de `$select` para obter **keyCredentials** para diretores de serviços tem um limite de 150 pedidos por minuto para cada locatário.
 
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
 | Nome           | Descrição                |

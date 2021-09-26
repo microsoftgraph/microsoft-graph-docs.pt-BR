@@ -5,12 +5,12 @@ author: sureshja
 ms.localizationpriority: high
 ms.prod: applications
 doc_type: apiPageType
-ms.openlocfilehash: 8449b40779e7ef4b7b64b8e82b9a957ddd20dab4
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: eaafa94157b75f079b476790999a2b9b7b727a97
+ms.sourcegitcommit: 08e9b0bac39c1b1d2c8a79539d24aaa93364baf2
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59019570"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59766223"
 ---
 # <a name="list-serviceprincipals"></a>Listar servicePrincipals
 
@@ -24,8 +24,8 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegada (conta corporativa ou de estudante) | Application.Read.All, Application.ReadWrite.All, Directory.Read.All, Directory.ReadWrite.All, Directory.AccessAsUser.All    |
-|Delegada (conta pessoal da Microsoft) | Sem suporte.    |
+|Delegado (conta corporativa ou de estudante) | Application.Read.All, Application.ReadWrite.All, Directory.Read.All, Directory.ReadWrite.All, Directory.AccessAsUser.All    |
+|Delegado (conta pessoal da Microsoft) | Sem suporte.    |
 |Aplicativo | Application.Read.All, Application.ReadWrite.All, Directory.Read.All |
 
 ## <a name="http-request"></a>Solicitação HTTP
@@ -37,6 +37,10 @@ GET /servicePrincipals
 ## <a name="optional-query-parameters"></a>Parâmetros de consulta opcionais
 
 Este método suporta aos parâmetros de consulta `$count`, `$expand`, `$filter`, `$orderBy`, `$search`, `$select`, e `$top` [OData](/graph/query-parameters) para ajudar a personalizar a resposta. Algumas consultas são suportadas somente quando se usa o cabeçalho **ConsistencyLevel** definido como `eventual` e `$count`. Para obter mais informações, consulte [Funcionalidades avançadas de consulta nos objetos de diretório do Microsoft Azure AD](/graph/aad-advanced-queries).
+
+Por padrão, essa API não retorna o valor da **chave** na propriedade **keyCredentials** ao listar todas as entidades de serviço. Para recuperar as informações de chave pública na **chave**, a propriedade **keyCredentials** deve ser especificada em uma consulta `$select`. Por exemplo, `$select=id,appId,keyCredentials`.
+
+O uso de `$select` para obter **keyCredentials** para entidades de serviço tem uma restrição de limitação de 150 solicitações por minuto para cada locatário.
 
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
 | Nome           | Descrição                |

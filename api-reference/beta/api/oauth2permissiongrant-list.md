@@ -1,16 +1,16 @@
 ---
 title: Listar oAuth2PermissionGrants
 description: Recupere uma lista de objetos oauth2PermissionGrant, representando concessões de permissão delegadas.
-localization_priority: Normal
+ms.localizationpriority: medium
 doc_type: apiPageType
 ms.prod: identity-and-sign-in
 author: psignoret
-ms.openlocfilehash: 3e42b422a358a0fc513a2b11014e74f91432ecfc
-ms.sourcegitcommit: 34891a1c601976166958be1aa04bab5936592b44
+ms.openlocfilehash: 5b4773d249ae25dd00ab754b015569cb1bedf645
+ms.sourcegitcommit: 08e9b0bac39c1b1d2c8a79539d24aaa93364baf2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/06/2021
-ms.locfileid: "52231931"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59765960"
 ---
 # <a name="list-oauth2permissiongrants"></a>Lista oauth2PermissionGrants
 
@@ -21,7 +21,7 @@ Namespace: microsoft.graph
 Recupere uma lista de objetos [oAuth2PermissionGrant,](../resources/oauth2permissiongrant.md) representando permissões delegadas que foram concedidas aos aplicativos cliente para acessar APIs em nome de usuários assinados.
 
 > [!NOTE]
-> Essa solicitação pode ter atrasos de replicação para concessões de permissão delegadas que foram criadas, atualizadas ou excluídas recentemente. Esse atraso será minimizado se um filtro `clientId` for especificado.
+> Esse pedido pode ter atrasos de replicação das concessões de permissão delegadas que foram criadas, atualizadas ou excluídas recentemente. Esse atraso será minimizado se um filtro `clientId` for especificado.
 
 ## <a name="permissions"></a>Permissões
 
@@ -43,7 +43,7 @@ GET /oauth2PermissionGrants
 
 ## <a name="optional-query-parameters"></a>Parâmetros de consulta opcionais
 
-Este método dá suporte a [Parâmetros de consulta OData](/graph/query_parameters) para ajudar a personalizar a resposta.
+Este método dá suporte a [Parâmetros de consulta OData](/graph/query-parameters) para ajudar a personalizar a resposta.
 
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
 

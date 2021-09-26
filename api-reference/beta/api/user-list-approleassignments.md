@@ -5,12 +5,12 @@ ms.localizationpriority: high
 doc_type: apiPageType
 ms.prod: users
 author: psignoret
-ms.openlocfilehash: b04b2ed87c0d3f7ef75129f97d57c96051b57744
-ms.sourcegitcommit: c333953a9188b4cd4a9ab94cbe68871e8f3563e5
+ms.openlocfilehash: cd274ede245301c6b2e480a3dcc0d64d043a1451
+ms.sourcegitcommit: 08e9b0bac39c1b1d2c8a79539d24aaa93364baf2
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/30/2021
-ms.locfileid: "58696418"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59764063"
 ---
 # <a name="list-approleassignments-granted-to-a-user"></a>Listar appRoleAssignments concedido a um usuário
 
@@ -39,7 +39,7 @@ GET /users/{id | userPrincipalName}/appRoleAssignments
 
 ## <a name="optional-query-parameters"></a>Parâmetros de consulta opcionais
 
-Este método dá suporte a [Parâmetros de consulta OData](/graph/query_parameters) para ajudar a personalizar a resposta.
+Este método dá suporte a [Parâmetros de consulta OData](/graph/query-parameters) para ajudar a personalizar a resposta.
 
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
 

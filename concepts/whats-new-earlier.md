@@ -3,14 +3,62 @@ title: Destaques de versões anteriores no Microsoft Graph
 description: O que havia de novo no Microsoft Graph
 author: angelgolfer-ms
 ms.localizationpriority: high
-ms.openlocfilehash: 81da196b195056d59efbbb9f53c2e1cbfc630d28
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 3bd65907e98b9997f9cbeb6c7c023329e7f7b030
+ms.sourcegitcommit: 08e9b0bac39c1b1d2c8a79539d24aaa93364baf2
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59127882"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59765610"
 ---
 # <a name="highlights-of-earlier-releases"></a>Destaques de versões anteriores
+
+## <a name="july-2021-new-and-generally-available"></a>Julho de 2021: Novo e disponível para o público em geral
+
+### <a name="cloud-communications--calls"></a>Comunicações na nuvem | Chamadas
+Suporte para um limite de capacidade para o número de participantes que um aplicativo pode controlar ao [atender](/graph/api/call-answer) uma [chamada](/graph/api/resources/call), em organizações que adotam [gravação baseada em políticas do Teams](/microsoftteams/teams-recording-policy).
+
+### <a name="identity-and-access--identity-and-sign-in"></a>Identidade e acesso | Identidade e entrada
+- GA de provedores de identidade que compartilham um tipo de base comum [identityProviderBase](/graph/api/resources/identityproviderbase):
+  - Provedores de identidade internos para cenários do Azure AD B2B em um locatário do Azure AD. Esses provedores podem oferecer suporte ao Azure AD, conta Microsoft (MSA) ou senhas únicas de email.
+  - Provedores de identidade social em um locatário do Azure AD B2C para permitir que os usuários se inscrevam e entrem no serviço usando uma conta de mídia social, como Microsoft, Google, Facebook, Amazon, LinkedIn ou Twitter.
+- Descontinuação da API do [provedor de identidade](/graph/api/resources/identityprovider) anterior.
+
+### <a name="users"></a>Usuários
+Permitir que um usuário [altere sua própria senha](/graph/api/user-changepassword) sem exigir uma função de administrador.
+
+
+## <a name="july-2021-new-in-preview-only"></a>Julho de 2021: Novo somente para visualização
+
+### <a name="devices-and-apps--cloud-pc"></a>Dispositivos e aplicativos | PC na nuvem
+Uma [verificação de integridade](/graph/api/cloudpconpremisesconnection-runhealthcheck?view=graph-rest-beta&preserve-view=true) de conexão local pode identificar mais alguns tipos de erros de verificação de integridade:
+- A conta do computador do PC na Nuvem não foi encontrada na unidade organizacional (`adJoinCheckComputerObjectAlreadyExists`).
+- O objeto do PC na Nuvem não foi encontrado no Microsoft Azure Active Directory (`azureAdDeviceSyncCheckDeviceNotFound`).
+- Tempo limite para verificar se um objeto do PC na nuvem foi sincronizado com o Microsoft Azure Active Directory (`azureAdDeviceSyncCheckLongSyncCircle`). 
+
+Consulte a [referência](/graph/api/resources/cloudpconpremisesconnectionhealthcheck?view=graph-rest-beta&preserve-view=true#cloudpconpremisesconnectionhealthcheckerrortype-values) para obter detalhes e as ações corretivas recomendadas.
+
+### <a name="devices-and-apps--corporate-management"></a>Dispositivos e aplicativos | Gerenciamento corporativo
+Atualizações mensais do Intune para a versão beta. Defina o filtro de **Data** para julho de 2021 e procure uma seção com este mesmo título.
+
+### <a name="devices-and-apps--multi-tenant-management"></a>Dispositivos e aplicativos | Gerenciamento de vários locatários
+Lançamento da [API do Microsoft 365 Lighthouse](managedtenants-concept-overview.md) que permite que os Provedores de Serviços Gerenciados (MSPs) gerenciem remotamente vários locatários de clientes em escala para conformidade e detecção de ameaças, e ajudam a manter os dispositivos dos locatários em um estado íntegro e seguro.
+
+### <a name="education"></a>Educação
+- Obtenha uma contagem de erros e uma mensagem de status como parte do [status de uma sincronização de dados escolares](/graph/api/resources/educationsynchronizationprofilestatus?view=graph-rest-beta&preserve-view=true).
+- Obtenha `extracting` ou `validating` como possíveis estados de tal sincronização.
+
+### <a name="identity-and-access--governance"></a>Identidade e acesso | Governança
+Obtenha uma coleção de erros no ciclo de vida de uma [instância de revisão de acesso](/graph/api/resources/accessreviewinstance?view=graph-rest-beta&preserve-view=true).
+
+### <a name="search"></a>Pesquisa
+- Use a [API de Pesquisa da Microsoft para recuperar informações sobre as pessoas](search-concept-person.md) que são mais relevantes para um usuário. A relevância é determinada pelos padrões de comunicação, colaboração e pelas relações comerciais do usuário. 
+- Acesse a [API de indexação de conectores](/graph/api/resources/indexing-api-overview?view=graph-rest-beta&preserve-view=true) no sub-namespace microsoft.graph.externalConnectors.
+
+### <a name="teamwork"></a>Trabalho em equipe
+- [Inscreva-se para alterar notificações no recurso de chat](teams-changenotifications-chat.md).
+- [Inscreva-se para alterar notificações de usuários em um chat](teams-changenotifications-chatmembership.md), em um [canal](/graph/api/resources/channel?view=graph-rest-beta&preserve-view=true) ou em uma [equipe](/graph/api/resources/team?view=graph-rest-beta&preserve-view=true) (ou seja, recursos de [conversationMember](/graph/api/resources/conversationmember?view=graph-rest-beta&preserve-view=true)).
+- Obtenha detalhes de um evento que aconteceu em um chat, canal ou equipe, acessando [eventMessageDetail](/graph/api/resources/EventMessageDetail?view=graph-rest-beta&preserve-view=true) de um [chatMessage](/graph/api/resources/chatmessage?view=graph-rest-beta&preserve-view=true) ou [chat](/graph/api/resources/chat?view=graph-rest-beta&preserve-view=true). Por exemplo, membros adicionados a um canal ou chat, e a descrição da equipe atualizada.
+
 
 ## <a name="june-2021-new-and-generally-available"></a>Junho de 2021: novos e disponíveis para o público em geral
 

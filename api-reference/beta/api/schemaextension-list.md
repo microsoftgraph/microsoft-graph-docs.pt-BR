@@ -1,16 +1,16 @@
 ---
 title: List schemaExtensions
 description: 'Obter uma lista de objetos schemaExtension criados por todos os aplicativos que você possui no locatário atual (que pode ser '
-localization_priority: Normal
+ms.localizationpriority: medium
 author: dkershaw10
 doc_type: apiPageType
 ms.prod: extensions
-ms.openlocfilehash: 8e1d8e1810f579b7c1e5d31a6e0a221a1df1d7c6
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: 440a8abf5246cbd882fff8bb11d7203c9155fcd9
+ms.sourcegitcommit: 08e9b0bac39c1b1d2c8a79539d24aaa93364baf2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52053500"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59764238"
 ---
 # <a name="list-schemaextensions"></a>List schemaExtensions
 
@@ -30,15 +30,13 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |:--------------------|:---------------------------------------------------------|
 |Delegado (conta corporativa ou de estudante) | User.Read, Application.Read.All   |
 |Delegado (conta pessoal da Microsoft) | Sem suporte.    |
-|Application | Application.Read.All  |
+|Aplicativo | Application.Read.All  |
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /schemaExtensions
 ```
-## <a name="optional-query-parameters"></a>Parâmetros de consulta opcionais
-Este método dá suporte a [Parâmetros de consulta OData](/graph/query-parameters) para ajudar a personalizar a resposta.
 
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
 | Nome      |Descrição|
@@ -53,7 +51,7 @@ Não forneça um corpo de solicitação para esse método.
 
 Se tiver êxito, este método retornará um código `200 OK` de resposta e uma coleção de objetos [schemaExtension](../resources/schemaextension.md) no corpo da resposta.
 ## <a name="example"></a>Exemplo
-##### <a name="request"></a>Solicitação
+### <a name="request"></a>Solicitação
 O exemplo a seguir mostra como procurar entre todas as extensões acessíveis para uma específica, filtrando sua **id exclusiva.** 
 
 # <a name="http"></a>[HTTP](#tab/http)
@@ -82,8 +80,9 @@ GET https://graph.microsoft.com/beta/schemaExtensions?$filter=id%20eq%20'graphle
 
 ---
 
-##### <a name="response"></a>Resposta
-Veja a seguir um exemplo da resposta. Observação: o objeto de resposta mostrado aqui pode ser encurtado para legibilidade.
+### <a name="response"></a>Resposta
+Este é um exemplo de resposta. 
+>**Observação:** o objeto de resposta mostrado aqui pode ser encurtado para legibilidade.
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -93,7 +92,6 @@ Veja a seguir um exemplo da resposta. Observação: o objeto de resposta mostrad
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 274
 
 {
   "value": [

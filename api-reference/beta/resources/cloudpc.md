@@ -2,15 +2,15 @@
 title: Tipo de recurso cloudPC
 description: Áreas de trabalho virtuais gerenciadas na nuvem.
 author: AshleyYangSZ
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: cloud-pc
 doc_type: resourcePageType
-ms.openlocfilehash: 5d23f8345da02fda2d60ac8f7d957eabf14e9c89
-ms.sourcegitcommit: 6f04ad0e0cde696661511dcdf343942b43f73fc6
+ms.openlocfilehash: e3f716b059a55f12add0eaf0b8ab785f71e1cb42
+ms.sourcegitcommit: 08e9b0bac39c1b1d2c8a79539d24aaa93364baf2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/19/2021
-ms.locfileid: "58396939"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59765197"
 ---
 # <a name="cloudpc-resource-type"></a>Tipo de recurso cloudPC
 
@@ -18,9 +18,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Representa uma área de trabalho virtual gerenciada pela nuvem.
-
-[!INCLUDE [cloudpc-api-preview](../../includes/cloudpc-api-preview.md)]
+Representa uma área de trabalho virtual gerenciada pela nuvem. Esse computador cloud também está inscrito no Intune e gerenciado por meio do portal MEM, portanto, o Cloud PC também tem uma ID de dispositivo gerenciado correspondente do Intune.
 
 ## <a name="methods"></a>Métodos
 
@@ -30,24 +28,28 @@ Representa uma área de trabalho virtual gerenciada pela nuvem.
 |[Obter cloudPC](../api/cloudpc-get.md)|[cloudPC](../resources/cloudpc.md)|Leia as propriedades e as relações de um [objeto cloudPC.](../resources/cloudpc.md)|
 |[Reprovision](../api/cloudpc-reprovision.md)|Nenhum|Reprovisionar um [objeto cloudPC.](../resources/cloudpc.md)|
 |[endGracePeriod](../api/cloudpc-endgraceperiod.md)|Nenhum|Termine o período de carência para um [objeto cloudPC.](../resources/cloudpc.md)|
+|[Ação remota de cloudPC de reprovisionamento](../api/manageddevice-reprovisioncloudpc.md)|Nenhum|Reprovisionar um computador cloud com id de dispositivo gerenciado do Intune.|
+|[Ação remota cloudPCs de reprovisionamento em massa](../api/manageddevice-bulkreprovisioncloudpc.md)|Nenhum|Reprovisionar em massa um conjunto de dispositivos cloud pc com IDs de dispositivo gerenciado do Intune.|
+|[Resize a ação remota do cloudPC](../api/manageddevice-resizecloudpc.md)|Nenhum|Atualize ou downgrade um CloudPC existente para outra configuração com novo vCPU e tamanho de armazenamento por meio da ID de dispositivo gerenciado do Intune.|
+|[Obter resultados de ação remota do cloudPC](../api/manageddevice-getcloudpcremoteactionresults.md)|[cloudPcRemoteActionResult](../resources/cloudpcremoteactionresult.md)|Verifique os resultados da ação remota especificada pelo [computador na nuvem](../resources/cloudpcremoteactionresult.md) para um dispositivo cloud pc.|
 
 ## <a name="properties"></a>Propriedades
 
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
 |id|Cadeia de caracteres|Identificador exclusivo para o Cloud PC. Somente leitura.|
-|displayName|Cadeia de caracteres|O nome de exibição do computador na nuvem.|
-|imageDisplayName|Cadeia de caracteres|Nome da imagem do sistema operacional que está no cloud pc.|
-|managedDeviceId|Cadeia de caracteres|A ID do dispositivo Intune do cloud pc.|
+|displayName|String|O nome de exibição do computador na nuvem.|
+|imageDisplayName|String|Nome da imagem do sistema operacional que está no cloud pc.|
+|managedDeviceId|String|A ID do dispositivo Intune do cloud pc.|
 |managedDeviceName|String|O nome do dispositivo Intune do computador na nuvem.|
 |provisioningPolicyId|Cadeia de caracteres|A ID da política de provisionamento do Cloud PC.|
 |provisioningPolicyName|Cadeia de caracteres|A política de provisionamento aplicada durante o provisionamento de PCs na Nuvem.|
 |onPremisesConnectionName|Cadeia de caracteres|A conexão local que é aplicada durante o provisionamento de PCs na Nuvem.|
-|servicePlanId|Cadeia de caracteres|ID do plano de serviço do Cloud PC.|
+|servicePlanId|String|ID do plano de serviço do Cloud PC.|
 |servicePlanName|Cadeia de caracteres|O nome do plano de serviço do Computador na Nuvem.|
 |status|[cloudPcStatus](#cloudpcstatus-values)|Status do computador na nuvem. Os valores possíveis são: `notProvisioned`, `provisioning`, `provisioned`, `upgrading`, `inGracePeriod`, `deprovisioning`, `failed`.|
 |statusDetails|[cloudPcStatusDetails](../resources/cloudpcstatusdetails.md)|Os detalhes do status do computador na nuvem.|
-|userPrincipalName|Cadeia de caracteres|O nome principal do usuário (UPN) do usuário atribuído ao Cloud PC.|
+|userPrincipalName|String|O nome principal do usuário (UPN) do usuário atribuído ao Cloud PC.|
 |lastModifiedDateTime|DateTimeOffset|Data e hora da última modificação do computador na nuvem. O tipo Timestamp representa informações de data e hora usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite UTC em 1 de janeiro de 2014 é `2014-01-01T00:00:00Z`.|
 |gracePeriodEndDateTime|DateTimeOffset|A data e a hora em que o período de carência termina e o reprovisionamento/desprovisionamento acontece. Obrigatório somente se o status for `inGracePeriod` . O timestamp é mostrado no formato ISO 8601 e tempo universal coordenado (UTC). Por exemplo, meia-noite UTC em 1 de janeiro de 2014 é `2014-01-01T00:00:00Z`.|
 
@@ -58,10 +60,12 @@ Representa uma área de trabalho virtual gerenciada pela nuvem.
 |notProvisioned|O Cloud PC não foi provisionado.|
 |provisionamento|O provisionamento do computador na nuvem está em andamento.|
 |provisionado|O Cloud PC é provisionado e pode ser acessado por usuários finais.|
-|atualização|O resize do Cloud PC está em andamento.|
 |inGracePeriod|O Cloud PC está no período de carência de uma semana antes de ser desprovisionado.|
 |desprovisionamento|O Cloud PC está desprovisionando.|
 |failed|A operação no Cloud PC falhou.|
+|provisionedWithWarnings|O Cloud PC é provisionado e pode ser acessado por usuários finais, mas com alguns avisos. O usuário pode continuar a usar esse Computador na Nuvem.|
+|resizing|O Cloud PC está resizing.|
+|unknownFutureValue|Valor de sentinela de enumeração evolvável. Não usar.|
 
 ## <a name="relationships"></a>Relações
 

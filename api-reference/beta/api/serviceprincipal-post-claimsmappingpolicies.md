@@ -1,16 +1,16 @@
 ---
 title: Atribuir claimsMappingPolicy
-description: Atribuir um claimsMappingPolicy a uma entidade de serviço.
-localization_priority: Normal
+description: Atribua um claimsMappingPolicy a uma entidade de serviço.
+ms.localizationpriority: medium
 author: sureshja
 ms.prod: applications
 doc_type: apiPageType
-ms.openlocfilehash: 8f2ba6bafa30b52036216d8faacea9865f84e6db
-ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
+ms.openlocfilehash: 7c76bc098c8f70082e0d75ba2a350c87b183a971
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/06/2021
-ms.locfileid: "50134191"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59767164"
 ---
 # <a name="assign-claimsmappingpolicy"></a>Atribuir claimsMappingPolicy
 
@@ -26,9 +26,9 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 | Tipo de permissão                        | Permissões (da com menos para a com mais privilégios) |
 |:---------------------------------------|:--------------------------------------------|
-| Delegado (conta corporativa ou de estudante)     | Policy.Read.All and Application.ReadWrite.All, Policy.ReadWrite.ApplicationConfiguration and Application.ReadWrite.All  |
+| Delegado (conta corporativa ou de estudante)     | Policy.Read.All e Application.ReadWrite.All, Policy.ReadWrite.ApplicationConfiguration e Application.ReadWrite.All  |
 | Delegado (conta pessoal da Microsoft) | Sem suporte. |
-| Application                            | Policy.Read.All and Application.ReadWrite.OwnedBy, Policy.ReadWrite.ApplicationConfiguration and Application.ReadWrite.OwnedBy, Policy.Read.All and Application.ReadWrite.All, Policy.ReadWrite.ApplicationConfiguration and Application.ReadWrite.All |
+| Aplicativo                            | Policy.Read.All e Application.ReadWrite.OwnedBy, Policy.ReadWrite.ApplicationConfiguration e Application.ReadWrite.OwnedBy, Policy.Read.All e Application.ReadWrite.All, Policy.ReadWrite.ApplicationConfiguration e Application.ReadWrite.All |
 
 ## <a name="http-request"></a>Solicitação HTTP
 
@@ -47,7 +47,7 @@ POST /servicePrincipals/{id}/claimsMappingPolicies/$ref
 
 ## <a name="request-body"></a>Corpo da solicitação
 
-No corpo da solicitação, fornece o identificador do objeto [claimsMappingPolicy](../resources/claimsmappingpolicy.md) (usando uma propriedade) que deve ser atribuído à `@odata.id` entidade de serviço.
+No corpo da solicitação, fornece o identificador do [objeto claimsMappingPolicy](../resources/claimsmappingpolicy.md) (usando uma propriedade) que deve ser atribuído à entidade `@odata.id` de serviço.
 
 ## <a name="response"></a>Resposta
 
@@ -66,7 +66,7 @@ Este é um exemplo de solicitação.
 }-->
 
 ```http
-POST https://graph.microsoft.com/beta/servicePrincipals/{id}/claimsMappingPolicies/$ref
+POST https://graph.microsoft.com/beta/servicePrincipals/{servicePrincipal-id}/claimsMappingPolicies/$ref
 Content-Type: application/json
 
 {

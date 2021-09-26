@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: lumine2008
 ms.prod: excel
 doc_type: apiPageType
-ms.openlocfilehash: bce502c5bdc7eff2a40710f52dc81f6778768827
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: c018ea4962e09dae2fc656d2966f4b687f303ecc
+ms.sourcegitcommit: 08e9b0bac39c1b1d2c8a79539d24aaa93364baf2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59025879"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59765533"
 ---
 # <a name="tablerowcollection-add"></a>TableRowCollection: add
 
@@ -27,8 +27,8 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegada (conta corporativa ou de estudante) | Files.ReadWrite    |
-|Delegada (conta pessoal da Microsoft) | Sem suporte.    |
+|Delegado (conta corporativa ou de estudante) | Files.ReadWrite    |
+|Delegado (conta pessoal da Microsoft) | Sem suporte.    |
 |Aplicativo | Sem suporte. |
 
 ## <a name="http-request"></a>Solicitação HTTP
@@ -56,7 +56,7 @@ Forneça um objeto JSON com os seguintes parâmetros no corpo da solicitação.
 
 ## <a name="response"></a>Resposta
 
-Se tiver êxito, este método retornará `200 OK` o código de resposta e o objeto [WorkbookTableRow](../resources/tablerow.md) no corpo da resposta.
+Se tiver êxito, este método retornará `200 OK` o código de resposta e o objeto [WorkbookTableRow](../resources/workbooktablerow.md) no corpo da resposta.
 
 ## <a name="example"></a>Exemplo
 Neste exemplo, duas linhas de dados são inseridas no final da tabela. 

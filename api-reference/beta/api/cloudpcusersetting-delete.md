@@ -2,15 +2,15 @@
 title: Excluir cloudPcUserSetting
 description: Exclua um objeto cloudPcUserSetting.
 author: AshleyYangSZ
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: cloud-pc
 doc_type: apiPageType
-ms.openlocfilehash: 6f434d4536eff7361311ad20d2bc17498b700af3
-ms.sourcegitcommit: 7f674112f5b95446fac86d829509f889c60f1693
+ms.openlocfilehash: 4df590b6be7fed73ff6b01d992130e5dc5377b3c
+ms.sourcegitcommit: 08e9b0bac39c1b1d2c8a79539d24aaa93364baf2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/30/2021
-ms.locfileid: "53207830"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59763321"
 ---
 # <a name="delete-cloudpcusersetting"></a>Excluir cloudPcUserSetting
 
@@ -20,7 +20,6 @@ Namespace: microsoft.graph
 
 [Exclua um objeto cloudPcUserSetting.](../resources/cloudpcusersetting.md)
 
-[!INCLUDE [cloudpc-api-preview](../../includes/cloudpc-api-preview.md)]
 ## <a name="permissions"></a>Permissões
 
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).

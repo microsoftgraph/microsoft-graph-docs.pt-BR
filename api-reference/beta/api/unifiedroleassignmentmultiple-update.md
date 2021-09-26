@@ -1,16 +1,16 @@
 ---
 title: Atualizar unifiedRoleAssignmentMultiple
 description: Atualize um novo objeto unifiedRoleAssignmentMultiple.
-localization_priority: Normal
+ms.localizationpriority: medium
 author: abhijeetsinha
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: 2925431e15516e678bb60d61e6c9ef4f4bb7fea9
-ms.sourcegitcommit: a598c09b73e4e43eea5f4aaefea7ffe062e15c39
+ms.openlocfilehash: e2a88232dae91d5a05f726a59dc155dbfa54ec42
+ms.sourcegitcommit: 08e9b0bac39c1b1d2c8a79539d24aaa93364baf2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/22/2021
-ms.locfileid: "53534064"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59766716"
 ---
 # <a name="update-unifiedroleassignmentmultiple"></a>Atualizar unifiedRoleAssignmentMultiple
 
@@ -24,8 +24,6 @@ No momento, há suporte para os seguintes provedores RBAC:
 - Cloud PC 
 - gerenciamento de dispositivos (Intune)
 
-[!INCLUDE [cloudpc-api-preview](../../includes/cloudpc-api-preview.md)]
-
 Por outro lado, [unifiedRoleAssignment](../resources/unifiedroleassignment.md) não dá suporte à atualização.
 
 ## <a name="permissions"></a>Permissões
@@ -38,7 +36,7 @@ Dependendo do provedor RBAC e do tipo de permissão (delegado ou aplicativo) nec
 |:--------------------|:---------------------------------------------------------|
 |Delegado (conta corporativa ou de estudante) |  CloudPC.ReadWrite.All   |
 |Delegado (conta pessoal da Microsoft) | Sem suporte.    |
-|Application | CloudPC.ReadWrite.All  |
+|Aplicativo | CloudPC.ReadWrite.All  |
 
 ### <a name="for-device-management-intune-provider"></a>Para o provedor de gerenciamento de dispositivos (Intune)
 
@@ -46,7 +44,7 @@ Dependendo do provedor RBAC e do tipo de permissão (delegado ou aplicativo) nec
 |:--------------------|:---------------------------------------------------------|
 |Delegado (conta corporativa ou de estudante) |  DeviceManagementRBAC.ReadWrite.All   |
 |Delegado (conta pessoal da Microsoft) | Sem suporte.    |
-|Application | DeviceManagementRBAC.ReadWrite.All |
+|Aplicativo | DeviceManagementRBAC.ReadWrite.All |
 
 
 ## <a name="http-request"></a>Solicitação HTTP

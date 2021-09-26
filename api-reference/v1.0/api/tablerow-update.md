@@ -5,12 +5,12 @@ author: lumine2008
 ms.localizationpriority: medium
 ms.prod: excel
 doc_type: apiPageType
-ms.openlocfilehash: 0b96107a1c416a7be5849896d6a34a57721b7ae2
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 033ebf670cd76005a19c9bc012ea2cfbad57f6db
+ms.sourcegitcommit: 08e9b0bac39c1b1d2c8a79539d24aaa93364baf2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59025892"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59508296"
 ---
 # <a name="update-tablerow"></a>Atualizar tablerow
 
@@ -22,8 +22,8 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegada (conta corporativa ou de estudante) | Files.ReadWrite    |
-|Delegada (conta pessoal da Microsoft) | Sem suporte.    |
+|Delegado (conta corporativa ou de estudante) | Files.ReadWrite    |
+|Delegado (conta pessoal da Microsoft) | Sem suporte.    |
 |Aplicativo | Sem suporte. |
 
 ## <a name="http-request"></a>Solicitação HTTP
@@ -35,7 +35,7 @@ PATCH /me/drive/items/{id}/workbook/worksheets/{id|name}/tables/{id|name}/rows/{
 PATCH /me/drive/root:/{item-path}:/workbook/worksheets/{id|name}/tables/{id|name}/rows/{index}
 ```
 ## <a name="optional-request-headers"></a>Cabeçalhos de solicitação opcionais
-| Name       | Descrição|
+| Nome       | Descrição|
 |:-----------|:-----------|
 | Autorização  | {token} de portador. Obrigatório. |
 | Workbook-Session-Id  | ID de sessão de pasta de trabalho que determina se as alterações são persistentes ou não. Opcional.|
@@ -49,7 +49,7 @@ No corpo da solicitação, forneça os valores para os campos relevantes que dev
 
 ## <a name="response"></a>Resposta
 
-Se tiver êxito, este método retornará um código `200 OK` de resposta e um objeto [WorkbookTableRow](../resources/tablerow.md) atualizado no corpo da resposta.
+Se tiver êxito, este método retornará um código `200 OK` de resposta e um objeto [WorkbookTableRow](../resources/workbooktablerow.md) atualizado no corpo da resposta.
 ## <a name="example"></a>Exemplo
 ##### <a name="request"></a>Solicitação
 Este é um exemplo da solicitação.

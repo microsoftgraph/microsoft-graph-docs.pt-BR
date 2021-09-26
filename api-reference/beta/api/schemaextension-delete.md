@@ -1,16 +1,16 @@
 ---
 title: Excluir schemaExtension
 description: Exclui uma definição da extensão de esquema.
-localization_priority: Normal
+ms.localizationpriority: medium
 author: dkershaw10
 doc_type: apiPageType
 ms.prod: extensions
-ms.openlocfilehash: e6f62b570a9befa762ac0f4f05db70cbb13f6c7e
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 473924ffd4be2b8aa20d586f086af7b2ab6c268b
+ms.sourcegitcommit: 08e9b0bac39c1b1d2c8a79539d24aaa93364baf2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48975292"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59766856"
 ---
 # <a name="delete-schemaextension"></a>Excluir schemaExtension
 
@@ -34,7 +34,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |Aplicativo | Sem suporte. |
 
 > [!NOTE]
-> Além disso, para o fluxo delegado, o usuário conectado só pode excluir schemaExtensionss próprios (onde a propriedade **Owner** do schemaExtension é o `appId` de um aplicativo que o usuário conectado possui).
+> Além disso, para o fluxo delegado, o usuário in-loco só pode excluir  esquemaExtensions que possui (onde a propriedade owner do esquemaExtension é a de um aplicativo que o usuário inscreveu `appId` possui).
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- { "blockType": "ignored" } -->
@@ -55,8 +55,8 @@ Não forneça um corpo de solicitação para esse método.
 Se bem-sucedido, este método retorna um código de resposta `204 No Content`. Não retorna nada no corpo da resposta.
 
 ## <a name="example"></a>Exemplo
-##### <a name="request"></a>Solicitação
-Este é um exemplo da solicitação.
+### <a name="request"></a>Solicitação
+Este é um exemplo de solicitação.
 
 # <a name="http"></a>[HTTP](#tab/http)
 <!-- {
@@ -84,8 +84,8 @@ DELETE https://graph.microsoft.com/beta/schemaExtensions/{id}
 
 ---
 
-##### <a name="response"></a>Resposta
-Veja a seguir um exemplo da resposta. 
+### <a name="response"></a>Resposta
+Este é um exemplo de resposta. 
 <!-- {
   "blockType": "response",
   "truncated": true

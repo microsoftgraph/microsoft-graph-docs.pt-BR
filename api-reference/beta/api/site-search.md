@@ -2,16 +2,16 @@
 author: JeremyKelley
 description: Pesquise num locatário do SharePoint por sites que correspondam a palavras-chave fornecidas.
 ms.date: 09/10/2017
-title: Localizar sites do SharePoint por palavra-chave
-localization_priority: Normal
+title: Encontre SharePoint sites por palavra-chave
+ms.localizationpriority: medium
 ms.prod: sharepoint
 doc_type: apiPageType
-ms.openlocfilehash: 778da0c46168e816fcdafa806b33b1e734345a43
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 315fb51c86ec3054982e756fed8da7db63b74137
+ms.sourcegitcommit: 08e9b0bac39c1b1d2c8a79539d24aaa93364baf2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48044505"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59764628"
 ---
 # <a name="search-for-sites"></a>Procurar sites
 
@@ -19,7 +19,9 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Pesquisar em um locatário do SharePoint para [sites][] que correspondam a palavras-chave fornecidas.
+Pesquise SharePoint locatários [de sites][] que corresponderem às palavras-chave fornecidas.
+
+A única propriedade que funciona para classificação é **createdDateTime**. O filtro de pesquisa é uma pesquisa de texto livre que usa várias propriedades ao recuperar os resultados da pesquisa.
 
 [sites]: ../resources/site.md
 
@@ -33,34 +35,62 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |Delegado (conta pessoal da Microsoft) | Sem suporte.
 |Aplicativo                            | Sites.Read.All, Sites.ReadWrite.All
 
+>**Observação:** esse método não oferece suporte à permissão de aplicativo Sites.Selected.
+
 ## <a name="http-request"></a>Solicitação HTTP
-```http
-GET /sites?$search={query}
+
+<!-- { "blockType": "ignored" } -->
+
+``` http
+GET /sites?search={query}
 ```
+
+## <a name="request-headers"></a>Cabeçalhos de solicitação
+|Nome|Descrição|
+|:---|:---|
+|Autorização|{token} de portador. Obrigatório.|
+
+## <a name="request-body"></a>Corpo da solicitação
+Não forneça um corpo de solicitação para esse método.
+
+## <a name="response"></a>Resposta
+
+Se tiver êxito, este método retornará um código `200 OK` de resposta e a coleção de objetos de [site](../resources/site.md) no corpo da resposta.
+
+## <a name="examples"></a>Exemplos
+
+### <a name="request"></a>Solicitação
 
 # <a name="http"></a>[HTTP](#tab/http)
-<!-- { "blockType": "request", "name": "search-sites", "scopes": "service.sharepoint sites.readwrite.all" } -->
-
-```msgraph-interactive
-GET https://graph.microsoft.com/beta/sites?$search={query}
+<!-- {
+  "blockType": "request",
+  "name": "list_permission"
+}
+-->
+``` http
+GET https://graph.microsoft.com/beta/sites?search={query}
 ```
 # <a name="c"></a>[C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/search-sites-csharp-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/csharp/list-permission-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="javascript"></a>[JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/search-sites-javascript-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/javascript/list-permission-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="objective-c"></a>[Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/search-sites-objc-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/objc/list-permission-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/list-permission-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
 
-## <a name="response"></a>Resposta
-
+### <a name="response"></a>Resposta
+>**Observação:** o objeto de resposta mostrado aqui pode ser encurtado para legibilidade.
 <!-- { "blockType": "response", "@type": "Collection(microsoft.graph.site)", "truncated": true } -->
 
 ```http
@@ -88,10 +118,8 @@ Content-type: application/json
   ]
 }
 ```
->**Observação:** A única propriedade que funciona para classificação é **createdDateTime**. O filtro de pesquisa é uma pesquisa de texto livre que usa várias propriedades ao recuperar os resultados da pesquisa.
 
-<!--
-{
+<!-- {
   "type": "#page.annotation",
   "description": "",
   "keywords": "",
@@ -99,7 +127,4 @@ Content-type: application/json
   "tocPath": "Sites/Search",
   "suppressions": [
   ]
-}
--->
-
-
+} -->

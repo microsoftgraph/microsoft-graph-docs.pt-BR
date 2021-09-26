@@ -2,15 +2,15 @@
 title: 'cloudPcDeviceImage: reupload'
 description: Recarregue um objeto cloudPcDeviceImage.
 author: RuiHou105
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: cloud-pc
 doc_type: apiPageType
-ms.openlocfilehash: 8e359f749f0b932f3061bf8750fcf7992fe23302
-ms.sourcegitcommit: 486fe9c77d4d89c5416bb83e8c716e6918c47370
+ms.openlocfilehash: 19448e066276c42865dd1407d01817ca81fe9aa4
+ms.sourcegitcommit: 08e9b0bac39c1b1d2c8a79539d24aaa93364baf2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/15/2021
-ms.locfileid: "53439473"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59764539"
 ---
 # <a name="cloudpcdeviceimage-reupload"></a>cloudPcDeviceImage: reupload
 
@@ -20,15 +20,14 @@ Namespace: microsoft.graph
 
 Reupload a [cloudPcDeviceImage](../resources/cloudpcdeviceimage.md) object that failed to upload.
 
-[!INCLUDE [cloudpc-api-preview](../../includes/cloudpc-api-preview.md)]
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>Permissões
 
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão|Permissões (da com menos para a com mais privilégios)|
 |:---|:---|
-|Delegada (conta corporativa ou de estudante)|CloudPC.ReadWrite.All|
-|Delegada (conta pessoal da Microsoft)|Sem suporte.|
+|Delegado (conta corporativa ou de estudante)|CloudPC.ReadWrite.All|
+|Delegado (conta pessoal da Microsoft)|Sem suporte.|
 |Aplicativo|CloudPC.ReadWrite.All|
 
 ## <a name="http-request"></a>Solicitação HTTP

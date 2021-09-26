@@ -1,16 +1,16 @@
 ---
 title: Criar caso
 description: Use essa API para criar um novo caso.
-localization_priority: Normal
+ms.localizationpriority: medium
 author: mahage-msft
 ms.prod: ediscovery
 doc_type: apiPageType
-ms.openlocfilehash: 7fa7331b9a75c9c9d787ab12804540b1e5efe31a
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: 9e926414d0806f5dbc6979f0ff360d5400193048
+ms.sourcegitcommit: 08e9b0bac39c1b1d2c8a79539d24aaa93364baf2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52044722"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59765701"
 ---
 # <a name="create-case"></a>Criar caso
 
@@ -19,6 +19,9 @@ Namespace: microsoft.graph.ediscovery
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Crie um novo [objeto case.](../resources/ediscovery-case.md)
+
+>[!NOTE]
+>A partir de setembro de 2021, essa API criará um tipo de caso grande. Para saber mais sobre casos grandes, consulte [Use large cases in Advanced eDiscovery](/microsoft-365/compliance/advanced-ediscovery-large-cases). Para obter detalhes, consulte a [postagem do](https://go.microsoft.com/fwlink/?linkid=2172604) blog Alterações na descoberta Microsoft 365 criar API de caso avançada.
 
 ## <a name="permissions"></a>Permissões
 
@@ -50,7 +53,7 @@ No corpo da solicitação, fornece uma representação JSON de um [objeto case.]
 
 | Propriedade     | Tipo        | Descrição |
 |:-------------|:------------|:------------|
-| displayName  | cadeia de caracteres      | O nome do caso de Descoberta e. |
+| displayName  | string      | O nome do caso de Descoberta e. |
 
 ## <a name="response"></a>Resposta
 

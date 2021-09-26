@@ -2,15 +2,15 @@
 title: Listar auditEvents
 description: Obter uma lista dos objetos cloudPcAuditEvent e suas propriedades.
 author: ecmadao
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: cloud-pc
 doc_type: apiPageType
-ms.openlocfilehash: 2a2694a2b854c9fbaba137506d925ba8cf4829d6
-ms.sourcegitcommit: ada6eab637b9b318129aefb98edbe7316399d9ba
+ms.openlocfilehash: 094ef7ca5a1095b05fd25fbc179bdf82c0e10c1b
+ms.sourcegitcommit: 08e9b0bac39c1b1d2c8a79539d24aaa93364baf2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/07/2021
-ms.locfileid: "53316563"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59767353"
 ---
 # <a name="list-auditevents"></a>Listar auditEvents
 
@@ -19,8 +19,6 @@ Namespace: microsoft.graph
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Listar todos os [objetos cloudPcAuditEvent](../resources/cloudpcauditevent.md) para o locatário.
-
-[!INCLUDE [cloudpc-api-preview](../../includes/cloudpc-api-preview.md)]
 
 ## <a name="permissions"></a>Permissões
 

@@ -1,31 +1,31 @@
 ---
-title: tipo de recurso SortProperty
-description: Oferece a opção de classificar os resultados da pesquisa.
-localization_priority: Normal
+title: Tipo de recurso sortProperty
+description: Indica a ordem para classificar os resultados da pesquisa
+ms.localizationpriority: medium
 author: nmoreau
 ms.prod: search
 doc_type: resourcePageType
-ms.openlocfilehash: 1f1288b2dc9ec05fe8aaedb5871c3bda68714f90
-ms.sourcegitcommit: b70ee16cdf24daaec923acc477b86dbf76f2422b
+ms.openlocfilehash: 9606b76ec7679b543759f328fc7d64803e676df3
+ms.sourcegitcommit: 08e9b0bac39c1b1d2c8a79539d24aaa93364baf2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48193832"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59766632"
 ---
-# <a name="sortproperty-resource-type"></a>tipo de recurso SortProperty
+# <a name="sortproperty-resource-type"></a>Tipo de recurso sortProperty
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Representa as opções de classificação para ordenar os resultados da pesquisa.
+Indica a ordem para classificar os resultados da pesquisa.
 
 ## <a name="properties"></a>Propriedades
 
 | Propriedade     | Tipo        | Descrição |
 |:-------------|:------------|:------------|
-|nome|String|O nome da propriedade a ser classificada. Obrigatório.|
-|isDescending|Booliano|`True` se a ordem de classificação for decrescente. O padrão é `false` , com a ordem de classificação como crescente. Opcional.|
+|name|Cadeia de caracteres|O nome da propriedade a ser classificação. Obrigatório.|
+|isDescending|Boolean|`True` se a ordem de classificação estiver decrescente. O padrão `false` é , com a ordem de classificação como crescente. Opcional.|
 
 ## <a name="json-representation"></a>Representação JSON
 
