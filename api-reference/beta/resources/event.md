@@ -5,12 +5,12 @@ author: harini84
 ms.localizationpriority: high
 ms.prod: outlook
 doc_type: resourcePageType
-ms.openlocfilehash: eb48206cbbf2decd4d7a639606bb5e8b316e3ad7
-ms.sourcegitcommit: 08e9b0bac39c1b1d2c8a79539d24aaa93364baf2
+ms.openlocfilehash: a53b5f7a2060d98c10f6e8dfeddf281fdda4996c
+ms.sourcegitcommit: 30fca91ed203a9ab7b0562833ce0c20c7fb7b7b1
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/24/2021
-ms.locfileid: "59767045"
+ms.lasthandoff: 09/27/2021
+ms.locfileid: "59931966"
 ---
 # <a name="event-resource-type"></a>tipo de recurso de evento
 
@@ -83,7 +83,7 @@ Esse recurso permite:
 |exceptionOccurrences|Coleção de cadeia de caracteres|Contém os valores da propriedade **id** das instâncias de evento que são exceções em uma série recorrente.<br>As exceções podem diferir das outras ocorrências em uma série recorrente, tais como o assunto, o início ou fim do horário, ou os participantes. As exceções não incluem as ocorrências canceladas.<br><br>Devolvido somente em $select e $expand em uma operação [GET](../api/event-get.md) que especifica a identidade de uma série de eventos mestre (ou seja, o valor da propriedade seriesMasterId).|
 |hasAttachments|Booliano|Defina como true se o evento tiver anexos.|
 |hideAttendees|Booliano|Quando definido como `true`, cada participante só se vê na solicitação de reunião e na lista de **Rastreamento** da reunião. O padrão é falso.|
-|id|Cadeia de caracteres| Identificador exclusivo do evento. [!INCLUDE [outlook-beta-id](../../includes/outlook-beta-id.md)] Somente leitura. |
+|id|Cadeia de caracteres| Identificador exclusivo do evento. [!INCLUDE [outlook-beta-id](../../includes/outlook-beta-id.md)] Sensível a casos e somente leitura.|
 |importância|String|A importância do evento. Os valores possíveis são: `low`, `normal`, `high`.|
 |isAllDay|Booliano|Defina como True se o evento durar o dia inteiro. Se estiver definido como True, independentemente de ser um evento de um ou de vários dias, a hora de início e término deve ser definida como meia-noite e estar no mesmo fuso horário.|
 |isCancelled|Booliano|Defina como true se o evento tiver sido cancelado.|
