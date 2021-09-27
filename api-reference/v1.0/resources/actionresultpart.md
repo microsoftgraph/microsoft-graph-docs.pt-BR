@@ -1,22 +1,20 @@
 ---
 title: Tipo de recurso actionResultPart
 description: Tipo abstrato para modelar respostas de operações em massa.
-author: AkJo
+author: abshar-teams
 ms.localizationpriority: medium
 ms.prod: microsoft-teams
 doc_type: resourcePageType
-ms.openlocfilehash: 63a4f05e9096c0abd2bb2f207af2702fed3b47e3
+ms.openlocfilehash: fb09088bfdd298d286447b63453f1965f38a9e6a
 ms.sourcegitcommit: 30fca91ed203a9ab7b0562833ce0c20c7fb7b7b1
 ms.translationtype: MT
 ms.contentlocale: pt-BR
 ms.lasthandoff: 09/27/2021
-ms.locfileid: "59931959"
+ms.locfileid: "59932057"
 ---
 # <a name="actionresultpart-resource-type"></a>Tipo de recurso actionResultPart
 
 Namespace: microsoft.graph
-
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Um tipo abstrato que serve como base para modelar respostas de operações em massa. A **propriedade** error é preenchida seletivamente com base em se a resposta representa um erro.
 
@@ -46,7 +44,6 @@ Veja a seguir uma representação JSON do recurso.
 ```
 ## <a name="see-also"></a>Confira também
 
-- [aadUserConversationMemberResult](aadUserConversationMemberResult.md)
 - [Adicionar membros em massa a uma equipe](../api/conversationmembers-add.md)
 
 <!-- uuid: 20fd7863-9545-40d4-ae8f-fee2d115a690

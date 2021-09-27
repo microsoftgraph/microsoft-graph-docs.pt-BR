@@ -5,18 +5,18 @@ ms.localizationpriority: medium
 author: abhijeetsinha
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: 225961b2323c4db8f8d9588ce9b7bf9c8019c8c9
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: cd07f4ad9f343af7a3de1c1b4aff79f4ad527bd1
+ms.sourcegitcommit: 30fca91ed203a9ab7b0562833ce0c20c7fb7b7b1
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59130406"
+ms.lasthandoff: 09/27/2021
+ms.locfileid: "59931980"
 ---
 # <a name="list-unifiedroleassignments"></a>Listar unifiedRoleAssignments
 
 Namespace: microsoft.graph
 
-Obter uma lista de [objetos unifiedRoleAssignment](../resources/unifiedroleassignment.md) para o provedor.
+Obter uma lista de [objetos unifiedRoleAssignment](../resources/unifiedroleassignment.md) para o provedor de diretórios.
 
 ## <a name="permissions"></a>Permissões
 
@@ -33,8 +33,9 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 <!-- { "blockType": "ignored" } -->
 
 ```http
-GET /roleManagement/directory/roleAssignments?$filter=roleDefinitionId {eq roleDefinitionId}
-GET /roleManagement/directory/roleAssignments?$filter=principalId {eq principalId}
+GET /roleManagement/directory/roleAssignments?$filter=principalId eq '{principal id}'
+
+GET /roleManagement/directory/roleAssignments?$filter=roleDefinitionId eq '{roleDefinition id}'
 ```
 
 ## <a name="query-parameters"></a>Parâmetros de consulta
