@@ -2,15 +2,15 @@
 title: tipo de recurso attendanceInterval
 description: Contém informações associadas ao intervalo de participação no attendanceRecord.
 author: mkhribech
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: cloud-communications
 doc_type: resourcePageType
-ms.openlocfilehash: 13b4e20a5233b865dd5417eed4d159bce07c8717
-ms.sourcegitcommit: 7abb0672a38a6d9b11a2e0d2cc221222cb8358bb
+ms.openlocfilehash: 55b218cfcecb4f2f7d3d597881b612e36fe42860
+ms.sourcegitcommit: 84d9a50dfa9526a207696c69d92381c8763d986a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/11/2021
-ms.locfileid: "52896512"
+ms.lasthandoff: 09/28/2021
+ms.locfileid: "59979247"
 ---
 # <a name="attendanceinterval-resource-type"></a>tipo de recurso attendanceInterval
 
@@ -27,6 +27,9 @@ Contém informações associadas ao intervalo de participação no attendanceRec
 | joinDateTime | DateTime | Participante do horário ingressado em UTC. |
 | leaveDateTime | DateTime | O participante do horário foi deixado em UTC. |
 | durationInSeconds | Int32 | Duração do intervalo de reunião em segundos; ou seja, a diferença entre **joinDateTime** e **leaveDateTime**. |
+
+> [!TIP]
+> Quando os dados não estão disponíveis, o valor de **joinDateTime** ou **leaveDateTime** será definido como , e o valor de `null` **durationInSeconds** será definido como no corpo da resposta da operação Obter relatório de participação da `0` reunião. [](/graph/api/onlinemeeting-get?view=graph-rest-beta&preserve-view=true)
 
 ## <a name="json-representation"></a>Representação JSON
 

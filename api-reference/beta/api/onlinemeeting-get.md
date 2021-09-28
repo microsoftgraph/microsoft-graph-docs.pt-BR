@@ -5,12 +5,12 @@ author: mkhribech
 ms.localizationpriority: medium
 ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: 5290eb9b5868de908cef6d26404691bfe2d53ebe
-ms.sourcegitcommit: 08e9b0bac39c1b1d2c8a79539d24aaa93364baf2
+ms.openlocfilehash: 32b8df664fa3206511b1bdb0a0f3d5559fd368d0
+ms.sourcegitcommit: 84d9a50dfa9526a207696c69d92381c8763d986a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/24/2021
-ms.locfileid: "59767409"
+ms.lasthandoff: 09/28/2021
+ms.locfileid: "59979401"
 ---
 # <a name="get-onlinemeeting"></a>Obter onlineMeeting
 
@@ -36,8 +36,8 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 | Tipo de permissão                        | Permissões (da com menos para a com mais privilégios)                                            |
 |:---------------------------------------|:---------------------------------------------------------------------------------------|
 | Delegado (conta corporativa ou de estudante)     | OnlineMeetingArtifact.Read.ALl, OnlineMeetings.Read, OnlineMeetings.ReadWrite          |
-| Delegado (conta pessoal da Microsoft) | Sem suporte.                                                                         |
-| Aplicativo                            | OnlineMeetingArtifact.Read.ALl, OnlineMeetings.Read.All, OnlineMeetings.ReadWrite.All  |
+| Delegada (conta pessoal da Microsoft) | Sem suporte.                                                                         |
+| Aplicativo                            | OnlineMeetingArtifact.Read.All, OnlineMeetings.Read.All, OnlineMeetings.ReadWrite.All  |
 
 Para usar a permissão do aplicativo para [](/graph/cloud-communication-online-meeting-application-access-policy) essa API, os administradores de locatários devem criar uma política de acesso a aplicativos e concedi-la a um usuário para autorizar o aplicativo configurado na política para obter artefatos de reunião online em nome desse usuário (com a ID do usuário especificada no caminho da solicitação).
 

@@ -1,0 +1,138 @@
+---
+title: Listar simulações
+description: Listar simulações de ataque de um locatário.
+author: Gopal-MSFT
+ms.localizationpriority: medium
+ms.prod: security
+doc_type: apiPageType
+ms.openlocfilehash: 6fc53a52fbd543fbdc9eeb6263d8c2fda1260f16
+ms.sourcegitcommit: 84d9a50dfa9526a207696c69d92381c8763d986a
+ms.translationtype: MT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 09/28/2021
+ms.locfileid: "59979460"
+---
+# <a name="list-simulations"></a>Listar simulações
+Namespace: microsoft.graph
+
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
+Listar simulações de ataque de um locatário.
+
+## <a name="permissions"></a>Permissões
+Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
+
+| Tipo de permissão                        | Permissões (da com menos para a com mais privilégios) |
+|:---------------------------------------|:--------------------------------------------|
+| Delegado (conta corporativa ou de estudante)     | SecurityEvents.Read.All                     |
+| Delegada (conta pessoal da Microsoft) | Sem suporte.                              |
+| Aplicativo                            | SecurityEvents.Read.All                     |
+
+## <a name="http-request"></a>Solicitação HTTP
+
+<!-- {
+  "blockType": "ignored"
+}
+-->
+``` http
+GET /security/attackSimulation/simulations
+```
+
+## <a name="optional-query-parameters"></a>Parâmetros de consulta opcionais
+Este método dá suporte aos seguintes parâmetros de consulta OData para ajudar a personalizar a resposta: `$count` , , , , , `$filter` `$orderby` `$skiptoken` `$top` .
+
+As seguintes propriedades suportam `$filter` e `$orderby` : **attackTechnique**, **attackType**, **completionDateTime**, **displayName**, **isAutomated**, **launchDateTime**, **mode**, **status**.
+
+Use `@odata.nextLink` para paginação.
+
+Veja a seguir exemplos de seu uso:
+
+<!-- {
+  "blockType": "ignored"
+}
+-->
+``` http
+GET /security/attackSimulation/simulations?$count=true
+GET /security/attackSimulation/simulations?$filter={property} eq '{property-value}'
+GET /security/attackSimulation/simulations?$filter={property} eq '{property-value}'&$top=5
+GET /security/attackSimulation/simulations?$orderby={property}
+GET /security/attackSimulation/simulations?$top=1
+```
+
+Para obter informações gerais, acesse [Parâmetros de consulta OData](/graph/query-parameters).
+
+## <a name="request-headers"></a>Cabeçalhos de solicitação
+|Nome|Descrição|
+|:---|:---|
+|Autorização|{token} de portador. Obrigatório.|
+
+## <a name="request-body"></a>Corpo da solicitação
+Não forneça um corpo de solicitação para esse método.
+
+## <a name="response"></a>Resposta
+
+Se tiver êxito, este método retornará um código `200 OK` de resposta e uma coleção de objetos [de](../resources/simulation.md) simulação no corpo da resposta.
+
+## <a name="examples"></a>Exemplos
+
+### <a name="request"></a>Solicitação
+<!-- {
+  "blockType": "request",
+  "name": "list_simulation"
+}
+-->
+``` http
+GET https://graph.microsoft.com/beta/security/attackSimulation/simulations
+```
+
+
+### <a name="response"></a>Resposta
+>**Observação:** o objeto de resposta mostrado aqui pode ser encurtado para legibilidade.
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "Collection(microsoft.graph.simulation)"
+}
+-->
+``` http
+HTTP/1.1 200 OK
+Content-Type: application/json
+
+{
+  "value": [
+    {
+      "id": "f1b13829-3829-f1b1-2938-b1f12938b1f1",
+      "displayName": "Sample Simulation",
+      "description": "Sample Simulation Description",
+      "attackType": "social",
+      "attackTechnique": "credentialHarvesting",
+      "status": "scheduled",
+      "createdDateTime": "2021-01-01T01:01:01.01Z",
+      "createdBy": {
+        "id": "99af58b9-ef1a-412b-a581-cb42fe8c8e21",
+        "displayName": "Sample User",
+        "email": "sampleuser@contoso.com"
+      },
+      "lastModifiedDateTime": "2021-01-01T01:01:01.01Z",
+      "lastModifiedBy": {
+        "id": "99af58b9-ef1a-412b-a581-cb42fe8c8e21",
+        "displayName": "Sample User",
+        "email": "sampleuser@contoso.com"
+      },
+      "launchDateTime": "2021-01-01T02:01:01.01Z",
+      "completionDateTime": "2021-01-07T01:01:01.01Z",
+      "includeAllAccountTargets": false,
+      "enableRegionTimezoneDelivery": false,
+      "mode": "real",
+      "isAutomated": false,
+      "cleanupArtifacts": false,
+      "payloadSource": "global",
+      "payloadDeliveryPlatform": "email",
+      "trainingAssignmentPreference": "manual",
+      "trainingContentPreference": "microsoft",
+      "trainingDueDateTime": "2021-01-31T01:01:01.01Z"
+    }
+  ]
+}
+```
+

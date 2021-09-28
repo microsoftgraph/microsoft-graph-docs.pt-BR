@@ -5,12 +5,12 @@ author: mkhribech
 ms.localizationpriority: medium
 ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: 66a7cac0fcdf63a09daa190549ff442304c1d29d
-ms.sourcegitcommit: 08e9b0bac39c1b1d2c8a79539d24aaa93364baf2
+ms.openlocfilehash: ce8131340ffd07b61fedcf189af90911a322925f
+ms.sourcegitcommit: 84d9a50dfa9526a207696c69d92381c8763d986a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/24/2021
-ms.locfileid: "59766485"
+ms.lasthandoff: 09/28/2021
+ms.locfileid: "59979380"
 ---
 # <a name="update-onlinemeeting"></a>Atualizar onlineMeeting
 
@@ -67,18 +67,18 @@ A última coluna indica se a atualização dessa propriedade terá efeito para u
 | endDateTime                 | DateTime                                                   | A hora de término da reunião em UTC.                                                        | Não                           |
 | assunto                     | Cadeia de caracteres                                                     | O assunto da reunião online.                                                  | Não                           |
 | participants                | [meetingParticipants](../resources/meetingparticipants.md) | Os participantes associados à reunião online. Somente participantes podem ser atualizados. | Não                           |
-| isEntryExitAnnounced        | Boolean                                                    | Se os chamadores ingressarão ou sairão.                              | Sim                          |
+| isEntryExitAnnounced        | Booliano                                                    | Se os chamadores ingressarão ou sairão.                              | Sim                          |
 | lobbyBypassSettings         | [lobbyBypassSettings](../resources/lobbyBypassSettings.md) | Especifica quais participantes podem ignorar o lobby da reunião.                          | Sim                          |
 | allowedPresenters           | onlineMeetingPresenters                                    | Especifica quem pode ser um apresentador em uma reunião.                                      | Sim |
-| allowAttendeeToEnableCamera | Boolean                                                    | Indica se os participantes podem ativar a câmera.                               | Sim                          |
-| allowAttendeeToEnableMic    | Boolean                                                    | Indica se os participantes podem ativar o microfone.                           | Sim                          |
+| allowAttendeeToEnableCamera | Booliano                                                    | Indica se os participantes podem ativar a câmera.                               | Sim                          |
+| allowAttendeeToEnableMic    | Boleano                                                    | Indica se os participantes podem ativar o microfone.                           | Sim                          |
 | allowMeetingChat            | meetingChatMode                                            | Especifica o modo de chat de reunião.                                                 | Sim                          |
-| allowTeamworkReactions      | Boolean                                                    | Indica se Teams reações estão habilitadas para a reunião.                      | Sim                          |
+| allowTeamworkReactions      | Boleano                                                    | Indica se Teams reações estão habilitadas para a reunião.                      | Sim                          |
 
 > [!NOTE]
 >
 >- Para ver a lista de valores possíveis **para allowedPresenters** e **allowMeetingChat,** consulte [onlineMeeting](../resources/onlinemeeting.md).
->- Ao atualizar o valor **de allowedPresenters** para , inclua uma lista completa de participantes com participantes especificados definido como no corpo `roleIsPresenter` da  `role` `presenter` solicitação.
+>- Ao atualizar o valor **de allowedPresenters** para , inclua uma lista completa de participantes com a função de participantes especificada definida como no corpo `roleIsPresenter` da   `presenter` solicitação.
 
 ## <a name="response"></a>Resposta
 
