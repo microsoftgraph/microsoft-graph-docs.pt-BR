@@ -1,15 +1,15 @@
 ---
 title: Configurar notificações de alteração que incluam dados de recurso
 description: O Microsoft Graph usa um mecanismo de webhook para fornecer notificações de alteração aos clientes. As notificações de alteração podem incluir propriedades de recursos.
-author: davidmu1
+author: Jumaodhiss
 ms.prod: non-product-specific
 ms.localizationpriority: high
-ms.openlocfilehash: f0e1c7698f147c9129cf495dbe3e7e831383a887
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 4086189e31dcbe64f9d12aca1204320a3aff4428
+ms.sourcegitcommit: 84d9a50dfa9526a207696c69d92381c8763d986a
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59028754"
+ms.lasthandoff: 09/28/2021
+ms.locfileid: "59979233"
 ---
 # <a name="set-up-change-notifications-that-include-resource-data"></a>Configurar notificações de alteração que incluam dados de recurso
 
@@ -114,6 +114,9 @@ Nesta seção:
 ### <a name="validation-tokens-in-the-change-notification"></a>Tokens de validação na notificação de alteração
 
 Uma notificação de alteração com os dados do recurso contém uma propriedade adicional, **validationTokens**, com uma matriz de tokens JWT gerados pelo Microsoft Graph. O Microsoft Graph gera um token único para cada aplicativo distinto e um par de locatários onde existe um item no conunto **valor**. Tenha em mente que as notificações de alterações podem conter uma mistura de itens para vários aplicativos e locatários que fizeram assinatura usando o mesmo **notificationUrl**.
+
+> **Nota:** Se você estiver configurando [notificações de alteração entregues através dos Hubs de Eventos do Azure](change-notifications-delivery.md), o Microsoft Graph não enviará os tokens de validação. Microsoft Graph não precisa validar o **notificationUrl**.
+
 
 No exemplo a seguir, a notificação de alteração contém dois itens para o mesmo aplicativo e para dois locatários diferentes, portanto, o conjunto **validationTokens** contém dois tokens que precisam ser validados.
 
