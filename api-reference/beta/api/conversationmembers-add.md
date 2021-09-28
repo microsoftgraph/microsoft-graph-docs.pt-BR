@@ -1,16 +1,16 @@
 ---
 title: 'conversationMember: adicionar'
-description: Adicionar membros em massa à equipe.
+description: Adicionar membros em massa a uma equipe.
 author: nkramer
 doc_type: apiPageType
 ms.localizationpriority: high
 ms.prod: microsoft-teams
-ms.openlocfilehash: 803c8b4fe792531be087b1ae02ee00cfa7ed526f
-ms.sourcegitcommit: c333953a9188b4cd4a9ab94cbe68871e8f3563e5
+ms.openlocfilehash: c54b13d0b0388d35def5989dbe840274a7f79358
+ms.sourcegitcommit: 30fca91ed203a9ab7b0562833ce0c20c7fb7b7b1
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/30/2021
-ms.locfileid: "58696985"
+ms.lasthandoff: 09/27/2021
+ms.locfileid: "59932008"
 ---
 # <a name="conversationmember-add"></a>conversationMember: adicionar
 
@@ -27,13 +27,13 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios) |
 |:--------------------|:--------------------------|
 | Delegado (conta corporativa ou de estudante) | TeamMember.ReadWrite.All  |
-| Delegado (conta pessoal da Microsoft) | Sem suporte |
+| Delegado (conta pessoal da Microsoft) | Sem suporte. |
 | Aplicativo | TeamMember.ReadWrite.All   |
 
 
 ## <a name="http-request"></a>Solicitação HTTP
 
-Esta é uma ação vinculada para adicionar vários elementos a uma coleção **chatMember** em uma única solicitação.
+Esta é uma ação vinculada para adicionar vários elementos a uma coleção **conversationMember** em uma única solicitação.
 <!-- { "blockType": "ignored" } -->
 
 ```http
@@ -60,7 +60,7 @@ A tabela a seguir mostra os parâmetros que podem ser usados com esta ação.
 
 Se bem-sucedida, esta ação retorna um código de resposta `200 OK`e uma coleção de derivados de [actionResultPart](../resources/actionresultpart.md) no corpo da resposta.
 
-Esta API retorna uma resposta `200` indicando que todos os membros fornecidos foram adicionados à equipe ou uma resposta `207` indicando que apenas alguns dos membros fornecidos foram adicionados à equipe. O chamador deve inspecionar a carga útil de resposta para determinar quais adições de membro falharam. O corpo da resposta é uma coleção de derivados do recurso [actionResultPart](../resources/actionresultpart.md).
+Esta API retorna uma réplica `200` que indica que todos os membros fornecidos foram adicionados à equipe ou uma réplica `207` que indica que apenas alguns dos membros fornecidos foram adicionados à equipe. O chamador deve inspecionar a carga útil de resposta para determinar quais adições de membro falharam. O corpo da resposta é uma coleção de derivados do recurso [actionResultPart](../resources/actionresultpart.md).
 
 ## <a name="examples"></a>Exemplos
 
@@ -71,6 +71,7 @@ Esta API retorna uma resposta `200` indicando que todos os membros fornecidos fo
 O exemplo a seguir mostra uma solicitação para adicionar vários membros a uma equipe.
 
 # <a name="http"></a>[HTTP](#tab/http)
+
 <!-- {
   "blockType": "request",
   "name": "bulkaddmembers_team"
@@ -116,13 +117,14 @@ Content-Type: application/json
 
 #### <a name="response"></a>Resposta
 
-Esta é a resposta.
+Este é um exemplo de resposta.
 
 > **Observação:** o objeto de resposta mostrado aqui pode ser encurtado para legibilidade.
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "Collection(microsoft.graph.actionResultPart)"
+  "@odata.type": "microsoft.graph.actionResultPart",
+  "isCollection": true
 } -->
 
 ```http
@@ -152,8 +154,8 @@ Content-Type: application/json
 
 O exemplo a seguir mostra uma solicitação para adicionar vários membros a uma equipe que resulta em uma falha parcial.
 
-
 # <a name="http"></a>[HTTP](#tab/http)
+
 <!-- {
   "blockType": "request",
   "name": "bulkaddmembers_team_partial_failure"
@@ -199,13 +201,14 @@ Content-Type: application/json
 
 #### <a name="response"></a>Resposta
 
-Esta é a resposta.
+Este é um exemplo de resposta.
 
 > **Observação:** o objeto de resposta mostrado aqui pode ser encurtado para legibilidade.
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "Collection(microsoft.graph.actionResultPart)"
+  "@odata.type": "microsoft.graph.actionResultPart",
+  "isCollection": true
 } -->
 
 ```http
@@ -235,14 +238,14 @@ Content-Type: application/json
 
 ## <a name="see-also"></a>Confira também
 
-- [Adicionar membro à equipe](team-post-members.md)
+- [Adicionar membro a uma equipe](team-post-members.md)
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
 <!--
 {
   "type": "#page.annotation",
-  "description": "Add members to team in bulk",
+  "description": "Add members to a team in bulk.",
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
