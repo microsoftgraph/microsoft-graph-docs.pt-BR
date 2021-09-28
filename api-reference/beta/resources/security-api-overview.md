@@ -5,12 +5,12 @@ ms.localizationpriority: high
 author: preetikr
 ms.prod: security
 doc_type: resourcePageType
-ms.openlocfilehash: cc15422656dac7156ff4e741c20283811b8a6763
-ms.sourcegitcommit: c333953a9188b4cd4a9ab94cbe68871e8f3563e5
+ms.openlocfilehash: c115d92722adb6962c036cb9f6567ca576b72bbb
+ms.sourcegitcommit: 84d9a50dfa9526a207696c69d92381c8763d986a
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/30/2021
-ms.locfileid: "58696201"
+ms.lasthandoff: 09/28/2021
+ms.locfileid: "59979443"
 ---
 # <a name="use-the-microsoft-graph-security-api"></a>Usar a API de Segurança do Microsoft Graph
 
@@ -26,6 +26,12 @@ A API de Segurança do Microsoft Graph fornece uma interface unificada e um esqu
 - Dão visibilidade aos dados de segurança para permitir o gerenciamento proativo dos riscos
 
 A API de Segurança do Microsoft Graph inclui as entidades principais a seguir.
+
+## <a name="actions-preview"></a>Ações (visualização)
+
+Executar uma ação imediata proteger contra ameaças usando a entidade [securityAction](securityaction.md)de Segurança do Microsoft Graph. Quando um analista de segurança descobre um indicador novo, como um arquivo mal-intencionado, URL, domínio ou endereço IP, a proteção pode ser habilitada instantaneamente em suas soluções de segurança da Microsoft. Usar uma ação específica do provedor, ver todas as ações executadas e cancelar uma ação, se necessário. Experimente as ações de segurança com a [Proteção Avançada contra Ameaças do Microsoft Defender](/windows/security/threat-protection/windows-defender-atp/windows-defender-advanced-threat-protection) para bloquear as atividades mal-intencionados nos pontos de extremidade do Windows usando as propriedades vistas nos alertas ou identificadas durante as investigações.
+
+  > **Observação:** Ações de segurança no momento apenas oferecem suporte às permissões do aplicativo.
 
 ## <a name="alerts"></a>Alertas
 
@@ -51,13 +57,21 @@ Alertas dos seguintes provedores estão disponíveis por meio da API de seguran�
 
 \*\*\* Os alertas da Proteção Avançada contra Ameaças do Azure (Azure ATP) estão disponíveis através da integração do Microsoft Cloud App Security. Isso significa que você receberá os alertas do Azure ATP somente se você tiver ingressado na SecOps Unificada e conectado o Azure ATP ao Microsoft Cloud App Security. Saiba mais sobre [como integrar o Azure ATP e o Microsoft Cloud App Security](/azure-advanced-threat-protection/atp-mcas-integration).
 
+## <a name="attack-simulation-and-training-preview"></a>Simulação de ataque e treinamento (visualização)
+
+[Simulação de ataque e treinamento](/microsoft-365/security/office-365-security/attack-simulation-training) é parte do [Microsoft Defender para Office 365](/microsoft-365/security/office-365-security/defender-for-office-365?view=o365-worldwide&preserve-view=true). Esse serviço permite que os usuários em um locatário experimentem um ataque de phishing benigno realista e aprendam com ele. Simulação de engenharia social e experiências de treinamento para usuários finais ajudam a reduzir o risco de usuários serem violados por meio dessas técnicas de ataque. A API de simulação e treinamento de ataque permite que os administradores de locatário visualizem os exercícios e treinamentos de [simulação](simulation.md) lançados e obtenham [relatórios](report-m365defender-reports-overview.md) sobre os insights derivados dos comportamentos online dos usuários nas simulações de phishing.
+
 ## <a name="information-protection"></a>Proteção de informações
 
 **Etiquetas** - As Etiquetas de proteção de informações fornecem detalhes sobre como aplicar corretamente uma etiqueta de sensibilidade às informações. A API da etiquetas de proteção de informações descreve a configuração das etiquetas de sensibilidade que se aplicam a um usuário ou locatário.
 
 **Avaliação de riscos** - A API de avaliação de ameaças do Microsoft Graph ajuda as organizações a avaliar a ameaça recebida por qualquer usuário em um locatário. Isto permite que os clientes relatem emails de spam, URLs de phishing ou anexos de malware que recebem à Microsoft. Os resultados da verificação de política e os resultados ao verificar novamente, podem ajudar os administradores de locatários a entender o veredicto da verificação de ameaças e ajustar sua política organizacional.
 
-## <a name="threat-indicators-preview"></a>Indicadores de ameaças (visualização)
+## <a name="secure-score"></a>Classificação de Segurança
+
+A [Microsoft Secure Score](https://techcommunity.microsoft.com/t5/Security-Privacy-and-Compliance/Office-365-Secure-Score-is-now-Microsoft-Secure-Score/ba-p/182358) é uma solução de análise da segurança que fornece visibilidade ao seu portfólio de segurança e mostra como melhorá-lo. Com uma única classificação, é possível entender melhor o que você fez para reduzir o risco em soluções da Microsoft. Você pode também comparar sua classificação com outras organizações e ver como tem sido a tendência ao longo do tempo. As entidades [secureScore](securescores.md) e [secureScoreControlProfile](securescorecontrolprofiles.md) de Segurança do Microsoft Graph ajudam a equilibrar a segurança e a produtividade de que sua organização precisa, além de habilitar o mix adequado de recursos de segurança. Você também pode projetar qual seria sua classificação depois de adotar recursos de segurança.
+
+## <a name="threat-intelligence-indicators-preview"></a>Indicadores de inteligência contra ameaças (visualização)
 
 Indicadores de ameaças, também conhecidos como indicadores de compromisso (IoCs), representam dados sobre ameaças conhecidas, como arquivos mal-intencionados, URLs, domínios e endereços IP. Os clientes podem gerar indicadores através da coleta interna de inteligência contra ameaças ou adquirir indicadores de comunidades de inteligência contra ameaças, feeds licenciados e outras fontes. Esses indicadores, em seguida, são usados nas várias ferramentas de segurança para proteger contra ameaças relacionadas.
 
@@ -76,37 +90,36 @@ Os indicadores de ameaças enviados por meio da API de Segurança do Microsoft G
 O suporte a outros serviços de segurança da Microsoft estará disponível em breve.
 
 
-## <a name="security-actions-preview"></a>Ações de Segurança (visualização)
-
-Executar uma ação imediata proteger contra ameaças usando a entidade [securityAction](securityaction.md)de Segurança do Microsoft Graph. Quando um analista de segurança descobre um indicador novo, como um arquivo mal-intencionado, URL, domínio ou endereço IP, a proteção pode ser habilitada instantaneamente em suas soluções de segurança da Microsoft. Usar uma ação específica do provedor, ver todas as ações executadas e cancelar uma ação, se necessário. Experimente as ações de segurança com a [Proteção Avançada contra Ameaças do Microsoft Defender](/windows/security/threat-protection/windows-defender-atp/windows-defender-advanced-threat-protection) para bloquear as atividades mal-intencionados nos pontos de extremidade do Windows usando as propriedades vistas nos alertas ou identificadas durante as investigações.
-
-  > **Observação:** Ações de segurança no momento apenas oferecem suporte às permissões do aplicativo.
-
-## <a name="secure-score"></a>Classificação de Segurança
-
-A [Microsoft Secure Score](https://techcommunity.microsoft.com/t5/Security-Privacy-and-Compliance/Office-365-Secure-Score-is-now-Microsoft-Secure-Score/ba-p/182358) é uma solução de análise da segurança que fornece visibilidade ao seu portfólio de segurança e mostra como melhorá-lo. Com uma única classificação, é possível entender melhor o que você fez para reduzir o risco em soluções da Microsoft. Você pode também comparar sua classificação com outras organizações e ver como tem sido a tendência ao longo do tempo. As entidades [secureScore](securescores.md) e [secureScoreControlProfile](securescorecontrolprofiles.md) de Segurança do Microsoft Graph ajudam a equilibrar a segurança e a produtividade de que sua organização precisa, além de habilitar o mix adequado de recursos de segurança. Você também pode projetar qual seria sua classificação depois de adotar recursos de segurança.
-
 ## <a name="common-use-cases"></a>Casos de uso comuns
 
 A seguir, há algumas das solicitações mais populares para trabalhar com a API de Segurança do Microsoft Graph.
 
 | **Casos de uso**   | **Recursos REST** | **Experimentar no Explorador do Graph** |
 |:---------------|:--------|:----------|
+| **Ações (visualização)**|||
+| Obter ações de segurança | [Obter ações de segurança](../api/securityaction-get.md)|[https://graph.microsoft.com/beta/security/securityActions/{id}](https://developer.microsoft.com/graph/graph-explorer?request=security/securityActions/{id}&method=GET&version=beta&GraphUrl=https://graph.microsoft.com)|
+|Listar ações de segurança| [Listar ações de segurança](../api/securityactions-list.md)|[https://graph.microsoft.com/beta/security/securityActions](https://developer.microsoft.com/graph/graph-explorer?request=security/securityActions&method=GET&version=beta&GraphUrl=https://graph.microsoft.com)|
+|Criar ações de segurança|[Criar ações de segurança](../api/securityactions-post.md)|[https://graph.microsoft.com/beta/security/securityActions](https://developer.microsoft.com/graph/graph-explorer?request=security/securityActions&method=POST&version=beta&GraphUrl=https://graph.microsoft.com)|
+|Cancelar ações de segurança|[Cancelar ações de segurança](../api/securityaction-cancelsecurityaction.md)| [https://graph.microsoft.com/beta/security/securityActions/{id}/cancelSecurityAction](https://developer.microsoft.com/graph/graph-explorer?request=security/securityActions/{id}/cancelSecurityAction&method=POST&version=beta&GraphUrl=https://graph.microsoft.com) |
+| **Alertas**|||
 | Listar alertas | [List alerts](../api/alert-list.md) | [https://graph.microsoft.com/beta/security/alerts](https://developer.microsoft.com/graph/graph-explorer?request=security/alerts&method=GET&version=beta&GraphUrl=https://graph.microsoft.com) |
 | Atualizar alertas | [Atualizar alertas](../api/alert-update.md) </br> [Atualizar vários alertas](../api/alert-updatealerts.md) | [https://graph.microsoft.com/beta/security/alerts/{alert-id}](https://developer.microsoft.com/graph/graph-explorer?request=security/alerts/{alert-id}&method=PATCH&version=beta&GraphUrl=https://graph.microsoft.com) </br> [https://graph.microsoft.com/beta/security/alerts/updateAlerts](https://developer.microsoft.com/graph/graph-explorer?request=security/alerts/updateAlerts&method=POST&version=beta&GraphUrl=https://graph.microsoft.com) |
-| Obter a ação de segurança | [Obter ação segurança](../api/securityaction-get.md) (visualização)|[https://graph.microsoft.com/beta/security/securityActions/{id}](https://developer.microsoft.com/graph/graph-explorer?request=security/securityActions/{id}&method=GET&version=beta&GraphUrl=https://graph.microsoft.com)|
-|Listar ações de segurança| [Listar ações de segurança](../api/securityactions-list.md) (visualização)|[https://graph.microsoft.com/beta/security/securityActions](https://developer.microsoft.com/graph/graph-explorer?request=security/securityActions&method=GET&version=beta&GraphUrl=https://graph.microsoft.com)|
-|Criar ações de segurança|[Criar ações segurança](../api/securityactions-post.md) (visualização)|[https://graph.microsoft.com/beta/security/securityActions](https://developer.microsoft.com/graph/graph-explorer?request=security/securityActions&method=POST&version=beta&GraphUrl=https://graph.microsoft.com)|
-|Cancelar ação de segurança|[Cancelar ações de segurança](../api/securityaction-cancelsecurityaction.md) (visualização)| [https://graph.microsoft.com/beta/security/securityActions/{id}/cancelSecurityAction](https://developer.microsoft.com/graph/graph-explorer?request=security/securityActions/{id}/cancelSecurityAction&method=POST&version=beta&GraphUrl=https://graph.microsoft.com) |
-|Obter o indicador IT|[Obter tiIndicator](../api/tiindicator-get.md) (visualização)| [https://graph.microsoft.com/beta/security/tiIndicators/{id}](https://developer.microsoft.com/graph/graph-explorer?request=security/tiIndicators/{id}&method=GET&version=beta&GraphUrl=https://graph.microsoft.com)|
-|Listar indicadores IT | [Listar tiIndicators](../api/tiindicators-list.md) (visualização) | [https://graph.microsoft.com/beta/security/tiIndicators](https://developer.microsoft.com/graph/graph-explorer?request=security/tiIndicators&method=GET&version=beta&GraphUrl=https://graph.microsoft.com)|
-|Criar um indicador IT|[Criar tiIndicator](../api/tiindicators-post.md) (visualização)|[https://graph.microsoft.com/beta/security/tiIndicators](https://developer.microsoft.com/graph/graph-explorer?request=security/tiIndicators&method=POST&version=beta&GraphUrl=https://graph.microsoft.com)|
-|Enviar indicadores IT|[Enviar tiIndicators](../api/tiindicator-submittiindicators.md) (visualização)| [https://graph.microsoft.com/beta/security/tiIndicators/submitTiIndicators](https://developer.microsoft.com/graph/graph-explorer?request=security/tiIndicators/submitTiIndicators&method=POST&version=beta&GraphUrl=https://graph.microsoft.com) |
-|Indicadores de atualização IT|[Atualizar tiIndicator](../api/tiindicator-update.md) (visualização) </br>[Atualizar várias tiIndicators](../api/tiindicator-updatetiindicators.md) (visualização)| [https://graph.microsoft.com/beta/security/tiIndicators/{id}](https://developer.microsoft.com/graph/graph-explorer?request=security/tiIndicators/{id}&method=POST&version=beta&GraphUrl=https://graph.microsoft.com) </br>[https://graph.microsoft.com/beta/security/tiIndicators/updateTiIndicators](https://developer.microsoft.com/graph/graph-explorer?request=security/tiIndicators/updateTiIndicators&method=POST&version=beta&GraphUrl=https://graph.microsoft.com)|
-|Excluir indicadores IT|[Excluir tiIndicator](../api/tiindicator-delete.md) (visualização) </br>[Excluir vários tiIndicators](../api/tiindicator-deletetiindicators.md) (visualização) </br>[Excluir tiIndicator by externalId](../api/tiindicator-deletetiindicatorsbyexternalid.md) (visualização)| EXCLUIR </br>[https://graph.microsoft.com/beta/security/tiIndicators/{id}](https://developer.microsoft.com/graph/graph-explorer?request=security/tiIndicators/{id}&method=DELETE&version=beta&GraphUrl=https://graph.microsoft.com) </br>POSTAR</br>[https://graph.microsoft.com/beta/security/tiIndicators/deleteTiIndicators](https://developer.microsoft.com/graph/graph-explorer?request=security/tiIndicators/deleteTiIndicators&method=POST&version=beta&GraphUrl=https://graph.microsoft.com)</br>POSTAR</br>[https://graph.microsoft.com/beta/security/tiIndicators/deleteTiIndicatorsByExternalId](https://developer.microsoft.com/graph/graph-explorer?request=security/tiIndicators/deleteTiIndicatorsByExternalId&method=POST&version=beta&GraphUrl=https://graph.microsoft.com)|
+| **Simulação de ataque e treinamento (visualização)**|||
+|Listar simulações|[Listar simulações](../api/attacksimulationroot-list-simulations.md)|[https://graph.microsoft.com/beta/security/attackSimulation/simulations](https://developer.microsoft.com/graph/graph-explorer?request=security/attackSimulation/simulations&method=GET&version=beta&GraphUrl=https://graph.microsoft.com)|
+|Obter o relatório de visão geral da simulação|[Obter o relatório de visão geral da simulação](../api/simulationreportoverview-get.md)|[https://graph.microsoft.com/beta/security/attackSimulation/simulations/{id}/report/overview](https://developer.microsoft.com/graph/graph-explorer?request=security/attackSimulation/simulations/{id}/report/overview&method=GET&version=beta&GraphUrl=https://graph.microsoft.com)|
+|Listar os relatório dos usuários de simulação|[Listar os relatório dos usuários de simulação](../api/usersimulationdetails-list.md)|[https://graph.microsoft.com/beta/security/attackSimulation/simulations/{id}/report/simulationUsers](https://developer.microsoft.com/graph/graph-explorer?request=security/attackSimulation/simulations/{id}/report/simulationUsers&method=GET&version=beta&GraphUrl=https://graph.microsoft.com)|
+| **Classificações de segurança**|||
 |Listar classificações de segurança|[Listar secureScores](../api/securescores-list.md)|[https://graph.microsoft.com/beta/security/secureScores](https://developer.microsoft.com/graph/graph-explorer?request=security/secureScores&method=GET&version=beta&GraphUrl=https://graph.microsoft.com)|
+| **Perfis de controle da classificação de segurança**|||
 |Listar perfis de controle da classificação de segurança|[Listar secureScoreControlProfiles](../api/securescorecontrolprofiles-list.md)|[https://graph.microsoft.com/beta/security/secureScoreControlProfiles](https://developer.microsoft.com/graph/graph-explorer?request=security/secureScoreControlProfiles&method=GET&version=beta&GraphUrl=https://graph.microsoft.com)|
 |Atualizar perfis de controle da classificação de segurança|[Atualizar secureScoreControlProfiles](../api/securescorecontrolprofiles-update.md)|[https://graph.microsoft.com/beta/security/secureScoreControlProfiles/{id}](https://developer.microsoft.com/graph/graph-explorer?request=security/secureScoreControlProfiles/{id}&method=PATCH&version=beta&GraphUrl=https://graph.microsoft.com)|
+| **Indicações de inteligência contra ameaças (visualização)**|||
+|Obter o indicador TI|[Obter tiIndicator](../api/tiindicator-get.md)| [https://graph.microsoft.com/beta/security/tiIndicators/{id}](https://developer.microsoft.com/graph/graph-explorer?request=security/tiIndicators/{id}&method=GET&version=beta&GraphUrl=https://graph.microsoft.com)|
+|Listar Indicadores TI | [Listar tiIndicators](../api/tiindicators-list.md) | [https://graph.microsoft.com/beta/security/tiIndicators](https://developer.microsoft.com/graph/graph-explorer?request=security/tiIndicators&method=GET&version=beta&GraphUrl=https://graph.microsoft.com)|
+|Criar um Indicadores TI|[Criar tiIndicator](../api/tiindicators-post.md)|[https://graph.microsoft.com/beta/security/tiIndicators](https://developer.microsoft.com/graph/graph-explorer?request=security/tiIndicators&method=POST&version=beta&GraphUrl=https://graph.microsoft.com)|
+|Enviar Indicadores TI|[Enviar tiIndicators](../api/tiindicator-submittiindicators.md)| [https://graph.microsoft.com/beta/security/tiIndicators/submitTiIndicators](https://developer.microsoft.com/graph/graph-explorer?request=security/tiIndicators/submitTiIndicators&method=POST&version=beta&GraphUrl=https://graph.microsoft.com) |
+|Atualizar Indicadores TI|[Atualizar tiIndicator](../api/tiindicator-update.md) </br>[Atualizar vários tiIndicators](../api/tiindicator-updatetiindicators.md)| [https://graph.microsoft.com/beta/security/tiIndicators/{id}](https://developer.microsoft.com/graph/graph-explorer?request=security/tiIndicators/{id}&method=POST&version=beta&GraphUrl=https://graph.microsoft.com) </br>[https://graph.microsoft.com/beta/security/tiIndicators/updateTiIndicators](https://developer.microsoft.com/graph/graph-explorer?request=security/tiIndicators/updateTiIndicators&method=POST&version=beta&GraphUrl=https://graph.microsoft.com)|
+|Excluir Indicadores TI|[Excluir tiIndicator](../api/tiindicator-delete.md) </br>[Excluir vários tiIndicators](../api/tiindicator-deletetiindicators.md) </br>[Excluir tiIndicator por externalId](../api/tiindicator-deletetiindicatorsbyexternalid.md)| EXCLUIR </br>[https://graph.microsoft.com/beta/security/tiIndicators/{id}](https://developer.microsoft.com/graph/graph-explorer?request=security/tiIndicators/{id}&method=DELETE&version=beta&GraphUrl=https://graph.microsoft.com) </br>POSTAR</br>[https://graph.microsoft.com/beta/security/tiIndicators/deleteTiIndicators](https://developer.microsoft.com/graph/graph-explorer?request=security/tiIndicators/deleteTiIndicators&method=POST&version=beta&GraphUrl=https://graph.microsoft.com)</br>POSTAR</br>[https://graph.microsoft.com/beta/security/tiIndicators/deleteTiIndicatorsByExternalId](https://developer.microsoft.com/graph/graph-explorer?request=security/tiIndicators/deleteTiIndicatorsByExternalId&method=POST&version=beta&GraphUrl=https://graph.microsoft.com)|
 
 Você pode usar o Microsoft Graph [webhooks](/graph/webhooks) para assinar e receber notificações sobre as atualizações de entidades de Segurança do Microsoft Graph.
 
