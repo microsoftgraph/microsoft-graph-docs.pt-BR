@@ -1,11 +1,11 @@
 ---
 description: Arquivo gerado automaticamente. NÃO MODIFICAR
-ms.openlocfilehash: 80167eff13decde8d896a85ee96d21426a90d92e899b9e68db785e20bbd9ebd0
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: a04c957a916b2d39649897ef9e7091a2f2b79b07
+ms.sourcegitcommit: 36bae3615df41876493b25da478e589d1974f97b
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "57100062"
+ms.lasthandoff: 09/29/2021
+ms.locfileid: "59998127"
 ---
 ```java
 
@@ -13,8 +13,8 @@ GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProv
 
 GroupCollectionPage groups = graphClient.groups()
     .buildRequest()
-    .filter("membershipRuleProcessingState eq 'On'")
-    .select("id,membershipRule,membershipRuleProcessingState,membershipRuleProcessingStatus")
+    .filter("mailEnabled eq false and securityEnabled eq true and NOT(groupTypes/any(s:s eq 'Unified')) and membershipRuleProcessingState eq 'On'")
+    .select("id,membershipRule,membershipRuleProcessingState")
     .get();
 
 ```
