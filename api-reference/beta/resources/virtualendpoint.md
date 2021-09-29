@@ -5,12 +5,12 @@ author: AshleyYangSZ
 ms.localizationpriority: medium
 ms.prod: cloud-pc
 doc_type: resourcePageType
-ms.openlocfilehash: cdb6b2d7eaa8d021f378f7046dec405054502d0a
-ms.sourcegitcommit: 08e9b0bac39c1b1d2c8a79539d24aaa93364baf2
+ms.openlocfilehash: 5889af1cda3560a6b1b244443ee77226dfe57f03
+ms.sourcegitcommit: 36bae3615df41876493b25da478e589d1974f97b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/24/2021
-ms.locfileid: "59767115"
+ms.lasthandoff: 09/29/2021
+ms.locfileid: "59996505"
 ---
 # <a name="virtualendpoint-resource-type"></a>Tipo de recurso virtualEndpoint
 
@@ -26,7 +26,7 @@ Use a API do Cloud PC para provisionar e gerenciar áreas de trabalho virtuais p
 
 |Método|Tipo de retorno|Descrição|
 |:---|:---|:---|
-|[Obter permissões efetivas](../api/virtualendpoint-geteffectivepermissions.md)|Coleção de cadeias de caracteres|Exibir as permissões efetivas do usuário autenticado no momento.|
+|[Obter permissões efetivas](../api/virtualendpoint-geteffectivepermissions.md)|Coleção de cadeia de caracteres|Exibir as permissões efetivas do usuário autenticado no momento.|
 |[Listar cloudPCs](../api/virtualendpoint-list-cloudpcs.md)|[Coleção cloudPC](../resources/cloudpc.md)|Listar propriedades e relações dos objetos [cloudPC.](../resources/cloudpc.md)|
 |[Listar deviceImages](../api/virtualendpoint-list-deviceimages.md)|[Coleção cloudPcDeviceImage](../resources/cloudpcdeviceimage.md)|Listar as propriedades e as relações dos [objetos cloudPcDeviceImage.](../resources/cloudpcdeviceimage.md)|
 |[Criar cloudPcDeviceImage](../api/virtualendpoint-post-deviceimages.md)|[cloudPcDeviceImage](../resources/cloudpcdeviceimage.md)|Crie um novo [objeto cloudPcDeviceImage.](../resources/cloudpcdeviceimage.md)|
@@ -37,6 +37,7 @@ Use a API do Cloud PC para provisionar e gerenciar áreas de trabalho virtuais p
 |[Listar userSettings](../api/virtualendpoint-list-usersettings.md)|[Coleção cloudPcUserSetting](../resources/cloudpcusersetting.md)|Obter os recursos cloudPcUserSetting da propriedade de navegação userSettings.|
 |[Criar cloudPcUserSetting](../api/virtualendpoint-post-usersettings.md)|[cloudPcUserSetting](../resources/cloudpcusersetting.md)|Crie um novo objeto cloudPcUserSetting.|
 |[Listar auditEvents](../api/virtualendpoint-list-auditevents.md)|[Coleção cloudPcAuditEvent](../resources/cloudpcauditevent.md)|Listar propriedades e relações dos objetos [cloudPcAuditEvent.](../resources/cloudpcauditevent.md)|
+|[Listar supportedRegions](../api/virtualendpoint-list-supportedregions.md)|[coleção cloudPcSupportedRegion](../resources/cloudpcsupportedregion.md)|Listar propriedades e relações dos objetos [cloudPcSupportedRegion.](../resources/cloudpcsupportedregion.md)|
 
 ## <a name="properties"></a>Propriedades
 
@@ -54,6 +55,7 @@ Use a API do Cloud PC para provisionar e gerenciar áreas de trabalho virtuais p
 |provisioningPolicies|[Coleção cloudPcProvisioningPolicy](../resources/cloudpcprovisioningpolicy.md)|Política de provisionamento de computadores na nuvem.|
 |userSettings|[Coleção cloudPcUserSetting](../resources/cloudpcusersetting.md)|Configurações do usuário do computador na nuvem. |
 |auditEvents|[Coleção cloudPcAuditEvent](../resources/cloudpcauditevent.md)|Evento de auditoria de computador na nuvem.|
+|supportedRegions|[coleção cloudPcSupportedRegion](../resources/cloudpcsupportedregion.md)|Regiões com suporte para computador na nuvem.|
 
 ## <a name="json-representation"></a>Representação JSON
 

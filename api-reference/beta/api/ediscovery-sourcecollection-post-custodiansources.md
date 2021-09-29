@@ -2,15 +2,15 @@
 title: Adicionar custodianSources
 description: Adicionar objetos dataSource de custodia a uma coleção de origem.
 author: mahage-msft
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: ediscovery
 doc_type: apiPageType
-ms.openlocfilehash: e044843992bff6f68d01c35a549a6a9b57a61417
-ms.sourcegitcommit: 94c4acf8bd03c10a44b12952b6cb4827df55b978
+ms.openlocfilehash: 0f8830b7fe71e297cbbf4b3d470259b83e3e8125
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/06/2021
-ms.locfileid: "52786002"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59996645"
 ---
 # <a name="add-custodiansources"></a>Adicionar custodianSources
 
@@ -20,7 +20,7 @@ Namespace: microsoft.graph.ediscovery
 
 Adicionar objetos [dataSource custodiantes](../resources/ediscovery-datasource.md) a uma coleção de origem.
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>Permissões
 
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
@@ -56,7 +56,7 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar [o dataS
 
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|@odata.id|String|Cadeia de caracteres que define o objeto custodial. Vejo o exemplo a seguir.|
+|@odata.id|Cadeia de caracteres|Cadeia de caracteres que define o objeto custodial. Vejo o exemplo a seguir.|
 
 ## <a name="response"></a>Resposta
 

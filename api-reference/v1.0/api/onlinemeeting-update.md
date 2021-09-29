@@ -5,12 +5,12 @@ author: mkhribech
 ms.localizationpriority: medium
 ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: ce8131340ffd07b61fedcf189af90911a322925f
-ms.sourcegitcommit: 84d9a50dfa9526a207696c69d92381c8763d986a
+ms.openlocfilehash: 3b097786f37782ade56ce4478473bf1d9c4f35fe
+ms.sourcegitcommit: 36bae3615df41876493b25da478e589d1974f97b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/28/2021
-ms.locfileid: "59979380"
+ms.lasthandoff: 09/29/2021
+ms.locfileid: "59996862"
 ---
 # <a name="update-onlinemeeting"></a>Atualizar onlineMeeting
 
@@ -28,7 +28,7 @@ Consulte [a seção Solicitar corpo](#request-body) para a lista de propriedades
 | Delegado (conta pessoal da Microsoft) | Sem suporte.                              |
 | Aplicativo                            | OnlineMeetings.ReadWrite.All                |
 
-Para usar a permissão do aplicativo para [](/graph/cloud-communication-online-meeting-application-access-policy) essa API, os administradores de locatários devem criar uma política de acesso a aplicativos e concedi-la a um usuário para autorizar o aplicativo configurado na política para obter artefatos de reunião online em nome desse usuário (com a ID do usuário especificada no caminho da solicitação).
+Para usar a permissão do aplicativo para [](/graph/cloud-communication-online-meeting-application-access-policy) essa API, os administradores de locatários devem criar uma política de acesso a aplicativos e concedi-la a um usuário para autorizar o aplicativo configurado na política para atualizar reuniões online em nome desse usuário (com a ID do usuário especificada no caminho da solicitação).
 
 ## <a name="http-request"></a>Solicitação HTTP
 
@@ -67,13 +67,13 @@ A última coluna indica se a atualização dessa propriedade terá efeito para u
 | endDateTime                 | DateTime                                                   | A hora de término da reunião em UTC.                                                        | Não                           |
 | assunto                     | Cadeia de caracteres                                                     | O assunto da reunião online.                                                  | Não                           |
 | participants                | [meetingParticipants](../resources/meetingparticipants.md) | Os participantes associados à reunião online. Somente participantes podem ser atualizados. | Não                           |
-| isEntryExitAnnounced        | Booliano                                                    | Se os chamadores ingressarão ou sairão.                              | Sim                          |
+| isEntryExitAnnounced        | Boolean                                                    | Se os chamadores ingressarão ou sairão.                              | Sim                          |
 | lobbyBypassSettings         | [lobbyBypassSettings](../resources/lobbyBypassSettings.md) | Especifica quais participantes podem ignorar o lobby da reunião.                          | Sim                          |
 | allowedPresenters           | onlineMeetingPresenters                                    | Especifica quem pode ser um apresentador em uma reunião.                                      | Sim |
-| allowAttendeeToEnableCamera | Booliano                                                    | Indica se os participantes podem ativar a câmera.                               | Sim                          |
-| allowAttendeeToEnableMic    | Boleano                                                    | Indica se os participantes podem ativar o microfone.                           | Sim                          |
+| allowAttendeeToEnableCamera | Boolean                                                    | Indica se os participantes podem ativar a câmera.                               | Sim                          |
+| allowAttendeeToEnableMic    | Boolean                                                    | Indica se os participantes podem ativar o microfone.                           | Sim                          |
 | allowMeetingChat            | meetingChatMode                                            | Especifica o modo de chat de reunião.                                                 | Sim                          |
-| allowTeamworkReactions      | Boleano                                                    | Indica se Teams reações estão habilitadas para a reunião.                      | Sim                          |
+| allowTeamworkReactions      | Boolean                                                    | Indica se Teams reações estão habilitadas para a reunião.                      | Sim                          |
 
 > [!NOTE]
 >

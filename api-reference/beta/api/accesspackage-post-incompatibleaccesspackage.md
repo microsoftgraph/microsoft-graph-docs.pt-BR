@@ -1,16 +1,16 @@
 ---
 title: Adicionar accessPackage a incompatibleAccessPackages
 description: Adicione um link para indicar que um pacote de acesso é incompatível com um pacote de acesso especificado.
-localization_priority: Normal
+ms.localizationpriority: medium
 author: markwahl-msft
 ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: 4ddb6953346a5ea571a480dc073e29dca14cca31
-ms.sourcegitcommit: 486fe9c77d4d89c5416bb83e8c716e6918c47370
+ms.openlocfilehash: 1781cc55390eb0080ffb573c3abfc427697a7505
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/15/2021
-ms.locfileid: "53439823"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59995440"
 ---
 # <a name="add-accesspackage-to-incompatibleaccesspackages"></a>Adicionar accessPackage a incompatibleAccessPackages
 
@@ -20,14 +20,14 @@ Namespace: microsoft.graph
 
 Adicione um [accessPackage](../resources/accesspackage.md) à lista de pacotes de acesso que foram marcados como incompatíveis em [um accessPackage](../resources/accesspackage.md).  
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>Permissões
 
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 | Tipo de permissão                        | Permissões (da com menos para a com mais privilégios) |
 |:---------------------------------------|:--------------------------------------------|
-| Delegada (conta corporativa ou de estudante)     | EntitlementManagement.ReadWrite.All |
-| Delegada (conta pessoal da Microsoft) | Sem suporte. |
+| Delegado (conta corporativa ou de estudante)     | EntitlementManagement.ReadWrite.All |
+| Delegado (conta pessoal da Microsoft) | Sem suporte. |
 | Aplicativo                            | EntitlementManagement.ReadWrite.All |
 
 ## <a name="http-request"></a>Solicitação HTTP

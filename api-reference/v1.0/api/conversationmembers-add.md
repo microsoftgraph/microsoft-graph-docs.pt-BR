@@ -1,22 +1,22 @@
 ---
 title: 'conversationMember: adicionar'
-description: Adicione membros em massa a uma equipe.
+description: Adicionar membros em massa a uma equipe.
 author: abshar-teams
 doc_type: apiPageType
 ms.localizationpriority: medium
 ms.prod: microsoft-teams
-ms.openlocfilehash: 9d313e6d609ad8192541e0d2a19ab15f14c5ed11
-ms.sourcegitcommit: 30fca91ed203a9ab7b0562833ce0c20c7fb7b7b1
+ms.openlocfilehash: 908acd8fc9d9494756bf9cb1f7ae36e336676e91
+ms.sourcegitcommit: 36bae3615df41876493b25da478e589d1974f97b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/27/2021
-ms.locfileid: "59932058"
+ms.lasthandoff: 09/29/2021
+ms.locfileid: "59996708"
 ---
 # <a name="conversationmember-add"></a>conversationMember: adicionar
 
 Namespace: microsoft.graph
 
-Adicione vários membros em uma única solicitação a uma [equipe](../resources/team.md). A resposta fornece detalhes sobre quais associações poderiam ou não ser criadas.
+Adicione vários membros em uma única solicitação a uma [equipe](../resources/team.md). A resposta fornece detalhes sobre quais associações podem e não podem ser criadas.
 
 ## <a name="permissions"></a>Permissões
 
@@ -31,7 +31,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 ## <a name="http-request"></a>Solicitação HTTP
 
-Esta é uma ação vinculada para adicionar vários elementos a uma **coleção conversationMember** em uma única solicitação.
+Esta é uma ação vinculada para adicionar vários elementos a uma coleção **conversationMember** em uma única solicitação.
 <!-- { "blockType": "ignored" } -->
 
 ```http
@@ -58,7 +58,7 @@ A tabela a seguir mostra os parâmetros que podem ser usados com esta ação.
 
 Se bem-sucedida, esta ação retorna um código de resposta `200 OK`e uma coleção de derivados de [actionResultPart](../resources/actionresultpart.md) no corpo da resposta.
 
-Essa API retorna uma resposta que indica que todos os membros fornecidos foram adicionados à equipe ou uma resposta que indica que apenas alguns dos membros fornecidos foram `200` `207` adicionados à equipe. O chamador deve inspecionar a carga útil de resposta para determinar quais adições de membro falharam. O corpo da resposta é uma coleção de derivados do recurso [actionResultPart](../resources/actionresultpart.md).
+Esta API retorna uma réplica `200` que indica que todos os membros fornecidos foram adicionados à equipe ou uma réplica `207` que indica que apenas alguns dos membros fornecidos foram adicionados à equipe. O chamador deve inspecionar a carga útil de resposta para determinar quais adições de membro falharam. O corpo da resposta é uma coleção de derivados do recurso [actionResultPart](../resources/actionresultpart.md).
 
 ## <a name="examples"></a>Exemplos
 
@@ -68,6 +68,8 @@ Essa API retorna uma resposta que indica que todos os membros fornecidos foram a
 
 O exemplo a seguir mostra uma solicitação para adicionar vários membros a uma equipe.
 
+
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "bulkaddmembers_team"
@@ -92,6 +94,24 @@ Content-Type: application/json
     ]
 }
 ```
+# <a name="c"></a>[C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/bulkaddmembers-team-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/bulkaddmembers-team-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/bulkaddmembers-team-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/bulkaddmembers-team-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 
 #### <a name="response"></a>Resposta
@@ -134,6 +154,8 @@ Content-Type: application/json
 O exemplo a seguir mostra uma solicitação para adicionar vários membros a uma equipe que resulta em uma falha parcial.
 
 
+
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "bulkaddmembers_team_partial_failure"
@@ -158,6 +180,24 @@ Content-Type: application/json
     ]
 }
 ```
+# <a name="c"></a>[C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/bulkaddmembers-team-partial-failure-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/bulkaddmembers-team-partial-failure-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/bulkaddmembers-team-partial-failure-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/bulkaddmembers-team-partial-failure-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 
 #### <a name="response"></a>Resposta

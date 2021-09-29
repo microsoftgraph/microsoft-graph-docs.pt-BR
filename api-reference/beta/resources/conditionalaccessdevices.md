@@ -1,16 +1,16 @@
 ---
 title: Tipo de recurso conditionalAccessDevices
 description: Representa dispositivos no escopo da política.
-localization_priority: Normal
+ms.localizationpriority: medium
 author: videor
 ms.prod: identity-and-sign-in
 doc_type: resourcePageType
-ms.openlocfilehash: cbb542420228a4a383dea4e165323fbb6e8abb17
-ms.sourcegitcommit: 9ac6bbab3df22e7629cf2bde796b527337c680aa
+ms.openlocfilehash: 0c4bc7721566bd8210830e51dbe820b1b44813e1
+ms.sourcegitcommit: 36bae3615df41876493b25da478e589d1974f97b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/23/2021
-ms.locfileid: "53082353"
+ms.lasthandoff: 09/29/2021
+ms.locfileid: "59996364"
 ---
 # <a name="conditionalaccessdevices-resource-type"></a>Tipo de recurso conditionalAccessDevices
 
@@ -24,11 +24,11 @@ Representa dispositivos no escopo da política.
 
 | Propriedade     | Tipo        | Descrição |
 |:-------------|:------------|:------------|
-| includeDevices | Conjunto de cadeias de caracteres | Estados no escopo da política. `All` é o único valor permitido. Não será possível definir *se deviceFIlter* estiver definido. |
-| excludeDevices | Conjunto de cadeias de caracteres | Estados excluídos do escopo da política. Valores possíveis: `Compliant` , `DomainJoined` . Não será possível definir **se deviceFIlter** estiver definido. |
-| deviceFilter | [conditionalAccessFilter](conditionalaccessfilter.md) | Filtrar definindo a regra de sintaxe de dispositivo dinâmico para incluir/excluir dispositivos. Um filtro pode usar propriedades de dispositivo (como atributos de extensão) para incluí-las/excluir. Não será possível definir **se includeDevices** ou **excludeDevices** estiver definido. |
-| includeDeviceStates (preterido)| Conjunto de cadeias de caracteres | Estados no escopo da política. `All` é o único valor permitido. |
-| excludeDeviceStates (preterido)| Conjunto de cadeias de caracteres | Estados excluídos do escopo da política. Valores possíveis: `Compliant` , `DomainJoined` . |
+| includeDevices | Coleção de cadeia de caracteres | Estados no escopo da política. `All` é o único valor permitido. Não será possível definir *se deviceFIlter* estiver definido. |
+| excludeDevices | Coleção de cadeia de caracteres | Estados excluídos do escopo da política. Valores possíveis: `Compliant` , `DomainJoined` . Não será possível definir **se deviceFIlter** estiver definido. |
+| deviceFilter | [conditionalAccessFilter](conditionalaccessfilter.md) | Filtro que define a regra de sintaxe de dispositivo dinâmico para incluir/excluir dispositivos. Um filtro pode usar propriedades de dispositivo (como atributos de extensão) para incluí-las/excluir. Não será possível definir **se includeDevices** ou **excludeDevices** estiver definido. |
+| includeDeviceStates (preterido)| Coleção de cadeia de caracteres | Estados no escopo da política. `All` é o único valor permitido. |
+| excludeDeviceStates (preterido)| Coleção de cadeia de caracteres | Estados excluídos do escopo da política. Valores possíveis: `Compliant` , `DomainJoined` . |
 
 ## <a name="relationships"></a>Relações
 

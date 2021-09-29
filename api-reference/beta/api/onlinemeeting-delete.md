@@ -2,15 +2,15 @@
 title: Excluir onlineMeeting
 description: Excluir uma reunião online.
 author: mkhribech
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: 991e8f70e2505b230c7091695abe2c594a274fee
-ms.sourcegitcommit: 7abb0672a38a6d9b11a2e0d2cc221222cb8358bb
+ms.openlocfilehash: 66833b70cc49ce595204ad72f0adbb8c476822bd
+ms.sourcegitcommit: 36bae3615df41876493b25da478e589d1974f97b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/11/2021
-ms.locfileid: "52896533"
+ms.lasthandoff: 09/29/2021
+ms.locfileid: "59996000"
 ---
 # <a name="delete-onlinemeeting"></a>Excluir onlineMeeting
 
@@ -28,20 +28,14 @@ Excluir um [objeto onlineMeeting.](../resources/onlinemeeting.md)
 | Delegado (conta pessoal da Microsoft) | Sem suporte.                              |
 | Aplicativo                            | OnlineMeetings.ReadWrite.All*                |
 
-> [!IMPORTANT]
-> \*Os administradores [](/graph/cloud-communication-online-meeting-application-access-policy) devem criar uma política de acesso a aplicativos e concedi-la a um usuário, autorizando o aplicativo configurado na política para excluir uma reunião online em nome desse usuário (ID do usuário especificada no caminho de reuqest) foi criada.
+Para usar a permissão do aplicativo para [](/graph/cloud-communication-online-meeting-application-access-policy) essa API, os administradores de locatários devem criar uma política de acesso a aplicativos e concedi-la a um usuário para autorizar o aplicativo configurado na política a excluir reuniões online em nome desse usuário (com a ID do usuário especificada no caminho da solicitação).
 
 ## <a name="http-request"></a>Solicitação HTTP
 
-Solicitar ao usar um token delegado
+Para excluir um onlineMeeting usando a ID da reunião com a permissão delegada ( `/me` ) e de aplicativo ( ) `/users/{userId}` :
 <!-- { "blockType": "ignored" } -->
 ```http
 DELETE https://graph.microsoft.com/beta/me/onlineMeetings/{meetingId}
-```
-
-Solicitar quando usar um token de aplicativo:
-<!-- { "blockType": "ignored" } -->
-```http
 DELETE https://graph.microsoft.com/beta/users/{userId}/onlineMeetings/{meetingId}
 ```
 

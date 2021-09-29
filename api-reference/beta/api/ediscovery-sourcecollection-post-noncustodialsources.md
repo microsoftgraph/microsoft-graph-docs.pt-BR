@@ -2,15 +2,15 @@
 title: Adicionar noncustodialDataSource
 description: Adicione noncustodialSources postando na coleção noncustodialSources.
 author: mahage-msft
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: ediscovery
 doc_type: apiPageType
-ms.openlocfilehash: b6d3dde3e779aad317e3d2827e602d5097300d22
-ms.sourcegitcommit: 94c4acf8bd03c10a44b12952b6cb4827df55b978
+ms.openlocfilehash: 639ee1e0f993b576e7a80ced9258c5f89421ca39
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/06/2021
-ms.locfileid: "52786787"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59996785"
 ---
 # <a name="add-noncustodialdatasource"></a>Adicionar noncustodialDataSource
 
@@ -20,7 +20,7 @@ Namespace: microsoft.graph.ediscovery
 
 Adicione noncustodialSources a [uma sourceCollection](../api/ediscovery-sourcecollection-get.md).
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>Permissões
 
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
@@ -56,7 +56,7 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar [o noncu
 
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|@odata.id|String|Cadeia de caracteres que define o objeto custodial. Vejo o exemplo a seguir.  O @odata.id pode ser recuperado do [noncustodialDataSource](../resources/ediscovery-noncustodialdatasource.md).|
+|@odata.id|Cadeia de caracteres|Cadeia de caracteres que define o objeto custodial. Vejo o exemplo a seguir.  O @odata.id pode ser recuperado do [noncustodialDataSource](../resources/ediscovery-noncustodialdatasource.md).|
 
 ## <a name="response"></a>Resposta
 

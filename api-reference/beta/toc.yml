@@ -6870,7 +6870,7 @@ items:
                         href: api/intune-deviceconfig-windowswifienterpriseeapconfiguration-update.md
                   - name: Interface de rede com fio
                     href: resources/intune-deviceconfig-wirednetworkinterface.md
-              - name: Gerenciamento de dispositivo
+              - name: Gerenciamento de dispositivos
                 href: resources/intune-device-mgt-conceptual.md
                 items:
                   - name: Ativar o resultado da ação esim do dispositivo
@@ -9674,7 +9674,7 @@ items:
                     href: api/cloudpc-get.md
                   - name: Reprovision
                     href: api/cloudpc-reprovision.md
-                  - name: Período de carência final
+                  - name: Fim do período de carência
                     href: api/cloudpc-endgraceperiod.md
                   - name: Ação remota de reprovisionamento
                     href: api/manageddevice-reprovisioncloudpc.md
@@ -9755,6 +9755,11 @@ items:
                     href: api/cloudpcusersetting-delete.md
                   - name: Atribuir
                     href: api/cloudpcusersetting-assign.md
+              - name: Região suportada pelo Cloud PC
+                href: resources/cloudpcsupportedregion.md
+                items:
+                  - name: Lista
+                    href: api/virtualendpoint-list-supportedregions.md
           - name: Atualizações do dispositivo (prévia)
             displayName: Windows updates
             items:

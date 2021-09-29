@@ -5,12 +5,12 @@ author: mkhribech
 ms.localizationpriority: medium
 ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: 34c6fa475ab9aba6531aa4573752b10ae4521055
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 7ab9efc32e47ccd7088db40ea93600a1d1274ff7
+ms.sourcegitcommit: 36bae3615df41876493b25da478e589d1974f97b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59053431"
+ms.lasthandoff: 09/29/2021
+ms.locfileid: "59996694"
 ---
 # <a name="delete-onlinemeeting"></a>Excluir onlineMeeting
 
@@ -26,21 +26,16 @@ Excluir um [objeto onlineMeeting.](../resources/onlinemeeting.md)
 | Delegado (conta pessoal da Microsoft) | Sem suporte.                         |
 | Aplicativo                            | OnlineMeetings.ReadWrite.All*          |
 
-> [!IMPORTANT]
-> \*Os administradores [](/graph/cloud-communication-online-meeting-application-access-policy) devem criar uma política de acesso a aplicativos e concedi-la a um usuário, autorizando o aplicativo configurado na política para excluir uma reunião online em nome desse usuário (ID do usuário especificada no caminho de reuqest) foi criada.
+Para usar a permissão do aplicativo para [](/graph/cloud-communication-online-meeting-application-access-policy) essa API, os administradores de locatários devem criar uma política de acesso a aplicativos e concedi-la a um usuário para autorizar o aplicativo configurado na política a excluir reuniões online em nome desse usuário (com a ID do usuário especificada no caminho da solicitação).
 
 ## <a name="http-request"></a>Solicitação HTTP
-Para excluir o onlineMeeting especificado por ID de reunião com permissão delegada:
+Para obter uma onlineMeeting usando a ID de reunião com permissão delegada ( `/me` ) e app ( ) `/users/{userId}` :
 <!-- { "blockType": "ignored" } -->
 ```http
 DELETE /me/onlineMeetings/{meetingId}
-```
-
-Para excluir o onlineMeeting especificado por meio da ID de reunião com a permissão do aplicativo:
-<!-- { "blockType": "ignored" } -->
-```http
 DELETE /users/{userId}/onlineMeetings/{meetingId}
 ```
+
 > [!NOTE]
 > - `userId` é a ID de objeto de um usuário no [Portal de gerenciamento de usuário do Azure](https://portal.azure.com/#blade/Microsoft_AAD_IAM/UsersManagementMenuBlade). Para obter mais detalhes, consulte [política de acesso ao aplicativo](/graph/cloud-communication-online-meeting-application-access-policy).
 > - `meetingId`é a **id** de um [objeto onlineMeeting.](../resources/onlinemeeting.md)

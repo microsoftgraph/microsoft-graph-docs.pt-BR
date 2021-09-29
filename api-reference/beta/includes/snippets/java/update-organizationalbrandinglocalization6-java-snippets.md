@@ -1,0 +1,22 @@
+---
+description: Arquivo gerado automaticamente. NÃO MODIFICAR
+ms.openlocfilehash: 9fe10af22385d1edf24623b1120a855b9e0d9f4a
+ms.sourcegitcommit: 36bae3615df41876493b25da478e589d1974f97b
+ms.translationtype: MT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 09/29/2021
+ms.locfileid: "59996553"
+---
+```java
+
+GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+
+OrganizationalBrandingLocalization organizationalBrandingLocalization = new OrganizationalBrandingLocalization();
+organizationalBrandingLocalization.backgroundColor = "#00000F";
+organizationalBrandingLocalization.signInPageText = "Welcome to Contoso France";
+
+graphClient.organization("d69179bf-f4a4-41a9-a9de-249c0f2efb1d").branding().localizations("fr-FR")
+    .buildRequest()
+    .patch(organizationalBrandingLocalization);
+
+```

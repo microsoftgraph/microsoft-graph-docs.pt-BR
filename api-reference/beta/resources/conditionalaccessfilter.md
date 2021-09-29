@@ -1,16 +1,16 @@
 ---
 title: Tipo de recurso conditionalAccessFilter
 description: Representa o filtro no escopo da política.
-localization_priority: Normal
+ms.localizationpriority: medium
 author: sandeo
 ms.prod: identity-and-sign-in
 doc_type: resourcePageType
-ms.openlocfilehash: 9f5b14a3faa593453c88cc155f7e44348fcfda35
-ms.sourcegitcommit: 9ac6bbab3df22e7629cf2bde796b527337c680aa
+ms.openlocfilehash: 62c0c21a01a67bbaf08fae16fcb4f0d7451efe9a
+ms.sourcegitcommit: 36bae3615df41876493b25da478e589d1974f97b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/23/2021
-ms.locfileid: "53082402"
+ms.lasthandoff: 09/29/2021
+ms.locfileid: "59995412"
 ---
 # <a name="conditionalaccessfilter-resource-type"></a>Tipo de recurso conditionalAccessFilter
 
@@ -25,7 +25,7 @@ Representa o filtro no escopo da política.
 | Propriedade     | Tipo        | Descrição |
 |:-------------|:------------|:------------|
 | modo | filterMode | Modo a ser usado para o filtro. Os valores possíveis são: `include` ou `exclude`. |
-| rule | String | A sintaxe de regra é semelhante à usada para regras de associação para grupos no Azure AD. Para obter detalhes, consulte [regras com várias expressões](/azure/active-directory/enterprise-users/groups-dynamic-membership#rules-with-multiple-expressions) |
+| rule | Cadeia de caracteres | A sintaxe de regra é semelhante à usada para regras de associação para grupos em Azure Active Directory. Para obter detalhes, consulte [regras com várias expressões](/azure/active-directory/enterprise-users/groups-dynamic-membership#rules-with-multiple-expressions) |
 
 ## <a name="relationships"></a>Relações
 
