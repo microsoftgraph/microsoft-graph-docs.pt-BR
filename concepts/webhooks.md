@@ -5,12 +5,12 @@ author: davidmu1
 ms.prod: non-product-specific
 ms.localizationpriority: high
 ms.custom: graphiamtop20
-ms.openlocfilehash: b97e13f410716f9c733a48e83bb842f8ae1702a9
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 889c2e7de64069529ebf528dcd2a5aeb893854c1
+ms.sourcegitcommit: 84d9a50dfa9526a207696c69d92381c8763d986a
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59028769"
+ms.lasthandoff: 09/28/2021
+ms.locfileid: "59979240"
 ---
 # <a name="set-up-notifications-for-changes-in-user-data"></a>Configurar notificações para alterações nos dados de usuário
 
@@ -260,9 +260,11 @@ Quando várias alterações ocorrerem, o Microsoft Graph poderá enviar várias 
 
 O processo deve processar todas as notificações de alteração recebidas. Estas são as tarefas mínimas que o seu aplicativo deve realizar para processar uma notificação de alteração:
 
-1. Envie um código de status `202 - Accepted` na sua resposta para o Microsoft Graph. Se o Microsoft Graph não receber um código de classe 2xx, ele tentará publicar a notificação de alteração algumas vezes, por um período de aproximadamente 4 horas; depois disso, a notificação será descartada e não será entregue.
+1. Seu processo deve processar cada notificação de alteração que receber e enviar um código de classe 2xx. Se o Microsoft Graph não receber um código de classe 2xx em 3 segundos, ele tentará publicar a notificação de alteração várias vezes, por um período de cerca de 4 horas; depois disso, a notificação de alteração será descartada e não será entregue. Se seu processo não responder consistentemente dentro de 3 segundos, sua notificação poderá estar sujeita a limitação.
 
-    > **Observação:** Envie um código de status `202 - Accepted` assim que receber a notificação de alteração, mesmo antes de validar a sua autenticidade. Você está simplesmente confirmando o recebimento da notificação de alteração e impedindo tentativas desnecessárias. O tempo limite atual é de 30 segundos, mas pode ser reduzido no futuro para otimizar o desempenho do serviço. Se a URL da notificação não responder dentro de 30 segundos para mais de 10% das solicitações do Microsoft Graph durante um período de 10 minutos, todas as notificações a seguir serão adiadas e repetidas por um período de 4 horas. Se uma URL da notificação não responder dentro de 30 segundos para mais de 20% das solicitações do Microsoft Graph durante um período de 10 minutos, todas as notificações a seguir serão descartadas.
+    Se for esperado que seu processamento demore mais de 3 segundos, você deve persistir na notificação, retornar um código de status `202 - Accepted` em sua resposta ao Microsoft Graph, e então processar as notificações. Se a notificação não persistir, devolver um código de classe 5xx para indicar um erro, de modo que a notificação será novamente processada.
+
+    Se for esperado que seu processamento leve menos de 3 segundos, você deve processar as notificações e devolver um código de status `200 - Accepted` em sua resposta ao Microsoft Graph. Se a notificação não for processada corretamente, devolver um código de classe 5xx para indicar um erro, de modo que a notificação será novamente processada.
 
 1. Validar a propriedade `clientState`. Ela deve corresponder ao valor enviado originalmente com a solicitação de criação da assinatura.
 
@@ -271,6 +273,20 @@ O processo deve processar todas as notificações de alteração recebidas. Esta
 1. Atualize seu aplicativo com base na sua lógica comercial.
 
 Repita o procedimento para outras notificações de alteração na solicitação.
+
+### <a name="throttling"></a>Limitação
+
+Enviar um código de status `202 - Accepted` assim que receber a notificação de alteração, mesmo antes de validar sua autenticidade. Você está simplesmente confirmando o recebimento da notificação de alteração e evitando novas tentativas desnecessárias. Para a maioria das assinaturas, as notificações não estão sujeitas a qualquer atraso adicional durante a publicação e todas as notificações são entregues dentro do SLA a menos que o serviço esteja experimentando um incidente. Entretanto, se um URL de notificação de assinatura for lento ou não responder, notificações podem ser limitado para o host associado à assinatura. O processo a seguir é usado para determinar quando e como lidar com os pontos de extremidade de limitado.
+
+As notificações são publicadas usando um cliente HTTP com um tempo limite de 3 segundos. Após a conclusão da publicação de uma notificação, independentemente do resultado, o tempo total gasto na tentativa de publicação, incluindo a latência da rede, é rastreado para o host associado ao URL da notificação. Se o tempo de publicação for maior que 2900 ms, a resposta é considerada lenta. As respostas são acumuladas para o host e a porcentagem de respostas lentas é calculada após 100 notificações terem sido recebidas. Quando a porcentagem de respostas lentas atinge 10%, o host associado ao URL de notificação é sinalizado como um ponto de extremidade lento. Como os pontos de extremidade lentos estão associados ao host na URL de notificação, todas as notificações para todas as assinaturas associadas com o host são consideradas para avaliação e estão sujeitas a limitação.
+
+A avaliação continua em tempo real. Se o tempo de publicação de um host cair abaixo de 290 0ms, esta resposta não baixa é incluída na contagem total de respostas, a porcentagem de respostas lentas é recalculada, e o ponto de extremidade é reavaliado. Além disso, o acúmulo de respostas é lavado a cada 10 minutos e a avaliação começa novamente, esperando por 100 notificações antes de avaliar um ponto extremidade. Portanto, um pico temporário na latência da rede ou atraso na publicação se recuperará depois que o atraso for mitigado. Uma latência de rede mais persistente ou um atraso de publicação superior a 2900 ms será continuamente reavaliada a cada 10 minutos. 
+
+Enquanto um ponto de extremidade é limitado, as notificações estão sujeitas aos seguintes atrasos adicionais:
+-   As notificações são automaticamente descarregadas para um conjunto de trabalhadores dedicados a notificações de falha e limitado e um atraso adicional de 10 minutos é incorrido.
+-   Notificações são descartadas se o ponto de extremidade limitado for lento >= 15%.
+-   Notificações que não foram entregues devido a uma chamada HTTP malsucedida são novamente testadas em 10 minutos.
+
 
 ## <a name="code-samples"></a>Exemplos de código
 
