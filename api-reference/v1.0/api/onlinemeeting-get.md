@@ -5,19 +5,25 @@ author: mkhribech
 ms.localizationpriority: medium
 ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: 7486f4223f8d9a5df1545556ac00c5c1678bbb80
-ms.sourcegitcommit: 36bae3615df41876493b25da478e589d1974f97b
+ms.openlocfilehash: 66a6e5e2cb284672a03baf5907b16d1ad39dea2e
+ms.sourcegitcommit: cbad97d6a8ccb89b1822b30a11cc9b6f2670deda
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "59996497"
+ms.lasthandoff: 09/30/2021
+ms.locfileid: "60016610"
 ---
 # <a name="get-onlinemeeting"></a>Obter onlineMeeting
 
 Namespace: microsoft.graph
 
-Recupere as propriedades e as relações de um [objeto onlineMeeting.](../resources/onlinemeeting.md) Você pode obter detalhes de um onlineMeeting usando [VideoTeleconferenceId,](#example-1-retrieve-an-online-meeting-by-videoteleconferenceid) [ID](#example-2-retrieve-an-online-meeting-by-meeting-id) de reunião [ou JoinWebURL](#example-3-retrieve-an-online-meeting-by-joinweburl).
+Recupere as propriedades e as relações de um [objeto onlineMeeting.](../resources/onlinemeeting.md)
 
+Por exemplo, você pode:
+
+- Obter detalhes de uma reunião online usando [VideoTeleconferenceId](#example-1-retrieve-an-online-meeting-by-videoteleconferenceid), [ID da](#example-2-retrieve-an-online-meeting-by-meeting-id)reunião ou [JoinWebURL](#example-3-retrieve-an-online-meeting-by-joinweburl).
+- Use o caminho para obter o relatório do participante de um evento ao vivo na forma de um link de download, conforme `/attendeeReport` mostrado no exemplo [4](#example-4-fetch-attendee-report-of-a-live-event).
+
+O relatório do participante do evento ao vivo é um artefato de reunião online. Para obter detalhes, consulte [Artefatos e permissões de](/graph/cloud-communications-online-meeting-artifacts)reunião online.
 
 ## <a name="permissions"></a>Permissões
 
@@ -25,37 +31,48 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 | Tipo de permissão                        | Permissões (da com menos para a com mais privilégios)           |
 |:---------------------------------------|:------------------------------------------------------|
-| Delegado (conta corporativa ou de estudante)     | OnlineMeetings.Read, OnlineMeetings.ReadWrite         |
+| Delegado (conta corporativa ou de estudante)     | OnlineMeetingArtifact.Read.All, OnlineMeetings.Read, OnlineMeetings.ReadWrite         |
 | Delegado (conta pessoal da Microsoft) | Sem suporte.                                        |
-| Aplicativo                            | OnlineMeetings.Read.All, OnlineMeetings.ReadWrite.All* |
+| Aplicativo                            | OnlineMeetingArtifact.Read.All, OnlineMeetings.Read.All, OnlineMeetings.ReadWrite.All |
 
 Para usar a permissão do aplicativo para [](/graph/cloud-communication-online-meeting-application-access-policy) essa API, os administradores de locatários devem criar uma política de acesso a aplicativos e concedi-la a um usuário para autorizar o aplicativo configurado na política a buscar reuniões online e/ou artefatos de reunião online em nome desse usuário (com a ID do usuário especificada no caminho da solicitação).
 
+> [!IMPORTANT]
+> Somente as _permissões OnlineMeetingArtifact.Read.All_ são necessárias se você buscar artefatos de reunião online e não for possível buscar artefatos de reunião sem ele. Para obter detalhes, consulte [Artefatos e permissões de](/graph/cloud-communications-online-meeting-artifacts)reunião online.
+
 ## <a name="http-request"></a>Solicitação HTTP
-Para obter uma onlineMeeting usando a ID de reunião com permissão delegada ( `/me` ) e app ( ) `/users/{userId}` :
+Para obter uma **onlineMeeting** usando a ID de reunião com permissão delegada ( `/me` ) e app ( ) `/users/{userId}` :
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /me/onlineMeetings/{meetingId}
 GET /users/{userId}/onlineMeetings/{meetingId}
 ```
 
-Para obter uma onlineMeeting usando **videoTeleconferenceId** com permissão de aplicativo*:
+Para obter uma **onlineMeeting** usando **videoTeleconferenceId** com permissão de aplicativo*:
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /communications/onlineMeetings/?$filter=VideoTeleconferenceId%20eq%20'{videoTeleconferenceId}'
 ```
 
-Para obter uma onlineMeeting usando **joinWebUrl** com permissão delegada e de aplicativo:
+Para obter uma **onlineMeeting** usando **joinWebUrl** com permissão delegada e de aplicativo:
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /me/onlineMeetings?$filter=JoinWebUrl%20eq%20'{joinWebUrl}'
 GET /users/{userId}/onlineMeetings?$filter=JoinWebUrl%20eq%20'{joinWebUrl}'
 ```
 
+Para obter o relatório do participante de um evento ao vivo com permissão delegada ( `/me` ) e de aplicativo ( ) `/users/{userId}` :
+<!-- { "blockType": "ignored" }-->
+
+```http
+GET /me/onlineMeetings/{meetingId}/attendeeReport
+GET /users/{userId}/onlineMeetings/{meetingId}/attendeeReport
+```
+
 > [!NOTE]
 > - `userId` é a ID de objeto de um usuário no [Portal de gerenciamento de usuário do Azure](https://portal.azure.com/#blade/Microsoft_AAD_IAM/UsersManagementMenuBlade). Para obter mais detalhes, consulte [política de acesso ao aplicativo](/graph/cloud-communication-online-meeting-application-access-policy).
 > - `meetingId`é a **id** de um [objeto onlineMeeting.](../resources/onlinemeeting.md)
-> - **videoTeleconferenceId** é gerado para usuários licenciados do Cloud-Video-Interop e pode ser encontrado em um [objeto onlineMeeting.](../resources/onlinemeeting.md) Consulte a [ID da conferência VTC](/microsoftteams/cloud-video-interop-for-teams-set-up) para obter mais detalhes.
+> - **videoTeleconferenceId** é gerado para usuários licenciados do Cloud-Video-Interop e pode ser encontrado em um [objeto onlineMeeting.](../resources/onlinemeeting.md) Para obter detalhes, consulte [ID da conferência VTC](/microsoftteams/cloud-video-interop-for-teams-set-up).
 > - \* Esse cenário só dá suporte ao token de aplicativo e não dá suporte à política de acesso a aplicativos.
 > - `joinWebUrl` deve ser codificada por URL.
 
@@ -74,7 +91,12 @@ Se a solicitação contiver um `Accept-Language`cabeçalho HTTP, o `content` de 
 Não forneça um corpo de solicitação para esse método.
 
 ## <a name="response"></a>Resposta
-Se bem-sucedido, este método retorna o código de resposta `200 OK` e um objeto [onlineMeeting](../resources/onlinemeeting.md) no corpo da resposta.
+
+Se tiver êxito, este método retornará um código de resposta `200 OK`. A resposta também inclui um dos seguintes:
+
+- Se você buscar uma reunião online por ID de reunião, este método retornará um [objeto onlineMeeting](../resources/onlinemeeting.md) no corpo da resposta.
+- Se você buscar uma reunião online por **videoTeleconferenceId** ou **joinWebUrl,** este método retornará uma coleção que contém apenas um [objeto onlineMeeting](../resources/onlinemeeting.md) no corpo da resposta.
+- Se você buscar o relatório do participante de um evento ao vivo, este método retornará um header que indica o URI para o `Location` relatório do participante.
 
 ## <a name="examples"></a>Exemplos
 
@@ -338,6 +360,43 @@ Content-Type: application/json
         }
     ]
 }
+```
+
+### <a name="example-4-fetch-attendee-report-of-a-live-event"></a>Exemplo 4: Buscar relatório do participante de um evento ao vivo
+
+O exemplo a seguir mostra uma solicitação para baixar um relatório do participante.
+
+#### <a name="request"></a>Solicitação
+
+A solicitação a seguir usa permissão delegada.
+
+<!-- {
+  "blockType": "request",
+  "name": "get_attendee_report"
+}-->
+
+```msgraph-interactive
+GET https://graph.microsoft.com/beta/me/onlineMeetings/MSpkYzE3Njc0Yy04MWQ5LTRhZGItYmZiMi04ZdFpHRTNaR1F6WGhyZWFkLnYy/attendeeReport
+```
+
+A solicitação a seguir usa a permissão do aplicativo.
+
+<!-- { "blockType": "ignored" }-->
+```msgraph-interactive
+GET https://graph.microsoft.com/beta/users/dc74d9bb-6afe-433d-8eaa-e39d80d3a647/onlineMeetings/MSpkYzE3Njc0Yy04MWQ5LTRhZGItYmZiMi04ZdFpHRTNaR1F6WGhyZWFkLnYy/attendeeReport
+```
+
+#### <a name="response"></a>Resposta
+
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "name": "get_attendee_report"
+} -->
+
+```http
+HTTP/1.1 302 Found
+Location: https://01-a-noam.dog.attend.teams.microsoft.com/broadcast/909c6581-5130-43e9-88f3-fcb3582cde37/dc17674c-81d9-4adb-bfb2-8f6a442e4622/19%3Ameeting_ZWE0YzQwMzItYjEyNi00NjJjLWE4MjYtOTUxYjE1NmFjYWIw%40thread.v2/0/resource/attendeeReport
 ```
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79

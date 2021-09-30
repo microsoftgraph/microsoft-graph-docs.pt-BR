@@ -5,22 +5,16 @@ doc_type: enumPageType
 ms.localizationpriority: medium
 ms.prod: non-product-specific
 author: MSGraphDocsvTeam
-ms.openlocfilehash: 0d5a6a9b7dfa9ee0252d1f078ffb4c46304e7efd
-ms.sourcegitcommit: 84d9a50dfa9526a207696c69d92381c8763d986a
+ms.openlocfilehash: 5fdcdc1b7ed0098eb60e6470f34d3fefce6378e9
+ms.sourcegitcommit: cbad97d6a8ccb89b1822b30a11cc9b6f2670deda
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/28/2021
-ms.locfileid: "59979408"
+ms.lasthandoff: 09/30/2021
+ms.locfileid: "60016611"
 ---
 # <a name="enum-values"></a>Valores denum
 
 Namespace: microsoft.graph
-
-### <a name="authenticatorappfeaturesettings-values"></a>Valores authenticatorAppFeatureSettings
-
-|Member|
-|:---|
-|requireNumberMatching|
 
 ### <a name="appcredentialrestrictiontype-values"></a>valores appCredentialRestrictionType
 
@@ -156,11 +150,11 @@ Namespace: microsoft.graph
 
 |Member|
 |:---|
-|Cadeia de Caracteres|
+|String|
 |Inteiro|
 |Referência|
 |Binário|
-|Boleano|
+|Booleano|
 |DateTime|
 
 ### <a name="mutability-values"></a>valores de mutabilidade
@@ -819,13 +813,6 @@ Namespace: microsoft.graph
 |block|
 |unknownFutureValue|
 
-### <a name="authenticatorappcontexttype-values"></a>Valores authenticatorAppContextType
-
-|Member|
-|:---|
-|location|
-|aplicativo|
-
 ### <a name="anniversarytype-values"></a>valores anniversaryType
 
 |Member|
@@ -913,7 +900,7 @@ Namespace: microsoft.graph
 |Member|
 |:---|
 |event|
-|message|
+|mensagem|
 |driveItem|
 |externalItem|
 |site|
@@ -1501,7 +1488,7 @@ Namespace: microsoft.graph
 | preset13 | 13    |
 | preset14 | 14     |
 | preset15 | 15     |
-| preset16 | 16     |
+| preset16 | 16    |
 | preset17 | 17     |
 | preset18 | 18     |
 | preset19 | 19    |
@@ -1821,7 +1808,7 @@ Valores possíveis para tipos de conta de usuário (associação ao grupo), por 
 
 |Member|
 |:---|
-|message|
+|mensagem|
 |chatEvent |
 |digitação |
 |unknownFutureValue|
@@ -1902,7 +1889,7 @@ Valores possíveis para tipos de conta de usuário (associação ao grupo), por 
 | Member       |
 |:--------------|
 |event|
-|message|
+|mensagem|
 |driveItem|
 |externalFile|
 |externalItem|
@@ -2301,7 +2288,7 @@ Valores possíveis para tipos de conta de usuário (associação ao grupo), por 
 
 |Membro    |Valor    |Descrição |
 |:---------|:--------|:----------- |
-|team      |0        |Indica que o aplicativo Teams pode ser instalado em uma equipe e está autorizado a acessar os dados dessa equipe.|
+|equipe      |0        |Indica que o aplicativo Teams pode ser instalado em uma equipe e está autorizado a acessar os dados dessa equipe.|
 |groupChat |1        |Indica que o aplicativo Teams pode ser instalado em um chat de grupo e está autorizado a acessar os dados desse chat de grupo.|
 |pessoal  |2        |Indica que o aplicativo Teams pode ser instalado no escopo pessoal de um usuário e está autorizado a acessar os dados desse usuário.|
 
@@ -2474,7 +2461,7 @@ Valores possíveis para tipos de conta de usuário (associação ao grupo), por 
 
 |Member|
 |:---|
-|team|
+|equipe|
 |channel|
 |chat|
 |unknownFutureValue|
