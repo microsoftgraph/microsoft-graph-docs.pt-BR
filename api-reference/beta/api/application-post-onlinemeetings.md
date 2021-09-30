@@ -5,12 +5,12 @@ author: mkhribech
 ms.localizationpriority: high
 ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: 650821d9c79344b879f2fe1f8f4a1eaa608a39e7
-ms.sourcegitcommit: 84d9a50dfa9526a207696c69d92381c8763d986a
+ms.openlocfilehash: bcae8fdc688aa80f10cebef3e83a5c6ebdd8798a
+ms.sourcegitcommit: 36bae3615df41876493b25da478e589d1974f97b
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/28/2021
-ms.locfileid: "59979254"
+ms.lasthandoff: 09/29/2021
+ms.locfileid: "59995462"
 ---
 # <a name="create-onlinemeeting"></a>Criar ReuniãoOnline
 
@@ -21,7 +21,7 @@ Namespace: microsoft.graph
 Criar uma reunião online em nome de um usuário.
 
 > [!TIP]
-> Esta API cria uma reunião autônoma que não está associada a um evento no calendário do usuário; portanto, as reuniões criadas por meio dessa API não aparecerão no calendário do usuário.
+> Essa API cria uma reunião autônoma que não está associada a nenhum evento no calendário do usuário; portanto, as reuniões criadas por meio dessa API não serão mostradas no calendário do usuário.
 
 ## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
@@ -32,11 +32,11 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 | Delegado (conta pessoal da Microsoft) | Sem suporte.                                        |
 | Aplicativo                            | OnlineMeetings.ReadWrite.All*                         |
 
-Para usar a permissão do aplicativo para esta API, os administradores de locatários devem criar uma [política de acesso ao aplicativo](/graph/cloud-communication-online-meeting-application-access-policy) e concedê-la a um usuário para autorizar o aplicativo configurado na política para obter artefatos de reunião online em nome desse usuário (com a ID de usuário especificada no caminho da solicitação).
+Para usar a permissão de aplicativo para essa API, os administradores de locatários devem criar uma [política de acesso de aplicativo](/graph/cloud-communication-online-meeting-application-access-policy) e concedê-la a um usuário para autorizar o aplicativo configurado na política a criar reuniões online em nome desse usuário (com a ID de usuário especificada no caminho da solicitação).
 
 ## <a name="http-request"></a>Solicitação HTTP
 
-Para criar uma reunião online com permissão delegada (`/me`) e de aplicativo (`/users/{userId}`):
+Criar uma reunião online com permissão delegada (`/me`) e aplicativo (`/users/{userId}`):
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /me/onlineMeetings

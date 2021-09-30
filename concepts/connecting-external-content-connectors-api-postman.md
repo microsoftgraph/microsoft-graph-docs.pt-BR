@@ -5,12 +5,12 @@ author: mecampos
 ms.localizationpriority: high
 doc_type: conceptualPageType
 ms.prod: search
-ms.openlocfilehash: 15587804b130a009abc936ceb8af4379f67fcea2
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: c86c75de4ebf966e1fec02184af35aa4c12d4da7
+ms.sourcegitcommit: 36bae3615df41876493b25da478e589d1974f97b
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59139356"
+ms.lasthandoff: 09/29/2021
+ms.locfileid: "59996011"
 ---
 # <a name="use-postman-with-the-microsoft-graph-connectors-api"></a>Usar o Postman com a API de conectores do Microsoft Graph
 
@@ -21,36 +21,25 @@ Este tópico descreve como você pode usar as APIs do conector do Microsoft Grap
 * Uma conta Microsoft ou uma conta corporativa ou de estudante.
 * Acesso a um locatário de desenvolvedor do Microsoft 365. Se você não tiver um, poderá se inscrever no [Programa para Desenvolvedores do Microsoft 365] para obter uma assinatura de desenvolvedor gratuita.
 
-## <a name="step-1---import-the-microsoft-graph-postman-collection"></a>Etapa 1- Importar a coleção Postman do Microsoft Graph
+## <a name="step-1---fork-the-microsoft-graph-postman-collection"></a>Etapa 1 – Bifurcar a coleção Microsoft Graph Postman
 
-Para usar a coleção Postman, você precisa importá-la para seu espaço de trabalho Postman. Faça isso a partir de um navegador da web.
+Para usar a coleção Postman, você precisa bifurcá-la para seu espaço de trabalho Postman. Faça isso a partir de um navegador da web.
 
 1. Acesse [Postman](https://identity.getpostman.com/signup) e inscreva-se. Se você já tiver uma conta do Postman, poderá [Entrar](https://identity.getpostman.com/login).
 
-2. Depois de entrar, vá para **Meu espaço de trabalho**.
+2. Depois de entrar, vá para a seguinte URL: , e selecione a `https://www.postman.com/microsoftgraph/workspace/microsoft-graph/collection/455214-085f7047-1bec-4570-9ed0-3a7253be148` coleção Microsoft Graph.
 
-![Captura de tela mostrando a guia Espaços de trabalho no Postman e a opção para selecionar Meu espaço de trabalho](./images/connectors-images/02-postman-my-workspace.png)
+3. Selecione os três pontos à direita e selecione a opção **Criar uma bifurcação**.
 
-3. Após acessar **Meu espaço de trabalho**, selecione o botão **Importar**.
+![Captura de tela mostrando a coleção Microsoft Graph Postman e a opção de criar uma bifurcação](./images/connectors-images/16-postman.png)
 
-![Captura de tela da seção Meu espaço de trabalho no Postagem e da opção Importar](./images/connectors-images/03-postman-import.png)
+4. Na caixa de diálogo aberta, insira um rótulo para identificar sua bifurcação. No menu suspenso **Espaço de Trabalho,** selecione **Meu espaço de trabalho** e selecione **Coleção de bifurcação**.
 
-4. Na caixa de diálogo que se abre, selecione a guia **Link** e insira a seguinte URL na caixa de texto:  `https://www.postman.com/collections/61bfc772fe030514b062`.
+![Captura de tela mostrando a caixa de diálogo da coleção de bifurcação no Postman e as opções para inserir um rótulo e selecionar Meu Espaço de Trabalho](./images/connectors-images/17-postman.png)
 
-![Captura de tela da caixa de diálogo Importar](./images/connectors-images/04-postman-link.png)
+3. Agora você pode ir para **Espaços de trabalho** > **Meu Espaço de trabalho** e ver a bifurcação que você criou. Você encontrará a pasta Conectores do Microsoft Graph em **Aplicação**.
 
-5. Selecione **Continuar**.
-6. Selecione **Importar**.
-
-![Captura de tela da caixa de diálogo Importar após inserir a URL](./images/connectors-images/05-postman-link-continue.png)
-
-Agora você deverá ver a coleção da API de conectores do Microsoft Graph dentro do Postman.
-
-![Captura de tela mostrando a API do conector do Microsoft Graph no Postman](./images/connectors-images/06-postman-collection-tab.png)
-
-> [!NOTE]
-> A API do conector do Microsoft Graph foi adicionada recentemente à [coleção Postman do Microsoft Graph](https://www.postman.com/microsoftgraph/workspace/microsoft-graph/overview).
-Este documento será editado em breve para usar essa coleção.
+![Captura de tela da seção Meu Espaço de Trabalho no Postman, mostrando a coleção Microsoft Graph bifurcada ](./images/connectors-images/18-postman.png)
 
 ## <a name="step-2---download-the-postman-agent-optional---postman-web-browser-only"></a>Etapa 2 - Baixar o agente Postman (Opcional - somente navegador da Web do Postman)
 
@@ -88,7 +77,7 @@ O aplicativo do Azure AD agora tem permissões para fazer solicitações em nome
 
 Configure as variáveis no Postman. Essa informação é usada pra gerar o token de acesso.
 
-1. Selecione a guia **API de conectores do Microsoft Graph** e vá para a seção **Variáveis**.
+1. Selecione a **Microsoft Graph** e vá para a seção **Variáveis**.
 
 ![Captura de tela da guia API de conectores do Microsoft Graph e da seção Variáveis](./images/connectors-images/07-postman.png)
 
@@ -108,7 +97,7 @@ Configure as variáveis no Postman. Essa informação é usada pra gerar o token
 
 Como esta é a primeira vez que você está executando uma solicitação como um fluxo de autenticação de aplicativo, é necessário obter um token de acesso. Obtenha o token de acesso do aplicativo fazendo a seguinte solicitação POST:
 
-![Captura de tela da seção Obter token de acesso do aplicativo](./images/connectors-images/09-postman.png)
+![Captura de tela da seção Obter token de acesso do aplicativo](./images/connectors-images/09a-postman.png)
 
 
 O exemplo a seguir mostra como obter um token de acesso com um segredo compartilhado:
@@ -269,29 +258,19 @@ Content-type: application/json
 }
 ```
 
-Veja a seguir uma captura de tela da seção **Obter status da operação**.
+Veja a seguir uma captura de tela da seção **Obter status da operação de conexão**.
 
 ![Captura de tela da seção Obter status da operação mostrando o status em andamento](./images/connectors-images/11-postman.png)
 
 Depois que o status da operação do esquema de conexão muda de **InProgress** para **Concluído**, você poderá ingerir itens para a conexão.
 
-A captura de tela a seguir mostra o status como "concluído".
-
- ![Captura de tela da seção Obter status da operação mostrando o status concluído](./images/connectors-images/12-postman.png)
-
-A captura de tela a seguir mostra o estado como "rascunho".
-
- ![Captura de tela da seção Obter status da operação mostrando o status rascunho](./images/connectors-images/13-postman.png)
-
-Depois que o estado da conexão muda de **rascunho** para **pronto**, conforme mostrado na próxima captura de tela, você poderá ingerir itens na conexão atual.
-
-![Captura de tela da seção Obter status da operação mostrando o status pronto](./images/connectors-images/14-postman.png)
+Depois que o estado da conexão mudar de **rascunho** para **pronto**, você poderá inserir itens na conexão atual.
 
 ## <a name="step-8---add-external-group-member-optional"></a>Etapa 8 - Adicionar membro de grupo externo (opcional)
 
 Se o serviço externo usa ACLs que não sejam do Azure AD, sincronize essas permissões.  
 
-Grupos externos (juntamente com usuários e grupos do Azure Active Directory) são usados ​​para definir permissões no `externalItems` adicionadas a uma conexão do Microsoft Graph. Para obter detalhes, confira [externalGroups](/graph/api/resources/externalgroup?view=graph-rest-beta).
+Grupos externos (juntamente com usuários e grupos do Azure Active Directory) são usados ​​para definir permissões no `externalItems` adicionadas a uma conexão do Microsoft Graph. Para obter detalhes, confira [externalGroups](/graph/api/resources/externalgroup?view=graph-rest-beta&preserve-view=true).
 
 Este é um exemplo de uma solicitação.
 
@@ -320,10 +299,6 @@ Content-Type: application/json
   "identitySource": "external" 
 } 
 ```
-
-A captura de tela a seguir mostra a seção **Criar grupo externo**.
-
-![Captura de tela da seção Criar grupo externo](./images/connectors-images/15-postman.png)
 
 ## <a name="step-9---ingest-items"></a>Etapa 9 - Ingerir itens
 
