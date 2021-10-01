@@ -2,12 +2,12 @@
 title: 'Controle de versão, suporte e mudanças significativas de políticas para o Microsoft Graph '
 description: Este artigo descreve o suporte e as alterações significativas de políticas do Microsoft Graph e as versões da API Microsoft Graph disponível no momento.
 ms.localizationpriority: high
-ms.openlocfilehash: e0ccf55cc9c6ec2890704dc5a10d9de862c19e89
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 1ecf67a8630c055baf00993e3defbae7f57376da
+ms.sourcegitcommit: cbad97d6a8ccb89b1822b30a11cc9b6f2670deda
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59133979"
+ms.lasthandoff: 09/30/2021
+ms.locfileid: "60016596"
 ---
 # <a name="versioning-support-and-breaking-change-policies-for-microsoft-graph"></a>Controle de versão, suporte e mudanças significativas de políticas do Microsoft Graph
 
@@ -62,7 +62,7 @@ Nossa comunidade de desenvolvedores pode postar solicitações de recursos no [f
 A versão atual do Microsoft Graph é a v1.0. Exposta em `https://graph.microsoft.com/v1.0`, a versão do Microsoft Graph API v1.0 contém recursos que estão geralmente disponíveis e prontos para uso de produção. Navegue pela [documentação para APIs v1.0](/graph/api/overview?view=graph-rest-1.0&preserve-view=true).
 
 ## <a name="preview-status"></a>Status da visualização
-Um recurso ou API é rotulado como "(visualização)" para indicar que o comportamento é _único_ no ponto de extremidade beta. 
+Uma API ou recurso no Microsoft Graph é rotulado como "(visualização)" para indicar que seu comportamento é _exclusivo_ no ponto de extremidade beta.  
 
 O comportamento da maioria dos recursos e das APIs na versão v1.0 está em paridade com a versão beta. "visualização" qualifica uma minoria de recursos e APIs em um dos dois casos a seguir: 
 - Disponível somente em versão beta
@@ -70,6 +70,7 @@ O comportamento da maioria dos recursos e das APIs na versão v1.0 está em pari
 
 Assim como qualquer outra API no ponto de extremidade beta, as APIs marcadas na documentação como "(visualização)" podem sofrer alterações significativas sem aviso. Não acesse as APIs do ponto de extremidade beta nos aplicativos de produção.
 
+Como exemplo, o [treinamento de simulação de ataque](/microsoft-365/security/office-365-security/attack-simulation-training?view=o365-worldwide&preserve-view=true) é um recurso que geralmente está disponível para administradores no [portal do Microsoft 365 Defender](https://security.microsoft.com/). Quando a API REST para treinamento de simulação de ataque fica disponível no Microsoft Graph apenas no ponto de extremidade beta, a [documentação](/graph/api/resources/security-api-overview?view=graph-rest-beta&preserve-view=true#attack-simulation-and-training-preview) da API REST é rotulada como "(visualização)". O rótulo "(visualização)" se aplica à API REST e sua documentação no Microsoft Graph, mesmo que o serviço em si esteja disponível para o público geral.
 
 ### <a name="deprecated-and-unsupported-versions"></a>Versões preteridas e sem suporte
 
