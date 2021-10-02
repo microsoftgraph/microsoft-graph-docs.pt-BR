@@ -3,12 +3,12 @@ title: Práticas recomendadas para trabalhar com o Microsoft Graph
 description: Este artigo descreve as práticas recomendadas que você pode aplicar para ajudar seus aplicativos a tirar o máximo proveito do Microsoft Graph, caso isso envolva saber mais sobre o Microsoft Graph, melhorar o desempenho do aplicativo ou tornar seu aplicativo mais confiável para os usuários finais.
 ms.localizationpriority: high
 ms.custom: graphiamtop20
-ms.openlocfilehash: 6372ca06843443e3801a0ddcb66006f3720ba1a7
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 1801586e1ce8e1f0b9798df4275d41ee95a09b9b
+ms.sourcegitcommit: 0ec845f93eaa140ad833ba163c76c5308197a92f
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59035518"
+ms.lasthandoff: 10/01/2021
+ms.locfileid: "60059931"
 ---
 # <a name="best-practices-for-working-with-microsoft-graph"></a>Práticas recomendadas para trabalhar com o Microsoft Graph
 
@@ -45,7 +45,7 @@ Aplique as seguintes práticas recomendadas de consentimento e autorização ao 
   - Leve em consideração quem consentirá com seu aplicativo, seja o usuário final ou administrador, e configure seu aplicativo para [solicitar permissões de forma adequada](/azure/active-directory/develop/active-directory-v2-scopes).
   - Verifique se você entende a diferença entre [consentimento estático, dinâmico e incremental](/azure/active-directory/develop/active-directory-v2-compare#incremental-and-dynamic-consent).
 
-- **Considere usar aplicativos multilocatários**. Tenha em mente que os clientes podem ter vários controles de aplicativo e consentimentos em diferentes estados. Por exemplo:
+- **Considere aplicativos multilocatário**. Tenha em mente que os clientes podem ter vários controles de aplicativo e consentimentos em diferentes estados. Por exemplo:
 
   - os administradores de locatários podem desabilitar a capacidade dos usuários finais permitirem os aplicativos. Nesse caso, um administrador precisaria consentir em nome de seus usuários.
   - Os administradores de locatários podem definir políticas de autorização personalizadas, como impedir que os usuários leiam perfis de outros usuários ou limitar a criação de grupos de autoatendimento a um conjunto limitado de usuários. Nesse caso, seu aplicativo deve esperar que a resposta de erro 403 seja tratada ao atuar em nome de um usuário.
@@ -148,6 +148,7 @@ Use o [envio em lote](json-batching.md) onde uma latência de rede significativa
 ## <a name="reliability-and-support"></a>Confiabilidade e suporte
 Para garantir a segurança e facilitar o suporte do aplicativo:
 
+- Use o TLS 1.2 para dar suporte a todos os recursos do Microsoft Graph. Para obter mais informações sobre a deprecação do Microsoft Graph TLS 1.0 e 1.1, consulte [Habilitar o suporte para TLS 1.2 em seu ambiente](/troubleshoot/azure/active-directory/enable-support-tls-environment).
 - Respeite o TTL DNS e defina a conexão TTL para correspondê-lo. Isso garantirá a disponibilidade em caso de failovers.
 - Abra conexões para todas as respostas de DNS anunciadas.
 - Gerar um GUID exclusivo e o enviar em cada solicitação REST do Microsoft Graph. Isso ajudará a Microsoft a investigar os erros com maior facilidade, caso seja necessário relatar um problema com o Microsoft Graph.

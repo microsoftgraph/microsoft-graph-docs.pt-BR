@@ -5,12 +5,12 @@ author: Alice-at-Microsoft
 ms.localizationpriority: medium
 ms.prod: w10
 doc_type: conceptualPageType
-ms.openlocfilehash: 1e7f1db86c0b70b5d54d477359d113646204ed3c
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: df749d8e9898cbf3bc9b9dcbab24a2c64a776946
+ms.sourcegitcommit: 6ae8c124fac63a195ccf516c9cff739f730b6b13
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59117596"
+ms.lasthandoff: 10/02/2021
+ms.locfileid: "60083850"
 ---
 # <a name="deploy-a-feature-update-using-the-windows-update-for-business-deployment-service"></a>Implantar uma atualização de recurso usando o serviço de implantação Windows Atualização para Empresas
 
@@ -19,6 +19,9 @@ Com o Windows de implantação do Update for Business, você pode implantar Wind
 Quando você implanta uma atualização de recurso em um dispositivo, o Windows Update oferece a atualização especificada para o dispositivo se ainda não tiver recebido a atualização. Por exemplo, se você implantar Windows 10 versão 20H2 de atualização de recursos em um dispositivo que está inscrito no gerenciamento de atualização de recursos e está atualmente em uma versão mais antiga do Windows 10, o dispositivo será atualizado para a versão 20H2. Se o dispositivo já estiver na versão 20H2 ou superior, ele permanecerá em sua versão atual. Se o dispositivo não estiver inscrito no gerenciamento de atualização de recursos, o dispositivo não será afetado por essa operação.
 
 Enquanto um dispositivo permanecer inscrito no gerenciamento de atualização de recursos, o dispositivo não receberá outras atualizações de recursos do Windows Update, a menos que seja implantado explicitamente usando o serviço de implantação.
+
+> [!IMPORTANT]
+> Usando o serviço de implantação do Windows Update for Business para atualizar dispositivos para o Windows 11 (definindo o paramater de versão de uma implantação como "Windows 11, versão 21H2"), você concorda que ao aplicar esse sistema operacional a um dispositivo (1) a licença de Windows aplicável foi adquirida embora o licenciamento por volume ou (2) que você está autorizado a vincular seu organi zation e estão aceitando em seu nome os Termos de Licença de Software da Microsoft relevantes a serem encontrados aqui: Termos de Licença [de Software da Microsoft](https://www.microsoft.com/Useterms).
 
 ## <a name="prerequisites"></a>Pré-requisitos
 

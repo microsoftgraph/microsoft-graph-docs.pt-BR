@@ -3,14 +3,14 @@ title: Atualizar chatMessage
 description: Atualize a propriedade policyViolation de um chatMessage.
 author: RamjotSingh
 doc_type: apiPageType
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: microsoft-teams
-ms.openlocfilehash: 7de6500a4186871e7ccdbba8c0c07effd0e47d6e
-ms.sourcegitcommit: 16ee16e7fddd662ca42dc5c9352cfb109e31ed1a
+ms.openlocfilehash: c51abaf2928f3602e2bb36ddaef30ffde52e6cae
+ms.sourcegitcommit: 6ae8c124fac63a195ccf516c9cff739f730b6b13
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/03/2021
-ms.locfileid: "51582666"
+ms.lasthandoff: 10/02/2021
+ms.locfileid: "60083921"
 ---
 # <a name="update-chatmessage"></a>Atualizar chatMessage
 
@@ -18,6 +18,8 @@ ms.locfileid: "51582666"
 
 
 Atualize um [objeto chatMessage.](../resources/chatMessage.md) Somente a **propriedade policyViolation** de **um chatMessage** pode ser atualizada.
+
+[!INCLUDE [teams-model-A-only-disclaimer](../../includes/teams-model-A-only-disclaimer.md)]
 
 ## <a name="permissions"></a>Permissões
 
@@ -56,7 +58,7 @@ Se tiver êxito, este método retornará uma `200 OK` resposta.
 
 ### <a name="request"></a>Solicitação
 
-A seguir, um exemplo da solicitação para atualizar a propriedade **policyViolation** em uma mensagem de canal do Microsoft Teams.
+A seguir, um exemplo da solicitação para atualizar a **propriedade policyViolation** em uma mensagem Microsoft Teams canal.
 
 
 # <a name="http"></a>[HTTP](#tab/http)

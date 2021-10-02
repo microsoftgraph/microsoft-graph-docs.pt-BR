@@ -5,12 +5,12 @@ author: RamjotSingh
 ms.localizationpriority: medium
 ms.prod: microsoft-teams
 doc_type: resourcePageType
-ms.openlocfilehash: c064025b1c60b0a6b391343a82c7c79ea0adebbd
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 724319be29968d0cbd74e21ed3fcaae63772e9e8
+ms.sourcegitcommit: 6ae8c124fac63a195ccf516c9cff739f730b6b13
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59099060"
+ms.lasthandoff: 10/02/2021
+ms.locfileid: "60084060"
 ---
 # <a name="chat-resource-type"></a>tipo de recurso de chat
 
@@ -20,7 +20,7 @@ Um chat é uma coleção [de chatMessages](chatmessage.md) entre um ou mais part
 
 > **Observação**: se o chat estiver associado a uma instância [onlineMeeting,](../resources/onlinemeeting.md) alguns dos métodos listados afetarão transitivamente a reunião.
 
-## <a name="methods"></a>Métodos
+## <a name="methods"></a>Methods
 
 |  Método       |  Tipo de retorno  | Descrição| 
 |:---------------|:--------|:----------|
@@ -36,18 +36,19 @@ Um chat é uma coleção [de chatMessages](chatmessage.md) entre um ou mais part
 | **Mensagens** |||
 |[Listar mensagens no chat](../api/chat-list-messages.md)  | [chatMessage](../resources/chatmessage.md) | Obter mensagens em um chat. | 
 |[Receba uma mensagem no bate-papo](../api/chatmessage-get.md)  | [chatMessage](../resources/chatmessage.md) | Receba uma única mensagem em um bate-papo. | 
+|[Obter mensagens em todos os chats para o usuário](../api/chats-getallmessages.md)| [coleção chat](chat.md)| Obter mensagens de todos os chats nos quais um usuário é um participante. |
 | **Aplicativos** |||
 |[Listar aplicativos no chat](../api/chat-list-installedapps.md) |Coleção [teamsAppInstallation](teamsappinstallation.md) | Listar aplicativos instalados em um chat (e reunião associada).|
 |[Obter aplicativo no chat](../api/chat-get-installedapps.md) | [teamsAppInstallation](teamsappinstallation.md) | Obter um aplicativo específico instalado em um chat (e reunião associada).|
 |[Adicionar aplicativo no chat](../api/chat-post-installedapps.md) | | Adicionar (instalar) um aplicativo em um chat (e reunião associada).|
-|[Atualizar aplicativo no chat](../api/chat-teamsappinstallation-upgrade.md) | Nenhum(a) | Atualizar para a versão mais recente do aplicativo instalado no chat (e reunião associada).|
-|[Desinstalar aplicativo do chat](../api/chat-delete-installedapps.md) | Nenhum(a) | Remover (desinstalar) aplicativo de um chat (e reunião associada).|
+|[Atualizar aplicativo no chat](../api/chat-teamsappinstallation-upgrade.md) | Nenhum | Atualizar para a versão mais recente do aplicativo instalado no chat (e reunião associada).|
+|[Desinstalar aplicativo do chat](../api/chat-delete-installedapps.md) | Nenhum | Remover (desinstalar) aplicativo de um chat (e reunião associada).|
 | **Guias** |||
 |[Listar guias no chat](../api/chat-list-tabs.md) | [teamsTab](teamstab.md) | Listar guias fixadas em um chat (e reunião associada).|
 |[Obter guia no chat](../api/chat-get-tabs.md) | [teamsTab](teamstab.md) | Obter uma guia específica fixada em um chat (e reunião associada).|
 |[Adicionar guia ao chat](../api/chat-post-tabs.md) | [teamsTab](teamstab.md) | Adicione (pin) uma guia a um chat (e reunião associada).|
 |[Guia Atualizar no chat](../api/chat-patch-tabs.md) | [teamsTab](teamstab.md) | Atualize as propriedades de uma guia em um chat (e reunião associada).|
-|[Remover guia do chat](../api/chat-delete-tabs.md) | Nenhum(a) | Remover (desempinar) uma guia de um chat (e reunião associada).|
+|[Remover guia do chat](../api/chat-delete-tabs.md) | Nenhum | Remover (desempinar) uma guia de um chat (e reunião associada).|
 
 >**Observação:** Ao usar permissões de aplicativo, certifique-se de saber como obter a ID do chat. Como não há suporte para listagem de chats com permissões de aplicativo, nem todos os cenários são possíveis. É possível obter IDs de chat com permissões delegadas e de notificações de alteração para [/chats/getAllMessages](../api/subscription-post-subscriptions.md) com permissões de aplicativo.
 

@@ -577,7 +577,7 @@ items:
         items:
           - name: Visão Geral
             href: resources/groups-overview.md
-          - name: Group
+          - name: Grupo
             href: resources/group.md
             items:
               - name: Listar grupos
@@ -888,7 +888,7 @@ items:
                     items:
                       - name: Atribuir
                         href: api/application-post-tokenissuancepolicies.md
-                      - name: Lista
+                      - name: List
                         href: api/application-list-tokenissuancepolicies.md
                       - name: Remover
                         href: api/application-delete-tokenissuancepolicies.md
@@ -897,7 +897,7 @@ items:
                     items:
                       - name: Atribuir
                         href: api/application-post-tokenlifetimepolicies.md
-                      - name: Lista
+                      - name: List
                         href: api/application-list-tokenlifetimepolicies.md
                       - name: Remover
                         href: api/application-delete-tokenlifetimepolicies.md
@@ -1081,7 +1081,7 @@ items:
                     items:
                       - name: Atribuir
                         href: api/serviceprincipal-post-claimsmappingpolicies.md
-                      - name: Lista
+                      - name: List
                         href: api/serviceprincipal-list-claimsmappingpolicies.md
                       - name: Remover
                         href: api/serviceprincipal-delete-claimsmappingpolicies.md
@@ -1090,7 +1090,7 @@ items:
                     items:
                       - name: Atribuir
                         href: api/serviceprincipal-post-homerealmdiscoverypolicies.md
-                      - name: Lista
+                      - name: List
                         href: api/serviceprincipal-list-homerealmdiscoverypolicies.md
                       - name: Remover
                         href: api/serviceprincipal-delete-homerealmdiscoverypolicies.md
@@ -1099,7 +1099,7 @@ items:
                     items:
                       - name: Atribuir
                         href: api/application-post-tokenissuancepolicies.md
-                      - name: Lista
+                      - name: List
                         href: api/application-list-tokenissuancepolicies.md
                       - name: Remover
                         href: api/application-delete-tokenissuancepolicies.md
@@ -1108,7 +1108,7 @@ items:
                     items:
                       - name: Atribuir
                         href: api/application-post-tokenlifetimepolicies.md
-                      - name: Lista
+                      - name: List
                         href: api/application-list-tokenlifetimepolicies.md
                       - name: Remover
                         href: api/application-delete-tokenlifetimepolicies.md
@@ -1500,7 +1500,7 @@ items:
                 items:
                   - name: Session
                     href: resources/callrecords-session.md
-                  - name: Lista
+                  - name: List
                     href: api/callrecords-session-list.md
               - name: Chamadas PSTN
                 items:
@@ -9758,7 +9758,7 @@ items:
               - name: Região suportada pelo Cloud PC
                 href: resources/cloudpcsupportedregion.md
                 items:
-                  - name: Lista
+                  - name: List
                     href: api/virtualendpoint-list-supportedregions.md
           - name: Atualizações do dispositivo (prévia)
             displayName: Windows updates
@@ -12094,7 +12094,7 @@ items:
                   - name: Atribuição de pacote do Access
                     href: resources/accesspackageassignment.md
                     items:
-                      - name: Lista
+                      - name: List
                         href: api/accesspackageassignment-list.md
                       - name: Filtrar pelo usuário atual
                         href: api/accesspackageassignment-filterbycurrentuser.md
@@ -13123,7 +13123,7 @@ items:
                   - name: Resumo detalhado da parte de base
                     href: resources/relyingpartydetailedsummary.md
                     items:
-                      - name: Lista
+                      - name: List
                         href: api/relyingpartydetailedsummary-list.md
               - name: Entrar no aplicativo
                 items:
@@ -13671,7 +13671,7 @@ items:
                     href: api/site-delete-permission.md
           - name: Listas
             items:
-              - name: Lista
+              - name: List
                 href: resources/list.md
               - name: Obter listas em um site
                 href: api/list-list.md
@@ -13771,7 +13771,7 @@ items:
                     href: api/termstore-store-get.md
                   - name: Atualizar
                     href: api/termstore-store-update.md
-              - name: Group
+              - name: Grupo
                 href: resources/termstore-group.md
                 items:
                   - name: Criar
@@ -13785,7 +13785,7 @@ items:
               - name: Set
                 href: resources/termstore-set.md
                 items:
-                  - name: Lista
+                  - name: List
                     href: api/termstore-group-list-sets.md
                   - name: Listar filhos
                     href: api/termstore-term-list-children.md
@@ -13822,7 +13822,7 @@ items:
         items:
           - name: Visão Geral
             href: resources/planner-overview.md
-          - name: Planejar
+          - name: Plano
             href: resources/plannerplan.md
             items:
               - name: Listar os planos do grupo
@@ -14130,6 +14130,8 @@ items:
                 href: api/chatmessage-post-replies.md
               - name: Atualizar mensagem
                 href: api/chatmessage-update.md
+              - name: Obter mensagens em todos os canais
+                href: api/channel-getallmessages.md
               - name: Obter mensagens em todos os chats
                 href: api/chats-getallmessages.md
               - name: Listar conteúdo hospedado
@@ -14322,7 +14324,7 @@ items:
                     href: api/offershiftrequest-post.md
                   - name: Obter
                     href: api/offershiftrequest-get.md
-                  - name: Lista
+                  - name: List
                     href: api/offershiftrequest-list.md
                   - name: Aprovar
                     href: api/offershiftrequest-approve.md

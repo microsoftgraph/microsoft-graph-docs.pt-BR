@@ -5,12 +5,12 @@ author: anandab
 ms.localizationpriority: high
 ms.prod: microsoft-teams
 ms.custom: scenarios:getting-started
-ms.openlocfilehash: 8f84a824825db4b174ec4b568afd1d0e1fdf2dfa
-ms.sourcegitcommit: 08e9b0bac39c1b1d2c8a79539d24aaa93364baf2
+ms.openlocfilehash: 2a69b010885c79dba87ef80a23f035e50d7aec53
+ms.sourcegitcommit: 6ae8c124fac63a195ccf516c9cff739f730b6b13
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/24/2021
-ms.locfileid: "59764322"
+ms.lasthandoff: 10/02/2021
+ms.locfileid: "60084088"
 ---
 # <a name="get-change-notifications-for-membership-changes-in-teams-and-channels-using-microsoft-graph"></a>Receba notificações de alteração de membros em equipes e canais usando o Microsoft Graph
 
@@ -51,6 +51,8 @@ Content-Type: application/json
 ## <a name="subscribe-to-membership-changes-in-all-private-channels-of-a-particular-team"></a>Assinar as alterações de membros em todos os canais privados de uma determinada equipe
 
 Para obter notificações de alteração de membros em todos os canais privados de uma determinada equipe, inscreva-se em `/teams/{team-id}/channels/getAllMembers`. Este recurso oferece suporte a [ incluindo dados de recursos ](webhooks-with-resource-data.md) na notificação.
+
+[!INCLUDE [teams-model-A-and-B-disclaimer](../includes/teams-model-A-and-B-disclaimer.md)]
 
 ### <a name="permissions"></a>Permissões
 

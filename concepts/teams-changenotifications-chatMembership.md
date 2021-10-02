@@ -5,12 +5,12 @@ author: RamjotSingh
 ms.localizationpriority: high
 ms.prod: microsoft-teams
 ms.custom: scenarios:getting-started
-ms.openlocfilehash: 09babfebfccbd833ca1b969420f5ef3a3c75ba91
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 9069a4b2ec82c14c5de0b7bdda91e48b5ae1b53a
+ms.sourcegitcommit: 6ae8c124fac63a195ccf516c9cff739f730b6b13
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59138922"
+ms.lasthandoff: 10/02/2021
+ms.locfileid: "60084025"
 ---
 # <a name="get-change-notifications-for-chat-membership-using-microsoft-graph"></a>Obtenha as notificações de alteração para associação de chat o usando o Microsoft Graph
 
@@ -19,6 +19,8 @@ As notificações de alteração permitem que você se inscreva para receber alt
 ## <a name="subscribe-to-changes-in-membership-of-any-chat-at-tenant-level"></a>Inscrever-se para alterações na associação de qualquer chat a nível de locatário
 
 Para obter notificações de alteração para alterações de associação em qualquer chat do locatário, inscreva-se em `/chats/getAllMembers`. Este recurso oferece suporte a [ incluindo dados de recursos ](webhooks-with-resource-data.md) na notificação.
+
+[!INCLUDE [teams-model-A-and-B-disclaimer](../includes/teams-model-A-and-B-disclaimer.md)]
 
 ### <a name="permissions"></a>Permissões
 

@@ -280,7 +280,7 @@ items:
           - name: Atribuição de funções do aplicativo
             href: resources/approleassignment.md
             items:
-              - name: Lista
+              - name: List
                 href: api/user-list-approleassignments.md
               - name: Adicionar
                 href: api/user-post-approleassignments.md
@@ -323,7 +323,7 @@ items:
                 href: api/user-list-contactfolders.md
           - name: Concessões de permissão delegadas
             items:
-              - name: Lista
+              - name: List
                 href: api/user-list-oauth2permissiongrants.md
           - name: Objetos de diretório
             href: resources/directoryobject.md
@@ -521,7 +521,7 @@ items:
         items:
           - name: Visão Geral
             href: resources/groups-overview.md
-          - name: Group
+          - name: Grupo
             href: resources/group.md
             items:
               - name: Listar grupos
@@ -624,7 +624,7 @@ items:
           - name: Atribuição de funções do aplicativo
             href: resources/approleassignment.md
             items:
-              - name: Lista
+              - name: List
                 href: api/group-list-approleassignments.md
               - name: Adicionar
                 href: api/group-post-approleassignments.md
@@ -823,7 +823,7 @@ items:
                         href: api/application-delete-extensionproperty.md
               - name: Proprietários
                 items:
-                  - name: Lista
+                  - name: List
                     href: api/application-list-owners.md
                   - name: Adicionar
                     href: api/application-post-owners.md
@@ -836,7 +836,7 @@ items:
                     items:
                       - name: Atribuir
                         href: api/application-post-tokenissuancepolicies.md
-                      - name: Lista
+                      - name: List
                         href: api/application-list-tokenissuancepolicies.md
                       - name: Remover
                         href: api/application-delete-tokenissuancepolicies.md
@@ -845,7 +845,7 @@ items:
                     items:
                       - name: Atribuir
                         href: api/application-post-tokenlifetimepolicies.md
-                      - name: Lista
+                      - name: List
                         href: api/application-list-tokenlifetimepolicies.md
                       - name: Remover
                         href: api/application-delete-tokenlifetimepolicies.md
@@ -880,7 +880,7 @@ items:
               - name: Atribuição de funções do aplicativo
                 href: resources/approleassignment.md
                 items:
-                  - name: Lista
+                  - name: List
                     href: api/serviceprincipal-list-approleassignments.md
                   - name: Adicionar
                     href: api/serviceprincipal-post-approleassignments.md
@@ -904,7 +904,7 @@ items:
                     href: api/serviceprincipal-removekey.md
               - name: Concessões de permissão delegadas
                 items:
-                  - name: Lista
+                  - name: List
                     href: api/serviceprincipal-list-oauth2permissiongrants.md
               - name: Classificações de permissão delegada
                 href: resources/delegatedpermissionclassification.md
@@ -931,7 +931,7 @@ items:
                     href: api/serviceprincipal-getmemberobjects.md
               - name: Proprietários
                 items:
-                  - name: Lista
+                  - name: List
                     href: api/serviceprincipal-list-owners.md
                   - name: Adicionar
                     href: api/serviceprincipal-post-owners.md
@@ -944,7 +944,7 @@ items:
                     items:
                       - name: Atribuir
                         href: api/serviceprincipal-post-claimsmappingpolicies.md
-                      - name: Lista
+                      - name: List
                         href: api/serviceprincipal-list-claimsmappingpolicies.md
                       - name: Remover
                         href: api/serviceprincipal-delete-claimsmappingpolicies.md
@@ -953,7 +953,7 @@ items:
                     items:
                       - name: Atribuir
                         href: api/serviceprincipal-post-homerealmdiscoverypolicies.md
-                      - name: Lista
+                      - name: List
                         href: api/serviceprincipal-list-homerealmdiscoverypolicies.md
                       - name: Remover
                         href: api/serviceprincipal-delete-homerealmdiscoverypolicies.md
@@ -990,7 +990,7 @@ items:
                     items:
                       - name: Atribuir
                         href: api/application-post-tokenissuancepolicies.md
-                      - name: Lista
+                      - name: List
                         href: api/application-list-tokenissuancepolicies.md
                       - name: Remover
                         href: api/application-delete-tokenissuancepolicies.md
@@ -999,7 +999,7 @@ items:
                     items:
                       - name: Atribuir
                         href: api/application-post-tokenlifetimepolicies.md
-                      - name: Lista
+                      - name: List
                         href: api/application-list-tokenlifetimepolicies.md
                       - name: Remover
                         href: api/application-delete-tokenlifetimepolicies.md
@@ -5145,7 +5145,7 @@ items:
                   - name: Instância de revisão do Access
                     href: resources/accessreviewinstance.md
                     items:
-                      - name: Lista
+                      - name: List
                         href: api/accessreviewinstance-list.md
                       - name: Listar decisões
                         href: api/accessreviewinstance-list-decisions.md
@@ -5996,7 +5996,7 @@ items:
                     href: api/site-delete-permission.md
           - name: Listas
             items:
-              - name: Lista
+              - name: List
                 href: resources/list.md
               - name: Criar lista
                 href: api/list-create.md
@@ -6075,7 +6075,7 @@ items:
                     href: api/termstore-store-get.md
                   - name: Atualizar
                     href: api/termstore-store-update.md
-              - name: Group
+              - name: Grupo
                 href: resources/termstore-group.md
                 items:
                   - name: Listar
@@ -6089,7 +6089,7 @@ items:
               - name: Set
                 href: resources/termstore-set.md
                 items:
-                  - name: Lista
+                  - name: List
                     href: api/termstore-group-list-sets.md
                   - name: Listar filhos
                     href: api/termstore-term-list-children.md
@@ -6126,7 +6126,7 @@ items:
         items:
           - name: Visão Geral
             href: resources/planner-overview.md
-          - name: Planejar
+          - name: Plano
             href: resources/plannerplan.md
             items:
               - name: Criar plano
@@ -6308,6 +6308,8 @@ items:
                 href: api/channel-completemigration.md
               - name: Obter mensagens do canal
                 href: api/chatmessage-get.md
+              - name: Obter mensagens em todos os canais
+                href: api/channel-getallmessages.md
               - name: Obter mensagens de canal delta
                 href: api/chatmessage-delta.md
               - name: Obter pasta de arquivos.
@@ -6357,6 +6359,8 @@ items:
                 href: api/chat-delete-members.md
               - name: Listar mensagens em um chat
                 href: api/chat-list-messages.md
+              - name: Obter mensagens em todos os chats
+                href: api/chats-getallmessages.md
               - name: Receba uma mensagem no bate-papo
                 href: api/chatmessage-get.md
               - name: Enviar mensagem no chat
@@ -6384,9 +6388,13 @@ items:
                 href: api/chatmessage-update.md
               - name: Listar conteúdo hospedado
                 href: api/chatmessage-list-hostedcontents.md
+              - name: Obter mensagens em todos os canais
+                href: api/channel-getallmessages.md
+              - name: Obter mensagens em todos os chats
+                href: api/chats-getallmessages.md
               - name: Obter conteúdo hospedado
                 href: api/chatmessagehostedcontent-get.md
-          - name: App
+          - name: Aplicativo
             items:
               - name: Aplicativo no catálogo
                 href: resources/teamsapp.md
@@ -6542,7 +6550,7 @@ items:
                     href: api/offershiftrequest-post.md
                   - name: Obter
                     href: api/offershiftrequest-get.md
-                  - name: Lista
+                  - name: List
                     href: api/offershiftrequest-list.md
                   - name: Aprovar
                     href: api/offershiftrequest-approve.md
