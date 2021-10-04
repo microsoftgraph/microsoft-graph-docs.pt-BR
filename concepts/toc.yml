@@ -444,7 +444,7 @@ items:
             href: teams-configuring-builtin-tabs.md
           - name: APIs protegidas
             href: teams-protected-apis.md
-          - name: Licenças para assinar mensagens de chat
+          - name: Requisitos de licenciamento e pagamento
             href: teams-licenses.md
           - name: Enviar mensagens proativas com um bot
             href: /microsoftteams/platform/graph-api/proactive-bots-and-messages/graph-proactive-bots-and-messages?context=graph/context

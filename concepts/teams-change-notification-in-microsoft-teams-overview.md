@@ -5,12 +5,12 @@ author: anandab-msft
 ms.localizationpriority: high
 ms.prod: microsoft-teams
 ms.custom: scenarios:getting-started
-ms.openlocfilehash: 821c45642ecd50154f8d618496264657b98160b8
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: a740c6cddf0292e44196bf7b028631d4d24e1c32
+ms.sourcegitcommit: 6ae8c124fac63a195ccf516c9cff739f730b6b13
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59138936"
+ms.lasthandoff: 10/02/2021
+ms.locfileid: "60084067"
 ---
 # <a name="change-notifications-for-microsoft-teams-resources-using-microsoft-graph"></a>Alterar notificações para os recursos do Microsoft Teams usando Microsoft Graph
 
@@ -20,7 +20,7 @@ As notificações de alteração habilitam você a assinar para receber alteraç
 
 ## <a name="change-notification-types"></a>Tipoos de notificações de alteração
 O Microsoft Teams dá suporte a dois tipos de notificações de alteração:
-- **Altere a notificação para controlar todas as alterações relacionadas a um recurso no locatário** – por exemplo, você pode assinar alterações em mensagens em qualquer canal no locatário e ser notificado sempre que uma mensagem for criada, atualizada ou excluída em qualquer canal no locatário.
+- **Notificação de alteração para acompanhar todas as alterações relacionadas a um recurso em todo o locatário** - por exemplo, você pode assinar as alterações nas mensagens em qualquer canal do locatário e ser notificado sempre que uma mensagem for criada, atualizada ou excluída em qualquer canal do locatário. Estas notificações podem ter [requisitos de licenciamento e pagamento](/graph/teams-licenses), tais como notificações de alteração para [mensagens](teams-changenotifications-chatmessage.md) e [afiliação](teams-changenotifications-chatMembership.md).
 - **Altere a notificação para controlar todas as alterações de um recurso específico** - por exemplo, você pode assinar alterações em mensagens em um canal específico e ser notificado sempre que uma mensagem for criada, atualizada ou excluída nesse canal.
 
 Para obter detalhes sobre quais recursos dão suporte a quais tipos de notificações de alteração, consulte [Notificações de Alteração do Microsoft Graph](webhooks.md).

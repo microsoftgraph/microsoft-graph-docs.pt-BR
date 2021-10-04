@@ -5,12 +5,12 @@ author: nkramer
 ms.localizationpriority: high
 ms.prod: microsoft-teams
 doc_type: resourcePageType
-ms.openlocfilehash: 3f072392c763a9da4a759ebd8978847d659fae4b
-ms.sourcegitcommit: 08e9b0bac39c1b1d2c8a79539d24aaa93364baf2
+ms.openlocfilehash: 11752d0a0f86ebbfb5c6e0d1650d15dac6f84a30
+ms.sourcegitcommit: 6ae8c124fac63a195ccf516c9cff739f730b6b13
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/24/2021
-ms.locfileid: "59765764"
+ms.lasthandoff: 10/02/2021
+ms.locfileid: "60084011"
 ---
 # <a name="channel-resource-type"></a>Tipo de recurso de usuário
 
@@ -29,6 +29,7 @@ Namespace: microsoft.graph
 |[Delete channel](../api/channel-delete.md) | Nenhum | Exclua um canal.|
 |[Obter o delta de mensagem](../api/chatmessage-delta.md)  | [chatMessage](../resources/chatmessage.md) | Obtenha mensagens incrementais em um canal. |
 |[Listar mensagens do canal](../api/channel-list-messages.md)  | [chatMessage](../resources/chatmessage.md) | Obtenha mensagens em um canal. |
+|[Obter todas as mensagens do canal](../api/channel-getallmessages.md)|[channel](channel.md) collection | Obter todas as mensagens de todos os chats nos quais um usuário é um participante. |
 |[Criar postagem de mensagem no canal](../api/channel-post-messages.md) | [chatMessage](../resources/chatmessage.md) | Envie uma mensagem para um canal. |
 |[Criar resposta à postagem da mensagem do canal](../api/chatmessage-post-replies.md) | [chatMessage](../resources/chatmessage.md) | Responda a uma mensagem em um canal.|
 |[Obter pasta de arquivos](../api/channel-get-filesfolder.md).| [driveItem](driveitem.md) | Recupera os detalhes da pasta do SharePoint em que os arquivos do canal estão armazenados. |
@@ -57,7 +58,7 @@ Namespace: microsoft.graph
 |isFavoriteByDefault|Booliano|Indica se o canal deve automaticamente ser marcado como “favorito” para todos os membros da equipe. Só pode ser definida por programação com [Criar equipe](../api/team-post.md). Padrão: `false`.|
 |email|Cadeia de caracteres| O endereço de email para enviar mensagens ao canal. Somente leitura.|
 |webUrl|String|Um hiperlink que navegará até o canal no Microsoft Teams. Essa é a URL que você recebe ao clicar com o botão direito do mouse em um canal Microsoft Teams e selecionar Obter o link para o canal. Essa URL deve ser tratada como um blob opaco e não analisado. Somente leitura.|
-|membershipType|[channelMembershipType](../resources/enums.md#channelmembershiptype-values)|O tipo do canal. Pode ser definido durante a criação e não pode ser alterado. Valores possíveis são:`standard` - Canal herda a lista de membros da equipe principal;`private` - O canal pode ter membros que são um subconjunto de todos os membros da equipe principal.
+|membershipType|[channelMembershipType](../resources/enums.md#channelmembershiptype-values)|O tipo de canal. Pode ser definido durante a criação e não pode ser alterado. Os valores possíveis são: `standard` - O canal herda a lista de membros da equipe mãe; `private` - O canal pode ter membros que são um subconjunto de todos os membros da equipe principal.
 |createdDateTime|dateTimeOffset|Somente leitura. Carimbo de data/hora da criação do canal.|
 
 ### <a name="instance-attributes"></a>Atributos de instância
@@ -66,7 +67,7 @@ Atributos de instância são propriedades com comportamentos especiais. Essas pr
 
 | Nome da propriedade| Tipo   | Descrição
 |:-----------------------|:-------|:-------------------------|
-|@microsoft.graph.channelCreationMode|string|Indica que o canal está no estado de migração e está sendo usado no momento para fins de migração. Aceita um valor: `migration`.|
+|@microsoft.graph.channelCreationMode|string|Indica que o canal está em estado de migração e está sendo usado atualmente para fins de migração. Aceita um valor: `migration`.|
 
 > **Observação**: `channelCreationMode`  é um enum que usa o valor `migration`.
 

@@ -5,12 +5,12 @@ author: RamjotSingh
 ms.localizationpriority: high
 ms.prod: microsoft-teams
 ms.custom: scenarios:getting-started
-ms.openlocfilehash: 40b6643e5d1b5008730212ff5239ea9de55f151c
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 3e62386b6d51c8e6fe97b0ede9f6a21f97f72a8b
+ms.sourcegitcommit: 6ae8c124fac63a195ccf516c9cff739f730b6b13
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59071704"
+ms.lasthandoff: 10/02/2021
+ms.locfileid: "60083983"
 ---
 # <a name="get-change-notifications-for-messages-in-teams-channels-and-chats-using-microsoft-graph"></a>Obter notificações de alteração para mensagens nos canais e bate-papos do Teams usando o Microsoft Graph
 
@@ -20,9 +20,11 @@ As notificações de alteração habilitam você a inscrever-se para receber alt
 
 Para acompanhar todas as alterações relacionadas a mensagens em um locatário, você pode usar assinaturas em um nível de locatário para mensagens de canal e chat. Isso requer que você crie duas assinaturas: uma para acompanhar todas as mensagens nos [canais](/graph/api/resources/channel?preserve-view=true) e outra para acompanhar todas as mensagens nos [chats](/graph/api/resources/chat?preserve-view=true).
 
-### <a name="subscribe-to-messages-across-channels"></a>Assine para receber mensagens em todos os canais
+### <a name="subscribe-to-messages-across-all-channels"></a>Assine para receber mensagens em todos os canais
 
 Para obter notificações de alteração para todas as mensagens e respostas nos canais de um locatário, inscreva-se em `/teams/getAllMessages`. Este recurso oferece suporte a [ incluindo dados de recursos ](webhooks-with-resource-data.md) na notificação.
+
+[!INCLUDE [teams-model-A-and-B-disclaimer](../includes/teams-model-A-and-B-disclaimer.md)]
 
 #### <a name="permissions"></a>Permissões
 
@@ -50,9 +52,11 @@ Content-Type: application/json
 }
 ```
 
-### <a name="subscribe-to-messages-across-chats"></a>Assinar para receber mensagens em chats
+### <a name="subscribe-to-messages-across-all-chats"></a>Assine para receber mensagens em chats
 
 Para obter notificações de alteração para todas as mensagens em chats em um locatário, assine em `/chats/getAllMessages`. Este recurso oferece suporte a [ incluindo dados de recursos ](webhooks-with-resource-data.md) na notificação.
+
+[!INCLUDE [teams-model-A-and-B-disclaimer](../includes/teams-model-A-and-B-disclaimer.md)]
 
 #### <a name="permissions"></a>Permissões
 
@@ -174,7 +178,7 @@ Para acompanhar mensagens em um chat, você pode criar uma assinatura de notific
 
 As assinaturas no nível do chat também oferecem suporte à pesquisa baseada em palavras-chave por meio do parâmetro de consulta `$search`.
 
-> **Observação:** assinar para receber mensagens em um chat que esteja atualmente em pré-visualização.
+> **Observação:** a assinatura para receber mensagens em um chat atualmente está em pré-visualização.
 
 ### <a name="permissions"></a>Permissões
 
