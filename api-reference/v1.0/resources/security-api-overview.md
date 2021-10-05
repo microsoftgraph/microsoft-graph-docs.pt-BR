@@ -5,12 +5,12 @@ ms.localizationpriority: high
 author: preetikr
 ms.prod: security
 doc_type: conceptualPageType
-ms.openlocfilehash: 4876c633409b71c7ae4f60cbe10dcab095c89e25
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: e23ffa6a892d069db9bf250acef7548ac2d74e38
+ms.sourcegitcommit: 94dc71a6d4fbdc46f2681a1add13416bc9b4a6e9
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59139629"
+ms.lasthandoff: 10/05/2021
+ms.locfileid: "60115372"
 ---
 # <a name="use-the-microsoft-graph-security-api"></a>Usar a API de Segurança do Microsoft Graph
 
@@ -118,6 +118,6 @@ Explore outras opções para se conectar com a API de segurança da Microsoft Gr
 
 Participe da comunidade:
 
-- [Junte-se à comunidade técnica](https://aka.ms/graphsecuritycommunity)
+- [Junte-se à comunidade técnica](https://techcommunity.microsoft.com/t5/microsoft-graph-security-api/bd-p/SecurityGraphAPI)
 - [Discussão no StackOverflow](https://stackoverflow.com/questions/tagged/microsoft-graph-security)
 

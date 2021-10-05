@@ -2,15 +2,15 @@
 title: Tipo de recurso softwareUpdateReference
 description: Representa conteúdo de atualização específico.
 author: Alice-at-Microsoft
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: w10
 doc_type: resourcePageType
-ms.openlocfilehash: 66f7f895bd3d7556ad5e3d35066236663b474f41
-ms.sourcegitcommit: 1b09298649d5606b471b4cbe1055419bbe2fc7e5
+ms.openlocfilehash: 13e71a5b08100a74884ae0f4f69b69b86bec9b2c
+ms.sourcegitcommit: 94dc71a6d4fbdc46f2681a1add13416bc9b4a6e9
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "52067824"
+ms.lasthandoff: 10/05/2021
+ms.locfileid: "60115309"
 ---
 # <a name="softwareupdatereference-resource-type"></a>Tipo de recurso softwareUpdateReference
 
@@ -22,7 +22,7 @@ Representa conteúdo de atualização específico.
 
 Em uma implantação, o mesmo **softwareUpdateReference** pode resultar em dispositivos que recebem revisões de atualização diferentes, mas o conteúdo é considerado contextualmente equivalente para todos os dispositivos na implantação.
 
-Todas as referências de atualização de software existem como um dos seguintes tipos derivados: [featureUpdateReference](../resources/windowsupdates-featureupdatereference.md).
+Todas as referências de atualização de software existem como um dos seguintes tipos derivados: [featureUpdateReference](../resources/windowsupdates-featureupdatereference.md) e [expeditedQualityUpdateReference](../resources/windowsupdates-expeditedqualityupdatereference.md).
 
 Herda de [deployableContent](../resources/windowsupdates-deployablecontent.md). Tipo base [para windowsUpdateReference](../resources/windowsupdates-windowsupdatereference.md).
 

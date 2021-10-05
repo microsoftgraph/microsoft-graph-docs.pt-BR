@@ -1,16 +1,16 @@
 ---
 title: Trabalhando com o Excel no Microsoft Graph
 description: Você pode usar o Microsoft Graph para permitir que aplicativos Web e móveis leiam e modifiquem pastas de trabalho do Excel armazenadas no OneDrive, no SharePoint ou em outras plataformas de armazenamento com suporte.
-localization_priority: Normal
+ms.localizationpriority: medium
 author: grangery
 ms.prod: excel
 doc_type: conceptualPageType
-ms.openlocfilehash: 74ead11e84eaa1f8e1a716dd714e5c044eaed41f
-ms.sourcegitcommit: ceb192c3a41feb74cd720ddf2f0119c48bf1189b
+ms.openlocfilehash: 4003c2df1f821d461720dcaf568174beb1466aab
+ms.sourcegitcommit: 94dc71a6d4fbdc46f2681a1add13416bc9b4a6e9
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "50578063"
+ms.lasthandoff: 10/05/2021
+ms.locfileid: "60115365"
 ---
 # <a name="working-with-excel-in-microsoft-graph"></a>Trabalhando com o Excel no Microsoft Graph
 
@@ -25,11 +25,11 @@ Você pode acessar um conjunto de objetos do Excel (como Table, Range ou Chart) 
 retorna uma coleção de todos os objetos da planilha que fazem parte da pasta de trabalho.    
 
 
-**Observação:** A API REST do Excel dá suporte apenas a pasta de trabalho formatada de arquivo Do Office Open XML. Não há suporte para pastas de trabalho de extensão `.xls`. 
+**Observação:** A EXCEL REST oferece suporte apenas Office de trabalho formatadas para arquivo Open XML. Não há suporte para pastas de trabalho de extensão `.xls`. 
 
 ## <a name="authorization-and-scopes"></a>Autorização e escopos
 
-Você pode usar o [ponto de extremidade do Azure AD v.20](../index.md) para autenticar APIs do Excel. Todas as APIs exigem o cabeçalho HTTP `Authorization: Bearer {access-token}`.   
+Você pode usar o [ponto de extremidade do Azure AD v.20](/graph/auth-register-app-v2) para autenticar APIs do Excel. Todas as APIs exigem o cabeçalho HTTP `Authorization: Bearer {access-token}`.   
   
 Um dos seguintes [escopos de permissão](/graph/permissions-reference) é obrigatório para usar o recurso do Excel:
 
@@ -1259,7 +1259,7 @@ A solicitação a seguir atualiza o intervalo selecionado com "Texto de amostra"
 
 <!-- { "blockType": "ignored" } -->
 ```http
-PATCH /me/drive/root/workbook/worksheets('Sheet1')/range(address="A1:B00")
+PATCH /me/drive/root/workbook/worksheets('Sheet1')/range(address="A1:B100")
 
 {
   "values" : "Sample text"

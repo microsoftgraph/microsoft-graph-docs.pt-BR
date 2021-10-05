@@ -1,31 +1,31 @@
 ---
-title: tipo de recurso bookingWorkTimeSlot
-description: " > **Importante:** as APIs na versão /beta no Microsoft Graph estão em visualização e sujeitas a alterações. Não há suporte para o uso dessas APIs em aplicativos de produção."
-localization_priority: Normal
+title: Tipo de recurso bookingWorkTimeSlot
+description: Define os horários de início e término do trabalho.
+ms.localizationpriority: medium
 author: arvindmicrosoft
 ms.prod: bookings
 doc_type: resourcePageType
-ms.openlocfilehash: dadeebfe65a8d502b8a401f551638c09f637625f
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 7b20514b52cbea033d3a4bccbca6def8f09ce46b
+ms.sourcegitcommit: 94dc71a6d4fbdc46f2681a1add13416bc9b4a6e9
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48071653"
+ms.lasthandoff: 10/05/2021
+ms.locfileid: "60115284"
 ---
-# <a name="bookingworktimeslot-resource-type"></a>tipo de recurso bookingWorkTimeSlot
+# <a name="bookingworktimeslot-resource-type"></a>Tipo de recurso bookingWorkTimeSlot
 
 Namespace: microsoft.graph
 
  [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
  
-As horas de início e de término do trabalho.
+Define os horários de início e término do trabalho.
 
 
 ## <a name="properties"></a>Propriedades
 | Propriedade     | Tipo   |Descrição|
 |:---------------|:--------|:----------|
-|end|TimeOfDay|A hora do dia em que o trabalho é iniciado. Por exemplo, 08:00:00.0000000.|
-|iniciar|TimeOfDay|A hora do dia em que o trabalho é interrompido. Por exemplo, 17:00:00.0000000.|
+|end|TimeOfDay|A hora do dia em que o trabalho é interrompido. Por exemplo, 17:00:00.0000000.|
+|iniciar|TimeOfDay|A hora do dia em que o trabalho é iniciado. Por exemplo, 08:00:00.0000000.|
 
 ## <a name="json-representation"></a>Representação JSON
 

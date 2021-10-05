@@ -1,25 +1,37 @@
 ---
 author: JeremyKelley
-description: O recurso DriveRecipient representa uma pessoa, um grupo ou outro destinatário com quem compartilhar usando a ação invite.
+description: O recurso driveRecipient representa uma pessoa, grupo ou outro destinatário para compartilhar usando a ação de convite.
 ms.date: 09/10/2017
 title: DriveRecipient
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: sharepoint
 doc_type: resourcePageType
-ms.openlocfilehash: f703aa1bc9d12ec8b67aab0d80d641964b7b6096
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 536e68f619f3f37e71d036eaebffad8a11aaf0a2
+ms.sourcegitcommit: 94dc71a6d4fbdc46f2681a1add13416bc9b4a6e9
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48058470"
+ms.lasthandoff: 10/05/2021
+ms.locfileid: "60115176"
 ---
-# <a name="driverecipient-resource"></a>Recurso DriveRecipient
+# <a name="driverecipient-resource"></a>recurso driveRecipient
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-O recurso **DriveRecipient** representa uma pessoa, um grupo ou outro destinatário com quem compartilhar usando a ação [invite](../api/driveitem-invite.md).
+Representa uma pessoa, grupo ou outro destinatário para compartilhar um item de unidade usando a [ação de](../api/driveitem-invite.md) convite.
+
+Ao usar [o convite](../api/driveitem-invite.md) para adicionar permissões, o **objeto driveRecipient** pode especificar o **email**, **alias** ou **objectId** do destinatário.
+Somente um desses valores é necessário; vários valores não são aceitos.
+
+## <a name="properties"></a>Propriedades
+O recurso de destinatários possui essas propriedades.
+
+| Nome da propriedade | Tipo   | Descrição                                                                                             |
+|:--------------|:-------|:--------------------------------------------------------------------------------------------------------|
+| email         | Cadeia de caracteres | O endereço de email do destinatário, se este tiver um endereço de email associado.                  |
+| alias         | Cadeia de caracteres | O alias do objeto do domínio, para casos em que um endereço de email está indisponível (por exemplo, grupos de segurança). |
+| objectId      | Cadeia de caracteres | O identificador exclusivo para o destinatário no diretório.                                               |
 
 ## <a name="json-representation"></a>Representação JSON
 
@@ -34,19 +46,6 @@ O recurso **DriveRecipient** representa uma pessoa, um grupo ou outro destinatá
   "objectId": "string",
 }
 ```
-
-## <a name="properties"></a>Propriedades
-O recurso de destinatários possui essas propriedades.
-
-| Nome da propriedade | Tipo   | Descrição                                                                                             |
-|:--------------|:-------|:--------------------------------------------------------------------------------------------------------|
-| email         | Cadeia de caracteres | O endereço de email do destinatário, se este tiver um endereço de email associado.                  |
-| alias         | Cadeia de caracteres | O alias do objeto do domínio, para casos em que um endereço de email está indisponível (por exemplo, grupos de segurança). |
-| objectId      | Cadeia de caracteres | O identificador exclusivo para o destinatário no diretório.                                               |
-
-## <a name="remarks"></a>Comentários
-
-Ao usar [invite](../api/driveitem-invite.md) para adicionar permissões, DriveRecipient pode especificar **email**, **alias** ou **objectId**. É necessário somente um desses valores.
 
 <!--
 {

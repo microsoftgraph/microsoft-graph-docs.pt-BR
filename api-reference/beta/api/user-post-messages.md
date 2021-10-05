@@ -1,16 +1,16 @@
 ---
 title: Criar mensagem
 description: Criar um rascunho de uma nova mensagem no formato JSON ou MIME.
-localization_priority: Normal
+ms.localizationpriority: medium
 author: abheek-das
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 4305a14ba2726102427c4f0b4c733656be2fd03b
-ms.sourcegitcommit: 503c72036c376a30e08c29df8e7730a7afcab66e
+ms.openlocfilehash: 45c5371d7d45cc895835408cc0fc85e920eb1595
+ms.sourcegitcommit: 94dc71a6d4fbdc46f2681a1add13416bc9b4a6e9
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/10/2021
-ms.locfileid: "52868907"
+ms.lasthandoff: 10/05/2021
+ms.locfileid: "60115323"
 ---
 # <a name="create-message"></a>Criar mensagem
 
@@ -31,7 +31,7 @@ Ao utilizar o formato MIME:
 
 Por padrão, esta operação salva o rascunho na pasta Rascunhos.
 
-[Enviar](/graph/api-reference/beta/api/message-send.md) o rascunho da mensagem em uma operação subsequente.
+[Enviar](../api/message-send.md) o rascunho da mensagem em uma operação subsequente.
 
 Como alternativa, [envie uma nova](../api/user-sendmail.md) mensagem em uma única ação ou [](../api/message-createreplyall.md) crie um [rascunho](../api/message-createforward.md)para encaminhar [,](../api/message-createreply.md) para responder ou para responder a uma mensagem existente.
 

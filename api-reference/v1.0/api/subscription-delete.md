@@ -1,16 +1,16 @@
 ---
 title: Excluir assinatura
 description: Exclua uma assinatura.
-localization_priority: Normal
+ms.localizationpriority: medium
 author: Jumaodhiss
 doc_type: apiPageType
 ms.prod: change-notifications
-ms.openlocfilehash: 53d835062f004c3f3e98c040eb207f4d22574a49
-ms.sourcegitcommit: 94c4acf8bd03c10a44b12952b6cb4827df55b978
+ms.openlocfilehash: 8c5256ce7ffa862736b4d63b1f1c7c45f364bf86
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/06/2021
-ms.locfileid: "52787109"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "60115253"
 ---
 # <a name="delete-subscription"></a>Excluir assinatura
 

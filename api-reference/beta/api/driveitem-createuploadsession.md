@@ -1,6 +1,6 @@
 ---
 autor: Descrição de JeremyKelley: "Criar uma sessão de carregamento para permitir que seu aplicativo carregue arquivos até o tamanho máximo do arquivo."
-title: driveItem: createUploadSession localization_priority: Normal ms.prod: "sites e listas" doc_type: apiPageType
+título: driveItem: createUploadSession ms.localizationpriority: ms.prod médio: "sites e listas" doc_type: apiPageType
 ---
 # <a name="driveitem-createuploadsession"></a>driveItem: createUploadSession
 
@@ -48,7 +48,6 @@ POST /users/{userId}/drive/items/{itemId}/createUploadSession
 
 ### <a name="request-body"></a>Corpo da solicitação
 
-Nenhum corpo de solicitação é obrigatório.
 No entanto, você pode especificar propriedades no corpo da solicitação, fornecendo dados adicionais sobre o arquivo sendo carregado e personalizando a semântica da operação de carregamento.
 
 Por exemplo, a propriedade `item` permite definir os seguintes parâmetros:
@@ -87,11 +86,13 @@ O exemplo a seguir controla o comportamento se o nome do arquivo já estiver sen
 | Parâmetro            | Tipo                          | Descrição
 |:---------------------|:------------------------------|:---------------------------------
 | item                 | [driveItemUploadableProperties](../resources/driveItemUploadableProperties.md) | Dados sobre o arquivo sendo carregado
-| deferCommit          | Booliano                       | Se definido como verdadeiro, a criação final do arquivo no destino exigirá uma solicitação explícita. Somente no OneDrive for Business.
+| deferCommit          | Booliano                       | Se definido como verdadeiro, a criação final do arquivo no destino exigirá uma solicitação explícita. Apenas no OneDrive for Business.
 
 ### <a name="request"></a>Solicitação
 
 A resposta a essa solicitação fornecerá os detalhes da [uploadSession](../resources/uploadsession.md) recém-criada, que inclui a URL usada para carregar as partes do arquivo. 
+
+>**Observação:** O {item-path} deve conter o nome do item especificado no corpo da solicitação.
 
 <!-- { "blockType": "request", "name": "upload-fragment-create-session", "scopes": "files.readwrite", "target": "action" } -->
 
@@ -131,13 +132,12 @@ Content-Type: application/json
 
 ## <a name="upload-bytes-to-the-upload-session"></a>Carregar bytes na sessão de upload
 
-Para carregar o arquivo, ou uma parte do arquivo, o aplicativo faz uma solicitação PUT ao valor de **uploadUrl** recebido na de **createUploadSession**.
-Você pode carregar o arquivo inteiro ou dividi-lo em vários intervalos de byte, desde que o máximo de bytes em qualquer solicitação específica seja menor que 60 MiB.
+Para carregar o arquivo ou uma parte dele, seu aplicativo faz uma solicitação PUT para o valor **uploadUrl** recebido na resposta **createUploadSession**. Você pode carregar todo o arquivo ou dividi-lo em vários intervalos de bytes, desde que o máximo de bytes em qualquer solicitação seja inferior a 60 MiB.
 
 Os fragmentos do arquivo devem ser carregados sequencialmente em ordem.
 O upload de fragmentos fora de ordem resultará em um erro.
 
-**Observação:** se seu aplicativo dividir um arquivo em vários intervalos de byte, o tamanho de cada intervalo de bytes **DEVE** ser um múltiplo de 320 KiB (327.680 bytes). Usar um tamanho de fragmento que não divide uniformemente por 320 KiB resultará em erros ao confirmar alguns arquivos.
+**Observação:** se seu aplicativo dividir um arquivo em vários intervalos de bytes, o tamanho de cada intervalo de bytes **DEVE** ser um múltiplo de 320 KiB (327.680 bytes). O uso de um tamanho de fragmento que não é dividido uniformemente por 320 KiB resultará em erros ao confirmar alguns arquivos.
 
 ### <a name="example"></a>Exemplo
 
@@ -157,8 +157,7 @@ Content-Range: bytes 0-25/128
 <bytes 0-25 of the file>
 ```
 
-**Importante:** Seu aplicativo deve garantir que o tamanho total do arquivo especificado no cabeçalho **Content-Range** seja o mesmo para todas as solicitações.
-Se um intervalo de bytes declarar um tamanho de arquivo diferente, a solicitação falhará.
+**Importante:** seu aplicativo deve garantir que o tamanho total do arquivo especificado no cabeçalho **Content-Range** seja o mesmo para todas as solicitações. Se um intervalo de bytes declarar um tamanho de arquivo diferente, a solicitação falhará.
 
 ### <a name="response"></a>Resposta
 
@@ -176,11 +175,9 @@ Content-Type: application/json
 }
 ```
 
-O aplicativo pode usar o valor de **nextExpectedRanges** para determinar onde iniciar o próximo intervalo de bytes.
-É possível ver vários intervalos especificados, indicando partes do arquivo que o servidor ainda não recebeu. Isso é útil quando você precisa retomar uma transferência que foi interrompida, e seu cliente não tem certeza sobre o estado no serviço.
+O aplicativo pode usar o valor **nextExpectedRanges** para determinar onde iniciar o próximo intervalo de bytes. É possível ver vários intervalos especificados, indicando partes do arquivo que o servidor ainda não recebeu. Isso é útil quando você precisará retomar uma transferência que foi interrompida e seu cliente não tem certeza sobre o estado do serviço.
 
-Você sempre deve determinar o tamanho dos intervalos de byte de acordo com as práticas recomendadas a seguir. Não presuma que **nextExpectedRanges** retornará intervalos de tamanho adequado para um intervalo de bytes a ser carregado.
-A propriedade **nextExpectedRanges** indica intervalos do arquivo que não foram recebidos, e não um padrão para como seu aplicativo deve carregar o arquivo.
+Você sempre deve determinar o tamanho dos intervalos de bytes de acordo com as práticas recomendadas abaixo. Não suponha que **nextExpectedRanges** retornará intervalos de tamanho adequado para um intervalo de bytes a ser carregado. A propriedade **nextExpectedRanges** indica os intervalos do arquivo que não foram recebidos e não um padrão de como seu aplicativo deve carregar o arquivo.
 
 <!-- { "blockType": "ignored", "@odata.type": "microsoft.graph.uploadSession", "truncated": true } -->
 
@@ -340,8 +337,7 @@ Agora que o seu aplicativo sabe de onde começar o upload, retome o upload segui
 
 ## <a name="handle-upload-errors"></a>Tratar erros de carregamento
 
-Quando o último intervalo de bytes de um arquivo for carregado, talvez ocorra um erro. Isso pode acontecer devido a um conflito de nomes ou a uma limitação de cota excedida.
-A sessão de carregamento será preservada até a expiração, o que permite que seu aplicativo recupere o carregamento confirmando explicitamente a sessão de carregamento.
+Quando o último intervalo de bytes de um arquivo é carregado, é possível que ocorra um erro. Isso pode ser devido a um conflito de nome ou limitação de cota excedida. A sessão de upload será preservada até o tempo de expiração, o que permite que seu aplicativo recupere o upload, confirmando explicitamente a sessão de upload.
 
 Para confirmar manualmente a sessão de carregamento, o aplicativo deve fazer uma solicitação PUT com um novo recurso **driveItem**, que será usado ao confirmar a sessão de carregamento.
 Essa nova solicitação deve corrigir a origem do erro que gerou o erro de carregamento original.
@@ -393,7 +389,7 @@ Content-Type: application/json
 * Para outros erros, você não deve usar uma estratégia de retirada exponencial, mas sim limitar o número de tentativas de repetição feitas.
 * Lide com erros `404 Not Found` ao fazer uploads retomáveis reiniciando o upload inteiro. Isso indica que a sessão de carregamento não existe mais.
 * Use transferências de arquivos retomáveis para arquivos com mais de 10 MiB (10.485.760 bytes).
-* Um tamanho de intervalo de bytes de 10 MiB para conexões estáveis de alta velocidade é ideal. Para conexões mais lentas ou menos confiáveis, você pode obter melhores resultados com um tamanho de fragmento menor. O tamanho do fragmento recomendado é entre 5 e 10 MiB.
+* É ideial um tamanho de intervalo de bytes de 10 MiB para conexões estável de alta velocidade. Para conexões mais lentas ou menos confiáveis, você pode obter melhores resultados com um tamanho de fragmento menor. O tamanho do fragmento recomendado é entre 5 e 10 MiB.
 * Use um tamanho de intervalo de bytes que seja múltiplo de 320 KiB (327.680 bytes). Uma falha ao usar um tamanho de fragmento que seja múltiplo de 320 KiB pode resultar na falha de transferências de arquivos grandes após o carregamento do último intervalo de bytes.
 
 ## <a name="error-responses"></a>Respostas de erros

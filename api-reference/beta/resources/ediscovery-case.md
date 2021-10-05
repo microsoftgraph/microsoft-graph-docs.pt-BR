@@ -5,12 +5,12 @@ author: mahage-msft
 ms.localizationpriority: medium
 ms.prod: ediscovery
 doc_type: resourcePageType
-ms.openlocfilehash: ea4907edc66cd2c8d7713e816d561a0181c84d92
-ms.sourcegitcommit: 08e9b0bac39c1b1d2c8a79539d24aaa93364baf2
+ms.openlocfilehash: 8c38006d4794463fd7960706e0afa1320302321f
+ms.sourcegitcommit: 94dc71a6d4fbdc46f2681a1add13416bc9b4a6e9
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/24/2021
-ms.locfileid: "59766303"
+ms.lasthandoff: 10/05/2021
+ms.locfileid: "60115281"
 ---
 # <a name="case-resource-type"></a>tipo de recurso case
 
@@ -27,7 +27,7 @@ No contexto da Descoberta eDiscovery, contém custodiantes, regiões, coleções
 
 | Método       | Tipo de retorno | Descrição |
 |:-------------|:------------|:------------|
-| [Caso de lista](../api/ediscovery-case-list.md) | [coleção microsoft.graph.ediscovery.case](ediscovery-case.md) | Recupere uma lista de [objetos case.](../resources/ediscovery-case.md)|
+| [Listar casos](../api/ediscovery-case-list.md) | [coleção microsoft.graph.ediscovery.case](ediscovery-case.md) | Recupere uma lista de [objetos case.](../resources/ediscovery-case.md)|
 | [Criar caso](../api/ediscovery-case-post.md) | [microsoft.graph.ediscovery.case](ediscovery-case.md) | Crie um novo **objeto case.** |
 | [Obter caso](../api/ediscovery-case-get.md) | [microsoft.graph.ediscovery.case](ediscovery-case.md) | Recupere as propriedades e as relações de um **objeto case.** |
 | [Caso de atualização](../api/ediscovery-case-update.md) | [microsoft.graph.ediscovery.case](ediscovery-case.md) | Atualize as propriedades de um **objeto case.** |
@@ -90,7 +90,7 @@ No contexto da Descoberta eDiscovery, contém custodiantes, regiões, coleções
 |noncustodialDataSources|[coleção microsoft.graph.ediscovery.noncustodialDataSource](../resources/ediscovery-noncustodialdatasource.md)| Retorna uma lista de objetos **case noncustodialDataSource** para este **caso**.  Anulável. |
 |operations|[coleção microsoft.graph.ediscovery.caseOperation](../resources/ediscovery-caseoperation.md)| Retorna uma lista de objetos **de operação de** caso para este **caso**. Anulável. |
 |reviewSets|[coleção microsoft.graph.ediscovery.reviewSet](../resources/ediscovery-reviewset.md)| Retorna uma lista de **objetos reviewSet** no caso. Somente leitura. Anulável. |
-|Configurações|[coleção microsoft.graph.ediscovery.settings](../resources/ediscovery-settings.md)| Retorna uma lista **de objetos de configurações** no caso. Somente leitura. Anulável. |
+|Settings|[coleção microsoft.graph.ediscovery.settings](../resources/ediscovery-settings.md)| Retorna uma lista **de objetos de configurações** no caso. Somente leitura. Anulável. |
 |sourceCollections|[coleção microsoft.graph.ediscovery.sourceCollection](../resources/ediscovery-sourcecollection.md)|Retorna uma lista de **objetos sourceCollection** associados a esse caso.|
 |categorias|[coleção microsoft.graph.ediscovery.tag](../resources/ediscovery-tag.md)|Retorna uma lista **de objetos de** marca associados a esse caso.|
 

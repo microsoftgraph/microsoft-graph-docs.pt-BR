@@ -5,12 +5,12 @@ ms.localizationpriority: high
 author: abheek-das
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: db843fadbf48c307169b5e49df2b81fb1e0bf0f0
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: b3002535f6530d46fc28158b1c64195527b093d8
+ms.sourcegitcommit: 94dc71a6d4fbdc46f2681a1add13416bc9b4a6e9
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59143962"
+ms.lasthandoff: 10/05/2021
+ms.locfileid: "60115379"
 ---
 # <a name="create-message"></a>Criar mensagem
 
@@ -28,7 +28,7 @@ Ao utilizar o formato MIME:
 
 Por padrão, esta operação salva o rascunho na pasta Rascunhos.
 
-[Enviar](/graph/api-reference/beta/api/message-send.md) o rascunho da mensagem em uma operação subsequente.
+[Enviar](../api/message-send.md) o rascunho da mensagem em uma operação subsequente.
 
 Como alternativa, [envie uma nova mensagem](../api/user-sendmail.md) em uma única operação ou crie um rascunho para [encaminhar](../api/message-createforward.md), [responder](../api/message-createreply.md) e [responder a todos](../api/message-createreplyall.md) a uma mensagem existente.
 
