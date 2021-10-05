@@ -5,12 +5,12 @@ ms.localizationpriority: high
 ms.prod: search
 author: snlraju-msft
 scenarios: getting-started
-ms.openlocfilehash: f501f90a8e7b82759db4f54f014de93fc0806047
-ms.sourcegitcommit: 08e9b0bac39c1b1d2c8a79539d24aaa93364baf2
+ms.openlocfilehash: 8cf6fd78cdb56523c92bc1d67e69bd0e87b999b4
+ms.sourcegitcommit: 94dc71a6d4fbdc46f2681a1add13416bc9b4a6e9
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/24/2021
-ms.locfileid: "59765162"
+ms.lasthandoff: 10/05/2021
+ms.locfileid: "60115232"
 ---
 # <a name="overview-of-the-microsoft-search-api-in-microsoft-graph"></a>Visão geral da API da Pesquisa da Microsoft no Microsoft Graph
 
@@ -25,7 +25,7 @@ A API da Pesquisa da Microsoft fornece um ponto de extremidade de pesquisa que v
 
 ### <a name="include-custom-external-data-in-search-experience"></a>Incluir dados externos personalizados na experiência de pesquisa
 
-Use[conectores do Microsoft Graph](/microsoftsearch/connectors-overview) para incluir dados de fora da nuvem da Microsoft em sua experiência de busca. Por exemplo, estabeleça uma conexão com o banco de dados de recursos humanos ou com o catálogo de produtos de uma organização. Em seguida, utilize a API de Pesquisa da Microsoft para [consultar](/graph/api/search-query) perfeitamente a fonte de dados externa. 
+Use os [conectores do Microsoft Graph](/microsoftsearch/connectors-overview) para incluir dados que estejam fora da nuvem da Microsoft em sua experiência de pesquisa. Por exemplo, conecte-se ao banco de dados de recursos humanos ou ao catálogo de produtos da organização. Em seguida, use a API de Pesquisa da Microsoft para [consultar](/graph/api/search-query) diretamente a fonte de dados externa. 
 
 Navegue na [galeria de conectores do Microsoft Graph](/microsoftsearch/connectors-gallery) para encontrar conectores prontos para uso. Alternativamente, você pode [construir seus próprios conectores](/graph/api/resources/indexing-api-overview?view=graph-rest-beta&preserve-view=true#common-use-cases) para indexar itens personalizados externos e consultar fontes de dados externas específicas.
 
