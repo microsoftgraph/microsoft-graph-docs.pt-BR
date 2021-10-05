@@ -5,12 +5,12 @@ ms.localizationpriority: high
 author: grangery
 ms.prod: excel
 doc_type: conceptualPageType
-ms.openlocfilehash: 877c2b34b24d77b145a539abff5ca72b51470163
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: cf035bc3d9cef6442a220bc14de6f9a0c81f589a
+ms.sourcegitcommit: 94dc71a6d4fbdc46f2681a1add13416bc9b4a6e9
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59123570"
+ms.lasthandoff: 10/05/2021
+ms.locfileid: "60115148"
 ---
 # <a name="working-with-excel-in-microsoft-graph"></a>Trabalhando com o Excel no Microsoft Graph
 
@@ -29,7 +29,7 @@ A API REST do Excel só oferece suporte para pastas de trabalho formatadas pelo 
 
 ## <a name="authorization-and-scopes"></a>Autorização e escopos
 
-Você pode usar o [ponto de extremidade do Azure AD v.2](/graph/auth-register-app-v2) para autenticar APIs do Excel. Todas as APIs exigem o cabeçalho HTTP `Authorization: Bearer {access-token}`.   
+Você pode usar o [ponto de extremidade do Microsoft Azure AD v.2](/graph/auth-register-app-v2) para autenticar as APIs do Excel. Todas as APIs exigem o cabeçalho HTTP `Authorization: Bearer {access-token}`.   
   
 Um dos seguintes [escopos de permissão](/graph/permissions-reference) é obrigatório para usar o recurso do Excel:
 
@@ -41,7 +41,7 @@ Um dos seguintes [escopos de permissão](/graph/permissions-reference) é obriga
 
 As APIs do Excel podem ser chamadas em um destes três modos: 
 
-1. Sessão persistente – Todas as alterações feitas na pasta de trabalho são persistentes (salvas). Esse é o modo de operação mais eficiente e com desempenho mais elevado. 
+1. Sessão persistente - Todas as alterações feitas na pasta de trabalho são persistentes (salvas). Este é o modo de operação mais eficiente e com o desempenho mais elevado. 
 2. Sessão não persistente – As alterações feitas pela API não são salvas na localização de origem. Em vez disso, o servidor back-end do Excel mantém uma cópia temporária do arquivo que reflete as alterações feitas durante essa sessão de API específica. Quando a sessão do Excel expirar, as alterações serão perdidas. Esse modo é útil para aplicativos que precisam fazer uma análise ou obter os resultados de um cálculo ou de uma imagem de gráfico, mas não afeta o estado do documento. 
 3. Sem sessão ‒ a chamada à API é feita sem informações sobre a sessão. Os servidores do Excel têm que localizar a cópia do servidor de pasta de trabalho sempre que executam a operação. Portanto, essa não é uma maneira eficiente de chamar APIs do Excel. Ele é adequado para fazer solicitações únicas. 
 
@@ -1262,7 +1262,7 @@ A solicitação a seguir atualiza o intervalo selecionado com "Texto de amostra"
 
 <!-- { "blockType": "ignored" } -->
 ```http
-PATCH /me/drive/root/workbook/worksheets/{id}/range(address="A1:B00")
+PATCH /me/drive/root/workbook/worksheets/{id}/range(address="A1:B100")
 
 {
   "values" : "Sample text"

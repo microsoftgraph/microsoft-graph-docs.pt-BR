@@ -5,12 +5,12 @@ ms.localizationpriority: high
 ms.prod: reports
 author: sarahwxy
 ms.custom: scenarios:getting-started
-ms.openlocfilehash: 4c2f8877cf8252e63bc06002db4bbb0596004447
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: ec4077dfb44b4135463412d56ecbb38ec0fd2be4
+ms.sourcegitcommit: 94dc71a6d4fbdc46f2681a1add13416bc9b4a6e9
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59113494"
+ms.lasthandoff: 10/05/2021
+ms.locfileid: "60115141"
 ---
 # <a name="microsoft-graph-reports-api-overview"></a>Visão geral da API de relatórios do Microsoft Graph
 
@@ -62,7 +62,7 @@ Você pode utilizar as APIs de relatórios para acessar os conjuntos de dados li
 ## <a name="api-reference"></a>Referência da API
 Está procurando a referência de API para esse serviço?
 
-- [API de relatórios de acesso e identidade do Microsoft Graph beta](/graph/api/resources/report-identity-access?view=graph-rest-beta)
+- [API de relatórios de identidade e acesso no Microsoft Graph beta](/graph/api/resources/report-identity-access?view=graph-rest-beta)
 - [API de relatórios de uso do Microsoft 365 no Microsoft Graph v1.0](/graph/api/resources/report?view=graph-rest-1.0)
 - [API de relatórios de uso do Microsoft 365 no Microsoft Graph beta](/graph/api/resources/report?view=graph-rest-beta)
 

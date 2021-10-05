@@ -1,16 +1,16 @@
 ---
 title: Criar assinatura
 description: Inscreve um aplicativo de ouvinte para receber notificações de alterações quando os dados no Microsoft Graph forem alterados.
-localization_priority: Priority
+ms.localizationpriority: high
 author: Jumaodhiss
 ms.prod: change-notifications
 doc_type: apiPageType
-ms.openlocfilehash: 239de6da37b9e795c5b0c2eec359f0b4b457f5f4
-ms.sourcegitcommit: f77c1385306fd40557aceb24fdfe4832cbb60a27
+ms.openlocfilehash: 6f34ac4f2adc6042642c095280f299d39b9bc71d
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/12/2021
-ms.locfileid: "52912051"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "60115162"
 ---
 # <a name="create-subscription"></a>Criar assinatura
 
@@ -131,8 +131,7 @@ Content-type: application/json
 ---
 
 
-No corpo da solicitação, forneça uma representação JSON do objeto [subscription](../resources/subscription.md).
-Os campos `clientState` e `latestSupportedTlsVersion` são opcionais.
+No corpo da solicitação, forneça uma representação JSON do objeto de [assinatura](../resources/subscription.md). Os campos `clientState` e `latestSupportedTlsVersion` são opcionais.
 
 ##### <a name="resources-examples"></a>Exemplos de recursos
 

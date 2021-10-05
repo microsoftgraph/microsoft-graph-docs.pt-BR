@@ -5,16 +5,33 @@ doc_type: enumPageType
 ms.localizationpriority: medium
 ms.prod: non-product-specific
 author: MSGraphDocsvTeam
-ms.openlocfilehash: 5fdcdc1b7ed0098eb60e6470f34d3fefce6378e9
-ms.sourcegitcommit: cbad97d6a8ccb89b1822b30a11cc9b6f2670deda
+ms.openlocfilehash: 7e815c1164afccd946de20e86d7fd7040f142868
+ms.sourcegitcommit: 2f394a9f33f2fab3634d0f18882985ee211067d1
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/30/2021
-ms.locfileid: "60016611"
+ms.lasthandoff: 10/05/2021
+ms.locfileid: "60127503"
 ---
 # <a name="enum-values"></a>Valores denum
 
 Namespace: microsoft.graph
+
+### <a name="multifactorauthconfiguration-values"></a>valores multiFactorAuthConfiguration
+
+| Membro             | Valor | Descrição |
+|:-------------------|:------| :------|
+| notRequired        | 0     | Nenhuma autenticação multifator é necessária para que um usuário conclua o registro do dispositivo.|
+| obrigatório           | 1     | A autenticação multifator é necessária para que um usuário conclua o registro do dispositivo.|
+| unknownFutureValue | 2     | Valor de sentinela de enumeração evolvável. Não usar.|
+
+### <a name="policyscope-values"></a>Valores policyScope
+
+| Membro             | Valor | Descrição |
+|:-------------------|:------| :------|
+| none               | 0     | A política não se aplica a nenhum usuário ou grupo na organização. |
+| all                | 1     | A política se aplica a todos os usuários e grupos da organização. Valor padrão. |
+| selected           | 2     | A política se aplica a usuários ou grupos específicos na organização. |
+| unknownFutureValue | 3     | Valor de sentinela de enumeração evolvável. Não usar. |
 
 ### <a name="appcredentialrestrictiontype-values"></a>valores appCredentialRestrictionType
 
@@ -150,11 +167,11 @@ Namespace: microsoft.graph
 
 |Member|
 |:---|
-|String|
+|Cadeia de caracteres|
 |Inteiro|
 |Referência|
 |Binário|
-|Booleano|
+|Booliano|
 |DateTime|
 
 ### <a name="mutability-values"></a>valores de mutabilidade
