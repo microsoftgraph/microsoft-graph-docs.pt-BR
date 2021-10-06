@@ -4,12 +4,12 @@ description: O Microsoft Graph expõe as permissões granulares que controlam o 
 author: jackson-woods
 ms.localizationpriority: high
 ms.custom: graphiamtop20, scenarios:getting-started
-ms.openlocfilehash: eb6644eae1f41f3eb5422a385720f22d88b0aa19
-ms.sourcegitcommit: 08e9b0bac39c1b1d2c8a79539d24aaa93364baf2
+ms.openlocfilehash: 913188d1bbdc8949f08f90e95a573ce811d82bd4
+ms.sourcegitcommit: 94dc71a6d4fbdc46f2681a1add13416bc9b4a6e9
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/24/2021
-ms.locfileid: "59763328"
+ms.lasthandoff: 10/05/2021
+ms.locfileid: "60115239"
 ---
 # <a name="microsoft-graph-permissions-reference"></a>Referência de permissões do Microsoft Graph
 
@@ -36,7 +36,7 @@ O elemento _constraint_ do nome determina a extensão potencial do acesso que o 
 
 ## <a name="microsoft-accounts-and-work-or-school-accounts"></a>Contas da Microsoft e contas corporativas e de estudante
 
-Nem todas as permissões são válidas tanto para contas da Microsoft como para contas corporativas e de estudante. Você pode escolher **Conta de suporte da Microsoft** para cada grupo de permissão para determinar se uma permissão específica é válida para contas da Microsoft, contas corporativas ou de estudante ou ambas.
+Nem todas as permissões são válidas para contas da Microsoft e contas corporativas ou estudante. Você pode verificar a coluna da **Conta com Suporte da Microsoft** para cada grupo de permissão para determinar se uma permissão específica é válida para contas Microsoft, contas corporativas ou de estudante, ou ambas.
 
 ## <a name="permissions-availability-status"></a>Status de disponibilidade de permissões
 
@@ -44,7 +44,7 @@ As permissões do Microsoft Graph no [portal do Azure](https://portal.azure.com/
 
 ## <a name="user-and-group-search-limitations-for-guest-users-in-organizations"></a>Limitações de pesquisa de usuário e grupo para usuários convidados em organizações
 
-Os recursos de pesquisa de usuário e grupo permitem que o aplicativo pesquise usuários ou grupos em um diretório da organização executando consultas no conjunto de recursos `/users` ou `/groups` (por exemplo, `https://graph.microsoft.com/v1.0/users`). Os administradores e os usuários têm esse recurso. No entanto, os usuários convidados não.
+Os recursos de pesquisa de usuário e grupo permitem que o aplicativo pesquise qualquer usuário ou grupo no diretório de uma organização, executando consultas no conjunto de recursos `/users` ou `/groups` (por exemplo, `https://graph.microsoft.com/v1.0/users`). Tanto administradores quanto usuários têm esse recurso; no entanto, os usuários convidados não.
 
 Se o usuário conectado for um usuário convidado, dependendo das permissões que recebeu um aplicativo, ele pode ler o perfil de um usuário específico ou grupo (por exemplo, `https://graph.microsoft.com/v1.0/users/241f22af-f634-44c0-9a15-c8cd2cea5531`). No entanto, o usuário não pode executar consultas no conjunto de recursos `/users` ou `/groups` que, potencialmente, retornam mais de um recurso.
 
@@ -262,7 +262,7 @@ Nenhum.
 
 ### <a name="remarks"></a>Comentários
 
-A permissão _Application.ReadWrite.OwnedBy_ admite as mesmas operações que _Application.ReadWrite.All_, exceto que a anterior só permite essas operações em aplicativos e entidades de serviço que pertencem ao aplicativo de chamada. O proprietário é indicado pela propriedade de navegação `owners` no recurso do [aplicativo](/graph/api/application-list-owners?view=graph-rest-beta&preserve-view=true) ou da [entidade de serviço](/graph/api/serviceprincipal-list-owners?view=graph-rest-beta&preserve-view=true) de destino.
+A permissão _Application.ReadWrite.OwnedBy_ permite as mesmas operações que _Application.ReadWrite.All_, exceto que a primeira permite essas operações apenas em aplicativos e entidades de serviço dos quais o aplicativo de chamada é proprietário. A propriedade é indicada pela `owners` propriedade de navegação no [aplicativo](/graph/api/application-list-owners?view=graph-rest-beta&preserve-view=true) de destino ou no recurso [principal de serviço](/graph/api/serviceprincipal-list-owners?view=graph-rest-beta&preserve-view=true).
 > OBSERVAÇÃO: o uso da permissão _Application.ReadWrite.OwnedBy_ para chamar `GET /applications` para listar aplicativos falhará com um erro 403.  Use `GET servicePrincipals/{id}/ownedObjects` para listar os aplicativos que pertencem ao aplicativo da chamada.
 
 ### <a name="example-usage"></a>Exemplo de uso
@@ -721,7 +721,7 @@ Para cenários mais complexos que envolvem várias permissões, confira [Cenári
 
 As permissões de diretório fornecem o nível mais alto de privilégio para acessar recursos de diretório, como [usuário](/graph/api/resources/user), [grupo](/graph/api/resources/group) e [dispositivo](/graph/api/resources/device) em uma organização.
 
-Elas também controlam exclusivamente o acesso a outros recursos de diretório como: [contatos organizacionais](/graph/api/resources/orgcontact?view=graph-rest-beta&preserve-view=true), [APIs de extensão de esquema](/graph/api/resources/schemaextension?view=graph-rest-beta&preserve-view=true), [APIs de PIM (Privileged Identity Management)](/graph/api/resources/privilegedidentitymanagement-root?view=graph-rest-beta&preserve-view=true) e muitos dos recursos e APIs listados no nó **Azure Active Directory** na documentação de referência da API beta e v1.0. Isso inclui unidades administrativas, funções de diretório, configurações de diretório, política e muito mais.
+Eles também controlam exclusivamente o acesso a outros recursos de diretório, como: [contatos organizacionais](/graph/api/resources/orgcontact?view=graph-rest-beta&preserve-view=true), [APIs de extensão de esquema](/graph/api/resources/schemaextension?view=graph-rest-beta&preserve-view=true), [APIs de gerenciamento de identidade privilegiada (PIM)](/graph/api/resources/privilegedidentitymanagement-root?view=graph-rest-beta&preserve-view=true), bem como muitos dos recursos e APIs listados no nó **Azure Active Directory** na documentação de referência da API v1.0 e beta. Isso inclui unidades administrativas, funções de diretório, configurações de diretório, política e muito mais.
 
 > [!NOTE]
 > Antes de 3 de dezembro de 2020, quando a permissão do aplicativo *Directory.Read.All* foi concedido, o [Leitores de diretório](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#directory-readers-permissions) a função de diretório também foi atribuída ao principal de serviço do aplicativo.  Quando *Directory.ReadWrite.All* foi concedido, o [Escritores de diretório](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#directory-writers-permissions)a função de diretório também foi atribuída. Essas funções de diretório não são removidas automaticamente quando as permissões de aplicativo associadas são revogadas. Para remover o acesso de um aplicativo para ler ou gravar no diretório, os clientes também deve remover as funções de diretório que foram concedidas ao aplicativo.
@@ -975,7 +975,7 @@ Para cenários mais complexos que envolvem várias permissões, confira [Cenári
 
 ### <a name="remarks"></a>Comentários
 
-_IdentityProvider.Read.All_ e _IdentityProvider.ReadWrite.All_ são válidos apenas para contas corporativas ou de estudantes. Para que um aplicativo leia ou grave provedores de identidade com permissões delegadas, o usuário conectado deve ter a função de Administrador Global. Para obter mais informações sobre funções de administrador, confira [Atribuindo funções de administrador no Azure Active Directory](/azure/active-directory/active-directory-assign-admin-roles).
+_IdentityProvider.Read.All_ e _IdentityProvider.ReadWrite.All_ são válidos apenas para contas corporativas ou de estudante. Para que um aplicativo leia ou grave provedores de identidade com permissões delegadas, o usuário conectado deve receber a função de Administrador Global. Para obter mais informações sobre funções de administrador, confira [Atribuição de funções de administrador no Azure Active Directory](/azure/active-directory/active-directory-assign-admin-roles).
 
 ### <a name="example-usage"></a>Exemplo de uso
 
@@ -1045,7 +1045,7 @@ Para cenários mais complexos que envolvem várias permissões, confira [Cenári
 
 ### <a name="remarks"></a>Comentários
 
-_IdentityRiskUser.Read.All_ e _IdentityRiskyUser.ReadWrite.ALL_ são válidos apenas para contas corporativas ou de estudante. No caso de um aplicativo com permissões delegadas para ler as informações de risco de identidade do usuário, o usuário conectado deve ser um membro de uma das seguintes funções de administrador: Administrador Global, Administrador de Segurança ou funções do Leitor de Segurança. Para obter mais informações sobre funções de administrador, confira [Atribuindo funções de administrador no Azure Active Directory](/azure/active-directory/active-directory-assign-admin-roles).
+_IdentityRiskyUser.Read.All_ e _IdentityRiskyUser.ReadWrite.ALL_ é válido apenas para contas de trabalho ou estudante. Para um aplicativo com permissões delegadas para ler informações de risco do usuário de identidade, o usuário conectado deve ser membro de uma das seguintes funções de administrador: Administrador Global, Administrador de Segurança ou Leitor de Segurança. Para obter mais informações sobre funções de administrador, confira [Atribuição de funções de administrador no Azure Active Directory](/azure/active-directory/active-directory-assign-admin-roles).
 
 ### <a name="example-usage"></a>Exemplo de uso
 
@@ -1342,12 +1342,10 @@ Para cenários mais complexos que envolvem várias permissões, confira [Cenári
 |:-----------------------------|:-----------------------------------------|:-----------------|:-----------------|
 | _Notifications.ReadWrite.CreatedByApp_ | Exibir e gerenciar notificações para esse aplicativo. | Permitir que o aplicativo forneça notificações em nome de usuários conectados. Também permite que o aplicativo leia, atualize e exclua itens de notificação do usuário para este aplicativo. |Não |
 ### <a name="remarks"></a>Comentários
-*Notifications.ReadWrite.CreatedByApp* é válida tanto para contas da Microsoft como para contas corporativas e de estudante.
-A restrição *CreatedByApp* associada a essa permissão indica que o serviço aplicará filtragem implícita aos resultados com base na identidade aplicativo que realizar a chamada, seja a ID de aplicativo da conta  Microsoft ou um conjunto de IDs de aplicativos configurados para uma identidade de aplicativo de plataformas cruzadas.
+*Notifications.ReadWrite.CreatedByApp* é válido para contas Microsoft e contas de trabalho ou estudante. A restrição *CreatedByApp* associada a esta permissão indica que o serviço aplicará a filtragem implícita aos resultados com base na identidade do aplicativo de chamada, seja o ID do aplicativo da conta Microsoft ou um conjunto de IDs do aplicativo configurado para uma plataforma cruzada identidade do aplicativo.
 ### <a name="example-usage"></a>Exemplo de uso
 #### <a name="delegated"></a>Delegated
-* _Notifications.ReadWrite.CreatedByApp_: 
-Publique uma notificação centrada no usuário, que pode ser entregue aos vários clientes do aplicativo em execução em pontos de extremidade diferentes. (POSTAGEM/me/notificações /).
+* _Notifications.ReadWrite.CreatedByApp_: publica uma notificação centrada no usuário, que pode então ser entregue a vários clientes de aplicativos do usuário em execução em terminais diferentes.(POST/me/notificações/).
 
 ---
 
@@ -1671,7 +1669,7 @@ Para um aplicativo com permissões delegadas para ler programas e controles de p
 
 ### <a name="remarks"></a>Comentários
 - As permissões de relatórios só são válidas para contas corporativas ou de estudante.
-- Para as permissões delegadas permitirem que aplicativos leiam relatórios de uso de serviço em nome de um usuário, o administrador de locatários deve atribuir ao usuário uma função de administrador limitada do Azure AD. Para saber mais, confira [Autorização para APIs lerem os relatórios de uso do Microsoft 365](reportroot-authorization.md).
+- Para que as permissões delegadas permitam que os aplicativos leiam relatórios de uso do serviço em nome de um usuário, o administrador do locatário deve ter atribuído ao usuário uma função de administrador limitada do Azure Active Directory. Para obter mais detalhes, confira [Autorização para APIs para ler relatórios de uso do Microsoft 365](reportroot-authorization.md).
 
 ### <a name="example-usage"></a>Exemplo de uso
 
@@ -1693,7 +1691,7 @@ Para cenários mais complexos que envolvem várias permissões, confira [Cenári
 |:----------------|:------------------|:-------------|:-----------------------|:--------------|
 | _RoleAssignmentSchedule.Read.Directory_ | Leia todas as atribuições de funções ativas para o diretório da sua empresa. | Permite que o aplicativo leia as atribuições ativas de controle de acesso baseado em função (RBAC) para o diretório da sua empresa, em nome do usuário conectado. Isso inclui a leitura de modelos de função de diretório e funções de diretório. | Sim | Não |
 | _RoleEligibilitySchedule.Read.Directory_ | Leia todas as atribuições de funções elegíveis para o diretório da sua empresa. | Permite que o aplicativo leia as atribuições qualificadas de controle de acesso baseado em função (RBAC) para o diretório da sua empresa, em nome do usuário conectado. Isso inclui a leitura de modelos de função de diretório e funções de diretório. | Sim | Não |
-| _RoleManagement.Read.All_ | Leia os dados de gerenciamento de função para todos os provedores RBAC. | Permite que o aplicativo leia as configurações de controle de acesso baseado na função (RBAC) de todos os [provedores RBAC](/graph/api/resources/rolemanagement?view=graph-rest-beta&preserve-view=true), em nome do usuário conectado. Isso inclui as definições de leitura e as atribuições de função. | Sim | Não |
+| _RoleManagement.Read.All_ | Leia os dados de gerenciamento de função para todos os provedores RBAC. | Permite que o aplicativo leia as configurações de controle de acesso baseado em função (RBAC) para todos os [provedores RBAC](/graph/api/resources/rolemanagement?view=graph-rest-beta&preserve-view=true) com suporte, em nome do usuário conectado. Isso inclui a leitura de definições de funções e atribuições de funções. | Sim | Não |
 | _RoleManagement.Read.Directory_ | Leia os dados de gerenciamento de função para o Azure Active Directory. | Permite que o aplicativo leia e gerencie as configurações de controle de acesso baseado em função (RBAC) da sua empresa, em nome do usuário conectado. Isso inclui a leitura de modelos de função de diretório, funções de diretório e associações. | Sim | Não |
 | _RoleManagementPolicy.Read.Directory_ | Leia todas as políticas para tarefas de funções privilegiadas para o diretório da sua empresa. | Permite que o aplicativo leia políticas para tarefas de controle de acesso baseado em função privilegiada (RBAC) para o diretório de sua empresa, em nome do usuário conectado. | Sim | Não |
 | _RoleAssignmentSchedule.ReadWrite.Directory_ | Leia, atualize e exclua todas as atribuições de funções ativas para o diretório da sua empresa. | Permite que o aplicativo leia e gerencie as atribuições ativas de controle de acesso baseado em função (RBAC) para o diretório da sua empresa, em nome do usuário conectado. Isso inclui o gerenciamento de associações de função de diretório ativo e leitura de modelos de função de diretório, funções de diretório e associações ativas. | Sim | Não |
@@ -1705,7 +1703,7 @@ Para cenários mais complexos que envolvem várias permissões, confira [Cenári
 
 |   Permissão    |  Exibir Cadeia de Caracteres   |  Descrição | Consentimento Obrigatório do Administrador |
 |:----------------|:------------------|:-------------|:-----------------------|
-| _RoleManagement.Read.All_ | Leia os dados de gerenciamento de função para todos os provedores RBAC. | Permite que o aplicativo leia as configurações de controle de acesso baseado na função (RBAC) de todos os [provedores RBAC](/graph/api/resources/rolemanagement?view=graph-rest-beta&preserve-view=true), sem um usuário conectado. Isso inclui as definições de leitura e as atribuições de função. | Sim |
+| _RoleManagement.Read.All_ | Leia os dados de gerenciamento de função para todos os provedores RBAC. | Permite que o aplicativo leia as configurações de controle de acesso baseado em função (RBAC) para todos os [provedores RBAC](/graph/api/resources/rolemanagement?view=graph-rest-beta&preserve-view=true) com suporte, sem um usuário conectado. isso inclui a leitura de definições de funções e atribuições de funções. | Sim |
 | _RoleManagement.Read.Directory_ | Leia os dados de gerenciamento de função para o Azure Active Directory. | Permite que o aplicativo leia e gerencie as configurações de RBAC (controle de acesso baseado em função) da sua empresa, em nome do usuário conectado. Isso inclui a leitura de modelos da função de diretório, as associações e as funções de diretório. | Sim |
 | _RoleManagement.ReadWrite.Directory_ | Ler e gravar dados de gerenciamento de função para o Azure Active Directory. | Permite que o aplicativo leia e gerencie as configurações de controle de acesso baseado em função (RBAC) para o diretório da sua empresa, sem um usuário conectado. Isso inclui instanciar funções de diretório e gerenciamento de associação de função de diretório e leitura de modelos de função de diretório, funções de diretório e associações. | Sim |
 
@@ -1907,7 +1905,7 @@ A permissão do aplicativo _Sites.Selected_ está disponível apenas na API do M
 Nenhum.
 
 ### <a name="remarks"></a>Comentários
-As permissões de _Tarefas_ são usadas para controlar o acesso das tarefas To Do e tarefas do Outlook(preterido). O acesso a tarefas do Microsoft Planner é controlado pelas [permissões _do_ Grupo](#group-permissions).
+As permissões de _Tarefas_ são usadas para controlar o acesso a tarefas pendentes e tarefas do Outlook (obsoleto). O acesso às tarefas do Microsoft Planner é controlado pelas permissões de [_Grupo_](#group-permissions).
 
 As permissões _Compartilhadas_ atualmente só são compatíveis com contas corporativas ou de estudante. Mesmo com permissões _Compartilhadas_, as leituras e gravações podem falhar se o usuário que possui o conteúdo compartilhado não tiver concedido as permissões de usuário de acesso para modificar o conteúdo dentro da pasta.
 
@@ -2137,7 +2135,7 @@ As permissões de taxonomia só são válidas para contas do trabalho ou da esco
 
 Todas as permissões acima são válidas apenas para contas corporativas ou de estudante.
 
-Para que um aplicativo leia ou grave todos os acordos ou aceitações de acordos com permissões delegadas, o usuário conectado deve ter a função Administrador Global, Administrador de Acesso Condicional ou Administrador de Segurança. Para obter mais informações sobre funções de administrador, confira [Atribuindo funções de administrador no Azure Active Directory](/azure/active-directory/active-directory-assign-admin-roles).
+Para que um aplicativo leia ou grave todos os contratos ou aceitações de contrato com permissões delegadas, o usuário conectado deve receber a função de Administrador Global, Administrador de Acesso Condicional ou Administrador de Segurança. Para obter mais informações sobre funções de administrador, confira [Atribuição de funções de administrador no Azure Active Directory](/azure/active-directory/active-directory-assign-admin-roles).
 
 ### <a name="example-usage"></a>Exemplo de uso
 
@@ -2379,11 +2377,11 @@ A restrição *CreatedByApp* associada a essa permissão indica que o serviço a
 ### <a name="example-usage"></a>Exemplo de uso
 
 #### <a name="delegated"></a>Delegado
-* _UserActivity.ReadWrite.CreatedByApp_: obter uma lista de atividades de usuários recentes únicos com base nos itens de histórico associados publicados no último dia. (GET /me/activities/recent).
-* _UserActivity.ReadWrite.CreatedByApp_: publicar ou atualizar uma atividade do usuário que poderá ser retomada pelo usuário do aplicativo. (PUT /me/activities/%2Farticle%3F12345).
-*   _UserActivity.ReadWrite.CreatedByApp_: publicar ou atualizar um item de histórico de uma atividade de usuário especificada para representar o período de engajamento do usuário. (PUT /me/activities/{id}/historyItems/{id}).
-*   _UserActivity.ReadWrite.CreatedByApp_: excluir uma atividade de usuário em resposta a uma solicitação iniciada pelo usuário ou para remover dados inválidos. (DELETE /me/activities/{id}).
-*   _UserActivity.ReadWrite.CreatedByApp_: excluir um item de histórico em resposta a uma solicitação iniciada pelo usuário ou para remover dados inválidos. (DELETE /me/activities/{id}/historyItems/{id}).
+* _UserActivity.ReadWrite.CreatedByApp_: obtenha uma lista de atividades de usuário exclusivas recentes com base em itens de histórico associados publicados no último dia. (GET /me/activities/recent).
+* _UserActivity.ReadWrite.CreatedByApp_: publicar ou atualizar uma atividade do usuário que pode ser retomada pelo usuário do aplicativo. (PUT /me/activities/%2Farticle%3F12345).
+*   _UserActivity.ReadWrite.CreatedByApp_: publicar ou atualizar um item de histórico para uma atividade de usuário especificada, a fim de representar o período de engajamento do usuário. (PUT /me/activities/{id}/historyItems/{id}).
+*   _UserActivity.ReadWrite.CreatedByApp_: exclua uma atividade do usuário em resposta a uma solicitação iniciada pelo usuário ou para remover dados inválidos. (DELETE /me/activities/{id}).
+*   _UserActivity.ReadWrite.CreatedByApp_: exclua um item do histórico em resposta à solicitação iniciada pelo usuário ou para remover dados inválidos. (DELETE /me/activities/{id}/historyItems/{id}).
 
 ---
 
@@ -2433,7 +2431,7 @@ Com essas permissões, todos os métodos de autenticação podem ser lidos e ger
 
 Todas as permissões acima são válidas apenas para contas corporativas ou de estudante.
 
-Para que um aplicativo leia ou grave todas as configurações de implantação de atualização do Windows com permissões delegadas, o usuário conectado deve ser atribuído à função de Administrador Global ou Administrador do Intune. Para obter mais informações sobre funções de administrador, confira [Atribuindo funções de administrador no Azure Active Directory](/azure/active-directory/active-directory-assign-admin-roles).
+Para que um aplicativo leia ou grave todas as configurações de implantação de atualização do Windows com permissões delegadas, o usuário conectado deve receber a função de Administrador Global, Administrador do Intune ou Administrador de Implantação do Windows Update. Para obter mais informações sobre funções de administrador, confira [Atribuindo funções de administrador no Azure Active Directory](/azure/active-directory/active-directory-assign-admin-roles).
 
 ### <a name="example-usage"></a>Exemplo de uso
 
