@@ -4,12 +4,12 @@ description: Você pode usar a API Pesquisa da Microsoft para importar dados ext
 author: nmoreau
 ms.localizationpriority: medium
 ms.prod: search
-ms.openlocfilehash: 53716d886f586207fce607234d3cae993fc38794
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 18269238f77c1c9405242326a5015cdc620c4092
+ms.sourcegitcommit: 2a9b82dae63d8a998711679a379ae1fa89df80e0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59127903"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60214822"
 ---
 # <a name="use-the-microsoft-search-api-to-search-custom-types-imported-using-microsoft-graph-connectors-preview"></a>Use a API Pesquisa da Microsoft para pesquisar tipos personalizados importados usando conectores Graph Microsoft (visualização) 
 
