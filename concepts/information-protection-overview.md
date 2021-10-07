@@ -4,12 +4,12 @@ description: Proteção de Informações da Microsoft rotulagem ajuda as organiz
 author: tommoser
 ms.localizationpriority: medium
 ms.prod: security
-ms.openlocfilehash: 20eb8b54d71e390f3a61f05117855d379a225321
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 9731bd91f8e8eb42bfc7355a4eba69cc512db0f1
+ms.sourcegitcommit: 0a312d63934cdf9789a5648c2b3f348f48542ff4
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59136065"
+ms.lasthandoff: 10/07/2021
+ms.locfileid: "60220378"
 ---
 # <a name="information-protection-overview"></a>Visão geral da Proteção de Informações
 
@@ -18,7 +18,7 @@ Proteção de Informações da Microsoft ajuda as organizações a classificar, 
 As organizações usam rótulos para ajudar:
 
 * Os usuários no entendimento da importância das informações que estão sendo manipuladas.
-* Administradores de conformidade na descoberta de onde residem informações confidenciais. 
+* Administradores de conformidade ao descobrir onde residem informações confidenciais. 
 * Administradores de segurança na implantação de políticas de prevenção contra perda de dados e acesso a dados com base em informações de rótulo mais ricas.
 
 ## <a name="why-integrate-microsoft-information-protection"></a>Por que integrar Proteção de Informações da Microsoft? 

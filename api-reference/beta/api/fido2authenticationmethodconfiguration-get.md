@@ -2,15 +2,15 @@
 title: Obter fido2AuthenticationMethodConfiguration
 description: Leia as propriedades e as relações de um objeto fido2AuthenticationMethodConfiguration.
 author: mmcla
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: 1c956d838a4edba209766d076b5b792f4b819c84
-ms.sourcegitcommit: d014f72cf2cd130bedb02651092c0be12967b679
+ms.openlocfilehash: 5ee791654da56a2a927ce548c94c57a762ebd7a4
+ms.sourcegitcommit: 0a312d63934cdf9789a5648c2b3f348f48542ff4
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "50471107"
+ms.lasthandoff: 10/07/2021
+ms.locfileid: "60220455"
 ---
 # <a name="get-fido2authenticationmethodconfiguration"></a>Obter fido2AuthenticationMethodConfiguration
 Namespace: microsoft.graph
@@ -30,7 +30,9 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 Para cenários delegados, o administrador precisa da seguinte [função:](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles)
 
-* Administrador global
+* Leitor Global
+* Administrador de Política de Autenticação
+* Administrador Global
 
 
 ## <a name="http-request"></a>Solicitação HTTP

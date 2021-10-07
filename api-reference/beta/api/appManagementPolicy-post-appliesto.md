@@ -1,16 +1,16 @@
 ---
 title: Atribuir appliesTo
 description: Atribua uma política ao objeto de entidade de serviço ou aplicativo.
-localization_priority: Normal
+ms.localizationpriority: medium
 author: madansr7
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: 0bddfe37cbcf1571baed56bddc9c2097e7c5c253
-ms.sourcegitcommit: 0116750a01323bc9bedd192d4a780edbe7ce0fdc
+ms.openlocfilehash: 3520ea93d20002b5ac68ff97452a2b39b1cec9df
+ms.sourcegitcommit: 2a9b82dae63d8a998711679a379ae1fa89df80e0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58262494"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60214409"
 ---
 # <a name="assign-appliesto"></a>Atribuir appliesTo
 
@@ -40,9 +40,10 @@ POST /applications/{id}/appManagementPolicies/$ref
 
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
 
-| Nome          | Descrição               |
-| :------------ | :------------------------ |
-| Autorização | {token} de portador. Obrigatório. |
+| Nome          | Descrição                 |
+|:--------------|:----------------------------|
+| Autorização | {token} de portador. Obrigatório.   |
+| Content-Type  | application/json. Obrigatório. |
 
 ## <a name="request-body"></a>Corpo da solicitação
 
@@ -67,6 +68,7 @@ A seguir, um exemplo da solicitação para atribuir um appManagementPolicy a um 
 
 ```msgraph-interactive
 POST https://graph.microsoft.com/beta/applications/{id}/appManagementPolicies/$ref
+Content-type: application/json
 
 {
  "@odata.id":"https://graph.microsoft.com/beta/policies/appManagementPolicies/{id}"

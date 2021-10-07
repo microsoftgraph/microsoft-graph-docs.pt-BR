@@ -2,25 +2,25 @@
 title: Obter passwordlessMicrosoftAuthenticatorAuthenticationMethodConfiguration
 description: Leia as propriedades e as relações de um objetoMicrosoftAuthenticatorAuthenticatorAuthenticationMethodConfiguration.
 author: mmcla
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: 2c6ce5a53c5be64f0cb7319a390b3ad8c0d3fead
-ms.sourcegitcommit: d014f72cf2cd130bedb02651092c0be12967b679
+ms.openlocfilehash: e70027e97fd0f26a67f12ded674a113ef595cdd1
+ms.sourcegitcommit: 0a312d63934cdf9789a5648c2b3f348f48542ff4
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "50472059"
+ms.lasthandoff: 10/07/2021
+ms.locfileid: "60220504"
 ---
 # <a name="get-passwordlessmicrosoftauthenticatorauthenticationmethodconfiguration-deprecated"></a>Obter passwordlessMicrosoftAuthenticatorAuthenticationMethodConfiguration (preterido)
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Recupere as propriedades e as relações do [objetoMicrosoftAuthenticatorAuthenticationAuthenticationMethodConfiguration,](../resources/passwordlessmicrosoftauthenticatorauthenticationmethodconfiguration.md) que representa [](../resources/authenticationmethodspolicies-overview.md) a política de autenticação de autenticação de telefone sem senha do Microsoft Authenticator Passwordless Phone Sign-in para o locatário do Azure AD.
+Recupere as propriedades e as relações do [objetoMicrosoftAuthenticatorAuthenticationAuthenticationMethodConfiguration,](../resources/passwordlessmicrosoftauthenticatorauthenticationmethodconfiguration.md) que representa Microsoft Authenticator [](../resources/authenticationmethodspolicies-overview.md) política de método de autenticação de Telefone sem senha para o locatário do Azure AD.
 
 > [!CAUTION]
-> A API de política de autenticação do método de autenticação de telefone sem senha do Microsoft Authenticator é preterida e parou de retornar resultados em 31 de dezembro de 2020. Use a nova política de método de autenticação do [Microsoft Authenticator.](../resources/microsoftAuthenticatorAuthenticationMethodConfiguration.md)
+> A MICROSOFT AUTHENTICATOR de autenticação sem senha Telefone a API do método de autenticação de login é preterida e parou de retornar resultados em 31 de dezembro de 2020. Use a nova política de [Microsoft Authenticator de autenticação](../resources/microsoftAuthenticatorAuthenticationMethodConfiguration.md).
 
 ## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
@@ -33,7 +33,9 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 Para cenários delegados, o administrador precisa da seguinte [função:](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles)
 
-* Administrador global
+* Leitor Global
+* Administrador de Política de Autenticação
+* Administrador Global
 
 
 ## <a name="http-request"></a>Solicitação HTTP

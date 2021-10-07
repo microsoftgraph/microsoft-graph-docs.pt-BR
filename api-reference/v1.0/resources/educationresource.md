@@ -5,18 +5,18 @@ ms.localizationpriority: medium
 author: mmast-msft
 ms.prod: education
 doc_type: resourcePageType
-ms.openlocfilehash: 0706df40990468180e987f758f3217842631f214
-ms.sourcegitcommit: 08e9b0bac39c1b1d2c8a79539d24aaa93364baf2
+ms.openlocfilehash: 17accd1da2d273878297ddba1c6e8d9caac8f46b
+ms.sourcegitcommit: 0a312d63934cdf9789a5648c2b3f348f48542ff4
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/24/2021
-ms.locfileid: "59765645"
+ms.lasthandoff: 10/07/2021
+ms.locfileid: "60220539"
 ---
 # <a name="educationresource-resource-type"></a>Tipo de recurso educationResource
 
 Namespace: microsoft.graph
 
-Uma classe base para todos os objetos de recurso no sistema. 
+Uma classe base para [educationExcelResource](../resources/educationexcelresource.md), [educationFileResource](../resources/educationfileresource.md), [educationLinkResource](../resources/educationlinkresource.md), [educationPowerPointResource](../resources/educationpowerpointresource.md), [educationWordResource](../resources/educationwordresource.md), [educationMediaResource](../resources/educationmediaresource.md) e [educationExternalResource](../resources/educationexternalresource.md).
 
 Um educationResource está associado [a](educationassignment.md) uma atribuição e/ou [envio](educationsubmission.md), que representa o objeto de aprendizagem que está sendo entregue ou entregue. Não é possível instaurá-lo diretamente; você deve fazer uma subclasse que representará o tipo de recurso que está sendo usado.
 

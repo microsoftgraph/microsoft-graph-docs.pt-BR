@@ -1,18 +1,18 @@
 ---
-title: tipo de recurso educationSubmissionResource
-description: 'Um wrapper em torno de um recurso para uso em um envio. O wrapper adiciona um ponteiro ao recurso de atribuição se ele foi copiado da atribuição.  '
+title: Tipo de recurso educationSubmissionResource
+description: Um wrapper em torno de um recurso para uso em um envio.
 author: dipakboyed
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: education
 doc_type: resourcePageType
-ms.openlocfilehash: 329bab18d90412ec8cc06b12106e0be4f1b46935
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: ed2d33a9da889925cad08f91b99cc2b2c0c47113
+ms.sourcegitcommit: 0a312d63934cdf9789a5648c2b3f348f48542ff4
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47979559"
+ms.lasthandoff: 10/07/2021
+ms.locfileid: "60220476"
 ---
-# <a name="educationsubmissionresource-resource-type"></a>tipo de recurso educationSubmissionResource
+# <a name="educationsubmissionresource-resource-type"></a>Tipo de recurso educationSubmissionResource
 
 Namespace: microsoft.graph
 
@@ -21,17 +21,18 @@ Namespace: microsoft.graph
 Um wrapper em torno de um recurso para uso em um envio. O wrapper adiciona um ponteiro ao recurso de atribuição se ele foi copiado da atribuição.  
 
 
-## <a name="methods"></a>Methods
+## <a name="methods"></a>Métodos
 
 | Método           | Tipo de retorno    |Descrição|
 |:---------------|:--------|:----------|
-|[Obter educationSubmissionResource](../api/educationsubmissionresource-get.md) | [educationSubmissionResource](educationsubmissionresource.md) |Ler propriedades e relações de um objeto **educationSubmissionResource** .|
-|[Delete](../api/educationsubmissionresource-delete.md) | Nenhum |Excluir um objeto **educationSubmissionResource** . |
+|[Listar recursos](../api/educationsubmission-list-resources.md) | [objetos educationSubmissionResource](educationsubmissionresource.md) |Retorna uma lista de **objetos educationSubmissionResource.**|
+|[Obter educationSubmissionResource](../api/educationsubmissionresource-get.md) | [educationSubmissionResource](educationsubmissionresource.md) |Leia propriedades e relações de um **objeto educationSubmissionResource.**|
+|[Excluir](../api/educationsubmissionresource-delete.md) | Nenhum |**Exclua um objeto educationSubmissionResource.** |
 
 ## <a name="properties"></a>Propriedades
 | Propriedade     | Tipo   |Descrição|
 |:---------------|:--------|:----------|
-|assignmentResourceUrl|String|Ponteiro para a atribuição da qual este recurso foi copiado. Se isso for nulo, o aluno carregou o recurso.|
+|assignmentResourceUrl|Cadeia de caracteres|Ponteiro para a atribuição da qual esse recurso foi copiado. Se for nulo, o aluno carregará o recurso.|
 |id|String| Somente leitura.|
 |recurso|[educationResource](educationresource.md)|Objeto Resource.|
 

@@ -2,15 +2,15 @@
 title: Atualizar smsAuthenticationMethodConfiguration
 description: Atualize as propriedades de um objeto smsAuthenticationMethodConfiguration.
 author: mmcla
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: 08988f75df38facbce7f17a376f335babb3258b2
-ms.sourcegitcommit: 9d98d9e9cc1e193850ab9b82aaaf906d70e1378b
+ms.openlocfilehash: f1c0ac265239cff9d28358cf6a5291835d6f1b87
+ms.sourcegitcommit: 0a312d63934cdf9789a5648c2b3f348f48542ff4
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/12/2021
-ms.locfileid: "50760999"
+ms.lasthandoff: 10/07/2021
+ms.locfileid: "60220427"
 ---
 # <a name="update-smsauthenticationmethodconfiguration"></a>Atualizar smsAuthenticationMethodConfiguration
 Namespace: microsoft.graph
@@ -25,10 +25,13 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |Tipo de permissão|Permissões (da com menos para a com mais privilégios)|
 |:---|:---|
 |Delegada (conta corporativa ou de estudante)|Policy.ReadWrite.AuthenticationMethod|
-|Delegado (conta pessoal da Microsoft)|Sem suporte.|
+|Delegada (conta pessoal da Microsoft)|Sem suporte.|
 |Aplicativo|Policy.ReadWrite.AuthenticationMethod|
 
-Para cenários delegados, o administrador precisa da função de administrador global. Para obter mais informações, consulte [role](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles).
+Para cenários delegados, o administrador precisa da seguinte [função:](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles)
+
+* Administrador de Política de Autenticação
+* Administrador Global
 
 ## <a name="http-request"></a>Solicitação HTTP
 
@@ -54,7 +57,7 @@ A tabela a seguir mostra as propriedades que são necessárias ao atualizar o [o
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
 |id|Cadeia de caracteres|O identificador de política do método de autenticação.|
-|state|authenticationMethodState|Os valores possíveis são: `enabled` e `disabled`.|
+|estado|authenticationMethodState|Os valores possíveis são: `enabled` e `disabled`.|
 
 >**Observação:** A `@odata.type` propriedade com um valor de deve ser incluída no `#microsoft.graph.smsAuthenticationMethodConfiguration` corpo.
 

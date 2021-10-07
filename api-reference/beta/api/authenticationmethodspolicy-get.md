@@ -2,15 +2,15 @@
 title: Obter authenticationMethodsPolicy
 description: Leia as propriedades e as relações de um objeto authenticationMethodsPolicy.
 author: mmcla
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: 8c4e737187726f45bb546ea16d09d3ce476401fa
-ms.sourcegitcommit: 503c72036c376a30e08c29df8e7730a7afcab66e
+ms.openlocfilehash: e47e48b1e954d13671c5f37fd546d10447f0d7e7
+ms.sourcegitcommit: 0a312d63934cdf9789a5648c2b3f348f48542ff4
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/10/2021
-ms.locfileid: "52869474"
+ms.lasthandoff: 10/07/2021
+ms.locfileid: "60219825"
 ---
 # <a name="get-authenticationmethodspolicy"></a>Obter authenticationMethodsPolicy
 Namespace: microsoft.graph
@@ -19,14 +19,20 @@ Namespace: microsoft.graph
 
 Leia as propriedades e as relações de um [objeto authenticationMethodsPolicy.](../resources/authenticationmethodspolicy.md)
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão|Permissões (da com menos para a com mais privilégios)|
 |:---|:---|
 |Delegada (conta corporativa ou de estudante)|Policy.ReadWrite.AuthenticationMethod|
-|Delegado (conta pessoal da Microsoft)|Sem suporte.|
+|Delegada (conta pessoal da Microsoft)|Sem suporte.|
 |Aplicativo|Policy.ReadWrite.AuthenticationMethod|
+
+Para cenários delegados, o administrador precisa da seguinte [função:](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles)
+
+* Leitor Global
+* Administrador de Política de Autenticação
+* Administrador Global
 
 ## <a name="http-request"></a>Solicitação HTTP
 

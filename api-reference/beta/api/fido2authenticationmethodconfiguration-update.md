@@ -2,15 +2,15 @@
 title: Atualizar fido2AuthenticationMethodConfiguration
 description: Atualize as propriedades de um objeto fido2AuthenticationMethodConfiguration.
 author: mmcla
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: c5c66ebea0bb4f544fae01525dc113e8bf11ed23
-ms.sourcegitcommit: d014f72cf2cd130bedb02651092c0be12967b679
+ms.openlocfilehash: 084988365dcb079f223f2815133b51954389ebb9
+ms.sourcegitcommit: 0a312d63934cdf9789a5648c2b3f348f48542ff4
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "50471058"
+ms.lasthandoff: 10/07/2021
+ms.locfileid: "60220560"
 ---
 # <a name="update-fido2authenticationmethodconfiguration"></a>Atualizar fido2AuthenticationMethodConfiguration
 Namespace: microsoft.graph
@@ -30,7 +30,8 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 Para cenários delegados, o administrador precisa da seguinte [função:](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles)
 
-* Administrador global
+* Administrador de Política de Autenticação
+* Administrador Global
 
 
 ## <a name="http-request"></a>Solicitação HTTP

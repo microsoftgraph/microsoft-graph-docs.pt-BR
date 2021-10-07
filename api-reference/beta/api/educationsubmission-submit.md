@@ -2,15 +2,15 @@
 title: 'educationSubmission: submit'
 description: Uma ação que indica que um aluno é feito com o trabalho e está pronto para entregar a atribuição. Essa ação só pode ser tomada pelo aluno.
 author: dipakboyed
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: 2f33bea764c76ccc3a320bd610249cedf372071f
-ms.sourcegitcommit: 94c4acf8bd03c10a44b12952b6cb4827df55b978
+ms.openlocfilehash: a45f82d5c16b6a4c33f8fbe1a917e0a85d86cd2a
+ms.sourcegitcommit: 0a312d63934cdf9789a5648c2b3f348f48542ff4
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/06/2021
-ms.locfileid: "52787279"
+ms.lasthandoff: 10/07/2021
+ms.locfileid: "60220574"
 ---
 # <a name="educationsubmission-submit"></a>educationSubmission: submit
 
@@ -18,21 +18,21 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Uma ação que indica que um aluno é feito com o trabalho e está pronto para entregar a atribuição. Essa ação só pode ser tomada pelo aluno. Isso alterará o status do envio de "working" para "submitted". Durante o processo de envio, todos os recursos serão copiados para o **bucket submittedResources.** O professor estará olhando para a lista de recursos enviados para classificação.
+Indica que um aluno terminou com o trabalho e está pronto para entregar a atribuição. Essa ação só pode ser tomada pelo aluno. Isso alterará o status do envio de "working" para "submitted". Durante o processo de envio, todos os recursos serão copiados para o **bucket submittedResources.** O professor estará olhando para a lista de recursos enviados para classificação.
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegado (conta corporativa ou de estudante) |  EduAssignments.ReadWriteBasic, EduAssignments.ReadWrite  |
-|Delegado (conta pessoal da Microsoft) |  Sem suporte.  |
+|Delegada (conta corporativa ou de estudante) |  EduAssignments.ReadWriteBasic, EduAssignments.ReadWrite  |
+|Delegada (conta pessoal da Microsoft) |  Sem suporte.  |
 |Aplicativo | Sem suporte. | 
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- { "blockType": "ignored" } -->
 ```http
-POST /education/classes/{id}/assignments/{id}/submissions/{id}/submit
+POST /education/classes/{class-id}/assignments/{assignment-id}/submissions/{submission-id}/submit
 ```
 
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
@@ -41,14 +41,14 @@ POST /education/classes/{id}/assignments/{id}/submissions/{id}/submit
 | Autorização  | {token} de portador. Obrigatório.  |
 
 ## <a name="request-body"></a>Corpo da solicitação
-Não forneça um corpo de solicitação para esse método.
+Não fornece um corpo de solicitação para este método.
 
 ## <a name="response"></a>Resposta
-Se bem-sucedido, este método retorna um código de resposta `204 No Content`. Não retorna nada no corpo da resposta.
+Se tiver êxito, este método retornará um código de resposta e um `200 Ok` [objeto educationSubmission](../resources/educationsubmission.md) no corpo da resposta.
 
 ## <a name="example"></a>Exemplo
 O exemplo a seguir mostra como chamar essa API.
-##### <a name="request"></a>Solicitação
+### <a name="request"></a>Solicitação
 Este é um exemplo de solicitação.
 
 # <a name="http"></a>[HTTP](#tab/http)
@@ -56,8 +56,9 @@ Este é um exemplo de solicitação.
   "blockType": "request",
   "name": "educationsubmission_submit"
 }-->
+
 ```http
-POST https://graph.microsoft.com/beta/education/classes/11021/assignments/19002/submissions/850f51b7/submit
+POST https://graph.microsoft.com/beta/education/classes/72a7baec-c3e9-4213-a850-f62de0adad5f/assignments/7192332b-e904-4891-81e2-356242ab1858/submissions/02bb5de1-7205-2a25-fe33-f99cf53de1c4/submit
 ```
 # <a name="c"></a>[C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/educationsubmission-submit-csharp-snippets.md)]
@@ -78,15 +79,61 @@ POST https://graph.microsoft.com/beta/education/classes/11021/assignments/19002/
 ---
 
 
-##### <a name="response"></a>Resposta
+### <a name="response"></a>Resposta
 Este é um exemplo de resposta.
 
 <!-- {
-  "blockType": "response"
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.educationSubmission"
 } -->
+
 ```http
-HTTP/1.1 204 No Content
+HTTP/1.1 200 Ok
+
+{
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#educationSubmission",
+    "@odata.type": "#microsoft.graph.educationSubmission",
+    "status": "submitted",
+    "submittedDateTime": "2021-09-07T14:54:46.1606962Z",
+    "unsubmittedDateTime": "2021-09-07T14:41:18.9512645Z",
+    "returnedDateTime": null,
+    "resourcesFolderUrl": null,
+    "id": "02bb5de1-7205-2a25-fe33-f99cf53de1c4",
+    "recipient": {
+        "@odata.type": "#microsoft.graph.educationSubmissionIndividualRecipient",
+        "userId": "80cefd93-8d88-40e2-b5d3-67898383e226"
+    },
+    "submittedBy": {
+        "application": null,
+        "device": null,
+        "user": {
+            "id": "80cefd93-8d88-40e2-b5d3-67898383e226",
+            "displayName": null
+        }
+    },
+    "unsubmittedBy": {
+        "application": null,
+        "device": null,
+        "user": {
+            "id": "80cefd93-8d88-40e2-b5d3-67898383e226",
+            "displayName": null
+        }
+    },
+    "returnedBy": {
+        "application": null,
+        "device": null,
+        "user": {
+            "id": null,
+            "displayName": null
+        }
+    }
+}
 ```
+
+## <a name="see-also"></a>Confira também
+
+* [Estados, transições e limitações para atribuições e envios](/graph/assignments-submissions-states-transition)
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->

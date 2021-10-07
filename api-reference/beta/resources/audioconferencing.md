@@ -2,15 +2,15 @@
 title: Tipo de recurso audioConferencing
 description: Representa as informações de acesso ao telefone para uma reunião online.
 author: mkhribech
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: cloud-communications
 doc_type: resourcePageType
-ms.openlocfilehash: 5f0c9338aefa592ed030585a6b0342d03e7717d0
-ms.sourcegitcommit: 7abb0672a38a6d9b11a2e0d2cc221222cb8358bb
+ms.openlocfilehash: 98daa0db87c86625581c30e558f851d7cfa075f8
+ms.sourcegitcommit: 0a312d63934cdf9789a5648c2b3f348f48542ff4
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/11/2021
-ms.locfileid: "52896694"
+ms.lasthandoff: 10/07/2021
+ms.locfileid: "60220420"
 ---
 # <a name="audioconferencing-resource-type"></a>Tipo de recurso audioConferencing
 
@@ -24,12 +24,12 @@ Representa as informações de acesso ao telefone para [um onlineMeeting](online
 
 | Propriedade                    | Tipo              | Descrição                                                                    |
 | :-------------------------- | :---------------- | :----------------------------------------------------------------------------- |
-| dialinUrl                   | Cadeia de caracteres            | Uma URL para a página da Web externamente acessível que contém informações de discagem. |
-| conferenceId                | Cadeia de caracteres            | A ID da conferência da reunião online.                                       |
+| dialinUrl                   | String            | Uma URL para a página da Web externamente acessível que contém informações de discagem. |
+| conferenceId                | String            | A ID da conferência da reunião online.                                       |
+| tollFreeNumbers             | Coleção de cadeias de caracteres | Lista de números gratuitos exibidos no convite da reunião.            |
+| tollNumbers                 | Coleção de cadeias de caracteres | Lista de números de telefone que são exibidos no convite da reunião.                 |
 | tollFreeNumber (preterido) | Cadeia de caracteres            | O número gratuito que se conecta ao Provedor de Conferência de Áudio.           |
-| tollFreeNumbers             | Coleção String | Lista de números gratuitos exibidos no convite da reunião.            |
-| tollNumber (preterido)     | Cadeia de caracteres            | O número de telefone que se conecta ao Provedor de Conferência de Áudio.                |
-| tollNumbers                 | Coleção String | Lista de números de telefone que são exibidos no convite da reunião.                 |
+| tollNumber (preterido)     | String            | O número de telefone que se conecta ao Provedor de Conferência de Áudio.                |
 
 > [!CAUTION]
 >
@@ -51,8 +51,8 @@ Veja a seguir uma representação JSON do recurso.
 {
   "dialinUrl": "String",
   "conferenceId": "String",
-  "tollFreeNumbers": ["String"],
-  "tollNumbers": ["String"]
+  "tollFreeNumbers": [ "String" ],
+  "tollNumbers": [ "String" ]
 }
 ```
 

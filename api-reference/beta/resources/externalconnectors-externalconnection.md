@@ -1,16 +1,16 @@
 ---
 title: Tipo de recurso externalConnection
 description: Uma conexão é um contêiner lógico para seu conteúdo externo no Microsoft Graph
-localization_priority: Normal
+ms.localizationpriority: medium
 author: snlraju-msft
 ms.prod: search
 doc_type: resourcePageType
-ms.openlocfilehash: 76fa391d1ce9937bc1799e9bc4ae9470c0794497
-ms.sourcegitcommit: 1940be9846055aa650c6c03982b74a961f1e316a
+ms.openlocfilehash: f7eeddc207206e6bcfcd526e8ac3e2cd00d481b3
+ms.sourcegitcommit: 2a9b82dae63d8a998711679a379ae1fa89df80e0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/17/2021
-ms.locfileid: "53467569"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60214731"
 ---
 # <a name="externalconnection-resource-type"></a>Tipo de recurso externalConnection
 
@@ -38,10 +38,12 @@ Um contêiner lógico para adicionar conteúdo de uma fonte externa à Microsoft
 | Propriedade      | Tipo                              | Descrição |
 |:--------------|:----------------------------------|:------------|
 | configuração | [microsoft.graph.externalConnectors.configuration](externalconnectors-configuration.md) | Especifica IDs de aplicativo adicionais que têm permissão para gerenciar a conexão e indexar conteúdo na conexão. Opcional. |
-| description   | String                            | Descrição da conexão exibida no Centro de administração do Microsoft 365. Opcional. |
-| id            | String                            | ID exclusiva fornecida pelo desenvolvedor da conexão no Azure Active Directory locatário. Deve ter entre 3 e 32 caracteres de comprimento. Deve conter somente caracteres alfanuméricos. Não é possível começar ou ser um dos `Microsoft` seguintes valores: `None` , , , , , , , , `Directory` , , , , `Exchange` , , `ExchangeArchive` , `LinkedIn` , `Mailbox` `OneDriveBusiness` `SharePoint` `Teams` `Yammer` `Connectors` `TaskFabric` `PowerBI` `Assistant` `TopicEngine` . `MSFT_All_Connectors` Obrigatório. |
-| nome          | String                            | O nome de exibição da conexão a ser exibida no Centro de administração do Microsoft 365. Comprimento máximo de 128 caracteres. Obrigatório. |
-| state         | microsoft.graph.externalConnectors.connectionState                   | Indica o estado atual da conexão. Os valores possíveis `draft` `ready` são , e `obsolete` `limitExceeded` . Obrigatório. |
+| connectorId   |Cadeia de caracteres                             | A Teams ID do aplicativo. Opcional.|
+| description   | Cadeia de caracteres                            | Descrição da conexão exibida no Centro de administração do Microsoft 365. Opcional. |
+| id            | Cadeia de caracteres                            | ID exclusiva fornecida pelo desenvolvedor da conexão no Azure Active Directory locatário. Deve ter entre 3 e 32 caracteres de comprimento. Deve conter somente caracteres alfanuméricos. Não é possível começar ou ser um dos `Microsoft` seguintes valores: `None` , , , , , , , , `Directory` , , , , `Exchange` , , `ExchangeArchive` , `LinkedIn` , `Mailbox` `OneDriveBusiness` `SharePoint` `Teams` `Yammer` `Connectors` `TaskFabric` `PowerBI` `Assistant` `TopicEngine` . `MSFT_All_Connectors` Obrigatório. |
+| name          | String                            | O nome de exibição da conexão a ser exibida no Centro de administração do Microsoft 365. Comprimento máximo de 128 caracteres. Obrigatório. |
+| searchSettings|[microsoft.graph.externalConnectors.searchSettings](../resources/externalconnectors-searchsettings.md)|As configurações que configuram a experiência de pesquisa para conteúdo nesta conexão, como os modelos de exibição para resultados de pesquisa.|
+| estado         | microsoft.graph.externalConnectors.connectionState                   | Indica o estado atual da conexão. Os valores possíveis `draft` `ready` são , e `obsolete` `limitExceeded` . Obrigatório. |
 
 ## <a name="relationships"></a>Relações
 
@@ -49,7 +51,8 @@ Um contêiner lógico para adicionar conteúdo de uma fonte externa à Microsoft
 |:-------------|:---------------------------------------------------------|:---|
 | items        | [Coleção microsoft.graph.externalConnectors.externalItem](externalconnectors-externalitem.md)               | Somente leitura. Anulável. |
 | operations   | [coleção microsoft.graph.externalConnectors.connectionOperation](externalconnectors-connectionoperation.md) | Somente leitura. Anulável. |
-| schema       | [microsoft.graph.externalConnectors.schema](externalconnectors-schema.md)                                      | Somente leitura. Anulável. |
+| esquema       | [microsoft.graph.externalConnectors.schema](externalconnectors-schema.md)                                      | Somente leitura. Anulável. |
+| grupos       | [Coleção microsoft.graph.externalConnectors.externalGroup](externalconnectors-externalgroup.md)             | Somente leitura. Anulável. |
 
 ## <a name="json-representation"></a>Representação JSON
 

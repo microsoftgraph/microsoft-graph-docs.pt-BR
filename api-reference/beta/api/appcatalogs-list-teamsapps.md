@@ -1,16 +1,16 @@
 ---
 title: Listar teamsApp
-description: 'Listar aplicativos do catálogo de aplicativos do Microsoft Teams. '
+description: 'Listar aplicativos do Microsoft Teams de aplicativos. '
 author: nkramer
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: afa9c6bc0a0af2aee4b3351101c5d078649c46c9
-ms.sourcegitcommit: 412507a3c3a8e407fcc43b7cd227d4db35791f58
+ms.openlocfilehash: 9cf8667e57d99cc905a76bd08c721967c77f59fa
+ms.sourcegitcommit: 0a312d63934cdf9789a5648c2b3f348f48542ff4
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2021
-ms.locfileid: "51765956"
+ms.lasthandoff: 10/07/2021
+ms.locfileid: "60219902"
 ---
 # <a name="list-teamsapp"></a>Listar teamsApp
 
@@ -18,11 +18,11 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Listar [aplicativos](../resources/teamsapp.md) do catálogo de aplicativos do Microsoft Teams.
-Isso inclui aplicativos da loja do Microsoft Teams, bem como aplicativos do catálogo de aplicativos da sua organização (o catálogo de aplicativos de locatário). Para obter aplicativos somente do catálogo de aplicativos da sua organização, especifique `organization` como **distributionMethod** na solicitação.
+Listar [aplicativos](../resources/teamsapp.md) do Microsoft Teams de aplicativos.
+Isso inclui aplicativos da Microsoft Teams, bem como aplicativos do catálogo de aplicativos da sua organização (o catálogo de aplicativos de locatário). Para obter aplicativos somente do catálogo de aplicativos da sua organização, especifique `organization` como **distributionMethod** na solicitação.
 
 > [!NOTE]
-> O `id` de um recurso **teamsApp** é gerado pelo servidor e não é o mesmo especificado em um manifesto `id` de aplicativo do Teams. O `id` fornecido pelo desenvolvedor como parte do manifesto do aplicativo teams é carimbado como o no recurso `externalId` **teamsApp.**
+> O `id` de um recurso **teamsApp** é gerado pelo servidor e não é o mesmo especificado em um manifesto Teams `id` aplicativo. O `id` fornecido pelo desenvolvedor como parte do manifesto Teams aplicativo é carimbado como o no recurso `externalId` **teamsApp.**
 
 ## <a name="permissions"></a>Permissões
 
@@ -30,8 +30,8 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 | Tipo de permissão                        | Permissões (da com menos para a com mais privilégios) |
 |:---------------------------------------|:------------------------------------|
-| Delegado (conta corporativa ou de estudante)     | AppCatalog.Submit, AppCatalog.Read.All, AppCatalog.ReadWrite.All, Directory.Read.All, Directory.ReadWrite.All |
-| Delegado (conta pessoal da Microsoft) | Sem suporte. |
+| Delegada (conta corporativa ou de estudante)     | AppCatalog.Submit, AppCatalog.Read.All, AppCatalog.ReadWrite.All |
+| Delegada (conta pessoal da Microsoft) | Sem suporte. |
 | Aplicativo                            | Sem suporte. |
 
 ## <a name="http-request"></a>Solicitação HTTP
@@ -192,9 +192,9 @@ Content-Type: application/json
   ]
 }
 ```
-### <a name="example-3-find-application-based-on-the-teams-app-manifest-id"></a>Exemplo 3: Encontrar aplicativo com base na ID do manifesto do aplicativo do Teams
+### <a name="example-3-find-application-based-on-the-teams-app-manifest-id"></a>Exemplo 3: Encontrar aplicativo com base na ID Teams de manifesto do aplicativo
 
-O exemplo a seguir lista aplicativos que corresponderem à "id" especificada no manifesto do aplicativo do Teams. No exemplo, a ID de manifesto do aplicativo Teams é 'cf1ba4c7-f94e-4d80-ba90-5594b641a8ee'.
+O exemplo a seguir lista aplicativos que corresponderem à "id" especificada no manifesto Teams aplicativo. No exemplo, a ID de manifesto do aplicativo Teams é 'cf1ba4c7-f94e-4d80-ba90-5594b641a8ee'.
 
 #### <a name="request"></a>Solicitação
 

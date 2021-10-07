@@ -1,16 +1,16 @@
 ---
 title: tipo de recurso de segurança
 description: Para conectar produtos, serviços e parceiros de segurança da Microsoft para simplificar as operações de segurança e melhorar os recursos de proteção, detecção e resposta contra ameaças.
-author: angelgolfer-ms
+author: preetikr
 ms.localizationpriority: medium
 ms.prod: security
 doc_type: resourcePageType
-ms.openlocfilehash: 9f4640acb574c5099d0c1e928452099047f9cc71
-ms.sourcegitcommit: 84d9a50dfa9526a207696c69d92381c8763d986a
+ms.openlocfilehash: 494fc483645fe0a5422013556b2a44cc21aaadaf
+ms.sourcegitcommit: 0a312d63934cdf9789a5648c2b3f348f48542ff4
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/28/2021
-ms.locfileid: "59979503"
+ms.lasthandoff: 10/07/2021
+ms.locfileid: "60220763"
 ---
 # <a name="security-resource-type"></a>tipo de recurso de segurança
 
@@ -31,7 +31,9 @@ Nenhum.
 |:---|:---|:---|
 |alertas|conjunto [alerta](../resources/alert.md) |Notificações para problemas de segurança suspeitos ou potenciais no locatário de um cliente.|
 |attackSimulation|[attackSimulationRoot](../resources/attacksimulationroot.md)|Fornece aos locatários a capacidade de iniciar um ataque de phishing simulado e realista e aprender com ele.|
-|securityactions|[securityAction](../resources/securityaction.md)|Ações que respondem a alertas para bloquear atividades mal-intencionadas.|
+|incidentes | [coleção incident](incident.md) | Uma coleção de incidentes em Microsoft 365 Defender, cada um deles é um conjunto de alertas correlacionados e metadados associados que reflete a história de um ataque.|
+|secureScores | [Coleção secureScore](securescores.md) | Medidas da postura de segurança dos locatários para ajudar a protegê-los contra ameaças. |
+|securityactions|[Coleção securityAction](../resources/securityaction.md)|Ações que respondem a alertas para bloquear atividades mal-intencionadas.|
 |tiindicators|[Coleção tiIndicator](../resources/tiindicator.md)|Indicadores de ameaça enviados à Microsoft que identificam atividades mal-intencionadas.|
 
 ## <a name="json-representation"></a>Representação JSON

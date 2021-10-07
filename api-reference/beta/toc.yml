@@ -1488,7 +1488,7 @@ items:
                 href: api/call-logteleconferencedevicequality.md
           - name: Registros de chamadas
             items:
-              - name: Visão geral
+              - name: Visão Geral
                 href: resources/callrecords-api-overview.md
               - name: Registro de chamada
                 items:
@@ -1737,7 +1737,7 @@ items:
       - name: Reserva de clientes (visualização)
         displayName: 'Bookings, Microsoft Bookings'
         items:
-          - name: Visão geral
+          - name: Visão Geral
             href: resources/booking-api-overview.md
           - name: Negócio de reservas
             href: resources/bookingbusiness.md
@@ -10356,7 +10356,7 @@ items:
       - name: Arquivos
         displayName: 'OneDrive, OneDrive for Business, OneDrive business, OneDrive personal, SharePoint'
         items:
-          - name: Visão geral
+          - name: Visão Geral
             href: resources/onedrive.md
           - name: Unidades
             href: resources/drive.md
@@ -11301,38 +11301,6 @@ items:
               - name: Proteção de identidade
                 href: resources/identityprotection-root.md
                 items:
-                  - name: Eventos de risco de identidade (preterido)
-                    items:
-                      - name: Evento de risco de identidade
-                        href: resources/identityriskevent.md
-                      - name: Listar identityRiskEvent
-                        href: api/identityriskevent-list.md
-                      - name: Obter identityRiskEvent
-                        href: api/identityriskevent-get.md
-                      - name: Listar anonymousIpRiskEvent
-                        href: api/anonymousipriskevent-list.md
-                      - name: Obter anonymousIpRiskEvent
-                        href: api/anonymousipriskevent-get.md
-                      - name: Listar impossibleTravelRiskEvent
-                        href: api/impossibletravelriskevent-list.md
-                      - name: Obter impossibleTravelRiskEvent
-                        href: api/impossibletravelriskevent-get.md
-                      - name: Listar leakedCredentialsRiskEvent
-                        href: api/leakedcredentialsriskevent-list.md
-                      - name: Obter leakedCredentialsRiskEvent
-                        href: api/leakedcredentialsriskevent-get.md
-                      - name: Listar malwareRiskEvent
-                        href: api/malwareriskevent-list.md
-                      - name: Obter malwareRiskEvent
-                        href: api/malwareriskevent-get.md
-                      - name: Listar suspiciousIpRiskEvent
-                        href: api/suspiciousipriskevent-list.md
-                      - name: Obter suspiciousIpRiskEvent
-                        href: api/suspiciousipriskevent-get.md
-                      - name: Listar unfamiliarLocationRiskEvent
-                        href: api/unfamiliarlocationriskevent-list.md
-                      - name: Obter unfamiliarLocationRiskEvent
-                        href: api/unfamiliarlocationriskevent-get.md
                   - name: Detecção de riscos
                     items:
                       - name: Detecção de riscos
@@ -12666,7 +12634,7 @@ items:
                 href: api/user-post-notifications.md
       - name: Inteligência de pessoas e local de trabalho
         items:
-          - name: Visão geral
+          - name: Visão Geral
             href: resources/social-overview.md
           - name: Pessoas
             items:
@@ -13206,7 +13174,7 @@ items:
                         href: api/authenticationmethodsroot-usersregisteredbymethod.md
           - name: Microsoft 365 de uso
             items:
-              - name: Visão geral
+              - name: Visão Geral
                 href: resources/report.md
               - name: Uso do dispositivo do Microsoft Teams
                 href: resources/microsoft-teams-device-usage-reports.md
@@ -13523,8 +13491,9 @@ items:
           - name: Visão Geral
             href: resources/security-api-overview.md
           - name: Ações (visualização)
-            href: resources/securityaction.md
             items:
+              - name: Action
+                href: resources/securityaction.md
               - name: Listar ações de segurança
                 href: api/securityactions-list.md
               - name: Criar ação de segurança
@@ -13579,6 +13548,14 @@ items:
                         href: resources/attacksimulationtrainingusercoverage.md
                       - name: Obter cobertura de treinamento para usuários
                         href: api/reportroot-getattacksimulationtrainingusercoverage.md
+          - name: Incidentes (visualização)
+            items:
+              - name: Incidente
+                href: resources/incident.md
+              - name: Listar incidentes
+                href: api/security-list-incidents.md
+              - name: Obter incidente
+                href: api/incident-get.md
           - name: Proteção de informações
             items:
               - name: Rótulos
@@ -14192,7 +14169,7 @@ items:
                 href: api/teamworktagmember-get.md
               - name: Excluir membro
                 href: api/teamworktagmember-delete.md
-          - name: App
+          - name: Aplicativo
             items:
               - name: Aplicativo no catálogo
                 href: resources/teamsapp.md

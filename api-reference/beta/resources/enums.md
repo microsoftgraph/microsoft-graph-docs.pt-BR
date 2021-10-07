@@ -5,12 +5,12 @@ doc_type: enumPageType
 ms.localizationpriority: medium
 ms.prod: non-product-specific
 author: MSGraphDocsvTeam
-ms.openlocfilehash: 7e815c1164afccd946de20e86d7fd7040f142868
-ms.sourcegitcommit: 2f394a9f33f2fab3634d0f18882985ee211067d1
+ms.openlocfilehash: 0629bc0561e65f381c4fba38d815c7886713547d
+ms.sourcegitcommit: 2a9b82dae63d8a998711679a379ae1fa89df80e0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/05/2021
-ms.locfileid: "60127503"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60214402"
 ---
 # <a name="enum-values"></a>Valores denum
 
@@ -2056,7 +2056,7 @@ Valores possíveis para tipos de conta de usuário (associação ao grupo), por 
 
 | Membro | Valor | Descrição             |
 |:-------|:------|:------------------------|
-| email   | 1     | Ameaça de email.            |
+| Email   | 1     | Ameaça de email.            |
 | url    | 2     | Ameaça de URL.             |
 | file   | 3     | Ameaça de arquivo de anexo. |
 
@@ -2553,3 +2553,9 @@ Valores possíveis para tipos de conta de usuário (associação ao grupo), por 
 |meeting|
 |screenShare|
 |unknownFutureValue|
+### <a name="binaryoperator-values"></a>Valores binaryOperator 
+
+|Member|
+|:---|
+|ou|
+|e|
