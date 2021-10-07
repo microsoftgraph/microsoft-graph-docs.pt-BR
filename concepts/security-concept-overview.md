@@ -5,16 +5,16 @@ author: preetikr
 ms.localizationpriority: high
 ms.prod: security
 ms.custom: scenarios:getting-started
-ms.openlocfilehash: eb11b07c2770fc3724ed374b42f94bf1b4ade520
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 0b054c0defdce7ba026e5391bd16aadc3bbead8a
+ms.sourcegitcommit: 2a9b82dae63d8a998711679a379ae1fa89df80e0
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59093943"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60214654"
 ---
 # <a name="microsoft-graph-security-api-overview"></a>Visão geral da API de Segurança do Microsoft Graph
 
-Você pode usar a API de Segurança do Microsoft Graph para se conectar aos produtos, serviços e parceiros de segurança da Microsoft para simplificar operações de segurança e melhorar a proteção contra ameaças, a detecção de ameaças e a capacidade de resposta. A API de Segurança do Microsoft Graph é um serviço (ou agente) intermediário que proporciona uma interface de programação única para conectar diversos [provedores de Segurança do Microsoft Graph](/graph/api/resources/securityvendorinformation?view=graph-rest-1.0) (também chamados provedores de segurança ou provedores). As solicitações para a API de Segurança do Microsoft Graph são federadas para todos os provedores de segurança aplicáveis. Os resultados são agregados e retornam ao aplicativo solicitantes em um esquema comum, como mostrado no diagrama a seguir. Para saber detalhes, confira o[ fluxo de dados da API de Segurança do Microsoft Graph](security-dataflow.md).
+Você pode usar a API de Segurança do Microsoft Graph para se conectar aos produtos, serviços e parceiros de segurança da Microsoft para simplificar operações de segurança e melhorar a proteção contra ameaças, a detecção de ameaças e a capacidade de resposta. A API de Segurança do Microsoft Graph é um serviço (ou agente) intermediário que proporciona uma interface de programação única para conectar diversos [provedores de Segurança do Microsoft Graph](/graph/api/resources/securityvendorinformation) (também chamados provedores de segurança ou provedores). As solicitações para a API de Segurança do Microsoft Graph são federadas para todos os provedores de segurança aplicáveis. Os resultados são agregados e retornam ao aplicativo solicitantes em um esquema comum, como mostrado no diagrama a seguir. Para saber detalhes, confira o[ fluxo de dados da API de Segurança do Microsoft Graph](security-dataflow.md).
 
 ![security_overview_diagram_1.png](./images/security-overview-diagram-1.png)
 
@@ -24,11 +24,11 @@ Para informações sobre autorização, confira [Autorização e a API de Segura
 
 ## <a name="why-use-the-microsoft-graph-security-api"></a>Por que usar a API de Segurança do Microsoft Graph?
 
-A [API de Segurança do Microsoft Graph](/graph/api/resources/security-api-overview?view=graph-rest-1.0) facilita a conexão com as soluções de segurança da Microsoft e parceiros. Ela permite que você entenda e enriqueça mais rapidamente o valor dessas soluções. Você pode se conectar facilmente com a API de Segurança do Microsoft Graph usando um dos procedimentos a seguir, dependendo de suas necessidades:
+A [API de Segurança do Microsoft Graph](/graph/api/resources/security-api-overview) facilita a conexão com as soluções de segurança da Microsoft e parceiros. Ela permite que você entenda e enriqueça mais rapidamente o valor dessas soluções. Você pode se conectar facilmente com a API de Segurança do Microsoft Graph usando um dos procedimentos a seguir, dependendo de suas necessidades:
 
 - [Escrever código](https://aka.ms/graphsecuritysdk) – Encontrar [exemplos do código](https://aka.ms/graphsecurityapicode) no C#, Java, NodeJS e mais.
 - [Conectar usando scripts](https://aka.ms/graphsecuritypowershellsampleblog) – Encontrar [exemplos do PowerShell](https://aka.ms/graphsecuritypowershellsample).
-- [Arrastar e solta em fluxos de trabalho e guias estratégicos](https://aka.ms/graphsecurityconnectorsblogpost) – Use [conectores de segurança do Microsoft Graph](/azure/connectors/connectors-integrate-security-operations-create-api-microsoft-graph-security) para [Aplicativos Azure Logic](/azure/logic-apps/logic-apps-overview), [Microsoft Flow](https://flow.microsoft.com/)e o [PowerApps](https://powerapps.microsoft.com/).
+- [Arrastar e solta em fluxos de trabalho e guias estratégicos](https://aka.ms/graphsecurityconnectorsblogpost) – Use [conectores de segurança do Microsoft Graph](/azure/connectors/connectors-integrate-security-operations-create-api-microsoft-graph-security) para [Aplicativos Lógicos do Azure](/azure/logic-apps/logic-apps-overview), [Microsoft Flow](https://flow.microsoft.com/)e o [PowerApps](https://powerapps.microsoft.com/).
 - [Obter dados em relatórios e painéis](https://aka.ms/graphsecuritypowerbiconnectorblogpost) : Use o [conector de segurança do Microsoft Graph para o Power BI](/power-bi/connect-data/desktop-connect-graph-security).
 - [Conectar usando blocos de anotações Jupyter](https://jupyter.org/) – Encontrar [exemplos de bloco de anotações do Jupyter](https://aka.ms/graphsecurityjupyternotebooks).  
 
@@ -81,11 +81,11 @@ A tabela a seguir lista os benefícios que as diferentes soluções de seguranç
 ## <a name="api-reference"></a>Referência da API
 Está procurando a referência de API para esse serviço?
 
-- [API de Segurança no Microsoft Graph v1.0](/graph/api/resources/security-api-overview?view=graph-rest-1.0)
-- [API de Segurança na versão beta do Microsoft Graph](/graph/api/resources/security-api-overview?view=graph-rest-beta)
+- [API de Segurança no Microsoft Graph v1.0](/graph/api/resources/security-api-overview)
+- [API de Segurança na versão beta do Microsoft Graph](/graph/api/resources/security-api-overview?view=graph-rest-beta&preserve-view=true)
 
 ## <a name="next-steps"></a>Próximas etapas
 
-- [Usar a API de Segurança do Microsoft Graph](/graph/api/resources/security-api-overview?view=graph-rest-1.0)
+- [Usar a API de Segurança do Microsoft Graph](/graph/api/resources/security-api-overview?)
 - Explorar [exemplos da API de segurança do Microsoft Graph](https://aka.ms/graphsecurityapicode)
 - Interessado em se tornar um provedor de segurança? Contate [graphsecfeedback](mailto:graphsecfeedback@microsoft.com).

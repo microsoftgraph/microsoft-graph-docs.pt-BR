@@ -4,12 +4,12 @@ description: O SharePoint é sua Intranet móvel e inteligente. Com o SharePoint
 ms.localizationpriority: high
 ms.prod: sharepoint
 ms.custom: scenarios:getting-started
-ms.openlocfilehash: d952f2fb0e907f22eea60290d92f16cdd09101cf
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 2ad423d789585263da8bc0812c78337ed9dee6e3
+ms.sourcegitcommit: 2a9b82dae63d8a998711679a379ae1fa89df80e0
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59093859"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60214584"
 ---
 # <a name="sharepoint-sites-and-content-api-overview"></a>Visão geral da API de conteúdo e sites do SharePoint
 
@@ -25,7 +25,7 @@ Sites do SharePoint possibilitam a comunicação e a colaboração em equipe. Os
 ### <a name="unleash-your-data-with-sharepoint-lists"></a>Potencialize seus dados com listas do SharePoint
 
 As [Listas][lista] são a base do armazenamento de dados no SharePoint.
-[Crie listas][criar] para armazenar uma variedade de dados corporativos, desde uma simples lista de contatos de clientes até um aplicativo corporativo personalizado com o PowerApps.
+[Criar listas][criar] para armazenar uma variedade de dados corporativos, desde uma simples lista de contatos de clientes até um aplicativo corporativo personalizado com o PowerApps.
 Quando você usa [colunas][] para definir o esquema, o SharePoint pode proteger a integridade de seus dados e habilitar recursos avançados de indexação, consulta e pesquisa.
 
 ### <a name="bring-the-power-of-lists-to-your-teams-files"></a>Leve o poder de listas para os arquivos da sua equipe
@@ -54,22 +54,22 @@ Para saber mais sobre esses modelos, acesse o [Centro de Desenvolvedores do Shar
 ## <a name="api-reference"></a>Referência da API
 Está procurando a referência de API para esse serviço?
 
-- [API do SharePoint no Microsoft Graph v1.0](/graph/api/resources/sharepoint?view=graph-rest-1.0)
-- [API do SharePoint no Microsoft Graph beta](/graph/api/resources/sharepoint?view=graph-rest-beta)
+- [API do SharePoint no Microsoft Graph v1.0](/graph/api/resources/sharepoint)
+- [API do SharePoint no Microsoft Graph beta](/graph/api/resources/sharepoint?view=graph-rest-beta&preserve-view=true)
 
 ## <a name="next-steps"></a>Próximas etapas
 
-Comece a usar o SharePoint no Microsoft Graph aprendendo mais sobre como [trabalhar com sites](/graph/api/resources/sharepoint?view=graph-rest-1.0).
+Comece a usar o SharePoint no Microsoft Graph aprendendo mais sobre como [trabalhar com sites](/graph/api/resources/sharepoint).
 
-[list]: /graph/api/resources/list?view=graph-rest-1.0
-[colunas]: /graph/api/resources/columndefinition?view=graph-rest-1.0
-[tipo de lista]: /graph/api/resources/listinfo?view=graph-rest-1.0
-[criar]: /graph/api/list-create?view=graph-rest-1.0
-[consultar]: /graph/api/listitem-get?view=graph-rest-1.0
-[unidade]: /graph/api/resources/drive?view=graph-rest-1.0
-[API do OneDrive]: /graph/api/resources/onedrive?view=graph-rest-1.0
+[list]: /graph/api/resources/list
+[colunas]: /graph/api/resources/columndefinition
+[tipo de lista]: /graph/api/resources/listinfo
+[criar]: /graph/api/list-create
+[consultar]: /graph/api/listitem-get
+[unidade]: /graph/api/resources/drive
+[API do OneDrive]: /graph/api/resources/onedrive
 [Estrutura do SharePoint]: /sharepoint/dev/spfx/sharepoint-framework-overview
 [Suplementos do SharePoint]: /sharepoint/dev/sp-add-ins/sharepoint-add-ins
 [Centro de Desenvolvedores do SharePoint]: https://developer.microsoft.com/sharepoint
 [Documentos para Desenvolvedores do SharePoint]: /sharepoint/dev/
-[SharePoint]: /graph/api/resources/sharepoint?view=graph-rest-1.0
+[SharePoint]: /graph/api/resources/sharepoint
