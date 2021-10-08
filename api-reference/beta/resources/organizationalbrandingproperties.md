@@ -5,12 +5,12 @@ author: AlexanderMars
 ms.localizationpriority: medium
 ms.prod: identity-and-sign-in
 doc_type: resourcePageType
-ms.openlocfilehash: 05ad63c01ba6d62543caaa3e4902ccae47b28904
-ms.sourcegitcommit: 30fca91ed203a9ab7b0562833ce0c20c7fb7b7b1
+ms.openlocfilehash: 60a6d26d2d6eb3ee46341ece37bdb141ee36c9fd
+ms.sourcegitcommit: 6cea9bc17d3859e475a74c4a6f661f848e837e89
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/27/2021
-ms.locfileid: "59932043"
+ms.lasthandoff: 10/08/2021
+ms.locfileid: "60240772"
 ---
 # <a name="organizationalbrandingproperties-resource-type"></a>Tipo de recurso organizationalBrandingProperties
 
@@ -22,7 +22,7 @@ Um tipo abstrato que expõe propriedades para configurar a identidade visual de 
 
 As organizações podem personalizar as páginas de Azure Active Directory (Azure AD) que aparecem quando os usuários entrarem nos aplicativos específicos do locatário da organização ou quando o Azure AD identificar o locatário do usuário do nome de usuário. Um desenvolvedor também pode ler as informações de identidade visual da empresa e personalizar sua experiência de aplicativo para adaptá-la especificamente para o usuário que está assinado usando a identidade visual da empresa.
 
-Não é possível alterar o idioma da configuração original. No entanto, as empresas podem adicionar identidade visual diferente com base na localidade. Para identidade visual específica do idioma, consulte o [objeto organizationalBrandingLocalization.](organizationalbrandinglocalization.md)
+Não é possível alterar o idioma da configuração original como representado pelo [objeto organizationalBranding.](organizationalbranding.md) No entanto, as empresas podem adicionar identidade visual diferente com base na localidade. Para identidade visual específica do idioma, consulte o [objeto organizationalBrandingLocalization.](organizationalbrandinglocalization.md)
 
 >[!NOTE]
 >A adição de identidade visual personalizada exige que você tenha licenças Azure Active Directory (Azure AD) Premium 1, Premium 2 ou Office 365 (para aplicativos Office 365). Para obter mais informações sobre licenciamento e edições, consulte [Inscrever-se Azure AD Premium](/azure/active-directory/fundamentals/active-directory-get-started-premium).
@@ -35,7 +35,7 @@ Nenhum.
 ## <a name="properties"></a>Propriedades
 | Propriedade     | Tipo        | Descrição |
 |:-------------|:------------|:------------|
-| backgroundColor | String | Cor que aparecerá no lugar da imagem de plano de fundo em conexões de baixa largura de banda. Recomendamos que você use a cor primária do logotipo da faixa ou da cor da sua organização. Especifique isso no formato hexadecimal, por exemplo, branco é `#FFFFFF` . |
+| background-color | Cadeia de caracteres | Cor que aparecerá no lugar da imagem de plano de fundo em conexões de baixa largura de banda. Recomendamos que você use a cor primária do logotipo da faixa ou da cor da sua organização. Especifique isso no formato hexadecimal, por exemplo, branco é `#FFFFFF` . |
 | backgroundImage | Stream | Imagem que aparece como o plano de fundo da página de login. Os tipos permitidos são PNG ou JPEG não menores que 300 KB e não maiores que 1920 × 1080 pixels. Uma imagem menor reduzirá os requisitos de largura de banda e tornará a carga da página mais rápida. |
 | backgroundImageRelativeUrl | Cadeia de caracteres | Uma URL relativa para a **propriedade backgroundImage** combinada com uma URL base CDN **cdnList** para fornecer a versão atendida por um CDN. Somente leitura. |
 | bannerLogo | Stream | Uma versão em faixa do logotipo da sua empresa que aparece na página de entrada. Os tipos permitidos são PNG ou JPEG não maiores que 36 × 245 pixels. Recomendamos usar uma imagem transparente sem preenchimento ao redor do logotipo. |
@@ -44,7 +44,7 @@ Nenhum.
 | id | Cadeia de caracteres | Um identificador que representa a localidade especificada no padrão ISO 639-1, por exemplo, inglês é `en-US` . A **id para** o padrão /branding é sempre os tipos de cadeia de caracteres `0` ou `default` . Somente leitura. <br/><br/>**OBSERVAÇÃO:** No momento, não há suporte para várias marcas para uma única localidade. |
 | signInPageText | Cadeia de caracteres | Texto que aparece na parte inferior da caixa de login. Você pode usar isso para comunicar informações adicionais, como o número de telefone para o seu help desk ou uma declaração legal. Este texto deve ser Unicode e não exceder 1024 caracteres. |
 | squareLogo | Stream | Uma versão quadrada do logotipo da sua empresa que aparece Windows 10 experiências in-loco (OOBE) e quando o Windows Autopilot está habilitado para implantação. Os tipos permitidos são PNG ou JPEG não maiores que 240 x 240 pixels e no máximo 10 KB de tamanho. Recomendamos usar uma imagem transparente sem preenchimento ao redor do logotipo. |
-| squareLogoRelativeUrl | Cadeia de caracteres | Uma URL relativa para a **propriedade squareLogo** que é combinada com uma URL base CDN **da cdnList** para fornecer a versão atendida por um CDN. Somente leitura. |
+| squareLogoRelativeUrl | String | Uma URL relativa para a **propriedade squareLogo** que é combinada com uma URL base CDN **da cdnList** para fornecer a versão atendida por um CDN. Somente leitura. |
 | usernameHintText | Cadeia de caracteres | Cadeia de caracteres que mostra como a dica na caixa de texto do nome de usuário na tela de entrada. Este texto deve ser um Unicode, sem links ou código, e não pode exceder 64 caracteres. |
 
 ## <a name="relationships"></a>Relações

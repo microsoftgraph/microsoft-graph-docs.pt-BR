@@ -553,7 +553,7 @@ items:
                 href: api/chat-get.md
               - name: Listar chats para usuário
                 href: api/chat-list.md
-          - name: Tarefas pendentes
+          - name: Tarefas To do
             items:
               - name: Tarefa
                 href: resources/todotask.md
@@ -11397,8 +11397,6 @@ items:
                     href: api/organizationalbranding-get.md
                   - name: Atualizar
                     href: api/organizationalbranding-update.md
-                  - name: Excluir
-                    href: api/organizationalbranding-delete.md
                   - name: Localização de identidade visual
                     href: resources/organizationalbrandinglocalization.md
                     items:
@@ -13416,7 +13414,7 @@ items:
                     href: resources/attacksimulationtrainingusercoverage.md
                   - name: Obter cobertura de treinamento para usuários
                     href: api/reportroot-getattacksimulationtrainingusercoverage.md
-      - name: Pesquisar
+      - name: Busca
         displayname: Microsoft Search API
         items:
           - name: Consulta
@@ -14478,7 +14476,7 @@ items:
                 href: api/group-list-permissiongrants.md
               - name: Lista para chat
                 href: api/chat-list-permissiongrants.md
-      - name: Tarefas pendentes
+      - name: Tarefas To do
         displayName: Microsoft To Do
         items:
           - name: Visão Geral
@@ -14691,6 +14689,8 @@ items:
                 href: api/worksheet-usedrange.md
               - name: Atualizar planilha
                 href: api/worksheet-update.md
+              - name: Excluir planilha
+                href: api/worksheet-delete.md
               - name: Obter célula
                 href: api/worksheet-cell.md
               - name: Obter intervalo

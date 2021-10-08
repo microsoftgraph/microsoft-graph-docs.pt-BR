@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: adimitui
 ms.prod: directory-management
 doc_type: resourcePageType
-ms.openlocfilehash: 1c666363d6eeb823373258a82ae1459c71ccea72
-ms.sourcegitcommit: 08e9b0bac39c1b1d2c8a79539d24aaa93364baf2
+ms.openlocfilehash: f3a07629006f5f2cada6601dab09b952fdef7980
+ms.sourcegitcommit: 6cea9bc17d3859e475a74c4a6f661f848e837e89
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/24/2021
-ms.locfileid: "59508366"
+ms.lasthandoff: 10/08/2021
+ms.locfileid: "60240758"
 ---
 # <a name="organization-resource-type"></a>tipo de recurso organization
 
@@ -37,14 +37,16 @@ Esse recurso permite que você adicione seus próprios dados às propriedades pe
 |**Licenças da organização**| | |
 |[activateService](../api/organization-activateservice.md) | Nenhum |  Ative um serviço para uma organização. |
 |**Identidade visual organizacional**| | |
-|[Criar organizationalBrandingLocalization](../api/organizationalbranding-post-localizations.md) | [organizationalBrandingLocalization](organizationalbrandinglocalization.md) | Crie uma nova identidade visual de localização (específica do idioma) e um objeto de identidade visual padrão, caso não exista. |
-|[Obter organizationalBranding](../api/organizationalbranding-get.md) | [organizationalBranding](organizationalbranding.md) | Obter o objeto de identidade visual organizacional padrão. |
+|[Obter organizationalBranding](../api/organizationalbranding-get.md) | [organizationalBranding](organizationalbranding.md) | Obtenha o objeto de identidade visual organizacional padrão. |
 |[Atualizar organizationalBranding](../api/organizationalbranding-update.md) | [organizationalBranding](organizationalbranding.md) | Atualize o objeto de identidade visual organizacional padrão. |
-|[Excluir organizationalBranding](../api/organizationalbranding-update.md) | [organizationalBranding](organizationalbranding.md) | Exclua o objeto de identidade visual organizacional padrão. |
-|[Listar organizationalBrandingLocalization](../api/organizationalbrandinglocalization-get.md) | [coleção organizationalBrandingLocalization](organizationalbrandinglocalization.md) | Recupere todos os objetos de identidade visual de localização no locatário. |
+|[Criar organizationalBrandingLocalization](../api/organizationalbranding-post-localizations.md) | [organizationalBrandingLocalization](organizationalbrandinglocalization.md) | Crie uma nova identidade visual de localização (específica do idioma) e um objeto de identidade visual padrão, caso não exista. |
+|[Listar organizationalBrandingLocalization](../api/organizationalbrandinglocalization-get.md) | coleção [organizationalBrandingLocalization](organizationalbrandinglocalization.md) | Recupere todos os objetos de identidade visual de localização no locatário. |
 |[Obter organizationalBrandingLocalization](../api/organizationalbrandinglocalization-get.md) | [organizationalBrandingLocalization](organizationalbrandinglocalization.md) | Leia as propriedades de um objeto de identidade visual de localização. |
-|[Atualizar organizationalBranding](../api/organizationalbranding-update.md) | [organizationalBranding](organizationalbranding.md) | Atualize um objeto de identidade visual de localização. |
-|[Excluir organizationalBranding](../api/organizationalbranding-update.md) | [organizationalBranding](organizationalbranding.md) | Exclua um objeto de identidade visual de localização. |
+|[Atualizar organizationalBrandingLocalization](../api/organizationalbrandinglocalization-update.md) | [organizationalBrandingLocalization](organizationalbrandinglocalization.md) | Atualize um objeto de identidade visual de localização. |
+|[Excluir organizationalBrandingLocalization](../api/organizationalbrandinglocalization-delete.md) | [organizationalBrandingLocalization](organizationalbrandinglocalization.md) | Exclua um objeto de identidade visual de localização. |
+<!--|[Excluir organizationalBranding](../api/organizationalbranding-update.md) | [organizationalBranding](organizationalbranding.md) | Exclua o objeto de identidade visual organizacional padrão. |
+
+**OBSERVAÇÃO: para restaurar a operação Excluir organizationalBranding de volta à tabela após Atualizar organizationalBranding se todas as inconsistências são resolvidas.-->
 
 ## <a name="properties"></a>Propriedades
 
@@ -81,8 +83,8 @@ Esse recurso permite que você adicione seus próprios dados às propriedades pe
 | Relação  | Tipo  |Descrição|
 |:---------------|:--------|:----------|
 |certificateBasedAuthConfiguration|coleção [certificateBasedAuthConfiguration](certificatebasedauthconfiguration.md)| Propriedade de navegação para gerenciar a configuração de autenticação baseada em certificado. Somente uma única instância de certificateBasedAuthConfiguration pode ser criada na coleção.  |
-|extensions|[extension](extension.md) collection|A coleção de extensões abertas definidas para o recurso da organização. Anulável.| 
-|organizationalBranding|[Coleção organizationalBranding](organizationalbranding.md)| Recurso para gerenciar a identidade visual padrão da organização. Anulável.|
+|extensions|Coleção [extension](extension.md)|A coleção de extensões abertas definidas para o recurso da organização. Anulável.| 
+|organizationalBranding|coleção [organizationalBranding](organizationalbranding.md)| Recurso para gerenciar a identidade visual padrão da organização. Anulável.|
 |settings|[organizationSettings](organizationsettings.md) | Recupere as propriedades e as relações do objeto organizationSettings. Anulável.|
 
 ## <a name="json-representation"></a>Representação JSON

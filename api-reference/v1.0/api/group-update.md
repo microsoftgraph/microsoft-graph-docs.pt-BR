@@ -5,12 +5,12 @@ author: Jordanndahl
 ms.localizationpriority: high
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: f177ca794d5fe407577ab08196f366f50e07afc0
-ms.sourcegitcommit: 08e9b0bac39c1b1d2c8a79539d24aaa93364baf2
+ms.openlocfilehash: 028c9b0d86c9a9da2d89829d4664b4bb3f25498c
+ms.sourcegitcommit: 6cea9bc17d3859e475a74c4a6f661f848e837e89
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/24/2021
-ms.locfileid: "59508016"
+ms.lasthandoff: 10/08/2021
+ms.locfileid: "60240788"
 ---
 # <a name="update-group"></a>Atualizar grupo
 
@@ -44,7 +44,7 @@ PATCH /groups/{id}
 
 ## <a name="request-body"></a>Corpo da solicitação
 
-No corpo da solicitação, forneça *apenas* os valores das propriedades que devem ser atualizadas. Propriedades existentes que não estão incluídas no corpo da solicitação terão seus valores anteriores mantidos ou serão recalculadas com base nas alterações a outros valores de propriedade.
+No corpo da solicitação, forneça *apenas* os valores das propriedades que devem ser atualizadas. As propriedades existentes que não estão incluídas no corpo da solicitação manterão seus valores anteriores ou serão recalculadas com base nas alterações em outros valores de propriedade.
 
 A tabela a seguir especifica as propriedades que podem ser atualizadas.
 
@@ -54,7 +54,7 @@ A tabela a seguir especifica as propriedades que podem ser atualizadas.
 |autoSubscribeNewMembers|Boolean|O padrão é `false`. Indica se novos membros adicionados ao grupo serão automaticamente inscritos para receberem notificações por email. **autoSubscribeNewMembers** não pode ser `true` quando **subscriptionEnabled** é definido como `false` no grupo.|
 |descrição|String|Uma descrição opcional para o grupo. |
 |displayName|Cadeia de caracteres|O nome de exibição do grupo. Essa propriedade é obrigatória quando um grupo é criado e não pode ser apagado durante atualizações. |
-|mailNickname|String|O alias de e-mail do grupo. Essa propriedade deve ser especificada quando um grupo é criado.  |
+|mailNickname|String|O alias de email do grupo, exclusivo na organização. O comprimento máximo é de 64 caracteres. Essa propriedade pode conter apenas caracteres no [conjunto de caracteres ASCII de 0 a 127](/office/vba/language/reference/user-interface-help/character-set-0127), exceto o seguinte: ` @ () \ [] " ; : . <> , SPACE`. |
 |preferredDataLocation|String|O local de dados preferencial para o grupo Microsoft 365. Para atualizar essa propriedade, o usuário de chamada deve receber uma das seguintes funções do Azure Active Directory: <br><ul><li> Administrador Global <li> Administrador de Conta de Usuário <li> Suporte para Parceiro Nível1 ou Nível2 <li>Gravador de Diretório <li> Administrador do Exchange <li> Administrador do SharePoint </ul> <br/>Para obter mais informações sobre essa propriedade, consulte [OneDrive Online Multi-Geo](/sharepoint/dev/solution-guidance/multigeo-introduction).|
 |securityEnabled|Boolean|Especifica se o grupo é um grupo de segurança. |
 |visibility|Cadeia de caracteres|Especifica a visibilidade de um grupo do Microsoft 365. Os valores possíveis são: **Privado**, **Público** ou vazio (que é interpretado como **Público**).|
@@ -65,7 +65,7 @@ A tabela a seguir especifica as propriedades que podem ser atualizadas.
 >
 > + Apenas um subconjunto da API de grupo relacionado à administração do grupo principal e ao aplicativo de suporte para gerenciamento às permissões delegadas. Todos os outros membros da API do grupo, inclusive a atualização **autoSubscribeNewMembers**, dão suporte apenas a permissões delegadas. Confira exemplos nos [problemas conhecidos](/graph/known-issues#groups).
 >
-> + As regras para atualizar os grupos de segurança habilitados para email no Microsoft Exchange Server podem ser complexas; Para saber mais, confira [Gerenciar grupos de segurança habilitados para email no Exchange Server](/Exchange/recipients/mail-enabled-security-groups?view=exchserver-2019).
+> + As regras para atualizar os grupos de segurança habilitados para email no Microsoft Exchange Server podem ser complexas; Para saber mais, confira [Gerenciar grupos de segurança habilitados para email no Exchange Server](/Exchange/recipients/mail-enabled-security-groups).
 
 ## <a name="response"></a>Resposta
 

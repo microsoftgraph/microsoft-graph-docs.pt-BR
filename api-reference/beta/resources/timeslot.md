@@ -1,16 +1,16 @@
 ---
 title: Tipo de recurso timeSlot
 description: Um período de tempo.
-localization_priority: Normal
+ms.localizationpriority: medium
 doc_type: resourcePageType
 author: vrod9429
 ms.prod: outlook
-ms.openlocfilehash: f531add7d16fc5d1922a40e7341894b7fedd6535
-ms.sourcegitcommit: d014f72cf2cd130bedb02651092c0be12967b679
+ms.openlocfilehash: 6b399b7ff008c12cbe050eaa82160ce59a7cfbe3
+ms.sourcegitcommit: 6cea9bc17d3859e475a74c4a6f661f848e837e89
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "50472040"
+ms.lasthandoff: 10/08/2021
+ms.locfileid: "60240765"
 ---
 # <a name="timeslot-resource-type"></a>Tipo de recurso timeSlot
 
@@ -20,9 +20,15 @@ Namespace: microsoft.graph
 
 Representa um intervalo de tempo para uma reunião.
 
+## <a name="properties"></a>Propriedades
+| Propriedade     | Tipo   |Descrição|
+|:---------------|:--------|:----------|
+|end|[dateTimeTimeZone](datetimetimezone.md)|A data, hora e fuso horário que um período termina. |
+|iniciar|[dateTimeTimeZone](datetimetimezone.md)|A data, hora e fuso horário que um período começa.|
+
 ## <a name="json-representation"></a>Representação JSON
 
-Veja a seguir uma representação JSON do recurso
+Veja a seguir uma representação JSON do recurso.
 
 <!-- {
   "blockType": "resource",
@@ -39,11 +45,6 @@ Veja a seguir uma representação JSON do recurso
 }
 
 ```
-## <a name="properties"></a>Propriedades
-| Propriedade     | Tipo   |Descrição|
-|:---------------|:--------|:----------|
-|end|[dateTimeTimeZone](datetimetimezone.md)|A data, hora e fuso horário que um período começa. |
-|iniciar|[dateTimeTimeZone](datetimetimezone.md)|A data, hora e fuso horário que um período termina.|
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->

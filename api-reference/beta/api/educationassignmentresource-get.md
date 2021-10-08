@@ -5,12 +5,12 @@ author: dipakboyed
 ms.localizationpriority: medium
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: c66a3a21c7e9f1a0d61d845f788a15403573a67b
-ms.sourcegitcommit: 0a312d63934cdf9789a5648c2b3f348f48542ff4
+ms.openlocfilehash: a25c393c95693bc3c8a0bbe9567ebeed11da1608
+ms.sourcegitcommit: 6cea9bc17d3859e475a74c4a6f661f848e837e89
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/07/2021
-ms.locfileid: "60220630"
+ms.lasthandoff: 10/08/2021
+ms.locfileid: "60240807"
 ---
 # <a name="get-educationassignmentresource"></a>Obter educationAssignmentResource
 
@@ -25,8 +25,8 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegada (conta corporativa ou de estudante) | EduAssignments.ReadBasic, EduAssignments.ReadWriteBasic, EduAssignments.Read, EduAssignments.ReadWrite   |
-|Delegada (conta pessoal da Microsoft) |  Sem suporte.  |
+|Delegado (conta corporativa ou de estudante) | EduAssignments.ReadBasic, EduAssignments.ReadWriteBasic, EduAssignments.Read, EduAssignments.ReadWrite   |
+|Delegado (conta pessoal da Microsoft) |  Sem suporte.  |
 |Aplicativo |  EduAssignments.ReadBasic.All, EduAssignments.ReadWriteBasic.All, EduAssignments.Read.All, EduAssignments.ReadWrite.All  | 
 
 ## <a name="http-request"></a>Solicitação HTTP
@@ -35,7 +35,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 GET /education/classes/{class-id}/assignments/{assignment-id}/resources/{resource-id}
 ```
 ## <a name="optional-query-parameters"></a>Parâmetros de consulta opcionais
-Este método dá suporte aos [pParameters de](/graph/query-parameters) consulta OData para ajudar a personalizar a resposta.
+Este método dá suporte a [Parâmetros de consulta OData](/graph/query-parameters) para ajudar a personalizar a resposta.
 
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
 | Cabeçalho       | Valor |

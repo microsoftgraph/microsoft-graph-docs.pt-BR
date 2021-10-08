@@ -5,12 +5,12 @@ ms.localizationpriority: high
 doc_type: conceptualPageType
 ms.prod: identity-and-access
 author: dkershaw10
-ms.openlocfilehash: f4d1b364a44ff6fd6af3c5f7869dcaa8954cf846
-ms.sourcegitcommit: 08e9b0bac39c1b1d2c8a79539d24aaa93364baf2
+ms.openlocfilehash: f5ae8eadb7b18d2091d06cd6a69d48afa78ccffa
+ms.sourcegitcommit: 6cea9bc17d3859e475a74c4a6f661f848e837e89
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/24/2021
-ms.locfileid: "59766674"
+ms.lasthandoff: 10/08/2021
+ms.locfileid: "60240940"
 ---
 # <a name="working-with-azure-active-directory-resources-in-microsoft-graph"></a>Trabalhar com os recursos do Azure Active Directory no Microsoft Graph
 
@@ -59,7 +59,7 @@ A tabela a seguir lista alguns casos comuns de uso de recursos do Azure AD.
 | Obter informações sobre uma organização, como seu endereço comercial, contatos de notificação e técnicos, os planos de serviço em que está inscrita em e os domínios associados a ela. | [organization](../resources/organization.md) | N/D |
 | Obter informações sobre SKUs do serviço nos quais a empresa está inscrita. | [subscribedSku](../resources/subscribedsku.md) | N/D |
 | Convidar usuários externos (convidado) para uma organização. | [invitation](../resources/invitation.md) | [O que é a colaboração B2B do Azure AD?](/azure/active-directory/active-directory-b2b-what-is-azure-ad-b2b)|
-| Gerenciar a identidade visual da experiência de entrada de uma organização. | [organizationalbranding](../resources/organizationalbrandingproperties.md) | [Adicionar identidade visual à página de entrada do Azure Active Directory da sua organização](/azure/active-directory/fundamentals/customize-branding)|
+| Gerenciar a identidade visual da experiência de entrada de uma organização. | [organizationalbranding](../resources/organizationalbranding.md) | [Adicionar identidade visual à página de entrada do Azure Active Directory da sua organização](/azure/active-directory/fundamentals/customize-branding)|
 | **Avaliações do Access** | | |
 | Certifique-se de que as associações ao grupo e os direitos de acesso ao aplicativo estejam corretos com as análises de acesso. | [API de revisões de acesso](../resources/accessreviews-root.md) |[Revisões de acesso ao Azure AD](/azure/active-directory/active-directory-azure-ad-controls-access-reviews-overview) |
 | **Solicitações de consentimento** | | |

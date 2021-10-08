@@ -4,12 +4,12 @@ description: 'Este artigo apresenta um exemplo para demonstrar como usar *extens
 author: dkershaw10
 ms.localizationpriority: high
 ms.custom: graphiamtop20
-ms.openlocfilehash: 9a84499f8b967b57a82187ee467a1eedd445764b
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: c4226a642c2e6651cf4168c81d7188f0edd76270
+ms.sourcegitcommit: 6cea9bc17d3859e475a74c4a6f661f848e837e89
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59066916"
+ms.lasthandoff: 10/08/2021
+ms.locfileid: "60240653"
 ---
 # <a name="add-custom-data-to-groups-using-schema-extensions"></a>Adicionar dados personalizados a grupos usando as extensões do esquema 
 
@@ -35,14 +35,26 @@ Observe que a extensão retornada na resposta tem **Disponível** como o valor d
 
 
 ### <a name="request"></a>Solicitação
+
+<!-- {
+  "blockType": "request",
+  "name": "schemaextensions-groups-get"
+}-->
 ```http
 GET https://graph.microsoft.com/v1.0/schemaExtensions?$filter=id eq 'graphlearn_test'
 ```
+
 ### <a name="response"></a>Resposta
+
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.schemaExtension"
+} -->
 ```http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-length: 420
+
 {
     "value": [
         {
@@ -75,6 +87,11 @@ Veja um [exemplo de outra maneira de atribuir a **id** na solicitação](/graph/
 Observe que, quando você cria uma extensão de esquema inicialmente, seu status é **InDevelopment**. Ao desenvolver a extensão, você pode mantê-la com esse status. Enquanto isso, apenas seu aplicativo que a criou pode atualizá-la com alterações aditivas ou excluí-la. Quando estiver pronto para compartilhar a extensão para uso por outros aplicativos, defina o **status** como **Disponível**.
 
 ### <a name="request"></a>Solicitação
+
+<!-- {
+  "blockType": "request",
+  "name": "schemaextensions-groups-createExtension"
+}-->
 ```http
 POST https://graph.microsoft.com/v1.0/schemaExtensions
 Content-type: application/json
@@ -100,7 +117,14 @@ Content-type: application/json
     ]
 }
 ```
+
 ### <a name="response"></a>Resposta
+
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.schemaExtension"
+} -->
 ```http
 HTTP/1.1 201 Created
 Content-Type: application/json
@@ -134,6 +158,11 @@ Content-length: 420
 Criar um _novo_ grupo estendido com dados extras usando a definição de extensão de esquema `graphlearn_courses` que acabamos de registrar.  Este é um padrão ```POST``` para o recurso **group**, com a extensão de tipo complexo `graphlearn_courses` definida no corpo da solicitação.  A resposta não refletirá extensões de dados. Precisamos explicitamente usar a extensão ```$select``` por nome usando uma operação ```GET```.
 
 ### <a name="request"></a>Solicitação
+
+<!-- {
+  "blockType": "request",
+  "name": "schemaextensions-groups-createGroupWithExtension"
+}-->
 ```http
 POST https://graph.microsoft.com/v1.0/groups
 Content-type: application/json
@@ -152,6 +181,12 @@ Content-type: application/json
 }
 ```
 ### <a name="response"></a>Resposta
+
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.group"
+} -->
 ```http
 HTTP/1.1 201 Created
 Content-Type: application/json
@@ -177,6 +212,11 @@ Content-length: 420
 Você pode estender e adicionar dados personalizados a uma instância de grupo _existente_ a extensão de tipo complexo `graphlearn_courses` adicional no corpo de uma solicitação ```PATCH```.  
 
 ### <a name="request"></a>Solicitação
+
+<!-- {
+  "blockType": "request",
+  "name": "schemaextensions-groups-updateGroupWithExtension"
+}-->
 ```http
 PATCH https://graph.microsoft.com/v1.0/groups/dfc8016f-db97-4c47-a582-49cb8f849355
 Content-type: application/json
@@ -189,7 +229,14 @@ Content-length: 230
     }   
 }
 ```
+
 ### <a name="response"></a>Resposta
+
+<!-- {
+  "blockType": "response",
+  "truncated": true
+}
+-->
 ```http
 HTTP/1.1 204 No Content
 ```
@@ -210,12 +257,22 @@ O exemplo a seguir procura o grupo que possui a extensão `graphlearn_courses` c
 
 ### <a name="request"></a>Solicitação
 
+<!-- {
+  "blockType": "request",
+  "name": "schemaextensions-groups-getGroupSelectExtension"
+}-->
 ```http
 GET https://graph.microsoft.com/v1.0/groups?$filter=graphlearn_courses/courseId eq ‘123’&$select=displayName,id,description,graphlearn_courses
 ```
 
 
 ### <a name="response"></a>Resposta
+
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.group"
+} -->
 ```http
 HTTP/1.1 200 OK
 Content-Type: application/json
@@ -244,8 +301,3 @@ Content-length: 326
 - [Domínios do Microsoft 365](/office365/servicedescriptions/office-365-platform-service-description/domains)
 - [Adicionar e verificar um domínio para Microsoft 365](/microsoft-365/admin/setup/add-domain)
 - [Tipo de recurso schemaExtension](/graph/api/resources/schemaextension)
-- [List schemaExtensions](/graph/api/schemaextension-list)
-- [Create schemaExtension](/graph/api/schemaextension-post-schemaextensions)
-- [Get schemaExtension](/graph/api/schemaextension-get)
-- [Update schemaExtension](/graph/api/schemaextension-update)
-- [Delete schemaExtension](/graph/api/schemaextension-delete)
