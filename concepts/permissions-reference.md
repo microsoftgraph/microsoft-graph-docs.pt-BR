@@ -4,12 +4,12 @@ description: O Microsoft Graph expõe as permissões granulares que controlam o 
 author: jackson-woods
 ms.localizationpriority: high
 ms.custom: graphiamtop20, scenarios:getting-started
-ms.openlocfilehash: 913188d1bbdc8949f08f90e95a573ce811d82bd4
-ms.sourcegitcommit: 94dc71a6d4fbdc46f2681a1add13416bc9b4a6e9
+ms.openlocfilehash: ce99f64c4bace1893a4d93e8d3d0fb64a82c6fd2
+ms.sourcegitcommit: 0a312d63934cdf9789a5648c2b3f348f48542ff4
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/05/2021
-ms.locfileid: "60115239"
+ms.lasthandoff: 10/07/2021
+ms.locfileid: "60220483"
 ---
 # <a name="microsoft-graph-permissions-reference"></a>Referência de permissões do Microsoft Graph
 
@@ -1104,6 +1104,41 @@ Para cenários mais complexos que envolvem várias permissões, confira [Cenári
 
 ---
 
+## <a name="incidents-permissions"></a>Permissões de incidentes
+
+#### <a name="delegated-permissions"></a>Permissões delegadas
+
+|   Permissão    |  Exibir Cadeia de Caracteres   |  Descrição | Consentimento Obrigatório do Administrador | Suporte da conta da Microsoft |
+|:----------------|:------------------|:-------------|:-----------------------|:--------------|
+| _Incidents.Read.All_ | Ler incidentes | Permite que o aplicativo leia incidentes em nome do usuário conectado. | Sim | Não |
+| _Incidents.ReadWrite.All_ | Ler e gravar em incidentes | Permite que o aplicativo leia e grave incidentes em nome do usuário conectado. | Sim | Não |
+
+
+#### <a name="application-permissions"></a>Permissões de aplicativos
+
+|   Permissão    |  Exibir Cadeia de Caracteres   |  Descrição | Consentimento Obrigatório do Administrador |
+|:----------------|:------------------|:-------------|:-----------------------|
+| _Incidents.Read.All_ | Ler todos os incidentes | Permite ao aplicativo ler todos os incidentes sem um usuário conectado. | Sim |
+| _Incidents.ReadWrite.All_ | Ler e gravar em todos os incidentes | Permite que o aplicativo leia e grave em todos os incidentes sem um usuário conectado. | Sim |
+
+### <a name="remarks"></a>Comentários
+
+Permissões de incidentes são válidas somente para contas corporativas ou de estudante.
+
+### <a name="example-usage"></a>Exemplo de uso
+
+#### <a name="delegated"></a>Delegado
+
+* _Incidents.Read.All_: ler todos os incidentes em uma organização que o usuário tem permissão para ler (`GET /security/incidents`)
+* _Incidents.ReadWrite.All_: ler e gravar todos os incidentes em uma organização que o usuário tem permissão para ler e gravar (`GET /security/incidents`)
+
+#### <a name="application"></a>Aplicativo
+
+* _Incidents.Read.All_: ler todos os incidentes em uma organização (`GET /security/incidents`)
+* _Incidents.ReadWrite.All_: ler e gravar todos os incidentes em uma organização (`GET /security/incidents`)
+
+---
+
 ## <a name="information-protection-policy-permissions"></a>Permissões de política de proteção de informações
 
 #### <a name="delegated-permissions"></a>Permissões delegadas
@@ -1567,6 +1602,7 @@ Para cenários mais complexos que envolvem várias permissões, confira [Cenári
 | _Policy.ReadWrite.AccessReview_ |   Ler e gravar a política de autorização da sua organização  | Permite ao aplicativo ler e gravar a política de revisão de acesso da sua organização em nome do usuário conectado. | Sim | Não |
 | _Policy.ReadWrite.ApplicationConfiguration_ | Leia e escreva as políticas de configuração dos aplicativos da sua organização | Permite que o aplicativo leia e grave as políticas de configuração dos aplicativos da sua organização em nome do usuário conectado. | Sim | Não |
 | _Policy.ReadWrite.AuthenticationFlows_ | Ler e gravar as políticas de fluxo de autenticação da sua organização | Permite que o aplicativo leia e grave as políticas de fluxo de autenticação, em nome do usuário conectado. | Sim | Não |
+| _Policy.ReadWrite.AuthenticationMethod_        | Ler e gravar políticas do método de autenticação       | Permite que o aplicativo leia e grave as políticas do método de autenticação, em nome do usuário conectado. O usuário conectado também deve ser atribuído a função de Administrador Global. | Sim | Não |
 | _Policy.ReadWrite.Authorization_ | Ler e gravar a política de autorização da sua organização | Permite que o aplicativo leia e grave a política de autorização da sua organização, em nome do usuário conectado.  Por exemplo, as políticas de autorização podem controlar algumas das permissões que a função do usuário pronto tem por padrão. | Sim | Não |
 | _Policy.ReadWrite.ConditionalAccess_ | Ler e gravar as políticas de acesso condicional da sua organização | Permite que o aplicativo leia e grave todas as políticas de acesso condicional em nome do usuário conectado. | Sim | Não |
 | _Policy.ReadWrite.ConsentRequest_ | Ler e escrever a política de solicitações de consentimento da sua organização | Permite que o aplicativo leia e grave a política de solicitações de consentimento da sua organização, em nome do usuário conectado. | Sim | Não |
@@ -1578,20 +1614,20 @@ Para cenários mais complexos que envolvem várias permissões, confira [Cenári
 
 #### <a name="application-permissions"></a>Permissões de aplicativos
 
-|   Permissão    |  Exibir Cadeia de Caracteres   |  Descrição | Consentimento Obrigatório do Administrador | Suporte da conta da Microsoft |
-|:----------------|:------------------|:-------------|:-----------------------|:----------------------------|
+|   Permissão    |  Exibir Cadeia de Caracteres   |  Descrição | Consentimento Obrigatório do Administrador |
+|:----------------|:------------------|:-------------|:-----------------------|
 | _Policy.Read.All_ | Leia as políticas da sua organização | Permite que o aplicativo leia todas as políticas da sua organização sem um usuário conectado. | Sim |
 | _Policy.Read.PermissionGrant_ | Ler políticas de concessão de consentimento e permissão | Permite que o aplicativo leia políticas relacionadas a concessões de consentimento e permissão para aplicativos, sem um usuário conectado. | Sim |
 | _Policy.Read.ApplicationConfiguration_ | Leia as políticas de configuração dos aplicativos da sua organização | Permite que o aplicativo leia todas as políticas de configuração dos aplicativos da sua organização sem um usuário conectado. | Sim |
-| _Policy.ReadWrite.AccessReview_ | Ler e gravar a política de autorização da sua organização | Permite ao aplicativo ler e gravar a política de revisão de acesso da sua organização, sem um usuário conectado. | Sim | Não |
-| _Policy.ReadWrite.ApplicationConfiguration_ | Leia e escreva as políticas de configuração dos aplicativos da sua organização | Permite que o aplicativo leia e grave as políticas de configuração dos aplicativos da sua organização, sem um usuário conectado. | Sim | Não |
+| _Policy.ReadWrite.AccessReview_ | Ler e gravar a política de autorização da sua organização | Permite ao aplicativo ler e gravar a política de revisão de acesso da sua organização, sem um usuário conectado. | Sim |
+| _Policy.ReadWrite.ApplicationConfiguration_ | Leia e escreva as políticas de configuração dos aplicativos da sua organização | Permite que o aplicativo leia e grave as políticas de configuração dos aplicativos da sua organização, sem um usuário conectado. | Sim |
 | _Policy.ReadWrite.AuthenticationFlows_ | Ler e gravar as políticas de fluxo de autenticação da sua organização | Permite que o aplicativo leia e grave todas as políticas de fluxo de autenticação do locatário, sem um usuário conectado. | Sim |
-| _Policy.ReadWrite.Authorization_ | Ler e gravar a política de autorização da sua organização | Permite que o aplicativo leia e grave a política de autorização da sua organização, em nome do usuário conectado.  Por exemplo, as políticas de autorização podem controlar algumas das permissões que a função do usuário pronto tem por padrão. | Sim | Não |
-| _Policy.ReadWrite.ConsentRequest_ | Ler e escrever a política de solicitações de consentimento da sua organização | Permite que o aplicativo leia e escreva a política de solicitações de consentimento da sua organização sem um usuário conectado. | Sim | Não |
+| _Policy.ReadWrite.AuthenticationMethod_   | Ler e gravar todas as políticas de método de autenticação    | Permite que o aplicativo leia e grave todas as políticas de método de autenticação do locatário, sem um usuário conectado. | Sim |
+| _Policy.ReadWrite.Authorization_ | Ler e gravar a política de autorização da sua organização | Permite que o aplicativo leia e grave a política de autorização da sua organização, em nome do usuário conectado.  Por exemplo, as políticas de autorização podem controlar algumas das permissões que a função do usuário pronto tem por padrão. | Sim |
+| _Policy.ReadWrite.ConsentRequest_ | Ler e escrever a política de solicitações de consentimento da sua organização | Permite que o aplicativo leia e escreva a política de solicitações de consentimento da sua organização sem um usuário conectado. | Sim |
 | _Policy.ReadWrite.FeatureRollout_ | Políticas de distribuição de recursos de leitura e gravação | Permite que o aplicativo leia e grave todas as políticas de distribuição de recursos sem um usuário conectado. Inclui habilidades para atribuir e remover usuários e grupos para a implantação de um recurso específico. | Sim |
 | _Policy.ReadWrite.PermissionGrant_ | Gerenciar as políticas de concessão de consentimento e permissão | Permite que o aplicativo gerencie as políticas relacionadas às concessões de consentimento e permissão para aplicativos, sem um usuário conectado. | Sim |
 | _Policy.ReadWrite.TrustFramework_ | Ler e gravar as políticas da estrutura de confiança da sua organização | Permite que o aplicativo leia e grave todas as políticas da estrutura de confiança da sua organização sem um usuário conectado. | Sim |
-| _Policy.ReadWrite.AuthenticationMethod_ | Ler e gravar as políticas de método de autenticação da sua organização | Permite que o aplicativo leia e grave as políticas do método de autenticação, sem um usuário conectado. | Sim |
 
 ### <a name="example-usage"></a>Exemplo de uso
 
@@ -1603,6 +1639,7 @@ Os seguintes usos são válidos para permissões delegadas e permissões de apli
 * _Policy.ReadWrite.AccessReview_: Ler e gravar as políticas de revisão de acesso da sua organização (`PATCH /beta/policies/accessReviewPolicy`)
 * _Policy.ReadWrite.ApplicationConfiguration_: Leia e grave as políticas de configuração dos aplicativos da sua organização (`POST /beta/policies/tokenLifetimePolicies`)
 * _Policy.ReadWrite.AuthenticationFlows_: Ler e gravar a política de fluxos de autenticação da sua organização (`PATCH /beta/policies/authenticationFlowsPolicy`)
+* _Policy.ReadWrite.AuthenticationMethod_: use as permissões para gerenciar as configurações na política de métodos de autenticação, incluindo habilitar e desabilitar métodos de autenticação, permitir que usuários e grupos usem esses métodos e definir outras configurações relacionadas aos métodos de autenticação que os usuários podem registrar e usar em um locatário.
 * _Policy.ReadWrite.ConditionalAccess_: Leia e escreva as políticas de acesso condicional da sua organização (`POST /beta/identity/conditionalAccess/policies`)
 * _Policy.ReadWrite.FeatureRollout_: Ler e gravar todas as políticas de distribuição de recursos da sua organização (`POST /beta/directory/featureRolloutPolicies`)
 * _Policy.ReadWrite.TrustFramework_: Leitura e gravação de todas as políticas da estrutura de confiança da sua organização (`POST /beta/trustFramework/policies`)
@@ -2431,7 +2468,7 @@ Com essas permissões, todos os métodos de autenticação podem ser lidos e ger
 
 Todas as permissões acima são válidas apenas para contas corporativas ou de estudante.
 
-Para que um aplicativo leia ou grave todas as configurações de implantação de atualização do Windows com permissões delegadas, o usuário conectado deve receber a função de Administrador Global, Administrador do Intune ou Administrador de Implantação do Windows Update. Para obter mais informações sobre funções de administrador, confira [Atribuindo funções de administrador no Azure Active Directory](/azure/active-directory/active-directory-assign-admin-roles).
+Para que um aplicativo leia ou grave todas as configurações de implantação com permissões delegadas, o usuário conectado deve receber a função de Administrador Global, Administrador do Intune ou Administrador de Implantação do Windows Update Para obter mais informações sobre funções de administrador, consulte [Atribuindo funções de administrador no Azure Active Directory](/azure/active-directory/active-directory-assign-admin-roles).
 
 ### <a name="example-usage"></a>Exemplo de uso
 
@@ -2443,24 +2480,7 @@ Para que um aplicativo leia ou grave todas as configurações de implantação d
 
 * _WindowsUpdates.ReadWrite.All_: crie uma implantação (`POST /beta/admin/windows/updates/deployments`).
 
-## <a name="authentication-methods-policy-permissions-preview"></a>Permissões de política de métodos de autenticação ([visualização](#permissions-availability-status))
-
-#### <a name="delegated-permissions"></a>Permissões delegadas
-
-|Permissão                              |Exibir Cadeia de Caracteres                        |Descrição        |Consentimento Obrigatório do Administrador | Suporte da conta da Microsoft |
-|:---------------------------------------|:-------------------------------------|:------------------|:----------------------|:----------------------------|
-|_Policy.ReadWrite.AuthenticationMethod_ (visualização)        |Leia e escreva todas as políticas de métodos de autenticação.       |Permite que o aplicativo leia e grave todas as políticas de métodos de autenticação em um locatário do Microsoft Azure Active Directory. Além disso, o usuário conectado deve ter a função de Administrador Global atribuída. |Sim|Não|
-
-#### <a name="application-permissions"></a>Permissões de aplicativos
-
-|Permissão                              |Exibir Cadeia de Caracteres                        |Descrição        |Consentimento Obrigatório do Administrador |
-|:---------------------------------------|:-------------------------------------|:------------------|:----------------------|
-|_Policy.ReadWrite.AuthenticationMethod_ (visualização privada)   |Leia e escreva todas as políticas de métodos de autenticação.    |Permite que o aplicativo leia e grave todas as políticas de métodos de autenticação em um locatário do Microsoft Azure Active Directory. |Sim|
-
-
-### <a name="remarks"></a>Comentários
-
-As permissões de política de métodos de autenticação são usadas para gerenciar configurações na política de métodos de autenticação, incluindo habilitar e desabilitar métodos de autenticação, permitir que usuários e grupos usem esses métodos e definir outras configurações relacionadas aos métodos de autenticação que os usuários podem registrar e usar em um locatário.
+---
 
 ## <a name="permission-scenarios"></a>Cenários de permissão
 
