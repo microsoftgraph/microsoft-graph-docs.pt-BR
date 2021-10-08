@@ -5,12 +5,12 @@ ms.localizationpriority: high
 author: preetikr
 ms.prod: security
 doc_type: resourcePageType
-ms.openlocfilehash: d0fb95047006dac5e94d247c4003bed225d3ff47
-ms.sourcegitcommit: 2a9b82dae63d8a998711679a379ae1fa89df80e0
+ms.openlocfilehash: 02bce24bc92fea5a83c6cb7dfc6df688f677731b
+ms.sourcegitcommit: 0a312d63934cdf9789a5648c2b3f348f48542ff4
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60214318"
+ms.lasthandoff: 10/07/2021
+ms.locfileid: "60220777"
 ---
 # <a name="use-the-microsoft-graph-security-api"></a>Usar a API de Segurança do Microsoft Graph
 
@@ -61,6 +61,24 @@ Alertas dos seguintes provedores estão disponíveis por meio da API de seguran�
 
 [Simulação de ataque e treinamento](/microsoft-365/security/office-365-security/attack-simulation-training) é parte do [Microsoft Defender para Office 365](/microsoft-365/security/office-365-security/defender-for-office-365?view=o365-worldwide&preserve-view=true). Esse serviço permite que os usuários em um locatário experimentem um ataque de phishing benigno realista e aprendam com ele. Simulação de engenharia social e experiências de treinamento para usuários finais ajudam a reduzir o risco de usuários serem violados por meio dessas técnicas de ataque. A API de simulação e treinamento de ataque permite que os administradores de locatário visualizem os exercícios e treinamentos de [simulação](simulation.md) lançados e obtenham [relatórios](report-m365defender-reports-overview.md) sobre os insights derivados dos comportamentos online dos usuários nas simulações de phishing.
 
+## <a name="incidents-preview"></a>Incidentes (visualização)
+
+Um incidente é uma coleção de alertas correlacionados e dados associados que compõem a história de um ataque. [Gerenciamento de incidente](/microsoft-365/security/defender/manage-incidents?view=o365-worldwide&preserve-view=true) faz parte do [Microsoft 365 Defender](/microsoft-365/security/defender/microsoft-365-defender?view=o365-worldwide&preserve-view=true) e está disponível no portal Microsoft 365 Defender ([https://security.microsoft.com/](https://security.microsoft.com/)).
+
+Os serviços e aplicativos do Microsoft 365 criam alertas quando detectam um evento ou atividade suspeito ou mal-intencionado. Alertas individuais fornecem dicas valiosas sobre um ataque concluído ou contínuo. No entanto, os ataques geralmente empregam várias técnicas contra diferentes tipos de entidades, como dispositivos, usuários e caixas de correio. O resultado são vários alertas para várias entidades em seu locatário.
+
+Como reunir os alertas individuais para obter informações sobre um ataque pode ser desafiador e demorado, Microsoft 365 Defender agrega automaticamente os alertas e suas informações associadas a um incidente.
+
+Agrupar alertas relacionados a um incidente oferece uma visão abrangente de um ataque. Por exemplo, você poderá ver:
+
+- Onde o ataque foi iniciado.
+- Quais táticas foram usadas.
+- Até que ponto o ataque afetou o locatário.
+- O escopo do ataque, como quantos dispositivos, usuários e caixas de correio foram afetados.
+- Todos os dados associados ao ataque.
+
+O recurso do [incidente](incident.md) e suas APIs permitem classificar por meio de incidentes para criar uma resposta de segurança cibernética informada. Ele expõe uma coleção de incidentes que foram sinalizados em sua rede, dentro do intervalo de tempo especificado na política de retenção do ambiente.
+
 ## <a name="information-protection"></a>Proteção de informações
 
 **Etiquetas** - As Etiquetas de proteção de informações fornecem detalhes sobre como aplicar corretamente uma etiqueta de sensibilidade às informações. A API da etiquetas de proteção de informações descreve a configuração das etiquetas de sensibilidade que se aplicam a um usuário ou locatário.
@@ -108,6 +126,8 @@ A seguir, há algumas das solicitações mais populares para trabalhar com a API
 |Listar simulações|[Listar simulações](../api/attacksimulationroot-list-simulations.md)|[https://graph.microsoft.com/beta/security/attackSimulation/simulations](https://developer.microsoft.com/graph/graph-explorer?request=security/attackSimulation/simulations&method=GET&version=beta&GraphUrl=https://graph.microsoft.com)|
 |Obter o relatório de visão geral da simulação|[Obter o relatório de visão geral da simulação](../api/simulationreportoverview-get.md)|[https://graph.microsoft.com/beta/security/attackSimulation/simulations/{id}/report/overview](https://developer.microsoft.com/graph/graph-explorer?request=security/attackSimulation/simulations/{id}/report/overview&method=GET&version=beta&GraphUrl=https://graph.microsoft.com)|
 |Listar os relatório dos usuários de simulação|[Listar os relatório dos usuários de simulação](../api/usersimulationdetails-list.md)|[https://graph.microsoft.com/beta/security/attackSimulation/simulations/{id}/report/simulationUsers](https://developer.microsoft.com/graph/graph-explorer?request=security/attackSimulation/simulations/{id}/report/simulationUsers&method=GET&version=beta&GraphUrl=https://graph.microsoft.com)|
+| **Incidentes (visualização)**|||
+| Listar incidentes | [Listar incidentes](../api/security-list-incidents.md) | [https://graph.microsoft.com/beta/security/incidents](https://developer.microsoft.com/graph/graph-explorer?request=security/incidents&method=GET&version=beta&GraphUrl=https://graph.microsoft.com) |
 | **Classificações de segurança**|||
 |Listar classificações de segurança|[Listar secureScores](../api/securescores-list.md)|[https://graph.microsoft.com/beta/security/secureScores](https://developer.microsoft.com/graph/graph-explorer?request=security/secureScores&method=GET&version=beta&GraphUrl=https://graph.microsoft.com)|
 | **Perfis de controle da classificação de segurança**|||
@@ -148,7 +168,7 @@ Precisa de mais ideias? Veja [como alguns de nossos parceiros usam o Microsoft G
 
 Explore outras opções para se conectar com a API de segurança da Microsoft Graph:
 
-- [Conectores de segurança do Microsoft Graph para Aplicativos de Lógica, Flow e Power Apps](https://aka.ms/graphsecurityconnectors)
+- [Conectores de Segurança do Microsoft Graph para Aplicativos de Lógica, Flow e PowerApps](https://aka.ms/graphsecurityconnectors)
 - [Conector de segurança do Microsoft Graph para Power BI](https://aka.ms/graphsecuritypowerbiconnectordoc)
 - [Exemplos de bloco de anotações Jupyter](https://aka.ms/graphsecurityjupyternotebooks)
 
