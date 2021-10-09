@@ -1,16 +1,16 @@
 ---
 title: Excluir anexo
-description: Exclua um anexo de um evento de calendário, mensagem, tarefa do Outlook ou postagem.
-localization_priority: Normal
+description: Exclua um anexo de um evento de calendário, mensagem, Outlook tarefa ou postagem.
+ms.localizationpriority: medium
 doc_type: apiPageType
 ms.prod: outlook
 author: abheek-das
-ms.openlocfilehash: 08f07b7c572f2874eefc636de9c35d8961039341
-ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
+ms.openlocfilehash: 8dbb8fe04455a9432b8548333ebc9615fa3fbb97
+ms.sourcegitcommit: 11be55b40804b07f4c422f09f601afa97c7d31ed
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50438614"
+ms.lasthandoff: 10/09/2021
+ms.locfileid: "60255981"
 ---
 # <a name="delete-attachment"></a>Excluir anexo
 
@@ -20,7 +20,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [outlooktask-deprecate-sharedfeature](../../includes/outlooktask-deprecate-sharedfeature.md)]
 
-Excluir um anexo de um evento de calendário [do usuário,](../resources/event.md) [mensagem,](../resources/message.md) [tarefa do Outlook](../resources/outlooktask.md)ou [postagem](../resources/post.md).
+Exclua um anexo de um evento de calendário [do usuário,](../resources/event.md) [mensagem,](../resources/message.md) [Outlook tarefa](../resources/outlooktask.md)ou [poste](../resources/post.md).
 
 ## <a name="permissions"></a>Permissões
 
@@ -97,7 +97,7 @@ DELETE /me/mailFolders/{id}/childFolders/{id}/.../messages/{id}/attachments/{id}
 DELETE /users/{id | userPrincipalName}/mailFolders/{id}/childFolders/{id}/messages/{id}/attachments/{id}
 ```
 
-Anexos de uma [tarefa do Outlook.](../resources/outlooktask.md)
+Anexos para uma tarefa [Outlook.](../resources/outlooktask.md)
 <!-- { "blockType": "ignored" } -->
 
 ```http
@@ -115,9 +115,9 @@ DELETE /groups/{id}/conversations/{id}/threads/{id}/posts/{id}/attachments/{id}
 
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
 
-| Nome       | Tipo | Descrição|
-|:---------------|:--------|:----------|
-| Autorização  | string  | {token} de portador. Obrigatório. |
+| Nome       | Descrição|
+|:---------------|:----------|
+| Autorização  | {token} de portador. Obrigatório. |
 
 ## <a name="request-body"></a>Corpo da solicitação
 

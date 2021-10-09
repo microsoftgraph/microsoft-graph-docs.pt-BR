@@ -5,12 +5,12 @@ author: Alice-at-Microsoft
 ms.localizationpriority: medium
 ms.prod: w10
 doc_type: conceptualPageType
-ms.openlocfilehash: df749d8e9898cbf3bc9b9dcbab24a2c64a776946
-ms.sourcegitcommit: 6ae8c124fac63a195ccf516c9cff739f730b6b13
+ms.openlocfilehash: 9bc32b4f49a2cb985d1b19f49e72d2c373bb4e6e
+ms.sourcegitcommit: 11be55b40804b07f4c422f09f601afa97c7d31ed
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/02/2021
-ms.locfileid: "60083850"
+ms.lasthandoff: 10/09/2021
+ms.locfileid: "60255938"
 ---
 # <a name="deploy-a-feature-update-using-the-windows-update-for-business-deployment-service"></a>Implantar uma atualização de recurso usando o serviço de implantação Windows Atualização para Empresas
 
@@ -73,9 +73,6 @@ Content-Type: application/json
 Uma [implantação](/graph/api/resources/windowsupdates-deployment) especifica o conteúdo a ser implantado, como e quando implantar o conteúdo e os dispositivos direcionados. Quando uma implantação é criada, uma audiência de implantação é criada automaticamente como uma relação.
 
 A seguir está um exemplo de criação de uma implantação de uma atualização de recursos, com configurações opcionais configurando o [cronograma](windowsupdates-schedule-deployment.md) de implantação e as regras [de monitoramento.](windowsupdates-manage-monitoring-rules.md) Os dispositivos direcionados são especificados na próxima etapa.
-
-> [!NOTE]
-> Se você não especificar uma regra [de monitoramento](/graph/api/resources/windowsupdates-monitoringrule) ao criar uma implantação, uma regra de monitoramento padrão será criada. Esta regra de monitoramento padrão tem **um sinal** de , `rollback` um **limite** de e `20` uma **ação** de `alertError` . Em uma atualização futura da API, esse comportamento mudará e uma regra de monitoramento padrão não será criada.
 
 ### <a name="request"></a>Solicitação
 

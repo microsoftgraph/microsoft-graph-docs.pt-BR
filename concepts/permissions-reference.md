@@ -4,12 +4,12 @@ description: O Microsoft Graph expõe as permissões granulares que controlam o 
 author: jackson-woods
 ms.localizationpriority: high
 ms.custom: graphiamtop20, scenarios:getting-started
-ms.openlocfilehash: ce99f64c4bace1893a4d93e8d3d0fb64a82c6fd2
-ms.sourcegitcommit: 0a312d63934cdf9789a5648c2b3f348f48542ff4
+ms.openlocfilehash: 1d39965eb95fca26ef29d513fbfa76672374941a
+ms.sourcegitcommit: 11be55b40804b07f4c422f09f601afa97c7d31ed
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/07/2021
-ms.locfileid: "60220483"
+ms.lasthandoff: 10/09/2021
+ms.locfileid: "60256071"
 ---
 # <a name="microsoft-graph-permissions-reference"></a>Referência de permissões do Microsoft Graph
 
@@ -269,16 +269,16 @@ A permissão _Application.ReadWrite.OwnedBy_ permite as mesmas operações que _
 
 #### <a name="delegated"></a>Delegado
 
-* _Application.Read.All_: listar todos os aplicativos (`GET /beta/applications`)
-* _Application.ReadWrite.All_: atualizar uma entidade de serviço (`PATCH /beta/servicePrincipals/{id}`)
+* _Application.Read.All_: listar todos os aplicativos (`GET /v1.0/applications`)
+* _Application.ReadWrite.All_: atualizar uma entidade de serviço (`PATCH /v1.0/servicePrincipals/{id}`)
 
 #### <a name="application"></a>Aplicativo
 
-* _Application.Read.All_: listar todos os aplicativos (`GET /beta/applications`)
-* _Application.ReadWrite.All_: excluir uma entidade de serviço (`DELETE /beta/servicePrincipals/{id}`)
-* _Application.ReadWrite.OwnedBy_: criar um aplicativo (`POST /beta/applications`)
-* _Application.ReadWrite.OwnedBy_: Listar todos os aplicativos pertencentes ao aplicativo da chamada (`GET /beta/servicePrincipals/{id}/ownedObjects`)
-* _Application.ReadWrite.OwnedBy_: adicionar outro proprietário a um aplicativo próprio (`POST /applications/{id}/owners/$ref`).
+* _Application.Read.All_: listar todos os aplicativos (`GET /v1.0/applications`)
+* _Application.ReadWrite.All_: excluir uma entidade de serviço (`DELETE /v1.0/servicePrincipals/{id}`)
+* _Application.ReadWrite.OwnedBy_: criar um aplicativo (`POST /v1.0/applications`)
+* _Application.ReadWrite.OwnedBy_: Listar todos os aplicativos pertencentes ao aplicativo da chamada (`GET /v1.0/servicePrincipals/{id}/ownedObjects`)
+* _Application.ReadWrite.OwnedBy_: adicionar outro proprietário a um aplicativo próprio (`POST /v1.0/applications/{id}/owners/$ref`).
     > OBSERVAÇÃO: isso pode exigir permissões adicionais.
 
 ---
@@ -1104,41 +1104,6 @@ Para cenários mais complexos que envolvem várias permissões, confira [Cenári
 
 ---
 
-## <a name="incidents-permissions"></a>Permissões de incidentes
-
-#### <a name="delegated-permissions"></a>Permissões delegadas
-
-|   Permissão    |  Exibir Cadeia de Caracteres   |  Descrição | Consentimento Obrigatório do Administrador | Suporte da conta da Microsoft |
-|:----------------|:------------------|:-------------|:-----------------------|:--------------|
-| _Incidents.Read.All_ | Ler incidentes | Permite que o aplicativo leia incidentes em nome do usuário conectado. | Sim | Não |
-| _Incidents.ReadWrite.All_ | Ler e gravar em incidentes | Permite que o aplicativo leia e grave incidentes em nome do usuário conectado. | Sim | Não |
-
-
-#### <a name="application-permissions"></a>Permissões de aplicativos
-
-|   Permissão    |  Exibir Cadeia de Caracteres   |  Descrição | Consentimento Obrigatório do Administrador |
-|:----------------|:------------------|:-------------|:-----------------------|
-| _Incidents.Read.All_ | Ler todos os incidentes | Permite ao aplicativo ler todos os incidentes sem um usuário conectado. | Sim |
-| _Incidents.ReadWrite.All_ | Ler e gravar em todos os incidentes | Permite que o aplicativo leia e grave em todos os incidentes sem um usuário conectado. | Sim |
-
-### <a name="remarks"></a>Comentários
-
-Permissões de incidentes são válidas somente para contas corporativas ou de estudante.
-
-### <a name="example-usage"></a>Exemplo de uso
-
-#### <a name="delegated"></a>Delegado
-
-* _Incidents.Read.All_: ler todos os incidentes em uma organização que o usuário tem permissão para ler (`GET /security/incidents`)
-* _Incidents.ReadWrite.All_: ler e gravar todos os incidentes em uma organização que o usuário tem permissão para ler e gravar (`GET /security/incidents`)
-
-#### <a name="application"></a>Aplicativo
-
-* _Incidents.Read.All_: ler todos os incidentes em uma organização (`GET /security/incidents`)
-* _Incidents.ReadWrite.All_: ler e gravar todos os incidentes em uma organização (`GET /security/incidents`)
-
----
-
 ## <a name="information-protection-policy-permissions"></a>Permissões de política de proteção de informações
 
 #### <a name="delegated-permissions"></a>Permissões delegadas
@@ -1356,7 +1321,7 @@ _Notes.ReadWrite_ e _Notes.ReadWrite.All_ também permitem que o aplicativo modi
 Para contas corporativas ou de estudante, _Notes.Read.All_ e _Notes.ReadWrite.All_ permitem que o aplicativo acesse o conteúdo do OneNote de outros usuários ao qual o usuário conectado tenha permissão dentro da organização.
 
 ### <a name="example-usage"></a>Exemplo de uso
-#### <a name="delegated"></a>Delegado
+#### <a name="delegated"></a>Delegated
 
 * _Notes.Create_: Criar novos blocos de anotações para o usuário conectado (`POST /me/onenote/notebooks`).
 * _Notes.Read_: Criar blocos de anotações para o usuário conectado (`GET /me/onenote/notebooks`).
@@ -2472,15 +2437,13 @@ Para que um aplicativo leia ou grave todas as configurações de implantação c
 
 ### <a name="example-usage"></a>Exemplo de uso
 
-#### <a name="delegated"></a>Delegado
+#### <a name="delegated"></a>Delegated
 
 * _WindowsUpdates.ReadWrite.All_: crie uma implantação (`POST /beta/admin/windows/updates/deployments`).
 
 #### <a name="application"></a>Aplicativo
 
 * _WindowsUpdates.ReadWrite.All_: crie uma implantação (`POST /beta/admin/windows/updates/deployments`).
-
----
 
 ## <a name="permission-scenarios"></a>Cenários de permissão
 

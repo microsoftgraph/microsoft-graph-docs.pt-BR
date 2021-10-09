@@ -5,12 +5,12 @@ author: dougeby
 ms.localizationpriority: medium
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: c5665ea2c770f09c9adf213a2bede54f073fabe0
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 43d8bef4d28a32f387e8dce6430521753732ea01
+ms.sourcegitcommit: 11be55b40804b07f4c422f09f601afa97c7d31ed
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59128274"
+ms.lasthandoff: 10/09/2021
+ms.locfileid: "60255924"
 ---
 # <a name="iosupdatesinstallstatus-enum-type"></a>Tipo de número iosUpdatesInstallStatus
 
@@ -39,7 +39,7 @@ Ainda não documentado
 |installPhoneCallInProgress|-2016330703|Ainda não documentado|
 |installFailed|-2016330702|Ainda não documentado|
 |notSupportedOperation|-2016330701|Ainda não documentado|
-|sharedDeviceUserLoggedInError|-2016330699|Ainda não documentado|
+|sharedDeviceUserLoggedInError|-2016324035|Ainda não documentado|
 |deviceOsHigherThanDesiredOsVersion|-2016330696|Ainda não documentado|
 
 

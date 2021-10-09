@@ -1,16 +1,16 @@
 ---
 title: Excluir registeredOwners
 description: Remova um usuário como proprietário registrado do dispositivo.
-localization_priority: Normal
+ms.localizationpriority: medium
 author: michaelrm97
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: 1255a4ba900579d3ce343b3a8acfb46a1752bc32
-ms.sourcegitcommit: 998c63e6290cfb5ad4a6bd3eb3e249d282f962a3
+ms.openlocfilehash: a8abb65f4ce55d4d8d30fdd571bda7f4a846f247
+ms.sourcegitcommit: 11be55b40804b07f4c422f09f601afa97c7d31ed
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58531303"
+ms.lasthandoff: 10/09/2021
+ms.locfileid: "60256512"
 ---
 # <a name="delete-registeredowner"></a>Excluir registeredOwner
 
@@ -37,9 +37,9 @@ DELETE /devices/{id}/registeredOwners/{id}/$ref
 ```
 
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
-| Nome       | Tipo | Descrição|
-|:-----------|:------|:----------|
-| Autorização  | string  | {token} de portador. Obrigatório. |
+| Nome       | Descrição|
+|:-----------|:------|
+| Autorização  | {token} de portador. Obrigatório. |
 
 ## <a name="request-body"></a>Corpo da solicitação
 Não forneça um corpo de solicitação para esse método.

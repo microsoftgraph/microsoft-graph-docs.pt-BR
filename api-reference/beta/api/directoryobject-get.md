@@ -2,15 +2,15 @@
 title: Obter directoryObject
 description: Recupere as propriedades e as relações do objeto directoryobject.
 author: keylimesoda
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: 28714b7c1473c1e4ffcdc7a82bc4fa2b2115a95e
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: b6e635419d0f63645dd0714a2540d6d60f62a182
+ms.sourcegitcommit: 11be55b40804b07f4c422f09f601afa97c7d31ed
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52046864"
+ms.lasthandoff: 10/09/2021
+ms.locfileid: "60256372"
 ---
 # <a name="get-directoryobject"></a>Obter directoryObject
 
@@ -18,7 +18,8 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Recupere as propriedades e as relações do objeto directoryobject.
+Recupere as propriedades e os relacionamentos do objeto directoryObject.
+
 ## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
@@ -33,22 +34,25 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 ```http
 GET /directoryObjects/{id}
 ```
-## <a name="optional-query-parameters"></a>Parâmetros de consulta opcionais
-Este método dá suporte a [Parâmetros de consulta OData](/graph/query-parameters) para ajudar a personalizar a resposta.
+
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
-| Nome       | Tipo | Descrição|
-|:-----------|:------|:----------|
-| Autorização  | string  | {token} de portador. Obrigatório. |
+
+| Nome       | Descrição|
+|:-----------|:------|
+| Autorização  | {token} de portador. Obrigatório. |
 
 ## <a name="request-body"></a>Corpo da solicitação
+
 Não forneça um corpo de solicitação para esse método.
 
 ## <a name="response"></a>Resposta
 
 Se bem-sucedido, este método retorna um código de resposta `200 OK` e um objeto [directoryObject](../resources/directoryobject.md) no corpo da resposta.
+
 ## <a name="example"></a>Exemplo
-##### <a name="request"></a>Solicitação
-Este é um exemplo da solicitação.
+
+### <a name="request"></a>Solicitação
+Este é um exemplo de solicitação.
 
 # <a name="http"></a>[HTTP](#tab/http)
 <!-- {
@@ -76,8 +80,11 @@ GET https://graph.microsoft.com/beta/directoryObjects/{id}
 
 ---
 
-##### <a name="response"></a>Resposta
-Veja a seguir um exemplo da resposta. Observação: o objeto de resposta mostrado aqui pode ser encurtado para legibilidade.
+### <a name="response"></a>Resposta
+
+Este é um exemplo de resposta. 
+>**Observação:** o objeto de resposta mostrado aqui pode ser encurtado para legibilidade.
+
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -86,10 +93,30 @@ Veja a seguir um exemplo da resposta. Observação: o objeto de resposta mostrad
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 22
 
 {
-  "id": "id-value"
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#directoryObjects/$entity",
+    "@odata.type": "#microsoft.graph.user",
+    "@odata.id": "https://graph.microsoft.com/v2/84841066-274d-4ec0-a5c1-276be684bdd3/directoryObjects/6ea91a8d-e32e-41a1-b7bd-d2d185eed0e0/Microsoft.DirectoryServices.User",
+    "id": "6ea91a8d-e32e-41a1-b7bd-d2d185eed0e0",
+    "accountEnabled": true,
+    "displayName": "Conf Room Adams",
+    "mail": "Adams@Contoso.com",
+    "mailNickname": "Adams",
+    "proxyAddresses": [
+        "SMTP:Adams@Contoso.com"
+    ],
+    "refreshTokensValidFromDateTime": "2021-08-09T09:30:59Z",
+    "signInSessionsValidFromDateTime": "2021-08-09T09:30:59Z",
+    "userPrincipalName": "Adams@Contoso.com",
+    "userType": "Member",
+    "identities": [
+        {
+            "signInType": "userPrincipalName",
+            "issuer": "Contoso.com",
+            "issuerAssignedId": "Adams@Contoso.com"
+        }
+    ]
 }
 ```
 

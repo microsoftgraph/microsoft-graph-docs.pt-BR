@@ -2,15 +2,15 @@
 title: Adicionar membro da função de diretório
 description: Crie um novo membro de função de diretório.
 author: abhijeetsinha
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: 135640887f43952a83f93b1b4267645a228383c4
-ms.sourcegitcommit: d0d2d17a31cbcb01b1ae18bd6a18c39d7077069a
+ms.openlocfilehash: ad7ae6e9c269a23a6aeaa7a06d2daa293ff6a439
+ms.sourcegitcommit: 11be55b40804b07f4c422f09f601afa97c7d31ed
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/24/2021
-ms.locfileid: "53118494"
+ms.lasthandoff: 10/09/2021
+ms.locfileid: "60256281"
 ---
 # <a name="add-directory-role-member"></a>Adicionar membro da função de diretório
 
@@ -38,9 +38,9 @@ POST /directoryRoles/{role-id}/members/$ref
 POST /directoryRoles/roleTemplateId={roleTemplateId}/members/$ref
 ```
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
-| Nome       | Tipo | Descrição|
-|:---------------|:--------|:----------|
-| Autorização  | string  | {token} de portador. Obrigatório. |
+| Nome       | Descrição|
+|:---------------|:----------|
+| Autorização  | {token} de portador. Obrigatório. |
 | Content-type | application/json. Obrigatório. |
 
 ## <a name="request-body"></a>Corpo da solicitação

@@ -2,15 +2,15 @@
 title: Obter directoryRole
 description: Recupere as propriedades de um objeto directoryRole.
 author: abhijeetsinha
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: 905afd750bce1976a25cd5e759df4659cbcb5fe0
-ms.sourcegitcommit: d0d2d17a31cbcb01b1ae18bd6a18c39d7077069a
+ms.openlocfilehash: e2eaf7702b36e4b8eb060b0e60881ef8bdffa602
+ms.sourcegitcommit: 11be55b40804b07f4c422f09f601afa97c7d31ed
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/24/2021
-ms.locfileid: "53118529"
+ms.lasthandoff: 10/09/2021
+ms.locfileid: "60256288"
 ---
 # <a name="get-directoryrole"></a>Obter directoryRole
 
@@ -41,9 +41,9 @@ GET /directoryRoles/roleTemplateId={roleTemplateId}
 Este método não **dá suporte** a nenhum parâmetro de [consulta OData](/graph/query-parameters) para ajudar a personalizar a resposta (por exemplo, `$filter` não há suporte aqui).
 
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
-| Nome       | Tipo | Descrição|
-|:-----------|:------|:----------|
-| Autorização  | string  | {token} de portador. Obrigatório. |
+| Nome       | Descrição|
+|:-----------|:------|
+| Autorização  | {token} de portador. Obrigatório. |
 
 ## <a name="request-body"></a>Corpo da solicitação
 Não forneça um corpo de solicitação para esse método.

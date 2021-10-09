@@ -5,21 +5,18 @@ author: Alice-at-Microsoft
 ms.localizationpriority: medium
 ms.prod: w10
 doc_type: conceptualPageType
-ms.openlocfilehash: 1e4f0538a9e7a5d47b070514685a11860a86ac35
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: eaef1105d5163bd0c0ab1e4859ef9d4979eb7bee
+ms.sourcegitcommit: 11be55b40804b07f4c422f09f601afa97c7d31ed
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59117526"
+ms.lasthandoff: 10/09/2021
+ms.locfileid: "60255945"
 ---
 # <a name="manage-monitoring-rules-for-a-feature-update-deployment-using-the-windows-update-for-business-deployment-service"></a>Gerenciar regras de monitoramento para uma implantação de atualização de recursos usando o serviço de implantação Windows Update for Business
 
 Para implantações iniciadas pelo serviço de implantação, você pode usar uma regra de monitoramento para configurar alertas e ações automatizadas com base em sinais de implantação.
 
 As regras de monitoramento são compatíveis com implantações de Windows 10 de recursos.
-
-> [!NOTE]
-> Se você não especificar uma regra [de monitoramento](/graph/api/resources/windowsupdates-monitoringrule) ao criar uma [implantação,](/graph/api/resources/windowsupdates-deployment)uma regra de monitoramento padrão será criada. Esta regra de monitoramento padrão tem **um sinal** de , `rollback` um **limite** de e `20` uma **ação** de `alertError` . Em uma atualização futura da API, esse comportamento mudará e uma regra de monitoramento padrão não será criada.
 
 ## <a name="step-1-create-a-monitoring-rule"></a>Etapa 1: Criar uma regra de monitoramento
 

@@ -1,18 +1,18 @@
 ---
-title: Verificar grupos de membros
+title: 'directoryObject: checkMemberGroups'
 description: Verifique se há associação em uma lista especificada de grupos e retorna dessa lista esses grupos
-localization_priority: Normal
+ms.localizationpriority: medium
 author: keylimesoda
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: 0b52e42e3c610bf0f0020a2587ac7b649fc180be
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: 3d9518bcb2efe12146480ef76b5fc5cea43e75e8
+ms.sourcegitcommit: 11be55b40804b07f4c422f09f601afa97c7d31ed
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52046878"
+ms.lasthandoff: 10/09/2021
+ms.locfileid: "60256192"
 ---
-# <a name="check-member-groups"></a>Verificar grupos de membros
+# <a name="directoryobject-checkmembergroups"></a>directoryObject: checkMemberGroups
 
 Namespace: microsoft.graph
 
@@ -21,6 +21,7 @@ Namespace: microsoft.graph
 Verifique se há associação em uma lista especificada de grupos e retorna dessa lista os grupos dos quais o usuário, grupo, entidade de serviço ou objeto de diretório especificado é um membro. Esta função é transitiva.
 
 ## <a name="permissions"></a>Permissões
+
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 
@@ -30,14 +31,18 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |Delegado (conta pessoal da Microsoft) | Sem suporte.    |
 |Aplicativo | User.Read.All, Directory.Read.All |
 
-Use as diretrizes de cenário a seguir para ajudar a determinar quais tipos de permissão usar:
-- Use as permissões User.Read e GroupMember.Read.All ou User.Read e Group.Read.All para obter associações de grupo para o usuário associado.
-- Use User.ReadBasic.All e GroupMember.Read.All, User.Read.All e GroupMember.Read.All, User.ReadBasic.All e Group.Read.All ou User.Read.All e Group.Read.All para obter associações de grupo para qualquer usuário.
-- Use a permissão GroupMember.Read.All ou Group.Read.All para obter associações de grupo para um grupo.
-- Use as permissões Application.ReadWrite.All e GroupMember.Read.All ou Application.ReadWrite.All e Group.Read.All para obter associações de grupo para uma entidade de serviço.
-- Use a permissão Directory.Read.All para obter associações de grupo para um objeto de diretório.
+A tabela a seguir lista os tipos de permissão a usar para cenários diferentes.
+
+| Cenário | Permissões |
+|:-|:-|
+| Para obter associações de grupo para o usuário de entrada | Use um dos seguintes conjuntos de permissões: <br/> <li> **User.Read** e **GroupMember.Read.All** <li>**User.Read** e **Group.Read.All** |
+| Para obter associações de grupo para qualquer usuário | Use um dos seguintes conjuntos de permissões: <br/> <li> **User.ReadBasic.All** e **GroupMember.Read.All** <li>**User.Read.All** e **GroupMember.Read.All** <li>**User.ReadBasic.All** e **Group.Read.All** <li>**User.Read.All** e **Group.Read.All** |
+| Para obter associações de grupo para um grupo | Use a **permissão GroupMember.Read.All** **ou Group.Read.All.** |
+| Para obter associações de grupo para uma entidade de serviço | Use um dos seguintes conjuntos de permissões <br/> <li>**Application.ReadWrite.All** e **GroupMember.Read.All** <li>**Application.ReadWrite.All** e **Group.Read.All** |
+| Para obter associações de grupo para um objeto directory | Use a **permissão Directory.Read.All.** |
 
 ## <a name="http-request"></a>Solicitação HTTP
+
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /me/checkMemberGroups
@@ -47,12 +52,14 @@ POST /servicePrincipals/{id}/checkMemberGroups
 POST /directoryObjects/{id}/checkMemberGroups
 ```
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
-| Nome       | Tipo | Descrição|
-|:---------------|:--------|:----------|
-| Autorização  | string  | {token} de portador. Obrigatório. |
+
+| Nome       |Descrição|
+|:---------------|:--------|
+| Autorização  | {token} de portador. Obrigatório. |
 | Content-Type  | application/json  |
 
 ## <a name="request-body"></a>Corpo da solicitação
+
 Forneça um objeto JSON com os seguintes parâmetros no corpo da solicitação.
 
 | Parâmetro    | Tipo   |Descrição|
@@ -65,7 +72,7 @@ Se bem-sucedido, este método retorna o código de resposta `200 OK` e o objeto 
 
 ## <a name="example"></a>Exemplo
 
-##### <a name="request"></a>Solicitação
+### <a name="request"></a>Solicitação
 
 
 # <a name="http"></a>[HTTP](#tab/http)
@@ -103,8 +110,8 @@ Content-type: application/json
 ---
 
 
-##### <a name="response"></a>Resposta
-Observação: o objeto de resposta mostrado aqui pode ser encurtado para legibilidade.
+### <a name="response"></a>Resposta
+>**Observação:** o objeto de resposta mostrado aqui pode ser encurtado para legibilidade.
 <!-- {
   "blockType": "response",
   "truncated": true,

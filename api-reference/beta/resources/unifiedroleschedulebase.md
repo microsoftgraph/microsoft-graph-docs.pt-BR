@@ -5,16 +5,18 @@ author: shauliu1
 ms.localizationpriority: medium
 ms.prod: governance
 doc_type: resourcePageType
-ms.openlocfilehash: b65d7d41feccfa8336ea347936433da2437f0f6b
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: e93caa68371527a06d18a92249ed285af1fb6e19
+ms.sourcegitcommit: 11be55b40804b07f4c422f09f601afa97c7d31ed
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59050877"
+ms.lasthandoff: 10/09/2021
+ms.locfileid: "60256540"
 ---
 # <a name="unifiedroleschedulebase-resource-type"></a>Tipo de recurso unifiedRoleScheduleBase
 
 Namespace: microsoft.graph
+
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Propriedade base de agendamentos de função unificada que combina agendas de atribuição de função unificada e agendas de qualificação de função unificada
 
@@ -26,7 +28,7 @@ Propriedade base de agendamentos de função unificada que combina agendas de at
 | createdDateTime  | DateTimeOffset | Hora em que a agenda foi criada. |
 | createdUsing     | Cadeia de Caracteres         | Identificador da roleAssignmentScheduleRequest que criou essa agenda. |
 | directoryScopeId | Cadeia de Caracteres         | Identificador do objeto directory que representa o escopo da atribuição. O escopo de uma atribuição determina o conjunto de recursos para os quais a entidade foi concedida acesso. Os escopos de diretório são escopos compartilhados armazenados no diretório que são compreendidos por vários aplicativos. Use `/` para escopo de todo o locatário. Use **appScopeId** para limitar o escopo somente a um aplicativo. |
-| id               | Cadeia de caracteres         | O identificador exclusivo para unifiedRoleAssignmentSchedule. Chave, não anulada, somente leitura. |
+| id               | String         | O identificador exclusivo para unifiedRoleAssignmentSchedule. Chave, não anulada, somente leitura. |
 | modifiedDateTime | DateTimeOffset | Última vez que a agenda foi atualizada. |
 | principalId      | Cadeia de Caracteres         | Identificador da entidade à qual a atribuição está sendo concedida. Suporta `$filter` (`eq`). |
 | roleDefinitionId | Cadeia de Caracteres         | Identificador do unifiedRoleDefinition para o que a atribuição se destina. Somente leitura. Suporta `$filter` (`eq`). |
