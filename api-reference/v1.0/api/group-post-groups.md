@@ -5,12 +5,12 @@ author: Jordanndahl
 ms.localizationpriority: high
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: 24aff823670dbc48eee5a3149c0bcb4a21ac9bc8
-ms.sourcegitcommit: 08e9b0bac39c1b1d2c8a79539d24aaa93364baf2
+ms.openlocfilehash: 5e9df2c581b48d5e937202d829c0576866ca6abc
+ms.sourcegitcommit: 6cea9bc17d3859e475a74c4a6f661f848e837e89
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/24/2021
-ms.locfileid: "59507470"
+ms.lasthandoff: 10/08/2021
+ms.locfileid: "60240961"
 ---
 # <a name="create-group"></a>Criar grupo
 
@@ -25,7 +25,7 @@ Esta operação retorna, por padrão, apenas um subconjunto das propriedades de 
 
 Para obter propriedades _não_ retornadas por padrão, execute uma [operação GET](group-get.md) e especifique as propriedades em uma opção de consulta `$select` do OData.
 
-> **Observação**: Embora o Microsoft Teams tenha como base grupos do Microsoft 365, atualmente não é possível criar uma equipe por meio desta API. Você pode usar outras APIs de grupos para gerenciar uma equipe que foi criada na interface do usuário do Microsoft Teams.
+> **Observação**: embora o Microsoft Teams seja um desenvolvimento dos grupos do Microsoft 365, atualmente não consegue criar uma equipe por meio dessa API. Você pode usar outras APIs de grupos para gerenciar uma equipe que foi criada na interface de usuário do Microsoft Teams.
 
 ## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
@@ -57,8 +57,8 @@ A tabela a seguir mostra as propriedades necessárias ao criar o [grupo](../reso
 | Propriedade | Tipo | Descrição|
 |:---------------|:--------|:----------|
 | displayName | Cadeia de caracteres | O nome a ser exibido no livro de endereços do grupo. Comprimento máximo: 256 caracteres. Necessário. |
-| mailEnabled | Boolean | Definir como `true` para grupos habilitados para email. Obrigatório. |
-| mailNickname | String | O alias de email do grupo. Máx. comprimento: 64 caracteres. Essa propriedade pode conter apenas caracteres no [conjunto de caracteres ASCII de 0 a 127](/office/vba/language/reference/user-interface-help/character-set-0127), exceto o seguinte: ` @ () \ [] " ; : . <> , SPACE`. Obrigatório. |
+| mailEnabled | Boolean | Definir como `true` para grupos habilitados para e-mail. Obrigatório. |
+| mailNickname | String | O alias de email do grupo, exclusivo na organização. O comprimento máximo é de 64 caracteres. Essa propriedade pode conter apenas caracteres no [conjunto de caracteres ASCII de 0 a 127](/office/vba/language/reference/user-interface-help/character-set-0127), exceto o seguinte: ` @ () \ [] " ; : . <> , SPACE`. Obrigatório. |
 | securityEnabled | Boolean | Definido como `true` para grupos habilitados para segurança, incluindo Microsoft 365 grupos. Obrigatório.  **Observação:** os grupos criados usando o portal do Microsoft Azure sempre terão **securityEnabled** definido inicialmente como `true`.|
 
 > [!IMPORTANT]
@@ -285,7 +285,7 @@ Content-type: application/json
 
 #### <a name="request"></a>Solicitação
 
-Este é um exemplo de solicitação. O usuário ou aplicativo de chamada deve receber a permissão *RoleManagement.ReadWrite.Directory* para definir a propriedade **isAssignableToRole** ou atualizar a associação desses grupos.
+Este é um exemplo da solicitação. O usuário ou aplicativo de chamada precisam receber a permissão *RoleManagement.ReadWrite.Directory* para definir a propriedade **isAssignableToRole** ou atualizar sua afiliação a esses grupos.
 
 
 # <a name="http"></a>[HTTP](#tab/http)

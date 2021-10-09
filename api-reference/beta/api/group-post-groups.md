@@ -5,12 +5,12 @@ author: Jordanndahl
 ms.localizationpriority: high
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: fe3d386153d04df9ea716d2f624afd2a89f02a39
-ms.sourcegitcommit: 08e9b0bac39c1b1d2c8a79539d24aaa93364baf2
+ms.openlocfilehash: d15ce53f063cf8b7ce3c9dcdc22951afc29186dd
+ms.sourcegitcommit: 6cea9bc17d3859e475a74c4a6f661f848e837e89
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/24/2021
-ms.locfileid: "59765113"
+ms.lasthandoff: 10/08/2021
+ms.locfileid: "60240891"
 ---
 # <a name="create-group"></a>Criar grupo
 
@@ -18,7 +18,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Crie um novo [grupo](../resources/group.md) conforme especificado no corpo da solicitação. Você pode criar um dos seguintes grupos:
+Create a new [group](../resources/group.md) as specified in the request body. You can create one of the following groups:
 
 * Grupo do Microsoft 365 (grupo unificado)
 * Grupo de segurança
@@ -58,8 +58,8 @@ A tabela a seguir mostra as propriedades necessárias ao criar o [grupo](../reso
 | Propriedade | Tipo | Descrição|
 |:---------------|:--------|:----------|
 | displayName | string | O nome para exibição no catálogo de endereços do grupo. Necessário. |
-| mailEnabled | booliano | Definir como `true` para grupos habilitados para email. Obrigatório. |
-| mailNickname | string | O alias de email do grupo. Máx. comprimento: 64 caracteres. Essa propriedade pode conter apenas caracteres no [conjunto de caracteres ASCII de 0 a 127](/office/vba/language/reference/user-interface-help/character-set-0127), exceto o seguinte: ` @ () \ [] " ; : . <> , SPACE`. Obrigatório. |
+| mailEnabled | booliano | Definir como `true` para grupos habilitados para e-mail. Obrigatório. |
+| mailNickname | string | O alias de email do grupo, exclusivo na organização. O comprimento máximo é de 64 caracteres. Essa propriedade pode conter apenas caracteres no [conjunto de caracteres ASCII de 0 a 127](/office/vba/language/reference/user-interface-help/character-set-0127), exceto o seguinte: ` @ () \ [] " ; : . <> , SPACE`. Obrigatório. |
 | securityEnabled | booliano | Definido como `true` para grupos habilitados para segurança, incluindo Microsoft 365 grupos. Obrigatório. **Observação:** os grupos criados usando o portal do Microsoft Azure sempre terão **securityEnabled** definido inicialmente como `true`.|
 
 > [!IMPORTANT]
@@ -286,7 +286,7 @@ Content-type: application/json
 
 #### <a name="request"></a>Solicitação
 
-Este é um exemplo de solicitação.  O usuário ou aplicativo de chamada deve receber a permissão *RoleManagement.ReadWrite.Directory* para definir a propriedade **isAssignableToRole** ou atualizar a associação desses grupos. 
+Este é um exemplo da solicitação. O usuário ou aplicativo de chamada precisam receber a permissão *RoleManagement.ReadWrite.Directory* para definir a propriedade **isAssignableToRole** ou atualizar sua afiliação a esses grupos. 
 
 **OBSERVAÇÃO:** Um grupo com a propriedade **isAssignableToRole** definida como `true` não pode ser do tipo associação dinâmica. Para mais informações, consulte [Usando um grupo para gerenciar as atribuições de funções do Azure AD](https://go.microsoft.com/fwlink/?linkid=2103037).
 

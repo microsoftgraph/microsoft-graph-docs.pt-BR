@@ -5,12 +5,12 @@ ms.localizationpriority: high
 author: adimitui
 ms.prod: directory-management
 doc_type: resourcePageType
-ms.openlocfilehash: ef6a84303ad63e673ffbca0b061e23346208489a
-ms.sourcegitcommit: 7ce66321abb6a2cdca8685d3ce0a004c376ae33b
+ms.openlocfilehash: 2b4ac86a3dd1bad876c6819b9f49c28ca4bac7fb
+ms.sourcegitcommit: 6cea9bc17d3859e475a74c4a6f661f848e837e89
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/24/2021
-ms.locfileid: "59777517"
+ms.lasthandoff: 10/08/2021
+ms.locfileid: "60240884"
 ---
 # <a name="organization-resource-type"></a>tipo de recurso organization
 
@@ -25,21 +25,24 @@ Esse recurso permite que você adicione seus próprios dados às propriedades pe
 | Método       | Tipo de retorno  |Descrição|
 |:---------------|:--------|:----------|
 |[Obter organização](../api/organization-get.md) | Coleção [organization](organization.md)|Leia as propriedades e as relações do objeto de organização.|
-|[Update](../api/organization-update.md) | [organization](organization.md)  |Atualize o objeto organization. As únicas propriedades que podem ser atualizadas são: **marketingNotificationMails**, **technicalNotificationMails**, **securityComplianceNotificationMails**, **securityComplianceNotificationPhones** e **privacyProfile**. |
+|[Update](../api/organization-update.md) | [organization](organization.md)  |Atualizar o objeto da organização. As únicas propriedades que podem ser atualizadas são: **marketingNotificationMails**, **technicalNotificationMails**, **securityComplianceNotificationMails**, **securityComplianceNotificationPhones** e **privacyProfile**. |
 |**Extensões abertas**| 
 |[Criar extensão aberta](../api/opentypeextension-post-opentypeextension.md) |[openTypeExtension](opentypeextension.md)| Crie uma extensão aberta e adicione propriedades personalizadas a uma instância nova ou existente de um recurso.|
 |[Obter extensão aberta](../api/opentypeextension-get.md) |Coleção [openTypeExtension](opentypeextension.md)| Obtenha uma extensão aberta identificada pelo nome da extensão.|
 |**Extensões de esquema**| 
 |[Adicionar valores de extensões de esquema](/graph/extensibility-schema-groups) || Cria uma definição para a extensão de esquema e usa-a para adicionar dados digitados personalizados a um recurso.|
 |**Identidade visual organizacional**| | |
-|[Criar organizationalBrandingLocalization](../api/organizationalbranding-post-localizations.md) | [organizationalBrandingLocalization](organizationalbrandinglocalization.md) | Crie uma nova identidade visual de localização (específica do idioma) e um objeto de identidade visual padrão, caso não exista. |
 |[Obter organizationalBranding](../api/organizationalbranding-get.md) | [organizationalBranding](organizationalbranding.md) | Obtenha o objeto de identidade visual organizacional padrão. |
 |[Atualizar organizationalBranding](../api/organizationalbranding-update.md) | [organizationalBranding](organizationalbranding.md) | Atualize o objeto de identidade visual organizacional padrão. |
-|[Excluir organizationalBranding](../api/organizationalbranding-update.md) | [organizationalBranding](organizationalbranding.md) | Exclua o objeto de identidade visual organizacional padrão. |
-|[Listar organizationalBrandingLocalization](../api/organizationalbrandinglocalization-get.md) | coleção [organizationalBrandingLocalization](organizationalbrandinglocalization.md) | Recupere todos os objetos de identidade visual de localização no locatário. |
+|[Criar organizationalBrandingLocalization](../api/organizationalbranding-post-localizations.md) | [organizationalBrandingLocalization](organizationalbrandinglocalization.md) | Crie uma nova identidade visual de localização (específica do idioma) e um objeto de identidade visual padrão, caso não exista. |
+|[Listar organizationalBrandingLocalization](../api/organizationalbranding-list-localizations.md) | coleção [organizationalBrandingLocalization](organizationalbrandinglocalization.md) | Recupere todos os objetos de identidade visual de localização no locatário. |
 |[Obter organizationalBrandingLocalization](../api/organizationalbrandinglocalization-get.md) | [organizationalBrandingLocalization](organizationalbrandinglocalization.md) | Leia as propriedades de um objeto de identidade visual de localização. |
-|[Atualizar organizationalBranding](../api/organizationalbranding-update.md) | [organizationalBranding](organizationalbranding.md) | Atualize um objeto de identidade visual de localização. |
-|[Excluir organizationalBranding](../api/organizationalbranding-update.md) | [organizationalBranding](organizationalbranding.md) | Exclua um objeto de identidade visual de localização. |
+|[Atualizar organizationalBrandingLocalization](../api/organizationalbrandinglocalization-update.md) | [organizationalBrandingLocalization](organizationalbrandinglocalization.md) | Atualize um objeto de identidade visual de localização. |
+|[Excluir organizationalBrandingLocalization](../api/organizationalbrandinglocalization-delete.md) | [organizationalBrandingLocalization](organizationalbrandinglocalization.md) | Exclua um objeto de identidade visual de localização. |
+<!--|[Excluir organizationalBranding](../api/organizationalbranding-update.md) | [organizationalBranding](organizationalbranding.md) | Exclua o objeto de identidade visual organizacional padrão. |
+
+** OBSERVAÇÃO: para restaurar a operação Excluir organizationalBranding na tabela após Atualizar organizationalBranding se todas as inconsistências forem resolvidas.-->
+
 ## <a name="properties"></a>Propriedades
 
 | Propriedade | Tipo | Descrição |
@@ -50,15 +53,15 @@ Esse recurso permite que você adicione seus próprios dados às propriedades pe
 | country | Cadeia de caracteres | Nome do país/região do endereço da organização. |
 | countryLetterCode | Cadeia de caracteres | Abreviação do país/região da organização. |
 | createdDateTime | DateTimeOffset | Carimbo de hora de criação da organização. Não é possível modificar o valor e ele é preenchido automaticamente quando a organização é criada. O tipo Timestamp representa informações de data e hora usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite UTC em 1 de janeiro de 2014 é `2014-01-01T00:00:00Z`. Somente leitura. |
-| deletedDateTime | DateTimeOffset | Representa a data e a hora que o locatário do Azure AD foi excluído usando o formato ISO 8601 e está sempre no horário do UTC. Por exemplo, meia-noite UTC em 1 de janeiro de 2014 é `2014-01-01T00:00:00Z`. Somente leitura. |
+| deletedDateTime | DateTimeOffset | Representa a data e hora em que o locatário do Azure AD foi excluído usando o formato ISO 8601 e está sempre no fuso UTC. Por exemplo, meia-noite UTC do dia 1º de janeiro de 2014 é `2014-01-01T00:00:00Z`. Somente leitura. |
 | displayName | String | O nome de exibição do locatário. |
 | id | Cadeia de caracteres | A ID do locatário, um identificador exclusivo que representa a organização (ou Locatário). Herdado de [directoryObject](directoryobject.md). Chave. Não anulável. Somente leitura. |
 | isMultipleDataLocationsForServicesEnabled | Boolean | `true` se a organização estiver habilitada para Multi-Geo; **fallse** se a organização não estiver habilitada para Multi-Geo; **null** (padrão). Somente leitura. Para saber mais, confira [OneDrive Online Multi-Geo](/sharepoint/dev/solution-guidance/multigeo-introduction). |
 | marketingNotificationEmails | Coleção de cadeias de caracteres | Não anulável. |
-| onPremisesLastSyncDateTime | DateTimeOffset | A hora e a data em que o locatário foi sincronizado pela última vez com o diretório no local. O tipo Timestamp representa informações de data e hora usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite UTC em 1 de janeiro de 2014 é `2014-01-01T00:00:00Z`. Somente leitura.|
-| onPremisesSyncEnabled | Booliano | `true` se este objeto for sincronizado a partir de um diretório local; `false` se este objeto foi originalmente sincronizado de um diretório local, mas não está mais sincronizado. Anulável. `null` se este objeto nunca foi sincronizado de um diretório local (padrão). |
+| onPremisesLastSyncDateTime | DateTimeOffset | A data e hora em que o locatário foi sincronizado com o diretório no local pela última vez. O tipo de carimbo de data/hora apresenta as informações de data e hora usando o formato ISO 8601 e está sempre no fuso UTC. Por exemplo, meia-noite UTC do dia 1º de janeiro de 2014 é `2014-01-01T00:00:00Z`. Somente leitura.|
+| onPremisesSyncEnabled | Booliano | `true` se esse objeto estiver sendo sincronizado a partir de um diretório local; `false` se, originalmente, esse objeto era sincronizado a partir de um diretório local, mas não está mais sendo sincronizado; `null` se esse objeto nunca foi sincronizado a partir de um diretório local (padrão). |
 | postalCode | Cadeia de caracteres | CEP do endereço da organização. |
-| preferredLanguage | String | O idioma preferencial da organização. Deve seguir o Código ISO 639-1; por exemplo, `en`. |
+| preferredLanguage | Cadeia de caracteres | Idioma preferencial da organização. Deve seguir o Código ISO 639-1; por exemplo, `en`. |
 | privacyProfile | [privacyProfile](privacyprofile.md) | O perfil de privacidade de uma organização. |
 | provisionedPlans | Coleção [ProvisionedPlan](provisionedplan.md) | Não anulável. |
 | securityComplianceNotificationMails | Coleção de cadeias de caracteres ||

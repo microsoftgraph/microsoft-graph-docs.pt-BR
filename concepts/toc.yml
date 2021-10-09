@@ -265,7 +265,7 @@ items:
             href: azuread-identity-access-management-concept-overview.md
           - name: Gerenciamento de diretório
             items:
-              - name: Usar o PIM para atribuir funções privilegiadas
+              - name: Usar o PIM para Azure AD para atribuir funções
                 href: tutorial-assign-azureadroles.md
           - name: Identidade e entrada
             items:
@@ -285,7 +285,9 @@ items:
                     href: tutorial-accessreviews-securitygroup.md
                   - name: Analisar o acesso a um grupo do Microsoft 365
                     href: tutorial-accessreviews-M365group.md
-      - name: Email
+              - name: Usar o PIM para Azure AD para atribuir funções
+                href: tutorial-assign-azureadroles.md
+      - name: Correio
         displayName: 'Outlook, Outlook mail'
         items:
           - name: Visão Geral
