@@ -4,12 +4,12 @@ description: O Microsoft Graph fornece parâmetros de consulta opcionais que voc
 author: mumbi-o
 ms.localizationpriority: high
 ms.custom: graphiamtop20, scenarios:getting-started
-ms.openlocfilehash: 38cd97227c6f39b88042f1361815cc2c4b6fb94e
-ms.sourcegitcommit: 08e9b0bac39c1b1d2c8a79539d24aaa93364baf2
+ms.openlocfilehash: a5f4ee30ef7fdea9a2e8e4e0c73777cf9d226769
+ms.sourcegitcommit: 11be55b40804b07f4c422f09f601afa97c7d31ed
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/24/2021
-ms.locfileid: "59766394"
+ms.lasthandoff: 10/09/2021
+ms.locfileid: "60256407"
 ---
 # <a name="use-query-parameters-to-customize-responses"></a>Usar parâmetros de consulta para personalizar respostas
 
@@ -76,7 +76,7 @@ GET https://graph.microsoft.com/v1.0/users?$filter=startswith(givenName%2C+'J')
 
 ### <a name="escaping-single-quotes"></a>Escape de aspas simples
 
-Para pedidos que usem aspas simples, se os valores de qualquer parâmetro também contém aspas, elas devem ter escape duplo. Caso contrário, a solicitação falhará devido a sintaxe inválida. No exemplo, o valor de cadeia de caracteres `let''s meet for lunch?` tem o escape de aspas simples.
+Para solicitações que usam aspas simples, se algum valor de parâmetro também contiver aspas simples, eles devem ter escape duplo; caso contrário, a solicitação falhará devido à sintaxe inválida. No exemplo, o valor da cadeia de caracteres `let''s meet for lunch?` tem a aspa simples com escape.
 
 ```http
 GET https://graph.microsoft.com/v1.0/me/messages?$filter=subject eq 'let''s meet for lunch?'
@@ -109,7 +109,7 @@ O parâmetro de consulta `$count` tem suporte para essas coleções de recursos 
 
 Muitos recursos do Microsoft Graph expõem as propriedades declaradas do recurso, bem como as relações delas com outros recursos. Essas relações também são chamadas de propriedades de referência ou propriedades de navegação e podem fazer referência a um único recurso ou a um conjunto de recursos. Por exemplo, as pastas de email, gerente e subordinados diretos de um usuário são todas expostas como relações. 
 
-Normalmente, você pode consultar as propriedades de um recurso ou uma de suas relações em uma única solicitação, mas não ambas. Você pode usar o parâmetro de cadeia de caracteres de consulta `$expand` para incluir o recurso expandido ou a coleção referenciada por uma única relação (propriedade de navegação) em seus resultados. Apenas uma relação pode ser expandida em uma única solicitação.
+Normalmente, você pode consultar as propriedades de um recurso ou um de seus relacionamentos em uma única solicitação, mas não ambos. Você pode usar o parâmetro de cadeia de caracteres de consulta `$expand` para incluir o recurso expandido ou coleção referenciada por um único relacionamento (propriedade de navegação) em seus resultados. Apenas um relacionamento pode ser expandido em uma única solicitação.
 
 O exemplo a seguir obtém informações da unidade raiz juntamente com os itens filho de nível superior em uma unidade:
 
@@ -125,9 +125,9 @@ GET https://graph.microsoft.com/v1.0/me/drive/root?$expand=children($select=id,n
 ```
 
 > [!NOTE]
-> Nem todas as relações e recursos dão suporte ao parâmetro de consulta `$expand`. Por exemplo, você pode expandir as relações **directReports**, **manager** e **memberOf** em um usuário, mas não pode expandir seus relacionamentos de **eventos**, **mensagens** ou **foto**. Nem todos os recursos ou relações dão suporte ao uso de `$select` em itens expandidos. 
+> Nem todos os relacionamentos e recursos oferecem suporte ao parâmetro de consulta `$expand`. Por exemplo, você pode expandir os relacionamentos **directReports**, **manager** e **memberOf** em um usuário, mas não pode expandir seus **eventos**, **mensagens** ou **fotos**. Nem todos os recursos ou relacionamentos suportam o uso de `$select` em itens expandidos. 
 > 
-> Com os recursos do Microsoft Azure Active Directory que derivam de [directoryObject](/graph/api/resources/directoryobject), como [usuário](/graph/api/resources/user) e [grupo](/graph/api/resources/group), o `$expand` normalmente retorna um máximo de 20 itens para a relação expandida e não tem [@odata.nextLink](./paging.md). Veja mais [problemas conhecidos](known-issues.md#query-parameter-limitations).
+> Com os recursos do Azure Active Directory derivados de [directoryObject](/graph/api/resources/directoryobject), como [usuário](/graph/api/resources/user) e [grupo](/graph/api/resources/group), `$expand` normalmente retorna no máximo 20 itens para o relacionamento expandido e não tem [@odata.nextLink](./paging.md). Veja mais [problemas conhecidos](known-issues.md#query-parameters).
 
 ## <a name="filter-parameter"></a>parâmetro filter
 
@@ -150,13 +150,13 @@ O suporte para operadores `$filter` varia entre as APIs do Microsoft Graph. Os s
 | Funções | <ul><li> Começa com`startsWith` </li><li> Termina com`endsWith`</li><li> Contém `contains`</li></ul>|
 
 
-> **Observação:** Suporte para esses operadores varia de acordo com a entidade e algumas propriedades dão suporte a `$filter` somente em [consultas avançadas](/graph/aad-advanced-queries). Confira a documentação específica da entidade para obter detalhes.
+> **Observação:** o suporte para esses operadores varia de acordo com a entidade e algumas propriedades oferecem suporte `$filter` apenas em [consultas avançadas](/graph/aad-advanced-queries). Consulte a documentação específica da entidade para obter detalhes.
 
 ### <a name="filter-using-lambda-operators"></a>Filtrar usando operadores lambda
 
 OData define os operadores `any` e `all` para avaliar correspondências em propriedades com valores múltiplos, ou seja, uma coleção de valores primitivos, como tipos de cadeia de caracteres ou coleção de entidades.
 
-O operador `any` aplica iterativamente uma expressão booliana a cada membro de uma coleção e retorna `true` se a expressão for `true` para *qualquer membro* da coleção, caso contrário, retornará `false`. A seguir está a sintaxe do operador `any`:
+O operador `any` aplica iterativamente uma expressão booleana a cada membro de uma coleção e retorna `true` se a expressão for `true` para *qualquer membro* da coleção, caso contrário, retorna `false`. A seguir está a sintaxe do operador `any`:
 
 ```http
 $filter=param/any(var:var/subparam eq 'value-to-match')
@@ -188,7 +188,7 @@ GET https://graph.microsoft.com/v1.0/users?$filter=NOT(imAddresses/any(s:s eq 'a
 ConsistencyLevel: eventual
 ```
 
-O operador `all` aplica uma expressão booliana a cada membro de uma coleção e retorna `true` se a expressão for `true` para *todos os membros* da coleção, caso contrário, retornará `false`. Não há suporte para ele em nenhuma propriedade.
+O operador `all` aplica uma Expressão booleana a cada membro de uma coleção e retorna `true` se a expressão for `true` para *todos os membros* da coleção, caso contrário, retorna `false`. Não é suportado por nenhuma propriedade.
 
 ### <a name="examples-using-the-filter-query-operator"></a>Exemplos usando o operador de consulta de filtro
 
@@ -199,24 +199,19 @@ A tabela a seguir mostra alguns exemplos que usam o parâmetro de consulta `$fil
 | Descrição | Exemplo
 |:------------|:--------|
 | Pesquisar por usuários com o nome Clara entre várias propriedades. | [GET](https://developer.microsoft.com/graph/graph-explorer?request=users?$filter=startswith(displayName,'mary')+or+startswith(givenName,'mary')+or+startswith(surname,'mary')+or+startswith(mail,'mary')+or+startswith(userPrincipalName,'mary')&method=GET&version=v1.0) `../users?$filter=startswith(displayName,'mary') or startswith(givenName,'mary') or startswith(surname,'mary') or startswith(mail,'mary') or startswith(userPrincipalName,'mary')` |
-| Obter todos os usuários com o domínio de email igual a 'hotmail.com' | 
-  [GET](https://developer.microsoft.com/en-us/graph/graph-explorer?request=users%3F%24count%3Dtrue%26%24filter%3DendsWith(mail%2C'%40hotmail.com')%26%24select%3Did%2CdisplayName%2Cmail&method=GET&version=v1.0&GraphUrl=https://graph.microsoft.com&headers=W3sibmFtZSI6IkNvbnNpc3RlbmN5TGV2ZWwiLCJ2YWx1ZSI6ImV2ZW50dWFsIn1d) `../users?$count=true&$filter=endsWith(mail,'@hotmail.com')`. Esta é uma [consulta avançada](/graph/aad-advanced-queries). |
-| Obter todos os eventos do usuário conectado que começaram após 01/07/2017. | [GET](https://developer.microsoft.com/graph/graph-explorer?request=me/events?$filter=start/dateTime+ge+'2017-07-01T08:00'&method=GET&version=v1.0) `../me/events?$filter=start/dateTime ge '2017-07-01T08:00'` |
+| Obter todos os usuários com o domínio de email igual a 'hotmail.com' | [OBTER](https://developer.microsoft.com/en-us/graph/graph-explorer?request=users%3F%24count%3Dtrue%26%24filter%3DendsWith(mail%2C'%40hotmail.com')%26%24select%3Did%2CdisplayName%2Cmail&method=GET&version=v1.0&GraphUrl=https://graph.microsoft.com&headers=W3sibmFtZSI6IkNvbnNpc3RlbmN5TGV2ZWwiLCJ2YWx1ZSI6ImV2ZW50dWFsIn1d) `../users?$count=true&$filter=endsWith(mail,'@hotmail.com')`. Esta é uma [consulta avançada](/graph/aad-advanced-queries). |
+| Obter todos os eventos do usuário conectado que começaram após 01/07/2017. | 
+  [GET](https://developer.microsoft.com/graph/graph-explorer?request=me/events?$filter=start/dateTime+ge+'2017-07-01T08:00'&method=GET&version=v1.0) `../me/events?$filter=start/dateTime ge '2017-07-01T08:00'`. <br/>**OBSERVAÇÃO:** A propriedade **dateTime** é um tipo Cadeia de caracteres. |
 | Obter todos os emails de um endereço específico recebidos pelo usuário conectado. | [GET](https://developer.microsoft.com/graph/graph-explorer?request=me/messages?$filter=from/emailAddress/address+eq+'someuser@.com'&method=GET&version=v1.0) `../me/messages?$filter=from/emailAddress/address eq 'someuser@example.com'` |
 | Obter todos os emails recebidos pelo usuário conectado em abril de 2017. | [GET](https://developer.microsoft.com/graph/graph-explorer?request=me/mailFolders/inbox/messages?$filter=ReceivedDateTime+ge+2017-04-01+and+receivedDateTime+lt+2017-05-01&method=GET&version=v1.0) `../me/mailFolders/inbox/messages?$filter=ReceivedDateTime ge 2017-04-01 and receivedDateTime lt 2017-05-01` |
 | Obter todos os emails não lidos na caixa de entrada do usuário conectado. | [GET](https://developer.microsoft.com/graph/graph-explorer?request=me/mailFolders/inbox/messages?$filter=isRead+eq+false&method=GET&version=v1.0) `../me/mailFolders/inbox/messages?$filter=isRead eq false` |
 | Obter todos os usuários nos departamentos de Varejo e Vendas. | 
   [GET](https://developer.microsoft.com/en-us/graph/graph-explorer?request=users%3F%24filter%3Ddepartment%20in%20('Retail'%2C%20'Sales')&method=GET&version=v1.0&GraphUrl=https://graph.microsoft.com) `../users?$filter=department in ('Retail', 'Sales')`| 
-| Listar os usuários com um plano de serviço específico que está em um estado suspenso. | 
-  [GET](https://developer.microsoft.com/en-us/graph/graph-explorer?request=users%3F%24filter%3DassignedPlans%2Fany(a%3Aa%2FservicePlanId%20eq%202e2ddb96-6af9-4b1d-a3f0-d6ecfd22edb2%20and%20a%2FcapabilityStatus%20eq%20'Suspended')%26%24count%3Dtrue&method=GET&version=v1.0&GraphUrl=https://graph.microsoft.com&headers=W3sibmFtZSI6IkNvbnNpc3RlbmN5TGV2ZWwiLCJ2YWx1ZSI6ImV2ZW50dWFsIn1d) `../users?$filter=assignedPlans/any(a:a/servicePlanId eq 2e2ddb96-6af9-4b1d-a3f0-d6ecfd22edb2 and a/capabilityStatus eq 'Suspended')&$count=true`. Esta é uma [consulta avançada](/graph/aad-advanced-queries). |
-| Listar todos os grupos que não são do Microsoft 365 em uma organização. | 
-  [GET](https://developer.microsoft.com/en-us/graph/graph-explorer?request=groups%3F%24filter%3DNOT%20groupTypes%2Fany(c%3Ac%20eq%20'Unified')%26%24count%3Dtrue&method=GET&version=v1.0&GraphUrl=https://graph.microsoft.com&headers=W3sibmFtZSI6IkNvbnNpc3RlbmN5TGV2ZWwiLCJ2YWx1ZSI6ImV2ZW50dWFsIn1d) `../groups?$filter=NOT groupTypes/any(c:c eq 'Unified')&$count=true`. Esta é uma [consulta avançada](/graph/aad-advanced-queries). |
-| Listar todos os usuários cujo nome da empresa não é indefinido (ou seja, não é um valor `null`) ou Microsoft. | 
-  [GET](https://developer.microsoft.com/en-us/graph/graph-explorer?request=users%3F%24filter%3DcompanyName%20ne%20null%20and%20NOT(companyName%20eq%20'Microsoft')%26%24count%3Dtrue&method=GET&version=v1.0&GraphUrl=https://graph.microsoft.com&headers=W3sibmFtZSI6IkNvbnNpc3RlbmN5TGV2ZWwiLCJ2YWx1ZSI6ImV2ZW50dWFsIn1d) `../users?$filter=companyName ne null and NOT(companyName eq 'Microsoft')&$count=true`. Esta é uma [consulta avançada](/graph/aad-advanced-queries). |
-| Listar todos os usuários cujo nome da empresa seja indefinido ou Microsoft. | 
-  [GET](https://developer.microsoft.com/en-us/graph/graph-explorer?request=users%3F%24filter%3DcompanyName%20in%20(null%2C%20'Microsoft')%26%24count%3Dtrue&method=GET&version=v1.0&GraphUrl=https://graph.microsoft.com&headers=W3sibmFtZSI6IkNvbnNpc3RlbmN5TGV2ZWwiLCJ2YWx1ZSI6ImV2ZW50dWFsIn1d) `../users?$filter=companyName in (null, 'Microsoft')&$count=true`. Esta é uma [consulta avançada](/graph/aad-advanced-queries). |
-| Use a conversão OData para obter uma participação transitória em grupos com um nome de exibição que comece com “a”, incluindo o número de objetos retornados. | 
-  [GET](https://developer.microsoft.com/en-us/graph/graph-explorer?request=me%2FtransitiveMemberOf%2Fmicrosoft.graph.group%3F%24count%3Dtrue&method=GET&version=v1.0&GraphUrl=https://graph.microsoft.com&headers=W3sibmFtZSI6IkNvbnNpc3RlbmN5TGV2ZWwiLCJ2YWx1ZSI6ImV2ZW50dWFsIn1d) `../me/transitiveMemberOf/microsoft.graph.group?$count=true&$filter=startswith(displayName, 'a')`. Esta é uma [consulta avançada](/graph/aad-advanced-queries). |
+| Listar os usuários com um plano de serviço específico que está em um estado suspenso. | [OBTER](https://developer.microsoft.com/en-us/graph/graph-explorer?request=users%3F%24filter%3DassignedPlans%2Fany(a%3Aa%2FservicePlanId%20eq%202e2ddb96-6af9-4b1d-a3f0-d6ecfd22edb2%20and%20a%2FcapabilityStatus%20eq%20'Suspended')%26%24count%3Dtrue&method=GET&version=v1.0&GraphUrl=https://graph.microsoft.com&headers=W3sibmFtZSI6IkNvbnNpc3RlbmN5TGV2ZWwiLCJ2YWx1ZSI6ImV2ZW50dWFsIn1d) `../users?$filter=assignedPlans/any(a:a/servicePlanId eq 2e2ddb96-6af9-4b1d-a3f0-d6ecfd22edb2 and a/capabilityStatus eq 'Suspended')&$count=true`. Esta é uma [consulta avançada](/graph/aad-advanced-queries). |
+| Listar todos os grupos que não são do Microsoft 365 em uma organização. | [OBTER](https://developer.microsoft.com/en-us/graph/graph-explorer?request=groups%3F%24filter%3DNOT%20groupTypes%2Fany(c%3Ac%20eq%20'Unified')%26%24count%3Dtrue&method=GET&version=v1.0&GraphUrl=https://graph.microsoft.com&headers=W3sibmFtZSI6IkNvbnNpc3RlbmN5TGV2ZWwiLCJ2YWx1ZSI6ImV2ZW50dWFsIn1d) `../groups?$filter=NOT groupTypes/any(c:c eq 'Unified')&$count=true`. Esta é uma [consulta avançada](/graph/aad-advanced-queries). |
+| Listar todos os usuários cujo nome da empresa não é indefinido (ou seja, não é um valor `null`) ou Microsoft. | [OBTER](https://developer.microsoft.com/en-us/graph/graph-explorer?request=users%3F%24filter%3DcompanyName%20ne%20null%20and%20NOT(companyName%20eq%20'Microsoft')%26%24count%3Dtrue&method=GET&version=v1.0&GraphUrl=https://graph.microsoft.com&headers=W3sibmFtZSI6IkNvbnNpc3RlbmN5TGV2ZWwiLCJ2YWx1ZSI6ImV2ZW50dWFsIn1d) `../users?$filter=companyName ne null and NOT(companyName eq 'Microsoft')&$count=true`. Esta é uma [consulta avançada](/graph/aad-advanced-queries). |
+| Listar todos os usuários cujo nome da empresa seja indefinido ou Microsoft. | [OBTER](https://developer.microsoft.com/en-us/graph/graph-explorer?request=users%3F%24filter%3DcompanyName%20in%20(null%2C%20'Microsoft')%26%24count%3Dtrue&method=GET&version=v1.0&GraphUrl=https://graph.microsoft.com&headers=W3sibmFtZSI6IkNvbnNpc3RlbmN5TGV2ZWwiLCJ2YWx1ZSI6ImV2ZW50dWFsIn1d) `../users?$filter=companyName in (null, 'Microsoft')&$count=true`. Esta é uma [consulta avançada](/graph/aad-advanced-queries). |
+| Use a conversão OData para obter uma participação transitória em grupos com um nome de exibição que comece com “a”, incluindo o número de objetos retornados. | [OBTER](https://developer.microsoft.com/en-us/graph/graph-explorer?request=me%2FtransitiveMemberOf%2Fmicrosoft.graph.group%3F%24count%3Dtrue&method=GET&version=v1.0&GraphUrl=https://graph.microsoft.com&headers=W3sibmFtZSI6IkNvbnNpc3RlbmN5TGV2ZWwiLCJ2YWx1ZSI6ImV2ZW50dWFsIn1d) `../me/transitiveMemberOf/microsoft.graph.group?$count=true&$filter=startswith(displayName, 'a')`. Esta é uma [consulta avançada](/graph/aad-advanced-queries). |
 
 ## <a name="format-parameter"></a>parâmetro format
 
@@ -233,7 +228,7 @@ GET https://graph.microsoft.com/v1.0/users?$format=json
 
 ## <a name="orderby-parameter"></a>parâmetro orderby
 
-Use o parâmetro de consulta `$orderby` para especificar a ordem de classificação dos itens retornados pelo Microsoft Graph. A ordem padrão é ordem crescente.
+Use o parâmetro de consulta `$orderby` para especificar a ordem de classificação dos itens retornados do Microsoft Graph. A ordem padrão é crescente.
 
 Por exemplo, a solicitação a seguir retorna os usuários da organização ordenados por seu nome de exibição:
 
@@ -298,15 +293,15 @@ GET  https://graph.microsoft.com/v1.0/me/events?$orderby=createdDateTime&$skip=2
 
 > **Observação:** algumas APIs do Microsoft Graph, como Email e Calendário do Outlook (**message**, **event** e **calendar**), usam `$skip` para implementar a paginação. Quando os resultados de uma consulta ocuparem várias páginas, essas APIs retornarão uma propriedade `@odata:nextLink` com uma URL que contém um parâmetro `$skip`. Você pode usar essa URL para retornar a próxima página de resultados. Para saber mais, confira [Paginação](./paging.md).
 >
-> O cabeçalho **consistencyLevel** necessário para consultas avançadas em objetos de diretório não está incluído por padrão em solicitações de página subsequentes. Ele deve ser definido explicitamente nas páginas subsequentes.
+> O cabeçalho **ConsistencyLevel** necessário para consultas avançadas em objetos de diretório não é incluído por padrão nas solicitações de página subsequentes. Deve ser definido explicitamente nas páginas subsequentes.
 
 ## <a name="skiptoken-parameter"></a>parâmetro skipToken
 
-Algumas solicitações retornam várias páginas de dados, devido à paginação do lado do servidor ou devido ao uso do parâmetro [`$top`](#top-parameter) para limitar o tamanho da página da resposta. Muitas APIs do Microsoft Graph usam o parâmetro de consulta `skipToken` para fazer referência a páginas subsequentes do resultado.  
-O parâmetro `$skiptoken` contém um token opaco que faz referência à próxima página de resultados e é retornado na URL fornecida na propriedade `@odata.nextLink` na resposta. Para saber mais, confira [Paginação](./paging.md).
+Algumas solicitações retornam várias páginas de dados, devido à paginação do lado do servidor ou ao uso do parâmetro [`$top`](#top-parameter) para limitar o tamanho da página da resposta. Muitas APIs do Microsoft Graph usam o parâmetro de consulta `skipToken` para fazer referência às páginas subsequentes do resultado.  
+O parâmetro `$skiptoken` contém um token opaco que faz referência à próxima página de resultados e é retornado no URL fornecido na propriedade `@odata.nextLink` na resposta. Para saber mais, consulte [Paging](./paging.md).
 > **Observação:** Se você estiver usando a OData Count (adicionando `$count=true` na cadeia de caracteres de consulta) para consultas em objetos de diretório, a propriedade `@odata.count` estará presente apenas na primeira página.
 >
-> O cabeçalho **consistencyLevel** necessário para consultas avançadas em objetos de diretório não está incluído por padrão em solicitações de página subsequentes. Ele deve ser definido explicitamente nas páginas subsequentes.
+> O cabeçalho **ConsistencyLevel** necessário para consultas avançadas em objetos de diretório não é incluído por padrão nas solicitações de página subsequentes. Deve ser definido explicitamente nas páginas subsequentes.
 
 ## <a name="top-parameter"></a>parâmetro top
 
@@ -323,7 +318,7 @@ GET https://graph.microsoft.com/v1.0/me/messages?$top=5
 ```
 
 
-> O cabeçalho **consistencyLevel** necessário para consultas avançadas em objetos de diretório não está incluído por padrão em solicitações de página subsequentes. Ele deve ser definido explicitamente nas páginas subsequentes.
+> O cabeçalho **ConsistencyLevel** necessário para consultas avançadas em objetos de diretório não é incluído por padrão nas solicitações de página subsequentes. Deve ser definido explicitamente nas páginas subsequentes.
 
 ## <a name="error-handling-for-query-parameters"></a>Tratamento de erro para parâmetros de consulta
 
@@ -366,4 +361,4 @@ No entanto, é importante observar que os parâmetros de consulta especificados 
 
 - [Recursos avançados de consulta nos objetos de diretório do Microsoft Azure AD](/graph/aad-advanced-queries)
 - [Usar o parâmetro de consulta $search para corresponder a um critério de pesquisa](/graph/search-query-parameter)
-- [Limitações de parâmetro de consulta](known-issues.md#query-parameter-limitations)
+- [Limitações de parâmetro de consulta](known-issues.md#query-parameters)

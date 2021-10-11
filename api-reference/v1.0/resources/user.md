@@ -5,12 +5,12 @@ author: jpettere
 ms.localizationpriority: high
 ms.prod: users
 doc_type: resourcePageType
-ms.openlocfilehash: d60cc903bba7a5a365b4a070961ab7951e9401e3
-ms.sourcegitcommit: 6ae8c124fac63a195ccf516c9cff739f730b6b13
+ms.openlocfilehash: 428fc62f15a6e7a761c6645822924a038db32e43
+ms.sourcegitcommit: 11be55b40804b07f4c422f09f601afa97c7d31ed
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/02/2021
-ms.locfileid: "60084074"
+ms.lasthandoff: 10/09/2021
+ms.locfileid: "60256064"
 ---
 # <a name="user-resource-type"></a>Tipo de recurso de usuário
 
@@ -138,7 +138,7 @@ Esse recurso permite:
 | Propriedade       | Tipo    |Descrição|
 |:---------------|:--------|:----------|
 |aboutMe|String|Um campo de entrada de texto de forma livre para o usuário se descrever. Retornado apenas em `$select`.|
-|accountEnabled|Booliano| `true` se a conta estiver habilitada; caso contrário, `false`. Essa propriedade é obrigatória quando um usuário é criado.<br><br>Retornado apenas em `$select`. Suporte `$filter` (`eq`, `ne`, `NOT` e `in`).    |
+|accountEnabled|Booliano| `true` se a conta estiver habilitada. Caso contrário, `false`. Essa propriedade é obrigatória quando um usuário é criado.<br><br>Retornado apenas em `$select`. Suporte `$filter` (`eq`, `ne`, `NOT` e `in`).    |
 |ageGroup|[ageGroup](#agegroup-values)|Define a faixa etária do usuário. Valores permitidos: `null`, `minor`, `notAdult` e `adult`. Confira as [definições de propriedades da faixa etária legal](#legal-age-group-property-definitions) para obter mais informações. <br><br>Retornado apenas em `$select`. Suporte `$filter` (`eq`, `ne`, `NOT` e `in`).|
 |assignedLicenses|Coleção [assignedLicense](assignedlicense.md)|As licenças atribuídas ao usuário, incluindo licenças herdadas (baseadas em grupo).  Não anulável. Retornado apenas em `$select`. Suporte para `$filter` (`eq` e `NOT`).           |
 |assignedPlans|Coleção [assignedPlan](assignedplan.md)|Os planos que são atribuídos ao usuário. Somente leitura. Não anulável.<br><br>Retornado apenas em `$select`. Suporte para `$filter` (`eq` e `NOT`). |
@@ -161,14 +161,14 @@ Esse recurso permite:
 |externalUserStateChangeDateTime|DateTimeOffset|Mostra o carimbo de data/hora da alteração mais recente da propriedade **externalUserState**. <br><br>Retornado apenas em `$select`. Suporta `$filter` (`eq`, `ne`, `NOT` , `in`).|
 |FaxNumber|String|O número de fax do usuário. <br><br>Retornado apenas em `$select`. Suporta `$filter` (`eq`, `ne`, `NOT` , `ge`, `le`, `in`, `startsWith`).|
 |givenName|String|O nome fornecido (nome) do usuário. O comprimento máximo é de 64 caracteres. <br><br>Retornado por padrão. Suporta `$filter` (`eq`, `ne`, `NOT` , `ge`, `le`, `in`, `startsWith`).|
-| hireDate | DateTimeOffset | A data de contratação do usuário. O tipo de carimbo de data/hora representa informações de data e hora usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite UTC em 1 de janeiro de 2014 é: `2014-01-01T00:00:00Z` <br><br>Retornado apenas em `$select`. <br> **Observação:** essa propriedade é específica do SharePoint Online. É recomendável usar a propriedade **employeeHireDate** nativa para definir e atualizar valores de data de contratação usando as APIs do Microsoft Graph. |
-|id|String|O identificador exclusivo do usuário. Deve ser tratado como um identificador opaco. Herdado de [directoryObject](directoryobject.md). Chave. Não anulável. Somente leitura. <br><br>Devolvido por padrão. Suporta `$filter` (`eq`, `ne`, `NOT`, `in`).|
+| hireDate | DateTimeOffset | A data de contratação do usuário. O tipo de carimbo de data/hora representa informações de data e hora usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite UTC em 1º de janeiro de 2014 é `2014-01-01T00:00:00Z` <br><br>Retornado apenas em `$select`. <br> **Observação:** essa propriedade é específica do SharePoint Online. É recomendável usar a propriedade **employeeHireDate** nativa para definir e atualizar valores de data de contratação usando as APIs do Microsoft Graph. |
+|id|String|O identificador exclusivo do usuário. Deve ser tratado como um identificador opaco. Herdado de [directoryObject](directoryobject.md). Chave. Não anulável. Somente leitura. <br><br>Retornado por padrão. Dá suporte `$filter` (`eq`, `ne`, `NOT`, `in`).|
 |Identidades|Coleção [objectIdentity](objectIdentity.md)| Representa as identidades que podem ser usadas para entrar nesta conta de usuário. Uma identidade pode ser fornecida pela Microsoft (também conhecida como conta local), por organizações ou por provedores de identidade social, como o Facebook, Google e Microsoft, e está vinculada a uma conta de usuário. Pode conter vários itens com o mesmo valor **signInType**. <br><br>Retornado apenas em `$select`. Dá suporte a `$filter` (`eq`) apenas quando o **signInType** não é `userPrincipalName`.|
 |imAddresses|String collection|Os endereços do Protocolo de Início de Sessão (SIP) de VoIP (Voice over IP) da mensagem instantânea para o usuário. Somente leitura.<br><br>Retornado apenas em `$select`. Suporta `$filter` (`eq`, `NOT`, `ge`, `le`, `startsWith`).|
 |interests|Coleção de cadeias de caracteres|Uma lista para o usuário descrever os interesses dele. <br><br>Retornado apenas em `$select`.|
 |isResourceAccount|Boolean| Não use – reservado para uso futuro.|
 |jobTitle|String|O cargo do usuário. O comprimento máximo é de 128 caracteres. <br><br>Retornado por padrão. Suporta `$filter` (`eq`, `ne`, `NOT` , `ge`, `le`, `in`, `startsWith`).|
-|lastPasswordChangeDateTime| DateTimeOffset | O momento em que o usuário do Azure AD alterou a senha pela última vez. As informações de data e hora usam o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite UTC em 1º de janeiro de 2014 é `2014-01-01T00:00:00Z`.<br><br>Retornado apenas em `$select`.|
+|lastPasswordChangeDateTime| DateTimeOffset | A hora em que esse usuário do Azure Active Directory alterou sua senha pela última vez ou quando sua senha foi criada, qualquer que seja a data em que a ação mais recente foi realizada. As informações de data e hora usam o formato ISO 8601 e estão sempre no horário UTC. Por exemplo, meia-noite UTC de 1º de janeiro de 2014 é `2014-01-01T00:00:00Z`. <br><br>Retornado apenas em `$select`.|
 |legalAgeGroupClassification|[legalAgeGroupClassification](#legalagegroupclassification-values)| Usado por aplicativos empresariais para determinar a faixa etária legal do usuário. Essa propriedade é somente leitura e calculada com base nas propriedades **ageGroup** e **consentProvidedForMinor**. Valores permitidos: `null`, `minorWithOutParentalConsent`, `minorWithParentalConsent`, `minorNoParentalConsentRequired`, `notAdult` e `adult`. Confira as [definições de propriedades da faixa etária legal](#legal-age-group-property-definitions) para obter mais informações. <br><br>Retornado apenas em `$select`.|
 |licenseAssignmentStates|Coleção [licenseAssignmentState](licenseassignmentstate.md)|Estado das atribuições de licença para este usuário. Somente leitura.<br><br>Retornado apenas em `$select`.|
 |email|String|O endereço SMTP do usuário, por exemplo, `jeff@contoso.onmicrosoft.com`.<br>As alterações feitas nessa propriedade também atualizarão a coleção **proxyAddresses** do usuário para incluir o valor como um endereço SMTP. Para contas do Azure AD B2C, esta propriedade só pode ser atualizada até dez vezes com endereços SMTP exclusivos. Esta propriedade não pode conter caracteres de ênfase.<br><br>Retornado por padrão. Suporta `$filter` (`eq`, `ne`, `NOT`, `ge`, `le`, `in`, `startsWith`, `endsWith`).|
@@ -178,7 +178,7 @@ Esse recurso permite:
 |mySite|String|A URL do site pessoal do usuário. <br><br>Retornado apenas em `$select`.|
 |officeLocation|String|A localização do escritório no local de trabalho do usuário. <br><br>Retornado por padrão. Suporta `$filter` (`eq`, `ne`, `NOT`, `ge`, `le`, `in`, `startsWith`).|
 |onPremisesDistinguishedName|String| Contém `distinguished name` ou `DN` do Active Directory local. A propriedade somente é preenchida para os clientes que estejam sincronizando o seu diretório local com o Azure Active Directory pelo Azure AD Connect. Somente leitura.<br><br>Retornado apenas em `$select`. |
-|onPremisesDomainName|String| Contém o `domainFQDN` local, também chamado dnsDomainName sincronizado do diretório local. A propriedade somente é preenchida para os clientes que estejam sincronizando o seu diretório local ao Azure Active Directory pelo Azure AD Connect. Somente leitura. <br><br>Retornado apenas em `$select`.|
+|onPremisesDomainName|String| Contém o `domainFQDN` local, também chamado dnsDomainName, sincronizado do diretório local. A propriedade é preenchida apenas para clientes que estão sincronizando seu diretório local com o Azure Active Directory por meio do Azure AD Connect. Somente leitura. <br><br>Retornado apenas em `$select`.|
 |onPremisesExtensionAttributes|[onPremisesExtensionAttributes](onpremisesextensionattributes.md)|Contém extensionAttributes 1-15 para o usuário. Observe que os atributos de extensão individuais não são selecionáveis nem filtráveis. Para um usuário do `onPremisesSyncEnabled`, a fonte de autoridade desse conjunto de propriedades é o local e é somente para leitura. Para um usuário somente na nuvem (onde `onPremisesSyncEnabled` é falso), essas propriedades podem ser definidas durante a criação ou atualização. Esses atributos de extensão também são conhecidos como atributos personalizados do Exchange 1-15. <br><br>Retornado apenas em `$select`. Suporta `$filter` (`eq`, `NOT`, `ge`, `le`, `in`). |
 |onPremisesImmutableId|String|Essa propriedade é usada para associar uma conta de usuário do Active Directory local com seu objeto de usuário do Azure AD. Essa propriedade deverá ser especificada ao criar uma nova conta de usuário no Graph se você estiver usando um domínio federado para a propriedade **userPrincipalName** (UPN) do usuário. **OBSERVAÇÃO:** Os caracteres **$** e **\_** não podem ser usados ao especificar essa propriedade.<br><br>Retornado apenas em `$select`. Suporta `$filter` (`eq`, `ne`, `NOT`, `ge`, `le`, `in`)..                            |
 |onPremisesLastSyncDateTime|DateTimeOffset|Indica a última vez em que o objeto foi sincronizado com o diretório no local; por exemplo: `2013-02-16T03:04:54Z`. O tipo de carimbo de data/hora representa informações de data e hora usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite UTC em 1 de janeiro de 2014 é: `2014-01-01T00:00:00Z`. Somente leitura. <br><br>Retornado apenas em `$select`. Suporta `$filter` (`eq`, `ne`, `NOT`, `ge`, `le`, `in`).|
@@ -208,7 +208,7 @@ Esse recurso permite:
 |surname|String|O sobrenome do usuário (nome de família ou sobrenome). O comprimento máximo é de 64 caracteres. <br><br>Retornado por padrão. Suporta `$filter` (`eq`, `ne`, `NOT`, `ge`, `le`, `in`, `startsWith`).|
 |usageLocation|String|Um código de duas letras (padrão ISO 3166). Obrigatório para os usuários que receberão licenças devido à exigência legal de verificar a disponibilidade de serviços nos países/regiões. Por exemplo: `US`, `JP`, e `GB`. Não anulável.<br><br>Retornado apenas em `$select`. Suporta `$filter` (`eq`, `ne`, `NOT`, `ge`, `le`, `in`, `startsWith`).|
 |userPrincipalName|Cadeia de caracteres|O nome UPN do usuário. O nome UPN é um nome de logon para o usuário ao estilo da Internet com base na RFC 822 padrão da Internet. Por convenção, ele deve ser mapeado para o nome de email do usuário. O formato geral é alias@domain, em que o domínio deve estar presente na coleção de domínios verificados do locatário. Essa propriedade é obrigatória quando um usuário é criado. Os domínios verificados para o locatário podem ser acessados pela propriedade **verifiedDomains** da [organização](organization.md).<br>OBSERVAÇÃO: esta propriedade não pode conter caracteres de ênfase. <br><br>Retornado por padrão. Suporta `$filter` (`eq`, `ne`, `NOT`, `ge`, `le`, `in`, `startsWith`, `endsWith`) e `$orderBy`.
-|userType|String|Um valor de string que pode ser usado para classificar tipos de usuário em seu diretório, como `Member` e `Guest`. <br><br>Retornado apenas em `$select`. Suporta `$filter` (`eq`, `ne`, `NOT`, `in`).          |
+|userType|String|Um valor de string que pode ser usado para classificar tipos de usuário em seu diretório, como `Member` e `Guest`. <br><br>Retornado apenas em `$select`. Suporta `$filter` (`eq`, `ne`, `NOT`, `in`). **OBSERVAÇÃO:** Para obter mais informações sobre as permissões para usuários membros e convidados, consulte [Quais são as permissões padrão de usuário em Azure Active Directory?](/azure/active-directory/fundamentals/users-default-permissions#member-and-guest-users)         |
 
 ### <a name="legal-age-group-property-definitions"></a>Definições de propriedade da faixa etária legal
 
@@ -269,7 +269,7 @@ Hence the type of the corresponding 3 properties remain as string type in the Pr
 |directReports|Coleção [directoryObject](directoryobject.md)|Os usuários e contatos subordinados ao usuário. (Os usuários e contatos cuja propriedade de gerenciamento está definida para esse usuário.) Somente leitura. Anulável. Dá suporte a `$expand`. |
 |Unidade|[drive](drive.md)|O OneDrive do usuário. Somente leitura.|
 |unidades|Coleção [drive](drive.md)| Uma coleção de unidades disponíveis para este usuário. Somente leitura. |
-|events|Coleção [event](event.md)|Os eventos do usuário. O padrão é mostrar eventos no Calendário Padrão. Somente leitura. Anulável.|
+|eventos|Coleção [event](event.md)|Os eventos do usuário. O padrão é mostrar eventos no Calendário Padrão. Somente leitura. Anulável.|
 |extensions|[extension](extension.md) collection|A coleção de extensões abertas definidas para o usuário. Somente leitura. Anulável.|
 |inferenceClassification | [inferenceClassification](inferenceclassification.md) | Classificação de relevância das mensagens do usuário com base em designações explícitas que substituem a relevância ou importância deduzida. |
 |insights|[officeGraphInsights](officegraphinsights.md) | Somente leitura. Anulável.|

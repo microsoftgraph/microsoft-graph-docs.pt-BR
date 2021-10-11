@@ -2,15 +2,15 @@
 title: 'directoryObject: getByIds'
 description: Retorna os objetos de diretório especificados em uma lista de IDs.
 author: keylimesoda
-localization_priority: Priority
+ms.localizationpriority: high
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: bcd1e20de65f6ddefc08310572ff596865d438da
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: 0aaaabfc456c6b0b71ef20ddce42bb9da57f443a
+ms.sourcegitcommit: 11be55b40804b07f4c422f09f601afa97c7d31ed
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52051491"
+ms.lasthandoff: 10/09/2021
+ms.locfileid: "60256533"
 ---
 # <a name="directoryobject-getbyids"></a>directoryObject: getByIds
 
@@ -19,7 +19,7 @@ Namespace: microsoft.graph
 Retorne os objetos de diretório especificados em uma lista de IDs.
 
 >[!NOTE]
->Essa API tem um [problema conhecido](/graph/known-issues#incomplete-objects-when-using-getbyids-request). Nem todos os objetos de diretório retornados são os objetos completos que contêm todas as propriedades.
+>Esta API tem um [problema conhecido](/graph/known-issues#incomplete-objects-when-using-getbyids-request). Nem todos os objetos de diretório retornados são os objetos completos contendo todas as suas propriedades.
 
 Alguns usos comuns dessa função são:
 
@@ -49,10 +49,10 @@ POST /directoryObjects/getByIds
 
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
 
-| Nome       | Tipo | Descrição|
-|:---------------|:--------|:----------|
-| Autorização  | string  | {token} de portador. Obrigatório. |
-| Content-type  | string | application/json. Obrigatório.  |
+| Nome       | Descrição|
+|:---------------|:--------|
+| Autorização  | {token} de portador. Obrigatório. |
+| Content-type  | application/json. Obrigatório.  |
 
 ## <a name="request-body"></a>Corpo da solicitação
 
@@ -60,8 +60,8 @@ Forneça um objeto JSON com os seguintes parâmetros no corpo da solicitação.
 
 | Parâmetro   | Tipo |Descrição|
 |:---------------|:--------|:----------|
-|ids|Coleção de cadeias de caracteres| Uma coleção de IDs para a qual retornar objetos.  As IDs são GUIDs, representadas como cadeias de caracteres.  Você pode especificar até 1000 IDs. |
-|tipos|Coleção de cadeias de caracteres| Uma coleção de tipos de recursos que especifica o conjunto de coleções de recursos para pesquisar. Se não estiver especificado, o padrão será [directoryObject](/graph/api/resources/directoryobject?view=graph-rest-v1.0), que contém todos os tipos de recursos definidos no diretório. Qualquer objeto deriva do [directoryObject](/graph/api/resources/directoryobject?view=graph-rest-v1.0) pode ser especificado na coleção. Por exemplo: [usuário](/graph/api/resources/user?view=graph-rest-v1.0), [grupo](/graph/api/resources/group?view=graph-rest-v1.0), [dispositivo](/graph/api/resources/device?view=graph-rest-v1.0) e assim por diante. Para procurar referências para uma organização parceira do [Provedor de soluções de nuvem](https://partner.microsoft.com/cloud-solution-provider) especifique [directoryObjectPartnerReference](/graph/api/resources/directoryobjectpartnerreference?view=graph-rest-v1.0). Se não for especificado, o padrão é [directoryObject](/graph/api/resources/directoryobject?view=graph-rest-v1.0),  que contém todos os tipos de recursos definidos no diretório, exceto referências a uma organização parceira do [Provedor de soluções de nuvem](https://partner.microsoft.com/cloud-solution-provider). Os valores não diferenciam maiúsculas de minúsculas.|
+|ids|Coleção de cadeias de caracteres| Uma coleção de IDs para a qual retornar objetos. As IDs são GUIDs, representadas como cadeias de caracteres. Você pode especificar até 1000 IDs. |
+|tipos|Coleção de cadeias de caracteres| Uma coleção de tipos de recursos que especifica o conjunto de coleções de recursos para pesquisar. Se não estiver especificado, o padrão será [directoryObject](../resources/directoryobject.md), que contém todos os tipos de recursos definidos no diretório. Qualquer objeto que deriva de [directoryObject](../resources/directoryobject.md) pode ser especificado na coleção; por exemplo: objetos [usuário](../resources/user.md), [grupo](../resources/group.md) e [dispositivo](../resources/device.md). <br/><br/>Para pesquisar referências a uma organização parceira do [Provedor de Soluções na Nuvem da Microsoft](https://partner.microsoft.com/cloud-solution-provider), especifique [directoryObjectPartnerReference](../resources/directoryobjectpartnerreference.md). Se não for especificado, o padrão é [directoryObject](../resources/directoryobject.md), que contém todos os tipos de recursos definidos no diretório, exceto referências a uma organização parceira do [Provedor de Soluções na Nuvem da Microsoft](https://partner.microsoft.com/cloud-solution-provider). </br><br/> Os valores não diferenciam maiúsculas de minúsculas.|
 
 ## <a name="response"></a>Resposta
 

@@ -5,12 +5,12 @@ author: Jordanndahl
 ms.localizationpriority: high
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: 5e9df2c581b48d5e937202d829c0576866ca6abc
-ms.sourcegitcommit: 6cea9bc17d3859e475a74c4a6f661f848e837e89
+ms.openlocfilehash: 6d466725511bb65beafd22ae406206f6891f0d17
+ms.sourcegitcommit: 11be55b40804b07f4c422f09f601afa97c7d31ed
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/08/2021
-ms.locfileid: "60240961"
+ms.lasthandoff: 10/09/2021
+ms.locfileid: "60256547"
 ---
 # <a name="create-group"></a>Criar grupo
 
@@ -43,9 +43,9 @@ POST /groups
 ```
 
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
-| Nome       | Tipo | Descrição|
-|:---------------|:--------|:----------|
-| Autorização  | string  | {token} de portador. Obrigatório. |
+| Nome       |Descrição|
+|:---------------|:----------|
+| Autorização  |{token} de portador. Obrigatório. |
 | Content-Type  | application/json  |
 
 ## <a name="request-body"></a>Corpo da solicitação
@@ -85,7 +85,7 @@ Se bem-sucedido, esse método retorna um código de resposta `201 Created` e um 
 
 ### <a name="example-1-create-a-microsoft-365-group"></a>Exemplo 1: Criar um grupo do Microsoft 365
 
-O exemplo a seguir cria um grupo do Microsoft 365.
+O exemplo a seguir cria um grupo do Microsoft 365. Como os proprietários não foram especificados, o usuário que fez a chamada é adicionado automaticamente como proprietário do grupo.
 
 #### <a name="request"></a>Solicitação
 
@@ -98,7 +98,6 @@ O exemplo a seguir cria um grupo do Microsoft 365.
 ``` http
 POST https://graph.microsoft.com/v1.0/groups
 Content-type: application/json
-Content-length: 244
 
 {
   "description": "Self help community for library",

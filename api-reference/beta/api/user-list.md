@@ -5,12 +5,12 @@ author: jpettere
 ms.localizationpriority: high
 ms.prod: users
 doc_type: apiPageType
-ms.openlocfilehash: 2e808cdb3d877a796e1a593fb5665f91c212e072
-ms.sourcegitcommit: 08e9b0bac39c1b1d2c8a79539d24aaa93364baf2
+ms.openlocfilehash: 062079f18f7eb03912aaf09614211eeb64f42964
+ms.sourcegitcommit: 11be55b40804b07f4c422f09f601afa97c7d31ed
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/24/2021
-ms.locfileid: "59508938"
+ms.lasthandoff: 10/09/2021
+ms.locfileid: "60256414"
 ---
 # <a name="list-users"></a>Listar usuários
 
@@ -31,6 +31,8 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |Delegado (conta corporativa ou de estudante) | User.ReadBasic.All, User.Read.All, User.ReadWrite.All, Directory.Read.All, Directory.ReadWrite.All, Directory.AccessAsUser.All |
 |Delegado (conta pessoal da Microsoft) | Sem suporte.    |
 |Aplicativo | User.Read.All, User.ReadWrite.All, Directory.Read.All, Directory.ReadWrite.All |
+
+Os usuários convidados não podem chamar esta API. Para obter mais informações sobre as permissões para usuários membros e convidados, consulte [Quais são as permissões de usuário padrão no Azure Active Directory?](/azure/active-directory/fundamentals/users-default-permissions#member-and-guest-users)
 
 ## <a name="http-request"></a>Solicitação HTTP
 
