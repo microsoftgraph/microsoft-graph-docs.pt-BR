@@ -3,12 +3,12 @@ title: Começar com o Microsoft Graph PowerShell SDK
 description: Começar a usar o Microsoft Graph PowerShell SDK usando-o para executar algumas tarefas básicas.
 ms.localizationpriority: medium
 author: jasonjoh
-ms.openlocfilehash: 6b0787861014985d1c411b651fa44ca45ff533e6
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 623c034622054150ff6b58b97e063f3e833489de
+ms.sourcegitcommit: f7956d25472a55af03be83b6ab986a7149a7ac88
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59139062"
+ms.lasthandoff: 10/12/2021
+ms.locfileid: "60270310"
 ---
 # <a name="get-started-with-the-microsoft-graph-powershell-sdk"></a>Começar com o Microsoft Graph PowerShell SDK
 
@@ -92,7 +92,7 @@ Verifique se funcionou inserindo o seguinte.
 $user.DisplayName
 ```
 
-### <a name="list-the-users-joined-teams"></a>Listar a lista de usuários ingress Teams
+### <a name="list-the-users-joined-teams"></a>Listar as equipes ingressáveis do usuário
 
 Agora use a ID do usuário como um parâmetro para o `Get-MgUserJoinedTeam` comando.
 
@@ -100,19 +100,15 @@ Agora use a ID do usuário como um parâmetro para o `Get-MgUserJoinedTeam` coma
 Get-MgUserJoinedTeam -UserId $user.Id
 ```
 
-Assim como o `Get-MgUser` comando, isso fornece uma lista de Teams. Selecione uma das Teams do usuário e use-a `DisplayName` para filtrar a lista.
-
-```powershell
-$team = Get-MgUserJoinedTeam -UserId $user.Id -Filter "displayName eq 'Sales and Marketing'"
-```
+Assim como o `Get-MgUser` comando, isso fornece uma lista de equipes. Selecione uma das equipes ingressada pelo usuário e copie seu `Id` .
 
 ### <a name="list-team-channels"></a>Listar canais de equipe
 
-Agora use a ID da Equipe como um parâmetro para o comando, seguindo um padrão semelhante de listagem de todos os canais e filtrando a lista para obter o canal específico que `Get-MgTeamChannel` você deseja.
+Agora use a ID da equipe como um parâmetro para o comando, seguindo um padrão semelhante de listagem de todos os canais e filtrando a lista para obter o canal específico que `Get-MgTeamChannel` você deseja.
 
 ```powershell
 Get-MgTeamChannel -TeamId $team.Id
-$channel = Get-MgTeamChannel -TeamId $team.Id -Filter "displayName eq 'General'"
+$channel = Get-MgTeamChannel -TeamId ID_FROM_PREVIOUS_STEP -Filter "displayName eq 'General'"
 ```
 
 ### <a name="send-a-message"></a>Enviar uma mensagem
@@ -137,7 +133,7 @@ Use o `Disconnect-MgGraph` comando para sair.
 Disconnect-MgGraph
 ```
 
-## <a name="next-steps"></a>Próximas etapas
+## <a name="next-steps"></a>Próximos passos
 
 - [Saiba como navegar no SDK](navigating.md)
 - [Usar autenticação somente aplicativo com o Microsoft Graph PowerShell SDK](app-only.md)

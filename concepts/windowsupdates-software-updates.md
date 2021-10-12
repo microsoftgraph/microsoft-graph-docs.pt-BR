@@ -5,12 +5,12 @@ author: Alice-at-Microsoft
 ms.localizationpriority: medium
 ms.prod: w10
 doc_type: conceptualPageType
-ms.openlocfilehash: 1c3dfac442bdf4950f62d565db6bc1ceb7ebd468
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 72f56b46ceb27a8f4dbbb7c7cc52ccc10a0decc0
+ms.sourcegitcommit: f7956d25472a55af03be83b6ab986a7149a7ac88
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59117512"
+ms.lasthandoff: 10/12/2021
+ms.locfileid: "60270338"
 ---
 # <a name="software-updates-with-the-windows-update-for-business-deployment-service"></a>Atualizações de software com o serviço de implantação Windows Update for Business
 
@@ -36,8 +36,8 @@ Por exemplo, as duas atualizações de qualidade de segurança a seguir são con
 
 | Título                                                                                   | Produtos                           | Classificação   |
 |-----------------------------------------------------------------------------------------|------------------------------------|------------------|
-| Atualização Cumulativa 2021-03 para Windows 10 versão 20H2 para sistemas baseados em **x86**(KB5000802) | Windows 10, versão 1903 e posterior | Atualizações de segurança |
-| Atualização Cumulativa 2021-03 para Windows 10 versão 20H2 para sistemas baseados em **x64**(KB5000802) | Windows 10, versão 1903 e posterior | Atualizações de segurança |
+| Atualização Cumulativa 2021-03 para Windows 10 versão 20H2 para sistemas baseados em **x86**(KB5000802) | Windows 10, versão 1903 e posterior | Atualizações de Segurança |
+| Atualização Cumulativa 2021-03 para Windows 10 versão 20H2 para sistemas baseados em **x64**(KB5000802) | Windows 10, versão 1903 e posterior | Atualizações de Segurança |
 
 No catálogo fornecido pelo serviço de implantação Windows Update for Business, essas atualizações são agregadas em uma única entrada.
 
@@ -60,7 +60,7 @@ Todas as atualizações no catálogo de serviços de implantação têm as segui
 
 ### <a name="feature-updates"></a>Atualizações de recursos
 
-As atualizações de recursos no catálogo de serviços de implantação são identificadas pela versão. As entradas agregam diferenças entre arquitetura (por exemplo, x86 vs. x64) e produto (no Catálogo de Atualizações da Microsoft, todas as atualizações de recursos são para o produto *Windows 10).*
+As atualizações de recursos no catálogo de serviços de implantação são identificadas pela versão. Entradas agregam diferenças entre arquitetura (por exemplo, x86 vs. x64) e produto (no Catálogo de Atualizações da Microsoft, todas as atualizações de recursos são para o *produto Windows 10).*
 
 | Propriedade | Descrição                                       |
 |----------|---------------------------------------------------|
@@ -97,10 +97,10 @@ As entradas do Catálogo de Atualizações da Microsoft correspondentes a uma at
 
 | Título                                                                                   | Produtos                           | Classificação   |
 |-----------------------------------------------------------------------------------------|------------------------------------|------------------|
-| Atualização Cumulativa 2021-03 para Windows 10 versão 20H2 para sistemas baseados em x86 (KB5000802) | Windows 10, versão 1903 e posterior | Atualizações de segurança |
-| Atualização Cumulativa 2021-03 para Windows 10 versão 20H2 para sistemas baseados em x64 (KB5000802) | Windows 10, versão 1903 e posterior | Atualizações de segurança |
-| Atualização Cumulativa 2021-03 para Windows 10 versão 1909 para sistemas baseados em x86 (KB5000808) | Windows 10, versão 1903 e posterior | Atualizações de segurança |
-| Atualização Cumulativa 2021-03 para Windows 10 versão 1809 para sistemas baseados em x64 (KB5000822) | Windows 10, Windows 10 LTSB        | Atualizações de segurança |
+| Atualização Cumulativa 2021-03 para Windows 10 versão 20H2 para sistemas baseados em x86 (KB5000802) | Windows 10, versão 1903 e posterior | Atualizações de Segurança |
+| Atualização Cumulativa 2021-03 para Windows 10 versão 20H2 para sistemas baseados em x64 (KB5000802) | Windows 10, versão 1903 e posterior | Atualizações de Segurança |
+| Atualização Cumulativa 2021-03 para Windows 10 versão 1909 para sistemas baseados em x86 (KB5000808) | Windows 10, versão 1903 e posterior | Atualizações de Segurança |
+| Atualização Cumulativa 2021-03 para Windows 10 versão 1809 para sistemas baseados em x64 (KB5000822) | Windows 10, Windows 10 LTSB        | Atualizações de Segurança |
 
 Depois de identificar a atualização desejada, atribua-a como conteúdo a uma implantação usando [uma qualityUpdateReference](/graph/api/resources/windowsupdates-qualityupdatereference) e especificando as **propriedades releaseDateTime** **e classificação.**
 

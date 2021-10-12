@@ -1,16 +1,16 @@
 ---
 title: Criar accessPackageAssignmentRequest
 description: Crie um novo accessPackageAssignmentRequest.
-localization_priority: Normal
+ms.localizationpriority: medium
 author: markwahl-msft
 ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: 999adc6cf936f1e94a5c45bf4ca79c4841a9f4b3d6316f798a8ca377b308323d
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: d59a2bd74b79eddba33fff4432644a2e23f9974a
+ms.sourcegitcommit: f7956d25472a55af03be83b6ab986a7149a7ac88
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "56898781"
+ms.lasthandoff: 10/12/2021
+ms.locfileid: "60270345"
 ---
 # <a name="create-accesspackageassignmentrequest"></a>Criar accessPackageAssignmentRequest
 
@@ -26,8 +26,8 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 | Tipo de permissão                        | Permissões (da com menos para a com mais privilégios) |
 |:---------------------------------------|:--------------------------------------------|
-| Delegada (conta corporativa ou de estudante)     | EntitlementManagement.ReadWrite.All |
-| Delegada (conta pessoal da Microsoft) | Sem suporte. |
+| Delegado (conta corporativa ou de estudante)     | EntitlementManagement.ReadWrite.All |
+| Delegado (conta pessoal da Microsoft) | Sem suporte. |
 | Aplicativo                            | EntitlementManagement.ReadWrite.All |
 
 ## <a name="http-request"></a>Solicitação HTTP
@@ -64,7 +64,7 @@ Se tiver êxito, este método retornará um código de resposta de 200 séries e
 Se isso for uma solicitação, em seguida, um `AdminAdd` [accessPackageAssignment](../resources/accesspackageassignment.md) e, se necessário, um [accessPackageSubject](../resources/accesspackagesubject.md) também serão criados. Você pode localizá-los usando os parâmetros de consulta ao [listar accessPackageAssignments](accesspackageassignment-list.md).
 
 ## <a name="examples"></a>Exemplos
-### <a name="example-1-admin-requests-a-direct-assignment-for-a-user"></a>Exemplo 1: o administrador solicita uma atribuição direta para um usuário
+### <a name="example-1-admin-requests-a-direct-assignment-for-a-user-already-in-the-directory"></a>Exemplo 1: o administrador solicita uma atribuição direta para um usuário que já está no diretório
 #### <a name="request"></a>Solicitação
 
 A seguir está um exemplo da solicitação de uma atribuição direta, na qual o administrador está solicitando a criação de uma atribuição para o usuário. Como o [accessPackageSubject](../resources/accesspackagesubject.md) pode ainda não existir, o valor do **targetID** é a ID do objeto do usuário que está sendo atribuído, o valor do **accessPackageId** é o pacote de acesso desejado para esse usuário, e o valor de **assignmentPolicyId** é uma política de atribuição direta nesse pacote de acesso.
@@ -414,6 +414,59 @@ Content-type: application/json
     "requestStatus": "Accepted"
 }
 ```
+
+### <a name="example-5-admin-requests-a-direct-assignment-for-a-user-not-yet-in-the-directory"></a>Exemplo 5: o administrador solicita uma atribuição direta para um usuário que ainda não está no diretório
+#### <a name="request"></a>Solicitação
+
+A seguir, um exemplo da solicitação de uma atribuição direta, na qual o administrador está solicitando a criação de uma atribuição para o usuário, para um usuário que não existe no diretório. O valor do **accessPackageId** é o pacote de acesso desejado para esse usuário, e o valor **de assignmentPolicyId** é uma política de atribuição direta nesse pacote de acesso.
+
+<!-- {
+  "blockType": "request",
+  "name": "create_accesspackageassignmentrequest_from_accesspackageassignmentrequests_5"
+}-->
+
+```http
+POST https://graph.microsoft.com/beta/identityGovernance/entitlementManagement/accessPackageAssignmentRequests
+Content-type: application/json
+
+{
+  "requestType": "AdminAdd",
+  "accessPackageAssignment":{
+     "target": {
+        "email": "user@contoso.com"
+     },
+     "assignmentPolicyId":"2264bf65-76ba-417b-a27d-54d291f0cbc8",
+     "accessPackageId":"a914b616-e04e-476b-aa37-91038f0b165b"
+  }
+}
+```
+
+#### <a name="response"></a>Resposta
+
+Este é um exemplo de resposta.
+
+> **Observação:** o objeto de resposta mostrado aqui pode ser encurtado para legibilidade.
+
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.accessPackageAssignmentRequest"
+} -->
+
+```http
+HTTP/1.1 201 Created
+Content-type: application/json
+
+{
+
+  "id": "7e382d02-4454-436b-b700-59c7dd77f466",
+  "requestType": "AdminAdd",
+  "requestState": "Submitted",
+  "requestStatus": "Accepted",
+  "isValidationOnly": false
+}
+```
+
 
 <!-- uuid: 16cd6b66-4b1a-43a1-adaf-3a886856ed98
 2019-02-04 14:57:30 UTC -->

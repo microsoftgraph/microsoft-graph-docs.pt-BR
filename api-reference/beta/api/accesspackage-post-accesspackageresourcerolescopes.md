@@ -1,16 +1,16 @@
 ---
 title: Criar accessPackageResourceRoleScope
 description: Crie um novo accessPackageResourceRoleScope para adicionar uma função de recurso a um pacote de acesso.
-localization_priority: Normal
+ms.localizationpriority: medium
 author: markwahl-msft
 ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: 6b4abe2f9c2c0060e97560a26c22d19ed53e01b7
-ms.sourcegitcommit: 1940be9846055aa650c6c03982b74a961f1e316a
+ms.openlocfilehash: 7e7d476c38f8e46c2fd02d2072abb5bd501853aa
+ms.sourcegitcommit: f7956d25472a55af03be83b6ab986a7149a7ac88
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/17/2021
-ms.locfileid: "53466956"
+ms.lasthandoff: 10/12/2021
+ms.locfileid: "60270347"
 ---
 # <a name="create-accesspackageresourcerolescope"></a>Criar accessPackageResourceRoleScope
 
@@ -132,7 +132,9 @@ Content-type: application/json
 
 #### <a name="request"></a>Solicitação
 
-Este é um exemplo de solicitação.  O recurso do pacote de acesso para o site já deve ter sido adicionado ao catálogo de pacotes de acesso que contém esse pacote de acesso.
+A seguir, um exemplo da solicitação de um recurso de escopo não raiz.  O recurso do pacote de acesso para o site já deve ter sido adicionado ao catálogo de pacotes de acesso que contém esse pacote de acesso.
+
+Se o objeto [accessPackageResourceScope](../resources/accesspackageresourcescope.md) obtido de [](accesspackagecatalog-list-accesspackageresources.md) uma solicitação anterior para listar recursos de pacote de acesso tem o recurso como um escopo raiz (**isRootScope** definido como ), inclua a `true` propriedade **isRootScope** no **objeto accessPackageResourceScope** da solicitação.
 
 
 # <a name="http"></a>[HTTP](#tab/http)
