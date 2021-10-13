@@ -4,12 +4,12 @@ description: Os limites de controle limitam número de chamadas simultâneas par
 author: davidmu1
 ms.localizationpriority: high
 ms.custom: graphiamtop20
-ms.openlocfilehash: 655509eec37b9010596d4418e2873ad85f7345c8
-ms.sourcegitcommit: 08e9b0bac39c1b1d2c8a79539d24aaa93364baf2
+ms.openlocfilehash: 38afc3388825b0b258bb51e6bcd6881600e1736f
+ms.sourcegitcommit: f7956d25472a55af03be83b6ab986a7149a7ac88
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/24/2021
-ms.locfileid: "59508044"
+ms.lasthandoff: 10/12/2021
+ms.locfileid: "60270359"
 ---
 # <a name="microsoft-graph-throttling-guidance"></a>Diretrizes de limitação do Microsoft Graph
 
@@ -222,13 +222,13 @@ A tabela a seguir lista a base dos custos da solicitação. Qualquer solicitaç�
 | OBTER | `applications/{id}/extensionProperties` | 2 | 0 |
 | OBTER | `contracts` | 3 | 0 |
 | POSTAR | `directoryObjects/getByIds` |  3 | 0 |
-| OBTER | `domains/{id}/domainNameReferences` | 4 | 0 |
+| OBTER | `domains/{id}/domainNameReferences` | 4  | 0 |
 | POSTAR | `getObjectsById` | 3 | 0 |
 | OBTER | `groups/{id}/members` | 3 | 0 |
 | OBTER | `groups/{id}/transitiveMembers` | 5 | 0 |
-| POSTAR | `isMemberOf` | 4 | 0 |
-| POSTAR | `me/checkMemberGroups` | 4 | 0 |
-| POSTAR | `me/checkMemberObjects` | 4 | 0 |
+| POSTAR | `isMemberOf` | 4  | 0 |
+| POSTAR | `me/checkMemberGroups` | 4  | 0 |
+| POSTAR | `me/checkMemberObjects` | 4  | 0 |
 | POSTAR | `me/getMemberGroups` | 2 | 0 |
 | POSTAR | `me/getMemberObjects` | 2 | 0 |
 | OBTER | `me/licenseDetails` | 2 | 0 |
@@ -291,10 +291,9 @@ Outros fatores que afetam um custo da solicitação:
 
 ### <a name="identity-and-access-reports-service-limits"></a>Limites do serviço de relatórios de identidade e acesso
 
-| Tipo de solicitação | Limitar por locatário para todos os aplicativos | Limitar por aplicativo por locatário |
-| ------------ | ----------------------------- | ------------------------ |
-| POST, PUT, DELATE, PATCH | 200 solicitações por 20 segundos | 100 solicitações por 20 segundos |
-| Qualquer | 2000 solicitações por 20 segundos | 1000 solicitações por 20 segundos |
+| Tipo de solicitação |  Limitar por aplicativo por locatário |
+| ------------ | ------------------------ |
+| Qualquer | 60 solicitações por 60 segundos |
 
 Os limites anteriores se aplicam aos seguintes recursos:
 
