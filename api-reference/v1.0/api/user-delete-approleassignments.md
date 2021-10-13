@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 doc_type: apiPageType
 ms.prod: users
 author: psignoret
-ms.openlocfilehash: 3ea8b069bc2e0b931889e4655c50930cf9f3ecfb
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 408af383fe69dd45ca2f94cb4f55969d490db36b
+ms.sourcegitcommit: f4999aa6fc05f845027db01aa489f7086f9850e1
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59056169"
+ms.lasthandoff: 10/13/2021
+ms.locfileid: "60290173"
 ---
 # <a name="delete-approleassignment"></a>Excluir appRoleAssignment
 
@@ -41,9 +41,9 @@ DELETE /users/{id}/appRoleAssignments/{id}
 
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
 
-| Nome       | Tipo | Descrição|
-|:---------------|:--------|:----------|
-| Autorização  | string  | {token} de portador. Obrigatório. |
+| Nome       | Descrição|
+|:---------------|:--------|
+| Autorização  | {token} de portador. Obrigatório. |
 
 ## <a name="request-body"></a>Corpo da solicitação
 

@@ -4,12 +4,12 @@ description: Saiba como gerenciar o acesso aos recursos no Gerenciamento de dire
 author: davidmu1
 ms.localizationpriority: medium
 ms.prod: governance
-ms.openlocfilehash: af382ef97907d767e443655265d48bc0fa30f375
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: ef171601ca5d0b91ddfd7ff58ca7ace1bc47ac1f
+ms.sourcegitcommit: f4999aa6fc05f845027db01aa489f7086f9850e1
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59117631"
+ms.lasthandoff: 10/13/2021
+ms.locfileid: "60289116"
 ---
 # <a name="tutorial-manage-access-to-resources-in-active-directory-entitlement-management-using-microsoft-graph-apis"></a>Tutorial: gerenciar o acesso aos recursos no gerenciamento de direitos do Active Directory usando APIs do Microsoft Graph
 
@@ -547,7 +547,7 @@ Você também pode usar a **id** da política de pacote de acesso criada para ve
 #### <a name="request"></a>Solicitação
 
 ```http
-GET https://graph.microsoft.com/beta/identityGovernance/entitlementManagement/accessPackageAssignments?$filter=accessPackageAssignmentPolicy/Id eq 'db440482-1210-4a60-9b55-3ac7a72f63ba'
+GET https://graph.microsoft.com/beta/identityGovernance/entitlementManagement/accessPackageAssignments?$filter=accessPackageAssignmentPolicy/Id eq 'db440482-1210-4a60-9b55-3ac7a72f63ba'&$expand=target,accessPackageAssignmentResourceRoles
 ```
 
 #### <a name="response"></a>Resposta
@@ -565,7 +565,18 @@ GET https://graph.microsoft.com/beta/identityGovernance/entitlementManagement/ac
       "assignmentStatus": "Delivered",
       "assignmentState": "Delivered",
       "isExtended": false,
-      "expiredDateTime": null
+      "expiredDateTime": null,
+      "target": {
+         "id": "8586ddc8-0ff7-4c24-9c79-f192bc3566e3",
+         "objectId": "2bc42425-6dc5-4f2a-9ebb-7a7464481eb0"
+      },
+      "accessPackageAssignmentResourceRoles": [
+         {
+            "id": "bdb7e0a0-a927-42ab-bf30-c5b5533dc54a",
+            "originSystem": "AadGroup",
+            "status": "Fulfilled"
+         }
+      ]
     }
   ]
 }
@@ -725,12 +736,12 @@ No Content - 204
 Neste tutorial, você usou muitas APIs para realizar tarefas. Explore a referência da API para essas APIs para saber mais sobre o que as APIs podem fazer.
 
 
-- [Trabalhando com a API de gerenciamento de direitos do Azure AD](/graph/api/resources/entitlementmanagement-root?view=graph-rest-beta)
-- [accessPackageCatalog](/graph/api/resources/accesspackagecatalog?view=graph-rest-beta)
-- [accessPackageResourceRequest](/graph/api/resources/accesspackageresourcerequest?view=graph-rest-beta)
-- [accessPackage](/graph/api/resources/accesspackage?view=graph-rest-beta)
-- [accessPackageResourceRoleScope](/graph/api/resources/accesspackageresourcerolescope?view=graph-rest-beta)
-- [accessPackageAssignmentPolicy](/graph/api/resources/accesspackageassignmentpolicy?view=graph-rest-beta)
-- [accessPackageAssignmentRequest](/graph/api/resources/accesspackageassignmentrequest?view=graph-rest-beta)
-- [group](/graph/api/resources/group?view=graph-rest-1.0)
-- [user](/graph/api/resources/user?view=graph-rest-1.0)
+- [Trabalhando com a API de gerenciamento de direitos do Azure AD](/graph/api/resources/entitlementmanagement-root?view=graph-rest-beta&preserve-view=true)
+- [accessPackageCatalog](/graph/api/resources/accesspackagecatalog?view=graph-rest-beta&preserve-view=true)
+- [accessPackageResourceRequest](/graph/api/resources/accesspackageresourcerequest?view=graph-rest-beta&preserve-view=true)
+- [accessPackage](/graph/api/resources/accesspackage?view=graph-rest-beta&preserve-view=true)
+- [accessPackageResourceRoleScope](/graph/api/resources/accesspackageresourcerolescope?view=graph-rest-beta&preserve-view=true)
+- [accessPackageAssignmentPolicy](/graph/api/resources/accesspackageassignmentpolicy?view=graph-rest-beta&preserve-view=true)
+- [accessPackageAssignmentRequest](/graph/api/resources/accesspackageassignmentrequest?view=graph-rest-beta&preserve-view=true)
+- [group](/graph/api/resources/group)
+- [user](/graph/api/resources/user?)

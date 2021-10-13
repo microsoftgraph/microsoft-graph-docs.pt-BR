@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 doc_type: apiPageType
 ms.prod: applications
 author: psignoret
-ms.openlocfilehash: 135b1fb92560c989a3db193127796cf6a2c13443
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: c8127c9fada249f429446f9fd6b93f228293e899
+ms.sourcegitcommit: f4999aa6fc05f845027db01aa489f7086f9850e1
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59110134"
+ms.lasthandoff: 10/13/2021
+ms.locfileid: "60290145"
 ---
 # <a name="delete-delegatedpermissionclassification"></a>Excluir delegatedPermissionClassification
 
@@ -24,9 +24,9 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegada (conta corporativa ou de estudante) | PermissionGrantPolicy.ReadWrite.All |
-|Delegada (conta pessoal da Microsoft) | Sem suporte.    |
-|Aplicativo | PermissionGrantPolicy.ReadWrite.All |
+|Delegado (conta corporativa ou de estudante) | PermissionGrantPolicy.ReadWrite.All |
+|Delegado (conta pessoal da Microsoft) | Sem suporte.    |
+|Application | PermissionGrantPolicy.ReadWrite.All |
 
 ## <a name="http-request"></a>Solicitação HTTP
 
@@ -38,9 +38,9 @@ DELETE /servicePrincipals/{id}/delegatedPermissionClassifications/{id}
 
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
 
-| Nome       | Tipo | Descrição|
-|:---------------|:--------|:----------|
-| Autorização  | string  | {token} de portador. Obrigatório. |
+| Nome       | Descrição|
+|:---------------|:--------|
+| Autorização  | {token} de portador. Obrigatório. |
 
 ## <a name="request-body"></a>Corpo da solicitação
 

@@ -5,12 +5,12 @@ author: nkramer
 ms.localizationpriority: medium
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 4c336f137fc71850207d7d25b6a75a038fc03ecd
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: edb00bd4e26af33f5cc4e6fca7089de86857d231
+ms.sourcegitcommit: f4999aa6fc05f845027db01aa489f7086f9850e1
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59036876"
+ms.lasthandoff: 10/13/2021
+ms.locfileid: "60288703"
 ---
 # <a name="clone-a-team"></a>Clonar uma equipe
 
@@ -38,9 +38,11 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegado (conta corporativa ou de estudante)     | Group.ReadWrite.All, Directory.ReadWrite.All |
+|Delegado (conta corporativa ou de estudante)     | Team.Create, Group.ReadWrite.All **, Directory.ReadWrite.All** |
 |Delegado (conta pessoal da Microsoft) | Sem suporte.    |
-|Aplicativo                            | Group.ReadWrite.All, Directory.ReadWrite.All |
+|Application                            | Team.Create, Group.ReadWrite.All **, Directory.ReadWrite.All** |
+
+> **Observação:** as permissões marcadas com ** são preteridas e não devem ser usadas.
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- { "blockType": "ignored" } -->

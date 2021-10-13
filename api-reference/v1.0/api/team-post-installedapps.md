@@ -5,12 +5,12 @@ author: akjo
 ms.localizationpriority: medium
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 6b0225960b6a0a3603d76ae66af4323e4c7f3476
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 13c7919f4fc15e8bbee023221c8fbcbebcb09edf
+ms.sourcegitcommit: f4999aa6fc05f845027db01aa489f7086f9850e1
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59109994"
+ms.lasthandoff: 10/13/2021
+ms.locfileid: "60288687"
 ---
 # <a name="add-app-to-team"></a>Adicionar aplicativo à equipe
 
@@ -24,9 +24,11 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegado (conta corporativa ou de estudante) | TeamsAppInstallation.ReadWriteForTeam, Group.ReadWrite.All, Directory.ReadWrite.All |
+|Delegado (conta corporativa ou de estudante) | TeamsAppInstallation.ReadWriteForTeam, Group.ReadWrite.All **, Directory.ReadWrite.All** |
 |Delegado (conta pessoal da Microsoft) | Sem suporte.    |
-|Aplicativo | TeamsAppInstallation.ReadWriteForTeam.All, Group.ReadWrite.All, Directory.ReadWrite.All |
+|Application | TeamsAppInstallation.ReadWriteForTeam.All, Group.ReadWrite.All **, Directory.ReadWrite.All** |
+
+> **Observação:** as permissões marcadas com ** são preteridas e não devem ser usadas.
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- { "blockType": "ignored" } -->
@@ -44,7 +46,7 @@ POST /teams/{team-id}/installedApps
 
 | Propriedade   | Tipo |Descrição|
 |:---------------|:--------|:----------|
-|teamsApp|Cadeia de caracteres|A id do aplicativo a ser acrescentado.|
+|teamsApp|Cadeia de Caracteres|A id do aplicativo a ser acrescentado.|
 
 ## <a name="response"></a>Resposta
 

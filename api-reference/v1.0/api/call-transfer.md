@@ -1,22 +1,22 @@
 ---
 title: 'call: transfer'
-description: Transferir uma chamada ponto a ponto ativa.
+description: Transfira uma chamada de grupo ou uma chamada de grupo ponto a ponto ativa.
 author: ananmishr
 ms.localizationpriority: medium
 ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: db9365c43bf1ab891c6f128feb4395c4b391109d
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 1e54c62c4d5a52ee45bb25d129e5f3d7961c29a0
+ms.sourcegitcommit: f4999aa6fc05f845027db01aa489f7086f9850e1
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59016817"
+ms.lasthandoff: 10/13/2021
+ms.locfileid: "60289970"
 ---
 # <a name="call-transfer"></a>call: transfer
 
 Namespace: microsoft.graph
 
-Transferir uma chamada ponto a ponto ativa.
+Transfira uma chamada de grupo ou uma chamada de grupo ponto a ponto ativa.
 
 > **Observação:** Isso só será suportado se o destino de transferência e transferência Microsoft Teams usuários que pertencem ao mesmo locatário. Transfer to PSTN number is supported only for application instance. Para saber mais sobre o destino de transferência, transferência e transferência, consulte [RFC 5589](https://tools.ietf.org/html/rfc5589#section-2).
 
@@ -49,6 +49,7 @@ Forneça um objeto JSON com os seguintes parâmetros no corpo da solicitação.
 | Parâmetro      | Tipo    |Descrição|
 |:---------------|:--------|:----------|
 |transferTarget|[invitationParticipantInfo](../resources/invitationparticipantinfo.md)|O participante que é o destino da transferência.|
+|transferee|[participantInfo](../resources/participantinfo.md)|O participante que é o transferidor da transferência. Ele só é necessário quando é transferido de uma chamada de grupo.|
 
 ## <a name="response"></a>Resposta
 Se tiver êxito, este método retornará um código de resposta `202 Accepted`.
@@ -56,7 +57,7 @@ Se tiver êxito, este método retornará um código de resposta `202 Accepted`.
 ## <a name="examples"></a>Exemplos
 Esses exemplos mostram o fluxo de uma chamada de entrada até os diferentes tipos de notificações de transferência.
 
-### <a name="example-1-call-transfer"></a>Exemplo 1: transferência de chamada
+### <a name="example-1-call-transfer-from-a-peer-to-peer-call"></a>Exemplo 1: Transferência de chamada de uma chamada ponto a ponto
 
 ##### <a name="request"></a>Solicitação
 O exemplo a seguir mostra a solicitação.
@@ -80,8 +81,7 @@ Content-Length: 430
         "id": "550fae72-d251-43ec-868c-373732c2704f",
         "displayName": "Heidi Steen"
       }
-    },
-    "replacesCallId": "replacesCallId-value"
+    }
   }
 }
 ```
@@ -237,15 +237,14 @@ Content-Type: application/json
           "code": 500,
           "subCode": 7000,
           "message": "<message>"
-        },
-        "replacesContext": "<replacesContext>"
+        }
       }
     }
   ]
 }
 ```
 
-### <a name="example-2-consultative-transfer"></a>Exemplo 2: transferência consultiva
+### <a name="example-2-consultative-transfer-from-a-peer-to-peer-call"></a>Exemplo 2: transferência consultiva de uma chamada ponto a ponto
 
 ##### <a name="request"></a>Solicitação
 O exemplo a seguir mostra a solicitação.
@@ -428,7 +427,7 @@ Content-Type: application/json
 }
 ```
 
-### <a name="example-3-call-transfer-to-pstn-number"></a>Exemplo 3: Transferência de chamada para número PSTN
+### <a name="example-3-call-transfer-from-a-peer-to-peer-call-to-pstn-number"></a>Exemplo 3: Transferência de chamada de uma chamada ponto a ponto para o número PSTN
 
 Essa chamada requer uma instância de aplicativo com um número PSTN atribuído. Para obter detalhes, [consulte Atribuir um número de telefone ao seu bot](/graph/cloud-communications-phone-number#assign-a-phone-number-to-your-bot).
 > **Observação:** Telefone ID é o número de telefone no formato E.164.
@@ -608,7 +607,7 @@ Content-Type: application/json
 }
 ```
 
-### <a name="example-4-consultative-transfer-to-pstn-number"></a>Exemplo 4: transferência consultiva para número PSTN
+### <a name="example-4-consultative-transfer-from-a-peer-to-peer-call-to-pstn-number"></a>Exemplo 4: transferência consultiva de uma chamada ponto a ponto para o número PSTN
 
 Essa chamada requer uma instância de aplicativo com um número PSTN atribuído. Para obter detalhes, [consulte Atribuir um número de telefone ao seu bot](/graph/cloud-communications-phone-number#assign-a-phone-number-to-your-bot).
 > **Observação:** Telefone ID é o número de telefone no formato E.164.
@@ -779,6 +778,184 @@ Content-Type: application/json
           "@odata.type": "#microsoft.graph.resultInfo",
           "code": 500,
           "subCode": 7700,
+          "message": "<message>"
+        }
+      }
+    }
+  ]
+}
+```
+
+### <a name="example-5-call-transfer-from-a-group-call"></a>Exemplo 5: Transferência de chamada de uma chamada de grupo
+
+> **Observação:** Para transferir de uma chamada de grupo, o parâmetro transferee é necessário. Todos os outros parâmetros são iguais aos de uma transferência de uma chamada ponto a ponto. Uma transferência consultiva de uma chamada de grupo ou uma transferência para pSTN de uma chamada de grupo são semelhantes aos exemplos 1-4, com o parâmetro transferee especificado.
+
+##### <a name="request"></a>Solicitação
+O exemplo a seguir mostra a solicitação.
+
+
+# <a name="http"></a>[HTTP](#tab/http)
+<!-- {
+  "blockType": "request",
+  "name": "call-transfer-5"
+}-->
+```http
+POST https://graph.microsoft.com/v1.0/communications/calls/{id}/transfer
+Content-Type: application/json
+Content-Length: 430
+
+{
+  "transferTarget": {
+    "endpointType": "default",
+    "identity": {
+      "user": {
+        "id": "550fae72-d251-43ec-868c-373732c2704f",
+        "displayName": "Heidi Steen"
+      }
+    },
+  },
+  "transferee": {
+    "identity": {
+      "user": {
+        "id": "751f6800-3180-414d-bd94-333364659951",
+        "tenantId": "72f988bf-86f1-41af-91ab-2d7cd011db47"
+      }
+    },
+    "participantId": "909c6581-5130-43e9-88f3-fcb3582cde37"
+  }
+}
+```
+
+##### <a name="response"></a>Resposta
+
+<!-- {
+  "blockType": "response",
+  "truncated": true
+}-->
+```http
+HTTP/1.1 202 Accepted
+```
+
+##### <a name="notification---transferring"></a>Notificação - transferência
+
+```http
+POST https://bot.contoso.com/api/calls
+Content-Type: application/json
+```
+
+<!-- {
+  "blockType": "example",
+  "@odata.type": "microsoft.graph.commsNotifications"
+}-->
+```json
+{
+  "@odata.type": "#microsoft.graph.commsNotifications",
+  "value": [
+    {
+      "@odata.type": "#microsoft.graph.commsNotification",
+      "changeType": "updated",
+      "resourceUrl": "/communications/calls/341a0500-d4bf-4224-8b19-1581168d328b",
+      "resourceData": {
+        "@odata.type": "#microsoft.graph.call",
+        "state": "transferring"
+      }
+    }
+  ]
+}
+```
+
+##### <a name="notification---transfer-accepted"></a>Notificação - transferência aceita
+
+> **Observação:** A transferência aceita pode acontecer após ou antes que o áudio do estado de mídia seja inativo.
+
+```http
+POST https://bot.contoso.com/api/calls
+Content-Type: application/json
+```
+
+<!-- {
+  "blockType": "example",
+  "@odata.type": "microsoft.graph.commsNotifications"
+}-->
+```json
+{
+  "@odata.type": "#microsoft.graph.commsNotifications",
+  "value": [
+    {
+      "@odata.type": "#microsoft.graph.commsNotification",
+      "changeType": "updated",
+      "resourceUrl": "/communications/calls/341a0500-d4bf-4224-8b19-1581168d328b",
+      "resourceData": {
+        "@odata.type": "#microsoft.graph.call",
+        "state": "transferAccepted"
+      }
+    }
+  ]
+}
+```
+
+##### <a name="notification---transfer-completed"></a>Notificação - transferência concluída
+
+```http
+POST https://bot.contoso.com/api/calls
+Content-Type: application/json
+```
+
+<!-- {
+  "blockType": "example",
+  "@odata.type": "microsoft.graph.commsNotifications"
+}-->
+```json
+{
+  "@odata.type": "#microsoft.graph.commsNotifications",
+  "value": [
+    {
+      "@odata.type": "#microsoft.graph.commsNotification",
+      "changeType": "deleted",
+      "resourceUrl": "/communications/calls/341a0500-d4bf-4224-8b19-1581168d328b",
+      "resourceData": {
+        "@odata.type": "#microsoft.graph.call",
+        "state": "terminated",
+        "resultInfo": {
+          "@odata.type": "#microsoft.graph.resultInfo",
+          "code": 0,
+          "subcode": 7015,
+          "message": "GracefulTransferCompleted"
+        }
+      }
+    }
+  ]
+}
+```
+
+##### <a name="notification---transfer-failed"></a>Notificação - falha na transferência
+
+> **Observação:** Quando uma transferência de chamada falhar, o estado da chamada será `established` .
+
+```http
+POST https://bot.contoso.com/api/calls
+Content-Type: application/json
+```
+
+<!-- {
+  "blockType": "example",
+  "@odata.type": "microsoft.graph.commsNotifications"
+}-->
+```json
+{
+  "@odata.type": "#microsoft.graph.commsNotifications",
+  "value": [
+    {
+      "@odata.type": "#microsoft.graph.commsNotification",
+      "changeType": "updated",
+      "resourceUrl": "/communications/calls/341a0500-d4bf-4224-8b19-1581168d328b",
+      "resourceData": {
+        "@odata.type": "#microsoft.graph.call",
+        "state": "established",
+        "resultInfo": {
+          "@odata.type": "#microsoft.graph.resultInfo",
+          "code": 500,
+          "subCode": 7000,
           "message": "<message>"
         }
       }

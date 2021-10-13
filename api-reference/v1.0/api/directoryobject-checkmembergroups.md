@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: keylimesoda
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: 3ffb6b68c0c37a0f6cb0d7a281dac46ea0b093cf
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: ea609ea886ba7e6115e94a349981949c6c1334c8
+ms.sourcegitcommit: f4999aa6fc05f845027db01aa489f7086f9850e1
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59038045"
+ms.lasthandoff: 10/13/2021
+ms.locfileid: "60289837"
 ---
 # <a name="directoryobject-checkmembergroups"></a>directoryObject: checkMemberGroups
 
@@ -24,8 +24,8 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegada (conta corporativa ou de estudante) | User.ReadBasic.All, User.Read.All, Directory.Read.All    |
-|Delegada (conta pessoal da Microsoft) | Sem suporte.    |
+|Delegado (conta corporativa ou de estudante) | User.ReadBasic.All, User.Read.All, Directory.Read.All    |
+|Delegado (conta pessoal da Microsoft) | Sem suporte.    |
 |Aplicativo | User.Read.All, Directory.Read.All |
 
 A tabela a seguir lista os tipos de permissão a usar para cenários diferentes.
@@ -49,10 +49,10 @@ POST /directoryObjects/{id}/checkMemberGroups
 ```
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
 
-| Nome       | Tipo | Descrição|
-|:---------------|:--------|:----------|
-| Autorização  | string  | {token} de portador. Obrigatório. |
-| Content-Type  | string | application/json  |
+| Nome       | Descrição|
+|:---------------|:--------|
+| Autorização  | {token} de portador. Obrigatório. |
+| Content-Type  | application/json  |
 
 ## <a name="request-body"></a>Corpo da solicitação
 

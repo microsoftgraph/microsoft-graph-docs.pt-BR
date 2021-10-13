@@ -5,21 +5,21 @@ author: AlexanderMars
 ms.localizationpriority: medium
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: 5d1293a83b2fc8130b15fb1a6da7cd36a8a9985e
-ms.sourcegitcommit: 36bae3615df41876493b25da478e589d1974f97b
+ms.openlocfilehash: bd8e2e542730da44cf2ab010903c718358c11070
+ms.sourcegitcommit: f4999aa6fc05f845027db01aa489f7086f9850e1
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "59997058"
+ms.lasthandoff: 10/13/2021
+ms.locfileid: "60290110"
 ---
 # <a name="get-organizationalbranding"></a>Obter organizationalBranding
 Namespace: microsoft.graph
 
-Recupere o objeto de identidade visual organizacional padrão, se o header **Accept-Language** não for especificado. Se nenhum objeto de identidade visual organizacional tiver sido criado, este método retornará um `404 Not Found` erro.
+Recupere o objeto de identidade visual organizacional padrão, se o header **Accept-Language** estiver definido como `0` ou `default` . Se nenhum objeto de identidade visual organizacional padrão existir, este método retornará um `404 Not Found` erro.
 
-Se o header **Accept-Language** for especificado, esse método recuperará a identidade visual da localidade especificada.
+Se o header **Accept-Language** for definido como uma localidade existente identificada pelo valor de sua **id,** este método recuperará a identidade visual da localidade especificada.
 
-Este método recupera apenas propriedades que não são stream, por exemplo, **usernameHintText** e **signInPageText**. Para recuperar tipos stream da identidade visual padrão, por exemplo, **bannerLogo** e **backgroundImage**, use o [método GET organizationalBrandingLocalization.](organizationalbrandinglocalization-get.md) A **id** da localização padrão pode ser `0` ou `default` .
+Este método recupera apenas propriedades que não são stream, por exemplo, **usernameHintText** e **signInPageText**. Para recuperar tipos stream da identidade visual padrão, por exemplo, **bannerLogo** e **backgroundImage**, use o [método GET organizationalBrandingLocalization.](organizationalbrandinglocalization-get.md)
 
 ## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
@@ -48,7 +48,7 @@ Este método dá suporte apenas ao `$select` parâmetro de consulta OData para a
 |Nome|Descrição|
 |:---|:---|
 |Autorização|{token} de portador. Obrigatório.|
-|Accept-Language|Uma localidade ISO 639-1 válida. Opcional.|
+|Accept-Language|Uma localidade ISO 639-1 válida. Obrigatório.|
 
 ## <a name="request-body"></a>Corpo da solicitação
 Não forneça um corpo de solicitação para esse método.
@@ -74,6 +74,7 @@ Este é um exemplo de solicitação.
 
 ```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/organization/84841066-274d-4ec0-a5c1-276be684bdd3/branding
+Accept-Language: 0
 ```
 # <a name="c"></a>[C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-organizationalbranding-csharp-snippets.md)]
@@ -143,6 +144,7 @@ Este é um exemplo de solicitação.
 
 ```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/organization/d69179bf-f4a4-41a9-a9de-249c0f2efb1d/branding
+Accept-Language: 0
 ```
 # <a name="c"></a>[C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-organizationalbranding-error-csharp-snippets.md)]
@@ -177,7 +179,7 @@ HTTP/1.1 404 Not Found
 
 ### <a name="example-3-get-organizational-branding-for-the-french-locale"></a>Exemplo 3: Obter identidade visual organizacional para a localidade francesa
 
-No exemplo a seguir, o header **Accept-Language** é usado para especificar a identidade visual de localização a ser recuperada.
+No exemplo a seguir, o header **Accept-Language** é usado para especificar para recuperar a `fr-FR` identidade visual de localização.
 
 #### <a name="request"></a>Solicitação
 
@@ -230,8 +232,8 @@ Content-Type: application/json
 
 {
     "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#branding",
-    "@odata.id": "https://graph.microsoft.com/v2/84841066-274d-4ec0-a5c1-276be684bdd3/directoryObjects/$/Microsoft.DirectoryServices.Organization('84841066-274d-4ec0-a5c1-276be684bdd3')/branding/fr",
-    "id": "fr",
+    "@odata.id": "https://graph.microsoft.com/v2/84841066-274d-4ec0-a5c1-276be684bdd3/directoryObjects/$/Microsoft.DirectoryServices.Organization('84841066-274d-4ec0-a5c1-276be684bdd3')/branding/fr-FR",
+    "id": "fr-FR",
     "backgroundColor": "#FFFF33",
     "backgroundImageRelativeUrl": null,
     "bannerLogoRelativeUrl": null,
@@ -244,7 +246,7 @@ Content-Type: application/json
 
 ### <a name="example-4-get-the-bannerlogo-for-the-default-locale"></a>Exemplo 4: Obter o bannerLogo para a localidade padrão
 
-O exemplo a seguir retorna o **objeto bannerLogo** para a localidade padrão. Você pode especificar **a id** como `default` ou na URL da `0` solicitação. Se o objeto não estiver definido, a solicitação retornará uma resposta vazia.
+O exemplo a seguir retorna o **objeto bannerLogo** para a localidade padrão. Para recuperar tipos de objeto Stream, por exemplo, **bannerLogo**, use [o get organizationalBrandingLocalizationmethod](organizationalbrandinglocalization-get.md). Você pode especificar o valor da **id** como `default` ou na URL da `0` solicitação. Se a propriedade não estiver definida, a solicitação retornará uma resposta vazia.
 
 #### <a name="request"></a>Solicitação
 
@@ -276,9 +278,9 @@ Content-Type: image/*
 <Image>
 ```
 
-### <a name="example-5-get-the-bannerlogo-for-the-fr-fr-locale"></a>Exemplo 5: Obter o bannerLogo para a localidade fr-FR
+### <a name="example-5-get-the-bannerlogo-for-the-default-locale-when-it-is-not-set"></a>Exemplo 5: Obter o bannerLogo para a localidade padrão quando ele não estiver definido
 
-O exemplo a seguir retorna o **objeto bannerLogo** para `fr-FR` a localidade cujo bannerLogo não está definido.
+O exemplo a seguir retorna o **objeto bannerLogo** que não foi definido para a localidade padrão.
 
 #### <a name="request"></a>Solicitação
 

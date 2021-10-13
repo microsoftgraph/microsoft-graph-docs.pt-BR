@@ -1,16 +1,16 @@
 ---
 title: Enviar chatMessage em um canal ou chat
 description: Envie um novo chatMessage no canal especificado ou em um chat.
-localization_priority: Normal
+ms.localizationpriority: medium
 author: RamjotSingh
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 8947beb25170965e96a6cf12a91066d22b60e398
-ms.sourcegitcommit: f99dc2b6c8b4cb6f9f74cd780dccc47a2bccfaa6
+ms.openlocfilehash: fa5c44b5671b30aefe9f13734f9e2aa0fc8dda10
+ms.sourcegitcommit: f4999aa6fc05f845027db01aa489f7086f9850e1
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/27/2021
-ms.locfileid: "58667756"
+ms.lasthandoff: 10/13/2021
+ms.locfileid: "60288927"
 ---
 # <a name="send-chatmessage-in-a-channel-or-a-chat"></a>Enviar chatMessage em um canal ou chat
 
@@ -31,9 +31,11 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 ### <a name="permissions-for-channel"></a>Permissões para o canal
 | Tipo de permissão                        | Permissões (da com menos para a com mais privilégios) |
 |:---------------------------------------|:--------------------------------------------|
-| Delegado (conta corporativa ou de estudante)     | ChannelMessage.Send, Group.ReadWrite.All |
+| Delegado (conta corporativa ou de estudante)     | ChannelMessage.Send, Group.ReadWrite.All** |
 | Delegado (conta pessoal da Microsoft) | Sem suporte. |
 | Aplicativo                            | Sem suporte. |
+
+> **Observação:** as permissões marcadas com ** são preteridas e não devem ser usadas.
 
 ### <a name="permissions-for-chat"></a>Permissões para o chat
 | Tipo de permissão                        | Permissões (da com menos para a com mais privilégios) |
@@ -66,7 +68,7 @@ POST /chats/{chat-id}/messages
 
 | Nome          | Descrição   |
 |:--------------|:--------------|
-| Autorização | Portador {código}. Obrigatório. |
+| Autorização | {code} do portador. Obrigatório. |
 | Content-type | application/json. Obrigatório. |
 
 ## <a name="request-body"></a>Corpo da solicitação
