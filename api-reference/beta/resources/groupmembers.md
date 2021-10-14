@@ -1,16 +1,16 @@
 ---
 title: tipo complexo groupMembers
 description: Identifica uma coleção de usuários no locatário que serão permitidos como solicitante, aprovador ou revisor.
-localization_priority: Normal
+ms.localizationpriority: medium
 author: markwahl-msft
 ms.prod: governance
 doc_type: resourcePageType
-ms.openlocfilehash: 0069cd6a8fd738c17a9035b519c4f141c3a5fa55
-ms.sourcegitcommit: 9d98d9e9cc1e193850ab9b82aaaf906d70e1378b
+ms.openlocfilehash: ce18ed739e1701e004c92f408d0276ef17f5d264
+ms.sourcegitcommit: f4999aa6fc05f845027db01aa489f7086f9850e1
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/12/2021
-ms.locfileid: "50761413"
+ms.lasthandoff: 10/13/2021
+ms.locfileid: "60289956"
 ---
 # <a name="groupmembers-complex-type"></a>tipo complexo groupMembers
 
@@ -18,14 +18,14 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Usado nas configurações de solicitação, aprovação e revisão de atribuição de uma política de atribuição [de pacote de acesso.](accesspackageassignmentpolicy.md) O valor " " indica que esse tipo identifica uma coleção de usuários no locatário que serão permitidos como solicitante, aprovador ou `@odata.type` revisor, que são membros de um `#microsoft.graph.groupMembers` grupo específico.
+Usado nas configurações de solicitação, aprovação e revisão de atribuição de uma política de atribuição [de pacote de acesso.](accesspackageassignmentpolicy.md) O valor indica que esse tipo identifica uma coleção de usuários no locatário que serão permitidos como solicitante, aprovador ou `@odata.type` revisor, que são membros de um `#microsoft.graph.groupMembers` grupo específico.
 
 ## <a name="properties"></a>Propriedades
 
 | Propriedade                     | Tipo                      | Descrição |
 | :--------------------------- | :------------------------ | :---------- |
-| id |Cadeia de caracteres | A ID do grupo no Azure AD. |
-| descrição |Cadeia de caracteres | O nome do grupo no Azure AD. Somente leitura. |
+| id |String | A ID do grupo no Azure AD. |
+| description |String | O nome do grupo no Azure AD. Somente leitura. |
 | isBackup | Boolean | Para **groupMembers** em um estágio de aprovação, essa propriedade indica que os membros do grupo são um aprovador de fallback de backup. |
 
 ## <a name="json-representation"></a>Representação JSON
@@ -44,8 +44,8 @@ A seguir está uma representação JSON do tipo.
 
 ```json
 {
-  "id": "string (identifier)",
-  "description": "string",
+  "id": "String (identifier)",
+  "description": "String",
   "isBackup": false
 }
 ```

@@ -1,16 +1,16 @@
 ---
 title: Excluir servicePrincipal
-description: Exclua servicePrincipal.
-localization_priority: Normal
+description: Excluir servicePrincipal.
+ms.localizationpriority: medium
 doc_type: apiPageType
 ms.prod: applications
 author: sureshja
-ms.openlocfilehash: 7066cd3184894f8de1cada2f1936ee1bd343d4a0
-ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
+ms.openlocfilehash: 63294e95cd1dd95f1fbd4d22a1c84484592648f2
+ms.sourcegitcommit: f4999aa6fc05f845027db01aa489f7086f9850e1
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/06/2021
-ms.locfileid: "50137526"
+ms.lasthandoff: 10/13/2021
+ms.locfileid: "60289872"
 ---
 # <a name="delete-serviceprincipal"></a>Excluir servicePrincipal
 
@@ -34,9 +34,9 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 DELETE /servicePrincipals/{id}
 ```
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
-| Nome       | Tipo | Descrição|
-|:---------------|:--------|:----------|
-| Autorização  | string  | {token} de portador. Obrigatório. |
+| Nome       | Descrição|
+|:---------------|:--------|
+| Autorização  | {token} de portador. Obrigatório. |
 
 ## <a name="request-body"></a>Corpo da solicitação
 Não forneça um corpo de solicitação para esse método.

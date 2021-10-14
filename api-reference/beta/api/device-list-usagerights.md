@@ -2,15 +2,15 @@
 title: Listar uso do dispositivoRights
 description: Recupere uma lista de objetos usageRights para um dispositivo.
 author: jeeshnair
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: a855ebf34d8e97a7a5fad00df2a022779ff2bc0d
-ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
+ms.openlocfilehash: 7ad57af7a7ac608bca5a29de94074ad81ec43944
+ms.sourcegitcommit: f4999aa6fc05f845027db01aa489f7086f9850e1
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "50946795"
+ms.lasthandoff: 10/13/2021
+ms.locfileid: "60290096"
 ---
 # <a name="list-device-usagerights"></a>Listar uso do dispositivoRights
 Namespace: microsoft.graph
@@ -24,9 +24,9 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 |Tipo de permissão|Permissões (da com menos para a com mais privilégios)|
 |:---|:---|
-|Delegado (conta corporativa ou de estudante)|Device.Read.All, Device.ReadWrite.All, Directory.Read.All, Directory.ReadWrite.All|
+|Delegado (conta corporativa ou de estudante)|Device.Read.All, Directory.Read.All, Directory.ReadWrite.All|
 |Delegado (conta pessoal da Microsoft)|Sem suporte.|
-|Aplicativo|Device.Read.All, Device.ReadWrite.All, Directory.Read.All, Directory.ReadWrite.All|
+|Application|Device.Read.All, Device.ReadWrite.All, Directory.Read.All, Directory.ReadWrite.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
 
@@ -39,7 +39,7 @@ GET /devices/{objectId}/usageRights
 ```
 
 ## <a name="optional-query-parameters"></a>Parâmetros de consulta opcionais
-Esta API dá suporte ao parâmetro $filter [consulta OData](/graph/query-parameters). Os seguintes padrões de $filter são suportados:
+Esta API dá suporte ao `$filter` [parâmetro de consulta OData.](/graph/query-parameters) Os seguintes padrões são `$filter` suportados:
 
 - $filter = estado eq 'value'
 - $filter = serviceIdentifier eq 'value'

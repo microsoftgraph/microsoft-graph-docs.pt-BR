@@ -1,18 +1,18 @@
 ---
-title: tipo de recurso participantInfo
+title: Tipo de recurso participantInfo
 description: Contém propriedades adicionais sobre a identidade do participante
 author: ananmishr
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: cloud-communications
 doc_type: resourcePageType
-ms.openlocfilehash: 8c05222185b87e03c86257939cec098b3ac212e8
-ms.sourcegitcommit: 9f88b7e41a4a4a4d5f52bd995ce07c6f702bd5d6
+ms.openlocfilehash: f6c759ba3936d500b34566ac894895ce7b0f7ff7
+ms.sourcegitcommit: f4999aa6fc05f845027db01aa489f7086f9850e1
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/01/2020
-ms.locfileid: "49522955"
+ms.lasthandoff: 10/13/2021
+ms.locfileid: "60289851"
 ---
-# <a name="participantinfo-resource-type"></a>tipo de recurso participantInfo
+# <a name="participantinfo-resource-type"></a>Tipo de recurso participantInfo
 
 Namespace: microsoft.graph
 
@@ -24,12 +24,13 @@ Contém propriedades adicionais sobre a identidade do participante
 
 | Propriedade         | Tipo                            | Descrição                                                                                                                                                                                                      |
 | :--------------- | :------------------------------ | :-----------------------------------------------------------------------------------------------------------------------------------------------------------                                                     |
-| countryCode      | String                          | O código do país ISO 3166-1 alfa-2 do local físico mais estimado do participante no início da chamada. Somente leitura.                                                                                   |
-| EndpointType     | String                          | O tipo de ponto de extremidade que o participante está usando. Os valores possíveis são: `default` , `skypeForBusiness` , ou `skypeForBusinessVoipPhone` . Somente leitura.                                                                    |
-| ladrões         | [identitySet](identityset.md)   | O [identityset](identityset.md) associado a este participante. Somente leitura.                                                                                                                                   |
-| languageId       | String                          | A cadeia de caracteres de cultura do idioma. Somente leitura.                                                                                                                                                                          |
-| região           | String                          | A região de início do participante. Pode ser um país, um continente ou uma região geográfica maior. Isso não é alterado com base no local físico atual do participante, ao contrário do countryCode. Somente leitura. |
-| platformId       | String                          | A ID de plataforma do cliente do participante. Somente leitura.    |
+| countryCode      | String                          | O código de país alpha-2 iso 3166-1 do local físico mais estimado do participante no início da chamada. Apenas leitura.                                                                                   |
+| endpointType     | String                          | O tipo de ponto de extremidade que o participante está usando. Os valores possíveis são: `default`, `skypeForBusiness` ou `skypeForBusinessVoipPhone`. Apenas leitura.                                                                    |
+| identity         | [identitySet](identityset.md)   | O [identitySet](identityset.md) associado a esse participante. Somente leitura.                                                                                                                                   |
+| languageId       | String                          | A cadeia de caracteres de cultura de idioma. Apenas leitura.                                                                                                                                                                          |
+| region           | String                          | A região 1 do participante. Pode ser um país, um continente ou uma região geográfica maior. Isso não muda com base na localização física atual do participante, ao contrário de countryCode. Apenas leitura. |
+| platformId       | String                          | A ID da plataforma do cliente do participante. Apenas leitura.    |
+| participantId    | String                          | A ID do participante. Somente leitura.    |
 
 
 ## <a name="json-representation"></a>Representação JSON
@@ -42,7 +43,9 @@ Veja a seguir uma representação JSON do recurso.
     "countryCode",
     "endpointType",
     "languageId",
-    "region"
+    "region",
+    "platformId",
+    "participantId"
   ],
   "@odata.type": "microsoft.graph.participantInfo"
 }-->
@@ -54,6 +57,7 @@ Veja a seguir uma representação JSON do recurso.
   "languageId": "String",
   "region": "String",
   "platformId": "String",
+  "participantId": "String"
 }
 ```
 

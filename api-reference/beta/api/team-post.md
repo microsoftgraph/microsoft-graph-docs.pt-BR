@@ -5,12 +5,12 @@ author: anandjo
 ms.localizationpriority: high
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 2252132ba14a5990639435fc659801385e835138
-ms.sourcegitcommit: c333953a9188b4cd4a9ab94cbe68871e8f3563e5
+ms.openlocfilehash: 89d5808c0e31065eecc9a511cc23cb560afee11e
+ms.sourcegitcommit: f4999aa6fc05f845027db01aa489f7086f9850e1
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/30/2021
-ms.locfileid: "58695382"
+ms.lasthandoff: 10/13/2021
+ms.locfileid: "60289284"
 ---
 # <a name="create-team"></a>Criar equipe
 
@@ -26,12 +26,14 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 | Tipo de permissão                        | Permissões (da com menos para a com mais privilégios) |
 | :------------------------------------- | :------------------------------------------ |
-| Delegado (conta corporativa ou de estudante)     | Team.Create, Group.ReadWrite.All, Directory.ReadWrite.All |
+| Delegado (conta corporativa ou de estudante)     | Team.Create, Group.ReadWrite.All **, Directory.ReadWrite.All** |
 | Delegado (conta pessoal da Microsoft) | Sem suporte.                              |
-| Aplicativo                            | Team.Create, Teamwork.Migrate.All, Group.ReadWrite.All, Directory.ReadWrite.All |
+| Application                            | Team.Create, Teamwork.Migrate.All, Group.ReadWrite.All **, Directory.ReadWrite.All** |
 
 > **Observação**: A permissão Teamwork.Migrate.All é *somente* suportado para [migração](/microsoftteams/platform/graph-api/import-messages/import-external-messages-to-teams).
 No futuro, a Microsoft pode exigir que você ou seus clientes paguem taxas adicionais com base na quantidade de dados importados.
+
+> **Observação**: as permissões marcadas com ** foram preteridas e não devem ser usadas.
 
 ## <a name="http-request"></a>Solicitação HTTP
 
@@ -54,7 +56,7 @@ No corpo da solicitação, forneça uma representação JSON de um objeto [team]
 
 ## <a name="response"></a>Resposta
 
-Se bem-sucedida, essa API retornará uma resposta `202 Accepted` contendo um link para a [teamsAsyncOperation](../resources/teamsasyncoperation.md).
+Se for bem-sucedido, esta API retornará uma resposta `202 Accepted` que contém um link para [teamsAsyncOperation](../resources/teamsasyncoperation.md).
 
 ## <a name="examples"></a>Exemplos
 
@@ -100,7 +102,7 @@ Content-Type: application/json
 <!-- markdownlint-disable MD024 -->
 <!-- markdownlint-disable MD001 -->
 
-##### <a name="response"></a>Resposta
+#### <a name="response"></a>Resposta
 
 <!-- {
   "blockType": "response",

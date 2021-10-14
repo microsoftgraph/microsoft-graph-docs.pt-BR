@@ -1,16 +1,16 @@
 ---
 title: Atribuir um gerente
 description: Use essa API para atribuir um gerente ao usuário.
-localization_priority: Normal
+ms.localizationpriority: medium
 author: jpettere
 ms.prod: users
 doc_type: apiPageType
-ms.openlocfilehash: e88a3ad02556ed14cc4aa7024c3414b36fa954a1
-ms.sourcegitcommit: 94c4acf8bd03c10a44b12952b6cb4827df55b978
+ms.openlocfilehash: 64fe2f3388b1743760802fc1c6d974692ce717dc
+ms.sourcegitcommit: f4999aa6fc05f845027db01aa489f7086f9850e1
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/06/2021
-ms.locfileid: "52785127"
+ms.lasthandoff: 10/13/2021
+ms.locfileid: "60290180"
 ---
 # <a name="assign-a-manager"></a>Atribuir um gerente
 
@@ -21,7 +21,7 @@ Namespace: microsoft.graph
 Use essa API para atribuir um gerente ao usuário.
 > Observação: não é possível atribuir subordinados diretamente; em vez disso, use essa API.
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
@@ -36,9 +36,9 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 PUT /users/{id}/manager/$ref
 ```
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
-| Nome       | Tipo | Descrição|
-|:---------------|:--------|:----------|
-| Autorização  | string  | {token} de portador. Obrigatório. |
+| Nome       | Descrição|
+|:---------------|:--------|
+| Autorização  | {token} de portador. Obrigatório. |
 
 ## <a name="request-body"></a>Corpo da solicitação
 No corpo da solicitação, forneça uma representação JSON de um objeto [directoryObject](../resources/directoryobject.md) ou [user](../resources/user.md) a ser adicionado.

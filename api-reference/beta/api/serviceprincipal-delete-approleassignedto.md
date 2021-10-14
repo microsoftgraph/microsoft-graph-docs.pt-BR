@@ -1,18 +1,18 @@
 ---
-title: Excluir um appRoleAssignment concedido para uma entidade de serviço
+title: Excluir appRoleAssignedTo
 description: Exclua um appRoleAssignment concedido para uma entidade de serviço.
-localization_priority: Normal
+ms.localizationpriority: medium
 doc_type: apiPageType
 ms.prod: applications
 author: sureshja
-ms.openlocfilehash: 955b47a05086f36b857c7443a962d81aa0aec735
-ms.sourcegitcommit: 486fe9c77d4d89c5416bb83e8c716e6918c47370
+ms.openlocfilehash: 0c05fcee4bece33cfd4b6c0d4bf3d8dc5d7f65c8
+ms.sourcegitcommit: f4999aa6fc05f845027db01aa489f7086f9850e1
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/15/2021
-ms.locfileid: "53441284"
+ms.lasthandoff: 10/13/2021
+ms.locfileid: "60290313"
 ---
-# <a name="delete-an-approleassignment-granted-for-a-service-principal"></a>Excluir um appRoleAssignment concedido para uma entidade de serviço
+# <a name="delete-approleassignedto"></a>Excluir appRoleAssignedTo
 
 Namespace: microsoft.graph
 
@@ -22,7 +22,7 @@ Namespace: microsoft.graph
 
 Exclui um [appRoleAssignment](../resources/approleassignment.md) que um usuário, grupo ou entidade de serviço cliente foi concedido para uma entidade de serviço de recursos.
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>Permissões
 
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
@@ -41,13 +41,13 @@ DELETE /servicePrincipals/{resource-SP-id}/appRoleAssignedTo/{appRoleAssignment-
 ```
 
 > [!NOTE]
-> Como prática prática, recomendamos excluir atribuições de função de aplicativo por meio da relação da entidade de serviço de recursos, em vez da relação do usuário, grupo ou entidade de `appRoleAssignedTo` serviço  `appRoleAssignments` atribuída.
+> Como prática prática, recomendamos que você use esse método para excluir atribuições de função de aplicativo, em vez do método [Delete appRoleAssignments](serviceprincipal-delete-approleassignments.md) que exclui por meio da relação **appRoleAssignments** do usuário, grupo ou entidade de serviço atribuída.
 
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
 
-| Nome       | Tipo | Descrição|
-|:---------------|:--------|:----------|
-| Autorização  | string  | {token} de portador. Obrigatório. |
+| Nome       | Descrição|
+|:---------------|:--------|
+| Autorização  | {token} de portador. Obrigatório. |
 
 ## <a name="request-body"></a>Corpo da solicitação
 

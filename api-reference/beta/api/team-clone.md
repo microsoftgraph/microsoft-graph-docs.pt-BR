@@ -2,15 +2,15 @@
 title: Clonar uma equipe
 description: Crie uma cópia de uma equipe. Essa operação também cria uma cópia do grupo correspondente.
 author: nkramer
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 6299d1e7ecf828ee6587c4a69796021f1905dfd5
-ms.sourcegitcommit: 94c4acf8bd03c10a44b12952b6cb4827df55b978
+ms.openlocfilehash: 58fc5c857fa972f265ffdddd2123dbc9e1aba982
+ms.sourcegitcommit: f4999aa6fc05f845027db01aa489f7086f9850e1
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/06/2021
-ms.locfileid: "52786857"
+ms.lasthandoff: 10/13/2021
+ms.locfileid: "60289263"
 ---
 # <a name="clone-a-team"></a>Clonar uma equipe
 
@@ -32,15 +32,17 @@ Quando as guias são clonadas, elas são colocadas em um estado não configurado
 A clonagem é uma operação de longa duração.
 Depois que o clone POST retorna, você precisa OBTER a operação retornada pelo header Location: para ver se ele está "em execução" ou "bem-sucedido" ou "falhou". [](../resources/teamsasyncoperation.md) Você deve continuar a OBTER até que o status não seja "em execução". O atraso recomendado entre GETs é de 5 segundos.
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>Permissões
 
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegado (conta corporativa ou de estudante)     | Group.ReadWrite.All, Directory.ReadWrite.All |
+|Delegado (conta corporativa ou de estudante)     | Team.Create, Group.ReadWrite.All **, Directory.ReadWrite.All** |
 |Delegado (conta pessoal da Microsoft) | Sem suporte.    |
-|Aplicativo                            | Group.ReadWrite.All, Directory.ReadWrite.All |
+|Aplicativo                            | Team.Create, Group.ReadWrite.All **, Directory.ReadWrite.All** |
+
+> **Observação**: as permissões marcadas com ** foram preteridas e não devem ser usadas.
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- { "blockType": "ignored" } -->
@@ -111,7 +113,7 @@ Content-Type: application/json
 
 
 #### <a name="response"></a>Resposta
-Este é um exemplo de resposta. Observação: o objeto de resposta mostrado aqui pode ser encurtado para legibilidade.
+Eis um exemplo da resposta. Observação: o objeto de resposta exibido aqui pode ser reduzido para facilitar a leitura.
 <!-- {
   "blockType": "response"
 } -->

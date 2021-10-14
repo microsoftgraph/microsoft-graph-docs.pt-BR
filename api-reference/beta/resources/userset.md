@@ -1,16 +1,16 @@
 ---
 title: Tipo complexo userSet
-description: O tipo base abstrato para tipos usados nas configurações de solicitação, aprovação e revisão de atribuição de uma política de atribuição de pacote de acesso.
-localization_priority: Normal
+description: O tipo de base abstrata para tipos usados nas configurações de solicitação, aprovação e revisão de atribuição de uma política de atribuição de pacote de acesso.
+ms.localizationpriority: medium
 author: markwahl-msft
 ms.prod: governance
 doc_type: resourcePageType
-ms.openlocfilehash: a36ca6012c86486ae2eba0a2f73cce401d5609d9
-ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
+ms.openlocfilehash: bd16a117b7b1bd93db1977ffb50ba501b4e801ed
+ms.sourcegitcommit: f4999aa6fc05f845027db01aa489f7086f9850e1
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/06/2021
-ms.locfileid: "50136127"
+ms.lasthandoff: 10/13/2021
+ms.locfileid: "60289529"
 ---
 # <a name="userset-complex-type"></a>Tipo complexo userSet
 
@@ -18,7 +18,13 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Usado nas configurações de solicitação, aprovação e revisão de atribuição de uma política de atribuição [de pacote de acesso.](accesspackageassignmentpolicy.md) O tipo de base abstrata para [o singleUser](singleuser.md),[groupMembers](groupmembers.md), [connectedOrganizationMembers](connectedorganizationmembers.md), [requestorManager](requestormanager.md), [internalSponsors](internalsponsors.md)e [externalSponsors](externalsponsors.md) tipos.
+Usado nas configurações de solicitação, aprovação e revisão de atribuição de uma política de atribuição [de pacote de acesso.](accesspackageassignmentpolicy.md) É um tipo de base abstrato herdado pelos seguintes tipos de recurso:
++ [singleUser](singleuser.md)
++ [groupMembers](groupmembers.md)
++ [connectedOrganizationMembers](connectedorganizationmembers.md)
++ [requestorManager](requestormanager.md)
++ [internalSponsors](internalsponsors.md)
++ [externalSponsors](externalsponsors.md)
 
 ## <a name="properties"></a>Propriedades
 
@@ -28,7 +34,13 @@ Usado nas configurações de solicitação, aprovação e revisão de atribuiç�
 
 ## <a name="json-representation"></a>Representação JSON
 
-A seguir está uma representação JSON de userSet.  Observe que um userSet é uma classe base abstrata e, portanto, não seria enviado ou recebido.  Em vez disso, um dos `@odata.type` " `#microsoft.graph.singleUser` ", " `#microsoft.graph.groupMembers` ", " `#microsoft.graph.connectedOrganizationMembers` " `#microsoft.graph.requestorManager` ", " " ou " `#microsoft.graph.internalSponsors` seria `#microsoft.graph.externalSponsors` usado.
+A seguir está uma representação JSON de userSet. Um [userSet](userset.md) é uma classe base abstrata e, portanto, não seria enviado ou recebido.  Em vez disso, um dos seguintes `@odata.type` valores que representam os tipos herdados seria usado:
++ `#microsoft.graph.singleUser`
++ `#microsoft.graph.groupMembers`
++ `#microsoft.graph.connectedOrganizationMembers`
++ `#microsoft.graph.requestorManager`
++ `#microsoft.graph.internalSponsors`
++ `#microsoft.graph.externalSponsors`
 
 <!-- {
   "blockType": "resource",
@@ -40,7 +52,8 @@ A seguir está uma representação JSON de userSet.  Observe que um userSet é u
 
 ```json
 {
-       "isBackup": false
+  "@odata.type": "#microsoft.graph.userSet",
+  "isBackup": false
 }
 ```
 

@@ -2,15 +2,15 @@
 title: Excluir conversa
 description: Excluir um objeto conversation.
 author: Jordanndahl
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: 8017e9151b15e61a61945ab1200c88d0fc92d563
-ms.sourcegitcommit: 4fa6fcc058c7f8d8cad58c0b82db23d6c7da37d2
+ms.openlocfilehash: 6e47a8c9fffc13538ae8b78f22737c7f28d28fdc
+ms.sourcegitcommit: f4999aa6fc05f845027db01aa489f7086f9850e1
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/27/2021
-ms.locfileid: "52681862"
+ms.lasthandoff: 10/13/2021
+ms.locfileid: "60290159"
 ---
 # <a name="delete-conversation"></a>Excluir conversa
 
@@ -36,9 +36,9 @@ DELETE /groups/{id}/conversations/{id}
 ```
 
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
-| Nome       | Tipo | Descrição|
-|:---------------|:--------|:----------|
-| Autorização  | string  | {token} de portador. Obrigatório. |
+| Nome       | Descrição|
+|:---------------|:--------|
+| Autorização  | {token} de portador. Obrigatório. |
 
 ## <a name="request-body"></a>Corpo da solicitação
 Não forneça um corpo de solicitação para esse método.

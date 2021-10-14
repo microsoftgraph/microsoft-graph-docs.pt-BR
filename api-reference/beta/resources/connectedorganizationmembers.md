@@ -1,16 +1,16 @@
 ---
 title: tipo complexo connectedOrganizationMembers
 description: O tipo connectedOrganizationMembers identifica uma coleção de usuários no locatário que serão permitidos como solicitante, aprovador ou revisor.
-localization_priority: Normal
+ms.localizationpriority: medium
 author: markwahl-msft
 ms.prod: governance
 doc_type: resourcePageType
-ms.openlocfilehash: 725926bc39583bda653294f0cc917ea7d2f08a45
-ms.sourcegitcommit: 9d98d9e9cc1e193850ab9b82aaaf906d70e1378b
+ms.openlocfilehash: 0baaea3f8d6e917d072b8e9f5933b3388e1a0324
+ms.sourcegitcommit: f4999aa6fc05f845027db01aa489f7086f9850e1
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/12/2021
-ms.locfileid: "50761811"
+ms.lasthandoff: 10/13/2021
+ms.locfileid: "60289235"
 ---
 # <a name="connectedorganizationmembers-complex-type"></a>tipo complexo connectedOrganizationMembers
 
@@ -26,8 +26,8 @@ Esse tipo tem as seguintes propriedades:
 
 | Propriedade                     | Tipo                      | Descrição |
 | :--------------------------- | :------------------------ | :---------- |
-| id |Cadeia de caracteres | A ID da organização conectada no gerenciamento de direitos. |
-| descrição |Cadeia de caracteres | O nome da organização conectada. Somente leitura. |
+| id |String | A ID da organização conectada no gerenciamento de direitos. |
+| description |String | O nome da organização conectada. Somente leitura. |
 | isBackup | Boolean | Não é usado no momento. |
 
 ## <a name="json-representation"></a>Representação JSON
@@ -45,8 +45,8 @@ A seguir está uma representação JSON do tipo.
 
 ```json
 {
-  "id": "string (identifier)",
-  "description": "string",
+  "id": "String (identifier)",
+  "description": "String",
   "isBackup": false
 }
 ```

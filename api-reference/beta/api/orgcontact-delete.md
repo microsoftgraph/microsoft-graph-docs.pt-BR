@@ -1,16 +1,16 @@
 ---
 title: Excluir orgContact
 description: Excluir orgContact.
-localization_priority: Normal
+ms.localizationpriority: medium
 author: dkershaw10
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: 1b853a153afea17bae86a7e0d4215f9ae0ac39db
-ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
+ms.openlocfilehash: 1fc2f5a9a5ea6bdba1051ca7f2e8890d2eeed8bf
+ms.sourcegitcommit: f4999aa6fc05f845027db01aa489f7086f9850e1
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50434018"
+ms.lasthandoff: 10/13/2021
+ms.locfileid: "60289109"
 ---
 # <a name="delete-orgcontact"></a>Excluir orgContact
 
@@ -35,9 +35,9 @@ DELETE /contacts/{id}
 
 ```
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
-| Nome       | Tipo | Descrição|
-|:---------------|:--------|:----------|
-| Autorização  | string  | {token} de portador. Obrigatório. |
+| Nome       | Descrição|
+|:---------------|:--------|
+| Autorização  | {token} de portador. Obrigatório. |
 
 ## <a name="request-body"></a>Corpo da solicitação
 Não forneça um corpo de solicitação para esse método.

@@ -1,23 +1,23 @@
 ---
 author: JeremyKelley
-ms.date: 09/10/2017
-title: obter um arquivo ou uma pasta
+title: Obter um recurso driveItem
 ms.localizationpriority: high
 ms.prod: sharepoint
-description: Recupere os metadados de um DriveItem em um Drive por ID ou por caminho do sistema de arquivos.
+description: Recupere os metadados de um driveItem em um drive por ID ou caminho do sistema de arquivos.
 doc_type: apiPageType
-ms.openlocfilehash: ec020e311de0c5df80b361ceb1fc3d4de36ca6ea
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 0a4adf8b6e1a241380f357a6a71e8c291d5903da
+ms.sourcegitcommit: f4999aa6fc05f845027db01aa489f7086f9850e1
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59050597"
+ms.lasthandoff: 10/13/2021
+ms.locfileid: "60289809"
 ---
-# <a name="get-a-driveitem-resource"></a>Obter um recurso DriveItem
+# <a name="get-a-driveitem-resource"></a>Obter um recurso driveItem
 
 Namespace: microsoft.graph
 
-Recupere os metadados de um [DriveItem](../resources/driveitem.md) em um [Drive](../resources/drive.md) por ID ou caminho do sistema de arquivos.
+Recupere os metadados de um [driveItem](../resources/driveitem.md) em um [drive](../resources/drive.md) por ID ou caminho do sistema de arquivos.
+`item-id` é a ID de um driveItem. Também pode ser a ID exclusiva de um [item de Lista do SharePoint](../resources/listitem.md).
 
 ## <a name="permissions"></a>Permissões
 
@@ -59,13 +59,13 @@ No momento, só há suporte para isso no OneDrive pessoal.
 
 ## <a name="optional-request-headers"></a>Cabeçalhos de solicitação opcionais
 
-| Name          | Valor  | Descrição                                                                                                                                              |
+| Nome          | Valor  | Descrição                                                                                                                                              |
 |:--------------|:-------|:---------------------------------------------------------------------------------------------------------------------------------------------------------|
 | if-none-match | String | Se este cabeçalho de solicitação estiver incluso e a eTag (ou cTag) fornecida corresponder à marca atual do arquivo, uma resposta `HTTP 304 Not Modified` será exibida. |
 
 ## <a name="response"></a>Resposta
 
-Se bem sucedido, este método retorna o código de resposta `200 OK` e o recurso [DriveItem](../resources/driveitem.md) no corpo da resposta.
+Se bem sucedido, este método retorna o código de resposta `200 OK` e o recurso [driveItem](../resources/driveitem.md) no corpo da resposta.
 
 ## <a name="example"></a>Exemplo
 
@@ -135,9 +135,9 @@ Content-type: application/json
 }
 ```
 
-## <a name="remarks"></a>Comentários
+## <a name="see-also"></a>Confira também
 
-Confira mais informações sobre como os erros são retornados em [Respostas de Erros][error-response].
+Para detalhes sobre como os erros são retornados, confira [Respostas de erro][error-response].
 
 [error-response]: /graph/errors
 [odata-parameters]: /graph/query-parameters

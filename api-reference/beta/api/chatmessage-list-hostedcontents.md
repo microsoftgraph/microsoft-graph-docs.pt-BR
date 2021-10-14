@@ -1,16 +1,16 @@
 ---
 title: Listar hostedContents
 description: Recupere a lista de objetos chatMessageHostedContent de uma mensagem.
-localization_priority: Normal
+ms.localizationpriority: medium
 author: RamjotSingh
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 5ff56f4181211eff40f2d1a808245e6707eb1573
-ms.sourcegitcommit: 22bd45d272681658d46a8b99af3c3eabc7b05cb1
+ms.openlocfilehash: e9e2e4cda052f39f60110c3ae5480da67b4e1e78
+ms.sourcegitcommit: f4999aa6fc05f845027db01aa489f7086f9850e1
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/18/2021
-ms.locfileid: "58384172"
+ms.lasthandoff: 10/13/2021
+ms.locfileid: "60289550"
 ---
 # <a name="list-hostedcontents"></a>Listar hostedContents
 
@@ -20,15 +20,17 @@ Namespace: microsoft.graph
 
 Recupere a lista de [objetos chatMessageHostedContent](../resources/chatmessagehostedcontent.md) de uma mensagem. Essa API lista apenas os objetos de conteúdo hospedados. Para obter os bytes de conteúdo, consulte [get chatmessage hosted content](chatmessagehostedcontent-get.md)
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>Permissões
 
 ### <a name="permissions-for-channel"></a>Permissões para o canal
 
 | Tipo de permissão                        | Permissões (da com menos para a com mais privilégios) |
 |:---------------------------------------|:--------------------------------------------|
-|Delegado (conta corporativa ou de estudante)| ChannelMessage.Read.All, Group.Read.All, Group.ReadWrite.All |
+|Delegado (conta corporativa ou de estudante)| ChannelMessage.Read.All, Group.Read.All **, Group.ReadWrite.All** |
 |Delegado (conta pessoal da Microsoft)|Sem suporte.|
-|Aplicativo| ChannelMessage.Read.Group, ChannelMessage.Read.All, Group.Read.All, Group.ReadWrite.All |
+|Application| ChannelMessage.Read.Group, ChannelMessage.Read.All, Group.Read.All **, Group.ReadWrite.All** |
+
+> **Observação**: as permissões marcadas com ** foram preteridas e não devem ser usadas.
 
 ### <a name="permissions-for-chat"></a>Permissões para o chat
 
@@ -38,7 +40,7 @@ Recupere a lista de [objetos chatMessageHostedContent](../resources/chatmessageh
 |Delegado (conta pessoal da Microsoft)|Sem suporte.|
 |Aplicativo| ChatMessage.Read.Chat, Chat.Read.All, Chat.ReadWrite.All|
 
-> **Observação**: As _permissões ChannelMessage.Read.Group_ e _ChatMessage.Read.Chat_ usam o consentimento específico [do recurso.]( https://aka.ms/teams-rsc)
+> **Observação**: as permissões _ChannelMessage.Read.Group_ e _ChatMessage.Read.Chat_ usam o [consentimento específico do recurso]( https://aka.ms/teams-rsc).
 
 > [!NOTE]
 > É necessário solicitar acesso antes de chamar essa API com permissões de aplicativo. Para obter detalhes, confira [APIs protegidas no Microsoft Teams](/graph/teams-protected-apis).
