@@ -3,14 +3,14 @@ title: Obter foto
 description: Obtenha profilePhoto especificado ou seus metadados (propriedades profilePhoto ).
 ms.localizationpriority: high
 author: kevinbellinger
-ms.prod: ''
+ms.prod: people
 doc_type: apiPageType
-ms.openlocfilehash: 855d8f72dcbc1804a07dd84ae3788693131ed8ca
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: af3e8ce6aa70980fbcbb1516f302aebf74d3c7fa
+ms.sourcegitcommit: 8ae180a32dbd5a2b12512aee64699a2c23b8678b
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59104800"
+ms.lasthandoff: 10/14/2021
+ms.locfileid: "60354753"
 ---
 # <a name="get-photo"></a>Obter foto
 
@@ -35,7 +35,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
 |:--------------------|:---------------------------------------------------------|
 |Delegado (conta corporativa ou de estudante)      |   User.Read, User.ReadBasic.All, User.Read.All, User.ReadWrite, User.ReadWrite.All           |
-|Delegado (conta pessoal da Microsoft)      |   Sem suporte.            |
+|Delegado (conta pessoal da Microsoft)      |   User.Read, User.ReadWrite            |
 |Aplicativo      |    User.Read.All, User.ReadWrite.All           |
 
 ### <a name="to-retrieve-the-profile-photo-of-a-group"></a>Para recuperar a foto do perfil de um grupo
@@ -51,10 +51,12 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
 |:--------------------|:---------------------------------------------------------|
 |Delegado (conta corporativa ou de estudante)      |   Contacts.Read, Contacts.ReadWrite           |
-|Delegado (conta pessoal da Microsoft)      |   Sem suporte.            |
+|Delegado (conta pessoal da Microsoft)      |   Contacts.Read, Contacts.ReadWrite            |
 |Aplicativo      |    Contacts.Read, Contacts.ReadWrite           |
 
-> **Observação:** Há um [problema conhecido](/graph/known-issues#groups)ao acessar fotos de grupo usando permissões de aplicativo.
+> **Observação:**  
+> 1. Não há suporte para a operação de metadados em contas pessoais da Microsoft. 
+> 2. Atualmente, há um [problema conhecido](/graph/known-issues#groups) ao acessar fotos de grupo usando permissões de aplicativos.
 
 ## <a name="http-request"></a>Solicitação HTTP
 

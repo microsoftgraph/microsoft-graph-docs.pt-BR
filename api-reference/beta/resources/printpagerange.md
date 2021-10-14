@@ -1,18 +1,18 @@
 ---
-title: tipo de recurso printPageRange
+title: Tipo de recurso printPageRange
 description: Especifica o intervalo de páginas a serem impressas.
 author: braedenp-msft
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: universal-print
 doc_type: resourcePageType
-ms.openlocfilehash: a8bbf452c337cb5c2ade7302eb29cff4bdb73d23
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 229b13a398a01412a7c85e1df954dcddffb2ed9c
+ms.sourcegitcommit: 8ae180a32dbd5a2b12512aee64699a2c23b8678b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48052534"
+ms.lasthandoff: 10/14/2021
+ms.locfileid: "60354732"
 ---
-# <a name="printpagerange-resource-type"></a>tipo de recurso printPageRange
+# <a name="printpagerange-resource-type"></a>Tipo de recurso printPageRange
 
 Namespace: microsoft.graph
 
@@ -23,8 +23,8 @@ Especifica o intervalo de páginas a serem impressas.
 ## <a name="properties"></a>Propriedades
 | Propriedade     | Tipo        | Descrição |
 |:-------------|:------------|:------------|
-|Inicial|Int32|A página inicial (inclusive) do intervalo. Somente leitura.|
-|Página de fim|Int32|A página final (inclusive) do intervalo. Somente leitura.|
+|startPage|Int32|A página inicial (inclusive) do intervalo. Apenas leitura.|
+|endPage|Int32|A página final (inclusive) do intervalo. Somente leitura.|
 
 ## <a name="json-representation"></a>Representação JSON
 
@@ -40,8 +40,8 @@ Veja a seguir uma representação JSON do recurso.
 
 ```json
 {
-  "startPage": 123456,
-  "endPage": 123456
+  "startPage": "Int32",
+  "endPage": "Int32"
 }
 ```
 

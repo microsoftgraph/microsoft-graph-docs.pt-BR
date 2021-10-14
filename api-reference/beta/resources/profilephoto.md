@@ -1,16 +1,16 @@
 ---
 title: Tipo de recurso de profilePhoto
-description: Uma foto de perfil de um usuário, grupo ou contato do Outlook acessado a partir do Exchange Online ou do Azure Active Directory (AAD). Os dados binários não são codificados em base-64.
-localization_priority: Normal
+description: Uma foto de perfil de um usuário, grupo ou um contato Outlook acessado Exchange Online ou Azure Active Directory (AAD). Seus dados binários não são codificados em base 64.
+ms.localizationpriority: medium
 doc_type: resourcePageType
-ms.prod: ''
+ms.prod: people
 author: kevinbellinger
-ms.openlocfilehash: a7f23f67c65f039d79057f26269c55e5b563c11c
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: f64f87c18bd6e5752671a6dbb28b8464f07cfa3a
+ms.sourcegitcommit: 8ae180a32dbd5a2b12512aee64699a2c23b8678b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48029082"
+ms.lasthandoff: 10/14/2021
+ms.locfileid: "60355544"
 ---
 # <a name="profilephoto-resource-type"></a>Tipo de recurso de profilePhoto
 
@@ -18,9 +18,9 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Uma foto de perfil de um usuário, grupo ou contato do Outlook acessado a partir do Exchange Online ou do Azure Active Directory (AAD). Os dados binários não são codificados em base-64.
+Uma foto de perfil de um usuário, grupo ou um contato Outlook acessado Exchange Online ou Azure Active Directory (AAD). Seus dados binários não são codificados em base 64.
 
-Os tamanhos de fotos em HD compatíveis com o Exchange Online são os seguintes: “48x48”, “64x64”, “96x96”, “120x120”, “240x240”, “360x360”, “432x432”, “504x504” e “648x648”. No AAD, as fotos podem ser qualquer dimensão.
+Os tamanhos de fotos em HD compatíveis com o Exchange Online são os seguintes: “48x48”, “64x64”, “96x96”, “120x120”, “240x240”, “360x360”, “432x432”, “504x504” e “648x648”. No AAD, as fotos podem ser de qualquer dimensão.
 
 ## <a name="methods"></a>Métodos
 

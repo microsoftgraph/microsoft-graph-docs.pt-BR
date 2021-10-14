@@ -3,12 +3,12 @@ title: Provedor personalizado
 description: Crie um provedor personalizado para habilitar a autenticação e o acesso gráfico para os componentes do Microsoft Graph Toolkit, se você tiver código de autenticação existente em seu aplicativo.
 ms.localizationpriority: medium
 author: nmetulev
-ms.openlocfilehash: be470ed25acccb3fcdd1499b0048a33dae7c5d13
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: db939fbad5eb8d488514eac9c2dfa275f4984c66
+ms.sourcegitcommit: 8ae180a32dbd5a2b12512aee64699a2c23b8678b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59143557"
+ms.lasthandoff: 10/14/2021
+ms.locfileid: "60355243"
 ---
 # <a name="custom-provider"></a>Provedor personalizado
 
@@ -91,7 +91,7 @@ A `Graph` classe é um invólucro claro sobre o Microsoft Graph SDK.
 
 ### <a name="example"></a>Exemplo
 
-Todos os provedores estendem a `IProvider` classe abstrata. Por exemplo, dê uma olhada no código-fonte de qualquer um dos [provedores existentes.](https://github.com/microsoftgraph/microsoft-graph-toolkit/tree/main/packages/mgt/src/providers)
+Todos os provedores estendem a `IProvider` classe abstrata. Por exemplo, dê uma olhada no código-fonte de qualquer um dos [provedores existentes.](https://github.com/microsoftgraph/microsoft-graph-toolkit/tree/main/packages/providers)
 
 ## <a name="set-the-global-provider"></a>Definir o provedor global
 

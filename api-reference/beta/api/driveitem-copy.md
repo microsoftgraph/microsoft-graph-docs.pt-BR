@@ -1,19 +1,8 @@
 ---
-author: JeremyKelley
-description: Cria de forma assíncrona uma cópia de um [driveItem] [item-resource] (incluindo qualquer filho), sob um novo item pai ou com um novo nome.
-ms.date: 09/10/2017
-title: Copiar um arquivo ou pasta
-localization_priority: Normal
-ms.prod: sharepoint
-doc_type: apiPageType
-ms.openlocfilehash: fc0e23a75876659bce9717c752f87109b9d61bfb
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
-ms.translationtype: MT
-ms.contentlocale: pt-BR
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48955680"
+autor: Descrição de JeremyKelley: "Cria de forma assíncrona uma cópia de [um driveItem][item-resource] (incluindo qualquer filho), em um novo item pai ou com um novo nome."
+ms.date: 10/09/2017 título: driveItem: copy ms.localizationpriority: médio ms.prod: "sharepoint" doc_type: apiPageType
 ---
-# <a name="copy-a-driveitem"></a>Copiar um DriveItem
+# <a name="driveitem-copy"></a>driveItem: copiar
 
 Namespace: microsoft.graph
 
@@ -42,8 +31,19 @@ POST /me/drive/items/{item-id}/copy
 POST /sites/{siteId}/drive/items/{itemId}/copy
 POST /users/{userId}/drive/items/{itemId}/copy
 ```
+## <a name="optional-query-parameters"></a>Parâmetros de consulta opcionais
 
-### <a name="request-body"></a>Corpo da solicitação
+Este método dá suporte `@microsoft.graph.conflictBehavior` ao parâmetro de consulta para personalizar o comportamento quando ocorre um conflito.
+
+| Valor           | Descrição                                    |
+|:----------------|:---------------------------------------------- |
+| fail            | O comportamento padrão é relatar a falha.     |
+| replace         | Substituir item existente no site de destino.    |
+| rename          | Renomeie o item.                               |
+
+**Observação:** O _conflictBehavior_ não é suportado para OneDrive Consumidor.
+
+## <a name="request-body"></a>Corpo da solicitação
 
 Forneça um objeto JSON com os seguintes parâmetros no corpo da solicitação.
 
@@ -51,15 +51,20 @@ Forneça um objeto JSON com os seguintes parâmetros no corpo da solicitação.
 | Nome            | Valor                                          | Descrição                                                                                                 |
 |:----------------|:-----------------------------------------------|:------------------------------------------------------------------------------------------------------------|
 | parentReference | [ItemReference](../resources/itemreference.md) | Opcional. Referência ao item pai em que a cópia será criada.                                         |
-| nome            | string                                         | Opcional. O novo nome para a cópia. Se isso não for fornecido, será usado o mesmo nome que o original.    |
+| name            | string                                         | Opcional. O novo nome para a cópia. Se isso não for fornecido, será usado o mesmo nome que o original.    |
 
 **Observação:** _parentReference_ deve incluir os parâmetros `driveId` e `id` para a pasta de destino.
+
+## <a name="response"></a>Resposta
+
+Retorna detalhes sobre como [monitorar o progresso](/graph/long-running-actions-overview) da cópia após aceitar a solicitação.
 
 ## <a name="example"></a>Exemplo
 
 Este exemplo copia um arquivo identificado por `{item-id}` em uma pasta identificada por um valor `driveId` e `id`.
 A nova cópia do arquivo será nomeada `contoso plan (copy).txt`.
 
+### <a name="request"></a>Solicitação
 
 # <a name="http"></a>[HTTP](#tab/http)
 <!-- { "blockType": "request", "name": "copy-item", "scopes": "files.readwrite", "target": "action" } -->
@@ -95,22 +100,19 @@ Content-Type: application/json
 ---
 
 
-## <a name="response"></a>Resposta
-
-Retorna detalhes sobre como [monitorar o progresso](/graph/long-running-actions-overview) da cópia após aceitar a solicitação.
-
+### <a name="response"></a>Resposta
 <!-- { "blockType": "response" } -->
-
 ```http
 HTTP/1.1 202 Accepted
 Location: https://contoso.sharepoint.com/_api/v2.0/monitor/4A3407B5-88FC-4504-8B21-0AABD3412717
 ```
-
-O valor do cabeçalho `Location` fornece uma URL para um serviço que irá retornar o estado atual da operação de cópia. Você pode usar essas informações para [determinar quando a cópia terminou](/graph/long-running-actions-overview).
+O valor do cabeçalho `Location` fornece uma URL para um serviço que irá retornar o estado atual da operação de cópia.
+Você pode usar essas informações para [determinar quando a cópia foi concluída](/graph/long-running-actions-overview).
 
 ### <a name="remarks"></a>Comentários
 
-Em muitos casos, a ação de copiar é executada de forma assíncrona. A resposta da API só indicará que a operação de cópia foi aceita ou rejeitada, por exemplo, porque o nome de arquivo de destino já está sendo utilizado.
+Em muitos casos, a ação de copiar é executada de forma assíncrona.
+A resposta da API indicará apenas que a operação de cópia foi aceita ou rejeitada; por exemplo, devido ao nome do arquivo de destino já estar em uso.
 
 [item-resource]: ../resources/driveitem.md
 

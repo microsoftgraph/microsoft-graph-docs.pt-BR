@@ -3,14 +3,14 @@ title: Obter foto
 description: Obtenha a profilePhoto específica ou seus metadados (propriedades **profilePhoto**).
 ms.localizationpriority: high
 doc_type: apiPageType
-ms.prod: ''
+ms.prod: people
 author: kevinbellinger
-ms.openlocfilehash: 690720e1c2de153a7b56aab30a1212f4b530a468
-ms.sourcegitcommit: c333953a9188b4cd4a9ab94cbe68871e8f3563e5
+ms.openlocfilehash: 21a48e87dd4582024294503165e092cd7fa76751
+ms.sourcegitcommit: 8ae180a32dbd5a2b12512aee64699a2c23b8678b
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/30/2021
-ms.locfileid: "58695410"
+ms.lasthandoff: 10/14/2021
+ms.locfileid: "60355551"
 ---
 # <a name="get-photo"></a>Obter foto
 
@@ -34,13 +34,33 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 > **Observação:** o método OBTER foto em beta tem suporte para contas corporativas, de estudante ou pessoais do usuário. O método OBTER foto metadados, no entanto, tem suporte apenas para contas corporativas ou de estudante do usuário, ficando de fora as contas pessoais.
 
+### <a name="to-retrieve-the-profile-photo-of-a-user"></a>Para recuperar a foto do perfil de um usuário
+
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegado (conta corporativa ou de estudante) | Para recurso de **usuário**:<br/>User.Read, User.ReadBasic.All, User.Read.All, User.ReadWrite, User.ReadWrite.All<br /><br />Para recurso de **grupo**:<br />Group.Read.All, Group.ReadWrite.All<br /><br />Para recurso de **contato**:<br />Contacts.Read, Contacts.ReadWrite |
-|Delegado (conta pessoal da Microsoft)  <br /> **Observação**: não há suporte para a operação de metadados. | Para recurso de **usuário**:<br/>User.Read, User.ReadWrite<br /><br />Para recurso de **contato**:<br />Contacts.Read, Contacts.ReadWrite |
-|Aplicativo                        | Para recurso de **usuário**:<br/>User.Read.All, User.ReadWrite.All<br /><br />Para recurso de **grupo**:<br />Group.Read.All, Group.ReadWrite.All<br /><br />Para recurso de **contato**:<br />Contacts.Read, Contacts.ReadWrite |
+|Delegado (conta corporativa ou de estudante)      |   User.Read, User.ReadBasic.All, User.Read.All, User.ReadWrite, User.ReadWrite.All           |
+|Delegado (conta pessoal da Microsoft)      |   User.Read, User.ReadWrite            |
+|Aplicativo      |    User.Read.All, User.ReadWrite.All           |
 
-> **Observação:** Há um [problema conhecido](/graph/known-issues#groups)ao acessar fotos de grupo usando permissões de aplicativo.
+### <a name="to-retrieve-the-profile-photo-of-a-group"></a>Para recuperar a foto do perfil de um grupo
+
+|Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
+|:--------------------|:---------------------------------------------------------|
+|Delegado (conta corporativa ou de estudante)      |   Group.Read.All, Group.ReadWrite.All           |
+|Delegado (conta pessoal da Microsoft)      |   Sem suporte.            |
+|Aplicativo      |    Group.Read.All, Group.ReadWrite.All           |
+
+### <a name="to-retrieve-the-profile-photo-of-a-contact"></a>Para recuperar a foto do perfil de um contato
+
+|Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
+|:--------------------|:---------------------------------------------------------|
+|Delegado (conta corporativa ou de estudante)      |   Contacts.Read, Contacts.ReadWrite           |
+|Delegado (conta pessoal da Microsoft)      |   Contacts.Read, Contacts.ReadWrite            |
+|Aplicativo      |    Contacts.Read, Contacts.ReadWrite           |
+
+> **Observação:**  
+> 1. Não há suporte para a operação de metadados em contas pessoais da Microsoft. 
+> 2. Atualmente, há um [problema conhecido](/graph/known-issues#groups) ao acessar fotos de grupo usando permissões de aplicativos.
 
 ## <a name="http-request"></a>Solicitação HTTP
 
