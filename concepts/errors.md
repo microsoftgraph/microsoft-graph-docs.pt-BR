@@ -2,12 +2,12 @@
 title: Respostas de erros e tipos de recurso do Microsoft Graph
 description: Este tópico descreve alguns dos erros que podem ser retornados nas respostas do Microsoft Graph.
 ms.localizationpriority: high
-ms.openlocfilehash: c5b1dcc6a6540580483b4bf668c5c7ae9f28676c
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 4f080b18e2ef645a2045efe08437bb05684fb2a9
+ms.sourcegitcommit: f4999aa6fc05f845027db01aa489f7086f9850e1
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59136114"
+ms.lasthandoff: 10/13/2021
+ms.locfileid: "60289158"
 ---
 # <a name="microsoft-graph-error-responses-and-resource-types"></a>Respostas de erros e tipos de recurso do Microsoft Graph
 
@@ -177,6 +177,8 @@ A seguir estão alguns erros adicionais que seu aplicativo pode encontrar nos ob
 | **pathIsTooLong**                  | O caminho excede o comprimento máximo.
 | **pathTooDeep**                    | Atingido o limite de profundidade da hierarquia de pastas.
 | **propertyNotUpdateable**          | Propriedade não atualizável.
+| **provisioningNotAllowed**         | A solicitação requer provisionamento da conta, o que não é permitido.
+| **resourceBeingProvisioned**       | O recurso solicitado está sendo provisionado.
 | **resyncApplyDifferences**         | Nova sincronização necessária. Substitua todos os itens locais com a versão do servidor (incluindo exclusões) se você tiver certeza de que o serviço estava atualizado com suas alterações locais quando você sincronizou pela última vez. Carregar alterações locais que o servidor não conhece.
 | **resyncRequired**                 | Nova sincronização é necessária.
 | **resyncUploadDifferences**        | Nova sincronização necessária. Carregue os itens locais que o serviço não retornou e carregue os arquivos que diferem da versão do servidor (mantendo ambas as cópias se você não tiver certeza de qual é a mais atual).

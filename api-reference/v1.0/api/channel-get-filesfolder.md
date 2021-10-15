@@ -5,12 +5,12 @@ author: nkramer
 ms.localizationpriority: high
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 45bc671df35a4b97c372278e2703d681a8ef2226
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: e91244ee109a5039a58466c4aaa7271cd532957d
+ms.sourcegitcommit: f4999aa6fc05f845027db01aa489f7086f9850e1
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59131005"
+ms.lasthandoff: 10/13/2021
+ms.locfileid: "60290229"
 ---
 # <a name="get-filesfolder"></a>Obter filesFolder
 
@@ -23,10 +23,11 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegada (conta corporativa ou de estudante) | Files.Read.All, Files.ReadWrite.All, Group.Read.All, Group.ReadWrite.All |
-|Delegada (conta pessoal da Microsoft) | Sem suporte.    |
-|Aplicativo | Files.Read.All, Files.ReadWrite.All, Group.Read.All, Group.ReadWrite.All |
+|Delegado (conta corporativa ou de estudante) | Files.Read.All, Files.ReadWrite.All, Group.Read.All **, Group.ReadWrite.All** |
+|Delegado (conta pessoal da Microsoft) | Sem suporte.    |
+|Application | Files.Read.All, Files.ReadWrite.All, Group.Read.All **, Group.ReadWrite.All** |
 
+> **Observação**: as permissões marcadas com ** são preteridas e não devem ser usadas.
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- { "blockType": "ignored" } -->

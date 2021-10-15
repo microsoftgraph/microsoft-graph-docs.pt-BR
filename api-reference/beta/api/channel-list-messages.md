@@ -5,12 +5,12 @@ ms.localizationpriority: high
 author: RamjotSingh
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: b4a66560004f15829d9a19e9e561832c47085644
-ms.sourcegitcommit: c333953a9188b4cd4a9ab94cbe68871e8f3563e5
+ms.openlocfilehash: cbb3828f153d8c3fe877b266bdb3924b9ae38fbb
+ms.sourcegitcommit: f4999aa6fc05f845027db01aa489f7086f9850e1
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/30/2021
-ms.locfileid: "58694906"
+ms.lasthandoff: 10/13/2021
+ms.locfileid: "60288766"
 ---
 # <a name="list-channel-messages"></a>Listar mensagens do canal
 
@@ -30,11 +30,11 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 |Tipo de permissão|Permissões (da com menos para a com mais privilégios)|
 |---------|-------------|
-|Delegado (conta corporativa ou de estudante)| ChannelMessage.Read.All, Group.Read.All, Group.ReadWrite.All |
+|Delegado (conta corporativa ou de estudante)| ChannelMessage.Read.All, Group.Read.All **, Group.ReadWrite.All** |
 |Delegado (conta pessoal da Microsoft)|Sem suporte.|
-|Aplicativo| ChannelMessage.Read.Group*, ChannelMessage.Read.All, Group.Read.All, Group.ReadWrite.All |
+|Application| ChannelMessage.Read.Group *, ChannelMessage.Read.All, Group.Read.All**, Group.ReadWrite.All** |
 
-> **Observação**: Permissões marcadas com * usam [consentimento específico de recurso]( https://aka.ms/teams-rsc).
+> **Observação**: Permissões marcadas com * usam [consentimento específico de recurso]( https://aka.ms/teams-rsc). As permissões marcadas com ** são preteridas e não devem ser usadas.
 
 > [!NOTE]
 > É necessário solicitar acesso antes de chamar essa API com permissões de aplicativo. Para obter detalhes, confira [APIs protegidas no Microsoft Teams](/graph/teams-protected-apis).
@@ -51,7 +51,7 @@ GET /teams/{team-id}/channels/{channel-id}/messages
 Você pode usar o parâmetro de consulta [$top](/graph/query-parameters#top-parameter) para controlar o número de itens por resposta. O valor máximo permitido para `$top` é 50.
 No momento, não há suporte para os outros [Parâmetros de consulta OData](/graph/query-parameters).
 
-> **Observação:** [GET /teams/{teams-id}/channels/{channel-id}/messages/delta](chatmessage-delta.md) oferece suporte para a filtragem por data, que fornece dados semelhantes para GET /teams/{teams-id}/channels/{channel-id}/messages.
+> **Observação:** [GET /teams/{team-id}/channels/{channel-id}/messages/delta](chatmessage-delta.md) oferece suporte para a filtragem por data, que fornece dados semelhantes para GET /teams/{team-id}/channels/{channel-id}/messages.
 
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
 

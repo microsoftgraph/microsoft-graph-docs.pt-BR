@@ -1,27 +1,27 @@
 ---
 description: Arquivo gerado automaticamente. NÃO MODIFICAR
-ms.openlocfilehash: 98f9f037d0f3fb8294018569828fdee1620def288d8076c785428d8e510413b9
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 20f98d8080c00be94356c19c01675c9ceef63f7b
+ms.sourcegitcommit: 8ae180a32dbd5a2b12512aee64699a2c23b8678b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "57157092"
+ms.lasthandoff: 10/14/2021
+ms.locfileid: "60365780"
 ---
 ```java
 
 GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
 
 EducationAssignment educationAssignment = new EducationAssignment();
-educationAssignment.displayName = "Week 1 reading assignment";
+educationAssignment.displayName = "Reading and review test 09.03 #5";
 EducationItemBody instructions = new EducationItemBody();
 instructions.contentType = BodyType.TEXT;
-instructions.content = "Read chapters 1 through 3";
+instructions.content = "Read chapter 5 and write your review";
 educationAssignment.instructions = instructions;
-educationAssignment.dueDateTime = OffsetDateTimeSerializer.deserialize("2014-02-01T00:00:00Z");
+educationAssignment.dueDateTime = OffsetDateTimeSerializer.deserialize("2021-09-10T00:00:00Z");
 educationAssignment.addedStudentAction = EducationAddedStudentAction.NONE;
 educationAssignment.addToCalendarAction = EducationAddToCalendarOptions.STUDENTS_AND_PUBLISHER;
 
-graphClient.education().classes("11021").assignments("19002")
+graphClient.education().classes("72a7baec-c3e9-4213-a850-f62de0adad5f").assignments("4679bc1b-90c5-45af-ae1a-d5357672ed39")
     .buildRequest()
     .patch(educationAssignment);
 
