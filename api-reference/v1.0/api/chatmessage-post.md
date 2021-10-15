@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: RamjotSingh
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 595323bce69b31a4193ebfc2f96cb8cbb2d566d8
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 9128a2d0441420d82e82275163f555751b9f574a
+ms.sourcegitcommit: c3f849e5a052b1926373a4b316ec303250e6d09e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59147854"
+ms.lasthandoff: 10/15/2021
+ms.locfileid: "60369165"
 ---
 # <a name="send-chatmessage-in-a-channel-or-a-chat"></a>Enviar chatMessage em um canal ou chat
 
@@ -22,7 +22,7 @@ Envie um novo [chatMessage](../resources/chatmessage.md) no canal [especificado]
 
 > **Observação**: é uma violação dos termos [de](/legal/microsoft-apis/terms-of-use) uso para usar Microsoft Teams como um arquivo de log. Envie apenas mensagens que as pessoas lerão.
 
-## <a name="permissions"></a>Permissões
+## <a name="permissions"></a>Permissions
 
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
@@ -64,7 +64,7 @@ POST /chats/{chat-id}/messages
 
 | Nome          | Descrição   |
 |:--------------|:--------------|
-| Autorização | Portador {código}. Obrigatório. |
+| Autorização | {code} do portador. Obrigatório. |
 | Content-type | application/json. Obrigatório. |
 
 ## <a name="request-body"></a>Corpo da solicitação
@@ -528,7 +528,7 @@ Este é um exemplo de solicitação.
 
 > **Observação:** A **temporaryId** na **coleção hostedContents** é uma ID aleatória, mas deve ser a mesma no corpo e nos elementos **hostedContents.**  (Observe o **conjunto temporaryId** como **1** e a referência no corpo como `../hostedContents/1/$value` .)
 
-**contentBytes** deve ser definido como bytes binários codificados em cadeia de caracteres Base64. Você pode fazer isso em C# usando `Convert.ToBase64String(File.ReadAllBytes("image.png"));`
+**contentBytes** deve ser definido como bytes binários codificados em cadeia de caracteres Base64. Você pode fazer isso em C# usando `Convert.ToBase64String(File.ReadAllBytes("image.png"));` . Os usuários do .NET SDK não precisam executar a conversão para bytes codificados base64 à medida que o SDK lida com ela para você.
 
 
 # <a name="http"></a>[HTTP](#tab/http)
@@ -629,7 +629,7 @@ Este é um exemplo de solicitação.
 
 > **Observação:** A **temporaryId** na coleção **hostedContents** é uma ID aleatória, mas deve ser a mesma em todo o conteúdo **(em** **anexos**) e **elementos hostedContents.** (Observe a **temporaryId** definida como **1** e a referência no conteúdo como `../hostedContents/1/$value` .)
 
-**contentBytes** deve ser definido como bytes binários codificados em cadeia de caracteres Base64. Você pode fazer isso em C# usando `Convert.ToBase64String(File.ReadAllBytes("image.png"));`
+**contentBytes** deve ser definido como bytes binários codificados em cadeia de caracteres Base64.  Você pode fazer isso em C# usando `Convert.ToBase64String(File.ReadAllBytes("image.png"));` . Os usuários do .NET SDK não precisam executar a conversão para bytes codificados base64 à medida que o SDK lida com ela para você.
 
 
 # <a name="http"></a>[HTTP](#tab/http)

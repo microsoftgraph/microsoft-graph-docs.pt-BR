@@ -1,16 +1,16 @@
 ---
 title: 'user: invalidateAllRefreshTokens'
 description: Invalida todos os tokens de atualização do usuário emitidos para aplicativos e cookies de sessão no navegador do usuário.
-localization_priority: Normal
+ms.localizationpriority: medium
 author: jpettere
 ms.prod: users
 doc_type: apiPageType
-ms.openlocfilehash: a13982cb924c5c9b82c3248aefc13a54ec44bb2e
-ms.sourcegitcommit: 4888ac7504533344c4fc6828e2a06a002a1d72d3
+ms.openlocfilehash: 36d012a2299e4a84d62769661d3662a69e171bfe
+ms.sourcegitcommit: c3f849e5a052b1926373a4b316ec303250e6d09e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/09/2021
-ms.locfileid: "53351045"
+ms.lasthandoff: 10/15/2021
+ms.locfileid: "60369766"
 ---
 # <a name="user-invalidateallrefreshtokens"></a>user: invalidateAllRefreshTokens
 
@@ -22,11 +22,15 @@ Invalida todos os tokens de atualização do usuário emitidos para aplicativos 
 
 Para desenvolvedores, se o aplicativo tentar resgatar um token de acesso delegado para esse usuário usando um token de atualização inválido, o aplicativo receberá um erro. Se isso acontecer, o aplicativo precisará adquirir um novo token de atualização fazendo uma solicitação ao ponto de extremidade de autorização, o que forçará o usuário a entrar.
 
-## <a name="permissions"></a>Permissões
+
+## <a name="permissions"></a>Permissions
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
-+ Para que um aplicativo permita que o usuário inscreve invalide os aplicativos aos qual ele consentiu: User.ReadWrite, Directory.ReadWrite.All, Directory.AccessAsUser.All
-+ Para um aplicativo permitir que um administrador invalide aplicativos que um usuário consentiu: Directory.ReadWrite.All, Directory.AccessAsUser.All
+|Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
+|:--------------------|:---------------------------------------------------------|
+|Delegado (conta corporativa ou de estudante) | User.ReadWrite, Directory.ReadWrite.All, Directory.AccessAsUser.All    |
+|Delegado (conta pessoal da Microsoft) | Sem suporte.    |
+|Aplicativo | Sem suporte. |
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- { "blockType": "ignored" } -->
@@ -44,7 +48,7 @@ Esta operação não tem conteúdo de solicitação.
 
 ## <a name="response"></a>Resposta
 
-Se bem sucedido, este método retorna um código de resposta `204 No Content`.
+Quando é bem-sucedido, este método retorna um código de resposta `204 No Content`.
 
 >[!NOTE]
 >Essa API retorna um código de resposta HTTP diferente, semelhante à ação [revokeSignInSessions.](user-revokesigninsessions.md) Para obter detalhes, consulte [problema conhecido](/graph/known-issues#revoke-sign-in-sessions-returns-wrong-HTTP-code). 
