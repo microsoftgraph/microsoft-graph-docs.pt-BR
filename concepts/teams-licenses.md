@@ -4,19 +4,18 @@ description: Saiba mais sobre os modelos de licenciamento e pagamento que se apl
 author: nkramer
 ms.localizationpriority: high
 ms.prod: microsoft-teams
-ms.openlocfilehash: 9ace57d0ec135f39d2cb7e682b3271adc220b80c
-ms.sourcegitcommit: 6ae8c124fac63a195ccf516c9cff739f730b6b13
+ms.openlocfilehash: 0b05f72da75fd364489ba408503edd99a62b4b5c
+ms.sourcegitcommit: c3f849e5a052b1926373a4b316ec303250e6d09e
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/02/2021
-ms.locfileid: "60084039"
+ms.lasthandoff: 10/15/2021
+ms.locfileid: "60368514"
 ---
 # <a name="licensing-and-payment-requirements-for-microsoft-teams-apis-in-microsoft-graph"></a>Requisitos de licenciamento e pagamento para APIs do Microsoft Teams no Microsoft Graph
 
 Este artigo descreve os requisitos de licenciamento e pagamento para APIs do Microsoft Teams.
 
-Algumas APIs oferecem a opção de escolher um modelo de licenciamento e pagamento por meio do parâmetro de consulta `model`; outras oferecem suporte apenas a um modelo ou não dão suporte a um modelo de licenciamento e pagamento.
-Os seguintes modelos de licenciamento estão disponíveis:
+Algumas APIs oferecem a opção de escolher um modelo de licenciamento e pagamento por meio do parâmetro de consulta `model`; outras suportam somente um modelo ou não suportam um modelo de licenciamento e pagamento. Os seguintes modelos de licenciamento estão disponível:
 
 - [`model=A`](#modela-requirements) é restrito a aplicativos que executam uma [função de segurança ou conformidade](https://www.microsoft.com/licensing/terms/productoffering/MicrosoftAzureServices/MCA#ServiceSpecificTerms) e exige uma [licença com suporte.](#required-licenses-for-modela)
 No futuro, os aplicativos também serão obrigados a pagar pelas mensagens que consomem além da [capacidade de propagação](#seeded-capacity).
@@ -56,7 +55,7 @@ No futuro, os aplicativos também serão obrigados a pagar pelas mensagens que c
 |  [Obtenha todas as mensagens em todos os canais](/graph/api/channel-getallmessages).|  N/D | 500 mensagens por mês por aplicativo | N/D |  Cobrança mínima de 1 mensagem por solicitação de API. |
 | [Atualizando a policyViolation do chatMessage](/graph/api/chatmessage-update) |   N/D |  500 mensagens por mês por aplicativo | N/D |
 
-No modo de avaliação, a capacidade de propagação é compartilhada em todas as APIs. Quando a capacidade de propagação é excedida, as chamadas de API com requisitos de licenciamento e pagamento falharão com um código de erro 402, e as assinaturas com requisitos de licenciamento e pagamento não enviarão notificações de alteração.
+No modo de avaliação, a capacidade de propagação é compartilhada em todas as APIs. Quando a capacidade de propagação for excedida, as chamadas de API com requisitos de licenciamento e pagamento falharão com um código de erro 402, e as assinaturas com requisitos de licenciamento e pagamento não enviarão notificações de alteração.
 
 > **Observação**: uma chamada de API bem-sucedida não significa que o licenciamento adequado está no local. 
 > Nem todas as violações de licença podem ser detectadas, e os períodos de carência podem ser concedidos em alguns casos.
@@ -96,5 +95,4 @@ A capacidade de propagação difere pela API, consulte [ `model=A` requisitos](#
 
 ## <a name="price-for-additional-use"></a>Preço para uso adicional
 
-No futuro, a Microsoft cobrará uma taxa de uso sobre a capacidade de propagação.
-Ainda não é possível associar seu aplicativo a uma forma de pagamento.
+No futuro, a Microsoft cobrará uma taxa de uso sobre a capacidade de propagação. Você também será capaz associar uma assinatura do Azure ao registro de aplicativo.
