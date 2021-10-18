@@ -2,15 +2,15 @@
 title: Tipo denum safeSearchFilterType
 description: Especifica que nível de pesquisa segura (filtragem de conteúdo adulto) é necessário
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 5f1dae423d5e0e123ee9d51ef774360057d639d2
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 5893adc19453b8c0ab299498385739cefb801e7b
+ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59067217"
+ms.lasthandoff: 10/18/2021
+ms.locfileid: "60457306"
 ---
 # <a name="safesearchfiltertype-enum-type"></a>Tipo denum safeSearchFilterType
 
@@ -26,7 +26,6 @@ Especifica que nível de pesquisa segura (filtragem de conteúdo adulto) é nece
 |userDefined|0|User Defined, default value, no intent.|
 |strict|1|Filtragem estrita e mais alta em relação ao conteúdo adulto.|
 |moderada|2|Filtragem moderada em relação ao conteúdo adulto (os resultados válidos da pesquisa não serão filtrados).|
-
 
 
 

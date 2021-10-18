@@ -2,15 +2,15 @@
 title: tipo de número androidWorkProfileRequiredPasswordType
 description: Tipo de senha necessário para o Perfil de Trabalho do Android.
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 20415e29b488a831d23856702f773a07276c9967
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 094babbe76ff6d395ee5ece0125cd89da15826ce
+ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59137529"
+ms.lasthandoff: 10/18/2021
+ms.locfileid: "60450233"
 ---
 # <a name="androidworkprofilerequiredpasswordtype-enum-type"></a>tipo de número androidWorkProfileRequiredPasswordType
 
@@ -28,10 +28,9 @@ Tipo de senha necessário para o Perfil de Trabalho do Android.
 |obrigatório|2|Obrigatório.|
 |atLeastNumeric|3|Pelo menos senha numérica necessária.|
 |numericComplex|4 |Senha complexa numérica necessária.|
-|atLeastAlphabetic|5 |Pelo menos senha alfabética necessária.|
+|atLeastAlphabetic|5|Pelo menos senha alfabética necessária.|
 |atLeastAlphanumeric|6 |Pelo menos senha alfanumérica necessária.|
 |alphanumericWithSymbols|7 |Pelo menos alfanumérico com símbolos de senha necessário.|
-
 
 
 

@@ -2,15 +2,15 @@
 title: Tipo de recurso win32LobAppRestartSettings
 description: Contém propriedades que descrevem a coordenação de reinicialização após uma instalação do aplicativo.
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: ee93a2b24327e27f6a726c9f1e1d07888df5e5d2
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 3385eed1dfc741959143d0a7c6ab11645ee6afc6
+ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59029028"
+ms.lasthandoff: 10/18/2021
+ms.locfileid: "60448601"
 ---
 # <a name="win32lobapprestartsettings-resource-type"></a>Tipo de recurso win32LobAppRestartSettings
 
@@ -45,7 +45,6 @@ Veja a seguir uma representação JSON do recurso.
   "restartNotificationSnoozeDurationInMinutes": 1024
 }
 ```
-
 
 
 

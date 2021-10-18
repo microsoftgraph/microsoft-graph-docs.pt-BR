@@ -2,15 +2,15 @@
 title: Tipo de recurso iosHomeScreenApp
 description: Representa um ícone de um aplicativo na tela inicial
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: a0c222eeeb8def8e127fbe8b27ee326193ebc0d8
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: d842896b16b8887a0663c0be23ee91c1d757bac8
+ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59136464"
+ms.lasthandoff: 10/18/2021
+ms.locfileid: "60449769"
 ---
 # <a name="ioshomescreenapp-resource-type"></a>Tipo de recurso iosHomeScreenApp
 
@@ -46,7 +46,6 @@ Veja a seguir uma representação JSON do recurso.
   "bundleID": "String"
 }
 ```
-
 
 
 

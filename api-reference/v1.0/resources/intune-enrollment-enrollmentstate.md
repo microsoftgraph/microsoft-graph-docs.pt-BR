@@ -2,15 +2,15 @@
 title: Tipo de número de enrollmentState
 description: Ainda não documentado
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: d5817392c5beca9c605fac2ce47e0fb7dd8545b8
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: acce3bb71f675ecc558768fcdbb3ee2071b073aa
+ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59029021"
+ms.lasthandoff: 10/18/2021
+ms.locfileid: "60452864"
 ---
 # <a name="enrollmentstate-enum-type"></a>Tipo de número de enrollmentState
 
@@ -28,7 +28,6 @@ Ainda não documentado
 |pendingReset|2|Inscrito, mas ele é inscrito por meio do perfil de registro e o perfil inscrito é diferente do perfil atribuído.|
 |failed|3|Não registrado e há registro de falha no registro.|
 |notContacted|4 |O dispositivo é importado, mas não está inscrito.|
-
 
 
 

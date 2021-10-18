@@ -2,15 +2,15 @@
 title: Atualizar mobileAppContentFile
 description: Atualiza as propriedades de um objeto mobileAppContentFile.
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: a9c3ade78c3d42c8671be4dffaf2c900e1d59a73
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 1c2977cb43d8b81272dd827f86de97e40a3eb601
+ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59079845"
+ms.lasthandoff: 10/18/2021
+ms.locfileid: "60457362"
 ---
 # <a name="update-mobileappcontentfile"></a>Atualizar mobileAppContentFile
 
@@ -55,7 +55,7 @@ A tabela a seguir mostra as propriedades obrigatórias ao criar [mobileAppConten
 |isCommitted|Booliano|Um valor que indica se o arquivo tem está confirmado.|
 |id|Cadeia de caracteres|A ID do arquivo.|
 |createdDateTime|DateTimeOffset|A hora em que o arquivo foi criado.|
-|nome|String|O nome do arquivo.|
+|name|String|O nome do arquivo.|
 |size|Int64|O tamanho do arquivo antes da criptografia.|
 |sizeEncrypted|Int64|O tamanho do arquivo após a criptografia.|
 |azureStorageUriExpirationDateTime|DateTimeOffset|A hora de expiração do URI do armazenamento do Azure.|
@@ -110,7 +110,6 @@ Content-Length: 450
   "uploadState": "transientError"
 }
 ```
-
 
 
 

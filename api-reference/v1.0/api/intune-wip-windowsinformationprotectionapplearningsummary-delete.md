@@ -2,15 +2,15 @@
 title: Excluir windowsInformationProtectionAppLearningSummary
 description: Exclui windowsInformationProtectionAppLearningSummary.
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 28b2e5069b8375c8929cd16d00c734e8b6cf3dc4
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 87516ec3cebd634ceada0e757a3a06ecffcc10d7
+ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59144046"
+ms.lasthandoff: 10/18/2021
+ms.locfileid: "60456323"
 ---
 # <a name="delete-windowsinformationprotectionapplearningsummary"></a>Excluir windowsInformationProtectionAppLearningSummary
 
@@ -63,7 +63,6 @@ Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado a
 ``` http
 HTTP/1.1 204 No Content
 ```
-
 
 
 

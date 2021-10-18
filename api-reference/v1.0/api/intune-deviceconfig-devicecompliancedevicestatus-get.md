@@ -2,15 +2,15 @@
 title: Get deviceComplianceDeviceStatus
 description: Ler propriedades e relações do objeto deviceComplianceDeviceStatus.
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 35bbab248c082664692114143dcb8c397201a8e1
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: b6ca706087b9ace13376493912f2b119387b9269
+ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59140105"
+ms.lasthandoff: 10/18/2021
+ms.locfileid: "60448125"
 ---
 # <a name="get-devicecompliancedevicestatus"></a>Get deviceComplianceDeviceStatus
 
@@ -82,7 +82,6 @@ Content-Length: 512
   }
 }
 ```
-
 
 
 

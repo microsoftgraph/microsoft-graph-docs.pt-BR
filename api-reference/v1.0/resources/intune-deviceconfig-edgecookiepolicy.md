@@ -2,15 +2,15 @@
 title: Tipo de número edgeCookiePolicy
 description: Valores possíveis para especificar quais cookies são permitidos Microsoft Edge.
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: f8fa00cd00ec4bb8b74caaaee11cd4e51f9e5cd0
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 77049a6b5005a47fd48b83129f39dd7cbf15ef6c
+ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59142730"
+ms.lasthandoff: 10/18/2021
+ms.locfileid: "60450478"
 ---
 # <a name="edgecookiepolicy-enum-type"></a>Tipo de número edgeCookiePolicy
 
@@ -27,7 +27,6 @@ Valores possíveis para especificar quais cookies são permitidos Microsoft Edge
 |allow|1|Permitir.|
 |blockThirdParty|2|Bloquear somente cookies de terceiros.|
 |blockAll|3|Bloquear todos os cookies.|
-
 
 
 

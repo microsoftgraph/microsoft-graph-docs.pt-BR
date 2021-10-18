@@ -2,15 +2,15 @@
 title: Atualizar managedDeviceMobileAppConfigurationAssignment
 description: Atualizar as propriedades de um objeto managedDeviceMobileAppConfigurationAssignment.
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: f30da602a187026776e702aa6fea033e5ae1fa97
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: d0a543d59c14abf2cdf520cab1e14b82a95bff6b
+ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59073811"
+ms.lasthandoff: 10/18/2021
+ms.locfileid: "60448510"
 ---
 # <a name="update-manageddevicemobileappconfigurationassignment"></a>Atualizar managedDeviceMobileAppConfigurationAssignment
 
@@ -25,8 +25,8 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 |Tipo de permissão|Permissões (da com menos para a com mais privilégios)|
 |:---|:---|
-|Delegada (conta corporativa ou de estudante)|DeviceManagementApps.ReadWrite.All|
-|Delegada (conta pessoal da Microsoft)|Sem suporte.|
+|Delegado (conta corporativa ou de estudante)|DeviceManagementApps.ReadWrite.All|
+|Delegado (conta pessoal da Microsoft)|Sem suporte.|
 |Aplicativo|DeviceManagementApps.ReadWrite.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
@@ -91,7 +91,6 @@ Content-Length: 228
   }
 }
 ```
-
 
 
 

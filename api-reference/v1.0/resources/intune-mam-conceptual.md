@@ -5,12 +5,12 @@ author: dougeby
 ms.localizationpriority: medium
 ms.prod: intune
 doc_type: conceptualPageType
-ms.openlocfilehash: 4faf4c81211cf08ae6e0d823039415b3fb8b28e7
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 4a09cd527644f58f4389e47a23d96f812705b2d3
+ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59062590"
+ms.lasthandoff: 10/18/2021
+ms.locfileid: "60454471"
 ---
 # <a name="how-to-protect-your-company-app-data-with-microsoft-intune"></a>Como proteger dados de aplicativos corporativos com o Microsoft Intune
 
@@ -61,6 +61,7 @@ Os seguintes recursos do Graph estão disponíveis para gerenciar políticas de 
 - [Identificador de aplicativo móvel](intune-mam-mobileappidentifier.md)
 - [Domínio com proxy](intune-mam-proxieddomain.md)
 - [Configuração direcionada de aplicativo gerenciado](intune-mam-targetedmanagedappconfiguration.md)
+- [Tipo de grupo de aplicativo gerenciado direcionado](intune-mam-targetedmanagedappgrouptype.md)
 - [Atribuição de política de proteção de aplicativo gerenciado direcionado](intune-mam-targetedmanagedapppolicyassignment.md)
 - [Proteção de aplicativo gerenciado direcionado](intune-mam-targetedmanagedappprotection.md)
 - [Usuário](intune-mam-user.md)

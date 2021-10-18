@@ -2,15 +2,15 @@
 title: tipo de número weeklySchedule
 description: Valores possíveis para uma agenda semanal.
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: e766c2bb6b75c4a36163472e22144e47e3796af9
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 03d24026215bfb119a895d702b623d6118cbac54
+ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59072166"
+ms.lasthandoff: 10/18/2021
+ms.locfileid: "60446621"
 ---
 # <a name="weeklyschedule-enum-type"></a>tipo de número weeklySchedule
 
@@ -28,11 +28,10 @@ Valores possíveis para uma agenda semanal.
 |sunday|2|Domingo.|
 |segunda-feira|3|Segunda-feira.|
 |terça-feira|4 |Terça-feira.|
-|quarta-feira|5 |Quarta-feira.|
+|quarta-feira|5|Quarta-feira.|
 |thursday|6 |Quinta-feira.|
 |sexta-feira|7 |Sexta-feira.|
 |saturday|8 |Sábado.|
-
 
 
 

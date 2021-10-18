@@ -2,15 +2,15 @@
 title: Tipo de recurso deviceConfiguration
 description: Configuração do dispositivo.
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: ce0022353a93821ef4a78d32ed6f6d0f1f780bd6
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 35e2101ace3a3f16da17acd09772c6fcf291c764
+ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59118443"
+ms.lasthandoff: 10/18/2021
+ms.locfileid: "60451187"
 ---
 # <a name="deviceconfiguration-resource-type"></a>Tipo de recurso deviceConfiguration
 
@@ -31,10 +31,10 @@ Configuração do dispositivo.
 ## <a name="properties"></a>Propriedades
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|id|String|Chave da entidade.|
+|id|Cadeia de caracteres|Chave da entidade.|
 |lastModifiedDateTime|DateTimeOffset|Última modificação de DateTime do objeto.|
 |createdDateTime|DateTimeOffset|DateTime em que o objeto foi criado.|
-|description|Cadeia de caracteres|O administrador forneceu a descrição da Configuração do dispositivo.|
+|description|String|O administrador forneceu a descrição da Configuração do dispositivo.|
 |displayName|String|O administrador forneceu o nome da Configuração do dispositivo.|
 |versão|Int32|Versão da configuração do dispositivo.|
 
@@ -67,7 +67,6 @@ Veja a seguir uma representação JSON do recurso.
   "version": 1024
 }
 ```
-
 
 
 

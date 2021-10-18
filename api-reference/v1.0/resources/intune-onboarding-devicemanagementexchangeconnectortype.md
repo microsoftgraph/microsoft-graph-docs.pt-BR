@@ -2,15 +2,15 @@
 title: Tipo de número deviceManagementExchangeConnectorType
 description: O tipo de conector Exchange.
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: ecedee47d9fb5f4b9bc473698cf6e6eb9066163a
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 9fa095b99ce9882ec72ddfa6d57decd0850dbd95
+ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59007058"
+ms.lasthandoff: 10/18/2021
+ms.locfileid: "60445067"
 ---
 # <a name="devicemanagementexchangeconnectortype-enum-type"></a>Tipo de número deviceManagementExchangeConnectorType
 
@@ -27,7 +27,6 @@ O tipo de conector Exchange.
 |hospedado|1|Conecta-se ao ambiente de Exchange do O365|
 |serviceToService|2|O Serviço do Intune se conecta diretamente ao ambiente de Exchange do O365|
 |dedicated|3|Conecta-se ao ambiente de Exchange O365.|
-
 
 
 

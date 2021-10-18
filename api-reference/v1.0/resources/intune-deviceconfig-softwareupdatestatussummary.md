@@ -2,15 +2,15 @@
 title: Tipo de recurso softwareUpdateStatusSummary
 description: Ainda não documentado
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 94a097ce30e85def968139f3d575493a7f7d6943
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 71a23aa958511dea3c0ba6b119614718adc1ca85
+ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59072271"
+ms.lasthandoff: 10/18/2021
+ms.locfileid: "60444843"
 ---
 # <a name="softwareupdatestatussummary-resource-type"></a>Tipo de recurso softwareUpdateStatusSummary
 
@@ -29,7 +29,7 @@ Ainda não documentado
 ## <a name="properties"></a>Propriedades
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|id|String|Chave da entidade.|
+|id|Cadeia de caracteres|Chave da entidade.|
 |displayName|Cadeia de caracteres|O nome da política.|
 |compliantDeviceCount|Int32|Número de dispositivos em conformidade.|
 |nonCompliantDeviceCount|Int32|Número de dispositivos sem conformidade.|
@@ -78,7 +78,6 @@ Veja a seguir uma representação JSON do recurso.
   "notApplicableUserCount": 1024
 }
 ```
-
 
 
 

@@ -2,15 +2,15 @@
 title: Tipo de recurso auditProperty
 description: Uma classe que contém as propriedades para a Propriedade de auditoria.
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 75b9f458ae61feb4bb21038807bc2b73212f76d8
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 9ce0fddeea7b269dcc89e646be1e0fa18aa1f8bb
+ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59015592"
+ms.lasthandoff: 10/18/2021
+ms.locfileid: "60457032"
 ---
 # <a name="auditproperty-resource-type"></a>Tipo de recurso auditProperty
 
@@ -45,7 +45,6 @@ Veja a seguir uma representação JSON do recurso.
   "newValue": "String"
 }
 ```
-
 
 
 

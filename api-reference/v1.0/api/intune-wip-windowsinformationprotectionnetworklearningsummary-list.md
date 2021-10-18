@@ -2,15 +2,15 @@
 title: Listar windowsInformationProtectionNetworkLearningSummaries
 description: Listar propriedades e relações de objetos de windowsInformationProtectionNetworkLearningSummary.
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 9b8d71548c31fe4e31a6c86366ce9bdb7cdc3fc0
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: e5e864c558f2da930c818df41870585757fed9e3
+ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59032647"
+ms.lasthandoff: 10/18/2021
+ms.locfileid: "60444890"
 ---
 # <a name="list-windowsinformationprotectionnetworklearningsummaries"></a>Listar windowsInformationProtectionNetworkLearningSummaries
 
@@ -25,8 +25,8 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 |Tipo de permissão|Permissões (da com menos para a com mais privilégios)|
 |:---|:---|
-|Delegada (conta corporativa ou de estudante)|DeviceManagementApps.Read.All, DeviceManagementApps.ReadWrite.All|
-|Delegada (conta pessoal da Microsoft)|Sem suporte.|
+|Delegado (conta corporativa ou de estudante)|DeviceManagementApps.Read.All, DeviceManagementApps.ReadWrite.All|
+|Delegado (conta pessoal da Microsoft)|Sem suporte.|
 |Aplicativo|DeviceManagementApps.Read.All, DeviceManagementApps.ReadWrite.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
@@ -76,7 +76,6 @@ Content-Length: 235
   ]
 }
 ```
-
 
 
 

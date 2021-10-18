@@ -2,15 +2,15 @@
 title: Tipo de número mobileAppContentFileUploadState
 description: Contém propriedades para estados de solicitação de carregamento.
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: aff36867137843fba9d86d9fec2cf4afafd7e05a
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 63377a182ebab73e74b57c243654df79fdea4ba1
+ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59056029"
+ms.lasthandoff: 10/18/2021
+ms.locfileid: "60457726"
 ---
 # <a name="mobileappcontentfileuploadstate-enum-type"></a>Tipo de número mobileAppContentFileUploadState
 
@@ -39,7 +39,6 @@ Contém propriedades para estados de solicitação de carregamento.
 |commitFilePending|301|Ainda não documentado|
 |commitFileFailed|302|Ainda não documentado|
 |commitFileTimedOut|303|Ainda não documentado|
-
 
 
 

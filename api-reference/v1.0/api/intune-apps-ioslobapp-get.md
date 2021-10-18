@@ -2,15 +2,15 @@
 title: Acessar iosLobApp
 description: Leia as propriedades e as relações do objeto iosLobApp.
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: db7234710172ba3325eea06ad2ef08d561d59631
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: ea6777394fcc4951e3fb4affdcc58d79f2dc4eb7
+ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59095070"
+ms.lasthandoff: 10/18/2021
+ms.locfileid: "60452127"
 ---
 # <a name="get-ioslobapp"></a>Acessar iosLobApp
 
@@ -114,7 +114,6 @@ Content-Length: 1522
   }
 }
 ```
-
 
 
 

@@ -2,15 +2,15 @@
 title: Atualizar managedAppOperation
 description: Atualizar as propriedades de um objeto managedAppOperation.
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: b9ae7b90e49f0e613cd72f3be9cd6e96eeaf776d
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 2e3ca2aa471d70b6f37da0002c9117d880147654
+ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59063136"
+ms.lasthandoff: 10/18/2021
+ms.locfileid: "60453356"
 ---
 # <a name="update-managedappoperation"></a>Atualizar managedAppOperation
 
@@ -25,8 +25,8 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 |Tipo de permissão|Permissões (da com menos para a com mais privilégios)|
 |:---|:---|
-|Delegada (conta corporativa ou de estudante)|DeviceManagementApps.ReadWrite.All|
-|Delegada (conta pessoal da Microsoft)|Sem suporte.|
+|Delegado (conta corporativa ou de estudante)|DeviceManagementApps.ReadWrite.All|
+|Delegado (conta pessoal da Microsoft)|Sem suporte.|
 |Aplicativo|DeviceManagementApps.ReadWrite.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
@@ -53,7 +53,7 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar [managed
 |:---|:---|:---|
 |displayName|Cadeia de caracteres|O nome da operação.|
 |lastModifiedDateTime|DateTimeOffset|Última vez em que a operação de aplicativo foi modificada.|
-|state|String|O estado atual da operação|
+|state|Cadeia de caracteres|O estado atual da operação|
 |id|Cadeia de caracteres|Chave da entidade.|
 |versão|String|Versão da entidade.|
 
@@ -95,7 +95,6 @@ Content-Length: 272
   "version": "Version value"
 }
 ```
-
 
 
 

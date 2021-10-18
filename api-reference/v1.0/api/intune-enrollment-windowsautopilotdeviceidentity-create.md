@@ -2,15 +2,15 @@
 title: Criar windowsAutopilotDeviceIdentity
 description: Crie um novo objeto windowsAutopilotDeviceIdentity.
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 154edcd01c4cca64172f583981f2b8f513653811
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: a1a2de6012d1a576b5f4c2c55e671d700313bfd0
+ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59147259"
+ms.lasthandoff: 10/18/2021
+ms.locfileid: "60449832"
 ---
 # <a name="create-windowsautopilotdeviceidentity"></a>Criar windowsAutopilotDeviceIdentity
 
@@ -52,7 +52,7 @@ A tabela a seguir mostra as propriedades necessárias ao criar o windowsAutopilo
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
 |id|String|O GUID do objeto.|
-|groupTag|String|Marca de grupo do dispositivo Windows piloto automático.|
+|groupTag|Cadeia de caracteres|Marca de grupo do dispositivo Windows piloto automático.|
 |purchaseOrderIdentifier|String|Purchase Order Identifier of the Windows autopilot device.|
 |serialNumber|Cadeia de caracteres|Número de série do dispositivo do Windows AutoPilot.|
 |productKey|Cadeia de caracteres|Chave do produto (Product Key) do dispositivo do Windows AutoPilot.|
@@ -65,9 +65,9 @@ A tabela a seguir mostra as propriedades necessárias ao criar o windowsAutopilo
 |resourceName|Cadeia de caracteres|Nome do recurso.|
 |skuNumber|String|Número SKU|
 |systemFamily|String|Família do Sistema|
-|azureActiveDirectoryDeviceId|String|ID do dispositivo AAD - a ser preterida|
-|managedDeviceId|String|ID de dispositivo gerenciado|
-|displayName|String|Nome de exibição|
+|azureActiveDirectoryDeviceId|String|AAD ID do dispositivo - a ser preterido|
+|managedDeviceId|Cadeia de caracteres|ID de dispositivo gerenciado|
+|displayName|Cadeia de caracteres|Nome de exibição|
 
 
 
@@ -132,7 +132,6 @@ Content-Length: 863
   "displayName": "Display Name value"
 }
 ```
-
 
 
 

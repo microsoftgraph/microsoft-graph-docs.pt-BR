@@ -2,15 +2,15 @@
 title: Listar deviceEnrollmentWindowsHelloForBusinessConfigurations
 description: Listar propriedades e relações de objetos de deviceEnrollmentWindowsHelloForBusinessConfiguration.
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 984ad23291b15480e139fb987e31cea27c49346d
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: ae0a43a108034c6717cfa7b2d087276ed21bac77
+ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59090247"
+ms.lasthandoff: 10/18/2021
+ms.locfileid: "60445799"
 ---
 # <a name="list-deviceenrollmentwindowshelloforbusinessconfigurations"></a>Listar deviceEnrollmentWindowsHelloForBusinessConfigurations
 
@@ -92,7 +92,6 @@ Content-Length: 914
   ]
 }
 ```
-
 
 
 

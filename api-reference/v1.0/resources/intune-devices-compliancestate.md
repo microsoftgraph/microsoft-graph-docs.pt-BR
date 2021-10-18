@@ -2,15 +2,15 @@
 title: tipo de número de complianceState
 description: Estado de conformidade.
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 6dc585bd96a43fdab18fd46da0d7eafdec49126f
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: b371969e349340264b2a3ccd81ce008a1716b0c3
+ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59098829"
+ms.lasthandoff: 10/18/2021
+ms.locfileid: "60450204"
 ---
 # <a name="compliancestate-enum-type"></a>tipo de número de complianceState
 
@@ -30,7 +30,6 @@ Estado de conformidade.
 |erro|4 |Erro|
 |inGracePeriod|254|O dispositivo não é compatível, mas ainda tem acesso a recursos corporativos|
 |configManager|255|Gerenciado pelo Gerenciador de Configurações|
-
 
 
 

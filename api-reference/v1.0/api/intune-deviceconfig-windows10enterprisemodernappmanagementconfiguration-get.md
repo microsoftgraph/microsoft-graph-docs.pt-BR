@@ -2,15 +2,15 @@
 title: Acessar windows10EnterpriseModernAppManagementConfiguration
 description: Leia as propriedades e as relações do objeto windows10EnterpriseModernAppManagementConfiguration.
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 3f980f50319469ade424e741ef2dc2683e31528c
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 5d8ef8bfd8ff554ccf9490b2a9e8ead8859017aa
+ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59110610"
+ms.lasthandoff: 10/18/2021
+ms.locfileid: "60450120"
 ---
 # <a name="get-windows10enterprisemodernappmanagementconfiguration"></a>Acessar windows10EnterpriseModernAppManagementConfiguration
 
@@ -25,8 +25,8 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 |Tipo de permissão|Permissões (da com menos para a com mais privilégios)|
 |:---|:---|
-|Delegada (conta corporativa ou de estudante)|DeviceManagementConfiguration.Read.All, DeviceManagementConfiguration.ReadWrite.All|
-|Delegada (conta pessoal da Microsoft)|Sem suporte.|
+|Delegado (conta corporativa ou de estudante)|DeviceManagementConfiguration.Read.All, DeviceManagementConfiguration.ReadWrite.All|
+|Delegado (conta pessoal da Microsoft)|Sem suporte.|
 |Aplicativo|DeviceManagementConfiguration.Read.All, DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
@@ -81,7 +81,6 @@ Content-Length: 429
   }
 }
 ```
-
 
 
 

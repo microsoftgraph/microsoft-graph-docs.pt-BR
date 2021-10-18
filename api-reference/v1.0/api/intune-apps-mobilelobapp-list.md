@@ -2,15 +2,15 @@
 title: Listar mobileLobApps
 description: Listar propriedades e relações dos objetos mobileLobApp.
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 4120bc904584fa5b7f69cf4f1338e5fe785c8bde
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: b376e27a2ea195e124881aedb7606b72c1661d11
+ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59079796"
+ms.lasthandoff: 10/18/2021
+ms.locfileid: "60445883"
 ---
 # <a name="list-mobilelobapps"></a>Listar mobileLobApps
 
@@ -94,7 +94,6 @@ Content-Length: 983
   ]
 }
 ```
-
 
 
 

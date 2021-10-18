@@ -2,15 +2,15 @@
 title: Listar windowsUpdateForBusinessConfigurations
 description: Listar propriedades e relações dos objetos windowsUpdateForBusinessConfiguration.
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 9039d7da68399ca79cdc1d0ef0730f8c845e961c
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: b9b25eae228acb94f1ca812ab240f02caf05390b
+ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59099627"
+ms.lasthandoff: 10/18/2021
+ms.locfileid: "60453664"
 ---
 # <a name="list-windowsupdateforbusinessconfigurations"></a>Listar windowsUpdateForBusinessConfigurations
 
@@ -96,7 +96,6 @@ Content-Length: 1211
   ]
 }
 ```
-
 
 
 

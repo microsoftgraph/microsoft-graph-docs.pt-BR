@@ -2,15 +2,15 @@
 title: Excluir termsAndConditionsAssignment
 description: Exclui termsAndConditionsAssignment.
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 3e01407824113e765f92f8b52f295b7663431900
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 3f09e624e5dafbef0c69a44314c0aaac7d3d93ad
+ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59085585"
+ms.lasthandoff: 10/18/2021
+ms.locfileid: "60445312"
 ---
 # <a name="delete-termsandconditionsassignment"></a>Excluir termsAndConditionsAssignment
 
@@ -63,7 +63,6 @@ Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado a
 ``` http
 HTTP/1.1 204 No Content
 ```
-
 
 
 

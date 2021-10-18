@@ -2,15 +2,15 @@
 title: tipo de número ratingGermanyTelevisionType
 description: Rótulos de classificação de conteúdo de TV na Alemanha
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 21f498d5293527f0f657b7c4b2262f2a68801bb1
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 5999ccd119b4290e4d254b7e198dab717590bea9
+ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59142667"
+ms.lasthandoff: 10/18/2021
+ms.locfileid: "60450212"
 ---
 # <a name="ratinggermanytelevisiontype-enum-type"></a>tipo de número ratingGermanyTelevisionType
 
@@ -28,9 +28,8 @@ Rótulos de classificação de conteúdo de TV na Alemanha
 |geral|2|Ab 0 Jaren, sem restrições de idade|
 |agesAbove6|3|Ab 6 Jaren, 6 anos ou mais|
 |agesAbove12|4 |Ab 12 Jaren, 12 anos ou mais|
-|agesAbove16|5 |Ab 16 Jaren, 16 anos ou mais|
+|agesAbove16|5|Ab 16 Jaren, 16 anos ou mais|
 |adults|6 |Ab 18 Jaren, somente para adultos|
-
 
 
 

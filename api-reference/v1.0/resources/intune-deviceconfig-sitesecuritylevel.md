@@ -2,15 +2,15 @@
 title: Tipo denum siteSecurityLevel
 description: Valores possíveis para o nível de segurança do site.
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 53de6c1ec01a6823c3d2ff404d6624b6a2bc4bd0
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 76aace52690c82570715a407fd596d8d9e358ae8
+ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59049505"
+ms.lasthandoff: 10/18/2021
+ms.locfileid: "60457481"
 ---
 # <a name="sitesecuritylevel-enum-type"></a>Tipo denum siteSecurityLevel
 
@@ -28,8 +28,7 @@ Valores possíveis para o nível de segurança do site.
 |mediumLow|2|Médio-baixo.|
 |medium|3|Médio.|
 |mediumHigh|4 |Médio-alto.|
-|high|5 |Alto.|
-
+|high|5|Alto.|
 
 
 

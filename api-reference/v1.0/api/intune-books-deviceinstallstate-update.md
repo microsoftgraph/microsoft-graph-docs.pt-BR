@@ -2,15 +2,15 @@
 title: Atualizar deviceInstallState
 description: Atualizar as propriedades de um objeto deviceInstallState.
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: c356d3870b0208ab51e5cd1c72ebeecc642d7537
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 8b2113dc6b7444c7dd6e1f4ea409109f2b0c8812
+ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59050338"
+ms.lasthandoff: 10/18/2021
+ms.locfileid: "60446691"
 ---
 # <a name="update-deviceinstallstate"></a>Atualizar deviceInstallState
 
@@ -25,8 +25,8 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 |Tipo de permissão|Permissões (da com menos para a com mais privilégios)|
 |:---|:---|
-|Delegada (conta corporativa ou de estudante)|DeviceManagementApps.ReadWrite.All|
-|Delegada (conta pessoal da Microsoft)|Sem suporte.|
+|Delegado (conta corporativa ou de estudante)|DeviceManagementApps.ReadWrite.All|
+|Delegado (conta pessoal da Microsoft)|Sem suporte.|
 |Aplicativo|DeviceManagementApps.ReadWrite.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
@@ -109,7 +109,6 @@ Content-Length: 423
   "userName": "User Name value"
 }
 ```
-
 
 
 

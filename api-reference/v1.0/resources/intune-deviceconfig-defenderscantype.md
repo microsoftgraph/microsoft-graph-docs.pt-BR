@@ -2,15 +2,15 @@
 title: Tipo de número defenderScanType
 description: Valores possíveis para o tipo de verificação do sistema.
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 7fb236c43be6e4d62b88e8e3aac654e07dbb1603
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: ffb10707dd94bb6082dffdacfe8dc7b6d52abe44
+ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59146853"
+ms.lasthandoff: 10/18/2021
+ms.locfileid: "60453846"
 ---
 # <a name="defenderscantype-enum-type"></a>Tipo de número defenderScanType
 
@@ -27,7 +27,6 @@ Valores possíveis para o tipo de verificação do sistema.
 |desabilitadas|1|Verificação do sistema desabilitada.|
 |quick|2|Verificação rápida do sistema.|
 |full|3|Verificação completa do sistema.|
-
 
 
 

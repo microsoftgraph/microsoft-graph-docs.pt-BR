@@ -2,15 +2,15 @@
 title: Acessar deviceComplianceDeviceOverview
 description: Leia as propriedades e as relações do objeto deviceComplianceDeviceOverview.
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: ef8a266a1d08d90936743314be654a6ae0d29b11
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 398b113c853854844ead090fac01de3bff156ef5
+ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59140168"
+ms.lasthandoff: 10/18/2021
+ms.locfileid: "60446544"
 ---
 # <a name="get-devicecompliancedeviceoverview"></a>Acessar deviceComplianceDeviceOverview
 
@@ -82,7 +82,6 @@ Content-Length: 367
   }
 }
 ```
-
 
 
 

@@ -2,15 +2,15 @@
 title: Tipo de recurso win32LobAppInstallExperience
 description: Contém propriedades de experiência de instalação para um aplicativo Win32
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 5368719e9b8795eb5473ccf8dc7af355eedc3ddf
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: b1b16148f0a2c61525c58d459709115d99d79c2e
+ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59044689"
+ms.lasthandoff: 10/18/2021
+ms.locfileid: "60448026"
 ---
 # <a name="win32lobappinstallexperience-resource-type"></a>Tipo de recurso win32LobAppInstallExperience
 
@@ -43,7 +43,6 @@ Veja a seguir uma representação JSON do recurso.
   "deviceRestartBehavior": "String"
 }
 ```
-
 
 
 

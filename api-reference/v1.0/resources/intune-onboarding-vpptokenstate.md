@@ -2,15 +2,15 @@
 title: Tipo denum vppTokenState
 description: Estados possíveis associados a um token do Programa de Compra de Volume da Apple.
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 89770306b3f2f3b8d02dfd418ceae919c845b2c4
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 1e0d67c68a6b09b7e9e056272ff7974e3f651b75
+ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59072054"
+ms.lasthandoff: 10/18/2021
+ms.locfileid: "60446944"
 ---
 # <a name="vpptokenstate-enum-type"></a>Tipo denum vppTokenState
 
@@ -28,7 +28,6 @@ Estados possíveis associados a um token do Programa de Compra de Volume da Appl
 |expirado|2|O token expirou.|
 |Inválido|3|Token é inválido.|
 |assignedToExternalMDM|4 |Token é gerenciado por outro Serviço MDM.|
-
 
 
 

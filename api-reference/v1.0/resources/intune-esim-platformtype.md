@@ -2,15 +2,15 @@
 title: Tipo de número platformType
 description: Ainda não documentado
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 7319cea1f943fd97a6c767d567f1825ce1037664
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: f38ef7a14a1c1831a4ea57f67e670a818ef541ee
+ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59028909"
+ms.lasthandoff: 10/18/2021
+ms.locfileid: "60446972"
 ---
 # <a name="platformtype-enum-type"></a>Tipo de número platformType
 
@@ -28,11 +28,10 @@ Ainda não documentado
 |androidForWork|2|Ainda não documentado|
 |iOS|3|Ainda não documentado|
 |macOS|4 |Ainda não documentado|
-|windowsPhone81|5 |Ainda não documentado|
+|windowsPhone81|5|Ainda não documentado|
 |windows81AndLater|6 |Ainda não documentado|
 |windows10AndLater|7 |Ainda não documentado|
 |androidWorkProfile|8 |Ainda não documentado|
-
 
 
 
