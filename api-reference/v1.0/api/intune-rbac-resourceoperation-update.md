@@ -2,15 +2,15 @@
 title: Atualizar resourceOperation
 description: Atualizar as propriedades de um objeto resourceOperation.
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 3813489b44e47d5f90cb561ed36658d0ecf69b14
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: d6342e13a181e82c72f4b0b37f06bc3939f6708e
+ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59079579"
+ms.lasthandoff: 10/18/2021
+ms.locfileid: "60457054"
 ---
 # <a name="update-resourceoperation"></a>Atualizar resourceOperation
 
@@ -25,8 +25,8 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 |Tipo de permissão|Permissões (da com menos para a com mais privilégios)|
 |:---|:---|
-|Delegada (conta corporativa ou de estudante)|DeviceManagementRBAC.ReadWrite.All|
-|Delegada (conta pessoal da Microsoft)|Sem suporte.|
+|Delegado (conta corporativa ou de estudante)|DeviceManagementRBAC.ReadWrite.All|
+|Delegado (conta pessoal da Microsoft)|Sem suporte.|
 |Aplicativo|DeviceManagementRBAC.ReadWrite.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
@@ -51,10 +51,10 @@ A tabela a seguir mostra as propriedades obrigatórias ao criar [resourceOperati
 
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|id|String|Chave da operação de recurso. Somente leitura, gerada automaticamente.|
+|id|Cadeia de caracteres|Chave da operação de recurso. Somente leitura, gerada automaticamente.|
 |resourceName|Cadeia de caracteres|Nome do recurso em que essa operação é executada.|
 |actionName|Cadeia de caracteres|Tipo de ação em que essa operação será executada. O actionName deve ser conciso e limitado ao mínimo de palavras possível.|
-|description|String|Descrição da operação de recurso. A descrição é usada no texto exibido com o passar o mouse para a operação quando exibida no Portal do Azure.|
+|description|Cadeia de caracteres|Descrição da operação de recurso. A descrição é usada no texto exibido com o passar o mouse para a operação quando exibida no Portal do Azure.|
 
 
 
@@ -93,7 +93,6 @@ Content-Length: 227
   "description": "Description value"
 }
 ```
-
 
 
 

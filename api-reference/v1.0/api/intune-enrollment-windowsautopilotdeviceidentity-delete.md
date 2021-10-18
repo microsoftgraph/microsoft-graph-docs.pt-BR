@@ -2,15 +2,15 @@
 title: Excluir windowsAutopilotDeviceIdentity
 description: Exclui um windowsAutopilotDeviceIdentity.
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: a9fdaad4cdd3a301a3d1e114380cfb5a86f14585
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 55e6b18ff2025fdf300e0f2ab2609e4c73e267b4
+ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59147252"
+ms.lasthandoff: 10/18/2021
+ms.locfileid: "60453776"
 ---
 # <a name="delete-windowsautopilotdeviceidentity"></a>Excluir windowsAutopilotDeviceIdentity
 
@@ -63,7 +63,6 @@ Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado a
 ``` http
 HTTP/1.1 204 No Content
 ```
-
 
 
 

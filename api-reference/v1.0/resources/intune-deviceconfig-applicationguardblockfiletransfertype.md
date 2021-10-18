@@ -2,15 +2,15 @@
 title: Tipo denum applicationGuardBlockFileTransferType
 description: Valores possíveis para applicationGuardBlockFileTransfer
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: a2c0b36c70387d234f01021e9864683ea79c8587
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 38ce56a9ef2685b21fbe15e1b1a191fd55da03dd
+ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59053116"
+ms.lasthandoff: 10/18/2021
+ms.locfileid: "60454191"
 ---
 # <a name="applicationguardblockfiletransfertype-enum-type"></a>Tipo denum applicationGuardBlockFileTransferType
 
@@ -28,7 +28,6 @@ Valores possíveis para applicationGuardBlockFileTransfer
 |blockImageFile|2|Bloquear área de transferência para transferir o arquivo Image|
 |blockNone|3|Nenhum arquivo de texto ou arquivo de imagem está impedido de transferir|
 |blockTextFile|4 |Bloquear área de transferência para transferir arquivo de texto|
-
 
 
 

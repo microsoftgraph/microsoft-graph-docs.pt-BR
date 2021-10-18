@@ -2,15 +2,15 @@
 title: Acessar deviceCompliancePolicySettingStateSummary
 description: Leia as propriedades e as relações do objeto deviceCompliancePolicySettingStateSummary.
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: def477471f9888071ad6462bbb25b8446e90f4ad
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 34eb35a457cf63f31b0f3d9ec059734fd6c65cd9
+ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59032878"
+ms.lasthandoff: 10/18/2021
+ms.locfileid: "60448707"
 ---
 # <a name="get-devicecompliancepolicysettingstatesummary"></a>Acessar deviceCompliancePolicySettingStateSummary
 
@@ -25,8 +25,8 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 |Tipo de permissão|Permissões (da com menos para a com mais privilégios)|
 |:---|:---|
-|Delegada (conta corporativa ou de estudante)|DeviceManagementConfiguration.Read.All, DeviceManagementConfiguration.ReadWrite.All|
-|Delegada (conta pessoal da Microsoft)|Sem suporte.|
+|Delegado (conta corporativa ou de estudante)|DeviceManagementConfiguration.Read.All, DeviceManagementConfiguration.ReadWrite.All|
+|Delegado (conta pessoal da Microsoft)|Sem suporte.|
 |Aplicativo|DeviceManagementConfiguration.Read.All, DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
@@ -85,7 +85,6 @@ Content-Length: 483
   }
 }
 ```
-
 
 
 

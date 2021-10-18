@@ -2,15 +2,15 @@
 title: Listar windowsPhone81CustomConfigurations
 description: Listar propriedades e relações dos objetos windowsPhone81CustomConfiguration.
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 57483a5948ad4a2758b5909d3c71dc9b57847c66
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: b84c5cb2f2117867ff4a43098184e55d4f59c164
+ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59144075"
+ms.lasthandoff: 10/18/2021
+ms.locfileid: "60453363"
 ---
 # <a name="list-windowsphone81customconfigurations"></a>Listar windowsPhone81CustomConfigurations
 
@@ -87,7 +87,6 @@ Content-Length: 648
   ]
 }
 ```
-
 
 
 

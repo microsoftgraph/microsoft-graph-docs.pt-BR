@@ -4,12 +4,12 @@ description: O Microsoft Graph expõe as permissões granulares que controlam o 
 author: jackson-woods
 ms.localizationpriority: high
 ms.custom: graphiamtop20, scenarios:getting-started
-ms.openlocfilehash: 1d39965eb95fca26ef29d513fbfa76672374941a
-ms.sourcegitcommit: 11be55b40804b07f4c422f09f601afa97c7d31ed
+ms.openlocfilehash: dcda42adda5a5d5dab0e1688e1550fae1dae656f
+ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/09/2021
-ms.locfileid: "60256071"
+ms.lasthandoff: 10/18/2021
+ms.locfileid: "60447232"
 ---
 # <a name="microsoft-graph-permissions-reference"></a>Referência de permissões do Microsoft Graph
 
@@ -663,7 +663,6 @@ Para cenários mais complexos que envolvem várias permissões, confira [Cenári
 * _Contacts.ReadWrite_: Adicionar contatos à pasta raiz de qualquer usuário da organização (`POST /users/{id | userPrincipalName}/contacts`).
 
 Para cenários mais complexos que envolvem várias permissões, confira [Cenários de permissões](#permission-scenarios).
-
 
 ## <a name="device-permissions"></a>Permissões de dispositivos
 
@@ -1890,6 +1889,29 @@ A permissão do aplicativo _Sites.Selected_ está disponível apenas na API do M
 * _Sites.FullControl.All_: Acesso completo a sites e listas do SharePoint.
 
 ---
+
+## <a name="subject-rights-request-permissions"></a>Permissões de solicitação de direitos de entidade
+
+#### <a name="delegated-permissions"></a>Permissões delegadas
+
+|   Permissão    |  Exibir Cadeia de Caracteres   |  Descrição | Consentimento Obrigatório do Administrador | Suporte da conta da Microsoft |
+|:----------------|:------------------|:-------------|:-----------------------|:--------------|
+SubjectRightsRequest.Read.All* | Ler solicitações de direitos da entidade | Permite que o aplicativo leia solicitações de direitos de entidade em nome do usuário conectado. | Sim | Não |
+SubjectRightsRequest.ReadWrite.All* | Ler e gravar solicitações de direitos da entidade | Permite que o aplicativo leia e grave solicitações de direitos de entidade em nome do usuário conectado. | Sim | Não |
+
+> **Importante** As permissões marcadas com um asterisco (*) não estão disponíveis no momento. Para mais detalhes, confira [Problemas conhecidos](/graph/known-issues#compliance).
+
+
+#### <a name="application-permissions"></a>Permissões de aplicativos
+Nenhuma.
+
+### <a name="example-usage"></a>Exemplo de uso
+#### <a name="delegated"></a>Delegated
+- SubjectRightsRequest.Read.All_: obter a lista de solicitações de direitos de entidade disponíveis para o usuário (`GET /privacy/subjectrightsrequests`).
+- _SubjectRightsRequest.ReadWrite.All_: criar uma solicitação de direitos de entidade (`POST /privacy/subjectrightsrequests`).
+
+Para cenários mais complexos que envolvem várias permissões, confira [Cenários de permissões](#permission-scenarios).
+
 
 ## <a name="tasks-permissions"></a>Permissões de tarefas
 

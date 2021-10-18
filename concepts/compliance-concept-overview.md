@@ -5,12 +5,12 @@ author: mahage-msft
 ms.localizationpriority: medium
 ms.prod: ediscovery
 ms.custom: scenarios:getting-started
-ms.openlocfilehash: 938dc6b2b05e614856929714d18ec1e52ebfbc4d
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: f11672a141fae80fb9851a78b80b23fb7e39ac3b
+ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59134028"
+ms.lasthandoff: 10/18/2021
+ms.locfileid: "60440077"
 ---
 # <a name="overview-of-compliance-in-microsoft-graph"></a>Visão geral da conformidade no Microsoft Graph
 
@@ -18,19 +18,21 @@ As APIs do Microsoft Graph para conformidade fornecem funcionalidades para que a
 
 As APIs de conformidade destinam-se a ajudar a oferecer a visão de ajudar as organizações a se adaptarem e estenderem Microsoft 365 Conformidade aos seus próprios requisitos específicos, habilitar a integração para soluções personalizadas ou de terceiros existentes e acelerar e dar suporte ao uso de soluções Microsoft 365 em todo o estado digital da empresa.
 
-## <a name="develop-applications-that-ensure-a-repeatable-predictable-and-standard-process"></a>Desenvolver aplicativos que garantem um processo repetitivo, previsível e padrão
+## <a name="ediscovery-api-preview"></a>API de Descoberta Externa (visualização)
+
+### <a name="develop-applications-that-ensure-a-repeatable-predictable-and-standard-process"></a>Desenvolver aplicativos que garantem um processo repetitivo, previsível e padrão
 
 As organizações dependem Microsoft 365 recursos de Descoberta Externa para atender aos requisitos para encontrar a verdade sobre o que aconteceu em sua organização quando precisam, com base em requisitos internos ou externos, como litígio, investigação ou conformidade regulamentar.
 
 Em muitas organizações, os fluxos de trabalho de Descoberta Eletrônico são frequentes, críticos e de alto volume. Nos casos em que há tarefas repetidas comuns ou um alto volume de atividades, as APIs ajudarão a fornecer uma maneira escalonável de repetir processos de forma consistente e eficaz.
 
-## <a name="manage-your-ediscovery-workflows"></a>Gerenciar seus fluxos de trabalho de Descoberta Eletrônico
+### <a name="manage-your-ediscovery-workflows"></a>Gerenciar seus fluxos de trabalho de Descoberta Eletrônico
 
 Muitas organizações lidam com um alto volume de casos e solicitações de Descoberta Automática e preferem automatizar algumas tarefas. As APIs Graph microsoft para Descoberta eDiscoveria Avançada fornecem acesso à API para a maioria das funções disponíveis na solução avançada de Descoberta eDiscovery.
 
 Dependendo dos sistemas e processos atuais, as organizações podem ter várias prioridades para automação e integração, desde processos upstream, como criação de caso, até downstream, como coleta, consultas de conjunto de revisão ou exportação. Oferecer suporte a fluxos de trabalho com APIs em todo o fluxo de trabalho avançado de Descoberta Eletrônico fornece flexibilidade e opções.
 
-## <a name="build-custom-ediscovery-workflows-with-microsoft-graph"></a>Criar fluxos de trabalho de Descoberta Eletrônico Personalizado com o Microsoft Graph
+### <a name="build-custom-ediscovery-workflows-with-microsoft-graph"></a>Criar fluxos de trabalho de Descoberta Eletrônico personalizados com o Microsoft Graph
 
 > [!VIDEO https://www.youtube-nocookie.com/embed/gXqBEHy5K6E]
 
@@ -39,6 +41,15 @@ Dependendo dos sistemas e processos atuais, as organizações podem ter várias 
 - Adicione paletes de marcação padronizadas aos casos.
 
 - Crie relatórios personalizados para controlar a carga de casos e o progresso de casos individuais.
+
+## <a name="privacy-api"></a>API de Privacidade
+
+### <a name="automate-tasks-for-data-subject-requests"></a>Automatizar tarefas para solicitações de assunto de dados
+
+De acordo com determinados regulamentos de privacidade em todo o mundo, os indivíduos podem fazer solicitações para revisar ou gerenciar os dados pessoais sobre si mesmos coletados pelas empresas. Essas solicitações são conhecidas como solicitações de direitos de assunto na solução Microsoft 365 gerenciamento de privacidade; às vezes, eles também são chamados de DSRs (solicitações de assunto de dados) ou DSARs (solicitações de acesso a dados). Microsoft 365 gerenciamento de privacidade capacita a equipe responsável por atender às solicitações de direitos de entidade para identificar facilmente os titulares de dados e encontrar suas informações pessoais entre os dados de uma organização em Exchange, SharePoint, OneDrive e Teams. 
+
+As APIs do Microsoft Graph para solicitação de direitos de entidade fornecem funcionalidade para que as organizações automatizem tarefas repetitivas e se integrem às ferramentas de solicitação de entidades de dados existentes, para habilitar a criação de fluxos de trabalho repetidos que podem ser incorporados aos processos de negócios. Você pode usar as APIs de solicitação de direitos de assunto para ajudá-lo a automatizar e dimensionar a capacidade da sua organização de executar pesquisas de solicitações de direitos de assunto em Microsoft 365 e ajudar a atender aos regulamentos do setor com mais eficiência.
+
 
 ## <a name="next-steps"></a>Próximas etapas
 

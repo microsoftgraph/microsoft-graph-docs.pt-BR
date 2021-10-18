@@ -5,24 +5,24 @@ ms.localizationpriority: medium
 doc_type: resourcePageType
 ms.prod: identity-and-sign-in
 author: psignoret
-ms.openlocfilehash: 98d0416c47695a757c4daa939a9f1b7c8e745fc1
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 5feb228b1cc29d6a2f608431520cca78591f8b5b
+ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59094090"
+ms.lasthandoff: 10/18/2021
+ms.locfileid: "60452654"
 ---
 # <a name="resourceaccess-resource-type"></a>tipo de recurso resourceAccess
 
 Namespace: microsoft.graph
 
-Especifica um escopo de permissão OAuth 2.0 ou uma função de aplicativo que um aplicativo requer. A **propriedade resourceAccess** do [tipo requiredResourceAccess](requiredresourceaccess.md) é uma coleção **de ResourceAccess**.
+Objeto usado para especificar um escopo de permissão OAuth 2.0 ou uma função de aplicativo que um aplicativo requer, por meio da propriedade **resourceAccess** do tipo de recurso [requiredResourceAccess.](requiredresourceaccess.md)
 
 ## <a name="properties"></a>Propriedades
 | Propriedade     | Tipo   |Descrição|
 |:---------------|:--------|:----------|
-|id|Guid|O identificador exclusivo de uma das [instâncias oauth2PermissionScopes](permissionscope.md) ou [appRole](approle.md) que o aplicativo de recurso expõe.|
-|tipo|Cadeia de caracteres|Especifica se a **propriedade id** faz referência a [um oauth2PermissionScopes](permissionscope.md) ou um [appRole](approle.md). Os valores possíveis são: `Scope` ou `Role`.|
+|id|GUID|O identificador exclusivo de uma das [instâncias oauth2PermissionScopes](permissionscope.md) ou [appRole](approle.md) que o aplicativo de recurso expõe.|
+|type|Cadeia de caracteres|Especifica se a **propriedade id** faz referência a [um oauth2PermissionScopes](permissionscope.md) ou um [appRole](approle.md). Os valores possíveis são: (para escopos de permissão `Scope` OAuth 2.0) ou `Role` (para funções de aplicativo).|
 
 ## <a name="json-representation"></a>Representação JSON
 
@@ -38,8 +38,8 @@ Veja a seguir uma representação JSON do recurso.
 
 ```json
 {
-  "id": "guid",
-  "type": "string"
+  "id": "GUID",
+  "type": "String"
 }
 
 ```

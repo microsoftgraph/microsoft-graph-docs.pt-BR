@@ -2,15 +2,15 @@
 title: Tipo de número automaticUpdateMode
 description: Valores possíveis para o modo de atualização automática.
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: e3a076fcc88cb64ddeebddcb7f97c3e77c2b34ec
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 55f706fb15ab2c6f40800ea9b2170977de8b3c65
+ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59136478"
+ms.lasthandoff: 10/18/2021
+ms.locfileid: "60455741"
 ---
 # <a name="automaticupdatemode-enum-type"></a>Tipo de número automaticUpdateMode
 
@@ -28,8 +28,7 @@ Valores possíveis para o modo de atualização automática.
 |autoInstallAtMaintenanceTime|2|Instalação automática no momento da manutenção.|
 |autoInstallAndRebootAtMaintenanceTime|3|Instale e reinicie automaticamente no momento da manutenção.|
 |autoInstallAndRebootAtScheduledTime|4 |Instale e reinicie automaticamente no horário agendado.|
-|autoInstallAndRebootWithoutEndUserControl|5 |Instalar e reiniciar automaticamente sem o controle do usuário final|
-
+|autoInstallAndRebootWithoutEndUserControl|5|Instalar e reiniciar automaticamente sem o controle do usuário final|
 
 
 

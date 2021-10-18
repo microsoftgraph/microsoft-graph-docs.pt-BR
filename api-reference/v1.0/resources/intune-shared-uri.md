@@ -2,15 +2,15 @@
 title: Tipo de recurso uri
 description: Ainda não documentado
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 4c6cef43be0b252238bdfbbaa2ff9ef32f922211
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 1fd3ddf0ce96cfc4ec361e3ba544ff554645d4da
+ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59084444"
+ms.lasthandoff: 10/18/2021
+ms.locfileid: "60451152"
 ---
 # <a name="uri-resource-type"></a>Tipo de recurso uri
 
@@ -43,7 +43,6 @@ Veja a seguir uma representação JSON do recurso.
   ]
 }
 ```
-
 
 
 

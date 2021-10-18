@@ -2,15 +2,15 @@
 title: Tipo de recurso windowsInformationProtectionAppLockerFile
 description: Arquivo do AppLocker da Proteção de Informações do Windows
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: bc04132c94f08ae0634461386c1a2217fcad794e
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 0ed806bea7ee191c4c6b5e3ea20553bae59593b0
+ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59052962"
+ms.lasthandoff: 10/18/2021
+ms.locfileid: "60451959"
 ---
 # <a name="windowsinformationprotectionapplockerfile-resource-type"></a>Tipo de recurso windowsInformationProtectionAppLockerFile
 
@@ -32,7 +32,7 @@ Arquivo do AppLocker da Proteção de Informações do Windows
 ## <a name="properties"></a>Propriedades
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|displayName|String|O nome amigável|
+|displayName|Cadeia de caracteres|O nome amigável|
 |fileHash|Cadeia de caracteres|Hash SHA256 do arquivo|
 |file|Binária|Arquivo como uma matriz de bytes|
 |id|Cadeia de caracteres|Chave da entidade.|
@@ -59,7 +59,6 @@ Veja a seguir uma representação JSON do recurso.
   "version": "String"
 }
 ```
-
 
 
 

@@ -2,15 +2,15 @@
 title: Tipo de recurso deviceAndAppManagementRoleDefinition
 description: 'O recurso de Definição de Função. A definição da função é a base do acesso baseado em função no Intune. A função combina um recurso do Intune, como um aplicativo móvel e permissões de função associadas, como Criar ou Ler para o recurso. Existem dois tipos de funções: internas e personalizadas. Funções internas não podem ser modificadas. Tanto funções internas quanto personalizadas devem ter atribuições a serem impostas. Crie funções personalizadas se quiser definir uma função que permita que qualquer um dos recursos disponíveis e permissões de funções sejam combinados em uma única função.'
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: c956cdd086f95a682563d7039826e323c267ab36
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 04810739efb900e21114c63bf72004a5e45cfbc7
+ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59028889"
+ms.lasthandoff: 10/18/2021
+ms.locfileid: "60447830"
 ---
 # <a name="deviceandappmanagementroledefinition-resource-type"></a>Tipo de recurso deviceAndAppManagementRoleDefinition
 
@@ -35,8 +35,8 @@ Herda de [roleDefinition](../resources/intune-rbac-roledefinition.md)
 ## <a name="properties"></a>Propriedades
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|id|String|Chave da entidade. É somente leitura e gerada automaticamente. Herdada de [roleDefinition](../resources/intune-rbac-roledefinition.md)|
-|displayName|String|Nome de exibição da definição de Função. Herdada de [roleDefinition](../resources/intune-rbac-roledefinition.md)|
+|id|Cadeia de caracteres|Chave da entidade. É somente leitura e gerada automaticamente. Herdada de [roleDefinition](../resources/intune-rbac-roledefinition.md)|
+|displayName|Cadeia de caracteres|Nome de exibição da definição de Função. Herdada de [roleDefinition](../resources/intune-rbac-roledefinition.md)|
 |description|Cadeia de caracteres|Descrição da definição de Função. Herdada de [roleDefinition](../resources/intune-rbac-roledefinition.md)|
 |rolePermissions|Coleção [rolePermission](../resources/intune-rbac-rolepermission.md)|Lista de Permissões de Função que esta função está autorizada a executar. Elas devem corresponder ao actionName definido como parte de rolePermission. Herdada de [roleDefinition](../resources/intune-rbac-roledefinition.md)|
 |isBuiltIn|Booliano|Tipo de Função. Defina como True se for uma definição de função interna ou como False se for uma definição de função personalizada. Herdado de [roleDefinition](../resources/intune-rbac-roledefinition.md)|
@@ -79,7 +79,6 @@ Veja a seguir uma representação JSON do recurso.
   "isBuiltIn": true
 }
 ```
-
 
 
 

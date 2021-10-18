@@ -2,15 +2,15 @@
 title: Acessar deviceConfigurationDeviceStatus
 description: Leia as propriedades e as relações do objeto deviceConfigurationDeviceStatus.
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: e055dece39166f945c26e46a5ffb8674c5bf0170
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: bfbd4245673db1139afd3d1f119258ebac94cba6
+ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59105171"
+ms.lasthandoff: 10/18/2021
+ms.locfileid: "60455692"
 ---
 # <a name="get-deviceconfigurationdevicestatus"></a>Acessar deviceConfigurationDeviceStatus
 
@@ -82,7 +82,6 @@ Content-Length: 515
   }
 }
 ```
-
 
 
 

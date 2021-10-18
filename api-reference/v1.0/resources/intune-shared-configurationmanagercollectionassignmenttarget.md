@@ -2,15 +2,15 @@
 title: tipo de recurso configurationManagerCollectionAssignmentTarget
 description: Representa uma atribuição a uma coleção configuration manager.
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: d33b97fdfefa5042d73b9a0a8ef2f2481052535a
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 1ff8e2bfdf71957466bf546575dc97f2788f490e
+ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59036267"
+ms.lasthandoff: 10/18/2021
+ms.locfileid: "60450724"
 ---
 # <a name="configurationmanagercollectionassignmenttarget-resource-type"></a>tipo de recurso configurationManagerCollectionAssignmentTarget
 
@@ -44,7 +44,6 @@ Veja a seguir uma representação JSON do recurso.
   "collectionId": "String"
 }
 ```
-
 
 
 

@@ -2,15 +2,15 @@
 title: iosCustomConfiguration resource type
 description: Este tópico fornece descrições dos métodos declarados, das propriedades e das relações expostos pelo recurso iosCustomConfiguration.
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 1eac2c740838742953725f8c423aa9b8acf690d5
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 2640cd49e099e8c022f9d56c2c3f3543888f0e5b
+ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59146839"
+ms.lasthandoff: 10/18/2021
+ms.locfileid: "60450457"
 ---
 # <a name="ioscustomconfiguration-resource-type"></a>iosCustomConfiguration resource type
 
@@ -39,7 +39,7 @@ Herda de [deviceConfiguration](../resources/intune-deviceconfig-deviceconfigurat
 |lastModifiedDateTime|DateTimeOffset|DateTime da última modificação do objeto. Herdada de [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
 |createdDateTime|DateTimeOffset|DateTime em que o objeto foi criado. Herdada de [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
 |description|Cadeia de caracteres|O administrador forneceu a descrição da Configuração do dispositivo. Herdada de [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
-|displayName|String|O administrador forneceu o nome da Configuração do dispositivo. Herdada de [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
+|displayName|Cadeia de caracteres|O administrador forneceu o nome da Configuração do dispositivo. Herdada de [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
 |versão|Int32|Versão da configuração do dispositivo. Herdada de [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
 |payloadName|Cadeia de caracteres|Nome que é exibido para o usuário.|
 |payloadFileName|Cadeia de caracteres|O nome do arquivo de carga (*.mobileconfig | *.xml).|
@@ -77,7 +77,6 @@ Veja a seguir uma representação JSON do recurso.
   "payload": "binary"
 }
 ```
-
 
 
 

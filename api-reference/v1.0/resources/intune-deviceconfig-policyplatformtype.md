@@ -2,15 +2,15 @@
 title: Tipo de número policyPlatformType
 description: Tipos de plataforma com suporte para políticas.
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: fba9630d8d6fd142ad790d6311d57d4b646942e6
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 08f8b36284df0752303ecb20552dec8ef917ab4b
+ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59067259"
+ms.lasthandoff: 10/18/2021
+ms.locfileid: "60447400"
 ---
 # <a name="policyplatformtype-enum-type"></a>Tipo de número policyPlatformType
 
@@ -27,11 +27,10 @@ Tipos de plataforma com suporte para políticas.
 |iOS|2|iOS.|
 |macOS|3|MacOS.|
 |windowsPhone81|4 |WindowsPhone 8.1.|
-|windows81AndLater|5 |Windows 8.1 e posterior|
+|windows81AndLater|5|Windows 8.1 e posterior|
 |windows10AndLater|6 |Windows 10 e posterior.|
 |androidWorkProfile|7 |AndroidWorkProfile.|
 |all|100|Todas as plataformas.|
-
 
 
 

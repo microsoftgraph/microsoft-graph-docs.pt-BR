@@ -2,15 +2,15 @@
 title: Listar enrollmentConfigurationAssignments
 description: Listar propriedades e relações de objetos de enrollmentConfigurationAssignment.
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: b969531ea461fe0dfb666659c34ffb368f14c1ae
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 0e7158ca3f19c2c46e2934a3e3020736d5bd8a30
+ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59094790"
+ms.lasthandoff: 10/18/2021
+ms.locfileid: "60450703"
 ---
 # <a name="list-enrollmentconfigurationassignments"></a>Listar enrollmentConfigurationAssignments
 
@@ -78,7 +78,6 @@ Content-Length: 331
   ]
 }
 ```
-
 
 
 

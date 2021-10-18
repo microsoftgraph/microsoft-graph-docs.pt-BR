@@ -2,15 +2,15 @@
 title: Tipo de número windowsUpdateType
 description: De quais dispositivos de filial receberão suas atualizações
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: c49f12452beaf2097381975f40314abbee03ffce
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 2ee81f022978dc8259b240f8b559c590d91514c2
+ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59015564"
+ms.lasthandoff: 10/18/2021
+ms.locfileid: "60450851"
 ---
 # <a name="windowsupdatetype-enum-type"></a>Tipo de número windowsUpdateType
 
@@ -28,8 +28,7 @@ De quais dispositivos de filial receberão suas atualizações
 |businessReadyOnly|2|Canal Semes anual. O dispositivo obtém atualizações de recursos do Canal Semesanuais.|
 |windowsInsiderBuildFast|3|Windows Insider build - Fast|
 |windowsInsiderBuildSlow|4 |Windows Insider build - Slow|
-|windowsInsiderBuildRelease|5 |Versão Windows build do Insider|
-
+|windowsInsiderBuildRelease|5|Versão Windows build do Insider|
 
 
 

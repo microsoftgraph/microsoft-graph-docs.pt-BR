@@ -2,15 +2,15 @@
 title: Tipo de recurso importedWindowsAutopilotDeviceIdentity
 description: Dispositivos importados do Windows AutoPilot.
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 6f9fa651547c8b91b371cec7bfe28171edd4fea8
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 62c8441a5d96853f8f7f08a7db19f4ea81aa2f7a
+ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59029014"
+ms.lasthandoff: 10/18/2021
+ms.locfileid: "60454345"
 ---
 # <a name="importedwindowsautopilotdeviceidentity-resource-type"></a>Tipo de recurso importedWindowsAutopilotDeviceIdentity
 
@@ -36,10 +36,10 @@ Dispositivos importados do Windows AutoPilot.
 |groupTag|Cadeia de caracteres|Marca de grupo do dispositivo Windows piloto automático.|
 |serialNumber|Cadeia de caracteres|Número de série do dispositivo do Windows AutoPilot.|
 |productKey|Cadeia de caracteres|Chave do produto (Product Key) do dispositivo do Windows AutoPilot.|
-|importId|String|A ID de Importação do dispositivo Windows piloto automático.|
+|importId|Cadeia de caracteres|A ID de Importação do dispositivo Windows piloto automático.|
 |hardwareIdentifier|Binária|Blob de hardware do dispositivo do Windows AutoPilot.|
 |state|[importedWindowsAutopilotDeviceIdentityState](../resources/intune-enrollment-importedwindowsautopilotdeviceidentitystate.md)|Estado atual do dispositivo importado.|
-|assignedUserPrincipalName|Cadeia de caracteres|UPN do usuário que o dispositivo será atribuído|
+|assignedUserPrincipalName|String|UPN do usuário que o dispositivo será atribuído|
 
 ## <a name="relationships"></a>Relações
 Nenhum
@@ -71,7 +71,6 @@ Veja a seguir uma representação JSON do recurso.
   "assignedUserPrincipalName": "String"
 }
 ```
-
 
 
 

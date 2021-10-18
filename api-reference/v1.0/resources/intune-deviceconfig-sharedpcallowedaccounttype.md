@@ -2,15 +2,15 @@
 title: Tipo de número sharedPCAllowedAccountType
 description: Tipo de contas que têm permissão para compartilhar o computador.
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 26616386431512d4aaadfd0cf3d15a6a27943a58
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 7a2cdbb727a5965106928196da76643a0fa8c4bb
+ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59067140"
+ms.lasthandoff: 10/18/2021
+ms.locfileid: "60455292"
 ---
 # <a name="sharedpcallowedaccounttype-enum-type"></a>Tipo de número sharedPCAllowedAccountType
 
@@ -25,7 +25,6 @@ Tipo de contas que têm permissão para compartilhar o computador.
 |:---|:---|:---|
 |guest|1|Somente contas de convidado.|
 |domínio|2|Somente contas ingressam no domínio.|
-
 
 
 

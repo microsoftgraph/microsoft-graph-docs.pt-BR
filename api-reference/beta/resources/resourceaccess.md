@@ -1,16 +1,16 @@
 ---
 title: tipo de recurso resourceAccess
 description: Especifica um escopo de permissão OAuth 2.0 ou uma função de aplicativo que um aplicativo requer.
-localization_priority: Normal
+ms.localizationpriority: medium
 doc_type: resourcePageType
 ms.prod: applications
 author: psignoret
-ms.openlocfilehash: 0072bf231fe8dba66b34188952804083593afaa1
-ms.sourcegitcommit: 9d98d9e9cc1e193850ab9b82aaaf906d70e1378b
+ms.openlocfilehash: cd971de84841068ffa8a7a4af7b3258c5f45003f
+ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/12/2021
-ms.locfileid: "50761069"
+ms.lasthandoff: 10/18/2021
+ms.locfileid: "60451413"
 ---
 # <a name="resourceaccess-resource-type"></a>tipo de recurso resourceAccess
 
@@ -18,13 +18,13 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Especifica um escopo de permissão OAuth 2.0 ou uma função de aplicativo que um aplicativo requer. A **propriedade resourceAccess** do [tipo requiredResourceAccess](requiredresourceaccess.md) é uma coleção **de ResourceAccess**.
+Objeto usado para especificar um escopo de permissão OAuth 2.0 ou uma função de aplicativo que um aplicativo requer, por meio da propriedade **resourceAccess** do tipo de recurso [requiredResourceAccess.](requiredresourceaccess.md)
 
 ## <a name="properties"></a>Propriedades
 | Propriedade     | Tipo   |Descrição|
 |:---------------|:--------|:----------|
-|id|Guid|O identificador exclusivo de uma das [instâncias oauth2PermissionScopes](permissionscope.md) ou [appRole](approle.md) que o aplicativo de recurso expõe.|
-|tipo|Cadeia de caracteres|Especifica se a **propriedade id** faz referência a [um oauth2PermissionScopes](permissionscope.md) ou um [appRole](approle.md). Os valores possíveis são: `Scope` ou `Role`.|
+|id|GUID|O identificador exclusivo de uma das [instâncias oauth2PermissionScopes](permissionscope.md) ou [appRole](approle.md) que o aplicativo de recurso expõe.|
+|type|Cadeia de caracteres|Especifica se a **propriedade id** faz referência a [um oauth2PermissionScopes](permissionscope.md) ou um [appRole](approle.md). Os valores possíveis são: (para escopos de permissão `Scope` OAuth 2.0) ou `Role` (para funções de aplicativo).|
 
 ## <a name="json-representation"></a>Representação JSON
 
@@ -40,8 +40,8 @@ Veja a seguir uma representação JSON do recurso.
 
 ```json
 {
-  "id": "guid",
-  "type": "string"
+  "id": "GUID",
+  "type": "String"
 }
 
 ```

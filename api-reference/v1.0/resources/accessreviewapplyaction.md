@@ -5,22 +5,22 @@ author: isabelleatmsft
 ms.localizationpriority: medium
 ms.prod: governance
 doc_type: resourcePageType
-ms.openlocfilehash: 8c887c1b2bbef46f963e2260f4bfe99215cddc2d
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 82f7f88f168991ae398ca68a52e37be0baf8dec1
+ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59021761"
+ms.lasthandoff: 10/18/2021
+ms.locfileid: "60441466"
 ---
 # <a name="accessreviewapplyaction-resource-type"></a>Tipo de recurso accessReviewApplyAction
 
 Namespace: microsoft.graph
 
-Representa uma classe base para aplicar ações [no accessReviewScheduleSettings](accessreviewschedulesettings.md) de [um accessReviewScheduleDefinition](accessreviewscheduledefinition.md). Tipos derivados com suporte:
+Representa uma classe base para aplicar ações [no accessReviewScheduleSettings](accessreviewschedulesettings.md) de [um objeto accessReviewScheduleDefinition.](accessreviewscheduledefinition.md) Os seguintes tipos derivados são suportados:
 
-- [removeAccessApplyAction](removeaccessapplyaction.md) é um tipo derivado de accessReviewApplyAction que indica a remoção do acesso de uma entidade que está sendo revisada após a conclusão da revisão. Esse é o tipo padrão para a propriedade applyActions em accessReviewScheduleSettings e não precisa ser especificado.
+- [removeAccessApplyAction](removeaccessapplyaction.md) indica a remoção do acesso de uma entidade que está sendo revisada após a conclusão da revisão. Esse é o tipo padrão para a propriedade applyActions em accessReviewScheduleSettings e não precisa ser especificado.
 
-- [disableAndDeleteUserApplyAction](disableanddeleteuserapplyaction.md) é um tipo derivado de accessReviewApplyAction que indica desabilitar e excluir o usuário que está sendo revisado após a conclusão da revisão. Esse é o tipo não padrão e precisa ser especificado em accessReviewScheduleSettings.
+- [disableAndDeleteUserApplyAction](disableanddeleteuserapplyaction.md) indica desabilitar e excluir o usuário que está sendo revisado após a conclusão da revisão. Esse é o tipo não padrão e deve ser explicitamente especificado em accessReviewScheduleSettings.
 
 ## <a name="properties"></a>Propriedades
 Nenhum.

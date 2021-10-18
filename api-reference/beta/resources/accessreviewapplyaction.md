@@ -2,15 +2,15 @@
 title: Tipo de recurso accessReviewApplyAction
 description: Representa a ação a ser tomada em usuários revisados após a conclusão de uma instância de revisão de acesso.
 author: isabelleatmsft
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: governance
 doc_type: resourcePageType
-ms.openlocfilehash: c7f1425bb7155762f973f65fd766db8da55b8d77
-ms.sourcegitcommit: db3d2c6db8dd8f8cc14bdcebb2904d5e056a73e7
+ms.openlocfilehash: 549fbdf4394d04297fe5fc8045ccd63eb5741128
+ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/20/2021
-ms.locfileid: "52579638"
+ms.lasthandoff: 10/18/2021
+ms.locfileid: "60454030"
 ---
 # <a name="accessreviewapplyaction-resource-type"></a>Tipo de recurso accessReviewApplyAction
 
@@ -20,11 +20,11 @@ Namespace: microsoft.graph
 
 [!INCLUDE [accessreviews-disclaimer-v2](../../includes/accessreviews-disclaimer-v2.md)]
 
-Representa uma classe base para aplicar ações [no accessReviewScheduleSettings](accessreviewschedulesettings.md) de [um accessReviewScheduleDefinition](accessreviewscheduledefinition.md). Tipos derivados com suporte:
+Representa uma classe base para aplicar ações [no accessReviewScheduleSettings](accessreviewschedulesettings.md) de [um objeto accessReviewScheduleDefinition.](accessreviewscheduledefinition.md) Os seguintes tipos derivados são suportados:
 
-- [removeAccessApplyAction](removeaccessapplyaction.md) é um tipo derivado de accessReviewApplyAction que indica a remoção do acesso de uma entidade que está sendo revisada após a conclusão da revisão. Esse é o tipo padrão para a propriedade applyActions em accessReviewScheduleSettings e não precisa ser especificado.
+- [removeAccessApplyAction](removeaccessapplyaction.md) indica a remoção do acesso de uma entidade que está sendo revisada após a conclusão da revisão. Esse é o tipo padrão para a propriedade applyActions em accessReviewScheduleSettings e não precisa ser especificado.
 
-- [disableAndDeleteUserApplyAction](disableanddeleteuserapplyaction.md) é um tipo derivado de accessReviewApplyAction que indica desabilitar e excluir o usuário que está sendo revisado após a conclusão da revisão. Esse é o tipo não padrão e precisa ser especificado em accessReviewScheduleSettings.
+- [disableAndDeleteUserApplyAction](disableanddeleteuserapplyaction.md) indica desabilitar e excluir o usuário que está sendo revisado após a conclusão da revisão. Esse é o tipo não padrão e deve ser explicitamente especificado em accessReviewScheduleSettings.
 
 ## <a name="properties"></a>Propriedades
 Nenhum.

@@ -2,15 +2,15 @@
 title: tipo de número welcomeScreenMeetingInformation
 description: Valores possíveis para informações de reunião de tela de boas-vindas.
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: e3ede77f6489e559887e63d6943984e2d9d1957d
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 6b0fd96b1ae27145f1161370bc85d7b59bc9bd83
+ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59072152"
+ms.lasthandoff: 10/18/2021
+ms.locfileid: "60446614"
 ---
 # <a name="welcomescreenmeetinginformation-enum-type"></a>tipo de número welcomeScreenMeetingInformation
 
@@ -26,7 +26,6 @@ Valores possíveis para informações de reunião de tela de boas-vindas.
 |userDefined|0|User Defined, default value, no intent.|
 |showOrganizerAndTimeOnly|1|Mostrar organizador e somente hora.|
 |showOrganizerAndTimeAndSubject|2|Mostrar organizador, hora e assunto (assunto está oculto para reuniões privadas).|
-
 
 
 

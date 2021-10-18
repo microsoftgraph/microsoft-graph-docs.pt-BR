@@ -2,15 +2,15 @@
 title: Tipo de recurso iosUpdateDeviceStatus
 description: Ainda não documentado
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 0ac992036f37b9b4c622e2bfc01310d2c2e8e1fc
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: b6ca827545b2b6883be9c62a101b6a131b0c8415
+ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59148113"
+ms.lasthandoff: 10/18/2021
+ms.locfileid: "60447260"
 ---
 # <a name="iosupdatedevicestatus-resource-type"></a>Tipo de recurso iosUpdateDeviceStatus
 
@@ -32,7 +32,7 @@ Ainda não documentado
 ## <a name="properties"></a>Propriedades
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|id|String|Chave da entidade.|
+|id|Cadeia de caracteres|Chave da entidade.|
 |installStatus|[iosUpdatesInstallStatus](../resources/intune-deviceconfig-iosupdatesinstallstatus.md)|O status de instalação do relatório de políticas. Os valores possíveis são: `success` , , , , , , , , `available` , , , `idle` , , `unknown` , , , `downloading` , , `downloadFailed` `downloadRequiresComputer` , `downloadInsufficientSpace` `downloadInsufficientPower` `downloadInsufficientNetwork` `installing` `installInsufficientSpace` `installInsufficientPower` `installPhoneCallInProgress` `installFailed` `notSupportedOperation` . `sharedDeviceUserLoggedInError` `deviceOsHigherThanDesiredOsVersion`|
 |osVersion|Cadeia de caracteres|A versão do dispositivo que está sendo relatado.|
 |deviceId|Cadeia de caracteres|A ID do dispositivo que está sendo relatado.|
@@ -43,7 +43,7 @@ Ainda não documentado
 |complianceGracePeriodExpirationDateTime|DateTimeOffset|DateTime em que o período de cortesia de conformidade do dispositivo termina|
 |status|[complianceStatus](../resources/intune-shared-compliancestatus.md)|Status de conformidade do relatório de políticas. Os valores possíveis são: `unknown`, `notApplicable`, `compliant`, `remediated`, `nonCompliant`, `error`, `conflict`, `notAssigned`.|
 |lastReportedDateTime|DateTimeOffset|Data e hora da última modificação do relatório de políticas.|
-|userPrincipalName|String|UserPrincipalName.|
+|userPrincipalName|Cadeia de caracteres|UserPrincipalName.|
 
 ## <a name="relationships"></a>Relações
 Nenhum
@@ -73,7 +73,6 @@ Veja a seguir uma representação JSON do recurso.
   "userPrincipalName": "String"
 }
 ```
-
 
 
 

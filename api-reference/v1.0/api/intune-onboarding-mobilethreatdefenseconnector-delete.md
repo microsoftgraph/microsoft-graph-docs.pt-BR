@@ -2,15 +2,15 @@
 title: Excluir mobileThreatDefenseConnector
 description: Exclui mobileThreatDefenseConnector.
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 1d4dbddecf7554d4621de1e45f4e71de4348aa09
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 577fa43510adad01b9f63f16e0164b38b120d1d7
+ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59139930"
+ms.lasthandoff: 10/18/2021
+ms.locfileid: "60449037"
 ---
 # <a name="delete-mobilethreatdefenseconnector"></a>Excluir mobileThreatDefenseConnector
 
@@ -63,7 +63,6 @@ Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado a
 ``` http
 HTTP/1.1 204 No Content
 ```
-
 
 
 

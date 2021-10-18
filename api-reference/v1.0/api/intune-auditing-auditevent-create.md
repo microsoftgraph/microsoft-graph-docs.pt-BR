@@ -2,15 +2,15 @@
 title: Criar auditEvent
 description: Criar um novo objeto auditEvent.
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 9464aa2e919768f9f85433645949f225720893cd
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 1bceb7079f1ca01426e34d01924576486f66706c
+ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59056477"
+ms.lasthandoff: 10/18/2021
+ms.locfileid: "60454317"
 ---
 # <a name="create-auditevent"></a>Criar auditEvent
 
@@ -25,8 +25,8 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 |Tipo de permissão|Permissões (da com menos para a com mais privilégios)|
 |:---|:---|
-|Delegada (conta corporativa ou de estudante)|DeviceManagementApps.ReadWrite.All|
-|Delegada (conta pessoal da Microsoft)|Sem suporte.|
+|Delegado (conta corporativa ou de estudante)|DeviceManagementApps.ReadWrite.All|
+|Delegado (conta pessoal da Microsoft)|Sem suporte.|
 |Aplicativo|DeviceManagementApps.ReadWrite.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
@@ -62,7 +62,7 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar auditEve
 |activityResult|Cadeia de caracteres|O resultado da atividade.|
 |correlationId|Guid|A ID da solicitação de cliente usada para correlacionar a atividade dentro do sistema.|
 |recursos|Coleção [auditResource](../resources/intune-auditing-auditresource.md)|Recursos em modificação.|
-|category|String|Categoria de auditoria.|
+|category|Cadeia de caracteres|Categoria de auditoria.|
 
 
 
@@ -171,7 +171,6 @@ Content-Length: 1439
   "category": "Category value"
 }
 ```
-
 
 
 

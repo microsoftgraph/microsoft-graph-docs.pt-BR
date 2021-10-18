@@ -2,15 +2,15 @@
 title: Criar deviceConfigurationDeviceStatus
 description: Criar um novo objeto deviceConfigurationDeviceStatus.
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: cc657643e5d731b6b26feca631b7331660ba01d4
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 6f81c8546256a8236e3c62420cbf2cec841c0004
+ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59105199"
+ms.lasthandoff: 10/18/2021
+ms.locfileid: "60450928"
 ---
 # <a name="create-deviceconfigurationdevicestatus"></a>Criar deviceConfigurationDeviceStatus
 
@@ -51,14 +51,14 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar deviceCo
 
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|id|String|Chave da entidade.|
+|id|Cadeia de caracteres|Chave da entidade.|
 |deviceDisplayName|Cadeia de caracteres|Nome do dispositivo de DevicePolicyStatus.|
 |userName|Cadeia de caracteres|O nome de usuário que está sendo relatado|
 |deviceModel|Cadeia de caracteres|O modelo do dispositivo que está sendo relatado|
 |complianceGracePeriodExpirationDateTime|DateTimeOffset|DateTime em que o período de cortesia de conformidade do dispositivo termina|
 |status|[complianceStatus](../resources/intune-shared-compliancestatus.md)|Status de conformidade do relatório de políticas. Os valores possíveis são: `unknown`, `notApplicable`, `compliant`, `remediated`, `nonCompliant`, `error`, `conflict`, `notAssigned`.|
 |lastReportedDateTime|DateTimeOffset|Data e hora da última modificação do relatório de políticas.|
-|userPrincipalName|Cadeia de caracteres|UserPrincipalName.|
+|userPrincipalName|String|UserPrincipalName.|
 
 
 
@@ -105,7 +105,6 @@ Content-Length: 478
   "userPrincipalName": "User Principal Name value"
 }
 ```
-
 
 
 

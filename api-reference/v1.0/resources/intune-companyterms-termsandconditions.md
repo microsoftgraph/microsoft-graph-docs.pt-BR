@@ -2,15 +2,15 @@
 title: Tipo de recurso termsAndConditions
 description: Uma entidade termsAndConditions representa os metadados e conteúdos de determinada política de Termos e Condições (T&C). Os conteúdos das políticas da T&C são apresentados aos usuários na primeira tentativa de registro no Intune, e posteriormente, nas edições em que um administrador solicitou a nova aceitação. Eles permitem que os administradores comuniquem as provisões com as quais um usuário deve concordar para que os dispositivos sejam registrados no Intune.
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 136e351386deef49c6833e56e997e18ff4fd7454
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: c31c0ac86075bcf8c9d74f82efb6fefabf374dfc
+ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59007072"
+ms.lasthandoff: 10/18/2021
+ms.locfileid: "60451194"
 ---
 # <a name="termsandconditions-resource-type"></a>Tipo de recurso termsAndConditions
 
@@ -70,7 +70,6 @@ Veja a seguir uma representação JSON do recurso.
   "version": 1024
 }
 ```
-
 
 
 

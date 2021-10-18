@@ -2,15 +2,15 @@
 title: Tipo de recurso managedEBookAssignment
 description: Contém propriedades usadas para atribuir um livro eletrônico a um grupo.
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: b0c35cfb4de6cac85eb0601f23ad48216796ecc0
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 8e516119db00a59b7a0e64b760f83e2ddd86cff7
+ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59007093"
+ms.lasthandoff: 10/18/2021
+ms.locfileid: "60453853"
 ---
 # <a name="managedebookassignment-resource-type"></a>Tipo de recurso managedEBookAssignment
 
@@ -57,7 +57,6 @@ Veja a seguir uma representação JSON do recurso.
   "installIntent": "String"
 }
 ```
-
 
 
 

@@ -2,15 +2,15 @@
 title: Criar iosUpdateDeviceStatus
 description: Criar um novo objeto iosUpdateDeviceStatus.
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 1feb522dcd6fcb78fc4f5e4322ab963f3c50180c
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 16337b48ef340788711528bade7ab50a50b272c7
+ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59068113"
+ms.lasthandoff: 10/18/2021
+ms.locfileid: "60444621"
 ---
 # <a name="create-iosupdatedevicestatus"></a>Criar iosUpdateDeviceStatus
 
@@ -25,8 +25,8 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 |Tipo de permissão|Permissões (da com menos para a com mais privilégios)|
 |:---|:---|
-|Delegada (conta corporativa ou de estudante)|DeviceManagementConfiguration.ReadWrite.All|
-|Delegada (conta pessoal da Microsoft)|Sem suporte.|
+|Delegado (conta corporativa ou de estudante)|DeviceManagementConfiguration.ReadWrite.All|
+|Delegado (conta pessoal da Microsoft)|Sem suporte.|
 |Aplicativo|DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
@@ -51,7 +51,7 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar iosUpdat
 
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|id|String|Chave da entidade.|
+|id|Cadeia de caracteres|Chave da entidade.|
 |installStatus|[iosUpdatesInstallStatus](../resources/intune-deviceconfig-iosupdatesinstallstatus.md)|O status de instalação do relatório de políticas. Os valores possíveis são: `success` , , , , , , , , `available` , , , `idle` , , `unknown` , , , `downloading` , , `downloadFailed` `downloadRequiresComputer` , `downloadInsufficientSpace` `downloadInsufficientPower` `downloadInsufficientNetwork` `installing` `installInsufficientSpace` `installInsufficientPower` `installPhoneCallInProgress` `installFailed` `notSupportedOperation` . `sharedDeviceUserLoggedInError` `deviceOsHigherThanDesiredOsVersion`|
 |osVersion|Cadeia de caracteres|A versão do dispositivo que está sendo relatado.|
 |deviceId|Cadeia de caracteres|A ID do dispositivo que está sendo relatado.|
@@ -117,7 +117,6 @@ Content-Length: 601
   "userPrincipalName": "User Principal Name value"
 }
 ```
-
 
 
 

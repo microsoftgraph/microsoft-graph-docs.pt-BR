@@ -2,15 +2,15 @@
 title: Tipo de recurso termsAndConditionsAcceptanceStatus
 description: Uma entidade termsAndConditionsAcceptanceStatus representa o status de aceitação de uma política de Termos e Condições (T&C) por um determinado usuário. Os usuários devem aceitar a versão mais recente dos termos para manterem o acesso ao Portal da Empresa.
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 6abc6e97663a307f4bc17cd628ac7a7e2c99a159
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 9adf832012c51d05319f83a6d4208ce07d16a534
+ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59007065"
+ms.lasthandoff: 10/18/2021
+ms.locfileid: "60451448"
 ---
 # <a name="termsandconditionsacceptancestatus-resource-type"></a>Tipo de recurso termsAndConditionsAcceptanceStatus
 
@@ -32,11 +32,11 @@ Uma entidade termsAndConditionsAcceptanceStatus representa o status de aceitaç�
 ## <a name="properties"></a>Propriedades
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|id|Cadeia de caracteres|Identificador exclusivo da entidade.|
+|id|String|Identificador exclusivo da entidade.|
 |userDisplayName|Cadeia de caracteres|Nome de exibição do usuário cuja aceitação a entidade representa.|
 |acceptedVersion|Int32|Número da versão mais recente dos T&C aceitos pelo usuário.|
 |acceptedDateTime|DateTimeOffset|A data e a hora em que os termos foram aceitos pela última vez pelo usuário.|
-|userPrincipalName|String|O userPrincipalName do Usuário que aceitou o termo.|
+|userPrincipalName|Cadeia de caracteres|O userPrincipalName do Usuário que aceitou o termo.|
 
 ## <a name="relationships"></a>Relações
 |Relação|Tipo|Descrição|
@@ -61,7 +61,6 @@ Veja a seguir uma representação JSON do recurso.
   "userPrincipalName": "String"
 }
 ```
-
 
 
 

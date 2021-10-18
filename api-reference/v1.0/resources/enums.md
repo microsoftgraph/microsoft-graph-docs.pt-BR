@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 ms.prod: non-product-specific
 author: MSGraphDocsvTeam
 doc_type: enumPageType
-ms.openlocfilehash: 013560d66a16ccc6aabe39e0e7eaaabccda5e81d
-ms.sourcegitcommit: cbad97d6a8ccb89b1822b30a11cc9b6f2670deda
+ms.openlocfilehash: f01352fb2e5b9c05c8b5134e95d79cbc46547bbe
+ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/30/2021
-ms.locfileid: "60016603"
+ms.lasthandoff: 10/18/2021
+ms.locfileid: "60446424"
 ---
 # <a name="enum-values"></a>Valores denum
 
@@ -350,7 +350,7 @@ Namespace: microsoft.graph
 |:---|
 |Nenhum|
 |SecurityGroup|
-|Todos|
+|Tudo|
 
 ### <a name="recipientscopetype-values"></a>valores recipientScopeType
 
@@ -1311,7 +1311,7 @@ Valores possíveis para tipos de conta de usuário (associação ao grupo), por 
 |usuário | Coluna pessoa ou grupo. |
 |url | Hiperlink ou coluna de imagem. |
 |calculado | Coluna calculada. |
-|location | Coluna local. |
+|localização | Coluna local. |
 |geolocalização | Coluna de localização geográfica. |
 |term | Coluna de metadados gerenciados. |
 |multiterm | Coluna de metadados gerenciados aceitando vários valores. |
@@ -1631,4 +1631,57 @@ Valores possíveis para tipos de conta de usuário (associação ao grupo), por 
 |normal|
 |high|
 |critical|
+|unknownFutureValue|
+
+### <a name="subjectrightsrequeststage-values"></a>valores subjectRightsRequestStage 
+
+|Member|
+|:---|
+|contentRetrieval|
+|contentReview|
+|generateReport|
+|contentDeletion|
+|caseResolved|
+|unknownFutureValue|
+
+### <a name="subjectrightsrequeststagestatus-values"></a>valores subjectRightsRequestStageStatus 
+
+|Member|
+|:---|
+|notStarted|
+|current| 
+|completed| 
+|failed|
+|unknownFutureValue|
+
+### <a name="subjectrightsrequeststatus-values"></a>valores subjectRightsRequestStatus 
+
+|Member|
+|:---|
+|active|
+|closed|
+|unknownFutureValue|
+
+### <a name="subjectrightsrequesttype-values"></a>valores subjectRightsRequestType 
+
+|Member|
+|:---|
+|export|
+|delete|
+|access|
+|tagForAction|
+|unknownFutureValue|
+
+### <a name="datasubjecttype-values"></a>valores dataSubjectType 
+
+|Member|
+|:---|
+|customer|
+|currentEmployee|
+|formerEmployee|
+|prospectiveEmployee|
+|student|
+|teacher|
+|faculty|
+|other|
 |unknownFutureValue|

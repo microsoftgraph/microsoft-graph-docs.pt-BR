@@ -2,15 +2,15 @@
 title: Tipo de recurso deviceManagementExchangeConnector
 description: Entidade que representa uma conexão a um ambiente do Exchange.
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 88a0351a6ffb0c5566e9ed44be19d3c701645178
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: b2a44fc19cb31e9b7edcd441657b773f628dd43e
+ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59089428"
+ms.lasthandoff: 10/18/2021
+ms.locfileid: "60449310"
 ---
 # <a name="devicemanagementexchangeconnector-resource-type"></a>Tipo de recurso deviceManagementExchangeConnector
 
@@ -70,7 +70,6 @@ Veja a seguir uma representação JSON do recurso.
   "exchangeOrganization": "String"
 }
 ```
-
 
 
 

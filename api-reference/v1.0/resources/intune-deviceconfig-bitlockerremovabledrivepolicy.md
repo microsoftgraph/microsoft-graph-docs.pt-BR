@@ -2,15 +2,15 @@
 title: Tipo de recurso bitLockerRemovableDrivePolicy
 description: Políticas da unidade removível do BitLocker.
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 9c7ab51d290406bfd9c18d793a77b0b116706110
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: f6008e2795717f2fe3134c2158997a367008f33c
+ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59139803"
+ms.lasthandoff: 10/18/2021
+ms.locfileid: "60454072"
 ---
 # <a name="bitlockerremovabledrivepolicy-resource-type"></a>Tipo de recurso bitLockerRemovableDrivePolicy
 
@@ -45,7 +45,6 @@ Veja a seguir uma representação JSON do recurso.
   "blockCrossOrganizationWriteAccess": true
 }
 ```
-
 
 
 

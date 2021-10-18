@@ -5,12 +5,12 @@ author: mahage-msft
 ms.localizationpriority: medium
 ms.prod: ediscovery
 doc_type: resourcePageType
-ms.openlocfilehash: 8c38006d4794463fd7960706e0afa1320302321f
-ms.sourcegitcommit: 94dc71a6d4fbdc46f2681a1add13416bc9b4a6e9
+ms.openlocfilehash: f1acccc8b6fd297827386c43829b731fcf5c8475
+ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/05/2021
-ms.locfileid: "60115281"
+ms.lasthandoff: 10/18/2021
+ms.locfileid: "60449450"
 ---
 # <a name="case-resource-type"></a>tipo de recurso case
 
@@ -44,9 +44,9 @@ No contexto da Descoberta eDiscovery, contém custodiantes, regiões, coleções
 | [Listar reviewSets](../api/ediscovery-case-list-reviewsets.md)   | [coleção microsoft.graph.ediscovery.reviewSet](../resources/ediscovery-reviewset.md) | Obter a lista de [reviewSets](../resources/ediscovery-reviewset.md) de um **objeto case.**|
 | [Criar reviewSet](../api/ediscovery-case-post-reviewsets.md)  | [microsoft.graph.ediscovery.reviewSet](../resources/ediscovery-reviewset.md)           | Crie um novo [objeto reviewSet.](../resources/ediscovery-reviewset.md) O corpo da solicitação contém o nome de exibição do conjunto de revisão, que é a única propriedade writable.|
 | Configurações de caso |
-| [Obter configurações](../api/ediscovery-settings-get.md)|[microsoft.graph.ediscovery.settings](../resources/ediscovery-settings.md)|Leia as propriedades e as relações de um [objeto microsoft.graph.ediscovery.settings.](../resources/ediscovery-settings.md) |
-| [Atualizar configurações](../api/ediscovery-settings-update.md)|[microsoft.graph.ediscovery.settings](../resources/ediscovery-settings.md)|Atualize as propriedades de [um objeto microsoft.graph.ediscovery.settings.](../resources/ediscovery-settings.md) |
-| [resetToDefault](../api/ediscovery-settings-resettodefault.md)|Nenhum|Redefinir todas as configurações para os valores padrão. |
+| [Obter caseSettings](../api/ediscovery-casesettings-get.md)|[microsoft.graph.ediscovery.caseSettings](../resources/ediscovery-casesettings.md)|Leia as propriedades e as relações de um [objeto microsoft.graph.ediscovery.caseSettings.](../resources/ediscovery-casesettings.md) |
+| [Atualizar caseSettings](../api/ediscovery-casesettings-update.md)|[microsoft.graph.ediscovery.caseSsettings](../resources/ediscovery-casesettings.md)|Atualize as propriedades de [um objeto microsoft.graph.ediscovery.caseSettings.](../resources/ediscovery-casesettings.md) |
+| [resetToDefault](../api/ediscovery-casesettings-resettodefault.md)|Nenhum|Redefinir todas as configurações para os valores padrão. |
 | Coleções de origem |
 | [Listar sourceCollections](../api/ediscovery-case-list-sourcecollections.md)|[coleção microsoft.graph.ediscovery.sourceCollection](../resources/ediscovery-sourcecollection.md)|Obter a [sourceCollection](../resources/ediscovery-sourcecollection.md) de um **objeto case.**|
 | [Criar sourceCollection](../api/ediscovery-case-post-sourcecollections.md)|[microsoft.graph.ediscovery.sourceCollection](../resources/ediscovery-sourcecollection.md)|Crie um novo **objeto sourceCollection.**|
@@ -63,7 +63,7 @@ No contexto da Descoberta eDiscovery, contém custodiantes, regiões, coleções
 |createdBy|[identitySet](/graph/api/resources/identityset)|O usuário que criou o caso.|
 |createdDateTime|DateTimeOffset|A data e a hora em que a entidade foi criada. O tipo Timestamp representa informações de data e hora usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite UTC em 1 de janeiro de 2014 é `2014-01-01T00:00:00Z`|
 |description|Cadeia de caracteres|A descrição do caso.|
-|displayName|String|O nome do caso.|
+|displayName|Cadeia de caracteres|O nome do caso.|
 |externalId|Cadeia de caracteres|O número de caso externo para referência do cliente.|
 |id|Cadeia de caracteres| A ID do caso de Descoberta e. Somente leitura. |
 |lastModifiedBy|[identitySet](/graph/api/resources/identityset)|O último usuário que modificou a entidade.|
@@ -90,7 +90,7 @@ No contexto da Descoberta eDiscovery, contém custodiantes, regiões, coleções
 |noncustodialDataSources|[coleção microsoft.graph.ediscovery.noncustodialDataSource](../resources/ediscovery-noncustodialdatasource.md)| Retorna uma lista de objetos **case noncustodialDataSource** para este **caso**.  Anulável. |
 |operations|[coleção microsoft.graph.ediscovery.caseOperation](../resources/ediscovery-caseoperation.md)| Retorna uma lista de objetos **de operação de** caso para este **caso**. Anulável. |
 |reviewSets|[coleção microsoft.graph.ediscovery.reviewSet](../resources/ediscovery-reviewset.md)| Retorna uma lista de **objetos reviewSet** no caso. Somente leitura. Anulável. |
-|Settings|[coleção microsoft.graph.ediscovery.settings](../resources/ediscovery-settings.md)| Retorna uma lista **de objetos de configurações** no caso. Somente leitura. Anulável. |
+|caseSettings|[coleção microsoft.graph.ediscovery.caseSettings](../resources/ediscovery-casesettings.md)| Retorna uma lista **de objetos de configurações** no caso. Somente leitura. Anulável. |
 |sourceCollections|[coleção microsoft.graph.ediscovery.sourceCollection](../resources/ediscovery-sourcecollection.md)|Retorna uma lista de **objetos sourceCollection** associados a esse caso.|
 |categorias|[coleção microsoft.graph.ediscovery.tag](../resources/ediscovery-tag.md)|Retorna uma lista **de objetos de** marca associados a esse caso.|
 

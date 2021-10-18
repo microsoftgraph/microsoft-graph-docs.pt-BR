@@ -2,15 +2,15 @@
 title: Excluir windows81CompliancePolicy
 description: Exclui windows81CompliancePolicy.
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: ee8c3074abd530b6ee1c7ebd4220740126d0a2ae
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: ec3dcf37db60b49deecfe2aeec688417313962a1
+ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59147280"
+ms.lasthandoff: 10/18/2021
+ms.locfileid: "60447703"
 ---
 # <a name="delete-windows81compliancepolicy"></a>Excluir windows81CompliancePolicy
 
@@ -63,7 +63,6 @@ Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado a
 ``` http
 HTTP/1.1 204 No Content
 ```
-
 
 
 

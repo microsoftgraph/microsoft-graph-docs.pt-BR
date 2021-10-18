@@ -2,15 +2,15 @@
 title: Atualizar detectedApp
 description: Atualizar as propriedades de um objeto detectedApp.
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 65928768e80747fd982400124fbf432f6bcad4d5
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 1b033b5844b377dea91dab62e1d9d5fa2b00660e
+ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59022202"
+ms.lasthandoff: 10/18/2021
+ms.locfileid: "60453783"
 ---
 # <a name="update-detectedapp"></a>Atualizar detectedApp
 
@@ -25,9 +25,9 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 |Tipo de permissão|Permissões (da com menos para a com mais privilégios)|
 |:---|:---|
-|Delegada (conta corporativa ou de estudante)|DeviceManagementServiceConfig.ReadWrite.All, DeviceManagementConfiguration.ReadWrite.All, DeviceManagementManagedDevices.ReadWrite.All|
-|Delegada (conta pessoal da Microsoft)|Sem suporte.|
-|Aplicativo|DeviceManagementServiceConfig.ReadWrite.All, DeviceManagementConfiguration.ReadWrite.All, DeviceManagementManagedDevices.ReadWrite.All|
+|Delegado (conta corporativa ou de estudante)|DeviceManagementManagedDevices.ReadWrite.All|
+|Delegado (conta pessoal da Microsoft)|Sem suporte.|
+|Aplicativo|DeviceManagementManagedDevices.ReadWrite.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- {
@@ -51,8 +51,8 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar [detecte
 
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|id|String|O identificador exclusivo do aplicativo detectado. Ele é gerado automaticamente pelo Intune no momento em que o aplicativo é criado. Somente leitura.|
-|displayName|Cadeia de caracteres|Nome do aplicativo descoberto. Somente leitura|
+|id|Cadeia de caracteres|O identificador exclusivo do aplicativo detectado. Ele é gerado automaticamente pelo Intune no momento em que o aplicativo é criado. Somente leitura.|
+|displayName|String|Nome do aplicativo descoberto. Somente leitura|
 |version|Cadeia de caracteres|Versão do aplicativo descoberto. Somente leitura|
 |sizeInByte|Int64|Tamanho do aplicativo descoberto, em bytes. Somente leitura|
 |deviceCount|Int32|O número de dispositivos que instalaram esse aplicativo|
@@ -96,7 +96,6 @@ Content-Length: 216
   "deviceCount": 11
 }
 ```
-
 
 
 

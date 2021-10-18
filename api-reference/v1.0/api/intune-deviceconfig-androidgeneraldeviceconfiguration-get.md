@@ -2,15 +2,15 @@
 title: Acessar androidGeneralDeviceConfiguration
 description: Leia as propriedades e relações do objeto androidGeneralDeviceConfiguration.
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 3b2972a80b478f56545eebea91c240d859c59e09
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 890134c12d3795930bf05cee490cf335165ee70d
+ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59140434"
+ms.lasthandoff: 10/18/2021
+ms.locfileid: "60454667"
 ---
 # <a name="get-androidgeneraldeviceconfiguration"></a>Acessar androidGeneralDeviceConfiguration
 
@@ -168,7 +168,6 @@ Content-Length: 3414
   }
 }
 ```
-
 
 
 

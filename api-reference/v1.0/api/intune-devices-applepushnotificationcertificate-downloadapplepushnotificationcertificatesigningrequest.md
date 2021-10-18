@@ -2,15 +2,15 @@
 title: Função downloadApplePushNotificationCertificateSigningRequest
 description: Baixa a solicitação de assinatura de certificado de notificação por push da Apple
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 935dbfae5992707b667f767f009d199d984d7991
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 90f3bb1ef89ebe84025b01154946f151e2e1f3e9
+ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59073265"
+ms.lasthandoff: 10/18/2021
+ms.locfileid: "60452563"
 ---
 # <a name="downloadapplepushnotificationcertificatesigningrequest-function"></a>Função downloadApplePushNotificationCertificateSigningRequest
 
@@ -25,9 +25,9 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 |Tipo de permissão|Permissões (da com menos para a com mais privilégios)|
 |:---|:---|
-|Delegada (conta corporativa ou de estudante)|DeviceManagementServiceConfig.ReadWrite.All, DeviceManagementConfiguration.ReadWrite.All|
-|Delegada (conta pessoal da Microsoft)|Sem suporte.|
-|Aplicativo|DeviceManagementServiceConfig.ReadWrite.All, DeviceManagementConfiguration.ReadWrite.All|
+|Delegado (conta corporativa ou de estudante)|DeviceManagementServiceConfig.ReadWrite.All|
+|Delegado (conta pessoal da Microsoft)|Sem suporte.|
+|Aplicativo|DeviceManagementServiceConfig.ReadWrite.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- {
@@ -69,7 +69,6 @@ Content-Length: 85
   "value": "Download Apple Push Notification Certificate Signing Request value"
 }
 ```
-
 
 
 

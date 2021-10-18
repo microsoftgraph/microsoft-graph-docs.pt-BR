@@ -2,15 +2,15 @@
 title: Tipo de número deviceManagementPartnerAppType
 description: Tipo de aplicativo parceiro.
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 28a07e0db3eccb051d0cea024debe0cbfbc5012a
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 8d156c6fa9c71e6aa020e40e2712d4d92ff6d8ca
+ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59062534"
+ms.lasthandoff: 10/18/2021
+ms.locfileid: "60457614"
 ---
 # <a name="devicemanagementpartnerapptype-enum-type"></a>Tipo de número deviceManagementPartnerAppType
 
@@ -24,9 +24,8 @@ Tipo de aplicativo parceiro.
 |Membro|Valor|Descrição|
 |:---|:---|:---|
 |desconhecido|0|O tipo de aplicativo parceiro é desconhecido.|
-|singleTenantApp|1|Partner App é locatário único no AAD.|
+|singleTenantApp|1|Partner App é locatário único AAD.|
 |multiTenantApp|2|Partner App é multi locatário no AAD.|
-
 
 
 

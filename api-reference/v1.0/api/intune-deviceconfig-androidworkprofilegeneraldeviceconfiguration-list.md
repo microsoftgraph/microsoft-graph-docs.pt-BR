@@ -2,15 +2,15 @@
 title: Listar androidWorkProfileGeneralDeviceConfigurations
 description: Listar propriedades e relações dos objetos androidWorkProfileGeneralDeviceConfiguration.
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: b35819b465479f49b9e7b30f4f0a60e1cb15a704
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 5224e1e6914ec2d24e356e26fabc7618c7a01b12
+ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59140238"
+ms.lasthandoff: 10/18/2021
+ms.locfileid: "60452577"
 ---
 # <a name="list-androidworkprofilegeneraldeviceconfigurations"></a>Listar androidWorkProfileGeneralDeviceConfigurations
 
@@ -113,7 +113,6 @@ Content-Length: 2200
   ]
 }
 ```
-
 
 
 

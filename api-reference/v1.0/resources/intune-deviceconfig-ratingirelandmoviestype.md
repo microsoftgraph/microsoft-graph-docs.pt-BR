@@ -2,15 +2,15 @@
 title: tipo de número ratingIrelandMoviesType
 description: Rótulos de classificação de filmes na Irlanda
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: e7fadbf0b9b62f8daf1f50002dc95a9ca7a912af
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 34b4b1820db1543ac8646558f0c12d05e489da2f
+ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59142660"
+ms.lasthandoff: 10/18/2021
+ms.locfileid: "60449359"
 ---
 # <a name="ratingirelandmoviestype-enum-type"></a>tipo de número ratingIrelandMoviesType
 
@@ -28,10 +28,9 @@ Rótulos de classificação de filmes na Irlanda
 |geral|2|Adequado para filhos de estudante com idade avançada|
 |parentalGuidance|3|A classificação PG aconselha orientação dos pais|
 |agesAbove12|4 |A classificação 12A é adequada para visualizadores de 12 ou mais|
-|agesAbove15|5 |A classificação 15A é adequada para visualizadores com 15 ou mais anos|
+|agesAbove15|5|A classificação 15A é adequada para visualizadores com 15 ou mais anos|
 |agesAbove16|6 |A classificação 16 é adequada para visualizadores com 16 ou mais anos|
 |adults|7 |A classificação 18, adequada somente para adultos|
-
 
 
 

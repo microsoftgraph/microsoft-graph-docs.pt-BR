@@ -2,15 +2,15 @@
 title: Ação locateDevice
 description: Localizar um dispositivo
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: a51d15c5fe296b46264538e4354fd21f509401b1
-ms.sourcegitcommit: 08e9b0bac39c1b1d2c8a79539d24aaa93364baf2
+ms.openlocfilehash: d488a7247d898f7a45ddf4f227648f12a2d2b68c
+ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/24/2021
-ms.locfileid: "59765869"
+ms.lasthandoff: 10/18/2021
+ms.locfileid: "60455664"
 ---
 # <a name="locatedevice-action"></a>Ação locateDevice
 
@@ -18,7 +18,7 @@ Namespace: microsoft.graph
 
 > **Observação:** A API do Microsoft Graph para Intune requer uma [licença ativa do Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
 
-Localize um dispositivo.
+Localizar um dispositivo
 
 ## <a name="prerequisites"></a>Pré-requisitos
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
@@ -65,7 +65,6 @@ Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado a
 ``` http
 HTTP/1.1 204 No Content
 ```
-
 
 
 

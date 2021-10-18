@@ -2,15 +2,15 @@
 title: Tipo de número deviceManagementReportFileFormat
 description: Valores possíveis para o formato de arquivo de um relatório
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 09442debb24ecb6e1b0577e789730a2a96c113ee
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: bec897a1ba9bd8e79373aa3a4e28761b86748d64
+ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59036337"
+ms.lasthandoff: 10/18/2021
+ms.locfileid: "60448910"
 ---
 # <a name="devicemanagementreportfileformat-enum-type"></a>Tipo de número deviceManagementReportFileFormat
 
@@ -25,7 +25,6 @@ Valores possíveis para o formato de arquivo de um relatório
 |:---|:---|:---|
 |csv|0|Valores separados por vírgulas|
 |pdf|1|Formato de documento portátil|
-
 
 
 

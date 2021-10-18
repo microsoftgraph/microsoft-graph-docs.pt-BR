@@ -2,15 +2,15 @@
 title: ratingAustraliaTelevisionType tipo de número
 description: Rótulos de classificação de conteúdo de TV na Austrália
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 616d0e35a5c7e8be95b069c4337766d17c40c9fb
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 355de37de884852e6148199ef2d37b41ef491d40
+ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59053004"
+ms.lasthandoff: 10/18/2021
+ms.locfileid: "60445511"
 ---
 # <a name="ratingaustraliatelevisiontype-enum-type"></a>ratingAustraliaTelevisionType tipo de número
 
@@ -28,11 +28,10 @@ Rótulos de classificação de conteúdo de TV na Austrália
 |pré-alunos|2|A classificação P destina-se a pré-alunos|
 |children|3|A classificação C destina-se a crianças menores de 14 anos|
 |geral|4 |A classificação G é adequada para todas as idades|
-|parentalGuidance|5 |A classificação pg é recomendada para visualizadores mais novos|
+|parentalGuidance|5|A classificação pg é recomendada para visualizadores mais novos|
 |mature|6 |A classificação M é recomendada para visualizadores com mais de 15 anos|
 |agesAbove15|7 |A classificação MA15+ não é adequada para visualizadores com menos de 15 anos|
 |agesAbove15AdultViolence|8 |A classificação AV15+ não é adequada para visualizadores com menos de 15 anos, específico para a violência de adulto|
-
 
 
 

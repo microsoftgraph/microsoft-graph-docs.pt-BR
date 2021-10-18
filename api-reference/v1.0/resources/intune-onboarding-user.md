@@ -2,15 +2,15 @@
 title: Tipo de recurso de usuário
 description: Ainda não documentado
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 064fe13e30d578b40bf5b387e8f4da10873bf36e
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 6056076d9e1d27ca6f8641c583e77feb9604c91b
+ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59015543"
+ms.lasthandoff: 10/18/2021
+ms.locfileid: "60454767"
 ---
 # <a name="user-resource-type"></a>Tipo de recurso de usuário
 
@@ -53,7 +53,6 @@ Veja a seguir uma representação JSON do recurso.
   "deviceEnrollmentLimit": 1024
 }
 ```
-
 
 
 

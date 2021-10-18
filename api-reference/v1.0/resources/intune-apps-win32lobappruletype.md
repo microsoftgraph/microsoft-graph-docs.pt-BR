@@ -2,15 +2,15 @@
 title: Tipo denum win32LobAppRuleType
 description: Contém tipos de regra para aplicativos LOB win32.
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: c3e827f11478b0d6ad89c917be5bfe2118ba2e4b
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 2334bca77cc4b2ea292c8c529d6e4c5f3152cc4d
+ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59067329"
+ms.lasthandoff: 10/18/2021
+ms.locfileid: "60449030"
 ---
 # <a name="win32lobappruletype-enum-type"></a>Tipo denum win32LobAppRuleType
 
@@ -25,7 +25,6 @@ Contém tipos de regra para aplicativos LOB win32.
 |:---|:---|:---|
 |detection|0|Regra de detecção.|
 |requirement|1|Regra de requisito.|
-
 
 
 

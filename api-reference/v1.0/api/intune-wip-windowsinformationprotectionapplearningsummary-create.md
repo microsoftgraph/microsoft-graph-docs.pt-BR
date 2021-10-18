@@ -2,15 +2,15 @@
 title: Criar windowsInformationProtectionAppLearningSummary
 description: Criar um novo objeto windowsInformationProtectionAppLearningSummary.
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 8172403796f7c893e8026929a2dbb14ed4bd029e
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 80a381e214af35b15f82ed449effa4a7adf8831a
+ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59144053"
+ms.lasthandoff: 10/18/2021
+ms.locfileid: "60454079"
 ---
 # <a name="create-windowsinformationprotectionapplearningsummary"></a>Criar windowsInformationProtectionAppLearningSummary
 
@@ -51,7 +51,7 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar windowsI
 
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|id|Cadeia de caracteres|Identificador exclusivo do WindowsInformationProtectionAppLearningSummary.|
+|id|String|Identificador exclusivo do WindowsInformationProtectionAppLearningSummary.|
 |applicationName|Cadeia de caracteres|Nome do Aplicativo|
 |applicationType|[applicationType](../resources/intune-wip-applicationtype.md)|Tipo de aplicativo. Os valores possíveis são: `universal` e `desktop`.|
 |deviceCount|Int32|Contagem de dispositivos|
@@ -93,7 +93,6 @@ Content-Length: 240
   "deviceCount": 11
 }
 ```
-
 
 
 

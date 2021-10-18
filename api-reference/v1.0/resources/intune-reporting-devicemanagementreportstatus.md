@@ -2,15 +2,15 @@
 title: Tipo de número deviceManagementReportStatus
 description: Status possíveis associados a um relatório gerado
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: d64e43413e8451d7fa8d432b6ec1a19e07582923
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: e01484e0bf3422633128492e60d23db8c178cc3e
+ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59098535"
+ms.lasthandoff: 10/18/2021
+ms.locfileid: "60448896"
 ---
 # <a name="devicemanagementreportstatus-enum-type"></a>Tipo de número deviceManagementReportStatus
 
@@ -28,7 +28,6 @@ Status possíveis associados a um relatório gerado
 |inProgress|2|A geração de relatório está em andamento|
 |completed|3|A geração de relatório é concluída|
 |failed|4 |Falha na geração de relatório|
-
 
 
 

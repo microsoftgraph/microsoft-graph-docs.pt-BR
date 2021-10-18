@@ -2,15 +2,15 @@
 title: Tipo de recurso win32LobAppPowerShellScriptRule
 description: Um tipo complexo para armazenar os dados da regra de script do PowerShell para um aplicativo LOB win32.
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: ffd41dc3de305396a7596e6fb0569982ac489bb5
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: cdbb4c9fc9ec0c3a17e10e79ba782d61a562f9fc
+ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59021705"
+ms.lasthandoff: 10/18/2021
+ms.locfileid: "60446410"
 ---
 # <a name="win32lobapppowershellscriptrule-resource-type"></a>Tipo de recurso win32LobAppPowerShellScriptRule
 
@@ -27,7 +27,7 @@ Herda de [win32LobAppRule](../resources/intune-apps-win32lobapprule.md)
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
 |ruleType|[win32LobAppRuleType](../resources/intune-apps-win32lobappruletype.md)|O tipo de regra que indica a finalidade da regra. Herdado [de win32LobAppRule](../resources/intune-apps-win32lobapprule.md). Os valores possíveis são: `detection` e `requirement`.|
-|displayName|Cadeia de caracteres|O nome de exibição da regra. Não especifique esse valor se a regra for usada para detecção.|
+|displayName|String|O nome de exibição da regra. Não especifique esse valor se a regra for usada para detecção.|
 |enforceSignatureCheck|Booliano|Um valor que indica se uma verificação de assinatura é imposta.|
 |runAs32Bit|Booliano|Um valor que indica se o script deve ser executado como 32 bits.|
 |runAsAccount|[runAsAccountType](../resources/intune-apps-runasaccounttype.md)|O contexto de execução do script. Não especifique esse valor se a regra for usada para detecção. As regras de detecção de script serão executados no mesmo contexto que o contexto de instalação do aplicativo associado. Os valores possíveis são: `system` e `user`.|
@@ -60,7 +60,6 @@ Veja a seguir uma representação JSON do recurso.
   "comparisonValue": "String"
 }
 ```
-
 
 
 

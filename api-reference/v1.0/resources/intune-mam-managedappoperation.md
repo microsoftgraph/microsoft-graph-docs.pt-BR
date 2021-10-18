@@ -2,15 +2,15 @@
 title: Tipo de recurso managedAppOperation
 description: Representa uma operação aplicada a um registro de aplicativo.
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 01036699ccafdc177faa8b9abf2192604cc86766
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 12f9e5aaecc109ad219f1b54929b59ab27aaa344
+ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59142562"
+ms.lasthandoff: 10/18/2021
+ms.locfileid: "60454156"
 ---
 # <a name="managedappoperation-resource-type"></a>Tipo de recurso managedAppOperation
 
@@ -32,10 +32,10 @@ Representa uma operação aplicada a um registro de aplicativo.
 ## <a name="properties"></a>Propriedades
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|displayName|String|O nome da operação.|
+|displayName|Cadeia de caracteres|O nome da operação.|
 |lastModifiedDateTime|DateTimeOffset|Última vez em que a operação de aplicativo foi modificada.|
-|state|String|O estado atual da operação|
-|id|String|Chave da entidade.|
+|state|Cadeia de caracteres|O estado atual da operação|
+|id|Cadeia de caracteres|Chave da entidade.|
 |versão|String|Versão da entidade.|
 
 ## <a name="relationships"></a>Relações
@@ -59,7 +59,6 @@ Veja a seguir uma representação JSON do recurso.
   "version": "String"
 }
 ```
-
 
 
 

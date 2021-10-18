@@ -2,15 +2,15 @@
 title: Tipo de número deviceManagementExportJobLocalizationType
 description: Configura como o trabalho de exportação solicitado é localizado
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: e15e66067cd627ad2dcc37f76feecaec3bb29ad8
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: bd7ea9ac34125224c1ca54270cc919807dfafb3e
+ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59036344"
+ms.lasthandoff: 10/18/2021
+ms.locfileid: "60448917"
 ---
 # <a name="devicemanagementexportjoblocalizationtype-enum-type"></a>Tipo de número deviceManagementExportJobLocalizationType
 
@@ -25,7 +25,6 @@ Configura como o trabalho de exportação solicitado é localizado
 |:---|:---|:---|
 |localizedValuesAsAdditionalColumn|0|Configura o trabalho de exportação para expor valores localizados como uma coluna adicional|
 |replaceLocalizableValues|1|Configura o trabalho de exportação para substituir valores enumerais por seus valores localizados|
-
 
 
 

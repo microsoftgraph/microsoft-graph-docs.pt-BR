@@ -2,15 +2,15 @@
 title: Tipo de recurso iosManagedAppProtection
 description: Política usada para definir configurações de gerenciamento detalhadas direcionadas a grupos de segurança específicos e para um conjunto especificado de aplicativos em um dispositivo iOS
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: b55a28e6be1a9383d7384649e142ac793467c685
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 747e4aa8d370c3befe462b8b126daa9f8e5dfd82
+ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59113669"
+ms.lasthandoff: 10/18/2021
+ms.locfileid: "60449478"
 ---
 # <a name="iosmanagedappprotection-resource-type"></a>Tipo de recurso iosManagedAppProtection
 
@@ -39,7 +39,7 @@ Herda de [targetedManagedAppProtection](../resources/intune-mam-targetedmanageda
 |description|String|A descrição da política. Herdado de [managedAppPolicy](../resources/intune-mam-managedapppolicy.md)|
 |createdDateTime|DateTimeOffset|A data e a hora da criação da política. Herdado de [managedAppPolicy](../resources/intune-mam-managedapppolicy.md)|
 |lastModifiedDateTime|DateTimeOffset|Última vez em que a política foi modificada. Herdado de [managedAppPolicy](../resources/intune-mam-managedapppolicy.md)|
-|id|String|Chave da entidade. Herdado de [managedAppPolicy](../resources/intune-mam-managedapppolicy.md)|
+|id|Cadeia de caracteres|Chave da entidade. Herdado de [managedAppPolicy](../resources/intune-mam-managedapppolicy.md)|
 |version|String|Versão da entidade. Herdado de [managedAppPolicy](../resources/intune-mam-managedapppolicy.md)|
 |periodOfflineBeforeAccessCheck|Duração|Período após o qual o acesso é verificado quando o dispositivo não está conectado à Internet. Herdado de [managedAppProtection](../resources/intune-mam-managedappprotection.md)|
 |periodOnlineBeforeAccessCheck|Duração|Período após o qual o acesso é verificado quando o dispositivo está conectado à Internet. Herdado de [managedAppProtection](../resources/intune-mam-managedappprotection.md)|
@@ -73,7 +73,7 @@ Herda de [targetedManagedAppProtection](../resources/intune-mam-targetedmanageda
 |minimumRequiredSdkVersion|String|Versões anteriores à versão especificada impedirão o aplicativo gerenciado de acessar dados da empresa.|
 |deployedAppCount|Int32|Contagem de aplicativos em que a política atual é implantada.|
 |faceIdBlocked|Boolean|Indica se será permitido o uso do FaceID em vez de um pin se PinRequired estiver definido como True.|
-|customBrowserProtocol|Cadeia de caracteres|Um protocolo de navegador personalizado para abrir o weblink no iOS. Quando essa propriedade é configurada, ManagedBrowserToOpenLinksRequired deve ser true.|
+|customBrowserProtocol|String|Um protocolo de navegador personalizado para abrir o weblink no iOS. Quando essa propriedade é configurada, ManagedBrowserToOpenLinksRequired deve ser true.|
 
 ## <a name="relationships"></a>Relações
 |Relação|Tipo|Descrição|
@@ -136,7 +136,6 @@ Veja a seguir uma representação JSON do recurso.
   "customBrowserProtocol": "String"
 }
 ```
-
 
 
 

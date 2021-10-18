@@ -2,15 +2,15 @@
 title: Atualizar managedDeviceMobileAppConfigurationUserStatus
 description: Atualizar as propriedades de um objeto managedDeviceMobileAppConfigurationUserStatus.
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 60fcafb264aec21316e51b766dbee0a888717f06
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 94452dea82b3857ecb394a251eb798a24d34d5c5
+ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59073706"
+ms.lasthandoff: 10/18/2021
+ms.locfileid: "60445925"
 ---
 # <a name="update-manageddevicemobileappconfigurationuserstatus"></a>Atualizar managedDeviceMobileAppConfigurationUserStatus
 
@@ -25,8 +25,8 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 |Tipo de permissão|Permissões (da com menos para a com mais privilégios)|
 |:---|:---|
-|Delegada (conta corporativa ou de estudante)|DeviceManagementApps.ReadWrite.All|
-|Delegada (conta pessoal da Microsoft)|Sem suporte.|
+|Delegado (conta corporativa ou de estudante)|DeviceManagementApps.ReadWrite.All|
+|Delegado (conta pessoal da Microsoft)|Sem suporte.|
 |Aplicativo|DeviceManagementApps.ReadWrite.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
@@ -99,7 +99,6 @@ Content-Length: 355
   "userPrincipalName": "User Principal Name value"
 }
 ```
-
 
 
 

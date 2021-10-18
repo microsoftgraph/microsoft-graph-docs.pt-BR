@@ -2,15 +2,15 @@
 title: Tipo de recurso windowsInformationProtectionDataRecoveryCertificate
 description: DataRecoveryCertificate da proteção de informações do Windows
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 99ef42128bd984a77b5a0e72ba1f86485b221e14
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 1f1c018f84840caa53dda967e4a4914d080c5b86
+ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59062555"
+ms.lasthandoff: 10/18/2021
+ms.locfileid: "60454781"
 ---
 # <a name="windowsinformationprotectiondatarecoverycertificate-resource-type"></a>Tipo de recurso windowsInformationProtectionDataRecoveryCertificate
 
@@ -47,7 +47,6 @@ Veja a seguir uma representação JSON do recurso.
   "certificate": "binary"
 }
 ```
-
 
 
 

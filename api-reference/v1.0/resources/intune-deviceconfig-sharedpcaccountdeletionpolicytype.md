@@ -2,15 +2,15 @@
 title: Tipo de número sharedPCAccountDeletionPolicyType
 description: Valores possíveis para quando contas são excluídas em um computador compartilhado.
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 621775b9e3ba10d13cbad8d96f5ffda70834cb43
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: f41cfc20132577d11d94cdd66d28cdccfa203b4f
+ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59067161"
+ms.lasthandoff: 10/18/2021
+ms.locfileid: "60457299"
 ---
 # <a name="sharedpcaccountdeletionpolicytype-enum-type"></a>Tipo de número sharedPCAccountDeletionPolicyType
 
@@ -26,7 +26,6 @@ Valores possíveis para quando contas são excluídas em um computador compartil
 |immediate|0|Exclua imediatamente.|
 |diskSpaceThreshold|1|Excluir no limite de espaço em disco.|
 |diskSpaceThresholdOrInactiveThreshold|2|Excluir no limite de espaço em disco ou no limite inativo.|
-
 
 
 

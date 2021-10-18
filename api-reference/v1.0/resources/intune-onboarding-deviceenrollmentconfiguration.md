@@ -2,15 +2,15 @@
 title: Tipo de recurso deviceEnrollmentConfiguration
 description: A Classe Base de Configuração de Registro de Dispositivo
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 463ce978f8bad54ba36c662efc8e21a97e8e9c84
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 673179b3009a0bd3650e6a8c389cfc766988d9dc
+ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59098640"
+ms.lasthandoff: 10/18/2021
+ms.locfileid: "60450183"
 ---
 # <a name="deviceenrollmentconfiguration-resource-type"></a>Tipo de recurso deviceEnrollmentConfiguration
 
@@ -31,9 +31,9 @@ A Classe Base de Configuração de Registro de Dispositivo
 ## <a name="properties"></a>Propriedades
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|id|String|Identificador exclusivo da conta|
+|id|Cadeia de caracteres|Identificador exclusivo da conta|
 |displayName|String|O nome de exibição da configuração de registro do dispositivo|
-|description|Cadeia de caracteres|A descrição da configuração de registro do dispositivo|
+|description|String|A descrição da configuração de registro do dispositivo|
 |prioridade|Int32|A prioridade é usada quando um usuário existe em vários grupos que são atribuídos à configuração de registro. Os usuários estão sujeitos apenas à configuração com o valor de prioridade mais baixo.|
 |createdDateTime|DateTimeOffset|Hora de data criada no UTC da configuração de registro do dispositivo|
 |lastModifiedDateTime|DateTimeOffset|Última data de modificação no UTC da configuração de registro do dispositivo|
@@ -64,7 +64,6 @@ Veja a seguir uma representação JSON do recurso.
   "version": 1024
 }
 ```
-
 
 
 

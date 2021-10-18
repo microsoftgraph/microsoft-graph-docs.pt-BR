@@ -2,15 +2,15 @@
 title: Tipo de recurso targetedManagedAppProtection
 description: Política usada para definir configurações de gerenciamento detalhadas direcionadas a grupos de segurança específicos
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 379e07e1d0d1ecdbbe5593454b67d455dadcae14
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 602a1c2bacf230704c868b6bb357ef62bb7e8425
+ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59118058"
+ms.lasthandoff: 10/18/2021
+ms.locfileid: "60447365"
 ---
 # <a name="targetedmanagedappprotection-resource-type"></a>Tipo de recurso targetedManagedAppProtection
 
@@ -34,8 +34,8 @@ Herda de [managedAppProtection](../resources/intune-mam-managedappprotection.md)
 ## <a name="properties"></a>Propriedades
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|displayName|Cadeia de caracteres|Nome para exibição da política. Herdado de [managedAppPolicy](../resources/intune-mam-managedapppolicy.md)|
-|description|String|A descrição da política. Herdado de [managedAppPolicy](../resources/intune-mam-managedapppolicy.md)|
+|displayName|String|Nome para exibição da política. Herdado de [managedAppPolicy](../resources/intune-mam-managedapppolicy.md)|
+|description|Cadeia de caracteres|A descrição da política. Herdado de [managedAppPolicy](../resources/intune-mam-managedapppolicy.md)|
 |createdDateTime|DateTimeOffset|A data e a hora da criação da política. Herdado de [managedAppPolicy](../resources/intune-mam-managedapppolicy.md)|
 |lastModifiedDateTime|DateTimeOffset|Última vez em que a política foi modificada. Herdado de [managedAppPolicy](../resources/intune-mam-managedapppolicy.md)|
 |id|String|Chave da entidade. Herdado de [managedAppPolicy](../resources/intune-mam-managedapppolicy.md)|
@@ -123,7 +123,6 @@ Veja a seguir uma representação JSON do recurso.
   "isAssigned": true
 }
 ```
-
 
 
 
