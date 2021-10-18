@@ -2,15 +2,15 @@
 title: Atualizar softwareUpdateStatusSummary
 description: Atualizar as propriedades de um objeto softwareUpdateStatusSummary.
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 53423c22c2e70a30eb0d22db180dea755f611a9a
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: d2f083d5ad694b80d8ea160db8604e48d3f72544
+ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59094930"
+ms.lasthandoff: 10/18/2021
+ms.locfileid: "60435726"
 ---
 # <a name="update-softwareupdatestatussummary"></a>Atualizar softwareUpdateStatusSummary
 
@@ -129,7 +129,6 @@ Content-Length: 567
   "notApplicableUserCount": 6
 }
 ```
-
 
 
 

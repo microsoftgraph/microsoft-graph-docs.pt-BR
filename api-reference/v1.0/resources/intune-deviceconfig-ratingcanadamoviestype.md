@@ -2,15 +2,15 @@
 title: tipo de número ratingCanadaMoviesType
 description: Rótulos de classificação de filmes no Canadá
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 31820cfeb41a39dc47b9beaaaa9fdd6f16077d4e
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: fc078b39518984e5ffb5f5d72fa5517dfabdae7c
+ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59053011"
+ms.lasthandoff: 10/18/2021
+ms.locfileid: "60447393"
 ---
 # <a name="ratingcanadamoviestype-enum-type"></a>tipo de número ratingCanadaMoviesType
 
@@ -28,9 +28,8 @@ Rótulos de classificação de filmes no Canadá
 |geral|2|A classificação G é adequada para todas as idades|
 |parentalGuidance|3|A classificação PG aconselha orientação dos pais|
 |agesAbove14|4 |A classificação 14A é adequada para visualizadores com mais de 14 anos ou mais|
-|agesAbove18|5 |A classificação 18A é adequada para visualizadores acima de 18 ou mais|
+|agesAbove18|5|A classificação 18A é adequada para visualizadores acima de 18 ou mais|
 |restrito|6 |A classificação R é restrita a 18 anos ou mais|
-
 
 
 

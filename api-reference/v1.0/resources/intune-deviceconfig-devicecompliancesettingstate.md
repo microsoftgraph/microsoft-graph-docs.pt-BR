@@ -2,15 +2,15 @@
 title: Tipo de recurso deviceComplianceSettingState
 description: Estado de configuração de conformidade de um determinado dispositivo.
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 495f9feac7db88851006f2d3a2392fd85a4cadb6
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 6f797e2e77eb0e291bdc6b71e14da25f5ef3244d
+ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59072278"
+ms.lasthandoff: 10/18/2021
+ms.locfileid: "60455559"
 ---
 # <a name="devicecompliancesettingstate-resource-type"></a>Tipo de recurso deviceComplianceSettingState
 
@@ -32,7 +32,7 @@ Estado de configuração de conformidade de um determinado dispositivo.
 ## <a name="properties"></a>Propriedades
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|id|String|Chave da entidade|
+|id|Cadeia de caracteres|Chave da entidade|
 |configuração|Cadeia de caracteres|O nome da classe de configuração e o nome da propriedade.|
 |settingName|Cadeia de caracteres|O nome da configuração sendo relatada|
 |deviceId|Cadeia de caracteres|A ID do dispositivo sendo relatada|
@@ -40,7 +40,7 @@ Estado de configuração de conformidade de um determinado dispositivo.
 |userId|Cadeia de caracteres|A ID do usuário sendo relatada|
 |userEmail|Cadeia de caracteres|O endereço de email do usuário que está sendo relatado|
 |userName|Cadeia de caracteres|O nome de usuário que está sendo relatado|
-|userPrincipalName|Cadeia de caracteres|O PrincipalName do usuário que está sendo relatado|
+|userPrincipalName|String|O PrincipalName do usuário que está sendo relatado|
 |deviceModel|Cadeia de caracteres|O modelo do dispositivo que está sendo relatado|
 |state|[complianceStatus](../resources/intune-shared-compliancestatus.md)|O estado de conformidade da configuração. Os valores possíveis são: `unknown`, `notApplicable`, `compliant`, `remediated`, `nonCompliant`, `error`, `conflict`, `notAssigned`.|
 |complianceGracePeriodExpirationDateTime|DateTimeOffset|DateTime em que o período de cortesia de conformidade do dispositivo termina|
@@ -73,7 +73,6 @@ Veja a seguir uma representação JSON do recurso.
   "complianceGracePeriodExpirationDateTime": "String (timestamp)"
 }
 ```
-
 
 
 

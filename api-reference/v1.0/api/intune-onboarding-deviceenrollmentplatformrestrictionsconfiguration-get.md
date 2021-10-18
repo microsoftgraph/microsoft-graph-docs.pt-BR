@@ -2,15 +2,15 @@
 title: Get deviceEnrollmentPlatformRestrictionsConfiguration
 description: Ler propriedades e relações do objeto deviceEnrollmentPlatformRestrictionsConfiguration.
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 135199bb22c94708bb5f7ea5aa3b6e1e519317dc
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: af08dc4e77984ba57160dff068da4048c2397426
+ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59119447"
+ms.lasthandoff: 10/18/2021
+ms.locfileid: "60456246"
 ---
 # <a name="get-deviceenrollmentplatformrestrictionsconfiguration"></a>Get deviceEnrollmentPlatformRestrictionsConfiguration
 
@@ -116,7 +116,6 @@ Content-Length: 1927
   }
 }
 ```
-
 
 
 

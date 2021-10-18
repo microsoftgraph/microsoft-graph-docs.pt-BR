@@ -2,15 +2,15 @@
 title: Criar win32LobApp
 description: Crie um novo objeto win32LobApp.
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 0e958654724250a0a6dd3d4207c61f6754107a42
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 8691d5f5e4cf28bf0debcca247c288f50db522bf
+ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59099998"
+ms.lasthandoff: 10/18/2021
+ms.locfileid: "60452605"
 ---
 # <a name="create-win32lobapp"></a>Criar win32LobApp
 
@@ -51,8 +51,8 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar o win32L
 
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|id|String|Chave da entidade. Herdado de [mobileApp](../resources/intune-apps-mobileapp.md)|
-|displayName|String|O título do aplicativo importado ou definido pelo administrador. Herdado de [mobileApp](../resources/intune-apps-mobileapp.md)|
+|id|Cadeia de caracteres|Chave da entidade. Herdado de [mobileApp](../resources/intune-apps-mobileapp.md)|
+|displayName|Cadeia de caracteres|O título do aplicativo importado ou definido pelo administrador. Herdado de [mobileApp](../resources/intune-apps-mobileapp.md)|
 |description|Cadeia de caracteres|A descrição do aplicativo. Herdado de [mobileApp](../resources/intune-apps-mobileapp.md)|
 |publicador|String|O publicador do aplicativo. Herdado de [mobileApp](../resources/intune-apps-mobileapp.md)|
 |largeIcon|[mimeContent](../resources/intune-shared-mimecontent.md)|O ícone grande, a ser exibido nos detalhes do aplicativo e usado para o carregamento do ícone. Herdado de [mobileApp](../resources/intune-apps-mobileapp.md)|
@@ -68,7 +68,7 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar o win32L
 |committedContentVersion|String|A versão do conteúdo interno confirmado. Herdado de [mobileLobApp](../resources/intune-apps-mobilelobapp.md)|
 |fileName|String|O nome do arquivo do aplicativo Lob principal. Herdado de [mobileLobApp](../resources/intune-apps-mobilelobapp.md)|
 |size|Int64|O tamanho total, incluindo todos os arquivos carregados. Herdado de [mobileLobApp](../resources/intune-apps-mobilelobapp.md)|
-|installCommandLine|String|A linha de comando para instalar este aplicativo|
+|installCommandLine|Cadeia de caracteres|A linha de comando para instalar este aplicativo|
 |uninstallCommandLine|Cadeia de caracteres|A linha de comando para desinstalar esse aplicativo|
 |applicableArchitectures|[windowsArchitecture](../resources/intune-apps-windowsarchitecture.md)|As arquiteturas do Windows nas quais este aplicativo pode ser executado. Os valores possíveis são: `none`, `x86`, `x64`, `arm`, `neutral`.|
 |minimumFreeDiskSpaceInMB|Int32|O valor do espaço em disco gratuito mínimo necessário para instalar este aplicativo.|
@@ -79,8 +79,8 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar o win32L
 |installExperience|[win32LobAppInstallExperience](../resources/intune-apps-win32lobappinstallexperience.md)|A experiência de instalação deste aplicativo.|
 |returnCodes|[Coleção win32LobAppReturnCode](../resources/intune-apps-win32lobappreturncode.md)|Os códigos de retorno para o comportamento pós-instalação.|
 |msiInformation|[win32LobAppMsiInformation](../resources/intune-apps-win32lobappmsiinformation.md)|O MSI detalha se esse aplicativo Win32 é um aplicativo MSI.|
-|setupFilePath|String|O caminho relativo do arquivo de instalação no pacote Win32LobApp criptografado.|
-|minimumSupportedWindowsRelease|String|O valor da versão mínima com suporte do Windows.|
+|setupFilePath|Cadeia de caracteres|O caminho relativo do arquivo de instalação no pacote Win32LobApp criptografado.|
+|minimumSupportedWindowsRelease|Cadeia de caracteres|O valor da versão mínima com suporte do Windows.|
 
 
 
@@ -237,7 +237,6 @@ Content-Length: 2306
   "minimumSupportedWindowsRelease": "Minimum Supported Windows Release value"
 }
 ```
-
 
 
 

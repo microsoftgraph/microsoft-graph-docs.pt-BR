@@ -2,15 +2,15 @@
 title: Excluir deviceEnrollmentLimitConfiguration
 description: Exclui deviceEnrollmentLimitConfiguration.
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 4ce0a19791559ca25ed40d3dc67a0bcb61d54664
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 33cdd5966dd9c43d4a1479acd592e657dfca9307
+ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59110596"
+ms.lasthandoff: 10/18/2021
+ms.locfileid: "60450077"
 ---
 # <a name="delete-deviceenrollmentlimitconfiguration"></a>Excluir deviceEnrollmentLimitConfiguration
 
@@ -63,7 +63,6 @@ Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado a
 ``` http
 HTTP/1.1 204 No Content
 ```
-
 
 
 

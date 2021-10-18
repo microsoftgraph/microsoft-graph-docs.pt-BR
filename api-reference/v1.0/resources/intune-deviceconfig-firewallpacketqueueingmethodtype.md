@@ -2,15 +2,15 @@
 title: tipo de número firewallPacketQueueingMethodType
 description: Valores possíveis para firewallPacketQueueingMethod
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: fde6546255160e91d698f2a7dfe8c15c9fda26a2
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: f9303b2eb09ba9b9ea652a19726fd9c0b930bd79
+ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59139825"
+ms.lasthandoff: 10/18/2021
+ms.locfileid: "60449605"
 ---
 # <a name="firewallpacketqueueingmethodtype-enum-type"></a>tipo de número firewallPacketQueueingMethodType
 
@@ -28,7 +28,6 @@ Valores possíveis para firewallPacketQueueingMethod
 |queueInbound|2|Fila de pacotes criptografados de entrada|
 |queueOutbound|3|Pacotes de saída descriptografados da fila para encaminhamento|
 |queueBoth|4 |Fila de pacotes de entrada e de saída|
-
 
 
 

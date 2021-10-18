@@ -2,15 +2,15 @@
 title: iosManagedAppRegistration resource type
 description: Representa os detalhes de sincronização de um aplicativo para iOS, com recursos de gerenciamento, para um usuário específico. O recurso ManagedAppRegistration representa os detalhes de um aplicativo, com capacidade de gerenciamento, usado por um membro da organização.
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 71462997ca79ca33f221387c847d2941ebf95f41
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 2b5f0c99a0a41bdb2fbee4373b6520967d8be80c
+ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59089477"
+ms.lasthandoff: 10/18/2021
+ms.locfileid: "60451840"
 ---
 # <a name="iosmanagedappregistration-resource-type"></a>iosManagedAppRegistration resource type
 
@@ -85,7 +85,6 @@ Veja a seguir uma representação JSON do recurso.
   "version": "String"
 }
 ```
-
 
 
 

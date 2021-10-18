@@ -2,15 +2,15 @@
 title: Criar complianceManagementPartner
 description: Crie um novo objeto complianceManagementPartner.
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 0c707275edf4f68f481466fb9a164199bc1d8eb7
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 494957284f3a8d90379d7b9492de0f48a8f43a07
+ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59146972"
+ms.lasthandoff: 10/18/2021
+ms.locfileid: "60455960"
 ---
 # <a name="create-compliancemanagementpartner"></a>Criar complianceManagementPartner
 
@@ -54,10 +54,10 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar complian
 |id|String|ID da entidade|
 |lastHeartbeatDateTime|DateTimeOffset|Timestamp de última pulsação depois que o administrador entrou no parceiro de gerenciamento de conformidade|
 |partnerState|[deviceManagementPartnerTenantState](../resources/intune-onboarding-devicemanagementpartnertenantstate.md)|Estado do parceiro desse locatário. Os possíveis valores são: `unknown`, `unavailable`, `enabled`, `terminated`, `rejected`, `unresponsive`.|
-|displayName|String|Nome de exibição de parceiro|
-|macOsOnboarded|Boolean|Parceiro a bordo para dispositivos Mac.|
-|androidOnboarded|Boolean|Parceiro a bordo para dispositivos Android.|
-|iosOnboarded|Boolean|Parceiro internado para dispositivos ios.|
+|displayName|Cadeia de caracteres|Nome de exibição de parceiro|
+|macOsOnboarded|Booliano|Parceiro a bordo para dispositivos Mac.|
+|androidOnboarded|Booliano|Parceiro a bordo para dispositivos Android.|
+|iosOnboarded|Booliano|Parceiro internado para dispositivos ios.|
 |macOsEnrollmentAssignments|[coleção complianceManagementPartnerAssignment](../resources/intune-onboarding-compliancemanagementpartnerassignment.md)|Grupos de usuários que registram dispositivos Mac por meio de parceiros.|
 |androidEnrollmentAssignments|[coleção complianceManagementPartnerAssignment](../resources/intune-onboarding-compliancemanagementpartnerassignment.md)|Grupos de usuários que registram dispositivos Android por meio de parceiros.|
 |iosEnrollmentAssignments|[coleção complianceManagementPartnerAssignment](../resources/intune-onboarding-compliancemanagementpartnerassignment.md)|Grupos de usuários que registram dispositivos ios por meio de parceiros.|
@@ -159,7 +159,6 @@ Content-Length: 1235
   ]
 }
 ```
-
 
 
 

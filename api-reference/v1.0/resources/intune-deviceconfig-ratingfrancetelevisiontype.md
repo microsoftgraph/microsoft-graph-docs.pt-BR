@@ -2,15 +2,15 @@
 title: tipo denum ratingFranceTelevisionType
 description: Rótulos de classificação de conteúdo de TV na França
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 5b42781e192bfea45579b9c71b93bcc3126963a0
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 1aa4d630174ee5cf220cd3e5de7062090e1d8a5c
+ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59021614"
+ms.lasthandoff: 10/18/2021
+ms.locfileid: "60448559"
 ---
 # <a name="ratingfrancetelevisiontype-enum-type"></a>tipo denum ratingFranceTelevisionType
 
@@ -28,8 +28,7 @@ Rótulos de classificação de conteúdo de TV na França
 |agesAbove10|2|A classificação -10 não é recomendada para crianças menores de 10 anos|
 |agesAbove12|3|A classificação -12 não é recomendada para crianças menores de 12 anos|
 |agesAbove16|4 |A classificação -16 não é recomendada para crianças menores de 16 anos|
-|agesAbove18|5 |A classificação -18 não é recomendada para pessoas com menos de 18 anos|
-
+|agesAbove18|5|A classificação -18 não é recomendada para pessoas com menos de 18 anos|
 
 
 

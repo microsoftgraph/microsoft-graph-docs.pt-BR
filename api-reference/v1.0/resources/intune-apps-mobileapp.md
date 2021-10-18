@@ -2,15 +2,15 @@
 title: Tipo de recurso mobileApp
 description: Uma classe abstrata que contém as propriedades base de aplicativos móveis do Intune.
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: ea4fc7a46c111f01751a232e7475ce3bc055eb21
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 3b71c2ee6cd6dcb377dfa0d6a3fbecc0108471b5
+ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59123213"
+ms.lasthandoff: 10/18/2021
+ms.locfileid: "60456225"
 ---
 # <a name="mobileapp-resource-type"></a>Tipo de recurso mobileApp
 
@@ -30,9 +30,9 @@ Uma classe abstrata que contém as propriedades base de aplicativos móveis do I
 ## <a name="properties"></a>Propriedades
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|id|String|Chave da entidade.|
-|displayName|String|O título do aplicativo importado ou definido pelo administrador.|
-|description|String|A descrição do aplicativo.|
+|id|Cadeia de caracteres|Chave da entidade.|
+|displayName|Cadeia de caracteres|O título do aplicativo importado ou definido pelo administrador.|
+|description|Cadeia de caracteres|A descrição do aplicativo.|
 |publisher|String|O publicador do aplicativo.|
 |largeIcon|[mimeContent](../resources/intune-shared-mimecontent.md)|O ícone grande, a ser exibido nos detalhes do aplicativo e usado para o carregamento do ícone.|
 |createdDateTime|DateTimeOffset|A data e a hora da criação do aplicativo.|
@@ -82,7 +82,6 @@ Veja a seguir uma representação JSON do recurso.
   "publishingState": "String"
 }
 ```
-
 
 
 

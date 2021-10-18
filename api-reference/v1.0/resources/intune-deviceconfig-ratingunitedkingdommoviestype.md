@@ -2,15 +2,15 @@
 title: tipo de número ratingUnitedKingdomMoviesType
 description: Rótulos de classificação de filmes no Reino Unido
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 9254d76dbcf5ce16cbc8f545e894ba4abb569b85
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 9c69267a8c6e9bbc87c54883a56ff8f531b84b8c
+ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59056008"
+ms.lasthandoff: 10/18/2021
+ms.locfileid: "60450865"
 ---
 # <a name="ratingunitedkingdommoviestype-enum-type"></a>tipo de número ratingUnitedKingdomMoviesType
 
@@ -28,11 +28,10 @@ Rótulos de classificação de filmes no Reino Unido
 |geral|2|A classificação U é adequada para todas as idades|
 |universalChildren|3|A classificação de UC é adequada para crianças pré-escolares, um rótulo de classificação antigo|
 |parentalGuidance|4 |A classificação PG é adequada para maduros|
-|agesAbove12Video|5 |12, versão de vídeo adequada para 12 anos ou mais|
+|agesAbove12Video|5|12, versão de vídeo adequada para 12 anos ou mais|
 |agesAbove12Cinema|6 |12A, lançamento de cinema adequado para 12 anos ou mais|
 |agesAbove15|7 |15, adequado apenas para 15 anos ou mais|
 |adults|8 |Adequado somente para os adultos|
-
 
 
 

@@ -2,15 +2,15 @@
 title: Tipo de número vppTokenSyncStatus
 description: Possíveis status de sincronização associados a um token do Programa de Compra de Volume da Apple.
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 98904e3d8dcb28a43954474953fdf58b02265562
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 0eca21857716e710e77dd7b2747a2dea003e1a0f
+ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59019283"
+ms.lasthandoff: 10/18/2021
+ms.locfileid: "60453601"
 ---
 # <a name="vpptokensyncstatus-enum-type"></a>Tipo de número vppTokenSyncStatus
 
@@ -23,11 +23,10 @@ Possíveis status de sincronização associados a um token do Programa de Compra
 ## <a name="members"></a>Membros
 |Membro|Valor|Descrição|
 |:---|:---|:---|
-|Nenhuma|0|Status padrão.|
+|none|0|Status padrão.|
 |inProgress|1|Última sincronização em andamento.|
 |completed|2|Última sincronização concluída com êxito.|
 |failed|3|Falha na última sincronização.|
-
 
 
 

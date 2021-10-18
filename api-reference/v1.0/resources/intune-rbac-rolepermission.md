@@ -2,15 +2,15 @@
 title: Tipo de recurso rolePermission
 description: Contém o conjunto de ResourceActions que determina as permissões permitidas e não permitidas para cada função.
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: da71e58f953fc1a0f23dc0f0944ea0f1a7564050
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 308443ae14e1069a3196a9cd41d3a0e7ba9dc25f
+ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59126783"
+ms.lasthandoff: 10/18/2021
+ms.locfileid: "60448959"
 ---
 # <a name="rolepermission-resource-type"></a>Tipo de recurso rolePermission
 
@@ -51,7 +51,6 @@ Veja a seguir uma representação JSON do recurso.
   ]
 }
 ```
-
 
 
 

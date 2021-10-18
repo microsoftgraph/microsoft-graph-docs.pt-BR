@@ -2,15 +2,15 @@
 title: Tipo de número miracastChannel
 description: Valores possíveis para Miracast canal.
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: fd9b4c96038a9539a34dd128f464d0e2c087cf48
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: ff6da57a92087f7591f2b118854bdebb84db7dcb
+ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59089498"
+ms.lasthandoff: 10/18/2021
+ms.locfileid: "60451882"
 ---
 # <a name="miracastchannel-enum-type"></a>Tipo de número miracastChannel
 
@@ -28,7 +28,7 @@ Valores possíveis para Miracast canal.
 |two|2|Dois.|
 |three|3|Três.|
 |four|4 |Quatro.|
-|five|5 |Cinco.|
+|five|5|Cinco.|
 |seis|6 |Seis.|
 |sete|7 |Sete.|
 |oito|8 |Oito.|
@@ -44,7 +44,6 @@ Valores possíveis para Miracast canal.
 |oneHundredFiftySeven|157|OneHundredFifty-Seven.|
 |oneHundredSixtyOne|161|OneHundredSixty-One.|
 |oneHundredSixtyFive|165|OneHundredSixty-Five.|
-
 
 
 

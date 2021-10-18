@@ -2,15 +2,15 @@
 title: 'accessReviewInstance: applyDecisions'
 description: Aplicar decisões em um accessReviewInstance.
 author: isabelleatmsft
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: cb3d91137753ae3383bdaea2700a6664f8b48356
-ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
+ms.openlocfilehash: 9bdd28e57dfc2a9f5071e33d5d3604a205060059
+ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50439223"
+ms.lasthandoff: 10/18/2021
+ms.locfileid: "60440049"
 ---
 # <a name="accessreviewinstance-applydecisions"></a>accessReviewInstance: applyDecisions
 
@@ -18,9 +18,9 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Aplicar decisões de revisão em [um accessReviewInstance](../resources/accessreviewinstance.md).
+Aplicar decisões de revisão em [um accessReviewInstance](../resources/accessreviewinstance.md) se as decisões não foram aplicadas automaticamente porque a propriedade autoApplyDecisionsEnabled está no `false` [accessReviewScheduleSettings](../resources/accessreviewschedulesettings.md)da revisão.
 
-Observe que as decisões serão aplicadas automaticamente se o parâmetro autoApplyDecisionsEnabled for True no [accessReviewScheduleSettings](../resources/accessreviewschedulesettings.md)da revisão.
+O status do accessReviewInstance deve `Completed` ser chamar esse método.
 
 ## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).

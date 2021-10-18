@@ -2,15 +2,15 @@
 title: Tipo denum win32LobAppRestartBehavior
 description: Indica o tipo de ação de reinicialização.
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 427328f8a7769f2aaac909f1c126d11614a240da
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 90eb7ed2c3f7568dfd4a69a4ffab8c52b7d79adb
+ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59021684"
+ms.lasthandoff: 10/18/2021
+ms.locfileid: "60451349"
 ---
 # <a name="win32lobapprestartbehavior-enum-type"></a>Tipo denum win32LobAppRestartBehavior
 
@@ -27,7 +27,6 @@ Indica o tipo de ação de reinicialização.
 |allow|1|O Intune não tomará nenhuma ação específica sobre códigos de reinicialização resultantes de instalações do aplicativo. O Intune não tentará suprimir reinicializações para aplicativos MSI.|
 |suppress|2|O Intune tentará suprimir reinicializações para aplicativos MSI.|
 |force|3|O Intune força o dispositivo a reiniciar imediatamente após a operação de instalação do aplicativo.|
-
 
 
 

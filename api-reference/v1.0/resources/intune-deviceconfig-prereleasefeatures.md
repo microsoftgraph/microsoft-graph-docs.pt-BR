@@ -2,15 +2,15 @@
 title: tipo de número prereleaseFeatures
 description: Valores possíveis para recursos de pré-lançamento.
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: e6e463e2d40c43b9152baebbf542e5976dd65aa3
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: f1fdaa8af1907db39da5cf46708ce04196158829
+ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59146804"
+ms.lasthandoff: 10/18/2021
+ms.locfileid: "60450738"
 ---
 # <a name="prereleasefeatures-enum-type"></a>tipo de número prereleaseFeatures
 
@@ -27,7 +27,6 @@ Valores possíveis para recursos de pré-lançamento.
 |settingsOnly|1|Configurações somente recursos de pré-lançamento.|
 |settingsAndExperimentations|2|Configurações e experimentações de pré-lançamento.|
 |notAllowed|3|Recursos de pré-lançamento não permitidos.|
-
 
 
 

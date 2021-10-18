@@ -2,15 +2,15 @@
 title: Tipo de recurso reportRoot
 description: O recurso que representa uma instância dos Relatórios de históricos.
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 309ff725c0d736b40710246958313fbf8ac4c2a5
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 72e4581ded72b9e22eba3fa0d10382ed1b3a5101
+ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59148323"
+ms.lasthandoff: 10/18/2021
+ms.locfileid: "60445493"
 ---
 # <a name="reportroot-resource-type"></a>Tipo de recurso reportRoot
 
@@ -31,7 +31,7 @@ O recurso que representa uma instância dos Relatórios de históricos.
 ## <a name="properties"></a>Propriedades
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|id|String|O identificador exclusivo dessa entidade.|
+|id|Cadeia de caracteres|O identificador exclusivo dessa entidade.|
 
 ## <a name="relationships"></a>Relações
 Nenhum
@@ -50,7 +50,6 @@ Veja a seguir uma representação JSON do recurso.
   "id": "String (identifier)"
 }
 ```
-
 
 
 

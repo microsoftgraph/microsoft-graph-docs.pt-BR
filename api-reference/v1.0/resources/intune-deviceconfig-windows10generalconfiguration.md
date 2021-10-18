@@ -2,15 +2,15 @@
 title: Tipo de recurso windows10GeneralConfiguration
 description: Este tópico fornece descrições dos métodos declarados, das propriedades e das relações expostos pelo recurso windows10GeneralConfiguration.
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: b47f55a988cc7263edf42b3427284903c8306100
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 120520660d40e31d8b51955863d35276af541f50
+ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59123101"
+ms.lasthandoff: 10/18/2021
+ms.locfileid: "60455643"
 ---
 # <a name="windows10generalconfiguration-resource-type"></a>Tipo de recurso windows10GeneralConfiguration
 
@@ -38,8 +38,8 @@ Herda de [deviceConfiguration](../resources/intune-deviceconfig-deviceconfigurat
 |id|Cadeia de caracteres|Chave da entidade. Herdada de [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
 |lastModifiedDateTime|DateTimeOffset|DateTime da última modificação do objeto. Herdada de [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
 |createdDateTime|DateTimeOffset|DateTime em que o objeto foi criado. Herdada de [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
-|description|String|O administrador forneceu a descrição da Configuração do dispositivo. Herdada de [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
-|displayName|Cadeia de caracteres|O administrador forneceu o nome da Configuração do dispositivo. Herdada de [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
+|description|Cadeia de caracteres|O administrador forneceu a descrição da Configuração do dispositivo. Herdada de [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
+|displayName|String|O administrador forneceu o nome da Configuração do dispositivo. Herdada de [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
 |versão|Int32|Versão da configuração do dispositivo. Herdada de [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
 |enterpriseCloudPrintDiscoveryEndPoint|String|Ponto de extremidade para descoberta de impressoras na nuvem.|
 |enterpriseCloudPrintOAuthAuthority|String|Ponto de extremidade para aquisição de tokens OAuth.|
@@ -192,7 +192,7 @@ Herda de [deviceConfiguration](../resources/intune-deviceconfig-deviceconfigurat
 |edgeBlockPopups|Boolean|Indica se janelas pop-ups devem ou não ser bloqueadas.|
 |edgeBlockSearchSuggestions|Boolean|Indica se o usuário deve ou não bloquear o uso das sugestões de pesquisa na barra de endereços.|
 |edgeBlockSendingIntranetTrafficToInternetExplorer|Boolean|Indica se o tráfego da intranet deve ou não ser alternado do Edge para o Internet Explorer. Observação: o nome dessa propriedade é enganoso; a propriedade é obsoleta, use EdgeSendIntranetTrafficToInternetExplorer.|
-|edgeSendIntranetTrafficToInternetExplorer|Boolean|Indica se o tráfego da intranet deve ou não ser alternado do Edge para o Internet Explorer.|
+|edgeSendIntranetTrafficToInternetExplorer|Booliano|Indica se o tráfego da intranet deve ou não ser alternado do Edge para o Internet Explorer.|
 |edgeRequireSmartScreen|Boolean|Indica se o usuário deverá ou não usar o Filtro SmartScreen.|
 |edgeEnterpriseModeSiteListLocation|String|Indica o local da lista de sites do modo Empresarial. Pode ser um arquivo local, rede local ou local http.|
 |edgeFirstRunUrl|String|A primeira URL a ser executada quando o navegador Edge é aberto pela primeira vez.|
@@ -241,7 +241,7 @@ Herda de [deviceConfiguration](../resources/intune-deviceconfig-deviceconfigurat
 |experienceBlockErrorDialogWhenNoSIM|Boolean|Indica se a caixa de diálogo de erro poderá ou não ser exibida se nenhum cartão SIM for detectado.|
 |experienceBlockTaskSwitcher|Boolean|Indica se a alternância de tarefas será ativada ou não no dispositivo.|
 |logonBlockFastUserSwitching|Boolean|Desabilita a capacidade para alternar rapidamente entre os usuários conectados simultaneamente sem fazer logoff.|
-|tenantLockdownRequireNetworkDuringOutOfBoxExperience|Boolean|Se o dispositivo é necessário para se conectar à rede.|
+|tenantLockdownRequireNetworkDuringOutOfBoxExperience|Booliano|Se o dispositivo é necessário para se conectar à rede.|
 
 ## <a name="relationships"></a>Relações
 |Relação|Tipo|Descrição|
@@ -498,7 +498,6 @@ Veja a seguir uma representação JSON do recurso.
   "tenantLockdownRequireNetworkDuringOutOfBoxExperience": true
 }
 ```
-
 
 
 

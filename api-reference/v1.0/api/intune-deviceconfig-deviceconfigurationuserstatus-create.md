@@ -2,15 +2,15 @@
 title: Criar deviceConfigurationUserStatus
 description: Criar um novo objeto deviceConfigurationUserStatus.
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 8181d2f5b816fa2a82fbd7b397c020d372219998
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 5fad32a17a96ea6134e0895ab5acb2848d32cc2a
+ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59090485"
+ms.lasthandoff: 10/18/2021
+ms.locfileid: "60452962"
 ---
 # <a name="create-deviceconfigurationuserstatus"></a>Criar deviceConfigurationUserStatus
 
@@ -99,7 +99,6 @@ Content-Length: 339
   "userPrincipalName": "User Principal Name value"
 }
 ```
-
 
 
 

@@ -2,15 +2,15 @@
 title: Acessar windowsMobileMSI
 description: Leia as propriedades e as relações do objeto windowsMobileMSI.
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 877f25280d14fd4d51dd416e13f05ec0a8f51c16
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: c5f85f2d56e2f6f4463d9fd116bb2ecb0ae175f6
+ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59099921"
+ms.lasthandoff: 10/18/2021
+ms.locfileid: "60455271"
 ---
 # <a name="get-windowsmobilemsi"></a>Acessar windowsMobileMSI
 
@@ -99,7 +99,6 @@ Content-Length: 1098
   }
 }
 ```
-
 
 
 

@@ -2,15 +2,15 @@
 title: Atualizar termsAndConditionsAssignment
 description: Atualizar as propriedades de um objeto termsAndConditionsAssignment.
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 71f53ec53672d8fb7f3d3b0376bae4e0f3abe814
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 0aa7352d7bfedd406db8f269902ec14bc4ad7ea9
+ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59016383"
+ms.lasthandoff: 10/18/2021
+ms.locfileid: "60446130"
 ---
 # <a name="update-termsandconditionsassignment"></a>Atualizar termsAndConditionsAssignment
 
@@ -25,8 +25,8 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 |Tipo de permissão|Permissões (da com menos para a com mais privilégios)|
 |:---|:---|
-|Delegada (conta corporativa ou de estudante)|DeviceManagementServiceConfig.ReadWrite.All|
-|Delegada (conta pessoal da Microsoft)|Sem suporte.|
+|Delegado (conta corporativa ou de estudante)|DeviceManagementServiceConfig.ReadWrite.All|
+|Delegado (conta pessoal da Microsoft)|Sem suporte.|
 |Aplicativo|DeviceManagementServiceConfig.ReadWrite.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
@@ -93,7 +93,6 @@ Content-Length: 269
   }
 }
 ```
-
 
 
 

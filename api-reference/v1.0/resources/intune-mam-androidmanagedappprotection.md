@@ -2,15 +2,15 @@
 title: Tipo de recurso androidManagedAppProtection
 description: Política usada para definir configurações de gerenciamento detalhadas direcionadas a grupos de segurança específicos e para um conjunto especificado de aplicativos em um dispositivo Android
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: bde9411748d2984a517f7e641452232e489efd51
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: f51ba6dd5aeb0f4c516840c8d32795e0224d8bee
+ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59052976"
+ms.lasthandoff: 10/18/2021
+ms.locfileid: "60457285"
 ---
 # <a name="androidmanagedappprotection-resource-type"></a>Tipo de recurso androidManagedAppProtection
 
@@ -39,7 +39,7 @@ Herda de [targetedManagedAppProtection](../resources/intune-mam-targetedmanageda
 |description|String|A descrição da política. Herdado de [managedAppPolicy](../resources/intune-mam-managedapppolicy.md)|
 |createdDateTime|DateTimeOffset|A data e a hora da criação da política. Herdado de [managedAppPolicy](../resources/intune-mam-managedapppolicy.md)|
 |lastModifiedDateTime|DateTimeOffset|Última vez em que a política foi modificada. Herdado de [managedAppPolicy](../resources/intune-mam-managedapppolicy.md)|
-|id|String|Chave da entidade. Herdado de [managedAppPolicy](../resources/intune-mam-managedapppolicy.md)|
+|id|Cadeia de caracteres|Chave da entidade. Herdado de [managedAppPolicy](../resources/intune-mam-managedapppolicy.md)|
 |version|String|Versão da entidade. Herdado de [managedAppPolicy](../resources/intune-mam-managedapppolicy.md)|
 |periodOfflineBeforeAccessCheck|Duração|Período após o qual o acesso é verificado quando o dispositivo não está conectado à Internet. Herdado de [managedAppProtection](../resources/intune-mam-managedappprotection.md)|
 |periodOnlineBeforeAccessCheck|Duração|Período após o qual o acesso é verificado quando o dispositivo está conectado à Internet. Herdado de [managedAppProtection](../resources/intune-mam-managedappprotection.md)|
@@ -75,8 +75,8 @@ Herda de [targetedManagedAppProtection](../resources/intune-mam-targetedmanageda
 |deployedAppCount|Int32|Contagem de aplicativos em que a política atual é implantada.|
 |minimumRequiredPatchVersion|String|Define o nível mais antigo de patch de segurança do Android necessário que um usuário pode ter para obter acesso seguro ao aplicativo.|
 |minimumWarningPatchVersion|String|Define o nível mais antigo de patch de segurança do Android recomendado que um usuário pode ter para obter acesso seguro ao aplicativo.|
-|customBrowserPackageId|String|Identificador exclusivo do navegador personalizado preferencial para abrir o weblink no Android. Quando essa propriedade é configurada, ManagedBrowserToOpenLinksRequired deve ser true.|
-|customBrowserDisplayName|String|Nome amigável do navegador personalizado preferencial para abrir o weblink no Android. Quando essa propriedade é configurada, ManagedBrowserToOpenLinksRequired deve ser true.|
+|customBrowserPackageId|Cadeia de caracteres|Identificador exclusivo do navegador personalizado preferencial para abrir o weblink no Android. Quando essa propriedade é configurada, ManagedBrowserToOpenLinksRequired deve ser true.|
+|customBrowserDisplayName|Cadeia de caracteres|Nome amigável do navegador personalizado preferencial para abrir o weblink no Android. Quando essa propriedade é configurada, ManagedBrowserToOpenLinksRequired deve ser true.|
 
 ## <a name="relationships"></a>Relações
 |Relação|Tipo|Descrição|
@@ -142,7 +142,6 @@ Veja a seguir uma representação JSON do recurso.
   "customBrowserDisplayName": "String"
 }
 ```
-
 
 
 

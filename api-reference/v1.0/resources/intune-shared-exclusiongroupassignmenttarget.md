@@ -2,15 +2,15 @@
 title: Tipo de recurso exclusionGroupAssignmentTarget
 description: Representa um grupo que deve ser excluído de uma atribuição.
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: f754db39095368db3b78d96b1cbfd97a1abaa071
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 7881a3da197a3ac0f77c0ecac58f9396f5e1f5d8
+ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59036239"
+ms.lasthandoff: 10/18/2021
+ms.locfileid: "60452836"
 ---
 # <a name="exclusiongroupassignmenttarget-resource-type"></a>Tipo de recurso exclusionGroupAssignmentTarget
 
@@ -44,7 +44,6 @@ Veja a seguir uma representação JSON do recurso.
   "groupId": "String"
 }
 ```
-
 
 
 

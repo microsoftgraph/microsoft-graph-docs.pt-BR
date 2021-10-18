@@ -2,15 +2,15 @@
 title: Atualizar iosVppEBookAssignment
 description: Atualizar as propriedades de um objeto iosVppEBookAssignment.
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: b1ee9e38735e50ceebed0eb368a7b8daf0f10ad9
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: b1ccc0fb44178e91053a2fec5da0adeca0c3c16f
+ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59114383"
+ms.lasthandoff: 10/18/2021
+ms.locfileid: "60451805"
 ---
 # <a name="update-iosvppebookassignment"></a>Atualizar iosVppEBookAssignment
 
@@ -94,7 +94,6 @@ Content-Length: 242
   "installIntent": "required"
 }
 ```
-
 
 
 

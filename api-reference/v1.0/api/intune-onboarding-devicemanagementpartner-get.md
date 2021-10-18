@@ -2,15 +2,15 @@
 title: Acessar deviceManagementPartner
 description: Leia as propriedades e as relações do objeto deviceManagementPartner.
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: d4e9b05b3d4653735cc9923c389c1d5c96bece5a
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 6d47cd9df9368e609d072df0c2af8a69a46955c3
+ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59119426"
+ms.lasthandoff: 10/18/2021
+ms.locfileid: "60451553"
 ---
 # <a name="get-devicemanagementpartner"></a>Acessar deviceManagementPartner
 
@@ -83,7 +83,6 @@ Content-Length: 590
   }
 }
 ```
-
 
 
 

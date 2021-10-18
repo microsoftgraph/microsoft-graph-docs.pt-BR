@@ -2,15 +2,15 @@
 title: Tipo denum win32LobAppReturnCodeType
 description: Indica o tipo de código de retorno.
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: cfbb030b2fe5083694dae3a12da9b16341d7c341
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: f7a240213487c9a421affee8d5f0d4a4cd7fcb32
+ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59021677"
+ms.lasthandoff: 10/18/2021
+ms.locfileid: "60448594"
 ---
 # <a name="win32lobappreturncodetype-enum-type"></a>Tipo denum win32LobAppReturnCodeType
 
@@ -28,7 +28,6 @@ Indica o tipo de código de retorno.
 |softReboot|2|A reinicialização suave é necessária.|
 |hardReboot|3|A reinicialização dura é necessária.|
 |repetir|4 |Tente novamente.|
-
 
 
 

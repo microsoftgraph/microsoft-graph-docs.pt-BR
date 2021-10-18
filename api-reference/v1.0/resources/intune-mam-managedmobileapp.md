@@ -2,15 +2,15 @@
 title: Tipo de recurso managedMobileApp
 description: O identificador da implantação de um aplicativo.
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 3c27f028881c3911e5c113bd93cdcc4af4751e3c
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 7eb2c4e78f2e2bc0c966b709ea9ef237c7965e89
+ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59032325"
+ms.lasthandoff: 10/18/2021
+ms.locfileid: "60447837"
 ---
 # <a name="managedmobileapp-resource-type"></a>Tipo de recurso managedMobileApp
 
@@ -58,7 +58,6 @@ Veja a seguir uma representação JSON do recurso.
   "version": "String"
 }
 ```
-
 
 
 

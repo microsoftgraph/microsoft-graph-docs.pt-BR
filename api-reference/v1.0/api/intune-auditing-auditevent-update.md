@@ -2,15 +2,15 @@
 title: Atualizar auditEvent
 description: Atualizar as propriedades do objeto auditEvent.
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 655344f88a44874be703b37ae345a62399c27799
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 32bbe52ff483c9eb66c11d78055ed607b54709e7
+ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59110729"
+ms.lasthandoff: 10/18/2021
+ms.locfileid: "60456393"
 ---
 # <a name="update-auditevent"></a>Atualizar auditEvent
 
@@ -62,7 +62,7 @@ A tabela a seguir mostra as propriedades obrigatórias ao criar [auditEvent](../
 |activityResult|Cadeia de caracteres|O resultado da atividade.|
 |correlationId|Guid|A ID da solicitação de cliente usada para correlacionar a atividade dentro do sistema.|
 |recursos|Coleção [auditResource](../resources/intune-auditing-auditresource.md)|Recursos em modificação.|
-|category|String|Categoria de auditoria.|
+|category|Cadeia de caracteres|Categoria de auditoria.|
 
 
 
@@ -171,7 +171,6 @@ Content-Length: 1439
   "category": "Category value"
 }
 ```
-
 
 
 

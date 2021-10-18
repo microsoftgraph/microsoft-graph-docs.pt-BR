@@ -5,12 +5,12 @@ author: dougeby
 ms.localizationpriority: medium
 ms.prod: intune
 doc_type: conceptualPageType
-ms.openlocfilehash: 23f3f789c7759711d632cd8861ffef6bbbbbf4de
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 8e3560bb63ca156029cd238a03479841ae2ccef4
+ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59118478"
+ms.lasthandoff: 10/18/2021
+ms.locfileid: "60455855"
 ---
 # <a name="device-management-in-microsoft-intune"></a>Gerenciamento de dispositivos no Microsoft Intune
 
@@ -30,7 +30,7 @@ Namespace: microsoft.graph
 - [Aplicativo detectado](intune-devices-detectedapp.md)
 - [Resultado da ação do dispositivo](intune-devices-deviceactionresult.md)
 - [Categoria do dispositivo](intune-devices-devicecategory.md)
-- [Tipo de registro de dispositivo](intune-shared-deviceenrollmenttype.md)
+- [Tipo de registro de dispositivo](intune-devices-deviceenrollmenttype.md)
 - [Resumo do Estado de Acesso ao Exchange do dispositivo](intune-devices-deviceexchangeaccessstatesummary.md)
 - [Geolocalização do dispositivo](intune-devices-devicegeolocation.md)
 - [Estado do atestado de integridade do dispositivo](intune-devices-devicehealthattestationstate.md)

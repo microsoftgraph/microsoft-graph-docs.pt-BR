@@ -2,15 +2,15 @@
 title: Tipo de número windowsSpotlightEnablementSettings
 description: Permite que o administrador de IT de definir um mecanismo de pesquisa padrão predefinido para MDM-Controlled dispositivos
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: fa7327435122ae8b145c591334ce9ec27623b1e4
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 43fed562c34c23deeb1847de5d8e52600ba01575
+ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59108993"
+ms.lasthandoff: 10/18/2021
+ms.locfileid: "60451427"
 ---
 # <a name="windowsspotlightenablementsettings-enum-type"></a>Tipo de número windowsSpotlightEnablementSettings
 
@@ -26,7 +26,6 @@ Permite que o administrador de IT de definir um mecanismo de pesquisa padrão pr
 |notConfigured|0|O destaque na tela de bloqueio não está configurado|
 |desabilitadas|1|Desabilitar Windows destaque na tela de bloqueio|
 |habilitadas|2|Habilitar Windows destaque na tela de bloqueio|
-
 
 
 

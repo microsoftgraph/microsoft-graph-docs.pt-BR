@@ -5,27 +5,28 @@ author: isabelleatmsft
 ms.localizationpriority: medium
 ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: afe64d30ddd4e637aeb43a15195b0f1e627a79ec
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 66cfeb5aecbb8ee8525eb97316d7a2afb6202d6a
+ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59038654"
+ms.lasthandoff: 10/18/2021
+ms.locfileid: "60446172"
 ---
 # <a name="accessreviewinstance-applydecisions"></a>accessReviewInstance: applyDecisions
 Namespace: microsoft.graph
 
-Aplicar decisões de revisão ao recurso revisado em [um accessReviewInstance](../resources/accessreviewinstance.md).
+Aplicar decisões de revisão em [um accessReviewInstance](../resources/accessreviewinstance.md) se as decisões não foram aplicadas automaticamente porque a propriedade autoApplyDecisionsEnabled está no `false` [accessReviewScheduleSettings](../resources/accessreviewschedulesettings.md)da revisão.
 
-As decisões serão aplicadas automaticamente **se o autoApplyDecisionsEnabled** do parâmetro **settings** [de accessReviewScheduleDefinition](../resources/accessreviewscheduledefinition.md) for `true` .
+
+O status do accessReviewInstance deve `Completed` ser chamar esse método.
 
 ## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão|Permissões (da com menos para a com mais privilégios)|
 |:---|:---|
-|Delegada (conta corporativa ou de estudante)|AccessReview.ReadWrite.All|
-|Delegada (conta pessoal da Microsoft)|Sem suporte.|
+|Delegado (conta corporativa ou de estudante)|AccessReview.ReadWrite.All|
+|Delegado (conta pessoal da Microsoft)|Sem suporte.|
 |Aplicativo|AccessReview.ReadWrite.All|
 
 ## <a name="http-request"></a>Solicitação HTTP

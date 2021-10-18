@@ -2,15 +2,15 @@
 title: Excluir iosUpdateConfiguration
 description: Exclui iosUpdateConfiguration.
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 5e6fa4890a2c76c7165fab2b48c6d668dfee5022
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 958fa5c3e9cc90fc41a55bcf07869c4c0593b725
+ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59099732"
+ms.lasthandoff: 10/18/2021
+ms.locfileid: "60444645"
 ---
 # <a name="delete-iosupdateconfiguration"></a>Excluir iosUpdateConfiguration
 
@@ -63,7 +63,6 @@ Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado a
 ``` http
 HTTP/1.1 204 No Content
 ```
-
 
 
 

@@ -2,15 +2,15 @@
 title: Tipo de número applicationType
 description: Possíveis tipos de Aplicativo
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 176c8c88f9b488308c1a4b4f48058a32992d21a1
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: d1a9f5e32dfad27524dcbedf219e9ace8d01942a
+ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59078760"
+ms.lasthandoff: 10/18/2021
+ms.locfileid: "60456456"
 ---
 # <a name="applicationtype-enum-type"></a>Tipo de número applicationType
 
@@ -25,7 +25,6 @@ Possíveis tipos de Aplicativo
 |:---|:---|:---|
 |universal|1|O aplicativo universal do Windows|
 |desktop|2|O aplicativo da área de trabalho do Windows|
-
 
 
 

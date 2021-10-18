@@ -2,15 +2,15 @@
 title: Tipo de recurso windowsAutopilotDeviceIdentity
 description: O recurso windowsAutopilotDeviceIdentity representa um Windows Autopilot.
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: bd481a0b527e9665e145a48a23b41b6a2aab24f6
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 60e645830f79d1e16af05f69e2e65cfa2c856de7
+ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59028916"
+ms.lasthandoff: 10/18/2021
+ms.locfileid: "60446979"
 ---
 # <a name="windowsautopilotdeviceidentity-resource-type"></a>Tipo de recurso windowsAutopilotDeviceIdentity
 
@@ -26,17 +26,17 @@ O recurso windowsAutopilotDeviceIdentity representa um Windows Autopilot.
 |[Listar windowsAutopilotDeviceIdentities](../api/intune-enrollment-windowsautopilotdeviceidentity-list.md)|[Coleção windowsAutopilotDeviceIdentity](../resources/intune-enrollment-windowsautopilotdeviceidentity.md)|Listar propriedades e relações dos [objetos windowsAutopilotDeviceIdentity.](../resources/intune-enrollment-windowsautopilotdeviceidentity.md)|
 |[Obter windowsAutopilotDeviceIdentity](../api/intune-enrollment-windowsautopilotdeviceidentity-get.md)|[windowsAutopilotDeviceIdentity](../resources/intune-enrollment-windowsautopilotdeviceidentity.md)|Ler propriedades e relações do [objeto windowsAutopilotDeviceIdentity.](../resources/intune-enrollment-windowsautopilotdeviceidentity.md)|
 |[Criar windowsAutopilotDeviceIdentity](../api/intune-enrollment-windowsautopilotdeviceidentity-create.md)|[windowsAutopilotDeviceIdentity](../resources/intune-enrollment-windowsautopilotdeviceidentity.md)|Crie um novo [objeto windowsAutopilotDeviceIdentity.](../resources/intune-enrollment-windowsautopilotdeviceidentity.md)|
-|[Excluir windowsAutopilotDeviceIdentity](../api/intune-enrollment-windowsautopilotdeviceidentity-delete.md)|None|Exclui um [windowsAutopilotDeviceIdentity](../resources/intune-enrollment-windowsautopilotdeviceidentity.md).|
-|[ação assignUserToDevice](../api/intune-enrollment-windowsautopilotdeviceidentity-assignusertodevice.md)|None|Atribui o usuário a dispositivos autopilot.|
-|[ação unassignUserFromDevice](../api/intune-enrollment-windowsautopilotdeviceidentity-unassignuserfromdevice.md)|None|Desaigna o usuário de um dispositivo autopilot.|
-|[Ação updateDeviceProperties](../api/intune-enrollment-windowsautopilotdeviceidentity-updatedeviceproperties.md)|None|Atualiza as propriedades em dispositivos do Autopilot.|
+|[Excluir windowsAutopilotDeviceIdentity](../api/intune-enrollment-windowsautopilotdeviceidentity-delete.md)|Nenhum|Exclui um [windowsAutopilotDeviceIdentity](../resources/intune-enrollment-windowsautopilotdeviceidentity.md).|
+|[ação assignUserToDevice](../api/intune-enrollment-windowsautopilotdeviceidentity-assignusertodevice.md)|Nenhum|Atribui o usuário a dispositivos autopilot.|
+|[ação unassignUserFromDevice](../api/intune-enrollment-windowsautopilotdeviceidentity-unassignuserfromdevice.md)|Nenhum|Desaigna o usuário de um dispositivo autopilot.|
+|[Ação updateDeviceProperties](../api/intune-enrollment-windowsautopilotdeviceidentity-updatedeviceproperties.md)|Nenhum|Atualiza as propriedades em dispositivos do Autopilot.|
 
 ## <a name="properties"></a>Propriedades
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
 |id|String|O GUID do objeto.|
 |groupTag|Cadeia de caracteres|Marca de grupo do dispositivo Windows piloto automático.|
-|purchaseOrderIdentifier|String|Purchase Order Identifier of the Windows autopilot device.|
+|purchaseOrderIdentifier|Cadeia de caracteres|Purchase Order Identifier of the Windows autopilot device.|
 |serialNumber|Cadeia de caracteres|Número de série do dispositivo do Windows AutoPilot.|
 |productKey|Cadeia de caracteres|Chave do produto (Product Key) do dispositivo do Windows AutoPilot.|
 |fabricante|String|Fabricante Oem do dispositivo Windows piloto automático.|
@@ -46,11 +46,11 @@ O recurso windowsAutopilotDeviceIdentity representa um Windows Autopilot.
 |addressableUserName|Cadeia de caracteres|Nome de usuário acessível.|
 |userPrincipalName|Cadeia de caracteres|Nome principal do usuário.|
 |resourceName|Cadeia de caracteres|Nome do recurso.|
-|skuNumber|Cadeia de caracteres|Número SKU|
+|skuNumber|String|Número SKU|
 |systemFamily|Cadeia de caracteres|Família do Sistema|
-|azureActiveDirectoryDeviceId|Cadeia de caracteres|ID do dispositivo AAD - a ser preterida|
+|azureActiveDirectoryDeviceId|Cadeia de caracteres|AAD ID do dispositivo - a ser preterido|
 |managedDeviceId|Cadeia de caracteres|ID de dispositivo gerenciado|
-|displayName|String|Nome de exibição|
+|displayName|Cadeia de caracteres|Nome de exibição|
 
 ## <a name="relationships"></a>Relações
 Nenhum
@@ -85,7 +85,6 @@ Veja a seguir uma representação JSON do recurso.
   "displayName": "String"
 }
 ```
-
 
 
 

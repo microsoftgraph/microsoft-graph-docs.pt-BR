@@ -2,15 +2,15 @@
 title: Criar deviceComplianceScheduledActionForRule
 description: Criar um novo objeto deviceComplianceScheduledActionForRule.
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 3a3feffa386c705137cf5918e6d9234d1eb90f72
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 2fddacdbd203d161aa0917fabae34f2b42dc7695
+ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59099809"
+ms.lasthandoff: 10/18/2021
+ms.locfileid: "60454275"
 ---
 # <a name="create-devicecompliancescheduledactionforrule"></a>Criar deviceComplianceScheduledActionForRule
 
@@ -52,7 +52,7 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar deviceCo
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
 |id|Cadeia de caracteres|Chave da entidade.|
-|ruleName|Cadeia de caracteres|Nome da regra à qual essa ação agendada se aplica.|
+|ruleName|Cadeia de caracteres|Nome da regra à qual essa ação agendada se aplica. As ações agendadas no momento são criadas por política em vez de por regra, portanto RuleName é sempre definido como valor padrão PasswordRequired.|
 
 
 
@@ -87,7 +87,6 @@ Content-Length: 163
   "ruleName": "Rule Name value"
 }
 ```
-
 
 
 

@@ -2,15 +2,15 @@
 title: tipo de número importedWindowsAutopilotDeviceIdentityImportStatus
 description: Ainda não documentado
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 9030ea40d7b4f82cf09043d801a9135a0464f9bc
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: a91a12a181a22855f17f4e50aa3b2ee3fbb84c4d
+ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59028944"
+ms.lasthandoff: 10/18/2021
+ms.locfileid: "60452071"
 ---
 # <a name="importedwindowsautopilotdeviceidentityimportstatus-enum-type"></a>tipo de número importedWindowsAutopilotDeviceIdentityImportStatus
 
@@ -28,7 +28,6 @@ Ainda não documentado
 |partial|2|Status parcial.|
 |complete|3|Status completo.|
 |erro|4 |Status do erro.|
-
 
 
 

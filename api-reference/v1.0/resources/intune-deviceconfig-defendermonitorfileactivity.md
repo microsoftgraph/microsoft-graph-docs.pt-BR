@@ -2,15 +2,15 @@
 title: Tipo denum defenderMonitorFileActivity
 description: Valores possíveis para monitorar a atividade do arquivo.
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 095ea434b4ae9a7759dd40f9264339525cb86921
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 1a782a7a246648502ddc06887e22d1f5a8970094
+ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59118457"
+ms.lasthandoff: 10/18/2021
+ms.locfileid: "60447851"
 ---
 # <a name="defendermonitorfileactivity-enum-type"></a>Tipo denum defenderMonitorFileActivity
 
@@ -28,7 +28,6 @@ Valores possíveis para monitorar a atividade do arquivo.
 |monitorAllFiles|2|Monitore todos os arquivos.|
 |monitorIncomingFilesOnly|3| Monitore somente arquivos de entrada.|
 |monitorOutgoingFilesOnly|4 |Monitore somente arquivos de saída.|
-
 
 
 

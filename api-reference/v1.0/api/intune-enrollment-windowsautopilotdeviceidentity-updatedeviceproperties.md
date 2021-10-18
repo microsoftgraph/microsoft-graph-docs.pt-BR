@@ -2,15 +2,15 @@
 title: Ação updateDeviceProperties
 description: Atualiza as propriedades em dispositivos do Autopilot.
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: b9d2ffd645e88393f3fa67e98632f3b219c23d56
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: f18dd149c85b2e736e5c6f872cf881cc928cb2de
+ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59094846"
+ms.lasthandoff: 10/18/2021
+ms.locfileid: "60454851"
 ---
 # <a name="updatedeviceproperties-action"></a>Ação updateDeviceProperties
 
@@ -25,8 +25,8 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 |Tipo de permissão|Permissões (da com menos para a com mais privilégios)|
 |:---|:---|
-|Delegada (conta corporativa ou de estudante)|DeviceManagementServiceConfig.ReadWrite.All|
-|Delegada (conta pessoal da Microsoft)|Sem suporte.|
+|Delegado (conta corporativa ou de estudante)|DeviceManagementServiceConfig.ReadWrite.All|
+|Delegado (conta pessoal da Microsoft)|Sem suporte.|
 |Aplicativo|DeviceManagementServiceConfig.ReadWrite.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
@@ -54,7 +54,7 @@ A tabela a seguir mostra os parâmetros que podem ser usados com esta ação.
 |userPrincipalName|Cadeia de caracteres|Ainda não documentado|
 |addressableUserName|String|Ainda não documentado|
 |groupTag|String|Ainda não documentado|
-|displayName|String|Ainda não documentado|
+|displayName|Cadeia de caracteres|Ainda não documentado|
 
 
 
@@ -84,7 +84,6 @@ Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado a
 ``` http
 HTTP/1.1 204 No Content
 ```
-
 
 
 

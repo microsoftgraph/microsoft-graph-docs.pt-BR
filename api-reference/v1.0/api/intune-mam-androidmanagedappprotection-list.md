@@ -2,15 +2,15 @@
 title: Listar androidManagedAppProtections
 description: Listar propriedades e relações dos objetos androidManagedAppProtection.
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 63a611bbbb407d649ec78cd2a1e5e768a7bdc56a
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 321b9817c57cb6e2aac9d7cb91235566d3c54513
+ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59147238"
+ms.lasthandoff: 10/18/2021
+ms.locfileid: "60449415"
 ---
 # <a name="list-androidmanagedappprotections"></a>Listar androidManagedAppProtections
 
@@ -117,7 +117,6 @@ Content-Length: 2247
   ]
 }
 ```
-
 
 
 

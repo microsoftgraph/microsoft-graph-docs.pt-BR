@@ -2,15 +2,15 @@
 title: Tipo de recurso deviceManagement
 description: Singleton que atua como contêiner para uma coleção de entidades UserPFXCertificate.
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 580b837298d7fcbb7bd839f4e2837a704f2c01c2
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: e860bb52cccb16ccca2e90a3a61631e6d1c00611
+ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59044493"
+ms.lasthandoff: 10/18/2021
+ms.locfileid: "60449570"
 ---
 # <a name="devicemanagement-resource-type"></a>Tipo de recurso deviceManagement
 
@@ -48,7 +48,6 @@ Veja a seguir uma representação JSON do recurso.
   "id": "String (identifier)"
 }
 ```
-
 
 
 

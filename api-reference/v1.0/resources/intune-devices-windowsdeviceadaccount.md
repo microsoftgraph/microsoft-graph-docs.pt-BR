@@ -2,15 +2,15 @@
 title: Tipo de recurso windowsDeviceADAccount
 description: Ainda não documentado
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 0cb3f8291540be00b7704ccf487ec2d7bfd564bd
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 94ce7543d12bc0fc037b2f54a74315bc13645ace
+ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59019318"
+ms.lasthandoff: 10/18/2021
+ms.locfileid: "60453615"
 ---
 # <a name="windowsdeviceadaccount-resource-type"></a>Tipo de recurso windowsDeviceADAccount
 
@@ -48,7 +48,6 @@ Veja a seguir uma representação JSON do recurso.
   "userName": "String"
 }
 ```
-
 
 
 

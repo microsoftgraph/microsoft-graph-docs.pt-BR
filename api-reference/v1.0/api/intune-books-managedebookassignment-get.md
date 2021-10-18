@@ -2,15 +2,15 @@
 title: Get managedEBookAssignment
 description: Ler propriedades e relações do objeto managedEBookAssignment.
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: b3cc8d902cb90a30f4d869c70b7fc27efb830cbd
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: e353717a491147914cab90b421d7e6127151bcd1
+ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59140652"
+ms.lasthandoff: 10/18/2021
+ms.locfileid: "60454114"
 ---
 # <a name="get-managedebookassignment"></a>Get managedEBookAssignment
 
@@ -79,7 +79,6 @@ Content-Length: 268
   }
 }
 ```
-
 
 
 

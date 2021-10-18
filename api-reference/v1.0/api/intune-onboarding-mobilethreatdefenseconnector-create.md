@@ -2,15 +2,15 @@
 title: Criar mobileThreatDefenseConnector
 description: Cria um novo objeto mobileThreatDefenseConnector.
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 64ca480fbf1057a96af8546ed60192f7fd20a393
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: f9296605dd326e82c8ea5153055354a404f33d99
+ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59119405"
+ms.lasthandoff: 10/18/2021
+ms.locfileid: "60452913"
 ---
 # <a name="create-mobilethreatdefenseconnector"></a>Criar mobileThreatDefenseConnector
 
@@ -108,7 +108,6 @@ Content-Length: 463
   "partnerUnresponsivenessThresholdInDays": 6
 }
 ```
-
 
 
 

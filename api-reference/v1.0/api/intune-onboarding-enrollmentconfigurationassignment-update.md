@@ -2,15 +2,15 @@
 title: Atualizar enrollmentConfigurationAssignment
 description: Atualizar as propriedades de um objeto enrollmentConfigurationAssignment.
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: c2d2f95f4e966429efd0aff3364b4e28a7927ee3
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 9856828d9f9558f0d86494ee37229979f38a1340
+ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59094776"
+ms.lasthandoff: 10/18/2021
+ms.locfileid: "60452920"
 ---
 # <a name="update-enrollmentconfigurationassignment"></a>Atualizar enrollmentConfigurationAssignment
 
@@ -93,7 +93,6 @@ Content-Length: 274
   }
 }
 ```
-
 
 
 

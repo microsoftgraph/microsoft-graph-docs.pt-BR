@@ -2,15 +2,15 @@
 title: Obter androidWorkProfileCompliancePolicy
 description: Leia propriedades e relações do objeto androidWorkProfileCompliancePolicy.
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 7de086cc2b439174b79bdfe55e97c03a013bc994
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: b04bd44ee4bfb29af49cc5a4ebdf51959c235748
+ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59140364"
+ms.lasthandoff: 10/18/2021
+ms.locfileid: "60454858"
 ---
 # <a name="get-androidworkprofilecompliancepolicy"></a>Obter androidWorkProfileCompliancePolicy
 
@@ -101,7 +101,6 @@ Content-Length: 1417
   }
 }
 ```
-
 
 
 

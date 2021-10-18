@@ -2,15 +2,15 @@
 title: Tipo de recurso windowsFirewallNetworkProfile
 description: Políticas de perfil do firewall do Windows.
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 3aa50d75a7e692e8393a6c01f46aaf4f3dc88912
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 27e38c473a8f37b35a74dd29872607428dddd042
+ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59072159"
+ms.lasthandoff: 10/18/2021
+ms.locfileid: "60455215"
 ---
 # <a name="windowsfirewallnetworkprofile-resource-type"></a>Tipo de recurso windowsFirewallNetworkProfile
 
@@ -63,7 +63,6 @@ Veja a seguir uma representação JSON do recurso.
   "policyRulesFromGroupPolicyMerged": true
 }
 ```
-
 
 
 

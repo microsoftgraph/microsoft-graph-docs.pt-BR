@@ -2,15 +2,15 @@
 title: tipo de recurso complianceManagementPartnerAssignment
 description: Direcionamento de grupo de usuários para Parceiro de Gerenciamento de Conformidade
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: cac4b8fd53b9573ef1819026b333191faa83d642
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 284301b947d27521f38329e2ad07bf2dc42d44d0
+ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59098675"
+ms.lasthandoff: 10/18/2021
+ms.locfileid: "60445595"
 ---
 # <a name="compliancemanagementpartnerassignment-resource-type"></a>tipo de recurso complianceManagementPartnerAssignment
 
@@ -44,7 +44,6 @@ Veja a seguir uma representação JSON do recurso.
   }
 }
 ```
-
 
 
 

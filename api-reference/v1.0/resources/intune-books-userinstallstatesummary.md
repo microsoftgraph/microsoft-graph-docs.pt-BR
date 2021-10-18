@@ -2,15 +2,15 @@
 title: Tipo de recurso userInstallStateSummary
 description: Contém as propriedades do resumo de estado de instalação de um usuário.
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: b3dc39ea03a843ade27de2331ec55aab90d592e8
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: e65467d8fdcdfdfd00382d78ea83bf0e68057f8e
+ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59007086"
+ms.lasthandoff: 10/18/2021
+ms.locfileid: "60455566"
 ---
 # <a name="userinstallstatesummary-resource-type"></a>Tipo de recurso userInstallStateSummary
 
@@ -61,7 +61,6 @@ Veja a seguir uma representação JSON do recurso.
   "notInstalledDeviceCount": 1024
 }
 ```
-
 
 
 

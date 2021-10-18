@@ -2,15 +2,15 @@
 title: tipo de número windowsInformationProtectionPinCharacterRequirements
 description: Pin Character Requirements
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 44166b6e3462df04f50301db40459873659701e3
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: b901d9f6402340d1ba28e16836cb13a74ef71f3d
+ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59072139"
+ms.lasthandoff: 10/18/2021
+ms.locfileid: "60454135"
 ---
 # <a name="windowsinformationprotectionpincharacterrequirements-enum-type"></a>tipo de número windowsInformationProtectionPinCharacterRequirements
 
@@ -26,7 +26,6 @@ Pin Character Requirements
 |notAllow|0|Não permitir|
 |requireAtLeastOne|1|Exigir pelo menos um|
 |allow|2|Permitir qualquer número|
-
 
 
 

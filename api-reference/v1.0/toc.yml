@@ -157,7 +157,7 @@ items:
         href: /graph/toolkit/overview?context=graph/api/1.0
       - name: Introdução
         items:
-          - name: Visão geral
+          - name: Visão Geral
             href: /graph/toolkit/get-started/overview?context=graph/api/1.0
           - name: /graph/toolkit para React
             href: /graph/toolkit/get-started/mgt-react?context=graph/api/1.0
@@ -254,11 +254,11 @@ items:
   - name: Referência v1.0
     expanded: true
     items:
-      - name: Visão geral
+      - name: Visão Geral
         href: overview.md
       - name: Usuários
         items:
-          - name: Visão geral
+          - name: Visão Geral
             href: resources/users.md
           - name: Usuário
             href: resources/user.md
@@ -416,7 +416,7 @@ items:
                 href: api/mailfolder-list-messagerules.md
               - name: Enviar email
                 href: api/user-sendmail.md
-          - name: Observações
+          - name: Notas
             items:
               - name: Onenote
                 href: resources/onenote.md
@@ -1179,7 +1179,7 @@ items:
                 href: api/outlookcategory-delete.md
           - name: Propriedades estendidas
             items:
-              - name: Visão geral
+              - name: Visão Geral
                 href: resources/extended-properties-overview.md
               - name: Propriedades estendidas de valor único
                 items:
@@ -1302,9 +1302,9 @@ items:
                     href: resources/callrecords-callrecord.md
                   - name: Obter registro de chamada
                     href: api/callrecords-callrecord-get.md
-              - name: Sessão
+              - name: Session
                 items:
-                  - name: Sessão
+                  - name: Session
                     href: resources/callrecords-session.md
                   - name: Listar sessões
                     href: api/callrecords-session-list.md
@@ -1345,6 +1345,34 @@ items:
                 href: api/presence-setpresence.md
               - name: Presença clara
                 href: api/presence-clearpresence.md
+      - name: Conformidade
+        displayName: 'Compliance API, Microsoft Graph Compliance API'
+        items:
+          - name: Visão Geral
+            href: resources/complianceapioverview.md
+          - name: Solicitação de direitos de assunto
+            items:
+              - name: Visão Geral
+                href: resources/subjectrightsrequest-subjectrightsrequestapioverview.md
+              - name: Solicitação de direitos de assunto
+                href: resources/subjectrightsrequest.md
+                items:
+                  - name: Listar
+                    href: api/subjectrightsrequest-list.md
+                  - name: Criar
+                    href: api/subjectrightsrequest-post.md
+                  - name: Obter
+                    href: api/subjectrightsrequest-get.md
+                  - name: Atualizar
+                    href: api/subjectrightsrequest-update.md
+                  - name: Obter relatório final
+                    href: api/subjectrightsrequest-getfinalreport.md
+                  - name: Obter anexo final
+                    href: api/subjectrightsrequest-getfinalattachment.md
+                  - name: Listar anotações
+                    href: api/subjectrightsrequest-list-notes.md
+                  - name: Criar observação
+                    href: api/subjectrightsrequest-post-notes.md
       - name: Experiências entre dispositivos
         displayName: Project Rome
         items:
@@ -4092,7 +4120,7 @@ items:
                         href: api/intune-tem-telecomexpensemanagementpartner-update.md
           - name: Comunicações e integridade do serviço
             items:
-              - name: Visão geral
+              - name: Visão Geral
                 href: resources/service-communications-api-overview.md
               - name: Comunicado do serviço
                 href: resources/serviceannouncement.md
@@ -4367,7 +4395,7 @@ items:
       - name: Arquivos
         displayName: 'OneDrive, OneDrive for Business, OneDrive business, OneDrive personal, SharePoint'
         items:
-          - name: Visão geral
+          - name: Visão Geral
             href: resources/onedrive.md
           - name: Unidades
             href: resources/drive.md
@@ -4675,7 +4703,7 @@ items:
             items:
               - name: Métodos de autenticação
                 items:
-                  - name: Visão geral
+                  - name: Visão Geral
                     href: resources/authenticationmethods-overview.md
                   - name: Listar todos os métodos
                     href: api/authentication-list-methods.md
@@ -5369,7 +5397,7 @@ items:
                 href: api/messagerule-delete.md
           - name: Propriedades estendidas
             items:
-              - name: Visão geral
+              - name: Visão Geral
                 href: resources/extended-properties-overview.md
               - name: Propriedades estendidas de valor único
                 items:
@@ -5593,7 +5621,7 @@ items:
         items:
           - name: Relatórios de atividade do Azure AD
             items:
-              - name: Visão geral
+              - name: Visão Geral
                 href: resources/azure-ad-auditlog-overview.md
               - name: Auditoria de diretório
                 href: resources/directoryaudit.md
@@ -5905,7 +5933,7 @@ items:
             items:
               - name: Avaliação de ameaças
                 items:
-                  - name: Visão geral
+                  - name: Visão Geral
                     href: resources/threatassessment-api-overview.md
                   - name: Solicitação de avaliação de ameaças
                     href: resources/threatassessmentrequest.md
@@ -6122,7 +6150,7 @@ items:
       - name: Tarefas e planos
         displayName: Planner
         items:
-          - name: Visão geral
+          - name: Visão Geral
             href: resources/planner-overview.md
           - name: Plano
             href: resources/plannerplan.md
@@ -6677,7 +6705,7 @@ items:
       - name: Tarefas pendentes
         displayName: Microsoft To Do
         items:
-          - name: Visão geral
+          - name: Visão Geral
             href: resources/todo-overview.md
           - name: Lista de tarefas
             href: resources/todotasklist.md

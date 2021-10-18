@@ -2,15 +2,15 @@
 title: Tipo denum edgeSearchEngineType
 description: Permite que o administrador de IT de definir um mecanismo de pesquisa padrão predefinido para MDM-Controlled dispositivos
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: bc961d1348b1abbc49e15a800c43fe0af693a3cf
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 769513cd46f5b092395b3e5a6575bca8993e8241
+ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59098850"
+ms.lasthandoff: 10/18/2021
+ms.locfileid: "60453004"
 ---
 # <a name="edgesearchenginetype-enum-type"></a>Tipo denum edgeSearchEngineType
 
@@ -25,7 +25,6 @@ Permite que o administrador de IT de definir um mecanismo de pesquisa padrão pr
 |:---|:---|:---|
 |Padrão.|0|Usa configurações de fábrica do Edge para atribuir o mecanismo de pesquisa padrão de acordo com o mercado de usuários|
 |bing|1|Define Bing como o mecanismo de pesquisa padrão|
-
 
 
 

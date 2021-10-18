@@ -2,15 +2,15 @@
 title: Atualizar eBookInstallSummary
 description: Atualizar as propriedades de um objeto eBookInstallSummary.
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 35b2f9f25315e23e0d1b7553bc351ee26f24fe22
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: ce72c9707de83aace1cc98308002fca410084fb5
+ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59045438"
+ms.lasthandoff: 10/18/2021
+ms.locfileid: "60456640"
 ---
 # <a name="update-ebookinstallsummary"></a>Atualizar eBookInstallSummary
 
@@ -25,8 +25,8 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 |Tipo de permissão|Permissões (da com menos para a com mais privilégios)|
 |:---|:---|
-|Delegada (conta corporativa ou de estudante)|DeviceManagementApps.ReadWrite.All|
-|Delegada (conta pessoal da Microsoft)|Sem suporte.|
+|Delegado (conta corporativa ou de estudante)|DeviceManagementApps.ReadWrite.All|
+|Delegado (conta pessoal da Microsoft)|Sem suporte.|
 |Aplicativo|DeviceManagementApps.ReadWrite.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
@@ -102,7 +102,6 @@ Content-Length: 285
   "notInstalledUserCount": 5
 }
 ```
-
 
 
 

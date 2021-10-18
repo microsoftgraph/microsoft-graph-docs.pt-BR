@@ -2,15 +2,15 @@
 title: Excluir windows10MobileCompliancePolicy
 description: Exclui windows10MobileCompliancePolicy.
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 2c1e4753e02a4b6ccb098b29a6d2c43a857a679d
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 4de01c0488b3a8a6c6fd9ee06c4042f56d359832
+ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59130724"
+ms.lasthandoff: 10/18/2021
+ms.locfileid: "60453930"
 ---
 # <a name="delete-windows10mobilecompliancepolicy"></a>Excluir windows10MobileCompliancePolicy
 
@@ -63,7 +63,6 @@ Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado a
 ``` http
 HTTP/1.1 204 No Content
 ```
-
 
 
 

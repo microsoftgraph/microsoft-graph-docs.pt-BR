@@ -2,15 +2,15 @@
 title: Tipo de recurso mobileAppContentFile
 description: Contém propriedades de um único arquivo de instalação associado uma versão específica de mobileAppContent.
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 36d626a21e76b89d2fa3e3f26ba62875c439a281
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 33b2eb4d6533c83bf1021108c60647fecd0d6813
+ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59137599"
+ms.lasthandoff: 10/18/2021
+ms.locfileid: "60445976"
 ---
 # <a name="mobileappcontentfile-resource-type"></a>Tipo de recurso mobileAppContentFile
 
@@ -36,9 +36,9 @@ Contém propriedades de um único arquivo de instalação associado uma versão 
 |:---|:---|:---|
 |azureStorageUri|Cadeia de caracteres|O URI de Armazenamento do Azure.|
 |isCommitted|Booliano|Um valor que indica se o arquivo tem está confirmado.|
-|id|Cadeia de caracteres|A ID do arquivo.|
+|id|String|A ID do arquivo.|
 |createdDateTime|DateTimeOffset|A hora em que o arquivo foi criado.|
-|nome|String|O nome do arquivo.|
+|name|Cadeia de caracteres|O nome do arquivo.|
 |size|Int64|O tamanho do arquivo antes da criptografia.|
 |sizeEncrypted|Int64|O tamanho do arquivo após a criptografia.|
 |azureStorageUriExpirationDateTime|DateTimeOffset|A hora de expiração do URI do armazenamento do Azure.|
@@ -71,7 +71,6 @@ Veja a seguir uma representação JSON do recurso.
   "uploadState": "String"
 }
 ```
-
 
 
 

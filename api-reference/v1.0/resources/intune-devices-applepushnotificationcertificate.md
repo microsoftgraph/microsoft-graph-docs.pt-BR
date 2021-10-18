@@ -2,15 +2,15 @@
 title: Tipo de recurso applePushNotificationCertificate
 description: Certificado de notificação por push da Apple.
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: a4a1dedbf0571111ccae4ca484f57875fbcaad72
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 8160cfaa26e564d790bc7e678ea24b7369d8bedb
+ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59098836"
+ms.lasthandoff: 10/18/2021
+ms.locfileid: "60449009"
 ---
 # <a name="applepushnotificationcertificate-resource-type"></a>Tipo de recurso applePushNotificationCertificate
 
@@ -30,7 +30,7 @@ Certificado de notificação por push da Apple.
 ## <a name="properties"></a>Propriedades
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|id|Cadeia de caracteres|O identificador exclusivo do certificado.|
+|id|String|O identificador exclusivo do certificado.|
 |appleIdentifier|Cadeia de caracteres|Id da Apple da conta usada para criar o certificado de push do MDM.|
 |topicIdentifier|Cadeia de caracteres|ID do tópico.|
 |lastModifiedDateTime|DateTimeOffset|Data e hora da última modificação de certificado de notificações por push da Apple.|
@@ -61,7 +61,6 @@ Veja a seguir uma representação JSON do recurso.
   "certificate": "String"
 }
 ```
-
 
 
 

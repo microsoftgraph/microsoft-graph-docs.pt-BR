@@ -2,15 +2,15 @@
 title: Acessar windowsInformationProtection
 description: Leia as propriedades e as relações do objeto windowsInformationProtection.
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 341b043333b42cab4b693983dfa8e7a95781effc
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 4885d0d2ab10d9aa6cac198e7539bd554bb14eb7
+ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59147161"
+ms.lasthandoff: 10/18/2021
+ms.locfileid: "60453888"
 ---
 # <a name="get-windowsinformationprotection"></a>Acessar windowsInformationProtection
 
@@ -198,7 +198,6 @@ Content-Length: 4231
   }
 }
 ```
-
 
 
 

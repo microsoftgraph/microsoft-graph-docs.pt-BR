@@ -2,15 +2,15 @@
 title: Atualizar deviceComplianceScheduledActionForRule
 description: Atualizar as propriedades de um objeto deviceComplianceScheduledActionForRule.
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 9e262ea1ca34936313af70312b2883f19f5bc4b2
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 5977a0b743271afe6ab92cdac8efd13f1323f357
+ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59079775"
+ms.lasthandoff: 10/18/2021
+ms.locfileid: "60451644"
 ---
 # <a name="update-devicecompliancescheduledactionforrule"></a>Atualizar deviceComplianceScheduledActionForRule
 
@@ -52,7 +52,7 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar [deviceC
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
 |id|Cadeia de caracteres|Chave da entidade.|
-|ruleName|Cadeia de caracteres|Nome da regra à qual essa ação agendada se aplica.|
+|ruleName|Cadeia de caracteres|Nome da regra à qual essa ação agendada se aplica. As ações agendadas no momento são criadas por política em vez de por regra, portanto RuleName é sempre definido como valor padrão PasswordRequired.|
 
 
 
@@ -87,7 +87,6 @@ Content-Length: 163
   "ruleName": "Rule Name value"
 }
 ```
-
 
 
 

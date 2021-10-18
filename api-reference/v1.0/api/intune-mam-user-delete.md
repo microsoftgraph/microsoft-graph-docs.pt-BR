@@ -2,15 +2,15 @@
 title: Excluir usuário
 description: Exclui usuário.
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 147e4adc450a89af03b28cb0311773ab388831b5
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 577a8804dd017c00e41c030c8d52a08eaa3c9c7f
+ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59147210"
+ms.lasthandoff: 10/18/2021
+ms.locfileid: "60457782"
 ---
 # <a name="delete-user"></a>Excluir usuário
 
@@ -63,7 +63,6 @@ Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado a
 ``` http
 HTTP/1.1 204 No Content
 ```
-
 
 
 

@@ -2,15 +2,15 @@
 title: tipo de número ratingUnitedStatesMoviesType
 description: Rótulos de classificação de filmes nos Estados Unidos
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: b9497d9514f98ef9fd1f10e498d025dd587c413d
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 145ae32df41ad90d24727ac6c9b736aeb00f483e
+ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59044619"
+ms.lasthandoff: 10/18/2021
+ms.locfileid: "60447386"
 ---
 # <a name="ratingunitedstatesmoviestype-enum-type"></a>tipo de número ratingUnitedStatesMoviesType
 
@@ -28,9 +28,8 @@ Rótulos de classificação de filmes nos Estados Unidos
 |geral|2|G, todas as idades admitidas|
 |parentalGuidance|3|PG, alguns materiais podem não ser adequados para crianças|
 |parentalGuidance13|4 |PG13, alguns materiais podem ser inadequados para crianças menores de 13 anos|
-|restrito|5 |R, os visualizadores com menos de 17 anos exigem o pai ou o responsável adulto que acompanham|
+|restrito|5|R, os visualizadores com menos de 17 anos exigem o pai ou o responsável adulto que acompanham|
 |adults|6 |NC17, somente para adultos|
-
 
 
 

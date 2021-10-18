@@ -2,15 +2,15 @@
 title: Listar windows81CompliancePolicies
 description: Listar propriedades e relações dos objetos windows81CompliancePolicy.
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 8409c2cba9a4e9b84dc8b08fee4abde597e31997
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: bbff4124a3ede1da828ac71663deb9a423a2e96e
+ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59147266"
+ms.lasthandoff: 10/18/2021
+ms.locfileid: "60454907"
 ---
 # <a name="list-windows81compliancepolicies"></a>Listar windows81CompliancePolicies
 
@@ -90,7 +90,6 @@ Content-Length: 879
   ]
 }
 ```
-
 
 
 
