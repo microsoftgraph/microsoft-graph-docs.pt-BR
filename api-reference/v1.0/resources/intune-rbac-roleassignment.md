@@ -2,15 +2,15 @@
 title: Tipo de recurso roleAssignment
 description: O recurso de Atribuição de Função. Atribuições de função unem uma definição de função a membros e escopos. Pode haver uma ou mais atribuições de função por função. Aplica-se às funções internas e personalizadas
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 24d37379db351f059b6309d3d86223ae1bb5512d
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 0545e93bce9698b5af8994df19f7d08c6fbe5c7a
+ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59126797"
+ms.lasthandoff: 10/18/2021
+ms.locfileid: "60457369"
 ---
 # <a name="roleassignment-resource-type"></a>Tipo de recurso roleAssignment
 
@@ -32,7 +32,7 @@ O recurso de Atribuição de Função. Atribuições de função unem uma defini
 ## <a name="properties"></a>Propriedades
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|id|String|Chave da entidade. É somente leitura e gerada automaticamente.|
+|id|Cadeia de caracteres|Chave da entidade. É somente leitura e gerada automaticamente.|
 |displayName|String|O nome de exibição ou nome amigável da atribuição de função.|
 |description|Cadeia de caracteres|Descrição da atribuição de função.|
 |resourceScopes|Coleção de cadeias de caracteres|Lista de IDs de grupos de segurança de membros de escopo da função.  Estas são as IDs do Azure Active Directory.|
@@ -61,7 +61,6 @@ Veja a seguir uma representação JSON do recurso.
   ]
 }
 ```
-
 
 
 

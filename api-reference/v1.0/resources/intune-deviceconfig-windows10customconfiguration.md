@@ -2,15 +2,15 @@
 title: Tipo de recurso windows10CustomConfiguration
 description: Este tópico fornece descrições dos métodos declarados, das propriedades e das relações expostos pelo recurso windows10CustomConfiguration.
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 500a88c7bb86861a9dd2c44646b32fc066078c40
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: ae952175a418e618a91d17cdbdd858698e7f346d
+ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59062653"
+ms.lasthandoff: 10/18/2021
+ms.locfileid: "60457292"
 ---
 # <a name="windows10customconfiguration-resource-type"></a>Tipo de recurso windows10CustomConfiguration
 
@@ -35,11 +35,11 @@ Herda de [deviceConfiguration](../resources/intune-deviceconfig-deviceconfigurat
 ## <a name="properties"></a>Propriedades
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|id|String|Chave da entidade. Herdada de [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
+|id|Cadeia de caracteres|Chave da entidade. Herdada de [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
 |lastModifiedDateTime|DateTimeOffset|DateTime da última modificação do objeto. Herdada de [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
 |createdDateTime|DateTimeOffset|DateTime em que o objeto foi criado. Herdada de [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
 |description|Cadeia de caracteres|O administrador forneceu a descrição da Configuração do dispositivo. Herdada de [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
-|displayName|String|O administrador forneceu o nome da Configuração do dispositivo. Herdada de [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
+|displayName|Cadeia de caracteres|O administrador forneceu o nome da Configuração do dispositivo. Herdada de [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
 |versão|Int32|Versão da configuração do dispositivo. Herdada de [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
 |omaSettings|Coleção [omaSetting](../resources/intune-deviceconfig-omasetting.md)|Configurações OMA. Essa coleção pode conter um máximo de 1000 elementos.|
 
@@ -80,7 +80,6 @@ Veja a seguir uma representação JSON do recurso.
   ]
 }
 ```
-
 
 
 

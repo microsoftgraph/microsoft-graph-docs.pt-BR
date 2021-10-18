@@ -2,15 +2,15 @@
 title: Atualizar windowsUniversalAppX
 description: Atualiza as propriedades de um objeto windowsUniversalAppX.
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: b5634e5e5e9d92629401194f594bc30b4376f203
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 8c51b5402b06d2d73f2f1ab2b3f558dfd86d6dc2
+ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59056484"
+ms.lasthandoff: 10/18/2021
+ms.locfileid: "60438643"
 ---
 # <a name="update-windowsuniversalappx"></a>Atualizar windowsUniversalAppX
 
@@ -25,8 +25,8 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 |Tipo de permissão|Permissões (da com menos para a com mais privilégios)|
 |:---|:---|
-|Delegada (conta corporativa ou de estudante)|DeviceManagementApps.ReadWrite.All|
-|Delegada (conta pessoal da Microsoft)|Sem suporte.|
+|Delegado (conta corporativa ou de estudante)|DeviceManagementApps.ReadWrite.All|
+|Delegado (conta pessoal da Microsoft)|Sem suporte.|
 |Aplicativo|DeviceManagementApps.ReadWrite.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
@@ -51,8 +51,8 @@ A tabela a seguir mostra as propriedades obrigatórias ao criar [windowsUniversa
 
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|id|String|Chave da entidade. Herdado de [mobileApp](../resources/intune-apps-mobileapp.md)|
-|displayName|String|O título do aplicativo importado ou definido pelo administrador. Herdado de [mobileApp](../resources/intune-apps-mobileapp.md)|
+|id|Cadeia de caracteres|Chave da entidade. Herdado de [mobileApp](../resources/intune-apps-mobileapp.md)|
+|displayName|Cadeia de caracteres|O título do aplicativo importado ou definido pelo administrador. Herdado de [mobileApp](../resources/intune-apps-mobileapp.md)|
 |description|Cadeia de caracteres|A descrição do aplicativo. Herdado de [mobileApp](../resources/intune-apps-mobileapp.md)|
 |publicador|String|O publicador do aplicativo. Herdado de [mobileApp](../resources/intune-apps-mobileapp.md)|
 |largeIcon|[mimeContent](../resources/intune-shared-mimecontent.md)|O ícone grande, a ser exibido nos detalhes do aplicativo e usado para o carregamento do ícone. Herdado de [mobileApp](../resources/intune-apps-mobileapp.md)|
@@ -172,7 +172,6 @@ Content-Length: 1361
   "identityVersion": "Identity Version value"
 }
 ```
-
 
 
 

@@ -2,15 +2,15 @@
 title: tipo de número ratingIrelandTelevisionType
 description: Rótulos de classificação de conteúdo de TV na Irlanda
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: d8d3549fb247ecfc7e8dda68b216d046a7c85603
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: a037543c26acdb0e61fee01079e62794a577d551
+ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59128204"
+ms.lasthandoff: 10/18/2021
+ms.locfileid: "60446396"
 ---
 # <a name="ratingirelandtelevisiontype-enum-type"></a>tipo de número ratingIrelandTelevisionType
 
@@ -28,9 +28,8 @@ Rótulos de classificação de conteúdo de TV na Irlanda
 |geral|2|A classificação ga é adequada para todos os públicos|
 |children|3|A classificação ch é adequada para crianças|
 |youngAdults|4 |A classificação ya é adequada para audiências adolescentes|
-|parentalSupervision|5 |A classificação PS convida pais e responsáveis a considerar restringir o acesso dos filhos|
+|parentalSupervision|5|A classificação PS convida pais e responsáveis a considerar restringir o acesso dos filhos|
 |mature|6 |A classificação ma é adequada para os adultos|
-
 
 
 

@@ -2,15 +2,15 @@
 title: Atualizar deviceAppManagement
 description: Atualizar as propriedades de um objeto de deviceAppManagement.
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 7a7997a242b1a56aa07137500bf24594b2818881
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: e40d5cbcecc1f8a5bcaeb6c6f1c1ff08b20bae0c
+ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59146937"
+ms.lasthandoff: 10/18/2021
+ms.locfileid: "60447886"
 ---
 # <a name="update-deviceappmanagement"></a>Atualizar deviceAppManagement
 
@@ -51,7 +51,7 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar [deviceA
 
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|id|Cadeia de caracteres|Ainda não documentado|
+|id|String|Ainda não documentado|
 |microsoftStoreForBusinessLastSuccessfulSyncDateTime|DateTimeOffset|A última vez que os aplicativos da Microsoft Store para Empresas foram sincronizados com êxito para essa conta.|
 |isEnabledForMicrosoftStoreForBusiness|Boolean|Se a conta está ativada para sincronizar aplicativos do Microsoft Store para Empresa.|
 |microsoftStoreForBusinessLanguage|String|As informações sobre a localidade usada para sincronizar aplicativos do Microsoft Store para Empresas. Culturas específicas de um país/região. Os nomes dessas culturas seguem a RFC 4646 (Windows Vista e mais recentes). O formato é <languagecode2>-<country/regioncode2>, onde <languagecode2> é um código em duas letras minúsculas derivado da ISO 639-1 e <country/regioncode2> é um código em duas letras maiúsculas derivado da ISO 3166. Por exemplo, en-US para inglês (Estados Unidos) é uma cultura específica.|
@@ -96,7 +96,6 @@ Content-Length: 443
   "microsoftStoreForBusinessLastCompletedApplicationSyncTime": "2017-01-01T00:02:00.0421137-08:00"
 }
 ```
-
 
 
 

@@ -2,15 +2,15 @@
 title: Get termsAndConditionsAcceptanceStatus
 description: Ler propriedades e relações do objeto termsAndConditionsAcceptanceStatus.
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 3ca7b031e51e32a05f10fc079f9e4fd6647dd1a4
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 799828d73a3deed6ae7dc9d91bd79a41d6908559
+ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59026620"
+ms.lasthandoff: 10/18/2021
+ms.locfileid: "60455180"
 ---
 # <a name="get-termsandconditionsacceptancestatus"></a>Get termsAndConditionsAcceptanceStatus
 
@@ -25,8 +25,8 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 |Tipo de permissão|Permissões (da com menos para a com mais privilégios)|
 |:---|:---|
-|Delegada (conta corporativa ou de estudante)|DeviceManagementServiceConfig.Read.All, DeviceManagementServiceConfig.ReadWrite.All|
-|Delegada (conta pessoal da Microsoft)|Sem suporte.|
+|Delegado (conta corporativa ou de estudante)|DeviceManagementServiceConfig.Read.All, DeviceManagementServiceConfig.ReadWrite.All|
+|Delegado (conta pessoal da Microsoft)|Sem suporte.|
 |Aplicativo|DeviceManagementServiceConfig.Read.All, DeviceManagementServiceConfig.ReadWrite.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
@@ -79,7 +79,6 @@ Content-Length: 344
   }
 }
 ```
-
 
 
 

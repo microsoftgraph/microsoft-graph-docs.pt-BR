@@ -2,15 +2,15 @@
 title: Acessar windows10CustomConfiguration
 description: Leia as propriedades e as relações do objeto windows10CustomConfiguration.
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: d0b1aacac80d93b0d7cb708dabd96887037b1d5d
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: e91beed55a6ce8026a79876e760a3adc13269200
+ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59090387"
+ms.lasthandoff: 10/18/2021
+ms.locfileid: "60454998"
 ---
 # <a name="get-windows10customconfiguration"></a>Acessar windows10CustomConfiguration
 
@@ -88,7 +88,6 @@ Content-Length: 599
   }
 }
 ```
-
 
 
 

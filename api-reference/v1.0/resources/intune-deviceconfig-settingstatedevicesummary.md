@@ -2,15 +2,15 @@
 title: Tipo de recurso settingStateDeviceSummary
 description: Configuração e política de conformidade de dispositivo para um resumo de estado de configuração
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 411e6a3baa7204cf62b31744e1ea252950c97bce
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 9a1ea05771dfc190a3b428500e41671323f2f831
+ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59067175"
+ms.lasthandoff: 10/18/2021
+ms.locfileid: "60447844"
 ---
 # <a name="settingstatedevicesummary-resource-type"></a>Tipo de recurso settingStateDeviceSummary
 
@@ -69,7 +69,6 @@ Veja a seguir uma representação JSON do recurso.
   "conflictDeviceCount": 1024
 }
 ```
-
 
 
 

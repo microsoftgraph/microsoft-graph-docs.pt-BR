@@ -2,15 +2,15 @@
 title: Criar roleDefinition
 description: Criar um novo objeto roleDefinition
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 32011cd322f53c90d2e1c9c22d40f5a3e3bed869
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: c88becbcc57254a561a52519bfe27c5243c8f98b
+ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59026312"
+ms.lasthandoff: 10/18/2021
+ms.locfileid: "60457670"
 ---
 # <a name="create-roledefinition"></a>Criar roleDefinition
 
@@ -25,8 +25,8 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 |Tipo de permissão|Permissões (da com menos para a com mais privilégios)|
 |:---|:---|
-|Delegada (conta corporativa ou de estudante)|DeviceManagementRBAC.ReadWrite.All|
-|Delegada (conta pessoal da Microsoft)|Sem suporte.|
+|Delegado (conta corporativa ou de estudante)|DeviceManagementRBAC.ReadWrite.All|
+|Delegado (conta pessoal da Microsoft)|Sem suporte.|
 |Aplicativo|DeviceManagementRBAC.ReadWrite.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
@@ -52,7 +52,7 @@ A tabela a seguir mostra as propriedades obrigatórias ao criar roleDefinition.
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
 |id|Cadeia de caracteres|Chave da entidade. É somente leitura e gerada automaticamente.|
-|displayName|String|Nome de exibição da definição de Função.|
+|displayName|Cadeia de caracteres|Nome de exibição da definição de Função.|
 |description|Cadeia de caracteres|Descrição da definição de Função.|
 |rolePermissions|Coleção [rolePermission](../resources/intune-rbac-rolepermission.md)|Lista de Permissões de Função que esta função está autorizada a executar. Elas devem corresponder ao actionName definido como parte de rolePermission.|
 |isBuiltIn|Booliano|Tipo de Função. Defina como True se for uma definição de função interna ou como False se for uma definição de função personalizada.|
@@ -126,7 +126,6 @@ Content-Length: 629
   "isBuiltIn": true
 }
 ```
-
 
 
 

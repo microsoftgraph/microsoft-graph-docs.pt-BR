@@ -2,15 +2,15 @@
 title: Obter windowsInformationProtectionAppLockerFile
 description: Ler propriedades e relações do objeto windowsInformationProtectionAppLockerFile.
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 8c7649a7d8ed9c35806f20b1cc53acb1168fe317
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 074a93fca5a0ba8c91eef3d04d529fe96d181558
+ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59147133"
+ms.lasthandoff: 10/18/2021
+ms.locfileid: "60447106"
 ---
 # <a name="get-windowsinformationprotectionapplockerfile"></a>Obter windowsInformationProtectionAppLockerFile
 
@@ -82,7 +82,6 @@ Content-Length: 291
   }
 }
 ```
-
 
 
 

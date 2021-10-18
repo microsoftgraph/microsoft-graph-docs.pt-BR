@@ -2,15 +2,15 @@
 title: Tipo de recurso deviceConfigurationUserStatus
 description: Ainda não documentado
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 2556a6e01039a4e1e3a4fe58db9e78b864843764
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: a5794f7141baeac2bb71048fce6971ba0a97b783
+ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59142786"
+ms.lasthandoff: 10/18/2021
+ms.locfileid: "60450872"
 ---
 # <a name="deviceconfigurationuserstatus-resource-type"></a>Tipo de recurso deviceConfigurationUserStatus
 
@@ -61,7 +61,6 @@ Veja a seguir uma representação JSON do recurso.
   "userPrincipalName": "String"
 }
 ```
-
 
 
 

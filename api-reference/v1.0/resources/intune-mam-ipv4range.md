@@ -2,15 +2,15 @@
 title: Tipo de recurso iPv4Range
 description: Definição de Intervalo IPv4.
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 07adf8829b518f4985ec5bae77a3fbabfa7ea2b6
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: c8365c1efdb79fd1d04f3268d30cf34a2a30c6bd
+ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59089470"
+ms.lasthandoff: 10/18/2021
+ms.locfileid: "60453608"
 ---
 # <a name="ipv4range-resource-type"></a>Tipo de recurso iPv4Range
 
@@ -46,7 +46,6 @@ Veja a seguir uma representação JSON do recurso.
   "upperAddress": "String"
 }
 ```
-
 
 
 

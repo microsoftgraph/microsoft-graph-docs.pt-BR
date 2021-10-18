@@ -2,15 +2,15 @@
 title: Acessar deviceCompliancePolicyAssignment
 description: Leia as propriedades e as relações do objeto deviceCompliancePolicyAssignment.
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 1d698235d39178081484ec3af76c524f48fb44ca
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: d62260710f45c57bb0b02e218e3fb1a5fbb93258
+ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59073496"
+ms.lasthandoff: 10/18/2021
+ms.locfileid: "60454107"
 ---
 # <a name="get-devicecompliancepolicyassignment"></a>Acessar deviceCompliancePolicyAssignment
 
@@ -25,8 +25,8 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 |Tipo de permissão|Permissões (da com menos para a com mais privilégios)|
 |:---|:---|
-|Delegada (conta corporativa ou de estudante)|DeviceManagementConfiguration.Read.All, DeviceManagementConfiguration.ReadWrite.All|
-|Delegada (conta pessoal da Microsoft)|Sem suporte.|
+|Delegado (conta corporativa ou de estudante)|DeviceManagementConfiguration.Read.All, DeviceManagementConfiguration.ReadWrite.All|
+|Delegado (conta pessoal da Microsoft)|Sem suporte.|
 |Aplicativo|DeviceManagementConfiguration.Read.All, DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
@@ -79,7 +79,6 @@ Content-Length: 304
   }
 }
 ```
-
 
 
 

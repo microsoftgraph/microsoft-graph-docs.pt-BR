@@ -2,15 +2,15 @@
 title: Criar managedDeviceMobileAppConfigurationDeviceStatus
 description: Crie um novo objeto managedDeviceMobileAppConfigurationDeviceStatus.
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: e5e9dde2a386c3e5f19d00f559a6121151395ec7
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 723917f0bdb9c17577ddbdfa45ca4a44c0aa7e68
+ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59080020"
+ms.lasthandoff: 10/18/2021
+ms.locfileid: "60449867"
 ---
 # <a name="create-manageddevicemobileappconfigurationdevicestatus"></a>Criar managedDeviceMobileAppConfigurationDeviceStatus
 
@@ -51,14 +51,14 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar managedD
 
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|id|String|Chave da entidade.|
+|id|Cadeia de caracteres|Chave da entidade.|
 |deviceDisplayName|Cadeia de caracteres|Nome do dispositivo de DevicePolicyStatus.|
 |userName|Cadeia de caracteres|O nome de usuário que está sendo relatado|
 |deviceModel|Cadeia de caracteres|O modelo do dispositivo que está sendo relatado|
 |complianceGracePeriodExpirationDateTime|DateTimeOffset|DateTime em que o período de cortesia de conformidade do dispositivo termina|
 |status|[complianceStatus](../resources/intune-shared-compliancestatus.md)|Status de conformidade do relatório de políticas. Os valores possíveis são: `unknown`, `notApplicable`, `compliant`, `remediated`, `nonCompliant`, `error`, `conflict`, `notAssigned`.|
 |lastReportedDateTime|DateTimeOffset|Data e hora da última modificação do relatório de políticas.|
-|userPrincipalName|Cadeia de caracteres|UserPrincipalName.|
+|userPrincipalName|String|UserPrincipalName.|
 
 
 
@@ -105,7 +105,6 @@ Content-Length: 494
   "userPrincipalName": "User Principal Name value"
 }
 ```
-
 
 
 

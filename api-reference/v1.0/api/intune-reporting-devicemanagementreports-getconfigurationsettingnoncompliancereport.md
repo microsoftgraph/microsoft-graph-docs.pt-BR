@@ -2,15 +2,15 @@
 title: ação getConfigurationSettingNonComplianceReport
 description: Ainda não documentado
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 1c0390c9918a9eaa2afab6afc444f8621d4383cb
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: c85d95a47c73394903a08fa6968c6483275496dd
+ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59063045"
+ms.lasthandoff: 10/18/2021
+ms.locfileid: "60457418"
 ---
 # <a name="getconfigurationsettingnoncompliancereport-action"></a>ação getConfigurationSettingNonComplianceReport
 
@@ -25,8 +25,8 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 |Tipo de permissão|Permissões (da com menos para a com mais privilégios)|
 |:---|:---|
-|Delegada (conta corporativa ou de estudante)|DeviceManagementConfiguration.Read.All, DeviceManagementConfiguration.ReadWrite.All, DeviceManagementApps.Read.All, DeviceManagementApps.ReadWrite.All, DeviceManagementManagedDevices.Read.All, DeviceManagementManagedDevices.ReadWrite.All|
-|Delegada (conta pessoal da Microsoft)|Sem suporte.|
+|Delegado (conta corporativa ou de estudante)|DeviceManagementConfiguration.Read.All, DeviceManagementConfiguration.ReadWrite.All, DeviceManagementApps.Read.All, DeviceManagementApps.ReadWrite.All, DeviceManagementManagedDevices.Read.All, DeviceManagementManagedDevices.ReadWrite.All|
+|Delegado (conta pessoal da Microsoft)|Sem suporte.|
 |Aplicativo|DeviceManagementConfiguration.Read.All, DeviceManagementConfiguration.ReadWrite.All, DeviceManagementApps.Read.All, DeviceManagementApps.ReadWrite.All, DeviceManagementManagedDevices.Read.All, DeviceManagementManagedDevices.ReadWrite.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
@@ -51,7 +51,7 @@ A tabela a seguir mostra os parâmetros que podem ser usados com esta ação.
 
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|nome|Cadeia de caracteres|Ainda não documentado|
+|name|Cadeia de caracteres|Ainda não documentado|
 |select|String collection|Ainda não documentado|
 |search|String|Ainda não documentado|
 |groupBy|String collection|Ainda não documentado|
@@ -106,7 +106,6 @@ Content-Length: 115
   "value": "Z2V0Q29uZmlndXJhdGlvblNldHRpbmdOb25Db21wbGlhbmNlUmVwb3J0IEludHVuZSBEb2MgU2FtcGxlIDIxMDczMDYzMzQ="
 }
 ```
-
 
 
 

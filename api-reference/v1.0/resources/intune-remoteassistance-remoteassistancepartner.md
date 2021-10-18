@@ -2,15 +2,15 @@
 title: Tipo de recurso remoteAssistancePartner
 description: Os recursos RemoteAssistPartner representam os metadados e o status de um determinado serviço de parceiro de Assistência Remota.
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: cc06437d0a7a1282217d920cecd40944a8c93ea9
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 6857d47fbed69bc74d92bce1e7ccb63dc84059e1
+ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59134847"
+ms.lasthandoff: 10/18/2021
+ms.locfileid: "60448938"
 ---
 # <a name="remoteassistancepartner-resource-type"></a>Tipo de recurso remoteAssistancePartner
 
@@ -61,7 +61,6 @@ Veja a seguir uma representação JSON do recurso.
   "lastConnectionDateTime": "String (timestamp)"
 }
 ```
-
 
 
 

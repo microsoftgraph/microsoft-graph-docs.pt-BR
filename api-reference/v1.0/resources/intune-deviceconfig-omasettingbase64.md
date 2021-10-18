@@ -2,15 +2,15 @@
 title: Tipo de recurso omaSettingBase64
 description: Definição de Base64 das configurações de OMA.
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: b6f3209bf71f99a5ea783a714ee70a2cca953a5d
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 454d0c02e103faf2fa7d7b9af7110dbb069338fc
+ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59118317"
+ms.lasthandoff: 10/18/2021
+ms.locfileid: "60453320"
 ---
 # <a name="omasettingbase64-resource-type"></a>Tipo de recurso omaSettingBase64
 
@@ -27,7 +27,7 @@ Herda de [omaSetting](../resources/intune-deviceconfig-omasetting.md)
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
 |displayName|Cadeia de caracteres|Nome de exibição. Herda de [omaSetting](../resources/intune-deviceconfig-omasetting.md)|
-|description|String|Descrição. Herda de [omaSetting](../resources/intune-deviceconfig-omasetting.md)|
+|description|Cadeia de caracteres|Descrição. Herda de [omaSetting](../resources/intune-deviceconfig-omasetting.md)|
 |omaUri|Cadeia de caracteres|OMA. Herda de [omaSetting](../resources/intune-deviceconfig-omasetting.md)|
 |fileName|Cadeia de caracteres|Nome de arquivo associado com a propriedade do valor (*.cer | *.crt | *.p7b | *.bin).|
 |value|Cadeia de caracteres|Valor. (Cadeia de caracteres codificada em Base64)|
@@ -52,7 +52,6 @@ Veja a seguir uma representação JSON do recurso.
   "value": "String"
 }
 ```
-
 
 
 

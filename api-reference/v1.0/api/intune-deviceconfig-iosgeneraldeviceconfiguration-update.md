@@ -2,15 +2,15 @@
 title: Atualizar iosGeneralDeviceConfiguration
 description: Atualizar as propriedades de um objeto iosGeneralDeviceConfiguration.
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: d0fbaccd3f92a018a7fef57858527d7f216e9c1e
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 8c8b383de794511b646736961366b51c86c18757
+ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59099760"
+ms.lasthandoff: 10/18/2021
+ms.locfileid: "60451476"
 ---
 # <a name="update-iosgeneraldeviceconfiguration"></a>Atualizar iosGeneralDeviceConfiguration
 
@@ -51,7 +51,7 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar [iosGene
 
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|id|String|Chave da entidade. Herdada de [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
+|id|Cadeia de caracteres|Chave da entidade. Herdada de [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
 |lastModifiedDateTime|DateTimeOffset|DateTime da última modificação do objeto. Herdada de [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
 |createdDateTime|DateTimeOffset|DateTime em que o objeto foi criado. Herdada de [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
 |description|String|O administrador forneceu a descrição da Configuração do dispositivo. Herdada de [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
@@ -133,7 +133,7 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar [iosGene
 |kioskModeAllowVolumeButtons|Boolean|Indica se o uso dos botões de volume será permitido ou não no modo quiosque. A funcionalidade dessa propriedade é redundante com o padrão do sistema operacional e é preterida. Use KioskModeBlockVolumeButtons.|
 |kioskModeAllowZoomSettings|Boolean|Indica se o acesso às configurações de zoom será permitido ou não no modo quiosque.|
 |kioskModeAppStoreUrl|String|URL na loja de aplicativos do aplicativo para uso no modo de quiosque. Use se KioskModeManagedAppId não for conhecido.|
-|kioskModeBuiltInAppId|String|ID para aplicativos integrados a usar no modo de quiosque. Usado quando KioskModeManagedAppId e KioskModeAppStoreUrl não estão definidos.|
+|kioskModeBuiltInAppId|Cadeia de caracteres|ID para aplicativos integrados a usar no modo de quiosque. Usado quando KioskModeManagedAppId e KioskModeAppStoreUrl não estão definidos.|
 |kioskModeRequireAssistiveTouch|Boolean|Indica se o toque assistencial deve ou não ser exigido no modo quiosque.|
 |kioskModeRequireColorInversion|Boolean|Indica se a inversão de cores deve ou não ser exigida no modo quiosque.|
 |kioskModeRequireMonoAudio|Boolean|Indica se o áudio mono deve ou não ser exigido no modo quiosque.|
@@ -652,7 +652,6 @@ Content-Length: 8013
   "wiFiConnectOnlyToConfiguredNetworks": true
 }
 ```
-
 
 
 

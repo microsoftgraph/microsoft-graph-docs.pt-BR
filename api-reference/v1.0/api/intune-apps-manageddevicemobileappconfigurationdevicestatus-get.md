@@ -2,15 +2,15 @@
 title: Obter managedDeviceMobileAppConfigurationDeviceStatus
 description: Leia propriedades e relações do objeto managedDeviceMobileAppConfigurationDeviceStatus.
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 706052d02cc897a7e8ad8c2e78c29c79ce236ac2
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 801e03b917d04244c57b3d3b37d8da464021851f
+ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59008122"
+ms.lasthandoff: 10/18/2021
+ms.locfileid: "60449860"
 ---
 # <a name="get-manageddevicemobileappconfigurationdevicestatus"></a>Obter managedDeviceMobileAppConfigurationDeviceStatus
 
@@ -25,8 +25,8 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 |Tipo de permissão|Permissões (da com menos para a com mais privilégios)|
 |:---|:---|
-|Delegada (conta corporativa ou de estudante)|DeviceManagementApps.Read.All, DeviceManagementApps.ReadWrite.All|
-|Delegada (conta pessoal da Microsoft)|Sem suporte.|
+|Delegado (conta corporativa ou de estudante)|DeviceManagementApps.Read.All, DeviceManagementApps.ReadWrite.All|
+|Delegado (conta pessoal da Microsoft)|Sem suporte.|
 |Aplicativo|DeviceManagementApps.Read.All, DeviceManagementApps.ReadWrite.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
@@ -82,7 +82,6 @@ Content-Length: 531
   }
 }
 ```
-
 
 
 

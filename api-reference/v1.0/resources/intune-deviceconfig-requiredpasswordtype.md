@@ -2,15 +2,15 @@
 title: tipo denum requiredPasswordType
 description: Valores possíveis de senhas necessárias.
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 5e25a5ffa672691436455d497a58d246b4474226
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 3abcf8a1863fb795645c83aeb17fbe54f11637a9
+ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59067238"
+ms.lasthandoff: 10/18/2021
+ms.locfileid: "60454795"
 ---
 # <a name="requiredpasswordtype-enum-type"></a>tipo denum requiredPasswordType
 
@@ -26,7 +26,6 @@ Valores possíveis de senhas necessárias.
 |deviceDefault|0|Valor padrão do dispositivo, sem intenção.|
 |alfanumérico|1|Senha alfanumérica necessária.|
 |numeric|2|Senha numérica necessária.|
-
 
 
 

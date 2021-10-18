@@ -2,15 +2,15 @@
 title: Tipo denum defenderCloudBlockLevelType
 description: Valores possíveis do Nível de Bloqueio na Nuvem
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: d3af9d2d259eb7b92be1973fdfb1d9a1968c335f
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 14752803e22cdb991ecf9b7b93f3b01e49993efe
+ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59078802"
+ms.lasthandoff: 10/18/2021
+ms.locfileid: "60451525"
 ---
 # <a name="defendercloudblockleveltype-enum-type"></a>Tipo denum defenderCloudBlockLevelType
 
@@ -27,7 +27,6 @@ Valores possíveis do Nível de Bloqueio na Nuvem
 |high|1|Alto aplica um nível forte de detecção.|
 |highPlus|2|High + usa o nível Alto e aplica medidas de proteção de adição|
 |zeroTolerance|3|Tolerância zero bloqueia todos os executáveis desconhecidos|
-
 
 
 

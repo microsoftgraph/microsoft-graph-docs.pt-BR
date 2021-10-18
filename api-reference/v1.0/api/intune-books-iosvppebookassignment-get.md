@@ -2,15 +2,15 @@
 title: Get iosVppEBookAssignment
 description: Ler propriedades e relações do objeto iosVppEBookAssignment.
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 7827deb29c9bdb646b898bf7ac8fe73b366aa428
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: bb29b2149f50ff0bd8f21f4b9ee0148e572137ed
+ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59099872"
+ms.lasthandoff: 10/18/2021
+ms.locfileid: "60447774"
 ---
 # <a name="get-iosvppebookassignment"></a>Get iosVppEBookAssignment
 
@@ -79,7 +79,6 @@ Content-Length: 273
   }
 }
 ```
-
 
 
 

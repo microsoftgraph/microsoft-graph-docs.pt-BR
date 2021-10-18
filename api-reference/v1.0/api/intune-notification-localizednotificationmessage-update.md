@@ -2,15 +2,15 @@
 title: Atualizar localizedNotificationMessage
 description: Atualizar as propriedades de um objeto localizedNotificationMessage.
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 412d98d30f01b783e3c45379be0b3df6f0cf6625
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: e9278e7d5cc0e64b87e29353ab8173582057af45
+ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59147035"
+ms.lasthandoff: 10/18/2021
+ms.locfileid: "60444965"
 ---
 # <a name="update-localizednotificationmessage"></a>Atualizar localizedNotificationMessage
 
@@ -54,7 +54,7 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar [localiz
 |id|String|Chave da entidade.|
 |lastModifiedDateTime|DateTimeOffset|DateTime da última modificação do objeto.|
 |localidade|Cadeia de caracteres|A localidade para a qual esta mensagem se destina.|
-|assunto|Cadeia de caracteres|O assunto do modelo da mensagem.|
+|assunto|String|O assunto do modelo da mensagem.|
 |messageTemplate|Cadeia de caracteres|O conteúdo do modelo da mensagem.|
 |isDefault|Booliano|Sinaliza para indicar se esta é ou não a localidade padrão do fallback de idioma. Esse sinalizador só pode ser definido. Para remover a definição, defina esta propriedade como verdadeira na outra Mensagem de notificação localizada.|
 
@@ -98,7 +98,6 @@ Content-Length: 313
   "isDefault": true
 }
 ```
-
 
 
 

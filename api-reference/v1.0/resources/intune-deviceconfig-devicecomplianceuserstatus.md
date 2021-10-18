@@ -2,15 +2,15 @@
 title: Tipo de recurso deviceComplianceUserStatus
 description: Ainda não documentado
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: b1aa2d614d4bd5c2979e2d0eaa847f7e8b95c431
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 95aa02b20ec09eb698612130b74395dc5f1a02b8
+ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59072264"
+ms.lasthandoff: 10/18/2021
+ms.locfileid: "60454830"
 ---
 # <a name="devicecomplianceuserstatus-resource-type"></a>Tipo de recurso deviceComplianceUserStatus
 
@@ -32,7 +32,7 @@ Ainda não documentado
 ## <a name="properties"></a>Propriedades
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|id|String|Chave da entidade.|
+|id|Cadeia de caracteres|Chave da entidade.|
 |userDisplayName|Cadeia de caracteres|Nome de usuário de DevicePolicyStatus.|
 |devicesCount|Int32|Contagem de dispositivos para esse usuário.|
 |status|[complianceStatus](../resources/intune-shared-compliancestatus.md)|Status de conformidade do relatório de políticas. Os valores possíveis são: `unknown`, `notApplicable`, `compliant`, `remediated`, `nonCompliant`, `error`, `conflict`, `notAssigned`.|
@@ -61,7 +61,6 @@ Veja a seguir uma representação JSON do recurso.
   "userPrincipalName": "String"
 }
 ```
-
 
 
 

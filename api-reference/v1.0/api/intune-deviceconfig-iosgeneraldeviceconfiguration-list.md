@@ -2,15 +2,15 @@
 title: Listar iosGeneralDeviceConfigurations
 description: Listar propriedades e relações dos objetos iosGeneralDeviceConfiguration.
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 9c1bcfbfb45a2d8de12f098108bd7a7187d975d8
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: bc8c9de1cf8c6a704b451a2e59f4d8358b02dde8
+ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59099774"
+ms.lasthandoff: 10/18/2021
+ms.locfileid: "60454660"
 ---
 # <a name="list-iosgeneraldeviceconfigurations"></a>Listar iosGeneralDeviceConfigurations
 
@@ -25,8 +25,8 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 |Tipo de permissão|Permissões (da com menos para a com mais privilégios)|
 |:---|:---|
-|Delegada (conta corporativa ou de estudante)|DeviceManagementConfiguration.Read.All, DeviceManagementConfiguration.ReadWrite.All|
-|Delegada (conta pessoal da Microsoft)|Sem suporte.|
+|Delegado (conta corporativa ou de estudante)|DeviceManagementConfiguration.Read.All, DeviceManagementConfiguration.ReadWrite.All|
+|Delegado (conta pessoal da Microsoft)|Sem suporte.|
 |Aplicativo|DeviceManagementConfiguration.Read.All, DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
@@ -291,7 +291,6 @@ Content-Length: 8922
   ]
 }
 ```
-
 
 
 

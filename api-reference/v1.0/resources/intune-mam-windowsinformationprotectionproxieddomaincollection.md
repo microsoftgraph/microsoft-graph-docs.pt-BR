@@ -2,15 +2,15 @@
 title: Tipo de recurso windowsInformationProtectionProxiedDomainCollection
 description: Coleção de domínios como proxy da Proteção de Informações do Windows
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: ece4345bba6c3553e2276be5a1b1e12c24e589a5
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 624c6ef45126479594f612ced4f31fef30068265
+ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59078809"
+ms.lasthandoff: 10/18/2021
+ms.locfileid: "60448973"
 ---
 # <a name="windowsinformationprotectionproxieddomaincollection-resource-type"></a>Tipo de recurso windowsInformationProtectionProxiedDomainCollection
 
@@ -49,7 +49,6 @@ Veja a seguir uma representação JSON do recurso.
   ]
 }
 ```
-
 
 
 

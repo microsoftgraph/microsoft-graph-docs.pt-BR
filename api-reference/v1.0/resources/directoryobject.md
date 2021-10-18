@@ -5,12 +5,12 @@ ms.localizationpriority: high
 author: keylimesoda
 ms.prod: directory-management
 doc_type: resourcePageType
-ms.openlocfilehash: b5b5d67be7d94ca2400c29b4a05415f979419e9e
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 2dea299fa794877e2e180cb2fadcb3cd8480adb5
+ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59089792"
+ms.lasthandoff: 10/18/2021
+ms.locfileid: "60448033"
 ---
 # <a name="directoryobject-resource-type"></a>Tipo de recurso directoryObject
 
@@ -25,6 +25,7 @@ Representa um objeto do Active Directory do Azure. O tipo **directoryObject** é
 |[Get directoryObject](../api/directoryobject-get.md) | [directoryObject](directoryobject.md) |Leia as propriedades de um objeto de diretório.|
 |[Delete directoryObject](../api/directoryobject-delete.md) | Nenhum |Exclua um objeto de diretório. |
 |[checkMemberGroups](../api/directoryobject-checkmembergroups.md)|Coleção de cadeias de caracteres|Verifique se há uma associação em uma lista de grupos. A verificação é transitiva.|
+|[checkMemberObjects](../api/user-checkmemberobjects.md)|Coleção de cadeias de caracteres|Verifique se há associação em uma lista de funções de grupo ou diretório para o objeto do usuário especificado. Esse método é transitivo.|
 |[Obtenha as propriedades de extensão disponíveis](../api/directoryobject-getavailableextensionproperties.md)|Coleção [extensionProperty](../resources/extensionproperty.md)|Obtenha todas as listas ou uma lista filtrada das propriedades de extensão do diretório que foram registradas em um diretório.|
 |[getMemberGroups](../api/directoryobject-getmembergroups.md)|Coleção de cadeias de caracteres|Retorne todos os grupos dos quais o objeto de usuário, grupo ou diretório é membro. A verificação é transitiva.|
 |[getMemberObjects](../api/directoryobject-getmemberobjects.md)|Coleção de cadeias de caracteres| Retorne todos os grupos e funções de diretório dos quais o objeto de usuário, grupo ou diretório é membro. A verificação é transitiva. |
