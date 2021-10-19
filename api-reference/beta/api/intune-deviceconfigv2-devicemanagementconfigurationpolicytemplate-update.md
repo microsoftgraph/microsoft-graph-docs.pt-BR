@@ -2,15 +2,15 @@
 title: Atualizar deviceManagementConfigurationPolicyTemplate
 description: Atualize as propriedades de um objeto deviceManagementConfigurationPolicyTemplate.
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 17b266cd13872b056c0caff709f9091c3953bcd7
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 4455b15f7e5aa58be64c8932db8f72f72f852532
+ms.sourcegitcommit: 4a960067cf2cd7d3c605550150eb3c9259adfe92
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59088217"
+ms.lasthandoff: 10/19/2021
+ms.locfileid: "60492023"
 ---
 # <a name="update-devicemanagementconfigurationpolicytemplate"></a>Atualizar deviceManagementConfigurationPolicyTemplate
 
@@ -29,7 +29,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |:---|:---|
 |Delegado (conta corporativa ou de estudante)|DeviceManagementConfiguration.ReadWrite.All|
 |Delegado (conta pessoal da Microsoft)|Sem suporte.|
-|Aplicativo|DeviceManagementServiceConfig.ReadWrite.All|
+|Aplicativo|DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- {
@@ -54,16 +54,16 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar [deviceM
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
 |id|Cadeia de caracteres|Chave do documento do modelo, composta por BaseId e Version. Gerado automaticamente.|
-|baseId|Cadeia de Caracteres|Identificador de base de modelos|
+|baseId|Cadeia de caracteres|Identificador de base de modelos|
 |versão|Int32|Versão do modelo. Valores válidos 1 a 2147483647. Essa propriedade é somente leitura.|
 |displayName|Cadeia de caracteres|Nome de exibição do modelo|
 |description|Cadeia de caracteres|Descrição do modelo|
-|displayVersion|Cadeia de Caracteres|Descrição da versão do modelo|
+|displayVersion|Cadeia de caracteres|Descrição da versão do modelo|
 |lifecycleState|[deviceManagementTemplateLifecycleState](../resources/intune-deviceconfigv2-devicemanagementtemplatelifecyclestate.md)|Indique o estado atual do modelo de ciclo de vida. Os possíveis valores são: `invalid`, `draft`, `active`, `superseded`, `deprecated`, `retired`.|
-|plataformas|[deviceManagementConfigurationPlatforms](../resources/intune-deviceconfigv2-devicemanagementconfigurationplatforms.md)|Plataformas para este modelo. Os valores possíveis são: `none`, `macOS`, `windows10X`, `windows10`.|
-|technologies|[deviceManagementConfigurationTechnologies](../resources/intune-deviceconfigv2-devicemanagementconfigurationtechnologies.md)|Tecnologias para este modelo. Os possíveis valores são: `none`, `mdm`, `windows10XManagement`, `configManager`, `microsoftSense`, `exchangeOnline`.|
-|templateFamily|[deviceManagementConfigurationTemplateFamily](../resources/intune-deviceconfigv2-devicemanagementconfigurationtemplatefamily.md)|TemplateFamily para este modelo. Os valores possíveis são: `none`, `endpointSecurityAntivirus`, `endpointSecurityDiskEncryption`, `endpointSecurityFirewall`, `endpointSecurityEndpointDetectionAndResponse`, `endpointSecurityAttackSurfaceReduction`, `endpointSecurityAccountProtection`, `endpointSecurityApplicationControl`.|
-|allowUnmanagedSettings|Boleano|Permitir modelos de configuração nãomanageados|
+|plataformas|[deviceManagementConfigurationPlatforms](../resources/intune-deviceconfigv2-devicemanagementconfigurationplatforms.md)|Plataformas para este modelo. Os possíveis valores são: `none`, `android`, `iOS`, `macOS`, `windows10X`, `windows10`.|
+|technologies|[deviceManagementConfigurationTechnologies](../resources/intune-deviceconfigv2-devicemanagementconfigurationtechnologies.md)|Tecnologias para este modelo. Os valores possíveis são: `none`, `mdm`, `windows10XManagement`, `configManager`, `microsoftSense`, `exchangeOnline`, `linuxMdm`, `unknownFutureValue`.|
+|templateFamily|[deviceManagementConfigurationTemplateFamily](../resources/intune-deviceconfigv2-devicemanagementconfigurationtemplatefamily.md)|TemplateFamily para este modelo. Os valores possíveis são: `none`, `endpointSecurityAntivirus`, `endpointSecurityDiskEncryption`, `endpointSecurityFirewall`, `endpointSecurityEndpointDetectionAndResponse`, `endpointSecurityAttackSurfaceReduction`, `endpointSecurityAccountProtection`, `endpointSecurityApplicationControl`, `baseline`.|
+|allowUnmanagedSettings|Booliano|Permitir modelos de configuração nãomanageados|
 |settingTemplateCount|Int32|Número de modelos de configuração. Valores válidos de 0 a 2147483647. Essa propriedade é somente leitura.|
 
 
@@ -78,7 +78,7 @@ Este é um exemplo da solicitação.
 ``` http
 PATCH https://graph.microsoft.com/beta/deviceManagement/configurationPolicyTemplates/{deviceManagementConfigurationPolicyTemplateId}
 Content-type: application/json
-Content-length: 453
+Content-length: 455
 
 {
   "@odata.type": "#microsoft.graph.deviceManagementConfigurationPolicyTemplate",
@@ -88,7 +88,7 @@ Content-length: 453
   "description": "Description value",
   "displayVersion": "Display Version value",
   "lifecycleState": "draft",
-  "platforms": "macOS",
+  "platforms": "android",
   "technologies": "mdm",
   "templateFamily": "endpointSecurityAntivirus",
   "allowUnmanagedSettings": true,
@@ -101,7 +101,7 @@ Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado a
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 502
+Content-Length: 504
 
 {
   "@odata.type": "#microsoft.graph.deviceManagementConfigurationPolicyTemplate",
@@ -112,7 +112,7 @@ Content-Length: 502
   "description": "Description value",
   "displayVersion": "Display Version value",
   "lifecycleState": "draft",
-  "platforms": "macOS",
+  "platforms": "android",
   "technologies": "mdm",
   "templateFamily": "endpointSecurityAntivirus",
   "allowUnmanagedSettings": true,

@@ -2,15 +2,15 @@
 title: Obter windowsDefenderApplicationControlSupplementalPolicyAssignment
 description: Leia propriedades e relações do objeto windowsDefenderApplicationControlSupplementalPolicyAssignment.
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 9c6da6f75ceeda710bfd8c6726a2a65d0c80706e
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 2d1083ee3c417045cbc21328e715e18bbab3550b
+ms.sourcegitcommit: 4a960067cf2cd7d3c605550150eb3c9259adfe92
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59047846"
+ms.lasthandoff: 10/19/2021
+ms.locfileid: "60479946"
 ---
 # <a name="get-windowsdefenderapplicationcontrolsupplementalpolicyassignment"></a>Obter windowsDefenderApplicationControlSupplementalPolicyAssignment
 
@@ -29,7 +29,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |:---|:---|
 |Delegado (conta corporativa ou de estudante)|DeviceManagementApps.Read.All, DeviceManagementApps.ReadWrite.All|
 |Delegado (conta pessoal da Microsoft)|Sem suporte.|
-|Aplicativo|DeviceManagementConfiguration.Read.All, DeviceManagementApps.Read.All, DeviceManagementApps.ReadWrite.All|
+|Aplicativo|DeviceManagementApps.Read.All, DeviceManagementApps.ReadWrite.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- {

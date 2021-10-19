@@ -2,15 +2,15 @@
 title: Obter macOSDeviceFeaturesConfiguration
 description: Ler propriedades e relações do objeto macOSDeviceFeaturesConfiguration.
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 74a144186350bb255c2751b3000f26ee695feaf7
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 8093754724e2e241cd88751d0f491da3512a2d2f
+ms.sourcegitcommit: 4a960067cf2cd7d3c605550150eb3c9259adfe92
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59135806"
+ms.lasthandoff: 10/19/2021
+ms.locfileid: "60492564"
 ---
 # <a name="get-macosdevicefeaturesconfiguration"></a>Obter macOSDeviceFeaturesConfiguration
 
@@ -70,7 +70,7 @@ Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado a
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 6199
+Content-Length: 6694
 
 {
   "value": {
@@ -200,7 +200,18 @@ Content-Length: 6199
       "activeDirectorySiteCode": "Active Directory Site Code value",
       "passwordEnableLocalSync": true,
       "blockActiveDirectorySiteAutoDiscovery": true,
-      "passwordChangeUrl": "https://example.com/passwordChangeUrl/"
+      "passwordChangeUrl": "https://example.com/passwordChangeUrl/",
+      "modeCredentialUsed": "Mode Credential Used value",
+      "usernameLableCustom": "Username Lable Custom value",
+      "userSetupDelayed": true,
+      "signInHelpText": "Sign In Help Text value",
+      "kerberosAppsInBundleIdACLIncluded": true,
+      "managedAppsInBundleIdACLIncluded": true,
+      "credentialsCacheMonitored": true,
+      "singleSignOnExtensionPreferredKDCs": [
+        "Single Sign On Extension Preferred KDCs value"
+      ],
+      "tlsForLDAPRequired": true
     },
     "contentCachingEnabled": true,
     "contentCachingType": "userContentOnly",

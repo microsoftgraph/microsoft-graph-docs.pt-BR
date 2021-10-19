@@ -2,15 +2,15 @@
 author: JeremyKelley
 title: tipo de recurso de permissão
 description: recurso permission representando uma permissão de compartilhamento concedida para um driveItem
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: sharepoint
 doc_type: resourcePageType
-ms.openlocfilehash: e7eb160bf7899feec9afda49c6087072aab83c3b
-ms.sourcegitcommit: 2d8b04725ea4eaf304f3da1056a6451457a4630f
+ms.openlocfilehash: f2b58acc06b1a7478c2728f8e371fee67e917d3e
+ms.sourcegitcommit: 4a960067cf2cd7d3c605550150eb3c9259adfe92
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/12/2021
-ms.locfileid: "52335601"
+ms.lasthandoff: 10/19/2021
+ms.locfileid: "60493470"
 ---
 # <a name="permission-resource-type"></a>tipo de recurso de permissão
 
@@ -67,12 +67,12 @@ Veja a seguir uma representação JSON do recurso.
 |:--------------------|:----------------------------|:-------------------------
 | id                  | String                      | O identificador exclusivo da permissão entre todas as permissões no item. Somente leitura.
 | grantedTo           | [IdentitySet][]             | Para permissões de tipo de usuário, os detalhes de usuários e aplicativos para esta permissão. Somente leitura.
-| grantedToIdentities | Coleção([IdentitySet][]) | Para permissões de tipo de link, os detalhes dos usuários aos quais a permissão foi concedida. Somente leitura.
+| grantedToIdentities | Coleção([IdentitySet][]) | Para permissões de tipo de link, os detalhes dos usuários a quem a permissão foi concedida. Somente leitura.
 | invitation          | [SharingInvitation][]       | Detalhes de um convite de compartilhamento associado para esta permissão. Somente leitura.
 | inheritedFrom       | [ItemReference][]           | Fornece uma referência para o ancestral da permissão atual, se ela for herdada de um ancestral. Somente leitura.
 | vínculo                | [SharingLink][]             | Fornece os detalhes do link de permissão atual, caso se trate de permissões de tipo de link. Somente leitura.
 | funções               | Collection(String)          | O tipo de permissão, por exemplo, `read`. Veja abaixo a lista completa de funções. Somente leitura.
-| shareId             | Cadeia de caracteres                      | Um token exclusivo que pode ser usado para acessar esse item compartilhado por meio da **[API de compartilhamentos][]**. Somente leitura.
+| shareId             | Cadeia de caracteres                      | Um token exclusivo que pode ser usado para acessar este item compartilhado por meio da **[API de compartilhamentos][]**. Somente leitura.
 | expirationDateTime  | DateTimeOffset              | Um formato yyyy-MM-ddTHH:mm:ssZ de DateTimeOffset indica o tempo de expiração da permissão. DateTime.MinValue indica que não há expiração definida para esta permissão. Opcional.
 | hasPassword         | Boolean                     | Isso indica se a senha está configurada para esta permissão, está sendo exibida apenas em resposta. Opcional e Somente leitura e somente para o OneDrive Personal.
 
@@ -82,7 +82,7 @@ Veja a seguir uma representação JSON do recurso.
 |:------------------|:-------------------------------------------------------------------------------|
 | leitura            | Oferece a capacidade de ler os metadados e o conteúdo do item.            |
 | gravação           | Oferece a capacidade de ler e modificar os metadados e o conteúdo do item. |
-| owner           | Para o SharePoint e o OneDrive for Business, isso representa a função de proprietário.       |
+| proprietário           | Para o Microsoft Office SharePoint Online e o OneDrive for Business, este representa o papel do proprietário.       |
 
 O recurso permission usa _facetas_ para fornecer informações sobre o tipo de permissão representado pelo recurso.
 
@@ -166,7 +166,7 @@ Este link não concede privilégios adicionais ao usuário.
 
 Este link fornece acesso de leitura e gravação para as pessoas específicas na coleção `grantedToIdentities`.
 
-<!-- {"blockType": "example", "@odata.type": "microsoft.graph.permission", "name": "permission-people-link" } -->
+<!-- {"blockType": "example", truncated: true, "@odata.type": "microsoft.graph.permission", "name": "permission-people-link" } -->
 
 ```json
 {
@@ -199,7 +199,7 @@ Este link fornece acesso de leitura e gravação para as pessoas específicas na
 
 Permissões enviadas pela [API][] [de][] convite ou concessão podem ter informações adicionais na faceta [][convite SharingInvitation] para endereços de email que não corresponderem a uma conta conhecida. Nesses casos, a propriedade **grantedTo** pode não ser definida até que o link de convite seja resgatado, o que ocorre na primeira vez que o usuário clica no link e faz logona.
 
-<!-- {"blockType": "example", "@odata.type": "microsoft.graph.permission", "name": "permission-invite-email" } -->
+<!-- {"blockType": "example", truncated: true, "@odata.type": "microsoft.graph.permission", "name": "permission-invite-email" } -->
 
 ```json
 {
@@ -216,7 +216,7 @@ Permissões enviadas pela [API][] [de][] convite ou concessão podem ter informa
 
 Depois que o convite de compartilhamento tiver sido resgatado por um usuário, a propriedade **grantedTo** conterá as informações sobre a conta que resgatou as permissões:
 
-<!-- {"blockType": "example", "@odata.type": "microsoft.graph.permission", "name": "permission-invite-redeemed" } -->
+<!-- {"blockType": "example", truncated: true,"@odata.type": "microsoft.graph.permission", "name": "permission-invite-redeemed" } -->
 
 ```json
 {

@@ -2,15 +2,15 @@
 title: Atualizar payloadCompatibleAssignmentFilter
 description: Atualize as propriedades de um objeto payloadCompatibleAssignmentFilter.
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 6bb6288669a48d8ad52a0dbe4ad45073e3565e95
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: bb06d9a6c8eed99ff3d3f6eedef98cc6faf25f44
+ms.sourcegitcommit: 4a960067cf2cd7d3c605550150eb3c9259adfe92
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59135554"
+ms.lasthandoff: 10/19/2021
+ms.locfileid: "60487082"
 ---
 # <a name="update-payloadcompatibleassignmentfilter"></a>Atualizar payloadCompatibleAssignmentFilter
 
@@ -29,7 +29,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |:---|:---|
 |Delegado (conta corporativa ou de estudante)|DeviceManagementConfiguration.ReadWrite.All|
 |Delegado (conta pessoal da Microsoft)|Sem suporte.|
-|Aplicativo|DeviceManagementServiceConfig.ReadWrite.All, DeviceManagementConfiguration.ReadWrite.All|
+|Aplicativo|DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- {
@@ -59,8 +59,8 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar [o paylo
 |displayName|Cadeia de caracteres|DisplayName do Filtro de Atribuição. Herdado [de deviceAndAppManagementAssignmentFilter](../resources/intune-policyset-deviceandappmanagementassignmentfilter.md)|
 |description|Cadeia de caracteres|Descrição do Filtro de Atribuição. Herdado [de deviceAndAppManagementAssignmentFilter](../resources/intune-policyset-deviceandappmanagementassignmentfilter.md)|
 |plataforma|[devicePlatformType](../resources/intune-policyset-deviceplatformtype.md)|Tipo de plataforma dos dispositivos nos quais o Filtro de Atribuição será aplicável. Herdado [de deviceAndAppManagementAssignmentFilter](../resources/intune-policyset-deviceandappmanagementassignmentfilter.md). Os valores possíveis são: `android`, `androidForWork`, `iOS`, `macOS`, `windowsPhone81`, `windows81AndLater`, `windows10AndLater`, `androidWorkProfile`, `unknown`.|
-|rule|Cadeia de Caracteres|Definição de regra do Filtro de Atribuição. Herdado [de deviceAndAppManagementAssignmentFilter](../resources/intune-policyset-deviceandappmanagementassignmentfilter.md)|
-|roleScopeTags|String collection|RoleScopeTags do Filtro de Atribuição. Herdado [de deviceAndAppManagementAssignmentFilter](../resources/intune-policyset-deviceandappmanagementassignmentfilter.md)|
+|rule|Cadeia de caracteres|Definição de regra do Filtro de Atribuição. Herdado [de deviceAndAppManagementAssignmentFilter](../resources/intune-policyset-deviceandappmanagementassignmentfilter.md)|
+|roleScopeTags|Coleção de cadeias de caracteres|RoleScopeTags do Filtro de Atribuição. Herdado [de deviceAndAppManagementAssignmentFilter](../resources/intune-policyset-deviceandappmanagementassignmentfilter.md)|
 |payloadType|[assignmentFilterPayloadType](../resources/intune-policyset-assignmentfilterpayloadtype.md)|PayloadType do Filtro de Atribuição. Os valores possíveis são: `notSet` e `enrollmentRestrictions`.|
 
 

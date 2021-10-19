@@ -2,15 +2,15 @@
 title: Atualizar deviceManagementConfigurationSettingTemplate
 description: Atualize as propriedades de um objeto deviceManagementConfigurationSettingTemplate.
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 6661d74fa8d10071ae5e22cefb9e1ca121d635a8
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 39c440566b9900d47d7cf93c1a56ec58ba0c7fda
+ms.sourcegitcommit: 4a960067cf2cd7d3c605550150eb3c9259adfe92
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59093082"
+ms.lasthandoff: 10/19/2021
+ms.locfileid: "60484819"
 ---
 # <a name="update-devicemanagementconfigurationsettingtemplate"></a>Atualizar deviceManagementConfigurationSettingTemplate
 
@@ -29,7 +29,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |:---|:---|
 |Delegado (conta corporativa ou de estudante)|DeviceManagementConfiguration.ReadWrite.All|
 |Delegado (conta pessoal da Microsoft)|Sem suporte.|
-|Aplicativo|DeviceManagementServiceConfig.ReadWrite.All|
+|Aplicativo|DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- {

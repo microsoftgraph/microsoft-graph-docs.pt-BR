@@ -2,15 +2,15 @@
 title: Listar androidManagedStoreAppConfigurations
 description: Listar propriedades e relações dos objetos androidManagedStoreAppConfiguration.
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 6c1dd8e51badf711727d1ed53a3e8b679681f7bc
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 63aeb4a9e5dfdb2b745759075c3b4f5d328609b0
+ms.sourcegitcommit: 4a960067cf2cd7d3c605550150eb3c9259adfe92
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59019003"
+ms.lasthandoff: 10/19/2021
+ms.locfileid: "60486815"
 ---
 # <a name="list-androidmanagedstoreappconfigurations"></a>Listar androidManagedStoreAppConfigurations
 
@@ -28,8 +28,8 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |Tipo de permissão|Permissões (da com menos para a com mais privilégios)|
 |:---|:---|
 |Delegado (conta corporativa ou de estudante)|DeviceManagementApps.Read.All, DeviceManagementApps.ReadWrite.All|
-|Delegada (conta pessoal da Microsoft)|Sem suporte.|
-|Aplicativo|DeviceManagementConfiguration.Read.All, DeviceManagementApps.Read.All, DeviceManagementApps.ReadWrite.All|
+|Delegado (conta pessoal da Microsoft)|Sem suporte.|
+|Aplicativo|DeviceManagementApps.Read.All, DeviceManagementApps.ReadWrite.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- {
@@ -65,7 +65,7 @@ Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado a
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 942
+Content-Length: 979
 
 {
   "value": [
@@ -93,7 +93,8 @@ Content-Length: 942
         }
       ],
       "appSupportsOemConfig": true,
-      "profileApplicability": "androidWorkProfile"
+      "profileApplicability": "androidWorkProfile",
+      "connectedAppsEnabled": true
     }
   ]
 }

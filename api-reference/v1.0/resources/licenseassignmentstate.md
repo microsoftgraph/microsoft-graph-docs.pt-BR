@@ -5,12 +5,12 @@ author: dkershaw10
 ms.localizationpriority: medium
 ms.prod: groups
 doc_type: resourcePageType
-ms.openlocfilehash: 260ce66248934772e386b8d4277970b1db3ee852
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 40dc8e13240cbeb1fe21bbaabcab38247cee25d2
+ms.sourcegitcommit: 4a960067cf2cd7d3c605550150eb3c9259adfe92
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59036197"
+ms.lasthandoff: 10/19/2021
+ms.locfileid: "60493190"
 ---
 # <a name="licenseassignmentstate-resource-type"></a>Tipo de recurso licenseAssignmentState
 
@@ -28,11 +28,12 @@ A **propriedade licenseAssignmentStates** da entidade [do](user.md) usuário é 
 ## <a name="properties"></a>Propriedades
 | Propriedade     | Tipo   |Descrição|
 |:---------------|:--------|:----------|
-|assignedByGroup|cadeia de caracteres|A id do grupo que atribui essa licença. Se a atribuição for uma licença atribuída diretamente, esse campo será Null. Somente Leitura.|
+|assignedByGroup|string|A id do grupo que atribui essa licença. Se a atribuição for uma licença atribuída diretamente, esse campo será Null. Somente Leitura.|
 |disabledPlans|Collection(String)|Os planos de serviço que estão desabilitados nesta atribuição. Somente Leitura.|
 |erro|Cadeia de caracteres|Erro de falha de atribuição de licença. Se a licença for atribuída com êxito, esse campo será Null. Somente Leitura. Valores possíveis: `CountViolation` , , , , e `MutuallyExclusiveViolation` `DependencyViolation` `ProhibitedInUsageLocationViolation` `UniquenessViolation` `Others` . Para obter mais informações sobre como identificar e resolver erros de atribuição de licença, [consulte aqui](/azure/active-directory/users-groups-roles/licensing-groups-resolve-problems).|
+|lastUpdatedDateTime|DateTimeOffset|O timestamp quando o estado da atribuição de licença foi atualizado pela última vez.|
 |skuId|Cadeia de caracteres|O identificador exclusivo da SKU. Somente Leitura.|
-|state|String|Indique o estado atual dessa atribuição. Somente Leitura. Valores possíveis: Active, ActiveWithError, Disabled e Error.|
+|state|Cadeia de caracteres|Indique o estado atual dessa atribuição. Somente Leitura. Valores possíveis: Active, ActiveWithError, Disabled e Error.|
 
 ## <a name="json-representation"></a>Representação JSON
 
@@ -43,6 +44,7 @@ Veja a seguir uma representação JSON do recurso.
   "assignedByGroup": "String",
   "disabledPlans": "Collection(String)",
   "error": " String ",  
+  "lastUpdatedDateTime": "String (timestamp)",
   "skuId": "String ",
   "state": "String"
 }

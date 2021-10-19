@@ -2,15 +2,15 @@
 title: tipo de número deviceManagementConfigurationTechnologies
 description: Descreve com qual tecnologia essa configuração pode ser implantada
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: d7766d88b7670a4cd0a96a3e4a52a462478a9a41
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: a87452e3f00887895e8a89a2b845e077a25f7bf7
+ms.sourcegitcommit: 4a960067cf2cd7d3c605550150eb3c9259adfe92
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59148183"
+ms.lasthandoff: 10/19/2021
+ms.locfileid: "60485167"
 ---
 # <a name="devicemanagementconfigurationtechnologies-enum-type"></a>tipo de número deviceManagementConfigurationTechnologies
 
@@ -25,12 +25,14 @@ Descreve com qual tecnologia essa configuração pode ser implantada
 ## <a name="members"></a>Membros
 |Membro|Valor|Descrição|
 |:---|:---|:---|
-|Nenhuma|0|A configuração não pode ser implantada por meio de qualquer canal|
+|none|0|A configuração não pode ser implantada por meio de qualquer canal|
 |mdm|1|A configuração pode ser implantada por meio do canal MDM|
 |windows10XManagement|2|A configuração pode ser implantada por meio do canal Windows10XManagement|
 |configManager|4 |A configuração pode ser implantada por meio do canal ConfigManager|
 |microsoftSense|128|A configuração pode ser implantada por meio do canal do agente SENSE|
 |exchangeOnline|256|A configuração pode ser implantada por meio do canal Exchange Online agente|
+|linuxMdm|1024|A configuração pode ser implantada por meio do canal Mdm do Linux|
+|unknownFutureValue|1073741824|Membro do Sentinel para casos em que o cliente não pode manipular os novos valores de numeração.|
 
 
 

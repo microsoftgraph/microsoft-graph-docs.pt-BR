@@ -2,15 +2,15 @@
 title: Criar policySet
 description: Crie um novo objeto policySet.
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: a8192f0d8ffa78b91c3f8d31d721a2d4cfdcee1d
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 335494e396294698ee6b7188d2a888c8ae5e95cb
+ms.sourcegitcommit: 4a960067cf2cd7d3c605550150eb3c9259adfe92
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59121127"
+ms.lasthandoff: 10/19/2021
+ms.locfileid: "60484014"
 ---
 # <a name="create-policyset"></a>Criar policySet
 
@@ -29,7 +29,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |:---|:---|
 |Delegado (conta corporativa ou de estudante)|DeviceManagementConfiguration.ReadWrite.All|
 |Delegado (conta pessoal da Microsoft)|Sem suporte.|
-|Aplicativo|DeviceManagementServiceConfig.ReadWrite.All, DeviceManagementConfiguration.ReadWrite.All|
+|Aplicativo|DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- {
@@ -60,8 +60,8 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar o policy
 |description|Cadeia de caracteres|Descrição do PolicySet.|
 |status|[policySetStatus](../resources/intune-policyset-policysetstatus.md)|Status de validação/atribuição do PolicySet. Os valores possíveis são: `unknown`, `validating`, `partialSuccess`, `success`, `error`, `notAssigned`.|
 |errorCode|[errorCode](../resources/intune-policyset-errorcode.md)|Código de erro se ocorrer algum. Os valores possíveis são: `noError`, `unauthorized`, `notFound`, `deleted`.|
-|guidedDeploymentTags|String collection|Marcas da implantação guiada|
-|roleScopeTags|String collection|RoleScopeTags do PolicySet|
+|guidedDeploymentTags|Coleção de cadeias de caracteres|Marcas da implantação guiada|
+|roleScopeTags|Coleção de cadeias de caracteres|RoleScopeTags do PolicySet|
 
 
 

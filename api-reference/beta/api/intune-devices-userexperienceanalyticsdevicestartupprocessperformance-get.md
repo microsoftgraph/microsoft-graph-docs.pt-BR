@@ -2,15 +2,15 @@
 title: Obter userExperienceAnalyticsDeviceStartupProcessPerformance
 description: Leia propriedades e relações do objeto userExperienceAnalyticsDeviceStartupProcessPerformance.
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 463d8a9e5a64ae3daed2b5b48d2bfedee3a70f44
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: b595c8599c524c6e93e9bb42f967d1a500b5d49b
+ms.sourcegitcommit: 4a960067cf2cd7d3c605550150eb3c9259adfe92
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59112409"
+ms.lasthandoff: 10/19/2021
+ms.locfileid: "60490600"
 ---
 # <a name="get-userexperienceanalyticsdevicestartupprocessperformance"></a>Obter userExperienceAnalyticsDeviceStartupProcessPerformance
 
@@ -29,7 +29,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |:---|:---|
 |Delegado (conta corporativa ou de estudante)|DeviceManagementManagedDevices.Read.All, DeviceManagementManagedDevices.ReadWrite.All|
 |Delegado (conta pessoal da Microsoft)|Sem suporte.|
-|Aplicativo|DeviceManagementConfiguration.Read.All, DeviceManagementManagedDevices.Read.All, DeviceManagementManagedDevices.ReadWrite.All|
+|Aplicativo|DeviceManagementManagedDevices.Read.All, DeviceManagementManagedDevices.ReadWrite.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- {
@@ -68,7 +68,7 @@ Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado a
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 369
+Content-Length: 426
 
 {
   "value": {
@@ -79,7 +79,9 @@ Content-Length: 369
     "publisher": "Publisher value",
     "deviceCount": 11,
     "medianImpactInMs": 0,
-    "totalImpactInMs": 15
+    "totalImpactInMs": 15,
+    "medianImpactInMs2": 1,
+    "totalImpactInMs2": 0
   }
 }
 ```

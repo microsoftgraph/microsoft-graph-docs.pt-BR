@@ -2,15 +2,15 @@
 title: tipo de número deviceManagementConfigurationPlatforms
 description: Tipos de plataforma com suporte.
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 4023d2469348c7770fe5e7d9c9022dee6e512ae1
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 3ce51f061b3711dee56bd848978bf054f3b58c7c
+ms.sourcegitcommit: 4a960067cf2cd7d3c605550150eb3c9259adfe92
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59115398"
+ms.lasthandoff: 10/19/2021
+ms.locfileid: "60490212"
 ---
 # <a name="devicemanagementconfigurationplatforms-enum-type"></a>tipo de número deviceManagementConfigurationPlatforms
 
@@ -25,9 +25,11 @@ Tipos de plataforma com suporte.
 ## <a name="members"></a>Membros
 |Membro|Valor|Descrição|
 |:---|:---|:---|
-|Nenhuma|0|Nenhum.|
+|none|0|Nenhum.|
+|android|1|Android.|
+|iOS|4 |iOS.|
 |macOS|8 |MacOS.|
-|windows10X|16 |Windows 10 X.|
+|windows10X|16|Windows 10 X.|
 |windows10|32|Windows 10.|
 
 

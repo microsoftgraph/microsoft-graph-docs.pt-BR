@@ -2,15 +2,15 @@
 title: Listar deviceManagementConfigurationPolicyTemplates
 description: Listar propriedades e relações dos objetos deviceManagementConfigurationPolicyTemplate.
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: d4352a8a9ad6d4cc6ad49dcb36265dd609266bf9
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 6052baa6629da8a7daa8a4522fe1ae10f2a3c91e
+ms.sourcegitcommit: 4a960067cf2cd7d3c605550150eb3c9259adfe92
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59065600"
+ms.lasthandoff: 10/19/2021
+ms.locfileid: "60484983"
 ---
 # <a name="list-devicemanagementconfigurationpolicytemplates"></a>Listar deviceManagementConfigurationPolicyTemplates
 
@@ -29,7 +29,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |:---|:---|
 |Delegado (conta corporativa ou de estudante)|DeviceManagementConfiguration.Read.All, DeviceManagementConfiguration.ReadWrite.All|
 |Delegado (conta pessoal da Microsoft)|Sem suporte.|
-|Aplicativo|DeviceManagementServiceConfig.ReadWrite.All, DeviceManagementConfiguration.Read.All|
+|Aplicativo|DeviceManagementConfiguration.Read.All, DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- {
@@ -65,7 +65,7 @@ Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado a
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 587
+Content-Length: 589
 
 {
   "value": [
@@ -78,7 +78,7 @@ Content-Length: 587
       "description": "Description value",
       "displayVersion": "Display Version value",
       "lifecycleState": "draft",
-      "platforms": "macOS",
+      "platforms": "android",
       "technologies": "mdm",
       "templateFamily": "endpointSecurityAntivirus",
       "allowUnmanagedSettings": true,

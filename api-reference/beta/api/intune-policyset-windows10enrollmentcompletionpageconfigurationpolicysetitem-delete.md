@@ -2,15 +2,15 @@
 title: Excluir windows10EnrollmentCompletionPageConfigurationPolicySetItem
 description: Exclui um windows10EnrollmentCompletionPageConfigurationPolicySetItem.
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: f06615e95c36a2e923175699e9f6e9e4d0b54894
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: b1ca90a05f9ef9e14a852042a522854158d5b7df
+ms.sourcegitcommit: 4a960067cf2cd7d3c605550150eb3c9259adfe92
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59069996"
+ms.lasthandoff: 10/19/2021
+ms.locfileid: "60490226"
 ---
 # <a name="delete-windows10enrollmentcompletionpageconfigurationpolicysetitem"></a>Excluir windows10EnrollmentCompletionPageConfigurationPolicySetItem
 
@@ -29,7 +29,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |:---|:---|
 |Delegado (conta corporativa ou de estudante)|DeviceManagementConfiguration.ReadWrite.All|
 |Delegado (conta pessoal da Microsoft)|Sem suporte.|
-|Aplicativo|DeviceManagementServiceConfig.ReadWrite.All, DeviceManagementConfiguration.ReadWrite.All|
+|Aplicativo|DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- {

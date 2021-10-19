@@ -2,15 +2,15 @@
 title: Excluir iosLobAppProvisioningConfigurationPolicySetItem
 description: Exclui um iosLobAppProvisioningConfigurationPolicySetItem.
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: d8e6b53497da09c0a8cdeee7d3ab115bcd74cdfc
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 86b2eb2366aa8d48c2c78b73a1c554c2fffe99bc
+ms.sourcegitcommit: 4a960067cf2cd7d3c605550150eb3c9259adfe92
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59081868"
+ms.lasthandoff: 10/19/2021
+ms.locfileid: "60486893"
 ---
 # <a name="delete-ioslobappprovisioningconfigurationpolicysetitem"></a>Excluir iosLobAppProvisioningConfigurationPolicySetItem
 
@@ -29,7 +29,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |:---|:---|
 |Delegado (conta corporativa ou de estudante)|DeviceManagementConfiguration.ReadWrite.All|
 |Delegado (conta pessoal da Microsoft)|Sem suporte.|
-|Aplicativo|DeviceManagementServiceConfig.ReadWrite.All, DeviceManagementConfiguration.ReadWrite.All|
+|Aplicativo|DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- {

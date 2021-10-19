@@ -2,15 +2,15 @@
 title: Obter androidForWorkMobileAppConfiguration
 description: Leia propriedades e relações do objeto androidForWorkMobileAppConfiguration.
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: ade684b4968b179d6dcdf5eb82a1c3ae601907f4
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: fe61d375d87cf24ed21e0a2024b66d6bc1271acb
+ms.sourcegitcommit: 4a960067cf2cd7d3c605550150eb3c9259adfe92
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59088917"
+ms.lasthandoff: 10/19/2021
+ms.locfileid: "60489413"
 ---
 # <a name="get-androidforworkmobileappconfiguration"></a>Obter androidForWorkMobileAppConfiguration
 
@@ -29,7 +29,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |:---|:---|
 |Delegado (conta corporativa ou de estudante)|DeviceManagementApps.Read.All, DeviceManagementApps.ReadWrite.All|
 |Delegado (conta pessoal da Microsoft)|Sem suporte.|
-|Aplicativo|DeviceManagementConfiguration.Read.All, DeviceManagementApps.Read.All, DeviceManagementApps.ReadWrite.All|
+|Aplicativo|DeviceManagementApps.Read.All, DeviceManagementApps.ReadWrite.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- {
@@ -68,7 +68,7 @@ Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado a
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 846
+Content-Length: 881
 
 {
   "value": {
@@ -94,7 +94,8 @@ Content-Length: 846
         "action": "autoGrant"
       }
     ],
-    "profileApplicability": "androidWorkProfile"
+    "profileApplicability": "androidWorkProfile",
+    "connectedAppsEnabled": true
   }
 }
 ```

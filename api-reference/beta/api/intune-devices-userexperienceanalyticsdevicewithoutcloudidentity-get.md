@@ -2,15 +2,15 @@
 title: Obter userExperienceAnalyticsDeviceWithoutCloudIdentity
 description: Leia propriedades e relações do objeto userExperienceAnalyticsDeviceWithoutCloudIdentity.
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 3fea93af89db1d0a5b0dbb6073742753b61827c0
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: d039f830c9cedb9a783367f5cc2245f48108a02e
+ms.sourcegitcommit: 4a960067cf2cd7d3c605550150eb3c9259adfe92
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59132964"
+ms.lasthandoff: 10/19/2021
+ms.locfileid: "60491104"
 ---
 # <a name="get-userexperienceanalyticsdevicewithoutcloudidentity"></a>Obter userExperienceAnalyticsDeviceWithoutCloudIdentity
 
@@ -29,7 +29,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |:---|:---|
 |Delegado (conta corporativa ou de estudante)|DeviceManagementManagedDevices.Read.All, DeviceManagementManagedDevices.ReadWrite.All|
 |Delegado (conta pessoal da Microsoft)|Sem suporte.|
-|Aplicativo|DeviceManagementConfiguration.Read.All, DeviceManagementManagedDevices.Read.All, DeviceManagementManagedDevices.ReadWrite.All|
+|Aplicativo|DeviceManagementManagedDevices.Read.All, DeviceManagementManagedDevices.ReadWrite.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- {

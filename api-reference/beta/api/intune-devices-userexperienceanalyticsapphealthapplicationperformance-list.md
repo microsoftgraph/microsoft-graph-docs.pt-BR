@@ -2,15 +2,15 @@
 title: Listar userExperienceAnalyticsAppHealthApplicationPerformances
 description: Listar propriedades e relações dos objetos userExperienceAnalyticsAppHealthApplicationPerformance.
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 7a078e52140baf6d3c9b910b8a208fc256388f95
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 764cfd7b39bf22650d0e9c0985f4741def5a328e
+ms.sourcegitcommit: 4a960067cf2cd7d3c605550150eb3c9259adfe92
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59027873"
+ms.lasthandoff: 10/19/2021
+ms.locfileid: "60494077"
 ---
 # <a name="list-userexperienceanalyticsapphealthapplicationperformances"></a>Listar userExperienceAnalyticsAppHealthApplicationPerformances
 
@@ -29,7 +29,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |:---|:---|
 |Delegado (conta corporativa ou de estudante)|DeviceManagementManagedDevices.Read.All, DeviceManagementManagedDevices.ReadWrite.All|
 |Delegado (conta pessoal da Microsoft)|Sem suporte.|
-|Aplicativo|DeviceManagementConfiguration.Read.All, DeviceManagementManagedDevices.Read.All, DeviceManagementManagedDevices.ReadWrite.All|
+|Aplicativo|DeviceManagementManagedDevices.Read.All, DeviceManagementManagedDevices.ReadWrite.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- {

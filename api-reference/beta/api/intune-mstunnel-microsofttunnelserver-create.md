@@ -2,15 +2,15 @@
 title: Criar microsoftTunnelServer
 description: Crie um novo objeto microsoftTunnelServer.
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 4f35257914dd251a31ce0fb2c5b92eb33190068e
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 9b1030ed45e4ac30de34535a5361dc1e1d425f18
+ms.sourcegitcommit: 4a960067cf2cd7d3c605550150eb3c9259adfe92
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59030729"
+ms.lasthandoff: 10/19/2021
+ms.locfileid: "60493237"
 ---
 # <a name="create-microsofttunnelserver"></a>Criar microsoftTunnelServer
 
@@ -27,7 +27,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 |Tipo de permissão|Permissões (da com menos para a com mais privilégios)|
 |:---|:---|
-|Delegado (conta corporativa ou de estudante)|DeviceManagementServiceConfig.ReadWrite.All, DeviceManagementConfiguration.ReadWrite.All|
+|Delegado (conta corporativa ou de estudante)|DeviceManagementConfiguration.ReadWrite.All|
 |Delegado (conta pessoal da Microsoft)|Sem suporte.|
 |Aplicativo|DeviceManagementConfiguration.ReadWrite.All|
 
@@ -53,11 +53,11 @@ A tabela a seguir mostra as propriedades necessárias ao criar o microsoftTunnel
 
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|id|String|Id do MicrosoftTunnelServer|
+|id|Cadeia de caracteres|Id do MicrosoftTunnelServer|
 |displayName|Cadeia de caracteres|O nome de exibição do MicrosoftTunnelServer|
 |tunnelServerHealthStatus|[microsoftTunnelServerHealthStatus](../resources/intune-mstunnel-microsofttunnelserverhealthstatus.md)|O status de saúde do MicrosoftTunnelServer. Os valores possíveis são: `unknown`, `healthy`, `unhealthy`, `warning`, `offline`, `upgradeInProgress`, `upgradeFailed`.|
 |lastCheckinDateTime|DateTimeOffset|Quando o MicrosoftTunnelServer entrou pela última vez|
-|agentImageDigest|Cadeia de Caracteres|O resumo da imagem do agente atual em execução neste servidor |
+|agentImageDigest|Cadeia de caracteres|O resumo da imagem do agente atual em execução neste servidor |
 |serverImageDigest|Cadeia de caracteres|O resumo da imagem atual do servidor em execução neste servidor |
 
 

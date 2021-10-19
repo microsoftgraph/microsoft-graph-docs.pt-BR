@@ -2,15 +2,15 @@
 title: Obter userExperienceAnalyticsWorkFromAnywhereHardwareReadinessMetric
 description: Leia propriedades e relações do objeto userExperienceAnalyticsWorkFromAnywhereHardwareReadinessMetric.
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: dfe7ba904ec4ae0a18f567d2d6b98bb9c596c377
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 438e253d22945b9099d4491bab8f347e3ed4ea53
+ms.sourcegitcommit: 4a960067cf2cd7d3c605550150eb3c9259adfe92
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59058997"
+ms.lasthandoff: 10/19/2021
+ms.locfileid: "60494420"
 ---
 # <a name="get-userexperienceanalyticsworkfromanywherehardwarereadinessmetric"></a>Obter userExperienceAnalyticsWorkFromAnywhereHardwareReadinessMetric
 
@@ -29,7 +29,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |:---|:---|
 |Delegado (conta corporativa ou de estudante)|DeviceManagementManagedDevices.Read.All, DeviceManagementManagedDevices.ReadWrite.All|
 |Delegado (conta pessoal da Microsoft)|Sem suporte.|
-|Aplicativo|DeviceManagementConfiguration.Read.All, DeviceManagementManagedDevices.Read.All, DeviceManagementManagedDevices.ReadWrite.All|
+|Aplicativo|DeviceManagementManagedDevices.Read.All, DeviceManagementManagedDevices.ReadWrite.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- {

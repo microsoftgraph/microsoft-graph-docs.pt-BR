@@ -2,15 +2,15 @@
 title: tipo de recurso userExperienceAnalyticsWorkFromAnywhereDevicesSummary
 description: O resumo de dispositivos de métricas work from anywhere da análise de experiência do usuário.
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: c3f34ed09d9012f13987aed291ff632f16d064c6
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 8be606cb2cc291adf878b5194c4b9063d993464e
+ms.sourcegitcommit: 4a960067cf2cd7d3c605550150eb3c9259adfe92
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59046880"
+ms.lasthandoff: 10/19/2021
+ms.locfileid: "60481052"
 ---
 # <a name="userexperienceanalyticsworkfromanywheredevicessummary-resource-type"></a>tipo de recurso userExperienceAnalyticsWorkFromAnywhereDevicesSummary
 
@@ -29,6 +29,16 @@ O resumo de dispositivos de métricas work from anywhere da análise de experiê
 |cloudManagementDevicesSummary|[userExperienceAnalyticsCloudManagementDevicesSummary](../resources/intune-devices-userexperienceanalyticscloudmanagementdevicessummary.md)|A experiência do usuário funciona de qualquer lugar Resumo de dispositivos de gerenciamento de nuvem.|
 |windows10DevicesSummary|[userExperienceAnalyticsWindows10DevicesSummary](../resources/intune-devices-userexperienceanalyticswindows10devicessummary.md)|A análise de experiência do usuário funciona de qualquer lugar Windows 10 de dispositivos.|
 |cloudIdentityDevicesSummary|[userExperienceAnalyticsCloudIdentityDevicesSummary](../resources/intune-devices-userexperienceanalyticscloudidentitydevicessummary.md)|A análise da experiência do usuário funciona de qualquer lugar resumo de dispositivos de Identidade de Nuvem.|
+|totalDevices|Int32|A contagem total de dispositivos. Valores válidos -2147483648 para 2147483647|
+|coManagedDevices|Int32|Número total de dispositivos co-gerenciados. Valores válidos -2147483648 para 2147483647|
+|intuneDevices|Int32|A contagem de dispositivos do intune que não estão no piloto automático registrado. Valores válidos -2147483648 para 2147483647|
+|tenantAttachDevices|Int32|Contagem total de dispositivos de anexação de locatários. Valores válidos -2147483648 para 2147483647|
+|windows10Devices|Int32|A contagem de dispositivos windows 10. Valores válidos -2147483648 para 2147483647|
+|windows10DevicesWithoutTenantAttach|Int32|A contagem de dispositivos windows 10 que são Intune e Comanaged. Valores válidos -2147483648 para 2147483647|
+|unsupportedOSversionDevices|Int32|A contagem de Windows 10 que têm versões do sistema operacional sem suporte. Valores válidos -2147483648 para 2147483647|
+|devicesWithoutCloudIdentity|Int32|A contagem de dispositivos que não são identidade de nuvem. Valores válidos -2147483648 para 2147483647|
+|devicesNotAutopilotRegistered|Int32|A contagem de dispositivos do intune que não estão no piloto automático registrado. Valores válidos -2147483648 para 2147483647|
+|devicesWithoutAutopilotProfileAssigned|Int32|A contagem de dispositivos do intune não atribuídos ao perfil de piloto automático. Valores válidos -2147483648 para 2147483647|
 
 ## <a name="relationships"></a>Relações
 Nenhum
@@ -62,7 +72,17 @@ Veja a seguir uma representação JSON do recurso.
   "cloudIdentityDevicesSummary": {
     "@odata.type": "microsoft.graph.userExperienceAnalyticsCloudIdentityDevicesSummary",
     "deviceWithoutCloudIdentityCount": 1024
-  }
+  },
+  "totalDevices": 1024,
+  "coManagedDevices": 1024,
+  "intuneDevices": 1024,
+  "tenantAttachDevices": 1024,
+  "windows10Devices": 1024,
+  "windows10DevicesWithoutTenantAttach": 1024,
+  "unsupportedOSversionDevices": 1024,
+  "devicesWithoutCloudIdentity": 1024,
+  "devicesNotAutopilotRegistered": 1024,
+  "devicesWithoutAutopilotProfileAssigned": 1024
 }
 ```
 

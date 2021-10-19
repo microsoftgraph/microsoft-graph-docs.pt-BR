@@ -2,15 +2,15 @@
 title: Atualizar microsoftTunnelSite
 description: Atualize as propriedades de um objeto microsoftTunnelSite.
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 8610d6076793a8fc9485ec0f302e37a9152098d4
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: c4c85a2be954cba036df34d726c1c2cd30483f60
+ms.sourcegitcommit: 4a960067cf2cd7d3c605550150eb3c9259adfe92
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59027614"
+ms.lasthandoff: 10/19/2021
+ms.locfileid: "60493230"
 ---
 # <a name="update-microsofttunnelsite"></a>Atualizar microsoftTunnelSite
 
@@ -27,7 +27,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 |Tipo de permissão|Permissões (da com menos para a com mais privilégios)|
 |:---|:---|
-|Delegado (conta corporativa ou de estudante)|DeviceManagementServiceConfig.ReadWrite.All, DeviceManagementConfiguration.ReadWrite.All|
+|Delegado (conta corporativa ou de estudante)|DeviceManagementConfiguration.ReadWrite.All|
 |Delegado (conta pessoal da Microsoft)|Sem suporte.|
 |Aplicativo|DeviceManagementConfiguration.ReadWrite.All|
 
@@ -53,17 +53,17 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar [o micro
 
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|id|String|Id do MicrosoftTunnelSite|
-|displayName|String|O nome de exibição do MicrosoftTunnelSite|
+|id|Cadeia de caracteres|Id do MicrosoftTunnelSite|
+|displayName|Cadeia de caracteres|O nome de exibição do MicrosoftTunnelSite|
 |description|Cadeia de caracteres|Descrição do MicrosoftTunnelSite|
-|publicAddress|String|O nome de domínio público do MicrosoftTunnelSite ou o endereço IP|
+|publicAddress|Cadeia de caracteres|O nome de domínio público do MicrosoftTunnelSite ou o endereço IP|
 |upgradeWindowUtcOffsetInMinutes|Int32|O timezone do site representado como um deslocamento de minuto do UTC|
 |upgradeWindowStartTime|TimeOfDay|Hora de início da janela de atualização do site|
 |upgradeWindowEndTime|TimeOfDay|Hora de término da janela de atualização do site|
-|upgradeAutomatically|Boleano|A configuração de atualização automática do site. True para atualizações automáticas, false para controle manual|
-|upgradeAvailable|Boolean|True se uma atualização estiver disponível|
-|internalNetworkProbeUrl|Cadeia de Caracteres|A URL da Sonda de Acesso à Rede Interna do MicrosoftTunnelSite|
-|roleScopeTagIds|Conjunto de cadeias de caracteres|Lista de marcas de escopo para esta instância entity.|
+|upgradeAutomatically|Booliano|A configuração de atualização automática do site. True para atualizações automáticas, false para controle manual|
+|upgradeAvailable|Booliano|True se uma atualização estiver disponível|
+|internalNetworkProbeUrl|Cadeia de caracteres|A URL da Sonda de Acesso à Rede Interna do MicrosoftTunnelSite|
+|roleScopeTagIds|Coleção de cadeias de caracteres|Lista de marcas de escopo para esta instância entity.|
 
 
 
