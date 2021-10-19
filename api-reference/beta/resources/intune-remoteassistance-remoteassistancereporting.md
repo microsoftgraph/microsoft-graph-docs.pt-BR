@@ -2,15 +2,15 @@
 title: Tipo de recurso remoteAssistanceReporting
 description: Recursos RemoteAssistanceReporting representam os metadados de uma determinada carga de relatórios de Assistência Remota
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 7793b8ef8bffa33e5d2e77de9fd102b9d0c59288
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 65103b951d41328d4e1b414a06ef99b8a99001bd
+ms.sourcegitcommit: 4a960067cf2cd7d3c605550150eb3c9259adfe92
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59039459"
+ms.lasthandoff: 10/19/2021
+ms.locfileid: "60485160"
 ---
 # <a name="remoteassistancereporting-resource-type"></a>Tipo de recurso remoteAssistanceReporting
 
@@ -29,19 +29,21 @@ Recursos RemoteAssistanceReporting representam os metadados de uma determinada c
 |startDateTime|DateTimeOffset|Hora de início da sessão|
 |endDateTime|DateTimeOffset|Hora de término da sessão|
 |remoteAssistanceSessionType|[remoteAssistanceSessionType](../resources/intune-remoteassistance-remoteassistancesessiontype.md)|Tipo da sessão de assistência remota realizada. Os valores possíveis são: `viewOnly`, `fullControl`, `elevation`. Os valores possíveis são: `viewOnly`, `fullControl`, `elevation`.|
-|helperEmail|Cadeia de Caracteres|Logon de email usado pelo auxiliar para estabelecer a sessão|
-|helperTenantId|Cadeia de Caracteres|ID do locatário para o auxiliar|
-|helperFirstName|Cadeia de Caracteres|Nome do auxiliar|
-|helperLastName|Cadeia de Caracteres|Sobrenome do auxiliar|
-|helperDeviceAadId|Cadeia de Caracteres|ID do AAD do dispositivo auxiliar|
-|helperDeviceName|Cadeia de Caracteres|Nome do dispositivo do auxiliar|
+|helperEmail|Cadeia de caracteres|Logon de email usado pelo auxiliar para estabelecer a sessão|
+|helperTenantId|Cadeia de caracteres|ID do locatário para o auxiliar|
+|helperFirstName|Cadeia de caracteres|Nome do auxiliar|
+|helperLastName|Cadeia de caracteres|Sobrenome do auxiliar|
+|helperOs|Cadeia de caracteres|Sistema operacional do auxiliar|
+|helperDeviceAadId|Cadeia de caracteres|O dispositivo do auxiliar AAD ID|
+|helperDeviceName|Cadeia de caracteres|Nome do dispositivo do auxiliar|
 |helperEnrollmentState|[enrollmentState](../resources/intune-shared-enrollmentstate.md)|Estado de registro do intune do dispositivo do auxiliar. Os possíveis valores são: `unknown`, `enrolled`, `pendingReset`, `failed`, `notContacted`, `blocked`. Os possíveis valores são: `unknown`, `enrolled`, `pendingReset`, `failed`, `notContacted`, `blocked`.|
-|sharerEmail|Cadeia de Caracteres|Logon de email usado pelo sharer para estabelecer a sessão|
-|sharerTenantId|Cadeia de Caracteres|ID de locatário para o sharer|
-|sharerFirstName|Cadeia de Caracteres|Nome do Sharer|
-|sharerLastName|Cadeia de Caracteres|Sobrenome do Sharer|
-|sharerDeviceAadId|Cadeia de Caracteres|ID AAD do dispositivo do Sharer|
-|sharerDeviceName|Cadeia de Caracteres|Nome do dispositivo do Sharer|
+|sharerEmail|Cadeia de caracteres|Logon de email usado pelo sharer para estabelecer a sessão|
+|sharerTenantId|Cadeia de caracteres|ID de locatário para o sharer|
+|sharerFirstName|Cadeia de caracteres|Nome do Sharer|
+|sharerLastName|Cadeia de caracteres|Sobrenome do Sharer|
+|sharerDeviceAadId|Cadeia de caracteres|O dispositivo do Sharer AAD ID|
+|sharerDeviceName|Cadeia de caracteres|Nome do dispositivo do Sharer|
+|sharerOs|Cadeia de caracteres|Sistema operacional do Sharer|
 |sharerEnrollmentState|[enrollmentState](../resources/intune-shared-enrollmentstate.md)|Estado de registro do intune do dispositivo do sharer. Os possíveis valores são: `unknown`, `enrolled`, `pendingReset`, `failed`, `notContacted`, `blocked`. Os possíveis valores são: `unknown`, `enrolled`, `pendingReset`, `failed`, `notContacted`, `blocked`.|
 
 ## <a name="relationships"></a>Relações
@@ -65,6 +67,7 @@ Veja a seguir uma representação JSON do recurso.
   "helperTenantId": "String",
   "helperFirstName": "String",
   "helperLastName": "String",
+  "helperOs": "String",
   "helperDeviceAadId": "String",
   "helperDeviceName": "String",
   "helperEnrollmentState": "String",
@@ -74,6 +77,7 @@ Veja a seguir uma representação JSON do recurso.
   "sharerLastName": "String",
   "sharerDeviceAadId": "String",
   "sharerDeviceName": "String",
+  "sharerOs": "String",
   "sharerEnrollmentState": "String"
 }
 ```

@@ -2,15 +2,15 @@
 title: Listar deviceManagementConfigurationSettingTemplates
 description: Listar propriedades e relações dos objetos deviceManagementConfigurationSettingTemplate.
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: da2305f33f5b09e23bb7f5ede12d803fcf8d2317
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 472909c29883776bd4e28f070dc0ae699fb428e1
+ms.sourcegitcommit: 4a960067cf2cd7d3c605550150eb3c9259adfe92
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59097366"
+ms.lasthandoff: 10/19/2021
+ms.locfileid: "60494763"
 ---
 # <a name="list-devicemanagementconfigurationsettingtemplates"></a>Listar deviceManagementConfigurationSettingTemplates
 
@@ -29,7 +29,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |:---|:---|
 |Delegado (conta corporativa ou de estudante)|DeviceManagementConfiguration.Read.All, DeviceManagementConfiguration.ReadWrite.All|
 |Delegado (conta pessoal da Microsoft)|Sem suporte.|
-|Aplicativo|DeviceManagementServiceConfig.ReadWrite.All, DeviceManagementConfiguration.Read.All|
+|Aplicativo|DeviceManagementConfiguration.Read.All, DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- {

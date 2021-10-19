@@ -4,12 +4,12 @@ description: Lista a API Graph microsoft para pontos de extremidade do Intune (R
 author: dougeby
 ms.localizationpriority: medium
 ms.prod: intune
-ms.openlocfilehash: cd98835baf70f760929bb19c840ed01cc57d0589
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 3d0b6983ad4a4b54e774c767ebf8d1c18d2823d5
+ms.sourcegitcommit: 4a960067cf2cd7d3c605550150eb3c9259adfe92
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59051458"
+ms.lasthandoff: 10/19/2021
+ms.locfileid: "60482942"
 ---
 # <a name="device-configuration-in-microsoft-intune"></a>Configuração de dispositivo no Microsoft Intune
 
@@ -456,11 +456,12 @@ Os seguintes recursos do Graph estão disponíveis para gerenciar configuraçõe
 - [Intervalo de versão do sistema operacional](intune-deviceconfig-operatingsystemversionrange.md)
 - [Operator](intune-deviceconfig-operator.md)
 - [Grupo de segredo de encaminhamento perfeito](intune-deviceconfig-perfectforwardsecrecygroup.md)
+- [Modo de armazenamento de reprodução pessoal de perfil pessoal](intune-deviceconfig-personalprofilepersonalplaystoremode.md)
 - [Solicitação de rescriptografia Pfx](intune-raimportcerts-pfxrecryptionrequest.md)
 - [Certificado de usuário Pfx](intune-raimportcerts-pfxusercertificate.md)
 - [Tipo de plataforma da política](intune-deviceconfig-policyplatformtype.md)
 - [Tipo de ação Power](intune-deviceconfig-poweractiontype.md)
-- [Recursos pré-lançamento](intune-deviceconfig-prereleasefeatures.md)
+- [Recursos de pré-lançamento](intune-deviceconfig-prereleasefeatures.md)
 - [Classificação de tipo de aplicativos](intune-deviceconfig-ratingappstype.md)
 - [Classificação de tipo de filmes da Austrália](intune-deviceconfig-ratingaustraliamoviestype.md)
 - [Classificação de tipo de televisão da Austrália](intune-deviceconfig-ratingaustraliatelevisiontype.md)

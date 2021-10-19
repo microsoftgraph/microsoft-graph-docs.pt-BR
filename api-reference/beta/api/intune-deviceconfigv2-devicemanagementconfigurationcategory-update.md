@@ -2,15 +2,15 @@
 title: Atualizar deviceManagementConfigurationCategory
 description: Atualize as propriedades de um objeto deviceManagementConfigurationCategory.
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: da90535f601bff90ca2b75e7787f189560473ff7
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 2bf0eba0f648a6a87bd8a632f4b419418f53668f
+ms.sourcegitcommit: 4a960067cf2cd7d3c605550150eb3c9259adfe92
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59034677"
+ms.lasthandoff: 10/19/2021
+ms.locfileid: "60491420"
 ---
 # <a name="update-devicemanagementconfigurationcategory"></a>Atualizar deviceManagementConfigurationCategory
 
@@ -29,7 +29,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |:---|:---|
 |Delegado (conta corporativa ou de estudante)|DeviceManagementConfiguration.ReadWrite.All|
 |Delegado (conta pessoal da Microsoft)|Sem suporte.|
-|Aplicativo|DeviceManagementServiceConfig.ReadWrite.All|
+|Aplicativo|DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- {
@@ -53,17 +53,17 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar [deviceM
 
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|id|String|Identificador de item|
-|description|String|Descrição do item|
+|id|Cadeia de caracteres|Identificador de item|
+|description|Cadeia de caracteres|Descrição do item|
 |helpText|Cadeia de caracteres|Texto de ajuda do item|
-|nome|String|Nome do item|
-|displayName|String|Nome de exibição do item|
-|plataformas|[deviceManagementConfigurationPlatforms](../resources/intune-deviceconfigv2-devicemanagementconfigurationplatforms.md)|Tipos de plataformas, que configurações na categoria têm. Os valores possíveis são: `none`, `macOS`, `windows10X`, `windows10`.|
-|technologies|[deviceManagementConfigurationTechnologies](../resources/intune-deviceconfigv2-devicemanagementconfigurationtechnologies.md)|Tipos de tecnologias, que configurações na categoria têm. Os possíveis valores são: `none`, `mdm`, `windows10XManagement`, `configManager`, `microsoftSense`, `exchangeOnline`.|
+|name|Cadeia de caracteres|Nome do item|
+|displayName|Cadeia de caracteres|Nome de exibição do item|
+|plataformas|[deviceManagementConfigurationPlatforms](../resources/intune-deviceconfigv2-devicemanagementconfigurationplatforms.md)|Tipos de plataformas, que configurações na categoria têm. Os possíveis valores são: `none`, `android`, `iOS`, `macOS`, `windows10X`, `windows10`.|
+|technologies|[deviceManagementConfigurationTechnologies](../resources/intune-deviceconfigv2-devicemanagementconfigurationtechnologies.md)|Tipos de tecnologias, que configurações na categoria têm. Os valores possíveis são: `none`, `mdm`, `windows10XManagement`, `configManager`, `microsoftSense`, `exchangeOnline`, `linuxMdm`, `unknownFutureValue`.|
 |settingUsage|[deviceManagementConfigurationSettingUsage](../resources/intune-deviceconfigv2-devicemanagementconfigurationsettingusage.md)|Indica que a categoria contém configurações usadas para Conformidade ou Configuração. Os valores possíveis são: `none` e `configuration`.|
 |parentCategoryId|Cadeia de caracteres|ID pai da categoria.|
 |rootCategoryId|Cadeia de caracteres|ID raiz da categoria.|
-|childCategoryIds|Conjunto de cadeias de caracteres|Lista de IDs filho da categoria.|
+|childCategoryIds|Coleção de cadeias de caracteres|Lista de IDs filho da categoria.|
 
 
 
@@ -77,7 +77,7 @@ Este é um exemplo da solicitação.
 ``` http
 PATCH https://graph.microsoft.com/beta/deviceManagement/configurationCategories/{deviceManagementConfigurationCategoryId}
 Content-type: application/json
-Content-length: 465
+Content-length: 467
 
 {
   "@odata.type": "#microsoft.graph.deviceManagementConfigurationCategory",
@@ -85,7 +85,7 @@ Content-length: 465
   "helpText": "Help Text value",
   "name": "Name value",
   "displayName": "Display Name value",
-  "platforms": "macOS",
+  "platforms": "android",
   "technologies": "mdm",
   "settingUsage": "configuration",
   "parentCategoryId": "Parent Category Id value",
@@ -101,7 +101,7 @@ Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado a
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 514
+Content-Length: 516
 
 {
   "@odata.type": "#microsoft.graph.deviceManagementConfigurationCategory",
@@ -110,7 +110,7 @@ Content-Length: 514
   "helpText": "Help Text value",
   "name": "Name value",
   "displayName": "Display Name value",
-  "platforms": "macOS",
+  "platforms": "android",
   "technologies": "mdm",
   "settingUsage": "configuration",
   "parentCategoryId": "Parent Category Id value",

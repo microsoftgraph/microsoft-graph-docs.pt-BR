@@ -1,18 +1,18 @@
 ---
-title: Obter deviceManagementConfigurationSettingGroupCollectionDefinition
-description: Leia propriedades e relações do objeto deviceManagementConfigurationSettingGroupCollectionDefinition.
+title: Obter deviceManagementConfigurationRedirectSettingDefinition
+description: Leia propriedades e relações do objeto deviceManagementConfigurationRedirectSettingDefinition.
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 55290c84ad3c1cf631774474f3aa562f1d67da0c
+ms.openlocfilehash: 8474f9ad53fa6b041f95202580f8181fb48a931b
 ms.sourcegitcommit: 4a960067cf2cd7d3c605550150eb3c9259adfe92
 ms.translationtype: MT
 ms.contentlocale: pt-BR
 ms.lasthandoff: 10/19/2021
-ms.locfileid: "60493169"
+ms.locfileid: "60494339"
 ---
-# <a name="get-devicemanagementconfigurationsettinggroupcollectiondefinition"></a>Obter deviceManagementConfigurationSettingGroupCollectionDefinition
+# <a name="get-devicemanagementconfigurationredirectsettingdefinition"></a>Obter deviceManagementConfigurationRedirectSettingDefinition
 
 Namespace: microsoft.graph
 
@@ -20,7 +20,7 @@ Namespace: microsoft.graph
 
 > **Observação:** A API do Microsoft Graph para Intune requer uma [licença ativa do Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
 
-Leia propriedades e relações do [objeto deviceManagementConfigurationSettingGroupCollectionDefinition.](../resources/intune-deviceconfigv2-devicemanagementconfigurationsettinggroupcollectiondefinition.md)
+Leia propriedades e relações do [objeto deviceManagementConfigurationRedirectSettingDefinition.](../resources/intune-deviceconfigv2-devicemanagementconfigurationredirectsettingdefinition.md)
 
 ## <a name="prerequisites"></a>Pré-requisitos
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
@@ -56,7 +56,7 @@ Este método dá suporte a [Parâmetros de consulta OData](/graph/query-paramete
 Não forneça um corpo de solicitação para esse método.
 
 ## <a name="response"></a>Resposta
-Se tiver êxito, este método retornará um código de resposta e um objeto `200 OK` [deviceManagementConfigurationSettingGroupCollectionDefinition](../resources/intune-deviceconfigv2-devicemanagementconfigurationsettinggroupcollectiondefinition.md) no corpo da resposta.
+Se tiver êxito, este método retornará um código de resposta e um `200 OK` [objeto deviceManagementConfigurationRedirectSettingDefinition](../resources/intune-deviceconfigv2-devicemanagementconfigurationredirectsettingdefinition.md) no corpo da resposta.
 
 ## <a name="example"></a>Exemplo
 
@@ -71,11 +71,11 @@ Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado a
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 1971
+Content-Length: 1548
 
 {
   "value": {
-    "@odata.type": "#microsoft.graph.deviceManagementConfigurationSettingGroupCollectionDefinition",
+    "@odata.type": "#microsoft.graph.deviceManagementConfigurationRedirectSettingDefinition",
     "applicability": {
       "@odata.type": "microsoft.graph.deviceManagementConfigurationSettingApplicability",
       "description": "Description value",
@@ -108,31 +108,15 @@ Content-Length: 1971
         "settingDefinitionId": "Setting Definition Id value"
       }
     ],
-    "id": "739da194-a194-739d-94a1-9d7394a19d73",
+    "id": "3e6c3eab-3eab-3e6c-ab3e-6c3eab3e6c3e",
     "description": "Description value",
     "helpText": "Help Text value",
     "name": "Name value",
     "displayName": "Display Name value",
     "version": "Version value",
-    "childIds": [
-      "Child Ids value"
-    ],
-    "dependentOn": [
-      {
-        "@odata.type": "microsoft.graph.deviceManagementConfigurationDependentOn",
-        "dependentOn": "Dependent On value",
-        "parentSettingId": "Parent Setting Id value"
-      }
-    ],
-    "dependedOnBy": [
-      {
-        "@odata.type": "microsoft.graph.deviceManagementConfigurationSettingDependedOnBy",
-        "dependedOnBy": "Depended On By value",
-        "required": true
-      }
-    ],
-    "maximumCount": 12,
-    "minimumCount": 12
+    "deepLink": "Deep Link value",
+    "redirectMessage": "Redirect Message value",
+    "redirectReason": "Redirect Reason value"
   }
 }
 ```

@@ -4,12 +4,12 @@ description: Lista a API Graph microsoft para pontos de extremidade do Intune (R
 author: dougeby
 ms.localizationpriority: medium
 ms.prod: intune
-ms.openlocfilehash: f88f4f3c6c4e50008bc58dae5c4aef9bcdb45b19
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 9cbb23c56a73ecaca01a1600681da208f67ed741
+ms.sourcegitcommit: 4a960067cf2cd7d3c605550150eb3c9259adfe92
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59136632"
+ms.lasthandoff: 10/19/2021
+ms.locfileid: "60481087"
 ---
 # <a name="how-to-protect-your-company-app-data-with-microsoft-intune"></a>Como proteger dados de aplicativos corporativos com o Microsoft Intune
 
@@ -56,6 +56,7 @@ Os seguintes recursos do Graph estão disponíveis para gerenciar políticas de 
 - [Tipo de ação de permissão do Android](intune-apps-androidpermissionactiontype.md)
 - [Aplicabilidade do perfil android](intune-apps-androidprofileapplicability.md)
 - [Aplicativo da loja Android](intune-apps-androidstoreapp.md)
+- [Tipo Wi-Fi de segurança aosp](intune-androidforwork-aospwifisecuritytype.md)
 - [Item de definição de configuração do aplicativo](intune-apps-appconfigurationsettingitem.md)
 - [Status de certificado](intune-apps-certificatestatus.md)
 - [Estado de instalação do dispositivo](intune-books-deviceinstallstate.md)

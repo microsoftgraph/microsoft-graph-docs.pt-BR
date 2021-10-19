@@ -2,15 +2,15 @@
 title: Criar deviceAndAppManagementAssignmentFilter
 description: Crie um novo objeto deviceAndAppManagementAssignmentFilter.
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 5c367411ce8abf385af46e238de0e2716fcac34c
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: bb531791fa49fd43fca36a2f37d27d3348213b7f
+ms.sourcegitcommit: 4a960067cf2cd7d3c605550150eb3c9259adfe92
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59009732"
+ms.lasthandoff: 10/19/2021
+ms.locfileid: "60489041"
 ---
 # <a name="create-deviceandappmanagementassignmentfilter"></a>Criar deviceAndAppManagementAssignmentFilter
 
@@ -27,9 +27,9 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 |Tipo de permissão|Permissões (da com menos para a com mais privilégios)|
 |:---|:---|
-|Delegada (conta corporativa ou de estudante)|DeviceManagementConfiguration.ReadWrite.All|
-|Delegada (conta pessoal da Microsoft)|Sem suporte.|
-|Aplicativo|DeviceManagementServiceConfig.ReadWrite.All, DeviceManagementConfiguration.ReadWrite.All|
+|Delegado (conta corporativa ou de estudante)|DeviceManagementConfiguration.ReadWrite.All|
+|Delegado (conta pessoal da Microsoft)|Sem suporte.|
+|Aplicativo|DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- {
@@ -60,7 +60,7 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar deviceAn
 |description|Cadeia de caracteres|Descrição do Filtro de Atribuição.|
 |plataforma|[devicePlatformType](../resources/intune-policyset-deviceplatformtype.md)|Tipo de plataforma dos dispositivos nos quais o Filtro de Atribuição será aplicável. Os valores possíveis são: `android`, `androidForWork`, `iOS`, `macOS`, `windowsPhone81`, `windows81AndLater`, `windows10AndLater`, `androidWorkProfile`, `unknown`.|
 |rule|Cadeia de caracteres|Definição de regra do Filtro de Atribuição.|
-|roleScopeTags|Coleção String|RoleScopeTags do Filtro de Atribuição.|
+|roleScopeTags|Coleção de cadeias de caracteres|RoleScopeTags do Filtro de Atribuição.|
 
 
 

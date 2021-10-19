@@ -2,15 +2,15 @@
 title: Obter resourceOperation
 description: Ler propriedades e relações do objeto resourceOperation.
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: e0238273da8b4bde142bbee93d996e4a730e0f96
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: b4daa8f580617e9db2c6bf02fc4f85f85ce13f11
+ms.sourcegitcommit: 4a960067cf2cd7d3c605550150eb3c9259adfe92
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59141491"
+ms.lasthandoff: 10/19/2021
+ms.locfileid: "60492762"
 ---
 # <a name="get-resourceoperation"></a>Obter resourceOperation
 
@@ -29,7 +29,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |:---|:---|
 |Delegado (conta corporativa ou de estudante)|DeviceManagementRBAC.Read.All, DeviceManagementRBAC.ReadWrite.All|
 |Delegado (conta pessoal da Microsoft)|Sem suporte.|
-|Aplicativo|DeviceManagementConfiguration.Read.All, DeviceManagementRBAC.Read.All, DeviceManagementRBAC.ReadWrite.All|
+|Aplicativo|DeviceManagementRBAC.Read.All, DeviceManagementRBAC.ReadWrite.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- {

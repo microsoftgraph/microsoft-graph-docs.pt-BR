@@ -2,15 +2,15 @@
 title: ação getRemoteAssistanceMonitorTotalSessionsReport
 description: Ainda não documentado
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 8186c3b573fe47f36034a20743708614da0ea815
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: adc5117b8fb5430efdef73e75fde2424f869459a
+ms.sourcegitcommit: 4a960067cf2cd7d3c605550150eb3c9259adfe92
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59041405"
+ms.lasthandoff: 10/19/2021
+ms.locfileid: "60489749"
 ---
 # <a name="getremoteassistancemonitortotalsessionsreport-action"></a>ação getRemoteAssistanceMonitorTotalSessionsReport
 
@@ -29,7 +29,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |:---|:---|
 |Delegado (conta corporativa ou de estudante)|DeviceManagementServiceConfig.Read.All, DeviceManagementServiceConfig.ReadWrite.All|
 |Delegado (conta pessoal da Microsoft)|Sem suporte.|
-|Aplicativo|DeviceManagementServiceConfig.Read.All, DeviceManagementServiceConfig.ReadWrite.All, DeviceManagementConfiguration.Read.All|
+|Aplicativo|DeviceManagementServiceConfig.Read.All, DeviceManagementServiceConfig.ReadWrite.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- {
@@ -53,7 +53,7 @@ A tabela a seguir mostra os parâmetros que podem ser usados com esta ação.
 
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|nome|Cadeia de caracteres|Ainda não documentado|
+|name|Cadeia de caracteres|Ainda não documentado|
 |select|String collection|Ainda não documentado|
 |search|String|Ainda não documentado|
 |groupBy|String collection|Ainda não documentado|

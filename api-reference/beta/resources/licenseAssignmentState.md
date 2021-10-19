@@ -1,16 +1,16 @@
 ---
 title: Tipo de recurso licenseAssignmentState
 description: 'A **propriedade licenseAssignmentStates** da entidade do usuário é uma coleção **de licenseAssignmentState**. Ele fornece detalhes sobre atribuições de licença para um usuário. Os detalhes incluem informações como:  '
-localization_priority: Normal
+ms.localizationpriority: medium
 doc_type: resourcePageType
 ms.prod: users
 author: jpettere
-ms.openlocfilehash: 06b469cb80e92ca09a8e1bce7a058aed1b3a570d
-ms.sourcegitcommit: d700b7e3b411e3226b5adf1f213539f05fe802e8
+ms.openlocfilehash: a84784f3ba4e04f6c7a5665abe436d333d5dcac4
+ms.sourcegitcommit: 4a960067cf2cd7d3c605550150eb3c9259adfe92
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52547075"
+ms.lasthandoff: 10/19/2021
+ms.locfileid: "60492578"
 ---
 # <a name="licenseassignmentstate-resource-type"></a>Tipo de recurso licenseAssignmentState
 
@@ -29,11 +29,12 @@ A **propriedade licenseAssignmentStates** da entidade [do](user.md) usuário é 
 ## <a name="properties"></a>Propriedades
 | Propriedade     | Tipo   |Descrição|
 |:---------------|:--------|:----------|
-|assignedByGroup|cadeia de caracteres|A id do grupo que atribui essa licença. Se a atribuição for uma licença atribuída diretamente, esse campo será Null. Somente Leitura.|
+|assignedByGroup|string|A id do grupo que atribui essa licença. Se a atribuição for uma licença atribuída diretamente, esse campo será Null. Somente Leitura.|
 |disabledPlans|Collection(String)|Os planos de serviço que estão desabilitados nesta atribuição. Somente Leitura.|
-|erro|String|Erro de falha de atribuição de licença. Se a licença for atribuída com êxito, esse campo será Null. Somente Leitura. Valores possíveis: `CountViolation` , , , , e `MutuallyExclusiveViolation` `DependencyViolation` `ProhibitedInUsageLocationViolation` `UniquenessViolation` `Others` . Para obter mais informações sobre como identificar e resolver erros de atribuição de licença, [consulte aqui](/azure/active-directory/users-groups-roles/licensing-groups-resolve-problems).|
-|skuId|String|O identificador exclusivo da SKU. Somente Leitura.|
-|state|String|Indique o estado atual dessa atribuição. Somente Leitura. Valores possíveis: Active, ActiveWithError, Disabled e Error.|
+|erro|Cadeia de caracteres|Erro de falha de atribuição de licença. Se a licença for atribuída com êxito, esse campo será Null. Somente Leitura. Valores possíveis: `CountViolation` , , , , e `MutuallyExclusiveViolation` `DependencyViolation` `ProhibitedInUsageLocationViolation` `UniquenessViolation` `Others` . Para obter mais informações sobre como identificar e resolver erros de atribuição de licença, [consulte aqui](/azure/active-directory/users-groups-roles/licensing-groups-resolve-problems).|
+|lastUpdatedDateTime|DateTimeOffset|O timestamp quando o estado da atribuição de licença foi atualizado pela última vez.|
+|skuId|Cadeia de caracteres|O identificador exclusivo da SKU. Somente Leitura.|
+|state|Cadeia de caracteres|Indique o estado atual dessa atribuição. Somente Leitura. Valores possíveis: Active, ActiveWithError, Disabled e Error.|
 
 ## <a name="json-representation"></a>Representação JSON
 
@@ -49,7 +50,8 @@ Veja a seguir uma representação JSON do recurso
   "assignedByGroup": "String",
   "disabledPlans": ["string"],
   "error": " String ",
-  "skuId": "String ",
+  "lastUpdatedDateTime": "String (timestamp)",
+  "skuId": " String ",
   "state": "String"
 }
 

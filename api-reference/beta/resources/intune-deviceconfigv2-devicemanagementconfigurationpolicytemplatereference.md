@@ -2,15 +2,15 @@
 title: Tipo de recurso deviceManagementConfigurationPolicyTemplateReference
 description: Informações de referência do modelo de política
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: c0558aaccc89baf72773c2e958c8f32aff007640
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 64bb59f9d96386260267890dbdce77c538afedcd
+ms.sourcegitcommit: 4a960067cf2cd7d3c605550150eb3c9259adfe92
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59069009"
+ms.lasthandoff: 10/19/2021
+ms.locfileid: "60488350"
 ---
 # <a name="devicemanagementconfigurationpolicytemplatereference-resource-type"></a>Tipo de recurso deviceManagementConfigurationPolicyTemplateReference
 
@@ -25,10 +25,10 @@ Informações de referência do modelo de política
 ## <a name="properties"></a>Propriedades
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|templateId|String|ID do modelo|
-|templateFamily|[deviceManagementConfigurationTemplateFamily](../resources/intune-deviceconfigv2-devicemanagementconfigurationtemplatefamily.md)|Família de modelos do Modelo referenciado. Essa propriedade é somente leitura. Os valores possíveis são: `none`, `endpointSecurityAntivirus`, `endpointSecurityDiskEncryption`, `endpointSecurityFirewall`, `endpointSecurityEndpointDetectionAndResponse`, `endpointSecurityAttackSurfaceReduction`, `endpointSecurityAccountProtection`, `endpointSecurityApplicationControl`.|
+|templateId|Cadeia de caracteres|ID do modelo|
+|templateFamily|[deviceManagementConfigurationTemplateFamily](../resources/intune-deviceconfigv2-devicemanagementconfigurationtemplatefamily.md)|Família de modelos do Modelo referenciado. Essa propriedade é somente leitura. Os valores possíveis são: `none`, `endpointSecurityAntivirus`, `endpointSecurityDiskEncryption`, `endpointSecurityFirewall`, `endpointSecurityEndpointDetectionAndResponse`, `endpointSecurityAttackSurfaceReduction`, `endpointSecurityAccountProtection`, `endpointSecurityApplicationControl`, `baseline`.|
 |templateDisplayName|Cadeia de caracteres|Template Display Name of the referenced template. Essa propriedade é somente leitura.|
-|templateDisplayVersion|Cadeia de Caracteres|Template Display Version of the referenced Template. Essa propriedade é somente leitura.|
+|templateDisplayVersion|Cadeia de caracteres|Template Display Version of the referenced Template. Essa propriedade é somente leitura.|
 
 ## <a name="relationships"></a>Relações
 Nenhum
