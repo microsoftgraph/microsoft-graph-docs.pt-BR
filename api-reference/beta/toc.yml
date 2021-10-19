@@ -1721,11 +1721,11 @@ items:
                     href: api/ediscovery-tag-childtags.md
                   - name: Listar marcas como hierarquia
                     href: api/ediscovery-tag-ashierarchy.md
-          - name: Solicitação de direitos de assunto
+          - name: Solicitação de direitos do titular
             items:
               - name: Visão Geral
                 href: resources/subjectrightsrequest-subjectrightsrequestapioverview.md
-              - name: Solicitação de direitos de assunto
+              - name: Solicitação de direitos do titular
                 href: resources/subjectrightsrequest.md
                 items:
                   - name: Listar
@@ -2259,6 +2259,8 @@ items:
                         href: api/intune-apps-androidstoreapp-delete.md
                       - name: Atualizar
                         href: api/intune-apps-androidstoreapp-update.md
+                  - name: Tipo Wi-Fi de segurança aosp
+                    href: resources/intune-androidforwork-aospwifisecuritytype.md
                   - name: Item de definição de configuração do aplicativo
                     href: resources/intune-apps-appconfigurationsettingitem.md
                   - name: Status de certificado
@@ -6034,6 +6036,8 @@ items:
                     href: resources/intune-deviceconfig-operator.md
                   - name: Grupo de segredo de encaminhamento perfeito
                     href: resources/intune-deviceconfig-perfectforwardsecrecygroup.md
+                  - name: Modo de armazenamento de reprodução pessoal de perfil pessoal
+                    href: resources/intune-deviceconfig-personalprofilepersonalplaystoremode.md
                   - name: Solicitação de rescriptografia Pfx
                     href: resources/intune-raimportcerts-pfxrecryptionrequest.md
                     items:
@@ -9228,6 +9232,60 @@ items:
                         href: api/intune-rbac-deviceandappmanagementroledefinition-delete.md
                       - name: Atualizar
                         href: api/intune-rbac-deviceandappmanagementroledefinition-update.md
+                  - name: Identidade
+                    href: resources/intune-rbac-identity.md
+                  - name: Conjunto de identidade
+                    href: resources/intune-rbac-identityset.md
+                  - name: Política de aprovação de operação
+                    href: resources/intune-rbac-operationapprovalpolicy.md
+                    items:
+                      - name: Listar
+                        href: api/intune-rbac-operationapprovalpolicy-list.md
+                      - name: Obter
+                        href: api/intune-rbac-operationapprovalpolicy-get.md
+                      - name: Criar
+                        href: api/intune-rbac-operationapprovalpolicy-create.md
+                      - name: Excluir
+                        href: api/intune-rbac-operationapprovalpolicy-delete.md
+                      - name: Atualizar
+                        href: api/intune-rbac-operationapprovalpolicy-update.md
+                  - name: Plataforma de política de aprovação de operação
+                    href: resources/intune-rbac-operationapprovalpolicyplatform.md
+                  - name: Conjunto de políticas de aprovação de operação
+                    href: resources/intune-rbac-operationapprovalpolicyset.md
+                  - name: Tipo de política de aprovação de operação
+                    href: resources/intune-rbac-operationapprovalpolicytype.md
+                  - name: Solicitação de aprovação de operação
+                    href: resources/intune-rbac-operationapprovalrequest.md
+                    items:
+                      - name: Listar
+                        href: api/intune-rbac-operationapprovalrequest-list.md
+                      - name: Obter
+                        href: api/intune-rbac-operationapprovalrequest-get.md
+                      - name: Criar
+                        href: api/intune-rbac-operationapprovalrequest-create.md
+                      - name: Excluir
+                        href: api/intune-rbac-operationapprovalrequest-delete.md
+                      - name: Atualizar
+                        href: api/intune-rbac-operationapprovalrequest-update.md
+                      - name: aprovar ação
+                        href: api/intune-rbac-operationapprovalrequest-approve.md
+                      - name: rejeitar ação
+                        href: api/intune-rbac-operationapprovalrequest-reject.md
+                      - name: Ação cancelApproval
+                        href: api/intune-rbac-operationapprovalrequest-cancelapproval.md
+                      - name: Ação getRequestStatus
+                        href: api/intune-rbac-operationapprovalrequest-getrequeststatus.md
+                      - name: getMyRequestById
+                        href: api/intune-rbac-operationapprovalrequest-getmyrequestbyid.md
+                      - name: getMyRequests
+                        href: api/intune-rbac-operationapprovalrequest-getmyrequests.md
+                      - name: Ação cancelMyRequest
+                        href: api/intune-rbac-operationapprovalrequest-cancelmyrequest.md
+                  - name: Status da entidade de solicitação de aprovação de operação
+                    href: resources/intune-rbac-operationapprovalrequestentitystatus.md
+                  - name: Status da solicitação de aprovação da operação
+                    href: resources/intune-rbac-operationapprovalrequeststatus.md
                   - name: Múltiplos aplicativos Rbac
                     href: resources/intune-rbac-rbacapplicationmultiple.md
                     items:
@@ -9450,10 +9508,10 @@ items:
                         href: api/intune-shared-devicemanagementderivedcredentialsettings-get.md
                       - name: Atualizar
                         href: api/intune-shared-devicemanagementderivedcredentialsettings-update.md
-                      - name: Listar
+                      - name: List
                         href: api/intune-shared-devicemanagementderivedcredentialsettings-list.md
-                      - name: Criar
-                        href: resources/intune-shared-devicemanagementderivedcredentialsettings.md
+                      - name: 'deviceManagementDerivedCredentialSettings](.. /resources/intune-shared-devicemanagementderivedcredentialsettings.md)| Criar'
+                        href: api/intune-shared-devicemanagementderivedcredentialsettings.md
                       - name: Excluir
                         href: api/intune-shared-devicemanagementderivedcredentialsettings-delete.md
                   - name: Script de gerenciamento de dispositivo
@@ -13867,7 +13925,7 @@ items:
         items:
           - name: Visão Geral
             href: resources/planner-overview.md
-          - name: Plano
+          - name: Planejar
             href: resources/plannerplan.md
             items:
               - name: Listar os planos do grupo

@@ -2,15 +2,15 @@
 title: Ação getHealthMetrics
 description: Ainda não documentado
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 802f0fea0844c5e4da2941c06e970e028366fe32
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 35fd06ecde961c9560d657448e60e652cc61fdc9
+ms.sourcegitcommit: 4a960067cf2cd7d3c605550150eb3c9259adfe92
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59111919"
+ms.lasthandoff: 10/19/2021
+ms.locfileid: "60486702"
 ---
 # <a name="gethealthmetrics-action"></a>Ação getHealthMetrics
 
@@ -37,7 +37,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 }
 -->
 ``` http
-POST /deviceManagement/certificateConnectorDetails/getHealthMetrics
+POST /deviceManagement/certificateConnectorDetails/{certificateConnectorDetailsId}/getHealthMetrics
 ```
 
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
@@ -65,7 +65,7 @@ Se tiver êxito, essa ação retornará um código `200 OK` de resposta e uma co
 ### <a name="request"></a>Solicitação
 Este é um exemplo da solicitação.
 ``` http
-POST https://graph.microsoft.com/beta/deviceManagement/certificateConnectorDetails/getHealthMetrics
+POST https://graph.microsoft.com/beta/deviceManagement/certificateConnectorDetails/{certificateConnectorDetailsId}/getHealthMetrics
 
 Content-type: application/json
 Content-length: 55

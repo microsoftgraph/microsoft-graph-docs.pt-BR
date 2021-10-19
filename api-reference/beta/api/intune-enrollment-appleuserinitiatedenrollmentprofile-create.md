@@ -2,15 +2,15 @@
 title: Criar appleUserInitiatedEnrollmentProfile
 description: Crie um novo objeto appleUserInitiatedEnrollmentProfile.
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 9df044328b3c595fb9496bf7e350bb4719383974
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 7f35bd6e908ea6497de1c0cfa03188fe77bc6743
+ms.sourcegitcommit: 4a960067cf2cd7d3c605550150eb3c9259adfe92
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59107936"
+ms.lasthandoff: 10/19/2021
+ms.locfileid: "60479197"
 ---
 # <a name="create-appleuserinitiatedenrollmentprofile"></a>Criar appleUserInitiatedEnrollmentProfile
 
@@ -59,7 +59,7 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar appleUse
 |displayName|Cadeia de caracteres|Nome do perfil|
 |description|Cadeia de caracteres|Descrição do perfil|
 |prioridade|Int32|Prioridade, 0 é mais alta|
-|plataforma|[devicePlatformType](../resources/intune-enrollment-deviceplatformtype.md)|A plataforma do Dispositivo. Os valores possíveis são: `android`, `androidForWork`, `iOS`, `macOS`, `windowsPhone81`, `windows81AndLater`, `windows10AndLater`, `androidWorkProfile`, `unknown`.|
+|plataforma|[devicePlatformType](../resources/intune-enrollment-deviceplatformtype.md)|A plataforma do Dispositivo. Os valores possíveis são: `android`, `androidForWork`, `iOS`, `macOS`, `windowsPhone81`, `windows81AndLater`, `windows10AndLater`, `androidWorkProfile`, `unknown`, `androidAOSP`.|
 |createdDateTime|DateTimeOffset|Tempo de criação de perfil|
 |lastModifiedDateTime|DateTimeOffset|Tempo de última modificação do perfil|
 

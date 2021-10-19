@@ -2,15 +2,15 @@
 title: Atualizar androidDeviceOwnerEnrollmentProfile
 description: Atualize as propriedades de um objeto androidDeviceOwnerEnrollmentProfile.
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: e8f83545c4de369c270eea7b63793418f88821d5
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: bb53c8ed29fc72eea91756e26ddd45fa0db9df1e
+ms.sourcegitcommit: 4a960067cf2cd7d3c605550150eb3c9259adfe92
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59071333"
+ms.lasthandoff: 10/19/2021
+ms.locfileid: "60489287"
 ---
 # <a name="update-androiddeviceownerenrollmentprofile"></a>Atualizar androidDeviceOwnerEnrollmentProfile
 
@@ -54,10 +54,10 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar [android
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
 |accountId|String|GUID de locatário ao qual o perfil de registro pertence.|
-|id|String|GUID exclusivo do perfil de registro.|
-|displayName|String|Nome de exibição do perfil de registro.|
+|id|Cadeia de caracteres|GUID exclusivo do perfil de registro.|
+|displayName|Cadeia de caracteres|Nome de exibição do perfil de registro.|
 |description|Cadeia de caracteres|Descrição do perfil de registro.|
-|enrollmentMode|[androidDeviceOwnerEnrollmentMode](../resources/intune-androidforwork-androiddeviceownerenrollmentmode.md)|O modo de registro de dispositivos que usam esse perfil de registro. Os valores possíveis são: `corporateOwnedDedicatedDevice`, `corporateOwnedFullyManaged`, `corporateOwnedWorkProfile`.|
+|enrollmentMode|[androidDeviceOwnerEnrollmentMode](../resources/intune-androidforwork-androiddeviceownerenrollmentmode.md)|O modo de registro de dispositivos que usam esse perfil de registro. Os valores possíveis são: `corporateOwnedDedicatedDevice`, `corporateOwnedFullyManaged`, `corporateOwnedWorkProfile`, `corporateOwnedAOSPUserlessDevice`, `corporateOwnedAOSPUserAssociatedDevice`.|
 |enrollmentTokenType|[androidDeviceOwnerEnrollmentTokenType](../resources/intune-androidforwork-androiddeviceownerenrollmenttokentype.md)|O tipo de token de registro para um perfil de registro. Os valores possíveis são: `default` e `corporateOwnedDedicatedDeviceWithAzureADSharedMode`.|
 |createdDateTime|DateTimeOffset|Data e hora de criação do perfil de registro.|
 |lastModifiedDateTime|DateTimeOffset|Data e hora da última modificação do perfil de registro.|
@@ -65,9 +65,14 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar [android
 |tokenCreationDateTime|DateTimeOffset|Data em que o token criado mais recentemente foi criado.|
 |tokenExpirationDateTime|DateTimeOffset|Data e hora em que o token mais recentemente criado expirará.|
 |enrolledDeviceCount|Int32|Número total de dispositivos Android que foram registrados usando esse perfil de registro.|
+|enrollmentTokenUsageCount|Int32|Número total de dispositivos AOSP que se registraram usando o token atual.|
 |qrCodeContent|String|Cadeia de caracteres usada para gerar um código QR para o token.|
 |qrCodeImage|[mimeContent](../resources/intune-shared-mimecontent.md)|Cadeia de caracteres usada para gerar um código QR para o token.|
-|roleScopeTagIds|Conjunto de cadeias de caracteres|Lista de marcas de escopo para esta instância entity.|
+|roleScopeTagIds|Coleção de cadeias de caracteres|Lista de marcas de escopo para esta instância entity.|
+|wifiSsid|Cadeia de caracteres|Cadeia de caracteres que contém o ssid de logon wi-fi|
+|wifiPassword|Cadeia de caracteres|Cadeia de caracteres que contém a senha de logon wi-fi|
+|wifiSecurityType|[aospWifiSecurityType](../resources/intune-androidforwork-aospwifisecuritytype.md)|Cadeia de caracteres que contém o tipo de segurança wi-fi. Os valores possíveis são: `none`, `wpa`, `wep`.|
+|wifiHidden|Booliano|Boolean que indica se redes wifi ocultas estão habilitadas|
 
 
 
@@ -81,7 +86,7 @@ Este é um exemplo da solicitação.
 ``` http
 PATCH https://graph.microsoft.com/beta/deviceManagement/androidDeviceOwnerEnrollmentProfiles/{androidDeviceOwnerEnrollmentProfileId}
 Content-type: application/json
-Content-length: 758
+Content-length: 922
 
 {
   "@odata.type": "#microsoft.graph.androidDeviceOwnerEnrollmentProfile",
@@ -94,6 +99,7 @@ Content-length: 758
   "tokenCreationDateTime": "2017-01-01T00:01:38.5314127-08:00",
   "tokenExpirationDateTime": "2016-12-31T23:59:54.0590989-08:00",
   "enrolledDeviceCount": 3,
+  "enrollmentTokenUsageCount": 9,
   "qrCodeContent": "Qr Code Content value",
   "qrCodeImage": {
     "@odata.type": "microsoft.graph.mimeContent",
@@ -102,7 +108,11 @@ Content-length: 758
   },
   "roleScopeTagIds": [
     "Role Scope Tag Ids value"
-  ]
+  ],
+  "wifiSsid": "Wifi Ssid value",
+  "wifiPassword": "Wifi Password value",
+  "wifiSecurityType": "wpa",
+  "wifiHidden": true
 }
 ```
 
@@ -111,7 +121,7 @@ Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado a
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 930
+Content-Length: 1094
 
 {
   "@odata.type": "#microsoft.graph.androidDeviceOwnerEnrollmentProfile",
@@ -127,6 +137,7 @@ Content-Length: 930
   "tokenCreationDateTime": "2017-01-01T00:01:38.5314127-08:00",
   "tokenExpirationDateTime": "2016-12-31T23:59:54.0590989-08:00",
   "enrolledDeviceCount": 3,
+  "enrollmentTokenUsageCount": 9,
   "qrCodeContent": "Qr Code Content value",
   "qrCodeImage": {
     "@odata.type": "microsoft.graph.mimeContent",
@@ -135,7 +146,11 @@ Content-Length: 930
   },
   "roleScopeTagIds": [
     "Role Scope Tag Ids value"
-  ]
+  ],
+  "wifiSsid": "Wifi Ssid value",
+  "wifiPassword": "Wifi Password value",
+  "wifiSecurityType": "wpa",
+  "wifiHidden": true
 }
 ```
 

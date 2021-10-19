@@ -2,15 +2,15 @@
 title: Atualizar userExperienceAnalyticsDeviceStartupProcessPerformance
 description: Atualize as propriedades de um objeto userExperienceAnalyticsDeviceStartupProcessPerformance.
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 2443a15980dac7d20f6dcbbb8a07510ae4f28f5a
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: a45f2f57017d2dafa86dd46519f31e222a0119e3
+ms.sourcegitcommit: 4a960067cf2cd7d3c605550150eb3c9259adfe92
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59097177"
+ms.lasthandoff: 10/19/2021
+ms.locfileid: "60488962"
 ---
 # <a name="update-userexperienceanalyticsdevicestartupprocessperformance"></a>Atualizar userExperienceAnalyticsDeviceStartupProcessPerformance
 
@@ -54,12 +54,14 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar [o userE
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
 |id|Cadeia de caracteres|O identificador exclusivo do desempenho do processo de inicialização do dispositivo de análise de experiência do usuário.|
-|processName|Cadeia de Caracteres|Nome do processo de inicialização do dispositivo de análise de experiência do usuário.|
+|processName|Cadeia de caracteres|Nome do processo de inicialização do dispositivo de análise de experiência do usuário.|
 |productName|Cadeia de caracteres|O nome do produto do processo de inicialização do dispositivo de análise de experiência do usuário.|
 |publicador|String|O editor de processo de inicialização do dispositivo de análise de experiência do usuário.|
 |deviceCount|Int64|Contagem resumida do processo de inicialização do dispositivo de análise de experiência do usuário.|
 |medianImpactInMs|Int32|Impacto mediano do processo de inicialização do dispositivo de análise da experiência do usuário em milissegundos.|
 |totalImpactInMs|Int32|Impacto total do processo de inicialização do dispositivo de análise de experiência do usuário em milissegundos.|
+|medianImpactInMs2|Int64|Impacto mediano do processo de inicialização do dispositivo de análise da experiência do usuário em milissegundos.|
+|totalImpactInMs2|Int64|Impacto total do processo de inicialização do dispositivo de análise de experiência do usuário em milissegundos.|
 
 
 
@@ -73,7 +75,7 @@ Este é um exemplo da solicitação.
 ``` http
 PATCH https://graph.microsoft.com/beta/deviceManagement/userExperienceAnalyticsDeviceStartupProcessPerformance/{userExperienceAnalyticsDeviceStartupProcessPerformanceId}
 Content-type: application/json
-Content-length: 285
+Content-length: 338
 
 {
   "@odata.type": "#microsoft.graph.userExperienceAnalyticsDeviceStartupProcessPerformance",
@@ -82,7 +84,9 @@ Content-length: 285
   "publisher": "Publisher value",
   "deviceCount": 11,
   "medianImpactInMs": 0,
-  "totalImpactInMs": 15
+  "totalImpactInMs": 15,
+  "medianImpactInMs2": 1,
+  "totalImpactInMs2": 0
 }
 ```
 
@@ -91,7 +95,7 @@ Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado a
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 334
+Content-Length: 387
 
 {
   "@odata.type": "#microsoft.graph.userExperienceAnalyticsDeviceStartupProcessPerformance",
@@ -101,7 +105,9 @@ Content-Length: 334
   "publisher": "Publisher value",
   "deviceCount": 11,
   "medianImpactInMs": 0,
-  "totalImpactInMs": 15
+  "totalImpactInMs": 15,
+  "medianImpactInMs2": 1,
+  "totalImpactInMs2": 0
 }
 ```
 

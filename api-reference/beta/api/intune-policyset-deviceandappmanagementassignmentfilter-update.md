@@ -2,15 +2,15 @@
 title: Atualizar deviceAndAppManagementAssignmentFilter
 description: Atualize as propriedades de um objeto deviceAndAppManagementAssignmentFilter.
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: a51bded23b9170b1488e04b1e65aa72f704c164d
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 8c2fd8bfabcbb082b7d4dbb3c0d82adb6ff827f9
+ms.sourcegitcommit: 4a960067cf2cd7d3c605550150eb3c9259adfe92
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59065047"
+ms.lasthandoff: 10/19/2021
+ms.locfileid: "60492937"
 ---
 # <a name="update-deviceandappmanagementassignmentfilter"></a>Atualizar deviceAndAppManagementAssignmentFilter
 
@@ -29,7 +29,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |:---|:---|
 |Delegado (conta corporativa ou de estudante)|DeviceManagementConfiguration.ReadWrite.All|
 |Delegado (conta pessoal da Microsoft)|Sem suporte.|
-|Aplicativo|DeviceManagementServiceConfig.ReadWrite.All, DeviceManagementConfiguration.ReadWrite.All|
+|Aplicativo|DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- {
@@ -53,14 +53,14 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar [deviceA
 
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|id|String|Chave do Filtro de Atribuição.|
+|id|Cadeia de caracteres|Chave do Filtro de Atribuição.|
 |createdDateTime|DateTimeOffset|Hora de criação do Filtro de Atribuição.|
 |lastModifiedDateTime|DateTimeOffset|Última hora modificada do Filtro de Atribuição.|
-|displayName|String|DisplayName do Filtro de Atribuição.|
+|displayName|Cadeia de caracteres|DisplayName do Filtro de Atribuição.|
 |description|Cadeia de caracteres|Descrição do Filtro de Atribuição.|
 |plataforma|[devicePlatformType](../resources/intune-policyset-deviceplatformtype.md)|Tipo de plataforma dos dispositivos nos quais o Filtro de Atribuição será aplicável. Os valores possíveis são: `android`, `androidForWork`, `iOS`, `macOS`, `windowsPhone81`, `windows81AndLater`, `windows10AndLater`, `androidWorkProfile`, `unknown`.|
 |rule|Cadeia de caracteres|Definição de regra do Filtro de Atribuição.|
-|roleScopeTags|String collection|RoleScopeTags do Filtro de Atribuição.|
+|roleScopeTags|Coleção de cadeias de caracteres|RoleScopeTags do Filtro de Atribuição.|
 
 
 

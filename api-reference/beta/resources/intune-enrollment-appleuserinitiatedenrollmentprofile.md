@@ -2,15 +2,15 @@
 title: Tipo de recurso appleUserInitiatedEnrollmentProfile
 description: O recurso enrollmentProfile representa uma coleção de configurações que devem ser fornecidas antes do registro para habilitar o registro de determinados dispositivos cujas identidades foram pré-em estágios. As identidades de dispositivo pré-em estágios são atribuídas a esse tipo de perfil para aplicar as configurações do perfil no registro do dispositivo correspondente.
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: f9fd4060d2f5606326744522e0a9e519714ee28f
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 2ded729deaa453f9a3b80f77714b5a3738e6cf3f
+ms.sourcegitcommit: 4a960067cf2cd7d3c605550150eb3c9259adfe92
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59081007"
+ms.lasthandoff: 10/19/2021
+ms.locfileid: "60494665"
 ---
 # <a name="appleuserinitiatedenrollmentprofile-resource-type"></a>Tipo de recurso appleUserInitiatedEnrollmentProfile
 
@@ -38,10 +38,10 @@ O recurso enrollmentProfile representa uma coleção de configurações que deve
 |defaultEnrollmentType|[appleUserInitiatedEnrollmentType](../resources/intune-enrollment-appleuserinitiatedenrollmenttype.md)|O tipo de registro de perfil padrão. Os valores possíveis são: `unknown`, `device`, `user`.|
 |availableEnrollmentTypeOptions|[Coleção appleOwnerTypeEnrollmentType](../resources/intune-enrollment-appleownertypeenrollmenttype.md)|Lista de opções de tipo de registro disponível|
 |id|Cadeia de caracteres|O GUID do objeto.|
-|displayName|String|Nome do perfil|
+|displayName|Cadeia de caracteres|Nome do perfil|
 |description|Cadeia de caracteres|Descrição do perfil|
 |prioridade|Int32|Prioridade, 0 é mais alta|
-|plataforma|[devicePlatformType](../resources/intune-enrollment-deviceplatformtype.md)|A plataforma do Dispositivo. Os valores possíveis são: `android`, `androidForWork`, `iOS`, `macOS`, `windowsPhone81`, `windows81AndLater`, `windows10AndLater`, `androidWorkProfile`, `unknown`.|
+|plataforma|[devicePlatformType](../resources/intune-enrollment-deviceplatformtype.md)|A plataforma do Dispositivo. Os valores possíveis são: `android`, `androidForWork`, `iOS`, `macOS`, `windowsPhone81`, `windows81AndLater`, `windows10AndLater`, `androidWorkProfile`, `unknown`, `androidAOSP`.|
 |createdDateTime|DateTimeOffset|Tempo de criação de perfil|
 |lastModifiedDateTime|DateTimeOffset|Tempo de última modificação do perfil|
 

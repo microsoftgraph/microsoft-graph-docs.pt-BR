@@ -2,15 +2,15 @@
 title: Excluir windowsAutopilotDeploymentProfilePolicySetItem
 description: Exclui um windowsAutopilotDeploymentProfilePolicySetItem.
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: ed0fa143f3c883b84bb6a134969f6989fa0bfa82
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 3047e0847cb7b1dca6f27bbe946317c44f520bab
+ms.sourcegitcommit: 4a960067cf2cd7d3c605550150eb3c9259adfe92
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59132705"
+ms.lasthandoff: 10/19/2021
+ms.locfileid: "60487075"
 ---
 # <a name="delete-windowsautopilotdeploymentprofilepolicysetitem"></a>Excluir windowsAutopilotDeploymentProfilePolicySetItem
 
@@ -29,7 +29,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |:---|:---|
 |Delegado (conta corporativa ou de estudante)|DeviceManagementConfiguration.ReadWrite.All|
 |Delegado (conta pessoal da Microsoft)|Sem suporte.|
-|Aplicativo|DeviceManagementServiceConfig.ReadWrite.All, DeviceManagementConfiguration.ReadWrite.All|
+|Aplicativo|DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- {

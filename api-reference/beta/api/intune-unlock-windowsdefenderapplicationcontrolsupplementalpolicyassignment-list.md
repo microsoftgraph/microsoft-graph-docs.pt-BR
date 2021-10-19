@@ -2,15 +2,15 @@
 title: Listar windowsDefenderApplicationControlSupplementalPolicyAssignments
 description: Listar propriedades e relações dos objetos windowsDefenderApplicationControlSupplementalPolicyAssignment.
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: d45690edf2188459bf426bfde94ed4a588fab13e
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 46d2bd6272737891db148c79eac852e0e37d9d0f
+ms.sourcegitcommit: 4a960067cf2cd7d3c605550150eb3c9259adfe92
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59047839"
+ms.lasthandoff: 10/19/2021
+ms.locfileid: "60491357"
 ---
 # <a name="list-windowsdefenderapplicationcontrolsupplementalpolicyassignments"></a>Listar windowsDefenderApplicationControlSupplementalPolicyAssignments
 
@@ -29,7 +29,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |:---|:---|
 |Delegado (conta corporativa ou de estudante)|DeviceManagementApps.Read.All, DeviceManagementApps.ReadWrite.All|
 |Delegado (conta pessoal da Microsoft)|Sem suporte.|
-|Aplicativo|DeviceManagementConfiguration.Read.All, DeviceManagementApps.Read.All, DeviceManagementApps.ReadWrite.All|
+|Aplicativo|DeviceManagementApps.Read.All, DeviceManagementApps.ReadWrite.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- {

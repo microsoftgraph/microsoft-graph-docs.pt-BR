@@ -2,15 +2,15 @@
 title: Criar androidManagedStoreAppConfiguration
 description: Crie um novo objeto androidManagedStoreAppConfiguration.
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 169109c836f783c4d27722fa06fc8cfe6f40cbf6
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 239c94c309e01b4a18c724e101b313f3d6606c18
+ms.sourcegitcommit: 4a960067cf2cd7d3c605550150eb3c9259adfe92
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59019038"
+ms.lasthandoff: 10/19/2021
+ms.locfileid: "60489890"
 ---
 # <a name="create-androidmanagedstoreappconfiguration"></a>Criar androidManagedStoreAppConfiguration
 
@@ -53,19 +53,20 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar androidM
 
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|id|String|Chave da entidade. Herdada de [managedDeviceMobileAppConfiguration](../resources/intune-apps-manageddevicemobileappconfiguration.md)|
+|id|Cadeia de caracteres|Chave da entidade. Herdada de [managedDeviceMobileAppConfiguration](../resources/intune-apps-manageddevicemobileappconfiguration.md)|
 |targetedMobileApps|Coleção de cadeias de caracteres|o aplicativo associado. Herdada de [managedDeviceMobileAppConfiguration](../resources/intune-apps-manageddevicemobileappconfiguration.md)|
-|roleScopeTagIds|Conjunto de cadeias de caracteres|Lista de Marcas de Escopo para esta entidade de configuração do aplicativo. Herdada de [managedDeviceMobileAppConfiguration](../resources/intune-apps-manageddevicemobileappconfiguration.md)|
+|roleScopeTagIds|Coleção de cadeias de caracteres|Lista de Marcas de Escopo para esta entidade de configuração do aplicativo. Herdada de [managedDeviceMobileAppConfiguration](../resources/intune-apps-manageddevicemobileappconfiguration.md)|
 |createdDateTime|DateTimeOffset|DateTime em que o objeto foi criado. Herdada de [managedDeviceMobileAppConfiguration](../resources/intune-apps-manageddevicemobileappconfiguration.md)|
-|description|String|Descrição fornecida pelo administrador da configuração do dispositivo. Herdada de [managedDeviceMobileAppConfiguration](../resources/intune-apps-manageddevicemobileappconfiguration.md)|
+|description|Cadeia de caracteres|Descrição fornecida pelo administrador da configuração do dispositivo. Herdada de [managedDeviceMobileAppConfiguration](../resources/intune-apps-manageddevicemobileappconfiguration.md)|
 |lastModifiedDateTime|DateTimeOffset|DateTime da última modificação do objeto. Herdada de [managedDeviceMobileAppConfiguration](../resources/intune-apps-manageddevicemobileappconfiguration.md)|
 |displayName|Cadeia de caracteres|Nome fornecido pelo administrador da configuração do dispositivo. Herdada de [managedDeviceMobileAppConfiguration](../resources/intune-apps-manageddevicemobileappconfiguration.md)|
 |version|Int32|Versão da configuração do dispositivo. Herdada de [managedDeviceMobileAppConfiguration](../resources/intune-apps-manageddevicemobileappconfiguration.md)|
 |packageId|String|ID Enterprise pacote de configuração do aplicativo Android.|
 |payloadJson|Cadeia de caracteres|Carregamento JSON Enterprise configuração do aplicativo Android.|
 |permissionActions|[Coleção androidPermissionAction](../resources/intune-apps-androidpermissionaction.md)|Lista de permissões de aplicativo Android e ações de permissão correspondentes.|
-|appSupportsOemConfig|Boleano|Se esse AppConfig é ou não uma política OEMConfig.|
+|appSupportsOemConfig|Booliano|Se esse AppConfig é ou não uma política OEMConfig.|
 |profileApplicability|[androidProfileApplicability](../resources/intune-apps-androidprofileapplicability.md)|Aplicabilidade Enterprise perfil do Android (AndroidWorkProfile, DeviceOwner ou padrão (aplica-se a ambos)). Os valores possíveis são: `default`, `androidWorkProfile`, `androidDeviceOwner`.|
+|connectedAppsEnabled|Booliano|Configuração para especificar se é necessário permitir a experiência connectedApps para este aplicativo.|
 
 
 
@@ -79,7 +80,7 @@ Este é um exemplo da solicitação.
 ``` http
 POST https://graph.microsoft.com/beta/deviceAppManagement/mobileAppConfigurations
 Content-type: application/json
-Content-length: 641
+Content-length: 674
 
 {
   "@odata.type": "#microsoft.graph.androidManagedStoreAppConfiguration",
@@ -102,7 +103,8 @@ Content-length: 641
     }
   ],
   "appSupportsOemConfig": true,
-  "profileApplicability": "androidWorkProfile"
+  "profileApplicability": "androidWorkProfile",
+  "connectedAppsEnabled": true
 }
 ```
 
@@ -111,7 +113,7 @@ Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado a
 ``` http
 HTTP/1.1 201 Created
 Content-Type: application/json
-Content-Length: 813
+Content-Length: 846
 
 {
   "@odata.type": "#microsoft.graph.androidManagedStoreAppConfiguration",
@@ -137,7 +139,8 @@ Content-Length: 813
     }
   ],
   "appSupportsOemConfig": true,
-  "profileApplicability": "androidWorkProfile"
+  "profileApplicability": "androidWorkProfile",
+  "connectedAppsEnabled": true
 }
 ```
 

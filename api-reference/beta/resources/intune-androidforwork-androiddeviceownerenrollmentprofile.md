@@ -2,15 +2,15 @@
 title: Tipo de recurso androidDeviceOwnerEnrollmentProfile
 description: Perfil de Registro usado para registrar dispositivos Enterprise Android usando o Gerenciamento de Nuvem do Google.
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: f88410522f63b289a2b2d6f55a2a1ebf85b46b5e
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 41db800f2e14e5806b2354e9b59d95f9249da545
+ms.sourcegitcommit: 4a960067cf2cd7d3c605550150eb3c9259adfe92
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59057653"
+ms.lasthandoff: 10/19/2021
+ms.locfileid: "60489742"
 ---
 # <a name="androiddeviceownerenrollmentprofile-resource-type"></a>Tipo de recurso androidDeviceOwnerEnrollmentProfile
 
@@ -40,7 +40,7 @@ Perfil de Registro usado para registrar dispositivos Enterprise Android usando o
 |id|Cadeia de caracteres|GUID exclusivo do perfil de registro.|
 |displayName|Cadeia de caracteres|Nome de exibição do perfil de registro.|
 |description|Cadeia de caracteres|Descrição do perfil de registro.|
-|enrollmentMode|[androidDeviceOwnerEnrollmentMode](../resources/intune-androidforwork-androiddeviceownerenrollmentmode.md)|O modo de registro de dispositivos que usam esse perfil de registro. Os valores possíveis são: `corporateOwnedDedicatedDevice`, `corporateOwnedFullyManaged`, `corporateOwnedWorkProfile`.|
+|enrollmentMode|[androidDeviceOwnerEnrollmentMode](../resources/intune-androidforwork-androiddeviceownerenrollmentmode.md)|O modo de registro de dispositivos que usam esse perfil de registro. Os valores possíveis são: `corporateOwnedDedicatedDevice`, `corporateOwnedFullyManaged`, `corporateOwnedWorkProfile`, `corporateOwnedAOSPUserlessDevice`, `corporateOwnedAOSPUserAssociatedDevice`.|
 |enrollmentTokenType|[androidDeviceOwnerEnrollmentTokenType](../resources/intune-androidforwork-androiddeviceownerenrollmenttokentype.md)|O tipo de token de registro para um perfil de registro. Os valores possíveis são: `default` e `corporateOwnedDedicatedDeviceWithAzureADSharedMode`.|
 |createdDateTime|DateTimeOffset|Data e hora de criação do perfil de registro.|
 |lastModifiedDateTime|DateTimeOffset|Data e hora da última modificação do perfil de registro.|
@@ -48,9 +48,14 @@ Perfil de Registro usado para registrar dispositivos Enterprise Android usando o
 |tokenCreationDateTime|DateTimeOffset|Data em que o token criado mais recentemente foi criado.|
 |tokenExpirationDateTime|DateTimeOffset|Data e hora em que o token mais recentemente criado expirará.|
 |enrolledDeviceCount|Int32|Número total de dispositivos Android que foram registrados usando esse perfil de registro.|
+|enrollmentTokenUsageCount|Int32|Número total de dispositivos AOSP que se registraram usando o token atual.|
 |qrCodeContent|String|Cadeia de caracteres usada para gerar um código QR para o token.|
 |qrCodeImage|[mimeContent](../resources/intune-shared-mimecontent.md)|Cadeia de caracteres usada para gerar um código QR para o token.|
-|roleScopeTagIds|Conjunto de cadeias de caracteres|Lista de marcas de escopo para esta instância entity.|
+|roleScopeTagIds|Coleção de cadeias de caracteres|Lista de marcas de escopo para esta instância entity.|
+|wifiSsid|Cadeia de caracteres|Cadeia de caracteres que contém o ssid de logon wi-fi|
+|wifiPassword|Cadeia de caracteres|Cadeia de caracteres que contém a senha de logon wi-fi|
+|wifiSecurityType|[aospWifiSecurityType](../resources/intune-androidforwork-aospwifisecuritytype.md)|Cadeia de caracteres que contém o tipo de segurança wi-fi. Os valores possíveis são: `none`, `wpa`, `wep`.|
+|wifiHidden|Booliano|Boolean que indica se redes wifi ocultas estão habilitadas|
 
 ## <a name="relationships"></a>Relações
 Nenhum
@@ -78,6 +83,7 @@ Veja a seguir uma representação JSON do recurso.
   "tokenCreationDateTime": "String (timestamp)",
   "tokenExpirationDateTime": "String (timestamp)",
   "enrolledDeviceCount": 1024,
+  "enrollmentTokenUsageCount": 1024,
   "qrCodeContent": "String",
   "qrCodeImage": {
     "@odata.type": "microsoft.graph.mimeContent",
@@ -86,7 +92,11 @@ Veja a seguir uma representação JSON do recurso.
   },
   "roleScopeTagIds": [
     "String"
-  ]
+  ],
+  "wifiSsid": "String",
+  "wifiPassword": "String",
+  "wifiSecurityType": "String",
+  "wifiHidden": true
 }
 ```
 

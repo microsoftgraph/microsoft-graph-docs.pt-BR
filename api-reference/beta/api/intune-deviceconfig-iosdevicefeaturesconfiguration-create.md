@@ -2,15 +2,15 @@
 title: Criar iosDeviceFeaturesConfiguration
 description: Criar um novo objeto iosDeviceFeaturesConfiguration.
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: d96d7d92853da3fcd49d9e67dc93b683335aba56
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 8328c667e4a4ccf3baddcb1d6622feff68fd3496
+ms.sourcegitcommit: 4a960067cf2cd7d3c605550150eb3c9259adfe92
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59103218"
+ms.lasthandoff: 10/19/2021
+ms.locfileid: "60482732"
 ---
 # <a name="create-iosdevicefeaturesconfiguration"></a>Criar iosDeviceFeaturesConfiguration
 
@@ -56,8 +56,8 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar iosDevic
 |:---|:---|:---|
 |id|Cadeia de caracteres|Chave da entidade. Herdada de [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
 |lastModifiedDateTime|DateTimeOffset|DateTime da última modificação do objeto. Herdada de [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
-|roleScopeTagIds|String collection|Lista de marcas de escopo para esta instância entity. Herdada de [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
-|supportsScopeTags|Boleano|Indica se a Configuração de Dispositivo subjacente dá suporte ou não à atribuição de marcas de escopo. A atribuição à propriedade ScopeTags não é permitida quando esse valor é falso e as entidades não estarão visíveis para usuários com escopo. Isso ocorre para políticas herdadas criadas no Silverlight e podem ser resolvidas excluindo e recriando a política no Portal do Azure. Essa propriedade é somente leitura. Herdada de [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
+|roleScopeTagIds|Coleção de cadeias de caracteres|Lista de marcas de escopo para esta instância entity. Herdada de [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
+|supportsScopeTags|Booliano|Indica se a Configuração de Dispositivo subjacente dá suporte ou não à atribuição de marcas de escopo. A atribuição à propriedade ScopeTags não é permitida quando esse valor é falso e as entidades não estarão visíveis para usuários com escopo. Isso ocorre para políticas herdadas criadas no Silverlight e podem ser resolvidas excluindo e recriando a política no Portal do Azure. Essa propriedade é somente leitura. Herdada de [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
 |deviceManagementApplicabilityRuleOsEdition|[deviceManagementApplicabilityRuleOsEdition](../resources/intune-deviceconfig-devicemanagementapplicabilityruleosedition.md)|A aplicabilidade da edição do sistema operacional para esta Política. Herdada de [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
 |deviceManagementApplicabilityRuleOsVersion|[deviceManagementApplicabilityRuleOsVersion](../resources/intune-deviceconfig-devicemanagementapplicabilityruleosversion.md)|A regra de aplicabilidade da versão do sistema operacional para esta Política. Herdada de [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
 |deviceManagementApplicabilityRuleDeviceMode|[deviceManagementApplicabilityRuleDeviceMode](../resources/intune-deviceconfig-devicemanagementapplicabilityruledevicemode.md)|A regra de aplicabilidade do modo de dispositivo para esta Política. Herdada de [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
@@ -92,7 +92,7 @@ Este é um exemplo da solicitação.
 ``` http
 POST https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations
 Content-type: application/json
-Content-length: 6889
+Content-length: 7083
 
 {
   "@odata.type": "#microsoft.graph.iosDeviceFeaturesConfiguration",
@@ -269,7 +269,9 @@ Content-length: 6889
     "activeDirectorySiteCode": "Active Directory Site Code value",
     "passwordEnableLocalSync": true,
     "blockActiveDirectorySiteAutoDiscovery": true,
-    "passwordChangeUrl": "https://example.com/passwordChangeUrl/"
+    "passwordChangeUrl": "https://example.com/passwordChangeUrl/",
+    "signInHelpText": "Sign In Help Text value",
+    "managedAppsInBundleIdACLIncluded": true
   },
   "iosSingleSignOnExtension": {
     "@odata.type": "microsoft.graph.iosKerberosSingleSignOnExtension",
@@ -299,7 +301,9 @@ Content-length: 6889
     "activeDirectorySiteCode": "Active Directory Site Code value",
     "passwordEnableLocalSync": true,
     "blockActiveDirectorySiteAutoDiscovery": true,
-    "passwordChangeUrl": "https://example.com/passwordChangeUrl/"
+    "passwordChangeUrl": "https://example.com/passwordChangeUrl/",
+    "signInHelpText": "Sign In Help Text value",
+    "managedAppsInBundleIdACLIncluded": true
   }
 }
 ```
@@ -309,7 +313,7 @@ Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado a
 ``` http
 HTTP/1.1 201 Created
 Content-Type: application/json
-Content-Length: 7061
+Content-Length: 7255
 
 {
   "@odata.type": "#microsoft.graph.iosDeviceFeaturesConfiguration",
@@ -489,7 +493,9 @@ Content-Length: 7061
     "activeDirectorySiteCode": "Active Directory Site Code value",
     "passwordEnableLocalSync": true,
     "blockActiveDirectorySiteAutoDiscovery": true,
-    "passwordChangeUrl": "https://example.com/passwordChangeUrl/"
+    "passwordChangeUrl": "https://example.com/passwordChangeUrl/",
+    "signInHelpText": "Sign In Help Text value",
+    "managedAppsInBundleIdACLIncluded": true
   },
   "iosSingleSignOnExtension": {
     "@odata.type": "microsoft.graph.iosKerberosSingleSignOnExtension",
@@ -519,7 +525,9 @@ Content-Length: 7061
     "activeDirectorySiteCode": "Active Directory Site Code value",
     "passwordEnableLocalSync": true,
     "blockActiveDirectorySiteAutoDiscovery": true,
-    "passwordChangeUrl": "https://example.com/passwordChangeUrl/"
+    "passwordChangeUrl": "https://example.com/passwordChangeUrl/",
+    "signInHelpText": "Sign In Help Text value",
+    "managedAppsInBundleIdACLIncluded": true
   }
 }
 ```

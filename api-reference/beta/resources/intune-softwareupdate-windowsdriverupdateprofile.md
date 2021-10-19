@@ -2,15 +2,15 @@
 title: Tipo de recurso windowsDriverUpdateProfile
 description: Windows Perfil de Atualização de Driver
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 8837992e47e44dc24a7d49518866d9427d6082e3
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: d8c50188b941c7196e3f2771c64dbffb51efe7de
+ms.sourcegitcommit: 4a960067cf2cd7d3c605550150eb3c9259adfe92
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59029889"
+ms.lasthandoff: 10/19/2021
+ms.locfileid: "60488602"
 ---
 # <a name="windowsdriverupdateprofile-resource-type"></a>Tipo de recurso windowsDriverUpdateProfile
 
@@ -30,12 +30,14 @@ Windows Perfil de Atualização de Driver
 |[Criar windowsDriverUpdateProfile](../api/intune-softwareupdate-windowsdriverupdateprofile-create.md)|[windowsDriverUpdateProfile](../resources/intune-softwareupdate-windowsdriverupdateprofile.md)|Crie um novo [objeto windowsDriverUpdateProfile.](../resources/intune-softwareupdate-windowsdriverupdateprofile.md)|
 |[Excluir windowsDriverUpdateProfile](../api/intune-softwareupdate-windowsdriverupdateprofile-delete.md)|Nenhum|Exclui um [windowsDriverUpdateProfile](../resources/intune-softwareupdate-windowsdriverupdateprofile.md).|
 |[Atualizar windowsDriverUpdateProfile](../api/intune-softwareupdate-windowsdriverupdateprofile-update.md)|[windowsDriverUpdateProfile](../resources/intune-softwareupdate-windowsdriverupdateprofile.md)|Atualize as propriedades de um [objeto windowsDriverUpdateProfile.](../resources/intune-softwareupdate-windowsdriverupdateprofile.md)|
+|[atribuir ação](../api/intune-softwareupdate-windowsdriverupdateprofile-assign.md)|Nenhuma|Ainda não documentado|
+|[Ação executeAction](../api/intune-softwareupdate-windowsdriverupdateprofile-executeaction.md)|[bulkDriverActionResult](../resources/intune-softwareupdate-bulkdriveractionresult.md)|Ainda não documentado|
 
 ## <a name="properties"></a>Propriedades
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|id|String|A ID da política do Intune.|
-|displayName|String|O nome de exibição do perfil.|
+|id|Cadeia de caracteres|A ID da política do Intune.|
+|displayName|Cadeia de caracteres|O nome de exibição do perfil.|
 |description|Cadeia de caracteres|A descrição do perfil especificado pelo usuário.|
 |approvalType|[driverUpdateProfileApprovalType](../resources/intune-softwareupdate-driverupdateprofileapprovaltype.md)|Tipo de aprovação de perfil de atualização de driver. Por exemplo, aprovação manual ou automática. Os valores possíveis são: `manual` e `automatic`.|
 |deviceReporting|Int32|Número de dispositivos que relatam esse perfil|
@@ -43,7 +45,7 @@ Windows Perfil de Atualização de Driver
 |deploymentDeferralInDays|Int32|Configurações de adiamento de implantação em dias, aplicável somente quando ApprovalType é definido como aprovação automática.|
 |createdDateTime|DateTimeOffset|A data em que o perfil foi criado.|
 |lastModifiedDateTime|DateTimeOffset|A data em que o perfil foi modificado pela última vez.|
-|roleScopeTagIds|Conjunto de cadeias de caracteres|Lista de Marcas de Escopo para essa entidade de Atualização de Driver.|
+|roleScopeTagIds|Coleção de cadeias de caracteres|Lista de Marcas de Escopo para essa entidade de Atualização de Driver.|
 
 ## <a name="relationships"></a>Relações
 |Relação|Tipo|Descrição|

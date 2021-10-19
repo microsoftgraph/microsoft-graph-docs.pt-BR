@@ -2,15 +2,15 @@
 title: Listar androidDeviceOwnerEnrollmentProfiles
 description: Listar propriedades e relações dos objetos androidDeviceOwnerEnrollmentProfile.
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: ca3e17765e6cd42abf327a71be91ef5bed73be73
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 951e3b4579a89873b81a6b87cf7531521eca1df8
+ms.sourcegitcommit: 4a960067cf2cd7d3c605550150eb3c9259adfe92
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59071368"
+ms.lasthandoff: 10/19/2021
+ms.locfileid: "60489925"
 ---
 # <a name="list-androiddeviceownerenrollmentprofiles"></a>Listar androidDeviceOwnerEnrollmentProfiles
 
@@ -65,7 +65,7 @@ Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado a
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 1051
+Content-Length: 1235
 
 {
   "value": [
@@ -83,6 +83,7 @@ Content-Length: 1051
       "tokenCreationDateTime": "2017-01-01T00:01:38.5314127-08:00",
       "tokenExpirationDateTime": "2016-12-31T23:59:54.0590989-08:00",
       "enrolledDeviceCount": 3,
+      "enrollmentTokenUsageCount": 9,
       "qrCodeContent": "Qr Code Content value",
       "qrCodeImage": {
         "@odata.type": "microsoft.graph.mimeContent",
@@ -91,7 +92,11 @@ Content-Length: 1051
       },
       "roleScopeTagIds": [
         "Role Scope Tag Ids value"
-      ]
+      ],
+      "wifiSsid": "Wifi Ssid value",
+      "wifiPassword": "Wifi Password value",
+      "wifiSecurityType": "wpa",
+      "wifiHidden": true
     }
   ]
 }

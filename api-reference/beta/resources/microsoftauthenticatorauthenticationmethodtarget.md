@@ -2,15 +2,15 @@
 title: Tipo de recurso microsoftAuthenticatorAuthenticationMethodTarget
 description: Uma coleção de usuários ou grupos habilitados para usar Microsoft Authenticator de autenticação.
 author: mmcla
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: identity-and-sign-in
 doc_type: resourcePageType
-ms.openlocfilehash: 4baf2713789a54707c65fe8c2b94fe60ac275626
-ms.sourcegitcommit: b7e01a1331abe5f5c9aa2828d93dad08229573f1
+ms.openlocfilehash: 8276f01bca86025c11eddeef21d5cce28263c379
+ms.sourcegitcommit: 4a960067cf2cd7d3c605550150eb3c9259adfe92
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58336667"
+ms.lasthandoff: 10/19/2021
+ms.locfileid: "60493477"
 ---
 # <a name="microsoftauthenticatorauthenticationmethodtarget-resource-type"></a>Tipo de recurso microsoftAuthenticatorAuthenticationMethodTarget
 Namespace: microsoft.graph
@@ -23,15 +23,11 @@ Uma coleção de usuários ou grupos habilitados para [usar](../resources/micros
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
 |authenticationMode|microsoftAuthenticatorAuthenticationMode|Determina quais tipos de notificações podem ser usadas para entrar. Os valores possíveis são: `deviceBasedPush` (somente sem senha) `push` e `any` .|
-|featureSettings|authenticatorAppFeatureSettings|Determina quais configurações adicionais devem ser aplicadas a Microsoft Authenticator. Os valores possíveis são: `requireNumberMatching` (Requer correspondência de número para notificações MFA. O valor é ignorado para notificações de login por telefone). Anulável.|
 |id|Cadeia de caracteres|Identificador de objeto de um usuário ou grupo do Azure AD. Herdado da [autenticaçãoMethodTarget](authenticationmethodtarget.md).|
-|isRegistrationRequired|Boolean|Determina se o usuário é imposto a registrar o método de autenticação. Herdado da [autenticaçãoMethodTarget](authenticationmethodtarget.md). *Não há suporte para*. |
+|isRegistrationRequired|Booliano|Determina se o usuário é imposto a registrar o método de autenticação. Herdado da [autenticaçãoMethodTarget](authenticationmethodtarget.md). *Não há suporte para*. |
 |targetType|authenticationMethodTargetType| Os valores possíveis são `user`, `group` e `unknownFutureValue`. Herdado da [autenticaçãoMethodTarget](authenticationMethodTarget.md).|
-<!--
-|numberMatchingRequiredState|advancedConfigState|Requires number matching for MFA notifications. Value is ignored for phone sign-in notifications. Possible values are: `enabled`, `disabled`, `default`.|
-|displayLocationInformationRequiredState|advancedConfigState|Determines whether the location of the sign-in should be shown to the user in the body of the notification. Possible values are: `enabled`, `disabled`, `default`.|
-|displayAppInformationRequiredState|advancedConfigState|Determines whether the app the user is signing into should be shown to the user in the body of the notification. Possible values are: `enabled`, `disabled`, `default`.|
--->
+|numberMatchingRequiredState|advancedConfigState|Requer correspondência de números para notificações MFA. O valor é ignorado para notificações de login por telefone. Os valores possíveis são: `enabled`, `disabled`, `default`.|
+|displayAppInformationRequiredState|advancedConfigState|Determina se o usuário é mostrado contexto adicional na notificação Authenticator aplicativo. No corpo da notificação Authenticator, o usuário será mostrado no aplicativo em que está entrando, juntamente com o local de origem da solicitação de autenticação. Os valores possíveis são: `enabled`, `disabled`, `default`.|
 
 ## <a name="relationships"></a>Relações
 Nenhum
@@ -53,7 +49,8 @@ Veja a seguir uma representação JSON do recurso.
   "id": "String (identifier)",
   "isRegistrationRequired": "Boolean",
   "authenticationMode": "String",
-  "featureSettings": "String"
+  "numberMatchingRequiredState": "String",
+  "displayAppInformationRequiredState": "String"
 }
 
 ```

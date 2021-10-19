@@ -2,15 +2,15 @@
 title: Obter deviceManagementConfigurationChoiceSettingDefinition
 description: Leia propriedades e relações do objeto deviceManagementConfigurationChoiceSettingDefinition.
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 9e4cf4a08a87ec5fbb811285565e399ed2b04725
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 8bd44afb04ca0d79cbcdf68d7c375108a74af458
+ms.sourcegitcommit: 4a960067cf2cd7d3c605550150eb3c9259adfe92
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59048504"
+ms.lasthandoff: 10/19/2021
+ms.locfileid: "60492037"
 ---
 # <a name="get-devicemanagementconfigurationchoicesettingdefinition"></a>Obter deviceManagementConfigurationChoiceSettingDefinition
 
@@ -29,7 +29,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |:---|:---|
 |Delegado (conta corporativa ou de estudante)|DeviceManagementConfiguration.Read.All, DeviceManagementConfiguration.ReadWrite.All|
 |Delegado (conta pessoal da Microsoft)|Sem suporte.|
-|Aplicativo|DeviceManagementServiceConfig.ReadWrite.All, DeviceManagementConfiguration.Read.All|
+|Aplicativo|DeviceManagementConfiguration.Read.All, DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- {
@@ -71,7 +71,7 @@ Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado a
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 19685
+Content-Length: 19687
 
 {
   "value": {
@@ -79,7 +79,7 @@ Content-Length: 19685
     "applicability": {
       "@odata.type": "microsoft.graph.deviceManagementConfigurationSettingApplicability",
       "description": "Description value",
-      "platform": "macOS",
+      "platform": "android",
       "deviceMode": "kiosk",
       "technologies": "mdm"
     },

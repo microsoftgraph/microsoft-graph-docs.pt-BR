@@ -4,12 +4,12 @@ description: Lista a API do Microsoft Graph para pontos de extremidade do Intune
 ms.localizationpriority: medium
 author: dougeby
 ms.prod: intune
-ms.openlocfilehash: 22217c58a792eaf572f1077dfc21680e31e1aaeb
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 4e2c3dcd0299d97eca5bacacef79ef0ffd0c5df5
+ms.sourcegitcommit: 4a960067cf2cd7d3c605550150eb3c9259adfe92
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59030148"
+ms.lasthandoff: 10/19/2021
+ms.locfileid: "60486858"
 ---
 # <a name="role-based-access-control-in-microsoft-intune"></a>Controle de acesso baseado em função no Microsoft Intune
 
@@ -26,6 +26,15 @@ Os seguintes recursos do Graph estão disponíveis para gerenciar o controle de 
 - [Detalhes de função atribuídos ao gerenciamento de aplicativo e dispositivo](intune-rbac-deviceandappmanagementassignedroledetails.md)
 - [Atribuição de função de gerenciamento de aplicativo e dispositivo](intune-rbac-deviceandappmanagementroleassignment.md)
 - [Definição de função de gerenciamento de aplicativo e dispositivo](intune-rbac-deviceandappmanagementroledefinition.md)
+- [Identidade](intune-rbac-identity.md)
+- [Conjunto de identidade](intune-rbac-identityset.md)
+- [Política de aprovação de operação](intune-rbac-operationapprovalpolicy.md)
+- [Plataforma de política de aprovação de operação](intune-rbac-operationapprovalpolicyplatform.md)
+- [Conjunto de políticas de aprovação de operação](intune-rbac-operationapprovalpolicyset.md)
+- [Tipo de política de aprovação de operação](intune-rbac-operationapprovalpolicytype.md)
+- [Solicitação de aprovação de operação](intune-rbac-operationapprovalrequest.md)
+- [Status da entidade de solicitação de aprovação de operação](intune-rbac-operationapprovalrequestentitystatus.md)
+- [Status da solicitação de aprovação da operação](intune-rbac-operationapprovalrequeststatus.md)
 - [Múltiplos aplicativos Rbac](intune-rbac-rbacapplicationmultiple.md)
 - [Ação de recurso](intune-rbac-resourceaction.md)
 - [Operação de recurso](intune-rbac-resourceoperation.md)

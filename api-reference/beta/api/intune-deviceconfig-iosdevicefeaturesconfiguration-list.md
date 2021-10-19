@@ -2,15 +2,15 @@
 title: Listar iosDeviceFeaturesConfigurations
 description: Listar propriedades e relações dos objetos iosDeviceFeaturesConfiguration.
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: edba493e88167e16c7111d2e0665a4d848aead63
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: d9948cd0c0d0b9a052ff8ba911656e8052799d23
+ms.sourcegitcommit: 4a960067cf2cd7d3c605550150eb3c9259adfe92
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59018632"
+ms.lasthandoff: 10/19/2021
+ms.locfileid: "60488301"
 ---
 # <a name="list-iosdevicefeaturesconfigurations"></a>Listar iosDeviceFeaturesConfigurations
 
@@ -66,7 +66,7 @@ Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado a
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 7930
+Content-Length: 8140
 
 {
   "value": [
@@ -248,7 +248,9 @@ Content-Length: 7930
         "activeDirectorySiteCode": "Active Directory Site Code value",
         "passwordEnableLocalSync": true,
         "blockActiveDirectorySiteAutoDiscovery": true,
-        "passwordChangeUrl": "https://example.com/passwordChangeUrl/"
+        "passwordChangeUrl": "https://example.com/passwordChangeUrl/",
+        "signInHelpText": "Sign In Help Text value",
+        "managedAppsInBundleIdACLIncluded": true
       },
       "iosSingleSignOnExtension": {
         "@odata.type": "microsoft.graph.iosKerberosSingleSignOnExtension",
@@ -278,7 +280,9 @@ Content-Length: 7930
         "activeDirectorySiteCode": "Active Directory Site Code value",
         "passwordEnableLocalSync": true,
         "blockActiveDirectorySiteAutoDiscovery": true,
-        "passwordChangeUrl": "https://example.com/passwordChangeUrl/"
+        "passwordChangeUrl": "https://example.com/passwordChangeUrl/",
+        "signInHelpText": "Sign In Help Text value",
+        "managedAppsInBundleIdACLIncluded": true
       }
     }
   ]

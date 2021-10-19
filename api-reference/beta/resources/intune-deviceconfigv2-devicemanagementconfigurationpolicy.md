@@ -2,15 +2,15 @@
 title: Tipo de recurso deviceManagementConfigurationPolicy
 description: Política de Configuração de Gerenciamento de Dispositivos
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 7feba3c3ca0305cd6fab197285938b9cc563790a
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 5d41a340f2be57691837ff288edaf7495cd75c8a
+ms.sourcegitcommit: 4a960067cf2cd7d3c605550150eb3c9259adfe92
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59115363"
+ms.lasthandoff: 10/19/2021
+ms.locfileid: "60493198"
 ---
 # <a name="devicemanagementconfigurationpolicy-resource-type"></a>Tipo de recurso deviceManagementConfigurationPolicy
 
@@ -37,15 +37,15 @@ Política de Configuração de Gerenciamento de Dispositivos
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
 |id|Cadeia de caracteres|Chave do documento de política. Gerado automaticamente.|
-|nome|Cadeia de caracteres|Nome da política|
+|name|Cadeia de caracteres|Nome da política|
 |description|Cadeia de caracteres|Descrição da política|
-|plataformas|[deviceManagementConfigurationPlatforms](../resources/intune-deviceconfigv2-devicemanagementconfigurationplatforms.md)|Plataformas para essa política. Os valores possíveis são: `none`, `macOS`, `windows10X`, `windows10`.|
-|technologies|[deviceManagementConfigurationTechnologies](../resources/intune-deviceconfigv2-devicemanagementconfigurationtechnologies.md)|Tecnologias para essa política. Os possíveis valores são: `none`, `mdm`, `windows10XManagement`, `configManager`, `microsoftSense`, `exchangeOnline`.|
+|plataformas|[deviceManagementConfigurationPlatforms](../resources/intune-deviceconfigv2-devicemanagementconfigurationplatforms.md)|Plataformas para essa política. Os possíveis valores são: `none`, `android`, `iOS`, `macOS`, `windows10X`, `windows10`.|
+|technologies|[deviceManagementConfigurationTechnologies](../resources/intune-deviceconfigv2-devicemanagementconfigurationtechnologies.md)|Tecnologias para essa política. Os valores possíveis são: `none`, `mdm`, `windows10XManagement`, `configManager`, `microsoftSense`, `exchangeOnline`, `linuxMdm`, `unknownFutureValue`.|
 |createdDateTime|DateTimeOffset|Data e hora de criação de política. Essa propriedade é somente leitura.|
 |lastModifiedDateTime|DateTimeOffset|Data e hora da última modificação da política. Essa propriedade é somente leitura.|
 |settingCount|Int32|Número de configurações. Essa propriedade é somente leitura.|
-|creationSource|Cadeia de Caracteres|Fonte de criação de política|
-|roleScopeTagIds|String collection|Lista de marcas de escopo para esta instância entity.|
+|creationSource|Cadeia de caracteres|Fonte de criação de política|
+|roleScopeTagIds|Coleção de cadeias de caracteres|Lista de marcas de escopo para esta instância entity.|
 |isAssigned|Boolean|Status da atribuição de política. Essa propriedade é somente leitura.|
 |templateReference|[deviceManagementConfigurationPolicyTemplateReference](../resources/intune-deviceconfigv2-devicemanagementconfigurationpolicytemplatereference.md)|Informações de referência do modelo|
 

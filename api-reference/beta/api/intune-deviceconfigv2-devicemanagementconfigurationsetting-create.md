@@ -2,15 +2,15 @@
 title: Criar deviceManagementConfigurationSetting
 description: Crie um novo objeto deviceManagementConfigurationSetting.
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: e736b42c106b7e21c8e1e40ce57afdce54a1ad46
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: e6ae50ca1794ffb9f1c19bfe01165ad4909a3486
+ms.sourcegitcommit: 4a960067cf2cd7d3c605550150eb3c9259adfe92
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59077220"
+ms.lasthandoff: 10/19/2021
+ms.locfileid: "60490614"
 ---
 # <a name="create-devicemanagementconfigurationsetting"></a>Criar deviceManagementConfigurationSetting
 
@@ -29,7 +29,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |:---|:---|
 |Delegado (conta corporativa ou de estudante)|DeviceManagementConfiguration.ReadWrite.All|
 |Delegado (conta pessoal da Microsoft)|Sem suporte.|
-|Aplicativo|DeviceManagementServiceConfig.ReadWrite.All|
+|Aplicativo|DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- {

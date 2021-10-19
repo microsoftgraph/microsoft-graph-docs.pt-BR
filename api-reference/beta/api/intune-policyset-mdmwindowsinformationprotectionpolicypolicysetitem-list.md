@@ -2,15 +2,15 @@
 title: Listar mdmWindowsInformationProtectionPolicyPolicySetItems
 description: Listar propriedades e relações dos objetos mdmWindowsInformationProtectionPolicyPolicySetItem.
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 45ef3b7da26e1e2fdc3064675ee7ab6eca525d32
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 861866a0f4ac89d4c72a2326d5ab4210e3e2accc
+ms.sourcegitcommit: 4a960067cf2cd7d3c605550150eb3c9259adfe92
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59135589"
+ms.lasthandoff: 10/19/2021
+ms.locfileid: "60486709"
 ---
 # <a name="list-mdmwindowsinformationprotectionpolicypolicysetitems"></a>Listar mdmWindowsInformationProtectionPolicyPolicySetItems
 
@@ -29,7 +29,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |:---|:---|
 |Delegado (conta corporativa ou de estudante)|DeviceManagementConfiguration.Read.All, DeviceManagementConfiguration.ReadWrite.All|
 |Delegado (conta pessoal da Microsoft)|Sem suporte.|
-|Aplicativo|DeviceManagementServiceConfig.ReadWrite.All, DeviceManagementConfiguration.Read.All, DeviceManagementConfiguration.ReadWrite.All|
+|Aplicativo|DeviceManagementConfiguration.Read.All, DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- {

@@ -2,15 +2,15 @@
 title: Listar managedDeviceMobileAppConfigurationDeviceStatuses
 description: Listar propriedades e relações dos objetos managedDeviceMobileAppConfigurationDeviceStatus.
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: b5eb167b8de40cddfdb984da0ecbc642ecb52be3
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 1869d4295e3c9d6a8e456ad39772d8234fee3292
+ms.sourcegitcommit: 4a960067cf2cd7d3c605550150eb3c9259adfe92
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59108622"
+ms.lasthandoff: 10/19/2021
+ms.locfileid: "60484847"
 ---
 # <a name="list-manageddevicemobileappconfigurationdevicestatuses"></a>Listar managedDeviceMobileAppConfigurationDeviceStatuses
 
@@ -29,7 +29,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |:---|:---|
 |Delegado (conta corporativa ou de estudante)|DeviceManagementApps.Read.All, DeviceManagementApps.ReadWrite.All|
 |Delegado (conta pessoal da Microsoft)|Sem suporte.|
-|Aplicativo|DeviceManagementConfiguration.Read.All, DeviceManagementApps.Read.All, DeviceManagementApps.ReadWrite.All|
+|Aplicativo|DeviceManagementApps.Read.All, DeviceManagementApps.ReadWrite.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- {

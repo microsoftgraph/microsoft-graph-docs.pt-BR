@@ -2,15 +2,15 @@
 title: Tipo de recurso deviceManagementConfigurationWindowsSettingApplicability
 description: Ainda não documentado
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 08fdd5fef29e288c1987e9d3404a57277e39520d
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: a01c2e9721f1748a2e8edcc4b0f008512ec9f8af
+ms.sourcegitcommit: 4a960067cf2cd7d3c605550150eb3c9259adfe92
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59148169"
+ms.lasthandoff: 10/19/2021
+ms.locfileid: "60481080"
 ---
 # <a name="devicemanagementconfigurationwindowssettingapplicability-resource-type"></a>Tipo de recurso deviceManagementConfigurationWindowsSettingApplicability
 
@@ -29,14 +29,14 @@ Herda [de deviceManagementConfigurationSettingApplicability](../resources/intune
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
 |description|Cadeia de caracteres|descrição da configuração Herdada de [deviceManagementConfigurationSettingApplicability](../resources/intune-deviceconfigv2-devicemanagementconfigurationsettingapplicability.md)|
-|plataforma|[deviceManagementConfigurationPlatforms](../resources/intune-deviceconfigv2-devicemanagementconfigurationplatforms.md)|A configuração da plataforma pode ser aplicada em Inherited from [deviceManagementConfigurationSettingApplicability](../resources/intune-deviceconfigv2-devicemanagementconfigurationsettingapplicability.md). Os valores possíveis são: `none`, `macOS`, `windows10X`, `windows10`.|
+|plataforma|[deviceManagementConfigurationPlatforms](../resources/intune-deviceconfigv2-devicemanagementconfigurationplatforms.md)|A configuração da plataforma pode ser aplicada em Inherited from [deviceManagementConfigurationSettingApplicability](../resources/intune-deviceconfigv2-devicemanagementconfigurationsettingapplicability.md). Os possíveis valores são: `none`, `android`, `iOS`, `macOS`, `windows10X`, `windows10`.|
 |deviceMode|[deviceManagementConfigurationDeviceMode](../resources/intune-deviceconfigv2-devicemanagementconfigurationdevicemode.md)|Modo de Dispositivo essa configuração pode ser aplicada em Inherited from [deviceManagementConfigurationSettingApplicability](../resources/intune-deviceconfigv2-devicemanagementconfigurationsettingapplicability.md). Os valores possíveis são: `none` e `kiosk`.|
-|technologies|[deviceManagementConfigurationTechnologies](../resources/intune-deviceconfigv2-devicemanagementconfigurationtechnologies.md)|Quais canais de tecnologia essa configuração pode ser implantada por meio de Inherited from [deviceManagementConfigurationSettingApplicability](../resources/intune-deviceconfigv2-devicemanagementconfigurationsettingapplicability.md). Os possíveis valores são: `none`, `mdm`, `windows10XManagement`, `configManager`, `microsoftSense`, `exchangeOnline`.|
-|configurationServiceProviderVersion|Cadeia de Caracteres|A configuração de versão do CSP faz parte do|
-|maximumSupportedVersion|Cadeia de Caracteres|Versão máxima com suporte do Windows|
-|minimumSupportedVersion|Cadeia de Caracteres|Versão mínima com suporte do Windows|
+|technologies|[deviceManagementConfigurationTechnologies](../resources/intune-deviceconfigv2-devicemanagementconfigurationtechnologies.md)|Quais canais de tecnologia essa configuração pode ser implantada por meio de Inherited from [deviceManagementConfigurationSettingApplicability](../resources/intune-deviceconfigv2-devicemanagementconfigurationsettingapplicability.md). Os valores possíveis são: `none`, `mdm`, `windows10XManagement`, `configManager`, `microsoftSense`, `exchangeOnline`, `linuxMdm`, `unknownFutureValue`.|
+|configurationServiceProviderVersion|Cadeia de caracteres|A configuração de versão do CSP faz parte do|
+|maximumSupportedVersion|Cadeia de caracteres|Versão máxima com suporte do Windows|
+|minimumSupportedVersion|Cadeia de caracteres|Versão mínima com suporte do Windows|
 |windowsSkus|[Coleção deviceManagementConfigurationWindowsSkus](../resources/intune-deviceconfigv2-devicemanagementconfigurationwindowsskus.md)|Lista de Windows SKUs que a configuração é aplicável para|
-|requiresAzureAd|Boleano|Requisito de configuração do AzureAD|
+|requiresAzureAd|Booliano|Requisito de configuração do AzureAD|
 |requiredAzureAdTrustType|[deviceManagementConfigurationAzureAdTrustType](../resources/intune-deviceconfigv2-devicemanagementconfigurationazureadtrusttype.md)|Tipo de confiança necessário do AzureAD. Os valores possíveis são: `none`, `azureAdJoined`, `addWorkAccount`, `mdmOnly`.|
 
 ## <a name="relationships"></a>Relações

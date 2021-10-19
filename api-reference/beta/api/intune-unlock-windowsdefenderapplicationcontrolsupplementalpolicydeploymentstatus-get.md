@@ -2,15 +2,15 @@
 title: Obter windowsDefenderApplicationControlSupplementalPolicyDeploymentStatus
 description: Leia propriedades e relações do objeto windowsDefenderApplicationControlSupplementalPolicyDeploymentStatus.
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: db356cf3a91fe61d47f95b32d5382c13d87f54dd
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: afd65a130ba519862acb8664f67f7e7fd36e9ebf
+ms.sourcegitcommit: 4a960067cf2cd7d3c605550150eb3c9259adfe92
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59047762"
+ms.lasthandoff: 10/19/2021
+ms.locfileid: "60487860"
 ---
 # <a name="get-windowsdefenderapplicationcontrolsupplementalpolicydeploymentstatus"></a>Obter windowsDefenderApplicationControlSupplementalPolicyDeploymentStatus
 
@@ -29,7 +29,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |:---|:---|
 |Delegado (conta corporativa ou de estudante)|DeviceManagementApps.Read.All, DeviceManagementApps.ReadWrite.All|
 |Delegado (conta pessoal da Microsoft)|Sem suporte.|
-|Aplicativo|DeviceManagementConfiguration.Read.All, DeviceManagementApps.Read.All, DeviceManagementApps.ReadWrite.All|
+|Aplicativo|DeviceManagementApps.Read.All, DeviceManagementApps.ReadWrite.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- {
