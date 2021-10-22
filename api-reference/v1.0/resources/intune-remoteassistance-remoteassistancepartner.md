@@ -34,7 +34,7 @@ Os recursos RemoteAssistPartner representam os metadados e o status de um determ
 ## <a name="properties"></a>Propriedades
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|id|String|O identificador exclusivo do parceiro.|
+|id|Cadeia de caracteres|O identificador exclusivo do parceiro.|
 |displayName|Cadeia de caracteres|Nome de exibição do parceiro.|
 |onboardingUrl|Cadeia de caracteres|URL do portal de integração do parceiro, no qual um administrador pode configurar o serviço de assistência remota.|
 |onboardingStatus|[remoteAssistanceOnboardingStatus](../resources/intune-remoteassistance-remoteassistanceonboardingstatus.md)|Uma descrição amigável do status atual do conector teamViewer. Os valores possíveis são: `notOnboarded`, `onboarding`, `onboarded`.|
