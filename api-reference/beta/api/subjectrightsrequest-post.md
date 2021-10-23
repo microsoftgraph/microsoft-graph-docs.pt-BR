@@ -5,12 +5,12 @@ author: skadam-msft
 ms.localizationpriority: medium
 ms.prod: compliance
 doc_type: apiPageType
-ms.openlocfilehash: 17b39898a7bdfebe3ff147329033b5044646d6e0
-ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
+ms.openlocfilehash: 043aa156ac456039708e6a36f5306139f291ad86
+ms.sourcegitcommit: 0eb843a6f61f384bc28c0cce1ccb74f64bdb1fa6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/18/2021
-ms.locfileid: "60447014"
+ms.lasthandoff: 10/23/2021
+ms.locfileid: "60561777"
 ---
 # <a name="create-subjectrightsrequest"></a>Criar subjectRightsRequest
 Namespace: microsoft.graph
@@ -26,7 +26,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |:---|:---|
 |Delegado (conta corporativa ou de estudante)|SubjectRightsRequest.ReadWrite.All*|
 |Delegado (conta pessoal da Microsoft)|Sem suporte.|
-|Aplicativo|Sem suporte|
+|Application|Sem suporte|
 
 >[!IMPORTANT]
 >No momento, as permissões marcadas com um asterisco (*) não estão disponíveis. Para mais detalhes, confira [Problemas conhecidos](/graph/known-issues#compliance).
@@ -56,7 +56,7 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar [subject
 |:---|:---|:---|
 |dataSubject|[microsoft.graph.dataSubject](../resources/datasubject.md)|Contém as propriedades do assunto de dados para a solicitação.|
 |dataSubjectType|dataSubjectType|Tipo de assunto de dados. Os valores possíveis são: `customer`, `currentEmployee`, `formerEmployee`, `prospectiveEmployee`, `student`, `teacher`, `faculty`, `other`, `unknownFutureValue`.|
-|description|String|Descrição da solicitação.|
+|description|Cadeia de caracteres|Descrição da solicitação.|
 |displayName|Cadeia de caracteres|Nome da solicitação.|
 |internalDueDateTime|DateTimeOffset|Data de conclusão interna usada para acompanhar a conclusão da solicitação.|
 |regulations|Coleção de cadeias de caracteres|Um ou mais regulamentos para a solicitação.|
@@ -70,6 +70,8 @@ Se tiver êxito, este método retornará um código de resposta e um `201 Create
 ## <a name="examples"></a>Exemplos
 
 ### <a name="request"></a>Solicitação
+
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "create_subjectRightsRequest_from_"
@@ -97,6 +99,20 @@ Content-length: 849
     }
 }
 ```
+# <a name="c"></a>[C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/create-subjectrightsrequest-from--csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/create-subjectrightsrequest-from--javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/create-subjectrightsrequest-from--objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 
 ### <a name="response"></a>Resposta

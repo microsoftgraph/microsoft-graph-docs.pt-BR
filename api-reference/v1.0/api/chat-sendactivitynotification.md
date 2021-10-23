@@ -5,12 +5,12 @@ author: eddie-lee-msft
 ms.localizationpriority: medium
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: bd702e98c28ae0409b10c9bef3bde1349f9a10b8
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: f24f745a4cc0fc8c4c7136a01f6c5ac51a5a6011
+ms.sourcegitcommit: 0eb843a6f61f384bc28c0cce1ccb74f64bdb1fa6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59022909"
+ms.lasthandoff: 10/23/2021
+ms.locfileid: "60561623"
 ---
 # <a name="chat-sendactivitynotification"></a>chat: sendActivityNotification
 Namespace: microsoft.graph
@@ -22,9 +22,9 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 |Tipo de permissão|Permissões (da com menos para a com mais privilégios)|
 |:---|:---|
-|Delegada (conta corporativa ou de estudante)|TeamsActivity.Send|
-|Delegada (conta pessoal da Microsoft)|Sem suporte.|
-|Aplicativo|TeamsActivity.Send|
+|Delegado (conta corporativa ou de estudante)|TeamsActivity.Send|
+|Delegado (conta pessoal da Microsoft)|Sem suporte.|
+|Application|TeamsActivity.Send|
 
 ## <a name="http-request"></a>Solicitação HTTP
 
@@ -182,7 +182,55 @@ Content-Type: application/json
 HTTP/1.1 204 No Content
 ```
 
-### <a name="example-3-notify-a-user-about-an-event-in-relation-to-a-chat"></a>Exemplo 3: Notificar um usuário sobre um evento em relação a um chat
+### <a name="example-3-notify-a-user-about-an-approval-needed-in-a-chat-message-using-user-principal-name"></a>Exemplo 3: Notificar um usuário sobre uma aprovação necessária em uma mensagem de chat usando o nome principal do usuário
+
+Semelhante ao exemplo anterior, este exemplo usa `entityUrl` para `topic` o . No entanto, nesse caso, ele se vincula a uma mensagem no chat. A mensagem pode conter um cartão com o botão de aprovação.
+
+#### <a name="request"></a>Solicitação
+
+<!-- {
+  "blockType": "request",
+  "name": "chat_sendactivitynotification_upn"
+}
+-->
+``` http
+POST https://graph.microsoft.com/v1.0/chats/{chatId}/sendActivityNotification
+Content-Type: application/json
+
+{
+    "topic": {
+        "source": "entityUrl",
+        "value": "https://graph.microsoft.com/v1.0/chats/{chatId}/messages/{messageId}"
+    },
+    "activityType": "approvalRequired",
+    "previewText": {
+        "content": "Deployment requires your approval"
+    },
+    "recipient": {
+        "@odata.type": "Microsoft.Teams.GraphSvc.aadUserNotificationRecipient",
+        "userId": "jacob@contoso.com"
+    },
+    "templateParameters": [
+        {
+            "name": "approvalTaskId",
+            "value": "2020AAGGTAPP"
+        }
+    ]
+}
+```
+
+
+#### <a name="response"></a>Resposta
+<!-- {
+  "blockType": "response",
+  "truncated": false
+}
+-->
+``` http
+HTTP/1.1 204 No Content
+```
+
+### <a name="example-4-notify-a-user-about-an-event-in-relation-to-a-chat"></a>Exemplo 4: Notificar um usuário sobre um evento em relação a um chat
 
 Como mostrado nos exemplos anteriores, você pode vincular a diferentes aspectos do chat. No entanto, se você deseja vincular a um aspecto que não faz parte do chat ou não é representado pelo Microsoft Graph, você pode definir a origem do para e passar um valor personalizado para `topic` `text` ele. Além disso, `webUrl` é necessário ao definir a fonte como `topic` `text` .
 

@@ -5,12 +5,12 @@ author: arvindmicrosoft
 ms.localizationpriority: high
 ms.prod: bookings
 ms.custom: scenarios:getting-started
-ms.openlocfilehash: 3caf87b95533088bb1d0968fbcad6050c54fa51d
-ms.sourcegitcommit: 11be55b40804b07f4c422f09f601afa97c7d31ed
+ms.openlocfilehash: 4652765f9832ab36d11ff640743e4b0c2c996097
+ms.sourcegitcommit: 0eb843a6f61f384bc28c0cce1ccb74f64bdb1fa6
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/09/2021
-ms.locfileid: "60256505"
+ms.lasthandoff: 10/23/2021
+ms.locfileid: "60560727"
 ---
 # <a name="microsoft-bookings-api-overview-preview"></a>Visão geral da API do Microsoft Bookings (versão prévia)
 
@@ -35,7 +35,7 @@ Ao usar o mesmo ponto de extremidade REST unificado do Microsoft Graph, você po
 ## <a name="api-reference"></a>Referência da API
 Está procurando a referência de API para esse serviço?
 
-Confira [API do Microsoft Bookings no Microsoft Graph beta](/graph/api/resources/booking-api-overviewa).
+Confira [API do Microsoft Bookings no Microsoft Graph beta](/graph/api/resources/booking-api-overview).
 
 
 ## <a name="next-steps"></a>Próximas etapas

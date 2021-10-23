@@ -1,16 +1,16 @@
 ---
 title: Obter externalItem
 description: Obter um externalItem.
-localization_priority: Normal
+ms.localizationpriority: medium
 author: snlraju-msft
 ms.prod: search
 doc_type: apiPageType
-ms.openlocfilehash: a60fdfb7a44e8f5d2cda4eb8f726da34c4929a00
-ms.sourcegitcommit: 1940be9846055aa650c6c03982b74a961f1e316a
+ms.openlocfilehash: 1cf796a5cf498feb7669f8ba84ab91f288832631
+ms.sourcegitcommit: 0eb843a6f61f384bc28c0cce1ccb74f64bdb1fa6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/17/2021
-ms.locfileid: "53466970"
+ms.lasthandoff: 10/23/2021
+ms.locfileid: "60561665"
 ---
 # <a name="get-externalitem"></a>Obter externalItem
 
@@ -30,7 +30,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |:---------------------------------------|:--------------------------------------------|
 | Delegado (conta corporativa ou de estudante)     | Sem suporte. |
 | Delegado (conta pessoal da Microsoft) | Sem suporte. |
-| Aplicativo                            | ExternalItem.ReadWrite.OwnedBy, ExternalItem.ReadWrite.All |
+| Application                            | ExternalItem.ReadWrite.OwnedBy, ExternalItem.ReadWrite.All |
 
 ## <a name="http-request"></a>Solicitação HTTP
 
@@ -44,8 +44,8 @@ GET /external/connections/{connection-id}/items/{item-id}
 
 | Parâmetro     | Tipo   | Descrição                                         |
 |:--------------|:-------|:----------------------------------------------------|
-| connection-id | cadeia de caracteres | A `id` propriedade do [externalConnection que](../resources/externalconnectors-externalconnection.md) contém |
-| item-id       | cadeia de caracteres | A propriedade fornecida `id` pelo desenvolvedor do [externalItem](../resources/externalconnectors-externalitem.md). |
+| connection-id | string | A `id` propriedade do [externalConnection que](../resources/externalconnectors-externalconnection.md) contém |
+| item-id       | string | A propriedade fornecida `id` pelo desenvolvedor do [externalItem](../resources/externalconnectors-externalitem.md). |
 
 ## <a name="optional-query-parameters"></a>Parâmetros de consulta opcionais
 
@@ -72,7 +72,7 @@ Se tiver êxito, este método retornará um código `200 OK` de resposta e um ob
 Este é um exemplo de solicitação.
 
 ```http
-GET https://graph.microsoft.com/beta/connections/contosohr/items/TSP228082938
+GET https://graph.microsoft.com/beta/external/connections/contosohr/items/TSP228082938
 ```
 
 <!-- markdownlint-disable MD024 -->

@@ -3,14 +3,14 @@ title: Adicionar membro a um chat
 description: Adicione um conversationMember a um chat.
 author: bhartono
 doc_type: apiPageType
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: microsoft-teams
-ms.openlocfilehash: b320a3303925b6c1527d891210a330df401f2c1f
-ms.sourcegitcommit: 6d247f44a6ee4d8515c3863ee8a2683163c9f829
+ms.openlocfilehash: a07e24d52e604070cd70680221be6f0172e04ed7
+ms.sourcegitcommit: 0eb843a6f61f384bc28c0cce1ccb74f64bdb1fa6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/14/2021
-ms.locfileid: "53430071"
+ms.lasthandoff: 10/23/2021
+ms.locfileid: "60559551"
 ---
 # <a name="add-member-to-a-chat"></a>Adicionar membro a um chat
 
@@ -28,7 +28,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |---------|-------------|
 |Delegado (conta corporativa ou de estudante)| ChatMember.ReadWrite, Chat.ReadWrite |
 |Delegado (conta pessoal da Microsoft)|Sem suporte.|
-|Aplicativo| Chat.Manage.Chat*, ChatMember.ReadWrite.All, Chat.ReadWrite.All |
+|Application| Chat.Manage.Chat*, ChatMember.ReadWrite.All, Chat.ReadWrite.All |
 
 > **Observação**: Permissões marcadas com * usam [consentimento específico de recurso](https://aka.ms/teams-rsc).
 
@@ -237,4 +237,42 @@ HTTP/1.1 201 Created
 Location: /chats/19:cf66807577b149cca1b7af0c32eec122@thread.v2/members/MCMjMjQzMmI1N2ItMGFiZC00M2RiLWFhN2ItMTZlYWRkMTE1ZDM0IyMxOTpiZDlkYTQ2MzIzYWY0MjUzOTZkMGZhNjcyMDAyODk4NEB0aHJlYWQudjIjIzQ4YmY5ZDUyLWRjYTctNGE1Zi04Mzk4LTM3Yjk1Y2M3YmQ4Mw==
 ```
 
+### <a name="example-4-add-a-single-member-to-a-chat-using-user-principal-name"></a>Exemplo 4: Adicionar um único membro a um chat usando o nome principal do usuário
+
+#### <a name="request"></a>Solicitação
+
+Este é um exemplo da solicitação.
+
+<!-- {
+  "blockType": "request",
+  "name": "create_conversation_member_upn"
+} -->
+```msgraph-interactive
+POST https://graph.microsoft.com/beta/chats/19:cf66807577b149cca1b7af0c32eec122@thread.v2/members
+content-type: application/json
+
+{
+    "@odata.type": "#microsoft.graph.aadUserConversationMember",
+    "user@odata.bind": "https://graph.microsoft.com/beta/users/jacob@contoso.com",
+    "visibleHistoryStartDateTime": "2019-04-18T23:51:43.255Z",
+    "roles": ["owner"]
+}
+```
+
+
+#### <a name="response"></a>Resposta
+
+Veja a seguir um exemplo da resposta.
+
+<!-- 
+{
+ "blockType": "response",
+  "truncated": true,
+  "name": "create_conversation_member_upn"
+}
+-->
+```http
+HTTP/1.1 201 Created
+Location: /chats/19:cf66807577b149cca1b7af0c32eec122@thread.v2/members/MCMjMjQzMmI1N2ItMGFiZC00M2RiLWFhN2ItMTZlYWRkMTE1ZDM0IyMxOTpiZDlkYTQ2MzIzYWY0MjUzOTZkMGZhNjcyMDAyODk4NEB0aHJlYWQudjIjIzQ4YmY5ZDUyLWRjYTctNGE1Zi04Mzk4LTM3Yjk1Y2M3YmQ4Mw==
+```
 

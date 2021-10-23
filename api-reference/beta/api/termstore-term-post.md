@@ -1,23 +1,23 @@
 ---
 title: Criar termo
-description: Criar um novo objeto term.
+description: Crie um novo objeto term.
 author: mohitpcad
-localization_priority: Normal
-ms.prod: Sharepoint
+ms.localizationpriority: medium
+ms.prod: taxonomy
 doc_type: apiPageType
-ms.openlocfilehash: 06d1d0179723a068108672f402c2b13f1680cf43
-ms.sourcegitcommit: eacd2a6e46c19dd3cd8519592b1668fabe14d85d
+ms.openlocfilehash: d91ad5dc9f813ff3e06ddfe5da99c61872b911bd
+ms.sourcegitcommit: 0eb843a6f61f384bc28c0cce1ccb74f64bdb1fa6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "49874295"
+ms.lasthandoff: 10/23/2021
+ms.locfileid: "60560748"
 ---
 # <a name="create-term"></a>Criar termo
 Namespace: microsoft.graph.termStore
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Criar um novo [objeto term.](../resources/termstore-term.md)
+Crie um novo [objeto term.](../resources/termstore-term.md)
 
 ## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
@@ -47,19 +47,19 @@ POST /termStore/sets/{setId}/terms/{termId}/children
 |Content-Type|application/json. Obrigatório.|
 
 ## <a name="request-body"></a>Corpo da solicitação
-No corpo da solicitação, fornece uma representação JSON do [objeto do](../resources/termstore-term.md) termo.
+No corpo da solicitação, fornece uma representação JSON do [objeto term.](../resources/termstore-term.md)
 
-A tabela a seguir mostra as propriedades que são necessárias ao criar o [termo.](../resources/termstore-term.md)
+A tabela a seguir mostra as propriedades que são necessárias ao criar o [termo](../resources/termstore-term.md).
 
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|rótulos|[coleção microsoft.graph.termStore.localizedLabel](../resources/termstore-localizedlabel.md)|Rótulo do termo a ser criado|
+|labels|[coleção microsoft.graph.termStore.localizedLabel](../resources/termstore-localizedlabel.md)|Rótulo para o termo a ser criado|
 
 
 
 ## <a name="response"></a>Resposta
 
-Se bem-sucedido, este método retorna `201 Created` um código de resposta e um objeto [term](../resources/termstore-term.md) no corpo da resposta.
+Se tiver êxito, este método retornará `201 Created` um código de resposta e um objeto [term](../resources/termstore-term.md) no corpo da resposta.
 
 ## <a name="examples"></a>Exemplos
 
@@ -72,7 +72,7 @@ Se bem-sucedido, este método retorna `201 Created` um código de resposta e um 
 } -->
 
 ``` http
-POST https://graph.microsoft.com/beta/termStore/sets/{setId}/terms
+POST https://graph.microsoft.com/beta/termStore/sets/{setId}/children
 Content-Type: application/json
 Content-length: 366
 

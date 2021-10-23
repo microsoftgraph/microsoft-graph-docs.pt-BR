@@ -1,16 +1,16 @@
 ---
 title: Criar accessReviewScheduleDefinition
 description: Crie um novo objeto accessReviewScheduleDefinition.
-localization_priority: Normal
+ms.localizationpriority: medium
 author: isabelleatmsft
 ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: 4eb1155daa4db720f513d2ab4183a20bb7cbf07f
-ms.sourcegitcommit: 1e9a53e7b8e67349288f5cfbabe8355de83817b0
+ms.openlocfilehash: 2120dfcefd1586fbeca9d6e0b2df19557381b63b
+ms.sourcegitcommit: 0eb843a6f61f384bc28c0cce1ccb74f64bdb1fa6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/17/2021
-ms.locfileid: "58366789"
+ms.lasthandoff: 10/23/2021
+ms.locfileid: "60559355"
 ---
 # <a name="create-accessreviewscheduledefinition"></a>Criar accessReviewScheduleDefinition
 
@@ -26,9 +26,9 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 |Tipo de permissão                        | Permissões (da com menos para a com mais privilégios)              |
 |:--------------------------------------|:---------------------------------------------------------|
-|Delegada (conta corporativa ou de estudante)     | AccessReview.ReadWrite.All  |
-|Delegada (conta pessoal da Microsoft)|Sem suporte.|
-|Aplicativo                            | AccessReview.ReadWrite.All |
+|Delegado (conta corporativa ou de estudante)     | AccessReview.ReadWrite.All  |
+|Delegado (conta pessoal da Microsoft)|Sem suporte.|
+|Application                            | AccessReview.ReadWrite.All |
 
 O usuário interno também deve estar em uma função de diretório que permita que ele crie uma revisão de acesso.  Para obter mais detalhes, consulte os requisitos de função e permissão para [avaliações de acesso.](../resources/accessreviewsv2-root.md)
 
@@ -50,15 +50,15 @@ A tabela a seguir mostra as propriedades aceitas para criar um accessReview.
 
 | Propriedade | Tipo | Descrição |
 |:-------------|:------------|:------------|
-| displayName | Cadeia de caracteres | Nome da série de revisão de acesso. Obrigatório.|
-| descriptionForAdmins | cadeia de caracteres | Contexto da revisão fornecida aos administradores. Obrigatório. |
-  descriptionForReviewers | cadeia de caracteres | Contexto da revisão fornecida aos revisadores. Obrigatório. |
-| scope | [accessReviewScope](../resources/accessreviewscope.md) | Define as entidades cujo acesso é revisado. Consulte [accessReviewScope](../resources/accessreviewscope.md) e também saiba como [configurar o escopo da sua definição de revisão de acesso.](/graph/accessreviews-scope-concept) Obrigatório.| 
-| instanceEnumerationScope | [accessReviewScope](../resources/accessreviewscope.md) | No caso de uma revisão de todos os grupos, isso determina o escopo de quais grupos serão revisados. Consulte [accessReviewScope](../resources/accessreviewscope.md) e também saiba como [configurar o escopo da sua definição de revisão de acesso.](/graph/accessreviews-scope-concept)| 
-| configurações | [accessReviewScheduleSettings](../resources/accessreviewschedulesettings.md)| As configurações de uma série de revisão de acesso. A recorrência é determinada aqui. Consulte [accessReviewScheduleSettings](../resources/accessreviewschedulesettings.md). |
-| revisadores | [Coleção accessReviewReviewerScope](../resources/accessreviewreviewerscope.md) | Define quem são os revisadores. Se nenhum for especificado, a revisão será uma autoavaliação (os usuários revisam seu próprio acesso).  Para exemplos de opções para atribuir revisadores, consulte Atribuir revisadores à sua definição de revisão de acesso [usando a API do Microsoft Graph](/graph/accessreviews-reviewers-concept). |
-|fallbackReviewers|[Coleção accessReviewReviewerScope](../resources/accessreviewreviewerscope.md)|Se fornecido, os revisadores de fallback serão solicitados a concluir uma revisão se os revistores primários não existirem. Por exemplo, se os gerentes forem selecionados como e uma entidade em revisão não tiver um gerente no Azure AD, os revisadores de fallback serão solicitados a revisar `reviewers` essa entidade.|
 | additionalNotificationRecipients   |[Coleção accessReviewNotificationRecipientItem](../resources/accessReviewNotificationRecipientItem.md)| Define a lista de usuários adicionais ou membros do grupo a serem notificados sobre o progresso da revisão de acesso. |
+| descriptionForAdmins | Cadeia de Caracteres | Contexto da revisão fornecida aos administradores. Obrigatório. |
+  descriptionForReviewers | Cadeia de Caracteres | Contexto da revisão fornecida aos revisadores em notificações por email. As notificações por email suportam até 256 caracteres. Obrigatório. |
+| displayName | Cadeia de caracteres | Nome da série de revisão de acesso. Obrigatório.|
+| fallbackReviewers |[Coleção accessReviewReviewerScope](../resources/accessreviewreviewerscope.md)|Se fornecido, os revisadores de fallback serão solicitados a concluir uma revisão se os revistores primários não existirem. Por exemplo, se os gerentes forem selecionados como e uma entidade em revisão não tiver um gerente no Azure AD, os revisadores de fallback serão solicitados a revisar `reviewers` essa entidade.|
+| instanceEnumerationScope | [accessReviewScope](../resources/accessreviewscope.md) | No caso de uma revisão de todos os grupos, isso determina o escopo de quais grupos serão revisados. Consulte [accessReviewScope](../resources/accessreviewscope.md) e também saiba como [configurar o escopo da sua definição de revisão de acesso.](/graph/accessreviews-scope-concept)| 
+| revisadores | [Coleção accessReviewReviewerScope](../resources/accessreviewreviewerscope.md) | Define quem são os revisadores. Se nenhum for especificado, a revisão será uma autoavaliação (os usuários revisam seu próprio acesso).  Para exemplos de opções para atribuir revisadores, consulte Atribuir revisadores à sua definição de revisão de acesso [usando a API do Microsoft Graph](/graph/accessreviews-reviewers-concept). |
+| scope | [accessReviewScope](../resources/accessreviewscope.md) | Define as entidades cujo acesso é revisado. Consulte [accessReviewScope](../resources/accessreviewscope.md) e também saiba como [configurar o escopo da sua definição de revisão de acesso.](/graph/accessreviews-scope-concept) Obrigatório.| 
+| configurações | [accessReviewScheduleSettings](../resources/accessreviewschedulesettings.md)| As configurações de uma série de revisão de acesso. A recorrência é determinada aqui. Consulte [accessReviewScheduleSettings](../resources/accessreviewschedulesettings.md). |
 | backupReviewers (preterido) |[Coleção accessReviewReviewerScope](../resources/accessreviewreviewerscope.md)| Essa propriedade foi substituída por **fallbackReviewers**. No entanto, especificar **backupReviewers** ou **fallbackReviewers** preenche automaticamente os mesmos valores para a outra propriedade. |
 
 ## <a name="response"></a>Resposta
@@ -206,7 +206,8 @@ Content-type: application/json
       }
     },
   "applyActions": []
-  }
+  },
+  "additionalNotificationRecipients": []
 }
 ```
 
@@ -380,10 +381,10 @@ Content-type: application/json
       }
     },
     "applyActions": []
-  }
+  },
+  "additionalNotificationRecipients": []
 }
 ```
-
 ### <a name="example-3-create-an-access-review-of-all-users-to-an-application"></a>Exemplo 3: Criar uma revisão de acesso de todos os usuários para um aplicativo
 
 Este é um exemplo de criação de uma revisão de acesso com as seguintes configurações:
@@ -393,7 +394,6 @@ Este é um exemplo de criação de uma revisão de acesso com as seguintes confi
 
 #### <a name="request"></a>Solicitação
 
-# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "create_accessReviewScheduleDefinition_allusers_M365_AADRole"
@@ -465,24 +465,6 @@ Content-type: application/json
   }
 }
 ```
-# <a name="c"></a>[C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/create-accessreviewscheduledefinition-allusers-m365-aadrole-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# <a name="javascript"></a>[JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/create-accessreviewscheduledefinition-allusers-m365-aadrole-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# <a name="objective-c"></a>[Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/create-accessreviewscheduledefinition-allusers-m365-aadrole-objc-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# <a name="java"></a>[Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/create-accessreviewscheduledefinition-allusers-m365-aadrole-java-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
----
-
 
 #### <a name="response"></a>Resposta
 >**Observação:** o objeto de resposta mostrado aqui pode ser encurtado para legibilidade.
@@ -558,10 +540,10 @@ Content-type: application/json
         "endDate": "2022-05-05"
       }
     }
-  }
+  },
+  "additionalNotificationRecipients": []
 }
 ```
-
 
 <!--
 {

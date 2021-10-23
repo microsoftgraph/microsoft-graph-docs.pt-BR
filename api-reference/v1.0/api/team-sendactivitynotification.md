@@ -5,12 +5,12 @@ author: eddie-lee-msft
 ms.localizationpriority: medium
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 7ce1413e550d1a2102e00f2ac4fc6c895bc47f62
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 07fe6f62e01841e8a7705addf2d0b562a3161920
+ms.sourcegitcommit: 0eb843a6f61f384bc28c0cce1ccb74f64bdb1fa6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59109924"
+ms.lasthandoff: 10/23/2021
+ms.locfileid: "60561469"
 ---
 # <a name="team-sendactivitynotification"></a>team: sendActivityNotification
 Namespace: microsoft.graph
@@ -22,9 +22,9 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 |Tipo de permissão|Permissões (da com menos para a com mais privilégios)|
 |:---|:---|
-|Delegada (conta corporativa ou de estudante)|TeamsActivity.Send|
-|Delegada (conta pessoal da Microsoft)|Sem suporte.|
-|Aplicativo|TeamsActivity.Send.Group*, TeamsActivity.Send|
+|Delegado (conta corporativa ou de estudante)|TeamsActivity.Send|
+|Delegado (conta pessoal da Microsoft)|Sem suporte.|
+|Application|TeamsActivity.Send.Group*, TeamsActivity.Send|
 
 >**Observação:** Permissões marcadas com * use [o consentimento específico do recurso.](https://aka.ms/teams-rsc)
 
@@ -60,7 +60,7 @@ A tabela a seguir mostra os parâmetros que podem ser usados com esta ação.
 
 Os seguintes recursos são suportados ao definir o `source` valor da propriedade **topic** como `entityUrl` :
 
-- [team](../resources/team.md)
+- [equipe](../resources/team.md)
 - [channel](../resources/channel.md)
 - [chatMesage](../resources/chatmessage.md)
 - [teamsTab](../resources/teamstab.md)
@@ -194,7 +194,59 @@ Content-Type: application/json
 HTTP/1.1 204 No Content
 ```
 
-### <a name="example-3-notify-a-user-about-an-event-using-custom-topic"></a>Exemplo 3: Notificar um usuário sobre um evento usando tópico personalizado
+### <a name="example-3-notify-a-user-about-a-channel-tab-using-user-principal-name"></a>Exemplo 3: Notificar um usuário sobre uma guia de canal usando o nome principal do usuário
+
+Semelhante ao exemplo anterior, este exemplo usa `entityUrl` para `topic` o . No entanto, este exemplo se vincula a [uma guia](../resources/teamstab.md) em um [canal](../resources/channel.md). A guia hospeda uma página mostrando ao usuário o status de sua reserva de hotel. Selecionar a notificação levará o usuário para a guia, onde ele pode verificar sua reserva.
+
+#### <a name="request"></a>Solicitação
+
+<!-- {
+  "blockType": "request",
+  "name": "team_sendactivitynotification_upn"
+}
+-->
+``` http
+POST https://graph.microsoft.com/v1.0/teams/{teamId}/sendActivityNotification
+Content-Type: application/json
+
+{
+    "topic": {
+        "source": "entityUrl",
+        "value": "https://graph.microsoft.com/v1.0/teams/{teamId}/channels/{channelId}/tabs/{tabId}"
+    },
+    "activityType": "reservationUpdated",
+    "previewText": {
+        "content": "You have moved up the queue"
+    },
+    "recipient": {
+        "@odata.type": "Microsoft.Teams.GraphSvc.aadUserNotificationRecipient",
+        "userId": "jacob@contoso.com"
+    },
+    "templateParameters": [
+        {
+            "name": "reservationId",
+            "value": "TREEE433"
+        },
+        {
+            "name": "currentSlot",
+            "value": "23"
+        }
+    ]
+}
+```
+
+
+#### <a name="response"></a>Resposta
+<!-- {
+  "blockType": "response",
+  "truncated": false
+}
+-->
+``` http
+HTTP/1.1 204 No Content
+```
+
+### <a name="example-4-notify-a-user-about-an-event-using-custom-topic"></a>Exemplo 4: Notificar um usuário sobre um evento usando tópico personalizado
 
 Como visto nos exemplos anteriores, você pode vincular a diferentes aspectos da equipe. No entanto, se você deseja vincular a um aspecto que não faz parte da equipe ou não é representado pela Microsoft Graph, ou deseja personalizar o nome, você pode definir a origem do para e passar um valor personalizado para `topic` `text` ele. `webUrl` é necessário ao definir `topic` a fonte como `text` .
 

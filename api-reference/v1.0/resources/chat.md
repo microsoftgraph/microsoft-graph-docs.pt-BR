@@ -5,12 +5,12 @@ author: RamjotSingh
 ms.localizationpriority: medium
 ms.prod: microsoft-teams
 doc_type: resourcePageType
-ms.openlocfilehash: 724319be29968d0cbd74e21ed3fcaae63772e9e8
-ms.sourcegitcommit: 6ae8c124fac63a195ccf516c9cff739f730b6b13
+ms.openlocfilehash: 82d7cfa6a4e966c7264be12fe23893c9cce2a8ef
+ms.sourcegitcommit: 0eb843a6f61f384bc28c0cce1ccb74f64bdb1fa6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/02/2021
-ms.locfileid: "60084060"
+ms.lasthandoff: 10/23/2021
+ms.locfileid: "60560104"
 ---
 # <a name="chat-resource-type"></a>tipo de recurso de chat
 
@@ -20,7 +20,7 @@ Um chat é uma coleção [de chatMessages](chatmessage.md) entre um ou mais part
 
 > **Observação**: se o chat estiver associado a uma instância [onlineMeeting,](../resources/onlinemeeting.md) alguns dos métodos listados afetarão transitivamente a reunião.
 
-## <a name="methods"></a>Methods
+## <a name="methods"></a>Métodos
 
 |  Método       |  Tipo de retorno  | Descrição| 
 |:---------------|:--------|:----------|
@@ -56,11 +56,12 @@ Um chat é uma coleção [de chatMessages](chatmessage.md) entre um ou mais part
 
 | Propriedade   | Tipo |Descrição|
 |:---------------|:--------|:----------|
-| id| Cadeia de caracteres| O identificador exclusivo do chat. Somente leitura.|
-| topic| String|  (Opcional) Assunto ou tópico para o chat. Disponível apenas para chats em grupo.|
+| chatType| [chatType](../resources/chat.md#chattype-values) | Especifica o tipo de chat. Os valores possíveis são: `group`, `oneOnOne`, `meeting`, `unknownFutureValue`.|
 | createdDateTime| dateTimeOffset|  Data e hora em que o chat foi criado. Somente leitura.|
+| id| Cadeia de caracteres| O identificador exclusivo do chat. Somente leitura.|
 | lastUpdatedDateTime| dateTimeOffset|  Data e hora em que o chat foi renomeado ou a lista de membros foi alterada pela última vez. Somente leitura.|
-| chatType| [chatType](../resources/chat.md#chattype-values) | Especifica o tipo de chat. Os valores possíveis são: `group` e `oneOnOne` `meeting` .|
+| topic| String|  (Opcional) Assunto ou tópico para o chat. Disponível apenas para chats em grupo.|
+
 
 ### <a name="chattype-values"></a>valores chatType 
 
@@ -69,7 +70,7 @@ Um chat é uma coleção [de chatMessages](chatmessage.md) entre um ou mais part
 |oneOnOne            | 0     | Indica que o chat é um chat 1:1. O tamanho da lista é fixo para esse tipo de chat; os membros não podem ser removidos/adicionados.|
 |group               | 1     | Indica que o chat é um chat em grupo. O tamanho da lista (de pelo menos duas pessoas) pode ser atualizado para esse tipo de chat. Os membros podem ser removidos/adicionados posteriormente.|
 |meeting             | 2     | Indica que o chat está associado a uma reunião online. Esse tipo de chat só é criado como parte da criação de uma reunião online.|
-|unknownFutureValue  | 3     | Valor sentinel para indicar valores futuros. |
+|unknownFutureValue  | 3     | Valor de sentinela de enumeração evolvável. Não usar. |
 
 ## <a name="relationships"></a>Relações
 

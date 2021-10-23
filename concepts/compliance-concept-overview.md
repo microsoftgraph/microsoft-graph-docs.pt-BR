@@ -1,24 +1,24 @@
 ---
-title: Visão geral da conformidade no Microsoft Graph
+title: Visão geral das APIs de conformidade e privacidade no Microsoft Graph
 description: As APIs do Microsoft Graph para Conformidade fornecem funcionalidade para que as organizações automatizem tarefas repetitivas e se integrem às suas ferramentas de conformidade existentes para criar fluxos de trabalho previsíveis que são frequentemente necessários para atender aos regulamentos do setor.
 author: mahage-msft
 ms.localizationpriority: medium
 ms.prod: ediscovery
 ms.custom: scenarios:getting-started
-ms.openlocfilehash: f11672a141fae80fb9851a78b80b23fb7e39ac3b
-ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
+ms.openlocfilehash: 0803a74921fc3bc398fcbb56fc01c00959573cd9
+ms.sourcegitcommit: 0eb843a6f61f384bc28c0cce1ccb74f64bdb1fa6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/18/2021
-ms.locfileid: "60440077"
+ms.lasthandoff: 10/23/2021
+ms.locfileid: "60561742"
 ---
-# <a name="overview-of-compliance-in-microsoft-graph"></a>Visão geral da conformidade no Microsoft Graph
+# <a name="overview-of-compliance-and-privacy-apis-in-microsoft-graph"></a>Visão geral das APIs de conformidade e privacidade no Microsoft Graph
 
-As APIs do Microsoft Graph para conformidade fornecem funcionalidades para que as organizações automatizem tarefas repetitivas e se integrem às suas ferramentas de conformidade existentes para criar fluxos de trabalho previsíveis que geralmente são necessários para atender aos regulamentos do setor.
+As APIs do Microsoft Graph para conformidade e privacidade fornecem funcionalidades para que as organizações automatizem tarefas repetitivas e se integrem às suas ferramentas de conformidade existentes para criar fluxos de trabalho previsíveis que geralmente são necessários para atender aos regulamentos do setor.
 
-As APIs de conformidade destinam-se a ajudar a oferecer a visão de ajudar as organizações a se adaptarem e estenderem Microsoft 365 Conformidade aos seus próprios requisitos específicos, habilitar a integração para soluções personalizadas ou de terceiros existentes e acelerar e dar suporte ao uso de soluções Microsoft 365 em todo o estado digital da empresa.
+As APIs de conformidade e privacidade destinam-se a ajudar a oferecer a visão de ajudar as organizações a se adaptarem e estenderem Microsoft 365 Conformidade aos seus próprios requisitos específicos, habilitar a integração para soluções personalizadas ou de terceiros existentes e acelerar e dar suporte ao uso de soluções Microsoft 365 em todo o estado digital empresarial.
 
-## <a name="ediscovery-api-preview"></a>API de Descoberta Externa (visualização)
+## <a name="electronic-discovery-ediscovery-preview"></a>Descoberta eletrônica (Descoberta Eletrônica) (visualização)
 
 ### <a name="develop-applications-that-ensure-a-repeatable-predictable-and-standard-process"></a>Desenvolver aplicativos que garantem um processo repetitivo, previsível e padrão
 
@@ -42,14 +42,18 @@ Dependendo dos sistemas e processos atuais, as organizações podem ter várias 
 
 - Crie relatórios personalizados para controlar a carga de casos e o progresso de casos individuais.
 
-## <a name="privacy-api"></a>API de Privacidade
-
-### <a name="automate-tasks-for-data-subject-requests"></a>Automatizar tarefas para solicitações de assunto de dados
+## <a name="privacy-management-by-subject-rights-requests"></a>Gerenciamento de privacidade por solicitações de direitos de assunto
 
 De acordo com determinados regulamentos de privacidade em todo o mundo, os indivíduos podem fazer solicitações para revisar ou gerenciar os dados pessoais sobre si mesmos coletados pelas empresas. Essas solicitações são conhecidas como solicitações de direitos de assunto na solução Microsoft 365 gerenciamento de privacidade; às vezes, eles também são chamados de DSRs (solicitações de assunto de dados) ou DSARs (solicitações de acesso a dados). Microsoft 365 gerenciamento de privacidade capacita a equipe responsável por atender às solicitações de direitos de entidade para identificar facilmente os titulares de dados e encontrar suas informações pessoais entre os dados de uma organização em Exchange, SharePoint, OneDrive e Teams. 
 
 As APIs do Microsoft Graph para solicitação de direitos de entidade fornecem funcionalidade para que as organizações automatizem tarefas repetitivas e se integrem às ferramentas de solicitação de entidades de dados existentes, para habilitar a criação de fluxos de trabalho repetidos que podem ser incorporados aos processos de negócios. Você pode usar as APIs de solicitação de direitos de assunto para ajudá-lo a automatizar e dimensionar a capacidade da sua organização de executar pesquisas de solicitações de direitos de assunto em Microsoft 365 e ajudar a atender aos regulamentos do setor com mais eficiência.
 
+## <a name="api-reference"></a>Referência da API
+
+Procurando a referência de API para estes serviços?
+- [Usar a API de Descoberta Graph Da Microsoft](/graph/api/resources/ediscovery-ediscoveryapioverview?view=graph-rest-beta&preserve-view=true) no Microsoft Graph beta
+- [Usar a API Graph solicitação](/graph/api/resources/subjectrightsrequest-subjectrightsrequestapioverview) de direitos de assunto da Microsoft no Microsoft Graph v1.0
+- [Usar a API de](/graph/api/resources/subjectrightsrequest-subjectrightsrequestapioverview?view=graph-rest-beta&preserve-view=true) solicitação Graph direitos de assunto da Microsoft no Microsoft Graph beta
 
 ## <a name="next-steps"></a>Próximas etapas
 

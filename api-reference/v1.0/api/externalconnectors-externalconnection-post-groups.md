@@ -5,12 +5,12 @@ author: sacampbe-msft
 ms.localizationpriority: medium
 ms.prod: search
 doc_type: apiPageType
-ms.openlocfilehash: 92b381434c664942aba9eb1e78ed4da6c62e2fec
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 56ae5e53863e18146ec7eed101bd39d872916f07
+ms.sourcegitcommit: 0eb843a6f61f384bc28c0cce1ccb74f64bdb1fa6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59022473"
+ms.lasthandoff: 10/23/2021
+ms.locfileid: "60559285"
 ---
 # <a name="create-externalgroup"></a>Criar externalGroup
 Namespace: microsoft.graph.externalConnectors
@@ -35,7 +35,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 }
 -->
 ``` http
-POST /connections/{connectionsId}/groups
+POST /external/connections/{connectionsId}/groups
 ```
 
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
@@ -52,8 +52,8 @@ Você pode especificar as seguintes propriedades ao criar **um externalGroup**.
 
 | Propriedade    | Tipo   | Descrição                                                                                                              |
 |:------------|:-------|:-------------------------------------------------------------------------------------------------------------------------|
-| id          | String | A ID exclusiva do grupo externo dentro de uma conexão. Ele deve ser alfanumérico e pode ter até 128 caracteres. Obrigatório. |
-| displayName | String | O nome amigável do grupo externo. Opcional.                                                                      |
+| id          | Cadeia de caracteres | A ID exclusiva do grupo externo dentro de uma conexão. Ele deve ser alfanumérico e pode ter até 128 caracteres. Obrigatório. |
+| displayName | Cadeia de caracteres | O nome amigável do grupo externo. Opcional.                                                                      |
 | description | Cadeia de caracteres | A descrição do grupo externo. Opcional.                                                                         |
 
 

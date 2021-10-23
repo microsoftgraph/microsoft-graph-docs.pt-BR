@@ -2,15 +2,15 @@
 title: Obter continuousAccessEvaluationPolicy
 description: Leia as propriedades de um objeto continuousAccessEvaluationPolicy.
 author: jerrysai
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: 0f0aac891c40e84266ebb48fb3e196bbdfd13d03
-ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
+ms.openlocfilehash: 642dfc75a72dd7cda5414202842b5a79e32b8c5d
+ms.sourcegitcommit: 0eb843a6f61f384bc28c0cce1ccb74f64bdb1fa6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50437286"
+ms.lasthandoff: 10/23/2021
+ms.locfileid: "60558935"
 ---
 # <a name="get-continuousaccessevaluationpolicy"></a>Obter continuousAccessEvaluationPolicy
 Namespace: microsoft.graph
@@ -104,6 +104,7 @@ Content-type: application/json
   "displayName": "Continuous Access Evaluation",
   "isEnabled": true,
   "users": [ "1608be63-df14-42a4-8932-1c9d963b026f" ],
-  "groups": [ "4308b567-df14-0000-8932-1c9d963b026f" ]
+  "groups": [ "4308b567-df14-0000-8932-1c9d963b026f" ],
+  "migrate": true
 }
 ```

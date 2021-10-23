@@ -5,12 +5,12 @@ author: mecampos
 ms.localizationpriority: medium
 ms.prod: search
 doc_type: apiPageType
-ms.openlocfilehash: c6c68c73e1a96f4c0ff949100f29081e70452adf
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: c983947208ea02f4af0f395c3e294acedc894b89
+ms.sourcegitcommit: 0eb843a6f61f384bc28c0cce1ccb74f64bdb1fa6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59029595"
+ms.lasthandoff: 10/23/2021
+ms.locfileid: "60558543"
 ---
 # <a name="get-externalitem"></a>Obter externalItem
 Namespace: microsoft.graph.externalConnectors
@@ -24,9 +24,9 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 |Tipo de permissão|Permissões (da com menos para a com mais privilégios)|
 |:---|:---|
-|Delegada (conta corporativa ou de estudante)|Não aplicável|
-|Delegada (conta pessoal da Microsoft)|Não aplicável|
-|Aplicativo| ExternalItem.ReadWrite.OwnedBy, ExternalItem.ReadWrite.All |
+|Delegado (conta corporativa ou de estudante)|Não aplicável|
+|Delegado (conta pessoal da Microsoft)|Não aplicável|
+|Application| ExternalItem.ReadWrite.OwnedBy, ExternalItem.ReadWrite.All |
 
 ## <a name="http-request"></a>Solicitação HTTP
 
@@ -35,7 +35,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 }
 -->
 ``` http
-GET /connections/{connectionsId}/items/{externalItemId}
+GET /external/connections/{connectionsId}/items/{externalItemId}
 ```
 
 ## <a name="optional-query-parameters"></a>Parâmetros de consulta opcionais
@@ -59,7 +59,7 @@ Se tiver êxito, este método retornará um código `200 OK` de resposta e um ob
 Este é um exemplo de solicitação.
 
 ```http
-GET https://graph.microsoft.com/beta/connections/contosohr/items/TSP228082938
+GET https://graph.microsoft.com/beta/external/connections/contosohr/items/TSP228082938
 ```
 
 

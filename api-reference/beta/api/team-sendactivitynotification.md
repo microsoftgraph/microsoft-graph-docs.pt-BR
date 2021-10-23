@@ -2,15 +2,15 @@
 title: 'team: sendActivityNotification'
 description: Envie uma notificação de feed de atividade no escopo de uma equipe.
 author: RamjotSingh
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 0b74b74d4ffecf19acc8e0b9d19af1475d1a1e85
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: b485c65e1b74691ae0ae06c6095400e9b88825d0
+ms.sourcegitcommit: 0eb843a6f61f384bc28c0cce1ccb74f64bdb1fa6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58785476"
+ms.lasthandoff: 10/23/2021
+ms.locfileid: "60560083"
 ---
 # <a name="team-sendactivitynotification"></a>team: sendActivityNotification
 Namespace: microsoft.graph
@@ -62,7 +62,7 @@ A tabela a seguir mostra os parâmetros que podem ser usados com esta ação.
 
 Os seguintes recursos são suportados ao definir o `source` valor da propriedade **topic** como `entityUrl` :
 
-- [team](../resources/team.md)
+- [equipe](../resources/team.md)
 - [channel](../resources/channel.md)
 - [chatMesage](../resources/chatmessage.md)
 - [teamsTab](../resources/teamstab.md)
@@ -211,7 +211,59 @@ Content-Type: application/json
 HTTP/1.1 204 No Content
 ```
 
-### <a name="example-3-notify-a-user-about-an-event-using-custom-topic"></a>Exemplo 3: Notificar um usuário sobre um evento usando tópico personalizado
+### <a name="example-3-notify-a-user-about-a-channel-tab-using-user-principal-name"></a>Exemplo 3: Notificar um usuário sobre uma guia de canal usando o nome principal do usuário
+
+Semelhante ao exemplo anterior, este exemplo usa `entityUrl` para `topic` o . No entanto, este exemplo se vincula a [uma guia](../resources/teamstab.md) em um [canal](../resources/channel.md). A guia hospeda uma página mostrando ao usuário o status de sua reserva de hotel. Selecionar a notificação levará o usuário para a guia, onde ele pode verificar sua reserva.
+
+#### <a name="request"></a>Solicitação
+
+<!-- {
+  "blockType": "request",
+  "name": "team_sendactivitynotification_upn"
+}
+-->
+``` http
+POST https://graph.microsoft.com/beta/teams/{teamId}/sendActivityNotification
+Content-Type: application/json
+
+{
+    "topic": {
+        "source": "entityUrl",
+        "value": "https://graph.microsoft.com/beta/teams/{teamId}/channels/{channelId}/tabs/{tabId}"
+    },
+    "activityType": "reservationUpdated",
+    "previewText": {
+        "content": "You have moved up the queue"
+    },
+    "recipient": {
+        "@odata.type": "Microsoft.Teams.GraphSvc.aadUserNotificationRecipient",
+        "userId": "jacob@contoso.com"
+    },
+    "templateParameters": [
+        {
+            "name": "reservationId",
+            "value": "TREEE433"
+        },
+        {
+            "name": "currentSlot",
+            "value": "23"
+        }
+    ]
+}
+```
+
+
+#### <a name="response"></a>Resposta
+<!-- {
+  "blockType": "response",
+  "truncated": false
+}
+-->
+``` http
+HTTP/1.1 204 No Content
+```
+
+### <a name="example-4-notify-a-user-about-an-event-using-custom-topic"></a>Exemplo 4: Notificar um usuário sobre um evento usando tópico personalizado
 
 Como visto nos exemplos anteriores, você pode vincular a diferentes aspectos da equipe. No entanto, se você deseja vincular a um aspecto que não faz parte da equipe ou não é representado pela Microsoft Graph, ou deseja personalizar o nome, você pode definir a origem do para e passar um valor personalizado para `topic` `text` ele. `webUrl` é necessário ao definir `topic` a fonte como `text` .
 
@@ -278,7 +330,7 @@ Content-Type: application/json
 HTTP/1.1 204 No Content
 ```
 
-### <a name="example-4-notify-the-team-members-about-pending-finance-approval-requests"></a>Exemplo 4: Notificar os membros da equipe sobre solicitações pendentes de aprovação de finanças
+### <a name="example-5-notify-the-team-members-about-pending-finance-approval-requests"></a>Exemplo 5: Notificar os membros da equipe sobre solicitações pendentes de aprovação de finanças
 
 Este exemplo mostra como você pode enviar uma notificação de feed de atividade para todos os membros da equipe. Este exemplo é semelhante aos exemplos anteriores. No entanto, nesse caso, `recipient` o [é um teamMembersNotificationRecipient](../resources/teammembersnotificationrecipient.md). Observe que `teamId` o especificado no deve corresponder ao especificado na URL de `recipient` `teamId` solicitação.
 
@@ -347,7 +399,7 @@ Content-Type: application/json
 HTTP/1.1 204 No Content
 ```
 
-### <a name="example-5-notify-the-channel-members-about-pending-finance-approval-requests"></a>Exemplo 5: Notificar os membros do canal sobre solicitações pendentes de aprovação de finanças
+### <a name="example-6-notify-the-channel-members-about-pending-finance-approval-requests"></a>Exemplo 6: Notificar os membros do canal sobre solicitações pendentes de aprovação de finanças
 
 Este exemplo mostra como você pode enviar uma notificação de feed de atividade para todos os membros do canal. Este exemplo é semelhante ao exemplo anterior. No entanto, nesse caso, é `recipient` [um channelMembersNotificationRecipient](../resources/channelmembersnotificationrecipient.md). Observe que `teamId` o especificado no deve corresponder ao especificado na URL de `recipient` `teamId` solicitação.
 

@@ -5,12 +5,12 @@ author: jerrysai
 ms.localizationpriority: medium
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: 7ee03ae95f73fe334175749c0ad938c1a63aaa2a
-ms.sourcegitcommit: 94dc71a6d4fbdc46f2681a1add13416bc9b4a6e9
+ms.openlocfilehash: e468c12d83ed1fbebdf23a546373270415bf807b
+ms.sourcegitcommit: 0eb843a6f61f384bc28c0cce1ccb74f64bdb1fa6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/05/2021
-ms.locfileid: "60115414"
+ms.lasthandoff: 10/23/2021
+ms.locfileid: "60561448"
 ---
 # <a name="update-continuousaccessevaluationpolicy"></a>Atualizar continuousAccessEvaluationPolicy
 Namespace: microsoft.graph
@@ -24,9 +24,9 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 |Tipo de permissão                        | Permissões (da com menos para a com mais privilégios)                    |
 |:--------------------------------------|:---------------------------------------------------------------|
-|Delegada (conta corporativa ou de estudante)     | Policy.Read.All, Policy.ReadWrite.ConditionalAccess e Application.Read.All |
+|Delegado (conta corporativa ou de estudante)     | Policy.Read.All, Policy.ReadWrite.ConditionalAccess e Application.Read.All |
 |Delegado (conta pessoal da Microsoft) | Sem suporte. |
-|Aplicativo                            | Policy.Read.All, Policy.ReadWrite.ConditionalAccess e Application.Read.All |
+|Application                            | Policy.Read.All, Policy.ReadWrite.ConditionalAccess e Application.Read.All |
 
 > [!NOTE]
 > Essa API tem um [problema conhecido relacionado](/graph/known-issues#permissions) a permissões.  
@@ -52,10 +52,7 @@ No corpo da solicitação, forneça os valores para os campos relevantes que dev
 
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|grupos|Coleção de cadeias de caracteres|A coleção de identificadores de grupo no escopo para avaliação. Todos os grupos estão no escopo quando a coleção está vazia.|
-|isEnabled|Booliano| `true` para indicar se a avaliação de acesso contínuo deve ser realizada; caso `false` contrário. |
-|usuários|Conjunto de cadeias de caracteres|A coleção de identificadores de usuário no escopo para avaliação. Todos os usuários estão no escopo quando a coleção está vazia.|
-
+|migrar|Boolean| `true` para indicar que as configurações de política de avaliação de acesso contínuo devem ser ou foram migradas para a política de acesso condicional. |
 
 ## <a name="response"></a>Resposta
 
@@ -77,8 +74,7 @@ Content-Type: application/json
 
 {
   "@odata.type": "#microsoft.graph.continuousAccessEvaluationPolicy",
-  "users": [ "88139f01-1f8d-4c06-ad74-a2544cee9aee" ],
-  "groups": [ "9972fb3f-7a40-49f5-85f6-129d9dfbd47a", "ea178055-4713-4d9a-a06c-ff17466b7e77"]
+  "migrate": true
 }
 ```
 # <a name="c"></a>[C#](#tab/csharp)

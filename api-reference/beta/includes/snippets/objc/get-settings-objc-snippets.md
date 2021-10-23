@@ -1,11 +1,11 @@
 ---
 description: Arquivo gerado automaticamente. NÃO MODIFICAR
-ms.openlocfilehash: 8896607d6da3c2717ece124eaaa1a51a99c23b7e
-ms.sourcegitcommit: 2a35434fabc76672e21bfc3ed5a1d28f9f3b66bc
+ms.openlocfilehash: 32268b947cbde2c8d7bc31176f9da6ffe0f977a8
+ms.sourcegitcommit: 0eb843a6f61f384bc28c0cce1ccb74f64bdb1fa6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/06/2021
-ms.locfileid: "52240860"
+ms.lasthandoff: 10/23/2021
+ms.locfileid: "60559868"
 ---
 ```objc
 
@@ -18,7 +18,7 @@ NSMutableURLRequest *urlRequest = [NSMutableURLRequest requestWithURL:[NSURL URL
 MSURLSessionDataTask *meDataTask = [httpClient dataTaskWithRequest:urlRequest 
     completionHandler: ^(NSData *data, NSURLResponse *response, NSError *nserror) {
 
-        MSGraphSettings *settings = [[MSGraphSettings alloc] initWithData:data error:&nserror];
+        MSGraphCaseSettings *caseSettings = [[MSGraphCaseSettings alloc] initWithData:data error:&nserror];
 
 }];
 

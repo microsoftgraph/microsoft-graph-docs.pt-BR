@@ -1,11 +1,11 @@
 ---
 description: Arquivo gerado automaticamente. NÃO MODIFICAR
-ms.openlocfilehash: 13956ffcf1212e864d56c17fe564b601a4e63cfc
-ms.sourcegitcommit: 36bae3615df41876493b25da478e589d1974f97b
+ms.openlocfilehash: e67dcc9024b781c8c744678dc9bf44cafa488f61
+ms.sourcegitcommit: 0eb843a6f61f384bc28c0cce1ccb74f64bdb1fa6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "59995488"
+ms.lasthandoff: 10/23/2021
+ms.locfileid: "60561539"
 ---
 ```csharp
 
@@ -19,6 +19,7 @@ var organizationalBranding = new OrganizationalBranding
 
 await graphClient.Organization["{organization-id}"].Branding
     .Request()
+    .Header("Accept-Language","0")
     .UpdateAsync(organizationalBranding);
 
 ```

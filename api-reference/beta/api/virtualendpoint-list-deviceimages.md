@@ -1,16 +1,16 @@
 ---
-title: Listar cloudPcDeviceImages
+title: Listar deviceImages
 description: Listar as propriedades e as relações das imagens do sistema operacional carregadas no Cloud PC.
 author: AshleyYangSZ
 ms.localizationpriority: medium
 ms.prod: cloud-pc
 doc_type: apiPageType
-ms.openlocfilehash: 6f8ec3ee7638c5ba30d329c714fcc154c514dab1
-ms.sourcegitcommit: 08e9b0bac39c1b1d2c8a79539d24aaa93364baf2
+ms.openlocfilehash: 808eb03245e63c665ee6e5fb22c3abf0424b095c
+ms.sourcegitcommit: 0eb843a6f61f384bc28c0cce1ccb74f64bdb1fa6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/24/2021
-ms.locfileid: "59507519"
+ms.lasthandoff: 10/23/2021
+ms.locfileid: "60558928"
 ---
 # <a name="list-deviceimages"></a>Listar deviceImages
 

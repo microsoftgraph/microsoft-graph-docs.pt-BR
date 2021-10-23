@@ -5,12 +5,12 @@ author: sacampbe
 ms.localizationpriority: medium
 ms.prod: search
 doc_type: apiPageType
-ms.openlocfilehash: 4a12116f6f37f46665ab214af45b84db5d6affd1
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: ab13c0cf77a4b6416d574e109dbb579caa40c639
+ms.sourcegitcommit: 0eb843a6f61f384bc28c0cce1ccb74f64bdb1fa6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59022615"
+ms.lasthandoff: 10/23/2021
+ms.locfileid: "60561266"
 ---
 # <a name="create-identity"></a>Criar identidade
 Namespace: microsoft.graph.externalConnectors
@@ -36,7 +36,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 }
 -->
 ``` http
-POST /connections/{connectionsId}/groups/{externalGroupId}/members
+POST /external/connections/{connectionsId}/groups/{externalGroupId}/members
 ```
 
 ## <a name="request-headers"></a>Cabeçalhos de solicitação

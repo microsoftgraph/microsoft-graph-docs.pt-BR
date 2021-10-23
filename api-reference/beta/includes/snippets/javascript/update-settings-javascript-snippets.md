@@ -1,11 +1,11 @@
 ---
 description: Arquivo gerado automaticamente. NÃO MODIFICAR
-ms.openlocfilehash: 7283d71f273ee225a9e94182d0a0210e861fc6a3
-ms.sourcegitcommit: 2a35434fabc76672e21bfc3ed5a1d28f9f3b66bc
+ms.openlocfilehash: 1d615ef458bdcfeb53e32496a822ac64ee9fe916
+ms.sourcegitcommit: 0eb843a6f61f384bc28c0cce1ccb74f64bdb1fa6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/06/2021
-ms.locfileid: "52240826"
+ms.lasthandoff: 10/23/2021
+ms.locfileid: "60559707"
 ---
 ```javascript
 
@@ -15,7 +15,7 @@ const options = {
 
 const client = Client.init(options);
 
-const settings = {
+const caseSettings = {
     redundancyDetection: {
         isEnabled: false,
         similarityThreshold: 70,
@@ -36,6 +36,6 @@ const settings = {
 
 await client.api('/compliance/ediscovery/cases/{caseId}/settings')
     .version('beta')
-    .update(settings);
+    .update(caseSettings);
 
 ```

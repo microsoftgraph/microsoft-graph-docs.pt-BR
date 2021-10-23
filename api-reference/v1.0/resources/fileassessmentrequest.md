@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: hafen-ms
 ms.prod: security
 doc_type: resourcePageType
-ms.openlocfilehash: cecd2e0a092f21017a0cab2f5a5f7a2612e2ddeb
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 730abf835877fa2f22588d04e5ce43374a495750
+ms.sourcegitcommit: 0eb843a6f61f384bc28c0cce1ccb74f64bdb1fa6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59062681"
+ms.lasthandoff: 10/23/2021
+ms.locfileid: "60561840"
 ---
 # <a name="fileassessmentrequest-resource-type"></a>Tipo de recurso fileAssessmentRequest
 
@@ -29,7 +29,7 @@ O arquivo pode ser um arquivo de texto ou documento do Word ou arquivo binário 
 
 | Propriedade     | Tipo        | Descrição |
 |:-------------|:------------|:------------|
-|contentData|Cadeia de caracteres|Conteúdo de arquivo codificado base64. O conteúdo do arquivo não pode ser buscar de volta porque não está armazenado.|
+|contentData|Cadeia de Caracteres|Conteúdo de arquivo codificado base64. O conteúdo do arquivo não pode ser buscar de volta porque não está armazenado.|
 |fileName|String|O nome do arquivo.|
 |category|[threatCategory](enums.md#threatcategory-values)|A categoria de ameaça. Os valores possíveis são: `spam`, `phishing`, `malware`.|
 |contentType|[threatAssessmentContentType](enums.md#threatassessmentcontenttype-values)|O tipo de conteúdo da avaliação de ameaças. Os valores possíveis são: `mail`, `url`, `file`.|
@@ -37,7 +37,7 @@ O arquivo pode ser um arquivo de texto ou documento do Word ou arquivo binário 
 |createdDateTime|DateTimeOffset|O tipo Timestamp representa informações de data e hora usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite UTC em 1 de janeiro de 2014 é `2014-01-01T00:00:00Z`.|
 |expectedAssessment|[threatExpectedAssessment](enums.md#threatexpectedassessment-values)|A avaliação esperada do enviador. Os valores possíveis são: `block` e `unblock`.|
 |id|Cadeia de caracteres|A ID da solicitação de avaliação de ameaça é um GUID (identificador global exclusivo).|
-|requestSource|[threatAssessmentRequestSource](enums.md#threatassessmentrequestsource-values)|A origem da solicitação de avaliação de ameaças. Os valores possíveis são: `user` e `administrator`.|
+|requestSource|[threatAssessmentRequestSource](enums.md#threatassessmentrequestsource-values)|A origem da solicitação de avaliação de ameaças. Os valores possíveis são: `administrator` .|
 |status|[threatAssessmentStatus](enums.md#threatassessmentstatus-values)|O status do processo de avaliação. Os valores possíveis são: `pending`, `completed`.|
 
 ## <a name="relationships"></a>Relações

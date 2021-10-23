@@ -2,15 +2,15 @@
 title: Tipo de recurso continuousAccessEvaluationPolicy
 description: A Avaliação de Acesso Contínuo (CAE) ajuda no gerenciamento de sessões de autenticação em tempo real. A CAE permite que os clientes manipularem o acesso a recursos suportando eventos de revogação instantânea.
 author: jerrysai
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: identity-and-sign-in
 doc_type: resourcePageType
-ms.openlocfilehash: f34fdacf75b991ff339f4b7cdd823290438e8fea
-ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
+ms.openlocfilehash: 299bafe33e4820504180fe64470461d2198b3c13
+ms.sourcegitcommit: 0eb843a6f61f384bc28c0cce1ccb74f64bdb1fa6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "50962634"
+ms.lasthandoff: 10/23/2021
+ms.locfileid: "60559054"
 ---
 # <a name="continuousaccessevaluationpolicy-resource-type"></a>Tipo de recurso continuousAccessEvaluationPolicy
 
@@ -30,12 +30,12 @@ A Avaliação de Acesso Contínuo (CAE) gerencia sessões de autenticação em t
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
 |description|Cadeia de caracteres|A avaliação de acesso contínuo bloqueia automaticamente o acesso a recursos e aplicativos quase em tempo real quando o acesso de um usuário é removido ou um endereço IP do cliente muda. Somente leitura.|
-|displayName|Cadeia de caracteres| O valor é sempre `Continuous Access Evaluation` . Somente leitura.|
-|grupos|Coleção de cadeias de caracteres|A coleção de identificadores de grupo no escopo para avaliação. Todos os grupos estão no escopo quando a coleção está vazia.|
+|displayName|Cadeia de caracteres| O valor é sempre `Continuous Access Evaluation` . Apenas leitura.|
+|grupos|Coleção de cadeias de caracteres|A coleção de identificadores de grupo no escopo para avaliação. Todos os grupos estão no escopo quando a coleção está vazia. Somente leitura.|
 |id|Cadeia de caracteres|Especifica o identificador de um [objeto continuousAccessEvaluationPolicy.](#continuousaccessevaluationpolicy-resource-type) Somente leitura.|
-|isEnabled|Booliano| `true` para indicar se a avaliação de acesso contínuo deve ser realizada; caso `false` contrário. |
-|usuários|Coleção de cadeias de caracteres|A coleção de identificadores de usuário no escopo para avaliação. Todos os usuários estão no escopo quando a coleção está vazia.|
-
+|isEnabled|Booliano| `true` para indicar se a avaliação de acesso contínuo deve ser realizada; caso `false` contrário. Somente leitura.|
+|usuários|Coleção de cadeias de caracteres|A coleção de identificadores de usuário no escopo para avaliação. Todos os usuários estão no escopo quando a coleção está vazia. Apenas leitura.|
+|migrar|Boolean| `true` para indicar que as configurações de política de avaliação de acesso contínuo devem ser ou foram migradas para a política de acesso condicional. |
 ## <a name="relationships"></a>Relações
 Nenhum
 
@@ -61,6 +61,7 @@ Veja a seguir uma representação JSON do recurso.
   ],
   "groups": [
     "String"
-  ]
+  ],
+  "migrate": "Boolean"
 }
 ```

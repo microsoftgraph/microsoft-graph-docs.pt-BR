@@ -5,12 +5,12 @@ author: abshar-teams
 doc_type: apiPageType
 ms.localizationpriority: medium
 ms.prod: microsoft-teams
-ms.openlocfilehash: 908acd8fc9d9494756bf9cb1f7ae36e336676e91
-ms.sourcegitcommit: 36bae3615df41876493b25da478e589d1974f97b
+ms.openlocfilehash: 39029f1425441908d787a4a80122f8059adc682c
+ms.sourcegitcommit: 0eb843a6f61f384bc28c0cce1ccb74f64bdb1fa6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "59996708"
+ms.lasthandoff: 10/23/2021
+ms.locfileid: "60561756"
 ---
 # <a name="conversationmember-add"></a>conversationMember: adicionar
 
@@ -226,6 +226,70 @@ Content-Type: application/json
                 "code": "NotFound",
                 "message": ""
             }
+        },
+        {
+            "@odata.type": "#microsoft.graph.aadUserConversationMemberResult",
+            "userId": "86503198-b81b-43fe-81ee-ad45b8848ac9",
+            "error": null
+        }
+    ]
+}
+```
+
+### <a name="example-3-add-members-in-bulk-to-a-team-using-user-principal-name"></a>Exemplo 3: Adicionar membros em massa a uma equipe usando o nome principal do usuário
+
+#### <a name="request"></a>Solicitação
+
+O exemplo a seguir mostra uma solicitação para adicionar vários membros a uma equipe usando o nome principal do usuário dos membros.
+
+<!-- {
+  "blockType": "request",
+  "name": "bulkaddmembers_team_upn"
+}-->
+
+```http
+POST https://graph.microsoft.com/v1.0/teams/e4183b04-c9a2-417c-bde4-70e3ee46a6dc/members/add
+Content-Type: application/json
+
+{
+    "values": [
+        {
+            "@odata.type": "microsoft.graph.aadUserConversationMember",
+            "roles":[],
+            "user@odata.bind": "https://graph.microsoft.com/v1.0/users('jacob@contoso.com')"
+        },
+        {
+            "@odata.type": "microsoft.graph.aadUserConversationMember",
+            "roles":["owner"],
+            "user@odata.bind": "https://graph.microsoft.com/v1.0/users('alex@contoso.com')"
+        }
+    ]
+}
+```
+
+
+#### <a name="response"></a>Resposta
+
+Esta é a resposta.
+
+> **Observação:** o objeto de resposta mostrado aqui pode ser encurtado para legibilidade. 
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "Collection(microsoft.graph.actionResultPart)"
+} -->
+
+```http
+HTTP/1.1 200 OK
+Content-Type: application/json
+
+{
+    "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#Collection(microsoft.graph.aadUserConversationMemberResult)",
+    "value": [
+        {
+            "@odata.type": "#microsoft.graph.aadUserConversationMemberResult",
+            "userId": "18a80140-b0fb-4489-b360-2f6efaf225a0",
+            "error": null
         },
         {
             "@odata.type": "#microsoft.graph.aadUserConversationMemberResult",

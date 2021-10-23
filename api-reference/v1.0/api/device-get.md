@@ -1,16 +1,16 @@
 ---
 title: Obter dispositivo
 description: Obtém as propriedades e os relacionamentos de um objeto device.
-author: spunukol
+author: sandeo-MSFT
 ms.localizationpriority: medium
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: 1d05a288ddaefc4b2e0ed8496586dd63cbc786f3
-ms.sourcegitcommit: f4999aa6fc05f845027db01aa489f7086f9850e1
+ms.openlocfilehash: 9c5f578906c9ee073dbeda154b766eea57f73303
+ms.sourcegitcommit: 0eb843a6f61f384bc28c0cce1ccb74f64bdb1fa6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/13/2021
-ms.locfileid: "60289018"
+ms.lasthandoff: 10/23/2021
+ms.locfileid: "60560076"
 ---
 # <a name="get-device"></a>Obter dispositivo
 
@@ -49,8 +49,12 @@ Não forneça um corpo de solicitação para esse método.
 ## <a name="response"></a>Resposta
 
 Se bem-sucedido, este método retorna um código de resposta `200 OK` e um objeto [device](../resources/device.md) no corpo da resposta.
-## <a name="example"></a>Exemplo
-### <a name="request"></a>Solicitação
+## <a name="examples"></a>Exemplos
+
+### <a name="example-1-get-a-device"></a>Exemplo 1: Obter um dispositivo
+
+#### <a name="request"></a>Solicitação
+
 Este é um exemplo de solicitação.
 
 # <a name="http"></a>[HTTP](#tab/http)
@@ -79,7 +83,7 @@ GET https://graph.microsoft.com/v1.0/devices/000005c3-b7a6-4c61-89fc-80bf5ccfc36
 
 ---
 
-### <a name="response"></a>Resposta
+#### <a name="response"></a>Resposta
 Este é um exemplo de resposta. 
 >**Observação:** o objeto de resposta mostrado aqui pode ser encurtado para legibilidade.
 <!-- {
@@ -100,6 +104,56 @@ Content-type: application/json
   "id": "000005c3-b7a6-4c61-89fc-80bf5ccfc366",
   "operatingSystem":"Windows",
   "operatingSystemVersion":"10.0.19043.1165"
+}
+```
+
+### <a name="example-2-get-a-device-and-return-only-its-id-and-extensionattributes-properties"></a>Exemplo 2: Obter um dispositivo e retornar somente suas propriedades id e extensionAttributes
+
+#### <a name="request"></a>Solicitação
+
+A solicitação a seguir recupera **a propriedade id** e **extensionAttributes** de um dispositivo.
+
+<!-- {
+  "blockType": "request",
+  "name": "get_device_select"
+}-->
+```msgraph-interactive
+GET https://graph.microsoft.com/beta/devices/6a59ea83-02bd-468f-a40b-f2c3d1821983?$select=id,extensionAttributes
+```
+
+#### <a name="response"></a>Resposta
+
+Este é um exemplo de resposta.
+
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.device"
+} -->
+```http
+HTTP/1.1 200 OK
+Content-type: application/json
+
+{
+    "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#devices(id,extensionAttributes)/$entity",
+    "id": "6a59ea83-02bd-468f-a40b-f2c3d1821983",
+    "extensionAttributes": {
+        "extensionAttribute1": "BYOD-Device",
+        "extensionAttribute2": null,
+        "extensionAttribute3": null,
+        "extensionAttribute4": null,
+        "extensionAttribute5": null,
+        "extensionAttribute6": null,
+        "extensionAttribute7": null,
+        "extensionAttribute8": null,
+        "extensionAttribute9": null,
+        "extensionAttribute10": null,
+        "extensionAttribute11": null,
+        "extensionAttribute12": null,
+        "extensionAttribute13": null,
+        "extensionAttribute14": null,
+        "extensionAttribute15": null
+    }
 }
 ```
 

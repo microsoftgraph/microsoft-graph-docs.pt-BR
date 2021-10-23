@@ -1,16 +1,16 @@
 ---
-title: Listar cloudPcOnPremisesConnections
+title: Listar onPremisesConnections
 description: Obter uma lista dos objetos cloudPcOnPremisesConnection e suas propriedades.
 author: AshleyYangSZ
 ms.localizationpriority: medium
 ms.prod: cloud-pc
 doc_type: apiPageType
-ms.openlocfilehash: 905904a1b98a6e6f48bdddd9aa637312f3c247ac
-ms.sourcegitcommit: 08e9b0bac39c1b1d2c8a79539d24aaa93364baf2
+ms.openlocfilehash: 7af723bc5d672113a72afe4acd7d217cb37e3817
+ms.sourcegitcommit: 0eb843a6f61f384bc28c0cce1ccb74f64bdb1fa6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/24/2021
-ms.locfileid: "59764049"
+ms.lasthandoff: 10/23/2021
+ms.locfileid: "60560339"
 ---
 # <a name="list-onpremisesconnections"></a>Listar onPremisesConnections
 
@@ -28,7 +28,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |:---|:---|
 |Delegado (conta corporativa ou de estudante)|CloudPC.Read.All, CloudPC.ReadWrite.All|
 |Delegado (conta pessoal da Microsoft)|Sem suporte.|
-|Aplicativo|CloudPC.Read.All, CloudPC.ReadWrite.All|
+|Application|CloudPC.Read.All, CloudPC.ReadWrite.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
 

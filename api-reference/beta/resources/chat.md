@@ -2,15 +2,15 @@
 title: tipo de recurso de chat
 description: Um chat é uma coleção de chatMessages entre um ou mais participantes.
 author: RamjotSingh
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: microsoft-teams
 doc_type: resourcePageType
-ms.openlocfilehash: 50b6d517775e4ef956211882fd58baefc7f5b78d
-ms.sourcegitcommit: 0adbbcbc65b6acab80e9195f13321055994f56be
+ms.openlocfilehash: 7d572051d0889add7f68cc868d410bf3dc702d65
+ms.sourcegitcommit: 0eb843a6f61f384bc28c0cce1ccb74f64bdb1fa6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/01/2021
-ms.locfileid: "53236170"
+ms.lasthandoff: 10/23/2021
+ms.locfileid: "60560811"
 ---
 # <a name="chat-resource-type"></a>tipo de recurso de chat
 
@@ -44,15 +44,15 @@ Um chat é uma coleção [de chatMessages](chatmessage.md) entre um ou mais part
 |[Listar aplicativos no chat](../api/chat-list-installedapps.md) |Coleção [teamsAppInstallation](teamsappinstallation.md) | Listar aplicativos instalados em um chat (e reunião associada).|
 |[Obter aplicativo no chat](../api/chat-get-installedapps.md) | [teamsAppInstallation](teamsappinstallation.md) | Obter um aplicativo específico instalado em um chat (e reunião associada).|
 |[Adicionar aplicativo no chat](../api/chat-post-installedapps.md) | | Adicionar (instalar) um aplicativo em um chat (e reunião associada).|
-|[Atualizar aplicativo no chat](../api/chat-teamsappinstallation-upgrade.md) | Nenhuma | Atualizar para a versão mais recente do aplicativo instalado no chat (e reunião associada).|
-|[Desinstalar aplicativo do chat](../api/chat-delete-installedapps.md) | Nenhuma | Remover (desinstalar) aplicativo de um chat (e reunião associada).|
+|[Atualizar aplicativo no chat](../api/chat-teamsappinstallation-upgrade.md) | Nenhum | Atualizar para a versão mais recente do aplicativo instalado no chat (e reunião associada).|
+|[Desinstalar aplicativo do chat](../api/chat-delete-installedapps.md) | Nenhum | Remover (desinstalar) aplicativo de um chat (e reunião associada).|
 |[Listar as concessões de permissões](../api/chat-list-permissiongrants.md) | Coleção [resourceSpecificPermissionGrant](resourcespecificpermissiongrant.md) | Listar permissões concedidas aos aplicativos neste chat.|
 | **Guias** |||
 |[Listar guias no chat](../api/chat-list-tabs.md) | [teamsTab](teamstab.md) | Listar guias fixadas em um chat (e reunião associada).|
 |[Obter guia no chat](../api/chat-get-tabs.md) | [teamsTab](teamstab.md) | Obter uma guia específica fixada em um chat (e reunião associada).|
 |[Adicionar guia ao chat](../api/chat-post-tabs.md) | [teamsTab](teamstab.md) | Adicione (pin) uma guia a um chat (e reunião associada).|
 |[Guia Atualizar no chat](../api/chat-patch-tabs.md) | [teamsTab](teamstab.md) | Atualize as propriedades de uma guia em um chat (e reunião associada).|
-|[Remover guia do chat](../api/chat-delete-tabs.md) | Nenhuma | Remover (desempinar) uma guia de um chat (e reunião associada).|
+|[Remover guia do chat](../api/chat-delete-tabs.md) | Nenhum | Remover (desempinar) uma guia de um chat (e reunião associada).|
 | **Operations** |||
 |[Listar operações no chat](../api/chat-list-operations.md) | Coleção [teamsAsyncOperation](teamsAsyncOperation.md) | Obter a lista de operações assíncronas que executaram ou estão sendo executados no chat.|
 |[Obter operação no chat](../api/teamsasyncoperation-get.md#example-get-operation-on-chat) | [teamsAsyncOperation](teamsAsyncOperation.md) | Obter uma única operação assíncrona que foi executado ou está sendo executado no chat.|
@@ -63,22 +63,25 @@ Um chat é uma coleção [de chatMessages](chatmessage.md) entre um ou mais part
 
 | Propriedade   | Tipo |Descrição|
 |:---------------|:--------|:----------|
-| id| String| O identificador exclusivo do chat. Só leitura.|
+| chatType| [chatType](../resources/chat.md#chattype-values) | Especifica o tipo de chat. Os valores possíveis são: `group`, `oneOnOne`, `meeting`, `unknownFutureValue`.|
+| createdDateTime| dateTimeOffset|  Data e hora em que o chat foi criado. Somente leitura.|
+| id| Cadeia de caracteres| O identificador exclusivo do chat. Apenas leitura.|
+| lastUpdatedDateTime| dateTimeOffset|  Data e hora em que o chat foi renomeado ou a lista de membros foi alterada pela última vez. Apenas leitura.|
+| onlineMeetingInfo | [teamworkOnlineMeetingInfo](../resources/teamworkonlinemeetinginfo.md) | Representa detalhes sobre uma reunião online. Se o chat não estiver associado a uma reunião online, a propriedade será vazia. Somente leitura.|
+| tenantId| String | O identificador do locatário no qual o chat foi criado. Apenas leitura.|
 | topic| String|  (Opcional) Assunto ou tópico para o chat. Disponível apenas para chats em grupo.|
-| createdDateTime| dateTimeOffset|  Data e hora em que o chat foi criado. Só leitura.|
-| lastUpdatedDateTime| dateTimeOffset|  Data e hora em que o chat foi renomeado ou a lista de membros foi alterada pela última vez. Só leitura.|
-| chatType| [chatType](../resources/chat.md#chattype-values) | Especifica o tipo de chat. Os valores possíveis são: `group` e `oneOnOne` `meeting` .|
 | mirante|[chatViewpoint](../resources/chatviewpoint.md)|Representa informações específicas do chamador sobre o chat, como data e hora de leitura da última mensagem. Essa propriedade é preenchida somente quando a solicitação é feita em um contexto delegado.|
 | webUrl| String | Um hiperlink que irá para o chat no Microsoft Teams. Essa URL deve ser tratada como um blob opaco e não analisado. Somente leitura.|
+
 
 ### <a name="chattype-values"></a>valores chatType 
 
 | Membro             | Valor | Descrição               |
 | :----------------- | :---- | :------------------------ |
 |oneOnOne            | 0     | Indica que o chat é um chat 1:1. O tamanho da lista é fixo para esse tipo de chat; os membros não podem ser removidos/adicionados.|
-|group               | 1      | Indica que o chat é um chat em grupo. O tamanho da lista (de pelo menos duas pessoas) pode ser atualizado para esse tipo de chat. Os membros podem ser removidos/adicionados posteriormente.|
-|meeting             | 2      | Indica que o chat está associado a uma reunião online. Esse tipo de chat só é criado como parte da criação de uma reunião online.|
-|unknownFutureValue  | 3      | Valor sentinel para indicar valores futuros. |
+|group               | 1     | Indica que o chat é um chat em grupo. O tamanho da lista (de pelo menos duas pessoas) pode ser atualizado para esse tipo de chat. Os membros podem ser removidos/adicionados posteriormente.|
+|meeting             | 2     | Indica que o chat está associado a uma reunião online. Esse tipo de chat só é criado como parte da criação de uma reunião online.|
+|unknownFutureValue  | 3     | Valor de sentinela de enumeração evolvável. Não usar. |
 
 ## <a name="relationships"></a>Relações
 
@@ -107,11 +110,15 @@ Veja a seguir uma representação JSON do recurso.
   "topic": "string",
   "createdDateTime": "dateTimeOffset",
   "lastUpdatedDateTime": "dateTimeOffset",
-  "chatType": "String",
-  "chatViewpoint": {
+  "chatType": "string",
+  "webUrl": "string",
+  "tenantId": "string",
+  "viewpoint": {
     "@odata.type": "microsoft.graph.chatViewpoint"
   },
-  "webUrl": "string"
+  "onlineMeetingInfo": {
+    "@odata.type": "microsoft.graph.teamworkOnlineMeetingInfo"
+  }
 }
 ```
 

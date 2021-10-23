@@ -5,12 +5,12 @@ author: mkhribech
 ms.localizationpriority: medium
 ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: a56ddcde72cd1a2a1af54557f8f60f241e90f3b3
-ms.sourcegitcommit: 36bae3615df41876493b25da478e589d1974f97b
+ms.openlocfilehash: 7d3f3d178cb7e4bf17db8343fd086af9a7ed100a
+ms.sourcegitcommit: 0eb843a6f61f384bc28c0cce1ccb74f64bdb1fa6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "59996407"
+ms.lasthandoff: 10/23/2021
+ms.locfileid: "60561595"
 ---
 # <a name="get-onlinemeeting"></a>Obter onlineMeeting
 
@@ -22,12 +22,12 @@ Recupere as propriedades e as relações de um [objeto onlineMeeting.](../resour
 
 Por exemplo, você pode:
 
-- Obter detalhes de um onlineMeeting usando [VideoTeleconferenceId](#example-1-retrieve-an-online-meeting-by-videoteleconferenceid), [ID](#example-2-retrieve-an-online-meeting-by-meeting-id)da reunião ou [JoinWebURL](#example-3-retrieve-an-online-meeting-by-joinweburl).
-- Use o caminho para obter o relatório do participante de um evento ao vivo na forma de um link de download, conforme `/attendeeReport` mostrado no exemplo [4](#example-4-fetch-attendee-report-of-a-live-event).
-- Use os caminhos e para obter as gravações de um evento ao vivo na forma de um link de download, conforme `/recording` mostrado no exemplo `/alternativeRecording` [5](#example-5-fetch-recording-of-a-live-event).
+- Obter detalhes de um onlineMeeting usando [videoTeleconferenceId](#example-1-retrieve-an-online-meeting-by-videoteleconferenceid), [ID](#example-2-retrieve-an-online-meeting-by-meeting-id)da reunião ou [joinWebURL](#example-3-retrieve-an-online-meeting-by-joinweburl).
+- Use o caminho para obter o relatório do participante de um evento Microsoft Teams ao vivo na forma de um link de download, conforme mostrado `/attendeeReport` no [exemplo 4](#example-4-fetch-attendee-report-of-a-teams-live-event) [](/microsoftteams/teams-live-events/what-are-teams-live-events) .
+- Use os caminhos e para obter as gravações de um evento Teams ao vivo na forma de um link de download, conforme mostrado `/recording` `/alternativeRecording` no exemplo [5](#example-5-fetch-recording-of-a-teams-live-event). [](/microsoftteams/teams-live-events/what-are-teams-live-events)
 - Use o `/meetingAttendanceReport` caminho para obter o relatório de participação de uma reunião agendada, conforme mostrado no [exemplo 6](#example-6-fetch-attendance-report-of-an-online-meeting).
 
-O relatório de participação da reunião, o relatório do participante do evento ao vivo e as gravações de eventos ao vivo são artefatos de reunião online. Para obter detalhes, consulte [Artefatos e permissões de](/graph/cloud-communications-online-meeting-artifacts)reunião online.
+Relatório de participação da reunião, Teams ao vivo do participante do evento e Teams ao vivo são artefatos de reunião online. Para obter detalhes, consulte [Artefatos e permissões de](/graph/cloud-communications-online-meeting-artifacts)reunião online.
 
 ## <a name="permissions"></a>Permissões
 
@@ -35,9 +35,9 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 | Tipo de permissão                        | Permissões (da com menos para a com mais privilégios)                                            |
 |:---------------------------------------|:---------------------------------------------------------------------------------------|
-| Delegado (conta corporativa ou de estudante)     | OnlineMeetingArtifact.Read.ALl, OnlineMeetings.Read, OnlineMeetings.ReadWrite          |
+| Delegado (conta corporativa ou de estudante)     | OnlineMeetingArtifact.Read.All, OnlineMeetings.Read, OnlineMeetings.ReadWrite          |
 | Delegado (conta pessoal da Microsoft) | Sem suporte.                                                                         |
-| Aplicativo                            | OnlineMeetingArtifact.Read.All, OnlineMeetings.Read.All, OnlineMeetings.ReadWrite.All  |
+| Application                            | OnlineMeetingArtifact.Read.All, OnlineMeetings.Read.All, OnlineMeetings.ReadWrite.All  |
 
 Para usar a permissão do aplicativo para [](/graph/cloud-communication-online-meeting-application-access-policy) essa API, os administradores de locatários devem criar uma política de acesso a aplicativos e concedi-la a um usuário para autorizar o aplicativo configurado na política a buscar reuniões online e/ou artefatos de reunião online em nome desse usuário (com a ID do usuário especificada no caminho da solicitação).
 
@@ -75,7 +75,7 @@ GET /me/onlineMeetings/{meetingId}/meetingAttendanceReport
 GET /users/{userId}/onlineMeetings/{meetingId}/meetingAttendanceReport
 ```
 
-Para obter o relatório do participante de um evento ao vivo com permissão delegada ( `/me` ) e de aplicativo ( ) `/users/{userId}` :
+Para obter o relatório do participante de um evento [Teams ao](/microsoftteams/teams-live-events/what-are-teams-live-events) vivo com permissão delegada ( ) e app ( `/me` ) `/users/{userId}` :
 <!-- { "blockType": "ignored" }-->
 
 ```http
@@ -83,7 +83,7 @@ GET /me/onlineMeetings/{meetingId}/attendeeReport
 GET /users/{userId}/onlineMeetings/{meetingId}/attendeeReport
 ```
 
-Para obter as gravações de um evento ao vivo com permissão delegada ( `/me` ) e de aplicativo ( ) `/users/{userId}` :
+Para obter as gravações de um evento [Teams ao vivo](/microsoftteams/teams-live-events/what-are-teams-live-events) com permissão delegada ( ) e app ( ) `/me` `/users/{userId}` :
 <!-- { "blockType": "ignored" }-->
 
 ```http
@@ -118,13 +118,14 @@ Não forneça um corpo de solicitação para esse método.
 
 Se tiver êxito, este método retornará um código de resposta `200 OK`. A resposta também inclui um dos seguintes:
 
-- Se você buscar uma reunião online por ID de reunião, **videoTeleconferenceId** ou **joinWebUrl**, este método retornará um [objeto onlineMeeting](../resources/onlinemeeting.md) no corpo da resposta.
+- Se você buscar uma reunião online por ID de reunião, este método retornará um [objeto onlineMeeting](../resources/onlinemeeting.md) no corpo da resposta.
+- Se você buscar uma reunião online por **videoTeleconferenceId** ou **joinWebUrl,** este método retornará uma coleção que contém apenas um [objeto onlineMeeting](../resources/onlinemeeting.md) no corpo da resposta.
 - Se você buscar o relatório de participação de uma reunião online, este método retornará um [objeto meetingAttendanceReport](../resources/meetingAttendanceReport.md) no corpo da resposta.
-- Se você buscar o relatório do participante ou a gravação de um evento ao vivo, este método retornará um header que indica o URI para o relatório ou gravação do `Location` participante, respectivamente.
+- Se você buscar o relatório do participante ou a gravação de um evento Microsoft Teams **Live,** este método retornará um header que indica o URI para o relatório ou gravação do `Location` participante, respectivamente.
 
 ## <a name="examples"></a>Exemplos
 
-### <a name="example-1-retrieve-an-online-meeting-by-videoteleconferenceid"></a>Exemplo 1: Recuperar uma reunião online por VideoTeleconferenceId
+### <a name="example-1-retrieve-an-online-meeting-by-videoteleconferenceid"></a>Exemplo 1: Recuperar uma reunião online por videoTeleconferenceId
 
 #### <a name="request"></a>Solicitação
 
@@ -300,7 +301,7 @@ GET https://graph.microsoft.com/beta/users/dc17674c-81d9-4adb-bfb2-8f6a442e4622/
 }
 ```
 
-### <a name="example-3-retrieve-an-online-meeting-by-joinweburl"></a>Exemplo 3: Recuperar uma reunião online por JoinWebUrl
+### <a name="example-3-retrieve-an-online-meeting-by-joinweburl"></a>Exemplo 3: recuperar uma reunião online ao ingressar noWebUrl
 Você pode recuperar informações de reunião por meio do JoinWebUrl usando um token de usuário ou aplicativo. Essa opção está disponível para dar suporte a casos de uso em que a ID da reunião não é conhecida, mas o JoinWebUrl é, como quando um usuário cria uma reunião (por exemplo, no cliente Microsoft Teams) e um aplicativo separado precisa recuperar detalhes da reunião como uma ação de acompanhamento.
 
 #### <a name="request"></a>Solicitação
@@ -363,7 +364,7 @@ GET https://graph.microsoft.com/beta/users/dc17674c-81d9-4adb-bfb2-8f6a442e4622/
 }
 ```
 
-### <a name="example-4-fetch-attendee-report-of-a-live-event"></a>Exemplo 4: Buscar relatório do participante de um evento ao vivo
+### <a name="example-4-fetch-attendee-report-of-a-teams-live-event"></a>Exemplo 4: Buscar relatório do participante de um evento Teams ao vivo
 
 O exemplo a seguir mostra uma solicitação para baixar um relatório do participante.
 
@@ -419,7 +420,7 @@ HTTP/1.1 302 Found
 Location: https://01-a-noam.dog.attend.teams.microsoft.com/broadcast/909c6581-5130-43e9-88f3-fcb3582cde37/dc17674c-81d9-4adb-bfb2-8f6a442e4622/19%3Ameeting_ZWE0YzQwMzItYjEyNi00NjJjLWE4MjYtOTUxYjE1NmFjYWIw%40thread.v2/0/resource/attendeeReport
 ```
 
-### <a name="example-5-fetch-recording-of-a-live-event"></a>Exemplo 5: buscar gravação de um evento ao vivo
+### <a name="example-5-fetch-recording-of-a-teams-live-event"></a>Exemplo 5: buscar gravação de um evento Teams ao vivo
 
 O exemplo a seguir mostra uma solicitação para baixar uma gravação.
 

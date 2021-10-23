@@ -5,12 +5,12 @@ author: isabelleatmsft
 ms.localizationpriority: medium
 ms.prod: governance
 doc_type: conceptualPageType
-ms.openlocfilehash: d261fd40629c75c40bf0c93fd42ac8221fdb09e1
-ms.sourcegitcommit: 08e9b0bac39c1b1d2c8a79539d24aaa93364baf2
+ms.openlocfilehash: 3600d25e44e746f29c0a89950d1649ab5bef1a85
+ms.sourcegitcommit: 0eb843a6f61f384bc28c0cce1ccb74f64bdb1fa6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/24/2021
-ms.locfileid: "59766723"
+ms.lasthandoff: 10/23/2021
+ms.locfileid: "60560734"
 ---
 # <a name="configure-the-scope-of-your-access-review-using-the-microsoft-graph-api"></a>Configurar o escopo da sua revisão de acesso usando a API Graph Microsoft
 
@@ -51,7 +51,7 @@ Para revisar *somente usuários inativos* atribuídos ao grupo:
 }
 ```
 
-### <a name="example-2-review-guest-users-assigned-to-a-group"></a>Exemplo 2: Revisar usuários convidados atribuídos a um grupo
+### <a name="example-2-review-all-guest-users-assigned-to-a-group"></a>Exemplo 2: Revisar todos os usuários convidados atribuídos a um grupo
 
 ```http
 "scope": {
@@ -60,8 +60,22 @@ Para revisar *somente usuários inativos* atribuídos ao grupo:
     "queryType": "MicrosoftGraph"
 }
 ```
+### <a name="example-3-review-all-users-assigned-to-all-microsoft-365-groups"></a>Exemplo 3: Revise todos os usuários atribuídos a todos os grupos Microsoft 365
 
-### <a name="example-3-review-guest-users-assigned-to-all-microsoft-365-groups"></a>Exemplo 3: Revisar usuários convidados atribuídos a todos os Microsoft 365 grupos
+```http
+"instanceEnumerationScope": {
+    "query": "/groups?$filter=(groupTypes/any(c:c eq 'Unified'))",
+    "queryType": "MicrosoftGraph"
+},
+"scope": {
+    "@odata.type": "#microsoft.graph.accessReviewQueryScope",
+    "query": "./members/microsoft.graph.user",
+    "queryType": "MicrosoftGraph"
+}
+```
+Como essa revisão é aplicada em todos os grupos Microsoft 365, configure **a instânciaEnumerationScope** para especificar os grupos Microsoft 365 a revisar. Observe que grupos dinâmicos e grupos atribuíveis a funções não estão incluídos nesta revisão.
+
+### <a name="example-4-review-all-guest-users-assigned-to-all-microsoft-365-groups"></a>Exemplo 4: Revise todos os usuários convidados atribuídos a todos os grupos Microsoft 365 convidados
 
 ```http
 "instanceEnumerationScope": {
@@ -75,9 +89,9 @@ Para revisar *somente usuários inativos* atribuídos ao grupo:
 }
 ```
 
-Como essa revisão é aplicada em todos os grupos Microsoft 365, configure **a instânciaEnumerationScope** para especificar os grupos Microsoft 365 a revisar.
+Como essa revisão é aplicada em todos os grupos Microsoft 365, configure **a instânciaEnumerationScope** para especificar os grupos Microsoft 365 a revisar. Observe que grupos dinâmicos e grupos atribuíveis a funções não estão incluídos nesta revisão.
     
-### <a name="example-4-review-of-all-guest-users-assigned-to-all-teams"></a>Exemplo 4: Revisão de todos os usuários convidados atribuídos a todos os Teams
+### <a name="example-5-review-all-guest-users-assigned-to-all-teams"></a>Exemplo 5: Revise todos os usuários convidados atribuídos a todos os Teams
 
 ```http
 "instanceEnumerationScope": {
@@ -91,11 +105,15 @@ Como essa revisão é aplicada em todos os grupos Microsoft 365, configure **a i
 }
 ```
     
-Como essa revisão é aplicada Teams todos os grupos Microsoft 365 habilitados para Microsoft 365, configure **a instânciaEnumerationScope** para especificar os grupos Microsoft 365 habilitados para Teams para revisão.
+Como essa revisão é aplicada Teams todos os grupos Microsoft 365 habilitados para Microsoft 365, configure **a instânciaEnumerationScope** para especificar os grupos Microsoft 365 habilitados para Teams para revisão.  Observe que grupos dinâmicos e grupos atribuíveis a funções não estão incluídos nesta revisão.
 
-### <a name="example-5-review-access-of-all-inactive-guest-users-to-all-groups"></a>Exemplo 5: revisar o acesso de todos os usuários convidados inativos a todos os grupos
+### <a name="example-6-review-all-inactive-guest-users-assigned-to-all-microsoft-365-groups"></a>Exemplo 6: Revise todos os usuários convidados inativos atribuídos a todos os Microsoft 365 grupos
 
 ```http
+"instanceEnumerationScope": {
+    "query": "/groups?$filter=(groupTypes/any(c:c eq 'Unified'))",
+    "queryType": "MicrosoftGraph"
+},
 "scope": {
     "@odata.type": "#microsoft.graph.accessReviewInactiveUsersQueryScope",
     "query": "./members/microsoft.graph.user/?$filter=(userType eq 'Guest')",
@@ -104,9 +122,9 @@ Como essa revisão é aplicada Teams todos os grupos Microsoft 365 habilitados p
 }
 ```
 
-Como essa revisão é aplicada a usuários inativos, use o **recurso accessReviewInactiveUsersQueryScope** e especifique a propriedade **@odata.type com** o valor `#microsoft.graph.accessReviewInactiveUsersQueryScope` .
+Como essa revisão é aplicada a usuários inativos, use o **recurso accessReviewInactiveUsersQueryScope** e especifique a propriedade **@odata.type com** o valor `#microsoft.graph.accessReviewInactiveUsersQueryScope` . Observe que grupos dinâmicos e grupos atribuíveis a funções não estão incluídos nesta revisão.
 
-### <a name="example-6-review-of-all-inactive-guest-users-assigned-to-all-teams"></a>Exemplo 6: Revisão de todos os usuários convidados inativos atribuídos a todas as equipes
+### <a name="example-7-review-all-inactive-guest-users-assigned-to-all-teams"></a>Exemplo 7: Revise todos os usuários convidados inativos atribuídos a todos os Teams
 
 ```http
 "instanceEnumerationScope": {
@@ -121,9 +139,9 @@ Como essa revisão é aplicada a usuários inativos, use o **recurso accessRevie
 }
 ```
 
-Como essa revisão é aplicada a todas as equipes, configure a **propriedade instanceEnumerationScope** para especificar todas as equipes.
+Como essa revisão é aplicada a todas as equipes, configure a **propriedade instanceEnumerationScope** para especificar todas as equipes. Observe que grupos dinâmicos e grupos atribuíveis a funções não estão incluídos nesta revisão.
 
-### <a name="example-7-review-of-entitlement-management-access-package-assignment"></a>Exemplo 7: Revisão da atribuição do pacote de acesso do Gerenciamento de Direitos
+### <a name="example-8-review-all-assignemnt-to-entitlement-management-access-packages"></a>Exemplo 8: Revisar todos os assignemnt para pacotes de acesso do Gerenciamento de Direitos
 
 ```http
 "scope": {
@@ -133,7 +151,7 @@ Como essa revisão é aplicada a todas as equipes, configure a **propriedade ins
 }
 ```
 
-### <a name="example-8-review-of-all-service-principals-assigned-to-a-privileged-role"></a>Exemplo 8: Revisão de todas as entidades de serviço atribuídas a uma função privilegiada
+### <a name="example-9-review-all-service-principals-assigned-to-a-privileged-role"></a>Exemplo 9: Revisar todas as entidades de serviço atribuídas a uma função privilegiada
 
 ```http
 "scope": {
@@ -143,7 +161,7 @@ Como essa revisão é aplicada a todas as equipes, configure a **propriedade ins
 }
 ```
     
-### <a name="example-9-review-of-all-users-assigned-to-a-privileged-role-all-active-and-eligible-assignments-included"></a>Exemplo 9: Revisão de todos os usuários atribuídos a uma função privilegiada (todas as atribuições ativas e qualificadas incluídas)
+### <a name="example-10-review-all-users-assigned-to-a-privileged-role-all-active-and-eligible-assignments-included"></a>Exemplo 10: Revise todos os usuários atribuídos a uma função privilegiada (todas as atribuições ativas e qualificadas incluídas)
 
 ```http
 "scope": {
@@ -153,7 +171,7 @@ Como essa revisão é aplicada a todas as equipes, configure a **propriedade ins
 }
 ```
     
-### <a name="example-10-review-of-all-users-with-eligible-assignment-to-a-privileged-role"></a>Exemplo 10: Revisão de todos os usuários com atribuição qualificada para uma função privilegiada
+### <a name="example-11-review-all-users-with-eligible-assignment-to-a-privileged-role"></a>Exemplo 11: Revisar todos os usuários com atribuição qualificada para uma função privilegiada
 
 ```http
 "scope": {
@@ -163,7 +181,7 @@ Como essa revisão é aplicada a todas as equipes, configure a **propriedade ins
 }
 ```
     
-### <a name="example-11-review-of-all-users-with-active-assignment-to-a-privileged-role"></a>Exemplo 11: Revisão de todos os usuários com atribuição ativa para uma função privilegiada
+### <a name="example-12-review-all-users-with-active-assignment-to-a-privileged-role"></a>Exemplo 12: Revisar todos os usuários com atribuição ativa para uma função privilegiada
 
 ```http
 "scope": {
@@ -177,7 +195,7 @@ Como essa revisão é aplicada a todas as equipes, configure a **propriedade ins
 
 O **principalResourceMembershipsScope** expõe as propriedades **principalScopes** e **resourceScopes** para dar suporte a opções de configuração mais personalizadas para o escopo **do accessReviewScheduleDefinition**. Isso inclui a revisão do acesso a várias entidades ou grupos de entidades para vários recursos.
 
-### <a name="example-12-review-access-of-all-inactive-guest-users-to-all-groups"></a>Exemplo 12: Revisar o acesso de todos os usuários convidados inativos a todos os grupos
+### <a name="example-13-review-all-inactive-guest-users-assigned-to-all-groups"></a>Exemplo 13: Revise todos os usuários convidados inativos atribuídos a todos os grupos
 
 ```http
 "scope": {
@@ -202,7 +220,7 @@ O **principalResourceMembershipsScope** expõe as propriedades **principalScopes
 
 Neste exemplo, as entidades principais são todos usuários convidados inativos com o período de sua inatividade calculado como 30 dias a partir da data de início da instância de revisão de acesso.
 
-### <a name="example-13-review-access-of-all-guest-users-to-a-directory-role"></a>Exemplo 13: Revisar o acesso de todos os usuários convidados a uma função de diretório
+### <a name="example-14-review-all-guest-users-assigned-to-a-directory-role"></a>Exemplo 14: Revisar todos os usuários convidados atribuídos a uma função de diretório
 
 ```http
 "scope": {
