@@ -5,12 +5,12 @@ author: anandjo
 ms.localizationpriority: high
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 61f72ed154c2e8f82533efd53b77d50c0f04958a
-ms.sourcegitcommit: f4999aa6fc05f845027db01aa489f7086f9850e1
+ms.openlocfilehash: 1324d57e1f257f26bfcd0f978cb12f3500dd62f2
+ms.sourcegitcommit: 0eb843a6f61f384bc28c0cce1ccb74f64bdb1fa6
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/13/2021
-ms.locfileid: "60289914"
+ms.lasthandoff: 10/23/2021
+ms.locfileid: "60561602"
 ---
 # <a name="create-team"></a>Criar equipe
 
@@ -633,6 +633,52 @@ Os seguintes são motivos comuns para esta resposta:
 
 * **createdDateTime** é definido no futuro.
 * **createdDateTime** está especificado corretamente, mas o atributo da instância **teamCreationMode** está ausente ou definido com um valor inválido.
+
+### <a name="example-9-application-permissions-using-user-principal-name"></a>Exemplo 9: permissões de aplicativo usando o nome principal do usuário
+
+Aqui está um exemplo de uma solicitação mínima usando permissões de aplicativo. Ao omitir outras propriedades, o cliente está implicitamente obtendo padrões do modelo predefinido representado por `template`. Ao emitir uma solicitação com permissões de aplicativo, um [usuário](../resources/user.md) deve ser especificado no conjunto `members`.
+
+#### <a name="request"></a>Solicitação
+
+<!-- {
+  "blockType": "request",
+  "name": "create_team_post_upn"
+}-->
+
+```http
+POST https://graph.microsoft.com/v1.0/teams
+Content-Type: application/json
+
+{
+   "template@odata.bind":"https://graph.microsoft.com/v1.0/teamsTemplates('standard')",
+   "displayName":"My Sample Team",
+   "description":"My Sample Team’s Description",
+   "members":[
+      {
+         "@odata.type":"#microsoft.graph.aadUserConversationMember",
+         "roles":[
+            "owner"
+         ],
+         "user@odata.bind":"https://graph.microsoft.com/v1.0/users('jacob@contoso.com')"
+      }
+   ]
+}
+```
+
+
+#### <a name="response"></a>Resposta
+<!-- {
+  "blockType": "response",
+  "name": "create_team_post_upn"
+}-->
+
+```http
+HTTP/1.1 202 Accepted
+Content-Type: application/json
+Location: /teams('dbd8de4f-5d47-48da-87f1-594bed003375')/operations('3a6fdce1-c261-48bc-89de-1cfef658c0d5')
+Content-Location: /teams('dbd8de4f-5d47-48da-87f1-594bed003375')
+Content-Length: 0
+```
 
 ## <a name="see-also"></a>Confira também
 
