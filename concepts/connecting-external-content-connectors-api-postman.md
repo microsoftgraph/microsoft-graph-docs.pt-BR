@@ -5,12 +5,12 @@ author: mecampos
 ms.localizationpriority: high
 doc_type: conceptualPageType
 ms.prod: search
-ms.openlocfilehash: c86c75de4ebf966e1fec02184af35aa4c12d4da7
-ms.sourcegitcommit: 36bae3615df41876493b25da478e589d1974f97b
+ms.openlocfilehash: 2049332c4eb5f82cf44d3cde3fad71f02bd9049a
+ms.sourcegitcommit: 0eb843a6f61f384bc28c0cce1ccb74f64bdb1fa6
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "59996011"
+ms.lasthandoff: 10/23/2021
+ms.locfileid: "60561462"
 ---
 # <a name="use-postman-with-the-microsoft-graph-connectors-api"></a>Usar o Postman com a API de conectores do Microsoft Graph
 
@@ -270,7 +270,7 @@ Depois que o estado da conexão mudar de **rascunho** para **pronto**, você pod
 
 Se o serviço externo usa ACLs que não sejam do Azure AD, sincronize essas permissões.  
 
-Grupos externos (juntamente com usuários e grupos do Azure Active Directory) são usados ​​para definir permissões no `externalItems` adicionadas a uma conexão do Microsoft Graph. Para obter detalhes, confira [externalGroups](/graph/api/resources/externalgroup?view=graph-rest-beta&preserve-view=true).
+Grupos externos (junto com usuários e grupos do Azure Active Directory) são usados ​​para definir permissões em `externalItems` adicionado a uma conexão do Microsoft Graph. Para obter detalhes, consulte [externalGroups](/graph/api/resources/externalgroup?view=graph-rest-beta&preserve-view=true).
 
 Este é um exemplo de uma solicitação.
 
@@ -311,7 +311,7 @@ Você é responsável por converter suas permissões de fonte para conceder ou n
 A seguir está um exemplo de solicitação.
 
 ```http
-PUT https://graph.microsoft.com/beta/connections/contosohr/items/TSP228082938 
+PUT https://graph.microsoft.com/beta/external/connections/contosohr/items/TSP228082938 
 Content-type: application/json 
 
 { 

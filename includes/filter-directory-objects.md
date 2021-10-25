@@ -1,11 +1,11 @@
 ---
 ms.localizationpriority: medium
-ms.openlocfilehash: a78f3a256688e54a6232bb79e2a5bb792ff3dc00
-ms.sourcegitcommit: 08e9b0bac39c1b1d2c8a79539d24aaa93364baf2
+ms.openlocfilehash: 95e6218d0f21d81491652a0229d3272a6a61d243
+ms.sourcegitcommit: 0eb843a6f61f384bc28c0cce1ccb74f64bdb1fa6
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/24/2021
-ms.locfileid: "59765316"
+ms.lasthandoff: 10/23/2021
+ms.locfileid: "60562734"
 ---
 ### <a name="application-properties"></a>Propriedades do aplicativo
 
@@ -53,6 +53,7 @@ ms.locfileid: "59765316"
 | alternativeSecurityIds/any(a:a/type)             | ![Com suporte por Padrão][RDS]               |                              | ![Requer parâmetros de consulta avançados][AQP] | ![Requer parâmetros de consulta avançados][AQP] | ![Não suportado][NS]                       |
 | approximateLastSignInDateTime                    | ![Com suporte por Padrão][RDS]               |                              | ![Com suporte por Padrão][RDS]               | ![Com suporte por Padrão][RDS]               | ![Requer parâmetros de consulta avançados][AQP] |
 | deviceId                                         | ![Com suporte por Padrão][RDS]               |                              |                                            |                                            | ![Não suportado][NS]                       |
+| extensionAttributes/extensionAttribute1-15 | ![Requer parâmetros de consulta avançados][AQP] | ![Requer parâmetros de consulta avançados][AQP]         |                                            |                                            | ![Requer parâmetros de consulta avançados][AQP]                       |
 | displayName                                      | ![Com suporte por Padrão][RDS]               | ![Com suporte por Padrão][RDS] |                                            |                                            | ![Requer parâmetros de consulta avançados][AQP] |
 | isCompliant                                      | ![Com suporte por Padrão][RDS]               |                              |                                            |                                            | ![Não suportado][NS]                       |
 | isManaged                                        | ![Com suporte por Padrão][RDS]               |                              |                                            |                                            | ![Não suportado][NS]                       |
