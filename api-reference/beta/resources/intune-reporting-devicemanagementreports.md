@@ -2,15 +2,15 @@
 title: Tipo de recurso deviceManagementReports
 description: Entidade singleton que atua como um contêiner para todas as funcionalidades de relatórios.
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 531d1a7e3f2529982f5c1da4ab908edc765b7dc6
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 639bec877dcdf1b7781011aba59e0ce3b1cb8ce0
+ms.sourcegitcommit: c7ff992ef63e480d070421ba99b28ee129cb6acb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59039347"
+ms.lasthandoff: 11/02/2021
+ms.locfileid: "60673694"
 ---
 # <a name="devicemanagementreports-resource-type"></a>Tipo de recurso deviceManagementReports
 
@@ -22,7 +22,7 @@ Namespace: microsoft.graph
 
 Entidade singleton que atua como um contêiner para todas as funcionalidades de relatórios.
 
-## <a name="methods"></a>Métodos
+## <a name="methods"></a>Methods
 |Método|Tipo de retorno|Descrição|
 |:---|:---|:---|
 |[Obter deviceManagementReports](../api/intune-reporting-devicemanagementreports-get.md)|[deviceManagementReports](../resources/intune-reporting-devicemanagementreports.md)|Leia propriedades e relações do [objeto deviceManagementReports.](../resources/intune-reporting-devicemanagementreports.md)|
@@ -47,14 +47,13 @@ Entidade singleton que atua como um contêiner para todas as funcionalidades de 
 ## <a name="properties"></a>Propriedades
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|id|Cadeia de caracteres|Identificador exclusivo dessa entidade|
+|id|String|Identificador exclusivo dessa entidade|
 
 ## <a name="relationships"></a>Relações
 |Relação|Tipo|Descrição|
 |:---|:---|:---|
 |cachedReportConfigurations|[Coleção deviceManagementCachedReportConfiguration](../resources/intune-reporting-devicemanagementcachedreportconfiguration.md)|Entidade que representa a configuração de um relatório em cache|
 |exportJobs|[Coleção deviceManagementExportJob](../resources/intune-reporting-devicemanagementexportjob.md)|Entidade que representa um trabalho para exportar um relatório|
-|reportSchedules|[Coleção deviceManagementReportSchedule](../resources/intune-reporting-devicemanagementreportschedule.md)|Entidade que representa um cronograma para o qual os relatórios são entregues|
 
 ## <a name="json-representation"></a>Representação JSON
 Veja a seguir uma representação JSON do recurso.

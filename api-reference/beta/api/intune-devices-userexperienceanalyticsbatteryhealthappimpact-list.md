@@ -1,18 +1,18 @@
 ---
-title: Ação executeAction
-description: Ainda não documentado
+title: Listar userExperienceAnalyticsBatteryHealthAppImpacts
+description: Listar propriedades e relações dos objetos userExperienceAnalyticsBatteryHealthAppImpact.
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: ed7be7141838b6bde2874555d030a64567a5c246
+ms.openlocfilehash: bdd16e61a85e6df44fa480c8220cd51e3324db82
 ms.sourcegitcommit: c7ff992ef63e480d070421ba99b28ee129cb6acb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
 ms.lasthandoff: 11/02/2021
-ms.locfileid: "60673361"
+ms.locfileid: "60676772"
 ---
-# <a name="executeaction-action"></a>Ação executeAction
+# <a name="list-userexperienceanalyticsbatteryhealthappimpacts"></a>Listar userExperienceAnalyticsBatteryHealthAppImpacts
 
 Namespace: microsoft.graph
 
@@ -20,16 +20,16 @@ Namespace: microsoft.graph
 
 > **Observação:** A API do Microsoft Graph para Intune requer uma [licença ativa do Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
 
-Ainda não documentado
+Listar propriedades e relações dos [objetos userExperienceAnalyticsBatteryHealthAppImpact.](../resources/intune-devices-userexperienceanalyticsbatteryhealthappimpact.md)
 
 ## <a name="prerequisites"></a>Pré-requisitos
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão|Permissões (da com menos para a com mais privilégios)|
 |:---|:---|
-|Delegado (conta corporativa ou de estudante)|DeviceManagementConfiguration.Read.All|
+|Delegado (conta corporativa ou de estudante)|DeviceManagementManagedDevices.Read.All, DeviceManagementManagedDevices.ReadWrite.All|
 |Delegado (conta pessoal da Microsoft)|Sem suporte.|
-|Aplicativo|DeviceManagementConfiguration.Read.All|
+|Aplicativo|DeviceManagementManagedDevices.Read.All, DeviceManagementManagedDevices.ReadWrite.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- {
@@ -37,7 +37,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 }
 -->
 ``` http
-POST /deviceManagement/windowsDriverUpdateProfiles/{windowsDriverUpdateProfileId}/executeAction
+GET /deviceManagement/userExperienceAnalyticsBatteryHealthAppImpact
 ```
 
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
@@ -47,38 +47,17 @@ POST /deviceManagement/windowsDriverUpdateProfiles/{windowsDriverUpdateProfileId
 |Aceitar|application/json|
 
 ## <a name="request-body"></a>Corpo da solicitação
-No corpo da solicitação, forneça uma representação JSON dos parâmetros.
-
-A tabela a seguir mostra os parâmetros que podem ser usados com esta ação.
-
-|Propriedade|Tipo|Descrição|
-|:---|:---|:---|
-|actionName|[driverApprovalAction](../resources/intune-softwareupdate-driverapprovalaction.md)|Ainda não documentado|
-|driverIds|String collection|Ainda não documentado|
-|deploymentDate|DateTimeOffset|Ainda não documentado|
-
-
+Não forneça um corpo de solicitação para esse método.
 
 ## <a name="response"></a>Resposta
-Se tiver êxito, essa ação retornará um código `200 OK` de resposta e um [bulkDriverActionResult](../resources/intune-softwareupdate-bulkdriveractionresult.md) no corpo da resposta.
+Se tiver êxito, este método retornará um código de resposta e uma coleção de `200 OK` [objetos userExperienceAnalyticsBatteryHealthAppImpact](../resources/intune-devices-userexperienceanalyticsbatteryhealthappimpact.md) no corpo da resposta.
 
 ## <a name="example"></a>Exemplo
 
 ### <a name="request"></a>Solicitação
 Este é um exemplo da solicitação.
 ``` http
-POST https://graph.microsoft.com/beta/deviceManagement/windowsDriverUpdateProfiles/{windowsDriverUpdateProfileId}/executeAction
-
-Content-type: application/json
-Content-length: 137
-
-{
-  "actionName": "decline",
-  "driverIds": [
-    "Driver Ids value"
-  ],
-  "deploymentDate": "2016-12-31T23:58:18.3419405-08:00"
-}
+GET https://graph.microsoft.com/beta/deviceManagement/userExperienceAnalyticsBatteryHealthAppImpact
 ```
 
 ### <a name="response"></a>Resposta
@@ -86,21 +65,21 @@ Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado a
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 298
+Content-Length: 422
 
 {
-  "value": {
-    "@odata.type": "microsoft.graph.bulkDriverActionResult",
-    "successfulDriverIds": [
-      "Successful Driver Ids value"
-    ],
-    "failedDriverIds": [
-      "Failed Driver Ids value"
-    ],
-    "notFoundDriverIds": [
-      "Not Found Driver Ids value"
-    ]
-  }
+  "value": [
+    {
+      "@odata.type": "#microsoft.graph.userExperienceAnalyticsBatteryHealthAppImpact",
+      "id": "d2a9c89a-c89a-d2a9-9ac8-a9d29ac8a9d2",
+      "activeDevices": 13,
+      "appName": "App Name value",
+      "appDisplayName": "App Display Name value",
+      "appPublisher": "App Publisher value",
+      "isForegroundApp": true,
+      "batteryUsagePercentage": 7.333333333333333
+    }
+  ]
 }
 ```
 

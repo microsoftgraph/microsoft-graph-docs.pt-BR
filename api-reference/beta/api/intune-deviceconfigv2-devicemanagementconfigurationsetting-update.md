@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: b18146d0f26b55c5f2f07e948d4ea31d30601a6b
-ms.sourcegitcommit: 4a960067cf2cd7d3c605550150eb3c9259adfe92
+ms.openlocfilehash: 3a1769396f35ba44c1ccf876529dc10758c2831e
+ms.sourcegitcommit: c7ff992ef63e480d070421ba99b28ee129cb6acb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/19/2021
-ms.locfileid: "60493462"
+ms.lasthandoff: 11/02/2021
+ms.locfileid: "60674700"
 ---
 # <a name="update-devicemanagementconfigurationsetting"></a>Atualizar deviceManagementConfigurationSetting
 
@@ -37,6 +37,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 }
 -->
 ``` http
+PATCH /deviceManagement/compliancePolicies/{deviceManagementCompliancePolicyId}/settings/{deviceManagementConfigurationSettingId}
 PATCH /deviceManagement/configurationPolicies/{deviceManagementConfigurationPolicyId}/settings/{deviceManagementConfigurationSettingId}
 ```
 
@@ -53,7 +54,7 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar [deviceM
 
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|id|Cadeia de caracteres|Chave dessa configuração na política que a contém. Gerado automaticamente.|
+|id|String|Chave dessa configuração na política que a contém. Gerado automaticamente.|
 |settingInstance|[deviceManagementConfigurationSettingInstance](../resources/intune-deviceconfigv2-devicemanagementconfigurationsettinginstance.md)|Instância de configuração|
 
 
@@ -66,7 +67,7 @@ Se tiver êxito, este método retornará um código de resposta e um `200 OK` [o
 ### <a name="request"></a>Solicitação
 Este é um exemplo da solicitação.
 ``` http
-PATCH https://graph.microsoft.com/beta/deviceManagement/configurationPolicies/{deviceManagementConfigurationPolicyId}/settings/{deviceManagementConfigurationSettingId}
+PATCH https://graph.microsoft.com/beta/deviceManagement/compliancePolicies/{deviceManagementCompliancePolicyId}/settings/{deviceManagementConfigurationSettingId}
 Content-type: application/json
 Content-length: 16129
 

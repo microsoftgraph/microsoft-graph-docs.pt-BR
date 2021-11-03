@@ -1,18 +1,18 @@
 ---
-title: Excluir deviceManagementConfigurationSimpleSettingDefinition
-description: Exclui um deviceManagementConfigurationSimpleSettingDefinition.
+title: Excluir userExperienceAnalyticsBatteryHealthAppImpact
+description: Exclui um usuárioExperienceAnalyticsBatteryHealthAppImpact.
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: cc61de10ca88101e71359f772179ff13539155bc
+ms.openlocfilehash: 3321995b4a37d0519c4acac7e428a673ca7adb5a
 ms.sourcegitcommit: c7ff992ef63e480d070421ba99b28ee129cb6acb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
 ms.lasthandoff: 11/02/2021
-ms.locfileid: "60674693"
+ms.locfileid: "60676786"
 ---
-# <a name="delete-devicemanagementconfigurationsimplesettingdefinition"></a>Excluir deviceManagementConfigurationSimpleSettingDefinition
+# <a name="delete-userexperienceanalyticsbatteryhealthappimpact"></a>Excluir userExperienceAnalyticsBatteryHealthAppImpact
 
 Namespace: microsoft.graph
 
@@ -20,16 +20,16 @@ Namespace: microsoft.graph
 
 > **Observação:** A API do Microsoft Graph para Intune requer uma [licença ativa do Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
 
-Exclui um [deviceManagementConfigurationSimpleSettingDefinition](../resources/intune-deviceconfigv2-devicemanagementconfigurationsimplesettingdefinition.md).
+Exclui um [userExperienceAnalyticsBatteryHealthAppImpact](../resources/intune-devices-userexperienceanalyticsbatteryhealthappimpact.md).
 
 ## <a name="prerequisites"></a>Pré-requisitos
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão|Permissões (da com menos para a com mais privilégios)|
 |:---|:---|
-|Delegado (conta corporativa ou de estudante)|DeviceManagementConfiguration.ReadWrite.All|
+|Delegado (conta corporativa ou de estudante)|DeviceManagementManagedDevices.ReadWrite.All|
 |Delegado (conta pessoal da Microsoft)|Sem suporte.|
-|Aplicativo|DeviceManagementConfiguration.ReadWrite.All|
+|Aplicativo|DeviceManagementManagedDevices.ReadWrite.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- {
@@ -37,11 +37,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 }
 -->
 ``` http
-DELETE /deviceManagement/reusableSettings/{deviceManagementConfigurationSettingDefinitionId}
-DELETE /deviceManagement/complianceSettings/{deviceManagementConfigurationSettingDefinitionId}
-DELETE /deviceManagement/configurationSettings/{deviceManagementConfigurationSettingDefinitionId}
-DELETE /deviceManagement/configurationPolicies/{deviceManagementConfigurationPolicyId}/settings/{deviceManagementConfigurationSettingId}/settingDefinitions/{deviceManagementConfigurationSettingDefinitionId}
-DELETE /deviceManagement/configurationPolicyTemplates/{deviceManagementConfigurationPolicyTemplateId}/settingTemplates/{deviceManagementConfigurationSettingTemplateId}/settingDefinitions/{deviceManagementConfigurationSettingDefinitionId}
+DELETE /deviceManagement/userExperienceAnalyticsBatteryHealthAppImpact/{userExperienceAnalyticsBatteryHealthAppImpactId}
 ```
 
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
@@ -61,7 +57,7 @@ Se tiver êxito, este método retornará um código de resposta `204 No Content`
 ### <a name="request"></a>Solicitação
 Este é um exemplo da solicitação.
 ``` http
-DELETE https://graph.microsoft.com/beta/deviceManagement/reusableSettings/{deviceManagementConfigurationSettingDefinitionId}
+DELETE https://graph.microsoft.com/beta/deviceManagement/userExperienceAnalyticsBatteryHealthAppImpact/{userExperienceAnalyticsBatteryHealthAppImpactId}
 ```
 
 ### <a name="response"></a>Resposta

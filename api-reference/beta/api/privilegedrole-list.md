@@ -1,22 +1,24 @@
 ---
 title: Listar privilegedRoles
 description: Recupere uma lista de objetos privilegedRole.
-localization_priority: Normal
+ms.localizationpriority: medium
 doc_type: apiPageType
 ms.prod: governance
-author: shauliu1
-ms.openlocfilehash: f42ed124e5c55923c81ee3269a0e377d6b4e62c4
-ms.sourcegitcommit: 01755ac7c0ab7becf28052e05e58567caa8364cd
+author: carolinetempleton
+ms.openlocfilehash: a30c5f648ed084d38e9f5c0f18fbbdfdaee044f2
+ms.sourcegitcommit: c7ff992ef63e480d070421ba99b28ee129cb6acb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/21/2021
-ms.locfileid: "58453671"
+ms.lasthandoff: 11/03/2021
+ms.locfileid: "60684122"
 ---
 # <a name="list-privilegedroles"></a>Listar privilegedRoles
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
+[!INCLUDE [pim-v1AADRoles-deprecation](../../includes/pim-v1aadroles-deprecation.md)]
 
 Recupere uma lista de [objetos privilegedRole.](../resources/privilegedrole.md)
 

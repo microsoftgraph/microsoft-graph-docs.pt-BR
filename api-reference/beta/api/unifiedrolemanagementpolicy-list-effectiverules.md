@@ -1,16 +1,16 @@
 ---
 title: Listar effectiveRules
 description: Obter os recursos unifiedRoleManagementPolicyRule da propriedade de navegação effectiveRules.
-author: shauliu1
-localization_priority: Normal
+author: carolinetempleton
+ms.localizationpriority: medium
 ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: ce95b6d702e66655f13fed8cd78c5d5cc9e4a1c5
-ms.sourcegitcommit: 01755ac7c0ab7becf28052e05e58567caa8364cd
+ms.openlocfilehash: 1a9819ef980f982fc76e104c74b21056c207dd17
+ms.sourcegitcommit: c7ff992ef63e480d070421ba99b28ee129cb6acb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/21/2021
-ms.locfileid: "58452432"
+ms.lasthandoff: 11/02/2021
+ms.locfileid: "60674287"
 ---
 # <a name="list-effectiverules"></a>Listar effectiveRules
 Namespace: microsoft.graph

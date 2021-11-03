@@ -1,13 +1,13 @@
 ---
-author: shauliu1
+author: carolinetempleton
 ms.topic: include
 ms.localizationpriority: medium
-ms.openlocfilehash: 3ed2e0fdb3add554ae55a9e5682cc38e5eef717b
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 2d280d2603c1d0a53087c678c932503f1e83adda
+ms.sourcegitcommit: c7ff992ef63e480d070421ba99b28ee129cb6acb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59767213"
+ms.lasthandoff: 11/03/2021
+ms.locfileid: "60684117"
 ---
 <!-- markdownlint-disable MD041-->
 

@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 doc_type: resourcePageType
 ms.prod: applications
 author: jesakowi
-ms.openlocfilehash: 4c63c0cdcfb6324077092923eeff91eed65e7b60
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: c65456a7dbe9b1adcb57a19a75ebf6322e84a189
+ms.sourcegitcommit: c7ff992ef63e480d070421ba99b28ee129cb6acb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59134280"
+ms.lasthandoff: 11/03/2021
+ms.locfileid: "60684056"
 ---
 # <a name="verifiedpublisher-resource-type"></a>Tipo de recurso verifiedPublisher
 
@@ -22,9 +22,9 @@ Representa o editor verificado do [aplicativo](application.md). Para obter mais 
 
 | Propriedade | Tipo | Descrição |
 |:---------------|:--------|:----------|
-|displayName|Cadeia de caracteres|O nome do editor verificado da conta do Partner Center do editor de aplicativos.|
-|verifiedPublisherId|Cadeia de caracteres| A ID do editor verificado na conta do Partner Center do editor de aplicativos. |
 |addedDateTime|DateTimeOffSet| O timestamp quando o editor verificado foi adicionado pela primeira vez ou atualizado mais recentemente. |
+|displayName|String|O nome do editor verificado da conta do Partner Center do editor de aplicativos.|
+|verifiedPublisherId|String| A ID do editor verificado na conta do Partner Center do editor de aplicativos. |
 
 
 ## <a name="json-representation"></a>Representação JSON
@@ -44,7 +44,6 @@ Veja a seguir uma representação JSON do recurso.
   "verifiedPublisherId": "String",
   "addedDateTime": "DateTimeOffSet"
 }
-
 ```
 
 

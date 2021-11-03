@@ -1,16 +1,16 @@
 ---
 title: Criar bookingStaffMember
 description: Crie um novo membro da equipe no bookingbusiness especificado.
-localization_priority: Normal
+ms.localizationpriority: medium
 author: arvindmicrosoft
 ms.prod: bookings
 doc_type: apiPageType
-ms.openlocfilehash: e92b3cc416d3cfe462c65da35f8bb4dd6d2e6b50
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: e4900d9295cfac1d48a20899080734bfa757b16f
+ms.sourcegitcommit: c7ff992ef63e480d070421ba99b28ee129cb6acb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52047851"
+ms.lasthandoff: 11/02/2021
+ms.locfileid: "60673567"
 ---
 # <a name="create-bookingstaffmember"></a>Criar bookingStaffMember
 
@@ -18,7 +18,7 @@ Namespace: microsoft.graph
 
  [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Crie um novo [membro da equipe](../resources/bookingstaffmember.md) no [bookingbusiness especificado.](../resources/bookingbusiness.md)
+Crie um novo [membro da equipe](../resources/bookingstaffmember.md) no [bookingBusiness especificado.](../resources/bookingbusiness.md)
 ## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
@@ -37,10 +37,10 @@ POST /bookingBusinesses/{id}/staffMembers
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
 | Nome       | Descrição|
 |:---------------|:----------|
-| Authorization  | Portador {código}|
+| Autorização  | {code} do portador. Obrigatório.|
 
 ## <a name="request-body"></a>Corpo da solicitação
-No corpo da solicitação, fornece uma representação JSON do [objeto bookingStaffMember.](../resources/bookingstaffmember.md) Você deve incluir as seguintes propriedades:
+No corpo da solicitação, fornece uma representação JSON de um [objeto bookingStaffMember.](../resources/bookingstaffmember.md) Você deve incluir as seguintes propriedades:
 
 - **displayName**
 - **emailAddress**
@@ -48,10 +48,10 @@ No corpo da solicitação, fornece uma representação JSON do [objeto bookingSt
 
 
 ## <a name="response"></a>Resposta
-Se tiver êxito, este método retornará `201, Created` o código de resposta e o objeto [bookingStaffMember](../resources/bookingstaffmember.md) no corpo da resposta.
+Se tiver êxito, este método retornará um código de resposta e um `201 Created` [objeto bookingStaffMember](../resources/bookingstaffmember.md) no corpo da resposta.
 
 ## <a name="example"></a>Exemplo
-##### <a name="request"></a>Solicitação
+### <a name="request"></a>Solicitação
 Este é um exemplo de solicitação.
 
 # <a name="http"></a>[HTTP](#tab/http)
@@ -71,6 +71,7 @@ Content-length: 309
     "emailAddress":"danas@contoso.com",
     "role@odata.type":"#microsoft.graph.bookingStaffRole",
     "role":"externalGuest",
+    "timeZone":"America/Chicago",
     "useBusinessHours":true,
     "workingHours@odata.type":"#Collection(microsoft.graph.bookingWorkHours)",
     "workingHours":[
@@ -160,9 +161,10 @@ Content-length: 309
 
 ---
 
-No corpo da solicitação, fornece uma representação JSON do [objeto bookingStaffMember.](../resources/bookingstaffmember.md)
-##### <a name="response"></a>Resposta
-Este é um exemplo de resposta. Observação: o objeto de resposta mostrado aqui pode ser encurtado para legibilidade.
+### <a name="response"></a>Resposta
+Este é um exemplo de resposta. 
+
+>**Observação:** o objeto de resposta mostrado aqui pode ser encurtado para legibilidade.
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -180,6 +182,7 @@ Content-type: application/json
     "availabilityIsAffectedByPersonalCalendar":false,
     "colorIndex":1,
     "role":"externalGuest",
+    "timeZone":"America/Chicago",
     "useBusinessHours":true,
     "workingHours":[
         {

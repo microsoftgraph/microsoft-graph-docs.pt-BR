@@ -2,15 +2,15 @@
 title: Tipo de recurso deviceManagementConfigurationSetting
 description: Definindo instância dentro da política
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 312dee429a734a3224aba62770d8408b9f390ddc
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: d9b55fb92c205e191ead3a61d01137d4c3dc7338
+ms.sourcegitcommit: c7ff992ef63e480d070421ba99b28ee129cb6acb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59148204"
+ms.lasthandoff: 11/02/2021
+ms.locfileid: "60668851"
 ---
 # <a name="devicemanagementconfigurationsetting-resource-type"></a>Tipo de recurso deviceManagementConfigurationSetting
 
@@ -22,7 +22,7 @@ Namespace: microsoft.graph
 
 Definindo instância dentro da política
 
-## <a name="methods"></a>Métodos
+## <a name="methods"></a>Methods
 |Método|Tipo de retorno|Descrição|
 |:---|:---|:---|
 |[Listar deviceManagementConfigurationSettings](../api/intune-deviceconfigv2-devicemanagementconfigurationsetting-list.md)|[Coleção deviceManagementConfigurationSetting](../resources/intune-deviceconfigv2-devicemanagementconfigurationsetting.md)|Listar propriedades e relações dos [objetos deviceManagementConfigurationSetting.](../resources/intune-deviceconfigv2-devicemanagementconfigurationsetting.md)|
@@ -34,13 +34,13 @@ Definindo instância dentro da política
 ## <a name="properties"></a>Propriedades
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|id|Cadeia de caracteres|Chave dessa configuração na política que a contém. Gerado automaticamente.|
+|id|String|Chave dessa configuração na política que a contém. Gerado automaticamente.|
 |settingInstance|[deviceManagementConfigurationSettingInstance](../resources/intune-deviceconfigv2-devicemanagementconfigurationsettinginstance.md)|Instância de configuração|
 
 ## <a name="relationships"></a>Relações
 |Relação|Tipo|Descrição|
 |:---|:---|:---|
-|settingDefinitions|[Coleção deviceManagementConfigurationSettingDefinition](../resources/intune-deviceconfigv2-devicemanagementconfigurationsettingdefinition.md)|Lista de definições de configuração relacionadas|
+|settingDefinitions|[Coleção deviceManagementConfigurationSettingDefinition](../resources/intune-deviceconfigv2-devicemanagementconfigurationsettingdefinition.md)|Lista de definições de configuração relacionadas. Essa propriedade é somente leitura.|
 
 ## <a name="json-representation"></a>Representação JSON
 Veja a seguir uma representação JSON do recurso.

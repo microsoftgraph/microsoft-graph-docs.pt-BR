@@ -1,18 +1,18 @@
 ---
-title: Obter userExperienceAnalyticsOverview
-description: Ler propriedades e relações do objeto userExperienceAnalyticsOverview.
+title: Obter userExperienceAnalyticsBatteryHealthOsPerformance
+description: Leia propriedades e relações do objeto userExperienceAnalyticsBatteryHealthOsPerformance.
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 2db875bc2991d2042e30f5efe9fa0c1615cc0a72
+ms.openlocfilehash: f94b4298405e025ea8a33296113fb3b1dfc1dcaf
 ms.sourcegitcommit: c7ff992ef63e480d070421ba99b28ee129cb6acb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
 ms.lasthandoff: 11/02/2021
-ms.locfileid: "60673397"
+ms.locfileid: "60676766"
 ---
-# <a name="get-userexperienceanalyticsoverview"></a>Obter userExperienceAnalyticsOverview
+# <a name="get-userexperienceanalyticsbatteryhealthosperformance"></a>Obter userExperienceAnalyticsBatteryHealthOsPerformance
 
 Namespace: microsoft.graph
 
@@ -20,7 +20,7 @@ Namespace: microsoft.graph
 
 > **Observação:** A API do Microsoft Graph para Intune requer uma [licença ativa do Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
 
-Ler propriedades e relações do [objeto userExperienceAnalyticsOverview.](../resources/intune-devices-userexperienceanalyticsoverview.md)
+Leia propriedades e relações do [objeto userExperienceAnalyticsBatteryHealthOsPerformance.](../resources/intune-devices-userexperienceanalyticsbatteryhealthosperformance.md)
 
 ## <a name="prerequisites"></a>Pré-requisitos
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
@@ -37,7 +37,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 }
 -->
 ``` http
-GET /deviceManagement/userExperienceAnalyticsOverview
+GET /deviceManagement/userExperienceAnalyticsBatteryHealthOsPerformance/{userExperienceAnalyticsBatteryHealthOsPerformanceId}
 ```
 
 ## <a name="optional-query-parameters"></a>Parâmetros de consulta opcionais
@@ -53,14 +53,14 @@ Este método dá suporte a [Parâmetros de consulta OData](/graph/query-paramete
 Não forneça um corpo de solicitação para esse método.
 
 ## <a name="response"></a>Resposta
-Se tiver êxito, este método retornará um código de resposta e um `200 OK` [objeto userExperienceAnalyticsOverview](../resources/intune-devices-userexperienceanalyticsoverview.md) no corpo da resposta.
+Se tiver êxito, este método retornará um código de resposta e um `200 OK` [objeto userExperienceAnalyticsBatteryHealthOsPerformance](../resources/intune-devices-userexperienceanalyticsbatteryhealthosperformance.md) no corpo da resposta.
 
 ## <a name="example"></a>Exemplo
 
 ### <a name="request"></a>Solicitação
 Este é um exemplo da solicitação.
 ``` http
-GET https://graph.microsoft.com/beta/deviceManagement/userExperienceAnalyticsOverview
+GET https://graph.microsoft.com/beta/deviceManagement/userExperienceAnalyticsBatteryHealthOsPerformance/{userExperienceAnalyticsBatteryHealthOsPerformanceId}
 ```
 
 ### <a name="response"></a>Resposta
@@ -68,40 +68,18 @@ Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado a
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 1219
+Content-Length: 394
 
 {
   "value": {
-    "@odata.type": "#microsoft.graph.userExperienceAnalyticsOverview",
-    "id": "8228da2b-da2b-8228-2bda-28822bda2882",
-    "overallScore": 12,
-    "deviceBootPerformanceOverallScore": 1,
-    "bestPracticesOverallScore": 9,
-    "workFromAnywhereOverallScore": 12,
-    "appHealthOverallScore": 5,
-    "resourcePerformanceOverallScore": 15,
-    "batteryHealthOverallScore": 9,
-    "insights": [
-      {
-        "@odata.type": "microsoft.graph.userExperienceAnalyticsInsight",
-        "userExperienceAnalyticsMetricId": "User Experience Analytics Metric Id value",
-        "insightId": "Insight Id value",
-        "values": [
-          {
-            "@odata.type": "microsoft.graph.insightValueDouble",
-            "value": 1.6666666666666667
-          }
-        ],
-        "severity": "informational"
-      }
-    ],
-    "state": "insufficientData",
-    "deviceBootPerformanceHealthState": "insufficientData",
-    "bestPracticesHealthState": "insufficientData",
-    "workFromAnywhereHealthState": "insufficientData",
-    "appHealthState": "insufficientData",
-    "resourcePerformanceHealthState": "insufficientData",
-    "batteryHealthHealthState": "insufficientData"
+    "@odata.type": "#microsoft.graph.userExperienceAnalyticsBatteryHealthOsPerformance",
+    "id": "9fc871ad-71ad-9fc8-ad71-c89fad71c89f",
+    "activeDevices": 13,
+    "osVersion": "Os Version value",
+    "osBuildNumber": "Os Build Number value",
+    "averageMaxCapacityPercentage": 12,
+    "averageEstimatedRuntimeInMinutes": 0,
+    "averageBatteryAgeInDays": 7
   }
 }
 ```

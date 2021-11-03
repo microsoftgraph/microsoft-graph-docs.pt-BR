@@ -1,16 +1,16 @@
 ---
 title: 'unifiedRoleEligibilityScheduleRequest: cancel'
 description: Cancele um unifiedRoleEligibilityScheduleRequest.
-author: shauliu1
+author: carolinetempleton
 ms.localizationpriority: medium
 ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: 0ab332329dfca4d8547d93f577f485c019300b07
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: e579ee8e0c5342a5bcf784a44915f5fc03ccbbfd
+ms.sourcegitcommit: c7ff992ef63e480d070421ba99b28ee129cb6acb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59009459"
+ms.lasthandoff: 11/02/2021
+ms.locfileid: "60674374"
 ---
 # <a name="unifiedroleeligibilityschedulerequest-cancel"></a>unifiedRoleEligibilityScheduleRequest: cancel
 Namespace: microsoft.graph
@@ -22,7 +22,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 |Tipo de permissão|Permissões (da com menos para a com mais privilégios)|
 |:---|:---|
-|Delegada (conta corporativa ou de estudante)|RoleEligibilitySchedule.ReadWrite.Directory, RoleManagement.ReadWrite.Directory |
+|Delegado (conta corporativa ou de estudante)|RoleEligibilitySchedule.ReadWrite.Directory, RoleManagement.ReadWrite.Directory |
 |Delegado (conta pessoal da Microsoft)|Sem suporte|
 |Aplicativo|RoleManagement.ReadWrite.Directory |
 

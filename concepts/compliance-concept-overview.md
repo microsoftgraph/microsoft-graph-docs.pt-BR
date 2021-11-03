@@ -5,12 +5,12 @@ author: mahage-msft
 ms.localizationpriority: medium
 ms.prod: ediscovery
 ms.custom: scenarios:getting-started
-ms.openlocfilehash: 0803a74921fc3bc398fcbb56fc01c00959573cd9
-ms.sourcegitcommit: 0eb843a6f61f384bc28c0cce1ccb74f64bdb1fa6
+ms.openlocfilehash: fd774e77c6f7c7ae2b996daa1d5a99e6f6ab7fb4
+ms.sourcegitcommit: c7ff992ef63e480d070421ba99b28ee129cb6acb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/23/2021
-ms.locfileid: "60561742"
+ms.lasthandoff: 11/03/2021
+ms.locfileid: "60684040"
 ---
 # <a name="overview-of-compliance-and-privacy-apis-in-microsoft-graph"></a>Visão geral das APIs de conformidade e privacidade no Microsoft Graph
 
@@ -22,7 +22,7 @@ As APIs de conformidade e privacidade destinam-se a ajudar a oferecer a visão d
 
 ### <a name="develop-applications-that-ensure-a-repeatable-predictable-and-standard-process"></a>Desenvolver aplicativos que garantem um processo repetitivo, previsível e padrão
 
-As organizações dependem Microsoft 365 recursos de Descoberta Externa para atender aos requisitos para encontrar a verdade sobre o que aconteceu em sua organização quando precisam, com base em requisitos internos ou externos, como litígio, investigação ou conformidade regulamentar.
+As organizações dependem Microsoft 365 recursos de Descoberta Externa para atender aos requisitos para encontrar [a](/microsoft-365/compliance/ediscovery?view=o365-worldwide&preserve-view=true) verdade sobre o que aconteceu em sua organização quando precisam, com base em requisitos internos ou externos, como litígio, investigação ou conformidade regulamentar.
 
 Em muitas organizações, os fluxos de trabalho de Descoberta Eletrônico são frequentes, críticos e de alto volume. Nos casos em que há tarefas repetidas comuns ou um alto volume de atividades, as APIs ajudarão a fornecer uma maneira escalonável de repetir processos de forma consistente e eficaz.
 
@@ -44,7 +44,7 @@ Dependendo dos sistemas e processos atuais, as organizações podem ter várias 
 
 ## <a name="privacy-management-by-subject-rights-requests"></a>Gerenciamento de privacidade por solicitações de direitos de assunto
 
-De acordo com determinados regulamentos de privacidade em todo o mundo, os indivíduos podem fazer solicitações para revisar ou gerenciar os dados pessoais sobre si mesmos coletados pelas empresas. Essas solicitações são conhecidas como solicitações de direitos de assunto na solução Microsoft 365 gerenciamento de privacidade; às vezes, eles também são chamados de DSRs (solicitações de assunto de dados) ou DSARs (solicitações de acesso a dados). Microsoft 365 gerenciamento de privacidade capacita a equipe responsável por atender às solicitações de direitos de entidade para identificar facilmente os titulares de dados e encontrar suas informações pessoais entre os dados de uma organização em Exchange, SharePoint, OneDrive e Teams. 
+De acordo com determinados regulamentos de privacidade em todo o mundo, os indivíduos podem fazer solicitações para revisar ou gerenciar os dados pessoais sobre si mesmos coletados pelas empresas. Essas solicitações são conhecidas como solicitações de direitos de assunto na solução Microsoft 365 gerenciamento de privacidade; às vezes, eles também são chamados de DSRs (solicitações de assunto de dados) ou DSARs (solicitações de acesso a dados). [Microsoft 365](/privacy/solutions/privacymanagement/privacy-management?view=o365-worldwide&preserve-view=true) gerenciamento de privacidade capacita a equipe responsável por atender às solicitações de direitos de entidade para identificar facilmente os titulares de dados e encontrar suas informações pessoais entre os dados de uma organização em Exchange, SharePoint, OneDrive e Teams. 
 
 As APIs do Microsoft Graph para solicitação de direitos de entidade fornecem funcionalidade para que as organizações automatizem tarefas repetitivas e se integrem às ferramentas de solicitação de entidades de dados existentes, para habilitar a criação de fluxos de trabalho repetidos que podem ser incorporados aos processos de negócios. Você pode usar as APIs de solicitação de direitos de assunto para ajudá-lo a automatizar e dimensionar a capacidade da sua organização de executar pesquisas de solicitações de direitos de assunto em Microsoft 365 e ajudar a atender aos regulamentos do setor com mais eficiência.
 
