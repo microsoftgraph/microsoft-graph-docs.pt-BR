@@ -5,12 +5,12 @@ ms.localizationpriority: high
 author: adimitui
 ms.prod: directory-management
 doc_type: resourcePageType
-ms.openlocfilehash: 2b4ac86a3dd1bad876c6819b9f49c28ca4bac7fb
-ms.sourcegitcommit: 6cea9bc17d3859e475a74c4a6f661f848e837e89
+ms.openlocfilehash: 816f0028c8250e497b4cf067c5bd22995b73973b
+ms.sourcegitcommit: c7ff992ef63e480d070421ba99b28ee129cb6acb
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/08/2021
-ms.locfileid: "60240884"
+ms.lasthandoff: 11/03/2021
+ms.locfileid: "60695374"
 ---
 # <a name="organization-resource-type"></a>tipo de recurso organization
 
@@ -51,7 +51,7 @@ Esse recurso permite que você adicione seus próprios dados às propriedades pe
 | businessPhones | Coleção de cadeias de caracteres | Número de telefone para a organização. Embora isso seja uma coleção de cadeias de caracteres, somente um número pode ser definido para essa propriedade. |
 | city | Cadeia de caracteres | Nome da cidade do endereço da organização. |
 | country | Cadeia de caracteres | Nome do país/região do endereço da organização. |
-| countryLetterCode | Cadeia de caracteres | Abreviação do país/região da organização. |
+| countryLetterCode | String | Abreviação de país ou região para a organização no formato ISO 3166-2. |
 | createdDateTime | DateTimeOffset | Carimbo de hora de criação da organização. Não é possível modificar o valor e ele é preenchido automaticamente quando a organização é criada. O tipo Timestamp representa informações de data e hora usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite UTC em 1 de janeiro de 2014 é `2014-01-01T00:00:00Z`. Somente leitura. |
 | deletedDateTime | DateTimeOffset | Representa a data e hora em que o locatário do Azure AD foi excluído usando o formato ISO 8601 e está sempre no fuso UTC. Por exemplo, meia-noite UTC do dia 1º de janeiro de 2014 é `2014-01-01T00:00:00Z`. Somente leitura. |
 | displayName | String | O nome de exibição do locatário. |

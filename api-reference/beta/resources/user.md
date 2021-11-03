@@ -5,12 +5,12 @@ author: jpettere
 ms.localizationpriority: high
 ms.prod: users
 doc_type: resourcePageType
-ms.openlocfilehash: 13ad5618f62c2d40cc0989e0d824a3fa0053a7e2
-ms.sourcegitcommit: 11be55b40804b07f4c422f09f601afa97c7d31ed
+ms.openlocfilehash: 60aa133d42842aeaa9121151bf2603223eefbff0
+ms.sourcegitcommit: c7ff992ef63e480d070421ba99b28ee129cb6acb
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/09/2021
-ms.locfileid: "60255973"
+ms.lasthandoff: 11/03/2021
+ms.locfileid: "60689036"
 ---
 # <a name="user-resource-type"></a>Tipo de recurso de usuário
 
@@ -40,8 +40,9 @@ Esse recurso permite:
 | [Atualizar usuário](../api/user-update.md) | [user](user.md) | Atualizar o objeto user. |
 | [Excluir usuário](../api/user-delete.md) | Nenhum | Excluir o objeto user. |
 | [Obter delta](../api/user-delta.md) | coleção de usuários | Obter as alterações incrementais para usuários. |
-| [invalidateAllRefreshTokens](../api/user-invalidateallrefreshtokens.md) | Nenhum | Invalidar todos os tokens de atualização do usuário emitidos para as aplicações. |
 | [changePassword](../api/user-changepassword.md) | Nenhum | Atualize sua senha. |
+| [invalidateAllRefreshTokens](../api/user-invalidateallrefreshtokens.md) | Nenhum | Invalidar todos os tokens de atualização do usuário emitidos para as aplicações. |
+| [validatePassword](../api/user-validatepassword.md)|[passwordValidationInformation](../resources/passwordvalidationinformation.md)|Valide a senha de um usuário na política de validação de senha da organização e informe se a senha é válida. |
 | **Atribuição de funções do aplicativo**|||
 | [List appRoleAssignments](../api/user-list-approleassignments.md) | [appRoleAssignment](approleassignment.md) collection | Obter os aplicativos e funções do aplicativo atribuídos a esse usuário. |
 | [Adicionar uma atribuição de função do aplicativo](../api/user-post-approleassignments.md) | [appRoleAssignment](approleassignment.md) | Atribuir uma função do aplicativo a esse usuário. |

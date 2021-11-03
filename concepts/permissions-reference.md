@@ -4,12 +4,12 @@ description: O Microsoft Graph expõe as permissões granulares que controlam o 
 author: jackson-woods
 ms.localizationpriority: high
 ms.custom: graphiamtop20, scenarios:getting-started
-ms.openlocfilehash: dcda42adda5a5d5dab0e1688e1550fae1dae656f
-ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
+ms.openlocfilehash: c643a85629e2cd86a17529dfa4109330d80002cd
+ms.sourcegitcommit: c7ff992ef63e480d070421ba99b28ee129cb6acb
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/18/2021
-ms.locfileid: "60447232"
+ms.lasthandoff: 11/03/2021
+ms.locfileid: "60695034"
 ---
 # <a name="microsoft-graph-permissions-reference"></a>Referência de permissões do Microsoft Graph
 
@@ -573,13 +573,13 @@ Para cenários mais complexos que envolvem várias permissões, confira [Cenári
 >[!NOTE]
 > Atualmente, estas permissões são suportadas apenas na versão beta do Microsoft Graph.
 
-## <a name="chatmessage-permissions-private-preview"></a>ChatMessage permissions ([visualização privada](#permissions-availability-status))
+## <a name="chatmessage-permissions"></a>Permissões chatMessage
 
 #### <a name="delegated-permissions"></a>Permissões delegadas
 
 |   Permissão    |  Exibir Cadeia de Caracteres   |  Descrição | Consentimento Obrigatório do Administrador | Suporte da conta da Microsoft |
 |:----------------|:------------------|:-------------|:-----------------------|:--------------|
-| _ChatMessage.Send_ (visualização privada) | Enviar mensagens de chat do usuário | Permite que o aplicativo envie mensagens de chat individuais e de grupo no Microsoft Teams, em nome do usuário conectado. | Não | Não |
+| _ChatMessage.Send_ | Enviar mensagens de chat do usuário | Permite que o aplicativo envie mensagens de chat individuais e de grupo no Microsoft Teams, em nome do usuário conectado. | Não | Não |
 
 ---
 
@@ -2044,20 +2044,20 @@ As permissões de taxonomia só são válidas para contas do trabalho ou da esco
 |:----------------|:------------------|:-------------|:-----------------------|:--------------|
 | _TeamsAppInstallation.ReadForUser_  | Ler os aplicativos do Teams instalados do usuário| Permite que o aplicativo leia os aplicativos do Teams instalados para o usuário conectado. Não dá a capacidade de ler as configurações específicas do aplicativo.| Não | Não |
 | _TeamsAppInstallation.ReadWriteForUser_ | Gerenciar os aplicativos do Teams instalados do usuário| Permite que o aplicativo leia instale, atualize e desinstale os aplicativos do Teams instalados para o usuário conectado. Não dá a capacidade de ler as configurações específicas do aplicativo.| Sim | Não |
-| _TeamsAppInstallation.ReadWriteSelfForUser_ (visualização privada) | Permitir que o aplicativo se gerencie nas equipes| Permite que um aplicativo do Teams se leia, se instale, se atualize e se desinstale para as equipes as quais o usuário conectado possa acessar.| Não | Não |
+| _TeamsAppInstallation.ReadWriteSelfForUser_ | Permitir que o aplicativo se gerencie nas equipes| Permite que um aplicativo do Teams se leia, se instale, se atualize e se desinstale para as equipes as quais o usuário conectado possa acessar.| Não | Não |
 | _TeamsAppInstallation.ReadForTeam_ | Ler os seus aplicativos do Teams instalados nas equipes| Permite que o aplicativo leia os aplicativos do Teams instalados nas equipes que o usuário conectado pode acessar. Não dá a capacidade de ler as configurações específicas do aplicativo.| Sim | Não |
 | _TeamsAppInstallation.ReadWriteForTeam_ | Gerenciar os aplicativos do Teams instalados nas equipes| Permite que o aplicativo leia, instale, atualize e desinstale aplicativos do Teams nas equipes que o usuário conectado pode acessar. Não dá a capacidade de ler as configurações específicas do aplicativo.| Sim | Não |
-| _TeamsAppInstallation.ReadWriteSelfForTeam_ (visualização privada) | Permitir que o aplicativo se gerencie nas equipes| Permite que um aplicativo do Teams se leia, se instale, se atualize e se desinstale para as equipes as quais o usuário conectado possa acessar.| Sim | Não |
+| _TeamsAppInstallation.ReadWriteSelfForTeam_ | Permitir que o aplicativo se gerencie nas equipes| Permite que um aplicativo do Teams se leia, se instale, se atualize e se desinstale para as equipes as quais o usuário conectado possa acessar.| Sim | Não |
 
 #### <a name="application-permissions"></a>Permissões de aplicativos
 |   Permissão    |  Exibir Cadeia de Caracteres   |  Descrição | Consentimento Obrigatório do Administrador |
 |:----------------|:------------------|:-------------|:-----------------------|
 | _TeamsAppInstallation.ReadForUser.All_ | Ler os aplicativos do Teams instalados para todos os usuários| Permite que o aplicativo leia os aplicativos do Teams instalados para qualquer usuário, sem um usuário conectado. Não dá a capacidade de ler as configurações específicas do aplicativo.| Sim |
 | _TeamsAppInstallation.ReadWriteForUser.All_ | Gerenciar aplicativos do Teams para todos os usuários| Permite que o aplicativo leia, instale, atualize e desinstale aplicativos do Teams para qualquer usuário, sem um usuário conectado. Não dá a capacidade de ler as configurações específicas do aplicativo.| Sim |
-| _TeamsAppInstallation.ReadWriteSelfForUser.All_ (visualização privada) | Permitir que o aplicativo se gerencie para todos os usuários| Permite que o aplicativo do Teams se leia, se instale, se atualize e se desinstale para qualquer usuário, sem um usuário conectado.| Sim |
+| _TeamsAppInstallation.ReadWriteSelfForUser.All_  | Permitir que o aplicativo se gerencie para todos os usuários| Permite que o aplicativo do Teams se leia, se instale, se atualize e se desinstale para qualquer usuário, sem um usuário conectado.| Sim |
 | _TeamsAppInstallation.ReadForTeam.All_ | Ler os aplicativos do Teams instalados para todas as equipes| Permite que o aplicativo leia os aplicativos do Teams instalados para qualquer equipe, sem um usuário conectado. Não dá a capacidade de ler as configurações específicas do aplicativo.| Sim |
 | _TeamsAppInstallation.ReadWriteForTeam.All_ | Gerenciar aplicativos de Teams para todas as equipes| Permite que o aplicativo leia, instale, atualize e desinstale aplicativos do Teams em qualquer equipe, sem um usuário conectado. Não permite ler configurações específicas do aplicativo.| Sim |
-| _TeamsAppInstallation.ReadWriteSelfForTeam.All_ (visualização privada) | Permitir que o aplicativo do Teams se gerencie para todas as equipes| Permite que o aplicativo do Teams se leia, se instale, se atualize e se desinstale em qualquer equipe, sem um usuário conectado.| Sim |
+| _TeamsAppInstallation.ReadWriteSelfForTeam.All_ | Permitir que o aplicativo do Teams se gerencie para todas as equipes| Permite que o aplicativo do Teams se leia, se instale, se atualize e se desinstale em qualquer equipe, sem um usuário conectado.| Sim |
 
 ## <a name="team-member-permissions"></a>Permissões de membro da equipe 
 
@@ -2174,27 +2174,27 @@ Para cenários mais complexos que envolvem várias permissões, confira [Cenári
 
 ---
 
-## <a name="teams-app-installation-permissions-private-preview"></a>Permissões de aplicativos do Teams([visualização privada](#permissions-availability-status))
+## <a name="teams-app-installation-permissions"></a>Permissões de instalação do aplicativo do Teams 
 
 #### <a name="delegated-permissions"></a>Permissões delegadas
 |   Permissão    |  Exibir Cadeia de Caracteres   |  Descrição | Consentimento Obrigatório do Administrador | Suporte da conta da Microsoft |
 |:----------------|:------------------|:-------------|:-----------------------|:--------------|
-| _TeamsAppInstallation.ReadForUser_ (visualização privada) | Ler os aplicativos do Teams instalados do usuário| Permite que o aplicativo leia os aplicativos do Teams instalados para o usuário conectado. Não dá a capacidade de ler as configurações específicas do aplicativo.| Sim | Não |
-| _TeamsAppInstallation.ReadWriteForUser_ (visualização privada) | Gerenciar os aplicativos do Teams instalados do usuário| Permite que o aplicativo leia instale, atualize e desinstale os aplicativos do Teams instalados para o usuário conectado. Não dá a capacidade de ler as configurações específicas do aplicativo.| Não | Não |
-| _TeamsAppInstallation.ReadWriteSelfForUser_ (visualização privada) | Permitir que o aplicativo se gerencie nas equipes| Permite que um aplicativo do Teams se leia, se instale, se atualize e se desinstale para as equipes as quais o usuário conectado possa acessar.| Sim | Não |
-| _TeamsAppInstallation.ReadForTeam_ (visualização privada) | Ler os seus aplicativos do Teams instalados nas equipes| Permite que o aplicativo leia os aplicativos do Teams instalados nas equipes que o usuário conectado pode acessar. Não dá a capacidade de ler as configurações específicas do aplicativo.| Sim | Não |
-| _TeamsAppInstallation.ReadWriteForTeam_ (visualização privada) | Gerenciar os aplicativos do Teams instalados nas equipes| Permite que o aplicativo leia, instale, atualize e desinstale aplicativos do Teams nas equipes que o usuário conectado pode acessar. Não dá a capacidade de ler as configurações específicas do aplicativo.| Sim | Não |
-| _TeamsAppInstallation.ReadWriteSelfForTeam_ (visualização privada) | Permitir que o aplicativo se gerencie nas equipes| Permite que um aplicativo do Teams se leia, se instale, se atualize e se desinstale para as equipes as quais o usuário conectado possa acessar.| Sim | Não |
+| _TeamsAppInstallation.ReadForUser_ | Ler os aplicativos do Teams instalados do usuário| Permite que o aplicativo leia os aplicativos do Teams instalados para o usuário conectado. Não dá a capacidade de ler as configurações específicas do aplicativo.| Sim | Não |
+| _TeamsAppInstallation.ReadWriteForUser_ | Gerenciar os aplicativos do Teams instalados do usuário| Permite que o aplicativo leia instale, atualize e desinstale os aplicativos do Teams instalados para o usuário conectado. Não dá a capacidade de ler as configurações específicas do aplicativo.| Não | Não |
+| _TeamsAppInstallation.ReadWriteSelfForUser_ | Permitir que o aplicativo se gerencie nas equipes| Permite que um aplicativo do Teams se leia, se instale, se atualize e se desinstale para as equipes as quais o usuário conectado possa acessar.| Sim | Não |
+| _TeamsAppInstallation.ReadForTeam_ | Ler os seus aplicativos do Teams instalados nas equipes| Permite que o aplicativo leia os aplicativos do Teams instalados nas equipes que o usuário conectado pode acessar. Não dá a capacidade de ler as configurações específicas do aplicativo.| Sim | Não |
+| _TeamsAppInstallation.ReadWriteForTeam_ | Gerenciar os aplicativos do Teams instalados nas equipes| Permite que o aplicativo leia, instale, atualize e desinstale aplicativos do Teams nas equipes que o usuário conectado pode acessar. Não dá a capacidade de ler as configurações específicas do aplicativo.| Sim | Não |
+| _TeamsAppInstallation.ReadWriteSelfForTeam_ | Permitir que o aplicativo se gerencie nas equipes| Permite que um aplicativo do Teams se leia, se instale, se atualize e se desinstale para as equipes as quais o usuário conectado possa acessar.| Sim | Não |
 
 #### <a name="application-permissions"></a>Permissões de aplicativos
 |   Permissão    |  Exibir Cadeia de Caracteres   |  Descrição | Consentimento Obrigatório do Administrador |
 |:----------------|:------------------|:-------------|:-----------------------|
-| _TeamsAppInstallation.ReadForUser.All_ (visualização privada) | Ler os aplicativos do Teams instalados para todos os usuários| Permite que o aplicativo leia os aplicativos do Teams instalados para qualquer usuário, sem um usuário conectado. Não dá a capacidade de ler as configurações específicas do aplicativo.| Sim |
-| _TeamsAppInstallation.ReadWriteForUser.All_ (visualização privada) | Gerenciar aplicativos do Teams para todos os usuários| Permite que o aplicativo leia, instale, atualize e desinstale aplicativos do Teams para qualquer usuário, sem um usuário conectado. Não dá a capacidade de ler as configurações específicas do aplicativo.| Sim |
-| _TeamsAppInstallation.ReadWriteSelfForUser.All_ (visualização privada) | Permitir que o aplicativo se gerencie para todos os usuários| Permite que o aplicativo do Teams se leia, se instale, se atualize e se desinstale para qualquer usuário, sem um usuário conectado.| Sim |
-| _TeamsAppInstallation.ReadForTeam.All_ (visualização privada) | Ler os aplicativos do Teams instalados para todas as equipes| Permite que o aplicativo leia os aplicativos do Teams instalados para qualquer equipe, sem um usuário conectado. Não dá a capacidade de ler as configurações específicas do aplicativo.| Sim |
-| _TeamsAppInstallation.ReadWriteForTeam.All_ (visualização privada) | Gerenciar aplicativos de Teams para todas as equipes| Permite que o aplicativo leia, instale, atualize e desinstale aplicativos do Teams em qualquer equipe, sem um usuário conectado. Não permite ler configurações específicas do aplicativo.| Sim |
-| _TeamsAppInstallation.ReadWriteSelfForTeam.All_ (visualização privada) | Permitir que o aplicativo do Teams se gerencie para todas as equipes| Permite que o aplicativo do Teams se leia, se instale, se atualize e se desinstale em qualquer equipe, sem um usuário conectado.| Sim |
+| _TeamsAppInstallation.ReadForUser.All_ | Ler os aplicativos do Teams instalados para todos os usuários| Permite que o aplicativo leia os aplicativos do Teams instalados para qualquer usuário, sem um usuário conectado. Não dá a capacidade de ler as configurações específicas do aplicativo.| Sim |
+| _TeamsAppInstallation.ReadWriteForUser.All_ | Gerenciar aplicativos do Teams para todos os usuários| Permite que o aplicativo leia, instale, atualize e desinstale aplicativos do Teams para qualquer usuário, sem um usuário conectado. Não dá a capacidade de ler as configurações específicas do aplicativo.| Sim |
+| _TeamsAppInstallation.ReadWriteSelfForUser.All_ | Permitir que o aplicativo se gerencie para todos os usuários| Permite que o aplicativo do Teams se leia, se instale, se atualize e se desinstale para qualquer usuário, sem um usuário conectado.| Sim |
+| _TeamsAppInstallation.ReadForTeam.All_ | Ler os aplicativos do Teams instalados para todas as equipes| Permite que o aplicativo leia os aplicativos do Teams instalados para qualquer equipe, sem um usuário conectado. Não dá a capacidade de ler as configurações específicas do aplicativo.| Sim |
+| _TeamsAppInstallation.ReadWriteForTeam.All_ | Gerenciar aplicativos de Teams para todas as equipes| Permite que o aplicativo leia, instale, atualize e desinstale aplicativos do Teams em qualquer equipe, sem um usuário conectado. Não permite ler configurações específicas do aplicativo.| Sim |
+| _TeamsAppInstallation.ReadWriteSelfForTeam.All_ | Permitir que o aplicativo do Teams se gerencie para todas as equipes| Permite que o aplicativo do Teams se leia, se instale, se atualize e se desinstale em qualquer equipe, sem um usuário conectado.| Sim |
 
 ## <a name="threat-assessment-permissions"></a>Permissões de avaliação de ameaças
 

@@ -234,6 +234,8 @@ items:
                 href: windowsupdates-deploy-expedited-update.md
               - name: Agendar uma implantação
                 href: windowsupdates-schedule-deployment.md
+              - name: Gerenciar proteções
+                href: windowsupdates-manage-safeguards.md
               - name: Gerenciar regras de monitoramento
                 href: windowsupdates-manage-monitoring-rules.md
           - name: Gerenciamento multilocatário (visualização)
