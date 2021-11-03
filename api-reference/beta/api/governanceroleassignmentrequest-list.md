@@ -1,22 +1,24 @@
 ---
 title: Listar governançaRoleAssignmentRequests
 description: 'Recupere uma coleção de governanceRoleAssignmentRequests. '
-localization_priority: Normal
+ms.localizationpriority: medium
 doc_type: apiPageType
 ms.prod: governance
-author: shauliu1
-ms.openlocfilehash: 457b82415ecb8af2fc6a5629f5efaf412dc69faf
-ms.sourcegitcommit: 01755ac7c0ab7becf28052e05e58567caa8364cd
+author: carolinetempleton
+ms.openlocfilehash: 362bf41e9d7f94834a7002a46da2d076e0fbb944
+ms.sourcegitcommit: c7ff992ef63e480d070421ba99b28ee129cb6acb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/21/2021
-ms.locfileid: "58452453"
+ms.lasthandoff: 11/03/2021
+ms.locfileid: "60694656"
 ---
 # <a name="list-governanceroleassignmentrequests"></a>Listar governançaRoleAssignmentRequests
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
+[!INCLUDE [pim-v1resourceroles-deprecation](../../includes/pim-v1resourceroles-deprecation.md)]
 
 Recupere uma coleção de [governanceRoleAssignmentRequests](../resources/governanceroleassignmentrequest.md). 
 
@@ -31,7 +33,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 | Delegado (conta pessoal da Microsoft) | Sem suporte. |
 | Aplicativo | PrivilegedAccess.Read.AzureResources |
 
-### <a name="azure-ad"></a>Microsoft Azure Active Directory
+### <a name="azure-ad"></a>Microsoft Azure AD
 
 | Tipo de permissão | Permissões |
 |:--------------- |:----------- |

@@ -1,16 +1,16 @@
 ---
 title: Tipo de recurso unifiedRoleManagementPolicyRuleTarget
 description: Um unifiedRoleManagementPolicyRuleTarget especifica o destino associado à política de gerenciamento de função.
-author: shauliu1
+author: carolinetempleton
 ms.localizationpriority: medium
 ms.prod: governance
 doc_type: resourcePageType
-ms.openlocfilehash: 9dafa17179d5c2dbecc3446f56c146bdffcf0922
-ms.sourcegitcommit: 08e9b0bac39c1b1d2c8a79539d24aaa93364baf2
+ms.openlocfilehash: 6906d88c7430391fc1fcaf322c8d19ed72ab65b1
+ms.sourcegitcommit: c7ff992ef63e480d070421ba99b28ee129cb6acb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/24/2021
-ms.locfileid: "59767234"
+ms.lasthandoff: 11/03/2021
+ms.locfileid: "60695185"
 ---
 # <a name="unifiedrolemanagementpolicyruletarget-resource-type"></a>Tipo de recurso unifiedRoleManagementPolicyRuleTarget
 

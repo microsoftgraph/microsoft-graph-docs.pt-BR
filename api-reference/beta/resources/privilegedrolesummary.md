@@ -1,16 +1,16 @@
 ---
 title: Tipo de recurso privilegedRoleSummary
 description: O resumo de estatísticas para uma função específica.
-localization_priority: Normal
+ms.localizationpriority: medium
 doc_type: resourcePageType
 ms.prod: governance
-author: shauliu1
-ms.openlocfilehash: 1390804ca0d88eaee823e20ecb226c31609822e1
-ms.sourcegitcommit: 01755ac7c0ab7becf28052e05e58567caa8364cd
+author: carolinetempleton
+ms.openlocfilehash: e65179dcbccd6651bbfe51a314ea15a12a57da58
+ms.sourcegitcommit: c7ff992ef63e480d070421ba99b28ee129cb6acb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/21/2021
-ms.locfileid: "58454105"
+ms.lasthandoff: 11/03/2021
+ms.locfileid: "60694147"
 ---
 # <a name="privilegedrolesummary-resource-type"></a>Tipo de recurso privilegedRoleSummary
 
@@ -21,7 +21,7 @@ Namespace: microsoft.graph
 O resumo de estatísticas para uma função específica.
 
 
-## <a name="methods"></a>Métodos
+## <a name="methods"></a>Methods
 
 | Método           | Tipo de retorno    |Descrição|
 |:---------------|:--------|:----------|
@@ -31,7 +31,7 @@ O resumo de estatísticas para uma função específica.
 | Propriedade     | Tipo   |Descrição|
 |:---------------|:--------|:----------|
 |elevatedCount|int32|O número de usuários que têm a função atribuída e a função é ativada.|
-|id|string| O identificador exclusivo da função. Somente leitura.|
+|id|cadeia de caracteres| O identificador exclusivo da função. Somente leitura.|
 |managedCount|int32|O número de usuários que têm a função atribuída, mas a função é desativada.|
 |mfaEnabled|booliano|`true` se a ativação de função exigir MFA. `false` se a ativação de função não exigir MFA.|
 |status|roleSummaryStatus| Os valores possíveis são: `ok` e `bad`. O valor depende da taxa de (managedCount /usersCount). Se a taxa for menor que um limite predefinido, `ok` será retornado. Caso contrário, `bad` será retornado.|

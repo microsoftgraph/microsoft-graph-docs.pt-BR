@@ -1,16 +1,16 @@
 ---
 title: Tipo de recurso policyRoot
 description: Tipo de recurso expondo propriedades de navegação para o singleton de políticas.
-author: shauliu1
+author: carolinetempleton
 ms.localizationpriority: medium
 ms.prod: governance
 doc_type: resourcePageType
-ms.openlocfilehash: a9428b6b522a2dccc9d467d003490a97b00aa91c
-ms.sourcegitcommit: 2f394a9f33f2fab3634d0f18882985ee211067d1
+ms.openlocfilehash: 6f0a5b9862a955b9508fb9a9075a848646dbcac8
+ms.sourcegitcommit: c7ff992ef63e480d070421ba99b28ee129cb6acb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/05/2021
-ms.locfileid: "60127510"
+ms.lasthandoff: 11/03/2021
+ms.locfileid: "60688434"
 ---
 # <a name="policyroot-resource-type"></a>Tipo de recurso policyRoot
 
@@ -18,7 +18,7 @@ Namespace: microsoft.graph
 
 Tipo de recurso expondo propriedades de navegação para o singleton de políticas.
 
-## <a name="methods"></a>Métodos
+## <a name="methods"></a>Methods
 Nenhum
 
 ## <a name="properties"></a>Propriedades

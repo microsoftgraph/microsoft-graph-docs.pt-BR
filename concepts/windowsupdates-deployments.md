@@ -5,12 +5,12 @@ author: Alice-at-Microsoft
 ms.localizationpriority: medium
 ms.prod: w10
 doc_type: conceptualPageType
-ms.openlocfilehash: 550879fed2ea694f4c7c8c9dd5470c2eeace446b
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 5b875a62b3fe8fe35b7d7f0b69acc3395e8ab67f
+ms.sourcegitcommit: c7ff992ef63e480d070421ba99b28ee129cb6acb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59117575"
+ms.lasthandoff: 11/03/2021
+ms.locfileid: "60688616"
 ---
 # <a name="deployments-in-the-windows-update-for-business-deployment-service"></a>Implantações no serviço de implantação Windows Atualização para Empresas
 
@@ -57,21 +57,23 @@ Para saber mais sobre as configurações de experiência do usuário, [consulte 
 
 As implantações se movem pelos estados de ciclo de vida, conforme descrito na tabela a seguir.
 
-| Estado     | Descrição                                                                                       |
-|-----------|---------------------------------------------------------------------------------------------------|
+| Estado       | Descrição                                                                                       |
+|-------------|---------------------------------------------------------------------------------------------------|
 | `scheduled` | A implantação aguarda condições de oferta a serem atendidas para começar a oferecer a atualização para dispositivos. |
 | `offering`  | A implantação está oferecendo a atualização para dispositivos.                                                 |
 | `paused`    | A implantação é pausada e impedida de oferecer a atualização para dispositivos até que ela não seja implantada.  |
+| `faulted`   | A implantação não está oferecendo a atualização para dispositivos devido a um motivo pelo qual o serviço não pode resolver.  |
 
 
 ### <a name="transitions"></a>Transitions
 
-| Transition                     | Condition                                |
-|--------------------------------|------------------------------------------|
-| `scheduled` → `offering`           | A condição de agendamento é atendida.             |
-| `offering` → `scheduled`           | A condição de agendamento não é atendida.         |
+| Transition                           | Condição                                |
+|--------------------------------------|------------------------------------------|
+| `scheduled` → `offering`             | A condição de agendamento é atendida.             |
+| `offering` → `scheduled`             | A condição de agendamento não é atendida.         |
 | `scheduled` ou `offering` → `paused` | Há uma solicitação ou uma ação automática para pausar. |
 | `paused` → `scheduled` ou `offering` | Não há mais uma solicitação ou ação automática para pausar. |
+| `offering`, `scheduled` ou `paused` → `faulted` | Há um erro que o serviço não pode resolver. |
 
 ### <a name="resource-model"></a>Modelo de recurso
 

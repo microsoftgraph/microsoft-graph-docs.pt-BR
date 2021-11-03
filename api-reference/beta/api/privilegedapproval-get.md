@@ -1,22 +1,24 @@
 ---
 title: Get privilegedApproval
 description: Recupere as propriedades e as relações do objeto privilegedapproval.
-localization_priority: Normal
+ms.localizationpriority: medium
 doc_type: apiPageType
 ms.prod: governance
-author: shauliu1
-ms.openlocfilehash: 10e0a94630fac29a2edd410b18d6bbbf1413d3e2
-ms.sourcegitcommit: 01755ac7c0ab7becf28052e05e58567caa8364cd
+author: carolinetempleton
+ms.openlocfilehash: 1ee0d29be3fbd4e2bf908d5b457c6b7e3bc4ec67
+ms.sourcegitcommit: c7ff992ef63e480d070421ba99b28ee129cb6acb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/21/2021
-ms.locfileid: "58452859"
+ms.lasthandoff: 11/03/2021
+ms.locfileid: "60694488"
 ---
 # <a name="get-privilegedapproval"></a>Get privilegedApproval
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
+[!INCLUDE [pim-v1AADRoles-deprecation](../../includes/pim-v1aadroles-deprecation.md)]
 
 Recupere as propriedades e as relações do objeto privilegedapproval.
 ## <a name="permissions"></a>Permissões

@@ -1,22 +1,24 @@
 ---
 title: Listar tarefas
 description: Recupere uma lista de objetos privilegedRoleAssignment associados à função. Cada privilegedRoleAssignment representa uma atribuição de função a um usuário.
-localization_priority: Normal
+ms.localizationpriority: medium
 doc_type: apiPageType
 ms.prod: governance
-author: shauliu1
-ms.openlocfilehash: 55962741c22a89f126ad064294ce036d5b1905cc
-ms.sourcegitcommit: 01755ac7c0ab7becf28052e05e58567caa8364cd
+author: carolinetempleton
+ms.openlocfilehash: 4350321ac092646e55c2a0d8e6d546646ee3bca3
+ms.sourcegitcommit: c7ff992ef63e480d070421ba99b28ee129cb6acb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/21/2021
-ms.locfileid: "58454245"
+ms.lasthandoff: 11/03/2021
+ms.locfileid: "60688006"
 ---
 # <a name="list-assignments"></a>Listar tarefas
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
+[!INCLUDE [pim-v1AADRoles-deprecation](../../includes/pim-v1aadroles-deprecation.md)]
 
 Recupere uma lista de [objetos privilegedRoleAssignment](../resources/privilegedroleassignment.md) associados à função. Cada [privilegedRoleAssignment](../resources/privilegedroleassignment.md) representa uma atribuição de função a um usuário.
 ## <a name="permissions"></a>Permissões

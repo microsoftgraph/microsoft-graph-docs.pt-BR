@@ -1,27 +1,29 @@
 ---
 title: Tipo de recurso privilegedRole
-description: 'Representa uma função de administrador do Azure AD, como: **Administrador Global,** Administrador de Cobrança, Administrador de Serviço, Administrador de Usuário, Administrador de Senha etc.'
-localization_priority: Normal
+description: 'Representa uma função de administrador do Azure AD, como: Administrador Global, Administrador de Cobrança, Administrador de Serviço, Administrador de Usuário e Administrador de Senha.'
+ms.localizationpriority: medium
 doc_type: resourcePageType
 ms.prod: governance
-author: shauliu1
-ms.openlocfilehash: 5784a28ec18c0ed02540321d92ee2bab386dc760
-ms.sourcegitcommit: 01755ac7c0ab7becf28052e05e58567caa8364cd
+author: carolinetempleton
+ms.openlocfilehash: 756ffd580a2f44fad1631bbfd153d1320f1aef05
+ms.sourcegitcommit: c7ff992ef63e480d070421ba99b28ee129cb6acb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/21/2021
-ms.locfileid: "58452411"
+ms.lasthandoff: 11/03/2021
+ms.locfileid: "60687673"
 ---
-# <a name="privilegedrole-resource-type"></a>Tipo de recurso privilegedRole
+# <a name="privilegedrole-resource-type-deprecated"></a>Tipo de recurso privilegedRole (preterido)
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Representa uma função de administrador do Azure AD, como: **Administrador Global,** Administrador de Cobrança, Administrador de Serviço, Administrador de Usuário, Administrador de Senha etc.
+[!INCLUDE [pim-v1AADRoles-deprecation](../../includes/pim-v1aadroles-deprecation.md)]
+
+Representa uma função de administrador interna do [Azure AD](/azure/active-directory/roles/permissions-reference), por exemplo, **Administrador Global,** Administrador de Cobrança, Administrador de Serviço, Administrador de Usuário e **Administrador de Senha.**
 
 
-## <a name="methods"></a>Métodos
+## <a name="methods"></a>Methods
 
 | Método           | Tipo de retorno    |Descrição|
 |:---------------|:--------|:----------|
@@ -34,10 +36,10 @@ Representa uma função de administrador do Azure AD, como: **Administrador Glob
 ## <a name="properties"></a>Propriedades
 | Propriedade     | Tipo   |Descrição|
 |:---------------|:--------|:----------|
-|id|string|O identificador exclusivo da função de administrador. É uma cadeia de caracteres GUID e tem o mesmo valor que a id do modelo de função do Azure AD para a função determinada. Somente leitura.|
+|id|cadeia de caracteres|O identificador exclusivo da função de administrador. É uma cadeia de caracteres GUID e tem o mesmo valor que a id do modelo de função do Azure AD para a função determinada. Somente leitura.|
 |name|string|Nome da função.|
 
-## <a name="relationships"></a>Relacionamentos
+## <a name="relationships"></a>Relações
 | Relação | Tipo   |Descrição|
 |:---------------|:--------|:----------|
 |assignments|[privilegedRoleAssignment](privilegedroleassignment.md) collection| As atribuições dessa função. Somente leitura. Anulável.|

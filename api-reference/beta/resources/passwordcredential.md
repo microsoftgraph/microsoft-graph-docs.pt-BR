@@ -1,16 +1,16 @@
 ---
 title: Tipo de recurso passwordCredential
 description: Contém uma credencial de senha associada a um aplicativo ou uma entidade de serviço.
-localization_priority: Normal
+ms.localizationpriority: medium
 doc_type: resourcePageType
 ms.prod: applications
-author: sureshja
-ms.openlocfilehash: e1facb9b3a4de7c8cd5086efbd9ca4cea72fe84a
-ms.sourcegitcommit: c6f7a931a8d83ac54f577b7bec08237fd17ce51a
+author: madansr7
+ms.openlocfilehash: 69bd0e70bb67e9940b2ce6f7774e7797c553ca71
+ms.sourcegitcommit: c7ff992ef63e480d070421ba99b28ee129cb6acb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/24/2021
-ms.locfileid: "58490627"
+ms.lasthandoff: 11/03/2021
+ms.locfileid: "60689043"
 ---
 # <a name="passwordcredential-resource-type"></a>Tipo de recurso passwordCredential
 
@@ -33,11 +33,11 @@ Representa uma credencial de senha associada a um aplicativo ou uma entidade de 
 | Propriedade     | Tipo   |Descrição|
 |:---------------|:--------|:----------|
 | customKeyIdentifier | Binário | Não usar. |
-| displayName | Cadeia de caracteres | Nome amigável para a senha. Opcional. |
+| displayName | String | Nome amigável para a senha. Opcional. |
 | endDateTime | DateTimeOffset | A data e a hora em que a senha expira representada usando o formato ISO 8601 e está sempre em horário UTC. Por exemplo, meia-noite UTC em 1 de janeiro de 2014 é `2014-01-01T00:00:00Z`. Opcional. |
-| dica | Cadeia de caracteres | Contém os três primeiros caracteres da senha. Somente leitura. |
+| dica | String | Contém os três primeiros caracteres da senha. Somente leitura. |
 | keyId | Guid | O identificador exclusivo da senha. |
-| secretText | Cadeia de caracteres | Somente leitura; Contém as senhas fortes geradas pelo Azure AD que têm entre 16 e 64 caracteres. O valor de senha gerado só é retornado durante a solicitação POST inicial [para addPassword](../api/application-addpassword.md). Não há como recuperar essa senha no futuro. |
+| secretText | String | Somente leitura; Contém as senhas fortes geradas pelo Azure AD que têm entre 16 e 64 caracteres. O valor de senha gerado só é retornado durante a solicitação POST inicial [para addPassword](../api/application-addpassword.md). Não há como recuperar essa senha no futuro. |
 | startDateTime | DateTimeOffset | A data e a hora em que a senha se torna válida. O tipo Timestamp representa informações de data e hora usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite UTC em 1 de janeiro de 2014 é `2014-01-01T00:00:00Z`. Opcional. |
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79

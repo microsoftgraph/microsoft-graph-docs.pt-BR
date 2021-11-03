@@ -3,12 +3,12 @@ title: Fazer chamadas de API usando o Microsoft Graph SDKs
 description: Fornece instruções para criar solicitações HTTP Graph Microsoft usando os SDKs.
 ms.localizationpriority: medium
 author: DarrelMiller
-ms.openlocfilehash: 84b6f8bddd8e44faaf9724db29d694d9f2b6512b
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: d8b7233fb360b3dd5bba088c6d193a6bac18f304
+ms.sourcegitcommit: c7ff992ef63e480d070421ba99b28ee129cb6acb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59055812"
+ms.lasthandoff: 11/03/2021
+ms.locfileid: "60695381"
 ---
 # <a name="make-api-calls-using-the-microsoft-graph-sdks"></a>Fazer chamadas de API usando o Microsoft Graph SDKs
 
@@ -109,7 +109,7 @@ Para SDKs que suportam um estilo fluente, coleções de entidades podem ser aces
 
 ## <a name="use-expand-to-access-related-entities"></a>Usar $expand para acessar entidades relacionadas
 
-Você pode usar o filtro para solicitar uma entidade relacionada ou uma coleção de entidades, ao mesmo `$expand` tempo em que solicita a entidade principal.
+Você pode usar o filtro para solicitar uma entidade relacionada ou uma coleção de entidades, ao mesmo tempo em que `$expand` solicita a entidade principal.
 
 # <a name="c"></a>[C#](#tab/CS)
 

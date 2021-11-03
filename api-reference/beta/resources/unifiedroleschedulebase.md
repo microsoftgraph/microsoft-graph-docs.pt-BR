@@ -1,16 +1,16 @@
 ---
 title: Tipo de recurso unifiedRoleScheduleBase
 description: Propriedade base de agendamentos de função unificada que combina agendas de atribuição de função unificada e agendas de qualificação de função unificada
-author: shauliu1
+author: carolinetempleton
 ms.localizationpriority: medium
 ms.prod: governance
 doc_type: resourcePageType
-ms.openlocfilehash: e93caa68371527a06d18a92249ed285af1fb6e19
-ms.sourcegitcommit: 11be55b40804b07f4c422f09f601afa97c7d31ed
+ms.openlocfilehash: fb23dab2fe788e3fb4e157d388a29cd481b08e90
+ms.sourcegitcommit: c7ff992ef63e480d070421ba99b28ee129cb6acb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/09/2021
-ms.locfileid: "60256540"
+ms.lasthandoff: 11/03/2021
+ms.locfileid: "60695717"
 ---
 # <a name="unifiedroleschedulebase-resource-type"></a>Tipo de recurso unifiedRoleScheduleBase
 
@@ -24,15 +24,15 @@ Propriedade base de agendamentos de função unificada que combina agendas de at
 
 | Propriedade         | Tipo           | Descrição               |
 | :--------------- | :------------- | :------------------------ |
-| appScopeId       | Cadeia de Caracteres         | Identificador do escopo específico do aplicativo quando o escopo de atribuição for específico do aplicativo. O escopo de uma atribuição determina o conjunto de recursos para os quais a entidade foi concedida acesso. Os escopos do aplicativo são escopos definidos e compreendidos somente por esse aplicativo. Use `/` para escopos de aplicativos de todo o locatário. Use **directoryScopeId** para limitar o escopo a objetos de diretório específicos, por exemplo, unidades administrativas ou todos os usuários. |
+| appScopeId       | String         | Identificador do escopo específico do aplicativo quando o escopo de atribuição for específico do aplicativo. O escopo de uma atribuição determina o conjunto de recursos para os quais a entidade foi concedida acesso. Os escopos do aplicativo são escopos definidos e compreendidos somente por esse aplicativo. Use `/` para escopos de aplicativos de todo o locatário. Use **directoryScopeId** para limitar o escopo a objetos de diretório específicos, por exemplo, unidades administrativas ou todos os usuários. |
 | createdDateTime  | DateTimeOffset | Hora em que a agenda foi criada. |
-| createdUsing     | Cadeia de Caracteres         | Identificador da roleAssignmentScheduleRequest que criou essa agenda. |
-| directoryScopeId | Cadeia de Caracteres         | Identificador do objeto directory que representa o escopo da atribuição. O escopo de uma atribuição determina o conjunto de recursos para os quais a entidade foi concedida acesso. Os escopos de diretório são escopos compartilhados armazenados no diretório que são compreendidos por vários aplicativos. Use `/` para escopo de todo o locatário. Use **appScopeId** para limitar o escopo somente a um aplicativo. |
+| createdUsing     | String         | Identificador da roleAssignmentScheduleRequest que criou essa agenda. |
+| directoryScopeId | String         | Identificador do objeto directory que representa o escopo da atribuição. O escopo de uma atribuição determina o conjunto de recursos para os quais a entidade foi concedida acesso. Os escopos de diretório são escopos compartilhados armazenados no diretório que são compreendidos por vários aplicativos. Use `/` para escopo de todo o locatário. Use **appScopeId** para limitar o escopo somente a um aplicativo. |
 | id               | String         | O identificador exclusivo para unifiedRoleAssignmentSchedule. Chave, não anulada, somente leitura. |
 | modifiedDateTime | DateTimeOffset | Última vez que a agenda foi atualizada. |
-| principalId      | Cadeia de Caracteres         | Identificador da entidade à qual a atribuição está sendo concedida. Suporta `$filter` (`eq`). |
-| roleDefinitionId | Cadeia de Caracteres         | Identificador do unifiedRoleDefinition para o que a atribuição se destina. Somente leitura. Suporta `$filter` (`eq`). |
-| status           | Cadeia de caracteres         | Status do `roleAssignmentSchedule` . Pode incluir mensagens relacionadas ao `Provisioned` estado, `Revoked` como , , `Pending Provisioning` e `Pending Approval` . Suporta `$filter` (`eq`).  |
+| principalId      | String         | Identificador da entidade à qual a atribuição está sendo concedida. Suporta `$filter` (`eq`). |
+| roleDefinitionId | String         | Identificador do unifiedRoleDefinition para o que a atribuição se destina. Somente leitura. Suporta `$filter` (`eq`). |
+| status           | String         | Status do `roleAssignmentSchedule` . Pode incluir mensagens relacionadas ao `Provisioned` estado, `Revoked` como , , `Pending Provisioning` e `Pending Approval` . Suporta `$filter` (`eq`).  |
 
 ## <a name="relationships"></a>Relações
 

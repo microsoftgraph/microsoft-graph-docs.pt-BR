@@ -1,22 +1,24 @@
 ---
 title: Criar privilegedRoleAssignmentRequest
 description: Crie um objeto privilegedroleassignmentrequest.
-localization_priority: Normal
+ms.localizationpriority: medium
 doc_type: apiPageType
 ms.prod: governance
-author: shauliu1
-ms.openlocfilehash: a8ab04d03efa9c54fdc226db9e57939ba193d9ee
-ms.sourcegitcommit: 01755ac7c0ab7becf28052e05e58567caa8364cd
+author: carolinetempleton
+ms.openlocfilehash: d93208b587490b75ae563ec960e158411b32164b
+ms.sourcegitcommit: c7ff992ef63e480d070421ba99b28ee129cb6acb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/21/2021
-ms.locfileid: "58453706"
+ms.lasthandoff: 11/03/2021
+ms.locfileid: "60695997"
 ---
 # <a name="create-privilegedroleassignmentrequest"></a>Criar privilegedRoleAssignmentRequest
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
+[!INCLUDE [pim-v1AADRoles-deprecation](../../includes/pim-v1aadroles-deprecation.md)]
 
 Crie um [objeto privilegedroleassignmentrequest.](../resources/privilegedroleassignmentrequest.md)
 
@@ -45,10 +47,10 @@ No corpo da solicitação, fornece uma representação JSON [do objeto privilege
 
 | Propriedade     | Tipo    |  Descrição|
 |:---------------|:--------|:----------|
-|roleId|Cadeia de caracteres|A ID da função. Obrigatório.|
-|type|Cadeia de caracteres|Representa o tipo da operação na atribuição de função. O valor pode ser `AdminAdd` : Administradores adicionam usuários a funções; `UserAdd` : Os usuários adicionam atribuições de função. Obrigatório.|
-|assignmentState|Cadeia de caracteres|O estado da atribuição. O valor pode ser para atribuição qualificada - se ele for atribuído diretamente pelos administradores ou ativado em uma atribuição qualificada `Eligible` `Active` pelos `Active` usuários. Os valores possíveis são: ``NotStarted``, `Completed`, `RequestedApproval`, `Scheduled`, `Approved`, `ApprovalDenied`, `ApprovalAborted`, `Cancelling`, `Cancelled`, `Revoked`, `RequestExpired`. Obrigatório.|
-|motivo|Cadeia de caracteres|O motivo precisa ser fornecido para a solicitação de atribuição de função para fins de auditoria e revisão.|
+|roleId|String|A ID da função. Obrigatório.|
+|type|String|Representa o tipo da operação na atribuição de função. O valor pode ser `AdminAdd` : Administradores adicionam usuários a funções; `UserAdd` : Os usuários adicionam atribuições de função. Obrigatório.|
+|assignmentState|String|O estado da atribuição. O valor pode ser para atribuição qualificada - se ele for atribuído diretamente pelos administradores ou ativado em uma atribuição qualificada `Eligible` `Active` pelos `Active` usuários. Os valores possíveis são: ``NotStarted``, `Completed`, `RequestedApproval`, `Scheduled`, `Approved`, `ApprovalDenied`, `ApprovalAborted`, `Cancelling`, `Cancelled`, `Revoked`, `RequestExpired`. Obrigatório.|
+|motivo|String|O motivo precisa ser fornecido para a solicitação de atribuição de função para fins de auditoria e revisão.|
 |Cronograma|[governanceSchedule](../resources/governanceschedule.md)|O cronograma da solicitação de atribuição de função.|
 
 ## <a name="response"></a>Resposta

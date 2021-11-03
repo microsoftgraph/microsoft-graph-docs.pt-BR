@@ -1,16 +1,16 @@
 ---
 title: Listar regras
 description: Obter os recursos unifiedRoleManagementPolicyRule da propriedade de navegação de regras.
-author: shauliu1
-localization_priority: Normal
+author: carolinetempleton
+ms.localizationpriority: medium
 ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: a06d336b2ed8b657b0eb21095f67d9ee9ca7da8c
-ms.sourcegitcommit: 01755ac7c0ab7becf28052e05e58567caa8364cd
+ms.openlocfilehash: 990967227b324163eff2cf2f46270bd346cceb27
+ms.sourcegitcommit: c7ff992ef63e480d070421ba99b28ee129cb6acb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/21/2021
-ms.locfileid: "58453895"
+ms.lasthandoff: 11/03/2021
+ms.locfileid: "60688497"
 ---
 # <a name="list-rules"></a>Listar regras
 Namespace: microsoft.graph

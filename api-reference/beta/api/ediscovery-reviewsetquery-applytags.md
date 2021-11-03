@@ -2,15 +2,15 @@
 title: 'reviewSetQuery: applyTags'
 description: Aplique marcas a documentos que corresponderem à consulta especificada.
 author: mahage-msft
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: ediscovery
 doc_type: apiPageType
-ms.openlocfilehash: 19e9e64d57ec2966ecc3ff1596849f322575a692
-ms.sourcegitcommit: 40947e6f4337c8c4193d85bb862e15f67263e1e7
+ms.openlocfilehash: 96d70f9e1d41ee279ceae3dd4edcaeffa9d73b8b
+ms.sourcegitcommit: c7ff992ef63e480d070421ba99b28ee129cb6acb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/13/2021
-ms.locfileid: "50772819"
+ms.lasthandoff: 11/03/2021
+ms.locfileid: "60688363"
 ---
 # <a name="reviewsetquery-applytags"></a>reviewSetQuery: applyTags
 
@@ -18,7 +18,7 @@ Namespace: microsoft.graph.ediscovery
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>Permissões
 
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
@@ -48,7 +48,7 @@ POST /compliance/ediscovery/cases/{caseId}/reviewSets/{reviewSetId}/queries/{rev
 
 ## <a name="request-body"></a>Corpo da solicitação
 
-No corpo da solicitação, forneça uma representação JSON dos parâmetros.
+No corpo da solicitação, fornece uma representação JSON dos parâmetros.
 
 A tabela a seguir mostra os parâmetros que podem ser usados com esta ação.
 

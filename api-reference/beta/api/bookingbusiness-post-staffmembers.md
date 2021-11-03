@@ -9,8 +9,8 @@ ms.openlocfilehash: e4900d9295cfac1d48a20899080734bfa757b16f
 ms.sourcegitcommit: c7ff992ef63e480d070421ba99b28ee129cb6acb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/02/2021
-ms.locfileid: "60673567"
+ms.lasthandoff: 11/03/2021
+ms.locfileid: "60688721"
 ---
 # <a name="create-bookingstaffmember"></a>Criar bookingStaffMember
 

@@ -1,16 +1,16 @@
 ---
 title: Tipo de recurso privilegedRoleSettings
 description: Representa as configurações de uma função privilegiada.
-localization_priority: Normal
+ms.localizationpriority: medium
 doc_type: resourcePageType
 ms.prod: governance
-author: shauliu1
-ms.openlocfilehash: b954dbc0dc72028d60861c5c07820302f3cbe19d
-ms.sourcegitcommit: 01755ac7c0ab7becf28052e05e58567caa8364cd
+author: carolinetempleton
+ms.openlocfilehash: 6085d6bc74a1399ea4baf0cc575ecb316a3519e9
+ms.sourcegitcommit: c7ff992ef63e480d070421ba99b28ee129cb6acb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/21/2021
-ms.locfileid: "58454119"
+ms.lasthandoff: 11/03/2021
+ms.locfileid: "60694164"
 ---
 # <a name="privilegedrolesettings-resource-type"></a>Tipo de recurso privilegedRoleSettings
 
@@ -21,7 +21,7 @@ Namespace: microsoft.graph
 Representa as configurações de uma função privilegiada.
 
 
-## <a name="methods"></a>Métodos
+## <a name="methods"></a>Methods
 
 | Método           | Tipo de retorno    |Descrição|
 |:---------------|:--------|:----------|
@@ -31,7 +31,7 @@ Representa as configurações de uma função privilegiada.
 | Propriedade     | Tipo   |Descrição|
 |:---------------|:--------|:----------|
 |elevationDuration|duração|A duração quando a função é ativada.|
-|id|string| O identificador exclusivo para as configurações de função. Somente leitura.|
+|id|cadeia de caracteres| O identificador exclusivo para as configurações de função. Somente leitura.|
 |isMfaOnElevationConfigurable|booliano|`true` se **mfaOnElevation** for configurável. `false` se **mfaOnElevation** não for configurável.|
 |lastGlobalAdmin|booliano|Somente uso interno.|
 |maxElavationDuration|duração|Duração máxima da função ativada.|

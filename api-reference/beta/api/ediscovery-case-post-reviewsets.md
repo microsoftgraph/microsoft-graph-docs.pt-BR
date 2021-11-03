@@ -1,16 +1,16 @@
 ---
 title: Criar reviewSet
 description: Crie um conjunto de revisão de Descobertas EDiscovery.
-localization_priority: Normal
+ms.localizationpriority: medium
 author: mahage-msft
 ms.prod: ediscovery
 doc_type: apiPageType
-ms.openlocfilehash: ef13c35d3450cfd7f409a59a543662ffeb5db0e5
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: f1465e18b494088dc41587f2db2fd8e098f201cb
+ms.sourcegitcommit: c7ff992ef63e480d070421ba99b28ee129cb6acb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52044729"
+ms.lasthandoff: 11/03/2021
+ms.locfileid: "60688020"
 ---
 # <a name="create-reviewset"></a>Criar reviewSet
 
@@ -46,7 +46,7 @@ POST /compliance/ediscovery/cases/{id}/reviewSets
 
 ## <a name="request-body"></a>Corpo da solicitação
 
-No corpo da solicitação, fornece representação JSON do [reviewSet](../resources/ediscovery-reviewset.md).  A tabela a seguir lista as propriedades necessárias.
+No corpo da solicitação, fornece uma representação JSON do [reviewSet](../resources/ediscovery-reviewset.md).  A tabela a seguir lista as propriedades necessárias.
 
 | Propriedade     | Tipo        | Descrição |
 |:-------------|:------------|:------------|
@@ -91,8 +91,6 @@ Content-type: application/json
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/post-reviewset-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
----
 
 
 ### <a name="response"></a>Resposta

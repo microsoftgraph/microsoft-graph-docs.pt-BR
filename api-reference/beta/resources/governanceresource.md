@@ -9,8 +9,8 @@ ms.openlocfilehash: e3a01feb6c33252b377e5d1929c4f6edac0901ce
 ms.sourcegitcommit: c7ff992ef63e480d070421ba99b28ee129cb6acb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/02/2021
-ms.locfileid: "60668991"
+ms.lasthandoff: 11/03/2021
+ms.locfileid: "60693154"
 ---
 # <a name="governanceresource-resource-type"></a>Tipo de recurso governanceResource
 

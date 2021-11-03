@@ -1,16 +1,16 @@
 ---
 title: Tipo de recurso unifiedRoleEligibilityScheduleRequest
 description: Representa a solicitação de operações de atribuição de função qualificadas por meio do Azure AD Privileged Identity Management.
-author: shauliu1
-localization_priority: Normal
+author: carolinetempleton
+ms.localizationpriority: medium
 ms.prod: governance
 doc_type: resourcePageType
-ms.openlocfilehash: 290ff003999bf16842240062277ee88f942e4b1d
-ms.sourcegitcommit: 01755ac7c0ab7becf28052e05e58567caa8364cd
+ms.openlocfilehash: 446e5f32ab7443266c16b6d89a9d0fa9913e48e4
+ms.sourcegitcommit: c7ff992ef63e480d070421ba99b28ee129cb6acb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/21/2021
-ms.locfileid: "58453881"
+ms.lasthandoff: 11/03/2021
+ms.locfileid: "60695227"
 ---
 # <a name="unifiedroleeligibilityschedulerequest-resource-type"></a>Tipo de recurso unifiedRoleEligibilityScheduleRequest
 
@@ -26,7 +26,7 @@ Os administradores podem usar **unifiedRoleEligibilityScheduleRequest'** para cr
 
 Herda da [solicitação](request.md).
 
-## <a name="methods"></a>Métodos
+## <a name="methods"></a>Methods
 |Método|Tipo de retorno|Descrição|
 |:---|:---|:---|
 |[Listar unifiedRoleEligibilityScheduleRequests](../api/unifiedroleeligibilityschedulerequest-list.md)|[Coleção unifiedRoleEligibilityScheduleRequest](../resources/unifiedroleeligibilityschedulerequest.md)|Obter uma lista dos [objetos unifiedRoleEligibilityScheduleRequest](../resources/unifiedroleeligibilityschedulerequest.md) e suas propriedades.|
@@ -38,25 +38,25 @@ Herda da [solicitação](request.md).
 ## <a name="properties"></a>Propriedades
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|ação|Cadeia de caracteres|Representa o tipo da operação na atribuição de qualificação de função. Os valores possíveis são: <ul><li>`AdminAdd`: Para que os administradores atribuam qualificação de função a usuários ou grupos a funções.</li><li>`AdminExtend`: Para que os administradores estendam atribuições expiradas.</li><li>`AdminUpdate`: Para que os administradores alterem as atribuições de função existentes.</li><li>`AdminRenew`: Para que os administradores renovem atribuições expiradas.</li><li>`AdminRemove`: Para que os administradores removam usuários ou grupos de funções qualificadas.</li><li>`UserAdd`: Para que os usuários ativem suas atribuições qualificadas.</li><li>`UserExtend`: Para que os usuários solicitem estender suas atribuições qualificadas expiradas.</li><li>`UserRemove`: Para que os usuários desativem suas atribuições elegíveis ativas.</li><li>`UserRenew`: Para que os usuários solicitem a renovação de suas atribuições qualificadas expiradas.</li></ul>|
-|approvalId|Cadeia de caracteres|O identificador da aprovação da solicitação. Herdado da [solicitação](request.md).|
-|appScopeId|Cadeia de caracteres|Identificador do escopo específico do aplicativo quando o escopo de atribuição for específico do aplicativo. O escopo de uma atribuição determina o conjunto de recursos para os quais a entidade foi concedida acesso. Os escopos do aplicativo são escopos definidos e compreendidos somente por esse aplicativo. Use `/` para escopos de aplicativos de todo o locatário. Use **directoryScopeId** para limitar o escopo a objetos de diretório específicos, por exemplo, unidades administrativas.|
+|ação|String|Representa o tipo da operação na atribuição de qualificação de função. Os valores possíveis são: <ul><li>`AdminAssign`: Para que os administradores atribuam qualificação de função a usuários ou grupos a funções.</li><li>`AdminExtend`: Para que os administradores estendam atribuições expiradas.</li><li>`AdminUpdate`: Para que os administradores alterem as atribuições de função existentes.</li><li>`AdminRenew`: Para que os administradores renovem atribuições expiradas.</li><li>`AdminRemove`: Para que os administradores removam usuários ou grupos de funções qualificadas.</li><li>`UserAdd`: Para que os usuários ativem suas atribuições qualificadas.</li><li>`UserExtend`: Para que os usuários solicitem estender suas atribuições qualificadas expiradas.</li><li>`UserRemove`: Para que os usuários desativem suas atribuições elegíveis ativas.</li><li>`UserRenew`: Para que os usuários solicitem a renovação de suas atribuições qualificadas expiradas.</li></ul>|
+|approvalId|String|O identificador da aprovação da solicitação. Herdado da [solicitação](request.md).|
+|appScopeId|String|Identificador do escopo específico do aplicativo quando o escopo de atribuição for específico do aplicativo. O escopo de uma atribuição determina o conjunto de recursos para os quais a entidade foi concedida acesso. Os escopos do aplicativo são escopos definidos e compreendidos somente por esse aplicativo. Use `/` para escopos de aplicativos de todo o locatário. Use **directoryScopeId** para limitar o escopo a objetos de diretório específicos, por exemplo, unidades administrativas.|
 |completedDateTime|DateTimeOffset|A data de conclusão da solicitação. Herdado da [solicitação](request.md).|
 |createdBy|[identitySet](identityset.md)|O usuário que criou essa solicitação. Herdado da [solicitação](request.md).|
 |createdDateTime|DateTimeOffset|A data de criação da solicitação. Herdado da [solicitação](request.md).|
-|customData|Cadeia de caracteres|Campo de texto livre para definir quaisquer dados personalizados para a solicitação. Não usado. Herdado da [solicitação](request.md).|
-|directoryScopeId|Cadeia de caracteres|Identificador do objeto directory que representa o escopo da atribuição. O escopo de uma atribuição determina o conjunto de recursos para os quais a entidade foi concedida acesso. Os escopos de diretório são escopos compartilhados armazenados no diretório que são compreendidos por vários aplicativos. Use `/` para escopo de todo o locatário. Use **appScopeId** para limitar o escopo somente a um aplicativo.|
-|id|Cadeia de caracteres|O identificador exclusivo para unifiedRoleEligibilityScheduleRequest. Somente leitura.|
+|customData|String|Campo de texto livre para definir quaisquer dados personalizados para a solicitação. Não usado. Herdado da [solicitação](request.md).|
+|directoryScopeId|String|Identificador do objeto directory que representa o escopo da atribuição. O escopo de uma atribuição determina o conjunto de recursos para os quais a entidade foi concedida acesso. Os escopos de diretório são escopos compartilhados armazenados no diretório que são compreendidos por vários aplicativos. Use `/` para escopo de todo o locatário. Use **appScopeId** para limitar o escopo somente a um aplicativo.|
+|id|String|O identificador exclusivo para unifiedRoleEligibilityScheduleRequest. Somente leitura.|
 |isValidationOnly|Booliano|Um booleano que determina se a chamada é uma validação ou uma chamada real. De definir essa propriedade somente se você quiser verificar se uma ativação está sujeita a regras adicionais, como MFA, antes de realmente enviar a solicitação.|
-|justification|Cadeia de caracteres|Uma mensagem fornecida por usuários e administradores ao criar a solicitação sobre por que ela é necessária.|
-|principalId|Cadeia de caracteres| Identificador da entidade à qual a atribuição está sendo concedida. Por exemplo, um usuário ou um grupo. Para grupos, eles devem ser atribuídos a funções, ou seja, **o isAssignableToRole** da propriedade group definida como `true` .|
-|roleDefinitionId|Cadeia de caracteres|Identificador do unifiedRoleDefinition para o que a atribuição se destina. Somente leitura.|
+|justification|String|Uma mensagem fornecida por usuários e administradores ao criar a solicitação sobre por que ela é necessária.|
+|principalId|String| Identificador da entidade à qual a atribuição está sendo concedida. Por exemplo, um usuário ou um grupo. Para grupos, eles devem ser atribuídos a funções, ou seja, **o isAssignableToRole** da propriedade group definida como `true` .|
+|roleDefinitionId|String|Identificador do unifiedRoleDefinition para o que a atribuição se destina. Somente leitura.|
 |scheduleInfo|[requestSchedule](../resources/requestschedule.md)|O objeto schedule da solicitação de atribuição de função.|
-|status|Cadeia de caracteres|O objeto schedule da solicitação de qualificação de função. Herdado da [solicitação](request.md).|
-|targetScheduleId|Cadeia de caracteres|O período de tempo para o qual a atribuição de qualificação é válida.|
+|status|String|O objeto schedule da solicitação de qualificação de função. Herdado da [solicitação](request.md).|
+|targetScheduleId|String|O período de tempo para o qual a atribuição de qualificação é válida.|
 |ticketInfo|[ticketInfo](../resources/ticketinfo.md)|Os detalhes do número do tíquete e do sistema de tíquetes anexados à solicitação de atribuição de função.|
 
-## <a name="relationships"></a>Relacionamentos
+## <a name="relationships"></a>Relações
 |Relação|Tipo|Descrição|
 |:---|:---|:---|
 |appScope|[appScope](../resources/appscope.md)|Propriedade somente leitura com detalhes do escopo específico do aplicativo quando o escopo de atribuição é específico do aplicativo. Entidade de contenção.|

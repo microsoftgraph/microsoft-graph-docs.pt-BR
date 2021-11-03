@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: isabelleatmsft
 ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: aecea534fd74707241928424fe32fb2135c7d64b
-ms.sourcegitcommit: 0eb843a6f61f384bc28c0cce1ccb74f64bdb1fa6
+ms.openlocfilehash: 60473551b20dc38ba12c97d68b370fa524ddae03
+ms.sourcegitcommit: c7ff992ef63e480d070421ba99b28ee129cb6acb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/23/2021
-ms.locfileid: "60559166"
+ms.lasthandoff: 11/03/2021
+ms.locfileid: "60688065"
 ---
 # <a name="update-accessreviewscheduledefinition"></a>Atualizar accessReviewScheduleDefinition
 
@@ -31,7 +31,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |:--------------------------------------|:---------------------------------------------------------|
 |Delegado (conta corporativa ou de estudante)     | AccessReview.ReadWrite.All |
 |Delegado (conta pessoal da Microsoft)|Sem suporte.|
-|Application                            | AccessReview.ReadWrite.All |
+|Aplicativo                            | AccessReview.ReadWrite.All |
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- { "blockType": "ignored" } -->
@@ -51,9 +51,9 @@ A tabela a seguir mostra as propriedades aceitas para atualizar um accessReviewS
 
 | Propriedade | Tipo | Descrição |
 |:-------------|:------------|:------------|
-| descriptionForAdmins | Cadeia de Caracteres | Contexto da revisão fornecida aos administradores. |
-| descriptionForReviewers | Cadeia de Caracteres | Contexto da revisão fornecida aos revisadores. |
-| displayName | Cadeia de caracteres | Nome da série de revisão de acesso. |
+| descriptionForAdmins | String | Contexto da revisão fornecida aos administradores. |
+| descriptionForReviewers | String | Contexto da revisão fornecida aos revisadores. |
+| displayName | String | Nome da série de revisão de acesso. |
 | fallbackReviewers|[Coleção accessReviewReviewerScope](../resources/accessreviewreviewerscope.md)|Uma coleção de escopos do revistor usado para definir a lista de revisadores de fallback que são notificados para tomar medidas se nenhum usuário for encontrado na lista de revisadores especificados. Isso pode ocorrer quando o proprietário do grupo é especificado como o revistor, mas o proprietário do grupo não existe, ou o gerente é especificado como revistor, mas o gerente de um usuário não existe.|
 | revisadores | [Coleção accessReviewReviewerScope](../resources/accessreviewreviewerscope.md)|  Define quem são os revisadores. Se nenhum for especificado, a revisão será uma autoavaliação (os usuários revisam seu próprio acesso). A **propriedade reviewers** só será atualizável se usuários individuais são atribuídos como revistores. Consulte [accessReviewReviewerScope](../resources/accessreviewreviewerscope.md). |
 | configurações | [accessReviewScheduleSettings](../resources/accessreviewschedulesettings.md) | As configurações de uma série de revisão de acesso. Consulte [accessReviewScheduleSettings](../resources/accessreviewschedulesettings.md). |
@@ -88,10 +88,12 @@ Content-type: application/json
   "descriptionForAdmins": "Test world",
   "descriptionForReviewers": "Test world",
   "scope": {
+    "@odata.type": "#microsoft.graph.accessReviewQueryScope",
     "query": "/groups/b7a059cb-038a-4802-8fc9-b9d1ed0cf11f/transitiveMembers",
     "queryType": "MicrosoftGraph"
   },
   "instanceEnumerationScope": {
+    "@odata.type": "#microsoft.graph.accessReviewQueryScope",
     "query": "/groups/b7a059cb-038a-4802-8fc9-b9d1ed0cf11f",
     "queryType": "MicrosoftGraph"
   },

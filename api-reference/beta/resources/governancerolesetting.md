@@ -1,16 +1,16 @@
 ---
 title: Tipo de recurso governanceRoleSetting
 description: Representa um conjunto de configurações em cada definição de função que precisa ser avaliada quando as atribuições de função são criadas ou modificadas.
-localization_priority: Normal
+ms.localizationpriority: medium
 doc_type: resourcePageType
 ms.prod: governance
-author: shauliu1
-ms.openlocfilehash: 84226a44df2561dbd30bfec7987a0ce625340e27
-ms.sourcegitcommit: 01755ac7c0ab7becf28052e05e58567caa8364cd
+author: carolinetempleton
+ms.openlocfilehash: af49836d52659b6f75727008599aea1ca16d5206
+ms.sourcegitcommit: c7ff992ef63e480d070421ba99b28ee129cb6acb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/21/2021
-ms.locfileid: "58453545"
+ms.lasthandoff: 11/03/2021
+ms.locfileid: "60688167"
 ---
 # <a name="governancerolesetting-resource-type"></a>Tipo de recurso governanceRoleSetting
 
@@ -18,22 +18,24 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
+[!INCLUDE [pim-v1resourceroles-deprecation](../../includes/pim-v1resourceroles-deprecation.md)]
+
 Representa um conjunto de configurações em cada definição de função que precisa ser avaliada quando as atribuições de função são criadas ou modificadas. Por exemplo, as configurações de função podem incluir a regra "duração máxima da atribuição", a regra "MFA necessária na ativação" e assim por diante.
 
-## <a name="methods"></a>Métodos
+## <a name="methods"></a>Methods
 
 | Método          | Tipo de retorno |Descrição|
 |:---------------|:--------|:--------|
 |[List](../api/governancerolesetting-list.md) | [Coleção governanceRoleSetting](../resources/governancerolesetting.md)|Listar uma coleção de configurações de função em um recurso.|
-|[Get](../api/governancerolesetting-get.md) |  [governanceRoleSetting](../resources/governancerolesetting.md) |Ler propriedades e relações de uma configuração de função.|
-|[Update](../api/governancerolesetting-update.md) | [governanceRoleSetting](../resources/governancerolesetting.md)  |Atualizar um objeto de configuração de função. |
+|[Obter](../api/governancerolesetting-get.md) |  [governanceRoleSetting](../resources/governancerolesetting.md) |Ler propriedades e relações de uma configuração de função.|
+|[Atualizar](../api/governancerolesetting-update.md) | [governanceRoleSetting](../resources/governancerolesetting.md)  |Atualizar um objeto de configuração de função. |
 
 ## <a name="properties"></a>Propriedades
 |Propriedade               |Tipo                                      |Descrição|
 |:--------------------|:---------------------------------------|:----------|
-|id                   |Cadeia de caracteres                                  |A id da roleSetting.|
-|resourceId           |Cadeia de caracteres                                  |Obrigatório. A id do recurso ao que a configuração de função está associada.|
-|roleDefinitionId     |Cadeia de caracteres                                  |Obrigatório. A id da definição de função à que a configuração de função está associada.|
+|id                   |String                                  |A id da roleSetting.|
+|resourceId           |String                                  |Obrigatório. A id do recurso ao que a configuração de função está associada.|
+|roleDefinitionId     |String                                  |Obrigatório. A id da definição de função à que a configuração de função está associada.|
 |isDefault            |Booliano                                 |Somente leitura. Indicar se roleSetting é uma roleSetting padrão|
 |lastUpdatedDateTime  |DateTimeOffset                          |Somente leitura. A hora em que a configuração de função foi atualizada pela última vez. O tipo Timestamp representa informações de data e hora usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite UTC em 1 de janeiro de 2014 é `2014-01-01T00:00:00Z`|
 |lastUpdatedBy        |String                                  |Somente leitura. O nome de exibição do administrador que atualizou pela última vez a funçãoSetting.|
@@ -42,10 +44,10 @@ Representa um conjunto de configurações em cada definição de função que pr
 |userEligibleSettings |[Coleção governanceRuleSetting](../resources/governancerulesetting.md)|As configurações de regra avaliadas quando um usuário tenta adicionar uma atribuição de função qualificada. A configuração não tem suporte por enquanto.|
 |userMemberSettings   |[Coleção governanceRuleSetting](../resources/governancerulesetting.md)|As configurações de regra avaliadas quando um usuário tenta ativar sua atribuição de função.|
 
-## <a name="relationships"></a>Relacionamentos
+## <a name="relationships"></a>Relações
 | Relação | Tipo   |Descrição|
 |:---------------|:--------|:----------|
-|recurso|[governanceResource](../resources/governanceresource.md)|Apenas leitura. O recurso associado para essa configuração de função.|
+|recurso|[governanceResource](../resources/governanceresource.md)|Somente leitura. O recurso associado para essa configuração de função.|
 |roleDefinition|[governanceRoleDefinition](../resources/governanceroledefinition.md)|Apenas leitura. A definição de função que é imposta com essa configuração de função. |
 
 ## <a name="json-representation"></a>Representação JSON

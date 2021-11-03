@@ -1,16 +1,16 @@
 ---
 title: Atualizar bookingcustomer
 description: Atualize as propriedades de um objeto bookingCustomer.
-localization_priority: Normal
+ms.localizationpriority: medium
 author: arvindmicrosoft
 ms.prod: bookings
 doc_type: apiPageType
-ms.openlocfilehash: 476c827474026914a7839947d7a88a9c10b8a917
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: c15279045eda8e6c884039ee075a3e63720142b6
+ms.sourcegitcommit: c7ff992ef63e480d070421ba99b28ee129cb6acb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52047816"
+ms.lasthandoff: 11/03/2021
+ms.locfileid: "60694677"
 ---
 # <a name="update-bookingcustomer"></a>Atualizar bookingcustomer
 
@@ -45,6 +45,8 @@ No corpo da solicitação, forneça os valores para os campos relevantes que dev
 |:---------------|:--------|:----------|
 |displayName|String|O nome do cliente.|
 |emailAddress|String|O endereço SMTP do cliente.|
+|addresses|[Coleção physicalAddress](../resources/physicaladdress.md)|Endereços associados ao cliente, incluindo home, business e outros endereços.|
+|telefones|Coleção [phone](../resources/phone.md)|Telefone números associados ao cliente, incluindo números fixos, comerciais e móveis.|
 
 ## <a name="response"></a>Resposta
 Se tiver êxito, este método retornará um código de resposta e o objeto `200 OK` [bookingCustomer](../resources/bookingcustomer.md) atualizado no corpo da resposta.
@@ -85,7 +87,7 @@ Content-type: application/json
 ---
 
 ##### <a name="response"></a>Resposta
-Este é um exemplo de resposta. Observação: o objeto de resposta mostrado aqui pode ser encurtado para legibilidade.
+Eis um exemplo da resposta. Observação: o objeto de resposta exibido aqui pode ser reduzido para facilitar a leitura.
 <!-- {
   "blockType": "response",
   "truncated": true,

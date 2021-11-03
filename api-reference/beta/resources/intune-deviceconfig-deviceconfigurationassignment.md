@@ -2,15 +2,15 @@
 title: Tipo de recurso deviceConfigurationAssignment
 description: A entidade de atribuição de configuração do dispositivo atribui um grupo AAD a uma configuração de dispositivo específica.
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 00eadc21655f9f10534a4b11cfc87a1e795a747f
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 50ec850986b907acf91c2c9f0518e9f76d1aa7be
+ms.sourcegitcommit: c7ff992ef63e480d070421ba99b28ee129cb6acb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59101587"
+ms.lasthandoff: 11/03/2021
+ms.locfileid: "60696060"
 ---
 # <a name="deviceconfigurationassignment-resource-type"></a>Tipo de recurso deviceConfigurationAssignment
 
@@ -22,7 +22,7 @@ Namespace: microsoft.graph
 
 A entidade de atribuição de configuração do dispositivo atribui um grupo AAD a uma configuração de dispositivo específica.
 
-## <a name="methods"></a>Métodos
+## <a name="methods"></a>Methods
 |Método|Tipo de retorno|Descrição|
 |:---|:---|:---|
 |[Listar deviceConfigurationAssignments](../api/intune-deviceconfig-deviceconfigurationassignment-list.md)|Conjunto [deviceConfigurationAssignment](../resources/intune-deviceconfig-deviceconfigurationassignment.md)|Listar propriedades e relações de objetos de [deviceConfigurationAssignment](../resources/intune-deviceconfig-deviceconfigurationassignment.md).|
@@ -34,10 +34,11 @@ A entidade de atribuição de configuração do dispositivo atribui um grupo AAD
 ## <a name="properties"></a>Propriedades
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|id|Cadeia de caracteres|A chave da atribuição.|
+|id|String|A chave da atribuição.|
 |destino|[deviceAndAppManagementAssignmentTarget](../resources/intune-shared-deviceandappmanagementassignmenttarget.md)|O destino da atribuição da configuração do dispositivo.|
 |source|[deviceAndAppManagementAssignmentSource](../resources/intune-shared-deviceandappmanagementassignmentsource.md)|A origem da atribuição para a configuração do dispositivo, direct ou parcel/policySet. Essa propriedade é somente leitura. Os valores possíveis são: `direct` e `policySets`.|
-|sourceId|Cadeia de Caracteres|O identificador da origem da atribuição. Essa propriedade é somente leitura.|
+|sourceId|String|O identificador da origem da atribuição. Essa propriedade é somente leitura.|
+|finalidade|[deviceConfigAssignmentIntent](../resources/intune-deviceconfig-deviceconfigassignmentintent.md)|A intenção do administrador de aplicar ou remover o perfil. Essa propriedade é somente leitura. Os valores possíveis são: `apply`, `remove`.|
 
 ## <a name="relationships"></a>Relações
 Nenhum
@@ -61,7 +62,8 @@ Veja a seguir uma representação JSON do recurso.
     "collectionId": "String"
   },
   "source": "String",
-  "sourceId": "String"
+  "sourceId": "String",
+  "intent": "String"
 }
 ```
 

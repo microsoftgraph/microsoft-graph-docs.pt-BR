@@ -1,22 +1,24 @@
 ---
 title: Create privilegedApproval
 description: Use essa API para criar um novo privilegedApproval.
-localization_priority: Normal
+ms.localizationpriority: medium
 doc_type: apiPageType
 ms.prod: governance
-author: shauliu1
-ms.openlocfilehash: 5e99d06616d3ddfa08119a6fed352b4ba7b274a1
-ms.sourcegitcommit: 01755ac7c0ab7becf28052e05e58567caa8364cd
+author: carolinetempleton
+ms.openlocfilehash: 76128555f3a248c27fe580efce95cb800293ed98
+ms.sourcegitcommit: c7ff992ef63e480d070421ba99b28ee129cb6acb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/21/2021
-ms.locfileid: "58453552"
+ms.lasthandoff: 11/03/2021
+ms.locfileid: "60696011"
 ---
 # <a name="create-privilegedapproval"></a>Create privilegedApproval
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
+[!INCLUDE [pim-v1AADRoles-deprecation](../../includes/pim-v1aadroles-deprecation.md)]
 
 Use essa API para criar um novo privilegedApproval.
 ## <a name="permissions"></a>Permissões

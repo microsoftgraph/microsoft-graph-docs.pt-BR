@@ -1,22 +1,24 @@
 ---
 title: Cancelar governançaRoleAssignmentRequest
 description: Cancele uma governançaRoleAssignmentRequest.
-localization_priority: Normal
+ms.localizationpriority: medium
 doc_type: apiPageType
 ms.prod: governance
-author: shauliu1
-ms.openlocfilehash: a00eb98fa9c152bec555174c1196d4801b5e4e14
-ms.sourcegitcommit: 01755ac7c0ab7becf28052e05e58567caa8364cd
+author: carolinetempleton
+ms.openlocfilehash: 946e0dbfde3f097fb146d4725a2f4b3f9277aa14
+ms.sourcegitcommit: c7ff992ef63e480d070421ba99b28ee129cb6acb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/21/2021
-ms.locfileid: "58453846"
+ms.lasthandoff: 11/03/2021
+ms.locfileid: "60688216"
 ---
 # <a name="cancel-governanceroleassignmentrequest"></a>Cancelar governançaRoleAssignmentRequest
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
+[!INCLUDE [pim-v1resourceroles-deprecation](../../includes/pim-v1resourceroles-deprecation.md)]
 
 Cancele [um governanceRoleAssignmentRequest](../resources/governanceroleassignmentrequest.md).
 
@@ -31,7 +33,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 | Delegado (conta pessoal da Microsoft) | Sem suporte. |
 | Aplicativo | Sem suporte. |
 
-### <a name="azure-ad"></a>Microsoft Azure Active Directory
+### <a name="azure-ad"></a>Microsoft Azure AD
 
 | Tipo de permissão | Permissões |
 |:--------------- |:----------- |

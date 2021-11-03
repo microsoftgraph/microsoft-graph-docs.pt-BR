@@ -2,15 +2,15 @@
 title: Tipo de recurso windowsAutopilotDeviceIdentity
 description: O recurso windowsAutopilotDeviceIdentity representa um Windows Autopilot.
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 18988b5a22e84ae97e412ae0dfc7daab738027b2
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 19f2d6f341ea91676f722224fea3e08ae29a95e4
+ms.sourcegitcommit: c7ff992ef63e480d070421ba99b28ee129cb6acb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59054286"
+ms.lasthandoff: 11/03/2021
+ms.locfileid: "60688153"
 ---
 # <a name="windowsautopilotdeviceidentity-resource-type"></a>Tipo de recurso windowsAutopilotDeviceIdentity
 
@@ -22,7 +22,7 @@ Namespace: microsoft.graph
 
 O recurso windowsAutopilotDeviceIdentity representa um Windows Autopilot.
 
-## <a name="methods"></a>Métodos
+## <a name="methods"></a>Methods
 |Método|Tipo de retorno|Descrição|
 |:---|:---|:---|
 |[Listar windowsAutopilotDeviceIdentities](../api/intune-enrollment-windowsautopilotdeviceidentity-list.md)|[Coleção windowsAutopilotDeviceIdentity](../resources/intune-enrollment-windowsautopilotdeviceidentity.md)|Listar propriedades e relações dos [objetos windowsAutopilotDeviceIdentity.](../resources/intune-enrollment-windowsautopilotdeviceidentity.md)|
@@ -38,27 +38,27 @@ O recurso windowsAutopilotDeviceIdentity representa um Windows Autopilot.
 ## <a name="properties"></a>Propriedades
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|id|Cadeia de caracteres|O GUID do objeto.|
+|id|String|O GUID do objeto.|
 |deploymentProfileAssignmentStatus|[windowsAutopilotProfileAssignmentStatus](../resources/intune-enrollment-windowsautopilotprofileassignmentstatus.md)|Status de atribuição de perfil do dispositivo Windows piloto automático. Os valores possíveis são: `unknown`, `assignedInSync`, `assignedOutOfSync`, `assignedUnkownSyncState`, `notAssigned`, `pending`, `failed`.|
-|deploymentProfileAssignmentDetailedStatus|[windowsAutopilotProfileAssignmentDetailedStatus](../resources/intune-enrollment-windowsautopilotprofileassignmentdetailedstatus.md)|Status detalhado da atribuição de perfil do dispositivo Windows piloto automático. Os valores possíveis são: `none`, `hardwareRequirementsNotMet`, `surfaceHubProfileNotSupported`, `holoLensProfileNotSupported`, `windowsPcProfileNotSupported`.|
+|deploymentProfileAssignmentDetailedStatus|[windowsAutopilotProfileAssignmentDetailedStatus](../resources/intune-enrollment-windowsautopilotprofileassignmentdetailedstatus.md)|Status detalhado da atribuição de perfil do dispositivo Windows piloto automático. Os valores possíveis são: `none`, `hardwareRequirementsNotMet`, `surfaceHubProfileNotSupported`, `holoLensProfileNotSupported`, `windowsPcProfileNotSupported`, `surfaceHub2SProfileNotSupported`, `unknownFutureValue`.|
 |deploymentProfileAssignedDateTime|DateTimeOffset|Hora do conjunto de perfis do dispositivo Windows piloto automático.|
-|groupTag|Cadeia de Caracteres|Marca de grupo do dispositivo Windows piloto automático.|
-|purchaseOrderIdentifier|Cadeia de Caracteres|Purchase Order Identifier of the Windows autopilot device.|
+|groupTag|String|Marca de grupo do dispositivo Windows piloto automático.|
+|purchaseOrderIdentifier|String|Purchase Order Identifier of the Windows autopilot device.|
 |serialNumber|Cadeia de caracteres|Número de série do dispositivo do Windows AutoPilot.|
 |productKey|Cadeia de caracteres|Chave do produto (Product Key) do dispositivo do Windows AutoPilot.|
 |fabricante|String|Fabricante Oem do dispositivo Windows piloto automático.|
 |modelo|String|Nome do modelo do dispositivo Windows piloto automático.|
 |enrollmentState|[enrollmentState](../resources/intune-shared-enrollmentstate.md)|Estado de registro do intune do dispositivo Windows piloto automático. Os possíveis valores são: `unknown`, `enrolled`, `pendingReset`, `failed`, `notContacted`, `blocked`.|
 |lastContactedDateTime|DateTimeOffset|Intune Last Contacted Date Time of the Windows autopilot device.|
-|addressableUserName|Cadeia de Caracteres|Nome de usuário acessível.|
-|userPrincipalName|Cadeia de caracteres|Nome principal do usuário.|
+|addressableUserName|String|Nome de usuário acessível.|
+|userPrincipalName|String|Nome principal do usuário.|
 |resourceName|Cadeia de caracteres|Nome do recurso.|
-|skuNumber|Cadeia de Caracteres|Número SKU|
-|systemFamily|Cadeia de Caracteres|Família do Sistema|
-|azureActiveDirectoryDeviceId|Cadeia de Caracteres|ID do dispositivo AAD - a ser preterida|
-|azureAdDeviceId|Cadeia de Caracteres|ID do dispositivo AAD|
-|managedDeviceId|Cadeia de Caracteres|ID de dispositivo gerenciado|
-|displayName|Cadeia de caracteres|Nome de exibição|
+|skuNumber|String|Número SKU|
+|systemFamily|String|Família do Sistema|
+|azureActiveDirectoryDeviceId|String|AAD ID do dispositivo - a ser preterido|
+|azureAdDeviceId|String|AAD ID do dispositivo|
+|managedDeviceId|String|ID de dispositivo gerenciado|
+|displayName|String|Nome de exibição|
 
 ## <a name="relationships"></a>Relações
 |Relação|Tipo|Descrição|

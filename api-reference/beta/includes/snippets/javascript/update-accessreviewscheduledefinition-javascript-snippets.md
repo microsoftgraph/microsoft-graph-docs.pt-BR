@@ -1,11 +1,11 @@
 ---
 description: Arquivo gerado automaticamente. NÃO MODIFICAR
-ms.openlocfilehash: dc5063c50fa75bd0ad08337fb87ff6745c2a20104585c10e1f7b96a6387fbb43
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 1660774f159265026377f426c82fe830bff24e34
+ms.sourcegitcommit: c7ff992ef63e480d070421ba99b28ee129cb6acb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "57156538"
+ms.lasthandoff: 11/03/2021
+ms.locfileid: "60688063"
 ---
 ```javascript
 
@@ -21,10 +21,12 @@ const accessReviewScheduleDefinition = {
   descriptionForAdmins: 'Test world',
   descriptionForReviewers: 'Test world',
   scope: {
+    '@odata.type': '#microsoft.graph.accessReviewQueryScope',
     query: '/groups/b7a059cb-038a-4802-8fc9-b9d1ed0cf11f/transitiveMembers',
     queryType: 'MicrosoftGraph'
   },
   instanceEnumerationScope: {
+    '@odata.type': '#microsoft.graph.accessReviewQueryScope',
     query: '/groups/b7a059cb-038a-4802-8fc9-b9d1ed0cf11f',
     queryType: 'MicrosoftGraph'
   },

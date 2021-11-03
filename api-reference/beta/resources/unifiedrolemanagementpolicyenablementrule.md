@@ -1,16 +1,16 @@
 ---
 title: Tipo de recurso unifiedRoleManagementPolicyEnablementRule
 description: Uma unifiedRoleManagementPolicyEnablementRule especifica a regra de habilitação associada a uma política de gerenciamento de função. Ele é derivado de microsoft.graph.unifiedRoleManagementPolicyRule.
-author: shauliu1
+author: carolinetempleton
 ms.localizationpriority: medium
 ms.prod: governance
 doc_type: resourcePageType
-ms.openlocfilehash: 0919ed951b13cf1f8dcfca6aef9fc264a343f29f
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 195ada36e123babce42cd822022a93761629f94b
+ms.sourcegitcommit: c7ff992ef63e480d070421ba99b28ee129cb6acb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59046467"
+ms.lasthandoff: 11/03/2021
+ms.locfileid: "60696053"
 ---
 # <a name="unifiedrolemanagementpolicyenablementrule-resource-type"></a>Tipo de recurso unifiedRoleManagementPolicyEnablementRule
 
@@ -23,8 +23,8 @@ Herda [de unifiedRoleManagementPolicyRule](../resources/unifiedrolemanagementpol
 ## <a name="properties"></a>Propriedades
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|enabledRules|Conjunto de cadeias de caracteres|As regras que estão habilitadas. Os valores permitidos são MultifactorAuthentication, Justification, Ticketing.|
-|id|Cadeia de caracteres|Identificador exclusivo da regra. Herdado [de unifiedRoleManagementPolicyRule](../resources/unifiedrolemanagementpolicyrule.md)|
+|enabledRules|Coleção de cadeias de caracteres|As regras que estão habilitadas. Os valores permitidos são MultifactorAuthentication, Justification, Ticketing.|
+|id|String|Identificador exclusivo da regra. Herdado [de unifiedRoleManagementPolicyRule](../resources/unifiedrolemanagementpolicyrule.md)|
 |destino|[unifiedRoleManagementPolicyRuleTarget](../resources/unifiedrolemanagementpolicyruletarget.md)|O destino da regra. Herdado [de unifiedRoleManagementPolicyRule](../resources/unifiedrolemanagementpolicyrule.md)|
 
 ## <a name="relationships"></a>Relações

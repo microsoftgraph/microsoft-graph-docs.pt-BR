@@ -1,16 +1,16 @@
 ---
 title: 'unifiedRoleAssignmentScheduleRequest: filterByCurrentUser'
 description: Obter uma lista dos objetos unifiedRoleAssignmentScheduleRequest e suas propriedades filtradas por uma entidade de usuário específica
-author: shauliu1
-localization_priority: Normal
+author: carolinetempleton
+ms.localizationpriority: medium
 ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: 6ccfa5efcab7aa8725a4db5a0fdab95494be4e3c
-ms.sourcegitcommit: 9b8abc940a68dac6ee5da105ca29800cb59775f6
+ms.openlocfilehash: dbfbe404a870185f8860c7ca81c94e1b4200da65
+ms.sourcegitcommit: c7ff992ef63e480d070421ba99b28ee129cb6acb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/25/2021
-ms.locfileid: "58513759"
+ms.lasthandoff: 11/03/2021
+ms.locfileid: "60687695"
 ---
 # <a name="unifiedroleassignmentschedulerequest-filterbycurrentuser"></a>unifiedRoleAssignmentScheduleRequest: filterByCurrentUser
 Namespace: microsoft.graph

@@ -1,11 +1,11 @@
 ---
 description: Arquivo gerado automaticamente. NÃO MODIFICAR
-ms.openlocfilehash: 290eddef707a002304a8cef10937b0824078709b
-ms.sourcegitcommit: 08d47a31c48fd69ae4fcee26e34fdd65ad1ba69f
+ms.openlocfilehash: d6c475391ba9be4fa3b91145576ebe352bbe298d
+ms.sourcegitcommit: c7ff992ef63e480d070421ba99b28ee129cb6acb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/02/2021
-ms.locfileid: "51573079"
+ms.lasthandoff: 11/03/2021
+ms.locfileid: "60694513"
 ---
 ```java
 
@@ -21,7 +21,7 @@ acl.identitySource = IdentitySourceType.AZURE_ACTIVE_DIRECTORY;
 aclList.add(acl);
 externalItem.acl = aclList;
 
-graphClient.connections("contosohr").items("TSP228082938")
+graphClient.external().connections("contosohr").items("TSP228082938")
     .buildRequest()
     .patch(externalItem);
 

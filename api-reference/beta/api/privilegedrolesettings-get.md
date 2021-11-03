@@ -1,22 +1,24 @@
 ---
 title: Get privilegedRoleSettings
 description: Recupere as configurações de função para a função determinada. Um objeto privilegedRoleSettings será retornado.
-localization_priority: Normal
+ms.localizationpriority: medium
 doc_type: apiPageType
 ms.prod: governance
-author: shauliu1
-ms.openlocfilehash: 08013e57888bd9c8d40dd925c11465721f2a326e
-ms.sourcegitcommit: 01755ac7c0ab7becf28052e05e58567caa8364cd
+author: carolinetempleton
+ms.openlocfilehash: 3d18c990461f53022b99ecd65d661b1142892b8f
+ms.sourcegitcommit: c7ff992ef63e480d070421ba99b28ee129cb6acb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/21/2021
-ms.locfileid: "58453692"
+ms.lasthandoff: 11/03/2021
+ms.locfileid: "60695990"
 ---
 # <a name="get-privilegedrolesettings"></a>Get privilegedRoleSettings
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
+[!INCLUDE [pim-v1AADRoles-deprecation](../../includes/pim-v1aadroles-deprecation.md)]
 
 Recupere as configurações de função para a função determinada. Um [objeto privilegedRoleSettings](../resources/privilegedrolesettings.md) será retornado.
 ## <a name="permissions"></a>Permissões

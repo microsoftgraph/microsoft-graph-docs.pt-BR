@@ -1,22 +1,24 @@
 ---
 title: Atualizar governançaRoleSetting
 description: Atualize as propriedades de governanceRoleSetting.
-localization_priority: Normal
+ms.localizationpriority: medium
 doc_type: apiPageType
 ms.prod: governance
-author: shauliu1
-ms.openlocfilehash: 63a6baa579c4c3de8d15538737db7b1ceef2ab8c
-ms.sourcegitcommit: 01755ac7c0ab7becf28052e05e58567caa8364cd
+author: carolinetempleton
+ms.openlocfilehash: 889e83b08fdd7af8a48bb3a16a7b6f6d0d535506
+ms.sourcegitcommit: c7ff992ef63e480d070421ba99b28ee129cb6acb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/21/2021
-ms.locfileid: "58452474"
+ms.lasthandoff: 11/03/2021
+ms.locfileid: "60694663"
 ---
 # <a name="update-governancerolesetting"></a>Atualizar governançaRoleSetting
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
+[!INCLUDE [pim-v1resourceroles-deprecation](../../includes/pim-v1resourceroles-deprecation.md)]
 
 Atualize as propriedades [de governanceRoleSetting](../resources/governancerolesetting.md).
 
@@ -38,7 +40,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 | Delegado (conta pessoal da Microsoft) | Sem suporte. |
 | Aplicativo | Sem suporte. |
 
-### <a name="azure-ad"></a>Microsoft Azure Active Directory
+### <a name="azure-ad"></a>Microsoft Azure AD
 
 | Tipo de permissão | Permissões |
 |:--------------- |:----------- |

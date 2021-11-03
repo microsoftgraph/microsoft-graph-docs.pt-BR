@@ -3,14 +3,80 @@ title: Destaques de versões anteriores no Microsoft Graph
 description: O que havia de novo no Microsoft Graph
 author: angelgolfer-ms
 ms.localizationpriority: high
-ms.openlocfilehash: efdb89c348e6da6b6f794ee5c6365e25d64a0147
-ms.sourcegitcommit: 2a9b82dae63d8a998711679a379ae1fa89df80e0
+ms.openlocfilehash: e9c62070be3dd1d646768fd207c5c1304bcf727b
+ms.sourcegitcommit: c7ff992ef63e480d070421ba99b28ee129cb6acb
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60214381"
+ms.lasthandoff: 11/03/2021
+ms.locfileid: "60695020"
 ---
 # <a name="highlights-of-earlier-releases"></a>Destaques de versões anteriores
+
+## <a name="august-2021-new-and-generally-available"></a>Agosto de 2021: novo e disponível para o público em geral
+
+### <a name="cloud-communications--calls"></a>Comunicações na nuvem | Chamadas
+Um [participante](/graph/api/resources/participant) pode incluir metadados como um blob de dados na lista de participantes de uma [chamada](/graph/api/resources/call).
+
+### <a name="cloud-communications--online-meetings"></a>Comunicações na nuvem | Reuniões on-line
+- Criar uma [reunião on-line](/graph/api/resources/onlinemeeting) como um evento ao vivo, definindo as [configurações de transmissão](/graph/api/resources/broadcastMeetingSettings) e as [informações dos participantes da reunião](/graph/api/resources/meetingparticipantinfo) com a função de produtor. Veja um [exemplo](/graph/api/application-post-onlinemeetings#example-2-create-a-live-event-with-user-token).
+- Habilitar, desabilitar ou limitar a duração do chat de uma reunião online usando a propriedade **allowMeetingChat**.
+- Habilitar ou desabilitar reações a uma reunião online usando a propriedade **allowTeamworkReactions**.
+- Permitir que um participante ligue sua câmera ou seus microfones usando, respectivamente, as propriedades **allowAttendeeToEnableCamera** ou **allowAttendeeToEnableMic**.
+
+### <a name="cloud-communications--presence"></a>Comunicações na nuvem | Presença
+- [Definir o estado de presença de um usuário](/graph/api/presence-setpresence), que é um estado agregado em cada cliente do Teams (desktop, celular ou web).
+- [Limpar a sessão de presença](/graph/api/presence-clearpresence) para um usuário.
+
+
+### <a name="devices-and-apps--corporate-management"></a>Dispositivos e aplicativos | Gerenciamento corporativo
+Atualizações mensais do Intune para a versão v1.0. Configure o filtro **Data** para agosto de 2021 e procure uma seção com esse mesmo cabeçalho.
+
+### <a name="devices-and-apps--service-health-and-communications"></a>Dispositivos e aplicativos | Integridade do serviço e comunicações
+GA da [API de comunicações de serviço](service-communications-concept-overview.md) no Microsoft Graph para acessar o status de integridade e as postagens do centro de mensagens sobre os serviços em nuvem da Microsoft.
+
+### <a name="identity-and-access--governance"></a>Identidade e acesso | Governança
+Obtenha uma coleção de escopos de revisão de acesso usados para definir revisores e revisores substitutos para uma [instância de revisores de acesso](/graph/api/resources/accessReviewInstance).
+
+### <a name="sites-and-lists--taxonomy"></a>Sites e listas | Taxonomia
+Acessar a taxonomia do [repositório de termos](/graph/api/resources/termstore-store) do SharePoint, a hierarquia que consiste de recursos de [grupo](/graph/api/resources/termstore-group), [conjunto](/graph/api/resources/termstore-set), e [termo](/graph/api/resources/termstore-term), e [relacionar](/graph/api/resources/termstore-relation) os recursos entre os termos.
+
+### <a name="teamwork"></a>Trabalho em equipe
+[Listar os chats](/graph/api/chat-list) dos quais um usuário faz parte, em um contexto delegado.
+
+## <a name="august-2021-new-in-preview-only"></a>Agosto de 2021: novos somente em versão prévia
+
+### <a name="cloud-communications--calls"></a>Comunicações na nuvem | Chamadas
+- Colocar um [participante](/graph/api/resources/participant?view=graph-rest-beta&preserve-view=true) em espera e tocar música em segundo plano usando a ação [startHoldMusic](/graph/api/participant-startHoldMusic?view=graph-rest-beta&preserve-view=true).
+- Reincorporar um participante colocado em espera em uma chamada anteriormente usando a ação [stopHoldMusic](/graph/api/participant-stopHoldMusic?view=graph-rest-beta&preserve-view=true).
+
+### <a name="cloud-communications--online-meetings"></a>Comunicações na nuvem | Reuniões on-line
+Configurar uma [reunião on-line](/graph/api/resources/onlinemeeting?view=graph-rest-beta&preserve-view=true) para gravar automaticamente.
+
+### <a name="devices-and-apps--cloud-pc"></a>Dispositivos e aplicativos | Computador na nuvem
+[Encerrar o período de tolerância](/graph/api/cloudPC-endGracePeriod?view=graph-rest-beta&preserve-view=true) para um computador na nuvem. O período de tolerância permite que os usuários acessem os computadores na nuvem até sete dias antes da ocorrência do desprovisionamento. Encerrar o período de tolerância imediatamente desprovisiona o computador na nuvem sem aguardar os sete dias.
+
+### <a name="devices-and-apps--corporate-management"></a>Dispositivos e aplicativos | Gerenciamento corporativo
+Atualizações mensais do Intune para a versão beta. Configure o filtro **Data** para agosto de 2021 e procure uma seção com esse mesmo cabeçalho.
+
+### <a name="identity-and-access--governance"></a>Identidade e acesso | Governança
+- [Reprocesse](/graph/api/accesspackageassignmentrequest-reprocess?view=graph-rest-beta&preserve-view=true) uma [solicitação de atribuição de pacote de acesso](/graph/api/resources/accesspackageassignmentrequest?view=graph-rest-beta&preserve-view=true) para repetir automaticamente a solicitação de acesso de um usuário ao pacote.
+- [Reprocesse](/graph/api/accesspackageassignment-reprocess?view=graph-rest-beta&preserve-view=true)[ uma atribuição de pacote de acesso](/graph/api/resources/accesspackageassignment?view=graph-rest-beta&preserve-view=true) para reavaliar e impor automaticamente as atribuições de um usuário.
+- [Obtenha um conjunto de requisitos de política](/graph/api/accesspackage-getapplicablepolicyrequirements?view=graph-rest-beta&preserve-view=true) para criar uma [solicitação de atribuição para um pacote de acesso](/graph/api/resources/accesspackageassignmentrequestrequirements?view=graph-rest-beta&preserve-view=true).
+- Obtenha uma coleção de recursos de [revisão de acesso](/graph/api/resources/accessreviewreviewer?view=graph-rest-beta&preserve-view=true) que é usada para definir revisores contatados para uma [instância de revisores de acesso](/graph/api/resources/accessReviewInstance?view=graph-rest-beta&preserve-view=true).
+- Obtenha ou defina a duração de inatividade a partir da qual as recomendações são definidas nas [configurações de agendamento de uma revisão de acesso](/graph/api/resources/accessReviewScheduleSettings?view=graph-rest-beta&preserve-view=true) usando a propriedade **RecommendationLookBackDuration**.
+
+### <a name="identity-and-access--identity-and-sign-in"></a>Identidade e acesso | Identidade e entrada
+- As organizações podem usar [políticas para aplicar as melhores práticas para aplicativos usando métodos de autenticação de aplicativos](/graph/api/resources/applicationauthmethodpolicy?view=graph-rest-beta&preserve-view=true). Essas políticas podem ser aplicadas a [aplicativos e entidades de serviço específicos](/graph/api/resources/appmanagementpolicy?view=graph-rest-beta&preserve-view=true) ou a [todos os aplicativos e entidades de serviço em um locatário](/resources/tenantappmanagementpolicy?view=graph-rest-beta&preserve-view=true).
+- Suporte para paginação na propriedade de navegação **appRoleAssignments** para [usuários](/api/user-list-approleassignments?view=graph-rest-beta&preserve-view=true), [grupos](/api/group-list-approleassignments?view=graph-rest-beta&preserve-view=true) e [entidades de serviço](/api/serviceprincipal-list-approleassignments?view=graph-rest-beta&preserve-view=true).
+- Permitir que um locatário do Azure Active Directory (Azure AD) defina uma [federação com outra organização cujo provedor de identidade (IdP) ofereça suporte ao protocolo SAML ou WS-Fed](/graph/api/resources/samlOrWsFedExternalDomainFederation?view=graph-rest-beta&preserve-view=true). Isso permite que o locatário do Azure AD dê acesso aos seus recursos para usuários convidados.
+
+### <a name="teamwork"></a>Trabalho em equipe
+- Obter [informações sobre uma reunião on-line](/graph/api/resources/teamworkOnlineMeetingInfo?view=graph-rest-beta&preserve-view=true) que esteja associada a um [chat](/api/resources/chat?view=graph-rest-beta&preserve-view=true).
+- Obter o identificador do locatário no qual um **chat** é criado.
+
+### <a name="users"></a>Usuários
+Use os últimos valores de data/hora de login interativo e não interativo do [signInActivity](/graph/api/resources/signInActivity?view=graph-rest-beta&preserve-view=true) dos usuários para [gerenciar contas inativas](/azure/active-directory/reports-monitoring/howto-manage-inactive-user-accounts).
+
 
 ## <a name="july-2021-new-and-generally-available"></a>Julho de 2021: Novo e disponível para o público em geral
 

@@ -2,26 +2,25 @@
 title: Privileged Identity Management - Azure AD
 description: APIs do Privileged Identity Management do Azure AD para gerenciar as funções do Azure Active Directory.
 ms.localizationpriority: high
-author: shauliu1
+author: carolinetempleton
 ms.prod: governance
 doc_type: conceptualPageType
-ms.openlocfilehash: 045656549e00dce0a97586cfe02564e8271d70ed
-ms.sourcegitcommit: c333953a9188b4cd4a9ab94cbe68871e8f3563e5
+ms.openlocfilehash: 900038e9c68517ac42ade68218b55d7cc52450f9
+ms.sourcegitcommit: c7ff992ef63e480d070421ba99b28ee129cb6acb
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/30/2021
-ms.locfileid: "58695256"
+ms.lasthandoff: 11/03/2021
+ms.locfileid: "60688777"
 ---
-# <a name="privileged-identity-management---azure-ad"></a>Privileged Identity Management - Azure AD
+# <a name="privileged-identity-management---azure-ad-deprecated"></a>Privileged Identity Management - Azure AD (preterido)
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-> [!IMPORTANT]
-> A API para gerenciar as funções do Azure Active Directory foi preterida para a maioria dos locatários, exceto para poucos que usam uma versão mais antiga da Gestão de Identidade Privilegiada (PIM). Para obter mais informações sobre as versões do PIM, confira [Determinar sua versão do PIM](https://docs.microsoft.com/azure/active-directory/privileged-identity-management/pim-how-to-activate-role?tabs=new#determine-your-version-of-pim). Se estiver usando a nova versão e recebendo o erro **TenantEnabledInAadRoleMigration**, você pode aguardar até que uma nova API esteja disponível para a funcionalidade PIM na API [unifiedRoleManagement](/graph/api/resources/unifiedroledefinition?view=graph-rest-beta) para funções do Azure Active Directory ou você pode use a API de [Recursos do Azure](/graph/api/resources/privilegedidentitymanagement-resources?view=graph-rest-beta) para suas funções do Azure Active Directory. Para usar a API de **recurso do Azure**, substitua `azureResources` por `aadRoles` para `provider_id` e use o seu ID de locatário para `resource_id`. Recomendamos que você aguarde a nova API. Você poderá continuar usando a API de **recursos do Azure** depois que a nova API estiver disponível. Quaisquer novos recursos disponibilizados no portal do Azure também serão disponibilizados exclusivamente por meio da nova API.
+[!INCLUDE [pim-v1AADRoles-deprecation](../../includes/pim-v1aadroles-deprecation.md)]
 
-Os métodos a seguir são fornecidos pelo PIM para funções do Microsoft Azure Active Directory. O serviço é criado com base no OData. Para filtrar os resultados de uma consulta, use as expressões OData ``$filter`` padrão nos URIs.
+Os métodos a seguir são fornecidos pelo PIM para funções do Microsoft Azure Active Directory. O serviço é criado com base no OData. Para filtrar os resultados de uma consulta, use as expressões OData `$filter` padrão nos URIs.
 
 ## <a name="methods"></a>Métodos
 

@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: e6ae50ca1794ffb9f1c19bfe01165ad4909a3486
-ms.sourcegitcommit: 4a960067cf2cd7d3c605550150eb3c9259adfe92
+ms.openlocfilehash: 3e7742a94ad97a4e3076c5a9aa57caa93c1aa194
+ms.sourcegitcommit: c7ff992ef63e480d070421ba99b28ee129cb6acb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/19/2021
-ms.locfileid: "60490614"
+ms.lasthandoff: 11/03/2021
+ms.locfileid: "60688672"
 ---
 # <a name="create-devicemanagementconfigurationsetting"></a>Criar deviceManagementConfigurationSetting
 
@@ -37,6 +37,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 }
 -->
 ``` http
+POST /deviceManagement/compliancePolicies/{deviceManagementCompliancePolicyId}/settings
 POST /deviceManagement/configurationPolicies/{deviceManagementConfigurationPolicyId}/settings
 ```
 
@@ -53,7 +54,7 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar deviceMa
 
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|id|Cadeia de caracteres|Chave dessa configuração na política que a contém. Gerado automaticamente.|
+|id|String|Chave dessa configuração na política que a contém. Gerado automaticamente.|
 |settingInstance|[deviceManagementConfigurationSettingInstance](../resources/intune-deviceconfigv2-devicemanagementconfigurationsettinginstance.md)|Instância de configuração|
 
 
@@ -66,7 +67,7 @@ Se tiver êxito, este método retornará um código de resposta e um `201 Create
 ### <a name="request"></a>Solicitação
 Este é um exemplo da solicitação.
 ``` http
-POST https://graph.microsoft.com/beta/deviceManagement/configurationPolicies/{deviceManagementConfigurationPolicyId}/settings
+POST https://graph.microsoft.com/beta/deviceManagement/compliancePolicies/{deviceManagementCompliancePolicyId}/settings
 Content-type: application/json
 Content-length: 16129
 

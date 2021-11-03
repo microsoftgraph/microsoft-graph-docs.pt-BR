@@ -5,12 +5,12 @@ author: AshleyYangSZ
 ms.localizationpriority: medium
 ms.prod: cloud-pc
 doc_type: resourcePageType
-ms.openlocfilehash: d091f174fa308c44418e5332657f45bbf82cdaf9
-ms.sourcegitcommit: 08e9b0bac39c1b1d2c8a79539d24aaa93364baf2
+ms.openlocfilehash: 6eb5d684419c0ebe7d68deab50cc0b4e01473466
+ms.sourcegitcommit: c7ff992ef63e480d070421ba99b28ee129cb6acb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/24/2021
-ms.locfileid: "59767052"
+ms.lasthandoff: 11/03/2021
+ms.locfileid: "60695416"
 ---
 # <a name="cloudpconpremisesconnectionhealthcheck-resource-type"></a>Tipo de recurso cloudPcOnPremisesConnectionHealthCheck
 
@@ -20,7 +20,7 @@ Namespace: microsoft.graph
 
 O resultado de uma verificação de saúde de conexão local do computador na nuvem.
 
-## <a name="methods"></a>Métodos
+## <a name="methods"></a>Methods
 
 |Método|Tipo de retorno|Descrição|
 |:---|:---|:---|
@@ -30,13 +30,13 @@ O resultado de uma verificação de saúde de conexão local do computador na nu
 
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|displayName|Cadeia de caracteres|O nome de exibição desse item de verificação de saúde.|
+|displayName|String|O nome de exibição desse item de verificação de saúde.|
 |status|[cloudPcOnPremisesConnectionStatus](../resources/cloudpconpremisesconnection.md#cloudpconpremisesconnectionstatus-values)|O status do item de verificação de saúde. Os valores possíveis são: `pending`, `running`, `passed`, `failed`, `unknownFutureValue`. Somente leitura.|
 |startDateTime|DateTimeOffset|A hora de início do item de verificação de saúde. Somente leitura.|
 |endDateTime|DateTimeOffset|A hora de término do item de verificação de saúde. Somente leitura.|
 |errorType|[cloudPcOnPremisesConnectionHealthCheckErrorType](#cloudpconpremisesconnectionhealthcheckerrortype-values)|O tipo de erro que ocorreu durante essa verificação de saúde.|
-|recommendedAction|Cadeia de caracteres|A ação recomendada para corrigir o erro correspondente.|
-|additionalDetails|Cadeia de caracteres|Detalhes adicionais sobre a verificação de saúde ou a ação recomendada.|
+|recommendedAction|String|A ação recomendada para corrigir o erro correspondente.|
+|additionalDetails|String|Detalhes adicionais sobre a verificação de saúde ou a ação recomendada.|
 
 ### <a name="cloudpconpremisesconnectionhealthcheckerrortype-values"></a>valores cloudPcOnPremisesConnectionHealthCheckErrorType
 
@@ -57,6 +57,9 @@ O resultado de uma verificação de saúde de conexão local do computador na nu
 |endpointConnectivityCheckUnknownError|Durante o provisionamento, uma ou mais URLs necessárias não puderam ser contatadas. Verifique se todas as URLs necessárias são permitidas por meio dos firewalls e proxies.|
 |azureAdDeviceSyncCheckDeviceNotFound|O objeto do computador do computador na nuvem não pode ser encontrado no Azure Active Directory (Azure AD). Certifique-se de que a conexão do Azure AD funcione e sincronize com frequência para que os objetos do computador do computador na nuvem sejam sincronizados com o Azure AD. A sincronização de dispositivos do Azure AD deve ser habilitada e sincronizada nos últimos 60 minutos.|
 |azureAdDeviceSyncCheckLongSyncCircle|A verificação se o objeto do computador do computador na nuvem foi sincronizado com Azure Active Directory (Azure AD) foi o tempo de tempo. Certifique-se de que a conexão do Azure AD funcione e sincronize com frequência para que os objetos do computador do computador na nuvem sejam sincronizados com o Azure AD. A sincronização de dispositivos do Azure AD deve ser habilitada e sincronizada nos últimos 60 minutos.|
+|azureAdDeviceSyncCheckConnectDisabled|A Azure Active Directory de sincronização do dispositivo (Azure AD) falhou porque o Conexão do Azure AD está desabilitado. Verifique se a Conexão do Azure AD está habilitada e sincroniza com frequência. Se o Azure AD Conexão não sincronizar o computador em 60 minutos, a verificação falhará.|
+|azureAdDeviceSyncCheckDurationExceeded|A Azure Active Directory de sincronização do dispositivo (Azure AD) falhou porque a sincronização de Conexão do Azure AD não foi sincronizada dentro de 60 minutos. Verifique se a Conexão do Azure AD está habilitada e sincroniza com frequência. Se o Azure AD Conexão não sincronizar o computador em 60 minutos, a verificação falhará.|
+|azureAdDeviceSyncCheckTransientServiceError|A Azure Active Directory de sincronização de dispositivos (Azure AD) falhou devido a um erro transitório. Tente novamente. Se o problema persistir, entre em contato com o suporte do cliente.|
 |azureAdDeviceSyncCheckUnknownError|Falha na Azure Active Directory de conectividade híbrida (Azure AD). Certifique-se de que a conexão do Azure AD funcione e sincronize com frequência para que os objetos do computador do computador na nuvem sejam sincronizados com o Azure AD. A sincronização de dispositivos do Azure AD deve ser habilitada e sincronizada nos últimos 60 minutos.|
 |resourceAvailabilityCheckNoSubnetIP|A sub-rede fornecida não tem endereços IP disponíveis. Verifique se a sub-rede fornecida na conexão de rede local tem endereços IP suficientes disponíveis. Expanda a sub-rede selecionada atual ou selecione uma sub-rede diferente a ser usada para provisionamento.|
 |resourceAvailabilityCheckSubscriptionDisabled|A assinatura do Azure fornecida está desabilitada. Verifique se a assinatura do Azure está habilitada e disponível para provisionamento.|
@@ -65,11 +68,13 @@ O resultado de uma verificação de saúde de conexão local do computador na nu
 |resourceAvailabilityCheckSubscriptionTransferred|A assinatura do Azure fornecida não pode ser acessada. Verifique se a assinatura do Azure está disponível para provisionamento.|
 |resourceAvailabilityCheckGeneralSubscriptionError|Uma política do Azure está restringindo a criação de recursos. Verifique se não há nenhuma política do Azure que restrinja a criação de recursos no grupo de assinaturas e/ou recursos.|
 |resourceAvailabilityCheckUnsupportedVNetRegion|O vNet selecionado está localizado em uma região sem suporte. Verifique se o vNet selecionado está localizado em uma região com suporte.|
+|resourceAvailabilityCheckTransientServiceError|A verificação de disponibilidade do recurso falhou devido a um erro transitório. Tente novamente. Se o problema persistir, entre em contato com o suporte do cliente.|
 |resourceAvailabilityCheckUnknownError|A verificação de disponibilidade de recursos do Azure falhou devido a um erro desconhecido. Verifique se todos os recursos do Azure atendem aos pré-requisitos.|
 |permissionCheckNoSubscriptionReaderRole|A entidade de serviço de computador na nuvem não tem permissões suficientes na assinatura do Azure. Certifique-se de que a entidade de serviço do computador na nuvem tenha as *permissões Reader* na assinatura.|
 |permissionCheckNoResourceGroupOwnerRole|A entidade de serviço de computador na nuvem não tem permissões suficientes no grupo de recursos do Azure. Verifique se a entidade de serviço do computador na nuvem tem as *permissões Owner* no grupo de recursos. |
 |permissionCheckNoVNetContributorRole|A entidade de serviço de computador na nuvem não tem permissões suficientes na vNet do Azure. Verifique se o serviço de computador na nuvem tem as *permissões do* colaborador de rede na vNet.|
 |permissionCheckNoResourceGroupNetworkContributorRole|A entidade de serviço de computador na nuvem não tem permissões suficientes no grupo de recursos do Azure. Verifique se o aplicativo tem permissões de colaboradores de rede no grupo de recursos.|
+|permissionCheckTransientServiceError|A verificação de permissão do aplicativo de primeira parte falhou devido a um erro transitório. Tente novamente. Se o problema persistir, entre em contato com o suporte do cliente.|
 |permissionCheckUnknownError|A entidade de serviço de computador na nuvem não tem permissões suficientes. Verifique se a entidade de serviço do computador na nuvem recebe permissões suficientes do Azure.|
 |internalServerErrorDeploymentCanceled|A implantação foi cancelada. Tente novamente mais tarde. Se o problema persistir, entre em contato com o suporte.|
 |internalServerErrorAllocateResourceFailed|A alocação de recursos falhou. Tente novamente mais tarde. Se o problema persistir, entre em contato com o suporte.|

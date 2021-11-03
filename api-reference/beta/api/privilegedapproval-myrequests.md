@@ -1,22 +1,24 @@
 ---
 title: 'privilegedApproval: myRequests'
 description: Receba solicitações de aprovação do solicitante.
-localization_priority: Normal
+ms.localizationpriority: medium
 doc_type: apiPageType
 ms.prod: governance
-author: shauliu1
-ms.openlocfilehash: 9403997a9a666a78bc40defe5d49e5dd0e68f2ba
-ms.sourcegitcommit: 01755ac7c0ab7becf28052e05e58567caa8364cd
+author: carolinetempleton
+ms.openlocfilehash: 5c341560c60fb2e510bc5fb4a2eba49b6e6a0f01
+ms.sourcegitcommit: c7ff992ef63e480d070421ba99b28ee129cb6acb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/21/2021
-ms.locfileid: "58453188"
+ms.lasthandoff: 11/03/2021
+ms.locfileid: "60688195"
 ---
 # <a name="privilegedapproval-myrequests"></a>privilegedApproval: myRequests
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
+[!INCLUDE [pim-v1AADRoles-deprecation](../../includes/pim-v1aadroles-deprecation.md)]
 
 Receba solicitações de aprovação do solicitante.
 

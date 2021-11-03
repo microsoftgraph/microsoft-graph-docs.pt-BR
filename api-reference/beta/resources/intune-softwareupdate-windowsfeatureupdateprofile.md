@@ -2,15 +2,15 @@
 title: Tipo de recurso windowsFeatureUpdateProfile
 description: Windows Perfil de Atualização de Recursos
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 8de71467651f732732b3eaaa3dfd88a79eaaf121
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: fb381ace09fc3ee788f7b5f7fec3212285f21ad3
+ms.sourcegitcommit: c7ff992ef63e480d070421ba99b28ee129cb6acb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59029868"
+ms.lasthandoff: 11/03/2021
+ms.locfileid: "60691530"
 ---
 # <a name="windowsfeatureupdateprofile-resource-type"></a>Tipo de recurso windowsFeatureUpdateProfile
 
@@ -22,7 +22,7 @@ Namespace: microsoft.graph
 
 Windows Perfil de Atualização de Recursos
 
-## <a name="methods"></a>Métodos
+## <a name="methods"></a>Methods
 |Método|Tipo de retorno|Descrição|
 |:---|:---|:---|
 |[Listar windowsFeatureUpdateProfiles](../api/intune-softwareupdate-windowsfeatureupdateprofile-list.md)|[Coleção windowsFeatureUpdateProfile](../resources/intune-softwareupdate-windowsfeatureupdateprofile.md)|Listar propriedades e relações dos [objetos windowsFeatureUpdateProfile.](../resources/intune-softwareupdate-windowsfeatureupdateprofile.md)|
@@ -37,12 +37,13 @@ Windows Perfil de Atualização de Recursos
 |:---|:---|:---|
 |id|String|O Identificador da entidade.|
 |displayName|String|O nome de exibição do perfil.|
-|description|Cadeia de caracteres|A descrição do perfil especificado pelo usuário.|
-|featureUpdateVersion|Cadeia de Caracteres|A versão de atualização de recursos que será implantada nos dispositivos direcionados por esse perfil. A versão pode ser qualquer versão com suporte para o exemplo 1709, 1803 ou 1809 e assim por diante.|
+|descrição|String|A descrição do perfil especificado pelo usuário.|
+|featureUpdateVersion|String|A versão de atualização de recursos que será implantada nos dispositivos direcionados por esse perfil. A versão pode ser qualquer versão com suporte para o exemplo 1709, 1803 ou 1809 e assim por diante.|
+|rolloutSettings|[windowsUpdateRolloutSettings](../resources/intune-softwareupdate-windowsupdaterolloutsettings.md)|As configurações de lançamento de atualizações do Windows, incluindo a hora da data de início da oferta, a data de término e os dias entre cada conjunto de ofertas.|
 |createdDateTime|DateTimeOffset|A data em que o perfil foi criado.|
 |lastModifiedDateTime|DateTimeOffset|A data em que o perfil foi modificado pela última vez.|
-|roleScopeTagIds|Conjunto de cadeias de caracteres|Lista de Marcas de Escopo para essa entidade atualização de recursos.|
-|deployableContentDisplayName|Cadeia de Caracteres|Nome de exibição amigável do conteúdo implantável do perfil de atualização de qualidade|
+|roleScopeTagIds|Coleção de cadeias de caracteres|Lista de Marcas de Escopo para essa entidade atualização de recursos.|
+|deployableContentDisplayName|String|Nome de exibição amigável do conteúdo implantável do perfil de atualização de qualidade|
 |endOfSupportDate|DateTimeOffset|A última data com suporte para uma atualização de recursos|
 
 ## <a name="relationships"></a>Relações
@@ -65,6 +66,12 @@ Veja a seguir uma representação JSON do recurso.
   "displayName": "String",
   "description": "String",
   "featureUpdateVersion": "String",
+  "rolloutSettings": {
+    "@odata.type": "microsoft.graph.windowsUpdateRolloutSettings",
+    "offerStartDateTimeInUTC": "String (timestamp)",
+    "offerEndDateTimeInUTC": "String (timestamp)",
+    "offerIntervalInDays": 1024
+  },
   "createdDateTime": "String (timestamp)",
   "lastModifiedDateTime": "String (timestamp)",
   "roleScopeTagIds": [

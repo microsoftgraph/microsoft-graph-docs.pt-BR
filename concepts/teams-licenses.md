@@ -4,12 +4,12 @@ description: Saiba mais sobre os modelos de licenciamento e pagamento que se apl
 author: nkramer
 ms.localizationpriority: high
 ms.prod: microsoft-teams
-ms.openlocfilehash: 0b05f72da75fd364489ba408503edd99a62b4b5c
-ms.sourcegitcommit: c3f849e5a052b1926373a4b316ec303250e6d09e
+ms.openlocfilehash: 4f0f8c41d52ec54711e002253f691a3c298686f0
+ms.sourcegitcommit: c7ff992ef63e480d070421ba99b28ee129cb6acb
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/15/2021
-ms.locfileid: "60368514"
+ms.lasthandoff: 11/03/2021
+ms.locfileid: "60688686"
 ---
 # <a name="licensing-and-payment-requirements-for-microsoft-teams-apis-in-microsoft-graph"></a>Requisitos de licenciamento e pagamento para APIs do Microsoft Teams no Microsoft Graph
 
@@ -30,7 +30,7 @@ No futuro, os aplicativos também serão obrigados a pagar pelas mensagens que c
 
 |API                   | Quem precisa de uma [licença](#required-licenses-for-modela)  | Capacidade propagada | Preço para uso adicional | Notas |
 |:-----------------------------|:--------------------------------------------|:----------------|:-------|:------|
-| [notificações de alteração do chatMessage](/graph/api/subscription-post-subscriptions) | Remetente de mensagem | 800 mensagens por usuário por mês por aplicativo | $0,00075 por mensagem | |
+| [notificações de alteração do chatMessage](/graph/api/subscription-post-subscriptions) | Remetente de mensagem | 800 mensagens por usuário por mês por aplicativo | $0,00075 por mensagem | A capacidade de semente é compartilhada com notificações de alteração de conversationMember |
 | [notificações de alteração de conversationMember](/graph/api/subscription-post-subscriptions) | Qualquer usuário no locatário | 800 notificações por usuário por mês por aplicativo  | US$ 0,00075 por notificação | A capacidade de propagação é compartilhada com notificações de alteração do chatMessage |
 | [Obter mensagens em todos os chats para o usuário](/graph/api/chats-getallmessages) | Usuário nomeado | 1600 mensagens por usuário por mês por aplicativo | $0,00075 por mensagem | O usuário nomeado é o usuário identificado na URL de solicitação GET. Cobrança mínima de 1 mensagem por solicitação de API. A capacidade de propagação é compartilhada com a exportação de canal. |
 |  [Obtenha todas as mensagens em todos os canais](/graph/api/channel-getallmessages).| Qualquer membro da equipe | 1600 mensagens por usuário por mês por aplicativo | $0,00075 por mensagem |  Cobrança mínima de 1 mensagem por solicitação de API. A capacidade de propagação é compartilhada com a exportação de chat. |
@@ -40,10 +40,10 @@ No futuro, os aplicativos também serão obrigados a pagar pelas mensagens que c
 
 |API                   | Quem precisa de uma [licença](#required-licenses-for-modela)  | Capacidade propagada | Preço para uso adicional | Notas |
 |:-----------------------------|:--------------------------------------------|:----------------|:-------|:------|
-| [notificações de alteração do chatMessage](/graph/api/subscription-post-subscriptions) | N/D | Nenhum | $0,00075 por mensagem | A capacidade de propagação é compartilhada com notificações de alteração de conversationMember. |
-| [notificações de alteração de conversationMember](/graph/api/subscription-post-subscriptions) | N/D | Nenhum  | US$ 0,00075 por notificação | A capacidade de propagação é compartilhada com notificações de alteração do chatMessage. |
-| [Obter mensagens em todos os chats para o usuário](/graph/api/chats-getallmessages) |  N/D | Nenhum | $0,00075 por mensagem |  Cobrança mínima de 1 mensagem por solicitação de API. A capacidade de propagação é compartilhada com a exportação de canal. |
-|  [Obtenha todas as mensagens em todos os canais](/graph/api/channel-getallmessages).|  N/D | Nenhum | $0,00075 por mensagem | Cobrança mínima de 1 mensagem por solicitação de API. A capacidade de propagação é compartilhada com a exportação de chat. |
+| [notificações de alteração do chatMessage](/graph/api/subscription-post-subscriptions) | N/D | Nenhum | $0,00075 por mensagem |  |
+| [notificações de alteração de conversationMember](/graph/api/subscription-post-subscriptions) | N/D | Nenhum  | US$ 0,00075 por notificação | |
+| [Obter mensagens em todos os chats para o usuário](/graph/api/chats-getallmessages) |  N/D | Nenhum | $0,00075 por mensagem |  Cobrança mínima de 1 mensagem por solicitação de API. |
+|  [Obtenha todas as mensagens em todos os canais](/graph/api/channel-getallmessages).|  N/D | Nenhum | $0,00075 por mensagem | Cobrança mínima de 1 mensagem por solicitação de API. |
 
 ## <a name="evaluation-mode-default-requirements"></a>Requisitos do modo de avaliação (padrão)
 

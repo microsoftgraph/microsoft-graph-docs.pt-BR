@@ -1,16 +1,16 @@
 ---
 title: Atualizar bookingservice
-description: Atualiza as propriedades de um objeto bookingService no bookingbusiness especificado.
-localization_priority: Normal
+description: Atualize as propriedades de um objeto bookingService no bookingbusiness especificado.
+ms.localizationpriority: medium
 author: arvindmicrosoft
 ms.prod: bookings
 doc_type: apiPageType
-ms.openlocfilehash: 9e8eec740df193662c10a5ff9557fa3dafa30753
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: f0e652e5fd4e96aba984589371fb1a95e706e1be
+ms.sourcegitcommit: c7ff992ef63e480d070421ba99b28ee129cb6acb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48960366"
+ms.lasthandoff: 11/03/2021
+ms.locfileid: "60695220"
 ---
 # <a name="update-bookingservice"></a>Atualizar bookingservice
 
@@ -18,21 +18,21 @@ Namespace: microsoft.graph
 
  [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Atualiza as propriedades de um objeto [bookingService](../resources/bookingservice.md) no [bookingbusiness](../resources/bookingbusiness.md)especificado.
+Atualize as propriedades de [um objeto bookingService](../resources/bookingservice.md) no [bookingBusiness especificado.](../resources/bookingbusiness.md)
 
 Veja a seguir alguns exemplos que você pode personalizar para um serviço:
 - Price
 - Tamanho típico de um compromisso
 - Reminders
-- Qualquer buffer de tempo a ser configurado antes ou termine após o serviço
-- Parâmetros de [política de agendamento](../resources/bookingschedulingpolicy.md) , como o aviso mínimo, para livro ou cancelamento, e se os clientes podem selecionar membros específicos da equipe para um compromisso.
+- Qualquer buffer de tempo para configurar antes ou concluir após o serviço
+- [Os parâmetros de política](../resources/bookingschedulingpolicy.md) de agendamento, como aviso mínimo para reservar ou cancelar, e se os clientes podem selecionar membros específicos da equipe para um compromisso.
 
 ## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegado (conta corporativa ou de estudante) |  Bookings. ReadWrite. All, bookings. Manage. All   |
+|Delegado (conta corporativa ou de estudante) |  Bookings.ReadWrite.All, Bookings.Manage.All   |
 |Delegado (conta pessoal da Microsoft) | Sem suporte.   |
 |Aplicativo | Sem suporte.  |
 
@@ -44,33 +44,35 @@ PATCH /bookingBusinesses/{id}/services/{id}
 ## <a name="optional-request-headers"></a>Cabeçalhos de solicitação opcionais
 | Nome       | Descrição|
 |:-----------|:-----------|
-| Authorization  | Portador {código}|
+| Autorização  | {code} do portador. Obrigatório.|
 
 ## <a name="request-body"></a>Corpo da solicitação
-No corpo da solicitação, forneça os valores para os campos relevantes que devem ser atualizados. Propriedades existentes que não estão incluídas no corpo da solicitação terão seus valores anteriores mantidos ou serão recalculadas com base nas alterações a outros valores de propriedade. Para obter melhor desempenho, não inclua valores existentes que não foram alterados.
+No corpo da solicitação, forneça os valores para os campos relevantes que devem ser atualizados. Propriedades existentes que não estão incluídas no corpo da solicitação terão seus valores anteriores mantidos ou serão recalculadas com base nas alterações a outros valores de propriedade. Para alcançar o melhor desempenho, não inclua valores existentes que não foram alterados.
 
 | Propriedade     | Tipo   |Descrição|
 |:---------------|:--------|:----------|
-|defaultduration|Duração|O comprimento padrão do serviço, representado em números de dias, horas, minutos e segundos. Por exemplo, P11D23H59M 59.999999999999 S. |
-|DefaultLocation|[location](../resources/location.md)|O local físico padrão para o serviço.|
-|defaultprice|Duplo|O preço monetário padrão do serviço.|
-|defaultpricetype|string|O modo padrão pelo qual o serviço é cobrado. Os valores possíveis são: `undefined`, `fixedPrice`, `startingAt`, `hourly`, `free`, `priceVaries`, `callUs`, `notSet`.|
-|defaultlembrers|coleção [bookingReminder](../resources/bookingreminder.md)|O conjunto padrão de lembretes para um compromisso desse serviço. O valor dessa propriedade está disponível somente ao se ler este **bookingService** por sua ID.|
-|description|String|Uma descrição de texto para o serviço.|
+|defaultDuration|Duração|O comprimento padrão do serviço, representado em números de dias, horas, minutos e segundos. Por exemplo, P11D23H59M59.99999999999S. |
+|defaultLocation|[location](../resources/location.md)|O local físico padrão do serviço.|
+|defaultPrice|Duplo|O preço monetário padrão do serviço.|
+|defaultPriceType|cadeia de caracteres|A maneira padrão como o serviço é cobrado. Os valores possíveis são: `undefined`, `fixedPrice`, `startingAt`, `hourly`, `free`, `priceVaries`, `callUs`, `notSet`.|
+|defaultReminders|[Coleção bookingReminder](../resources/bookingreminder.md)|O conjunto padrão de lembretes para um compromisso desse serviço. O valor dessa propriedade está disponível somente ao ler este **bookingService** por sua ID.|
+|descrição|String|Uma descrição de texto para o serviço.|
 |displayName|String|Um nome de serviço.|
 |emailAddress|String|Um endereço de email|
 |id|String| Somente leitura.|
-|isHiddenFromCustomers|Booliano|True significa que este serviço não está disponível para os clientes para reserva.|
-|notes|String|Informações adicionais sobre este serviço.|
-|Buffer|Duração|O tempo para o buffer após o término de um compromisso desse serviço e antes do próximo compromisso do cliente pode ser registrado.|
-|antes do buffer|Duração|O tempo para o buffer antes que um compromisso para este serviço possa ser iniciado.|
-|schedulingPolicy|[bookingSchedulingPolicy](../resources/bookingschedulingpolicy.md)|O conjunto de políticas que determinam como os compromissos desse tipo de serviço devem ser criados e gerenciados.|
+|isHiddenFromCustomers|Booliano|True significa que esse serviço não está disponível para os clientes para reserva.|
+|isLocationOnline|Booliano|True indica que os compromissos do serviço serão mantidos online. O valor padrão é falso.|
+|notes|String|Informações adicionais sobre esse serviço.|
+|postBuffer|Duração|O tempo para buffer após o fim de um compromisso para esse serviço e antes que o próximo compromisso do cliente possa ser reservado.|
+|preBuffer|Duração|O tempo para buffer antes que um compromisso para esse serviço possa começar.|
+|schedulingPolicy|[bookingSchedulingPolicy](../resources/bookingschedulingpolicy.md)|O conjunto de políticas que determinam como os compromissos para esse tipo de serviço devem ser criados e gerenciados.|
+|smsNotificationsEnabled|Booliano|True indica que as notificações de SMS podem ser enviadas aos clientes para o compromisso do serviço. O valor padrão é falso.|
 |staffMemberIds|Coleção de cadeias de caracteres|Representa os [membros da equipe](../resources/bookingstaffmember.md) que fornecem esse serviço. |
 
 ## <a name="response"></a>Resposta
 Se bem-sucedido, este método retorna um código de resposta `204 No content`. Não retorna nada no corpo da resposta.
 ## <a name="example"></a>Exemplo
-##### <a name="request"></a>Solicitação
+### <a name="request"></a>Solicitação
 O exemplo a seguir atualiza a duração do serviço especificado.
 
 # <a name="http"></a>[HTTP](#tab/http)
@@ -105,7 +107,7 @@ Content-type: application/json
 
 ---
 
-##### <a name="response"></a>Resposta
+### <a name="response"></a>Resposta
 Este é um exemplo de resposta.
 <!-- {
   "blockType": "response",

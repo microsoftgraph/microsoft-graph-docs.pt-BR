@@ -9,8 +9,8 @@ ms.openlocfilehash: 2db875bc2991d2042e30f5efe9fa0c1615cc0a72
 ms.sourcegitcommit: c7ff992ef63e480d070421ba99b28ee129cb6acb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/02/2021
-ms.locfileid: "60673397"
+ms.lasthandoff: 11/03/2021
+ms.locfileid: "60688847"
 ---
 # <a name="get-userexperienceanalyticsoverview"></a>Obter userExperienceAnalyticsOverview
 

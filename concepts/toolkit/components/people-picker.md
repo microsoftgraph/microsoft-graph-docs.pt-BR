@@ -3,12 +3,12 @@ title: People-Picker componente
 description: Você pode usar o componente web mgt-people-picker para pesquisar um número especificado de pessoas e renderizar a lista de resultados por meio do Microsoft Graph.
 ms.localizationpriority: medium
 author: elisenyang
-ms.openlocfilehash: 277a8423ef018d5663fa6aaae94e384554914686
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 3646640ca9960d49e862d4791ddab3530e12e3a9
+ms.sourcegitcommit: c7ff992ef63e480d070421ba99b28ee129cb6acb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59103848"
+ms.lasthandoff: 11/03/2021
+ms.locfileid: "60694782"
 ---
 # <a name="people-picker-component-in-the-microsoft-graph-toolkit"></a>People-Picker componente no microsoft Graph Toolkit
 
@@ -31,7 +31,7 @@ Por padrão, `mgt-people-picker` o componente busca pessoas dos pontos de extrem
 | show-max | showMax   | Um valor de número para indicar o número máximo de pessoas a mostrar. o valor padrão é 6.                                                                                             |
 | group-id    | groupId     | Um valor de cadeia de caracteres que pertence a um grupo Graph da Microsoft para filtrar ainda mais os resultados da pesquisa.                                                                            |
 | transitive-search     | transitiveSearch      | Um valor Boolean para executar uma pesquisa transitiva retornando uma lista simples de todos os membros aninhados - por padrão, a pesquisa transitiva não é usada.|
-| tipo     | tipo      | O tipo de entidades a ser pesquisada. As opções disponíveis são: `person` , `group` , `any` . O valor padrão é `person`. Esse atributo não terá efeito se `group-id` a propriedade for definida.         
+| type     | type      | O tipo de entidades a ser pesquisada. As opções disponíveis são: `person` , `group` , `any` . O valor padrão é `person`. Esse atributo não terá efeito se `group-id` a propriedade for definida.         
 | tipo de usuário     | userType      | O tipo de usuário a ser pesquisado. As opções disponíveis são: `any` , para `user` usuários organizacionais ou `contact` para contatos. O valor padrão é `any`. |
 | tipo de grupo     | groupType      | O tipo de grupo a ser pesquisado. As opções disponíveis são: `unified` , , , , `security` `mailenabledsecurity` `distribution` `any` . O valor padrão é `any`. Esse atributo não terá efeito se a `type` propriedade for definida como `person` .  |
 | selected-people  | selectedPeople     | Uma matriz de pessoas selecionadas. De definir esse valor para selecionar pessoas programaticamente.|
@@ -80,11 +80,11 @@ Você pode preencher dados de pessoas selecionadas fazendo um dos seguintes:
     document.querySelector('mgt-people-picker').selectGroupsById(["groupid","groupid"])
     ```
 
-## <a name="events"></a>Events
+## <a name="events"></a>Eventos
 
 Os eventos a seguir são disparados do componente.
 
-Evento | Quando é emitido | Dados personalizados | Cancelável | Bolhas | Funciona com modelo personalizado
+Event | Quando é emitido | Dados personalizados | Cancelável | Bolhas | Funciona com modelo personalizado
 ------|-------------------|--------------|:-----------:|:---------:|:---------------------------:|
 `selectionChanged` | O usuário adicionou ou removeu uma pessoa da lista de pessoas selecionadas/selecionadas | Matriz de pessoas selecionadas, onde uma pessoa [](/graph/api/resources/person) pode [](/graph/api/resources/contact) ser um usuário Graph [,](/graph/api/resources/user)pessoa ou contato com uma propriedade adicional que contém a URL da foto `personImage` do usuário | Não | Não | Sim, a menos que você substitua o modelo padrão
 
@@ -148,7 +148,7 @@ Esse componente usa as seguintes APIs Graph Microsoft e permissões.
 
 | Configuração | Permissão | API
 | --- | ---------- | ------- |
-| `group-id` set | People.Read, User.Read.All | [/groups/ \$ {groupId}/members](/graph/api/group-list-members) |
+| `group-id` set | People.Read, User.Read.All, GroupMember.Read.All | [/groups/ \$ {groupId}/members](/graph/api/group-list-members) |
 | `type` definir como `Person` ou `any` | People.Read | [/me/people](/graph/api/user-list-people) |
 | `type` definir ou `Group` pesquisar usuários e definir como `type` `Group` ou `any` | Group.Read.All | [/groups](/graph/api/group-list) |
 | `default-selected-user-ids` set | User.ReadBasic.All | [/users](/graph/api/user-list) |

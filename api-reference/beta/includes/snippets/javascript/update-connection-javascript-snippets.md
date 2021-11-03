@@ -1,11 +1,11 @@
 ---
 description: Arquivo gerado automaticamente. NÃO MODIFICAR
-ms.openlocfilehash: c3934762fd2a4dccac6839aa359acb54d49c93b3
-ms.sourcegitcommit: 40947e6f4337c8c4193d85bb862e15f67263e1e7
+ms.openlocfilehash: 7170790bae14dae8a505d63c1b380b41efec4a26
+ms.sourcegitcommit: c7ff992ef63e480d070421ba99b28ee129cb6acb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/13/2021
-ms.locfileid: "50802929"
+ms.lasthandoff: 11/03/2021
+ms.locfileid: "60689099"
 ---
 ```javascript
 
@@ -20,7 +20,7 @@ const externalConnection = {
   description: 'Connection to index HR service tickets'
 };
 
-await client.api('/connections/contosohr')
+await client.api('/external/connections/contosohr')
     .version('beta')
     .update(externalConnection);
 

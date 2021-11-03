@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: adimitui
 ms.prod: directory-management
 doc_type: resourcePageType
-ms.openlocfilehash: f3a07629006f5f2cada6601dab09b952fdef7980
-ms.sourcegitcommit: 6cea9bc17d3859e475a74c4a6f661f848e837e89
+ms.openlocfilehash: 916da77d59fb4aee607145ffdbcd8cc40b7669e6
+ms.sourcegitcommit: c7ff992ef63e480d070421ba99b28ee129cb6acb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/08/2021
-ms.locfileid: "60240758"
+ms.lasthandoff: 11/03/2021
+ms.locfileid: "60691565"
 ---
 # <a name="organization-resource-type"></a>tipo de recurso organization
 
@@ -27,7 +27,7 @@ Esse recurso permite que você adicione seus próprios dados às propriedades pe
 | Método       | Tipo de retorno  |Descrição|
 |:---------------|:--------|:----------|
 |[Obter organização](../api/organization-get.md) | Coleção [organization](organization.md)|Leia as propriedades e as relações do objeto de organização.|
-|[Atualizar a organização](../api/organization-update.md) | [organization](organization.md)  |Atualize o objeto organization. As únicas propriedades que podem ser atualizadas são: **marketingNotificationMails**, **technicalNotificationMails**, **securityComplianceNotificationMails**, **securityComplianceNotificationPhones** e **privacyProfile**. |
+|[Atualizar a organização](../api/organization-update.md) | [organization](organization.md)  |Atualizar o objeto da organização. As únicas propriedades que podem ser atualizadas são: **marketingNotificationMails**, **technicalNotificationMails**, **securityComplianceNotificationMails**, **securityComplianceNotificationPhones** e **privacyProfile**. |
 | [Obter configurações da organização](../api/organizationsettings-get.md) | [organizationSettings](organizationsettings.md) | Leia o objeto de configurações da organização. |
 |**Extensões abertas**| | |
 |[Criar extensão aberta](../api/opentypeextension-post-opentypeextension.md) |[openTypeExtension](opentypeextension.md)| Crie uma extensão aberta e adicione propriedades personalizadas a uma instância nova ou existente de um recurso.|
@@ -46,7 +46,7 @@ Esse recurso permite que você adicione seus próprios dados às propriedades pe
 |[Excluir organizationalBrandingLocalization](../api/organizationalbrandinglocalization-delete.md) | [organizationalBrandingLocalization](organizationalbrandinglocalization.md) | Exclua um objeto de identidade visual de localização. |
 <!--|[Excluir organizationalBranding](../api/organizationalbranding-update.md) | [organizationalBranding](organizationalbranding.md) | Exclua o objeto de identidade visual organizacional padrão. |
 
-**OBSERVAÇÃO: para restaurar a operação Excluir organizationalBranding de volta à tabela após Atualizar organizationalBranding se todas as inconsistências são resolvidas.-->
+** OBSERVAÇÃO: para restaurar a operação Excluir organizationalBranding na tabela após Atualizar organizationalBranding se todas as inconsistências forem resolvidas.-->
 
 ## <a name="properties"></a>Propriedades
 
@@ -56,9 +56,9 @@ Esse recurso permite que você adicione seus próprios dados às propriedades pe
 | businessPhones | Coleção de cadeias de caracteres | Número de telefone para a organização. Embora isso seja uma coleção de cadeias de caracteres, somente um número pode ser definido para essa propriedade. |
 | city | Cadeia de caracteres | Nome da cidade do endereço da organização. |
 | country | Cadeia de caracteres | Nome do país/região do endereço da organização. |
-| countryLetterCode | Cadeia de caracteres | Abreviação do país/região da organização. |
+| countryLetterCode | String | Abreviação de país ou região para a organização no formato ISO 3166-2. |
 | createdDateTime | DateTimeOffset | Carimbo de hora de criação da organização. Não é possível modificar o valor e ele é preenchido automaticamente quando a organização é criada. O tipo Timestamp representa informações de data e hora usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite UTC em 1 de janeiro de 2014 é `2014-01-01T00:00:00Z`. Somente leitura. |
-| deletedDateTime | DateTimeOffset | Representa a data e a hora que o locatário do Azure AD foi excluído usando o formato ISO 8601 e está sempre no horário do UTC. Por exemplo, meia-noite UTC em 1 de janeiro de 2014 é `2014-01-01T00:00:00Z`. Somente leitura. |
+| deletedDateTime | DateTimeOffset | Representa a data e hora em que o locatário do Azure AD foi excluído usando o formato ISO 8601 e está sempre no fuso UTC. Por exemplo, meia-noite UTC do dia 1º de janeiro de 2014 é `2014-01-01T00:00:00Z`. Somente leitura. |
 | directorySizeQuota | [directorySizeQuota](directorySizeQuota.md) | As informações de cota de tamanho do diretório de uma organização. |
 | displayName | String | O nome de exibição do locatário. |
 | id | Cadeia de caracteres | A ID do locatário, um identificador exclusivo que representa a organização (ou Locatário). Herdado de [directoryObject](directoryobject.md). Chave. Não anulável. Somente leitura. |

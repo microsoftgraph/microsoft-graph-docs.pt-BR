@@ -1,22 +1,24 @@
 ---
 title: Listar privilegedOperationEvents
-description: expressão filter''.
-localization_priority: Normal
+description: Recupere eventos de auditoria gerados pelo PIM para operações de função.
+ms.localizationpriority: medium
 doc_type: apiPageType
 ms.prod: governance
-author: shauliu1
-ms.openlocfilehash: 8d24f55f942f33bb2d831f6479461acfa65f96ca
-ms.sourcegitcommit: 01755ac7c0ab7becf28052e05e58567caa8364cd
+author: carolinetempleton
+ms.openlocfilehash: 5eaafd77c903a006bdfb01a077de1a006b34ac9d
+ms.sourcegitcommit: c7ff992ef63e480d070421ba99b28ee129cb6acb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/21/2021
-ms.locfileid: "58454259"
+ms.lasthandoff: 11/03/2021
+ms.locfileid: "60694712"
 ---
 # <a name="list-privilegedoperationevents"></a>Listar privilegedOperationEvents
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
+[!INCLUDE [pim-v1AADRoles-deprecation](../../includes/pim-v1aadroles-deprecation.md)]
 
 Recupere uma lista de objetos [privilegedOperationEvent,](../resources/privilegedoperationevent.md) que representam os eventos de auditoria gerados pelo Privileged Identity Management para as operações de função. Para obter os detalhes sobre o evento de auditoria, consulte [privilegedOperationEvent](../resources/privilegedoperationevent.md). Para filtrar os resultados da consulta, use a expressão OData ``$filter`` padrão.
 
@@ -66,7 +68,7 @@ O exemplo a seguir mostra uma solicitação para obter os eventos de auditoria p
 GET https://graph.microsoft.com/beta/privilegedOperationEvents?$filter=requestType%20eq%20'Assign'
 ```
 ##### <a name="response"></a>Resposta
-O exemplo a seguir mostra a resposta. Observação: o objeto de resposta exibido aqui pode ser encurtado para legibilidade.
+O exemplo a seguir mostra a resposta. Observação: O objeto de resposta exibido aqui pode ser encurtado para legibilidade.
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -126,7 +128,7 @@ O exemplo a seguir mostra uma solicitação para obter os eventos de auditoria p
 GET https://graph.microsoft.com/beta/privilegedOperationEvents?$filter=requestType%20eq%20'Activate'
 ```
 ##### <a name="response"></a>Resposta
-O exemplo a seguir mostra a resposta. Observação: o objeto de resposta exibido aqui pode ser encurtado para legibilidade.
+O exemplo a seguir mostra a resposta. Observação: O objeto de resposta exibido aqui pode ser encurtado para legibilidade.
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -187,7 +189,7 @@ O exemplo a seguir mostra uma solicitação para obter os eventos de auditoria p
 GET https://graph.microsoft.com/beta/privilegedOperationEvents?$filter=requestType%20eq%20'Deactivate'
 ```
 ##### <a name="response"></a>Resposta
-O exemplo a seguir mostra a resposta. Observação: o objeto de resposta exibido aqui pode ser encurtado para legibilidade.
+O exemplo a seguir mostra a resposta. Observação: O objeto de resposta exibido aqui pode ser encurtado para legibilidade.
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -230,7 +232,7 @@ O exemplo a seguir mostra uma solicitação para obter os eventos de auditoria c
 GET https://graph.microsoft.com/beta/privilegedOperationEvents?$filter=(creationDateTime%20ge%202017-06-25T07:00:00Z)%20and%20(creationDateTime%20le%202017-07-25T17:30:17Z)&$count=true&$orderby=creationDateTime%20desc
 ```
 ##### <a name="response"></a>Resposta
-O exemplo a seguir mostra a resposta. Observação: o objeto de resposta exibido aqui pode ser encurtado para legibilidade.
+O exemplo a seguir mostra a resposta. Observação: o objeto de resposta mostrado aqui pode ser encurtado para legibilidade.
 <!-- {
   "blockType": "response",
   "truncated": true,

@@ -2,15 +2,15 @@
 title: Tipo de número windowsAutopilotDeviceType
 description: Ainda não documentado
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 5f3990de804536971c7d0bc463afb5c4d3ce741f
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 74f8d24db7550ba0c2e9f58c3591133d86e4bc68
+ms.sourcegitcommit: c7ff992ef63e480d070421ba99b28ee129cb6acb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59054258"
+ms.lasthandoff: 11/03/2021
+ms.locfileid: "60696186"
 ---
 # <a name="windowsautopilotdevicetype-enum-type"></a>Tipo de número windowsAutopilotDeviceType
 
@@ -28,6 +28,9 @@ Ainda não documentado
 |windowsPc|0|Windows PC|
 |surfaceHub2|1|Surface Hub 2|
 |holoLens|2|HoloLens|
+|surfaceHub2S|3|SurfaceHub2S|
+|virtualMachine|4|VirtualMachine|
+|unknownFutureValue|99|Espaço reservado para um número evolvável, mas esse número nunca é retornado ao chamador, portanto, não deve ser necessário.         |
 
 
 

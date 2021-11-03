@@ -1,16 +1,16 @@
 ---
 title: Obter unifiedRoleAssignmentSchedule
 description: Leia as propriedades e as relações de um objeto unifiedRoleAssignmentSchedule.
-author: shauliu1
-localization_priority: Normal
+author: carolinetempleton
+ms.localizationpriority: medium
 ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: 38a4303bc7492b1cb8966a439fde98334917a6ec
-ms.sourcegitcommit: 01755ac7c0ab7becf28052e05e58567caa8364cd
+ms.openlocfilehash: ea34407cca0bd66222becd42831bc4ac69010789
+ms.sourcegitcommit: c7ff992ef63e480d070421ba99b28ee129cb6acb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/21/2021
-ms.locfileid: "58452467"
+ms.lasthandoff: 11/03/2021
+ms.locfileid: "60694474"
 ---
 # <a name="get-unifiedroleassignmentschedule"></a>Obter unifiedRoleAssignmentSchedule
 Namespace: microsoft.graph

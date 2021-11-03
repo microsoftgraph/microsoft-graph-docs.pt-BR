@@ -5,18 +5,18 @@ author: Alice-at-Microsoft
 ms.localizationpriority: medium
 ms.prod: w10
 doc_type: conceptualPageType
-ms.openlocfilehash: 097e08f49f59bca60279e8320595bc9d30f7feaa
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 855f123fbd81d19f17dca6e436586365a0b221a5
+ms.sourcegitcommit: c7ff992ef63e480d070421ba99b28ee129cb6acb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59117603"
+ms.lasthandoff: 11/03/2021
+ms.locfileid: "60688623"
 ---
 # <a name="deploy-an-expedited-security-update-using-the-windows-update-for-business-deployment-service"></a>Implantar uma atualização de segurança acelerada usando o serviço de implantação Windows Update for Business
 
 Com o Windows de implantação do Update for Business, você pode implantar Windows atualizações em dispositivos em um locatário do Azure AD. Hoje, o serviço de implantação oferece suporte a [implantações](windowsupdates-deployments.md) de Windows 10 de recursos e atualizações de segurança rápidas. Este tópico se concentra em implantações de atualizações de segurança aceleradas. Para obter informações sobre como implantar atualizações de recursos, consulte [Deploy a feature update](windowsupdates-deploy-update.md).
 
-Agilizar uma atualização de segurança substitui Windows políticas de adiamento do Update for Business para que a atualização seja instalada o mais rápido possível. Ele pode ser útil quando surgirem eventos críticos de segurança e você precisar implantar as atualizações mais recentes mais rapidamente do que o normal. No entanto, embora possa ajudar a atingir metas de conformidade em relação a uma atualização de segurança específica, ela não foi projetada para ser usada todos os meses. Em vez disso, considere o [uso de prazos de conformidade para atualizações.](https://docs.microsoft.com/windows/deployment/update/wufb-compliancedeadlines)
+Agilizar uma atualização de segurança substitui Windows políticas de adiamento do Update for Business para que a atualização seja instalada o mais rápido possível. Ele pode ser útil quando surgirem eventos críticos de segurança e você precisar implantar as atualizações mais recentes mais rapidamente do que o normal. No entanto, embora possa ajudar a atingir metas de conformidade em relação a uma atualização de segurança específica, ela não foi projetada para ser usada todos os meses. Em vez disso, considere o [uso de prazos de conformidade para atualizações.](/windows/deployment/update/wufb-compliancedeadlines)
 
 Quando você implanta uma atualização de segurança acelerada em um dispositivo, o Windows Update oferece a atualização aplicável mais recente ao dispositivo se ainda não tiver recebido a atualização com a data de lançamento especificada. Por exemplo, se você implantar a atualização de segurança Windows 10 lançada em 13 de abril de 2021 em um dispositivo que não tenha a atualização no momento, o dispositivo receberá uma atualização acelerada. Se o dispositivo já tiver a atualização especificada ou mais recente, ele não receberá uma atualização acelerada.
 
@@ -148,7 +148,8 @@ Content-Type: application/json
             "daysUntilForcedReboot": 2
         },
         "monitoring": null,
-        "rollout": null
+        "rollout": null,
+        "safeguard": null
     },
     "createdDateTime": "String (timestamp)",
     "lastModifiedDateTime": "String (timestamp)"

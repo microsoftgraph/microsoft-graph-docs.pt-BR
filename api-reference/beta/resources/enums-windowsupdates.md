@@ -5,12 +5,12 @@ author: Alice-at-Microsoft
 ms.localizationpriority: medium
 ms.prod: w10
 doc_type: enumTypes
-ms.openlocfilehash: 1c60b5718a0e5006754aae5e07cfbc19969946a0
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 8542515437150e95aa54f01a9a9e28de2eb9eb71
+ms.sourcegitcommit: c7ff992ef63e480d070421ba99b28ee129cb6acb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59040551"
+ms.lasthandoff: 11/03/2021
+ms.locfileid: "60695962"
 ---
 # <a name="microsoft-graph-windows-updates-enumeration-values"></a>Valores de enumeração do Microsoft Graph Windows Updates
 
@@ -18,7 +18,7 @@ Namespace: microsoft.graph.windowsUpdates
 
 ### <a name="azureaddeviceregistrationerrorreason-values"></a>Valores do azureADDeviceRegistrationErrorReason 
 
-|Membro|
+|Member|
 |:---|
 |invalidGlobalDeviceId|
 |invalidAzureADDeviceId|
@@ -27,16 +27,17 @@ Namespace: microsoft.graph.windowsUpdates
 
 ### <a name="deploymentstatereasonvalue-values"></a>valores deploymentStateReasonValue 
 
-|Membro|
+|Member|
 |:---|
 |scheduledByOfferWindow|
 |offeringByRequest|
 |pausedByRequest|
 |pausedByMonitoring|
+|faultedByContentOutdated|
 
 ### <a name="deploymentstatevalue-values"></a>valores deploymentStateValue 
 
-|Membro|
+|Member|
 |:---|
 |agendado|
 |offering|
@@ -46,27 +47,27 @@ Namespace: microsoft.graph.windowsUpdates
 
 ### <a name="equivalentcontentoption-values"></a>valores equivalentContentOption 
 
-|Membro|
+|Member|
 |:---|
-|Nenhuma|
+|none|
 |latestSecurity|
 
 ### <a name="monitoringaction-values"></a>valores monitoringAction 
 
-|Membro|
+|Member|
 |:---|
 |alertError|
 |pauseDeployment|
 
 ### <a name="monitoringsignal-values"></a>monitoringSignal values 
 
-|Membro|
+|Member|
 |:---|
 |rollback|
 
 ### <a name="qualityupdateclassification-values"></a>valores qualityUpdateClassification 
 
-|Membro|
+|Member|
 |:---|
 |all|
 |security|
@@ -74,15 +75,21 @@ Namespace: microsoft.graph.windowsUpdates
 
 ### <a name="requesteddeploymentstatevalue-values"></a>valores requestedDeploymentStateValue 
 
-|Membro|
+|Member|
 |:---|
-|Nenhuma|
+|none|
 |pausado|
 |arquivado|
 
+### <a name="safeguardcategory-values"></a>valores safeguardCategory 
+
+|Member|
+|:---|
+|likelyIssues|
+
 ### <a name="updatecategory-values"></a>valores updateCategory 
 
-|Membro|
+|Member|
 |:---|
 |feature|
 |quality|

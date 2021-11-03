@@ -2,15 +2,15 @@
 title: Tipo de recurso userExperienceAnalyticsScoreHistory
 description: Histórico de pontuação de inicialização do dispositivo de análise de experiência do usuário.
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 66f895b27cbc1314957a3bc24d67e1d13214f7aa
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 8026ea0f50200c9839964e157485d16045696069
+ms.sourcegitcommit: c7ff992ef63e480d070421ba99b28ee129cb6acb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59046971"
+ms.lasthandoff: 11/03/2021
+ms.locfileid: "60687968"
 ---
 # <a name="userexperienceanalyticsscorehistory-resource-type"></a>Tipo de recurso userExperienceAnalyticsScoreHistory
 
@@ -22,7 +22,7 @@ Namespace: microsoft.graph
 
 Histórico de pontuação de inicialização do dispositivo de análise de experiência do usuário.
 
-## <a name="methods"></a>Métodos
+## <a name="methods"></a>Methods
 |Método|Tipo de retorno|Descrição|
 |:---|:---|:---|
 |[Listar userExperienceAnalyticsScoreHistories](../api/intune-devices-userexperienceanalyticsscorehistory-list.md)|[coleção userExperienceAnalyticsScoreHistory](../resources/intune-devices-userexperienceanalyticsscorehistory.md)|Listar propriedades e relações dos [objetos userExperienceAnalyticsScoreHistory.](../resources/intune-devices-userexperienceanalyticsscorehistory.md)|
@@ -34,7 +34,7 @@ Histórico de pontuação de inicialização do dispositivo de análise de exper
 ## <a name="properties"></a>Propriedades
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|id|Cadeia de caracteres|O identificador exclusivo do processo de inicialização do dispositivo de análise de experiência do usuário.|
+|id|String|O identificador exclusivo do processo de inicialização do dispositivo de análise de experiência do usuário.|
 |startupDateTime|DateTimeOffset|A data de inicialização do dispositivo de análise de experiência do usuário.|
 |overallScore|Int32|Pontuação geral da análise de experiência do usuário. A pontuação estará no intervalo de 0 a 100, 100 é a pontuação ideal. Valores válidos de 0 a 100|
 |startupScore|Int32|Pontuação de inicialização do dispositivo de análise de experiência do usuário. A pontuação estará no intervalo de 0 a 100, 100 é a pontuação ideal.|
@@ -42,9 +42,11 @@ Histórico de pontuação de inicialização do dispositivo de análise de exper
 |coreSigninScore|Int32|A pontuação de entrada principal do dispositivo de análise de experiência do usuário. A pontuação estará no intervalo de 0 a 100, 100 é a pontuação ideal.|
 |recommendedSoftwareScore|Int32|A pontuação de entrada principal do dispositivo de análise de experiência do usuário. A pontuação estará no intervalo de 0 a 100, 100 é a pontuação ideal.|
 |appHealthOverallScore|Int32|A pontuação geral de saúde geral do aplicativo de análise de experiência do usuário.|
+|batteryHealthScore|Int32|A pontuação de saúde da bateria de análise de experiência do usuário.|
 |startupTotalDevices|Int32|A contagem total de dispositivos do desempenho de inicialização da categoria de análise de experiência do usuário.|
 |recommendedSoftwareTotalDevices|Int32|A contagem total de dispositivos do software recomendado da categoria de análise de experiência do usuário.|
 |appHealthTotalDevices|Int32|A contagem total de dispositivos da saúde do aplicativo de categoria de análise de experiência do usuário.|
+|batteryHealthTotalDevices|Int32|A contagem total de dispositivos da saúde da bateria da categoria de análise de experiência do usuário.|
 |restartScore|Int32|Reinicie a pontuação. A pontuação estará no intervalo de 0 a 100, 100 é a pontuação ideal, 0 indica reinicializações excessivas. Valores válidos de 0 a 9999999|
 
 ## <a name="relationships"></a>Relações
@@ -69,9 +71,11 @@ Veja a seguir uma representação JSON do recurso.
   "coreSigninScore": 1024,
   "recommendedSoftwareScore": 1024,
   "appHealthOverallScore": 1024,
+  "batteryHealthScore": 1024,
   "startupTotalDevices": 1024,
   "recommendedSoftwareTotalDevices": 1024,
   "appHealthTotalDevices": 1024,
+  "batteryHealthTotalDevices": 1024,
   "restartScore": 1024
 }
 ```

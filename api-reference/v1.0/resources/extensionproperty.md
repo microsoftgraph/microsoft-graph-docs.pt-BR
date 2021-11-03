@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: keylimesoda
 ms.prod: directory-management
 doc_type: resourcePageType
-ms.openlocfilehash: 23312e64c3812f5235a52380ef8acec65d206699
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: d1fd966e3efb4a8537cbad56cca2a3e0fb4cbb50
+ms.sourcegitcommit: c7ff992ef63e480d070421ba99b28ee129cb6acb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59123507"
+ms.lasthandoff: 11/03/2021
+ms.locfileid: "60694362"
 ---
 # <a name="extensionproperty-resource-type"></a>Tipo de recurso extensionProperty
 
@@ -22,10 +22,10 @@ Extensões podem ser adicionadas ao [usuário,](user.md) [grupo,](group.md) [org
 
 > [!IMPORTANT]
 > As extensões de esquema do Azure AD descritas aqui estão disponíveis no Microsoft Graph apenas por motivos de compatibilidade com compatibilidade.
-> Ele permite que você use o Microsoft Graph para continuar a gerenciar propriedades de extensão adicionadas por meio do Azure AD Graph ou do [Azure AD Conexão](/azure/active-directory/hybrid/whatis-azure-ad-connect).
+> Ele permite que você use o Microsoft Graph para continuar a gerenciar propriedades de extensão adicionadas por meio do Azure AD Graph (preterido) ou do [Azure AD Conexão](/azure/active-directory/hybrid/whatis-azure-ad-connect).
 > Para novas extensões personalizadas, recomendamos que você use extensões de esquema do Microsoft Graph para adicionar [dados personalizados aos recursos](/graph/extensibility-overview).
 
-## <a name="methods"></a>Métodos
+## <a name="methods"></a>Methods
 
 | Método       | Tipo de retorno | Descrição |
 |:-------------|:------------|:------------|
@@ -37,11 +37,11 @@ Extensões podem ser adicionadas ao [usuário,](user.md) [grupo,](group.md) [org
 
 | Propriedade     | Tipo        | Descrição |
 |:-------------|:------------|:------------|
-|appDisplayName|Cadeia de caracteres| Nome de exibição do objeto application no qual essa propriedade de extensão é definida. Somente leitura. |
+|appDisplayName|String| Nome de exibição do objeto application no qual essa propriedade de extensão é definida. Somente leitura. |
 |dataType|Cadeia de caracteres| Especifica o tipo de dados do valor que a propriedade extension pode manter. Os valores a seguir são suportados. Não anulável. <ul><li>`Binary` - Máximo de 256 bytes</li><li>`Boolean`</li><li>`DateTime` - Deve ser especificado no formato ISO 8601. Serão armazenados no UTC.</li><li>`Integer` - Valor de 32 bits.</li><li>`LargeInteger` - Valor de 64 bits.</li><li>`String` - Máximo de 256 caracteres</li></ul>|
-|isSyncedFromOnPremises|Boolean| Indica se essa propriedade de extensão foi sycned do diretório onpremises usando o Azure AD Conexão. Somente leitura. |
-|name|Cadeia de caracteres| Nome da propriedade extension. Não anulável. |
-|targetObjects|Coleção String| Os valores a seguir são suportados. Não anulável. <ul><li>`User`</li><li>`Group`</li><li>`Organization`</li><li>`Device`</li><li>`Application`</li></ul>|
+|isSyncedFromOnPremises|Booliano| Indica se essa propriedade de extensão foi sycned do diretório onpremises usando o Azure AD Conexão. Somente leitura. |
+|name|String| Nome da propriedade extension. Não anulável. |
+|targetObjects|Coleção de cadeias de caracteres| Os valores a seguir são suportados. Não anulável. <ul><li>`User`</li><li>`Group`</li><li>`Organization`</li><li>`Device`</li><li>`Application`</li></ul>|
 
 ## <a name="relationships"></a>Relações
 

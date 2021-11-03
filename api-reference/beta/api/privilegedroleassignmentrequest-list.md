@@ -1,22 +1,24 @@
 ---
 title: Listar privilegedRoleAssignmentRequests
 description: 'Recupere uma coleção de privilegedRoleAssignmentRequest. '
-localization_priority: Normal
+ms.localizationpriority: medium
 doc_type: apiPageType
 ms.prod: governance
-author: shauliu1
-ms.openlocfilehash: 89eb70733d5b3db1991d93679b963bd6b303ef48
-ms.sourcegitcommit: 01755ac7c0ab7becf28052e05e58567caa8364cd
+author: carolinetempleton
+ms.openlocfilehash: 02278b23fc27f0b8876b3a8ab37344c07f2a93a3
+ms.sourcegitcommit: c7ff992ef63e480d070421ba99b28ee129cb6acb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/21/2021
-ms.locfileid: "58453993"
+ms.lasthandoff: 11/03/2021
+ms.locfileid: "60687702"
 ---
 # <a name="list-privilegedroleassignmentrequests"></a>Listar privilegedRoleAssignmentRequests
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
+[!INCLUDE [pim-v1AADRoles-deprecation](../../includes/pim-v1aadroles-deprecation.md)]
 
 Recupere uma coleção [de privilegedRoleAssignmentRequest](../resources/privilegedroleassignmentrequest.md). 
 

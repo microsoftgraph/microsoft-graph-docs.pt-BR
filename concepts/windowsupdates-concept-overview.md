@@ -5,12 +5,12 @@ author: Alice-at-Microsoft
 ms.localizationpriority: medium
 ms.prod: w10
 doc_type: conceptualPageType
-ms.openlocfilehash: df2977584ba523f6efcc71366bd63db481539ce1
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: f8d369de9f9caf92c4c07a55cc291cc300f281c0
+ms.sourcegitcommit: c7ff992ef63e480d070421ba99b28ee129cb6acb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59117624"
+ms.lasthandoff: 11/03/2021
+ms.locfileid: "60688630"
 ---
 # <a name="windows-updates-api-overview"></a>Windows visão geral da API de atualizações
 
@@ -19,12 +19,12 @@ O Windows de implantação update for Business fornece controle sobre as atualiz
 ## <a name="why-use-the-windows-update-for-business-deployment-service"></a>Por que usar o serviço de implantação Windows Atualização para Empresas?
 
 Profissionais de TI e fornecedores de ferramentas de gerenciamento podem usar o serviço de implantação para:
-* Agendar implantações de atualização para começar em uma data específica
-* Implantações em estágios por um período de dias ou semanas usando expressões ricas
-* Ignorar políticas pré-configuradas Windows Update for Business para implantar imediatamente uma atualização de segurança
-* Garantir a cobertura de hardware e software em sua organização por meio de implantações personalizadas para populações exclusivas de dispositivos
+* Agende as implantações de atualização para começar em uma data específica.
+* Implantações em estágios por um período de dias ou semanas usando expressões ricas.
+* Ignore as políticas de atualização Windows Para Empresas pré-configuradas para implantar imediatamente uma atualização de segurança.
+* Certifique-se de cobertura de hardware e software em sua organização por meio de implantações personalizadas para populações exclusivas de dispositivos.
 
-Hoje, o serviço de implantação dá suporte ao gerenciamento Windows 10 de recursos e àgilizar Windows 10 de segurança. Para saber mais sobre o serviço de implantação no contexto do Windows Update for Business, consulte [Overview of the deployment service](https://docs.microsoft.com/windows/deployment/update/deployment-service-overview).
+Hoje, o serviço de implantação dá suporte ao gerenciamento Windows 10 de recursos e àgilizar Windows 10 de segurança. Para saber mais sobre o serviço de implantação no contexto Windows Update for Business, consulte [Overview of the deployment service](/windows/deployment/update/deployment-service-overview).
 
 ## <a name="prerequisites"></a>Pré-requisitos    
 
@@ -62,7 +62,9 @@ Para saber mais, confira [Implantar uma atualização de segurança acelerada.](
 
 ## <a name="protect-devices-by-default"></a>Proteger dispositivos por padrão
 
-Aproveite o benefício das [proteções](https://docs.microsoft.com/windows/deployment/update/safeguard-holds) de proteção que impedem que dispositivos com um problema de qualidade ou compatibilidade instalem uma atualização, resultando em falha ou reação de outra forma.
+Aproveite o benefício das [proteções](/windows/deployment/update/safeguard-holds) de proteção que impedem que dispositivos com um problema de qualidade ou compatibilidade instalem uma atualização, resultando em falha ou reação de outra forma. Para implantações do Windows 11, o serviço de implantação estende essas proteções de proteção para proteger ainda mais os dispositivos. A Microsoft usa algoritmos de aprendizado de máquina para monitorar a amplitude do ecossistema Windows à medida que os dispositivos atualizam para Windows 11. Para dispositivos identificados com maior risco de enfrentar um problema pós-atualização, o serviço de implantação aplica proteções antecipadas para proteger esses dispositivos enquanto o problema é investigado e confirmado.
+
+Para saber mais, confira [Gerenciar proteções para uma implantação](windowsupdates-manage-safeguards.md).
 
 Além disso, você pode configurar regras de monitoramento exclusivas da sua organização. Essas regras podem enviar um alerta ou pausar uma implantação com base em sinais de dispositivo, como reações.
 

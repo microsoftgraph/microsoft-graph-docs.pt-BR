@@ -1,22 +1,24 @@
 ---
 title: 'privilegedRoleAssignment: my'
 description: Obter as atribuições de função privilegiada do solicitante.
-localization_priority: Normal
+ms.localizationpriority: medium
 doc_type: apiPageType
 ms.prod: governance
-author: shauliu1
-ms.openlocfilehash: c317a37a66d8475342c9f3776e73b8d3cbf5aa61
-ms.sourcegitcommit: 01755ac7c0ab7becf28052e05e58567caa8364cd
+author: carolinetempleton
+ms.openlocfilehash: b52931922ab2ac7c00d04537ad64ba4e3363449f
+ms.sourcegitcommit: c7ff992ef63e480d070421ba99b28ee129cb6acb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/21/2021
-ms.locfileid: "58453657"
+ms.lasthandoff: 11/03/2021
+ms.locfileid: "60695759"
 ---
 # <a name="privilegedroleassignment-my"></a>privilegedRoleAssignment: my
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
+[!INCLUDE [pim-v1AADRoles-deprecation](../../includes/pim-v1aadroles-deprecation.md)]
 
 Obter as atribuições de função privilegiada do solicitante.
 

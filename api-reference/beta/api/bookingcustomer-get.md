@@ -9,8 +9,8 @@ ms.openlocfilehash: 2cb093fa428093e39442882639eb206e0a9ef2e7
 ms.sourcegitcommit: c7ff992ef63e480d070421ba99b28ee129cb6acb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/02/2021
-ms.locfileid: "60673424"
+ms.lasthandoff: 11/03/2021
+ms.locfileid: "60688490"
 ---
 # <a name="get-bookingcustomer"></a>Obter bookingCustomer
 

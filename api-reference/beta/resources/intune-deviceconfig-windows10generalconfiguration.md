@@ -9,8 +9,8 @@ ms.openlocfilehash: a53dd403abb8c9367122f75a2f8c4a45a3193488
 ms.sourcegitcommit: c7ff992ef63e480d070421ba99b28ee129cb6acb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/02/2021
-ms.locfileid: "60674028"
+ms.lasthandoff: 11/03/2021
+ms.locfileid: "60688784"
 ---
 # <a name="windows10generalconfiguration-resource-type"></a>Tipo de recurso windows10GeneralConfiguration
 

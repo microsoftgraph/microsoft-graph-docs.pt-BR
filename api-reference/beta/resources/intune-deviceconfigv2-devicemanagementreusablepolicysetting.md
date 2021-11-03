@@ -2,15 +2,15 @@
 title: Tipo de recurso deviceManagementReusablePolicySetting
 description: Graph modelo para uma configuração reutilizável
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 799fdc402bde4401a823a2d720e822a9001a04d9
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 024a4d444e79eb72b2332e07edb76251afe28699
+ms.sourcegitcommit: c7ff992ef63e480d070421ba99b28ee129cb6acb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59051304"
+ms.lasthandoff: 11/03/2021
+ms.locfileid: "60689176"
 ---
 # <a name="devicemanagementreusablepolicysetting-resource-type"></a>Tipo de recurso deviceManagementReusablePolicySetting
 
@@ -22,7 +22,7 @@ Namespace: microsoft.graph
 
 Graph modelo para uma configuração reutilizável
 
-## <a name="methods"></a>Métodos
+## <a name="methods"></a>Methods
 |Método|Tipo de retorno|Descrição|
 |:---|:---|:---|
 |[Listar deviceManagementReusablePolicySettings](../api/intune-deviceconfigv2-devicemanagementreusablepolicysetting-list.md)|[Coleção deviceManagementReusablePolicySetting](../resources/intune-deviceconfigv2-devicemanagementreusablepolicysetting.md)|Listar propriedades e relações dos [objetos deviceManagementReusablePolicySetting.](../resources/intune-deviceconfigv2-devicemanagementreusablepolicysetting.md)|
@@ -35,10 +35,10 @@ Graph modelo para uma configuração reutilizável
 ## <a name="properties"></a>Propriedades
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|id|Cadeia de caracteres|id de configuração reutilizável gerada pelo sistema.|
-|displayName|Cadeia de caracteres|nome de exibição de configuração reutilizável fornecido pelo usuário.|
-|description|Cadeia de caracteres|descrição da configuração reutilizável fornecida pelo usuário.|
-|settingDefinitionId|Cadeia de Caracteres|id de definição de definição associada a essa configuração reutilizável.|
+|id|String|id de configuração reutilizável gerada pelo sistema.|
+|displayName|String|nome de exibição de configuração reutilizável fornecido pelo usuário.|
+|descrição|String|descrição da configuração reutilizável fornecida pelo usuário.|
+|settingDefinitionId|String|id de definição de definição associada a essa configuração reutilizável.|
 |settingInstance|[deviceManagementConfigurationSettingInstance](../resources/intune-deviceconfigv2-devicemanagementconfigurationsettinginstance.md)|instância de configuração de configuração reutilizável|
 |createdDateTime|DateTimeOffset|reutilizável definindo data e hora de criação. Essa propriedade é somente leitura.|
 |lastModifiedDateTime|DateTimeOffset|data e hora em que a configuração reutilizável foi modificada pela última vez. Essa propriedade é somente leitura.|
@@ -48,7 +48,7 @@ Graph modelo para uma configuração reutilizável
 ## <a name="relationships"></a>Relações
 |Relação|Tipo|Descrição|
 |:---|:---|:---|
-|referencingConfigurationPolicies|[Coleção deviceManagementConfigurationPolicy](../resources/intune-deviceconfigv2-devicemanagementconfigurationpolicy.md)|políticas de configuração fazendo referência à configuração atual reutilizável|
+|referencingConfigurationPolicies|[Coleção deviceManagementConfigurationPolicy](../resources/intune-deviceconfigv2-devicemanagementconfigurationpolicy.md)|políticas de configuração referenciando a configuração atual reutilizável. Essa propriedade é somente leitura.|
 
 ## <a name="json-representation"></a>Representação JSON
 Veja a seguir uma representação JSON do recurso.

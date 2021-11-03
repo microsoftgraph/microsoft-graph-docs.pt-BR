@@ -9,8 +9,8 @@ ms.openlocfilehash: 70b0f81e3262f9191dc279cb73e4e09f2e2b2ec6
 ms.sourcegitcommit: c7ff992ef63e480d070421ba99b28ee129cb6acb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/02/2021
-ms.locfileid: "60674270"
+ms.lasthandoff: 11/03/2021
+ms.locfileid: "60695437"
 ---
 # <a name="create-deployment"></a>Criar implantação
 Namespace: microsoft.graph.windowsUpdates

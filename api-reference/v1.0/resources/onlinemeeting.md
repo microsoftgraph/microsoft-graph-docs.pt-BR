@@ -5,12 +5,12 @@ author: mkhribech
 ms.localizationpriority: medium
 doc_type: resourcePageType
 ms.prod: cloud-communications
-ms.openlocfilehash: 5d1c78ced2396741dfae7184aa260f56ba1d5f07
-ms.sourcegitcommit: cbad97d6a8ccb89b1822b30a11cc9b6f2670deda
+ms.openlocfilehash: d6f11bea8afcbb9a53f90789c32ea014bbee8f46
+ms.sourcegitcommit: c7ff992ef63e480d070421ba99b28ee129cb6acb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/30/2021
-ms.locfileid: "60016589"
+ms.lasthandoff: 11/03/2021
+ms.locfileid: "60696046"
 ---
 # <a name="onlinemeeting-resource-type"></a>Tipo de recurso onlineMeeting
 
@@ -33,24 +33,24 @@ Contém informações sobre uma reunião, incluindo a URL usada para ingressar e
 | Propriedade              | Tipo                                          | Descrição                                                                                                                |
 | :-------------------- | :-------------------------------------------- | :------------------------------------------------------------------------------------------------------------------------- |
 | allowedPresenters     | [onlineMeetingPresenters](#onlinemeetingpresenters-values)                       | Especifica quem pode ser um apresentador em uma reunião. Os valores possíveis são listados na tabela a seguir.                          |
-| allowAttendeeToEnableCamera     | Booleano                       | Indica se os participantes podem ativar a câmera.                          |
-| allowAttendeeToEnableMic     | Booleano                       | Indica se os participantes podem ativar o microfone.                          |
+| allowAttendeeToEnableCamera     | Booliano                       | Indica se os participantes podem ativar a câmera.                          |
+| allowAttendeeToEnableMic     | Booliano                       | Indica se os participantes podem ativar o microfone.                          |
 | allowMeetingChat      | [meetingChatMode](#meetingchatmode-values) | Especifica o modo de chat de reunião. |
 | allowTeamworkReactions | Booliano | Indica se Teams reações estão habilitadas para a reunião. |
-| attendeeReport | Stream | O fluxo de conteúdo do relatório do participante de um evento ao vivo. Somente leitura. |
+| attendeeReport | Stream | O fluxo de conteúdo do relatório do participante de um evento [Microsoft Teams ao vivo](/microsoftteams/teams-live-events/what-are-teams-live-events). Apenas leitura. |
 | audioConferencing     | [audioConferencing](audioconferencing.md)     | As informações de acesso por telefone (discagem) para uma reunião online. Somente leitura.                                                   |
 | broadcastSettings              | [broadcastMeetingSettings](broadcastMeetingSettings.md)                      | Configurações relacionado a um evento ao vivo.                                                                  |
 | chatInfo              | [chatInfo](chatinfo.md)                       | As informações de chat associadas a essa reunião online.                                                                  |
-| creationDateTime      | DateTime                                      | O tempo de criação da reunião em UTC. Somente leitura.                                                                               |
+| creationDateTime      | DateTime                                      | O tempo de criação da reunião em UTC. Apenas leitura.                                                                               |
 | endDateTime           | DateTime                                      | A hora de término da reunião em UTC.                                                                                               |
 | id                    | String                                        | A ID padrão associada à reunião online. Somente leitura.                                                              |
-| isBroadcast  | Booleano                                       | Indica se esse é um evento ao vivo.                  |
-| isEntryExitAnnounced  | Booleano                                       | Indica se os chamadores ingressarão ou sairão.                                                                     |
+| isBroadcast  | Booliano                                       | Indica se esse é um evento [Teams ao vivo](/microsoftteams/teams-live-events/what-are-teams-live-events).                  |
+| isEntryExitAnnounced  | Booliano                                       | Indica se os chamadores ingressarão ou sairão.                                                                     |
 | joinInformation       | [itemBody](itembody.md)                       | As informações de junção no idioma e na variante de localidade especificadas no `Accept-Language` cabeçalho HTTP da solicitação. Somente leitura. |
 | joinWebUrl            | String                                        | A URL de junção da reunião online. Somente leitura.                                                                             |
 | lobbyBypassSettings   | [lobbyBypassSettings](lobbyBypassSettings.md) | Especifica quais participantes podem ignorar o lobby da reunião.                                                               |
 | participants          | [meetingParticipants](meetingparticipants.md) | Os participantes associados à reunião online.  Isso inclui o organizador e os participantes.                       |
-| recordAutomatically | Booleano | Indica se deve gravar a reunião automaticamente. |
+| recordAutomatically | Booliano | Indica se deve gravar a reunião automaticamente. |
 | startDateTime         | DateTime                                      | O horário de início da reunião em UTC.                                                                                             |
 | assunto               | String                                        | O assunto da reunião online.                                                                                         |
 | videoTeleconferenceId | String                                        | A ID de teleconferência de vídeo. Somente leitura.                                                                                  |

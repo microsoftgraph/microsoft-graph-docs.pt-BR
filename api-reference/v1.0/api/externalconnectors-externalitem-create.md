@@ -5,12 +5,12 @@ author: snlraju-msft
 ms.localizationpriority: medium
 ms.prod: search
 doc_type: apiPageType
-ms.openlocfilehash: e0d7bb9066ba09dfb6b133a64d796e89f4b195a9
-ms.sourcegitcommit: 0eb843a6f61f384bc28c0cce1ccb74f64bdb1fa6
+ms.openlocfilehash: 21dc72a90dc863344380da4ece717bddba375cac
+ms.sourcegitcommit: c7ff992ef63e480d070421ba99b28ee129cb6acb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/23/2021
-ms.locfileid: "60560832"
+ms.lasthandoff: 11/03/2021
+ms.locfileid: "60688113"
 ---
 # <a name="create-externalitem"></a>Criar externalItem
 
@@ -25,7 +25,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |:---|:---|
 |Delegado (conta corporativa ou de estudante)|Não aplicável|
 |Delegado (conta pessoal da Microsoft)|Não aplicável|
-|Application| ExternalItem.ReadWrite.OwnedBy, ExternalItem.ReadWrite.All |
+|Aplicativo| ExternalItem.ReadWrite.OwnedBy, ExternalItem.ReadWrite.All |
 
 ## <a name="http-request"></a>Solicitação HTTP
 
@@ -50,7 +50,7 @@ Você pode especificar as seguintes propriedades ao criar [um externalItem](../r
 
 |Propriedade|Tipo| Descrição|
 |:---|:---|:---|
-|id|Cadeia de caracteres|A ID do item. Obrigatório.|
+|id|String|A ID do item. Obrigatório.|
 |properties|[microsoft.graph.externalConnectors.properties](../resources/externalconnectors-properties.md)|As propriedades do item. O `properties` objeto deve conter pelo menos uma propriedade. Todas `DateTime` as propriedades de tipo devem estar no formato ISO 8601. Obrigatório.|
 |conteúdo|[microsoft.graph.externalConnectors.externalItemContent](../resources/externalconnectors-externalitemcontent.md)|O conteúdo do item externo. Opcional.|
 |acl|[Coleção microsoft.graph.externalConnectors.acl](../resources/externalconnectors-acl.md)|A lista de controles de acesso. Obrigatório.|
@@ -88,6 +88,8 @@ Quando é bem-sucedido, este método retorna um código de resposta `200 OK`.
 ### <a name="request"></a>Solicitação
 
 
+
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "create_externalitem_from_externalConnections"
@@ -121,6 +123,20 @@ Content-type: application/json
   }
 }
 ```
+# <a name="c"></a>[C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/create-externalitem-from-externalconnections-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/create-externalitem-from-externalconnections-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/create-externalitem-from-externalconnections-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 
 

@@ -2,15 +2,15 @@
 title: Obter windows10VpnConfiguration
 description: Leia propriedades e relações do objeto windows10VpnConfiguration.
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 48c9815c46eb870ec0fb8ba610175aad08b45cfc
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 3d65e3e06233ac1624f6e78df7207e29ea0b21f6
+ms.sourcegitcommit: c7ff992ef63e480d070421ba99b28ee129cb6acb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59010019"
+ms.lasthandoff: 11/03/2021
+ms.locfileid: "60693930"
 ---
 # <a name="get-windows10vpnconfiguration"></a>Obter windows10VpnConfiguration
 
@@ -27,8 +27,8 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 |Tipo de permissão|Permissões (da com menos para a com mais privilégios)|
 |:---|:---|
-|Delegada (conta corporativa ou de estudante)|DeviceManagementConfiguration.Read.All, DeviceManagementConfiguration.ReadWrite.All|
-|Delegada (conta pessoal da Microsoft)|Sem suporte.|
+|Delegado (conta corporativa ou de estudante)|DeviceManagementConfiguration.Read.All, DeviceManagementConfiguration.ReadWrite.All|
+|Delegado (conta pessoal da Microsoft)|Sem suporte.|
 |Aplicativo|DeviceManagementConfiguration.Read.All, DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
@@ -70,7 +70,7 @@ Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado a
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 4950
+Content-Length: 5014
 
 {
   "value": {
@@ -125,6 +125,7 @@ Content-Length: 4950
     "dnsSuffixes": [
       "Dns Suffixes value"
     ],
+    "microsoftTunnelSiteId": "Microsoft Tunnel Site Id value",
     "authenticationMethod": "usernameAndPassword",
     "rememberUserCredentials": true,
     "enableConditionalAccess": true,

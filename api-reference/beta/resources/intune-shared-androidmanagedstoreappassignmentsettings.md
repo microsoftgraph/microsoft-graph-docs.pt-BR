@@ -2,15 +2,15 @@
 title: Tipo de recurso androidManagedStoreAppAssignmentSettings
 description: Contém propriedades usadas para atribuir um aplicativo móvel da Loja Gerenciada do Android a um grupo.
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 18b1b52ac92fee819a7e4f7e690df850947f2a5b
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 8a2afa3243cc19b016430e2b9960f6aecc349cdf
+ms.sourcegitcommit: c7ff992ef63e480d070421ba99b28ee129cb6acb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59039200"
+ms.lasthandoff: 11/03/2021
+ms.locfileid: "60691537"
 ---
 # <a name="androidmanagedstoreappassignmentsettings-resource-type"></a>Tipo de recurso androidManagedStoreAppAssignmentSettings
 
@@ -28,7 +28,8 @@ Herda de [mobileAppAssignmentSettings](../resources/intune-shared-mobileappassig
 ## <a name="properties"></a>Propriedades
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|androidManagedStoreAppTrackIds|String collection|As IDs de faixa para habilitar para essa atribuição de aplicativo.|
+|androidManagedStoreAppTrackIds|Coleção de cadeias de caracteres|As IDs de faixa para habilitar para essa atribuição de aplicativo.|
+|autoUpdateMode|[androidManagedStoreAutoUpdateMode](../resources/intune-shared-androidmanagedstoreautoupdatemode.md)|A priorização de atualizações automáticas para essa atribuição de aplicativo. Os valores possíveis são: `default`, `postponed`, `priority`, `unknownFutureValue`.|
 
 ## <a name="relationships"></a>Relações
 Nenhum
@@ -45,7 +46,8 @@ Veja a seguir uma representação JSON do recurso.
   "@odata.type": "#microsoft.graph.androidManagedStoreAppAssignmentSettings",
   "androidManagedStoreAppTrackIds": [
     "String"
-  ]
+  ],
+  "autoUpdateMode": "String"
 }
 ```
 

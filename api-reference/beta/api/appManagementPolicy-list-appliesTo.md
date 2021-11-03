@@ -1,16 +1,16 @@
 ---
 title: Lista appliesTo
 description: Listar recursos atribuídos a uma política de gerenciamento de aplicativos.
-localization_priority: Normal
+ms.localizationpriority: medium
 author: madansr7
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: 9bf0ac0198c50a02550a53de18ba544f1752895d
-ms.sourcegitcommit: 0116750a01323bc9bedd192d4a780edbe7ce0fdc
+ms.openlocfilehash: 5ada4a6c98f8568fe4761898f92d7c34d1bc7f65
+ms.sourcegitcommit: c7ff992ef63e480d070421ba99b28ee129cb6acb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58258959"
+ms.lasthandoff: 11/03/2021
+ms.locfileid: "60688370"
 ---
 # <a name="list-appliesto"></a>Lista appliesTo
 
@@ -26,9 +26,9 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 | Tipo de permissão                        | Permissões (da com menos para a com mais privilégios)                                             |
 | :------------------------------------- | :--------------------------------------------------------- |
-| Delegada (conta corporativa ou de estudante)     | Policy.Read.All, Policy.ReadWrite.ApplicationConfiguration |
-| Delegada (conta pessoal da Microsoft) | Sem suporte.                                             |
-| Aplicativo                            | Policy.Read.All, Policy.ReadWrite.ApplicationConfiguration |
+| Delegado (conta corporativa ou de estudante)     | Application.Read.All e Policy.Read.All, Application.Read.All e Policy.ReadWrite.ApplicationConfiguration |
+| Delegado (conta pessoal da Microsoft) | Sem suporte.                                             |
+| Aplicativo                            | Application.Read.All e Policy.Read.All, Application.Read.All e Policy.ReadWrite.ApplicationConfiguration |
 
 ## <a name="http-request"></a>Solicitação HTTP
 
@@ -39,6 +39,7 @@ GET /policies/appManagementPolicies/{id}/appliesTo
 ```
 
 ## <a name="optional-query-parameters"></a>Parâmetros de consulta opcionais
+
 Este método dá suporte `$select` aos `$filter` parâmetros de consulta , e OData para ajudar a personalizar `$top` a resposta. Você pode aplicar `$filter` em propriedades de objetos [application](../resources/application.md) ou [servicePrincipal](../resources/serviceprincipal.md) que suportam `$filter` . Por exemplo, a consulta a seguir recupera **a appId** e **displayName** de aplicativos ou entidades de serviço atribuídas à política.
 
 ``` http
@@ -62,9 +63,11 @@ Não forneça um corpo de solicitação para esse método.
 
 Se tiver êxito, este método retornará um código de resposta e uma `200 OK` coleção de [objetos appManagementPolicy](../resources/appManagementPolicy.md) no corpo da resposta.
 
-## <a name="example-1-get-applications-and-service-principal-objects-applied-to-an-app-management-policy"></a>Exemplo 1: Obter aplicativos e objetos de entidade de serviço aplicados a uma política de gerenciamento de aplicativos
+## <a name="examples"></a>Exemplos
 
-### <a name="request"></a>Solicitação
+### <a name="example-1-get-applications-and-service-principal-objects-applied-to-an-app-management-policy"></a>Exemplo 1: Obter aplicativos e objetos de entidade de serviço aplicados a uma política de gerenciamento de aplicativos
+
+#### <a name="request"></a>Solicitação
 
 Este é um exemplo de solicitação.
 
@@ -97,7 +100,7 @@ GET https://graph.microsoft.com/beta/policies/appManagementPolicies/{id}/applies
 ---
 
 
-### <a name="response"></a>Resposta
+#### <a name="response"></a>Resposta
 
 Este é um exemplo de resposta.
 >**Observação:** o objeto de resposta mostrado aqui pode ser encurtado para legibilidade.
@@ -126,12 +129,11 @@ Content-type: application/json
 }
 ```
 
-## <a name="example-2-get-specific-properties-of-applications-and-service-principal-objects-applied-to-an-app-management-policy-using-select-query-option"></a>Exemplo 2: Obter propriedades específicas de aplicativos e objetos de entidade de serviço aplicados a uma política de gerenciamento de aplicativos usando $select de consulta
+### <a name="example-2-get-specific-properties-of-applications-and-service-principal-objects-applied-to-an-app-management-policy-using-select-query-option"></a>Exemplo 2: Obter propriedades específicas de aplicativos e objetos de entidade de serviço aplicados a uma política de gerenciamento de aplicativos usando $select de consulta
 
-### <a name="request"></a>Solicitação
+#### <a name="request"></a>Solicitação
 
-Este é um exemplo de solicitação.
-
+A seguir, um exemplo da solicitação usando $select de consulta.
 
 # <a name="http"></a>[HTTP](#tab/http)
 <!-- {
@@ -160,8 +162,7 @@ GET https://graph.microsoft.com/beta/policies/appManagementPolicies/{id}/applies
 
 ---
 
-
-### <a name="response"></a>Resposta
+#### <a name="response"></a>Resposta
 
 A seguir, um exemplo da resposta que retorna , e de aplicativos e entidades de serviço onde a `id` `appId` política é `displayName` `createdDateTime` aplicada.
 

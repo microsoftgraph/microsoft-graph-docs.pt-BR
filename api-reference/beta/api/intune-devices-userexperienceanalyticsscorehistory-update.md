@@ -2,15 +2,15 @@
 title: Atualizar userExperienceAnalyticsScoreHistory
 description: Atualize as propriedades de um objeto userExperienceAnalyticsScoreHistory.
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 19b0c60db719e35d516cb048d69c7dd76fdd1dde
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: c6a40bf69f1b387c14657b2ae6e307d8b1a6d6a2
+ms.sourcegitcommit: c7ff992ef63e480d070421ba99b28ee129cb6acb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59076982"
+ms.lasthandoff: 11/03/2021
+ms.locfileid: "60688840"
 ---
 # <a name="update-userexperienceanalyticsscorehistory"></a>Atualizar userExperienceAnalyticsScoreHistory
 
@@ -53,7 +53,7 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar [o userE
 
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|id|Cadeia de caracteres|O identificador exclusivo do processo de inicialização do dispositivo de análise de experiência do usuário.|
+|id|String|O identificador exclusivo do processo de inicialização do dispositivo de análise de experiência do usuário.|
 |startupDateTime|DateTimeOffset|A data de inicialização do dispositivo de análise de experiência do usuário.|
 |overallScore|Int32|Pontuação geral da análise de experiência do usuário. A pontuação estará no intervalo de 0 a 100, 100 é a pontuação ideal. Valores válidos de 0 a 100|
 |startupScore|Int32|Pontuação de inicialização do dispositivo de análise de experiência do usuário. A pontuação estará no intervalo de 0 a 100, 100 é a pontuação ideal.|
@@ -61,9 +61,11 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar [o userE
 |coreSigninScore|Int32|A pontuação de entrada principal do dispositivo de análise de experiência do usuário. A pontuação estará no intervalo de 0 a 100, 100 é a pontuação ideal.|
 |recommendedSoftwareScore|Int32|A pontuação de entrada principal do dispositivo de análise de experiência do usuário. A pontuação estará no intervalo de 0 a 100, 100 é a pontuação ideal.|
 |appHealthOverallScore|Int32|A pontuação geral de saúde geral do aplicativo de análise de experiência do usuário.|
+|batteryHealthScore|Int32|A pontuação de saúde da bateria de análise de experiência do usuário.|
 |startupTotalDevices|Int32|A contagem total de dispositivos do desempenho de inicialização da categoria de análise de experiência do usuário.|
 |recommendedSoftwareTotalDevices|Int32|A contagem total de dispositivos do software recomendado da categoria de análise de experiência do usuário.|
 |appHealthTotalDevices|Int32|A contagem total de dispositivos da saúde do aplicativo de categoria de análise de experiência do usuário.|
+|batteryHealthTotalDevices|Int32|A contagem total de dispositivos da saúde da bateria da categoria de análise de experiência do usuário.|
 |restartScore|Int32|Reinicie a pontuação. A pontuação estará no intervalo de 0 a 100, 100 é a pontuação ideal, 0 indica reinicializações excessivas. Valores válidos de 0 a 9999999|
 
 
@@ -78,7 +80,7 @@ Este é um exemplo da solicitação.
 ``` http
 PATCH https://graph.microsoft.com/beta/deviceManagement/userExperienceAnalyticsScoreHistory/{userExperienceAnalyticsScoreHistoryId}
 Content-type: application/json
-Content-length: 422
+Content-length: 485
 
 {
   "@odata.type": "#microsoft.graph.userExperienceAnalyticsScoreHistory",
@@ -89,9 +91,11 @@ Content-length: 422
   "coreSigninScore": 15,
   "recommendedSoftwareScore": 8,
   "appHealthOverallScore": 5,
+  "batteryHealthScore": 2,
   "startupTotalDevices": 3,
   "recommendedSoftwareTotalDevices": 15,
   "appHealthTotalDevices": 5,
+  "batteryHealthTotalDevices": 9,
   "restartScore": 12
 }
 ```
@@ -101,7 +105,7 @@ Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado a
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 471
+Content-Length: 534
 
 {
   "@odata.type": "#microsoft.graph.userExperienceAnalyticsScoreHistory",
@@ -113,9 +117,11 @@ Content-Length: 471
   "coreSigninScore": 15,
   "recommendedSoftwareScore": 8,
   "appHealthOverallScore": 5,
+  "batteryHealthScore": 2,
   "startupTotalDevices": 3,
   "recommendedSoftwareTotalDevices": 15,
   "appHealthTotalDevices": 5,
+  "batteryHealthTotalDevices": 9,
   "restartScore": 12
 }
 ```
