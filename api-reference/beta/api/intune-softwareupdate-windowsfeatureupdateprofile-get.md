@@ -9,8 +9,8 @@ ms.openlocfilehash: 436ce55660aabeb6353d50c999df1c257c680efe
 ms.sourcegitcommit: c7ff992ef63e480d070421ba99b28ee129cb6acb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/02/2021
-ms.locfileid: "60672044"
+ms.lasthandoff: 11/03/2021
+ms.locfileid: "60696977"
 ---
 # <a name="get-windowsfeatureupdateprofile"></a>Obter windowsFeatureUpdateProfile
 

@@ -1,22 +1,24 @@
 ---
 title: Delete privilegedRoleAssignment
 description: Exclua privilegedRoleAssignment.
-localization_priority: Normal
+ms.localizationpriority: medium
 doc_type: apiPageType
 ms.prod: governance
-author: shauliu1
-ms.openlocfilehash: ecaa47dbcf2d626437ad4c7e7730aa571db163bf
-ms.sourcegitcommit: 01755ac7c0ab7becf28052e05e58567caa8364cd
+author: carolinetempleton
+ms.openlocfilehash: b5290846f7d222e2494eb2a3879188160b2cdf5d
+ms.sourcegitcommit: c7ff992ef63e480d070421ba99b28ee129cb6acb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/21/2021
-ms.locfileid: "58454049"
+ms.lasthandoff: 11/03/2021
+ms.locfileid: "60696655"
 ---
 # <a name="delete-privilegedroleassignment"></a>Delete privilegedRoleAssignment
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
+[!INCLUDE [pim-v1AADRoles-deprecation](../../includes/pim-v1aadroles-deprecation.md)]
 
 Excluir [privilegedRoleAssignment](../resources/privilegedroleassignment.md).
 ## <a name="permissions"></a>Permissões

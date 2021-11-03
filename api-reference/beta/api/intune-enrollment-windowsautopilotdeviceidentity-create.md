@@ -2,15 +2,15 @@
 title: Criar windowsAutopilotDeviceIdentity
 description: Crie um novo objeto windowsAutopilotDeviceIdentity.
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: b6e7ea79b5f487963ea495b0125973fa7767ccc3
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 8adac3020fc3e8fd455c476db36c300c701c91cd
+ms.sourcegitcommit: c7ff992ef63e480d070421ba99b28ee129cb6acb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59076954"
+ms.lasthandoff: 11/03/2021
+ms.locfileid: "60695906"
 ---
 # <a name="create-windowsautopilotdeviceidentity"></a>Criar windowsAutopilotDeviceIdentity
 
@@ -56,24 +56,24 @@ A tabela a seguir mostra as propriedades necessárias ao criar o windowsAutopilo
 |:---|:---|:---|
 |id|String|O GUID do objeto.|
 |deploymentProfileAssignmentStatus|[windowsAutopilotProfileAssignmentStatus](../resources/intune-enrollment-windowsautopilotprofileassignmentstatus.md)|Status de atribuição de perfil do dispositivo Windows piloto automático. Os valores possíveis são: `unknown`, `assignedInSync`, `assignedOutOfSync`, `assignedUnkownSyncState`, `notAssigned`, `pending`, `failed`.|
-|deploymentProfileAssignmentDetailedStatus|[windowsAutopilotProfileAssignmentDetailedStatus](../resources/intune-enrollment-windowsautopilotprofileassignmentdetailedstatus.md)|Status detalhado da atribuição de perfil do dispositivo Windows piloto automático. Os valores possíveis são: `none`, `hardwareRequirementsNotMet`, `surfaceHubProfileNotSupported`, `holoLensProfileNotSupported`, `windowsPcProfileNotSupported`.|
+|deploymentProfileAssignmentDetailedStatus|[windowsAutopilotProfileAssignmentDetailedStatus](../resources/intune-enrollment-windowsautopilotprofileassignmentdetailedstatus.md)|Status detalhado da atribuição de perfil do dispositivo Windows piloto automático. Os valores possíveis são: `none`, `hardwareRequirementsNotMet`, `surfaceHubProfileNotSupported`, `holoLensProfileNotSupported`, `windowsPcProfileNotSupported`, `surfaceHub2SProfileNotSupported`, `unknownFutureValue`.|
 |deploymentProfileAssignedDateTime|DateTimeOffset|Hora do conjunto de perfis do dispositivo Windows piloto automático.|
 |groupTag|String|Marca de grupo do dispositivo Windows piloto automático.|
-|purchaseOrderIdentifier|Cadeia de Caracteres|Purchase Order Identifier of the Windows autopilot device.|
+|purchaseOrderIdentifier|String|Purchase Order Identifier of the Windows autopilot device.|
 |serialNumber|Cadeia de caracteres|Número de série do dispositivo do Windows AutoPilot.|
 |productKey|Cadeia de caracteres|Chave do produto (Product Key) do dispositivo do Windows AutoPilot.|
 |fabricante|String|Fabricante Oem do dispositivo Windows piloto automático.|
 |modelo|String|Nome do modelo do dispositivo Windows piloto automático.|
 |enrollmentState|[enrollmentState](../resources/intune-shared-enrollmentstate.md)|Estado de registro do intune do dispositivo Windows piloto automático. Os possíveis valores são: `unknown`, `enrolled`, `pendingReset`, `failed`, `notContacted`, `blocked`.|
 |lastContactedDateTime|DateTimeOffset|Intune Last Contacted Date Time of the Windows autopilot device.|
-|addressableUserName|Cadeia de Caracteres|Nome de usuário acessível.|
-|userPrincipalName|Cadeia de caracteres|Nome principal do usuário.|
+|addressableUserName|String|Nome de usuário acessível.|
+|userPrincipalName|String|Nome principal do usuário.|
 |resourceName|Cadeia de caracteres|Nome do recurso.|
 |skuNumber|String|Número SKU|
-|systemFamily|Cadeia de Caracteres|Família do Sistema|
-|azureActiveDirectoryDeviceId|String|ID do dispositivo AAD - a ser preterida|
-|azureAdDeviceId|Cadeia de caracteres|ID do dispositivo AAD|
-|managedDeviceId|Cadeia de Caracteres|ID de dispositivo gerenciado|
+|systemFamily|String|Família do Sistema|
+|azureActiveDirectoryDeviceId|String|AAD ID do dispositivo - a ser preterido|
+|azureAdDeviceId|String|AAD ID do dispositivo|
+|managedDeviceId|String|ID de dispositivo gerenciado|
 |displayName|String|Nome de exibição|
 
 

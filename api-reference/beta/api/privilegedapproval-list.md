@@ -1,22 +1,24 @@
 ---
 title: List privilegedApproval
 description: Recupere uma lista de objetos privilegedapproval.
-localization_priority: Normal
+ms.localizationpriority: medium
 doc_type: apiPageType
 ms.prod: governance
-author: shauliu1
-ms.openlocfilehash: e3fdd22825da7264541e90e58f8f6580a3ab5b3e
-ms.sourcegitcommit: 01755ac7c0ab7becf28052e05e58567caa8364cd
+author: carolinetempleton
+ms.openlocfilehash: d827c15efa7f33819d1abbc67046695fcae31284
+ms.sourcegitcommit: c7ff992ef63e480d070421ba99b28ee129cb6acb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/21/2021
-ms.locfileid: "58453258"
+ms.lasthandoff: 11/03/2021
+ms.locfileid: "60694733"
 ---
 # <a name="list-privilegedapproval"></a>List privilegedApproval
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
+[!INCLUDE [pim-v1AADRoles-deprecation](../../includes/pim-v1aadroles-deprecation.md)]
 
 Recupere uma lista de objetos privilegedapproval.
 

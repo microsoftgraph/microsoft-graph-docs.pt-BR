@@ -2,15 +2,15 @@
 title: Atualizar userExperienceAnalyticsOverview
 description: Atualize as propriedades de um objeto userExperienceAnalyticsOverview.
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: b4d3f3b0ca442508660a4aa391a7511f0c16a922
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 543f9c32f66a3e39602ab60ad9bde5b4d2b9d192
+ms.sourcegitcommit: c7ff992ef63e480d070421ba99b28ee129cb6acb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59070283"
+ms.lasthandoff: 11/03/2021
+ms.locfileid: "60695297"
 ---
 # <a name="update-userexperienceanalyticsoverview"></a>Atualizar userExperienceAnalyticsOverview
 
@@ -53,20 +53,22 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar [o userE
 
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|id|Cadeia de caracteres|O identificador exclusivo da visão geral da análise de experiência do usuário.|
+|id|String|O identificador exclusivo da visão geral da análise de experiência do usuário.|
 |overallScore|Int32|A pontuação geral da análise de experiência do usuário.|
 |deviceBootPerformanceOverallScore|Int32|A pontuação geral do desempenho geral de inicialização do dispositivo de análise de experiência do usuário.|
 |bestPracticesOverallScore|Int32|A pontuação geral das práticas recomendadas da análise da experiência do usuário.|
 |workFromAnywhereOverallScore|Int32|A pontuação geral da análise de experiência do usuário Work From Anywhere.|
 |appHealthOverallScore|Int32|A pontuação geral de saúde geral do aplicativo de análise de experiência do usuário.|
 |resourcePerformanceOverallScore|Int32|A pontuação geral do desempenho geral do recurso de análise de experiência do usuário.|
+|batteryHealthOverallScore|Int32|A pontuação geral da bateria de análise de experiência do usuário.|
 |insights|[Coleção userExperienceAnalyticsInsight](../resources/intune-devices-userexperienceanalyticsinsight.md)|As percepções de análise de experiência do usuário.|
-|state|[userExperienceAnalyticsHealthState](../resources/intune-devices-userexperienceanalyticshealthstate.md)|O estado de saúde atual da visão geral da análise da experiência do usuário. Os valores possíveis são: `unknown`, `insufficientData`, `needsAttention`, `meetingGoals`.|
+|estado|[userExperienceAnalyticsHealthState](../resources/intune-devices-userexperienceanalyticshealthstate.md)|O estado de saúde atual da visão geral da análise da experiência do usuário. Os valores possíveis são: `unknown`, `insufficientData`, `needsAttention`, `meetingGoals`.|
 |deviceBootPerformanceHealthState|[userExperienceAnalyticsHealthState](../resources/intune-devices-userexperienceanalyticshealthstate.md)|O estado de saúde atual da categoria de análise de experiência do usuário 'BootPerformance'. Os valores possíveis são: `unknown`, `insufficientData`, `needsAttention`, `meetingGoals`.|
 |bestPracticesHealthState|[userExperienceAnalyticsHealthState](../resources/intune-devices-userexperienceanalyticshealthstate.md)|O estado de saúde atual da categoria de análise de experiência do usuário "BestPractices". Os valores possíveis são: `unknown`, `insufficientData`, `needsAttention`, `meetingGoals`.|
 |workFromAnywhereHealthState|[userExperienceAnalyticsHealthState](../resources/intune-devices-userexperienceanalyticshealthstate.md)|O estado de saúde atual da categoria de análise de experiência do usuário 'WorkFromAnywhere'. Os valores possíveis são: `unknown`, `insufficientData`, `needsAttention`, `meetingGoals`.|
 |appHealthState|[userExperienceAnalyticsHealthState](../resources/intune-devices-userexperienceanalyticshealthstate.md)|O estado de saúde atual da categoria de análise de experiência do usuário "BestPractices". Os valores possíveis são: `unknown`, `insufficientData`, `needsAttention`, `meetingGoals`.|
 |resourcePerformanceHealthState|[userExperienceAnalyticsHealthState](../resources/intune-devices-userexperienceanalyticshealthstate.md)|O estado de saúde atual da categoria de análise de experiência do usuário 'ResourcePerformance'. Os valores possíveis são: `unknown`, `insufficientData`, `needsAttention`, `meetingGoals`.|
+|batteryHealthHealthState|[userExperienceAnalyticsHealthState](../resources/intune-devices-userexperienceanalyticshealthstate.md)|O estado de saúde atual da categoria de análise de experiência do usuário 'BatteryHealth'. Os valores possíveis são: `unknown`, `insufficientData`, `needsAttention`, `meetingGoals`.|
 
 
 
@@ -80,7 +82,7 @@ Este é um exemplo da solicitação.
 ``` http
 PATCH https://graph.microsoft.com/beta/deviceManagement/userExperienceAnalyticsOverview
 Content-type: application/json
-Content-length: 1005
+Content-length: 1091
 
 {
   "@odata.type": "#microsoft.graph.userExperienceAnalyticsOverview",
@@ -90,6 +92,7 @@ Content-length: 1005
   "workFromAnywhereOverallScore": 12,
   "appHealthOverallScore": 5,
   "resourcePerformanceOverallScore": 15,
+  "batteryHealthOverallScore": 9,
   "insights": [
     {
       "@odata.type": "microsoft.graph.userExperienceAnalyticsInsight",
@@ -109,7 +112,8 @@ Content-length: 1005
   "bestPracticesHealthState": "insufficientData",
   "workFromAnywhereHealthState": "insufficientData",
   "appHealthState": "insufficientData",
-  "resourcePerformanceHealthState": "insufficientData"
+  "resourcePerformanceHealthState": "insufficientData",
+  "batteryHealthHealthState": "insufficientData"
 }
 ```
 
@@ -118,7 +122,7 @@ Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado a
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 1054
+Content-Length: 1140
 
 {
   "@odata.type": "#microsoft.graph.userExperienceAnalyticsOverview",
@@ -129,6 +133,7 @@ Content-Length: 1054
   "workFromAnywhereOverallScore": 12,
   "appHealthOverallScore": 5,
   "resourcePerformanceOverallScore": 15,
+  "batteryHealthOverallScore": 9,
   "insights": [
     {
       "@odata.type": "microsoft.graph.userExperienceAnalyticsInsight",
@@ -148,7 +153,8 @@ Content-Length: 1054
   "bestPracticesHealthState": "insufficientData",
   "workFromAnywhereHealthState": "insufficientData",
   "appHealthState": "insufficientData",
-  "resourcePerformanceHealthState": "insufficientData"
+  "resourcePerformanceHealthState": "insufficientData",
+  "batteryHealthHealthState": "insufficientData"
 }
 ```
 

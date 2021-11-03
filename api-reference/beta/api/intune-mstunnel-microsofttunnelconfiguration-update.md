@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 2b619ca01f1535b527ce7e52bac7e2a1024ad2a3
-ms.sourcegitcommit: 4a960067cf2cd7d3c605550150eb3c9259adfe92
+ms.openlocfilehash: 26c52bfdc399bb71b962c9fe40e49d60e07a0cc1
+ms.sourcegitcommit: c7ff992ef63e480d070421ba99b28ee129cb6acb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/19/2021
-ms.locfileid: "60489357"
+ms.lasthandoff: 11/03/2021
+ms.locfileid: "60688798"
 ---
 # <a name="update-microsofttunnelconfiguration"></a>Atualizar microsoftTunnelConfiguration
 
@@ -54,12 +54,12 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar [o micro
 
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|id|Cadeia de caracteres|Id do MicrosoftTunnelConfiguration|
-|displayName|Cadeia de caracteres|O nome de exibição do MicrosoftTunnelConfiguration|
-|description|Cadeia de caracteres|A descrição do MicrosoftTunnelConfiguration|
-|network|Cadeia de caracteres|A sub-rede que será usada para alocar endereço virtual para os clientes|
+|id|String|Id do MicrosoftTunnelConfiguration|
+|displayName|String|O nome de exibição do MicrosoftTunnelConfiguration|
+|descrição|String|A descrição do MicrosoftTunnelConfiguration|
+|network|String|A sub-rede que será usada para alocar endereço virtual para os clientes|
 |dnsServers|Coleção de cadeias de caracteres|Os servidores DNS que serão usados pelos clientes|
-|defaultDomainSuffix|Cadeia de caracteres|O apêndice Domínio Padrão que será usado pelos clientes|
+|defaultDomainSuffix|String|O apêndice Domínio Padrão que será usado pelos clientes|
 |routesInclude|Coleção de cadeias de caracteres|Os routs que serão roteados pelo servidor|
 |routesExclude|Coleção de cadeias de caracteres|Subconjunto das rotas que não serão roteadas pelo servidor|
 |splitDNS|Coleção de cadeias de caracteres|Os domínios que serão resolvidos usando os servidores dns fornecidos|
@@ -67,6 +67,7 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar [o micro
 |advancedSettings|Coleção [keyValuePair](../resources/intune-mstunnel-keyvaluepair.md)|Configurações adicionais que podem ser aplicadas ao servidor|
 |lastUpdateDateTime|DateTimeOffset|Quando o MicrosoftTunnelConfiguration foi atualizado pela última vez|
 |roleScopeTagIds|Coleção de cadeias de caracteres|Lista de marcas de escopo para esta instância entity.|
+|disableUDPConnections|Booliano|Quando DisableUDPConnections for definido, os clientes e o servidor VPN não usarão as connctions DTLS para fazer o tansfer de dados.|
 
 
 
@@ -80,7 +81,7 @@ Este é um exemplo da solicitação.
 ``` http
 PATCH https://graph.microsoft.com/beta/deviceManagement/microsoftTunnelConfigurations/{microsoftTunnelConfigurationId}
 Content-type: application/json
-Content-length: 748
+Content-length: 782
 
 {
   "@odata.type": "#microsoft.graph.microsoftTunnelConfiguration",
@@ -111,7 +112,8 @@ Content-length: 748
   "lastUpdateDateTime": "2016-12-31T23:58:21.6459442-08:00",
   "roleScopeTagIds": [
     "Role Scope Tag Ids value"
-  ]
+  ],
+  "disableUDPConnections": true
 }
 ```
 
@@ -120,7 +122,7 @@ Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado a
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 797
+Content-Length: 831
 
 {
   "@odata.type": "#microsoft.graph.microsoftTunnelConfiguration",
@@ -152,7 +154,8 @@ Content-Length: 797
   "lastUpdateDateTime": "2016-12-31T23:58:21.6459442-08:00",
   "roleScopeTagIds": [
     "Role Scope Tag Ids value"
-  ]
+  ],
+  "disableUDPConnections": true
 }
 ```
 

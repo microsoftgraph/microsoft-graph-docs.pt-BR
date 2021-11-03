@@ -2,15 +2,15 @@
 title: Acessar deviceConfigurationAssignment
 description: Leia as propriedades e as relações do objeto deviceConfigurationAssignment.
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 044f1bae28a2b13ab503a82e3b9bdbe9bc5fa826
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 886eedbf31663a34e615c639a66aa5b777f2fde7
+ms.sourcegitcommit: c7ff992ef63e480d070421ba99b28ee129cb6acb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59133720"
+ms.lasthandoff: 11/03/2021
+ms.locfileid: "60694327"
 ---
 # <a name="get-deviceconfigurationassignment"></a>Acessar deviceConfigurationAssignment
 
@@ -77,7 +77,7 @@ Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado a
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 537
+Content-Length: 562
 
 {
   "value": {
@@ -90,7 +90,8 @@ Content-Length: 537
       "collectionId": "Collection Id value"
     },
     "source": "policySets",
-    "sourceId": "Source Id value"
+    "sourceId": "Source Id value",
+    "intent": "remove"
   }
 }
 ```

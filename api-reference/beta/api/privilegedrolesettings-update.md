@@ -1,16 +1,16 @@
 ---
 title: Atualizar privilegedRoleSettings
 description: Atualize as configurações de função para a configuração de função determinada. Um objeto privilegedRoleSettings será retornado.
-localization_priority: Normal
+ms.localizationpriority: medium
 doc_type: apiPageType
 ms.prod: governance
-author: shauliu1
-ms.openlocfilehash: 0b6d01add7336d10110ca6b0db234ec1df346b59
-ms.sourcegitcommit: 01755ac7c0ab7becf28052e05e58567caa8364cd
+author: carolinetempleton
+ms.openlocfilehash: 4204b3ba7b584f11e5fe6328acb02cf04c58fbfd
+ms.sourcegitcommit: c7ff992ef63e480d070421ba99b28ee129cb6acb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/21/2021
-ms.locfileid: "58453685"
+ms.lasthandoff: 11/03/2021
+ms.locfileid: "60695983"
 ---
 # <a name="update-privilegedrolesettings"></a>Atualizar privilegedRoleSettings
 
@@ -50,7 +50,7 @@ A tabela a seguir lista as propriedades que você pode fornecer ao atualizar uma
 |Propriedade|Tipo|Descrição|
 |:---------------|:--------|:----------|
 |elevationDuration|duração|A duração quando a função é ativada. Obrigatório.|
-|id|string|O identificador exclusivo para as configurações de função. Somente leitura. Obrigatório.|
+|id|cadeia de caracteres|O identificador exclusivo para as configurações de função. Somente leitura. Obrigatório.|
 |isMfaOnElevationConfigurable|booliano|**true** se mfaOnElevation for configurável. **false** se mfaOnElevation não for configurável. Obrigatório.|
 |lastGlobalAdmin|Booliano|Apenas para uso interno.|
 |maxElavationDuration|duração|Duração máxima da função ativada. Obrigatório.|
@@ -63,7 +63,7 @@ A tabela a seguir lista as propriedades que você pode fornecer ao atualizar uma
 
 ## <a name="response"></a>Resposta
 
-Se bem-sucedido, este método retorna um código de resposta `204 No Content`.
+Se tiver êxito, este método retornará um código de resposta `204 No Content`.
 
 Observe que o locatário precisa ser registrado no PIM. Caso contrário, o código de status HTTP 403 Forbidden será retornado.
 ## <a name="example"></a>Exemplo

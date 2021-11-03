@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: d9789032860069dffa22626278924d90ff618358
-ms.sourcegitcommit: 4a960067cf2cd7d3c605550150eb3c9259adfe92
+ms.openlocfilehash: 6dbfb540c99d73bf19acf214bc7d132af5f5e92c
+ms.sourcegitcommit: c7ff992ef63e480d070421ba99b28ee129cb6acb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/19/2021
-ms.locfileid: "60493162"
+ms.lasthandoff: 11/03/2021
+ms.locfileid: "60688700"
 ---
 # <a name="get-devicemanagementconfigurationsimplesettingdefinition"></a>Obter deviceManagementConfigurationSimpleSettingDefinition
 
@@ -38,6 +38,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 -->
 ``` http
 GET /deviceManagement/reusableSettings/{deviceManagementConfigurationSettingDefinitionId}
+GET /deviceManagement/complianceSettings/{deviceManagementConfigurationSettingDefinitionId}
 GET /deviceManagement/configurationSettings/{deviceManagementConfigurationSettingDefinitionId}
 GET /deviceManagement/configurationPolicies/{deviceManagementConfigurationPolicyId}/settings/{deviceManagementConfigurationSettingId}/settingDefinitions/{deviceManagementConfigurationSettingDefinitionId}
 GET /deviceManagement/configurationPolicyTemplates/{deviceManagementConfigurationPolicyTemplateId}/settingTemplates/{deviceManagementConfigurationSettingTemplateId}/settingDefinitions/{deviceManagementConfigurationSettingDefinitionId}

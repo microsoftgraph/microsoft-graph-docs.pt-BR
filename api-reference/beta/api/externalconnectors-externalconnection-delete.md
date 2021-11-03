@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: snlraju-msft
 ms.prod: search
 doc_type: apiPageType
-ms.openlocfilehash: 6b63bd6758d5d9143e9f67db79754593d43c7d4f
-ms.sourcegitcommit: 0eb843a6f61f384bc28c0cce1ccb74f64bdb1fa6
+ms.openlocfilehash: cc651e5d1b8f236ad8d836c5aa87569d991938ec
+ms.sourcegitcommit: c7ff992ef63e480d070421ba99b28ee129cb6acb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/23/2021
-ms.locfileid: "60558893"
+ms.lasthandoff: 11/03/2021
+ms.locfileid: "60696747"
 ---
 # <a name="delete-externalconnection"></a>Excluir externalConnection
 
@@ -28,7 +28,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |:---------------------------------------|:--------------------------------------------|
 | Delegado (conta corporativa ou de estudante)     | Sem suporte. |
 | Delegado (conta pessoal da Microsoft) | Sem suporte. |
-| Application                            | ExternalConnection.ReadWrite.OwnedBy |
+| Aplicativo                            | ExternalConnection.ReadWrite.OwnedBy |
 
 ## <a name="http-request"></a>Solicitação HTTP
 
@@ -59,6 +59,8 @@ Se bem-sucedido, este método retorna um código de resposta `202 Accepted`. Nã
 Este é um exemplo de solicitação.
 
 
+
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "delete_connection"
@@ -67,6 +69,24 @@ Este é um exemplo de solicitação.
 ```http
 DELETE https://graph.microsoft.com/beta/external/connections/contosohr
 ```
+# <a name="c"></a>[C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/delete-connection-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/delete-connection-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/delete-connection-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/delete-connection-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 
 <!-- markdownlint-disable MD024 -->

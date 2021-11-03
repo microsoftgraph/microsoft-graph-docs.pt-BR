@@ -5,12 +5,12 @@ ms.localizationpriority: high
 author: mmast-msft
 ms.prod: education
 doc_type: conceptualPageType
-ms.openlocfilehash: 29d50f4628bbca80e7c40e032cc5d9010155f3b7
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: d7d4fe8b5040221cc7d54569af1cfc87429ef852
+ms.sourcegitcommit: c7ff992ef63e480d070421ba99b28ee129cb6acb
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59007240"
+ms.lasthandoff: 11/03/2021
+ms.locfileid: "60688966"
 ---
 # <a name="working-with-education-apis-in-microsoft-graph"></a>Como trabalhar com APIs de educação no Microsoft Graph
 
@@ -92,7 +92,6 @@ As APIs de atribuição suportam os seguintes cenários:
 - [Enviar tarefa](../api/educationsubmission-submit.md)
 - [Cancelar o envio da tarefa](../api/educationsubmission-unsubmit.md)
 - [Devolver notas e comentários ao aluno](../api/educationsubmission-return.md)
-- [Obter os detalhes da tarefa](../api/educationuser-list-assignments.md)
 
 A seguir estão alguns casos de uso comuns para as APIs educacionais relacionadas a atribuições.
 

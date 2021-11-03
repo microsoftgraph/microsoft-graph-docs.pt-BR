@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: db2955081605c2b7c9d4a146784d91fbb63d490f
-ms.sourcegitcommit: 4a960067cf2cd7d3c605550150eb3c9259adfe92
+ms.openlocfilehash: 01e5f676b1adbd39da18a2036fa303443ebc002e
+ms.sourcegitcommit: c7ff992ef63e480d070421ba99b28ee129cb6acb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/19/2021
-ms.locfileid: "60491406"
+ms.lasthandoff: 11/03/2021
+ms.locfileid: "60696788"
 ---
 # <a name="delete-devicemanagementconfigurationsetting"></a>Excluir deviceManagementConfigurationSetting
 
@@ -37,6 +37,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 }
 -->
 ``` http
+DELETE /deviceManagement/compliancePolicies/{deviceManagementCompliancePolicyId}/settings/{deviceManagementConfigurationSettingId}
 DELETE /deviceManagement/configurationPolicies/{deviceManagementConfigurationPolicyId}/settings/{deviceManagementConfigurationSettingId}
 ```
 
@@ -57,7 +58,7 @@ Se tiver êxito, este método retornará um código de resposta `204 No Content`
 ### <a name="request"></a>Solicitação
 Este é um exemplo da solicitação.
 ``` http
-DELETE https://graph.microsoft.com/beta/deviceManagement/configurationPolicies/{deviceManagementConfigurationPolicyId}/settings/{deviceManagementConfigurationSettingId}
+DELETE https://graph.microsoft.com/beta/deviceManagement/compliancePolicies/{deviceManagementCompliancePolicyId}/settings/{deviceManagementConfigurationSettingId}
 ```
 
 ### <a name="response"></a>Resposta

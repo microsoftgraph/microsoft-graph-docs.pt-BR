@@ -9,8 +9,8 @@ ms.openlocfilehash: 9465c8608df06181ffdf72268b91c14ff69421e7
 ms.sourcegitcommit: c7ff992ef63e480d070421ba99b28ee129cb6acb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "60696018"
+ms.lasthandoff: 11/02/2021
+ms.locfileid: "60676787"
 ---
 # <a name="create-userexperienceanalyticsbatteryhealthappimpact"></a>Criar userExperienceAnalyticsBatteryHealthAppImpact
 

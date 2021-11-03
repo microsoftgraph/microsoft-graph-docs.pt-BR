@@ -2,15 +2,15 @@
 title: Tipo de recurso managedAppProtection
 description: Política usada para definir configurações de gerenciamento detalhadas para um conjunto específico de aplicativos
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 727624f7db39bc65de7d2575bcf22dc84c378749
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 5c65146b5fc58ced0d1617fdf3d67d1e3a1c7687
+ms.sourcegitcommit: c7ff992ef63e480d070421ba99b28ee129cb6acb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59075001"
+ms.lasthandoff: 11/03/2021
+ms.locfileid: "60694922"
 ---
 # <a name="managedappprotection-resource-type"></a>Tipo de recurso managedAppProtection
 
@@ -35,11 +35,11 @@ Herda de [managedAppPolicy](../resources/intune-mam-managedapppolicy.md)
 ## <a name="properties"></a>Propriedades
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|displayName|Cadeia de caracteres|Nome para exibição da política. Herdado de [managedAppPolicy](../resources/intune-mam-managedapppolicy.md)|
-|description|String|A descrição da política. Herdado de [managedAppPolicy](../resources/intune-mam-managedapppolicy.md)|
+|displayName|String|Nome para exibição da política. Herdado de [managedAppPolicy](../resources/intune-mam-managedapppolicy.md)|
+|descrição|String|A descrição da política. Herdado de [managedAppPolicy](../resources/intune-mam-managedapppolicy.md)|
 |createdDateTime|DateTimeOffset|A data e a hora da criação da política. Herdado de [managedAppPolicy](../resources/intune-mam-managedapppolicy.md)|
 |lastModifiedDateTime|DateTimeOffset|Última vez em que a política foi modificada. Herdado de [managedAppPolicy](../resources/intune-mam-managedapppolicy.md)|
-|roleScopeTagIds|String collection|Lista de marcas de escopo para esta instância entity. Herdado de [managedAppPolicy](../resources/intune-mam-managedapppolicy.md)|
+|roleScopeTagIds|Coleção de cadeias de caracteres|Lista de marcas de escopo para esta instância entity. Herdado de [managedAppPolicy](../resources/intune-mam-managedapppolicy.md)|
 |id|String|Chave da entidade. Herdado de [managedAppPolicy](../resources/intune-mam-managedapppolicy.md)|
 |version|String|Versão da entidade. Herdado de [managedAppPolicy](../resources/intune-mam-managedapppolicy.md)|
 |periodOfflineBeforeAccessCheck|Duração|Período após o qual o acesso é verificado quando o dispositivo não está conectado à Internet.|
@@ -64,18 +64,18 @@ Herda de [managedAppPolicy](../resources/intune-mam-managedapppolicy.md)
 |printBlocked|Boolean|Indica se a impressão a partir de aplicativos gerenciados é permitida.|
 |fingerprintBlocked|Boolean|Indica se será permitido o uso do leitor de impressão digital em vez de um pin se PinRequired estiver definido como True.|
 |disableAppPinIfDevicePinIsSet|Boolean|Indica se o uso do pin do aplicativo será obrigatório se o pin do dispositivo estiver definido.|
-|maximumRequiredOsVersion|Cadeia de Caracteres|Versões maiores do que a versão especificada impedirão que o aplicativo gerenciado acesse dados da empresa.|
+|maximumRequiredOsVersion|String|Versões maiores do que a versão especificada impedirão que o aplicativo gerenciado acesse dados da empresa.|
 |maximumWarningOsVersion|String|Versões maiores do que a versão especificada impedirão que o aplicativo gerenciado acesse dados da empresa.|
-|maximumWipeOsVersion|Cadeia de Caracteres|Versões maiores do que a versão especificada impedirão que o aplicativo gerenciado acesse dados da empresa.|
+|maximumWipeOsVersion|String|Versões maiores do que a versão especificada impedirão que o aplicativo gerenciado acesse dados da empresa.|
 |minimumRequiredOsVersion|String|Versões anteriores à versão especificada impedirão o aplicativo gerenciado de acessar dados da empresa.|
 |minimumWarningOsVersion|String|Versões anteriores à versão especificada resultarão em uma mensagem de aviso no aplicativo gerenciado.|
 |minimumRequiredAppVersion|String|Versões anteriores à versão especificada impedirão o aplicativo gerenciado de acessar dados da empresa.|
 |minimumWarningAppVersion|String|Versões anteriores à versão especificada resultarão em uma mensagem de aviso no aplicativo gerenciado.|
-|minimumWipeOsVersion|Cadeia de caracteres|Versões menores ou iguais à versão especificada apagarão o aplicativo gerenciado e os dados da empresa associados.|
-|minimumWipeAppVersion|Cadeia de caracteres|Versões menores ou iguais à versão especificada apagarão o aplicativo gerenciado e os dados da empresa associados.|
+|minimumWipeOsVersion|String|Versões menores ou iguais à versão especificada apagarão o aplicativo gerenciado e os dados da empresa associados.|
+|minimumWipeAppVersion|String|Versões menores ou iguais à versão especificada apagarão o aplicativo gerenciado e os dados da empresa associados.|
 |appActionIfDeviceComplianceRequired|[managedAppRemediationAction](../resources/intune-mam-managedappremediationaction.md)|Define um comportamento de aplicativo gerenciado, seja bloquear ou apagar, quando o dispositivo estiver enraizado ou com jailbroken, se DeviceComplianceRequired estiver definido como true. Os valores possíveis são: `block`, `wipe`, `warn`.|
 |appActionIfMaximumPinRetriesExceeded|[managedAppRemediationAction](../resources/intune-mam-managedappremediationaction.md)|Define um comportamento de aplicativo gerenciado, bloqueado ou apagado, com base no número máximo de tentativas de nova tentativa de pino incorretas. Os valores possíveis são: `block`, `wipe`, `warn`.|
-|pinRequiredInsteadOfBiometricTimeout|Duration|Tempo de tempo em minutos para um pin de aplicativo em vez de senha não biométrica|
+|pinRequiredInsteadOfBiometricTimeout|Duração|Tempo de tempo em minutos para um pin de aplicativo em vez de senha não biométrica|
 |allowedOutboundClipboardSharingExceptionLength|Int32|Especifique o número de caracteres que podem ser cortados ou copiados de dados e contas de Org para qualquer aplicativo. Essa configuração substitui a restrição AllowedOutboundClipboardSharingLevel. O valor padrão de '0' significa que nenhuma exceção é permitida.|
 |notificationRestriction|[managedAppNotificationRestriction](../resources/intune-mam-managedappnotificationrestriction.md)|Especifique a restrição de notificação do aplicativo. Os valores possíveis são: `allow`, `blockOrganizationalData`, `block`.|
 |previousPinBlockCount|Int32|Requer que um pino seja exclusivo do número especificado nesta propriedade.|
@@ -84,8 +84,9 @@ Herda de [managedAppPolicy](../resources/intune-mam-managedapppolicy.md)
 |mobileThreatDefenseRemediationAction|[managedAppRemediationAction](../resources/intune-mam-managedappremediationaction.md)|Determina qual ação tomar se o limite de ameaça de defesa de ameaça móvel não for atendido. Warn não é um valor suportado para essa propriedade. Os valores possíveis são: `block`, `wipe`, `warn`.|
 |blockDataIngestionIntoOrganizationDocuments|Booliano|Indica se um usuário pode trazer dados para documentos da organização.|
 |allowedDataIngestionLocations|[Coleção managedAppDataIngestionLocation](../resources/intune-mam-managedappdataingestionlocation.md)|Locais de armazenamento de dados em que um usuário pode armazenar dados gerenciados.|
-|appActionIfUnableToAuthenticateUser|[managedAppRemediationAction](../resources/intune-mam-managedappremediationaction.md)|Se definido, ele especificará qual ação tomar no caso de o usuário não conseguir fazer check-in porque seu token de autenticação é inválido. Isso acontece quando o usuário é excluído ou desabilitado no AAD. Os valores possíveis são: `block`, `wipe`, `warn`.|
+|appActionIfUnableToAuthenticateUser|[managedAppRemediationAction](../resources/intune-mam-managedappremediationaction.md)|Se definido, ele especificará qual ação tomar no caso de o usuário não conseguir fazer check-in porque seu token de autenticação é inválido. Isso acontece quando o usuário é excluído ou desabilitado AAD. Os valores possíveis são: `block`, `wipe`, `warn`.|
 |dialerRestrictionLevel|[managedAppPhoneNumberRedirectLevel](../resources/intune-mam-managedappphonenumberredirectlevel.md)|As classes de aplicativos de discagem que têm permissão para clicar para abrir um número de telefone. Os valores possíveis são: `allApps`, `managedApps`, `customApp`, `blocked`.|
+|gracePeriodToBlockAppsDuringOffClockHours|Duração|Um período de carência antes de bloquear o acesso ao aplicativo durante o horário de folga.|
 
 ## <a name="relationships"></a>Relações
 Nenhum
@@ -157,7 +158,8 @@ Veja a seguir uma representação JSON do recurso.
     "String"
   ],
   "appActionIfUnableToAuthenticateUser": "String",
-  "dialerRestrictionLevel": "String"
+  "dialerRestrictionLevel": "String",
+  "gracePeriodToBlockAppsDuringOffClockHours": "String (duration)"
 }
 ```
 

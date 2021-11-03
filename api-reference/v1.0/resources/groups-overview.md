@@ -5,12 +5,12 @@ author: Jordanndahl
 ms.localizationpriority: high
 ms.prod: groups
 doc_type: conceptualPageType
-ms.openlocfilehash: a7fb85436e00fbb8c98c3b2a13a03e87ed2e25b6
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: f5ec1ea04008542e1705ea12da7e5701bfd211e9
+ms.sourcegitcommit: c7ff992ef63e480d070421ba99b28ee129cb6acb
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59137634"
+ms.lasthandoff: 11/03/2021
+ms.locfileid: "60688384"
 ---
 # <a name="working-with-groups-in-microsoft-graph"></a>Trabalhando com grupos no Microsoft Graph
 
@@ -72,7 +72,7 @@ Para saber mais sobre os grupos do Microsoft 365 e as experiências de administr
 
 Os grupos de segurança servem para controlar o acesso de usuários aos recursos. Ao verificar se um usuário faz parte de um grupo de segurança, seu aplicativo pode tomar decisões de autorização quando esse usuário tentar acessar alguns recursos seguros do seu aplicativo. Os grupos de segurança podem ter como membros usuários e outros grupos de segurança.
 
-Os grupos de segurança habilitados para email são usados da mesma forma que os grupos de segurança, mas com o recurso adicional de uma caixa de correio compartilhada para os grupos. Não é possível criar grupos de segurança habilitados para email por meio da API, mas as outras operações do grupo funcionarão.  Grupos de segurança habilitados para email são somente leitura. Saiba mais no artigo [Gerenciar de grupos de segurança habilitados para email no Exchange](/Exchange/recipients/mail-enabled-security-groups).
+Os grupos de segurança habilitados para email são usados da mesma forma que os grupos de segurança, mas com o recurso adicional de uma caixa de correio compartilhada para os grupos. Grupos de segurança habilitados para email são somente leitura. Saiba mais no artigo [Gerenciar de grupos de segurança habilitados para email no Exchange](/Exchange/recipients/mail-enabled-security-groups).
 
 ### <a name="security-group-example"></a>Exemplo de grupo de segurança
 

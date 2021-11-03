@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 4c0a6519f84824283a229fe6c1691744bdfc5285
-ms.sourcegitcommit: 4a960067cf2cd7d3c605550150eb3c9259adfe92
+ms.openlocfilehash: 720bb389716ae374b72475e614ba75807f41f723
+ms.sourcegitcommit: c7ff992ef63e480d070421ba99b28ee129cb6acb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/19/2021
-ms.locfileid: "60487832"
+ms.lasthandoff: 11/03/2021
+ms.locfileid: "60696711"
 ---
 # <a name="update-macosdevicefeaturesconfiguration"></a>Atualizar macOSDeviceFeaturesConfiguration
 
@@ -55,7 +55,7 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar [macOSDe
 
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|id|Cadeia de caracteres|Chave da entidade. Herdada de [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
+|id|String|Chave da entidade. Herdada de [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
 |lastModifiedDateTime|DateTimeOffset|DateTime da última modificação do objeto. Herdada de [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
 |roleScopeTagIds|Coleção de cadeias de caracteres|Lista de marcas de escopo para esta instância entity. Herdada de [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
 |supportsScopeTags|Booliano|Indica se a Configuração de Dispositivo subjacente dá suporte ou não à atribuição de marcas de escopo. A atribuição à propriedade ScopeTags não é permitida quando esse valor é falso e as entidades não estarão visíveis para usuários com escopo. Isso ocorre para políticas herdadas criadas no Silverlight e podem ser resolvidas excluindo e recriando a política no Portal do Azure. Essa propriedade é somente leitura. Herdada de [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
@@ -63,13 +63,13 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar [macOSDe
 |deviceManagementApplicabilityRuleOsVersion|[deviceManagementApplicabilityRuleOsVersion](../resources/intune-deviceconfig-devicemanagementapplicabilityruleosversion.md)|A regra de aplicabilidade da versão do sistema operacional para esta Política. Herdada de [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
 |deviceManagementApplicabilityRuleDeviceMode|[deviceManagementApplicabilityRuleDeviceMode](../resources/intune-deviceconfig-devicemanagementapplicabilityruledevicemode.md)|A regra de aplicabilidade do modo de dispositivo para esta Política. Herdada de [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
 |createdDateTime|DateTimeOffset|DateTime em que o objeto foi criado. Herdada de [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
-|description|Cadeia de caracteres|O administrador forneceu a descrição da Configuração do dispositivo. Herdada de [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
-|displayName|Cadeia de caracteres|O administrador forneceu o nome da Configuração do dispositivo. Herdada de [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
+|descrição|String|O administrador forneceu a descrição da Configuração do dispositivo. Herdada de [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
+|displayName|String|O administrador forneceu o nome da Configuração do dispositivo. Herdada de [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
 |versão|Int32|Versão da configuração do dispositivo. Herdada de [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
 |airPrintDestinations|[Coleção airPrintDestination](../resources/intune-deviceconfig-airprintdestination.md)|Uma matriz de impressoras AirPrint que sempre devem ser mostradas. Esta coleção pode conter um máximo de 500 elementos. Herdado [do appleDeviceFeaturesConfigurationBase](../resources/intune-deviceconfig-appledevicefeaturesconfigurationbase.md)|
 |autoLaunchItems|[Coleção macOSLaunchItem](../resources/intune-deviceconfig-macoslaunchitem.md)|Lista de aplicativos, arquivos, pastas e outros itens a iniciar quando o usuário faz login. Esta coleção pode conter um máximo de 500 elementos.|
 |adminShowHostInfo|Booliano|Se deve mostrar informações do host do administrador na janela de logon.|
-|loginWindowText|Cadeia de caracteres|Texto personalizado a ser exibido na janela de logon.|
+|loginWindowText|String|Texto personalizado a ser exibido na janela de logon.|
 |authorizedUsersListHidden|Booliano|Se será exibida a caixa de diálogo nome e senha ou uma lista de usuários na janela de logon.|
 |authorizedUsersListHideLocalUsers|Booliano|Se apenas os usuários da rede e do sistema na lista de usuários autorizados na janela de logon.|
 |authorizedUsersListHideMobileAccounts|Booliano|Se deve ocultar usuários móveis na lista de usuários autorizados na janela de logon.|
@@ -92,7 +92,7 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar [macOSDe
 |contentCachingEnabled|Booliano|Habilita o cache de conteúdo e impede que ele seja desabilitado pelo usuário.|
 |contentCachingType|[macOSContentCachingType](../resources/intune-deviceconfig-macoscontentcachingtype.md)|Determina que tipo de conteúdo pode ser armazenado em cache pelo serviço de cache de conteúdo da Apple. Os valores possíveis são: `notConfigured`, `userContentOnly`, `sharedContentOnly`.|
 |contentCachingMaxSizeBytes|Int32|O número máximo de bytes de espaço em disco que será usado para o cache de conteúdo. Um valor 0 (padrão) indica espaço em disco ilimitado. |
-|contentCachingDataPath|Cadeia de caracteres|O caminho para o diretório usado para armazenar conteúdo armazenado em cache. O valor deve ser (ou terminar com) /Library/Application Support/Apple/AssetCache/Data|
+|contentCachingDataPath|String|O caminho para o diretório usado para armazenar conteúdo armazenado em cache. O valor deve ser (ou terminar com) /Library/Application Support/Apple/AssetCache/Data|
 |contentCachingDisableConnectionSharing|Booliano|Desabilita o compartilhamento de conexões com a Internet.|
 |contentCachingForceConnectionSharing|Booliano|Força o compartilhamento de conexão com a Internet. contentCachingDisableConnectionSharing substitui essa configuração.|
 |contentCachingClientPolicy|[macOSContentCachingClientPolicy](../resources/intune-deviceconfig-macoscontentcachingclientpolicy.md)|Determina o método no qual os servidores de cache de conteúdo escutarão clientes. Os valores possíveis são: `notConfigured`, `clientsInLocalNetwork`, `clientsWithSamePublicIpAddress`, `clientsInCustomLocalNetworks`, `clientsInCustomLocalNetworksWithFallback`.|
@@ -121,7 +121,7 @@ Este é um exemplo da solicitação.
 ``` http
 PATCH https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations/{deviceConfigurationId}
 Content-type: application/json
-Content-length: 6135
+Content-length: 6256
 
 {
   "@odata.type": "#microsoft.graph.macOSDeviceFeaturesConfiguration",
@@ -250,6 +250,7 @@ Content-length: 6135
     "passwordChangeUrl": "https://example.com/passwordChangeUrl/",
     "modeCredentialUsed": "Mode Credential Used value",
     "usernameLableCustom": "Username Lable Custom value",
+    "usernameLabelCustom": "Username Label Custom value",
     "userSetupDelayed": true,
     "signInHelpText": "Sign In Help Text value",
     "kerberosAppsInBundleIdACLIncluded": true,
@@ -257,6 +258,9 @@ Content-length: 6135
     "credentialsCacheMonitored": true,
     "singleSignOnExtensionPreferredKDCs": [
       "Single Sign On Extension Preferred KDCs value"
+    ],
+    "preferredKDCs": [
+      "Preferred KDCs value"
     ],
     "tlsForLDAPRequired": true
   },
@@ -313,7 +317,7 @@ Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado a
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 6307
+Content-Length: 6428
 
 {
   "@odata.type": "#microsoft.graph.macOSDeviceFeaturesConfiguration",
@@ -445,6 +449,7 @@ Content-Length: 6307
     "passwordChangeUrl": "https://example.com/passwordChangeUrl/",
     "modeCredentialUsed": "Mode Credential Used value",
     "usernameLableCustom": "Username Lable Custom value",
+    "usernameLabelCustom": "Username Label Custom value",
     "userSetupDelayed": true,
     "signInHelpText": "Sign In Help Text value",
     "kerberosAppsInBundleIdACLIncluded": true,
@@ -452,6 +457,9 @@ Content-Length: 6307
     "credentialsCacheMonitored": true,
     "singleSignOnExtensionPreferredKDCs": [
       "Single Sign On Extension Preferred KDCs value"
+    ],
+    "preferredKDCs": [
+      "Preferred KDCs value"
     ],
     "tlsForLDAPRequired": true
   },

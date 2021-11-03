@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: b1e6cbbdb1f0fef9e80a5de33e7a57ade6bf9ebd
-ms.sourcegitcommit: 4a960067cf2cd7d3c605550150eb3c9259adfe92
+ms.openlocfilehash: cb7ca8f2d24280691973fd640231aa076d40252c
+ms.sourcegitcommit: c7ff992ef63e480d070421ba99b28ee129cb6acb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/19/2021
-ms.locfileid: "60486597"
+ms.lasthandoff: 11/03/2021
+ms.locfileid: "60696928"
 ---
 # <a name="delete-devicemanagementconfigurationsimplesettingcollectiondefinition"></a>Excluir deviceManagementConfigurationSimpleSettingCollectionDefinition
 
@@ -38,6 +38,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 -->
 ``` http
 DELETE /deviceManagement/reusableSettings/{deviceManagementConfigurationSettingDefinitionId}
+DELETE /deviceManagement/complianceSettings/{deviceManagementConfigurationSettingDefinitionId}
 DELETE /deviceManagement/configurationSettings/{deviceManagementConfigurationSettingDefinitionId}
 DELETE /deviceManagement/configurationPolicies/{deviceManagementConfigurationPolicyId}/settings/{deviceManagementConfigurationSettingId}/settingDefinitions/{deviceManagementConfigurationSettingDefinitionId}
 DELETE /deviceManagement/configurationPolicyTemplates/{deviceManagementConfigurationPolicyTemplateId}/settingTemplates/{deviceManagementConfigurationSettingTemplateId}/settingDefinitions/{deviceManagementConfigurationSettingDefinitionId}

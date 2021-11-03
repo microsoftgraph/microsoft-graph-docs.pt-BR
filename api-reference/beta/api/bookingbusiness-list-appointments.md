@@ -1,16 +1,16 @@
 ---
 title: Listar compromissos
 description: Obter uma lista de objetos bookingAppointment para o bookingbusiness especificado.
-localization_priority: Normal
+ms.localizationpriority: medium
 author: arvindmicrosoft
 ms.prod: bookings
 doc_type: apiPageType
-ms.openlocfilehash: b2543c08dd94109174d9945afec5b6687159db7e
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: db5c034c1c6a006ed648cecf4fed4e416fe95f3e
+ms.sourcegitcommit: c7ff992ef63e480d070421ba99b28ee129cb6acb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52047914"
+ms.lasthandoff: 11/03/2021
+ms.locfileid: "60687744"
 ---
 # <a name="list-appointments"></a>Listar compromissos
 
@@ -18,7 +18,7 @@ Namespace: microsoft.graph
 
  [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Obter uma lista de [objetos bookingAppointment](../resources/bookingappointment.md) para o [bookingbusiness especificado.](../resources/bookingbusiness.md)
+Obter uma lista de [objetos bookingAppointment](../resources/bookingappointment.md) para [o bookingBusiness especificado.](../resources/bookingbusiness.md)
 ## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
@@ -41,14 +41,14 @@ Para obter o conjunto de compromissos de uma empresa do Bookings dentro de um in
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
 | Nome      |Descrição|
 |:----------|:----------|
-| Authorization  | Portador {código}|
+| Autorização  | {code} do portador. Obrigatório.|
 
 ## <a name="request-body"></a>Corpo da solicitação
 Não forneça um corpo de solicitação para esse método.
 ## <a name="response"></a>Resposta
 Se tiver êxito, este método retornará um código `200 OK` de resposta e uma coleção de objetos [bookingAppointment](../resources/bookingappointment.md) no corpo da resposta.
 ## <a name="example"></a>Exemplo
-##### <a name="request"></a>Solicitação
+### <a name="request"></a>Solicitação
 Este é um exemplo de solicitação.
 
 # <a name="http"></a>[HTTP](#tab/http)
@@ -77,8 +77,10 @@ GET https://graph.microsoft.com/beta/bookingBusinesses/Contosolunchdelivery@M365
 
 ---
 
-##### <a name="response"></a>Resposta
-Este é um exemplo de resposta. Observação: o objeto de resposta mostrado aqui pode ser encurtado para legibilidade.
+### <a name="response"></a>Resposta
+Este é um exemplo de resposta. 
+
+>**Observação:** o objeto de resposta mostrado aqui pode ser encurtado para legibilidade.
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -95,11 +97,15 @@ Content-type: application/json
         {
             "id": "AAMkADKoAAA=",
             "selfServiceAppointmentId": "00000000-0000-0000-0000-000000000000",
+            "isLocationOnline": true,
+            "joinWebUrl": "https://teams.microsoft.com/l/meetup-join/19%3ameeting_MTlhZTE3MDUtODk0Yy00MGZkLTlhNzktN2FmYTk3MDUxNmE2%40thread.v2/0?context=%7b%22Tid%22%3a%22995fa18c-b557-4694-8d07-b89779d6dc77%22%2c%22Oid%22%3a%22d4d260ab-989d-490e-b121-e2066391807a%22%7d",
             "customerId": "829e3cb5-3d4d-4319-a8de-1953aedaa166",
             "customerName": "Bob Kelly",
             "customerEmailAddress": "bobk@tailspintoys.com",
             "customerPhone": "213-555-0108",
+            "customerTimeZone": "America/Chicago",
             "customerNotes": null,
+            "smsNotificationsEnabled": true,
             "serviceId": "57da6774-a087-4d69-b0e6-6fb82c339976",
             "serviceName": "Catered bento",
             "duration": "PT30M",
@@ -179,11 +185,16 @@ Content-type: application/json
         {
             "id": "AAMkADKnAAA=",
             "selfServiceAppointmentId": "00000000-0000-0000-0000-000000000000",
+            "isLocationOnline": true,
+            "joinWebUrl": "https://teams.microsoft.com/l/meetup-join/19%3ameeting_MDUtODk0Yy00MGZkLTlhNzktN2xNmE2%40thread.v2/0?context=%7b%22Tid%22%3a%22995fa18c-b557-4694-8d07-b89779d6dc77%22%2c%22Oid%22%3a%22d4d260ab-989d-490e-b121-e2066391807a%22%7d",
+            "customerId": "829e3cb5-3d4d-4319-a8de-1953aedaa166",
             "customerId": "7ed53fa5-9ef2-4f2f-975b-27447440bc09",
             "customerName": "Jordan Miller",
             "customerEmailAddress": "jordanm@contoso.com",
             "customerPhone": "213-555-0199",
+            "customerTimeZone": "America/Chicago",
             "customerNotes": null,
+            "smsNotificationsEnabled": true,
             "serviceId": "57da6774-a087-4d69-b0e6-6fb82c339976",
             "serviceName": "Catered bento",
             "duration": "PT30M",

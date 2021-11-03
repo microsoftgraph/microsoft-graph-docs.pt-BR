@@ -1,16 +1,16 @@
 ---
 title: Criar unifiedRoleAssignmentScheduleRequest
 description: Crie um novo objeto unifiedRoleAssignmentScheduleRequest.
-author: shauliu1
-localization_priority: Normal
+author: carolinetempleton
+ms.localizationpriority: medium
 ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: 85c013c4515b90a400d3ecf986ff5c475783b045
-ms.sourcegitcommit: 9b8abc940a68dac6ee5da105ca29800cb59775f6
+ms.openlocfilehash: d08e6b7d5e8cec8fa42d4be5b6f0eb5f8f201cb0
+ms.sourcegitcommit: c7ff992ef63e480d070421ba99b28ee129cb6acb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/25/2021
-ms.locfileid: "58513519"
+ms.lasthandoff: 11/03/2021
+ms.locfileid: "60695815"
 ---
 # <a name="create-unifiedroleassignmentschedulerequest"></a>Criar unifiedRoleAssignmentScheduleRequest
 Namespace: microsoft.graph
@@ -24,7 +24,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 |Tipo de permissão|Permissões (da com menos para a com mais privilégios)|
 |:---|:---|
-|Delegado (conta corporativa ou de estudante)|RoleAssignmentSchedule.ReadWrite.Directory, RoleManagement.ReadWrite.Directory|
+|Delegado (conta corporativa ou de estudante)|RoleAssignmentSchedule.ReadWrite.Directory|
 |Delegado (conta pessoal da Microsoft)|Sem suporte|
 |Aplicativo|Sem suporte|
 
@@ -51,11 +51,11 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar [unified
 
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|id|Cadeia de caracteres|O identificador exclusivo para unifiedRoleAssignmentScheduleRequest. Chave, não anulada, somente leitura.|
+|id|String|O identificador exclusivo para unifiedRoleAssignmentScheduleRequest. Chave, não anulada, somente leitura.|
 |ação|String|Representa o tipo da operação na atribuição de função. Os valores possíveis são: <ul><li>`AdminAssign`: Para que os administradores atribuam funções a usuários ou grupos.</li><li>`AdminRemove`: Para que os administradores removam usuários ou grupos de funções.</li><li> `AdminUpdate`: Para que os administradores alterem as atribuições de função existentes.</li><li>`AdminExtend`: Para que os administradores estendam atribuições expiradas.</li><li>`AdminRenew`: Para que os administradores renovem atribuições expiradas.</li><li>`SelfActivate`: Para que os usuários ativem suas atribuições.</li><li>`SelfDeactivate`: Para que os usuários desativem suas atribuições ativas.</li><li>`SelfExtend`: Para que os usuários solicitem estender suas atribuições de expiração.</li><li>`SelfRenew`: Para que os usuários solicitem a renovação de suas atribuições expiradas.</li></ul>
-|principalId|Cadeia de caracteres|Identificador da entidade à qual a atribuição está sendo concedida.|
+|principalId|String|Identificador da entidade à qual a atribuição está sendo concedida.|
 |roleDefinitionId|String|Identificador do unifiedRoleDefinition para o que a atribuição se destina. Somente leitura.|
-|directoryScopeId|Cadeia de caracteres|Identificador do objeto directory que representa o escopo da atribuição. O escopo de uma atribuição determina o conjunto de recursos para os quais a entidade foi concedida acesso. Os escopos de diretório são escopos compartilhados armazenados no diretório que são compreendidos por vários aplicativos. Use `/` para escopo de todo o locatário. Use **appScopeId** para limitar o escopo somente a um aplicativo. |
+|directoryScopeId|String|Identificador do objeto directory que representa o escopo da atribuição. O escopo de uma atribuição determina o conjunto de recursos para os quais a entidade foi concedida acesso. Os escopos de diretório são escopos compartilhados armazenados no diretório que são compreendidos por vários aplicativos. Use `/` para escopo de todo o locatário. Use **appScopeId** para limitar o escopo somente a um aplicativo. |
 |appScopeId|String|Identificador do escopo específico do aplicativo quando o escopo de atribuição for específico do aplicativo. O escopo de uma atribuição determina o conjunto de recursos para os quais a entidade foi concedida acesso. Os escopos do aplicativo são escopos definidos e compreendidos somente por esse aplicativo. Use `/` para escopos de aplicativos de todo o locatário. Use **directoryScopeId** para limitar o escopo a objetos de diretório específicos, por exemplo, unidades administrativas.|
 |isValidationOnly|Booliano|Especifica se a chamada é uma validação ou uma chamada real. De definir essa propriedade somente se você quiser verificar se uma ativação está sujeita a regras adicionais, como MFA, antes de realmente enviar a solicitação.|
 |targetScheduleId|String|ID do objeto schedule anexado à atribuição.|

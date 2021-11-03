@@ -1,24 +1,31 @@
 ---
-title: tipo de recurso timeStamp
+title: Tipo de recurso timeStamp
 description: Informações de data e hora para um ponto no tempo.
-localization_priority: Normal
+ms.localizationpriority: medium
 doc_type: resourcePageType
 ms.prod: ''
 author: JeremyKelley
-ms.openlocfilehash: 295c4c8b4cee6ba476b5bae57ebd71de8d107c1c
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: ff93ab9a55a695818ec21f60afb039c6542efd0a
+ms.sourcegitcommit: c7ff992ef63e480d070421ba99b28ee129cb6acb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48075392"
+ms.lasthandoff: 11/03/2021
+ms.locfileid: "60695794"
 ---
-# <a name="timestamp-resource-type"></a>tipo de recurso timeStamp
+# <a name="timestamp-resource-type"></a>Tipo de recurso timeStamp
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Informações de data e hora para um ponto no tempo.
+
+## <a name="properties"></a>Propriedades
+| Propriedade     | Tipo   |Descrição|
+|:---------------|:--------|:----------|
+|data|Data|A parte de data do data do data/hora.|
+|hora|TimeOfDay|A parte de tempo do timestamp.|
+|timeZone|Cadeia de caracteres|A parte do timezone do timestamp, que é uma das 24 áreas longitudinais do mundo.|
 
 ## <a name="json-representation"></a>Representação JSON
 
@@ -38,14 +45,7 @@ Veja a seguir uma representação JSON do recurso
   "time": "String (timestamp)",
   "timeZone": "string"
 }
-
 ```
-## <a name="properties"></a>Propriedades
-| Propriedade     | Tipo   |Descrição|
-|:---------------|:--------|:----------|
-|data|Data|A parte de data do carimbo de data/hora.|
-|time|TimeOfDay|A parte de tempo do carimbo de data/hora.|
-|timeZone|Cadeia de caracteres|A parte de fuso horário do carimbo de data/hora, que é uma das 24 áreas de longitudinal do mundo.|
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->

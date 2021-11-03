@@ -1,16 +1,16 @@
 ---
 title: 'unifiedRoleEligibilityScheduleRequest: filterByCurrentUser'
 description: Obter uma lista dos objetos unifiedRoleEligibilityScheduleRequest e suas propriedades filtradas por uma entidade de usuário específica
-author: shauliu1
-localization_priority: Normal
+author: carolinetempleton
+ms.localizationpriority: medium
 ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: 0425d41fcbcd7fa5a03e1bc674196fbb7c2c22f7
-ms.sourcegitcommit: 9b8abc940a68dac6ee5da105ca29800cb59775f6
+ms.openlocfilehash: da4568c4ee2d9e28a8e799acb664d24e80576fb2
+ms.sourcegitcommit: c7ff992ef63e480d070421ba99b28ee129cb6acb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/25/2021
-ms.locfileid: "58513724"
+ms.lasthandoff: 11/03/2021
+ms.locfileid: "60696578"
 ---
 # <a name="unifiedroleeligibilityschedulerequest-filterbycurrentuser"></a>unifiedRoleEligibilityScheduleRequest: filterByCurrentUser
 Namespace: microsoft.graph

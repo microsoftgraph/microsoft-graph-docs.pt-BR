@@ -9,8 +9,8 @@ ms.openlocfilehash: 63cb349e3a85266d48ed365e0619dacf4b607f6a
 ms.sourcegitcommit: c7ff992ef63e480d070421ba99b28ee129cb6acb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/02/2021
-ms.locfileid: "60674415"
+ms.lasthandoff: 11/03/2021
+ms.locfileid: "60696697"
 ---
 # <a name="create-defaultmanagedappprotection"></a>Criar defaultManagedAppProtection
 

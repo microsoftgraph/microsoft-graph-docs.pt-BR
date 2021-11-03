@@ -1,27 +1,29 @@
 ---
 title: Tipo de recurso privilegedApproval
 description: Representa uma aprovação solicitada no Privileged Identity Management para entrar em uma função.
-localization_priority: Normal
+ms.localizationpriority: medium
 doc_type: resourcePageType
 ms.prod: governance
-author: shauliu1
-ms.openlocfilehash: 62291980357d5b4051293113b774f59bd85c875c
-ms.sourcegitcommit: 01755ac7c0ab7becf28052e05e58567caa8364cd
+author: carolinetempleton
+ms.openlocfilehash: c2c6ef9ec7ca62b3ccc85cb14f848497b2858dce
+ms.sourcegitcommit: c7ff992ef63e480d070421ba99b28ee129cb6acb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/21/2021
-ms.locfileid: "58453923"
+ms.lasthandoff: 11/03/2021
+ms.locfileid: "60687680"
 ---
-# <a name="privilegedapproval-resource-type"></a>Tipo de recurso privilegedApproval
+# <a name="privilegedapproval-resource-type-deprecated"></a>Tipo de recurso privilegedApproval (preterido)
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Representa uma aprovação solicitada no Privileged Identity Management para entrar em uma função.
+[!INCLUDE [pim-v1AADRoles-deprecation](../../includes/pim-v1aadroles-deprecation.md)]
+
+Representa uma aprovação solicitada no Privileged Identity Management (PIM) para entrar em uma função.
 
 
-## <a name="methods"></a>Métodos
+## <a name="methods"></a>Methods
 
 | Método           | Tipo de retorno    |Descrição|
 |:---------------|:--------|:----------|
@@ -34,18 +36,18 @@ Representa uma aprovação solicitada no Privileged Identity Management para ent
 ## <a name="properties"></a>Propriedades
 | Propriedade     | Tipo   |Descrição|
 |:---------------|:--------|:----------|
-|approvalDuration|Duration||
+|approvalDuration|Duração||
 |approvalState|approvalState| Os valores possíveis são: `pending`, `approved`, `denied`, `aborted`, `canceled`.|
-|approvalType|Cadeia de caracteres||
-|approverReason|Cadeia de caracteres||
+|approvalType|String||
+|approverReason|String||
 |endDateTime|DateTimeOffset|O tipo de carimbo de data/hora representa informações de data e hora usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite UTC em 1º de janeiro de 2014 é `2014-01-01T00:00:00Z`|
 |id|String| Somente leitura.|
-|requestorReason|Cadeia de caracteres||
-|roleId|Cadeia de caracteres||
+|requestorReason|String||
+|roleId|String||
 |startDateTime|DateTimeOffset|O tipo de carimbo de data/hora representa informações de data e hora usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite UTC em 1º de janeiro de 2014 é `2014-01-01T00:00:00Z`|
 |userId|Cadeia de caracteres||
 
-## <a name="relationships"></a>Relacionamentos
+## <a name="relationships"></a>Relações
 | Relação | Tipo   |Descrição|
 |:---------------|:--------|:----------|
 |roleInfo|[privilegedRole](privilegedrole.md)| Somente leitura. Anulável.|

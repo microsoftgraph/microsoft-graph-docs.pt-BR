@@ -5,12 +5,12 @@ author: Alice-at-Microsoft
 ms.localizationpriority: medium
 ms.prod: w10
 doc_type: conceptualPageType
-ms.openlocfilehash: cb73aad6ab0aa850088e7e5e72c3cc096bb74b50
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 1cee20415b3663b26bffe6c7682e04880cb5fde8
+ms.sourcegitcommit: c7ff992ef63e480d070421ba99b28ee129cb6acb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59117501"
+ms.lasthandoff: 11/03/2021
+ms.locfileid: "60696032"
 ---
 # <a name="schedule-a-deployment-using-the-windows-update-for-business-deployment-service"></a>Agendar uma implantação usando o serviço de implantação Windows Atualização para Empresas
 
@@ -77,7 +77,8 @@ Content-Type: application/json
             "devicesPerOffer": null
         },
         "monitoring": null,
-        "userExperience": null
+        "userExperience": null,
+        "safeguard": null
     },
     "createdDateTime": "String (timestamp)",
     "lastModifiedDateTime": "String (timestamp)"
@@ -91,7 +92,6 @@ Você também pode agendar uma implantação para que os dispositivos atribuído
 ### <a name="example-stage-a-deployment-at-regular-intervals-between-start-and-end-dates"></a>Exemplo: estágio uma implantação em intervalos regulares entre as datas inicial e final
 
 Uma maneira de estágio de uma implantação ao longo do tempo é definir **o endDateTime** da implantação. Todos os dispositivos atribuídos à implantação serão oferecidos a atualização dentro da janela entre **startDateTime** e **endDateTime**. Se o **startDateTime** não for especificado, a implantação começará assim que os dispositivos são atribuídos.
-
 
 Neste exemplo, você configura uma nova implantação para que um novo conjunto de dispositivos seja oferecido a atualização toda semana (**durationBetweenOffers** definida como sete dias), começando em 1º de julho de 2021. Todos os dispositivos são oferecidos a atualização antes de 1º de agosto de 2021.
 
@@ -152,7 +152,8 @@ Content-Type: application/json
             "devicesPerOffer": null
         },
         "monitoring": null,
-        "userExperience": null
+        "userExperience": null,
+        "safeguard": null
     },
     "createdDateTime": "String (timestamp)",
     "lastModifiedDateTime": "String (timestamp)"
@@ -223,7 +224,8 @@ Content-Type: application/json
             "endDateTime": null
         },
         "monitoring": null,
-        "userExperience": null
+        "userExperience": null,
+        "safeguard": null
     },
     "createdDateTime": "String (timestamp)",
     "lastModifiedDateTime": "String (timestamp)"

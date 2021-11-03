@@ -1,16 +1,16 @@
 ---
 title: Listar unifiedRoleAssignmentScheduleInstances
 description: Obter uma lista dos objetos unifiedRoleAssignmentScheduleInstance e suas propriedades.
-author: shauliu1
-localization_priority: Normal
+author: carolinetempleton
+ms.localizationpriority: medium
 ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: e05ec16ccb23cf6d5921d049f281127e7367c704
-ms.sourcegitcommit: 01755ac7c0ab7becf28052e05e58567caa8364cd
+ms.openlocfilehash: 0a312e622d3effab07d96720ed6d5207b47aee69
+ms.sourcegitcommit: c7ff992ef63e480d070421ba99b28ee129cb6acb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/21/2021
-ms.locfileid: "58453804"
+ms.lasthandoff: 11/03/2021
+ms.locfileid: "60696270"
 ---
 # <a name="list-unifiedroleassignmentscheduleinstances"></a>Listar unifiedRoleAssignmentScheduleInstances
 Namespace: microsoft.graph

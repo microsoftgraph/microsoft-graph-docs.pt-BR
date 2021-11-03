@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 2a971c0672c5dc2782c62e5390c859aa7c58b8d1
-ms.sourcegitcommit: 4a960067cf2cd7d3c605550150eb3c9259adfe92
+ms.openlocfilehash: 1615ace4f979ad96ae0002ba378509ad4706d691
+ms.sourcegitcommit: c7ff992ef63e480d070421ba99b28ee129cb6acb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/19/2021
-ms.locfileid: "60494434"
+ms.lasthandoff: 11/03/2021
+ms.locfileid: "60688658"
 ---
 # <a name="executeaction-action"></a>Ação executeAction
 
@@ -27,9 +27,9 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 |Tipo de permissão|Permissões (da com menos para a com mais privilégios)|
 |:---|:---|
-|Delegado (conta corporativa ou de estudante)|DeviceManagementManagedDevices.Read.All, DeviceManagementManagedDevices.ReadWrite.All, DeviceManagementManagedDevices.PriviligedOperation.All|
+|Delegado (conta corporativa ou de estudante)|DeviceManagementManagedDevices.Read.All, DeviceManagementManagedDevices.PriviligedOperation.All|
 |Delegado (conta pessoal da Microsoft)|Sem suporte.|
-|Aplicativo|DeviceManagementManagedDevices.Read.All, DeviceManagementManagedDevices.ReadWrite.All, DeviceManagementManagedDevices.PriviligedOperation.All|
+|Aplicativo|DeviceManagementManagedDevices.Read.All, DeviceManagementManagedDevices.PriviligedOperation.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- {
@@ -59,6 +59,7 @@ A tabela a seguir mostra os parâmetros que podem ser usados com esta ação.
 |actionName|[managedDeviceRemoteAction](../resources/intune-devices-manageddeviceremoteaction.md)|Ainda não documentado|
 |keepEnrollmentData|Booliano|Ainda não documentado|
 |keepUserData|Booliano|Ainda não documentado|
+|persistEsimDataPlan|Booliano|Ainda não documentado|
 |deviceIds|String collection|Ainda não documentado|
 |notificationTitle|String|Ainda não documentado|
 |notificationBody|String|Ainda não documentado|
@@ -80,12 +81,13 @@ Este é um exemplo da solicitação.
 POST https://graph.microsoft.com/beta/deviceManagement/managedDevices/executeAction
 
 Content-type: application/json
-Content-length: 441
+Content-length: 473
 
 {
   "actionName": "delete",
   "keepEnrollmentData": true,
   "keepUserData": true,
+  "persistEsimDataPlan": true,
   "deviceIds": [
     "Device Ids value"
   ],

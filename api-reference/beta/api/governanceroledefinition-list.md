@@ -1,20 +1,22 @@
 ---
 title: Listar governançaRoleDefinitions
 description: Obter uma coleção de governanceRoleDefinitions em um recurso.
-localization_priority: Normal
+ms.localizationpriority: medium
 doc_type: apiPageType
 ms.prod: governance
-author: shauliu1
-ms.openlocfilehash: 261239d0a0368413bb1ee213c7d966a681601b07
-ms.sourcegitcommit: 01755ac7c0ab7becf28052e05e58567caa8364cd
+author: carolinetempleton
+ms.openlocfilehash: 89ce17091cf141269414b29d06c81110308fab82
+ms.sourcegitcommit: c7ff992ef63e480d070421ba99b28ee129cb6acb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/21/2021
-ms.locfileid: "58453755"
+ms.lasthandoff: 11/03/2021
+ms.locfileid: "60695013"
 ---
 # <a name="list-governanceroledefinitions"></a>Listar governançaRoleDefinitions
 
 Namespace: microsoft.graph [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
+[!INCLUDE [pim-v1resourceroles-deprecation](../../includes/pim-v1resourceroles-deprecation.md)]
 
 Obter uma coleção de [governanceRoleDefinitions](../resources/governanceroledefinition.md) em um recurso.
 
@@ -29,7 +31,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 | Delegado (conta pessoal da Microsoft) | Sem suporte. |
 | Aplicativo | PrivilegedAccess.Read.AzureResources |
 
-### <a name="azure-ad"></a>Microsoft Azure Active Directory
+### <a name="azure-ad"></a>Microsoft Azure AD
 
 | Tipo de permissão | Permissões |
 |:--------------- |:----------- |

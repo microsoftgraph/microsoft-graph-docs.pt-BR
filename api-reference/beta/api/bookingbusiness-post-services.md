@@ -1,16 +1,16 @@
 ---
 title: Criar bookingService
 description: Crie um novo bookingService para o bookingbusiness especificado.
-localization_priority: Normal
+ms.localizationpriority: medium
 author: arvindmicrosoft
 ms.prod: bookings
 doc_type: apiPageType
-ms.openlocfilehash: 5f790cdc87cc7beedb85421cffec8dfb65aa56e3
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: 03b969ad9ea195eb6c3218bd68e37a356d9a905e
+ms.sourcegitcommit: c7ff992ef63e480d070421ba99b28ee129cb6acb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52047858"
+ms.lasthandoff: 11/03/2021
+ms.locfileid: "60688735"
 ---
 # <a name="create-bookingservice"></a>Criar bookingService
 
@@ -18,7 +18,7 @@ Namespace: microsoft.graph
 
  [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Crie um novo [bookingService](../resources/bookingservice.md) para o [bookingbusiness especificado.](../resources/bookingbusiness.md)
+Crie um novo [bookingService](../resources/bookingservice.md) para o [bookingBusiness especificado.](../resources/bookingbusiness.md)
 ## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
@@ -37,17 +37,17 @@ POST /bookingBusinesses/{id}/services
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
 | Nome       | Descrição|
 |:---------------|:----------|
-| Authorization  | Portador {código}|
+| Autorização  | {code} do portador. Obrigatório.|
 
 ## <a name="request-body"></a>Corpo da solicitação
-No corpo da solicitação, fornece uma representação JSON do [objeto bookingService.](../resources/bookingservice.md)
+No corpo da solicitação, fornece uma representação JSON de um [objeto bookingService.](../resources/bookingservice.md)
 
 
 ## <a name="response"></a>Resposta
-Se tiver êxito, este método retornará o código de resposta e o `201, Created` [objeto bookingService](../resources/bookingservice.md) no corpo da resposta.
+Se tiver êxito, este método retornará um código `201 Created` de resposta e um objeto [bookingService](../resources/bookingservice.md) no corpo da resposta.
 
 ## <a name="example"></a>Exemplo
-##### <a name="request"></a>Solicitação
+### <a name="request"></a>Solicitação
 Este é um exemplo de solicitação.
 
 # <a name="http"></a>[HTTP](#tab/http)
@@ -100,6 +100,8 @@ Content-type: application/json
     ],
     "description":"Individual bento box lunch delivery",
     "displayName":"Bento",
+    "isLocationOnline": true,
+    "smsNotificationsEnabled": true,
     "isHiddenFromCustomers":false,
     "notes":"Home-cooked special",
     "postBuffer":"PT10M",
@@ -137,9 +139,10 @@ Content-type: application/json
 
 ---
 
-No corpo da solicitação, fornece uma representação JSON do [objeto bookingService.](../resources/bookingservice.md)
-##### <a name="response"></a>Resposta
-Este é um exemplo de resposta. Observação: o objeto de resposta mostrado aqui pode ser encurtado para legibilidade.
+### <a name="response"></a>Resposta
+Este é um exemplo de resposta. 
+
+>**Observação:** o objeto de resposta mostrado aqui pode ser encurtado para legibilidade.
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -162,6 +165,9 @@ Content-type: application/json
     "preBuffer": "PT5M",
     "postBuffer": "PT10M",
     "staffMemberIds": [],
+    "isLocationOnline": true,
+    "smsNotificationsEnabled": true,
+    "webUrl": "https://outlook.office365.com/owa/calendar/Contosolunchdelivery@M365B489948.onmicrosoft.com/bookings/s/gkcGIq92Z0u5h4FWB9Qgcg2",
     "defaultLocation": {
         "displayName": "Contoso Lunch Delivery",
         "locationEmailAddress": null,

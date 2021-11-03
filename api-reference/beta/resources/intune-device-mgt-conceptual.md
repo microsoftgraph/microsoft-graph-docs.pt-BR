@@ -4,12 +4,12 @@ description: Lista a API Graph microsoft para pontos de extremidade do Intune (R
 author: dougeby
 ms.localizationpriority: medium
 ms.prod: intune
-ms.openlocfilehash: 3dffdd3e1b0fe50ac190fbbf3d9a60cf350d3efe
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 33592ed42a2147cb2b8ba861bf96cae88a334f05
+ms.sourcegitcommit: c7ff992ef63e480d070421ba99b28ee129cb6acb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59120399"
+ms.lasthandoff: 11/03/2021
+ms.locfileid: "60696781"
 ---
 # <a name="device-management-in-microsoft-intune"></a>Gerenciamento de dispositivos no Microsoft Intune
 
@@ -32,12 +32,9 @@ Namespace: microsoft.graph
 - [Evento de auditoria](intune-auditing-auditevent.md)
 - [Propriedade de auditoria](intune-auditing-auditproperty.md)
 - [Recurso de auditoria](intune-auditing-auditresource.md)
-- [Expressões de condição de gerenciamento binário](intune-fencing-binarymanagementconditionexpression.md)
-- [Tipo de operador de expressão de condição de gerenciamento binário](intune-fencing-binarymanagementconditionexpressionoperatortype.md)
 - [Resultado de ação do dispositivo gerenciado em massa](intune-devices-bulkmanageddeviceactionresult.md)
 - [Tipo de gabinete](intune-devices-chassistype.md)
 - [Propriedade de dispositivo Chrome o s](intune-devices-chromeosdeviceproperty.md)
-- [Condição de gerenciamento de cerca geográfica circular](intune-fencing-circulargeofencemanagementcondition.md)
 - [Problema de conectividade de computador na nuvem](intune-devices-cloudpcconnectivityissue.md)
 - [Resumo de dispositivos comanados](intune-devices-comanageddevicessummary.md)
 - [Dispositivo qualificado de comanagement](intune-devices-comanagementeligibledevice.md)
@@ -143,8 +140,7 @@ Namespace: microsoft.graph
 - [Tipo de modelo de gerenciamento de dispositivo](intune-deviceintent-devicemanagementtemplatetype.md)
 - [Tipo de valor de tentativa do gerenciamento de dispositivos](intune-deviceintent-devicemanangementintentvaluetype.md)
 - [Resumo do sistema operacional do dispositivo](intune-devices-deviceoperatingsystemsummary.md)
-- [Tipo de plataforma do dispositivo](intune-fencing-deviceplatformtype.md)
-- [Visão geral de proteção de dispositivo](intune-devices-deviceprotectionoverview.md)
+- [Visão geral da proteção do dispositivo](intune-devices-deviceprotectionoverview.md)
 - [Estado do registro do dispositivo](intune-devices-deviceregistrationstate.md)
 - [Script de shell de dispositivo](intune-devices-deviceshellscript.md)
 - [Tipo de dispositivo](intune-devices-devicetype.md)
@@ -162,7 +158,6 @@ Namespace: microsoft.graph
 - [Tipo de junção](intune-devices-jointype.md)
 - [Mensagem de notificação localizada](intune-notification-localizednotificationmessage.md)
 - [Resultado da ação de localizar dispositivo](intune-devices-locatedeviceactionresult.md)
-- [Condição de gerenciamento local](intune-fencing-locationmanagementcondition.md)
 - [Usuário conectado](intune-devices-loggedonuser.md)
 - [Estado de modo perdido](intune-devices-lostmodestate.md)
 - [Estado de malware para dispositivo windows](intune-devices-malwarestateforwindowsdevice.md)
@@ -176,15 +171,7 @@ Namespace: microsoft.graph
 - [Ação remota de dispositivo gerenciados](intune-devices-manageddeviceremoteaction.md)
 - [Status do instalador gerenciado](intune-devices-managedinstallerstatus.md)
 - [Tipo de agente de gerenciamento](intune-devices-managementagenttype.md)
-- [Condição de gerenciamento](intune-fencing-managementcondition.md)
-- [Expressões de condição de gerenciamento](intune-fencing-managementconditionexpression.md)
-- [Modelo de expressões de condição de gerenciamento](intune-fencing-managementconditionexpressionmodel.md)
-- [Cadeia de caracteres de expressões de condição de gerenciamento](intune-fencing-managementconditionexpressionstring.md)
-- [Instrução de condição de gerenciamento](intune-fencing-managementconditionstatement.md)
 - [Estado de gerenciamento](intune-devices-managementstate.md)
-- [Condição de gerenciamento de configuração de rede IPv4](intune-fencing-networkipv4configurationmanagementcondition.md)
-- [Condição de gerenciamento de configuração de rede IPv6](intune-fencing-networkipv6configurationmanagementcondition.md)
-- [Condição de gerenciamento de rede](intune-fencing-networkmanagementcondition.md)
 - [Modelo de mensagem de notificação](intune-notification-notificationmessagetemplate.md)
 - [Opções de identidade visual do modelo de notificação](intune-notification-notificationtemplatebrandingoptions.md)
 - [Qualificação de atualização do sistema operacional](intune-devices-operatingsystemupgradeeligibility.md)
@@ -215,8 +202,6 @@ Namespace: microsoft.graph
 - [Modelo de linha da base de segurança](intune-deviceintent-securitybaselinetemplate.md)
 - [Usuário de dispositivo Apple compartilhado](intune-devices-sharedappledeviceuser.md)
 - [Tuple_2 de execução type_ i collection_1 de operação](intune-esim-tuple_2ofexecutiontype_icollection_1ofoperation.md)
-- [Expressões de condição de gerenciamento unário](intune-fencing-unarymanagementconditionexpression.md)
-- [Tipo de operador de expressão de condição de gerenciamento unário](intune-fencing-unarymanagementconditionexpressionoperatortype.md)
 - [Parâmetro da ação de atualização de conta de dispositivo Windows](intune-devices-updatewindowsdeviceaccountactionparameter.md)
 - [Desempenho do aplicativo de avaliação de experiência do usuário por versão do aplicativo](intune-devices-userexperienceanalyticsapphealthappperformancebyappversion.md)
 - [Desempenho do aplicativo de avaliação da experiência do usuário por detalhes da versão do aplicativo](intune-devices-userexperienceanalyticsapphealthappperformancebyappversiondetails.md)
@@ -229,6 +214,14 @@ Namespace: microsoft.graph
 - [Desempenho da versão do aplicativo de análise da experiência do usuário](intune-devices-userexperienceanalyticsapphealthosversionperformance.md)
 - [Resumo de dispositivos de piloto automático de análise de experiência do usuário](intune-devices-userexperienceanalyticsautopilotdevicessummary.md)
 - [Linha de base de análise de experiência do usuário](intune-devices-userexperienceanalyticsbaseline.md)
+- [Impacto do aplicativo de avaliação da bateria de análise da experiência do usuário](intune-devices-userexperienceanalyticsbatteryhealthappimpact.md)
+- [Detalhes da capacidade da bateria de análise da experiência do usuário](intune-devices-userexperienceanalyticsbatteryhealthcapacitydetails.md)
+- [Impacto do aplicativo do dispositivo de saúde da bateria de análise da experiência do usuário](intune-devices-userexperienceanalyticsbatteryhealthdeviceappimpact.md)
+- [Desempenho do dispositivo de avaliação da bateria de análise da experiência do usuário](intune-devices-userexperienceanalyticsbatteryhealthdeviceperformance.md)
+- [Histórico de tempo de execução do dispositivo de saúde da bateria de análise da experiência do usuário](intune-devices-userexperienceanalyticsbatteryhealthdeviceruntimehistory.md)
+- [Desempenho do modelo de avaliação de bateria de análise de experiência do usuário](intune-devices-userexperienceanalyticsbatteryhealthmodelperformance.md)
+- [Desempenho do sistema operacional de análise da experiência do usuário](intune-devices-userexperienceanalyticsbatteryhealthosperformance.md)
+- [Detalhes do tempo de execução da bateria de análise da experiência do usuário](intune-devices-userexperienceanalyticsbatteryhealthruntimedetails.md)
 - [Categoria de análise de experiência do usuário](intune-devices-userexperienceanalyticscategory.md)
 - [Resumo de dispositivos de identidade de nuvem de análise de experiência do usuário](intune-devices-userexperienceanalyticscloudidentitydevicessummary.md)
 - [Resumo de dispositivos de gerenciamento de nuvem de análise de experiência do usuário](intune-devices-userexperienceanalyticscloudmanagementdevicessummary.md)
@@ -260,7 +253,6 @@ Namespace: microsoft.graph
 - [Análise de experiência do usuário funciona em qualquer lugar resumo de dispositivos](intune-devices-userexperienceanalyticsworkfromanywheredevicessummary.md)
 - [A análise de experiência do usuário funciona de qualquer lugar métrica de preparação de hardware](intune-devices-userexperienceanalyticsworkfromanywherehardwarereadinessmetric.md)
 - [A análise de experiência do usuário funciona de qualquer lugar métrica](intune-devices-userexperienceanalyticsworkfromanywheremetric.md)
-- [Expressões de condição de gerenciamento variável](intune-fencing-variablemanagementconditionexpression.md)
 - [Windows status do produto defender](intune-devices-windowsdefenderproductstatus.md)
 - [Resultado da ação de verificação do Windows Defender](intune-devices-windowsdefenderscanactionresult.md)
 - [Conta do dispositivo Windows](intune-devices-windowsdeviceaccount.md)

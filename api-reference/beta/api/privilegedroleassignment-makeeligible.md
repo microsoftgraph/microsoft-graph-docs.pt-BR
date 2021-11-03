@@ -1,22 +1,24 @@
 ---
 title: 'privilegedRoleAssignment: makeEligible'
 description: Tornar a atribuição de função qualificada.
-localization_priority: Normal
+ms.localizationpriority: medium
 doc_type: apiPageType
 ms.prod: governance
-author: shauliu1
-ms.openlocfilehash: 26aa8ba7effdeb5aee270d02bec60ee2e7a950dd
-ms.sourcegitcommit: 01755ac7c0ab7becf28052e05e58567caa8364cd
+author: carolinetempleton
+ms.openlocfilehash: 5b659648741f24896bba2212a7e11a38d562a181
+ms.sourcegitcommit: c7ff992ef63e480d070421ba99b28ee129cb6acb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/21/2021
-ms.locfileid: "58453594"
+ms.lasthandoff: 11/03/2021
+ms.locfileid: "60694719"
 ---
 # <a name="privilegedroleassignment-makeeligible"></a>privilegedRoleAssignment: makeEligible
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
+[!INCLUDE [pim-v1AADRoles-deprecation](../../includes/pim-v1aadroles-deprecation.md)]
 
 Tornar a atribuição de função qualificada. Se a atribuição de função já estiver qualificada antes da chamada, ela não faz nada. Se a atribuição de função for permanente e o solicitante for diferente do usuário de destino, a atribuição de função se tornará qualificada e a função será desativada para o usuário de destino. Se o solicitante for o usuário de destino e a função for Administrador de Segurança ou Administrador de Função Privilegiada, a função será ativada com a expiração padrão.
 

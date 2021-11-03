@@ -1,16 +1,16 @@
 ---
 title: Listar serviços
 description: Obter uma lista de objetos bookingService no bookingbusiness especificado.
-localization_priority: Normal
+ms.localizationpriority: medium
 author: arvindmicrosoft
 ms.prod: bookings
 doc_type: apiPageType
-ms.openlocfilehash: cfef3c9e942591822760d103aac46a86e6cccfbb
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: 2c2f57f07ceb873302b2c9c520649668eda32643
+ms.sourcegitcommit: c7ff992ef63e480d070421ba99b28ee129cb6acb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52047893"
+ms.lasthandoff: 11/03/2021
+ms.locfileid: "60693968"
 ---
 # <a name="list-services"></a>Listar serviços
 
@@ -18,7 +18,7 @@ Namespace: microsoft.graph
 
  [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Obter uma lista de [objetos bookingService](../resources/bookingservice.md) no [bookingbusiness especificado.](../resources/bookingbusiness.md)
+Obter uma lista de [objetos bookingService](../resources/bookingservice.md) no [bookingBusiness especificado.](../resources/bookingbusiness.md)
 ## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
@@ -39,14 +39,14 @@ Este método dá suporte a [Parâmetros de consulta OData](/graph/query-paramete
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
 | Nome      |Descrição|
 |:----------|:----------|
-| Authorization  | Portador {código}|
+| Autorização  | {code} do portador. Obrigatório.|
 
 ## <a name="request-body"></a>Corpo da solicitação
 Não forneça um corpo de solicitação para esse método.
 ## <a name="response"></a>Resposta
 Se tiver êxito, este método retornará um código `200 OK` de resposta e uma coleção de objetos [bookingService](../resources/bookingservice.md) no corpo da resposta.
 ## <a name="example"></a>Exemplo
-##### <a name="request"></a>Solicitação
+### <a name="request"></a>Solicitação
 Este é um exemplo de solicitação.
 
 # <a name="http"></a>[HTTP](#tab/http)
@@ -75,8 +75,10 @@ GET https://graph.microsoft.com/beta/bookingBusinesses/Contosolunchdelivery@M365
 
 ---
 
-##### <a name="response"></a>Resposta
-Este é um exemplo de resposta. Observação: o objeto de resposta mostrado aqui pode ser encurtado para legibilidade.
+### <a name="response"></a>Resposta
+Este é um exemplo de resposta. 
+
+>**Observação:** o objeto de resposta mostrado aqui pode ser encurtado para legibilidade.
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -102,6 +104,9 @@ Content-type: application/json
             "preBuffer": "PT0S",
             "postBuffer": "PT0S",
             "staffMemberIds": [],
+            "isLocationOnline": true,
+            "smsNotificationsEnabled": true,
+            "webUrl": "https://outlook.office365.com/owa/calendar/Contosolunchdelivery@M365B489948.onmicrosoft.com/bookings/s/gkcGIq92Z0u5h4ABB9Qgce5",
             "schedulingPolicy": null,
             "defaultLocation": {
                 "displayName": "Contoso Lunch Delivery",
@@ -141,6 +146,9 @@ Content-type: application/json
             "preBuffer": "PT5M",
             "postBuffer": "PT10M",
             "staffMemberIds": [],
+            "isLocationOnline": true,
+            "smsNotificationsEnabled": false,
+            "webUrl": "https://outlook.office365.com/owa/calendar/Contosolunchdelivery@M365B489948.onmicrosoft.com/bookings/s/gpcGIq92Z0u5h6ABB9Qgrt5",
             "defaultLocation": {
                 "displayName": "Contoso Lunch Delivery",
                 "locationEmailAddress": null,
@@ -186,6 +194,9 @@ Content-type: application/json
             "preBuffer": "PT5M",
             "postBuffer": "PT10M",
             "staffMemberIds": [],
+            "isLocationOnline": true,
+            "smsNotificationsEnabled": true,
+            "webUrl": "https://outlook.office365.com/owa/calendar/Contosolunchdelivery@M365B489948.onmicrosoft.com/bookings/s/bplGIq92Z0u5h4FWB9Qgvu7",
             "defaultLocation": {
                 "displayName": "Contoso Lunch Delivery",
                 "locationEmailAddress": null,

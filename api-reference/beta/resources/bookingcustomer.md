@@ -1,42 +1,44 @@
 ---
-title: tipo de recurso bookingCustomer
+title: Tipo de recurso bookingCustomer
 description: " > **Importante:** as APIs na versão /beta no Microsoft Graph estão em visualização e sujeitas a alterações. Não há suporte para o uso dessas APIs em aplicativos de produção."
-localization_priority: Normal
+ms.localizationpriority: medium
 author: arvindmicrosoft
 ms.prod: bookings
 doc_type: resourcePageType
-ms.openlocfilehash: 5b527902c5d6e39bb752e07838c6a5e1c3022bb0
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 3d5eff9d0add4a0840e864b9f4caf1730be98e5a
+ms.sourcegitcommit: c7ff992ef63e480d070421ba99b28ee129cb6acb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48071784"
+ms.lasthandoff: 11/03/2021
+ms.locfileid: "60696228"
 ---
-# <a name="bookingcustomer-resource-type"></a>tipo de recurso bookingCustomer
+# <a name="bookingcustomer-resource-type"></a>Tipo de recurso bookingCustomer
 
 Namespace: microsoft.graph
 
  [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
  
-Representa um cliente de um [bookingBusiness](bookingbusiness.md).
+Representa um cliente de [um bookingBusiness](bookingbusiness.md).
 
 
 ## <a name="methods"></a>Métodos
 
 | Método           | Tipo de retorno    |Descrição|
 |:---------------|:--------|:----------|
-|[Listar clientes](../api/bookingbusiness-list-customers.md) | coleção [bookingCustomer](bookingcustomer.md) | Obtenha uma lista de objetos **bookingCustomer** . |
-|[Criar bookingCustomer](../api/bookingbusiness-post-customers.md) | [bookingCustomer](bookingcustomer.md) | Criar um novo objeto **bookingCustomer** . |
-|[Obter bookingCustomer](../api/bookingcustomer-get.md) | [bookingCustomer](bookingcustomer.md) |Leia as propriedades e os relacionamentos de um objeto **bookingCustomer** .|
-|[Update](../api/bookingcustomer-update.md) | [bookingCustomer](bookingcustomer.md) |Atualizar um objeto **bookingCustomer** . |
-|[Delete](../api/bookingcustomer-delete.md) | Nenhum |Excluir um objeto **bookingCustomer** . |
+|[Listar clientes](../api/bookingbusiness-list-customers.md) | [coleção bookingCustomer](bookingcustomer.md) | Obter uma lista de **objetos bookingCustomer.** |
+|[Criar bookingCustomer](../api/bookingbusiness-post-customers.md) | [bookingCustomer](bookingcustomer.md) | Crie um novo **objeto bookingCustomer.** |
+|[Obter bookingCustomer](../api/bookingcustomer-get.md) | [bookingCustomer](bookingcustomer.md) |Leia as propriedades e as relações de um **objeto bookingCustomer.**|
+|[Atualizar](../api/bookingcustomer-update.md) | [bookingCustomer](bookingcustomer.md) |Atualize um **objeto bookingCustomer.** |
+|[Excluir](../api/bookingcustomer-delete.md) | Nenhum |**Exclua um objeto bookingCustomer.** |
 
 ## <a name="properties"></a>Propriedades
 | Propriedade     | Tipo   |Descrição|
 |:---------------|:--------|:----------|
-|displayName|Cadeia de caracteres|O nome do cliente.|
+|displayName|String|O nome do cliente.|
 |emailAddress|String|O endereço SMTP do cliente.|
-|id|Cadeia de caracteres| A ID do cliente. Somente leitura.|
+|id|String| A ID do cliente. Apenas leitura.|
+|addresses|[Coleção physicalAddress](../resources/physicaladdress.md)|Endereços associados ao cliente, incluindo home, business e outros endereços.|
+|telefones|Coleção [phone](../resources/phone.md)|Telefone números associados ao cliente, incluindo números fixos, comerciais e móveis.|
 
 ## <a name="relationships"></a>Relações
 Nenhum
@@ -58,7 +60,17 @@ Veja a seguir uma representação JSON do recurso.
 {
   "displayName": "String",
   "emailAddress": "String",
-  "id": "String (identifier)"
+  "id": "String (identifier)",
+  "addresses": [
+    {
+      "@odata.type": "microsoft.graph.physicalAddress"
+    }
+  ],
+  "phones": [
+    {
+      "@odata.type": "microsoft.graph.phone"
+    }
+  ]
 }
 
 ```

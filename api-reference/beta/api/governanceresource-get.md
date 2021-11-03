@@ -1,22 +1,24 @@
 ---
 title: Obter governanceResource
 description: Recupere as propriedades e as relações de um objeto governanceResource.
-localization_priority: Normal
+ms.localizationpriority: medium
 doc_type: apiPageType
 ms.prod: governance
-author: shauliu1
-ms.openlocfilehash: 366726676acf637d1f2a0ccf6ed82004c0cf4f97
-ms.sourcegitcommit: 01755ac7c0ab7becf28052e05e58567caa8364cd
+author: carolinetempleton
+ms.openlocfilehash: 79e564c1219417f5f065c41b6f2dba785bb85335
+ms.sourcegitcommit: c7ff992ef63e480d070421ba99b28ee129cb6acb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/21/2021
-ms.locfileid: "58452446"
+ms.lasthandoff: 11/03/2021
+ms.locfileid: "60696725"
 ---
 # <a name="get-governanceresource"></a>Obter governanceResource
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
+[!INCLUDE [pim-v1resourceroles-deprecation](../../includes/pim-v1resourceroles-deprecation.md)]
 
 Recupere as propriedades e as relações de um [objeto governanceResource.](../resources/governanceresource.md)
 
@@ -31,7 +33,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 | Delegado (conta pessoal da Microsoft) | Sem suporte. |
 | Aplicativo | PrivilegedAccess.Read.AzureResources |
 
-### <a name="azure-ad"></a>Microsoft Azure Active Directory
+### <a name="azure-ad"></a>Microsoft Azure AD
 
 | Tipo de permissão | Permissões |
 |:--------------- |:----------- |

@@ -1,11 +1,11 @@
 ---
 description: Arquivo gerado automaticamente. NÃO MODIFICAR
-ms.openlocfilehash: 0584086857b4dbdadc18825af3ba5cb0d8fdda3a
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 64a1e8117248cba3812c97e79e35918d9df4327f
+ms.sourcegitcommit: c7ff992ef63e480d070421ba99b28ee129cb6acb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59022364"
+ms.lasthandoff: 11/03/2021
+ms.locfileid: "60687793"
 ---
 ```csharp
 
@@ -17,7 +17,7 @@ var externalGroup = new Microsoft.Graph.ExternalConnectors.ExternalGroup
     Description = "The product marketing team"
 };
 
-await graphClient.Connections["{externalConnectors.externalConnection-id}"].Groups["{externalConnectors.externalGroup-id}"]
+await graphClient.External.Connections["{externalConnectors.externalConnection-id}"].Groups["{externalConnectors.externalGroup-id}"]
     .Request()
     .UpdateAsync(externalGroup);
 

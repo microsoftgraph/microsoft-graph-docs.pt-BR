@@ -1,16 +1,16 @@
 ---
 title: Listar unifiedRoleManagementPolicyRules
 description: Obter uma lista dos objetos unifiedRoleManagementPolicyRule e suas propriedades.
-author: shauliu1
+author: carolinetempleton
 ms.localizationpriority: medium
 ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: 4a834697e4019480e23cbc62ee1a30f921498cb5
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 0610e4d50a7b4f961707a5202982db9f94073cbd
+ms.sourcegitcommit: c7ff992ef63e480d070421ba99b28ee129cb6acb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59020515"
+ms.lasthandoff: 11/03/2021
+ms.locfileid: "60689057"
 ---
 # <a name="list-unifiedrolemanagementpolicyrules"></a>Listar unifiedRoleManagementPolicyRules
 Namespace: microsoft.graph

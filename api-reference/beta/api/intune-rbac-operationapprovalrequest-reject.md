@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 359b45eecf225a56bfa0571f351c763c6dea25d2
-ms.sourcegitcommit: 4a960067cf2cd7d3c605550150eb3c9259adfe92
+ms.openlocfilehash: 71e3fbcc488338b300b0332dee25ea2876f3c8a9
+ms.sourcegitcommit: c7ff992ef63e480d070421ba99b28ee129cb6acb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/19/2021
-ms.locfileid: "60487884"
+ms.lasthandoff: 11/03/2021
+ms.locfileid: "60689449"
 ---
 # <a name="reject-action"></a>rejeitar ação
 
@@ -27,9 +27,9 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 |Tipo de permissão|Permissões (da com menos para a com mais privilégios)|
 |:---|:---|
-|Delegado (conta corporativa ou de estudante)|DeviceManagementRBAC.Read.All, DeviceManagementRBAC.ReadWrite.All|
+|Delegado (conta corporativa ou de estudante)|DeviceManagementRBAC.Read.All|
 |Delegado (conta pessoal da Microsoft)|Sem suporte.|
-|Aplicativo|DeviceManagementRBAC.Read.All, DeviceManagementRBAC.ReadWrite.All|
+|Aplicativo|DeviceManagementRBAC.Read.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- {
