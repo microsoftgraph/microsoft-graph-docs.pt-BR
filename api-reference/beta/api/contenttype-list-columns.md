@@ -2,15 +2,15 @@
 author: swapnil1993
 title: Listar columnDefinitions em um tipo de conteúdo
 description: Listar colunas em um tipo de conteúdo.
-localization_priority: Normal
+ms.localizationpriority: medium
 doc_type: apiPageType
 ms.prod: sites-and-lists
-ms.openlocfilehash: 0a22459519fe68c4359ef53b4700d080e5845bbd
-ms.sourcegitcommit: 6d247f44a6ee4d8515c3863ee8a2683163c9f829
+ms.openlocfilehash: b53810daffb466b0c3714e8f548e32b314bf030f
+ms.sourcegitcommit: 64d27a0e3dcccc9d857e62aace4153e5d98fb3d0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/14/2021
-ms.locfileid: "53430059"
+ms.lasthandoff: 11/03/2021
+ms.locfileid: "60729224"
 ---
 # <a name="list-columns-in-a-content-type"></a>Listar colunas em um tipo de conteúdo
 Namespace: microsoft.graph
@@ -24,7 +24,7 @@ Obter a coleção de colunas, representada como [columnDefinition][columnDefinit
 
   
 
-Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions_reference.md).
+Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
   
 

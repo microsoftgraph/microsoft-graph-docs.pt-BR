@@ -1,16 +1,16 @@
 ---
 title: tipo de recurso de esquema
 description: O esquema de conexão determina como o conteúdo adicionado a uma conexão será usado em várias experiências Graph Microsoft.
-localization_priority: Normal
+ms.localizationpriority: medium
 author: snlraju-msft
 ms.prod: search
 doc_type: resourcePageType
-ms.openlocfilehash: 649f9e0ae8e0162e9fa4f976d5158e23bfb49b05
-ms.sourcegitcommit: 1940be9846055aa650c6c03982b74a961f1e316a
+ms.openlocfilehash: 8dbf6a4df47f9afb3e24effbf9d90759dc87d677
+ms.sourcegitcommit: 64d27a0e3dcccc9d857e62aace4153e5d98fb3d0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/17/2021
-ms.locfileid: "53467597"
+ms.lasthandoff: 11/03/2021
+ms.locfileid: "60729203"
 ---
 # <a name="schema-resource-type"></a>tipo de recurso de esquema
 
@@ -31,7 +31,7 @@ O [esquema](externalconnectors-externalconnection.md) de conexão determina como
 
 | Propriedade   | Tipo                               | Descrição                |
 |:-----------|:-----------------------------------|:---------------------------|
-| baseType   | String                             | Deve ser definida como `microsoft.graph.externalItem`. Obrigatório. |
+| baseType   | String                             | Tem que ser definida como `microsoft.graph.externalItem`. Obrigatório. |
 | properties | [coleção property](externalconnectors-property.md) | As propriedades definidas para os itens na conexão. O número mínimo de propriedades é um, o máximo é 128. |
 
 ## <a name="relationships"></a>Relações
@@ -57,7 +57,7 @@ Veja a seguir uma representação JSON do recurso.
   "properties": [
     {
       "name": "String",
-      "type": "String",
+      "type": "String"
     }
   ]
 }

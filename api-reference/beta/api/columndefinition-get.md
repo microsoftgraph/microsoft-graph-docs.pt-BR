@@ -2,15 +2,15 @@
 author: swapnil1993
 title: Obter columnDefinition
 description: " Obter uma coluna de site, lista ou tipo de conteúdo."
-localization_priority: Normal
+ms.localizationpriority: medium
 doc_type: apiPageType
 ms.prod: sites-and-lists
-ms.openlocfilehash: f2e9bbca28dd0096401a2c59b92d5a26e35ee75e
-ms.sourcegitcommit: 8b23038be1141d7f22eb61de6aafdb16d4f9c826
+ms.openlocfilehash: 87365cb26f43db82ce3d1f7db9d3366080f29305
+ms.sourcegitcommit: 64d27a0e3dcccc9d857e62aace4153e5d98fb3d0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/13/2021
-ms.locfileid: "53401390"
+ms.lasthandoff: 11/03/2021
+ms.locfileid: "60729217"
 ---
 # <a name="get-columndefinition"></a>Obter columnDefinition
 Namespace: microsoft.graph
@@ -24,7 +24,7 @@ Recupere os metadados de um [site,][] [lista ou][] [coluna contentType.][] [][co
 
   
 
-Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions_reference.md).
+Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
   
 

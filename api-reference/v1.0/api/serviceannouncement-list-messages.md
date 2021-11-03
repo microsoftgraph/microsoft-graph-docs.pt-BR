@@ -5,12 +5,12 @@ author: payiAzure
 ms.localizationpriority: medium
 ms.prod: service-communications
 doc_type: apiPageType
-ms.openlocfilehash: 098e24a840b4db2c88777f291508bafc16fbc47c
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 414e6e67b4d37087ef9ae6c6592264f66bd8d8f1
+ms.sourcegitcommit: 64d27a0e3dcccc9d857e62aace4153e5d98fb3d0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59029231"
+ms.lasthandoff: 11/03/2021
+ms.locfileid: "60730428"
 ---
 # <a name="list-serviceannouncement-messages"></a>Listar mensagens de serviceAnnouncement
 Namespace: microsoft.graph
@@ -24,8 +24,8 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 |Tipo de permissão|Permissões (da com menos para a com mais privilégios)|
 |:---|:---|
-|Delegada (conta corporativa ou de estudante)|ServiceMessage.Read.All|
-|Delegada (conta pessoal da Microsoft)|Sem suporte.|
+|Delegado (conta corporativa ou de estudante)|ServiceMessage.Read.All|
+|Delegado (conta pessoal da Microsoft)|Sem suporte.|
 |Aplicativo|ServiceMessage.Read.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
@@ -119,6 +119,7 @@ Content-Type: application/json
         "SharePoint Online",
         "OneDrive for Business"
       ],
+      "expiryDateTime": null,
       "details": [
         {
           "name": "ExternalLink",

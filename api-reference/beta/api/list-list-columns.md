@@ -2,15 +2,15 @@
 author: swapnil1993
 title: Listar columnDefinitions em uma lista
 description: Listar colunas em uma lista.
-localization_priority: Normal
+ms.localizationpriority: medium
 doc_type: apiPageType
 ms.prod: sites-and-lists
-ms.openlocfilehash: 4ad913c79adcb72978ec522102cd92968dd6c03d
-ms.sourcegitcommit: fe1b4d098af604cc34596f595e799911ea672532
+ms.openlocfilehash: 98c3c5715ac3a47dee40e923db9047189e858a76
+ms.sourcegitcommit: 64d27a0e3dcccc9d857e62aace4153e5d98fb3d0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/07/2021
-ms.locfileid: "51611759"
+ms.lasthandoff: 11/03/2021
+ms.locfileid: "60730547"
 ---
 # <a name="list-columns-in-a-list"></a>Listar colunas em uma lista
 Namespace: microsoft.graph
@@ -24,7 +24,7 @@ Obter a coleção de colunas, representada como [columnDefinition][columnDefinit
 
   
 
-Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions_reference.md).
+Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
   
 

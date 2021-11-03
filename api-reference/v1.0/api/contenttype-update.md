@@ -5,12 +5,12 @@ description: Atualize um tipo de conteúdo.
 ms.localizationpriority: medium
 doc_type: apiPageType
 ms.prod: sites-and-lists
-ms.openlocfilehash: 4d15f5f30326de1be01c6868bdee3a42bd5cc682
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: b0f6a5ef72f7cd163bd1699b9a95fbfb07eece5b
+ms.sourcegitcommit: 64d27a0e3dcccc9d857e62aace4153e5d98fb3d0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59147532"
+ms.lasthandoff: 11/03/2021
+ms.locfileid: "60730113"
 ---
 # <a name="update-contenttype"></a>Atualizar contentType
 Namespace: microsoft.graph
@@ -23,7 +23,7 @@ Atualizar um [tipo de conteúdo][contentType].
 
   
 
-Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions_reference.md).
+Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
   
 

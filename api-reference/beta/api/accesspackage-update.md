@@ -2,15 +2,15 @@
 title: Atualizar accessPackage
 description: Atualize as propriedades de um objeto accessPackage.
 author: markwahl-msft
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: 40f299edcca636a6f2041a36e10b0dc3963d8422
-ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
+ms.openlocfilehash: 6f777520a9896760ba263dc12ff7a4c2b1631132
+ms.sourcegitcommit: 64d27a0e3dcccc9d857e62aace4153e5d98fb3d0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50439762"
+ms.lasthandoff: 11/03/2021
+ms.locfileid: "60729728"
 ---
 # <a name="update-accesspackage"></a>Atualizar accessPackage
 
@@ -21,7 +21,7 @@ Namespace: microsoft.graph
 Atualize um objeto [accessPackage](../resources/accesspackage.md) existente para alterar uma ou mais de suas propriedades, como o nome de exibição ou a descrição.
 
 ## <a name="permissions"></a>Permissões
-Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference.md).
+Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão|Permissões (da com menos para a com mais privilégios)|
 |:---|:---|
@@ -50,8 +50,8 @@ A tabela a seguir mostra as propriedades que podem ser fornecidas quando você a
 
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|displayName|String|O nome do pacote de acesso.|
-|descrição|String|A descrição do pacote de acesso.|
+|displayName|Cadeia de caracteres|O nome do pacote de acesso.|
+|description|Cadeia de caracteres|A descrição do pacote de acesso.|
 
 ## <a name="response"></a>Resposta
 Se tiver êxito, este método retornará um código de resposta `204 No Content`.

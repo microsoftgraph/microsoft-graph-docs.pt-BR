@@ -5,12 +5,12 @@ description: Associe um tipo de conteúdo a uma lista de sites de hub.
 ms.localizationpriority: medium
 doc_type: apiPageType
 ms.prod: sites-and-lists
-ms.openlocfilehash: 759a2265cfd0d8a470ba6619acb7b8b1478cebb6
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: d092512fb0ccc669ca0ba9567f2e050eb01a3a45
+ms.sourcegitcommit: 64d27a0e3dcccc9d857e62aace4153e5d98fb3d0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59147658"
+ms.lasthandoff: 11/03/2021
+ms.locfileid: "60729798"
 ---
 # <a name="contenttype-associatewithhubsites"></a>contentType: associateWithHubSites
 
@@ -24,7 +24,7 @@ Associe um tipo [de conteúdo][contentType] publicado presente em um hub de tipo
 
 ## <a name="permissions"></a>Permissões  
 
-Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions_reference.md).
+Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
   
 
@@ -60,7 +60,7 @@ A tabela a seguir mostra os parâmetros que podem ser usados com esta ação.
 |Parâmetro|Tipo|Descrição|
 |-|-|-|
 |hubSiteUrls| Collection(string) |Lista de URLs canônicas para os sites de hub onde o tipo de conteúdo precisa ser imposto. Obrigatório.|
-|propagateToExistingLists| Boolean |Se , os tipos de conteúdo serão impostos em listas existentes nos sites do hub; caso contrário, ele será aplicado somente a listas `true` recém-criadas.|
+|propagateToExistingLists| Booliano |Se , os tipos de conteúdo serão impostos em listas existentes nos sites do hub; caso contrário, ele será aplicado somente a listas `true` recém-criadas.|
 
 ## <a name="response"></a>Resposta
 

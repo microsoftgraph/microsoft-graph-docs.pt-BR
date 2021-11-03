@@ -5,12 +5,12 @@ description: Adicione uma cópia de um tipo de conteúdo de site a uma lista.
 ms.localizationpriority: medium
 doc_type: apiPageType
 ms.prod: sites-and-lists
-ms.openlocfilehash: 78840b24ba66884eac999713d76e287f14f75ec0
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 5a2ce2fbcaa9c9f2bec589ab8ed860c5ef4aec08
+ms.sourcegitcommit: 64d27a0e3dcccc9d857e62aace4153e5d98fb3d0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59147693"
+ms.lasthandoff: 11/03/2021
+ms.locfileid: "60730442"
 ---
 # <a name="contenttype-addcopy"></a>contentType: addCopy
 Namespace: microsoft.graph
@@ -22,7 +22,7 @@ Adicione uma cópia de um [tipo de conteúdo][contentType] de um [site][site] a 
 
 ## <a name="permissions"></a>Permissões  
 
-Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions_reference.md).
+Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
   
 
@@ -56,7 +56,7 @@ A tabela a seguir mostra os parâmetros que podem ser usados com esta ação.
 
 |Parâmetro|Tipo|Descrição|
 |-|-|-|
-|contentType| string | URL canônica para o tipo de conteúdo do site que será copiado para a lista. Obrigatório.|
+|contentType| cadeia de caracteres | URL canônica para o tipo de conteúdo do site que será copiado para a lista. Obrigatório.|
 
 ## <a name="response"></a>Resposta
 

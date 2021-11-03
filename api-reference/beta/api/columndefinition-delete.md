@@ -2,15 +2,15 @@
 author: swapnil1993
 title: Excluir columnDefinition
 description: Exclua uma coluna de um site, lista ou tipo de conteúdo.
-localization_priority: Normal
+ms.localizationpriority: medium
 doc_type: apiPageType
 ms.prod: sites-and-lists
-ms.openlocfilehash: 771123af410d5c0c63038f6d032e5c56874d058f
-ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
+ms.openlocfilehash: 8d0f321103bd77a0150e943a1c210effa43820af
+ms.sourcegitcommit: 64d27a0e3dcccc9d857e62aace4153e5d98fb3d0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "50952201"
+ms.lasthandoff: 11/03/2021
+ms.locfileid: "60730393"
 ---
 # <a name="delete-columndefinition"></a>Excluir columnDefinition
 Namespace: microsoft.graph
@@ -20,7 +20,7 @@ Remova uma [coluna de][columndefinition] um [site,][] [lista][] ou tipo [de cont
 
 
 ## <a name="permissions"></a>Permissões
-Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions_reference.md).
+Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
 |:--------------------|:---------------------------------------------------------|

@@ -2,15 +2,15 @@
 author: swapnil1993
 title: Atualizar columnDefinition
 description: Atualizar uma coluna de site, lista ou tipo de conteúdo
-localization_priority: Normal
+ms.localizationpriority: medium
 doc_type: apiPageType
 ms.prod: sites-and-lists
-ms.openlocfilehash: 0a18f128b92496fa956600557a4a8923efc8d117
-ms.sourcegitcommit: 8ca598ac70647bf4f897361ee90d3aa31d2ecca5
+ms.openlocfilehash: 5f750648a83b663ecd185e7568634e19660184df
+ms.sourcegitcommit: 64d27a0e3dcccc9d857e62aace4153e5d98fb3d0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "51468904"
+ms.lasthandoff: 11/03/2021
+ms.locfileid: "60730155"
 ---
 # <a name="update-columndefinition"></a>Atualizar columnDefinition
 Namespace: microsoft.graph
@@ -21,7 +21,7 @@ Atualizar um [site,][] [lista ou][] [tipo de conteúdo.][contentType] [column][c
 
 ## <a name="permissions"></a>Permissões  
 
-Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions_reference.md).
+Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
   
 

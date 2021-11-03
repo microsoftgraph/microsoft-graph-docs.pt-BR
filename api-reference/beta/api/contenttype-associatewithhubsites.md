@@ -2,15 +2,15 @@
 author: swapnil1993
 title: 'contentType: associateWithHubSites'
 description: Associe um tipo de conteúdo à lista de hubsites.
-localization_priority: Normal
+ms.localizationpriority: medium
 doc_type: apiPageType
 ms.prod: sites-and-lists
-ms.openlocfilehash: 6380461e25b7573eee617e167736e51a7fd28bef
-ms.sourcegitcommit: 9b8abc940a68dac6ee5da105ca29800cb59775f6
+ms.openlocfilehash: 4248640f76252fbc9a7c8b446ff58c972fa4288f
+ms.sourcegitcommit: 64d27a0e3dcccc9d857e62aace4153e5d98fb3d0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/25/2021
-ms.locfileid: "58514536"
+ms.lasthandoff: 11/03/2021
+ms.locfileid: "60729420"
 ---
 # <a name="contenttype-associatewithhubsites"></a>contentType: associateWithHubSites
 
@@ -24,7 +24,7 @@ Namespace: microsoft.graph
 
 ## <a name="permissions"></a>Permissões  
 
-Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions_reference.md).
+Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
   
 

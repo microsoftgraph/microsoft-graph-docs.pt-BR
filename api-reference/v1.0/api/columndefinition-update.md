@@ -5,12 +5,12 @@ description: Atualize um site, uma lista ou uma coluna de tipo de conteúdo.
 ms.localizationpriority: medium
 doc_type: apiPageType
 ms.prod: sites-and-lists
-ms.openlocfilehash: 1c7d7fda5676f88aa0d1c546417f05fe5983c538
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: a0fbd27355e96c5e09651dbc16dde705f5f536e0
+ms.sourcegitcommit: 64d27a0e3dcccc9d857e62aace4153e5d98fb3d0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59080132"
+ms.lasthandoff: 11/03/2021
+ms.locfileid: "60729630"
 ---
 # <a name="update-columndefinition"></a>Atualizar columnDefinition
 Namespace: microsoft.graph
@@ -21,14 +21,14 @@ Atualize um [site,][] [uma lista][]ou um tipo [de conteúdo.][contentType] [colu
 
 ## <a name="permissions"></a>Permissões  
 
-Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions_reference.md).
+Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
   
 
 |Tipo de permissão | Permissões (da com menos para a com mais privilégios) |
 |:--------------------|:---------------------------------------------------------|
-|Delegada (conta corporativa ou de estudante) | Sites.Manage.All, Sites.FullControl.All  |
-|Delegada (conta pessoal da Microsoft) | Sem suporte. |
+|Delegado (conta corporativa ou de estudante) | Sites.Manage.All, Sites.FullControl.All  |
+|Delegado (conta pessoal da Microsoft) | Sem suporte. |
 |Aplicativo | Sites.Manage.All, Sites.FullControl.All |
 
   

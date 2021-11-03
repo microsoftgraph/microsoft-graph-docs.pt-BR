@@ -2,15 +2,15 @@
 author: swapnil1993
 title: Listar contentTypes em um site
 description: Listar tipos de conteúdo em um site
-localization_priority: Normal
+ms.localizationpriority: medium
 doc_type: apiPageType
 ms.prod: sites-and-lists
-ms.openlocfilehash: 0ff43805d40982f4b945c690d1324e7c0593b9ec
-ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
+ms.openlocfilehash: 8a1d63c25a4f935f91265408dd140b3c47060f36
+ms.sourcegitcommit: 64d27a0e3dcccc9d857e62aace4153e5d98fb3d0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "50965028"
+ms.lasthandoff: 11/03/2021
+ms.locfileid: "60730022"
 ---
 # <a name="list-contenttypes-in-a-site"></a>Listar contentTypes em um site
 Namespace: microsoft.graph
@@ -20,7 +20,7 @@ Obter a coleção de [recursos contentType][contentType] em um [site][].
 
 ## <a name="permissions"></a>Permissões
 
-Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions_reference.md).
+Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
 |:--------------------|:---------------------------------------------------------|

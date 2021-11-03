@@ -2,15 +2,15 @@
 author: swapnil1993
 title: 'contentType: unpublish'
 description: Não publice um tipo de conteúdo de um site de hub de tipo de conteúdo.
-localization_priority: Normal
+ms.localizationpriority: medium
 doc_type: apiPageType
 ms.prod: sites-and-lists
-ms.openlocfilehash: 8b7e8c63c6d92390731b670f8d95821fe5334b0d
-ms.sourcegitcommit: 40947e6f4337c8c4193d85bb862e15f67263e1e7
+ms.openlocfilehash: 418baec90ea4fde2c0dc08c8e52bc264fb9485ce
+ms.sourcegitcommit: 64d27a0e3dcccc9d857e62aace4153e5d98fb3d0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/13/2021
-ms.locfileid: "50773379"
+ms.lasthandoff: 11/03/2021
+ms.locfileid: "60730302"
 ---
 # <a name="contenttype-unpublish"></a>contentType: unpublish
 Namespace: microsoft.graph
@@ -18,13 +18,13 @@ Namespace: microsoft.graph
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 Não publice um [contentType de][] um site de hub de tipo de conteúdo.
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>Permissões
 
-Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions_reference.md).
+Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegada (conta corporativa ou de estudante) | Sites.FullControl.All    |
+|Delegado (conta corporativa ou de estudante) | Sites.FullControl.All    |
 |Delegado (conta pessoal da Microsoft) | Sites.FullControl.All    |
 |Aplicativo | Sites.FullControl.All |
 

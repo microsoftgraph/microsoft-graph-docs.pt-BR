@@ -1,16 +1,16 @@
 ---
 title: 'accessPackageAssignmentRequest: cancel'
 description: Cancele os objetos accessPackageAssignmentRequest que estão em estado cancelável.
-localization_priority: Normal
-author: sbounouh
+ms.localizationpriority: medium
+author: markwahl-msft
 ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: 281eebc1008f8c1c791ac6cc2694a458c86f526b
-ms.sourcegitcommit: 4fa6fcc058c7f8d8cad58c0b82db23d6c7da37d2
+ms.openlocfilehash: 8abc80afd455c3f5057ede358f24b4a266a1e89d
+ms.sourcegitcommit: 64d27a0e3dcccc9d857e62aace4153e5d98fb3d0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/27/2021
-ms.locfileid: "52679656"
+ms.lasthandoff: 11/03/2021
+ms.locfileid: "60729672"
 ---
 # <a name="accesspackageassignmentrequest-cancel"></a>accessPackageAssignmentRequest: cancel
 Namespace: microsoft.graph

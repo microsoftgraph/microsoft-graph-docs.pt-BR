@@ -1,16 +1,16 @@
 ---
 title: 'accessPackageAssignment: filterByCurrentUser'
 description: Recupere uma lista de objetos accesspackageassignment filtrados no usuário de entrada.
-localization_priority: Normal
-author: sbounouh
+ms.localizationpriority: medium
+author: markwahl-msft
 ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: b9ea85fb61525c2d9a3d109b358e8295631ac627
-ms.sourcegitcommit: b8b0e88b3ba9a434dc45f5ab640cb46f66fae299
+ms.openlocfilehash: ba2bdd6d772d6d0204b32d27a8c3bdde8691a99d
+ms.sourcegitcommit: 64d27a0e3dcccc9d857e62aace4153e5d98fb3d0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/13/2021
-ms.locfileid: "52473995"
+ms.lasthandoff: 11/03/2021
+ms.locfileid: "60729700"
 ---
 # <a name="accesspackageassignment-filterbycurrentuser"></a>accessPackageAssignment: filterByCurrentUser
 Namespace: microsoft.graph
@@ -24,8 +24,8 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 |Tipo de permissão|Permissões (da com menos para a com mais privilégios)|
 |:---|:---|
-|Delegada (conta corporativa ou de estudante)|EntitlementManagement.Read.All, EntitlementManagement.ReadWrite.All|
-|Delegada (conta pessoal da Microsoft)|Sem suporte.|
+|Delegado (conta corporativa ou de estudante)|EntitlementManagement.Read.All, EntitlementManagement.ReadWrite.All|
+|Delegado (conta pessoal da Microsoft)|Sem suporte.|
 |Aplicativo|Sem suporte.|
 
 ## <a name="http-request"></a>Solicitação HTTP
@@ -61,7 +61,7 @@ Não forneça um corpo de solicitação para esse método.
 
 Se tiver êxito, este método retornará um código de resposta e uma `200 OK` [coleção accessPackageAssignment](../resources/accesspackageassignment.md) no corpo da resposta.
 
-Quando um conjunto de resultados abrange várias páginas, o Microsoft Graph retorna essa página com uma propriedade na resposta que contém uma URL para `@odata.nextLink` a próxima página de resultados. Se essa propriedade estiver presente, continue fazendo solicitações adicionais com a URL em `@odata.nextLink` cada resposta, até que todos os resultados sejam retornados. Para obter mais informações, [consulte paging Microsoft Graph data in your app](/graph/paging.md).
+Quando um conjunto de resultados abrange várias páginas, o Microsoft Graph retorna essa página com uma propriedade na resposta que contém uma URL para `@odata.nextLink` a próxima página de resultados. Se essa propriedade estiver presente, continue fazendo solicitações adicionais com a URL em `@odata.nextLink` cada resposta, até que todos os resultados sejam retornados. Para obter mais informações, [consulte paging Microsoft Graph data in your app](/graph/paging).
 
 ## <a name="examples"></a>Exemplos
 

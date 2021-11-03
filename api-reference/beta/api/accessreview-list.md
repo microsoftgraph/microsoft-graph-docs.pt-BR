@@ -1,16 +1,16 @@
 ---
 title: Listar accessReviews
 description: Recupere objetos accessReview para um businessFlowTemplate.
-localization_priority: Normal
+ms.localizationpriority: medium
 author: markwahl-msft
 ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: 443ffc2c5a31ac33cba89cb689884a3bae4ab645
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: 420cf16b0f6c2e3703761ad60375bf98835a96d0
+ms.sourcegitcommit: 64d27a0e3dcccc9d857e62aace4153e5d98fb3d0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52048488"
+ms.lasthandoff: 11/03/2021
+ms.locfileid: "60729595"
 ---
 # <a name="list-accessreviews"></a>Listar accessReviews
 
@@ -21,9 +21,9 @@ Namespace: microsoft.graph
 Recupere os [objetos accessReview](../resources/accessreview.md) para um [determinado businessFlowTemplate](../resources/businessflowtemplate.md). Uma lista de zero ou mais objetos **accessReview** são retornados, para cada revisão de acesso única e recorrente que foi criada com esse modelo de fluxo de negócios.  Observe que as IDs do modelo de fluxo de negócios são sensíveis a minúsculas.
 
 >[!NOTE]
-> Se qualquer uma das avaliações de acesso que correspondem ao filtro for uma revisão de acesso recorrente, um objeto **accessReview** será retornado para representar cada série recorrente como um todo, além de qualquer instância atual, passada e próxima. Por exemplo, se houver uma revisão de acesso recorrente mensal de membros convidados do grupo A, uma revisão de acesso recorrente trimestral de membros convidados do grupo B e uma revisão de acesso único de membros convidados do grupo C, cada uma dessas recorrências acabou de ser iniciada e o chamador consulta para análises de acesso com um modelo de fluxo de negócios de avaliações de membros convidados de grupos , três objetos serão retornados representando as três séries, bem como três objetos para as instâncias de revisão de acesso atuais e, potencialmente, três objetos para as próximas instâncias. Para recuperar as instâncias de uma revisão de acesso recorrente ou a instância de revisão de  acesso agendada para um determinado mês ou trimestre, o chamador pode navegar subsequentemente pela relação de instância do objeto **accessReview** recorrente. A **relação** de instância se vincula aos **objetos accessReview** para uma instância atual ou anterior da revisão de acesso recorrente.
+> Se qualquer uma das avaliações de acesso que correspondem ao filtro for uma revisão de acesso recorrente, um objeto **accessReview** será retornado para representar cada série recorrente como um todo, além de qualquer instância atual, passada e próxima. Por exemplo, se houver uma revisão de acesso recorrente mensal de membros convidados do grupo A, uma revisão de acesso recorrente trimestral de membros convidados do grupo B e uma revisão de acesso único de membros convidados do grupo C, cada uma dessas recorrências acabou de ser iniciada e o chamador consulta para análises de acesso com um modelo de fluxo de negócios de avaliações de membros convidados de grupos,  três objetos serão retornados representando as três séries, bem como três objetos para as instâncias de revisão de acesso atuais e, potencialmente, três objetos para as próximas instâncias. Para recuperar as instâncias de uma revisão de acesso recorrente ou a instância de revisão de  acesso agendada para um determinado mês ou trimestre, o chamador pode navegar subsequentemente pela relação de instância do objeto **accessReview** recorrente. A **relação** de instância se vincula aos **objetos accessReview** para uma instância atual ou anterior da revisão de acesso recorrente.
 
-Se muitas análises de acesso corresponderem ao filtro, para melhorar a eficiência e evitar tempos-de-tempo, recupere o resultado definido em páginas, incluindo o parâmetro de consulta com um tamanho de página, por exemplo, 100 e o parâmetro de consulta na `$top` `$skip=0` solicitação. Esses parâmetros podem ser incluídos mesmo quando você não previu que a solicitação abrange várias páginas. Quando um conjunto de resultados abrange várias páginas, o Microsoft Graph retorna essa página com uma propriedade na resposta que contém uma URL para `@odata.nextLink` a próxima página de resultados. Se essa propriedade estiver presente, continue fazendo solicitações adicionais com o `@odata.nextLink` URL em cada resposta, até que todos os resultados sejam retornados, conforme descrito em [paginação de dados do Microsoft Graph no aplicativo](/graph/paging.md).
+Se muitas análises de acesso corresponderem ao filtro, para melhorar a eficiência e evitar tempos-de-tempo, recupere o resultado definido em páginas, incluindo o parâmetro de consulta com um tamanho de página, por exemplo, 100 e o parâmetro de consulta na `$top` `$skip=0` solicitação. Esses parâmetros podem ser incluídos mesmo quando você não previu que a solicitação abrange várias páginas. Quando um conjunto de resultados abrange várias páginas, o Microsoft Graph retorna essa página com uma propriedade na resposta que contém uma URL para `@odata.nextLink` a próxima página de resultados. Se essa propriedade estiver presente, continue fazendo solicitações adicionais com o `@odata.nextLink` URL em cada resposta, até que todos os resultados sejam retornados, conforme descrito em [paginação de dados do Microsoft Graph no aplicativo](/graph/paging).
 
 Os **objetos accessReview** retornados por essa API não incluirão propriedades de estrutura aninhadas, como **configurações** ou relações.  Para recuperar as configurações ou as relações de revisão de acesso, use a API [get accessReview.](accessreview-get.md)
 
@@ -35,7 +35,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |:--------------------------------------|:---------------------------------------------------------|
 |Delegado (conta corporativa ou de estudante)     | AccessReview.Read.All, AccessReview.ReadWrite.Membership, AccessReview.ReadWrite.All  |
 |Delegado (conta pessoal da Microsoft) | Sem suporte. |
-|Application                            | AccessReview.Read.All, AccessReview.ReadWrite.Membership |
+|Aplicativo                            | AccessReview.Read.All, AccessReview.ReadWrite.Membership |
 
  O usuário inscreveu também deve estar em uma função de diretório que permita que ele leia uma revisão de acesso.
 

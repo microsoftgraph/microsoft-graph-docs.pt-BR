@@ -1,16 +1,16 @@
 ---
 title: Atualizar approvalStep
 description: Aplicar aprovar ou negar decisão em um objeto approvalStep.
-localization_priority: Normal
-author: sbounouh
+ms.localizationpriority: medium
+author: markwahl-msft
 ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: 0fe071b58709a7816a4ffd9c82627542c1905243
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: 167cc4a36ee3d50d76b73ed311aa2012e1d89b4f
+ms.sourcegitcommit: 64d27a0e3dcccc9d857e62aace4153e5d98fb3d0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52048040"
+ms.lasthandoff: 11/03/2021
+ms.locfileid: "60730029"
 ---
 # <a name="update-approvalstep"></a>Atualizar approvalStep
 
@@ -50,8 +50,8 @@ A tabela a seguir mostra as propriedades necessárias para este método.
 
 | Propriedade       | Tipo    |Descrição|
 |:---------------|:--------|:----------|
-| reviewResult | String | Decisão do aprovador. Os valores possíveis são: `Approve` e `Deny`.|
-| justification | String | Justificativa relacionada à decisão do aprovador. |
+| reviewResult | Cadeia de caracteres | Decisão do aprovador. Os valores possíveis são: `Approve` e `Deny`.|
+| justification | Cadeia de caracteres | Justificativa relacionada à decisão do aprovador. |
 
 
 ## <a name="response"></a>Resposta

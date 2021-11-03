@@ -5,12 +5,12 @@ ms.localizationpriority: high
 doc_type: apiPageType
 author: RamjotSingh
 ms.prod: microsoft-teams
-ms.openlocfilehash: 16c37a2ae403ef71c1c1e64d5c0960e00d671bf2
-ms.sourcegitcommit: f4999aa6fc05f845027db01aa489f7086f9850e1
+ms.openlocfilehash: aba83746710694a987d4457b7c7f300923240d24
+ms.sourcegitcommit: 64d27a0e3dcccc9d857e62aace4153e5d98fb3d0
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/13/2021
-ms.locfileid: "60288592"
+ms.lasthandoff: 11/03/2021
+ms.locfileid: "60729525"
 ---
 # <a name="chatmessage-delta"></a>chatMessage: delta
 
@@ -37,7 +37,7 @@ Para obter mais informações, consulte a documentação da [consulta Delta](/gr
 
 ## <a name="permissions"></a>Permissões
 
-Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference.md).
+Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão                        |Permissões (da com menos para a com mais privilégios)  |
 |---------------------------------------|---------------------------------------------|

@@ -5,12 +5,12 @@ description: Exclua um tipo de conteúdo de uma SharePoint ou de um site.
 ms.localizationpriority: medium
 doc_type: apiPageType
 ms.prod: sites-and-lists
-ms.openlocfilehash: c2870faccf3f7d7708000f5f6d2d4b03c61d5914
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: a28d735525afd8a83f1f3264b85e62126e6b044b
+ms.sourcegitcommit: 64d27a0e3dcccc9d857e62aace4153e5d98fb3d0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59147553"
+ms.lasthandoff: 11/03/2021
+ms.locfileid: "60730435"
 ---
 # <a name="delete-contenttype"></a>Excluir contentType
 Namespace: microsoft.graph
@@ -21,7 +21,7 @@ Remover um [tipo de conteúdo][contentType] de uma [lista][] ou de um [site][].
 
 
 ## <a name="permissions"></a>Permissões
-Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions_reference.md).
+Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
 |:--------------------|:---------------------------------------------------------|

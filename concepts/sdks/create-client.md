@@ -3,18 +3,18 @@ title: Criar um cliente microsoft Graph
 description: Descreve como criar um cliente a ser usado para fazer chamadas para o Microsoft Graph. Inclui como configurar a autenticação e selecionar uma nuvem soberana.
 ms.localizationpriority: medium
 author: MichaelMainer
-ms.openlocfilehash: b528e195d48380be8371e5f91a9475644cdd56d3
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 329e9365d3d33152f274cf4fceda05d8b192f65a
+ms.sourcegitcommit: 64d27a0e3dcccc9d857e62aace4153e5d98fb3d0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59089274"
+ms.lasthandoff: 11/03/2021
+ms.locfileid: "60729301"
 ---
 # <a name="create-a-microsoft-graph-client"></a>Criar um cliente microsoft Graph
 
 O cliente Graph Microsoft foi projetado para facilitar as chamadas para o Microsoft Graph. Você pode usar uma única instância do cliente durante o tempo de vida do aplicativo. Para obter informações sobre como adicionar e instalar o pacote de cliente microsoft Graph em seu projeto, consulte [Install the SDK](sdk-installation.md).
 
-Os exemplos de código a seguir mostram como criar uma instância de um cliente microsoft Graph com um provedor de autenticação nos idiomas suportados. O provedor de autenticação tratará da aquisição de tokens de acesso para o aplicativo. Muitos provedores de autenticação diferentes estão disponíveis para cada idioma e plataforma. Os diferentes provedores de aplicativos suportam diferentes cenários de cliente. Para obter detalhes sobre quais provedores e opções são apropriados para seu cenário, consulte [Choose an Authentication Provider](choose-authentication-providers.md).
+Os exemplos de código a seguir mostram como criar uma instância de um cliente microsoft Graph com um provedor de autenticação nos idiomas suportados. O provedor de autenticação tratará da aquisição de tokens de acesso para o aplicativo. Muitos provedores de autenticação diferentes estão disponíveis para cada idioma e plataforma. Os diferentes provedores de autenticação suportam diferentes cenários de cliente. Para obter detalhes sobre quais provedores e opções são apropriados para seu cenário, consulte [Choose an Authentication Provider](choose-authentication-providers.md).
 
 # <a name="c"></a>[C#](#tab/CS)
 

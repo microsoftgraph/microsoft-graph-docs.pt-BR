@@ -2,15 +2,15 @@
 title: Atualizar accessPackageCatalog
 description: Atualize as propriedades de um objeto accessPackageCatalog.
 author: markwahl-msft
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: de8173002582bc55aa3e59b7fbaa966240e0076e
-ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
+ms.openlocfilehash: 8a7abc1ddaf03652aecf3c9dc7eb9e30af0f2b6e
+ms.sourcegitcommit: 64d27a0e3dcccc9d857e62aace4153e5d98fb3d0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50439482"
+ms.lasthandoff: 11/03/2021
+ms.locfileid: "60729644"
 ---
 # <a name="update-accesspackagecatalog"></a>Atualizar accessPackageCatalog
 
@@ -21,7 +21,7 @@ Namespace: microsoft.graph
 Atualize um objeto [accessPackageCatalog](../resources/accesspackagecatalog.md) existente para alterar uma ou mais de suas propriedades, como o nome de exibição ou a descrição.
 
 ## <a name="permissions"></a>Permissões
-Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference.md).
+Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão|Permissões (da com menos para a com mais privilégios)|
 |:---|:---|
@@ -50,8 +50,8 @@ A tabela a seguir mostra as propriedades que são necessárias ao atualizar [o a
 
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|displayName|String|O nome do catálogo de pacotes de acesso.|
-|descrição|String|A descrição do catálogo de pacotes de acesso.|
+|displayName|Cadeia de caracteres|O nome do catálogo de pacotes de acesso.|
+|description|Cadeia de caracteres|A descrição do catálogo de pacotes de acesso.|
 
 ## <a name="response"></a>Resposta
 Se tiver êxito, este método retornará um código de resposta `204 No Content`.

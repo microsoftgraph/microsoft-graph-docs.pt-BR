@@ -1,17 +1,17 @@
 ---
 description: Arquivo gerado automaticamente. NÃO MODIFICAR
-ms.openlocfilehash: a6a221c90b78cb00a2ded9c63c630597392601ba
-ms.sourcegitcommit: 486fe9c77d4d89c5416bb83e8c716e6918c47370
+ms.openlocfilehash: e96555ead3e331fb109fece402019e58c0044933
+ms.sourcegitcommit: 64d27a0e3dcccc9d857e62aace4153e5d98fb3d0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/15/2021
-ms.locfileid: "53441391"
+ms.lasthandoff: 11/03/2021
+ms.locfileid: "60730491"
 ---
 ```csharp
 
 GraphServiceClient graphClient = new GraphServiceClient( authProvider );
 
-var riskyUser = await graphClient.TenantRelationships.ManagedTenants.RiskyUsers["{managedTenants.riskyUser-id}"]
+var response = await graphClient.TenantRelationships.ManagedTenants.RiskyUsers["{UNKNOWN-id}"]
     .Request()
     .GetAsync();
 

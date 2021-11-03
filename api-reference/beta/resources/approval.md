@@ -1,16 +1,16 @@
 ---
 title: tipo de recurso de aprovação
 description: O objeto de aprovação associado a um accessPackageAssignmentRequest ou userConsentRequest.
-localization_priority: Normal
-author: sbounouh
+ms.localizationpriority: medium
+author: markwahl-msft
 ms.prod: governance
 doc_type: resourcePageType
-ms.openlocfilehash: 07990837a8774f512371fc5b09c400826321abd9
-ms.sourcegitcommit: 01755ac7c0ab7becf28052e05e58567caa8364cd
+ms.openlocfilehash: e9c459563fa776427dfebcc6c6063b9bda1da846
+ms.sourcegitcommit: 64d27a0e3dcccc9d857e62aace4153e5d98fb3d0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/21/2021
-ms.locfileid: "58454070"
+ms.lasthandoff: 11/03/2021
+ms.locfileid: "60730386"
 ---
 # <a name="approval-resource-type"></a>tipo de recurso de aprovação
 
@@ -34,10 +34,10 @@ Em [Gerenciamento de função](../resources/rolemanagement.md), as decisões de 
 ## <a name="properties"></a>Propriedades
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|id|Cadeia de caracteres|O identificador do objeto de aprovação.  No gerenciamento de direitos, ele é o mesmo identificador do identificador da solicitação de atribuição [do pacote de acesso.](accesspackageassignmentrequest.md)|
+|id|String|O identificador do objeto de aprovação.  No gerenciamento de direitos, ele é o mesmo identificador do identificador da solicitação de atribuição [do pacote de acesso.](accesspackageassignmentrequest.md)|
 |etapas|[Coleção approvalStep](../resources/approvalstep.md)|Usado para representar a decisão associada a uma única etapa no processo de aprovação configurado em [approvalStage](../resources/approvalstage.md).|
 
-## <a name="relationships"></a>Relacionamentos
+## <a name="relationships"></a>Relações
 |Relação|Tipo|Descrição|
 |:---|:---|:---|
 |Estágios|[coleção approvalStage](../resources/approvalstage.md)|Usada para a **propriedade approvalStages** das configurações de aprovação **na propriedade requestApprovalSettings** de uma política de atribuição [de pacote de acesso.](accesspackageassignmentpolicy.md) Especifica os aprovadores primários, de fallback e de escalonamento de cada estágio.|

@@ -2,15 +2,15 @@
 author: swapnil1993
 title: Listar colunas em um site
 description: Listar colunas em um site.
-localization_priority: Normal
+ms.localizationpriority: medium
 doc_type: apiPageType
 ms.prod: sites-and-lists
-ms.openlocfilehash: dd7abfad63b268efb9748335ff0ef34d3b485312
-ms.sourcegitcommit: fdd69d362d1debc7b08e78269d59b531f9dfdaae
+ms.openlocfilehash: ac2229852f328e05a5be4ddb7c0a03cfb2eb0685
+ms.sourcegitcommit: 64d27a0e3dcccc9d857e62aace4153e5d98fb3d0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "51697211"
+ms.lasthandoff: 11/03/2021
+ms.locfileid: "60730449"
 ---
 # <a name="list-columns-in-a-site"></a>Listar colunas em um site
 Namespace: microsoft.graph
@@ -24,7 +24,7 @@ Obter o conjunto de colunas, representado como [columnDefinition][columnDefiniti
 
   
 
-Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions_reference.md).
+Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
   
 

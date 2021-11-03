@@ -5,12 +5,12 @@ ms.localizationpriority: high
 doc_type: apiPageType
 author: RamjotSingh
 ms.prod: microsoft-teams
-ms.openlocfilehash: 7e0789806ecca5e3677d54da875a46bf8e8ba94f
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 932e7d703809b5a47a8f0ad5031fab744f384dac
+ms.sourcegitcommit: 64d27a0e3dcccc9d857e62aace4153e5d98fb3d0
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59022888"
+ms.lasthandoff: 11/03/2021
+ms.locfileid: "60730162"
 ---
 # <a name="chatmessage-delta"></a>chatMessage: delta
 
@@ -29,13 +29,13 @@ Uma solicitação GET com a função delta traz como resultado uma destas opçõ
 - Uma `nextLink` (que contém uma URL com uma chamada de função **delta** e uma `skipToken`) ou
 - Uma `deltaLink` (que contém uma URL com uma chamada de função **delta** e `deltaToken`).
 
-Os tokens de estado são completamente opacos para o cliente. Para prosseguir com uma fase de controle de alterações, basta copiar e aplicar a URL `nextLink` ou `deltaLink` retornada da última solicitação GET para a próxima chamada de função delta do mesmo modo de exibição de calendário. Um `deltaLink` retornado em uma resposta significa que a fase atual do rastreamento de alterações está concluída. Você pode salvar e usar a URL `deltaLink` quando começar a recuperar alterações adicionais (mensagens alteradas ou postadas após a aquisição de `deltaLink`).
+Os tokens de estado são totalmente opacos para o cliente. Para continuar com uma rodada de controle de alterações, copie e aplique a `nextLink` ou `deltaLink` URL retornada da última solicitação GET para a próxima chamada de função delta para essa mesma exibição de calendário. Um `deltaLink` retornado em uma resposta significa que a fase atual do controle de alterações está concluída. Você pode salvar e usar a `deltaLink` URL quando começar a recuperar as alterações adicionais (mensagens alteradas ou postadas depois da aquisição `deltaLink`).
 
 Para obter mais informações, consulte a documentação da [consulta Delta](/graph/delta-query-overview).
 
 ## <a name="permissions"></a>Permissões
 
-Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference.md).
+Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão                        |Permissões (da com menos para a com mais privilégios)  |
 |---------------------------------------|---------------------------------------------|
@@ -64,7 +64,7 @@ Em solicitações subsequentes, copie e aplique a URL `nextLink` ou `deltaLink` 
 
 | Parâmetro de consulta      | Tipo   |Descrição|
 |:---------------|:--------|:----------|
-| `$deltatoken` | string | Um [token de estado](/graph/delta-query-overview) retornado na URL `deltaLink` da chamada de função **delta** anterior, indicando a conclusão daquela série de controle de alterações. Salve e aplique toda a URL `deltaLink`, incluindo esse token na primeira solicitação da próxima série de controle de alterações desse conjunto.|
+| `$deltatoken` | string | Um [token de estado](/graph/delta-query-overview) retornado na `deltaLink` URL da chamada de função **delta** anterior, indicando a conclusão dessa rodada de controle de alterações. Salve e aplique a `deltaLink` URL, incluindo esse token na primeira solicitação da próxima rodada do acompanhamento de alterações dessa coleção.|
 | `$skiptoken` | string | Um [ token de estado](/graph/delta-query-overview) retornado na URL`nextLink` da chamada de função **delta** anterior indicando que há mais alterações a serem controladas. |
 
 ### <a name="optional-odata-query-parameters"></a>Parâmetros de consulta OData opcionais

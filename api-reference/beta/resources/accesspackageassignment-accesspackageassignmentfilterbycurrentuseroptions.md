@@ -1,16 +1,16 @@
 ---
 title: tipo de número accessPackageAssignmentFilterByCurrentUserOptions
 description: Opções para o usuário atual usar como filtro na lista de atribuições do pacote de acesso.
-localization_priority: Normal
-author: sbounouh
+ms.localizationpriority: medium
+author: markwahl-msft
 ms.prod: governance
 doc_type: enumPageType
-ms.openlocfilehash: 73fe1987221a060ca86d9a5c1530d3d8dfb8b88c
-ms.sourcegitcommit: c5cc948c764b4daab861aadb390b827f658a9b7f
+ms.openlocfilehash: 81f09f70cc4ee056025e01f4bb8808cbac788584
+ms.sourcegitcommit: 64d27a0e3dcccc9d857e62aace4153e5d98fb3d0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/10/2021
-ms.locfileid: "52299045"
+ms.lasthandoff: 11/03/2021
+ms.locfileid: "60729637"
 ---
 # <a name="accesspackageassignmentfilterbycurrentuseroptions-enum-type"></a>tipo de número accessPackageAssignmentFilterByCurrentUserOptions
 

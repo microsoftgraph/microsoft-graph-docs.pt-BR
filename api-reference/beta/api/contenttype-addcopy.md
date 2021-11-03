@@ -2,15 +2,15 @@
 author: swapnil1993
 title: 'contentType: addCopy'
 description: Adicione uma cópia de um tipo de conteúdo de site a uma lista.
-localization_priority: Normal
+ms.localizationpriority: medium
 doc_type: apiPageType
 ms.prod: sites-and-lists
-ms.openlocfilehash: bb096cc0ad43641709e26559ee86e7fe9ad9f9db
-ms.sourcegitcommit: 9b8abc940a68dac6ee5da105ca29800cb59775f6
+ms.openlocfilehash: 70199b30d2748f4a6372b83326f93d36bf966c63
+ms.sourcegitcommit: 64d27a0e3dcccc9d857e62aace4153e5d98fb3d0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/25/2021
-ms.locfileid: "58514606"
+ms.lasthandoff: 11/03/2021
+ms.locfileid: "60729455"
 ---
 # <a name="contenttype-addcopy"></a>contentType: addCopy
 Namespace: microsoft.graph
@@ -22,7 +22,7 @@ Adicione uma cópia de um [tipo de conteúdo][contentType] de um [site][site] a 
 
 ## <a name="permissions"></a>Permissões  
 
-Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions_reference.md).
+Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
   
 

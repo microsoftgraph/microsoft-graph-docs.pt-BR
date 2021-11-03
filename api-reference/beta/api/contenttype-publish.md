@@ -2,15 +2,15 @@
 author: swapnil1993
 title: 'contentType: publish'
 description: Publique um tipo de conteúdo presente no site do hub de tipo de conteúdo.
-localization_priority: Normal
+ms.localizationpriority: medium
 doc_type: apiPageType
 ms.prod: sites-and-lists
-ms.openlocfilehash: d69cbdabbb82612945dc6df85617e50bc2ca5b2c
-ms.sourcegitcommit: 1940be9846055aa650c6c03982b74a961f1e316a
+ms.openlocfilehash: b83f37bf080f9ca7f2fdcd6156b5bc35f4289c3d
+ms.sourcegitcommit: 64d27a0e3dcccc9d857e62aace4153e5d98fb3d0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/17/2021
-ms.locfileid: "53467082"
+ms.lasthandoff: 11/03/2021
+ms.locfileid: "60729343"
 ---
 # <a name="contenttype-publish"></a>contentType: publish
 Namespace: microsoft.graph
@@ -20,7 +20,7 @@ Publica um [contentType][] presente em um site de hub de tipo de conteúdo.
 
 ## <a name="permissions"></a>Permissões
 
-Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions_reference.md).
+Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
 |:--------------------|:---------------------------------------------------------|

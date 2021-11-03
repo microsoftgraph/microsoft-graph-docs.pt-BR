@@ -5,12 +5,12 @@ description: Publique um tipo de conteúdo presente no site do hub de tipo de co
 ms.localizationpriority: medium
 doc_type: apiPageType
 ms.prod: sites-and-lists
-ms.openlocfilehash: e96c9c26e66514633b69693d9e06d9e0a8d4c063
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 6f7d477fd9a18ec0a9425b91de07b4acb65c44db
+ms.sourcegitcommit: 64d27a0e3dcccc9d857e62aace4153e5d98fb3d0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59038262"
+ms.lasthandoff: 11/03/2021
+ms.locfileid: "60730148"
 ---
 # <a name="contenttype-publish"></a>contentType: publish
 Namespace: microsoft.graph
@@ -20,12 +20,12 @@ Publica um [contentType][] presente no site do hub de tipo de conteúdo.
 
 ## <a name="permissions"></a>Permissões
 
-Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions_reference.md).
+Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegada (conta corporativa ou de estudante) | Sites.FullControl.All    |
-|Delegada (conta pessoal da Microsoft) | Sites.FullControl.All    |
+|Delegado (conta corporativa ou de estudante) | Sites.FullControl.All    |
+|Delegado (conta pessoal da Microsoft) | Sites.FullControl.All    |
 |Aplicativo | Sites.FullControl.All |
 
 ## <a name="http-request"></a>Solicitação HTTP
