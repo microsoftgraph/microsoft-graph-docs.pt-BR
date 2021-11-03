@@ -2,15 +2,15 @@
 title: Criar deviceConfigurationAssignment
 description: Criar um novo objeto deviceConfigurationAssignment.
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: c66689ca85f480bc7c3f24f7a573d9ba5e5a3c24
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 86b8024426112a161d70c0ac459651efe670bde4
+ms.sourcegitcommit: c7ff992ef63e480d070421ba99b28ee129cb6acb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59122534"
+ms.lasthandoff: 11/03/2021
+ms.locfileid: "60694334"
 ---
 # <a name="create-deviceconfigurationassignment"></a>Criar deviceConfigurationAssignment
 
@@ -62,10 +62,11 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar deviceCo
 
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|id|Cadeia de caracteres|A chave da atribuição.|
+|id|String|A chave da atribuição.|
 |destino|[deviceAndAppManagementAssignmentTarget](../resources/intune-shared-deviceandappmanagementassignmenttarget.md)|O destino da atribuição da configuração do dispositivo.|
 |source|[deviceAndAppManagementAssignmentSource](../resources/intune-shared-deviceandappmanagementassignmentsource.md)|A origem da atribuição para a configuração do dispositivo, direct ou parcel/policySet. Essa propriedade é somente leitura. Os valores possíveis são: `direct` e `policySets`.|
-|sourceId|Cadeia de Caracteres|O identificador da origem da atribuição. Essa propriedade é somente leitura.|
+|sourceId|String|O identificador da origem da atribuição. Essa propriedade é somente leitura.|
+|finalidade|[deviceConfigAssignmentIntent](../resources/intune-deviceconfig-deviceconfigassignmentintent.md)|A intenção do administrador de aplicar ou remover o perfil. Essa propriedade é somente leitura. Os valores possíveis são: `apply` e `remove`.|
 
 
 
@@ -79,7 +80,7 @@ Este é um exemplo da solicitação.
 ``` http
 POST https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations/{deviceConfigurationId}/assignments
 Content-type: application/json
-Content-length: 449
+Content-length: 472
 
 {
   "@odata.type": "#microsoft.graph.deviceConfigurationAssignment",
@@ -90,7 +91,8 @@ Content-length: 449
     "collectionId": "Collection Id value"
   },
   "source": "policySets",
-  "sourceId": "Source Id value"
+  "sourceId": "Source Id value",
+  "intent": "remove"
 }
 ```
 
@@ -99,7 +101,7 @@ Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado a
 ``` http
 HTTP/1.1 201 Created
 Content-Type: application/json
-Content-Length: 498
+Content-Length: 521
 
 {
   "@odata.type": "#microsoft.graph.deviceConfigurationAssignment",
@@ -111,7 +113,8 @@ Content-Length: 498
     "collectionId": "Collection Id value"
   },
   "source": "policySets",
-  "sourceId": "Source Id value"
+  "sourceId": "Source Id value",
+  "intent": "remove"
 }
 ```
 

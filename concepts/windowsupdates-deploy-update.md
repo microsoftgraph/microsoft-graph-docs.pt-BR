@@ -5,12 +5,12 @@ author: Alice-at-Microsoft
 ms.localizationpriority: medium
 ms.prod: w10
 doc_type: conceptualPageType
-ms.openlocfilehash: 9bc32b4f49a2cb985d1b19f49e72d2c373bb4e6e
-ms.sourcegitcommit: 11be55b40804b07f4c422f09f601afa97c7d31ed
+ms.openlocfilehash: 11dbc40cb405b7b673fa02ba4845ced6e57c9986
+ms.sourcegitcommit: c7ff992ef63e480d070421ba99b28ee129cb6acb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/09/2021
-ms.locfileid: "60255938"
+ms.lasthandoff: 11/03/2021
+ms.locfileid: "60696039"
 ---
 # <a name="deploy-a-feature-update-using-the-windows-update-for-business-deployment-service"></a>Implantar uma atualização de recurso usando o serviço de implantação Windows Atualização para Empresas
 
@@ -72,7 +72,7 @@ Content-Type: application/json
 
 Uma [implantação](/graph/api/resources/windowsupdates-deployment) especifica o conteúdo a ser implantado, como e quando implantar o conteúdo e os dispositivos direcionados. Quando uma implantação é criada, uma audiência de implantação é criada automaticamente como uma relação.
 
-A seguir está um exemplo de criação de uma implantação de uma atualização de recursos, com configurações opcionais configurando o [cronograma](windowsupdates-schedule-deployment.md) de implantação e as regras [de monitoramento.](windowsupdates-manage-monitoring-rules.md) Os dispositivos direcionados são especificados na próxima etapa.
+A seguir está um exemplo de criação de uma implantação de uma atualização de recursos, com configurações opcionais configurando o [cronograma](windowsupdates-schedule-deployment.md) de implantação e as regras [de monitoramento.](windowsupdates-manage-monitoring-rules.md) [As proteções](windowsupdates-manage-safeguards.md) são aplicadas por padrão. Os dispositivos direcionados são especificados na próxima etapa.
 
 ### <a name="request"></a>Solicitação
 
@@ -95,7 +95,6 @@ Content-type: application/json
         "monitoring": {
             "monitoringRules": [
                 {
-                    "@odata.type": "#microsoft.graph.windowsUpdates.monitoringRule",
                     "signal": "rollback",
                     "threshold": 5,
                     "action": "pauseDeployment"
@@ -149,6 +148,7 @@ Content-Type: application/json
                 }
             ]
         },
+        "safeguard": null,
         "userExperience": null
     },
     "createdDateTime": "String (timestamp)",

@@ -4,12 +4,12 @@ description: Lista a API Graph microsoft para pontos de extremidade do Intune (R
 ms.localizationpriority: medium
 author: dougeby
 ms.prod: intune
-ms.openlocfilehash: 86a4466538c88ca758cb91ff541e880b8722cd69
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 03a663f540ab51ea6f76274968b0ec52593dc597
+ms.sourcegitcommit: c7ff992ef63e480d070421ba99b28ee129cb6acb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59074805"
+ms.lasthandoff: 11/03/2021
+ms.locfileid: "60687547"
 ---
 # <a name="shared-resources-in-microsoft-intune"></a>Recursos compartilhados em Microsoft Intune
 
@@ -29,6 +29,7 @@ Os seguintes Graph são compartilhados entre fluxos de trabalho do Intune:
 - [Android enterprise sempre no tipo de pacote VPN](intune-shared-androidenterprisealwaysonvpnpackagetype.md)
 - [Proteção de aplicativo gerenciado Android](intune-shared-androidmanagedappprotection.md)
 - [Configurações de atribuição de aplicativo de loja gerenciada do Android](intune-shared-androidmanagedstoreappassignmentsettings.md)
+- [Modo de atualização automática do armazenamento gerenciado do Android](intune-shared-androidmanagedstoreautoupdatemode.md)
 - [Armazenamento de destino de certificados](intune-shared-certificatedestinationstore.md)
 - [Repositório de certificados](intune-shared-certificatestore.md)
 - [Escala de período de validade do certificado](intune-shared-certificatevalidityperiodscale.md)
@@ -79,7 +80,7 @@ Os seguintes Graph são compartilhados entre fluxos de trabalho do Intune:
 - [Evento de solução de problemas de aplicativo móvel](intune-shared-mobileapptroubleshootingevent.md)
 - [Tipo de proprietário](intune-shared-ownertype.md)
 - [Domínio com proxy](intune-shared-proxieddomain.md)
-- [Relatório](intune-shared-report.md)
+- [Report](intune-shared-report.md)
 - [Raiz de relatório](intune-shared-reportroot.md)
 - [Cores RGB](intune-shared-rgbcolor.md)
 - [Executar como tipo de conta](intune-shared-runasaccounttype.md)

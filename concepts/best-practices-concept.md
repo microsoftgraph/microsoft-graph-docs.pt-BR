@@ -3,12 +3,12 @@ title: Práticas recomendadas para trabalhar com o Microsoft Graph
 description: Este artigo descreve as práticas recomendadas que você pode aplicar para ajudar seus aplicativos a tirar o máximo proveito do Microsoft Graph, caso isso envolva saber mais sobre o Microsoft Graph, melhorar o desempenho do aplicativo ou tornar seu aplicativo mais confiável para os usuários finais.
 ms.localizationpriority: high
 ms.custom: graphiamtop20
-ms.openlocfilehash: 1801586e1ce8e1f0b9798df4275d41ee95a09b9b
-ms.sourcegitcommit: 0ec845f93eaa140ad833ba163c76c5308197a92f
+ms.openlocfilehash: 1395bca7e84156e1e7eea640387c2167c147fbc3
+ms.sourcegitcommit: c7ff992ef63e480d070421ba99b28ee129cb6acb
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/01/2021
-ms.locfileid: "60059931"
+ms.lasthandoff: 11/03/2021
+ms.locfileid: "60688104"
 ---
 # <a name="best-practices-for-working-with-microsoft-graph"></a>Práticas recomendadas para trabalhar com o Microsoft Graph
 
@@ -43,7 +43,7 @@ Aplique as seguintes práticas recomendadas de consentimento e autorização ao 
 
   - A declaração de privacidade, os termos de uso, o nome, o logotipo e o domínio do seu aplicativo serão exibidos com consentimento e outras experiências. Portanto, verifique se foram configurados com cuidado para que sejam compreendidos pelos usuários finais.
   - Leve em consideração quem consentirá com seu aplicativo, seja o usuário final ou administrador, e configure seu aplicativo para [solicitar permissões de forma adequada](/azure/active-directory/develop/active-directory-v2-scopes).
-  - Verifique se você entende a diferença entre [consentimento estático, dinâmico e incremental](/azure/active-directory/develop/active-directory-v2-compare#incremental-and-dynamic-consent).
+  - Verifique se você entende a diferença entre [consentimento estático, dinâmico e incremental](/azure/active-directory/develop/v2-permissions-and-consent#consent-types).
 
 - **Considere aplicativos multilocatário**. Tenha em mente que os clientes podem ter vários controles de aplicativo e consentimentos em diferentes estados. Por exemplo:
 

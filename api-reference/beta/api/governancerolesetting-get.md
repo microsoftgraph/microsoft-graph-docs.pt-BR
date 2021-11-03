@@ -1,16 +1,16 @@
 ---
 title: Obter governanceRoleSetting
 description: Recupere as propriedades e as relações de um governanceRoleSetting.
-localization_priority: Normal
+ms.localizationpriority: medium
 doc_type: apiPageType
 ms.prod: governance
-author: shauliu1
-ms.openlocfilehash: a5a6cee5dd6db1064571562a6b638eada1494b94
-ms.sourcegitcommit: 01755ac7c0ab7becf28052e05e58567caa8364cd
+author: carolinetempleton
+ms.openlocfilehash: 71a80cda86c3a940c7c7cea834c0f39923f7e041
+ms.sourcegitcommit: c7ff992ef63e480d070421ba99b28ee129cb6acb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/21/2021
-ms.locfileid: "58453748"
+ms.lasthandoff: 11/03/2021
+ms.locfileid: "60696732"
 ---
 # <a name="get-governancerolesetting"></a>Obter governanceRoleSetting
 
@@ -18,6 +18,8 @@ Namespace: microsoft.graph
 
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
+[!INCLUDE [pim-v1resourceroles-deprecation](../../includes/pim-v1resourceroles-deprecation.md)]
 
 Recupere as propriedades e as relações de um [governanceRoleSetting](../resources/governancerolesetting.md).
 
@@ -32,7 +34,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 | Delegado (conta pessoal da Microsoft) | Sem suporte. |
 | Aplicativo | PrivilegedAccess.Read.AzureResources |
 
-### <a name="azure-ad"></a>Microsoft Azure Active Directory
+### <a name="azure-ad"></a>Microsoft Azure AD
 
 | Tipo de permissão | Permissões |
 |:--------------- |:----------- |

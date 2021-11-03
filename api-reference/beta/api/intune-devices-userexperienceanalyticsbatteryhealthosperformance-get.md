@@ -9,8 +9,8 @@ ms.openlocfilehash: f94b4298405e025ea8a33296113fb3b1dfc1dcaf
 ms.sourcegitcommit: c7ff992ef63e480d070421ba99b28ee129cb6acb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/02/2021
-ms.locfileid: "60676766"
+ms.lasthandoff: 11/03/2021
+ms.locfileid: "60696284"
 ---
 # <a name="get-userexperienceanalyticsbatteryhealthosperformance"></a>Obter userExperienceAnalyticsBatteryHealthOsPerformance
 

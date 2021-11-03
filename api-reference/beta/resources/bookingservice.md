@@ -9,8 +9,8 @@ ms.openlocfilehash: f75bca271ffd33b36b7e0a1f5ed726ae417d4a0c
 ms.sourcegitcommit: c7ff992ef63e480d070421ba99b28ee129cb6acb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/02/2021
-ms.locfileid: "60674253"
+ms.lasthandoff: 11/03/2021
+ms.locfileid: "60694908"
 ---
 # <a name="bookingservice-resource-type"></a>Tipo de recurso bookingService
 
@@ -20,7 +20,7 @@ Namespace: microsoft.graph
  
 Representa informações sobre um serviço específico fornecido por [um bookingBusiness](bookingbusiness.md), como o nome do serviço, o preço e a equipe que geralmente fornece esse serviço.
 
-## <a name="methods"></a>Methods
+## <a name="methods"></a>Métodos
 
 | Método           | Tipo de retorno    |Descrição|
 |:---------------|:--------|:----------|

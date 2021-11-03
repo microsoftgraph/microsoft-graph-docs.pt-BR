@@ -9,8 +9,8 @@ ms.openlocfilehash: 7aa2a1795df54fb8bd97440ba99f3c578eb741cf
 ms.sourcegitcommit: c7ff992ef63e480d070421ba99b28ee129cb6acb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "60689386"
+ms.lasthandoff: 11/02/2021
+ms.locfileid: "60668830"
 ---
 # <a name="devicemanagementconfigurationchoicesettingcollectiondefinition-resource-type"></a>Tipo de recurso deviceManagementConfigurationChoiceSettingCollectionDefinition
 

@@ -1,16 +1,16 @@
 ---
 title: Tipo de recurso governancePermission
 description: 'Representa a permissão de acesso que um governanceSubject tem para um governanceResource específico.  '
-localization_priority: Normal
+ms.localizationpriority: medium
 doc_type: resourcePageType
 ms.prod: governance
-author: shauliu1
-ms.openlocfilehash: c094050f32b020c204d645dfc0c398ad5bfa5d20
-ms.sourcegitcommit: 01755ac7c0ab7becf28052e05e58567caa8364cd
+author: carolinetempleton
+ms.openlocfilehash: 0cb80e78e3cbdb2c019347d28ff79be262ec7b99
+ms.sourcegitcommit: c7ff992ef63e480d070421ba99b28ee129cb6acb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/21/2021
-ms.locfileid: "58453727"
+ms.lasthandoff: 11/03/2021
+ms.locfileid: "60696214"
 ---
 # <a name="governancepermission-resource-type"></a>Tipo de recurso governancePermission
 
@@ -18,13 +18,15 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
+[!INCLUDE [pim-v1resourceroles-deprecation](../../includes/pim-v1resourceroles-deprecation.md)]
+
 Representa a permissão de acesso que [um governanceSubject](../resources/governancesubject.md) tem para uma [governança EspecíficaResource](../resources/governanceresource.md).
 
 
 ## <a name="properties"></a>Propriedades
 | Propriedade     | Tipo   |Descrição|
 |:---------------|:--------|:----------|
-|accessLevel|Cadeia de caracteres|O nível de acesso. Valores válidos: ``None`` ``UserRead`` , , e ``AdminRead`` ``AdminReadWrite`` .|
+|accessLevel|String|O nível de acesso. Valores válidos: ``None`` ``UserRead`` , , e ``AdminRead`` ``AdminReadWrite`` .|
 |isActive|Booliano|Indique se o solicitante tem qualquer atribuição de função ativa para o nível de acesso.|
 |isEligible|Booliano|Indique se o solicitante tem qualquer atribuição de função qualificada para o nível de acesso.|
 

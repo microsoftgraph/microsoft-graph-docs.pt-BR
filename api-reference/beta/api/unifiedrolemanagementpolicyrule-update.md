@@ -1,16 +1,16 @@
 ---
 title: Atualizar unifiedRoleManagementPolicyRule
 description: Atualize as propriedades de um objeto unifiedRoleManagementPolicyRule.
-author: shauliu1
+author: carolinetempleton
 ms.localizationpriority: medium
 ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: 977643811a56cc7da3326307034c428211ac1ab6
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 6ddb387bf3b65e98fb23c3b77f14365da6aeb848
+ms.sourcegitcommit: c7ff992ef63e480d070421ba99b28ee129cb6acb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59020508"
+ms.lasthandoff: 11/03/2021
+ms.locfileid: "60695892"
 ---
 # <a name="update-unifiedrolemanagementpolicyrule"></a>Atualizar unifiedRoleManagementPolicyRule
 Namespace: microsoft.graph
@@ -50,7 +50,7 @@ A tabela a seguir mostra as propriedades que são necessárias ao atualizar [uni
 
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|id|Cadeia de caracteres|Identificador exclusivo da regra.|
+|id|String|Identificador exclusivo da regra.|
 |destino|[unifiedRoleManagementPolicyRuleTarget](../resources/unifiedrolemanagementpolicyruletarget.md)|O destino da regra de política.|
 
 

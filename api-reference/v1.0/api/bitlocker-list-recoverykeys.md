@@ -1,0 +1,177 @@
+---
+title: Listar recoveryKeys
+description: Obter uma lista dos objetos bitlockerRecoveryKey e suas propriedades.
+author: hafowler
+ms.localizationpriority: medium
+ms.prod: directory-management
+doc_type: apiPageType
+ms.openlocfilehash: 2a530fafd42226e607aef7d9a325176fa85212e5
+ms.sourcegitcommit: c7ff992ef63e480d070421ba99b28ee129cb6acb
+ms.translationtype: MT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 11/03/2021
+ms.locfileid: "60688174"
+---
+# <a name="list-recoverykeys"></a>Listar recoveryKeys
+
+Namespace: microsoft.graph
+
+Obter uma lista dos [objetos bitlockerRecoveryKey](../resources/bitlockerrecoverykey.md) e suas propriedades. 
+
+Esta operação não retorna a **propriedade key.** Para obter informações sobre como ler a **propriedade key,** consulte [Get bitlockerRecoveryKey](bitlockerrecoverykey-get.md).
+
+## <a name="permissions"></a>Permissões
+
+Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
+
+|Tipo de permissão|Permissões (de privilégios máximos a mínimos)|
+|:---|:---|
+|Delegado (conta corporativa ou de estudante)|BitLockerKey.ReadBasic.All, BitLockerKey.Read.All|
+|Delegado (conta pessoal da Microsoft)|Sem suporte|
+|Aplicativo|Sem suporte|
+
+Para permissões delegadas, o usuário de chamada deve ser o proprietário registrado do dispositivo do qual a chave de recuperação do BitLocker foi originalmente backup, ou ele deve estar em uma das seguintes funções de [diretório:](/azure/active-directory/roles/permissions-reference)
+
+* Administrador global
+* Administrador de dispositivos de nuvem
+* Administrador da assistência técnica
+* Administrador de Serviço do Intune
+* Administrador de segurança
+* Leitor de segurança
+* Leitor global
+
+## <a name="http-request"></a>Solicitação HTTP
+
+Para obter uma lista de chaves do BitLocker no locatário:
+
+<!-- {
+  "blockType": "ignored"
+}
+-->
+
+``` http
+GET /informationProtection/bitlocker/recoveryKeys
+```
+
+## <a name="optional-query-parameters"></a>Parâmetros de consulta opcionais
+
+Este método dá suporte ao parâmetro de consulta OData para filtrar os resultados pela deviceId do dispositivo em que a chave foi mais recentemente `$filter` feita backup.  Este método não dá suporte `$top` a . Para obter informações gerais, acesse [Parâmetros de consulta OData](/graph/query-parameters).
+
+A resposta também pode conter `odata.nextLink` um , que você pode usar para página através do conjunto de resultados. Para obter detalhes, [consulte Paging Microsoft Graph data](/graph/paging).
+
+## <a name="request-headers"></a>Cabeçalhos de solicitação
+
+|Nome|Descrição|
+|:---|:---|
+|Autorização|{token} de portador. Obrigatório.|
+|ocp-client-name|O nome do aplicativo cliente que executa a chamada da API. Esse header é usado para fins de depuração. Opcional.|
+|ocp-client-version|A versão do aplicativo cliente que executa a chamada da API. Esse header é usado para fins de depuração. Opcional.|
+
+## <a name="request-body"></a>Corpo da solicitação
+
+Não forneça um corpo de solicitação para esse método.
+
+## <a name="response"></a>Resposta
+
+Se tiver êxito, este método retornará um código de resposta e uma `200 OK` coleção de [objetos bitlockerRecoveryKey](../resources/bitlockerrecoverykey.md) no corpo da resposta.
+
+## <a name="examples"></a>Exemplos
+
+### <a name="example-1-retrieve-a-list-of-bitlocker-keys-in-the-tenant"></a>Exemplo 1: Recuperar uma lista de chaves do BitLocker no locatário.
+
+#### <a name="request"></a>Solicitação
+
+Este é um exemplo de solicitação.
+
+<!-- {
+  "blockType": "request",
+  "name": "list_bitlockerrecoverykey"
+}
+-->
+``` http
+GET https://graph.microsoft.com/v1.0/informationProtection/bitlocker/recoveryKeys
+ocp-client-name: "My Friendly Client"
+ocp-client-version: "1.2"
+```
+
+#### <a name="response"></a>Resposta
+
+Este é um exemplo de resposta.
+
+>**Observação:** o objeto de resposta mostrado aqui pode ser encurtado para legibilidade.
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "Collection(microsoft.graph.bitlockerRecoveryKey)"
+}
+-->
+
+``` http
+HTTP/1.1 200 OK
+Content-Type: application/json
+
+{
+  "value": [
+    {
+      "@odata.type": "#microsoft.graph.bitlockerRecoveryKey",
+      "id": "b465e4e8-e4e8-b465-e8e4-65b4e8e465b4",
+      "createdDateTime": "2020-06-15T13:45:30.0000000Z",
+      "volumeType": "1",
+      "deviceId": "2ef04ef1-23b0-2e00-a3a5-ab345e567ab6"
+    },
+    {
+      "@odata.type": "#microsoft.graph.bitlockerRecoveryKey",
+      "id": "6a30ed7b-247b-4d26-86b5-2f405e55ea42",
+      "createdDateTime": "2020-06-15T13:45:30.0000000Z",
+      "volumeType": "1",
+      "deviceId": "1ab40ab2-32a8-4b00-b6b5-ba724e407de9"
+    }
+  ]
+}
+```
+
+### <a name="example-2-retrieve-a-list-of-bitlocker-keys-filtered-by-deviceid"></a>Exemplo 2: Recuperar uma lista de chaves BitLocker filtradas por deviceId.
+
+#### <a name="request"></a>Solicitação
+
+Este é um exemplo de solicitação.
+
+
+<!-- {
+  "blockType": "request",
+  "name": "list_bitlockerrecoverykey_filter_deviceId"
+}
+-->
+``` http
+GET https://graph.microsoft.com/v1.0/informationProtection/bitlocker/recoveryKeys?$filter=deviceId eq '1ab40ab2-32a8-4b00-b6b5-ba724e407de9'
+ocp-client-name: "My Friendly Client"
+ocp-client-version: "1.2"
+```
+
+#### <a name="response"></a>Resposta
+
+Este é um exemplo de resposta.
+
+>**Observação:** o objeto de resposta mostrado aqui pode ser encurtado para legibilidade.
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "Collection(microsoft.graph.bitlockerRecoveryKey)"
+}
+-->
+``` http
+HTTP/1.1 200 OK
+Content-Type: application/json
+
+{
+  "value": [
+    {
+      "@odata.type": "#microsoft.graph.bitlockerRecoveryKey",
+      "id": "b465e4e8-e4e8-b465-e8e4-65b4e8e465b4",
+      "createdDateTime": "2020-06-15T13:45:30.0000000Z",
+      "volumeType": "1",
+      "deviceId": "1ab40ab2-32a8-4b00-b6b5-ba724e407de9"
+    }
+  ]
+}
+```

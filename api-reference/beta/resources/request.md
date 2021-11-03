@@ -1,16 +1,16 @@
 ---
 title: tipo de recurso request
 description: Um tipo de entidade abstrata para modelar o fluxo de trabalho de solicitação assíncrono para criar, atualizar e excluir um objeto.
-author: shauliu1
-localization_priority: Normal
+author: carolinetempleton
+ms.localizationpriority: medium
 ms.prod: governance
 doc_type: resourcePageType
-ms.openlocfilehash: 66856dada00835db637b86c8d1577ea83740c7e1
-ms.sourcegitcommit: 01755ac7c0ab7becf28052e05e58567caa8364cd
+ms.openlocfilehash: fad1d480fbb792ca63b05ddfe8507b2ede9d54e8
+ms.sourcegitcommit: c7ff992ef63e480d070421ba99b28ee129cb6acb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/21/2021
-ms.locfileid: "58454273"
+ms.lasthandoff: 11/03/2021
+ms.locfileid: "60695248"
 ---
 # <a name="request-resource-type"></a>tipo de recurso request
 
@@ -26,15 +26,15 @@ Herda da [entidade](entity.md).
 ## <a name="properties"></a>Propriedades
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|approvalId|Cadeia de caracteres|O identificador da aprovação da solicitação.|
+|approvalId|String|O identificador da aprovação da solicitação.|
 |completedDateTime|DateTimeOffset|A data de conclusão da solicitação.|
 |createdBy|[identitySet](identityset.md)|O usuário que criou essa solicitação.|
 |createdDateTime|DateTimeOffset|A data de criação da solicitação.|
-|customData|Cadeia de caracteres|Campo de texto livre para definir quaisquer dados personalizados para a solicitação. Não usado.|
-|status|Cadeia de caracteres|O status da solicitação. Não anulável. Os valores possíveis são: `Canceled` , , , , , , , , , `Denied` , , e `Failed` `Granted` `PendingAdminDecision` `PendingApproval` `PendingProvisioning` `PendingScheduleCreation` `Provisioned` `Revoked` `ScheduleCreated` . Não anulável.|
-|id|Cadeia de caracteres|Identificador da solicitação. Somente leitura. Não anulável. Herdado da [entidade](entity.md).|
+|customData|String|Campo de texto livre para definir quaisquer dados personalizados para a solicitação. Não usado.|
+|status|String|O status da solicitação. Não anulável. Os valores possíveis são: `Canceled` , , , , , , , , , `Denied` , , e `Failed` `Granted` `PendingAdminDecision` `PendingApproval` `PendingProvisioning` `PendingScheduleCreation` `Provisioned` `Revoked` `ScheduleCreated` . Não anulável.|
+|id|String|Identificador da solicitação. Somente leitura. Não anulável. Herdado da [entidade](entity.md).|
 
-## <a name="relationships"></a>Relacionamentos
+## <a name="relationships"></a>Relações
 |Relação|Tipo|Descrição|
 |:---|:---|:---|
 |aprovação|[aprovação](../resources/approval.md)|Representa o objeto de aprovação ao que a solicitação está vinculada.|

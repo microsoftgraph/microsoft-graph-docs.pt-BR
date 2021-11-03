@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 0ef4d7c50f0656fef9b73e4e05365e947c7ef1af
-ms.sourcegitcommit: 4a960067cf2cd7d3c605550150eb3c9259adfe92
+ms.openlocfilehash: 3add4bf83416d65010e3023210450b253eec178c
+ms.sourcegitcommit: c7ff992ef63e480d070421ba99b28ee129cb6acb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/19/2021
-ms.locfileid: "60488133"
+ms.lasthandoff: 11/03/2021
+ms.locfileid: "60695864"
 ---
 # <a name="list-devicemanagementconfigurationpolicyassignments"></a>Listar deviceManagementConfigurationPolicyAssignments
 
@@ -37,6 +37,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 }
 -->
 ``` http
+GET /deviceManagement/compliancePolicies/{deviceManagementCompliancePolicyId}/assignments
 GET /deviceManagement/configurationPolicies/{deviceManagementConfigurationPolicyId}/assignments
 ```
 
@@ -57,7 +58,7 @@ Se tiver êxito, este método retornará um código de resposta e uma `200 OK` c
 ### <a name="request"></a>Solicitação
 Este é um exemplo da solicitação.
 ``` http
-GET https://graph.microsoft.com/beta/deviceManagement/configurationPolicies/{deviceManagementConfigurationPolicyId}/assignments
+GET https://graph.microsoft.com/beta/deviceManagement/compliancePolicies/{deviceManagementCompliancePolicyId}/assignments
 ```
 
 ### <a name="response"></a>Resposta

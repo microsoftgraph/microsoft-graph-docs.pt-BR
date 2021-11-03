@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: c79669a2d97909551df5857105a807a5ebed4336
-ms.sourcegitcommit: 4a960067cf2cd7d3c605550150eb3c9259adfe92
+ms.openlocfilehash: 660877e46ba6df736713f834e7f32d0cbcec2559
+ms.sourcegitcommit: c7ff992ef63e480d070421ba99b28ee129cb6acb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/19/2021
-ms.locfileid: "60490355"
+ms.lasthandoff: 11/03/2021
+ms.locfileid: "60688476"
 ---
 # <a name="delete-devicemanagementconfigurationcategory"></a>Excluir deviceManagementConfigurationCategory
 
@@ -37,6 +37,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 }
 -->
 ``` http
+DELETE /deviceManagement/complianceCategories/{deviceManagementConfigurationCategoryId}
 DELETE /deviceManagement/configurationCategories/{deviceManagementConfigurationCategoryId}
 ```
 
@@ -57,7 +58,7 @@ Se tiver êxito, este método retornará um código de resposta `204 No Content`
 ### <a name="request"></a>Solicitação
 Este é um exemplo da solicitação.
 ``` http
-DELETE https://graph.microsoft.com/beta/deviceManagement/configurationCategories/{deviceManagementConfigurationCategoryId}
+DELETE https://graph.microsoft.com/beta/deviceManagement/complianceCategories/{deviceManagementConfigurationCategoryId}
 ```
 
 ### <a name="response"></a>Resposta

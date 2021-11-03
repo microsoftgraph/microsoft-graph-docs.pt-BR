@@ -1,22 +1,24 @@
 ---
 title: Tipo de recurso governanceSchedule
 description: 'Representa a agenda de um governanceRoleAssignmentRequest. Para uma solicitação de atribuição de função, o agendamento controla quando executar a operação de atribuição de função, quando interromper a atribuição de função e com que frequência fará a operação de atribuição de função. '
-localization_priority: Normal
+ms.localizationpriority: medium
 doc_type: resourcePageType
 ms.prod: governance
-author: shauliu1
-ms.openlocfilehash: 76f62186cca8e093459e0802497bab49dfbb0652
-ms.sourcegitcommit: 01755ac7c0ab7becf28052e05e58567caa8364cd
+author: carolinetempleton
+ms.openlocfilehash: 87abccdfac02bea7a3158feb786b39aad23fac3f
+ms.sourcegitcommit: c7ff992ef63e480d070421ba99b28ee129cb6acb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/21/2021
-ms.locfileid: "58454098"
+ms.lasthandoff: 11/03/2021
+ms.locfileid: "60694264"
 ---
 # <a name="governanceschedule-resource-type"></a>Tipo de recurso governanceSchedule
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
+[!INCLUDE [pim-v1resourceroles-deprecation](../../includes/pim-v1aadroles-deprecation.md)]
 
 Representa a agenda de [um governanceRoleAssignmentRequest](../resources/governanceroleassignmentrequest.md). Para uma solicitação de atribuição de função, o agendamento controla quando executar a operação de atribuição de função, quando interromper a atribuição de função e com que frequência fará a operação de atribuição de função.
 
@@ -27,8 +29,8 @@ Representa a agenda de [um governanceRoleAssignmentRequest](../resources/governa
 |:---------------|:--------|:----------|
 |startDateTime|DateTimeOffset|A hora de início da atribuição de função. O tipo Timestamp representa informações de data e hora usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite UTC em 1 de janeiro de 2014 é `2014-01-01T00:00:00Z`|
 |endDateTime|DateTimeOffset|A hora de término da atribuição de função. O tipo Timestamp representa informações de data e hora usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite UTC em 1 de janeiro de 2014 é `2014-01-01T00:00:00Z`. *Observação: se o valor for `null` , ele indicará uma atribuição permanente.*|
-|type|Cadeia de caracteres|O tipo de agendamento de atribuição de função. Por `Once` enquanto, só há suporte.
-|duração|Duration|A duração de uma atribuição de função. Está no formato de um TimeSpan.|
+|type|String|O tipo de agendamento de atribuição de função. Por `Once` enquanto, só há suporte.
+|duração|Duração|A duração de uma atribuição de função. Está no formato de um TimeSpan.|
 
 ## <a name="json-representation"></a>Representação JSON
 

@@ -6,8 +6,8 @@ ms.openlocfilehash: b7d7ca255ec16c4daa8dc1d74a6cd9bacf28748f
 ms.sourcegitcommit: c7ff992ef63e480d070421ba99b28ee129cb6acb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "60684068"
+ms.lasthandoff: 11/02/2021
+ms.locfileid: "60668990"
 ---
 <!-- markdownlint-disable MD041-->
 

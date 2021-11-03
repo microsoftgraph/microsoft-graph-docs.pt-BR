@@ -1,22 +1,24 @@
 ---
 title: 'privilegedRole: selfDeactivate'
 description: Desative a função que é atribuída ao solicitante.
-localization_priority: Normal
+ms.localizationpriority: medium
 doc_type: apiPageType
 ms.prod: governance
-author: shauliu1
-ms.openlocfilehash: 8e92f959c7f23b6c5679af312fc60613be0de93a
-ms.sourcegitcommit: 01755ac7c0ab7becf28052e05e58567caa8364cd
+author: carolinetempleton
+ms.openlocfilehash: 610da25180814ed5b2dc6e2952d6a812be12aa46
+ms.sourcegitcommit: c7ff992ef63e480d070421ba99b28ee129cb6acb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/21/2021
-ms.locfileid: "58453489"
+ms.lasthandoff: 11/03/2021
+ms.locfileid: "60696326"
 ---
 # <a name="privilegedrole-selfdeactivate"></a>privilegedRole: selfDeactivate
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
+[!INCLUDE [pim-v1AADRoles-deprecation](../../includes/pim-v1aadroles-deprecation.md)]
 
 Desative a função que é atribuída ao solicitante.
 ## <a name="permissions"></a>Permissões

@@ -9,8 +9,8 @@ ms.openlocfilehash: b665c86099d4637c381e0fbbd73d972de3b6c57e
 ms.sourcegitcommit: c7ff992ef63e480d070421ba99b28ee129cb6acb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/02/2021
-ms.locfileid: "60668858"
+ms.lasthandoff: 11/03/2021
+ms.locfileid: "60695955"
 ---
 # <a name="windows10vpnconfiguration-resource-type"></a>Tipo de recurso windows10VpnConfiguration
 

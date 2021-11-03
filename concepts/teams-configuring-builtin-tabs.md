@@ -4,12 +4,12 @@ description: Para criar ou configurar uma guia do Microsoft Teams usando as APIs
 author: nkramer
 ms.localizationpriority: medium
 ms.prod: microsoft-teams
-ms.openlocfilehash: 7bb8438cbbfe54143a72ada3375b41e766a2b751
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 43668e76d4ad400193ab33b7925a0bd612f746c5
+ms.sourcegitcommit: c7ff992ef63e480d070421ba99b28ee129cb6acb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59083870"
+ms.lasthandoff: 11/03/2021
+ms.locfileid: "60688090"
 ---
 # <a name="configuring-the-built-in-tab-types-in-microsoft-teams"></a>Configurar tipos de guia internos no Microsoft Teams
 
@@ -133,3 +133,7 @@ Essa configuração não é compatível.
 Para as guias de lista e de página do SharePoint, o `teamsAppId` é `2a527703-1f6f-4559-a332-d8a7d288cd88`.
 Essa configuração não é compatível.
 Se você quiser configurar a guia, considere usar uma guia do site.
+
+## <a name="sharepoint-framework-based-tabs"></a>Estrutura do SharePoint baseadas em guias
+
+Guias personalizadas criadas usando Estrutura do SharePoint podem ser criadas usando o Microsoft Graph, mas a configuração não é suportada.

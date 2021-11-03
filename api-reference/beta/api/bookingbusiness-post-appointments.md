@@ -1,16 +1,16 @@
 ---
 title: Criar bookingAppointment
 description: Crie um novo bookingAppointment para o bookingbusiness especificado.
-localization_priority: Normal
+ms.localizationpriority: medium
 author: arvindmicrosoft
 ms.prod: bookings
 doc_type: apiPageType
-ms.openlocfilehash: 02ad305da8c4d42e6d63e8d511380a707c806b2a
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: 101ca7e6733d9b54f973d3b9a63dab346f69bf56
+ms.sourcegitcommit: c7ff992ef63e480d070421ba99b28ee129cb6acb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52047886"
+ms.lasthandoff: 11/03/2021
+ms.locfileid: "60693961"
 ---
 # <a name="create-bookingappointment"></a>Criar bookingAppointment
 
@@ -18,7 +18,7 @@ Namespace: microsoft.graph
 
  [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Crie um [novo bookingAppointment](../resources/bookingappointment.md) para o [bookingbusiness especificado.](../resources/bookingbusiness.md)
+Crie um novo [bookingAppointment](../resources/bookingappointment.md) para o [bookingBusiness especificado.](../resources/bookingbusiness.md)
 ## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
@@ -37,17 +37,17 @@ POST /bookingBusinesses/{id}/appointments
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
 | Nome       | Descrição|
 |:---------------|:----------|
-| Authorization  | Portador {código}|
+| Autorização  | {code} do portador. Obrigatório.|
 
 ## <a name="request-body"></a>Corpo da solicitação
 No corpo da solicitação, fornece uma representação JSON do [objeto bookingAppointment.](../resources/bookingappointment.md)
 
 
 ## <a name="response"></a>Resposta
-Se tiver êxito, este método retornará `201, Created` o código de resposta e o objeto [bookingAppointment](../resources/bookingappointment.md) no corpo da resposta.
+Se tiver êxito, este método retornará um código de resposta e um `201 Created` [objeto bookingAppointment](../resources/bookingappointment.md) no corpo da resposta.
 
 ## <a name="example"></a>Exemplo
-##### <a name="request"></a>Solicitação
+### <a name="request"></a>Solicitação
 Este é um exemplo de solicitação. Esse compromisso não envolve a reserva de membros específicos da equipe.
 
 # <a name="http"></a>[HTTP](#tab/http)
@@ -88,6 +88,8 @@ Content-type: application/json
     "customerName":"Jordan Miller",
     "customerNotes":"Please be on time.",
     "customerPhone":"213-555-0199",
+    "customerTimeZone":"America/Chicago",
+    "smsNotificationsEnabled":true,
     "end":{
         "@odata.type":"#microsoft.graph.dateTimeTimeZone",
         "dateTime":"2018-05-01T12:30:00.0000000+00:00",
@@ -103,6 +105,7 @@ Content-type: application/json
     "invoiceStatus@odata.type":"#microsoft.graph.bookingInvoiceStatus",
     "invoiceStatus":"open",
     "invoiceUrl":"theInvoiceUrl",
+    "isLocationOnline": true,
     "optOutOfCustomerEmail":false,
     "postBuffer":"PT10M",
     "preBuffer":"PT5M",
@@ -184,9 +187,11 @@ Content-type: application/json
 
 ---
 
-No corpo da solicitação, fornece uma representação JSON do [objeto bookingAppointment.](../resources/bookingappointment.md)
-##### <a name="response"></a>Resposta
-Este é um exemplo de resposta. Observação: o objeto de resposta mostrado aqui pode ser encurtado para legibilidade.
+### <a name="response"></a>Resposta
+Este é um exemplo de resposta. 
+
+>**Observação:** o objeto de resposta mostrado aqui pode ser encurtado para legibilidade.
+
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -200,10 +205,14 @@ Content-type: application/json
     "@odata.context": "https://graph.microsoft.com/beta/$metadata#bookingBusinesses('Contosolunchdelivery%40M365B489948.onmicrosoft.com')/appointments/$entity",
     "id": "AAMkADc7zF4J0AAA8v_KnAAA=",
     "selfServiceAppointmentId": "00000000-0000-0000-0000-000000000000",
+    "isLocationOnline": true,
+    "joinWebUrl":"https://teams.microsoft.com/l/meetup-join/19%3ameeting_MTlhZTE3MDUtODk0Yy00MGZkLTlhNzktN2FmYTk3MDUxNmE2%40thread.v2/0?context=%7b%22Tid%22%3a%22995fa18c-b557-4694-8d07-b89779d6dc77%22%2c%22Oid%22%3a%22d4d260ab-989d-490e-b121-e2066391807a%22%7d",
+    "smsNotificationsEnabled":true,
     "customerId": "7ed53fa5-9ef2-4f2f-975b-27447440bc09",
     "customerName": "Jordan Miller",
     "customerEmailAddress": "jordanm@contoso.com",
     "customerPhone": "213-555-0199",
+    "customerTimeZone":"America/Chicago",
     "customerNotes": null,
     "serviceId": "57da6774-a087-4d69-b0e6-6fb82c339976",
     "serviceName": "Catered bento",

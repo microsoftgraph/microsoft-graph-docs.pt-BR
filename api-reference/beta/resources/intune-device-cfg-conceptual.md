@@ -4,12 +4,12 @@ description: Lista a API Graph microsoft para pontos de extremidade do Intune (R
 author: dougeby
 ms.localizationpriority: medium
 ms.prod: intune
-ms.openlocfilehash: 3d0b6983ad4a4b54e774c767ebf8d1c18d2823d5
-ms.sourcegitcommit: 4a960067cf2cd7d3c605550150eb3c9259adfe92
+ms.openlocfilehash: 106aed065f0480fcec01a8f680e8ee33001d5e45
+ms.sourcegitcommit: c7ff992ef63e480d070421ba99b28ee129cb6acb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/19/2021
-ms.locfileid: "60482942"
+ms.lasthandoff: 11/03/2021
+ms.locfileid: "60696067"
 ---
 # <a name="device-configuration-in-microsoft-intune"></a>Configuração de dispositivo no Microsoft Intune
 
@@ -209,6 +209,7 @@ Os seguintes recursos do Graph estão disponíveis para gerenciar configuraçõe
 - [Estado de configuração de conformidade do dispositivo](intune-deviceconfig-devicecompliancesettingstate.md)
 - [Visão geral do usuário de conformidade do dispositivo](intune-deviceconfig-devicecomplianceuseroverview.md)
 - [Status do usuário de conformidade do dispositivo](intune-deviceconfig-devicecomplianceuserstatus.md)
+- [Intenção de atribuição de configuração de dispositivo](intune-deviceconfig-deviceconfigassignmentintent.md)
 - [Atribuição de configuração do dispositivo](intune-deviceconfig-deviceconfigurationassignment.md)
 - [Resumo de conflitos de configuração do dispositivo](intune-deviceconfig-deviceconfigurationconflictsummary.md)
 - [Visão geral do dispositivo de configuração do dispositivo](intune-deviceconfig-deviceconfigurationdeviceoverview.md)

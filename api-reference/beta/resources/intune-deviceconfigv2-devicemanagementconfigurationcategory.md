@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 2e26b6930617d195cab4445e31e30e5d866dfaea
-ms.sourcegitcommit: 4a960067cf2cd7d3c605550150eb3c9259adfe92
+ms.openlocfilehash: 797474c152c0f791f4101769b8a955e45b520c31
+ms.sourcegitcommit: c7ff992ef63e480d070421ba99b28ee129cb6acb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/19/2021
-ms.locfileid: "60487195"
+ms.lasthandoff: 11/03/2021
+ms.locfileid: "60688441"
 ---
 # <a name="devicemanagementconfigurationcategory-resource-type"></a>Tipo de recurso deviceManagementConfigurationCategory
 
@@ -22,7 +22,7 @@ Namespace: microsoft.graph
 
 Política de Configuração de Gerenciamento de Dispositivos
 
-## <a name="methods"></a>Métodos
+## <a name="methods"></a>Methods
 |Método|Tipo de retorno|Descrição|
 |:---|:---|:---|
 |[Listar deviceManagementConfigurationCategories](../api/intune-deviceconfigv2-devicemanagementconfigurationcategory-list.md)|[Coleção deviceManagementConfigurationCategory](../resources/intune-deviceconfigv2-devicemanagementconfigurationcategory.md)|Listar propriedades e relações dos [objetos deviceManagementConfigurationCategory.](../resources/intune-deviceconfigv2-devicemanagementconfigurationcategory.md)|
@@ -34,16 +34,17 @@ Política de Configuração de Gerenciamento de Dispositivos
 ## <a name="properties"></a>Propriedades
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|id|Cadeia de caracteres|Identificador de item|
-|description|Cadeia de caracteres|Descrição do item|
-|helpText|Cadeia de caracteres|Texto de ajuda do item|
-|name|Cadeia de caracteres|Nome do item|
-|displayName|Cadeia de caracteres|Nome de exibição do item|
+|id|String|Identificador de item|
+|descrição|String|Descrição do item|
+|categoryDescription|String|Descrição do header de categoria|
+|helpText|String|Texto de ajuda do item|
+|name|String|Nome do item|
+|displayName|String|Nome de exibição do item|
 |plataformas|[deviceManagementConfigurationPlatforms](../resources/intune-deviceconfigv2-devicemanagementconfigurationplatforms.md)|Tipos de plataformas, que configurações na categoria têm. Os possíveis valores são: `none`, `android`, `iOS`, `macOS`, `windows10X`, `windows10`.|
 |technologies|[deviceManagementConfigurationTechnologies](../resources/intune-deviceconfigv2-devicemanagementconfigurationtechnologies.md)|Tipos de tecnologias, que configurações na categoria têm. Os valores possíveis são: `none`, `mdm`, `windows10XManagement`, `configManager`, `microsoftSense`, `exchangeOnline`, `linuxMdm`, `unknownFutureValue`.|
-|settingUsage|[deviceManagementConfigurationSettingUsage](../resources/intune-deviceconfigv2-devicemanagementconfigurationsettingusage.md)|Indica que a categoria contém configurações usadas para Conformidade ou Configuração. Os valores possíveis são: `none` e `configuration`.|
-|parentCategoryId|Cadeia de caracteres|ID pai da categoria.|
-|rootCategoryId|Cadeia de caracteres|ID raiz da categoria.|
+|settingUsage|[deviceManagementConfigurationSettingUsage](../resources/intune-deviceconfigv2-devicemanagementconfigurationsettingusage.md)|Indica que a categoria contém configurações usadas para Conformidade ou Configuração. Os valores possíveis são: `none`, `configuration`, `compliance`.|
+|parentCategoryId|String|ID pai da categoria.|
+|rootCategoryId|String|ID raiz da categoria.|
 |childCategoryIds|Coleção de cadeias de caracteres|Lista de IDs filho da categoria.|
 
 ## <a name="relationships"></a>Relações
@@ -62,6 +63,7 @@ Veja a seguir uma representação JSON do recurso.
   "@odata.type": "#microsoft.graph.deviceManagementConfigurationCategory",
   "id": "String (identifier)",
   "description": "String",
+  "categoryDescription": "String",
   "helpText": "String",
   "name": "String",
   "displayName": "String",

@@ -2,15 +2,15 @@
 title: Criar windowsFeatureUpdateProfile
 description: Crie um novo objeto windowsFeatureUpdateProfile.
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 396535cd01b85ebc24ecb0427f582301f98561c8
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 151e496474e616d3aae0cd8d7ebc4da87138629a
+ms.sourcegitcommit: c7ff992ef63e480d070421ba99b28ee129cb6acb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59107334"
+ms.lasthandoff: 11/03/2021
+ms.locfileid: "60695451"
 ---
 # <a name="create-windowsfeatureupdateprofile"></a>Criar windowsFeatureUpdateProfile
 
@@ -53,14 +53,15 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar o window
 
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|id|Cadeia de caracteres|O Identificador da entidade.|
-|displayName|Cadeia de caracteres|O nome de exibição do perfil.|
-|description|Cadeia de caracteres|A descrição do perfil especificado pelo usuário.|
-|featureUpdateVersion|Cadeia de Caracteres|A versão de atualização de recursos que será implantada nos dispositivos direcionados por esse perfil. A versão pode ser qualquer versão com suporte para o exemplo 1709, 1803 ou 1809 e assim por diante.|
+|id|String|O Identificador da entidade.|
+|displayName|String|O nome de exibição do perfil.|
+|descrição|String|A descrição do perfil especificado pelo usuário.|
+|featureUpdateVersion|String|A versão de atualização de recursos que será implantada nos dispositivos direcionados por esse perfil. A versão pode ser qualquer versão com suporte para o exemplo 1709, 1803 ou 1809 e assim por diante.|
+|rolloutSettings|[windowsUpdateRolloutSettings](../resources/intune-softwareupdate-windowsupdaterolloutsettings.md)|As configurações de lançamento de atualizações do Windows, incluindo a hora da data de início da oferta, a data de término e os dias entre cada conjunto de ofertas.|
 |createdDateTime|DateTimeOffset|A data em que o perfil foi criado.|
 |lastModifiedDateTime|DateTimeOffset|A data em que o perfil foi modificado pela última vez.|
-|roleScopeTagIds|String collection|Lista de Marcas de Escopo para essa entidade atualização de recursos.|
-|deployableContentDisplayName|Cadeia de Caracteres|Nome de exibição amigável do conteúdo implantável do perfil de atualização de qualidade|
+|roleScopeTagIds|Coleção de cadeias de caracteres|Lista de Marcas de Escopo para essa entidade atualização de recursos.|
+|deployableContentDisplayName|String|Nome de exibição amigável do conteúdo implantável do perfil de atualização de qualidade|
 |endOfSupportDate|DateTimeOffset|A última data com suporte para uma atualização de recursos|
 
 
@@ -75,13 +76,19 @@ Este é um exemplo da solicitação.
 ``` http
 POST https://graph.microsoft.com/beta/deviceManagement/windowsFeatureUpdateProfiles
 Content-type: application/json
-Content-length: 405
+Content-length: 669
 
 {
   "@odata.type": "#microsoft.graph.windowsFeatureUpdateProfile",
   "displayName": "Display Name value",
   "description": "Description value",
   "featureUpdateVersion": "Feature Update Version value",
+  "rolloutSettings": {
+    "@odata.type": "microsoft.graph.windowsUpdateRolloutSettings",
+    "offerStartDateTimeInUTC": "2017-01-01T00:01:16.3697768-08:00",
+    "offerEndDateTimeInUTC": "2016-12-31T23:58:15.1925199-08:00",
+    "offerIntervalInDays": 3
+  },
   "roleScopeTagIds": [
     "Role Scope Tag Ids value"
   ],
@@ -95,7 +102,7 @@ Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado a
 ``` http
 HTTP/1.1 201 Created
 Content-Type: application/json
-Content-Length: 577
+Content-Length: 841
 
 {
   "@odata.type": "#microsoft.graph.windowsFeatureUpdateProfile",
@@ -103,6 +110,12 @@ Content-Length: 577
   "displayName": "Display Name value",
   "description": "Description value",
   "featureUpdateVersion": "Feature Update Version value",
+  "rolloutSettings": {
+    "@odata.type": "microsoft.graph.windowsUpdateRolloutSettings",
+    "offerStartDateTimeInUTC": "2017-01-01T00:01:16.3697768-08:00",
+    "offerEndDateTimeInUTC": "2016-12-31T23:58:15.1925199-08:00",
+    "offerIntervalInDays": 3
+  },
   "createdDateTime": "2017-01-01T00:02:43.5775965-08:00",
   "lastModifiedDateTime": "2017-01-01T00:00:35.1329464-08:00",
   "roleScopeTagIds": [

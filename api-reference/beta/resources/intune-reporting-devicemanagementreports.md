@@ -9,8 +9,8 @@ ms.openlocfilehash: 639bec877dcdf1b7781011aba59e0ce3b1cb8ce0
 ms.sourcegitcommit: c7ff992ef63e480d070421ba99b28ee129cb6acb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/02/2021
-ms.locfileid: "60673694"
+ms.lasthandoff: 11/03/2021
+ms.locfileid: "60696935"
 ---
 # <a name="devicemanagementreports-resource-type"></a>Tipo de recurso deviceManagementReports
 
@@ -22,7 +22,7 @@ Namespace: microsoft.graph
 
 Entidade singleton que atua como um contêiner para todas as funcionalidades de relatórios.
 
-## <a name="methods"></a>Methods
+## <a name="methods"></a>Métodos
 |Método|Tipo de retorno|Descrição|
 |:---|:---|:---|
 |[Obter deviceManagementReports](../api/intune-reporting-devicemanagementreports-get.md)|[deviceManagementReports](../resources/intune-reporting-devicemanagementreports.md)|Leia propriedades e relações do [objeto deviceManagementReports.](../resources/intune-reporting-devicemanagementreports.md)|

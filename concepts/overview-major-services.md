@@ -4,12 +4,12 @@ description: 'O Microsoft Graph permite a integração com os melhores serviços
 author: angelgolfer-ms
 ms.localizationpriority: high
 ms.custom: scenarios:getting-started
-ms.openlocfilehash: b262bfd61e59492aefe5214c3f44d517a49bcf47
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 9e9a3c25f948a0e0599b40b247ec5790a7b1c424
+ms.sourcegitcommit: c7ff992ef63e480d070421ba99b28ee129cb6acb
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59071732"
+ms.lasthandoff: 11/03/2021
+ms.locfileid: "60688644"
 ---
 # <a name="major-services-and-features-in-microsoft-graph"></a>Principais serviços e recursos do Microsoft Graph
 
@@ -87,6 +87,7 @@ Alguns serviços do Microsoft Graph iniciam-se no próprio Microsoft Graph, outr
 |:-----------|:--------------------|:-----------|:----------------|
 | Impressão na nuvem | Impressão universal | A impressão universal é uma infraestrutura de impressão baseada na nuvem do Microsoft 365 que permite uma experiência de impressão simples, rica e segura aos usuários e reduz o tempo e o esforço de TI. | [Impressão na nuvem usando a API de Impressão Universal](universal-print-concept-overview.md) |
 |Gerenciamento corporativo de dispositivos e aplicativos | Intune | Registra e configura dispositivos e gerencia aplicativos móveis em sua organização. | [Visão geral de dispositivos e aplicativos do Intune](intune-concept-overview.md) |
+| Cloud PC (visualização) | Windows 365  | O Windows 365 é um serviço baseado em nuvem que permite aos administradores configurar e gerenciar facilmente Cloud PCs do Windows 365 para usuários em sua organização. Os usuários finais individuais podem transmitir com segurança sua experiência rica e personalizada com o Windows da Microsoft Cloud para qualquer dispositivo, a qualquer momento, com seu Cloud PC. | [Trabalhando com Cloud PCs do Windows 365 usando a API do Microsoft Graph](/graph/api/resources/cloudpc-api-overview?view=graph-rest-beta&preserve-view=true) |
 | Atualizações do dispositivo (visualização) | Serviço de implantação do Windows Update para Empresas | Fornece controle sobre a aprovação, agendamento, monitoramento e proteção do conteúdo fornecido pelo Windows Update. | [Atualizações do Windows no Microsoft Graph](windowsupdates-concept-overview.md) |
 | Gerenciamento multilocatário (visualização) | Microsoft 365 Lighthouse | Permite que os Provedores de Serviços Gerenciados (MSPs) gerenciem remotamente vários locatários do cliente para conformidade e detecção de ameaças, e ajudam a manter os dispositivos dos locatários em um estado íntegro e seguro. | [Gerenciamento multilocatário usando o Microsoft 365 Lighthouse](managedtenants-concept-overview.md) |
 | Comunicações e Integridade do serviço | Serviços do Microsoft 365 e Dynamics 365 | Fornece acesso ao status de integridade e postagens do centro de mensagens sobre os serviços em nuvem da Microsoft. Um exemplo importante que usa a API de comunicações de serviço é o Centro de administração do Microsoft 365. | [Acessando as comunicações e a Integridade do serviço no Microsoft Graph](service-communications-concept-overview.md) |

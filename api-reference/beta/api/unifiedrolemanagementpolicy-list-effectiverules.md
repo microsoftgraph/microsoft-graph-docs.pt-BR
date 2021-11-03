@@ -9,8 +9,8 @@ ms.openlocfilehash: 1a9819ef980f982fc76e104c74b21056c207dd17
 ms.sourcegitcommit: c7ff992ef63e480d070421ba99b28ee129cb6acb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/02/2021
-ms.locfileid: "60674287"
+ms.lasthandoff: 11/03/2021
+ms.locfileid: "60694691"
 ---
 # <a name="list-effectiverules"></a>Listar effectiveRules
 Namespace: microsoft.graph

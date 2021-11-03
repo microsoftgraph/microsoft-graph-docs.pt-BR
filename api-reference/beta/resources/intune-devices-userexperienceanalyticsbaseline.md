@@ -2,15 +2,15 @@
 title: Tipo de recurso userExperienceAnalyticsBaseline
 description: A entidade de linha de base de análise de experiência do usuário contém valores de linha de base para comparar as pontuações de análise de experiência do usuário.
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: f3426303818afc77dd167a041a3f1af0100a86c4
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: a929c43f0aad551ad80d9321bbaa1882d0c14201
+ms.sourcegitcommit: c7ff992ef63e480d070421ba99b28ee129cb6acb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59141197"
+ms.lasthandoff: 11/03/2021
+ms.locfileid: "60689050"
 ---
 # <a name="userexperienceanalyticsbaseline-resource-type"></a>Tipo de recurso userExperienceAnalyticsBaseline
 
@@ -22,7 +22,7 @@ Namespace: microsoft.graph
 
 A entidade de linha de base de análise de experiência do usuário contém valores de linha de base para comparar as pontuações de análise de experiência do usuário.
 
-## <a name="methods"></a>Métodos
+## <a name="methods"></a>Methods
 |Método|Tipo de retorno|Descrição|
 |:---|:---|:---|
 |[Listar userExperienceAnalyticsBaselines](../api/intune-devices-userexperienceanalyticsbaseline-list.md)|[Coleção userExperienceAnalyticsBaseline](../resources/intune-devices-userexperienceanalyticsbaseline.md)|Listar propriedades e relações dos [objetos userExperienceAnalyticsBaseline.](../resources/intune-devices-userexperienceanalyticsbaseline.md)|
@@ -34,8 +34,8 @@ A entidade de linha de base de análise de experiência do usuário contém valo
 ## <a name="properties"></a>Propriedades
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|id|Cadeia de caracteres|O identificador exclusivo da linha de base de análise de experiência do usuário.|
-|displayName|Cadeia de caracteres|O nome da linha de base de análise de experiência do usuário.|
+|id|String|O identificador exclusivo da linha de base de análise de experiência do usuário.|
+|displayName|String|O nome da linha de base de análise de experiência do usuário.|
 |overallScore|Int32|A pontuação geral da linha de base de análise de experiência do usuário.|
 |isBuiltIn|Booliano|Significa se a linha de base atual é a linha de base mediana comercial ou uma linha de base personalizada.|
 |createdDateTime|DateTimeOffset|A data em que a linha de base personalizada foi criada.|
@@ -49,6 +49,7 @@ A entidade de linha de base de análise de experiência do usuário contém valo
 |resourcePerformanceMetrics|[userExperienceAnalyticsCategory](../resources/intune-devices-userexperienceanalyticscategory.md)|As métricas de desempenho do recurso de análise de experiência do usuário.|
 |appHealthMetrics|[userExperienceAnalyticsCategory](../resources/intune-devices-userexperienceanalyticscategory.md)|As métricas de saúde do aplicativo de análise de experiência do usuário.|
 |workFromAnywhereMetrics|[userExperienceAnalyticsCategory](../resources/intune-devices-userexperienceanalyticscategory.md)|A análise da experiência do usuário funciona de qualquer lugar.|
+|batteryHealthMetrics|[userExperienceAnalyticsCategory](../resources/intune-devices-userexperienceanalyticscategory.md)|As métricas de métricas de saúde da bateria de análise de experiência do usuário.|
 
 ## <a name="json-representation"></a>Representação JSON
 Veja a seguir uma representação JSON do recurso.

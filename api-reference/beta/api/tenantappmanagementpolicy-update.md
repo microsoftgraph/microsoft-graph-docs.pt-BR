@@ -9,8 +9,8 @@ ms.openlocfilehash: 47291b07116baa10640c6224f39c183050f54cb7
 ms.sourcegitcommit: c7ff992ef63e480d070421ba99b28ee129cb6acb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/02/2021
-ms.locfileid: "60676788"
+ms.lasthandoff: 11/03/2021
+ms.locfileid: "60696090"
 ---
 # <a name="update-tenantappmanagementpolicy"></a>Atualizar tenantAppManagementPolicy
 

@@ -5,16 +5,24 @@ doc_type: enumPageType
 ms.localizationpriority: medium
 ms.prod: non-product-specific
 author: MSGraphDocsvTeam
-ms.openlocfilehash: 0629bc0561e65f381c4fba38d815c7886713547d
-ms.sourcegitcommit: 2a9b82dae63d8a998711679a379ae1fa89df80e0
+ms.openlocfilehash: f1f4ef82726167a5484eae35531763d53dfaec0a
+ms.sourcegitcommit: c7ff992ef63e480d070421ba99b28ee129cb6acb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60214402"
+ms.lasthandoff: 11/03/2021
+ms.locfileid: "60693420"
 ---
 # <a name="enum-values"></a>Valores denum
 
 Namespace: microsoft.graph
+
+### <a name="continuousaccessevaluationmode-values"></a>valores continuousAccessEvaluationMode 
+
+|Member|
+|:---|
+|strictEnforcement|
+|desabilitadas|
+|unknownFutureValue|
 
 ### <a name="multifactorauthconfiguration-values"></a>valores multiFactorAuthConfiguration
 
@@ -39,6 +47,15 @@ Namespace: microsoft.graph
 |:-----|
 |passwordAddition|
 |passwordLifetime|
+|symmetricKeyAddition|
+|symmetricKeyLifetime|
+|unknownFutureValue|
+
+### <a name="appkeycredentialrestrictiontype-values"></a>Valores appKeyCredentialRestrictionType
+
+|Member|
+|:-----|
+|asymmetricKeyLifetime|
 |unknownFutureValue|
 
 ### <a name="synchronizationsecret-values"></a>valores synchronizationSecret
@@ -167,7 +184,7 @@ Namespace: microsoft.graph
 
 |Member|
 |:---|
-|Cadeia de caracteres|
+|String|
 |Inteiro|
 |Referência|
 |Binário|
@@ -444,7 +461,7 @@ Namespace: microsoft.graph
 |aplicação|
 |usuários|
 |devicePlatform|
-|location|
+|localização|
 |clientType|
 |signInRisk|
 |userRisk|
@@ -923,7 +940,7 @@ Namespace: microsoft.graph
 |site|
 |list|
 |listItem|
-|Unidade|
+|drive|
 |unknownFutureValue|
 
 ### <a name="searchalterationtype-values"></a>searchAlterationType values
@@ -949,7 +966,7 @@ Namespace: microsoft.graph
 | relative           | 1     | O usuário é relativo.                     |
 | aide               | 2     | O assistente do usuário.                         |
 | dr             | 3     | O médico do usuário.                       |
-| guardian           | 4      | O tutor do usuário.                     |
+| guardian           | 4     | O tutor do usuário.                     |
 | filho              | 5     | O filho do usuário.                        |
 | other              | 6      | Uma relação não especificada com o usuário. |
 | unknownFutureValue | 7      | Valor do marcador para compatibilidade futura.   |
@@ -1077,7 +1094,7 @@ Namespace: microsoft.graph
 | tentativo        | 1     |
 | ocupado             | 2     |
 | oof              | 3     |
-| workingElsewhere | 4      |
+| workingElsewhere | 4     |
 | desconhecido          | -1    |
 
 
@@ -1127,7 +1144,7 @@ Namespace: microsoft.graph
 | lightGreen  | 1     |
 | lightOrange | 2     |
 | lightGray   | 3     |
-| lightYellow | 4      |
+| lightYellow | 4     |
 | lightTeal   | 5     |
 | lightPink   | 6      |
 | lightBrown  | 7      |
@@ -1383,7 +1400,7 @@ Namespace: microsoft.graph
 | Automático
 | noPreview
 | checklist
-| description
+| descrição
 | referência
 
 
@@ -1493,7 +1510,7 @@ Namespace: microsoft.graph
 | preset1  | 1     |
 | preset2  | 2     |
 | preset3  | 3     |
-| preset4  | 4      |
+| preset4  | 4     |
 | preset5  | 5     |
 | preset6  | 6      |
 | preset7  | 7      |
@@ -1534,7 +1551,7 @@ Possíveis valores de comentários sobre o alerta fornecido por um analista.
 | sha1                | 1     | Tipo de hash SHA1.                |
 | sha256              | 2     | Tipo de hash SHA256.              |
 | md5                 | 3     | Tipo de hash MD5.                 |
-| authenticodeHash256 | 4      | Tipo de hash AuthenticodeHash256. |
+| authenticodeHash256 | 4     | Tipo de hash AuthenticodeHash256. |
 | lsHash              | 5     | Tipo de hash LsHash.              |
 | ctph                | 6      | Tipo de hash CTPH.                |
 | peSha1              | 7      | Tipo de hash PESHA1.              |
@@ -1556,7 +1573,7 @@ Possíveis valores de comentários sobre o alerta fornecido por um analista.
 | tentativa | 1     | Tentativa de conexão.      |
 | bem-sucedido | 2     | Conexão bem-sucedida.      |
 | blocked   | 3     | Conexão bloqueada.        |
-| failed    | 4      | Falha na conexão.         |
+| failed    | 4     | Falha na conexão.         |
 
 ### <a name="processintegritylevel-values"></a>Valores processIntegrityLevel
 
@@ -1579,7 +1596,7 @@ Enum para hives do Registro conforme definido por [https://docs.microsoft.com/wi
 | currentConfig           | 1     | HKEY_CURRENT_CONFIG hive.         |
 | currentUser             | 2     | HKEY_CURRENT_USER hive.           |
 | localMachineSam         | 3     | HKEY_LOCAL_MACHINE\SAM hive.      |
-| localMachineSamSoftware | 4      | HKEY_LOCAL_MACHINE\Software hive. |
+| localMachineSamSoftware | 4     | HKEY_LOCAL_MACHINE\Software hive. |
 | localMachineSystem      | 5     | HKEY_LOCAL_MACHINE\System hive.   |
 | usersDefault            | 6      | HKEY_USERS \\ . Hive PADRÃO.        |
 
@@ -1604,7 +1621,7 @@ Enum para tipos de valor do Registro conforme definido pelos [tipos de valor do 
 | binário            | 1     | REG_BINARY tipo de valor do Registro.              |
 | dword             | 2     | REG_DWORD tipo de valor do Registro.               |
 | dwordLittleEndian | 3     | REG_DWORD_LITTLE_ENDIAN tipo de valor do Registro. |
-| dwordBigEndian    | 4      | REG_DWORD_BIG_ENDIAN tipo de valor do Registro.    |
+| dwordBigEndian    | 4     | REG_DWORD_BIG_ENDIAN tipo de valor do Registro.    |
 | expandSz          | 5     | REG_EXPAND_SZ tipo de valor do Registro.           |
 | link              | 6      | REG_LINK tipo de valor do Registro.                |
 | multiSz           | 7      | REG_MULTI_SZ tipo de valor do Registro.            |
@@ -1623,7 +1640,7 @@ Enum para gravidade dos alertas.
 | informational | 1     | Severidade é apenas para informações. |
 | low           | 2     | A gravidade é baixa.                  |
 | medium        | 3     | A gravidade é média.               |
-| high          | 4      | A gravidade é alta.                 |
+| high          | 4     | A gravidade é alta.                 |
 
 ### <a name="alertstatus-values"></a>valores alertStatus
 
@@ -1657,7 +1674,7 @@ Valores possíveis para o método de login do usuário.
 | remoteInteractive | 1     | Logon é interativo remoto. |
 | network           | 2     | Logon é rede.            |
 | batch             | 3     | Logon é lote.              |
-| serviço           | 4      | Logon é serviço.            |
+| serviço           | 4     | Logon é serviço.            |
 
 ### <a name="useraccountsecuritytype-values"></a>valores userAccountSecurityType
 
@@ -1819,7 +1836,7 @@ Valores possíveis para tipos de conta de usuário (associação ao grupo), por 
 | Nenhuma   | 0     |
 | Adicionar    | 1     |
 | Atualizar | 2     |
-| Excluir | 4      |
+| Excluir | 4     |
 
 ### <a name="chatmessagetype-values"></a>valores chatMessageType
 
@@ -1899,7 +1916,7 @@ Valores possíveis para tipos de conta de usuário (associação ao grupo), por 
 | Nenhum | 0 |  O usuário não tem permissão para substituir a mensagem. O usuário não tem permissão para relatar uma mensagem como falso positivo se policyTip não for fornecida. Em todos os outros cenários, o usuário pode relatar uma mensagem como falso positivo.|
 | AllowFalsePositiveOverride | 1 |  O usuário não tem permissão para substituir explicitamente o bloco, a menos que isso seja combinado `AllowOverrideWithoutJustification` com ou `AllowOverrideWithJustification` sinalizadores. Relatar um falso positivo na violação substitui automaticamente o bloco e envia a mensagem. |
 | AllowOverrideWithoutJustification | 2 | O usuário tem permissão para substituir o bloco e enviar a mensagem. O texto de justificativa não é necessário. Exclusivo para `AllowOverrideWithJustification` . |
-| AllowOverrideWithJustification | 4  |  O usuário tem permissão para substituir o bloco e enviar a mensagem. O texto de justificativa é necessário. Exclusivo para `AllowOverrideWithoutJustification` .|
+| AllowOverrideWithJustification | 4 |  O usuário tem permissão para substituir o bloco e enviar a mensagem. O texto de justificativa é necessário. Exclusivo para `AllowOverrideWithoutJustification` .|
 
 ### <a name="entitytype-values"></a>valores entityType
 
@@ -1972,7 +1989,7 @@ Valores possíveis para tipos de conta de usuário (associação ao grupo), por 
 | Automático     | 1     | O rótulo foi escolhido como resultado das condições de política.       |
 | recomendado   | 2     | O escolhido para aplicar um rótulo recomendado.                    |
 | policyDefault | 3     | O usuário não ação e o rótulo padrão de política foi aplicado. |
-| obrigatório     | 4      | O usuário escolheu um rótulo após ser forçado a escolher.         |
+| obrigatório     | 4     | O usuário escolheu um rótulo após ser forçado a escolher.         |
 
 ### <a name="contentalignment-values"></a>valores contentAlignment
 
@@ -2056,7 +2073,7 @@ Valores possíveis para tipos de conta de usuário (associação ao grupo), por 
 
 | Membro | Valor | Descrição             |
 |:-------|:------|:------------------------|
-| Email   | 1     | Ameaça de email.            |
+| email   | 1     | Ameaça de email.            |
 | url    | 2     | Ameaça de URL.             |
 | file   | 3     | Ameaça de arquivo de anexo. |
 
@@ -2074,7 +2091,7 @@ Valores possíveis para tipos de conta de usuário (associação ao grupo), por 
 | spam               | 1     | Ameaça de spam.       |
 | phishing           | 2     | Ameaça de phishing.   |
 | malware            | 3     | Ameaça de malware.    |
-| unknownFutureValue | 4      | Um membro do sentinel. |
+| unknownFutureValue | 4     | Um membro do sentinel. |
 
 ### <a name="threatassessmentstatus-values"></a>valores threatAssessmentStatus
 
@@ -2107,7 +2124,7 @@ Valores possíveis para tipos de conta de usuário (associação ao grupo), por 
 | mailFlowRule          | 1     | Exchange regra de transporte.            |
 | safeSender            | 2     | Cofre lista de remetentes.                   |
 | blockedSender         | 3     | Lista de remetentes bloqueados.                |
-| advancedSpamFiltering | 4      | Opção avançada de filtragem de spam.     |
+| advancedSpamFiltering | 4     | Opção avançada de filtragem de spam.     |
 | domainAllowList       | 5     | Lista de permitir domínio de remetente.           |
 | domainBlockList       | 6      | Lista de bloqueios de domínio do remetente.           |
 | notInAddressBook      | 7      | Excluir remetente que não está no livro de endereços. |
@@ -2182,7 +2199,7 @@ Valores possíveis para tipos de conta de usuário (associação ao grupo), por 
 |usuário | coluna de pessoa ou grupo. |
 |url | hyperlink ou coluna de imagem. |
 |calculado | coluna calculada. |
-|location | coluna de local. |
+|localização | coluna de local. |
 |geolocalização | coluna de localização geográfica. |
 |term | coluna de metadados gerenciados. |
 |multiterm | coluna de metadados gerenciados aceitando vários valores. |
@@ -2205,7 +2222,7 @@ Valores possíveis para tipos de conta de usuário (associação ao grupo), por 
 | string                | 1     | Tipo de dados de cadeias de caracteres                    |
 | booliano               | 2     | Tipo de dados Booliano                   |
 | int64                 | 3     | Tipo de dados de int                       |
-| stringCollection      | 4      | Tipo de dados da coleção String         |
+| stringCollection      | 4     | Tipo de dados da coleção String         |
 |dateTime|5||
 | unknownFutureValue    | 6      | Um membro do sentinel.                  |
 
@@ -2216,7 +2233,7 @@ Valores possíveis para tipos de conta de usuário (associação ao grupo), por 
 | builtIn               | 1     | Esse tipo de atributo de fluxo de usuário indica que ele foi criado pelo sistema |
 | custom                | 2     | Esse tipo de atributo de fluxo de usuário indica que ele foi criado pelo usuário   |
 |obrigatório|3||
-| unknownFutureValue    | 4      | Um membro do sentinel.                                                 |
+| unknownFutureValue    | 4     | Um membro do sentinel.                                                 |
 
 ### <a name="permissionclassificationtype-values"></a>valores permissionClassificationType
 
@@ -2553,9 +2570,64 @@ Valores possíveis para tipos de conta de usuário (associação ao grupo), por 
 |meeting|
 |screenShare|
 |unknownFutureValue|
+
 ### <a name="binaryoperator-values"></a>Valores binaryOperator 
 
 |Member|
 |:---|
 |ou|
 |e|
+
+
+### <a name="subjectrightsrequeststage-values"></a>valores subjectRightsRequestStage 
+
+|Member|
+|:---|
+|contentRetrieval|
+|contentReview| 
+|generateReport| 
+|contentDeletion|
+|caseResolved|
+|unknownFutureValue|
+
+### <a name="subjectrightsrequeststagestatus-values"></a>valores subjectRightsRequestStageStatus 
+
+|Member|
+|:---|
+|notStarted|
+|current|
+|completed|
+|failed|
+|unknownFutureValue|
+
+### <a name="subjectrightsrequeststatus-values"></a>valores subjectRightsRequestStatus 
+
+|Member|
+|:---|
+|active|
+|closed|
+|unknownFutureValue|
+
+### <a name="subjectrightsrequesttype-values"></a>valores subjectRightsRequestType 
+
+|Member|
+|:---|
+|export|
+|delete|
+|access|
+|tagForAction|
+|unknownFutureValue|
+
+### <a name="datasubjecttype-values"></a>valores dataSubjectType 
+
+|Member|
+|:---|
+|customer|
+|currentEmployee|
+|formerEmployee|
+|prospectiveEmployee|
+|student|
+|teacher|
+|faculty|
+|other|
+|unknownFutureValue|

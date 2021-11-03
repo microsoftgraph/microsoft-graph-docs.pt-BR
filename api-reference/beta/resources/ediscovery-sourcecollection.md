@@ -2,15 +2,15 @@
 title: Tipo de recurso sourceCollection
 description: Representa uma coleção eDiscovery, comumente conhecida como pesquisa.
 author: mahage-msft
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: ediscovery
 doc_type: resourcePageType
-ms.openlocfilehash: aca8b0dcf89f00ada59b093d1164104da0885578
-ms.sourcegitcommit: e440d855f1106390d842905d97ceb16f143db2e5
+ms.openlocfilehash: 13d98f74ce4ce0c734f4950ec028b038a9819a30
+ms.sourcegitcommit: c7ff992ef63e480d070421ba99b28ee129cb6acb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/29/2021
-ms.locfileid: "52080467"
+ms.lasthandoff: 11/03/2021
+ms.locfileid: "60687989"
 ---
 # <a name="sourcecollection-resource-type"></a>Tipo de recurso sourceCollection
 
@@ -20,7 +20,7 @@ Namespace: microsoft.graph.ediscovery
 
 Representa uma coleção eDiscovery, comumente conhecida como pesquisa. Para detalhes, consulte [Coletar dados para um caso na Descoberta Eletrônica Avançada](/microsoft-365/compliance/collecting-data-for-ediscovery).
 
-## <a name="methods"></a>Métodos
+## <a name="methods"></a>Methods
 
 |Método|Tipo de retorno|Descrição|
 |:---|:---|:---|
@@ -41,12 +41,12 @@ Representa uma coleção eDiscovery, comumente conhecida como pesquisa. Para det
 
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|contentQuery|Cadeia de Caracteres|A cadeia de caracteres de consulta na consulta KQL (Keyword Query Language). Para obter detalhes, consulte [Consultas de palavra-chave e condições de pesquisa para Pesquisa de Conteúdo e Descoberta De Conteúdo.](https://docs.microsoft.com/microsoft-365/compliance/keyword-queries-and-search-conditions)  Você pode refinar pesquisas usando campos emparelhados com valores; por exemplo, *subject:"Quarterly Financials" AND Date>=06/01/2016 AND Date<=07/01/2016*|
+|contentQuery|String|A cadeia de caracteres de consulta na consulta KQL (Keyword Query Language). Para obter detalhes, consulte [Consultas de palavra-chave e condições de pesquisa para Pesquisa de Conteúdo e Descoberta De Conteúdo.](https://docs.microsoft.com/microsoft-365/compliance/keyword-queries-and-search-conditions) Você pode refinar pesquisas usando campos emparelhados com valores; por exemplo, *subject:"Quarterly Financials" AND Date>=06/01/2016 AND Date<=07/01/2016*.|
 |createdBy|[identitySet](../resources/identityset.md)|O usuário que criou **o sourceCollection**.|
 |createdDateTime|DateTimeOffset|A data e a hora em **que o sourceCollection** foi criado.|
-|dataSourceScopes|microsoft.graph.ediscovery.dataSourceScopes|Quando especificado, a coleção se estenderá por um serviço para uma carga de trabalho inteira. Os valores possíveis são: `none` , , , , `allTenantMailboxes` `allTenantSites` `allCaseCustodians` `allCaseNoncustodialDataSources` .|
-|description|String|A descrição da **sourceCollection**|
-|displayName|String|O nome de exibição da **sourceCollection**|
+|dataSourceScopes|microsoft.graph.ediscovery.dataSourceScopes|Quando especificado, a coleção se estenderá por um serviço para uma carga de trabalho inteira. Os valores possíveis são: `none`, `allTenantMailboxes`, `allTenantSites`, `allCaseCustodians`, `allCaseNoncustodialDataSources`.|
+|descrição|String|A descrição da **sourceCollection**.|
+|displayName|String|O nome de exibição do **sourceCollection**.|
 |id|String| A ID da **sourceCollection**. Somente leitura. |
 |lastModifiedBy|[identitySet](../resources/identityset.md)|O último usuário que modificou **o sourceCollection**.|
 |lastModifiedDateTime|DateTimeOffset|A última data e hora em **que o sourceCollection** foi modificado.|
@@ -55,7 +55,7 @@ Representa uma coleção eDiscovery, comumente conhecida como pesquisa. Para det
 
 |Member|Descrição|
 |:----|-----------|
-|nenhuma|Não especifique nenhum escopo - os locais seriam referenciados separadamente.|
+|none|Não especifique nenhum escopo - os locais seriam referenciados separadamente.|
 |allTenantMailboxes|Inclua todas as caixas de correio de locatários **na sourceCollection**.|
 |allTenantSites|Inclua todos os sites de **locatários no sourceCollection**.|
 |allCaseCustodians|Inclua todos os locais de custodia na **sourceCollection**.|

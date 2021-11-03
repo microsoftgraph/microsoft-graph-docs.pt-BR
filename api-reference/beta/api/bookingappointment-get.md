@@ -1,24 +1,24 @@
 ---
 title: Obter bookingAppointment
 description: Obter as propriedades e as relações de um objeto bookingAppointment no bookingbusiness especificado.
-localization_priority: Normal
+ms.localizationpriority: medium
 author: arvindmicrosoft
 ms.prod: bookings
 doc_type: apiPageType
-ms.openlocfilehash: 951ccbd2865b53bb8ec5d082b857221612986dbd
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: 561befe48daf961012289f81c1e3a114b432cc79
+ms.sourcegitcommit: c7ff992ef63e480d070421ba99b28ee129cb6acb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52047928"
+ms.lasthandoff: 11/03/2021
+ms.locfileid: "60694621"
 ---
 # <a name="get-bookingappointment"></a>Obter bookingAppointment
 
 Namespace: microsoft.graph
 
- [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Obter as propriedades e as relações de um [objeto bookingAppointment](../resources/bookingappointment.md) no [bookingbusiness especificado.](../resources/bookingbusiness.md)
+Obter as propriedades e as relações de um [objeto bookingAppointment](../resources/bookingappointment.md) no [bookingBusiness especificado.](../resources/bookingbusiness.md)
 
 As **propriedades inicial** e **final** sempre são retornadas em UTC.
 ## <a name="permissions"></a>Permissões
@@ -48,7 +48,7 @@ Não forneça um corpo de solicitação para esse método.
 ## <a name="response"></a>Resposta
 Se tiver êxito, este método retornará um código de resposta e um `200 OK` [objeto bookingAppointment](../resources/bookingappointment.md) no corpo da resposta.
 ## <a name="example"></a>Exemplo
-##### <a name="request"></a>Solicitação
+### <a name="request"></a>Solicitação
 Este é um exemplo de solicitação.
 
 # <a name="http"></a>[HTTP](#tab/http)
@@ -77,8 +77,11 @@ GET https://graph.microsoft.com/beta/bookingBusinesses/Contosolunchdelivery@M365
 
 ---
 
-##### <a name="response"></a>Resposta
-Este é um exemplo de resposta. Observação: o objeto de resposta mostrado aqui pode ser encurtado para legibilidade.
+### <a name="response"></a>Resposta
+Este é um exemplo de resposta. 
+
+>**Observação:** o objeto de resposta mostrado aqui pode ser encurtado para legibilidade.
+
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -92,11 +95,15 @@ Content-type: application/json
     "@odata.context": "https://graph.microsoft.com/beta/$metadata#bookingBusinesses('Contosolunchdelivery%40M365B489948.onmicrosoft.com')/appointments/$entity",
     "id": "AAMkADKnAAA=",
     "selfServiceAppointmentId": "00000000-0000-0000-0000-000000000000",
+    "isLocationOnline": true,
+    "joinWebUrl": "https://teams.microsoft.com/l/meetup-join/19%3ameeting_MTlhZTE3MDUtODk0Yy00MGZkLTlhNzktN2FmYTk3MDUxNmE2%40thread.v2/0?context=%7b%22Tid%22%3a%22995fa18c-b557-4694-8d07-b89779d6dc77%22%2c%22Oid%22%3a%22d4d260ab-989d-490e-b121-e2066391807a%22%7d",
     "customerId": "7ed53fa5-9ef2-4f2f-975b-27447440bc09",
     "customerName": "Jordan Miller",
     "customerEmailAddress": "jordanm@contoso.com",
     "customerPhone": "213-555-0199",
     "customerNotes": null,
+    "customerTimeZone": "America/Chicago",
+    "smsNotificationsEnabled": true,
     "serviceId": "57da6774-a087-4d69-b0e6-6fb82c339976",
     "serviceName": "Catered bento",
     "duration": "PT30M",

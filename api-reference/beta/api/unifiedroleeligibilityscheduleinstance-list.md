@@ -1,16 +1,16 @@
 ---
 title: Listar unifiedRoleEligibilityScheduleInstances
 description: Obter uma lista dos objetos unifiedRoleEligibilityScheduleInstance e suas propriedades.
-author: shauliu1
-localization_priority: Normal
+author: carolinetempleton
+ms.localizationpriority: medium
 ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: ecbed534fa342df6f3611b14270f6a7beded925a
-ms.sourcegitcommit: 01755ac7c0ab7becf28052e05e58567caa8364cd
+ms.openlocfilehash: 12dfb9bf0d883608ed8db3cf87e132f228784927
+ms.sourcegitcommit: c7ff992ef63e480d070421ba99b28ee129cb6acb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/21/2021
-ms.locfileid: "58452439"
+ms.lasthandoff: 11/03/2021
+ms.locfileid: "60688504"
 ---
 # <a name="list-unifiedroleeligibilityscheduleinstances"></a>Listar unifiedRoleEligibilityScheduleInstances
 Namespace: microsoft.graph

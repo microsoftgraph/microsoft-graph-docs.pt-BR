@@ -5,12 +5,12 @@ ms.localizationpriority: high
 author: sureshja
 ms.prod: applications
 doc_type: resourcePageType
-ms.openlocfilehash: b7aa417042622717e60e04dbb1050026681d161f
-ms.sourcegitcommit: 11be55b40804b07f4c422f09f601afa97c7d31ed
+ms.openlocfilehash: 557f79410baebf0c32e6034cbe923e9df585dc5a
+ms.sourcegitcommit: c7ff992ef63e480d070421ba99b28ee129cb6acb
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/09/2021
-ms.locfileid: "60256519"
+ms.lasthandoff: 11/03/2021
+ms.locfileid: "60695283"
 ---
 # <a name="application-resource-type"></a>tipo de recurso do aplicativo
 
@@ -50,6 +50,12 @@ Esse recurso tem suporte para o uso da [consulta delta](/graph/delta-query-overv
 | [Listar extensões](../api/application-list-extensionproperty.md) | Coleção [extensionProperty](extensionProperty.md) | Listar propriedades de extensão em um objeto de aplicativo. |
 | [Criar extensão](../api/application-post-extensionproperty.md) | [extensionProperty](extensionProperty.md) | Criar uma propriedade de extensão em um objeto de aplicativo. |
 | [Excluir extensão](../api/application-delete-extensionproperty.md) | Nenhum | Excluir uma propriedade de extensão de um objeto de aplicativo. |
+|**Credenciais de identidade federada**| | |
+| [Lista federatedIdentityCredential](../api/application-list-federatedidentitycredentials.md) | Coleção [federatedIdentityCredential](../resources/federatedidentitycredential.md) | Listar credenciais de identidade federada em um objeto de aplicativo. |
+| [Criar federatedIdentityCredential](../api/application-post-federatedidentitycredentials.md) | [federatedIdentityCredential](../resources/federatedidentitycredential.md) | Crie uma credencial de identidade federada em um objeto de aplicativo. |
+| [Obter federatedIdentityCredential](../api/federatedidentitycredential-get.md) | [federatedIdentityCredential](../resources/federatedidentitycredential.md) | Recupere as propriedades de uma credencial de identidade federada. |
+| [Atualizar federatedIdentityCredential](../api/federatedidentitycredential-update.md) | Nenhum | Atualize uma credencial de identidade federada de um objeto de aplicativo. |
+| [Excluir federatedIdentityCredential](../api/federatedidentitycredential-delete.md) | Nenhum | Exclua uma credencial de identidade federada de um objeto de aplicativo. |
 |**Owners**| | |
 |[Listar proprietários](../api/application-list-owners.md) |Coleção [directoryObject](directoryobject.md)| Obtenha uma coleção de objetos owner.|
 |[Adicionar proprietário](../api/application-post-owners.md) |[directoryObject](directoryobject.md)| Adicionar um proprietário postando na coleção de proprietários.|
@@ -85,7 +91,7 @@ Esse recurso tem suporte para o uso da [consulta delta](/graph/delta-query-overv
 | displayName | String | O nome de exibição do aplicativo. Suporta `$filter` (`eq`, `ne`, `NOT`, `ge`, `le`, `in`, `startsWith`), `$search`, e `$orderBy`. |
 | groupMembershipClaims | Cadeia de caracteres | Configura a declaração `groups` emitida em um usuário ou token de acesso OAuth 2.0 que o aplicativo espera. Para definir esse atributo, use um dos seguintes valores de cadeia de caracteres: `None`, (para grupos de segurança e funções do `SecurityGroup` Azure AD), (isso obtém todos os grupos de segurança, grupos de distribuição e funções de diretório do Azure AD dos qual o usuário conectado é `All` membro). |
 | id | String | O identificador exclusivo do aplicativo. Herdado [directoryObject](directoryobject.md). Chave. Não anulável. Somente leitura. Dá suporte `$filter`(`eq`, `ne`, `NOT`, `in`). |
-| identifierUris | Coleção de cadeias de caracteres | Os URIs que identificam o aplicativo em seu locatário do Azure AD ou em um domínio personalizado verificado, se o aplicativo é multilocatário. Para saber mais, confira [Objetos de aplicativo e Objetos de entidade de serviço](/azure/active-directory/develop/app-objects-and-service-principals). O operador `any` é obrigatório para expressões de filtro em propriedades de vários valores. Não anulável. <br><br>Suporta `$filter` (`eq`, `ne`, `ge`, `le`, `startsWith`).|
+| identifierUris | Coleção de cadeias de caracteres | Também conhecido como URI da ID do Aplicativo, esse valor é definido quando um aplicativo é usado como um aplicativo de recurso. O identifierUris atua como o prefixo para os escopos que você referenciará no código da API e deve ser globalmente exclusivo. Você pode usar o valor padrão fornecido, que está no formato `api://<application-client-id>` ou especificar um URI mais legível, como `https://contoso.com/api`. Para obter mais informações sobre padrões de identifierUris válidos e práticas recomendadas, consulte [Práticas recomendadas de segurança de registro de aplicativo do Azure Active Directory](/azure/active-directory/develop/security-best-practices-for-app-registration#appid-uri-configuration). Não anulável. <br><br>Suporta `$filter` (`eq`, `ne`, `ge`, `le`, `startsWith`). |
 | informações  | [informationalUrl](informationalurl.md) | Informações básicas de perfil do aplicativo, como marketing, suporte, termos de serviço e URLs de política de privacidade do aplicativo. Os termos de serviço e a política de privacidade são revelados aos usuários por meio da experiência de consentimento do usuário. Para obter mais informações, confira [Como: Adicionar termos de serviço e política de privacidade a aplicativos registrados do Azure AD](/azure/active-directory/develop/howto-add-terms-of-service-privacy-statement). <br><br>Suporta `$filter` (`eq`, `ne`, `NOT`, `ge`, `le`). |
 | isDeviceOnlyAuthSupported | Booliano | Especifica se este aplicativo dá suporte à autenticação de dispositivo sem um usuário. O padrão é `false`.  |
 | isFallbackPublicClient | Booliano | Especifica o tipo de aplicativo de fallback como cliente público; por exemplo, um aplicativo instalado em um dispositivo móvel. O valor padrão é `false`, o que significa que o tipo de aplicativo de fallback é cliente confidencial, como um aplicativo web. No entanto, há situações em que o Azure AD não consegue determinar o tipo de aplicativo cliente. Por exemplo, o fluxo [ROPC](https://tools.ietf.org/html/rfc6749#section-4.3) onde o aplicativo está configurado sem especificar um URI de redirecionamento. Nesses casos, o Azure AD interpretará o tipo de aplicativo com base no valor dessa propriedade.|
@@ -126,6 +132,7 @@ Esse recurso tem suporte para o uso da [consulta delta](/graph/delta-query-overv
 |connectorGroup|[connectorGroup](connectorgroup.md)| O conectorGrupo que o aplicativo está usando com o Proxy de Aplicativo do Microsoft Azure Active Directory. Anulável.|
 |createdOnBehalfOf|[directoryObject](directoryobject.md)| Somente leitura.|
 |extensionProperties|Coleção [extensionProperty](extensionproperty.md)| Somente leitura. Anulável.|
+|federatedIdentityCredentials|Coleção [federatedIdentityCredential](federatedidentitycredential.md) |Identidades federadas para aplicativos. Esse objeto só pode ser recuperado em uma única solicitação GET (`GET /applications/{id}/federatedIdentityCredentials`).|
 |onlineMeetings  |Coleção [onlineMeeting](onlinemeeting.md)|Somente leitura. Anulável.|
 |owners|Coleção [directoryObject](directoryobject.md)|Objetos de diretório que são proprietários do aplicativo. Somente leitura. Nullable. Dá `$expand`.|
 |tokenLifetimePolicies|Conjunto [tokenLifetimePolicy](tokenLifetimePolicy.md)|O tokenLifetimePolicies atribuído a este aplicativo. Dá `$expand`.|

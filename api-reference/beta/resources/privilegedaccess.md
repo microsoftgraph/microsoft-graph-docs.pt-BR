@@ -1,16 +1,16 @@
 ---
 title: Tipo de recurso privilegedAccess
 description: " por exemplo, `privilegedAccess/azureResources` representa o PIM gerenciando o acesso privilegiado aos recursos do Azure."
-localization_priority: Normal
+ms.localizationpriority: medium
 doc_type: resourcePageType
 ms.prod: governance
-author: shauliu1
-ms.openlocfilehash: 0ada5d88ea0404577869aea9a1f1453c1d77fc3f
-ms.sourcegitcommit: 01755ac7c0ab7becf28052e05e58567caa8364cd
+author: carolinetempleton
+ms.openlocfilehash: 9f7bf8f06ae75bd082664b5efad3e5ca9c46b70e
+ms.sourcegitcommit: c7ff992ef63e480d070421ba99b28ee129cb6acb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/21/2021
-ms.locfileid: "58453965"
+ms.lasthandoff: 11/03/2021
+ms.locfileid: "60696949"
 ---
 # <a name="privilegedaccess-resource-type"></a>Tipo de recurso privilegedAccess
 
@@ -26,11 +26,11 @@ Representa um grupo de funcionalidades fornecidas pelo serviço Privileged Ident
 ## <a name="properties"></a>Propriedades
 | Propriedade  | Tipo      |Descrição|
 |:----------|:----------|:----------|
-|id         |Cadeia de caracteres     |A id do provedor gerenciado pelo PIM.|
-|displayName|Cadeia de caracteres     |O nome de exibição do provedor gerenciado pelo PIM.|
+|id         |String     |A id do provedor gerenciado pelo PIM.|
+|displayName|String     |O nome de exibição do provedor gerenciado pelo PIM.|
 
 
-## <a name="relationships"></a>Relacionamentos
+## <a name="relationships"></a>Relações
 | Relação   | Tipo                                         |Descrição|
 |:---------------|:---------------------------------------------|:----------|
 |recursos       |[Coleção governanceResource](../resources/governanceresource.md)            |Uma coleção de recursos para o provedor.|

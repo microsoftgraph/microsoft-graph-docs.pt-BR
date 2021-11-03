@@ -5,12 +5,12 @@ author: sacampbe-msft
 ms.localizationpriority: medium
 ms.prod: search
 doc_type: apiPageType
-ms.openlocfilehash: 8e2c51843f0558bea93b264edb4243456cc065fa
-ms.sourcegitcommit: 0eb843a6f61f384bc28c0cce1ccb74f64bdb1fa6
+ms.openlocfilehash: e56928947f05a04c844d9839308e35aae5a88870
+ms.sourcegitcommit: c7ff992ef63e480d070421ba99b28ee129cb6acb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/23/2021
-ms.locfileid: "60558557"
+ms.lasthandoff: 11/03/2021
+ms.locfileid: "60687794"
 ---
 # <a name="update-externalgroup"></a>Atualizar externalGroup
 Namespace: microsoft.graph.externalConnectors
@@ -51,8 +51,8 @@ No corpo da solicitação, fornece os valores para propriedades relevantes que d
 
 | Propriedade    | Tipo   | Descrição                                                                                                              |
 |:------------|:-------|:-------------------------------------------------------------------------------------------------------------------------|
-| displayName | Cadeia de caracteres | O nome amigável do grupo externo. Opcional.                                                                      |
-| description | Cadeia de caracteres | A descrição do grupo externo. Opcional.                                                                         |
+| displayName | String | O nome amigável do grupo externo. Opcional.                                                                      |
+| descrição | String | A descrição do grupo externo. Opcional.                                                                         |
 
 
 
@@ -65,6 +65,8 @@ Se tiver êxito, este método retornará um código de resposta `204 No Content`
 ### <a name="request"></a>Solicitação
 
 
+
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "update_externalgroup"
@@ -79,6 +81,24 @@ Content-Type: application/json
   "description": "The product marketing team"
 }
 ```
+# <a name="c"></a>[C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/update-externalgroup-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/update-externalgroup-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/update-externalgroup-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/update-externalgroup-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 
 
