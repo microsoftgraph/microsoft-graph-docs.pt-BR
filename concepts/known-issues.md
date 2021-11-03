@@ -3,12 +3,12 @@ title: Problemas conhecidos com o Microsoft Graph
 description: Este artigo descreve os problemas conhecidos com o Microsoft Graph.
 author: MSGraphDocsVTeam
 ms.localizationpriority: high
-ms.openlocfilehash: aac341142c5253cb2f7ed8c5d9dc635e2a54f8c9
-ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
+ms.openlocfilehash: 925fa2538496b20b5b22a99823ea80fed8d9b1a0
+ms.sourcegitcommit: c7ff992ef63e480d070421ba99b28ee129cb6acb
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/18/2021
-ms.locfileid: "60445588"
+ms.lasthandoff: 11/03/2021
+ms.locfileid: "60688097"
 ---
 # <a name="known-issues-with-microsoft-graph"></a>Problemas conhecidos com o Microsoft Graph
 
@@ -392,7 +392,11 @@ Esse erro ocorre por causa das falhas de verificação de licença intermitentes
 Para obter uma lista de equipes, confira [listar todas as equipes](teams-list-all-teams.md) e [listar suas equipes](/graph/api/user-list-joinedteams).
 
 ### <a name="unable-to-filter-team-members-by-roles"></a>Não é possível filtrar os membros da equipe por funções
-A consulta de filtro para obter membros de uma equipe com base em suas funções, `GET /teams/team-id/members?$filter=roles/any(r:r eq 'owner')`, pode não funcionar. O servidor pode responder com um `BAD REQUEST`.
+Filtros de consulta de função junto com outros filtros `GET /teams/team-id/members?$filter=roles/any(r:r eq 'owner') and displayName eq 'dummy'` podem não funcionar. O servidor pode responder com uma.`BAD REQUEST`
+
+### <a name="requests-to-filter-team-members-by-role-require-a-parameter"></a>Solicitações para filtrar membros da equipe por função exigem um parâmetro
+
+Todas as solicitações para filtrar membros da equipe por funções esperam um parâmetro _skipToken_ ou um parâmetro _top_ na solicitação, mas não ambos. Se ambos os parâmetros forem passados na solicitação, o parâmetro _top_ será ignorado.
 
 ### <a name="some-properties-for-chat-members-might-be-missing-in-the-response-to-a-get-request"></a>Algumas propriedades para membros do chat podem estar ausentes na resposta a uma solicitação GET
 Em certos casos, a `tenantId` / `email` / `displayName` propriedade para os membros individuais de um bate-papo pode não ser preenchida em uma solicitação `GET /chats/chat-id/members` ou `GET /chats/chat-id/members/membership-id`.
@@ -412,7 +416,8 @@ Os usuários podem ser criados imediatamente por um POST na entidade do usuário
 
 ### <a name="access-to-a-users-profile-photo-is-limited"></a>O acesso à foto de perfil de um usuário é limitado
 
-A leitura e a atualização da foto do perfil do usuário só serão possíveis se o usuário tiver uma caixa de correio. Além disso, as fotos que *possam* ter sido previamente armazenadas usando a propriedade **thumbnailPhoto** (usando o Azure AD Graph ou por meio da sincronização do AD Connect) deixarão de estar acessíveis com a propriedade **photo** do recurso [usuário](/graph/api/resources/user) do Microsoft Graph. A falha na leitura ou na atualização de uma foto, nesse caso, resulta no seguinte erro:
+A leitura e a atualização da foto do perfil do usuário só serão possíveis se o usuário tiver uma caixa de correio. Além disso, quaisquer fotos que *possam* ter sido armazenadas anteriormente usando a propriedade **thumbnailPhoto** (usando a API do Azure AD Graph (preterido) ou por meio da sincronização do AD Connect) não estarão mais acessíveis por meio da propriedade de **foto** do Microsoft Graph do recurso de [usuário](/graph/api/resources/user).
+Falha ao ler ou atualizar uma foto, nesse caso, resulta no seguinte erro:
 
 ```javascript
 {
@@ -459,6 +464,6 @@ As seguintes limitações se aplicam aos parâmetros de consulta:
 * Os parâmetros de consulta especificados em uma solicitação podem falhar silenciosamente. Isto pode ser verdade tanto para parâmetros de consulta não suportados quanto para combinações não suportadas de parâmetros de consulta..
 
 
-## <a name="functionality-available-only-in-office-365-rest-or-azure-ad-graph-apis"></a>Funcionalidade disponível apenas nas APIs Graph do Azure AD ou REST do Office 365
+## <a name="functionality-available-only-in-office-365-rest-or-azure-ad-graph-apis-deprecated"></a>Funcionalidade disponível somente nas APIs rest do Office 365 ou do Graph do Azure Active Directory (preterida)
 
-Alguns recursos ainda não estão disponíveis no Microsoft Graph. Se você não vir a funcionalidade que está procurando, poderá usar as [APIs REST do Office 365](/previous-versions/office/office-365-api/) específicas do ponto de extremidade. Para o Azure Active Directory, confira [Migrar os aplicativos do Azure AD Graph para o Microsoft Graph](./migrate-azure-ad-graph-planning-checklist.md).
+Alguns recursos ainda não estão disponíveis no Microsoft Graph. Se você não vir a funcionalidade que está procurando, poderá usar as [APIs REST do Office 365](/previous-versions/office/office-365-api/) específicas do ponto de extremidade. Para o Azure Active Directory Graph, consulte [Migrar aplicativos do Graph do Azure Active Directory (Azure AD) para Microsoft Graph](./migrate-azure-ad-graph-overview.md).
