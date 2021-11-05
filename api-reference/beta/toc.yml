@@ -404,12 +404,20 @@ items:
                     href: api/insights-list-used.md
               - name: Controle de organização (visualização)
                 items:
-                  - name: Configurações de insights de item
-                    href: resources/iteminsightssettings.md
-                  - name: Obter
-                    href: api/iteminsightssettings-get.md
-                  - name: Atualizar
-                    href: api/iteminsightssettings-update.md
+                  - name: Insights configurações
+                    href: resources/insightssettings.md
+                  - name: Configurações informações sobre o item
+                    items:
+                      - name: Listar
+                        href: api/organizationsettings-list-iteminsights.md
+                      - name: Atualizar
+                        href: api/insightssettings-update.md
+                  - name: Configurações informações de pessoas
+                    items:
+                      - name: Listar
+                        href: api/organizationsettings-list-peopleinsights.md
+                      - name: Atualizar
+                        href: api/insightssettings-update.md
               - name: Controle do usuário (visualização)
                 items:
                   - name: Configurações de insights do usuário
@@ -499,6 +507,14 @@ items:
                 href: resources/person.md
               - name: Listar pessoas
                 href: api/user-list-people.md
+              - name: Configurações informações de pessoas
+                items:
+                  - name: Insights configurações
+                    href: resources/insightssettings.md
+                  - name: Listar
+                    href: api/organizationsettings-list-peopleinsights.md
+                  - name: Atualizar
+                    href: api/insightssettings-update.md
           - name: Foto
             href: resources/profilephoto.md
             items:
@@ -907,7 +923,7 @@ items:
                     items:
                       - name: Atribuir
                         href: api/application-post-tokenissuancepolicies.md
-                      - name: List
+                      - name: Listar
                         href: api/application-list-tokenissuancepolicies.md
                       - name: Remover
                         href: api/application-delete-tokenissuancepolicies.md
@@ -916,7 +932,7 @@ items:
                     items:
                       - name: Atribuir
                         href: api/application-post-tokenlifetimepolicies.md
-                      - name: List
+                      - name: Listar
                         href: api/application-list-tokenlifetimepolicies.md
                       - name: Remover
                         href: api/application-delete-tokenlifetimepolicies.md
@@ -1100,7 +1116,7 @@ items:
                     items:
                       - name: Atribuir
                         href: api/serviceprincipal-post-claimsmappingpolicies.md
-                      - name: List
+                      - name: Listar
                         href: api/serviceprincipal-list-claimsmappingpolicies.md
                       - name: Remover
                         href: api/serviceprincipal-delete-claimsmappingpolicies.md
@@ -1109,7 +1125,7 @@ items:
                     items:
                       - name: Atribuir
                         href: api/serviceprincipal-post-homerealmdiscoverypolicies.md
-                      - name: List
+                      - name: Listar
                         href: api/serviceprincipal-list-homerealmdiscoverypolicies.md
                       - name: Remover
                         href: api/serviceprincipal-delete-homerealmdiscoverypolicies.md
@@ -1118,7 +1134,7 @@ items:
                     items:
                       - name: Atribuir
                         href: api/application-post-tokenissuancepolicies.md
-                      - name: List
+                      - name: Listar
                         href: api/application-list-tokenissuancepolicies.md
                       - name: Remover
                         href: api/application-delete-tokenissuancepolicies.md
@@ -1127,7 +1143,7 @@ items:
                     items:
                       - name: Atribuir
                         href: api/application-post-tokenlifetimepolicies.md
-                      - name: List
+                      - name: Listar
                         href: api/application-list-tokenlifetimepolicies.md
                       - name: Remover
                         href: api/application-delete-tokenlifetimepolicies.md
@@ -1507,7 +1523,7 @@ items:
                 href: api/call-logteleconferencedevicequality.md
           - name: Registros de chamadas
             items:
-              - name: Visão Geral
+              - name: Visão geral
                 href: resources/callrecords-api-overview.md
               - name: Registro de chamada
                 items:
@@ -1519,7 +1535,7 @@ items:
                 items:
                   - name: Session
                     href: resources/callrecords-session.md
-                  - name: List
+                  - name: Listar
                     href: api/callrecords-session-list.md
               - name: Chamadas PSTN
                 items:
@@ -1586,7 +1602,7 @@ items:
             href: resources/complianceapioverview.md
           - name: Descoberta eDiscovery (visualização)
             items:
-              - name: Visão Geral
+              - name: Visão geral
                 href: resources/ediscovery-eDiscoveryapioverview.md
               - name: Caso de Descoberta Eletrônica
                 href: resources/ediscovery-case.md
@@ -1621,7 +1637,7 @@ items:
                     href: api/ediscovery-casesettings-get.md
                   - name: Atualizar configurações
                     href: api/ediscovery-casesettings-update.md
-                  - name: Redefinir para padrão
+                  - name: Redefinir para o padrão
                     href: api/ediscovery-casesettings-resettodefault.md
                   - name: Listar coleções de origem
                     href: api/ediscovery-case-list-sourcecollections.md
@@ -1742,7 +1758,7 @@ items:
                     href: api/ediscovery-tag-ashierarchy.md
           - name: Solicitação de direitos do sujeito
             items:
-              - name: Visão Geral
+              - name: Visão geral
                 href: resources/subjectrightsrequest-subjectrightsrequestapioverview.md
               - name: Solicitação de direitos do sujeito
                 href: resources/subjectrightsrequest.md
@@ -9908,12 +9924,12 @@ items:
               - name: Região suportada pelo Cloud PC
                 href: resources/cloudpcsupportedregion.md
                 items:
-                  - name: List
+                  - name: Listar
                     href: api/virtualendpoint-list-supportedregions.md
               - name: Plano de serviço de computador na nuvem
                 href: resources/cloudpcserviceplan.md
                 items:
-                  - name: List
+                  - name: Listar
                     href: api/virtualendpoint-list-serviceplans.md
           - name: Atualizações do dispositivo (prévia)
             displayName: Windows updates
@@ -11572,7 +11588,7 @@ items:
                         href: api/activitybasedtimeoutpolicy-delete.md
                   - name: Política de método de autenticação de aplicativo (visualização)
                     items:
-                      - name: Visão Geral
+                      - name: Visão geral
                         href: resources/applicationAuthenticationMethodPolicy.md
                       - name: Política de gerenciamento de aplicativos de locatário
                         items:
@@ -12222,7 +12238,7 @@ items:
                   - name: Atribuição de pacote do Access
                     href: resources/accesspackageassignment.md
                     items:
-                      - name: List
+                      - name: Listar
                         href: api/accesspackageassignment-list.md
                       - name: Filtrar pelo usuário atual
                         href: api/accesspackageassignment-filterbycurrentuser.md
@@ -12354,7 +12370,7 @@ items:
                     href: resources/privilegedidentitymanagement-root.md
                   - name: Azure AD (preterido))
                     items:
-                      - name: Microsoft Azure AD
+                      - name: Azure AD
                         href: resources/privilegedidentitymanagement-directory.md
                       - name: Função com privilégios
                         href: resources/privilegedrole.md
@@ -12761,7 +12777,7 @@ items:
                 href: api/user-post-notifications.md
       - name: Inteligência de pessoas e local de trabalho
         items:
-          - name: Visão Geral
+          - name: Visão geral
             href: resources/social-overview.md
           - name: Pessoas
             items:
@@ -12769,6 +12785,14 @@ items:
                 href: resources/person.md
               - name: Listar pessoas
                 href: api/user-list-people.md
+              - name: Configurações informações de pessoas
+                items:
+                  - name: Insights configurações
+                    href: resources/insightssettings.md
+                  - name: Listar
+                    href: api/organizationsettings-list-peopleinsights.md
+                  - name: Atualizar
+                    href: api/insightssettings-update.md
           - name: Perfil (visualização)
             items:
               - name: Perfil
@@ -13077,45 +13101,44 @@ items:
                 items:
                   - name: Insights de item (visualização)
                     href: resources/iteminsights.md
-                  - name: Compartilhados
-                    href: resources/insights-shared.md
+                  - name: Listar compartilhados
+                    href: api/insights-list-shared.md
+                  - name: Listar tendências
+                    href: api/insights-list-trending.md
+                  - name: Listar usados
+                    href: api/insights-list-used.md
+              - name: Controle de organização (visualização)
+                items:
+                  - name: Insights configurações
+                    href: resources/insightssettings.md
+                  - name: Configurações informações sobre o item
                     items:
-                      - name: Listar compartilhados
-                        href: api/insights-list-shared.md
-                  - name: Tendências
-                    href: resources/insights-trending.md
-                    items:
-                      - name: Listar tendências
-                        href: api/insights-list-trending.md
-                  - name: Usados
-                    href: resources/insights-used.md
-                    items:
-                      - name: Listar usados
-                        href: api/insights-list-used.md
-                  - name: Controle de organização (visualização)
-                    items:
-                      - name: Configurações de insights de item
-                        href: resources/iteminsightssettings.md
-                      - name: Obter
-                        href: api/iteminsightssettings-get.md
+                      - name: Listar
+                        href: api/organizationsettings-list-iteminsights.md
                       - name: Atualizar
-                        href: api/iteminsightssettings-update.md
-                  - name: Controle do usuário (visualização)
+                        href: api/insightssettings-update.md
+                  - name: Configurações informações de pessoas
                     items:
-                      - name: Configurações de insights do usuário
-                        href: resources/userinsightssettings.md
-                      - name: Obter
-                        href: api/userinsightssettings-get.md
+                      - name: Listar
+                        href: api/organizationsettings-list-peopleinsights.md
                       - name: Atualizar
-                        href: api/userinsightssettings-update.md
+                        href: api/insightssettings-update.md
+              - name: Controle do usuário (visualização)
+                items:
+                  - name: Configurações de insights do usuário
+                    href: resources/userinsightssettings.md
+                  - name: Obter
+                    href: api/userinsightssettings-get.md
+                  - name: Atualizar
+                    href: api/userinsightssettings-update.md
           - name: Menção (visualização)
             href: resources/mention.md
           - name: Análise (visualização)
             href: resources/useranalytics.md
             items:
-              - name: Settings
+              - name: Configurações
                 items:
-                  - name: Settings
+                  - name: Configurações
                     href: resources/settings.md
                   - name: Obter configurações
                     href: api/useranalytics-get-settings.md
@@ -13251,7 +13274,7 @@ items:
                   - name: Resumo detalhado da parte de base
                     href: resources/relyingpartydetailedsummary.md
                     items:
-                      - name: List
+                      - name: Listar
                         href: api/relyingpartydetailedsummary-list.md
               - name: Entrar no aplicativo
                 items:
@@ -13801,7 +13824,7 @@ items:
                     href: api/site-delete-permission.md
           - name: Listas
             items:
-              - name: List
+              - name: Listar
                 href: resources/list.md
               - name: Obter listas em um site
                 href: api/list-list.md
@@ -13915,7 +13938,7 @@ items:
               - name: Set
                 href: resources/termstore-set.md
                 items:
-                  - name: List
+                  - name: Listar
                     href: api/termstore-group-list-sets.md
                   - name: Listar filhos
                     href: api/termstore-term-list-children.md
@@ -13952,7 +13975,7 @@ items:
         items:
           - name: Visão Geral
             href: resources/planner-overview.md
-          - name: Planejar
+          - name: Plano
             href: resources/plannerplan.md
             items:
               - name: Listar os planos do grupo
@@ -14241,6 +14264,10 @@ items:
                 href: api/chat-list-operations.md
               - name: Obter operação
                 href: api/teamsasyncoperation-get.md
+              - name: Marcar o chat como leitura
+                href: api/chat-markchatreadforuser.md
+              - name: Marcar o chat como não lido
+                href: api/chat-markchatunreadforuser.md
           - name: Mensagem de chat
             href: resources/chatmessage.md
             items:
@@ -14454,7 +14481,7 @@ items:
                     href: api/offershiftrequest-post.md
                   - name: Obter
                     href: api/offershiftrequest-get.md
-                  - name: List
+                  - name: Listar
                     href: api/offershiftrequest-list.md
                   - name: Aprovar
                     href: api/offershiftrequest-approve.md
@@ -14610,7 +14637,7 @@ items:
       - name: Tarefas pendentes
         displayName: Microsoft To Do
         items:
-          - name: Visão Geral
+          - name: Visão geral
             href: resources/todo-overview.md
           - name: Lista de tarefas
             href: resources/todotasklist.md

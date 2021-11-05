@@ -3,12 +3,12 @@ title: Componentes Graph Toolkit React Microsoft
 description: Os componentes Graph Toolkit React microsoft ( ) permitem que React `mgt-react` desenvolvedores usem o microsoft Graph Toolkit em seus React aplicativos.
 ms.localizationpriority: medium
 author: nmetulev
-ms.openlocfilehash: 95c45379a46b4fe068c183e924c1268831fc15b6
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: f81446c2b8a2938bd86057b1cbf5f33d583b49f9
+ms.sourcegitcommit: f9e71d3b8a54a98c282ef49783babe5698300c06
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59103827"
+ms.lasthandoff: 11/05/2021
+ms.locfileid: "60793893"
 ---
 # <a name="microsoft-graph-toolkit-react-components"></a>Componentes Graph Toolkit React Microsoft
 
@@ -93,7 +93,12 @@ import { MgtTemplateProps } from '@microsoft/mgt-react';
 
 const MyEvent = (props: MgtTemplateProps) => {
   const { event } = props.dataContext;
-  return <div>{event.subject}</div>;
+  return <div>
+    {event.subject}<br />
+    {event.attendees
+      .map((attendee: any) => attendee.emailAddress.name)
+      .join(', ')}
+  </div>;
 };
 ```
 
@@ -111,7 +116,7 @@ const App = (props) => {
 
 O `template` prop permite especificar qual modelo substituir. Nesse caso, o componente será repetido para cada evento e o `MyEvent` objeto será passado como parte do `event` `dataContext` prop.
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Também consulte
 
 * [Começar a trabalhar com o microsoft Graph Toolkit no React](./use-toolkit-with-react.md)
 * [Saiba mais sobre provedores de autenticação](../providers/providers.md)
