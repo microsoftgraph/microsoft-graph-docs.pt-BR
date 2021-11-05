@@ -1,11 +1,11 @@
 ---
 description: Arquivo gerado automaticamente. NÃO MODIFICAR
-ms.openlocfilehash: 7646782816931f456dead8243975993763c656f9
-ms.sourcegitcommit: 486fe9c77d4d89c5416bb83e8c716e6918c47370
+ms.openlocfilehash: 7ffb5ff06a20c7528f0612fa389d4dcd027469a3
+ms.sourcegitcommit: ddeee0eec277df06d9e635e5b5c257d14c856273
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/15/2021
-ms.locfileid: "53440475"
+ms.lasthandoff: 11/04/2021
+ms.locfileid: "60780501"
 ---
 ```csharp
 
@@ -15,11 +15,11 @@ var group = new Group
 {
     AdditionalData = new Dictionary<string, object>()
     {
-        {"@odata.id", "https://graph.microsoft.com/odata/groups('dc3d2ce5-7c5e-4dca-a0ef-2145bf6e53ef')"}
+        {"@odata.id", "https://graph.microsoft.com/odata/groups('1a9db3ab-0acf-4808-99ae-e8ed581cb2e0')"}
     }
 };
 
-await graphClient.Policies.MobileDeviceManagementPolicies["{mobilityManagementPolicy-id}"].IncludedGroups.References
+await graphClient.Policies.MobileAppManagementPolicies["{mobilityManagementPolicy-id}"].IncludedGroups.References
     .Request()
     .AddAsync(group);
 
