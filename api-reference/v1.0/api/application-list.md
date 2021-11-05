@@ -5,12 +5,12 @@ author: sureshja
 ms.localizationpriority: high
 ms.prod: applications
 doc_type: apiPageType
-ms.openlocfilehash: f7e5bce11754b7a7ddf2df23e00b4ca6edd87501
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 6bbbe66a33a3e15fa1aa6a71959885c6d216e6a2
+ms.sourcegitcommit: ddeee0eec277df06d9e635e5b5c257d14c856273
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59023063"
+ms.lasthandoff: 11/04/2021
+ms.locfileid: "60781000"
 ---
 # <a name="list-applications"></a>Listar aplicativos
 
@@ -39,6 +39,10 @@ GET /applications
 ## <a name="optional-query-parameters"></a>Parâmetros de consulta opcionais
 
 Este método suporta aos parâmetros de consulta `$count`, `$expand`, `$filter`, `$orderBy`, `$search`, `$select`, e `$top` [OData](/graph/query-parameters) para ajudar a personalizar a resposta. Algumas consultas são suportadas somente quando se usa o cabeçalho **ConsistencyLevel** definido como `eventual` e `$count`. Para obter mais informações, consulte [Funcionalidades avançadas de consulta nos objetos de diretório do Microsoft Azure AD](/graph/aad-advanced-queries).
+
+Por padrão, essa API não retorna o valor da **chave** na propriedade **keyCredentials** ao listar todos os aplicativos. Para recuperar as informações de chave pública na **chave**, a propriedade **keyCredentials** deve ser especificada em uma consulta `$select`. Por exemplo, `$select=id,appId,keyCredentials`.
+
+O uso de `$select` para obter **keyCredentials** para aplicativos tem um limite de aceleração de 150 solicitações por minuto para cada locatário.
 
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
 

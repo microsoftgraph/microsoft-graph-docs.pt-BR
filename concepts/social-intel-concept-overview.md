@@ -5,25 +5,25 @@ author: simonhult
 ms.localizationpriority: high
 ms.prod: insights
 ms.custom: scenarios:getting-started
-ms.openlocfilehash: 3107e7dbfcc54e1a2b9c76bdf35cecf1e80ef527
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 7769bbce057dd387bdc7494c98f069f6a4d06c9b
+ms.sourcegitcommit: ddeee0eec277df06d9e635e5b5c257d14c856273
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59103939"
+ms.lasthandoff: 11/04/2021
+ms.locfileid: "60780860"
 ---
 # <a name="overview-of-people-and-workplace-intelligence-in-microsoft-graph"></a>Visão geral da inteligência pessoal e de local de trabalho no Microsoft Graph
 
 As centenas de milhões de usuários que utilizam os serviços de nuvem do Microsoft 365 fazem parte do núcleo do Microsoft Graph. Os dados dos usuários são cuidadosamente gerenciados, protegidos e, com a autorização adequada, disponibilizados pelos serviços do Microsoft Graph para promover a criatividade e a produtividade em empresas. 
 
-A API de perfil permite que você, como desenvolvedor de aplicativos, modele e represente pessoas nos serviços do Microsoft 365, e a API de cartão de perfil, permite que os administradores controlem as informações mostradas nos cartões de perfil dos usuários na organização.
+A _API de perfil_ permite que você, como desenvolvedores de aplicativos, modele e represente pessoas nos serviços do Microsoft 365, e a API do cartão de perfil permite que os administradores controlem as informações exibidas nos cartões de perfil dos usuários na organização.
 
 Mesmo os dados do usuário sendo onipresentes no Microsoft Graph, os dados derivados das interações do usuário são especialmente interessantes. Eles fornece informações inteligentes que podem responder a perguntas como:
 
 - "Pesquisar Pessoas cujo nome comece com ‘J’"
 - "Quais documentos são interessantes para essa pessoa?"
 
-Você pode usar a API de Pessoas e a API do Insights no Microsoft Graph para criar aplicativos mais inteligentes que podem, respectivamente, acessar as pessoas e os documentos relevantes para um usuário.
+Você pode utilizar a _API de pessoas_ e a _API de insights_ no Microsoft Graph para criar aplicativos mais inteligentes que podem, respectivamente, acessar pessoas e documentos relevantes para um usuário.
 
 A API de pessoas devolve pessoas ordenadas por relevância para um usuário, com base nos contatos do usuário, redes sociais, diretório da organização e comunicações recentes por email. Isso é particularmente útil para pessoas escolhendo cenários.
 

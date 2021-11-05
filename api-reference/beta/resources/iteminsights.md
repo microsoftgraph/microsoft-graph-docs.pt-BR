@@ -5,12 +5,12 @@ author: simonhult
 ms.localizationpriority: high
 ms.prod: insights
 doc_type: resourcePageType
-ms.openlocfilehash: 602cb58130f801e129bc334163cd7dabcc0d0b1b
-ms.sourcegitcommit: c333953a9188b4cd4a9ab94cbe68871e8f3563e5
+ms.openlocfilehash: 74452522b77e240c398c80a4dc8bec9c377efb09
+ms.sourcegitcommit: ddeee0eec277df06d9e635e5b5c257d14c856273
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/30/2021
-ms.locfileid: "58696978"
+ms.lasthandoff: 11/04/2021
+ms.locfileid: "60780923"
 ---
 # <a name="iteminsights-resource-type"></a>tipo de recurso itemInsights
 
@@ -28,7 +28,11 @@ Cada ideia é retornada com um tipo de valor complexo (CVT) `resourceVisualizati
 
 ### <a name="limiting-item-insights"></a>Limitando as informações do item
 
-Atualize [itemInsightsSettings](iteminsightssettings.md) para desabilitar as informações do item em um grupo específico do Azure AD ou em toda a organização. Para obter mais detalhes, confira [personalizar política de informações](/graph/insights-customize-item-insights-privacy?view=graph-rest-1.0).
+Atualize [insightsSettings](insightssettings.md) para desabilitar insights de item para um grupo específico do Microsoft Azure AD ou de uma organização inteira. Para obter mais detalhes, confira [personalizar política de informações](/graph/insights-customize-item-insights-privacy).
+
+## <a name="properties"></a>Propriedades
+
+Nenhum.
 
 ## <a name="relationships"></a>Relações
 

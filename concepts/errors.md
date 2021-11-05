@@ -2,12 +2,12 @@
 title: Respostas de erros e tipos de recurso do Microsoft Graph
 description: Este tópico descreve alguns dos erros que podem ser retornados nas respostas do Microsoft Graph.
 ms.localizationpriority: high
-ms.openlocfilehash: 4f080b18e2ef645a2045efe08437bb05684fb2a9
-ms.sourcegitcommit: f4999aa6fc05f845027db01aa489f7086f9850e1
+ms.openlocfilehash: 6894090958a53764a38b4be346fc1ab625ae9f23
+ms.sourcegitcommit: c7ff992ef63e480d070421ba99b28ee129cb6acb
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/13/2021
-ms.locfileid: "60289158"
+ms.lasthandoff: 11/03/2021
+ms.locfileid: "60694348"
 ---
 # <a name="microsoft-graph-error-responses-and-resource-types"></a>Respostas de erros e tipos de recurso do Microsoft Graph
 
@@ -142,7 +142,7 @@ public bool IsError(string expectedErrorCode)
 
 Para um exemplo que mostra como lidar de maneira apropriada com erros, consulte [Tratamento de Código de Erro](https://gist.github.com/rgregg/a1866be15e685983b441).
 
-A propriedade `message` na raiz contém uma mensagem de erro destinada ao desenvolvedor. As mensagens de erro não são localizadas e não devem ser exibidas diretamente para o usuário. Ao tratar de erros, seu código não deve desviar dos valores `message` porque eles podem mudar a qualquer momento e geralmente contêm informações dinâmicas específicas para a solicitação com falha. Você só deve escrever códigos contra códigos de erro retornados nas propriedades `code`.
+A propriedade `message` na raiz contém uma mensagem de erro destinada ao desenvolvedor. As mensagens de erro não são localizadas e não devem ser exibidas diretamente para o usuário. Ao lidar com erros, seu código não deve ramificar com base em `message` valores, pois eles podem ser alterados a qualquer momento e geralmente contêm informações dinâmicas específicas para a solicitação com erro. Você só deve escrever códigos contra códigos de erro retornados nas propriedades `code`.
 
 #### <a name="detailed-error-codes"></a>Códigos de erro detalhados
 A seguir estão alguns erros adicionais que seu aplicativo pode encontrar nos objetos aninhados `innererror`. Os aplicativos não são obrigados a tratar deles, mas podem, se quiserem. O serviço pode adicionar novos códigos de erro ou parar de retornar os antigos a qualquer hora; portanto, é importante que todos os aplicativos consigam tratar dos [códigos de erro básicos](#code-property).
@@ -172,8 +172,8 @@ A seguir estão alguns erros adicionais que seu aplicativo pode encontrar nos ob
 | **maxItemCountExceeded**           | Limite máximo do número de itens atingido.
 | **maxQueryLengthExceeded**         | Comprimento máximo de consulta excedido.
 | **maxStreamSizeExceeded**          | Tamanho máximo de fluxo excedido.
-| **parameterIsTooLong**             | Parâmetro excede o comprimento máximo.
-| **parameterIsTooSmall**            | Parâmetro é menor que o valor mínimo.
+| **parameterIsTooLong**             | O parâmetro excede o comprimento máximo.
+| **parameterIsTooSmall**            | O parâmetro é menor que o valor mínimo.
 | **pathIsTooLong**                  | O caminho excede o comprimento máximo.
 | **pathTooDeep**                    | Atingido o limite de profundidade da hierarquia de pastas.
 | **propertyNotUpdateable**          | Propriedade não atualizável.

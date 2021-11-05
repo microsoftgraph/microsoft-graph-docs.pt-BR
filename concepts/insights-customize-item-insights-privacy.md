@@ -5,12 +5,12 @@ author: simonhult
 ms.localizationpriority: high
 ms.prod: insights
 ms.custom: scenarios:getting-started
-ms.openlocfilehash: b60a0699493e72b70999388b019de773ae9e4677
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 430c44adc75bf18d44d3e3bc6d3c0fc7dc724b45
+ms.sourcegitcommit: ddeee0eec277df06d9e635e5b5c257d14c856273
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59136030"
+ms.lasthandoff: 11/04/2021
+ms.locfileid: "60780930"
 ---
 # <a name="customizing-item-insights-privacy-in-microsoft-graph-preview"></a>Personalizando a privacidade das informações do item no Microsoft Graph (visualização)
 
@@ -38,7 +38,7 @@ Embora os aplicativos existentes possam continuar a usar o **officeGraphInsights
 
 As configurações das informações do item fornecem flexibilidade para os administradores usarem as ferramentas do Microsoft Azure AD. Os administradores podem desabilitar as informações do item para toda a organização ou apenas para membros de um grupo específico do Microsoft Azure AD. Eles podem configurar as insights dos itens no Centro de administração do Microsoft 365, ou usando o PowerShell SDK ou Microsoft Graph REST API com as devidas permissões. Lembre-se de que a _função de administrador global_ é necessária. 
 
-A próxima seção descreve o uso do centro administrativo, e é seguida pela seção sobre PowerShell cmdlets. Se você estiver usando o REST API, pule as duas próximas seções e continue com [Configure as percepções do item usando o REST API](#configure-item-insights-using-rest-api). Em seguida, confira as operações REST [ler](/graph/api/iteminsightssettings-get?view=graph-rest-beta&preserve-view=true) ou [atualizar](/graph/api/iteminsightssettings-update?view=graph-rest-beta&preserve-view=true) para obter mais informações.
+A próxima seção descreve o uso do centro administrativo, e é seguida pela seção sobre PowerShell cmdlets. Se você estiver usando o REST API, pule as duas próximas seções e continue com [Configure as percepções do item usando o REST API](#configure-item-insights-using-rest-api). Em seguida, confira as operações REST [ler](/graph/api/organizationsettings-list-iteminsights?view=graph-rest-beta&preserve-view=true) ou [atualizar](/graph/api/insightssettings-update?view=graph-rest-beta&preserve-view=true) para obter mais informações.
 
 ### <a name="how-to-configure-item-insights-settings-via-microsoft-admin-center"></a>Como configurar as configurações de item de insights através do centro administrativo da Microsoft?
 Um administrador com o _papel de administrador global_ pode afinar as configurações de privacidade dos itens através de botões de alternância. Para fazer isso, no Centro de administração do Microsoft 365, expanda **Configurações**, selecione **Pesquisa e inteligência** e, em **Informações do item**, escolha **Alterar configurações**.
@@ -82,10 +82,10 @@ Como alternativa, você pode alterar o padrão e desabilitar as informações do
 ### <a name="configure-item-insights-using-rest-api"></a>Configurar as informações do item usando a API REST
 Conforme declarado anteriormente, por padrão, as configurações de privacidade das informações do item são habilitadas para toda a organização. Essas configurações são expostas por meio de uma propriedade de navegação chamada **itemInsights** em [organizationSettings](/graph/api/resources/organizationsettings?view=graph-rest-beta&preserve-view=true). Você pode alterar o padrão de duas maneiras:
 
-- Desabilite as informações do item para todos os usuários na organização, definindo a propriedade **isEnabledInOrganization** do recurso [itemInsightsSettings](/graph/api/resources/iteminsightssettings?view=graph-rest-beta&preserve-view=true) como `false`. 
+- Desative os insights de itens para todos os usuários da organização, definindo a propriedade **isEnabledInOrganization** do recurso [insightsSettings](/graph/api/resources/insightssettings?view=graph-rest-beta&preserve-view=true) como `false`. 
 - Desabilite as informações do item para um _subconjunto_ de usuários, atribuindo esses usuários em um grupo do Microsoft Azure AD e definindo a propriedade **disabledForGroup** como a ID do grupo. Saiba mais sobre o [criar um grupo e adicionar usuários como membros](/azure/active-directory/fundamentals/active-directory-groups-create-azure-portal). 
 
-Use a operação de [atualização](/graph/api/iteminsightssettings-update?view=graph-rest-beta&preserve-view=true) para definir as propriedades **isEnabledInOrganization** e **disabledForGroup** de acordo.
+Use a operação de [atualização](/graph/api/insightssettings-update?view=graph-rest-beta&preserve-view=true) para definir as propriedades **isEnabledInOrganization** e **disabledForGroup** de acordo.
 
 | Como as informações do item são habilitadas | isEnabledInOrganization | disabledForGroup |
 |:-------------|:------------|:------------|
@@ -94,7 +94,7 @@ Use a operação de [atualização](/graph/api/iteminsightssettings-update?view=
 | Desabilitado para toda a organização | `false` | ignorado |
 
 Lembre-se do seguinte ao atualizar as configurações de informações do item:
-- [As configurações de informações do item](/graph/api/resources/iteminsightssettings?view=graph-rest-beta&preserve-view=true) estão disponíveis apenas no ponto de extremidade beta.
+- As [configurações de insights](/graph/api/resources/insightssettings?view=graph-rest-beta&preserve-view=true) estão disponíveis somente no ponto de extremidade beta.
 - Obtenha a ID de um grupo do Azure AD no portal do Azure e verifique se o grupo existe, porque a operação de atualização não verifica a existência do grupo. Especificar um grupo inexistente no **disabledForGroup** _não_ desabilita as informações para todos os usuários da organização.
 - Atualização das configurações pode levar até 24 horas para ser aplicada em todas as experiências Microsoft 365.
 - Independentemente das configurações de informações do item, o Delve continua a respeitar as [configurações de privacidade](/sharepoint/delve-for-office-365-admins#control-access-to-delve-and-related-features?view=graph-rest-beta&preserve-view=true) do locatário e do usuário do Delve.
