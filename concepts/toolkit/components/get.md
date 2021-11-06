@@ -3,12 +3,12 @@ title: Obter componente no Microsoft Graph Toolkit
 description: Um componente Get permite que você faça qualquer consulta GET da Microsoft Graph diretamente em seu HTML.
 ms.localizationpriority: medium
 author: nmetulev
-ms.openlocfilehash: 0f2a6f618c66e7517f71200470864d0fe498447f
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 1d12fbe73daa21221ca95cc50e0ae2aa2d44e642
+ms.sourcegitcommit: c00c61ce35a6f204a9907aa6f2644ea7a86a5b6e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59127889"
+ms.lasthandoff: 11/06/2021
+ms.locfileid: "60805385"
 ---
 # <a name="get-component-in-the-microsoft-graph-toolkit"></a>Obter componente no Microsoft Graph Toolkit
 
@@ -35,9 +35,9 @@ Você pode usar vários atributos para alterar o comportamento do componente. O 
 | polling-rate | pollingRate | Número opcional de milissegundos. Quando definido, o componente sonda o URI de solicitação para atualizações no intervalo definido. Se estiver usando uma consulta delta, a sondagem sempre consultará a API delta. O modelo só será atualizado quando os dados mudarem. |
 | habilitado para cache | cacheEnabled | Boolean opcional. Quando definido, indica que a resposta do recurso será armazenada em cache. Substitua se `refresh()` for chamado ou se estiver em `pollingRate` uso. O padrão é `false`. |
 | cache-invalidation-period | cacheInvalidationPeriod | Número opcional de milissegundos. Quando definido em combinação com , o atraso antes que o cache atinja seu período `cacheEnabled` de invalidação será modificado por esse valor. O padrão `0` é e usará o período de invalidação padrão. |
-| tipo | tipo | Tipo opcional da resposta esperada. O padrão é `json`. Suporta `json` ou `image` (só há suporte para pontos de extremidade terminando com `/photo/value$` ). |
-| N/A | response | Resposta somente leitura da Microsoft Graph se a solicitação foi bem-sucedida.  |
-| N/A |erro| Erro somente leitura da Microsoft Graph se a solicitação não tiver sido bem-sucedida. |
+| type | type | Tipo opcional da resposta esperada. O padrão é `json`. Suporta `json` ou `image` (só há suporte para pontos de extremidade terminando com `/photo/value$` ). |
+| Não disponível | response | Resposta somente leitura da Microsoft Graph se a solicitação foi bem-sucedida.  |
+| Não disponível |erro| Erro somente leitura da Microsoft Graph se a solicitação não tiver sido bem-sucedida. |
 
 ## <a name="methods"></a>Métodos
 
@@ -45,7 +45,7 @@ Você pode usar vários atributos para alterar o comportamento do componente. O 
 | --- | --- |
 | refresh(force?:boolean) | Chame o método para atualizar os dados. Por padrão, a interface do usuário só será atualizada se os dados mudarem. Passe `true` para forçar o componente a atualizar.  |
 
-## <a name="events"></a>Events
+## <a name="events"></a>Eventos
 
 Evento | Quando é emitido | Dados personalizados | Cancelável | Bolhas | Funciona com modelo personalizado
 ------|-------------------|--------------|:-----------:|:---------:|:---------------------------:|
@@ -65,7 +65,8 @@ O `mgt-get` componente dá suporte a vários [modelos](../customize-components/t
 | Padrão. | A resposta do Microsoft Graph. | O modelo padrão é necessário para renderizar os dados provenientes do Microsoft Graph. |
 | valor | Item de dados da matriz `value` retornada | Use o modelo em vez do modelo ao esperar que a resposta do gráfico contenha uma matriz de itens - como mensagens, arquivos `value` `default` ou **usuários**.   O `value` modelo será repetido automaticamente para cada item retornado pelo recurso. O `value` modelo também começará a renderizar os itens assim que eles estão prontos (ao contrário do modelo padrão).|
 | erro | O erro da Microsoft Graph. | Esse modelo será usado se houver um erro ao fazer a solicitação. |
-| loading | N/A | Esse modelo é usado enquanto a solicitação está sendo feita. |
+| loading | N/D | Esse modelo é usado enquanto a solicitação está sendo feita. |
+| no-data | Não disponível | Esse modelo é usado quando a solicitação não retorna dados. |
 
 ## <a name="microsoft-graph-permissions"></a>Permissões do Microsoft Graph
 

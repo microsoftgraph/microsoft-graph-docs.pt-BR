@@ -9865,6 +9865,13 @@ items:
                     href: api/cloudpcdeviceimage-getsourceimages.md
                   - name: Reupload
                     href: api/cloudpcdeviceimage-reupload.md
+              - name: Imagem da galeria de computadores na nuvem
+                href: resources/cloudpcgalleryimage.md
+                items:
+                  - name: Listar
+                    href: api/virtualendpoint-list-galleryimages.md
+                  - name: Obter
+                    href: api/cloudpcgalleryimage-get.md
               - name: Conexão local do computador na nuvem
                 href: resources/cloudpconpremisesconnection.md
                 items:
@@ -10597,7 +10604,7 @@ items:
       - name: Finanças (visualização)
         displayname: 'Dynamics, Dynamics 365 Business Central'
         items:
-          - name: Visão Geral
+          - name: Visão geral
             href: resources/dynamics-graph-reference.md
           - name: Conta
             href: resources/dynamics-account.md
@@ -11588,7 +11595,7 @@ items:
                         href: api/activitybasedtimeoutpolicy-delete.md
                   - name: Política de método de autenticação de aplicativo (visualização)
                     items:
-                      - name: Visão geral
+                      - name: Visão Geral
                         href: resources/applicationAuthenticationMethodPolicy.md
                       - name: Política de gerenciamento de aplicativos de locatário
                         items:

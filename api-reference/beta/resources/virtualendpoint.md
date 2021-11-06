@@ -5,12 +5,12 @@ author: AshleyYangSZ
 ms.localizationpriority: medium
 ms.prod: cloud-pc
 doc_type: resourcePageType
-ms.openlocfilehash: 0c271bbbbe37fe35e6d6a21ec5a232ca5f78a9f2
-ms.sourcegitcommit: c7ff992ef63e480d070421ba99b28ee129cb6acb
+ms.openlocfilehash: 395919dd0ee9b0a2399f991e58d9d10ec81fee5a
+ms.sourcegitcommit: c00c61ce35a6f204a9907aa6f2644ea7a86a5b6e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "60694842"
+ms.lasthandoff: 11/06/2021
+ms.locfileid: "60805392"
 ---
 # <a name="virtualendpoint-resource-type"></a>Tipo de recurso virtualEndpoint
 
@@ -26,9 +26,10 @@ Use a API do Cloud PC para provisionar e gerenciar áreas de trabalho virtuais p
 
 |Método|Tipo de retorno|Descrição|
 |:---|:---|:---|
-|[Obter permissões efetivas](../api/virtualendpoint-geteffectivepermissions.md)|Coleção de cadeias de caracteres|Exibir as permissões efetivas do usuário autenticado no momento.|
+|[Obter permissões efetivas](../api/virtualendpoint-geteffectivepermissions.md)|String collection|Exibir as permissões efetivas do usuário autenticado no momento.|
 |[Listar cloudPCs](../api/virtualendpoint-list-cloudpcs.md)|[Coleção cloudPC](../resources/cloudpc.md)|Listar propriedades e relações dos objetos [cloudPC.](../resources/cloudpc.md)|
 |[Listar deviceImages](../api/virtualendpoint-list-deviceimages.md)|[Coleção cloudPcDeviceImage](../resources/cloudpcdeviceimage.md)|Listar as propriedades e as relações dos [objetos cloudPcDeviceImage.](../resources/cloudpcdeviceimage.md)|
+|[List galleryImages](../api/virtualendpoint-list-galleryimages.md)|[Coleção cloudPcGalleryImage](../resources/cloudpcgalleryimage.md)|Listar as propriedades e as relações dos [objetos cloudPcGalleryImage.](../resources/cloudpcgalleryimage.md)|
 |[Criar cloudPcDeviceImage](../api/virtualendpoint-post-deviceimages.md)|[cloudPcDeviceImage](../resources/cloudpcdeviceimage.md)|Crie um novo [objeto cloudPcDeviceImage.](../resources/cloudpcdeviceimage.md)|
 |[Listar onPremisesConnections](../api/virtualendpoint-list-onpremisesconnections.md)|[Coleção cloudPcOnPremisesConnection](../resources/cloudpconpremisesconnection.md)|Listar propriedades e relações dos objetos [cloudPcOnPremisesConnection.](../resources/cloudpconpremisesconnection.md)|
 |[Criar cloudPcOnPremisesConnection](../api/virtualendpoint-post-onpremisesconnections.md)|[cloudPcOnPremisesConnection](../resources/cloudpconpremisesconnection.md)|Crie um novo [objeto cloudPcOnPremisesConnection.](../resources/cloudpconpremisesconnection.md)|
@@ -44,7 +45,7 @@ Use a API do Cloud PC para provisionar e gerenciar áreas de trabalho virtuais p
 
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|id|String|O identificador exclusivo da ID do ponto de extremidade virtual. Somente leitura.|
+|id|Cadeia de caracteres|O identificador exclusivo da ID do ponto de extremidade virtual. Somente leitura.|
 
 ## <a name="relationships"></a>Relações
 
@@ -52,6 +53,7 @@ Use a API do Cloud PC para provisionar e gerenciar áreas de trabalho virtuais p
 |:---|:---|:---|
 |cloudPCs|[Coleção cloudPC](../resources/cloudpc.md)|Áreas de trabalho virtuais gerenciadas na nuvem.|
 |deviceImages|[Coleção cloudPcDeviceImage](../resources/cloudpcdeviceimage.md)|O recurso de imagem no Cloud PC.|
+|galleryImages|[Coleção cloudPcGalleryImage](../resources/cloudpcgalleryimage.md)|O recurso de imagem da galeria no Cloud PC.|
 |onPremisesConnections|[Coleção cloudPcOnPremisesConnection](../resources/cloudpconpremisesconnection.md)|Uma coleção definida de informações de recursos do Azure que pode ser usada para estabelecer a conectividade de rede local para PCs na Nuvem.|
 |provisioningPolicies|[Coleção cloudPcProvisioningPolicy](../resources/cloudpcprovisioningpolicy.md)|Política de provisionamento de computadores na nuvem.|
 |userSettings|[Coleção cloudPcUserSetting](../resources/cloudpcusersetting.md)|Configurações do usuário do computador na nuvem. |
