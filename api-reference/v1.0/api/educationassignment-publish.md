@@ -1,16 +1,16 @@
 ---
 title: 'educationAssignment: publish'
-description: Esta ação publica uma atribuição de educação.
+description: Altere o estado de um educationAssignment de seu status de rascunho original para o status publicado.
 ms.localizationpriority: medium
 author: sharad-sharma-msft
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: 5f7700ef7b45c7068f5f71d613e3a2ca31488948
-ms.sourcegitcommit: 0a312d63934cdf9789a5648c2b3f348f48542ff4
+ms.openlocfilehash: e95b37a0a6a2090a9351827be9d19ea4c82eb295
+ms.sourcegitcommit: ddeee0eec277df06d9e635e5b5c257d14c856273
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/07/2021
-ms.locfileid: "60219785"
+ms.lasthandoff: 11/04/2021
+ms.locfileid: "60780811"
 ---
 # <a name="educationassignment-publish"></a>educationAssignment: publish
 
@@ -18,15 +18,21 @@ Namespace: microsoft.graph
 
 Publicar uma atribuição de educação.
 
+Altere o estado de [um educationAssignment](../resources/educationassignment.md) de seu status original `draft` para o `published` status. 
+
+Você pode alterar o estado de `draft` para `scheduled` se a **atribuição** estiver agendada para uma data futura. 
+
 Somente um professor da classe pode fazer essa chamada. Quando uma atribuição estiver no status de rascunho, os alunos não verão a atribuição, nem haverá objetos de envio. Chamar essa API [cria objetos educationSubmission](../resources/educationsubmission.md) e exibe a atribuição na lista de cada aluno.
+
+O estado da atribuição volta para se houver alguma falha `draft` de back-end durante o processo de publicação.
 
 ## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegada (conta corporativa ou de estudante) |  EduAssignments.ReadWriteBasic, EduAssignments.ReadWrite  |
-|Delegada (conta pessoal da Microsoft) |  Sem suporte.  |
+|Delegado (conta corporativa ou de estudante) |  EduAssignments.ReadWriteBasic, EduAssignments.ReadWrite  |
+|Delegado (conta pessoal da Microsoft) |  Sem suporte.  |
 |Aplicativo | Sem suporte. | 
 
 ## <a name="http-request"></a>Solicitação HTTP

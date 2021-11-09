@@ -5,12 +5,12 @@ author: subray
 ms.localizationpriority: high
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 995c5d0394963793c0d8146cb374e5145678a44b
-ms.sourcegitcommit: c333953a9188b4cd4a9ab94cbe68871e8f3563e5
+ms.openlocfilehash: b8f0cd4ce488ba700d56e2876017110c78f6afe9
+ms.sourcegitcommit: ddeee0eec277df06d9e635e5b5c257d14c856273
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/30/2021
-ms.locfileid: "58695284"
+ms.lasthandoff: 11/04/2021
+ms.locfileid: "60780587"
 ---
 # <a name="add-app-to-chat"></a>Adicionar o aplicativo ao chat
 
@@ -75,7 +75,7 @@ POST https://graph.microsoft.com/beta/chats/19:ea28e88c00e94c7786b065394a61f296@
 Content-Type: application/json
 
 {
-"teamsApp@odata.bind":"https://graph.microsoft.com/beta/appCatalogs/teamsApps/12345678-9abc-def0-123456789a"
+   "teamsApp@odata.bind":"https://graph.microsoft.com/beta/appCatalogs/teamsApps/12345678-9abc-def0-123456789a"
 }
 ```
 # <a name="c"></a>[C#](#tab/csharp)

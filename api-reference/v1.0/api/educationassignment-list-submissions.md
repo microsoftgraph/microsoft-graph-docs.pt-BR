@@ -5,12 +5,12 @@ author: sharad-sharma-msft
 ms.localizationpriority: medium
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: 708f0cb32cb3bf6686a2256a997c0354d4fbbaec
-ms.sourcegitcommit: 08e9b0bac39c1b1d2c8a79539d24aaa93364baf2
+ms.openlocfilehash: 7797f0d2b1d190f6ce12aff4a7b8fb1c26269a11
+ms.sourcegitcommit: ddeee0eec277df06d9e635e5b5c257d14c856273
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/24/2021
-ms.locfileid: "59767361"
+ms.lasthandoff: 11/04/2021
+ms.locfileid: "60780916"
 ---
 # <a name="list-submissions"></a>Listar envios
 
@@ -38,6 +38,8 @@ GET /education/classes/{id}/assignments/{id}/submissions
 ## <a name="optional-query-parameters"></a>Parâmetros de consulta opcionais
 Este método dá suporte a [Parâmetros de consulta OData](/graph/query-parameters) para ajudar a personalizar a resposta.
 
+Veja a seguir as opções disponíveis para este método: , , e , que `$expand` inclui todas as opções `outcomes` `resources` `submittedResources` `*` anteriores.
+
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
 | Cabeçalho       | Valor |
 |:---------------|:--------|
@@ -49,8 +51,10 @@ Não fornece um corpo de solicitação para este método.
 ## <a name="response"></a>Resposta
 Se tiver êxito, este método retornará um código `200 OK` de resposta e uma coleção de objetos [educationSubmission](../resources/educationsubmission.md) no corpo da resposta.
 
-## <a name="example"></a>Exemplo
-### <a name="request"></a>Solicitação
+## <a name="examples"></a>Exemplos
+
+### <a name="example-1-get-submissions"></a>Exemplo 1: Obter envios
+#### <a name="request"></a>Solicitação
 Este é um exemplo de solicitação.
 
 
@@ -82,7 +86,7 @@ GET https://graph.microsoft.com/v1.0/education/classes/f4a941ff-9da6-4707-ba5b-0
 ---
 
 
-### <a name="response"></a>Resposta
+#### <a name="response"></a>Resposta
 Este é um exemplo de resposta. 
 
 >**Observação:** o objeto de resposta mostrado aqui pode ser encurtado para legibilidade.
@@ -135,6 +139,134 @@ Content-length: 873
                     "displayName": null
                 }
             }
+        }
+    ]
+}
+```
+
+### <a name="example-2-get-submissions-with-expand-options"></a>Exemplo 2: Obter envios com $expand opções
+#### <a name="request"></a>Solicitação
+Este é um exemplo de solicitação.
+
+<!-- {
+  "blockType": "request",
+  "sampleKeys": ["72a7baec-c3e9-4213-a850-f62de0adad5f","efcdf80b-a5de-42ac-8579-e40b0223d48b"],
+  "name": "get_submissions_expand"
+}-->
+```http
+GET https://graph.microsoft.com/v1.0/education/classes/72a7baec-c3e9-4213-a850-f62de0adad5f/assignments/efcdf80b-a5de-42ac-8579-e40b0223d48b/submissions?$expand=outcomes
+```
+
+#### <a name="response"></a>Resposta
+Este é um exemplo de resposta. 
+
+>**Observação:** o objeto de resposta mostrado aqui pode ser encurtado para legibilidade.
+
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.educationSubmission",
+  "isCollection": true
+} -->
+```http
+HTTP/1.1 200 OK
+Content-type: application/json
+Content-length: 4492
+
+{
+    "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#education/classes('72a7baec-c3e9-4213-a850-f62de0adad5f')/assignments('efcdf80b-a5de-42ac-8579-e40b0223d48b')/submissions(outcomes())",
+    "value": [
+        {
+            "status": "returned",
+            "submittedDateTime": null,
+            "unsubmittedDateTime": null,
+            "returnedDateTime": "2021-10-13T15:57:00.0349869Z",
+            "resourcesFolderUrl": null,
+            "id": "9bc724ee-d314-1ec5-725d-5f81228e85a6",
+            "recipient": {
+                "@odata.type": "#microsoft.graph.educationSubmissionIndividualRecipient",
+                "userId": "80cefd93-8d88-40e2-b5d3-67898383e226"
+            },
+            "submittedBy": {
+                "application": null,
+                "device": null,
+                "user": {
+                    "id": "80cefd93-8d88-40e2-b5d3-67898383e226",
+                    "displayName": null
+                }
+            },
+            "unsubmittedBy": {
+                "application": null,
+                "device": null,
+                "user": {
+                    "id": null,
+                    "displayName": null
+                }
+            },
+            "returnedBy": {
+                "application": null,
+                "device": null,
+                "user": {
+                    "id": "f3a5344e-dbde-48b0-be24-b5b62a243836",
+                    "displayName": null
+                }
+            },
+            "outcomes@odata.context": "https://graph.microsoft.com/v1.0/$metadata#education/classes('72a7baec-c3e9-4213-a850-f62de0adad5f')/assignments('efcdf80b-a5de-42ac-8579-e40b0223d48b')/submissions('9bc724ee-d314-1ec5-725d-5f81228e85a6')/outcomes",
+            "outcomes": [
+                {
+                    "@odata.type": "#microsoft.graph.educationFeedbackOutcome",
+                    "lastModifiedDateTime": null,
+                    "id": "ca05367a-b292-42d5-aff7-5d279feeace8",
+                    "lastModifiedBy": null,
+                    "feedback": null,
+                    "publishedFeedback": null
+                },
+                {
+                    "@odata.type": "#microsoft.graph.educationPointsOutcome",
+                    "lastModifiedDateTime": null,
+                    "id": "ea1351f6-ba33-4940-b2cb-6a7254af2dc8",
+                    "lastModifiedBy": null,
+                    "points": null,
+                    "publishedPoints": null
+                },
+                {
+                    "@odata.type": "#microsoft.graph.educationRubricOutcome",
+                    "lastModifiedDateTime": "2021-10-13T15:57:00.0076092Z",
+                    "id": "65a46d78-1a2b-4a7e-bcf8-78a22ac2611b",
+                    "lastModifiedBy": {
+                        "application": null,
+                        "device": null,
+                        "user": {
+                            "id": null,
+                            "displayName": null
+                        }
+                    },
+                    "rubricQualityFeedback": [
+                        {
+                            "qualityId": "f4c7b781-4c0c-4113-a5fb-c0885b7ab510",
+                            "feedback": null
+                        }
+                    ],
+                    "rubricQualitySelectedLevels": [
+                        {
+                            "qualityId": "f4c7b781-4c0c-4113-a5fb-c0885b7ab510",
+                            "columnId": "ef99fe68-b6f8-4f67-a13b-9a81c1724788"
+                        }
+                    ],
+                    "publishedRubricQualityFeedback": [
+                        {
+                            "qualityId": "f4c7b781-4c0c-4113-a5fb-c0885b7ab510",
+                            "feedback": null
+                        }
+                    ],
+                    "publishedRubricQualitySelectedLevels": [
+                        {
+                            "qualityId": "f4c7b781-4c0c-4113-a5fb-c0885b7ab510",
+                            "columnId": "ef99fe68-b6f8-4f67-a13b-9a81c1724788"
+                        }
+                    ]
+                }
+            ]
         }
     ]
 }

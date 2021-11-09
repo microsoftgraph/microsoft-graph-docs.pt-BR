@@ -5,12 +5,12 @@ author: AshleyYangSZ
 ms.localizationpriority: medium
 ms.prod: cloud-pc
 doc_type: resourcePageType
-ms.openlocfilehash: ae9054e92279d976d65aafc72ac2c38190c88b84
-ms.sourcegitcommit: 08e9b0bac39c1b1d2c8a79539d24aaa93364baf2
+ms.openlocfilehash: 28735467ef1bc233f5ba6d5ecc3144d64e31df3e
+ms.sourcegitcommit: ddeee0eec277df06d9e635e5b5c257d14c856273
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/24/2021
-ms.locfileid: "59507813"
+ms.lasthandoff: 11/04/2021
+ms.locfileid: "60780895"
 ---
 # <a name="cloudpcstatusdetails-resource-type"></a>Tipo de recurso cloudPcStatusDetails
 
@@ -26,7 +26,7 @@ Os detalhes do status do computador na nuvem.
 |:---|:---|:---|
 |código|Cadeia de caracteres|O código associado ao status do computador na nuvem.|
 |mensagem|String|A mensagem de status.|
-|additionalInformation|[Coleção KeyValuePair](../resources/keyvaluepair.md)|Qualquer informação adicional sobre o status do computador na nuvem.|
+|additionalInformation|[Coleção KeyValuePair](../resources/keyvaluepair.md)|Quaisquer informações adicionais sobre o status do computador na nuvem.|
 
 ## <a name="relationships"></a>Relações
 

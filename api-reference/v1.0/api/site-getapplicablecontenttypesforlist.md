@@ -5,12 +5,12 @@ description: Obter tipos de conteúdo de site que podem ser adicionados a uma li
 ms.localizationpriority: medium
 doc_type: apiPageType
 ms.prod: sites-and-lists
-ms.openlocfilehash: ec0e453973c825da8ac6ed13094984a63ae71f88
-ms.sourcegitcommit: 64d27a0e3dcccc9d857e62aace4153e5d98fb3d0
+ms.openlocfilehash: dd6b3fbd5139692e31fafa1df4d6dfc64cf0422e
+ms.sourcegitcommit: ddeee0eec277df06d9e635e5b5c257d14c856273
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "60730400"
+ms.lasthandoff: 11/04/2021
+ms.locfileid: "60780779"
 ---
 # <a name="site-getapplicablecontenttypesforlist"></a>site: getApplicableContentTypesForList
 Namespace: microsoft.graph
@@ -75,7 +75,7 @@ Se tiver êxito, essa função retornará `200 OK` um código de resposta e uma 
 }
 -->
 ```msgraph-interactive
-GET https://graph.microsoft.com/v1.0/sites/{siteId}/getApplicableContentTypesForList(listId='{listId}')
+GET https://graph.microsoft.com/v1.0/sites/{siteId}/getApplicableContentTypesForList(listId='{list-id}')
 ```
 # <a name="c"></a>[C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/site-getapplicablecontenttypesforlist-csharp-snippets.md)]

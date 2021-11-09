@@ -1,16 +1,16 @@
 ---
 title: Listar pessoas
 description: Recupere uma coleção de objetos person ordenados por relevância para o usuário, o que é determinado pelo padrões de comunicação e colaboração e pelas relações comerciais do usuário.
-author: dkershaw10
+author: anthona
 ms.localizationpriority: high
 ms.prod: insights
 doc_type: apiPageType
-ms.openlocfilehash: f33aea8dc2dd441cd14bca7332b1568627455617
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 61c4de130b4d5c75501e49e1a7d86b35a997e54b
+ms.sourcegitcommit: ddeee0eec277df06d9e635e5b5c257d14c856273
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59044822"
+ms.lasthandoff: 11/04/2021
+ms.locfileid: "60780937"
 ---
 # <a name="list-people"></a>Listar pessoas
 

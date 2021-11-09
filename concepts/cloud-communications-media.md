@@ -4,12 +4,12 @@ description: Habilita seus bots a enviar e receber conteúdo relacionado a áudi
 author: ananmishr
 ms.localizationpriority: medium
 ms.prod: cloud-communications
-ms.openlocfilehash: 591666da1233045800b9814965daf0b165eb23be
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: bad1b8d68c4ebd1857cafb1df3a237a820e8ecf6
+ms.sourcegitcommit: ddeee0eec277df06d9e635e5b5c257d14c856273
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59136170"
+ms.lasthandoff: 11/04/2021
+ms.locfileid: "60780902"
 ---
 # <a name="media-overview"></a>Visão geral da mídia
 
@@ -22,7 +22,7 @@ Se você quiser que o bot reproduza um prompt personalizado quando um cliente di
 
 **Se suas necessidades de mídia são mais simples, explore essa opção primeiro**. Como o processamento de mídia pesada é descarregado remotamente, essa é uma solução de peso mais leve que permite que você crie seu bot de uma maneira mais flexível.
 
-For an example that shows you how to create a bot that uses service-hosted media, see the [Remote media calling bot samples](https://github.com/microsoftgraph/microsoft-graph-comms-samples/tree/master/Samples/BetaSamples/RemoteMediaSamples).
+For an example that shows you how to create a bot that uses service-hosted media, see the [Remote media calling bot samples](https://github.com/microsoftgraph/microsoft-graph-comms-samples/tree/master/Samples/V1.0Samples/RemoteMediaSamples).
 
 ![Diagrama de hospedagem remota](images/communications-remote-media.PNG)
 

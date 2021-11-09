@@ -2,15 +2,15 @@
 author: swapnil1993
 title: 'site: getApplicableContentTypesForList'
 description: Obter tipos de conteúdo de site que podem ser adicionados a uma lista.
-localization_priority: Normal
+ms.localizationpriority: medium
 doc_type: apiPageType
 ms.prod: sites-and-lists
-ms.openlocfilehash: 1f12207271ee292031da7e69f534300188514f6d
-ms.sourcegitcommit: 998c63e6290cfb5ad4a6bd3eb3e249d282f962a3
+ms.openlocfilehash: b14a400479f62328b12f2a575dfaa4a034dbfa72
+ms.sourcegitcommit: ddeee0eec277df06d9e635e5b5c257d14c856273
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58531345"
+ms.lasthandoff: 11/04/2021
+ms.locfileid: "60780821"
 ---
 # <a name="site-getapplicablecontenttypesforlist"></a>site: getApplicableContentTypesForList
 Namespace: microsoft.graph
@@ -43,7 +43,7 @@ A tabela a seguir mostra os parâmetros que podem ser usados com esta função.
 
 |Parâmetro|Tipo|Descrição|
 |-|-|-|
-|listId| Cadeia de caracteres | GUID da lista para a qual os tipos de conteúdo aplicáveis precisam ser buscados. Obrigatório. |
+|listId| String | GUID da lista para a qual os tipos de conteúdo aplicáveis precisam ser buscados. Obrigatório. |
 
 ## <a name="optional-query-parameters"></a>Parâmetros de consulta opcionais
 
@@ -74,7 +74,7 @@ Se tiver êxito, essa função retornará `200 OK` um código de resposta e uma 
 }
 -->
 ```msgraph-interactive
-GET https://graph.microsoft.com/beta/sites/{siteId}/getApplicableContentTypesForList(listId='listId')
+GET https://graph.microsoft.com/beta/sites/{siteId}/getApplicableContentTypesForList(listId='{list-id}')
 ```
 # <a name="c"></a>[C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/site-getapplicablecontenttypesforlist-csharp-snippets.md)]

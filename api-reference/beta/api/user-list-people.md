@@ -1,16 +1,16 @@
 ---
 title: Listar pessoas
 description: Recupere uma lista de objetos person ordenados por relevância para o usuário, o que é determinado pelos padrões de comunicação e colaboração e pelas relações comerciais do usuário.
-author: dkershaw10
-localization_priority: Normal
+author: anthona
+ms.localizationpriority: medium
 ms.prod: insights
 doc_type: apiPageType
-ms.openlocfilehash: 8df99c32c43e947863c4a7713c984b99fbd4bb73
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: e28372da45a246e92b696f8e8b7ed79e5e7cb050
+ms.sourcegitcommit: ddeee0eec277df06d9e635e5b5c257d14c856273
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52053353"
+ms.lasthandoff: 11/04/2021
+ms.locfileid: "60780482"
 ---
 # <a name="list-people"></a>Listar pessoas
 
@@ -26,9 +26,9 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegado (conta corporativa ou de estudante) | People.Read    |
+|Delegado (conta corporativa ou de estudante) | People.Read, People.Read.All    |
 |Delegado (conta pessoal da Microsoft) | People.Read    |
-|Aplicativo | Sem suporte. |
+|Aplicativo | People.Read.All |
 
 ## <a name="http-request"></a>Solicitação HTTP
 
@@ -46,7 +46,7 @@ Este método dá suporte aos seguintes parâmetros de consulta OData para ajudar
 |Nome|Valor|Descrição|
 |:---------------|:--------|:-------|
 |$filter|string|Limita a resposta apenas às pessoas cujo registro contém os critérios especificados.|
-|$orderby|cadeia de caracteres|Por padrão, as pessoas na resposta são classificadas pela relevância delas à consulta. Você pode alterar a ordem das pessoas na resposta usando o parâmetro *$orderby*.|
+|$orderby|cadeia de caracteres|Por padrão, as pessoas na resposta são classificadas por relevância para sua consulta. Você pode alterar a ordem das pessoas na resposta usando o parâmetro *$orderby*.|
 |$search|string|Pesquisar pessoas por nome ou alias. Suporta correspondência difusa. O parâmetro só funciona para pesquisar pessoas relevantes do usuário conectado, não para pesquisar pessoas relevantes para outros usuários. Também dá suporte a `topic` palavra-chave para encontrar pessoas com base em tópicos extraídos a partir de conversas de email com essa pessoa. Confira a seção *Realizar uma pesquisa difusa* em [Obter informações relevantes sobre pessoas](/graph/people-example#perform-a-fuzzy-search) para informações e exemplos.|
 |$select|string|Lista separada por vírgulas de propriedades para incluir na resposta. Para um desempenho ideal, selecione apenas o subconjunto de propriedades necessário.|
 |$skip|int|Ignorar os primeiros n resultados, útil para paginação. Não é suportado ao usar *$search*.|

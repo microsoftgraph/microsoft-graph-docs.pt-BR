@@ -1,16 +1,16 @@
 ---
 title: 'educationAssignment: publish'
-description: Essa ação altera o estado de uma atribuição de seu status de rascunho original para o status publicado.
+description: Altere o estado de um educationAssignment de seu status de rascunho original para o status publicado.
 ms.localizationpriority: medium
 author: dipakboyed
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: 902ff0df49cceab6a273107d88024a239bcfa4f5
-ms.sourcegitcommit: 0a312d63934cdf9789a5648c2b3f348f48542ff4
+ms.openlocfilehash: 6381931b5351b5864e5c985ee9b9b5381e2d3375
+ms.sourcegitcommit: ddeee0eec277df06d9e635e5b5c257d14c856273
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/07/2021
-ms.locfileid: "60219818"
+ms.lasthandoff: 11/04/2021
+ms.locfileid: "60780490"
 ---
 # <a name="educationassignment-publish"></a>educationAssignment: publish
 
@@ -18,17 +18,21 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Altere o estado de uma atribuição de seu status de rascunho original para o status publicado. 
+Altere o estado de [um educationAssignment](../resources/educationassignment.md) de seu status original `draft` para o `published` status. 
+
+Você pode alterar o estado de `draft` para `scheduled` se a **atribuição** estiver agendada para uma data futura. 
 
 Somente um professor da classe pode fazer essa chamada. Quando uma atribuição estiver no status de rascunho, os alunos não verão a atribuição, nem haverá objetos de envio. Quando você chama essa API, [os objetos educationSubmission](../resources/educationsubmission.md) são criados e a atribuição aparece na lista do aluno.
+
+O estado da atribuição volta para se houver alguma falha `draft` de back-end durante o processo de publicação.
 
 ## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegada (conta corporativa ou de estudante) |  EduAssignments.ReadWriteBasic, EduAssignments.ReadWrite  |
-|Delegada (conta pessoal da Microsoft) |  Sem suporte.  |
+|Delegado (conta corporativa ou de estudante) |  EduAssignments.ReadWriteBasic, EduAssignments.ReadWrite  |
+|Delegado (conta pessoal da Microsoft) |  Sem suporte.  |
 |Aplicativo | Sem suporte. | 
 
 ## <a name="http-request"></a>Solicitação HTTP

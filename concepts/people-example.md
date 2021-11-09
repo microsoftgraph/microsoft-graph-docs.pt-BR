@@ -1,26 +1,68 @@
 ---
-title: Usar a API de Pessoas no Microsoft Graph para obter informações sobre as pessoas mais relevantes para você
-description: 'Os aplicativos do Microsoft Graph podem usar a API de Pessoas para recuperar as pessoas mais relevantes para um usuário. '
+title: Usar a API de pessoas no Microsoft Graph para obter informações sobre as pessoas mais relevantes para você
+description: 'Os aplicativos do Microsoft Graph podem usar a API de pessoas para recuperar as pessoas mais relevantes para um usuário. '
 ms.date: 4/9/2019
 author: anthona
 ms.localizationpriority: high
 ms.prod: insights
-ms.openlocfilehash: e450062a10b4c7eb7dfb24f211af7cc357e305e7
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: c735af8d1e828f6a03d3a1ed1661212bf83738eb
+ms.sourcegitcommit: ddeee0eec277df06d9e635e5b5c257d14c856273
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59028762"
+ms.lasthandoff: 11/04/2021
+ms.locfileid: "60780468"
 ---
-# <a name="use-the-people-api-in-microsoft-graph-to-get-information-about-the-people-most-relevant-to-you"></a>Usar a API de Pessoas no Microsoft Graph para obter informações sobre as pessoas mais relevantes para você
+# <a name="use-the-people-api-in-microsoft-graph-to-get-information-about-the-people-most-relevant-to-you"></a>Usar a API de pessoas no Microsoft Graph para obter informações sobre as pessoas mais relevantes para você
 
-Os aplicativos do Microsoft Graph podem usar a API de Pessoas para recuperar as pessoas que são mais relevantes para um usuário. A relevância é determinada pelos padrões de comunicação e colaboração do usuário e pelos relacionamentos comerciais. As pessoas podem ser contatos locais ou do diretório de uma organização e pessoas de comunicações recentes. Além de gerar essas informações, a API de Pessoas também oferece suporte de pesquisa de correspondência difusa e a capacidade de recuperar a lista de usuários relevantes a outro usuário na organização do usuário conectado. A API de Pessoas é particularmente útil para cenários de seleção de pessoas, como ao redigir um email ou ao criar uma reunião. Por exemplo, você pode usar a API de Pessoas em cenários de redação de email.
+Os aplicativos do Microsoft Graph podem usar a API de pessoas para recuperar as pessoas mais relevantes para um usuário. A relevância é determinada pelos padrões de comunicação e colaboração e pelas relações comerciais do usuário. As pessoas podem ser contatos locais ou do diretório de uma organização e pessoas de comunicações recentes. 
+
+Junto com a geração desse insight, a API de pessoas também fornece suporte de pesquisa de correspondência difusa e a capacidade de recuperar a lista de usuários relevantes para outro usuário na organização do usuário conectado.
+A API de pessoas é particularmente útil para pessoas que escolhem cenários, como redigir um e-mail ou criar uma reunião. Por exemplo, você pode usar a API de pessoas em cenários de composição de e-mail.
+
+## <a name="including-a-person-as-relevant-or-working-with"></a>Incluindo uma pessoa como relevante ou "trabalhando com"
+ 
+Para que uma pessoa seja incluída como relevante ou "trabalhando com" um proprietário de perfil no Delve, seja exibida no cartão de perfil do proprietário ou retornada pela API de pessoas, deve haver um relacionamento _público_ entre a pessoa e o proprietário do perfil. A ilustração a seguir mostra um Usuário A, um índice de relacionamentos com outros usuários (Usuário B) e um perfil público mostrando um subconjunto de relacionamentos de usuários.
+
+![Imagem sobre trabalhar com relacionamentos](images/working-with.png)
+ 
+A seguir, exemplos de relações públicas:
+
+- Indivíduos conectados no organograma: gerente, subordinado, colegas (compartilham o mesmo gerente) 
+- Membros de um grupo público ou lista de distribuição com menos de 30 pessoas. Os grupos públicos têm listas de membros que estão disponíveis no diretório.
+ 
+Se o proprietário do perfil se comunica com alguém e não há _nenhum relacionamento público_ entre eles, como uma conexão com um organograma ou um grupo em comum, o fato de eles estarem se comunicando _não é visível_ para outros.
+
+A classificação das pessoas − ou seja, a ordem em que aparecem na página do proprietário do perfil − é determinada pela comunicação privada e pública entre o proprietário do perfil e a pessoa na lista.
+ 
+Alguns exemplos de comunicação privada:
+- Enviar emails um ao outro em que o nome da outra pessoa está na linha PARA
+- Convidar usuários para reuniões incluindo seus nomes no convite da agenda 
+ 
+Alguns exemplos de interação pública:
+- Enviar ou receber emails diretamente um ao outro como parte de um grupo público 
+- Convidar usuários para reuniões como parte de um grupo ou onde mais de X pessoas são convidadas
+ 
+A classificação não muda com base em quem é o usuário A (a pessoa que está vendo a página de outra pessoa). A classificação é determinada pelo nível de interação entre o Usuário B (proprietário do perfil) e o Usuário C (pessoa que aparece na lista do proprietário do perfil).
+ 
+Para que o Usuário C apareça, o proprietário do perfil deve estar em um grupo relativamente pequeno ou lista de distribuição com aquele usuário que é público (o que significa que a lista de membros está disponível no diretório).
+ 
+Pessoas externas à organização não aparecem na lista do proprietário do perfil. As pessoas com quem eles trocam emails ou se encontram, mas que não fazem parte da mesma organização, também não aparecem como pessoas com quem o proprietário trabalha.
+
+## <a name="disabling-working-with"></a>Desabilitando "trabalhando com"
+Os administradores podem gerenciar a exibição ou retorno de pessoas relevantes para o proprietário de um perfil em dois níveis:
+* Para uma organização:
+  - Habilite para toda a organização. Esta é a configuração padrão.
+  - Desabilite para toda a organização, exceto para o proprietário do perfil.
+* Para um grupo do Azure Active Directory na organização:
+  - Desabilite para um grupo especificado do Azure Active Directory. Isso é útil para habilitar o "trabalho com" para uma organização, exceto para membros do grupo do Azure Active Directory.
+
+Para obter mais informações, consulte [personalizar o controle de privacidade do insight de pessoas](insights-customize-people-insights-privacy.md).
 
 ## <a name="authorization"></a>Autorização
 
-Para chamar a API de Pessoas no Microsoft Graph, seu aplicativo precisará das permissões adequadas:
+Para chamar a API de pessoas no Microsoft Graph, seu aplicativo precisará das permissões apropriadas:
 
-* People.Read – use para fazer chamadas gerais da API de Pessoas; por exemplo, `https://graph.microsoft.com/v1.0/me/people/`. People.Read requer o consentimento do usuário final.
+* People.Read - Use para fazer chamadas de API para pessoas em geral; por exemplo, `https://graph.microsoft.com/v1.0/me/people/`. People.Read requer o consentimento do usuário final.
 * People.Read.All - necessária para recuperar as pessoas mais relevantes para um usuário especificado nas chamadas (`https://graph.microsoft.com/v1.0/users/{id}/people`) da organização do usuário conectado. People.Read.All requer o consentimento do administrador.
 
 ## <a name="browse-people"></a>Procurar pessoas
@@ -694,7 +736,7 @@ Content-type: application/json
 
 ### <a name="browse-another-users-relevant-people"></a>Procurar pessoas relevantes de outro usuário
 
-A solicitação a seguir obtém as pessoas mais relevantes para outra pessoa na organização do usuário conectado, conforme descrito na [ Implementação do recurso de trabalho](#implementation-of-the-working-with-feature). Esta solicitação requer a permissão People.Read.All. Os parâmetros de consulta descritos nas seções acima também se aplicam.
+A solicitação a seguir obtém as pessoas mais relevantes para outra pessoa na organização do usuário conectado, conforme descrito na [ Implementação do recurso de trabalho](#including-a-person-as-relevant-or-working-with). Esta solicitação requer a permissão People.Read.All. Os parâmetros de consulta descritos nas seções acima também se aplicam.
 
 Neste exemplo, as pessoas relevantes de Vinícius Monte são exibidas.
 
@@ -952,31 +994,3 @@ GET https://graph.microsoft.com/v1.0/me/people?$search="tiler"                //
 GET https://graph.microsoft.com/v1.0/me/people?$search="tyler lee"            //matches Tyler's name. Note the quotes to enclose the space.
 ```
 
-### <a name="implementation-of-the-working-with-feature"></a>Implementação do recurso de trabalho
- 
-Deve haver um relacionamento público entre o proprietário do perfil e as outras pessoas para que essas pessoas apareçam na lista do proprietário do perfil. A ilustração a seguir mostra um Usuário A, um índice de relacionamentos com outros usuários (Usuário B) e um perfil público mostrando um subconjunto de relacionamentos de usuários.
-
-![Imagem sobre trabalhar com relacionamentos](images/working-with.png)
- 
-A seguir, exemplos de relações públicas:
-
-- Indivíduos conectados no organograma: Gerente, Subordinado direto, Colegas (compartilham o mesmo gerente) 
-- Membros de um grupo público ou lista de distribuição com menos de 30 pessoas. Os grupos públicos têm listas de membros que estão disponíveis no diretório.
- 
-Se o proprietário do perfil se comunicar com alguém e não houver nenhum relacionamento público entre eles, como uma conexão de organograma ou um grupo em comum, o fato de eles estarem se comunicando não será visível para outras pessoas.
-
-A classificação das pessoas − ou seja, a ordem em que aparecem na página do proprietário do perfil − é determinada pela comunicação privada e pública entre o proprietário do perfil e a pessoa na lista.
- 
-Alguns exemplos de comunicação privada:
-- Enviar emails um ao outro em que o nome da outra pessoa está na linha PARA
-- Convidar usuários para reuniões incluindo seus nomes no convite da agenda 
- 
-Alguns exemplos de interação pública:
-- Enviar ou receber emails diretamente um ao outro como parte de um grupo público 
-- Convidar usuários para reuniões como parte de um grupo ou onde mais de X pessoas são convidadas
- 
-A classificação não muda com base em quem é o usuário A (a pessoa que está vendo a página de outra pessoa). A classificação é determinada pelo nível de interação entre o Usuário B (proprietário do perfil) e o Usuário C (pessoa que aparece na lista do proprietário do perfil).
- 
-Para que o Usuário C apareça, o proprietário do perfil deve estar em um grupo/DL relativamente pequeno com esse usuário que é público (o que significa que a lista de membros está disponível no diretório).
- 
-Pessoas externas à organização não aparecem na lista do proprietário do perfil. As pessoas com quem eles trocam emails ou se encontram, mas que não fazem parte da mesma organização, também não aparecem como pessoas com quem o proprietário trabalha.

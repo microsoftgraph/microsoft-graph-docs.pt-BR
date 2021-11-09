@@ -1,16 +1,16 @@
 ---
 title: Tipo de recurso userInsightsSettings
 description: Representa as configurações de privacidade do usuário para insights de item e informações de horários de reunião.
-localization_priority: Normal
+ms.localizationpriority: medium
 author: simonhult
 ms.prod: insights
 doc_type: resourcePageType
-ms.openlocfilehash: 5ecc9277d0bd98df99387a5dd222998074c6eb1b
-ms.sourcegitcommit: d586ddb253d27f9ccb621bd128f6a6b4b1933918
+ms.openlocfilehash: 723f1ca8d0a56116039ae3f85eb0d534c3525972
+ms.sourcegitcommit: ddeee0eec277df06d9e635e5b5c257d14c856273
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/24/2021
-ms.locfileid: "53109060"
+ms.lasthandoff: 11/04/2021
+ms.locfileid: "60780888"
 ---
 # <a name="userinsightssettings-resource-type"></a>Tipo de recurso userInsightsSettings
 
@@ -23,7 +23,7 @@ Representa as configurações de privacidade do usuário [para o itemInsights](i
 - Insights de item: calcula a relação entre usuários e itens, como documentos ou sites em Microsoft 365.  
 - Insights do horário de reunião: calcula o horário de reunião do calendário de uma pessoa com base nas atividades no Word, Excel, PowerPoint, email e Outlook calendário no Microsoft 365.
 
-Use o [recurso itemInsightsSettings](iteminsightssettings.md) para desabilitar/habilitar o cálculo e a visibilidade das percepções do item e do horário de reunião em um nível de organização.
+Use o [recurso insightsSettings](insightssettings.md) para desabilitar/habilitar o cálculo e a visibilidade de insights de itens, insights de horas de reunião ou informações de pessoas em um nível de organização.
 
 ## <a name="methods"></a>Métodos
 

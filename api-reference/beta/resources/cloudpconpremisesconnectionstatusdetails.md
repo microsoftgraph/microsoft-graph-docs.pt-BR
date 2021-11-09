@@ -1,16 +1,16 @@
 ---
 title: Tipo de recurso cloudPcOnPremisesConnectionStatusDetails
-description: Os detalhes de status de uma conexão local do computador na nuvem.
+description: Os detalhes de status de uma conexão local do Cloud PC.
 author: AshleyYangSZ
 ms.localizationpriority: medium
 ms.prod: cloud-pc
 doc_type: resourcePageType
-ms.openlocfilehash: 3a0d584b035fc0c25a4fe8b9cf3b790d0d3c5a0d
-ms.sourcegitcommit: 08e9b0bac39c1b1d2c8a79539d24aaa93364baf2
+ms.openlocfilehash: d2ac1616bfe48eec2d589cea7e1dc44404429601
+ms.sourcegitcommit: ddeee0eec277df06d9e635e5b5c257d14c856273
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/24/2021
-ms.locfileid: "59766415"
+ms.lasthandoff: 11/04/2021
+ms.locfileid: "60780727"
 ---
 # <a name="cloudpconpremisesconnectionstatusdetails-resource-type"></a>Tipo de recurso cloudPcOnPremisesConnectionStatusDetails
 
