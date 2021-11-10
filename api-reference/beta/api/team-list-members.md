@@ -5,12 +5,12 @@ author: AkJo
 ms.localizationpriority: high
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: f6473637010db4b973f6ddb0de480f792cd891ea
-ms.sourcegitcommit: c333953a9188b4cd4a9ab94cbe68871e8f3563e5
+ms.openlocfilehash: aeaec55f47de9d007ec06710c7d6dac49cda0715
+ms.sourcegitcommit: c7ff992ef63e480d070421ba99b28ee129cb6acb
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/30/2021
-ms.locfileid: "58696432"
+ms.lasthandoff: 11/03/2021
+ms.locfileid: "60688546"
 ---
 # <a name="list-members-of-team"></a>Listar membros de equipe
 Namespace: microsoft.graph
@@ -281,9 +281,9 @@ Content-Type: application/json
 }
 ```
 
-### <a name="example-4-list-only-those-members-who-are-owners-of-the-team"></a>Exemplo 4: Listar apenas os membros que são *proprietários* da equipe
+### <a name="example-4-list-members-by-their-role-in-the-team"></a>Exemplo 4: listar membros por sua função na equipe
 
-O exemplo a seguir mostra uma solicitação para localizar todos os membros que possuem a função de *proprietário* anexada a eles.
+O exemplo a seguir mostra como listar os membros por sua função na equipe. Esse exemplo lista todos os membros que possuem uma função de proprietário.
 
 > [!NOTE]
 > Há alguns problemas conhecidos com essa funcionalidade. Para saber mais, confira [problemas conhecidos](/graph/known-issues#unable-to-filter-team-members-by-roles).
