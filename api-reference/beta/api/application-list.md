@@ -5,12 +5,12 @@ author: sureshja
 ms.localizationpriority: high
 ms.prod: applications
 doc_type: apiPageType
-ms.openlocfilehash: 0eddbe4e5e1f0b5197593214417642ce3706fa91
-ms.sourcegitcommit: 08e9b0bac39c1b1d2c8a79539d24aaa93364baf2
+ms.openlocfilehash: 1c8b815fb84b7de8ca7366cd4ef2d384bc8e02dd
+ms.sourcegitcommit: c6a8c1cc13ace38d6c4371139ee84707c5c93352
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/24/2021
-ms.locfileid: "59764014"
+ms.lasthandoff: 11/10/2021
+ms.locfileid: "60890196"
 ---
 # <a name="list-applications"></a>Listar aplicativos
 
@@ -41,7 +41,7 @@ GET /applications
 ```
 ## <a name="optional-query-parameters"></a>Parâmetros de consulta opcionais
 
-Este método suporta aos parâmetros de consulta `$count`, `$expand`, `$filter`, `$orderBy`, `$search`, `$select`, e `$top` [OData](/graph/query-parameters) para ajudar a personalizar a resposta. Algumas consultas são suportadas somente quando se usa o cabeçalho **ConsistencyLevel** definido como `eventual` e `$count`. Para obter mais informações, consulte [Funcionalidades avançadas de consulta nos objetos de diretório do Microsoft Azure AD](/graph/aad-advanced-queries).
+Este método suporta aos parâmetros de consulta `$count`, `$expand`, `$filter`, `$orderBy`, `$search`, `$select`, e `$top` [OData](/graph/query-parameters) para ajudar a personalizar a resposta. Os tamanhos de página padrão e máximo são 100 e 999 objetos de aplicativo, respectivamente. Algumas consultas são suportadas somente quando se usa o cabeçalho **ConsistencyLevel** definido como `eventual` e `$count`. Para obter mais informações, consulte [Funcionalidades avançadas de consulta nos objetos de diretório do Microsoft Azure AD](/graph/aad-advanced-queries).
 
 
 Por padrão, essa API não retorna o valor da **chave** impressão digital na propriedade **keyCredentials** ao listar todos os aplicativos. Para recuperar a **chave** impressão digital, a propriedade **keyCredentials** deve ser especificada em uma consulta `$select`. Por exemplo, `$select=id,appId,keyCredentials`.
