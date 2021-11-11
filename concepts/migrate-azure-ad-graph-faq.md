@@ -1,25 +1,25 @@
 ---
-title: Azure Active Directory (Azure AD) Graph perguntas frequentes sobre Graph migração da Microsoft
-description: Azure Active Directory (Azure AD) Graph perguntas frequentes sobre Graph migração da Microsoft.
+title: Perguntas frequentes sobre migração do Azure AD Graph Microsoft Graph migração
+description: Fornece respostas para perguntas frequentes sobre como migrar do Azure Active Directory (Azure AD) Graph para o Microsoft Graph.
 author: FaithOmbongi
 ms.localizationpriority: medium
 ms.prod: applications
-ms.openlocfilehash: 93d5fe0df29b09b083c15a2287b4f47dc6fe166f
-ms.sourcegitcommit: 08e9b0bac39c1b1d2c8a79539d24aaa93364baf2
+ms.openlocfilehash: 3ad9eab71ee39509d3ad325fc98126dcdefaa60a
+ms.sourcegitcommit: 6b5bee1a1cea92c1f3d6439110c4916eb8b249a5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/24/2021
-ms.locfileid: "59763349"
+ms.lasthandoff: 11/11/2021
+ms.locfileid: "60908544"
 ---
-# <a name="azure-active-directory-azure-ad-graph-to-microsoft-graph-migration-faq"></a>Azure Active Directory (Azure AD) Graph perguntas frequentes sobre Graph migração da Microsoft
+# <a name="azure-ad-graph-to-microsoft-graph-migration-faq"></a>Perguntas frequentes sobre migração do Azure AD Graph Microsoft Graph migração
 
-Este artigo fornece respostas para perguntas frequentes sobre como migrar do Azure AD Graph para o Microsoft Graph.
+Este artigo fornece respostas para perguntas frequentes sobre como migrar do Azure Active Directory (Azure AD) Graph para o [Microsoft Graph](/graph/overview).
 
 ## <a name="how-is-microsoft-graph-different-from-azure-ad-graph-and-why-should-i-migrate-my-apps"></a>Como a Microsoft Graph diferente do Azure AD Graph e por que devo migrar meus aplicativos?
 
 A API do Azure AD Graph oferece acesso apenas aos serviços do Azure AD. A API do Microsoft Graph oferece um único ponto de extremidade unificado para acessar serviços do Azure AD e outros serviços Microsoft, como Microsoft Teams, Microsoft Exchange e Microsoft Intune.
 
-O Microsoft Graph também é mais seguro e resiliente do que o Azure AD Graph. Por esse motivo, o Azure AD Graph está em um caminho de deprecação desde 30 de junho de 2020 e será retirado em 30 de junho de 2022. Após 30 de junho de 2022, seus aplicativos não receberão mais respostas do ponto de extremidade do Azure AD Graph. Migre para o Microsoft Graph para evitar perda de funcionalidade.
+[O Microsoft Graph](/graph/overview) também é mais seguro e resiliente do que o Azure AD Graph. Por esse motivo, o Azure AD Graph está em um caminho de deprecação desde 30 de junho de 2020 e será retirado em 30 de junho de 2022. Após 30 de junho de 2022, seus aplicativos não receberão mais respostas do ponto de extremidade do Azure AD Graph. Migre para o Microsoft Graph para evitar perda de funcionalidade.
 
 ## <a name="as-a-developer-how-do-i-identify-apps-that-use-azure-ad-graph"></a>Como desenvolvedor, como posso identificar aplicativos que usam o Azure AD Graph?
 
@@ -124,11 +124,21 @@ Primeiro, confirme a lista completa de aplicativos pertencentes ao seu locatári
 
 Não há exceções para essa precarização. Seus aplicativos não receberão mais respostas do ponto de extremidade do Azure AD Graph após 30 de junho de 2022. 
 
-## <a name="i-need-to-create-new-apps-to-use-azure-ad-graph-but-the-azure-ad-graph-api-permission-sign-up-is-closed-how-can-i-create-my-app"></a>Preciso criar novos aplicativos para usar o Azure AD Graph mas a assinatura de permissão da API do Azure AD Graph está fechada. Como posso criar meu aplicativo?
+## <a name="i-need-to-add-new-azure-ad-graph-permissions-to-my-app-but-i-cant-select-azure-ad-graph-as-a-required-permission-for-my-app-registration-how-can-i-add-the-azure-ad-graph-permissions"></a>Preciso adicionar novas permissões do Azure AD Graph ao meu aplicativo, mas não posso selecionar o Azure AD Graph como uma permissão necessária para o registro do meu aplicativo. Como posso adicionar as permissões do Azure AD Graph?
 
-Primeiro, recomendamos que você siga a [lista](migrate-azure-ad-graph-planning-checklist.md) de verificação planejamento de migração de aplicativos para ajudá-lo a fazer a transição de seus aplicativos para a API Graph Microsoft. 
+Primeiro, recomendamos que você siga a [lista](migrate-azure-ad-graph-planning-checklist.md) de verificação planejamento de migração de aplicativos para ajudá-lo a fazer a transição de seus aplicativos para a API Graph Microsoft.
 
-Se você tiver identificado uma lacuna em que o Microsoft Graph não dá suporte a um recurso suportado pelo Azure AD Graph, trabalhe com o administrador do locatário ou o proprietário da assinatura para relatar a lacuna. Quando verificarmos se essa é realmente uma lacuna que a API do Microsoft Graph não atende, ajudaremos você a criar o aplicativo. No entanto, isso não significa uma exceção à depreciação. O aplicativo que usa o Azure AD Graph ainda vai parar de funcionar após 30 de junho de 2022.
+Se você identificou uma lacuna em que o Microsoft Graph não dá suporte a um recurso disponível no Azure AD Graph, nos avise por meio do Microsoft Q&A usando a marca [azure-ad-graph-deprecation](/answers/topics/azure-ad-graph-deprecation.html).
+
+Se você ainda precisar configurar as permissões do Azure AD Graph seus aplicativos, use uma das seguintes soluções alternativas.
+
++ Use a API [de](/graph/api/resources/application) aplicativo no Microsoft Graph atualizar [o objeto requiredResourceAccess](/graph/api/resources/requiredresourceaccess)
++ Use o cmdlet [Update-MgApplication](/powershell/module/microsoft.graph.applications/update-mgapplication?view=graph-powershell-1.0&preserve-view=true)   no Microsoft Graph PowerShell
+
+Para exemplos usando as soluções alternativas listadas, consulte Usar o Microsoft Graph para configurar permissões necessárias do [Azure AD Graph](migrate-azure-ad-graph-configure-permissions.md) para um registro de aplicativo
+
+>**Observação:** A adição Graph permissões do Azure AD usando essas soluções alternativas não será suportada após 30 de junho de 2022. Qualquer aplicativo usando o Azure AD Graph ainda irá parar de funcionar após 30 de junho de 2022.
+
 
 
 ## <a name="see-also"></a>Confira também

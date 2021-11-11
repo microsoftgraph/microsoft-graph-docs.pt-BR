@@ -3,12 +3,12 @@ title: Novidades do Microsoft Graph
 description: O que há de novo no Microsoft Graph
 author: angelgolfer-ms
 ms.localizationpriority: high
-ms.openlocfilehash: 22deb547eda4301d1b8bb3f2830516aa2e3be682
-ms.sourcegitcommit: c7ff992ef63e480d070421ba99b28ee129cb6acb
+ms.openlocfilehash: a1934b1cc52ba26f6500ca585c76df3d9f85fb94
+ms.sourcegitcommit: c6a8c1cc13ace38d6c4371139ee84707c5c93352
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "60688637"
+ms.lasthandoff: 11/10/2021
+ms.locfileid: "60890406"
 ---
 # <a name="whats-new-in-microsoft-graph"></a>Novidades do Microsoft Graph
 
@@ -57,7 +57,7 @@ Habilite o suporte para permissões delegadas (`Contacts.Read` ou `Contacts.Read
 - Confira os [modelos de licenciamento e pagamento](teams-licenses.md) que se aplicam às APIs do Microsoft Teams no Microsoft Graph.
 
 ### <a name="users"></a>Usuários
-As licenças de usuário para serviços do Azure Active Directory (Azure AD) agora oferecem suporte a um carimbo de data/hora para quando o [estado da atribuição de licença](/graph/api/resources/licenseassignmentstate) é atualizado pela última vez. 
+As licenças de usuário dos serviços Azure Active Directory (Azure AD) agora suportam um data/hora para quando o [estado da atribuição de licença](/graph/api/resources/licenseassignmentstate) for atualizado pela última vez. 
 
 ## <a name="october-2021-new-in-preview-only"></a>Outubro de 2021: novo apenas na pré-visualização
 
@@ -103,7 +103,7 @@ Habilite as seguintes [configurações](/graph/api/resources/assignmentReviewSet
 - Opcionalmente, pode especificar a ID de um aplicativo do Teams em uma [conexão externa](/graph/api/resources/externalconnectors-externalconnection?view=graph-rest-beta&preserve-view=true) na propriedade **connectorId**.
 
 ### <a name="users"></a>Usuários
-[Valide uma senha](/graph/api/user-validatePassword?view=graph-rest-beta&preserve-view=true) em tempo real em relação à política de validação de senha de uma organização, conforme um usuário digita a senha. Obtenha [informações detalhadas da validação](/graph/api/resources/passwordValidationInformation?view=graph-rest-beta&preserve-view=true) de acordo com as regras da política.
+[Valide uma senha](/graph/api/user-validatePassword?view=graph-rest-beta&preserve-view=true) em tempo real em relação à política de validação de senha de uma organização, à medida que um usuário digita a senha. Obtenha [informações detalhadas da validação](/graph/api/resources/passwordValidationInformation?view=graph-rest-beta&preserve-view=true) de acordo com as regras da política.
 
 
 ## <a name="september-2021-new-and-generally-available"></a>Setembro de 2021: novo e disponível para o público em geral

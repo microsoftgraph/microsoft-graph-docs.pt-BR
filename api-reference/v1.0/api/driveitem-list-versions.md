@@ -1,18 +1,18 @@
 ---
-title: Listar versões de um DriveItem
+title: Listar versões de um driveItem
 description: O OneDrive e o SharePoint podem ser configurados para manter o histórico de arquivos.
 ms.localizationpriority: medium
 ms.prod: sharepoint
 author: JeremyKelley
 doc_type: apiPageType
-ms.openlocfilehash: 0dcad0aaf115327568e15c755ddeb46851dca8fe
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 0929adb721820ab2e1d97243410041ea15c10695
+ms.sourcegitcommit: 6b5bee1a1cea92c1f3d6439110c4916eb8b249a5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59140826"
+ms.lasthandoff: 11/11/2021
+ms.locfileid: "60908558"
 ---
-# <a name="listing-versions-of-a-driveitem"></a>Listar versões de um DriveItem
+# <a name="list-versions-of-a-driveitem"></a>Listar versões de um driveItem
 
 Namespace: microsoft.graph
 
@@ -21,7 +21,7 @@ Dependendo do serviço e da configuração, uma nova versão pode ser criada par
 
 Versões anteriores de um documento podem ser retidas por um determinado período dependendo das configurações de administração, que podem ser exclusivas por usuário ou local.
 
-## <a name="permissions"></a>Permissões
+## <a name="permissions"></a>Permissions
 
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
@@ -53,7 +53,7 @@ Se bem-sucedido, este método retorna um código de resposta `200 OK` e uma cole
 
 Este exemplo recupera as versões de um arquivo na unidade do usuário atual.
 
-### <a name="http-request"></a>Solicitação HTTP
+### <a name="request"></a>Solicitação
 
 
 # <a name="http"></a>[HTTP](#tab/http)
@@ -132,6 +132,8 @@ Content-Type: application/json
 ```
 
 ## <a name="remarks"></a>Comentários
+
+As versões são retornadas em ordem decrescente (mais recente para mais antiga). Não há suporte para o parâmetro de cadeia de caracteres de `$orderBy` consulta OData.
 
 O OneDrive não preserva os metadados completos de versões anteriores de um arquivo.
 

@@ -1,18 +1,18 @@
 ---
-title: Listar versões de um DriveItem
+title: Listar versões de um driveItem
 description: O OneDrive e o SharePoint podem ser configurados para manter o histórico de arquivos.
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: sharepoint
 doc_type: apiPageType
 author: JeremyKelley
-ms.openlocfilehash: 3f3c2135f84d5c4b5a71a7a2e003528a72edb8b0
-ms.sourcegitcommit: 3edf187fe4b42f81c09610782671776a27161126
+ms.openlocfilehash: b047eece3a789feea3865be4155f6b69ac799eda
+ms.sourcegitcommit: 6b5bee1a1cea92c1f3d6439110c4916eb8b249a5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/06/2021
-ms.locfileid: "50515531"
+ms.lasthandoff: 11/11/2021
+ms.locfileid: "60908537"
 ---
-# <a name="listing-versions-of-a-driveitem"></a>Listar versões de um DriveItem
+# <a name="list-versions-of-a-driveitem"></a>Listar versões de um driveItem
 
 Namespace: microsoft.graph
 
@@ -23,7 +23,7 @@ Dependendo do serviço e da configuração, uma nova versão pode ser criada par
 
 Versões anteriores de um documento podem ser retidas por um determinado período dependendo das configurações de administração, que podem ser exclusivas por usuário ou local.
 
-## <a name="permissions"></a>Permissões
+## <a name="permissions"></a>Permissions
 
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
@@ -55,7 +55,7 @@ Se bem-sucedido, este método retorna um código de resposta `200 OK` e uma cole
 
 Este exemplo recupera as versões de um arquivo na unidade do usuário atual.
 
-### <a name="http-request"></a>Solicitação HTTP
+### <a name="request"></a>Solicitação
 
 
 # <a name="http"></a>[HTTP](#tab/http)
@@ -135,9 +135,11 @@ Content-Type: application/json
 
 ## <a name="remarks"></a>Comentários
 
+As versões são retornadas em ordem decrescente (mais recente para mais antiga). Não há suporte para o parâmetro de cadeia de caracteres de `$orderBy` consulta OData.
+
 O OneDrive não preserva os metadados completos de versões anteriores de um arquivo.
 
-Quando seu aplicativo recupera a lista de versões disponíveis de um arquivo, um recurso [DriveItemVersion](../resources/driveitemversion.md) é retornado e fornece as informações disponíveis sobre a versão específica.
+Quando seu aplicativo recupera a lista de versões disponíveis para um arquivo, um [recurso driveItemVersion](../resources/driveitemversion.md) é retornado que fornece as informações disponíveis sobre a versão específica.
 
 
 <!--

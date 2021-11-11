@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 ms.prod: sharepoint
 author: JeremyKelley
 doc_type: apiPageType
-ms.openlocfilehash: 9115bf948135048aea8bde9fb3a801e7e54662b7
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: cd67f24a45d150de614a1e0d81f8243c1585e72d
+ms.sourcegitcommit: 6b5bee1a1cea92c1f3d6439110c4916eb8b249a5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59100236"
+ms.lasthandoff: 11/11/2021
+ms.locfileid: "60908530"
 ---
 # <a name="get-a-driveitemversion-resource"></a>Obter um recurso DriveItemVersion
 
@@ -18,7 +18,7 @@ Namespace: microsoft.graph
 
 Recuperar os metadados de uma versão específica de um [DriveItem](../resources/driveitem.md).
 
-## <a name="permissions"></a>Permissões
+## <a name="permissions"></a>Permissions
 
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
@@ -46,11 +46,13 @@ GET /users/{user-id}/drive/items/{item-id}/versions/{version-id}
 Se bem-sucedido, este método retorna um código de resposta `200 OK` e um objeto [DriveItemVersion](../resources/driveitemversion.md) no corpo da resposta.
 
 
-## <a name="example"></a>Exemplo
+## <a name="examples"></a>Exemplos
+
+### <a name="example-1-get-specified-version-of-a-file"></a>Exemplo 1: Obter a versão especificada de um arquivo
 
 Este exemplo recupera uma versão de um arquivo na unidade do usuário atual.
 
-### <a name="http-request"></a>Solicitação HTTP
+#### <a name="request"></a>Solicitação
 
 
 # <a name="http"></a>[HTTP](#tab/http)
@@ -78,9 +80,9 @@ GET /me/drive/items/{item-id}/versions/{version-id}
 ---
 
 
-### <a name="response"></a>Resposta
+#### <a name="response"></a>Resposta
 
-Isso retornará uma coleção de versões:
+Isso retorna uma versão:
 
 <!-- { "blockType": "response", "@odata.type": "microsoft.graph.driveItemVersion", "truncated": true } -->
 
@@ -93,7 +95,45 @@ Content-Type: application/json
     "lastModifiedBy": {
     "user": {
         "id": "CE251278-EF9E-4FE5-833C-1D89EEAE68E0",
-        "displayName": "Ryan Gregg"
+        "displayName": "Iheanetu Olamma"
+    }
+    },
+    "lastModifiedDateTime": "2017-09-14T12:34:53.912Z",
+    "size": 123
+}
+```
+
+
+### <a name="example-2-get-current-version-of-a-file"></a>Exemplo 2: Obter a versão atual de um arquivo
+
+Este exemplo recupera a versão atual de um arquivo na unidade do usuário atual.
+
+#### <a name="request"></a>Solicitação
+
+
+<!-- { "blockType": "request", "name": "get-current-version", "scopes": "files.read", "tags": "service.graph" } -->
+
+```http
+GET /me/drive/items/{item-id}/versions/current
+```
+
+
+#### <a name="response"></a>Resposta
+
+Isso retorna uma versão:
+
+<!-- { "blockType": "response", "@odata.type": "microsoft.graph.driveItemVersion", "truncated": true } -->
+
+```http
+HTTP/1.1 200 OK
+Content-Type: application/json
+
+{
+    "id": "D4990684-58CE-4FAB-9B87-D6C49E74F298",
+    "lastModifiedBy": {
+    "user": {
+        "id": "CE251278-EF9E-4FE5-833C-1D89EEAE68E0",
+        "displayName": "Iheanetu Olamma"
     }
     },
     "lastModifiedDateTime": "2017-09-14T12:34:53.912Z",

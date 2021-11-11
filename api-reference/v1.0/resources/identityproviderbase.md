@@ -5,32 +5,36 @@ ms.localizationpriority: high
 doc_type: resourcePageType
 ms.prod: identity-and-sign-in
 author: namkedia
-ms.openlocfilehash: aacf2b128e8cf60f445fb59d93e6be8d84b8deb0
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 661c9ca5f1a76af52112d22671d02bd2c801b79f
+ms.sourcegitcommit: c6a8c1cc13ace38d6c4371139ee84707c5c93352
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59032381"
+ms.lasthandoff: 11/10/2021
+ms.locfileid: "60890168"
 ---
 # <a name="identityproviderbase-resource-type"></a>Tipo de recurso identityProviderBase
 Namespace: microsoft.graph
 
-Representa provedores de identidade com [Identidades Externas](/azure/active-directory/external-identities/) para locatários do Azure Active Directory (Azure AD) e do Azure AD B2C. É um tipo abstrato herdado pelo [socialIdentityProvider](../resources/socialidentityprovider.md) e [builtinIdentityProvider](../resources/builtinidentityprovider.md).
+Representa provedores de identidade com [Identidades Externas](/azure/active-directory/external-identities/) para locatários do Azure Active Directory (Azure Active Directory) e do Azure Active Directory B2C.
 
-Para cenários do Microsoft Azure AD B2B , o provedor de identidade é um [socialIdentityProvider](../resources/socialidentityprovider.md) ou um [builtinIdentityProvider](../resources/builtinidentityprovider.md). A configuração de um provedor de identidade no seu locatário do Microsoft Azure Active Directory permite novos cenários de convidados do Microsoft Azure AD B2B. Por exemplo, uma organização com recursos no Microsoft 365 pode compartilhá-los com um usuário do Gmail. O usuário do Gmail usará as credenciais da conta do Google para autenticar e acessar os documentos.
+Para cenários do Azure Active Directory B2B em um diretório do Azure Active Directory, o provedor de identidade pode ser um [socialIdentityProvider](../resources/socialidentityprovider.md) ou [builtinIdentityProvider](../resources/builtinidentityprovider.md), ambos herdados do tipo de recurso identityProviderBase.
 
-Em um diretório do Azure AD B2C, o tipo de provedor de identidade é um [socialIdentityProvider](../resources/socialidentityprovider.md). Configurar um provedor de identidade no seu diretório do Azure AD B2C permite que os usuários se inscrevam e entrem usando uma conta social em um aplicativo. Por exemplo, um aplicativo pode usar o Azure AD B2C para permitir que os usuários se inscrevam no serviço usando uma conta do Facebook.
+Configurar um provedor de identidade em seu diretório do Azure AD permite novos cenários de convidado do Azure AD B2B. Por exemplo, uma organização possui recursos no Microsoft 365 que precisam ser compartilhados com um usuário do Gmail. O usuário do Gmail usará as credenciais de conta do Google para autenticar e acessar os documentos.
+
+Em um diretório B2C do Azure AD, o tipo de provedor de identidade pode ser um [socialIdentityProvider](../resources/socialidentityprovider.md) ou um [appleManagedIdentityProvider](../resources/applemanagedidentityprovider.md), todos herdados do tipo de recurso identityProviderBase.
+
+Configurar um provedor de identidade no diretório do Azure AD B2C permite que os usuários se inscrevam e entrem usando uma conta social ou um provedor com suporte OpenID Connect personalizado em um aplicativo. Por exemplo, um aplicativo pode usar o Azure AD B2C para permitir que os usuários se inscrevam no serviço usando uma conta do Facebook ou o seu próprio provedor de identidade personalizado que esteja em conformidade com o protocolo OIDC.
 
 ## <a name="methods"></a>Métodos
 
 | Método       | Tipo de retorno  |Descrição|
 |:---------------|:--------|:----------|
 |[List](../api/identitycontainer-list-identityproviders.md)|Coleção [identityProviderBase](../resources/identityproviderbase.md) |Recupere todos os provedores de identidade configurados em um locatário.|
-|[Criar](../api/identitycontainer-post-identityproviders.md)|[socialIdentityProvider](../resources/socialidentityprovider.md)|Criar um novo [socialIdentityProvider](../resources/socialidentityprovider.md) (Azure AD ou Azure AD B2C).|
-|[Obter](../api/identityproviderbase-get.md) |[socialIdentityProvider](../resources/socialidentityprovider.md) ou [builtinIdentityProvider](../resources/builtinidentityprovider.md)|Recupere as propriedades de um [socialIdentityProvider](../resources/socialidentityprovider.md) (Azure AD or Azure AD B2C) ou um [builtinIdentityProvider](../resources/builtinidentityprovider.md) (Azure AD).|
-|[Atualizar](../api/identityproviderbase-update.md)|Nenhum(a)|Atualize um [socialIdentityProvider](../resources/socialidentityprovider.md) (Azure AD ou Azure AD B2C).|
-|[Delete](../api/identityproviderbase-delete.md)|Nenhum|Excluir um [socialIdentityProvider](../resources/socialidentityprovider.md) (Azure AD ou Azure AD B2C).|
-|[Listar os tipos de provedor disponíveis](../api/identityproviderbase-availableprovidertypes.md)|Coleção de cadeias de caracteres|Recupere todos os tipos de provedores de identidade com suporte.|
+|[Criar](../api/identitycontainer-post-identityproviders.md)| [socialidentityprovider](../resources/socialidentityprovider.md) ou  [appleManagedIdentityProvider](../resources/applemanagedidentityprovider.md) |Crie um novo objeto de um dos seguintes tipos de objeto: <br/><ul><li> [socialidentityprovider](../resources/socialidentityprovider.md) (Azure Active Directory ou Azure Active Directory B2C) <li> [appleManagedIdentityProvider](../resources/applemanagedidentityprovider.md) (Azure Active Directory B2C) </li></ul>|
+|[Get](../api/identityproviderbase-get.md) |[socialidentityprovider](../resources/socialidentityprovider.md), [builtInIdentityProvider](../resources/builtinidentityprovider.md) ou  [appleManagedIdentityProvider](../resources/applemanagedidentityprovider.md)| Recupere as propriedades de um dos seguintes tipos de objeto: <br/><ul><li> [socialidentityprovider](../resources/socialidentityprovider.md) (Azure Active Directory ou Azure Active Directory B2C) <li> [builtInIdentityProvider](../resources/builtinidentityprovider.md) (Azure Active Directory ou Azure Active Directory B2C) <li> [appleManagedIdentityProvider](../resources/applemanagedidentityprovider.md) (Azure Active Directory B2C) </li></ul>|
+|[Atualizar](../api/identityproviderbase-update.md)|Nenhum(a)|Atualize um dos seguintes tipos de objeto: <br/><ul><li> [socialidentityprovider](../resources/socialidentityprovider.md) (Azure Active Directory ou Azure Active Directory B2C) <li> [appleManagedIdentityProvider](../resources/applemanagedidentityprovider.md) (Azure Active Directory B2C) </li></ul>|
+|[Delete](../api/identityproviderbase-delete.md)|Nenhum|Exclua um dos seguintes tipos de objeto: <br/><ul><li> [socialidentityprovider](../resources/socialidentityprovider.md) (Azure Active Directory ou Azure Active Directory B2C) <li> [appleManagedIdentityProvider](../resources/applemanagedidentityprovider.md) (Azure Active Directory B2C) (Azure Active Directory B2C)|
+|[Listar os tipos de provedor disponíveis](../api/identityproviderbase-availableprovidertypes.md)|Coleção de cadeias de caracteres|Recuperar todos os tipos de provedores de identidade disponíveis no locatário.|
 
 ## <a name="properties"></a>Propriedades
 
