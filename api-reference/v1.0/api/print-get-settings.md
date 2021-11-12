@@ -2,21 +2,19 @@
 title: Obter printSettings
 description: Recupere as configurações de todo o locatário para o serviço de Impressão Universal.
 author: nilakhan
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: cloud-printing
 doc_type: apiPageType
-ms.openlocfilehash: 4be764fc6ace444669a6d0c0a72047a41c9feab2
-ms.sourcegitcommit: 40947e6f4337c8c4193d85bb862e15f67263e1e7
+ms.openlocfilehash: a748d544602aca6f57843ab0f3d537709103a9b3
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/13/2021
-ms.locfileid: "50777233"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60941684"
 ---
 # <a name="get-printsettings"></a>Obter printSettings
 
 Namespace: microsoft.graph
-
-[!INCLUDE [cloudprinting-pricing-disclaimer](../../includes/cloudprinting-pricing-disclaimer.md)]
 
 Recupere as configurações de todo o locatário para o serviço de Impressão Universal.
 
@@ -27,7 +25,7 @@ Para usar o serviço Impressão Universal, o usuário ou locatário do aplicativ
 
 |Tipo de permissão | Permissões (da com menos para a com mais privilégios) |
 |:---------------|:--------------------------------------------|
-|Delegada (conta corporativa ou de estudante)| PrintSettings.Read.All, PrintSettings.ReadWrite.All |
+|Delegado (conta corporativa ou de estudante)| PrintSettings.Read.All, PrintSettings.ReadWrite.All |
 |Delegada (conta pessoal da Microsoft)|Sem suporte.|
 |Aplicativo|Sem suporte.|
 

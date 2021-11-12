@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: kevinbellinger
 ms.prod: people
 doc_type: apiPageType
-ms.openlocfilehash: eebe95bdd6eec5fb7336d0f5bf423dee5307439e
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 2f0e7dc405519df676d39c4df732c30f37768c24
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59087454"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60945478"
 ---
 # <a name="update-itempatent"></a>Atualizar itemPatent
 
@@ -51,14 +51,14 @@ No corpo da solicitação, forneça os valores para os campos relevantes que dev
 
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|allowedAudiences|Cadeia de Caracteres|As audiências que são capazes de ver os valores contidos na entidade. Herdado [do itemFacet](../resources/itemfacet.md). Os valores possíveis são: `me`, `family`, `contacts`, `groupMembers`, `organization`, `federatedOrganizations`, `everyone`, `unknownFutureValue`.|
+|allowedAudiences|Cadeia de caracteres|As audiências que são capazes de ver os valores contidos na entidade. Herdado [do itemFacet](../resources/itemfacet.md). Os valores possíveis são: `me`, `family`, `contacts`, `groupMembers`, `organization`, `federatedOrganizations`, `everyone`, `unknownFutureValue`.|
 |description|Cadeia de caracteres|Descpription of the patent or filing. |
 |displayName|Cadeia de caracteres|Título da patente ou arquivamento. |
 |inferência|[inferenceData](../resources/inferencedata.md)|Contém detalhes de inferência se a entidade for inferida pelo aplicativo de criação ou modificação. Herdado [do itemFacet](../resources/itemfacet.md).|
-|isPending        |Boleano     |Indica que a patente está pendente.        |
+|isPending        |Boolean     |Indica que a patente está pendente.        |
 |issuedDate       |Data        |A data em que a patente foi concedida.   |
-|issuingAuthority |Cadeia de Caracteres      |Autoridade que concedeu a patente.     |
-|number           |Cadeia de Caracteres      |O número da patente.                      |
+|issuingAuthority |Cadeia de caracteres      |Autoridade que concedeu a patente.     |
+|number           |Cadeia de caracteres      |O número da patente.                      |
 |source|[personDataSource](../resources/persondatasource.md)|Onde os valores se originaram se sincronizados de outro serviço. Herdado [do itemFacet](../resources/itemfacet.md).|
 |webUrl           |String      |URL fazendo referência à patente ou ao arquivamento. |
 
@@ -78,7 +78,6 @@ Se tiver êxito, este método retornará um código de resposta e um `200 OK` [o
 ``` http
 PATCH https://graph.microsoft.com/beta/users/{userId}/profile/patents/{id}
 Content-Type: application/json
-Content-length: 497
 
 {
   "number": "USPTO-3954432633",

@@ -2,21 +2,19 @@
 title: Tipo de recurso printUsageByUser
 description: Descreve a atividade de impressão de um usuário durante um período de tempo especificado (usageDate).
 author: nilakhan
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: cloud-printing
 doc_type: resourcePageType
-ms.openlocfilehash: eae95a17032ca69a9856ee44377bef0aeb733cb0babfbfa66b0b2fdd9b3c9d51
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: f702c0dcb81d1b88f2c9bb0e314e74b97a905004
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54222725"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60936100"
 ---
 # <a name="printusagebyuser-resource-type"></a>Tipo de recurso printUsageByUser
 
 Namespace: microsoft.graph
-
-[!INCLUDE [cloudprinting-pricing-disclaimer](../../includes/cloudprinting-pricing-disclaimer.md)]
 
 Descreve a atividade de impressão de um usuário durante um período de tempo especificado (usageDate).
 
@@ -25,7 +23,7 @@ Descreve a atividade de impressão de um usuário durante um período de tempo e
 |:---|:---|:---|
 | [Lista (diariamente)](../api/reportroot-list-dailyprintusagebyuser.md) | [printUsageByUser](printusagebyuser.md) | Obter uma lista de resumos de uso diário de impressão, agrupados por usuário. |
 | [Lista (mensal)](../api/reportroot-list-monthlyprintusagebyuser.md) | [printUsageByUser](printusagebyuser.md) | Obter uma lista de resumos de uso de impressão mensal, agrupados por usuário. |
-| [Obter](../api/printusagebyuser-get.md) | [printUsageByUser](printusagebyuser.md) | Ler propriedades e relações de um objeto printUsageByUser. |
+| [Get](../api/printusagebyuser-get.md) | [printUsageByUser](printusagebyuser.md) | Ler propriedades e relações de um objeto printUsageByUser. |
 
 ## <a name="properties"></a>Propriedades
 |Propriedade|Tipo|Descrição|

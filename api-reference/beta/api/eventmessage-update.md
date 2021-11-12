@@ -2,15 +2,15 @@
 title: Atualizar eventMessage
 description: Atualize as propriedades de um objeto eventMessage.
 author: harini84
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 86b0d75af2e7327ba4c89bb10c30c6a0b5f5472c
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: 4189a6e9163c5400145e18bbdf1a7bf03650abec
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52042349"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60943413"
 ---
 # <a name="update-eventmessage"></a>Atualizar eventMessage
 
@@ -48,7 +48,7 @@ No corpo da solicitação, forneça os valores para os campos relevantes que dev
 | Propriedade     | Tipo   |Descrição|
 |:---------------|:--------|:----------|
 |categories|String|As categorias associadas à mensagem.|
-|importância|String|A importância da mensagem. Os valores possíveis são: `Low`, `Normal` e `High`.|
+|importância|Cadeia de caracteres|A importância da mensagem. Os valores possíveis são: `Low`, `Normal` e `High`.|
 |isAllDay |Booliano|Indica se o evento dura o dia inteiro. Ajustar essa propriedade requer o ajuste das **propriedades startDateTime** e **endDateTime** do evento também.|
 |isDeliveryReceiptRequested|Boolean|Indica se uma confirmação de leitura foi solicitada para a mensagem.|
 |isRead|Boolean|Indica se a mensagem foi lida.|
@@ -69,7 +69,6 @@ Este é um exemplo da solicitação.
 ```http
 PATCH https://graph.microsoft.com/beta/me/messages/{id}
 Content-type: application/json
-Content-length: 248
 
 {
   "isRead": "true",
@@ -94,7 +93,7 @@ Content-length: 248
 ---
 
 ##### <a name="response"></a>Resposta
-Veja a seguir um exemplo da resposta. Observação: o objeto de resposta mostrado aqui pode ser encurtado para legibilidade.
+Aqui está um exemplo da resposta. Observação: o objeto de resposta mostrado aqui pode ser reduzido para facilitar a leitura.
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -103,7 +102,6 @@ Veja a seguir um exemplo da resposta. Observação: o objeto de resposta mostrad
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 248
 
 {
   "receivedDateTime": "2016-10-19T10:37:00Z",

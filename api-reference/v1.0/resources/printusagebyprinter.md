@@ -2,21 +2,19 @@
 title: Tipo de recurso printUsageByPrinter
 description: Descreve a atividade de impressão de uma impressora durante um período de tempo especificado (usageDate).
 author: nilakhan
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: cloud-printing
 doc_type: resourcePageType
-ms.openlocfilehash: f41ee77c390f63d05b0b6076b21948f8bdad9d4cf3f8751be02a675db1fb967f
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 31d298ddbb46d615fc805aa92700cd6839d268a0
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54235335"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60944246"
 ---
 # <a name="printusagebyprinter-resource-type"></a>Tipo de recurso printUsageByPrinter
 
 Namespace: microsoft.graph
-
-[!INCLUDE [cloudprinting-pricing-disclaimer](../../includes/cloudprinting-pricing-disclaimer.md)]
 
 Descreve a atividade de impressão de uma impressora durante um período de tempo especificado (usageDate).
 
@@ -25,13 +23,13 @@ Descreve a atividade de impressão de uma impressora durante um período de temp
 |:---|:---|:---|
 | [Lista (diariamente)](../api/reportroot-list-dailyprintusagebyprinter.md) | [printUsageByPrinter](printUsageByPrinter.md) | Obter uma lista de resumos de uso diário de impressão, agrupados por impressora. |
 | [Lista (mensal)](../api/reportroot-list-monthlyprintusagebyprinter.md) | [printUsageByPrinter](printUsageByPrinter.md) | Obter uma lista de resumos de uso de impressão mensal, agrupados por impressora. |
-| [Obter](../api/printUsageByPrinter-get.md) | [printUsageByPrinter](printUsageByPrinter.md) | Leia as propriedades e as relações de um **objeto printUsageByPrinter.** |
+| [Get](../api/printUsageByPrinter-get.md) | [printUsageByPrinter](printUsageByPrinter.md) | Leia as propriedades e as relações de um **objeto printUsageByPrinter.** |
 
 ## <a name="properties"></a>Propriedades
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
 |id|Cadeia de caracteres|A ID deste resumo de uso.|
-|printerID|String|A ID da impressora representada por essas estatísticas.|
+|printerID|Cadeia de caracteres|A ID da impressora representada por essas estatísticas.|
 |usageDate|Data|A data associada a essas estatísticas.|
 |completedBlackAndWhiteJobCount|Int64|O número de trabalhos de impressão em preto e branco concluídos pela impressora na data associada.|
 |completedColorJobCount|Int64|O número de trabalhos de impressão de cores concluídos pela impressora na data associada.|

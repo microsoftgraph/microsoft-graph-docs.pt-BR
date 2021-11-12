@@ -5,12 +5,12 @@ ms.localizationpriority: high
 author: sureshja
 ms.prod: applications
 doc_type: resourcePageType
-ms.openlocfilehash: 8b01f21ebb9607172c7faff7cafa979b0e010981
-ms.sourcegitcommit: c7ff992ef63e480d070421ba99b28ee129cb6acb
+ms.openlocfilehash: 1bb62480cfad1d8dc704551b3490ee6150b836f3
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "60691544"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60945016"
 ---
 # <a name="application-resource-type"></a>tipo de recurso do aplicativo
 
@@ -71,15 +71,15 @@ Esse recurso tem suporte para o uso da [consulta delta](/graph/delta-query-overv
 | appId | Cadeia de caracteres | O identificador exclusivo para o aplicativo que está atribuído a um aplicativo pelo Microsoft Azure Active Directory. Não anulável. Somente leitura. |
 | applicationTemplateId | String | Identificador exclusivo do applicationTemplate. |
 | appRoles | Coleção [appRole](approle.md) | O conjunto de funções atribuídas ao aplicativo. Com as [atribuições de funções do aplicativo](approleassignment.md), essas funções podem ser atribuídas a usuários, grupos ou entidades de serviço de outros aplicativos. Não anulável. |
-| createdDateTime | DateTimeOffset | A data e a hora em que o aplicativo foi registrado. O tipo DateTimeOffset representa informações de data e hora usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite UTC em 1º de janeiro de 2014 é `2014-01-01T00:00:00Z`. Somente leitura. <br><br> Suporta `$filter` (`eq`, `ne`, `NOT`, `ge`, `le`, `in`) e `$orderBy`. |
+| createdDateTime | DateTimeOffset | A data e a hora em que o aplicativo foi registrado. O tipo DateTimeOffset representa informações de data e hora usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite UTC em 1º de janeiro de 2014 é `2014-01-01T00:00:00Z`. Somente leitura. <br><br> Dá suporte `$filter` (`eq`, `ne`, `NOT`, `ge`, `le`, `in`e `eq` em `null` valores ) e `$orderBy`. |
 | deletedDateTime | DateTimeOffset | A data e a hora em que o aplicativo foi excluído. O tipo DateTimeOffset representa informações de data e hora usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite UTC em 1º de janeiro de 2014 é `2014-01-01T00:00:00Z`. Somente leitura. |
 | description | String | Uma descrição opcional do aplicativo. Suporta `$filter` (`eq`, `ne`, `NOT`, `ge`, `le`, `startsWith`) e `$search`. |
 | disabledByMicrosoftStatus | Cadeia de caracteres | Especifica se a Microsoft desabilitou o aplicativo registrado. Os valores possíveis são: `null`(valor padrão), `NotDisabled` e (os motivos podem incluir atividades suspeitas, abusivas ou mal-intencionadas ou uma violação do `DisabledDueToViolationOfServicesAgreement` Contrato de Serviços Microsoft). <br><br> Suporta `$filter` (`eq`, `ne`, `NOT`). |
-| displayName | String | O nome de exibição do aplicativo. Suporta `$filter` (`eq`, `ne`, `NOT`, `ge`, `le`, `in`, `startsWith`), `$search`, e `$orderBy`. |
+| displayName | String | O nome de exibição do aplicativo. Suporte `$filter` (`eq`, `ne`, `NOT`, `ge`, `le`, `in`, `startsWith`, e `eq` em `null` valores), `$search`, e `$orderBy`. |
 | groupMembershipClaims | Cadeia de caracteres | Configura a declaração `groups` emitida em um usuário ou token de acesso OAuth 2.0 que o aplicativo espera. Para definir esse atributo, use um dos seguintes valores da cadeia de caracteres válidos: `None`, `SecurityGroup` (para grupos de segurança e funções do Azure Active Directory), `All` (obtém todos os grupos de segurança, grupos de distribuição e diretório do Azure Active Directory funções das quais o usuário conectado é membro). |
 | id | String | O identificador exclusivo do aplicativo. Herdado [directoryObject](directoryobject.md). Chave. Não anulável. Somente leitura. Dá suporte `$filter`(`eq`, `ne`, `NOT`, `in`).|
 | identifierUris | Coleção de cadeias de caracteres | Também conhecido como URI de ID do aplicativo, esse valor é definido quando um aplicativo é usado como um aplicativo de recurso. O identifierUris age como o prefixo para os escopos que você referencia no código da API e deve ser globalmente exclusivo. Você pode usar o valor padrão fornecido, que está no formato `api://<application-client-id>`, ou especificar um URI mais acessível como `https://contoso.com/api` . Para obter mais informações sobre padrões e práticas recomendadas de identificadorUris válidos, consulte [Práticas recomendadas de segurança de registro de aplicativos do Azure AD](/azure/active-directory/develop/security-best-practices-for-app-registration#appid-uri-configuration). Não anulável. <br><br>Suporta `$filter` (`eq`, `ne`, `ge`, `le`, `startsWith`).|
-| informações  | [informationalUrl](informationalurl.md) | Informações básicas de perfil do aplicativo, como marketing, suporte, termos de serviço e URLs de política de privacidade do aplicativo. Os termos de serviço e a política de privacidade são revelados aos usuários por meio da experiência de consentimento do usuário. Para obter mais informações, confira [Como adicionar termos de serviço e política de privacidade a aplicativos do Azure AD registrados](/azure/active-directory/develop/howto-add-terms-of-service-privacy-statement). <br><br>Suporta `$filter` (`eq`, `ne`, `NOT`, `ge`, `le`). |
+| informações  | [informationalUrl](informationalurl.md) | Informações básicas de perfil do aplicativo, como marketing, suporte, termos de serviço e URLs de política de privacidade do aplicativo. Os termos de serviço e a política de privacidade são revelados aos usuários por meio da experiência de consentimento do usuário. Para obter mais informações, confira [Como adicionar termos de serviço e política de privacidade a aplicativos do Azure AD registrados](/azure/active-directory/develop/howto-add-terms-of-service-privacy-statement). <br><br>Dá suporte `$filter` (`eq`, `ne`, `NOT`, `ge`, `le`e `eq` em `null` valores). |
 | isDeviceOnlyAuthSupported | Booliano | Especifica se este aplicativo dá suporte à autenticação de dispositivo sem um usuário. O padrão é `false`.  |
 | isFallbackPublicClient | Booliano | Especifica o tipo de aplicativo de fallback como cliente público; por exemplo, um aplicativo instalado em um dispositivo móvel. O valor padrão é `false`, o que significa que o tipo de aplicativo de fallback é cliente confidencial, como um aplicativo web. No entanto, há situações em que o Azure AD não consegue determinar o tipo de aplicativo cliente. Por exemplo, o fluxo [ROPC](https://tools.ietf.org/html/rfc6749#section-4.3) onde o aplicativo está configurado sem especificar um URI de redirecionamento. Nesses casos, o Azure AD interpretará o tipo de aplicativo com base no valor dessa propriedade.|
 | keyCredentials | [keyCredential](keycredential.md) collection | A coleção de credenciais de chave associadas ao aplicativo. Não anulável. Dá suporte `$filter`(`eq`, `NOT`, `ge`, `le`). |

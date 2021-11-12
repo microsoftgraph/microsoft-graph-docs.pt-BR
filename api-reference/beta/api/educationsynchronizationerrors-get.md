@@ -2,15 +2,15 @@
 title: Obter educationSynchronizationErrors
 description: 'Obter os erros gerados durante a validação e/ou durante uma sincronização de um perfil específico de sincronização de dados escolares no locatário. '
 author: mmast-msft
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: 6bcf581d70d3c214bc18904d73ba5a69a1321824
-ms.sourcegitcommit: 99fdbd9a1806d64626423e1f39342dcde8a1eaf4
+ms.openlocfilehash: e501ea913501a3f8c134e10d7f52525470b12372
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/16/2021
-ms.locfileid: "52971059"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60935946"
 ---
 # <a name="get-educationsynchronizationerrors"></a>Obter educationSynchronizationErrors
 
@@ -103,7 +103,6 @@ Este é um exemplo de resposta.
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 1568
 
 {
   "@odata.context": "https://graph.microsoft.com/beta/$metadata#education/synchronizationProfiles/{id}/errors",

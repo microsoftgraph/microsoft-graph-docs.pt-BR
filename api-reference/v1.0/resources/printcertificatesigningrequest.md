@@ -2,21 +2,19 @@
 title: Tipo de recurso printCertificateSigningRequest
 description: A solicitação de assinatura de certificado (CSR) a ser usada durante o registro de uma impressora com o serviço de Impressão Universal.
 author: nilakhan
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: cloud-printing
 doc_type: resourcePageType
-ms.openlocfilehash: 0c86e7a2ecbd164f40dcbb0865954c4549622f16aa1f2b008a392f150b626aa8
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 2136ae68a722242e8ad3b7f39743e20d7a54cfe7
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54129972"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60944295"
 ---
 # <a name="printcertificatesigningrequest-resource-type"></a>Tipo de recurso printCertificateSigningRequest
 
 Namespace: microsoft.graph
-
-[!INCLUDE [cloudprinting-pricing-disclaimer](../../includes/cloudprinting-pricing-disclaimer.md)]
 
 A solicitação de assinatura de certificado (CSR) a ser usada durante o registro de uma impressora com o serviço de Impressão Universal.
 

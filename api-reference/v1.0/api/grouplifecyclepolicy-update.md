@@ -5,12 +5,12 @@ author: Jordanndahl
 ms.localizationpriority: medium
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: fcfb2da1ade461016a375c7545cdb9e7f3bc125a
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 3aa5cd500b96c098d29edc502b0a8e186e64c2af
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59073951"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60943714"
 ---
 # <a name="update-grouplifecyclepolicy"></a>Atualizar groupLifecyclePolicy
 
@@ -24,7 +24,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
  
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegada (conta corporativa ou de estudante) | Directory.ReadWrite.All    |
+|Delegado (conta corporativa ou de estudante) | Directory.ReadWrite.All    |
 |Delegada (conta pessoal da Microsoft) | Sem suporte.    |
 |Aplicativo | Directory.ReadWrite.All |
 
@@ -34,7 +34,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 PATCH /groupLifecyclePolicies/{id}
 ```
 ## <a name="optional-request-headers"></a>Cabeçalhos de solicitação opcionais
-| Name | Descrição |
+| Nome | Descrição |
 |:-----------|:-----------|
 | Autorização | {token} de portador. Obrigatório. |
 | Content-Type  | application/json  |
@@ -65,7 +65,6 @@ Quando é bem-sucedido, este método retorna um código de resposta `200 OK` e o
 ```http
 PATCH https://graph.microsoft.com/v1.0/groupLifecyclePolicies/{id}
 Content-type: application/json
-Content-length: 125
 
 {
   "groupLifetimeInDays": 180,
@@ -101,7 +100,6 @@ Observação: o objeto de resposta exibido aqui pode ser encurtado para legibili
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 146
 
 {
   "id": "id-value",

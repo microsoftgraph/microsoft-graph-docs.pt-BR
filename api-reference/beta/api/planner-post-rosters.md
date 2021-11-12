@@ -2,15 +2,15 @@
 title: Criar plannerRoster
 description: Crie um novo objeto plannerRoster.
 author: tarkansevilmis
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: planner
 doc_type: apiPageType
-ms.openlocfilehash: 153a88951943ce1a66d73ee26be289eaae7631f0
-ms.sourcegitcommit: 42fdb068616222eb6b0813e93b33e830fc7eedc0
+ms.openlocfilehash: 53a103a04dd899ce8b79911aadf09809694c6903
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/17/2021
-ms.locfileid: "50271999"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60936509"
 ---
 # <a name="create-plannerroster"></a>Criar plannerRoster
 Namespace: microsoft.graph
@@ -19,13 +19,13 @@ Namespace: microsoft.graph
 
 Crie um novo [objeto plannerRoster.](../resources/plannerroster.md)
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão|Permissões (da com menos para a com mais privilégios)|
 |:---|:---|
 |Delegado (conta corporativa ou de estudante)|Tasks.ReadWrite|
-|Delegado (conta pessoal da Microsoft)|Sem suporte.|
+|Delegada (conta pessoal da Microsoft)|Sem suporte.|
 |Aplicativo|Sem suporte.|
 
 ## <a name="http-request"></a>Solicitação HTTP
@@ -51,7 +51,7 @@ Não há propriedades writable no [plannerRoster](../resources/plannerroster.md)
 
 ## <a name="response"></a>Resposta
 
-Se bem-sucedido, este método retorna um código de resposta e um `201 Created` [objeto plannerRoster](../resources/plannerroster.md) no corpo da resposta.
+Se tiver êxito, este método retornará um código `201 Created` de resposta e um objeto [plannerRoster](../resources/plannerroster.md) no corpo da resposta.
 
 ## <a name="examples"></a>Exemplos
 
@@ -66,7 +66,6 @@ Se bem-sucedido, este método retorna um código de resposta e um `201 Created` 
 ``` http
 POST https://graph.microsoft.com/beta/planner/rosters
 Content-Type: application/json
-Content-length: 55
 
 {
   "@odata.type": "#microsoft.graph.plannerRoster"

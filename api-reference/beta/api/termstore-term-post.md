@@ -5,12 +5,12 @@ author: mohitpcad
 ms.localizationpriority: medium
 ms.prod: taxonomy
 doc_type: apiPageType
-ms.openlocfilehash: d91ad5dc9f813ff3e06ddfe5da99c61872b911bd
-ms.sourcegitcommit: 0eb843a6f61f384bc28c0cce1ccb74f64bdb1fa6
+ms.openlocfilehash: 45ce3a4c7284f67be0f24d8d6b6c0e4d5ae07ef0
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/23/2021
-ms.locfileid: "60560748"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60941950"
 ---
 # <a name="create-term"></a>Criar termo
 Namespace: microsoft.graph.termStore
@@ -25,7 +25,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |Tipo de permissão|Permissões (da com menos para a com mais privilégios)|
 |:---|:---|
 |Delegado (conta corporativa ou de estudante) | TermStore.ReadWrite.All |
-|Delegado (conta pessoal da Microsoft) | Sem suporte.    |
+|Delegada (conta pessoal da Microsoft) | Sem suporte.    |
 |Aplicativo | Sem suporte. |
 
 
@@ -74,7 +74,6 @@ Se tiver êxito, este método retornará `201 Created` um código de resposta e 
 ``` http
 POST https://graph.microsoft.com/beta/termStore/sets/{setId}/children
 Content-Type: application/json
-Content-length: 366
 
 {
   "labels": [

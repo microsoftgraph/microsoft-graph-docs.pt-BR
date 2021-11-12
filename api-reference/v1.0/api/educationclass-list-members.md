@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: mmast-msft
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: 90a38dd2b1beda22e18d0671b787cac3e666fe07
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 4afd49d9341418ad4bbdedff031f9d32340ef8bc
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59008397"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60936359"
 ---
 # <a name="list-members-of-an-educationclass"></a>Listar membros de uma educationClass
 
@@ -23,7 +23,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 | Tipo de permissão                        | Permissões (da com menos para a com mais privilégios)                         |
 | :------------------------------------- | :------------------------------------------------------------------ |
-| Delegada (conta corporativa ou de estudante)     | EduRoster.ReadBasic                                                 |
+| Delegado (conta corporativa ou de estudante)     | EduRoster.ReadBasic                                                 |
 | Delegado (conta pessoal da Microsoft) | Sem suporte                                                       |
 | Aplicativo                            | EduRoster.Read.All, EduRoster.ReadWrite.All mais Member.Read.Hidden |
 
@@ -97,7 +97,6 @@ Este é um exemplo de resposta.
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 593
 
 {
   "value": [

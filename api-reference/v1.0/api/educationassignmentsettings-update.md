@@ -5,12 +5,12 @@ author: sharad-sharma-msft
 ms.localizationpriority: medium
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: 514a78995215ad1b803e10deeec04c368f0d66af
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: bfa4ddc9c618379683f1dea8e7ad058ccc404d96
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59074462"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60943028"
 ---
 # <a name="update-educationassignmentsettings"></a>Atualizar educationAssignmentSettings
 Namespace: microsoft.graph
@@ -22,7 +22,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 |Tipo de permissão|Permissões (da com menos para a com mais privilégios)|
 |:---|:---|
-|Delegada (conta corporativa ou de estudante)|EduAssignments.ReadWriteBasic, EduAssignments.ReadWrite|
+|Delegado (conta corporativa ou de estudante)|EduAssignments.ReadWriteBasic, EduAssignments.ReadWrite|
 |Delegada (conta pessoal da Microsoft)|Sem suporte.|
 |Aplicativo|Sem suporte.|
 
@@ -49,7 +49,7 @@ A tabela a seguir mostra as propriedades que são necessárias ao atualizar [edu
 
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|submissionAnimationDisabled|Booliano|Indica se a animação de celebração de turn-in será mostrada. Um valor `true` indica que a animação não será mostrada. O valor padrão é `false`.|
+|submissionAnimationDisabled|Boolean|Indica se a animação de celebração de turn-in será mostrada. Um valor `true` indica que a animação não será mostrada. O valor padrão é `false`.|
 
 
 
@@ -71,7 +71,6 @@ Se tiver êxito, este método retornará um código de resposta e um `200 OK` [o
 ``` http
 PATCH https://graph.microsoft.com/v1.0/education/classes/acdefc6b-2dc6-4e71-b1e9-6d9810ab1793/assignmentSettings
 Content-Type: application/json
-Content-length: 114
 
 {
   "submissionAnimationDisabled": true

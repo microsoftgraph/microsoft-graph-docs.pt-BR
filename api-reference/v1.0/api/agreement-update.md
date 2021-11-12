@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 doc_type: apiPageType
 ms.prod: governance
 author: raprakasMSFT
-ms.openlocfilehash: e43934d8936a9f546a534f278b36cf02bc22cec1
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: c2bcd0196ec479f261f08094908e66f4af91f487
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59017034"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60943994"
 ---
 # <a name="update-agreement"></a>Atualizar contrato
 
@@ -22,7 +22,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 |Tipo de permissão                        | Permissões (da com menos para a com mais privilégios)              |
 |:--------------------------------------|:---------------------------------------------------------|
-|Delegada (conta corporativa ou de estudante)     | Agreement.ReadWrite.All |
+|Delegado (conta corporativa ou de estudante)     | Agreement.ReadWrite.All |
 |Delegada (conta pessoal da Microsoft) | Sem suporte. |
 |Aplicativo                            | Sem suporte. |
 
@@ -58,7 +58,6 @@ Se tiver êxito, este método retornará `200 OK` um código de resposta e um ob
 ```http
 PATCH https://graph.microsoft.com/v1.0/identityGovernance/termsOfUse/agreements/093b947f-8363-4979-a47d-4c52b33ee1be
 Content-type: application/json
-Content-length: 85
 
 {
   "displayName": "Sample ToU display name",
@@ -95,7 +94,6 @@ Content-length: 85
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 105
 
 {
   "displayName": "Sample ToU display name",

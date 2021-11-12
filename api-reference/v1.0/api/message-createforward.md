@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: abheek-das
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: bdcc3125fb05b6ffec7bedfc94dc1c3abca271d5
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 875b3ca8be27434218901a99d9e0b5f94f496c73
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59110295"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60942958"
 ---
 # <a name="message-createforward"></a>message: createForward
 
@@ -118,7 +118,6 @@ Aqui está um exemplo da resposta. Observação: o objeto de resposta mostrado a
 ```http
 HTTP/1.1 201 Created
 Content-type: application/json
-Content-length: 248
 
 {
   "receivedDateTime": "datetime-value",

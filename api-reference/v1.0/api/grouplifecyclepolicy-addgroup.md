@@ -5,12 +5,12 @@ author: Jordanndahl
 ms.localizationpriority: medium
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: f91f8cb17500aa6e75e6fd53c82bc51652917b4f
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: a5deab02460562f527cd1566769cf9d75b16858e
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59074007"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60937241"
 ---
 # <a name="grouplifecyclepolicy-addgroup"></a>groupLifecyclePolicy: addGroup
 
@@ -25,7 +25,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegada (conta corporativa ou de estudante) | Directory.ReadWrite.All    |
+|Delegado (conta corporativa ou de estudante) | Directory.ReadWrite.All    |
 |Delegada (conta pessoal da Microsoft) | Sem suporte.    |
 |Aplicativo | Directory.ReadWrite.All |
 
@@ -68,7 +68,6 @@ Quando é bem-sucedido, este método retorna um código de resposta `200 OK`. Se
 ```http
 POST https://graph.microsoft.com/v1.0/groupLifecyclePolicies/{id}/addGroup
 Content-type: application/json
-Content-length: 57
 
 {
   "groupId": "ffffffff-ffff-ffff-ffff-ffffffffffff"
@@ -81,7 +80,6 @@ Content-length: 57
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 21
 
 {
   "value": true

@@ -2,21 +2,19 @@
 title: Tipo de recurso printerBase
 description: Representa o tipo base para o compartilhamento de impressora e impressora
 author: braedenp-msft
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: cloud-printing
 doc_type: resourcePageType
-ms.openlocfilehash: 12b611e73fab82d0ac1eafbdc19b26069ccfd94fa3806e4286da0f0c6516202b
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 9e770cd0dfdd29da549114ca5a688718e679855c
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54235370"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60944981"
 ---
 # <a name="printerbase-resource-type"></a>Tipo de recurso printerBase
 
 Namespace: microsoft.graph
-
-[!INCLUDE [cloudprinting-pricing-disclaimer](../../includes/cloudprinting-pricing-disclaimer.md)]
 
 Representa um tipo de base para [tipos de](printer.md) entidade printer e [printerShare.](printerShare.md)
 
@@ -26,8 +24,8 @@ Representa um tipo de base para [tipos de](printer.md) entidade printer e [print
 |capabilities|[printerCapabilities](printercapabilities.md)|Os recursos da impressora/printerShare.|
 |defaults|[printerDefaults](printerdefaults.md)|As configurações de impressão padrão de printer/printerShare.|
 |displayName|Cadeia de caracteres|O nome da impressora/printerShare.|
-|id|String|O identificador.|
-|isAcceptingJobs|Booliano|Se a impressora/printerShare está aceitando novos trabalhos de impressão no momento.|
+|id|Cadeia de caracteres|O identificador.|
+|isAcceptingJobs|Boolean|Se a impressora/printerShare está aceitando novos trabalhos de impressão no momento.|
 |localização|[printerLocation](printerlocation.md)|O local físico e/ou organizacional da impressora/printerShare.|
 |fabricante|String|O fabricante da impressora/printerShare.|
 |modelo|String|O nome do modelo da impressora/printerShare.|

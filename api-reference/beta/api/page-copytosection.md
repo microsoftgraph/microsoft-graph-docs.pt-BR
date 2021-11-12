@@ -1,16 +1,16 @@
 ---
 title: 'page: copyToSection'
 description: Copia uma página para uma seção específica.
-localization_priority: Normal
+ms.localizationpriority: medium
 author: jewan-microsoft
 ms.prod: onenote
 doc_type: apiPageType
-ms.openlocfilehash: 665d244248c8af3a4ce3b5b01151d3debe196d92
-ms.sourcegitcommit: 94c4acf8bd03c10a44b12952b6cb4827df55b978
+ms.openlocfilehash: 5e69b9780d9ef08a426777946860a3a21d1e1a12
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/06/2021
-ms.locfileid: "52785232"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60935736"
 ---
 # <a name="page-copytosection"></a>page: copyToSection
 
@@ -22,7 +22,7 @@ Copia uma página para uma seção específica.
 
 Para operações de cópia, siga um padrão de chamada assíncrona: primeiro chame a ação Copiar e, em seguida, sonda o ponto de extremidade da operação para o resultado.
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
@@ -50,8 +50,8 @@ No corpo da solicitação, forneça um objeto JSON que contém os parâmetros de
 
 | Parâmetro    | Tipo   |Descrição|
 |:---------------|:--------|:----------|
-|siteCollectionId|String|A id do site SharePoint para o que copiar. Use somente ao copiar para um SharePoint site.|
-|siteId|String|A id do SharePoint web para o que copiar. Use somente ao copiar para um SharePoint site.|
+|siteCollectionId|Cadeia de caracteres|A id do site SharePoint para o que copiar. Use somente ao copiar para um SharePoint site.|
+|siteId|Cadeia de caracteres|A id do SharePoint web para o que copiar. Use somente ao copiar para um SharePoint site.|
 |groupId|Cadeia de caracteres|A id do grupo para o que copiar. Use somente ao copiar para um Microsoft 365 grupo.|
 |id|String|Obrigatório. A id da seção de destino.|
 
@@ -72,7 +72,6 @@ Este é um exemplo da solicitação.
 ```http
 POST https://graph.microsoft.com/beta/me/onenote/pages/{id}/copyToSection
 Content-type: application/json
-Content-length: 52
 
 {
   "id": "id-value",
