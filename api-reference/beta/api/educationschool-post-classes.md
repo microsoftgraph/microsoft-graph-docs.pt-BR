@@ -2,15 +2,15 @@
 title: Adicionar educationClass a educationSchool
 description: Adicione uma aula a uma escola.
 author: mmast-msft
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: b2837ee537c5dfc52766fce0a680a3c367d290d2
-ms.sourcegitcommit: 94c4acf8bd03c10a44b12952b6cb4827df55b978
+ms.openlocfilehash: ed4485f31f20e3e15824e21692ef96bae37bc8a1
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/06/2021
-ms.locfileid: "52785974"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60936793"
 ---
 # <a name="add-educationclass-to-educationschool"></a>Adicionar educationClass a educationSchool
 
@@ -20,7 +20,7 @@ Namespace: microsoft.graph
 
 Adicione uma aula a uma escola.
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
@@ -59,7 +59,6 @@ Este é um exemplo de solicitação.
 ```http
 POST https://graph.microsoft.com/beta/education/schools/10002/classes/$ref
 Content-type: application/json
-Content-length: 224
 
 {
  "@odata.id":"https://graph.microsoft.com/beta/education/classes/11006"

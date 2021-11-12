@@ -2,20 +2,18 @@
 title: Get printerShare
 description: Recupere as propriedades e as relações de um compartilhamento de impressora.
 author: nilakhan
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: cloud-printing
 doc_type: apiPageType
-ms.openlocfilehash: e9a16d9d615b780d921ff49291d6b15edda2ed3f
-ms.sourcegitcommit: 40947e6f4337c8c4193d85bb862e15f67263e1e7
+ms.openlocfilehash: cb36cbd45082200549ac8f0222cd1d1839d4bcff
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/13/2021
-ms.locfileid: "50771607"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60941635"
 ---
 # <a name="get-printershare"></a>Get printerShare
 Namespace: microsoft.graph
-
-[!INCLUDE [cloudprinting-pricing-disclaimer](../../includes/cloudprinting-pricing-disclaimer.md)]
 
 Recupere as propriedades e as relações de um compartilhamento de impressora.
 
@@ -26,8 +24,8 @@ Além das permissões a seguir, o usuário ou locatário do aplicativo deve ter 
 
 |Tipo de permissão | Permissões (da com menos para a com mais privilégios) |
 |:---------------|:--------------------------------------------|
-|Delegada (conta corporativa ou de estudante)| PrinterShare.ReadBasic.All, PrinterShare.Read.All, PrinterShare.ReadWrite.All |
-|Delegado (conta pessoal da Microsoft)|Sem suporte.|
+|Delegado (conta corporativa ou de estudante)| PrinterShare.ReadBasic.All, PrinterShare.Read.All, PrinterShare.ReadWrite.All |
+|Delegada (conta pessoal da Microsoft)|Sem suporte.|
 |Aplicativo|Sem suporte.|
 
 ## <a name="http-request"></a>Solicitação HTTP
@@ -50,7 +48,7 @@ GET /print/printers/{id}?$select=id,displayName,capabilities
 ```
 Para obter informações gerais, acesse [Parâmetros de consulta OData](/graph/query-parameters).
 
-### <a name="exceptions"></a>Exceptions
+### <a name="exceptions"></a>Exceções
 * O `$count` operador não tem suporte.
 
 ## <a name="request-headers"></a>Cabeçalhos de solicitação

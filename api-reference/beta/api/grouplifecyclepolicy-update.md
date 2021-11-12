@@ -2,15 +2,15 @@
 title: Atualizar groupLifecyclePolicy
 description: Atualiza as propriedades de um objeto do tipo de recurso groupLifecyclePolicy.
 author: Jordanndahl
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: 0ea2b37376943eb84543411436e86710ddec61b2
-ms.sourcegitcommit: 4fa6fcc058c7f8d8cad58c0b82db23d6c7da37d2
+ms.openlocfilehash: bc72101013ddb89fb60282d57f85d9d8a3e4ec09
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/27/2021
-ms.locfileid: "52681106"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60943357"
 ---
 # <a name="update-grouplifecyclepolicy"></a>Atualizar groupLifecyclePolicy
 
@@ -68,7 +68,6 @@ Quando é bem-sucedido, este método retorna um código de resposta `200 OK` e o
 ```http
 PATCH https://graph.microsoft.com/beta/groupLifecyclePolicies/{id}
 Content-type: application/json
-Content-length: 151
 
 {
   "groupLifetimeInDays": 180,
@@ -104,7 +103,6 @@ Observação: o objeto de resposta exibido aqui pode ser encurtado para legibili
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 146
 
 {
   "id": "id-value",

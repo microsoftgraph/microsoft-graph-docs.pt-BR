@@ -1,16 +1,16 @@
 ---
 title: Criar página
 description: Crie uma nova página na seção especificado.
-localization_priority: Normal
+ms.localizationpriority: medium
 author: jewan-microsoft
 ms.prod: onenote
 doc_type: apiPageType
-ms.openlocfilehash: 8df217f4ebc84eebaa0ff938028ef3b571058808
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 402ff69bf2277e65da2446a02a8e17e792e81e6b
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48067661"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60926396"
 ---
 # <a name="create-page"></a>Criar página
 
@@ -49,7 +49,7 @@ O corpo pode conter HTML colocado diretamente no corpo da solicitação ou pode 
 
 ## <a name="response"></a>Resposta
 
-Se bem-sucedido, este método retorna `201 Created` o código de resposta e o novo objeto [onenotePage](../resources/onenotepage.md) no corpo da resposta.
+Se tiver êxito, este método retornará `201 Created` o código de resposta e o novo objeto [onenotePage](../resources/onenotepage.md) no corpo da resposta.
 
 ## <a name="example"></a>Exemplo
 ##### <a name="request"></a>Solicitação
@@ -58,7 +58,6 @@ Este é um exemplo da solicitação.
 <!-- { "blockType": "ignored" } -->
 ```http
 POST https://graph.microsoft.com/beta/me/onenote/sections/{id}/pages
-Content-length: 312
 Content-type: multipart/form-data; boundary=MyPartBoundary198374
 
 --MyPartBoundary198374
@@ -100,7 +99,6 @@ Veja a seguir um exemplo da resposta. Observação: O objeto response mostrado a
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 312
 
 {
   "title": "title-value",

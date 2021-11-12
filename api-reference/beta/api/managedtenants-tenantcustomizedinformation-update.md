@@ -2,15 +2,15 @@
 title: Atualizar tenantCustomizedInformation
 description: Atualize as propriedades de um objeto tenantCustomizedInformation.
 author: isaiahwilliams
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: microsoft-365-lighthouse
 doc_type: apiPageType
-ms.openlocfilehash: 3f43e7e3f543c0a74b27a3594f573d4fe3cc68c6
-ms.sourcegitcommit: 486fe9c77d4d89c5416bb83e8c716e6918c47370
+ms.openlocfilehash: 94862481f6857e66e37f364bfe2434242b7714f0
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/15/2021
-ms.locfileid: "53441791"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60936639"
 ---
 # <a name="update-tenantcustomizedinformation"></a>Atualizar tenantCustomizedInformation
 Namespace: microsoft.graph.managedTenants
@@ -19,12 +19,12 @@ Namespace: microsoft.graph.managedTenants
 
 Atualize as propriedades de [um objeto tenantCustomizedInformation.](../resources/managedtenants-tenantcustomizedinformation.md)
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão|Permissões (da com menos para a com mais privilégios)|
 |:---|:---|
-|Delegada (conta corporativa ou de estudante)|ManagedTenants.ReadWrite.All|
+|Delegado (conta corporativa ou de estudante)|ManagedTenants.ReadWrite.All|
 |Delegada (conta pessoal da Microsoft)|Sem suporte.|
 |Aplicativo|Sem suporte.|
 
@@ -73,7 +73,6 @@ Se tiver êxito, este método retornará um código de resposta e um `200 OK` [o
 ``` http
 PATCH https://graph.microsoft.com/beta/tenantRelationships/managedTenants/tenantsCustomizedInformation/{tenantCustomizedInformationId}
 Content-Type: application/json
-Content-length: 278
 
 {
   "@odata.type": "#microsoft.graph.managedTenants.tenantCustomizedInformation",

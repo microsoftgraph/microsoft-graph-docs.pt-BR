@@ -1,16 +1,16 @@
 ---
 title: Criar outlookTask
 description: Crie uma Outlook tarefa no grupo de tarefas padrão ( ) e na pasta de tarefas `My Tasks` padrão ( ) na caixa de correio do `Tasks` usuário.
-localization_priority: Normal
+ms.localizationpriority: medium
 author: mashriv
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: a327acde8db0928b1ade7e5fcf660f86d6cdae96
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: 885cabb1422a145e32e0055309aafb810e189361
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52037953"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60935750"
 ---
 # <a name="create-outlooktask-deprecated"></a>Criar outlookTask(obsoleto)
 
@@ -33,7 +33,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
 |:--------------------|:---------------------------------------------------------|
 |Delegado (conta corporativa ou de estudante) | Tasks.ReadWrite    |
-|Delegado (conta pessoal da Microsoft) | Tasks.ReadWrite    |
+|Delegada (conta pessoal da Microsoft) | Tasks.ReadWrite    |
 |Aplicativo | Sem suporte. |
 
 ## <a name="http-request"></a>Solicitação HTTP
@@ -66,7 +66,6 @@ O exemplo a seguir mostra o uso `Prefer: outlook.timezone` do header. Ele cria u
 POST https://graph.microsoft.com/beta/me/outlook/tasks
 Prefer: outlook.timezone="Pacific Standard Time"
 Content-type: application/json
-Content-length: 276
 
 {
   "subject": "Shop for children's weekend",
@@ -113,7 +112,6 @@ Observação: o objeto de resposta mostrado aqui pode ser encurtado para legibil
 ```http
 HTTP/1.1 201 Created
 Content-type: application/json
-Content-length: 576
 
 {
   "id": "AAMkADA1MHgwAAA=",

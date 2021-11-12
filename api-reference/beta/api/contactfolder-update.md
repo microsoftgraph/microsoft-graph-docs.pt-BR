@@ -2,15 +2,15 @@
 title: Atualizar contactfolder
 description: Atualiza as propriedades do objeto contactfolder.
 author: kevinbellinger
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 471b2965e39c8aa43e01f7df6bae1aaf91792b2e
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: 7f872d80aa31d4b93bb67ff778c73ffb2b0d0dfb
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52047060"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60944855"
 ---
 # <a name="update-contactfolder"></a>Atualizar contactfolder
 
@@ -45,9 +45,9 @@ No corpo da solicitação, forneça os valores para os campos relevantes que dev
 
 | Propriedade     | Tipo   |Descrição|
 |:---------------|:--------|:----------|
-|displayName|String|O nome de exibição da pasta.|
-|parentFolderId|String|A ID da pasta pai da pasta.|
-|wellKnownName|cadeia de caracteres|O nome da pasta se a pasta for uma pasta reconhecida. Atualmente é `contacts` a única pasta de contatos reconhecida.|
+|displayName|Cadeia de caracteres|O nome de exibição da pasta.|
+|parentFolderId|Cadeia de caracteres|A ID da pasta pai da pasta.|
+|wellKnownName|string|O nome da pasta se a pasta for uma pasta reconhecida. Atualmente é `contacts` a única pasta de contatos reconhecida.|
 
 ## <a name="response"></a>Resposta
 
@@ -64,7 +64,6 @@ Este é um exemplo da solicitação.
 ```http
 PATCH https://graph.microsoft.com/beta/me/contactFolders/{id}
 Content-type: application/json
-Content-length: 84
 
 {
   "parentFolderId": "parentFolderId-value",
@@ -90,7 +89,7 @@ Content-length: 84
 ---
 
 ##### <a name="response"></a>Resposta
-Veja a seguir um exemplo da resposta. Observação: o objeto de resposta mostrado aqui pode ser encurtado para legibilidade.
+Aqui está um exemplo da resposta. Observação: o objeto de resposta mostrado aqui pode ser reduzido para facilitar a leitura.
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -99,7 +98,6 @@ Veja a seguir um exemplo da resposta. Observação: o objeto de resposta mostrad
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 104
 
 {
   "parentFolderId": "parentFolderId-value",

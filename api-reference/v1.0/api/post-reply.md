@@ -5,12 +5,12 @@ author: dkershaw10
 ms.localizationpriority: medium
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: a86b9fde843c76664cfff641e4485b4f698502db
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 90bc2611bbd9e63b364cc4db2b2c4d2244e1a9d9
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59085291"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60937213"
 ---
 # <a name="post-reply"></a>post: reply
 
@@ -65,7 +65,6 @@ Este é um exemplo da solicitação.
 ```http
 POST https://graph.microsoft.com/v1.0/groups/{id}/threads/{id}/posts/{id}/reply
 Content-type: application/json
-Content-length: 1131
 
 {
   "post": {

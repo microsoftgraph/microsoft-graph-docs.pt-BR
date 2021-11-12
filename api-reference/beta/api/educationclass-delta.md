@@ -1,16 +1,16 @@
 ---
 title: 'educationClass: delta'
 description: Get newly created or updated classes, including membership changes, without having to perform a full read of the entire class collection.
-localization_priority: Normal
+ms.localizationpriority: medium
 author: mlafleur
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: e8b93c8ddd251bbc25efc9203417d6736e6bf62c
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: 2fcf15553cbf9b8c632b0ea5739f39b93cada60d
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52044071"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60937864"
 ---
 # <a name="educationclass-delta"></a>educationClass: delta
 
@@ -27,8 +27,8 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 | Tipo de permissão                        | Permissões (da com menos para a com mais privilégios)                              |
 | :------------------------------------- | :----------------------------------------------------------------------- |
 | Delegado (conta corporativa ou de estudante)     | EduRoster.ReadBasic, EduRoster.Read ou EduRoster.ReadWrite              |
-| Delegado (conta pessoal da Microsoft) | Sem suporte.                                                           |
-| Application                            | EduRoster.ReadBasic.All, EduRoster.Read.All ou EduRoster.WriteWrite.All |
+| Delegada (conta pessoal da Microsoft) | Sem suporte.                                                           |
+| Aplicativo                            | EduRoster.ReadBasic.All, EduRoster.Read.All ou EduRoster.ReadWrite.All |
 
 ## <a name="http-request"></a>Solicitação HTTP
 
@@ -108,7 +108,6 @@ Este é um exemplo de resposta.
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 585
 
 {
   "value": [

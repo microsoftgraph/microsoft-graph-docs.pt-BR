@@ -5,12 +5,12 @@ author: mmast-msft
 ms.localizationpriority: medium
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: 88525d04225d486d8cb22ac0a490e3f0d7a85641
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 67b86e97a519afb8f049441eb106346d904bd872
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59090618"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60936352"
 ---
 # <a name="add-educationclass-to-educationschool"></a>Adicionar educationClass a educationSchool
 
@@ -57,7 +57,6 @@ Este é um exemplo de solicitação.
 ```http
 POST https://graph.microsoft.com/v1.0/education/schools/{school-id}/classes/$ref
 Content-type: application/json
-Content-length: 224
 
 {
  "@odata.id":"https://graph.microsoft.com/v1.0/education/classes/11006"

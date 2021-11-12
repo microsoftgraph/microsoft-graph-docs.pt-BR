@@ -2,20 +2,18 @@
 title: 'reports: getGroupArchivedPrintJobs'
 description: Obter uma lista de trabalhos de impressão arquivados para um grupo específico.
 author: nilakhan
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: cloud-printing
 doc_type: apiPageType
-ms.openlocfilehash: 649dfc0dc7933bc8610620c8880c24141e35066e8e851f8133776eedeac1f349
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 646d877525e0aebefe3ca0a67454d747cfda2305
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54155397"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60942692"
 ---
 # <a name="reportroot-getgrouparchivedprintjobs"></a>reportRoot: getGroupArchivedPrintJobs
 Namespace: microsoft.graph
-
-[!INCLUDE [cloudprinting-pricing-disclaimer](../../includes/cloudprinting-pricing-disclaimer.md)]
 
 Obter uma lista de trabalhos de impressão arquivados para um grupo específico.
 

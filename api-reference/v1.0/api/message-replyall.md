@@ -5,12 +5,12 @@ author: abheek-das
 ms.localizationpriority: medium
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 4c6d22d1623b03ce57ecbb8647af59200360878b
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 191795d56368c028428709dbb489874f278171b4
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59016096"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60944491"
 ---
 # <a name="message-replyall"></a>message: replyAll
 
@@ -82,7 +82,6 @@ Este é um exemplo da solicitação.
 ```http
 POST https://graph.microsoft.com/v1.0/me/messages/{id}/replyAll
 Content-type: application/json
-Content-length: 32
 
 {
   "comment": "comment-value"

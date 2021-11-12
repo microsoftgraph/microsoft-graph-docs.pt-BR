@@ -5,12 +5,12 @@ author: vishriv
 ms.localizationpriority: medium
 ms.prod: taxonomy
 doc_type: apiPageType
-ms.openlocfilehash: 0ecdf18da98696edebef6eeb6574e86e43c2a23e
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: ab12ed1b273d9d1f109035b872bdabfb678f17b9
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59015648"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60943637"
 ---
 # <a name="update-store"></a>Armazenamento de atualizações
 Namespace: microsoft.graph.termStore
@@ -22,7 +22,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 |Tipo de permissão|Permissões (da com menos para a com mais privilégios)|
 |:---|:---|
-|Delegada (conta corporativa ou de estudante) |TermStore.ReadWrite.All |
+|Delegado (conta corporativa ou de estudante) |TermStore.ReadWrite.All |
 |Delegada (conta pessoal da Microsoft) | Sem suporte.    |
 |Aplicativo | Sem suporte. |
 
@@ -50,7 +50,7 @@ A tabela a seguir mostra as propriedades que podem ser editadas para o [objeto s
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
 |defaultLanguageTag|Cadeia de caracteres|Idioma padrão do [microsoft.graph.termstore.store](../resources/termstore-store.md).|
-|languageTags|Coleção String|Idiomas disponíveis no [microsoft.graph.termstore.store](../resources/termstore-store.md).|
+|languageTags|Coleção de cadeias de caracteres|Idiomas disponíveis no [microsoft.graph.termstore.store](../resources/termstore-store.md).|
 
 
 
@@ -72,7 +72,6 @@ Se tiver êxito, este método retornará um código de resposta e um `200 OK` ob
 ``` http
 PATCH https://graph.microsoft.com/v1.0/sites/microsoft.sharepoint.com,b9b0bc03-cbc4-40d2-aba9-2c9dd9821ddf,6a742cee-9216-4db5-8046-13a595684e74/termStore
 Content-Type: application/json
-Content-length: 133
 
 {
   "defaultLanguageTag": "en-US"

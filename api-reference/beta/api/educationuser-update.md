@@ -1,16 +1,16 @@
 ---
 title: Atualizar propriedades de educationUser
 description: Atualize as propriedades de um objeto **educationuser**.
-localization_priority: Normal
+ms.localizationpriority: medium
 author: mmast-msft
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: 2cf940f4327d32082b95deb0658a316ac4e2ecac9c0fc03285c018ceecbd3bdf
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 81d821571007f8df619b536f1a975abf6617086b
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "57159678"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60936765"
 ---
 # <a name="update-educationuser-properties"></a>Atualizar propriedades de educationUser
 
@@ -85,7 +85,6 @@ Este é um exemplo da solicitação.
 ```http
 PATCH https://graph.microsoft.com/beta/education/users/13020
 Content-type: application/json
-Content-length: 508
 
 {
   "displayName": "Rogelio Cazares",
@@ -129,7 +128,6 @@ Aqui está um exemplo da resposta. Observação: o objeto de resposta mostrado a
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 508
 
 {
   "id": "13020",

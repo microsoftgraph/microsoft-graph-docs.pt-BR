@@ -1,16 +1,16 @@
 ---
 title: Obter bookingCurrency
 description: Obter as propriedades de um objeto bookingCurrency que está disponível para uma empresa do Microsoft Bookings.
-localization_priority: Normal
+ms.localizationpriority: medium
 author: arvindmicrosoft
 ms.prod: bookings
 doc_type: apiPageType
-ms.openlocfilehash: f6702d108c3b705749021ad79d7e9fe6ceb944b1
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: c58245c4135cce04ed92d07c65e565b76f8b9e0e
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52047837"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60936093"
 ---
 # <a name="get-bookingcurrency"></a>Obter bookingCurrency
 
@@ -26,7 +26,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
 |:--------------------|:---------------------------------------------------------|
 |Delegado (conta corporativa ou de estudante) | Bookings.Read.All, BookingsAppointment.ReadWrite.All, Bookings.ReadWrite.All, Bookings.Manage.All   |
-|Delegado (conta pessoal da Microsoft) | Sem suporte.   |
+|Delegada (conta pessoal da Microsoft) | Sem suporte.   |
 |Aplicativo | Sem suporte.  |
 
 ## <a name="http-request"></a>Solicitação HTTP
@@ -77,7 +77,7 @@ GET https://graph.microsoft.com/beta/bookingCurrencies/USD
 ---
 
 ##### <a name="response"></a>Resposta
-Este é um exemplo de resposta. Observação: o objeto de resposta mostrado aqui pode ser encurtado para legibilidade.
+Eis um exemplo da resposta. Observação: o objeto de resposta exibido aqui pode ser reduzido para facilitar a leitura.
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -86,7 +86,6 @@ Este é um exemplo de resposta. Observação: o objeto de resposta mostrado aqui
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 50
 
 {
     "@odata.context": "https://graph.microsoft.com/beta/$metadata#bookingCurrencies/$entity",

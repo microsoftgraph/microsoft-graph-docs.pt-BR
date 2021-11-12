@@ -1,16 +1,16 @@
 ---
 title: Atualizar plannertask
 description: Atualize as propriedades do **objeto plannertask.**
-localization_priority: Normal
+ms.localizationpriority: medium
 author: TarkanSevilmis
 ms.prod: planner
 doc_type: apiPageType
-ms.openlocfilehash: a0973fccf01a7f631e075cd6c4d3383b46613048
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: bda1bee006ff0f32ddf9b2ef71bd411a8f72b021
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52049979"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60926718"
 ---
 # <a name="update-plannertask"></a>Atualizar plannertask
 
@@ -49,12 +49,12 @@ No corpo da solicitação, forneça os valores para os campos relevantes que dev
 |assignments|[plannerAssignments](../resources/plannerassignments.md)|O conjunto de usuários aos que a tarefa é atribuída.|
 |bucketId|String|ID de bucket à qual a tarefa pertence. O bucket precisa estar no plano no qual a tarefa está. Tem 28 caracteres e diferencia maiúsculas de minúsculas. [Formatar validação](../resources/tasks-identifiers-disclaimer.md) é feito no serviço. |
 |conversationThreadId|String|ID de thread da conversa na tarefa. Esta é a id do objeto thread de conversa criado no grupo.|
-|dueDateTime|DateTimeOffset|A data e a hora que a tarefa já deve estar concluída. O tipo Timestamp representa informações de data e hora usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite UTC em 1 de janeiro de 2014 é `2014-01-01T00:00:00Z`|
+|dueDateTime|DateTimeOffset|Data e hora em que a tarefa deve ser concluída. O tipo de carimbo de data/hora representa informações de data e hora usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite UTC em 1º de janeiro de 2014 é `2014-01-01T00:00:00Z`|
 |orderHint|String|Dica usada para ordenar itens deste tipo em um modo de exibição de lista. O formato é definido como descrito [aqui](../resources/planner-order-hint-format.md).|
 |percentComplete|Int32|A porcentagem de conclusão da tarefa. Quando definido como `100`, a tarefa será considerada concluída. |
 |planId|String|Plan id to which the task belongs.|
 |prioridade|Int32|Prioridade da tarefa. O intervalo válido de valores é `0` entre e `10` (inclusivo), com o valor crescente sendo a prioridade mais baixa ( tem a prioridade mais alta `0` e tem a prioridade mais `10` baixa).  Atualmente, o Planner interpreta valores e `0` `1` como "urgentes", e como `2` `3` `4` "importantes", `5` , e como `6` `7` "médio" `8` e , e como `9` `10` "baixo".  Atualmente, o Planner define o valor `1` para "urgente", `3` para "importante", `5` para "médio" e `9` para "baixo".|
-|startDateTime|DateTimeOffset|A data e a hora que a tarefa começa. O tipo Timestamp representa informações de data e hora usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite UTC em 1 de janeiro de 2014 é `2014-01-01T00:00:00Z`|
+|startDateTime|DateTimeOffset|Data e hora em que a tarefa é iniciada. O tipo de carimbo de data/hora representa informações de data e hora usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite UTC em 1º de janeiro de 2014 é `2014-01-01T00:00:00Z`|
 |title|String|Título da tarefa.|
 
 ## <a name="response"></a>Resposta
@@ -75,7 +75,6 @@ Este é um exemplo da solicitação.
 ```http
 PATCH https://graph.microsoft.com/beta/planner/tasks/01gzSlKkIUSUl6DF_EilrmQAKDhh
 Content-type: application/json
-Content-length: 247
 Prefer: return=representation
 If-Match: W/"JzEtVGFzayAgQEBAQEBAQEBAQEBAQEBAWCc="
 
@@ -114,7 +113,6 @@ Veja a seguir um exemplo da resposta.
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 1423
 
 {
   "createdBy": {

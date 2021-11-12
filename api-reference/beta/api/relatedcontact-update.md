@@ -2,15 +2,15 @@
 title: Atualizar relatedContacts
 description: Atualize a coleção relatedContact de um objeto educationUser.
 author: mmast-msft
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: 8c57418c9f3e6f8380dd6110bcb2c6ff103cab502307992a5c7d1e37a8f2ec81
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 3ab447edb970b2d2e164578ddec4de47d3690bec
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "57156443"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60941971"
 ---
 # <a name="update-relatedcontacts"></a>Atualizar relatedContacts
 
@@ -84,7 +84,6 @@ Se tiver êxito, este método retornará um código de resposta e um `200 OK` ob
 ```http
 PATCH https://graph.microsoft.com/beta/education/users/{educationUserId}
 Content-Type: application/json
-Content-length: 408
 
 {
   "relatedContacts": [

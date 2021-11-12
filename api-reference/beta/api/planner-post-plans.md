@@ -1,16 +1,16 @@
 ---
 title: Criar plannerPlan
 description: Use essa API para criar um novo **plannerPlan**.
-localization_priority: Normal
+ms.localizationpriority: medium
 author: TarkanSevilmis
 ms.prod: planner
 doc_type: apiPageType
-ms.openlocfilehash: a12e055c4972f7064cdf91239502b7bb54e5c787
-ms.sourcegitcommit: 17f1c9cff2e59049b894db32435af02e4ae32a70
+ms.openlocfilehash: 8ac379336f0b9b4466c2332a63ca44618cc66ea1
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "51473812"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60935554"
 ---
 # <a name="create-plannerplan"></a>Criar plannerPlan
 
@@ -26,8 +26,8 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 | Tipo de permissão                        | Permissões (da com menos para a com mais privilégios) |
 | :------------------------------------- | :------------------------------------------ |
-| Delegada (conta corporativa ou de estudante)     | Tasks.ReadWrite, Group.ReadWrite.All                         |
-| Delegada (conta pessoal da Microsoft) | Sem suporte.                              |
+| Delegado (conta corporativa ou de estudante)     | Tasks.ReadWrite, Group.ReadWrite.All                         |
+| Delegado (conta pessoal da Microsoft) | Sem suporte.                              |
 | Aplicativo                            | Sem suporte.                              |
 
 ## <a name="http-request"></a>Solicitação HTTP
@@ -49,7 +49,7 @@ POST /planner/plans
 No corpo da solicitação, forneça uma representação JSON do objeto [plannerPlan](../resources/plannerplan.md).
 A propriedade de contêiner **plannerPlan** deve ser definida.
 
->**Observação:** Se o contêiner for um grupo do Microsoft 365, o usuário que estiver criando o plano deverá ser um membro do grupo que conterá o plano. Ao criar um novo grupo usando [Criar grupo](../api/group-post-groups.md), você não é adicionado ao grupo como membro. Depois que o grupo for criado, adicione a si mesmo como membro usando [membros de postagem do grupo](../api/group-post-members.md).
+>**Observação:** Se o contêiner for um Microsoft 365, o usuário que estiver criando o plano deverá ser um membro do grupo que conterá o plano. Ao criar um novo grupo usando [Criar grupo](../api/group-post-groups.md), você não é adicionado ao grupo como membro. Depois que o grupo for criado, adicione a si mesmo como membro usando [membros de postagem do grupo](../api/group-post-members.md).
 
 ## <a name="response"></a>Resposta
 
@@ -71,7 +71,6 @@ Este é um exemplo da solicitação.
 ``` http
 POST https://graph.microsoft.com/beta/planner/plans
 Content-type: application/json
-Content-length: 140
 
 {
   "container": {
@@ -112,7 +111,6 @@ Veja a seguir um exemplo da resposta.
 ``` http
 HTTP/1.1 201 Created
 Content-type: application/json
-Content-length: 544
 
 {
   "createdBy": {

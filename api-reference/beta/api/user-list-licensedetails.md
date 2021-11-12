@@ -2,15 +2,15 @@
 title: Listar licenseDetails
 description: Recupere uma lista de objetos licenseDetails.
 author: jpettere
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: users
 doc_type: apiPageType
-ms.openlocfilehash: c35bc0faec06d61aac67c5be2570e344d3e884e9
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: 5385d9edb48c849fd28118178ed53b9ed66cfab6
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52036279"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60944582"
 ---
 # <a name="list-licensedetails"></a>Listar licenseDetails
 
@@ -80,7 +80,7 @@ GET https://graph.microsoft.com/beta/me/licenseDetails
 ---
 
 ##### <a name="response"></a>Resposta
-Observação: o objeto de resposta mostrado aqui pode ser encurtado para legibilidade.
+Observação: o objeto de resposta exibido aqui pode ser encurtado para legibilidade.
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -90,7 +90,6 @@ Observação: o objeto de resposta mostrado aqui pode ser encurtado para legibil
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 389
 
 {
   "value": [

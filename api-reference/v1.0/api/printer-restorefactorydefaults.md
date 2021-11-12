@@ -2,20 +2,18 @@
 title: 'printer: restoreFactoryDefaults'
 description: Redefinir as configurações padrão de uma impressora.
 author: nilakhan
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: cloud-printing
 doc_type: apiPageType
-ms.openlocfilehash: 68bf2f96336e6156a28cab9d42e9e5ee5971a659
-ms.sourcegitcommit: 40947e6f4337c8c4193d85bb862e15f67263e1e7
+ms.openlocfilehash: 2148486fab3731af2373f7bed688afe180756f01
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/13/2021
-ms.locfileid: "50771789"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60927888"
 ---
 # <a name="printer-restorefactorydefaults"></a>printer: restoreFactoryDefaults
 Namespace: microsoft.graph
-
-[!INCLUDE [cloudprinting-pricing-disclaimer](../../includes/cloudprinting-pricing-disclaimer.md)]
 
 Restaure [as configurações](../resources/printer.md)padrão de uma impressora para os valores especificados pelo fabricante.
 
@@ -26,7 +24,7 @@ Para usar o serviço Impressão Universal, o usuário ou locatário do aplicativ
 
 |Tipo de permissão | Permissões (da com menos para a com mais privilégios) |
 |:---------------|:--------------------------------------------|
-|Delegada (conta corporativa ou de estudante)| Printer.ReadWrite.All, Printer.FullControl.All |
+|Delegado (conta corporativa ou de estudante)| Printer.ReadWrite.All, Printer.FullControl.All |
 |Delegada (conta pessoal da Microsoft)|Sem suporte.|
 |Aplicativo| Sem suporte. |
 
