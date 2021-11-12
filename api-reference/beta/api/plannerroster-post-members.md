@@ -2,15 +2,15 @@
 title: Criar plannerRosterMember
 description: Crie um novo objeto plannerRosterMember.
 author: tarkansevilmis
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: planner
 doc_type: apiPageType
-ms.openlocfilehash: e7dac57941d50ee8b543c53982c216c4c19d5d07
-ms.sourcegitcommit: 42fdb068616222eb6b0813e93b33e830fc7eedc0
+ms.openlocfilehash: 9ee7054f243dc220c7747feb9bb308c9d86e6c8c
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/17/2021
-ms.locfileid: "50272420"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60925136"
 ---
 # <a name="create-plannerrostermember"></a>Criar plannerRosterMember
 Namespace: microsoft.graph
@@ -19,13 +19,13 @@ Namespace: microsoft.graph
 
 Adicione um membro ao [objeto plannerRoster.](../resources/plannerrostermember.md)
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão|Permissões (da com menos para a com mais privilégios)|
 |:---|:---|
 |Delegado (conta corporativa ou de estudante)|Tasks.ReadWrite|
-|Delegado (conta pessoal da Microsoft)|Sem suporte.|
+|Delegada (conta pessoal da Microsoft)|Sem suporte.|
 |Aplicativo|Sem suporte.|
 
 ## <a name="http-request"></a>Solicitação HTTP
@@ -45,21 +45,21 @@ POST /planner/rosters/{plannerRosterId}/members
 |Content-Type|application/json. Obrigatório.|
 
 ## <a name="request-body"></a>Corpo da solicitação
-No corpo da solicitação, fornece uma representação JSON do objeto [plannerRosterMember.](../resources/plannerrostermember.md)
+No corpo da solicitação, fornece uma representação JSON do [objeto plannerRosterMember.](../resources/plannerrostermember.md)
 
-A tabela a seguir mostra as propriedades que são necessárias ao criar [plannerRosterMember](../resources/plannerrostermember.md).
+A tabela a seguir mostra as propriedades que são necessárias ao criar [o plannerRosterMember](../resources/plannerrostermember.md).
 
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
 |userId|Cadeia de caracteres|Identificador do .|
-|tenantId|String|Identificador do locatário ao que o usuário pertence. Opcional. Atualmente, os membros da lista de participantes não podem ser de locatários diferentes.|
+|tenantId|String|Identificador do locatário ao que o usuário pertence. Opcional. Atualmente, os membros da lista não podem ser de locatários diferentes.|
 |funções|Coleção de cadeias de caracteres|Funções adicionais atribuídas ao usuário. Opcional. Atualmente, não há funções adicionais disponíveis para os usuários.|
 
 
 
 ## <a name="response"></a>Resposta
 
-Se bem-sucedido, este método retorna um código de resposta e um objeto `201 Created` [plannerRosterMember](../resources/plannerrostermember.md) no corpo da resposta.
+Se tiver êxito, este método retornará um código de resposta e um `201 Created` [objeto plannerRosterMember](../resources/plannerrostermember.md) no corpo da resposta.
 
 ## <a name="examples"></a>Exemplos
 
@@ -74,7 +74,6 @@ Se bem-sucedido, este método retorna um código de resposta e um objeto `201 Cr
 ``` http
 POST https://graph.microsoft.com/beta/planner/rosters/6519868f-868f-6519-8f86-19658f861965/members
 Content-Type: application/json
-Content-length: 78
 
 {
   "@odata.type": "#microsoft.graph.plannerRosterMember",

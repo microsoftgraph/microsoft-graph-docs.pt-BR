@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: akjo
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 69f83a9d412ae079fe4ab18b0a2f035c73fe757f
-ms.sourcegitcommit: c7ff992ef63e480d070421ba99b28ee129cb6acb
+ms.openlocfilehash: 0921799ad5493ac598ea63d0753fb7796ae17b53
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "60688031"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60934776"
 ---
 # <a name="create-channel"></a>Criar canal
 
@@ -27,7 +27,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
 |:--------------------|:---------------------------------------------------------|
 |Delegado (conta corporativa ou de estudante) | Channel.Create, Group.ReadWrite.All **, Directory.ReadWrite.All** |
-|Delegado (conta pessoal da Microsoft) | Sem suporte.    |
+|Delegada (conta pessoal da Microsoft) | Sem suporte.    |
 |Aplicativo | Channel.Create.Group *, Channel.Create, Teamwork.Migrate.All, Group.ReadWrite.All**, Directory.ReadWrite.All** |
 
 > **Observação**: Permissões marcadas com * usam [consentimento específico de recurso]( https://aka.ms/teams-rsc). As permissões marcadas com ** são preteridas e não devem ser usadas.
@@ -122,7 +122,6 @@ O exemplo a seguir mostra a resposta.
 ```http
 HTTP/1.1 201 Created
 Content-type: application/json
-Content-length: 201
 
 {
   "id": "19:4b6bed8d24574f6a9e436813cb2617d8@thread.tacv2",
@@ -198,7 +197,6 @@ O exemplo a seguir mostra a resposta.
 ```http
 HTTP/1.1 201 Created
 Content-type: application/json
-Content-length: 201
 
 {
     "@odata.context": "https://graph.microsoft.com/beta/$metadata#teams('57fb72d0-d811-46f4-8947-305e6072eaa5')/channels/$entity",
@@ -328,7 +326,6 @@ O exemplo a seguir mostra a resposta.
 ```http
 HTTP/1.1 201 Created
 Content-type: application/json
-Content-length: 201
 
 {
     "@odata.context": "https://graph.microsoft.com/beta/$metadata#teams('57fb72d0-d811-46f4-8947-305e6072eaa5')/channels/$entity",
@@ -410,7 +407,6 @@ O exemplo a seguir mostra a resposta.
 ```http
 HTTP/1.1 201 Created
 Content-type: application/json
-Content-length: 201
 
 {
     "@odata.context": "https://graph.microsoft.com/beta/$metadata#teams('57fb72d0-d811-46f4-8947-305e6072eaa5')/channels/$entity",

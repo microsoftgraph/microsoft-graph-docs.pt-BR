@@ -5,12 +5,12 @@ author: nkramer
 ms.localizationpriority: medium
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 06f65892d4ff7c13d2cfc9bc5995bef33e5d73e4
-ms.sourcegitcommit: f4999aa6fc05f845027db01aa489f7086f9850e1
+ms.openlocfilehash: 658269bdbb05f29b04407c7470d52064c0c4b1d8
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/13/2021
-ms.locfileid: "60290005"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60946367"
 ---
 # <a name="publish-teamsapp"></a>Publicar teamsapp
 
@@ -31,7 +31,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 | Delegado (conta pessoal da Microsoft) | Sem suporte|
 | Aplicativo                            | Sem suporte. |
 
-> **Observação:** as permissões marcadas com ** são preteridas e não devem ser usadas.
+> **Observação**: as permissões marcadas com ** foram preteridas e não devem ser usadas.
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- { "blockType": "ignored" } -->
@@ -84,7 +84,6 @@ Se tiver êxito, este método retornará um `200 OK` código de resposta e um ob
 ```http
 POST https://graph.microsoft.com/v1.0/appCatalogs/teamsApps
 Content-type: application/zip
-Content-length: 244
 
 [Zip file containing a Teams app package]
 ```
@@ -133,7 +132,6 @@ Content-Type: application/json
 ```http
 POST https://graph.microsoft.com/v1.0/appCatalogs/teamsApps?requiresReview=true
 Content-type: application/zip
-Content-length: 244
 ```
 # <a name="javascript"></a>[JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/create-teamsapp-2-javascript-snippets.md)]

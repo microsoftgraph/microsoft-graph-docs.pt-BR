@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: kevinbellinger
 ms.prod: people
 doc_type: apiPageType
-ms.openlocfilehash: f1ee679da44d0bd5ca74e4ffbed497a25bbc8c6e
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 775b382c24500d1789249926653461d533cfd267
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59027446"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60947193"
 ---
 # <a name="create-personcertification"></a>Criar personCertification
 Namespace: microsoft.graph
@@ -50,18 +50,18 @@ A tabela a seguir mostra as propriedades que são possíveis de definir ao criar
 
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|allowedAudiences|Cadeia de Caracteres|As audiências que são capazes de ver os valores contidos na entidade. Herdado [do itemFacet](../resources/itemfacet.md). Os valores possíveis são: `me`, `family`, `contacts`, `groupMembers`, `organization`, `federatedOrganizations`, `everyone`, `unknownFutureValue`.|
+|allowedAudiences|Cadeia de caracteres|As audiências que são capazes de ver os valores contidos na entidade. Herdado [do itemFacet](../resources/itemfacet.md). Os valores possíveis são: `me`, `family`, `contacts`, `groupMembers`, `organization`, `federatedOrganizations`, `everyone`, `unknownFutureValue`.|
 |certificationId  |Cadeia de caracteres      |O identificador referencial para a certificação. |
 |description      |Cadeia de caracteres      |Descrição da certificação.                   |
-|displayName      |String      |Título da certificação.                         |
+|displayName      |Cadeia de caracteres      |Título da certificação.                         |
 |endDate          |Data        |A data em que a certificação expira.            |
 |inferência|[inferenceData](../resources/inferencedata.md)|Contém detalhes de inferência se a entidade for inferida pelo aplicativo de criação ou modificação. Herdado [do itemFacet](../resources/itemfacet.md).|
 |issuedDate       |Data        |A data em que a certificação foi emitida.         |
 |issuingAuthority |Cadeia de caracteres      |Autoridade que concedeu a certificação.          |
-|emissãoCompany   |String      |Autoridade que concedeu a certificação.          |
+|emissãoCompany   |Cadeia de caracteres      |Autoridade que concedeu a certificação.          |
 |source|[personDataSource](../resources/persondatasource.md)|Onde os valores se originaram se sincronizados de outro serviço. Herdado [do itemFacet](../resources/itemfacet.md).|
 |startDate        |Data        |A data em que a certificação se tornou válida.       |
-|thumbnailUrl     |Cadeia de Caracteres      |URL fazendo referência a uma miniatura da certificação.   |
+|thumbnailUrl     |Cadeia de caracteres      |URL fazendo referência a uma miniatura da certificação.   |
 |webUrl           |String      |URL fazendo referência à certificação.                  |
 
 ## <a name="response"></a>Resposta
@@ -79,7 +79,6 @@ Se tiver êxito, este método retornará um código `201 Created` de resposta e 
 ``` http
 POST https://graph.microsoft.com/beta/me/profile/certifications
 Content-Type: application/json
-Content-length: 497
 
 {
   "certificationId": "KB-1235466333663322",

@@ -1,16 +1,16 @@
 ---
 title: Local de atualização
 description: Atualize as propriedades do objeto place.
-localization_priority: Normal
+ms.localizationpriority: medium
 author: vrod9429
 ms.prod: Outlook
 doc_type: apiPageType
-ms.openlocfilehash: 16b483be47fd6b62eff05001ad99be0ebf554d2d
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: 9350e7d6ef0c19a62f05b8ef199f623b5a197c75
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52055383"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60933982"
 ---
 # <a name="update-place"></a>Local de atualização
 
@@ -27,8 +27,8 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 | Tipo de permissão                        | Permissões (da com menos para a com mais privilégios) |
 |:---------------------------------------|:--------------------------------------------|
 | Delegado (conta corporativa ou de estudante)     | Place.ReadWrite.All |
-| Delegado (conta pessoal da Microsoft) | Sem suporte. |
-| Application                            | Sem suporte |
+| Delegada (conta pessoal da Microsoft) | Sem suporte. |
+| Aplicativo                            | Sem suporte |
 
 ## <a name="http-request"></a>Solicitação HTTP
 
@@ -52,20 +52,20 @@ No corpo da solicitação, forneça os valores para os campos relevantes que dev
 | Propriedade               | Tipo                                              | Descrição |
 |:-----------------------|:--------------------------------------------------|:--|
 | address                | [physicalAddress](../resources/physicaladdress.md)             | O endereço de rua da sala ou da lista de sala. |
-| audioDeviceName        | String                                            | Especifica o nome do dispositivo de áudio na sala. |
+| audioDeviceName        | Cadeia de caracteres                                            | Especifica o nome do dispositivo de áudio na sala. |
 | bookingType            | [bookingType](../resources/room.md)                            | Tipo de sala. Os valores possíveis são: `Standard` e `Reserved`. |
-| building               | String                                            | Especifica o nome do edifício ou o número de construção em que a sala está. |
+| building               | Cadeia de caracteres                                            | Especifica o nome do edifício ou o número de construção em que a sala está. |
 | capacity               | Int32                                             | Especifica a capacidade da sala. |
-| displayDeviceName      | String                                            | Especifica o nome do dispositivo de exibição na sala. |
-| floorLabel             | String                                            | Especifica a letra do piso em que a sala está. |
+| displayDeviceName      | Cadeia de caracteres                                            | Especifica o nome do dispositivo de exibição na sala. |
+| floorLabel             | Cadeia de caracteres                                            | Especifica a letra do piso em que a sala está. |
 | floorNumber            | Int32                                             | Especifica o número do piso em que a sala está. |
 | geoCoordinates         | [outlookGeoCoordinates](../resources/outlookgeocoordinates.md) | Especifica o local da sala ou da lista de espaços em latitude, longitude e, opcionalmente, coordenadas de altitude. |
 | isWheelChairAccessible | Boolean                                           | Especifica se a sala está acessível para cadeira de rodas. |
-| rótulo                  | String                                            | Especifica um rótulo descritivo para a sala, por exemplo, um número ou nome. |
-| nickname               | String                                            | Especifica um apelido para a sala, por exemplo, "conf room". |
+| rótulo                  | Cadeia de caracteres                                            | Especifica um rótulo descritivo para a sala, por exemplo, um número ou nome. |
+| nickname               | Cadeia de caracteres                                            | Especifica um apelido para a sala, por exemplo, "conf room". |
 | phone                  | Cadeia de caracteres                                            | O número de telefone da sala ou da lista de sala. |
-| tags                   | String collection                                 | Especifica recursos adicionais da sala, por exemplo, detalhes como o tipo de exibição ou tipo de móvel. |
-| videoDeviceName        | String                                            | Especifica o nome do dispositivo de vídeo na sala. |
+| categorias                   | Coleção de cadeias de caracteres                                 | Especifica recursos adicionais da sala, por exemplo, detalhes como o tipo de exibição ou tipo de móvel. |
+| videoDeviceName        | Cadeia de caracteres                                            | Especifica o nome do dispositivo de vídeo na sala. |
 
 ## <a name="response"></a>Resposta
 
@@ -89,7 +89,6 @@ Este é um exemplo de solicitação.
 ```http
 PATCH https://graph.microsoft.com/beta/places/cf100@contoso.com
 Content-type: application/json
-Content-length: 285
 
 {
   "@odata.type": "microsoft.graph.room",

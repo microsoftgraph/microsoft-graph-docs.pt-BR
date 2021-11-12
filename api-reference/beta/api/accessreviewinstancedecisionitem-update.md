@@ -1,16 +1,16 @@
 ---
 title: Atualizar accessReviewInstanceDecisionItem
 description: Atualize um objeto accessReviewInstanceDecisionItem existente de que chamar o usuário é o revisor.
-localization_priority: Normal
+ms.localizationpriority: medium
 author: isabelleatmsft
 ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: 8fb69b4088fe0366f19e076fb069a8d57826ae18
-ms.sourcegitcommit: 94c4acf8bd03c10a44b12952b6cb4827df55b978
+ms.openlocfilehash: 25db7736e01b80c5770cf6f74e17d751efc1c58b
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/06/2021
-ms.locfileid: "52786633"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60940103"
 ---
 # <a name="update-accessreviewinstancedecisionitem"></a>Atualizar accessReviewInstanceDecisionItem
 
@@ -29,7 +29,7 @@ Uma das seguintes permissões é necessária para chamar essa API. Não há supo
 |Tipo de permissão                        | Permissões (da com menos para a com mais privilégios)              |
 |:--------------------------------------|:---------------------------------------------------------|
 |Delegado (conta corporativa ou de estudante)     | AccessReview.ReadWrite.All |
-|Delegado (conta pessoal da Microsoft)|Sem suporte.|
+|Delegada (conta pessoal da Microsoft)|Sem suporte.|
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- { "blockType": "ignored" } -->
@@ -47,8 +47,8 @@ A tabela a seguir mostra as propriedades aceitas para atualizar um `accessReview
 
 | Propriedade     | Tipo       | Descrição |
 |:-------------|:------------|:------------|
-| decision  | String | Decisão de acesso para a entidade que está sendo revisada. Os valores possíveis são: `Approve` `Deny` `NotReviewed` `DontKnow` . Obrigatório.  |
-|  justification | String | Contexto da revisão fornecida aos administradores. Obrigatório se justificationRequiredOnApproval for True no accessReviewScheduleDefinition.  |
+| decision  | Cadeia de caracteres | Decisão de acesso para a entidade que está sendo revisada. Os valores possíveis são: `Approve` `Deny` `NotReviewed` `DontKnow` . Obrigatório.  |
+|  justification | Cadeia de caracteres | Contexto da revisão fornecida aos administradores. Obrigatório se justificationRequiredOnApproval for True no accessReviewScheduleDefinition.  |
 
 ## <a name="response"></a>Resposta
 Se tiver êxito, este método retornará um `204, NoContent` código de resposta e nenhum corpo de resposta.
@@ -68,7 +68,6 @@ Este é um exemplo de aprovação do acesso a um usuário representado por `acce
 ``` http
 PATCH https://graph.microsoft.com/beta/me/pendingAccessReviewInstances/70a68410-67f3-4d4c-b946-6989e050be19/decisions/12348410-67f3-4d4c-b946-6989e050be19
 Content-Type: application/json
-Content-length: 730
 
 {
   "decision": "Approve",

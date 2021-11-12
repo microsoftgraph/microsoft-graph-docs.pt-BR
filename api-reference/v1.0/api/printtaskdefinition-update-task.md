@@ -2,26 +2,24 @@
 title: Atualizar tarefa
 description: Atualizar uma tarefa de impressão.
 author: nilakhan
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: cloud-printing
 doc_type: apiPageType
-ms.openlocfilehash: 1375b48ccecc800111b0e84065f58324124021d4
-ms.sourcegitcommit: 40947e6f4337c8c4193d85bb862e15f67263e1e7
+ms.openlocfilehash: 4ee2d0f6a77ccc2f326a1752c4420cadce1631a1
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/13/2021
-ms.locfileid: "50771292"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60946416"
 ---
 # <a name="update-printtask"></a>Atualizar printTask
 Namespace: microsoft.graph
-
-[!INCLUDE [cloudprinting-pricing-disclaimer](../../includes/cloudprinting-pricing-disclaimer.md)]
 
 Atualizar uma tarefa de impressão.
 
 Para obter detalhes sobre como usar essa API para adicionar suporte à impressão pull à Impressão Universal, consulte [Extending Universal Print to support pull printing](/graph/universal-print-concept-overview#extending-universal-print-to-support-pull-printing).
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 Além das permissões a seguir, o locatário do usuário deve ter uma assinatura de Impressão Universal ativa.
@@ -54,7 +52,7 @@ No corpo da solicitação, fornece os valores dos campos [printTask relevantes](
 
 | Propriedade     | Tipo        | Descrição |
 |:-------------|:------------|:------------|
-|status|String|Inclua `state` e valores que descrevem o estado atual da `description` tarefa.|
+|status|Cadeia de caracteres|Inclua `state` e valores que descrevem o estado atual da `description` tarefa.|
 
 ## <a name="response"></a>Resposta
 
@@ -73,7 +71,6 @@ Se tiver êxito, este método retornará um código `200 OK` de resposta e um ob
 ``` http
 PATCH https://graph.microsoft.com/v1.0/print/taskDefinitions/{taskDefinitionId}/tasks/{taskId}
 Content-Type: application/json
-Content-length: 152
 
 {
   "status": {

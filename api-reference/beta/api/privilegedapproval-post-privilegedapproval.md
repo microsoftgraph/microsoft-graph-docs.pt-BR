@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 doc_type: apiPageType
 ms.prod: governance
 author: carolinetempleton
-ms.openlocfilehash: 76128555f3a248c27fe580efce95cb800293ed98
-ms.sourcegitcommit: c7ff992ef63e480d070421ba99b28ee129cb6acb
+ms.openlocfilehash: e3858e778fb317d947ad5f93e7d47c8f1d9e547f
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "60696011"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60932980"
 ---
 # <a name="create-privilegedapproval"></a>Create privilegedApproval
 
@@ -63,7 +63,6 @@ Este é um exemplo da solicitação.
 ```http
 POST https://graph.microsoft.com/beta/privilegedApproval
 Content-type: application/json
-Content-length: 180
 
 {
   "userId": "userId-value",
@@ -102,7 +101,6 @@ Aqui está um exemplo da resposta. Observação: o objeto de resposta mostrado a
 ```http
 HTTP/1.1 201 Created
 Content-type: application/json
-Content-length: 200
 
 {
   "id": "id-value",

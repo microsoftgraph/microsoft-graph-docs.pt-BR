@@ -5,12 +5,12 @@ author: lumine2008
 ms.localizationpriority: medium
 ms.prod: excel
 doc_type: apiPageType
-ms.openlocfilehash: 8175bc48847aaa4349b6b2b1f44950b396bdaa3b
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 1419cdacb19efb7846c24394df63ebd86f8ac920
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59076135"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60946003"
 ---
 # <a name="create-session"></a>Criar sessão
 
@@ -43,7 +43,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
 |:--------------------|:---------------------------------------------------------|
 |Delegado (conta corporativa ou de estudante) | Files.ReadWrite    |
-|Delegado (conta pessoal da Microsoft) | Sem suporte.    |
+|Delegada (conta pessoal da Microsoft) | Sem suporte.    |
 |Aplicativo | Sem suporte. |
 
 ## <a name="http-request"></a>Solicitação HTTP
@@ -77,7 +77,6 @@ Se tiver êxito, este método retornará um código de `201 Created` resposta e 
 ```http
 POST https://graph.microsoft.com/beta/me/drive/items/{id}/workbook/createSession
 Content-type: application/json
-Content-length: 52
 
 {
   "persistChanges": true
@@ -112,7 +111,6 @@ Content-length: 52
 ```http
 HTTP/1.1 201 Created
 Content-type: application/json
-Content-length: 52
 
 {
   "id": "id-value",

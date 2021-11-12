@@ -2,20 +2,18 @@
 title: Listar printerShares para uma impressora
 description: Recupere uma lista de printerShares associada à impressora.
 author: nilakhan
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: cloud-printing
 doc_type: apiPageType
-ms.openlocfilehash: d719cc04c4b4bc0694f42e80ce7ae317bc8ef104
-ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
+ms.openlocfilehash: e84bc0bc640cc7a60eab9559e0ff9821b11571cb
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "50956245"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60924347"
 ---
 # <a name="list-printershares-for-a-printer"></a>Listar printerShares para uma impressora
 Namespace: microsoft.graph
-
-[!INCLUDE [cloudprinting-pricing-disclaimer](../../includes/cloudprinting-pricing-disclaimer.md)]
 
 Recupere uma lista de compartilhamentos de impressora associados à [impressora](../resources/printer.md).
 >**Observação:** Atualmente, há suporte **para apenas um compartilhamento** de impressora por impressora.
@@ -28,7 +26,7 @@ Para usar o serviço Impressão Universal, o usuário ou locatário do aplicativ
 |Tipo de permissão | Permissões (da com menos para a com mais privilégios) |
 |:---------------|:--------------------------------------------|
 |Delegado (conta corporativa ou de estudante)| PrinterShare.ReadBasic.All, PrinterShare.Read.All, PrinterShare.ReadWrite.All |
-|Delegado (conta pessoal da Microsoft)|Sem suporte.|
+|Delegada (conta pessoal da Microsoft)|Sem suporte.|
 |Aplicativo| Sem suporte. |
 
 ## <a name="http-request"></a>Solicitação HTTP

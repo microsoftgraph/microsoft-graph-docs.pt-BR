@@ -5,12 +5,12 @@ author: svpsiva
 ms.localizationpriority: medium
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 80c1b52258051f6cbee731b98ebe56335ed15e64
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 693a4053827c0a3b0e6751adc398887248b5b2bd
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59140763"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60931750"
 ---
 # <a name="list-attachments"></a>Listar anexos
 
@@ -116,7 +116,6 @@ Aqui está um exemplo da resposta. Observação: o objeto de resposta mostrado a
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 215
 
 {
   "value": [

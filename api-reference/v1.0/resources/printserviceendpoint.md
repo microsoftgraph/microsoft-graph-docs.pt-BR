@@ -2,21 +2,19 @@
 title: Tipo de recurso printServiceEndpoint
 description: Representa o URI e a identificação de informações para uma instância de serviço de impressão.
 author: braedenp-msft
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: cloud-printing
 doc_type: resourcePageType
-ms.openlocfilehash: 7534e538c81c543671d996c7765125eafcad9d67cddbb13ad406d06edb8b9912
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 812e9367be06760e56299bd62c88c154f1c25c49
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54178035"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60924198"
 ---
 # <a name="printserviceendpoint-resource-type"></a>Tipo de recurso printServiceEndpoint
 
 Namespace: microsoft.graph
-
-[!INCLUDE [cloudprinting-pricing-disclaimer](../../includes/cloudprinting-pricing-disclaimer.md)]
 
 Representa o URI e a identificação de informações para uma instância de serviço de impressão.
 

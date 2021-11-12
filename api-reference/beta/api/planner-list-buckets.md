@@ -1,16 +1,16 @@
 ---
 title: Listar buckets
 description: Recupere uma lista de objetos **plannerbucket.**
-localization_priority: Normal
+ms.localizationpriority: medium
 author: TarkanSevilmis
 ms.prod: planner
 doc_type: apiPageType
-ms.openlocfilehash: e1ec6fc7a797aa8c358f690d16de8decea90f781
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: e32914fc420a8034166c02bd94d076ce449ed426
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52055376"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60946720"
 ---
 # <a name="list-buckets"></a>Listar buckets
 
@@ -81,7 +81,7 @@ GET https://graph.microsoft.com/beta/planner/buckets
 ---
 
 ##### <a name="response"></a>Resposta
-Veja a seguir um exemplo da resposta. Observação: o objeto de resposta mostrado aqui pode ser encurtado para legibilidade.
+Aqui está um exemplo da resposta. Observação: o objeto de resposta mostrado aqui pode ser reduzido para facilitar a leitura.
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -91,7 +91,6 @@ Veja a seguir um exemplo da resposta. Observação: o objeto de resposta mostrad
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 251
 
 {
   "value": [

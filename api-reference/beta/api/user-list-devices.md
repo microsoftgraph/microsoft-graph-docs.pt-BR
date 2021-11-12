@@ -1,16 +1,16 @@
 ---
 title: Listar os dispositivos do usuário
 description: Obter uma lista de dispositivos de usuário que suportam Project de Roma. Isso inclui a capacidade de iniciar um aplicativo ou mensagem ou enviar dados para um aplicativo. Depois de fazer uma chamada GET em mim/dispositivos, passe a ID do dispositivo para enviar um comando para seu dispositivo.
-localization_priority: Normal
+ms.localizationpriority: medium
 author: jpettere
 ms.prod: users
 doc_type: apiPageType
-ms.openlocfilehash: b116213a285cc334d02a70ed94461b5cf6436eea
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: dd47f2f9cd3edfb1b45db833857e0a3f2cc0820b
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52036293"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60940900"
 ---
 # <a name="list-user-devices"></a>Listar os dispositivos do usuário
 
@@ -98,7 +98,7 @@ Content-Type: application/json; charset=utf-8
 
 #### <a name="response"></a>Resposta
 
-Este é um exemplo de resposta. Observação: o objeto de resposta mostrado aqui pode ser encurtado para legibilidade.
+Eis um exemplo da resposta. Observação: o objeto de resposta exibido aqui pode ser reduzido para facilitar a leitura.
 
 <!-- {
   "blockType": "ignored",
@@ -110,7 +110,6 @@ Este é um exemplo de resposta. Observação: o objeto de resposta mostrado aqui
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 140
 
 {
   "value": [

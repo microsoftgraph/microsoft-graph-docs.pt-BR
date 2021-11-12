@@ -1,16 +1,16 @@
 ---
 title: Atualizar ícone
 description: Atualize as propriedades do objeto de ícone.
-localization_priority: Normal
+ms.localizationpriority: medium
 doc_type: apiPageType
 author: ruoyingl
 ms.prod: ''
-ms.openlocfilehash: 38abc579f9195244a88ee4d56b9881f0df3c1c96
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: 7a30cf7a864ae45cf226fbbb10a78e40aa52c09b
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52040861"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60946192"
 ---
 # <a name="update-icon"></a>Atualizar ícone
 
@@ -62,7 +62,6 @@ Este é um exemplo da solicitação.
 ```http
 PATCH https://graph.microsoft.com/beta/me/drive/items/{id}/workbook/tables/{id|name}/sort/fields/icon
 Content-type: application/json
-Content-length: 39
 
 {
   "set": "set-value",
@@ -70,7 +69,7 @@ Content-length: 39
 }
 ```
 ##### <a name="response"></a>Resposta
-Veja a seguir um exemplo da resposta. Observação: o objeto de resposta mostrado aqui pode ser encurtado para legibilidade.
+Aqui está um exemplo da resposta. Observação: o objeto de resposta mostrado aqui pode ser reduzido para facilitar a leitura.
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -79,7 +78,6 @@ Veja a seguir um exemplo da resposta. Observação: o objeto de resposta mostrad
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 39
 
 {
   "set": "set-value",

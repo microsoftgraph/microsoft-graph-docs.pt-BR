@@ -2,15 +2,15 @@
 title: 'user: reminderView'
 description: 'Retorne uma lista de lembretes de calendário nas horas de início e término especificadas. '
 author: harini84
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 3346a54c67207df57cedc698510d55549dc3697c
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: 13a4e6a27f41f6e8b09aa283b9ecc78cd5c0214c
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52050721"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60947647"
 ---
 # <a name="user-reminderview"></a>user: reminderView
 
@@ -90,7 +90,7 @@ GET https://graph.microsoft.com/beta/me/reminderView(startDateTime='2017-06-05T1
 
 
 ##### <a name="response"></a>Resposta
-Veja a seguir um exemplo da resposta. Observação: o objeto de resposta mostrado aqui pode ser encurtado para legibilidade.
+Aqui está um exemplo da resposta. Observação: o objeto de resposta mostrado aqui pode ser reduzido para facilitar a leitura.
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -100,7 +100,6 @@ Veja a seguir um exemplo da resposta. Observação: o objeto de resposta mostrad
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 673
 
 {
     "@odata.context": "https://graph.microsoft.com/beta/$metadata#Collection(microsoft.graph.reminder)",

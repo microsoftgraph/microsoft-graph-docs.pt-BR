@@ -1,16 +1,16 @@
 ---
 title: Atualizar formatprotection
 description: Atualiza as propriedades do objeto formatprotection.
-localization_priority: Normal
+ms.localizationpriority: medium
 doc_type: apiPageType
 author: ruoyingl
 ms.prod: ''
-ms.openlocfilehash: 02c27b89d1ede44755830d24513bc55baff91e60
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: 407136e1aad3724d2a9612ab2e81a20a7658a8db
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52042251"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60938836"
 ---
 # <a name="update-formatprotection"></a>Atualizar formatprotection
 
@@ -66,7 +66,6 @@ Este é um exemplo da solicitação.
 ```http
 PATCH https://graph.microsoft.com/beta/me/drive/items/{id}/workbook/names/{name}/range/format/protection
 Content-type: application/json
-Content-length: 45
 
 {
   "locked": true,
@@ -92,7 +91,7 @@ Content-length: 45
 ---
 
 ##### <a name="response"></a>Resposta
-Veja a seguir um exemplo da resposta. Observação: o objeto de resposta mostrado aqui pode ser encurtado para legibilidade.
+Aqui está um exemplo da resposta. Observação: o objeto de resposta mostrado aqui pode ser reduzido para facilitar a leitura.
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -101,7 +100,6 @@ Veja a seguir um exemplo da resposta. Observação: o objeto de resposta mostrad
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 45
 
 {
   "locked": true,

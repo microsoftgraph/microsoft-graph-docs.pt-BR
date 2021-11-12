@@ -1,34 +1,34 @@
 ---
-title: 'impressora: criar'
-description: Cria (registra) uma impressora com o serviço de impressão universal.
+title: 'printer: create'
+description: Cria (registra) uma impressora com o serviço Impressão Universal.
 author: braedenp-msft
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: universal-print
 doc_type: apiPageType
-ms.openlocfilehash: 2173c4e8dfb4b4769d6c9fa5fe3b8f5df790670f
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 01aea7fbcd4c4723f7d2253fc9591bd0c75d85e8
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48972463"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60939334"
 ---
-# <a name="printer-create"></a>impressora: criar
+# <a name="printer-create"></a>printer: create
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Criar (registrar) uma impressora com o serviço de impressão universal. Esta é uma operação de execução demorada e, como tal, retorna um [printerCreateOperation](../resources/printercreateoperation.md) que pode ser usado para rastrear e verificar o registro da impressora.
+Crie (registre) uma impressora com o serviço Impressão Universal. Esta é uma operação de longa duração e, como tal, retorna uma [printerCreateOperation](../resources/printercreateoperation.md) que pode ser usada para rastrear e verificar o registro da impressora.
 
 ## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
-Além das permissões a seguir, o locatário do usuário deve ter uma assinatura universal de impressão. O usuário conectado deve ser um [administrador da impressora](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#printer-administrator).
+Além das permissões a seguir, o locatário do usuário deve ter uma assinatura de Impressão Universal ativa. O usuário inscreveu deve ser um [Administrador de Impressora.](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#printer-administrator)
 
 |Tipo de permissão | Permissões (da com menos para a com mais privilégios) |
 |:---------------|:--------------------------------------------|
-|Delegado (conta corporativa ou de estudante)| Printer. Create, Printer. ReadWrite. All, Printer. FullControl. All |
-|Delegado (conta pessoal da Microsoft)|Sem suporte.|
+|Delegado (conta corporativa ou de estudante)| Printer.Create, Printer.ReadWrite.All, Printer.FullControl.All |
+|Delegada (conta pessoal da Microsoft)|Sem suporte.|
 |Aplicativo| Sem suporte. |
 
 ## <a name="http-request"></a>Solicitação HTTP
@@ -43,22 +43,22 @@ POST /print/printers/create
 | Content-type  | application/json. Obrigatório.|
 
 ## <a name="request-body"></a>Corpo da solicitação
-No corpo da solicitação, forneça um objeto JSON com as propriedades a seguir.
+No corpo da solicitação, forneça um objeto JSON com as seguintes propriedades.
 
 | Parâmetro      | Tipo    |Descrição| Obrigatório? |
 |:---------------|:--------|:----------|:----------|
-|displayName|String|O nome de exibição a ser atribuído à impressora.|Sim|
+|displayName|Cadeia de caracteres|O nome de exibição a ser atribuído à impressora.|Sim|
 |fabricante|String|O fabricante da impressora.|Sim|
 |modelo|String|O modelo da impressora.|Sim|
-|physicalDeviceId|String|O UUID do dispositivo físico da impressora. Obrigatório se a `hasPhysicalDevice` propriedade for true.|Não|
-|hasPhysicalDevice|Booliano|True se a impressora tem dispositivo de saída físico; caso contrário, false. Se for omitido, o valor padrão será true.|Não|
-|certificateSigningRequest|[printCertificateSigningRequest](../resources/printcertificatesigningrequest.md)|A solicitação de assinatura de certificado (CSR) do X. 509 para o certificado criado e usado pela impressora para identificar-se.|Sim|
-|connectorid|String|ID do conector que atua como proxy para a impressora.|Não|
+|physicalDeviceId|Cadeia de caracteres|O UUID do dispositivo físico da impressora. Obrigatório se a `hasPhysicalDevice` propriedade for true.|Não|
+|hasPhysicalDevice|Boolean|True se a impressora tiver um dispositivo de saída físico, false caso contrário. Se omitido, o valor padrão será true.|Não|
+|certificateSigningRequest|[printCertificateSigningRequest](../resources/printcertificatesigningrequest.md)|A Solicitação de Assinatura de Certificado X.509 (CSR) para o certificado criado e usado pela impressora para se identificar.|Sim|
+|connectorId|Cadeia de caracteres|ID do Conector atuando como proxy para a impressora.|Não|
 
 ## <a name="response"></a>Resposta
-Se tiver êxito, este método retornará um `202 Accepted` código de resposta e um link para o [printerCreateOperation](../resources/printercreateoperation.md) associado no `Operation-Location` cabeçalho.
+Se tiver êxito, este método retornará um código de resposta e um link para `202 Accepted` a [impressora associadaCreateOperation](../resources/printercreateoperation.md) no `Operation-Location` header.
 
-Fazer uma solicitação GET para a URL vinculada pode ser usado para obter o status de um registro de impressora em andamento. Após o registro da impressora ter sido concluído com êxito, uma solicitação GET para a URL vinculada conterá o objeto Printer criado e o certificado registrado.
+Fazer uma solicitação GET para a URL vinculada pode ser usada para obter o status de um registro de impressora em andamento. Depois que o registro da impressora for concluído com êxito, uma solicitação GET para a URL vinculada conterá o objeto de impressora criado e o certificado registrado.
 
 ## <a name="example"></a>Exemplo
 ### <a name="request"></a>Solicitação
@@ -73,7 +73,6 @@ Este é um exemplo de solicitação.
 ```http
 POST https://graph.microsoft.com/beta/print/printers/create
 Content-type: application/json
-Content-length: 319
 
 {
   "displayName": "Test Printer",

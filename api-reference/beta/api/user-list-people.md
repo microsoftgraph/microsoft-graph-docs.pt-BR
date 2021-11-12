@@ -1,16 +1,16 @@
 ---
 title: Listar pessoas
 description: Recupere uma lista de objetos person ordenados por relevância para o usuário, o que é determinado pelos padrões de comunicação e colaboração e pelas relações comerciais do usuário.
-author: anthona
+author: dkershaw10
 ms.localizationpriority: medium
 ms.prod: insights
 doc_type: apiPageType
-ms.openlocfilehash: e28372da45a246e92b696f8e8b7ed79e5e7cb050
-ms.sourcegitcommit: ddeee0eec277df06d9e635e5b5c257d14c856273
+ms.openlocfilehash: 32caf72c3eb59589889827389c0cd2f4ab26c267
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/04/2021
-ms.locfileid: "60780482"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60946045"
 ---
 # <a name="list-people"></a>Listar pessoas
 
@@ -26,9 +26,9 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegado (conta corporativa ou de estudante) | People.Read, People.Read.All    |
+|Delegado (conta corporativa ou de estudante) | People.Read    |
 |Delegado (conta pessoal da Microsoft) | People.Read    |
-|Aplicativo | People.Read.All |
+|Aplicativo | Sem suporte. |
 
 ## <a name="http-request"></a>Solicitação HTTP
 
@@ -123,7 +123,6 @@ Este é um exemplo de resposta.
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 1326
 
 {
     "value": [

@@ -2,15 +2,15 @@
 title: Obter printService
 description: Recupere as propriedades e as relações de um serviço de impressão.
 author: braedenp-msft
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: universal-print
 doc_type: apiPageType
-ms.openlocfilehash: 1eb5f1475889e7f1d8b399baa40c739cad018f66
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: d7c7c272701e2c80ed7d4484de6ae8d9ca0b4ac7
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52049881"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60938508"
 ---
 # <a name="get-printservice"></a>Obter printService
 
@@ -25,9 +25,9 @@ Nenhuma permissão é necessária para chamar essa API, mas para usar o serviço
 
 |Tipo de permissão | Permissões (da com menos para a com mais privilégios) |
 |:---------------|:--------------------------------------------|
-|Delegado (conta corporativa ou de estudante)|Nenhum|
-|Delegado (conta pessoal da Microsoft)|Nenhum.|
-|Aplicativo|Nenhum|
+|Delegado (conta corporativa ou de estudante)|Nenhum.|
+|Delegada (conta pessoal da Microsoft)|Nenhum.|
+|Aplicativo|Nenhum.|
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- { "blockType": "ignored" } -->
@@ -88,7 +88,6 @@ Este é um exemplo de resposta.
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 332
 
 {
   "@odata.context": "https://graph.microsoft.com/beta/$metadata#print/services/$entity",

@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: Jordanndahl
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: abeca2f5459d0d298bf98d7218ec4ad9acb963fa
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: b3ae0e3153adf4ad5b466f3d7f79fdde082e2642
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59074014"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60931624"
 ---
 # <a name="group-validateproperties"></a>group: validateProperties
 
@@ -79,7 +79,6 @@ Este é um exemplo de uma solicitação de validação bem-sucedida.
 ``` http
 POST https://graph.microsoft.com/v1.0/groups/{id}/validateProperties
 Content-type: application/json
-Content-length: 132
 
 {
   "displayName": "Myprefix_test_mysuffix",
@@ -122,7 +121,6 @@ Este é um exemplo de uma solicitação com erros de validação.
 ``` http
 POST https://graph.microsoft.com/v1.0/groups/{id}/validateProperties
 Content-type: application/json
-Content-length: 128
 
 {
   "displayName": "MyPrefix_test_mysuffix",
@@ -134,7 +132,6 @@ Content-length: 128
 ```http
 HTTP/1.1 422
 Content-type: application/json
-Content-length: 223
 
 {
   "error": {

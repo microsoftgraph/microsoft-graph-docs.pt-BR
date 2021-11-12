@@ -1,16 +1,16 @@
 ---
 title: Criar sectionGroup
-description: Cria um novo grupo de seção no bloco de anotações especificado.
+description: Crie um novo grupo de seções no bloco de anotações especificado.
 author: jewan-microsoft
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: onenote
 doc_type: apiPageType
-ms.openlocfilehash: 5a00de5823cd7d45a2d4f4191b665da8be8339bc
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: bc9b3c4829dd750e4e16344a8aa08b25c9a41020
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48967711"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60941257"
 ---
 # <a name="create-sectiongroup"></a>Criar sectionGroup
 
@@ -18,7 +18,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Cria um novo [grupo de seção](../resources/sectiongroup.md) no bloco de anotações especificado.
+Crie um novo [grupo de seções](../resources/sectiongroup.md) no bloco de anotações especificado.
 ## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
@@ -49,7 +49,7 @@ Dentro do mesmo nível de hierarquia, os nomes dos grupos de seção devem ser e
 
 ## <a name="response"></a>Resposta
 
-Se bem-sucedido, este método retorna `201 Created` um código de resposta e um objeto de objeto de [seção](../resources/sectiongroup.md) no corpo da resposta.
+Se tiver êxito, este método retornará `201 Created` o código de resposta e um objeto [sectionGroup](../resources/sectiongroup.md) no corpo da resposta.
 
 ## <a name="example"></a>Exemplo
 ##### <a name="request"></a>Solicitação
@@ -63,7 +63,6 @@ Este é um exemplo da solicitação.
 ```http
 POST https://graph.microsoft.com/beta/me/onenote/notebooks/{id}/sectionGroups
 Content-type: application/json
-Content-length: 30
 
 {
   "displayName": "Section group name"
@@ -98,7 +97,6 @@ Veja a seguir um exemplo da resposta. Observação: O objeto response mostrado a
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 305
 
 {
   "sectionsUrl": "sectionsUrl-value",

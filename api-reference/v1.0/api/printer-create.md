@@ -2,20 +2,18 @@
 title: 'printer: create'
 description: Crie (registre) uma impressora com o serviço Impressão Universal.
 author: nilakhan
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: cloud-printing
 doc_type: apiPageType
-ms.openlocfilehash: bd07e04aa2a4c8b459e90a55d537c683a677d8e9
-ms.sourcegitcommit: 40947e6f4337c8c4193d85bb862e15f67263e1e7
+ms.openlocfilehash: 869107c6743569b89e8d056845ca8632541a02d9
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/13/2021
-ms.locfileid: "50772041"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60946444"
 ---
 # <a name="printer-create"></a>printer: create
 Namespace: microsoft.graph
-
-[!INCLUDE [cloudprinting-pricing-disclaimer](../../includes/cloudprinting-pricing-disclaimer.md)]
 
 Crie (registre) uma impressora com o serviço Impressão Universal. Esta é uma operação de longa duração e, como tal, retorna uma [printerCreateOperation](../resources/printercreateoperation.md) que pode ser usada para rastrear e verificar o registro da impressora.
 
@@ -28,7 +26,7 @@ Além das permissões a seguir, o locatário do usuário deve ter uma assinatura
 
 |Tipo de permissão | Permissões (da com menos para a com mais privilégios) |
 |:---------------|:--------------------------------------------|
-|Delegada (conta corporativa ou de estudante)| Printer.Create, Printer.ReadWrite.All, Printer.FullControl.All |
+|Delegado (conta corporativa ou de estudante)| Printer.Create, Printer.ReadWrite.All, Printer.FullControl.All |
 |Delegada (conta pessoal da Microsoft)|Sem suporte.|
 |Aplicativo| Sem suporte. |
 
@@ -55,13 +53,13 @@ A tabela a seguir mostra os parâmetros que podem ser usados com esta ação.
 
 | Parâmetro      | Tipo    |Descrição| Obrigatório? |
 |:---------------|:--------|:----------|:----------|
-|displayName|String|O nome de exibição a ser atribuído à impressora.|Sim|
+|displayName|Cadeia de caracteres|O nome de exibição a ser atribuído à impressora.|Sim|
 |fabricante|String|O fabricante da impressora.|Sim|
 |modelo|String|O modelo da impressora.|Sim|
-|physicalDeviceId|String|O UUID do dispositivo físico da impressora. Obrigatório se a `hasPhysicalDevice` propriedade for true.|Não|
-|hasPhysicalDevice|Booliano|True se a impressora tiver um dispositivo de saída físico, false caso contrário. Se omitido, o valor padrão será true.|Não|
+|physicalDeviceId|Cadeia de caracteres|O UUID do dispositivo físico da impressora. Obrigatório se a `hasPhysicalDevice` propriedade for true.|Não|
+|hasPhysicalDevice|Boolean|True se a impressora tiver um dispositivo de saída físico, false caso contrário. Se omitido, o valor padrão será true.|Não|
 |certificateSigningRequest|[printCertificateSigningRequest](../resources/printcertificatesigningrequest.md)|A Solicitação de Assinatura de Certificado X.509 (CSR) para o certificado criado e usado pela impressora para se identificar.|Sim|
-|connectorId|String|ID do conector atuando como proxy para a impressora.|Não|
+|connectorId|Cadeia de caracteres|ID do conector atuando como proxy para a impressora.|Não|
 
 ## <a name="response"></a>Resposta
 Se tiver êxito, este método retornará um código de resposta e um link para `202 Accepted` a [impressora associadaCreateOperation](../resources/printercreateoperation.md) no `Operation-Location` header.
@@ -81,7 +79,6 @@ Você faz uma solicitação GET para a URL vinculada para obter o status de um r
 ``` http
 POST https://graph.microsoft.com/v1.0/print/printers/create
 Content-Type: application/json
-Content-length: 287
 
 {
   "displayName": "Test Printer",

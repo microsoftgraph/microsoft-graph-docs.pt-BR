@@ -1,23 +1,23 @@
 ---
 title: Criar grupo
-description: Criar um novo objeto de grupo.
+description: Crie um novo objeto group.
 author: mohitpcad
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: Sharepoint
 doc_type: apiPageType
-ms.openlocfilehash: bc7959ec7606a450e9ef920cd96b2550923b03f2
-ms.sourcegitcommit: eacd2a6e46c19dd3cd8519592b1668fabe14d85d
+ms.openlocfilehash: 2d7a697bbbf616053c0adf709256b443c0851d33
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "49873903"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60940908"
 ---
 # <a name="create-group"></a>Criar grupo
 Namespace: microsoft.graph.termStore
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Criar um novo [objeto de](../resources/termstore-group.md) grupo.
+Crie um novo [objeto group.](../resources/termstore-group.md)
 
 ## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
@@ -25,7 +25,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |Tipo de permissão|Permissões (da com menos para a com mais privilégios)|
 |:---|:---|
 |Delegado (conta corporativa ou de estudante) |TermStore.ReadWrite.All |
-|Delegado (conta pessoal da Microsoft) | Sem suporte.    |
+|Delegada (conta pessoal da Microsoft) | Sem suporte.    |
 |Aplicativo | Sem suporte. |
 
 ## <a name="http-request"></a>Solicitação HTTP
@@ -46,9 +46,9 @@ POST /termStore/groups
 |Content-Type|application/json. Obrigatório.|
 
 ## <a name="request-body"></a>Corpo da solicitação
-No corpo da solicitação, fornece uma representação JSON do [objeto de](../resources/termstore-group.md) grupo.
+No corpo da solicitação, forneça uma representação JSON do objeto de [grupo](../resources/termstore-group.md).
 
-A tabela a seguir mostra as propriedades que são necessárias ao criar o [grupo.](../resources/termstore-group.md)
+A tabela a seguir mostra as propriedades necessárias ao criar o [grupo](../resources/termstore-group.md).
 
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
@@ -71,7 +71,6 @@ Se bem-sucedido, esse método retorna um código de resposta `201 Created` e um 
 ``` http
 POST https://graph.microsoft.com/beta/termStore/groups
 Content-Type: application/json
-Content-length: 135
 
 {
   "displayName" : "myGroup"

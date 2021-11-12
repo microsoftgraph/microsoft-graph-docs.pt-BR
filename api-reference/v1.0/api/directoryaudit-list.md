@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: SarahBar
 ms.prod: identity-and-access-reports
 doc_type: apiPageType
-ms.openlocfilehash: 4ce9c6c23b474c9100b66f463e790bccf0240887
-ms.sourcegitcommit: 08e9b0bac39c1b1d2c8a79539d24aaa93364baf2
+ms.openlocfilehash: f488a428913a21c4edc6adc640e0310f838fec78
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/24/2021
-ms.locfileid: "59765813"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60924681"
 ---
 # <a name="list-directoryaudits"></a>Lista directoryAudits
 
@@ -25,7 +25,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 | Tipo de permissão                        | Permissões (da com menos para a com mais privilégios) |
 | :------------------------------------- | :------------------------------------------ |
 | Delegado (conta corporativa ou de estudante)     | AuditLog.Read.All e Directory.Read.All    |
-| Delegado (conta pessoal da Microsoft) | Sem suporte.                              |
+| Delegada (conta pessoal da Microsoft) | Sem suporte.                              |
 | Aplicativo                            | AuditLog.Read.All e Directory.Read.All    |
 
 > [!IMPORTANT]
@@ -132,7 +132,6 @@ Veja a seguir um exemplo da resposta.
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 271
 
 {
   "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#auditlogs/directoryaudits",

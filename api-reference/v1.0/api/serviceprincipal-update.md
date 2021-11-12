@@ -5,12 +5,12 @@ ms.localizationpriority: high
 doc_type: resourcePageType
 ms.prod: applications
 author: sureshja
-ms.openlocfilehash: 1e18fa4c59a11f568a3de4cbece8f23b9f616635
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 3b80300c0ab524d990d10cd9a45dbdb6ad21610a
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59019500"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60939032"
 ---
 # <a name="update-serviceprincipal"></a>Atualizar servicePrincipal
 
@@ -78,7 +78,6 @@ Este é um exemplo da solicitação.
 ```http
 PATCH https://graph.microsoft.com/v1.0/servicePrincipals/{id}
 Content-type: application/json
-Content-length: 391
 
 {
   "appRoleAssignmentRequired": true

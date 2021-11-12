@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: dipakboyed
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: 51ee97696f89a0b2145a278d57329ccd4545425d
-ms.sourcegitcommit: 0a312d63934cdf9789a5648c2b3f348f48542ff4
+ms.openlocfilehash: 6b676f28d74484a35374bd61f2099bd9b540ac46
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/07/2021
-ms.locfileid: "60220638"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60938885"
 ---
 # <a name="update-educationassignment"></a>Atualizar educationassignment
 
@@ -27,7 +27,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegada (conta corporativa ou de estudante) |  EduAssignments.ReadWriteBasic, EduAssignments.ReadWrite  |
+|Delegado (conta corporativa ou de estudante) |  EduAssignments.ReadWriteBasic, EduAssignments.ReadWrite  |
 |Delegada (conta pessoal da Microsoft) |  Sem suporte.  |
 |Aplicativo | Sem suporte. | 
 
@@ -49,8 +49,8 @@ No corpo da solicitação, forneça os valores para os campos relevantes que dev
 |:---------------|:--------|:----------|
 |addedStudentAction|Cadeia de caracteres| Controla o comportamento dos alunos que são adicionados após a publicação da atribuição.|
 |addToCalendarAction|educationAddToCalendarOptions|Campo opcional para controlar o comportamento de atribuição para adicionar atribuições aos calendários dos alunos e professores quando a atribuição for publicada. Os valores possíveis são: `none` `studentsAndPublisher` , , e `studentsAndTeamOwners` `studentsOnly` `unknownFutureValue` . O valor padrão é `none`.|
-|allowLateSubmissions|Booliano| Se os envios podem ser enviados após a data de vencimento.|
-|allowStudentsToAddResourcesToSubmission|Booliano| Se um aluno pode adicionar recursos a um envio. Indica se os únicos itens no envio vieram da lista de recursos de atribuição. |
+|allowLateSubmissions|Boolean| Se os envios podem ser enviados após a data de vencimento.|
+|allowStudentsToAddResourcesToSubmission|Boolean| Se um aluno pode adicionar recursos a um envio. Indica se os únicos itens no envio vieram da lista de recursos de atribuição. |
 |assignDateTime|DateTimeOffset| Data em que a atribuição deve ser publicada para os alunos. |
 |assignTo|educationAssignmentRecipient| Alunos que receberão a atribuição.|
 |closeDateTime|DateTimeOffset| Data em que a atribuição será fechada para envios. Este é um campo opcional que pode ser nulo se a atribuição não permitirLateSubmissions ou closeDateTime for igual ao dueDateTime, mas se especificado, ele deve ser maior ou igual ao dueDateTime.|
@@ -58,7 +58,7 @@ No corpo da solicitação, forneça os valores para os campos relevantes que dev
 |dueDateTime|DateTimeOffset| A atribuição de data é devido. |
 |grading|educationAssignmentGradeType| Como a atribuição será gradeada.|
 |instructions|itemBody| Instruções a serem fornecidas aos alunos juntamente com a atribuição. |
-|notificationChannelUrl|String| Canal para postar notificação de publicação de atribuição. A atualização da URL do canal não é permitida após a publicação da atribuição e só é permitida quando o valor **assignTo** é [educationAssignmentClassRecipient](../resources/educationassignmentclassrecipient.md).|
+|notificationChannelUrl|Cadeia de caracteres| Canal para postar notificação de publicação de atribuição. A atualização da URL do canal não é permitida após a publicação da atribuição e só é permitida quando o valor **assignTo** é [educationAssignmentClassRecipient](../resources/educationassignmentclassrecipient.md).|
 
 ## <a name="response"></a>Resposta
 Se tiver êxito, este método retornará um código de resposta e um `200 OK` objeto [educationAssignment](../resources/educationassignment.md) atualizado no corpo da resposta.
@@ -75,7 +75,6 @@ Este é um exemplo de solicitação.
 ```http
 PATCH https://graph.microsoft.com/beta/education/classes/72a7baec-c3e9-4213-a850-f62de0adad5f/assignments/4679bc1b-90c5-45af-ae1a-d5357672ed39
 Content-type: application/json
-Content-length: 279
 
 {
     "displayName": "Reading and review test 09.03 #5",
@@ -119,7 +118,6 @@ Este é um exemplo de resposta.
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 279
 
 {
     "@odata.context": "https://graph.microsoft.com/beta/$metadata#education/classes('72a7baec-c3e9-4213-a850-f62de0adad5f')/assignments/$entity",

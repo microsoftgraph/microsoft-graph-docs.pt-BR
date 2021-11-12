@@ -1,16 +1,16 @@
 ---
 title: 'synchronizationJob: validateCredentials'
 description: Valide se as credenciais são válidas no locatário.
-localization_priority: Normal
+ms.localizationpriority: medium
 doc_type: apiPageType
 author: ArvindHarinder1
 ms.prod: applications
-ms.openlocfilehash: 650cbc18aeb0dc28ef732c4065aa67d19f1a710f
-ms.sourcegitcommit: 94c4acf8bd03c10a44b12952b6cb4827df55b978
+ms.openlocfilehash: 96b9f7c396031e1e9621003f7c6e60e5419cb35d
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/06/2021
-ms.locfileid: "52787166"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60938417"
 ---
 # <a name="synchronizationjob-validatecredentials"></a>synchronizationJob: validateCredentials
 
@@ -20,13 +20,13 @@ Namespace: microsoft.graph
 
 Valide se as credenciais são válidas no locatário.
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão                        | Permissões (da com menos para a com mais privilégios)              |
 |:--------------------------------------|:---------------------------------------------------------|
 |Delegado (conta corporativa ou de estudante)     |Directory.ReadWrite.All  |
-|Delegado (conta pessoal da Microsoft) |Sem suporte. |
+|Delegada (conta pessoal da Microsoft) |Sem suporte. |
 |Aplicativo                            |Application.ReadWrite.OwnedBy, Directory.ReadWrite.All | 
 
 ## <a name="http-request"></a>Solicitação HTTP
@@ -45,7 +45,7 @@ Forneça um objeto JSON com os seguintes parâmetros no corpo da solicitação.
 
 | Parâmetro    | Tipo   |Descrição|
 |:---------------|:--------|:----------|
-|useSavedCredentials|Booliano|Quando , o parâmetro será ignorado e as credenciais `true` `credentials` salvas anteriormente (se alguma) serão validadas. |
+|useSavedCredentials|Boolean|Quando , o parâmetro será ignorado e as credenciais `true` `credentials` salvas anteriormente (se alguma) serão validadas. |
 |credenciais|[coleção synchronizationSecretKeyStringValuePair](../resources/synchronization-secretkeystringvaluepair.md)|Credenciais para validar. Ignorado quando o `useSavedCredentials` parâmetro é `true` .|
 
 ## <a name="response"></a>Resposta
@@ -64,7 +64,6 @@ Este é um exemplo de solicitação.
 ```http
 POST https://graph.microsoft.com/beta/servicePrincipals/{id}/synchronization/jobs/{id}/validateCredentials
 Content-type: application/json
-Content-length: 218
 
 { 
     credentials: [ 

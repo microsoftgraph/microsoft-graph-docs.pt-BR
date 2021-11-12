@@ -2,15 +2,15 @@
 title: Criar usuário legalHoldSource
 description: Crie um novo objeto legalHold userSource.
 author: mahage-msft
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: ediscovery
 doc_type: apiPageType
-ms.openlocfilehash: 5c49ba39da5967713d0b80ed51cf0aa95229f4be
-ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
+ms.openlocfilehash: 4de26ccee02746fc956e57c0f7ad402ec0431dad
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "50952414"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60938913"
 ---
 # <a name="create-legalhold-usersource"></a>Criar usuário legalHoldSource
 
@@ -27,7 +27,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |Tipo de permissão|Permissões (da com menos para a com mais privilégios)|
 |:---|:---|
 |Delegado (conta corporativa ou de estudante)|eDiscovery.Read.All, eDiscovery.ReadWrite.All|
-|Delegado (conta pessoal da Microsoft)|Sem suporte.|
+|Delegada (conta pessoal da Microsoft)|Sem suporte.|
 |Aplicativo|Sem suporte.|
 
 ## <a name="http-request"></a>Solicitação HTTP
@@ -56,7 +56,7 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar [o userS
 
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|email|Cadeia de caracteres|Endereço SMTP do usuário.|
+|email|Cadeia de caracteres|Endereço SMTP do usuário ou do endereço SMTP da caixa de correio do grupo. Para obter o endereço de email do grupo, use [List groups](../api/group-list.md) ou [Get group](../api/group-get.md). Usando o grupo get, você pode consultar pelo nome do grupo usando `$filter` ; por exemplo, `https://graph.microsoft.com/v1.0/groups?$filter=displayName eq 'secret group'&$select=mail,id,displayName` . |
 |includedSources|microsoft.graph.ediscovery.sourceType|Especifica quais fontes estão incluídas neste grupo. Esse valor deve `mailbox` ser , não há suporte para `site` legalHolds no momento.|
 
 ## <a name="response"></a>Resposta
@@ -66,6 +66,7 @@ Se tiver êxito, este método retornará um código de resposta e um `201 Create
 ## <a name="examples"></a>Exemplos
 
 ### <a name="request"></a>Solicitação
+
 
 
 # <a name="http"></a>[HTTP](#tab/http)
@@ -78,7 +79,6 @@ Se tiver êxito, este método retornará um código de resposta e um `201 Create
 ``` http
 POST https://graph.microsoft.com/beta/compliance/ediscovery/cases/c816dd6f-5af8-40c5-a760-331361e05c60/legalHolds/387566cc-38ae-4e85-ab4b-cd2dd34faa07/userSources
 Content-Type: application/json
-Content-length: 208
 
 {
   "email": "adelev@contoso.com",
@@ -103,6 +103,8 @@ Content-length: 208
 
 ---
 
+
+---
 
 ### <a name="response"></a>Resposta
 

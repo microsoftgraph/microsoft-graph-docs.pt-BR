@@ -2,15 +2,15 @@
 title: Atualizar tablerow
 description: Atualize as propriedades do objeto tablerow.
 author: lumine2008
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: excel
 doc_type: apiPageType
-ms.openlocfilehash: 4f720830c2ce0f2a7139a08c1cdc53180ec252cb
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: a1d586e90a05c287cbb01b22527acf5f1a07ea72
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52052667"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60940949"
 ---
 # <a name="update-tablerow"></a>Atualizar tablerow
 
@@ -64,7 +64,6 @@ Este é um exemplo da solicitação.
 ```http
 PATCH https://graph.microsoft.com/beta/me/drive/items/{id}/workbook/tables/{id|name}/rows/{index}
 Content-type: application/json
-Content-length: 45
 
 {
   "index": 99,
@@ -90,7 +89,7 @@ Content-length: 45
 ---
 
 ##### <a name="response"></a>Resposta
-Veja a seguir um exemplo da resposta. Observação: o objeto de resposta mostrado aqui pode ser encurtado para legibilidade.
+Aqui está um exemplo da resposta. Observação: o objeto de resposta mostrado aqui pode ser reduzido para facilitar a leitura.
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -99,7 +98,6 @@ Veja a seguir um exemplo da resposta. Observação: o objeto de resposta mostrad
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 45
 
 {
   "index": 99,

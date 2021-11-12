@@ -5,12 +5,12 @@ author: AshleyYangSZ
 ms.localizationpriority: medium
 ms.prod: cloud-pc
 doc_type: apiPageType
-ms.openlocfilehash: 673f2fb027ed2d428ea3f7894334ca769e77332e
-ms.sourcegitcommit: 08e9b0bac39c1b1d2c8a79539d24aaa93364baf2
+ms.openlocfilehash: e1d056183f3cd2856e9381d9999dba45df6ecc5a
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/24/2021
-ms.locfileid: "59765862"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60946829"
 ---
 # <a name="update-cloudpcprovisioningpolicy"></a>Atualizar cloudPcProvisioningPolicy
 
@@ -27,7 +27,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |Tipo de permissão|Permissões (da com menos para a com mais privilégios)|
 |:---|:---|
 |Delegado (conta corporativa ou de estudante)|CloudPC.ReadWrite.All|
-|Delegado (conta pessoal da Microsoft)|Sem suporte.|
+|Delegada (conta pessoal da Microsoft)|Sem suporte.|
 |Aplicativo|CloudPC.ReadWrite.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
@@ -57,10 +57,10 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar [o cloud
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
 |displayName|Cadeia de caracteres|O nome de exibição da política de provisionamento. |
-|description|String|A descrição da política de provisionamento.|
+|description|Cadeia de caracteres|A descrição da política de provisionamento.|
 |onPremisesConnectionId|Cadeia de caracteres|A ID do cloudPcOnPremisesConnection. Para garantir que os computadores na nuvem tenham conectividade de rede e que eles participem do domínio, escolha uma conexão com uma rede virtual validada pelo serviço de Computador na Nuvem.|
 |imageId|Cadeia de caracteres|A ID da imagem do sistema operacional que você deseja provisionar em PCs na Nuvem. O formato de uma imagem de tipo de galeria é: {publisher_offer_sku}. Os valores com suporte para cada um dos parâmetros são os seguinte: <ul><li>publisher: Microsoftwindowsdesktop.</li> <li>offer: windows-ent-cpc.</li> <li>sku: 21h1-ent-cpc-m365, 21h1-ent-cpc-os, 20h2-ent-cpc-m365, 20h2-ent-cpc-os, 20h1-ent-cpc-m365, 20h1-ent-cpc-os, 19h2-ent-cpc-m365 e 19h2-ent-cpc-os.</li></ul>|
-|imageDisplayName|String|O nome de exibição da imagem do sistema operacional que você está provisionando.|
+|imageDisplayName|Cadeia de caracteres|O nome de exibição da imagem do sistema operacional que você está provisionando.|
 |imageType|cloudPcProvisioningPolicyImageType|O tipo de imagem do sistema operacional (personalizada ou galeria) que você deseja provisionar em PCs na Nuvem. Os valores possíveis são: `gallery` e `custom`.|
 
 ## <a name="response"></a>Resposta
@@ -82,7 +82,6 @@ Se tiver êxito, este método retornará um código de resposta e um `200 OK` [o
 ``` http
 PATCH https://graph.microsoft.com/beta/deviceManagement/virtualEndpoint/provisioningPolicies/{id}
 Content-Type: application/json
-Content-length: 308
 
 {
   "@odata.type": "#microsoft.graph.cloudPcProvisioningPolicy",
@@ -126,7 +125,6 @@ Content-length: 308
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-length: 355
 
 {
   "@odata.type": "#microsoft.graph.cloudPcProvisioningPolicy",

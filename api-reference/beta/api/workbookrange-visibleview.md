@@ -1,16 +1,16 @@
 ---
 title: 'workbookRange: visibleView'
 description: Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira Permissões.
-localization_priority: Normal
+ms.localizationpriority: medium
 author: lumine2008
 ms.prod: excel
 doc_type: apiPageType
-ms.openlocfilehash: d7d6eb63c60728eb7969d99bf6e1eb5e9eed596a
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: 28373cdc9f0274f1d84b0ab930b2197d0d58b447
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52053304"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60945989"
 ---
 # <a name="workbookrange-visibleview"></a>workbookRange: visibleView
 
@@ -78,7 +78,7 @@ GET https://graph.microsoft.com/beta/drive/root/workbook/worksheets/{id}/range(a
 
 
 ##### <a name="response"></a>Resposta
-Veja a seguir um exemplo da resposta. Observação: o objeto de resposta mostrado aqui pode ser encurtado para legibilidade.
+Aqui está um exemplo da resposta. Observação: o objeto de resposta mostrado aqui pode ser reduzido para facilitar a leitura.
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -87,7 +87,6 @@ Veja a seguir um exemplo da resposta. Observação: o objeto de resposta mostrad
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 194
 
 {
   "cellAddresses": "cellAddresses-value",

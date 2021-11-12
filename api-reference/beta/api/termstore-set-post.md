@@ -1,23 +1,23 @@
 ---
 title: Criar conjunto
-description: Criar um novo objeto set.
+description: Crie um novo objeto set.
 author: mohitpcad
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: Sharepoint
 doc_type: apiPageType
-ms.openlocfilehash: c81ab668593b3650dd55de6bd933eef719d8ae7d
-ms.sourcegitcommit: eacd2a6e46c19dd3cd8519592b1668fabe14d85d
+ms.openlocfilehash: 03cee9f09aca4fd30e79659fccfe1749c936d8ef
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "49873714"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60926060"
 ---
 # <a name="create-set"></a>Criar conjunto
 Namespace: microsoft.graph.termStore
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Criar um novo [objeto set.](../resources/termstore-set.md)
+Crie um novo [objeto set.](../resources/termstore-set.md)
 
 ## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
@@ -25,7 +25,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |Tipo de permissão|Permissões (da com menos para a com mais privilégios)|
 |:---|:---|
 |Delegado (conta corporativa ou de estudante) |TermStore.ReadWrite.All |
-|Delegado (conta pessoal da Microsoft) | Sem suporte.    |
+|Delegada (conta pessoal da Microsoft) | Sem suporte.    |
 |Aplicativo | Sem suporte. |
 
 
@@ -48,18 +48,18 @@ POST /termStore/sets
 ## <a name="request-body"></a>Corpo da solicitação
 No corpo da solicitação, fornece uma representação JSON do [objeto set.](../resources/termstore-set.md)
 
-A tabela a seguir mostra as propriedades que são necessárias ao criar o [conjunto.](../resources/termstore-set.md)
+A tabela a seguir mostra as propriedades que são necessárias ao criar o [conjunto](../resources/termstore-set.md).
 
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
 |localizedNames|[coleção microsoft.graph.termstore.localizedName](../resources/termstore-localizedname.md)|Nome do conjunto a ser criado|
-|parentGroup|[microsoft.graph.termstore.group](../resources/termstore-group.md)|termstore-group sob o qual o conjunto precisa ser criado|
+|parentGroup|[microsoft.graph.termstore.group](../resources/termstore-group.md)|termstore-group no qual o conjunto precisa ser criado|
 
 
 
 ## <a name="response"></a>Resposta
 
-Se bem-sucedido, este método retorna `201 Created` um código de resposta e um objeto [set](../resources/termstore-set.md) no corpo da resposta.
+Se tiver êxito, este método retornará um código `201 Created` de resposta e um objeto [set](../resources/termstore-set.md) no corpo da resposta.
 
 ## <a name="examples"></a>Exemplos
 
@@ -67,7 +67,6 @@ Se bem-sucedido, este método retorna `201 Created` um código de resposta e um 
 ``` http
 POST https://graph.microsoft.com/beta/termStore/sets
 Content-Type: application/json
-Content-length: 288
 
 {
   "@odata.type": "#microsoft.graph.termStore.set",

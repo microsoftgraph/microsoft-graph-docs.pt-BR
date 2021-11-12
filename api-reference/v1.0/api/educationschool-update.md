@@ -5,12 +5,12 @@ author: mlafleur
 ms.localizationpriority: medium
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: cae56a4aef0111dd12f2968a7c1b8f0f7ed52f7d
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 7654cc5d25568f81815209a81da1e408456f1d2c
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59046180"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60947626"
 ---
 # <a name="update-educationschool"></a>Atualizar educationSchool
 
@@ -51,7 +51,7 @@ A tabela a seguir mostra as propriedades que são necessárias ao atualizar [o e
 | Propriedade             | Tipo                                               | Descrição                                                                                                                                                           |
 | :------------------- | :------------------------------------------------- | :-------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | displayName          | Cadeia de caracteres                                             | Nome de exibição da escola. Herdado de [educationOrganization](../resources/educationorganization.md).                                                            |
-| description          | String                                             | Descrição da escola. Herdado de [educationOrganization](../resources/educationorganization.md).                                                             |
+| description          | Cadeia de caracteres                                             | Descrição da escola. Herdado de [educationOrganization](../resources/educationorganization.md).                                                             |
 | externalSource       | educationExternalSource                            | Fonte de onde essa organização foi criada. Herdado de [educationOrganization](../resources/educationorganization.md). Os valores possíveis são: `sis` e `manual`. |
 | externalSourceDetail | Cadeia de caracteres                                             | O nome da fonte externa de onde esses recursos foram gerados.                                                                                                    |
 | principalEmail       | Cadeia de caracteres                                             | Endereço de email da entidade de segurança.                                                                                                                                       |
@@ -85,7 +85,6 @@ Este é um exemplo de solicitação.
 ```http
 PATCH https://graph.microsoft.com/v1.0/education/schools/{school-id}
 Content-type: application/json
-Content-length: 292
 
 {
   "displayName": "Fabrikam Arts High School",
@@ -125,7 +124,6 @@ Este é um exemplo de resposta.
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 292
 
 {
   "id": "10002",

@@ -5,12 +5,12 @@ author: spunukol
 ms.localizationpriority: medium
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: d13af4192c7ee41b3e5c0ba88b97041f0d6c42e4
-ms.sourcegitcommit: 11be55b40804b07f4c422f09f601afa97c7d31ed
+ms.openlocfilehash: 99ba8f262f90a9a9c2b08539202ec16c8a6e1d8d
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/09/2021
-ms.locfileid: "60256449"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60939725"
 ---
 # <a name="create-device"></a>Criar dispositivo
 
@@ -61,7 +61,6 @@ Este é um exemplo da solicitação.
 ```http
 POST https://graph.microsoft.com/beta/devices
 Content-type: application/json
-Content-length: 364
 
 {
   "accountEnabled": true,
@@ -107,7 +106,6 @@ Aqui está um exemplo da resposta. Observação: o objeto de resposta mostrado a
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 364
 
 {
   "accountEnabled": true,

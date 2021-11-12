@@ -1,16 +1,16 @@
 ---
 title: assignLicense
 description: Adicione ou remova licenças para o usuário habilitar ou desabilitar o uso de ofertas de nuvem da Microsoft. Por exemplo, uma organização pode ter uma assinatura Microsoft 365 Enterprise E3 com 100 licenças e essa solicitação atribui uma dessas licenças a um usuário específico. Você também pode habilitar e desabilitar planos específicos associados a uma assinatura. Para saber mais sobre assinaturas e licenças, consulte este artigo do Technet.
-localization_priority: Normal
+ms.localizationpriority: medium
 author: jpettere
 ms.prod: users
 doc_type: apiPageType
-ms.openlocfilehash: 6efe1bf90e48677070d7aa5b1a7b4feb57a162d3
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: 5228d7c036477134b6def39f1a096db3fd13c939
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52053388"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60939165"
 ---
 # <a name="user-assignlicense"></a>usuário: assignLicense
 
@@ -66,7 +66,6 @@ Adicione licenças ao usuário.
 ```http
 POST https://graph.microsoft.com/beta/me/assignLicense
 Content-type: application/json
-Content-length: 185
 
 {
   "addLicenses": [
@@ -108,7 +107,6 @@ Remover licenças do usuário.
 ```http
 POST https://graph.microsoft.com/beta/me/assignLicense
 Content-type: application/json
-Content-length: 185
 
 {
   "addLicenses": [],
@@ -126,7 +124,6 @@ Em ambos os exemplos, a resposta é o objeto de usuário atualizado. Observaçã
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 491
 
 {
   "accountEnabled": true,

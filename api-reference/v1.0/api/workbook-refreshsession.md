@@ -5,12 +5,12 @@ author: lumine2008
 ms.localizationpriority: medium
 ms.prod: excel
 doc_type: apiPageType
-ms.openlocfilehash: 4f33fb37bf99cc1711d64f4546ea83384e6a0a8d
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: cc36508702b70f33f3e37a82067141be0adcdd55
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59113865"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60947375"
 ---
 # <a name="refresh-session"></a>Atualizar Sessão
 
@@ -24,7 +24,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
 |:--------------------|:---------------------------------------------------------|
 |Delegado (conta corporativa ou de estudante) | Files.ReadWrite    |
-|Delegado (conta pessoal da Microsoft) | Sem suporte.    |
+|Delegada (conta pessoal da Microsoft) | Sem suporte.    |
 |Aplicativo | Sem suporte. |
 
 ## <a name="http-request"></a>Solicitação HTTP
@@ -60,7 +60,6 @@ Este é um exemplo da solicitação.
 POST https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/refreshSession
 Content-type: application/json
 workbook-session-id: {session-id}
-Content-length: 0
 
 {
 

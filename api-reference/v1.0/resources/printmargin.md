@@ -2,21 +2,19 @@
 title: Tipo de recurso printMargin
 description: Especifica as larguras de margem a ser usadas durante a impressão.
 author: nilakhan
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: cloud-printing
 doc_type: resourcePageType
-ms.openlocfilehash: d15b488985bbf1c51f03a0c030fab16fdf3d25cbd8c8b53b29368e4f0af2d151
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 20ad208efdac2890a45dfbebdcf51ace8e49d061
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54196562"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60924205"
 ---
 # <a name="printmargin-resource-type"></a>Tipo de recurso printMargin
 
 Namespace: microsoft.graph
-
-[!INCLUDE [cloudprinting-pricing-disclaimer](../../includes/cloudprinting-pricing-disclaimer.md)]
 
 Especifica as larguras de margem a ser usadas durante a impressão.
 

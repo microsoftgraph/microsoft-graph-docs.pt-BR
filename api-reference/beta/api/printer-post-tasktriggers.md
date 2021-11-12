@@ -2,15 +2,15 @@
 title: Create taskTrigger
 description: Crie um novo gatilho de tarefas na impressora especificada.
 author: braedenp-msft
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: universal-print
 doc_type: apiPageType
-ms.openlocfilehash: cd654963b8aa5dc5ce30c2fadc644fb3aaa03568
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: 6136483c2bae11c8ce339561337137b6ed3a4e03
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52052023"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60933058"
 ---
 # <a name="create-tasktrigger"></a>Create taskTrigger
 
@@ -28,8 +28,8 @@ Além das permissões a seguir, o locatário do usuário deve ter uma assinatura
 |Tipo de permissão | Permissões (da com menos para a com mais privilégios) |
 |:---------------|:--------------------------------------------|
 |Delegado (conta corporativa ou de estudante)| Printer.ReadWrite.All, Printer.FullControl.All |
-|Delegado (conta pessoal da Microsoft)|Sem suporte.|
-|Application|Sem suporte.|
+|Delegada (conta pessoal da Microsoft)|Sem suporte.|
+|Aplicativo|Sem suporte.|
 
 ## <a name="http-request"></a>Solicitação HTTP
 
@@ -100,7 +100,6 @@ Este é um exemplo de resposta.
 ```http
 HTTP/1.1 201 Created
 Content-type: application/json
-Content-length: 196
 
 {
   "@odata.context": "https://graph.print.microsoft.com/v1.0/$metadata#Collection(Microsoft.Graph.PrintTaskTrigger)",

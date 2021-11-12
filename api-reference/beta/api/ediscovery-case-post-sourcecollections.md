@@ -2,15 +2,15 @@
 title: Criar sourceCollection
 description: Crie um novo objeto sourceCollection.
 author: mahage-msft
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: ediscovery
 doc_type: apiPageType
-ms.openlocfilehash: 799601b3ca59c3522e4d023f7647bca523369659
-ms.sourcegitcommit: e440d855f1106390d842905d97ceb16f143db2e5
+ms.openlocfilehash: ba810925c220451a7ff416d5bf065a565e2f1f13
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/29/2021
-ms.locfileid: "52080311"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60925584"
 ---
 # <a name="create-sourcecollection"></a>Criar sourceCollection
 
@@ -27,7 +27,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |Tipo de permissão|Permissões (da com menos para a com mais privilégios)|
 |:---|:---|
 |Delegado (conta corporativa ou de estudante)|eDiscovery.Read.All, eDiscovery.ReadWrite.All|
-|Delegado (conta pessoal da Microsoft)|Sem suporte.|
+|Delegada (conta pessoal da Microsoft)|Sem suporte.|
 |Aplicativo|Sem suporte.|
 
 ## <a name="http-request"></a>Solicitação HTTP
@@ -57,7 +57,7 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar [sourceC
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
 |dataSourceScopes|microsoft.graph.ediscovery.dataSourceScopes|Quando especificado, a coleção se estenderá por um serviço para uma carga de trabalho inteira. Os valores possíveis são: `none` , , , , `allTenantMailboxes` `allTenantSites` `allCaseCustodians` `allCaseNoncustodialDataSources` . **Observação:** Um custodiante ou a especificação de dadosSourceScope é necessária ao criar uma coleção de origem.|
-|displayName|String|O nome de exibição da **sourceCollection**|
+|displayName|Cadeia de caracteres|O nome de exibição da **sourceCollection**|
 |custodianSources|[coleção microsoft.graph.ediscovery.dataSource](../resources/ediscovery-datasource.md)|As fontes custodiadas a incluir nesta pesquisa. Você pode obter a URL do [site custodianteSources,](../api/ediscovery-custodian-list-sitesources.md) [unifiedGroupSources](../api/ediscovery-custodian-list-unifiedgroupsources.md)ou [userSources](../api/ediscovery-custodian-list-usersources.md) mais a ID da origem. **Observação:** Um custodiante ou a especificação da origem do locatário é necessário ao criar uma coleção de origem. |
 
 ## <a name="response"></a>Resposta
@@ -79,7 +79,6 @@ Se tiver êxito, este método retornará um código de resposta e um `201 Create
 ``` http
 POST https://graph.microsoft.com/beta/compliance/ediscovery/cases/47746044-fd0b-4a30-acfc-5272b691ba5b/sourceCollections
 Content-Type: application/json
-Content-length: 272
 
 {
     "displayName": "Quarterly Financials search",

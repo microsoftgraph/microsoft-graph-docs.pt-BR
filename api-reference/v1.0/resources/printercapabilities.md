@@ -2,52 +2,50 @@
 title: Tipo complexo printerCapabilities
 description: Representa os recursos relatados por uma impressora.
 author: nilakhan
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: cloud-printing
 doc_type: resourcePageType
-ms.openlocfilehash: 530c67a3779caf2557c780f6c62446ab95164151f92a68ce6946ff86bfb0d8bf
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: eb9a583ed39dc3bfd1b1dafe5298a64132fef83a
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54229056"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60946871"
 ---
 # <a name="printercapabilities-resource-type"></a>Tipo de recurso printerCapabilities
 
 Namespace: microsoft.graph
-
-[!INCLUDE [cloudprinting-pricing-disclaimer](../../includes/cloudprinting-pricing-disclaimer.md)]
 
 Representa os recursos relatados por um printer/printerShare.
 
 ## <a name="properties"></a>Propriedades
 | Propriedade     | Tipo        | Descrição |
 |:-------------|:------------|:------------|
-|contentTypes|String collection|Uma lista de tipos de conteúdo com suporte (MIME) compatíveis com a impressora. Não é garantido que o serviço Impressão Universal dá suporte à impressão de todos esses tipos mime.|
-|isColorPrintingSupported|Booliano|True se a impressão de cores for suportada pela impressora; false caso contrário. Somente leitura.|
+|contentTypes|Coleção de cadeias de caracteres|Uma lista de tipos de conteúdo com suporte (MIME) compatíveis com a impressora. Não é garantido que o serviço Impressão Universal dá suporte à impressão de todos esses tipos mime.|
+|isColorPrintingSupported|Boolean|True se a impressão de cores for suportada pela impressora; false caso contrário. Somente leitura.|
 |feedOrientations|Coleção printerFeedOrientation|A lista de orientações de feed que são suportadas pela impressora.|
-|isPageRangeSupported|Booliano|True se a impressora dá suporte à impressão por intervalos de página; false caso contrário.|
+|isPageRangeSupported|Boolean|True se a impressora dá suporte à impressão por intervalos de página; false caso contrário.|
 |qualidades|[Coleção printQuality](enums.md#printquality-values)|As qualidades de impressão suportadas pela impressora.|
 |dpis|Coleção Int32|A lista de resoluções de impressão em DPI que são suportadas pela impressora.|
 |duplexModes|[Coleção printDuplexMode](enums.md#printduplexmode-values)|A lista de modos duplex com suporte da impressora. Os valores válidos são descritos na tabela a seguir.|
 |queueBufferSizeInBytes|Int32|O tamanho máximo da fila de trabalho de impressão que pode ser armazenado pela impressora.|
 |copiesPerJob|[integerRange](integerrange.md)|O intervalo de cópias por trabalho suportado pela impressora.|
 |finishings|[Coleção printFinishing](enums.md#printfinishing-values)|Processos de término que a impressora dá suporte a um documento impresso.|
-|mediaColors|String collection|As cores de mídia (ou seja, papel) suportadas pela impressora.|
+|mediaColors|Coleção de cadeias de caracteres|As cores de mídia (ou seja, papel) suportadas pela impressora.|
 |mediaTypes|Coleção de cadeias de caracteres|Os tipos de mídia suportados pela impressora.|
-|mediaSizes|String collection|Os tamanhos de mídia suportados pela impressora. Oferece suporte a nomes de tamanho padrão para tamanhos de mídia ISO e ANSI. Os valores válidos estão na tabela [a seguir](#mediasizes-values).|
+|mediaSizes|Coleção de cadeias de caracteres|Os tamanhos de mídia suportados pela impressora. Oferece suporte a nomes de tamanho padrão para tamanhos de mídia ISO e ANSI. Os valores válidos estão na tabela [a seguir](#mediasizes-values).|
 |pagesPerSheet|Coleção Int32|Número suportado de Páginas de Entrada para impor uma única Impressão.|
 |orientações|[Coleção printOrientation](enums.md#printorientation-values)|As orientações de impressão suportadas pela impressora. Os valores válidos são descritos na tabela a seguir.|
-|inputBins|String collection|Caixas de entrada com suporte para a impressora.|
-|outputBins|String collection|As caixas de saída com suporte da impressora (bandejas).|
-|supportsFitPdfToPage|Booliano|True se a impressora oferece suporte ao dimensionamento de páginas PDF para corresponder ao tamanho da mídia de impressão; false caso contrário.|
+|inputBins|Coleção de cadeias de caracteres|Caixas de entrada com suporte para a impressora.|
+|outputBins|Coleção de cadeias de caracteres|As caixas de saída com suporte da impressora (bandejas).|
+|supportsFitPdfToPage|Boolean|True se a impressora oferece suporte ao dimensionamento de páginas PDF para corresponder ao tamanho da mídia de impressão; false caso contrário.|
 |multipageLayouts|[Coleção printMultipageLayout](enums.md#printmultipagelayout-values)|As instruções de apresentação suportadas pela impressora. Os valores com suporte são descritos na tabela a seguir.|
 |colorModes|[Coleção printColorMode](enums.md#printcolormode-values)|Os modos de cor suportados pela impressora. Os valores válidos são descritos na tabela a seguir.|
 |topMargins|Coleção Int32|Uma lista de margens principais com suporte (em mícrons) para a impressora.|
 |bottomMargins|Coleção Int32|Uma lista de margens inferior suportadas (em mícrons) para a impressora.|
 |rightMargins|Coleção Int32|Uma lista de margens direitas com suporte (em mícrons) para a impressora.|
 |leftMargins|Coleção Int32|Uma lista de margens esquerdas suportadas (em mícrons) para a impressora.|
-|ordenação|Booliano|True se a impressora dá suporte à colagem ao imprimir cópias muliplas de um documento de várias páginas; false caso contrário.|
+|ordenação|Boolean|True se a impressora dá suporte à colagem ao imprimir cópias muliplas de um documento de várias páginas; false caso contrário.|
 |scalings|[Coleção printScaling](enums.md#printscaling-values)|Dimensionamentos de impressão com suporte.|
 
 ### <a name="mediasizes-values"></a>mediaSizes values

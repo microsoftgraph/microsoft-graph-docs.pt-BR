@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 doc_type: apiPageType
 ms.prod: governance
 author: carolinetempleton
-ms.openlocfilehash: 5eaafd77c903a006bdfb01a077de1a006b34ac9d
-ms.sourcegitcommit: c7ff992ef63e480d070421ba99b28ee129cb6acb
+ms.openlocfilehash: 4d1c169565671eec804108e44a9cda64b7163802
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "60694712"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60947661"
 ---
 # <a name="list-privilegedoperationevents"></a>Listar privilegedOperationEvents
 
@@ -78,7 +78,6 @@ O exemplo a seguir mostra a resposta. Observação: O objeto de resposta exibido
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 547
 
 {
     "value": [
@@ -138,7 +137,6 @@ O exemplo a seguir mostra a resposta. Observação: O objeto de resposta exibido
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 547
 
 {
     "value": [
@@ -199,7 +197,6 @@ O exemplo a seguir mostra a resposta. Observação: O objeto de resposta exibido
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 547
 
 {
     "value": [
@@ -242,7 +239,6 @@ O exemplo a seguir mostra a resposta. Observação: o objeto de resposta mostrad
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 547
 
 {
     "@odata.context": "https://graph.microsoft.com/beta/$metadata#privilegedOperationEvents",

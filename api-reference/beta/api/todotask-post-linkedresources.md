@@ -1,21 +1,21 @@
 ---
 title: Criar linkedResource
-description: Criar um novo objeto linkedResource.
+description: Crie um novo objeto linkedResource.
 author: avijityadav
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 899f2b39c0a73a774c6c8df6da4aa80eb3f06fc7
-ms.sourcegitcommit: eacd2a6e46c19dd3cd8519592b1668fabe14d85d
+ms.openlocfilehash: bada407057ead2e933b8231a3a5898a049628817
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "49872923"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60947654"
 ---
 # <a name="create-linkedresource"></a>Criar linkedResource
 Namespace: microsoft.graph [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Crie um [objeto linkedResource](../resources/linkedresource.md) para associar uma tarefa [especificada](../resources/todotask.md) a um item em um aplicativo parceiro. Por exemplo, você pode associar uma tarefa a um item de email no Outlook que gerou a tarefa e pode criar um objeto **linkedResource** para controlar sua associação.
+Crie um [objeto linkedResource](../resources/linkedresource.md) para associar uma tarefa [especificada](../resources/todotask.md) a um item em um aplicativo parceiro. Por exemplo, você pode associar uma tarefa a um item de email no Outlook que estimulou a tarefa e pode criar um **objeto linkedResource** para rastrear sua associação.
 
 Você também pode criar um **objeto linkedResource** ao [criar um todoTask](/graph/api/todotasklist-post-tasks?view=graph-rest-beta&preserve-view=true&tabs=http#examples).
 
@@ -25,7 +25,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |Tipo de permissão|Permissões (da com menos para a com mais privilégios)|
 |:---|:---|
 |Delegado (conta corporativa ou de estudante)|Tasks.ReadWrite|
-|Delegado (conta pessoal da Microsoft)|Tasks.ReadWrite|
+|Delegada (conta pessoal da Microsoft)|Tasks.ReadWrite|
 |Aplicativo|Sem suporte.|
 
 ## <a name="http-request"></a>Solicitação HTTP
@@ -48,21 +48,21 @@ POST /users/{id|userPrincipalName}/todo/lists/{todoTaskListId}/tasks/{taskId}/li
 ## <a name="request-body"></a>Corpo da solicitação
 No corpo da solicitação, fornece uma representação JSON do [objeto linkedResource.](../resources/linkedresource.md)
 
-A tabela a seguir mostra as propriedades que são necessárias ao criar [linkedResource](../resources/linkedresource.md).
+A tabela a seguir mostra as propriedades que são necessárias ao criar [o linkedResource](../resources/linkedresource.md).
 
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|id|Cadeia de caracteres|ID gerada pelo servidor para a entidade vinculada Herdada da [entidade](../resources/entity.md)|
+|id|Cadeia de caracteres|ID gerada do servidor para a entidade vinculada Herdada da [entidade](../resources/entity.md)|
 |webUrl|String|Deeplink para a entidade vinculada |
 |applicationName|Cadeia de caracteres|Campo indicando o nome do aplicativo da fonte que está enviando a entidade vinculada |
-|displayName|Cadeia de caracteres|Campo que indica o título da entidade vinculada. |
-|externalId|Cadeia de caracteres|ID do objeto que está associado a essa tarefa no sistema de terceiros/parceiro |
+|displayName|Cadeia de caracteres|Campo indicando o título da entidade vinculada. |
+|externalId|Cadeia de caracteres|ID do objeto associado a essa tarefa no sistema de terceiros/parceiro |
 
 
 
 ## <a name="response"></a>Resposta
 
-Se bem-sucedido, este método retorna um código de resposta e um objeto `201 Created` [linkedResource](../resources/linkedresource.md) no corpo da resposta.
+Se tiver êxito, este método retornará um código de resposta e um `201 Created` [objeto linkedResource](../resources/linkedresource.md) no corpo da resposta.
 
 ## <a name="examples"></a>Exemplos
 
@@ -78,7 +78,6 @@ Se bem-sucedido, este método retorna um código de resposta e um objeto `201 Cr
 ``` http
 POST https://graph.microsoft.com/beta/me/todo/lists/dfsdc-f9dfdfs-dcsda9/tasks/e2dc-f9cce2-dce29/linkedResources
 Content-Type: application/json
-Content-length: 166
 
 {
   "webUrl": "https://microsoft.com",

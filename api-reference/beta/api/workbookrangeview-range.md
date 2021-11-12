@@ -2,15 +2,15 @@
 title: 'workbookRangeView: intervalo'
 description: Retorne o intervalo associado com o recurso rangeView.
 author: lumine2008
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: excel
 doc_type: apiPageType
-ms.openlocfilehash: 1d9b1486971ad03496f889ac429af4e7501b0dd4
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: a7a590ffbee6228105595b2206b78cc401f9fb64
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52051687"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60945968"
 ---
 # <a name="workbookrangeview-range"></a>workbookRangeView: intervalo
 
@@ -82,7 +82,7 @@ GET https://graph.microsoft.com/beta/drive/root/workbook/worksheets/{id}/range(a
 
 
 ##### <a name="response"></a>Resposta
-Veja a seguir um exemplo da resposta. Observação: o objeto de resposta mostrado aqui pode ser encurtado para legibilidade.
+Aqui está um exemplo da resposta. Observação: o objeto de resposta mostrado aqui pode ser reduzido para facilitar a leitura.
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -91,7 +91,6 @@ Veja a seguir um exemplo da resposta. Observação: o objeto de resposta mostrad
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 157
 
 {
   "address": "address-value",

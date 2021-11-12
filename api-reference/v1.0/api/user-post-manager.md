@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: jpettere
 ms.prod: users
 doc_type: apiPageType
-ms.openlocfilehash: 15c0d3a2013c48c337c5c2691ad2d22cd4510cd8
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 151b97924504d65f46ea34cae0d4f85cedfbeb32
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59109702"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60940173"
 ---
 # <a name="assign-manager"></a>Atribuir gerente
 
@@ -59,7 +59,6 @@ Este é um exemplo de solicitação.
 ```http
 PUT https://graph.microsoft.com/v1.0/users/{id}/manager/$ref
 Content-type: application/json
-Content-length: xxx
 
 {
   "@odata.id": "https://graph.microsoft.com/v1.0/users/{id}"

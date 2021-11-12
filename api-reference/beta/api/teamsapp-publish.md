@@ -5,12 +5,12 @@ author: nkramer
 ms.localizationpriority: medium
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 909d6dd75951ac2758ac162c78a51d1849bb5add
-ms.sourcegitcommit: f4999aa6fc05f845027db01aa489f7086f9850e1
+ms.openlocfilehash: 28d55db2fb94a6e7f42a36d639c02add0dfb15dd
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/13/2021
-ms.locfileid: "60288934"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60947074"
 ---
 # <a name="publish-teamsapp"></a>Publicar teamsApp
 
@@ -87,7 +87,6 @@ Se tiver êxito, este método retornará um `200 OK` código de resposta e um ob
 ```http
 POST https://graph.microsoft.com/beta/appCatalogs/teamsApps
 Content-type: application/zip
-Content-length: 244
 
 [Zip file containing a Teams app package]
 ```
@@ -139,7 +138,6 @@ Content-Type: application/json
 ```http
 POST https://graph.microsoft.com/beta/appCatalogs/teamsApps?requiresReview=true
 Content-type: application/zip
-Content-length: 244
 ```
 
 # <a name="javascript"></a>[JavaScript](#tab/javascript)

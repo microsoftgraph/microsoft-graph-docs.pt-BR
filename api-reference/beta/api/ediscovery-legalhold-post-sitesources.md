@@ -2,15 +2,15 @@
 title: Criar site legalHoldSource
 description: Criar um novo objeto legalHold siteSource.
 author: mahage-msft
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: ediscovery
 doc_type: apiPageType
-ms.openlocfilehash: bca1f4c54593cc92f9b085bc86669981974e4432
-ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
+ms.openlocfilehash: 69c36bcaafbc1e97b81584f0bb6ad6bb8c5c54a6
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "50952449"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60945623"
 ---
 # <a name="create-legalhold-sitesource"></a>Criar site legalHoldSource
 
@@ -27,7 +27,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |Tipo de permissão|Permissões (da com menos para a com mais privilégios)|
 |:---|:---|
 |Delegado (conta corporativa ou de estudante)|eDiscovery.Read.All, eDiscovery.ReadWrite.All|
-|Delegado (conta pessoal da Microsoft)|Sem suporte.|
+|Delegada (conta pessoal da Microsoft)|Sem suporte.|
 |Aplicativo|Sem suporte.|
 
 ## <a name="http-request"></a>Solicitação HTTP
@@ -56,7 +56,7 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar [o siteS
 
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|site@odata.bind|Cadeia de caracteres|ID do site, que você pode obter do recurso [de site](../resources/site.md) usando o método Obter um recurso de [site por](../api/site-getbypath.md) caminho. O uso é {hostname}:/{relative-path}. Para a URL do `https://contoso.sharepoint.com/sites/HumanResources` site, a solicitação do Microsoft Graph seria `https://graph.microsoft.com/v1.0/sites/contoso.sharepoint.com:/sites/HumanResources` . A ID é o primeiro GUID listado no campo ID.  Para a URL do site do OneDrive for `https://contoso-my.sharepoint.com/personal/adelev_contoso_com` business, a solicitação do Microsoft Graph seria `https://graph.microsoft.com/v1.0/sites/contoso-my.sharepoint.com:/personal/adelev_contoso_com` |
+|site|Cadeia de caracteres|URL do site; por exemplo, `https://contoso.sharepoint.com/sites/HumanResources` .|
 
 ## <a name="response"></a>Resposta
 
@@ -77,10 +77,11 @@ Se tiver êxito, este método retornará um código de resposta e um `201 Create
 ``` http
 POST https://graph.microsoft.com/beta/compliance/ediscovery/cases/c816dd6f-5af8-40c5-a760-331361e05c60/legalHolds/387566cc-38ae-4e85-ab4b-cd2dd34faa07/siteSources
 Content-Type: application/json
-Content-length: 154
 
 {
-    "site@odata.bind": "https://graph.microsoft.com/v1.0/sites/50073f3e-cb22-48e5-95a9-51a3da455181"
+    "site": {
+        "webUrl": "https://contoso.sharepoint.com/sites/SecretSite"
+    }
 }
 ```
 # <a name="c"></a>[C#](#tab/csharp)
@@ -102,6 +103,8 @@ Content-length: 154
 ---
 
 
+---
+
 ### <a name="response"></a>Resposta
 
 **Observação:** o objeto de resposta mostrado aqui pode ser encurtado para legibilidade.
@@ -117,14 +120,14 @@ HTTP/1.1 201 Created
 Content-Type: application/json
 
 {
-    "@odata.context": "https://graph.microsoft.com/beta/$metadata#compliance/ediscovery/cases('c816dd6f-5af8-40c5-a760-331361e05c60')/legalHolds('387566cc-38ae-4e85-ab4b-cd2dd34faa07')/siteSources/$entity",
-    "displayName": "Adele Vance",
-    "createdDateTime": "2020-12-28T20:08:57.857Z",
-    "id": "50073f3e-cb22-48e5-95a9-51a3da455181",
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#compliance/ediscovery/cases('15d80234-8320-4f10-96d0-d98d53ffdfc9')/legalHolds('644db9d3-5a67-4ca0-aa1c-0cca02168875')/siteSources/$entity",
+    "displayName": "Secret Site",
+    "createdDateTime": "2021-08-11T23:17:31.687Z",
+    "id": "32443932-4343-3545-3339-373031353742",
     "createdBy": {
         "user": {
             "id": null,
-            "displayName": "EDiscovery admin"
+            "displayName": "Edisco Admin"
         }
     }
 }

@@ -2,15 +2,15 @@
 title: Criar taskDefinition
 description: Crie uma nova definição de tarefa.
 author: braedenp-msft
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: universal-print
 doc_type: apiPageType
-ms.openlocfilehash: 2e6a9eaca89e7ec68d2eee2053ead369cbcd5831
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: 7f210df1ecc122b18df3e0b1d19cabe32ed11a8f
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52053619"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60946675"
 ---
 # <a name="create-taskdefinition"></a>Criar taskDefinition
 
@@ -31,7 +31,7 @@ Além das permissões a seguir, o locatário do usuário deve ter uma assinatura
 |:---------------|:--------------------------------------------|
 |Delegado (conta corporativa ou de estudante)| Sem suporte. |
 |Delegado (conta pessoal da Microsoft)|Sem suporte.|
-|Application| PrintTaskDefinition.ReadWrite.All |
+|Aplicativo| PrintTaskDefinition.ReadWrite.All |
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- { "blockType": "ignored" } -->
@@ -65,7 +65,6 @@ Este é um exemplo de solicitação.
 ```msgraph-interactive
 POST https://graph.microsoft.com/beta/print/taskDefinitions
 Content-type: application/json
-Content-length: 122
 
 {
   "displayName": "Test TaskDefinitionName",
@@ -106,7 +105,6 @@ Este é um exemplo de resposta.
 ```http
 HTTP/1.1 201 Created
 Content-type: application/json
-Content-length: 322
 
 {
   "@odata.context": "https://graph.microsoft.com/beta/$metadata#print/taskDefinitions/$entity",

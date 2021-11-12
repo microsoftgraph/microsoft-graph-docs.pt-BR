@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: kevinbellinger
 ms.prod: people
 doc_type: apiPageType
-ms.openlocfilehash: 1b252758a35bec30f19480d37b2ab3d41857c857
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 0ab52e995a6d190c0bcc2af6de6c7ac043cc291e
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59138292"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60947179"
 ---
 # <a name="create-itempublication"></a>Criar itemPublication
 Namespace: microsoft.graph
@@ -50,7 +50,7 @@ A tabela a seguir mostra as propriedades que são possíveis de definir ao criar
 
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|allowedAudiences|Cadeia de Caracteres|As audiências que são capazes de ver os valores contidos na entidade. Herdado [do itemFacet](../resources/itemfacet.md). Os valores possíveis são: `me`, `family`, `contacts`, `groupMembers`, `organization`, `federatedOrganizations`, `everyone`, `unknownFutureValue`.|
+|allowedAudiences|Cadeia de caracteres|As audiências que são capazes de ver os valores contidos na entidade. Herdado [do itemFacet](../resources/itemfacet.md). Os valores possíveis são: `me`, `family`, `contacts`, `groupMembers`, `organization`, `federatedOrganizations`, `everyone`, `unknownFutureValue`.|
 |createdBy|[identitySet](../resources/identityset.md)|Fornece o identificador do usuário e/ou aplicativo que criou a entidade. Herdado [do itemFacet](../resources/itemfacet.md).|
 |createdDateTime|DateTimeOffset|Fornece a dataTimeOffset para quando a entidade foi criada. Herdado [do itemFacet](../resources/itemfacet.md).|
 |description    |Cadeia de caracteres      |Descrição da publicação.                   |
@@ -62,7 +62,7 @@ A tabela a seguir mostra as propriedades que são possíveis de definir ao criar
 |publishedDate  |Data        |A data em que a publicação foi publicada.      |
 |publicador      |String      |Publicação ou Publisher para a publicação.     |
 |source|[personDataSource](../resources/persondatasource.md)|Onde os valores se originaram se sincronizados de outro serviço. Herdado [do itemFacet](../resources/itemfacet.md).|
-|thumbnailUrl   |Cadeia de Caracteres      |URL fazendo referência a uma miniatura da publicação.   |
+|thumbnailUrl   |Cadeia de caracteres      |URL fazendo referência a uma miniatura da publicação.   |
 |webUrl         |String      |URL fazendo referência à publicação.                  |
 
 ## <a name="response"></a>Resposta
@@ -80,7 +80,6 @@ Se tiver êxito, este método retornará um código `201 Created` de resposta e 
 ``` http
 POST https://graph.microsoft.com/beta/me/profile/publications
 Content-Type: application/json
-Content-length: 497
 
 {
   "description": "One persons journey to the top of the branding management field.",

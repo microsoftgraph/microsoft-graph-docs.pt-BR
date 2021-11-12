@@ -5,12 +5,12 @@ author: DougKirschner
 ms.localizationpriority: medium
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: f9ac818cc3f65de72938f6afb276cd08cb33f930
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 55a7d2b20ce3d4b1ad90e752c2c5835c5c7bbbff
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59056897"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60935106"
 ---
 # <a name="update-administrativeunit"></a>Atualizar administrativeunit
 
@@ -23,7 +23,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegada (conta corporativa ou de estudante) | AdministrativeUnit.ReadWrite.All, Directory.AccessAsUser.All    |
+|Delegado (conta corporativa ou de estudante) | AdministrativeUnit.ReadWrite.All, Directory.AccessAsUser.All    |
 |Delegada (conta pessoal da Microsoft) | Sem suporte.    |
 |Aplicativo | AdministrativeUnit.ReadWrite.All |
 
@@ -47,7 +47,7 @@ No corpo da solicitação, forneça os valores para os campos relevantes que dev
 | Propriedade   | Tipo |Descrição|
 |:---------------|:--------|:----------|
 |description|string|Descrição da unidade administrativa.|
-|displayName|cadeia de caracteres|Nome de exibição da unidade administrativa.|
+|displayName|string|Nome de exibição da unidade administrativa.|
 |visibilidade|string|Visibilidade da unidade administrativa. Se não for definido, o padrão será "público". Pode ser definido como "HiddenMembership", que oculta a associação de não membros.|
 
 Como o **recurso administrativeUnit** dá suporte a extensões, você pode usar a operação para adicionar, atualizar ou excluir seus próprios dados específicos do aplicativo em propriedades [personalizadas](/graph/extensibility-overview)de uma extensão em uma instância `PATCH` **administrativeUnit** existente.
@@ -69,7 +69,6 @@ Se tiver êxito, este método retornará um código de resposta `204 No Content`
 ```http
 PATCH https://graph.microsoft.com/v1.0/directory/administrativeUnits/{id}
 Content-type: application/json
-Content-length: 114
 
 {
   "displayName": "displayName-value",

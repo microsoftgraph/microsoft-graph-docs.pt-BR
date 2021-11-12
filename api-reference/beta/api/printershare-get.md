@@ -2,15 +2,15 @@
 title: Get printerShare
 description: Recupere as propriedades e as relações de um compartilhamento de impressora.
 author: braedenp-msft
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: cloud-printing
 doc_type: apiPageType
-ms.openlocfilehash: 046d5a107ea2b92adf17bb24f585138764757b50
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: 948975def7e66230fd10aabd052311c4a90b547a
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52037484"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60939333"
 ---
 # <a name="get-printershare"></a>Get printerShare
 
@@ -28,8 +28,8 @@ Além das permissões a seguir, o usuário ou locatário do aplicativo deve ter 
 |Tipo de permissão | Permissões (da com menos para a com mais privilégios) |
 |:---------------|:--------------------------------------------|
 |Delegado (conta corporativa ou de estudante)| PrinterShare.ReadBasic.All, PrinterShare.Read.All, PrinterShare.ReadWrite.All |
-|Delegado (conta pessoal da Microsoft)|Sem suporte.|
-|Application|Sem suporte.|
+|Delegada (conta pessoal da Microsoft)|Sem suporte.|
+|Aplicativo|Sem suporte.|
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- { "blockType": "ignored" } -->
@@ -101,7 +101,6 @@ Este é um exemplo de resposta.
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 225
 
 {
   "@odata.context": "https://graph.microsoft.com/beta/$metadata#print/shares/$entity",
@@ -121,7 +120,6 @@ A seguir, um exemplo da resposta, ao usar $select=id,displayName,capabilities
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 1313
 
 {
   "@odata.context": "https://graph.microsoft.com/beta/$metadata#print/shares/$entity",

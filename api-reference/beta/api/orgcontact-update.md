@@ -1,16 +1,16 @@
 ---
 title: Atualizar orgcontact
 description: Atualize as propriedades do objeto orgcontact.
-localization_priority: Normal
+ms.localizationpriority: medium
 author: dkershaw10
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: 26396518b40023e7a4b5666fb1d00b4effd83546
-ms.sourcegitcommit: 94c4acf8bd03c10a44b12952b6cb4827df55b978
+ms.openlocfilehash: d652b33ab34ebc98f423a1bc4c35fb5c2ee63407
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/06/2021
-ms.locfileid: "52785239"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60939459"
 ---
 # <a name="update-orgcontact"></a>Atualizar orgcontact
 
@@ -19,7 +19,7 @@ Namespace: microsoft.graph
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Atualize as propriedades do objeto orgcontact.
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
@@ -43,23 +43,23 @@ No corpo da solicitação, forneça os valores para os campos relevantes que dev
 
 | Propriedade     | Tipo   |Descrição|
 |:---------------|:--------|:----------|
-|city|String||
-|country|String||
+|city|Cadeia de caracteres||
+|country|Cadeia de caracteres||
 |department|String||
-|onPremisesSyncEnabled|Booliano||
-|displayName|String||
-|givenName|String||
+|onPremisesSyncEnabled|Boolean||
+|displayName|Cadeia de caracteres||
+|givenName|Cadeia de caracteres||
 |jobTitle|String||
 |onPremisesLastSyncDateTime|DateTimeOffset||
 |email|String||
 |mailNickname|String||
 |mobilePhone|String||
 |officeLocation|String||
-|postalCode|String||
+|postalCode|Cadeia de caracteres||
 |proxyAddresses|String||
-|estado|String||
+|state|Cadeia de caracteres||
 |streetAddress|String||
-|surname|String||
+|surname|Cadeia de caracteres||
 |businessPhones|Coleção de cadeias de caracteres||
 
 ## <a name="response"></a>Resposta
@@ -78,7 +78,6 @@ Este é um exemplo de solicitação.
 ```http
 PATCH https://graph.microsoft.com/beta/contacts/{id}
 Content-type: application/json
-Content-length: 222
 
 {
   "businessPhones": [

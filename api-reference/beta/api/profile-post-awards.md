@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: kevinbellinger
 ms.prod: people
 doc_type: apiPageType
-ms.openlocfilehash: 829d3a5fb1ddb4ef14d7e6896881131782ffc36d
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: e91d6a983196b94a4b33d11881f138ff586e7fb8
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59027453"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60947200"
 ---
 # <a name="create-personaward"></a>Criar personAward
 
@@ -53,7 +53,7 @@ A tabela a seguir mostra as propriedades que são possíveis de definir ao criar
 |:---|:---|:---|
 |allowedAudiences|Cadeia de caracteres|As audiências que são capazes de ver os valores contidos na entidade. Herdado [do itemFacet](../resources/itemfacet.md). Os valores possíveis são: `me`, `family`, `contacts`, `groupMembers`, `organization`, `federatedOrganizations`, `everyone`, `unknownFutureValue`.|
 |description|Cadeia de caracteres|Descpription of the award or honor. |
-|displayName|String|Nome do prêmio ou da honra. |
+|displayName|Cadeia de caracteres|Nome do prêmio ou da honra. |
 |inferência|[inferenceData](../resources/inferencedata.md)|Contém detalhes de inferência se a entidade for inferida pelo aplicativo de criação ou modificação. Herdado [do itemFacet](../resources/itemfacet.md).|
 |issuedDate|Data|A data em que o prêmio ou a honra foi concedido. |
 |issuingAuthority|Cadeia de caracteres|Autoridade que concedeu o prêmio ou a honra.  |
@@ -76,7 +76,6 @@ Se tiver êxito, este método retornará um código `201 Created` de resposta e 
 ``` http
 POST https://graph.microsoft.com/beta/me/profile/awards
 Content-Type: application/json
-Content-length: 497
 
 {
   "description": "Lifetime Achievement award from the International Association of Branding Managers",

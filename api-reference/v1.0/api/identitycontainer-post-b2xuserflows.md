@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 doc_type: apiPageType
 author: jkdouglas
 ms.prod: identity-and-sign-in
-ms.openlocfilehash: 09bb79e8d21aead6fd0ff126cc7c92ad8eaf9ced
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 661cdd8d6b5ef995cd14898a23f75cf85f75246d
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59016635"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60940687"
 ---
 # <a name="create-b2xidentityuserflow"></a>Criar b2xIdentityUserFlow
 
@@ -24,7 +24,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegada (conta corporativa ou de estudante)|IdentityUserFlow.ReadWrite.All|
+|Delegado (conta corporativa ou de estudante)|IdentityUserFlow.ReadWrite.All|
 |Delegada (conta pessoal da Microsoft)| Sem suporte.|
 |Aplicativo|IdentityUserFlow.ReadWrite.All|
 
@@ -82,7 +82,6 @@ Este é um exemplo de solicitação.
 ``` http
 POST https://graph.microsoft.com/v1.0/identity/b2xUserFlows
 Content-type: application/json
-Content-length: 154
 
 {
     "id": "Partner",
@@ -150,7 +149,6 @@ Este é um exemplo de solicitação.
 ``` http
 POST https://graph.microsoft.com/v1.0/identity/b2xUserFlows
 Content-type: application/json
-Content-length: 154
 
 {
     "id": "Partner",
@@ -225,7 +223,6 @@ Este é um exemplo de solicitação.
 ``` http
 POST https://graph.microsoft.com/v1.0/identity/b2xUserFlows
 Content-type: application/json
-Content-length: 154
 
 {
     "id": "UserFlowWithAPIConnector",

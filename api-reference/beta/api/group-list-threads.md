@@ -2,15 +2,15 @@
 title: Listar threads
 description: Obter todos os threads de um grupo.
 author: Jordanndahl
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: fe5bdb397a991d546f3296587f13f95e2439a1d8
-ms.sourcegitcommit: 4fa6fcc058c7f8d8cad58c0b82db23d6c7da37d2
+ms.openlocfilehash: 0d7c6e31e282d415901ee445ab6bee326a8acc09
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/27/2021
-ms.locfileid: "52681491"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60934119"
 ---
 # <a name="list-threads"></a>Listar threads
 
@@ -94,33 +94,19 @@ Este é um exemplo de resposta.
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 536
 
 {
   "value": [
     {
-      "toRecipients": [
-        {
-          "emailAddress": {
-            "name": "name-value",
-            "address": "address-value"
-          }
-        }
-      ],
+      "id": "thread-id",
       "topic": "topic-value",
       "hasAttachments": true,
-      "lastDeliveredDateTime": "2016-10-19T10:37:00Z",
+      "lastDeliveredDateTime": "datetime-value",
       "uniqueSenders": [
         "uniqueSenders-value"
       ],
-      "ccRecipients": [
-        {
-          "emailAddress": {
-            "name": "name-value",
-            "address": "address-value"
-          }
-        }
-      ]
+      "preview": "preview-value",
+      "isLocked": false
     }
   ]
 }

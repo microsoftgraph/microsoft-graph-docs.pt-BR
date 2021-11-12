@@ -2,15 +2,15 @@
 title: Atualizar charttitle
 description: Atualiza as propriedades do objeto charttitle.
 author: lumine2008
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: excel
 doc_type: apiPageType
-ms.openlocfilehash: 925308e4c68f6479f7da0059f077eb411edd4724
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: 5c2a39c02fbdf4030ea2ef4647054e97470dc093
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52047305"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60946311"
 ---
 # <a name="update-charttitle"></a>Atualizar charttitle
 
@@ -64,7 +64,6 @@ Este é um exemplo da solicitação.
 ```http
 PATCH https://graph.microsoft.com/beta/me/drive/items/{id}/workbook/worksheets/{id|name}/charts/{name}/title
 Content-type: application/json
-Content-length: 64
 
 {
   "overlay": true,
@@ -91,7 +90,7 @@ Content-length: 64
 ---
 
 ##### <a name="response"></a>Resposta
-Veja a seguir um exemplo da resposta. Observação: o objeto de resposta mostrado aqui pode ser encurtado para legibilidade.
+Aqui está um exemplo da resposta. Observação: o objeto de resposta mostrado aqui pode ser reduzido para facilitar a leitura.
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -100,7 +99,6 @@ Veja a seguir um exemplo da resposta. Observação: o objeto de resposta mostrad
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 64
 
 {
   "overlay": true,

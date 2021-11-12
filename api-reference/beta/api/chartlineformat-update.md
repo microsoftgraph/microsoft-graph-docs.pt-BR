@@ -2,15 +2,15 @@
 title: Atualizar chartlineformat
 description: Atualiza as propriedades do objeto chartlineformat.
 author: lumine2008
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: excel
 doc_type: apiPageType
-ms.openlocfilehash: f1db3f2a6d57eb7ec944d85c87ba0a8bda21f48a
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: 53ca765dd1f4df895318f62a9e8f50202061cff0
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52047382"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60934720"
 ---
 # <a name="update-chartlineformat"></a>Atualizar chartlineformat
 
@@ -66,7 +66,6 @@ Este é um exemplo da solicitação.
 ```http
 PATCH https://graph.microsoft.com/beta/me/drive/items/{id}/workbook/worksheets/{id|name}/charts/{name}/axes/seriesaxis/format/line
 Content-type: application/json
-Content-length: 28
 
 {
   "color": "color-value"
@@ -91,7 +90,7 @@ Content-length: 28
 ---
 
 ##### <a name="response"></a>Resposta
-Veja a seguir um exemplo da resposta. Observação: o objeto de resposta mostrado aqui pode ser encurtado para legibilidade.
+Aqui está um exemplo da resposta. Observação: o objeto de resposta mostrado aqui pode ser reduzido para facilitar a leitura.
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -100,7 +99,6 @@ Veja a seguir um exemplo da resposta. Observação: o objeto de resposta mostrad
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 28
 
 {
   "color": "color-value"

@@ -1,16 +1,16 @@
 ---
 title: Obter plannerBucket
 description: Recupere as propriedades e as relações do **objeto plannerBucket.**
-localization_priority: Normal
+ms.localizationpriority: medium
 author: TarkanSevilmis
 ms.prod: planner
 doc_type: apiPageType
-ms.openlocfilehash: 6c268816f927b657cc5a674e3ebfc8c48c9e4ba7
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: f068e295c7e7e5e9e3c5274b83e5c224e93747ff
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52055320"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60939410"
 ---
 # <a name="get-plannerbucket"></a>Obter plannerBucket
 
@@ -79,7 +79,7 @@ GET https://graph.microsoft.com/beta/planner/buckets/hsOf2dhOJkqyYYZEtdzDe2QAIUC
 ---
 
 ##### <a name="response"></a>Resposta
-Veja a seguir um exemplo da resposta. Observação: o objeto de resposta mostrado aqui pode ser encurtado para legibilidade.
+Aqui está um exemplo da resposta. Observação: o objeto de resposta mostrado aqui pode ser reduzido para facilitar a leitura.
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -88,7 +88,6 @@ Veja a seguir um exemplo da resposta. Observação: o objeto de resposta mostrad
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 245
 
 {
   "name": "Advertising",

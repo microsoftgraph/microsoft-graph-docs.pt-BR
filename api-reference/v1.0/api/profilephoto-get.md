@@ -5,20 +5,18 @@ ms.localizationpriority: high
 author: kevinbellinger
 ms.prod: people
 doc_type: apiPageType
-ms.openlocfilehash: af3e8ce6aa70980fbcbb1516f302aebf74d3c7fa
-ms.sourcegitcommit: 8ae180a32dbd5a2b12512aee64699a2c23b8678b
+ms.openlocfilehash: a57a6b8a700bdbc2e81da3d0503e420e3fdaff9c
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/14/2021
-ms.locfileid: "60354753"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60940515"
 ---
 # <a name="get-photo"></a>Obter foto
 
 Namespace: microsoft.graph
 
-Obtenha a [profilePhoto](../resources/profilephoto.md) especificada ou seus metadados (propriedades de profilePhoto).
-
-> **Observação** Esta operação na versão 1.0 é compatível com caixas de correio corporativas ou de estudante ou caixas de correio não pessoais dos usuários
+Obtenha a [profilePhoto](../resources/profilephoto.md) específica ou seus metadados (propriedades **profilePhoto**).
 
 Os tamanhos suportados das fotos em HD do Microsoft 365 são os seguintes: 48x48, 64x64, 96x96, 120x120, 240x240, 360x360, 432x432, 504x504 e 648x648. As fotos podem ser de todos os tamanhos, desde que estejam armazenadas no Azure Active Directory.
 
@@ -54,9 +52,9 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |Delegado (conta pessoal da Microsoft)      |   Contacts.Read, Contacts.ReadWrite            |
 |Aplicativo      |    Contacts.Read, Contacts.ReadWrite           |
 
-> **Observação:**  
-> 1. Não há suporte para a operação de metadados em contas pessoais da Microsoft. 
-> 2. Atualmente, há um [problema conhecido](/graph/known-issues#groups) ao acessar fotos de grupo usando permissões de aplicativos.
+> **Observações:**  
+> - A operação de metadados não é suportada para contas pessoais da Microsoft. 
+> - Atualmente, há um [problema conhecido](/graph/known-issues#groups) ao acessar fotos de grupo usando permissões de aplicativos.
 
 ## <a name="http-request"></a>Solicitação HTTP
 
@@ -122,7 +120,7 @@ Se bem-sucedido, este método retorna o código de resposta `200 OK` e o objeto 
 ## <a name="examples"></a>Exemplos
 
 ### <a name="example-1-get-the-photo-for-the-signed-in-user-in-the-largest-available-size"></a>Exemplo 1: Obter a foto do usuário conectado com o maior tamanho disponível
-##### <a name="request"></a>Solicitação
+#### <a name="request"></a>Solicitação
 <!-- {
   "blockType": "ignored"
 }-->
@@ -131,11 +129,11 @@ Se bem-sucedido, este método retorna o código de resposta `200 OK` e o objeto 
 GET https://graph.microsoft.com/v1.0/me/photo/$value
 ```
 
-##### <a name="response"></a>Resposta
+#### <a name="response"></a>Resposta
 Contém os dados binários da foto solicitada. O código de resposta HTTP é 200.
 
 ### <a name="example-2-get-the-48x48-photo-for-the-signed-in-user"></a>Exemplo 2: Obtenha foto 48 x 48 para usuário conectado
-##### <a name="request"></a>Solicitação
+#### <a name="request"></a>Solicitação
 <!-- {
   "blockType": "ignored"
 }-->
@@ -145,11 +143,11 @@ GET https://graph.microsoft.com/v1.0/me/photos/48x48/$value
 Content-Type: image/jpg
 ```
 
-##### <a name="response"></a>Resposta
+#### <a name="response"></a>Resposta
 Contém os dados binários da foto 48x48 solicitada. O código de resposta HTTP é 200.
 
 ### <a name="example-3-get-the-metadata-of-the-user-photo-of-the-signed-in-user"></a>Exemplo 3: Esta solicitação obtém os metadados da foto do usuário conectado.
-##### <a name="request"></a>Solicitação
+#### <a name="request"></a>Solicitação
 <!-- {
   "blockType": "ignored"
 }-->
@@ -158,7 +156,7 @@ Contém os dados binários da foto 48x48 solicitada. O código de resposta HTTP 
 GET https://graph.microsoft.com/v1.0/me/photo
 ```
 
-##### <a name="response"></a>Resposta
+#### <a name="response"></a>Resposta
 
 Os dados de resposta a seguir mostram os metadados da foto.
 

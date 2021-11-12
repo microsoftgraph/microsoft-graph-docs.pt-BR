@@ -2,15 +2,15 @@
 title: Obter fido2AuthenticationMethod
 description: Leia as propriedades e as relações de um objeto fido2AuthenticationMethod.
 author: mmcla
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: 4b5bad06b344db8355b1c73c7bf7886517795027
-ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
+ms.openlocfilehash: c8cb5ac7e7711cc02cf31dc3353738eb4dcf1bdd
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "50959226"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60929645"
 ---
 # <a name="get-fido2authenticationmethod"></a>Obter fido2AuthenticationMethod
 Namespace: microsoft.graph
@@ -22,11 +22,21 @@ Recupere o único objeto do método de autenticação de chave de segurança [FI
 ## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
-|Tipo de permissão|Permissões agindo por si mesmo (do mínimo para o mais privilegiado)|Permissões atuando em outras pessoas (do mínimo ao mais privilegiado)|
-|:---|:---|:--|
-| Delegado (conta corporativa ou de estudante)     | UserAuthenticationMethod.Read, UserAuthenticationMethod.ReadWrite | UserAuthenticationMethod.Read.All, UserAuthenticationMethod.ReadWrite.All |
-| Delegado (conta pessoal da Microsoft) | Sem suporte. | Sem suporte. |
-| Aplicativo                            | Não aplicável. | UserAuthenticationMethod.Read.All, UserAuthenticationMethod.ReadWrite.All |
+### <a name="permissions-acting-on-self"></a>Permissões agindo em si mesmo
+
+|Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
+|:---------------------------------------|:-------------------------|
+| Delegado (conta corporativa ou de estudante)     | UserAuthenticationMethod.Read, UserAuthenticationMethod.ReadWrite |
+| Delegada (conta pessoal da Microsoft) | Sem suporte. |
+| Aplicativo                            | Sem suporte. |
+
+### <a name="permissions-acting-on-other-users"></a>Permissões atuando em outros usuários
+
+|Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
+|:---------------------------------------|:-------------------------|:-----------------|
+| Delegado (conta corporativa ou de estudante)     | UserAuthenticationMethod.Read.All, UserAuthenticationMethod.ReadWrite.All |
+| Delegada (conta pessoal da Microsoft) | Sem suporte. |
+| Aplicativo                            | UserAuthenticationMethod.Read.All, UserAuthenticationMethod.ReadWrite.All |
 
 Para cenários delegados em que um administrador está atuando em outro usuário, o administrador precisa de uma das seguintes [funções:](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles)
 
@@ -104,7 +114,6 @@ Este é um exemplo de resposta.
 ``` http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 491
 
 {
   "value": {

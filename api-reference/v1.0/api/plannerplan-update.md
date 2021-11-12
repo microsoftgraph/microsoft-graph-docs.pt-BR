@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: TarkanSevilmis
 ms.prod: planner
 doc_type: apiPageType
-ms.openlocfilehash: 096745e0037b93f93ed0223527d1f3137a4fbf75
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 5fbb205650f50194b865d0ee9b9ff47c4d5623ed
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59050205"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60946465"
 ---
 # <a name="update-plannerplan"></a>Atualizar plannerPlan
 
@@ -46,7 +46,7 @@ No corpo da solicitação, fornece os valores para campos relevantes a ser atual
 | Propriedade     | Tipo   |Descrição|
 |:---------------|:--------|:----------|
 |owner|Cadeia de caracteres|[Grupo](../resources/group.md) `id` pelo qual o plano pertence. Deve haver um grupo válido para que esse campo possa ser definido. Depois de definido, isso só pode ser atualizado pelo proprietário.|
-|title|String|Título do plano.|
+|title|Cadeia de caracteres|Título do plano.|
 
 ## <a name="response"></a>Resposta
 
@@ -66,7 +66,6 @@ Este é um exemplo da solicitação.
 ```http
 PATCH https://graph.microsoft.com/v1.0/planner/plans/{plan-id}
 Content-type: application/json
-Content-length: 29
 Prefer: return=representation
 If-Match: W/"JzEtVGFzayAgQEBAQEBAQEBAQEBAQEBAWCc="
 
@@ -104,7 +103,6 @@ Veja a seguir um exemplo da resposta.
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 357
 
 {
   "createdBy": {

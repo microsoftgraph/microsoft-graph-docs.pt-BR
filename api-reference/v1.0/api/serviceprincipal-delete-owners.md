@@ -5,12 +5,12 @@ author: sureshja
 ms.localizationpriority: medium
 ms.prod: applications
 doc_type: apiPageType
-ms.openlocfilehash: 6bd008288a8d43f8319b604689f87b0c7b506b2b
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 2fc33c9be0dd234477ed9aee6e138d56cb1b7344
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59110127"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60934875"
 ---
 # <a name="remove-owner"></a>Remover proprietário
 
@@ -60,7 +60,6 @@ O exemplo a seguir mostra a solicitação.
 ```http
 DELETE https://graph.microsoft.com/v1.0/servicePrincipals/{id}/owners/{id}/$ref
 Content-type: application/json
-Content-length: 30
 
 {
     "@odata.id": "https://graph.microsoft.com/v1.0/directoryObjects/{id}"

@@ -2,15 +2,15 @@
 title: Criar turno
 description: Crie um novo turno.
 author: nkramer
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: e74b00a6ec3563d5ee47b13fb4d082d6a0e9bfaf
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: fad7096cdf40930e2b20ca6bb0a5b5c511902db7
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52052730"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60946612"
 ---
 # <a name="create-shift"></a>Criar turno
 
@@ -28,7 +28,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |:--------------------|:---------------------------------------------------------|
 |Delegado (conta corporativa ou de estudante) | Group.ReadWrite.All    |
 |Delegado (conta pessoal da Microsoft) | Sem suporte.    |
-|Application | Schedule.ReadWrite.All* |
+|Aplicativo | Schedule.ReadWrite.All* |
 
 ## <a name="http-request"></a>Solicitação HTTP
 
@@ -135,7 +135,6 @@ Este é um exemplo de resposta.
 ```http
 HTTP/1.1 201 Created
 Content-type: application/json
-Content-length: 401
 
 {
   "id": "SHFT_577b75d2-a927-48c0-a5d1-dc984894e7b8",

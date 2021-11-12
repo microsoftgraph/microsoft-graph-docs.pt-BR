@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: dkershaw10
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: 8695b1f93c3b68861ba467f0327ba4b61fea11a6
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 5ab0588ec9437fea3277b8927998a681a934486f
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59085319"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60924380"
 ---
 # <a name="post-forward"></a>post: forward
 
@@ -64,7 +64,6 @@ Este é um exemplo da solicitação.
 ```http
 POST https://graph.microsoft.com/v1.0/groups/{id}/threads/{id}/posts/{id}/forward
 Content-type: application/json
-Content-length: 166
 
 {
   "comment": "comment-value",

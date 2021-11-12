@@ -2,15 +2,15 @@
 title: 'Chart: setPosition'
 description: Posiciona o gráfico em relação às células na planilha.
 author: lumine2008
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: excel
 doc_type: apiPageType
-ms.openlocfilehash: 03078c00054f2efd683eff85973302319b5a2efb
-ms.sourcegitcommit: 94c4acf8bd03c10a44b12952b6cb4827df55b978
+ms.openlocfilehash: 4d7771e684db332a8ab0235c2b1dcbc04ac6c48a
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/06/2021
-ms.locfileid: "52786532"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60938997"
 ---
 # <a name="chart-setposition"></a>Chart: setPosition
 
@@ -19,7 +19,7 @@ Namespace: microsoft.graph
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Posiciona o gráfico em relação às células na planilha.
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
@@ -66,7 +66,6 @@ Este é um exemplo da solicitação.
 ```http
 POST https://graph.microsoft.com/beta/me/drive/items/{id}/workbook/worksheets/{id|name}/charts/{name}/setPosition
 Content-type: application/json
-Content-length: 66
 
 {
   "startCell": "startCell-value",

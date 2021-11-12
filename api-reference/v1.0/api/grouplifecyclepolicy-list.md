@@ -5,12 +5,12 @@ author: Jordanndahl
 ms.localizationpriority: medium
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: 67f067d7d5b963f6c47dcbe2bf14955724ff3749
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: ba134a047092bcc66daa92c9f4a887dc54f05159
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59073986"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60947591"
 ---
 # <a name="list-grouplifecyclepolicies"></a>Listar groupLifecyclePolicies
 
@@ -25,7 +25,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegada (conta corporativa ou de estudante) | Directory.Read.All ou Directory.ReadWrite.All |
+|Delegado (conta corporativa ou de estudante) | Directory.Read.All ou Directory.ReadWrite.All |
 |Delegada (conta pessoal da Microsoft) | Sem suporte.    |
 |Aplicativo | Directory.Read.All ou Directory.ReadWrite.All |
 
@@ -92,7 +92,6 @@ Observação: o objeto de resposta exibido aqui pode ser encurtado para legibili
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 223
 
 {
   "value": [

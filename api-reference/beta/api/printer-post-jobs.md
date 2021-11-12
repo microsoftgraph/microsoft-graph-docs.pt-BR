@@ -2,15 +2,15 @@
 title: Criar printJob para uma impressora
 description: Crie um novo printJob para uma impressora.
 author: braedenp-msft
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: cloud-printing
 doc_type: apiPageType
-ms.openlocfilehash: 184df511478c7553830480e2006203991279d4b4
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: 81d796a94897a73f96979990bb4d0d79523bf5a3
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52052030"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60938564"
 ---
 # <a name="create-printjob-for-a-printer"></a>Criar printJob para uma impressora
 
@@ -28,8 +28,8 @@ Além das permissões a seguir, o usuário ou locatário do aplicativo deve ter 
 |Tipo de permissão | Permissões (da com menos para a com mais privilégios) |
 |:---------------|:--------------------------------------------|
 |Delegado (conta corporativa ou de estudante)| PrintJob.Create, PrintJob.ReadWriteBasic, PrintJob.ReadWrite, PrintJob.ReadWriteBasic.All, PrintJob.ReadWrite.All |
-|Delegado (conta pessoal da Microsoft)|Sem suporte.|
-|Application| Sem suporte. |
+|Delegada (conta pessoal da Microsoft)|Sem suporte.|
+|Aplicativo| Sem suporte. |
 
 ## <a name="http-request"></a>Solicitação HTTP
 
@@ -130,7 +130,6 @@ Este é um exemplo de resposta.
 ```http
 HTTP/1.1 201 Created
 Content-type: application/json
-Content-length: 1065
 
 {
   "@odata.context": "https://graph.microsoft.com/beta/$metadata#print/printJobs/$entity",
