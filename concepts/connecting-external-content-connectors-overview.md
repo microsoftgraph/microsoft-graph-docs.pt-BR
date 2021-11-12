@@ -5,12 +5,12 @@ author: mecampos
 ms.localizationpriority: high
 doc_type: conceptualPageType
 ms.prod: search
-ms.openlocfilehash: d17c187ed45194c3f99572202d50c7339e70f730
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: cb8f2a6aa239788c030c5ba6c5e78e3e26a19eeb
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59139307"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60931254"
 ---
 # <a name="microsoft-graph-connectors-overview"></a>Visão geral dos conectores do Microsoft Graph
 
@@ -31,14 +31,13 @@ O diagrama a seguir fornece uma visão geral de alto nível dos conectores do Mi
 
 Os mais de 100 conectores atualmente disponíveis na Microsoft e nos parceiros permitem que você se conecte aos serviços Microsoft e não-Microsoft populares. Exemplos de conectores existentes incluem os serviços Azure, Box, ServiceNow, Salesforce, serviços Google, MediaWiki, e muito mais.
 
-Para saber mais sobre os conectores existentes do Microsoft Graph, visite a [galeria de conectores do Microsoft Graph](/microsoftsearch/connectors-gallery).
+Para saber mais sobre os conectores existentes do Microsoft Graph, visite a [galeria de conectores do Microsoft Graph](/microsoft-search/connectors).
 
-Embora esses conectores ajudem a se conectar aos serviços populares, talvez você queira integrar com serviços que não estão disponíveis na [galeria de conectores](/microsoftsearch/connectors-gallery) existente. Você pode usar a API de conectores do Microsoft Graph para criar conectores personalizados para trazer seus dados externos para experiências do Microsoft 365, incluindo a Pesquisa da Microsoft, Viva Topics e muito mais (em breve), dentro de sua organização.
+Embora esses conectores ajudem a se conectar aos serviços populares, talvez você queira integrar com serviços que não estão disponíveis na [galeria de conectores](/microsoft-search/connectors) existente. Você pode usar a API de conectores do Microsoft Graph para criar conectores personalizados para trazer seus dados externos para experiências do Microsoft 365, incluindo a Pesquisa da Microsoft, Viva Topics e muito mais (em breve), dentro de sua organização.
 
 ## <a name="get-started-with-custom-graph-connectors"></a>Começar a trabalhar com conectores Graph personalizados:
 * [Trabalhando com a API de conectores](connecting-external-content-connectors-api-overview.md)
 * [Use o Postman com a API de conectores do Microsoft Graph](connecting-external-content-connectors-api-postman.md)
-<!---**(Articles coming next)**
-* [Build your first custom connector with Microsoft Graph]()
+* [Criar seu primeiro conector Microsoft Graph personalizado](connecting-external-content-build-quickstart.yml)
 --->
 
