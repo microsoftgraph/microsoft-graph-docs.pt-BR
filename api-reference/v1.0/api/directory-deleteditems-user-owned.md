@@ -5,12 +5,12 @@ author: keylimesoda
 ms.localizationpriority: medium
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: a8cbe88fa9673ae63e7e7dd0aa6dcbe505edfda1
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: db2ceef8644af29239c875884e5003f05e96129c
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59022769"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60943910"
 ---
 # <a name="list-deleted-items-owned-by-a-user"></a>Listar itens excluídos pertencentes a um usuário
 
@@ -58,7 +58,7 @@ O corpo da solicitação requer os seguintes parâmetros:
 | Parâmetro    | Tipo |Descrição|
 |:---------------|:--------|:----------|
 |userId|Cadeia de caracteres|ID do proprietário.|
-|tipo|Cadeia de caracteres|Tipo de objetos de propriedade a retornar; `Group` atualmente é o único valor com suporte.|
+|type|Cadeia de caracteres|Tipo de objetos de propriedade a retornar; `Group` atualmente é o único valor com suporte.|
 
 
 ## <a name="response"></a>Resposta
@@ -90,7 +90,6 @@ Veja a seguir um exemplo da resposta. Observação: esse objeto de resposta pode
 ``` http
 HTTP/1.1 200
 Content-type: application/json
-Content-length: 1249
 
 {
 "value": [

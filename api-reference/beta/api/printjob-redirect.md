@@ -2,15 +2,15 @@
 title: 'printJob: redirecionamento'
 description: Redirecionar um trabalho de impressão para uma impressora diferente.
 author: braedenp-msft
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: universal-print
 doc_type: apiPageType
-ms.openlocfilehash: 916725283b86c59907ddd89e5441902fa0f8c756
-ms.sourcegitcommit: e440d855f1106390d842905d97ceb16f143db2e5
+ms.openlocfilehash: 13a2f0248aec242f8a1a34b903b10d98e2454346
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/29/2021
-ms.locfileid: "52080173"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60944785"
 ---
 # <a name="printjob-redirect"></a>printJob: redirecionamento
 
@@ -50,7 +50,7 @@ No corpo da solicitação, fornece a ID da impressora para a onde o trabalho de 
 
 | Propriedade     | Tipo        | Descrição |
 |:-------------|:------------|:------------|
-|destinationPrinterId|Cadeia de Caracteres|A ID da impressora para a que o trabalho de impressão deve ser redirecionado.|
+|destinationPrinterId|Cadeia de caracteres|A ID da impressora para a que o trabalho de impressão deve ser redirecionado.|
 |configuração|microsoft.graph.printJobConfiguration|Configuração atualizada do trabalho de impressão.|
 
 ## <a name="response"></a>Resposta
@@ -139,7 +139,6 @@ Este é um exemplo de resposta.
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 437
 
 {
   "@odata.context": "https://graph.microsoft.com/beta/$metadata#printJob",

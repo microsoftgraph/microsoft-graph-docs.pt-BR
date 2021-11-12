@@ -2,15 +2,15 @@
 title: Criar trabalho em equipeTagMember
 description: Crie um novo objeto teamworkTagMember.
 author: anniecolonna
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 9376b8ddb690d4aaee1d571c83e0d94b96482935
-ms.sourcegitcommit: a598c09b73e4e43eea5f4aaefea7ffe062e15c39
+ms.openlocfilehash: d224a8c09fd5bc442c5b921b71787151138870e3
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/22/2021
-ms.locfileid: "53534258"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60932070"
 ---
 # <a name="create-teamworktagmember"></a>Criar trabalho em equipeTagMember
 Namespace: microsoft.graph
@@ -26,7 +26,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |:---|:---|
 |Delegado (conta corporativa ou de estudante)|Sem suporte.|
 |Delegado (conta pessoal da Microsoft)|Sem suporte.|
-|Application|TeamworkTag.ReadWrite.All|
+|Aplicativo|TeamworkTag.ReadWrite.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
 
@@ -72,7 +72,6 @@ Se tiver êxito, este método retornará um código de resposta e um `201 Create
 ``` http
 POST https://graph.microsoft.com/beta/teams/53c53217-fe77-4383-bc5a-ed4937a1aecd/tags/MjQzMmI1N2ItMGFiZC00M2RiLWFhN2ItMTZlYWRkMTE1ZDM0IyM3ZDg4M2Q4Yi1hMTc5LTRkZDctOTNiMy1hOGQzZGUxYTIxMmUjI3RhY29VSjN2RGk==/members
 Content-Type: application/json
-Content-length: 144
 
 {
     "userId":"97f62344-57dc-409c-88ad-c4af14158ff5"

@@ -5,12 +5,12 @@ author: adimitui
 ms.localizationpriority: medium
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: 16423e6a04a8baeb20a3a6b800cd2c5eced762aa
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 876d3f0b72391c0988f8015171a54bcd8c66809f
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59056675"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60936415"
 ---
 # <a name="force-domain-deletion"></a>Forçar a exclusão de domínio
 
@@ -40,7 +40,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegada (conta corporativa ou de estudante) | Domain.ReadWrite.All  |
+|Delegado (conta corporativa ou de estudante) | Domain.ReadWrite.All  |
 |Delegada (conta pessoal da Microsoft) | Sem suporte.    |
 |Aplicativo | Domain.ReadWrite.All |
 
@@ -87,7 +87,6 @@ Se tiver êxito, este método retornará `HTTP/1.1 204 OK` o código de status.
 ```http
 POST https://graph.microsoft.com/v1.0/domains/{id}/forceDelete
 Content-type: application/json
-Content-length: 33
 
 {
   "disableUserAccounts": true

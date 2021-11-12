@@ -4,12 +4,12 @@ description: 'Criar um grupo que inclui uma equipe envolve as seguintes etapas: 
 author: hachandr
 ms.localizationpriority: high
 ms.prod: microsoft-teams
-ms.openlocfilehash: e236a243a9348e8fde024ce2893d5c92b8429f72
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: e9a3612482925ef27c7ecd34edd405e15718dc80
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59071634"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60925794"
 ---
 # <a name="creating-teams-and-managing-members-using-microsoft-graph"></a>Criar equipes e gerenciar membros usando o Microsoft Graph
 
@@ -58,7 +58,7 @@ Todas as equipes são apoiadas pelo Microsoft 365 groups. A maneira mais rápida
     ```http
     HTTP/1.1 200 OK
     Content-type: application/json
-    Content-length: xxx
+ 
     {
         "@odata.context":"https://graph.microsoft.com/v1.0/$metadata#groups/$entity",
         "id":"b7f968af-ca51-42f6-a77e-82c7147bc8f2"

@@ -2,15 +2,15 @@
 title: 'Chart: Image'
 description: Processa o gráfico como uma imagem codificada em base64, dimensionando o gráfico para se ajustar às dimensões especificadas.
 author: lumine2008
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: excel
 doc_type: apiPageType
-ms.openlocfilehash: 5222197d85a0b88559ffd280b125726b4aef6835
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: e45050a5f6f453b9d8619dd04c3bf29fd25d3e00
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58791779"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60936905"
 ---
 # <a name="chart-image"></a>Chart: Image
 
@@ -68,7 +68,6 @@ Aqui está um exemplo da resposta. Observação: o objeto de resposta mostrado a
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 3
 
 {
 "value" : "base-64 chart image string"

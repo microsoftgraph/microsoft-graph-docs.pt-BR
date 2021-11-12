@@ -2,15 +2,15 @@
 title: 'workbookTable: range'
 description: Obtém o objeto de intervalo associado a toda a tabela.
 author: lumine2008
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: excel
 doc_type: apiPageType
-ms.openlocfilehash: 2b9cca788d01cddb236c345b921127847ddb940e
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: 10c7dfbc18f6b56fbb7d8498de8d940acc915b5d
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52049685"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60944617"
 ---
 # <a name="workbooktable-range"></a>workbookTable: range
 
@@ -93,7 +93,6 @@ Este é um exemplo de resposta.
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 169
 
 {
   "address": "address-value",

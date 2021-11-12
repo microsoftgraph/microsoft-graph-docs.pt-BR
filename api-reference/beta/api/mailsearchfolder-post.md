@@ -1,16 +1,16 @@
 ---
 title: Criar mailSearchFolder
 description: Use essa API para criar um novo mailSearchFolder na caixa de correio do usuário especificado.
-localization_priority: Normal
+ms.localizationpriority: medium
 author: abheek-das
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 9899276551b09c7e4a4da6e6b92f046d594d5ad5
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: 2b791d4636f78c000a95d00bfd2e3d864d566881
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52051141"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60934098"
 ---
 # <a name="create-mailsearchfolder"></a>Criar mailSearchFolder
 
@@ -54,11 +54,11 @@ Forneça um objeto JSON com os seguintes parâmetros no corpo da solicitação.
 
 | Parâmetro | Tipo | Descrição |
 |:----------|:-----|:------------|
-| @odata.type | String | O tipo de pasta a ser criada. De definida como "microsoft.graph.mailSearchFolder". |
-| displayName | String | O nome de exibição da nova pasta.|
+| @odata.type | Cadeia de caracteres | O tipo de pasta a ser criada. De definida como "microsoft.graph.mailSearchFolder". |
+| displayName | Cadeia de caracteres | O nome de exibição da nova pasta.|
 | includeNestedFolders | Boolean | Indica como a hierarquia de pastas de caixa de correio deve ser percorrido na pesquisa. `true` significa que uma pesquisa profunda deve ser feita para incluir pastas filho na hierarquia de cada pasta explicitamente especificada em **sourceFolderIds**. `false` significa uma pesquisa superficial de apenas cada uma das pastas explicitamente especificadas em **sourceFolderIds**. |
-| sourceFolderIds | Conjunto de cadeias de caracteres | As pastas de caixa de correio que devem ser mineradas. |
-| filterQuery | String | A consulta OData para filtrar as mensagens. |
+| sourceFolderIds | Coleção de cadeias de caracteres | As pastas de caixa de correio que devem ser mineradas. |
+| filterQuery | Cadeia de caracteres | A consulta OData para filtrar as mensagens. |
 
 ## <a name="response"></a>Resposta
 
@@ -80,7 +80,6 @@ A seguir está um exemplo da solicitação : ele cria uma pasta de pesquisa de m
 ```http
 POST https://graph.microsoft.com/beta/me/mailfolders/AQMkADYAAAIBDAAAAA==/childfolders
 Content-type: application/json
-Content-length: 159
 
 {
   "@odata.type": "microsoft.graph.mailSearchFolder",
