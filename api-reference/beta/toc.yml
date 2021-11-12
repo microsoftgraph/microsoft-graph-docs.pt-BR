@@ -123,8 +123,6 @@ items:
             href: /graph/migrate-azure-ad-graph-deploy-test-extend?context=graph/api/beta
           - name: Perguntas frequentes sobre migração
             href: /graph/migrate-azure-ad-graph-faq?context=graph/api/beta
-          - name: Configurar permissões do Azure AD Graph
-            href: /graph/migrate-azure-ad-graph-configure-permissions?context=graph/api/beta
   - name: Usar SDKs
     items:
       - name: Visão geral
@@ -537,7 +535,7 @@ items:
                 href: api/profile-get.md
               - name: Excluir perfil do usuário
                 href: api/profile-delete.md
-          - name: Teamwork
+          - name: Trabalho em equipe
             items:
               - name: Aplicativo instalado
                 href: resources/teamsappinstallation.md
@@ -909,7 +907,7 @@ items:
                     items:
                       - name: Atribuir
                         href: api/application-post-tokenissuancepolicies.md
-                      - name: List
+                      - name: Listar
                         href: api/application-list-tokenissuancepolicies.md
                       - name: Remover
                         href: api/application-delete-tokenissuancepolicies.md
@@ -918,7 +916,7 @@ items:
                     items:
                       - name: Atribuir
                         href: api/application-post-tokenlifetimepolicies.md
-                      - name: List
+                      - name: Listar
                         href: api/application-list-tokenlifetimepolicies.md
                       - name: Remover
                         href: api/application-delete-tokenlifetimepolicies.md
@@ -1102,7 +1100,7 @@ items:
                     items:
                       - name: Atribuir
                         href: api/serviceprincipal-post-claimsmappingpolicies.md
-                      - name: List
+                      - name: Listar
                         href: api/serviceprincipal-list-claimsmappingpolicies.md
                       - name: Remover
                         href: api/serviceprincipal-delete-claimsmappingpolicies.md
@@ -1111,7 +1109,7 @@ items:
                     items:
                       - name: Atribuir
                         href: api/serviceprincipal-post-homerealmdiscoverypolicies.md
-                      - name: List
+                      - name: Listar
                         href: api/serviceprincipal-list-homerealmdiscoverypolicies.md
                       - name: Remover
                         href: api/serviceprincipal-delete-homerealmdiscoverypolicies.md
@@ -1120,7 +1118,7 @@ items:
                     items:
                       - name: Atribuir
                         href: api/application-post-tokenissuancepolicies.md
-                      - name: List
+                      - name: Listar
                         href: api/application-list-tokenissuancepolicies.md
                       - name: Remover
                         href: api/application-delete-tokenissuancepolicies.md
@@ -1129,7 +1127,7 @@ items:
                     items:
                       - name: Atribuir
                         href: api/application-post-tokenlifetimepolicies.md
-                      - name: List
+                      - name: Listar
                         href: api/application-list-tokenlifetimepolicies.md
                       - name: Remover
                         href: api/application-delete-tokenlifetimepolicies.md
@@ -1521,7 +1519,7 @@ items:
                 items:
                   - name: Session
                     href: resources/callrecords-session.md
-                  - name: List
+                  - name: Listar
                     href: api/callrecords-session-list.md
               - name: Chamadas PSTN
                 items:
@@ -9252,7 +9250,7 @@ items:
                         href: api/intune-rbac-deviceandappmanagementroledefinition-delete.md
                       - name: Atualizar
                         href: api/intune-rbac-deviceandappmanagementroledefinition-update.md
-                  - name: Identity
+                  - name: Identidade
                     href: resources/intune-rbac-identity.md
                   - name: Conjunto de identidade
                     href: resources/intune-rbac-identityset.md
@@ -9917,12 +9915,12 @@ items:
               - name: Região suportada pelo Cloud PC
                 href: resources/cloudpcsupportedregion.md
                 items:
-                  - name: List
+                  - name: Listar
                     href: api/virtualendpoint-list-supportedregions.md
               - name: Plano de serviço de computador na nuvem
                 href: resources/cloudpcserviceplan.md
                 items:
-                  - name: List
+                  - name: Listar
                     href: api/virtualendpoint-list-serviceplans.md
           - name: Atualizações do dispositivo (prévia)
             displayName: Windows updates
@@ -11258,7 +11256,7 @@ items:
                         href: api/softwareOathAuthenticationMethod-get.md
                       - name: Excluir
                         href: api/softwareOathAuthenticationMethod-delete.md
-                  - name: Microsoft Authenticator senha sem Telefone Sign-In (preterido)
+                  - name: Microsoft Authenticator Senha Telefone Sign-In (preterido)
                     href: resources/passwordlessmicrosoftauthenticatorauthenticationmethod.md
                     items:
                       - name: Listar
@@ -11668,7 +11666,7 @@ items:
                             href: api/microsoftauthenticatorauthenticationmethodconfiguration-update.md
                           - name: Excluir
                             href: api/microsoftauthenticatorauthenticationmethodconfiguration-delete.md
-                      - name: Microsoft Authenticator senha Telefone política de login (preterida)
+                      - name: Microsoft Authenticator Política de Telefone de login sem senha (preterida)
                         href: resources/passwordlessmicrosoftauthenticatorauthenticationmethodconfiguration.md
                         items:
                           - name: Obter
@@ -11863,7 +11861,7 @@ items:
                     href: api/trustframeworkkeyset-getactivekey.md
                   - name: Upload certificado
                     href: api/trustframeworkkeyset-uploadcertificate.md
-                  - name: Upload certificado PKCS12
+                  - name: Upload Certificado PKCS12
                     href: api/trustframeworkkeyset-uploadpkcs12.md
                   - name: Upload segredo
                     href: api/trustframeworkkeyset-uploadsecret.md
@@ -12231,7 +12229,7 @@ items:
                   - name: Atribuição de pacote do Access
                     href: resources/accesspackageassignment.md
                     items:
-                      - name: List
+                      - name: Listar
                         href: api/accesspackageassignment-list.md
                       - name: Filtrar pelo usuário atual
                         href: api/accesspackageassignment-filterbycurrentuser.md
@@ -12363,7 +12361,7 @@ items:
                     href: resources/privilegedidentitymanagement-root.md
                   - name: Azure AD (preterido))
                     items:
-                      - name: Microsoft Azure AD
+                      - name: Azure AD
                         href: resources/privilegedidentitymanagement-directory.md
                       - name: Função com privilégios
                         href: resources/privilegedrole.md
@@ -13122,9 +13120,9 @@ items:
           - name: Análise (visualização)
             href: resources/useranalytics.md
             items:
-              - name: Settings
+              - name: Configurações
                 items:
-                  - name: Settings
+                  - name: Configurações
                     href: resources/settings.md
                   - name: Obter configurações
                     href: api/useranalytics-get-settings.md
@@ -13260,7 +13258,7 @@ items:
                   - name: Resumo detalhado da parte de base
                     href: resources/relyingpartydetailedsummary.md
                     items:
-                      - name: List
+                      - name: Listar
                         href: api/relyingpartydetailedsummary-list.md
               - name: Entrar no aplicativo
                 items:
@@ -13810,7 +13808,7 @@ items:
                     href: api/site-delete-permission.md
           - name: Listas
             items:
-              - name: List
+              - name: Listar
                 href: resources/list.md
               - name: Obter listas em um site
                 href: api/list-list.md
@@ -13924,7 +13922,7 @@ items:
               - name: Set
                 href: resources/termstore-set.md
                 items:
-                  - name: List
+                  - name: Listar
                     href: api/termstore-group-list-sets.md
                   - name: Listar filhos
                     href: api/termstore-term-list-children.md
@@ -14467,7 +14465,7 @@ items:
                     href: api/offershiftrequest-post.md
                   - name: Obter
                     href: api/offershiftrequest-get.md
-                  - name: List
+                  - name: Listar
                     href: api/offershiftrequest-list.md
                   - name: Aprovar
                     href: api/offershiftrequest-approve.md
