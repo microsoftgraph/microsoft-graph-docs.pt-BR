@@ -1,16 +1,16 @@
 ---
 title: 'groupLifecyclePolicy: renewGroup'
 description: Renovar a expiração de um grupo. Após renovar um grupo, o período de validade é estendido de acordo com o número de dias definido na política.
-localization_priority: Normal
+ms.localizationpriority: medium
 author: Jordanndahl
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: 51f6409d5d8e1b913c8b8efa38356b0aabd3e81f
-ms.sourcegitcommit: 94c4acf8bd03c10a44b12952b6cb4827df55b978
+ms.openlocfilehash: c3579abc4b7e7769819243dd726e18718717cca2
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/06/2021
-ms.locfileid: "52786934"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60926858"
 ---
 # <a name="grouplifecyclepolicy-renewgroup"></a>groupLifecyclePolicy: renewGroup
 
@@ -22,7 +22,7 @@ Renovar a expiração de um grupo. Após renovar um grupo, o período de validad
 
 > **Observação:** Ao chamar o ponto de extremidade v1.0, use o [método Renovar grupo.](/graph/api/group-renew?view=graph-rest-1.0&preserve-view=true)
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>Permissões
 
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
  
@@ -71,7 +71,6 @@ Se bem-sucedido, este método retorna um código de resposta `204 No Content`. N
 ```http
 POST https://graph.microsoft.com/beta/groupLifecyclePolicies/renewGroup
 Content-type: application/json
-Content-length: 57
 
 {
   "groupId": "ffffffff-ffff-ffff-ffff-ffffffffffff"

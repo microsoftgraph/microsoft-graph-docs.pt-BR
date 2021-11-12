@@ -2,15 +2,15 @@
 title: 'post: reply'
 description: 'Responda a uma postagem e adicione uma nova postagem ao thread especificado em uma conversa de grupo. Você pode especificar '
 author: dkershaw10
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: 8acd39c63901dd90396ff2d44e7f206ece3bfe5a
-ms.sourcegitcommit: 7dc8ca82a8b2c25c5084e6b3121688766c9c14a6
+ms.openlocfilehash: 86e8a40e612cf4742b29d6cbd25a3eb3ecd01f98
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/02/2021
-ms.locfileid: "50072401"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60938606"
 ---
 # <a name="post-reply"></a>post: reply
 
@@ -67,7 +67,6 @@ Este é um exemplo da solicitação.
 ```http
 POST https://graph.microsoft.com/beta/groups/{id}/threads/{id}/posts/{id}/reply
 Content-type: application/json
-Content-length: 1131
 
 {
   "post": {

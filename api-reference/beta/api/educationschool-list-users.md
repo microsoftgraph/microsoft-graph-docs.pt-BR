@@ -2,15 +2,15 @@
 title: Listar educationUsers
 description: Recupere uma lista de usuários em uma escola.
 author: mmast-msft
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: e70f7fcf86d37099c56e1e6638c7358dc22032f3
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: 576a0c7b630cceef5724004dd33e2a20a179c5b5
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52043368"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60942286"
 ---
 # <a name="list-educationusers"></a>Listar educationUsers
 
@@ -27,7 +27,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |:--------------------|:---------------------------------------------------------|
 |Delegado (conta corporativa ou de estudante) |  Sem suporte.  |
 |Delegado (conta pessoal da Microsoft) |  Sem suporte.  |
-|Application | EduRoster.Read.All, EduRoster.ReadWrite.All | 
+|Aplicativo | EduRoster.Read.All, EduRoster.ReadWrite.All | 
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- { "blockType": "ignored" } -->
@@ -90,7 +90,6 @@ Este é um exemplo de resposta.
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 593
 
 {
   "value": [

@@ -1,16 +1,16 @@
 ---
 title: Adicionar Conector ao connectorGroup
 description: Use essa API para adicionar um conector a um novo connectorGroup.
-localization_priority: Normal
+ms.localizationpriority: medium
 author: japere
 ms.prod: applications
 doc_type: apiPageType
-ms.openlocfilehash: 2b3f2b5cd8813455d6a072fcdd8fecc05974d548
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: 6ce5cab018bff46070550f397cdebed06219dfbe
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52047193"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60939753"
 ---
 # <a name="add-connector-to-connectorgroup"></a>Adicionar conector a connectorGroup
 
@@ -25,7 +25,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
 |:--------------------|:---------------------------------------------------------|
 |Delegado (conta corporativa ou de estudante) | Directory.ReadWrite.All, Directory.AccessAsUser.All    |
-|Delegado (conta pessoal da Microsoft) | Sem suporte.    |
+|Delegada (conta pessoal da Microsoft) | Sem suporte.    |
 |Aplicativo | Sem suporte.  |
 
 ## <a name="http-request"></a>Solicitação HTTP
@@ -58,7 +58,6 @@ Este é um exemplo da solicitação.
 ```http
 POST https://graph.microsoft.com/beta/onPremisesPublishingProfiles/applicationProxy/connectors/{id}/memberOf/$ref
 Content-type: application/json
-Content-length: 99
 
 {
   "@odata.id": "https://graph.microsoft.com/beta/onPremisesPublishingProfiles/applicationProxy/connectorGroups/{id}"
@@ -84,7 +83,7 @@ Content-length: 99
 
 No corpo da solicitação, fornece uma representação JSON do [objeto connectorGroup.](../resources/connectorgroup.md)
 ##### <a name="response"></a>Resposta
-Veja a seguir um exemplo da resposta. Observação: o objeto de resposta mostrado aqui pode ser encurtado para legibilidade.
+Aqui está um exemplo da resposta. Observação: o objeto de resposta mostrado aqui pode ser reduzido para facilitar a leitura.
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -93,7 +92,6 @@ Veja a seguir um exemplo da resposta. Observação: o objeto de resposta mostrad
 ```http
 HTTP/1.1 201 Created
 Content-type: application/json
-Content-length: 119
 
 {
   "id": "id-value",

@@ -2,15 +2,15 @@
 title: Criar outlookTask
 description: Crie uma Outlook na pasta de tarefas especificada.
 author: mashriv
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 233e93529c2b4644a69643fd8bf1f49562765127
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: 2ac35b9ff95086c9c39fa0ca06b2d9f518d46d03
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52055432"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60946759"
 ---
 # <a name="create-outlooktask-deprecated"></a>Criar outlookTask(obsoleto)
 
@@ -31,7 +31,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
 |:--------------------|:---------------------------------------------------------|
 |Delegado (conta corporativa ou de estudante) | Tasks.ReadWrite    |
-|Delegado (conta pessoal da Microsoft) | Tasks.ReadWrite    |
+|Delegada (conta pessoal da Microsoft) | Tasks.ReadWrite    |
 |Aplicativo | Sem suporte. |
 
 ## <a name="http-request"></a>Solicitação HTTP
@@ -67,7 +67,6 @@ Este é um exemplo da solicitação.
 ```http
 POST https://graph.microsoft.com/beta/me/outlook/taskfolders('AAMkADIyAAAhrbPXAAA=')/tasks
 Content-type: application/json
-Content-length: 376
 
 {
   "subject": "Shop for dinner",
@@ -112,7 +111,6 @@ Observação: o objeto de resposta mostrado aqui pode ser encurtado para legibil
 ```http
 HTTP/1.1 201 Created
 Content-type: application/json
-Content-length: 376
 
 {
   "createdDateTime": "2016-04-22T05:44:01.2012012Z",

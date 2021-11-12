@@ -5,12 +5,12 @@ author: jewan-microsoft
 ms.localizationpriority: medium
 ms.prod: onenote
 doc_type: apiPageType
-ms.openlocfilehash: 3112a1d88651e3ddb02a8d191ee16eced0a9f6c7
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: bc5b16417d76c10c0671e7fe07508c66fab63032
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59016070"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60944477"
 ---
 # <a name="get-notebook"></a>Obter bloco de anotações
 
@@ -91,7 +91,6 @@ Veja a seguir um exemplo da resposta. Observação: O objeto response mostrado a
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 284
 
 {
   "isDefault": true,

@@ -5,12 +5,12 @@ author: mmast-msft
 ms.localizationpriority: medium
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: 9243d371e3bbdc303cf983190118ce21f92b4c93
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 32b519ab109c8f40bb774e39617a1a2b50a911b6
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59147455"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60943875"
 ---
 # <a name="add-a-student"></a>Adicionar um aluno
 
@@ -57,7 +57,6 @@ Este é um exemplo de solicitação.
 ```http
 POST https://graph.microsoft.com/v1.0/education/classes/{class-id}/members/$ref
 Content-type: application/json
-Content-length: 56
 
 {
   "@odata.id":"https://graph.microsoft.com/v1.0/education/users/13015"

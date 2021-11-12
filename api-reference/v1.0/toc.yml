@@ -119,6 +119,8 @@ items:
             href: /graph/migrate-azure-ad-graph-deploy-test-extend?context=graph/api/1.0
           - name: Perguntas frequentes sobre migração
             href: /graph/migrate-azure-ad-graph-faq?context=graph/api/1.0
+          - name: Configurar permissões do Azure AD Graph
+            href: /graph/migrate-azure-ad-graph-configure-permissions?context=graph/api/1.0
   - name: Usar SDKs
     items:
       - name: Visão geral
@@ -477,7 +479,7 @@ items:
             items:
               - name: Listar tarefas
                 href: api/planneruser-list-tasks.md
-          - name: Trabalho em equipe
+          - name: Teamwork
             items:
               - name: Aplicativo instalado
                 href: resources/teamsappinstallation.md
@@ -4859,6 +4861,8 @@ items:
                     href: resources/builtinidentityprovider.md
                   - name: Provedor de identidade social
                     href: resources/socialidentityprovider.md
+                  - name: Provedor de identidade da Apple
+                    href: resources/applemanagedidentityprovider.md
                   - name: Listar
                     href: api/identitycontainer-list-identityproviders.md
                   - name: Criar
@@ -5914,7 +5918,7 @@ items:
                     href: api/externalconnectors-externalgroup-delete.md
               - name: Membro do grupo externo
                 items:
-                  - name: Identidade
+                  - name: Identity
                     href: resources/externalconnectors-identity.md
                   - name: Criar identidade para membro
                     href: api/externalconnectors-externalgroup-post-members.md
@@ -6233,7 +6237,7 @@ items:
                 href: api/plannerprogresstaskboardtaskformat-get.md
               - name: Atualizar progresso do formato de quadro de tarefas
                 href: api/plannerprogresstaskboardtaskformat-update.md
-      - name: Trabalho em equipe
+      - name: Teamwork
         displayName: Microsoft Teams
         items:
           - name: Visão Geral

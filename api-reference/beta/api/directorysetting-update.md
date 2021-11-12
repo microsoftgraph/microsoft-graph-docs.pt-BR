@@ -2,15 +2,15 @@
 title: Atualizar uma configuração de diretório
 description: Atualize as propriedades de um objeto de configuração de diretório específico.
 author: adimitui
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: 08f6c51413f751a0ce5a2818969e253d32f5e2fe
-ms.sourcegitcommit: 94c4acf8bd03c10a44b12952b6cb4827df55b978
+ms.openlocfilehash: a1f7947bd0204e38c651232ec84eeb9503924715
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/06/2021
-ms.locfileid: "52786829"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60946304"
 ---
 # <a name="update-a-directory-setting"></a>Atualizar uma configuração de diretório
 
@@ -22,13 +22,13 @@ Atualize as propriedades de um objeto de configuração de diretório específic
 
 > **Observação**: a versão /beta dessa API só se aplica a grupos. A versão /v1.0 desta API foi renomeada para *Update groupSettings*.
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
 |:--------------------|:---------------------------------------------------------|
 |Delegado (conta corporativa ou de estudante) | Directory.ReadWrite.All, Directory.AccessAsUser.All    |
-|Delegado (conta pessoal da Microsoft) | Sem suporte.    |
+|Delegada (conta pessoal da Microsoft) | Sem suporte.    |
 |Aplicativo | Directory.ReadWrite.All |
 
 ## <a name="http-request"></a>Solicitação HTTP
@@ -66,7 +66,6 @@ Este é um exemplo da solicitação.
 ```http
 PATCH https://graph.microsoft.com/beta/settings/{id}
 Content-type: application/json
-Content-length: 178
 
 {
   "values": [

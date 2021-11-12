@@ -5,12 +5,12 @@ author: avijityadav
 ms.localizationpriority: medium
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 55870cb92aea78855844d8dd3bd3ae3ac2ef7bf0
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 5014313cb7bf58070c7b24e044adccd4392892ff
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59049813"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60941537"
 ---
 # <a name="create-todotasklist"></a>Criar todoTaskList
 Namespace: microsoft.graph
@@ -22,7 +22,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 |Tipo de permissão|Permissões (da com menos para a com mais privilégios)|
 |:---|:---|
-|Delegada (conta corporativa ou de estudante)|Tasks.ReadWrite|
+|Delegado (conta corporativa ou de estudante)|Tasks.ReadWrite|
 |Delegada (conta pessoal da Microsoft)|Tasks.ReadWrite|
 |Aplicativo|Sem suporte|
 
@@ -70,7 +70,6 @@ Se tiver êxito, este método retornará um código `201 Created` de resposta e 
 ``` http
 POST https://graph.microsoft.com/v1.0/me/todo/lists
 Content-Type: application/json
-Content-length: 60
 
 {
   "displayName": "Travel items"

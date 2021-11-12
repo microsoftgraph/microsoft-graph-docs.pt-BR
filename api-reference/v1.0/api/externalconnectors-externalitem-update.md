@@ -5,12 +5,12 @@ author: mecampos
 ms.localizationpriority: medium
 ms.prod: search
 doc_type: apiPageType
-ms.openlocfilehash: 17248dd008ca489080e3614faa0eaac0c89d6f79
-ms.sourcegitcommit: c7ff992ef63e480d070421ba99b28ee129cb6acb
+ms.openlocfilehash: cc0b1890bc37f9cdb108ddfd8c282028ff67760d
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "60688746"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60943791"
 ---
 # <a name="update-externalitem"></a>Atualizar externalItem
 Namespace: microsoft.graph.externalConnectors
@@ -25,7 +25,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |Tipo de permissão|Permissões (da com menos para a com mais privilégios)|
 |:---|:---|
 |Delegado (conta corporativa ou de estudante)|Não aplicável|
-|Delegado (conta pessoal da Microsoft)|Não aplicável|
+|Delegada (conta pessoal da Microsoft)|Não aplicável|
 |Aplicativo| ExternalItem.ReadWrite.OwnedBy, ExternalItem.ReadWrite.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
@@ -40,8 +40,8 @@ PATCH /external/connections/{connection-id}/items/{item-id}
 
 | Parâmetro     | Tipo   | Descrição                                         |
 |:--------------|:-------|:----------------------------------------------------|
-| connection-id | cadeia de caracteres | A `id` propriedade do [externalConnection que](../resources/externalconnectors-externalconnection.md) contém |
-| item-id       | cadeia de caracteres | A propriedade fornecida `id` pelo desenvolvedor do [externalItem](../resources/externalconnectors-externalitem.md). |
+| connection-id | string | A `id` propriedade do [externalConnection que](../resources/externalconnectors-externalconnection.md) contém |
+| item-id       | string | A propriedade fornecida `id` pelo desenvolvedor do [externalItem](../resources/externalconnectors-externalitem.md). |
 
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
 
@@ -88,7 +88,6 @@ Se tiver êxito, este método retornará um código de resposta e um `200 OK` [o
 ``` http
 PATCH https://graph.microsoft.com/v1.0/external/connections/contosohr/items/TSP228082938
 Content-Type: application/json
-Content-length: 360
 
 {
   "acl": [

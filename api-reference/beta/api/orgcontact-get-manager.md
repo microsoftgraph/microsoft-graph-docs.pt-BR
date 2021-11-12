@@ -1,16 +1,16 @@
 ---
 title: 'orgContact: Obter gerente'
 description: Obter o gerente do contato
-localization_priority: Normal
+ms.localizationpriority: medium
 author: dkershaw10
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: ff171910adbe92e3ed936f2ea868487e761c3b05
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: 5ff644f963434d9af99e7afd3062c15432aea461
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52055565"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60943322"
 ---
 # <a name="orgcontact-get-manager"></a>orgContact: Obter gerente
 
@@ -87,7 +87,7 @@ GET https://graph.microsoft.com/beta/contacts/{id}/manager
 
 #### <a name="response"></a>Resposta
 
-Observação: o objeto de resposta mostrado aqui pode ser encurtado para legibilidade.
+Observação: o objeto de resposta exibido aqui pode ser encurtado para legibilidade.
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -98,7 +98,6 @@ Observação: o objeto de resposta mostrado aqui pode ser encurtado para legibil
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 455
 
 {
     "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#directoryObjects/$entity",

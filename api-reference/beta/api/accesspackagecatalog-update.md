@@ -5,12 +5,12 @@ author: markwahl-msft
 ms.localizationpriority: medium
 ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: 8a7abc1ddaf03652aecf3c9dc7eb9e30af0f2b6e
-ms.sourcegitcommit: 64d27a0e3dcccc9d857e62aace4153e5d98fb3d0
+ms.openlocfilehash: 3fbdeaae5ce9f0f09ded8f47b25213183f2da3ca
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "60729644"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60940110"
 ---
 # <a name="update-accesspackagecatalog"></a>Atualizar accessPackageCatalog
 
@@ -26,7 +26,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |Tipo de permissão|Permissões (da com menos para a com mais privilégios)|
 |:---|:---|
 |Delegado (conta corporativa ou de estudante)     | EntitlementManagement.ReadWrite.All |
-|Delegado (conta pessoal da Microsoft) | Sem suporte. |
+|Delegada (conta pessoal da Microsoft) | Sem suporte. |
 |Aplicativo                            | EntitlementManagement.ReadWrite.All |
 
 ## <a name="http-request"></a>Solicitação HTTP
@@ -71,7 +71,6 @@ Se tiver êxito, este método retornará um código de resposta `204 No Content`
 ``` http
 PATCH https://graph.microsoft.com/beta/identityGovernance/entitlementManagement/accessPackageCatalogs/{accessPackageCatalogId}
 Content-Type: application/json
-Content-length: 39
 
 {
   "displayName":"Catalog One"

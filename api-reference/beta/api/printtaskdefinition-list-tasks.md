@@ -2,15 +2,15 @@
 title: Listar tarefas
 description: Recupere uma lista de tarefas associada a uma definição de tarefa.
 author: braedenp-msft
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: universal-print
 doc_type: apiPageType
-ms.openlocfilehash: e489a7a1c34a60d1f1da45d151a50e46511e6ca0
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: 8af9a8f660ad74c8308a0a5dbb63c5a8da16daa8
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52053577"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60947235"
 ---
 # <a name="list-tasks"></a>Listar tarefas
 
@@ -31,7 +31,7 @@ Além das permissões a seguir, o locatário do usuário deve ter uma assinatura
 |:---------------|:--------------------------------------------|
 |Delegado (conta corporativa ou de estudante)| Sem suporte. |
 |Delegado (conta pessoal da Microsoft)|Sem suporte.|
-|Application| PrintTaskDefinition.ReadWrite.All |
+|Aplicativo| PrintTaskDefinition.ReadWrite.All |
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- { "blockType": "ignored" } -->
@@ -100,7 +100,6 @@ Este é um exemplo de resposta.
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 429
 
 {
   "@odata.context": "https://graph.microsoft.com/beta/$metadata#Collection(microsoft.graph.printTask)",

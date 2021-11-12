@@ -1,16 +1,16 @@
 ---
 title: Obter Contrato
 description: Recupere as propriedades e as relações do objeto contract.
-localization_priority: Normal
+ms.localizationpriority: medium
 author: adimitui
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: 433ce274f281b50e1bc473e4be7722b457afcd70
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: 5c0ef2821d7b2fc82e858d00548bc1a2d2568a85
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52047053"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60938955"
 ---
 # <a name="get-contract"></a>Obter Contrato
 
@@ -87,7 +87,7 @@ GET https://graph.microsoft.com/beta/contracts/{id}
 
 
 ##### <a name="response"></a>Resposta
-Observação: o objeto de resposta mostrado aqui pode ser encurtado para legibilidade.
+Observação: o objeto de resposta exibido aqui pode ser encurtado para legibilidade.
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -96,7 +96,6 @@ Observação: o objeto de resposta mostrado aqui pode ser encurtado para legibil
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 186
 
 {
   "contractType": "contractType-value",

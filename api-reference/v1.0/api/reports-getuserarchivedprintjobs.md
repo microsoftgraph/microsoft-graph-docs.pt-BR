@@ -2,20 +2,18 @@
 title: 'reports: getUserArchivedPrintJobs'
 description: Obter uma lista de trabalhos de impressão arquivados para um usuário específico.
 author: nilakhan
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: cloud-printing
 doc_type: apiPageType
-ms.openlocfilehash: ad153a471f495d1eaab7da896a86233e03242cc22331f4646e5ea3aa0940ddd1
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 984a29220408b5c402193b3ee4cb257aa0829f6b
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54155376"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60927636"
 ---
 # <a name="reportroot-getuserarchivedprintjobs"></a>reportRoot: getUserArchivedPrintJobs
 Namespace: microsoft.graph
-
-[!INCLUDE [cloudprinting-pricing-disclaimer](../../includes/cloudprinting-pricing-disclaimer.md)]
 
 Obter uma lista de trabalhos de impressão arquivados para um usuário específico.
 

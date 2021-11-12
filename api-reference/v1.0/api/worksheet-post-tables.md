@@ -5,12 +5,12 @@ author: lumine2008
 ms.localizationpriority: medium
 ms.prod: excel
 doc_type: apiPageType
-ms.openlocfilehash: 7502d0b394d100b029f98d3b1217b4b107078f8a
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 13a673e914800bc53523ad3addbb93b8aa09feb9
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59036806"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60944302"
 ---
 # <a name="create-table"></a>Criar tabela
 
@@ -22,7 +22,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegada (conta corporativa ou de estudante) | Files.ReadWrite    |
+|Delegado (conta corporativa ou de estudante) | Files.ReadWrite    |
 |Delegada (conta pessoal da Microsoft) | Sem suporte.    |
 |Aplicativo | Sem suporte. |
 
@@ -44,7 +44,7 @@ Forneça um objeto JSON com os seguintes parâmetros no corpo da solicitação.
 
 | Parâmetro           | Tipo      |Descrição|
 |:---------------|:----------|:----------|
-| Endereço  | cadeia de caracteres| Endereço de intervalo. Se você estiver chamando essa API fora do caminho, não é necessário para prefixo de nome de `worksheets/{id or name}/tables/add` planilha no endereço. No entanto, se você estiver chamando isso fora do caminho, então fornece o nome da planilha no qual a tabela precisa `workbook/tables/add` ser criada (exemplo: `sheet1!A1:D4` )|
+| Endereço  | string| Endereço de intervalo. Se você estiver chamando essa API fora do caminho, não é necessário para prefixo de nome de `worksheets/{id or name}/tables/add` planilha no endereço. No entanto, se você estiver chamando isso fora do caminho, então fornece o nome da planilha no qual a tabela precisa `workbook/tables/add` ser criada (exemplo: `sheet1!A1:D4` )|
 | hasHeaders  | booliano|Valor booleano que indica se o intervalo tem rótulos de coluna. Se a origem não contém os headers (ou seja, quando essa propriedade for definida como false), Excel gerará automaticamente o header deslocando os dados para baixo por uma linha.|
 
 ## <a name="response"></a>Resposta
@@ -61,7 +61,6 @@ Este é um exemplo da solicitação.
 ```http
 POST https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/worksheets/{id|name}/tables/{id}/add
 Content-type: application/json
-Content-length: 109
 
 {
   "address": "A1:D8",
@@ -78,7 +77,6 @@ Aqui está um exemplo da resposta. Observação: o objeto de resposta mostrado a
 ```http
 HTTP/1.1 201 Created
 Content-type: application/json
-Content-length: 109
 
 {
   "id": "99",

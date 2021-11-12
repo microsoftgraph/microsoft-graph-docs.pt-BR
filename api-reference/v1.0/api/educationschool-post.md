@@ -5,12 +5,12 @@ author: mlafleur
 ms.localizationpriority: medium
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: 3c96a3c8a5cab46f1252c10d7d72512284c09e53
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 8fd2efb0f13aac9d80525a34485ed09138ee07f6
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59074392"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60943847"
 ---
 # <a name="create-educationschool"></a>Criar educationSchool
 
@@ -55,9 +55,9 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar [a educa
 | Propriedade             | Tipo                                               | Descrição                                                                                                                                                          |
 | :------------------- | :------------------------------------------------- | :------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | displayName          | Cadeia de caracteres                                             | Nome de exibição da escola. Herdado de [educationOrganization](../resources/educationorganization.md).                                                           |
-| description          | String                                             | Descrição da escola. Herdado de [educationOrganization](../resources/educationorganization.md).                                                            |
+| description          | Cadeia de caracteres                                             | Descrição da escola. Herdado de [educationOrganization](../resources/educationorganization.md).                                                            |
 | externalSource       | educationExternalSource                            | Fonte de onde essa organização foi criada. Herdado de [educationOrganization](../resources/educationorganization.md). Os valores possíveis são: `sis` , 'manual. |
-| externalSourceDetail | String                                             | O nome da fonte externa de onde esses recursos foram gerados.                                                                                                   |
+| externalSourceDetail | Cadeia de caracteres                                             | O nome da fonte externa de onde esses recursos foram gerados.                                                                                                   |
 | principalEmail       | Cadeia de caracteres                                             | Endereço de email da entidade de segurança.                                                                                                                                      |
 | principalName        | Cadeia de caracteres                                             | Nome da entidade de segurança.                                                                                                                                               |
 | externalPrincipalId  | Cadeia de caracteres                                             | ID da entidade de segurança no sistema de sincronização.                                                                                                                                   |
@@ -89,7 +89,6 @@ Se bem-sucedido, esse método retornará um código de resposta `201 Created` e 
 ```http
 POST https://graph.microsoft.com/v1.0/education/schools
 Content-Type: application/json
-Content-length: 583
 
 {
   "@odata.type": "#microsoft.graph.educationSchool",

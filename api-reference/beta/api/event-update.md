@@ -2,15 +2,15 @@
 title: Atualizar evento
 description: Atualizar as propriedades do objeto evento.
 author: harini84
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 50c114a0d091a84708685f10c37e21e79ef04373
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: dab816db63ef132ddb4e71f65c7f7cff9395e098
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52042475"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60945550"
 ---
 # <a name="update-event"></a>Atualizar evento
 
@@ -20,7 +20,20 @@ Namespace: microsoft.graph
 
 Atualizar as propriedades do objeto [evento](../resources/event.md).
 
-Ao atualizar o fuso horário da hora de início ou de término de um evento, primeiro [encontre os fusos horários com suporte](outlookuser-supportedtimezones.md) para garantir que você tenha definido apenas fusos horários que tenham sido configurados para o servidor de caixas de correio do usuário. 
+### <a name="notes-for-updating-specific-properties"></a>Observações para atualizar as propriedades específicas
+Observe os seguintes comportamentos ou recomendações ao atualizar as propriedades correspondentes:
+
+- atualizações de propriedade e reuniões dos **participantes**
+  - Uma atualização de evento que inclui apenas a propriedade **participantes** no corpo da solicitação envia uma atualização de reunião apenas aos participantes que foram alterados.
+  - Uma atualização de evento que remove um participante especificado como membro de uma lista de distribuição envia uma atualização de reunião a todos os participantes.
+
+- propriedade do **corpo** e reuniões online
+
+  Antes de atualizar o corpo de um evento que foi configurado como uma reunião online, primeiro deve-se obter a propriedade **corpo**, aplicar as alterações apropriadas ao conteúdo e preservar o blob de reunião para reunião online. Remover o blob de reunião do corpo de forma inadvertida desabilitará a reunião online. 
+
+- propriedades **término** e **início** e seus fusos horários
+  
+  Ao atualizar o fuso horário da hora de início ou de término de um evento, primeiro [encontre os fusos horários com suporte](outlookuser-supportedtimezones.md) para garantir que você tenha definido apenas fusos horários que tenham sido configurados para o servidor de caixas de correio do usuário. 
 
 ## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
@@ -58,13 +71,13 @@ No corpo da solicitação, forneça os valores para os campos relevantes que dev
 
 | Propriedade       | Tipo    | Descrição |
 |:---------------|:--------|:------------|
-| attendees|Attendee|A coleção de participantes do evento.|
-| corpo|ItemBody|O corpo da mensagem associada ao evento.|
+| attendees|Participante|A coleção de participantes do evento. Consulte [observações adicionais para atualizar propriedades específicas](#notes-for-updating-specific-properties).|
+| corpo|ItemBody|O corpo da mensagem associada ao evento. Consulte [observações adicionais para atualizar propriedades específicas](#notes-for-updating-specific-properties).|
 | categories|Coleção de cadeias de caracteres|As categorias associadas ao evento.|
-| end|DateTimeTimeZone|A data, a hora e o fuso horário em que o evento termina. |
+| end|DateTimeTimeZone|A data, a hora e o fuso horário em que o evento termina. Consulte [observações adicionais para atualizar propriedades específicas](#notes-for-updating-specific-properties). |
 |hideAttendees|Booliano|Quando definido como `true`, cada participante só se vê na solicitação de reunião e na lista de **Rastreamento** da reunião. O padrão é falso.|
-| importance|String|A importância do evento. Os valores possíveis são: `low`, `normal`, `high`.|
-| isAllDay|Booliano|Defina como true se o evento durar o dia inteiro. Se estiver definido como true, independentemente de ser um evento de um ou de vários dias, a hora de início e término deve ser definida como meia-noite e estar no mesmo fuso horário.|
+| importância|Cadeia de caracteres|A importância do evento. Os valores possíveis são: `low`, `normal` e `high`.|
+| isAllDay|Booliano|Defina como True se o evento durar o dia inteiro. Se estiver definido como True, independentemente de ser um evento de um ou de vários dias, a hora de início e término deve ser definida como meia-noite e estar no mesmo fuso horário.|
 |isOnlineMeeting|Booliano| `True` se o evento tem informações sobre a reunião online, caso contrário, `false`. O padrão é false. Opcional.|
 | isReminderOn|Booliano|Defina como true se um alerta estiver definido para lembrar o usuário sobre o evento.|
 | location|Local|O local do evento.|
@@ -75,7 +88,7 @@ No corpo da solicitação, forneça os valores para os campos relevantes que dev
 | responseRequested|Booliano|Defina como true se o remetente quiser receber uma resposta quando o evento for aceito ou recusado.|
 | sensitivity|String| Os valores possíveis são: `normal`, `personal`, `private`, `confidential`.|
 | showAs|String|O status a ser exibido. Os valores possíveis `free` são: `tentative` , , , , , `busy` `oof` `workingElsewhere` `unknown` .|
-| iniciar|DateTimeTimeZone|A data, a hora e o fuso horário do evento. |
+| iniciar|DateTimeTimeZone|A data, a hora e o fuso horário do evento. Consulte [observações adicionais para atualizar propriedades específicas](#notes-for-updating-specific-properties). |
 | assunto|String|O texto da linha de assunto do evento.|
 
 Como o recurso **evento** dá suporte as [extensões](/graph/extensibility-overview), você pode usar a operação `PATCH` para adicionar, atualizar ou excluir seus próprios dados específicos do aplicativo nas propriedades personalizadas de uma extensão em uma instância do **evento** existente.
@@ -102,7 +115,6 @@ Este é um exemplo da solicitação.
 ```http
 PATCH https://graph.microsoft.com/beta/me/events/{id}
 Content-type: application/json
-Content-length: 285
 
 {
   "originalStartTimeZone": "originalStartTimeZone-value",
@@ -138,7 +150,7 @@ Content-length: 285
 
 ##### <a name="response"></a>Resposta
 
-Veja a seguir um exemplo da resposta. Observação: o objeto de resposta mostrado aqui pode ser encurtado para legibilidade.
+Aqui está um exemplo da resposta. Observação: o objeto de resposta mostrado aqui pode ser reduzido para facilitar a leitura.
 
 <!-- {
   "blockType": "response",
@@ -148,7 +160,6 @@ Veja a seguir um exemplo da resposta. Observação: o objeto de resposta mostrad
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 285
 
 {
   "originalStartTimeZone": "originalStartTimeZone-value",
@@ -193,5 +204,3 @@ Content-length: 285
   ]
 }
 -->
-
-

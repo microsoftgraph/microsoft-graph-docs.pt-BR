@@ -2,20 +2,18 @@
 title: Listar printConnectors
 description: Recupere uma lista de conectores.
 author: nilakhan
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: cloud-printing
 doc_type: apiPageType
-ms.openlocfilehash: 9ef3bb3f197f8c7f0122993c6ca8cb716ddce92b
-ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
+ms.openlocfilehash: 1607627c0a01b66997d950c35f6815d4f9bd4d7f
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "50948868"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60941670"
 ---
 # <a name="list-printconnectors"></a>Listar printConnectors
 Namespace: microsoft.graph
-
-[!INCLUDE [cloudprinting-pricing-disclaimer](../../includes/cloudprinting-pricing-disclaimer.md)]
 
 Recupere uma lista de conectores de impressão.
 
@@ -27,7 +25,7 @@ Para usar o serviço Impressão Universal, o usuário ou locatário do aplicativ
 |Tipo de permissão | Permissões (da com menos para a com mais privilégios) |
 |:---------------|:--------------------------------------------|
 |Delegado (conta corporativa ou de estudante)| PrintConnector.Read.All, PrintConnector.ReadWrite.All |
-|Delegado (conta pessoal da Microsoft)|Sem suporte.|
+|Delegada (conta pessoal da Microsoft)|Sem suporte.|
 |Aplicativo| Sem suporte. |
 
 ## <a name="http-request"></a>Solicitação HTTP
@@ -43,7 +41,7 @@ GET /print/connectors
 ## <a name="optional-query-parameters"></a>Parâmetros de consulta opcionais
 Este método dá suporte a alguns parâmetros de consulta OData para ajudar a personalizar a resposta. Para obter informações gerais, acesse [Parâmetros de consulta OData](/graph/query-parameters).
 
-### <a name="exceptions"></a>Exceptions
+### <a name="exceptions"></a>Exceções
 Alguns operadores não têm suporte: `$count` , `$search` , `$filter` .
 
 ## <a name="request-headers"></a>Cabeçalhos de solicitação

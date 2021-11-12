@@ -1,16 +1,16 @@
 ---
 title: Criar b2xIdentityUserFlow
 description: Crie um novo objeto b2xIdentityUserFlow.
-localization_priority: Normal
+ms.localizationpriority: medium
 doc_type: apiPageType
 author: jkdouglas
 ms.prod: identity-and-sign-in
-ms.openlocfilehash: 669a22b000f1273a56344c714b96257eb44d7e75
-ms.sourcegitcommit: fe1b4d098af604cc34596f595e799911ea672532
+ms.openlocfilehash: 40cff954da17651c80c3414ec13eda04508a0942
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/07/2021
-ms.locfileid: "51611326"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60938829"
 ---
 # <a name="create-b2xidentityuserflow"></a>Criar b2xIdentityUserFlow
 
@@ -27,13 +27,13 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
 |:--------------------|:---------------------------------------------------------|
 |Delegado (conta corporativa ou de estudante)|IdentityUserFlow.ReadWrite.All|
-|Delegado (conta pessoal da Microsoft)| Sem suporte.|
+|Delegada (conta pessoal da Microsoft)| Sem suporte.|
 |Aplicativo|IdentityUserFlow.ReadWrite.All|
 
 A conta de trabalho ou de estudante precisa pertencer a uma das seguintes funções:
 
 * Administrador global
-* Administrador de Fluxo de Usuário de Identidade Externa
+* Administrador de identidade externa Flow usuário
 
 ## <a name="http-request"></a>Solicitação HTTP
 
@@ -57,7 +57,7 @@ No corpo da solicitação, forneça uma representação JSON de [um b2xIdentityU
 |Propriedade|Tipo|Descrição|
 |:---------------|:--------|:----------|
 |id|String|Obrigatório. O nome do fluxo de usuário. O nome será pré-canetado após `B2X_1` a criação.|
-|userFlowType|String|Obrigatório. O tipo de fluxo de usuário que você está criando. Esse valor sempre será `signUpOrSignIn` .|
+|userFlowType|Cadeia de caracteres|Obrigatório. O tipo de fluxo de usuário que você está criando. Esse valor sempre será `signUpOrSignIn` .|
 |userFlowTypeVersion|Flutuação|Obrigatório. A versão do fluxo de usuário. Esse valor sempre será 1.|
 |identityProviders|Coleção [identityProvider](../resources/identityprovider.md)|Opcional. Os provedores de identidade que você deseja incluir no fluxo de usuários.|
 |apiConnectorConfiguration|[userFlowApiConnectorConfiguration](../resources/userflowapiconnectorconfiguration.md)|Opcional. Configuração para habilitar um conector de API para uso como parte do fluxo do usuário.|
@@ -85,7 +85,6 @@ Este é um exemplo de solicitação.
 ``` http
 POST https://graph.microsoft.com/beta/identity/b2xUserFlows
 Content-type: application/json
-Content-length: 154
 
 {
     "id": "Partner",
@@ -153,7 +152,6 @@ Este é um exemplo de solicitação.
 ``` http
 POST https://graph.microsoft.com/beta/identity/b2xUserFlows
 Content-type: application/json
-Content-length: 154
 
 {
     "id": "Partner",
@@ -228,7 +226,6 @@ Este é um exemplo de solicitação.
 ``` http
 POST https://graph.microsoft.com/beta/identity/b2xUserFlows
 Content-type: application/json
-Content-length: 154
 
 {
     "id": "UserFlowWithAPIConnector",

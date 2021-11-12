@@ -2,20 +2,18 @@
 title: List taskTriggers
 description: Recupere uma lista de gatilhos de tarefas associados à impressora.
 author: nilakhan
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: cloud-printing
 doc_type: apiPageType
-ms.openlocfilehash: 62f2d3cc19a518edf65206bb26a1249dc9472b27
-ms.sourcegitcommit: 40947e6f4337c8c4193d85bb862e15f67263e1e7
+ms.openlocfilehash: 8006fc2f3b52ac6a4d31a97859ad172237c49f3b
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/13/2021
-ms.locfileid: "50771894"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60947528"
 ---
 # <a name="list-tasktriggers"></a>List taskTriggers
 Namespace: microsoft.graph
-
-[!INCLUDE [cloudprinting-pricing-disclaimer](../../includes/cloudprinting-pricing-disclaimer.md)]
 
 Recupere uma lista de [gatilhos de tarefas associados](../resources/printtasktrigger.md) à [impressora](../resources/printer.md). A lista de gatilhos de tarefas define quais tarefas serão disparadas como resultado de eventos que ocorrem durante a impressão.
 
@@ -28,8 +26,8 @@ Além das permissões a seguir, o locatário do usuário deve ter uma assinatura
 
 |Tipo de permissão | Permissões (da com menos para a com mais privilégios) |
 |:---------------|:--------------------------------------------|
-|Delegada (conta corporativa ou de estudante)| Printer.Read.All, Printer.ReadWrite.All, Printer.FullControl.All |
-|Delegado (conta pessoal da Microsoft)|Sem suporte.|
+|Delegado (conta corporativa ou de estudante)| Printer.Read.All, Printer.ReadWrite.All, Printer.FullControl.All |
+|Delegada (conta pessoal da Microsoft)|Sem suporte.|
 |Aplicativo| Sem suporte. |
 
 ## <a name="http-request"></a>Solicitação HTTP
@@ -45,7 +43,7 @@ GET /print/printers/{printerId}/taskTriggers
 ## <a name="optional-query-parameters"></a>Parâmetros de consulta opcionais
 Este método dá suporte a alguns parâmetros de consulta OData para ajudar a personalizar a resposta. Para obter informações gerais, acesse [Parâmetros de consulta OData](/graph/query-parameters).
 
-### <a name="exceptions"></a>Exceptions
+### <a name="exceptions"></a>Exceções
 Alguns operadores não têm suporte: `$count` , , , , , , `$format` `$search` `$select` `$skip` `$top` .
 
 ## <a name="request-headers"></a>Cabeçalhos de solicitação

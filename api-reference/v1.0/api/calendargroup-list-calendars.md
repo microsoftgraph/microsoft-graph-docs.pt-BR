@@ -5,12 +5,12 @@ author: harini84
 ms.localizationpriority: medium
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: a2b9ef019336422f0e5e54cde2645338f5452260
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 360608f1ee53f534442c9bedb2349ff95a4d7ada
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59038438"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60939130"
 ---
 # <a name="list-calendars"></a>Listar calendários
 
@@ -113,7 +113,6 @@ Aqui está um exemplo da resposta. Observação: o objeto de resposta mostrado a
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 147
 
 {
   "value": [

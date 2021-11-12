@@ -2,15 +2,15 @@
 title: Listar acceptedSenders
 description: Obtenha uma lista de usuários ou grupos que estão na lista de remetentes aceitos para este grupo.
 author: Jordanndahl
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: 01ec69406fe63dabad9159f8d6b26c557456274b
-ms.sourcegitcommit: 4fa6fcc058c7f8d8cad58c0b82db23d6c7da37d2
+ms.openlocfilehash: 70338bc6c69881e4232fffb33e41cecae0188cb3
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/27/2021
-ms.locfileid: "52680633"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60946556"
 ---
 # <a name="list-acceptedsenders"></a>Listar acceptedSenders
 
@@ -91,7 +91,6 @@ Este é um exemplo de resposta.
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 55
 
 {
   "value": [

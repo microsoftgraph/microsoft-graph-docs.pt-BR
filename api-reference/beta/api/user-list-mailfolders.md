@@ -1,16 +1,16 @@
 ---
 title: Listar mailFolders
-description: Obtenha todas as pastas de email na caixa de correio do usuário conectado.
-localization_priority: Normal
+description: Obter todas as pastas de email na caixa de correio do usuário de entrada.
+ms.localizationpriority: medium
 doc_type: apiPageType
 author: abheek-das
 ms.prod: outlook
-ms.openlocfilehash: c2cf43dc9d01ba2de2a3426cce84aaf3f92bbbb3
-ms.sourcegitcommit: df0778a4dbd1e7a2fde1846bdfbfd9440fc91672
+ms.openlocfilehash: 1532255c85f2505f23b143f9bc762ca5cd2d8f03
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/06/2021
-ms.locfileid: "49768190"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60937584"
 ---
 # <a name="list-mailfolders"></a>Listar mailFolders
 
@@ -18,22 +18,22 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Obtenha todas as pastas de email na caixa de correio do usuário especificado, incluindo as [pastas de pesquisa de email](../resources/mailsearchfolder.md).
+Obter todas as pastas de email na caixa de correio do usuário especificado, incluindo qualquer pasta [de pesquisa de email](../resources/mailsearchfolder.md).
 
-Por padrão, essa operação não retorna pastas ocultas. Use um parâmetro de consulta _includeHiddenFolders_ para incluí-los na resposta.
+Por padrão, esta operação não retorna pastas ocultas. Use um parâmetro de consulta _includeHiddenFolders_ para incluí-los na resposta.
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegado (conta corporativa ou de estudante) | Mail. ReadBasic, mail. Read, mail. ReadWrite    |
-|Delegado (conta pessoal da Microsoft) | Mail. ReadBasic, mail. Read, mail. ReadWrite    |
-|Aplicativo | Mail. ReadBasic. All, mail. Read, mail. ReadWrite |
+|Delegado (conta corporativa ou de estudante) | Mail.ReadBasic, Mail.Read, Mail.ReadWrite    |
+|Delegado (conta pessoal da Microsoft) | Mail.ReadBasic, Mail.Read, Mail.ReadWrite    |
+|Aplicativo | Mail.ReadBasic.All, Mail.Read, Mail.ReadWrite |
 
 ## <a name="http-request"></a>Solicitação HTTP
 
-Para obter todas as pastas de email na caixa de correio do usuário especificado, excluindo as que estão ocultas:
+Para obter todas as pastas de email na caixa de correio do usuário especificado, exceto aquelas que estão ocultas:
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /me/mailFolders
@@ -48,9 +48,9 @@ GET /users/{id | userPrincipalName}/mailFolders/?includeHiddenFolders=true
 ```
 
 ## <a name="query-parameters"></a>Parâmetros de consulta
-Para retornar uma lista de todos os mailFolders incluindo aqueles que estão ocultos (sua propriedade **IsHidden** é true), na URL de solicitação, especifique o `includeHiddenFolders` parâmetro de consulta como `true` , conforme mostrado na seção [solicitação HTTP](#http-request) .
+Para retornar uma lista de todas as mailFolders, incluindo aquelas que estão ocultas (sua propriedade **isHidden** é verdadeira), no URL da solicitação, especifique o `includeHiddenFolders` parâmetro de consulta como `true`, conforme mostrado na seção de [solicitação HTTP](#http-request).
 
-Este método também dá suporte a [parâmetros de consulta OData](/graph/query-parameters) para ajudar a personalizar a resposta.
+Esse método também oferece suporte [a parâmetros de](/graph/query-parameters) consulta OData para ajudar a personalizar a resposta.
 
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
 | Cabeçalho       | Valor |
@@ -65,9 +65,9 @@ Não forneça um corpo de solicitação para esse método.
 Se bem-sucedido, este método retorna um código de resposta `200 OK` e uma coleção de objetos [mailfolder](../resources/mailfolder.md) no corpo da resposta.
 ## <a name="examples"></a>Exemplos
 
-### <a name="example-1-list-mail-folders-in-the-signed-in-users-mailbox"></a>Exemplo 1: listar pastas de email na caixa de correio do usuário conectado
+### <a name="example-1-list-mail-folders-in-the-signed-in-users-mailbox"></a>Exemplo 1: Listar pastas de email na caixa de correio do usuário conectado
 
-Este exemplo inclui um objeto **mailSearchFolder** na resposta. A pasta de pesquisa de email é uma pasta filha na caixa de entrada com o nome de exibição "resumos semanais".
+Este exemplo inclui um objeto **mailSearchFolder** na resposta. A pasta de pesquisa de email é uma pasta filho na caixa de entrada com o nome de exibição "Resumos semanais".
 
 #### <a name="request"></a>Solicitação
 Este é um exemplo da solicitação.
@@ -215,7 +215,7 @@ Content-type: application/json
 
 ### <a name="example-2-include-hidden-folders-in-the-signed-in-users-mailbox"></a>Exemplo 2: incluir pastas ocultas na caixa de correio do usuário conectado
 
-O exemplo a seguir usa o `includeHiddenFolders` parâmetro de consulta para obter uma lista de pastas de email, incluindo pastas de email ocultas. A resposta inclui a pasta "resíduos" que tem o **IsHidden** definido como true.
+O próximo exemplo usa o parâmetro de consulta `includeHiddenFolders` para obter uma lista de pastas de email, incluindo pastas de email ocultas. A resposta inclui a pasta "Emails secundários" que tem a **isHidden** definida como verdadeira.
 
 #### <a name="request"></a>Solicitação
 
@@ -250,7 +250,7 @@ GET https://graph.microsoft.com/beta/me/mailFolders/?includeHiddenFolders=true
 #### <a name="response"></a>Resposta
 Veja a seguir um exemplo da resposta.
 
->**Observação:** O objeto de resposta mostrado aqui é reduzido para legibilidade e não inclui todas as pastas padrão em uma caixa de correio de usuário.
+>**Observação:** O objeto de resposta mostrado aqui é reduzido para facilitar a leitura e não inclui todas as pastas padrões em uma caixa de correio do usuário.
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -260,7 +260,6 @@ Veja a seguir um exemplo da resposta.
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 232
 
 {
     "@odata.context": "https://graph.microsoft.com/beta/$metadata#users('68ca8ec0-11f8-456b-a785-70d9936650d5')/mailFolders",

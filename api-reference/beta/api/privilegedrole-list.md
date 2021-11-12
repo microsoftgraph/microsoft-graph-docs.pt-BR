@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 doc_type: apiPageType
 ms.prod: governance
 author: carolinetempleton
-ms.openlocfilehash: a30c5f648ed084d38e9f5c0f18fbbdfdaee044f2
-ms.sourcegitcommit: c7ff992ef63e480d070421ba99b28ee129cb6acb
+ms.openlocfilehash: 9b120f085e144b3f66fec1a742d16a909e80c29b
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "60684122"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60947221"
 ---
 # <a name="list-privilegedroles"></a>Listar privilegedRoles
 
@@ -97,7 +97,6 @@ Aqui está um exemplo da resposta. Observação: o objeto de resposta mostrado a
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 83
 
 {
   "value": [

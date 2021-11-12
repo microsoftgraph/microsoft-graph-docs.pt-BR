@@ -1,16 +1,16 @@
 ---
 title: 'section: copyToNotebook'
 description: Copia uma seção para um bloco de anotações específico.
-localization_priority: Normal
+ms.localizationpriority: medium
 author: jewan-microsoft
 ms.prod: onenote
 doc_type: apiPageType
-ms.openlocfilehash: 17d2711abedbf2eeedc4fba9c801e79ff4d151ec
-ms.sourcegitcommit: 94c4acf8bd03c10a44b12952b6cb4827df55b978
+ms.openlocfilehash: 81efaa842c08ae2cec59218f5b9b6353e7b5afba
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/06/2021
-ms.locfileid: "52786736"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60926431"
 ---
 # <a name="section-copytonotebook"></a>section: copyToNotebook
 
@@ -21,7 +21,7 @@ Namespace: microsoft.graph
 Copia uma seção para um bloco de anotações específico.
 
 Para operações de cópia, siga um padrão de chamada assíncrona: primeiro chame a ação Copiar e, em seguida, sonda o ponto de extremidade da operação para o resultado.
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
@@ -49,11 +49,11 @@ No corpo da solicitação, forneça um objeto JSON que contém os parâmetros de
 
 | Parâmetro    | Tipo   |Descrição|
 |:---------------|:--------|:----------|
-|siteCollectionId|String|A id do site SharePoint para o que copiar. Use somente ao copiar para um SharePoint site.|
-|siteId|String|A id do SharePoint web para o que copiar. Use somente ao copiar para um SharePoint site.|
+|siteCollectionId|Cadeia de caracteres|A id do site SharePoint para o que copiar. Use somente ao copiar para um SharePoint site.|
+|siteId|Cadeia de caracteres|A id do SharePoint web para o que copiar. Use somente ao copiar para um SharePoint site.|
 |groupId|Cadeia de caracteres|A id do grupo para o que copiar. Use somente ao copiar para um Microsoft 365 grupo.|
 |id|String|Obrigatório. A id do bloco de anotações de destino. |
-|renameAs|String|O nome da cópia. Padrão para o nome do item existente. |
+|renameAs|Cadeia de caracteres|O nome da cópia. Padrão para o nome do item existente. |
 
 ## <a name="response"></a>Resposta
 
@@ -72,7 +72,6 @@ Este é um exemplo da solicitação.
 ```http
 POST https://graph.microsoft.com/beta/me/onenote/sections/{id}/copyToNotebook
 Content-type: application/json
-Content-length: 84
 
 {
   "id": "id-value",

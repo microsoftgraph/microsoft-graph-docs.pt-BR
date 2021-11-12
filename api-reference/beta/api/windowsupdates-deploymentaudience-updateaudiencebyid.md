@@ -2,15 +2,15 @@
 title: 'deploymentAudience: updateAudienceById'
 description: Atualize os membros e as coleções de exclusões de uma deploymentAudience com recursos updatableAsset do mesmo tipo.
 author: Alice-at-Microsoft
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: w10
 doc_type: apiPageType
-ms.openlocfilehash: 1b948e644628eedc08fe470641b612501dfb80af
-ms.sourcegitcommit: 4888ac7504533344c4fc6828e2a06a002a1d72d3
+ms.openlocfilehash: 2a65a0e2357563156a9ef40d22d4eccd3093a052
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/09/2021
-ms.locfileid: "53351115"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60945261"
 ---
 # <a name="deploymentaudience-updateaudiencebyid"></a>deploymentAudience: updateAudienceById
 
@@ -35,8 +35,8 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |Tipo de permissão|Permissões (da com menos para a com mais privilégios)|
 |:---|:---|
 |Delegado (conta corporativa ou de estudante)|WindowsUpdates.ReadWrite.All|
-|Delegado (conta pessoal da Microsoft)|Sem suporte.|
-|Application|WindowsUpdates.ReadWrite.All|
+|Delegada (conta pessoal da Microsoft)|Sem suporte.|
+|Aplicativo|WindowsUpdates.ReadWrite.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
 
@@ -62,10 +62,10 @@ A tabela a seguir mostra os parâmetros que podem ser usados com esta ação.
 |Parâmetro|Tipo|Descrição|
 |:---|:---|:---|
 |memberEntityType|Cadeia de caracteres|O tipo completo dos ativos atualizáveis. Os valores possíveis são: `#microsoft.graph.windowsUpdates.azureADDevice` e `#microsoft.graph.windowsUpdates.updatableAssetGroup`.|
-|addMembers|Conjunto de cadeias de caracteres|Lista de identificadores correspondentes aos ativos atualizáveis a adicionar como membros da audiência de implantação.|
-|removeMembers|Conjunto de cadeias de caracteres|Lista de identificadores correspondentes aos ativos atualizáveis a ser removidos como membros da audiência de implantação.|
-|addExclusions|Conjunto de cadeias de caracteres|Lista de identificadores correspondentes aos ativos atualizáveis para adicionar como exclusões do público de implantação.|
-|removeExclusions|Conjunto de cadeias de caracteres|Lista de identificadores correspondentes aos ativos atualizáveis para remover como exclusões do público de implantação.|
+|addMembers|Coleção de cadeias de caracteres|Lista de identificadores correspondentes aos ativos atualizáveis a adicionar como membros da audiência de implantação.|
+|removeMembers|Coleção de cadeias de caracteres|Lista de identificadores correspondentes aos ativos atualizáveis a ser removidos como membros da audiência de implantação.|
+|addExclusions|Coleção de cadeias de caracteres|Lista de identificadores correspondentes aos ativos atualizáveis para adicionar como exclusões do público de implantação.|
+|removeExclusions|Coleção de cadeias de caracteres|Lista de identificadores correspondentes aos ativos atualizáveis para remover como exclusões do público de implantação.|
 
 
 
@@ -87,7 +87,6 @@ Se tiver êxito, esta ação retornará um código de resposta `202 Accepted`. N
 ``` http
 POST https://graph.microsoft.com/beta/admin/windows/updates/deployments/{deploymentId}/audience/updateAudienceById
 Content-Type: application/json
-Content-length: 204
 
 {
   "memberEntityType": "String",

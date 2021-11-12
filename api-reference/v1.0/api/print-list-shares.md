@@ -2,20 +2,18 @@
 title: Listar shares
 description: Recupere uma lista de compartilhamentos de impressora.
 author: braedenp-msft
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: cloud-printing
 doc_type: apiPageType
-ms.openlocfilehash: 8fa29dfc5d9a9bafc82ed791eb43c75549f69c31
-ms.sourcegitcommit: 412507a3c3a8e407fcc43b7cd227d4db35791f58
+ms.openlocfilehash: a07c531b0cdc82e772ae3a7d44a1b93738fc9c11
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2021
-ms.locfileid: "51766557"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60941649"
 ---
 # <a name="list-shares"></a>Listar shares
 Namespace: microsoft.graph
-
-[!INCLUDE [cloudprinting-pricing-disclaimer](../../includes/cloudprinting-pricing-disclaimer.md)]
 
 Recuperar uma lista de **printerShares**.
 
@@ -27,7 +25,7 @@ Para usar o serviço Impressão Universal, o usuário ou locatário do aplicativ
 |Tipo de permissão | Permissões (da com menos para a com mais privilégios) |
 |:---------------|:--------------------------------------------|
 |Delegado (conta corporativa ou de estudante)| PrinterShare.ReadBasic.All, PrinterShare.Read.All, PrinterShare.ReadWrite.All |
-|Delegado (conta pessoal da Microsoft)|Sem suporte.|
+|Delegada (conta pessoal da Microsoft)|Sem suporte.|
 |Aplicativo|Sem suporte.|
 
 ## <a name="http-request"></a>Solicitação HTTP
@@ -45,7 +43,7 @@ Este método dá suporte a alguns parâmetros de consulta OData para ajudar a pe
 
 Para ver uma lista dos recursos de cada compartilhamento de impressora, inclua o parâmetro `$select=capabilities` de consulta opcional.
 
-### <a name="exceptions"></a>Exceptions
+### <a name="exceptions"></a>Exceções
 Alguns operadores não têm suporte: `$count` , `$orderby` , `$search` .
 
 ## <a name="request-headers"></a>Cabeçalhos de solicitação

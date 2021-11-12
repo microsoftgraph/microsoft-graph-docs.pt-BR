@@ -2,20 +2,18 @@
 title: Listar dailyPrintUsageByPrinter
 description: Recupere uma lista de resumos de uso diário de impressão, agrupados por impressora.
 author: nilakhan
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: cloud-printing
 doc_type: apiPageType
-ms.openlocfilehash: 54bfa2748831bcadbc59b2f555c6b65d21fd7d27
-ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
+ms.openlocfilehash: 89ea943c7a45e635a1a220bad26b72b2d7f917a8
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "50948806"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60936234"
 ---
 # <a name="list-dailyprintusagebyprinter"></a>Listar dailyPrintUsageByPrinter
 Namespace: microsoft.graph
-
-[!INCLUDE [cloudprinting-pricing-disclaimer](../../includes/cloudprinting-pricing-disclaimer.md)]
 
 Recupere uma lista de resumos de uso diário de impressão, agrupados por [impressora](../resources/printer.md).
 

@@ -1,23 +1,23 @@
 ---
-title: Atualizar loja
-description: Atualizar as propriedades de um objeto store.
+title: Armazenamento de atualizações
+description: Atualize as propriedades de um objeto store.
 author: mohitpcad
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: Sharepoint
 doc_type: apiPageType
-ms.openlocfilehash: 73d1fb22b92c134fc4ebb2b15fe4b9314dce2d5d
-ms.sourcegitcommit: eacd2a6e46c19dd3cd8519592b1668fabe14d85d
+ms.openlocfilehash: c13f6a9b7cab6adb1ae6d824fa33962cead56d05
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "49874099"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60947075"
 ---
-# <a name="update-store"></a>Atualizar loja
+# <a name="update-store"></a>Armazenamento de atualizações
 Namespace: microsoft.graph.termStore
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Atualizar as propriedades de um [objeto store.](../resources/termstore-store.md)
+Atualize as propriedades de um [objeto store.](../resources/termstore-store.md)
 
 ## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
@@ -25,7 +25,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |Tipo de permissão|Permissões (da com menos para a com mais privilégios)|
 |:---|:---|
 |Delegado (conta corporativa ou de estudante) |TermStore.ReadWrite.All |
-|Delegado (conta pessoal da Microsoft) | Sem suporte.    |
+|Delegada (conta pessoal da Microsoft) | Sem suporte.    |
 |Aplicativo | Sem suporte. |
 
 ## <a name="http-request"></a>Solicitação HTTP
@@ -47,18 +47,18 @@ PATCH /termStore
 ## <a name="request-body"></a>Corpo da solicitação
 No corpo da solicitação, fornece uma representação JSON do [objeto store.](../resources/termstore-store.md)
 
-A tabela a seguir mostra as propriedades que podem ser editadas para o [armazenamento.](../resources/termstore-store.md)
+A tabela a seguir mostra as propriedades que podem ser editadas para o [armazenamento](../resources/termstore-store.md).
 
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
 |defaultLanguageTag|Cadeia de caracteres|Idioma padrão do [microsoft.graph.termstore.store](../resources/termstore-store.md)|
-|languageTags|Coleção String|Idiomas disponíveis na [microsoft.graph.termstore.store](../resources/termstore-store.md)|
+|languageTags|Coleção de cadeias de caracteres|Idiomas disponíveis no [microsoft.graph.termstore.store](../resources/termstore-store.md)|
 
 
 
 ## <a name="response"></a>Resposta
 
-Se bem-sucedido, este método retorna `200 OK` um código de resposta e um objeto de [armazenamento](../resources/termstore-store.md) atualizado no corpo da resposta.
+Se tiver êxito, este método retornará um código de resposta e um `200 OK` [objeto de armazenamento](../resources/termstore-store.md) atualizado no corpo da resposta.
 
 ## <a name="examples"></a>Exemplos
 
@@ -73,7 +73,6 @@ Se bem-sucedido, este método retorna `200 OK` um código de resposta e um objet
 ``` http
 PATCH https://graph.microsoft.com/beta/termStore
 Content-Type: application/json
-Content-length: 133
 
 {
   "defaultLanguageTag": "en-US"

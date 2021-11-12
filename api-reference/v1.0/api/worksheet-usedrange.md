@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: lumine2008
 ms.prod: excel
 doc_type: apiPageType
-ms.openlocfilehash: 2e3509dc17d3107ac2c6b116fe8db221255d2c2d
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: a498bbe85a443f2d4803b15c7d115c1c63b079cb
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59072612"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60947340"
 ---
 # <a name="worksheet-usedrange"></a>Worksheet: UsedRange
 
@@ -22,7 +22,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegada (conta corporativa ou de estudante) | Files.ReadWrite    |
+|Delegado (conta corporativa ou de estudante) | Files.ReadWrite    |
 |Delegada (conta pessoal da Microsoft) | Sem suporte.    |
 |Aplicativo | Sem suporte. |
 
@@ -40,7 +40,7 @@ Na URL de solicitação, você pode fornecer parâmetros opcionais.
 
 | Parâmetro    | Tipo   |Descrição|
 |:---------------|:--------|:----------|
-|valuesOnly|Booliano|Opcional. Considera apenas as células com valores como células usadas (ignora a formatação).|
+|valuesOnly|Boolean|Opcional. Considera apenas as células com valores como células usadas (ignora a formatação).|
 
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
 | Nome       | Descrição|
@@ -100,7 +100,6 @@ Aqui está um exemplo da resposta. Observação: o objeto de resposta mostrado a
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 169
 
 {
   "address": "address-value",
@@ -151,7 +150,6 @@ Aqui está um exemplo da resposta. Observação: o objeto de resposta mostrado a
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 169
 
 {
   "address": "address-value",

@@ -1,16 +1,16 @@
 ---
 title: Criar MailFolder
 description: Use essa API para criar uma nova pasta de email na pasta raiz da caixa de correio do usuário.
-localization_priority: Normal
+ms.localizationpriority: medium
 author: abheek-das
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 07913741d015830d395c104c34786009703c8133
-ms.sourcegitcommit: a1675c7b8dfc7d7c3c7923d06cda2b0127f9c3e6
+ms.openlocfilehash: 3377d0ae675286163b673f5c83b3f5ebee8648ab
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/05/2021
-ms.locfileid: "49754114"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60946046"
 ---
 # <a name="create-mailfolder"></a>Criar MailFolder
 
@@ -20,7 +20,7 @@ Namespace: microsoft.graph
 
 Use essa API para criar uma nova pasta de email na pasta raiz da caixa de correio do usuário.
 
-Se você pretende que uma nova pasta fique oculta, você deve definir a propriedade **IsHidden** como `true` on Creation.
+Se você pretende que uma nova pasta seja oculta, você deve definir a **propriedade isHidden** como `true` na criação.
 
 ## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
@@ -44,16 +44,16 @@ POST /users/{id | userPrincipalName}/mailFolders
 | Content-Type  | application/json  |
 
 ## <a name="request-body"></a>Corpo da solicitação
-Forneça um objeto JSON com os seguintes parâmetros no corpo da solicitação. **DisplayName** e **IsHidden** são a única propriedade gravável para um objeto [mailFolder](../resources/mailfolder.md) .
+Forneça um objeto JSON com os seguintes parâmetros no corpo da solicitação. **displayName** e **isHidden** são a única propriedade writable para um [objeto mailFolder.](../resources/mailfolder.md)
 
 | Parâmetro    | Tipo   |Descrição|
 |:---------------|:--------|:----------|
-|displayName|String|O nome de exibição da nova pasta.|
-|isHidden|Booliano|Indica se a nova pasta está oculta. O valor padrão é `false`. A definição da propriedade é opcional. Uma vez definido, você não pode atualizar essa propriedade. Confira mais informações em [pastas de email ocultas](../resources/mailfolder.md#hidden-mail-folders)|
+|displayName|Cadeia de caracteres|O nome de exibição da nova pasta.|
+|IsHidden|Booleano|Indica se a nova pasta está oculta. O valor padrão é `false`. A configuração da propriedade é opcional. Depois de definido, você não pode atualizar essa propriedade. Confira mais informações em [Pastas de email ocultas](../resources/mailfolder.md#hidden-mail-folders)|
 
 ## <a name="response"></a>Resposta
 
-Se bem-sucedido, este método retorna `201 Created` um código de resposta e um objeto [mailFolder](../resources/mailfolder.md) no corpo da resposta.
+Se tiver êxito, este método retornará `201 Created` o código de resposta e um objeto [mailFolder](../resources/mailfolder.md) no corpo da resposta.
 
 ## <a name="example"></a>Exemplo
 ### <a name="request"></a>Solicitação
@@ -67,7 +67,6 @@ Este é um exemplo da solicitação.
 ```http
 POST https://graph.microsoft.com/beta/me/mailFolders
 Content-type: application/json
-Content-length: 159
 
 {
   "displayName": "Clutter",
@@ -105,7 +104,6 @@ Veja a seguir um exemplo da resposta.
 ```http
 HTTP/1.1 201 Created
 Content-type: application/json
-Content-length: 179
 
 {
   "id": "hN2Y5OGRhNGYwODEALgAAA0DAKbvJvFhJgcT3lZpkhNQBAA1",

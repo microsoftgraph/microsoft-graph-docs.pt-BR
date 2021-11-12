@@ -2,15 +2,15 @@
 title: 'tenantGroup: tenantSearch'
 description: Pesquisa os locatários gerenciados especificados entre grupos de locatários.
 author: isaiahwilliams
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: microsoft-365-lighthouse
 doc_type: apiPageType
-ms.openlocfilehash: 73cf4f28cfa22bd0f881bc1d00c91aa8c0b2cf03
-ms.sourcegitcommit: 486fe9c77d4d89c5416bb83e8c716e6918c47370
+ms.openlocfilehash: 1c3e1983364237bf85a3ad9b3fef717698eb5d64
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/15/2021
-ms.locfileid: "53441796"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60925192"
 ---
 # <a name="tenantgroup-tenantsearch"></a>tenantGroup: tenantSearch
 Namespace: microsoft.graph.managedTenants
@@ -19,12 +19,12 @@ Namespace: microsoft.graph.managedTenants
 
 Pesquisa os locatários gerenciados especificados entre grupos de locatários.
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão|Permissões (da com menos para a com mais privilégios)|
 |:---|:---|
-|Delegada (conta corporativa ou de estudante)|ManagedTenants.Read.All, ManagedTenants.ReadWrite.All|
+|Delegado (conta corporativa ou de estudante)|ManagedTenants.Read.All, ManagedTenants.ReadWrite.All|
 |Delegada (conta pessoal da Microsoft)|Sem suporte.|
 |Aplicativo|Sem suporte.|
 
@@ -72,7 +72,6 @@ Se tiver êxito, essa ação retornará um código de resposta e uma `200 OK` [c
 ``` http
 POST https://graph.microsoft.com/beta/tenantRelationships/managedTenants/tenantGroups/tenantSearch
 Content-Type: application/json
-Content-length: 28
 
 {
   "tenantId": "String"

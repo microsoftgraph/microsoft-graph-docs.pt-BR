@@ -1,16 +1,16 @@
 ---
 title: Atualizar itememail
 description: Atualize as propriedades de um objeto itemEmail no perfil de um usuário.
-localization_priority: Normal
+ms.localizationpriority: medium
 author: kevinbellinger
 ms.prod: people
 doc_type: apiPageType
-ms.openlocfilehash: c94009ee907d626a6f59dbd7a9b9b4d7b4684df3
-ms.sourcegitcommit: 40947e6f4337c8c4193d85bb862e15f67263e1e7
+ms.openlocfilehash: 46e896cfdcc95cfb681e36d3b9ffc1d917d7a6ea
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/13/2021
-ms.locfileid: "50774345"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60942237"
 ---
 # <a name="update-itememail"></a>Atualizar itememail
 
@@ -20,13 +20,13 @@ Namespace: microsoft.graph
 
 Atualize as propriedades de [um objeto itemEmail](../resources/itememail.md) no perfil de um [usuário.](../resources/profile.md)
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>Permissões
 
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 | Tipo de permissão                        | Permissões (da com menos para a com mais privilégios) |
 |:---------------------------------------|:--------------------------------------------|
-| Delegada (conta corporativa ou de estudante)     | User.ReadWrite, User.ReadWrite.All          |
+| Delegado (conta corporativa ou de estudante)     | User.ReadWrite, User.ReadWrite.All          |
 | Delegado (conta pessoal da Microsoft) | User.ReadWrite, User.ReadWrite.All          |
 | Aplicativo                            | User.ReadWrite.All                          |
 
@@ -56,11 +56,11 @@ A tabela a seguir mostra as propriedades que são possíveis de atualizar dentro
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
 |address|Cadeia de caracteres|O endereço de email em si.|
-|allowedAudiences|String|As audiências que são capazes de ver os valores contidos na entidade. Herdado [do itemFacet](../resources/itemfacet.md). Os valores possíveis são: `me`, `family`, `contacts`, `groupMembers`, `organization`, `federatedOrganizations`, `everyone`, `unknownFutureValue`.|
-|displayName|String|O nome ou o rótulo que um usuário associou a um endereço de email específico.|
+|allowedAudiences|Cadeia de caracteres|As audiências que são capazes de ver os valores contidos na entidade. Herdado [do itemFacet](../resources/itemfacet.md). Os valores possíveis são: `me`, `family`, `contacts`, `groupMembers`, `organization`, `federatedOrganizations`, `everyone`, `unknownFutureValue`.|
+|displayName|Cadeia de caracteres|O nome ou o rótulo que um usuário associou a um endereço de email específico.|
 |inferência|[inferenceData](../resources/inferencedata.md)|Contém detalhes de inferência se a entidade for inferida pelo aplicativo de criação ou modificação. Herdado [do itemFacet](../resources/itemfacet.md).|
 |source|[personDataSource](../resources/persondatasource.md)|Onde os valores se originaram se sincronizados de outro serviço. Herdado [do itemFacet](../resources/itemfacet.md).|
-|tipo|emailType|O tipo de endereço de email. Os valores possíveis são: `unknown`, `work`, `personal`, `main`, `other`.|
+|type|emailType|O tipo de endereço de email. Os valores possíveis são: `unknown`, `work`, `personal`, `main`, `other`.|
 
 ## <a name="response"></a>Resposta
 
@@ -78,7 +78,6 @@ Se tiver êxito, este método retornará um código de resposta e um `200 OK` [o
 ``` http
 PATCH https://graph.microsoft.com/beta/users/{userId}/profile/emails/{id}
 Content-Type: application/json
-Content-length: 383
 
 {
   "displayName": "Business Email",

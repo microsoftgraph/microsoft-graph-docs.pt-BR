@@ -2,15 +2,15 @@
 title: Criar tenantTag
 description: Crie um novo objeto tenantTag.
 author: isaiahwilliams
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: microsoft-365-lighthouse
 doc_type: apiPageType
-ms.openlocfilehash: e04335b011c3572ce352e9a683c8bb6440343f73
-ms.sourcegitcommit: 486fe9c77d4d89c5416bb83e8c716e6918c47370
+ms.openlocfilehash: fa4da6279a18cbb8ecaa2767ed953e903dcb69ca
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/15/2021
-ms.locfileid: "53442070"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60947284"
 ---
 # <a name="create-tenanttag"></a>Criar tenantTag
 Namespace: microsoft.graph.managedTenants
@@ -19,12 +19,12 @@ Namespace: microsoft.graph.managedTenants
 
 Crie um novo [objeto tenantTag.](../resources/managedtenants-tenanttag.md)
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão|Permissões (da com menos para a com mais privilégios)|
 |:---|:---|
-|Delegada (conta corporativa ou de estudante)|ManagedTenants.WriteRead.All|
+|Delegado (conta corporativa ou de estudante)|ManagedTenants.WriteRead.All|
 |Delegada (conta pessoal da Microsoft)|Sem suporte.|
 |Aplicativo|Sem suporte.|
 
@@ -71,7 +71,6 @@ Se tiver êxito, este método retornará um código `201 Created` de resposta e 
 ``` http
 POST https://graph.microsoft.com/beta/tenantRelationships/managedTenants/tenantTags
 Content-Type: application/json
-Content-length: 382
 
 {
   "displayName": "Support",

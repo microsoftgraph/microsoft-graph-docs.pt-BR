@@ -1,16 +1,16 @@
 ---
 title: 'seção: copyToSectionGroup'
 description: Copia uma seção para um grupo de seção específico.
-localization_priority: Normal
+ms.localizationpriority: medium
 author: jewan-microsoft
 ms.prod: onenote
 doc_type: apiPageType
-ms.openlocfilehash: a75fcf7c2b52ff8309eb898f6f204186e06771de
-ms.sourcegitcommit: 94c4acf8bd03c10a44b12952b6cb4827df55b978
+ms.openlocfilehash: 27b7f9bac4a27f0738ad4accdfd4d1d4f943ab97
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/06/2021
-ms.locfileid: "52786734"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60944743"
 ---
 # <a name="section-copytosectiongroup"></a>seção: copyToSectionGroup
 
@@ -22,7 +22,7 @@ Copia uma seção para um grupo de seção específico.
 
 Para operações de cópia, siga um padrão de chamada assíncrona: primeiro chame a ação Copiar e, em seguida, sonda o ponto de extremidade da operação para o resultado.
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
@@ -50,11 +50,11 @@ No corpo da solicitação, forneça um objeto JSON que contém os parâmetros de
 
 | Parâmetro    | Tipo   |Descrição|
 |:---------------|:--------|:----------|
-|siteCollectionId|String|A id do site SharePoint para o que copiar. Use somente ao copiar para um SharePoint site.|
-|siteId|String|A id do SharePoint web para o que copiar. Use somente ao copiar para um SharePoint site.|
+|siteCollectionId|Cadeia de caracteres|A id do site SharePoint para o que copiar. Use somente ao copiar para um SharePoint site.|
+|siteId|Cadeia de caracteres|A id do SharePoint web para o que copiar. Use somente ao copiar para um SharePoint site.|
 |groupId|Cadeia de caracteres|A id do grupo para o que copiar. Use somente ao copiar para um Microsoft 365 grupo.|
 |id|String|Obrigatório. A id do grupo de seção de destino. |
-|renameAs|String|O nome da cópia. Padrão para o nome do item existente. |
+|renameAs|Cadeia de caracteres|O nome da cópia. Padrão para o nome do item existente. |
 
 <!--groupId missing-->
 <!--|siteCollectionId|String||
@@ -77,7 +77,6 @@ Este é um exemplo da solicitação.
 ```http
 POST https://graph.microsoft.com/beta/me/onenote/sections/{id}/copyToSectionGroup
 Content-type: application/json
-Content-length: 84
 
 {
   "id": "id-value",

@@ -1,24 +1,24 @@
 ---
-title: Criar email
-description: Criar um novo email.
-localization_priority: Normal
+title: Criar itemEmail
+description: Crie um novo itemEmail.
+ms.localizationpriority: medium
 author: kevinbellinger
 ms.prod: people
 doc_type: apiPageType
-ms.openlocfilehash: 9da1d19a99182e7b242e162ae67b933db74cd995
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: f340785f7237ee32233fba6f0b49bb301143f236
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48969671"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60938452"
 ---
-# <a name="create-itememail"></a>Criar email
+# <a name="create-itememail"></a>Criar itemEmail
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Criar um novo objeto de [email](../resources/itememail.md) no [perfil](../resources/profile.md)de um usuário.
+Criar um novo [objeto itemEmail](../resources/itememail.md) no perfil de um [usuário.](../resources/profile.md)
 
 ## <a name="permissions"></a>Permissões
 
@@ -26,8 +26,8 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 | Tipo de permissão                        | Permissões (da com menos para a com mais privilégios) |
 |:---------------------------------------|:--------------------------------------------|
-| Delegado (conta corporativa ou de estudante)     | User. ReadWrite, User. ReadWrite. All          |
-| Delegado (conta pessoal da Microsoft) | User. ReadWrite, User. ReadWrite. All          |
+| Delegado (conta corporativa ou de estudante)     | User.ReadWrite, User.ReadWrite.All          |
+| Delegado (conta pessoal da Microsoft) | User.ReadWrite, User.ReadWrite.All          |
 | Aplicativo                            | User.ReadWrite.All                          |
 
 ## <a name="http-request"></a>Solicitação HTTP
@@ -48,24 +48,24 @@ POST /users/{id | userPrincipalName}/profile/emails
 |Content-Type|application/json. Obrigatório.|
 
 ## <a name="request-body"></a>Corpo da solicitação
-No corpo da solicitação, forneça uma representação JSON do objeto de [email](../resources/itememail.md) .
+No corpo da solicitação, fornece uma representação JSON do [objeto itemEmail.](../resources/itememail.md)
 
-A tabela a seguir mostra as propriedades que são possíveis de definir ao criar um novo objeto item de [email](../resources/itememail.md) no [perfil](../resources/profile.md)de um usuário.
+A tabela a seguir mostra as propriedades que são possíveis de definir ao criar um novo [objeto itemEmail](../resources/itememail.md) no perfil de um [usuário](../resources/profile.md).
 
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|address|Cadeia de caracteres|O próprio endereço de email.|
-|allowedAudiences|String|As audiências que podem ver os valores contidos na entidade. Herdado de [MyFace](../resources/itemfacet.md). Os valores possíveis são: `me`, `family`, `contacts`, `groupMembers`, `organization`, `federatedOrganizations`, `everyone`, `unknownFutureValue`.|
-|displayName|String|O nome ou rótulo que um usuário associou a um endereço de email específico.|
-|fracassa|[inferenceData](../resources/inferencedata.md)|Contém detalhes de inferência se a entidade for inferida pelo aplicativo de criação ou modificação. Herdado de [MyFace](../resources/itemfacet.md).|
-|source|[personDataSource](../resources/persondatasource.md)|Onde os valores são originados se forem sincronizados a partir de outro serviço. Herdado de [MyFace](../resources/itemfacet.md).|
-|tipo|emailtype|O tipo de endereço de email. Os valores possíveis são: `unknown`, `work`, `personal`, `main`, `other`.|
+|address|Cadeia de caracteres|O endereço de email em si.|
+|allowedAudiences|Cadeia de caracteres|As audiências que são capazes de ver os valores contidos na entidade. Herdado [do itemFacet](../resources/itemfacet.md). Os valores possíveis são: `me`, `family`, `contacts`, `groupMembers`, `organization`, `federatedOrganizations`, `everyone`, `unknownFutureValue`.|
+|displayName|Cadeia de caracteres|O nome ou o rótulo que um usuário associou a um endereço de email específico.|
+|inferência|[inferenceData](../resources/inferencedata.md)|Contém detalhes de inferência se a entidade for inferida pelo aplicativo de criação ou modificação. Herdado [do itemFacet](../resources/itemfacet.md).|
+|source|[personDataSource](../resources/persondatasource.md)|Onde os valores se originaram se sincronizados de outro serviço. Herdado [do itemFacet](../resources/itemfacet.md).|
+|type|emailType|O tipo de endereço de email. Os valores possíveis são: `unknown`, `work`, `personal`, `main`, `other`.|
 
 
 
 ## <a name="response"></a>Resposta
 
-Se tiver êxito, este método retornará um `201 Created` código de resposta e um objeto de [email](../resources/itememail.md) no corpo da resposta.
+Se tiver êxito, este método retornará um código `201 Created` de resposta e um objeto [itemEmail](../resources/itememail.md) no corpo da resposta.
 
 ## <a name="examples"></a>Exemplos
 
@@ -78,7 +78,6 @@ Se tiver êxito, este método retornará um `201 Created` código de resposta e 
 ``` http
 POST https://graph.microsoft.com/beta/me/profile/emails
 Content-Type: application/json
-Content-length: 383
 
 {
   "address": "Innocenty.Popov@adventureworks.com",

@@ -1,16 +1,16 @@
 ---
 title: 'contactFolder: delta'
 description: Obtenha um conjunto de pastas de contatos que foram adicionadas, excluídas ou removidas da caixa de correio do usuário.
-localization_priority: Normal
+ms.localizationpriority: medium
 author: kevinbellinger
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 793c78ec9dde421979bb678f68a92dd693a5ab91
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: 1cc76a2595c88c28995da847e0b8db527200cee1
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52047102"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60944918"
 ---
 # <a name="contactfolder-delta"></a>contactFolder: delta
 
@@ -45,7 +45,7 @@ O controle de alterações em pastas de contato corresponde a uma série de uma 
 
 | Parâmetro de consulta      | Tipo   |Descrição|
 |:---------------|:--------|:----------|
-| $deltatoken | cadeia de caracteres | Um [token de estado](/graph/delta-query-overview) retornado na URL `deltaLink` da chamada de função **delta** anterior da mesma coleção de pastas de contato indicando a conclusão da série de controle de alterações. Salve e aplique toda a URL `deltaLink`, incluindo esse token na primeira solicitação da próxima série de controle de alterações da coleção.|
+| $deltatoken | string | Um [token de estado](/graph/delta-query-overview) retornado na URL `deltaLink` da chamada de função **delta** anterior da mesma coleção de pastas de contato indicando a conclusão da série de controle de alterações. Salve e aplique toda a URL `deltaLink`, incluindo esse token na primeira solicitação da próxima série de controle de alterações da coleção.|
 | $skiptoken | string | Um [token de estado](/graph/delta-query-overview) retornado na URL `nextLink` da chamada de função **delta** anterior indicando que não há mais alterações a serem controladas na mesma coleção de pastas de contato. |
 
 ### <a name="odata-query-parameters"></a>Parâmetros de consulta OData
@@ -114,7 +114,6 @@ Observação: o objeto de resposta mostrado aqui pode ser encurtado para legibil
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 254
 
 {
   "@odata.nextLink":"https://graph.microsoft.com/beta/me/contactfolders/delta?$skiptoken={_skipToken_}",

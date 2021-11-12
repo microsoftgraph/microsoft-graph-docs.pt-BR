@@ -2,15 +2,15 @@
 title: Criar usuário custodiadoSource
 description: Crie um novo objeto userSource custodiante.
 author: mahage-msft
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: ediscovery
 doc_type: apiPageType
-ms.openlocfilehash: 1fb67377785a8120bb6e4b1453901b9f8b0137ed
-ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
+ms.openlocfilehash: 2764533911aa9d398233474dfe0fa9d9921d4c5d
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "50946111"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60927110"
 ---
 # <a name="create-custodian-usersource"></a>Criar usuário custodiadoSource
 
@@ -27,7 +27,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |Tipo de permissão|Permissões (da com menos para a com mais privilégios)|
 |:---|:---|
 |Delegado (conta corporativa ou de estudante)|eDiscovery.Read.All, eDiscovery.ReadWrite.All|
-|Delegado (conta pessoal da Microsoft)|Sem suporte.|
+|Delegada (conta pessoal da Microsoft)|Sem suporte.|
 |Aplicativo|Sem suporte.|
 
 ## <a name="http-request"></a>Solicitação HTTP
@@ -78,7 +78,6 @@ Se tiver êxito, este método retornará um código de resposta e um `201 Create
 ``` http
 POST https://graph.microsoft.com/beta/compliance/ediscovery/cases/4c8f8f70-7785-4bd4-b296-c98376a2c5e1/custodians/2192ca408ea2410eba3bec8ae873be6b/userSources
 Content-Type: application/json
-Content-length: 233
 
 {
     "email":"megan@contoso.com",

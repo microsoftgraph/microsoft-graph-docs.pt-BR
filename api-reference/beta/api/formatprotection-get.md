@@ -1,16 +1,16 @@
 ---
 title: Obter FormatProtection
 description: Recupere as propriedades e os relacionamentos do objeto formatprotection.
-localization_priority: Normal
+ms.localizationpriority: medium
 doc_type: apiPageType
 author: ruoyingl
 ms.prod: ''
-ms.openlocfilehash: 40d24ef867a58c887cc649193a8b733887bbb52b
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: 19e740133ee68eb685a1cca28a6074a747019dd1
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52042258"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60938857"
 ---
 # <a name="get-formatprotection"></a>Get FormatProtection
 
@@ -83,7 +83,7 @@ GET https://graph.microsoft.com/beta/me/drive/items/{id}/workbook/names/{name}/r
 ---
 
 ##### <a name="response"></a>Resposta
-Veja a seguir um exemplo da resposta. Observação: o objeto de resposta mostrado aqui pode ser encurtado para legibilidade.
+Aqui está um exemplo da resposta. Observação: o objeto de resposta mostrado aqui pode ser reduzido para facilitar a leitura.
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -92,7 +92,6 @@ Veja a seguir um exemplo da resposta. Observação: o objeto de resposta mostrad
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 45
 
 {
   "locked": true,

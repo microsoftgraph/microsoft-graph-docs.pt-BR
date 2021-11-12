@@ -2,15 +2,15 @@
 title: Listar tendênciasAround
 description: Insight calculado que retorna a lista de itens que estão na tendência em torno de um usuário.
 author: jpettere
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: users
 doc_type: apiPageType
-ms.openlocfilehash: b1594d031f9ff007a87243ccf0cf481022b48d89
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: c7b6450fae23c438b35ef4bf796209166dc0d3a1
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52052583"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60943042"
 ---
 # <a name="list-trendingaround"></a>Listar tendênciasAround
 
@@ -28,8 +28,8 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
 |:--------------------|:---------------------------------------------------------|
 |Delegado (conta corporativa ou de estudante) | Sites.Read.All    |
-|Delegado (conta pessoal da Microsoft) | Sem suporte.    |
-|Application | Sites.Read.All |
+|Delegada (conta pessoal da Microsoft) | Sem suporte.    |
+|Aplicativo | Sites.Read.All |
 
 ## <a name="http-request"></a>Solicitação HTTP
 ```http
@@ -60,11 +60,10 @@ Se tiver êxito, este método retornará um código de resposta 200 OK e uma col
 GET https://graph.microsoft.com/beta/me/trendingAround
 ```
 ##### <a name="response"></a>Resposta
-Veja a seguir um exemplo da resposta. Observação: o objeto de resposta mostrado aqui pode ser encurtado para legibilidade.
+Aqui está um exemplo da resposta. Observação: o objeto de resposta mostrado aqui pode ser reduzido para facilitar a leitura.
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 226
 
 {
   "id": "id-value",

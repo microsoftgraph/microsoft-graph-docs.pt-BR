@@ -2,15 +2,15 @@
 title: Criar seção
 description: Crie uma nova seção no bloco de anotações especificado.
 author: jewan-microsoft
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: onenote
 doc_type: apiPageType
-ms.openlocfilehash: 161868315d53a882912115d6831430da9c246ab0
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 350bc1699f57256ff2385939c624c7712c8744ac
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48967672"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60941236"
 ---
 # <a name="create-section"></a>Criar seção
 
@@ -49,7 +49,7 @@ Dentro do mesmo nível de hierarquia, os nomes das seções devem ser exclusivos
 
 ## <a name="response"></a>Resposta
 
-Se tiver êxito, este método retornará um `201 Created` código de resposta e um objeto [onenoteSection](../resources/onenotesection.md) no corpo da resposta.
+Se tiver êxito, este método retornará um código `201 Created` de resposta e um objeto [onenoteSection](../resources/onenotesection.md) no corpo da resposta.
 
 ## <a name="example"></a>Exemplo
 ##### <a name="request"></a>Solicitação
@@ -63,7 +63,6 @@ Este é um exemplo da solicitação.
 ```http
 POST https://graph.microsoft.com/beta/me/onenote/notebooks/{id}/sections
 Content-type: application/json
-Content-length: 27
 
 {
   "displayName": "Section name"
@@ -97,7 +96,6 @@ Veja a seguir um exemplo da resposta. Observação: O objeto response mostrado a
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 272
 
 {
   "isDefault": true,

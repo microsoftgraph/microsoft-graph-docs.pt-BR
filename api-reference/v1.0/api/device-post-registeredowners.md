@@ -5,12 +5,12 @@ author: spunukol
 ms.localizationpriority: medium
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: e26a1720be5c866be9c4b29f4cda71564d26ed0c
-ms.sourcegitcommit: f4999aa6fc05f845027db01aa489f7086f9850e1
+ms.openlocfilehash: 3432d6e4afe0b6afe19a85113d90fd35acb2db7f
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/13/2021
-ms.locfileid: "60290285"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60940858"
 ---
 # <a name="create-registeredowner"></a>Criar registeredOwner
 
@@ -57,7 +57,6 @@ Este é um exemplo da solicitação.
 ```http
 POST https://graph.microsoft.com/v1.0/devices/{id}/registeredOwners/$ref
 Content-type: application/json
-Content-length: 30
 
 {
   "@odata.id": "https://graph.microsoft.com/v1.0/directoryObjects/{id}"

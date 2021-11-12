@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: kevinbellinger
 ms.prod: people
 doc_type: apiPageType
-ms.openlocfilehash: 484fb8bba170110a08fe507be3d417a410ff8a03
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 696019a9add48be241a495f4471cd006126f14ab
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59020522"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60946640"
 ---
 # <a name="create-itempatent"></a>Criar itemPatent
 
@@ -53,9 +53,9 @@ A tabela a seguir mostra as propriedades que são possíveis de definir ao criar
 |:---|:---|:---|
 |allowedAudiences|Cadeia de caracteres|As audiências que são capazes de ver os valores contidos na entidade. Herdado [do itemFacet](../resources/itemfacet.md). Os valores possíveis são: `me`, `family`, `contacts`, `groupMembers`, `organization`, `federatedOrganizations`, `everyone`, `unknownFutureValue`.|
 |description|Cadeia de caracteres|Descpription of the patent or filing. |
-|displayName|String|Título da patente ou arquivamento. |
+|displayName|Cadeia de caracteres|Título da patente ou arquivamento. |
 |inferência|[inferenceData](../resources/inferencedata.md)|Contém detalhes de inferência se a entidade for inferida pelo aplicativo de criação ou modificação. Herdado [do itemFacet](../resources/itemfacet.md).|
-|isPending        |Boleano     |Indica que a patente está pendente.        |
+|isPending        |Boolean     |Indica que a patente está pendente.        |
 |issuedDate       |Data        |A data em que a patente foi concedida.   |
 |issuingAuthority |Cadeia de caracteres      |Autoridade que concedeu a patente.     |
 |number           |Cadeia de caracteres      |O número da patente.                      |
@@ -77,7 +77,6 @@ Se tiver êxito, este método retornará um código `201 Created` de resposta e 
 ``` http
 POST https://graph.microsoft.com/beta/me/profile/patents
 Content-Type: application/json
-Content-length: 497
 
 {
   "description": "Calculating the intent of a user to purchase an item based on the amount of time they hover their mouse over a given pixel.",

@@ -2,15 +2,15 @@
 title: Listar printConnectors para impressora
 description: Recupere uma lista de conectores associados à impressora.
 author: braedenp-msft
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: universal-print
 doc_type: apiPageType
-ms.openlocfilehash: 753aeafaef81f39bc9302297581d616d391a5dce
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: accc8c741b8df61c645650f8253be3b6f94be1f4
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52049902"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60933072"
 ---
 # <a name="list-printconnectors-for-printer"></a>Listar printConnectors para impressora
 
@@ -28,8 +28,8 @@ Para usar o serviço Impressão Universal, o usuário ou locatário do aplicativ
 |Tipo de permissão | Permissões (da com menos para a com mais privilégios) |
 |:---------------|:--------------------------------------------|
 |Delegado (conta corporativa ou de estudante)| PrintConnector.Read.All, PrintConnector.ReadWrite.All |
-|Delegado (conta pessoal da Microsoft)|Sem suporte.|
-|Application| Sem suporte. |
+|Delegada (conta pessoal da Microsoft)|Sem suporte.|
+|Aplicativo| Sem suporte. |
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- { "blockType": "ignored" } -->
@@ -91,7 +91,6 @@ Este é um exemplo de resposta.
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 1373
 
 {
   "@odata.context": "https://graph.microsoft.com/beta/$metadata#Collection(microsoft.graph.printConnector)",

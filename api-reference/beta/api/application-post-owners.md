@@ -2,15 +2,15 @@
 title: Adicionar proprietário
 description: Use essa API para adicionar um proprietário a um aplicativo.
 author: sureshja
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: applications
 doc_type: apiPageType
-ms.openlocfilehash: 54fd7be410eeea8366a8c2263a0cbdd6ba3237aa
-ms.sourcegitcommit: 94c4acf8bd03c10a44b12952b6cb4827df55b978
+ms.openlocfilehash: 661cd33cb10f0d50d7f66c390ddb609038232eea
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/06/2021
-ms.locfileid: "52786271"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60942496"
 ---
 # <a name="add-owner"></a>Adicionar proprietário
 
@@ -20,13 +20,13 @@ Namespace: microsoft.graph
 
 Use essa API para adicionar um proprietário a um aplicativo postando na coleção owners.
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
 |:--------------------|:---------------------------------------------------------|
 |Delegado (conta corporativa ou de estudante) |  Application.ReadWrite.All e Directory.Read.All, Directory.ReadWrite.All, Directory.AccessAsUser.All    |
-|Delegado (conta pessoal da Microsoft) | Sem suporte.    |
+|Delegada (conta pessoal da Microsoft) | Sem suporte.    |
 |Aplicativo | Application.ReadWrite.OwnedBy e Directory.Read.All, Application.ReadWrite.All e Directory.Read.All, Directory.ReadWrite.All |
 
 ## <a name="http-request"></a>Solicitação HTTP
@@ -59,7 +59,6 @@ O exemplo a seguir mostra a solicitação.
 ```http
 POST https://graph.microsoft.com/beta/applications/{id}/owners/$ref
 Content-type: application/json
-Content-length: 30
 
 {
 "@odata.id": "https://graph.microsoft.com/beta/directoryObjects/{id}"

@@ -2,20 +2,18 @@
 title: Listar printJobs para uma printerShare
 description: Recupere uma lista de trabalhos de impressão associados ao compartilhamento de impressão.
 author: nilakhan
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: cloud-printing
 doc_type: apiPageType
-ms.openlocfilehash: 7899640922cd5f8ba38d11bba03c485dbb6099bd
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: 5d19fbfc79ee464d6149ed645c3e48448e163654
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52053913"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60941614"
 ---
 # <a name="list-printjobs-for-a-printershare"></a>Listar printJobs para uma printerShare
 Namespace: microsoft.graph
-
-[!INCLUDE [cloudprinting-pricing-disclaimer](../../includes/cloudprinting-pricing-disclaimer.md)]
 
 Recupere uma lista de trabalhos de impressão associados à [printerShare](../resources/printershare.md).
 
@@ -29,7 +27,7 @@ Para ler trabalhos de impressão de outro usuário, o usuário inscreveu precisa
 |Tipo de permissão | Permissões (da com menos para a com mais privilégios) |
 |:---------------|:--------------------------------------------|
 |Delegado (conta corporativa ou de estudante)| PrintJob.ReadBasic, PrintJob.Read, PrintJob.ReadBasic.All, PrintJob.Read.All, PrintJob.ReadWriteBasic, PrintJob.ReadWrite, PrintJob.ReadWriteBasic.All, PrintJob.ReadWrite.All |
-|Delegado (conta pessoal da Microsoft)|Sem suporte.|
+|Delegada (conta pessoal da Microsoft)|Sem suporte.|
 |Aplicativo| PrintJob.ReadBasic.All, PrintJob.Read.All, PrintJob.ReadWriteBasic.All, PrintJob.ReadWrite.All |
 
 ## <a name="http-request"></a>Solicitação HTTP

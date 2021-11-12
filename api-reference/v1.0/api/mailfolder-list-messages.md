@@ -5,12 +5,12 @@ ms.localizationpriority: high
 author: abheek-das
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 65d5f259c92b4ecfcb402a9721633f5ce54e638f
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 518171355a64e0ae24429f04b09ea5e70abc4ae1
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59053501"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60931590"
 ---
 # <a name="list-messages"></a>Listar mensagens
 
@@ -86,7 +86,6 @@ Aqui está um exemplo da resposta. Observação: o objeto de resposta mostrado a
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 317
 
 {
   "value": [

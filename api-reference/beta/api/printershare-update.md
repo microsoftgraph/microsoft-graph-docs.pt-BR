@@ -2,15 +2,15 @@
 title: Atualizar o printershare
 description: Atualize as propriedades do compartilhamento de impressora. Esse método pode ser usado para "trocar" impressoras.
 author: braedenp-msft
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: universal-print
 doc_type: apiPageType
-ms.openlocfilehash: ebcf17c40b3d9175ec9db4c9621ebfc053647c1d
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: 142f965fe68bfaa84c827ee047c257729c6e4107
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52037444"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60947239"
 ---
 # <a name="update-printershare"></a>Atualizar o printershare
 
@@ -30,8 +30,8 @@ Além das permissões a seguir, o usuário ou locatário do aplicativo deve ter 
 |Tipo de permissão | Permissões (da com menos para a com mais privilégios) |
 |:---------------|:--------------------------------------------|
 |Delegado (conta corporativa ou de estudante)| PrinterShare.ReadWrite.All |
-|Delegado (conta pessoal da Microsoft)|Sem suporte.|
-|Application|Sem suporte.|
+|Delegada (conta pessoal da Microsoft)|Sem suporte.|
+|Aplicativo|Sem suporte.|
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- { "blockType": "ignored" } -->
@@ -52,8 +52,8 @@ As seguintes propriedades podem ser atualizadas:
 
 | Propriedade     | Tipo        | Descrição |
 |:-------------|:------------|:------------|
-|printer|microsoft.graph.printer|A impressora à que essa impressora está relacionada. Use a sintaxe conforme mostrado no exemplo a seguir para atualizar a impressora à qual esse compartilhamento de impressora `printer@odata.bind` está associado.|
-|displayName|String|O nome do compartilhamento de impressora que os clientes de impressão devem exibir.|
+|impressora|microsoft.graph.printer|A impressora à que essa impressora está relacionada. Use a sintaxe conforme mostrado no exemplo a seguir para atualizar a impressora à qual esse compartilhamento de impressora `printer@odata.bind` está associado.|
+|displayName|Cadeia de caracteres|O nome do compartilhamento de impressora que os clientes de impressão devem exibir.|
 |allowAllUsers|Boolean| Se for true, todos os usuários e grupos terão acesso a esse compartilhamento de impressora. Isso sobressalta as listas de permissão definidas pelas propriedades de navegação allowedUsers e allowedGroups.|
 
 ## <a name="response"></a>Resposta
@@ -70,7 +70,6 @@ Este é um exemplo de solicitação.
 ```http
 PATCH https://graph.microsoft.com/beta/print/shares/{id}
 Content-type: application/json
-Content-length: 109
 
 {
   "displayName": "ShareName",
@@ -107,7 +106,6 @@ Este é um exemplo de resposta.
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 225
 
 {
   "@odata.context": "https://graph.microsoft.com/beta/$metadata#print/shares/$entity",

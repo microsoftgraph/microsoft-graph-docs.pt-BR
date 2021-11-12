@@ -1,16 +1,16 @@
 ---
 title: Criar plannerBucket
 description: Use essa API para criar um novo **plannerBucket**.
-localization_priority: Normal
+ms.localizationpriority: medium
 author: TarkanSevilmis
 ms.prod: planner
 doc_type: apiPageType
-ms.openlocfilehash: 2ab7899ffac413aa885c5d3c8e89399e95edbfb0
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: a0b63a628a275ec3b7134c111ed42979bad0a47f
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52055355"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60938627"
 ---
 # <a name="create-plannerbucket"></a>Criar plannerBucket
 
@@ -61,7 +61,6 @@ Este é um exemplo da solicitação.
 ```http
 POST https://graph.microsoft.com/beta/planner/buckets
 Content-type: application/json
-Content-length: 92
 
 {
   "name": "Advertising",
@@ -89,7 +88,7 @@ Content-length: 92
 
 No corpo da solicitação, forneça uma representação JSON do objeto [plannerBucket](../resources/plannerbucket.md).
 ##### <a name="response"></a>Resposta
-Veja a seguir um exemplo da resposta. Observação: o objeto de resposta mostrado aqui pode ser encurtado para legibilidade.
+Aqui está um exemplo da resposta. Observação: o objeto de resposta mostrado aqui pode ser reduzido para facilitar a leitura.
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -98,7 +97,6 @@ Veja a seguir um exemplo da resposta. Observação: o objeto de resposta mostrad
 ```http
 HTTP/1.1 201 Created
 Content-type: application/json
-Content-length: 145
 
 {
   "name": "Advertising",

@@ -2,15 +2,15 @@
 title: Criar rejectedSender
 description: Adiciona um novo usuário ou grupo à lista rejectedSender.
 author: Jordanndahl
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: 78574fbf0d739075da252e1794c0c1c5f63df295
-ms.sourcegitcommit: 4fa6fcc058c7f8d8cad58c0b82db23d6c7da37d2
+ms.openlocfilehash: 1ee955359bc75ec1770e6de3f1ef2eb611c78e6d
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/27/2021
-ms.locfileid: "52681347"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60926970"
 ---
 # <a name="create-rejectedsender"></a>Criar rejectedSender
 
@@ -60,7 +60,6 @@ Este é um exemplo de solicitação.
 ```http
 POST https://graph.microsoft.com/beta/groups/{id}/rejectedSenders/$ref
 Content-type: application/json
-Content-length: 30
 
 {
   "@odata.id":"https://graph.microsoft.com/beta/users/alexd@contoso.com"

@@ -2,20 +2,18 @@
 title: Criar allowedUser para printerShare
 description: Conceda ao usuário especificado acesso para enviar trabalhos de impressão para o compartilhamento de impressora associado.
 author: nilakhan
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: cloud-printing
 doc_type: apiPageType
-ms.openlocfilehash: 2b7672d18f0af66b23489b5fb0282258d12241c8
-ms.sourcegitcommit: 94c4acf8bd03c10a44b12952b6cb4827df55b978
+ms.openlocfilehash: e7b63a51b9bb7e1e7410daa5fc88fdf3d938f589
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/06/2021
-ms.locfileid: "52787776"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60940667"
 ---
 # <a name="create-alloweduser-for-printershare"></a>Criar allowedUser para printerShare
 Namespace: microsoft.graph
-
-[!INCLUDE [cloudprinting-pricing-disclaimer](../../includes/cloudprinting-pricing-disclaimer.md)]
 
 Conceda ao usuário especificado acesso para enviar trabalhos de impressão para a [impressora associadaShare](../resources/printershare.md).
 
@@ -27,7 +25,7 @@ Para usar o serviço Impressão Universal, o usuário ou locatário do aplicativ
 |Tipo de permissão | Permissões (da com menos para a com mais privilégios) |
 |:---------------|:--------------------------------------------|
 |Delegado (conta corporativa ou de estudante)| PrinterShare.ReadWrite.All |
-|Delegado (conta pessoal da Microsoft)|Sem suporte.|
+|Delegada (conta pessoal da Microsoft)|Sem suporte.|
 |Aplicativo|Sem suporte.|
 
 ## <a name="http-request"></a>Solicitação HTTP
@@ -66,7 +64,6 @@ Se tiver êxito, este método retornará um código de resposta `204 No Content`
 ``` http
 POST https://graph.microsoft.com/v1.0/print/shares/{printerShareId}/allowedUsers/$ref
 Content-Type: application/json
-Content-length: 46
 
 {
   "@odata.id": "https://graph.microsoft.com/v1.0/users/{userId}"

@@ -2,15 +2,15 @@
 title: Listar taskDefinitions
 description: Recupere uma lista de definições de tarefas definidas pelo aplicativo solicitando no locatário.
 author: braedenp-msft
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: universal-print
 doc_type: apiPageType
-ms.openlocfilehash: 68de2409013cff88752f5a26f1ea06e2a25bb755
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: 5a55868a45d51deeebb4721307323e8678ea9f45
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52053633"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60933099"
 ---
 # <a name="list-taskdefinitions"></a>Listar taskDefinitions
 
@@ -31,7 +31,7 @@ Além das permissões a seguir, o locatário do usuário deve ter uma assinatura
 |:---------------|:--------------------------------------------|
 |Delegado (conta corporativa ou de estudante)| Sem suporte. |
 |Delegado (conta pessoal da Microsoft)|Sem suporte.|
-|Application| PrintTaskDefinition.ReadWrite.All |
+|Aplicativo| PrintTaskDefinition.ReadWrite.All |
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- { "blockType": "ignored" } -->
@@ -100,7 +100,6 @@ Este é um exemplo de resposta.
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 269
 
 {
   "@odata.context": "https://graph.microsoft.com/beta/$metadata#print/taskDefinitions",

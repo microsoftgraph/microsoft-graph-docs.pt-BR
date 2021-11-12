@@ -2,21 +2,19 @@
 title: Tipo de recurso printOperation
 description: Representa uma operação de impressão universal de longa duração. Classe base para tipos de operação como printerCreateOperation.
 author: nilakhan
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: cloud-printing
 doc_type: resourcePageType
-ms.openlocfilehash: 0630d05e30d415ad60f4dd7ea4e7f729506e41b2cc20bded955e1593a6f56161
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 55bf24e75f79a66d9691b14ebac1073c43f15a4e
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54138455"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60942503"
 ---
 # <a name="printoperation-resource-type"></a>Tipo de recurso printOperation
 
 Namespace: microsoft.graph
-
-[!INCLUDE [cloudprinting-pricing-disclaimer](../../includes/cloudprinting-pricing-disclaimer.md)]
 
 Representa uma operação de impressão universal de longa duração. Classe base para tipos de operação como [printerCreateOperation](printercreateoperation.md).
 
@@ -28,7 +26,7 @@ Representa uma operação de impressão universal de longa duração. Classe bas
 ## <a name="properties"></a>Propriedades
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|id|Cadeia de caracteres|O identificador da operação. Apenas leitura.|
+|id|Cadeia de caracteres|O identificador da operação. Somente leitura.|
 |status|[printOperationStatus](printoperationstatus.md)|O status da operação. Somente leitura.|
 |createdDateTime|DateTimeOffset|DateTimeOffset quando a operação foi criada. Somente leitura.|
 

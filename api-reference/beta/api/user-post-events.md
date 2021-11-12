@@ -1,16 +1,16 @@
 ---
 title: Criar evento
 description: Crie um evento no calendário especificado ou no calendário padrão do usuário.
-localization_priority: Normal
+ms.localizationpriority: medium
 doc_type: apiPageType
 author: harini84
 ms.prod: outlook
-ms.openlocfilehash: cad97bd555d6d0388f6f402f1365a152942af34b
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: fc5909cdca77d00dd5c8812f9d232c2b366193c0
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52049622"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60944057"
 ---
 # <a name="create-event"></a>Criar evento
 
@@ -149,7 +149,7 @@ Content-type: application/json
 No corpo da solicitação, forneça uma representação JSON do objeto [event](../resources/event.md).
 #### <a name="response"></a>Resposta
 Veja um exemplo de resposta que exibe as propriedades **start** e **end** usando o fuso horário especificado no cabeçalho `Prefer: outlook.timezone`.
-Observação: o objeto de resposta mostrado aqui pode ser encurtado para legibilidade.
+Observação: o objeto de resposta exibido aqui pode ser encurtado para legibilidade.
 <!-- {
   "blockType": "response",
   "name": "create_event_from_user",
@@ -159,7 +159,6 @@ Observação: o objeto de resposta mostrado aqui pode ser encurtado para legibil
 ```http
 HTTP/1.1 201 Created
 Content-type: application/json
-Content-length: 2197
 
 {
     "@odata.context":"https://graph.microsoft.com/beta/$metadata#users('cd209b0b-3f83-4c35-82d2-d88a61820480')/events/$entity",
@@ -266,7 +265,6 @@ No corpo da solicitação, forneça uma representação JSON do objeto [event](.
 POST https://graph.microsoft.com/beta/me/events
 Prefer: outlook.timezone="Pacific Standard Time"
 Content-type: application/json
-Content-length: 1390
 
 {
   "subject": "Plan summer company picnic",
@@ -348,7 +346,7 @@ Content-length: 1390
 
 #### <a name="response"></a>Resposta
 O exemplo de resposta a seguir mostra o evento criado que especifica as informações dos três locais de reunião. Devido ao cabeçalho da solicitação `Prefer: outlook.timezone="Pacific Standard Time"`, as propriedades **start** e **end** são expressas em PST.
-Observação: o objeto de resposta mostrado aqui pode ser encurtado para legibilidade.
+Observação: o objeto de resposta exibido aqui pode ser encurtado para legibilidade.
 <!-- {
   "blockType": "response",
   "name": "create_event_from_user_multiple_locations",
@@ -358,7 +356,6 @@ Observação: o objeto de resposta mostrado aqui pode ser encurtado para legibil
 ```http
 HTTP/1.1 201 Created
 Content-type: application/json
-Content-length: 2985
 
 {
   "@odata.context":"https://graph.microsoft.com/beta/$metadata#users('d1a2fae9-db66-4cc9-8133-2184c77af1b8')/events/$entity",
@@ -556,8 +553,7 @@ Content-type: application/json
 
 No corpo da solicitação, forneça uma representação JSON do objeto [event](../resources/event.md).
 #### <a name="response"></a>Resposta
-Veja a seguir um exemplo da resposta.
-Observação: o objeto de resposta mostrado aqui pode ser encurtado para legibilidade.
+Aqui está um exemplo da resposta. Observação: o objeto de resposta mostrado aqui pode ser reduzido para facilitar a leitura.
 <!-- {
   "blockType": "response",
   "name": "create_event_recurring",
@@ -732,8 +728,7 @@ Content-type: application/json
 
 No corpo da solicitação, forneça uma representação JSON do objeto [event](../resources/event.md).
 #### <a name="response"></a>Resposta
-Veja a seguir um exemplo da resposta.
-Observação: o objeto de resposta mostrado aqui pode ser encurtado para legibilidade.
+Aqui está um exemplo da resposta. Observação: o objeto de resposta mostrado aqui pode ser reduzido para facilitar a leitura.
 <!-- {
   "blockType": "response",
   "name": "create_event_recurring_daily",
@@ -924,7 +919,6 @@ Observação: o objeto de resposta mostrado aqui pode ser encurtado para legibil
 ```http
 HTTP/1.1 201 Created
 Content-type: application/json
-Content-length: 2197
 
 {
     "@odata.context":"https://graph.microsoft.com/beta/$metadata#users('cd209b0b-3f83-4c35-82d2-d88a61820480')/events/$entity",

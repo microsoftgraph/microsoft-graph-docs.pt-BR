@@ -1,16 +1,16 @@
 ---
 title: Listar aplicativos
 description: Recupere uma lista de objetos de aplicativo associados ao connectorGroup.
-localization_priority: Normal
+ms.localizationpriority: medium
 author: japere
 ms.prod: applications
 doc_type: apiPageType
-ms.openlocfilehash: 85b9e7eb24d880ea6fe82a7461bfec20594cee97
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: 646bd19e43c112d11dbe7228de1a1f00e7b29553
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52047172"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60936057"
 ---
 # <a name="list-applications-assigned-to-a-connectorgroup"></a>Listar aplicativos atribuídos a um connectorGroup
 
@@ -26,7 +26,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
 |:--------------------|:---------------------------------------------------------|
 |Delegado (conta corporativa ou de estudante) | Directory.ReadWrite.All, Directory.AccessAsUser.All    |
-|Delegado (conta pessoal da Microsoft) | Sem suporte.    |
+|Delegada (conta pessoal da Microsoft) | Sem suporte.    |
 |Aplicativo | Sem suporte.  |
 
 ## <a name="http-request"></a>Solicitação HTTP
@@ -80,7 +80,7 @@ GET https://graph.microsoft.com/beta/onPremisesPublishingProfiles/applicationPro
 ---
 
 ##### <a name="response"></a>Resposta
-Este é um exemplo de resposta. Observação: o objeto de resposta mostrado aqui pode ser encurtado para legibilidade.
+Eis um exemplo da resposta. Observação: o objeto de resposta exibido aqui pode ser reduzido para facilitar a leitura.
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -90,7 +90,6 @@ Este é um exemplo de resposta. Observação: o objeto de resposta mostrado aqui
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 420
 
 {
   "value": [

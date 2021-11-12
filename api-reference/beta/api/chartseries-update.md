@@ -2,15 +2,15 @@
 title: Atualizar chartseries
 description: Atualiza as propriedades do objeto chartseries.
 author: lumine2008
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: excel
 doc_type: apiPageType
-ms.openlocfilehash: d2c791b7211cf83fbc323963d4aaa387fd1f1098
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: 9ced554bab827db5b2a3d178129a62570ecc7039
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52047326"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60938969"
 ---
 # <a name="update-chartseries"></a>Atualizar chartseries
 
@@ -62,7 +62,6 @@ Este é um exemplo da solicitação.
 ```http
 PATCH https://graph.microsoft.com/beta/me/drive/items/{id}/workbook/worksheets/{id|name}/charts/{name}/series/{undefined}
 Content-type: application/json
-Content-length: 26
 
 {
   "name": "name-value"
@@ -87,7 +86,7 @@ Content-length: 26
 ---
 
 ##### <a name="response"></a>Resposta
-Veja a seguir um exemplo da resposta. Observação: o objeto de resposta mostrado aqui pode ser encurtado para legibilidade.
+Aqui está um exemplo da resposta. Observação: o objeto de resposta mostrado aqui pode ser reduzido para facilitar a leitura.
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -96,7 +95,6 @@ Veja a seguir um exemplo da resposta. Observação: o objeto de resposta mostrad
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 26
 
 {
   "name": "name-value"

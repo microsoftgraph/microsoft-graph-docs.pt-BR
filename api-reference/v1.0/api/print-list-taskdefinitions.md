@@ -2,20 +2,18 @@
 title: Listar taskDefinitions
 description: Recupere uma lista de definições de tarefas definidas pelo aplicativo solicitando no locatário.
 author: nilakhan
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: cloud-printing
 doc_type: apiPageType
-ms.openlocfilehash: 431ee5e57136c39be6e00dd559a066d076e84f11
-ms.sourcegitcommit: 40947e6f4337c8c4193d85bb862e15f67263e1e7
+ms.openlocfilehash: b3defaa2cc22b5ac2b136e6abb13863cc5490292
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/13/2021
-ms.locfileid: "50772216"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60924345"
 ---
 # <a name="list-taskdefinitions"></a>Listar taskDefinitions
 Namespace: microsoft.graph
-
-[!INCLUDE [cloudprinting-pricing-disclaimer](../../includes/cloudprinting-pricing-disclaimer.md)]
 
 Recupere uma lista de [definições de tarefas definidas](../resources/printtaskdefinition.md) pelo aplicativo solicitando no locatário.
 
@@ -45,7 +43,7 @@ GET /print/taskDefinitions
 ## <a name="optional-query-parameters"></a>Parâmetros de consulta opcionais
 Este método dá suporte a alguns parâmetros de consulta OData para ajudar a personalizar a resposta. Para obter informações gerais, acesse [Parâmetros de consulta OData](/graph/query-parameters).
 
-### <a name="exceptions"></a>Exceptions
+### <a name="exceptions"></a>Exceções
 Alguns operadores não têm suporte: `$count` , , , , , , `$format` `$search` `$select` `$skip` `$top` .
 
 ## <a name="request-headers"></a>Cabeçalhos de solicitação

@@ -1,16 +1,16 @@
 ---
 title: Listar membros
 description: Recupere os professores e alunos de uma aula. Se o token delegado for usado, os membros poderão ser vistos apenas por outros membros da aula.
-localization_priority: Normal
+ms.localizationpriority: medium
 author: mmast-msft
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: 1735876401f975a3838f7abe76e210c5a445e5dc
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: 7231d8db070f96307e62696a81bd162fed6324ef
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52043910"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60938878"
 ---
 # <a name="list-members"></a>Listar membros
 
@@ -90,7 +90,6 @@ Este é um exemplo de resposta.
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 593
 
 {
   "value": [

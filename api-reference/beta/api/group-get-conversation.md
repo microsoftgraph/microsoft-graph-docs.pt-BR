@@ -2,15 +2,15 @@
 title: Obter conversation
 description: Obter um objeto conversation.
 author: Jordanndahl
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: ad4df01c2c0518d053145a427c9a79ad983d9972
-ms.sourcegitcommit: 4fa6fcc058c7f8d8cad58c0b82db23d6c7da37d2
+ms.openlocfilehash: 898cca839be3338822bfc7114fe4009f36b31be8
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/27/2021
-ms.locfileid: "52681750"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60936702"
 ---
 # <a name="get-conversation"></a>Obter conversa
 
@@ -92,7 +92,6 @@ Este é um exemplo de resposta.
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 644
 
 {
     "id": "AAQkAGI5MWY5ZmUyLTJiNzYtNDE0ZC04OWEwLWM3M2FjYmM3NzNlZgAQABuXO3guDWBMpyKF7LsVwfU=",

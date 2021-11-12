@@ -1,16 +1,16 @@
 ---
 title: Obter bloco de anotações
-description: Recupere as propriedades e os relacionamentos de um objeto notebook.
+description: Recupere as propriedades e as relações de um objeto de bloco de anotações.
 author: jewan-microsoft
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: onenote
 doc_type: apiPageType
-ms.openlocfilehash: 67d1fbae81bc678f79d8c9f10ab3fcb4719dc56f
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: c03d8c82ba5af7d18da61a95c0ae7329b06d4a3c
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48978295"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60941285"
 ---
 # <a name="get-notebook"></a>Obter bloco de anotações
 
@@ -18,7 +18,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Recupere as propriedades e os relacionamentos de um objeto [Notebook](../resources/notebook.md) .
+Recupere as propriedades e as relações de um [objeto de bloco de](../resources/notebook.md) anotações.
 ## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
@@ -37,7 +37,7 @@ GET /groups/{id}/onenote/notebooks/{id}
 GET /sites/{id}/onenote/notebooks/{id}
 ```
 ## <a name="optional-query-parameters"></a>Parâmetros de consulta opcionais
-Este método oferece suporte `select` aos `expand` [parâmetros de consulta OData](/graph/query-parameters) para ajudar a personalizar a resposta.
+Este método dá suporte aos Parâmetros de `select` `expand` [Consulta E OData](/graph/query-parameters) para ajudar a personalizar a resposta.
 
 Os valores `expand` válidos para os blocos de anotações são `sections` e `sectionGroups`.
 
@@ -52,7 +52,7 @@ Não forneça um corpo de solicitação para esse método.
 
 ## <a name="response"></a>Resposta
 
-Se tiver êxito, este método retornará um `200 OK` código de resposta e um objeto [Notebook](../resources/notebook.md) no corpo da resposta.
+Se tiver êxito, este método retornará um código `200 OK` de resposta e um objeto de [bloco](../resources/notebook.md) de anotações no corpo da resposta.
 ## <a name="example"></a>Exemplo
 ##### <a name="request"></a>Solicitação
 Este é um exemplo da solicitação.
@@ -93,7 +93,6 @@ Veja a seguir um exemplo da resposta. Observação: O objeto response mostrado a
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 284
 
 {
   "isDefault": true,

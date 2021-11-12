@@ -5,12 +5,12 @@ author: sureshja
 ms.localizationpriority: high
 ms.prod: applications
 doc_type: apiPageType
-ms.openlocfilehash: 8e9fe8f5d37b8613a081c603145822048685cbf8
-ms.sourcegitcommit: 08e9b0bac39c1b1d2c8a79539d24aaa93364baf2
+ms.openlocfilehash: 1b96f1b575c506dba199fd9322c3e16e12a0a7a7
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/24/2021
-ms.locfileid: "59508331"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60943980"
 ---
 # <a name="get-application"></a>Obter aplicativo
 
@@ -100,7 +100,6 @@ Veja a seguir um exemplo da resposta.
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 1044
 
 {
     "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#applications/$entity",

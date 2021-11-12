@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: TarkanSevilmis
 ms.prod: planner
 doc_type: apiPageType
-ms.openlocfilehash: fc57204aede729aa7b8f100d5b8d2e197abb491d
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: a5db1792922da3598911e28a51f7f1dca93e2298
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59037226"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60924499"
 ---
 # <a name="get-plannerbuckettaskboardtaskformat"></a>Obter plannerBucketTaskBoardTaskFormat
 
@@ -86,7 +86,6 @@ Aqui está um exemplo da resposta. Observação: o objeto de resposta mostrado a
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 76
 
 {
   "id": "01gzSlKkIUSUl6DF_EilrmQAKDhh",
