@@ -2,15 +2,15 @@
 title: Atualizar um objeto connectedOrganization
 description: Atualizar um objeto connectedOrganization.
 author: markwahl-msft
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: 36619c33de483693f35c3ca1163f8e57f063622a
-ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
+ms.openlocfilehash: 7d4f8568c84176aaafb9cd1237f9f25465e4e245
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50437405"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60945730"
 ---
 # <a name="update-connectedorganization"></a>Atualizar connectedOrganization
 
@@ -26,7 +26,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |Tipo de permissão|Permissões (da com menos para a com mais privilégios)|
 |:---|:---|
 |Delegado (conta corporativa ou de estudante)     | EntitlementManagement.ReadWrite.All |
-|Delegado (conta pessoal da Microsoft) | Sem suporte. |
+|Delegada (conta pessoal da Microsoft) | Sem suporte. |
 |Aplicativo                            | EntitlementManagement.ReadWrite.All |
 
 ## <a name="http-request"></a>Solicitação HTTP
@@ -52,8 +52,8 @@ A tabela a seguir mostra as propriedades que podem ser fornecidas quando você a
 
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-| displayName  |String | O nome da organização conectada.  |
-| descrição  |String | A descrição da organização conectada. |
+| displayName  |Cadeia de caracteres | O nome da organização conectada.  |
+| description  |Cadeia de caracteres | A descrição da organização conectada. |
 | state        |connectedOrganizationState|O estado de uma organização conectada define se as políticas de atribuição com o tipo de escopo do solicitante `AllConfiguredConnectedOrganizationSubjects` são aplicáveis ou não. Os valores possíveis são: `configured` e `proposed`.|
 
 ## <a name="response"></a>Resposta
@@ -73,7 +73,6 @@ Se tiver êxito, este método retornará um código `204 Accepted` de resposta e
 ``` http
 PATCH https://graph.microsoft.com/beta/identityGovernance/entitlementManagement/connectedOrganizations/{id}
 Content-Type: application/json
-Content-length: 100
 
 {
   "displayName":"Connected organization new name",

@@ -1,16 +1,16 @@
 ---
 title: 'servicePrincipalName: Listar proprietários'
 description: Recuperar uma lista de proprietários do servicePrincipal.
-localization_priority: Priority
+ms.localizationpriority: high
 doc_type: apiPageType
 ms.prod: applications
 author: sureshja
-ms.openlocfilehash: c7b960993e37d9a8219b5fd509249767da65756a
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: 0fd72a91226ef34e21f356d211d5c3197108cf1c
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52054424"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60937059"
 ---
 # <a name="serviceprincipals-list-owners"></a>servicePrincipalName: Listar proprietários
 
@@ -24,7 +24,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
 |:--------------------|:---------------------------------------------------------|
 |Delegado (conta corporativa ou de estudante) | Application.Read.All, Application.ReadWrite.All, Directory.Read.All, Directory.ReadWrite.All, Directory.AccessAsUser.All    |
-|Delegado (conta pessoal da Microsoft) | Sem suporte.    |
+|Delegada (conta pessoal da Microsoft) | Sem suporte.    |
 |Aplicativo | Application.Read.All, Application.ReadWrite.All, Directory.Read.All, Directory.ReadWrite.All |
 
 [!INCLUDE [limited-info](../../includes/limited-info.md)]
@@ -83,7 +83,7 @@ GET https://graph.microsoft.com/v1.0/servicePrincipals/{id}/owners
 ### <a name="response"></a>Resposta
 Veja a seguir um exemplo da resposta. 
 
->Observação: o objeto de resposta exibido aqui pode ser encurtado para legibilidade.
+>Observação: o objeto de resposta mostrado aqui pode ser encurtado para legibilidade.
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -94,7 +94,6 @@ Veja a seguir um exemplo da resposta.
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 55
 
 {
   "value": [

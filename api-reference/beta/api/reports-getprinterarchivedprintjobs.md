@@ -2,15 +2,15 @@
 title: 'reports: getPrinterArchivedPrintJobs'
 description: Obter uma lista de trabalhos de impressão arquivados que foram enluados para uma impressora específica.
 author: braedenp-msft
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: cloud-printing
 doc_type: apiPageType
-ms.openlocfilehash: 7fc14042a2a37313523c413616f9298d43b05b7c
-ms.sourcegitcommit: 503c72036c376a30e08c29df8e7730a7afcab66e
+ms.openlocfilehash: c3e59da92b2970ef264959cc411d6265a4dce177
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/10/2021
-ms.locfileid: "52870686"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60932071"
 ---
 # <a name="reports-getprinterarchivedprintjobs"></a>reports: getPrinterArchivedPrintJobs
 
@@ -20,7 +20,7 @@ Namespace: microsoft.graph
 
 Obter uma lista de trabalhos de impressão arquivados que foram enluados para uma impressora [específica.](../resources/printer.md)
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 Além das permissões a seguir, o locatário do usuário deve ter uma assinatura de Impressão Universal ativa.
@@ -97,7 +97,6 @@ Este é um exemplo de resposta.
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 236
 
 {
   "value": [

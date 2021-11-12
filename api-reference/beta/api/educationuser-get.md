@@ -2,15 +2,15 @@
 title: Obter educationUser
 description: Recupere as propriedades e as relações de um usuário.
 author: mmast-msft
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: 893f484eaf03ef5102a22e70fdb946251af0cbd9
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: bda80d324ca9eeb37ed9c6330bed34b092cfeec8
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52042881"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60947326"
 ---
 # <a name="get-educationuser"></a>Obter educationUser
 
@@ -30,8 +30,8 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 | Tipo de permissão                        | Permissões (da com menos para a com mais privilégios) |
 | :------------------------------------- | :------------------------------------------ |
 | Delegado (conta corporativa ou de estudante)     | EduRoster.ReadBasic                         |
-| Delegado (conta pessoal da Microsoft) | Sem suporte.                              |
-| Application                            | EduRoster.Read.All, EduRoster.ReadWrite.All |
+| Delegada (conta pessoal da Microsoft) | Sem suporte.                              |
+| Aplicativo                            | EduRoster.Read.All, EduRoster.ReadWrite.All |
 
 > [!IMPORTANT]
 > Ao usar escopos de permissão delegados, Graph retornará apenas um conjunto limitado de propriedades: `id` , , , , , , , , , `primaryRole` , `accountEnabled` , `displayName` `givenName` `surname` `userPrincipalName` `userType` `onPremisesInfo` `student/externalId` `teacher/externalId` . Se seu aplicativo exigir propriedades adicionais, você deve usar escopos de permissão application.
@@ -116,7 +116,6 @@ Este é um exemplo de resposta.
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 508
 
 {
   "id": "13012",

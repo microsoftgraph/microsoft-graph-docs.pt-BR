@@ -2,15 +2,15 @@
 title: 'groupLifecyclePolicy: addGroup'
 description: Adiciona um grupo a uma política de ciclo de vida.
 author: Jordanndahl
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: 8deeafa852b69af919fb79b43acaa5b588bdcd35
-ms.sourcegitcommit: ada6eab637b9b318129aefb98edbe7316399d9ba
+ms.openlocfilehash: 36a07ac21c7e370f2bbbceb31f8c6b0038b1bb9c
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/07/2021
-ms.locfileid: "53316696"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60926942"
 ---
 # <a name="grouplifecyclepolicy-addgroup"></a>groupLifecyclePolicy: addGroup
 
@@ -57,7 +57,7 @@ Somente um grupo pode ser adicionado por solicitação.
 
 ## <a name="response"></a>Resposta
 
-Se bem sucedido, este método retorna um código de resposta `200 OK`. Se o grupo for adicionado à política, um `true` valor será retornado no corpo da resposta. Caso contrário, `false` um valor será retornado no corpo da resposta.
+Quando é bem-sucedido, este método retorna um código de resposta `200 OK`. Se o grupo for adicionado à política, um `true` valor será retornado no corpo da resposta. Caso contrário, `false` um valor será retornado no corpo da resposta.
 
 ## <a name="example"></a>Exemplo
 
@@ -70,7 +70,6 @@ Se bem sucedido, este método retorna um código de resposta `200 OK`. Se o grup
 ```http
 POST https://graph.microsoft.com/beta/groupLifecyclePolicies/{id}/addGroup
 Content-type: application/json
-Content-length: 57
 
 {
   "groupId": "ffffffff-ffff-ffff-ffff-ffffffffffff"
@@ -83,7 +82,6 @@ Content-length: 57
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 21
 
 {
   "value": true

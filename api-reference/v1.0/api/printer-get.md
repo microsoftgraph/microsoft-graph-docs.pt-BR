@@ -2,20 +2,18 @@
 title: Obter impressora
 description: Recupere as propriedades e as relações de um objeto printer.
 author: nilakhan
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: cloud-printing
 doc_type: apiPageType
-ms.openlocfilehash: 547cde8d31870fcc2b0d73c1021f5628ce74c19b
-ms.sourcegitcommit: 40947e6f4337c8c4193d85bb862e15f67263e1e7
+ms.openlocfilehash: a1853de6dc66c2bd3de73638c019798f3d9214a7
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/13/2021
-ms.locfileid: "50776918"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60937199"
 ---
 # <a name="get-printer"></a>Obter impressora
 Namespace: microsoft.graph
-
-[!INCLUDE [cloudprinting-pricing-disclaimer](../../includes/cloudprinting-pricing-disclaimer.md)]
 
 Recupere as propriedades e as relações de um [objeto printer.](../resources/printer.md)
 
@@ -26,7 +24,7 @@ Para usar o serviço Impressão Universal, o usuário ou locatário do aplicativ
 
 |Tipo de permissão | Permissões (da com menos para a com mais privilégios) |
 |:---------------|:--------------------------------------------|
-|Delegada (conta corporativa ou de estudante)| Printer.Read.All, Printer.ReadWrite.All, Printer.FullControl.All |
+|Delegado (conta corporativa ou de estudante)| Printer.Read.All, Printer.ReadWrite.All, Printer.FullControl.All |
 |Delegada (conta pessoal da Microsoft)|Sem suporte.|
 |Aplicativo| Printer.Read.All, Printer.ReadWrite.All |
 

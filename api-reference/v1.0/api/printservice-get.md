@@ -2,20 +2,18 @@
 title: Obter printService
 description: Recupere as propriedades e as relações de um serviço de impressão.
 author: nilakhan
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: cloud-printing
 doc_type: apiPageType
-ms.openlocfilehash: 8333777d0d903501515be9ef65ec4b06bd48e226
-ms.sourcegitcommit: 40947e6f4337c8c4193d85bb862e15f67263e1e7
+ms.openlocfilehash: 923e63c219affece1e78483a6557da0786ffef39
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/13/2021
-ms.locfileid: "50771348"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60937146"
 ---
 # <a name="get-printservice"></a>Obter printService
 Namespace: microsoft.graph
-
-[!INCLUDE [cloudprinting-pricing-disclaimer](../../includes/cloudprinting-pricing-disclaimer.md)]
 
 Recupere as propriedades e as relações de um serviço de impressão.
 

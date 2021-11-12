@@ -1,16 +1,16 @@
 ---
 title: Criar educationCategories
 description: Adicionar uma educationCategory existente a um educationAssignment
-localization_priority: Normal
+ms.localizationpriority: medium
 author: dipakboyed
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: 847e720e65da2604a1188d9854e4e10320d0d181
-ms.sourcegitcommit: f77c1385306fd40557aceb24fdfe4832cbb60a27
+ms.openlocfilehash: c8c38700b3a6beec5807252f0c2f222c779a520e
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/12/2021
-ms.locfileid: "52912961"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60947738"
 ---
 # <a name="create-educationcategories"></a>Criar educationCategories
 
@@ -26,7 +26,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
 |:--------------------|:---------------------------------------------------------|
 |Delegado (conta corporativa ou de estudante) |  EduAssignments.ReadWriteBasic, EduAssignments.ReadWrite  |
-|Delegado (conta pessoal da Microsoft) |  Sem suporte.  |
+|Delegada (conta pessoal da Microsoft) |  Sem suporte.  |
 |Aplicativo | Sem suporte.  | 
 
 ## <a name="http-request"></a>Solicitação HTTP
@@ -57,7 +57,6 @@ Este é um exemplo de solicitação.
 ```http
 POST https://graph.microsoft.com/beta/education/classes/11021/assignments/19002/categories/$ref
 Content-type: application/json
-Content-length: 212
 
 {
   "@odata.id": "https://graph.microsoft.com/v1.0/education/classes/11021/assignmentCategories/ec98f158-341d-4fea-9f8c-14a250d489ac"

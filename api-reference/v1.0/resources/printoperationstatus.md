@@ -2,21 +2,19 @@
 title: Tipo de recurso printOperationStatus
 description: Representa o status atual de uma operação de Impressão Universal de longa duração.
 author: nilakhan
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: cloud-printing
 doc_type: resourcePageType
-ms.openlocfilehash: 968958ef9d016b672bfe4d100cfc09f7a3b57d6c6c3ff28c36309ec6df04fe4d
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: dd5e7e912ea6810a4a0d501d47a8711830e91ae0
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54154886"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60944890"
 ---
 # <a name="printoperationstatus-resource-type"></a>Tipo de recurso printOperationStatus
 
 Namespace: microsoft.graph
-
-[!INCLUDE [cloudprinting-pricing-disclaimer](../../includes/cloudprinting-pricing-disclaimer.md)]
 
 Representa o status atual de uma operação de Impressão Universal de longa duração.
 
@@ -34,7 +32,7 @@ Representa o status atual de uma operação de Impressão Universal de longa dur
 |running|1|A operação está em execução.|
 |bem-sucedido|2|A operação foi concluída com êxito.|
 |failed|3|Falha na operação.|
-|unknownFutureValue|4 |Valor de sentinela de enumeração evolvável. Não usar.|
+|unknownFutureValue|4|Valor de sentinela de enumeração evolvável. Não usar.|
 
 ## <a name="json-representation"></a>Representação JSON
 Veja a seguir uma representação JSON do recurso.

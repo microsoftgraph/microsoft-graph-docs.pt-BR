@@ -1,16 +1,16 @@
 ---
 title: Listar sectionGroups
-description: Recupere uma lista de objetos de objeto de seção.
+description: Recupere uma lista de objetos sectionGroup.
 author: jewan-microsoft
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: onenote
 doc_type: apiPageType
-ms.openlocfilehash: 22cdc6d5b5b524ccdf0281d6abe88e1efd2ba5b9
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: aef7069a9cb48b1fb5968d13f0b884ed9a6c5a2b
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48962840"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60946794"
 ---
 # <a name="list-sectiongroups"></a>Listar sectionGroups
 
@@ -18,7 +18,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Recupere uma lista de objetos de objeto de [seção](../resources/sectiongroup.md) .
+Recupere uma lista de [objetos sectionGroup.](../resources/sectiongroup.md)
 ## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
@@ -41,7 +41,7 @@ Este método dá suporte a [Parâmetros de consulta OData](/graph/query-paramete
 
 A ordem de classificação padrão é `name asc`.
 
-A consulta padrão expande `parentNotebook` e seleciona suas `id` `displayName` Propriedades, e `self` . `expand`Os valores válidos para os grupos de seção são `sections` ,, `sectionGroups` `parentNotebook` e `parentSectionGroup` .
+A consulta padrão expande `parentNotebook` e seleciona suas propriedades , e `id` `displayName` `self` . Os `expand` valores válidos para grupos de seções `sections` são , e `sectionGroups` `parentNotebook` `parentSectionGroup` .
 
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
 | Nome       | Tipo | Descrição|
@@ -54,7 +54,7 @@ Não forneça um corpo de solicitação para esse método.
 
 ## <a name="response"></a>Resposta
 
-Se bem-sucedido, este método retorna um `200 OK` código de resposta e uma coleção de objetos de objeto de [seção](../resources/sectiongroup.md) no corpo da resposta.
+Se tiver êxito, este método retornará um código `200 OK` de resposta e uma coleção de objetos [sectionGroup](../resources/sectiongroup.md) no corpo da resposta.
 ## <a name="example"></a>Exemplo
 ##### <a name="request"></a>Solicitação
 Este é um exemplo da solicitação.
@@ -96,7 +96,6 @@ Veja a seguir um exemplo da resposta. Observação: O objeto response mostrado a
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 378
 
 {
   "value": [

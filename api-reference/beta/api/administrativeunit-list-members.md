@@ -2,15 +2,15 @@
 title: Listar membros
 description: Use essa API para obter a lista de membros (usuário e grupo) em uma unidade administrativa.
 author: DougKirschner
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: 7bc9d19dc3680c011f5bbb763fee5d8d6ac47669
-ms.sourcegitcommit: 979fe005c74eb99cd971df6b9511b2d3f7fe3cd4
+ms.openlocfilehash: b72de9da19e7c50b6d42f3540f42c6e3b09437d9
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/17/2021
-ms.locfileid: "52991978"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60940026"
 ---
 # <a name="list-members"></a>Listar membros
 
@@ -20,13 +20,13 @@ Namespace: microsoft.graph
 
 Use essa API para obter a lista de membros (usuário e grupo) em uma unidade administrativa.
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegada (conta corporativa ou de estudante) | AdministrativeUnit.Read.All, Directory.Read.All, AdministrativeUnit.ReadWrite.All, Directory.ReadWrite.All, Directory.AccessAsUser.All    |
-|Delegado (conta pessoal da Microsoft) | Sem suporte.    |
+|Delegado (conta corporativa ou de estudante) | AdministrativeUnit.Read.All, Directory.Read.All, AdministrativeUnit.ReadWrite.All, Directory.ReadWrite.All, Directory.AccessAsUser.All    |
+|Delegada (conta pessoal da Microsoft) | Sem suporte.    |
 |Aplicativo | AdministrativeUnit.Read.All, Directory.Read.All, AdministrativeUnit.ReadWrite.All, Directory.ReadWrite.All |
 
 > Observação: para listar os membros de uma associação oculta em uma unidade administrativa, a permissão Member.Read.Hidden é necessária.
@@ -64,7 +64,6 @@ Aqui está um exemplo da resposta. Observação: o objeto de resposta mostrado a
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 100
 
 {
   "value":[
@@ -96,7 +95,6 @@ Aqui está um exemplo da resposta. Observação: o objeto de resposta mostrado a
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 100
 
 {
   "value":[

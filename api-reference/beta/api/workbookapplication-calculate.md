@@ -1,16 +1,16 @@
 ---
 title: 'workbookApplication: calculate'
 description: Recalcula todas as pastas de trabalho abertas no Excel no momento.
-localization_priority: Normal
+ms.localizationpriority: medium
 author: lumine2008
 ms.prod: excel
 doc_type: apiPageType
-ms.openlocfilehash: fae9ef835de3b42a6862258b1d7600f500247850
-ms.sourcegitcommit: 94c4acf8bd03c10a44b12952b6cb4827df55b978
+ms.openlocfilehash: 220d10ff83a299829d15e3ac0d1265f4b893c8e9
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/06/2021
-ms.locfileid: "52787053"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60938277"
 ---
 # <a name="workbookapplication-calculate"></a>workbookApplication: calculate
 
@@ -20,13 +20,13 @@ Namespace: microsoft.graph
 
 Recalcula todas as pastas de trabalho abertas no Excel no momento.
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
 |:--------------------|:---------------------------------------------------------|
 |Delegado (conta corporativa ou de estudante) | Files.ReadWrite     |
-|Delegado (conta pessoal da Microsoft) | Sem suporte.    |
+|Delegada (conta pessoal da Microsoft) | Sem suporte.    |
 |Aplicativo | Sem suporte. |
 
 ## <a name="http-request"></a>Solicitação HTTP
@@ -66,7 +66,6 @@ Veja a seguir um exemplo de uma solicitação.
 ```http
 POST https://graph.microsoft.com/beta/me/drive/items/{id}/workbook/application/calculate
 Content-type: application/json
-Content-length: 48
 
 {
   "calculationType": "calculationType-value"

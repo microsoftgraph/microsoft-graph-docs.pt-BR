@@ -1,16 +1,16 @@
 ---
 title: Obter gerente
 description: Obter o gerente desse contato organizacional.
-localization_priority: Normal
+ms.localizationpriority: medium
 author: dkershaw10
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: 0a99bfc16c6380093d8e13930f8b6801ef86ce02
-ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
+ms.openlocfilehash: 417b77f5cbd9a063b3e6b267c16913cca08f538a
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "50943486"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60938186"
 ---
 # <a name="get-manager"></a>Obter gerente
 
@@ -24,7 +24,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
 |:--------------------|:---------------------------------------------------------|
 |Delegado (conta corporativa ou de estudante) | OrgContact.Read.All e Group.Read.All, Directory.Read.All   |
-|Delegado (conta pessoal da Microsoft) | Sem suporte.    |
+|Delegada (conta pessoal da Microsoft) | Sem suporte.    |
 |Aplicativo | OrgContact.Read.All e Group.Read.All, Directory.Read.All |
 
 [!INCLUDE [limited-info](../../includes/limited-info.md)]
@@ -38,7 +38,7 @@ GET /contacts/{id}/manager
 ```
 
 ## <a name="optional-query-parameters"></a>Parâmetros de consulta opcionais
-Este método dá suporte aos `$select` [parâmetros de consulta OData](/graph/query-parameters) para ajudar a personalizar a resposta.
+Este método dá suporte a `$select` [Parâmetros de consulta OData](/graph/query-parameters) para ajudar a personalizar a resposta.
 
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
 | Cabeçalho       | Valor |
@@ -97,7 +97,6 @@ Este é um exemplo de resposta.
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 455
 
 {
     "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#directoryObjects/$entity",

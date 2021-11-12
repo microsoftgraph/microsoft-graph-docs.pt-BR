@@ -2,15 +2,15 @@
 title: 'educationSynchronizationProfile: uploadUrl'
 description: Recupere uma assinatura de acesso compartilhado (SAS) para carregar arquivos de origem no armazenamento de blob do Azure para um perfil específico de sincronização de dados escolares no locatário. O token SAS tem uma validade de uma hora.
 author: mmast-msft
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: d8a8a7f1cfd01ed63b54b66d888b3eb9e80d3a30
-ms.sourcegitcommit: 7b8ad226dc9dfee61b8c3d32892534855dad3fa0
+ms.openlocfilehash: 5eab6e69edb352a7b750702e9d34cbc2df7bb4ed
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/26/2021
-ms.locfileid: "52664710"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60946815"
 ---
 # <a name="educationsynchronizationprofile-uploadurl"></a>educationSynchronizationProfile: uploadUrl
 
@@ -94,7 +94,6 @@ Este é um exemplo de resposta.
 ```http
 HTTP/1.1 201 OK
 Content-type: application/json
-Content-length: 314
 
 {
     "@odata.context": "https://graph.microsoft.com/beta/$metadata#String",

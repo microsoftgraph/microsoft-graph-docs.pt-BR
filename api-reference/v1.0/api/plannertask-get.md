@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: TarkanSevilmis
 ms.prod: planner
 doc_type: apiPageType
-ms.openlocfilehash: f811b6d6ae0fea971a395d9354244078af8d7d19
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 386ca3aa2d21f7d4be9d3c9149362bbf2e8a57af
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59044962"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60928123"
 ---
 # <a name="get-plannertask"></a>Obter plannerTask
 
@@ -86,7 +86,6 @@ Aqui está um exemplo da resposta. Observação: o objeto de resposta mostrado a
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 707
 
 {
   "createdBy": {

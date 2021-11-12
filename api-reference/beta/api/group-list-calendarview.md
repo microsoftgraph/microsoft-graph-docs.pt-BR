@@ -1,16 +1,16 @@
 ---
 title: Listar calendarView
 description: Obtenha as ocorrências, exceções e instâncias individuais de eventos em uma exibição de calendário definida, do calendário padrão de um grupo.
-localization_priority: Normal
+ms.localizationpriority: medium
 author: Jordanndahl
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: ce71ac714f2919c1d9c60d71da39a0252b24306c
-ms.sourcegitcommit: 4fa6fcc058c7f8d8cad58c0b82db23d6c7da37d2
+ms.openlocfilehash: 48871751b939103fda5d5f4f94a61347e988ef75
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/27/2021
-ms.locfileid: "52681652"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60947305"
 ---
 # <a name="list-calendarview"></a>Listar calendarView
 
@@ -107,7 +107,6 @@ Este é um exemplo de resposta.
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 1354
 Preference-Applied: outlook.body-content-type="text"
 
 {

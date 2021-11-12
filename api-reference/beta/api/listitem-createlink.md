@@ -2,15 +2,15 @@
 title: 'listItem: createLink'
 description: Criar um link para compartilhar um listItem
 author: learafa
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: sharepoint
 doc_type: apiPageType
-ms.openlocfilehash: 84bab42a808adbac01899da84010ce0c6ef05283
-ms.sourcegitcommit: 979fe005c74eb99cd971df6b9511b2d3f7fe3cd4
+ms.openlocfilehash: e12ceccbf8ea29893d185ba8564e831bbe850b5c
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/17/2021
-ms.locfileid: "52992379"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60941341"
 ---
 # <a name="listitem-createlink"></a>listItem: createLink
 
@@ -58,7 +58,7 @@ A tabela a seguir mostra os parâmetros que podem ser usados com esta ação.
 
 |   Propriedade             |  Tipo  |           Descrição                        |
 | :----------------------| :----- | :--------------------------------------------|
-|tipo|Cadeia de caracteres|O tipo de link de compartilhamento a ser criado. Opcional. |
+|type|Cadeia de caracteres|O tipo de link de compartilhamento a ser criado. Opcional. |
 |escopo|String|O escopo do link a ser criado. Ou `anonymous` `organization` `users` . Opcional. |
 |expirationDateTime|DateTimeOffset|Uma cadeia de caracteres com formato de yyyy-MM-ddTHH:mm:ssZ de DateTime indica o tempo de expiração da permissão. Opcional. |
 |password|String|A senha do link de compartilhamento definido pelo criador. Opcional. |
@@ -86,7 +86,7 @@ Os seguintes valores são permitidos para o parâmetro **scope**.
 | Valor          | Descrição
 |:---------------|:------------------------------------------------------------
 | anonymous    | Qualquer pessoa com o link tem acesso, sem precisar fazer logon. Isso pode incluir pessoas de fora da organização. O suporte para links anônimos pode ser desativado por um administrador.
-| organization | Qualquer pessoa que tenha feito logon em sua organização (locatário) pode usar o link para obter acesso. Disponível apenas no OneDrive for Business e no SharePoint.
+| organização | Qualquer pessoa que tenha feito logon em sua organização (locatário) pode usar o link para obter acesso. Disponível apenas no OneDrive for Business e no SharePoint.
 | usuários        | Pessoas específicas no conjunto de destinatários podem usar o link para obter acesso. Disponível apenas no OneDrive for Business e no SharePoint.
 
 ## <a name="response"></a>Resposta
@@ -114,7 +114,6 @@ O link de compartilhamento é configurado como somente leitura e utilizável por
 ```http
 POST sites/{siteId}/lists/{listId}/items/{itemId}/createLink
 Content-Type: application/json
-Content-length: 212
 
 {
   "type": "view",

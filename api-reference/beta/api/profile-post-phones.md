@@ -1,16 +1,16 @@
 ---
-title: Criar um número de telefone
-description: Use esta API para criar um novo Multiphone.
-localization_priority: Normal
+title: Criar itemPhone
+description: Use essa API para criar um novo itemPhone.
+ms.localizationpriority: medium
 author: kevinbellinger
 ms.prod: people
 doc_type: apiPageType
-ms.openlocfilehash: 5b9ad4c2321063234765aa4a5705dcf116e0fd9e
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: bbe809637670e7acebd3fbac4a45838b274e66ff
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48974642"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60947186"
 ---
 # <a name="create-itemphonenumber"></a>Criar itemPhoneNumber
 
@@ -18,7 +18,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Use esta API para criar um novo objeto [MyPhone](../resources/itemphone.md) no [perfil](../resources/profile.md)de um usuário.
+Use essa API para criar um novo [objeto itemPhone](../resources/itemphone.md) no perfil de um [usuário.](../resources/profile.md)
 
 ## <a name="permissions"></a>Permissões
 
@@ -26,8 +26,8 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 | Tipo de permissão                        | Permissões (da com menos para a com mais privilégios) |
 |:---------------------------------------|:--------------------------------------------|
-| Delegado (conta corporativa ou de estudante)     | User. ReadWrite, User. ReadWrite. All          |
-| Delegado (conta pessoal da Microsoft) | User. ReadWrite, User. ReadWrite. All          |
+| Delegado (conta corporativa ou de estudante)     | User.ReadWrite, User.ReadWrite.All          |
+| Delegado (conta pessoal da Microsoft) | User.ReadWrite, User.ReadWrite.All          |
 | Aplicativo                            | User.ReadWrite.All                          |
 
 ## <a name="http-request"></a>Solicitação HTTP
@@ -47,22 +47,22 @@ POST /users/{userId}/profile/phones
 |Content-Type|application/json. Obrigatório.|
 
 ## <a name="request-body"></a>Corpo da solicitação
-No corpo da solicitação, forneça uma representação JSON do objeto [MyPhone](../resources/itemphone.md) .
+No corpo da solicitação, fornece uma representação JSON do [objeto itemPhone.](../resources/itemphone.md)
 
-A tabela a seguir mostra as propriedades que são possíveis de definir quando você cria um novo objeto [MyPhone](../resources/itemphone.md) em um perfil de usuário.
+A tabela a seguir mostra as propriedades que são possíveis de definir ao criar um novo [objeto itemPhone](../resources/itemphone.md) em um perfil de usuários.
 
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|allowedAudiences|String|As audiências que podem ver os valores contidos na entidade. Herdado de [MyFace](../resources/itemfacet.md). Os valores possíveis são: `me`, `family`, `contacts`, `groupMembers`, `organization`, `federatedOrganizations`, `everyone`, `unknownFutureValue`.|
-|displayName|String|Nome amigável o usuário atribuiu este número de telefone. |
-|fracassa|[inferenceData](../resources/inferencedata.md)|Contém detalhes de inferência se a entidade for inferida pelo aplicativo de criação ou modificação. Herdado de [MyFace](../resources/itemfacet.md).|
-|number|String|Número de telefone fornecido pelo usuário.|
-|source|[personDataSource](../resources/persondatasource.md)|Onde os valores são originados se forem sincronizados a partir de outro serviço. Herdado de [MyFace](../resources/itemfacet.md).|
-|tipo|PhoneType|O tipo de número de telefone dentro do objeto. Os valores possíveis são: `home`, `business`, `mobile`, `other`, `assistant`, `homeFax`, `businessFax`, `otherFax`, `pager`, `radio`.|
+|allowedAudiences|Cadeia de caracteres|As audiências que são capazes de ver os valores contidos na entidade. Herdado [do itemFacet](../resources/itemfacet.md). Os valores possíveis são: `me`, `family`, `contacts`, `groupMembers`, `organization`, `federatedOrganizations`, `everyone`, `unknownFutureValue`.|
+|displayName|Cadeia de caracteres|Nome amigável que o usuário atribuiu a esse número de telefone. |
+|inferência|[inferenceData](../resources/inferencedata.md)|Contém detalhes de inferência se a entidade for inferida pelo aplicativo de criação ou modificação. Herdado [do itemFacet](../resources/itemfacet.md).|
+|number|Cadeia de caracteres|Telefone número fornecido pelo usuário.|
+|source|[personDataSource](../resources/persondatasource.md)|Onde os valores se originaram se sincronizados de outro serviço. Herdado [do itemFacet](../resources/itemfacet.md).|
+|type|phoneType|O tipo de número de telefone dentro do objeto. Os valores possíveis são: `home`, `business`, `mobile`, `other`, `assistant`, `homeFax`, `businessFax`, `otherFax`, `pager`, `radio`.|
 
 ## <a name="response"></a>Resposta
 
-Se tiver êxito, este método retornará um `201 Created` código de resposta e um objeto [MyPhone](../resources/itemphone.md) no corpo da resposta.
+Se tiver êxito, este método retornará um código `201 Created` de resposta e um objeto [itemPhone](../resources/itemphone.md) no corpo da resposta.
 
 ## <a name="examples"></a>Exemplos
 
@@ -77,7 +77,6 @@ Se tiver êxito, este método retornará um `201 Created` código de resposta e 
 ``` http
 POST https://graph.microsoft.com/beta/me/profile/phones
 Content-Type: application/json
-Content-length: 382
 
 {
   "displayName": "Car Phone",

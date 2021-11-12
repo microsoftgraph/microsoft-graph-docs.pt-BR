@@ -5,12 +5,12 @@ author: mlafleur
 ms.localizationpriority: medium
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: db8cedc35b48478edd58a9beb2e29d742c4b5cb2
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 38ab75a0a539088c4e1d1b67380875276dba47dd
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59147434"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60937346"
 ---
 # <a name="create-educationclass"></a>Criar educationClass
 
@@ -57,16 +57,16 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar [educati
 
 | Propriedade             | Tipo                                           | Descrição                                                        |
 | :------------------- | :--------------------------------------------- | :----------------------------------------------------------------- |
-| id                   | String                                         | Identificador de objeto. Herdado da [entidade](../resources/entity.md) |
-| displayName          | String                                         | Nome da aula.                                                 |
+| id                   | Cadeia de caracteres                                         | Identificador de objeto. Herdado da [entidade](../resources/entity.md) |
+| displayName          | Cadeia de caracteres                                         | Nome da aula.                                                 |
 | mailNickname         | String                                         | Nome de email para enviar email a todos os membros, se essa propriedade estiver habilitada.    |
-| description          | String                                         | Descrição da aula.                                          |
+| description          | Cadeia de caracteres                                         | Descrição da aula.                                          |
 | createdBy            | [identitySet](../resources/identityset.md)     | Entidade que criou a aula                                       |
 | classCode            | Cadeia de caracteres                                         | Código de aula usada pela escola para identificar a aula.               |
 | externalName         | Cadeia de caracteres                                         | Nome da aula no sistema de sincronização.                           |
 | externalId           | Cadeia de caracteres                                         | ID da aula no sistema de sincronização.                           |
 | externalSource       | educationExternalSource                        | Como essa aula foi criada. Os valores possíveis são: `sis` , `manual`   |
-| externalSourceDetail | String                                         | O nome da fonte externa de onde esses recursos foram gerados. |
+| externalSourceDetail | Cadeia de caracteres                                         | O nome da fonte externa de onde esses recursos foram gerados. |
 | grade                | Cadeia de caracteres                                         | Nível de nota da classe.                                          |
 | term                 | [educationTerm](../resources/educationterm.md) | Termos dessa aula.                                               |
 
@@ -89,7 +89,6 @@ Se bem-sucedido, esse método retornará um código de resposta `201 Created` e 
 ```http
 POST https://graph.microsoft.com/v1.0/education/classes
 Content-Type: application/json
-Content-length: 533
 
 {
   "@odata.type": "#microsoft.graph.educationClass",

@@ -1,16 +1,16 @@
 ---
 title: Obter seção
-description: Recupere as propriedades e os relacionamentos de um objeto Section.
-localization_priority: Normal
+description: Recupere as propriedades e as relações de um objeto section.
+ms.localizationpriority: medium
 author: jewan-microsoft
 ms.prod: onenote
 doc_type: apiPageType
-ms.openlocfilehash: 2c8724c672efa9d7eafa152fdcddfd5681e286a6
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 6538758d1228886e995bd3b73754ea6124326c54
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48979544"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60945380"
 ---
 # <a name="get-section"></a>Obter seção
 
@@ -18,7 +18,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Recupere as propriedades e os relacionamentos de um objeto [Section](../resources/onenotesection.md) .
+Recupere as propriedades e as relações de um [objeto section.](../resources/onenotesection.md)
 ## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
@@ -37,9 +37,9 @@ GET /groups/{id}/onenote/sections/{id}
 GET /sites/{id}/onenote/sections/{id}
 ```
 ## <a name="optional-query-parameters"></a>Parâmetros de consulta opcionais
-Este método oferece suporte `select` aos `expand` [parâmetros de consulta OData](/graph/query-parameters) para ajudar a personalizar a resposta.
+Este método dá suporte aos Parâmetros de `select` `expand` [Consulta E OData](/graph/query-parameters) para ajudar a personalizar a resposta.
 
-A consulta padrão expande `parentNotebook` e seleciona suas `id` `displayName` Propriedades, e `self` . `expand`Os valores válidos para as seções são `parentNotebook` e `parentSectionGroup` .
+A consulta padrão expande `parentNotebook` e seleciona suas propriedades , e `id` `displayName` `self` . Os `expand` valores válidos para seções `parentNotebook` são e `parentSectionGroup` .
 
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
 | Nome       | Tipo | Descrição|
@@ -52,7 +52,7 @@ Não forneça um corpo de solicitação para esse método.
 
 ## <a name="response"></a>Resposta
 
-Se tiver êxito, este método retornará um `200 OK` código de resposta e um objeto [onenoteSection](../resources/onenotesection.md) no corpo da resposta.
+Se tiver êxito, este método retornará um código `200 OK` de resposta e um objeto [onenoteSection](../resources/onenotesection.md) no corpo da resposta.
 ## <a name="example"></a>Exemplo
 ##### <a name="request"></a>Solicitação
 Este é um exemplo da solicitação.
@@ -93,7 +93,6 @@ Veja a seguir um exemplo da resposta. Observação: O objeto response mostrado a
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 272
 
 {
   "isDefault": true,

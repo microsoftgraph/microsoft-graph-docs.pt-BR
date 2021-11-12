@@ -5,12 +5,12 @@ author: akjo
 doc_type: apiPageType
 ms.localizationpriority: medium
 ms.prod: microsoft-teams
-ms.openlocfilehash: 8bb60729048b64f804ba6b2c3290c6e330e2b363
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 446d1373615e6ac4768bbfacd367624dfd1bab06
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59050646"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60940837"
 ---
 # <a name="update-conversationmember"></a>Atualizar conversationMember
 
@@ -24,7 +24,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 |Tipo de permissão|Permissões (da com menos para a com mais privilégios)|
 |---------|-------------|
-|Delegada (conta corporativa ou de estudante)| Em equipes: TeamMember.ReadWrite.All<br/>Em canais: ChannelMember.ReadWrite.All  |
+|Delegado (conta corporativa ou de estudante)| Em equipes: TeamMember.ReadWrite.All<br/>Em canais: ChannelMember.ReadWrite.All  |
 |Delegado (conta pessoal da Microsoft)|Sem suporte|
 |Aplicativo| Em equipes: TeamMember.ReadWrite.All<br/>Em canais: ChannelMember.ReadWrite.All |
 
@@ -86,7 +86,6 @@ Veja a seguir um exemplo da resposta.
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 475
 
 {
   "@odata.context": "https://graph.microsoft.com/V1.0/$metadata#teams('ece6f0a1-7ca4-498b-be79-edf6c8fc4d82')/channels('19%3A56eb04e133944cf69e603c5dac2d292e%40thread.skype')/members/microsoft.graph.aadUserConversationMember/$entity",

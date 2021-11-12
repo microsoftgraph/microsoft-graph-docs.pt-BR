@@ -2,15 +2,15 @@
 title: Obter contactFolder
 description: Obtenha uma pasta de contatos usando a respectiva ID.
 author: kevinbellinger
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 73f9e8359640efa733371b9dd04ba4be6491937a
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: 839843184eef487a69dab990d418b2ab082efd5d
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52047095"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60944911"
 ---
 # <a name="get-contactfolder"></a>Obter contactFolder
 
@@ -23,7 +23,7 @@ Obtenha uma pasta de contatos usando a respectiva ID.
 Há dois cenários em que um aplicativo pode obter a pasta de contato de outro usuário:
 
 * Se o aplicativo tiver permissões de aplicativo ou
-* Se o aplicativo tiver as [permissões](#permissions) delegadas apropriadas de um usuário, e outro usuário tiver compartilhado uma pasta de contatos com esse usuário, ou tiver concedido acesso delegado a esse usuário. Confira [detalhes e um exemplo](/graph/outlook-get-shared-contacts-folders).
+* Se o aplicativo tiver as [permissões](#permissions) delegadas apropriadas de um usuário e outro usuário tiver compartilhado uma pasta de contato com esse usuário ou se tiver concedido acesso delegado a esse usuário. Confira [detalhes e um exemplo](/graph/outlook-get-shared-contacts-folders).
 
 
 ## <a name="permissions"></a>Permissões
@@ -85,7 +85,7 @@ GET https://graph.microsoft.com/beta/me/contactFolders/{id}
 ---
 
 ##### <a name="response"></a>Resposta
-Veja a seguir um exemplo da resposta. Observação: o objeto de resposta mostrado aqui pode ser encurtado para legibilidade.
+Aqui está um exemplo da resposta. Observação: o objeto de resposta mostrado aqui pode ser reduzido para facilitar a leitura.
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -94,7 +94,6 @@ Veja a seguir um exemplo da resposta. Observação: o objeto de resposta mostrad
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 104
 
 {
   "displayName": "Finance",

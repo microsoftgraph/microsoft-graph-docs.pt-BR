@@ -3,14 +3,14 @@ title: Atualizar membro na equipe
 description: Atualize a função de membro em uma equipe.
 author: akjo
 doc_type: apiPageType
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: microsoft-teams
-ms.openlocfilehash: 81aad9adb2630d14f7813d8296e7a13ea6515edf
-ms.sourcegitcommit: 456ec9510807d05623c0ed1dd049c9676f53f56b
+ms.openlocfilehash: 58f184615d5ebac617bcbad62af9bfcd4c0a93a0
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/22/2021
-ms.locfileid: "53060524"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60943084"
 ---
 # <a name="update-member-in-team"></a>Atualizar membro na equipe
 
@@ -107,7 +107,6 @@ content-length: 26
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 475
 
 {
   "@odata.context": "https://graph.microsoft.com/beta/$metadata#teams('ece6f0a1-7ca4-498b-be79-edf6c8fc4d82')/members/microsoft.graph.aadUserConversationMember/$entity",

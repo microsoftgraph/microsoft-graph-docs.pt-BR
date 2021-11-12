@@ -2,15 +2,15 @@
 title: Listar printServiceEndpoints
 description: Recupere uma lista de pontos de extremidade expostos por um serviço de impressão.
 author: braedenp-msft
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: universal-print
 doc_type: apiPageType
-ms.openlocfilehash: 9441b8e704edb328afa2fe372204f0a2c1acc5ed
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: 508d818224c5aae86bcd18d9e1412532e8192309
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52053605"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60943182"
 ---
 # <a name="list-printserviceendpoints"></a>Listar printServiceEndpoints
 
@@ -25,9 +25,9 @@ Nenhuma permissão é necessária para chamar essa API, mas para usar o serviço
 
 |Tipo de permissão | Permissões (da com menos para a com mais privilégios) |
 |:---------------|:--------------------------------------------|
-|Delegado (conta corporativa ou de estudante)|Nenhum|
-|Delegado (conta pessoal da Microsoft)|Nenhum.|
-|Aplicativo|Nenhum|
+|Delegado (conta corporativa ou de estudante)|Nenhum.|
+|Delegada (conta pessoal da Microsoft)|Nenhum.|
+|Aplicativo|Nenhum.|
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- { "blockType": "ignored" } -->
@@ -89,7 +89,6 @@ Este é um exemplo de resposta.
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 305
 
 {
   "@odata.context": "https://graph.microsoft.com/beta/$metadata#Collection(microsoft.graph.printServiceEndpoint)",

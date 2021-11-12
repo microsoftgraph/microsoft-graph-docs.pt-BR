@@ -2,15 +2,15 @@
 title: Atualizar rangefill
 description: Atualize as propriedades do objeto rangefill.
 author: lumine2008
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: excel
 doc_type: apiPageType
-ms.openlocfilehash: 2f88d753e8d8e5a541c42feca9bd60084a41412e
-ms.sourcegitcommit: 94c4acf8bd03c10a44b12952b6cb4827df55b978
+ms.openlocfilehash: dd9924d469b0bfa342bae0ce25287f828061114e
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/06/2021
-ms.locfileid: "52785883"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60947165"
 ---
 # <a name="update-rangefill"></a>Atualizar rangefill
 
@@ -19,7 +19,7 @@ Namespace: microsoft.graph
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Atualize as propriedades do objeto rangefill.
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
@@ -66,7 +66,6 @@ Este é um exemplo da solicitação.
 ```http
 PATCH https://graph.microsoft.com/beta/me/drive/items/{id}/workbook/names/{name}/range/format/fill
 Content-type: application/json
-Content-length: 28
 
 {
   "color": "color-value"
@@ -98,7 +97,6 @@ Aqui está um exemplo da resposta. Observação: o objeto de resposta mostrado a
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 28
 
 ```
 

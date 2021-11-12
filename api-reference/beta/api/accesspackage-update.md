@@ -5,12 +5,12 @@ author: markwahl-msft
 ms.localizationpriority: medium
 ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: 6f777520a9896760ba263dc12ff7a4c2b1631132
-ms.sourcegitcommit: 64d27a0e3dcccc9d857e62aace4153e5d98fb3d0
+ms.openlocfilehash: 92e2e02a65f7bf815d12e449ad843eca8f72b6eb
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "60729728"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60925808"
 ---
 # <a name="update-accesspackage"></a>Atualizar accessPackage
 
@@ -26,7 +26,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |Tipo de permissão|Permissões (da com menos para a com mais privilégios)|
 |:---|:---|
 |Delegado (conta corporativa ou de estudante)     | EntitlementManagement.ReadWrite.All |
-|Delegado (conta pessoal da Microsoft) | Sem suporte. |
+|Delegada (conta pessoal da Microsoft) | Sem suporte. |
 |Aplicativo                            | EntitlementManagement.ReadWrite.All |
 
 ## <a name="http-request"></a>Solicitação HTTP
@@ -69,7 +69,6 @@ Se tiver êxito, este método retornará um código de resposta `204 No Content`
 ``` http
 PATCH https://graph.microsoft.com/beta/identityGovernance/entitlementManagement/accessPackages/{accessPackageId}
 Content-Type: application/json
-Content-length: 38
 
 {
   "displayName":"Access Package New Name"

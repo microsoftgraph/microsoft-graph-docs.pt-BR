@@ -2,15 +2,15 @@
 title: Listar printJobs para uma impressora
 description: Recupere uma lista de trabalhos de impressão associados à impressora.
 author: braedenp-msft
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: universal-print
 doc_type: apiPageType
-ms.openlocfilehash: a1368cd07dd32f2c04e9a8bb41b04b5ce8d092cb
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: eb55a8473e3ebd8bb94ba470450f0f336c5ff654
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52049895"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60946661"
 ---
 # <a name="list-printjobs-for-a-printer"></a>Listar printJobs para uma impressora
 
@@ -30,8 +30,8 @@ Para ler trabalhos de impressão de outro usuário, o usuário inscreveu precisa
 |Tipo de permissão | Permissões (da com menos para a com mais privilégios) |
 |:---------------|:--------------------------------------------|
 |Delegado (conta corporativa ou de estudante)| PrintJob.ReadBasic, PrintJob.Read, PrintJob.ReadBasic.All, PrintJob.Read.All, PrintJob.ReadWriteBasic, PrintJob.ReadWrite, PrintJob.ReadWriteBasic.All, PrintJob.ReadWrite.All |
-|Delegado (conta pessoal da Microsoft)|Sem suporte.|
-|Application| PrintJob.ReadBasic.All, PrintJob.Read.All, PrintJob.ReadWriteBasic.All, PrintJob.ReadWrite.All |
+|Delegada (conta pessoal da Microsoft)|Sem suporte.|
+|Aplicativo| PrintJob.ReadBasic.All, PrintJob.Read.All, PrintJob.ReadWriteBasic.All, PrintJob.ReadWrite.All |
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- { "blockType": "ignored" } -->
@@ -102,7 +102,6 @@ Este é um exemplo de resposta.
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 461
 
 {
   "@odata.context": "https://graph.microsoft.com/beta/$metadata#print/printers('c05f3726-0d4b-4aa1-8fe9-2eb981bb26fb')/jobs",

@@ -2,15 +2,15 @@
 title: Criar legalHold
 description: Crie um novo objeto legalHold.
 author: mahage-msft
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: ediscovery
 doc_type: resourcePageType
-ms.openlocfilehash: a48774cd3613b2b2cdbcb376d5ffe9781a786c79
-ms.sourcegitcommit: 40947e6f4337c8c4193d85bb862e15f67263e1e7
+ms.openlocfilehash: 1de0f93821122786731673af08942a68027f585e
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/13/2021
-ms.locfileid: "50773848"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60945622"
 ---
 # <a name="create-legalhold"></a>Criar legalHold
 
@@ -27,7 +27,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |Tipo de permissão|Permissões (da com menos para a com mais privilégios)|
 |:---|:---|
 |Delegado (conta corporativa ou de estudante)|eDiscovery.Read.All, eDiscovery.ReadWrite.All|
-|Delegado (conta pessoal da Microsoft)|Sem suporte.|
+|Delegada (conta pessoal da Microsoft)|Sem suporte.|
 |Aplicativo|Sem suporte.|
 
 ## <a name="http-request"></a>Solicitação HTTP
@@ -56,7 +56,7 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar [legalHo
 
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|displayName|String| O nome de exibição da ressução legal. |
+|displayName|Cadeia de caracteres| O nome de exibição da ressução legal. |
 
 ## <a name="response"></a>Resposta
 
@@ -77,7 +77,6 @@ Se tiver êxito, este método retornará um código de resposta e um `201 Create
 ``` http
 POST https://graph.microsoft.com/beta/compliance/ediscovery/cases/{caseId}/legalHolds
 Content-Type: application/json
-Content-length: 295
 
 {
   "@odata.type": "#microsoft.graph.ediscovery.legalHold",

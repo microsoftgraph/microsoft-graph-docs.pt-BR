@@ -2,15 +2,15 @@
 title: Atualizar a workbookChartDataLabels
 description: Atualize as propriedades do objeto workbookchartdatalabels.
 author: lumine2008
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: excel
 doc_type: apiPageType
-ms.openlocfilehash: da02af6ba08bbea8c2890be48f2ef945a3c6e9eb
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: a830fcfa202aaa7a477fb6a7902db57a340a3c2a
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52047436"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60925647"
 ---
 # <a name="update-workbookchartdatalabels"></a>Atualizar a workbookChartDataLabels
 
@@ -69,7 +69,6 @@ Este é um exemplo da solicitação.
 ```http
 PATCH https://graph.microsoft.com/beta/me/drive/items/{id}/workbook/worksheets/{id|name}/charts/{name}/datalabels
 Content-type: application/json
-Content-length: 134
 
 {
   "position": "position-value",
@@ -98,7 +97,7 @@ Content-length: 134
 ---
 
 ##### <a name="response"></a>Resposta
-Veja a seguir um exemplo da resposta. Observação: o objeto de resposta mostrado aqui pode ser encurtado para legibilidade.
+Aqui está um exemplo da resposta. Observação: o objeto de resposta mostrado aqui pode ser reduzido para facilitar a leitura.
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -107,7 +106,6 @@ Veja a seguir um exemplo da resposta. Observação: o objeto de resposta mostrad
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 134
 
 {
   "position": "position-value",

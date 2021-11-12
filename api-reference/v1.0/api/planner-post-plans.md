@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: TarkanSevilmis
 ms.prod: planner
 doc_type: apiPageType
-ms.openlocfilehash: d307959eabe35ce86deebb4fbd06e9927f0576f2
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 0d77b27e7ccca1a82326c202000000225c047806
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59104901"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60946486"
 ---
 # <a name="create-plannerplan"></a>Criar plannerPlan
 
@@ -69,7 +69,6 @@ Este é um exemplo da solicitação.
 ``` http
 POST https://graph.microsoft.com/v1.0/planner/plans
 Content-type: application/json
-Content-length: 381
 
 {
   "owner": "ebf3b108-5234-4e22-b93d-656d7dae5874",
@@ -109,7 +108,6 @@ Aqui está um exemplo da resposta. Observação: o objeto de resposta mostrado a
 ``` http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 357
 
 {
   "createdBy": {

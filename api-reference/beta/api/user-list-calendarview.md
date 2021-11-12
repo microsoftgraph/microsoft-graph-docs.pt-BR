@@ -1,16 +1,16 @@
 ---
 title: Listar calendarView
 description: Obter as ocorrências, exceções e instâncias únicas de eventos em uma exibição de calendário definida por um intervalo de tempo, a partir do calendário padrão do usuário,
-localization_priority: Normal
+ms.localizationpriority: medium
 doc_type: apiPageType
 author: harini84
 ms.prod: outlook
-ms.openlocfilehash: bd5d907e6511309ddb7389b5f3ea0e4cf950aca6
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: 4529d1d4b567cbba8e12a235aa9484cdc1de2953
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52048887"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60931948"
 ---
 # <a name="list-calendarview"></a>Listar calendarView
 
@@ -70,7 +70,7 @@ Este método também dá suporte a alguns [Parâmetros de consulta OData](/graph
 | Nome       | Tipo | Descrição |
 |:---------------|:--------|:--------|
 | Autorização  | string | {token} de portador. Obrigatório.  |
-| Prefira: outlook.timezone  | string | Use isto para especificar o fuso horário para horas de início e término na resposta. Se não especificado, esses valores de tempo serão retornados em UTC. Opcional. |
+| Prefira: outlook.timezone  | string | Use isso para especificar o fuso horário para os horários de início e término na resposta. Se não for especificado, esses valores de tempo serão retornados em UTC. Opcional. |
 | Prefer: outlook.body-content-type | cadeia de caracteres | O formato da propriedade **corpo** a ser retornada. Os valores podem ser "text" ou "html". Um cabeçalho `Preference-Applied` é retornado como confirmação se este cabeçalho `Prefer` for especificado. Se o cabeçalho não for especificado, a propriedade **corpo** será retornada no formato HTML. Opcional. |
 
 ## <a name="request-body"></a>Corpo da solicitação
@@ -110,7 +110,7 @@ GET https://graph.microsoft.com/v1.0/me/calendarView?startDateTime=2020-01-01T19
 ---
 
 ### <a name="response"></a>Resposta
-Veja a seguir um exemplo da resposta. Observação: o objeto de resposta mostrado aqui pode ser encurtado para legibilidade.
+Aqui está um exemplo da resposta. Observação: o objeto de resposta mostrado aqui pode ser reduzido para facilitar a leitura.
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -120,7 +120,6 @@ Veja a seguir um exemplo da resposta. Observação: o objeto de resposta mostrad
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 354
 
 {
   "value": [

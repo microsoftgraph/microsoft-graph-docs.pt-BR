@@ -2,15 +2,15 @@
 title: Criar acceptedSender
 description: Adicione um novo usuário ou grupo à lista acceptedSender.
 author: Jordanndahl
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: 31a4dd44eb0f16b78dfe3b2cebe068ba825e6835
-ms.sourcegitcommit: 4fa6fcc058c7f8d8cad58c0b82db23d6c7da37d2
+ms.openlocfilehash: dc80dd73722235f25984f341e98e1584c593292e
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/27/2021
-ms.locfileid: "52681414"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60946213"
 ---
 # <a name="create-acceptedsender"></a>Criar acceptedSender
 
@@ -59,7 +59,6 @@ Este é um exemplo de solicitação.
 ```http
 POST https://graph.microsoft.com/beta/groups/{id}/acceptedSenders/$ref
 Content-type: application/json
-Content-length: 30
 
 {
   "@odata.id":"https://graph.microsoft.com/beta/users/alexd@contoso.com"

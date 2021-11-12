@@ -5,12 +5,12 @@ author: nkramer
 ms.localizationpriority: medium
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 71e9fb82090ac4ae5a0d386f061276f36cd56f7c
-ms.sourcegitcommit: f4999aa6fc05f845027db01aa489f7086f9850e1
+ms.openlocfilehash: 9f0eb470e180c5161c734af9bb296c0d7d32a3be
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/13/2021
-ms.locfileid: "60290138"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60937017"
 ---
 # <a name="update-team"></a>Atualizar equipe
 
@@ -28,7 +28,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |:--------------------|:---------------------------------------------------------|
 |Delegado (conta corporativa ou de estudante) | TeamSettings.ReadWrite.All, Group.ReadWrite.All **, Directory.ReadWrite.All** |
 |Delegado (conta pessoal da Microsoft) | Sem suporte.    |
-|Application | TeamSettings.ReadWrite.Group *, TeamSettings.ReadWrite.All, Group.ReadWrite.All**, Directory.ReadWrite.All** |
+|Application | TeamSettings.ReadWrite.Group *, TeamSettings.ReadWrite.All, Group.ReadWrite.All, Directory.ReadWrite.All** |
 
 > **Observação**: Permissões marcadas com * usam [consentimento específico de recurso](https://aka.ms/teams-rsc). As permissões marcadas com ** são preteridas e não devem ser usadas.
 
@@ -65,7 +65,6 @@ Este é um exemplo de solicitação.
 ```http
 PATCH https://graph.microsoft.com/v1.0/teams/{id}
 Content-type: application/json
-Content-length: 211
 
 {  
   "memberSettings": {

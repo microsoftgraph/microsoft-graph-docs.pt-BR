@@ -2,15 +2,15 @@
 title: Listar monthlyPrintUsageByPrinter
 description: Recupere uma lista de resumos de uso de impressão mensal, agrupados por impressora.
 author: braedenp-msft
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: cloud-printing
 doc_type: apiPageType
-ms.openlocfilehash: 19eff0d2fd6de0aad79a63cde61706db0c58f125
-ms.sourcegitcommit: 3f40fbb953b14c1f52341786569c678adfc5bd3e
+ms.openlocfilehash: e26211a84ecee4fbebebb7a658081081d26f8153
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/05/2021
-ms.locfileid: "52781202"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60939263"
 ---
 # <a name="list-monthlyprintusagebyprinter"></a>Listar monthlyPrintUsageByPrinter
 
@@ -89,7 +89,6 @@ Este é um exemplo de resposta.
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 268
 
 {
   "value": [

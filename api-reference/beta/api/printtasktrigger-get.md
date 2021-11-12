@@ -2,15 +2,15 @@
 title: Get taskTrigger
 description: Obter um gatilho de tarefa de uma impressora.
 author: braedenp-msft
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: universal-print
 doc_type: apiPageType
-ms.openlocfilehash: 3976b61801d6f7bff3a1355666849a8e46f56c70
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: 23cd3dc21fd22f4aa02e7ca8fcd7a82818166e33
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52053563"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60941972"
 ---
 # <a name="get-tasktrigger"></a>Get taskTrigger
 
@@ -30,8 +30,8 @@ Além das permissões a seguir, o locatário do usuário deve ter uma assinatura
 |Tipo de permissão | Permissões (da com menos para a com mais privilégios) |
 |:---------------|:--------------------------------------------|
 |Delegado (conta corporativa ou de estudante)| Printer.Read.All, Printer.ReadWrite.All, Printer.FullControl.All |
-|Delegado (conta pessoal da Microsoft)|Sem suporte.|
-|Application|Sem suporte.|
+|Delegada (conta pessoal da Microsoft)|Sem suporte.|
+|Aplicativo|Sem suporte.|
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- { "blockType": "ignored" } -->
@@ -93,7 +93,6 @@ Este é um exemplo de resposta.
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 181
 
 {
   "@odata.context": "https://graph.microsoft.com/beta/$metadata#print/printers/taskTriggers/$entity",

@@ -2,15 +2,15 @@
 title: 'reviewSet: export'
 description: Inicie uma exportação de um reviewSet.
 author: mahage-msft
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: ediscovery
 doc_type: apiPageType
-ms.openlocfilehash: 2620f72eced3bc9f5c6fb02e5e034a6116af5f2c
-ms.sourcegitcommit: 40947e6f4337c8c4193d85bb862e15f67263e1e7
+ms.openlocfilehash: dde236b960cc13eb8d07cee1a69f11eca6b1281c
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/13/2021
-ms.locfileid: "50772854"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60943490"
 ---
 # <a name="reviewset-export"></a>reviewSet: export
 
@@ -18,16 +18,16 @@ Namespace: microsoft.graph.ediscovery
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Iniciar uma exportação de um **reviewSet**.  Para obter detalhes, [consulte Export documents from a review set in Advanced eDiscovery](/microsoft-365/compliance/export-documents-from-review-set).
+Iniciar uma exportação de um **reviewSet**.  Para obter detalhes, [consulte Exportar documentos de um conjunto de revisão em Advanced eDiscovery](/microsoft-365/compliance/export-documents-from-review-set).
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>Permissões
 
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão|Permissões (da com menos para a com mais privilégios)|
 |:---|:---|
 |Delegado (conta corporativa ou de estudante)|eDiscovery.Read.All, eDiscovery.ReadWrite.All|
-|Delegado (conta pessoal da Microsoft)|Sem suporte.|
+|Delegada (conta pessoal da Microsoft)|Sem suporte.|
 |Aplicativo|Sem suporte.|
 
 ## <a name="http-request"></a>Solicitação HTTP
@@ -56,10 +56,10 @@ A tabela a seguir mostra os parâmetros que podem ser usados com esta ação.
 
 |Parâmetro|Tipo|Descrição|
 |:---|:---|:---|
-|outputName|String| Nome da exportação. Obrigatório. |
-|description|String| Descrição da exportação |
-|azureBlobContainer|String| Ao exportar para sua própria conta de armazenamento do Azure, essa é a URL do contêiner. |
-|azureBlobToken|String| Ao exportar para sua própria conta de armazenamento do Azure, o token SAS para a URL do contêiner. |
+|outputName|Cadeia de caracteres| Nome da exportação. Obrigatório. |
+|description|Cadeia de caracteres| Descrição da exportação |
+|azureBlobContainer|Cadeia de caracteres| Ao exportar para sua própria conta de armazenamento do Azure, essa é a URL do contêiner. |
+|azureBlobToken|Cadeia de caracteres| Ao exportar para sua própria conta de armazenamento do Azure, o token SAS para a URL do contêiner. |
 |exportOptions| [microsoft.graph.ediscovery.exportOptions](../resources/ediscovery-caseexportoperation.md#exportoptions-values) |Especifica opções que controlam o formato da exportação. Os valores possíveis são: `originalFiles`, `text`, `pdfReplacement`, `fileInfo`, `tags`.|
 |exportStructure|[microsoft.graph.ediscovery.exportFileStructure](../resources/ediscovery-caseexportoperation.md#exportfilestructure-values)| Opções que controlam a estrutura do arquivo e o empacotamento da exportação. Os valores possíveis são: `none`, `directory`, `pst`.|
 
@@ -82,7 +82,6 @@ Se a exportação for iniciada com êxito, essa ação retornará um `202 Accept
 ``` http
 POST https://graph.microsoft.com/beta/compliance/ediscovery/cases/99e865fc-e29f-479a-ba83-9e58eb017103/reviewsets/e44ac2cb-f8b4-4fd8-aa1c-1391b46ba9cc/export
 Content-Type: application/json
-Content-length: 186
 
 {
   "outputName": "2020-12-06 Contoso investigation export",

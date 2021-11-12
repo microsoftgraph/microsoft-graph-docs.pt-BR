@@ -1,16 +1,16 @@
 ---
 title: Listar taskFolders
 description: Obter todas as Outlook de tarefas na caixa de correio do usuário.
-localization_priority: Normal
+ms.localizationpriority: medium
 author: mashriv
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: f863aa4edb26ef0d3ac1325404c07737ae0285af
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: 47cda01442789435e9e6f094e5af6d21bbbc2ea3
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52052975"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60943266"
 ---
 # <a name="list-taskfolders-deprecated"></a>Listar taskFolders (preterido)
 
@@ -28,7 +28,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
 |:--------------------|:---------------------------------------------------------|
 |Delegado (conta corporativa ou de estudante) | Tasks.Read    |
-|Delegado (conta pessoal da Microsoft) | Tasks.Read    |
+|Delegada (conta pessoal da Microsoft) | Tasks.Read    |
 |Aplicativo | Sem suporte. |
 
 ## <a name="http-request"></a>Solicitação HTTP
@@ -82,7 +82,7 @@ GET https://graph.microsoft.com/beta/me/outlook/taskFolders
 ---
 
 ##### <a name="response"></a>Resposta
-Veja a seguir um exemplo da resposta. Observação: o objeto de resposta mostrado aqui pode ser encurtado para legibilidade.
+Aqui está um exemplo da resposta. Observação: o objeto de resposta mostrado aqui pode ser reduzido para facilitar a leitura.
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -92,7 +92,6 @@ Veja a seguir um exemplo da resposta. Observação: o objeto de resposta mostrad
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 200
 
 {
   "value": [

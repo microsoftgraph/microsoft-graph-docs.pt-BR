@@ -2,15 +2,15 @@
 title: Atualizar educationAssignmentDefaults
 description: Atualize as propriedades de um objeto educationAssignmentDefaults.
 author: dipakboyed
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: 4dd6d6d8d2c5433ca2ad133c57cae8b17af79ad5
-ms.sourcegitcommit: 3f40fbb953b14c1f52341786569c678adfc5bd3e
+ms.openlocfilehash: 04a701011bf1ac0889b0dbf54501cdadf7cf1830
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/05/2021
-ms.locfileid: "52780817"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60930087"
 ---
 # <a name="update-educationassignmentdefaults"></a>Atualizar educationAssignmentDefaults
 Namespace: microsoft.graph
@@ -25,7 +25,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |Tipo de permissão|Permissões (da com menos para a com mais privilégios)|
 |:---|:---|
 |Delegado (conta corporativa ou de estudante) |  EduAssignments.ReadWriteBasic, EduAssignments.ReadWrite  |
-|Delegado (conta pessoal da Microsoft) |  Sem suporte.  |
+|Delegada (conta pessoal da Microsoft) |  Sem suporte.  |
 |Aplicativo | Sem suporte. |
 
 ## <a name="http-request"></a>Solicitação HTTP
@@ -51,7 +51,7 @@ No corpo da solicitação, fornece os valores para campos relevantes do [objeto 
 |:---|:---|:---|
 |addedStudentAction|educationAddedStudentAction|Comportamento padrão no nível de classe para lidar com alunos que são adicionados após a publicação da atribuição. Os valores possíveis são: `none` e `assignIfOpen`. O valor padrão é `none`.|
 |dueTime|TimeOfDay|Valor padrão de nível de classe para o campo de tempo de vencimento. O valor padrão é `23:59:00`|
-|notificationChannelUrl|String|Canal Teams padrão para o qual as notificações serão enviadas. O valor padrão é `null`.|
+|notificationChannelUrl|Cadeia de caracteres|Canal Teams padrão para o qual as notificações serão enviadas. O valor padrão é `null`.|
 
 
 
@@ -72,7 +72,6 @@ Se tiver êxito, este método retornará um código de resposta e um `200 OK` [o
 ``` http
 PATCH https://graph.microsoft.com/beta/education/classes/{id}/assignmentDefaults
 Content-Type: application/json
-Content-length: 181
 
 {
   "addedStudentAction": "assignIfOpen",

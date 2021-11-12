@@ -1,16 +1,16 @@
 ---
 title: Get plannerPlan
 description: Recupere as propriedades e as relações do **objeto plannerplan.**
-localization_priority: Normal
+ms.localizationpriority: medium
 author: TarkanSevilmis
 ms.prod: planner
 doc_type: apiPageType
-ms.openlocfilehash: 667c188dd186122279e5e13a69ec647f3faa14ed
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: 32bbd34904be6b17c2050d7537c15ed2dbd0beb7
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52037638"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60942083"
 ---
 # <a name="get-plannerplan"></a>Get plannerPlan
 
@@ -89,7 +89,6 @@ Veja a seguir um exemplo da resposta.
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 357
 
 {
   "createdBy": {

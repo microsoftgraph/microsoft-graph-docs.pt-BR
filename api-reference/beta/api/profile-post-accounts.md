@@ -5,12 +5,12 @@ author: kevinbellinger
 ms.localizationpriority: medium
 ms.prod: people
 doc_type: apiPageType
-ms.openlocfilehash: 979cbf81654a20cae80aba601c278867ad7ffc1f
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: b2215ba5406b2320a5ec6f5f1848efb2907e446d
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59126146"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60943108"
 ---
 # <a name="create-account"></a>Criar conta
 Namespace: microsoft.graph
@@ -51,8 +51,8 @@ A tabela a seguir mostra as propriedades necessárias ao criar um novo [objeto u
 
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|allowedAudiences|Cadeia de Caracteres|As audiências que são capazes de ver os valores contidos na entidade. Herdado [do itemFacet](../resources/itemfacet.md). Os valores possíveis são: `me`, `family`, `contacts`, `groupMembers`, `organization`, `federatedOrganizations`, `everyone`, `unknownFutureValue`.|
-|countryCode|Cadeia de Caracteres|Contém o código de país de dois caracteres associado à conta de usuários.  |
+|allowedAudiences|Cadeia de caracteres|As audiências que são capazes de ver os valores contidos na entidade. Herdado [do itemFacet](../resources/itemfacet.md). Os valores possíveis são: `me`, `family`, `contacts`, `groupMembers`, `organization`, `federatedOrganizations`, `everyone`, `unknownFutureValue`.|
+|countryCode|Cadeia de caracteres|Contém o código de país de dois caracteres associado à conta de usuários.  |
 |inferência|[inferenceData](../resources/inferencedata.md)|Contém detalhes de inferência se a entidade for inferida pelo aplicativo de criação ou modificação. Herdado [do itemFacet](../resources/itemfacet.md).|
 |preferredLanguageTag|[localeInfo](../resources/localeinfo.md)|Contém o idioma que o usuário associou como preferencial para a conta.   |
 |source|[personDataSource](../resources/persondatasource.md)|Onde os valores se originaram se sincronizados de outro serviço. Herdado [do itemFacet](../resources/itemfacet.md).|
@@ -73,7 +73,6 @@ Se tiver êxito, este método retornará um código de resposta e um `201 Create
 ``` http
 POST https://graph.microsoft.com/beta/me/profile/account
 Content-Type: application/json
-Content-length: 494
 
 {
   "allowedAudiences": "organization",

@@ -1,16 +1,16 @@
 ---
 title: Criar plannerTask
 description: Use essa API para criar um novo **plannerTask**.
-localization_priority: Normal
+ms.localizationpriority: medium
 author: TarkanSevilmis
 ms.prod: planner
 doc_type: apiPageType
-ms.openlocfilehash: ba187286f88b22cb7c945ad98a75cc1669ab9127
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: b646c088a97af515af6b267e54feaf02135f0161
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52055348"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60939424"
 ---
 # <a name="create-plannertask"></a>Criar plannerTask
 
@@ -59,7 +59,6 @@ Este é um exemplo da solicitação.
 ```http
 POST https://graph.microsoft.com/beta/planner/tasks
 Content-type: application/json
-Content-length: 285
 
 {
   "planId": "xqQg5FS2LkCp935s-FIFm2QAFkHM",
@@ -85,7 +84,7 @@ Content-length: 285
 
 No corpo da solicitação, forneça uma representação JSON do objeto [plannerTask](../resources/plannertask.md).
 ##### <a name="response"></a>Resposta
-Veja a seguir um exemplo da resposta. Observação: o objeto de resposta mostrado aqui pode ser encurtado para legibilidade.
+Aqui está um exemplo da resposta. Observação: o objeto de resposta mostrado aqui pode ser reduzido para facilitar a leitura.
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -94,7 +93,6 @@ Veja a seguir um exemplo da resposta. Observação: o objeto de resposta mostrad
 ```http
 HTTP/1.1 201 Created
 Content-type: application/json
-Content-length: 677
 
 {
   "createdBy": {

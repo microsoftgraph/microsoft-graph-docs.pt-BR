@@ -5,12 +5,12 @@ author: Jordanndahl
 ms.localizationpriority: medium
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: ac04d13eb630d97c88bece5485bb28bf834c20a7
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: da542b2f878aaef80a1e6f27ea233b54abf6556b
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59100152"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60940680"
 ---
 # <a name="list-photos"></a>Listar fotos
 
@@ -23,7 +23,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegada (conta corporativa ou de estudante) | Group.ReadBasic.All, Group.Read.All, Group.ReadWrite.All |
+|Delegado (conta corporativa ou de estudante) | Group.ReadBasic.All, Group.Read.All, Group.ReadWrite.All |
 |Delegada (conta pessoal da Microsoft) | Sem suporte.    |
 |Aplicativo | Group.ReadBasic.All, Group.Read.All, Group.ReadWrite.All |
 
@@ -90,7 +90,6 @@ Este é um exemplo de resposta.
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 94
 
 {
   "value": [

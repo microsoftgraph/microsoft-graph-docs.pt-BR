@@ -2,15 +2,15 @@
 title: 'event: forward'
 description: 'Essa ação permite que o organizador ou participante de um evento de reunião encaminhe o '
 author: harini84
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 75f294c456969dbd7f8ffccfc941451d4c611b03
-ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
+ms.openlocfilehash: 834e9b70a90c02c144daaf54716d78f4c3322629
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50436208"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60944841"
 ---
 # <a name="event-forward"></a>event: forward
 
@@ -20,7 +20,7 @@ Namespace: microsoft.graph
 
 Essa ação permite que o organizador ou participante de um evento de [reunião](../resources/event.md) encaminhe a solicitação de reunião para um novo destinatário. 
 
-Se o evento de reunião for encaminhado da caixa de correio do Microsoft 365 de um participante para outro destinatário, essa ação também enviará uma mensagem para notificar o organizador do encaminhamento e adiciona o destinatário à cópia do evento de reunião do organizador. Essa conveniência não está disponível no encaminhamento de uma conta do Outlook.com.
+Se o evento de reunião for encaminhado da caixa de correio de Microsoft 365 do participante para outro destinatário, essa ação também enviará uma mensagem para notificar o organizador do encaminhamento e adiciona o destinatário à cópia do evento de reunião do organizador. Essa conveniência não está disponível no encaminhamento de uma conta do Outlook.com.
 
 
 ## <a name="permissions"></a>Permissões
@@ -80,7 +80,6 @@ Este é um exemplo da solicitação.
 ```http
 POST https://graph.microsoft.com/beta/me/events/{id}/forward
 Content-type: application/json
-Content-length: 56
 
 {
   "ToRecipients":[

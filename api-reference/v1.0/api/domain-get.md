@@ -5,12 +5,12 @@ author: adimitui
 ms.localizationpriority: medium
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: 17b1e2b9220e4a9d8ba657b327c774121adf05e2
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 200fb857dafc8eaa6606bc7e21b0fdcdd111b24b
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59056689"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60936387"
 ---
 # <a name="get-domain"></a>Obter domínio
 
@@ -25,7 +25,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegada (conta corporativa ou de estudante) | Domain.Read.All, Domain.ReadWrite.All, Directory.Read.All    |
+|Delegado (conta corporativa ou de estudante) | Domain.Read.All, Domain.ReadWrite.All, Directory.Read.All    |
 |Delegada (conta pessoal da Microsoft) | Sem suporte.    |
 |Aplicativo | Domain.Read.All, Domain.ReadWrite.All, Directory.Read.All  |
 
@@ -96,7 +96,6 @@ Observação: o objeto de resposta exibido aqui pode ser encurtado para legibili
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 192
 
 {
   "authenticationType": "authenticationType-value",

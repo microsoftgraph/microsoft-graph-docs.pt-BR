@@ -1,16 +1,16 @@
 ---
 title: Adicionar um scopedRoleMember
 description: 'Adicione um novo scopedRoleMembership. OBSERVAÇÃO: No momento, apenas as *funções* de administrador de conta de usuário e *helpdesk* são suportadas para associações de função com escopo.'
-localization_priority: Normal
+ms.localizationpriority: medium
 author: DougKirschner
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: 2eb0f3e687e86d9634c28ba4958e895718718625
-ms.sourcegitcommit: 979fe005c74eb99cd971df6b9511b2d3f7fe3cd4
+ms.openlocfilehash: 4e128f8bb588c1a03d355dec61ff9ada42ed46cd
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/17/2021
-ms.locfileid: "52991917"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60939970"
 ---
 # <a name="add-a-scopedrolemember"></a>Adicionar um scopedRoleMember
 
@@ -20,14 +20,14 @@ Namespace: microsoft.graph
 
 Adicione um novo [scopedRoleMembership](../resources/scopedrolemembership.md). OBSERVAÇÃO: No momento, apenas as *funções* de administrador de conta de usuário e *helpdesk* são suportadas para associações de função com escopo.
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegada (conta corporativa ou de estudante) | RoleManagement.ReadWrite.Directory, Directory.AccessAsUser.All    |
-|Delegado (conta pessoal da Microsoft) | Sem suporte.    |
+|Delegado (conta corporativa ou de estudante) | RoleManagement.ReadWrite.Directory, Directory.AccessAsUser.All    |
+|Delegada (conta pessoal da Microsoft) | Sem suporte.    |
 |Aplicativo | RoleManagement.ReadWrite.Directory |
 
 ## <a name="http-request"></a>Solicitação HTTP
@@ -59,7 +59,6 @@ Este é um exemplo da solicitação.
 ```http
 POST https://graph.microsoft.com/beta/administrativeUnits/{id}/scopedRoleMembers
 Content-type: application/json
-Content-length: 272
 
 {
   "roleId": "roleId-value",
@@ -97,7 +96,6 @@ Aqui está um exemplo da resposta. Observação: o objeto de resposta mostrado a
 ```http
 HTTP/1.1 201 Created
 Content-type: application/json
-Content-length: 294
 
 {
   "@odata.context":"https://graph.microsoft.com/beta/$metadata#scopedRoleMemberships/$entity",

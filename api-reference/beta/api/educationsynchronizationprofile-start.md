@@ -1,16 +1,16 @@
 ---
 title: Iniciar a sincronização depois de carregar arquivos em um educationSynchronizationProfile
 description: Verifique os arquivos carregados em um perfil específico de sincronização de dados escolares no locatário. Se a verificação for bem-sucedida, a sincronização começará no perfil. Caso contrário, a resposta conterá erros e avisos. Se a resposta contiver erros, a sincronização não será iniciar. Se a resposta contiver apenas avisos, a sincronização será iniciar.
-localization_priority: Normal
+ms.localizationpriority: medium
 author: mmast-msft
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: 2150fd1e54cdb4d5afa2ecbd9a451104d00f2a38
-ms.sourcegitcommit: 7b8ad226dc9dfee61b8c3d32892534855dad3fa0
+ms.openlocfilehash: 01dbba5e593f0710a0c399ff168a772bc41051fe
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/26/2021
-ms.locfileid: "52664717"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60945611"
 ---
 # <a name="start-sync-after-uploading-files-to-an-educationsynchronizationprofile"></a>Iniciar a sincronização depois de carregar arquivos em um educationSynchronizationProfile
 
@@ -92,7 +92,6 @@ Veja a seguir um exemplo da resposta.
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 2105
 
 {
     "@odata.context": "https://graph.microsoft.com/beta/$metadata#education/Collection(microsoft.graph.verificationMessage)",

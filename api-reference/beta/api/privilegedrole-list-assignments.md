@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 doc_type: apiPageType
 ms.prod: governance
 author: carolinetempleton
-ms.openlocfilehash: 4350321ac092646e55c2a0d8e6d546646ee3bca3
-ms.sourcegitcommit: c7ff992ef63e480d070421ba99b28ee129cb6acb
+ms.openlocfilehash: 49b55c7488b7e7be1e61a50e2dac0b7bf9ffe755
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "60688006"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60947222"
 ---
 # <a name="list-assignments"></a>Listar tarefas
 
@@ -97,7 +97,6 @@ Aqui está um exemplo da resposta. Observação: o objeto de resposta mostrado a
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 237
 
 {
   "value": [

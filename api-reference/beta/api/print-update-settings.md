@@ -5,12 +5,12 @@ author: braedenp-msft
 ms.localizationpriority: medium
 ms.prod: universal-print
 doc_type: apiPageType
-ms.openlocfilehash: 3529fb345c9c322c3e63c2519f2f6e15cfc75525
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: b5db43838c259c3c7807d407edec067a3db12a6a
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "60560818"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60939347"
 ---
 # <a name="update-printsettings"></a>Atualizar printSettings
 
@@ -28,8 +28,8 @@ Para usar o serviço Impressão Universal, o usuário ou locatário do aplicativ
 |Tipo de permissão | Permissões (da com menos para a com mais privilégios) |
 |:---------------|:--------------------------------------------|
 |Delegado (conta corporativa ou de estudante)| PrintSettings.ReadWrite.All |
-|Delegado (conta pessoal da Microsoft)|Sem suporte.|
-|Application|Sem suporte.|
+|Delegada (conta pessoal da Microsoft)|Sem suporte.|
+|Aplicativo|Sem suporte.|
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- { "blockType": "ignored" } -->
@@ -95,7 +95,6 @@ Este é um exemplo de resposta.
 } -->
 ```http
 HTTP/1.1 204 NoContent
-Content-length: 0
 ```
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79

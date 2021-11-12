@@ -5,12 +5,12 @@ author: sureshja
 ms.localizationpriority: medium
 ms.prod: applications
 doc_type: apiPageType
-ms.openlocfilehash: 2f3aedf415e0086e506729f13b7ca1ce94257dd2
-ms.sourcegitcommit: 11be55b40804b07f4c422f09f601afa97c7d31ed
+ms.openlocfilehash: 23e769867ee02a205ffc9b1b90c8c67d312cdd7c
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/09/2021
-ms.locfileid: "60256162"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60926018"
 ---
 # <a name="update-application"></a>Atualizar aplicativo
 
@@ -59,7 +59,7 @@ No corpo da solicitação, forneça os valores para os campos relevantes que dev
 | optionalClaims          | optionalClaims                                                              | Desenvolvedores de aplicativos podem configurar declarações opcionais em aplicativos do Azure AD para especificar quais declarações desejam em tokens enviados ao aplicativo pelo serviço de token de segurança da Microsoft. Consulte [declarações opcionais](/azure/active-directory/develop/active-directory-optional-claims) para obter mais informações.                                                                                                                                                                                                                                                               |
 | parentalControlSettings | [parentalControlSettings](../resources/parentalcontrolsettings.md)          | Especifica as configurações de controle parental de um aplicativo.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                |
 | publicClient            | [publicClientApplication](../resources/publicclientapplication.md)          | Especifica configurações para clientes instalados, como dispositivos móveis ou da área de trabalho.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            |
-| requiredResourceAccess  | [requiredResourceAccess](../resources/requiredresourceaccess.md) collection | Especifique os recursos que o aplicativo precisa acessar. Essa propriedade também especifica o conjunto de permissões delegadas e funções de aplicativo que ela precisa para cada um desses recursos. Essa configuração de acesso aos recursos necessários impulsiona a experiência de consentimento. Não é possível configurar mais de 50 serviços de recursos (APIs). A partir de meados de outubro de 2021, o número total de permissões necessárias não deve exceder 400. Não anulável.                                                                                                                 |
+| requiredResourceAccess  | [requiredResourceAccess](../resources/requiredresourceaccess.md) collection | Especifique os recursos que o aplicativo precisa acessar. Essa propriedade também especifica o conjunto de permissões delegadas e funções de aplicativo necessárias para cada um desses recursos. Essa configuração de acesso aos recursos necessários impulsiona a experiência de consentimento. Não é possível configurar mais de 50 APIs (serviços de recursos). A partir de meados de outubro de 2021, o número total de permissões necessárias não deve exceder 400. Não anulável.                                                                                                                 |
 | signInAudience          | String                                                                      | Especifica a quais contas da Microsoft são compatíveis com o aplicativo atual. Os valores compatíveis são:<ul><li>`AzureADMyOrg`: usuários com uma conta corporativa ou de estudante da Microsoft no locatário do Azure AD da organização (ou seja, locatário único)</li><li>`AzureADMultipleOrgs`: usuários com uma conta corporativa ou de estudante da Microsoft no locatário do Azure AD da organização (ou seja, multilocatário)</li> <li>`AzureADandPersonalMicrosoftAccount`: usuários com uma conta Microsoft pessoal ou uma conta corporativa ou de estudante no locatário do Azure AD de qualquer organização</li></ul>                           |
 | tags                    | Coleção String                                                           | Cadeias de caracteres personalizadas que podem ser usadas para categorizar e identificar o aplicativo. Não anulada.                                                                                                                                                                                                                                                                                                                                                                                                                                                                              |
 | tokenEncryptionKeyId    | Cadeia de caracteres                                                                      | Especifica a keyId de uma chave pública da coleção keyCredentials. Quando configurado, o Azure AD criptografa todos os tokens emitidos usando a chave para a qual essa propriedade aponta. O código de aplicativo que recebe o token criptografado deve usar a chave privada correspondente para descriptografar o token a fim de que ele possa ser usado para o usuário conectado.                                                                                                                                                                                                                               |
@@ -81,7 +81,6 @@ Este é um exemplo da solicitação.
 ```http
 PATCH https://graph.microsoft.com/v1.0/applications/{id}
 Content-type: application/json
-Content-length: 72
 
 {
   "displayName": "New display name"

@@ -1,21 +1,21 @@
 ---
 title: Atualizar todoTask
-description: Atualizar as propriedades de um objeto todoTask.
+description: Atualize as propriedades de um objeto todoTask.
 author: avijityadav
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: ffc7d5c90d2ec88638e35456ff74a2c48e3f1dc4
-ms.sourcegitcommit: eacd2a6e46c19dd3cd8519592b1668fabe14d85d
+ms.openlocfilehash: bd02da1b75064df8ad82d10e7ddd75466e21c896
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "49873931"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60943070"
 ---
 # <a name="update-todotask"></a>Atualizar todoTask
 Namespace: microsoft.graph [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Atualizar as propriedades de um [objeto todoTask.](../resources/todotask.md)
+Atualize as propriedades de um [objeto todoTask.](../resources/todotask.md)
 
 ## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
@@ -23,7 +23,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |Tipo de permissão|Permissões (da com menos para a com mais privilégios)|
 |:---|:---|
 |Delegado (conta corporativa ou de estudante)|Tasks.ReadWrite|
-|Delegado (conta pessoal da Microsoft)|Tasks.ReadWrite|
+|Delegada (conta pessoal da Microsoft)|Tasks.ReadWrite|
 |Aplicativo|Sem suporte|
 
 ## <a name="http-request"></a>Solicitação HTTP
@@ -51,14 +51,14 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar [todoTas
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
 |id|Cadeia de caracteres|O identificador exclusivo da tarefa. Herdado da [entidade](../resources/entity.md)|
-|body|[itemBody](../resources/itembody.md)|Corpo da tarefa que normalmente contém informações sobre a tarefa. Observe para qual tipo de HTML há suporte.|
+|corpo|[itemBody](../resources/itembody.md)|Corpo da tarefa que normalmente contém informações sobre a tarefa. Observe para qual tipo de HTML há suporte.|
 |completedDateTime|[dateTimeTimeZone](../resources/datetimetimezone.md)|A data no fuso horário especificado que a tarefa foi concluída.|
 |dueDateTime|[dateTimeTimeZone](../resources/datetimetimezone.md)|A data no fuso horário especificado que a tarefa será concluída.|
-|importância|importância|A importância do evento. Os valores possíveis são: `low`, `normal`, `high`.|
+|importância|importância|A importância do evento. Os valores possíveis são: `low`, `normal` e `high`.|
 |isReminderOn|Booliano|Definido como verdadeiro se um alerta é definido para lembrar o usuário da tarefa.|
 |recurrence|[patternedRecurrence](../resources/patternedrecurrence.md)|O padrão de recorrência da tarefa.|
 |reminderDateTime|[dateTimeTimeZone](../resources/datetimetimezone.md)|A data e hora do alerta de lembrete da tarefa.|
-|status|taskStatus|Indica o estado ou o progresso da tarefa. Os valores possíveis são: `notStarted`, `inProgress`, `completed`, `waitingOnOthers`, `deferred`.|
+|status|taskStatus|Indica o estado ou o andamento da tarefa. Os valores possíveis são: `notStarted`, `inProgress`, `completed`, `waitingOnOthers`, `deferred`.|
 |title|Cadeia de caracteres|Uma breve descrição da tarefa.|
 |createdDateTime|DateTimeOffset|A data e a hora da criação da tarefa. Por padrão, está definida em UTC. Você pode fornecer um fuso horário personalizado no cabeçalho da solicitação.|
 |lastModifiedDateTime|DateTimeOffset|A data e hora da última modificação da tarefa. Por padrão, está definida em UTC. Você pode fornecer um fuso horário personalizado no cabeçalho da solicitação.|
@@ -68,7 +68,7 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar [todoTas
 
 ## <a name="response"></a>Resposta
 
-Se bem-sucedido, este método retorna um código de resposta e um objeto `200 OK` [todoTask](../resources/todotask.md) atualizado no corpo da resposta.
+Se tiver êxito, este método retornará um código `200 OK` de resposta e um objeto [todoTask](../resources/todotask.md) atualizado no corpo da resposta.
 
 ## <a name="examples"></a>Exemplos
 
@@ -85,7 +85,6 @@ Se bem-sucedido, este método retorna um código de resposta e um objeto `200 OK
 ``` http
 PATCH https://graph.microsoft.com/beta/me/todo/lists/AAMkADA1MTHgwAAA=/tasks/721a35e2-35e2-721a-e235-1a72e2351a72
 Content-Type: application/json
-Content-length: 608
 
 {
    "dueDateTime":{

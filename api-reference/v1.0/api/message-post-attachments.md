@@ -5,12 +5,12 @@ author: abheek-das
 ms.localizationpriority: medium
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 722f51d2e2c321b8361c5471d9ff945168e4fe3a
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: f8a347706703606c8c33142e3f68809feff73046
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59016117"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60944512"
 ---
 # <a name="add-attachment"></a>Adicionar anexo
 
@@ -82,7 +82,6 @@ Este é um exemplo da solicitação.
 ```http
 POST https://graph.microsoft.com/v1.0/me/messages/AAMkpsDRVK/attachments
 Content-type: application/json
-Content-length: 142
 
 {
   "@odata.type": "#microsoft.graph.fileAttachment",
@@ -121,7 +120,6 @@ Veja a seguir um exemplo da resposta.
 ```http
 HTTP 201 Created
 Content-type: application/json
-Content-length: 202
 
 {
     "id": "AAMkADNkN2R",
@@ -150,7 +148,6 @@ Este é um exemplo da solicitação.
 ```
 POST https://graph.microsoft.com/v1.0/me/messages/AAMkpsDRVK/attachments
 Content-type: application/json
-Content-length: 200
 
 {
   "@odata.type": "#microsoft.graph.itemAttachment",
@@ -186,7 +183,6 @@ Aqui está um exemplo da resposta. Observação: o objeto de resposta mostrado a
 ```http
 HTTP/1.1 201 Created
 Content-type: application/json
-Content-length: 162
 
 {
   "id":"AAMkADNkNJp5JVnQIe9r0=",

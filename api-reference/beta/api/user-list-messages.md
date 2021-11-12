@@ -1,16 +1,16 @@
 ---
 title: Listar mensagens
 description: 'Obtenha as mensagens na caixa de correio do usuário conectado (incluindo as pastas Itens Excluídos e Email Secundário). '
-localization_priority: Normal
+ms.localizationpriority: medium
 doc_type: apiPageType
 author: abheek-das
 ms.prod: outlook
-ms.openlocfilehash: 24083f158863077d6dcb6b2af55a2a16db1e83e7
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: 50283e47ede19f552d75c0791c8aa25a3da27260
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52052611"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60944589"
 ---
 # <a name="list-messages"></a>Listar mensagens
 
@@ -33,7 +33,7 @@ Você pode filtrar as mensagens e obter apenas aquelas que incluem [uma](../reso
 Existem dois cenários em que um aplicativo pode receber mensagens na pasta de email de outro usuário:
 
 * Se o aplicativo tiver permissões de aplicativo ou
-* Se o aplicativo tiver as [permissões](#permissions) delegadas apropriadas de um usuário e outro usuário tiver compartilhado uma pasta de email com esse usuário, ou tiver concedido acesso delegado a esse usuário. Confira [detalhes e um exemplo](/graph/outlook-share-messages-folders).
+* Se o aplicativo tiver as [permissões](#permissions) delegadas apropriadas de um usuário e outro usuário tiver compartilhado uma pasta de email com esse usuário, ou tiver concedido acesso delegado a esse usuário. Veja [detalhes e um exemplo](/graph/outlook-share-messages-folders).
 
 > **Observação** Lembre-se da [questão conhecida](/graph/known-issues#get-messages-returns-chats-in-microsoft-teams) essa operação inclui mensagens de chat do Microsoft Teams em sua resposta.
  
@@ -134,7 +134,7 @@ GET https://graph.microsoft.com/beta/me/messages?$select=sender,subject
 ---
 
 #### <a name="response"></a>Resposta
-Veja a seguir um exemplo da resposta. Para obter a próxima página de mensagens, aplique a URL retornada em `@odata.nextLink` a uma solicitação GET subsequente.
+Aqui está um exemplo da resposta. Para obter a próxima página de mensagens, aplique o URL retornado em `@odata.nextLink` uma solicitação GET subsequente.
 
 <!-- {
   "blockType": "response",
@@ -197,7 +197,7 @@ GET https://graph.microsoft.com/beta/me/messages?$filter=MentionsPreview/IsMenti
 ---
 
 #### <a name="response"></a>Resposta
-Veja a seguir um exemplo da resposta. Observação: o objeto de resposta mostrado aqui pode ser encurtado para legibilidade.
+Aqui está um exemplo da resposta. Observação: o objeto de resposta mostrado aqui pode ser reduzido para facilitar a leitura.
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -207,7 +207,6 @@ Veja a seguir um exemplo da resposta. Observação: o objeto de resposta mostrad
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 987
 
 {
   "@odata.context":"https://graph.microsoft.com/beta/$metadata#me/messages(subject,sender,receivedDateTime,mentionsPreview)",

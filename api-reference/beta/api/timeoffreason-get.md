@@ -2,15 +2,15 @@
 title: Obter timeOffReason
 description: Obter um timeOffReason por ID.
 author: nkramer
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: ad314b96290e772a18fb90a935c0eb6bc7392b02
-ms.sourcegitcommit: 94c4acf8bd03c10a44b12952b6cb4827df55b978
+ms.openlocfilehash: 25113b34bd2adf6063be6ac57a94166dfe768033
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/06/2021
-ms.locfileid: "52787335"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60944036"
 ---
 # <a name="get-timeoffreason"></a>Obter timeOffReason
 
@@ -20,7 +20,7 @@ Namespace: microsoft.graph
 
 Recupere as propriedades e as relações de um [objeto timeOffReason](../resources/timeoffreason.md) por ID.
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>Permissões
 
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
@@ -106,7 +106,6 @@ Este é um exemplo de resposta.
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 401
 
 {
   "id": "TOR_891045ca-b5d2-406b-aa06-a3c8921245d7",

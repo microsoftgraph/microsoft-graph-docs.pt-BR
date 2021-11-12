@@ -2,15 +2,15 @@
 title: Atualizar administrativeunit
 description: Atualize as propriedades de um objeto administrativeUnit.
 author: DougKirschner
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: 8f5974a1f0e599bd47708e50c6c551d151e9acb2
-ms.sourcegitcommit: 979fe005c74eb99cd971df6b9511b2d3f7fe3cd4
+ms.openlocfilehash: f040057540129156aeaee0b3df020cda5e04e5d2
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/17/2021
-ms.locfileid: "52991887"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60939963"
 ---
 # <a name="update-administrativeunit"></a>Atualizar administrativeunit
 
@@ -19,14 +19,14 @@ Namespace: microsoft.graph
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Atualize as propriedades de [um objeto administrativeUnit.](../resources/administrativeunit.md)
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegada (conta corporativa ou de estudante) | AdministrativeUnit.ReadWrite.All, Directory.AccessAsUser.All    |
-|Delegado (conta pessoal da Microsoft) | Sem suporte.    |
+|Delegado (conta corporativa ou de estudante) | AdministrativeUnit.ReadWrite.All, Directory.AccessAsUser.All    |
+|Delegada (conta pessoal da Microsoft) | Sem suporte.    |
 |Aplicativo | AdministrativeUnit.ReadWrite.All |
 
 ## <a name="http-request"></a>Solicitação HTTP
@@ -70,7 +70,6 @@ Se tiver êxito, este método retornará um código de resposta `204 No Content`
 ```http
 PATCH https://graph.microsoft.com/beta/administrativeUnits/{id}
 Content-type: application/json
-Content-length: 114
 
 {
   "displayName": "displayName-value",

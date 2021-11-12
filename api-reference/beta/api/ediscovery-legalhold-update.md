@@ -1,16 +1,16 @@
 ---
 title: Atualizar legalHold
 description: Atualize as propriedades de um objeto legalHold.
-localization_priority: Normal
+ms.localizationpriority: medium
 author: mahage-msft
 ms.prod: ediscovery
 doc_type: apiPageType
-ms.openlocfilehash: 3bee140093a74f335d9316d8785189350ae29f19
-ms.sourcegitcommit: 94c4acf8bd03c10a44b12952b6cb4827df55b978
+ms.openlocfilehash: 44fd89ca07af71959093d1c7c05aac0b87e9a59f
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/06/2021
-ms.locfileid: "52786801"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60925577"
 ---
 # <a name="update-legalhold"></a>Atualizar legalHold
 
@@ -20,14 +20,14 @@ Namespace: microsoft.graph.ediscovery
 
 Atualize as propriedades de um [objeto legalHold.](../resources/ediscovery-legalhold.md)
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>Permissões
 
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão|Permissões (da com menos para a com mais privilégios)|
 |:---|:---|
 |Delegado (conta corporativa ou de estudante)|eDiscovery.Read.All, eDiscovery.ReadWrite.All|
-|Delegado (conta pessoal da Microsoft)|Sem suporte.|
+|Delegada (conta pessoal da Microsoft)|Sem suporte.|
 |Aplicativo|Sem suporte.|
 
 ## <a name="http-request"></a>Solicitação HTTP
@@ -54,9 +54,9 @@ No corpo da solicitação, forneça os valores para os campos relevantes que dev
 
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|contentQuery|String|Consulta KQL que especifica o conteúdo a ser mantido nos locais especificados. Para obter mais informações sobre KQL na Descoberta Digital, consulte Consultas de palavra-chave e condições de pesquisa para Pesquisa de Conteúdo [e Descoberta Digital.](/microsoft-365/compliance/keyword-queries-and-search-conditions) Para manter todo o conteúdo nos locais especificados, deixe **contentQuery em** branco. |
-|description|String| A descrição de espera legal. |
-|displayName|String| O nome de exibição da ressução legal. |
+|contentQuery|Cadeia de caracteres|Consulta KQL que especifica o conteúdo a ser mantido nos locais especificados. Para obter mais informações sobre KQL na Descoberta Digital, consulte Consultas de palavra-chave e condições de pesquisa para Pesquisa de Conteúdo [e Descoberta Digital.](/microsoft-365/compliance/keyword-queries-and-search-conditions) Para manter todo o conteúdo nos locais especificados, deixe **contentQuery em** branco. |
+|description|Cadeia de caracteres| A descrição de espera legal. |
+|displayName|Cadeia de caracteres| O nome de exibição da ressução legal. |
 |isEnabled|Booliano|Indica se a espera está habilitada e mantendo o conteúdo ativamente. |
 
 ## <a name="response"></a>Resposta
@@ -78,7 +78,6 @@ Se tiver êxito, esta ação retornará um código de resposta `204 No Content`.
 ``` http
 PATCH https://graph.microsoft.com/beta/compliance/ediscovery/cases/{caseId}/legalHolds/{legalholdId}
 Content-Type: application/json
-Content-length: 295
 
 {
   "description": "This is a description for a legalHold"

@@ -5,12 +5,12 @@ author: mmcla
 ms.localizationpriority: medium
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: 97cf832f2cb65045c51e4f1407dd1a1d4369a89a
-ms.sourcegitcommit: 0a312d63934cdf9789a5648c2b3f348f48542ff4
+ms.openlocfilehash: 0883a49f023b99cde4b878f0a8e24469a05ecce0
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/07/2021
-ms.locfileid: "60220602"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60935925"
 ---
 # <a name="get-emailauthenticationmethodconfiguration"></a>Obter emailAuthenticationMethodConfiguration
 
@@ -32,7 +32,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 Para cenários delegados, o administrador precisa da seguinte [função:](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles)
 
-* Leitor Global
+* Leitor global
 * Administrador de Política de Autenticação
 * Administrador Global
 
@@ -107,7 +107,6 @@ GET /policies/authenticationMethodsPolicy/authenticationMethodConfigurations/ema
 ```http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-length: 491
 
 {
    "value":{

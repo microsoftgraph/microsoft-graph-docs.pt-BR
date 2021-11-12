@@ -1,16 +1,16 @@
 ---
 title: Atualizar plannerplandetails
 description: Atualize as propriedades do **objeto plannerplandetails.**
-localization_priority: Normal
+ms.localizationpriority: medium
 author: TarkanSevilmis
 ms.prod: planner
 doc_type: apiPageType
-ms.openlocfilehash: ef2cae44d68d7cca7fea973a49030bb35b334295
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: a74b3a5cf6d006959e2e83177b42769a5b6731e4
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52050014"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60935519"
 ---
 # <a name="update-plannerplandetails"></a>Atualizar plannerplandetails
 
@@ -65,7 +65,6 @@ Este é um exemplo da solicitação.
 ```http
 PATCH https://graph.microsoft.com/beta/planner/plans/xqQg5FS2LkCp935s-FIFm2QAFkHM/details
 Content-type: application/json
-Content-length: 212
 Prefer: return=representation
 If-Match: W/"JzEtVGFzayAgQEBAQEBAQEBAQEBAQEBAWCc="
 
@@ -99,7 +98,7 @@ If-Match: W/"JzEtVGFzayAgQEBAQEBAQEBAQEBAQEBAWCc="
 ---
 
 ##### <a name="response"></a>Resposta
-Veja a seguir um exemplo da resposta. Observação: o objeto de resposta mostrado aqui pode ser encurtado para legibilidade.
+Aqui está um exemplo da resposta. Observação: o objeto de resposta mostrado aqui pode ser reduzido para facilitar a leitura.
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -108,7 +107,6 @@ Veja a seguir um exemplo da resposta. Observação: o objeto de resposta mostrad
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 373
 
 {
   "sharedWith": {

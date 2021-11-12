@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 doc_type: apiPageType
 ms.prod: governance
 author: carolinetempleton
-ms.openlocfilehash: b52931922ab2ac7c00d04537ad64ba4e3363449f
-ms.sourcegitcommit: c7ff992ef63e480d070421ba99b28ee129cb6acb
+ms.openlocfilehash: d925e697190401bf9e98cab9cae1808fc84a8238
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "60695759"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60947207"
 ---
 # <a name="privilegedroleassignment-my"></a>privilegedRoleAssignment: my
 
@@ -91,7 +91,6 @@ Aqui está um exemplo da resposta. Observação: o objeto de resposta mostrado a
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 237
 
 {
   "value": [

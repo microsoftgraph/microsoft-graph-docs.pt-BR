@@ -5,12 +5,12 @@ author: jewan-microsoft
 ms.localizationpriority: medium
 ms.prod: onenote
 doc_type: apiPageType
-ms.openlocfilehash: 3fb9cea468f3e1f7bfa8156312f122b1633f810d
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: ffd5590af3ff89463634ebecd24268b4ea7a277b
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59016040"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60945160"
 ---
 # <a name="list-sectiongroups"></a>Listar sectionGroups
 
@@ -94,7 +94,6 @@ Veja a seguir um exemplo da resposta. Observação: O objeto response mostrado a
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 378
 
 {
   "value": [

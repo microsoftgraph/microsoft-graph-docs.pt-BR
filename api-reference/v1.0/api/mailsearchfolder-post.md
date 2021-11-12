@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: abheek-das
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: bc26b117139fc35ccc025f400d5bcc4de0e99ce4
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 6741fd5775b18ccd4a5e2ecba33d9343b7122a49
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59026242"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60924513"
 ---
 # <a name="create-mailsearchfolder"></a>Criar mailSearchFolder
 
@@ -55,7 +55,7 @@ Forneça um objeto JSON com os seguintes parâmetros no corpo da solicitação.
 | @odata.type | Cadeia de caracteres | O tipo de pasta a ser criada. De definida como "microsoft.graph.mailSearchFolder". |
 | displayName | Cadeia de caracteres | O nome de exibição da nova pasta.|
 | includeNestedFolders | Boolean | Indica como a hierarquia de pastas de caixa de correio deve ser percorrido na pesquisa. `true` significa que uma pesquisa profunda deve ser feita para incluir pastas filho na hierarquia de cada pasta explicitamente especificada em **sourceFolderIds**. `false` significa uma pesquisa superficial de apenas cada uma das pastas explicitamente especificadas em **sourceFolderIds**. |
-| sourceFolderIds | Coleção String | As pastas de caixa de correio que devem ser mineradas. |
+| sourceFolderIds | Coleção de cadeias de caracteres | As pastas de caixa de correio que devem ser mineradas. |
 | filterQuery | Cadeia de caracteres | A consulta OData para filtrar as mensagens. |
 
 ## <a name="response"></a>Resposta
@@ -78,7 +78,6 @@ A seguir está um exemplo da solicitação : ele cria uma pasta de pesquisa de m
 ```http
 POST https://graph.microsoft.com/v1.0/me/mailfolders/AQMkADYAAAIBDAAAAA==/childfolders
 Content-type: application/json
-Content-length: 159
 
 {
   "@odata.type": "microsoft.graph.mailSearchFolder",

@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: TarkanSevilmis
 ms.prod: planner
 doc_type: apiPageType
-ms.openlocfilehash: 0fb319785072830c34ae2f8fab4640caf124a37b
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 1a58b59160e7d5b9694bf6542b18ff2b8bbdef23
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59085361"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60928092"
 ---
 # <a name="update-plannertaskdetails"></a>Atualizar plannertaskdetails
 
@@ -44,7 +44,7 @@ No corpo da solicitação, forneça os valores para os campos relevantes que dev
 |:---------------|:--------|:----------|
 |checklist|[plannerChecklistItems](../resources/plannerchecklistitems.md)|A coleção de itens de lista de verificação na tarefa.|
 |description|Cadeia de caracteres|Descrição da tarefa|
-|previewType|cadeia de caracteres|Isso define o tipo de visualização que aparece na tarefa. Os valores possíveis são: `automatic`, `noPreview`, `checklist`, `description`, `reference`. Quando definido para `automatic` a visualização exibida, é escolhido pelo aplicativo exibindo a tarefa.|
+|previewType|string|Isso define o tipo de visualização que aparece na tarefa. Os valores possíveis são: `automatic`, `noPreview`, `checklist`, `description`, `reference`. Quando definido para `automatic` a visualização exibida, é escolhido pelo aplicativo exibindo a tarefa.|
 |referências|[plannerExternalReferences](../resources/plannerexternalreferences.md)|A coleção de referências na tarefa.|
 
 ## <a name="response"></a>Resposta
@@ -65,7 +65,6 @@ Este é um exemplo da solicitação.
 ```http
 PATCH https://graph.microsoft.com/v1.0/planner/tasks/{task-id}/details
 Content-type: application/json
-Content-length: 857
 Prefer: return=representation
 If-Match: W/"JzEtVGFzayAgQEBAQEBAQEBAQEBAQEBAWCc="
 
@@ -118,7 +117,6 @@ Aqui está um exemplo da resposta. Observação: o objeto de resposta mostrado a
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 1793
 
 {
   "description": "Task details properties:\nchecklist:Sub items\nreferences:Related links",

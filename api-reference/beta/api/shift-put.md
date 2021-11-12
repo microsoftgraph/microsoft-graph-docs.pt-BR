@@ -2,15 +2,15 @@
 title: Substituir turno
 description: Substitua um turno existente.
 author: nkramer
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 63ae7275372a2caed4e675b3e8360b4e29478aed
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: 0f9f3d226d96e84a7e0db1e88cb766e0446ae25c
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52051855"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60929049"
 ---
 # <a name="replace-shift"></a>Substituir turno
 
@@ -29,8 +29,8 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
 |:--------------------|:---------------------------------------------------------|
 |Delegado (conta corporativa ou de estudante) | Schedule.ReadWrite.All, Group.ReadWrite.All    |
-|Delegado (conta pessoal da Microsoft) | Sem suporte.    |
-|Application | Schedule.ReadWrite.All |
+|Delegada (conta pessoal da Microsoft) | Sem suporte.    |
+|Aplicativo | Schedule.ReadWrite.All |
 
 ## <a name="http-request"></a>Solicitação HTTP
 
@@ -153,7 +153,6 @@ Este é um exemplo de resposta.
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 401
 
 {
   "id": "string",

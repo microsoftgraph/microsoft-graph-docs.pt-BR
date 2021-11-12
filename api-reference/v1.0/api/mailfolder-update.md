@@ -5,12 +5,12 @@ author: abheek-das
 ms.localizationpriority: medium
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: cef4a624828884ed8f6b094d9b34fb8e88b84335
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 1e973fcf9e338abcd97318f9ab1ddf1e1cb7e73c
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59026256"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60931468"
 ---
 # <a name="update-mailfolder"></a>Atualizar mailfolder
 
@@ -60,7 +60,6 @@ Este é um exemplo da solicitação.
 ```http
 PATCH https://graph.microsoft.com/v1.0/me/mailFolders/{id}
 Content-type: application/json
-Content-length: 159
 
 {
   "displayName": "displayName-value",
@@ -94,7 +93,6 @@ Aqui está um exemplo da resposta. Observação: o objeto de resposta mostrado a
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 179
 
 {
   "displayName": "displayName-value",

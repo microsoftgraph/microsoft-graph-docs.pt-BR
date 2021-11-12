@@ -2,15 +2,15 @@
 title: Listar verificationDnsRecords
 description: Recupere uma lista de objetos domainDnsRecord.
 author: adimitui
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: 52d3232824a56eb13dd625e1cbb081c5954bd032
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: df537de058dd1eff250a58bcbe255866e0441da6
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52046416"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60946297"
 ---
 # <a name="list-verificationdnsrecords"></a>Listar verificationDnsRecords
 
@@ -31,9 +31,9 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegado (conta corporativa ou de estudante) | Directory.Read.All    |
-|Delegado (conta pessoal da Microsoft) | Sem suporte.    |
-|Application | Directory.Read.All, Domain.ReadWrite.All |
+|Delegado (conta corporativa ou de estudante) | Domain.Read.All, Domain.ReadWrite.All, Directory.Read.All    |
+|Delegada (conta pessoal da Microsoft) | Sem suporte.    |
+|Aplicativo | Domain.Read.All, Domain.ReadWrite.All, Directory.Read.All |
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- { "blockType": "ignored" } -->
@@ -95,7 +95,7 @@ GET https://graph.microsoft.com/beta/domains/contoso.com/verificationDnsRecords
 
 ##### <a name="response"></a>Resposta
 
-Observação: o objeto de resposta mostrado aqui pode ser encurtado para legibilidade.
+Observação: o objeto de resposta exibido aqui pode ser encurtado para legibilidade.
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -105,7 +105,6 @@ Observação: o objeto de resposta mostrado aqui pode ser encurtado para legibil
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 220
 
 {
   "value": [

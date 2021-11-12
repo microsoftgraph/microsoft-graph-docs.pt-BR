@@ -2,15 +2,15 @@
 title: Atualizar o teamworkTag
 description: Atualize as propriedades de um objeto teamworkTag.
 author: anniecolonna
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: teamwork
 doc_type: apiPageType
-ms.openlocfilehash: 93e78b863c0b03f475c0d6e52a12316d4eee580d
-ms.sourcegitcommit: 7f674112f5b95446fac86d829509f889c60f1693
+ms.openlocfilehash: c5d3b361c6aa3263dcaddce79e4c2c2a88b09193
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/30/2021
-ms.locfileid: "53210100"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60944610"
 ---
 # <a name="update-teamworktag"></a>Atualizar o teamworkTag
 Namespace: microsoft.graph
@@ -51,7 +51,7 @@ A tabela a seguir mostra as propriedades que são necessárias ao atualizar o tr
 
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|displayName|String|Nome da marca. O valor não pode ter mais de 40 caracteres.|
+|displayName|Cadeia de caracteres|Nome da marca. O valor não pode ter mais de 40 caracteres.|
 
 ## <a name="response"></a>Resposta
 
@@ -70,7 +70,6 @@ Se tiver êxito, este método retornará um código de resposta e um `200 OK` ob
 ``` http
 PATCH https://graph.microsoft.com/beta/teams/53c53217-fe77-4383-bc5a-ed4937a1aecd/tags/MjQzMmI1N2ItMGFiZC00M2RiLWFhN2ItMTZlYWRkMTE1ZDM0IyM3ZDg4M2Q4Yi1hMTc5LTRkZDctOTNiMy1hOGQzZGUxYTIxMmUjI3RhY29VSjN2RGk==
 Content-Type: application/json
-Content-length: 185
 
 {
   "displayName": "Finance"

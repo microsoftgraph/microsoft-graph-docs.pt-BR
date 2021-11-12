@@ -5,12 +5,12 @@ author: akumar39
 ms.localizationpriority: medium
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 7f037c71ab95e17947417b441da6fb1055d795f9
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: f80df50fb87c54986a5f58f383f8104dd2aa4a2d
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59019682"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60942699"
 ---
 # <a name="create-schedulinggroup"></a>Criar schedulingGroup
 
@@ -24,7 +24,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegada (conta corporativa ou de estudante) | Schedule.ReadWrite.All, Group.ReadWrite.All    |
+|Delegado (conta corporativa ou de estudante) | Schedule.ReadWrite.All, Group.ReadWrite.All    |
 |Delegada (conta pessoal da Microsoft) | Sem suporte.    |
 |Aplicativo |Schedule.ReadWrite.All |
 
@@ -107,7 +107,6 @@ Este é um exemplo de resposta.
 ```http
 HTTP/1.1 201 Created
 Content-type: application/json
-Content-length: 401
 
 {
   "id": "TAG_f914d037-00a3-4ba4-b712-ef178cbea263",

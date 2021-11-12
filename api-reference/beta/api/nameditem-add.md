@@ -1,16 +1,16 @@
 ---
 title: Adicionar Item nomeado
 description: Adiciona um novo nome à coleção de escopo fornecido usando a localidade do usuário para a fórmula.
-localization_priority: Normal
+ms.localizationpriority: medium
 doc_type: apiPageType
 ms.prod: ''
 author: ruoyingl
-ms.openlocfilehash: 8af8841ddb8b9ac0c7e46197e83dea8ce3ad6134
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: 505beb4fcdb846b5453ee6776eeeb5ced7b50aa4
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52052142"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60941292"
 ---
 # <a name="add-named-item"></a>Adicionar Item nomeado
 
@@ -71,7 +71,6 @@ Este é um exemplo da solicitação.
 ```http
 POST https://graph.microsoft.com/beta/me/drive/items/{id}/workbook/names/add
 Content-type: application/json
-Content-length: 54
 
 {
   "name": "test5",
@@ -101,7 +100,7 @@ Content-length: 54
 
 
 ##### <a name="response"></a>Resposta
-Veja a seguir um exemplo da resposta. Observação: o objeto de resposta mostrado aqui pode ser encurtado para legibilidade.
+Aqui está um exemplo da resposta. Observação: o objeto de resposta mostrado aqui pode ser reduzido para facilitar a leitura.
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -110,7 +109,6 @@ Veja a seguir um exemplo da resposta. Observação: o objeto de resposta mostrad
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 109
 
 {
     "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#workbookNamedItem",

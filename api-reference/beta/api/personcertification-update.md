@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: kevinbellinger
 ms.prod: people
 doc_type: apiPageType
-ms.openlocfilehash: eadaf0997d673fff4c3e4ca10f439be2c7577762
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 45f6e68a532df54af1a625878b7bcf9af909fdfd
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59120791"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60938655"
 ---
 # <a name="update-personcertification"></a>Atualizar personCertification
 Namespace: microsoft.graph
@@ -50,17 +50,17 @@ No corpo da solicitação, forneça os valores para os campos relevantes que dev
 
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|allowedAudiences|Cadeia de Caracteres|As audiências que são capazes de ver os valores contidos na entidade. Herdado [do itemFacet](../resources/itemfacet.md). Os valores possíveis são: `me`, `family`, `contacts`, `groupMembers`, `organization`, `federatedOrganizations`, `everyone`, `unknownFutureValue`.|
-|certificationId  |Cadeia de Caracteres      |O identificador referencial para a certificação. |
+|allowedAudiences|Cadeia de caracteres|As audiências que são capazes de ver os valores contidos na entidade. Herdado [do itemFacet](../resources/itemfacet.md). Os valores possíveis são: `me`, `family`, `contacts`, `groupMembers`, `organization`, `federatedOrganizations`, `everyone`, `unknownFutureValue`.|
+|certificationId  |Cadeia de caracteres      |O identificador referencial para a certificação. |
 |description      |Cadeia de caracteres      |Descrição da certificação.                   |
 |displayName      |Cadeia de caracteres      |Título da certificação.                         |
 |endDate          |Data        |A data em que a certificação expira.            |
 |inferência|[inferenceData](../resources/inferencedata.md)|Contém detalhes de inferência se a entidade for inferida pelo aplicativo de criação ou modificação. Herdado [do itemFacet](../resources/itemfacet.md).|
 |issuedDate       |Data        |A data em que a certificação foi emitida.         |
-|issuingAuthority |Cadeia de Caracteres      |Autoridade que concedeu a certificação.          |
-|emissãoCompany   |Cadeia de Caracteres      |Autoridade que concedeu a certificação.          |
+|issuingAuthority |Cadeia de caracteres      |Autoridade que concedeu a certificação.          |
+|emissãoCompany   |Cadeia de caracteres      |Autoridade que concedeu a certificação.          |
 |startDate        |Data        |A data em que a certificação se tornou válida.       |
-|thumbnailUrl     |Cadeia de Caracteres      |URL fazendo referência a uma miniatura da certificação.   |
+|thumbnailUrl     |Cadeia de caracteres      |URL fazendo referência a uma miniatura da certificação.   |
 |webUrl           |String      |URL fazendo referência à certificação.                  |
 
 ## <a name="response"></a>Resposta
@@ -79,7 +79,6 @@ Se tiver êxito, este método retornará um código de resposta e um `200 OK` [o
 ``` http
 PATCH https://graph.microsoft.com/beta/users/{userId}/profile/certifications/{id}
 Content-Type: application/json
-Content-length: 497
 
 {
   "issuingAuthority": "International Academy of Marketing Excellence",

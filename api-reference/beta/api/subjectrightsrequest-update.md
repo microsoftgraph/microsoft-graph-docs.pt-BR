@@ -5,12 +5,12 @@ author: skadam-msft
 ms.localizationpriority: medium
 ms.prod: compliance
 doc_type: apiPageType
-ms.openlocfilehash: 648b1aa8a119964f9600a6f1d6e2549fab7c07c5
-ms.sourcegitcommit: 0eb843a6f61f384bc28c0cce1ccb74f64bdb1fa6
+ms.openlocfilehash: e39ef15a3fb49138a475980a9e347505a4b48b16
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/23/2021
-ms.locfileid: "60559591"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60926375"
 ---
 # <a name="update-subjectrightsrequest"></a>Atualizar subjectRightsRequest
 Namespace: microsoft.graph
@@ -25,8 +25,8 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |Tipo de permissão|Permissões (da com menos para a com mais privilégios)|
 |:---|:---|
 |Delegado (conta corporativa ou de estudante)|SubjectRightsRequest.ReadWrite.All*|
-|Delegado (conta pessoal da Microsoft)|Sem suporte.|
-|Application|Sem suporte|
+|Delegada (conta pessoal da Microsoft)|Sem suporte.|
+|Aplicativo|Sem suporte|
 
 >[!IMPORTANT]
 >No momento, as permissões marcadas com um asterisco (*) não estão disponíveis. Para mais detalhes, confira [Problemas conhecidos](/graph/known-issues#compliance).
@@ -76,7 +76,6 @@ Se tiver êxito, este método retornará um código de resposta e um `200 OK` [o
 ``` http
 PATCH https://graph.microsoft.com/beta/privacy/subjectRightsRequests/{subjectRightsRequestId}
 Content-Type: application/json
-Content-length: 837
 
 {
   "@odata.type": "#microsoft.graph.subjectRightsRequest",

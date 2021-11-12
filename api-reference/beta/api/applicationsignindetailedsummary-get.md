@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: dhanyahk
 ms.prod: identity-and-access-reports
 doc_type: apiPageType
-ms.openlocfilehash: 7f463e10e66f2f447707dbf4e34dcb74ec622d56
-ms.sourcegitcommit: 64d27a0e3dcccc9d857e62aace4153e5d98fb3d0
+ms.openlocfilehash: 381183ff83900961f79aeb900324e3df90c60494
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "60730064"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60942475"
 ---
 # <a name="get-applicationsignindetailedsummary"></a>Obter applicationSignInDetailedSummary
 
@@ -95,7 +95,6 @@ Este é um exemplo de resposta.
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 295
 
 {
   "id": "id-value",

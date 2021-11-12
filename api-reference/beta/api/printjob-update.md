@@ -2,15 +2,15 @@
 title: Atualizar printJob
 description: Atualize a configuração de um trabalho de impressão.
 author: nilakhan
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: cloud-printing
 doc_type: apiPageType
-ms.openlocfilehash: 6405acd01be075c44c4271c4c3395a83889f9d0e
-ms.sourcegitcommit: 40947e6f4337c8c4193d85bb862e15f67263e1e7
+ms.openlocfilehash: ee4449e701aa8458a3318cc6c8b24ca1859cd1f3
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/13/2021
-ms.locfileid: "50777682"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60943196"
 ---
 # <a name="update-printjob"></a>Atualizar printJob
 
@@ -127,7 +127,6 @@ Este é um exemplo de resposta.
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 225
 
 {
   "@odata.context": "https://graph.microsoft.com/beta/$metadata#print/printers('d5ef6ec4-07ca-4212-baf9-d45be126bfbb')/jobs/$entity",

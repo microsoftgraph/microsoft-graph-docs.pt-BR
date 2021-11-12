@@ -5,12 +5,12 @@ author: ArvindHarinder1
 ms.localizationpriority: medium
 ms.prod: applications
 doc_type: apiPageType
-ms.openlocfilehash: e3fd33635fe7a3bc3faed116705583c5a6c299a9
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: eaf8e7f43d7ab8afee239e88a52a6f286e626bf2
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59040992"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60947130"
 ---
 # <a name="acquireaccesstoken"></a>acquireAccessToken
 Namespace: microsoft.graph
@@ -23,7 +23,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |Tipo de permissão|Permissões (da com menos para a com mais privilégios)|
 |:---|:---|
 |Delegado (conta corporativa ou de estudante)|Directory.ReadWrite.All|
-|Delegado (conta pessoal da Microsoft)|Sem suporte.|
+|Delegada (conta pessoal da Microsoft)|Sem suporte.|
 |Aplicativo|Application.ReadWrite.OwnedBy, Directory.ReadWrite.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
@@ -71,7 +71,6 @@ Se tiver êxito, esta ação retornará um código de resposta `204 No Content`.
 ``` http
 POST https://graph.microsoft.com/beta/applications/{applicationsId}/synchronization/acquireAccessToken
 Content-Type: application/json
-Content-length: 123
 
 {
   "credentials": [

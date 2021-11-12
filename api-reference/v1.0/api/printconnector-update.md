@@ -2,20 +2,18 @@
 title: Atualizar printConnector
 description: Atualize as propriedades de um objeto printConnector.
 author: nilakhan
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: cloud-printing
 doc_type: apiPageType
-ms.openlocfilehash: 97d92185d5035e0617028336e0adece1c39232de
-ms.sourcegitcommit: 40947e6f4337c8c4193d85bb862e15f67263e1e7
+ms.openlocfilehash: d2d8c74699272a5123f6a0463913872791a5bcdd
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/13/2021
-ms.locfileid: "50776960"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60928020"
 ---
 # <a name="update-printconnector"></a>Atualizar printConnector
 Namespace: microsoft.graph
-
-[!INCLUDE [cloudprinting-pricing-disclaimer](../../includes/cloudprinting-pricing-disclaimer.md)]
 
 Atualize as propriedades de um **objeto printConnector.**
 
@@ -26,7 +24,7 @@ Para usar o serviço Impressão Universal, o usuário ou locatário do aplicativ
 
 |Tipo de permissão | Permissões (da com menos para a com mais privilégios) |
 |:---------------|:--------------------------------------------|
-|Delegada (conta corporativa ou de estudante)| PrintConnector.ReadWrite.All |
+|Delegado (conta corporativa ou de estudante)| PrintConnector.ReadWrite.All |
 |Delegada (conta pessoal da Microsoft)|Sem suporte.|
 |Aplicativo|Sem suporte.|
 
@@ -65,7 +63,6 @@ Se tiver êxito, este método retornará um código de resposta e um `200 OK` [o
 ``` http
 PATCH https://graph.microsoft.com/v1.0/print/connectors/{printConnectorId}
 Content-Type: application/json
-Content-length: 308
 
 {
   "displayName": "ConnectorName",

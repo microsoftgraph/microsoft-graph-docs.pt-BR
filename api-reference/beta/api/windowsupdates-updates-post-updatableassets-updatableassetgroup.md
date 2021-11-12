@@ -2,15 +2,15 @@
 title: Criar updatableAssetGroup
 description: Crie um novo objeto updatableAssetGroup.
 author: Alice-at-Microsoft
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: w10
 doc_type: apiPageType
-ms.openlocfilehash: 4a7bb68439cd3fd2eade0eaf11b43e2bbf51a5b2
-ms.sourcegitcommit: 2a35434fabc76672e21bfc3ed5a1d28f9f3b66bc
+ms.openlocfilehash: a8a6ae7525ef6de58d706cc607f40e4a215d3291
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/06/2021
-ms.locfileid: "52238435"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60926046"
 ---
 # <a name="create-updatableassetgroup"></a>Criar updatableAssetGroup
 Namespace: microsoft.graph.windowsUpdates
@@ -26,7 +26,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 |Tipo de permissão|Permissões (da com menos para a com mais privilégios)|
 |:---|:---|
-|Delegada (conta corporativa ou de estudante)|WindowsUpdates.ReadWrite.All|
+|Delegado (conta corporativa ou de estudante)|WindowsUpdates.ReadWrite.All|
 |Delegada (conta pessoal da Microsoft)|Sem suporte.|
 |Aplicativo|WindowsUpdates.ReadWrite.All|
 
@@ -69,7 +69,6 @@ Se tiver êxito, este método retornará um código de resposta e um `201 Create
 ``` http
 POST https://graph.microsoft.com/beta/admin/windows/updates/updatableAssets
 Content-Type: application/json
-Content-length: 76
 
 {
   "@odata.type": "#microsoft.graph.windowsUpdates.updatableAssetGroup"

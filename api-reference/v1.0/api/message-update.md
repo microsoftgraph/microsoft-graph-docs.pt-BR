@@ -5,12 +5,12 @@ author: abheek-das
 ms.localizationpriority: high
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: c125f105ac97b297fd49c2ef422fea077f0ff0d8
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 071492a0b9b32d1cddcb3bee22c8f08e5b685e91
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59073006"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60931451"
 ---
 # <a name="update-message"></a>Atualizar mensagem
 
@@ -51,7 +51,7 @@ No corpo de solicitação, forneça os valores para os campos relevantes que dev
 |sinalizador|[followupFlag](../resources/followupflag.md)|O valor do sinalizador que indica o status, a data de início, a data de conclusão ou a data de finalização da mensagem.|
 |from|Destinatário|O proprietário da caixa de correio e o remetente da mensagem. Devem corresponder à caixa de correio real que foi usada.|
 |importância|String|A importância da mensagem. Os valores possíveis são: `Low`, `Normal`, `High`.|
-|inferenceClassification | String | A classificação da mensagem para o usuário, com base na relevância ou importância deduzida ou em uma substituição explícita. Os valores possíveis são: `focused` ou `other`. |
+|inferenceClassification | String | A classificação da mensagem para o usuário, com base na relevância ou importância inferida, ou em uma substituição explícita. Os valores possíveis são: `focused` ou `other`. |
 |internetMessageId |String |O ID da mensagem no formato especificado por [RFC2822](https://www.ietf.org/rfc/rfc2822.txt). Atualizável apenas se isDraft = true.|
 |isDeliveryReceiptRequested|Boolean|Indica se uma confirmação de leitura foi solicitada para a mensagem.|
 |isRead|Boolean|Indica se a mensagem foi lida.|
@@ -80,7 +80,6 @@ Este é um exemplo da solicitação.
 ```http
 PATCH https://graph.microsoft.com/v1.0/me/messages/{id}
 Content-type: application/json
-Content-length: 248
 
 {
   "subject": "subject-value",
@@ -115,7 +114,6 @@ Aqui está um exemplo da resposta. Observação: o objeto de resposta mostrado a
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 248
 
 {
   "receivedDateTime": "datetime-value",

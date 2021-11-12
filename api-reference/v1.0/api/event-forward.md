@@ -5,12 +5,12 @@ author: harini84
 ms.localizationpriority: medium
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 3cb56c0edbf845fb5a91ff92840c82800d31bcbc
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 52e75a8e10deb89a446bbd0d3bb66b6a1c0077f6
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59016621"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60931757"
 ---
 # <a name="event-forward"></a>event: forward
 
@@ -78,7 +78,6 @@ Este é um exemplo da solicitação.
 ```http
 POST https://graph.microsoft.com/v1.0/me/events/{id}/forward
 Content-type: application/json
-Content-length: 56
 
 {
   "ToRecipients":[

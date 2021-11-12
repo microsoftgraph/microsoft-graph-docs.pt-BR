@@ -2,15 +2,15 @@
 title: Atualizar outlooktaskgroup
 description: Atualize as propriedades writable de um grupo de Outlook tarefa.
 author: mashriv
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 37bf87e8d52ac320d29fd7be1f6cdd3dae7165ea
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: ff7c953db29ad0890507b39435895bd6fa685e9e
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52049202"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60939452"
 ---
 # <a name="update-outlooktaskgroup-deprecated"></a>Atualizar outlooktaskgroup (preterido)
 
@@ -30,7 +30,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
 |:--------------------|:---------------------------------------------------------|
 |Delegado (conta corporativa ou de estudante) | Tasks.ReadWrite    |
-|Delegado (conta pessoal da Microsoft) | Tasks.ReadWrite    |
+|Delegada (conta pessoal da Microsoft) | Tasks.ReadWrite    |
 |Aplicativo | Sem suporte. |
 
 ## <a name="http-request"></a>Solicitação HTTP
@@ -49,7 +49,7 @@ No corpo da solicitação, forneça os valores para os campos relevantes que dev
 
 | Propriedade     | Tipo   |Descrição|
 |:---------------|:--------|:----------|
-|nome|String|O nome do grupo de tarefas.|
+|nome|Cadeia de caracteres|O nome do grupo de tarefas.|
 
 ## <a name="response"></a>Resposta
 
@@ -66,7 +66,6 @@ O exemplo a seguir altera o nome de um grupo de tarefas para "Tarefas Pessoais".
 ```http
 PATCH https://graph.microsoft.com/beta/me/outlook/taskgroups/AAMkADIyAAAhrbe-AAA=
 Content-type: application/json
-Content-length: 28
 
 {
   "name": "Personal Tasks",
@@ -91,7 +90,7 @@ Content-length: 28
 ---
 
 ##### <a name="response"></a>Resposta
-Veja a seguir um exemplo da resposta. Observação: o objeto de resposta mostrado aqui pode ser encurtado para legibilidade.
+Aqui está um exemplo da resposta. Observação: o objeto de resposta mostrado aqui pode ser reduzido para facilitar a leitura.
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -100,7 +99,6 @@ Veja a seguir um exemplo da resposta. Observação: o objeto de resposta mostrad
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 138
 
 {
   "id": "AAMkADIyAAAhrbe-AAA=",

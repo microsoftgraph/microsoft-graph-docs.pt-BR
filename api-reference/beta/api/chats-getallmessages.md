@@ -5,12 +5,12 @@ author: RamjotSingh
 ms.localizationpriority: high
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: a8060952244e1010edc0237a01b2ee06fe26f2f5
-ms.sourcegitcommit: c333953a9188b4cd4a9ab94cbe68871e8f3563e5
+ms.openlocfilehash: 6c270c5bd5c988c460060a2ca4fa930e789522ba
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/30/2021
-ms.locfileid: "58695319"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60934713"
 ---
 # <a name="chats-getallmessages"></a>chats: getAllMessages
 
@@ -19,6 +19,8 @@ Namespace: microsoft.graph
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Obtenha todas as mensagens de todos os [chats](../resources/chatmessage.md) de que um usuário é um participante, incluindo chats individuais, chats de grupo e chats de reunião.
+
+[!INCLUDE [teams-model-A-and-B-disclaimer](../../includes/teams-model-A-and-B-disclaimer.md)]
 
 ## <a name="permissions"></a>Permissões
 
@@ -76,7 +78,6 @@ GET https://graph.microsoft.com/beta/users/8b081ef6-4792-4def-b2c9-c363a1bf41d5/
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 347
 
 {
    "@odata.context":"https://graph.microsoft.com/beta/$metadata#Collection(chatMessage)",

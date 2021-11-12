@@ -5,12 +5,12 @@ author: akumar39
 ms.localizationpriority: medium
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: edd09d141514a2c9418a6abecd46c34f96c86719
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: c46fbd56e5a1bf20cf359852cd12d24e5980cb1d
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59015739"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60946962"
 ---
 # <a name="get-shiftpreferences"></a>Obter shiftPreferences
 
@@ -104,7 +104,6 @@ Este é um exemplo de resposta.
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 401
 
 {
     "id": "SHPR_eeab4fb1-20e5-48ca-ad9b-98119d94bee7",

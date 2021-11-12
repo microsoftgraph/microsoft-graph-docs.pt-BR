@@ -5,12 +5,12 @@ author: mmast-msft
 ms.localizationpriority: medium
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: 5c71b1b5ef4efc05c20d14de59f6e2d1fcabc1ab
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 9ebd9b640eb8a780af7f64e021b3175e1b5bd92d
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59090632"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60936366"
 ---
 # <a name="list-schools"></a>Listar escolas
 
@@ -102,7 +102,6 @@ Este é um exemplo de resposta.
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 892
 
 {
   "value": [

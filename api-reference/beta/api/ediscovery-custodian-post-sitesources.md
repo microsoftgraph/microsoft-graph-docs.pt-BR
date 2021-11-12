@@ -2,15 +2,15 @@
 title: Criar site custodiadoSource
 description: Criar um novo objeto custodiante siteSource.
 author: mahage-msft
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: ediscovery
 doc_type: apiPageType
-ms.openlocfilehash: 2ec7bc76c2be6f9d8a180f99075814c1a222c170
-ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
+ms.openlocfilehash: ae184c5a2d9c1688138ec2ae2377532b70e70bac
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "50946153"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60934640"
 ---
 # <a name="create-custodian-sitesource"></a>Criar site custodiadoSource
 
@@ -27,7 +27,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |Tipo de permissão|Permissões (da com menos para a com mais privilégios)|
 |:---|:---|
 |Delegado (conta corporativa ou de estudante)|eDiscovery.Read.All, eDiscovery.ReadWrite.All|
-|Delegado (conta pessoal da Microsoft)|Sem suporte.|
+|Delegada (conta pessoal da Microsoft)|Sem suporte.|
 |Aplicativo|Sem suporte.|
 
 ## <a name="http-request"></a>Solicitação HTTP
@@ -56,7 +56,7 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar [o siteS
 
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|site@odata.bind|Cadeia de caracteres|ID do site, que você pode obter do recurso [de site](../resources/site.md) usando o método Obter um recurso de [site por](../api/site-getbypath.md) caminho. O uso é {hostname}:/{relative-path}. Para a URL do `https://contoso.sharepoint.com/sites/HumanResources` site, a solicitação do Microsoft Graph seria `https://graph.microsoft.com/v1.0/sites/contoso.sharepoint.com:/sites/HumanResources` . A ID é o primeiro GUID listado no campo ID.  Para a URL do site do OneDrive for `https://contoso-my.sharepoint.com/personal/adelev_contoso_com` Business, a solicitação do Microsoft Graph seria `https://graph.microsoft.com/v1.0/sites/contoso-my.sharepoint.com:/personal/adelev_contoso_com` . |
+|site|Cadeia de caracteres|URL do site; por exemplo, `https://contoso.sharepoint.com/sites/HumanResources` .|
 
 ## <a name="response"></a>Resposta
 
@@ -67,6 +67,7 @@ Se tiver êxito, este método retornará um código de resposta e um `201 Create
 ### <a name="request"></a>Solicitação
 
 
+
 # <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
@@ -75,13 +76,15 @@ Se tiver êxito, este método retornará um código de resposta e um `201 Create
 -->
 
 ``` http
-POST https://graph.microsoft.com/beta/compliance/ediscovery/cases/4c8f8f70-7785-4bd4-b296-c98376a2c5e1/custodians/2192ca408ea2410eba3bec8ae873be6b/siteSources
+POST https://graph.microsoft.com/beta/compliance/ediscovery/cases/15d80234-8320-4f10-96d0-d98d53ffdfc9/custodians/8904528fef4d4578b44f71a80188f400/siteSources
 Content-Type: application/json
-Content-length: 179
 
 {
-    "site@odata.bind": "https://graph.microsoft.com/v1.0/sites/50073f3e-cb22-48e5-95a9-51a3da455181"
+    "site": {
+        "webUrl": "https://contoso.sharepoint.com/sites/HumanResources"
+    }
 }
+
 ```
 # <a name="c"></a>[C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/create-sitesource-from--1-csharp-snippets.md)]
@@ -101,7 +104,6 @@ Content-length: 179
 
 ---
 
-
 ### <a name="response"></a>Resposta
 
 **Observação:** o objeto de resposta mostrado aqui pode ser encurtado para legibilidade.
@@ -117,19 +119,16 @@ HTTP/1.1 201 Created
 Content-Type: application/json
 
 {
-    "@odata.context": "https://graph.microsoft.com/beta/$metadata#compliance/ediscovery/cases('4c8f8f70-7785-4bd4-b296-c98376a2c5e1')/custodians('2192ca408ea2410eba3bec8ae873be6b')/siteSources",
-    "value": [
-        {
-            "displayName": "Human resources site",
-            "createdDateTime": "2020-10-27T15:14:11.0048392Z",
-            "id": "38304445-3741-3333-4233-344238454333",
-            "createdBy": {
-                "user": {
-                    "id": "c1db6f13-332a-4d84-b111-914383ff9fc9",
-                    "displayName": null
-                }
-            }
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#compliance/ediscovery/cases('15d80234-8320-4f10-96d0-d98d53ffdfc9')/custodians('8904528fef4d4578b44f71a80188f400')/siteSources/$entity",
+    "@odata.id": "https://graph.microsoft.com/v1.0/sites/2493b4eb-1a48-4cac-b0d0-aad05e6b9df0",
+    "displayName": "Human resources site",
+    "createdDateTime": "2021-08-10T18:25:48.6441363Z",
+    "id": "42393244-3838-4636-3437-453030334136",
+    "createdBy": {
+        "user": {
+            "id": "798d8d23-2087-4e03-912e-c0d9db5cb5d2",
+            "displayName": null
         }
-    ]
+    }
 }
 ```

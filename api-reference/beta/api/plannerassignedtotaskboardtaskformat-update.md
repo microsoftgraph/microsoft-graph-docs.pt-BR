@@ -1,16 +1,16 @@
 ---
 title: Atualizar plannerAssignedToTaskBoardTaskFormat
 description: Atualize as propriedades **do objeto plannerAssignedToTaskBoardTaskFormat.**
-localization_priority: Normal
+ms.localizationpriority: medium
 author: TarkanSevilmis
 ms.prod: planner
 doc_type: apiPageType
-ms.openlocfilehash: b691c631115b5c66f414c029f2c6172d5aa0d083
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: 0594787408a8d499c850d0679085ba3b0fd7557c
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52055334"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60942112"
 ---
 # <a name="update-plannerassignedtotaskboardtaskformat"></a>Atualizar plannerAssignedToTaskBoardTaskFormat
 
@@ -45,7 +45,7 @@ No corpo da solicitação, forneça os valores para os campos relevantes que dev
 | Propriedade     | Tipo   |Descrição|
 |:---------------|:--------|:----------|
 |orderHintsByAssignee|[plannerOrderHintsByAssignee](../resources/plannerorderhintsbyassignee.md)|Dicionário de dicas usadas para ordenar tarefas no modo de exibição AssignedTo do Quadro de Tarefas. A chave de cada entrada é um dos usuários aos qual a tarefa é atribuída e o valor é a dica de pedido. O formato de cada valor é definido em [Usando dicas de ordem no Planner(.). /resources/planner_order_hint_format.md).|
-|unassignedOrderHint|String|Valor de dica usado para ordenar a tarefa no modo de exibição AssignedTo do Quadro de Tarefas quando a tarefa não é atribuída a ninguém ou se o dicionário orderHintsByAssignee não fornecer uma dica de ordem para o usuário ao qual a tarefa é atribuída. O formato é definido em [Usando dicas de ordem no Planner](../resources/planner-order-hint-format.md).|
+|unassignedOrderHint|Cadeia de caracteres|Valor de dica usado para ordenar a tarefa no modo de exibição AssignedTo do Quadro de Tarefas quando a tarefa não é atribuída a ninguém ou se o dicionário orderHintsByAssignee não fornecer uma dica de ordem para o usuário ao qual a tarefa é atribuída. O formato é definido em [Usando dicas de ordem no Planner](../resources/planner-order-hint-format.md).|
 
 ## <a name="response"></a>Resposta
 
@@ -65,7 +65,6 @@ Este é um exemplo da solicitação.
 ```http
 PATCH https://graph.microsoft.com/beta/planner/tasks/01gzSlKkIUSUl6DF_EilrmQAKDhh/assignedToTaskBoardFormat
 Content-type: application/json
-Content-length: 96
 Prefer: return=representation
 If-Match: W/"JzEtVGFzayAgQEBAQEBAQEBAQEBAQEBAWCc="
 
@@ -90,7 +89,7 @@ If-Match: W/"JzEtVGFzayAgQEBAQEBAQEBAQEBAQEBAWCc="
 ---
 
 ##### <a name="response"></a>Resposta
-Veja a seguir um exemplo da resposta. Observação: o objeto de resposta mostrado aqui pode ser encurtado para legibilidade.
+Aqui está um exemplo da resposta. Observação: o objeto de resposta mostrado aqui pode ser reduzido para facilitar a leitura.
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -99,7 +98,6 @@ Veja a seguir um exemplo da resposta. Observação: o objeto de resposta mostrad
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 225
 
 {
   "unassignedOrderHint": "RWk1",

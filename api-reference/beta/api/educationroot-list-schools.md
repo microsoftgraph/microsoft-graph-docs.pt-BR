@@ -2,15 +2,15 @@
 title: Listar educationSchools
 description: Recupere uma lista de todos os objetos de escola.
 author: mmast-msft
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: 5979de05618fee206dce7db9374f2d374d3a738f
-ms.sourcegitcommit: 13f474d3e71d32a5dfe2efebb351e3a1a5aa9685
+ms.openlocfilehash: a13a7af40704eb9b21794b07b3d16e1bb72d3677
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "52751304"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60925332"
 ---
 # <a name="list-educationschools"></a>Listar educationSchools
 
@@ -27,7 +27,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 | Tipo de permissão                        | Permissões (da com menos para a com mais privilégios) |
 | :------------------------------------- | :------------------------------------------ |
 | Delegado (conta corporativa ou de estudante)     | EduRoster.ReadBasic                         |
-| Delegado (conta pessoal da Microsoft) | Sem suporte.                              |
+| Delegada (conta pessoal da Microsoft) | Sem suporte.                              |
 | Aplicativo                            | EduRoster.Read.All, EduRoster.ReadWrite.All |
 
 ## <a name="http-request"></a>Solicitação HTTP
@@ -104,7 +104,6 @@ Este é um exemplo de resposta.
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 345
 
 {
    "value":[

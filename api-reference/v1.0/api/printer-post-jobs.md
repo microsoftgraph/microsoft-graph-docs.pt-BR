@@ -2,20 +2,18 @@
 title: Criar printJob
 description: Crie um novo printJob para uma impressora.
 author: nilakhan
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: cloud-printing
 doc_type: apiPageType
-ms.openlocfilehash: 3cde9cc06c6f41f927530d02272c546d4a0cd37a
-ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
+ms.openlocfilehash: c6e5383a17c685aff9e3eea8c3c61a1b1ebd7fed
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "50956210"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60942839"
 ---
 # <a name="create-printjob"></a>Criar printJob
 Namespace: microsoft.graph
-
-[!INCLUDE [cloudprinting-pricing-disclaimer](../../includes/cloudprinting-pricing-disclaimer.md)]
 
 Criar um novo [printJob](../resources/printJob.md) para uma [impressora](../resources/printer.md). 
 
@@ -29,7 +27,7 @@ Além das permissões a seguir, o usuário ou locatário do aplicativo deve ter 
 |Tipo de permissão | Permissões (da com menos para a com mais privilégios) |
 |:---------------|:--------------------------------------------|
 |Delegado (conta corporativa ou de estudante)| PrintJob.Create, PrintJob.ReadWriteBasic, PrintJob.ReadWrite, PrintJob.ReadWriteBasic.All, PrintJob.ReadWrite.All |
-|Delegado (conta pessoal da Microsoft)|Sem suporte.|
+|Delegada (conta pessoal da Microsoft)|Sem suporte.|
 |Aplicativo| Sem suporte. |
 
 ## <a name="http-request"></a>Solicitação HTTP
@@ -70,7 +68,6 @@ Se tiver êxito, este método retornará um código de resposta e um `201 Create
 ``` http
 POST https://graph.microsoft.com/v1.0/print/printers/{printerId}/jobs
 Content-Type: application/json
-Content-length: 376
 
 {
   "configuration": {

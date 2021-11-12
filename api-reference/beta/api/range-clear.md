@@ -1,16 +1,16 @@
 ---
 title: 'Range: clear'
 description: Limpa valores de intervalo, formatação, preenchimento, borda, etc.
-localization_priority: Normal
+ms.localizationpriority: medium
 author: lumine2008
 ms.prod: excel
 doc_type: apiPageType
-ms.openlocfilehash: cc737b9a1f07ce8274fe3ac7ed2ccd105802d24d
-ms.sourcegitcommit: 94c4acf8bd03c10a44b12952b6cb4827df55b978
+ms.openlocfilehash: 135b9fd800e30b75d8d6bf9b4e315f6cf1ca3400
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/06/2021
-ms.locfileid: "52786131"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60946178"
 ---
 # <a name="range-clear"></a>Range: clear
 
@@ -18,8 +18,9 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Limpa valores de intervalo, formatação, preenchimento, borda, etc.
-## <a name="permissions"></a>Permissions
+Desarmem valores de intervalo, como formato, preenchimento e borda.
+
+## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
@@ -37,8 +38,8 @@ POST /me/drive/items/{id}/workbook/worksheets/{id|name}/range(address='<address>
 POST /me/drive/root:/{item-path}:/workbook/worksheets/{id|name}/range(address='<address>')/clear
 POST /me/drive/items/{id}/workbook/tables/{id|name}/columns/{id|name}/range/clear
 POST /me/drive/root:/{item-path}:/workbook/tables/{id|name}/columns/{id|name}/range/clear
-
 ```
+
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
 | Nome       | Descrição|
 |:---------------|:----------|
@@ -69,7 +70,6 @@ Este é um exemplo da solicitação.
 ```http
 POST https://graph.microsoft.com/beta/me/drive/items/{id}/workbook/names/{name}/range/clear
 Content-type: application/json
-Content-length: 32
 
 {
   "applyTo": "applyTo-value"

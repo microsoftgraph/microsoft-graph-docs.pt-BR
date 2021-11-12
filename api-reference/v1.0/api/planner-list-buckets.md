@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: TarkanSevilmis
 ms.prod: planner
 doc_type: apiPageType
-ms.openlocfilehash: f6f6564f4fcbde6e7d6dc026a8fc269a51d1ce7b
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 9741859b975cd0385eb640a704e70a6d6f4aa0b8
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59007821"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60937220"
 ---
 # <a name="list-buckets"></a>Listar buckets
 
@@ -89,7 +89,6 @@ Aqui está um exemplo da resposta. Observação: o objeto de resposta mostrado a
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 251
 
 {
   "value": [
