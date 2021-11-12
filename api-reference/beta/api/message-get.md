@@ -2,15 +2,15 @@
 title: Obter mensagem
 description: Recupere as propriedades e as relações do objeto message.
 author: abheek-das
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: a727179016a5352a55d0923dfcd5ac5834f73d84
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: 32260db0f5176a29affab19280735b183324b0dd
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52050154"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60939564"
 ---
 # <a name="get-message"></a>Obter mensagem
 
@@ -22,12 +22,12 @@ Recupere as propriedades e as relações do [objeto message.](../resources/messa
 
 Por exemplo, você pode obter uma mensagem e expandir todas [as](../resources/mention.md) instâncias de menção na mensagem. Veja um [exemplo](#example-2-get-all-mentions-in-a-specific-message) abaixo.
 
-Você pode usar o `$value` parâmetro para [obter o conteúdo MIME de uma mensagem](/graph/outlook-get-mime-message). Veja também um [exemplo](#example-5-get-mime-content) abaixo.
+Você pode usar o parâmetro `$value` para [obter o conteúdo MIME de uma mensagem](/graph/outlook-get-mime-message). Consulte também um [exemplo](#example-5-get-mime-content) abaixo.
 
 Existem dois cenários em que um aplicativo pode receber mensagens na pasta de email de outro usuário:
 
 * Se o aplicativo tiver permissões de aplicativo ou
-* Se o aplicativo tiver as [permissões](#permissions) delegadas apropriadas de um usuário e outro usuário tiver compartilhado uma pasta de email com esse usuário, ou tiver concedido acesso delegado a esse usuário. Confira [detalhes e um exemplo](/graph/outlook-share-messages-folders).
+* Se o aplicativo tiver as [permissões](#permissions) delegadas apropriadas de um usuário e outro usuário tiver compartilhado uma pasta de email com esse usuário, ou tiver concedido acesso delegado a esse usuário. Veja [detalhes e um exemplo](/graph/outlook-share-messages-folders).
 
 Como o recurso **message** dá suporte a [extensions](/graph/extensibility-overview), você também pode usar a operação `GET` para obter propriedades personalizadas e dados de extensão em uma instância de **message**.
 
@@ -138,7 +138,6 @@ Observação: o objeto de resposta mostrado aqui é truncado para brevidade. Tod
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 523
 
 {
     "@odata.context":"https://graph.microsoft.com/beta/$metadata#users('cd209b0b-3f83-4c35-82d2-d88a61820480')/messages/$entity",
@@ -190,7 +189,7 @@ GET https://graph.microsoft.com/beta/me/messages/AQMkADJmMTUAAAgVZAAAA/?$expand=
 ---
 
 #### <a name="response"></a>Resposta
-Veja a seguir um exemplo da resposta. Observação: o objeto de resposta mostrado aqui pode ser encurtado para legibilidade.
+Aqui está um exemplo da resposta. Observação: o objeto de resposta mostrado aqui pode ser reduzido para facilitar a leitura.
 <!-- {
   "blockType": "response",
   "name": "get_mentions_in_message",
@@ -200,7 +199,6 @@ Veja a seguir um exemplo da resposta. Observação: o objeto de resposta mostrad
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 2248
 
 {
   "@odata.context":"https://graph.microsoft.com/beta/$metadata#me/messages/$entity",

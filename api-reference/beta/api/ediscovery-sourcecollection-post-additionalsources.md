@@ -2,15 +2,15 @@
 title: Criar dataSource
 description: Adicione fontes de dados adicionais a uma coleção de origem.
 author: mahage-msft
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: ediscovery
 doc_type: apiPageType
-ms.openlocfilehash: 3d7636ef3e11d83949ba345010c4e140ee903f43
-ms.sourcegitcommit: e440d855f1106390d842905d97ceb16f143db2e5
+ms.openlocfilehash: bd67361807c40ef5aad4bebc08072e63998f1eed
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/29/2021
-ms.locfileid: "52080327"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60936874"
 ---
 # <a name="create-datasource"></a>Criar dataSource
 
@@ -27,7 +27,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |Tipo de permissão|Permissões (da com menos para a com mais privilégios)|
 |:---|:---|
 |Delegado (conta corporativa ou de estudante)|eDiscovery.Read.All, eDiscovery.ReadWrite.All|
-|Delegado (conta pessoal da Microsoft)|Sem suporte.|
+|Delegada (conta pessoal da Microsoft)|Sem suporte.|
 |Aplicativo|Sem suporte.|
 
 ## <a name="http-request"></a>Solicitação HTTP
@@ -54,12 +54,12 @@ No corpo da solicitação, fornece uma representação JSON do [objeto dataSourc
 
 A tabela a seguir mostra as propriedades que são necessárias ao criar [o dataSource](../resources/ediscovery-datasource.md).
 
+>**Observação:** Email **ou** **site** são necessários, não ambos. 
+
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|id|String|A ID do [caso sourceCollection.](../resources/ediscovery-sourcecollection.md) Somente leitura. Herdado da [entidade](../resources/entity.md)|
-|displayName|String|O nome da [sourceCollection](../resources/ediscovery-sourcecollection.md)|
-|createdDateTime|DateTimeOffset|A data e a hora em [que o sourceCollection](../resources/ediscovery-sourcecollection.md) foi criado.|
-|createdBy|[identitySet](../resources/identityset.md)|O usuário que criou [o sourceCollection](../resources/ediscovery-sourcecollection.md).|
+|email|cadeia de caracteres|Endereço SMTP da caixa de correio. Para obter o endereço de email de um grupo, use [List groups](../api/group-list.md) ou [Get group](../api/group-get.md). Você pode consultar pelo nome do grupo usando `$filter` ; por exemplo, `https://graph.microsoft.com/v1.0/groups?$filter=displayName eq 'secret group'&$select=mail,id,displayName` .|
+|site|string|URL do site; por exemplo, `https://contoso.sharepoint.com/sites/HumanResources` . |
 
 ## <a name="response"></a>Resposta
 
@@ -67,7 +67,9 @@ Se tiver êxito, este método retornará um código de resposta e um `201 Create
 
 ## <a name="examples"></a>Exemplos
 
-### <a name="request"></a>Solicitação
+### <a name="example-1-add-a-user-or-group-mailbox-to-the-additional-sources"></a>Exemplo 1: Adicionar um usuário ou uma caixa de correio de grupo às fontes adicionais
+
+#### <a name="request"></a>Solicitação
 
 
 # <a name="http"></a>[HTTP](#tab/http)
@@ -78,12 +80,11 @@ Se tiver êxito, este método retornará um código de resposta e um `201 Create
 -->
 
 ``` http
-POST https://graph.microsoft.com/beta/compliance/ediscovery/cases/{caseId}/sourceCollections/{sourceCollectionId}/additionalSources
+POST https://graph.microsoft.com/beta/compliance/ediscovery/cases/15d80234-8320-4f10-96d0-d98d53ffdfc9/sourceCollections/39b0bafd920e4360995c62e18a5e8a49/additionalsources
 Content-Type: application/json
-Content-length: 179
 
 {
-    "@odata.type": "#microsoft.graph.ediscovery.userSource",
+    "@odata.type": "microsoft.graph.ediscovery.userSource",
     "email": "badguy@contoso.com"
 }
 ```
@@ -106,7 +107,9 @@ Content-length: 179
 ---
 
 
-### <a name="response"></a>Resposta
+---
+
+#### <a name="response"></a>Resposta
 
 > **Observação:** o objeto de resposta mostrado aqui pode ser encurtado para legibilidade.
 <!-- {
@@ -121,12 +124,66 @@ HTTP/1.1 201 Created
 Content-Type: application/json
 
 {
-  "@odata.type": "#microsoft.graph.ediscovery.dataSource",
+  "@odata.type": "microsoft.graph.ediscovery.dataSource",
   "id": "0fb67fc5-7fc5-0fb6-c57f-b60fc57fb60f",
   "displayName": "String",
   "createdDateTime": "String (timestamp)",
   "createdBy": {
     "@odata.type": "microsoft.graph.identitySet"
   }
+}
+```
+
+### <a name="example-2-add-a-site-or-group-site-to-additional-sources"></a>Exemplo 2: Adicionar um site ou site de grupo a fontes adicionais
+
+#### <a name="request"></a>Solicitação
+
+<!-- {
+  "blockType": "request",
+  "name": "create_datasource_from__1"
+}
+-->
+
+``` http
+POST https://graph.microsoft.com/beta/compliance/ediscovery/cases/15d80234-8320-4f10-96d0-d98d53ffdfc9/sourceCollections/39b0bafd920e4360995c62e18a5e8a49/additionalsources
+Content-Type: application/json
+
+{
+    "@odata.type": "microsoft.graph.ediscovery.siteSource",
+    "site": {
+        "webUrl": "https://contoso.sharepoint.com/sites/SecretSite"
+    }
+}
+```
+
+---
+
+#### <a name="response"></a>Resposta
+
+> **Observação:** o objeto de resposta mostrado aqui pode ser encurtado para legibilidade.
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.ediscovery.dataSource"
+}
+-->
+
+``` http
+HTTP/1.1 201 Created
+Content-Type: application/json
+
+{
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#compliance/ediscovery/cases('15d80234-8320-4f10-96d0-d98d53ffdfc9')/sourceCollections('39b0bafd920e4360995c62e18a5e8a49')/additionalSources/$entity",
+    "@odata.type": "#microsoft.graph.ediscovery.siteSource",
+    "displayName": "Secret Site",
+    "createdDateTime": "2021-08-11T23:35:02.33986Z",
+    "id": "42393244-3838-4636-3437-453030334136",
+    "createdBy": {
+        "user": {
+            "id": "798d8d23-2087-4e03-912e-c0d9db5cb5d2",
+            "displayName": "Edisco Admin",
+            "userPrincipalname": "ediscoadmin@contoso.com"
+        }
+    }
 }
 ```

@@ -1,16 +1,16 @@
 ---
 title: Criar educationClass
 description: Crie uma nova aula. Isso também criará um grupo universal. Quando você usa essa API para criar uma classe, ela adicionará propriedades especiais ao grupo, que adicionará
-localization_priority: Normal
+ms.localizationpriority: medium
 author: mmast-msft
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: df566e35dd2bed527ef36f181cd9c4c92791843e
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: ac680a64dcf5ea64bb11c8829645fae59a60c508
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52043639"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60925304"
 ---
 # <a name="create-educationclass"></a>Criar educationClass
 
@@ -27,7 +27,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |:--------------------|:---------------------------------------------------------|
 |Delegado (conta corporativa ou de estudante) |  Sem suporte.  |
 |Delegado (conta pessoal da Microsoft) |  Sem suporte.  |
-|Application | EduRoster.ReadWrite.All | 
+|Aplicativo | EduRoster.ReadWrite.All | 
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- { "blockType": "ignored" } -->
@@ -59,7 +59,6 @@ Este é um exemplo de solicitação.
 ```http
 POST https://graph.microsoft.com/beta/education/classes
 Content-type: application/json
-Content-length: 224
 
 {
   "description": "Health Level 1",
@@ -103,7 +102,6 @@ Este é um exemplo de resposta.
 ```http
 HTTP/1.1 201 Created
 Content-type: application/json
-Content-length: 224
 
 {
     "id": "11019",

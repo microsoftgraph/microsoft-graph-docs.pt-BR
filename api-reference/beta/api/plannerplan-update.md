@@ -1,16 +1,16 @@
 ---
 title: Atualizar plannerPlan
 description: Atualize as propriedades de um **objeto plannerPlan.**
-localization_priority: Normal
+ms.localizationpriority: medium
 author: TarkanSevilmis
 ms.prod: planner
 doc_type: apiPageType
-ms.openlocfilehash: c69c6fb516551cd7bea06e464b1c7a8e74289378
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: f24e737c3032680feac8daa526b3f4c2b35a544d
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52050028"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60938613"
 ---
 # <a name="update-plannerplan"></a>Atualizar plannerPlan
 
@@ -63,7 +63,6 @@ Este é um exemplo da solicitação.
 ```http
 PATCH https://graph.microsoft.com/beta/planner/plans/{id}
 Content-type: application/json
-Content-length: 29
 Prefer: return=representation
 If-Match: W/"JzEtVGFzayAgQEBAQEBAQEBAQEBAQEBAWCc="
 
@@ -101,7 +100,6 @@ Veja a seguir um exemplo da resposta.
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 357
 
 {
   "createdBy": {

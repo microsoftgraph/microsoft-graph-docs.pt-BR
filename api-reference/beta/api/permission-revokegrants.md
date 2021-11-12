@@ -2,15 +2,15 @@
 title: 'permission: revokeGrants'
 description: Atualizar permissões de compartilhamento de um item
 author: learafa
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: sharepoint
 doc_type: apiPageType
-ms.openlocfilehash: 8a60aa04b999009ad279b0715ed97cbc045e268a
-ms.sourcegitcommit: cde4a3386b08a67cb476df6d46b51885c643d94f
+ms.openlocfilehash: d20cf15dfa13b15551bf66352f914a60fb14b051
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/10/2021
-ms.locfileid: "50625499"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60936520"
 ---
 # <a name="permission-revokegrants"></a>permission: revokeGrants
 Namespace: microsoft.graph
@@ -81,7 +81,6 @@ Se tiver êxito, essa ação retornará `200 OK` um código de resposta e uma [p
 ``` http
 POST /me/drive/items/{item-id}/permissions/{perm-id}/revokeGrants
 Content-Type: application/json
-Content-length: 95
 
 {
   "grantees": [

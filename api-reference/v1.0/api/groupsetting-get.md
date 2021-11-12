@@ -5,12 +5,12 @@ author: Jordanndahl
 ms.localizationpriority: medium
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: bdf215be6d48c0ea719695f5fc21d958a877797c
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 98b432bed0758bc35081d9d2c91447cb6623086d
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59022356"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60943700"
 ---
 # <a name="get-a-group-setting"></a>Obter uma configuração de grupo
 
@@ -97,7 +97,6 @@ Observação: o objeto de resposta exibido aqui pode ser encurtado para legibili
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 194
 
 {
   "displayName": "displayName-value",

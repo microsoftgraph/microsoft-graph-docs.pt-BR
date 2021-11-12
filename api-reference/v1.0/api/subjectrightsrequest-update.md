@@ -5,12 +5,12 @@ author: skadam-msft
 ms.localizationpriority: medium
 ms.prod: compliance
 doc_type: apiPageType
-ms.openlocfilehash: 2806a27a97dae2bd4368493c568d608fa125de5e
-ms.sourcegitcommit: c7ff992ef63e480d070421ba99b28ee129cb6acb
+ms.openlocfilehash: bfff00205418fd82defadd7dcbb38844bc7f11b8
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "60687865"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60940445"
 ---
 # <a name="update-subjectrightsrequest"></a>Atualizar subjectRightsRequest
 Namespace: microsoft.graph
@@ -23,7 +23,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |Tipo de permissão|Permissões (da com menos para a com mais privilégios)|
 |:---|:---|
 |Delegado (conta corporativa ou de estudante)|SubjectRightsRequest.ReadWrite.All*|
-|Delegado (conta pessoal da Microsoft)|Sem suporte.|
+|Delegada (conta pessoal da Microsoft)|Sem suporte.|
 |Aplicativo|Sem suporte|
 
 >[!IMPORTANT]
@@ -53,8 +53,8 @@ A tabela a seguir mostra as propriedades que são necessárias ao atualizar [sub
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
 |assignedTo|[microsoft.graph.identity](../resources/identity.md)|As informações de identidade para o usuário ao que a solicitação é atribuída.|
-|descrição|String|Descrição atualizada para a solicitação.|
-|displayName|String|Nome atualizado da solicitação.|
+|description|Cadeia de caracteres|Descrição atualizada para a solicitação.|
+|displayName|Cadeia de caracteres|Nome atualizado da solicitação.|
 |internalDueDateTime|DateTimeOffset|Data de vencimento interna atualizada para a solicitação.|
 
 ## <a name="response"></a>Resposta
@@ -74,7 +74,6 @@ Se tiver êxito, este método retornará um código de resposta e um `200 OK` [o
 ``` http
 PATCH https://graph.microsoft.com/v1.0/privacy/subjectRightsRequests/{subjectRightsRequestId}
 Content-Type: application/json
-Content-length: 837
 
 {
   "@odata.type": "#microsoft.graph.subjectRightsRequest",

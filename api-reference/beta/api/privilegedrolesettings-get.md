@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 doc_type: apiPageType
 ms.prod: governance
 author: carolinetempleton
-ms.openlocfilehash: 3d18c990461f53022b99ecd65d661b1142892b8f
-ms.sourcegitcommit: c7ff992ef63e480d070421ba99b28ee129cb6acb
+ms.openlocfilehash: 1c4ed1d1acfa0b881c11ce09365b8f20e00880d7
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "60695990"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60935407"
 ---
 # <a name="get-privilegedrolesettings"></a>Get privilegedRoleSettings
 
@@ -94,7 +94,6 @@ Aqui está um exemplo da resposta. Observação: o objeto de resposta mostrado a
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 228
 
 {
   "minElevationDuration": "2016-10-19T10:37:00Z",

@@ -5,12 +5,12 @@ author: Jordanndahl
 ms.localizationpriority: medium
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: b0c8eb09bf73d759103f2bdf594eb531bf358640
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: b778adbc81e7f3e6afff269a60e923b4b93127fa
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59074256"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60937276"
 ---
 # <a name="create-rejectedsender"></a>Criar rejectedSender
 
@@ -55,7 +55,6 @@ Este é um exemplo de solicitação.
 ```http
 POST https://graph.microsoft.com/v1.0/groups/{id}/rejectedSenders/$ref
 Content-type: application/json
-Content-length: 30
 
 {
   "@odata.id":"https://graph.microsoft.com/v1.0/users/alexd@contoso.com"

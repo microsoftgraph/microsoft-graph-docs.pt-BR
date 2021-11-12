@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: snlraju-msft
 ms.prod: search
 doc_type: apiPageType
-ms.openlocfilehash: 1cf796a5cf498feb7669f8ba84ab91f288832631
-ms.sourcegitcommit: 0eb843a6f61f384bc28c0cce1ccb74f64bdb1fa6
+ms.openlocfilehash: 8704e18f3c6abf16cff4ba6168c324236fa3083d
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/23/2021
-ms.locfileid: "60561665"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60934615"
 ---
 # <a name="get-externalitem"></a>Obter externalItem
 
@@ -30,7 +30,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |:---------------------------------------|:--------------------------------------------|
 | Delegado (conta corporativa ou de estudante)     | Sem suporte. |
 | Delegado (conta pessoal da Microsoft) | Sem suporte. |
-| Application                            | ExternalItem.ReadWrite.OwnedBy, ExternalItem.ReadWrite.All |
+| Aplicativo                            | ExternalItem.ReadWrite.OwnedBy, ExternalItem.ReadWrite.All |
 
 ## <a name="http-request"></a>Solicitação HTTP
 
@@ -97,13 +97,11 @@ Content-type: application/json
       "type": "user",
       "value": "e811976d-83df-4cbd-8b9b-5215b18aa874",
       "accessType": "grant",
-      "identitySource": "azureActiveDirectory"
     },
     {
-      "type": "group",
+      "type": "externalGroup",
       "value": "14m1b9c38qe647f6a",
       "accessType": "deny",
-      "identitySource": "external"
     }
   ],
   "properties": {

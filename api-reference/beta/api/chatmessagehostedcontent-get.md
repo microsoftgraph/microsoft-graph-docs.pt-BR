@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: RamjotSingh
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 5d3cbc2dd8d82bcb7cb94690d6f5d475a9c68221
-ms.sourcegitcommit: f4999aa6fc05f845027db01aa489f7086f9850e1
+ms.openlocfilehash: b4723f839f0acd34a46874f15f18df993944fe70
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/13/2021
-ms.locfileid: "60289858"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60925619"
 ---
 # <a name="get-chatmessagehostedcontent"></a>Obter chatMessageHostedContent
 
@@ -184,7 +184,6 @@ A resposta contém bytes para o conteúdo hospedado no corpo. `content-type` o h
 ```http
 HTTP/1.1 200 OK
 Content-type: image/jpeg
-Content-length: 201
 
 {
   "id": "id-value"

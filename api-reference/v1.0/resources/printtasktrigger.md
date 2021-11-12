@@ -2,21 +2,19 @@
 title: Tipo de recurso printTaskTrigger
 description: Determina as condições em que um novo printTask será executado com base na printTaskDefinition associada.
 author: nilakhan
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: cloud-printing
 doc_type: resourcePageType
-ms.openlocfilehash: ca4c5081521c2cbfd6e5ac4185548507f98e577ed2a590ded43d5788dde6cd9f
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: b458b99c08a945198ddd1cd21678e0513a85a8b5
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54218419"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60944253"
 ---
 # <a name="printtasktrigger-resource-type"></a>Tipo de recurso printTaskTrigger
 
 Namespace: microsoft.graph
-
-[!INCLUDE [cloudprinting-pricing-disclaimer](../../includes/cloudprinting-pricing-disclaimer.md)]
 
 Determina a condição na qual um [novo printTask](printtask.md) será acionado com base na [impressão associadaTaskDefinition](printtaskdefinition.md).
 
@@ -26,12 +24,12 @@ Para obter detalhes sobre como usar esse recurso para adicionar suporte à impre
 |Método|Tipo de retorno|Descrição|
 |:---|:---|:---|
 | [List](../api/printer-list-tasktriggers.md) | [Coleção printTaskTrigger](printtasktrigger.md) | Obter uma lista de printTaskTriggers associados a uma impressora [específica.](printer.md) |
-| [Obter](../api/printtasktrigger-get.md) | [printTaskTrigger](printtasktrigger.md) | Obter o printTaskTrigger associado a um [printTask específico.](printtask.md) |
+| [Get](../api/printtasktrigger-get.md) | [printTaskTrigger](printtasktrigger.md) | Obter o printTaskTrigger associado a um [printTask específico.](printtask.md) |
 
 ## <a name="properties"></a>Propriedades
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|id|Cadeia de caracteres|O identificador printTaskTrigger. Apenas leitura.|
+|id|Cadeia de caracteres|O identificador printTaskTrigger. Somente leitura.|
 |event|printEvent|O evento Impressão Universal que fará com que um [novo printTask](printtask.md) seja acionado. Os valores válidos são descritos na tabela a seguir.|
 
 ### <a name="printevent-values"></a>valores printEvent

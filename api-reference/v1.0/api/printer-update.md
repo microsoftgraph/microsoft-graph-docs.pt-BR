@@ -2,20 +2,18 @@
 title: Atualização da impressora
 description: Atualize as propriedades de um objeto printer.
 author: nilakhan
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: cloud-printing
 doc_type: apiPageType
-ms.openlocfilehash: a479aff38b24105e80d3fc0c3f098299b9eeafb4
-ms.sourcegitcommit: 412507a3c3a8e407fcc43b7cd227d4db35791f58
+ms.openlocfilehash: b1349a55997dcad5305da0db15cf4fd59d0a16eb
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2021
-ms.locfileid: "51765878"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60942811"
 ---
 # <a name="update-printer"></a>Atualização da impressora
 Namespace: microsoft.graph
-
-[!INCLUDE [cloudprinting-pricing-disclaimer](../../includes/cloudprinting-pricing-disclaimer.md)]
 
 Atualize as propriedades de um [objeto printer.](../resources/printer.md)
 
@@ -29,7 +27,7 @@ Além das permissões a seguir, o locatário do usuário deve ter uma assinatura
 |Tipo de permissão | Permissões (da com menos para a com mais privilégios) |
 |:---------------|:--------------------------------------------|
 |Delegado (conta corporativa ou de estudante)| Printer.ReadWrite.All, Printer.FullControl.All |
-|Delegado (conta pessoal da Microsoft)|Sem suporte.|
+|Delegada (conta pessoal da Microsoft)|Sem suporte.|
 |Aplicativo| Printer.ReadWrite.All |
 
 >**Observação:** No momento, somente as impressoras que não têm dispositivo físico podem ser atualizadas usando permissões de aplicativo.
@@ -62,7 +60,7 @@ As propriedades a seguir podem ser atualizadas usando permissões delegadas.
 |:-------------|:------------|:------------|
 |defaults|[printerDefaults](../resources/printerdefaults.md)|As configurações de impressão padrão da impressora.|
 |localização|[printerLocation](../resources/printerlocation.md)|O local físico e/ou organizacional da impressora.|
-|displayName|String|O nome da impressora.|
+|displayName|Cadeia de caracteres|O nome da impressora.|
 
 ### <a name="application-permissions-and-json-payload"></a>Permissões de aplicativo e carga JSON
 No corpo da solicitação, fornece os valores para os campos de [impressora relevantes](../resources/printer.md) que devem ser atualizados. Propriedades existentes que não estão incluídas no corpo da solicitação terão seus valores anteriores mantidos ou serão recalculadas com base nas alterações a outros valores de propriedade. Para alcançar o melhor desempenho, não inclua valores existentes que não foram alterados. 
@@ -73,11 +71,11 @@ As propriedades a seguir podem ser atualizadas usando permissões de aplicativo.
 |:-------------|:------------|:------------|
 |defaults|[printerDefaults](../resources/printerdefaults.md)|As configurações de impressão padrão da impressora.|
 |capabilities|[printerCapabilities](../resources/printerCapabilities.md)|Os recursos da impressora associados a esse compartilhamento de impressora.|
-|displayName|String|O nome da impressora.|
+|displayName|Cadeia de caracteres|O nome da impressora.|
 |fabricante|String|O fabricante da impressora.|
 |modelo|String|O nome do modelo da impressora.|
 |status|[printerStatus](../resources/printerstatus.md)|O status de processamento da impressora, incluindo quaisquer erros.|
-|isAcceptingJobs|Booliano|Se a impressora está aceitando novos trabalhos de impressão no momento.|
+|isAcceptingJobs|Boolean|Se a impressora está aceitando novos trabalhos de impressão no momento.|
 
 ### <a name="application-permissions-and-ipp-payload"></a>Permissões de aplicativo e carga IPP
 
@@ -117,7 +115,6 @@ Se estiver usando permissões de aplicativo, se bem-sucedido, este método retor
 ``` http
 PATCH https://graph.microsoft.com/v1.0/print/printers/{printerId}
 Content-Type: application/json
-Content-length: 581
 
 {
   "name": "PrinterName",

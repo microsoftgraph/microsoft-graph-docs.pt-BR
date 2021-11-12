@@ -2,21 +2,19 @@
 title: Tipo de recurso printerCreateOperation
 description: Representa uma operação de registro de impressora de longa duração. Derivado de printOperation.
 author: nilakhan
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: cloud-printing
 doc_type: resourcePageType
-ms.openlocfilehash: 91a1d70afccf94abe1c611e696bc4349a59964e1dbb176cce0ddb8aa32dc287a
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: c17b30b8644206d9815044bebda563d530af8a94
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54169351"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60944288"
 ---
 # <a name="printercreateoperation-resource-type"></a>Tipo de recurso printerCreateOperation
 
 Namespace: microsoft.graph
-
-[!INCLUDE [cloudprinting-pricing-disclaimer](../../includes/cloudprinting-pricing-disclaimer.md)]
 
 Representa uma operação de registro de impressora de longa duração. Derivado de [printOperation](printoperation.md).
 

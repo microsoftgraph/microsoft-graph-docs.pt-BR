@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: dhanyahk
 ms.prod: identity-and-access-reports
 doc_type: apiPageType
-ms.openlocfilehash: 9e2dcbe21f5a40157d0a803b9a800c3177b4aab9
-ms.sourcegitcommit: 64d27a0e3dcccc9d857e62aace4153e5d98fb3d0
+ms.openlocfilehash: da8205d61ceaeb95aeab91fb4d6ae4d891174945
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "60730043"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60939879"
 ---
 # <a name="get-applicationsigninsummary"></a>Obter applicationSignInSummary
 
@@ -26,7 +26,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
 |:--------------------|:---------------------------------------------------------|
 |Delegada (conta corporativa ou de estudante) | Reports.Read.All |
-|Delegado (conta pessoal da Microsoft) | Sem suporte   |
+|Delegada (conta pessoal da Microsoft) | Sem suporte   |
 |Aplicativo | Reports.Read.All | 
 
 ## <a name="http-request"></a>Solicitação HTTP
@@ -95,7 +95,6 @@ Este é um exemplo de resposta.
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 157
 
 {
   "appId": "appId-value",

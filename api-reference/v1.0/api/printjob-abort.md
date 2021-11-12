@@ -2,21 +2,19 @@
 title: 'printJob: abort'
 description: Aborte um trabalho de impressão.
 author: nilakhan
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: cloud-printing
 doc_type: apiPageType
-ms.openlocfilehash: 4f9bfb7623e546c402853c31eba750f5c4040966
-ms.sourcegitcommit: e440d855f1106390d842905d97ceb16f143db2e5
+ms.openlocfilehash: 5db22c57d8c2a55b24c79240c9f354763beb828d
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/29/2021
-ms.locfileid: "52080089"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60945905"
 ---
 # <a name="printjob-abort"></a>printJob: abort
 
 Namespace: microsoft.graph
-
-[!INCLUDE [cloudprinting-pricing-disclaimer](../../includes/cloudprinting-pricing-disclaimer.md)]
 
 Aborte um trabalho de impressão. Somente aplicativos que usam permissões de aplicativo podem cancelar um trabalho de impressão.
 
@@ -31,7 +29,7 @@ Além das permissões a seguir, o locatário do aplicativo deve ter uma assinatu
 |:---------------|:--------------------------------------------|
 |Delegado (conta corporativa ou de estudante)| Não suportado |
 |Delegado (conta pessoal da Microsoft)|Sem suporte.|
-|Application| PrintJob.ReadWriteBasic.All, PrintJob.ReadWrite.All, PrintJob.Manage.All |
+|Aplicativo| PrintJob.ReadWriteBasic.All, PrintJob.ReadWrite.All, PrintJob.Manage.All |
 
 ## <a name="http-request"></a>Solicitação HTTP
 
@@ -53,7 +51,7 @@ No corpo da solicitação, opcionalmente, você pode fornecer o motivo pelo qual
 
 | Propriedade     | Tipo        | Descrição |
 |:-------------|:------------|:------------|
-|motivo|String|Motivo pelo qual o trabalho está sendo abortado.|
+|motivo|Cadeia de caracteres|Motivo pelo qual o trabalho está sendo abortado.|
 
 ## <a name="response"></a>Resposta
 
@@ -72,7 +70,6 @@ Se bem-sucedido, este método retorna um código de resposta `204 No Content`. N
 ``` http
 POST https://graph.microsoft.com/v1.0/print/printers/{printerId}/jobs/{printJobId}/abort
 Content-Type: application/json
-Content-length: 26
 
 {
   "reason": "String"

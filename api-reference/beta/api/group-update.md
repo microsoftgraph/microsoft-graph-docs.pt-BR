@@ -5,12 +5,12 @@ author: Jordanndahl
 ms.localizationpriority: medium
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: becb8faa25ea2b43c50555c20a161bc063d97baa
-ms.sourcegitcommit: 6cea9bc17d3859e475a74c4a6f661f848e837e89
+ms.openlocfilehash: 61bd20df70a1e812ac89f47bbd28583809148f33
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/08/2021
-ms.locfileid: "60240821"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60936667"
 ---
 # <a name="update-group"></a>Atualizar grupo
 
@@ -144,7 +144,6 @@ Você pode obter a ID do rótulo que deseja aplicar a um grupo Microsoft 365 usa
 ```http
 PATCH https://graph.microsoft.com/beta/groups/{id}
 Content-type: application/json
-Content-length: 211
 
 {
   "assignedLabels": 

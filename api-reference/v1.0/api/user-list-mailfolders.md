@@ -5,12 +5,12 @@ author: abheek-das
 ms.localizationpriority: high
 doc_type: apiPageType
 ms.prod: outlook
-ms.openlocfilehash: 9a0198a2e071d64680b2f46ffa9cbcfcdbc5aa48
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: c91f0866e2307fe25a36af8ade942e4ce9ec2f22
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59130010"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60925878"
 ---
 # <a name="list-mailfolders"></a>Listar mailFolders
 
@@ -109,7 +109,6 @@ Aqui está um exemplo de resposta que inclui uma **mailSearchFolder** que é uma
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 232
 
 {
     "@odata.context": "https://graph.microsoft.com/beta/$metadata#users('68ca8ec0-11f8-456b-a785-70d9936650d5')/mailFolders",
@@ -249,7 +248,6 @@ Veja a seguir um exemplo da resposta.
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 232
 
 {
     "@odata.context": "https://graph.microsoft.com/beta/$metadata#users('68ca8ec0-11f8-456b-a785-70d9936650d5')/mailFolders",

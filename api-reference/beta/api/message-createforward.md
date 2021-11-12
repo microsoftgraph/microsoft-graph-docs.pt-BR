@@ -2,15 +2,15 @@
 title: 'message: createForward'
 description: Crie um rascunho para encaminhar uma mensagem existente, no formato JSON ou MIME.
 author: abheek-das
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 758ca460786eb7e59c41762f8dfa4209b20a62b9
-ms.sourcegitcommit: 503c72036c376a30e08c29df8e7730a7afcab66e
+ms.openlocfilehash: 72e55cd65e531e5330103f5f8603fc2a8f3ce1c1
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/10/2021
-ms.locfileid: "52870420"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60938738"
 ---
 # <a name="message-createforward"></a>message: createForward
 
@@ -133,7 +133,6 @@ Aqui está um exemplo da resposta. Observação: o objeto de resposta mostrado a
 ```http
 HTTP/1.1 201 Created
 Content-type: application/json
-Content-length: 272
 
 {
   "@odata.context": "https://graph.microsoft.com/beta/$metadata#Me/messages/$entity",

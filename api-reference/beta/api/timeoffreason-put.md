@@ -2,15 +2,15 @@
 title: Substituir timeOffReason
 description: Substitua um timeOffReason existente.
 author: nkramer
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 8750781b88cad2dc5ef055fed9084a6b9582f5a0
-ms.sourcegitcommit: 94c4acf8bd03c10a44b12952b6cb4827df55b978
+ms.openlocfilehash: edb74435f00fffe60fdc51652ba1daba5c9f5103
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/06/2021
-ms.locfileid: "52787328"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60926067"
 ---
 # <a name="replace-timeoffreason"></a>Substituir timeOffReason
 
@@ -22,7 +22,7 @@ Substitua um [timeOffReason](../resources/timeoffreason.md)existente.
 
 Se o [timeOffReason especificado](../resources/timeoffreason.md) não existir, este método retornará `404 Not found` .
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>Permissões
 
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
@@ -114,7 +114,6 @@ Este é um exemplo de resposta.
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 401
 
 {
   "id": "TOR_891045ca-b5d2-406b-aa06-a3c8921245d7",

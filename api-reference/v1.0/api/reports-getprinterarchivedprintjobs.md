@@ -2,20 +2,18 @@
 title: 'reports: getPrinterArchivedPrintJobs'
 description: Obter uma lista de trabalhos de impressão arquivados que foram enluados para uma impressora específica.
 author: nilakhan
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: cloud-printing
 doc_type: apiPageType
-ms.openlocfilehash: cb1b7966cc7c06a9b2ea255d43b1d044d34339eb5461ef253d7f4c8381d639e8
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 2ca0f329fa3378c4ed51355371b214dbcfb6a9f8
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54155383"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60940498"
 ---
 # <a name="reportroot-getprinterarchivedprintjobs"></a>reportRoot: getPrinterArchivedPrintJobs
 Namespace: microsoft.graph
-
-[!INCLUDE [cloudprinting-pricing-disclaimer](../../includes/cloudprinting-pricing-disclaimer.md)]
 
 Obter uma lista de trabalhos de impressão arquivados que foram enluados para uma impressora [específica.](../resources/printer.md)
 

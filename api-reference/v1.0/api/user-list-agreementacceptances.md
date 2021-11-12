@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: jpettere
 ms.prod: users
 doc_type: apiPageType
-ms.openlocfilehash: 6214b832b63673a6d0e72c92fbd3051ebbd04793
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: b475a185bdda9a06d96688f8181cd31865970e17
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59021852"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60946913"
 ---
 # <a name="list-agreementacceptances"></a>Listar agreementAcceptances
 
@@ -22,7 +22,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 |Tipo de permissão                        | Permissões (da com menos para a com mais privilégios)              |
 |:--------------------------------------|:---------------------------------------------------------|
-|Delegada (conta corporativa ou de estudante)     | AgreementAcceptance.Read |
+|Delegado (conta corporativa ou de estudante)     | AgreementAcceptance.Read |
 |Delegada (conta pessoal da Microsoft) | Sem suporte. |
 |Aplicativo                            | Sem suporte. |
 
@@ -85,7 +85,6 @@ GET https://graph.microsoft.com/v1.0/users/f2f4f8e9-c99d-4c73-b990-34f81fbf7fcf/
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 303
 
 {
   "value": [

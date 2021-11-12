@@ -1,16 +1,16 @@
 ---
 title: Atualizar plannerUser
 description: Atualize as propriedades de um objeto plannerUser. Você pode usar essa operação para adicionar ou remover planos da lista de planos favoritos de um usuário e para indicar quais planos o usuário exibiu recentemente.
-localization_priority: Normal
+ms.localizationpriority: medium
 author: TarkanSevilmis
 ms.prod: planner
 doc_type: apiPageType
-ms.openlocfilehash: 112b87d6672a74265874279806d9e16b7dc3be6e
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: ed08fe3001d5a99a577f4671aebc4a403329312d
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52049923"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60933147"
 ---
 # <a name="update-planneruser"></a>Atualizar plannerUser
 
@@ -37,7 +37,7 @@ PATCH /me/planner
 ## <a name="optional-request-headers"></a>Cabeçalhos de solicitação opcionais
 | Nome       | Descrição|
 |:-----------|:-----------|
-| Autorização  | Portador {código}. Obrigatório.|
+| Autorização  | {code} do portador. Obrigatório.|
 | If-Match  | Último valor ETag conhecido para o **plannerUser** ser atualizado. Obrigatório.|
 
 ## <a name="request-body"></a>Corpo da solicitação
@@ -65,7 +65,6 @@ Ele também atualiza o último tempo de exibição do plano "jd8S5gOaFk2S8aWCIAJ
 ```http
 PATCH https://graph.microsoft.com/beta/me/planner
 Content-type: application/json
-Content-length: 504
 Prefer: return=representation
 If-Match: W/"JzEtVXNlckRldGFpbHMgQEBAQEBAQEBAQEBAQEBIWCc="
 
@@ -110,7 +109,6 @@ Este é um exemplo de resposta.
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 979
 
 {
   "favoritePlanReferences": {

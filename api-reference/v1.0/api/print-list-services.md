@@ -2,24 +2,22 @@
 title: Listar printServices
 description: Recupere uma lista de objetos printService que representam os serviços disponíveis para seu locatário.
 author: nilakhan
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: cloud-printing
 doc_type: apiPageType
-ms.openlocfilehash: 72bc0f46df6eccd5462a776f0d38aa70175ab6f0
-ms.sourcegitcommit: 40947e6f4337c8c4193d85bb862e15f67263e1e7
+ms.openlocfilehash: a290d7c72a13ff83fc08f038793cd8a1738a63c3
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/13/2021
-ms.locfileid: "50777212"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60928078"
 ---
 # <a name="list-printservices"></a>Listar printServices
 Namespace: microsoft.graph
 
-[!INCLUDE [cloudprinting-pricing-disclaimer](../../includes/cloudprinting-pricing-disclaimer.md)]
-
 Recupere uma lista de **objetos printService** que representam os serviços disponíveis para seu locatário.
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>Permissões
 Uma das permissões **de** Impressão Universal delegada [é](/graph/permissions-reference#universal-print-permissions) necessária para chamar essa API.
 
 ## <a name="http-request"></a>Solicitação HTTP

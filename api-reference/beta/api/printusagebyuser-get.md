@@ -2,15 +2,15 @@
 title: Obter printUsageByUser
 description: Recupere o resumo de uso de um usuário para um determinado período de tempo.
 author: braedenp-msft
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: cloud-printing
 doc_type: apiPageType
-ms.openlocfilehash: ab81ab84a1ff70a0de7fbfb6fce33f83d0260466
-ms.sourcegitcommit: 503c72036c376a30e08c29df8e7730a7afcab66e
+ms.openlocfilehash: 7902a21e8a0886492de6cc01e5632afa71bb1591
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/10/2021
-ms.locfileid: "52869839"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60935491"
 ---
 # <a name="get-printusagebyuser"></a>Obter printUsageByUser
 
@@ -22,7 +22,7 @@ Recupere o resumo de uso de um usuário para um determinado período de tempo.
 
 Consulte a [documentação printUsageByUser](../resources/printUsageByUser.md) para ver descrições de cada um dos pontos de extremidade.
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 Para usar o serviço Impressão Universal, o usuário ou locatário do aplicativo deve ter uma assinatura de Impressão Universal ativa, além das permissões listadas na tabela a seguir.
@@ -96,7 +96,6 @@ Este é um exemplo de resposta.
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 251
 
 {
   "id": "016b5565-3bbf-4067-b9ff-4d68167eb1a6",

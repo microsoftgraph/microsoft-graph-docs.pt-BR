@@ -2,15 +2,15 @@
 title: Marca de atualização
 description: Atualize as propriedades de um objeto tag.
 author: mahage-msft
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: ediscovery
 doc_type: apiPageType
-ms.openlocfilehash: ee8d46d92b7f5e29a4612d3399028dacc36ad6fc
-ms.sourcegitcommit: 40947e6f4337c8c4193d85bb862e15f67263e1e7
+ms.openlocfilehash: 4c8cad6bcb627b9586789e9180a995b577aaf7d6
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/13/2021
-ms.locfileid: "50776393"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60936821"
 ---
 # <a name="update-tag"></a>Marca de atualização
 
@@ -27,7 +27,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |Tipo de permissão|Permissões (da com menos para a com mais privilégios)|
 |:---|:---|
 |Delegado (conta corporativa ou de estudante)|eDiscovery.Read.All, eDiscovery.ReadWrite.All|
-|Delegado (conta pessoal da Microsoft)|Sem suporte.|
+|Delegada (conta pessoal da Microsoft)|Sem suporte.|
 |Aplicativo|Sem suporte.|
 
 ## <a name="http-request"></a>Solicitação HTTP
@@ -54,8 +54,8 @@ No corpo da solicitação, forneça os valores para os campos relevantes que dev
 
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|description|String|A descrição da marca.|
-|displayName|String|Nome de exibição da marca.|
+|description|Cadeia de caracteres|A descrição da marca.|
+|displayName|Cadeia de caracteres|Nome de exibição da marca.|
 
 ## <a name="response"></a>Resposta
 
@@ -76,7 +76,6 @@ Se tiver êxito, este método retornará um código de resposta `204 No Content`
 ``` http
 PATCH https://graph.microsoft.com/beta/compliance/ediscovery/cases/47746044-fd0b-4a30-acfc-5272b691ba5b/tags/e54b3f535b434a9a8743b84e34c00504
 Content-Type: application/json
-Content-length: 210
 
 {
   "description":"This is an updated description."

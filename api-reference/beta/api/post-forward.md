@@ -1,16 +1,16 @@
 ---
 title: 'post: forward'
-description: 'Encaminhe uma postagem para um destinatário. Você pode especificar a conversa primária e o thread na solicitação, '
-localization_priority: Normal
+description: 'Encaminhe uma postagem para um destinatário. Você pode especificar a conversa pai e o thread na solicitação, '
+ms.localizationpriority: medium
 author: dkershaw10
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: 2095e5a22ed15ff5444f424da475cda314925e37
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 6faa725de6788494ca24aafb13276a2cc0c716a8
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48980429"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60942076"
 ---
 # <a name="post-forward"></a>post: forward
 
@@ -66,7 +66,6 @@ Este é um exemplo da solicitação.
 ```http
 POST https://graph.microsoft.com/beta/groups/{id}/threads/{id}/posts/{id}/forward
 Content-type: application/json
-Content-length: 166
 
 {
   "comment": "comment-value",

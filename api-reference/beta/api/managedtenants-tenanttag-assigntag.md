@@ -2,15 +2,15 @@
 title: 'tenantTag: assignTag'
 description: Atribua a marca de locatário aos locatários gerenciados especificados.
 author: isaiahwilliams
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: microsoft-365-lighthouse
 doc_type: apiPageType
-ms.openlocfilehash: 867f252eca5fc84f5f77e916c38d50bd564b7e9a
-ms.sourcegitcommit: 486fe9c77d4d89c5416bb83e8c716e6918c47370
+ms.openlocfilehash: 28bbbf5e96637d693cd01a71c2dc1dec2e4f4d83
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/15/2021
-ms.locfileid: "53441742"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60938759"
 ---
 # <a name="tenanttag-assigntag"></a>tenantTag: assignTag
 Namespace: microsoft.graph.managedTenants
@@ -19,7 +19,7 @@ Namespace: microsoft.graph.managedTenants
 
 Atribua a marca de locatário aos locatários gerenciados especificados.
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão|Permissões (da com menos para a com mais privilégios)|
@@ -51,7 +51,7 @@ A tabela a seguir mostra os parâmetros que podem ser usados com esta ação.
 
 |Parâmetro|Tipo|Descrição|
 |:---|:---|:---|
-|tenantIds|Conjunto de cadeias de caracteres|A coleção de Azure Active Directory de locatários onde a marca de locatário deve ser atribuída.|
+|tenantIds|Coleção de cadeias de caracteres|A coleção de Azure Active Directory de locatários onde a marca de locatário deve ser atribuída.|
 
 ## <a name="response"></a>Resposta
 
@@ -70,7 +70,6 @@ Se tiver êxito, essa ação retornará um código `200 OK` de resposta e um [te
 ``` http
 POST https://graph.microsoft.com/beta/tenantRelationships/managedTenants/tenantTags/{tenantTagId}/assignTag
 Content-Type: application/json
-Content-length: 41
 
 {
   "tenantIds": [

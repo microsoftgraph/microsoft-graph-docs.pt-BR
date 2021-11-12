@@ -2,15 +2,15 @@
 title: Termo de atualização
 description: Atualize as propriedades de um objeto term.
 author: mohitpcad
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: Sharepoint
 doc_type: apiPageType
-ms.openlocfilehash: fff5c082a0d8a7b1c60a5430706c342a93bd09df
-ms.sourcegitcommit: 22bd45d272681658d46a8b99af3c3eabc7b05cb1
+ms.openlocfilehash: 21d9cd75cbd479e2f67efca6a983eee9f9f267d8
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/18/2021
-ms.locfileid: "58384454"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60931985"
 ---
 # <a name="update-term"></a>Termo de atualização
 Namespace: microsoft.graph.termStore
@@ -19,12 +19,12 @@ Namespace: microsoft.graph.termStore
 
 Atualize as propriedades de um [objeto term.](../resources/termstore-term.md)
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão|Permissões (da com menos para a com mais privilégios)|
 |:---|:---|
-|Delegada (conta corporativa ou de estudante) | TermStore.ReadWrite.All |
+|Delegado (conta corporativa ou de estudante) | TermStore.ReadWrite.All |
 |Delegada (conta pessoal da Microsoft) | Sem suporte.    |
 |Aplicativo | Sem suporte. |
 
@@ -75,7 +75,6 @@ Se tiver êxito, este método retornará um código `200 OK` de resposta e um ob
 ``` http
 PATCH https://graph.microsoft.com/beta/termStore/sets/{setId}/terms/{termId}
 Content-Type: application/json
-Content-length: 366
 
 {
   "labels" : [

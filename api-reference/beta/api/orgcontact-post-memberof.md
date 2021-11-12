@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: dkershaw10
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: af5349d2023cd639c206b65c4623ec29a2fd7a37
-ms.sourcegitcommit: f4999aa6fc05f845027db01aa489f7086f9850e1
+ms.openlocfilehash: f73f36ace536764c0ab7572d423f28a80e90f56e
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/13/2021
-ms.locfileid: "60289291"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60938662"
 ---
 # <a name="create-memberof"></a>Criar memberOf
 
@@ -58,7 +58,6 @@ Este é um exemplo da solicitação.
 ```http
 POST https://graph.microsoft.com/beta/contacts/{id}/memberOf
 Content-type: application/json
-Content-length: 30
 
 {
   "directoryObject": {
@@ -86,7 +85,6 @@ Aqui está um exemplo da resposta. Observação: o objeto de resposta mostrado a
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 51
 
 {
   "directoryObject": {

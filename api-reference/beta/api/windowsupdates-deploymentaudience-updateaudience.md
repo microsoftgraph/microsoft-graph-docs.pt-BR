@@ -2,15 +2,15 @@
 title: 'deploymentAudience: updateAudience'
 description: Atualize os membros e as coleções de exclusões de uma deploymentAudience.
 author: Alice-at-Microsoft
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: w10
 doc_type: apiPageType
-ms.openlocfilehash: 23fe655e076987ffb33591eb8aaa1600ed4a8fa4
-ms.sourcegitcommit: 4888ac7504533344c4fc6828e2a06a002a1d72d3
+ms.openlocfilehash: cc9c343b0646710f59445ff8c4b6b713d45ae639
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/09/2021
-ms.locfileid: "53351122"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60926053"
 ---
 # <a name="deploymentaudience-updateaudience"></a>deploymentAudience: updateAudience
 
@@ -35,8 +35,8 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |Tipo de permissão|Permissões (da com menos para a com mais privilégios)|
 |:---|:---|
 |Delegado (conta corporativa ou de estudante)|WindowsUpdates.ReadWrite.All|
-|Delegado (conta pessoal da Microsoft)|Sem suporte.|
-|Application|WindowsUpdates.ReadWrite.All|
+|Delegada (conta pessoal da Microsoft)|Sem suporte.|
+|Aplicativo|WindowsUpdates.ReadWrite.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
 
@@ -86,7 +86,6 @@ Se tiver êxito, esta ação retornará um código de resposta `202 Accepted`. N
 ``` http
 POST https://graph.microsoft.com/beta/admin/windows/updates/deployments/{deploymentId}/audience/updateAudience
 Content-Type: application/json
-Content-length: 599
 
 {
   "addMembers": [

@@ -5,12 +5,12 @@ author: jpettere
 ms.localizationpriority: medium
 ms.prod: users
 doc_type: apiPageType
-ms.openlocfilehash: 9da4b635c92f82e4983da164218013ac96009734
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 954a38b88f659c7049dfca162e292fa5f035090a
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59143913"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60946885"
 ---
 # <a name="update-settings"></a>Atualizar configurações
 
@@ -73,7 +73,6 @@ Aqui está um exemplo de solicitação sobre como desativar um usuário do Delve
 ```http
 PATCH https://graph.microsoft.com/v1.0/me/settings
 Content-type: application/json
-Content-length: 37
 
 {
   "contributionToContentDiscoveryDisabled": true
@@ -87,7 +86,6 @@ Aqui está um exemplo da resposta. Observação: o objeto de resposta mostrado a
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 72
 
 {
   "contributionToContentDiscoveryAsOrganizationDisabled": false,

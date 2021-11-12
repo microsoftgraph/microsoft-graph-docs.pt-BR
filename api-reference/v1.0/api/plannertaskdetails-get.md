@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: TarkanSevilmis
 ms.prod: planner
 doc_type: apiPageType
-ms.openlocfilehash: 125312397f8822c9d0e73273d65d86b3639cb9a9
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: ef0181de7d6469e3aba5209ddeaf3662740c2947
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59072719"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60924387"
 ---
 # <a name="get-plannertaskdetails"></a>Obter plannerTaskDetails
 
@@ -86,7 +86,6 @@ Aqui está um exemplo da resposta. Observação: o objeto de resposta mostrado a
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 1036
 
 {
   "description": "Task details properties:\nchecklist:Sub items\nreferences:Related links",

@@ -4,12 +4,12 @@ description: Listar práticas recomendadas e exemplos para Excel APIs no Microso
 author: grangeryy
 ms.localizationpriority: medium
 ms.prod: excel
-ms.openlocfilehash: 17833cacc58ddc431e1488826391e5eb36ee06b8
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: d5318b51316a20fff00c70df0e655a6058743c29
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59142338"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60944225"
 ---
 # <a name="best-practices-for-working-with-the-excel-api-in-microsoft-graph"></a>Práticas recomendadas para trabalhar com a API Excel no Microsoft Graph
 
@@ -28,7 +28,6 @@ O exemplo a seguir mostra como adicionar um novo número a uma tabela e, em segu
 ```http
 POST https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/createSession
 Content-type: application/json
-Content-length: 52
 
 {
   "persistChanges": true
@@ -41,7 +40,6 @@ A seguir, uma resposta bem-sucedida.
 ```http
 HTTP/1.1 201 Created
 Content-type: application/json
-Content-length: 52
 
 {
   "id": "id-value",
@@ -68,7 +66,6 @@ workbook-session-id: {session-id}
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 42
 
 {
   "index": 6,
@@ -112,7 +109,6 @@ content-type: application/json
 POST https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/closeSession
 Content-type: application/json
 workbook-session-id: {session-id}
-Content-length: 0
 
 {
 }
@@ -169,7 +165,6 @@ Em alguns casos, se a criação for bem-sucedida em segundos, ela não entrará 
 ```http
 HTTP/1.1 201 Created
 Content-type: application/json
-Content-length: 52
 
 {
   "id": "id-value",

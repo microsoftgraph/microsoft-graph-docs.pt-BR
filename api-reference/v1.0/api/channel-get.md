@@ -5,12 +5,12 @@ author: nkramer
 doc_type: apiPageType
 ms.prod: microsoft-teams
 ms.localizationpriority: medium
-ms.openlocfilehash: 1050579225621d8722c36e49b045a3f3d912a250
-ms.sourcegitcommit: f4999aa6fc05f845027db01aa489f7086f9850e1
+ms.openlocfilehash: 8ed9b2b7ea01e67290ab563679509d2dc910bb5f
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/13/2021
-ms.locfileid: "60290075"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60935071"
 ---
 # <a name="get-channel"></a>Obter canal
 
@@ -108,7 +108,6 @@ Veja a seguir um exemplo da resposta.
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 201
 
 {
     "id": "19:561fbdbbfca848a484f0a6f00ce9dbbd@thread.tacv2",

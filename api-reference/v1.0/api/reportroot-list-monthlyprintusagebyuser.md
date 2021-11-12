@@ -2,20 +2,18 @@
 title: Listar monthlyPrintUsageByUser
 description: Recupere uma lista de resumos de uso de impressão mensal, agrupados pelo usuário.
 author: nilakhan
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: cloud-printing
 doc_type: apiPageType
-ms.openlocfilehash: dba792f68284acb6db514af88d999d91c83af9ba
-ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
+ms.openlocfilehash: 1c4266ab65d5c8d779cb78d8ecece1ed3edf1096
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "50959558"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60942734"
 ---
 # <a name="list-monthlyprintusagebyuser"></a>Listar monthlyPrintUsageByUser
 Namespace: microsoft.graph
-
-[!INCLUDE [cloudprinting-pricing-disclaimer](../../includes/cloudprinting-pricing-disclaimer.md)]
 
 Recupere uma lista de resumos de uso de impressão mensal, agrupados pelo usuário.
 
