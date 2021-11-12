@@ -2,15 +2,15 @@
 title: 'mailFolder: copy'
 description: Copie uma mailFolder e seu conteúdo para outra mailFolder.
 author: abheek-das
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 8414eaf1c572b61c320e8c5db6f77656ca99c497
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: 3df50421310c80808a78590f235011062af05ae7
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52049293"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60936660"
 ---
 # <a name="mailfolder-copy"></a>mailFolder: copy
 
@@ -75,7 +75,6 @@ Este é um exemplo da solicitação.
 ```http
 POST https://graph.microsoft.com/beta/me/mailFolders/{id}/copy
 Content-type: application/json
-Content-length: 44
 
 {
   "destinationId": "destinationId-value"
@@ -115,7 +114,6 @@ Veja a seguir um exemplo da resposta.
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 179
 
 {
   "displayName": "displayName-value",

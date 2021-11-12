@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 doc_type: apiPageType
 author: jkdouglas
 ms.prod: identity-and-sign-in
-ms.openlocfilehash: 2d730bcae52f0cf99e0112015effac975a992350
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 5b8b67bcde86e2c4954255bd361c5e15bac32f72
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59100369"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60926025"
 ---
 # <a name="add-identityprovider"></a>Adicionar identityProvider
 
@@ -24,7 +24,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegada (conta corporativa ou de estudante)|IdentityUserFlow.ReadWrite.All|
+|Delegado (conta corporativa ou de estudante)|IdentityUserFlow.ReadWrite.All|
 |Delegada (conta pessoal da Microsoft)| Sem suporte.|
 |Aplicativo| IdentityUserFlow.ReadWrite.All|
 
@@ -54,7 +54,7 @@ No corpo da solicitação, forneça uma representação JSON da `id` [identidade
 
 ## <a name="response"></a>Resposta
 
-Se bem-sucedido, este método retorna um código de resposta `204 No Content`. Caso não consiga, um `4xx` erro será retornado com detalhes específicos.
+Se tiver êxito, este método retornará um código de resposta `204 No Content`. Caso não consiga, um `4xx` erro será retornado com detalhes específicos.
 
 ## <a name="example"></a>Exemplo
 
@@ -73,7 +73,6 @@ Este é um exemplo de solicitação.
 ``` http
 POST https://graph.microsoft.com/v1.0/identity/b2xUserFlows/B2X_1_Partner/identityProviders/$ref
 Content-type: application/json
-Content-length: 30
 
 {
   "@odata.id": "https://graph.microsoft.com/v1.0/identityProviders/Facebook-OAUTH"

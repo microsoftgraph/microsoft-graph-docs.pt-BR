@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: kevinbellinger
 ms.prod: people
 doc_type: apiPageType
-ms.openlocfilehash: 956a44d63438803fe9d74d66d5efc3fdce768280
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 829b30b2197c92cd7fd51ceb2e125f3f3cbf1bbd
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59141456"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60943226"
 ---
 # <a name="update-personaward"></a>Atualizar personAward
 
@@ -51,13 +51,13 @@ No corpo da solicitação, forneça os valores para os campos relevantes que dev
 
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|allowedAudiences|Cadeia de Caracteres|As audiências que são capazes de ver os valores contidos na entidade. Herdado [do itemFacet](../resources/itemfacet.md). Os valores possíveis são: `me`, `family`, `contacts`, `groupMembers`, `organization`, `federatedOrganizations`, `everyone`, `unknownFutureValue`.|
+|allowedAudiences|Cadeia de caracteres|As audiências que são capazes de ver os valores contidos na entidade. Herdado [do itemFacet](../resources/itemfacet.md). Os valores possíveis são: `me`, `family`, `contacts`, `groupMembers`, `organization`, `federatedOrganizations`, `everyone`, `unknownFutureValue`.|
 |description|Cadeia de caracteres|Descpription of the award or honor. |
 |displayName|Cadeia de caracteres|Nome do prêmio ou da honra. |
 |inferência|[inferenceData](../resources/inferencedata.md)|Contém detalhes de inferência se a entidade for inferida pelo aplicativo de criação ou modificação. Herdado [do itemFacet](../resources/itemfacet.md).|
 |issuedDate|Data|A data em que o prêmio ou a honra foi concedido. |
-|issuingAuthority|Cadeia de Caracteres|Autoridade que concedeu o prêmio ou a honra.  |
-|thumbnailUrl|Cadeia de Caracteres|URL fazendo referência a uma miniatura do prêmio ou da honra.  |
+|issuingAuthority|Cadeia de caracteres|Autoridade que concedeu o prêmio ou a honra.  |
+|thumbnailUrl|Cadeia de caracteres|URL fazendo referência a uma miniatura do prêmio ou da honra.  |
 |webUrl|String|URL referenciando o prêmio ou a honra. |
 
 ## <a name="response"></a>Resposta
@@ -76,7 +76,6 @@ Se tiver êxito, este método retornará um código de resposta e um `200 OK` [o
 ``` http
 PATCH https://graph.microsoft.com/beta/users/{userId}/profile/awards/{personAwardId}
 Content-Type: application/json
-Content-length: 497
 
 {
   "issuingAuthority": "International Association of Branding Management",

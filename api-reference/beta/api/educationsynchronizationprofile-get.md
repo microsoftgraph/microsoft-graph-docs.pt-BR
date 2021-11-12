@@ -5,12 +5,12 @@ author: mmast-msft
 ms.localizationpriority: medium
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: 3cbc3890f6009f2205ced2d07b5b8e047d19f04a
-ms.sourcegitcommit: 0ec845f93eaa140ad833ba163c76c5308197a92f
+ms.openlocfilehash: d56d6fa6518e923f290bfe51b56f35847618aac5
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/01/2021
-ms.locfileid: "60059945"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60946822"
 ---
 # <a name="get-an-educationsynchronizationprofile"></a>Obter um educationSynchronizationProfile
 
@@ -89,7 +89,6 @@ Este é um exemplo de resposta.
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 2487
 
 {
     "@odata.context": "https://graph.microsoft.com/beta/$metadata#education/synchronizationProfiles/$entity",

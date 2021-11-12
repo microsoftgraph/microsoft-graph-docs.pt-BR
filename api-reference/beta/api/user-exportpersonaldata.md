@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: jpettere
 ms.prod: users
 doc_type: apiPageType
-ms.openlocfilehash: 7065fdced15ff04ff6e82a437378c217a486c94d
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 845d25c2665d50c1f8a969a53e293b26528ee60f
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59054706"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60947640"
 ---
 # <a name="user-exportpersonaldata"></a>user: exportPersonalData
 
@@ -24,7 +24,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
 |:--------------------|:---------------------------------------------------------|
 |Delegado (conta corporativa ou de estudante) |  User.Export.All e User.Read.All  |
-|Delegado (conta pessoal da Microsoft) |  Não aplicável  |
+|Delegada (conta pessoal da Microsoft) |  Não aplicável  |
 |Aplicativo | User.Export.All e User.Read.All |
 
 >**Observação:** A exportação só pode ser executada por um administrador da empresa quando a permissão delegada é usada.
@@ -45,7 +45,7 @@ Forneça um objeto JSON com os seguintes parâmetros no corpo da solicitação.
 
 | Parâmetro    | Tipo   |Descrição |
 |:---------------|:--------|:----------|
-|storageLocation|Cadeia de Caracteres|Esta é uma URL de assinatura de acesso compartilhado (SAS) para uma conta Armazenamento do Azure, para onde os dados devem ser exportados.|
+|storageLocation|Cadeia de caracteres|Esta é uma URL de assinatura de acesso compartilhado (SAS) para uma conta Armazenamento do Azure, para onde os dados devem ser exportados.|
 
 ## <a name="response"></a>Resposta
 Se bem-sucedido, este método retorna um código de resposta `202 Accepted`. Não retorna nada no corpo da resposta. A resposta contém os seguintes headers.
@@ -67,7 +67,6 @@ Se bem-sucedido, este método retorna um código de resposta `202 Accepted`. Nã
 ```http
 POST https://graph.microsoft.com/beta/users/{id}/exportPersonalData
 Content-type: application/json
-Content-length: 48
 
 {
   "storageLocation": "storageLocation-value"

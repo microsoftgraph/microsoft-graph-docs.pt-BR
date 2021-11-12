@@ -5,12 +5,12 @@ author: abheek-das
 ms.localizationpriority: medium
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: ba53081c2d76a39b4c59fe8470979f773da1b1d4
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 0b7459cc3b5f4ee90d56708b9bd7648bd7ace693
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59140749"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60943798"
 ---
 # <a name="add-attachment"></a>Adicionar anexo
 
@@ -66,7 +66,6 @@ Este é um exemplo da solicitação.
 ```http
 POST https://graph.microsoft.com/v1.0/me/messages/{id}/attachments
 Content-type: application/json
-Content-length: 142
 
 {
   "@odata.type": "microsoft.graph.fileAttachment",
@@ -119,7 +118,6 @@ HTTP/1.1 201 Created
 ```http
 POST https://graph.microsoft.com/v1.0/me/events/{id}/attachments
 Content-type: application/json
-Content-length: 100
 
 {
   "@odata.type": "#Microsoft.OutlookServices.ItemAttachment",

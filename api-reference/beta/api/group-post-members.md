@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: Jordanndahl
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: cbd076e7f725f7442a03301085ecb228534aa2ee
-ms.sourcegitcommit: 2a9b82dae63d8a998711679a379ae1fa89df80e0
+ms.openlocfilehash: 3c6710b38df1db84df77028effa623e02ccc1694
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60214458"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60943392"
 ---
 # <a name="add-member"></a>Adicionar membro
 
@@ -18,7 +18,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Adicione um membro a um grupo por meio da **propriedade de navegação de** membros.
+Adicione um membro a um grupo por meio da propriedade de navegação de **membros**.
 
 Você pode adicionar usuários, entidades de serviço ou outros grupos. 
 
@@ -65,7 +65,6 @@ Este é um exemplo de solicitação.
 ```http
 POST https://graph.microsoft.com/beta/groups/{group-id}/members/$ref
 Content-type: application/json
-Content-length: 30
 
 {
   "@odata.id": "https://graph.microsoft.com/beta/directoryObjects/{id}"

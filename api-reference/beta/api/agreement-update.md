@@ -1,16 +1,16 @@
 ---
 title: Atualizar contrato
 description: Atualize as propriedades de um objeto agreement.
-localization_priority: Normal
+ms.localizationpriority: medium
 doc_type: apiPageType
 ms.prod: governance
 author: raprakasMSFT
-ms.openlocfilehash: 77c3fbf6aa37d283e02408a1000d4a5f521a3fd5
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: 913aa8c43b489be48de632c80ab51b50703355ce
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52048194"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60939908"
 ---
 # <a name="update-agreement"></a>Atualizar contrato
 
@@ -25,7 +25,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |Tipo de permissão                        | Permissões (da com menos para a com mais privilégios)              |
 |:--------------------------------------|:---------------------------------------------------------|
 |Delegado (conta corporativa ou de estudante)     | Agreement.ReadWrite.All |
-|Delegado (conta pessoal da Microsoft) | Sem suporte. |
+|Delegada (conta pessoal da Microsoft) | Sem suporte. |
 |Aplicativo                            | Sem suporte. |
 
 Ao chamar em nome de um usuário, o usuário precisa pertencer a uma das seguintes funções de diretório. Para saber mais sobre funções de diretório, consulte Funções do [Azure AD integrados](/azure/active-directory/roles/permissions-reference):
@@ -48,7 +48,7 @@ No corpo da solicitação, forneça os valores para os campos relevantes que dev
 
 | Propriedade     | Tipo        | Descrição |
 |:-------------|:------------|:------------|
-|displayName|String|Nome de exibição do contrato.|
+|displayName|Cadeia de caracteres|Nome de exibição do contrato.|
 |isViewingBeforeAcceptanceRequired|Boolean|Se o usuário precisa expandir e exibir o contrato antes de aceitar.|
 
 ## <a name="response"></a>Resposta
@@ -65,7 +65,6 @@ Se tiver êxito, este método retornará `200 OK` um código de resposta e um ob
 ```http
 PATCH https://graph.microsoft.com/beta/identityGovernance/termsOfUse/agreements/{id}
 Content-type: application/json
-Content-length: 85
 
 {
   "displayName": "displayName-value",
@@ -102,7 +101,6 @@ Content-length: 85
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 105
 
 {
   "displayName": "displayName-value",

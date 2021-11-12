@@ -2,20 +2,18 @@
 title: Listar allowedGroups para printerShare
 description: Recupere uma lista de grupos que tiveram acesso para enviar trabalhos de impressão para o compartilhamento de impressora associado.
 author: nilakhan
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: cloud-printing
 doc_type: apiPageType
-ms.openlocfilehash: 49555364c6ff923d746718ef37650130d85e7c30
-ms.sourcegitcommit: 40947e6f4337c8c4193d85bb862e15f67263e1e7
+ms.openlocfilehash: aa9897883ca5d0d766f9815e644d49f712b1f0bc
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/13/2021
-ms.locfileid: "50771565"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60927874"
 ---
 # <a name="list-allowedgroups"></a>Listar allowedGroups
 Namespace: microsoft.graph
-
-[!INCLUDE [cloudprinting-pricing-disclaimer](../../includes/cloudprinting-pricing-disclaimer.md)]
 
 Recupere uma lista de grupos que tiveram acesso para enviar trabalhos de impressão para a [impressora associadaShare](../resources/printershare.md).
 
@@ -26,7 +24,7 @@ Além das permissões a seguir, o usuário ou locatário do aplicativo deve ter 
 
 |Tipo de permissão | Permissões (da com menos para a com mais privilégios) |
 |:---------------|:--------------------------------------------|
-|Delegada (conta corporativa ou de estudante)| PrinterShare.Read.All, PrinterShare.ReadWrite.All |
+|Delegado (conta corporativa ou de estudante)| PrinterShare.Read.All, PrinterShare.ReadWrite.All |
 |Delegada (conta pessoal da Microsoft)|Sem suporte.|
 |Aplicativo|Sem suporte.|
 

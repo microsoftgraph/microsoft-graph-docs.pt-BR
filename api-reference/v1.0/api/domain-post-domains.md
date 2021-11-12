@@ -5,12 +5,12 @@ author: adimitui
 ms.localizationpriority: medium
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: b8d4b05287ad2773b3819f51a5413fabb9f58452
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 6583efd2d00e320bd268e1fad606bd6a30b7d0b6
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59100278"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60940770"
 ---
 # <a name="create-domain"></a>Criar domínio
 
@@ -28,7 +28,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
 |:--------------------|:---------------------------------------------------------|
 |Delegado (conta corporativa ou de estudante) | Domain.ReadWrite.All    |
-|Delegado (conta pessoal da Microsoft) | Sem suporte.    |
+|Delegada (conta pessoal da Microsoft) | Sem suporte.    |
 |Aplicativo | Domain.ReadWrite.All |
 
 ## <a name="http-request"></a>Solicitação HTTP
@@ -64,7 +64,6 @@ No corpo da solicitação, forneça uma representação JSON do objeto [domain](
 ```http
 POST https://graph.microsoft.com/v1.0/domains
 Content-type: application/json
-Content-length: 192
 
 {
   "id": "contoso.com"
@@ -81,7 +80,6 @@ Observação: o objeto de resposta exibido aqui pode ser encurtado para legibili
 ```http
 HTTP/1.1 201 Created
 Content-type: application/json
-Content-length: 192
 
 {
   "authenticationType": "authenticationType-value",

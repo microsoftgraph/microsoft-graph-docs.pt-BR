@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 doc_type: apiPageType
 ms.prod: governance
 author: carolinetempleton
-ms.openlocfilehash: 3eb7ba6e02c10923c6289daf12e5063664285436
-ms.sourcegitcommit: c7ff992ef63e480d070421ba99b28ee129cb6acb
+ms.openlocfilehash: 58c4a5e0e57e2fe5f32e87ccc7f87429e1354a93
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "60695829"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60938494"
 ---
 # <a name="privilegedrole-selfactivate"></a>privilegedRole: selfActivate
 
@@ -77,7 +77,6 @@ Este é um exemplo da solicitação.
 ```http
 POST https://graph.microsoft.com/beta/privilegedRoles/{id}/selfActivate
 Content-type: application/json
-Content-length: 142
 
 {
   "reason": "reason-value",
@@ -117,7 +116,6 @@ Veja a seguir um exemplo da resposta.
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 184
 
 {
   "id": "id-value",

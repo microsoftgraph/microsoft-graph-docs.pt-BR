@@ -5,12 +5,12 @@ author: akjo
 doc_type: apiPageType
 ms.localizationpriority: medium
 ms.prod: microsoft-teams
-ms.openlocfilehash: d25735dcde145b83823be07502a2176a300148e4
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 02a0bfa4fb3027f4bae335262c1a3a9fb0c61724
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59050751"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60941789"
 ---
 # <a name="add-conversationmember"></a>Adicionar conversationMember
 
@@ -24,7 +24,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 |Tipo de permissão|Permissões (da com menos para a com mais privilégios)|
 |---------|-------------|
-|Delegada (conta corporativa ou de estudante)| ChannelMember.ReadWrite.All |
+|Delegado (conta corporativa ou de estudante)| ChannelMember.ReadWrite.All |
 |Delegada (conta pessoal da Microsoft)|Sem suporte.|
 |Aplicativo| ChannelMember.ReadWrite.All |
 
@@ -109,7 +109,6 @@ Veja a seguir um exemplo da resposta.
 ```http
 HTTP/1.1 201 Created
 Content-type: application/json
-Content-length: 468
 
 {
   "@odata.context": "https://graph.microsoft.com/V1.0/$metadata#teams('ece6f0a1-7ca4-498b-be79-edf6c8fc4d82')/channels('19%3A56eb04e133944cf69e603c5dac2d292e%40thread.skype')/members/microsoft.graph.aadUserConversationMember/$entity",

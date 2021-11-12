@@ -2,15 +2,15 @@
 title: Atualizar calendargroup
 description: Atualiza as propriedades do objeto calendargroup.
 author: harini84
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 9395d46f587aa49ed4f77dbe47d2b971e2baeb56
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: e1d9e56313ffe86522e89150073067b800853ce2
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52047690"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60930819"
 ---
 # <a name="update-calendargroup"></a>Atualizar calendargroup
 
@@ -54,7 +54,7 @@ No corpo da solicitação, forneça os valores para os campos relevantes que dev
 
 | Propriedade | Tipo   | Descrição     |
 | :------- | :----- | :-------------- |
-| nome     | String | O nome do grupo. |
+| nome     | Cadeia de caracteres | O nome do grupo. |
 
 ## <a name="response"></a>Resposta
 
@@ -76,7 +76,6 @@ Este é um exemplo da solicitação.
 ```http
 PATCH https://graph.microsoft.com/beta/me/calendarGroups/{id}
 Content-type: application/json
-Content-length: 30
 
 {
   "name": "name-value"
@@ -103,7 +102,7 @@ Content-length: 30
 
 ##### <a name="response"></a>Resposta
 
-Veja a seguir um exemplo da resposta. Observação: o objeto de resposta mostrado aqui pode ser encurtado para legibilidade.
+Aqui está um exemplo da resposta. Observação: o objeto de resposta mostrado aqui pode ser reduzido para facilitar a leitura.
 
 <!-- {
   "blockType": "response",
@@ -114,7 +113,6 @@ Veja a seguir um exemplo da resposta. Observação: o objeto de resposta mostrad
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 110
 
 {
   "name": "name-value",

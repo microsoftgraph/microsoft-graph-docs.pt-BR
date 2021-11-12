@@ -2,15 +2,15 @@
 title: Listar scopedAdministratorOf
 description: Recupere uma lista de scopedRoleMembership para o usuário.
 author: jpettere
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: users
 doc_type: apiPageType
-ms.openlocfilehash: 0686e0a6b8ac6bec26a2f30d8e52e59b52f3a192
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: 34e758ae723b8fe1a49bc8f05cc1c7f4f11159cc
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52051701"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60937570"
 ---
 # <a name="list-scopedadministratorof"></a>Listar scopedAdministratorOf
 
@@ -81,7 +81,7 @@ GET https://graph.microsoft.com/beta/me/scopedRoleMemberOf
 ---
 
 ##### <a name="response"></a>Resposta
-Veja a seguir um exemplo da resposta. Observação: o objeto de resposta mostrado aqui pode ser encurtado para legibilidade.
+Aqui está um exemplo da resposta. Observação: o objeto de resposta mostrado aqui pode ser reduzido para facilitar a leitura.
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -91,7 +91,6 @@ Veja a seguir um exemplo da resposta. Observação: o objeto de resposta mostrad
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 307
 
 {
   "value": [

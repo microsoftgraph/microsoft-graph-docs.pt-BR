@@ -5,12 +5,12 @@ ms.localizationpriority: high
 author: TarkanSevilmis
 ms.prod: planner
 doc_type: apiPageType
-ms.openlocfilehash: 9f39886fa5111fd7dbaec185a381d810579d506e
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 0815ebcf645863b2b6d3e2ebe853e8b04a7843cb
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59085348"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60946458"
 ---
 # <a name="list-tasks"></a>Listar tarefas
 
@@ -89,7 +89,6 @@ Aqui está um exemplo da resposta. Observação: o objeto de resposta mostrado a
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 833
 
 {
   "value": [

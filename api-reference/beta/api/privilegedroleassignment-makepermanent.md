@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 doc_type: apiPageType
 ms.prod: governance
 author: carolinetempleton
-ms.openlocfilehash: 9e9f4ef235d0df877bd37a7cb8364e4729891afa
-ms.sourcegitcommit: c7ff992ef63e480d070421ba99b28ee129cb6acb
+ms.openlocfilehash: 64dd91d4fbfce73662f72ac51bd7c859a670f894
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "60695766"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60947214"
 ---
 # <a name="privilegedroleassignment-makepermanent"></a>privilegedRoleAssignment: makePermanent
 
@@ -71,7 +71,6 @@ Este é um exemplo da solicitação.
 ```http
 POST https://graph.microsoft.com/beta/privilegedRoleAssignments/{id}/makePermanent
 Content-type: application/json
-Content-length: 110
 
 {
   "reason": "reason-value",
@@ -108,7 +107,6 @@ Aqui está um exemplo da resposta. Observação: o objeto de resposta mostrado a
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 184
 
 {
   "id": "id-value",

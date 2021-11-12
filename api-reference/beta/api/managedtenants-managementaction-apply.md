@@ -2,15 +2,15 @@
 title: 'managementAction: apply'
 description: Aplica uma ação de gerenciamento a um locatário gerenciado específico. Ao executar essa operação, as configurações apropriadas serão feitas e as políticas serão criadas. Por exemplo, ao aplicar a autenticação multifacional necessária para a ação de gerenciamento de administradores, criará uma política de acesso condicional Azure Active Directory que requer autenticação multifacional para todos os usuários que foram atribuídos a uma função de diretório administrativo.
 author: isaiahwilliams
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: microsoft-365-lighthouse
 doc_type: apiPageType
-ms.openlocfilehash: 801a4e66338dfb53f74d454c4ac6d2eba2c58505
-ms.sourcegitcommit: 486fe9c77d4d89c5416bb83e8c716e6918c47370
+ms.openlocfilehash: 12a42efa7e2e853e183ce132f9713e74e0badfdd
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/15/2021
-ms.locfileid: "53442112"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60942195"
 ---
 # <a name="managementaction-apply"></a>managementAction: apply
 Namespace: microsoft.graph.managedTenants
@@ -19,12 +19,12 @@ Namespace: microsoft.graph.managedTenants
 
 Aplica uma ação de gerenciamento a um locatário gerenciado específico. Ao executar essa operação, as configurações apropriadas serão feitas e as políticas serão criadas. Por exemplo, ao aplicar a autenticação multifacional necessária para a ação de gerenciamento de administradores, criará uma política de acesso condicional Azure Active Directory que requer autenticação multifacional para todos os usuários que foram atribuídos a uma função de diretório administrativo.
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão|Permissões (da com menos para a com mais privilégios)|
 |:---|:---|
-|Delegada (conta corporativa ou de estudante)|ManagedTenants.ReadWrite.All|
+|Delegado (conta corporativa ou de estudante)|ManagedTenants.ReadWrite.All|
 |Delegada (conta pessoal da Microsoft)|Sem suporte.|
 |Aplicativo|Sem suporte.|
 
@@ -72,7 +72,6 @@ Se tiver êxito, essa ação retornará um código `200 OK` de resposta e um [ma
 ``` http
 POST https://graph.microsoft.com/beta/tenantRelationships/managedTenants/managementActions/{managementActionId}/apply
 Content-Type: application/json
-Content-length: 95
 
 {
   "tenantId": "String",

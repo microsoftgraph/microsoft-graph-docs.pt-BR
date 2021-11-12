@@ -2,15 +2,15 @@
 title: 'Range: BoundingRect'
 description: .
 author: lumine2008
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: excel
 doc_type: apiPageType
-ms.openlocfilehash: bf548c798a6539a0be25b78481ee2da6e90614cd
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: bdb9bdbf52cee71608a810028a369ede67bc17e9
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52055145"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60946185"
 ---
 # <a name="range-boundingrect"></a>Range: BoundingRect
 
@@ -67,7 +67,6 @@ Este é um exemplo da solicitação.
 ```http
 GET https://graph.microsoft.com/beta/me/drive/items/{id}/workbook/names/{name}/range/BoundingRect
 Content-type: application/json
-Content-length: 42
 
 {
   "anotherRange": "anotherRange-value"
@@ -75,7 +74,7 @@ Content-length: 42
 ```
 
 ##### <a name="response"></a>Resposta
-Veja a seguir um exemplo da resposta. Observação: o objeto de resposta mostrado aqui pode ser encurtado para legibilidade.
+Aqui está um exemplo da resposta. Observação: o objeto de resposta mostrado aqui pode ser reduzido para facilitar a leitura.
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -84,7 +83,6 @@ Veja a seguir um exemplo da resposta. Observação: o objeto de resposta mostrad
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 169
 
 {
   "address": "address-value",

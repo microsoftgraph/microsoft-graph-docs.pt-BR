@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: dkershaw10
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: be3535c3374903b98dfe6857279ffc22fab77e3f
-ms.sourcegitcommit: f4999aa6fc05f845027db01aa489f7086f9850e1
+ms.openlocfilehash: 74ba117e3cce86f1c045617824ed95f740d0d2b0
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/13/2021
-ms.locfileid: "60289928"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60939487"
 ---
 # <a name="orgcontact-checkmembergroups"></a>orgContact: checkMemberGroups
 
@@ -62,7 +62,6 @@ Este é um exemplo da solicitação.
 ```http
 POST https://graph.microsoft.com/beta/contacts/{id}/checkMemberGroups
 Content-type: application/json
-Content-length: 44
 
 {
   "groupIds": [
@@ -100,7 +99,6 @@ Aqui está um exemplo da resposta. Observação: o objeto de resposta mostrado a
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 39
 
 {
   "value": [

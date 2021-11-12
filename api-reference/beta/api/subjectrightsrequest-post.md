@@ -5,12 +5,12 @@ author: skadam-msft
 ms.localizationpriority: medium
 ms.prod: compliance
 doc_type: apiPageType
-ms.openlocfilehash: 043aa156ac456039708e6a36f5306139f291ad86
-ms.sourcegitcommit: 0eb843a6f61f384bc28c0cce1ccb74f64bdb1fa6
+ms.openlocfilehash: cd7a24499a6ac1de331c19763de20ad9a1695f02
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/23/2021
-ms.locfileid: "60561777"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60941131"
 ---
 # <a name="create-subjectrightsrequest"></a>Criar subjectRightsRequest
 Namespace: microsoft.graph
@@ -25,8 +25,8 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |Tipo de permissão|Permissões (da com menos para a com mais privilégios)|
 |:---|:---|
 |Delegado (conta corporativa ou de estudante)|SubjectRightsRequest.ReadWrite.All*|
-|Delegado (conta pessoal da Microsoft)|Sem suporte.|
-|Application|Sem suporte|
+|Delegada (conta pessoal da Microsoft)|Sem suporte.|
+|Aplicativo|Sem suporte|
 
 >[!IMPORTANT]
 >No momento, as permissões marcadas com um asterisco (*) não estão disponíveis. Para mais detalhes, confira [Problemas conhecidos](/graph/known-issues#compliance).
@@ -80,7 +80,6 @@ Se tiver êxito, este método retornará um código de resposta e um `201 Create
 ``` http
 POST https://graph.microsoft.com/beta/privacy/subjectRightsRequests
 Content-Type: application/json
-Content-length: 849
 
 {
     "type": "microsoft.graph.subjectRightsRequestType",

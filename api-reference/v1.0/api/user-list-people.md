@@ -1,16 +1,16 @@
 ---
 title: Listar pessoas
 description: Recupere uma coleção de objetos person ordenados por relevância para o usuário, o que é determinado pelo padrões de comunicação e colaboração e pelas relações comerciais do usuário.
-author: anthona
+author: dkershaw10
 ms.localizationpriority: high
 ms.prod: insights
 doc_type: apiPageType
-ms.openlocfilehash: 61c4de130b4d5c75501e49e1a7d86b35a997e54b
-ms.sourcegitcommit: ddeee0eec277df06d9e635e5b5c257d14c856273
+ms.openlocfilehash: 24dc63c927aa82bcaeb7da9463f7364b946c5800
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/04/2021
-ms.locfileid: "60780937"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60940180"
 ---
 # <a name="list-people"></a>Listar pessoas
 
@@ -117,7 +117,6 @@ Este é um exemplo de resposta.
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 1370
 
 {
     "value": [

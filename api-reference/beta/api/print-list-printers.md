@@ -2,15 +2,15 @@
 title: Obter impressoras
 description: Recupere a lista de impressoras registradas no locatário.
 author: braedenp-msft
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: universal-print
 doc_type: apiPageType
-ms.openlocfilehash: 67abcedfd9b120b8d075530ec423a5f937ee5c27
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: 97b6622041e17e5f159cdcc2a42170b3f5185c6f
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52037533"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60933140"
 ---
 # <a name="list-printers"></a>Lista de impressoras
 
@@ -28,8 +28,8 @@ Para usar o serviço Impressão Universal, o usuário ou locatário do aplicativ
 |Tipo de permissão | Permissões (da com menos para a com mais privilégios) |
 |:---------------|:--------------------------------------------|
 |Delegado (conta corporativa ou de estudante)| Printer.Read.All, Printer.ReadWrite.All, Printer.FullControl.All |
-|Delegado (conta pessoal da Microsoft)|Sem suporte.|
-|Application| Sem suporte. |
+|Delegada (conta pessoal da Microsoft)|Sem suporte.|
+|Aplicativo| Sem suporte. |
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- { "blockType": "ignored" } -->
@@ -95,7 +95,6 @@ Este é um exemplo de resposta.
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 1526
 
 {
   "@odata.context": "https://graph.microsoft.com/beta/$metadata#print/printers",

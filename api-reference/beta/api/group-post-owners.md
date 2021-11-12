@@ -1,16 +1,16 @@
 ---
 title: Adicionar proprietário do grupo
 description: Adiciona um usuário aos proprietários do grupo.
-localization_priority: Normal
+ms.localizationpriority: medium
 author: Jordanndahl
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: 660c3a900c0ef36884a16e8007fba6dc72723c18
-ms.sourcegitcommit: 6f04ad0e0cde696661511dcdf343942b43f73fc6
+ms.openlocfilehash: 5033e4315dd4253f440bb3d03d6c6c30e916cde9
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/19/2021
-ms.locfileid: "58396736"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60946206"
 ---
 # <a name="add-group-owner"></a>Adicionar proprietário do grupo
 
@@ -60,7 +60,6 @@ Este é um exemplo de solicitação.
 ```http
 POST https://graph.microsoft.com/beta/groups/{id}/owners/$ref
 Content-type: application/json
-Content-length: 30
 
 {
   "@odata.id": "https://graph.microsoft.com/beta/users/{id}"

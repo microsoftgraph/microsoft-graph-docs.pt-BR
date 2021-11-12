@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: ruoyingl
 ms.prod: ''
 doc_type: apiPageType
-ms.openlocfilehash: 1dd6d39a04e9a9feaebff00315c6ec4e4e2e5d89
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 2f9234510ef0b2604ec5938a06712dfe26c28f6f
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59099452"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60931417"
 ---
 # <a name="add-named-item"></a>Adicionar Item nomeado
 
@@ -24,7 +24,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
 |:--------------------|:---------------------------------------------------------|
 |Delegado (conta corporativa ou de estudante) | Files.ReadWrite, Sites.Read.All    |
-|Delegado (conta pessoal da Microsoft) | Sem suporte.    |
+|Delegada (conta pessoal da Microsoft) | Sem suporte.    |
 |Aplicativo | Sites.Read.All |
 
 ## <a name="http-request"></a>Solicitação HTTP
@@ -70,7 +70,6 @@ Este é um exemplo da solicitação.
 ```http
 POST https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/names/add
 Content-type: application/json
-Content-length: 54
 
 {
   "name": "test5",
@@ -109,7 +108,6 @@ Aqui está um exemplo da resposta. Observação: o objeto de resposta mostrado a
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 109
 
 {
     "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#workbookNamedItem",

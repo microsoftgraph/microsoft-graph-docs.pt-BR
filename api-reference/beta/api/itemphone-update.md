@@ -1,16 +1,16 @@
 ---
 title: Atualizar itemphone
 description: Atualize as propriedades de um objeto itemPhone.
-localization_priority: Normal
+ms.localizationpriority: medium
 author: kevinbellinger
 ms.prod: people
 doc_type: apiPageType
-ms.openlocfilehash: c88e7eb1b3bd357735689ba36955170372b8b9e4
-ms.sourcegitcommit: 40947e6f4337c8c4193d85bb862e15f67263e1e7
+ms.openlocfilehash: 03705f91954b91e6074b2155faf619cbecc21d50
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/13/2021
-ms.locfileid: "50770397"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60942223"
 ---
 # <a name="update-itemphonenumber"></a>Atualizar itemphonenumber
 
@@ -55,12 +55,12 @@ A tabela a seguir mostra as propriedades que são possíveis de definir quando v
 
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|allowedAudiences|String|As audiências que são capazes de ver os valores contidos na entidade. Herdado [do itemFacet](../resources/itemfacet.md). Os valores possíveis são: `me`, `family`, `contacts`, `groupMembers`, `organization`, `federatedOrganizations`, `everyone`, `unknownFutureValue`.|
-|displayName|String|Nome amigável que o usuário atribuiu a esse número de telefone. |
+|allowedAudiences|Cadeia de caracteres|As audiências que são capazes de ver os valores contidos na entidade. Herdado [do itemFacet](../resources/itemfacet.md). Os valores possíveis são: `me`, `family`, `contacts`, `groupMembers`, `organization`, `federatedOrganizations`, `everyone`, `unknownFutureValue`.|
+|displayName|Cadeia de caracteres|Nome amigável que o usuário atribuiu a esse número de telefone. |
 |inferência|[inferenceData](../resources/inferencedata.md)|Contém detalhes de inferência se a entidade for inferida pelo aplicativo de criação ou modificação. Herdado [do itemFacet](../resources/itemfacet.md).|
-|number|String|Número de telefone fornecido pelo usuário.|
+|number|Cadeia de caracteres|Telefone número fornecido pelo usuário.|
 |source|[personDataSource](../resources/persondatasource.md)|Onde os valores se originaram se sincronizados de outro serviço. Herdado [do itemFacet](../resources/itemfacet.md).|
-|tipo|phoneType|O tipo de número de telefone dentro do objeto. Os valores possíveis são: `home`, `business`, `mobile`, `other`, `assistant`, `homeFax`, `businessFax`, `otherFax`, `pager`, `radio`.|
+|type|phoneType|O tipo de número de telefone dentro do objeto. Os valores possíveis são: `home`, `business`, `mobile`, `other`, `assistant`, `homeFax`, `businessFax`, `otherFax`, `pager`, `radio`.|
 
 ## <a name="response"></a>Resposta
 
@@ -78,7 +78,6 @@ Se tiver êxito, este método retornará um código de resposta e um `200 OK` [o
 ``` http
 PATCH https://graph.microsoft.com/beta/users/{userId}/profile/phones/{id}
 Content-Type: application/json
-Content-length: 382
 
 {
   "type": "other"

@@ -2,15 +2,15 @@
 title: Criar allowedUser para printerShare
 description: Conceda ao usuário especificado acesso para enviar trabalhos de impressão para o compartilhamento de impressora associado.
 author: braedenp-msft
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: universal-print
 doc_type: apiPageType
-ms.openlocfilehash: a40a26372457faaaa18b27778235bd8de4d60ef6
-ms.sourcegitcommit: 94c4acf8bd03c10a44b12952b6cb4827df55b978
+ms.openlocfilehash: 872d2f02a508e390b18b1e87dcf07ec92517f3e0
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/06/2021
-ms.locfileid: "52787398"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60947689"
 ---
 # <a name="create-alloweduser-for-printershare"></a>Criar allowedUser para printerShare
 
@@ -20,7 +20,7 @@ Namespace: microsoft.graph
 
 Conceda ao usuário especificado acesso para enviar trabalhos de impressão para a [impressora associadaShare](../resources/printershare.md).
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 Para usar o serviço Impressão Universal, o usuário ou locatário do aplicativo deve ter uma assinatura de Impressão Universal ativa, além das permissões listadas na tabela a seguir. O usuário inscreveu deve ser um [Administrador de Impressora.](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#printer-administrator)
@@ -28,7 +28,7 @@ Para usar o serviço Impressão Universal, o usuário ou locatário do aplicativ
 |Tipo de permissão | Permissões (da com menos para a com mais privilégios) |
 |:---------------|:--------------------------------------------|
 |Delegado (conta corporativa ou de estudante)| PrinterShare.ReadWrite.All |
-|Delegado (conta pessoal da Microsoft)|Sem suporte.|
+|Delegada (conta pessoal da Microsoft)|Sem suporte.|
 |Aplicativo|Sem suporte.|
 
 ## <a name="http-request"></a>Solicitação HTTP
@@ -61,7 +61,6 @@ Este é um exemplo de solicitação.
 ```http
 POST https://graph.microsoft.com/beta/print/shares/{id}/allowedUsers/$ref
 Content-type: application/json
-Content-length: 66
 
 {
   "@odata.id": "https://graph.microsoft.com/beta/users/{id}"

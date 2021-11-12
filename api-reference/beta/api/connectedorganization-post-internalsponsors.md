@@ -1,16 +1,16 @@
 ---
 title: Adicionar patrocinador interno da organização conectado
 description: Adicione um usuário ou grupo aos patrocinadores internos da organização conectada.
-localization_priority: Normal
+ms.localizationpriority: medium
 author: markwahl-msft
 ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: 00b4270c819733c44fada1b012ba4241c347944c
-ms.sourcegitcommit: 94c4acf8bd03c10a44b12952b6cb4827df55b978
+ms.openlocfilehash: 2d32aa342d286bfefaa4ed4e5526fa5bdeb12657
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/06/2021
-ms.locfileid: "52786500"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60939760"
 ---
 # <a name="add-connected-organization-internal-sponsor"></a>Adicionar patrocinador interno da organização conectado
 
@@ -20,13 +20,13 @@ Namespace: microsoft.graph
 
 Adicione um usuário ou um grupo aos patrocinadores internos da organização conectada. Os patrocinadores internos são um conjunto de usuários que podem aprovar solicitações em nome de outros usuários dessa organização conectada.
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
 |:--------------------|:---------------------------------------------------------|
 |Delegado (conta corporativa ou de estudante)     | EntitlementManagement.ReadWrite.All |
-|Delegado (conta pessoal da Microsoft) | Sem suporte.    |
+|Delegada (conta pessoal da Microsoft) | Sem suporte.    |
 |Aplicativo | EntitlementManagement.ReadWrite.All |
 
 ## <a name="http-request"></a>Solicitação HTTP
@@ -62,7 +62,6 @@ Este é um exemplo de solicitação.
 ``` http
 POST https://graph.microsoft.com/beta/identityGovernance/entitlementManagement/connectedOrganizations/{id}/internalSponsors/$ref
 Content-type: application/json
-Content-length: 30
 
 {
   "@odata.id": "https://graph.microsoft.com/beta/users/{id}"

@@ -5,12 +5,12 @@ author: mmcla
 ms.localizationpriority: medium
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: f1c0ac265239cff9d28358cf6a5291835d6f1b87
-ms.sourcegitcommit: 0a312d63934cdf9789a5648c2b3f348f48542ff4
+ms.openlocfilehash: 75aa58e1c9def07e8eb9a3f9c6695531d81dfcac
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/07/2021
-ms.locfileid: "60220427"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60944645"
 ---
 # <a name="update-smsauthenticationmethodconfiguration"></a>Atualizar smsAuthenticationMethodConfiguration
 Namespace: microsoft.graph
@@ -57,7 +57,7 @@ A tabela a seguir mostra as propriedades que são necessárias ao atualizar o [o
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
 |id|Cadeia de caracteres|O identificador de política do método de autenticação.|
-|estado|authenticationMethodState|Os valores possíveis são: `enabled` e `disabled`.|
+|state|authenticationMethodState|Os valores possíveis são: `enabled` e `disabled`.|
 
 >**Observação:** A `@odata.type` propriedade com um valor de deve ser incluída no `#microsoft.graph.smsAuthenticationMethodConfiguration` corpo.
 
@@ -78,7 +78,6 @@ Se tiver êxito, este método retornará um código de resposta e um `200 OK` [o
 ``` http
 PATCH https://graph.microsoft.com/beta/policies/authenticationMethodsPolicy/authenticationMethodConfigurations/sms
 Content-Type: application/json
-Content-length: 100
 
 {
     "@odata.type": "#microsoft.graph.smsAuthenticationMethodConfiguration",

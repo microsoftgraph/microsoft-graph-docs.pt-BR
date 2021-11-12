@@ -2,15 +2,15 @@
 title: Criar mensagem
 description: Use essa API para criar uma nova mensagem em uma pasta de email.
 author: abheek-das
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: b63c00b892b4f9cf2ecdc979c06450590379e255
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: 2403207601377f30f9e159fdcaf16f95ba5a5191
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52049244"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60929628"
 ---
 # <a name="create-message"></a>Criar mensagem
 
@@ -59,7 +59,6 @@ Este é um exemplo da solicitação.
 ```http
 POST https://graph.microsoft.com/beta/me/mailFolders/{id}/messages
 Content-type: application/json
-Content-length: 248
 
 {
   "receivedDateTime": "2016-10-19T10:37:00Z",
@@ -89,7 +88,7 @@ Content-length: 248
 
 No corpo da solicitação, forneça uma representação JSON do objeto [mensagem](../resources/message.md).
 ##### <a name="response"></a>Resposta
-Veja a seguir um exemplo da resposta. Observação: o objeto de resposta mostrado aqui pode ser encurtado para legibilidade.
+Aqui está um exemplo da resposta. Observação: o objeto de resposta mostrado aqui pode ser reduzido para facilitar a leitura.
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -98,7 +97,6 @@ Veja a seguir um exemplo da resposta. Observação: o objeto de resposta mostrad
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 248
 
 {
   "receivedDateTime": "2016-10-19T10:37:00Z",

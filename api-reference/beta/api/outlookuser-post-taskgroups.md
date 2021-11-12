@@ -1,16 +1,16 @@
 ---
 title: Criar outlookTaskGroup
 description: Crie um Outlook de tarefas na caixa de correio do usuário.
-localization_priority: Normal
+ms.localizationpriority: medium
 author: mashriv
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 1cef21d441ba20c1bc97f7e4bf2e4f1c922d1f9c
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: 196997f1ed1cd88f8d4183a1e3f031a74f3ef552
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52037995"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60933991"
 ---
 # <a name="create-outlooktaskgroup-deprecated"></a>Criar outlookTaskGroup (preterido)
 
@@ -28,7 +28,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
 |:--------------------|:---------------------------------------------------------|
 |Delegado (conta corporativa ou de estudante) | Tasks.ReadWrite    |
-|Delegado (conta pessoal da Microsoft) | Tasks.ReadWrite    |
+|Delegada (conta pessoal da Microsoft) | Tasks.ReadWrite    |
 |Aplicativo | Sem suporte. |
 
 ## <a name="http-request"></a>Solicitação HTTP
@@ -61,7 +61,6 @@ Este é um exemplo da solicitação.
 ```http
 POST https://graph.microsoft.com/beta/me/outlook/taskGroups
 Content-type: application/json
-Content-length: 40
 
 {
   "name": "Leisure tasks"
@@ -87,7 +86,7 @@ Content-length: 40
 
 No corpo da solicitação, fornece uma representação JSON do [objeto outlookTaskGroup.](../resources/outlooktaskgroup.md)
 ##### <a name="response"></a>Resposta
-Veja a seguir um exemplo da resposta. Observação: o objeto de resposta mostrado aqui pode ser encurtado para legibilidade.
+Aqui está um exemplo da resposta. Observação: o objeto de resposta mostrado aqui pode ser reduzido para facilitar a leitura.
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -96,7 +95,6 @@ Veja a seguir um exemplo da resposta. Observação: o objeto de resposta mostrad
 ```http
 HTTP/1.1 201 Created
 Content-type: application/json
-Content-length: 138
 
 {
   "id": "AAMkADIyAAAhrbe-AAA=",

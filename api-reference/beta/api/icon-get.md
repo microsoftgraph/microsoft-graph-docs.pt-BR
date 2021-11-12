@@ -1,16 +1,16 @@
 ---
 title: Obter ícone
 description: Recupere as propriedades e os relacionamentos do objeto de ícone.
-localization_priority: Normal
+ms.localizationpriority: medium
 doc_type: apiPageType
 author: ruoyingl
 ms.prod: ''
-ms.openlocfilehash: 409f15875e910998acc7035c7b54436108fd1002
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: 08cb1004b8273662d25880f2d39fc01e93041800
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52040866"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60945499"
 ---
 # <a name="get-icon"></a>Get Icon
 
@@ -61,7 +61,7 @@ Este é um exemplo da solicitação.
 GET https://graph.microsoft.com/beta/me/drive/items/{id}/workbook/tables/{id|name}/sort/fields/icon
 ```
 ##### <a name="response"></a>Resposta
-Veja a seguir um exemplo da resposta. Observação: o objeto de resposta mostrado aqui pode ser encurtado para legibilidade.
+Aqui está um exemplo da resposta. Observação: o objeto de resposta mostrado aqui pode ser reduzido para facilitar a leitura.
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -70,7 +70,6 @@ Veja a seguir um exemplo da resposta. Observação: o objeto de resposta mostrad
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 39
 
 {
   "set": "set-value",

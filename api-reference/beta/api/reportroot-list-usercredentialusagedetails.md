@@ -1,16 +1,16 @@
 ---
 title: Listar userCredentialUsageDetails
 description: Obter uma lista de objetos userCredentialUsageDetails para um determinado locatário.
-localization_priority: Normal
+ms.localizationpriority: medium
 author: besiler
 ms.prod: identity-and-access-reports
 doc_type: apiPageType
-ms.openlocfilehash: e64d98318bcf9b083005f79156bc425a3b0d0fbc
-ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
+ms.openlocfilehash: f97fdc92f37fc0080e76ae4c5c4cdae5db447dd7
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/06/2021
-ms.locfileid: "50134481"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60941229"
 ---
 # <a name="list-usercredentialusagedetails"></a>Listar userCredentialUsageDetails
 
@@ -18,7 +18,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Obter uma lista de [objetos userCredentialUsageDetails](../resources/usercredentialusagedetails.md) para um determinado locatário. Os detalhes incluem informações do usuário, status da redefinição e o motivo da falha.
+Obter uma lista [de objetos userCredentialUsageDetails](../resources/usercredentialusagedetails.md) para um determinado locatário. Os detalhes incluem informações do usuário, status da redefinição e o motivo da falha.
 
 ## <a name="permissions"></a>Permissões
 
@@ -44,12 +44,12 @@ Esta função dá suporte ao parâmetro opcional de consulta OData **$filter**. 
 
 | Propriedades | Descrição e exemplo |
 |:--------- |:----------- |
-| recurso | Filtrar por tipo de dados de uso que você deseja (registro versus redefinição). Por exemplo: `/reports/userCredentialUsageDetails?$filter=feature eq 'registration'`. Operadores de filtro com suporte: `eq` |
-| userDisplayName | Filtrar pelo nome de exibição do usuário. Por exemplo: `/reports/userCredentialUsageDetails?$filter=userDisplayName eq 'Contoso'`. Operadores de filtro com suporte: `eq` e `startswith()` . Dá suporte a maiúsculas e minúsculas. |
-| userPrincipalName  | Filtrar pelo nome principal do usuário. Por exemplo: `/reports/userCredentialUsageDetails?$filter=userPrincipalName eq 'Contoso'`.    Operadores de filtro com suporte: `eq` e `startswith()` . Dá suporte a maiúsculas e minúsculas. |
+| feature | Filtrar por tipo de dados de uso que você deseja (registro versus redefinição). Por exemplo: `/reports/userCredentialUsageDetails?$filter=feature eq 'registration'`. Operadores de filtro com suporte: `eq` |
+| userDisplayName | Filtrar pelo nome de exibição do usuário. Por exemplo: `/reports/userCredentialUsageDetails?$filter=userDisplayName eq 'Contoso'`. Operadores de filtro com suporte: `eq` e `startswith()` . Oferece suporte a maiúsculas e minúsculas. |
+| userPrincipalName  | Filtrar pelo nome principal do usuário. Por exemplo: `/reports/userCredentialUsageDetails?$filter=userPrincipalName eq 'Contoso'`.    Operadores de filtro com suporte: `eq` e `startswith()` . Oferece suporte a maiúsculas e minúsculas. |
 | isSuccess | Filtrar por status da atividade. Por exemplo: `/reports/userCredentialUsageDetails?$filter=isSuccess eq true`. Operadores de filtro com suporte: `eq` e `orderby` . |
 | authMethod  | Filtrar pelos métodos de autenticação que usam durante o registro. Por exemplo: `/reports/userCredentialUsageDetails?$filter=authMethod eq microsoft.graph.usageAuthMethod'email'`. Operadores de filtro com suporte: `eq` . |
-| failureReason | Filtrar por motivo de falha (se a atividade tiver falhado). Por exemplo: `/reports/userCredentialUsageDetails?$filter=failureReason eq 'Contoso'`. Operadores de filtro com suporte: `eq` e `startswith()` . Dá suporte a maiúsculas e minúsculas. |
+| failureReason | Filtrar por motivo de falha (se a atividade tiver falhado). Por exemplo: `/reports/userCredentialUsageDetails?$filter=failureReason eq 'Contoso'`. Operadores de filtro com suporte: `eq` e `startswith()` . Oferece suporte a maiúsculas e minúsculas. |
 
 
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
@@ -119,7 +119,6 @@ Este é um exemplo de resposta.
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 258
 
 {
   "@odata.context":"https://graph.microsoft.com/beta/reports/$metadata#Collection(microsoft.graph.getUserCredentialUsageDetails)",

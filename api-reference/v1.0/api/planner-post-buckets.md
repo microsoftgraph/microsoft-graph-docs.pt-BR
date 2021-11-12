@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: TarkanSevilmis
 ms.prod: planner
 doc_type: apiPageType
-ms.openlocfilehash: 5b65da54349992bf46e6fcb2488969c8b85e9134
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 1964e8d34eca3214fb53157f4f0da9cb56d4ea58
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59104898"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60928151"
 ---
 # <a name="create-plannerbucket"></a>Criar plannerBucket
 
@@ -59,7 +59,6 @@ Este é um exemplo da solicitação.
 ```http
 POST https://graph.microsoft.com/v1.0/planner/buckets
 Content-type: application/json
-Content-length: 92
 
 {
   "name": "Advertising",
@@ -96,7 +95,6 @@ Aqui está um exemplo da resposta. Observação: o objeto de resposta mostrado a
 ```http
 HTTP/1.1 201 Created
 Content-type: application/json
-Content-length: 145
 
 {
   "name": "Advertising",

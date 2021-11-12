@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 doc_type: apiPageType
 ms.prod: governance
 author: carolinetempleton
-ms.openlocfilehash: 35f167b7959261fe9fd15ae05c36300ff9168391
-ms.sourcegitcommit: c7ff992ef63e480d070421ba99b28ee129cb6acb
+ms.openlocfilehash: f6655fa1e710f07f32d7c65f41b6ebb4445520ad
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "60695787"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60939312"
 ---
 # <a name="get-privilegedroleassignment"></a>Get privilegedRoleAssignment
 
@@ -93,7 +93,6 @@ Aqui está um exemplo da resposta. Observação: o objeto de resposta mostrado a
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 184
 
 {
   "id": "id-value",

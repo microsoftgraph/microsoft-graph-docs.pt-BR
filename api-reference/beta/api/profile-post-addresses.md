@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: kevinbellinger
 ms.prod: people
 doc_type: apiPageType
-ms.openlocfilehash: 0310b12d284b3ed3f9b20bc979e5b22dfafb8c34
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: a9757652bbe852e0b22825eac9ea8a3b6a2e1d31
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59126151"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60938445"
 ---
 # <a name="create-addresses"></a>Criar endereços
 Namespace: microsoft.graph
@@ -50,7 +50,7 @@ A tabela a seguir mostra as propriedades que são possíveis de definir ao criar
 
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|allowedAudiences|Cadeia de Caracteres|As audiências que são capazes de ver os valores contidos na entidade. Herdado [do itemFacet](../resources/itemfacet.md). Os valores possíveis são: `me`, `family`, `contacts`, `groupMembers`, `organization`, `federatedOrganizations`, `everyone`, `unknownFutureValue`.|
+|allowedAudiences|Cadeia de caracteres|As audiências que são capazes de ver os valores contidos na entidade. Herdado [do itemFacet](../resources/itemfacet.md). Os valores possíveis são: `me`, `family`, `contacts`, `groupMembers`, `organization`, `federatedOrganizations`, `everyone`, `unknownFutureValue`.|
 |detail|[physicalAddress](../resources/physicaladdress.md)|Detalhes sobre o endereço em si.|
 |displayName|Cadeia de caracteres|Nome amigável que o usuário atribuiu a esse endereço. |
 |geoCoordinates|[geoCoordinates](../resources/geocoordinates.md)|As geocoordinações do endereço.|
@@ -71,7 +71,6 @@ Se tiver êxito, este método retornará um código `201 Created` de resposta e 
 ``` http
 POST https://graph.microsoft.com/beta/me/profile/addresses
 Content-Type: application/json
-Content-length: 497
 
 {
   "displayName": "Home",

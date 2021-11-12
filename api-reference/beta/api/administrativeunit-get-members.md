@@ -2,15 +2,15 @@
 title: Obter um membro
 description: Use essa API para obter um membro específico (usuário ou grupo) em uma unidade administrativa.
 author: DougKirschner
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: 7db3137c8e1862d0b5c8ebf42c8e8a0efac65f27
-ms.sourcegitcommit: 979fe005c74eb99cd971df6b9511b2d3f7fe3cd4
+ms.openlocfilehash: a6355465e00e6d39cc1b8d34182c234131de2120
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/17/2021
-ms.locfileid: "52991985"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60940047"
 ---
 # <a name="get-a-member"></a>Obter um membro
 
@@ -20,14 +20,14 @@ Namespace: microsoft.graph
 
 Use essa API para obter um membro específico (usuário ou grupo) em uma unidade administrativa.
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegada (conta corporativa ou de estudante) | AdministrativeUnit.Read.All, Directory.Read.All, AdministrativeUnit.ReadWrite.All, Directory.ReadWrite.All, Directory.AccessAsUser.All    |
-|Delegado (conta pessoal da Microsoft) | Sem suporte.    |
+|Delegado (conta corporativa ou de estudante) | AdministrativeUnit.Read.All, Directory.Read.All, AdministrativeUnit.ReadWrite.All, Directory.ReadWrite.All, Directory.AccessAsUser.All    |
+|Delegada (conta pessoal da Microsoft) | Sem suporte.    |
 |Aplicativo | AdministrativeUnit.Read.All, Directory.Read.All, AdministrativeUnit.ReadWrite.All, Directory.ReadWrite.All |
 
 ## <a name="http-request"></a>Solicitação HTTP
@@ -56,12 +56,11 @@ GET https://graph.microsoft.com/beta/administrativeUnits/{id}/members/{id}
 ```
 
 ##### <a name="response"></a>Resposta
-Aqui está um exemplo da respone. Observação: o objeto de resposta exibido aqui pode ser encurtado para legibilidade.
+Aqui está um exemplo da respone. Observação: o objeto de resposta mostrado aqui pode ser encurtado para legibilidade.
 
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 100
 
 {
   "@odata.type":"#microsoft.graph.user",

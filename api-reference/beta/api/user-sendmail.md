@@ -2,15 +2,15 @@
 title: Enviar email
 description: Enviar a mensagem especificada no corpo da solicitação usando o formato JSON ou MIME.
 author: abheek-das
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: eb97568e946bf1b145391c7c875500b05a3b93a6
-ms.sourcegitcommit: 503c72036c376a30e08c29df8e7730a7afcab66e
+ms.openlocfilehash: 38995048c71876a3e0ec05cc7eb586c347b1973e
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/10/2021
-ms.locfileid: "52868886"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60935218"
 ---
 # <a name="send-mail"></a>Enviar email
 
@@ -86,7 +86,6 @@ Aqui está um exemplo da solicitação para criar e enviar uma mensagem em tempo
 ```http
 POST https://graph.microsoft.com/beta/me/sendMail
 Content-type: application/json
-Content-length: 512
 
 {
   "message": {
@@ -153,7 +152,6 @@ O próximo exemplo mostra uma mensagem do usuário in-lo como Samantha Booth. A 
 ```http
 POST https://graph.microsoft.com/beta/me/sendMail
 Content-type: application/json
-Content-length: 344
 
 {
   "Message": {

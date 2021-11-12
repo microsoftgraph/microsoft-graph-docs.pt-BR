@@ -2,34 +2,32 @@
 title: Atualizar o printershare
 description: Atualize as propriedades do compartilhamento de impressora. Esse método pode ser usado para "trocar" impressoras.
 author: nilakhan
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: cloud-printing
 doc_type: apiPageType
-ms.openlocfilehash: 991364b3d1900fc99c41cfb55a2e26cff505167d
-ms.sourcegitcommit: 40947e6f4337c8c4193d85bb862e15f67263e1e7
+ms.openlocfilehash: 977e07f5603649e9a55f6b278af55c48fc76640c
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/13/2021
-ms.locfileid: "50776820"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60945072"
 ---
 # <a name="update-printershare"></a>Atualizar printerShare
 Namespace: microsoft.graph
-
-[!INCLUDE [cloudprinting-pricing-disclaimer](../../includes/cloudprinting-pricing-disclaimer.md)]
 
 Atualize as propriedades de um compartilhamento de impressora. Esse método pode ser usado para trocar [impressoras](../resources/printer.md).
 
 Por exemplo, se um dispositivo de impressora física [](../resources/printer.md) quebra, um administrador pode registrar um novo dispositivo de impressora e atualizar essa [impressoraShare](../resources/printerShare.md) para apontar para a nova impressora sem exigir que os usuários tomem qualquer ação.
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 Além das permissões a seguir, o usuário ou locatário do aplicativo deve ter uma assinatura de Impressão Universal ativa. O usuário inscreveu deve ser um [Administrador de Impressora.](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#printer-administrator)
 
 |Tipo de permissão | Permissões (da com menos para a com mais privilégios) |
 |:---------------|:--------------------------------------------|
-|Delegada (conta corporativa ou de estudante)| PrinterShare.ReadWrite.All |
-|Delegado (conta pessoal da Microsoft)|Sem suporte.|
+|Delegado (conta corporativa ou de estudante)| PrinterShare.ReadWrite.All |
+|Delegada (conta pessoal da Microsoft)|Sem suporte.|
 |Aplicativo|Sem suporte.|
 
 ## <a name="http-request"></a>Solicitação HTTP
@@ -56,8 +54,8 @@ As seguintes propriedades podem ser atualizadas:
 | Propriedade     | Tipo        | Descrição |
 |:-------------|:------------|:------------|
 |impressora|microsoft.graph.printer|A impressora à que essa impressora está relacionada. Use a sintaxe conforme mostrado no exemplo a seguir para atualizar a impressora à qual esse compartilhamento de impressora `printer@odata.bind` está associado.|
-|displayName|String|O nome do compartilhamento de impressora que os clientes de impressão devem exibir.|
-|allowAllUsers|Booliano| Se for true, todos os usuários e grupos terão acesso a esse compartilhamento de impressora. Isso sobressalta as listas de permissão definidas pelas propriedades de navegação allowedUsers e allowedGroups.|
+|displayName|Cadeia de caracteres|O nome do compartilhamento de impressora que os clientes de impressão devem exibir.|
+|allowAllUsers|Boolean| Se for true, todos os usuários e grupos terão acesso a esse compartilhamento de impressora. Isso sobressalta as listas de permissão definidas pelas propriedades de navegação allowedUsers e allowedGroups.|
 
 ## <a name="response"></a>Resposta
 
@@ -76,7 +74,6 @@ Se tiver êxito, este método retornará um código de resposta e um `200 OK` ob
 ``` http
 PATCH https://graph.microsoft.com/v1.0/print/shares/{printerShareId}
 Content-Type: application/json
-Content-length: 509
 
 {
   "displayName": "PrinterShare Name",

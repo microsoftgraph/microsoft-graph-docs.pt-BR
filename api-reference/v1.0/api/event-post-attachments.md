@@ -5,12 +5,12 @@ author: svpsiva
 ms.localizationpriority: medium
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 99141257bf507b1c00ade38993c641e1867bee73
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 5b9113a47ab0f35ef057502661caf4ce323afe71
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59100180"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60943799"
 ---
 # <a name="add-attachment"></a>Adicionar anexo
 
@@ -88,7 +88,6 @@ Este é um exemplo da solicitação.
 ```http
 POST https://graph.microsoft.com/v1.0/me/events/AAMkAGI1AAAt9AHjAAA=/attachments
 Content-type: application/json
-Content-length: 151
 
 {
     "@odata.type": "#microsoft.graph.fileAttachment",
@@ -160,7 +159,6 @@ Eis um exemplo que anexa um evento com outro evento como um anexo de item.
 ```http
 POST https://graph.microsoft.com/v1.0/me/events/AAMkAGI1AAAt9AHjAAA=/attachments
 Content-type: application/json
-Content-length: 600
 
 {
   "@odata.type": "#microsoft.graph.itemAttachment",
@@ -214,7 +212,6 @@ Veja a seguir um exemplo da resposta.
 ```http
 HTTP 201 Created
 Content-type: application/json
-Content-length: 162
 
 {
     "@odata.context":"https://graph.microsoft.com/v1.0/$metadata#me/events('AAMkAGI1AAAt9AHjAAA=')/attachments/$entity",

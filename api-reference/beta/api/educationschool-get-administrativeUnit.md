@@ -1,16 +1,16 @@
 ---
 title: Obter administrativeUnit
 description: Recupere o diretório **simples administrativeUnit** que corresponde a este **educationSchool**.
-localization_priority: Normal
+ms.localizationpriority: medium
 author: mmast-msft
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: e3e619f67839f4ed733b87bf00d11da010330518
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: 6ae0e7a6bb949958090f80f17e50b89f434b6693
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52043441"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60939676"
 ---
 # <a name="get-administrativeunit"></a>Obter administrativeUnit
 
@@ -28,8 +28,8 @@ Uma combinação de permissões é obrigatória para chamar essa API. Para saber
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
 |:--------------------|:---------------------------------------------------------|
 |Delegado (conta corporativa ou de estudante) |  Uma de EduRoster.ReadBasic, EduRoster.Read, EduRoster.Write além de Directory.Read.All|
-|Delegado (conta pessoal da Microsoft) |  Sem suporte.  |
-|Application | EduRoster.Read.All, EduRoster.ReadWrite.All além de Directory.Read.All| 
+|Delegada (conta pessoal da Microsoft) |  Sem suporte.  |
+|Aplicativo | EduRoster.Read.All, EduRoster.ReadWrite.All além de Directory.Read.All| 
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- { "blockType": "ignored" } -->
@@ -89,7 +89,6 @@ Este é um exemplo de resposta.
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 134
 
 {
   "displayName": "displayName-value",

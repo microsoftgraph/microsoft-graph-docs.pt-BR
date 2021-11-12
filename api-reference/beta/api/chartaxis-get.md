@@ -2,15 +2,15 @@
 title: Obter workbookChartAxis
 description: Recupere as propriedades e as relações do objeto workbookChartAxis.
 author: lumine2008
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: excel
 doc_type: apiPageType
-ms.openlocfilehash: eb4922d56ac1115769e1f891a42a74833fca06e0
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: 11d5815c0c97511ba66931766cff3ef74d23ac36
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52047487"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60946332"
 ---
 # <a name="get-workbookchartaxis"></a>Obter workbookChartAxis
 
@@ -84,7 +84,7 @@ GET https://graph.microsoft.com/beta/me/drive/items/{id}/workbook/worksheets/{id
 ---
 
 ##### <a name="response"></a>Resposta
-Veja a seguir um exemplo da resposta. Observação: o objeto de resposta mostrado aqui pode ser encurtado para legibilidade.
+Aqui está um exemplo da resposta. Observação: o objeto de resposta mostrado aqui pode ser reduzido para facilitar a leitura.
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -93,7 +93,6 @@ Veja a seguir um exemplo da resposta. Observação: o objeto de resposta mostrad
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 64
 
 {
   "majorUnit": "string",

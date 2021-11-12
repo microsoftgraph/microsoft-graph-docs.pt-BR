@@ -5,12 +5,12 @@ author: namkedia
 ms.localizationpriority: medium
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: 175c2f05335494f876a0f0121d9777d87013184b
-ms.sourcegitcommit: 08e9b0bac39c1b1d2c8a79539d24aaa93364baf2
+ms.openlocfilehash: 5038eebdc83c242ffce20668b1eb906f032e006f
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/24/2021
-ms.locfileid: "59763892"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60947668"
 ---
 # <a name="create-externaldomainname"></a>Criar externalDomainName
 Namespace: microsoft.graph
@@ -25,7 +25,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
 |:--------------------|:---------------------------------------------------------|
 |Delegado (conta corporativa ou de estudante)|Domain.ReadWrite.All|
-|Delegado (conta pessoal da Microsoft)| Sem suporte.|
+|Delegada (conta pessoal da Microsoft)| Sem suporte.|
 |Aplicativo|Domain.ReadWrite.All|
 
 A conta de trabalho ou de estudante precisa pertencer a uma das seguintes [funções Azure Active Directory (Azure AD)](/azure/active-directory/roles/permissions-reference):
@@ -80,7 +80,6 @@ Se tiver êxito, este método retornará um código de resposta e um `201 Create
 ``` http
 POST https://graph.microsoft.com/beta/directory/federationConfigurations/d5a56845-6845-d5a5-4568-a5d54568a5d5/microsoft.graph.samlOrWsFedExternalDomainFederation/domains
 Content-Type: application/json
-Content-length: 60
 
 {
     "@odata.type": "microsoft.graph.externalDomainName",

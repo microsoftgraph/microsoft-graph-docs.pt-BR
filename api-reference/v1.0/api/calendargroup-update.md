@@ -5,12 +5,12 @@ author: harini84
 ms.localizationpriority: medium
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 3b2c900cc6649ed8780d0434de8f27a4282b6e2a
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 09b4dd2198b32f73ffce4db7b72f8fa0e2c20d67
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59038396"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60925955"
 ---
 # <a name="update-calendargroup"></a>Atualizar calendargroup
 
@@ -74,7 +74,6 @@ Este é um exemplo da solicitação.
 ```http
 PATCH https://graph.microsoft.com/v1.0/me/calendarGroups/{id}
 Content-type: application/json
-Content-length: 30
 
 {
   "name": "name-value"
@@ -112,7 +111,6 @@ Aqui está um exemplo da resposta. Observação: o objeto de resposta mostrado a
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 110
 
 {
   "name": "name-value",

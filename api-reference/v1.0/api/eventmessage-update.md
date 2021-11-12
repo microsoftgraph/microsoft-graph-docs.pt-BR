@@ -5,12 +5,12 @@ author: harini84
 ms.localizationpriority: medium
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 094d2a91892e335230acb0225fdba81d423af2d1
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: b6bcea426c1e1eec89c1077bb39a49b204b271eb
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59140735"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60931696"
 ---
 # <a name="update-eventmessage"></a>Atualizar eventMessage
 
@@ -66,7 +66,6 @@ Este é um exemplo da solicitação.
 ```http
 PATCH https://graph.microsoft.com/v1.0/me/messages/{id}
 Content-type: application/json
-Content-length: 248
 
 {
   "isRead": true,
@@ -100,7 +99,6 @@ Aqui está um exemplo da resposta. Observação: o objeto de resposta mostrado a
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 248
 
 {
   "receivedDateTime": "datetime-value",

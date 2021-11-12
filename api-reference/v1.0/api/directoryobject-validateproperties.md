@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: keylimesoda
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: 13bb77e048d0d28c272cb6b067957b451212e857
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: a17e3fa523f1cf63c1d25b3b42fac172e62b589c
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59046329"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60937388"
 ---
 # <a name="directoryobject-validateproperties"></a>directoryObject: validateProperties
 
@@ -80,7 +80,6 @@ Este é um exemplo de uma solicitação de validação bem-sucedida.
 ``` http
 POST https://graph.microsoft.com/v1.0/directoryObjects/validateProperties
 Content-type: application/json
-Content-length: 164
 
 {
   "entityType": "Group",
@@ -125,7 +124,6 @@ Este é um exemplo de uma solicitação com erros de validação.
 ```http
 POST https://graph.microsoft.com/v1.0/directoryObjects/validateProperties
 Content-type: application/json
-Content-length: 164
 
 {
   "entityType": "Group",

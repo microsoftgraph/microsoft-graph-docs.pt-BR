@@ -1,16 +1,16 @@
 ---
 title: Adicionar identityProvider a um b2cIdentityUserFlow (preterido)
 description: Adicione identityProvider a um b2cIdentityUserFlow. (preterido)
-localization_priority: Normal
+ms.localizationpriority: medium
 doc_type: apiPageType
 author: namkedia
 ms.prod: identity-and-sign-in
-ms.openlocfilehash: 9a5591465329d879a4a1bd3e4b0028cad2b6cdef
-ms.sourcegitcommit: 486fe9c77d4d89c5416bb83e8c716e6918c47370
+ms.openlocfilehash: 0afbf31d1323660db9976ac69e2a4afe405b4923
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/15/2021
-ms.locfileid: "53439732"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60939837"
 ---
 # <a name="add-identityprovider-to-a-b2cidentityuserflow-deprecated"></a>Adicionar identityProvider a um b2cIdentityUserFlow (preterido)
 
@@ -21,13 +21,13 @@ Namespace: microsoft.graph
 
 Adicione provedores de identidade em um [objeto b2cIdentityUserFlow.](../resources/b2cidentityuserflow.md)
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>Permissões
 
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegada (conta corporativa ou de estudante)|IdentityUserFlow.ReadWrite.All|
+|Delegado (conta corporativa ou de estudante)|IdentityUserFlow.ReadWrite.All|
 |Delegada (conta pessoal da Microsoft)| Sem suporte.|
 |Aplicativo| IdentityUserFlow.ReadWrite.All|
 
@@ -76,7 +76,6 @@ Este é um exemplo de solicitação.
 ``` http
 POST https://graph.microsoft.com/beta/identity/b2cUserFlows/{id}/identityProviders/$ref
 Content-type: application/json
-Content-length: 30
 
 {
   "@odata.id": "https://graph.microsoft.com/beta/identityProviders/{id}"

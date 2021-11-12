@@ -2,15 +2,15 @@
 title: Criar printerShare
 description: Cria um novo compartilhamento de impressora para a impressora especificada.
 author: braedenp-msft
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: universal-print
 doc_type: apiPageType
-ms.openlocfilehash: 57d755532e2e56934f32aaa0940504073eef7473
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: 9555798c9ec513400bacd2a673fb3fd40dabe260
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52053626"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60946682"
 ---
 # <a name="create-printershare"></a>Criar printerShare
 
@@ -28,8 +28,8 @@ Para usar o serviço Impressão Universal, o usuário ou locatário do aplicativ
 |Tipo de permissão | Permissões (da com menos para a com mais privilégios) |
 |:---------------|:--------------------------------------------|
 |Delegado (conta corporativa ou de estudante)| PrinterShare.ReadWrite.All |
-|Delegado (conta pessoal da Microsoft)|Sem suporte.|
-|Application|Sem suporte.|
+|Delegada (conta pessoal da Microsoft)|Sem suporte.|
+|Aplicativo|Sem suporte.|
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- { "blockType": "ignored" } -->
@@ -49,8 +49,8 @@ A tabela a seguir mostra as propriedades que podem ser fornecidas ao criar [a pr
 
 |Propriedade|Tipo|Descrição|Obrigatório?|
 |:---|:---|:---|:---|
-|printer|microsoft.graph.printer|A impressora à que essa impressora está relacionada. Use a `printer@odata.bind` sintaxe conforme mostrado no exemplo a seguir.|Sim|
-|displayName|String|O nome do compartilhamento de impressora que os clientes de impressão devem exibir. O comprimento máximo permitido é de 50 caracteres.|Sim|
+|impressora|microsoft.graph.printer|A impressora à que essa impressora está relacionada. Use a `printer@odata.bind` sintaxe conforme mostrado no exemplo a seguir.|Sim|
+|displayName|Cadeia de caracteres|O nome do compartilhamento de impressora que os clientes de impressão devem exibir. O comprimento máximo permitido é de 50 caracteres.|Sim|
 |allowAllUsers|Boolean| Se for true, todos os usuários e grupos terão acesso a esse compartilhamento de impressora. Isso sobressalta as listas de permissão definidas pelas propriedades de navegação allowedUsers e allowedGroups.|Não|
 
 ## <a name="response"></a>Resposta
@@ -70,7 +70,6 @@ Este é um exemplo de solicitação.
 ```http
 POST https://graph.microsoft.com/beta/print/shares
 Content-type: application/json
-Content-length: 114
 
 {
   "name": "name-value",
@@ -109,7 +108,6 @@ Este é um exemplo de resposta.
 ```http
 HTTP/1.1 201 Created
 Content-type: application/json
-Content-length: 233
 
 {
     "@odata.context": "https://graph.microsoft.com/beta/$metadata#print/shares/$entity",
