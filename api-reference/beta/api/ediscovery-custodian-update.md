@@ -2,15 +2,15 @@
 title: Atualizar custodiatário
 description: Atualize as propriedades de um objeto custodiante.
 author: mahage-msft
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: ediscovery
 doc_type: apiPageType
-ms.openlocfilehash: 051c7db53f9d949018583fcb2f6a1e44ce2eddb9
-ms.sourcegitcommit: 94c4acf8bd03c10a44b12952b6cb4827df55b978
+ms.openlocfilehash: 026b28a2fcaccd0c685a69c85a6d6ceeef98a734
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/06/2021
-ms.locfileid: "52786009"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60927117"
 ---
 # <a name="update-custodian"></a>Atualizar custodiatário
 
@@ -20,14 +20,14 @@ Namespace: microsoft.graph.ediscovery
 
 Atualize as propriedades de [um objeto custodiante.](../resources/ediscovery-custodian.md)
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>Permissões
 
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão|Permissões (da com menos para a com mais privilégios)|
 |:---|:---|
 |Delegado (conta corporativa ou de estudante)|eDiscovery.Read.All, eDiscovery.ReadWrite.All|
-|Delegado (conta pessoal da Microsoft)|Sem suporte.|
+|Delegada (conta pessoal da Microsoft)|Sem suporte.|
 |Aplicativo|Sem suporte.|
 
 ## <a name="http-request"></a>Solicitação HTTP
@@ -54,7 +54,7 @@ No corpo da solicitação, forneça os valores para os campos relevantes que dev
 
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|applyHoldToSources|Booliano|Identifica se as fontes de um custodiador foram colocadas em espera durante a criação.|
+|applyHoldToSources|Boolean|Identifica se as fontes de um custodiador foram colocadas em espera durante a criação.|
 
 ## <a name="response"></a>Resposta
 
@@ -75,7 +75,6 @@ Se tiver êxito, esta ação retornará um código de resposta `204 No Content`.
 ``` http
 PATCH https://graph.microsoft.com/beta/compliance/ediscovery/cases/2192ca408ea2410eba3bec8ae873be6b/custodians/45454331323337443946343043464239
 Content-Type: application/json
-Content-length: 254
 
 {
   "applyHoldToSources": "false",

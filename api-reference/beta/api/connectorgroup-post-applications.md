@@ -1,16 +1,16 @@
 ---
 title: Atribuir um connectorGroup a um aplicativo
 description: Use essa API para atribuir um connectorGroup a um aplicativo
-localization_priority: Normal
+ms.localizationpriority: medium
 author: japere
 ms.prod: applications
 doc_type: apiPageType
-ms.openlocfilehash: ccf3255a5d8aa7416560848a0915cdb78aa77764
-ms.sourcegitcommit: 94c4acf8bd03c10a44b12952b6cb4827df55b978
+ms.openlocfilehash: c27d659b8235dde9977db8e1fcf4c08d3fc5231a
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/06/2021
-ms.locfileid: "52786149"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60945709"
 ---
 # <a name="assign-a-connectorgroup-to-an-application"></a>Atribuir um connectorGroup a um aplicativo
 
@@ -20,13 +20,13 @@ Namespace: microsoft.graph
 
 Atribua um [connectorGroup](../resources/connectorgroup.md) a um [aplicativo](../resources/application.md).
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
 |:--------------------|:---------------------------------------------------------|
 |Delegado (conta corporativa ou de estudante) | Directory.ReadWrite.All, Directory.AccessAsUser.All    |
-|Delegado (conta pessoal da Microsoft) | Sem suporte.    |
+|Delegada (conta pessoal da Microsoft) | Sem suporte.    |
 |Aplicativo | Sem suporte.  |
 
 ## <a name="http-request"></a>Solicitação HTTP
@@ -60,7 +60,6 @@ Este é um exemplo de solicitação.
 ```http
 PUT https://graph.microsoft.com/beta/applications/{id}/connectorGroup/$ref
 Content-type: application/json
-Content-length: 30
 
 {
   "@odata.id": "https://graph.microsoft.com/onPremisesPublishingProfiles/applicationproxy/connectorGroups/{id}"

@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: jpettere
 ms.prod: users
 doc_type: apiPageType
-ms.openlocfilehash: 5a1a31684aadd660ff2d85a21db5a6a710cc629a
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 77e70ff78b718b4f2a40c03cf299e6ff227512b6
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59090002"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60946920"
 ---
 # <a name="user-exportpersonaldata"></a>user: exportPersonalData
 
@@ -24,7 +24,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
 |:--------------------|:---------------------------------------------------------|
 |Delegado (conta corporativa ou de estudante) |  User.Export.All, User.Read.All  |
-|Delegado (conta pessoal da Microsoft) |  Não aplicável  |
+|Delegada (conta pessoal da Microsoft) |  Não aplicável  |
 |Aplicativo | User.Export.All, User.Read.All |
 
 >**Observação:** A exportação só pode ser executada por um administrador da empresa quando as permissões delegadas são usadas.
@@ -66,7 +66,6 @@ Se bem-sucedido, este método retorna um código de resposta `202 Accepted`. Nã
 ```http
 POST https://graph.microsoft.com/v1.0/users/{id}/exportPersonalData
 Content-type: application/json
-Content-length: 48
 
 {
   "storageLocation": "storageLocation-value"

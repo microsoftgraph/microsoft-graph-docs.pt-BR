@@ -5,12 +5,12 @@ author: harini84
 ms.localizationpriority: medium
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 34b581453cd413d819ca474e4550a2d00ec155ba
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 14225947dee3870c473c2b2d595ff654c72051d9
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59095186"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60937297"
 ---
 # <a name="event-accept"></a>event: accept
 
@@ -73,7 +73,6 @@ Este é um exemplo da solicitação.
 ```http
 POST https://graph.microsoft.com/v1.0/me/events/{id}/accept
 Content-type: application/json
-Content-length: 56
 
 {
   "comment": "comment-value",

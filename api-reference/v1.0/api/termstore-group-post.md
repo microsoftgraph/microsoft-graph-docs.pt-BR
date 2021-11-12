@@ -5,12 +5,12 @@ author: vishriv
 ms.localizationpriority: medium
 ms.prod: taxonomy
 doc_type: apiPageType
-ms.openlocfilehash: 4e0a9a5a3228f4e45561cdd54bdbebc696ab89f2
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: ff08b50016ff40065ec09c462f6f14bd6d8face4
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59104632"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60947448"
 ---
 # <a name="create-termstore-group"></a>Criar grupo termStore
 Namespace: microsoft.graph.termStore
@@ -22,7 +22,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 |Tipo de permissão|Permissões (da com menos para a com mais privilégios)|
 |:---|:---|
-|Delegada (conta corporativa ou de estudante) |TermStore.ReadWrite.All |
+|Delegado (conta corporativa ou de estudante) |TermStore.ReadWrite.All |
 |Delegada (conta pessoal da Microsoft) | Sem suporte.    |
 |Aplicativo | Sem suporte. |
 
@@ -44,7 +44,7 @@ POST sites/{site-id}/termStore/groups
 |Content-Type|application/json. Obrigatório.|
 
 ## <a name="request-body"></a>Corpo da solicitação
-No corpo da solicitação, fornece uma representação JSON do [objeto group.](../resources/termstore-group.md)
+No corpo da solicitação, forneça uma representação JSON do objeto de [grupo](../resources/termstore-group.md).
 
 A tabela a seguir mostra as propriedades que são necessárias ao criar o [objeto group.](../resources/termstore-group.md)
 
@@ -69,7 +69,6 @@ Se tiver êxito, este método retornará um código de `201 Created` resposta e 
 ``` http
 POST https://graph.microsoft.com/v1.0/sites/microsoft.sharepoint.com,b9b0bc03-cbc4-40d2-aba9-2c9dd9821ddf,6a742cee-9216-4db5-8046-13a595684e74/termStore/groups
 Content-Type: application/json
-Content-length: 135
 
 {
   "displayName" : "myGroup"

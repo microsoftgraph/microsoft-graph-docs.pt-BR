@@ -2,15 +2,15 @@
 author: JeremyKelley
 description: Você pode usar a ação createLink para compartilhar um DriveItem por meio de um link de compartilhamento.
 title: 'driveItem: createLink'
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: sharepoint
 doc_type: apiPageType
-ms.openlocfilehash: e65cdc780b5c38441471dd14292f0420bf0ca629
-ms.sourcegitcommit: 979fe005c74eb99cd971df6b9511b2d3f7fe3cd4
+ms.openlocfilehash: bfa70cc4deb1062c2efc4d354b8787e9f607a8e9
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/17/2021
-ms.locfileid: "52990725"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60944141"
 ---
 # <a name="driveitem-createlink"></a>driveItem: createLink
 
@@ -58,7 +58,7 @@ A solicitação deve ser um objeto JSON com as seguintes propriedades.
 
 |   Propriedade                 |  Tipo  |                                 Descrição                                                               |
 | :----------------------| :----- | :---------------------------------------------------------------------------------------------------------|
-|tipo|Cadeia de caracteres|Optional.O tipo de link de compartilhamento a ser criado.   |
+|type|Cadeia de caracteres|Optional.O tipo de link de compartilhamento a ser criado.   |
 |escopo|String|Opcional. O escopo do link a ser criado. Anônimos, organização ou usuários.|
 |expirationDateTime|DateTimeOffset|Opcional. Uma cadeia de caracteres com formato de yyyy-MM-ddTHH:mm:ssZ de DateTime indica o tempo de expiração da permissão.|
 |password|String|Optional.A senha do link de compartilhamento que é definido pelo criador.|
@@ -86,7 +86,7 @@ Os seguintes valores são permitidos para o parâmetro **scope**.
 | Valor          | Descrição
 |:---------------|:------------------------------------------------------------
 | anonymous    | Qualquer pessoa com o link tem acesso, sem precisar fazer logon. Isso pode incluir pessoas de fora da organização. O suporte para links anônimos pode ser desativado por um administrador.
-| organization | Qualquer pessoa que tenha feito logon em sua organização (locatário) pode usar o link para obter acesso. Disponível apenas no OneDrive for Business e no SharePoint.
+| organização | Qualquer pessoa que tenha feito logon em sua organização (locatário) pode usar o link para obter acesso. Disponível apenas no OneDrive for Business e no SharePoint.
 | usuários        | Pessoas específicas no conjunto de destinatários podem usar o link para obter acesso. Disponível apenas no OneDrive for Business e no SharePoint.
 
 ## <a name="response"></a>Resposta
@@ -111,7 +111,6 @@ O link de compartilhamento é configurado como somente leitura e utilizável por
 ```http
 POST /me/drive/items/{itemId}/createLink
 Content-Type: application/json
-Content-length: 212
 
 {
   "type": "view",

@@ -2,15 +2,15 @@
 title: Atualizar taskDefinition
 description: Atualize uma definição de tarefa.
 author: braedenp-msft
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: universal-print
 doc_type: apiPageType
-ms.openlocfilehash: 5923c66eca2da9f2f2016434cfd0d92a0cfa7bef
-ms.sourcegitcommit: 412507a3c3a8e407fcc43b7cd227d4db35791f58
+ms.openlocfilehash: ec3341b99b3bcc0c36b3122350a5a7aa937c3188
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2021
-ms.locfileid: "51766487"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60946668"
 ---
 # <a name="update-taskdefinition"></a>Atualizar taskDefinition
 
@@ -50,7 +50,7 @@ No corpo da solicitação, fornece os valores para os campos [printTaskDefinitio
 
 | Propriedade     | Tipo        | Descrição |
 |:-------------|:------------|:------------|
-|displayName|String|O nome da printTaskDefinition.|
+|displayName|Cadeia de caracteres|O nome da printTaskDefinition.|
 |createdBy|Cadeia de caracteres|Informações sobre o aplicativo que criou a definição de tarefa. Somente a `createdBy.displayName` propriedade pode ser atualizada.|
 
 ## <a name="response"></a>Resposta
@@ -68,7 +68,6 @@ Este é um exemplo de solicitação.
 ```msgraph-interactive
 PATCH https://graph.microsoft.com/beta/print/taskDefinitions/fab143fd-ee61-4358-8558-2c7dee953982
 Content-type: application/json
-Content-length: 122
 
 {
   "displayName": "Test TaskDefinitionName",

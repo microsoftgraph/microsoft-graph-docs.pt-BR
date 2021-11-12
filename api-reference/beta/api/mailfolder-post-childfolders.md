@@ -2,15 +2,15 @@
 title: Criar pasta filho
 description: Use essa API para criar um novo mailFolder filho.
 author: abheek-das
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 312d26d32b49c9ccc14e6f83a4c1cb6392cdd8b5
-ms.sourcegitcommit: 276a13a37c3772689dfc71f7cd47586c9581f27d
+ms.openlocfilehash: e3e1b0d911fb440c3128f826d15087a5f9f62ffa
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/24/2021
-ms.locfileid: "52629172"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60935848"
 ---
 # <a name="create-child-folder"></a>Criar pasta filho
 
@@ -22,7 +22,7 @@ Use essa API para criar um novo [mailFolder filho.](../resources/mailfolder.md)
 
 Se você pretende que uma nova pasta seja oculta, você deve definir a **propriedade isHidden** como `true` na criação.
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>Permissões
 
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
@@ -57,7 +57,7 @@ Forneça um objeto JSON com os seguintes parâmetros no corpo da solicitação. 
 | Parâmetro | Tipo | Descrição |
 |:----------|:-----|:------------|
 |displayName|Cadeia de caracteres|O nome de exibição da nova pasta.|
-|isHidden|Booliano|Indica se a nova pasta está oculta. O valor padrão é `false`. A configuração da propriedade é opcional. Depois de definido, você não pode atualizar essa propriedade. Confira mais informações em [Pastas de email ocultas](../resources/mailfolder.md#hidden-mail-folders)|
+|IsHidden|Booleano|Indica se a nova pasta está oculta. O valor padrão é `false`. A configuração da propriedade é opcional. Depois de definido, você não pode atualizar essa propriedade. Confira mais informações em [Pastas de email ocultas](../resources/mailfolder.md#hidden-mail-folders)|
 
 ## <a name="response"></a>Resposta
 
@@ -78,7 +78,6 @@ Este é um exemplo de solicitação.
 ```http
 POST https://graph.microsoft.com/beta/me/mailFolders/{id}/childFolders
 Content-type: application/json
-Content-length: 159
 
 {
   "displayName": "displayName-value",
@@ -118,7 +117,6 @@ Este é um exemplo de resposta.
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 179
 
 {
   "displayName": "displayName-value",

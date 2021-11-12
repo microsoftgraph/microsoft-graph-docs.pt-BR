@@ -1,18 +1,18 @@
 ---
 title: Criar identityProvider
 description: Crie um novo objeto identityProvider.
-localization_priority: Normal
+ms.localizationpriority: medium
 doc_type: apiPageType
 author: namkedia
 ms.prod: identity-and-sign-in
-ms.openlocfilehash: 5fe99410b965f6cabae171c713a7207fc2c7ea18
-ms.sourcegitcommit: 08d47a31c48fd69ae4fcee26e34fdd65ad1ba69f
+ms.openlocfilehash: 58796dbc557559e9a9d35d007782e5f4ba2048e5
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/02/2021
-ms.locfileid: "51508831"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60947710"
 ---
-# <a name="create-identityprovider-deprecated"></a>Criar identityProvider (preterido)
+# <a name="create-identityprovider-deprecated"></a>Criar IdentityProvider (obsoleto)
 
 Namespace: microsoft.graph
 
@@ -21,7 +21,7 @@ Namespace: microsoft.graph
 
 Crie um novo [objeto identityProvider.](../resources/identityprovider.md)
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>Permissões
 
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
@@ -58,7 +58,7 @@ No corpo da solicitação, forneça uma representação JSON do [objeto identity
 
 |Propriedade|Tipo|Descrição|
 |:---------------|:--------|:----------|
-|clientId|Cadeia de caracteres|O ID do cliente para o aplicativo. Esta é a ID do cliente obtida ao registrar o aplicativo com o provedor de identidade.|
+|clientId|Cadeia de caracteres|A ID do cliente para o aplicativo. Essa é a ID do cliente obtida ao registrar o aplicativo no provedor de identidade.|
 |clientSecret|Cadeia de caracteres|O segredo do cliente para o aplicativo. Este é o segredo do cliente obtido ao registrar o aplicativo com o provedor de identidade.|
 |nome|Cadeia de caracteres|O nome de exibição exclusivo do provedor de identidade.|
 |tipo|Cadeia de caracteres|A identidade do provedor de identidade. <ul>Para o cenário B2B:<li/>Google<li/>Facebook</ul><ul>Para o cenário B2C:<li/>Microsoft<li/>Google<li/>Amazon<li/>LinkedIn<li/>Facebook<li/>GitHub<li/>Twitter<li/>Weibo<li/>QQ<li/>WeChat<li/>OpenIDConnect</ul>|
@@ -67,12 +67,12 @@ No corpo da solicitação, forneça uma representação JSON do [objeto identity
 
 |Propriedade|Tipo|Descrição|
 |:---------------|:--------|:----------|
-|clientId|Cadeia de caracteres|O ID do cliente para o aplicativo. Esta é a ID do cliente obtida ao registrar o aplicativo com o provedor de identidade.|
+|clientId|Cadeia de caracteres|A ID do cliente para o aplicativo. Essa é a ID do cliente obtida ao registrar o aplicativo no provedor de identidade.|
 |clientSecret|Cadeia de caracteres|O segredo do cliente para o aplicativo. Este é o segredo do cliente obtido ao registrar o aplicativo com o provedor de identidade.|
 |nome|Cadeia de caracteres|O nome de exibição exclusivo do provedor de identidade.|
 |tipo|Cadeia de caracteres|A identidade do provedor de identidade. O valor deve ser `OpenIdConnect` .|
 |claimsMapping|[claimsMapping](../resources/claimsmapping.md)|As `userId` propriedades e são necessárias no objeto `displayname` claimsMapping.|
-|metadataUrl|Cadeia de caracteres|A URL do documento de metadados do provedor de identidade do Open Id Connect.|
+|metadataUrl|Cadeia de caracteres|A URL do documento de metadados do provedor de identidade Conexão ID aberta.|
 |responseMode|Cadeia de caracteres|Define o método que deve ser usado para enviar os dados de volta do provedor de identidade personalizado para o Azure AD B2C. Os seguintes modos de resposta podem ser usados: <ul><li/>`form_post` : Este modo de resposta é recomendado para melhor segurança. A resposta é transmitida por meio do método HTTP POST, com o código ou token sendo codificado no corpo usando o formato application/x-www-form-urlencoded.<li/>`query` : O código ou token é retornado como um parâmetro de consulta.</ul>|
 |responseType|Cadeia de caracteres|Descreve que tipo de informação é enviada de volta na chamada inicial para o authorization_endpoint do provedor de identidade personalizado. Os seguintes tipos de resposta podem ser usados:<ul><li/> `code` : De acordo com o fluxo de código de autorização, um código será retornado para o Azure AD B2C. O Azure AD B2C continua a chamar o token_endpoint para trocar o código pelo token.<li/> `id_token` : Um token de ID é retornado ao Azure AD B2C do provedor de identidade personalizado. <li/>`token` : Um token de acesso é retornado ao Azure AD B2C do provedor de identidade personalizado. (Esse valor não é suportado pelo Azure AD B2C no momento)</ul>|
 |escopo|String|O escopo define as informações e permissões que você está procurando coletar do provedor de identidade personalizado.|
@@ -98,7 +98,6 @@ Este é um exemplo de solicitação.
 ``` http
 POST https://graph.microsoft.com/beta/identityProviders
 Content-type: application/json
-Content-length: 154
 
 {
   "@odata.type": "microsoft.graph.identityProvider",

@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: jewan-microsoft
 ms.prod: onenote
 doc_type: apiPageType
-ms.openlocfilehash: f4ca8d05b6343ca1730b97731e7b0527a4932894
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 32a76bdc59024da3592d458f5054679545b51850
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59072943"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60945135"
 ---
 # <a name="get-onenoteoperation"></a>Obter o onenoteOperation
 
@@ -96,7 +96,6 @@ Aqui está um exemplo da resposta. Observação: o objeto de resposta mostrado a
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 215
 
 {
   "id": "id-value",

@@ -5,12 +5,12 @@ author: kevinbellinger
 ms.localizationpriority: medium
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: c0b67c1b74ae7d5b429eec5c8636e0ad27618ca6
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: a3ffc3c932ca0510b7ed9574ac27d64eaa2057b5
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59147728"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60937395"
 ---
 # <a name="update-contactfolder"></a>Atualizar contactfolder
 
@@ -43,7 +43,7 @@ No corpo da solicitação, forneça os valores para os campos relevantes que dev
 
 | Propriedade     | Tipo   |Descrição|
 |:---------------|:--------|:----------|
-|displayName|String|O nome de exibição da pasta.|
+|displayName|Cadeia de caracteres|O nome de exibição da pasta.|
 |parentFolderId|Cadeia de caracteres|A ID da pasta pai da pasta.|
 
 ## <a name="response"></a>Resposta
@@ -61,7 +61,6 @@ Este é um exemplo da solicitação.
 ```http
 PATCH https://graph.microsoft.com/v1.0/me/contactFolders/{id}
 Content-type: application/json
-Content-length: 84
 
 {
   "parentFolderId": "parentFolderId-value",
@@ -96,7 +95,6 @@ Aqui está um exemplo da resposta. Observação: o objeto de resposta mostrado a
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 104
 
 {
   "parentFolderId": "parentFolderId-value",

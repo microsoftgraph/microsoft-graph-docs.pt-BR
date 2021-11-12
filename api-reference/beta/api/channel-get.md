@@ -5,12 +5,12 @@ author: nkramer
 doc_type: apiPageType
 ms.localizationpriority: medium
 ms.prod: microsoft-teams
-ms.openlocfilehash: 2fccb7af8a89af3dfc7a5d2c909bb135c36b6da7
-ms.sourcegitcommit: f4999aa6fc05f845027db01aa489f7086f9850e1
+ms.openlocfilehash: 4426a28cde06f7718bc35f05e6c093f06f8b3e8a
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/13/2021
-ms.locfileid: "60288472"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60925759"
 ---
 # <a name="get-channel"></a>Obter canal
 
@@ -106,7 +106,6 @@ Veja a seguir um exemplo da resposta.
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 201
 
 {
     "id": "19:561fbdbbfca848a484f0a6f00ce9dbbd@thread.tacv2",
@@ -143,7 +142,7 @@ HTTP/1.1 200 OK
 
 Aqui está um exemplo da resposta para um canal padrão com moderação de canal.
 
->**Observação:** O objeto de resposta mostrado aqui pode ser encurtado para legibilidade.
+>**Observação:** o objeto de resposta mostrado aqui pode ser encurtado para legibilidade.
 
 ```http
 HTTP/1.1 200 OK

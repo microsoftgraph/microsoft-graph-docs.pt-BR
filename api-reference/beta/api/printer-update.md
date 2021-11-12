@@ -2,15 +2,15 @@
 title: Atualização da impressora
 description: Atualize as propriedades de um objeto printer.
 author: braedenp-msft
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: universal-print
 doc_type: apiPageType
-ms.openlocfilehash: 0602c04ab890f773866d8721580c0c099cccbeb4
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: 965f2715ec400d4615ccfc90a4eafb657524a4ea
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52051071"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60946654"
 ---
 # <a name="update-printer"></a>Atualização da impressora
 
@@ -30,8 +30,8 @@ Somente o aplicativo que registrou a impressora tem permissão para atualizar a 
 |Tipo de permissão | Permissões (da com menos para a com mais privilégios) |
 |:---------------|:--------------------------------------------|
 |Delegado (conta corporativa ou de estudante)| Printer.ReadWrite.All, Printer.FullControl.All |
-|Delegado (conta pessoal da Microsoft)|Sem suporte.|
-|Application| Printer.ReadWrite.All |
+|Delegada (conta pessoal da Microsoft)|Sem suporte.|
+|Aplicativo| Printer.ReadWrite.All |
 
 >**Observação:** No momento, somente as impressoras que não têm dispositivo físico podem ser atualizadas usando permissões de aplicativo.
 
@@ -58,7 +58,7 @@ As propriedades a seguir podem ser atualizadas usando permissões delegadas.
 |:-------------|:------------|:------------|
 |defaults|[printerDefaults](../resources/printerdefaults.md)|As configurações de impressão padrão da impressora.|
 |localização|[printerLocation](../resources/printerlocation.md)|O local físico e/ou organizacional da impressora.|
-|displayName|String|O nome da impressora.|
+|displayName|Cadeia de caracteres|O nome da impressora.|
 
 ### <a name="application-permissions-and-json-payload"></a>Permissões de aplicativo e carga JSON
 No corpo da solicitação, fornece os valores para os campos de [impressora relevantes](../resources/printer.md) que devem ser atualizados. Propriedades existentes que não estão incluídas no corpo da solicitação terão seus valores anteriores mantidos ou serão recalculadas com base nas alterações a outros valores de propriedade. Para alcançar o melhor desempenho, não inclua valores existentes que não foram alterados. 
@@ -69,7 +69,7 @@ As propriedades a seguir podem ser atualizadas usando permissões de aplicativo.
 |:-------------|:------------|:------------|
 |defaults|[printerDefaults](../resources/printerdefaults.md)|As configurações de impressão padrão da impressora.|
 |capabilities|[printerCapabilities](../resources/printerCapabilities.md)|Os recursos da impressora associados a esse compartilhamento de impressora.|
-|displayName|String|O nome da impressora.|
+|displayName|Cadeia de caracteres|O nome da impressora.|
 |fabricante|String|O fabricante da impressora.|
 |modelo|String|O nome do modelo da impressora.|
 |status|[printerStatus](../resources/printerstatus.md)|O status de processamento da impressora, incluindo quaisquer erros.|
@@ -115,7 +115,6 @@ Este é um exemplo de solicitação.
 ```http
 PATCH https://graph.microsoft.com/beta/print/printers/{id}
 Content-type: application/json
-Content-length: 124
 
 {
   "name": "PrinterName",
@@ -158,7 +157,6 @@ Este é um exemplo de resposta.
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 1313
 
 {
   "@odata.context": "https://graph.microsoft.com/beta/$metadata#print/printers/$entity",

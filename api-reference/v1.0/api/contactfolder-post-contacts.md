@@ -5,12 +5,12 @@ author: kevinbellinger
 ms.localizationpriority: medium
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 0905251c5e45e6100927223bf0122099d445e263
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 57fc7269e85560b5c01dfb5ef4ca8ec8ddcc4a95
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59147735"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60946983"
 ---
 # <a name="create-contact"></a>Criar contato
 
@@ -72,7 +72,6 @@ Este é um exemplo da solicitação.
 ```http
 POST https://graph.microsoft.com/v1.0/me/contactFolders/{id}/contacts
 Content-type: application/json
-Content-length: 210
 
 {
   "parentFolderId": "parentFolderId-value",
@@ -121,7 +120,6 @@ Veja a seguir um exemplo da resposta.
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 210
 
 {
   "parentFolderId": "parentFolderId-value",

@@ -2,15 +2,15 @@
 title: Criar marca
 description: Crie um novo objeto tag.
 author: mahage-msft
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: ediscovery
 doc_type: apiPageType
-ms.openlocfilehash: 412a0cd1ae4f8c38466a6526a5c84eea670897bb
-ms.sourcegitcommit: 40947e6f4337c8c4193d85bb862e15f67263e1e7
+ms.openlocfilehash: 439005577189f542790d389447e6f7a02369e30f
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/13/2021
-ms.locfileid: "50773757"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60941502"
 ---
 # <a name="create-tag"></a>Criar marca
 
@@ -20,14 +20,14 @@ Namespace: microsoft.graph.ediscovery
 
 Crie uma nova marca para o caso especificado.  As marcas são usadas em conjuntos de revisão durante a revisão do conteúdo.
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>Permissões
 
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão|Permissões (da com menos para a com mais privilégios)|
 |:---|:---|
-|Delegada (conta corporativa ou de estudante)|eDiscovery.Read.All, eDiscovery.ReadWrite.All|
-|Delegado (conta pessoal da Microsoft)|Sem suporte.|
+|Delegado (conta corporativa ou de estudante)|eDiscovery.Read.All, eDiscovery.ReadWrite.All|
+|Delegada (conta pessoal da Microsoft)|Sem suporte.|
 |Aplicativo|Sem suporte.|
 
 ## <a name="http-request"></a>Solicitação HTTP
@@ -57,7 +57,7 @@ A tabela a seguir mostra as propriedades necessárias ao criar a [marca](../reso
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
 |childSelectability|[microsoft.graph.ediscovery.childSelectability](../resources/ediscovery-tag.md#childselectability-values)|Indica se uma única ou várias marcas filho podem ser associadas a um documento. Os valores possíveis são: `One` e `Many`.  Esse valor controla se o UX apresenta as marcas como caixas de seleção ou um grupo de botões de rádio. Obrigatório.|
-|displayName|String|Nome de exibição da marca. Obrigatório.|
+|displayName|Cadeia de caracteres|Nome de exibição da marca. Obrigatório.|
 
 ## <a name="response"></a>Resposta
 
@@ -78,7 +78,6 @@ Se tiver êxito, este método retornará um código de resposta e um `201 Create
 ``` http
 POST https://graph.microsoft.com/beta/compliance/ediscovery/cases/47746044-fd0b-4a30-acfc-5272b691ba5b/tags
 Content-Type: application/json
-Content-length: 235
 
 {
   "displayName":"Privileged",

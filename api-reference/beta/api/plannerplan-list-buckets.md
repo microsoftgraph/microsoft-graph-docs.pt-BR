@@ -1,16 +1,16 @@
 ---
 title: Listar buckets
 description: Recupere uma lista de objetos **plannerbucket** contidos por um objeto plannerPlan.
-localization_priority: Normal
+ms.localizationpriority: medium
 author: TarkanSevilmis
 ms.prod: planner
 doc_type: apiPageType
-ms.openlocfilehash: 270bcbc548da47b7b3498e3f6fc6eb663284b0e5
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: fdc64c7b84ff67290abd1bb5aca2058b51868bb4
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52052037"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60939390"
 ---
 # <a name="list-buckets"></a>Listar buckets
 
@@ -90,7 +90,6 @@ Veja a seguir um exemplo da resposta.
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 251
 
 {
   "value": [

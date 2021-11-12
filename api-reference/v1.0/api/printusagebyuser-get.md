@@ -2,24 +2,22 @@
 title: Obter printUsageByUser
 description: Recupere o resumo de uso de um usuário para um determinado período de tempo.
 author: nilakhan
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: cloud-printing
 doc_type: apiPageType
-ms.openlocfilehash: 10a3ee5b83d2f07d9b2407f26f3b7fa210786a1c
-ms.sourcegitcommit: 40947e6f4337c8c4193d85bb862e15f67263e1e7
+ms.openlocfilehash: f1eed49143b2fd39654787482c7c543bb99e7e45
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/13/2021
-ms.locfileid: "50774402"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60940536"
 ---
 # <a name="get-printusagebyuser"></a>Obter printUsageByUser
 Namespace: microsoft.graph
 
-[!INCLUDE [cloudprinting-pricing-disclaimer](../../includes/cloudprinting-pricing-disclaimer.md)]
-
 Recupere o resumo de uso de um usuário para um determinado período de tempo. Para descrições de cada ponto de extremidade, consulte [printUsageByUser](../resources/printUsageByUser.md).
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 Para usar o serviço Impressão Universal, o usuário ou locatário do aplicativo deve ter uma assinatura de Impressão Universal ativa, além das permissões listadas na tabela a seguir.

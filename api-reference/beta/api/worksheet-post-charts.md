@@ -2,15 +2,15 @@
 title: Create Chart
 description: Use esta API para criar um novo gráfico.
 author: lumine2008
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: excel
 doc_type: apiPageType
-ms.openlocfilehash: 5101a83c67f7c28d9859db27055db6e752748404
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: 5e857f09e6efe1b3aaef8b9ca342fe210b1691c7
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52051631"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60937556"
 ---
 # <a name="create-chart"></a>Create Chart
 
@@ -60,7 +60,6 @@ Este é um exemplo da solicitação.
 ```http
 POST https://graph.microsoft.com/beta/me/drive/items/{id}/workbook/worksheets/{id|name}/charts
 Content-type: application/json
-Content-length: 52
 
 {
   "id": "id-value",
@@ -88,7 +87,7 @@ Content-length: 52
 
 No corpo da solicitação, fornece uma representação JSON do [objeto workbookChart.](../resources/workbookchart.md)
 ##### <a name="response"></a>Resposta
-Veja a seguir um exemplo da resposta. Observação: o objeto de resposta mostrado aqui pode ser encurtado para legibilidade.
+Aqui está um exemplo da resposta. Observação: o objeto de resposta mostrado aqui pode ser reduzido para facilitar a leitura.
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -97,7 +96,6 @@ Veja a seguir um exemplo da resposta. Observação: o objeto de resposta mostrad
 ```http
 HTTP/1.1 201 Created
 Content-type: application/json
-Content-length: 52
 
 {
   "id": "id-value",

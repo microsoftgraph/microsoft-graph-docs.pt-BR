@@ -2,15 +2,15 @@
 title: 'event: snoozeReminder'
 description: Adie um lembrete para um evento em um calendário do usuário até uma nova hora.
 author: harini84
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 835219be8d6cd286c8ed54edac9363800b0cc6f5
-ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
+ms.openlocfilehash: f1702d9e679772c0aa0cc9b315673352002311ed
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50436194"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60945597"
 ---
 # <a name="event-snoozereminder"></a>event: snoozeReminder
 
@@ -74,7 +74,6 @@ Este é um exemplo da solicitação.
 ```http
 POST https://graph.microsoft.com/beta/me/events/{id}/snoozeReminder
 Content-type: application/json
-Content-length: 97
 
 {
   "newReminderTime": {

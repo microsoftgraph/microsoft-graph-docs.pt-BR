@@ -1,30 +1,30 @@
 ---
 title: Atualizar educationAssignmentSettings
-description: Atualizar as propriedades de um objeto educationAssignmentSettings.
+description: Atualize as propriedades de um objeto educationAssignmentSettings.
 author: dipakboyed
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: ec19c4e3f49c5535e6ed5f4eddafbbf21d5428ee
-ms.sourcegitcommit: 69c355eeb620b76ca70d896f984e21c32ac09eb0
+ms.openlocfilehash: af040de0db27907b24d1af427fca0d599347f766
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/03/2021
-ms.locfileid: "50092492"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60929652"
 ---
 # <a name="update-educationassignmentsettings"></a>Atualizar educationAssignmentSettings
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Atualizar as propriedades de um [objeto educationAssignmentSettings.](../resources/educationassignmentsettings.md) Somente professores podem atualizar essas configurações.
+Atualize as propriedades de [um objeto educationAssignmentSettings.](../resources/educationassignmentsettings.md) Somente os professores podem atualizar essas configurações.
 
 ## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão|Permissões (da com menos para a com mais privilégios)|
 |:---|:---|
-|Delegada (conta corporativa ou de estudante)|EduAssignments.ReadWriteBasic, EduAssignments.ReadWrite|
+|Delegado (conta corporativa ou de estudante)|EduAssignments.ReadWriteBasic, EduAssignments.ReadWrite|
 |Delegada (conta pessoal da Microsoft)|Sem suporte.|
 |Aplicativo|Sem suporte.|
 
@@ -45,19 +45,19 @@ PATCH /education/classes/{id}/assignmentSettings
 |Content-Type|application/json. Obrigatório.|
 
 ## <a name="request-body"></a>Corpo da solicitação
-No corpo da solicitação, fornece uma representação JSON do [objeto educationAssignmentSettings](../resources/educationassignmentsettings.md) .
+No corpo da solicitação, fornece uma representação JSON do [objeto educationAssignmentSettings.](../resources/educationassignmentsettings.md)
 
 A tabela a seguir mostra as propriedades que são necessárias ao atualizar [educationAssignmentSettings](../resources/educationassignmentsettings.md).
 
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|submissionAnimationDisabled|Booliano|Indica se a animação de celebração de turn-in será mostrada. Um valor indica `true` que a animação não será mostrada. O valor padrão é `false`.|
+|submissionAnimationDisabled|Boolean|Indica se a animação de celebração de turn-in será mostrada. Um valor `true` indica que a animação não será mostrada. O valor padrão é `false`.|
 
 
 
 ## <a name="response"></a>Resposta
 
-Se bem-sucedido, este método retorna um código de resposta e um objeto `200 OK` [educationAssignmentSettings](../resources/educationassignmentsettings.md) atualizado no corpo da resposta.
+Se tiver êxito, este método retornará um código de resposta e um `200 OK` [objeto educationAssignmentSettings](../resources/educationassignmentsettings.md) atualizado no corpo da resposta.
 
 ## <a name="examples"></a>Exemplos
 
@@ -72,7 +72,6 @@ Se bem-sucedido, este método retorna um código de resposta e um objeto `200 OK
 ``` http
 PATCH https://graph.microsoft.com/beta/education/classes/{id}/assignmentSettings
 Content-Type: application/json
-Content-length: 114
 
 {
   "submissionAnimationDisabled": true

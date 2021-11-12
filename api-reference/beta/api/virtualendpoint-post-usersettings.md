@@ -5,12 +5,12 @@ author: AshleyYangSZ
 ms.localizationpriority: medium
 ms.prod: cloud-pc
 doc_type: apiPageType
-ms.openlocfilehash: deea9748828a464d87b045002bd6dc9c53c861a4
-ms.sourcegitcommit: 08e9b0bac39c1b1d2c8a79539d24aaa93364baf2
+ms.openlocfilehash: 5bb1cdd51412670cebceb2deb6e0fc9a8c97eb57
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/24/2021
-ms.locfileid: "59508030"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60928539"
 ---
 # <a name="create-cloudpcusersetting"></a>Criar cloudPcUserSetting
 
@@ -27,8 +27,8 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |Tipo de permissão|Permissões (da com menos para a com mais privilégios)|
 |:---|:---|
 |Delegado (conta corporativa ou de estudante)|CloudPC.ReadWrite.All|
-|Delegado (conta pessoal da Microsoft)|Sem suporte.|
-|Application|CloudPC.ReadWrite.All|
+|Delegada (conta pessoal da Microsoft)|Sem suporte.|
+|Aplicativo|CloudPC.ReadWrite.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
 
@@ -57,8 +57,8 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar [o cloud
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
 |displayName|Cadeia de caracteres|O nome da configuração como ele aparece na interface do usuário. |
-|localAdminEnabled|Booliano|Para ativar a opção de administrador local, altere essa configuração para `True` .  |
-|selfServiceEnabled|Booliano|Para ativar a opção self service, altere essa configuração para `True` . |
+|localAdminEnabled|Boolean|Para ativar a opção de administrador local, altere essa configuração para `True` .  |
+|selfServiceEnabled|Boolean|Para ativar a opção self service, altere essa configuração para `True` . |
 |lastModifiedDateTime|DateTimeOffset|A última data e hora em que a configuração foi modificada. O tipo Timestamp representa as informações de data e hora usando o formato ISO 8601 e está sempre em horário UTC. Por exemplo, meia-noite UTC em 1º de janeiro de 2014 tem esta aparência: '2014-01-01T00:00:00Z'. |
 
 ## <a name="response"></a>Resposta
@@ -78,7 +78,6 @@ Se tiver êxito, este método retornará um código de resposta e um `201 Create
 ``` http
 POST https://graph.microsoft.com/beta/deviceManagement/virtualEndpoint/userSettings
 Content-Type: application/json
-Content-length: 159
 
 {
   "@odata.type": "#microsoft.graph.cloudPcUserSetting",

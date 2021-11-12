@@ -2,15 +2,15 @@
 title: Listar escolas
 description: Recupere uma lista de escolas de um usuário.
 author: mmast-msft
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: b2b351a130dcb33c4e4f94c33edb31104f0714b8
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: 3cd5bb8374cfaa73648318bc9a403c29352a91d2
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52042706"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60935939"
 ---
 # <a name="list-schools"></a>Listar escolas
 
@@ -27,8 +27,8 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 | Tipo de permissão                        | Permissões (da com menos para a com mais privilégios) |
 | :------------------------------------- | :------------------------------------------ |
 | Delegado (conta corporativa ou de estudante)     | EduRoster.ReadBasic                         |
-| Delegado (conta pessoal da Microsoft) | Sem suporte.                              |
-| Application                            | EduRoster.Read.All, EduRoster.ReadWrite.All |
+| Delegada (conta pessoal da Microsoft) | Sem suporte.                              |
+| Aplicativo                            | EduRoster.Read.All, EduRoster.ReadWrite.All |
 
 > [!NOTE]
 > Quando as permissões delegadas são usadas, somente os recursos educationSchool que o usuário de autenticação é membro serão retornados.
@@ -114,7 +114,6 @@ Este é um exemplo de resposta.
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 345
 
 {
   "value": [

@@ -2,20 +2,18 @@
 title: Obter tarefa
 description: Obter detalhes sobre uma tarefa de impressão.
 author: nilakhan
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: cloud-printing
 doc_type: apiPageType
-ms.openlocfilehash: 7b9a9b2e5ff6fdcc3e7bd7c74aa5a173d551f41b
-ms.sourcegitcommit: 40947e6f4337c8c4193d85bb862e15f67263e1e7
+ms.openlocfilehash: 80404c81b34fcf0a710e878cc1c217b991788532
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/13/2021
-ms.locfileid: "50773442"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60937143"
 ---
 # <a name="get-printtask"></a>Obter printTask
 Namespace: microsoft.graph
-
-[!INCLUDE [cloudprinting-pricing-disclaimer](../../includes/cloudprinting-pricing-disclaimer.md)]
 
 Obter detalhes sobre uma tarefa de impressão.
 

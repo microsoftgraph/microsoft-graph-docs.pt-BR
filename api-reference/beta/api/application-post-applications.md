@@ -5,12 +5,12 @@ author: sureshja
 ms.localizationpriority: high
 doc_type: apiPageType
 ms.prod: applications
-ms.openlocfilehash: f220e8c460ce53d01965c9e0451c7d15648fdadf
-ms.sourcegitcommit: c333953a9188b4cd4a9ab94cbe68871e8f3563e5
+ms.openlocfilehash: 79d3c5673d90a97bf82ba0c2d0c3762bfe7a0dde
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/30/2021
-ms.locfileid: "58695074"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60939893"
 ---
 # <a name="create-application"></a>Criar aplicativo
 
@@ -64,7 +64,6 @@ Este é um exemplo da solicitação.
 ```http
 POST https://graph.microsoft.com/beta/applications
 Content-type: application/json
-Content-length: 67
 
 {
   "displayName": "Display name"
@@ -100,7 +99,6 @@ Veja a seguir um exemplo da resposta.
 ```http
 HTTP/1.1 201 Created
 Content-type: application/json
-Content-length: 1145
 
 {
     "@odata.context": "https://graph.microsoft.com/beta/$metadata#applications/$entity",

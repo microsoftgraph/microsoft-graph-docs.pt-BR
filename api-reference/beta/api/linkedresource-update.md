@@ -1,21 +1,21 @@
 ---
 title: Atualizar linkedResource
-description: Atualizar as propriedades de um objeto linkedResource.
+description: Atualize as propriedades de um objeto linkedResource.
 author: avijityadav
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 498c791bde804df7dd761cb9a25037d13c8be510
-ms.sourcegitcommit: eacd2a6e46c19dd3cd8519592b1668fabe14d85d
+ms.openlocfilehash: 04ebb61322b757f6f4c1a72d6d17f2644a29a946
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "49873700"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60945439"
 ---
 # <a name="update-linkedresource"></a>Atualizar linkedResource
 Namespace: microsoft.graph [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Atualizar as propriedades de um [objeto linkedResource.](../resources/linkedresource.md)
+Atualize as propriedades de um [objeto linkedResource.](../resources/linkedresource.md)
 
 ## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
@@ -23,7 +23,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |Tipo de permissão|Permissões (da com menos para a com mais privilégios)|
 |:---|:---|
 |Delegado (conta corporativa ou de estudante)|Tasks.ReadWrite|
-|Delegado (conta pessoal da Microsoft)|Tasks.ReadWrite|
+|Delegada (conta pessoal da Microsoft)|Tasks.ReadWrite|
 |Aplicativo|Sem suporte|
 
 ## <a name="http-request"></a>Solicitação HTTP
@@ -50,11 +50,11 @@ A tabela a seguir mostra as propriedades que são necessárias ao atualizar [o l
 
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|id|Cadeia de caracteres|ID gerada pelo servidor para a entidade vinculada Herdada da [entidade](../resources/entity.md)|
+|id|Cadeia de caracteres|ID gerada do servidor para a entidade vinculada Herdada da [entidade](../resources/entity.md)|
 
 ## <a name="response"></a>Resposta
 
-Se bem-sucedido, este método retorna um código `200 OK` de resposta e um objeto [linkedResource](../resources/linkedresource.md) atualizado no corpo da resposta.
+Se tiver êxito, este método retornará um código de resposta e um `200 OK` [objeto linkedResource](../resources/linkedresource.md) atualizado no corpo da resposta.
 
 ## <a name="examples"></a>Exemplos
 
@@ -70,7 +70,6 @@ Se bem-sucedido, este método retorna um código `200 OK` de resposta e um objet
 ``` http
 PATCH https://graph.microsoft.com/beta/me/todo/lists/dfsdc-f9dfdfs-dcsda9/tasks/e2dc-f9cce2-dce29/linkedResources/f9cddce2-dce2-f9cd-e2dc-cdf9e2dccdf9
 Content-Type: application/json
-Content-length: 166
 
 {
   "@odata.type": "#microsoft.graph.linkedResource",

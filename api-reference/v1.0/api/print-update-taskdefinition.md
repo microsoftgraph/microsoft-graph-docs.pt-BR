@@ -2,21 +2,19 @@
 title: Atualizar printTaskDefinition
 description: Atualize uma definição de tarefa.
 author: nilakhan
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: cloud-printing
 doc_type: apiPageType
-ms.openlocfilehash: af00ba623907a8e5817208ca4a0f92d69ca2dddc
-ms.sourcegitcommit: 40947e6f4337c8c4193d85bb862e15f67263e1e7
+ms.openlocfilehash: 61c5dc81551f5f72ca4dfd4108ba950dc9dfd491
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/13/2021
-ms.locfileid: "50777107"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60945912"
 ---
 # <a name="update-printtaskdefinition"></a>Atualizar printTaskDefinition
 
 Namespace: microsoft.graph
-
-[!INCLUDE [cloudprinting-pricing-disclaimer](../../includes/cloudprinting-pricing-disclaimer.md)]
 
 Atualize uma definição de tarefa.
 
@@ -54,7 +52,7 @@ No corpo da solicitação, fornece os valores para os campos [printTaskDefinitio
 
 | Propriedade     | Tipo        | Descrição |
 |:-------------|:------------|:------------|
-|displayName|String|O nome da **printTaskDefinition**.|
+|displayName|Cadeia de caracteres|O nome da **printTaskDefinition**.|
 |createdBy|Cadeia de caracteres|Informações sobre o aplicativo que criou a definição de tarefa. Somente a `createdBy.displayName` propriedade pode ser atualizada.|
 
 ## <a name="response"></a>Resposta
@@ -74,7 +72,6 @@ Se tiver êxito, este método retornará um código de resposta e um `200 OK` [o
 ``` http
 PATCH https://graph.microsoft.com/v1.0/print/taskDefinitions/{printTaskDefinitionId}
 Content-Type: application/json
-Content-length: 163
 
 {
   "displayName": "Test TaskDefinitionName",

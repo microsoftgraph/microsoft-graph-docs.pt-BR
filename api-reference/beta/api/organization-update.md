@@ -1,16 +1,16 @@
 ---
 title: Atualize a organização
 description: Atualize as propriedades da organização autenticada no momento.
-localization_priority: Normal
+ms.localizationpriority: medium
 author: adimitui
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: cae41ed267ea4595134247cf1ac3967ce34141a5
-ms.sourcegitcommit: 94c4acf8bd03c10a44b12952b6cb4827df55b978
+ms.openlocfilehash: f124a3bb6b9a8bbbad6ba41ceffb46c5cee7caed
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/06/2021
-ms.locfileid: "52785927"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60943343"
 ---
 # <a name="update-organization"></a>Atualize a organização
 
@@ -20,14 +20,14 @@ Namespace: microsoft.graph
 
 Atualize as propriedades da organização autenticada no momento. Nesse caso, é definido como uma coleção de exatamente um registro e, portanto, sua ID deve ser `organization` especificada na  solicitação.  A **ID** também é conhecida como **tenantId** da organização.
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>Permissões
 
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão | Permissões (da com menos para a com mais privilégios) |
 |:--------------------|:---------------------------------------------------------|
 |Delegado (conta corporativa ou de estudante) | Organization.ReadWrite.All, Directory.AccessAsUser.All |
-|Delegado (conta pessoal da Microsoft) | Sem suporte. |
+|Delegada (conta pessoal da Microsoft) | Sem suporte. |
 |Aplicativo | Organization.ReadWrite.All |
 
 ## <a name="http-request"></a>Solicitação HTTP
@@ -77,7 +77,6 @@ Este é um exemplo da solicitação.
 ```http
 PATCH https://graph.microsoft.com/beta/organization/{id}
 Content-type: application/json
-Content-length: 411
 
 {
   "marketingNotificationEmails" : ["marketing@contoso.com"],

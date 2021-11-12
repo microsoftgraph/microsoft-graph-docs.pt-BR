@@ -2,15 +2,15 @@
 title: 'event: accept'
 description: Aceite o evento específico em um calendário do usuário.
 author: harini84
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 4176dcffa8f8ffcbc2d0e1892647742720307ba6
-ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
+ms.openlocfilehash: 0ec53cf5271edaf6c9eca8b77270cb1d78cf9410
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50436271"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60937766"
 ---
 # <a name="event-accept"></a>event: accept
 
@@ -75,7 +75,6 @@ Este é um exemplo da solicitação.
 ```http
 POST https://graph.microsoft.com/beta/me/events/{id}/accept
 Content-type: application/json
-Content-length: 56
 
 {
   "comment": "comment-value",

@@ -2,20 +2,18 @@
 title: Criar printTaskDefinition
 description: Crie uma nova definição de tarefa.
 author: nilakhan
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: universal-print
 doc_type: apiPageType
-ms.openlocfilehash: ee7172c76863cb62a24c44ba73de2f02bb27e30c
-ms.sourcegitcommit: 40947e6f4337c8c4193d85bb862e15f67263e1e7
+ms.openlocfilehash: 08c9c17169894571e4624c84c52fab2ba2855862
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/13/2021
-ms.locfileid: "50772209"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60924359"
 ---
 # <a name="create-printtaskdefinition"></a>Criar printTaskDefinition
 Namespace: microsoft.graph
-
-[!INCLUDE [cloudprinting-pricing-disclaimer](../../includes/cloudprinting-pricing-disclaimer.md)]
 
 Crie uma nova definição de tarefa.
 
@@ -70,7 +68,6 @@ Se tiver êxito, este método retornará um código de resposta e um `201 Create
 ``` http
 POST https://graph.microsoft.com/v1.0/print/taskDefinitions
 Content-Type: application/json
-Content-length: 163
 
 {
   "displayName": "Test TaskDefinitionName",

@@ -5,12 +5,12 @@ author: mmcla
 ms.localizationpriority: medium
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: c0cf19a36f61db32e8950202ffd1b28eec37cf3c
-ms.sourcegitcommit: 0a312d63934cdf9789a5648c2b3f348f48542ff4
+ms.openlocfilehash: 8914f18d74ee3a5c281dfd21410cc46174bbbaf2
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/07/2021
-ms.locfileid: "60219811"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60939865"
 ---
 # <a name="update-authenticationmethodspolicy"></a>Atualizar autenticaçãoMethodsPolicy
 Namespace: microsoft.graph
@@ -72,7 +72,6 @@ Se tiver êxito, este método retornará um código de resposta `200 OK`.
 ``` http
 PATCH https://graph.microsoft.com/beta/policies/authenticationMethodsPolicy
 Content-Type: application/json
-Content-length: 293
 
 {
   "registrationEnforcement": {

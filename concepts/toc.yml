@@ -370,8 +370,6 @@ items:
             href: social-intel-concept-overview.md
           - name: Obter informações sobre pessoas relevantes
             href: people-example.md
-          - name: Personalizar a privacidade de informações de pessoas (visualização)
-            href: insights-customize-people-insights-privacy.md
           - name: Personalizar o cartão de perfil (visualização)
             href: add-properties-profilecard.md
           - name: Visão geral de informações do item
@@ -628,6 +626,8 @@ items:
                 href: migrate-azure-ad-graph-deploy-test-extend.md
               - name: Perguntas frequentes sobre migração
                 href: migrate-azure-ad-graph-faq.md
+              - name: Configurar permissões do Azure AD Graph
+                href: migrate-azure-ad-graph-configure-permissions.md
       - name: Usar SDKs
         items:
           - name: Visão geral

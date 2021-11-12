@@ -2,15 +2,15 @@
 title: Obter evento
 description: Obtenha as propriedades e relacionamentos do objeto de evento especificado.
 author: harini84
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 44007d0c4b8ad4feaf97cb3940fac388b9cca902
-ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
+ms.openlocfilehash: c7ae6555e341d35507d0ebfa4725c57aebca8f56
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50436222"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60946227"
 ---
 # <a name="get-event"></a>Obter evento
 
@@ -23,7 +23,7 @@ Obtenha as propriedades e as relações do objeto [event](../resources/event.md)
 Um aplicativo pode obter um evento no calendário de outro usuário se:
 
 * O aplicativo tem permissões de aplicativo
-* O aplicativo tem as permissões delegadas [apropriadas](#permissions) de um usuário e outro usuário compartilhou um calendário com esse usuário ou deu acesso delegado a esse usuário. Confira [detalhes e um exemplo](/graph/outlook-get-shared-events-calendars).
+* O aplicativo tem as permissões delegadas [apropriadas](#permissions) de um usuário e outro usuário compartilhou um calendário com esse usuário ou deu acesso delegado a esse usuário. Confira os [detalhes e um exemplo](/graph/outlook-get-shared-events-calendars).
 
 Como o **recurso event** dá suporte a [extensões,](/graph/extensibility-overview)você também pode usar a operação para obter propriedades personalizadas e dados de extensão em uma `GET` instância **de** evento.
 
@@ -73,7 +73,7 @@ Este método dá suporte a [Parâmetros de consulta OData](/graph/query-paramete
 | Nome       | Tipo | Descrição|
 |:-----------|:------|:----------|
 | Autorização  | string  | {token} de portador. Obrigatório. |
-| Prefira: outlook.timezone | string | Use isto para especificar o fuso horário para horas de início e término na resposta. Se não especificado, esses valores de tempo serão retornados em UTC. Opcional. |
+| Prefira: outlook.timezone | string | Use isso para especificar o fuso horário para os horários de início e término na resposta. Se não for especificado, esses valores de tempo serão retornados em UTC. Opcional. |
 | Prefer: outlook.body-content-type | cadeia de caracteres | O formato da propriedade **corpo** a ser retornada. Os valores podem ser "text" ou "html". Um cabeçalho `Preference-Applied` é retornado como confirmação se este cabeçalho `Prefer` for especificado. Se o cabeçalho não for especificado, a propriedade **corpo** será retornada no formato HTML. Opcional. |
 
 ## <a name="request-body"></a>Corpo da solicitação
@@ -133,7 +133,6 @@ Veja a seguir um exemplo da resposta. Como nenhum cabeçalho `Prefer: outlook.bo
 HTTP/1.1 200 OK
 Content-type: application/json
 Preference-Applied: outlook.timezone="Pacific Standard Time"
-Content-length: 1928
 
 {
     "@odata.context":"https://graph.microsoft.com/beta/$metadata#users('cd209b0b-3f83-4c35-82d2-d88a61820480')/events(subject,body,bodyPreview,organizer,attendees,start,end,location,hideAttendees)/$entity",
@@ -256,7 +255,6 @@ Veja a seguir um exemplo da resposta. A propriedade **body** é retornada no for
 HTTP/1.1 200 OK
 Content-type: application/json
 Preference-Applied: outlook.body-content-type="text"
-Content-length: 636
 
 {
     "@odata.context":"https://graph.microsoft.com/beta/$metadata#users('cd209b0b-3f83-4c35-82d2-d88a61820480')/events(subject,body,bodyPreview)/$entity",
@@ -304,7 +302,7 @@ GET https://graph.microsoft.com/beta/me/events/AAMkADAGAADDdm4NAAA=/?$select=sub
 ---
 
 #### <a name="response"></a>Resposta
-Veja a seguir um exemplo da resposta. A propriedade **locations** inclui detalhes dos três locais para os quais o evento é organizado. 
+A propriedade **locations** inclui detalhes dos três locais para os quais o evento é organizado. 
 
 Como a solicitação não especifica nenhum ou um header, as propriedades inicial e final são exibidas no fuso horário UTC padrão e o corpo está no `Prefer: outlook.timezone` `Prefer: outlook.body-content-type` formato HTML padrão.    
 
@@ -317,7 +315,6 @@ Como a solicitação não especifica nenhum ou um header, as propriedades inicia
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 1992
 
 {
   "@odata.context":"https://graph.microsoft.com/beta/$metadata#users('d1a2fae9-db66-4cc9-8133-2184c77af1b8')/events(subject,body,bodyPreview,organizer,attendees,start,end,location,locations)/$entity",
@@ -429,7 +426,6 @@ A operação GET retorna as propriedades selecionadas para o evento mestre da s�
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 1992
 
 {
   "@odata.context":"https://graph.microsoft.com/beta/$metadata#users('d1a2fae9-db66-4cc9-8133-2184c77af1b8')/events(subject,start,end,occurrenceId,exceptionOccurrences,cancelledOccurrences)/$entity",

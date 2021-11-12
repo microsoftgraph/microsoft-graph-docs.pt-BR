@@ -1,16 +1,16 @@
 ---
 title: Obter plannerTaskDetails
 description: Recupere as propriedades e as relações do **objeto plannertaskdetails.**
-localization_priority: Normal
+ms.localizationpriority: medium
 author: TarkanSevilmis
 ms.prod: planner
 doc_type: apiPageType
-ms.openlocfilehash: 79fbad68ba2e4cf8d3a00766e9ff24e0dc7bf946
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 5a4a8c5f966b4ca1a110801552d39fe3c4a780bf
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58816118"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60926711"
 ---
 # <a name="get-plannertaskdetails"></a>Obter plannerTaskDetails
 
@@ -88,7 +88,6 @@ Aqui está um exemplo da resposta. Observação: o objeto de resposta mostrado a
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 1036
 
 {
   "description": "Task details properties:\nchecklist:Sub items\nreferences:Related links",

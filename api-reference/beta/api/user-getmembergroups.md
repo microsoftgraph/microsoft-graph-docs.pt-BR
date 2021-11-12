@@ -1,16 +1,16 @@
 ---
 title: 'usuário: getMemberGroups'
 description: Retorne todos os grupos dos quais o usuário é membro. A verificação é transitiva, ao contrário da leitura do
-localization_priority: Normal
+ms.localizationpriority: medium
 author: jpettere
 ms.prod: users
 doc_type: apiPageType
-ms.openlocfilehash: 77f676211623d9077e882f7e12bb70c843b4d88e
-ms.sourcegitcommit: 01755ac7c0ab7becf28052e05e58567caa8364cd
+ms.openlocfilehash: 1d3fec3dafec2e6e7240b619ea7e6362c9e912ce
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/21/2021
-ms.locfileid: "58452761"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60937647"
 ---
 # <a name="user-getmembergroups"></a>usuário: getMemberGroups
 
@@ -20,7 +20,7 @@ Namespace: microsoft.graph
 
 Retorne todos os grupos dos quais o usuário é membro. A verificação é transitiva, diferentemente da leitura da propriedade de navegação [member](../api/user-list-memberof.md), que retorna somente os grupos dos quais o usuário é membro direto.
 
-Essa função dá suporte Microsoft 365 e outros tipos de grupos provisionados no Azure AD. O número máximo de grupos que cada solicitação pode retornar é 11000. Observe que Microsoft 365 grupos não podem conter grupos. Portanto, a associação em um Microsoft 365 grupo é sempre direta.
+Esta função suporta Microsoft 365 e outros tipos de grupos provisionados em Azure AD. O número máximo de grupos que cada solicitação pode retornar é de 11000. Observar que os grupos do Microsoft 365 não podem conter grupos. Portanto, a afiliação a um grupo Microsoft 365 é sempre direta.
 
 ## <a name="permissions"></a>Permissões
 
@@ -77,7 +77,6 @@ Este é um exemplo da solicitação.
 ```http
 POST https://graph.microsoft.com/beta/me/getMemberGroups
 Content-type: application/json
-Content-length: 33
 
 {
   "securityEnabledOnly": true
@@ -116,7 +115,6 @@ Aqui está um exemplo da resposta. Observação: o objeto de resposta mostrado a
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 39
 
 {
   "value": [

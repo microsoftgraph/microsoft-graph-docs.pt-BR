@@ -1,16 +1,16 @@
 ---
 title: Listar trabalhos de sincronização
 description: Listar trabalhos existentes para uma determinada instância de aplicativo (entidade de serviço).
-localization_priority: Normal
+ms.localizationpriority: medium
 doc_type: apiPageType
 author: ArvindHarinder1
 ms.prod: applications
-ms.openlocfilehash: c236b4bbd7afff7065932537c534aeb2d69dd57e
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: 288f5e4f27581bd7f56ac49bdb6688b3be826ae0
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52054823"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60928644"
 ---
 # <a name="list-synchronization-jobs"></a>Listar trabalhos de sincronização
 
@@ -26,8 +26,8 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |Tipo de permissão                        | Permissões (da com menos para a com mais privilégios)              |
 |:--------------------------------------|:---------------------------------------------------------|
 |Delegado (conta corporativa ou de estudante)     |Directory.ReadWrite.All  |
-|Delegado (conta pessoal da Microsoft) |Sem suporte. |
-|Application                            |Application.ReadWrite.OwnedBy, Directory.ReadWrite.All | 
+|Delegada (conta pessoal da Microsoft) |Sem suporte. |
+|Aplicativo                            |Application.ReadWrite.OwnedBy, Directory.ReadWrite.All | 
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- { "blockType": "ignored" } -->
@@ -95,7 +95,6 @@ Veja a seguir um exemplo de uma resposta.
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 2958
 
 {
     "value": [

@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: dkershaw10
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: 67051f881ba3ef92c596a8e4175bde61f8c7d670
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: d1e5ab5c5973d402ac5f342bd21db6f5663f1737
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59078249"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60937913"
 ---
 # <a name="get-datapolicyoperation"></a>Obter dataPolicyOperation
 
@@ -24,7 +24,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
 |:--------------------|:---------------------------------------------------------|
 |Delegado (conta corporativa ou de estudante) |  User.Export.All e User.Read.All  |
-|Delegado (conta pessoal da Microsoft) |  Não aplicável  |
+|Delegada (conta pessoal da Microsoft) |  Não aplicável  |
 |Aplicativo | User.Export.All e User.Read.All | 
 
 ## <a name="http-request"></a>Solicitação HTTP
@@ -81,7 +81,6 @@ Observação: o objeto de resposta exibido aqui pode ser encurtado para legibili
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 212
 
 {
   "completedDateTime": "datetime-value",

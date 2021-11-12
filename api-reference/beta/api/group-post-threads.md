@@ -2,15 +2,15 @@
 title: Criar thread de conversas
 description: 'Inicie uma nova conversa em grupo criando primeiro um thread. '
 author: Jordanndahl
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: 06dfeaa50fc10907d71684602df40aaf2cbda428
-ms.sourcegitcommit: 4fa6fcc058c7f8d8cad58c0b82db23d6c7da37d2
+ms.openlocfilehash: 104ff876e161a7a8a2f57eec33dadc493ad92fd5
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/27/2021
-ms.locfileid: "52681285"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60926956"
 ---
 # <a name="create-conversation-thread"></a>Criar thread de conversas
 
@@ -109,7 +109,6 @@ Este é um exemplo de resposta.
 ```http
 HTTP/1.1 201 OK
 Content-type: application/json
-Content-length: 419
 
 {
   "toRecipients": [
