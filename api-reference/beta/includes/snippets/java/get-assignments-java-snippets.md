@@ -1,17 +1,17 @@
 ---
 description: Arquivo gerado automaticamente. NÃO MODIFICAR
-ms.openlocfilehash: 19c2dcb8010a1a3004bf821c66d12902c1b92df818e054506f6320fad6742bcf
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 32a87d03dca580bda3cb0a3c6ec80286f1478341
+ms.sourcegitcommit: c6a8c1cc13ace38d6c4371139ee84707c5c93352
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "57213738"
+ms.lasthandoff: 11/10/2021
+ms.locfileid: "60890975"
 ---
 ```java
 
 GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
 
-PrivilegedRoleAssignmentCollectionWithReferencesPage assignments = graphClient.privilegedRoles("{id}").assignments()
+EducationAssignmentCollectionPage assignments = graphClient.education().classes("{id}").assignments()
     .buildRequest()
     .get();
 

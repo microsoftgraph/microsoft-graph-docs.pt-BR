@@ -1,25 +1,25 @@
 ---
 author: JeremyKelley
-description: Esse método permite que o seu aplicativo controle alterações em uma unidade e seus filhos com o passar do tempo.
+description: Acompanhe as alterações em um item de unidade e seus filhos ao longo do tempo.
 ms.date: 09/10/2017
-title: Sincronizar o conteúdo de uma unidade
-localization_priority: Normal
+title: 'driveItem: delta'
+ms.localizationpriority: medium
 ms.prod: sharepoint
 doc_type: apiPageType
-ms.openlocfilehash: 483bfdcdd08c5d01f69d1b12455e64b903d9fac8
-ms.sourcegitcommit: f77c1385306fd40557aceb24fdfe4832cbb60a27
+ms.openlocfilehash: 463e36e54897b6c1a617a66c31c6902ccaad7cb2
+ms.sourcegitcommit: c6a8c1cc13ace38d6c4371139ee84707c5c93352
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/12/2021
-ms.locfileid: "52912072"
+ms.lasthandoff: 11/10/2021
+ms.locfileid: "60890294"
 ---
-# <a name="track-changes-for-a-drive"></a>Rastrear alterações para uma unidade
+# <a name="driveitem-delta"></a>driveItem: delta
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Esse método permite que o seu aplicativo controle alterações em uma unidade e seus filhos com o passar do tempo.
+Acompanhe as alterações em [um driveItem](../resources/driveitem.md) e seus filhos ao longo do tempo.
 
 Seu aplicativo começa chamando `delta` sem parâmetros. O serviço começa a enumerar a hierarquia da unidade, retornando páginas de itens e um `@odata.nextLink` ou `@odata.deltaLink`, conforme descrito abaixo. Seu aplicativo deve continuar chamando com o `@odata.nextLink` até que você não veja mais um `@odata.nextLink` retornado ou até que você veja uma resposta com um conjunto vazio de alterações.
 
@@ -61,6 +61,16 @@ GET /users/{userId}/drive/root/delta
 
 Este método oferece suporte aos [Parâmetros de consulta OData](/graph/query-parameters) `$select`, `$expand` e `$top` para personalizar as resposta.
 
+## <a name="request-headers"></a>Cabeçalhos de solicitação
+
+|Nome|Descrição|
+|:---|:---|
+|Autorização|{token} de portador. Obrigatório.|
+
+## <a name="request-body"></a>Corpo da solicitação
+
+Não forneça um corpo de solicitação para esse método.
+
 ## <a name="response"></a>Resposta
 
 Se for bem-sucedido, esse método retornará um código de resposta `200 OK` e uma coleção de recursos [Driveitem](../resources/driveitem.md) no corpo da resposta.
@@ -72,11 +82,13 @@ Além da coleção de DriveItems, a resposta também incluirá uma das seguintes
 | **@odata.nextLink**  | url    | Uma URL para recuperar a próxima página disponível de alterações, se houver alterações adicionais no conjunto atual.                                        |
 | **@odata.deltaLink** | url    | Uma URL retornada no lugar de **@odata.nextLink** após o retorno de todas as alterações atuais. Usada para ler o próximo conjunto de alterações no futuro.  |
 
-## <a name="example-initial-request"></a>Exemplo (solicitação inicial)
+## <a name="examples"></a>Exemplos
+
+### <a name="example-1-initial-request"></a>Exemplo 1: Solicitação inicial
 
 Veja a seguir um exemplo de como chamar essa API para estabelecer seu estado local.
 
-### <a name="request"></a>Solicitação
+#### <a name="request"></a>Solicitação
 
 Veja a seguir um exemplo da solicitação inicial.
 
@@ -106,7 +118,7 @@ GET https://graph.microsoft.com/beta/me/drive/root/delta
 ---
 
 
-### <a name="response"></a>Resposta
+#### <a name="response"></a>Resposta
 
 Veja a seguir um exemplo da resposta.
 
@@ -140,11 +152,11 @@ Content-type: application/json
 
 Essa resposta inclui a primeira página de alterações, e a propriedade **@odata.nextLink** indica que há mais itens disponíveis no conjunto atual de itens. Seu aplicativo deve continuar a solicitar o valor de URL de **@odata.nextLink** até que todas as páginas de itens tenham sido recuperadas.
 
-## <a name="example-last-page-in-a-set"></a>Exemplo (última página de um conjunto)
+### <a name="example-2-last-page-in-a-set"></a>Exemplo 2: Última página em um conjunto
 
 Veja a seguir um exemplo de como chamar essa API para atualizar seu estado local.
 
-### <a name="request"></a>Solicitação
+#### <a name="request"></a>Solicitação
 
 Veja a seguir um exemplo da solicitação após a solicitação inicial.
 
@@ -174,7 +186,7 @@ GET https://graph.microsoft.com/beta/me/drive/root/delta(token='1230919asd190410
 ---
 
 
-### <a name="response"></a>Resposta
+#### <a name="response"></a>Resposta
 
 Veja a seguir um exemplo da resposta.
 
@@ -213,17 +225,16 @@ Pode haver casos em que o serviço não pode fornecer uma lista de alterações 
 | `resyncChangesApplyDifferences`  | Substitua todos os itens locais pela versão do servidor (incluindo exclusões) se você tiver certeza de que o serviço estava atualizado com suas alterações locais quando você sincronizou pela última vez. Carregue alterações locais que o servidor não conhece. |
 | `resyncChangesUploadDifferences` | Carregue os itens locais que o serviço não retornou e carregue os arquivos que diferem da versão do servidor (mantendo ambas as cópias se você não tiver certeza de qual é a mais atual).                                       |
 
-## <a name="retrieving-the-current-deltalink"></a>Recuperar o deltaLink atual
+### <a name="example-3-retrieving-the-current-deltalink"></a>Exemplo 3: Recuperando o deltaLink atual
 
 Em alguns cenários, pode ser útil solicitar o valor do deltaLink atual sem primeiro enumerar todos os itens que já estão na unidade.
 
-Isso poderá ser útil se o seu aplicativo quiser saber apenas sobre as alterações, e não quiser saber sobre os itens existentes.
-Para recuperar o deltaLink mais recente, chame `delta` com um parâmetro de cadeia de caracteres de consulta `?token=latest`.
+Isso poderá ser útil se o seu aplicativo quiser apenas saber sobre as alterações e não quiser saber sobre os itens existentes. Para recuperar o deltaLink mais recente, chame `delta` com um parâmetro de cadeia de caracteres de consulta `?token=latest`.
 
->**Observação:** Se você estiver tentando manter uma representação local completa dos itens em uma pasta ou unidade, você deve usar para a `delta` enumeração inicial.
+> **Observação:** Se você estiver tentando manter uma representação local completa dos itens em uma pasta ou unidade, você deve usar para a `delta` enumeração inicial.
 Outras abordagens, como a paja através da coleção de uma pasta, não são garantidas para retornar cada item se qualquer gravações ocorrer `children` durante a enumeração. Usar `delta` é a única maneira de garantir que você leu todos os dados necessários.
 
-### <a name="request"></a>Solicitação
+#### <a name="request"></a>Solicitação
 
 
 # <a name="http"></a>[HTTP](#tab/http)
@@ -251,7 +262,7 @@ GET /me/drive/root/delta?token=latest
 ---
 
 
-### <a name="response"></a>Resposta
+#### <a name="response"></a>Resposta
 
 <!-- { "blockType": "response", "@odata.type": "Collection(microsoft.graph.driveItem)" } -->
 
@@ -262,6 +273,51 @@ Content-type: application/json
 {
     "value": [ ],
     "@odata.deltaLink": "https://graph.microsoft.com/v1.0/me/drive/root/delta?token=1230919asd190410jlka"
+}
+```
+
+### <a name="example-4-retrieving-delta-results-using-a-timestamp"></a>Exemplo 4: Recuperar resultados delta usando um data/hora
+
+Em alguns cenários, o cliente pode saber o estado de uma unidade até um momento específico, mas não ter um deltaLink para esse ponto no tempo. Nesse caso, o cliente pode chamar usando um timestamp codificado por URL para o valor do parâmetro de cadeia de caracteres de consulta, por exemplo, `delta` `token` ou `?token=2021-09-29T20%3A00%3A00Z` '?token=2021-09-29T12%3A00%3A00%2B8%3A00'.
+
+O uso de um data/hora no lugar de um token só é suportado OneDrive for Business e SharePoint.
+
+> **Observação:** Os clientes devem usar o deltaLink fornecido pelas consultas quando possível, em vez de `delta` gerar seu próprio token. Esse recurso só deve ser usado quando o deltaLink não for conhecido.
+
+
+#### <a name="request"></a>Solicitação
+
+
+<!-- { "blockType": "request", "name": "get-delta-timestamp", "scopes": "files.read", "tags": "service.graph", "target": "action" } -->
+
+```http
+GET /me/drive/root/delta?token=2021-09-29T20%3A00%3A00Z
+```
+
+
+#### <a name="response"></a>Resposta
+
+<!-- { "blockType": "response", "truncated": true, "@odata.type": "Collection(microsoft.graph.driveItem)", "scope": "file.read" } -->
+
+```http
+HTTP/1.1 200 OK
+Content-type: application/json
+
+{
+    "value": [
+        {
+            "id": "0123456789abc",
+            "name": "folder2",
+            "folder": { },
+            "deleted": { }
+        },
+        {
+            "id": "123010204abac",
+            "name": "file.txt",
+            "file": { }
+        }
+    ],
+    "@odata.deltaLink": "https://graph.microsoft.com/v1.0/me/drive/root/delta?(token='1230919asd190410jlka')"
 }
 ```
 
@@ -276,8 +332,8 @@ Content-type: application/json
     
     | Tipo de operação | Propriedades omitidas pela consulta delta |
     |---------|----------|
-    | Criar/Modificar | `ctag`, `lastModifiedBy` |
-    | Excluir | `ctag`, `lastModifiedBy`, `name` |
+    | Criar/Modificar | `ctag` |
+    | Excluir | `ctag`, `name` |
 
 
     **OneDrive (consumidor)**

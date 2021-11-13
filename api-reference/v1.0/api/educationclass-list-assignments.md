@@ -5,12 +5,12 @@ author: mmast-msft
 ms.localizationpriority: medium
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: af7ed08b408ea6b0eb0cfad59b2302431a2f2b59
-ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
+ms.openlocfilehash: 16a6a104806fc74b4e293bb094de7749dfc89373
+ms.sourcegitcommit: c6a8c1cc13ace38d6c4371139ee84707c5c93352
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/12/2021
-ms.locfileid: "60943000"
+ms.lasthandoff: 11/10/2021
+ms.locfileid: "60890707"
 ---
 # <a name="list-class-assignments"></a>Listar atribuições de classe
 
@@ -27,7 +27,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 | Tipo de permissão                        | Permissões (da com menos para a com mais privilégios)                                                            |
 | :------------------------------------- | :----------------------------------------------------------------------------------------------------- |
 | Delegado (conta corporativa ou de estudante)     | EduAssignments.ReadBasic, EduAssignments.ReadWriteBasic, EduAssignments.Read, EduAssignments.ReadWrite |
-| Delegada (conta pessoal da Microsoft) | Sem suporte.                                                                                         |
+| Delegado (conta pessoal da Microsoft) | Sem suporte.                                                                                         |
 | Aplicativo                            | EduAssignments.ReadBasic.All, EduAssignments.ReadWriteBasic.All, EduAssignments.Read.All, EduAssignments.ReadWrite.All |
 
 ## <a name="http-request"></a>Solicitação HTTP
@@ -109,6 +109,7 @@ Este é um exemplo de resposta.
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
+Content-length: 344
 
 {
   "value": [

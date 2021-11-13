@@ -2,15 +2,15 @@
 title: 'updatableAsset: enrollAssetsById'
 description: Registrar recursos updatableAsset do mesmo tipo no gerenciamento de atualizações pelo serviço de implantação.
 author: Alice-at-Microsoft
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: w10
 doc_type: apiPageType
-ms.openlocfilehash: 127817e3623b86854f8c69812c385a25aee323f4
-ms.sourcegitcommit: 2a35434fabc76672e21bfc3ed5a1d28f9f3b66bc
+ms.openlocfilehash: cededf7c8d555f65a85d975a9a809a59c3180895
+ms.sourcegitcommit: c6a8c1cc13ace38d6c4371139ee84707c5c93352
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/06/2021
-ms.locfileid: "52241163"
+ms.lasthandoff: 11/10/2021
+ms.locfileid: "60891078"
 ---
 # <a name="updatableasset-enrollassetsbyid"></a>updatableAsset: enrollAssetsById
 Namespace: microsoft.graph.windowsUpdates
@@ -26,8 +26,8 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 |Tipo de permissão|Permissões (da com menos para a com mais privilégios)|
 |:---|:---|
-|Delegada (conta corporativa ou de estudante)|WindowsUpdates.ReadWrite.All|
-|Delegada (conta pessoal da Microsoft)|Sem suporte.|
+|Delegado (conta corporativa ou de estudante)|WindowsUpdates.ReadWrite.All|
+|Delegado (conta pessoal da Microsoft)|Sem suporte.|
 |Aplicativo|WindowsUpdates.ReadWrite.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
@@ -53,8 +53,8 @@ A tabela a seguir mostra os parâmetros que podem ser usados com esta ação.
 
 |Parâmetro|Tipo|Descrição|
 |:---|:---|:---|
-|updateCategory|microsoft.graph.windowsUpdates.updateCategory|A categoria de atualizações para o serviço gerenciar. Oferece suporte a um subconjunto dos valores **para updateCategory**. Os valores possíveis são: `feature` .|
-|memberEntityType|Cadeia de caracteres|O tipo completo dos **recursos updatableAsset.** Os valores possíveis são: `#microsoft.graph.windowsUpdates.azureADDevice` .|
+|updateCategory|microsoft.graph.windowsUpdates.updateCategory|A categoria de atualizações para o serviço gerenciar. Oferece suporte a um subconjunto dos valores **para updateCategory**. Os valores possíveis são: `feature` e `unknownFutureValue`.|
+|memberEntityType|Cadeia de Caracteres|O tipo completo dos **recursos updatableAsset.** Os valores possíveis são: `#microsoft.graph.windowsUpdates.azureADDevice` .|
 |ids|Coleção de cadeias de caracteres|Lista de identificadores correspondentes aos **recursos updatableAsset** para se inscrever no gerenciamento de atualizações pelo serviço para **a atualização determinadaCategory**.|
 
 ## <a name="response"></a>Resposta

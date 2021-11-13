@@ -2,15 +2,15 @@
 title: Tipo de recurso teamsAppUpgradedEventMessageDetail
 description: Representa os detalhes de uma mensagem de evento sobre teamsApp atualizado.
 author: RamjotSingh
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: microsoft-teams
 doc_type: resourcePageType
-ms.openlocfilehash: 4bca8bbb7c218333d72cb290e508b352fd977f2d
-ms.sourcegitcommit: a598c09b73e4e43eea5f4aaefea7ffe062e15c39
+ms.openlocfilehash: 1ab9353c2d64073b21ebc7551ac30a8dad6d8525
+ms.sourcegitcommit: c6a8c1cc13ace38d6c4371139ee84707c5c93352
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/22/2021
-ms.locfileid: "53535669"
+ms.lasthandoff: 11/10/2021
+ms.locfileid: "60890567"
 ---
 # <a name="teamsappupgradedeventmessagedetail-resource-type"></a>Tipo de recurso teamsAppUpgradedEventMessageDetail
 
@@ -18,8 +18,8 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Representa os detalhes de uma mensagem de evento sobre teamsApp atualizado.
-Essa mensagem é gerada quando um teamsApp é atualizado em um canal, um chat ou uma equipe.
+Representa os detalhes de uma mensagem de evento sobre uma **atualização do teamsApp.**
+Essa mensagem é gerada quando um **teamsApp** é atualizado em um canal, um chat ou uma equipe.
 
 
 Herda de [eventMessageDetail](../resources/eventmessagedetail.md).
@@ -28,8 +28,8 @@ Herda de [eventMessageDetail](../resources/eventmessagedetail.md).
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
 |Iniciador|[identitySet](../resources/identityset.md)|Iniciador do evento.|
-|teamsAppDisplayName|Cadeia de Caracteres|Nome de exibição do teamsApp.|
-|teamsAppId|Cadeia de Caracteres|Identificador exclusivo do teamsApp.|
+|teamsAppDisplayName|Cadeia de Caracteres|Nome de exibição do **teamsApp**.|
+|teamsAppId|Cadeia de Caracteres|Identificador exclusivo do **teamsApp**.|
 
 ## <a name="json-representation"></a>Representação JSON
 Veja a seguir uma representação JSON do recurso.

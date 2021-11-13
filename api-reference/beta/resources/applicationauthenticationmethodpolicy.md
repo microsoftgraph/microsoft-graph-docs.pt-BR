@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: madansr7
 ms.prod: identity-and-sign-in
 doc_type: conceptualPageType
-ms.openlocfilehash: 400408b1122feab3a10d951facb0fc40df938052
-ms.sourcegitcommit: c7ff992ef63e480d070421ba99b28ee129cb6acb
+ms.openlocfilehash: c9b9fd8ac70e8d00563ff2c96eb15e56eeae706d
+ms.sourcegitcommit: c6a8c1cc13ace38d6c4371139ee84707c5c93352
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "60688242"
+ms.lasthandoff: 11/10/2021
+ms.locfileid: "60890371"
 ---
 # <a name="azure-ad-application-authentication-methods-api-overview-preview"></a>Visão geral da API dos métodos de autenticação do aplicativo do Azure AD (visualização)
 
@@ -56,6 +56,9 @@ A API de política de métodos de autenticação de aplicativo oferece as seguin
 | symmetricKeyAddition | Restringir chaves simétricas em aplicativos. | Bloquear novas chaves simétricas em aplicativos criados em ou após 01/01/2019. |
 | symmetricKeyLifetime | Impor um intervalo máximo de vida útil para uma chave simétrica.   | Restrinja todas as novas chaves simétricas a um máximo de 30 dias para aplicativos criados após 01/01/2019. |
 | asymmetricKeyLifetime | Impor um intervalo máximo de vida útil para uma chave assimétrica (certificado).   | Restrinja todos os novos segredos de chave assimétricas a no máximo 30 dias para aplicativos criados após 01/01/2019. |
+
+> [!Note]
+> Todas as restrições de vida são expressas no formato de duração ISO-8601 (Por exemplo: P4DT12H30M5S).
 
 ### <a name="single-vs-multi-tenant-apps"></a>Aplicativos single vs multi-tenant
 

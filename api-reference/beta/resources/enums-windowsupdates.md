@@ -5,12 +5,12 @@ author: Alice-at-Microsoft
 ms.localizationpriority: medium
 ms.prod: w10
 doc_type: enumTypes
-ms.openlocfilehash: 8542515437150e95aa54f01a9a9e28de2eb9eb71
-ms.sourcegitcommit: c7ff992ef63e480d070421ba99b28ee129cb6acb
+ms.openlocfilehash: bd94ad9389160df59f59c24a70b4c1c3eea368e1
+ms.sourcegitcommit: c6a8c1cc13ace38d6c4371139ee84707c5c93352
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "60695962"
+ms.lasthandoff: 11/10/2021
+ms.locfileid: "60890574"
 ---
 # <a name="microsoft-graph-windows-updates-enumeration-values"></a>Valores de enumeração do Microsoft Graph Windows Updates
 
@@ -24,6 +24,7 @@ Namespace: microsoft.graph.windowsUpdates
 |invalidAzureADDeviceId|
 |missingTrustType|
 |invalidAzureADJoin|
+|unknownFutureValue|
 
 ### <a name="deploymentstatereasonvalue-values"></a>valores deploymentStateReasonValue 
 
@@ -33,6 +34,7 @@ Namespace: microsoft.graph.windowsUpdates
 |offeringByRequest|
 |pausedByRequest|
 |pausedByMonitoring|
+|unknownFutureValue|
 |faultedByContentOutdated|
 
 ### <a name="deploymentstatevalue-values"></a>valores deploymentStateValue 
@@ -44,6 +46,7 @@ Namespace: microsoft.graph.windowsUpdates
 |pausado|
 |faulted|
 |arquivado|
+|unknownFutureValue|
 
 ### <a name="equivalentcontentoption-values"></a>valores equivalentContentOption 
 
@@ -51,6 +54,7 @@ Namespace: microsoft.graph.windowsUpdates
 |:---|
 |none|
 |latestSecurity|
+|unknownFutureValue|
 
 ### <a name="monitoringaction-values"></a>valores monitoringAction 
 
@@ -58,12 +62,14 @@ Namespace: microsoft.graph.windowsUpdates
 |:---|
 |alertError|
 |pauseDeployment|
+|unknownFutureValue|
 
 ### <a name="monitoringsignal-values"></a>monitoringSignal values 
 
 |Member|
 |:---|
 |rollback|
+|unknownFutureValue|
 
 ### <a name="qualityupdateclassification-values"></a>valores qualityUpdateClassification 
 
@@ -72,6 +78,7 @@ Namespace: microsoft.graph.windowsUpdates
 |all|
 |security|
 |nonSecurity|
+|unknownFutureValue|
 
 ### <a name="requesteddeploymentstatevalue-values"></a>valores requestedDeploymentStateValue 
 
@@ -80,12 +87,14 @@ Namespace: microsoft.graph.windowsUpdates
 |none|
 |pausado|
 |arquivado|
+|unknownFutureValue|
 
 ### <a name="safeguardcategory-values"></a>valores safeguardCategory 
 
 |Member|
 |:---|
 |likelyIssues|
+|unknownFutureValue|
 
 ### <a name="updatecategory-values"></a>valores updateCategory 
 
@@ -93,6 +102,7 @@ Namespace: microsoft.graph.windowsUpdates
 |:---|
 |feature|
 |quality|
+|unknownFutureValue|
 
 <!--
 {

@@ -2,15 +2,15 @@
 title: Tipo de recurso azureADDeviceRegistrationError
 description: Um erro no processo de registro de um dispositivo do Azure AD que impede o serviço de registrar o dispositivo no gerenciamento de atualizações ou implantar conteúdo no dispositivo.
 author: Alice-at-Microsoft
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: w10
 doc_type: resourcePageType
-ms.openlocfilehash: 1d08ab96d5298c70f34acf89e3c6c4605d9df0a1
-ms.sourcegitcommit: 1b09298649d5606b471b4cbe1055419bbe2fc7e5
+ms.openlocfilehash: 8ef1d16203f4b2197a0f8cdb93aaeae073d77ccb
+ms.sourcegitcommit: c6a8c1cc13ace38d6c4371139ee84707c5c93352
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "52067800"
+ms.lasthandoff: 11/10/2021
+ms.locfileid: "60890364"
 ---
 # <a name="azureaddeviceregistrationerror-resource-type"></a>Tipo de recurso azureADDeviceRegistrationError
 
@@ -25,7 +25,7 @@ Herda de [updatableAssetError](../resources/windowsupdates-updatableasseterror.m
 ## <a name="properties"></a>Propriedades
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|motivo|microsoft.graph.windowsUpdates.azureADDeviceRegistrationErrorReason|O motivo pelo qual o registro encontrou um erro. Os valores possíveis são: `invalidGlobalDeviceId`, `invalidAzureADDeviceId`, `missingTrustType`, `invalidAzureADJoin`.|
+|motivo|microsoft.graph.windowsUpdates.azureADDeviceRegistrationErrorReason|O motivo pelo qual o registro encontrou um erro. Os valores possíveis são: `invalidGlobalDeviceId`, `invalidAzureADDeviceId`, `missingTrustType`, `invalidAzureADJoin`, `unknownFutureValue`.|
 
 ## <a name="relationships"></a>Relações
 Nenhum

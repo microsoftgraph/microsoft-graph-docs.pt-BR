@@ -404,12 +404,20 @@ items:
                     href: api/insights-list-used.md
               - name: Controle de organização (visualização)
                 items:
-                  - name: Configurações de insights de item
-                    href: resources/iteminsightssettings.md
-                  - name: Obter
-                    href: api/iteminsightssettings-get.md
-                  - name: Atualizar
-                    href: api/iteminsightssettings-update.md
+                  - name: Insights configurações
+                    href: resources/insightssettings.md
+                  - name: Configurações informações sobre o item
+                    items:
+                      - name: Listar
+                        href: api/organizationsettings-list-iteminsights.md
+                      - name: Atualizar
+                        href: api/insightssettings-update.md
+                  - name: Configurações informações de pessoas
+                    items:
+                      - name: Listar
+                        href: api/organizationsettings-list-peopleinsights.md
+                      - name: Atualizar
+                        href: api/insightssettings-update.md
               - name: Controle do usuário (visualização)
                 items:
                   - name: Configurações de insights do usuário
@@ -442,7 +450,7 @@ items:
                 href: api/mailfolder-list-messagerules.md
               - name: Enviar email
                 href: api/user-sendmail.md
-          - name: Observações
+          - name: Notas
             items:
               - name: Onenote
                 href: resources/onenote.md
@@ -499,6 +507,14 @@ items:
                 href: resources/person.md
               - name: Listar pessoas
                 href: api/user-list-people.md
+              - name: Configurações informações de pessoas
+                items:
+                  - name: Insights configurações
+                    href: resources/insightssettings.md
+                  - name: Listar
+                    href: api/organizationsettings-list-peopleinsights.md
+                  - name: Atualizar
+                    href: api/insightssettings-update.md
           - name: Foto
             href: resources/profilephoto.md
             items:
@@ -577,9 +593,9 @@ items:
                 href: api/usersettings-update.md
       - name: Grupos
         items:
-          - name: Visão Geral
+          - name: Visão geral
             href: resources/groups-overview.md
-          - name: Group
+          - name: Grupo
             href: resources/group.md
             items:
               - name: Listar grupos
@@ -1507,7 +1523,7 @@ items:
                 href: api/call-logteleconferencedevicequality.md
           - name: Registros de chamadas
             items:
-              - name: Visão Geral
+              - name: Visão geral
                 href: resources/callrecords-api-overview.md
               - name: Registro de chamada
                 items:
@@ -1582,7 +1598,7 @@ items:
       - name: Conformidade
         displayName: 'Compliance API, Microsoft Graph Compliance API'
         items:
-          - name: Visão Geral
+          - name: Visão geral
             href: resources/complianceapioverview.md
           - name: Descoberta eDiscovery (visualização)
             items:
@@ -1742,7 +1758,7 @@ items:
                     href: api/ediscovery-tag-ashierarchy.md
           - name: Solicitação de direitos do sujeito
             items:
-              - name: Visão Geral
+              - name: Visão geral
                 href: resources/subjectrightsrequest-subjectrightsrequestapioverview.md
               - name: Solicitação de direitos do sujeito
                 href: resources/subjectrightsrequest.md
@@ -9808,7 +9824,7 @@ items:
                         href: api/intune-tem-telecomexpensemanagementpartner-update.md
           - name: Cloud PC (visualização)
             items:
-              - name: Visão Geral
+              - name: Visão geral
                 href: resources/cloudpc-api-overview.md
               - name: Ponto de extremidade virtual
                 href: resources/virtualendpoint.md
@@ -9849,13 +9865,6 @@ items:
                     href: api/cloudpcdeviceimage-getsourceimages.md
                   - name: Reupload
                     href: api/cloudpcdeviceimage-reupload.md
-              - name: Imagem da galeria de computadores na nuvem
-                href: resources/cloudpcgalleryimage.md
-                items:
-                  - name: Listar
-                    href: api/virtualendpoint-list-galleryimages.md
-                  - name: Obter
-                    href: api/cloudpcgalleryimage-get.md
               - name: Conexão local do computador na nuvem
                 href: resources/cloudpconpremisesconnection.md
                 items:
@@ -10492,7 +10501,7 @@ items:
       - name: Arquivos
         displayName: 'OneDrive, OneDrive for Business, OneDrive business, OneDrive personal, SharePoint'
         items:
-          - name: Visão Geral
+          - name: Visão geral
             href: resources/onedrive.md
           - name: Unidades
             href: resources/drive.md
@@ -11225,7 +11234,7 @@ items:
             items:
               - name: Métodos de autenticação
                 items:
-                  - name: Visão Geral
+                  - name: Visão geral
                     href: resources/authenticationmethods-overview.md
                   - name: Listar todos os métodos
                     href: api/authentication-list-methods.md
@@ -12776,6 +12785,14 @@ items:
                 href: resources/person.md
               - name: Listar pessoas
                 href: api/user-list-people.md
+              - name: Configurações informações de pessoas
+                items:
+                  - name: Insights configurações
+                    href: resources/insightssettings.md
+                  - name: Listar
+                    href: api/organizationsettings-list-peopleinsights.md
+                  - name: Atualizar
+                    href: api/insightssettings-update.md
           - name: Perfil (visualização)
             items:
               - name: Perfil
@@ -12924,7 +12941,7 @@ items:
                     href: api/personname-update.md
                   - name: Excluir
                     href: api/personname-delete.md
-              - name: Observações
+              - name: Notas
                 items:
                   - name: Anotação de pessoa
                     href: resources/personannotation.md
@@ -13084,37 +13101,36 @@ items:
                 items:
                   - name: Insights de item (visualização)
                     href: resources/iteminsights.md
-                  - name: Compartilhados
-                    href: resources/insights-shared.md
+                  - name: Listar compartilhados
+                    href: api/insights-list-shared.md
+                  - name: Listar tendências
+                    href: api/insights-list-trending.md
+                  - name: Listar usados
+                    href: api/insights-list-used.md
+              - name: Controle de organização (visualização)
+                items:
+                  - name: Insights configurações
+                    href: resources/insightssettings.md
+                  - name: Configurações informações sobre o item
                     items:
-                      - name: Listar compartilhados
-                        href: api/insights-list-shared.md
-                  - name: Tendências
-                    href: resources/insights-trending.md
-                    items:
-                      - name: Listar tendências
-                        href: api/insights-list-trending.md
-                  - name: Usados
-                    href: resources/insights-used.md
-                    items:
-                      - name: Listar usados
-                        href: api/insights-list-used.md
-                  - name: Controle de organização (visualização)
-                    items:
-                      - name: Configurações de insights de item
-                        href: resources/iteminsightssettings.md
-                      - name: Obter
-                        href: api/iteminsightssettings-get.md
+                      - name: Listar
+                        href: api/organizationsettings-list-iteminsights.md
                       - name: Atualizar
-                        href: api/iteminsightssettings-update.md
-                  - name: Controle do usuário (visualização)
+                        href: api/insightssettings-update.md
+                  - name: Configurações informações de pessoas
                     items:
-                      - name: Configurações de insights do usuário
-                        href: resources/userinsightssettings.md
-                      - name: Obter
-                        href: api/userinsightssettings-get.md
+                      - name: Listar
+                        href: api/organizationsettings-list-peopleinsights.md
                       - name: Atualizar
-                        href: api/userinsightssettings-update.md
+                        href: api/insightssettings-update.md
+              - name: Controle do usuário (visualização)
+                items:
+                  - name: Configurações de insights do usuário
+                    href: resources/userinsightssettings.md
+                  - name: Obter
+                    href: api/userinsightssettings-get.md
+                  - name: Atualizar
+                    href: api/userinsightssettings-update.md
           - name: Menção (visualização)
             href: resources/mention.md
           - name: Análise (visualização)
@@ -13274,7 +13290,7 @@ items:
                         href: api/applicationsignindetailedsummary-get.md
               - name: Registro e utilização
                 items:
-                  - name: Visão Geral
+                  - name: Visão geral
                     href: resources/authenticationmethods-usage-insights-overview.md
                   - name: Contagem de Registro de Usuário credencial
                     href: resources/credentialuserregistrationcount.md
@@ -13908,7 +13924,7 @@ items:
                     href: api/termstore-store-get.md
                   - name: Atualizar
                     href: api/termstore-store-update.md
-              - name: Group
+              - name: Grupo
                 href: resources/termstore-group.md
                 items:
                   - name: Criar
@@ -13959,7 +13975,7 @@ items:
         items:
           - name: Visão Geral
             href: resources/planner-overview.md
-          - name: Planejar
+          - name: Plano
             href: resources/plannerplan.md
             items:
               - name: Listar os planos do grupo
@@ -14248,10 +14264,6 @@ items:
                 href: api/chat-list-operations.md
               - name: Obter operação
                 href: api/teamsasyncoperation-get.md
-              - name: Marcar o chat como leitura
-                href: api/chat-markchatreadforuser.md
-              - name: Marcar o chat como não lido
-                href: api/chat-markchatunreadforuser.md
           - name: Mensagem de chat
             href: resources/chatmessage.md
             items:
@@ -14760,7 +14772,7 @@ items:
                     href: api/outlookcategory-delete.md
               - name: Propriedades estendidas
                 items:
-                  - name: Visão Geral
+                  - name: Visão geral
                     href: resources/extended-properties-overview.md
                   - name: Propriedades estendidas de valor único
                     items:

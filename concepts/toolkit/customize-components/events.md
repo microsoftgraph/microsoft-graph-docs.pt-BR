@@ -3,12 +3,12 @@ title: Manipular eventos expostos pelos componentes Graph Toolkit Microsoft
 description: Muitos componentes Graph Toolkit Microsoft emitem eventos personalizados. Anexar manipuladores de eventos a esses eventos permite que você responda a eles e controle o comportamento do seu aplicativo.
 ms.localizationpriority: medium
 author: waldekmastykarz
-ms.openlocfilehash: e58cda326bf939ad5d0850336e7d02739d372133
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 31dacb14c4b4faacc7f97626fef0977bbf74b443
+ms.sourcegitcommit: c6a8c1cc13ace38d6c4371139ee84707c5c93352
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59129590"
+ms.lasthandoff: 11/10/2021
+ms.locfileid: "60890588"
 ---
 # <a name="handle-events-exposed-by-microsoft-graph-toolkit-components"></a>Manipular eventos expostos pelos componentes Graph Toolkit Microsoft
 
@@ -28,7 +28,7 @@ A Microsoft Graph Toolkit usa a [`EventTarget.dispatchEvent()`](https://develope
 Por exemplo, para manipular o evento emitido pelo componente de lista `itemClick` arquivo, adicione o seguinte ao código.
 
 ```javascript
-document.querySelector('mgt-file-list').addEventListener('itemClick' e => {
+document.querySelector('mgt-file-list').addEventListener('itemClick', e => {
   // your event handler code goes here
 });
 ```

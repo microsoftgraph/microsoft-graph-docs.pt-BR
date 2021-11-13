@@ -5,12 +5,12 @@ author: dipakboyed
 ms.localizationpriority: medium
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: 9b12786e859d12eb9d9af77674dfdee88e44e482
-ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
+ms.openlocfilehash: 6789234c1e31959a8205e7431f84cb138e81dde8
+ms.sourcegitcommit: c6a8c1cc13ace38d6c4371139ee84707c5c93352
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/12/2021
-ms.locfileid: "60930461"
+ms.lasthandoff: 11/10/2021
+ms.locfileid: "60891038"
 ---
 # <a name="list-submissions"></a>Listar envios
 
@@ -28,7 +28,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
 |:--------------------|:---------------------------------------------------------|
 |Delegado (conta corporativa ou de estudante) |  EduAssignments.ReadBasic, EduAssignments.ReadWriteBasic, EduAssignments.Read, EduAssignments.ReadWrite  |
-|Delegada (conta pessoal da Microsoft) |  Sem suporte.  |
+|Delegado (conta pessoal da Microsoft) |  Sem suporte.  |
 |Aplicativo | EduAssignments.ReadBasic.All, EduAssignments.ReadWriteBasic.All, EduAssignments.Read.All, EduAssignments.ReadWrite.All | 
 
 ## <a name="http-request"></a>Solicitação HTTP
@@ -100,6 +100,7 @@ Este é um exemplo de resposta.
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
+Content-length: 873
 
 {
     "value": [

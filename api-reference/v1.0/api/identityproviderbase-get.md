@@ -5,19 +5,19 @@ ms.localizationpriority: medium
 doc_type: apiPageType
 author: namkedia
 ms.prod: identity-and-sign-in
-ms.openlocfilehash: 443d2e50f9bb480290874c976132e28e72ea94a5
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 243b7e7f78c0376a8ee77f3849204b74e9e47862
+ms.sourcegitcommit: c6a8c1cc13ace38d6c4371139ee84707c5c93352
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59147385"
+ms.lasthandoff: 11/10/2021
+ms.locfileid: "60890329"
 ---
 # <a name="get-identityprovider"></a>Obter identityProvider
 Namespace: microsoft.graph
 
-Obter as propriedades e as relações do provedor de identidade especificado no locatário.
+Obter as propriedades e as relações do provedor de identidade especificado configurado no locatário.
 
-Entre os tipos de provedores derivados de identityProviderBase, você pode obter atualmente um [recurso socialIdentityProvider](../resources/socialidentityprovider.md) ou [builtinIdentityProvider](../resources/builtinidentityprovider.md) no Azure AD. No Azure AD B2C, essa operação pode obter atualmente um [recurso socialIdentityProvider.](../resources/socialidentityprovider.md)
+Entre os tipos de provedores derivados de identityProviderBase, você pode obter atualmente um [recurso socialIdentityProvider](../resources/socialidentityprovider.md) ou [builtinIdentityProvider](../resources/builtinidentityprovider.md) no Azure AD. No Azure AD B2C, essa operação pode obter atualmente um [recurso socialIdentityProvider](../resources/socialidentityprovider.md)ou [um recurso appleManagedIdentityProvider.](../resources/applemanagedidentityprovider.md)
 
 ## <a name="permissions"></a>Permissões
 
@@ -31,7 +31,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 A conta de trabalho ou de estudante precisa pertencer a uma das seguintes funções:
 
-* Administrador global
+* Administrador Global
 * Administrador do Provedor de Identidade Externa
 * Administrador de fluxo de usuário de ID externa
 
@@ -57,7 +57,7 @@ Não forneça um corpo de solicitação para esse método.
 
 Se tiver êxito, este método retornará um código de resposta e uma representação JSON de `200 OK` [um socialIdentityProvider](../resources/socialidentityprovider.md) ou um [builtinIdentityProvider](../resources/builtinidentityprovider.md) no corpo da resposta para um locatário do Azure AD.
 
-Para um locatário do Azure AD B2C, este método retorna um código de resposta e uma representação JSON de um `200 OK` [objeto socialIdentityProvider](../resources/socialidentityprovider.md) no corpo da resposta.
+Para um locatário do Azure AD B2C, este método retorna um código de resposta e uma representação JSON de `200 OK` [um objeto socialIdentityProvider](../resources/socialidentityprovider.md) ou [appleManagedIdentityProvider](../resources/applemanagedidentityprovider.md) no corpo da resposta.
 
 ## <a name="examples"></a>Exemplos
 
@@ -174,5 +174,46 @@ Content-type: application/json
     "id": "MSASignup-OAUTH",
     "identityProviderType": "MicrosoftAccount",
     "displayName": "MicrosoftAccount"
+}
+```
+
+### <a name="example-3-retrieves-apple-identity-provideronly-for-azure-ad-b2c"></a>Exemplo 3: recupera o provedor de identidade da Apple(somente para o Azure AD B2C)
+
+#### <a name="request"></a>Solicitação
+
+Este é um exemplo de solicitação.
+
+<!-- {
+  "blockType": "request",
+  "name": "get_applemanagedidentityprovider_from_identityproviderbase"
+}
+-->
+
+```http
+GET https://graph.microsoft.com/v1.0/identity/identityProviders/Apple-Managed-OIDC
+```
+
+#### <a name="response"></a>Resposta
+
+Este é um exemplo de resposta.
+>**Observação:** o objeto de resposta mostrado aqui pode ser encurtado para legibilidade.
+
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.appleManagedIdentityProvider"
+} -->
+
+```http
+HTTP/1.1 200 OK
+Content-type: application/json
+
+{
+    "id": "Apple-Managed-OIDC",
+    "displayName": "Sign in with Apple",
+    "developerId": "UBF8T346G9",
+    "serviceId": "com.microsoft.rts.b2c.test.client",
+    "keyId": "99P6D879C4",
+    "certificateData": "******"
 }
 ```

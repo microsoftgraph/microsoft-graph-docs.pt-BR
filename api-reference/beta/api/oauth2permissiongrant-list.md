@@ -1,18 +1,18 @@
 ---
-title: Listar oAuth2PermissionGrants
+title: Listar oAuth2PermissionGrants (concessões de permissão delegadas)
 description: Recupere uma lista de objetos oauth2PermissionGrant, representando concessões de permissão delegadas.
 ms.localizationpriority: medium
 doc_type: apiPageType
 ms.prod: identity-and-sign-in
 author: psignoret
-ms.openlocfilehash: 5b4773d249ae25dd00ab754b015569cb1bedf645
-ms.sourcegitcommit: 08e9b0bac39c1b1d2c8a79539d24aaa93364baf2
+ms.openlocfilehash: d2bd9db01e1da526268c28cdec5332f63dfab0bd
+ms.sourcegitcommit: c6a8c1cc13ace38d6c4371139ee84707c5c93352
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/24/2021
-ms.locfileid: "59765960"
+ms.lasthandoff: 11/10/2021
+ms.locfileid: "60891148"
 ---
-# <a name="list-oauth2permissiongrants"></a>Lista oauth2PermissionGrants
+# <a name="list-oauth2permissiongrants-delegated-permission-grants"></a>Listar oauth2PermissionGrants (concessões de permissão delegadas)
 
 Namespace: microsoft.graph
 
@@ -93,6 +93,8 @@ GET https://graph.microsoft.com/beta/oauth2PermissionGrants
 
 ### <a name="response"></a>Resposta
 
+Este é um exemplo de resposta.
+
 > **Observação:** o objeto de resposta mostrado aqui pode ser encurtado para legibilidade.
 
 <!-- {
@@ -105,21 +107,33 @@ GET https://graph.microsoft.com/beta/oauth2PermissionGrants
 ```http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 259
 
 {
-  "value": [
-    {
-      "id": "id-value",
-      "clientId": "clientId-value",
-      "consentType": "consentType-value",
-      "principalId": "principalId-value",
-      "resourceId": "resourceId-value",
-      "scope": "scope-value",
-      "startTime": "datetime-value",
-      "expiryTime": "datetime-value"
-    }
-  ]
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#oauth2PermissionGrants",
+    "value": [
+        {
+            "@odata.id": "https://graph.microsoft.com/v2/84841066-274d-4ec0-a5c1-276be684bdd3/oauth2PermissionGrants/AVs6JuUDjkCFV7q2gd8QTPimBBgj5iBFj0C6GwwRxC0",
+            "clientId": "263a5b01-03e5-408e-8557-bab681df104c",
+            "consentType": "AllPrincipals",
+            "expiryTime": "2022-01-29T10:32:59.5138373Z",
+            "id": "AVs6JuUDjkCFV7q2gd8QTPimBBgj5iBFj0C6GwwRxC0",
+            "principalId": null,
+            "resourceId": "1804a6f8-e623-4520-8f40-ba1b0c11c42d",
+            "scope": "User.Read Group.ReadWrite.All",
+            "startTime": "0001-01-01T00:00:00Z"
+        },
+        {
+            "@odata.id": "https://graph.microsoft.com/v2/84841066-274d-4ec0-a5c1-276be684bdd3/oauth2PermissionGrants/AVs6JuUDjkCFV7q2gd8QTOQDNpSH5-lPk9HjD3Sarjk",
+            "clientId": "263a5b01-03e5-408e-8557-bab681df104c",
+            "consentType": "AllPrincipals",
+            "expiryTime": "2031-08-02T14:05:12.575045Z",
+            "id": "AVs6JuUDjkCFV7q2gd8QTOQDNpSH5-lPk9HjD3Sarjk",
+            "principalId": null,
+            "resourceId": "943603e4-e787-4fe9-93d1-e30f749aae39",
+            "scope": "Tasks.ReadWrite Files.ReadWrite.All Files.ReadWrite Contacts.ReadWrite Calendars.ReadWrite Mail.ReadWrite Directory.AccessAsUser.All Directory.ReadWrite.All Group.ReadWrite.All Group.Read.All User.ReadWrite Mail.ReadWrite.Shared Mail.Send.Shared Calendars.ReadWrite.Shared Contacts.ReadWrite.Shared Tasks.ReadWrite.Shared Sites.ReadWrite.All Files.ReadWrite.AppFolder Files.ReadWrite.Selected Notes.ReadWrite Notes.ReadWrite.All MailboxSettings.ReadWrite DeviceManagementManagedDevices.PrivilegedOperations.All DeviceManagementManagedDevices.ReadWrite.All DeviceManagementRBAC.ReadWrite.All DeviceManagementApps.ReadWrite.All DeviceManagementConfiguration.ReadWrite.All openid profile Directory.Read.All User.Read.All User.ReadWrite.All ChannelMember.ReadWrite.All DeviceManagementServiceConfiguration.ReadWrite.All",
+            "startTime": "0001-01-01T00:00:00Z"
+        }
+    ]
 }
 ```
 

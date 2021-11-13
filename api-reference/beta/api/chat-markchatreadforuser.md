@@ -5,12 +5,12 @@ author: sweta-thapliyal
 ms.localizationpriority: medium
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: d20031641befc87ef198544798adc397560b3982
-ms.sourcegitcommit: f9e71d3b8a54a98c282ef49783babe5698300c06
+ms.openlocfilehash: 0f906baa5dc37c102cd8e72a66078f5d5ade4be9
+ms.sourcegitcommit: c6a8c1cc13ace38d6c4371139ee84707c5c93352
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/05/2021
-ms.locfileid: "60793971"
+ms.lasthandoff: 11/10/2021
+ms.locfileid: "60890637"
 ---
 # <a name="chat-markchatreadforuser"></a>chat: markChatReadForUser
 Namespace: microsoft.graph
@@ -24,8 +24,8 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 |Tipo de permissão|Permissões (da com menos para a com mais privilégios)|
 |:---|:---|
-|Delegada (conta corporativa ou de estudante)|Chat.ReadWrite|
-|Delegada (conta pessoal da Microsoft) | Sem suporte. |
+|Delegado (conta corporativa ou de estudante)|Chat.ReadWrite|
+|Delegado (conta pessoal da Microsoft) | Sem suporte. |
 |Aplicativo | Sem suporte. |
 
 ## <a name="http-request"></a>Solicitação HTTP
@@ -61,6 +61,8 @@ Se tiver êxito, esta ação retornará um código de resposta `204 No Content`.
 ## <a name="examples"></a>Exemplos
 
 ### <a name="request"></a>Solicitação
+
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "chat_markchatreadforuser"
@@ -78,6 +80,24 @@ Content-length: 106
   "tenantId": "2a690434-97d9-4eed-83a6-f5f13600199a"
 }
 ```
+# <a name="c"></a>[C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/chat-markchatreadforuser-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/chat-markchatreadforuser-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/chat-markchatreadforuser-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/chat-markchatreadforuser-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 
 ### <a name="response"></a>Resposta

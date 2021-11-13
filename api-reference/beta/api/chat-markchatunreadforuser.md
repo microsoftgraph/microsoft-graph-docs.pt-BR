@@ -5,12 +5,12 @@ author: sweta-thapliyal
 ms.localizationpriority: medium
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 027711b00e5148d6730b7efb1c0f1f421d6c2ab5
-ms.sourcegitcommit: f9e71d3b8a54a98c282ef49783babe5698300c06
+ms.openlocfilehash: f107f67d388ead1876a0478b1a1a5840bff28e03
+ms.sourcegitcommit: c6a8c1cc13ace38d6c4371139ee84707c5c93352
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/05/2021
-ms.locfileid: "60793970"
+ms.lasthandoff: 11/10/2021
+ms.locfileid: "60890602"
 ---
 # <a name="chat-markchatunreadforuser"></a>chat: markChatUnreadForUser
 Namespace: microsoft.graph
@@ -24,8 +24,8 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 |Tipo de permissão|Permissões (da com menos para a com mais privilégios)|
 |:---|:---|
-|Delegada (conta corporativa ou de estudante)|Chat.ReadWrite|
-|Delegada (conta pessoal da Microsoft) | Sem suporte. |
+|Delegado (conta corporativa ou de estudante)|Chat.ReadWrite|
+|Delegado (conta pessoal da Microsoft) | Sem suporte. |
 |Aplicativo | Sem suporte. |
 
 ## <a name="http-request"></a>Solicitação HTTP
@@ -64,6 +64,8 @@ Se tiver êxito, esta ação retornará um código de resposta `204 No Content`.
 ## <a name="examples"></a>Exemplos
 
 ### <a name="request"></a>Solicitação
+
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "chat_markchatunreadforuser"
@@ -82,6 +84,24 @@ Content-length: 158
   "lastMessageReadDateTime": "2021-05-27T22:13:01.577Z"
 }
 ```
+# <a name="c"></a>[C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/chat-markchatunreadforuser-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/chat-markchatunreadforuser-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/chat-markchatunreadforuser-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/chat-markchatunreadforuser-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 
 ### <a name="response"></a>Resposta

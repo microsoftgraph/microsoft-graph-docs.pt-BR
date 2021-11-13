@@ -2,15 +2,15 @@
 title: 'updatableAsset: enrollAssets'
 description: Registrar recursos updatableAsset no gerenciamento de atualizações pelo serviço de implantação.
 author: Alice-at-Microsoft
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: w10
 doc_type: apiPageType
-ms.openlocfilehash: e83dd02ded297cde0e80b535a9d4fcb01ed45ae6
-ms.sourcegitcommit: 2a35434fabc76672e21bfc3ed5a1d28f9f3b66bc
+ms.openlocfilehash: 7ae0848507f6d46edfea6d7faf47d4083eed43a1
+ms.sourcegitcommit: c6a8c1cc13ace38d6c4371139ee84707c5c93352
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/06/2021
-ms.locfileid: "52241208"
+ms.lasthandoff: 11/10/2021
+ms.locfileid: "60891085"
 ---
 # <a name="updatableasset-enrollassets"></a>updatableAsset: enrollAssets
 Namespace: microsoft.graph.windowsUpdates
@@ -30,8 +30,8 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 |Tipo de permissão|Permissões (da com menos para a com mais privilégios)|
 |:---|:---|
-|Delegada (conta corporativa ou de estudante)|WindowsUpdates.ReadWrite.All|
-|Delegada (conta pessoal da Microsoft)|Sem suporte.|
+|Delegado (conta corporativa ou de estudante)|WindowsUpdates.ReadWrite.All|
+|Delegado (conta pessoal da Microsoft)|Sem suporte.|
 |Aplicativo|WindowsUpdates.ReadWrite.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
@@ -57,7 +57,7 @@ A tabela a seguir mostra os parâmetros que podem ser usados com esta ação.
 
 |Parâmetro|Tipo|Descrição|
 |:---|:---|:---|
-|updateCategory|microsoft.graph.windowsUpdates.updateCategory|A categoria de atualizações para o serviço gerenciar. Oferece suporte a um subconjunto dos valores **para updateCategory**. Os valores possíveis são: `feature` .|
+|updateCategory|microsoft.graph.windowsUpdates.updateCategory|A categoria de atualizações para o serviço gerenciar. Oferece suporte a um subconjunto dos valores **para updateCategory**. Os valores possíveis são: `feature` e `unknownFutureValue`.|
 |assets|[coleção microsoft.graph.windowsUpdates.updatableAsset](../resources/windowsupdates-updatableasset.md)|Lista de **recursos updatableAsset** para se inscrever no gerenciamento de atualizações pelo serviço para a **atualização determinadaCategory**.|
 
 ## <a name="response"></a>Resposta

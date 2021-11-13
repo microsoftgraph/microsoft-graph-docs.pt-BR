@@ -5,12 +5,12 @@ author: AshleyYangSZ
 ms.localizationpriority: medium
 ms.prod: cloud-pc
 doc_type: apiPageType
-ms.openlocfilehash: c1aafdfca8ecfbc9b067a63c16324f6eb791b708
-ms.sourcegitcommit: c00c61ce35a6f204a9907aa6f2644ea7a86a5b6e
+ms.openlocfilehash: dfcdf96b004d10f99b7d4c970583b37898511d49
+ms.sourcegitcommit: c6a8c1cc13ace38d6c4371139ee84707c5c93352
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/06/2021
-ms.locfileid: "60805542"
+ms.lasthandoff: 11/10/2021
+ms.locfileid: "60891099"
 ---
 # <a name="get-cloudpcgalleryimage"></a>Obter cloudPcGalleryImage
 
@@ -63,6 +63,8 @@ Se tiver êxito, este método retornará um código `200 OK` de resposta e um ob
 
 ### <a name="request"></a>Solicitação
 
+
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "get_cloudpcgalleryimage"
@@ -72,6 +74,24 @@ Se tiver êxito, este método retornará um código `200 OK` de resposta e um ob
 ``` http
 GET https://graph.microsoft.com/beta/deviceManagement/virtualEndpoint/galleryImages/{id}
 ```
+# <a name="c"></a>[C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/get-cloudpcgalleryimage-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/get-cloudpcgalleryimage-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/get-cloudpcgalleryimage-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/get-cloudpcgalleryimage-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 ### <a name="response"></a>Resposta
 >**Observação:** o objeto de resposta mostrado aqui pode ser encurtado para legibilidade.

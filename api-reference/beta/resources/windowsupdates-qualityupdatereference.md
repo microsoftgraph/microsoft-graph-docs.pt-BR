@@ -2,15 +2,15 @@
 title: Tipo de recurso qualityUpdateReference
 description: Representa Windows 10 conteúdo de atualização de qualidade.
 author: Alice-at-Microsoft
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: w10
 doc_type: resourcePageType
-ms.openlocfilehash: ca416ba5031e4642a073f4796ee27996d22f0f5a
-ms.sourcegitcommit: 1b09298649d5606b471b4cbe1055419bbe2fc7e5
+ms.openlocfilehash: bae1315caf6efd2096f9039ca774db18f0b6b764
+ms.sourcegitcommit: c6a8c1cc13ace38d6c4371139ee84707c5c93352
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "52067790"
+ms.lasthandoff: 11/10/2021
+ms.locfileid: "60890756"
 ---
 # <a name="qualityupdatereference-resource-type"></a>Tipo de recurso qualityUpdateReference
 
@@ -27,8 +27,8 @@ Herda de [windowsUpdateReference](../resources/windowsupdates-windowsupdaterefer
 ## <a name="properties"></a>Propriedades
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|classificação|microsoft.graph.windowsUpdates.qualityUpdateClassification|Especifica a classificação do conteúdo referenciado. Oferece suporte a um subconjunto dos valores **para qualityUpdateClassification**. Os valores possíveis são: `security` .|
-|releaseDateTime|DateTimeOffset|Especifica uma atualização de qualidade no determinado serviçoChannel com a classificação determinada por data (ou seja, a última atualização publicada na data especificada). O valor padrão é segurança.|
+|classificação|microsoft.graph.windowsUpdates.qualityUpdateClassification|Especifica a classificação do conteúdo referenciado. Oferece suporte a um subconjunto dos valores **para qualityUpdateClassification**. Os valores possíveis são: `security` e `unknownFutureValue`.|
+|releaseDateTime|DateTimeOffset|Especifica uma atualização de qualidade no determinado serviçoChannel com a classificação determinada por data (ou seja, a última atualização publicada na data especificada). O valor padrão é `security`.|
 
 ## <a name="relationships"></a>Relações
 Nenhum

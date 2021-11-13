@@ -2,15 +2,15 @@
 title: 'updatableAsset: unenrollAssets'
 description: Desembrre os recursos updatableAsset do gerenciamento de atualizações pelo serviço de implantação.
 author: Alice-at-Microsoft
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: w10
 doc_type: apiPageType
-ms.openlocfilehash: 52f509c7086faea453c06ed3b9500e6fb65211e7
-ms.sourcegitcommit: 486fe9c77d4d89c5416bb83e8c716e6918c47370
+ms.openlocfilehash: f2bd14810181f2e804bf3309402c104a33bc9447
+ms.sourcegitcommit: c6a8c1cc13ace38d6c4371139ee84707c5c93352
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/15/2021
-ms.locfileid: "53442847"
+ms.lasthandoff: 11/10/2021
+ms.locfileid: "60890840"
 ---
 # <a name="updatableasset-unenrollassets"></a>updatableAsset: unenrollAssets
 Namespace: microsoft.graph.windowsUpdates
@@ -21,13 +21,13 @@ Desembrre [os recursos updatableAsset](../resources/windowsupdates-updatableasse
 
 Você também pode usar o [método unenrollAssetsById](windowsupdates-updatableasset-unenrollassetsbyid.md) para desemrollar ativos.
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão|Permissões (da com menos para a com mais privilégios)|
 |:---|:---|
 |Delegado (conta corporativa ou de estudante)|WindowsUpdates.ReadWrite.All|
-|Delegada (conta pessoal da Microsoft)|Sem suporte.|
+|Delegado (conta pessoal da Microsoft)|Sem suporte.|
 |Aplicativo|WindowsUpdates.ReadWrite.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
@@ -53,7 +53,7 @@ A tabela a seguir mostra os parâmetros que podem ser usados com esta ação.
 
 |Parâmetro|Tipo|Descrição|
 |:---|:---|:---|
-|updateCategory|microsoft.graph.windowsUpdates.updateCategory|A categoria de atualizações para o serviço parar de gerenciar. Oferece suporte a um subconjunto dos valores **para updateCategory**. Os valores possíveis são: `feature` .|
+|updateCategory|microsoft.graph.windowsUpdates.updateCategory|A categoria de atualizações para o serviço parar de gerenciar. Oferece suporte a um subconjunto dos valores **para updateCategory**. Os valores possíveis são: `feature` e `unknownFutureValue`.|
 |assets|[coleção microsoft.graph.windowsUpdates.updatableAsset](../resources/windowsupdates-updatableasset.md)|Lista de **recursos updatableAsset** para desembragem do gerenciamento de atualizações pelo serviço para a **atualização determinadaCategory**.|
 
 

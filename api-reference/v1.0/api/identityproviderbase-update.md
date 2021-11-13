@@ -5,19 +5,19 @@ ms.localizationpriority: medium
 doc_type: apiPageType
 author: namkedia
 ms.prod: identity-and-sign-in
-ms.openlocfilehash: 1849374b40167d684cdd2d38e439615c3182b190
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 246e15f88dae9f30c23de7a4fb384ac602094e02
+ms.sourcegitcommit: c6a8c1cc13ace38d6c4371139ee84707c5c93352
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59105297"
+ms.lasthandoff: 11/10/2021
+ms.locfileid: "60890322"
 ---
 # <a name="update-identityprovider"></a>Atualizar identityProvider
 Namespace: microsoft.graph
 
-Atualize as propriedades do provedor de identidade especificado em um locatário.
+Atualize as propriedades do provedor de identidade especificado configurado no locatário.
 
-Entre os tipos de provedores derivados de identityProviderBase, você pode atualizar atualmente um [recurso socialIdentityProvider](../resources/socialidentityprovider.md) no Azure AD. No Azure AD B2C, essa operação pode atualizar atualmente um [recurso socialIdentityProvider.](../resources/socialidentityprovider.md)
+Entre os tipos de provedores derivados de identityProviderBase, você pode atualizar atualmente um [recurso socialIdentityProvider](../resources/socialidentityprovider.md) no Azure AD. No Azure AD B2C, essa operação pode atualizar atualmente um [recurso socialIdentityProvider](../resources/socialidentityprovider.md)ou [um recurso appleManagedIdentityProvider.](../resources/applemanagedidentityprovider.md)
 
 ## <a name="permissions"></a>Permissões
 
@@ -31,7 +31,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 A conta de trabalho ou de estudante precisa pertencer a uma das seguintes funções:
 
-* Administrador global
+* Administrador Global
 * Administrador do Provedor de Identidade Externa
 
 ## <a name="http-request"></a>Solicitação HTTP
@@ -51,9 +51,9 @@ PATCH /identity/identityProviders/{id}
 
 ## <a name="request-body"></a>Corpo da solicitação
 
-No corpo da solicitação, forneça o tipo OData e o objeto JSON com uma ou mais propriedades que precisam ser atualizadas para um [objeto socialIdentityProvider](../resources/socialidentityprovider.md) no locatário do Azure AD.
+No corpo da solicitação, forneça um objeto JSON com uma ou mais propriedades que precisam ser atualizadas para um [objeto socialIdentityProvider](../resources/socialidentityprovider.md) no locatário do Azure AD.
 
-No Azure AD B2C, forneça o tipo OData e o objeto JSON com uma ou mais propriedades que precisam ser atualizadas para um [objeto socialIdentityProvider.](../resources/socialidentityprovider.md)
+No Azure AD B2C, forneça um objeto JSON com uma ou mais propriedades que precisam ser atualizadas para [um objeto socialIdentityProvider](../resources/socialidentityprovider.md)ou [appleManagedIdentityProvider.](../resources/applemanagedidentityprovider.md)
 
 ### <a name="socialidentityprovider-object"></a>Objeto socialIdentityProvider
 
@@ -61,11 +61,21 @@ No Azure AD B2C, forneça o tipo OData e o objeto JSON com uma ou mais proprieda
 |:---------------|:--------|:----------|
 |clientId|Cadeia de caracteres|O identificador do aplicativo cliente obtido ao registrar o aplicativo com o provedor de identidade.|
 |clientSecret|Cadeia de caracteres|O segredo do cliente para o aplicativo obtido quando o aplicativo é registrado com o provedor de identidade. Isso é somente gravação. Uma operação de leitura retorna `****`.|
-|displayName|Cadeia de caracteres|O nome exclusivo do provedor de identidade.|
+|displayName|Cadeia de caracteres|O nome de exibição exclusivo do provedor de identidade.|
+
+### <a name="applemanagedidentityprovider-object"></a>Objeto appleManagedIdentityProvider
+
+|Propriedade|Tipo|Descrição|
+|:---------------|:--------|:----------|
+|displayName|Cadeia de caracteres|O nome de exibição exclusivo do provedor de identidade.|
+|developerId|Cadeia de caracteres|O Identificador de desenvolvedor da Apple.|
+|serviceId|Cadeia de caracteres|O identificador de serviço da Apple.|
+|keyId|Cadeia de caracteres|O identificador de chave da Apple.|
+|certificateData|Cadeia de caracteres|Os dados do certificado, que são uma longa sequência de texto do certificado, podem ser nulos.|
 
 ## <a name="response"></a>Resposta
 
-Se bem-sucedido, este método retorna um código de resposta `204 No Content`. Caso não consiga, um `4xx` erro será retornado com detalhes específicos.
+Se tiver êxito, este método retornará um código de resposta `204 No Content`. Caso não consiga, um `4xx` erro será retornado com detalhes específicos.
 
 ## <a name="examples"></a>Exemplos
 
@@ -110,8 +120,40 @@ Content-type: application/json
 
 ---
 
+#### <a name="response"></a>Resposta
+
+<!-- {
+  "blockType": "response",
+  "truncated": true
+} -->
+
+```http
+HTTP/1.1 204 No Content
+```
+
+### <a name="example-2-update-a-specific-apple-identity-provider-only-for-azure-ad-b2c"></a>Exemplo 2: atualizar um provedor de identidade **específico da Apple** (somente para o Azure AD B2C)
+
+#### <a name="request"></a>Solicitação
+
+Este é um exemplo de solicitação.
+
+<!-- {
+  "blockType": "request",
+  "name": "update_appleidentityprovider"
+}
+-->
+``` http
+PATCH https://graph.microsoft.com/v1.0/identity/identityProviders/Apple-Managed-OIDC
+Content-type: application/json
+
+{
+  "displayName": "Apple"
+}
+```
 
 #### <a name="response"></a>Resposta
+
+Este é um exemplo de resposta.
 
 <!-- {
   "blockType": "response",

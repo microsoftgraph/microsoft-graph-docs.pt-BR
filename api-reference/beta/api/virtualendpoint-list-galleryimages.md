@@ -5,12 +5,12 @@ author: AshleyYangSZ
 ms.localizationpriority: medium
 ms.prod: cloud-pc
 doc_type: apiPageType
-ms.openlocfilehash: 085ea3be71d8e1bb996ebefea6d23f448b3ea3f6
-ms.sourcegitcommit: c00c61ce35a6f204a9907aa6f2644ea7a86a5b6e
+ms.openlocfilehash: df5b120c919017d0f87b855ec193f5bb5237dd36
+ms.sourcegitcommit: c6a8c1cc13ace38d6c4371139ee84707c5c93352
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/06/2021
-ms.locfileid: "60805533"
+ms.lasthandoff: 11/10/2021
+ms.locfileid: "60890455"
 ---
 # <a name="list-galleryimages"></a>List galleryImages
 
@@ -62,6 +62,8 @@ Se tiver êxito, este método retornará um código de resposta e uma coleção 
 ## <a name="examples"></a>Exemplos
 
 ### <a name="request"></a>Solicitação
+
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "list_cloudpcgalleryimage"
@@ -70,6 +72,24 @@ Se tiver êxito, este método retornará um código de resposta e uma coleção 
 ``` http
 GET https://graph.microsoft.com/beta/deviceManagement/virtualEndpoint/galleryImages
 ```
+# <a name="c"></a>[C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/list-cloudpcgalleryimage-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/list-cloudpcgalleryimage-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/list-cloudpcgalleryimage-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/list-cloudpcgalleryimage-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 
 ### <a name="response"></a>Resposta

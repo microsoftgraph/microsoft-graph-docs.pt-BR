@@ -83,7 +83,7 @@ tools:
     - title: Graph Explorer
       imageSrc: ./images/hub/icon03-graphexplorer.svg
       url: 'https://developer.microsoft.com/graph/graph-explorer/'
-    - title: Microsoft Graph Toolkit
+    - title: Kit de ferramentas do Microsoft Graph
       imageSrc: ./images/hub/icon04-graphtoolkit.svg
       url: ./toolkit/overview.md
 additionalContent:
@@ -94,8 +94,12 @@ additionalContent:
           links:
             - text: Fundamentos Graph Microsoft
               url: 'https://docs.microsoft.com/learn/paths/m365-msgraph-fundamentals/'
+            - text: Criar aplicativos com o Microsoft Graph – Associado
+              url: 'https://docs.microsoft.com/learn/paths/m365-msgraph-associate/'
             - text: Explorar os cenários do Microsoft Graph para o desenvolvimento do JavaScript
               url: 'https://docs.microsoft.com/learn/paths/m365-msgraph-scenarios'
+            - text: Explore cenários do Microsoft Graph para desenvolvimento ASP.NET Core
+              url: 'https://docs.microsoft.com/learn/paths/m365-msgraph-dotnet-core-scenarios/'
             - text: Desenvolver aplicativos com o Microsoft Graph Toolkit
               url: 'https://docs.microsoft.com/learn/paths/m365-msgraph-toolkit'
         - title: Instruções

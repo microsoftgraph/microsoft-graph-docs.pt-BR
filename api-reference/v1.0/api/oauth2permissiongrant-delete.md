@@ -1,22 +1,22 @@
 ---
-title: Excluir um oAuth2PermissionGrant
+title: Excluir oAuth2PermissionGrant (uma concessão de permissão delegada)
 description: Exclua um oAuth2PermissionGrant, representando uma concessão de permissão delegada.
 ms.localizationpriority: medium
 doc_type: apiPageType
 ms.prod: identity-and-sign-in
 author: psignoret
-ms.openlocfilehash: 3e85a9cac2652d8ad261b7e8e4035d5edc8a6ee7
-ms.sourcegitcommit: f4999aa6fc05f845027db01aa489f7086f9850e1
+ms.openlocfilehash: c8ec0b52c613300b425cbf4bedea7eb58a861b9c
+ms.sourcegitcommit: c6a8c1cc13ace38d6c4371139ee84707c5c93352
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/13/2021
-ms.locfileid: "60289123"
+ms.lasthandoff: 11/10/2021
+ms.locfileid: "60890315"
 ---
-# <a name="delete-a-delegated-permission-grant-oauth2permissiongrant"></a>Excluir uma concessão de permissão delegada (oAuth2PermissionGrant)
+# <a name="delete-oauth2permissiongrant-a-delegated-permission-grant"></a>Excluir oAuth2PermissionGrant (uma concessão de permissão delegada)
 
 Namespace: microsoft.graph
 
-Excluir um [oAuth2PermissionGrant](../resources/oauth2permissiongrant.md).
+Exclua uma concessão de permissão delegada, representada por [um objeto oAuth2PermissionGrant.](../resources/oauth2permissiongrant.md)
 
 Quando uma concessão de permissão delegada é excluída, o acesso concedido é revogado. Tokens de acesso existentes continuarão a ser válidos para sua vida útil, mas novos tokens de acesso não serão concedidos para as permissões delegadas identificadas no **oAuth2PermissionGrant** excluído .
 
@@ -31,7 +31,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |:--------------------|:---------------------------------------------------------|
 |Delegado (conta corporativa ou de estudante) | DelegatedPermissionGrant.ReadWrite.All, Directory.ReadWrite.All, Directory.AccessAsUser.All    |
 |Delegado (conta pessoal da Microsoft) | Sem suporte.    |
-|Application | Directory.ReadWrite.All |
+|Aplicativo | Directory.ReadWrite.All |
 
 ## <a name="http-request"></a>Solicitação HTTP
 
@@ -90,7 +90,7 @@ DELETE https://graph.microsoft.com/v1.0/oauth2PermissionGrants/{id}
 
 ### <a name="response"></a>Resposta
 
-Veja a seguir um exemplo da resposta.
+Este é um exemplo de resposta.
 
 <!-- {
   "blockType": "response",

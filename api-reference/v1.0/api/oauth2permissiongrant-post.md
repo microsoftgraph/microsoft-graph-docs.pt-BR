@@ -1,23 +1,23 @@
 ---
-title: Criar um oAuth2PermissionGrant
+title: Criar oAuth2PermissionGrant (uma concessão de permissão delegada)
 description: Crie um objeto oAuth2PermissionGrant, representando uma concessão de permissão delegada.
 ms.localizationpriority: medium
 doc_type: apiPageType
 ms.prod: identity-and-sign-in
 author: psignoret
-ms.openlocfilehash: 4e7260407b361eabe17c55af1684d6fc0e269b8b
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: a66fdbf4addf877e0c3564d25a8a9a39dc20df69
+ms.sourcegitcommit: c6a8c1cc13ace38d6c4371139ee84707c5c93352
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59062919"
+ms.lasthandoff: 11/10/2021
+ms.locfileid: "60891141"
 ---
-# <a name="create-a-delegated-permission-grant-oauth2permissiongrant"></a>Criar uma concessão de permissão delegada (oAuth2PermissionGrant)
+# <a name="create-oauth2permissiongrant-a-delegated-permission-grant"></a>Criar oAuth2PermissionGrant (uma concessão de permissão delegada)
 
 Namespace: microsoft.graph
 
 
-Crie uma concessão de permissão delegada. Uma concessão de permissão delegada é representada por um [objeto oAuth2PermissionGrant.](../resources/oauth2permissiongrant.md)
+Crie uma concessão de permissão delegada representada por um [objeto oAuth2PermissionGrant.](../resources/oauth2permissiongrant.md)
 
 Uma concessão de permissão delegada autoriza uma entidade de serviço de cliente (representando um aplicativo cliente) a acessar uma entidade de serviço de recursos (representando uma API), em nome de um usuário assinado, para o nível de acesso limitado pelas permissões delegadas que foram concedidas.
 
@@ -27,8 +27,8 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegada (conta corporativa ou de estudante) | DelegatedPermissionGrant.ReadWrite.All, Directory.ReadWrite.All, Directory.AccessAsUser.All    |
-|Delegada (conta pessoal da Microsoft) | Sem suporte.    |
+|Delegado (conta corporativa ou de estudante) | DelegatedPermissionGrant.ReadWrite.All, Directory.ReadWrite.All, Directory.AccessAsUser.All    |
+|Delegado (conta pessoal da Microsoft) | Sem suporte.    |
 |Aplicativo | Directory.ReadWrite.All |
 
 ## <a name="http-request"></a>Solicitação HTTP
@@ -51,7 +51,15 @@ No corpo da solicitação, fornece uma representação JSON de [um objeto oAuth2
 
 ## <a name="response"></a>Resposta
 
-Se tiver êxito, este método retornará um código de resposta de 200 séries e um novo [objeto oAuth2PermissionGrant](../resources/oauth2permissiongrant.md) no corpo da resposta.
+Se tiver êxito, este método retornará um código de resposta de 200 séries e um novo [objeto oAuth2PermissionGrant](../resources/oauth2permissiongrant.md) no corpo da resposta. A tabela a seguir mostra as propriedades que são necessárias ao criar [oAuth2PermissionGrant](../resources/oauth2permissiongrant.md).
+
+| Propriedade | Tipo | Descrição |
+|:---------------|:--------|:----------|
+| clientId | Cadeia de caracteres | A **id** da [](../resources/serviceprincipal.md) entidade de serviço do cliente para o aplicativo que está autorizado a agir em nome de um usuário interno ao acessar uma API. Obrigatório.  |
+| consentType | Cadeia de Caracteres | Indica se a autorização é concedida para que o aplicativo cliente represente todos os usuários ou apenas um usuário específico. *AllPrincipals* indica autorização para representar todos os usuários. *A* entidade indica autorização para representar um usuário específico. O consentimento em nome de todos os usuários pode ser concedido por um administrador. Os usuários que não são administradores podem ser autorizados a consentir em nome de si mesmos em alguns casos, para algumas permissões delegadas. Obrigatório.  |
+| principalId | Cadeia de Caracteres | A **id** do [usuário em](../resources/user.md) nome do qual o cliente está autorizado a acessar o recurso, quando **consentType** for *Principal*. Se **consentType** for *AllPrincipals,* esse valor será nulo. Obrigatório quando **consentType** for *Principal*. |
+| resourceId | Cadeia de caracteres | A **id da** entidade de [serviço de recursos](../resources/serviceprincipal.md) à qual o acesso está autorizado. Isso identifica a API que o cliente está autorizado a tentar chamar em nome de um usuário in-locar. |
+| escopo | String | Uma lista separada por espaço dos valores de declaração para permissões delegadas que devem ser incluídos em tokens de acesso para o aplicativo de recurso (a API). Por exemplo, `openid User.Read GroupMember.Read.All`. Cada valor de  declaração deve corresponder ao campo de valor de uma das permissões delegadas definidas pela API, listadas na propriedade **publishedPermissionScopes** da entidade de [serviço de recursos](../resources/serviceprincipal.md). |
 
 ## <a name="example"></a>Exemplo
 
@@ -67,7 +75,6 @@ Se tiver êxito, este método retornará um código de resposta de 200 séries e
 ```http
 POST https://graph.microsoft.com/v1.0/oauth2PermissionGrants
 Content-Type: application/json
-Content-Length: 30
 
 {
   "clientId": "clientId-value",

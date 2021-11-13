@@ -2,15 +2,15 @@
 title: tipo de recurso monitoringRule
 description: Regra que define um sinal e um limite a ser monitorado e a ação a ser cumprida quando atendida.
 author: Alice-at-Microsoft
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: w10
 doc_type: resourcePageType
-ms.openlocfilehash: 305db31c935329574a2b7d52403dc7664ff53f66
-ms.sourcegitcommit: 1b09298649d5606b471b4cbe1055419bbe2fc7e5
+ms.openlocfilehash: 376de8e06d5fee242dc068362a4daaa99c977cd2
+ms.sourcegitcommit: c6a8c1cc13ace38d6c4371139ee84707c5c93352
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "52067793"
+ms.lasthandoff: 11/10/2021
+ms.locfileid: "60890434"
 ---
 # <a name="monitoringrule-resource-type"></a>tipo de recurso monitoringRule
 
@@ -23,8 +23,8 @@ Regra que define um sinal e um limite a ser monitorado e a ação a ser cumprida
 ## <a name="properties"></a>Propriedades
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|ação|microsoft.graph.windowsUpdates.monitoringAction|    A ação acionada quando o limite para o sinal determinado é atendido. Os valores possíveis são: `alertError` e `pauseDeployment`.|
-|signal|microsoft.graph.windowsUpdates.monitoringSignal|O sinal a ser monitorado. Os valores possíveis são: `rollback` .|
+|ação|microsoft.graph.windowsUpdates.monitoringAction|    A ação acionada quando o limite para o sinal determinado é atendido. Os valores possíveis são: `alertError`, `pauseDeployment`, `unknownFutureValue`.|
+|signal|microsoft.graph.windowsUpdates.monitoringSignal|O sinal a ser monitorado. Os valores possíveis são: `rollback` e `unknownFutureValue`.|
 |threshold|Int32|O limite para um sinal no qual disparar a ação. Um inteiro de 1 a 100 (inclusive).|
 
 ## <a name="relationships"></a>Relações

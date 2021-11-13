@@ -1,20 +1,18 @@
 ---
-title: Atualizar um oAuth2PermissionGrant
+title: Atualizar oAuth2PermissionGrant (uma concessão de permissão delegada)
 description: Atualize as propriedades de um oAuth2PermissionGrant, representando uma concessão de permissão delegada.
-localization_priority: Normal
+ms.localizationpriority: medium
 doc_type: apiPageType
 ms.prod: identity-and-sign-in
 author: psignoret
-ms.openlocfilehash: 0c9d3f60eeff2edd01d6926fb2fed18a3e508db4
-ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
+ms.openlocfilehash: 8fd52aa0dabfb0f69423aea9921f72892b3a2f3e
+ms.sourcegitcommit: c6a8c1cc13ace38d6c4371139ee84707c5c93352
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50447886"
+ms.lasthandoff: 11/10/2021
+ms.locfileid: "60890140"
 ---
-# <a name="update-a-delegated-permission-grant-oauth2permissiongrant"></a>Atualizar uma concessão de permissão delegada (oAuth2PermissionGrant)
-
-Namespace: microsoft.graph
+# <a name="update-oauth2permissiongrant-a-delegated-permission-grant"></a>Atualizar oAuth2PermissionGrant (uma concessão de permissão delegada)
 
 Namespace: microsoft.graph
 

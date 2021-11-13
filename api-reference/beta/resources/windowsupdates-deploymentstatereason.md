@@ -2,15 +2,15 @@
 title: Tipo de recurso deploymentStateReason
 description: Um motivo para um estado de implantação específico.
 author: Alice-at-Microsoft
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: w10
 doc_type: resourcePageType
-ms.openlocfilehash: 19a5063cd4f103b0f065311118bc5d8ac97a3c7a
-ms.sourcegitcommit: 1b09298649d5606b471b4cbe1055419bbe2fc7e5
+ms.openlocfilehash: 54240d057734d17df3e0df3a270d1aab00022586
+ms.sourcegitcommit: c6a8c1cc13ace38d6c4371139ee84707c5c93352
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "52067826"
+ms.lasthandoff: 11/10/2021
+ms.locfileid: "60890448"
 ---
 # <a name="deploymentstatereason-resource-type"></a>Tipo de recurso deploymentStateReason
 
@@ -23,7 +23,7 @@ Um motivo para um estado de implantação específico.
 ## <a name="properties"></a>Propriedades
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|valor|microsoft.graph.windowsUpdates.deploymentStateReasonValue|Especifica um motivo para o estado de implantação. Os valores possíveis são: `scheduledByOfferWindow`, `offeringByRequest`, `pausedByRequest`, `pausedByMonitoring`. Somente leitura.|
+|valor|microsoft.graph.windowsUpdates.deploymentStateReasonValue|Especifica um motivo para o estado de implantação. Os valores possíveis são: `scheduledByOfferWindow`, `offeringByRequest`, `pausedByRequest`, `pausedByMonitoring`. Observe que você deve usar o header de solicitação para obter os seguintes valores nesta `Prefer: include-unknown-enum-members` [enum evolvável](/graph/best-practices-concept#handling-future-members-in-evolvable-enumerations): `faultedByContentOutdated` . Somente leitura.|
 
 ## <a name="relationships"></a>Relações
 Nenhum
