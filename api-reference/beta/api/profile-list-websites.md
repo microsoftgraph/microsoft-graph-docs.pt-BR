@@ -1,16 +1,16 @@
 ---
 title: Listar sites
 description: Recupere uma lista de objetos personWebsite.
-localization_priority: Normal
+ms.localizationpriority: medium
 author: kevinbellinger
 ms.prod: people
 doc_type: apiPageType
-ms.openlocfilehash: 33411aded17f17498dc0a865d2dd338c960d3d18
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: 1c8190516232bf1438c6f49aa969564fbd4e2097
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52037042"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "60980141"
 ---
 # <a name="list-websites"></a>Listar sites
 
@@ -28,7 +28,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |:---------------------------------------|:---------------------------------------------------------------------------------|
 | Delegado (conta corporativa ou de estudante)     | User.Read, User.ReadWrite, User.ReadBasic.All, User.Read.All, User.ReadWrite.All |
 | Delegado (conta pessoal da Microsoft) | User.Read, User.ReadWrite, User.ReadBasic.All, User.Read.All, User.ReadWrite.All |
-| Application                            | User.ReadBasic.All, User.Read.All, User.ReadWrite.All                            |
+| Aplicativo                            | User.ReadBasic.All, User.Read.All, User.ReadWrite.All                            |
 
 ## <a name="http-request"></a>Solicitação HTTP
 
@@ -94,6 +94,10 @@ GET https://graph.microsoft.com/beta/me/profile/websites
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/get-websites-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[Ir](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/get-websites-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

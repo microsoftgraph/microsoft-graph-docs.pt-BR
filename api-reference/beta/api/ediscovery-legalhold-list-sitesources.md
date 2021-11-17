@@ -2,15 +2,15 @@
 title: Listar legalHold siteSources
 description: Obter a lista de objetos siteSource associados a uma resserção legal.
 author: mahage-msft
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: ediscovery
 doc_type: apiPageType
-ms.openlocfilehash: 313d47528809eea3ba2cc7e27f7e73114195f992
-ms.sourcegitcommit: 40947e6f4337c8c4193d85bb862e15f67263e1e7
+ms.openlocfilehash: d40e57d09c3269a2ee7bdce0e2bac2a60cc7286b
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/13/2021
-ms.locfileid: "50773057"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "60986778"
 ---
 # <a name="list-legalhold-sitesources"></a>Listar legalHold siteSources
 
@@ -20,7 +20,7 @@ Namespace: microsoft.graph.ediscovery
 
 Obter a lista [de objetos siteSource](../resources/ediscovery-sitesource.md) associados a uma resserção legal.
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>Permissões
 
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions- reference).
 
@@ -88,6 +88,10 @@ GET https://graph.microsoft.com/beta/compliance/ediscovery/cases/c816dd6f-5af8-4
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/list-sitesource-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[Ir](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/list-sitesource-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

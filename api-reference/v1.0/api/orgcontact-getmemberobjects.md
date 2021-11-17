@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: dkershaw10
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: 1f4dab5dbc2d8e4beae35351ff640eeee17146ce
-ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
+ms.openlocfilehash: a48b9a0a24f7cb0eb130853fdeaa012e5d7e9dc7
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/12/2021
-ms.locfileid: "60945114"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "60992812"
 ---
 # <a name="orgcontact-getmemberobjects"></a>orgContact: getMemberObjects
 
@@ -24,7 +24,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
 |:--------------------|:---------------------------------------------------------|
 |Delegado (conta corporativa ou de estudante) | OrgContact.Read.All e Group.Read.All, Directory.Read.All  |
-|Delegada (conta pessoal da Microsoft) | Sem suporte.    |
+|Delegado (conta pessoal da Microsoft) | Sem suporte.    |
 |Aplicativo | OrgContact.Read.All e Group.Read.All, Directory.Read.All |
 
 ## <a name="http-request"></a>Solicitação HTTP
@@ -83,6 +83,10 @@ Content-type: application/json
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/orgcontact-getmemberobjects-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[Ir](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/orgcontact-getmemberobjects-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

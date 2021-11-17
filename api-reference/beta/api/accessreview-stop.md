@@ -1,16 +1,16 @@
 ---
 title: Parar accessReview
 description: No recurso de análises de acesso do Azure AD, pare um accessReview ativo no momento.  O objeto de destino pode ser uma revisão de acesso único ou uma instância de uma revisão de acesso recorrente.  (Para impedir que uma revisão de acesso recorrente inseja instâncias futuras, atualize-a para alterar sua data de término agendada).  Depois que a revisão de acesso parar, os revisadores não poderão mais dar entrada e as decisões de revisão de acesso podem ser aplicadas.
-localization_priority: Normal
+ms.localizationpriority: medium
 author: markwahl-msft
 ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: 9ca0dffdc48e059e303e05afac791a8d431f5600
-ms.sourcegitcommit: 13f474d3e71d32a5dfe2efebb351e3a1a5aa9685
+ms.openlocfilehash: 487ab54eb9cfa5fd5788af1f4dc5b35078f6294a
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "52751012"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "60992162"
 ---
 # <a name="stop-accessreview"></a>Parar accessReview
 
@@ -70,6 +70,10 @@ POST https://graph.microsoft.com/beta/accessReviews/2975E9B5-44CE-4E71-93D3-30F0
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/stop-accessreview-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[Ir](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/stop-accessreview-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

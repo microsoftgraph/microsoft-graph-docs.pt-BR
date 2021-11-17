@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: sureshja
 ms.prod: applications
 doc_type: apiPageType
-ms.openlocfilehash: 337f7d3faea189e66476932792f91455f96b38bd
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 752cbc25a7841e209e37d8cb39e0541c9c1ea04a
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59113938"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "60973801"
 ---
 # <a name="serviceprincipal-addkey"></a>servicePrincipal: addKey
 
@@ -57,7 +57,7 @@ No corpo da solicitação, forneça as seguintes propriedades necessárias.
 |:---------------|:--------|:----------|
 | keyCredential | [keyCredential](../resources/keycredential.md) | A nova credencial de chave servicePrincipal a ser acrescentada. O __tipo__, __uso__ __e chave__ são propriedades necessárias para esse uso. Os tipos de chave com suporte são:<br><ul><li>`AsymmetricX509Cert`: O uso deve ser `Verify` .</li><li>`X509CertAndPassword`: O uso deve ser `Sign`</li></ul>|
 | passwordCredential | [passwordCredential](../resources/passwordcredential.md) | Somente __secretText__ é necessário para ser definido que deve conter a senha da chave. Essa propriedade é necessária apenas para chaves do tipo `X509CertAndPassword` . De defini-lo como `null` caso contrário.|
-| proof | String | Um token JWT auto-assinado usado como prova de posse das chaves existentes. Esse token JWT deve ser assinado usando a chave privada de um dos certificados válidos existentes do servicePrincipal. O token deve conter os seguintes argumentos:<ul><li>`aud` – A audiência deve ser `00000002-0000-0000-c000-000000000000`.</li><li>`iss` - O emissor precisa ser __a id__  do servicePrincipal que está fazendo a chamada.</li><li>`nbf` – Não antes da hora.</li><li>`exp` – O tempo de expiração deve ser "nbf" + 10 min.</li></ul><br>Aqui está um exemplo [de código](/graph/application-rollkey-prooftoken) que pode ser usado para gerar essa prova de token de posse.|
+| proof | Cadeia de caracteres | Um token JWT auto-assinado usado como prova de posse das chaves existentes. Esse token JWT deve ser assinado usando a chave privada de um dos certificados válidos existentes do servicePrincipal. O token deve conter os seguintes argumentos:<ul><li>`aud` – A audiência deve ser `00000002-0000-0000-c000-000000000000`.</li><li>`iss` - O emissor precisa ser __a id__  do servicePrincipal que está fazendo a chamada.</li><li>`nbf` – Não antes da hora.</li><li>`exp` – O tempo de expiração deve ser "nbf" + 10 min.</li></ul><br>Aqui está um exemplo [de código](/graph/application-rollkey-prooftoken) que pode ser usado para gerar essa prova de token de posse.|
 
 
 ## <a name="response"></a>Resposta
@@ -107,6 +107,10 @@ Content-type: application/json
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/serviceprincipal-addkey-1-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[Ir](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/serviceprincipal-addkey-1-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -174,6 +178,10 @@ Content-type: application/json
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/serviceprincipal-addkey-2-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[Ir](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/serviceprincipal-addkey-2-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

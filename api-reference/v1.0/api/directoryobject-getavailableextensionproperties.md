@@ -5,12 +5,12 @@ author: sureshja
 ms.localizationpriority: medium
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: 3eddbcad2a944fe7977faec4bfd3572c9b1465fe
-ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
+ms.openlocfilehash: 2a43386a3f1e0d409eaa464c903b48f55bf1eaba
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/12/2021
-ms.locfileid: "60931876"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "60973994"
 ---
 # <a name="directoryobject-getavailableextensionproperties"></a>directoryObject: getAvailableExtensionProperties
 Namespace: microsoft.graph
@@ -23,7 +23,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |Tipo de permissão|Permissões (da com menos para a com mais privilégios)|
 |:---|:---|
 |Delegado (conta corporativa ou de estudante)| Directory.Read.All |
-|Delegada (conta pessoal da Microsoft)| Sem suporte. |
+|Delegado (conta pessoal da Microsoft)| Sem suporte. |
 |Aplicativo| Directory.Read.All |
 
 ## <a name="http-request"></a>Solicitação HTTP
@@ -49,7 +49,7 @@ A tabela a seguir mostra os parâmetros que podem ser usados com esta ação.
 
 |Parâmetro|Tipo|Descrição|
 |:---|:---|:---|
-|isSyncedFromOnPremises|Boolean|`true` para especificar que apenas as propriedades de extensão sincronizadas do diretório local devem ser retornadas; para especificar que apenas as propriedades de extensão que não são sincronizadas do diretório `false` local devem ser retornadas. Se o parâmetro for omitido, todas as propriedades de extensão (sincronizadas e não sincronizadas) serão retornadas.|
+|isSyncedFromOnPremises|Booliano|`true` para especificar que apenas as propriedades de extensão sincronizadas do diretório local devem ser retornadas; para especificar que apenas as propriedades de extensão que não são sincronizadas do diretório `false` local devem ser retornadas. Se o parâmetro for omitido, todas as propriedades de extensão (sincronizadas e não sincronizadas) serão retornadas.|
 
 
 ## <a name="response"></a>Resposta
@@ -88,6 +88,10 @@ Content-Type: application/json
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/directoryobject-getavailableextensionproperties-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[Ir](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/directoryobject-getavailableextensionproperties-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

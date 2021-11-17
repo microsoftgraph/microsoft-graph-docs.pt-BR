@@ -1,16 +1,16 @@
 ---
 title: Listar programControls
 description: No recurso de revisões de acesso do Azure AD, liste todos os objetos programControl, em todos os programas no locatário.
-localization_priority: Normal
+ms.localizationpriority: medium
 doc_type: apiPageType
 ms.prod: governance
 author: markwahl-msft
-ms.openlocfilehash: a08b1c476b5e91032c0156a4d7c88d9d79849637
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: 95c4f7c3c637f5a84b258aa12be695fb359873df
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52055215"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "60979995"
 ---
 # <a name="list-programcontrols"></a>Listar programControls
 
@@ -26,7 +26,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |:--------------------------------------|:---------------------------------------------------------|
 |Delegado (conta corporativa ou de estudante)     | ProgramControl.Read.All, ProgramControl.ReadWrite.All   |
 |Delegado (conta pessoal da Microsoft) | Sem suporte. |
-|Application                            | ProgramControl.Read.All, ProgramControl.ReadWrite.All  |
+|Aplicativo                            | ProgramControl.Read.All, ProgramControl.ReadWrite.All  |
 
 O usuário inscreveu também deve estar em uma função de diretório que permita que ele leia um programa.
 
@@ -72,6 +72,10 @@ GET https://graph.microsoft.com/beta/programControls
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/get-programcontrol-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[Ir](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/get-programcontrol-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

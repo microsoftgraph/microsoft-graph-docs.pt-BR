@@ -2,15 +2,15 @@
 title: Excluir messageRule
 description: Exclua o objeto messageRule especificado.
 author: abheek-das
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 6b8486fcfafaf971261dd56b5639ac37c7cc8e80
-ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
+ms.openlocfilehash: 02fa630532b114fcb6e119cee6ae55d0db441883
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/06/2021
-ms.locfileid: "50131079"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "60974814"
 ---
 # <a name="delete-messagerule"></a>Excluir messageRule
 
@@ -75,6 +75,10 @@ DELETE https://graph.microsoft.com/beta/me/mailfolders/inbox/messagerules('AQAAA
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/delete-messagerule-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[Ir](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/delete-messagerule-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

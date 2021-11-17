@@ -1,16 +1,16 @@
 ---
 title: Listar membros
 description: Obtenha uma lista dos membros diretos do grupo. Um grupo pode ter usuários, contatos organizacionais e outros grupos como membros.
-localization_priority: Priority
+ms.localizationpriority: high
 author: Jordanndahl
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: 2b3530ede6f71ac12cc545d9abbc32cc32c3b13b
-ms.sourcegitcommit: 22bd45d272681658d46a8b99af3c3eabc7b05cb1
+ms.openlocfilehash: d6357f42a5c45dfebd3069aa87e862fbd5e70ba3
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/18/2021
-ms.locfileid: "58384115"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "60993177"
 ---
 # <a name="list-members"></a>Listar membros
 
@@ -84,6 +84,10 @@ GET https://graph.microsoft.com/v1.0/groups/{id}/members
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/get-group-members-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[Ir](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/get-group-members-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -271,6 +275,10 @@ ConsistencyLevel: eventual
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/get-a-count-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[Ir](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/get-a-count-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 ms.prod: non-product-specific
 author: MSGraphDocsvTeam
 doc_type: enumPageType
-ms.openlocfilehash: 297544f4616c9a455ff519480b5a95e9db7953f0
-ms.sourcegitcommit: c7ff992ef63e480d070421ba99b28ee129cb6acb
+ms.openlocfilehash: a7691215089789fcc9eb911ca8cb9a6d14e953e1
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "60688392"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "60973469"
 ---
 # <a name="enum-values"></a>Valores denum
 
@@ -364,7 +364,7 @@ Namespace: microsoft.graph
 
 |Member|
 |:---|
-|Nenhum|
+|Nenhuma|
 |SecurityGroup|
 |Tudo|
 
@@ -775,7 +775,7 @@ Namespace: microsoft.graph
 | Automático
 | noPreview
 | checklist
-| descrição
+| description
 | referência
 
 
@@ -1700,4 +1700,13 @@ Valores possíveis para tipos de conta de usuário (associação ao grupo), por 
 |teacher|
 |faculty|
 |other|
+|unknownFutureValue|
+
+### <a name="advancedconfigstate-values"></a>valores advancedConfigState 
+
+|Member|
+|:---|
+|Padrão.|
+|habilitadas|
+|desabilitadas|
 |unknownFutureValue|

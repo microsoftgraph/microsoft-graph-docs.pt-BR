@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: paulgarn
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: 7f956f4884678f46e19351fdfa43d62b24fe4f16
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 0ba241b59e2914fd3388ce83fe9b2f10de251a12
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59053711"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "60979399"
 ---
 # <a name="list-claimsmappingpolicies"></a>Listar claimsMappingPolicies
 
@@ -24,8 +24,8 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 | Tipo de permissão                        | Permissões (da com menos para a com mais privilégios) |
 |:---------------------------------------|:--------------------------------------------|
-| Delegada (conta corporativa ou de estudante)     | Policy.Read.All, Policy.ReadWrite.ApplicationConfiguration |
-| Delegada (conta pessoal da Microsoft) | Sem suporte. |
+| Delegado (conta corporativa ou de estudante)     | Policy.Read.All, Policy.ReadWrite.ApplicationConfiguration |
+| Delegado (conta pessoal da Microsoft) | Sem suporte. |
 | Aplicativo                            | Policy.Read.All, Policy.ReadWrite.ApplicationConfiguration |
 
 > [!IMPORTANT]
@@ -86,6 +86,10 @@ GET https://graph.microsoft.com/v1.0/policies/claimsMappingPolicies
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/get-claimsmappingpolicies-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[Ir](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/get-claimsmappingpolicies-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

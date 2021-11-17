@@ -5,12 +5,12 @@ author: DougKirschner
 ms.localizationpriority: medium
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: b88247342df23759af18bdf9049ab5cc0211b7de
-ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
+ms.openlocfilehash: 81a441639bfa060fe15f5ddf00fa48e03d633624
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/12/2021
-ms.locfileid: "60940061"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "60987521"
 ---
 # <a name="get-a-scopedrolemember"></a>Obter um scopedRoleMember
 
@@ -26,7 +26,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
 |:--------------------|:---------------------------------------------------------|
 |Delegado (conta corporativa ou de estudante) | RoleManagement.Read.Directory, Directory.Read.All, RoleManagement.ReadWrite.Directory, Directory.ReadWrite.All, Directory.AccessAsUser.All    |
-|Delegada (conta pessoal da Microsoft) | Sem suporte.    |
+|Delegado (conta pessoal da Microsoft) | Sem suporte.    |
 |Aplicativo | RoleManagement.Read.Directory, Directory.Read.All, RoleManagement.ReadWrite.Directory, Directory.ReadWrite.All |
 
 ## <a name="http-request"></a>Solicitação HTTP
@@ -74,6 +74,10 @@ GET https://graph.microsoft.com/beta/administrativeUnits/{id}/scopedRoleMembers/
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/get-scopedrolemember-1-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[Ir](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/get-scopedrolemember-1-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

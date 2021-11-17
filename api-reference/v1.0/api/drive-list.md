@@ -6,12 +6,12 @@ ms.localizationpriority: high
 ms.prod: sharepoint
 description: Recupera a lista de recursos Drive disponíveis para um User, Group ou Site de destino.
 doc_type: apiPageType
-ms.openlocfilehash: ae50209398d6ed83b8cc05d6e6e795b26e4ed7cd
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 8bf361ed77c71647288f7015402fc63bded2c5ff
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59090723"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "60979199"
 ---
 # <a name="list-available-drives"></a>Listar as unidades disponíveis
 
@@ -58,6 +58,10 @@ GET /groups/{groupId}/drives
 [!INCLUDE [sample-code](../includes/snippets/java/group-list-drives-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# <a name="go"></a>[Ir](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/group-list-drives-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 
@@ -88,6 +92,10 @@ GET /sites/{siteId}/drives
 [!INCLUDE [sample-code](../includes/snippets/java/site-list-drives-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# <a name="go"></a>[Ir](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/site-list-drives-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 
@@ -116,6 +124,10 @@ GET /users/{userId}/drives
 [!INCLUDE [sample-code](../includes/snippets/java/user-list-drives-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# <a name="go"></a>[Ir](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/user-list-drives-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 
@@ -142,6 +154,10 @@ GET /me/drives
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/enum-drives-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[Ir](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/enum-drives-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

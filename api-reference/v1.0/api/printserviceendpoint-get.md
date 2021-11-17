@@ -5,12 +5,12 @@ author: nilakhan
 ms.localizationpriority: medium
 ms.prod: cloud-printing
 doc_type: apiPageType
-ms.openlocfilehash: 42347eefd7541000331c4d56d89decb36fbed214
-ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
+ms.openlocfilehash: 4668399829c08771db185727e4c791c611013a26
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/12/2021
-ms.locfileid: "60945877"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "60992539"
 ---
 # <a name="get-printserviceendpoint"></a>Obter printServiceEndpoint
 Namespace: microsoft.graph
@@ -72,6 +72,10 @@ GET https://graph.microsoft.com/v1.0/print/services/{printServiceId}/endpoints/{
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/get-printserviceendpoint-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[Ir](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/get-printserviceendpoint-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

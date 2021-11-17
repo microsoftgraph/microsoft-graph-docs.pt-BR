@@ -1,16 +1,16 @@
 ---
 title: Listar accessReviewInstance
 description: Recupere objetos accessReviewInstance.
-localization_priority: Normal
+ms.localizationpriority: medium
 author: isabelleatmsft
 ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: 52844146764ffb85be50a9c8d8609b466a88ba2e
-ms.sourcegitcommit: 5a1cc1943527aa268e3797ee514871e65eb474a6
+ms.openlocfilehash: 1cf49056b15761188a3ae7a10fd82006d3a6a283
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/19/2021
-ms.locfileid: "53030520"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "60987835"
 ---
 # <a name="list-accessreviewinstance"></a>Listar accessReviewInstance
 
@@ -28,7 +28,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 |Tipo de permissão                        | Permissões (da com menos para a com mais privilégios)              |
 |:--------------------------------------|:---------------------------------------------------------|
-|Delegada (conta corporativa ou de estudante)     | AccessReview.Read.All, AccessReview.ReadWrite.All  |
+|Delegado (conta corporativa ou de estudante)     | AccessReview.Read.All, AccessReview.ReadWrite.All  |
 |Aplicativo                            | AccessReview.Read.All, AccessReview.ReadWrite.All |
 
 O usuário interno também deve estar em uma função de diretório que permita que ele leia uma revisão de acesso. Para exibir apenas as instâncias em que o usuário interno recebe o revistor, consulte [Listar instâncias de](accessreviewinstance-pendingaccessreviewinstances.md) revisão de acesso pendentes
@@ -78,6 +78,10 @@ GET https://graph.microsoft.com/beta/identityGovernance/accessReviews/definition
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/list-accessreviewinstance-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[Ir](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/list-accessreviewinstance-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

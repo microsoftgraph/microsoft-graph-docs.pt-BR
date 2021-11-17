@@ -1,16 +1,16 @@
 ---
 title: Atualizar accessReview
 description: No recurso de análises de acesso do Azure AD, atualize um objeto accessReview existente para alterar uma ou mais de suas propriedades.
-localization_priority: Normal
+ms.localizationpriority: medium
 author: markwahl-msft
 ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: 817cf535c68a775c7a90a639e09120e226c46115
-ms.sourcegitcommit: 13f474d3e71d32a5dfe2efebb351e3a1a5aa9685
+ms.openlocfilehash: 112d341d2be082d04041dcee50a66ba85af37ebc
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "52751005"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "60987996"
 ---
 # <a name="update-accessreview"></a>Atualizar accessReview
 
@@ -52,7 +52,7 @@ A tabela a seguir mostra as propriedades que podem ser fornecidas quando você a
 | displayName   | Cadeia de caracteres         | O nome da revisão de acesso.                                                                                    |
 | startDateTime | DateTimeOffset | DateTime quando a revisão está agendada para ser inicial.  Essa deve ser uma data no futuro.                 |
 | endDateTime   | DateTimeOffset | DateTime quando a revisão está agendada para terminar. Isso deve ser pelo menos um dia depois da data de início. |
-| descrição   | Cadeia de caracteres         | A descrição, para mostrar aos revisadores.                                                                 |
+| description   | Cadeia de caracteres         | A descrição, para mostrar aos revisadores.                                                                 |
 
 
 
@@ -94,6 +94,10 @@ Content-type: application/json
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/update-accessreview-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[Ir](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/update-accessreview-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

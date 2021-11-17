@@ -1,16 +1,16 @@
 ---
 title: Excluir caso
 description: Excluir um objeto case.
-localization_priority: Normal
+ms.localizationpriority: medium
 author: mahage-msft
 ms.prod: ediscovery
 doc_type: apiPageType
-ms.openlocfilehash: eeedaacb05ea4c846a79739d30f7d0c329d88fcf
-ms.sourcegitcommit: 40947e6f4337c8c4193d85bb862e15f67263e1e7
+ms.openlocfilehash: beb4c42d59525a801f493928b985004f1ee7ac23
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/13/2021
-ms.locfileid: "50776757"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "60975310"
 ---
 # <a name="delete-case"></a>Excluir caso
 
@@ -20,13 +20,13 @@ Namespace: microsoft.graph.ediscovery
 
 Excluir um [objeto case.](../resources/ediscovery-case.md)
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>Permissões
 
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão|Permissões (da com menos para a com mais privilégios)|
 |:---|:---|
-|Delegada (conta corporativa ou de estudante)|eDiscovery.Read.All, eDiscovery.ReadWrite.All|
+|Delegado (conta corporativa ou de estudante)|eDiscovery.Read.All, eDiscovery.ReadWrite.All|
 |Delegado (conta pessoal da Microsoft)|Sem suporte.|
 |Aplicativo|Sem suporte.|
 
@@ -80,6 +80,10 @@ DELETE https://graph.microsoft.com/beta/compliance/ediscovery/cases/061b9a92-892
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/delete-case-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[Ir](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/delete-case-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

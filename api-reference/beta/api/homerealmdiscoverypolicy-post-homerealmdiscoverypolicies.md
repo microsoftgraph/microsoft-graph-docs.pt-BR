@@ -1,16 +1,16 @@
 ---
 title: Criar homeRealmDiscoveryPolicy
 description: Crie uma nova homeRealmDiscoveryPolicy.
-localization_priority: Normal
+ms.localizationpriority: medium
 author: hpsin
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: a46fd261bc29ff3a7fb275f4f8e0f1ab6e2df21f
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: f605ef229a808180fedaa7cfcb75f38084635a6b
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52040907"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "60986273"
 ---
 # <a name="create-homerealmdiscoverypolicy"></a>Criar homeRealmDiscoveryPolicy
 
@@ -28,7 +28,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |:---------------------------------------|:--------------------------------------------|
 | Delegado (conta corporativa ou de estudante)     | Policy.ReadWrite.ApplicationConfiguration |
 | Delegado (conta pessoal da Microsoft) | Sem suporte. |
-| Application                            | Policy.ReadWrite.ApplicationConfiguration |
+| Aplicativo                            | Policy.ReadWrite.ApplicationConfiguration |
 
 ## <a name="http-request"></a>Solicitação HTTP
 
@@ -91,6 +91,10 @@ Content-type: application/json
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/create-homerealmdiscoverypolicy-from-homerealmdiscoverypolicies-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[Ir](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/create-homerealmdiscoverypolicy-from-homerealmdiscoverypolicies-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

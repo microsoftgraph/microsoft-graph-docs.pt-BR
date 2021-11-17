@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: isabelleatmsft
 ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: 25db7736e01b80c5770cf6f74e17d751efc1c58b
-ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
+ms.openlocfilehash: c83ebbe6b79f987e8c7d523114dd31e570f155df
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/12/2021
-ms.locfileid: "60940103"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "60987716"
 ---
 # <a name="update-accessreviewinstancedecisionitem"></a>Atualizar accessReviewInstanceDecisionItem
 
@@ -29,7 +29,7 @@ Uma das seguintes permissões é necessária para chamar essa API. Não há supo
 |Tipo de permissão                        | Permissões (da com menos para a com mais privilégios)              |
 |:--------------------------------------|:---------------------------------------------------------|
 |Delegado (conta corporativa ou de estudante)     | AccessReview.ReadWrite.All |
-|Delegada (conta pessoal da Microsoft)|Sem suporte.|
+|Delegado (conta pessoal da Microsoft)|Sem suporte.|
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- { "blockType": "ignored" } -->
@@ -48,7 +48,7 @@ A tabela a seguir mostra as propriedades aceitas para atualizar um `accessReview
 | Propriedade     | Tipo       | Descrição |
 |:-------------|:------------|:------------|
 | decision  | Cadeia de caracteres | Decisão de acesso para a entidade que está sendo revisada. Os valores possíveis são: `Approve` `Deny` `NotReviewed` `DontKnow` . Obrigatório.  |
-|  justification | Cadeia de caracteres | Contexto da revisão fornecida aos administradores. Obrigatório se justificationRequiredOnApproval for True no accessReviewScheduleDefinition.  |
+|  justification | String | Contexto da revisão fornecida aos administradores. Obrigatório se justificationRequiredOnApproval for True no accessReviewScheduleDefinition.  |
 
 ## <a name="response"></a>Resposta
 Se tiver êxito, este método retornará um `204, NoContent` código de resposta e nenhum corpo de resposta.
@@ -88,6 +88,10 @@ Content-Type: application/json
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/update-accessreviewinstancedecisionitem-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[Ir](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/update-accessreviewinstancedecisionitem-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

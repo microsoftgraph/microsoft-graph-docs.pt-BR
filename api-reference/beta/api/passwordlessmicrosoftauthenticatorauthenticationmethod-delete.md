@@ -2,25 +2,25 @@
 title: Excluir passwordlessMicrosoftAuthenticatorAuthenticationMethod
 description: Exclui um objetoMicrosoftAuthenticatorAuthenticationMethod sem senha.
 author: mmcla
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: 5bd76dcb0652fdea395592ff916cd37eac789384
-ms.sourcegitcommit: 3edf187fe4b42f81c09610782671776a27161126
+ms.openlocfilehash: ea336912435d2f8cef827ed2009294b9b22596a6
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/06/2021
-ms.locfileid: "50515958"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "60985798"
 ---
 # <a name="delete-passwordlessmicrosoftauthenticatorauthenticationmethod-deprecated"></a>Excluir passwordlessMicrosoftAuthenticatorAuthenticationMethod (preterido)
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Exclui o objeto do método de Login de Telefone Sem Senha do [Microsoft Authenticator de um](../resources/passwordlessmicrosoftauthenticatorauthenticationmethod.md) usuário.
+Exclui o objeto do método [Microsoft Authenticator passwordless Telefone de login.](../resources/passwordlessmicrosoftauthenticatorauthenticationmethod.md)
 
 > [!CAUTION]
-> A API do método de login sem senha do Microsoft Authenticator Phone está preterida e interromperá o retorno dos resultados em 31 de dezembro de 2020. Use o novo [Método de Autenticação do Autenticador microsoft](../resources/microsoftAuthenticatorAuthenticationMethod.md).
+> A MICROSOFT AUTHENTICATOR api do método Telefone de login sem senha é preterida e para de retornar resultados em 31 de dezembro de 2020. Use o novo método [Microsoft Authenticator autenticação](../resources/microsoftAuthenticatorAuthenticationMethod.md).
 
 ## <a name="permissions"></a>Permissões
 
@@ -30,16 +30,16 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
 |:---------------------------------------|:-------------------------|
-| Delegada (conta corporativa ou de estudante)     | UserAuthenticationMethod.ReadWrite |
-| Delegada (conta pessoal da Microsoft) | Sem suporte. |
+| Delegado (conta corporativa ou de estudante)     | UserAuthenticationMethod.ReadWrite |
+| Delegado (conta pessoal da Microsoft) | Sem suporte. |
 | Aplicativo                            | Sem suporte. |
 
 ### <a name="permissions-acting-on-other-users"></a>Permissões atuando em outros usuários
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
 |:---------------------------------------|:-------------------------|
-| Delegada (conta corporativa ou de estudante)     | UserAuthenticationMethod.ReadWrite.All |
-| Delegada (conta pessoal da Microsoft) | Sem suporte. |
+| Delegado (conta corporativa ou de estudante)     | UserAuthenticationMethod.ReadWrite.All |
+| Delegado (conta pessoal da Microsoft) | Sem suporte. |
 | Aplicativo                            | UserAuthenticationMethod.ReadWrite.All |
 
 Para cenários delegados em que um administrador está atuando em outro usuário, o administrador precisa de uma [das seguintes funções:](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles)
@@ -96,6 +96,10 @@ DELETE https://graph.microsoft.com/beta/users/kim@contoso.com/authentication/pas
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/delete-passwordlessmicrosoftauthenticatorauthenticationmethod-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[Ir](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/delete-passwordlessmicrosoftauthenticatorauthenticationmethod-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

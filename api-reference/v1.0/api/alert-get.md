@@ -5,12 +5,12 @@ author: preetikr
 ms.localizationpriority: medium
 ms.prod: security
 doc_type: apiPageType
-ms.openlocfilehash: 2ee372c3f4bbbe68ec874520261a15440f2e391a
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 60811fb091aa79ada85a183d91ffdcbe06fded94
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59017020"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "60979645"
 ---
 # <a name="get-alert"></a>Obter alerta
 
@@ -40,7 +40,7 @@ GET /security/alerts/{alert_id}
 
 | Nome      |Descrição|
 |:----------|:----------|
-| Autorização  | Portador {código}. Obrigatório.|
+| Autorização  | {code} do portador. Obrigatório.|
 
 ## <a name="request-body"></a>Corpo da solicitação
 
@@ -79,6 +79,10 @@ GET https://graph.microsoft.com/v1.0/security/alerts/{alert_id}
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/get-alert-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[Ir](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/get-alert-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

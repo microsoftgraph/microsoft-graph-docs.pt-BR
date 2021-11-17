@@ -5,12 +5,12 @@ author: isabelleatmsft
 ms.localizationpriority: medium
 ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: 69ebef36a28629a1d4dabf4d55699c61a12c04b4
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: a01ca2f4525661113ed77f0d9eaf65c731f99b15
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59033137"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "60974729"
 ---
 # <a name="accessreviewinstance-batchrecorddecisions"></a>accessReviewInstance: batchRecordDecisions
 Namespace: microsoft.graph
@@ -22,7 +22,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 |Tipo de permissão|Permissões (da com menos para a com mais privilégios)|
 |:---|:---|
-|Delegada (conta corporativa ou de estudante)|AccessReview.ReadWrite.All|
+|Delegado (conta corporativa ou de estudante)|AccessReview.ReadWrite.All|
 |Delegado (conta pessoal da Microsoft)|Sem suporte|
 |Aplicativo|AccessReview.ReadWrite.All|
 
@@ -51,7 +51,7 @@ A tabela a seguir lista as propriedades que você pode usar para revisar [objeto
 |:---|:---|:---|
 |decision|Cadeia de caracteres|Decisão de acesso para a entidade que está sendo revisada. Os valores possíveis são: `Approve`, `Deny`, `NotReviewed`, `DontKnow`. Obrigatório.|
 |justification|Cadeia de caracteres|Contexto da revisão fornecida aos administradores. Obrigatório se **justificationRequiredOnApproval** da propriedade settings do **accessReviewScheduleDefinition** for `true` .|
-|principalId|String|Se fornecido, todos os **accessReviewInstanceDecisionItems** com valores **principalId** correspondentes serão revisados neste lote. Se não for fornecido, **todos os accessReviewInstanceDecisionItems** serão revisados.|
+|principalId|Cadeia de caracteres|Se fornecido, todos os **accessReviewInstanceDecisionItems** com valores **principalId** correspondentes serão revisados neste lote. Se não for fornecido, **todos os accessReviewInstanceDecisionItems** serão revisados.|
 |resourceId|Cadeia de caracteres|Se fornecido, todos os **accessReviewInstanceDecisionItems** com **resourceId** correspondentes serão revisados neste lote. Se não for fornecido, **todos os accessReviewInstanceDecisionItems** serão revisados.|
 
 ## <a name="response"></a>Resposta
@@ -92,6 +92,10 @@ Content-type: application/json
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/accessreviewinstance-batchrecorddecisions-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[Ir](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/accessreviewinstance-batchrecorddecisions-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

@@ -5,12 +5,12 @@ author: keylimesoda
 ms.localizationpriority: medium
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: ef0143fa934d38467f3327001ca30377c3a09fcb
-ms.sourcegitcommit: 08e9b0bac39c1b1d2c8a79539d24aaa93364baf2
+ms.openlocfilehash: b0c5edfe90d551a1db4c709fd26bb8881e78e0e9
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/24/2021
-ms.locfileid: "59508208"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "60987046"
 ---
 # <a name="list-deleted-items"></a>Listar itens excluídos
 
@@ -48,7 +48,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |:--------------------|:---------------------------------------------------------|
 |Delegado (conta corporativa ou de estudante) | Group.Read.All, Group.ReadWrite.All, Directory.Read.All, Directory.AccessAsUser.All |
 |Delegado (conta pessoal da Microsoft) | Sem suporte.    |
-|Application | Group.Read.All, Group.ReadWrite.All, Directory.Read.All |
+|Aplicativo | Group.Read.All, Group.ReadWrite.All, Directory.Read.All |
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- { "blockType": "ignored" } -->
@@ -124,6 +124,10 @@ GET https://graph.microsoft.com/beta/directory/deleteditems/microsoft.graph.grou
 [!INCLUDE [sample-code](../includes/snippets/java/get-deleteditems-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# <a name="go"></a>[Ir](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/get-deleteditems-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 #### <a name="response"></a>Resposta
@@ -183,6 +187,10 @@ ConsistencyLevel: eventual
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/get-deleteditems-count-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[Ir](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/get-deleteditems-count-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

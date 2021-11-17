@@ -1,16 +1,16 @@
 ---
 title: Excluir countryNamedLocation
 description: Exclua um objeto countryNamedLocation.
-localization_priority: Normal
+ms.localizationpriority: medium
 author: dkershaw10
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: f2e72a9d230a055c2cda1ea8c9292bff86120965
-ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
+ms.openlocfilehash: 294d03682d741b3ef23d79494d21ae3f6fc42e5b
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50437258"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "60987073"
 ---
 # <a name="delete-countrynamedlocation"></a>Excluir countryNamedLocation
 
@@ -81,6 +81,10 @@ DELETE https://graph.microsoft.com/beta/identity/conditionalAccess/namedLocation
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/delete-countrynamedlocation-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[Ir](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/delete-countrynamedlocation-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

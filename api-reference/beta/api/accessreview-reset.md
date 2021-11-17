@@ -1,16 +1,16 @@
 ---
 title: Redefinir accessReview
 description: No recurso de revisões de acesso do Azure AD, redefinir as decisões de um accessReview ativo no momento.  O objeto de destino pode ser uma revisão de acesso único ou uma instância de uma revisão de acesso recorrente.  As decisões anteriores não são mais registradas, mas os revisadores podem continuar a atualizar decisões.
-localization_priority: Normal
+ms.localizationpriority: medium
 author: markwahl-msft
 ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: 3005c6b8c3fbed81e89de62ff1e3e756cce6bd4a
-ms.sourcegitcommit: 13f474d3e71d32a5dfe2efebb351e3a1a5aa9685
+ms.openlocfilehash: df6227a3035991a5673e9a640e3fc0b31f673374
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "52751026"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "60992204"
 ---
 # <a name="reset-accessreview"></a>Redefinir accessReview
 
@@ -71,6 +71,10 @@ POST https://graph.microsoft.com/beta/accessReviews/2975E9B5-44CE-4E71-93D3-30F0
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/reset-accessreview-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[Ir](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/reset-accessreview-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

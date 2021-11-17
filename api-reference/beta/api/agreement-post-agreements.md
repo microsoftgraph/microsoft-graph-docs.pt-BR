@@ -1,16 +1,16 @@
 ---
 title: Criar contrato
 description: Crie um novo objeto de contrato.
-localization_priority: Normal
+ms.localizationpriority: medium
 doc_type: apiPageType
 ms.prod: governance
 author: raprakasMSFT
-ms.openlocfilehash: 53d11dc97d2662906e06b661cd967d5536419a86
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: 967f81da4b5f1b33eed421677b1dfd45487d61ea
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52048201"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "60987403"
 ---
 # <a name="create-agreement"></a>Criar contrato
 
@@ -50,11 +50,11 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar um usuá
 
 | Propriedade     | Tipo        | Descrição |
 |:-------------|:------------|:------------|
-|displayName|String|Nome de exibição do contrato.|
+|displayName|Cadeia de caracteres|Nome de exibição do contrato.|
 |isViewingBeforeAcceptanceRequired|Boolean|Indica se o usuário precisa expandir e exibir o contrato antes de aceitar.|
-|files/fileName|String|Nome do arquivo de contrato (por exemplo, TOU.pdf).|
-|files/isDefault|Boolean|Indica se esse é o arquivo de contrato padrão se nenhuma cultura corresponde à preferência do cliente. Se nenhum arquivo for marcado como padrão, o primeiro será tratado como padrão.|
-|files/language|String|Cultura do arquivo de contrato no formato languagecode2-country/regioncode2. languagecode2 é um código de duas letras minúsculo derivado da ISO 639-1. country/regioncode2 é derivado da ISO 3166 e geralmente consiste em duas letras maiúsculas, ou uma marca de idioma BCP-47 (por exemplo, en-US).|
+|files/fileName|Cadeia de caracteres|Nome do arquivo de contrato (por exemplo, TOU.pdf).|
+|files/isDefault|Booliano|Indica se esse é o arquivo de contrato padrão se nenhuma cultura corresponde à preferência do cliente. Se nenhum arquivo for marcado como padrão, o primeiro será tratado como padrão.|
+|files/language|Cadeia de caracteres|Cultura do arquivo de contrato no formato languagecode2-country/regioncode2. languagecode2 é um código de duas letras minúsculo derivado da ISO 639-1. country/regioncode2 é derivado da ISO 3166 e geralmente consiste em duas letras maiúsculas, ou uma marca de idioma BCP-47 (por exemplo, en-US).|
 |files/fileData/data|Binário|Dados que representam os termos de uso do documento PDF.|
 
 ## <a name="response"></a>Resposta
@@ -104,6 +104,10 @@ Content-type: application/json
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/create-agreement-from-agreements-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[Ir](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/create-agreement-from-agreements-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

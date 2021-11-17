@@ -5,12 +5,12 @@ author: RuiHou105
 ms.localizationpriority: medium
 ms.prod: cloud-pc
 doc_type: apiPageType
-ms.openlocfilehash: 07b4a1f98e6bea144cc69c64693f4f1a889755ec
-ms.sourcegitcommit: 08e9b0bac39c1b1d2c8a79539d24aaa93364baf2
+ms.openlocfilehash: c20c01fc55f207debeec126f0d85d30ab4f2e277
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/24/2021
-ms.locfileid: "59765880"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "60987226"
 ---
 # <a name="cloudpc-endgraceperiod"></a>cloudPC: endGracePeriod
 
@@ -18,7 +18,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Termine o período de carência para um computador cloud específico. O período de carência é acionado quando a licença do Cloud PC é removida ou a política de provisionamento não é atribuída. Ele permite que os usuários acessem os PCs de Nuvem por até sete dias antes do des provisionamento ocorrer. Terminar o período de carência imediatamente desprovisiona o computador cloud sem esperar os sete dias.
+Termine o período de carência para um computador cloud específico. O período de carência é acionado quando a licença do Cloud PC é removida ou a política de provisionamento não é atribuída. Ele permite que os usuários acessem os PCs de Nuvem por até sete dias antes do des provisionamento ocorrer. Encerrar o período de tolerância imediatamente desprovisiona o computador na nuvem sem aguardar os sete dias.
 
 ## <a name="permissions"></a>Permissões
 
@@ -85,6 +85,10 @@ POST https://graph.microsoft.com/beta/deviceManagement/virtualEndpoint/cloudPCs/
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/endgraceperiod-cloudpc-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[Ir](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/endgraceperiod-cloudpc-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

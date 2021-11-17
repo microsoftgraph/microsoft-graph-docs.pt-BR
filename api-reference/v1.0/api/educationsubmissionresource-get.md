@@ -5,12 +5,12 @@ author: sharad-sharma-msft
 ms.localizationpriority: medium
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: 09fd67c46fcbbba26cef82f3e2879f0759efbbe7
-ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
+ms.openlocfilehash: 3903b94f4bf64ee8c164b12e511ac4ec166122f1
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/12/2021
-ms.locfileid: "60943861"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "60993470"
 ---
 # <a name="get-educationsubmissionresource"></a>Obter educationSubmissionResource
 
@@ -26,7 +26,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
 |:--------------------|:---------------------------------------------------------|
 |Delegado (conta corporativa ou de estudante) |  EduAssignments.ReadBasic, EduAssignments.ReadWriteBasic, EduAssignments.Read, EduAssignments.ReadWrite  |
-|Delegada (conta pessoal da Microsoft) |  Sem suporte.  |
+|Delegado (conta pessoal da Microsoft) |  Sem suporte.  |
 |Aplicativo | EduAssignments.ReadBasic.All, EduAssignments.ReadWriteBasic.All, EduAssignments.Read.All, EduAssignments.ReadWrite.All | 
 
 ## <a name="http-request"></a>Solicitação HTTP
@@ -75,6 +75,10 @@ GET https://graph.microsoft.com/v1.0/education/classes/72a7baec-c3e9-4213-a850-f
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/get-educationwordresource-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[Ir](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/get-educationwordresource-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -153,6 +157,10 @@ GET https://graph.microsoft.com/v1.0/education/classes/72a7baec-c3e9-4213-a850-f
 [!INCLUDE [sample-code](../includes/snippets/java/get-educationfileresource-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# <a name="go"></a>[Ir](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/get-educationfileresource-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 #### <a name="response"></a>Resposta
@@ -226,6 +234,10 @@ GET https://graph.microsoft.com/v1.0/education/classes/72a7baec-c3e9-4213-a850-f
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/get-educationexcelresource-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[Ir](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/get-educationexcelresource-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -303,6 +315,10 @@ GET https://graph.microsoft.com/v1.0/education/classes/72a7baec-c3e9-4213-a850-f
 [!INCLUDE [sample-code](../includes/snippets/java/get-educationpowerpointresource-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# <a name="go"></a>[Ir](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/get-educationpowerpointresource-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 #### <a name="response"></a>Resposta
@@ -378,6 +394,10 @@ GET https://graph.microsoft.com/v1.0/education/classes/72a7baec-c3e9-4213-a850-f
 [!INCLUDE [sample-code](../includes/snippets/java/get-educationlinkresource-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# <a name="go"></a>[Ir](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/get-educationlinkresource-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 #### <a name="response"></a>Resposta
@@ -451,6 +471,10 @@ GET https://graph.microsoft.com/v1.0/education/classes/72a7baec-c3e9-4213-a850-f
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/get-educationmediaresource-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[Ir](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/get-educationmediaresource-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: markwahl-msft
 ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: 420cf16b0f6c2e3703761ad60375bf98835a96d0
-ms.sourcegitcommit: 64d27a0e3dcccc9d857e62aace4153e5d98fb3d0
+ms.openlocfilehash: b03ba3340c74aeb4936e5442256dc5a47965be67
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "60729595"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "60988067"
 ---
 # <a name="list-accessreviews"></a>Listar accessReviews
 
@@ -81,6 +81,10 @@ GET https://graph.microsoft.com/beta/accessReviews?$filter=businessFlowTemplateI
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/get-accessreviews-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[Ir](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/get-accessreviews-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

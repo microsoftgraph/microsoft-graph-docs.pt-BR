@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: stephenjust
 ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: 02551df1d778e3b8bdbb082805b6cde38f325278
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 230cadd3a62a1c65715e24eee72c2ddfca8abdc4
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59016782"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "60979497"
 ---
 # <a name="get-callrecord"></a>Obter callRecord
 
@@ -91,6 +91,10 @@ GET https://graph.microsoft.com/v1.0/communications/callRecords/{id}
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/get-callrecord-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[Ir](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/get-callrecord-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -179,6 +183,10 @@ GET https://graph.microsoft.com/v1.0/communications/callRecords/{id}?$expand=ses
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/get-callrecord-expanded-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[Ir](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/get-callrecord-expanded-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

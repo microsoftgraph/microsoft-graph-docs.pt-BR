@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: spunukol
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: ed372f1c87c369a80502c0a3aa705e0e4b9b434e
-ms.sourcegitcommit: f4999aa6fc05f845027db01aa489f7086f9850e1
+ms.openlocfilehash: 7fa08ef127098ba83edd949237ceb682dda0877a
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/13/2021
-ms.locfileid: "60289900"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "60993547"
 ---
 # <a name="device-checkmemberobjects"></a>device: checkMemberObjects
 
@@ -26,7 +26,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |:---------------------------------------|:--------------------------------------------|
 | Delegado (conta corporativa ou de estudante)     | Device.Read.All, Directory.Read.All, Directory.ReadWrite.All, Directory.AccessAsUser.All |
 | Delegado (conta pessoal da Microsoft) | Sem suporte. |
-| Application                            | Device.Read.All, Device.ReadWrite.All, Directory.Read.All, Directory.ReadWrite.All |
+| Aplicativo                            | Device.Read.All, Device.ReadWrite.All, Directory.Read.All, Directory.ReadWrite.All |
 
 ## <a name="http-request"></a>Solicitação HTTP
 
@@ -96,6 +96,10 @@ Content-type: application/json
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/device-checkmemberobjects-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[Ir](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/device-checkmemberobjects-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

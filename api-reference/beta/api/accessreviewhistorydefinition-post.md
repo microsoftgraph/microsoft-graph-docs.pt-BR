@@ -2,15 +2,15 @@
 title: Criar accessReviewHistoryDefinition
 description: Crie um novo objeto accessReviewHistoryDefinition.
 author: isabelleatmsft
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: f266276fae151bd8cc31455c4fd69eab193dd440
-ms.sourcegitcommit: 276a13a37c3772689dfc71f7cd47586c9581f27d
+ms.openlocfilehash: 80f7010e2d8d99038041420ed74a24bb5e2e4a67
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/24/2021
-ms.locfileid: "52629218"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "60987906"
 ---
 # <a name="create-accessreviewhistorydefinition"></a>Criar accessReviewHistoryDefinition
 
@@ -20,7 +20,7 @@ Namespace: microsoft.graph
 
 Crie um novo [objeto accessReviewHistoryDefinition.](../resources/accessreviewhistorydefinition.md)
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>Permissões
 
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
@@ -57,7 +57,7 @@ A tabela a seguir mostra as propriedades necessárias usadas para criar [um acce
 
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|displayName | Cadeia de caracteres  | Nome da coleção de dados do histórico de revisão de acesso. Obrigatório. |
+|displayName | String  | Nome da coleção de dados do histórico de revisão de acesso. Obrigatório. |
 |reviewHistoryPeriodStartDateTime  | DateTimeOffset  | Timestamp, as avaliações que começam em ou após essa data serão incluídas nos dados de histórico buscados. Obrigatório.  |
 |reviewHistoryPeriodEndDateTime  | DateTimeOffset  | Timestamp, as avaliações que começam em ou antes dessa data serão incluídas nos dados de histórico buscados. Obrigatório.  |
 |escopos|[Coleção accessReviewQueryScope](../resources/accessreviewqueryscope.md)| Usado para filtrar quais avaliações estão incluídas nos dados de histórico buscados. Busca avaliações cujo escopo corresponde a esse escopo fornecido. Obrigatório. <br> Para obter mais, consulte Consultas de escopo com [suporte para accessReviewHistoryDefinition](#supported-scope-queries-for-accessreviewhistorydefinition). |
@@ -141,6 +141,10 @@ Content-Type: application/json
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/create-accessreviewhistorydefinition-from--java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[Ir](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/create-accessreviewhistorydefinition-from--go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
