@@ -5,12 +5,12 @@ author: kevinbellinger
 ms.localizationpriority: medium
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 2277bca7f56c6db986082549c13544861166dde2
-ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
+ms.openlocfilehash: 1975f70aeef733a107dcbd644a42d6236e03626d
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/12/2021
-ms.locfileid: "60940867"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "60996340"
 ---
 # <a name="update-contact"></a>Atualizar contato
 
@@ -62,7 +62,7 @@ No corpo da solicitação, forneça os valores para os campos relevantes que dev
 |categories|String|As categorias associadas ao contato.|
 |children|String|Os nomes dos filhos do contato.|
 |nomeDaEmpresa|String|O nome da empresa do contato.|
-|department|String|O departamento do contato.|
+|departamento|String|O departamento do contato.|
 |displayName|String|O nome para exibição do contato. Observe que atualizações posteriores em outras propriedades podem fazer com que um valor gerado automaticamente sobrescreva o valor de displayName que você especificou. Para preservar a um valor preexistente, inclua-o como o displayName na operação atualizar.|
 |emailAddresses|Coleção [EmailAddress](../resources/emailaddress.md)|Os endereços de email do contato.|
 |fileAs|String|O nome com o qual o contato está arquivado.|
@@ -129,6 +129,10 @@ Content-type: application/json
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/update-contact-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[Ir](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/update-contact-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

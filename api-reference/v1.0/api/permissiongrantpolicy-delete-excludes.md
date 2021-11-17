@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 doc_type: apiPageType
 ms.prod: identity-and-sign-in
 author: psignoret
-ms.openlocfilehash: 16a991f559b4aa16912c6525fc69b69584a632f7
-ms.sourcegitcommit: f4999aa6fc05f845027db01aa489f7086f9850e1
+ms.openlocfilehash: 81d80a18a991e37d1d352573185f1fe8ddbd2cfc
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/13/2021
-ms.locfileid: "60290054"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "61003684"
 ---
 # <a name="delete-permissiongrantconditionset-from-excludes-collection-of-permissiongrantpolicy"></a>Excluir permissionGrantConditionSet de exclui coleção de permissionGrantPolicy
 
@@ -26,7 +26,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |:--------------------|:---------------------------------------------------------|
 | Delegado (conta corporativa ou de estudante) | PermissionGrantPolicy.ReadWrite.All |
 | Delegado (conta pessoal da Microsoft) | Sem suporte.    |
-| Application | PermissionGrantPolicy.ReadWrite.All |
+| Aplicativo | PermissionGrantPolicy.ReadWrite.All |
 
 ## <a name="http-request"></a>Solicitação HTTP
 
@@ -80,6 +80,10 @@ DELETE https://graph.microsoft.com/v1.0/policies/permissionGrantPolicies/my-cust
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/permissiongrantpolicy-delete-excludes-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[Ir](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/permissiongrantpolicy-delete-excludes-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

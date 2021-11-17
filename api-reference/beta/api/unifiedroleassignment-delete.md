@@ -1,16 +1,16 @@
 ---
 title: Excluir unifiedRoleAssignment
 description: Exclua um objeto unifiedRoleAssignment.
-localization_priority: Normal
+ms.localizationpriority: medium
 author: abhijeetsinha
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: 01ce2f1aa786c0f62147a370c00f6aed4d9d0bc6
-ms.sourcegitcommit: 4888ac7504533344c4fc6828e2a06a002a1d72d3
+ms.openlocfilehash: 321560a0f6e11d23b0f0644618dcc9e3388bbdcb
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/09/2021
-ms.locfileid: "53351031"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "60976913"
 ---
 # <a name="delete-unifiedroleassignment"></a>Excluir unifiedRoleAssignment
 
@@ -30,7 +30,7 @@ Dependendo do provedor RBAC e do tipo de permissão (delegado ou aplicativo) nec
 |:--------------------|:---------------------------------------------------------|
 |Delegado (conta corporativa ou de estudante) |  RoleManagement.ReadWrite.Directory   |
 |Delegado (conta pessoal da Microsoft) | Sem suporte.    |
-|Application | RoleManagement.ReadWrite.Directory |
+|Aplicativo | RoleManagement.ReadWrite.Directory |
 
 ### <a name="for-entitlement-management-provider"></a>Para provedor de gerenciamento de direitos
 
@@ -102,6 +102,10 @@ DELETE https://graph.microsoft.com/beta/roleManagement/directory/roleAssignments
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/delete-unifiedroleassignment-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[Ir](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/delete-unifiedroleassignment-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

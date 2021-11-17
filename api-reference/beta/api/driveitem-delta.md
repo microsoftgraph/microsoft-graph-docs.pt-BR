@@ -6,12 +6,12 @@ title: 'driveItem: delta'
 ms.localizationpriority: medium
 ms.prod: sharepoint
 doc_type: apiPageType
-ms.openlocfilehash: 463e36e54897b6c1a617a66c31c6902ccaad7cb2
-ms.sourcegitcommit: c6a8c1cc13ace38d6c4371139ee84707c5c93352
+ms.openlocfilehash: 3ca8c95a2d14ca8c5cc81c710b72b618430e7380
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/10/2021
-ms.locfileid: "60890294"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "61019920"
 ---
 # <a name="driveitem-delta"></a>driveItem: delta
 
@@ -19,7 +19,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Acompanhe as alterações em [um driveItem](../resources/driveitem.md) e seus filhos ao longo do tempo.
+Acompanhe as alterações em um [driveItem](../resources/driveitem.md) e seus filhos ao longo do tempo.
 
 Seu aplicativo começa chamando `delta` sem parâmetros. O serviço começa a enumerar a hierarquia da unidade, retornando páginas de itens e um `@odata.nextLink` ou `@odata.deltaLink`, conforme descrito abaixo. Seu aplicativo deve continuar chamando com o `@odata.nextLink` até que você não veja mais um `@odata.nextLink` retornado ou até que você veja uma resposta com um conjunto vazio de alterações.
 
@@ -84,7 +84,7 @@ Além da coleção de DriveItems, a resposta também incluirá uma das seguintes
 
 ## <a name="examples"></a>Exemplos
 
-### <a name="example-1-initial-request"></a>Exemplo 1: Solicitação inicial
+### <a name="example-1-initial-request"></a>Exemplo 1: solicitação inicial
 
 Veja a seguir um exemplo de como chamar essa API para estabelecer seu estado local.
 
@@ -152,7 +152,7 @@ Content-type: application/json
 
 Essa resposta inclui a primeira página de alterações, e a propriedade **@odata.nextLink** indica que há mais itens disponíveis no conjunto atual de itens. Seu aplicativo deve continuar a solicitar o valor de URL de **@odata.nextLink** até que todas as páginas de itens tenham sido recuperadas.
 
-### <a name="example-2-last-page-in-a-set"></a>Exemplo 2: Última página em um conjunto
+### <a name="example-2-last-page-in-a-set"></a>Exemplo 2: última página em um conjunto
 
 Veja a seguir um exemplo de como chamar essa API para atualizar seu estado local.
 
@@ -225,14 +225,14 @@ Pode haver casos em que o serviço não pode fornecer uma lista de alterações 
 | `resyncChangesApplyDifferences`  | Substitua todos os itens locais pela versão do servidor (incluindo exclusões) se você tiver certeza de que o serviço estava atualizado com suas alterações locais quando você sincronizou pela última vez. Carregue alterações locais que o servidor não conhece. |
 | `resyncChangesUploadDifferences` | Carregue os itens locais que o serviço não retornou e carregue os arquivos que diferem da versão do servidor (mantendo ambas as cópias se você não tiver certeza de qual é a mais atual).                                       |
 
-### <a name="example-3-retrieving-the-current-deltalink"></a>Exemplo 3: Recuperando o deltaLink atual
+### <a name="example-3-retrieving-the-current-deltalink"></a>Exemplo 3: recuperando o deltaLink atual
 
 Em alguns cenários, pode ser útil solicitar o valor do deltaLink atual sem primeiro enumerar todos os itens que já estão na unidade.
 
 Isso poderá ser útil se o seu aplicativo quiser apenas saber sobre as alterações e não quiser saber sobre os itens existentes. Para recuperar o deltaLink mais recente, chame `delta` com um parâmetro de cadeia de caracteres de consulta `?token=latest`.
 
-> **Observação:** Se você estiver tentando manter uma representação local completa dos itens em uma pasta ou unidade, você deve usar para a `delta` enumeração inicial.
-Outras abordagens, como a paja através da coleção de uma pasta, não são garantidas para retornar cada item se qualquer gravações ocorrer `children` durante a enumeração. Usar `delta` é a única maneira de garantir que você leu todos os dados necessários.
+> **Observação:** se estiver tentando manter uma representação local completa dos itens em uma pasta ou unidade, você deve usar `delta` para a enumeração inicial.
+Outras abordagens, como percorrer a coleção `children` de uma pasta, não têm garantia de retornar todos os itens se alguma gravação ocorrer durante a enumeração. Usar o `delta` é a única maneira de garantir que você leu todos os dados de que precisa.
 
 #### <a name="request"></a>Solicitação
 
@@ -276,23 +276,43 @@ Content-type: application/json
 }
 ```
 
-### <a name="example-4-retrieving-delta-results-using-a-timestamp"></a>Exemplo 4: Recuperar resultados delta usando um data/hora
+### <a name="example-4-retrieving-delta-results-using-a-timestamp"></a>Exemplo 4: recuperando resultados delta usando um carimbo de data/hora
 
-Em alguns cenários, o cliente pode saber o estado de uma unidade até um momento específico, mas não ter um deltaLink para esse ponto no tempo. Nesse caso, o cliente pode chamar usando um timestamp codificado por URL para o valor do parâmetro de cadeia de caracteres de consulta, por exemplo, `delta` `token` ou `?token=2021-09-29T20%3A00%3A00Z` '?token=2021-09-29T12%3A00%3A00%2B8%3A00'.
+Em alguns cenários, o cliente pode saber o estado de uma unidade até um momento específico, mas não tem um deltaLink para esse momento. Nesse caso, o cliente pode chamar `delta` usando um carimbo de data/hora codificado em URL para o valor do parâmetro de cadeia de caracteres de consulta `token`, por exemplo, `?token=2021-09-29T20%3A00%3A00Z` ou '? token=2021-09-29T12%3A00%3A00%2B8%3A00'.
 
-O uso de um data/hora no lugar de um token só é suportado OneDrive for Business e SharePoint.
+O uso de um carimbo de data/hora no lugar de um token é compatível apenas com OneDrive for Business e Microsoft Office SharePoint Online.
 
-> **Observação:** Os clientes devem usar o deltaLink fornecido pelas consultas quando possível, em vez de `delta` gerar seu próprio token. Esse recurso só deve ser usado quando o deltaLink não for conhecido.
+> **Observação:** Os clientes devem usar o deltaLink fornecido por `delta` consultas quando possível, em vez de gerar seu próprio token. Esse recurso só deve ser utilizado quando o deltaLink não for conhecido.
 
 
 #### <a name="request"></a>Solicitação
 
 
+
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- { "blockType": "request", "name": "get-delta-timestamp", "scopes": "files.read", "tags": "service.graph", "target": "action" } -->
 
-```http
+```msgraph-interactive
 GET /me/drive/root/delta?token=2021-09-29T20%3A00%3A00Z
 ```
+# <a name="c"></a>[C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/get-delta-timestamp-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/get-delta-timestamp-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/get-delta-timestamp-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/get-delta-timestamp-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 
 #### <a name="response"></a>Resposta

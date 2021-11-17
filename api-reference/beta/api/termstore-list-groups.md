@@ -2,15 +2,15 @@
 title: Listar grupos
 description: Obter os grupos da propriedade de navegação grupos.
 author: mohitpcad
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: Sharepoint
 doc_type: apiPageType
-ms.openlocfilehash: 3996bf2cc502f47ad5a2ce60fc92bd9f9d570fe1
-ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
+ms.openlocfilehash: 2c6a0401a2ef3080fedc04f64c8b5c7a40f87770
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "50957153"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "61001675"
 ---
 # <a name="list-groups"></a>Listar grupos
 Namespace: microsoft.graph.termStore
@@ -82,6 +82,10 @@ GET https://graph.microsoft.com/beta/termStore/groups
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/get-group-2-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[Ir](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/get-group-2-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

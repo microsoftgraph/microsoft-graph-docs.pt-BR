@@ -1,16 +1,16 @@
 ---
 title: Listar bookingCurrencies
-description: Obtenha uma lista de objetos bookingCurrency disponíveis para uma empresa de livros da Microsoft.
-localization_priority: Normal
+description: Obter uma lista de objetos bookingCurrency disponíveis para uma empresa do Microsoft Bookings.
+ms.localizationpriority: medium
 author: arvindmicrosoft
 ms.prod: bookings
 doc_type: apiPageType
-ms.openlocfilehash: eb0b9a2e2d122083905c79be7cf540853340d40a
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 87a0af55504031355e19dab929e1326a2363c11e
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48960523"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "60982312"
 ---
 # <a name="list-bookingcurrencies"></a>Listar bookingCurrencies
 
@@ -18,13 +18,13 @@ Namespace: microsoft.graph
 
  [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Obtenha uma lista de objetos [bookingCurrency](../resources/bookingcurrency.md) disponíveis para uma empresa de livros da Microsoft.
+Obter uma lista de [objetos bookingCurrency](../resources/bookingcurrency.md) disponíveis para uma empresa do Microsoft Bookings.
 ## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegado (conta corporativa ou de estudante) | Bookings. Read. All, BookingsAppointment. ReadWrite. All, bookings. ReadWrite. All, bookings. Manage. All   |
+|Delegado (conta corporativa ou de estudante) | Bookings.Read.All, BookingsAppointment.ReadWrite.All, Bookings.ReadWrite.All, Bookings.Manage.All   |
 |Delegado (conta pessoal da Microsoft) | Sem suporte.   |
 |Aplicativo | Sem suporte.  |
 
@@ -34,7 +34,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 GET /bookingCurrencies
 ```
 ## <a name="optional-query-parameters"></a>Parâmetros de consulta opcionais
-Este método oferece suporte aos [parâmetros de consulta OData](/graph/query-parameters) para ajudar a personalizar a resposta, incluindo $count, $filter, $select, $skip e $Top.
+Este método oferece suporte aos Parâmetros de [Consulta OData](/graph/query-parameters) para ajudar a personalizar a resposta, incluindo $count, $filter, $select, $skip e $top.
 
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
 | Nome      |Descrição|
@@ -44,7 +44,7 @@ Este método oferece suporte aos [parâmetros de consulta OData](/graph/query-pa
 ## <a name="request-body"></a>Corpo da solicitação
 Não forneça um corpo de solicitação para esse método.
 ## <a name="response"></a>Resposta
-Se tiver êxito, este método retornará um `200 OK` código de resposta e uma coleção de objetos [bookingCurrency](../resources/bookingcurrency.md) no corpo da resposta.
+Se tiver êxito, este método retornará um código `200 OK` de resposta e uma coleção de objetos [bookingCurrency](../resources/bookingcurrency.md) no corpo da resposta.
 ## <a name="example"></a>Exemplo
 ##### <a name="request"></a>Solicitação
 Este é um exemplo de solicitação.
@@ -73,10 +73,14 @@ GET https://graph.microsoft.com/beta/bookingCurrencies
 [!INCLUDE [sample-code](../includes/snippets/java/get-bookingcurrencies-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# <a name="go"></a>[Ir](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/get-bookingcurrencies-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 ##### <a name="response"></a>Resposta
-Este é um exemplo de resposta. Observação: o objeto Response mostrado aqui é truncado por brevidade. Todas as moedas e propriedades suportadas serão retornadas de uma chamada real.
+Este é um exemplo de resposta. Observação: o objeto de resposta mostrado aqui é truncado para brevidade. Todas as moedas e propriedades com suporte serão retornadas de uma chamada real.
 <!-- {
   "blockType": "response",
   "truncated": true,

@@ -2,15 +2,15 @@
 title: Atualizar regionalAndLanguageSettings
 description: Atualize as configurações regionais e de idioma de um usuário.
 author: jasonbro
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: users
 doc_type: apiPageType
-ms.openlocfilehash: fb1621d05daa04a3387d728dfdfbea073cf56704
-ms.sourcegitcommit: 94c4acf8bd03c10a44b12952b6cb4827df55b978
+ms.openlocfilehash: eed6912edd9252f73cec917098111024a634d5e0
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/06/2021
-ms.locfileid: "52787503"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "60996879"
 ---
 # <a name="update-regionalandlanguagesettings"></a>Atualizar regionalAndLanguageSettings
 
@@ -20,7 +20,7 @@ Namespace: microsoft.graph
 
 Atualize algumas ou todas as propriedades de um [objeto regionalAndLanguageSettings.](../resources/regionalAndLanguageSettings.md)
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão                   |Permissão (do mínimo para o mais privilegiado)     |
@@ -132,6 +132,10 @@ Content-type: application/json
 [!INCLUDE [sample-code](../includes/snippets/java/put-regionalandlanguagesettings-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# <a name="go"></a>[Ir](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/put-regionalandlanguagesettings-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 
@@ -189,6 +193,10 @@ Content-type: application/json
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/patch-regionalandlanguagesettings-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[Ir](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/patch-regionalandlanguagesettings-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

@@ -1,16 +1,16 @@
 ---
 title: Criar namedLocation
 description: Crie um novo namedLocation.
-localization_priority: Normal
+ms.localizationpriority: medium
 author: videor
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: 51b661169dc1e308f3e7e422b1ba8eec4843de56
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: 24d29d54d410f3793294c3fc276d66c3e9ad6f17
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52047228"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "61026770"
 ---
 # <a name="create-namedlocation"></a>Criar namedLocation
 
@@ -18,7 +18,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Crie um novo [objeto namedLocation.](../resources/namedlocation.md)
+Crie um novo [objeto namedLocation.](../resources/namedlocation.md) Locais nomeados podem ser [objetos ipNamedLocation](../resources/ipnamedlocation.md) [ou countryNamedLocation.](../resources/countrynamedlocation.md)
 
 ## <a name="permissions"></a>Permissões
 
@@ -28,7 +28,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |:---------------------------------------|:--------------------------------------------|
 | Delegado (conta corporativa ou de estudante)     | Policy.Read.All e Policy.ReadWrite.ConditionalAccess |
 | Delegado (conta pessoal da Microsoft) | Sem suporte. |
-| Application                            | Policy.Read.All e Policy.ReadWrite.ConditionalAccess |
+| Aplicativo                            | Policy.Read.All e Policy.ReadWrite.ConditionalAccess |
 
 ## <a name="http-request"></a>Solicitação HTTP
 
@@ -47,8 +47,21 @@ POST /identity/conditionalAccess/namedLocations
 
 ## <a name="request-body"></a>Corpo da solicitação
 
-No corpo da solicitação, fornece uma representação JSON de [um objeto ipNamedLocation](../resources/ipnamedlocation.md) [ou countryNamedLocation.](../resources/countrynamedlocation.md)
+No corpo da solicitação, fornece uma representação JSON de [um objeto ipNamedLocation](../resources/ipnamedlocation.md) [ou countryNamedLocation.](../resources/countrynamedlocation.md) Você deve especificar o **@odata.type** do tipo derivado, ou seja, para um objeto `#microsoft.graph.ipNamedLocation` [ipNamedLocation](../resources/ipnamedlocation.md) ou para um `#microsoft.graph.countryNamedLocation` [objeto countryNamedLocation.](../resources/countrynamedlocation.md)
 
+A tabela a seguir lista as propriedades necessárias para criar um [objeto ipNamedLocation.](../resources/ipnamedlocation.md)
+
+| Propriedade     | Tipo        | Descrição |
+|:-------------|:------------|:------------|
+|displayName|String|Nome acessível para humanos do local. Obrigatório.|
+|ipRanges|Coleção [ipRange](../resources/iprange.md)|Lista de intervalos de endereços IP no formato CIDR IPv4 (por exemplo, 1.2.3.4/32) ou qualquer formato IPv6 acessível do IETF RFC596. Obrigatório. O **@odata.type** do ipRange também é necessário.|
+
+A tabela a seguir lista as propriedades necessárias para criar um [objeto countryNamedLocation.](../resources/countrynamedlocation.md)
+
+| Propriedade     | Tipo        | Descrição |
+|:-------------|:------------|:------------|
+|countriesAndRegions|Coleção de cadeias de caracteres|Lista de países e/ou regiões no formato de duas letras especificado pela ISO 3166-2. Obrigatório.|
+|displayName|String|Nome acessível para humanos do local. Obrigatório.|
 ## <a name="response"></a>Resposta
 
 Se tiver êxito, este método retornará um código de resposta e um `201 Created` novo [objeto ipNamedLocation](../resources/ipnamedlocation.md) ou [countryNamedLocation](../resources/countrynamedlocation.md) no corpo da resposta.
@@ -101,6 +114,10 @@ Content-type: application/json
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/create-namedlocation-from-conditionalaccessroot-1-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[Ir](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/create-namedlocation-from-conditionalaccessroot-1-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -182,6 +199,10 @@ Content-type: application/json
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/create-namedlocation-from-conditionalaccessroot-2-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[Ir](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/create-namedlocation-from-conditionalaccessroot-2-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

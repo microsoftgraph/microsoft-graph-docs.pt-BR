@@ -1,16 +1,16 @@
 ---
 title: Obter um modelo de configuração de diretório
 description: Permite a recuperação das propriedades do objeto directorySettingTemplate, incluindo as configurações disponíveis e seus padrões.
-localization_priority: Normal
+ms.localizationpriority: medium
 author: adimitui
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: 09ea18c16c295b1974f60c76ea3a3897f6f419d2
-ms.sourcegitcommit: 9b8abc940a68dac6ee5da105ca29800cb59775f6
+ms.openlocfilehash: 8c5920dd971f71603afacb080d8b77cd35fde154
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/25/2021
-ms.locfileid: "58514483"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "61015640"
 ---
 # <a name="get-a-directory-setting-template"></a>Obter um modelo de configuração de diretório
 
@@ -77,6 +77,10 @@ GET https://graph.microsoft.com/beta/directorySettingTemplates/08d542b9-071f-4e1
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/get-directorysettingtemplate-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[Ir](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/get-directorysettingtemplate-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

@@ -2,15 +2,15 @@
 title: Listar appConsentRequests
 description: Recupere objetos appConsentRequest e suas propriedades.
 author: psignoret
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: 335c66cc065ab727759536457aeec168a3dbf9cc
-ms.sourcegitcommit: 13f474d3e71d32a5dfe2efebb351e3a1a5aa9685
+ms.openlocfilehash: de18f6d7aefdb7ad96f06d2b11900c59414f4de0
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "52750982"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "60995591"
 ---
 # <a name="list-appconsentrequests"></a>Listar appConsentRequests
 Namespace: microsoft.graph
@@ -82,6 +82,10 @@ GET https://graph.microsoft.com/beta/identityGovernance/appConsent/appConsentReq
 [!INCLUDE [sample-code](../includes/snippets/java/list-appconsentrequest-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# <a name="go"></a>[Ir](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/list-appconsentrequest-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 
@@ -142,6 +146,10 @@ GET https://graph.microsoft.com/beta/identityGovernance/appConsent/appConsentReq
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/list-appconsentrequest-userconsentrequest-inprogress-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[Ir](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/list-appconsentrequest-userconsentrequest-inprogress-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

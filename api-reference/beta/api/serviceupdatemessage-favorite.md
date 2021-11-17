@@ -2,15 +2,15 @@
 title: 'serviceUpdateMessage: favorite'
 description: Altere o status de uma lista de mensagens de atualização de serviço para favoritos para o usuário inscrevado.
 author: payiAzure
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: service-communications
 doc_type: apiPageType
-ms.openlocfilehash: 4d15bba0aa3f2aa498a7b6849518cc2155a2369d
-ms.sourcegitcommit: 7f674112f5b95446fac86d829509f889c60f1693
+ms.openlocfilehash: 6082d265dc8c30c4789a80c4b8018a45f179c911
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/30/2021
-ms.locfileid: "53209188"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "61014107"
 ---
 # <a name="serviceupdatemessage-favorite"></a>serviceUpdateMessage: favorite
 Namespace: microsoft.graph
@@ -89,6 +89,10 @@ Content-Type: application/json
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/serviceupdatemessage-favorite-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[Ir](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/serviceupdatemessage-favorite-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

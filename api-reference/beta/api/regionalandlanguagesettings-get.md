@@ -2,15 +2,15 @@
 title: Obter recurso regionalAndLanguageSettings
 description: Recuperar as propriedades de regionalAndLanguageSettings de um usuário
 author: jasonbro
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: users
 doc_type: apiPageType
-ms.openlocfilehash: 6bd4f758a2e7b0113ba6da5eb04b1823171986b8
-ms.sourcegitcommit: 3edf187fe4b42f81c09610782671776a27161126
+ms.openlocfilehash: b9e9a58bfe18bccba925c4aca7ba32143d6b0281
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/06/2021
-ms.locfileid: "50516630"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "60996865"
 ---
 # <a name="get-regionalandlanguagesettings"></a>Obter regionalAndLanguageSettings
 
@@ -25,7 +25,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 |Tipo de permissão                   |Permissão (do mínimo para o mais privilegiado)     |
 |----------------------------------|---------------------------------------------- |
-|Delegada (conta corporativa ou de estudante)|User.Read, User.Read.All                        |
+|Delegado (conta corporativa ou de estudante)|User.Read, User.Read.All                        |
 |Delegada (conta pessoal)      |User.Read, User.Read.All              |
 |Aplicativo                       |User.Read, User.Read.All              |
 
@@ -79,6 +79,10 @@ GET https://graph.microsoft.com/beta/me/settings/regionalAndLanguageSettings
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/get-regionalandlanguagesettings-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[Ir](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/get-regionalandlanguagesettings-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

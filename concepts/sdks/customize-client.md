@@ -3,12 +3,12 @@ title: Personalizar o cliente de serviço do Microsoft Graph SDK
 description: Fornece instruções sobre como alterar o comportamento padrão do cliente de serviço do Microsoft Graph SDK.
 ms.localizationpriority: medium
 author: DarrelMiller
-ms.openlocfilehash: 6c98ed668db7dbcd710f95e72f7e965cfc2f9cc6
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 12d6321fd9821653939b5533e8ce4ee5b57c788b
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59098402"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "61019987"
 ---
 # <a name="customize-the-microsoft-graph-sdk-service-client"></a>Personalizar o cliente de serviço do Microsoft Graph SDK
 
@@ -165,15 +165,7 @@ var scopes = new[] { "https://graph.microsoft.com/.default" };
 // This example works with Microsoft.Graph 4+
 var httpClient = GraphClientFactory.Create(new TokenCredentialAuthProvider(credential, scopes), proxy: new WebProxy(new Uri(proxyAddress)));
 
-GraphServiceClient graphClient = new(httpClient);
-
-/* For Microsoft.Graph version < 4, you'll need to implement an authHandler. Please note
-/* that Microsoft.Graph.Auth is deemphasized and will not leave the preview state.
-
-var httpProvider = new HttpProvider(handler, true);
-GraphServiceClient graphClient = new(authHandler, httpProvider);
-
-*/
+var graphClient = new GraphServiceClient(httpClient);
 ```
 
 ## <a name="typescript"></a>[TypeScript](#tab/typeScript)

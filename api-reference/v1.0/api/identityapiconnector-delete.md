@@ -5,12 +5,12 @@ author: nickgmicrosoft
 ms.localizationpriority: medium
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: 27761d24c875bcbbf14f9f96fdf8022d9b4de37f
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 48f83d494d49ead61df69b54f24b99b4a86f10e0
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59045823"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "61027687"
 ---
 # <a name="delete-identityapiconnector"></a>Excluir identityApiConnector
 
@@ -24,8 +24,8 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 | Tipo de permissão                        | Permissões (da com menos para a com mais privilégios) |
 | :------------------------------------- | :------------------------------------------ |
-| Delegada (conta corporativa ou de estudante)     | APIConnectors.ReadWrite.All |
-| Delegada (conta pessoal da Microsoft) | Sem suporte.  |
+| Delegado (conta corporativa ou de estudante)     | APIConnectors.ReadWrite.All |
+| Delegado (conta pessoal da Microsoft) | Sem suporte.  |
 | Aplicativo                            | APIConnectors.ReadWrite.All |
 
 A conta de trabalho ou de estudante precisa pertencer a uma das seguintes funções:
@@ -89,6 +89,10 @@ DELETE https://graph.microsoft.com/v1.0/identity/apiConnectors/370eeb68-dfd3-4a4
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/delete-identityapiconnector-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[Ir](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/delete-identityapiconnector-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

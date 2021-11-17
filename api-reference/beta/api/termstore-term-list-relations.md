@@ -2,22 +2,22 @@
 title: Listar relações
 description: Obter as relações da propriedade de navegação de relações.
 author: mohitpcad
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: Sharepoint
 doc_type: apiPageType
-ms.openlocfilehash: a3ccad6849eb9533ac043c22bbeff636230bc2cb
-ms.sourcegitcommit: eacd2a6e46c19dd3cd8519592b1668fabe14d85d
+ms.openlocfilehash: 57175d0306d0113b525fb39d8e1fdc010ac97eea
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "49874442"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "60977599"
 ---
 # <a name="list-relations"></a>Listar relações
 Namespace: microsoft.graph.termStore
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Obter a relação diferente de um [termo ou] [conjunto a] partir da propriedade de navegação de relações.
+Obter a relação diferente de um [termo ou] [definir] a partir da propriedade de navegação de relações.
 
 ## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
@@ -53,7 +53,7 @@ Não forneça um corpo de solicitação para esse método.
 
 ## <a name="response"></a>Resposta
 
-Se bem-sucedido, este método retorna um código de resposta e uma `200 OK` coleção de objetos [relation](../resources/termstore-relation.md) no corpo da resposta.
+Se tiver êxito, este método retornará um código de resposta e uma `200 OK` coleção de [objetos relacionais](../resources/termstore-relation.md) no corpo da resposta.
 
 ## <a name="examples"></a>Exemplos
 
@@ -82,6 +82,10 @@ GET https://graph.microsoft.com/beta/termStore/sets/{setId}/relations
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/get-relation-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[Ir](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/get-relation-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

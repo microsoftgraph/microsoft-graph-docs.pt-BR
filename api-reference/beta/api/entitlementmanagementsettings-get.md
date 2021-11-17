@@ -1,16 +1,16 @@
 ---
 title: Obter direitosManagementSettings
 description: Recupere as propriedades do objeto entitlementManagementSettings.
-localization_priority: Normal
+ms.localizationpriority: medium
 author: markwahl-msft
 ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: 398a0f75fd4cbf606cbc5c54c509ade4191fb9f2
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: f3cd0cbb2b60ea7ce2214f875f248fddaade9b9d
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52042622"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "60998300"
 ---
 # <a name="get-entitlementmanagementsettings"></a>Obter direitosManagementSettings
 
@@ -28,7 +28,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |:---------------------------------------|:--------------------------------------------|
 | Delegado (conta corporativa ou de estudante)     | EntitlementManagement.Read.All, EntitlementManagement.ReadWrite.All |
 | Delegado (conta pessoal da Microsoft) | Sem suporte. |
-| Application                            | EntitlementManagement.Read.All, EntitlementManagement.ReadWrite.All |
+| Aplicativo                            | EntitlementManagement.Read.All, EntitlementManagement.ReadWrite.All |
 
 ## <a name="http-request"></a>Solicitação HTTP
 
@@ -86,6 +86,10 @@ GET https://graph.microsoft.com/beta/identityGovernance/entitlementManagement/se
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/get-entitlementmanagementsettings-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[Ir](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/get-entitlementmanagementsettings-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

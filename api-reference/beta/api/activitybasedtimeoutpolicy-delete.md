@@ -1,16 +1,16 @@
 ---
 title: Excluir activityBasedTimeoutPolicy
 description: Excluir activityBasedTimeoutPolicy.
-localization_priority: Normal
+ms.localizationpriority: medium
 author: lujiangfeng666
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: 624b175cd627d082d8a7b50f3a239e1da798da4f
-ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
+ms.openlocfilehash: 841abd2d4538d90cde3bf2114c9ed6c3d44937e3
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50439006"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "60991692"
 ---
 # <a name="delete-activitybasedtimeoutpolicy"></a>Excluir activityBasedTimeoutPolicy
 
@@ -81,6 +81,10 @@ DELETE https://graph.microsoft.com/beta/policies/activityBasedTimeoutPolicies/{i
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/delete-activitybasedtimeoutpolicy-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[Ir](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/delete-activitybasedtimeoutpolicy-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

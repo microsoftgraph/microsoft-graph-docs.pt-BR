@@ -5,12 +5,12 @@ author: skadam-msft
 ms.localizationpriority: medium
 ms.prod: compliance
 doc_type: apiPageType
-ms.openlocfilehash: 3393800e3ff98fee797229e9294f5464ca4fc96b
-ms.sourcegitcommit: 0eb843a6f61f384bc28c0cce1ccb74f64bdb1fa6
+ms.openlocfilehash: 1adff3fcb24e0cb31f728467ecffd0489ca622a4
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/23/2021
-ms.locfileid: "60560335"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "61014002"
 ---
 # <a name="get-subjectrightsrequest"></a>Obter subjectRightsRequest
 Namespace: microsoft.graph
@@ -26,7 +26,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |:---|:---|
 |Delegado (conta corporativa ou de estudante)|SubjectRightsRequest.Read.All *, SubjectRightsRequest.ReadWrite.All*|
 |Delegado (conta pessoal da Microsoft)|Sem suporte.|
-|Application|Sem suporte|
+|Aplicativo|Sem suporte|
 
 >[!IMPORTANT]
 >No momento, as permissões marcadas com um asterisco (*) não estão disponíveis. Para mais detalhes, confira [Problemas conhecidos](/graph/known-issues#compliance).
@@ -84,6 +84,10 @@ GET https://graph.microsoft.com/beta/privacy/subjectRightsRequests/{subjectRight
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/get-subjectrightsrequest-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[Ir](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/get-subjectrightsrequest-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

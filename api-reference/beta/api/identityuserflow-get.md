@@ -1,22 +1,24 @@
 ---
-title: Obter userFlow
+title: Obter userFlow (preterido)
 description: Recupere as propriedades e as relações do objeto userflow.
-localization_priority: Normal
+ms.localizationpriority: medium
 author: Nickgmicrosoft
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: 6f671cc351675dfb2f62bfe3ad992facd8def402
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: 03d8d5c24a6faa2ce7dc7c25c856acbff892d890
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52040767"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "61014898"
 ---
 # <a name="get-userflow"></a>Obter userFlow
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
+[!INCLUDE [identityuserflow-deprecate](../../includes/identityuserflow-deprecate.md)]
 
 Recupere as propriedades e associações de um [objeto userFlow.](../resources/identityuserflow.md)
 
@@ -28,7 +30,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |:---------------------------------------|:--------------------------------------------|
 | Delegado (conta corporativa ou de estudante)     | IdentityUserFlow.Read.All, IdentityUserFlow.ReadWrite.All |
 | Delegado (conta pessoal da Microsoft) | Sem suporte. |
-| Application                            | IdentityUserFlow.Read.All, IdentityUserFlow.ReadWrite.All |
+| Aplicativo                            | IdentityUserFlow.Read.All, IdentityUserFlow.ReadWrite.All |
 
 ## <a name="http-request"></a>Solicitação HTTP
 
@@ -82,6 +84,10 @@ GET https://graph.microsoft.com/beta/identity/userFlows/B2C_1_Pol1
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/get-identityuserflow-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[Ir](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/get-identityuserflow-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

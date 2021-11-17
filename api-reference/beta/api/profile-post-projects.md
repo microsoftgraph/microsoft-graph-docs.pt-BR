@@ -1,16 +1,16 @@
 ---
 title: Criar projectParticipation
 description: Use essa API para criar um novo projectParticipation.
-localization_priority: Normal
+ms.localizationpriority: medium
 author: kevinbellinger
 ms.prod: people
 doc_type: apiPageType
-ms.openlocfilehash: 7fdfc23831b30495f35f1eb4c4d82e863bba07fd
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: d34f86f7599d20cdc69b4a2e885043e62f263c0f
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52036790"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "60996977"
 ---
 # <a name="create-projectparticipation"></a>Criar projectParticipation
 
@@ -55,12 +55,12 @@ A tabela a seguir mostra as propriedades que são possíveis de definir ao criar
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
 |allowedAudiences|String|As audiências que são capazes de ver os valores contidos na entidade. Herdado [do itemFacet](../resources/itemfacet.md). Os valores possíveis são: `me`, `family`, `contacts`, `groupMembers`, `organization`, `federatedOrganizations`, `everyone`, `unknownFutureValue`.|
-|categories|String collection|Contém categorias que um usuário associou ao projeto (por exemplo, transformação digital, plataforma de petróleo). |
+|categories|Coleção de cadeias de caracteres|Contém categorias que um usuário associou ao projeto (por exemplo, transformação digital, plataforma de petróleo). |
 |client|[companyDetail](../resources/companydetail.md)|Contém informações detalhadas sobre o cliente para o que o projeto era. |
 |collaborationTags|Conjunto de cadeias de caracteres|Contém marcas de cenário de experiência que um usuário associou aos juros. Os valores permitidos na coleção são: `askMeAbout` `ableToMentor` , , , `wantsToLearn` `wantsToImprove` .|
 |colleagues|[coleção relatedPerson](../resources/relatedperson.md)|Lista as pessoas que também trabalharam no projeto. |
 |detail|[positionDetail](../resources/positiondetail.md)|Contém detalhes sobre a função do usuário no projeto.|
-|displayName|String|Contém um nome amigável para o projeto.|
+|displayName|Cadeia de caracteres|Contém um nome amigável para o projeto.|
 |inferência|[inferenceData](../resources/inferencedata.md)|Contém detalhes de inferência se a entidade for inferida pelo aplicativo de criação ou modificação. Herdado [do itemFacet](../resources/itemfacet.md).|
 |source|[personDataSource](../resources/persondatasource.md)|Onde os valores se originaram se sincronizados de outro serviço. Herdado [do itemFacet](../resources/itemfacet.md).|
 |patrocinadores|[coleção relatedPerson](../resources/relatedperson.md)|A Pessoa ou as pessoas que patrocinaram o projeto.    |
@@ -124,6 +124,10 @@ Content-type: application/json
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/create-projectparticipation-from-profile-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[Ir](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/create-projectparticipation-from-profile-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

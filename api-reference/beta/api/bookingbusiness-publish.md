@@ -1,16 +1,16 @@
 ---
 title: 'bookingBusiness: publish'
 description: Disponibilizar a página de agendamento dessa empresa para clientes externos.
-localization_priority: Normal
+ms.localizationpriority: medium
 author: arvindmicrosoft
 ms.prod: bookings
 doc_type: apiPageType
-ms.openlocfilehash: d60a88324cd86cd599fc9986dfa3b6d1a4f737ea
-ms.sourcegitcommit: 94c4acf8bd03c10a44b12952b6cb4827df55b978
+ms.openlocfilehash: 4f20392dacbbe240448efe02e449cd3514319efa
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/06/2021
-ms.locfileid: "52786584"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "60990503"
 ---
 # <a name="bookingbusiness-publish"></a>bookingBusiness: publish
 
@@ -22,7 +22,7 @@ Disponibilizar a página de agendamento dessa empresa para clientes externos.
 
 Defina a **propriedade isPublished** como true e **a propriedade publicUrl** como a URL da página de agendamento.
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
@@ -35,7 +35,6 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /bookingBusinesses/{id}/publish
-
 ```
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
 | Nome       | Descrição|
@@ -74,6 +73,10 @@ POST https://graph.microsoft.com/beta/bookingBusinesses/Contosolunchdelivery@M36
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/bookingbusiness-publish-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[Ir](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/bookingbusiness-publish-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

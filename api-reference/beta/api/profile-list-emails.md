@@ -1,16 +1,16 @@
 ---
 title: Listar emails
-description: Recupere uma lista de objetos de email.
-localization_priority: Normal
+description: Recupere uma lista de objetos itemEmail.
+ms.localizationpriority: medium
 author: kevinbellinger
 ms.prod: people
 doc_type: apiPageType
-ms.openlocfilehash: 89712a37f289c855d5a09510ca0c9b9b6495bf60
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: e27c89e1d323ec345882514d56e08cecc1a7c9c5
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48980818"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "61019441"
 ---
 # <a name="list-emails"></a>Listar emails
 
@@ -18,7 +18,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Recupere uma lista de objetos de [email](../resources/itememail.md) do [perfil](../resources/profile.md)de um usuário.
+Recupere uma lista de [objetos itemEmail](../resources/itememail.md) do perfil de um [usuário.](../resources/profile.md)
 
 ## <a name="permissions"></a>Permissões
 
@@ -26,9 +26,9 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 | Tipo de permissão                        | Permissões (da com menos para a com mais privilégios) |
 |:---------------------------------------|:--------------------------------------------|
-| Delegado (conta corporativa ou de estudante)     | User. Read, User. ReadWrite, User. ReadBasic. All, User. Read. All, User. ReadWrite. All |
-| Delegado (conta pessoal da Microsoft) | User. Read, User. ReadWrite, User. ReadBasic. All, User. Read. All, User. ReadWrite. All |
-| Application                            | User. ReadBasic. All, User. Read. All, User. ReadWrite. All |
+| Delegado (conta corporativa ou de estudante)     | User.Read, User.ReadWrite, User.ReadBasic.All, User.Read.All, User.ReadWrite.All |
+| Delegado (conta pessoal da Microsoft) | User.Read, User.ReadWrite, User.ReadBasic.All, User.Read.All, User.ReadWrite.All |
+| Aplicativo                            | User.ReadBasic.All, User.Read.All, User.ReadWrite.All |
 
 ## <a name="http-request"></a>Solicitação HTTP
 
@@ -41,14 +41,14 @@ GET /users/{id | userPrincipalName}/profile/emails
 
 ## <a name="optional-query-parameters"></a>Parâmetros de consulta opcionais
 
-Este método oferece suporte aos seguintes parâmetros de consulta OData para ajudar a personalizar a resposta. Para obter informações gerais, acesse [Parâmetros de consulta OData](/graph/query-parameters).
+Este método dá suporte aos seguintes parâmetros de consulta OData para ajudar a personalizar a resposta. Para obter informações gerais, acesse [Parâmetros de consulta OData](/graph/query-parameters).
 
 |Nome            |Valor    |Descrição                                                                                                                                                                 |
 |:---------------|:--------|:---------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-|$filter         |string   |Limita a resposta somente aos objetos que contêm os critérios especificados.                                                                                             |
-|$orderby        |cadeia de caracteres   |Por padrão, os objetos na resposta são classificados por seu valor createdDateTime em uma consulta. Você pode alterar a ordem da resposta usando o parâmetro *$OrderBy* .|
+|$filter         |string   |Limita a resposta apenas aos objetos que contêm os critérios especificados.                                                                                             |
+|$orderby        |cadeia de caracteres   |Por padrão, os objetos na resposta são classificação pelo valor createdDateTime em uma consulta. Você pode alterar a ordem da resposta usando o parâmetro *$orderby.*|
 |$select         |string   |Lista separada por vírgulas de propriedades para incluir na resposta. Para um desempenho ideal, selecione apenas o subconjunto de propriedades necessário.                                        |
-|$skip           |int      |Ignore os primeiros n resultados, útil para paginação.                                                                                                                                |
+|$skip           |int      |Ignore os primeiros resultados n, úteis para pajamento.                                                                                                                                |
 |$top            |int      |Número de resultados a ser retornado.                                                                                                                                           |
 
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
@@ -63,7 +63,7 @@ Não forneça um corpo de solicitação para esse método.
 
 ## <a name="response"></a>Resposta
 
-Se tiver êxito, este método retornará um `200 OK` código de resposta e uma coleção de objetos de [email](../resources/itememail.md) no corpo da resposta.
+Se tiver êxito, este método retornará um código de resposta e uma `200 OK` coleção de [objetos itemEmail](../resources/itememail.md) no corpo da resposta.
 
 ## <a name="examples"></a>Exemplos
 
@@ -90,6 +90,10 @@ GET https://graph.microsoft.com/beta/me/profile/emails
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/get-emails-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[Ir](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/get-emails-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

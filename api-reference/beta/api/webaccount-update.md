@@ -1,16 +1,16 @@
 ---
 title: Atualizar webAccount
 description: Atualize as propriedades de um objeto webAccount.
-localization_priority: Normal
+ms.localizationpriority: medium
 author: kevinbellinger
 ms.prod: people
 doc_type: apiPageType
-ms.openlocfilehash: bc907445655085ff863094f58d2afe337a9074fe
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: 72a2b25432b0b5bd15af987db9f3ff1d4f866dc4
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52050707"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "61016620"
 ---
 # <a name="update-webaccount"></a>Atualizar webAccount
 
@@ -53,11 +53,11 @@ No corpo da solicitação, forneça os valores para os campos relevantes que dev
 
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|allowedAudiences|String|As audiências que são capazes de ver os valores contidos na entidade. Herdado [do itemFacet](../resources/itemfacet.md). Os valores possíveis são: `me`, `family`, `contacts`, `groupMembers`, `organization`, `federatedOrganizations`, `everyone`, `unknownFutureValue`.|
-|description|String|Contém a descrição que o usuário forneceu para a conta no serviço que está sendo referenciado.|
+|allowedAudiences|Cadeia de caracteres|As audiências que são capazes de ver os valores contidos na entidade. Herdado [do itemFacet](../resources/itemfacet.md). Os valores possíveis são: `me`, `family`, `contacts`, `groupMembers`, `organization`, `federatedOrganizations`, `everyone`, `unknownFutureValue`.|
+|description|Cadeia de caracteres|Contém a descrição que o usuário forneceu para a conta no serviço que está sendo referenciado.|
 |inferência|[inferenceData](../resources/inferencedata.md)|Contém detalhes de inferência se a entidade for inferida pelo aplicativo de criação ou modificação. Herdado [do itemFacet](../resources/itemfacet.md).|
 |serviço|[serviceInformation](../resources/serviceinformation.md)| Contém detalhes básicos sobre o serviço que está sendo associado. |
-|statusMessage|String|Contém uma mensagem de status do serviço de nuvem, se fornecida ou sincronizada. |
+|statusMessage|Cadeia de caracteres|Contém uma mensagem de status do serviço de nuvem, se fornecida ou sincronizada. |
 |userId|Cadeia de caracteres|O nome de usuário exibido para a conta da Web.  |
 |webUrl|String|Contém um link para o perfil do usuário no serviço de nuvem, se houver um.|
 
@@ -99,6 +99,10 @@ Content-type: application/json
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/update-webaccount-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[Ir](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/update-webaccount-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

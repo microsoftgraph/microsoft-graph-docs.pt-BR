@@ -2,15 +2,15 @@
 title: Atualizar tarefa
 description: Atualizar uma tarefa de impressão.
 author: braedenp-msft
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: universal-print
 doc_type: apiPageType
-ms.openlocfilehash: 33c6078aa9265788409abd3e23d736fab9989b0b
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: c5106c12102504ef9243d79747022e4bda7f756e
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52053570"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "61021534"
 ---
 # <a name="update-task"></a>Atualizar tarefa
 
@@ -31,7 +31,7 @@ Além das permissões a seguir, o locatário do usuário deve ter uma assinatura
 |:---------------|:--------------------------------------------|
 |Delegado (conta corporativa ou de estudante)| Sem suporte. |
 |Delegado (conta pessoal da Microsoft)|Sem suporte.|
-|Application| PrintTaskDefinition.ReadWrite.All |
+|Aplicativo| PrintTaskDefinition.ReadWrite.All |
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- { "blockType": "ignored" } -->
@@ -49,7 +49,7 @@ No corpo da solicitação, fornece os valores dos campos [printTask relevantes](
 
 | Propriedade     | Tipo        | Descrição |
 |:-------------|:------------|:------------|
-|status|String|Inclua `state` e valores que descrevem o estado atual da `description` tarefa.|
+|status|Cadeia de caracteres|Inclua `state` e valores que descrevem o estado atual da `description` tarefa.|
 
 ## <a name="response"></a>Resposta
 Se tiver êxito, este método retornará um código `200 OK` de resposta e um objeto [printTask](../resources/printtask.md) atualizado no corpo da resposta.
@@ -87,6 +87,10 @@ PATCH https://graph.microsoft.com/beta/print/taskDefinitions/3203656e-6069-4e10-
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/update-task-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[Ir](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/update-task-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

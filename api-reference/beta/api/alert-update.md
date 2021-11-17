@@ -1,16 +1,16 @@
 ---
 title: Atualizar alerta
 description: Atualize uma propriedade de alerta editável em qualquer solução integrada para manter o status de alerta e as atribuições em sincronia entre soluções.
-localization_priority: Normal
+ms.localizationpriority: medium
 author: preetikr
 ms.prod: security
 doc_type: apiPageType
-ms.openlocfilehash: 7e725e60bb779ec0d4ecd54ec0cc57f4173bf6fe
-ms.sourcegitcommit: 94c4acf8bd03c10a44b12952b6cb4827df55b978
+ms.openlocfilehash: 8bce0980bb89a8140a19e5fc58658930d31059de
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/06/2021
-ms.locfileid: "52786612"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "60995796"
 ---
 # <a name="update-alert"></a>Atualizar alerta
 
@@ -20,7 +20,7 @@ Namespace: microsoft.graph
 
 Atualize uma propriedade **de alerta editável** em qualquer solução integrada para manter o status de alerta e as atribuições em sincronia entre soluções. Este método atualiza qualquer solução que tenha um registro da ID de alerta referenciada.
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>Permissões
 
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
@@ -43,7 +43,7 @@ PATCH /security/alerts/{alert_id}
 
 | Nome       | Descrição|
 |:-----------|:-----------|
-| Autorização  | Portador {código}. Obrigatório.|
+| Autorização  | {code} do portador. Obrigatório.|
 |Preferir | return=representation. Opcional. |
 
 ## <a name="request-body"></a>Corpo da solicitação
@@ -52,7 +52,7 @@ No corpo da solicitação, fornece uma representação JSON dos valores para cam
 
 | Propriedade   | Tipo |Descrição|
 |:---------------|:--------|:----------|
-|assignedTo|String|Nome do analista ao que o alerta é atribuído para triagem, investigação ou correção.|
+|assignedTo|Cadeia de caracteres|Nome do analista ao que o alerta é atribuído para triagem, investigação ou correção.|
 |closedDateTime|DateTimeOffset|Tempo em que o alerta foi fechado. O tipo Timestamp representa informações de data e hora usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite UTC em 1 de janeiro de 2014 é `2014-01-01T00:00:00Z`.|
 |comentários|String collection|Comentários do analista sobre o alerta (para gerenciamento de alertas do cliente). Este método pode atualizar o campo de comentários apenas com os seguintes valores: `Closed in IPC` , `Closed in MCAS` .|
 |comentários|alertFeedback enum|Comentários do analista no alerta. Os valores possíveis são: `unknown`, `truePositive`, `falsePositive`, `benignPositive`.|
@@ -62,7 +62,7 @@ No corpo da solicitação, fornece uma representação JSON dos valores para cam
 
 ## <a name="response"></a>Resposta
 
-Se bem-sucedido, este método retorna um código de resposta `204 No Content`.
+Se tiver êxito, este método retornará um código de resposta `204 No Content`.
 
 Se o header de solicitação opcional for usado, o método retornará um código de resposta e o objeto `200 OK` [de](../resources/alert.md) alerta atualizado no corpo da resposta.
 
@@ -112,6 +112,10 @@ Content-type: application/json
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/update-alert-1-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[Ir](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/update-alert-1-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -176,6 +180,10 @@ Prefer: return=representation
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/update-alert-2-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[Ir](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/update-alert-2-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

@@ -6,12 +6,12 @@ description: Pesquise num locatário do SharePoint por sites que correspondam a 
 ms.localizationpriority: medium
 ms.prod: sharepoint
 doc_type: apiPageType
-ms.openlocfilehash: 93b0405ac8aeb48f4dc4bf0d40e23dde108ec9aa
-ms.sourcegitcommit: 08e9b0bac39c1b1d2c8a79539d24aaa93364baf2
+ms.openlocfilehash: a65759b3ff08c4cea2812582ee1aa1f7723c32b6
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/24/2021
-ms.locfileid: "59765792"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "61027086"
 ---
 # <a name="search-for-sites"></a>Procurar sites
 
@@ -82,6 +82,10 @@ GET https://graph.microsoft.com/v1.0/sites?search={query}
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/list-permission-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[Ir](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/list-permission-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

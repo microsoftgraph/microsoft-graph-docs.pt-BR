@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: mmast-msft
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: 81d821571007f8df619b536f1a975abf6617086b
-ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
+ms.openlocfilehash: 3dae2a41ee6756deeec051a0e21dd2ed0c81bcc1
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/12/2021
-ms.locfileid: "60936765"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "61005050"
 ---
 # <a name="update-educationuser-properties"></a>Atualizar propriedades de educationUser
 
@@ -55,7 +55,7 @@ No corpo da solicitação, forneça os valores para os campos relevantes que dev
 | displayName      | Cadeia de caracteres             | Nome de exibição do usuário                                                                                                                            |
 | givenName        | Cadeia de caracteres             | Nome                                                                                                                                      |
 | middleName       | String             | O nome do meio do usuário                                                                                                                             |
-| surname          | Cadeia de caracteres             | Sobrenome do usuário                                                                                                                                 |
+| surname          | String             | Sobrenome do usuário                                                                                                                                 |
 | email             | String             | endereço de email                                                                                                                                   |
 | mobilePhone      | String             | O número de celular do usuário                                                                                                                           |
 | externalSource   | cadeia de caracteres             | De onde esse usuário foi criado. Os valores possíveis são: `sis`, `manual` ou `lms`.                                                               |
@@ -111,6 +111,10 @@ Content-type: application/json
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/update-educationuser-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[Ir](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/update-educationuser-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

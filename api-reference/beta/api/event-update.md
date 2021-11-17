@@ -5,12 +5,12 @@ author: harini84
 ms.localizationpriority: medium
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: dab816db63ef132ddb4e71f65c7f7cff9395e098
-ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
+ms.openlocfilehash: 6a914e956a5c02a03ec436e46c98dc4c0caeb00d
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/12/2021
-ms.locfileid: "60945550"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "60981823"
 ---
 # <a name="update-event"></a>Atualizar evento
 
@@ -80,7 +80,7 @@ No corpo da solicitação, forneça os valores para os campos relevantes que dev
 | isAllDay|Booliano|Defina como True se o evento durar o dia inteiro. Se estiver definido como True, independentemente de ser um evento de um ou de vários dias, a hora de início e término deve ser definida como meia-noite e estar no mesmo fuso horário.|
 |isOnlineMeeting|Booliano| `True` se o evento tem informações sobre a reunião online, caso contrário, `false`. O padrão é false. Opcional.|
 | isReminderOn|Booliano|Defina como true se um alerta estiver definido para lembrar o usuário sobre o evento.|
-| location|Local|O local do evento.|
+| location|Localização|O local do evento.|
 |locations|[location](../resources/location.md) collection|Locais onde o evento é realizado ou onde participar. As propriedades **location** e **locations** sempre correspondem entre si. Se você atualizar a propriedade **location**, os locais anteriores na coleção **locations** deverão ser removidos e substituídos pelo novo valor **location**. |
 |onlineMeetingProvider|onlineMeetingProviderType| Representa o provedor de serviços de reunião online. Os valores possíveis são `teamsForBusiness`, `skypeForBusiness` e `skypeForConsumer`. Opcional. |
 | recurrence|PatternedRecurrence|O padrão de recorrência do evento.|
@@ -143,6 +143,10 @@ Content-type: application/json
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/update-event-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[Ir](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/update-event-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

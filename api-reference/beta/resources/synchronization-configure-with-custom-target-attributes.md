@@ -1,16 +1,16 @@
 ---
 title: Configurar a sincronização com atributos de destino personalizados
 description: Personalize seu esquema de sincronização para incluir atributos personalizados definidos no diretório de destino.
-localization_priority: Normal
+ms.localizationpriority: medium
 doc_type: conceptualPageType
 author: ArvindHarinder1
 ms.prod: applications
-ms.openlocfilehash: 865cde06cded24f9f2920e63535e037a2b477330
-ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
+ms.openlocfilehash: 9597ff99e8b5d6f647d7be3771a9bcb52e764061
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "50956891"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "61007135"
 ---
 # <a name="configure-synchronization-with-custom-target-attributes"></a>Configurar a sincronização com atributos de destino personalizados
 
@@ -20,7 +20,7 @@ Namespace: microsoft.graph
 
 Você pode personalizar seu esquema de sincronização para incluir atributos personalizados definidos no diretório de destino. Este artigo descreve como personalizar uma assinatura do Salesforce adicionando um novo campo chamado `officeCode` . Você configura a sincronização do Azure Active Directory (Azure AD) para o Salesforce e, para cada usuário, preencherá o campo no Salesforce com o valor do campo no `officeCode` `extensionAttribute10` Azure AD.
 
-Este artigo supõe que você já adicionou um aplicativo que oferece suporte à sincronização ao seu locatário por meio do [Portal do Azure,](https://portal.azure.com)que você conhece o nome de exibição do aplicativo e que tem um token de autorização para o Microsoft Graph. Para obter informações sobre como obter o token de autorização, consulte [Obter tokens de acesso para chamar o Microsoft Graph](/graph/auth/).
+Este artigo supõe que você já adicionou um aplicativo que oferece suporte à sincronização ao seu locatário por meio do [Portal do Azure,](https://portal.azure.com)que você conhece o nome de exibição do aplicativo e que tem um token de autorização para o Microsoft Graph. Para obter informações sobre como obter o token de autorização, consulte [Obter tokens de acesso para chamar a Microsoft Graph](/graph/auth/).
 
 ## <a name="find-the-service-principal-object-by-display-name"></a>Encontre o objeto de entidade de serviço por nome de exibição
 
@@ -106,6 +106,10 @@ Authorization: Bearer {Token}
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/get-synchronizationschema-2-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[Ir](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/get-synchronizationschema-2-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -211,7 +215,7 @@ Content-Type: application/json
 
 ## <a name="add-a-definition-for-the-officecode-attribute-and-a-mapping-between-attributes"></a>Adicionar uma definição para o atributo officeCode e um mapeamento entre atributos
 
-Use um editor de texto simples de sua escolha (por exemplo, [Notepad++](https://notepad-plus-plus.org/) ou [Editor JSON Online](https://www.jsoneditoronline.org/)) para:
+Use um editor de texto simples de sua escolha [(por exemplo, Bloco de notas++](https://notepad-plus-plus.org/) ou [Editor JSON Online](https://www.jsoneditoronline.org/)) para:
 
 1. Adicione uma [definição de atributo](synchronization-attributedefinition.md) para o `officeCode` atributo. 
 

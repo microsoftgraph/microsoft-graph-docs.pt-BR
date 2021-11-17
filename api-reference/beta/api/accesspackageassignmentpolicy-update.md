@@ -5,12 +5,12 @@ author: markwahl-msft
 ms.localizationpriority: medium
 ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: 1a5a0462218ab2bb0fe7be874563473c20fef3b5
-ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
+ms.openlocfilehash: ccb18e97c2436dfca4948c54032a1a6dd5076c01
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/12/2021
-ms.locfileid: "60925787"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "60988312"
 ---
 # <a name="update-accesspackageassignmentpolicy"></a>Atualizar accessPackageAssignmentPolicy
 
@@ -26,7 +26,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |Tipo de permissão|Permissões (da com menos para a com mais privilégios)|
 |:---|:---|
 |Delegado (conta corporativa ou de estudante)     | EntitlementManagement.ReadWrite.All |
-|Delegada (conta pessoal da Microsoft) | Sem suporte. |
+|Delegado (conta pessoal da Microsoft) | Sem suporte. |
 |Aplicativo                            | EntitlementManagement.ReadWrite.All |
 
 ## <a name="http-request"></a>Solicitação HTTP
@@ -50,9 +50,9 @@ A tabela a seguir mostra as propriedades que são necessárias ao atualizar [um 
 
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|displayName|Cadeia de caracteres|O nome de exibição da política.|
+|displayName|String|O nome de exibição da política.|
 |description|Cadeia de caracteres|A descrição da política.|
-|canExtend|Boolean|Indica se um usuário pode estender a duração da atribuição do pacote de acesso após a aprovação.|
+|canExtend|Booliano|Indica se um usuário pode estender a duração da atribuição do pacote de acesso após a aprovação.|
 |durationInDays|Int32|O número de dias em que as atribuições dessa política duram até expirar.|
 |expirationDateTime|DateTimeOffset|A data de expiração das atribuições criadas nesta política. O tipo Timestamp representa informações de data e hora usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite UTC em 1 de janeiro de 2014 é `2014-01-01T00:00:00Z`|
 |requestorSettings|[requestorSettings](../resources/requestorsettings.md)|Who pode solicitar esse pacote de acesso a partir desta política.|
@@ -174,6 +174,10 @@ Content-Type: application/json
 
 # <a name="objective-c"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/update-accesspackageassignmentpolicy-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[Ir](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/update-accesspackageassignmentpolicy-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 doc_type: apiPageType
 ms.prod: applications
 author: psignoret
-ms.openlocfilehash: 0382d54d43507ec27411d85a109720e571c89901
-ms.sourcegitcommit: f4999aa6fc05f845027db01aa489f7086f9850e1
+ms.openlocfilehash: b40387a75e954d495546f487c0d1424e8dc11df7
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/13/2021
-ms.locfileid: "60290194"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "61031888"
 ---
 # <a name="delete-delegatedpermissionclassification"></a>Excluir delegatedPermissionClassification
 
@@ -28,7 +28,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |:--------------------|:---------------------------------------------------------|
 |Delegado (conta corporativa ou de estudante) | PermissionGrantPolicy.ReadWrite.All |
 |Delegado (conta pessoal da Microsoft) | Sem suporte.    |
-|Application | PermissionGrantPolicy.ReadWrite.All |
+|Aplicativo | PermissionGrantPolicy.ReadWrite.All |
 
 ## <a name="http-request"></a>Solicitação HTTP
 
@@ -82,6 +82,10 @@ DELETE https://graph.microsoft.com/beta/servicePrincipals/{id}/delegatedPermissi
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/serviceprincipal-delete-delegatedpermissionclassifications-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[Ir](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/serviceprincipal-delete-delegatedpermissionclassifications-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

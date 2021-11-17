@@ -2,15 +2,15 @@
 title: 'accessReviewInstance: batchRecordDecisions'
 description: Permite que os revisores revisem todos os objetos accessReviewInstanceDecisionItem em lotes.
 author: isabelleatmsft
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: ab7e7e3580275aa127bbb01e34484a823d4b01bf
-ms.sourcegitcommit: 5a1cc1943527aa268e3797ee514871e65eb474a6
+ms.openlocfilehash: 2d83d77b3fe0698edd0f89b5e90dd5466fd47c73
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/19/2021
-ms.locfileid: "53030744"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "60991951"
 ---
 # <a name="accessreviewinstance-batchrecorddecisions"></a>accessReviewInstance: batchRecordDecisions
 Namespace: microsoft.graph
@@ -24,7 +24,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 |Tipo de permissão|Permissões (da com menos para a com mais privilégios)|
 |:---|:---|
-|Delegada (conta corporativa ou de estudante)|AccessReview.ReadWrite.All|
+|Delegado (conta corporativa ou de estudante)|AccessReview.ReadWrite.All|
 |Delegado (conta pessoal da Microsoft)|Sem suporte|
 |Aplicativo|AccessReview.ReadWrite.All|
 
@@ -51,9 +51,9 @@ A tabela a seguir mostra os parâmetros que podem ser usados com esta ação.
 
 |Parâmetro|Tipo|Descrição|
 |:---|:---|:---|
-| decision  | String | Decisão de acesso para a entidade que está sendo revisada. Os valores possíveis são: `Approve`, `Deny`, `NotReviewed`, `DontKnow`. Obrigatório.  |
-|  justification | String | Contexto da revisão fornecida aos administradores. Obrigatório se **justificationRequiredOnApproval** `True` estiver no **accessReviewScheduleDefinition**.  |
-|principalId|String|Se fornecido, todos os **accessReviewInstanceDecisionItems** com **principalId** correspondente serão revisados neste lote. Se não for fornecido, todos os **principaisIds** serão revisados.|
+| decision  | Cadeia de caracteres | Decisão de acesso para a entidade que está sendo revisada. Os valores possíveis são: `Approve`, `Deny`, `NotReviewed`, `DontKnow`. Obrigatório.  |
+|  justification | Cadeia de caracteres | Contexto da revisão fornecida aos administradores. Obrigatório se **justificationRequiredOnApproval** `True` estiver no **accessReviewScheduleDefinition**.  |
+|principalId|Cadeia de caracteres|Se fornecido, todos os **accessReviewInstanceDecisionItems** com **principalId** correspondente serão revisados neste lote. Se não for fornecido, todos os **principaisIds** serão revisados.|
 |resourceId|Cadeia de caracteres|Se fornecido, todos os **accessReviewInstanceDecisionItems** com **resourceId** correspondentes serão revisados neste lote. Se não for fornecido, todos **os resourceIds** serão revisados.|
 
 
@@ -96,6 +96,10 @@ Content-Type: application/json
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/accessreviewinstance-batchrecorddecisions-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[Ir](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/accessreviewinstance-batchrecorddecisions-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

@@ -1,16 +1,16 @@
 ---
 title: Excluir projectParticipation
 description: Exclua o objeto projectParticipation do perfil de um usuário.
-localization_priority: Normal
+ms.localizationpriority: medium
 author: kevinbellinger
 ms.prod: people
 doc_type: apiPageType
-ms.openlocfilehash: 41f5ac77a0ea8b85018cb20532624f57e626b6ad
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: d821bc6021631e1db8018e1ff8b281377b164aa7
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48972764"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "60996949"
 ---
 # <a name="delete-projectparticipation"></a>Excluir projectParticipation
 
@@ -18,7 +18,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Excluir um objeto [projectParticipation](../resources/projectparticipation.md) do [perfil](../resources/profile.md)de um usuário.
+[Exclua um objeto projectParticipation](../resources/projectparticipation.md) do perfil de um [usuário.](../resources/profile.md)
 
 ## <a name="permissions"></a>Permissões
 
@@ -26,8 +26,8 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 | Tipo de permissão                        | Permissões (da com menos para a com mais privilégios) |
 |:---------------------------------------|:--------------------------------------------|
-| Delegado (conta corporativa ou de estudante)     | User. ReadWrite, User. ReadWrite. All          |
-| Delegado (conta pessoal da Microsoft) | User. ReadWrite, User. ReadWrite. All          |
+| Delegado (conta corporativa ou de estudante)     | User.ReadWrite, User.ReadWrite.All          |
+| Delegado (conta pessoal da Microsoft) | User.ReadWrite, User.ReadWrite.All          |
 | Aplicativo                            | User.ReadWrite.All                          |
 
 ## <a name="http-request"></a>Solicitação HTTP
@@ -83,6 +83,10 @@ DELETE https://graph.microsoft.com/beta/me/profile/projects/{id}
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/delete-projectparticipation-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[Ir](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/delete-projectparticipation-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
