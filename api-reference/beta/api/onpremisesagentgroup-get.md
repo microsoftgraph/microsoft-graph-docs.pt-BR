@@ -1,16 +1,16 @@
 ---
 title: Obter onPremisesAgentGroup
 description: Recupere as propriedades e as relações de um [objeto onPremisesAgentGroup.](../resources/onpremisesagentgroup.md)
-localization_priority: Normal
+ms.localizationpriority: medium
 author: japere
 ms.prod: applications
 doc_type: apiPageType
-ms.openlocfilehash: bf108bb3a8f0c1116133db7203e2470619cb7fd2
-ms.sourcegitcommit: 3f40fbb953b14c1f52341786569c678adfc5bd3e
+ms.openlocfilehash: 4dfd780eec9443f981d7d057f921d9e15e7d0896
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/05/2021
-ms.locfileid: "52781132"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "60978062"
 ---
 # <a name="get-onpremisesagentgroup"></a>Obter onPremisesAgentGroup
 
@@ -85,6 +85,10 @@ GET https://graph.microsoft.com/beta/onPremisesPublishingProfiles/provisioning/a
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/get-onpremisesagentgroup-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[Ir](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/get-onpremisesagentgroup-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

@@ -5,12 +5,12 @@ author: kjyam98
 ms.localizationpriority: medium
 ms.prod: applications
 doc_type: apiPageType
-ms.openlocfilehash: e1c32bb1429f048558443b0ed312c5130c036103
-ms.sourcegitcommit: c7ff992ef63e480d070421ba99b28ee129cb6acb
+ms.openlocfilehash: 32c78ddb7525c2331dd16cbb5bc4661f49e260df
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "60689193"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "60983026"
 ---
 # <a name="create-federatedidentitycredential"></a>Criar federatedIdentityCredential
 Namespace: microsoft.graph
@@ -53,7 +53,7 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar [federat
 |:---|:---|:---|
 |audiences|Coleção de cadeias de caracteres|Lista as audiências que podem aparecer no token externo. Esse campo é obrigatório e é padrão para "api://AzureADTokenExchange". Ele diz o plataforma de identidade da Microsoft deve aceitar na `aud` declaração no token de entrada. Esse valor representa o Azure AD em seu provedor de identidade externo e não tem valor fixo entre provedores de identidade - talvez seja necessário criar um novo registro de aplicativo em seu provedor de identidade para servir como audiência desse token. Obrigatório.|
 |emissor|String|TThe URL of the external identity provider and must match the issuer claim of the external token being exchanged. A combinação dos valores de **emissor** e **assunto** deve ser exclusiva no aplicativo. Obrigatório.|
-|name|String|O identificador exclusivo da credencial de identidade federada, que tem um limite de caracteres de 120 caracteres e deve ser amigável à URL. É imutável uma vez criado|
+|nome|String|O identificador exclusivo da credencial de identidade federada, que tem um limite de caracteres de 120 caracteres e deve ser amigável à URL. É imutável uma vez criado|
 |assunto|String|Obrigatório. O identificador da carga de trabalho de software externo no provedor de identidade externa. Como o valor da audiência, ele não tem formato fixo, pois cada provedor de identidade usa seu próprio - às vezes um GUID, às vezes um identificador delimitado por dois pontos, às vezes cadeias de caracteres arbitrárias. O valor aqui deve corresponder à subclatura dentro do token apresentado ao Azure AD. A combinação de **emissor e** **assunto** deve ser exclusiva no aplicativo.|
 
 
@@ -99,6 +99,10 @@ Content-Type: application/json
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/create-federatedidentitycredential-from--java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[Ir](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/create-federatedidentitycredential-from--go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

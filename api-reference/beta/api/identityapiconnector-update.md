@@ -2,15 +2,15 @@
 title: Atualizar identityApiConnector
 description: Atualize as propriedades de um objeto identityApiConnector.
 author: nickgmicrosoft
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: b7383d82f30f76bc97fc9e66dd57c21044a963ca
-ms.sourcegitcommit: 08d47a31c48fd69ae4fcee26e34fdd65ad1ba69f
+ms.openlocfilehash: 2fa092757ab7cefc033bc5d67b796793f905d810
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/02/2021
-ms.locfileid: "51508628"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "60986183"
 ---
 # <a name="update-identityapiconnector"></a>Atualizar identityApiConnector
 
@@ -20,20 +20,20 @@ Namespace: microsoft.graph
 
 Atualize as propriedades de [um objeto identityApiConnector.](../resources/identityapiconnector.md)
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>Permissões
 
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 | Tipo de permissão                        | Permissões (da com menos para a com mais privilégios) |
 | :------------------------------------- | :------------------------------------------ |
-| Delegada (conta corporativa ou de estudante)     | APIConnectors.ReadWrite.All |
-| Delegada (conta pessoal da Microsoft) | Sem suporte.  |
+| Delegado (conta corporativa ou de estudante)     | APIConnectors.ReadWrite.All |
+| Delegado (conta pessoal da Microsoft) | Sem suporte.  |
 | Aplicativo                            | APIConnectors.ReadWrite.All |
 
 A conta de trabalho ou de estudante precisa pertencer a uma das seguintes funções:
 
 * Administrador global
-* Administrador de Fluxo de Usuário de Identidade Externa
+* Administrador de identidade externa Flow usuário
 
 ## <a name="http-request"></a>Solicitação HTTP
 
@@ -113,6 +113,10 @@ Content-Type: application/json
 [!INCLUDE [sample-code](../includes/snippets/java/update-identityapiconnector-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# <a name="go"></a>[Ir](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/update-identityapiconnector-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 
@@ -131,7 +135,7 @@ HTTP/1.1 204 No Content
 
 ### <a name="example-2-changing-api-connector-to-use-client-certificate-authentication"></a>Exemplo 2: Alterar o conector da API para usar a autenticação de certificado do cliente
 
-> **Observação:** Isso substituirá qualquer configuração anterior authenticationConfiguration. Para alterar a autenticação básica para a autenticação de certificado, use isso. Para adicionar certificados adicionais à lista de certificados, use o [método Carregar certificado do](../api/identityapiconnector-uploadclientcertificate.md) cliente. Ao usar esse método, as operações "Get" ou "List" dos conectores de API serão do tipo `authenticationConfiguration` [microsoft.graph.clientCertificateAuthentication](../resources/clientcertificateauthentication.md).
+> **Observação:** Isso substituirá qualquer configuração anterior authenticationConfiguration. Para alterar a autenticação básica para a autenticação de certificado, use isso. Para adicionar certificados adicionais à lista de certificados, use o método [Upload certificado do](../api/identityapiconnector-uploadclientcertificate.md) cliente. Ao usar esse método, as operações "Get" ou "List" dos conectores de API serão do tipo `authenticationConfiguration` [microsoft.graph.clientCertificateAuthentication](../resources/clientcertificateauthentication.md).
 
 #### <a name="request"></a>Solicitação
 

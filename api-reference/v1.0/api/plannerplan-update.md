@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: TarkanSevilmis
 ms.prod: planner
 doc_type: apiPageType
-ms.openlocfilehash: 5fbb205650f50194b865d0ee9b9ff47c4d5623ed
-ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
+ms.openlocfilehash: 96328a32e54e1c6ce8dca508a4b247309097f342
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/12/2021
-ms.locfileid: "60946465"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "60978811"
 ---
 # <a name="update-plannerplan"></a>Atualizar plannerPlan
 
@@ -45,8 +45,8 @@ No corpo da solicitação, fornece os valores para campos relevantes a ser atual
 
 | Propriedade     | Tipo   |Descrição|
 |:---------------|:--------|:----------|
-|owner|Cadeia de caracteres|[Grupo](../resources/group.md) `id` pelo qual o plano pertence. Deve haver um grupo válido para que esse campo possa ser definido. Depois de definido, isso só pode ser atualizado pelo proprietário.|
-|title|Cadeia de caracteres|Título do plano.|
+|owner|String|[Grupo](../resources/group.md) `id` pelo qual o plano pertence. Deve haver um grupo válido para que esse campo possa ser definido. Depois de definido, isso só pode ser atualizado pelo proprietário.|
+|title|String|Título do plano.|
 
 ## <a name="response"></a>Resposta
 
@@ -87,6 +87,10 @@ If-Match: W/"JzEtVGFzayAgQEBAQEBAQEBAQEBAQEBAWCc="
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/update-plannerplan-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[Ir](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/update-plannerplan-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

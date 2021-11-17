@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 doc_type: apiPageType
 ms.prod: governance
 author: carolinetempleton
-ms.openlocfilehash: 6821763ce92e705503d335d3415070ab1350e59b
-ms.sourcegitcommit: c7ff992ef63e480d070421ba99b28ee129cb6acb
+ms.openlocfilehash: 54458604e544b7d4f538d2f9792a48264c077e17
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "60687737"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "60990305"
 ---
 # <a name="create-governanceroleassignmentrequest"></a>Criar governanceRoleAssignmentRequest
 
@@ -21,7 +21,7 @@ Namespace: microsoft.graph
 
 Crie uma solicitação de atribuição de função para representar a operação que você deseja em uma atribuição de função. A tabela a seguir lista as operações.
 
-| Operação                                   | Tipo        |
+| Operation                                   | Tipo        |
 |:--------------------------------------------|:------------|
 | Atribuir uma atribuição de função                    | AdminAdd    |
 | Ativar uma atribuição de função qualificada        | UserAdd     |
@@ -83,11 +83,11 @@ No corpo da solicitação, fornece uma representação JSON de um [objeto govern
 | Propriedade         | Tipo                                                     | Descrição |
 |:-----------------|:---------------------------------------------------------|:--|
 | resourceId       | Cadeia de caracteres                                                   | A ID do recurso. Obrigatório. |
-| roleDefinitionId | String                                                   | A ID da definição de função. Obrigatório. |
-| subjectId        | String                                                   | A ID do assunto. Obrigatório. |
+| roleDefinitionId | Cadeia de caracteres                                                   | A ID da definição de função. Obrigatório. |
+| subjectId        | Cadeia de caracteres                                                   | A ID do assunto. Obrigatório. |
 | assignmentState  | String                                                   | O estado da atribuição. O valor pode ser `Eligible` e `Active` . Obrigatório. |
-| type             | String                                                   | O tipo de solicitação. O valor pode `AdminAdd` ser , , , , , , `UserAdd` e `AdminUpdate` `AdminRemove` `UserRemove` `UserExtend` `UserRenew` `AdminRenew` `AdminExtend` . Obrigatório. |
-| motivo           | String                                                   | O motivo precisa ser fornecido para a solicitação de atribuição de função para fins de auditoria e revisão. |
+| type             | Cadeia de caracteres                                                   | O tipo de solicitação. O valor pode `AdminAdd` ser , , , , , , `UserAdd` e `AdminUpdate` `AdminRemove` `UserRemove` `UserExtend` `UserRenew` `AdminRenew` `AdminExtend` . Obrigatório. |
+| motivo           | Cadeia de caracteres                                                   | O motivo precisa ser fornecido para a solicitação de atribuição de função para fins de auditoria e revisão. |
 | Cronograma         | [governanceSchedule](../resources/governanceschedule.md) | O cronograma da solicitação de atribuição de função. Para o tipo de `UserAdd` `AdminAdd` solicitação de , `AdminUpdate` , e , é `AdminExtend` necessário. |
 
 ## <a name="response"></a>Resposta
@@ -121,8 +121,8 @@ Neste exemplo, um administrador atribui nawu@contoso.com usuário à função Le
 | Propriedade         | Tipo                                                     | Obrigatório                 | Valor |
 |:-----------------|:---------------------------------------------------------|:-------------------------|:--|
 | resourceId       | Cadeia de caracteres                                                   | Sim                      | \<resourceId\> |
-| roleDefinitionId | String                                                   | Sim                      | \<roleDefinitionId\> |
-| subjectId        | String                                                   | Sim                      | \<subjectId\> |
+| roleDefinitionId | Cadeia de caracteres                                                   | Sim                      | \<roleDefinitionId\> |
+| subjectId        | Cadeia de caracteres                                                   | Sim                      | \<subjectId\> |
 | assignmentState  | String                                                   | Sim                      | Qualificado / Ativo |
 | type             | String                                                   | Sim                      | AdminAdd |
 | motivo           | String                                                   | depende da função Configurações |   |
@@ -169,6 +169,10 @@ Content-type: application/json
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/governanceroleassignmentrequest-post-1-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[Ir](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/governanceroleassignmentrequest-post-1-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -234,10 +238,10 @@ Neste exemplo, o usuário nawu@contoso.com ativa a função leitor de cobrança 
 |:-----------------|:---------------------------------------------------------|:-------------------------|:--|
 | resourceId       | Cadeia de caracteres                                                   | Sim                      | \<resourceId\> |
 | roleDefinitionId | String                                                   | Sim                      | \<roleDefinitionId\> |
-| subjectId        | String                                                   | Sim                      | \<subjectId\> |
+| subjectId        | Cadeia de caracteres                                                   | Sim                      | \<subjectId\> |
 | assignmentState  | String                                                   | Sim                      | Ativo |
-| type             | String                                                   | Sim                      | UserAdd |
-| motivo           | String                                                   | depende da função Configurações |   |
+| type             | Cadeia de caracteres                                                   | Sim                      | UserAdd |
+| motivo           | Cadeia de caracteres                                                   | depende da função Configurações |   |
 | Cronograma         | [governanceSchedule](../resources/governanceschedule.md) | Sim                      |   |
 
 #### <a name="request"></a>Solicitação
@@ -282,6 +286,10 @@ Content-type: application/json
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/governanceroleassignmentrequest-post-2-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[Ir](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/governanceroleassignmentrequest-post-2-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -356,11 +364,11 @@ Neste exemplo, o usuário nawu@contoso.com desativa a função leitor de cobran�
 | Propriedade         | Tipo                                                     | Obrigatório | Valor |
 |:-----------------|:---------------------------------------------------------|:---------|:--|
 | resourceId       | Cadeia de caracteres                                                   | Sim      | \<resourceId\> |
-| roleDefinitionId | String                                                   | Sim      | \<roleDefinitionId\> |
-| subjectId        | String                                                   | Sim      | \<subjectId\> |
-| assignmentState  | String                                                   | Sim      | Ativo |
-| type             | String                                                   | Sim      | UserRemove |
-| motivo           | String                                                   | Não       |   |
+| roleDefinitionId | Cadeia de caracteres                                                   | Sim      | \<roleDefinitionId\> |
+| subjectId        | Cadeia de caracteres                                                   | Sim      | \<subjectId\> |
+| assignmentState  | Cadeia de caracteres                                                   | Sim      | Ativo |
+| type             | Cadeia de caracteres                                                   | Sim      | UserRemove |
+| motivo           | Cadeia de caracteres                                                   | Não       |   |
 | Cronograma         | [governanceSchedule](../resources/governanceschedule.md) | Não       |   |
 
 #### <a name="request"></a>Solicitação
@@ -400,6 +408,10 @@ Content-type: application/json
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/governanceroleassignmentrequest-post-3-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[Ir](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/governanceroleassignmentrequest-post-3-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -447,10 +459,10 @@ Neste exemplo, um administrador remove o usuário nawu@contoso.com da função L
 |:-----------------|:---------------------------------------------------------|:---------|:--|
 | resourceId       | Cadeia de caracteres                                                   | Sim      | \<resourceId\> |
 | roleDefinitionId | String                                                   | Sim      | \<roleDefinitionId\> |
-| subjectId        | String                                                   | Sim      | \<subjectId\> |
+| subjectId        | Cadeia de caracteres                                                   | Sim      | \<subjectId\> |
 | assignmentState  | String                                                   | Sim      | Qualificado / Ativo |
-| type             | String                                                   | Sim      | AdminRemove |
-| motivo           | String                                                   | Não       |   |
+| type             | Cadeia de caracteres                                                   | Sim      | AdminRemove |
+| motivo           | Cadeia de caracteres                                                   | Não       |   |
 | Cronograma         | [governanceSchedule](../resources/governanceschedule.md) | Não       |   |
 
 #### <a name="request"></a>Solicitação
@@ -488,6 +500,10 @@ Content-type: application/json
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/governanceroleassignmentrequest-post-4-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[Ir](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/governanceroleassignmentrequest-post-4-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -534,11 +550,11 @@ Neste exemplo, os administradores atualizam a atribuição de função para o us
 | Propriedade         | Tipo                                                     | Obrigatório                | Valor |
 |:-----------------|:---------------------------------------------------------|:------------------------|:--|
 | resourceId       | Cadeia de caracteres                                                   | Sim                     | \<resourceId\> |
-| roleDefinitionId | String                                                   | Sim                     | \<roleDefinitionId\> |
-| subjectId        | String                                                   | Sim                     | \<subjectId\> |
+| roleDefinitionId | Cadeia de caracteres                                                   | Sim                     | \<roleDefinitionId\> |
+| subjectId        | Cadeia de caracteres                                                   | Sim                     | \<subjectId\> |
 | assignmentState  | String                                                   | Sim                     | Qualificado / Ativo |
-| type             | String                                                   | Sim                     | AdminUpdate |
-| motivo           | String                                                   | depende de roleSettings |   |
+| type             | Cadeia de caracteres                                                   | Sim                     | AdminUpdate |
+| motivo           | Cadeia de caracteres                                                   | depende de roleSettings |   |
 | Cronograma         | [governanceSchedule](../resources/governanceschedule.md) | Sim                     |   |
 
 #### <a name="request"></a>Solicitação
@@ -581,6 +597,10 @@ Content-type: application/json
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/governanceroleassignmentrequest-post-5-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[Ir](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/governanceroleassignmentrequest-post-5-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -645,11 +665,11 @@ Este exemplo estende a atribuição de função de expiração para o usuário A
 | Propriedade         | Tipo                                                     | Obrigatório                | Valor |
 |:-----------------|:---------------------------------------------------------|:------------------------|:--|
 | resourceId       | Cadeia de caracteres                                                   | Sim                     | \<resourceId\> |
-| roleDefinitionId | String                                                   | Sim                     | \<roleDefinitionId\> |
+| roleDefinitionId | Cadeia de caracteres                                                   | Sim                     | \<roleDefinitionId\> |
 | subjectId        | String                                                   | Sim                     | \<subjectId\> |
 | assignmentState  | String                                                   | Sim                     | Qualificado / Ativo |
 | type             | String                                                   | Sim                     | AdminExtend |
-| motivo           | String                                                   | depende de roleSettings |   |
+| motivo           | Cadeia de caracteres                                                   | depende de roleSettings |   |
 | Cronograma         | [governanceSchedule](../resources/governanceschedule.md) | Sim                     |   |
 
 #### <a name="request"></a>Solicitação
@@ -693,6 +713,10 @@ Content-type: application/json
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/governanceroleassignmentrequest-post-6-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[Ir](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/governanceroleassignmentrequest-post-6-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
