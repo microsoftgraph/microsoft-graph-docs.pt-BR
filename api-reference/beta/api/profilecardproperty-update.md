@@ -1,16 +1,16 @@
 ---
 title: Atualizar profileCardProperty
 description: Atualize as propriedades de um objeto profileCardProperty.
-localization_priority: Normal
+ms.localizationpriority: medium
 author: kevinbellinger
 ms.prod: people
 doc_type: apiPageType
-ms.openlocfilehash: 53d95deee5be591745e62d7c41b2ab232b3b19d8
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: 4cfa0594e42e2bf925a379f017a4d3858518c710
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52036685"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "61007534"
 ---
 # <a name="update-profilecardproperty"></a>Atualizar profileCardProperty
 
@@ -54,7 +54,7 @@ No corpo da solicitação, forneça os valores para os campos relevantes que dev
 | Propriedade     | Tipo        | Descrição |
 |:-------------|:------------|:------------|
 |anotações|Coleção profileCardAnnotation| Contém qualquer rótulo alternativo ou localizado que um administrador optou por especificar.|
-|directoryPropertyName|String|Contém o nome da propriedade directory que se destina a aparecer no cartão de perfil. |
+|directoryPropertyName|Cadeia de caracteres|Contém o nome da propriedade directory que se destina a aparecer no cartão de perfil. |
 
 ## <a name="response"></a>Resposta
 
@@ -103,6 +103,10 @@ Content-type: application/json
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/update-profilecardproperty-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[Ir](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/update-profilecardproperty-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

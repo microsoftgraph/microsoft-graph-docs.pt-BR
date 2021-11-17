@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: madansr7
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: 47291b07116baa10640c6224f39c183050f54cb7
-ms.sourcegitcommit: c7ff992ef63e480d070421ba99b28ee129cb6acb
+ms.openlocfilehash: b535999e529dcf8f67cdf9c68fe3f14163ed8beb
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "60696090"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "61017516"
 ---
 # <a name="update-tenantappmanagementpolicy"></a>Atualizar tenantAppManagementPolicy
 
@@ -52,7 +52,7 @@ No corpo da solicitação, fornece os valores para campos relevantes do [tenantA
 | Propriedade                | Tipo                                                                        | Descrição |
 |:------------------------|:----------------------------------------------------------------------------|:----------------------------------------------------|
 | displayName                  | String                                                                   | O nome de exibição da política padrão. Herdado de [policyBase](../resources/policybase.md).                                |
-| descrição                  | String                                                                   | A descrição da política padrão. Herdado de [policyBase](../resources/policybase.md).                                |
+| description                  | Cadeia de caracteres                                                                   | A descrição da política padrão. Herdado de [policyBase](../resources/policybase.md).                                |
 | isEnabled                    | Booliano                                                                  | Indica se a política está habilitada. O valor padrão é falso.                                    |
 | applicationRestrictions      | [appManagementConfiguration](../resources/appManagementConfiguration.md) | Restrições que se aplicam como padrão a todos os objetos de aplicativo no locatário.               |
 | servicePrincipalRestrictions | [appManagementConfiguration](../resources/appManagementConfiguration.md) | Restrições que se aplicam como padrão a todos os objetos de entidade de serviço no locatário. |
@@ -128,6 +128,10 @@ Content-Type: application/json
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/update-tenantappmanagementpolicy-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[Ir](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/update-tenantappmanagementpolicy-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

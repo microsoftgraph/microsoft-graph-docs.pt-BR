@@ -1,24 +1,24 @@
 ---
-title: Obter teamworkBot
-description: Leia as propriedades e os relacionamentos de um objeto teamworkBot.
+title: Obter o teamworkBot
+description: Leia as propriedades e as relações de um objeto teamworkBot.
 author: AkJo
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: fd85a51901d8ed7c09b6b132a7604147e2df1d16
-ms.sourcegitcommit: eacd2a6e46c19dd3cd8519592b1668fabe14d85d
+ms.openlocfilehash: afe8f74e4dd71fd3160a244e6ae7c77315f985b8
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "49873154"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "61017922"
 ---
-# <a name="get-teamworkbot"></a>Obter teamworkBot
+# <a name="get-teamworkbot"></a>Obter o teamworkBot
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Obter o bot associado a uma definição [específica](../resources/teamsappdefinition.md) do  [TeamsApp](../resources/teamsapp.md).
+Obter o bot associado a uma [definição específica](../resources/teamsappdefinition.md) do  [TeamsApp](../resources/teamsapp.md).
 
 ## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
@@ -40,7 +40,7 @@ GET /appCatalogs/teamsApps/{app-id}/appDefinitions/{app-definition-id}/bot
 ```
 
 ## <a name="optional-query-parameters"></a>Parâmetros de consulta opcionais
-Esse método dá suporte aos parâmetros de consulta `$select` [OData](/graph/query-parameter) para ajudar a personalizar a resposta.
+Este método dá suporte a `$select` [Parâmetros de consulta OData](/graph/query-parameter) para ajudar a personalizar a resposta.
 
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
 |Nome|Descrição|
@@ -52,7 +52,7 @@ Não forneça um corpo de solicitação para esse método.
 
 ## <a name="response"></a>Resposta
 
-Se bem-sucedido, este método retorna um código de resposta e um objeto `200 OK` [teamworkBot](../resources/teamworkbot.md) no corpo da resposta.
+Se tiver êxito, este método retornará um código `200 OK` de resposta e um objeto [teamworkBot](../resources/teamworkbot.md) no corpo da resposta.
 
 ## <a name="examples"></a>Exemplos
 
@@ -83,6 +83,10 @@ GET https://graph.microsoft.com/beta/appCatalogs/teamsApps/e4c5c249-bb4b-419e-b7
 [!INCLUDE [sample-code](../includes/snippets/java/get-teamworkbot-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# <a name="go"></a>[Ir](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/get-teamworkbot-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 
@@ -106,8 +110,8 @@ Content-Type: application/json
 ```
 ## <a name="see-also"></a>Confira também
 
-- Para instalar bots em uma equipe, confira o exemplo 2 em [Listar aplicativos em equipe.](team-list-installedapps.md)
-- Para instalar bots em um chat, confira o exemplo 2 em Aplicativos [de lista no chat.](chat-list-installedapps.md)
-- Para instalar bots no escopo pessoal de um usuário, confira o exemplo 2 em Aplicativos de [lista instalados para o usuário.](userteamwork-list-installedapps.md)
+- Para instalar bots em uma equipe, consulte o exemplo 2 em [Listar aplicativos em equipe](team-list-installedapps.md).
+- Para instalar bots em um chat, consulte o exemplo 2 em [Aplicativos de lista no chat](chat-list-installedapps.md).
+- Para instalar bots no escopo pessoal de um usuário, consulte o exemplo 2 em Aplicativos de [lista instalados para usuário](userteamwork-list-installedapps.md).
 
 

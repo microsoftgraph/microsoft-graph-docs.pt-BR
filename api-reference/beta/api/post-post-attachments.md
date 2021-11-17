@@ -1,16 +1,16 @@
 ---
 title: Adicionar anexo
-description: Adicionar um anexo ao criar uma postagem de grupo.
+description: Adicione um anexo ao criar uma postagem de grupo.
 author: dkershaw10
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: 35465025118912e316139cc4aa377270ee6d3e1c
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 8f79a7e73a167380d8f6bb00f26771677067cabd
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48982011"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "61018064"
 ---
 # <a name="add-attachment"></a>Adicionar anexo
 
@@ -18,9 +18,9 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Adicionar um [anexo](../resources/attachment.md) ao criar uma postagem de grupo. 
+Adicione um [anexo](../resources/attachment.md) ao criar uma postagem de grupo. 
 
-Esta operação limita o tamanho do anexo que você pode adicionar a menos de 4 MB.
+Essa operação limita o tamanho do anexo que você pode adicionar a menos de 4 MB.
 
 Um anexo pode ser de um dos seguintes tipos:
 
@@ -40,7 +40,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |Aplicativo | Group.ReadWrite.All |
 
 ## <a name="http-request"></a>Solicitação HTTP
-Incluir um anexo ao criar uma [postagem](../resources/post.md) em um [conversationThread](../resources/conversationthread.md) de um grupo. A especificação da [conversa](../resources/conversation.md) pai é opcional.
+Inclua um anexo ao criar uma [postagem](../resources/post.md) em [uma conversaThread](../resources/conversationthread.md) de um grupo. Especificar a conversa [pai](../resources/conversation.md) é opcional.
 
 <!-- { "blockType": "ignored" } -->
 ```http
@@ -53,20 +53,20 @@ POST /groups/{id}/conversations/{id}/threads/{id}/reply
 | Autorização  | {token} de portador. Obrigatório.  |
 
 ## <a name="request-body"></a>Corpo da solicitação
-No corpo da solicitação, forneça um objeto JSON que inclui um parâmetro **post** .
+No corpo da solicitação, forneça um objeto JSON que inclui um **parâmetro post.**
 
 | Parâmetro    | Tipo   |Descrição|
 |:---------------|:--------|:----------|
-|post|[post](../resources/post.md)|A nova postagem que está sendo respondida, que inclui um ou mais anexos em uma coleção de [anexos](../resources/attachment.md) .|
+|post|[post](../resources/post.md)|A nova postagem que está sendo respondida, que inclui um ou mais anexos em uma [coleção de](../resources/attachment.md) anexos.|
 
 ## <a name="response"></a>Resposta
 
 Se bem-sucedido, este método retorna um código de resposta `202 Accepted`. Não retorna um corpo de resposta.
 
 ## <a name="examples"></a>Exemplos
-### <a name="example-1-include-a-file-attachment"></a>Exemplo 1: incluir um anexo de arquivo
+### <a name="example-1-include-a-file-attachment"></a>Exemplo 1: Incluir um anexo de arquivo
 #### <a name="request"></a>Solicitação
-Veja a seguir um exemplo de uma solicitação que inclui um arquivo como um anexo ao criar uma postagem.
+Aqui está um exemplo de uma solicitação que inclui um arquivo como um anexo ao criar uma postagem.
 
 # <a name="http"></a>[HTTP](#tab/http)
 <!-- {
@@ -108,6 +108,10 @@ Content-type: application/json
 [!INCLUDE [sample-code](../includes/snippets/java/create-file-attachment-with-post-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# <a name="go"></a>[Ir](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/create-file-attachment-with-post-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 #### <a name="response"></a>Resposta
@@ -120,10 +124,10 @@ Veja a seguir um exemplo da resposta.
 HTTP/1.1 202 Accpted
 ```
 
-### <a name="example-2-include-an-item-attachment"></a>Exemplo 2: incluir um anexo de item
+### <a name="example-2-include-an-item-attachment"></a>Exemplo 2: Incluir um anexo de item
 
 #### <a name="request"></a>Solicitação
-Veja a seguir um exemplo de uma solicitação que inclui um evento como um anexo ao criar uma postagem.
+Aqui está um exemplo de uma solicitação que inclui um evento como um anexo ao criar uma postagem.
 
 <!-- {
   "blockType": "request",
@@ -175,11 +179,11 @@ Veja a seguir um exemplo da resposta.
 HTTP/1.1 202 Accepted
 ```
 
-### <a name="example-3-include-a-reference-attachment"></a>Exemplo 3: incluir um anexo de referência
+### <a name="example-3-include-a-reference-attachment"></a>Exemplo 3: Incluir um anexo de referência
 
 #### <a name="request"></a>Solicitação
-Veja a seguir um exemplo de uma solicitação que inclui um anexo de referência ao criar uma postagem.
-O anexo aponta para uma pasta no OneDrive.
+Aqui está um exemplo de uma solicitação que inclui um anexo de referência ao criar uma postagem.
+O anexo aponta para uma pasta OneDrive.
 
 # <a name="http"></a>[HTTP](#tab/http)
 <!-- {
@@ -223,6 +227,10 @@ Content-type: application/json
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/create-reference-attachment-with-post-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[Ir](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/create-reference-attachment-with-post-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

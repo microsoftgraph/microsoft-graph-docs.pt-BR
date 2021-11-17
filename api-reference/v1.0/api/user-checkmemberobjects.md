@@ -1,22 +1,22 @@
 ---
 title: 'user: checkMemberObjects'
-description: Verifique se há associação em uma lista de funções de grupo ou diretório para o objeto de usuário especificado.
+description: Verifique se há associação em uma lista de funções de grupo ou diretório para o objeto do usuário especificado.
 ms.localizationpriority: medium
 author: jpettere
 ms.prod: users
 doc_type: apiPageType
-ms.openlocfilehash: 668bc5d2e7b11ed6b781f689ff0d4868de892b21
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: c5f5928145634a351c490be741b9e92c8f7dfc78
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59090016"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "61005917"
 ---
 # <a name="user-checkmemberobjects"></a>user: checkMemberObjects
 
 Namespace: microsoft.graph
 
-Verifique se há associação em uma lista de funções de grupo ou diretório para o objeto de usuário especificado. Esse método é transitivo.
+Verifique se há associação em uma lista de funções de grupo ou diretório para o objeto do usuário especificado. Esse método é transitivo.
 
 ## <a name="permissions"></a>Permissões
 
@@ -97,6 +97,10 @@ Content-type: application/json
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/user-checkmemberobjects-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[Ir](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/user-checkmemberobjects-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

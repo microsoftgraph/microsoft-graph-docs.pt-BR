@@ -2,15 +2,15 @@
 title: Excluir conector
 description: Excluir (não registro) um conector.
 author: braedenp-msft
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: universal-print
 doc_type: apiPageType
-ms.openlocfilehash: 99a8a4d0da5f3abb4beccfc1a196b8567f690303
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: ab3009b558fa90addf673aef3ef5135bcb2749cb
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52053612"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "61028100"
 ---
 # <a name="delete-connector"></a>Excluir conector
 
@@ -29,7 +29,7 @@ Para usar o serviço Impressão Universal, o usuário ou locatário do aplicativ
 |:---------------|:--------------------------------------------|
 |Delegado (conta corporativa ou de estudante)| PrintConnector.ReadWrite.All |
 |Delegado (conta pessoal da Microsoft)|Sem suporte.|
-|Application|Sem suporte.|
+|Aplicativo|Sem suporte.|
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- { "blockType": "ignored" } -->
@@ -47,11 +47,11 @@ Não forneça um corpo de solicitação para esse método.
 ## <a name="response"></a>Resposta
 Se bem-sucedido, este método retorna um código de resposta `204 No Content`. Não retorna nada no corpo da resposta.
 
-### <a name="error-conditions-and-messages"></a>Condições de erro e mensagens
+### <a name="error-conditions-and-messages"></a>Mensagens e condições de erro
 
 |Cenário|Método|Código|Mensagem|
 |--------|------|----|-------|
-|O usuário tenta excluir um conector que tenha uma ou mais impressoras registradas|DELETE|409|Antes de excluir o conector, desassocie o registro das impressoras associadas.|
+|O usuário tenta excluir um conector que tenha uma ou mais impressoras registradas|EXCLUIR|409|Antes de excluir o conector, desassocie o registro das impressoras associadas.|
 
 ## <a name="example"></a>Exemplo
 ##### <a name="request"></a>Solicitação
@@ -79,6 +79,10 @@ DELETE https://graph.microsoft.com/beta/print/connectors/{id}
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/delete-connector-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[Ir](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/delete-connector-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

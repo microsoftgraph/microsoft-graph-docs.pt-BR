@@ -1,16 +1,16 @@
 ---
 title: Obter teamsAppIcon
-description: Recupere um ícone associado a uma definição específica de um aplicativo do Teams.
-localization_priority: Normal
+description: Recupere um ícone associado a uma definição específica de um Teams aplicativo.
+ms.localizationpriority: medium
 author: jecha
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 7e80b20f0802fbfa084c02b9103e7362be9ca159
-ms.sourcegitcommit: 32c83957ee69f21a10cd5f759adb884ce4b41c52
+ms.openlocfilehash: 344ac7c54a9b341f9fa425e4a36794fcf78d5ab7
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "51921747"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "61018027"
 ---
 # <a name="get-teamsappicon"></a>Obter teamsAppIcon
 
@@ -18,28 +18,28 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Recuperar um [ícone de aplicativo do Teams](../resources/teamsappicon.md) associado a uma [definição específica](../resources/teamsappdefinition.md) de um [aplicativo](../resources/teamsapp.md).
+Recuperar um [Teams de aplicativo](../resources/teamsappicon.md) associado a uma definição [específica](../resources/teamsappdefinition.md) de um [aplicativo](../resources/teamsapp.md).
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>Permissões
 
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 | Tipo de permissão                        | Permissões (da com menos para a com mais privilégios)                      |
 | :------------------------------------- | :--------------------------------------------------------------- |
-| Delegada (conta corporativa ou de estudante)     | AppCatalog.Read.All, AppCatalog.ReadWrite.All, AppCatalog.Submit |
-| Delegada (conta pessoal da Microsoft) | Sem suporte.                                                   |
+| Delegado (conta corporativa ou de estudante)     | AppCatalog.Read.All, AppCatalog.ReadWrite.All, AppCatalog.Submit |
+| Delegado (conta pessoal da Microsoft) | Sem suporte.                                                   |
 | Aplicativo                            | Sem suporte.                                                   |
 
 ## <a name="http-request"></a>Solicitação HTTP
 
-**Obter ícone de cor de uma definição de aplicativo do Teams**
+**Obter ícone de cor de uma definição Teams aplicativo**
 
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /appCatalogs/teamsApps/{teams-app-id}/appDefinitions/{app-definition-id}/colorIcon
 ```
 
-**Obter o ícone de contorno de uma definição de aplicativo do Teams**
+**Obter o ícone de contorno de uma definição Teams aplicativo**
 
 <!-- { "blockType": "ignored" } -->
 ```http
@@ -66,7 +66,7 @@ Se tiver êxito, este método retornará um código `200 OK` de resposta e um ob
 
 ## <a name="examples"></a>Exemplos
 
-### <a name="example-1-get-color-icon-of-a-custom-teams-app"></a>Exemplo 1: Obter ícone de cor de um *aplicativo* personalizado do Teams
+### <a name="example-1-get-color-icon-of-a-custom-teams-app"></a>Exemplo 1: Obter ícone de cor de um *aplicativo Teams* personalizado
 
 #### <a name="request"></a>Solicitação
 
@@ -97,13 +97,17 @@ GET https://graph.microsoft.com/beta/appCatalogs/teamsApps/5a31d4f7-a11d-4052-96
 [!INCLUDE [sample-code](../includes/snippets/java/get-teamsappicon-coloricon-customapp-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# <a name="go"></a>[Ir](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/get-teamsappicon-coloricon-customapp-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 
 #### <a name="response"></a>Resposta
 
 O exemplo a seguir mostra a resposta para um aplicativo organizacional. 
-> **Observação**: acessar a imagem real [do](teamworkhostedcontent-get.md) ícone do aplicativo personalizado exige que um token do Microsoft Graph seja definido na solicitação.
+> **Observação**: acessar a [imagem](teamworkhostedcontent-get.md) real do ícone do aplicativo personalizado exige que um token Graph Microsoft seja definido na solicitação.
 
 <!-- {
   "blockType": "response",
@@ -121,7 +125,7 @@ Content-type: application/json
 }
 ```
 
-### <a name="example-2-get-outline-icon-of-a-custom-teams-app"></a>Exemplo 2: Obter o ícone de contorno de um *aplicativo* personalizado do Teams
+### <a name="example-2-get-outline-icon-of-a-custom-teams-app"></a>Exemplo 2: Obter o ícone de contorno de um *aplicativo Teams* personalizado
 
 #### <a name="request"></a>Solicitação
 
@@ -152,13 +156,17 @@ GET https://graph.microsoft.com/beta/appCatalogs/teamsApps/5a31d4f7-a11d-4052-96
 [!INCLUDE [sample-code](../includes/snippets/java/get-teamsappicon-outlineicon-customapp-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# <a name="go"></a>[Ir](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/get-teamsappicon-outlineicon-customapp-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 
 #### <a name="response"></a>Resposta
 
 O exemplo a seguir mostra a resposta para um aplicativo organizacional. 
-> **Observação**: acessar a imagem real [do](teamworkhostedcontent-get.md) ícone do aplicativo personalizado exige que um token do Microsoft Graph seja definido na solicitação.
+> **Observação**: acessar a [imagem](teamworkhostedcontent-get.md) real do ícone do aplicativo personalizado exige que um token Graph Microsoft seja definido na solicitação.
 
 
 <!-- {
@@ -178,7 +186,7 @@ Content-type: application/json
 ```
 
 
-### <a name="example-3-get-color-icon-of-a-store-teams-app"></a>Exemplo 3: Obter ícone de cor de um *aplicativo do* Teams da loja
+### <a name="example-3-get-color-icon-of-a-store-teams-app"></a>Exemplo 3: Obter ícone de cor de um *aplicativo Teams* store
 
 #### <a name="request"></a>Solicitação
 
@@ -209,6 +217,10 @@ GET https://graph.microsoft.com/beta/appCatalogs/teamsApps/95de633a-083e-42f5-b4
 [!INCLUDE [sample-code](../includes/snippets/java/get-teamsappicon-outlineicon-publicapp-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# <a name="go"></a>[Ir](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/get-teamsappicon-outlineicon-publicapp-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 
@@ -233,7 +245,7 @@ Content-type: application/json
 }
 ```
 
-### <a name="example-4-get-outline-icon-of-a-store-teams-app"></a>Exemplo 4: Obter o ícone de contorno de um *aplicativo do* Teams da loja
+### <a name="example-4-get-outline-icon-of-a-store-teams-app"></a>Exemplo 4: Obter o ícone de contorno de *um aplicativo Teams* store
 
 #### <a name="request"></a>Solicitação
 
@@ -262,6 +274,10 @@ GET https://graph.microsoft.com/beta/appCatalogs/teamsApps/95de633a-083e-42f5-b4
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/get-teamsappicon-outlineicon-publicapp-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[Ir](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/get-teamsappicon-outlineicon-publicapp-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

@@ -1,16 +1,16 @@
 ---
 title: Listar telefones
 description: Recupere uma lista de objetos itemPhone.
-localization_priority: Normal
+ms.localizationpriority: medium
 author: kevinbellinger
 ms.prod: people
 doc_type: apiPageType
-ms.openlocfilehash: f8034647c80e334e96066afdcf6f44d4cb129dd0
-ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
+ms.openlocfilehash: 94d282ab790e6bd5a396975661d00ec4a27b10ed
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "50950555"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "61027988"
 ---
 # <a name="list-phones"></a>Listar telefones
 
@@ -43,7 +43,7 @@ GET /users/{id | userPrincipalName}/profile/phones
 
 Este método dá suporte aos seguintes parâmetros de consulta OData para ajudar a personalizar a resposta. Para obter informações gerais, acesse [Parâmetros de consulta OData](/graph/query-parameters).
 
-|Name            |Valor    |Descrição                                                                                                                                                                 |
+|Nome            |Valor    |Descrição                                                                                                                                                                 |
 |:---------------|:--------|:---------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 |$filter         |string   |Limita a resposta apenas aos objetos que contêm os critérios especificados.                                                                                             |
 |$orderby        |cadeia de caracteres   |Por padrão, os objetos na resposta são classificação pelo valor createdDateTime em uma consulta. Você pode alterar a ordem da resposta usando o parâmetro *$orderby.*|
@@ -94,6 +94,10 @@ GET https://graph.microsoft.com/beta/me/profile/phones
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/get-itemphone-2-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[Ir](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/get-itemphone-2-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
