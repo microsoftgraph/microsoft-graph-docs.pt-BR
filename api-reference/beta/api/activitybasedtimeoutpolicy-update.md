@@ -1,16 +1,16 @@
 ---
 title: Atualizar activitybasedtimeoutpolicy
 description: Atualize as propriedades de um objeto activityBasedTimeoutPolicy.
-localization_priority: Normal
+ms.localizationpriority: medium
 author: lujiangfeng666
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: 2db4fa1bfb3f99cdf8f214a0baa6d3e95da7baea
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: a302fd9262978f84432bf474fb73ffbcac443e84
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52048313"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "60991574"
 ---
 # <a name="update-activitybasedtimeoutpolicy"></a>Atualizar activitybasedtimeoutpolicy
 
@@ -28,7 +28,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |:---------------------------------------|:--------------------------------------------|
 | Delegado (conta corporativa ou de estudante)     | Policy.ReadWrite.ApplicationConfiguration |
 | Delegado (conta pessoal da Microsoft) | Sem suporte. |
-| Application                            | Policy.ReadWrite.ApplicationConfiguration |
+| Aplicativo                            | Policy.ReadWrite.ApplicationConfiguration |
 
 ## <a name="http-request"></a>Solicitação HTTP
 
@@ -51,8 +51,8 @@ No corpo da solicitação, forneça os valores para os campos relevantes que dev
 
 | Propriedade     | Tipo        | Descrição |
 |:-------------|:------------|:------------|
-|definition|Conjunto de cadeias de caracteres| Uma coleção de cadeias de caracteres que contém uma cadeia de caracteres JSON que define as regras e as configurações dessa política.  Obrigatório.|
-|description|String| Descrição dessa política.|
+|definition|Coleção de cadeias de caracteres| Uma coleção de cadeias de caracteres que contém uma cadeia de caracteres JSON que define as regras e as configurações dessa política.  Obrigatório.|
+|description|Cadeia de caracteres| Descrição dessa política.|
 |displayName|String| Nome de exibição para esta política. Obrigatório.|
 |isOrganizationDefault|Boolean|Se definido como true, ativa essa política. Pode haver muitas políticas para o mesmo tipo de política, mas apenas uma pode ser ativada como o padrão da organização. Opcional, o valor padrão é false.|
 
@@ -98,6 +98,10 @@ Content-type: application/json
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/update-activitybasedtimeoutpolicy-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[Ir](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/update-activitybasedtimeoutpolicy-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

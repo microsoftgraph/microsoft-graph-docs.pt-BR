@@ -2,15 +2,15 @@
 title: Substituir timeCard
 description: Atualize uma entrada de cartão de ponto existente.
 author: akumar39
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: cbfb5f30991ebd8ae2c2208a1e366557c6eafc1c
-ms.sourcegitcommit: 503c72036c376a30e08c29df8e7730a7afcab66e
+ms.openlocfilehash: b697bf8fd9dfca971c8eef975a0113652a2c9e80
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/10/2021
-ms.locfileid: "52870448"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "60988948"
 ---
 # <a name="replace-timecard"></a>Substituir timeCard
 
@@ -20,13 +20,13 @@ Namespace: microsoft.graph
 
 Substitua um [cartão](../resources/timecard.md) de ponto existente por valores atualizados.
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>Permissões
 
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegada (conta corporativa ou de estudante) | Schedule.ReadWrite.All    |
+|Delegado (conta corporativa ou de estudante) | Schedule.ReadWrite.All    |
 |Delegado (conta pessoal da Microsoft) | Sem suporte.    |
 |Aplicativo | Schedule.ReadWrite.All*  |
 
@@ -131,6 +131,10 @@ Content-type: application/json
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/timecard-replace-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[Ir](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/timecard-replace-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

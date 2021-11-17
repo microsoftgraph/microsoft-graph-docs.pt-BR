@@ -1,16 +1,16 @@
 ---
 title: Criar extensão aberta
 description: Criar uma extensão aberta (objeto openTypeExtension) e adicionar propriedades personalizadas
-localization_priority: Normal
+ms.localizationpriority: medium
 author: dkershaw10
 doc_type: apiPageType
 ms.prod: extensions
-ms.openlocfilehash: 616aab701eab50bfc716b3a27bc98b0b9862ae2d
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: 82e056a98825c28e66f129f37061508715e3b5c4
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52050091"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "60985999"
 ---
 # <a name="create-open-extension"></a>Criar extensão aberta
 
@@ -59,7 +59,7 @@ POST /users/{id|userPrincipalName}/todo/lists/{id}/tasks
 POST /users/{id|userPrincipalName}/todo/lists
 ```
 
->**Observação:** Esta sintaxe acima mostra algumas maneiras comuns de criar as instâncias de recursos com suporte. Todas as outras sintaxes POST que permitem criar essas instâncias de recursos dão suporte à criação de extensões abertas nelas de maneira semelhante.
+>**Observação:** essa sintaxe apresenta algumas maneiras comuns de criar as instâncias de recursos com suporte. Todas as outras sintaxes POST que permitem criar essas instâncias de recurso oferecem suporte à criação de extensões abertas nos mesmos de maneira semelhante.
 
 Confira a seção [Solicitar corpo](#request-body) sobre a inclusão de propriedades da nova instância do recurso _e a extensão_ no corpo da solicitação.
 
@@ -83,7 +83,7 @@ POST /users/{id|userPrincipalName}/todo/lists/{id}/tasks/{id}/extensions
 POST /users/{id|userPrincipalName}/todo/lists/{id}/extensions
 ```
 
->**Observação:** Esta sintaxe mostra algumas maneiras comuns de identificar uma instância do recurso, para criar uma extensão nele. Todas as outras sintaxes que permitem identificar essas instâncias de recursos dão suporte à criação de extensões abertas nelas de maneira semelhante.
+>**Observação:** Esta sintaxe mostra algumas maneiras comuns de identificar uma instância de recurso, a fim de criar uma extensão nele. Todas as outras sintaxes que permitem identificar essas instâncias de recursos suportam a criação de extensões abertas nelas de forma semelhante.
 
 Confira a seção [Solicitar corpo](#request-body) sobre como incluir _a extensão_ no corpo da solicitação.
 
@@ -117,8 +117,7 @@ Ao criar uma extensão em uma _nova_ instância de recursos, além de novos obje
 
 Dependendo da operação, o código de resposta pode ser `201 Created` ou `202 Accepted`.
 
-Quando você cria uma extensão usando a mesma operação usada para criar uma instância de recurso, a operação retorna o mesmo código de resposta retornado quando você usa a operação para criar a instância do recurso sem a extensão.
-Consulte os tópicos correspondentes para criar a instância conforme listado [cima](#create-an-extension-in-a-new-resource-instance).
+Quando você cria uma extensão usando a mesma operação que você usa para criar uma instância de recurso, a operação retorna o mesmo código de resposta retornado quando você usa a operação para criar a instância de recurso sem a extensão. Consulte os tópicos correspondentes para a criação da instância, conforme listado [acima](#create-an-extension-in-a-new-resource-instance).
 
 ### <a name="response-body"></a>Corpo da resposta
 
@@ -185,6 +184,10 @@ Content-Type: application/json
 
 # <a name="objective-c"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/post-opentypeextension-1-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[Ir](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/post-opentypeextension-1-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -310,6 +313,10 @@ Content-Type: application/json
 [!INCLUDE [sample-code](../includes/snippets/objc/post-opentypeextension-2-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# <a name="go"></a>[Ir](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/post-opentypeextension-2-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 
@@ -381,6 +388,10 @@ Content-type: application/json
 
 # <a name="objective-c"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/post-opentypeextension-3-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[Ir](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/post-opentypeextension-3-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -464,6 +475,10 @@ Content-type: application/json
 [!INCLUDE [sample-code](../includes/snippets/objc/post-opentypeextension-4-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# <a name="go"></a>[Ir](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/post-opentypeextension-4-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 
@@ -542,6 +557,10 @@ Content-type: application/json
 [!INCLUDE [sample-code](../includes/snippets/objc/post-opentypeextension-5-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# <a name="go"></a>[Ir](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/post-opentypeextension-5-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 
@@ -549,7 +568,7 @@ Content-type: application/json
 
 Veja a seguir a resposta do quinto exemplo, que contém a nova conversa e uma ID de thread. Esse novo thread contém uma postagem criada automaticamente que, por sua vez, contém a nova extensão.
 
-Observação: o objeto de resposta mostrado aqui pode ser encurtado para legibilidade.
+Observação: O objeto de resposta exibido aqui pode ser encurtado para legibilidade.
 
 Para obter a nova extensão, primeiro [obtenha todas as postagens](../api/conversationthread-list-posts.md) desse thread. Inicialmente, deve haver somente uma. Em seguida, aplique a ID da postagem e o nome da extensão `Com.Contoso.Benefits` para [obter a extensão](../api/opentypeextension-get.md).
 

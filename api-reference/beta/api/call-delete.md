@@ -2,15 +2,15 @@
 title: Excluir chamada
 description: Excluir ou desligar uma chamada ativa.
 author: ananmishr
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: dac4ddab6dbf72042488fe7b3c8f700e2aa734e6
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: fe926e84c0029ec34d72759a8bd88b36a7cd9e52
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52047655"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "61018896"
 ---
 # <a name="delete-call"></a>Excluir chamada
 
@@ -26,7 +26,7 @@ Excluir ou desligar uma chamada ativa. Para chamadas de grupo, isso excluirá ap
 | :-------------- | :----------------------------------------------------------- |
 | Delegado (conta corporativa ou de estudante)     | Sem suporte.                         |
 | Delegado (conta pessoal da Microsoft) | Sem suporte.                         |
-| Application                            | Nenhum                                  |
+| Aplicativo                            | Nenhum.                                  |
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- { "blockType": "ignored" } -->
@@ -75,6 +75,10 @@ DELETE https://graph.microsoft.com/beta/communications/calls/57dab8b1-894c-409a-
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/delete-call-1-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[Ir](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/delete-call-1-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

@@ -1,16 +1,16 @@
 ---
 title: Atualizar personAnniversary
 description: Atualize as propriedades do objeto personAnniversary.
-localization_priority: Normal
+ms.localizationpriority: medium
 author: kevinbellinger
 ms.prod: people
 doc_type: apiPageType
-ms.openlocfilehash: 7506a62e45246de610ab31d6cd04fa042b0492c4
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: dd21c6ab3e252b17db51d7188667a6f2d94415fd
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52037848"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "60985693"
 ---
 # <a name="update-personanniversary"></a>Atualizar personAnniversary
 
@@ -54,10 +54,10 @@ A tabela a seguir mostra as propriedades que são possíveis de atualizar dentro
 
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|allowedAudiences|String|As audiências que são capazes de ver os valores contidos na entidade. Herdado [do itemFacet](../resources/itemfacet.md). Os valores possíveis são: `me`, `family`, `contacts`, `groupMembers`, `organization`, `federatedOrganizations`, `everyone`, `unknownFutureValue`.|
+|allowedAudiences|Cadeia de caracteres|As audiências que são capazes de ver os valores contidos na entidade. Herdado [do itemFacet](../resources/itemfacet.md). Os valores possíveis são: `me`, `family`, `contacts`, `groupMembers`, `organization`, `federatedOrganizations`, `everyone`, `unknownFutureValue`.|
 |data|Data|Contém a data associada ao tipo de aniversário.|
 |inferência|[inferenceData](../resources/inferencedata.md)|Contém detalhes de inferência se a entidade for inferida pelo aplicativo de criação ou modificação. Herdado [do itemFacet](../resources/itemfacet.md).|
-|tipo|anniversaryType|O tipo de aniversário que a data representa. Os valores possíveis são: `birthday`, `wedding`, `unknownFutureValue`.|
+|type|anniversaryType|O tipo de aniversário que a data representa. Os valores possíveis são: `birthday`, `wedding`, `unknownFutureValue`.|
 
 ## <a name="response"></a>Resposta
 
@@ -97,6 +97,10 @@ Content-type: application/json
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/update-personanniversary-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[Ir](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/update-personanniversary-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

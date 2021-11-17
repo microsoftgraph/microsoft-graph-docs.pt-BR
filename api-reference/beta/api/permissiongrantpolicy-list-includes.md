@@ -1,16 +1,16 @@
 ---
 title: Lista inclui coleção de permissionGrantPolicy
 description: Recupere uma lista dos conjuntos de condições que descrevem as condições nas quais um evento de concessão de permissão está incluído em uma política de concessão de permissão.
-localization_priority: Normal
+ms.localizationpriority: medium
 doc_type: apiPageType
 ms.prod: identity-and-sign-in
 author: psignoret
-ms.openlocfilehash: c1fc71f56c662b1558d11fe10404a67395fb4813
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: 372e91d2f1f94a937ab9f9bff6433add772d9706
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52055411"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "60985735"
 ---
 # <a name="list-includes-collection-of-permissiongrantpolicy"></a>Lista inclui coleção de permissionGrantPolicy
 
@@ -28,7 +28,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |:--------------------|:---------------------------------------------------------|
 |Delegado (conta corporativa ou de estudante) | Policy.Read.PermissionGrant, Directory.Read.All |
 |Delegado (conta pessoal da Microsoft) | Sem suporte.    |
-|Application | Policy.Read.PermissionGrant, Directory.Read.All |
+|Aplicativo | Policy.Read.PermissionGrant, Directory.Read.All |
 
 ## <a name="http-request"></a>Solicitação HTTP
 
@@ -85,6 +85,10 @@ GET https://graph.microsoft.com/beta/policies/permissionGrantPolicies/microsoft-
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/permissiongrantpolicy-get-includes-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[Ir](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/permissiongrantpolicy-get-includes-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

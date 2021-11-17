@@ -1,16 +1,16 @@
 ---
 title: Listar revisores do accessReview
 description: No recurso de revisões de acesso do Azure AD, recupere os revisores de um objeto accessReview.
-localization_priority: Normal
+ms.localizationpriority: medium
 author: markwahl-msft
 ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: 92f0baad4908d097cd696c34dc3b51e77814650f
-ms.sourcegitcommit: 13f474d3e71d32a5dfe2efebb351e3a1a5aa9685
+ms.openlocfilehash: 9b70c585f5e8b2dd86f647d59d500bcfd0f14381
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "52751067"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "60988039"
 ---
 # <a name="list-accessreview-reviewers"></a>Listar revisores do accessReview
 
@@ -73,6 +73,10 @@ GET https://graph.microsoft.com/beta/accessReviews/2b83cc42-09db-46f6-8c6e-16fec
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/get-accessreview-reviewers-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[Ir](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/get-accessreview-reviewers-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

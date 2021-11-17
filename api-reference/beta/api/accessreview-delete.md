@@ -1,16 +1,16 @@
 ---
 title: Excluir accessReview
 description: No recurso de análises de acesso do Azure AD, exclua um objeto accessReview.
-localization_priority: Normal
+ms.localizationpriority: medium
 author: markwahl-msft
 ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: 8877c0778f9924995c75dd47b331608d4994a62f
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: 879b1ea3db3726b04f93599f975314c9a6aba5fa
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52048502"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "60983083"
 ---
 # <a name="delete-accessreview"></a>Excluir accessReview
 
@@ -26,7 +26,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |:--------------------------------------|:---------------------------------------------------------|
 |Delegado (conta corporativa ou de estudante)     | AccessReview.ReadWrite.Membership, AccessReview.ReadWrite.All |
 |Delegado (conta pessoal da Microsoft) | Sem suporte. |
-|Application                            | AccessReview.ReadWrite.Membership |
+|Aplicativo                            | AccessReview.ReadWrite.Membership |
 
 O chamador também deve ter permissão ProgramControl.ReadWrite.All, para que ele possa excluir um [programControl](../resources/programcontrol.md).
 
@@ -72,6 +72,10 @@ DELETE https://graph.microsoft.com/beta/accessReviews/2975E9B5-44CE-4E71-93D3-30
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/delete-accessreview-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[Ir](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/delete-accessreview-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

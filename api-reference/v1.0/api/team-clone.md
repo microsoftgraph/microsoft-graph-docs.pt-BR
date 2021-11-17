@@ -5,12 +5,12 @@ author: nkramer
 ms.localizationpriority: medium
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: edb00bd4e26af33f5cc4e6fca7089de86857d231
-ms.sourcegitcommit: f4999aa6fc05f845027db01aa489f7086f9850e1
+ms.openlocfilehash: 5da091152a259a2987b2d99a9082a9f6795a60aa
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/13/2021
-ms.locfileid: "60288703"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "60973680"
 ---
 # <a name="clone-a-team"></a>Clonar uma equipe
 
@@ -40,9 +40,9 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |:--------------------|:---------------------------------------------------------|
 |Delegado (conta corporativa ou de estudante)     | Team.Create, Group.ReadWrite.All **, Directory.ReadWrite.All** |
 |Delegado (conta pessoal da Microsoft) | Sem suporte.    |
-|Application                            | Team.Create, Group.ReadWrite.All **, Directory.ReadWrite.All** |
+|Aplicativo                            | Team.Create, Group.ReadWrite.All **, Directory.ReadWrite.All** |
 
-> **Observação:** as permissões marcadas com ** são preteridas e não devem ser usadas.
+> **Observação**: as permissões marcadas com ** foram preteridas e não devem ser usadas.
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- { "blockType": "ignored" } -->
@@ -107,6 +107,10 @@ Content-Type: application/json
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/clone-team-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[Ir](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/clone-team-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

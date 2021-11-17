@@ -5,12 +5,12 @@ author: ananmishr
 ms.localizationpriority: medium
 ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: bee067a5856b91eb2a387b14c7a9c3f973b943b9
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: c8a626231635b72ec532cebe16d90df484ad3a64
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59026690"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "61007079"
 ---
 # <a name="call-answer"></a>call: answer
 
@@ -29,7 +29,7 @@ Você não precisa de nenhuma permissão para responder a uma chamada ponto a po
 | Delegado (conta pessoal da Microsoft) | Não suportado                        |
 | Aplicativo     | Calls.JoinGroupCalls.All ou Calls.JoinGroupCallsasGuest.All |
 
-> **Observação:** Para uma chamada que usa mídia hospedada por aplicativo, você também precisa da permissão Calls.AccessMedia.All. Você deve ter pelo menos uma das seguintes permissões para garantir que a notificação de chamada de entrada seja `source` descriptografada: Calls.AccessMedia.All, Calls.Initiate. All, Calls.InitiateGroupCall.All, Calls.JoinGroupCall.All, Calls.JoinGroupCallAsGuest.All. São `source` as informações do chamador na notificação de chamada de entrada. Sem pelo menos uma dessas permissões, `source` o permanecerá criptografado.
+> **Observação:** Para uma chamada que usa mídia hospedada por aplicativo, você também precisa da permissão Calls.AccessMedia.All. Você deve ter pelo menos uma das seguintes permissões para garantir que a notificação de chamada de entrada seja `source` descriptografada: Calls.AccessMedia.All, Calls.Initiate.All, Calls.InitiateGroupCall.All, Calls.JoinGroupCall.All, Calls.JoinGroupCallAsGuest.All. São `source` as informações do chamador na notificação de chamada de entrada. Sem pelo menos uma dessas permissões, `source` o permanecerá criptografado.
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- {"blockType": "ignored" } -->
@@ -49,7 +49,7 @@ Forneça um objeto JSON com os seguintes parâmetros no corpo da solicitação.
 | Parâmetro        | Tipo                                     |Descrição                                                                                                                                    |
 |:-----------------|:-----------------------------------------|:----------------------------------------------------------------------------------------------------------------------------------------------|
 |callbackUri       |String                                    |Permite que os bots forneçam um URI de retorno de chamada específico para que a chamada simultânea receba notificações posteriores. Se essa propriedade não tiver sido definida, o URI de retorno de chamada global do bot será usado em vez disso. Isso deve ser `https` .    |
-|acceptedModalities|Coleção String                         |A lista de modalidades de aceitação. Os valores possíveis são: `audio`, `video`, `videoBasedScreenSharing`. Obrigatório para atender uma chamada. |
+|acceptedModalities|Coleção de cadeias de caracteres                         |A lista de modalidades de aceitação. Os valores possíveis são: `audio`, `video`, `videoBasedScreenSharing`. Obrigatório para atender uma chamada. |
 |mediaConfig       | [appHostedMediaConfig](../resources/apphostedmediaconfig.md) ou [serviceHostedMediaConfig](../resources/servicehostedmediaconfig.md) |A configuração de mídia. (Obrigatório)                                                                                                            |
 | participantCapacity | Int | O número de participantes que o aplicativo pode manipular para a chamada, Teams cenário de gravação [baseado em](/MicrosoftTeams/teams-recording-policy) política.                                                     |
 
@@ -101,6 +101,10 @@ Esse blob é a configuração serializada para sessões de mídia geradas a part
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/call-answer-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[Ir](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/call-answer-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -360,6 +364,10 @@ Content-Type: application/json
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/call-answer-app-hosted-media-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[Ir](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/call-answer-app-hosted-media-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

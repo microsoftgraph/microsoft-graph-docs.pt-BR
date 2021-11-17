@@ -2,15 +2,15 @@
 title: Excluir domínio
 description: Exclui um domínio de um locatário.
 author: adimitui
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: 5f00627823d4a9cc571143c8e0e09ba297bd4902
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: a5f7ef15bd4b682512ae2f3dbd9dd5f8b40d7430
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52046535"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "60982039"
 ---
 # <a name="delete-domain"></a>Excluir domínio
 
@@ -29,9 +29,9 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegado (conta corporativa ou de estudante) | Directory.AccessAsUser.All    |
+|Delegado (conta corporativa ou de estudante) | Domain.ReadWrite.All    |
 |Delegado (conta pessoal da Microsoft) | Sem suporte.    |
-|Application | Domain.ReadWrite.All |
+|Aplicativo | Domain.ReadWrite.All |
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- { "blockType": "ignored" } -->
@@ -84,12 +84,16 @@ DELETE https://graph.microsoft.com/beta/domains/contoso.com
 [!INCLUDE [sample-code](../includes/snippets/java/delete-domain-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# <a name="go"></a>[Ir](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/delete-domain-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 
 ##### <a name="response"></a>Resposta
 
-Observação: o objeto de resposta mostrado aqui pode ser encurtado para legibilidade.
+Observação: o objeto de resposta exibido aqui pode ser encurtado para legibilidade.
 <!-- {
   "blockType": "response",
   "truncated": true

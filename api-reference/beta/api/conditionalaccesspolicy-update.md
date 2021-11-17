@@ -1,16 +1,16 @@
 ---
 title: Atualizar conditionalAccessPolicy
 description: Atualize as propriedades de um objeto conditionalAccessPolicy.
-localization_priority: Normal
+ms.localizationpriority: medium
 author: videor
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: 92c11d7577656b3cea62bf627209f2cb5c9aa351
-ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
+ms.openlocfilehash: 8e01e9dfadc1babc022d0a258c71980d29ee09ff
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50437594"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "60975549"
 ---
 # <a name="update-conditionalaccesspolicy"></a>Atualizar conditionalAccessPolicy
 
@@ -31,7 +31,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |Aplicativo                            | Policy.Read.All, Policy.ReadWrite.ConditionalAccess e Application.Read.All |
 
 > [!NOTE]
-> Essa API tem um [problema conhecido relacionado](/graph/known-issues#permissions) a permissões.
+> Essa API tem um [problema conhecido relacionado](/graph/known-issues##conditional-access-policy) a permissões.
 
 ## <a name="http-request"></a>Solicitação HTTP
 
@@ -98,6 +98,10 @@ Content-type: application/json
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/update-conditionalaccesspolicy-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[Ir](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/update-conditionalaccesspolicy-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

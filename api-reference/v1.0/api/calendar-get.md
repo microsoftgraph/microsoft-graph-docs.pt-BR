@@ -5,12 +5,12 @@ ms.localizationpriority: high
 author: harini84
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: c782b4d259f6926c7066e9cdfc956e7db430622a
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: a8ba60e7796fca773352dc1f0b719f57ee8a05ba
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59125443"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "61001067"
 ---
 # <a name="get-calendar"></a>Obter calendário
 
@@ -21,7 +21,7 @@ Obtenha as propriedades e as relações de um objeto [calendar](../resources/cal
 Existem dois cenários em que um aplicativo pode receber o calendário de outro usuário:
 
 * Se o aplicativo tiver permissões de aplicativo ou
-* Se o aplicativo tem as [permissões](#permissions) delegadas apropriadas de um usuário e o outro usuário compartilhou um calendário com esse usuário ou concedeu acesso delegado ao usuário. Confira [detalhes e um exemplo](/graph/outlook-get-shared-events-calendars).
+* Se o aplicativo tiver as [permissões](#permissions) delegadas apropriadas de um usuário e outro usuário tiver compartilhado uma agenda com esse usuário ou se tiver concedido acesso delegado a esse usuário. Confira [detalhes e um exemplo](/graph/outlook-get-shared-events-calendars).
 
 ## <a name="permissions"></a>Permissões
 Dependendo do tipo de calendário em que o evento se encontra e do tipo de permissão (delegada ou aplicativo) solicitada, para chamar essa API é necessário ter umas das seguintes permissões. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
@@ -89,6 +89,10 @@ GET https://graph.microsoft.com/v1.0/me/calendar
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/get-calendar-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[Ir](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/get-calendar-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

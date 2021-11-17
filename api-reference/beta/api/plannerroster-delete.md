@@ -1,25 +1,25 @@
 ---
 title: Excluir plannerRoster
-description: Exclui um objeto plannerRoster .
+description: Exclui um objeto plannerRoster.
 author: tarkansevilmis
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: planner
 doc_type: apiPageType
-ms.openlocfilehash: e6159e9a5f4a230e3bb60f04fca6abdee1ee3a97
-ms.sourcegitcommit: 42fdb068616222eb6b0813e93b33e830fc7eedc0
+ms.openlocfilehash: 88c0e564ac84c41ba62bfc613a7b5776e2ec7300
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/17/2021
-ms.locfileid: "50271915"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "61019700"
 ---
 # <a name="delete-plannerroster"></a>Excluir plannerRoster
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Exclua [um objeto plannerRoster.](../resources/plannerroster.md)
+Exclua um [objeto plannerRoster.](../resources/plannerroster.md)
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão|Permissões (da com menos para a com mais privilégios)|
@@ -77,6 +77,10 @@ DELETE https://graph.microsoft.com/beta/planner/rosters/5ba84f7a-aa11-4a51-a298-
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/delete-plannerroster-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[Ir](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/delete-plannerroster-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

@@ -2,15 +2,15 @@
 title: 'user: translateExchangeIds'
 description: Traduzir os identificadores de recursos relacionados ao Outlook entre formatos.
 author: abheek-das
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 4bdb22f649cc0fd30734b5762106c959c34e3cf6
-ms.sourcegitcommit: 48fff935d56fe96e97577a80a3a0aa15c45419ba
+ms.openlocfilehash: 7036a86ccadedbbfa354a5f230fe8525b2a67e9c
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/10/2021
-ms.locfileid: "50176973"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "60984959"
 ---
 # <a name="user-translateexchangeids"></a>user: translateExchangeIds
 
@@ -49,30 +49,30 @@ POST /users/{id|userPrincipalName}/translateExchangeIds
 
 | Parâmetro | Tipo | Descrição |
 |:----------|:-----|:------------|
-| inputIds | Coleção de cadeias de caracteres | Uma coleção de identificadores a converter. Todos os identificadores na coleção DEVEM ter o mesmo tipo de ID de origem e DEVEM ser para itens na mesma caixa de correio. O tamanho máximo dessa coleção é de 1000 cadeias de caracteres. |
-| sourceIdType | exchangeIdFormat | O tipo de identificação dos identificadores no `InputIds` parâmetro. |
-| targetIdType | exchangeIdFormat | O tipo de ID solicitado para o qual converter. |
+| inputIds | Conjunto de cadeias de caracteres | Uma coleção de identificadores a converter. Todos os identificadores da coleção DEVEM ter o mesmo tipo de ID de origem e DEVEM ser para itens na mesma caixa de correio. O tamanho máximo dessa coleção é de 1000 cadeias de caracteres. |
+| sourceIdType | exchangeIdFormat | O tipo de ID dos identificadores no `InputIds` parâmetro. |
+| targetIdType | exchangeIdFormat | O tipo de ID solicitado a ser convertido. |
 
-### <a name="exchangeidformat-values"></a>Valores de exchangeIdFormat
+### <a name="exchangeidformat-values"></a>Valores exchangeIdFormat
 
 | Member | Descrição |
 |:-------|:------------|
-| entryId | O formato de ID de entrada binária usado por clientes MAPI. |
-| ewsId | O formato de ID usado pelos clientes dos Serviços Web do Exchange. |
+| entryId | O formato de ID de entrada binária usado pelos clientes MAPI. |
+| ewsId | O formato de ID usado pelos clientes Exchange Web Services. |
 | immutableEntryId | O formato de ID imutável compatível com MAPI binário. |
-| restId | O formato de ID padrão usado pelo Microsoft Graph. |
-| restImmutableEntryId | O formato de ID imutável usado pelo Microsoft Graph. |
+| restId | O formato de ID padrão usado pela Microsoft Graph. |
+| restImmutableEntryId | O formato ID imutável usado pela Microsoft Graph. |
 
-Os formatos binários ( `entryId` e `immutableEntryId` ) são codificados como base64 seguro para URL. A segurança de URL é implementada modificando a codificação base64 dos dados binários da seguinte maneira:
+Os formatos binários ( e ) são codificados com `entryId` base em URL `immutableEntryId` segura64. A segurança de URL é implementada modificando a codificação base64 dos dados binários da seguinte maneira:
 
 - Substituir `+` por `-`
 - Substituir `/` por `_`
-- Remover todos os caracteres de preenchimento à sua parte ( `=` )
+- Remover quaisquer caracteres de preenchimento à parte ( `=` )
 - Adicione um inteiro ao final da cadeia de caracteres indicando quantos caracteres de preenchimento estavam no original ( `0` , `1` ou `2` )
 
 ## <a name="response"></a>Resposta
 
-Se bem-sucedido, este método retorna `200 OK` o código de resposta e uma coleção [convertIdResult](../resources/convertidresult.md) no corpo da resposta.
+Se tiver êxito, este método retornará `200 OK` o código de resposta e uma coleção [convertIdResult](../resources/convertidresult.md) no corpo da resposta.
 
 ## <a name="example"></a>Exemplo
 
@@ -115,6 +115,10 @@ Content-Type: application/json
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/user-translateexchangeids-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[Ir](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/user-translateexchangeids-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

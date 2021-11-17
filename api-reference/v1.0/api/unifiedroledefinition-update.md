@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: abhijeetsinha
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: fc93caf0471c1f8c0e3d73b895a530b809656548
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: bd7ceb47c3a1d95264405a3d72ef140742c63933
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59097810"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "61008486"
 ---
 # <a name="update-unifiedroledefinition"></a>Atualizar unifiedRoleDefinition
 
@@ -51,7 +51,7 @@ A tabela a seguir mostra as propriedades que são necessárias ao atualizar [uni
 
 | Propriedade     | Tipo        | Descrição |
 |:-------------|:------------|:------------|
-|description|String| A descrição da definição de função. Somente leitura quando **isBuiltIn** é `true` . |
+|description|Cadeia de caracteres| A descrição da definição de função. Somente leitura quando **isBuiltIn** é `true` . |
 |displayName|Cadeia de caracteres| O nome de exibição da definição de função. Somente leitura quando **isBuiltIn** é `true` . Obrigatório.|
 |isEnabled|Booliano| Sinalizador indicando se a função está habilitada para atribuição. Se `false` , a função não está disponível para atribuição. Somente leitura quando **isBuiltIn** for true. |
 |resourceScopes|Coleção de cadeias de caracteres| Lista de escopos e permissões às que a definição de função se aplica. Atualmente, `/` só há suporte. Somente leitura quando **isBuiltIn** for true. **NÃO USE. Essa propriedade será preterida em breve. Anexar escopo à atribuição de função.**|
@@ -109,6 +109,10 @@ Content-type: application/json
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/update-unifiedroledefinition-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[Ir](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/update-unifiedroledefinition-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

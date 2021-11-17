@@ -1,16 +1,16 @@
 ---
 title: Obter item de histórico de riskyUser
 description: Obter um item de histórico de um objeto riskyUser.
-localization_priority: Normal
+ms.localizationpriority: medium
 author: cloudhandler
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: 6b1a88bbeaf133d2def5e95d2d8769ef1cfadc75
-ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
+ms.openlocfilehash: 0f28e1aa1e8cf946b34328fce7d18bcd098b9160
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "50962214"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "61002740"
 ---
 # <a name="get-riskyuserhistoryitem"></a>Obter riskyUserHistoryItem
 
@@ -20,16 +20,16 @@ Namespace: microsoft.graph
 
 Obter um [objeto riskyUserHistoryItem](../resources/riskyuserhistoryitem.md) de [um riskyUser](../resources/riskyuser.md).
 
->**Observação:** Usar a API riskyUsers requer uma licença do Azure AD Premium P2.
+>**Observação:** Usar a API riskyUsers requer uma Azure AD Premium P2 de usuário.
 
 ## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegado (conta corporativa ou de estudante) | IdentityRiskyUser.Read.All, IdentityRiskUser.ReadWrite.All    |
+|Delegado (conta corporativa ou de estudante) | IdentityRiskyUser.Read.All, IdentityRiskyUser.ReadWrite.All    |
 |Delegado (conta pessoal da Microsoft) | Sem suporte.    |
-|Aplicativo | IdentityRiskyUser.Read.All, IdentityRiskUser.ReadWrite.All |
+|Aplicativo | IdentityRiskyUser.Read.All, IdentityRiskyUser.ReadWrite.All |
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- { "blockType": "ignored" } -->
@@ -79,6 +79,10 @@ GET https://graph.microsoft.com/beta/riskyUsers/41a31b00-3b3b-42d9-8f1c-6d4f14e7
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/get-riskyuser-historyitem-1-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[Ir](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/get-riskyuser-historyitem-1-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

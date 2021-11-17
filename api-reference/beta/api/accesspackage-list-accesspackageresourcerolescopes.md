@@ -1,16 +1,16 @@
 ---
 title: Listar accessPackageResourceRoleScopes
 description: Recupere uma lista de objetos accesspackageresourcerolescope.
-localization_priority: Normal
+ms.localizationpriority: medium
 author: markwahl-msft
 ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: d2376d9eb4aaf0bd8ab58b0dd5cbbb131e36a01c
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: b83344d1fba1d7cb27e73458387e8cf1e29bd092
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52038632"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "60983797"
 ---
 # <a name="list-accesspackageresourcerolescopes"></a>Listar accessPackageResourceRoleScopes
 
@@ -28,7 +28,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |:---------------------------------------|:--------------------------------------------|
 | Delegado (conta corporativa ou de estudante)     | EntitlementManagement.Read.All, EntitlementManagement.ReadWrite.All |
 | Delegado (conta pessoal da Microsoft) | Sem suporte. |
-| Application                            | EntitlementManagement.Read.All, EntitlementManagement.ReadWrite.All |
+| Aplicativo                            | EntitlementManagement.Read.All, EntitlementManagement.ReadWrite.All |
 
 ## <a name="http-request"></a>Solicitação HTTP
 
@@ -85,6 +85,10 @@ GET https://graph.microsoft.com/beta/identityGovernance/entitlementManagement/ac
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/get-accesspackageresourcerolescopes-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[Ir](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/get-accesspackageresourcerolescopes-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

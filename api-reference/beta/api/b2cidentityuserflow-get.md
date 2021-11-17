@@ -1,16 +1,16 @@
 ---
 title: Obter b2cIdentityUserFlow
 description: Recupere as propriedades e as relações de um objeto b2cIdentityUserFlow.
-localization_priority: Normal
+ms.localizationpriority: medium
 doc_type: apiPageType
 author: jkdouglas
 ms.prod: identity-and-sign-in
-ms.openlocfilehash: e718174b9b537ddf6a0144ae3ab481d730a5f7d1
-ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
+ms.openlocfilehash: e22b5ab907ff35de2b3d05e5d85200e5f209e04a
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50438300"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "60999953"
 ---
 # <a name="get-b2cidentityuserflow"></a>Obter b2cIdentityUserFlow
 
@@ -33,7 +33,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 A conta de trabalho ou de estudante precisa pertencer a uma das seguintes funções:
 
 * Administrador global
-* Administrador de Fluxo de Usuário de Identidade Externa
+* Administrador de identidade externa Flow usuário
 
 ## <a name="http-request"></a>Solicitação HTTP
 
@@ -94,6 +94,10 @@ GET https://graph.microsoft.com/beta/identity/b2cUserFlows/{id}
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/get-b2cuserflows-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[Ir](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/get-b2cuserflows-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

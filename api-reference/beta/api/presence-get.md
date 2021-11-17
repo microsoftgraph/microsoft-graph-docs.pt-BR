@@ -2,15 +2,15 @@
 title: Obter presença
 description: Obter informações de presença de um usuário.
 author: ananmishr
-localization_priority: Normal
+ms.localizationpriority: medium
 doc_type: apiPageType
 ms.prod: cloud-communications
-ms.openlocfilehash: 80a5bd421d3c8ab5497f0b52a52fb77135e11648
-ms.sourcegitcommit: 6d04db95bf233d6819d24b01fd7f8b6db57a524c
+ms.openlocfilehash: c2da771bd4de75717cd59e8d5dc9e12e10ed418a
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/12/2021
-ms.locfileid: "49796707"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "60989725"
 ---
 # <a name="get-presence"></a>Obter presença
 
@@ -20,7 +20,7 @@ Namespace: microsoft.graph
 
 Obter informações de presença [de um](../resources/presence.md) usuário.
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é necessária para chamar essas APIs. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 | Tipo de permissão | Permissões (da com menos para a com mais privilégios)                  |
@@ -37,7 +37,7 @@ GET /users/{id}/presence
 GET /communications/presences
 ```
 
-## <a name="request-headers"></a>Solicitação de headers
+## <a name="request-headers"></a>Headers de solicitação
 | Nome          | Descrição               |
 |:--------------|:--------------------------|
 | Autorização | {token} de portador. Obrigatório. |
@@ -48,13 +48,13 @@ GET /communications/presences
 Não forneça um corpo de solicitação para esse método.
 
 ## <a name="response"></a>Resposta
-Se bem-sucedido, este método retorna `200 OK` um código de resposta e um objeto [de](../resources/presence.md) presença no corpo da resposta.
+Se tiver êxito, este método retornará `200 OK` um código de resposta e um objeto [de](../resources/presence.md) presença no corpo da resposta.
 
 ## <a name="examples"></a>Exemplos
 
-### <a name="example-1-get-your-own-presence-information"></a>Exemplo 1: Obter suas próprias informações de presença
+### <a name="example-1-get-your-own-presence-information"></a>Exemplo 1: obter suas próprias informações de presença
 
-O exemplo a seguir mostra como obter suas próprias informações de presença. Essa operação requer a permissão Presence.Read.
+O exemplo a seguir mostra como obter suas próprias informações de presença. Esta operação requer a permissão Presence.Read.
 
 #### <a name="request"></a>Solicitação
 
@@ -82,6 +82,10 @@ GET https://graph.microsoft.com/beta/me/presence
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/get-your-presence-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[Ir](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/get-your-presence-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -113,7 +117,7 @@ Content-Length: 1574
 
 ### <a name="example-2-get-the-presence-information-of-another-user"></a>Exemplo 2: Obter as informações de presença de outro usuário
 
-O exemplo a seguir mostra como obter as informações de presença de outro usuário. Essa operação requer a permissão Presence.Read.All.
+O exemplo a seguir mostra como obter as informações de presença para outro usuário. Esta operação requer a permissão Presence.Read.All.
 
 #### <a name="request"></a>Solicitação
 
@@ -139,6 +143,10 @@ GET https://graph.microsoft.com/beta/users/66825e03-7ef5-42da-9069-724602c31f6b/
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/get-user-presence-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[Ir](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/get-user-presence-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -171,7 +179,7 @@ Content-Length: 1574
 
 ### <a name="example-3-get-the-presence-information-of-another-user"></a>Exemplo 3: Obter as informações de presença de outro usuário
 
-O exemplo a seguir mostra como obter as informações de presença de outro usuário. Essa operação requer a permissão Presence.Read.All.
+O exemplo a seguir mostra como obter as informações de presença para outro usuário. Esta operação requer a permissão Presence.Read.All.
 
 #### <a name="request"></a>Solicitação
 
@@ -199,6 +207,10 @@ GET https://graph.microsoft.com/beta/communications/presences/dc74d9bb-6afe-433d
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/get-user-presences-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[Ir](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/get-user-presences-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
