@@ -1,16 +1,16 @@
 ---
 title: Listar modelos de sincronização existentes
 description: Listar os modelos de sincronização associados a um determinado aplicativo ou entidade de serviço.
-localization_priority: Normal
+ms.localizationpriority: medium
 doc_type: apiPageType
 author: ArvindHarinder1
 ms.prod: applications
-ms.openlocfilehash: 323a870c94ea465ce0cbfa84903090ee944a5ee7
-ms.sourcegitcommit: cde4a3386b08a67cb476df6d46b51885c643d94f
+ms.openlocfilehash: bc001761fe31db8106ac3df658fa9c18c7505beb
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/10/2021
-ms.locfileid: "50625924"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "61020296"
 ---
 # <a name="list-existing-synchronization-templates"></a>Listar modelos de sincronização existentes
 
@@ -77,6 +77,10 @@ GET https://graph.microsoft.com/beta/servicePrincipals/{id}/synchronization/temp
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/get-synchronizationtemplate-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[Ir](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/get-synchronizationtemplate-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

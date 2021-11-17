@@ -1,16 +1,16 @@
 ---
 title: Criar personName
 description: Use essa API para criar um novo personName no perfil de um usuário.
-localization_priority: Normal
+ms.localizationpriority: medium
 author: kevinbellinger
 ms.prod: people
 doc_type: apiPageType
-ms.openlocfilehash: f29c138fbf2a0dfe374111bfa6f9d2511f5e62b5
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: d1c77eab002d194f3de3992d68533e2823d45fcd
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52036881"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "61007632"
 ---
 # <a name="create-personname"></a>Criar personName
 
@@ -28,7 +28,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |:---------------------------------------|:---------------------------------------------------------------------------------|
 | Delegado (conta corporativa ou de estudante)     | User.Read, User.ReadWrite, User.ReadBasic.All, User.Read.All, User.ReadWrite.All |
 | Delegado (conta pessoal da Microsoft) | User.Read, User.ReadWrite, User.ReadBasic.All, User.Read.All, User.ReadWrite.All |
-| Application                            | User.ReadBasic.All, User.Read.All, User.ReadWrite.All |
+| Aplicativo                            | User.ReadBasic.All, User.Read.All, User.ReadWrite.All |
 
 ## <a name="http-request"></a>Solicitação HTTP
 
@@ -53,19 +53,19 @@ A tabela a seguir mostra as propriedades que são possíveis de definir ao criar
 
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|allowedAudiences|String|As audiências que são capazes de ver os valores contidos na entidade. Herdado [do itemFacet](../resources/itemfacet.md). Os valores possíveis são: `me`, `family`, `contacts`, `groupMembers`, `organization`, `federatedOrganizations`, `everyone`, `unknownFutureValue`.|
+|allowedAudiences|Cadeia de caracteres|As audiências que são capazes de ver os valores contidos na entidade. Herdado [do itemFacet](../resources/itemfacet.md). Os valores possíveis são: `me`, `family`, `contacts`, `groupMembers`, `organization`, `federatedOrganizations`, `everyone`, `unknownFutureValue`.|
 |displayName|String|Fornece uma renderização ordenada de firstName e lastName, dependendo da localidade do usuário ou de seu dispositivo.|
-|first|String|Nome do usuário.|
+|first|Cadeia de caracteres|Nome do usuário.|
 |id|String|Identificador usado para endereçamento individual da entidade. Herdado da [entidade](../resources/entity.md)|
 |inferência|[inferenceData](../resources/inferencedata.md)|Contém detalhes de inferência se a entidade for inferida pelo aplicativo de criação ou modificação. Herdado [do itemFacet](../resources/itemfacet.md).|
 |initials|String|Iniciais do usuário.|
-|languageTag|String|Contém o nome do idioma (en-US, no-NB, en-AU) após o formato IETF BCP47.   |
+|languageTag|Cadeia de caracteres|Contém o nome do idioma (en-US, no-NB, en-AU) após o formato IETF BCP47.   |
 |last|String|Sobrenome do usuário.|
-|maiden|String|Nome de solteira do usuário. |
+|maiden|Cadeia de caracteres|Nome de solteira do usuário. |
 |middle|String|Nome do meio do usuário.|
-|nickname|String|Apelido do usuário.|
+|nickname|Cadeia de caracteres|Apelido do usuário.|
 |pronúncia|[yomiPersonName](../resources/yomipersonname.md)|Diretrizes sobre como pronunciar o nome dos usuários.|
-|sufixo|String|Designadores usados após o nome dos usuários (por exemplo: PhD.)  |
+|sufixo|Cadeia de caracteres|Designadores usados após o nome dos usuários (por exemplo: PhD.)  |
 |title|String|Honorifics usado para prefixar um nome de usuário (por exemplo: Dr, Sir, Mrs.)|
 
 ## <a name="response"></a>Resposta
@@ -112,6 +112,10 @@ Content-type: application/json
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/create-personname-from-profilev2-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[Ir](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/create-personname-from-profilev2-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

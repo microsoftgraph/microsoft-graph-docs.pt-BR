@@ -1,16 +1,16 @@
 ---
 title: Criar extensionProperty
 description: Crie uma nova extensionProperty.
-localization_priority: Normal
+ms.localizationpriority: medium
 author: sureshja
 ms.prod: applications
 doc_type: apiPageType
-ms.openlocfilehash: e1266797975a3c516bff86c453cde74ea73767f1
-ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
+ms.openlocfilehash: c8d8d0df41485faac0ed1a61fe73d357258addd7
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/06/2021
-ms.locfileid: "50129097"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "60983041"
 ---
 # <a name="create-extensionproperty"></a>Criar extensionProperty
 
@@ -18,7 +18,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Crie uma nova [definição extensionProperty.](../resources/extensionproperty.md) Você pode usar essa operação para adicionar um valor de propriedade personalizado ao tipo de objeto de destino definido na extensionProperty, usando solicitações padrão de criação e atualização para o objeto de destino.
+Crie uma nova [definição extensionProperty.](../resources/extensionproperty.md) Você pode usar essa operação para adicionar um valor de propriedade personalizada ao tipo de objeto direcionado definido na extensionProperty, usando solicitações padrão de criação e atualização para o objeto de destino.
 
 ## <a name="permissions"></a>Permissões
 
@@ -46,19 +46,19 @@ POST /applications/{id}/extensionProperties
 
 ## <a name="request-body"></a>Corpo da solicitação
 
-No corpo da solicitação, forneça [um objeto extensionProperty](../resources/extensionproperty.md) com as propriedades a seguir.
+No corpo da solicitação, forneça um [objeto extensionProperty](../resources/extensionproperty.md) com as seguintes propriedades.
 
 
 | Propriedade     | Tipo        | Descrição |
 |:-------------|:------------|:------------|
-|dataType|Cadeia de caracteres| Especifica o tipo de dados do valor que a propriedade de extensão pode conter. Os valores a seguir são suportados. Não anulável. <ul><li>`Binary` - Máximo de 256 bytes</li><li>`Boolean`</li><li>`DateTime` - Deve ser especificado no formato ISO 8601. Serão armazenados no UTC.</li><li>`Integer` - Valor de 32 bits.</li><li>`LargeInteger` - Valor de 64 bits.</li><li>`String` - Máximo de 256 caracteres</li></ul>|
-|nome|String| Nome da propriedade de extensão. Não anulável. |
+|dataType|Cadeia de caracteres| Especifica o tipo de dados do valor que a propriedade extension pode manter. Os valores a seguir são suportados. Não anulável. <ul><li>`Binary` - Máximo de 256 bytes</li><li>`Boolean`</li><li>`DateTime` - Deve ser especificado no formato ISO 8601. Serão armazenados no UTC.</li><li>`Integer` - Valor de 32 bits.</li><li>`LargeInteger` - Valor de 64 bits.</li><li>`String` - Máximo de 256 caracteres</li></ul>|
+|nome|Cadeia de caracteres| Nome da propriedade extension. Não anulável. |
 |targetObjects|Coleção de cadeias de caracteres| Os valores a seguir são suportados. Não anulável. <ul><li>`User`</li><li>`Group`</li><li>`Organization`</li><li>`Device`</li><li>`Application`</li></ul>|
 
 
 ## <a name="response"></a>Resposta
 
-Se bem-sucedido, este método retorna o código de resposta e um novo objeto `201, Created` [extensionProperty](../resources/extensionproperty.md) no corpo da resposta.
+Se tiver êxito, este método retornará `201, Created` o código de resposta e um novo objeto [extensionProperty](../resources/extensionproperty.md) no corpo da resposta.
 
 ## <a name="examples"></a>Exemplos
 
@@ -100,12 +100,16 @@ Content-type: application/json
 [!INCLUDE [sample-code](../includes/snippets/java/create-extensionproperty-from-application-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# <a name="go"></a>[Ir](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/create-extensionproperty-from-application-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 
 ### <a name="response"></a>Resposta
 
-Se bem-sucedido, este método retorna um código de resposta e um objeto `201 Created` [extensionProperty](../resources/extensionProperty.md) no corpo da resposta.
+Se tiver êxito, este método retornará um código `201 Created` de resposta e um objeto [extensionProperty](../resources/extensionProperty.md) no corpo da resposta.
 
 <!-- {
   "blockType": "response",

@@ -2,15 +2,15 @@
 title: Obter userInsightsSettings
 description: Recupere as propriedades de um objeto userInsightsSettings.
 author: simonhult
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: insights
 doc_type: apiPageType
-ms.openlocfilehash: b68aacd69a705743aa37ea85ba9d421c6f9d46d2
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: d8206ba6eaeaaa17b44b86980d9ceeeeabe3e578
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58804887"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "61009347"
 ---
 # <a name="get-userinsightssettings"></a>Obter userInsightsSettings
 
@@ -84,6 +84,10 @@ GET https://graph.microsoft.com/beta/me/settings/itemInsights
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/get-userinsightssettings-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[Ir](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/get-userinsightssettings-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

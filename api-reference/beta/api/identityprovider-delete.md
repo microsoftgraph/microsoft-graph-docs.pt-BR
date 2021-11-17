@@ -1,18 +1,18 @@
 ---
 title: Excluir identityProvider
 description: Exclua um identityProvider.
-localization_priority: Normal
+ms.localizationpriority: medium
 doc_type: apiPageType
 author: namkedia
 ms.prod: identity-and-sign-in
-ms.openlocfilehash: 2924b7b4174f1457d212f4905dd829a23d636296
-ms.sourcegitcommit: 08d47a31c48fd69ae4fcee26e34fdd65ad1ba69f
+ms.openlocfilehash: 94167a0f4fe108152f6e59dd38e26f19a4f4e48e
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/02/2021
-ms.locfileid: "51508854"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "61015045"
 ---
-# <a name="delete-identityprovider-deprecated"></a>Excluir identityProvider (preterido)
+# <a name="delete-identityprovider-deprecated"></a>Excluir IdentityProvider (obsoleto)
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
@@ -20,7 +20,7 @@ Namespace: microsoft.graph
 
 Excluir um [identityProvider](../resources/identityprovider.md).
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>Permissões
 
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
@@ -86,6 +86,10 @@ DELETE https://graph.microsoft.com/beta/identityProviders/{id}
 
 # <a name="objective-c"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/delete-identityprovider-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[Ir](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/delete-identityprovider-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
