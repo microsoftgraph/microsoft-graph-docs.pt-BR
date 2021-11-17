@@ -2,15 +2,15 @@
 title: 'locatário: resetTenantOnboardingStatus'
 description: Executa os procedimentos apropriados para redefinir o status de integração do locatário gerenciado que foi removido da plataforma de gerenciamento de vários locatários usando a ação offboardTenant. Ao invocar essa ação, a plataforma tentará integrar o locatário gerenciado para gerenciamento.
 author: isaiahwilliams
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: microsoft-365-lighthouse
 doc_type: apiPageType
-ms.openlocfilehash: e7d584343475f5f1698b4bccde13a0f1115abf43
-ms.sourcegitcommit: 486fe9c77d4d89c5416bb83e8c716e6918c47370
+ms.openlocfilehash: 9bd195b42f2daac4a0264e4a508947410bd3a496
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/15/2021
-ms.locfileid: "53440397"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "60980863"
 ---
 # <a name="tenant-resettenantonboardingstatus"></a>locatário: resetTenantOnboardingStatus
 Namespace: microsoft.graph.managedTenants
@@ -19,13 +19,13 @@ Namespace: microsoft.graph.managedTenants
 
 Executa os procedimentos apropriados para redefinir o status de integração do locatário gerenciado que foi removido da plataforma de gerenciamento de vários locatários usando a [ação offboardTenant.](../api/managedtenants-tenant-offboardtenant.md) Ao invocar essa ação, a plataforma tentará integrar o locatário gerenciado para gerenciamento.
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão|Permissões (da com menos para a com mais privilégios)|
 |:---|:---|
-|Delegada (conta corporativa ou de estudante)|ManagedTenants.ReadWrite.All|
-|Delegada (conta pessoal da Microsoft)|Sem suporte.|
+|Delegado (conta corporativa ou de estudante)|ManagedTenants.ReadWrite.All|
+|Delegado (conta pessoal da Microsoft)|Sem suporte.|
 |Aplicativo|Sem suporte.|
 
 ## <a name="http-request"></a>Solicitação HTTP
@@ -77,6 +77,10 @@ POST https://graph.microsoft.com/beta/tenantRelationships/managedTenants/tenants
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/tenant-resettenantonboardingstatus-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[Ir](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/tenant-resettenantonboardingstatus-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

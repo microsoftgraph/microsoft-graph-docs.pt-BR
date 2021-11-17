@@ -2,15 +2,15 @@
 title: 'accessReviewHistoryDefinition: generateDownloadUri'
 description: Gere um URI que pode ser usado para recuperar dados de histórico de revisão.
 author: isabelleatmsft
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: 2a8d8b2023b322bc67b9ef37f6e868104ef1037a
-ms.sourcegitcommit: b8b0e88b3ba9a434dc45f5ab640cb46f66fae299
+ms.openlocfilehash: 157478c971e9b2260e2cc76a75d19036e83bbba3
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/13/2021
-ms.locfileid: "52474208"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "60992119"
 ---
 # <a name="accessreviewhistorydefinition-generatedownloaduri"></a>accessReviewHistoryDefinition: generateDownloadUri
 
@@ -26,9 +26,9 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 |Tipo de permissão|Permissões (da com menos para a com mais privilégios)|
 |:---|:---|
-|Delegada (conta corporativa ou de estudante)|AccessReview.ReadWrite.All|
-|Delegada (conta pessoal da Microsoft)|Sem suporte.|
-|Application|AccessReview.ReadWrite.All|
+|Delegado (conta corporativa ou de estudante)|AccessReview.ReadWrite.All|
+|Delegado (conta pessoal da Microsoft)|Sem suporte.|
+|Aplicativo|AccessReview.ReadWrite.All|
 
 O usuário associado também deve ser o criador da definição de histórico de revisão associada, um membro da função de diretório administrador global ou um membro da função de diretório Leitor Global para gerar o link.
 
@@ -81,6 +81,10 @@ POST https://graph.microsoft.com/beta/identityGovernance/accessReviews/historyDe
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/accessreviewhistorydefinition-generatedownloaduri-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[Ir](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/accessreviewhistorydefinition-generatedownloaduri-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

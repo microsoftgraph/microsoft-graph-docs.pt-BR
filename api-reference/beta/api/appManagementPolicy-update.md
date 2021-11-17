@@ -1,16 +1,16 @@
 ---
 title: Atualizar appManagementPolicy
 description: Atualize uma política de gerenciamento de aplicativos.
-localization_priority: Normal
+ms.localizationpriority: medium
 author: madansr7
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: 9cb3ff260f7220646e83ebbcad54c80d673974b8
-ms.sourcegitcommit: 0116750a01323bc9bedd192d4a780edbe7ce0fdc
+ms.openlocfilehash: b19a09e4bd752c04938c20181c6a55924ae029fb
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58258887"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "60995640"
 ---
 # <a name="update-appmanagementpolicy"></a>Atualizar appManagementPolicy
 
@@ -26,8 +26,8 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 | Tipo de permissão                        | Permissões (da com menos para a com mais privilégios)                                                |
 | :------------------------------------- | :--------------------------------------------------------- |
-| Delegada (conta corporativa ou de estudante)     | Policy.ReadWrite.ApplicationConfiguration |
-| Delegada (conta pessoal da Microsoft) | Sem suporte.                                             |
+| Delegado (conta corporativa ou de estudante)     | Policy.ReadWrite.ApplicationConfiguration |
+| Delegado (conta pessoal da Microsoft) | Sem suporte.                                             |
 | Aplicativo                            | Policy.ReadWrite.ApplicationConfiguration |
 
 ## <a name="http-request"></a>Solicitação HTTP
@@ -53,7 +53,7 @@ Para alcançar o melhor desempenho, não inclua valores existentes que não fora
 
 | Propriedade                | Tipo                                                                        | Descrição                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            |
 |:------------------------|:----------------------------------------------------------------------------|:-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| displayName  | Cadeia de caracteres                                                      | O nome de exibição da política. Herdado de [policyBase](../resources/policybase.md).                                        |
+| displayName  | String                                                      | O nome de exibição da política. Herdado de [policyBase](../resources/policybase.md).                                        |
 | description  | Cadeia de caracteres                                                      | A descrição da política. Herdado de [policyBase](../resources/policybase.md).                                         |
 | isEnabled    | Booliano                                                     | Indica se a política está habilitada.                                      |
 | restrictions | [appManagementConfiguration](../resources/appManagementConfiguration.md) | Restrições que se aplicam a um objeto de entidade de serviço ou aplicativo. |
@@ -97,6 +97,10 @@ PATCH https://graph.microsoft.com/beta/policies/appManagementPolicies/{id}
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/update-appmanagementpolicy-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[Ir](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/update-appmanagementpolicy-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

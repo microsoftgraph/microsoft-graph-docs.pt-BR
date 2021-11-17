@@ -1,16 +1,16 @@
 ---
 title: Listar credentialUserRegistrationDetails
 description: Obter uma lista de objetos credentialUserRegistrationDetails para um determinado locatário.
-localization_priority: Normal
+ms.localizationpriority: medium
 author: besiler
 ms.prod: identity-and-access-reports
 doc_type: apiPageType
-ms.openlocfilehash: bf6e99722c44ff0054869056be09314d6befac59
-ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
+ms.openlocfilehash: d107de125d803564d711bbd2790a4ac60f9dda40
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/06/2021
-ms.locfileid: "50136665"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "61011098"
 ---
 # <a name="list-credentialuserregistrationdetails"></a>Listar credentialUserRegistrationDetails
 
@@ -44,13 +44,13 @@ Esta função dá suporte ao parâmetro opcional de consulta OData **$filter**. 
 
 | Propriedades | Descrição e exemplo |
 | --------- | ----------------------- |
-| userDisplayName | Filtrar por nome de usuário. Por exemplo: `/reports/credentialUserRegistrationDetails?$filter=userDisplayName eq 'Contoso'`. Operadores de filtro com suporte: `eq` e `startswith()` . Dá suporte a maiúsculas e minúsculas. |
-| userPrincipalName | Filtrar pelo nome principal do usuário. Por exemplo: `/reports/credentialUserRegistrationDetails?$filter=userPrincipalName eq 'Contoso'`. Operadores de filtro com suporte: `eq` e `startswith()` . Dá suporte a maiúsculas e minúsculas. |
+| userDisplayName | Filtrar por nome de usuário. Por exemplo: `/reports/credentialUserRegistrationDetails?$filter=userDisplayName eq 'Contoso'`. Operadores de filtro com suporte: `eq` e `startswith()` . Oferece suporte a maiúsculas e minúsculas. |
+| userPrincipalName | Filtrar pelo nome principal do usuário. Por exemplo: `/reports/credentialUserRegistrationDetails?$filter=userPrincipalName eq 'Contoso'`. Operadores de filtro com suporte: `eq` e `startswith()` . Oferece suporte a maiúsculas e minúsculas. |
 | authMethods | Filtrar pelos métodos de autenticação usados durante o registro. Por exemplo: `/reports/credentialUserRegistrationDetails?$filter=authMethods/any(t:t eq microsoft.graph.registrationAuthMethod'email')`. Operadores de filtro com suporte: `eq` . |
-| isRegistered | Filtro para usuários que se registraram para redefinição de senha de autoatendado (SSPR). Por exemplo: `/reports/credentialUserRegistrationDetails?$filter=isRegistered eq true`. Operadores de filtro com suporte: `eq` . |
-| isEnabled | Filtro para usuários que foram habilitados para SSPR. Por exemplo: `/reports/credentialUserRegistrationDetails?$filter=isEnabled eq true`. Operadores de filtter com suporte: `eq` . |
-| isCapable | Filtro para usuários que estão prontos para executar a redefinição de senha ou autenticação multifatória (MFA). Por exemplo: `/reports/credentialUserRegistrationDetails?$filter=isCapable eq true`. Operadores de filtro com suporte: `eq` |
-| isMfaRegistered | Filtro para usuários que estão registrados para MFA. Por exemplo: `/reports/credentialUserRegistrationDetails?$filter=isMfaRegistered eq true`. Operadores de filtro com suporte: `eq` . |
+| isRegistered | Filtrar para usuários que se registraram para redefinição de senha de autoatendados (SSPR). Por exemplo: `/reports/credentialUserRegistrationDetails?$filter=isRegistered eq true`. Operadores de filtro com suporte: `eq` . |
+| isEnabled | Filtrar para usuários que foram habilitados para SSPR. Por exemplo: `/reports/credentialUserRegistrationDetails?$filter=isEnabled eq true`. Operadores de filtter com suporte: `eq` . |
+| isCapable | Filtrar para usuários que estão prontos para executar a redefinição de senha ou a autenticação multifafatória (MFA). Por exemplo: `/reports/credentialUserRegistrationDetails?$filter=isCapable eq true`. Operadores de filtro com suporte: `eq` |
+| isMfaRegistered | Filtrar para usuários que estão registrados para MFA. Por exemplo: `/reports/credentialUserRegistrationDetails?$filter=isMfaRegistered eq true`. Operadores de filtro com suporte: `eq` . |
 
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
 
@@ -98,6 +98,10 @@ GET https://graph.microsoft.com/beta/reports/credentialUserRegistrationDetails
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/get-credentialuserregistrationdetails-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[Ir](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/get-credentialuserregistrationdetails-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

@@ -3,12 +3,12 @@ title: Escolha um provedor de autenticação Graph microsoft
 description: Saiba como escolher provedores de autenticação específicos de cenário para seu aplicativo.
 ms.localizationpriority: medium
 author: MichaelMainer
-ms.openlocfilehash: 85853f625c5c98f407e9621a7050015c48a91aa9
-ms.sourcegitcommit: c7ff992ef63e480d070421ba99b28ee129cb6acb
+ms.openlocfilehash: e5375225aa8d9ab01b82f99fee1930e952767718
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "60695027"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "61020029"
 ---
 <!-- markdownlint-disable MD001 MD024 MD025 -->
 
@@ -18,8 +18,7 @@ Os provedores de autenticação implementam o código necessário para adquirir 
 
 | Cenário                                                                                               | Flow/Grant         | Espectadores               | Provedor |
 |--------------------------------------------------------------------------------------------------------|--------------------|------------------------|-----|
-| [Aplicativo de Página Única](/azure/active-directory/develop/scenario-spa-acquire-token)                          | Código de Autorização |                        |     |
-|                                                                                                        | com PKCE          | Consumidor Delegado/Org | [Provedor de código de autorização](#authorization-code-provider) |
+| [Aplicativo de Página Única](/azure/active-directory/develop/scenario-spa-acquire-token)                          | Código de Autorização com PKCE | Consumidor Delegado/Org | [Provedor de código de autorização](#authorization-code-provider) |
 | [Aplicativo Web que chama APIs da Web](/azure/active-directory/develop/scenario-web-app-call-api-acquire-token) |                    |                        |     |
 |                                                                                                        | Código de Autorização | Consumidor Delegado/Org | [Provedor de código de autorização](#authorization-code-provider) |
 |                                                                                                        | Credenciais do cliente | Somente aplicativo               | [Provedor de credenciais do cliente](#client-credentials-provider) |
@@ -161,11 +160,43 @@ Não aplicável.
 
 # <a name="php"></a>[PHP](#tab/PHP)
 
-Ainda não está disponível. Dê suporte ou abra uma solicitação [de recurso Graph microsoft](https://techcommunity.microsoft.com/t5/microsoft-365-developer-platform/idb-p/Microsoft365DeveloperPlatform/label-name/Microsoft%20Graph) se isso for importante para você.
+Ainda não está disponível. Dê suporte ou abra uma solicitação [de recurso Graph microsoft](https://aka.ms/graphrequests) se isso for importante para você.
 
 # <a name="ruby"></a>[Ruby](#tab/Ruby)
 
-Ainda não está disponível. Vote ou abra uma solicitação de [recurso Graph microsoft](https://techcommunity.microsoft.com/t5/microsoft-365-developer-platform/idb-p/Microsoft365DeveloperPlatform/label-name/Microsoft%20Graph) se isso for importante para você.
+Ainda não está disponível. Vote ou abra uma solicitação de [recurso Graph microsoft](https://aka.ms/graphrequests) se isso for importante para você.
+
+# <a name="go"></a>[Ir](#tab/Go)
+
+[!INCLUDE [go-sdk-preview](../../includes/go-sdk-preview.md)]
+
+```go
+import (
+    "context"
+
+    azidentity "github.com/Azure/azure-sdk-for-go/sdk/azidentity"
+    a "github.com/microsoft/kiota/authentication/go/azure"
+    msgraphsdk "github.com/microsoftgraph/msgraph-sdk-go"
+)
+
+cred, err := azidentity.NewAuthorizationCodeCredential(
+    "TENANT_ID",
+    "CLIENT_ID",
+    "AUTH_CODE",
+    "REDIRECT_URL",
+    &azidentity.AuthorizationCodeCredentialOptions {
+        ClientSecret: "CLIENT_SECRET",
+    },
+)
+
+auth, err := a.NewAzureIdentityAuthenticationProviderWithScopes(cred, []string{"User.Read"})
+
+adapter, err := msgraphsdk.NewGraphRequestAdapter(auth)
+
+client := msgraphsdk.NewGraphServiceClient(adapter)
+
+result, err := client.Me().Get(nil)
+```
 
 ---
 
@@ -286,11 +317,40 @@ Não aplicável.
 
 # <a name="php"></a>[PHP](#tab/PHP)
 
-Ainda não está disponível. Dê suporte ou abra uma solicitação [de recurso Graph microsoft](https://techcommunity.microsoft.com/t5/microsoft-365-developer-platform/idb-p/Microsoft365DeveloperPlatform/label-name/Microsoft%20Graph) se isso for importante para você.
+Ainda não está disponível. Dê suporte ou abra uma solicitação [de recurso Graph microsoft](https://aka.ms/graphrequests) se isso for importante para você.
 
 # <a name="ruby"></a>[Ruby](#tab/Ruby)
 
-Ainda não está disponível. Dê suporte ou abra uma solicitação [de recurso Graph microsoft](https://techcommunity.microsoft.com/t5/microsoft-365-developer-platform/idb-p/Microsoft365DeveloperPlatform/label-name/Microsoft%20Graph) se isso for importante para você.
+Ainda não está disponível. Dê suporte ou abra uma solicitação [de recurso Graph microsoft](https://aka.ms/graphrequests) se isso for importante para você.
+
+# <a name="go"></a>[Ir](#tab/Go)
+
+[!INCLUDE [go-sdk-preview](../../includes/go-sdk-preview.md)]
+
+```go
+import (
+    "context"
+
+    azidentity "github.com/Azure/azure-sdk-for-go/sdk/azidentity"
+    a "github.com/microsoft/kiota/authentication/go/azure"
+    msgraphsdk "github.com/microsoftgraph/msgraph-sdk-go"
+)
+
+cred, err := azidentity.NewClientSecretCredential(
+    "TENANT_ID",
+    "CLIENT_ID",
+    "CLIENT_SECRET",
+    nil,
+)
+
+auth, err := a.NewAzureIdentityAuthenticationProviderWithScopes(cred, []string{"User.Read"})
+
+adapter, err := msgraphsdk.NewGraphRequestAdapter(auth)
+
+client := msgraphsdk.NewGraphServiceClient(adapter)
+
+result, err := client.Me().Get(nil)
+```
 
 ---
 
@@ -379,11 +439,17 @@ Não aplicável.
 
 # <a name="php"></a>[PHP](#tab/PHP)
 
-Ainda não está disponível. Vote ou abra uma solicitação de [recurso Graph microsoft](https://techcommunity.microsoft.com/t5/microsoft-365-developer-platform/idb-p/Microsoft365DeveloperPlatform/label-name/Microsoft%20Graph) se isso for importante para você.
+Ainda não está disponível. Vote ou abra uma solicitação de [recurso Graph microsoft](https://aka.ms/graphrequests) se isso for importante para você.
 
 # <a name="ruby"></a>[Ruby](#tab/Ruby)
 
-Ainda não está disponível. Vote ou abra uma solicitação de [recurso Graph microsoft](https://techcommunity.microsoft.com/t5/microsoft-365-developer-platform/idb-p/Microsoft365DeveloperPlatform/label-name/Microsoft%20Graph) se isso for importante para você.
+Ainda não está disponível. Vote ou abra uma solicitação de [recurso Graph microsoft](https://aka.ms/graphrequests) se isso for importante para você.
+
+# <a name="go"></a>[Ir](#tab/Go)
+
+[!INCLUDE [go-sdk-preview](../../includes/go-sdk-preview.md)]
+
+Ainda não está disponível. Vote ou abra uma solicitação de [recurso Graph microsoft](https://aka.ms/graphrequests) se isso for importante para você.
 
 ---
 
@@ -484,11 +550,41 @@ Não aplicável.
 
 # <a name="php"></a>[PHP](#tab/PHP)
 
-Ainda não está disponível. Vote ou abra uma solicitação de [recurso Graph microsoft](https://techcommunity.microsoft.com/t5/microsoft-365-developer-platform/idb-p/Microsoft365DeveloperPlatform/label-name/Microsoft%20Graph) se isso for importante para você.
+Ainda não está disponível. Vote ou abra uma solicitação de [recurso Graph microsoft](https://aka.ms/graphrequests) se isso for importante para você.
 
 # <a name="ruby"></a>[Ruby](#tab/Ruby)
 
-Ainda não está disponível. Vote ou abra uma solicitação de [recurso Graph microsoft](https://techcommunity.microsoft.com/t5/microsoft-365-developer-platform/idb-p/Microsoft365DeveloperPlatform/label-name/Microsoft%20Graph) se isso for importante para você.
+Ainda não está disponível. Vote ou abra uma solicitação de [recurso Graph microsoft](https://aka.ms/graphrequests) se isso for importante para você.
+
+# <a name="go"></a>[Ir](#tab/Go)
+
+[!INCLUDE [go-sdk-preview](../../includes/go-sdk-preview.md)]
+
+```go
+import (
+    "context"
+
+    azidentity "github.com/Azure/azure-sdk-for-go/sdk/azidentity"
+    a "github.com/microsoft/kiota/authentication/go/azure"
+    msgraphsdk "github.com/microsoftgraph/msgraph-sdk-go"
+)
+
+cred, err := azidentity.NewDeviceCodeCredential(&azidentity.DeviceCodeCredentialOptions{
+    ClientID: "CLIENT_ID",
+    UserPrompt: func(ctx context.Context, message azidentity.DeviceCodeMessage) error {
+        fmt.Println(message.Message)
+        return nil
+    },
+})
+
+auth, err := a.NewAzureIdentityAuthenticationProviderWithScopes(cred, []string{"User.Read"})
+
+adapter, err := msgraphsdk.NewGraphRequestAdapter(auth)
+
+client := msgraphsdk.NewGraphServiceClient(adapter)
+
+result, err := client.Me().Get(nil)
+```
 
 ---
 
@@ -554,6 +650,10 @@ Não aplicável.
 
 Não aplicável.
 
+# <a name="go"></a>[Ir](#tab/Go)
+
+Não aplicável.
+
 ---
 
 ## <a name="interactive-provider"></a>Provedor interativo
@@ -591,7 +691,7 @@ var graphClient = new GraphServiceClient(interactiveCredential, scopes);
 
 # <a name="javascript"></a>[Javascript](#tab/Javascript)
 
-Ainda não está disponível. Vote ou abra uma solicitação de [recurso Graph microsoft](https://techcommunity.microsoft.com/t5/microsoft-365-developer-platform/idb-p/Microsoft365DeveloperPlatform/label-name/Microsoft%20Graph) se isso for importante para você.
+Ainda não está disponível. Vote ou abra uma solicitação de [recurso Graph microsoft](https://aka.ms/graphrequests) se isso for importante para você.
 
 # <a name="java"></a>[Java](#tab/Java)
 
@@ -631,7 +731,7 @@ final User me = graphClient.me().buildRequest().get();
 
 # <a name="objective-c"></a>[Objective-C](#tab/Objective-C)
 
-```objc
+```objectivec
 NSError *error = nil;
 MSALPublicClientApplication *publicClientApplication = [[MSALPublicClientApplication alloc] initWithClientId:@"INSERT-CLIENT-APP-ID"
 error:&error];
@@ -649,6 +749,34 @@ Não aplicável.
 # <a name="ruby"></a>[Ruby](#tab/Ruby)
 
 Não aplicável.
+
+# <a name="go"></a>[Ir](#tab/Go)
+
+[!INCLUDE [go-sdk-preview](../../includes/go-sdk-preview.md)]
+
+```go
+import (
+    "context"
+
+    azidentity "github.com/Azure/azure-sdk-for-go/sdk/azidentity"
+    a "github.com/microsoft/kiota/authentication/go/azure"
+    msgraphsdk "github.com/microsoftgraph/msgraph-sdk-go"
+)
+
+cred, err := azidentity.NewInteractiveBrowserCredential(&azidentity.InteractiveBrowserCredentialOptions {
+    TenantID: "TENANT_ID",
+    ClientID: "CLIENT_ID",
+    RedirectURL: "REDIRECT_URL",
+})
+
+auth, err := a.NewAzureIdentityAuthenticationProviderWithScopes(cred, []string{"User.Read"})
+
+adapter, err := msgraphsdk.NewGraphRequestAdapter(auth)
+
+client := msgraphsdk.NewGraphServiceClient(adapter)
+
+result, err := client.Me().Get(nil)
+```
 
 ---
 
@@ -686,7 +814,7 @@ var graphClient = new GraphServiceClient(userNamePasswordCredential, scopes);
 
 # <a name="javascript"></a>[Javascript](#tab/Javascript)
 
-Ainda não está disponível. Vote ou abra uma solicitação de [recurso Graph microsoft](https://techcommunity.microsoft.com/t5/microsoft-365-developer-platform/idb-p/Microsoft365DeveloperPlatform/label-name/Microsoft%20Graph) se isso for importante para você.
+Ainda não está disponível. Vote ou abra uma solicitação de [recurso Graph microsoft](https://aka.ms/graphrequests) se isso for importante para você.
 
 # <a name="java"></a>[Java](#tab/Java)
 
@@ -718,16 +846,46 @@ Não aplicável.
 
 # <a name="php"></a>[PHP](#tab/PHP)
 
-Ainda não está disponível. Vote ou abra uma solicitação de [recurso Graph microsoft](https://techcommunity.microsoft.com/t5/microsoft-365-developer-platform/idb-p/Microsoft365DeveloperPlatform/label-name/Microsoft%20Graph) se isso for importante para você.
+Ainda não está disponível. Vote ou abra uma solicitação de [recurso Graph microsoft](https://aka.ms/graphrequests) se isso for importante para você.
 
 # <a name="ruby"></a>[Ruby](#tab/Ruby)
 
-Ainda não está disponível. Vote ou abra uma solicitação de [recurso Graph microsoft](https://techcommunity.microsoft.com/t5/microsoft-365-developer-platform/idb-p/Microsoft365DeveloperPlatform/label-name/Microsoft%20Graph) se isso for importante para você.
+Ainda não está disponível. Vote ou abra uma solicitação de [recurso Graph microsoft](https://aka.ms/graphrequests) se isso for importante para você.
+
+# <a name="go"></a>[Ir](#tab/Go)
+
+[!INCLUDE [go-sdk-preview](../../includes/go-sdk-preview.md)]
+
+```go
+import (
+    "context"
+
+    azidentity "github.com/Azure/azure-sdk-for-go/sdk/azidentity"
+    a "github.com/microsoft/kiota/authentication/go/azure"
+    msgraphsdk "github.com/microsoftgraph/msgraph-sdk-go"
+)
+
+cred, err := azidentity.NewUsernamePasswordCredential(
+    "TENANT_ID",
+    "CLIENT_ID",
+    "USER_NAME",
+    "PASSWORD",
+    nil,
+)
+
+auth, err := a.NewAzureIdentityAuthenticationProviderWithScopes(cred, []string{"User.Read"})
+
+adapter, err := msgraphsdk.NewGraphRequestAdapter(auth)
+
+client := msgraphsdk.NewGraphServiceClient(adapter)
+
+result, err := client.Me().Get(nil)
+```
 
 ---
 
 ## <a name="next-steps"></a>Próximas etapas
 
-* Para obter exemplos de código que mostram como usar o plataforma de identidade da Microsoft para proteger diferentes tipos de aplicativos, consulte plataforma de identidade da Microsoft exemplos de código (ponto de extremidade [v2.0)](/azure/active-directory/develop/sample-v2-code).
-* Os provedores de autenticação exigem uma ID do cliente. Você vai querer registrar [seu aplicativo depois](https://portal.azure.com/) de configurar seu provedor de autenticação.
-* Deixe-nos saber se um fluxo OAuth necessário não tem suporte no momento votando ou abrindo uma solicitação de recurso do [Microsoft Graph](https://techcommunity.microsoft.com/t5/microsoft-365-developer-platform/idb-p/Microsoft365DeveloperPlatform/label-name/Microsoft%20Graph).
+- Para obter exemplos de código que mostram como usar o plataforma de identidade da Microsoft para proteger diferentes tipos de aplicativos, consulte plataforma de identidade da Microsoft exemplos de código (ponto de extremidade [v2.0)](/azure/active-directory/develop/sample-v2-code).
+- Os provedores de autenticação exigem uma ID do cliente. Você vai querer registrar [seu aplicativo depois](https://portal.azure.com/) de configurar seu provedor de autenticação.
+- Deixe-nos saber se um fluxo OAuth necessário não tem suporte no momento votando ou abrindo uma solicitação de recurso do [Microsoft Graph](https://aka.ms/graphrequests).

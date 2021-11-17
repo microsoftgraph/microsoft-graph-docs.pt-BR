@@ -2,15 +2,15 @@
 title: Atualizar adminConsentRequestPolicy
 description: Atualize as propriedades de um objeto adminConsentRequestPolicy.
 author: psignoret
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: 5efe85f8d78e11ea5c97799c426bba383300c24a
-ms.sourcegitcommit: 8ca598ac70647bf4f897361ee90d3aa31d2ecca5
+ms.openlocfilehash: 12fd69f5fc605aca11c6458eb6d92ca26bbc8907
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "51468916"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "60987611"
 ---
 # <a name="update-adminconsentrequestpolicy"></a>Atualizar adminConsentRequestPolicy
 Namespace: microsoft.graph
@@ -54,7 +54,7 @@ A tabela a seguir mostra as propriedades que são necessárias ao atualizar [o a
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
 |isEnabled|Booliano|Especifica se o recurso de solicitação de consentimento do administrador está habilitado ou desabilitado.|
-|notifyReviewers|Booliano|Especifica se os revisadores receberão notificações.|
+|notifyReviewers|Boolean|Especifica se os revisadores receberão notificações.|
 |remindersEnabled|Booliano|Especifica se os revisadores receberão emails de lembrete.|
 |requestDurationInDays|Int32|Especifica a duração em que a solicitação está ativa antes de expirar automaticamente se nenhuma decisão for aplicada.|
 |revisadores|[Coleção accessReviewReviewerScope](../resources/accessreviewreviewerscope.md)|A lista de revisadores para o consentimento do administrador.|
@@ -110,6 +110,10 @@ Content-Type: application/json
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/update-adminconsentrequestpolicy-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[Ir](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/update-adminconsentrequestpolicy-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

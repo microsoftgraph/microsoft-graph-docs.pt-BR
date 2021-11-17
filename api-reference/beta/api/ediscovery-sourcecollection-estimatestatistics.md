@@ -2,15 +2,15 @@
 title: 'sourceCollection: estimateStatistics'
 description: Executa uma estimativa da coleção de origem.
 author: mahage-msft
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: ediscovery
 doc_type: apiPageType
-ms.openlocfilehash: 2ae6b7363bdb1be34e38dd7f5502962fc920808d
-ms.sourcegitcommit: 40947e6f4337c8c4193d85bb862e15f67263e1e7
+ms.openlocfilehash: b6c72951e745c0b36c486155c9caf319f34abe62
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/13/2021
-ms.locfileid: "50772706"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "61003208"
 ---
 # <a name="sourcecollection-estimatestatistics"></a>sourceCollection: estimateStatistics
 
@@ -18,7 +18,7 @@ Namespace: microsoft.graph.ediscovery
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Execute uma estimativa do número de emails e documentos na coleção de origem. Para saber mais sobre coleções de origem (também conhecidas como pesquisas na Descoberta eDiscovery), consulte Coletar dados para uma ocorrência em [Descoberta Avançada em Descoberta Externa](https://docs.microsoft.com/microsoft-365/compliance/collecting-data-for-ediscovery).
+Execute uma estimativa do número de emails e documentos na coleção de origem. Para saber mais sobre coleções de origem (também conhecidas como pesquisas na Descoberta eDiscovery), consulte Coletar dados para um caso [em Advanced eDiscovery](https://docs.microsoft.com/microsoft-365/compliance/collecting-data-for-ediscovery).
 
 ## <a name="permissions"></a>Permissões
 
@@ -84,6 +84,10 @@ POST https://graph.microsoft.com/beta/compliance/ediscovery/cases/{caseId}/sourc
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/sourcecollection-estimatestatistics-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[Ir](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/sourcecollection-estimatestatistics-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

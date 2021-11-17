@@ -1,16 +1,16 @@
 ---
 title: Lista identityProviders
 description: Obter uma coleção de recursos do provedor de identidade configurados para um locatário e que são derivados de identityProviderBase.
-localization_priority: Normal
+ms.localizationpriority: medium
 doc_type: apiPageType
 author: namkedia
 ms.prod: identity-and-sign-in
-ms.openlocfilehash: 78146fd0f76d6e5c3e3e32e8c23cb622ebfb6d37
-ms.sourcegitcommit: f99dc2b6c8b4cb6f9f74cd780dccc47a2bccfaa6
+ms.openlocfilehash: cf18107e8d0a6ccce8aa1add71824445aac3a818
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/27/2021
-ms.locfileid: "58667823"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "60986050"
 ---
 # <a name="list-identityproviders"></a>Lista identityProviders
 Namespace: microsoft.graph
@@ -35,7 +35,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 A conta de trabalho ou de estudante precisa pertencer a uma das seguintes funções:
 
-* Administrador global
+* Administrador Global
 * Administrador do Provedor de Identidade Externa
 * Administrador de fluxo de usuário de ID externa
 
@@ -94,6 +94,10 @@ GET https://graph.microsoft.com/beta/identity/identityProviders
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/get-identityproviderbase-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[Ir](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/get-identityproviderbase-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

@@ -6,12 +6,12 @@ ms.localizationpriority: medium
 description: Acesse um DriveItem compartilhado ou uma coleção de itens compartilhados usando um shareId ou uma URL de compartilhamento.
 ms.prod: ''
 doc_type: apiPageType
-ms.openlocfilehash: bdb3cad31818423117c13f20f89067471fc16c1f
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: a4363187b404ccf27a4ac9c14371028c4d696c35
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59085109"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "61012891"
 ---
 # <a name="accessing-shared-driveitems"></a>Acessar DriveItems compartilhados
 
@@ -63,13 +63,13 @@ string encodedUrl = "u!" + base64Value.TrimEnd('=').Replace('/','_').Replace('+'
 
 ## <a name="optional-request-headers"></a>Cabeçalhos de solicitação opcionais
 
-| Name       | Tipo   | Descrição                                                    |
+| Nome       | Tipo   | Descrição                                                    |
 |:-----------|:-------|:---------------------------------------------------------------|
 | **Prefer** | cadeia de caracteres | Opcional. De acordo com um dos `prefer` valores documentados abaixo.  |
 
 ### <a name="prefer-header-values"></a>Preferir valores de header
 
-| Name                          | Descrição                                                                                             |
+| Nome                          | Descrição                                                                                             |
 |:------------------------------|:--------------------------------------------------------------------------------------------------------|
 | redeemSharingLink             | Se **o shareIdOrEncodedSharingUrl** for um link de compartilhamento, conceda ao chamador acesso durável ao item    |
 | redeemSharingLinkIfNecessary  | O mesmo que redeemSharingLink, mas o acesso só é garantido durante a duração dessa solicitação |
@@ -107,6 +107,10 @@ GET /shares/{shareIdOrEncodedSharingUrl}
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/get-shared-root-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[Ir](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/get-shared-root-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -167,6 +171,10 @@ GET /shares/{shareIdOrUrl}/driveItem
 [!INCLUDE [sample-code](../includes/snippets/java/get-shared-driveitem-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# <a name="go"></a>[Ir](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/get-shared-driveitem-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 
@@ -214,6 +222,10 @@ GET /shares/{shareIdOrUrl}/driveItem?$expand=children
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/get-shared-driveitem-expand-children-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[Ir](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/get-shared-driveitem-expand-children-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

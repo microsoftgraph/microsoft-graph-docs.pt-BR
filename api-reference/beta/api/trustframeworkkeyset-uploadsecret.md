@@ -1,16 +1,16 @@
 ---
 title: 'trustFrameworkKeySet: uploadSecret'
 description: Upload um segredo para um teclado.
-localization_priority: Normal
+ms.localizationpriority: medium
 author: Nickgmicrosoft
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: 104e11956a388ccc7ae65cf4a70e609f3eb9b08f
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: e325003e6673a06ff8b4bad1484168dc27dc63c0
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52053409"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "61013659"
 ---
 # <a name="trustframeworkkeyset-uploadsecret"></a>trustFrameworkKeySet: uploadSecret
 
@@ -28,7 +28,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |:---------------------------------------|:--------------------------------------------|
 | Delegado (conta corporativa ou de estudante)     | TrustFrameworkKeySet.ReadWrite.All |
 | Delegado (conta pessoal da Microsoft) | Sem suporte. |
-| Application                            | TrustFrameworkKeySet.ReadWrite.All |
+| Aplicativo                            | TrustFrameworkKeySet.ReadWrite.All |
 
 ## <a name="http-request"></a>Solicitação HTTP
 
@@ -51,8 +51,8 @@ Forneça um objeto JSON com os seguintes parâmetros no corpo da solicitação.
 
 | Parâmetro    | Tipo        | Descrição |
 |:-------------|:------------|:------------|
-|use|String|Semelhante à propriedade **use** de **trustFrameworkKey**.|
-|k|String|Semelhante à propriedade **k** de **trustFrameworkKey**. Este é o campo usado para enviar o segredo.|
+|use|Cadeia de caracteres|Semelhante à propriedade **use** de **trustFrameworkKey**.|
+|k|Cadeia de caracteres|Semelhante à propriedade **k** de **trustFrameworkKey**. Este é o campo usado para enviar o segredo.|
 |nbf|Int64|Semelhante à propriedade **nbf** de **trustFrameworkKey**.|
 |exp|Int64|Semelhante à propriedade **exp** de **trustFrameworkKey**.|
 
@@ -97,6 +97,10 @@ Content-type: application/json
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/trustframeworkkeyset-uploadsecret-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[Ir](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/trustframeworkkeyset-uploadsecret-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

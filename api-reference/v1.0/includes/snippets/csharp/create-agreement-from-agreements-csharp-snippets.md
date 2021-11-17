@@ -1,11 +1,11 @@
 ---
 description: Arquivo gerado automaticamente. NÃO MODIFICAR
-ms.openlocfilehash: e993a93e301d03a1a9670c6690af9f9661bb28898c6c2449658e2bc2bccccc66
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 41e8ea251511ed1bb8a33225ec65451c9e529793
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "57275398"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "60988696"
 ---
 ```csharp
 
@@ -24,7 +24,7 @@ var agreement = new Agreement
             IsDefault = true,
             FileData = new AgreementFileData
             {
-                Data = Encoding.ASCII.GetBytes("SGVsbG8gd29ybGQ=")
+                Data = Convert.FromBase64String("SGVsbG8gd29ybGQ=")
             }
         }
     }

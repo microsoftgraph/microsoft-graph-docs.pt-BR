@@ -2,15 +2,15 @@
 title: 'serviceUpdateMessage: markUnread'
 description: Marque uma lista de mensagens de atualização de serviço como não lidas para o usuário insinuável.
 author: payiAzure
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: service-communications
 doc_type: apiPageType
-ms.openlocfilehash: 4f9fd2bcb2da7c4f26b45a472fc4af52fa75b15d
-ms.sourcegitcommit: 7f674112f5b95446fac86d829509f889c60f1693
+ms.openlocfilehash: f9ea57a409949c7f32dbdb189586f76c449bba37
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/30/2021
-ms.locfileid: "53210784"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "61002466"
 ---
 # <a name="serviceupdatemessage-markunread"></a>serviceUpdateMessage: markUnread
 Namespace: microsoft.graph
@@ -89,6 +89,10 @@ Content-Type: application/json
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/serviceupdatemessage-markunread-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[Ir](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/serviceupdatemessage-markunread-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

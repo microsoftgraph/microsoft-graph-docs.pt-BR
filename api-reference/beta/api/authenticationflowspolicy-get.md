@@ -5,12 +5,12 @@ author: linkhp
 ms.localizationpriority: high
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: 2f85251aa45096b8f33bcecc49b3a403a9b709b0
-ms.sourcegitcommit: c333953a9188b4cd4a9ab94cbe68871e8f3563e5
+ms.openlocfilehash: 4127a5e85a2916feb43aaded1bdd52279ba2bfe2
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/30/2021
-ms.locfileid: "58694990"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "60995094"
 ---
 # <a name="get-authenticationflowspolicy"></a>Obter authenticationFlowsPolicy
 
@@ -78,6 +78,10 @@ GET https://graph.microsoft.com/beta/policies/authenticationFlowsPolicy
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/get-authenticationflowspolicy-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[Ir](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/get-authenticationflowspolicy-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

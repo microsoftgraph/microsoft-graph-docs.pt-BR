@@ -1,16 +1,16 @@
 ---
 title: Atualizar personName
 description: Atualize as propriedades de um objeto personName.
-localization_priority: Normal
+ms.localizationpriority: medium
 author: kevinbellinger
 ms.prod: people
 doc_type: apiPageType
-ms.openlocfilehash: 0959c7eec1b1e52ff3a9295ad7e5af07b416a3bd
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: 002d8827e2c8523e1ac8183578302aa9de807859
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52051099"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "60993932"
 ---
 # <a name="update-personname"></a>Atualizar nome de pessoa
 
@@ -54,19 +54,19 @@ A tabela a seguir mostra as propriedades que são possíveis de atualizar dentro
 
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|allowedAudiences|String|As audiências que são capazes de ver os valores contidos na entidade. Herdado [do itemFacet](../resources/itemfacet.md). Os valores possíveis são: `me`, `family`, `contacts`, `groupMembers`, `organization`, `federatedOrganizations`, `everyone`, `unknownFutureValue`.|
-|displayName|String|Fornece uma renderização ordenada de firstName e lastName, dependendo da localidade do usuário ou de seu dispositivo.|
-|first|String|Nome do usuário.|
+|allowedAudiences|Cadeia de caracteres|As audiências que são capazes de ver os valores contidos na entidade. Herdado [do itemFacet](../resources/itemfacet.md). Os valores possíveis são: `me`, `family`, `contacts`, `groupMembers`, `organization`, `federatedOrganizations`, `everyone`, `unknownFutureValue`.|
+|displayName|Cadeia de caracteres|Fornece uma renderização ordenada de firstName e lastName, dependendo da localidade do usuário ou de seu dispositivo.|
+|first|Cadeia de caracteres|Nome do usuário.|
 |inferência|[inferenceData](../resources/inferencedata.md)|Contém detalhes de inferência se a entidade for inferida pelo aplicativo de criação ou modificação. Herdado [do itemFacet](../resources/itemfacet.md).|
 |initials|String|Iniciais do usuário.|
-|languageTag|String|Contém o nome do idioma (en-US, no-NB, en-AU) após o formato IETF BCP47.   |
+|languageTag|Cadeia de caracteres|Contém o nome do idioma (en-US, no-NB, en-AU) após o formato IETF BCP47.   |
 |last|String|Sobrenome do usuário.|
-|maiden|String|Nome de solteira do usuário. |
+|maiden|Cadeia de caracteres|Nome de solteira do usuário. |
 |middle|String|Nome do meio do usuário.|
-|nickname|String|Apelido do usuário.|
+|nickname|Cadeia de caracteres|Apelido do usuário.|
 |pronúncia|[yomiPersonName](../resources/yomipersonname.md)|Diretrizes sobre como pronunciar o nome dos usuários.|
-|sufixo|String|Designadores usados após o nome dos usuários (por exemplo: PhD.)  |
-|title|String|Honorifics usado para prefixar um nome de usuário (por exemplo: Dr, Sir, Mrs.)|
+|sufixo|Cadeia de caracteres|Designadores usados após o nome dos usuários (por exemplo: PhD.)  |
+|title|Cadeia de caracteres|Honorifics usado para prefixar um nome de usuário (por exemplo: Dr, Sir, Mrs.)|
 
 ## <a name="response"></a>Resposta
 
@@ -107,6 +107,10 @@ Content-type: application/json
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/update-personname-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[Ir](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/update-personname-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

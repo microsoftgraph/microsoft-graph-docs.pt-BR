@@ -1,16 +1,16 @@
 ---
 title: Listar secureScoreControlProfiles
-description: Recupere as propriedades e os relacionamentos de um objeto secureScoreControlProfiles.
-localization_priority: Normal
+description: Recupere as propriedades e as relações de um objeto secureScoreControlProfiles.
+ms.localizationpriority: medium
 doc_type: apiPageType
 ms.prod: ''
 author: preetikr
-ms.openlocfilehash: 988a51f458fdbd3a23efa9f98ec467bdf4a521f8
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 36227e3def490f9b2c9eb9231c668ab7c4e9ee16
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48982047"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "61020533"
 ---
 # <a name="list-securescorecontrolprofiles"></a>Listar secureScoreControlProfiles
 
@@ -18,7 +18,7 @@ Namespace: microsoft.graph
 
  [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Recupera uma lista de objetos [secureScoreControlProfile](../resources/securescorecontrolprofiles.md) para um locatário.
+Recupera uma lista de [objetos secureScoreControlProfile](../resources/securescorecontrolprofiles.md) para um locatário.
 
 ## <a name="permissions"></a>Permissões
 
@@ -42,7 +42,7 @@ GET /security/secureScoreControlProfiles
 
 | Nome      |Descrição|
 |:----------|:----------|
-| Autorização  | Portador {código}. Obrigatório.|
+| Autorização  | {code} do portador. Obrigatório.|
 
 ## <a name="request-body"></a>Corpo da solicitação
 
@@ -50,7 +50,7 @@ Não forneça um corpo de solicitação para esse método.
 
 ## <a name="response"></a>Resposta
 
-Se tiver êxito, este método retornará um `200 OK` código de resposta e uma coleção de objetos **secureScoreControlProfile** no corpo da resposta.
+Se tiver êxito, este método retornará um código de resposta e uma `200 OK` coleção **de objetos secureScoreControlProfile** no corpo da resposta.
 
 ## <a name="example"></a>Exemplo
 
@@ -81,6 +81,10 @@ GET https://graph.microsoft.com/beta/security/secureScoreControlProfiles
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/securescorecontrolprofiles-list-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[Ir](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/securescorecontrolprofiles-list-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
