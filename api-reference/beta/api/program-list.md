@@ -1,16 +1,16 @@
 ---
 title: Listar programas
 description: No recurso de revisões de acesso do Azure AD, liste todos os objetos do programa.
-localization_priority: Normal
+ms.localizationpriority: medium
 doc_type: apiPageType
 ms.prod: governance
 author: markwahl-msft
-ms.openlocfilehash: 4995cd66af99031051e67a2853f4a2453430f684
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: 4b7fe48d1f0e95dfec53a77477e311eed5407037
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52049832"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "61027876"
 ---
 # <a name="list-programs"></a>Listar programas
 
@@ -26,7 +26,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |:--------------------------------------|:---------------------------------------------------------|
 |Delegado (conta corporativa ou de estudante)     | ProgramControl.Read.All, ProgramControl.ReadWrite.All  |
 |Delegado (conta pessoal da Microsoft) | Sem suporte. |
-|Application                            | ProgramControl.Read.All, ProgramControl.ReadWrite.All  |
+|Aplicativo                            | ProgramControl.Read.All, ProgramControl.ReadWrite.All  |
 
  O usuário inscreveu também deve estar em uma função de diretório que permita que ele leia um programa.
 
@@ -72,6 +72,10 @@ GET https://graph.microsoft.com/beta/programs
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/get-program-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[Ir](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/get-program-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

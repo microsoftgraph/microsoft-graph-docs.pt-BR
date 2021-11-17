@@ -1,16 +1,16 @@
 ---
 title: 'informationProtectionLabel: evaluateClassificationResults'
 description: Avalie qual rótulo aplicar com base nas informações de conteúdo existentes e em um resultado de classificação.
-localization_priority: Normal
+ms.localizationpriority: medium
 author: tommoser
 ms.prod: security
 doc_type: apiPageType
-ms.openlocfilehash: 2477924e69cf83bc15f440956de76bc3cdd4347b
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: 26c65411ba7ce83fdae9d6d5ac46038deea84ac3
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52040403"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "61004784"
 ---
 # <a name="informationprotectionlabel-evaluateclassificationresults"></a>informationProtectionLabel: evaluateClassificationResults
 
@@ -46,7 +46,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 | :------------------------------------- | :------------------------------------------ |
 | Delegado (conta corporativa ou de estudante)     | InformationProtectionPolicy. Read            |
 | Delegado (conta pessoal da Microsoft) | Sem suporte.                              |
-| Application                            | InformationProtectionPolicy.Read.All        |
+| Aplicativo                            | InformationProtectionPolicy.Read.All        |
 
 ## <a name="http-request"></a>Solicitação HTTP
 
@@ -71,7 +71,7 @@ Forneça um objeto JSON com os seguintes parâmetros no corpo da solicitação.
 | Parâmetro             | Tipo                                                                    | Descrição                                                                                                                                                                                                                                                                           |
 | :-------------------- | :---------------------------------------------------------------------- | :------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
 | contentInfo           | [contentInfo](../resources/contentInfo.md)                              | Fornece detalhes sobre o formato de conteúdo, o estado do conteúdo e os [metadados](../resources/keyvaluepair.md) existentes como pares de chave/valor.                                                                                                                                                   |
-| classificationResults | [coleção classificationResult](../resources/classificationresult.md) | Contém o conjunto de resultados de classificação retornados pelo ponto de extremidade de classificação de dados. As informações de classificação são usadas para determinar o rótulo apropriado com base na configuração do rótulo da política de Proteção de Informações da Microsoft no Centro de Conformidade e Segurança Office 365 Segurança. |
+| classificationResults | [coleção classificationResult](../resources/classificationresult.md) | Contém o conjunto de resultados de classificação retornados pelo ponto de extremidade de classificação de dados. As informações de classificação são usadas para determinar o rótulo apropriado com base na configuração Proteção de Informações da Microsoft rótulo de política no Office 365 Centro de Conformidade e Segurança. |
 
 ## <a name="response"></a>Resposta
 
@@ -128,6 +128,10 @@ User-agent: ContosoLOBApp/1.0
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/informationprotectionlabel-evaluateclassificationresults-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[Ir](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/informationprotectionlabel-evaluateclassificationresults-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
