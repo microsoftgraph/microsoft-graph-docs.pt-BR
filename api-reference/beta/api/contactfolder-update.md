@@ -5,12 +5,12 @@ author: kevinbellinger
 ms.localizationpriority: medium
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 7f872d80aa31d4b93bb67ff778c73ffb2b0d0dfb
-ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
+ms.openlocfilehash: 956743107da9fe454d659d42b828eac479c0a004
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/12/2021
-ms.locfileid: "60944855"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "61028823"
 ---
 # <a name="update-contactfolder"></a>Atualizar contactfolder
 
@@ -45,7 +45,7 @@ No corpo da solicitação, forneça os valores para os campos relevantes que dev
 
 | Propriedade     | Tipo   |Descrição|
 |:---------------|:--------|:----------|
-|displayName|Cadeia de caracteres|O nome de exibição da pasta.|
+|displayName|String|O nome de exibição da pasta.|
 |parentFolderId|Cadeia de caracteres|A ID da pasta pai da pasta.|
 |wellKnownName|string|O nome da pasta se a pasta for uma pasta reconhecida. Atualmente é `contacts` a única pasta de contatos reconhecida.|
 
@@ -84,6 +84,10 @@ Content-type: application/json
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/update-contactfolder-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[Ir](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/update-contactfolder-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

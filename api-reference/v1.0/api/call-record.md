@@ -5,12 +5,12 @@ author: ananmishr
 ms.localizationpriority: medium
 ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: c087d554bf7c7a9b44fa5c19a1821374e7d0f295
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 266c4541293ee0f6a38b2b15c1037fe4d1347412
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59016845"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "61029704"
 ---
 # <a name="call-recordresponse"></a>call: recordResponse
 
@@ -53,12 +53,12 @@ Forneça um objeto JSON com os seguintes parâmetros no corpo da solicitação.
 | Parâmetro      | Tipo    |Descrição|
 |:---------------|:--------|:----------|
 |prompts|[Coleção mediaPrompt](../resources/mediaprompt.md) | Os prompts a serem tocados. O tamanho máximo da coleção mediaPrompt suportado é 1.|
-|bargeInAllowed|Boolean| Se for true, a solicitação recordResponse invadirá outras solicitações existentes de registro/playprompt em fila/processamento atual. Padrão = false. |
+|bargeInAllowed|Booliano| Se for true, a solicitação recordResponse invadirá outras solicitações existentes de registro/playprompt em fila/processamento atual. Padrão = false. |
 |initialSilenceTimeoutInSeconds | Int32| Máximo de silêncio inicial (silêncio do usuário) permitido a partir do momento em que iniciamos a operação de resposta do registro antes do tempo limite e falhamos na operação. Se estamos tocando um prompt, esse temporizador será iniciado após a finalização do prompt. Padrão = 5 segundos, Min = 1 segundo, Máx = 120 segundos |
 |maxSilenceTimeoutInSeconds|Int32| Tempo máximo de silêncio (pausa) permitido após um usuário começar a falar. Padrão = 5 segundos, Min = 1 segundo, Máx = 120 segundos.|
 |maxRecordDurationInSeconds|Int32| Duração máxima da operação recordResponse antes de interromper a gravação. Padrão = 5 segundos, Min = 1 segundo, Máx = 120 segundos.|
-|playBeep|Boolean| Se for true, reproduz um sinal sonoro para indicar ao usuário que ele pode começar a gravar a mensagem. Padrão = true.|
-|stopTones|Coleção String|Pare os tons especificados para encerrar a gravação.|
+|playBeep|Booliano| Se for true, reproduz um sinal sonoro para indicar ao usuário que ele pode começar a gravar a mensagem. Padrão = true.|
+|stopTones|Coleção de cadeias de caracteres|Pare os tons especificados para encerrar a gravação.|
 |clientContext|Cadeia de caracteres|Cadeia de caracteres de contexto de cliente exclusiva. O limite máximo é 256 caracteres.|
 
 ## <a name="response"></a>Resposta
@@ -116,6 +116,10 @@ Content-Length: 394
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/call-recordresponse-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[Ir](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/call-recordresponse-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

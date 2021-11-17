@@ -1,16 +1,16 @@
 ---
 title: Obter openShiftChangeRequest
 description: Recupere as propriedades e as relações de um objeto openShiftChangeRequest.
-localization_priority: Normal
+ms.localizationpriority: medium
 author: akumar39
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 089fbd2096fff8bca2bb7cdff0d8502905dc5f3b
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: 8b5c2250d90a878a20084be4f8f5e9e1e0f885f8
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52052072"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "61021688"
 ---
 # <a name="get-openshiftchangerequest"></a>Obter openShiftChangeRequest
 
@@ -85,6 +85,10 @@ GET https://graph.microsoft.com/beta/teams/{id}/schedule/openShiftChangeRequests
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/get-openshiftchangerequest-1-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[Ir](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/get-openshiftchangerequest-1-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

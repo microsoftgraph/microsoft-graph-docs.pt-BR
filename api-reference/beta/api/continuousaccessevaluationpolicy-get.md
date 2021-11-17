@@ -5,12 +5,12 @@ author: jerrysai
 ms.localizationpriority: medium
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: 642dfc75a72dd7cda5414202842b5a79e32b8c5d
-ms.sourcegitcommit: 0eb843a6f61f384bc28c0cce1ccb74f64bdb1fa6
+ms.openlocfilehash: 98cef9d5a965311430c7123c318c2c1c46518838
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/23/2021
-ms.locfileid: "60558935"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "61028752"
 ---
 # <a name="get-continuousaccessevaluationpolicy"></a>Obter continuousAccessEvaluationPolicy
 Namespace: microsoft.graph
@@ -77,6 +77,10 @@ GET https://graph.microsoft.com/beta/identity/continuousAccessEvaluationPolicy
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/get-continuousaccessevaluationpolicy-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[Ir](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/get-continuousaccessevaluationpolicy-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
