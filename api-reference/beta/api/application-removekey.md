@@ -1,16 +1,16 @@
 ---
 title: 'application: removeKey'
 description: Remover uma credencial de chave de um aplicativo
-localization_priority: Normal
+ms.localizationpriority: medium
 author: sureshja
 ms.prod: applications
 doc_type: apiPageType
-ms.openlocfilehash: a02d731866ef831d3e2e2208a4a0ee9f535e1ed8
-ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
+ms.openlocfilehash: cdeb0c356d94af01cad84af2c3983d0466944c01
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/06/2021
-ms.locfileid: "50129048"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "60982893"
 ---
 # <a name="application-removekey"></a>application: removeKey
 
@@ -18,12 +18,12 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Remova uma credencial de chave de um [aplicativo.](../resources/application.md) Esse método, [juntamente com addKey,](application-addkey.md) pode ser usado por um aplicativo para automatizar a rolagem de suas chaves expiradas.
+Remover uma credencial de chave de um [aplicativo](../resources/application.md). Esse método juntamente com [addKey](application-addkey.md) pode ser usado por um aplicativo para automatizar a rolagem de suas chaves expiradas.
 
 > [!NOTE]
-> [Criar operações servicePrincipal](../api/serviceprincipal-post-serviceprincipals.md) e [Update servicePrincipal](../api/serviceprincipal-update.md) podem continuar a ser usadas para adicionar e atualizar credenciais de chave para qualquer aplicativo com aplicativo ou contexto de usuário.
+> [Crie servicePrincipal](../api/serviceprincipal-post-serviceprincipals.md) e [Update servicePrincipal](../api/serviceprincipal-update.md) operações podem continuar a ser usadas para adicionar e atualizar credenciais de chave para qualquer aplicativo com aplicativo ou contexto de usuário.
 
-Como parte da validação da solicitação para esse método, uma prova de posse de uma chave existente é verificada antes que a ação possa ser executada.
+Como parte da validação de solicitação para esse método, uma prova de posse de uma chave existente é verificada antes que a ação possa ser executada.
 
 ## <a name="permissions"></a>Permissões
 
@@ -58,7 +58,7 @@ No corpo da solicitação, forneça as seguintes propriedades necessárias.
 | Propriedade  | Tipo | Descrição|
 |:----------|:-----|:-----------|
 | keyId     | GUID | O identificador exclusivo da senha.|
-| proof | String | Um token JWT auto-assinado usado como prova de posse das chaves existentes. Esse token de JWT deve ser assinado usando a chave privada de um dos certificados válidos existentes do aplicativo. O token deve conter os seguintes argumentos:<ul><li>`aud` – A audiência deve ser `00000002-0000-0000-c000-000000000000`.</li><li>`iss` - O emissor deve ser o __ID__ do aplicativo que está fazendo a chamada.</li><li>`nbf` – Não antes da hora.</li><li>`exp` – O tempo de expiração deve ser "nbf" + 10 min.</li></ul><br>Aqui está um exemplo [de código](/graph/application-rollkey-prooftoken) que pode ser usado para gerar esse token de comprovação de posse.|
+| proof | Cadeia de caracteres | Um token JWT auto-assinado usado como prova de posse das chaves existentes. Esse token de JWT deve ser assinado usando a chave privada de um dos certificados válidos existentes do aplicativo. O token deve conter os seguintes argumentos:<ul><li>`aud` – A audiência deve ser `00000002-0000-0000-c000-000000000000`.</li><li>`iss` - O emissor deve ser o __ID__ do aplicativo que está fazendo a chamada.</li><li>`nbf` – Não antes da hora.</li><li>`exp` - O tempo de expiração `nbf` deve ser + 10 minutos.</li></ul><br>Para etapas para gerar essa prova de token de posse, consulte [Generating proof of possess tokens for rolling keys](/graph/application-rollkey-prooftoken).|
 
 ## <a name="response"></a>Resposta
 
@@ -102,6 +102,10 @@ Content-Type: application/json
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/application-removekey-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[Ir](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/application-removekey-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

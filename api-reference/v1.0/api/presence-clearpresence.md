@@ -5,12 +5,12 @@ author: jsandoval-msft
 ms.localizationpriority: medium
 doc_type: apiPageType
 ms.prod: cloud-communications
-ms.openlocfilehash: a132bc090bedbb117ea51a20ea85341fd345d481
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 300ad978a9332d030184ee83bcfa85e5a9d7d339
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59085256"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "60984013"
 ---
 # <a name="presence-clearpresence"></a>presença: clearPresence
 
@@ -55,7 +55,7 @@ Forneça um objeto JSON com os seguintes parâmetros no corpo da solicitação.
 > Forneça a ID do aplicativo como `sessionId` na solicitação.
 
 ## <a name="response"></a>Resposta
-Se bem-sucedido, este método retorna um código de resposta `200 OK`.
+Se tiver êxito, este método retornará um código de resposta `200 OK`.
 
 Se a sessão de presença não existir, este método retornará um `404 NotFound` código de resposta.
 
@@ -93,6 +93,10 @@ Content-Type: application/json
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/clear--presence-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[Ir](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/clear--presence-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

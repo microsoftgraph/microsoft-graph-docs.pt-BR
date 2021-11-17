@@ -5,12 +5,12 @@ description: Obter uma lista dos logins do usuário em um Azure Active Directory
 ms.localizationpriority: medium
 author: besiler
 ms.prod: identity-and-access-reports
-ms.openlocfilehash: ed5e9d304278040a957347e8e2550b53f2e562b5
-ms.sourcegitcommit: 08e9b0bac39c1b1d2c8a79539d24aaa93364baf2
+ms.openlocfilehash: b16a26ae4871da469e154cd4d80250d48486d522
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/24/2021
-ms.locfileid: "59507827"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "61002145"
 ---
 # <a name="list-signins"></a>Listar logons
 
@@ -39,7 +39,7 @@ Os aplicativos devem [estar registrados corretamente](/azure/active-directory/ac
 
 Além das permissões delegadas, o usuário inscreveu precisa pertencer a uma das seguintes funções de diretório que permitem ler relatórios de logons. Para saber mais sobre funções de diretório, consulte Funções do [Azure AD integrados](/azure/active-directory/roles/permissions-reference):
 + Administrador global
-+ Leitor Global
++ Leitor global
 + Leitor de Relatórios
 + Administrador de Segurança
 + Operador de Segurança
@@ -100,6 +100,10 @@ GET https://graph.microsoft.com/beta/auditLogs/signIns
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/get-signins-1-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[Ir](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/get-signins-1-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

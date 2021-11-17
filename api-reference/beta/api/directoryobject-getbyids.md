@@ -5,12 +5,12 @@ author: keylimesoda
 ms.localizationpriority: medium
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: 4ff5791cb14806f06ca6ae1c7895ce8009542eb3
-ms.sourcegitcommit: 11be55b40804b07f4c422f09f601afa97c7d31ed
+ms.openlocfilehash: 9d8d3dc9397f7403f4d49ebbf05730956901e192
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/09/2021
-ms.locfileid: "60256421"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "61005358"
 ---
 # <a name="directoryobject-getbyids"></a>directoryObject: getByIds
 
@@ -60,7 +60,7 @@ Forneça um objeto JSON com os seguintes parâmetros no corpo da solicitação.
 | Parâmetro   | Tipo |Descrição|
 |:---------------|:--------|:----------|
 |ids|Coleção de cadeias de caracteres| Uma coleção de IDs para a qual retornar objetos. As IDs são GUIDs, representadas como cadeias de caracteres. Você pode especificar até 1000 IDs. |
-|tipos|Coleção de cadeias de caracteres| Uma coleção de tipos de recursos que especifica o conjunto de coleções de recursos para pesquisar. Se não estiver especificado, o padrão será [directoryObject](../resources/directoryobject.md), que contém todos os tipos de recursos definidos no diretório. Qualquer objeto derivado de [directoryObject](../resources/directoryobject.md) pode ser especificado na coleção; por exemplo: [objetos user](../resources/user.md), [group](../resources/group.md)e [device.](../resources/device.md) <br/><br/>Para procurar referências para uma organização parceira do [Provedor de soluções de nuvem](https://partner.microsoft.com/cloud-solution-provider) especifique [directoryObjectPartnerReference](../resources/directoryobjectpartnerreference.md). Se não for especificado, o padrão é [directoryObject](../resources/directoryobject.md),  que contém todos os tipos de recursos definidos no diretório, exceto referências a uma organização parceira do [Provedor de soluções de nuvem](https://partner.microsoft.com/cloud-solution-provider). </br><br/> Os valores não diferenciam maiúsculas de minúsculas.|
+|tipos|Coleção de cadeias de caracteres| Uma coleção de tipos de recursos que especifica o conjunto de coleções de recursos para pesquisar. Se não estiver especificado, o padrão será [directoryObject](../resources/directoryobject.md), que contém todos os tipos de recursos definidos no diretório. Qualquer objeto que deriva de [directoryObject](../resources/directoryobject.md) pode ser especificado na coleção; por exemplo: objetos [usuário](../resources/user.md), [grupo](../resources/group.md) e [dispositivo](../resources/device.md). <br/><br/>Para pesquisar referências a uma organização parceira do [Provedor de Soluções na Nuvem da Microsoft](https://partner.microsoft.com/cloud-solution-provider), especifique [directoryObjectPartnerReference](../resources/directoryobjectpartnerreference.md). Se não for especificado, o padrão é [directoryObject](../resources/directoryobject.md), que contém todos os tipos de recursos definidos no diretório, exceto referências a uma organização parceira do [Provedor de Soluções na Nuvem da Microsoft](https://partner.microsoft.com/cloud-solution-provider). </br><br/> Os valores não diferenciam maiúsculas de minúsculas.|
 
 ## <a name="response"></a>Resposta
 
@@ -100,6 +100,10 @@ Content-type: application/json
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/directoryobject-getbyids-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[Ir](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/directoryobject-getbyids-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

@@ -2,15 +2,15 @@
 title: 'accessReviewInstance: filterByCurrentUser'
 description: Retorna todos os objetos accessReviewInstance para um determinado revisor.
 author: isabelleatmsft
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: 67d2ae1c3a2abafe16d519e9cb5a3f1035b6e23a
-ms.sourcegitcommit: 7f674112f5b95446fac86d829509f889c60f1693
+ms.openlocfilehash: 328ba1b44c6111f2b3d1c27dec003ff99e2a1770
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/30/2021
-ms.locfileid: "53207606"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "60987878"
 ---
 # <a name="accessreviewinstance-filterbycurrentuser"></a>accessReviewInstance: filterByCurrentUser
 Namespace: microsoft.graph
@@ -83,6 +83,10 @@ GET https://graph.microsoft.com/beta/identityGovernance/accessReviews/definition
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/accessreviewinstance-filterbycurrentuser-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[Ir](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/accessreviewinstance-filterbycurrentuser-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

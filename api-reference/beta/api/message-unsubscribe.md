@@ -2,15 +2,15 @@
 title: 'message: unsubscribe'
 description: Envia uma solicitação de e-mail em nome do usuário conectado para cancelar a assinatura de uma lista de distribuição de e-mail. Usa as informações do cabeçalho `List-Unsubscribe`.
 author: abheek-das
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 7bf800fe385c75c6d472f9cee40f55ec81633640
-ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
+ms.openlocfilehash: 59b9ebc2c2d21259fed7181165240a7cc5e82be3
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/06/2021
-ms.locfileid: "50131093"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "61004742"
 ---
 # <a name="message-unsubscribe"></a>message: unsubscribe
 
@@ -20,13 +20,13 @@ Namespace: microsoft.graph
 
 Envia uma solicitação de e-mail em nome do usuário conectado para cancelar a assinatura de uma lista de distribuição de e-mail. Usa as informações do cabeçalho `List-Unsubscribe`.
 
-Os destinatários de mensagens podem usar listas de email de maneira amigável, incluindo uma opção para os destinatários a rechaem. Eles podem fazer isso especificando o `List-Unsubscribe` header em cada mensagem após [RFC-2369](https://www.faqs.org/rfcs/rfc2369.html).
+Os destinatários de mensagens podem usar listas de email de maneira fácil de usar, incluindo uma opção para os destinatários não participarem. Eles podem fazer isso especificando o `List-Unsubscribe` header em cada mensagem após [RFC-2369](https://www.faqs.org/rfcs/rfc2369.html).
 
-**Observação** Em particular, para que **a ação de** cancelamento de assinatura funcione, o remetente deve especificar, e não com base em URL, informações de cancelamento de `mailto:` assinatura.
+**Observação** Em particular, para que a **ação de cancelamento** de assinatura funcione, o remetente deve especificar e não informações de cancelamento de inscrição baseadas em `mailto:` URL.
 
-Definir esse header também definiria a propriedade [](../resources/message.md) **unsubscribeEnabled** da instância da mensagem como e a propriedade `true` **unsubscribeData** para os dados do header.
+Definir esse header também definiria a propriedade [](../resources/message.md) **unsubscribeEnabled** da instância da mensagem como , e a propriedade `true` **unsubscribeData** para os dados do header.
 
-Se a **propriedade unsubscribeEnabled** de uma mensagem for , você pode usar a ação de cancelar a assinatura do usuário de mensagens futuras semelhantes, como gerenciadas pelo remetente `true` da mensagem. 
+Se a **propriedade unsubscribeEnabled** de uma mensagem for , você poderá usar a ação de cancelamento de assinatura para cancelar a assinatura do usuário de mensagens futuras semelhantes como gerenciadas pelo `true` remetente da mensagem. 
 
 Uma ação **de cancelamento de** assinatura bem-sucedida move a mensagem para a pasta Itens **Excluídos.** A exclusão do usuário dos destinatários de futuros e-mails é gerenciada pelo remetente.
 
@@ -83,6 +83,10 @@ POST https://graph.microsoft.com/beta/me/messages/{id}/unsubscribe
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/message-unsubscribe-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[Ir](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/message-unsubscribe-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

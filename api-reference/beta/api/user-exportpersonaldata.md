@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: jpettere
 ms.prod: users
 doc_type: apiPageType
-ms.openlocfilehash: 845d25c2665d50c1f8a969a53e293b26528ee60f
-ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
+ms.openlocfilehash: 0e8cb0b0729b33f8065aff8a133426020362a979
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/12/2021
-ms.locfileid: "60947640"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "61009810"
 ---
 # <a name="user-exportpersonaldata"></a>user: exportPersonalData
 
@@ -24,7 +24,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
 |:--------------------|:---------------------------------------------------------|
 |Delegado (conta corporativa ou de estudante) |  User.Export.All e User.Read.All  |
-|Delegada (conta pessoal da Microsoft) |  Não aplicável  |
+|Delegado (conta pessoal da Microsoft) |  Não aplicável  |
 |Aplicativo | User.Export.All e User.Read.All |
 
 >**Observação:** A exportação só pode ser executada por um administrador da empresa quando a permissão delegada é usada.
@@ -52,7 +52,7 @@ Se bem-sucedido, este método retorna um código de resposta `202 Accepted`. Nã
 
 | Nome       | Descrição |
 |:---------------|:----------|
-| Local  | URL para verificar o status da Solicitação. |
+| Localização  | URL para verificar o status da Solicitação. |
 | Retry-After  | Período de tempo em segundos. O fazedor de solicitações deve aguardar tanto tempo depois de enviar uma solicitação para verificar o status. |
 
 
@@ -86,6 +86,10 @@ Content-type: application/json
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/user-exportpersonaldata-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[Ir](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/user-exportpersonaldata-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

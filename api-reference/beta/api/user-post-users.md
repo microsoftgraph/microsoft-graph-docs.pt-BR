@@ -2,15 +2,15 @@
 title: Criar usuário
 description: Crie um novo usuário.
 author: jpettere
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: users
 doc_type: apiPageType
-ms.openlocfilehash: e04afb007f70788b21253323adfb517ebab7ade6
-ms.sourcegitcommit: f77c1385306fd40557aceb24fdfe4832cbb60a27
+ms.openlocfilehash: d81d6aa0257aa9ae189aee50b331da2d10b8c6e5
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/12/2021
-ms.locfileid: "52911358"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "60985051"
 ---
 # <a name="create-user"></a>Criar usuário
 
@@ -50,7 +50,7 @@ POST /users
 
 No corpo da solicitação, forneça uma representação JSON do objeto [user](../resources/user.md).
 
-A tabela a seguir lista as propriedades que são necessárias ao criar um usuário. Se você estiver incluindo uma propriedade de **identidades** para o usuário que está criando, nem todas as propriedades listadas serão necessárias. Para uma [identidade de conta local B2C,](../resources/objectidentity.md)somente  **passwordProfile** é necessário e **passwordPolicies** deve ser definida como `DisablePasswordExpiration` . Para uma identidade social, nenhuma das propriedades é necessária.
+A tabela a seguir lista as propriedades que são necessárias ao criar um usuário. Se você estiver incluindo uma propriedade de **identidades** para o usuário que está criando, nem todas as propriedades listadas serão necessárias. Para uma [identidade de conta local B2C](../resources/objectidentity.md), apenas  **passwordProfile** é necessário e **passwordPolicies** deve ser definida como `DisablePasswordExpiration`. Para uma identidade social, nenhuma das propriedades é necessária.
 
 | Parâmetro | Tipo | Descrição|
 |:---------------|:--------|:----------|
@@ -58,7 +58,7 @@ A tabela a seguir lista as propriedades que são necessárias ao criar um usuár
 |displayName |string |Nome de exibição no catálogo de endereços do usuário.|
 |onPremisesImmutableId |string |Só precisa ser especificado ao criar uma nova conta de usuário se você está usando um domínio federado para propriedade userPrincipalName (UPN) do usuário.|
 |mailNickname |string |O alias de email do usuário.|
-|passwordProfile|[PasswordProfile](../resources/passwordprofile.md) |O perfil de senha do usuário. Para locatários do Azure B2C, a **propriedade forceChangePasswordNextSignIn** deve ser definida como e, em vez disso, usar políticas personalizadas para forçar a redefinição de senha ao entrar `false` primeiro.|
+|passwordProfile|[PasswordProfile](../resources/passwordprofile.md) |O perfil de senha do usuário. Para locatários do Azure B2C, a propriedade **forceChangePasswordNextSignIn** deve ser definida como `false` e, em vez disso, use políticas personalizadas para forçar a redefinição de senha no primeiro logon.|
 |userPrincipalName |string |Nome UPN (usuario@contoso.com).|
 
 Como o recurso de **usuário** dá suporte a [extensões](/graph/extensibility-overview), você pode usar a `POST` operação e adicionar propriedades personalizadas com seus próprios dados à instância do usuário ao criá-la.
@@ -114,6 +114,10 @@ Content-type: application/json
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/create-user-from-users-2-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[Ir](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/create-user-from-users-2-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -210,6 +214,10 @@ Content-type: application/json
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/create-user-from-users-identities-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[Ir](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/create-user-from-users-identities-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

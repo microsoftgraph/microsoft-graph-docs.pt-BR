@@ -5,12 +5,12 @@ author: skadam-msft
 ms.localizationpriority: medium
 ms.prod: compliance
 doc_type: apiPageType
-ms.openlocfilehash: cd7a24499a6ac1de331c19763de20ad9a1695f02
-ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
+ms.openlocfilehash: b5985abc610c3fe80dc4c7fcd645569826802b12
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/12/2021
-ms.locfileid: "60941131"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "61010705"
 ---
 # <a name="create-subjectrightsrequest"></a>Criar subjectRightsRequest
 Namespace: microsoft.graph
@@ -25,7 +25,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |Tipo de permissão|Permissões (da com menos para a com mais privilégios)|
 |:---|:---|
 |Delegado (conta corporativa ou de estudante)|SubjectRightsRequest.ReadWrite.All*|
-|Delegada (conta pessoal da Microsoft)|Sem suporte.|
+|Delegado (conta pessoal da Microsoft)|Sem suporte.|
 |Aplicativo|Sem suporte|
 
 >[!IMPORTANT]
@@ -56,7 +56,7 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar [subject
 |:---|:---|:---|
 |dataSubject|[microsoft.graph.dataSubject](../resources/datasubject.md)|Contém as propriedades do assunto de dados para a solicitação.|
 |dataSubjectType|dataSubjectType|Tipo de assunto de dados. Os valores possíveis são: `customer`, `currentEmployee`, `formerEmployee`, `prospectiveEmployee`, `student`, `teacher`, `faculty`, `other`, `unknownFutureValue`.|
-|description|Cadeia de caracteres|Descrição da solicitação.|
+|description|String|Descrição da solicitação.|
 |displayName|Cadeia de caracteres|Nome da solicitação.|
 |internalDueDateTime|DateTimeOffset|Data de conclusão interna usada para acompanhar a conclusão da solicitação.|
 |regulations|Coleção de cadeias de caracteres|Um ou mais regulamentos para a solicitação.|
@@ -108,6 +108,10 @@ Content-Type: application/json
 
 # <a name="objective-c"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/create-subjectrightsrequest-from--objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[Ir](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/create-subjectrightsrequest-from--go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

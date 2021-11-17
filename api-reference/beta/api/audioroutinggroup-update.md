@@ -2,15 +2,15 @@
 title: Atualizar grupo de roteamento de áudio
 description: Modificar fontes e receptores de um audioRoutingGroup.
 author: ananmishr
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: 6e8bfe43529632988249206a0d84cc6e50e8324e
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: c5aafe6f290af213fba6d2bc9f0fac835d75c512
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52048005"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "60995326"
 ---
 # <a name="update-audio-routing-group"></a>Atualizar grupo de roteamento de áudio
 
@@ -49,7 +49,7 @@ No corpo da solicitação, forneça os valores para os campos relevantes que dev
 |:---------------|:--------|:----------|
 | receptores | Conjunto de cadeias de caracteres | Os participantes de destino no audioRoutingGroup. |
 | routingMode | String | Os valores possíveis são: `oneToOne` e `multicast`. |
-| fontes | Conjunto de cadeias de caracteres | O participante de origem no audioRoutingGroup. |
+| fontes | Coleção de cadeias de caracteres | O participante de origem no audioRoutingGroup. |
 
 ## <a name="response"></a>Resposta
 Se tiver êxito, este método retornará um código de resposta e um `200 OK` [objeto audioRoutingGroup](../resources/audioroutinggroup.md) atualizado no corpo da resposta.
@@ -95,6 +95,10 @@ Content-Type: application/json
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/update-audioroutinggroup-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[Ir](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/update-audioroutinggroup-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

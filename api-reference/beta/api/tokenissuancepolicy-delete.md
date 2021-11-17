@@ -1,16 +1,16 @@
 ---
 title: Excluir tokenIssuancePolicy
 description: Excluir tokenIssuancePolicy.
-localization_priority: Normal
+ms.localizationpriority: medium
 author: luleonpla
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: a8020602a721752c1f123e4a1b8f437109ca4cbf
-ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
+ms.openlocfilehash: 4bb10ca2adccdc417bfb36a9976eeab1ad851143
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50443451"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "61017334"
 ---
 # <a name="delete-tokenissuancepolicy"></a>Excluir tokenIssuancePolicy
 
@@ -81,6 +81,10 @@ DELETE https://graph.microsoft.com/beta/policies/tokenIssuancePolicies/{id}
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/delete-tokenissuancepolicy-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[Ir](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/delete-tokenissuancepolicy-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

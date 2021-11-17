@@ -1,16 +1,16 @@
 ---
 title: Métodos de List
 description: Recupere uma lista de objetos do método de autenticação.
-localization_priority: Normal
+ms.localizationpriority: medium
 author: mmcla
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: 05606726178d2c1d2a2bb308f941810363e357c6
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: 6ddd8737fc8427d32e2ec4066de21a7e8beda0c1
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52047998"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "60982410"
 ---
 # <a name="list-methods"></a>Métodos de List
 
@@ -18,7 +18,8 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Recupere uma lista de objetos [do método de autenticação.](../resources/authenticationmethod.md)
+Recupere uma lista de objetos [do método de autenticação.](../resources/authenticationmethod.md) Essa API retorna apenas os métodos de autenticação suportados nesta versão da API. Consulte [Azure AD authentication methods API overview](../resources/authenticationmethods-overview.md) for a list of currently supported methods.
+
 
 ## <a name="permissions"></a>Permissões
 
@@ -38,10 +39,10 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |:---------------------------------------|:-------------------------|
 | Delegado (conta corporativa ou de estudante)     | UserAuthenticationMethod.Read.All, UserAuthenticationMethod.ReadWrite.All |
 | Delegado (conta pessoal da Microsoft) | Sem suporte. |
-| Application                            | UserAuthenticationMethod.Read.All, UserAuthenticationMethod.ReadWrite.All |
+| Aplicativo                            | UserAuthenticationMethod.Read.All, UserAuthenticationMethod.ReadWrite.All |
 
 Para cenários delegados em que um administrador está atuando em outro usuário, o administrador precisa de uma [das seguintes funções:](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles)
-* Administração global
+* Administrador global
 * Leitor global
 * Administrador de autenticação privilegiada
 * Administrador de autenticação (apenas vê números de telefone mascarados)
@@ -102,6 +103,10 @@ GET https://graph.microsoft.com/beta/me/authentication/methods
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/get-methods-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[Ir](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/get-methods-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

@@ -1,16 +1,16 @@
 ---
 title: Atualizar educationRubric
 description: Atualize as propriedades do objeto educationRubric.
-localization_priority: Normal
+ms.localizationpriority: medium
 author: dipakboyed
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: 50e3d9a675a6052f6eb2f26b5ed28a3395b77063
-ms.sourcegitcommit: 40a8e4b9e344811267025e23c372a6e60e31a1b9
+ms.openlocfilehash: 18542960b1af086a388b06ae6a6dfe04f96009c8
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/01/2021
-ms.locfileid: "52118985"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "60975240"
 ---
 # <a name="update-educationrubric"></a>Atualizar educationRubric
 
@@ -54,7 +54,7 @@ No corpo da solicitação, forneça os valores para os campos relevantes que dev
 | Propriedade     | Tipo        | Descrição |
 |:-------------|:------------|:------------|
 |description|itemBody|A descrição dessa rubrica.|
-|displayName|String|O nome dessa rubrica.|
+|displayName|Cadeia de caracteres|O nome dessa rubrica.|
 |grading|educationAssignmentGradeType|Se essa rubrica tem pontos ou não.|
 |levels|Coleção rubricLevel|A coleção de níveis que comem essa rubrica.|
 |qualidades|Coleção rubricQuality|A coleção de qualidades que com isso é rubrica.|
@@ -97,6 +97,10 @@ Content-type: application/json
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/update-educationrubric-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[Ir](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/update-educationrubric-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

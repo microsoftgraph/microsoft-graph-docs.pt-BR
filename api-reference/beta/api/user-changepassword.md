@@ -1,16 +1,16 @@
 ---
 title: 'user: changePassword'
 description: Atualize sua senha.
-localization_priority: Normal
+ms.localizationpriority: medium
 author: jpettere
 ms.prod: users
 doc_type: apiPageType
-ms.openlocfilehash: 7787ad62106cd5404bb0d5075d3d48d0ec1d6371
-ms.sourcegitcommit: 486fe9c77d4d89c5416bb83e8c716e6918c47370
+ms.openlocfilehash: b582edb0440beca6dfddd659cf3ee035654e1959
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/15/2021
-ms.locfileid: "53442813"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "61009984"
 ---
 # <a name="user-changepassword"></a>user: changePassword
 
@@ -20,7 +20,7 @@ Namespace: microsoft.graph
 
 Habilita o usuário a atualizar sua senha. Qualquer usuário pode atualizar sua senha sem pertencer a qualquer função de administrador.
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 
@@ -47,7 +47,7 @@ Forneça um objeto JSON com os seguintes parâmetros no corpo da solicitação.
 | Parâmetro    | Tipo   |Descrição|
 |:---------------|:--------|:----------|
 | currentPassword | Cadeia de caracteres | Sua senha atual.|
-| newPassword | Cadeia de caracteres | Sua nova senha.|
+| newPassword | String | Sua nova senha.|
 
 ## <a name="response"></a>Resposta
 
@@ -87,6 +87,10 @@ Content-type: application/json
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/user-changepassword-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[Ir](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/user-changepassword-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

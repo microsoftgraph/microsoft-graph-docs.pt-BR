@@ -1,16 +1,16 @@
 ---
 title: Criar conditionalAccessPolicy
 description: Crie um novo conditionalAccessPolicy.
-localization_priority: Normal
+ms.localizationpriority: medium
 author: videor
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: 4c9973fa4a51a8fa99dddbf63b35fc3bbfc45537
-ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
+ms.openlocfilehash: ff381f1008673e3216dab801cc4347f07596ab69
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "50947281"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "61005787"
 ---
 # <a name="create-conditionalaccesspolicy"></a>Criar conditionalAccessPolicy
 
@@ -60,10 +60,10 @@ Se tiver êxito, este método retornará um código de resposta e um novo `201 C
 
 ## <a name="examples"></a>Exemplos
 
-### <a name="example-1-require-mfa-to-access-exchange-online-outside-of-trusted-locations"></a>Exemplo 1: Exigir que o MFA acesse o Exchange Online fora de locais confiáveis
+### <a name="example-1-require-mfa-to-access-exchange-online-outside-of-trusted-locations"></a>Exemplo 1: Exigir que o MFA acesse Exchange Online fora de locais confiáveis
 
 #### <a name="request"></a>Solicitação
-O exemplo a seguir mostra uma solicitação comum para exigir autenticação multifa factor para acesso ao Exchange Online de clientes de autenticação modernos fora de locais confiáveis para um determinado grupo.
+O exemplo a seguir mostra uma solicitação comum para exigir autenticação multifafação para acesso Exchange Online de clientes de autenticação moderna fora de locais confiáveis para um determinado grupo.
 
 >**Observação:** Você deve configurar seus locais confiáveis antes de usar essa operação.
 
@@ -125,6 +125,10 @@ Content-type: application/json
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/create-conditionalaccesspolicy-from-conditionalaccessroot-1-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[Ir](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/create-conditionalaccesspolicy-from-conditionalaccessroot-1-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -197,10 +201,10 @@ Content-type: application/json
 }
 ```
 
-### <a name="example-2-block-access-to-exchange-online-from-non-trusted-regions"></a>Exemplo 2: Bloquear o acesso ao Exchange Online de regiões não confiáveis
+### <a name="example-2-block-access-to-exchange-online-from-non-trusted-regions"></a>Exemplo 2: Bloquear o acesso a Exchange Online de regiões não confiáveis
 
 #### <a name="request"></a>Solicitação
-O exemplo a seguir mostra uma solicitação para bloquear o acesso ao Exchange Online de regiões não confiáveis/desconhecidas.
+O exemplo a seguir mostra uma solicitação para bloquear o acesso Exchange Online de regiões não confiáveis/desconhecidas.
 Este exemplo supõe que o local nomeado com id = 198ad66e-87b3-4157-85a3-8a7b51794ee9 corresponde a uma lista de regiões não confiáveis/desconhecidas.
 
 
@@ -257,6 +261,10 @@ Content-type: application/json
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/create-conditionalaccesspolicy-from-conditionalaccessroot-2-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[Ir](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/create-conditionalaccesspolicy-from-conditionalaccessroot-2-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -461,6 +469,10 @@ Content-type: application/json
 [!INCLUDE [sample-code](../includes/snippets/java/create-conditionalaccesspolicy-from-conditionalaccessroot-3-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# <a name="go"></a>[Ir](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/create-conditionalaccesspolicy-from-conditionalaccessroot-3-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 
@@ -587,12 +599,12 @@ Content-type: application/json
 }
 ```
 
-### <a name="example-4-require-mfa-to-exchange-online-from-non-complaint-devices"></a>Exemplo 4: Exigir MFA para o Exchange Online de dispositivos que não são de reclamação
+### <a name="example-4-require-mfa-to-exchange-online-from-non-complaint-devices"></a>Exemplo 4: Exigir que o MFA Exchange Online de dispositivos que não são de reclamação
 
 >**Observação:** Estamos preterindo a condição **deviceStates** e ela pode ser removida no futuro. Em frente, use a **condição de** dispositivos.
 
 #### <a name="request"></a>Solicitação
-O exemplo a seguir mostra uma solicitação para exigir MFA para o Exchange Online de dispositivos que não são de reclamação.
+O exemplo a seguir mostra uma solicitação para exigir que o MFA Exchange Online de dispositivos que não são de reclamação.
 
 
 # <a name="http"></a>[HTTP](#tab/http)
@@ -648,6 +660,10 @@ Content-type: application/json
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/create-conditionalaccesspolicy-from-conditionalaccessroot-4-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[Ir](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/create-conditionalaccesspolicy-from-conditionalaccessroot-4-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

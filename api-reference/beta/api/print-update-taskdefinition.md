@@ -5,12 +5,12 @@ author: braedenp-msft
 ms.localizationpriority: medium
 ms.prod: universal-print
 doc_type: apiPageType
-ms.openlocfilehash: ec3341b99b3bcc0c36b3122350a5a7aa937c3188
-ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
+ms.openlocfilehash: 9e05501513e88f59d7319434bf750e8ceda95ba7
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/12/2021
-ms.locfileid: "60946668"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "61007737"
 ---
 # <a name="update-taskdefinition"></a>Atualizar taskDefinition
 
@@ -50,7 +50,7 @@ No corpo da solicitação, fornece os valores para os campos [printTaskDefinitio
 
 | Propriedade     | Tipo        | Descrição |
 |:-------------|:------------|:------------|
-|displayName|Cadeia de caracteres|O nome da printTaskDefinition.|
+|displayName|String|O nome da printTaskDefinition.|
 |createdBy|Cadeia de caracteres|Informações sobre o aplicativo que criou a definição de tarefa. Somente a `createdBy.displayName` propriedade pode ser atualizada.|
 
 ## <a name="response"></a>Resposta
@@ -90,6 +90,10 @@ Content-type: application/json
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/print-update-taskdefinition-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[Ir](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/print-update-taskdefinition-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

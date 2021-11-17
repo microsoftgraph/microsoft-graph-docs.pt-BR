@@ -5,12 +5,12 @@ description: Não publice um tipo de conteúdo de um site de hub de tipo de cont
 ms.localizationpriority: medium
 doc_type: apiPageType
 ms.prod: sites-and-lists
-ms.openlocfilehash: b1a348ca0d7f6e7a19aaeb01fa1d7101b34acd61
-ms.sourcegitcommit: 64d27a0e3dcccc9d857e62aace4153e5d98fb3d0
+ms.openlocfilehash: 4262ad9a52a930963802b324ba106292d5d4a0db
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "60729756"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "60996291"
 ---
 # <a name="contenttype-unpublish"></a>contentType: unpublish
 Namespace: microsoft.graph
@@ -78,6 +78,10 @@ POST https://graph.microsoft.com/v1.0/sites/{siteId}/contentTypes/{contentTypeId
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/contenttype-unpublish-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[Ir](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/contenttype-unpublish-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

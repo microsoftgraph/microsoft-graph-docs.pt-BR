@@ -5,12 +5,12 @@ author: mecampos
 ms.localizationpriority: medium
 ms.prod: search
 doc_type: apiPageType
-ms.openlocfilehash: 7cd97ab4710ead825a6a507db71a3213a3a28444
-ms.sourcegitcommit: c7ff992ef63e480d070421ba99b28ee129cb6acb
+ms.openlocfilehash: 0331eeec7481ec5ceaa26f97e6f9d015a2854abb
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "60687934"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "61016207"
 ---
 # <a name="update-externalconnection"></a>Atualizar externalConnection
 
@@ -50,8 +50,8 @@ No corpo da solicitação, forneça os valores para os campos relevantes que dev
 | Propriedade      | Tipo                                           | Descrição |
 |:--------------|:-----------------------------------------------|:------------|
 | configuração | [microsoft.graph.externalConnectors.configuration](../resources/externalconnectors-configuration.md) | Especifica IDs de aplicativo adicionais que têm permissão para gerenciar a conexão e indexar conteúdo na conexão. |
-| descrição   | String                                         | Descrição da conexão exibida no Centro de administração do Microsoft 365. |
-| name          | String                                         | O nome de exibição da conexão a ser exibida no Centro de administração do Microsoft 365. Comprimento máximo de 128 caracteres. |
+| description   | Cadeia de caracteres                                         | Descrição da conexão exibida no Centro de administração do Microsoft 365. |
+| nome          | String                                         | O nome de exibição da conexão a ser exibida no Centro de administração do Microsoft 365. Comprimento máximo de 128 caracteres. |
 
 
 ## <a name="response"></a>Resposta
@@ -93,6 +93,10 @@ Content-type: application/json
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/update-externalconnection-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[Ir](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/update-externalconnection-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

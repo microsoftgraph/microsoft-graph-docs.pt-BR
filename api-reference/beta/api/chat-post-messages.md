@@ -1,16 +1,16 @@
 ---
 title: Enviar mensagem em um chat
 description: Envie uma nova mensagem em um chat.
-localization_priority: Normal
+ms.localizationpriority: medium
 author: RamjotSingh
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 9b71687682111aef0c1722e5337b60178ae49d2c
-ms.sourcegitcommit: a598c09b73e4e43eea5f4aaefea7ffe062e15c39
+ms.openlocfilehash: 2b9935aa878845311f40892d7979a0fa7c5b434b
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/22/2021
-ms.locfileid: "53533883"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "60994528"
 ---
 # <a name="send-message-in-a-chat"></a>Enviar mensagem em um chat
 
@@ -46,7 +46,7 @@ POST /chats/{chat-id}/messages
 
 | Nome          | Descrição   |
 |:--------------|:--------------|
-| Autorização | Portador {código}. Obrigatório. |
+| Autorização | {code} do portador. Obrigatório. |
 
 ## <a name="request-body"></a>Corpo da solicitação
 
@@ -94,6 +94,10 @@ Content-type: application/json
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/post-chatmessages-1-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[Ir](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/post-chatmessages-1-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

@@ -2,15 +2,15 @@
 title: Obter timeCard
 description: Obter um cartão de ponto por ID.
 author: akumar39
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 3ffeb7f57769cc84500b9c0dbb913c214ba6e144
-ms.sourcegitcommit: 503c72036c376a30e08c29df8e7730a7afcab66e
+ms.openlocfilehash: 67dbdcd5ef634e6d6ba404d550acf61010d3f7f0
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/10/2021
-ms.locfileid: "52869511"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "60989172"
 ---
 # <a name="get-timecard"></a>Obter timeCard
 
@@ -20,13 +20,13 @@ Namespace: microsoft.graph
 
 Recupere as propriedades e as relações de um [objeto timeCard](../resources/timeCard.md) por ID.
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>Permissões
 
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegada (conta corporativa ou de estudante) | Schedule.Read.All, Schedule.ReadWrite.All    |
+|Delegado (conta corporativa ou de estudante) | Schedule.Read.All, Schedule.ReadWrite.All    |
 |Delegado (conta pessoal da Microsoft) | Sem suporte.    |
 |Aplicativo | Schedule.Read.All *, Schedule.ReadWrite.All* |
 
@@ -86,6 +86,10 @@ GET https://graph.microsoft.com/beta/teams/fd15cad8-80f6-484f-9666-3caf695fbf32/
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/timecard-get-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[Ir](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/timecard-get-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

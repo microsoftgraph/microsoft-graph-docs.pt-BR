@@ -1,16 +1,16 @@
 ---
 title: Listar programControlTypes
 description: No recurso de revisões de acesso do Azure AD, liste todos os objetos programControlType.
-localization_priority: Normal
+ms.localizationpriority: medium
 doc_type: apiPageType
 ms.prod: governance
 author: markwahl-msft
-ms.openlocfilehash: aea4607e5020207ecfe85968d5048dd33f1f9b3e
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: 7440326ca0d95ff2d631ab67311f62b9ab917bc3
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52055208"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "60979981"
 ---
 # <a name="list-programcontroltypes"></a>Listar programControlTypes
 
@@ -26,7 +26,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |:--------------------------------------|:---------------------------------------------------------|
 |Delegado (conta corporativa ou de estudante)     | ProgramControl.Read.All, ProgramControl.ReadWrite.All   |
 |Delegado (conta pessoal da Microsoft) | Sem suporte. |
-|Application                            | ProgramControl.Read.All', ProgramControl.ReadWrite.All  |
+|Aplicativo                            | ProgramControl.Read.All', ProgramControl.ReadWrite.All  |
 
 O usuário inscreveu também deve estar em uma função de diretório que permita que ele leia um programa.
 
@@ -72,6 +72,10 @@ GET https://graph.microsoft.com/beta/programControlTypes
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/get-programcontroltype-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[Ir](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/get-programcontroltype-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

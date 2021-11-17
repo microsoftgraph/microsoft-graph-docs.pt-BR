@@ -2,15 +2,15 @@
 title: Criar identityApiConnector
 description: Crie um novo objeto identityApiConnector.
 author: nickgmicrosoft
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: 06515ca0ca1f302ee94cb06e7a58c5dcae518c1b
-ms.sourcegitcommit: 08d47a31c48fd69ae4fcee26e34fdd65ad1ba69f
+ms.openlocfilehash: cd614ddce1ba2391dc5b1b01f9e9c75fdb3dbd09
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/02/2021
-ms.locfileid: "51508852"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "60986260"
 ---
 # <a name="create-identityapiconnector"></a>Criar identityApiConnector
 
@@ -20,20 +20,20 @@ Namespace: microsoft.graph
 
 Crie um novo [objeto identityApiConnector.](../resources/identityapiconnector.md)
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>Permissões
 
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 | Tipo de permissão                        | Permissões (da com menos para a com mais privilégios) |
 | :------------------------------------- | :------------------------------------------ |
-| Delegada (conta corporativa ou de estudante)     | APIConnectors.ReadWrite.All |
-| Delegada (conta pessoal da Microsoft) | Sem suporte.  |
+| Delegado (conta corporativa ou de estudante)     | APIConnectors.ReadWrite.All |
+| Delegado (conta pessoal da Microsoft) | Sem suporte.  |
 | Aplicativo                            | APIConnectors.ReadWrite.All |
 
 A conta de trabalho ou de estudante precisa pertencer a uma das seguintes funções:
 
 * Administrador global
-* Administrador de Fluxo de Usuário de Identidade Externa
+* Administrador de identidade externa Flow usuário
 
 ## <a name="http-request"></a>Solicitação HTTP
 
@@ -113,6 +113,10 @@ Content-Type: application/json
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/create-identityapiconnector-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[Ir](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/create-identityapiconnector-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

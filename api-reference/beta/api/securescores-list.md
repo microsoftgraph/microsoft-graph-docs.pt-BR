@@ -1,16 +1,16 @@
 ---
 title: Listar secureScores
-description: Recupere as propriedades e os relacionamentos de um objeto secureScores.
-localization_priority: Normal
+description: Recupere as propriedades e as relações de um objeto secureScores.
+ms.localizationpriority: medium
 doc_type: apiPageType
 ms.prod: ''
 author: preetikr
-ms.openlocfilehash: db668c49386d5cdb2ba4169f1e7fef25c119ae13
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: fef6ab979699bd4e6d384967ca0c0fc0a3e06203
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48976706"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "61014311"
 ---
 # <a name="list-securescores"></a>Listar secureScores
 
@@ -18,7 +18,7 @@ Namespace: microsoft.graph
 
  [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Recupere as propriedades e os relacionamentos de um objeto [secureScores](../resources/securescores.md) .
+Recupere as propriedades e as relações de um [objeto secureScores.](../resources/securescores.md)
 
 ## <a name="permissions"></a>Permissões
 
@@ -42,7 +42,7 @@ GET /security/secureScores
 
 | Nome      |Descrição|
 |:----------|:----------|
-| Autorização  | Portador {código}. Obrigatório.|
+| Autorização  | {code} do portador. Obrigatório.|
 
 ## <a name="request-body"></a>Corpo da solicitação
 
@@ -50,7 +50,7 @@ Não forneça um corpo de solicitação para esse método.
 
 ## <a name="response"></a>Resposta
 
-Se tiver êxito, este método retornará um `200 OK` código de resposta e um objeto **secureScores** no corpo da resposta.
+Se tiver êxito, este método retornará um código de resposta e um `200 OK` **objeto secureScores** no corpo da resposta.
 
 ## <a name="example"></a>Exemplo
 
@@ -81,6 +81,10 @@ GET https://graph.microsoft.com/beta/security/secureScores?$top=1
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/securescores-list-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[Ir](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/securescores-list-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

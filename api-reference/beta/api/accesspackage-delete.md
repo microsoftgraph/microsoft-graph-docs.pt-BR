@@ -1,16 +1,16 @@
 ---
 title: Excluir accessPackage
 description: Excluir accessPackage.
-localization_priority: Normal
+ms.localizationpriority: medium
 author: markwahl-msft
 ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: 710bbd3e015af5109b95905d6db68061de1506f5
-ms.sourcegitcommit: 503c72036c376a30e08c29df8e7730a7afcab66e
+ms.openlocfilehash: 61db7e5baf0c639a3adae55c11ffe7f429263a06
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/10/2021
-ms.locfileid: "52868865"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "60983895"
 ---
 # <a name="delete-accesspackage"></a>Excluir accessPackage
 
@@ -23,13 +23,13 @@ Namespace: microsoft.graph
 Não é possível excluir um pacote de acesso se ele tiver **qualquer accessPackageAssignment**. Para excluir o pacote de acesso, [primeiro consulte](accesspackageassignment-list.md) se há alguma atribuição com um filtro para indicar o pacote de acesso específico, como: `$filter=accessPackage/id eq 'a914b616-e04e-476b-aa37-91038f0b165b'` . Para obter mais informações sobre como remover atribuições que ainda estão no estado entregue, consulte [Remover uma atribuição](accesspackageassignmentrequest-post.md#example-4-remove-an-assignment).
 
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>Permissões
 
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 | Tipo de permissão                        | Permissões (da com menos para a com mais privilégios) |
 |:---------------------------------------|:--------------------------------------------|
-| Delegada (conta corporativa ou de estudante)     | EntitlementManagement.ReadWrite.All |
+| Delegado (conta corporativa ou de estudante)     | EntitlementManagement.ReadWrite.All |
 | Delegado (conta pessoal da Microsoft) | Sem suporte. |
 | Aplicativo                            | EntitlementManagement.ReadWrite.All |
 
@@ -84,6 +84,10 @@ DELETE https://graph.microsoft.com/beta/identityGovernance/entitlementManagement
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/delete-accesspackage-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[Ir](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/delete-accesspackage-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
