@@ -3,12 +3,12 @@ title: Problemas conhecidos com o Microsoft Graph
 description: Este artigo descreve os problemas conhecidos com o Microsoft Graph.
 author: MSGraphDocsVTeam
 ms.localizationpriority: high
-ms.openlocfilehash: 925fa2538496b20b5b22a99823ea80fed8d9b1a0
-ms.sourcegitcommit: c7ff992ef63e480d070421ba99b28ee129cb6acb
+ms.openlocfilehash: c971998ef191295bfcda25251b016d3b51dbb64f
+ms.sourcegitcommit: 42e0e15ff90815e0126c34b928405486cfb1ed86
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "60688097"
+ms.lasthandoff: 11/17/2021
+ms.locfileid: "61044817"
 ---
 # <a name="known-issues-with-microsoft-graph"></a>Problemas conhecidos com o Microsoft Graph
 
@@ -293,9 +293,11 @@ Exemplos de recursos de grupo que oferecem suporte somente a permissões delegad
 
 Usar o Microsoft Graph para criar e nomear um grupo do Microsoft 365 ignora qualquer política de grupo do Microsoft 365 configurada por meio do Outlook na Web.
 
-### <a name="allowexternalsenders-property-cannot-be-set-in-a-post-or-patch-operation"></a>A propriedade allowExternalSenders não pode ser definida em uma operação POST ou PATCH
+### <a name="allowexternalsenders-property-can-only-be-accessed-on-unified-groups"></a>A propriedade allowExternalSenders somente pode ser acessada em grupos unificados
 
 Atualmente, há um problema que impede a configuração da propriedade **allowExternalSenders** de um grupo em uma operação de POST ou PATCH no `/v1.0` e no `/beta`.
+
+A propriedade **allowExternalSenders** somente pode ser acessada em grupos unificados. Acessar essa propriedade em listas de distribuição ou grupos de segurança, inclusive por meio de operações GET, resultará em um erro.
 
 ### <a name="removing-a-group-owner-also-removes-the-user-as-a-group-member"></a>Remover um proprietário de grupo também remove o usuário como um membro do grupo
 
