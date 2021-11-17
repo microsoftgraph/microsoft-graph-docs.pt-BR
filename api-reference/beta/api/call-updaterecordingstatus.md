@@ -2,15 +2,15 @@
 title: 'call: updateRecordingStatus'
 description: Atualize o status de gravação do aplicativo associado a uma chamada.
 author: ananmishr
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: 69893f1ff55a080e94ded88722614856c0dcf8c2
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: 56bbc2640b8b60be5975399682f3622c8e37c713
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52047592"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "61022627"
 ---
 # <a name="call-updaterecordingstatus"></a>call: updateRecordingStatus
 
@@ -50,8 +50,8 @@ Forneça um objeto JSON com os seguintes parâmetros no corpo da solicitação.
 
 | Parâmetro       | Tipo    | Descrição                                                                           |
 |:----------------|:--------|:--------------------------------------------------------------------------------------|
-| clientContext   | String  | Cadeia de caracteres de contexto de cliente exclusiva. O limite máximo é 256 caracteres.                                 |
-| status          | String  | O status da gravação. Os valores possíveis são: `notRecording`, `recording` ou `failed`.  |
+| clientContext   | Cadeia de caracteres  | Cadeia de caracteres de contexto de cliente exclusiva. O limite máximo é 256 caracteres.                                 |
+| status          | Cadeia de caracteres  | O status da gravação. Os valores possíveis são: `notRecording`, `recording` ou `failed`.  |
 
 ## <a name="response"></a>Resposta
 Este método retorna um código de resposta e um header location com um URI para o `200 OK` [objeto updateRecordingStatusOperation](../resources/updaterecordingstatusoperation.md) criado para essa solicitação.
@@ -92,6 +92,10 @@ Content-Length: 79
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/call-updaterecordingstatus-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[Ir](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/call-updaterecordingstatus-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

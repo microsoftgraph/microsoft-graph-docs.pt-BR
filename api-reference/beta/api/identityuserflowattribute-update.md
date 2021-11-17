@@ -1,16 +1,16 @@
 ---
 title: Atualizar identityUserFlowAttribute
 description: Atualizar propriedades de uma identityUserFlowAttribute.
-localization_priority: Normal
+ms.localizationpriority: medium
 doc_type: apiPageType
 author: jkdouglas
 ms.prod: identity-and-sign-in
-ms.openlocfilehash: 7f9f5589069e6b96115f73edb653d7262efe445a
-ms.sourcegitcommit: cde4a3386b08a67cb476df6d46b51885c643d94f
+ms.openlocfilehash: 16a4181a33c9934adfab7e3a0612bc3c058f1b59
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/10/2021
-ms.locfileid: "50625811"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "60974904"
 ---
 # <a name="update-identityuserflowattribute"></a>Atualizar identityUserFlowAttribute
 
@@ -33,7 +33,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 A conta de trabalho ou de estudante precisa pertencer a uma das seguintes funções:
 
 * Administrador global
-* Administrador de Atributos de Fluxo de Usuário de Identidade Externa
+* Administrador de atributos do usuário de identidade externa Flow identidade externa
 
 ## <a name="http-request"></a>Solicitação HTTP
 
@@ -58,7 +58,7 @@ No corpo da solicitação, forneça um objeto JSON com uma ou mais propriedades 
 
 |Propriedade|Tipo|Descrição|
 |:---------------|:--------|:----------|
-|description|String|A descrição do atributo de fluxo do usuário. Ele é mostrado ao usuário no momento da assinatura.|
+|description|Cadeia de caracteres|A descrição do atributo de fluxo do usuário. Ele é mostrado ao usuário no momento da assinatura.|
 
 ## <a name="response"></a>Resposta
 
@@ -100,6 +100,10 @@ Content-type: application/json
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/update-userflowattributes-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[Ir](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/update-userflowattributes-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

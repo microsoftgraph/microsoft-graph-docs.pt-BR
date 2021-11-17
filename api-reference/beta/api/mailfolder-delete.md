@@ -1,16 +1,16 @@
 ---
 title: Excluir mailFolder
-description: Exclua a mailFolder ou mailSearchFolder especificada.
+description: Exclua a mailFolder especificada ou mailSearchFolder.
 author: abheek-das
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 2574d3e220e61fb7fa7a61c8c23240348a1594c7
-ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
+ms.openlocfilehash: 47f657d0dc138716b81bac135690cbe8d342ddca
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/06/2021
-ms.locfileid: "50136756"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "61022171"
 ---
 # <a name="delete-mailfolder"></a>Excluir mailFolder
 
@@ -18,11 +18,11 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Exclua a [mailFolder especificada.](../resources/mailfolder.md) A pasta pode ser [uma mailSearchFolder](../resources/mailsearchfolder.md).
+Exclua o [mailFolder especificado.](../resources/mailfolder.md) A pasta pode ser [um mailSearchFolder](../resources/mailsearchfolder.md).
 
-Você pode especificar uma pasta de email por sua ID de pasta ou por seu nome [de](../resources/mailfolder.md)pasta conhecido, se houver uma.
+Você pode especificar uma pasta de email por sua ID de pasta ou por seu nome [de pasta](../resources/mailfolder.md)conhecido , se houver uma.
 
->**Observação** Talvez você não consiga excluir itens na pasta de exclusões de itens recuperáveis (representado pelo nome de pasta `recoverableitemsdeletions` conhecido). Consulte [Retenção de itens excluídos](/exchange/policy-and-compliance/recoverable-items-folder/recoverable-items-folder#deleted-item-retention) e Limpar itens [excluídos](/exchange/policy-and-compliance/recoverable-items-folder/clean-up-deleted-items) para obter mais informações.
+>**Observação** Talvez você não consiga excluir itens na pasta exclusões de itens recuperáveis (representado pelo nome da pasta `recoverableitemsdeletions` conhecido). Consulte [Retenção de item excluído e](/exchange/policy-and-compliance/recoverable-items-folder/recoverable-items-folder#deleted-item-retention) Limpar itens [excluídos](/exchange/policy-and-compliance/recoverable-items-folder/clean-up-deleted-items) para obter mais informações.
 
 ## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
@@ -76,6 +76,10 @@ DELETE https://graph.microsoft.com/beta/me/mailFolders/AAMkAGVmMDEzM/
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/delete-mailfolder-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[Ir](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/delete-mailfolder-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

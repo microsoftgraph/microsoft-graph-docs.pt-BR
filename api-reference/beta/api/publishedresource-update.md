@@ -1,16 +1,16 @@
 ---
 title: Atualizar publishedResource
 description: Atualize as propriedades de um [objeto publishedResource.](../resources/publishedresource.md)
-localization_priority: Normal
+ms.localizationpriority: medium
 author: japere
 ms.prod: applications
 doc_type: apiPageType
-ms.openlocfilehash: 776893669989e135a781e19aca6f344cf4015ce0
-ms.sourcegitcommit: 94c4acf8bd03c10a44b12952b6cb4827df55b978
+ms.openlocfilehash: 7e8e76a664c3b99455b3e19a755fbb5518800268
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/06/2021
-ms.locfileid: "52787370"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "60993912"
 ---
 # <a name="update-publishedresource"></a>Atualizar publishedResource
 
@@ -20,7 +20,7 @@ Namespace: microsoft.graph
 
 Atualize as propriedades do objeto publishedresource [publishedResource.](../resources/publishedresource.md)
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>Permissões
 
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
@@ -52,7 +52,7 @@ A tabela a seguir lista as propriedades que podem ser atualizadas.
 
 | Propriedade     | Tipo        | Descrição |
 |:-------------|:------------|:------------|
-|displayName|String|Representa um nome de recurso publicado no local.|
+|displayName|Cadeia de caracteres|Representa um nome de recurso publicado no local.|
 
 ## <a name="response"></a>Resposta
 
@@ -91,6 +91,10 @@ PATCH https://graph.microsoft.com/beta/onPremisesPublishingProfiles/provisioning
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/update-publishedresource-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[Ir](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/update-publishedresource-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

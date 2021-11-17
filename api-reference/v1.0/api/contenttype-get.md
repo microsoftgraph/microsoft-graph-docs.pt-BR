@@ -5,12 +5,12 @@ description: Obter um tipo de conteúdo em um site ou em uma lista.
 ms.localizationpriority: medium
 doc_type: apiPageType
 ms.prod: sites-and-lists
-ms.openlocfilehash: 886237aa26e2ac7ddb2b8dadf9c38f815ddad5c7
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 0d94c8858656a47ec6ebc2ad00e183ed4a01b85d
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59147554"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "60974155"
 ---
 # <a name="get-contenttype"></a>Obter contentType
 Namespace: microsoft.graph
@@ -85,6 +85,10 @@ GET https://graph.microsoft.com/v1.0/sites/{site-id}/contentTypes/{contentType-i
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/get-contenttype-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[Ir](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/get-contenttype-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

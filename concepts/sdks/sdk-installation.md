@@ -3,12 +3,12 @@ title: Instalar o Microsoft Graph SDK
 description: Fornece instruções para instalar os C#, Java, Javascript, Objective-C, PHP e Ruby Microsoft Graph SDKs.
 ms.localizationpriority: medium
 author: MichaelMainer
-ms.openlocfilehash: b8d82f1b19a6132fa9a7be4e8c94a7eca9ac2157
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 3df00fb5989783c6f3b22c9dba72e28692910c49
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59025542"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "61022703"
 ---
 # <a name="install-the-microsoft-graph-sdks"></a>Instalar os SDKs Graph Microsoft
 
@@ -18,16 +18,28 @@ Os SDKs Graph Microsoft estão disponíveis para serem incluídos em seus projet
 
 O SDK do Microsoft Graph .NET está incluído nos seguintes pacotes NuGet:
 
-- [Microsoft. Graph](https://github.com/microsoftgraph/msgraph-sdk-dotnet) - Contém os modelos e os construtores de solicitação para acessar o ponto `v1.0` de extremidade com a API fluente. Microsoft. Graph tem uma dependência da Microsoft. Graph. Core.
+- [Microsoft. Graph](https://github.com/microsoftgraph/msgraph-sdk-dotnet) - Contém os modelos e os construtores de solicitação para acessar o ponto de extremidade `v1.0` com a API fluente. Microsoft. Graph tem uma dependência da Microsoft. Graph. Core.
 - [Microsoft. Graph. Beta](https://github.com/microsoftgraph/msgraph-beta-sdk-dotnet) - Contém os modelos e os construtores de solicitação para acessar o ponto `beta` de extremidade com a API fluente. Microsoft. Graph. Beta tem uma dependência da Microsoft. Graph. Core.
 - [Microsoft. Graph. Core](https://github.com/microsoftgraph/msgraph-sdk-dotnet) - A biblioteca principal para fazer chamadas para o Microsoft Graph.
-- [Microsoft. Graph. Auth](https://github.com/microsoftgraph/msgraph-sdk-dotnet-auth) - Fornece um wrapper baseado em cenário de autenticação da Biblioteca de Autenticação da Microsoft (MSAL) para uso com o Microsoft Graph SDK. Microsoft. Graph. A Auth tem uma dependência da Microsoft. Graph. Core.
 
-Você pode usar a interface Gerenciador de Pacotes interface do usuário no Visual Studio ou o [console Gerenciador de Pacotes para](/nuget/quickstart/install-and-use-a-package-in-visual-studio) instalar a Microsoft. Graph pacotes em seu projeto. Os comandos Gerenciador de Pacotes Console a seguir instalarão a Microsoft. Graph, Microsoft. Graph. Core e Microsoft. Graph. Bibliotecas de auth. Microsoft. Graph. Core é instalado como uma dependência da Microsoft. Graph.
+Você pode usar a interface do usuário Gerenciador de Pacotes no Visual Studio ou o [console Gerenciador de Pacotes](/nuget/quickstart/install-and-use-a-package-in-visual-studio) para instalar os pacotes microsoft.Graph em seu projeto. Os comandos Gerenciador de Pacotes Console a seguir instalarão o Microsoft.Graph e o Microsoft.Graph. Bibliotecas principais. Microsoft. Graph. Core é instalado como uma dependência da Microsoft. Graph.
 
 ```PowerShell
 Install-Package Microsoft.Graph
-Install-Package Microsoft.Graph.Auth -IncludePrerelease
+```
+
+## <a name="install-the-microsoft-graph-go-sdk-preview"></a>Instalar o Microsoft Graph Go SDK (visualização)
+
+[!INCLUDE [go-sdk-preview](../../includes/go-sdk-preview.md)]
+
+O Microsoft Graph Go SDK está incluído nos seguintes pacotes:
+
+- [Microsoft Graph SDK para Go](https://github.com/microsoftgraph/msgraph-sdk-go) - Contém os modelos e os construtores de solicitação para acessar o ponto de extremidade `v1.0` com a API fluente.
+- [Microsoft Graph Beta SDK para Go](https://github.com/microsoftgraph/msgraph-beta-sdk-go) - Contém os modelos e os construtores de solicitação para acessar o ponto de extremidade `beta` com a API fluente.
+- [Microsoft Graph SDK Principal para Ir](https://github.com/microsoftgraph/msgraph-sdk-go-core) - A biblioteca principal para fazer chamadas para o Microsoft Graph.
+
+```Shell
+go get -u github.com/microsoftgraph/msgraph-sdk-go
 ```
 
 ## <a name="install-the-microsoft-graph-java-sdk"></a>Instalar o Microsoft Graph Java SDK
@@ -138,7 +150,7 @@ O [Microsoft Graph PHP SDK](https://github.com/microsoftgraph/msgraph-sdk-php) e
 composer require microsoft/microsoft-graph
 ```
 
-### <a name="install-the-microsoft-graph-php-sdk-using-composerjson"></a>Instalar o Microsoft Graph PHP SDK usando composer.json
+### <a name="install-the-microsoft-graph-php-sdk-using-composerjson"></a>Instalar o SDK do Microsoft Graph PHP usando o composer.json
 
 ```json
 {

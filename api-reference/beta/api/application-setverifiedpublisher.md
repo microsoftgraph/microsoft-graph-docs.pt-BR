@@ -1,16 +1,16 @@
 ---
 title: 'application: setVerifiedPublisher'
 description: Definir o distribuidor verificado de um aplicativo.
-localization_priority: Normal
+ms.localizationpriority: medium
 author: jesakowi
 ms.prod: applications
 doc_type: apiPageType
-ms.openlocfilehash: a5e9fe1f9d6b5bb68b9f01963f0413cbcf10e15d
-ms.sourcegitcommit: 5bb981b4853663354a566d4a4a5cbf288939e441
+ms.openlocfilehash: bae85faa7adc5fb2152bb68a0f0e2a7864baf129
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/24/2021
-ms.locfileid: "53578861"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "60982851"
 ---
 # <a name="application-setverifiedpublisher"></a>application: setVerifiedPublisher
 
@@ -24,7 +24,7 @@ De definir [o verificadoPublisher em](../resources/verifiedPublisher.md) um [apl
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegada (conta corporativa ou de estudante) | Application.ReadWrite.All |
+|Delegado (conta corporativa ou de estudante) | Application.ReadWrite.All |
 |Delegado (conta pessoal da Microsoft) | Sem suporte |
 |Aplicativo | Sem suporte |
 
@@ -49,7 +49,7 @@ No corpo da solicitação, forneça as seguintes propriedades necessárias.
 
 | Propriedade     | Tipo   |Descrição|
 |:---------------|:--------|:----------|
-| verifiedPublisherId | string | A ID da Rede de Parceiros da Microsoft (MPNID) do editor verificado a ser definida no aplicativo, a partir da conta do Partner Center do editor. |
+| verifiedPublisherId | cadeia de caracteres | A ID da Rede de Parceiros da Microsoft (MPNID) do editor verificado a ser definida no aplicativo, a partir da conta do Partner Center do editor. |
 
 ## <a name="response"></a>Resposta
 
@@ -90,6 +90,10 @@ Content-type: application/json
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/application-setverifiedpublisher-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[Ir](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/application-setverifiedpublisher-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

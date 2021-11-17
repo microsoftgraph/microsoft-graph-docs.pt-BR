@@ -2,15 +2,15 @@
 title: Listar conversas
 description: Recupere a lista de conversas desse grupo.
 author: Jordanndahl
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: 3be3dadf17ea818cde26d277dd54fe52dd5874de
-ms.sourcegitcommit: 9b8abc940a68dac6ee5da105ca29800cb59775f6
+ms.openlocfilehash: f4a658839e7fc2ae5edb7de23dcb46d6e25aeb92
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/25/2021
-ms.locfileid: "58514438"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "61018643"
 ---
 # <a name="list-conversations"></a>Listar conversas
 
@@ -75,6 +75,10 @@ GET https://graph.microsoft.com/beta/groups/{id}/conversations
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/get-conversations-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[Ir](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/get-conversations-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

@@ -2,15 +2,15 @@
 title: 'call: changeScreenSharingRole'
 description: Permitir que os aplicativos compartilhem conteúdo de tela com os participantes de uma chamada de grupo.
 author: ananmishr
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: 5239d0c2929f43d457253268d190c1ae68e87870
-ms.sourcegitcommit: 94c4acf8bd03c10a44b12952b6cb4827df55b978
+ms.openlocfilehash: 6819514335b8448573c0a74fed4c5437534a67d3
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/06/2021
-ms.locfileid: "52786570"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "60994577"
 ---
 # <a name="call-changescreensharingrole"></a>call: changeScreenSharingRole
 
@@ -22,7 +22,7 @@ Permitir que os aplicativos compartilhem conteúdo de tela com os participantes 
 
 > **Observação:** Isso só é suportado para chamadas de grupo que usam App-Hosted Mídia.
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 | Tipo de permissão                        | Permissões (da com menos para a com mais privilégios) |
@@ -50,7 +50,7 @@ Forneça um objeto JSON com os seguintes parâmetros no corpo da solicitação.
 
 | Parâmetro      | Tipo    |Descrição|
 |:---------------|:--------|:----------|
-|role|String|Os valores possíveis são: 'visualizador', 'sharer'|
+|role|Cadeia de caracteres|Os valores possíveis são: 'visualizador', 'sharer'|
 
 ## <a name="response"></a>Resposta
 Se tiver êxito, este método retornará um código de resposta e todos os participantes `202 Accepted` receberão uma atualização de lista.
@@ -89,6 +89,10 @@ Content-Length: 24
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/call-changescreensharingrole-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[Ir](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/call-changescreensharingrole-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

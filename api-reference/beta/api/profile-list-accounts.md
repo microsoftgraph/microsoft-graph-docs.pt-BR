@@ -1,16 +1,16 @@
 ---
 title: Listar contas
 description: Recupere uma lista de objetos userAccountInformation.
-localization_priority: Normal
+ms.localizationpriority: medium
 author: kevinbellinger
 ms.prod: people
 doc_type: apiPageType
-ms.openlocfilehash: 4852c19fc6b416c8df78960a484e178c6b30520b
-ms.sourcegitcommit: 40947e6f4337c8c4193d85bb862e15f67263e1e7
+ms.openlocfilehash: 898e339777face1173e938cec39db15a54cddaf1
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/13/2021
-ms.locfileid: "50772482"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "61019539"
 ---
 # <a name="list-accounts"></a>Listar contas
 
@@ -97,6 +97,10 @@ GET https://graph.microsoft.com/beta/me/profile/account
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/get-account-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[Ir](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/get-account-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
