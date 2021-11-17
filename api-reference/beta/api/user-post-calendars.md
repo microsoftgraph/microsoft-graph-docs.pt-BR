@@ -2,15 +2,15 @@
 title: Criar calendário
 description: Use esta API para criar um novo calendário para um usuário.
 author: harini84
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 04e9dc2b4b59e54087f9da612330d87849ac3ca6
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: 901df680bfbc9958848d99221cff3b2df3c864fa
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52054704"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "61031427"
 ---
 # <a name="create-calendar"></a>Criar calendário
 
@@ -81,11 +81,15 @@ Content-type: application/json
 [!INCLUDE [sample-code](../includes/snippets/java/create-calendar-from-user-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# <a name="go"></a>[Ir](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/create-calendar-from-user-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 No corpo da solicitação, forneça uma representação JSON do objeto [calendar](../resources/calendar.md).
 ##### <a name="response"></a>Resposta
-Veja a seguir um exemplo da resposta. Observação: o objeto de resposta mostrado aqui pode ser encurtado para legibilidade.
+Aqui está um exemplo da resposta. Observação: o objeto de resposta mostrado aqui pode ser reduzido para facilitar a leitura.
 <!-- {
   "blockType": "response",
   "truncated": true,

@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 doc_type: apiPageType
 ms.prod: identity-and-sign-in
 author: psignoret
-ms.openlocfilehash: c8ec0b52c613300b425cbf4bedea7eb58a861b9c
-ms.sourcegitcommit: c6a8c1cc13ace38d6c4371139ee84707c5c93352
+ms.openlocfilehash: 27c4d1c5919a9f339ab6f62747edba6d621b67c4
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/10/2021
-ms.locfileid: "60890315"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "61023325"
 ---
 # <a name="delete-oauth2permissiongrant-a-delegated-permission-grant"></a>Excluir oAuth2PermissionGrant (uma concessão de permissão delegada)
 
@@ -83,6 +83,10 @@ DELETE https://graph.microsoft.com/v1.0/oauth2PermissionGrants/{id}
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/delete-oauth2permissiongrant-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[Ir](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/delete-oauth2permissiongrant-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

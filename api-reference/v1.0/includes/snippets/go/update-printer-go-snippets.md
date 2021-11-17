@@ -1,0 +1,34 @@
+---
+description: Arquivo gerado automaticamente. NÃO MODIFICAR
+ms.openlocfilehash: b87dc618681918160d0c510a0276da37af05b486
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.translationtype: MT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "60983958"
+---
+```go
+
+//THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
+graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter);
+
+requestBody := msgraphsdk.NewPrinter()
+location := msgraphsdk.NewPrinterLocation()
+requestBody.SetLocation(location)
+latitude := float64(1.1)
+location.SetLatitude(&latitude)
+longitude := float64(2.2)
+location.SetLongitude(&longitude)
+altitudeInMeters := int32(3)
+location.SetAltitudeInMeters(&altitudeInMeters)
+requestBody.SetAdditionalData(map[string]interface{}{
+    "name": "PrinterName",
+}
+options := &msgraphsdk.PrinterRequestBuilderPatchOptions{
+    Body: requestBody,
+}
+printerId := "printer-id"
+graphClient.Print().PrintersById(&printerId).Patch(options)
+
+
+```

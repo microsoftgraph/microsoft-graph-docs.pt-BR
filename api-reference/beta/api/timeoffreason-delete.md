@@ -2,15 +2,15 @@
 title: Excluir timeOffReason
 description: Marque um timeOffReason como inativo definindo a propriedade isActive.
 author: akumar39
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 48c39c0b371a6feafb7c89868903b60c8bb4ea63
-ms.sourcegitcommit: 94c4acf8bd03c10a44b12952b6cb4827df55b978
+ms.openlocfilehash: 82befbd9673936f94754742bce13a3a603bdaf01
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/06/2021
-ms.locfileid: "52787342"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "61031629"
 ---
 # <a name="delete-timeoffreason"></a>Excluir timeOffReason
 
@@ -22,7 +22,7 @@ Marque um [timeOffReason](../resources/timeoffreason.md) como inativo definindo 
 
 Este método não remove a instância **timeOffReason** especificada. [As instâncias timeOffItem](../resources/timeoffitem.md) que foram atribuídas a esse motivo permanecem atribuídas a esse motivo.
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>Permissões
 
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
@@ -85,6 +85,10 @@ DELETE https://graph.microsoft.com/beta/teams/{teamId}/schedule/timeOffReasons/{
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/timeoffreason-delete-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[Ir](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/timeoffreason-delete-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

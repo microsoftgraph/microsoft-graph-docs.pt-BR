@@ -1,16 +1,16 @@
 ---
 title: 'identityApiConnector: uploadClientCertificate'
-description: Carregue uma chave de formato PKCS 12 (PFX) para uma configuração de autenticação de conectores de API.
-localization_priority: Normal
+description: Upload uma chave de formato PKCS 12 (PFX) para uma configuração de autenticação de conectores de API.
+ms.localizationpriority: medium
 author: nickgmicrosoft
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: ed5491867a08999ede0a7db12482b6ee4e0598c8
-ms.sourcegitcommit: 32c83957ee69f21a10cd5f759adb884ce4b41c52
+ms.openlocfilehash: ca764d5a8c5643b1c97eb93bb24611614a9cdc70
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "51920069"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "60998181"
 ---
 # <a name="identityapiconnector-uploadclientcertificate"></a>identityApiConnector: uploadClientCertificate
 
@@ -18,22 +18,22 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Carregue uma chave de formato PKCS 12 (.pfx) para a configuração de autenticação de um conector de API. A entrada é um valor codificado de base 64 do conteúdo do certificado PKCS 12. Este método retorna uma [apiConnector](../resources/identityApiConnector.md).
+Upload uma chave de formato PKCS 12 (.pfx) para a configuração de autenticação de um conector de API. A entrada é um valor codificado de base 64 do conteúdo do certificado PKCS 12. Este método retorna uma [apiConnector](../resources/identityApiConnector.md).
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>Permissões
 
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 | Tipo de permissão                        | Permissões (da com menos para a com mais privilégios) |
 | :------------------------------------- | :------------------------------------------ |
-| Delegada (conta corporativa ou de estudante)     | APIConnectors.ReadWrite.All |
-| Delegada (conta pessoal da Microsoft) | Sem suporte.  |
-| Application                            | APIConnectors.ReadWrite.All |
+| Delegado (conta corporativa ou de estudante)     | APIConnectors.ReadWrite.All |
+| Delegado (conta pessoal da Microsoft) | Sem suporte.  |
+| Aplicativo                            | APIConnectors.ReadWrite.All |
 
 A conta de trabalho ou de estudante precisa pertencer a uma das seguintes funções:
 
 * Administrador global
-* Administrador de Fluxo de Usuário de Identidade Externa
+* Administrador de identidade externa Flow usuário
 
 ## <a name="http-request"></a>Solicitação HTTP
 
@@ -56,7 +56,7 @@ Forneça um objeto JSON com os seguintes parâmetros no corpo da solicitação.
 
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|pkcs12Value|String| Este é o campo para enviar o conteúdo pfx. O valor deve ser uma versão codificada de base 64 do conteúdo real do certificado. Obrigatório.|
+|pkcs12Value|Cadeia de caracteres| Este é o campo para enviar o conteúdo pfx. O valor deve ser uma versão codificada de base 64 do conteúdo real do certificado. Obrigatório.|
 |password|String| Essa é a senha do arquivo pfx. Obrigatório. Se nenhuma senha for usada, ainda deverá fornecer um valor `""` de .|
 
 ## <a name="response"></a>Resposta
@@ -99,6 +99,10 @@ Content-type: application/json
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/identityapiconnector-uploadclientcertificate-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[Ir](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/identityapiconnector-uploadclientcertificate-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

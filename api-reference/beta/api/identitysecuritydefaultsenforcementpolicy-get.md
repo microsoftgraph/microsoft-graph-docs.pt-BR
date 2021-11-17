@@ -1,16 +1,16 @@
 ---
 title: Obter identitySecurityDefaultsEnforcementPolicy
 description: Recupere as propriedades e as relações do objeto identitysecuritydefaultsenforcementpolicy.
-localization_priority: Normal
+ms.localizationpriority: medium
 author: rohinigoyal1
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: 58f7264311d591544050148feedeee74cb8b602c
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: 14baeef63ad4381baf418951496cff993e088402
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52040772"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "60998069"
 ---
 # <a name="get-identitysecuritydefaultsenforcementpolicy"></a>Obter identitySecurityDefaultsEnforcementPolicy
 
@@ -85,6 +85,10 @@ GET https://graph.microsoft.com/beta/policies/identitySecurityDefaultsEnforcemen
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/get-identitysecuritydefaultsenforcementpolicy-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[Ir](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/get-identitysecuritydefaultsenforcementpolicy-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

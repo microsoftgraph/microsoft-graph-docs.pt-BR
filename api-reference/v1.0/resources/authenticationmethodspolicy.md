@@ -5,12 +5,12 @@ author: mmcla
 ms.localizationpriority: medium
 ms.prod: identity-and-sign-in
 doc_type: resourcePageType
-ms.openlocfilehash: 9abab0af31a67465db9989b42186759b12f746bb
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 036f4dce3d3192005a9b99124965830a5b38194a
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59126958"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "61015801"
 ---
 # <a name="authenticationmethodspolicy-resource-type"></a>tipo de recurso authenticationMethodsPolicy
 
@@ -28,10 +28,11 @@ Define os métodos de autenticação e os usuários que têm permissão para us�
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
 |description|Cadeia de caracteres|Uma descrição da política. Somente leitura.|
-|displayName|String|O nome da política. Somente leitura.|
-|id|String|O identificador da política. Herdado da [entidade](../resources/entity.md).|
+|displayName|Cadeia de caracteres|O nome da política. Somente leitura.|
+|id|Cadeia de caracteres|O identificador da política. Herdado da [entidade](../resources/entity.md).|
 |lastModifiedDateTime|DateTimeOffset|A data e a hora da última atualização para a política. Somente leitura.|
-|policyVersion|String|A versão da política em uso. Somente leitura.|
+|policyVersion|Cadeia de caracteres|A versão da política em uso. Somente leitura.|
+|registrationEnforcement|[registrationEnforcement](../resources/registrationenforcement.md)|Impor o registro no momento da inscrição. Essa propriedade pode ser usada para lembrar os usuários de configurar métodos de autenticação direcionados.|
 
 ## <a name="relationships"></a>Relações
 |Relação|Tipo|Descrição|
@@ -56,5 +57,8 @@ Veja a seguir uma representação JSON do recurso.
   "description": "String",
   "lastModifiedDateTime": "String (timestamp)",
   "policyVersion": "String",
+  "registrationEnforcement": {
+    "@odata.type": "microsoft.graph.registrationEnforcement"
+  } 
 }
 ```

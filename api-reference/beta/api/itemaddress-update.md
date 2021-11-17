@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: kevinbellinger
 ms.prod: people
 doc_type: apiPageType
-ms.openlocfilehash: 25833a5aa348b518f66637fc17acfe72bafb0ada
-ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
+ms.openlocfilehash: 3738e14af6e6b99b4ea17a279c6f0a167efc8d9a
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/12/2021
-ms.locfileid: "60945471"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "61012042"
 ---
 # <a name="update-itemaddress"></a>Atualizar itemAddress
 Namespace: microsoft.graph
@@ -52,7 +52,7 @@ No corpo da solicitação, forneça os valores para os campos relevantes que dev
 |:---|:---|:---|
 |allowedAudiences|Cadeia de caracteres|As audiências que são capazes de ver os valores contidos na entidade. Herdado [do itemFacet](../resources/itemfacet.md). Os valores possíveis são: `me`, `family`, `contacts`, `groupMembers`, `organization`, `federatedOrganizations`, `everyone`, `unknownFutureValue`.|
 |detail|[physicalAddress](../resources/physicaladdress.md)|Detalhes sobre o endereço em si.|
-|displayName|Cadeia de caracteres|Nome amigável que o usuário atribuiu a esse endereço. |
+|displayName|String|Nome amigável que o usuário atribuiu a esse endereço. |
 |geoCoordinates|[geoCoordinates](../resources/geocoordinates.md)|As geocoordinações do endereço.|
 |inferência|[inferenceData](../resources/inferencedata.md)|Contém detalhes de inferência se a entidade for inferida pelo aplicativo de criação ou modificação. Herdado [do itemFacet](../resources/itemfacet.md).|
 |source|[personDataSource](../resources/persondatasource.md)|Onde os valores se originaram se sincronizados de outro serviço. Herdado [do itemFacet](../resources/itemfacet.md).|
@@ -93,6 +93,10 @@ Content-Type: application/json
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/update-itemaddress-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[Ir](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/update-itemaddress-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

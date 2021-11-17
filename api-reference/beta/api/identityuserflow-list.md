@@ -1,22 +1,24 @@
 ---
-title: Listar userFlows
+title: Listar userFlows (preterido)
 description: Recupere uma lista de objetos userFlow.
-localization_priority: Normal
+ms.localizationpriority: medium
 author: Nickgmicrosoft
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: db3b83e151abb09f443c703eeda03daa8391560e
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: d0d6e8ceafca829a4d07136f8d815a58d06a7061
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52040704"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "61014884"
 ---
 # <a name="list-userflows"></a>Listar userFlows
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
+[!INCLUDE [identityuserflow-deprecate](../../includes/identityuserflow-deprecate.md)]
 
 Recuperar uma lista de [fluxos de usuários](../resources/identityuserflow.md).
 
@@ -28,7 +30,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |:---------------------------------------|:--------------------------------------------|
 | Delegado (conta corporativa ou de estudante)     | IdentityUserFlow.Read.All, IdentityUserFlow.ReadWrite.All  |
 | Delegado (conta pessoal da Microsoft) | Sem suporte. |
-| Application                            | IdentityUserFlow.Read.All, IdentityUserFlow.ReadWrite.All |
+| Aplicativo                            | IdentityUserFlow.Read.All, IdentityUserFlow.ReadWrite.All |
 
 ## <a name="http-request"></a>Solicitação HTTP
 
@@ -81,6 +83,10 @@ GET https://graph.microsoft.com/beta/identity/userFlows
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/get-userflows-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[Ir](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/get-userflows-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

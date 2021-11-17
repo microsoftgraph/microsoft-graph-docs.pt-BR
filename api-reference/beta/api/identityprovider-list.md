@@ -1,18 +1,18 @@
 ---
 title: Lista identityProviders
 description: Recupere uma lista de objetos identityProvider.
-localization_priority: Normal
+ms.localizationpriority: medium
 doc_type: apiPageType
 author: namkedia
 ms.prod: identity-and-sign-in
-ms.openlocfilehash: 099f77722e6f08a27dea01200246320cd8ae4eec
-ms.sourcegitcommit: 08d47a31c48fd69ae4fcee26e34fdd65ad1ba69f
+ms.openlocfilehash: b6b4aa36dea895338c9b9abdad4ac80eea77ce50
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/02/2021
-ms.locfileid: "51507817"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "61014927"
 ---
-# <a name="list-identityproviders-deprecated"></a>Listar identityProviders (preterido)
+# <a name="list-identityproviders-deprecated"></a>Lista identityProviders (obsoleto)
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
@@ -20,7 +20,7 @@ Namespace: microsoft.graph
 
 Recupere uma lista de [objetos identityProviders.](../resources/identityprovider.md)
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>Permissões
 
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
@@ -88,6 +88,10 @@ GET https://graph.microsoft.com/beta/identityProviders
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/get-identityprovider-3-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[Ir](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/get-identityprovider-3-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

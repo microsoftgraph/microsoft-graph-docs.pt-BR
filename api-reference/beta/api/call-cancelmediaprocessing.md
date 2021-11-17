@@ -2,15 +2,15 @@
 title: 'call: cancelMediaProcessing'
 description: Cancela o processamento de mídia para quaisquer operações playPrompt ou recordResponse em andamento.
 author: ananmishr
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: fe6ecbedcb0d66e5261f08eb3a4aee48db25a493
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: cd19b2fb1a0d872e74d4676d6e8c59702e48f024
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52047662"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "60999491"
 ---
 # <a name="call-cancelmediaprocessing"></a>call: cancelMediaProcessing
 
@@ -29,7 +29,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |:---------------------------------------|:--------------------------------------------|
 | Delegado (conta corporativa ou de estudante)     | Sem suporte.                              |
 | Delegado (conta pessoal da Microsoft) | Sem suporte.                              |
-| Application                            | Nenhum                                       |
+| Aplicativo                            | Nenhum.                                       |
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- { "blockType": "ignored" } -->
@@ -50,7 +50,7 @@ Forneça um objeto JSON com os seguintes parâmetros no corpo da solicitação.
 
 | Parâmetro      | Tipo    | Descrição                                                    |
 |:---------------|:--------|:---------------------------------------------------------------|
-| clientContext  | String  | O contexto do cliente.                                            |
+| clientContext  | Cadeia de caracteres  | O contexto do cliente.                                            |
 
 ## <a name="response"></a>Resposta
 Se tiver êxito, este método retornará um código de resposta HTTP e um cabeçalho location com um URI para o `200 OK` [commsOperation](../resources/commsoperation.md) criado para essa solicitação.
@@ -90,6 +90,10 @@ Content-Length: 62
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/call-cancelmediaprocessing-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[Ir](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/call-cancelmediaprocessing-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

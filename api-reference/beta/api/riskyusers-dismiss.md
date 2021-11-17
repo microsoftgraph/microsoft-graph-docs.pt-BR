@@ -2,16 +2,16 @@
 title: Descartar riskyUser
 description: Descartar o risco de um objeto riskyUser.
 author: cloudhandler
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: identity-and-sign-in
 ms.date: 03/20/2019
 doc_type: apiPageType
-ms.openlocfilehash: eaf5ce5c0ed05777fa4ccb05a05adf1ed215ac2a
-ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
+ms.openlocfilehash: eefaf0017736e5ea1122e1d83d31f9927ef39f76
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "50960838"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "61002726"
 ---
 # <a name="riskyuser-dismiss"></a>riskyUser: dismiss
 
@@ -19,7 +19,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
->**Observação:** Usar a API riskyUsers requer uma licença do Azure AD Premium P2.
+>**Observação:** Usar a API riskyUsers requer uma Azure AD Premium P2 de usuário.
 
 Descartar o risco de um ou mais [objetos riskyUser.](../resources/riskyuser.md) Essa ação define o nível de risco do usuário direcionado como nenhum. A contagem máxima de usuários a ser descartada em uma chamada é 60.
 
@@ -36,7 +36,6 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /riskyUsers/dismiss
-GET /identityProtection/riskyUsers/dismiss
 ```
 
 
@@ -52,8 +51,8 @@ Especifique os userIds a descartar no corpo da solicitação.
 
 Se bem-sucedido, este método retorna um código de resposta `204 No Content`. Não retorna nada no corpo da resposta.
 ## <a name="examples"></a>Exemplos
-### <a name="example-1-dismiss-risky-users"></a>Exemplo 1: descartar usuários arriscados
-#### <a name="request"></a>Solicitação
+<!--### Example 1: Dismiss risky users-->
+### <a name="request"></a>Solicitação
 Este é um exemplo da solicitação.
 
 # <a name="http"></a>[HTTP](#tab/http)
@@ -88,10 +87,14 @@ Content-Type: application/json
 [!INCLUDE [sample-code](../includes/snippets/java/dismiss-riskyuser-1-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# <a name="go"></a>[Ir](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/dismiss-riskyuser-1-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
-#### <a name="response"></a>Resposta
-Veja a seguir um exemplo da resposta.
+### <a name="response"></a>Resposta
+Este é um exemplo de resposta.
 <!-- {
   "blockType": "response",
   "truncated": true
@@ -100,16 +103,17 @@ Veja a seguir um exemplo da resposta.
 HTTP/1.1 204 No Content
 ```
 
-### <a name="example-2-dismiss-a-risky-user"></a>Exemplo 2: descartar um usuário arriscado
-#### <a name="request"></a>Solicitação
-Este é um exemplo da solicitação.
+<!--
+### Example 2: Dismiss a risky user
+#### Request
+Here is an example of the request.
 
-# <a name="http"></a>[HTTP](#tab/http)
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "dismiss_riskyuser_2"
 }-->
-```http
+<!--```http
 POST https://graph.microsoft.com/beta/identityProtection/riskyUsers/dismiss
 Content-Type: application/json
 
@@ -119,31 +123,31 @@ Content-Type: application/json
   ]
 }
 ```
-# <a name="c"></a>[C#](#tab/csharp)
+# [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/dismiss-riskyuser-2-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascript"></a>[JavaScript](#tab/javascript)
+# [JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/dismiss-riskyuser-2-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-c"></a>[Objective-C](#tab/objc)
+# [Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/dismiss-riskyuser-2-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="java"></a>[Java](#tab/java)
+# [Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/dismiss-riskyuser-2-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
-#### <a name="response"></a>Resposta
-Veja a seguir um exemplo da resposta.
+#### Response
+Here is an example of the response.
 <!-- {
   "blockType": "response",
   "truncated": true
 } -->
-```http
+<!--```http
 HTTP/1.1 204 No Content
 ```
 
@@ -158,5 +162,4 @@ HTTP/1.1 204 No Content
   "suppressions": [
   ]
 }-->
-
 

@@ -1,16 +1,16 @@
 ---
 title: Atualizar workPosition
 description: Atualize as propriedades de um objeto workPosition no perfil de um usuário.
-localization_priority: Normal
+ms.localizationpriority: medium
 author: kevinbellinger
 ms.prod: people
 doc_type: apiPageType
-ms.openlocfilehash: 1028690028c209df1b2dcb6e75dd731c2cca4d36
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: e50f0ebf72548110262543502945f5299f8ae5e3
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52051680"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "61029886"
 ---
 # <a name="update-workposition"></a>Atualizar workPosition
 
@@ -54,12 +54,12 @@ No corpo da solicitação, forneça os valores para os campos relevantes que dev
 ## <a name="properties"></a>Propriedades
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|allowedAudiences|String|As audiências que são capazes de ver os valores contidos na entidade. Herdado [do itemFacet](../resources/itemfacet.md). Os valores possíveis são: `me`, `family`, `contacts`, `groupMembers`, `organization`, `federatedOrganizations`, `everyone`, `unknownFutureValue`.|
-|categories|String collection|Categorias que o usuário associou a essa posição.|
+|allowedAudiences|Cadeia de caracteres|As audiências que são capazes de ver os valores contidos na entidade. Herdado [do itemFacet](../resources/itemfacet.md). Os valores possíveis são: `me`, `family`, `contacts`, `groupMembers`, `organization`, `federatedOrganizations`, `everyone`, `unknownFutureValue`.|
+|categories|Coleção de cadeias de caracteres|Categorias que o usuário associou a essa posição.|
 |colleagues|[coleção relatedPerson](../resources/relatedperson.md)|Colegas associados a essa posição.|
 |detail|[positionDetail](../resources/positiondetail.md)|Contém informações detalhadas sobre a posição. |
 |inferência|[inferenceData](../resources/inferencedata.md)|Contém detalhes de inferência se a entidade for inferida pelo aplicativo de criação ou modificação. Herdado [do itemFacet](../resources/itemfacet.md).|
-|isCurrent|Boolean|Indica se a posição está ou não atual.|
+|isCurrent|Booliano|Indica se a posição está ou não atual.|
 |manager|[relatedPerson](../resources/relatedperson.md)|Contém detalhes do gerente do usuário nesta posição.|
 
 ## <a name="response"></a>Resposta
@@ -100,6 +100,10 @@ Content-type: application/json
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/update-workposition-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[Ir](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/update-workposition-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

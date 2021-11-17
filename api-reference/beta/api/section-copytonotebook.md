@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: jewan-microsoft
 ms.prod: onenote
 doc_type: apiPageType
-ms.openlocfilehash: 81efaa842c08ae2cec59218f5b9b6353e7b5afba
-ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
+ms.openlocfilehash: be09b0393016111e1962a3db16edb59f5a92a676
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/12/2021
-ms.locfileid: "60926431"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "61031958"
 ---
 # <a name="section-copytonotebook"></a>section: copyToNotebook
 
@@ -53,7 +53,7 @@ No corpo da solicitação, forneça um objeto JSON que contém os parâmetros de
 |siteId|Cadeia de caracteres|A id do SharePoint web para o que copiar. Use somente ao copiar para um SharePoint site.|
 |groupId|Cadeia de caracteres|A id do grupo para o que copiar. Use somente ao copiar para um Microsoft 365 grupo.|
 |id|String|Obrigatório. A id do bloco de anotações de destino. |
-|renameAs|Cadeia de caracteres|O nome da cópia. Padrão para o nome do item existente. |
+|renameAs|String|O nome da cópia. Padrão para o nome do item existente. |
 
 ## <a name="response"></a>Resposta
 
@@ -93,6 +93,10 @@ Content-type: application/json
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/section-copytonotebook-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[Ir](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/section-copytonotebook-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

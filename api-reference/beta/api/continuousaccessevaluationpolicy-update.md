@@ -5,12 +5,12 @@ author: jerrysai
 ms.localizationpriority: medium
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: e468c12d83ed1fbebdf23a546373270415bf807b
-ms.sourcegitcommit: 0eb843a6f61f384bc28c0cce1ccb74f64bdb1fa6
+ms.openlocfilehash: f1cea20e2d75704e970d6dc33d333f199684d30f
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/23/2021
-ms.locfileid: "60561448"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "61030453"
 ---
 # <a name="update-continuousaccessevaluationpolicy"></a>Atualizar continuousAccessEvaluationPolicy
 Namespace: microsoft.graph
@@ -26,7 +26,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |:--------------------------------------|:---------------------------------------------------------------|
 |Delegado (conta corporativa ou de estudante)     | Policy.Read.All, Policy.ReadWrite.ConditionalAccess e Application.Read.All |
 |Delegado (conta pessoal da Microsoft) | Sem suporte. |
-|Application                            | Policy.Read.All, Policy.ReadWrite.ConditionalAccess e Application.Read.All |
+|Aplicativo                            | Policy.Read.All, Policy.ReadWrite.ConditionalAccess e Application.Read.All |
 
 > [!NOTE]
 > Essa API tem um [problema conhecido relacionado](/graph/known-issues#permissions) a permissões.  
@@ -52,7 +52,7 @@ No corpo da solicitação, forneça os valores para os campos relevantes que dev
 
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|migrar|Boolean| `true` para indicar que as configurações de política de avaliação de acesso contínuo devem ser ou foram migradas para a política de acesso condicional. |
+|migrar|Booliano| `true` para indicar que as configurações de política de avaliação de acesso contínuo devem ser ou foram migradas para a política de acesso condicional. |
 
 ## <a name="response"></a>Resposta
 
@@ -91,6 +91,10 @@ Content-Type: application/json
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/update-continuousaccessevaluationpolicy-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[Ir](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/update-continuousaccessevaluationpolicy-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

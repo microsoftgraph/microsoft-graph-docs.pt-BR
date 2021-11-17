@@ -5,12 +5,12 @@ author: payiAzure
 ms.localizationpriority: medium
 ms.prod: service-communications
 doc_type: apiPageType
-ms.openlocfilehash: c83e4e6c58db14bbb5d51c78138254bdae80fc2d
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: e7d1595d3d2074a45873741f11de29aaf7ebd51f
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59119055"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "61024117"
 ---
 # <a name="serviceupdatemessage-markread"></a>serviceUpdateMessage: markRead
 Namespace: microsoft.graph
@@ -49,7 +49,7 @@ A tabela a seguir mostra os parâmetros que podem ser usados com esta ação.
 
 |Parâmetro|Tipo|Descrição|
 |:---|:---|:---|
-|messageIds|Coleção String|Lista de IDs de mensagem a marcar como leitura.|
+|messageIds|Coleção de cadeias de caracteres|Lista de IDs de mensagem a marcar como leitura.|
 
 
 ## <a name="response"></a>Resposta
@@ -89,6 +89,10 @@ Content-Type: application/json
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/serviceupdatemessage-markread-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[Ir](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/serviceupdatemessage-markread-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

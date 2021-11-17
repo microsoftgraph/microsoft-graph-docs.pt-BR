@@ -2,15 +2,15 @@
 title: 'presença: clearPresence'
 description: Desmarcar as informações de presença para a sessão de presença do aplicativo do usuário.
 author: jsandoval-msft
-localization_priority: Normal
+ms.localizationpriority: medium
 doc_type: apiPageType
 ms.prod: cloud-communications
-ms.openlocfilehash: 984c7667ceb2a28de189230952e5333f273cce24
-ms.sourcegitcommit: 7f674112f5b95446fac86d829509f889c60f1693
+ms.openlocfilehash: af98bf701603acac022a0944c01937c2f0979641
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/30/2021
-ms.locfileid: "53208241"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "60997355"
 ---
 # <a name="presence-clearpresence"></a>presença: clearPresence
 
@@ -49,7 +49,7 @@ Forneça um objeto JSON com os seguintes parâmetros no corpo da solicitação.
 
 | Parâmetro | Tipo   | Descrição                                   |
 | :-------- | :----- | :-------------------------------------------- |
-| sessionId | cadeia de caracteres | A ID da sessão de presença do aplicativo. |
+| sessionId | string | A ID da sessão de presença do aplicativo. |
 
 
 > [!IMPORTANT]
@@ -95,6 +95,10 @@ Content-Type: application/json
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/clear--presence-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[Ir](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/clear--presence-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

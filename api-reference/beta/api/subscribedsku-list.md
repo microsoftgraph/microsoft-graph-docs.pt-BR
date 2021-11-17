@@ -1,16 +1,16 @@
 ---
 title: Listar subscribedSkus
 description: Recupere a lista de assinaturas comerciais que uma organização adquiriu.
-localization_priority: Normal
+ms.localizationpriority: medium
 author: SumitParikh
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: 23ed7c866662f344a2f0034d87bba2bfc858f25f
-ms.sourcegitcommit: c6f7a931a8d83ac54f577b7bec08237fd17ce51a
+ms.openlocfilehash: 099c47194534b058a387b3ee90893863d70579b7
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/24/2021
-ms.locfileid: "58490620"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "61013974"
 ---
 # <a name="list-subscribedskus"></a>Listar subscribedSkus
 
@@ -18,7 +18,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Obtenha a lista de assinaturas comerciais que uma organização adquiriu.
+Obtenha a lista de assinaturas comerciais que uma organização adquiriu. Quanto ao mapeamento de nomes de licença conforme exibido no portal do Azure ou no Centro de administração do Microsoft 365 em relação às suas propriedades **skuId** e **skuPartNumber** do Microsoft Graph, consulte [Nomes de produtos e identificadores de plano de serviço para licenciamento](/azure/active-directory/enterprise-users/licensing-service-plan-reference).
 
 ## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
@@ -37,7 +37,7 @@ GET /subscribedSkus
 ```
 ## <a name="optional-query-parameters"></a>Parâmetros de consulta opcionais
 
-Esse método não dá suporte `$select` ao parâmetro de consulta [OData](/graph//query-parameters) para ajudar a personalizar a resposta ( `$filter` não há suporte).
+Esse método oferece suporte ao`$select` [Parâmetro de consulta OData](/graph//query-parameters) para personalizar a resposta. Ele não oferece suporte `$filter`.
 
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
 
@@ -52,7 +52,7 @@ Não forneça um corpo de solicitação para esse método.
 
 Se bem-sucedido, este método retorna um código de resposta `200 OK` e uma coleção de objetos [subscribedSku](../resources/subscribedsku.md) no corpo da resposta.
 ## <a name="example"></a>Exemplo
-##### <a name="request"></a>Solicitação
+### <a name="request"></a>Solicitação
 Este é um exemplo da solicitação.
 
 # <a name="http"></a>[HTTP](#tab/http)
@@ -79,10 +79,15 @@ GET https://graph.microsoft.com/beta/subscribedSkus
 [!INCLUDE [sample-code](../includes/snippets/java/get-subscribedskus-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# <a name="go"></a>[Ir](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/get-subscribedskus-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
-##### <a name="response"></a>Resposta
-Aqui está um exemplo da resposta. Observação: o objeto de resposta mostrado aqui pode ser reduzido para facilitar a leitura.
+### <a name="response"></a>Resposta
+Este é um exemplo de resposta. 
+>**Observação:** o objeto de resposta mostrado aqui pode ser encurtado para legibilidade.
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -92,7 +97,6 @@ Aqui está um exemplo da resposta. Observação: o objeto de resposta mostrado a
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 547
 
 {
   "value": [
@@ -118,6 +122,10 @@ Content-length: 547
   ]
 }
 ```
+
+## <a name="see-also"></a>Confira também
+
++ [Nomes de produtos e identificadores de plano de serviço para licenciamento](/azure/active-directory/enterprise-users/licensing-service-plan-reference)
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->

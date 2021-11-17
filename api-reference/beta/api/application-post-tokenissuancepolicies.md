@@ -1,16 +1,16 @@
 ---
 title: Atribuir tokenIssuancePolicy
 description: Atribua um tokenIssuancePolicy a um aplicativo.
-localization_priority: Normal
+ms.localizationpriority: medium
 author: sureshja
 ms.prod: applications
 doc_type: apiPageType
-ms.openlocfilehash: eabd29bbdbadffb6cea863778dd8eb966c23b646
-ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
+ms.openlocfilehash: cd9a755361c5b3cb3f227591fc8ce262df3cd624
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/06/2021
-ms.locfileid: "50129076"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "60982935"
 ---
 # <a name="assign-tokenissuancepolicy"></a>Atribuir tokenIssuancePolicy
 
@@ -18,7 +18,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Atribua [um tokenIssuancePolicy](../resources/tokenissuancepolicy.md) a um [aplicativo.](../resources/application.md)
+Atribua [um tokenIssuancePolicy](../resources/tokenissuancepolicy.md) a um [aplicativo](../resources/application.md).
 
 ## <a name="permissions"></a>Permissões
 
@@ -26,9 +26,9 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 | Tipo de permissão                        | Permissões (da com menos para a com mais privilégios) |
 |:---------------------------------------|:--------------------------------------------|
-| Delegado (conta corporativa ou de estudante)     | Policy.Read.All and Application.ReadWrite.All, Policy.ReadWrite.ApplicationConfiguration and Application.ReadWrite.All |
+| Delegado (conta corporativa ou de estudante)     | Policy.Read.All e Application.ReadWrite.All, Policy.ReadWrite.ApplicationConfiguration e Application.ReadWrite.All |
 | Delegado (conta pessoal da Microsoft) | Sem suporte. |
-| Application                            | Policy.Read.All and Application.ReadWrite.OwnedBy, Policy.Read.All and Application.ReadWrite.All, Policy.ReadWrite.ApplicationConfiguration and Application.ReadWrite.OwnedBy, Policy.ReadWrite.ApplicationConfiguration and Application.ReadWrite.All |
+| Aplicativo                            | Policy.Read.All e Application.ReadWrite.OwnedBy, Policy.Read.All e Application.ReadWrite.All, Policy.ReadWrite.ApplicationConfiguration e Application.ReadWrite.OwnedBy, Policy.ReadWrite.ApplicationConfiguration e Application.ReadWrite.All |
 
 ## <a name="http-request"></a>Solicitação HTTP
 
@@ -47,7 +47,7 @@ POST /applications/{id}/tokenIssuancePolicies/$ref
 
 ## <a name="request-body"></a>Corpo da solicitação
 
-No corpo da solicitação, fornece o identificador do objeto [tokenIssuancePolicy](../resources/tokenissuancepolicy.md) (usando uma propriedade) que deve ser atribuído `@odata.id` ao aplicativo.
+No corpo da solicitação, fornece o identificador do [objeto tokenIssuancePolicy](../resources/tokenissuancepolicy.md) (usando uma propriedade) que deve ser atribuído `@odata.id` ao aplicativo.
 
 ## <a name="response"></a>Resposta
 
@@ -88,6 +88,10 @@ Content-Type: application/json
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/create-tokenissuancepolicy-from-application-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[Ir](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/create-tokenissuancepolicy-from-application-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

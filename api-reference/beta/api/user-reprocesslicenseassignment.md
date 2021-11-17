@@ -1,16 +1,16 @@
 ---
 title: 'user: reprocessLicenseAssignment'
 description: Reprocesse todas as atribuições de licença baseadas em grupo para o usuário.
-localization_priority: Normal
+ms.localizationpriority: medium
 author: jpettere
 ms.prod: users
 doc_type: apiPageType
-ms.openlocfilehash: 4ff1500ade221a24970f6cfbde38fab9101b67dc
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: a2ffa675291fca51b6b70aad7275fcd4733aa854
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52049594"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "60984993"
 ---
 # <a name="user-reprocesslicenseassignment"></a>user: reprocessLicenseAssignment
 
@@ -75,6 +75,10 @@ POST https://graph.microsoft.com/beta/users/047dd774-f1c4-40f2-82f0-278de79f9b83
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/user-reprocesslicenseassignment-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[Ir](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/user-reprocesslicenseassignment-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

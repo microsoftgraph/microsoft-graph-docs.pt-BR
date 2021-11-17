@@ -1,16 +1,16 @@
 ---
 title: Obter applicationTemplate
 description: Recupere as propriedades e as relações do objeto applicationtemplate.
-localization_priority: Normal
+ms.localizationpriority: medium
 author: luleonpla
 ms.prod: applications
 doc_type: apiPageType
-ms.openlocfilehash: 4ae3d9f451785ef44f36df75667968bc271065dc
-ms.sourcegitcommit: d014f72cf2cd130bedb02651092c0be12967b679
+ms.openlocfilehash: e89db4e63ee2db0eabd6392fc34e269f87d51a15
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "50471588"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "60982746"
 ---
 # <a name="get-applicationtemplate"></a>Obter applicationTemplate
 
@@ -26,11 +26,11 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 | Tipo de permissão                        | Permissões (da com menos para a com mais privilégios) |
 |:---------------------------------------|:--------------------------------------------|
-| Delegada (conta corporativa ou de estudante)     | Nenhum. |
-| Delegada (conta pessoal da Microsoft) | Sem suporte. |
+| Delegado (conta corporativa ou de estudante)     | Nenhum. |
+| Delegado (conta pessoal da Microsoft) | Sem suporte. |
 | Aplicativo                            | Nenhum. |
 
-Permissões adicionais não são necessárias para chamar essa API, desde que seu aplicativo tenha um token de acesso válido para chamar o Microsoft Graph.
+Permissões adicionais não são necessárias para chamar essa API, desde que seu aplicativo tenha um token de acesso válido para chamar a Microsoft Graph.
 
 ## <a name="http-request"></a>Solicitação HTTP
 
@@ -89,6 +89,10 @@ GET https://graph.microsoft.com/beta/applicationTemplates/{id}
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/get-applicationtemplate-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[Ir](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/get-applicationtemplate-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

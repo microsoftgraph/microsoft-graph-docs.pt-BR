@@ -5,12 +5,12 @@ author: payiAzure
 ms.localizationpriority: medium
 ms.prod: service-communications
 doc_type: apiPageType
-ms.openlocfilehash: 971382ac0cab7614d87b408da3a85788f193f029
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: e4ac0c50895a3e914ec887ac0c4865f3859feb17
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59119006"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "61030607"
 ---
 # <a name="serviceupdatemessage-markunread"></a>serviceUpdateMessage: markUnread
 Namespace: microsoft.graph
@@ -49,7 +49,7 @@ A tabela a seguir mostra os parâmetros que podem ser usados com esta ação.
 
 |Parâmetro|Tipo|Descrição|
 |:---|:---|:---|
-|messageIds|Coleção String|Lista de IDs de mensagem a marcar como não lidas.|
+|messageIds|Coleção de cadeias de caracteres|Lista de IDs de mensagem a marcar como não lidas.|
 
 ## <a name="response"></a>Resposta
 
@@ -88,6 +88,10 @@ Content-Type: application/json
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/serviceupdatemessage-markunread-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[Ir](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/serviceupdatemessage-markunread-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

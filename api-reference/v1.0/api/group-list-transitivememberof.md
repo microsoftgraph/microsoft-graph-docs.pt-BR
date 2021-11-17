@@ -2,15 +2,15 @@
 title: Listar transitivo de grupo memberOf
 description: Obter grupos dos que o grupo é membro.  Essa operação é transitiva e também incluirá todos os grupos dos que esses grupos são membros aninhados. Ao contrário de obter grupos Microsoft 365 usuários, isso retorna todos os tipos de grupos, não apenas Microsoft 365 grupos.
 author: Jordanndahl
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: 738c100738d6eb0b4b2eb49e3b57a32c7f00bb32
-ms.sourcegitcommit: 4fa6fcc058c7f8d8cad58c0b82db23d6c7da37d2
+ms.openlocfilehash: 2d0a5f5f0fd1d976cf67e0be5fd1dbad2d088672
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/27/2021
-ms.locfileid: "52680595"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "61025315"
 ---
 # <a name="list-group-transitive-memberof"></a>Listar transitivo de grupo memberOf
 
@@ -84,6 +84,10 @@ GET https://graph.microsoft.com/v1.0/groups/{id}/transitiveMemberOf
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/get-group-transitivememberof-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[Ir](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/get-group-transitivememberof-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

@@ -1,16 +1,16 @@
 ---
 title: 'informationProtectionLabel: evaluateApplication'
 description: Avalie qual rótulo aplicar com base nas informações de conteúdo existentes e no estado de conteúdo desejado.
-localization_priority: Normal
+ms.localizationpriority: medium
 author: tommoser
 ms.prod: security
 doc_type: apiPageType
-ms.openlocfilehash: b89f72793ca2cc2f4af8d8c6e95db654d74a6972
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: a2f2a0fbe7576523584ea56f04a0e608c5d68075
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52040424"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "61023823"
 ---
 # <a name="informationprotectionlabel-evaluateapplication"></a>informationProtectionLabel: evaluateApplication
 
@@ -46,7 +46,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 | :------------------------------------- | :------------------------------------------ |
 | Delegado (conta corporativa ou de estudante)     | InformationProtectionPolicy. Read            |
 | Delegado (conta pessoal da Microsoft) | Sem suporte.                              |
-| Application                            | InformationProtectionPolicy.Read.All        |
+| Aplicativo                            | InformationProtectionPolicy.Read.All        |
 
 ## <a name="http-request"></a>Solicitação HTTP
 
@@ -170,6 +170,10 @@ User-agent: ContosoLOBApp/1.0
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/informationprotectionlabel-evaluateapplication-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[Ir](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/informationprotectionlabel-evaluateapplication-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

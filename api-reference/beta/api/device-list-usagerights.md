@@ -5,12 +5,12 @@ author: jeeshnair
 ms.localizationpriority: medium
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: 7ad57af7a7ac608bca5a29de94074ad81ec43944
-ms.sourcegitcommit: f4999aa6fc05f845027db01aa489f7086f9850e1
+ms.openlocfilehash: 769f78239993311d662a3a7439182df6ad9281af
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/13/2021
-ms.locfileid: "60290096"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "61015717"
 ---
 # <a name="list-device-usagerights"></a>Listar uso do dispositivoRights
 Namespace: microsoft.graph
@@ -26,7 +26,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |:---|:---|
 |Delegado (conta corporativa ou de estudante)|Device.Read.All, Directory.Read.All, Directory.ReadWrite.All|
 |Delegado (conta pessoal da Microsoft)|Sem suporte.|
-|Application|Device.Read.All, Device.ReadWrite.All, Directory.Read.All, Directory.ReadWrite.All|
+|Aplicativo|Device.Read.All, Device.ReadWrite.All, Directory.Read.All, Directory.ReadWrite.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
 
@@ -93,6 +93,10 @@ GET https://graph.microsoft.com/beta/devices/{objectId}/usageRights
 [!INCLUDE [sample-code](../includes/snippets/java/list-usageright-1-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# <a name="go"></a>[Ir](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/list-usageright-1-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 
@@ -149,6 +153,10 @@ GET https://graph.microsoft.com/beta/devices/{objectId}/usageRights?$filter=stat
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/list-usageright-2-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[Ir](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/list-usageright-2-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

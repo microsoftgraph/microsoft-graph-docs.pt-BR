@@ -1,16 +1,16 @@
 ---
 title: Listar businessFlowTemplates
 description: No recurso de análises de acesso do Azure AD, liste todos os objetos businessFlowTemplate.
-localization_priority: Normal
+ms.localizationpriority: medium
 doc_type: apiPageType
 ms.prod: governance
 author: markwahl-msft
-ms.openlocfilehash: 1b6a970e9e7336ba4773c3ecbe0e53f7c02e8700
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: 76e974126839b0227f3b3369d4c791f3c138ed0c
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52047767"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "61015746"
 ---
 # <a name="list-businessflowtemplates"></a>Listar businessFlowTemplates
 
@@ -26,7 +26,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |:--------------------------------------|:---------------------------------------------------------|
 |Delegado (conta corporativa ou de estudante)     | AccessReview.Read.All, AccessReview.ReadWrite.Membership, AccessReview.ReadWrite.All  |
 |Delegado (conta pessoal da Microsoft) | Sem suporte. |
-|Application                            | AccessReview.Read.All, AccessReview.ReadWrite.Membership |
+|Aplicativo                            | AccessReview.Read.All, AccessReview.ReadWrite.Membership |
 
 O usuário inscreveu também deve estar em uma função de diretório que permita que ele leia uma revisão de acesso.
 
@@ -72,6 +72,10 @@ GET https://graph.microsoft.com/beta/businessFlowTemplates
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/get-businessflowtemplate-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[Ir](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/get-businessflowtemplate-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

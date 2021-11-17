@@ -1,16 +1,16 @@
 ---
 title: Obter onPremisesPublishingProfile
 description: Recupere as propriedades e as relações de um [objeto onPremisesPublishingProfile.](../resources/onpremisespublishingprofile.md)
-localization_priority: Normal
+ms.localizationpriority: medium
 author: japere
 ms.prod: applications
 doc_type: apiPageType
-ms.openlocfilehash: e6dd4e1f3cba64236e438063b259906ea5a9ac15
-ms.sourcegitcommit: 3f40fbb953b14c1f52341786569c678adfc5bd3e
+ms.openlocfilehash: 4c9203b4f696b0d1c97f1fa5fa1483d62b59d808
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/05/2021
-ms.locfileid: "52781006"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "61032245"
 ---
 # <a name="get-onpremisespublishingprofile"></a>Obter onPremisesPublishingProfile
 
@@ -85,6 +85,10 @@ GET https://graph.microsoft.com/beta/onPremisesPublishingProfiles/provisioning?$
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/get-onpremisespublishingprofile-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[Ir](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/get-onpremisespublishingprofile-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

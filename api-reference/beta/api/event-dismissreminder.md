@@ -2,15 +2,15 @@
 title: 'evento: dismissReminder'
 description: Descartar um lembrete que foi disparado para um evento em um calendário do usuário.
 author: harini84
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: fb0b85a804013f4b282de3d2fae33bcc3f7f67ef
-ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
+ms.openlocfilehash: 86110ec0a436a3655cd6299609cb118feaa0a7ce
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50436215"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "61015445"
 ---
 # <a name="event-dismissreminder"></a>evento: dismissReminder
 
@@ -88,6 +88,10 @@ POST https://graph.microsoft.com/beta/me/events/{id}/dismissReminder
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/event-dismissreminder-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[Ir](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/event-dismissreminder-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
