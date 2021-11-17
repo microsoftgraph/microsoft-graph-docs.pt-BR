@@ -2,15 +2,15 @@
 title: Excluir grupo de roteamento de áudio
 description: Exclua o grupo de roteamento de áudio especificado.
 author: ananmishr
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: de1ac6aa2a296cf95fddb33c075f52ce57da0d81
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: 998a114e3a9359348385b8d859fe7058ec1c55d0
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52048019"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "60982446"
 ---
 # <a name="delete-audio-routing-group"></a>Excluir grupo de roteamento de áudio
 
@@ -76,6 +76,10 @@ DELETE https://graph.microsoft.com/beta/communications/calls/{id}/audioRoutingGr
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/delete-audioroutinggroup-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[Ir](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/delete-audioroutinggroup-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

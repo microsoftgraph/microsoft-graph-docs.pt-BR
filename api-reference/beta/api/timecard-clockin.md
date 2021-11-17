@@ -2,15 +2,15 @@
 title: 'timeCard: clockIn'
 description: Entre para iniciar um cartão de ponto.
 author: akumar39
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 5a21d1fd3af16b342ffcc98c47d854cf49a00ccd
-ms.sourcegitcommit: 503c72036c376a30e08c29df8e7730a7afcab66e
+ms.openlocfilehash: 85c8b917b83bf5285373f0b0684e4295cce4fc7e
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/10/2021
-ms.locfileid: "52869797"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "60989284"
 ---
 # <a name="timecard-clockin"></a>timeCard: clockIn
 
@@ -20,13 +20,13 @@ Namespace: microsoft.graph
 
 Clock in to start a [timeCard](../resources/timeCard.md).
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>Permissões
 
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegada (conta corporativa ou de estudante) | Schedule.ReadWrite.All    |
+|Delegado (conta corporativa ou de estudante) | Schedule.ReadWrite.All    |
 |Delegado (conta pessoal da Microsoft) | Sem suporte.    |
 |Aplicativo | Schedule.ReadWrite.All* |
 
@@ -91,6 +91,10 @@ Content-type: application/json
 
 # <a name="objective-c"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/timecard-clockin-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[Ir](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/timecard-clockin-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

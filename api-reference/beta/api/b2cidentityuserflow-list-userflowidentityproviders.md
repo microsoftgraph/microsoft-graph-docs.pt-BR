@@ -1,16 +1,16 @@
 ---
 title: Listar um userflowidentityproviders
 description: Listar todos os provedores de identidade em um b2cIdentityUserFlow.
-localization_priority: Normal
+ms.localizationpriority: medium
 doc_type: apiPageType
 author: namkedia
 ms.prod: identity-and-sign-in
-ms.openlocfilehash: 04d45c4fc622b24f3d9a04410ec010e08c45e3ad
-ms.sourcegitcommit: 486fe9c77d4d89c5416bb83e8c716e6918c47370
+ms.openlocfilehash: aad6a7fe1ff8577ce784bb42bc0f58228e4084c7
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/15/2021
-ms.locfileid: "53439739"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "60999904"
 ---
 # <a name="list-a-userflowidentityproviders"></a>Listar um userflowidentityproviders
 
@@ -20,14 +20,14 @@ Namespace: microsoft.graph
 
 Obter os provedores de identidade em um [objeto b2cIdentityUserFlow.](../resources/b2cidentityuserflow.md)
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>Permissões
 
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegada (conta corporativa ou de estudante)|IdentityUserFlow.ReadWrite.All|
-|Delegada (conta pessoal da Microsoft)| Sem suporte.|
+|Delegado (conta corporativa ou de estudante)|IdentityUserFlow.ReadWrite.All|
+|Delegado (conta pessoal da Microsoft)| Sem suporte.|
 |Aplicativo| IdentityUserFlow.ReadWrite.All|
 
 A conta de trabalho ou de estudante precisa pertencer a uma das seguintes funções:
@@ -88,6 +88,10 @@ GET https://graph.microsoft.com/beta/identity/b2cUserFlows/B2C_test_signin_signu
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/get-b2cuserflow-list-userflowidentityproviders-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[Ir](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/get-b2cuserflow-list-userflowidentityproviders-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

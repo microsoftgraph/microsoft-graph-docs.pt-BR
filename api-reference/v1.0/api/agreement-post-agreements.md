@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 doc_type: apiPageType
 ms.prod: governance
 author: raprakasMSFT
-ms.openlocfilehash: f978b9599b2427dc06173636cd19ead373f8c56d
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: e9c54f95cf3ea10f0c230ba7a47101ffd13b5e0e
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59017041"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "60988697"
 ---
 # <a name="create-agreement"></a>Criar contrato
 
@@ -22,8 +22,8 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 |Tipo de permissão                        | Permissões (da com menos para a com mais privilégios)              |
 |:--------------------------------------|:---------------------------------------------------------|
-|Delegada (conta corporativa ou de estudante)     | Agreement.ReadWrite.All |
-|Delegada (conta pessoal da Microsoft) | Sem suporte. |
+|Delegado (conta corporativa ou de estudante)     | Agreement.ReadWrite.All |
+|Delegado (conta pessoal da Microsoft) | Sem suporte. |
 |Aplicativo                            | Sem suporte. |
 
 ## <a name="http-request"></a>Solicitação HTTP
@@ -44,8 +44,8 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar um contr
 
 | Propriedade     | Tipo        | Descrição |
 |:-------------|:------------|:------------|
-|displayName|Cadeia de caracteres|Nome de exibição do contrato.|
-|isViewingBeforeAcceptanceRequired|Boolean|Indica se o usuário precisa expandir e exibir o contrato antes de aceitar.|
+|displayName|String|Nome de exibição do contrato.|
+|isViewingBeforeAcceptanceRequired|Booliano|Indica se o usuário precisa expandir e exibir o contrato antes de aceitar.|
 |fileName|String|Nome do arquivo de contrato (por exemplo, TOU.pdf).|
 |isDefault|Booliano|Indica se esse é o arquivo de contrato padrão se o idioma corresponde à preferência do cliente. Se nenhum dos arquivos for marcado como padrão, o primeiro será tratado como padrão.|
 |idioma|Cadeia de caracteres|O idioma do arquivo de contrato no formato languagecode2-country/regioncode2. languagecode2 é um código de duas letras minúsculo derivado da ISO 639-1. country/regioncode2 é derivado da ISO 3166 e geralmente consiste em duas letras maiúsculas, ou uma marca de idioma BCP-47 (por exemplo, en-US).|
@@ -97,6 +97,10 @@ Content-type: application/json
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/create-agreement-from-agreements-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[Ir](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/create-agreement-from-agreements-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

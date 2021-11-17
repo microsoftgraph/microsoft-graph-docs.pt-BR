@@ -1,16 +1,16 @@
 ---
 title: Obter itemPhone
 description: Recupere as propriedades e as relações de um objeto itemPhone.
-localization_priority: Normal
+ms.localizationpriority: medium
 author: kevinbellinger
 ms.prod: people
 doc_type: apiPageType
-ms.openlocfilehash: 0dd5f2941fe01fd15000c90dec6df2410b388c62
-ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
+ms.openlocfilehash: 27308fbc500ce649012792b6a63b53e25c37893c
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "50954524"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "60981291"
 ---
 # <a name="get-itemphonenumber"></a>Obter itemPhoneNumber
 
@@ -81,6 +81,10 @@ GET https://graph.microsoft.com/beta/me/profile/phones/{id}
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/get-itemphone-1-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[Ir](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/get-itemphone-1-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

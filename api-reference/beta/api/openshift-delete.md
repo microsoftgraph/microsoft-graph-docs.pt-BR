@@ -1,16 +1,16 @@
 ---
 title: Excluir openShift
-description: Excluir um objeto openShift.
-localization_priority: Normal
+description: Exclua um objeto openShift.
+ms.localizationpriority: medium
 author: akumar39
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 70fd651899010c827a2fbfed70776c5a1fe07a6b
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 8671c08a27b70d3106aba0ffc35599b887adc93a
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48962819"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "60980709"
 ---
 # <a name="delete-openshift"></a>Excluir openShift
 
@@ -18,7 +18,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Excluir um objeto [openShift](../resources/openshift.md) .
+[Exclua um objeto openShift.](../resources/openshift.md)
 
 ## <a name="permissions"></a>Permissões
 
@@ -81,6 +81,10 @@ DELETE https://graph.microsoft.com/beta/teams/{id}/schedule/openShifts/OPNSHFT_5
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/delete-openshift-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[Ir](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/delete-openshift-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

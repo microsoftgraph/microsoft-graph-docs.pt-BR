@@ -1,16 +1,16 @@
 ---
 title: 'attachment: createUploadSession'
 description: Crie uma sessão de carregamento para carregar iterativamente intervalos de um arquivo para anexar o arquivo à mensagem especificada.
-localization_priority: Normal
+ms.localizationpriority: medium
 author: abheek-das
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 07b10b2134db7cc8f629a3bef0c6f80ea82d0295
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: 00758998dd0fbb528868ebd5bdc0512e10a3be9f
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52048033"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "60982551"
 ---
 # <a name="attachment-createuploadsession"></a>attachment: createUploadSession
 
@@ -133,6 +133,10 @@ Content-type: application/json
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/attachment-createuploadsession-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[Ir](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/attachment-createuploadsession-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

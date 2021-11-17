@@ -1,16 +1,16 @@
 ---
 title: Adicionar o revisor accessReview
 description: 'No recurso de revisões de acesso do Azure AD, atualize um objeto accessReview existente para adicionar outro usuário como revisor.  Essa operação só é permitida para uma revisão de acesso que ainda não foi concluída e somente para uma revisão de acesso em que os revisadores são explicitamente especificados. Essa operação não é permitida para uma revisão de acesso na qual os usuários revisam seu próprio acesso e não se destinam a uma revisão de acesso na qual os proprietários do grupo são atribuídos como revistores. '
-localization_priority: Normal
+ms.localizationpriority: medium
 author: markwahl-msft
 ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: 90c64ee1bb52c9149e16658c5b8a1cd11a97c51b
-ms.sourcegitcommit: 13f474d3e71d32a5dfe2efebb351e3a1a5aa9685
+ms.openlocfilehash: 6772fb415184ab7d7d9fb234c237f0fbaf8b3805
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "52751122"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "60988172"
 ---
 # <a name="add-accessreview-reviewer"></a>Adicionar o revisor accessReview
 
@@ -88,6 +88,10 @@ Content-Type: application/json
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/add-accessreview-reviewer-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[Ir](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/add-accessreview-reviewer-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

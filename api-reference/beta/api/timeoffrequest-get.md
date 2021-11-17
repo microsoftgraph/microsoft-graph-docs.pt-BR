@@ -1,16 +1,16 @@
 ---
 title: Obter timeOffRequest
 description: Recupere as propriedades e as relações do objeto timeoffrequest.
-localization_priority: Normal
+ms.localizationpriority: medium
 author: akumar39
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: c961704a21112dbd738102ea0ab14c81bbd3a28f
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: 58f172eb275ad0d30ccb152a297a809f867a79e2
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52048936"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "60977333"
 ---
 # <a name="get-timeoffrequest"></a>Obter timeOffRequest
 
@@ -28,7 +28,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |:---------------------------------------|:--------------------------------------------|
 | Delegado (conta corporativa ou de estudante)     | Group.Read.All, Group.ReadWrite.All |
 | Delegado (conta pessoal da Microsoft) | Sem suporte. |
-|Application | Schedule.Read.All *, Schedule.ReadWrite.All*  |
+|Aplicativo | Schedule.Read.All *, Schedule.ReadWrite.All*  |
 
 >\***Importante:** As permissões de aplicativo estão atualmente apenas em visualização privada e não estão disponíveis para uso público.
 
@@ -87,6 +87,10 @@ GET https://graph.microsoft.com/beta/teams/{teamId}/schedule/timeOffRequests/{ti
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/get-timeoffrequest-1-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[Ir](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/get-timeoffrequest-1-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

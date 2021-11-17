@@ -2,15 +2,15 @@
 title: Listar estimateStatisticsOperation
 description: Obter o último objeto estimateStatisticsOperation associado a uma coleção de origem.
 author: mahage-msft
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: ediscovery
 doc_type: apiPageType
-ms.openlocfilehash: 2f3d5f1b755687b91a99e25132eb21ca9dc30713
-ms.sourcegitcommit: e440d855f1106390d842905d97ceb16f143db2e5
+ms.openlocfilehash: 93bfc2ac42a0ea4d5b82aa74abc7c1483c33b0dc
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/29/2021
-ms.locfileid: "52080334"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "60994261"
 ---
 # <a name="list-estimatestatisticsoperation"></a>Listar estimateStatisticsOperation
 
@@ -90,6 +90,10 @@ GET https://graph.microsoft.com/beta/compliance/ediscovery/cases/{caseId}/source
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/list-estimatestatisticsoperation-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[Ir](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/list-estimatestatisticsoperation-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

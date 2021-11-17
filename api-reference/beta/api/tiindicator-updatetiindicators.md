@@ -1,16 +1,16 @@
 ---
 title: 'tiIndicator: updateTiIndicators'
 description: Atualize vários indicadores de TI (inteligência contra ameaças) em uma solicitação em vez de várias solicitações.
-localization_priority: Normal
+ms.localizationpriority: medium
 author: preetikr
 ms.prod: security
 doc_type: apiPageType
-ms.openlocfilehash: 4c594c9ba75ea0ee1cd1fcb8390d4b9ff738d48c
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: e90fd3b95e302956a250f2acf08ff18daa0298ca
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52050770"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "60989432"
 ---
 # <a name="tiindicator-updatetiindicators"></a>tiIndicator: updateTiIndicators
 
@@ -28,7 +28,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |:---------------------------------------|:--------------------------------------------|
 | Delegado (conta corporativa ou de estudante)     | ThreatIndicators.ReadWrite.OwnedBy |
 | Delegado (conta pessoal da Microsoft) | Sem suporte. |
-| Application                            | ThreatIndicators.ReadWrite.OwnedBy |
+| Aplicativo                            | ThreatIndicators.ReadWrite.OwnedBy |
 
 ## <a name="http-request"></a>Solicitação HTTP
 
@@ -102,6 +102,10 @@ Content-type: application/json
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/tiindicator-updatetiindicators-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[Ir](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/tiindicator-updatetiindicators-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

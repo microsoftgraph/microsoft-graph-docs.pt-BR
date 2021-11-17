@@ -5,12 +5,12 @@ author: mkhribech
 ms.localizationpriority: medium
 ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: cd1c651d8d8d9bafe559551e2300da7437cf965e
-ms.sourcegitcommit: 0eb843a6f61f384bc28c0cce1ccb74f64bdb1fa6
+ms.openlocfilehash: 00fe202935a202b68da020a82c306a087dae340e
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/23/2021
-ms.locfileid: "60561672"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "60980878"
 ---
 # <a name="create-meetingregistrant"></a>Criar meetingRegistrant
 
@@ -33,7 +33,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |:----------------|:--------------------------------------------|
 | Delegado (conta corporativa ou de estudante) | OnlineMeetings.ReadWrite |
 | Delegado (conta pessoal da Microsoft) | Sem suporte. |
-| Application | OnlineMeetings.Read.All |
+| Aplicativo | OnlineMeetings.Read.All |
 
 > [!TIP]
 >
@@ -119,6 +119,10 @@ Content-Type: application/json
 [!INCLUDE [sample-code](../includes/snippets/java/add-registratrant-user-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# <a name="go"></a>[Ir](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/add-registratrant-user-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 
@@ -194,6 +198,10 @@ Content-Type: application/json
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/add-registratrant-app-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[Ir](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/add-registratrant-app-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

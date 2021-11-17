@@ -1,16 +1,16 @@
 ---
 title: Obter alerta
-description: Recuperar as propriedades e os relacionamentos de um objeto Alert
-localization_priority: Normal
+description: Recuperar as propriedades e as relações de um objeto de alerta
+ms.localizationpriority: medium
 author: preetikr
 ms.prod: security
 doc_type: apiPageType
-ms.openlocfilehash: bc3eefb78f439a9cdf3c995f03acfde605227974
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 4fc3f4f090f3e152b53ac459d2171419bddb0b11
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48962379"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "60995718"
 ---
 # <a name="get-alert"></a>Obter alerta
 
@@ -18,7 +18,7 @@ Namespace: microsoft.graph
 
  [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Recupere as propriedades e os relacionamentos de um objeto [Alert](../resources/alert.md) .
+Recupere as propriedades e as relações de um [objeto de](../resources/alert.md) alerta.
 
 ## <a name="permissions"></a>Permissões
 
@@ -42,7 +42,7 @@ GET /security/alerts/{id}
 
 | Nome      |Descrição|
 |:----------|:----------|
-| Autorização  | Portador {código}. Obrigatório.|
+| Autorização  | {code} do portador. Obrigatório.|
 
 ## <a name="request-body"></a>Corpo da solicitação
 
@@ -50,7 +50,7 @@ Não forneça um corpo de solicitação para esse método.
 
 ## <a name="response"></a>Resposta
 
-Se tiver êxito, este método retornará um `200 OK` código de resposta e um objeto **Alert** no corpo da resposta. Se um código de status diferente de 2xx ou 404 for retornado de um provedor ou se um provedor expirar, a resposta será um código de status `206 Partial Content` com a resposta do provedor em um cabeçalho de aviso. Para obter mais informações, consulte as [respostas de erro da API de segurança do Microsoft Graph](../resources/security-error-codes.md).
+Se tiver êxito, este método retornará `200 OK` um código de resposta e um **objeto** de alerta no corpo da resposta. Se um código de status diferente de 2xx ou 404 for retornado de um provedor ou se um provedor expirar, a resposta será um código de status `206 Partial Content` com a resposta do provedor em um cabeçalho de aviso. Para obter mais informações, consulte as [respostas de erro da API de segurança do Microsoft Graph](../resources/security-error-codes.md).
 
 ## <a name="example"></a>Exemplo
 
@@ -81,6 +81,10 @@ GET https://graph.microsoft.com/beta/security/alerts/{id}
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/get-alert-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[Ir](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/get-alert-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

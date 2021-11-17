@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: luleonpla
 ms.prod: applications
 doc_type: apiPageType
-ms.openlocfilehash: 87f4e2498f0daf4a0aafe9546a77441df89cd826
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: ec9cb9c563e81f8ec9aba24846e2532149982c8f
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59026753"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "60988668"
 ---
 # <a name="get-applicationtemplate"></a>Obter applicationTemplate
 
@@ -24,8 +24,8 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 | Tipo de permissão                        | Permissões (da com menos para a com mais privilégios) |
 | :------------------------------------- | :------------------------------------------ |
-| Delegada (conta corporativa ou de estudante)     | Nenhum.                                       |
-| Delegada (conta pessoal da Microsoft) | Sem suporte.                              |
+| Delegado (conta corporativa ou de estudante)     | Nenhum.                                       |
+| Delegado (conta pessoal da Microsoft) | Sem suporte.                              |
 | Aplicativo                            | Nenhum.                                       |
 
 Permissões adicionais não são necessárias para chamar essa API, desde que seu aplicativo tenha um token de acesso válido para chamar a Microsoft Graph.
@@ -88,6 +88,10 @@ GET https://graph.microsoft.com/v1.0/applicationTemplates/{id}
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/get-applicationtemplate-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[Ir](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/get-applicationtemplate-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

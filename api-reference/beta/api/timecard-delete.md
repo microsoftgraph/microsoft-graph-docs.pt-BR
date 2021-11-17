@@ -2,15 +2,15 @@
 title: Excluir timeCard
 description: Exclua uma instância timeCard na agenda.
 author: akumar39
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: fc76b48ac1bac83435446d50e93a93ef256a49be
-ms.sourcegitcommit: 503c72036c376a30e08c29df8e7730a7afcab66e
+ms.openlocfilehash: b479f55fe0ed2ecafc41f592090a51f09dba0ad7
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/10/2021
-ms.locfileid: "52869727"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "60989207"
 ---
 # <a name="delete-timecard"></a>Excluir timeCard
 
@@ -20,13 +20,13 @@ Namespace: microsoft.graph
 
 [Exclua uma instância de cartão](../resources/timeCard.md) de tempo em um [agendamento](../resources/schedule.md).
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>Permissões
 
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegada (conta corporativa ou de estudante) | Schedule.ReadWrite.All    |
+|Delegado (conta corporativa ou de estudante) | Schedule.ReadWrite.All    |
 |Delegado (conta pessoal da Microsoft) | Sem suporte.    |
 |Aplicativo | Schedule.ReadWrite.All* |
 
@@ -83,6 +83,10 @@ DELETE https://graph.microsoft.com/beta/teams/871dbd5c-3a6a-4392-bfe1-042452793a
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/timecard-delete-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[Ir](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/timecard-delete-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
