@@ -5,12 +5,12 @@ author: skadam-msft
 ms.localizationpriority: medium
 ms.prod: compliance
 doc_type: apiPageType
-ms.openlocfilehash: 570b6be4a034190ae69529b8c8fd18d31a692a76
-ms.sourcegitcommit: 0eb843a6f61f384bc28c0cce1ccb74f64bdb1fa6
+ms.openlocfilehash: c378dbd399a3ee972181298dd1d1ed27b2f82015
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/23/2021
-ms.locfileid: "60561847"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "61024075"
 ---
 # <a name="list-subjectrightsrequests"></a>Listar subjectRightsRequests
 Namespace: microsoft.graph
@@ -59,6 +59,8 @@ Se tiver êxito, este método retornará um código de resposta e uma `200 OK` c
 ## <a name="examples"></a>Exemplos
 
 ### <a name="request"></a>Solicitação
+
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "list_subjectRightsRequest"
@@ -67,6 +69,28 @@ Se tiver êxito, este método retornará um código de resposta e uma `200 OK` c
 ``` http
 GET https://graph.microsoft.com/v1.0/privacy/subjectRightsRequests
 ```
+# <a name="c"></a>[C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/list-subjectrightsrequest-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/list-subjectrightsrequest-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/list-subjectrightsrequest-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/list-subjectrightsrequest-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[Ir](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/list-subjectrightsrequest-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 
 ### <a name="response"></a>Resposta

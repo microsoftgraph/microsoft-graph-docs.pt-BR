@@ -1,16 +1,16 @@
 ---
 title: Obter personAnniversary
 description: Recupere as propriedades e as relações de um objeto personAnniversary.
-localization_priority: Normal
+ms.localizationpriority: medium
 author: kevinbellinger
 ms.prod: people
 doc_type: apiPageType
-ms.openlocfilehash: 10996da598bd23647981ae545fb7c811bc869f4f
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: bafee76de8f6216700201afae4626839d40e2730
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52053647"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "61011286"
 ---
 # <a name="get-personanniversary"></a>Obter personAnniversary
 
@@ -28,7 +28,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |:---------------------------------------|:---------------------------------------------------------------------------------|
 | Delegado (conta corporativa ou de estudante)     | User.Read, User.ReadWrite, User.ReadBasic.All, User.Read.All, User.ReadWrite.All |
 | Delegado (conta pessoal da Microsoft) | User.Read, User.ReadWrite, User.ReadBasic.All, User.Read.All, User.ReadWrite.All |
-| Application                            | User.ReadBasic.All, User.Read.All, User.ReadWrite.All                            |
+| Aplicativo                            | User.ReadBasic.All, User.Read.All, User.ReadWrite.All                            |
 
 ## <a name="http-request"></a>Solicitação HTTP
 
@@ -85,6 +85,10 @@ GET https://graph.microsoft.com/beta/me/profile/anniversaries/{id}
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/get-personanniversary-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[Ir](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/get-personanniversary-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

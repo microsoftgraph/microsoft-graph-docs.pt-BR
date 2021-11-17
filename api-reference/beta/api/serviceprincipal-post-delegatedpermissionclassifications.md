@@ -1,16 +1,16 @@
 ---
 title: Criar delegatedPermissionClassification
 description: Classifique uma permissão adicionando um delegatedPermissionClassification à entidade de serviço da API.
-localization_priority: Normal
+ms.localizationpriority: medium
 doc_type: apiPageType
 ms.prod: applications
 author: psignoret
-ms.openlocfilehash: 7d286984628d52948593671137e9fecdf173da31
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: a04ddd6a4dd93bb17772a5db29c3950817f13796
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52050854"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "61002515"
 ---
 # <a name="create-delegatedpermissionclassification"></a>Criar delegatedPermissionClassification
 
@@ -28,7 +28,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |:--------------------|:---------------------------------------------------------|
 |Delegado (conta corporativa ou de estudante) | PermissionGrantPolicy.ReadWrite.All |
 |Delegado (conta pessoal da Microsoft) | Sem suporte.    |
-|Application | PermissionGrantPolicy.ReadWrite.All |
+|Aplicativo | PermissionGrantPolicy.ReadWrite.All |
 
 ## <a name="http-request"></a>Solicitação HTTP
 
@@ -89,6 +89,10 @@ Content-Type: application/json
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/serviceprincipal-create-delegatedpermissionclassification-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[Ir](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/serviceprincipal-create-delegatedpermissionclassification-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

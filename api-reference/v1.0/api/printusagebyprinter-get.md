@@ -5,12 +5,12 @@ author: nilakhan
 ms.localizationpriority: medium
 ms.prod: cloud-printing
 doc_type: apiPageType
-ms.openlocfilehash: 1e9db1f263e5a385cb1376cc5765470138ca93d9
-ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
+ms.openlocfilehash: 89da2185f59f79463aac75337715160733d8ab80
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/12/2021
-ms.locfileid: "60940605"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "61023011"
 ---
 # <a name="get-printusagebyprinter"></a>Obter printUsageByPrinter
 Namespace: microsoft.graph
@@ -81,6 +81,10 @@ GET https://graph.microsoft.com/v1.0/reports/dailyPrintUsageByPrinter/{id}
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/get-printusagebyprinter-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[Ir](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/get-printusagebyprinter-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

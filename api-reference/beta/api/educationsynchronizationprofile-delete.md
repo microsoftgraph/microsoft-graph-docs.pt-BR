@@ -2,15 +2,15 @@
 title: Excluir um educationSynchronizationProfile
 description: Exclua um perfil de sincronização de dados escolares no locatário com base no identificador.
 author: mmast-msft
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: 2cc7d03b406888022fc8bab935af2b5118357c0c
-ms.sourcegitcommit: ceb192c3a41feb74cd720ddf2f0119c48bf1189b
+ms.openlocfilehash: 146506ad91322d9deb897fa8a155f4d24aa87510
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "50574276"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "61012218"
 ---
 # <a name="delete-a-educationsynchronizationprofile"></a>Excluir um educationSynchronizationProfile
 
@@ -71,6 +71,10 @@ DELETE https://graph.microsoft.com/beta/education/synchronizationProfiles/{id}
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/get-synchronizationprofile-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[Ir](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/get-synchronizationprofile-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

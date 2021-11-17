@@ -3,14 +3,14 @@ title: Instalar o aplicativo para o usuário
 description: Instale um aplicativo no escopo pessoal do usuário especificado.
 author: akjo
 doc_type: apiPageType
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: microsoft-teams
-ms.openlocfilehash: f8a5be32ba86bddf4c535bdb3fb0e9b8dba5bb37
-ms.sourcegitcommit: 456ec9510807d05623c0ed1dd049c9676f53f56b
+ms.openlocfilehash: cb900a40dedcc8fad4e12fbf6ce12af39fa5e015
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/22/2021
-ms.locfileid: "53059424"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "61031356"
 ---
 # <a name="install-app-for-user"></a>Instalar o aplicativo para o usuário
 
@@ -48,7 +48,7 @@ O corpo da solicitação deve conter a ID do aplicativo de catálogo existente a
 
 | Propriedade   | Tipo |Descrição|
 |:---------------|:--------|:----------|
-|teamsApp|String|A ID do aplicativo a ser acrescentado.|
+|teamsApp|Cadeia de caracteres|A ID do aplicativo a ser acrescentado.|
 
 ## <a name="response"></a>Resposta
 
@@ -87,6 +87,10 @@ Content-type: application/json
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/user-add-teamsapp-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[Ir](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/user-add-teamsapp-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

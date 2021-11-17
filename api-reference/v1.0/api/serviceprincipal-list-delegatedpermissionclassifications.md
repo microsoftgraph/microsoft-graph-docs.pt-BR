@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 doc_type: apiPageType
 ms.prod: applications
 author: psignoret
-ms.openlocfilehash: b03ae745a4ae27f4f565f6478bcd68a698b3761e
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 45997ae4fbcaf9725c8826bb943b875a004947d6
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59072684"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "61030635"
 ---
 # <a name="list-delegatedpermissionclassifications-collection-of-serviceprincipal"></a>Listar a coleção delegatedPermissionClassifications de servicePrincipal
 
@@ -24,8 +24,8 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegada (conta corporativa ou de estudante) | Application.Read.All, Directory.Read.All |
-|Delegada (conta pessoal da Microsoft) | Sem suporte.    |
+|Delegado (conta corporativa ou de estudante) | Application.Read.All, Directory.Read.All |
+|Delegado (conta pessoal da Microsoft) | Sem suporte.    |
 |Aplicativo | Application.Read.OwnedBy, Application.Read.All, Directory.Read.All |
 
 ## <a name="http-request"></a>Solicitação HTTP
@@ -83,6 +83,10 @@ GET https://graph.microsoft.com/v1.0/servicePrincipals/{id}/delegatedPermissionC
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/serviceprincipal-get-delegatedpermissionclassification-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[Ir](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/serviceprincipal-get-delegatedpermissionclassification-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

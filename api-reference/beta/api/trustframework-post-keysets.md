@@ -1,16 +1,16 @@
 ---
 title: Criar trustFrameworkKeySet
 description: Crie um novo **objeto trustFrameworkKeySet.**
-localization_priority: Normal
+ms.localizationpriority: medium
 author: Nickgmicrosoft
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: 909198910f311053af9cca71c1dae34beb65e13c
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: 1804e863761d09e735da269614ec8a38970e046e
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52053444"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "61010425"
 ---
 # <a name="create-trustframeworkkeyset"></a>Criar trustFrameworkKeySet
 
@@ -28,7 +28,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |:---------------------------------------|:--------------------------------------------|
 | Delegado (conta corporativa ou de estudante)     | TrustFrameworkKeySet.ReadWrite.All   |
 | Delegado (conta pessoal da Microsoft) | Sem suporte. |
-| Application                            | TrustFrameworkKeySet.ReadWrite.All    |
+| Aplicativo                            | TrustFrameworkKeySet.ReadWrite.All    |
 
 ## <a name="http-request"></a>Solicitação HTTP
 
@@ -90,6 +90,10 @@ Content-type: application/json
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/create-trustframeworkkeyset-from-trustframework-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[Ir](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/create-trustframeworkkeyset-from-trustframework-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

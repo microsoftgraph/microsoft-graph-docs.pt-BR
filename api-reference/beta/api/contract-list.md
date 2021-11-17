@@ -1,16 +1,16 @@
 ---
 title: Listar contratos
 description: Recupere uma lista de objetos de contrato associados a um locatário parceiro.
-localization_priority: Normal
+ms.localizationpriority: medium
 author: adimitui
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: 87f5676202a7153bec38a61854535af2c039f820
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: ee9434c4976e91ea0aa02dabc28d1218048cd02d
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52047046"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "61030405"
 ---
 # <a name="list-contracts"></a>Listar contratos
 
@@ -86,12 +86,16 @@ GET https://graph.microsoft.com/beta/contracts
 [!INCLUDE [sample-code](../includes/snippets/java/get-contract-2-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# <a name="go"></a>[Ir](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/get-contract-2-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 
 ##### <a name="response"></a>Resposta
 
-Observação: o objeto de resposta mostrado aqui pode ser encurtado para legibilidade.
+Observação: o objeto de resposta exibido aqui pode ser encurtado para legibilidade.
 <!-- {
   "blockType": "response",
   "truncated": true,

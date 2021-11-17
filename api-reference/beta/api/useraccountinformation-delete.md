@@ -1,16 +1,16 @@
 ---
 title: Excluir userAccountInformation
 description: Exclua um objeto userAccountInformation.
-localization_priority: Normal
+ms.localizationpriority: medium
 author: kevinbellinger
 ms.prod: people
 doc_type: apiPageType
-ms.openlocfilehash: 9f922b7ed4f55b6f7a4ad4b80b6b0c9bb2125052
-ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
+ms.openlocfilehash: f0716ece64596bb98538cc4221831f96a4129571
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50433494"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "61013316"
 ---
 # <a name="delete-useraccountinformation"></a>Excluir userAccountInformation
 
@@ -82,6 +82,10 @@ DELETE https://graph.microsoft.com/beta/me/profile/account/{id}
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/delete-useraccountinformation-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[Ir](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/delete-useraccountinformation-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

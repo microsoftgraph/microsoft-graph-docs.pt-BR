@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: jewan-microsoft
 ms.prod: onenote
 doc_type: apiPageType
-ms.openlocfilehash: b0a10b7d16517d39bf15bf460de9930346ab1701
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 2074ce0747bd0b09ae923bd2dc2fb1a36ed6da7e
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59067756"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "61013163"
 ---
 # <a name="get-resource"></a>Obter recurso
 
@@ -22,8 +22,8 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegada (conta corporativa ou de estudante) | Notes.Read, Notes.ReadWrite, Notes.Read.All, Notes.ReadWrite.All    |
-|Delegada (conta pessoal da Microsoft) | Notes.Read, Notes.ReadWrite    |
+|Delegado (conta corporativa ou de estudante) | Notes.Read, Notes.ReadWrite, Notes.Read.All, Notes.ReadWrite.All    |
+|Delegado (conta pessoal da Microsoft) | Notes.Read, Notes.ReadWrite    |
 |Aplicativo | Notes.Read.All, Notes.ReadWrite.All |
 
 ## <a name="http-request"></a>Solicitação HTTP
@@ -74,6 +74,10 @@ GET https://graph.microsoft.com/v1.0/me/onenote/resources/{id}/content
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/get-resource-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[Ir](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/get-resource-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

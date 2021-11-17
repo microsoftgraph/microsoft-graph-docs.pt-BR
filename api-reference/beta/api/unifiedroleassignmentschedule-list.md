@@ -5,12 +5,12 @@ author: carolinetempleton
 ms.localizationpriority: medium
 ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: f24fb73a144cd3aa0dfae87a18e22adb5c596f5e
-ms.sourcegitcommit: c7ff992ef63e480d070421ba99b28ee129cb6acb
+ms.openlocfilehash: fc5a0dd1da74e2eeb80756486e6b6ba3cfd66a7e
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "60695311"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "61017089"
 ---
 # <a name="list-unifiedroleassignmentschedules"></a>Listar unifiedRoleAssignmentSchedules
 Namespace: microsoft.graph
@@ -80,6 +80,10 @@ GET https://graph.microsoft.com/beta/roleManagement/directory/roleAssignmentSche
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/list-unifiedroleassignmentschedule-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[Ir](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/list-unifiedroleassignmentschedule-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
