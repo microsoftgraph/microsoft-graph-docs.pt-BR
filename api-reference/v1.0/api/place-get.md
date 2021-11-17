@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: vrod9429
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 422fa035f320378c8369d09571bf1836d5dc3e0a
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 352d46dd46bdcc7e4082bb7286ee8fed4e9bcc96
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59007870"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "60984251"
 ---
 # <a name="get-place"></a>Obter lugar
 
@@ -31,7 +31,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 | Tipo de permissão                        | Permissões (da com menos para a com mais privilégios) |
 |:---------------------------------------|:--------------------------------------------|
-| Delegada (conta corporativa ou de estudante)     | Place.Read.All |
+| Delegado (conta corporativa ou de estudante)     | Place.Read.All |
 | Delegado (conta pessoal da Microsoft) | Sem suporte |
 | Aplicativo                            | Place.Read.All |
 
@@ -93,6 +93,10 @@ GET https://graph.microsoft.com/v1.0/places/3162F1E1-C4C0-604B-51D8-91DA78989EB1
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/get-room-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[Ir](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/get-room-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -179,6 +183,10 @@ GET https://graph.microsoft.com/v1.0/places/bldg1@contoso.com
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/get-roomlist-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[Ir](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/get-roomlist-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

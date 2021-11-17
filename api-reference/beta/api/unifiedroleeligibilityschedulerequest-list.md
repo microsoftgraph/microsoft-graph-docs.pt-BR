@@ -5,12 +5,12 @@ author: carolinetempleton
 ms.localizationpriority: medium
 ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: fa1525a87cf254a187cd2838022125bab16f2eab
-ms.sourcegitcommit: c7ff992ef63e480d070421ba99b28ee129cb6acb
+ms.openlocfilehash: 33ae2191ff21ed98c53e35fff436373e06b1578c
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "60694453"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "61031510"
 ---
 # <a name="list-unifiedroleeligibilityschedulerequests"></a>Listar unifiedRoleEligibilityScheduleRequests
 Namespace: microsoft.graph
@@ -80,6 +80,10 @@ GET https://graph.microsoft.com/beta/roleManagement/directory/roleEligibilitySch
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/list-unifiedroleeligibilityschedulerequest-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[Ir](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/list-unifiedroleeligibilityschedulerequest-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

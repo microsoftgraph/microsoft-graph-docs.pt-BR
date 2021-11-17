@@ -5,12 +5,12 @@ author: mmast-msft
 ms.localizationpriority: medium
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: e501ea913501a3f8c134e10d7f52525470b12372
-ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
+ms.openlocfilehash: b284e5dd879d9cbd766cc14ae818eb0fc5c6a1c8
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/12/2021
-ms.locfileid: "60935946"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "61012232"
 ---
 # <a name="get-educationsynchronizationerrors"></a>Obter educationSynchronizationErrors
 
@@ -85,6 +85,10 @@ GET https://graph.microsoft.com/beta/education/synchronizationProfiles/{id}/erro
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/get-educationsynchronizationprofile-error-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[Ir](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/get-educationsynchronizationprofile-error-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

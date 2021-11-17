@@ -2,15 +2,15 @@
 title: 'participante: configureMixer'
 description: Configure como o áudio é misto para diferentes participantes em uma conversa de várias partes.
 author: ananmishr
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: d9b8efa45be5163e088bef06e2d71959e80cae58
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: 9b7bfd09c189f506933dce3103adc9141e374371
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52037911"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "61018280"
 ---
 # <a name="participant-configuremixer"></a>participante: configureMixer
 
@@ -48,7 +48,7 @@ Forneça um objeto JSON com os seguintes parâmetros no corpo da solicitação.
 | Parâmetro      | Tipo    |Descrição|
 |:---------------|:--------|:----------|
 |participantMixerLevels|[Coleção participantMixerLevel](../resources/participantmixerlevel.md)| Configuração de níveis de mistura para determinado participante de áudio.|
-|clientContext|String|O contexto do cliente.|
+|clientContext|Cadeia de caracteres|O contexto do cliente.|
 
 ## <a name="response"></a>Resposta
 Retorna `202 Accepted` o código de resposta e um header location com um uri para o [commsOperation](../resources/commsoperation.md) criado para essa solicitação.
@@ -103,6 +103,10 @@ Content-Length: 501
 
 # <a name="objective-c"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/participant-configuremixer-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[Ir](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/participant-configuremixer-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

@@ -5,12 +5,12 @@ author: akjo
 ms.localizationpriority: medium
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 805f9e4b406a8eee4898d84232fd58ae53fa3b9c
-ms.sourcegitcommit: f4999aa6fc05f845027db01aa489f7086f9850e1
+ms.openlocfilehash: 2144e203172abad2b9c4245dcd1cf8ec42b0d13d
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/13/2021
-ms.locfileid: "60289690"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "61029123"
 ---
 # <a name="teamsappinstallation-in-team-upgrade"></a>teamsAppInstallation na equipe: atualização
 
@@ -26,9 +26,9 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |:--------------------|:---------------------------------------------------------|
 |Delegado (conta corporativa ou de estudante) | TeamsAppInstallation.ReadWriteForTeam, Group.ReadWrite.All, Directory.ReadWrite.All |
 |Delegado (conta pessoal da Microsoft) | Sem suporte.    |
-|Application | TeamsAppInstallation.ReadWriteForTeam.All, Group.ReadWrite.All, Directory.ReadWrite.All |
+|Aplicativo | TeamsAppInstallation.ReadWriteForTeam.All, Group.ReadWrite.All, Directory.ReadWrite.All |
 
-> **Observação:** as permissões marcadas com ** são preteridas e não devem ser usadas.
+> **Observação**: as permissões marcadas com ** foram preteridas e não devem ser usadas.
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- { "blockType": "ignored" } -->
@@ -80,6 +80,10 @@ POST https://graph.microsoft.com/v1.0/teams/db5e04be-daa2-4a35-beb1-5e73cc381599
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/upgrade-teamsapp-in-team-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[Ir](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/upgrade-teamsapp-in-team-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

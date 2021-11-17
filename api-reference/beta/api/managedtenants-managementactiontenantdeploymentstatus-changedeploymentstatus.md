@@ -5,12 +5,12 @@ author: isaiahwilliams
 ms.localizationpriority: medium
 ms.prod: microsoft-365-lighthouse
 doc_type: apiPageType
-ms.openlocfilehash: 01c7efcbea39f9360e9c1356103db89e7021df1e
-ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
+ms.openlocfilehash: 9be7954a2f1446477470fdf7a89f1e30dfa1e7c5
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/12/2021
-ms.locfileid: "60947277"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "61022047"
 ---
 # <a name="managementactiontenantdeploymentstatus-changedeploymentstatus"></a>managementActionTenantDeploymentStatus: changeDeploymentStatus
 Namespace: microsoft.graph.managedTenants
@@ -25,7 +25,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |Tipo de permissão|Permissões (da com menos para a com mais privilégios)|
 |:---|:---|
 |Delegado (conta corporativa ou de estudante)|ManagedTenants.ReadWrite.All|
-|Delegada (conta pessoal da Microsoft)|Sem suporte.|
+|Delegado (conta pessoal da Microsoft)|Sem suporte.|
 |Aplicativo|Sem suporte.|
 
 ## <a name="http-request"></a>Solicitação HTTP
@@ -53,9 +53,9 @@ A tabela a seguir mostra os parâmetros que podem ser usados com esta ação.
 |:---|:---|:---|
 |tenantGroupId|Cadeia de caracteres|O identificador do grupo de locatários.|
 |tenantId|String|O Azure Active Directory do locatário para o [locatário gerenciado.](../resources/managedtenants-tenant.md)|
-|managementActionId|Cadeia de caracteres|O identificador da ação [de gerenciamento](../resources/managedtenants-managementaction.md).|
+|managementActionId|String|O identificador da ação [de gerenciamento](../resources/managedtenants-managementaction.md).|
 |managementTemplateId|Cadeia de caracteres|O identificador do modelo [de gerenciamento](../resources/managedtenants-managementtemplate.md).|
-|status|Cadeia de caracteres|O novo status para a [implantação do](../resources/managedtenants-managementaction.md) locatário de ações de gerenciamento.|
+|status|String|O novo status para a [implantação do](../resources/managedtenants-managementaction.md) locatário de ações de gerenciamento.|
 
 ## <a name="response"></a>Resposta
 
@@ -97,6 +97,10 @@ Content-Type: application/json
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/managementactiontenantdeploymentstatus-changedeploymentstatus-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[Ir](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/managementactiontenantdeploymentstatus-changedeploymentstatus-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

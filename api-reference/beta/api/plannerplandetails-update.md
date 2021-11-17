@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: TarkanSevilmis
 ms.prod: planner
 doc_type: apiPageType
-ms.openlocfilehash: a74b3a5cf6d006959e2e83177b42769a5b6731e4
-ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
+ms.openlocfilehash: a7c0ecb70ba896718330213ab844952020a804d0
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/12/2021
-ms.locfileid: "60935519"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "61018084"
 ---
 # <a name="update-plannerplandetails"></a>Atualizar plannerplandetails
 
@@ -93,6 +93,10 @@ If-Match: W/"JzEtVGFzayAgQEBAQEBAQEBAQEBAQEBAWCc="
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/update-plannerplandetails-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[Ir](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/update-plannerplandetails-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

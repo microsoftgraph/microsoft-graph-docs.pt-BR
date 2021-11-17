@@ -2,15 +2,15 @@
 title: 'onlineMeeting: createOrGet'
 description: Crie uma reunião online com uma ID externa especificada personalizada. Se a ID externa já existir, essa API retornará o objeto onlineMeeting com essa ID externa.
 author: mkhribech
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: 87d51c5796d220cf6ea2fb3fcba629e0fe0b0305
-ms.sourcegitcommit: 7abb0672a38a6d9b11a2e0d2cc221222cb8358bb
+ms.openlocfilehash: 17a468a917031985ffb0e507a04e6943413b1998
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/11/2021
-ms.locfileid: "52896554"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "61021704"
 ---
 # <a name="onlinemeeting-createorget"></a>onlineMeeting: createOrGet
 
@@ -66,7 +66,7 @@ Forneça um objeto JSON com os seguintes parâmetros no corpo da solicitação.
 | externalId    | Cadeia de caracteres                                                     | A ID externa. Uma ID personalizada. (Obrigatório)                                                             |
 | participants  | [meetingParticipants](../resources/meetingparticipants.md) | Os participantes associados à reunião online.  Isso inclui o organizador e os participantes. |
 | startDateTime | DateTime                                                   | O horário de início da reunião em UTC.                                                                       |
-| Assunto       | Cadeia de caracteres                                                     | O assunto da reunião online.                                                                   |
+| assunto       | Cadeia de caracteres                                                     | O assunto da reunião online.                                                                   |
 
 > **Observações:**
 >
@@ -132,6 +132,10 @@ Content-Type: application/json
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/create-or-get-onlinemeeting-1-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[Ir](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/create-or-get-onlinemeeting-1-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -257,6 +261,10 @@ Content-Type: application/json
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/create-or-get-onlinemeeting-2-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[Ir](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/create-or-get-onlinemeeting-2-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

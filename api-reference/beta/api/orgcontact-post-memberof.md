@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: dkershaw10
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: f73f36ace536764c0ab7572d423f28a80e90f56e
-ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
+ms.openlocfilehash: 2e11ff5b9e7d6cf38c409acf95bd3e5575a770fd
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/12/2021
-ms.locfileid: "60938662"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "61018420"
 ---
 # <a name="create-memberof"></a>Criar memberOf
 
@@ -70,6 +70,10 @@ Content-type: application/json
 
 # <a name="c"></a>[C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/create-directoryobject-from-orgcontact-2-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[Ir](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/create-directoryobject-from-orgcontact-2-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

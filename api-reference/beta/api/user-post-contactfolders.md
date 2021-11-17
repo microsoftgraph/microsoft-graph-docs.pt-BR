@@ -1,16 +1,16 @@
 ---
 title: Criar ContactFolder
 description: Crie uma nova contactFolder sob a pasta de contatos padrão do usuário.
-localization_priority: Normal
+ms.localizationpriority: medium
 author: kevinbellinger
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 9eb5f7066c190adbb6786e5d44e15763703fa204
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: 80293849d26c1e709833e0acfbbe71f0eab59bba
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52053346"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "61031413"
 ---
 # <a name="create-contactfolder"></a>Criar ContactFolder
 
@@ -84,12 +84,16 @@ Content-type: application/json
 [!INCLUDE [sample-code](../includes/snippets/java/create-contactfolder-from-user-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# <a name="go"></a>[Ir](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/create-contactfolder-from-user-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 
 No corpo da solicitação, forneça uma representação JSON do objeto [contactFolder](../resources/contactfolder.md).
 ### <a name="response"></a>Resposta
-Veja a seguir um exemplo da resposta. Observação: o objeto de resposta mostrado aqui pode ser encurtado para legibilidade.
+Aqui está um exemplo da resposta. Observação: o objeto de resposta mostrado aqui pode ser reduzido para facilitar a leitura.
 <!-- {
   "blockType": "response",
   "truncated": true,

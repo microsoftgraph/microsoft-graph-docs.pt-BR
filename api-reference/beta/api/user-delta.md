@@ -1,16 +1,16 @@
 ---
 title: 'user: delta'
 description: Veja os usuários recentemente criados, atualizados ou excluídos sem ter que executar uma leitura completa da coleção de usuários inteira.
-localization_priority: Normal
+ms.localizationpriority: medium
 author: jpettere
 ms.prod: users
 doc_type: apiPageType
-ms.openlocfilehash: ed91c8017780ebb1aa1dbdbbfe8430b5ab4b44c9
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: 3d540ebe848aa4af16cda1df90863aeb60b97c5f
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52048894"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "61009895"
 ---
 # <a name="user-delta"></a>user: delta
 
@@ -136,6 +136,10 @@ GET https://graph.microsoft.com/beta/users/delta
 [!INCLUDE [sample-code](../includes/snippets/java/user-delta-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# <a name="go"></a>[Ir](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/user-delta-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 
@@ -210,6 +214,10 @@ GET https://graph.microsoft.com/beta/users/delta?$select=displayName,jobTitle,mo
 [!INCLUDE [sample-code](../includes/snippets/java/user-delta-select-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# <a name="go"></a>[Ir](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/user-delta-select-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 
@@ -271,6 +279,10 @@ Prefer: return=minimal
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/user-delta-minimal-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[Ir](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/user-delta-minimal-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

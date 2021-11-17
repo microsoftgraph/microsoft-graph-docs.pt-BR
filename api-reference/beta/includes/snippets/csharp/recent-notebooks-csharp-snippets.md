@@ -1,18 +1,18 @@
 ---
 description: Arquivo gerado automaticamente. NÃO MODIFICAR
-ms.openlocfilehash: 2f3f6fcbbb7137aa848e66b10e961c266eeaa75d93d7a614a094b7efdcb4dea9
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 15c62d0c9d84dcee968247047b40dc92e3f4e0e6
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "57273293"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "61021822"
 ---
 ```csharp
 
 GraphServiceClient graphClient = new GraphServiceClient( authProvider );
 
-var getrecentnotebooks = await graphClient.Me.Onenote.Notebooks
-    .Getrecentnotebooks(true)
+var getRecentNotebooks = await graphClient.Me.Onenote.Notebooks
+    .GetRecentNotebooks(true)
     .Request()
     .GetAsync();
 

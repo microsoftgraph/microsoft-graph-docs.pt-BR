@@ -1,16 +1,16 @@
 ---
 title: Obter extensão aberta
 description: Obtenha uma extensão aberta (objeto openTypeExtension) identificada por nome ou nome totalmente qualificado.
-localization_priority: Normal
+ms.localizationpriority: medium
 author: dkershaw10
 doc_type: apiPageType
 ms.prod: extensions
-ms.openlocfilehash: 461cde694e9c9aff3738e5e2a3642b0ae82828b5
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: 4ea12ffcd7d9b6fef214129f5817f284d3e038b3
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52051120"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "61034070"
 ---
 # <a name="get-open-extension"></a>Obter extensão aberta
 
@@ -175,6 +175,10 @@ GET https://graph.microsoft.com/beta/me/messages/AAMkAGE1M2IyNGNmLTI5MTktNDUyZi1
 [!INCLUDE [sample-code](../includes/snippets/java/get-opentypeextension-1-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# <a name="go"></a>[Ir](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/get-opentypeextension-1-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 
@@ -241,6 +245,10 @@ GET https://graph.microsoft.com/beta/groups/f5480dfd-7d77-4d0b-ba2e-3391953cc74a
 [!INCLUDE [sample-code](../includes/snippets/java/get-opentypeextension-2-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# <a name="go"></a>[Ir](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/get-opentypeextension-2-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 
@@ -299,13 +307,17 @@ GET https://graph.microsoft.com/beta/me/messages/AAMkAGE1M2IyNGNmLTI5MTktNDUyZi1
 [!INCLUDE [sample-code](../includes/snippets/java/get-opentypeextension-3-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# <a name="go"></a>[Ir](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/get-opentypeextension-3-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 
 
 #### <a name="response-3"></a>Resposta 3
 
-Veja a seguir a resposta do terceiro exemplo. Observação: o objeto de resposta mostrado aqui pode ser encurtado para legibilidade.
+E aqui está a resposta do terceiro exemplo. Observação: o objeto de resposta exibido aqui pode ser encurtado para legibilidade.
 
 <!-- {
   "blockType": "response",
@@ -416,6 +428,10 @@ GET https://graph.microsoft.com/beta/groups/37df2ff0-0de0-4c33-8aee-75289364aef6
 [!INCLUDE [sample-code](../includes/snippets/java/get-opentypeextension-4-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# <a name="go"></a>[Ir](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/get-opentypeextension-4-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 
@@ -453,20 +469,28 @@ Content-Type: application/json
 
 O quinto exemplo analisa todas as mensagens na caixa de correio do usuário conectado para localizar aquelas uma contêm uma extensão correspondente a um filtro e as expande com a inclusão dessa extensão. O filtro retorna extensões cuja propriedade **id** corresponde ao nome da extensão `Com.Contoso.Referral`.
 
+
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "get_opentypeextension_5"
 }-->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/me/messages?$filter=Extensions/any(f:f/id%20eq%20'Com.Contoso.Referral')&$expand=Extensions($filter=id%20eq%20'Com.Contoso.Referral')
 ```
+# <a name="go"></a>[Ir](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/get-opentypeextension-5-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 
 #### <a name="response-5"></a>Resposta 5
 
 Nessa resposta do quinto exemplo, há apenas uma mensagem na caixa de correio do usuário que tem uma extensão cuja **id** é igual a `Com.Contoso.Referral`.
 
-Observação: o objeto de resposta mostrado aqui pode ser encurtado para legibilidade.
+Observação: o objeto de resposta exibido aqui pode ser encurtado para legibilidade.
 
 <!-- {
   "blockType": "response",

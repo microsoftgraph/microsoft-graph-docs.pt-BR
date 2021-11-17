@@ -2,15 +2,15 @@
 title: 'updatableAssetGroup: addMembers'
 description: Adicione membros a um updatableAssetGroup.
 author: Alice-at-Microsoft
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: w10
 doc_type: apiPageType
-ms.openlocfilehash: 5a6d7b7ca1a00a0ce3fe57579ae444bcb2f13a24
-ms.sourcegitcommit: 486fe9c77d4d89c5416bb83e8c716e6918c47370
+ms.openlocfilehash: 4a84a65e1beec2c7a0ab60c9f864d028cbd7f60e
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/15/2021
-ms.locfileid: "53441281"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "61029928"
 ---
 # <a name="updatableassetgroup-addmembers"></a>updatableAssetGroup: addMembers
 Namespace: microsoft.graph.windowsUpdates
@@ -25,13 +25,13 @@ Adicionar um dispositivo do Azure AD como membro de um grupo de ativos atualizá
 
 Você também pode usar o [método addMembersById](windowsupdates-updatableassetgroup-addmembersbyid.md) para adicionar membros.
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão|Permissões (da com menos para a com mais privilégios)|
 |:---|:---|
 |Delegado (conta corporativa ou de estudante)|WindowsUpdates.ReadWrite.All|
-|Delegada (conta pessoal da Microsoft)|Sem suporte.|
+|Delegado (conta pessoal da Microsoft)|Sem suporte.|
 |Aplicativo|WindowsUpdates.ReadWrite.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
@@ -100,6 +100,10 @@ Content-Type: application/json
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/updatableassetgroup-addmembers-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[Ir](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/updatableassetgroup-addmembers-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: dkershaw10
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: 91195f1c2ea5b58f2eb88e33e1a43483d89d6ef8
-ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
+ms.openlocfilehash: 990b42962697d88298426a80bdaa545a7a43025b
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/12/2021
-ms.locfileid: "60942916"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "61023123"
 ---
 # <a name="get-orgcontact"></a>Obter orgContact
 
@@ -24,7 +24,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
 |:--------------------|:---------------------------------------------------------|
 |Delegado (conta corporativa ou de estudante) | OrgContact.Read.All, Directory.Read.All, Directory.ReadWrite.All, Directory.AccessAsUser.All    |
-|Delegada (conta pessoal da Microsoft) | Sem suporte.    |
+|Delegado (conta pessoal da Microsoft) | Sem suporte.    |
 |Aplicativo | OrgContact.Read.All, Directory.Read.All, Directory.ReadWrite.All |
 
 ## <a name="http-request"></a>Solicitação HTTP
@@ -73,6 +73,10 @@ GET https://graph.microsoft.com/v1.0/contacts/{id}
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/get-orgcontact-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[Ir](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/get-orgcontact-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

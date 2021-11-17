@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: TarkanSevilmis
 ms.prod: planner
 doc_type: apiPageType
-ms.openlocfilehash: 386ca3aa2d21f7d4be9d3c9149362bbf2e8a57af
-ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
+ms.openlocfilehash: a866ed93d00d8409da6d8a70acf041503429ee4c
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/12/2021
-ms.locfileid: "60928123"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "60984147"
 ---
 # <a name="get-plannertask"></a>Obter plannerTask
 
@@ -72,6 +72,10 @@ GET https://graph.microsoft.com/v1.0/planner/tasks/{task-id}
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/get-plannertask-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[Ir](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/get-plannertask-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

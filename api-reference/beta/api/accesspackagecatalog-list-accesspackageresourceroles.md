@@ -1,16 +1,16 @@
 ---
 title: Listar accessPackageResourceRoles
 description: Recupere uma lista de objetos accessPackageResourceRole.
-localization_priority: Normal
+ms.localizationpriority: medium
 author: markwahl-msft
 ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: 45e8f2364997518bbc47d61906a9e3f4986e64e6
-ms.sourcegitcommit: 486fe9c77d4d89c5416bb83e8c716e6918c47370
+ms.openlocfilehash: 15bbdca1a126274f8e111f6236e2f5e35fa83f2a
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/15/2021
-ms.locfileid: "53439249"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "60983343"
 ---
 # <a name="list-accesspackageresourceroles"></a>Listar accessPackageResourceRoles
 
@@ -20,14 +20,14 @@ Namespace: microsoft.graph
 
 Recupere uma lista de [objetos accessPackageResourceRole](../resources/accesspackageresourcerole.md) de [um accessPackageResource](../resources/accesspackageresource.md) em [um accessPackageCatalog](../resources/accesspackagecatalog.md). O recurso deve ter sido adicionado ao catálogo criando [um accessPackageResourceRequest](accesspackageresourcerequest-post.md). Essa lista de funções pode ser usada pelo chamador para selecionar uma função, que é necessária ao criar posteriormente um [accessPackageResourceRoleScope](accesspackage-post-accesspackageresourcerolescopes.md).
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>Permissões
 
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 | Tipo de permissão                        | Permissões (da com menos para a com mais privilégios) |
 |:---------------------------------------|:--------------------------------------------|
-| Delegada (conta corporativa ou de estudante)     | EntitlementManagement.Read.All, EntitlementManagement.ReadWrite.All |
-| Delegada (conta pessoal da Microsoft) | Sem suporte. |
+| Delegado (conta corporativa ou de estudante)     | EntitlementManagement.Read.All, EntitlementManagement.ReadWrite.All |
+| Delegado (conta pessoal da Microsoft) | Sem suporte. |
 | Aplicativo                            | EntitlementManagement.Read.All, EntitlementManagement.ReadWrite.All |
 
 ## <a name="http-request"></a>Solicitação HTTP
@@ -87,6 +87,10 @@ GET https://graph.microsoft.com/beta/identityGovernance/entitlementManagement/ac
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/get-accesspackageresourceroles-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[Ir](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/get-accesspackageresourceroles-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -155,6 +159,10 @@ GET https://graph.microsoft.com/beta/identityGovernance/entitlementManagement/ac
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/get-accesspackageresourceroles2-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[Ir](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/get-accesspackageresourceroles2-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
