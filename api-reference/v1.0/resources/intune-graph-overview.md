@@ -1,16 +1,16 @@
 ---
-title: Uso da API do Graph para Intune
-description: " Não há suporte para as implantações híbridas do Intune. "
+title: Trabalhando com o Intune no Microsoft Graph
+description: A API do Microsoft Graph para Intune permite o acesso programático a informações do Intune para seu locatário; a API executa as mesmas operações do Intune disponíveis pelo Portal do Azure.
 author: dougeby
 ms.localizationpriority: high
 ms.prod: intune
 doc_type: conceptualPageType
-ms.openlocfilehash: 6f283c2002212e232fdf87dc4008409590c19c45
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 974e83fb042605232a49383db8e808a916b0a54d
+ms.sourcegitcommit: 42e0e15ff90815e0126c34b928405486cfb1ed86
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59052969"
+ms.lasthandoff: 11/17/2021
+ms.locfileid: "61044775"
 ---
 # <a name="working-with-intune-in-microsoft-graph"></a>Trabalhando com o Intune no Microsoft Graph  
 
@@ -19,6 +19,8 @@ ms.locfileid: "59052969"
 A API do Microsoft Graph para Intune permite o acesso programático a informações do Intune para seu locatário; a API executa as mesmas operações do Intune disponíveis pelo **Portal do Azure**.  
 
 Em cenários de gerenciamento de dispositivo móvel (MDM), a API do Microsoft Graph para Intune oferece suporte a implantações autônomas; não há suporte para[implantações híbridas](/sccm/mdm/understand/choose-between-standalone-intune-and-hybrid-mobile-device-management) do Intune. 
+
+
 
 ## <a name="using-the-microsoft-graph-api-for-intune"></a>Uso da API do Microsoft Graph para Intune
 
@@ -45,6 +47,15 @@ O Intune tem suporte para [permissões delegadas](/graph/auth-v2-user) e para [p
 ## <a name="using-permissions"></a>Usando permissões
 
 A API do Microsoft Graph controla o acesso a recursos por meio de permissões. Como desenvolvedor, você deve especificar as permissões necessárias para acessar os recursos do Intune. Normalmente, você deve especificar as permissões no portal do Azure Active Directory. Para saber mais, confira [Referência de permissões do Microsoft Graph](/graph/permissions-reference).
+
+## <a name="interaction-between-microsoft-graph-apis-for-windows-updates"></a>Interação entre APIs do Microsoft Graph para as atualizações do Windows
+
+O Microsoft Graph inclui dois conjuntos de APIs que você pode utilizar para gerenciar as atualizações do Windows: 
+
+- [APIs do Intune](/graph/intune-concept-overview)
+- [APIs de atualizações do Windows](/graph/windowsupdates-concept-overview)
+
+Você pode utilizar qualquer uma das APIs para gerenciar as atualizações do Windows; no entanto, essas duas APIs não são compatíveis entre si. Cada um pode sobrescrever as configurações feitas pelo outro sem fornecer visibilidade a essa ação. O uso de ambas as APIs para gerenciar atualizações pode resultar em comportamentos inesperados, incluindo o que parece ser configurações temporárias para implantações de atualização que são canceladas ou modificadas sem uma causa identificada.   
 
 ## <a name="whats-new"></a>Novidades
 Saiba mais sobre os [novos recursos e atualizações mais recentes](/graph/whats-new-overview) para este conjunto de APIs.
