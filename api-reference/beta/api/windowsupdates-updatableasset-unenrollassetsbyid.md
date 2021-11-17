@@ -5,12 +5,12 @@ author: Alice-at-Microsoft
 ms.localizationpriority: medium
 ms.prod: w10
 doc_type: apiPageType
-ms.openlocfilehash: f741172cc9922483aa55ea47791d033150bd78f8
-ms.sourcegitcommit: c6a8c1cc13ace38d6c4371139ee84707c5c93352
+ms.openlocfilehash: 7e1fe5a6862cf28ad4cb1def1a7e5c3bf493a36d
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/10/2021
-ms.locfileid: "60890413"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "61016522"
 ---
 # <a name="updatableasset-unenrollassetsbyid"></a>updatableAsset: unenrollAssetsById
 Namespace: microsoft.graph.windowsUpdates
@@ -54,7 +54,7 @@ A tabela a seguir mostra os parâmetros que podem ser usados com esta ação.
 |Parâmetro|Tipo|Descrição|
 |:---|:---|:---|
 |updateCategory|microsoft.graph.windowsUpdates.updateCategory|A categoria de atualizações para o serviço parar de gerenciar. Oferece suporte a um subconjunto dos valores **para updateCategory**. Os valores possíveis são: `feature` e `unknownFutureValue`.|
-|memberEntityType|Cadeia de Caracteres|O tipo completo dos **recursos updatableAsset.** Os valores possíveis são: `#microsoft.graph.windowsUpdates.azureADDevice` .|
+|memberEntityType|Cadeia de caracteres|O tipo completo dos **recursos updatableAsset.** Os valores possíveis são: `#microsoft.graph.windowsUpdates.azureADDevice` .|
 |ids|Coleção de cadeias de caracteres|Lista de identificadores correspondentes aos recursos **updatableAsset** a ser desempaculado do gerenciamento de atualizações pelo serviço para a **atualização determinadaCategory**.|
 
 ## <a name="response"></a>Resposta
@@ -99,6 +99,10 @@ Content-Type: application/json
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/updatableasset-unenrollassetsbyid-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[Ir](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/updatableasset-unenrollassetsbyid-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

@@ -5,12 +5,12 @@ author: abheek-das
 ms.localizationpriority: medium
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: a5ed59c2e92799ff22226683fc3a1edc02373f50
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 23d719bd4885bdbf6a862b686dd1d2574d2bbcbe
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59007424"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "61022822"
 ---
 # <a name="user-getmailtips"></a>user: getMailTips
 
@@ -25,7 +25,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegada (conta corporativa ou de estudante) | Mail.Read, Mail.Read.Shared    |
+|Delegado (conta corporativa ou de estudante) | Mail.Read, Mail.Read.Shared    |
 |Delegado (conta pessoal da Microsoft) | Mail.Read    |
 |Aplicativo | Mail.Read |
 
@@ -48,7 +48,7 @@ Forneça um objeto JSON com os seguintes parâmetros no corpo da solicitação.
 
 | Propriedade     | Tipo   |Descrição|
 |:---------------|:--------|:----------|
-|EmailAddresses|Coleção String|Uma coleção de endereços SMTP de destinatários para receber as Dicas de Email.|
+|EndereçosEmail|Conjunto de cadeias de caracteres|Uma coleção de endereços SMTP de destinatários para receber as Dicas de Email.|
 |MailTipsOptions|Cadeia de caracteres|Uma enumeração de sinalizadores que representa as dicas de email solicitadas. Os valores possíveis são: `automaticReplies` , , , , , , , , , `customMailTip` e `deliveryRestriction` `externalMemberCount` `mailboxFullStatus` `maxMessageSize` `moderationStatus` `recipientScope` `recipientSuggestions` `totalMemberCount` .|
 
 ## <a name="response"></a>Resposta
@@ -90,6 +90,10 @@ Content-Type: application/json
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/user-getmailtips-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[Ir](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/user-getmailtips-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

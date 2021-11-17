@@ -1,16 +1,16 @@
 ---
 title: Enumerar sites
 description: Listar os [sites] disponíveis em uma organização que corresponderam aos critérios de filtro e às opções de consulta fornecidas.
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: sharepoint
 doc_type: apiPageType
 author: JeremyKelley
-ms.openlocfilehash: c1b8af50227346e4440e4ca98873b20160ecd81b
-ms.sourcegitcommit: d014f72cf2cd130bedb02651092c0be12967b679
+ms.openlocfilehash: 2cf428c7efa1685664f6c9332777f94c381c2509
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "50475776"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "61033722"
 ---
 # <a name="enumerate-sites"></a>Enumerar sites
 
@@ -38,7 +38,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |Tipo de permissão                        | Permissões (da com menos para a com mais privilégios)
 |:--------------------------------------|:-------------------------------------
 |Delegado (conta corporativa ou de estudante)     | Sites.Read.All, Sites.ReadWrite.All
-|Delegada (conta pessoal da Microsoft) | Sem suporte.
+|Delegado (conta pessoal da Microsoft) | Sem suporte.
 |Aplicativo                            | Sites.Read.All, Sites.ReadWrite.All
 
 ## <a name="http-request"></a>Solicitação HTTP
@@ -74,6 +74,10 @@ GET https://graph.microsoft.com/beta/sites?$select=siteCollection,webUrl&$filter
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/list-sites-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[Ir](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/list-sites-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

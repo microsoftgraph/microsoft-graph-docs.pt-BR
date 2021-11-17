@@ -1,16 +1,16 @@
 ---
 title: 'group: addFavorite'
 description: Adicionar o grupo à lista de grupos de favoritos do usuário atual. Apenas grupos do Microsoft 365 são suportados.
-localization_priority: Normal
+ms.localizationpriority: medium
 author: Jordanndahl
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: 1f8c0b327fabd60f52747cc7c78ff398709fe3ff
-ms.sourcegitcommit: 94c4acf8bd03c10a44b12952b6cb4827df55b978
+ms.openlocfilehash: 8a4e40d30997f914e96792326e0f983edcc97978
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/06/2021
-ms.locfileid: "52786969"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "61034388"
 ---
 # <a name="group-addfavorite"></a>group: addFavorite
 
@@ -20,7 +20,7 @@ Namespace: microsoft.graph
 
 Adicionar o grupo à lista de grupos de favoritos do usuário atual. Apenas grupos do Microsoft 365 são suportados.
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
@@ -73,6 +73,10 @@ POST https://graph.microsoft.com/beta/groups/{id}/addFavorite
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/group-addfavorite-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[Ir](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/group-addfavorite-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

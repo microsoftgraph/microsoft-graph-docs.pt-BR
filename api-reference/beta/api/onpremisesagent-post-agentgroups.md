@@ -1,16 +1,16 @@
 ---
 title: Atribuir onPremisesAgent ao onPremisesAgentGroup
 description: Atribua onPremisesAgent ao onPremisesAgentGroup.
-localization_priority: Normal
+ms.localizationpriority: medium
 author: japere
 ms.prod: applications
 doc_type: apiPageType
-ms.openlocfilehash: 9788e4485ba5c81453aac5087661bf3ea3e98299
-ms.sourcegitcommit: 94c4acf8bd03c10a44b12952b6cb4827df55b978
+ms.openlocfilehash: 66856235e17044366ca8d3caf6a6def99fe1906a
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/06/2021
-ms.locfileid: "52787532"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "61026630"
 ---
 # <a name="assign-onpremisesagent-to-onpremisesagentgroup"></a>Atribuir onPremisesAgent ao onPremisesAgentGroup
 
@@ -20,7 +20,7 @@ Namespace: microsoft.graph
 
 Atribua [um onPremisesAgent](../resources/onpremisesagent.md) a um [objeto onPremisesAgentGroup.](../resources/onpremisesagentgroup.md)
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>Permissões
 
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
@@ -73,6 +73,10 @@ POST https://graph.microsoft.com/beta/onPremisesPublishingProfiles/provisioning/
 
 # <a name="objective-c"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/create-onpremisesagentgroup-from-onpremisesagent-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[Ir](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/create-onpremisesagentgroup-from-onpremisesagent-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

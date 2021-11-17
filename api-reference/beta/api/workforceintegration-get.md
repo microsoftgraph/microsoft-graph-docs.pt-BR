@@ -1,16 +1,16 @@
 ---
 title: Obter workforceIntegration
 description: Recupere as propriedades e as relações do objeto workforceintegration.
-localization_priority: Normal
+ms.localizationpriority: medium
 author: akumar39
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 23b7dfdd3de06aa0ad94e79ede185e7a5e22504c
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: abee25939b7001a08323ff8bacc7e2c20d18ed10
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52049531"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "61033253"
 ---
 # <a name="get-workforceintegration"></a>Obter workforceIntegration
 
@@ -85,6 +85,10 @@ GET https://graph.microsoft.com/beta/teamwork/workforceIntegrations/{workforcein
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/get-workforceintegration-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[Ir](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/get-workforceintegration-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

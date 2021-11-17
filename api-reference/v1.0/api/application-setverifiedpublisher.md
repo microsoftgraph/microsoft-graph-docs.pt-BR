@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: jesakowi
 ms.prod: applications
 doc_type: apiPageType
-ms.openlocfilehash: 3b506dcbf3f33927cbfe83d30a9ba759f5b544d3
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 1d5c8fbdc6e942f908b6a8b2d694d0b3983bbd08
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59016936"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "61008864"
 ---
 # <a name="application-setverifiedpublisher"></a>application: setVerifiedPublisher
 
@@ -22,7 +22,7 @@ De definir [o verificadoPublisher](../resources/verifiedPublisher.md) em um [apl
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegada (conta corporativa ou de estudante) | Application.ReadWrite.All |
+|Delegado (conta corporativa ou de estudante) | Application.ReadWrite.All |
 |Delegado (conta pessoal da Microsoft) | Sem suporte |
 |Aplicativo | Sem suporte |
 
@@ -88,6 +88,10 @@ Content-type: application/json
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/application-setverifiedpublisher-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[Ir](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/application-setverifiedpublisher-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

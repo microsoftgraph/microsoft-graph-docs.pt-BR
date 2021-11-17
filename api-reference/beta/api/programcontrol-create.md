@@ -1,16 +1,16 @@
 ---
 title: Criar programControl
 description: No recurso de revisões de acesso do Azure AD, crie um novo objeto programControl.  Isso vincula uma revisão de acesso a um programa.
-localization_priority: Normal
+ms.localizationpriority: medium
 doc_type: apiPageType
 ms.prod: governance
 author: markwahl-msft
-ms.openlocfilehash: cd4a00faeee1b97adc525727c1c01d69f26e4a27
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: cffd9631095e84a99f69d77f57302c85b2484f93
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52049818"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "61027862"
 ---
 # <a name="create-programcontrol"></a>Criar programControl
 
@@ -34,7 +34,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |:--------------------------------------|:---------------------------------------------------------|
 |Delegado (conta corporativa ou de estudante)     | ProgramControl.ReadWrite.All  |
 |Delegado (conta pessoal da Microsoft) | Sem suporte. |
-|Application                            |  ProgramControl.ReadWrite.All  |
+|Aplicativo                            |  ProgramControl.ReadWrite.All  |
 
 O usuário inscreveu também deve estar em uma função de diretório que permita que ele crie um **programControl**. 
 
@@ -97,6 +97,10 @@ Content-type: application/json
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/create-programcontrol-from-programcontrols-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[Ir](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/create-programcontrol-from-programcontrols-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
