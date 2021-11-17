@@ -2,15 +2,15 @@
 title: Listar externalSponsors
 description: Recupere uma lista de externalSponsors de connectedOrganization.
 author: markwahl-msft
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: 6eeb457567766c9c16a581d0fb864ebde1d16db5
-ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
+ms.openlocfilehash: f552c6fbbdfe01b796122c53861415ffa382e56f
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50437451"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "61005679"
 ---
 # <a name="list-externalsponsors"></a>Listar externalSponsors
 
@@ -82,6 +82,10 @@ GET https://graph.microsoft.com/beta/identityGovernance/entitlementManagement/co
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/connectedorganization-get-externalsponsors-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[Ir](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/connectedorganization-get-externalsponsors-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

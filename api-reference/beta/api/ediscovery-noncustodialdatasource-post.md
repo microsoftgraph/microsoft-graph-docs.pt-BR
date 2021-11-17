@@ -5,12 +5,12 @@ author: mahage-msft
 ms.localizationpriority: medium
 ms.prod: ediscovery
 doc_type: apiPageType
-ms.openlocfilehash: 4fd9284156518369bdc51de733760b0b5cabee49
-ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
+ms.openlocfilehash: cb5a91ed355e6947f27a4fc6faf0023ec77ffcdc
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/12/2021
-ms.locfileid: "60927041"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "60998693"
 ---
 # <a name="create-noncustodialdatasource"></a>Criar noncustodialDataSource
 
@@ -27,7 +27,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |Tipo de permissão|Permissões (da com menos para a com mais privilégios)|
 |:---|:---|
 |Delegado (conta corporativa ou de estudante)|eDiscovery.Read.All, eDiscovery.ReadWrite.All|
-|Delegada (conta pessoal da Microsoft)|Sem suporte.|
+|Delegado (conta pessoal da Microsoft)|Sem suporte.|
 |Aplicativo|Sem suporte.|
 
 ## <a name="http-request"></a>Solicitação HTTP
@@ -56,7 +56,7 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar [o noncu
 
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|applyHoldToSource|Boolean|Indica se a espera é aplicada à fonte de dados não custodial (como caixa de correio ou site).|
+|applyHoldToSource|Booliano|Indica se a espera é aplicada à fonte de dados não custodial (como caixa de correio ou site).|
 |datasource|[microsoft.graph.ediscovery.dataSource](../resources/ediscovery-datasource.md)|Um userSource ou siteSource.  Para userSource, use "dataSource" : { "@odata.type" : "microsoft.graph.ediscovery.userSource", "email" : "endereço SMTP"}.  Para a origem do site, use "dataSource" : { "@odata.type" : "microsoft.graph.ediscovery.siteSource", "site@odata.bind" : "siteId" }, onde siteId pode ser derivado da URL do site, por exemplo, a solicitação do `https://contoso.sharepoint.com/sites/HumanResources` Microsoft Graph seria `https://graph.microsoft.com/v1.0/sites/contoso.sharepoint.com:/sites/HumanResources` . A ID é o primeiro GUID listado no campo ID.
 
 ## <a name="response"></a>Resposta
@@ -103,6 +103,10 @@ Content-Type: application/json
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/create-noncustodialdatasource-from-email-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[Ir](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/create-noncustodialdatasource-from-email-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -174,6 +178,10 @@ Content-Type: application/json
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/create-noncustodialdatasource-from-siteurl-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[Ir](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/create-noncustodialdatasource-from-siteurl-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

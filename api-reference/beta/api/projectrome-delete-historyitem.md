@@ -1,16 +1,16 @@
 ---
 title: Excluir um historyItem
-description: Excluir um item de histórico existente para uma atividade existente do usuário.
-localization_priority: Normal
+description: Exclua um item de histórico existente para uma atividade de usuário existente.
+ms.localizationpriority: medium
 ms.prod: project-rome
 doc_type: apiPageType
 author: ailae
-ms.openlocfilehash: 1fa3b1863445caa5ce7a953a98d12310b4abeec9
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 4054cbb6b76c6e3fdfe04efba6070e14f10f0027
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48017301"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "61004545"
 ---
 # <a name="delete-a-historyitem"></a>Excluir um historyItem
 
@@ -18,7 +18,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Excluir um item de histórico existente para uma atividade existente do usuário.
+Exclua um item de histórico existente para uma atividade de usuário existente.
 
 ## <a name="permissions"></a>Permissões
 
@@ -51,7 +51,7 @@ Nenhum corpo de solicitação.
 
 ## <a name="response"></a>Resposta
 
-Se tiver êxito, este método retornará o `204 No Content` código de resposta se o item do histórico tiver sido excluído.
+Se tiver êxito, este método retornará `204 No Content` o código de resposta se o item de histórico tiver sido excluído.
 
 ## <a name="example"></a>Exemplo
 
@@ -71,6 +71,10 @@ PUT https://graph.microsoft.com/beta/me/activities/13881113971988980728/historyI
 ```
 # <a name="objective-c"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/delete-historyitem-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[Ir](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/delete-historyitem-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: paulgarn
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: 1942310afed1ead09bef8c6bb02fbff0b2f45a64
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 5d6b97a1fee6536c77676b67ced5eb5a21201cc0
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59119592"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "60996354"
 ---
 # <a name="update-claimsmappingpolicy"></a>Atualizar claimsmappingpolicy
 
@@ -49,7 +49,7 @@ No corpo da solicitação, forneça os valores para os campos relevantes que dev
 
 | Propriedade     | Tipo        | Descrição |
 |:-------------|:------------|:------------|
-|definition|Coleção String| Uma coleção de cadeias de caracteres que contém uma cadeia de caracteres JSON que define as regras e as configurações dessa política.  Obrigatório.|
+|definition|Coleção de cadeias de caracteres| Uma coleção de cadeias de caracteres que contém uma cadeia de caracteres JSON que define as regras e as configurações dessa política.  Obrigatório.|
 |description|Cadeia de caracteres| Descrição dessa política.|
 |displayName|String| Nome de exibição para esta política. Obrigatório.|
 |isOrganizationDefault|Boolean|Se definido como true, ativa essa política. Pode haver muitas políticas para o mesmo tipo de política, mas apenas uma pode ser ativada como o padrão da organização. Opcional, o valor padrão é false.|
@@ -92,6 +92,10 @@ Content-type: application/json
 
 # <a name="c"></a>[C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/update-claimsmappingpolicy-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[Ir](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/update-claimsmappingpolicy-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

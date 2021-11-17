@@ -1,16 +1,16 @@
 ---
 title: Obter tokenLifetimePolicy
 description: Recupere as propriedades e as relações do objeto tokenLifetimePolicy.
-localization_priority: Normal
+ms.localizationpriority: medium
 author: lujiangfeng666
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: ed80eaa28738dd367ba7762e1fabf4f28adf29e6
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: 469eb4ac3d8a9304d5134be4ed30167be59c9f83
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52051778"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "61033596"
 ---
 # <a name="get-tokenlifetimepolicy"></a>Obter tokenLifetimePolicy
 
@@ -28,7 +28,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |:---------------------------------------|:--------------------------------------------|
 | Delegado (conta corporativa ou de estudante)     | Policy.Read.All, Policy.ReadWrite.ApplicationConfiguration |
 | Delegado (conta pessoal da Microsoft) | Sem suporte. |
-| Application                            | Policy.Read.All, Policy.ReadWrite.ApplicationConfiguration |
+| Aplicativo                            | Policy.Read.All, Policy.ReadWrite.ApplicationConfiguration |
 
 ## <a name="http-request"></a>Solicitação HTTP
 
@@ -85,6 +85,10 @@ GET https://graph.microsoft.com/beta/policies/tokenLifetimePolicies/{id}
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/get-tokenlifetimepolicy-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[Ir](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/get-tokenlifetimepolicy-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

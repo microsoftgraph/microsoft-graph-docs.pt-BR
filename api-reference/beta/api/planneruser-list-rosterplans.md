@@ -2,15 +2,15 @@
 title: Listar rosterPlans
 description: Obter os recursos plannerPlan da propriedade de navegação rosterPlans.
 author: tarkansevilmis
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: planner
 doc_type: apiPageType
-ms.openlocfilehash: 68b62d68620f205f3933f7a876746e19ab8f3e0c
-ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
+ms.openlocfilehash: 3f74d67073ef241ac8f9e469ab9b0c428af1242b
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "50953215"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "60989858"
 ---
 # <a name="list-rosterplans"></a>Listar rosterPlans
 Namespace: microsoft.graph
@@ -84,6 +84,10 @@ GET https://graph.microsoft.com/beta/users/{usersId}/planner/rosterPlans
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/list-plannerplan-2-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[Ir](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/list-plannerplan-2-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

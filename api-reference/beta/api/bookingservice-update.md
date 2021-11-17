@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: arvindmicrosoft
 ms.prod: bookings
 doc_type: apiPageType
-ms.openlocfilehash: f0e652e5fd4e96aba984589371fb1a95e706e1be
-ms.sourcegitcommit: c7ff992ef63e480d070421ba99b28ee129cb6acb
+ms.openlocfilehash: 4a84a19f9af0ac8ad6144ccdf9091b94d3d4c9a7
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "60695220"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "61005876"
 ---
 # <a name="update-bookingservice"></a>Atualizar bookingservice
 
@@ -56,12 +56,12 @@ No corpo da solicitação, forneça os valores para os campos relevantes que dev
 |defaultPrice|Duplo|O preço monetário padrão do serviço.|
 |defaultPriceType|cadeia de caracteres|A maneira padrão como o serviço é cobrado. Os valores possíveis são: `undefined`, `fixedPrice`, `startingAt`, `hourly`, `free`, `priceVaries`, `callUs`, `notSet`.|
 |defaultReminders|[Coleção bookingReminder](../resources/bookingreminder.md)|O conjunto padrão de lembretes para um compromisso desse serviço. O valor dessa propriedade está disponível somente ao ler este **bookingService** por sua ID.|
-|descrição|String|Uma descrição de texto para o serviço.|
-|displayName|String|Um nome de serviço.|
+|description|Cadeia de caracteres|Uma descrição de texto para o serviço.|
+|displayName|Cadeia de caracteres|Um nome de serviço.|
 |emailAddress|String|Um endereço de email|
 |id|String| Somente leitura.|
 |isHiddenFromCustomers|Booliano|True significa que esse serviço não está disponível para os clientes para reserva.|
-|isLocationOnline|Booliano|True indica que os compromissos do serviço serão mantidos online. O valor padrão é falso.|
+|isLocationOnline|Boolean|True indica que os compromissos do serviço serão mantidos online. O valor padrão é falso.|
 |notes|String|Informações adicionais sobre esse serviço.|
 |postBuffer|Duração|O tempo para buffer após o fim de um compromisso para esse serviço e antes que o próximo compromisso do cliente possa ser reservado.|
 |preBuffer|Duração|O tempo para buffer antes que um compromisso para esse serviço possa começar.|
@@ -103,6 +103,10 @@ Content-type: application/json
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/update-bookingservice-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[Ir](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/update-bookingservice-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

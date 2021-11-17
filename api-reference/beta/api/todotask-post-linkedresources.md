@@ -5,12 +5,12 @@ author: avijityadav
 ms.localizationpriority: medium
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: bada407057ead2e933b8231a3a5898a049628817
-ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
+ms.openlocfilehash: ace95ce5db69e5b7af813b1ba8d47bd73ba3c347
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/12/2021
-ms.locfileid: "60947654"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "60977025"
 ---
 # <a name="create-linkedresource"></a>Criar linkedResource
 Namespace: microsoft.graph [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
@@ -25,7 +25,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |Tipo de permissão|Permissões (da com menos para a com mais privilégios)|
 |:---|:---|
 |Delegado (conta corporativa ou de estudante)|Tasks.ReadWrite|
-|Delegada (conta pessoal da Microsoft)|Tasks.ReadWrite|
+|Delegado (conta pessoal da Microsoft)|Tasks.ReadWrite|
 |Aplicativo|Sem suporte.|
 
 ## <a name="http-request"></a>Solicitação HTTP
@@ -55,7 +55,7 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar [o linke
 |id|Cadeia de caracteres|ID gerada do servidor para a entidade vinculada Herdada da [entidade](../resources/entity.md)|
 |webUrl|String|Deeplink para a entidade vinculada |
 |applicationName|Cadeia de caracteres|Campo indicando o nome do aplicativo da fonte que está enviando a entidade vinculada |
-|displayName|Cadeia de caracteres|Campo indicando o título da entidade vinculada. |
+|displayName|String|Campo indicando o título da entidade vinculada. |
 |externalId|Cadeia de caracteres|ID do objeto associado a essa tarefa no sistema de terceiros/parceiro |
 
 
@@ -100,6 +100,10 @@ Content-Type: application/json
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/create-linkedresource-from-linkedresources-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[Ir](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/create-linkedresource-from-linkedresources-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

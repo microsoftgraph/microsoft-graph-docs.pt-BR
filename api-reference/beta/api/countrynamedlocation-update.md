@@ -1,16 +1,16 @@
 ---
 title: Atualizar countryNamedlocation
 description: Atualize as propriedades de um objeto countryNamedLocation.
-localization_priority: Normal
+ms.localizationpriority: medium
 author: dkershaw10
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: 2f7d5b1189689beeb4f67445c94bec4fb8379d9d
-ms.sourcegitcommit: 94c4acf8bd03c10a44b12952b6cb4827df55b978
+ms.openlocfilehash: ee9b76504fb75ad4b59c2f3716fa5a2258e0bc01
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/06/2021
-ms.locfileid: "52786492"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "61022508"
 ---
 # <a name="update-countrynamedlocation"></a>Atualizar countryNamedLocation
 
@@ -20,7 +20,7 @@ Namespace: microsoft.graph
 
 Atualize as propriedades de um [objeto countryNamedLocation.](../resources/countryNamedLocation.md)
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>Permissões
 
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
@@ -49,11 +49,13 @@ PATCH /identity/conditionalAccess/namedLocations/{id}
 
 No corpo da solicitação, forneça os valores para os campos relevantes que devem ser atualizados. Propriedades existentes que não estão incluídas no corpo da solicitação terão seus valores anteriores mantidos ou serão recalculadas com base nas alterações a outros valores de propriedade. Para alcançar o melhor desempenho, não inclua valores existentes que não foram alterados.
 
+Você deve especificar o **@odata.type** como `#microsoft.graph.countryNamedLocation` .
+
 | Propriedade     | Tipo        | Descrição |
 |:-------------|:------------|:------------|
-|countriesAndRegions|Coleção de cadeias de caracteres|Lista de países e/ou regiões no formato de duas letras especificado pela ISO 3166-2.|
-|displayName|String|Nome acessível para humanos do local.|
-|includeUnknownCountriesAndRegions|Booliano|O valor é `true` se os endereços IP que não mapeiam para um país ou região devem ser incluídos no local nomeado.|
+|countriesAndRegions|Conjunto de cadeias de caracteres|Lista de países e/ou regiões no formato de duas letras especificado pela ISO 3166-2.|
+|displayName|Cadeia de caracteres|Nome acessível para humanos do local.|
+|includeUnknownCountriesAndRegions|Boolean|O valor é `true` se os endereços IP que não mapeiam para um país ou região devem ser incluídos no local nomeado.|
 
 ## <a name="response"></a>Resposta
 
@@ -99,6 +101,10 @@ Content-type: application/json
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/update-countrynamedlocation-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[Ir](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/update-countrynamedlocation-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

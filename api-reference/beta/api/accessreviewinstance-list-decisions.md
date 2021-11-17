@@ -2,15 +2,15 @@
 title: Listar decisões
 description: Obter os recursos accessReviewInstanceDecisionItem da propriedade de navegação de decisões.
 author: isabelleatmsft
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: d86b5c939205fd03719ee6fcea543feaae751f28
-ms.sourcegitcommit: 7f674112f5b95446fac86d829509f889c60f1693
+ms.openlocfilehash: 124d6c636a75dad0b70bd9928087614f939b641a
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/30/2021
-ms.locfileid: "53207641"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "60991923"
 ---
 # <a name="list-decisions"></a>Listar decisões
 Namespace: microsoft.graph
@@ -83,6 +83,10 @@ GET https://graph.microsoft.com/beta/identityGovernance/accessReviews/definition
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/list-accessreviewinstancedecisionitem-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[Ir](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/list-accessreviewinstancedecisionitem-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

@@ -5,12 +5,12 @@ author: DougKirschner
 ms.localizationpriority: medium
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: 8379da9a5f6b35caaa23593822df2b806dba51ea
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 7dfa61064d758463c69ceaa1a5cf2a1546dfa7c4
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59128456"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "60979707"
 ---
 # <a name="remove-a-scopedrolemember"></a>Remover um scopedRoleMember
 
@@ -73,6 +73,10 @@ DELETE https://graph.microsoft.com/v1.0/directory/administrativeUnits/{id}/scope
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/delete-scopedrolemember-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[Ir](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/delete-scopedrolemember-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: kevinbellinger
 ms.prod: people
 doc_type: apiPageType
-ms.openlocfilehash: 2f0e7dc405519df676d39c4df732c30f37768c24
-ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
+ms.openlocfilehash: 20751a875d9151fb3fd58c6c75f964aacdd9d755
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/12/2021
-ms.locfileid: "60945478"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "60981332"
 ---
 # <a name="update-itempatent"></a>Atualizar itemPatent
 
@@ -51,14 +51,14 @@ No corpo da solicitação, forneça os valores para os campos relevantes que dev
 
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|allowedAudiences|Cadeia de caracteres|As audiências que são capazes de ver os valores contidos na entidade. Herdado [do itemFacet](../resources/itemfacet.md). Os valores possíveis são: `me`, `family`, `contacts`, `groupMembers`, `organization`, `federatedOrganizations`, `everyone`, `unknownFutureValue`.|
+|allowedAudiences|String|As audiências que são capazes de ver os valores contidos na entidade. Herdado [do itemFacet](../resources/itemfacet.md). Os valores possíveis são: `me`, `family`, `contacts`, `groupMembers`, `organization`, `federatedOrganizations`, `everyone`, `unknownFutureValue`.|
 |description|Cadeia de caracteres|Descpription of the patent or filing. |
 |displayName|Cadeia de caracteres|Título da patente ou arquivamento. |
 |inferência|[inferenceData](../resources/inferencedata.md)|Contém detalhes de inferência se a entidade for inferida pelo aplicativo de criação ou modificação. Herdado [do itemFacet](../resources/itemfacet.md).|
-|isPending        |Boolean     |Indica que a patente está pendente.        |
+|isPending        |Booliano     |Indica que a patente está pendente.        |
 |issuedDate       |Data        |A data em que a patente foi concedida.   |
-|issuingAuthority |Cadeia de caracteres      |Autoridade que concedeu a patente.     |
-|number           |Cadeia de caracteres      |O número da patente.                      |
+|issuingAuthority |String      |Autoridade que concedeu a patente.     |
+|number           |String      |O número da patente.                      |
 |source|[personDataSource](../resources/persondatasource.md)|Onde os valores se originaram se sincronizados de outro serviço. Herdado [do itemFacet](../resources/itemfacet.md).|
 |webUrl           |String      |URL fazendo referência à patente ou ao arquivamento. |
 
@@ -98,6 +98,10 @@ Content-Type: application/json
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/update-itempatent-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[Ir](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/update-itempatent-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

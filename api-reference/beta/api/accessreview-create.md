@@ -1,16 +1,16 @@
 ---
 title: Criar accessReview
 description: No recurso de análises de acesso do Azure AD, crie um novo objeto accessReview.
-localization_priority: Normal
+ms.localizationpriority: medium
 author: markwahl-msft
 ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: fd1f6c25dcc4013c1abc3d39dafa63723a1e3ea0
-ms.sourcegitcommit: 13f474d3e71d32a5dfe2efebb351e3a1a5aa9685
+ms.openlocfilehash: 516a1567921089f1285d639f4e12f8747e92de91
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "52751115"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "60988151"
 ---
 # <a name="create-accessreview"></a>Criar accessReview
 
@@ -58,7 +58,7 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar um acces
 | displayName             |Cadeia de caracteres                                                        | O nome da revisão de acesso.  |
 | startDateTime           |DateTimeOffset                                                | DateTime quando a revisão está agendada para ser inicial.  Essa deve ser uma data no futuro.   |
 | endDateTime             |DateTimeOffset                                                | DateTime quando a revisão está agendada para terminar. Isso deve ser pelo menos um dia depois da data de início.   |
-| descrição             |Cadeia de caracteres                                                        | A descrição, para mostrar aos revisadores. |
+| description             |String                                                        | A descrição, para mostrar aos revisadores. |
 | businessFlowTemplateId  |Cadeia de caracteres                                                        | O identificador do modelo de fluxo de negócios, obtido de um [businessFlowTemplate](../resources/businessflowtemplate.md).  |
 | reviewerType            |Cadeia de caracteres                                                        | O tipo de relação do revistor para os direitos de acesso do objeto revisado, um `self` de `delegated` , ou `entityOwners` . | 
 | reviewedEntity          |[identity](../resources/identity.md)                                     | O objeto para o qual uma revisão de acesso é criada, como a associação de um grupo ou as atribuições de usuários a um aplicativo. | 
@@ -145,6 +145,10 @@ Content-type: application/json
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/create-accessreview-from-accessreviews-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[Ir](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/create-accessreview-from-accessreviews-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

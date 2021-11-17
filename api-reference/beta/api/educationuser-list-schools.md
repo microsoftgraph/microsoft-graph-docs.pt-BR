@@ -5,12 +5,12 @@ author: mmast-msft
 ms.localizationpriority: medium
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: 3cd5bb8374cfaa73648318bc9a403c29352a91d2
-ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
+ms.openlocfilehash: 1912e6ba5ad8ef4b572f8cda6d30b70ddc9a2741
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/12/2021
-ms.locfileid: "60935939"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "61003027"
 ---
 # <a name="list-schools"></a>Listar escolas
 
@@ -27,7 +27,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 | Tipo de permissão                        | Permissões (da com menos para a com mais privilégios) |
 | :------------------------------------- | :------------------------------------------ |
 | Delegado (conta corporativa ou de estudante)     | EduRoster.ReadBasic                         |
-| Delegada (conta pessoal da Microsoft) | Sem suporte.                              |
+| Delegado (conta pessoal da Microsoft) | Sem suporte.                              |
 | Aplicativo                            | EduRoster.Read.All, EduRoster.ReadWrite.All |
 
 > [!NOTE]
@@ -94,6 +94,10 @@ GET https://graph.microsoft.com/beta/education/me/schools
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/get-schools-3-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[Ir](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/get-schools-3-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

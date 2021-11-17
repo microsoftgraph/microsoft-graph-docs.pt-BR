@@ -1,16 +1,16 @@
 ---
 title: Excluir programControl
 description: No recurso de revisões de acesso do Azure AD, exclua um objeto programControl.  Isso desvincula uma revisão de acesso de um programa.
-localization_priority: Normal
+ms.localizationpriority: medium
 doc_type: apiPageType
 ms.prod: governance
 author: markwahl-msft
-ms.openlocfilehash: 3a3622c7e9d1390c956c926f8e04d85ecfe7b7c2
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: bf2279a523a398ce30acaa50f85a251a3e84f25a
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52055222"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "61019315"
 ---
 # <a name="delete-programcontrol"></a>Excluir programControl
 
@@ -26,7 +26,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |:--------------------------------------|:---------------------------------------------------------|
 |Delegado (conta corporativa ou de estudante)     | ProgramControl.ReadWrite.All   |
 |Delegado (conta pessoal da Microsoft) | Sem suporte. |
-|Application                            | ProgramControl.ReadWrite.All  |
+|Aplicativo                            | ProgramControl.ReadWrite.All  |
 
 O usuário inscreveu também deve estar em uma função de diretório que permita que ele exclua um `programControl` .
 
@@ -72,6 +72,10 @@ DELETE https://graph.microsoft.com/beta/programControls/7e59d237-2fb0-4e5d-b7bb-
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/delete-programcontrol-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[Ir](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/delete-programcontrol-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

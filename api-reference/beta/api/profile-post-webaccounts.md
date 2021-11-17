@@ -1,16 +1,16 @@
 ---
 title: Criar webAccount
 description: Crie um novo objeto webAccount.
-localization_priority: Normal
+ms.localizationpriority: medium
 author: kevinbellinger
 ms.prod: people
 doc_type: apiPageType
-ms.openlocfilehash: 2d41cb9fe650fa8d506f8ea9c218a01d4f2c0605
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: 3170c2c291b8e2a1f6a357f203f58bd33ca05ef4
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52036762"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "61023634"
 ---
 # <a name="create-webaccount"></a>Criar webAccount
 
@@ -54,12 +54,12 @@ A tabela a seguir mostra as propriedades que são possíveis de definir quando v
 
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|allowedAudiences|String|As audiências que são capazes de ver os valores contidos na entidade. Herdado [do itemFacet](../resources/itemfacet.md). Os valores possíveis são: `me`, `family`, `contacts`, `groupMembers`, `organization`, `federatedOrganizations`, `everyone`, `unknownFutureValue`.|
-|description|String|Contém a descrição que o usuário forneceu para a conta no serviço que está sendo referenciado.|
+|allowedAudiences|Cadeia de caracteres|As audiências que são capazes de ver os valores contidos na entidade. Herdado [do itemFacet](../resources/itemfacet.md). Os valores possíveis são: `me`, `family`, `contacts`, `groupMembers`, `organization`, `federatedOrganizations`, `everyone`, `unknownFutureValue`.|
+|description|Cadeia de caracteres|Contém a descrição que o usuário forneceu para a conta no serviço que está sendo referenciado.|
 |inferência|[inferenceData](../resources/inferencedata.md)|Contém detalhes de inferência se a entidade for inferida pelo aplicativo de criação ou modificação. Herdado [do itemFacet](../resources/itemfacet.md).|
 |serviço|[serviceInformation](../resources/serviceinformation.md)| Contém detalhes básicos sobre o serviço que está sendo associado. |
 |source|[personDataSource](../resources/persondatasource.md)|Onde os valores se originaram se sincronizados de outro serviço. Herdado [do itemFacet](../resources/itemfacet.md).|
-|statusMessage|String|Contém uma mensagem de status do serviço de nuvem, se fornecida ou sincronizada. |
+|statusMessage|Cadeia de caracteres|Contém uma mensagem de status do serviço de nuvem, se fornecida ou sincronizada. |
 |userId|Cadeia de caracteres|O nome de usuário exibido para a conta da Web.  |
 |webUrl|String|Contém um link para o perfil do usuário no serviço de nuvem, se houver um.|
 
@@ -106,6 +106,10 @@ Content-type: application/json
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/create-webaccount-from-profile-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[Ir](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/create-webaccount-from-profile-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

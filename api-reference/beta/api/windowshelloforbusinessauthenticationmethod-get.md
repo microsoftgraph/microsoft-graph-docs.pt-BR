@@ -2,15 +2,15 @@
 title: Obter windowsHelloForBusinessAuthenticationMethod
 description: Leia as propriedades e as relações de um objeto windowsHelloForBusinessAuthenticationMethod.
 author: mmcla
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: 6996e1b657c1c73bed4ddf99be6604db2549055f
-ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
+ms.openlocfilehash: 906db02149ad7f6ef38cedb9c79369386e48dc2f
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50444620"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "61013260"
 ---
 # <a name="get-windowshelloforbusinessauthenticationmethod"></a>Obter windowsHelloForBusinessAuthenticationMethod
 Namespace: microsoft.graph
@@ -99,6 +99,10 @@ GET https://graph.microsoft.com/beta/users/annie@contoso.com/authentication/wind
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/get-windowshelloforbusinessauthenticationmethod-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[Ir](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/get-windowshelloforbusinessauthenticationmethod-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

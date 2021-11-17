@@ -2,15 +2,15 @@
 title: 'call: subscribeToTone'
 description: Inscreva-se em DTMF (sinalização multifrequência de tom duplo). Isso permite que você seja notificado quando o usuário pressionar teclas em um "Dialpad".
 author: ananmishr
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: 7fb6cbbea2ff3e90f7e0b9ed33b79666146e8ec5
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: c499652313c420c2a80d2fbda1247e9cb7df46f1
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52047620"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "61028892"
 ---
 # <a name="call-subscribetotone"></a>call: subscribeToTone
 
@@ -51,7 +51,7 @@ Forneça um objeto JSON com os seguintes parâmetros no corpo da solicitação.
 
 | Parâmetro      | Tipo    | Descrição |
 |:---------------|:--------|:------------|
-| clientContext  | String  | Cadeia de caracteres de contexto de cliente exclusiva. Pode ter no máximo 256 caracteres. |
+| clientContext  | Cadeia de caracteres  | Cadeia de caracteres de contexto de cliente exclusiva. Pode ter no máximo 256 caracteres. |
 
 ## <a name="response"></a>Resposta
 Se bem sucedido, este método retorna um código de resposta `200 OK`.
@@ -91,6 +91,10 @@ Content-Length: 46
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/call-subscribetotone-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[Ir](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/call-subscribetotone-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

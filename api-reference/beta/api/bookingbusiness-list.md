@@ -1,16 +1,16 @@
 ---
 title: Listar bookingBusinesses
-description: Obtenha uma coleção de objetos bookingbusiness que foi criada para o locatário.
-localization_priority: Normal
+description: Obter uma coleção de objetos bookingbusiness que foi criado para o locatário.
+ms.localizationpriority: medium
 author: arvindmicrosoft
 ms.prod: bookings
 doc_type: apiPageType
-ms.openlocfilehash: c1cf4042fbfbbc3364756c9363555215bff05e01
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 686925bca89dcbb7dafcb701d716b9671864b833
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48960767"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "60990546"
 ---
 # <a name="list-bookingbusinesses"></a>Listar bookingBusinesses
 
@@ -18,11 +18,11 @@ Namespace: microsoft.graph
 
  [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Obtenha uma coleção de objetos [bookingbusiness](../resources/bookingbusiness.md) que foi criada para o locatário.
+Obter uma coleção de [objetos bookingbusiness](../resources/bookingbusiness.md) que foi criado para o locatário.
 
-Essa operação retorna apenas a **ID** e o **DisplayName** de cada livro de livros na coleção. Para considerações de desempenho, ele não retorna outras propriedades. Você pode obter as outras propriedades de uma empresa de livros, especificando sua **ID** em uma operação [Get](bookingbusiness-get.md) .
+Essa operação retorna apenas **a id** e **displayName** de cada empresa do Bookings na coleção. Para considerações de desempenho, ele não retorna outras propriedades. Você pode obter as outras propriedades de uma empresa do Bookings especificando sua **id** em uma [operação GET.](bookingbusiness-get.md)
 
-Você também pode consultar as empresas de reservas especificando uma cadeia de caracteres em um `query` parâmetro para fazer a correspondência de subcadeia entre as empresas de um locatário. Veja um [exemplo](#request-2) abaixo.
+Você também pode consultar empresas do Bookings especificando uma cadeia de caracteres em um parâmetro para fazer a correspondência de substring entre as `query` empresas de um locatário. Veja um [exemplo](#request-2) abaixo.
 
 
 ## <a name="permissions"></a>Permissões
@@ -30,7 +30,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegado (conta corporativa ou de estudante) |  Bookings. Read. All, BookingsAppointment. ReadWrite. All, bookings. ReadWrite. All, bookings. Manage. All   |
+|Delegado (conta corporativa ou de estudante) |  Bookings.Read.All, BookingsAppointment.ReadWrite.All, Bookings.ReadWrite.All, Bookings.Manage.All   |
 |Delegado (conta pessoal da Microsoft) | Sem suporte.   |
 |Aplicativo | Sem suporte.  |
 
@@ -42,7 +42,7 @@ GET /bookingBusinesses
 ## <a name="optional-query-parameters"></a>Parâmetros de consulta opcionais
 Este método dá suporte a [Parâmetros de consulta OData](/graph/query-parameters) para ajudar a personalizar a resposta.
 
-Este método também dá suporte ao `query` parâmetro que aceita um valor de cadeia de caracteres. Esse parâmetro limita os resultados GET para empresas que correspondem à cadeia de caracteres especificada. Você pode ver um [exemplo](#request-2) abaixo.
+Esse método também dá suporte `query` ao parâmetro que aceita um valor de cadeia de caracteres. Esse parâmetro limita os resultados GET para empresas que corresponderem à cadeia de caracteres especificada. Você pode ver um [exemplo](#request-2) abaixo.
 
 
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
@@ -53,10 +53,10 @@ Este método também dá suporte ao `query` parâmetro que aceita um valor de ca
 ## <a name="request-body"></a>Corpo da solicitação
 Não forneça um corpo de solicitação para esse método.
 ## <a name="response"></a>Resposta
-Se tiver êxito, este método retornará um `200 OK` código de resposta e uma coleção de objetos [bookingBusiness](../resources/bookingbusiness.md) no corpo da resposta.
+Se tiver êxito, este método retornará um código `200 OK` de resposta e uma coleção de objetos [bookingBusiness](../resources/bookingbusiness.md) no corpo da resposta.
 ## <a name="example"></a>Exemplo
 ##### <a name="request-1"></a>Solicitação 1
-O exemplo a seguir obtém as empresas de reservas em um locatário.
+O exemplo a seguir obtém as empresas do Bookings em um locatário.
 
 # <a name="http"></a>[HTTP](#tab/http)
 <!-- {
@@ -80,6 +80,10 @@ GET https://graph.microsoft.com/beta/bookingBusinesses
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/get-bookingbusinesses-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[Ir](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/get-bookingbusinesses-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -113,7 +117,7 @@ Content-type: application/json
 
 
 ##### <a name="request-2"></a>Solicitação 2
-O exemplo a seguir mostra como usar o `query` parâmetro para obter uma ou mais empresas de reservas correspondentes no locatário.
+O exemplo a seguir mostra como usar o parâmetro para obter uma ou mais empresas `query` do Bookings correspondentes no locatário.
 
 # <a name="http"></a>[HTTP](#tab/http)
 <!-- {
@@ -137,6 +141,10 @@ GET https://graph.microsoft.com/beta/bookingBusinesses?query=Adventure
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/query-bookingbusinesses-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[Ir](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/query-bookingbusinesses-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

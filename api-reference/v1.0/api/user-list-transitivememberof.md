@@ -2,15 +2,15 @@
 title: Listar usuário transitivo memberOf
 description: Obter grupos, funções de diretório das quais o usuário é membro. Essa solicitação de API é transitiva e também retornará todos os grupos de que o usuário é membro aninhado.
 author: jpettere
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: users
 doc_type: apiPageType
-ms.openlocfilehash: ca969071ec4487bf4c6753441e68db7b77206327
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: aa3d13f750bd558fa2cf9905cc5921041fe95b27
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52053773"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "61032694"
 ---
 # <a name="list-user-transitive-memberof"></a>Listar usuário transitivo memberOf
 
@@ -89,6 +89,10 @@ GET https://graph.microsoft.com/v1.0/users/{id}/transitiveMemberOf
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/get-transitivememberof-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[Ir](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/get-transitivememberof-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

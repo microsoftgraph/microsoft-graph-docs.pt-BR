@@ -1,16 +1,16 @@
 ---
 title: Atualizar bookingbusiness
 description: Atualize as propriedades de um objeto bookingBusiness.
-localization_priority: Normal
+ms.localizationpriority: medium
 author: arvindmicrosoft
 ms.prod: bookings
 doc_type: apiPageType
-ms.openlocfilehash: 767d4b3a355c74f6941bd9d9d20579e1c0dcda23
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: a6659791c201ad7c90f409bf87e15df6a8161d2f
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52047844"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "61003475"
 ---
 # <a name="update-bookingbusiness"></a>Atualizar bookingbusiness
 
@@ -45,13 +45,13 @@ No corpo da solicitação, forneça os valores para os campos relevantes que dev
 |:---------------|:--------|:----------|
 |address|[physicalAddress](../resources/physicaladdress.md)|O endereço da rua do negócio.|
 |businessHours|[Coleção bookingWorkHours](../resources/bookingworkhours.md)|Os horários de operação para os negócios.|
-|businessType|String|O tipo de negócio.|
+|businessType|Cadeia de caracteres|O tipo de negócio.|
 |defaultCurrencyIso|String|O código da moeda em que a empresa opera no Microsoft Bookings.|
-|displayName|String|Um nome para a empresa que faz interface com os clientes.|
+|displayName|Cadeia de caracteres|Um nome para a empresa que faz interface com os clientes.|
 |email|Cadeia de caracteres|O endereço de email da empresa.|
 |phone|Cadeia de caracteres|O número de telefone da empresa.|
 |schedulingPolicy|[bookingSchedulingPolicy](../resources/bookingschedulingpolicy.md)|Especifica como as reservas podem ser criadas para essa empresa.|
-|webSiteUrl|String|A URL do site comercial.|
+|webSiteUrl|Cadeia de caracteres|A URL do site comercial.|
 
 ## <a name="response"></a>Resposta
 Se bem-sucedido, este método retorna um código de resposta `204, No Content`. Não retorna nada no corpo da resposta.
@@ -95,10 +95,14 @@ Content-type: application/json
 [!INCLUDE [sample-code](../includes/snippets/java/update-bookingbusiness-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# <a name="go"></a>[Ir](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/update-bookingbusiness-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 ##### <a name="response"></a>Resposta
-Este é um exemplo de resposta. Observação: o objeto de resposta mostrado aqui pode ser encurtado para legibilidade.
+Eis um exemplo da resposta. Observação: o objeto de resposta exibido aqui pode ser reduzido para facilitar a leitura.
 <!-- {
   "blockType": "response",
   "truncated": true

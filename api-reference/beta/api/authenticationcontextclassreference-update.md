@@ -1,16 +1,16 @@
 ---
 title: Atualizar authenticationContextClassReference
 description: Atualize as propriedades de um objeto authenticationContextClassReference.
-localization_priority: Normal
+ms.localizationpriority: medium
 author: calebb
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: 40ed1ea6052e4b39f84426cd792429b70732137d
-ms.sourcegitcommit: 7b8ad226dc9dfee61b8c3d32892534855dad3fa0
+ms.openlocfilehash: 0fee669405322945ef0d4552b9e98fd63f2a39c8
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/26/2021
-ms.locfileid: "52664507"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "60982340"
 ---
 # <a name="update-authenticationcontextclassreference"></a>Atualizar authenticationContextClassReference
 
@@ -88,6 +88,10 @@ Content-type: application/json
 ```
 # <a name="javascript"></a>[JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/update-authenticationcontextclassreference-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[Ir](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/update-authenticationcontextclassreference-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

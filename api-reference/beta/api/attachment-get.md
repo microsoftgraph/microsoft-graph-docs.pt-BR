@@ -1,16 +1,16 @@
 ---
 title: Obter anexo
 description: Leia as propriedades e as relações de um anexo, anexado a um evento, mensagem, Outlook tarefa ou postagem.
-localization_priority: Normal
+ms.localizationpriority: medium
 doc_type: apiPageType
 author: abheek-das
 ms.prod: outlook
-ms.openlocfilehash: 39c8be1eb33bd5843fe38c3715a3ee207e57c9f6
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: 9ce4013d9da017f6384ea6299b5238c65bf88a36
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52048026"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "60982531"
 ---
 # <a name="get-attachment"></a>Obter anexo
 
@@ -53,7 +53,7 @@ Dependendo do recurso (**evento** **,** mensagem , **outlookTask** ou **postagem
 |:-----|:-----|:-----|:-----|
 | [evento](../resources/event.md) | Calendars.Read | Calendars.Read | Calendars.Read |
 | [message](../resources/message.md) | Mail.Read | Mail.Read | Mail.Read |
-| [outlookTask](../resources/outlooktask.md) |  Tasks.Read | Tasks.Read | Sem suporte |
+| [outlookTask](../resources/outlooktask.md) |  Tasks.Read | Tasks.Read | Incompatível |
 | [postagem](../resources/post.md) | Group.Read.All | Sem suporte | Sem suporte |
 
 
@@ -139,7 +139,7 @@ GET /groups/{id}/conversations/{id}/threads/{id}/posts/{id}/attachments/{id}/$va
 
 Este método também dá suporte a alguns [Parâmetros de Consulta OData](/graph/query-parameters) para ajudar a personalizar a resposta.
 
-Use `$expand` para obter as propriedades de um anexo de item (contato, evento ou mensagem). Veja o [exemplo 3](#example-3-expand-and-get-the-properties-of-the-item-attached-to-a-message) e o [exemplo 4](#example-4-expand-and-get-the-properties-of-an-item-attached-to-a-message-including-any-attachment-to-the-item).
+Use `$expand` para obter as propriedades de um anexo de item (contato, evento ou mensagem). Consulte [exemplo 3](#example-3-expand-and-get-the-properties-of-the-item-attached-to-a-message) e [exemplo 4](#example-4-expand-and-get-the-properties-of-an-item-attached-to-a-message-including-any-attachment-to-the-item).
 
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
 
@@ -194,12 +194,16 @@ GET https://graph.microsoft.com/beta/me/messages/AAMkAGUzY5QKjAAA=/attachments/A
 [!INCLUDE [sample-code](../includes/snippets/java/get-file-attachment-beta-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# <a name="go"></a>[Ir](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/get-file-attachment-beta-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 
 #### <a name="response"></a>Resposta
 
-Veja a seguir um exemplo da resposta. Observação: o objeto de resposta mostrado aqui pode ser encurtado para legibilidade.
+Aqui está um exemplo da resposta. Observação: o objeto de resposta mostrado aqui pode ser reduzido para facilitar a leitura.
 <!-- {
   "blockType": "response",
   "name": "get_file_attachment_beta",
@@ -262,7 +266,7 @@ GET https://graph.microsoft.com/beta/me/messages('AAMkADA1M-zAAA=')/attachments(
 
 
 #### <a name="response"></a>Resposta
-Veja a seguir um exemplo da resposta. Observação: o objeto de resposta mostrado aqui pode ser encurtado para legibilidade.
+Aqui está um exemplo da resposta. Observação: o objeto de resposta mostrado aqui pode ser reduzido para facilitar a leitura.
 <!-- {
   "blockType": "response",
   "name": "get_item_attachment",
@@ -321,7 +325,7 @@ GET https://graph.microsoft.com/beta/me/messages('AAMkADA1M-zAAA=')/attachments(
 
 
 #### <a name="response"></a>Resposta
-Veja a seguir um exemplo da resposta. Observação: o objeto de resposta mostrado aqui pode ser encurtado para legibilidade.
+Aqui está um exemplo da resposta. Observação: o objeto de resposta mostrado aqui pode ser reduzido para facilitar a leitura.
 <!-- {
   "blockType": "response",
   "name": "get_and_expand_item_attachment",
@@ -537,11 +541,15 @@ GET https://graph.microsoft.com/beta/me/events/AAMkAGE1M88AADUv0uAAAG=/attachmen
 [!INCLUDE [sample-code](../includes/snippets/java/get-reference-attachment-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# <a name="go"></a>[Ir](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/get-reference-attachment-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 
 #### <a name="response"></a>Resposta
-Veja a seguir um exemplo da resposta. Observação: o objeto de resposta mostrado aqui pode ser encurtado para legibilidade.
+Aqui está um exemplo da resposta. Observação: o objeto de resposta mostrado aqui pode ser reduzido para facilitar a leitura.
 <!-- {
   "blockType": "response",
   "name": "get_reference_attachment",
@@ -588,7 +596,7 @@ GET https://graph.microsoft.com/beta/me/messages/AAMkAGUzY5QKjAAA=/attachments/A
 ```
 
 #### <a name="response"></a>Resposta
-Veja a seguir um exemplo da resposta. O corpo da resposta real inclui os bytes brutos do anexo do arquivo, que são abreviados aqui por questões de brevidade.
+Aqui está um exemplo da resposta. O corpo de resposta real inclui os bytes brutos do anexo do arquivo, que são abreviados aqui para brevidade.
 
 <!-- {
   "blockType": "ignored",
@@ -736,7 +744,7 @@ END:VCALENDAR
 
 #### <a name="request"></a>Solicitação
 
-Aqui está um exemplo da solicitação para obter o conteúdo bruto de um convite para reunião (do tipo [eventMessage](../resources/eventmessage.md)) que foi anexado a uma mensagem. A entidade **eventMessage** é baseada no tipo de **mensagem**.
+Eis um exemplo da solicitação para obter o conteúdo bruto de um convite de reunião (do tipo [eventMessage](../resources/eventmessage.md)) que foi anexado a uma mensagem. A entidade **eventMessage** é baseada no tipo de **mensagem**.
 <!-- {
   "blockType": "ignored",
   "name": "get_value_message_attachment",

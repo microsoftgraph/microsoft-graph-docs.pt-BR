@@ -2,15 +2,15 @@
 title: 'bloco de anotações: getNotebookFromWebUrl'
 description: Recupere as propriedades e as relações de um objeto de bloco de anotações usando seu caminho de URL.
 author: jewan-microsoft
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: onenote
 doc_type: apiPageType
-ms.openlocfilehash: 25c0731270edd5576ab2416682a6e6395b0e41b9
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: 8eba32f00c07a934687180acbf30bef605c3dadd
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52049237"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "61021864"
 ---
 # <a name="notebook-getnotebookfromweburl"></a>bloco de anotações: getNotebookFromWebUrl
 
@@ -82,6 +82,10 @@ Content-type: application/json
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/notebook-fromweburl-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[Ir](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/notebook-fromweburl-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

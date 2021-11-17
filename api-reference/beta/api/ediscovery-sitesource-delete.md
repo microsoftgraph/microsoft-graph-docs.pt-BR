@@ -2,15 +2,15 @@
 title: Excluir siteSource
 description: Excluir um objeto siteSource.
 author: mahage-msft
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: ediscovery
 doc_type: apiPageType
-ms.openlocfilehash: 5948064b4fffa2af858b3e6bfb92eb02f991c784
-ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
+ms.openlocfilehash: 48f86bf46f99d76e8bd6db6b8e4d9863a717bbc5
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50445762"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "61022339"
 ---
 # <a name="delete-sitesource"></a>Excluir siteSource
 
@@ -84,6 +84,10 @@ DELETE https://graph.microsoft.com/beta/compliance/ediscovery/cases/4c8f8f70-778
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/delete-sitesource-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[Ir](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/delete-sitesource-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

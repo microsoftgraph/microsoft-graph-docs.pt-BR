@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: abheek-das
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 3ebe53470bc202d418b63f166ec81e5c6faaf73d
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: fb4ebb7bf5dc0808b96313645e47c82557bdd266
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59037415"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "61004028"
 ---
 # <a name="update-mailsearchfolder"></a>Atualizar mailSearchFolder
 
@@ -47,7 +47,7 @@ No corpo da solicitação, forneça os valores para os campos relevantes que dev
 |:---------------|:--------|:----------|
 | displayName | Cadeia de caracteres | O nome de exibição da [mailFolder](../resources/mailfolder.md).|
 | includeNestedFolders | Boolean | Como a hierarquia de pastas de caixa de correio deve ser percorrido. `true` significa que uma pesquisa profunda deve ser feita enquanto isso significa que uma pesquisa `false` superficial deve ser feita em vez disso. |
-| sourceFolderIds | Coleção String | As pastas de caixa de correio que devem ser mineradas. |
+| sourceFolderIds | Coleção de cadeias de caracteres | As pastas de caixa de correio que devem ser mineradas. |
 | filterQuery | Cadeia de caracteres | A consulta OData para filtrar as mensagens. |
 
 ## <a name="response"></a>Resposta
@@ -86,6 +86,10 @@ Content-type: application/json
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/update-mailsearchfolder-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[Ir](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/update-mailsearchfolder-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

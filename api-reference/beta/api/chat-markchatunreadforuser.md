@@ -5,12 +5,12 @@ author: sweta-thapliyal
 ms.localizationpriority: medium
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: f107f67d388ead1876a0478b1a1a5840bff28e03
-ms.sourcegitcommit: c6a8c1cc13ace38d6c4371139ee84707c5c93352
+ms.openlocfilehash: 1f1ed7b1485581b2e4bd4111ffee058484835d42
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/10/2021
-ms.locfileid: "60890602"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "60975870"
 ---
 # <a name="chat-markchatunreadforuser"></a>chat: markChatUnreadForUser
 Namespace: microsoft.graph
@@ -98,6 +98,10 @@ Content-length: 158
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/chat-markchatunreadforuser-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[Ir](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/chat-markchatunreadforuser-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

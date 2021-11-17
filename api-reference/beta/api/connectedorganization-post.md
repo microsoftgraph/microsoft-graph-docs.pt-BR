@@ -5,12 +5,12 @@ author: markwahl-msft
 ms.localizationpriority: medium
 ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: 109705c6e5689631508998deca09da28149e6ffc
-ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
+ms.openlocfilehash: 31c36d097544c69462f49e49cc89707646673299
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/12/2021
-ms.locfileid: "60943553"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "61005539"
 ---
 # <a name="create-connectedorganization"></a>Criar connectedOrganization
 
@@ -27,7 +27,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |Tipo de permissão|Permissões (da com menos para a com mais privilégios)|
 |:---|:---|
 | Delegado (conta corporativa ou de estudante)     | EntitlementManagement.ReadWrite.All |
-| Delegada (conta pessoal da Microsoft) | Sem suporte. |
+| Delegado (conta pessoal da Microsoft) | Sem suporte. |
 | Aplicativo                            | EntitlementManagement.ReadWrite.All |
 
 ## <a name="http-request"></a>Solicitação HTTP
@@ -54,10 +54,10 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar [connect
 
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|displayName|Cadeia de caracteres|O nome da organização conectada. |
+|displayName|String|O nome da organização conectada. |
 |description|Cadeia de caracteres|A descrição da organização conectada.|
 |identitySources|[Coleção identitySource](../resources/identitysource.md)|Uma coleção com um elemento, a fonte de identidade inicial nesta organização conectada.|
-|state|connectedOrganizationState|O estado de uma organização conectada define se as políticas de atribuição com o tipo de escopo do solicitante `AllConfiguredConnectedOrganizationSubjects` são aplicáveis ou não. Os valores possíveis são: `configured` e `proposed`.|
+|estado|connectedOrganizationState|O estado de uma organização conectada define se as políticas de atribuição com o tipo de escopo do solicitante `AllConfiguredConnectedOrganizationSubjects` são aplicáveis ou não. Os valores possíveis são: `configured` e `proposed`.|
 
 O único membro da coleção identitySources deve ser do tipo [domainIdentitySource](../resources/domainidentitysource.md) ou [externalDomainFederation.](../resources/externaldomainfederation.md)  Se o chamador fornece um domainIdentitySource, a chamada é bem-sucedida e o domínio corresponde a um domínio registrado de um locatário Azure Active Directory, então a connectedOrganization resultante criada terá uma coleção identitySources contendo um único membro do tipo [azureActiveDirectoryTenant.](../resources/azureactivedirectorytenant.md)
 
@@ -106,6 +106,10 @@ Content-Type: application/json
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/create-connectedorganization-from-connectedorganizations-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[Ir](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/create-connectedorganization-from-connectedorganizations-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

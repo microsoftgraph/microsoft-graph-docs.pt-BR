@@ -2,15 +2,15 @@
 title: Permissão de exclusão
 description: Exclua um objeto permission em um site.
 author: BarrySh
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: sharepoint
 doc_type: apiPageType
-ms.openlocfilehash: 50e18f4a199d3692aee1baf3f5d348a50a884dac
-ms.sourcegitcommit: fe1b4d098af604cc34596f595e799911ea672532
+ms.openlocfilehash: 97fca3a2b5cba75fd888a09a0feb62cb8e89e9e9
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/07/2021
-ms.locfileid: "51611913"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "61033750"
 ---
 # <a name="delete-permission"></a>Permissão de exclusão
 Namespace: microsoft.graph
@@ -77,6 +77,10 @@ DELETE https://graph.microsoft.com/beta/sites/{sitesId}/permissions/{permissionI
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/delete-permission-2-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[Ir](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/delete-permission-2-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

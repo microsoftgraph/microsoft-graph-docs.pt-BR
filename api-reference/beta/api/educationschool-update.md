@@ -5,12 +5,12 @@ author: mmast-msft
 ms.localizationpriority: medium
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: d54fcd22716e1c93e0e43951f5f92eb8de918e2f
-ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
+ms.openlocfilehash: 0901a55e505d631275e3ce2201707cb6d673bc3b
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/12/2021
-ms.locfileid: "60943476"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "61020884"
 ---
 # <a name="update-educationschool-properties"></a>Atualizar as propriedades educationschool
 
@@ -50,7 +50,7 @@ No corpo da solicitação, forneça os valores para os campos relevantes que dev
 | Propriedade            | Tipo                                               | Descrição                        |
 | :------------------ | :------------------------------------------------- | :--------------------------------- |
 | displayName         | Cadeia de caracteres                                             | Nome de exibição da escola         |
-| description         | Cadeia de caracteres                                             | Descrição da escola          |
+| description         | String                                             | Descrição da escola          |
 | principalEmail      | Cadeia de caracteres                                             | Endereço de email da entidade de segurança     |
 | principalName       | Cadeia de caracteres                                             | Nome da entidade de segurança              |
 | externalPrincipalId | Cadeia de caracteres                                             | ID da entidade de segurança no sistema de sincronização. |
@@ -98,6 +98,10 @@ Content-type: application/json
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/update-educationschool-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[Ir](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/update-educationschool-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

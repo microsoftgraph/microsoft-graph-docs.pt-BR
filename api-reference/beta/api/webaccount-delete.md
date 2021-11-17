@@ -1,24 +1,24 @@
 ---
-title: Excluir conta da
-description: Excluir um objeto webaccount do perfil de um usuário.
-localization_priority: Normal
+title: Excluir webAccount
+description: Exclua um objeto webAccount do perfil de um usuário.
+ms.localizationpriority: medium
 author: kevinbellinger
 ms.prod: people
 doc_type: apiPageType
-ms.openlocfilehash: 7fffea9dda8fd990f8d607e16978b5997ea0fb69
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 220960ca4e7183f85927b1bb2f40c9203bf63741
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48973975"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "61019238"
 ---
-# <a name="delete-webaccount"></a>Excluir conta da
+# <a name="delete-webaccount"></a>Excluir webAccount
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Excluir um objeto [webaccount](../resources/webaccount.md) do [perfil](../resources/profile.md)de um usuário.
+[Exclua um objeto webAccount](../resources/webaccount.md) do perfil de um [usuário.](../resources/profile.md)
 
 ## <a name="permissions"></a>Permissões
 
@@ -26,8 +26,8 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 | Tipo de permissão                        | Permissões (da com menos para a com mais privilégios) |
 |:---------------------------------------|:--------------------------------------------|
-| Delegado (conta corporativa ou de estudante)     | User. ReadWrite, User. ReadWrite. All          |
-| Delegado (conta pessoal da Microsoft) | User. ReadWrite, User. ReadWrite. All          |
+| Delegado (conta corporativa ou de estudante)     | User.ReadWrite, User.ReadWrite.All          |
+| Delegado (conta pessoal da Microsoft) | User.ReadWrite, User.ReadWrite.All          |
 | Aplicativo                            | User.ReadWrite.All                          |
 
 ## <a name="http-request"></a>Solicitação HTTP
@@ -82,6 +82,10 @@ DELETE https://graph.microsoft.com/beta/me/profile/webAccounts/{id}
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/delete-webaccount-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[Ir](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/delete-webaccount-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

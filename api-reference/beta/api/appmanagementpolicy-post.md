@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: madansr7
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: 027350393caf2ba3d0028f80206c6af8c34c9d01
-ms.sourcegitcommit: c7ff992ef63e480d070421ba99b28ee129cb6acb
+ms.openlocfilehash: bc5d8dbd9655eb4f5b7a01f41d8fff03ab94c68a
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "60693063"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "60982662"
 ---
 # <a name="create-appmanagementpolicy"></a>Criar appManagementPolicy
 
@@ -126,6 +126,10 @@ POST https://graph.microsoft.com/beta/policies/appManagementPolicies
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/create-appmanagementpolicy-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[Ir](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/create-appmanagementpolicy-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

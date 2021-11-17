@@ -5,12 +5,12 @@ author: preetikr
 ms.localizationpriority: medium
 ms.prod: ''
 doc_type: apiPageType
-ms.openlocfilehash: 50a30fa3f817d93b60bdbca686a8e19e85150a27
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 9f2b3007944015a5e75f00fa764c4d509dd58b48
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59007520"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "60995998"
 ---
 # <a name="update-securescorecontrolprofile"></a>Atualizar secureScoreControlProfile
 
@@ -24,8 +24,8 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegada (conta corporativa ou de estudante) |   SecurityEvents.ReadWrite.All  |
-|Delegada (conta pessoal da Microsoft) |  Sem suporte.  |
+|Delegado (conta corporativa ou de estudante) |   SecurityEvents.ReadWrite.All  |
+|Delegado (conta pessoal da Microsoft) |  Sem suporte.  |
 |Aplicativo | SecurityEvents.ReadWrite.All |
 
 ## <a name="http-request"></a>Solicitação HTTP
@@ -40,7 +40,7 @@ PATCH /security/secureScoreControlProfiles/{id}
 
 | Nome       | Descrição|
 |:-----------|:-----------|
-| Autorização  | Portador {código}. Obrigatório.|
+| Autorização  | {code} do portador. Obrigatório.|
 |Preferir | return=representation. |
 
 ## <a name="request-body"></a>Corpo da solicitação
@@ -51,13 +51,13 @@ No corpo da solicitação, fornece uma representação JSON dos valores para cam
 |:---------------|:--------|:----------|
 |assignedTo|Cadeia de caracteres|Nome do analista ao que o controle é atribuído para triagem, implementação ou correção.|
 |comment|String|Comentários do analista sobre o controle (para gerenciamento de controle do cliente).|
-|state| Cadeia de caracteres|Configuração orientada pelo analista no controle. Os valores possíveis são: `Default`, `Ignored`, `ThirdParty`, `Reviewed`.|
+|estado| Cadeia de caracteres|Configuração orientada pelo analista no controle. Os valores possíveis são: `Default`, `Ignored`, `ThirdParty`, `Reviewed`.|
 | vendorInformation | [securityVendorInformation](../resources/securityvendorinformation.md) | Tipo complexo que contém detalhes sobre o fornecedor de produtos/serviços de segurança, provedor e subprovider (por exemplo, vendor=Microsoft; provider=SecureScore;). **Os campos provedor e fornecedor são necessários.** |
 
 
 ## <a name="response"></a>Resposta
 
-Se bem-sucedido, este método retorna um código de resposta `204 No Content`.
+Se tiver êxito, este método retornará um código de resposta `204 No Content`.
 
 Se o header de solicitação opcional for usado, o método retornará um código de resposta e o objeto `200 OK` [secureScoreControlProfiles](../resources/securescorecontrolprofile.md) atualizado no corpo da resposta.
 
@@ -106,6 +106,10 @@ Content-type: application/json
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/securescorecontrolprofiles-update-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[Ir](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/securescorecontrolprofiles-update-1-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -161,6 +165,10 @@ Content-type: application/json
 
 # <a name="objective-c"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/securescorecontrolprofiles-update-2-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[Ir](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/securescorecontrolprofiles-update-2-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

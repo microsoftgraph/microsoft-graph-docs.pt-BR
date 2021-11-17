@@ -1,16 +1,16 @@
 ---
 title: Excluir accessPackageAssignmentPolicy
 description: Exclua um accessPackageAssignmentPolicy.
-localization_priority: Normal
+ms.localizationpriority: medium
 author: markwahl-msft
 ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: fa2ca4ac595beaf917a76c20d88d148ddf02516f
-ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
+ms.openlocfilehash: 0407b37c21c5e2e8067c8f535f1d4427f6ead6c0
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50439741"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "60983544"
 ---
 # <a name="delete-accesspackageassignmentpolicy"></a>Excluir accessPackageAssignmentPolicy
 
@@ -81,6 +81,10 @@ DELETE https://graph.microsoft.com/beta/identityGovernance/entitlementManagement
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/delete-accesspackageassignmentpolicy-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[Ir](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/delete-accesspackageassignmentpolicy-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
