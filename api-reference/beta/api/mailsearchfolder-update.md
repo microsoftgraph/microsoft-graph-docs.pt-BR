@@ -1,16 +1,16 @@
 ---
 title: Atualizar mailSearchFolder
 description: Atualize as propriedades writable do objeto mailSearchFolder.
-localization_priority: Normal
+ms.localizationpriority: medium
 author: abheek-das
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: aece212bdb2d78c5a3308e6f15161070f15bd7cf
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: bb69662efdaa4c3327644ade7a12c183f122e1db
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52052177"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "61022144"
 ---
 # <a name="update-mailsearchfolder"></a>Atualizar mailSearchFolder
 
@@ -47,10 +47,10 @@ No corpo da solicitação, forneça os valores para os campos relevantes que dev
 
 | Propriedade     | Tipo   |Descrição|
 |:---------------|:--------|:----------|
-| displayName | String | O nome de exibição da [mailFolder](../resources/mailfolder.md).|
+| displayName | Cadeia de caracteres | O nome de exibição da [mailFolder](../resources/mailfolder.md).|
 | includeNestedFolders | Boolean | Como a hierarquia de pastas de caixa de correio deve ser percorrido. `true` significa que uma pesquisa profunda deve ser feita enquanto isso significa que uma pesquisa `false` superficial deve ser feita em vez disso. |
-| sourceFolderIds | Conjunto de cadeias de caracteres | As pastas de caixa de correio que devem ser mineradas. |
-| filterQuery | String | A consulta OData para filtrar as mensagens. |
+| sourceFolderIds | Coleção de cadeias de caracteres | As pastas de caixa de correio que devem ser mineradas. |
+| filterQuery | Cadeia de caracteres | A consulta OData para filtrar as mensagens. |
 
 ## <a name="response"></a>Resposta
 Se tiver êxito, este método retornará um código de resposta e um `200 OK` [objeto mailFolder](../resources/mailfolder.md) atualizado no corpo da resposta.
@@ -88,6 +88,10 @@ Content-type: application/json
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/update-mailsearchfolder-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[Ir](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/update-mailsearchfolder-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

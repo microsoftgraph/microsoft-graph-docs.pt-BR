@@ -5,12 +5,12 @@ author: abheek-das
 ms.localizationpriority: medium
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: ac029d29ab88d4b6e5cd7168c75e6c95bdd4ff03
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: e39ac8a3b532bf973252511297c65867d7f0707b
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59079306"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "61004042"
 ---
 # <a name="create-rule"></a>Criar regra
 
@@ -26,7 +26,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegada (conta corporativa ou de estudante) | MailboxSettings.ReadWrite    |
+|Delegado (conta corporativa ou de estudante) | MailboxSettings.ReadWrite    |
 |Delegado (conta pessoal da Microsoft) | MailboxSettings.ReadWrite    |
 |Aplicativo | MailboxSettings.ReadWrite |
 
@@ -46,11 +46,11 @@ POST /users/{id | userPrincipalName}/mailFolders/inbox/messageRules
 ## <a name="request-body"></a>Corpo da solicitação
 No corpo da solicitação, forneça os parâmetros que são aplicáveis à sua regra. A seguir estão os parâmetros de corpo que normalmente são usados ao criar regras. É possível especificar outras propriedades **messageRule** graváveis conforme apropriado no corpo da solicitação.
 
-| Name       | Tipo|Descrição|
+| Nome       | Tipo|Descrição|
 |:--------|:-------|:----------|
 |actions|[messageRuleActions](../resources/messageruleactions.md)|Ações a serem realizadas em uma mensagem quando as condições correspondentes, se houver, forem atendidas. Obrigatório.|
 |conditions|[messageRulePredicates](../resources/messagerulepredicates.md)|Condições que, quando atendidas, acionarão as ações correspondentes dessa regra. Opcional.|
-|displayName| Cadeia de caracteres  | O nome de exibição da regra. Obrigatório.|
+|displayName| String  | O nome de exibição da regra. Obrigatório.|
 |exceptions| [messageRulePredicates](../resources/messagerulepredicates.md)| Representa condições de exceção para a regra. Opcional. |
 |isEnabled | Booliano | Indica se a regra está habilitada para ser aplicada a mensagens. Opcional. |
 |sequence| Int32 | Indica a ordem em que a regra é executada, entre outras regras. Obrigatório.|
@@ -109,6 +109,10 @@ Content-type: application/json
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/create-messagerule-from-mailfolder-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[Ir](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/create-messagerule-from-mailfolder-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

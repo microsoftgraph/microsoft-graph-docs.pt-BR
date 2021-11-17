@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 doc_type: apiPageType
 author: jkdouglas
 ms.prod: identity-and-sign-in
-ms.openlocfilehash: c02baf42a497ff10324c4ad26f0eb268c2fd0af2
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 697e642412d110ff0323ed6fcc86e9f0eba06195
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59045684"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "61027617"
 ---
 # <a name="create-identityuserflowattribute"></a>Criar identityUserFlowAttribute
 
@@ -24,8 +24,8 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegada (conta corporativa ou de estudante)|IdentityUserFlow.ReadWrite.All|
-|Delegada (conta pessoal da Microsoft)| Sem suporte.|
+|Delegado (conta corporativa ou de estudante)|IdentityUserFlow.ReadWrite.All|
+|Delegado (conta pessoal da Microsoft)| Sem suporte.|
 |Aplicativo|IdentityUserFlow.ReadWrite.All|
 
 A conta de trabalho ou de estudante precisa pertencer a uma das seguintes funções:
@@ -56,7 +56,7 @@ No corpo da solicitação, forneça uma representação JSON de [identityUserFlo
 |:---------------|:--------|:----------|
 |id|String|O identificador do atributo de fluxo do usuário. Esse é um atributo somente leitura criado automaticamente.|
 |displayName|String|O nome de exibição do atributo de fluxo do usuário.|
-|descrição|Cadeia de caracteres|A descrição do atributo de fluxo do usuário. Ele é mostrado para o usuário no momento da assinatura.|
+|descrição|String|A descrição do atributo de fluxo do usuário. Ele é mostrado para o usuário no momento da assinatura.|
 |userFlowAttributeType|String|O tipo do atributo de fluxo do usuário. Esse é um atributo somente leitura que é definido automaticamente. Dependendo do tipo de atributo, os valores dessa propriedade serão `builtIn` ou `custom`.|
 |dataType|Cadeia de caracteres|O tipo de dados do atributo de fluxo do usuário. Isso não pode ser modificado depois que o atributo de fluxo de usuário personalizado é criado. Os valores com suporte para **tipo de dados** são:<br/><ul><li>`string` </li><li>`boolean`</li><li>`int64`</li></ul>|
 
@@ -102,6 +102,10 @@ Content-type: application/json
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/create-userflowattribute-from-userflowattributes-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[Ir](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/create-userflowattribute-from-userflowattributes-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

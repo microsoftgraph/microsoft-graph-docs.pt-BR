@@ -1,16 +1,16 @@
 ---
 title: 'servicePrincipal: addTokenSigningCertificate'
 description: Adicione um certificado de assinatura a um servicePrincipal.
-localization_priority: Normal
+ms.localizationpriority: medium
 author: luleonpla
 ms.prod: applications
 doc_type: apiPageType
-ms.openlocfilehash: 01aded24ecce1b15c7bb56b9c5054f887098dc38
-ms.sourcegitcommit: 94c4acf8bd03c10a44b12952b6cb4827df55b978
+ms.openlocfilehash: 0b835c493916f1f6216ba87625670538db96904b
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/06/2021
-ms.locfileid: "52787223"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "61026315"
 ---
 # <a name="serviceprincipal-addtokensigningcertificate"></a>servicePrincipal: addTokenSigningCertificate
 
@@ -18,9 +18,15 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Cria um certificado de assinatura auto-assinado e retorna um [selfSignedCertificate](../resources/selfsignedcertificate.md), que é a parte pública do certificado gerado. O certificado de assinatura auto-assinado é composto por esses recursos: a chave privada ([keyCredential](../resources/keycredential.md) com uso = 'Sign'), a chave pública ([keyCredential](../resources/keycredential.md) com uso = 'verify') e [a passwordCredential](../resources/passwordcredential.md). Todos os recursos criados têm o **mesmo customKeyIdentifier**.
+Cria um certificado de assinatura auto-assinado e retorna um [objeto selfSignedCertificate,](../resources/selfsignedcertificate.md) que é a parte pública do certificado gerado. O certificado de assinatura auto-assinado é composto pelos seguintes objetos adicionados ao [servicePrincipal](../resources/serviceprincipal.md): 
++ O [objeto keyCredentials](../resources/keycredential.md) com os seguintes objetos:
+    + Um objeto de chave privada com **o uso** definido como `Sign` .
+    + Um objeto de chave pública com **o uso** definido como `Verify` .
++ O [objeto passwordCredentials.](../resources/passwordcredential.md)
 
-A **senhaCredential** é usada para abrir a chave pfx/privada. Além disso, ele está associado ao privateKey ter a mesma **keyId**. O assunto do certificado é um valor constante. Ele não será afetado pelo **displayName opcional** fornecido na chamada POST. O **startDateTime** é definido para o mesmo horário em que o certificado é criado usando a ação. O **endDateTime** pode ter até três anos após a criação do certificado.
+Todos os objetos têm o mesmo valor **de customKeyIdentifier**.
+
+A **passwordCredential** é usada para abrir o arquivo PFX (chave privada). Ele e o objeto de chave privada associado têm o mesmo valor de **keyId**. Depois de definido durante a criação por meio da **propriedade displayName,** o assunto do certificado não pode ser atualizado. O **startDateTime** é definido para o mesmo horário em que o certificado é criado usando a ação. O **endDateTime** pode ter até três anos após a criação do certificado.
 
 ## <a name="permissions"></a>Permissões
 
@@ -46,7 +52,7 @@ No corpo da solicitação, forneça as seguintes propriedades necessárias.
 | Propriedade     | Tipo   |Descrição|
 |:---------------|:--------|:----------|
 | displayName | cadeia de caracteres | Nome amigável para a chave.  Ele deve começar com `CN=` .|
-| endDateTime | DateTimeOffset |A data e a hora em que a credencial expira. Pode ser até 3 anos a partir da data em que o certificado é criado. Se não for fornecido, o padrão será de três anos a partir do momento da criação. O tipo Timestamp representa informações de data e hora usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite UTC em 1º de janeiro de 2014 teria esta aparência: '2014-01-01T00:00:00Z' .|
+| endDateTime | DateTimeOffset |A data e a hora em que a credencial expira. Pode ser até 3 anos a partir da data em que o certificado é criado. Se não for fornecido, o padrão será de três anos a partir do momento da criação. O tipo de data/hora representa informações de data e hora usando o formato ISO 8601 e está sempre em horário UTC. Por exemplo, meia-noite UTC em 1 de janeiro de 2014 é `2014-01-01T00:00:00Z`.|
 
 ## <a name="response"></a>Resposta
 
@@ -88,6 +94,10 @@ Content-type: application/json
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/serviceprincipal-addtokensigningcertificate-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[Ir](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/serviceprincipal-addtokensigningcertificate-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

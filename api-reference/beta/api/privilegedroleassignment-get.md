@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 doc_type: apiPageType
 ms.prod: governance
 author: carolinetempleton
-ms.openlocfilehash: f6655fa1e710f07f32d7c65f41b6ebb4445520ad
-ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
+ms.openlocfilehash: fdcde5c199136c0bfd374f4caffa4cb722f8b6b9
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/12/2021
-ms.locfileid: "60939312"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "61007724"
 ---
 # <a name="get-privilegedroleassignment"></a>Get privilegedRoleAssignment
 
@@ -79,6 +79,10 @@ GET https://graph.microsoft.com/beta/privilegedRoleAssignments/{id}
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/get-privilegedroleassignment-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[Ir](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/get-privilegedroleassignment-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

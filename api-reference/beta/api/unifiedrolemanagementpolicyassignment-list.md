@@ -5,12 +5,12 @@ author: carolinetempleton
 ms.localizationpriority: medium
 ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: 217632f6ffd22a29957fad5a1c1a8a4193bc20da
-ms.sourcegitcommit: c7ff992ef63e480d070421ba99b28ee129cb6acb
+ms.openlocfilehash: faa4c10fa7cb2edc4978118d6b6a4a10a666bab8
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "60694233"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "61027785"
 ---
 # <a name="list-unifiedrolemanagementpolicyassignments"></a>Listar unifiedRoleManagementPolicyAssignments
 Namespace: microsoft.graph
@@ -80,6 +80,10 @@ GET https://graph.microsoft.com/beta/policies/roleManagementPolicyAssignments
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/list-unifiedrolemanagementpolicyassignment-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[Ir](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/list-unifiedrolemanagementpolicyassignment-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

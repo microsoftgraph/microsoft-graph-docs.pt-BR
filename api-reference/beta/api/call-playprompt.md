@@ -2,15 +2,15 @@
 title: 'call: playPrompt'
 description: Reproduza um prompt na chamada.
 author: ananmishr
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: b6bfd7aa2cf7392a4abd16b339d31f58f9e64aff
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: ac3ce623d45e4ac8a802fbd0dae2c10894a5f7e5
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52047641"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "61025056"
 ---
 # <a name="call-playprompt"></a>call: playPrompt
 
@@ -32,7 +32,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |:---------------------------------------|:--------------------------------------------|
 | Delegado (conta corporativa ou de estudante)     | Sem suporte.                               |
 | Delegado (conta pessoal da Microsoft) | Sem suporte.                               |
-| Application                            | Nenhum                                        |
+| Aplicativo                            | Nenhum.                                        |
 
 ## <a name="http-request"></a>Solicitação HTTP
 
@@ -54,8 +54,8 @@ Forneça um objeto JSON com os seguintes parâmetros no corpo da solicitação.
 | Parâmetro      | Tipo    |Descrição|
 |:---------------|:--------|:----------|
 |prompts|[Coleção MediaPrompt](../resources/mediaprompt.md)| Os prompts a serem tocados. O tamanho máximo da coleção mediaPrompt suportado é 20.|
-|loop|Boolean| O valor do loop. True indica fazer loop infinitamente. O valor padrão é falso. |
-|clientContext|String|Cadeia de caracteres de contexto de cliente exclusiva. Pode ter no máximo 256 caracteres.|
+|loop|Booliano| O valor do loop. True indica fazer loop infinitamente. O valor padrão é falso. |
+|clientContext|Cadeia de caracteres|Cadeia de caracteres de contexto de cliente exclusiva. Pode ter no máximo 256 caracteres.|
 
 ## <a name="response"></a>Resposta
 Se tiver êxito, este método retornará um código de resposta e um `200 OK` [objeto playPromptOperation](../resources/playpromptoperation.md) no corpo da resposta.
@@ -106,6 +106,10 @@ Content-Length: 166
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/call-playprompt-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[Ir](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/call-playprompt-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

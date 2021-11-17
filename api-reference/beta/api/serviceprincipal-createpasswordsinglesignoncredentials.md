@@ -1,16 +1,16 @@
 ---
 title: 'servicePrincipal: createPasswordSingleSignOnCredentials'
 description: Crie credenciais de login único usando uma senha para um usuário ou grupo.
-localization_priority: Normal
+ms.localizationpriority: medium
 author: sureshja
 ms.prod: applications
 doc_type: apiPageType
-ms.openlocfilehash: a83e5c1eeb09cab08f3b086e50f864172e5061b5
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: da8374fb89de6efc133b4281bf6f3fe5aa92df7c
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52051960"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "61033862"
 ---
 # <a name="serviceprincipal-createpasswordsinglesignoncredentials"></a>servicePrincipal: createPasswordSingleSignOnCredentials
 
@@ -28,7 +28,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |:---------------------------------------|:--------------------------------------------|
 | Delegado (conta corporativa ou de estudante)     | Application.ReadWrite.All e Directory.Read.All, Directory.ReadWrite.All, Directory.AccessAsUser.All |
 | Delegado (conta pessoal da Microsoft) | Sem suporte. |
-| Application                            | Application.ReadWrite.All e Directory.Read.All, Directory.ReadWrite.All |
+| Aplicativo                            | Application.ReadWrite.All e Directory.Read.All, Directory.ReadWrite.All |
 
 > [!NOTE]
 > Os usuários podem criar credenciais para si mesmos. Os proprietários e administradores de entidades de serviço com as seguintes funções podem criar credenciais para qualquer usuário ou grupo: GlobalAdministrator, ApplicationAdministrator, CloudApplicationAdministrator. Para saber mais, confira [Funções de diretório](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles).
@@ -54,7 +54,7 @@ Forneça um objeto JSON com os seguintes parâmetros no corpo da solicitação.
 
 | Parâmetro    | Tipo        | Descrição |
 |:-------------|:------------|:------------|
-|id|String|A ID do usuário ou grupo a que esse conjunto de credenciais pertence.|
+|id|Cadeia de caracteres|A ID do usuário ou grupo a que esse conjunto de credenciais pertence.|
 |credenciais|[coleção credential](../resources/credential.md)|Uma lista de objetos de credencial que definem o fluxo de login completo.|
 
 ## <a name="response"></a>Resposta
@@ -107,6 +107,10 @@ Content-type: application/json
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/serviceprincipal-createpasswordsinglesignoncredentials-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[Ir](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/serviceprincipal-createpasswordsinglesignoncredentials-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

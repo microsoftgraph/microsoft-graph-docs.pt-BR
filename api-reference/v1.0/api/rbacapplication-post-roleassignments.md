@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: abhijeetsinha
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: b19c4cd7ddb50b3337e9c4f89a27ef0f24afa5e7
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 591da78a005b720ad5c247e7fd46b4e9706ac99a
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59061013"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "61006113"
 ---
 # <a name="create-unifiedroleassignment"></a>Criar unifiedRoleAssignment
 
@@ -24,8 +24,8 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 | Tipo de permissão                        | Permissões (da com menos para a com mais privilégios) |
 |:---------------------------------------|:--------------------------------------------|
-| Delegada (conta corporativa ou de estudante)     | RoleManagement.ReadWrite.Directory |
-| Delegada (conta pessoal da Microsoft) | Sem suporte. |
+| Delegado (conta corporativa ou de estudante)     | RoleManagement.ReadWrite.Directory |
+| Delegado (conta pessoal da Microsoft) | Sem suporte. |
 | Aplicativo                            | RoleManagement.ReadWrite.Directory |
 
 ## <a name="http-request"></a>Solicitação HTTP
@@ -51,8 +51,8 @@ A tabela a seguir mostra as propriedades necessárias ao criar um [objeto unifie
 | Parâmetro | Tipo | Descrição|
 |:---------------|:--------|:----------|
 |roleDefinitionId|Cadeia de caracteres| Identificador da definição de função para a atribuição.|
-|principalId|String| O identificador da entidade à qual a atribuição é concedida. |
-|directoryScopeId|Cadeia de caracteres|Identificador do objeto directory que representa o escopo da atribuição. Essa propriedade ou **appScopeId** é necessária. O escopo de uma atribuição determina o conjunto de recursos para os quais a entidade foi concedida acesso. Os escopos de diretório são escopos compartilhados armazenados no diretório que são compreendidos por vários aplicativos. Use `/` para escopo de todo o locatário. Use **appScopeId** para limitar o escopo somente a um aplicativo.|
+|principalId|Cadeia de caracteres| O identificador da entidade à qual a atribuição é concedida. |
+|directoryScopeId|String|Identificador do objeto directory que representa o escopo da atribuição. Essa propriedade ou **appScopeId** é necessária. O escopo de uma atribuição determina o conjunto de recursos para os quais a entidade foi concedida acesso. Os escopos de diretório são escopos compartilhados armazenados no diretório que são compreendidos por vários aplicativos. Use `/` para escopo de todo o locatário. Use **appScopeId** para limitar o escopo somente a um aplicativo.|
 |appScopeId|Cadeia de caracteres|Identificador do escopo específico do aplicativo quando o escopo de atribuição for específico do aplicativo. Essa propriedade ou **directoryScopeId** é obrigatório. Os escopos do aplicativo são escopos definidos e compreendidos somente por esse aplicativo. Use `/` para escopos de aplicativos de todo o locatário. Use **directoryScopeId** para limitar o escopo a objetos de diretório específicos, por exemplo, unidades administrativas.|
 
 ## <a name="response"></a>Resposta
@@ -100,6 +100,10 @@ Content-type: application/json
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/create-unifiedroleassignment-from-rbacapplication-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[Ir](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/create-unifiedroleassignment-from-rbacapplication-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -172,6 +176,10 @@ Content-type: application/json
 [!INCLUDE [sample-code](../includes/snippets/java/create-unifiedroleassignment-over-administrativeunit-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# <a name="go"></a>[Ir](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/create-unifiedroleassignment-over-administrativeunit-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 
@@ -240,6 +248,10 @@ Content-type: application/json
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/create-unifiedroleassignment-over-application-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[Ir](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/create-unifiedroleassignment-over-application-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

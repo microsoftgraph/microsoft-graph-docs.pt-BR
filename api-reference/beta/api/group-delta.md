@@ -1,16 +1,16 @@
 ---
 title: 'group: delta'
 description: Obter grupos recém-criados, atualizados ou excluídos, incluindo alterações de associação ao grupo, sem precisar executar uma leitura completa de todo o conjunto de grupos. Consulte Using Delta Query para obter detalhes.
-localization_priority: Normal
+ms.localizationpriority: medium
 author: Jordanndahl
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: af6af01f6e10affe3efd41b81d9c011c5bba3473
-ms.sourcegitcommit: c6f7a931a8d83ac54f577b7bec08237fd17ce51a
+ms.openlocfilehash: b0e4d3236bbddd0f626b490d670f8f4e592a1869
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/24/2021
-ms.locfileid: "58490599"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "61034327"
 ---
 # <a name="group-delta"></a>group: delta
 
@@ -137,6 +137,10 @@ GET https://graph.microsoft.com/beta/groups/delta
 [!INCLUDE [sample-code](../includes/snippets/java/group-delta-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# <a name="go"></a>[Ir](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/group-delta-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 
@@ -215,6 +219,10 @@ GET https://graph.microsoft.com/beta/groups/delta?$select=displayName,descriptio
 [!INCLUDE [sample-code](../includes/snippets/java/group-delta-with-selelct-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# <a name="go"></a>[Ir](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/group-delta-with-selelct-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 
@@ -274,6 +282,10 @@ Prefer: return=minimal
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/group-delta-minimal-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[Ir](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/group-delta-minimal-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

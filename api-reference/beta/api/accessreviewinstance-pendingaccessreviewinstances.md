@@ -1,16 +1,16 @@
 ---
 title: 'accessReviewInstance: pendingAccessReviewInstances'
 description: Recupere os objetos accessReviewInstance aguardando aprovação chamando o usuário.
-localization_priority: Normal
+ms.localizationpriority: medium
 author: isabelleatmsft
 ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: c62f954ea7fe70d46ff4a46879b4d568d619226c
-ms.sourcegitcommit: 5a1cc1943527aa268e3797ee514871e65eb474a6
+ms.openlocfilehash: ede1dd60226629d024dffb52958fa1308489f35a
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/19/2021
-ms.locfileid: "53030521"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "60991867"
 ---
 # <a name="accessreviewinstance-pendingaccessreviewinstances-deprecated"></a>accessReviewInstance: pendingAccessReviewInstances (preterido)
 
@@ -31,7 +31,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 |Tipo de permissão                        | Permissões (da com menos para a com mais privilégios)              |
 |:--------------------------------------|:---------------------------------------------------------|
-|Delegada (conta corporativa ou de estudante)     | AccessReview.Read.All, AccessReview.ReadWrite.All  |
+|Delegado (conta corporativa ou de estudante)     | AccessReview.Read.All, AccessReview.ReadWrite.All  |
 
  O usuário in-loco só vê instâncias das quais são atribuídas revisores no accessReviewScheduleDefinition da instância.
 
@@ -80,6 +80,10 @@ GET https://graph.microsoft.com/beta/me/pendingAccessReviewInstances?$expand=def
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/list-accessreviewinstance-pendingapproval-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[Ir](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/list-accessreviewinstance-pendingapproval-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

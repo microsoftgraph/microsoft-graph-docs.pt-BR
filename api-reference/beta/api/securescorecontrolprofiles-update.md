@@ -1,16 +1,16 @@
 ---
 title: Atualizar secureScoreControlProfiles
 description: Atualize uma propriedade secureScoreControlProfiles editável em qualquer solução integrada para alterar várias propriedades, como assignedTo ou tenantNote.
-localization_priority: Normal
+ms.localizationpriority: medium
 doc_type: apiPageType
 ms.prod: ''
 author: preetikr
-ms.openlocfilehash: 6fee598a91d7153b98ca6e36bb9a21ff949e8b22
-ms.sourcegitcommit: 94c4acf8bd03c10a44b12952b6cb4827df55b978
+ms.openlocfilehash: 2c02d91ef7c774975c28b125bcbc4fb9432d1504
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/06/2021
-ms.locfileid: "52787237"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "61002586"
 ---
 # <a name="update-securescorecontrolprofiles"></a>Atualizar secureScoreControlProfiles
 
@@ -20,7 +20,7 @@ Namespace: microsoft.graph
 
 Atualizar uma propriedade **secureScoreControlProfiles** editável em qualquer solução integrada para alterar várias propriedades, como **assignedTo** ou **tenantNote**.
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>Permissões
 
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
@@ -42,7 +42,7 @@ PATCH /security/secureScoreControlProfiles/{id}
 
 | Nome       | Descrição|
 |:-----------|:-----------|
-| Autorização  | Portador {código}. Obrigatório.|
+| Autorização  | {code} do portador. Obrigatório.|
 |Preferir | return=representation. |
 
 ## <a name="request-body"></a>Corpo da solicitação
@@ -52,13 +52,13 @@ No corpo da solicitação, fornece uma representação JSON dos valores para cam
 | Propriedade   | Tipo |Descrição|
 |:---------------|:--------|:----------|
 |assignedTo|String|Nome do analista ao que o controle é atribuído para triagem, implementação ou correção.|
-|tenantNote|String|Comentários do analista sobre o controle (para gerenciamento de controle do cliente).|
-|controlStateUpdates| String|Configuração orientada pelo analista no controle. Os valores possíveis são: `ignore`, `thirdParty`, `reviewed`.|
+|tenantNote|Cadeia de caracteres|Comentários do analista sobre o controle (para gerenciamento de controle do cliente).|
+|controlStateUpdates| Cadeia de caracteres|Configuração orientada pelo analista no controle. Os valores possíveis são: `ignore`, `thirdParty`, `reviewed`.|
 
 
 ## <a name="response"></a>Resposta
 
-Se bem-sucedido, este método retorna um código de resposta `204 No Content`.
+Se tiver êxito, este método retornará um código de resposta `204 No Content`.
 
 Se o header de solicitação opcional for usado, o método retornará um código de resposta e o objeto `200 OK` [secureScoreControlProfiles](../resources/securescorecontrolprofiles.md) atualizado no corpo da resposta.
 
@@ -96,6 +96,10 @@ Content-type: application/json
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/securescorecontrolprofiles-update-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[Ir](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/securescorecontrolprofiles-update-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

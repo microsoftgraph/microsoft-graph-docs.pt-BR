@@ -1,16 +1,16 @@
 ---
 title: Excluir extensão aberta
 description: 'Exclua uma extensão aberta (objeto openTypeExtension) da instância especificada de um recurso. '
-localization_priority: Normal
+ms.localizationpriority: medium
 author: dkershaw10
 doc_type: apiPageType
 ms.prod: extensions
-ms.openlocfilehash: 01be68fc952fbc57debeb054257813cb34d626a5
-ms.sourcegitcommit: 69c355eeb620b76ca70d896f984e21c32ac09eb0
+ms.openlocfilehash: 637951212a9243e4fdd96f5778d775cb4e65b3cb
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/03/2021
-ms.locfileid: "50092733"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "61028178"
 ---
 # <a name="delete-open-extension"></a>Excluir extensão aberta
 
@@ -20,11 +20,11 @@ Namespace: microsoft.graph
 
 Exclua uma extensão aberta (objeto [openTypeExtension](../resources/opentypeextension.md)) da instância especificada de um recurso. 
 
-Consulte a tabela na seção [Permissões para](#permissions) ver a lista de recursos que suportam extensões abertas.
+Consulte a tabela na seção [Permissões](#permissions) para a lista de recursos que suportam extensões abertas.
 
 ## <a name="permissions"></a>Permissões
 
-Dependendo do recurso do qual você está excluindo a extensão e do tipo de permissão (delegado ou aplicativo) solicitado, a permissão especificada na tabela a seguir é a menos privilegiada necessária para chamar essa API. Para saber mais, incluindo [tomar cuidado](/graph/auth/auth-concepts#best-practices-for-requesting-permissions) antes de escolher permissões mais privilegiadas, procure as seguintes permissões em [Permissões.](/graph/permissions-reference)
+Dependendo do recurso do qual você está excluindo a extensão e o tipo de permissão (delegado ou aplicativo) solicitado, a permissão especificada na tabela a seguir é a menos privilegiada necessária para chamar essa API. Para saber mais, incluindo [tomar cuidado](/graph/auth/auth-concepts#best-practices-for-requesting-permissions) antes de escolher as permissões mais privilegiadas, pesquise as seguintes permissões em [Permissões](/graph/permissions-reference).
 
 | Recurso com suporte | Delegada (conta corporativa ou de estudante) | Delegada (conta pessoal da Microsoft) | Application |
 |:-----|:-----|:-----|:-----|
@@ -37,7 +37,7 @@ Dependendo do recurso do qual você está excluindo a extensão e do tipo de per
 | [organization](../resources/organization.md) | Organization.ReadWrite.All | Incompatível | Organization.ReadWrite.All |
 | [contato pessoal](../resources/contact.md) | Contacts.ReadWrite | Contacts.ReadWrite | Contacts.ReadWrite |
 | [user](../resources/user.md) | User.ReadWrite | User.ReadWrite | User.ReadWrite.All |
-| [task](../resources/todotask.md) | Tasks.ReadWrite | Tasks.ReadWrite | Tasks.ReadWrite.All |
+| [tarefa](../resources/todotask.md) | Tasks.ReadWrite | Tasks.ReadWrite | Tasks.ReadWrite.All |
 | [tasklist](../resources/todotasklist.md)  | Tasks.ReadWrite | Tasks.ReadWrite | Tasks.ReadWrite.All |
 
 ## <a name="http-request"></a>Solicitação HTTP
@@ -65,7 +65,7 @@ DELETE /users/me/todo/lists/{todoTaskListId}/tasks/{taskId}/extensions/{extensio
 ## <a name="path-parameters"></a>Parâmetros do caminho
 |**Parâmetro**|**Tipo**|**Descrição**|
 |:-----|:-----|:-----|
-|id|cadeia de caracteres|Um identificador exclusivo para uma instância na coleção correspondente. Obrigatório.|
+|id|string|Um identificador exclusivo para uma instância na coleção correspondente. Obrigatório.|
 |extensionId|string|Pode ser um nome de extensão que é um identificador de texto exclusivo para a extensão ou um nome totalmente qualificado que concatena o tipo de extensão e o identificador de texto exclusivo. O nome totalmente qualificado é retornado na propriedade `id` quando você cria a extensão. Obrigatório.|
 
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
@@ -106,6 +106,10 @@ DELETE https://graph.microsoft.com/beta/me/messages/AAMkAGE1M2IyNGNmLTI5MTktNDUy
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/delete-opentypeextension-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[Ir](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/delete-opentypeextension-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
