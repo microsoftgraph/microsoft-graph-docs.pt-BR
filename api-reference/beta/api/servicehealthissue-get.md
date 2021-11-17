@@ -2,15 +2,15 @@
 title: Obter serviceHealthIssue
 description: Recupere as propriedades e as relações de um objeto serviceHealthIssue.
 author: payiAzure
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: service-communications
 doc_type: apiPageType
-ms.openlocfilehash: 07a5d9e2952245b92592fe67c5f98c3664a96d5f
-ms.sourcegitcommit: 7f674112f5b95446fac86d829509f889c60f1693
+ms.openlocfilehash: c648b8c9639ea84f7ffe5099c8352ed5b61e6324
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/30/2021
-ms.locfileid: "53208989"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "61031902"
 ---
 # <a name="get-servicehealthissue"></a>Obter serviceHealthIssue
 Namespace: microsoft.graph
@@ -83,6 +83,10 @@ GET https://graph.microsoft.com/beta/admin/serviceAnnouncement/issues/MO226784
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/get-servicehealthissue-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[Ir](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/get-servicehealthissue-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

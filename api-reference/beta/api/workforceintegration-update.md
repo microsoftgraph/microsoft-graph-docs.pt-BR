@@ -1,16 +1,16 @@
 ---
 title: Atualizar workforceintegration
 description: Atualize as propriedades de um objeto workforceintegration.
-localization_priority: Normal
+ms.localizationpriority: medium
 author: akumar39
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: c62a27e7c0a019023bea7549523dc8b9de7582c1
-ms.sourcegitcommit: 94c4acf8bd03c10a44b12952b6cb4827df55b978
+ms.openlocfilehash: 6fcfe75b2ee2d39a3142c952d6218da31c8b36df
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/06/2021
-ms.locfileid: "52787993"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "61031216"
 ---
 # <a name="update-workforceintegration"></a>Atualizar workforceintegration
 
@@ -20,7 +20,7 @@ Namespace: microsoft.graph
 
 Atualize as propriedades de um [objeto workforceintegration.](../resources/workforceintegration.md)
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>Permissões
 
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
@@ -51,11 +51,11 @@ No corpo da solicitação, forneça os valores para os campos relevantes que dev
 | Propriedade     | Tipo        | Descrição |
 |:-------------|:------------|:------------|
 |apiVersion|Int32|Versão da API para a URL de retorno de chamada. Comece com 1.|
-|displayName|String|Nome da integração da força de trabalho.|
+|displayName|Cadeia de caracteres|Nome da integração da força de trabalho.|
 |encryption|workforceIntegrationEncryption|O recurso de criptografia de integração de força de trabalho. |
 |isActive|Booliano|Indica se essa integração de força de trabalho está ativa e disponível no momento.|
-|suporta|cadeia de caracteres| Os valores possíveis `none` são , , , , , `shift` `swapRequest` `openshift` `openShiftRequest` `userShiftPreferences` . Se selecionar mais de um valor, todos os valores devem começar com a primeira letra em maiúscula.|
-|supportedEntities|cadeia de caracteres| Essa propriedade substituirá **os suportes** em v1.0. Recomendamos que você use essa propriedade em vez de **suporte**. A **propriedade supports** ainda terá suporte na versão beta por enquanto. Os valores possíveis `none` são , , , , , `shift` `swapRequest` `openshift` `openShiftRequest` `userShiftPreferences` . Se selecionar mais de um valor, todos os valores devem começar com a primeira letra em maiúscula.|
+|suporta|string| Os valores possíveis `none` são , , , , , `shift` `swapRequest` `openshift` `openShiftRequest` `userShiftPreferences` . Se selecionar mais de um valor, todos os valores devem começar com a primeira letra em maiúscula.|
+|supportedEntities|string| Essa propriedade substituirá **os suportes** em v1.0. Recomendamos que você use essa propriedade em vez de **suporte**. A **propriedade supports** ainda terá suporte na versão beta por enquanto. Os valores possíveis `none` são , , , , , `shift` `swapRequest` `openshift` `openShiftRequest` `userShiftPreferences` . Se selecionar mais de um valor, todos os valores devem começar com a primeira letra em maiúscula.|
 |url|Cadeia de caracteres| Url de Integração de Força de Trabalho para retornos de chamada do serviço Shift. |
 
 ## <a name="response"></a>Resposta
@@ -108,6 +108,10 @@ Content-type: application/json
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/update-workforceintegration-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[Ir](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/update-workforceintegration-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

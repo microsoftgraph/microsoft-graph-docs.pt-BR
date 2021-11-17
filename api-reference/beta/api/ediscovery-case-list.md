@@ -1,16 +1,16 @@
 ---
 title: Listar casos
 description: Recupere uma lista de casos de Descoberta e.
-localization_priority: Normal
+ms.localizationpriority: medium
 author: mahage-msft
 ms.prod: ediscovery
 doc_type: apiPageType
-ms.openlocfilehash: eae0e826451383eb4e3bbd9b2c8089709baf509e
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: 33ce17f67fabc28be38ff92433923876094a7444
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52044757"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "61023942"
 ---
 # <a name="list-cases"></a>Listar casos
 
@@ -87,6 +87,10 @@ GET https://graph.microsoft.com/beta/compliance/ediscovery/cases
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/list-case-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[Ir](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/list-case-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

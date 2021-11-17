@@ -5,12 +5,12 @@ description: " Obter uma coluna de site, lista ou tipo de conteúdo."
 ms.localizationpriority: medium
 doc_type: apiPageType
 ms.prod: sites-and-lists
-ms.openlocfilehash: 87365cb26f43db82ce3d1f7db9d3366080f29305
-ms.sourcegitcommit: 64d27a0e3dcccc9d857e62aace4153e5d98fb3d0
+ms.openlocfilehash: ff601b2e3cdb75adc6f25907aac9249a374dd956
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "60729217"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "61032651"
 ---
 # <a name="get-columndefinition"></a>Obter columnDefinition
 Namespace: microsoft.graph
@@ -94,6 +94,10 @@ GET /sites/{site-id}/contentTypes/{contentType-id}/columns/{column-id}
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/get-column-from-contenttype-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[Ir](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/get-column-from-contenttype-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

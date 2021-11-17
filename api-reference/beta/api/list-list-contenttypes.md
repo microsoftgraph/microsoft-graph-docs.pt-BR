@@ -5,12 +5,12 @@ description: Listar tipos de conteúdo em uma lista
 ms.localizationpriority: medium
 doc_type: apiPageType
 ms.prod: sites-and-lists
-ms.openlocfilehash: 5fa1b39dbec1e23b046579eb43b04ddba9cbfd05
-ms.sourcegitcommit: 64d27a0e3dcccc9d857e62aace4153e5d98fb3d0
+ms.openlocfilehash: b613618b85e87ab2cb86952b03e3efe32a019cf5
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "60730288"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "61034289"
 ---
 # <a name="list-contenttypes-in-a-list"></a>Listar contentTypes em uma lista
 Namespace: microsoft.graph
@@ -78,6 +78,10 @@ GET https://graph.microsoft.com/beta/sites/{site-id}/lists/{list-id}/contentType
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/enum-contenttypes-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[Ir](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/enum-contenttypes-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

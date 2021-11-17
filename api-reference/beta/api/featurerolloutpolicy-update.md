@@ -1,16 +1,16 @@
 ---
 title: Atualizar featureRolloutPolicy
 description: Atualize as propriedades do objeto featurerolloutpolicy.
-localization_priority: Normal
+ms.localizationpriority: medium
 author: madhavpatel6
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: 66b04005f01f9e2d56189a23ad8dae36846a67a0
-ms.sourcegitcommit: 94c4acf8bd03c10a44b12952b6cb4827df55b978
+ms.openlocfilehash: 13a3a4c4fa2a4e5f9677b150a3fb0a072a4048bb
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/06/2021
-ms.locfileid: "52786997"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "61034429"
 ---
 # <a name="update-featurerolloutpolicy"></a>Atualizar featurerolloutpolicy
 
@@ -22,7 +22,7 @@ Namespace: microsoft.graph
 
 Atualize as propriedades do [objeto featureRolloutPolicy.](../resources/featurerolloutpolicy.md)
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>Permissões
 
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
@@ -53,8 +53,8 @@ No corpo da solicitação, fornece os valores para propriedades relevantes que d
 | Propriedade     | Tipo        | Descrição |
 |:-------------|:------------|:------------|
 |description|String|Uma descrição dessa política.|
-|displayName|String|O nome de exibição dessa política.|
-|isAppliedToOrganization|Booliano|Indica se essa política de lançamento de recursos deve ser aplicada a toda a organização.|
+|displayName|Cadeia de caracteres|O nome de exibição dessa política.|
+|isAppliedToOrganization|Boolean|Indica se essa política de lançamento de recursos deve ser aplicada a toda a organização.|
 |isEnabled|Booliano|Indica se a adoção de recursos está habilitada.|
 
 ## <a name="response"></a>Resposta
@@ -98,6 +98,10 @@ Content-type: application/json
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/update-featurerolloutpolicy-policies-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[Ir](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/update-featurerolloutpolicy-policies-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

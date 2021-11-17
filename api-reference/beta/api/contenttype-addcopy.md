@@ -5,12 +5,12 @@ description: Adicione uma cópia de um tipo de conteúdo de site a uma lista.
 ms.localizationpriority: medium
 doc_type: apiPageType
 ms.prod: sites-and-lists
-ms.openlocfilehash: 70199b30d2748f4a6372b83326f93d36bf966c63
-ms.sourcegitcommit: 64d27a0e3dcccc9d857e62aace4153e5d98fb3d0
+ms.openlocfilehash: 0f17dbcfe3a59ae6ff1d9beb0f06f92ba09af611
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "60729455"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "61028808"
 ---
 # <a name="contenttype-addcopy"></a>contentType: addCopy
 Namespace: microsoft.graph
@@ -56,7 +56,7 @@ A tabela a seguir mostra os parâmetros que podem ser usados com esta ação.
 
 |Parâmetro|Tipo|Descrição|
 |-|-|-|
-|contentType| cadeia de caracteres | URL canônica para o tipo de conteúdo do site que será copiado para a lista. Obrigatório.|
+|contentType| string | URL canônica para o tipo de conteúdo do site que será copiado para a lista. Obrigatório.|
 
 ## <a name="response"></a>Resposta
 
@@ -94,6 +94,10 @@ Content-Type: application/json
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/contenttype-addcopy-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[Ir](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/contenttype-addcopy-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

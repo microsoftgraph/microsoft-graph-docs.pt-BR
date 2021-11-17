@@ -1,16 +1,16 @@
 ---
 title: 'servicePrincipal: updatePasswordSingleSignOnCredentials'
 description: Atualize as credenciais de login único usando uma senha para um usuário ou grupo.
-localization_priority: Normal
+ms.localizationpriority: medium
 author: sureshja
 ms.prod: applications
 doc_type: apiPageType
-ms.openlocfilehash: b178bba8f14dc0359baea9c2178eef2cffdf14ce
-ms.sourcegitcommit: 94c4acf8bd03c10a44b12952b6cb4827df55b978
+ms.openlocfilehash: 7b450b3aad8760df1a263d6ea28e9a045757bb8e
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/06/2021
-ms.locfileid: "52786102"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "61033765"
 ---
 # <a name="serviceprincipal-updatepasswordsinglesignoncredentials"></a>servicePrincipal: updatePasswordSingleSignOnCredentials
 
@@ -20,7 +20,7 @@ Namespace: microsoft.graph
 
 Atualize as credenciais de login único usando uma senha para um usuário ou grupo.
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>Permissões
 
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
@@ -54,7 +54,7 @@ Forneça um objeto JSON com os seguintes parâmetros no corpo da solicitação.
 
 | Parâmetro    | Tipo        | Descrição |
 |:-------------|:------------|:------------|
-|id|String|A ID do usuário ou grupo a que esse conjunto de credenciais pertence.|
+|id|Cadeia de caracteres|A ID do usuário ou grupo a que esse conjunto de credenciais pertence.|
 |credenciais|[coleção credential](../resources/credential.md)|Uma lista de objetos de credencial que definem o fluxo de login completo.|
 
 ## <a name="response"></a>Resposta
@@ -107,6 +107,10 @@ Content-type: application/json
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/serviceprincipal-updatepasswordsinglesignoncredentials-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[Ir](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/serviceprincipal-updatepasswordsinglesignoncredentials-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

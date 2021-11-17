@@ -1,16 +1,16 @@
 ---
 title: 'user: findMeetingTimes'
 description: Localize as sugestões de hora da reunião com base no organizador e na disponibilidade dos participantes, assim como nas restrições de horário ou local especificadas como parâmetros.
-localization_priority: Normal
+ms.localizationpriority: medium
 author: vrod9429
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 9fbb914533b8eedce9e896a86886bdba656d6034
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: 6793243feccc7e6a976e394959dffe03aa8f93a6
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52052653"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "61009824"
 ---
 # <a name="user-findmeetingtimes"></a>user: findMeetingTimes
 
@@ -190,11 +190,15 @@ Content-Type: application/json
 [!INCLUDE [sample-code](../includes/snippets/java/user-findmeetingtimes-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# <a name="go"></a>[Ir](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/user-findmeetingtimes-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 
 ##### <a name="response"></a>Resposta
-Aqui está uma resposta de exemplo. Observação: o objeto de resposta mostrado aqui pode ser encurtado para legibilidade.
+Aqui está uma resposta de exemplo. Observação: o objeto de resposta mostrado aqui pode estar reduzido para legibilidade.
 <!-- {
   "blockType": "response",
   "truncated": true,

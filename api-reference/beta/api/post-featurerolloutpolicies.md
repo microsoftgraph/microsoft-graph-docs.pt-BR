@@ -1,16 +1,16 @@
 ---
 title: Criar featureRolloutPolicy
 description: Crie um novo objeto featureRolloutPolicy.
-localization_priority: Normal
+ms.localizationpriority: medium
 author: madhavpatel6
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: 020513c2eb1fdc8b05d49b1f34979dcfecf17623
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: de1ebb4c05fff8ccbbe23743bccd3d70c56205ff
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52049916"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "61028157"
 ---
 # <a name="create-featurerolloutpolicy"></a>Criar featureRolloutPolicy
 
@@ -54,9 +54,9 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar [um feat
 
 | Parâmetro | Tipo | Descrição|
 |:---------------|:--------|:----------|
-|displayName |cadeia de caracteres |O nome de exibição dessa política de lançamento de recursos.|
+|displayName |string |O nome de exibição dessa política de lançamento de recursos.|
 |feature |stagedFeatureName |O recurso que seria lançado usando essa política.|
-|isEnabled |cadeia de caracteres |Indica se a adoção de recursos está habilitada.|
+|isEnabled |string |Indica se a adoção de recursos está habilitada.|
 
 ## <a name="response"></a>Resposta
 
@@ -101,6 +101,10 @@ Content-type: application/json
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/create-featurerolloutpolicy-from-policies-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[Ir](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/create-featurerolloutpolicy-from-policies-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

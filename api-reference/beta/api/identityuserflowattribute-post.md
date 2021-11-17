@@ -1,16 +1,16 @@
 ---
 title: Criar identityUserFlowAttribute
 description: Crie um novo objeto identityUserFlowAttribute.
-localization_priority: Normal
+ms.localizationpriority: medium
 doc_type: apiPageType
 author: jkdouglas
 ms.prod: identity-and-sign-in
-ms.openlocfilehash: f6cdbf3d22e7b51e656e3dbe3d44180232a1467b
-ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
+ms.openlocfilehash: 04f231f9d2c07e51252e2286999c84a6e1f42010
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50435250"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "61030068"
 ---
 # <a name="create-identityuserflowattribute"></a>Criar identityUserFlowAttribute
 
@@ -33,7 +33,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 A conta de trabalho ou de estudante precisa pertencer a uma das seguintes funções:
 
 * Administrador global
-* Administrador de Atributo de Fluxo de Usuário de Identidade Externa
+* Administrador de atributos Flow usuário de identidade externa
 
 ## <a name="http-request"></a>Solicitação HTTP
 
@@ -56,11 +56,11 @@ No corpo da solicitação, forneça uma representação JSON de [identityUserFlo
 
 |Propriedade|Tipo|Descrição|
 |:---------------|:--------|:----------|
-|id|String|O identificador do atributo de fluxo do usuário. Este é um atributo somente leitura que é criado automaticamente.|
+|id|String|O identificador do atributo de fluxo do usuário. Esse é um atributo somente leitura criado automaticamente.|
 |displayName|String|O nome de exibição do atributo de fluxo do usuário.|
-|descrição|String|A descrição do atributo de fluxo do usuário. Ele é mostrado para o usuário no momento da assinatura.|
-|userFlowAttributeType|String|O tipo do atributo de fluxo do usuário. Este é um atributo somente leitura que é definido automaticamente. Dependendo do tipo de atributo, os valores dessa propriedade serão `builtIn` ou `custom` .|
-|dataType|Cadeia de caracteres|O tipo de dados do atributo de fluxo do usuário. Isso não pode ser modificado depois que o atributo de fluxo de usuário personalizado é criado. Os valores com suporte para **dataType** são:<br/><ul><li>`string` : indica que o dataType para identityUserFlowAttribute é uma cadeia de caracteres. </li><li>`boolean` : indica que o dataType para identityUserFlowAttribute é um booleano.</li><li>`int64` : indica que o dataType para identityUserFlowAttribute é um inteiro.</li></ul>|
+|descrição|Cadeia de caracteres|A descrição do atributo de fluxo do usuário. Ele é mostrado para o usuário no momento da assinatura.|
+|userFlowAttributeType|String|O tipo do atributo de fluxo do usuário. Esse é um atributo somente leitura que é definido automaticamente. Dependendo do tipo de atributo, os valores dessa propriedade serão `builtIn` ou `custom`.|
+|dataType|Cadeia de caracteres|O tipo de dados do atributo de fluxo do usuário. Isso não pode ser modificado depois que o atributo de fluxo de usuário personalizado é criado. Os valores com suporte para **tipo de dados** são:<br/><ul><li>`string` : indica que o dataType para identityUserFlowAttribute é uma cadeia de caracteres. </li><li>`boolean` : indica que o dataType para identityUserFlowAttribute é um booleano.</li><li>`int64` : indica que o dataType para identityUserFlowAttribute é um inteiro.</li></ul>|
 
 ## <a name="response"></a>Resposta
 
@@ -104,6 +104,10 @@ Content-type: application/json
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/create-userflowattribute-from-userflowattributes-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[Ir](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/create-userflowattribute-from-userflowattributes-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

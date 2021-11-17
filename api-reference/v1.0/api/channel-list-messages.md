@@ -5,12 +5,12 @@ ms.localizationpriority: high
 author: RamjotSingh
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 795e0dbac2165b182e188ff442e6cc77ec76243a
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 8771dfe75b688e9ff366955a0767ed2e2a8864f0
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59038388"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "61026014"
 ---
 # <a name="list-channel-messages"></a>Listar mensagens do canal
 
@@ -49,7 +49,7 @@ GET /teams/{team-id}/channels/{channel-id}/messages
 Você pode usar o parâmetro de consulta [$top](/graph/query-parameters#top-parameter) para controlar o número de itens por resposta. O valor máximo permitido para `$top` é 50.
 No momento, não há suporte para os outros [Parâmetros de consulta OData](/graph/query-parameters).
 
-> **Observação:** [GET /teams/{teams-id}/channels/{channel-id}/messages/delta](chatmessage-delta.md) oferece suporte para a filtragem por data, que fornece dados semelhantes para GET /teams/{teams-id}/channels/{channel-id}/messages.
+> **Observação:** [GET /teams/{team-id}/channels/{channel-id}/messages/delta](chatmessage-delta.md) oferece suporte para a filtragem por data, que fornece dados semelhantes para GET /teams/{team-id}/channels/{channel-id}/messages.
 
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
 
@@ -94,6 +94,10 @@ GET https://graph.microsoft.com/v1.0/teams/fbe2bf47-16c8-47cf-b4a5-4b9b187c508b/
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/get-listchannelmessages-1-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[Ir](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/get-listchannelmessages-1-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

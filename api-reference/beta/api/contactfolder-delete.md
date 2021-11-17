@@ -2,15 +2,15 @@
 title: Excluir contactFolder
 description: Exclui uma contactFolder que não a padrão.
 author: kevinbellinger
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 5b605192fe6fb1282315a2c042e8254d1a7be049
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 8348682a3f0faa7ed7e387aa43daa661f0337229
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48957165"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "61023991"
 ---
 # <a name="delete-contactfolder"></a>Excluir contactFolder
 
@@ -72,6 +72,10 @@ DELETE https://graph.microsoft.com/beta/me/contactFolders/{id}
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/delete-contactfolder-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[Ir](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/delete-contactfolder-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

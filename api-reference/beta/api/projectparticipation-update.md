@@ -1,16 +1,16 @@
 ---
 title: Atualizar o tipo de recurso projectParticipation
 description: Atualize as propriedades de um objeto projectParticipation no perfil de um usuário.
-localization_priority: Normal
+ms.localizationpriority: medium
 author: kevinbellinger
 ms.prod: people
 doc_type: apiPageType
-ms.openlocfilehash: 5665c10cbaeb2968b5a17be3f7d30561ed9573d2
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: 93c1b08a6c997eb27ed9cf2a0f89a41012265fe0
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52055194"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "61027848"
 ---
 # <a name="update-projectparticipation"></a>Atualizar projectparticipation
 
@@ -53,12 +53,12 @@ No corpo da solicitação, forneça os valores para os campos relevantes que dev
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
 |allowedAudiences|String|As audiências que são capazes de ver os valores contidos na entidade. Herdado [do itemFacet](../resources/itemfacet.md). Os valores possíveis são: `me`, `family`, `contacts`, `groupMembers`, `organization`, `federatedOrganizations`, `everyone`, `unknownFutureValue`.|
-|categories|String collection|Contém categorias que um usuário associou ao projeto (por exemplo, transformação digital, plataforma de petróleo). |
+|categories|Coleção de cadeias de caracteres|Contém categorias que um usuário associou ao projeto (por exemplo, transformação digital, plataforma de petróleo). |
 |client|[companyDetail](../resources/companydetail.md)|Contém informações detalhadas sobre o cliente para o que o projeto era. |
 |collaborationTags|Conjunto de cadeias de caracteres|Contém marcas de cenário de experiência que um usuário associou aos juros. Os valores permitidos na coleção são: `askMeAbout` `ableToMentor` , , , `wantsToLearn` `wantsToImprove` .|
 |colleagues|[coleção relatedPerson](../resources/relatedperson.md)|Lista as pessoas que também trabalharam no projeto. |
 |detail|[positionDetail](../resources/positiondetail.md)|Contém detalhes sobre a função do usuário no projeto.|
-|displayName|String|Contém um nome amigável para o projeto.|
+|displayName|Cadeia de caracteres|Contém um nome amigável para o projeto.|
 |inferência|[inferenceData](../resources/inferencedata.md)|Contém detalhes de inferência se a entidade for inferida pelo aplicativo de criação ou modificação. Herdado [do itemFacet](../resources/itemfacet.md).|
 |patrocinadores|[coleção relatedPerson](../resources/relatedperson.md)|A Pessoa ou as pessoas que patrocinaram o projeto.    |
 
@@ -104,6 +104,10 @@ Content-type: application/json
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/update-projectparticipation-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[Ir](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/update-projectparticipation-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

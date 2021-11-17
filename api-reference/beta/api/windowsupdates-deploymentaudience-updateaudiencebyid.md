@@ -5,12 +5,12 @@ author: Alice-at-Microsoft
 ms.localizationpriority: medium
 ms.prod: w10
 doc_type: apiPageType
-ms.openlocfilehash: 2a65a0e2357563156a9ef40d22d4eccd3093a052
-ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
+ms.openlocfilehash: b2aaa550769a96d5f21cabe5f57b28578ff13736
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/12/2021
-ms.locfileid: "60945261"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "61029943"
 ---
 # <a name="deploymentaudience-updateaudiencebyid"></a>deploymentAudience: updateAudienceById
 
@@ -35,7 +35,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |Tipo de permissão|Permissões (da com menos para a com mais privilégios)|
 |:---|:---|
 |Delegado (conta corporativa ou de estudante)|WindowsUpdates.ReadWrite.All|
-|Delegada (conta pessoal da Microsoft)|Sem suporte.|
+|Delegado (conta pessoal da Microsoft)|Sem suporte.|
 |Aplicativo|WindowsUpdates.ReadWrite.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
@@ -63,9 +63,9 @@ A tabela a seguir mostra os parâmetros que podem ser usados com esta ação.
 |:---|:---|:---|
 |memberEntityType|Cadeia de caracteres|O tipo completo dos ativos atualizáveis. Os valores possíveis são: `#microsoft.graph.windowsUpdates.azureADDevice` e `#microsoft.graph.windowsUpdates.updatableAssetGroup`.|
 |addMembers|Coleção de cadeias de caracteres|Lista de identificadores correspondentes aos ativos atualizáveis a adicionar como membros da audiência de implantação.|
-|removeMembers|Coleção de cadeias de caracteres|Lista de identificadores correspondentes aos ativos atualizáveis a ser removidos como membros da audiência de implantação.|
-|addExclusions|Coleção de cadeias de caracteres|Lista de identificadores correspondentes aos ativos atualizáveis para adicionar como exclusões do público de implantação.|
-|removeExclusions|Coleção de cadeias de caracteres|Lista de identificadores correspondentes aos ativos atualizáveis para remover como exclusões do público de implantação.|
+|removeMembers|Conjunto de cadeias de caracteres|Lista de identificadores correspondentes aos ativos atualizáveis a ser removidos como membros da audiência de implantação.|
+|addExclusions|Conjunto de cadeias de caracteres|Lista de identificadores correspondentes aos ativos atualizáveis para adicionar como exclusões do público de implantação.|
+|removeExclusions|Conjunto de cadeias de caracteres|Lista de identificadores correspondentes aos ativos atualizáveis para remover como exclusões do público de implantação.|
 
 
 
@@ -118,6 +118,10 @@ Content-Type: application/json
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/deploymentaudience-updateaudiencebyid-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[Ir](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/deploymentaudience-updateaudiencebyid-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

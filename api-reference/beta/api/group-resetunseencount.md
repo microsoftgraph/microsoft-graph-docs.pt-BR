@@ -2,15 +2,15 @@
 title: 'group: resetUnseenCount'
 description: Redefina a unseenCount de todas as postagens que o usuário atual não viu desde sua última visita.
 author: Jordanndahl
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: 8ca343a5d056f2fa673cc02030b2a94265fa24f1
-ms.sourcegitcommit: 4fa6fcc058c7f8d8cad58c0b82db23d6c7da37d2
+ms.openlocfilehash: 255f48765d84634a703735242bb02237e9dae28c
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/27/2021
-ms.locfileid: "52681274"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "61032449"
 ---
 # <a name="group-resetunseencount"></a>group: resetUnseenCount
 
@@ -72,6 +72,10 @@ POST https://graph.microsoft.com/beta/groups/{id}/resetUnseenCount
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/group-resetunseencount-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[Ir](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/group-resetunseencount-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

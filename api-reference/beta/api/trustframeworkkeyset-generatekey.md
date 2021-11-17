@@ -1,16 +1,16 @@
 ---
 title: 'trustFrameworkKeySet: generateKey'
 description: Gere uma chave e um segredo automaticamente no keyset.
-localization_priority: Normal
+ms.localizationpriority: medium
 author: Nickgmicrosoft
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: 2dd481634a9b42a9cf40d2d507e06c95b225b0c5
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: ab970f02adc1433627cb5bb6371f559a30cc1f92
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52053437"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "61031524"
 ---
 # <a name="trustframeworkkeyset-generatekey"></a>trustFrameworkKeySet: generateKey
 
@@ -28,7 +28,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |:---------------------------------------|:--------------------------------------------|
 | Delegado (conta corporativa ou de estudante)     | TrustFrameworkKeySet.ReadWrite.All |
 | Delegado (conta pessoal da Microsoft) | Sem suporte. |
-| Application                            | TrustFrameworkKeySet.ReadWrite.All |
+| Aplicativo                            | TrustFrameworkKeySet.ReadWrite.All |
 
 ## <a name="http-request"></a>Solicitação HTTP
 
@@ -51,8 +51,8 @@ Forneça um objeto JSON com os seguintes parâmetros no corpo da solicitação.
 
 | Parâmetro    | Tipo        | Descrição |
 |:-------------|:------------|:------------|
-| use | cadeia de caracteres | Semelhante à propriedade **use** de **trustFrameworkKey**. |
-| kty | cadeia de caracteres | Semelhante à **propriedade kty** **de trustFrameworkKey**. |
+| use | string | Semelhante à propriedade **use** de **trustFrameworkKey**. |
+| kty | string | Semelhante à **propriedade kty** **de trustFrameworkKey**. |
 | nbf | int | Semelhante à **propriedade nbf** **de trustFrameworkKey**. |
 | exp | int | Semelhante à **propriedade exp** **de trustFrameworkKey**. |
 
@@ -97,6 +97,10 @@ Content-type: application/json
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/trustframeworkkeyset-generatekey-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[Ir](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/trustframeworkkeyset-generatekey-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
