@@ -2,15 +2,15 @@
 title: 'participante: mute'
 description: Silencie um participante específico na chamada.
 author: ananmishr
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: 0399807f7cd962b508b10cc5dd0cd3ed8d3378ff
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: cbddf8d1481566d07a96d425a7bcefc36195cfac
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52049188"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "61018238"
 ---
 # <a name="participant-mute"></a>participante: mute
 
@@ -53,7 +53,7 @@ Forneça um objeto JSON com os seguintes parâmetros no corpo da solicitação.
 
 | Parâmetro      | Tipo    |Descrição|
 |:---------------|:--------|:----------|
-|clientContext|String|Cadeia de caracteres de contexto de cliente exclusiva. O limite máximo é 256 caracteres.|
+|clientContext|Cadeia de caracteres|Cadeia de caracteres de contexto de cliente exclusiva. O limite máximo é 256 caracteres.|
 
 ## <a name="response"></a>Resposta
 Se tiver êxito, este método retornará um código de resposta e um `200 OK` [objeto muteParticipantOperation](../resources/muteParticipantoperation.md) no corpo da resposta.
@@ -93,6 +93,10 @@ Content-Type: application/json
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/participant-mute-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[Ir](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/participant-mute-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

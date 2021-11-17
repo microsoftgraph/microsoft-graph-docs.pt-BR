@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: abhijeetsinha
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: 8174217356aaa20be915915c117f9cedf23a5b37
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: b7e4663f08725c705eb17301cbeae0d63736dd61
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59130395"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "61006141"
 ---
 # <a name="list-unifiedroledefinitions"></a>Listar unifiedRoleDefinitions
 
@@ -84,6 +84,10 @@ GET https://graph.microsoft.com/v1.0/roleManagement/directory/roleDefinitions
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/get-roledefinitions-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[Ir](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/get-roledefinitions-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

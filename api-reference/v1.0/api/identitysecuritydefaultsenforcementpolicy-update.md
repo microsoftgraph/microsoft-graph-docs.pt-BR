@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: rohinigoyal1
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: cebbbc815a799aec8fff3e962677f45d6544d31c
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 19f0c114ea8d9ba394dc6dfd5da10389e8116031
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59045753"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "61021359"
 ---
 # <a name="update-identitysecuritydefaultsenforcementpolicy"></a>Atualizar identitySecurityDefaultsEnforcementPolicy
 
@@ -24,8 +24,8 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 | Tipo de permissão                        | Permissões (da com menos para a com mais privilégios) |
 |:---------------------------------------|:--------------------------------------------|
-| Delegada (conta corporativa ou de estudante)     | Policy.Read.All e Policy.ReadWrite.ConditionalAccess |
-| Delegada (conta pessoal da Microsoft) | Sem suporte. |
+| Delegado (conta corporativa ou de estudante)     | Policy.Read.All e Policy.ReadWrite.ConditionalAccess |
+| Delegado (conta pessoal da Microsoft) | Sem suporte. |
 | Aplicativo                            | Policy.Read.All e Policy.ReadWrite.ConditionalAccess |
 
 ## <a name="http-request"></a>Solicitação HTTP
@@ -90,6 +90,10 @@ Content-type: application/json
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/update-identitysecuritydefaultsenforcementpolicy-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[Ir](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/update-identitysecuritydefaultsenforcementpolicy-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

@@ -5,12 +5,12 @@ author: mkhribech
 ms.localizationpriority: medium
 doc_type: apiPageType
 ms.prod: cloud-communications
-ms.openlocfilehash: 09cb97f5b9723ae2f44fb80b77f5d567156fc4bb
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: c8dcf82dc87eff9dbac9791a6e54fa92a637988a
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59080188"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "61020254"
 ---
 # <a name="cloudcommunications-getpresencesbyuserid"></a>cloudCommunications: getPresencesByUserId
 
@@ -23,8 +23,8 @@ Uma das seguintes permissões é necessária para chamar essas APIs. Para saber 
 
 | Tipo de permissão | Permissões (da com menos para a com mais privilégios)                  |
 | :-------------- | :----------------------------------------------------------- |
-| Delegada (conta corporativa ou de estudante)     | Presence.Read.All                         |
-| Delegada (conta pessoal da Microsoft) | Sem suporte.                         |
+| Delegado (conta corporativa ou de estudante)     | Presence.Read.All                         |
+| Delegado (conta pessoal da Microsoft) | Sem suporte.                         |
 | Aplicativo                            | Sem suporte.                                  |
 
 > **Observação:**
@@ -38,7 +38,7 @@ POST /communications/getPresencesByUserId
 ```
 
 ## <a name="request-headers"></a>Headers de solicitação
-| Name          | Descrição               |
+| Nome          | Descrição               |
 |:--------------|:--------------------------|
 | Autorização | {token} de portador. Obrigatório. |
 |Content-type | application/json. Obrigatório. |
@@ -91,6 +91,10 @@ Content-Type: application/json
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/get-presence-multiple-users-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[Ir](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/get-presence-multiple-users-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

@@ -2,15 +2,15 @@
 title: 'participante: muteAll'
 description: Ative o mudo para todos os participantes em uma chamada.
 author: ananmishr
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: a0cf9da4b6903931b813c0c2b2bd1aed3681434d
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: a4d04bce478c0ab4eb94769a222cf7bee6b272ce
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52049181"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "61019756"
 ---
 # <a name="participant-muteall"></a>participante: muteAll
 
@@ -51,8 +51,8 @@ Forneça um objeto JSON com os seguintes parâmetros no corpo da solicitação.
 
 | Parâmetro      | Tipo    |Descrição|
 |:---------------|:--------|:----------|
-|participants|Conjunto de cadeias de caracteres|Os participantes a serem mudos.|
-|clientContext|String|O contexto do cliente.|
+|participants|Coleção de cadeias de caracteres|Os participantes a serem mudos.|
+|clientContext|Cadeia de caracteres|O contexto do cliente.|
 
 ## <a name="response"></a>Resposta
 Se tiver êxito, este método retornará um código de resposta e um `200 OK` [objeto commsOperation](../resources/commsoperation.md) no corpo da resposta.
@@ -94,6 +94,10 @@ Content-Length: 81
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/participant-muteall-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[Ir](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/participant-muteall-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

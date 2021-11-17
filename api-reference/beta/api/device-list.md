@@ -5,12 +5,12 @@ author: sandeo-MSFT
 ms.localizationpriority: medium
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: 686acbabbeedc2454e6408487351032d25362daf
-ms.sourcegitcommit: c7ff992ef63e480d070421ba99b28ee129cb6acb
+ms.openlocfilehash: 223329260132ff72e66ad99b76aeb8d4b5a57ddf
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "60694552"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "61005387"
 ---
 # <a name="list-devices"></a>Listar dispositivos
 
@@ -87,6 +87,10 @@ GET https://graph.microsoft.com/beta/devices
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/get-devices-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[Ir](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/get-devices-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -180,6 +184,10 @@ GET https://graph.microsoft.com/beta/devices?$select=id,extensionAttributes
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/get-devices-select-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[Ir](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/get-devices-select-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -357,6 +365,10 @@ ConsistencyLevel: eventual
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/get-devices-by-extensionattribute-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[Ir](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/get-devices-by-extensionattribute-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

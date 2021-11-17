@@ -2,15 +2,15 @@
 title: Listar childFolders
 description: 'Obtenha a coleção de pastas sob a pasta especificada. Você pode usar o atalho `.../me/MailFolders` para chegar o nível superior '
 author: abheek-das
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: c42d214e9c099c8d732eb73b93d16b5392801138
-ms.sourcegitcommit: 7b8ad226dc9dfee61b8c3d32892534855dad3fa0
+ms.openlocfilehash: 8379c350c81501b37c172c770ab34d2f4c1da1a4
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/26/2021
-ms.locfileid: "52665243"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "61018534"
 ---
 # <a name="list-childfolders"></a>Listar childFolders
 
@@ -100,6 +100,10 @@ GET https://graph.microsoft.com/beta/me/mailFolders/AAMkAGVmMDEzM/childFolders
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/mailfolder-get-childfolders-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[Ir](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/mailfolder-get-childfolders-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -192,6 +196,10 @@ GET https://graph.microsoft.com/beta/me/mailFolders/searchfolders/childFolders
 [!INCLUDE [sample-code](../includes/snippets/java/get-childfolders-of-searchfolders-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# <a name="go"></a>[Ir](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/get-childfolders-of-searchfolders-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 
@@ -277,6 +285,10 @@ GET https://graph.microsoft.com/beta/me/mailFolders/AAMkAGVmMDEzM/childFolders?i
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/mailfolder-get-hiddenchildfolders-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[Ir](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/mailfolder-get-hiddenchildfolders-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

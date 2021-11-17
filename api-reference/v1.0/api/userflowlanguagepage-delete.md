@@ -5,12 +5,12 @@ author: jkdouglas
 ms.localizationpriority: medium
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: 15575fcb1e8333b7b1267f0168bec3af1f54afd7
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 0e87db0f6872bdcbb48b1ef147b4c74f03ca9294
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59109525"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "61020114"
 ---
 # <a name="delete-userflowlanguagepage"></a>Excluir userFlowLanguagePage
 
@@ -91,6 +91,10 @@ DELETE https://graph.microsoft.com/beta/identity/b2xUserFlows/B2X_1_Partner/lang
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/delete-userflowlanguagepage-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[Ir](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/delete-userflowlanguagepage-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

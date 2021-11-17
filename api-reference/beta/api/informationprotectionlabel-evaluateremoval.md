@@ -1,16 +1,16 @@
 ---
 title: 'informationProtectionLabel: evaluateRemoval'
 description: Avalie qual rótulo remover e como removê-lo com base nas informações de conteúdo existentes.
-localization_priority: Normal
+ms.localizationpriority: medium
 author: tommoser
 ms.prod: security
 doc_type: apiPageType
-ms.openlocfilehash: 92a7c4fc26cc647b141bdd3253f8ecd21bad9479
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: c6937aefa936f48fa0054490991c7c85c4625fa1
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52040361"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "61019854"
 ---
 # <a name="informationprotectionlabel-evaluateremoval"></a>informationProtectionLabel: evaluateRemoval
 
@@ -37,7 +37,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 | :------------------------------------- | :------------------------------------------ |
 | Delegado (conta corporativa ou de estudante)     | InformationProtectionPolicy. Read            |
 | Delegado (conta pessoal da Microsoft) | Sem suporte.                              |
-| Application                            | InformationProtectionPolicy.Read.All        |
+| Aplicativo                            | InformationProtectionPolicy.Read.All        |
 
 ## <a name="http-request"></a>Solicitação HTTP
 
@@ -155,6 +155,10 @@ User-agent: ContosoLOBApp/1.0
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/informationprotectionlabel-evaluateremoval-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[Ir](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/informationprotectionlabel-evaluateremoval-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
