@@ -5,12 +5,12 @@ author: jpettere
 ms.localizationpriority: high
 ms.prod: users
 doc_type: apiPageType
-ms.openlocfilehash: 53f3ba4e56e5392f2dc98de6464b273d785f3ba4
-ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
+ms.openlocfilehash: e90c88e38077a1c13c4b0c36faed00b0efa9af6b
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/12/2021
-ms.locfileid: "60938137"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "61022852"
 ---
 # <a name="get-a-user"></a>Obter um usuário
 
@@ -74,6 +74,8 @@ Esse método retorna `202 Accepted` quando a solicitação tenha sido processada
 
 ### <a name="example-1-standard-users-request"></a>Exemplo 1: Solicitação de usuários padrão
 
+#### <a name="request"></a>Solicitação
+
 Por padrão, apenas um conjunto limitado de propriedades é retornado ( _businessPhones, displayName, givenName, id, jobTitle, mail, mobilePhone, officeLocation, preferredLanguage, surname, userPrincipalName_ ). Este exemplo ilustra a solicitação e a resposta padrão. 
 
 <!-- {
@@ -84,7 +86,7 @@ Por padrão, apenas um conjunto limitado de propriedades é retornado ( _busines
 GET https://graph.microsoft.com/v1.0/users/{id | userPrincipalName}
 ```
 
-##### <a name="response"></a>Resposta
+#### <a name="response"></a>Resposta
 
 <!-- {
   "blockType": "response",
@@ -117,7 +119,7 @@ Content-type: application/json
 
 Você pode obter as informações do usuário para o usuário conectado, substituindo `/users/{id | userPrincipalName}` por `/me`.
 
-##### <a name="request"></a>Solicitação
+#### <a name="request"></a>Solicitação
 
 
 # <a name="http"></a>[HTTP](#tab/http)
@@ -144,9 +146,13 @@ GET https://graph.microsoft.com/v1.0/me
 [!INCLUDE [sample-code](../includes/snippets/java/get-user-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# <a name="go"></a>[Ir](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/get-user-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
-##### <a name="response"></a>Resposta
+#### <a name="response"></a>Resposta
 
 <!-- {
   "blockType": "response",
@@ -174,19 +180,19 @@ Content-type: application/json
 }
 ```
 
-### <a name="example-3-users-request-using-select"></a>Exemplo 3: solicitação de usuários usando $select
+### <a name="example-3-use-select-to-retrieve-specific-properties-of-a-user"></a>Exemplo 3: use $select para recuperar propriedades específicas de um usuário
 
-Se precisar de um conjunto de propriedades diferente, você poderá usar o parâmetro de consulta OData `$select`. Por exemplo, para retornar _displayName_, _givenName_ e _postalCode_, você pode adicionar o seguinte à consulta `$select=displayName,givenName,postalCode`
+Para recuperar propriedades específicas, use o parâmetro de `$select` OData. Por exemplo, para retornar _displayName_, _givenName_, _postalCode_ e _identities_, você usaria adicionar o seguinte à sua consulta `$select=displayName,givenName,postalCode,identities`
 
-##### <a name="request"></a>Solicitação
+#### <a name="request"></a>Solicitação
 
 # <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "get_user_2"
+  "name": "get_user_select"
 } -->
 ```msgraph-interactive
-GET https://graph.microsoft.com/v1.0/users/{id | userPrincipalName}?$select=displayName,givenName,postalCode
+GET https://graph.microsoft.com/v1.0/users/{id | userPrincipalName}?$select=displayName,givenName,postalCode,identities
 ```
 # <a name="c"></a>[C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-user-2-csharp-snippets.md)]
@@ -204,9 +210,13 @@ GET https://graph.microsoft.com/v1.0/users/{id | userPrincipalName}?$select=disp
 [!INCLUDE [sample-code](../includes/snippets/java/get-user-2-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# <a name="go"></a>[Ir](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/get-user-2-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
-##### <a name="response"></a>Resposta
+#### <a name="response"></a>Resposta
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -217,9 +227,17 @@ HTTP/1.1 200 OK
 Content-type: application/json
 
 {
-   "displayName": "Adele Vance",
-   "givenName": "Adele",
-   "postalCode": "98004"
+    "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#users(displayName,givenName,postalCode,identities)/$entity",
+    "displayName": "Adele Vance",
+    "givenName": "Adele",
+    "postalCode": "98004",
+    "identities": [
+        {
+            "signInType": "userPrincipalName",
+            "issuer": "contoso.com",
+            "issuerAssignedId": "AdeleV@contoso.com"
+        }
+    ]
 }
 ```
 
