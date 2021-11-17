@@ -3,14 +3,14 @@ title: Listar grupos transitivos de dispositivos
 description: Obter grupos dos que o dispositivo é membro.
 author: spunukol
 ms.prod: directory-management
-localization_priority: Normal
+ms.localizationpriority: medium
 doc_type: apiPageType
-ms.openlocfilehash: cf86bfa5235ae00450e14e8c5d221bb41f60e4f2
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: e54c47cbec0669d2a934e3db15e13caf74e45959
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52053220"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "61025847"
 ---
 # <a name="list-device-transitive-groups"></a>Listar grupos transitivos de dispositivos
 
@@ -88,6 +88,10 @@ GET https://graph.microsoft.com/v1.0/devices/{id}/transitiveMemberOf
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/get-devices-transitivememberof-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[Ir](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/get-devices-transitivememberof-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

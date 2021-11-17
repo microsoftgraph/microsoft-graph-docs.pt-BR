@@ -5,12 +5,12 @@ description: Listar colunas em uma lista.
 ms.localizationpriority: medium
 doc_type: apiPageType
 ms.prod: sites-and-lists
-ms.openlocfilehash: 98c3c5715ac3a47dee40e923db9047189e858a76
-ms.sourcegitcommit: 64d27a0e3dcccc9d857e62aace4153e5d98fb3d0
+ms.openlocfilehash: 0415d0fa4866c59e4b3328a21c73f8828d0d441d
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "60730547"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "61018559"
 ---
 # <a name="list-columns-in-a-list"></a>Listar colunas em uma lista
 Namespace: microsoft.graph
@@ -91,6 +91,10 @@ GET https://graph.microsoft.com/beta/sites/{site-id}/lists/{list-id}/columns
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/get-columns-from-list-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[Ir](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/get-columns-from-list-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

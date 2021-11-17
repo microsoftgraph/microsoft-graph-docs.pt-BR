@@ -1,25 +1,25 @@
 ---
-title: Listar membros de uma lista de participantes
-description: Obter os recursos plannerRosterMember da propriedade de navegação members.
+title: Listar membros de uma lista
+description: Obter os recursos plannerRosterMember da propriedade de navegação membros.
 author: tarkansevilmis
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: planner
 doc_type: apiPageType
-ms.openlocfilehash: 9c08f29581b549014544ed1de43f6562efb5066f
-ms.sourcegitcommit: 42fdb068616222eb6b0813e93b33e830fc7eedc0
+ms.openlocfilehash: 597f1366958a4abd7a0f847c36e0c44913b61773
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/17/2021
-ms.locfileid: "50272532"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "61007779"
 ---
-# <a name="list-members-of-a-roster"></a>Listar membros de uma lista de participantes
+# <a name="list-members-of-a-roster"></a>Listar membros de uma lista
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Obter a lista de [plannerRosterMembers](../resources/plannerrostermember.md) de um [plannerRoster](../resources/plannerroster.md).
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão|Permissões (da com menos para a com mais privilégios)|
@@ -39,7 +39,7 @@ GET /planner/rosters/{plannerRosterId}/members
 ```
 
 ## <a name="optional-query-parameters"></a>Parâmetros de consulta opcionais
-Esse método só dá suporte aos seguintes parâmetros de consulta OData:
+Este método só dá suporte a seguintes parâmetros de consulta OData:
 
 - $select
 
@@ -55,7 +55,7 @@ Não forneça um corpo de solicitação para esse método.
 
 ## <a name="response"></a>Resposta
 
-Se bem-sucedido, este método retorna um código de resposta e uma coleção de objetos `200 OK` [plannerRosterMember](../resources/plannerrostermember.md) no corpo da resposta.
+Se tiver êxito, este método retornará um código de resposta e uma coleção de objetos `200 OK` [plannerRosterMember](../resources/plannerrostermember.md) no corpo da resposta.
 
 ## <a name="examples"></a>Exemplos
 
@@ -84,6 +84,10 @@ GET https://graph.microsoft.com/beta/planner/rosters/6519868f-868f-6519-8f86-196
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/list-plannerrostermember-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[Ir](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/list-plannerrostermember-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
