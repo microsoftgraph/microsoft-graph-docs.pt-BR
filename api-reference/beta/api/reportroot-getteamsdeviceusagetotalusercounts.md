@@ -1,16 +1,16 @@
 ---
 title: 'reportRoot: getTeamsDeviceUsageTotalUserCounts'
-description: Obter o número de usuários exclusivos exclusivos do Microsoft Teams licenciados ou não licenciados por tipo de dispositivo.
-localization_priority: Normal
+description: Obter o número de usuários exclusivos Microsoft Teams licenciados ou não licenciados por tipo de dispositivo.
+ms.localizationpriority: medium
 ms.prod: reports
 author: pranoychaudhuri
 doc_type: apiPageType
-ms.openlocfilehash: b65f29260a184193e7689fedff8270d8d5daaf9f
-ms.sourcegitcommit: 412507a3c3a8e407fcc43b7cd227d4db35791f58
+ms.openlocfilehash: e20d343a0893d1d8a351255af10430e90541a220
+ms.sourcegitcommit: 42e0e15ff90815e0126c34b928405486cfb1ed86
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2021
-ms.locfileid: "51766897"
+ms.lasthandoff: 11/17/2021
+ms.locfileid: "61044712"
 ---
 # <a name="reportroot-getteamsdeviceusagetotalusercounts"></a>reportRoot: getTeamsDeviceUsageTotalUserCounts
 
@@ -18,7 +18,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Obter o número de usuários exclusivos exclusivos do Microsoft Teams licenciados ou não licenciados por tipo de dispositivo.
+Obter o número de usuários exclusivos Microsoft Teams licenciados ou não licenciados por tipo de dispositivo.
 
 ## <a name="permissions"></a>Permissões
 
@@ -30,7 +30,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 | Delegada (conta pessoal da Microsoft) | Sem suporte.                           |
 | Aplicativo                            | Reports.Read.All                         |
 
->**Observação**: para permissões delegadas para permitir que os aplicativos leiam os relatórios de uso de serviço em nome de um usuário, o administrador de locatários deve atribuir a função apropriada de administrador limitada do Azure AD ao usuário. Para saber mais, confira [Autorização para APIs lerem os relatórios de uso do Microsoft 365](/graph/reportroot-authorization).
+>**Observação**: para as permissões delegadas para permitir que os aplicativos leiam relatórios de uso do serviço em nome de um usuário, o administrador de locatários deve ter atribuído ao usuário a função de administrador limitada apropriada do Azure AD. Para obter mais detalhes, consulte [Autorização para as APIs lerem os relatórios de uso do Microsoft 365](/graph/reportroot-authorization).
 
 ## <a name="http-request"></a>Solicitação HTTP
 
@@ -82,7 +82,7 @@ O arquivo CSV possui os seguintes cabeçalhos para colunas.
 
 ### <a name="json"></a>JSON
 
-Se tiver êxito, este método retornará um código de resposta e um `200 OK` [objeto teamsDeviceUsageUserCounts](../resources/teamsdeviceusageusercounts.md) no corpo da resposta.
+Se tiver êxito, este método retornará um código de resposta e um `200 OK` objeto JSON no corpo da resposta.
 
 ## <a name="example"></a>Exemplo
 
@@ -158,7 +158,7 @@ Este é um exemplo de resposta.
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.teamsDeviceUsageUserCounts"
+  "@odata.type": "stream"
 } -->
 
 ```http
@@ -167,7 +167,6 @@ Content-Type: application/json
 Content-Length: 269
 
 {
-  "@odata.context": "https://graph.microsoft.com/beta/$metadata#Collection(microsoft.graph.teamsDeviceUsageUserCounts)", 
   "value": [
     {
       "reportRefreshDate": "2017-09-01", 

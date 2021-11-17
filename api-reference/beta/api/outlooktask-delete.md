@@ -1,16 +1,16 @@
 ---
 title: Excluir outlookTask
-description: Excluir a tarefa especificada do Outlook na caixa de correio do usuário.
-localization_priority: Normal
+description: Exclua a tarefa Outlook especificada na caixa de correio do usuário.
+ms.localizationpriority: medium
 author: mashriv
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 42dbfd011b9bc0bd50ef91049767c27016f0d9b9
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 1faa080b4fb730404398b09e022211d9feed29a6
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48951498"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "61018314"
 ---
 # <a name="delete-outlooktask-deprecated"></a>Excluir outlookTask (preterido)
 
@@ -21,7 +21,7 @@ Namespace: microsoft.graph
 [!INCLUDE [outlooktask-deprecate-allup](../../includes/outlooktask-deprecate-allup.md)]
 
 
-Excluir a tarefa especificada do Outlook na caixa de correio do usuário.
+Exclua a tarefa Outlook especificada na caixa de correio do usuário.
 
 ## <a name="permissions"></a>Permissões
 
@@ -85,6 +85,10 @@ DELETE https://graph.microsoft.com/beta/me/outlook/tasks/AAMkADIyAAAhrb_QAAA=
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/delete-outlooktask-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[Ir](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/delete-outlooktask-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

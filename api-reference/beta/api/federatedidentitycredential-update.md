@@ -5,12 +5,12 @@ author: kjyam98
 ms.localizationpriority: medium
 ms.prod: applications
 doc_type: apiPageType
-ms.openlocfilehash: d6be2a72ae63db2800d822274725d7b51a80143e
-ms.sourcegitcommit: c7ff992ef63e480d070421ba99b28ee129cb6acb
+ms.openlocfilehash: 21257dd6ea2783dc083aac841a93ab5abcee4c20
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "60694762"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "61034415"
 ---
 # <a name="update-federatedidentitycredential"></a>Atualizar federatedIdentityCredential
 Namespace: microsoft.graph
@@ -54,9 +54,9 @@ A tabela a seguir especifica as propriedades que podem ser atualizadas.
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
 |audiences|Coleção de cadeias de caracteres|A lista de audiências que podem aparecer no token emitido. O valor recomendado é `api://AzureADTokenExchange` . |
-|descrição|String|Uma descrição fornecida pelo usuário para o qual o federatedIdentityCredential é usado. |
+|description|String|Uma descrição fornecida pelo usuário para o qual o federatedIdentityCredential é usado. |
 |emissor|String|A URL do emissor confiável de entrada (Serviço de Token Seguro). Corresponde à declaração do emissor de um token de acesso. Por exemplo, com o cenário chaves gerenciadas pelo cliente, o Azure AD é o emissor e um valor válido seria `https://login.microsoftonline.com/{tenantid}/v2.0` . A combinação dos valores de **emissor** e **assunto** deve ser exclusiva no aplicativo. |
-|assunto|String|<li>Para o emissor do Azure AD, o do servicePrincipal (pode representar uma identidade gerenciada) que `objectId` pode representar o aplicativo. O objeto associado a esse GUID precisa existir no locatário.</li><li>Para todos os outros emissores, uma cadeia de caracteres sem validação adicional</ul><br><br>A combinação dos valores de **emissor** e **assunto** deve ser exclusiva no aplicativo.|
+|assunto|Cadeia de caracteres|<li>Para o emissor do Azure AD, o do servicePrincipal (pode representar uma identidade gerenciada) que `objectId` pode representar o aplicativo. O objeto associado a esse GUID precisa existir no locatário.</li><li>Para todos os outros emissores, uma cadeia de caracteres sem validação adicional</ul><br><br>A combinação dos valores de **emissor** e **assunto** deve ser exclusiva no aplicativo.|
 
 
 
@@ -102,6 +102,10 @@ Content-Type: application/json
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/update-federatedidentitycredential-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[Ir](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/update-federatedidentitycredential-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

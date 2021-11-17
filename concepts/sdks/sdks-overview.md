@@ -1,26 +1,23 @@
 ---
-title: Visão geral Graph SDKs da Microsoft
+title: Visão geral dos SDKs de Microsoft Graph
 description: Descreve os SDKs que estão disponíveis, as plataformas que eles suportam e o valor que eles fornecem aos desenvolvedores.
 ms.localizationpriority: medium
 author: MichaelMainer
 ms.custom: scenarios:getting-started
-ms.openlocfilehash: d68f0c896daae9f65d734cbf73649721b851857f
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: eeeff1427c5630aed85e0f6cc8827cd81aef05b2
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59142359"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "60995822"
 ---
-# <a name="microsoft-graph-sdks-overview"></a>Visão geral Graph SDKs da Microsoft
+# <a name="microsoft-graph-sdks-overview"></a>Visão geral dos SDKs de Microsoft Graph
 
 Os SDKs Graph Microsoft foram projetados para simplificar a criação de aplicativos de alta qualidade, eficientes e resilientes que acessam o Microsoft Graph. Os SDKs incluem dois componentes: uma biblioteca de serviços e uma biblioteca principal.
 
 A biblioteca de serviços contém modelos e construtores de solicitação que são gerados a partir dos metadados do Microsoft Graph para fornecer uma experiência rica, fortemente digitada e descobrivel ao trabalhar com os muitos conjuntos de dados disponíveis no Microsoft Graph.
 
 A biblioteca principal fornece um conjunto de recursos que aprimoram o trabalho com todos os serviços Graph Microsoft. O suporte incorporado para tratamento de nova tentativa, redirecionamentos seguros, autenticação transparente e compactação de carga, melhora a qualidade das interações do aplicativo com o Microsoft Graph, sem nenhuma complexidade adicionada, deixando você completamente no controle. A biblioteca principal também oferece suporte para tarefas comuns, como pajamento por meio de coleções e criação de solicitações em lotes.
-
-> [!VIDEO https://www.youtube-nocookie.com/embed/hDnsd2nJf88]
-
 
 ## <a name="supported-platforms"></a>Plataformas compatíveis
 
@@ -29,6 +26,7 @@ Atualmente, os SDKs estão disponíveis para os seguintes idiomas e plataformas:
 - [Android](https://developer.microsoft.com/en-us/graph/get-started/android)
 - [Angular](https://developer.microsoft.com/en-us/graph/get-started/angular)
 - [ASP.NET](https://developer.microsoft.com/en-us/graph/get-started/asp.net)
+- [Go (PREVIEW)](https://github.com/microsoftgraph/msgraph-sdk-go)
 - [iOS](https://developer.microsoft.com/en-us/graph/get-started/ios)
 - [Javascript](https://developer.microsoft.com/en-us/graph/get-started/javascript)
 - [Node.js](https://developer.microsoft.com/en-us/graph/get-started/node.js)

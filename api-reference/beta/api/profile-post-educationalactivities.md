@@ -1,16 +1,16 @@
 ---
 title: Criar educationalActivity
 description: Crie uma nova educationalActivity.
-localization_priority: Normal
+ms.localizationpriority: medium
 author: kevinbellinger
 ms.prod: people
 doc_type: apiPageType
-ms.openlocfilehash: 366417fd6cf8e218bf7fc3a0fe2f14bc9c0ac4d3
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: 42de842c3d72d246a76956a175a7c3688f529d78
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52036937"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "61027918"
 ---
 # <a name="create-educationalactivity"></a>Criar educationalActivity
 
@@ -54,14 +54,14 @@ A tabela a seguir mostra as propriedades que são possíveis de definir ao criar
 
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|allowedAudiences|String|As audiências que são capazes de ver os valores contidos na entidade. Herdado [do itemFacet](../resources/itemfacet.md). Os valores possíveis são: `me`, `family`, `contacts`, `groupMembers`, `organization`, `federatedOrganizations`, `everyone`, `unknownFutureValue`.|
-|completionMonthYear|Date|O mês e o ano em que o usuário se formou ou concluiu a atividade. |
-|endMonthYear|Date|O mês e o ano em que o usuário concluiu a atividade educacional referenciada.|
+|allowedAudiences|Cadeia de caracteres|As audiências que são capazes de ver os valores contidos na entidade. Herdado [do itemFacet](../resources/itemfacet.md). Os valores possíveis são: `me`, `family`, `contacts`, `groupMembers`, `organization`, `federatedOrganizations`, `everyone`, `unknownFutureValue`.|
+|completionMonthYear|Data|O mês e o ano em que o usuário se formou ou concluiu a atividade. |
+|endMonthYear|Data|O mês e o ano em que o usuário concluiu a atividade educacional referenciada.|
 |inferência|[inferenceData](../resources/inferencedata.md)|Contém detalhes de inferência se a entidade for inferida pelo aplicativo de criação ou modificação. Herdado [do itemFacet](../resources/itemfacet.md).|
 |institution|[institutionData](../resources/institutiondata.md)|Contém detalhes da instituição em que estudou. |
 |program|[educationalActivityDetail](../resources/educationalactivitydetail.md)|Contém informações estendidas sobre o programa ou o curso.|
 |source|[personDataSource](../resources/persondatasource.md)|Onde os valores se originaram se sincronizados de outro serviço. Herdado [do itemFacet](../resources/itemfacet.md).|
-|startMonthYear|Date|O mês e o ano em que o usuário iniciou a atividade referenciada.|
+|startMonthYear|Data|O mês e o ano em que o usuário iniciou a atividade referenciada.|
 
 ## <a name="response"></a>Resposta
 
@@ -128,6 +128,10 @@ Content-type: application/json
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/create-educationalactivity-from-profile-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[Ir](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/create-educationalactivity-from-profile-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

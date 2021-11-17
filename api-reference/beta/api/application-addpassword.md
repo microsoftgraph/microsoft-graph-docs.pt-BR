@@ -1,16 +1,16 @@
 ---
 title: 'application: addPassword'
 description: Adicionar uma senha forte a um aplicativo.
-localization_priority: Normal
+ms.localizationpriority: medium
 author: sureshja
 ms.prod: applications
 doc_type: apiPageType
-ms.openlocfilehash: fccb8989ee2a2723a34aa5d991a9d0f1795215df
-ms.sourcegitcommit: 14648839f2feac2e5d6c8f876b7ae43e996ea6a0
+ms.openlocfilehash: c0b659c667ea5dde067cae93e0eeabfdd7aa4436
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/11/2021
-ms.locfileid: "50719154"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "60995536"
 ---
 # <a name="application-addpassword"></a>application: addPassword
 
@@ -57,7 +57,7 @@ No corpo da solicitação, forneça um `passwordCredential` objeto opcional com 
 
 ## <a name="response"></a>Resposta
 
-Se tiver êxito, este método retornará um código `200 OK` de resposta e um novo objeto [passwordCredential](../resources/passwordcredential.md) no corpo da resposta. A **propriedade secretText** no objeto de resposta contém as senhas fortes geradas pelo Azure Active Directory que têm de 16 a 64 caracteres de comprimento. Não há como recuperar essa senha no futuro.
+Se tiver êxito, este método retornará um código `200 OK` de resposta e um novo objeto [passwordCredential](../resources/passwordcredential.md) no corpo da resposta. A **propriedade secretText** no objeto de resposta contém as senhas fortes geradas por Azure Active Directory que têm 16 a 64 caracteres de comprimento. Não há como recuperar essa senha no futuro.
 
 ## <a name="examples"></a>Exemplos
 
@@ -97,6 +97,10 @@ Content-type: application/json
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/application-addpassword-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[Ir](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/application-addpassword-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

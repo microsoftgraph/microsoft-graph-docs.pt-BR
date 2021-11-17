@@ -1,25 +1,25 @@
 ---
 title: Obter plannerRosterMember
-description: Leia as propriedades e os relacionamentos de um objeto plannerRosterMember.
+description: Leia as propriedades e as relações de um objeto plannerRosterMember.
 author: tarkansevilmis
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: planner
 doc_type: apiPageType
-ms.openlocfilehash: 69ccf29dda22790f33f77458e0537667653b329f
-ms.sourcegitcommit: 42fdb068616222eb6b0813e93b33e830fc7eedc0
+ms.openlocfilehash: 2751d8fcd5f220456fa7b65608e3a53016b41031
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/17/2021
-ms.locfileid: "50272328"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "60985420"
 ---
 # <a name="get-plannerrostermember"></a>Obter plannerRosterMember
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Leia as propriedades e os relacionamentos de um [objeto plannerRosterMember.](../resources/plannerrostermember.md)
+Leia as propriedades e as relações de um [objeto plannerRosterMember.](../resources/plannerrostermember.md)
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão|Permissões (da com menos para a com mais privilégios)|
@@ -39,7 +39,7 @@ GET /planner/rosters/{plannerRosterId}/members/{plannerRosterMemberId}
 ```
 
 ## <a name="optional-query-parameters"></a>Parâmetros de consulta opcionais
-Esse método só dá suporte aos seguintes parâmetros de consulta OData:
+Este método só dá suporte a seguintes parâmetros de consulta OData:
 
 - $select
 
@@ -55,7 +55,7 @@ Não forneça um corpo de solicitação para esse método.
 
 ## <a name="response"></a>Resposta
 
-Se bem-sucedido, este método retorna um código de resposta e um objeto `200 OK` [plannerRosterMember](../resources/plannerrostermember.md) no corpo da resposta.
+Se tiver êxito, este método retornará um código de resposta e um `200 OK` [objeto plannerRosterMember](../resources/plannerrostermember.md) no corpo da resposta.
 
 ## <a name="examples"></a>Exemplos
 
@@ -84,6 +84,10 @@ GET https://graph.microsoft.com/beta/planner/rosters/523a9d5a-f9d5-45c1-929f-b85
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/get-plannerrostermember-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[Ir](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/get-plannerrostermember-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

@@ -5,12 +5,12 @@ author: mecampos
 ms.localizationpriority: medium
 ms.prod: search
 doc_type: apiPageType
-ms.openlocfilehash: 30b0719359cce26658357915c6256402a4573169
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 48eb565e9d306f03cb71b79e5564540eb6adb4f2
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59022480"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "60984734"
 ---
 # <a name="create-externalconnection"></a>Criar externalConnection
 Namespace: microsoft.graph.externalConnectors
@@ -24,8 +24,8 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 |Tipo de permissão|Permissões (da com menos para a com mais privilégios)|
 |:---|:---|
-|Delegada (conta corporativa ou de estudante)|Não aplicável|
-|Delegada (conta pessoal da Microsoft)|Não aplicável|
+|Delegado (conta corporativa ou de estudante)|Não aplicável|
+|Delegado (conta pessoal da Microsoft)|Não aplicável|
 |Aplicativo| ExternalConnection.ReadWrite.OwnedBy|
 
 ## <a name="http-request"></a>Solicitação HTTP
@@ -51,9 +51,9 @@ Você pode especificar as seguintes propriedades ao criar [um externalConnection
 
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|id|Cadeia de caracteres|A ID da conexão. Obrigatório.|
-|nome|String|O nome da conexão. Obrigatório.|
-|description|Cadeia de caracteres|A descrição da conexão. Obrigatório.|
+|id|String|A ID da conexão. Obrigatório.|
+|nome|Cadeia de caracteres|O nome da conexão. Obrigatório.|
+|description|String|A descrição da conexão. Obrigatório.|
 |configuração|[microsoft.graph.externalConnectors.configuration](../resources/externalconnectors-configuration.md)|As configurações de conexão. Opcional.|
 
 
@@ -96,6 +96,10 @@ Content-Type: application/json
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/create-externalconnection-from-connections-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[Ir](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/create-externalconnection-from-connections-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

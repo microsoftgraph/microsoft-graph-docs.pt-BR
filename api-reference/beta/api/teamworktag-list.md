@@ -2,15 +2,15 @@
 title: Listar teamworkTags
 description: Obter uma lista dos objetos teamworkTag e suas propriedades.
 author: anniecolonna
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: teamwork
 doc_type: apiPageType
-ms.openlocfilehash: 36d28aa71dd2c6946d3a1b8227e2873788a700cc
-ms.sourcegitcommit: 7f674112f5b95446fac86d829509f889c60f1693
+ms.openlocfilehash: 68c473d6a59a5332b63b4635b07d62498f2d64fa
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/30/2021
-ms.locfileid: "53210067"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "61017810"
 ---
 # <a name="list-teamworktags"></a>Listar teamworkTags
 Namespace: microsoft.graph
@@ -85,6 +85,10 @@ GET https://graph.microsoft.com/beta/teams/53c53217-fe77-4383-bc5a-ed4937a1aecd/
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/list-teamworktag-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[Ir](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/list-teamworktag-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

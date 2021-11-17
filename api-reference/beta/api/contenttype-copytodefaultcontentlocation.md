@@ -5,12 +5,12 @@ description: Copie um arquivo para um local de conteúdo padrão em um tipo de c
 ms.localizationpriority: medium
 doc_type: apiPageType
 ms.prod: sites-and-lists
-ms.openlocfilehash: 176249e2e26054ca32a46051ec3c6c41e2e85cbe
-ms.sourcegitcommit: 64d27a0e3dcccc9d857e62aace4153e5d98fb3d0
+ms.openlocfilehash: c01349a14f6746fb034a539ed4a5ba86a0b4aed6
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "60730309"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "61028781"
 ---
 # <a name="contenttype-copytodefaultcontentlocation"></a>contentType: copyToDefaultContentLocation
 Namespace: microsoft.graph
@@ -58,7 +58,7 @@ A tabela a seguir mostra os parâmetros que podem ser usados com esta ação.
 |Parâmetro|Tipo|Descrição|
 |-|-|-|
 |sourceFile| [itemReference](../resources/itemreference.md) |Metadados sobre o arquivo de origem que precisa ser copiado para o local de conteúdo padrão. Obrigatório.|
-|destinationFileName| cadeia de caracteres |Nome do arquivo de destino. |
+|destinationFileName| string |Nome do arquivo de destino. |
 
 ## <a name="response"></a>Resposta
 
@@ -103,6 +103,10 @@ Content-Type: application/json
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/contenttype-copytodefaultcontentlocation-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[Ir](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/contenttype-copytodefaultcontentlocation-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
