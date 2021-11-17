@@ -2,15 +2,15 @@
 title: Excluir mobileAppManagementPolicy
 description: Exclua uma política de gerenciamento de aplicativo móvel.
 author: michaelrm97
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: 71834c591fb0b415dd7e6b3e841afa9ea42b967472144f2ca5a77e56f3550441
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: a8fac50773d79712e5b330e82f5e89e2eea1982d
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "57275473"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "61011636"
 ---
 # <a name="delete-mobileappmanagementpolicy"></a>Excluir mobileAppManagementPolicy
 
@@ -29,8 +29,8 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 |Tipo de permissão|Permissões (da com menos para a com mais privilégios)|
 |:---|:---|
-|Delegada (conta corporativa ou de estudante)|Policy.ReadWrite.MobilityManagement|
-|Delegada (conta pessoal da Microsoft) | Sem suporte.|
+|Delegado (conta corporativa ou de estudante)|Policy.ReadWrite.MobilityManagement|
+|Delegado (conta pessoal da Microsoft) | Sem suporte.|
 |Aplicativo | Sem suporte.|
 
 ## <a name="http-request"></a>Solicitação HTTP
@@ -87,6 +87,10 @@ DELETE https://graph.microsoft.com/beta/policies/mobileAppManagementPolicies/ab9
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/delete-mobilitymanagementpolicy-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[Ir](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/delete-mobilitymanagementpolicy-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

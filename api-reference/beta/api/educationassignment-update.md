@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: dipakboyed
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: 6b676f28d74484a35374bd61f2099bd9b540ac46
-ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
+ms.openlocfilehash: 615f9eec57a4ec87ef7dccad3226a83d2a4a9a5b
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/12/2021
-ms.locfileid: "60938885"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "61003146"
 ---
 # <a name="update-educationassignment"></a>Atualizar educationassignment
 
@@ -28,7 +28,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
 |:--------------------|:---------------------------------------------------------|
 |Delegado (conta corporativa ou de estudante) |  EduAssignments.ReadWriteBasic, EduAssignments.ReadWrite  |
-|Delegada (conta pessoal da Microsoft) |  Sem suporte.  |
+|Delegado (conta pessoal da Microsoft) |  Sem suporte.  |
 |Aplicativo | Sem suporte. | 
 
 ## <a name="http-request"></a>Solicitação HTTP
@@ -49,7 +49,7 @@ No corpo da solicitação, forneça os valores para os campos relevantes que dev
 |:---------------|:--------|:----------|
 |addedStudentAction|Cadeia de caracteres| Controla o comportamento dos alunos que são adicionados após a publicação da atribuição.|
 |addToCalendarAction|educationAddToCalendarOptions|Campo opcional para controlar o comportamento de atribuição para adicionar atribuições aos calendários dos alunos e professores quando a atribuição for publicada. Os valores possíveis são: `none` `studentsAndPublisher` , , e `studentsAndTeamOwners` `studentsOnly` `unknownFutureValue` . O valor padrão é `none`.|
-|allowLateSubmissions|Boolean| Se os envios podem ser enviados após a data de vencimento.|
+|allowLateSubmissions|Booliano| Se os envios podem ser enviados após a data de vencimento.|
 |allowStudentsToAddResourcesToSubmission|Boolean| Se um aluno pode adicionar recursos a um envio. Indica se os únicos itens no envio vieram da lista de recursos de atribuição. |
 |assignDateTime|DateTimeOffset| Data em que a atribuição deve ser publicada para os alunos. |
 |assignTo|educationAssignmentRecipient| Alunos que receberão a atribuição.|
@@ -58,7 +58,7 @@ No corpo da solicitação, forneça os valores para os campos relevantes que dev
 |dueDateTime|DateTimeOffset| A atribuição de data é devido. |
 |grading|educationAssignmentGradeType| Como a atribuição será gradeada.|
 |instructions|itemBody| Instruções a serem fornecidas aos alunos juntamente com a atribuição. |
-|notificationChannelUrl|Cadeia de caracteres| Canal para postar notificação de publicação de atribuição. A atualização da URL do canal não é permitida após a publicação da atribuição e só é permitida quando o valor **assignTo** é [educationAssignmentClassRecipient](../resources/educationassignmentclassrecipient.md).|
+|notificationChannelUrl|String| Canal para postar notificação de publicação de atribuição. A atualização da URL do canal não é permitida após a publicação da atribuição e só é permitida quando o valor **assignTo** é [educationAssignmentClassRecipient](../resources/educationassignmentclassrecipient.md).|
 
 ## <a name="response"></a>Resposta
 Se tiver êxito, este método retornará um código de resposta e um `200 OK` objeto [educationAssignment](../resources/educationassignment.md) atualizado no corpo da resposta.
@@ -101,6 +101,10 @@ Content-type: application/json
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/update-educationassignment-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[Ir](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/update-educationassignment-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

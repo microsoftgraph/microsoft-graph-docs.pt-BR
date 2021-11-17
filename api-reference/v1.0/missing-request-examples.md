@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: ''
 ms.prod: ''
 doc_type: conceptualPageType
-ms.openlocfilehash: aa13d7ca2204acbfd607763e6e2e1f012604d4ac
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: e00df5b6308a034942a9356035b8ac7a53f8a02a
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59019416"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "61012637"
 ---
 # <a name="helpers-examples-that-arent-included-in-the-docs"></a>Auxiliares (exemplos que não estão incluídos nos documentos)
 
@@ -39,6 +39,10 @@ GET https://graph.microsoft.com/v1.0/me
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/get-current-user-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[Ir](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/get-current-user-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -77,6 +81,10 @@ GET https://graph.microsoft.com/v1.0/drives/{drive-id}
 [!INCLUDE [sample-code](../includes/snippets/java/get-drive-from-id-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# <a name="go"></a>[Ir](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/get-drive-from-id-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 
@@ -112,6 +120,10 @@ GET https://graph.microsoft.com/v1.0/users/{user-id}
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/get-users-1-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[Ir](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/get-users-1-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

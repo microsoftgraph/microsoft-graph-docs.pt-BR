@@ -1,16 +1,16 @@
 ---
 title: Atualizar onPremisesAgentGroup
 description: Atualize as propriedades de um **objeto onPremisesAgentGroup.**
-localization_priority: Normal
+ms.localizationpriority: medium
 author: japere
 ms.prod: applications
 doc_type: apiPageType
-ms.openlocfilehash: b78c82989f8fc06daed22dd0a80cb1d07be8e77e
-ms.sourcegitcommit: 94c4acf8bd03c10a44b12952b6cb4827df55b978
+ms.openlocfilehash: 8199cad0951a0fae1ab8838c5765a47f5b2ca157
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/06/2021
-ms.locfileid: "52785946"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "61014486"
 ---
 # <a name="update-onpremisesagentgroup"></a>Atualizar onPremisesAgentGroup
 
@@ -20,7 +20,7 @@ Namespace: microsoft.graph
 
 Atualize as propriedades de um [objeto onPremisesAgentGroup.](../resources/onpremisesagentgroup.md)
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>Permissões
 
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
@@ -52,7 +52,7 @@ Veja a seguir a lista de propriedades que você pode atualizar.
 
 | Propriedade     | Tipo        | Descrição |
 |:-------------|:------------|:------------|
-|displayName|String| Representa o nome do grupo de agentes locais.|
+|displayName|Cadeia de caracteres| Representa o nome do grupo de agentes locais.|
 
 ## <a name="response"></a>Resposta
 
@@ -92,6 +92,10 @@ Content-type: application/json
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/update-onpremisesagentgroup-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[Ir](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/update-onpremisesagentgroup-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

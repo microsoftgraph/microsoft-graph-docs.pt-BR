@@ -1,16 +1,16 @@
 ---
 title: Excluir identityUserFlowAttribute
 description: Exclua uma identityUserFlowAttribute.
-localization_priority: Normal
+ms.localizationpriority: medium
 doc_type: apiPageType
 author: jkdouglas
 ms.prod: identity-and-sign-in
-ms.openlocfilehash: 1a8cfd2849f79d4489503d7fe715ef6eeb16f03c
-ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
+ms.openlocfilehash: 0abdd3b73161ea1c3d81d658e38b51b2e3a431d8
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50435291"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "61030082"
 ---
 # <a name="delete-identityuserflowattribute"></a>Excluir identityUserFlowAttribute
 
@@ -33,7 +33,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 A conta de trabalho ou de estudante precisa pertencer a uma das seguintes funções:
 
 * Administrador global
-* Administrador de Atributo de Fluxo de Usuário de Identidade Externa
+* Administrador de atributos Flow usuário de identidade externa
 
 ## <a name="http-request"></a>Solicitação HTTP
 
@@ -87,6 +87,10 @@ DELETE https://graph.microsoft.com/beta/identity/userFlowAttributes/{id}
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/delete-userflowattributes-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[Ir](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/delete-userflowattributes-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

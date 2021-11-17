@@ -6,12 +6,12 @@ ms.localizationpriority: medium
 ms.prod: sharepoint
 description: Criar uma nova lista em um site.
 doc_type: apiPageType
-ms.openlocfilehash: 94256d6eb2a0b89a5cd9c8ac0fec830232061851
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 9bd060de75c06d28d9379968e6f57a5362aa056f
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59110393"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "61023411"
 ---
 # <a name="create-a-new-list"></a>Crie uma nova lista
 
@@ -25,8 +25,8 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 |            Tipo de permissão             | Permissões (da com menos para a com mais privilégios) |
 | :------------------------------------- | :------------------------------------------ |
-| Delegada (conta corporativa ou de estudante)     | Sites.Manage.All                            |
-| Delegada (conta pessoal da Microsoft) | Sem suporte.                              |
+| Delegado (conta corporativa ou de estudante)     | Sites.Manage.All                            |
+| Delegado (conta pessoal da Microsoft) | Sem suporte.                              |
 | Aplicativo                            | Sites.Manage.All                            |
 
 ## <a name="http-request"></a>Solicitação HTTP
@@ -84,6 +84,10 @@ Content-Type: application/json
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/create-list-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[Ir](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/create-list-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

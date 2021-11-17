@@ -1,16 +1,16 @@
 ---
 title: 'informationProtectionLabel: extractLabel'
 description: Recupere informationProtectionContentLabel usando metadados de um objeto rotulado.
-localization_priority: Normal
+ms.localizationpriority: medium
 author: tommoser
 ms.prod: security
 doc_type: apiPageType
-ms.openlocfilehash: c0a7012c02132ad2ed46d82e857e8de62be1e746
-ms.sourcegitcommit: db3d2c6db8dd8f8cc14bdcebb2904d5e056a73e7
+ms.openlocfilehash: 53283d6c90c99fa848bb67d0547a8ad12d285c93
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/20/2021
-ms.locfileid: "52579610"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "61012071"
 ---
 # <a name="informationprotectionlabel-extractlabel"></a>informationProtectionLabel: extractLabel
 
@@ -29,8 +29,8 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 | Tipo de permissão                        | Permissões (da com menos para a com mais privilégios) |
 | :------------------------------------- | :------------------------------------------ |
-| Delegada (conta corporativa ou de estudante)     | InformationProtectionPolicy. Read            |
-| Delegada (conta pessoal da Microsoft) | Sem suporte.                              |
+| Delegado (conta corporativa ou de estudante)     | InformationProtectionPolicy. Read            |
+| Delegado (conta pessoal da Microsoft) | Sem suporte.                              |
 | Aplicativo                            | InformationProtectionPolicy.Read.All        |
 
 ## <a name="http-request"></a>Solicitação HTTP
@@ -143,6 +143,10 @@ User-agent: ContosoLOBApp/1.0
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/informationprotectionlabel-extractlabel-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[Ir](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/informationprotectionlabel-extractlabel-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

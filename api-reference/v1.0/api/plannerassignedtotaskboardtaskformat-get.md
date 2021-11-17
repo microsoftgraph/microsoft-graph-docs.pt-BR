@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: TarkanSevilmis
 ms.prod: planner
 doc_type: apiPageType
-ms.openlocfilehash: d72eee0e3101ad7618190ac75bb15698d6a65fb6
-ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
+ms.openlocfilehash: a049b5e4b2616fb193e73f3c431264a4a2f9678a
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/12/2021
-ms.locfileid: "60947577"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "61003585"
 ---
 # <a name="get-plannerassignedtotaskboardtaskformat"></a>Obter plannerAssignedToTaskBoardTaskFormat
 
@@ -71,6 +71,10 @@ GET https://graph.microsoft.com/v1.0/planner/tasks/{task-id}/assignedToTaskBoard
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/get-plannerassignedtotaskboardtaskformat-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[Ir](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/get-plannerassignedtotaskboardtaskformat-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

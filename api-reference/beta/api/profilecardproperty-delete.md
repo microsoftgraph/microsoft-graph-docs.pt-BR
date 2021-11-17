@@ -1,16 +1,16 @@
 ---
 title: Excluir profileCardProperty
 description: Exclua um objeto profileCardProperty e remova todas as personalizações do cartão de perfil.
-localization_priority: Normal
+ms.localizationpriority: medium
 author: kevinbellinger
 ms.prod: people
 doc_type: apiPageType
-ms.openlocfilehash: 7ad5741936e52f3dc4aad76c24a27711e24b5116
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: c66150558e5ce779fca7ae0c5380337eaf041c73
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48980856"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "61023620"
 ---
 # <a name="delete-profilecardproperty"></a>Excluir profileCardProperty
 
@@ -18,7 +18,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Exclua o objeto [profileCardProperty](../resources/profilecardproperty.md) especificado por seu `directoryPropertyName` do cartão de perfil da organização e remova quaisquer personalizações localizadas para essa propriedade.
+Exclua o objeto [profileCardProperty](../resources/profilecardproperty.md) especificado por ele do cartão de perfil da organização e remova todas as `directoryPropertyName` personalizações localizadas para essa propriedade.
 
 ## <a name="permissions"></a>Permissões
 
@@ -26,11 +26,11 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 | Tipo de permissão                        | Permissões (da com menos para a com mais privilégios) |
 |:---------------------------------------|:--------------------------------------------|
-| Delegado (conta corporativa ou de estudante)     | User. ReadWrite, User. ReadWrite. All          |
+| Delegado (conta corporativa ou de estudante)     | User.ReadWrite, User.ReadWrite.All          |
 | Delegado (conta pessoal da Microsoft) | Sem suporte.                              |
 | Aplicativo                            | Sem suporte.                              |
 
->**Observação:** O uso de permissões delegadas para esta operação exige que o usuário conectado tenha um administrador de locatários ou uma função de administrador global.
+>**Observação:** O uso de permissões delegadas para essa operação exige que o usuário in-loco tenha um administrador de locatário ou uma função de administrador global.
 
 ## <a name="http-request"></a>Solicitação HTTP
 
@@ -58,7 +58,7 @@ Se bem-sucedido, este método retorna um código de resposta `204 No Content`. N
 
 ### <a name="request"></a>Solicitação
 
-O exemplo a seguir mostra como excluir o atributo chamado "fax" do cartão de perfil da organização.
+O exemplo a seguir mostra como excluir o atributo chamado "Fax" do cartão de perfil da organização.
 
 # <a name="http"></a>[HTTP](#tab/http)
 <!-- {
@@ -83,6 +83,10 @@ DELETE https://graph.microsoft.com/beta/organization/{organizationId}/settings/p
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/delete-profilecardproperty-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[Ir](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/delete-profilecardproperty-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

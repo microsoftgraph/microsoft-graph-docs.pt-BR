@@ -1,16 +1,16 @@
 ---
 title: Configurar a sincronização com atributos de extensão de diretório
-description: Personalize seu esquema de sincronização para incluir atributos de extensão de diretório do Azure Active Directory (Azure AD).
-localization_priority: Normal
+description: Personalize seu esquema de sincronização para incluir Azure Active Directory de extensão de diretório (Azure AD).
+ms.localizationpriority: medium
 doc_type: conceptualPageType
 author: ArvindHarinder1
 ms.prod: applications
-ms.openlocfilehash: db5e2ba4bc715f608d17b8e11067df71141a6142
-ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
+ms.openlocfilehash: b3379502f1bf5354d4f53e863f4924c5f251bd4a
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "50956975"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "60976809"
 ---
 # <a name="configure-synchronization-with-directory-extension-attributes"></a>Configurar a sincronização com atributos de extensão de diretório
 
@@ -18,9 +18,9 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Você pode personalizar seu esquema de sincronização para incluir atributos de extensão de diretório do Azure Active Directory (Azure AD). Este artigo descreve como usar um atributo de extensão de diretório (**extension_9d98asdfl15980a_Nickname**) para preencher o valor de User.CommunityNickname no Salesforce. Nesse cenário, você tem o Azure AD Connect definido para provisionar vários atributos de extensão de diretório do Windows Server Active Directory local para o Azure AD. 
+Você pode personalizar seu esquema de sincronização para incluir Azure Active Directory de extensão de diretório (Azure AD). Este artigo descreve como usar um atributo de extensão de diretório (**extension_9d98asdfl15980a_Nickname**) para preencher o valor de User.CommunityNickname no Salesforce. Nesse cenário, você tem o Azure AD Conexão configurar para provisionar vários atributos de extensão de diretório do Windows Server Active Directory local para o Azure AD. 
 
-Este artigo supõe que você já adicionou um aplicativo que oferece suporte à sincronização ao seu locatário por meio do [Portal do Azure,](https://portal.azure.com)que você conhece o nome de exibição do aplicativo e que tem um token de autorização para o Microsoft Graph. Para obter informações sobre como obter o token de autorização, consulte [Obter tokens de acesso para chamar o Microsoft Graph](/graph/auth/).
+Este artigo supõe que você já adicionou um aplicativo que oferece suporte à sincronização ao seu locatário por meio do [Portal do Azure,](https://portal.azure.com)que você conhece o nome de exibição do aplicativo e que tem um token de autorização para o Microsoft Graph. Para obter informações sobre como obter o token de autorização, consulte [Obter tokens de acesso para chamar a Microsoft Graph](/graph/auth/).
 
 ## <a name="find-the-service-principal-object-by-display-name"></a>Encontre o objeto de entidade de serviço por nome de exibição
 
@@ -86,7 +86,7 @@ O `{jobId}` é `SfSandboxOutDelta.e4bbf44533ea4eabb17027f3a92e92aa` .
 Você precisará do nome completo do atributo extension. Se você não sabe o nome completo (que deve ser semelhante ao extension_9d98asdfl15980a_Nickname **),** confira as seguintes informações sobre atributos de extensão de diretório e como inspecioná-los: 
 
 * [Estendendo o esquema de diretório do Azure AD com propriedades personalizadas](/graph/extensibility-overview)
-* [Extensões de esquema de diretório | Conceitos de API do Graph](/previous-versions/azure/ad/graph/howto/azure-ad-graph-api-directory-schema-extensions)
+* [Extensões de esquema de diretório | Graph de API](/previous-versions/azure/ad/graph/howto/azure-ad-graph-api-directory-schema-extensions)
 
 
 ## <a name="get-the-synchronization-schema"></a>Obter o esquema de sincronização
@@ -116,6 +116,10 @@ Authorization: Bearer {Token}
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/get-synchronizationschema-3-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[Ir](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/get-synchronizationschema-3-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -221,11 +225,11 @@ Content-Type: application/json
 
 ## <a name="add-a-definition-for-the-directory-extension-attribute-and-a-mapping-between-the-attributes"></a>Adicione uma definição para o atributo de extensão de diretório e um mapeamento entre os atributos
 
-Use um editor de texto simples de sua escolha (por exemplo, [Notepad++](https://notepad-plus-plus.org/) ou [Editor JSON Online](https://www.jsoneditoronline.org/)) para:
+Use um editor de texto simples de sua escolha [(por exemplo, Bloco de notas++](https://notepad-plus-plus.org/) ou [Editor JSON Online](https://www.jsoneditoronline.org/)) para:
 
 1. Adicione uma [definição de atributo](synchronization-attributedefinition.md) para o `extension_9d98asdfl15980a_Nickname` atributo. 
 
-    - Em diretórios, localizou o diretório com o nome "Azure Active Directory" e, na matriz do objeto, localizou o chamado **User**.
+    - Em diretórios, encontre o diretório com o nome "Azure Active Directory", e na matriz do objeto, encontre o chamado **User**.
     - Adicione o novo atributo à lista, especificando o nome e o tipo, conforme mostrado no exemplo a seguir.
 
 2. Adicione um [mapeamento de atributos](synchronization-attributemapping.md) entre extension_9d98asdfl15980a_Nickname e CommunityNickname.

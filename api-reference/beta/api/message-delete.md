@@ -1,16 +1,16 @@
 ---
 title: Excluir mensagem
 description: Exclua uma mensagem na caixa de correio do usuário especificado ou exclua uma relação da mensagem.
-localization_priority: Normal
+ms.localizationpriority: medium
 author: abheek-das
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 71ab17fa25dee8c5158d5ef166de68ca934d7ae5
-ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
+ms.openlocfilehash: 07c37b78ab6851cb8d3efaec670d3d780b54c06c
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/06/2021
-ms.locfileid: "50132813"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "60980844"
 ---
 # <a name="delete-message"></a>Excluir mensagem
 
@@ -20,9 +20,9 @@ Namespace: microsoft.graph
 
 Exclua uma mensagem na caixa de correio do usuário especificado ou exclua uma relação da mensagem.
 
-Por exemplo, você pode excluir uma [@menção específica](../resources/mention.md) do usuário especificado na mensagem.
+Por exemplo, você pode excluir uma [@-menção específica](../resources/mention.md) do usuário especificado na mensagem.
 
->**Observação** Talvez você não consiga excluir itens na pasta de exclusões de itens recuperáveis (representado pelo [nome de pasta conhecido).](../resources/mailfolder.md) `recoverableitemsdeletions` Consulte [Retenção de itens excluídos](/exchange/policy-and-compliance/recoverable-items-folder/recoverable-items-folder#deleted-item-retention) e Limpar itens [excluídos](/exchange/policy-and-compliance/recoverable-items-folder/clean-up-deleted-items) para obter mais informações.
+>**Observação** Talvez você não consiga excluir itens na pasta exclusões de itens recuperáveis (representado pelo [nome da pasta conhecido).](../resources/mailfolder.md) `recoverableitemsdeletions` Consulte [Retenção de item excluído e](/exchange/policy-and-compliance/recoverable-items-folder/recoverable-items-folder#deleted-item-retention) Limpar itens [excluídos](/exchange/policy-and-compliance/recoverable-items-folder/clean-up-deleted-items) para obter mais informações.
 
 ## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
@@ -93,6 +93,10 @@ DELETE https://graph.microsoft.com/beta/me/messages/{id}
 [!INCLUDE [sample-code](../includes/snippets/java/delete-message-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# <a name="go"></a>[Ir](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/delete-message-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 ##### <a name="response-1"></a>Resposta 1
@@ -130,6 +134,10 @@ DELETE https://graph.microsoft.com/beta/me/messages/{id}/mentions/{id}
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/delete-mention-in-message-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[Ir](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/delete-mention-in-message-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

@@ -5,12 +5,12 @@ author: payiAzure
 ms.localizationpriority: medium
 ms.prod: service-communications
 doc_type: apiPageType
-ms.openlocfilehash: 98a2f3302177fa454341e51172405fecfcefe4ea
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 756c3cf5d3bf8a2b2b70e2a6a7b6807a7ef486da
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59118999"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "61030593"
 ---
 # <a name="serviceupdatemessage-unfavorite"></a>serviceUpdateMessage: unfavorite
 Namespace: microsoft.graph
@@ -49,7 +49,7 @@ A tabela a seguir mostra os parâmetros que podem ser usados com esta ação.
 
 |Parâmetro|Tipo|Descrição|
 |:---|:---|:---|
-|messageIds|Coleção String|Lista de IDs de mensagens a remover do favorito.|
+|messageIds|Coleção de cadeias de caracteres|Lista de IDs de mensagens a remover do favorito.|
 
 ## <a name="response"></a>Resposta
 
@@ -88,6 +88,10 @@ Content-Type: application/json
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/serviceupdatemessage-unfavorite-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[Ir](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/serviceupdatemessage-unfavorite-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

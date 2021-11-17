@@ -1,16 +1,16 @@
 ---
 title: Obter reviewSet
 description: Recupere as propriedades e as relações de um objeto reviewSet.
-localization_priority: Normal
+ms.localizationpriority: medium
 author: mahage-msft
 ms.prod: ediscovery
 doc_type: apiPageType
-ms.openlocfilehash: 220a52d7ceb7a3b5fce766a9ec98dbe9c7bf308b
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: 91ace9341092f1d7a6077b4680464df3792d1d96
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52044694"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "61018755"
 ---
 # <a name="get-reviewset"></a>Obter reviewSet
 
@@ -91,6 +91,10 @@ GET https://graph.microsoft.com/beta/compliance/ediscovery/cases/6f65a8e4-c6a0-4
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/get-reviewset-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[Ir](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/get-reviewset-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

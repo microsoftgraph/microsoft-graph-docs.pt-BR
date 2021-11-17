@@ -2,15 +2,15 @@
 title: 'accessReviewInstance: resetDecisions'
 description: Redefine todos os objetos accessReviewInstanceDecisionItem em um accessReviewInstance como `notReviewed` .
 author: isabelleatmsft
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: df7e05103434c7b036d912ccdf8cd9ef6367b90f
-ms.sourcegitcommit: 7f674112f5b95446fac86d829509f889c60f1693
+ms.openlocfilehash: 216727643dcade655ba7f202deb5dcb84f7c4f16
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/30/2021
-ms.locfileid: "53207508"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "60987821"
 ---
 # <a name="accessreviewinstance-resetdecisions"></a>accessReviewInstance: resetDecisions
 Namespace: microsoft.graph
@@ -77,6 +77,10 @@ POST https://graph.microsoft.com/beta/identityGovernance/accessReviews/definitio
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/accessreviewinstance-resetdecisions-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[Ir](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/accessreviewinstance-resetdecisions-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

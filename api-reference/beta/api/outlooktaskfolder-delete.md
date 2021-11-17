@@ -1,16 +1,16 @@
 ---
 title: Excluir outlookTaskFolder
-description: Excluir a pasta de tarefas do Outlook especificada.
+description: Exclua a pasta de Outlook de tarefas especificada.
 author: mashriv
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: ceeb91c23181c7fcadf13aaf64153b6494e6a4e5
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 1826d33fa17d2c7d637c396abcde66e9af75d057
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48974830"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "61011510"
 ---
 # <a name="delete-outlooktaskfolder-deprecated"></a>Excluir outlookTaskFolder (preterido)
 
@@ -21,7 +21,7 @@ Namespace: microsoft.graph
 [!INCLUDE [outlooktask-deprecate-allup](../../includes/outlooktask-deprecate-allup.md)]
 
 
-Excluir a pasta de tarefas do Outlook especificada.
+Exclua a pasta de Outlook de tarefas especificada.
 ## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
@@ -77,6 +77,10 @@ DELETE https://graph.microsoft.com/beta/me/outlook/taskFolders/AAMkADIyAAAhrbPXA
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/delete-outlooktaskfolder-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[Ir](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/delete-outlooktaskfolder-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

@@ -1,16 +1,16 @@
 ---
 title: 'message: send'
-description: Envie uma mensagem de rascunho existente.
-localization_priority: Normal
+description: Enviar um rascunho da mensagem existente.
+ms.localizationpriority: medium
 author: abheek-das
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: ea24ae69c3888e31124df758bc22199bde1048ea
-ms.sourcegitcommit: cec76c5a58b359d79df764c849c8b459349b3b52
+ms.openlocfilehash: 2ccbf8b182b75247a8dc91084cfefd89b4431c9b
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/25/2021
-ms.locfileid: "52645518"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "60974828"
 ---
 # <a name="message-send"></a>message: send
 
@@ -18,16 +18,16 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Envie uma mensagem de rascunho existente. 
+Enviar um rascunho da mensagem existente. 
 
-A mensagem de rascunho pode ser um novo rascunho de [mensagem,](../api/user-post-messages.md)rascunho de [resposta,](../api/message-createreply.md)rascunho de [resposta-tudo](../api/message-createreplyall.md)ou um [rascunho de encaminhamento.](../api/message-createforward.md) 
+O rascunho da mensagem pode ser um novo [rascunho](../api/user-post-messages.md), [rascunho de resposta](../api/message-createreply.md), [responder a todos os rascunhos](../api/message-createreplyall.md) ou um [rascunho de encaminhamento](../api/message-createforward.md). 
 
-Este método salva a mensagem na pasta **Itens** Enviados.
+Este método salva a mensagem na pasta **Itens Enviados**.
 
-Como alternativa, [envie uma nova mensagem](../api/user-sendmail.md) em uma única operação.
+Alternativamente, [envie uma nova mensagem](../api/user-sendmail.md) em uma única operação.
 
 ## <a name="permissions"></a>Permissões
-Uma das seguintes permissões é necessária para chamar essa API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
+Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, consulte [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
 |:--------------------|:---------------------------------------------------------|
@@ -52,14 +52,14 @@ POST /users/{id | userPrincipalName}/messages/{id}/send
 | Content-Length | number | 0. Obrigatório. |
 
 ## <a name="request-body"></a>Corpo da solicitação
-Como esse método envia uma mensagem de rascunho já existente, não é necessário especificar um corpo de solicitação.
+Como este método envia um rascunho da mensagem existente, não é necessário especificar um corpo de solicitação.
 
 ## <a name="response"></a>Resposta
 
 Se bem-sucedido, este método retorna um código de resposta `202 Accepted`. Não retorna nada no corpo da resposta.
 
 ## <a name="examples"></a>Exemplos
-### <a name="example-1-send-an-existing-draft-message"></a>Exemplo 1: Enviar uma mensagem de rascunho existente
+### <a name="example-1-send-an-existing-draft-message"></a>Exemplo 1: Enviar um rascunho da mensagem existente.
 
 Eis um exemplo de como chamar esta API.
 
@@ -90,6 +90,10 @@ POST https://graph.microsoft.com/beta/me/messages/{id}/send
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/message-send-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[Ir](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/message-send-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

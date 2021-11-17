@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: kevinbellinger
 ms.prod: people
 doc_type: apiPageType
-ms.openlocfilehash: 775b382c24500d1789249926653461d533cfd267
-ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
+ms.openlocfilehash: 6886aab7793d0e24abb9aaf58518f7a783cb6795
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/12/2021
-ms.locfileid: "60947193"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "61027932"
 ---
 # <a name="create-personcertification"></a>Criar personCertification
 Namespace: microsoft.graph
@@ -51,14 +51,14 @@ A tabela a seguir mostra as propriedades que são possíveis de definir ao criar
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
 |allowedAudiences|Cadeia de caracteres|As audiências que são capazes de ver os valores contidos na entidade. Herdado [do itemFacet](../resources/itemfacet.md). Os valores possíveis são: `me`, `family`, `contacts`, `groupMembers`, `organization`, `federatedOrganizations`, `everyone`, `unknownFutureValue`.|
-|certificationId  |Cadeia de caracteres      |O identificador referencial para a certificação. |
+|certificationId  |String      |O identificador referencial para a certificação. |
 |description      |Cadeia de caracteres      |Descrição da certificação.                   |
 |displayName      |Cadeia de caracteres      |Título da certificação.                         |
 |endDate          |Data        |A data em que a certificação expira.            |
 |inferência|[inferenceData](../resources/inferencedata.md)|Contém detalhes de inferência se a entidade for inferida pelo aplicativo de criação ou modificação. Herdado [do itemFacet](../resources/itemfacet.md).|
 |issuedDate       |Data        |A data em que a certificação foi emitida.         |
 |issuingAuthority |Cadeia de caracteres      |Autoridade que concedeu a certificação.          |
-|emissãoCompany   |Cadeia de caracteres      |Autoridade que concedeu a certificação.          |
+|emissãoCompany   |String      |Autoridade que concedeu a certificação.          |
 |source|[personDataSource](../resources/persondatasource.md)|Onde os valores se originaram se sincronizados de outro serviço. Herdado [do itemFacet](../resources/itemfacet.md).|
 |startDate        |Data        |A data em que a certificação se tornou válida.       |
 |thumbnailUrl     |Cadeia de caracteres      |URL fazendo referência a uma miniatura da certificação.   |
@@ -102,6 +102,10 @@ Content-Type: application/json
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/create-personcertification-from--java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[Ir](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/create-personcertification-from--go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

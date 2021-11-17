@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: mmast-msft
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: 596168f56bafc2ac3e663756e474ad6fa524f3d3
-ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
+ms.openlocfilehash: 0eecc156ce51f6749760f8611a8d20a16fc23ad4
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/12/2021
-ms.locfileid: "60942363"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "60978349"
 ---
 # <a name="get-group"></a>Obter grupo
 
@@ -28,7 +28,7 @@ Uma combinação de permissões é obrigatória para chamar essa API. Para saber
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
 |:--------------------|:---------------------------------------------------------|
 |Delegado (conta corporativa ou de estudante) |  Uma de EduRoster.ReadBasic, EduRoster.Read, EduRoster.Write além de Directory.Read.All|
-|Delegada (conta pessoal da Microsoft) |  Sem suporte.  |
+|Delegado (conta pessoal da Microsoft) |  Sem suporte.  |
 |Aplicativo | EduRoster.Read.All, EduRoster.ReadWrite.All além de Directory.Read.All| 
 
 ## <a name="http-request"></a>Solicitação HTTP
@@ -71,6 +71,10 @@ GET https://graph.microsoft.com/beta/education/classes/2961761D-8094-4183-A9F6-8
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/educationclass-get-group-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[Ir](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/educationclass-get-group-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

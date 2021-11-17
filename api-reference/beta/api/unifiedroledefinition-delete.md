@@ -1,16 +1,16 @@
 ---
 title: Excluir unifiedRoleDefinition
 description: Exclua um objeto unifiedRoleDefinition.
-localization_priority: Normal
+ms.localizationpriority: medium
 author: abhijeetsinha
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: 7de16492df085b48d2fe580ff54d3cacf9dc0d22
-ms.sourcegitcommit: ae83b2b372902268517fd17a8b10d6d9add422af
+ms.openlocfilehash: f04ed12141ac5bbe50f7e0d668c3494bd7cdb724
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/08/2021
-ms.locfileid: "53334364"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "60988864"
 ---
 # <a name="delete-unifiedroledefinition"></a>Excluir unifiedRoleDefinition
 
@@ -105,6 +105,10 @@ DELETE https://graph.microsoft.com/beta/roleManagement/directory/roleDefinitions
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/delete-unifiedroledefinition-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[Ir](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/delete-unifiedroledefinition-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

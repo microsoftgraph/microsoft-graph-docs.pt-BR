@@ -2,15 +2,15 @@
 title: 'schedule: share'
 description: Compartilhe um intervalo de tempo de agendamento com membros de agendamento.
 author: nkramer
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 47bd1e71b31a10b7dfb0ffc34c063d94f2e065fc
-ms.sourcegitcommit: 94c4acf8bd03c10a44b12952b6cb4827df55b978
+ms.openlocfilehash: b14688102dd7f08cad8ee46f2b62fab7d9995feb
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/06/2021
-ms.locfileid: "52788014"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "60993856"
 ---
 # <a name="schedule-share"></a>schedule: share
 
@@ -22,7 +22,7 @@ Compartilhe um [intervalo de](../resources/schedule.md) tempo de agendamento com
 Tornar as coleções de itens [shift](../resources/shift.md), [openshift](../resources/openshift.md) e [](../resources/schedule.md) [timeOff](../resources/timeoff.md) no intervalo de tempo especificado do cronograma visualizado pelos membros da equipe especificados, incluindo funcionários e gerentes.
 Cada [turno](../resources/shift.md), [instância openshift](../resources/openshift.md) [](../resources/schedule.md) [e timeOff](../resources/timeoff.md) em uma agenda suporta uma versão de rascunho e uma versão compartilhada do item. A versão de rascunho pode ser visualizada somente por gerentes, e a versão compartilhada pode ser visualizada por funcionários e gerentes. Para cada [turno](../resources/shift.md), [instância openshift](../resources/openshift.md) e [timeOff](../resources/timeoff.md) no intervalo de tempo especificado, a ação de compartilhamento atualiza a versão compartilhada da versão de rascunho, para que, além dos gerentes, os funcionários também possam exibir as informações mais atuais sobre o item. O **parâmetro notifyTeam** especifica ainda quais funcionários podem exibir o item.
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>Permissões
 
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
@@ -96,6 +96,10 @@ Content-type: application/json
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/schedule-share-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[Ir](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/schedule-share-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

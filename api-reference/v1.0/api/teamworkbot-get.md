@@ -5,12 +5,12 @@ author: AkJo
 ms.localizationpriority: medium
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: da488f526eb10b9549bf7fd2c803634f22a57691
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 15d5941eea31762a5295350b19393992f9256566
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59109856"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "61008676"
 ---
 # <a name="get-teamworkbot"></a>Obter o teamworkBot
 
@@ -23,8 +23,8 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 |Tipo de permissão|Permissões (da com menos para a com mais privilégios)|
 |:---|:---|
-|Delegada (conta corporativa ou de estudante)| AppCatalog.Read.All, AppCatalog.ReadWrite.All, AppCatalog.Submit |
-|Delegada (conta pessoal da Microsoft)| Sem suporte. |
+|Delegado (conta corporativa ou de estudante)| AppCatalog.Read.All, AppCatalog.ReadWrite.All, AppCatalog.Submit |
+|Delegado (conta pessoal da Microsoft)| Sem suporte. |
 |Aplicativo| Sem suporte.|
 
 ## <a name="http-request"></a>Solicitação HTTP
@@ -80,6 +80,10 @@ GET https://graph.microsoft.com/v1.0/appCatalogs/teamsApps/e4c5c249-bb4b-419e-b7
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/get-teamworkbot-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[Ir](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/get-teamworkbot-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

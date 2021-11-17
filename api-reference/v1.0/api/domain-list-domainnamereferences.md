@@ -2,15 +2,15 @@
 title: Listar domainNameReferences
 description: Recupere uma lista de directoryObject com uma referência ao domínio.
 author: adimitui
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: 87a244e1a89c3f23c184796777e027fd314dcfe992447c06618bfeef90e03132
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 55a476f8e9f38ddbde2cf42ac492d39381927c3a
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "57272036"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "61006365"
 ---
 # <a name="list-domainnamereferences"></a>Listar domainNameReferences
 
@@ -25,16 +25,16 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegado (conta corporativa ou de estudante) | Sem suporte. |
+|Delegado (conta corporativa ou de estudante) | Domain.Read.All, Domain.ReadWrite.All |
 |Delegado (conta pessoal da Microsoft) | Sem suporte.    |
-|Aplicativo | Domain.ReadWrite.All |
+|Aplicativo | Domain.Read.All, Domain.ReadWrite.All |
 
 [!INCLUDE [limited-info](../../includes/limited-info.md)]
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- { "blockType": "ignored" } -->
 ```http
-GET /domains/{domain-id}/domainNameReferences
+GET /domains/{id}/domainNameReferences
 ```
 
 ## <a name="optional-query-parameters"></a>Parâmetros de consulta opcionais
@@ -81,6 +81,10 @@ GET https://graph.microsoft.com/v1.0/domains/contoso.com/domainNameReferences
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/get-domainnamereferences-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[Ir](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/get-domainnamereferences-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

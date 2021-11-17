@@ -2,15 +2,15 @@
 title: 'serviceUpdateMessage: unarchive'
 description: Desaconsuclear uma lista de mensagens de atualização de serviço para o usuário in-loco.
 author: payiAzure
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: service-communications
 doc_type: apiPageType
-ms.openlocfilehash: 38144a2f3e6512631f47a22ebecdf7a41e70a417
-ms.sourcegitcommit: 7f674112f5b95446fac86d829509f889c60f1693
+ms.openlocfilehash: af369caf9d87763091f66f81831740f08e11676a
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/30/2021
-ms.locfileid: "53209118"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "61002431"
 ---
 # <a name="serviceupdatemessage-unarchive"></a>serviceUpdateMessage: unarchive
 Namespace: microsoft.graph
@@ -89,6 +89,10 @@ Content-Type: application/json
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/serviceupdatemessage-unarchive-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[Ir](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/serviceupdatemessage-unarchive-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

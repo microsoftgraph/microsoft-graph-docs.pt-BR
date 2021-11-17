@@ -2,15 +2,15 @@
 title: Criar regra
 description: 'Crie um objeto messageRule especificando um conjunto de condições e ações. '
 author: abheek-das
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: a5ed73afcc88b416015159853686787322c8d117
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: 930c19f41c076ff4db4844ecfeaea77cc9044856
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52053010"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "61034234"
 ---
 # <a name="create-rule"></a>Criar regra
 
@@ -51,7 +51,7 @@ No corpo da solicitação, forneça os parâmetros que são aplicáveis à sua r
 |:--------|:-------|:----------|
 |actions|[messageRuleActions](../resources/messageruleactions.md)|Ações a serem realizadas em uma mensagem quando as condições correspondentes, se houver, forem atendidas. Obrigatório.|
 |conditions|[messageRulePredicates](../resources/messagerulepredicates.md)|Condições que, quando atendidas, acionarão as ações correspondentes dessa regra. Opcional.|
-|displayName| String  | O nome de exibição da regra. Obrigatório.|
+|displayName| Cadeia de caracteres  | O nome de exibição da regra. Obrigatório.|
 |exceptions| [messageRulePredicates](../resources/messagerulepredicates.md)| Representa condições de exceção para a regra. Opcional. |
 |isEnabled | Booliano | Indica se a regra está habilitada para ser aplicada a mensagens. Opcional. |
 |sequence| Int32 | Indica a ordem em que a regra é executada, entre outras regras. Obrigatório.|
@@ -111,10 +111,14 @@ Content-type: application/json
 [!INCLUDE [sample-code](../includes/snippets/java/create-messagerule-from-mailfolder-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# <a name="go"></a>[Ir](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/create-messagerule-from-mailfolder-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 ##### <a name="response"></a>Resposta
-Veja a seguir um exemplo da resposta. Observação: o objeto de resposta mostrado aqui pode ser encurtado para legibilidade.
+Aqui está um exemplo da resposta. Observação: o objeto de resposta mostrado aqui pode ser reduzido para facilitar a leitura.
 <!-- {
   "blockType": "response",
   "truncated": true,

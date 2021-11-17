@@ -2,15 +2,15 @@
 title: 'group: evaluateDynamicMembership'
 description: Avalie se um usuário ou dispositivo é ou seria membro de um grupo dinâmico.
 author: Jordanndahl
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: de8e44a79644bcea5e3c44b214580e16359468e2
-ms.sourcegitcommit: 4fa6fcc058c7f8d8cad58c0b82db23d6c7da37d2
+ms.openlocfilehash: 2ca43d71c14cd8468b387444651d79d56f298bd4
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/27/2021
-ms.locfileid: "52681757"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "61034352"
 ---
 # <a name="group-evaluatedynamicmembership"></a>group: evaluateDynamicMembership
 
@@ -67,8 +67,8 @@ A tabela a seguir lista as propriedades necessárias ao avaliar a associação a
 
 | Parâmetro | Tipo | Descrição |
 | :-------- | :--- | :---------- |
-| memberId | Coleção de cadeias de caracteres | memberId é a ID do objeto do usuário ou dispositivo a ser avaliado. |
-| membershipRule | Coleção de cadeias de caracteres | A regra usada para avaliação de associação. Se essa propriedade não for fornecida, a regra do grupo existente será avaliada. Se essa propriedade for fornecida, o usuário ou dispositivo será avaliado para possível associação em um grupo com a mesma regra. Para obter mais informações, consulte [Regras de associação dinâmicas para grupos em Azure Active Directory](/azure/active-directory/users-groups-roles/groups-dynamic-membership).|
+| memberId | Conjunto de cadeias de caracteres | memberId é a ID do objeto do usuário ou dispositivo a ser avaliado. |
+| membershipRule | Conjunto de cadeias de caracteres | A regra usada para avaliação de associação. Se essa propriedade não for fornecida, a regra do grupo existente será avaliada. Se essa propriedade for fornecida, o usuário ou dispositivo será avaliado para possível associação em um grupo com a mesma regra. Para obter mais informações, consulte [Regras de associação dinâmicas para grupos em Azure Active Directory](/azure/active-directory/users-groups-roles/groups-dynamic-membership).|
 
 ## <a name="response"></a>Resposta
 
@@ -111,6 +111,10 @@ Content-type: application/json
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/group-evaluatedynamicmembership-1-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[Ir](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/group-evaluatedynamicmembership-1-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -182,6 +186,10 @@ Content-type: application/json
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/group-evaluatedynamicmembership-2-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[Ir](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/group-evaluatedynamicmembership-2-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

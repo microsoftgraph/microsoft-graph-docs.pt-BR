@@ -1,16 +1,16 @@
 ---
 title: Atualizar inferenceClassificationOverride
 description: 'Altere **o campo classifyAs** de uma substituição de Caixa de Entrada Focalizada conforme especificado. '
-localization_priority: Normal
+ms.localizationpriority: medium
 doc_type: apiPageType
 author: abheek-das
 ms.prod: ''
-ms.openlocfilehash: 655be2a14ca6948bcb76bda02c1aaca43c5ad09b
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: 5129199e339564147ffcecdc6258247892ecf5f5
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52040515"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "61032364"
 ---
 # <a name="update-inferenceclassificationoverride"></a>Atualizar inferenceClassificationOverride
 
@@ -92,10 +92,14 @@ Content-type: application/json
 [!INCLUDE [sample-code](../includes/snippets/java/update-inferenceclassificationoverride-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# <a name="go"></a>[Ir](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/update-inferenceclassificationoverride-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 ##### <a name="response"></a>Resposta
-Veja a seguir um exemplo da resposta. Observação: o objeto de resposta mostrado aqui pode ser encurtado para legibilidade.
+Aqui está um exemplo da resposta. Observação: o objeto de resposta mostrado aqui pode ser reduzido para facilitar a leitura.
 <!-- {
   "blockType": "response",
   "truncated": true,

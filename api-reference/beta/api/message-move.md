@@ -1,16 +1,16 @@
 ---
 title: 'message: move'
-description: Mover uma mensagem para uma pasta. Isso cria uma nova cópia da mensagem na pasta de destino e remove a mensagem original.
+description: Mover uma mensagem para uma pasta. Isto criará uma nova cópia da mensagem na pasta de destino e removerá a mensagem original.
 author: abheek-das
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 9982fa413b23aa5746a027879f8f9d3dbdc52c05
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: 58b2e83d01eddfa58b7e7713504ac8291a107531
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52050140"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "61028283"
 ---
 # <a name="message-move"></a>message: move
 
@@ -18,7 +18,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Mover uma mensagem para outra pasta na caixa de correio do usuário especificado. Isso cria uma nova cópia da mensagem na pasta de destino e remove a mensagem original.
+Mova uma mensagem para outra pasta na caixa de correio do usuário especificado. Isso cria uma nova cópia da mensagem na pasta de destino e remove a mensagem original.
 
 ## <a name="permissions"></a>Permissões
 
@@ -97,6 +97,10 @@ Content-type: application/json
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/message-move-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[Ir](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/message-move-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
