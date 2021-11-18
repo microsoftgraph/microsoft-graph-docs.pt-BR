@@ -1,21 +1,21 @@
 ---
-title: Examinar Azure Active Directory (Azure AD) Graph uso do aplicativo APIs
+title: Examinar o uso do aplicativo Graph APIs do Azure AD
 description: Descreve como auditar Azure Active Directory (Azure AD) Graph APIs para migrar um aplicativo para a API Graph Microsoft.
 author: dkershaw10
 ms.localizationpriority: medium
 ms.prod: applications
-ms.openlocfilehash: 8386c3c77a5f42115236875d8405f97c5f49ff42
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: d6a440e71350433feacc1a92fbc6928523c0b534
+ms.sourcegitcommit: 2456cf3c4117b88afefef139593796a2f919e7cc
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59139167"
+ms.lasthandoff: 11/18/2021
+ms.locfileid: "61077625"
 ---
-# <a name="examine-azure-active-directory-azure-ad-graph-apis-app-usage"></a>Examinar Azure Active Directory (Azure AD) Graph uso do aplicativo APIs
+# <a name="examine-azure-ad-graph-apis-app-usage"></a>Examinar o uso do aplicativo Graph APIs do Azure AD
 
 Esta é a etapa 2 do [processo para migrar aplicativos.](migrate-azure-ad-graph-planning-checklist.md)
 
-Ao planejar sua migração para o Microsoft Graph, leve tempo para revisar seu aplicativo existente e para catalogar as APIs do Azure AD Graph que você está usando no momento.
+Ao planejar Graph migração para o Microsoft Graph, leve tempo para analisar seu aplicativo existente e catalogar as APIs de Graph do Azure Active Directory (Azure AD) que você está usando no momento.
 
 Compare sua lista com as diferenças conhecidas.  Isso ajuda a identificar alterações específicas que você precisará fazer para migrar seu aplicativo.  Elas incluem alterações simples facilmente resolvidas usando os recursos de pesquisa e substituição de um editor ou atualizações mais complicadas que podem exigir mais análise.
 

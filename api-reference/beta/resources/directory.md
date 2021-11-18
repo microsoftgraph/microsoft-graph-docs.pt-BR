@@ -5,14 +5,14 @@ ms.localizationpriority: medium
 author: keylimesoda
 ms.prod: directory-management
 doc_type: resourcePageType
-ms.openlocfilehash: 98a6127991b3eb321a84c6d771ef25b6f4f3f170
-ms.sourcegitcommit: c333953a9188b4cd4a9ab94cbe68871e8f3563e5
+ms.openlocfilehash: 36fbef413478ac31fa4cafbc3f30166d6e318919
+ms.sourcegitcommit: 2456cf3c4117b88afefef139593796a2f919e7cc
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/30/2021
-ms.locfileid: "58696908"
+ms.lasthandoff: 11/18/2021
+ms.locfileid: "61077632"
 ---
-# <a name="directory-resource-type-deleted-items"></a>Tipo de recurso directory (itens excluídos)
+# <a name="directory-resource-type"></a>tipo de recurso de diretório
 
 Namespace: microsoft.graph
 
@@ -24,7 +24,7 @@ Atualmente, a funcionalidade de itens excluídos só tem suporte para os recurso
 
 Herda da [entidade](entity.md).
 
-## <a name="methods"></a>Métodos
+## <a name="methods"></a>Methods
 
 | Método         | Tipo de retorno | Descrição |
 |:---------------|:------------|:------------|
@@ -45,6 +45,8 @@ Herda da [entidade](entity.md).
 | Relação | Tipo   |Descrição|
 |:---------------|:--------|:----------|
 |administrativeUnits|[Coleção administrativeUnit](administrativeunit.md)| Contêiner conceitual para objetos de diretório de grupo e usuário.|
+|attributeSets|[Coleção attributeSet](attributeset.md)| Grupo de definições de atributos de segurança personalizados relacionados.|
+|customSecurityAttributeDefinitions|[Coleção customSecurityAttributeDefinition](customsecurityattributedefinition.md)|Esquema de atributos de segurança personalizados (pares de valores-chave).|
 |deleteditems|Coleção [directoryObject](directoryobject.md)| Itens recentemente excluídos. Somente leitura. Anulável.|
 |featureRolloutPolicies|[Coleção featureRolloutPolicy](featurerolloutpolicy.md)| Anulável.|
 |federationConfigurations|Coleção [identityProviderBase](../resources/identityproviderbase.md) |Configure a federação de domínio com organizações cujo provedor de identidade (IdP) oferece suporte ao protocolo SAML ou WS-Fed.|
@@ -56,15 +58,13 @@ Veja a seguir uma representação JSON do recurso.
 <!-- {
   "blockType": "resource",
   "keyProperty":"id",
-  "optionalProperties": [
-
-  ],
+  "optionalProperties": [],
   "@odata.type": "microsoft.graph.directory"
 }-->
 
 ```json
 {
-  "id": "String (identifier)"
+  "@odata.type": "#microsoft.graph.directory"
 }
 ```
 

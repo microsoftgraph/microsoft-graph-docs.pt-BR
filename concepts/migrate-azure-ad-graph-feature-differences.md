@@ -1,21 +1,21 @@
 ---
-title: Diferenças de recursos entre o Azure Active Directory (Azure AD) Graph e o Microsoft Graph
+title: Diferenças de recursos entre o Azure AD Graph e o Microsoft Graph
 description: Descreve as diferenças de recursos entre Azure Active Directory (Azure AD) Graph API e a API do Microsoft Graph, para ajudar você a migrar aplicativos de forma rápida e fácil.
 author: dkershaw10
 ms.localizationpriority: medium
 ms.prod: applications
-ms.openlocfilehash: a615429eb3887970b00df211f592ec01f2009f23
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: d3efd315c0d91784dd6d389041bf11e75371a97b
+ms.sourcegitcommit: 2456cf3c4117b88afefef139593796a2f919e7cc
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59139146"
+ms.lasthandoff: 11/18/2021
+ms.locfileid: "61077618"
 ---
-# <a name="feature-differences-between-azure-active-directory-azure-ad-graph-and-microsoft-graph"></a>Diferenças de recursos entre o Azure Active Directory (Azure AD) Graph e o Microsoft Graph
+# <a name="feature-differences-between-azure-ad-graph-and-microsoft-graph"></a>Diferenças de recursos entre o Azure AD Graph e o Microsoft Graph
 
 Este artigo faz parte da *etapa 1: analisar as* diferenças de API do processo para [migrar aplicativos.](migrate-azure-ad-graph-planning-checklist.md)
 
-Muitos recursos na Microsoft Graph funcionam de forma semelhante às suas contrapartes do Azure AD Graph. No entanto, alguns foram alterados ou aprimorados. Aqui, você aprenderá a adaptar seus aplicativos para tirar proveito dessas diferenças.  Frequentemente, as alterações são secundárias, mas vale a pena o esforço.
+Muitos recursos na Microsoft Graph funcionam da mesma forma que seus Azure Active Directory (Azure AD) Graph equivalentes. No entanto, alguns foram alterados ou aprimorados. Aqui, você aprenderá a adaptar seus aplicativos para tirar proveito dessas diferenças.  Frequentemente, as alterações são secundárias, mas vale a pena o esforço.
 
 Este artigo explora como o Microsoft Graph lida:
 

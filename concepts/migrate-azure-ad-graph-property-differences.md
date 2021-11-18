@@ -1,21 +1,21 @@
 ---
-title: Diferenças de propriedades entre o Azure Active Directory (Azure AD) Graph e o Microsoft Graph
+title: Diferenças de propriedade entre o Azure AD Graph e o Microsoft Graph
 description: Descreve as diferenças de propriedade entre os recursos do Azure AD Graph (entidades) e o Microsoft Graph, para ajudar a migrar os aplicativos de acordo.
 author: dkershaw10
 ms.localizationpriority: medium
 ms.prod: applications
-ms.openlocfilehash: f060a59ff26e8d8279c3ac4e1e83fde0f7ff25ec
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: fece47dfea3afd007ce148c2a13294b6a89e790d
+ms.sourcegitcommit: 2456cf3c4117b88afefef139593796a2f919e7cc
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59098416"
+ms.lasthandoff: 11/18/2021
+ms.locfileid: "61077653"
 ---
-# <a name="property-differences-between-azure-active-directory-azure-ad-graph-and-microsoft-graph"></a>Diferenças de propriedades entre o Azure Active Directory (Azure AD) Graph e o Microsoft Graph
+# <a name="property-differences-between-azure-ad-graph-and-microsoft-graph"></a>Diferenças de propriedade entre o Azure AD Graph e o Microsoft Graph
 
 Este artigo faz parte da *etapa 1: analisar as* diferenças de API do processo para [migrar aplicativos.](migrate-azure-ad-graph-planning-checklist.md)
 
-Em geral, a melhor maneira de comparar a API de Graph do Azure AD com o Microsoft Graph é comparar os metadados subjacentes para cada serviço, especialmente as descrições de recursos:
+Em geral, a melhor maneira de comparar a API Azure Active Directory (Azure AD) Graph com o Microsoft Graph é comparar os metadados subjacentes para cada serviço, especialmente as descrições de recursos:
 
 - [Metadados do Azure AD Graph metadados](https://graph.windows.net/microsoft.com/$metadata?api-version=1.6)
 - [Metadados beta Graph Microsoft](https://graph.microsoft.com/beta/$metadata)

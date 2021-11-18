@@ -2,15 +2,15 @@
 title: Tipo de recurso managedTenant
 description: Represente as operações disponíveis que interagem com a plataforma de gerenciamento de vários locatários.
 author: isaiahwilliams
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: microsoft-365-lighthouse
 doc_type: resourcePageType
-ms.openlocfilehash: c0929949896eb153a61bf3193d9dab5d57d92496
-ms.sourcegitcommit: e372382019f1a136543eadab02ba70af3921e098
+ms.openlocfilehash: 7689344ee2e42df57a30f95c33628d607895610d
+ms.sourcegitcommit: 2456cf3c4117b88afefef139593796a2f919e7cc
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/13/2021
-ms.locfileid: "53402124"
+ms.lasthandoff: 11/18/2021
+ms.locfileid: "61077130"
 ---
 # <a name="managedtenant-resource-type"></a>Tipo de recurso managedTenant
 
@@ -41,7 +41,6 @@ Nenhum.
 |managementActionTenantDeploymentStatuses|[coleção microsoft.graph.managedTenants.managementActionTenantDeploymentStatus](../resources/managedtenants-managementactiontenantdeploymentstatus.md)|O status de nível de locatário das ações de gerenciamento em locatários gerenciados.|
 |managementIntents|[coleção microsoft.graph.managedTenants.managementIntent](../resources/managedtenants-managementintent.md)|A coleção de intenções de gerenciamento de linha de base entre locatários gerenciados.|
 |managementTemplates|[coleção microsoft.graph.managedTenants.managementTemplate](../resources/managedtenants-managementtemplate.md)|A coleção de modelos de gerenciamento de linha de base entre locatários gerenciados.|
-|riskyUsers|[coleção microsoft.graph.managedTenants.riskyUser](../resources/managedtenants-riskyuser.md)|A coleção de usuários sinalizados para risco em locatários gerenciados.|
 |tenantGroups|[coleção microsoft.graph.managedTenants.tenantGroup](../resources/managedtenants-tenantgroup.md)|A coleção de um grupo lógico de locatários gerenciados usados pela plataforma de gerenciamento de vários locatários.|
 |locatários|[coleção microsoft.graph.managedTenants.tenant](../resources/managedtenants-tenant.md)|A coleção de locatários associados à entidade de gerenciamento.|
 |tenantsCustomizedInformation|[coleção microsoft.graph.managedTenants.tenantCustomizedInformation](../resources/managedtenants-tenantcustomizedinformation.md)|A coleção de informações personalizadas em nível de locatário entre locatários gerenciados.|

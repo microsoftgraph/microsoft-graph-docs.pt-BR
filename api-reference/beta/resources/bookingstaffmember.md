@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: arvindmicrosoft
 ms.prod: bookings
 doc_type: resourcePageType
-ms.openlocfilehash: 4df4584c787c46432a85eb0fcbd61bc11a3531b5
-ms.sourcegitcommit: c7ff992ef63e480d070421ba99b28ee129cb6acb
+ms.openlocfilehash: d31705bb569037f73053c2a9b07e0bc93d5a1d60
+ms.sourcegitcommit: 2456cf3c4117b88afefef139593796a2f919e7cc
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "60696571"
+ms.lasthandoff: 11/18/2021
+ms.locfileid: "61077261"
 ---
 # <a name="bookingstaffmember-resource-type"></a>Tipo de recurso bookingStaffMember
 
@@ -35,8 +35,8 @@ Ao reservar compromissos, a API do Bookings considera as seguintes configuraçõ
 |[Listar membros da equipe](../api/bookingbusiness-list-staffmembers.md) | [coleção bookingStaffMember](bookingstaffmember.md) | Obter uma lista de **objetos bookingStaffMember** no [bookingbusiness especificado.](../resources/bookingbusiness.md) |
 |[Criar bookingStaff](../api/bookingbusiness-post-staffmembers.md) | [coleção bookingStaffMember](bookingstaffmember.md) | Crie um novo **bookingStaffMember** no [bookingbusiness especificado.](../resources/bookingbusiness.md) |
 |[Obter bookingStaffMember](../api/bookingstaffmember-get.md) | [bookingStaffMember](bookingstaffmember.md) |Obter as propriedades e relações de **um bookingStaffMember** no [bookingbusiness especificado.](../resources/bookingbusiness.md)|
-|[Atualizar](../api/bookingstaffmember-update.md) | [bookingStaffMember](bookingstaffmember.md)    |Atualize as propriedades de **um bookingStaffMember** no [bookingbusiness especificado.](../resources/bookingbusiness.md)|
-|[Excluir](../api/bookingstaffmember-delete.md) | Nenhum |Exclua um membro da equipe no [bookingbusiness especificado.](../resources/bookingbusiness.md) |
+|[Atualização](../api/bookingstaffmember-update.md) | [bookingStaffMember](bookingstaffmember.md)    |Atualize as propriedades de **um bookingStaffMember** no [bookingbusiness especificado.](../resources/bookingbusiness.md)|
+|[Delete](../api/bookingstaffmember-delete.md) | Nenhum |Exclua um membro da equipe no [bookingbusiness especificado.](../resources/bookingbusiness.md) |
 
 ## <a name="properties"></a>Propriedades
 | Propriedade     | Tipo   |Descrição|
@@ -45,10 +45,10 @@ Ao reservar compromissos, a API do Bookings considera as seguintes configuraçõ
 |colorIndex|Int32|Identifica uma cor para representar o membro da equipe. A cor corresponde à paleta de cores na página **Detalhes da** Equipe no aplicativo Bookings.|
 |displayName|String|O nome do membro da equipe, conforme exibido para os clientes. Obrigatório.|
 |emailAddress|String|O endereço de email do membro da equipe. Isso pode estar no mesmo Microsoft 365 locatário que a empresa ou em um domínio de email diferente. Esse endereço de email pode ser usado **se a propriedade sendConfirmationsToOwner** estiver definida como true na política de agendamento da empresa. Obrigatório.|
-|id|String| A ID do membro da equipe, em um formato GUID. Somente leitura.|
-|role|cadeia de caracteres| A função do membro da equipe na empresa. Os valores possíveis são: `guest`, `administrator`, `viewer`, `externalGuest`. Obrigatório.|
+|id|Cadeia de caracteres| A ID do membro da equipe, em um formato GUID. Somente leitura.|
+|role|string| A função do membro da equipe na empresa. Os valores possíveis são: `guest` , , , , e `administrator` `viewer` `externalGuest` `scheduler` `member` . Obrigatório.|
 |timeZone|Cadeia de caracteres|O fuso horário do membro da equipe. Para uma lista de valores possíveis, consulte [dateTimeTimeZone](datetimetimezone.md).|
-|useBusinessHours|Booliano|True significa que a disponibilidade do membro da equipe está conforme especificado na **propriedade businessHours** da empresa. False significa que a disponibilidade é determinada pela configuração da propriedade **workingHours** do membro da equipe.|
+|useBusinessHours|Boolean|True significa que a disponibilidade do membro da equipe está conforme especificado na **propriedade businessHours** da empresa. False significa que a disponibilidade é determinada pela configuração da propriedade **workingHours** do membro da equipe.|
 |workingHours|[Coleção bookingWorkHours](bookingworkhours.md)|O intervalo de horas a cada dia da semana que o membro da equipe está disponível para reserva. Por padrão, eles são inicializados para serem iguais à **propriedade businessHours** da empresa.|
 
 ## <a name="relationships"></a>Relações

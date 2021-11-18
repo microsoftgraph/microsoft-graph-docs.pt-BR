@@ -1,21 +1,21 @@
 ---
-title: Diferenças de método entre Azure Active Directory (Azure AD) Graph Microsoft Graph
+title: Diferenças de método entre o Azure AD Graph e o Microsoft Graph
 description: Descreve as diferenças de método entre Azure Active Directory (Azure AD) Graph API e API Graph Microsoft (REST).
 author: dkershaw10
 ms.localizationpriority: medium
 ms.prod: applications
-ms.openlocfilehash: fab1da340ca4a7703f2434f0d3a30b8e1b08821d
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: a9b9bdd59441f804a6a7314db3a1ae0a44d4cba7
+ms.sourcegitcommit: 2456cf3c4117b88afefef139593796a2f919e7cc
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59139090"
+ms.lasthandoff: 11/18/2021
+ms.locfileid: "61077611"
 ---
-# <a name="method-differences-between-azure-active-directory-azure-ad-and-microsoft-graph"></a>Diferenças de método entre Azure Active Directory (Azure AD) e Microsoft Graph
+# <a name="method-differences-between-azure-ad-graph-and-microsoft-graph"></a>Diferenças de método entre o Azure AD Graph e o Microsoft Graph
 
 Este artigo faz parte da *etapa 1: analisar as* diferenças de API do processo para [migrar aplicativos.](migrate-azure-ad-graph-planning-checklist.md)
 
-Alguns métodos do Azure AD Graph também foram alterados.  Se um  método não for mostrado nesta lista, ele já estará disponível na versão [v1.0](/graph/api/overview) do Microsoft Graph, com exatamente o mesmo nome do Azure AD Graph.
+Alguns métodos Azure Active Directory (Azure AD) Graph também foram alterados.  Se um  método não for mostrado nesta lista, ele já estará disponível na versão [v1.0](/graph/api/overview) do Microsoft Graph, com exatamente o mesmo nome do Azure AD Graph.
 
 |Azure AD Graph. <br>Método (v1.6) |Microsoft Graph<br>(recurso/método)|Comentários|
 |---|---|---|

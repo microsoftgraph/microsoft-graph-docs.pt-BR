@@ -1,24 +1,24 @@
 ---
-title: Migrar Azure Active Directory (Azure AD) Graph aplicativos para o Microsoft Graph
+title: Migrar aplicativos do Azure AD Graph microsoft Graph
 description: Descreve como migrar aplicativos de API Azure Active Directory (Azure AD) para a API Graph Microsoft.
 author: dkershaw10
 ms.localizationpriority: medium
 ms.prod: applications
-ms.openlocfilehash: 3fe22f5e342cd3b46d7a6a2559084dbf714e8cf5
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 15158d916166f26594c13c5dfc48942cef473c91
+ms.sourcegitcommit: 2456cf3c4117b88afefef139593796a2f919e7cc
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59148549"
+ms.lasthandoff: 11/18/2021
+ms.locfileid: "61077604"
 ---
-# <a name="migrate-azure-active-directory-azure-ad-graph-apps-to-microsoft-graph"></a>Migrar Azure Active Directory (Azure AD) Graph aplicativos para o Microsoft Graph
+# <a name="migrate-azure-ad-graph-apps-to-microsoft-graph"></a>Migrar aplicativos do Azure AD Graph microsoft Graph
 
 > [!WARNING]
 > **Azure Active Directory (Azure AD) Graph está preterido**. Para evitar a perda de funcionalidade, migre seus aplicativos para o Microsoft Graph antes de 30 de junho de 2022, quando os pontos de extremidade da API do Azure AD Graph deixarão de responder às solicitações.
 >
 > A Microsoft continuará com o suporte técnico e aplicará correções de segurança para o Azure AD Graph até 30 de junho de 2022, quando todas as funcionalidades e suporte terminarão. Se você não migrar seus aplicativos para a Microsoft Graph antes de 30 de junho de 2022, você colocará sua funcionalidade e estabilidade em risco.
 
-O Azure AD Graph está preterido. Atualize seus aplicativos do Azure AD Graph usar o Microsoft Graph agora.
+[O Azure AD Graph está preterido.](https://techcommunity.microsoft.com/t5/azure-active-directory-identity/update-your-applications-to-use-microsoft-authentication-library/ba-p/1257363) Atualize seus aplicativos do Azure AD Graph usar o Microsoft Graph agora.
 
 ## <a name="why-use-microsoft-graph"></a>Por que usar o Microsoft Graph?
 

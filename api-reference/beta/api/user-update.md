@@ -5,12 +5,12 @@ author: jpettere
 ms.localizationpriority: medium
 ms.prod: users
 doc_type: apiPageType
-ms.openlocfilehash: 9c724debf410248fddc9b8b2038db0a6fd749c3a
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: 1a4475a8977f9465f38a256f9166fd9511f5bb7d
+ms.sourcegitcommit: 2456cf3c4117b88afefef139593796a2f919e7cc
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "61031387"
+ms.lasthandoff: 11/18/2021
+ms.locfileid: "61077278"
 ---
 # <a name="update-user"></a>Atualizar usuário
 
@@ -61,7 +61,8 @@ No corpo da solicitação, forneça os valores para os campos relevantes que dev
 | companyName | String | O nome da empresa em que o usuário está associado. Essa propriedade pode ser útil para descrever a empresa de onde procede um usuário externo. O comprimento máximo do nome da empresa é 64 caracteres. |
 | consentProvidedForMinor | [consentProvidedForMinor](../resources/user.md#consentprovidedforminor-values) | Define se o consentimento foi obtido para menores. Valores permitidos: `null`, `granted`, `denied` e `notRequired`. Confira as [definições de propriedades da faixa etária legal](../resources/user.md#legal-age-group-property-definitions) para obter mais informações. |
 |country|Cadeia de caracteres|O país/região em que o usuário está localizado; por exemplo, `US` ou `UK`.|
-|department|String|O nome do departamento no qual o usuário trabalha.|
+|customSecurityAttributes|[customSecurityAttributeValue](../resources/customsecurityattributevalue.md)|Um tipo complexo aberto que contém o valor de um atributo de segurança personalizado atribuído a um objeto de diretório.<br/><br/>Para atualizar essa propriedade, a entidade de chamada deve receber a função Administrador de Atribuição de Atributo e receber a permissão *CustomSecAttributeAssignment.ReadWrite.All.*|
+|departamento|String|O nome do departamento no qual o usuário trabalha.|
 |displayName|String|O nome exibido no catálogo de endereços do usuário. É geralmente a combinação do nome, da inicial do meio e do sobrenome do usuário. Essa propriedade é obrigatória quando um usuário é criado e não pode ser apagado durante atualizações.|
 |employeeId|String|O identificador de funcionário atribuído ao usuário pela organização.|
 | employeeType | String | Captura o tipo de trabalhador corporativo. Por exemplo, `Employee`, `Contractor`, `Consultant` ou `Vendor`.|
@@ -268,6 +269,51 @@ Content-type: application/json
 ```http
 HTTP/1.1 204 No Content
 ```
+
+### <a name="example-4-assign-a-custom-security-attribute-with-a-string-value-to-a-user"></a>Exemplo 4: Atribuir um atributo de segurança personalizado com um valor de cadeia de caracteres a um usuário
+
+O exemplo a seguir mostra como atribuir um atributo de segurança personalizado com um valor de cadeia de caracteres a um usuário.
+
++ Conjunto de atributos: `Engineering`
++ Atributo: `ProjectDate`
++ Tipo de dados de atributo: Cadeia de caracteres
++ Valor do atributo: `"2022-10-01"`
+
+Para atribuir atributos de segurança personalizados, a entidade de chamada deve ter a função Administrador de Atribuição de Atributo e a permissão *CustomSecAttributeAssignment.ReadWrite.All.*
+
+Para obter mais exemplos para usuários, consulte [Assign, update ou remove custom security attributes using the Microsoft Graph API](/graph/custom-security-attributes-examples).
+
+#### <a name="request"></a>Solicitação
+
+
+<!-- {
+  "blockType": "request",
+  "name": "assign_user_customsecurityattribute_string"
+}-->
+```http
+PATCH https://graph.microsoft.com/beta/users/{id}
+Content-type: application/json
+
+{
+    "customSecurityAttributes":
+    {
+        "Engineering":
+        {
+            "@odata.type":"#Microsoft.DirectoryServices.CustomSecurityAttributeValue",
+            "ProjectDate":"2022-10-01"
+        }
+    }
+}
+```
+
+#### <a name="response"></a>Resposta
+<!-- {
+  "blockType": "response"
+} -->
+```http
+HTTP/1.1 204 No Content
+```
+
 
 ## <a name="see-also"></a>Confira também
 
