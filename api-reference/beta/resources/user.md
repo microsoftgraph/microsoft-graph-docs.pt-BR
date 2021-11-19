@@ -5,12 +5,12 @@ author: jpettere
 ms.localizationpriority: high
 ms.prod: users
 doc_type: resourcePageType
-ms.openlocfilehash: f588cb5a28568f59d031f7b147547d3dd91d894b
-ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
+ms.openlocfilehash: 7ab7e332f3a3e639f68430271b780e832db260f9
+ms.sourcegitcommit: 2456cf3c4117b88afefef139593796a2f919e7cc
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/12/2021
-ms.locfileid: "60941873"
+ms.lasthandoff: 11/18/2021
+ms.locfileid: "61076801"
 ---
 # <a name="user-resource-type"></a>Tipo de recurso de usuário
 
@@ -180,6 +180,7 @@ Esse recurso permite:
 | country | Cadeia de caracteres | O país/região em que o usuário está localizado; por exemplo, `US` ou `UK`. O comprimento máximo é de 128 caracteres. <br><br>Suporte `$filter` (`eq`, `ne`, `NOT`, `ge`, `le`, `in`, `startsWith`, e `eq` no `null` valores). |
 | createdDateTime | DateTimeOffset | A data e hora que o usuário foi criado. Não é possível modificar o valor e ele é preenchido automaticamente quando a entidade é criada. O tipo DateTimeOffset representa informações de data e hora usando o formato ISO 8601 e está sempre no horário UTC. A propriedade é anulável. Um valor nulo indica que uma hora de criação exata não pode ser determinada pelo usuário. Somente leitura. <br><br>Suporta `$filter` (`eq`, `ne`, `NOT` , `ge`, `le`, `in`). |
 | creationType | String | Indica se a conta do usuário foi criada por meio de um dos seguintes métodos: <br/> <ul><li>Como uma conta corporativa ou de estudante (`null`). <li>Como uma conta externa (`Invitation`). <li>Como uma conta local para um locatário do Azure Active Directory B2C (`LocalAccount`). <li>Por meio da inscrição de autoatendimento feita por um usuário interno usando a verificação por email (`EmailVerified`). <li>Por meio da inscrição de autoatendimento feita por um usuário externo que se inscreveu usando um link que faz parte de um fluxo do usuário (`SelfServiceSignUp`). </ul> <br>Somente leitura.<br>Suporte `$filter` (`eq`, `ne`, `NOT` e `in`). |
+|customSecurityAttributes|[customSecurityAttributeValue](../resources/customsecurityattributevalue.md)|Um tipo complexo aberto que contém o valor de um atributo de segurança personalizado atribuído a um objeto do diretório. Anulável. <br><br>Retornado apenas em `$select`. Suporta `$filter` (`eq`, `ne`, `NOT`, `startsWith`).|
 | deletedDateTime | DateTimeOffset | A data e hora que o usuário foi excluído. <br><br>Suporta `$filter` (`eq`, `ne`, `NOT`, `ge`, `le`, e `in`). |
 | departamento | String | O nome do departamento no qual o usuário trabalha. O comprimento máximo é de 64 caracteres.<br><br>Suporte `$filter` (`eq`, `ne`, `NOT` , `ge`, `le`, `in`, e `eq` no `null` valores). |
 | displayName | String | O nome exibido no catálogo de endereços para o usuário. Geralmente é a combinação do nome do usuário, inicial do meio e sobrenome. Esta propriedade é necessária quando um usuário é criado e não pode ser limpa durante as atualizações. O comprimento máximo é de 256 caracteres.<br><br>Suporte `$filter` (`eq`, `ne`, `NOT` , `ge`, `le`, `in`, `startsWith`, e `eq` no `null` valores), `$orderBy`, e `$search`.|
@@ -387,6 +388,9 @@ Veja a seguir uma representação JSON do recurso
   "country": "String",
   "createdDateTime": "2019-02-07T21:53:13.067Z",
   "creationType": "String",
+  "customSecurityAttributes": {
+    "@odata.type": "microsoft.graph.customSecurityAttributeValue"
+  },
   "deletedDateTime": "String (timestamp)",
   "department": "String",
   "displayName": "String",

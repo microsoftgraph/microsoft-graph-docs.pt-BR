@@ -5,12 +5,12 @@ author: sureshja
 ms.localizationpriority: high
 ms.prod: applications
 doc_type: apiPageType
-ms.openlocfilehash: c171eb64c240f60d2070a64bf8ab90dca1d4539b
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: c8ca0c7d00e60d16abfc73530560bc4cb0900642
+ms.sourcegitcommit: 2456cf3c4117b88afefef139593796a2f919e7cc
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "61002544"
+ms.lasthandoff: 11/18/2021
+ms.locfileid: "61076958"
 ---
 # <a name="get-serviceprincipal"></a>Obter um servicePrincipal
 
@@ -58,7 +58,11 @@ Não forneça um corpo de solicitação para esse método.
 Se bem-sucedido, este método retorna um código de resposta `200 OK` e um objeto [servicePrincipal](../resources/serviceprincipal.md) no corpo da resposta.
 
 ## <a name="examples"></a>Exemplos
-### <a name="request"></a>Solicitação
+
+### <a name="example-1-get-the-properties-of-the-specified-service-principal"></a>Exemplo 1: Obter as propriedades da entidade de serviço especificada
+
+#### <a name="request"></a>Solicitação
+
 Este é um exemplo da solicitação.
 
 
@@ -94,7 +98,7 @@ GET https://graph.microsoft.com/beta/servicePrincipals/{id}
 ---
 
 
-### <a name="response"></a>Resposta
+#### <a name="response"></a>Resposta
 Veja a seguir um exemplo da resposta.
 
 >**Observação:** o objeto de resposta mostrado aqui pode ser encurtado para legibilidade.
@@ -169,3 +173,96 @@ Content-type: application/json
 }
 -->
 
+### <a name="example-2-get-the-custom-security-attribute-assignments-of-the-specified-service-principal"></a>Exemplo 2: Obter as atribuições de atributo de segurança personalizados da entidade de serviço especificada
+
+O exemplo a seguir obtém os atributos de segurança personalizados da entidade de serviço especificada.
+
+Atributo nº 1
+
++ Conjunto de atributos: `Engineering`
++ Atributo: `Project`
++ Tipo de dados de atributo: Coleção de cadeias de caracteres
++ Valor do atributo: `["Baker","Cascade"]`
+
+Atributo nº 2
+
++ Conjunto de atributos: `Engineering`
++ Atributo: `CostCenter`
++ Tipo de dados de atributo: Coleção de inteiros
++ Valor do atributo: `[1001]`
+
+Atributo nº 3
+
++ Conjunto de atributos: `Engineering`
++ Atributo: `Certification`
++ Tipo de dados de atributo: Booliano
++ Valor do atributo: `true`
+
+Atributo nº 4
+
++ Conjunto de atributos: `Marketing`
++ Atributo: `Level`
++ Tipo de dados de atributo: Cadeia de caracteres
++ Valor do atributo: `"Public"`
+
+Para obter atribuições de atributo de segurança personalizados, a entidade de chamada deve receber a função Leitor de Atribuição de Atributos ou Administrador de Atribuição de Atributos e deve receber a permissão *CustomSecAttributeAssignment.ReadWrite.All*.
+
+#### <a name="request"></a>Solicitação
+
+
+
+<!-- {
+  "blockType": "request",
+  "name": "get_serviceprincipal_customsecurityattributes"
+}-->
+```http
+GET https://graph.microsoft.com/beta/servicePrincipals/{id}?$select=customSecurityAttributes
+```
+
+
+#### <a name="response"></a>Resposta
+
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.servicePrincipal"
+} -->
+```http
+HTTP/1.1 200 OK
+Content-type: application/json
+
+{
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#servicePrincipals(customSecurityAttributes)/$entity",
+    "customSecurityAttributes": {
+        "Engineering": {
+            "@odata.type": "#microsoft.graph.customSecurityAttributeValue",
+            "Project@odata.type": "#Collection(String)",
+            "Project": [
+                "Baker",
+                "Cascade"
+            ],
+            "CostCenter@odata.type": "#Collection(Int32)",
+            "CostCenter": [
+                1001
+            ],
+            "Certification": true
+        },
+        "Marketing": {
+            "@odata.type": "#microsoft.graph.customSecurityAttributeValue",
+            "Level": "Public"
+        }
+    }
+}
+```
+
+Se não houver atributos de segurança personalizados atribuídos à entidade de serviço ou se a entidade de chamada não tiver acesso, a resposta será semelhante a:
+
+```http
+HTTP/1.1 200 OK
+Content-type: application/json
+
+{
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#servicePrincipals(customSecurityAttributes)/$entity",
+    "customSecurityAttributes": null
+}
+```
