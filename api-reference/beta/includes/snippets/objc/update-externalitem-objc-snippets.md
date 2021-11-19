@@ -1,11 +1,11 @@
 ---
 description: Arquivo gerado automaticamente. NÃO MODIFICAR
-ms.openlocfilehash: ab65b65b040b58ca6a5b31834614fd6bf6d05d37
-ms.sourcegitcommit: c7ff992ef63e480d070421ba99b28ee129cb6acb
+ms.openlocfilehash: 04396de82f7c3bfce48dbce891c1b0f138698db8
+ms.sourcegitcommit: 2456cf3c4117b88afefef139593796a2f919e7cc
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "60694510"
+ms.lasthandoff: 11/18/2021
+ms.locfileid: "61104150"
 ---
 ```objc
 
@@ -22,7 +22,6 @@ MSGraphExternalConnectorsAcl *acl = [[MSGraphExternalConnectorsAcl alloc] init];
 [acl setType: [MSGraphExternalConnectorsAclType everyone]];
 [acl setValue:@"67a141d8-cf4e-4528-ba07-bed21bfacd2d"];
 [acl setAccessType: [MSGraphExternalConnectorsAccessType grant]];
-[acl setIdentitySource: [MSGraphExternalConnectorsIdentitySourceType azureActiveDirectory]];
 [aclList addObject: acl];
 [externalItem setAcl:aclList];
 
