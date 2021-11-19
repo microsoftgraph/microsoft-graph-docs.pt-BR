@@ -4,12 +4,12 @@ description: O Microsoft Graph expõe as permissões granulares que controlam o 
 author: jackson-woods
 ms.localizationpriority: high
 ms.custom: graphiamtop20, scenarios:getting-started
-ms.openlocfilehash: c643a85629e2cd86a17529dfa4109330d80002cd
-ms.sourcegitcommit: c7ff992ef63e480d070421ba99b28ee129cb6acb
+ms.openlocfilehash: 2be999743299d7023ea4e9b67a857d429304b7d1
+ms.sourcegitcommit: 2456cf3c4117b88afefef139593796a2f919e7cc
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "60695034"
+ms.lasthandoff: 11/18/2021
+ms.locfileid: "61077597"
 ---
 # <a name="microsoft-graph-permissions-reference"></a>Referência de permissões do Microsoft Graph
 
@@ -663,6 +663,26 @@ Para cenários mais complexos que envolvem várias permissões, confira [Cenári
 * _Contacts.ReadWrite_: Adicionar contatos à pasta raiz de qualquer usuário da organização (`POST /users/{id | userPrincipalName}/contacts`).
 
 Para cenários mais complexos que envolvem várias permissões, confira [Cenários de permissões](#permission-scenarios).
+
+---
+
+## <a name="custom-security-attributes-permissions"></a>Permissões de atributos de segurança personalizados
+
+#### <a name="delegated-permissions"></a>Permissões delegadas
+
+|   Permissão    |  Exibir Cadeia de Caracteres   |  Descrição | Consentimento Obrigatório do Administrador | Suporte da conta da Microsoft |
+|:----------------|:------------------|:-------------|:-----------------------|:--------------|
+| _CustomSecAttributeAssignment.ReadWrite.All_ | Ler e escrever atribuições de atributos de segurança personalizados | Permite que o aplicativo leia e grave atribuições de atributos de segurança personalizados para todos os principais no locatário em nome de um usuário conectado. | Sim | Não |
+| _CustomSecAttributeDefinition.ReadWrite.All_ | Ler e escrever definições de atributos de segurança personalizados | Permite que o aplicativo leia e grave definições de atributo de segurança personalizadas para o locatário em nome de um usuário conectado. | Sim | Não |
+
+#### <a name="application-permissions"></a>Permissões de aplicativos
+
+|   Permissão    |  Exibir Cadeia de Caracteres   |  Descrição | Consentimento Obrigatório do Administrador |
+|:-----------------------------|:-----------------------------------------|:-----------------|:-----------------|
+| _CustomSecAttributeAssignment.ReadWrite.All_ | Ler e escrever atribuições de atributos de segurança personalizados | Permite que o aplicativo leia e grave atribuições de atributos de segurança personalizados para todos os principais no locatário sem um usuário conectado. | Sim |
+| _CustomSecAttributeDefinition.ReadWrite.All_ | Ler e escrever definições de atributos de segurança personalizados | Permite que o aplicativo leia e grave definições de atributos de segurança personalizados para o locatário sem um usuário conectado. | Sim |
+
+---
 
 ## <a name="device-permissions"></a>Permissões de dispositivos
 
