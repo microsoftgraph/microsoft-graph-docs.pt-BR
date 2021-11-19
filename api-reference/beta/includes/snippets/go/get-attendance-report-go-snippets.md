@@ -1,16 +1,16 @@
 ---
 description: Arquivo gerado automaticamente. NÃO MODIFICAR
-ms.openlocfilehash: 6d63c1aec5f4f746cad768b0e7ea63d75ef3b199
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: 60c09b595334ef41c06400772cd842087e85ee57
+ms.sourcegitcommit: 2456cf3c4117b88afefef139593796a2f919e7cc
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "60980789"
+ms.lasthandoff: 11/18/2021
+ms.locfileid: "61101669"
 ---
 ```go
 
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter);
+graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
 onlineMeetingId := "onlineMeeting-id"
 result, err := graphClient.Me().OnlineMeetingsById(&onlineMeetingId).MeetingAttendanceReport().Get(options)
