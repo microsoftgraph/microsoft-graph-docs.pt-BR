@@ -5,12 +5,12 @@ author: mmast-msft
 ms.localizationpriority: medium
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: e6261ec39716b42fb8203d671f23513e8036105c
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: 3c5b77951660c03fad0803d4fd6a4424032b8c30
+ms.sourcegitcommit: 70b3caded085ba8ef15e389f81fa005506f1e2fb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "61028696"
+ms.lasthandoff: 11/20/2021
+ms.locfileid: "61131950"
 ---
 # <a name="list-schools"></a>Listar escolas
 
@@ -27,7 +27,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 | Tipo de permissão                        | Permissões (da com menos para a com mais privilégios) |
 | :------------------------------------- | :------------------------------------------ |
 | Delegado (conta corporativa ou de estudante)     | EduRoster.ReadBasic                         |
-| Delegado (conta pessoal da Microsoft) | Sem suporte                               |
+| Delegado (conta pessoal da Microsoft) | Sem suporte.                              |
 | Aplicativo                            | EduRoster.Read.All, EduRoster.ReadWrite.All |
 
 ## <a name="http-request"></a>Solicitação HTTP
@@ -57,7 +57,7 @@ Se bem-sucedido, esse método retornará um código de resposta `200 OK` e uma c
 
 ## <a name="example"></a>Exemplo
 
-##### <a name="request"></a>Solicitação
+### <a name="request"></a>Solicitação
 
 Este é um exemplo de solicitação.
 
@@ -93,7 +93,7 @@ GET https://graph.microsoft.com/beta/education/classes/11014/schools
 
 ---
 
-##### <a name="response"></a>Resposta
+### <a name="response"></a>Resposta
 
 Este é um exemplo de resposta.
 

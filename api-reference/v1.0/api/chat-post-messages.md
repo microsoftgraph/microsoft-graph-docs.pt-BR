@@ -5,18 +5,18 @@ ms.localizationpriority: medium
 author: RamjotSingh
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: c2d3ffbecb58d01ab1fa5a8e18465f397773c9c2
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: 8639f86ae3d791f082c027abe101576994611606
+ms.sourcegitcommit: 70b3caded085ba8ef15e389f81fa005506f1e2fb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "60996438"
+ms.lasthandoff: 11/20/2021
+ms.locfileid: "61131943"
 ---
 # <a name="send-message-in-a-chat"></a>Enviar mensagem em um chat
 
 Namespace: microsoft.graph
 
-Envie um [novo chatMessage](../resources/chatmessage.md) no chat [especificado](../resources/chat.md). Essa API não pode criar um novo chat; você deve usar o [método de chats de](chat-list-messages.md) lista para recuperar a ID de um chat existente antes de criar uma mensagem de chat.
+Envie um [novo chatMessage](../resources/chatmessage.md) no chat [especificado](../resources/chat.md). Essa API não pode criar um novo chat; você deve usar o [método de chats](chat-list.md) de lista para recuperar a ID de um chat existente antes de criar uma mensagem de chat.
 
 > **Observação**: não recomendamos que você use essa API para migração de dados. Ele não tem a produtividade necessária para uma migração típica.
 

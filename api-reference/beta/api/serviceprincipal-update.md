@@ -5,12 +5,12 @@ author: sureshja
 ms.localizationpriority: high
 doc_type: apiPageType
 ms.prod: applications
-ms.openlocfilehash: 257851e2f909af9111a23cd6f0444684d117e67f
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: 4e232cb87bdd0424e735cbcb52b9b4615d567e96
+ms.sourcegitcommit: 2456cf3c4117b88afefef139593796a2f919e7cc
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "61031819"
+ms.lasthandoff: 11/18/2021
+ms.locfileid: "61077304"
 ---
 # <a name="update-serviceprincipal"></a>Atualizar servicePrincipal
 
@@ -49,14 +49,15 @@ No corpo da solicitação, forneça os valores para os campos relevantes que dev
 | Propriedade     | Tipo |Descrição|
 |:---------------|:--------|:----------|
 |accountEnabled|Boolean| **True** se a entidade de serviço estiver habilitada; caso contrário, **false**.|
-| addIns | [addIn](../resources/addin.md) | Define o comportamento personalizado que um serviço de consumo pode usar para chamar um aplicativo em contextos específicos. Por exemplo, aplicativos que podem renderizar fluxos de arquivo [podem definir a propriedade addIns](/onedrive/developer/file-handlers/?view=odsp-graph-online) para a funcionalidade "FileHandler". Isso permitirá que os serviços como o Microsoft 365 chamem o aplicativo no contexto de um documento no qual o usuário esteja trabalhando.|
+| addIns | [addIn](../resources/addin.md) | Define o comportamento personalizado que um serviço de consumo pode usar para chamar um aplicativo em contextos específicos. Por exemplo, aplicativos que podem renderizar fluxos de arquivo [podem definir a propriedade addIns](/onedrive/developer/file-handlers/) para a funcionalidade "FileHandler". Isso permitirá que os serviços como o Microsoft 365 chamem o aplicativo no contexto de um documento no qual o usuário esteja trabalhando.|
 |alternativeNames|Coleção de cadeias de caracteres| Usado para recuperar entidades de serviço por assinatura, identificar grupo de recursos e IDs de recursos completos de [identidades gerenciadas](https://aka.ms/azuremanagedidentity).|
 |appRoleAssignmentRequired|Boolean|Especifica se um **appRoleAssignment** de um usuário ou grupo é necessário antes que o Azure AD emita um token de usuário ou de acesso ao aplicativo. Não anulável. |
 |appRoles|[appRole](../resources/approle.md) collection|As funções do aplicativo expostas pelo aplicativo associado. Para obter mais informações, confira a definição da propriedade **appRoles** no recurso [aplicativo](../resources/application.md). Não anulável. |
+|customSecurityAttributes|[customSecurityAttributeValue](../resources/customsecurityattributevalue.md)|Um tipo complexo aberto que contém o valor de um atributo de segurança personalizado atribuído a um objeto de diretório.<br/><br/>Para atualizar este imóvel, o responsável pela chamada deve ser designado como Administrador de Atribuição de Atributos e deve receber a permissão *CustomSecAttributeAssignment.ReadWrite.All*.|
 |displayName|String|O nome de exibição da entidade de serviço.|
 |homepage|Cadeia de caracteres|Página inicial ou página de aterrissagem do aplicativo.|
 |keyCredentials|[keyCredential](../resources/keycredential.md) collection|A coleta de principais credenciais associadas ao diretor de serviços. Não pode ser anulado.            |
-|loginUrl|String|Especifica a URL na qual o provedor de serviços redireciona o usuário para a autenticação do Azure AD. O Azure AD usa a URL para iniciar o aplicativo do Microsoft 365 ou o Azure AD My Apps. Quando em branco, o Azure AD executa o logon iniciado pelo IdP de aplicativos configurados com o [logon único baseado em SAML](/azure/active-directory/manage-apps/what-is-single-sign-on#saml-sso). O usuário inicia o aplicativo do Microsoft 365, o Azure AD My Apps ou a URL de SSO do Azure AD.|
+|loginUrl|Cadeia de caracteres|Especifica a URL na qual o provedor de serviços redireciona o usuário para a autenticação do Azure AD. O Azure AD usa a URL para iniciar o aplicativo do Microsoft 365 ou o Azure AD My Apps. Quando em branco, o Azure AD executa o logon iniciado pelo IdP de aplicativos configurados com o [logon único baseado em SAML](/azure/active-directory/manage-apps/what-is-single-sign-on#saml-sso). O usuário inicia o aplicativo do Microsoft 365, o Azure AD My Apps ou a URL de SSO do Azure AD.|
 |logoutUrl|String| Especifica a URL que será usada pela autorização do serviço da Microsoft para fazer logoff de um usuário usando protocolos de logoff [front-channel](https://openid.net/specs/openid-connect-frontchannel-1_0.html), [back-channel](https://openid.net/specs/openid-connect-backchannel-1_0.html) ou SAML.|
 |NotificationEmailAddresses|Coleção de cadeias de caracteres|Especifica a lista de endereços de email para os quais o Azure AD envia uma notificação quando o certificado ativo está próximo da data de validade. Isso é apenas para os certificados usados ​​para assinar o token SAML emitido para aplicativos da Galeria do Azure AD.|
 |publishedPermissionScopes|coleção [permissionScope](../resources/permissionScope.md)|As permissões OAuth 2.0 expostas pelo aplicativo associado. Para obter mais informações, confira a definição da propriedade **oauth2PermissionScopes** no recurso [aplicativo](../resources/application.md). Não anulável.            |
@@ -73,8 +74,12 @@ No corpo da solicitação, forneça os valores para os campos relevantes que dev
 ## <a name="response"></a>Resposta
 
 Se bem-sucedido, este método retorna um código de resposta `204 No Content` e um objeto atualizado [servicePrincipal](../resources/serviceprincipal.md) no corpo da resposta.
+
 ## <a name="examples"></a>Exemplos
-### <a name="request"></a>Solicitação
+
+### <a name="example-1-update-properties-of-the-specified-service-principal"></a>Exemplo 1: Propriedades de atualização do princípio de serviço especificado
+
+#### <a name="request"></a>Solicitação
 Este é um exemplo da solicitação.
 
 
@@ -115,7 +120,7 @@ Content-type: application/json
 ---
 
 
-### <a name="response"></a>Resposta
+#### <a name="response"></a>Resposta
 Aqui está um exemplo da resposta. Observação: o objeto de resposta mostrado aqui pode ser reduzido para facilitar a leitura.
 <!-- {
   "blockType": "response"
@@ -140,4 +145,47 @@ HTTP/1.1 204 No Content
 -->
 
 
+### <a name="example-2-assign-a-custom-security-attribute-with-a-string-value-to-a-service-principal"></a>Exemplo 2: atribuir um atributo de segurança personalizado com um valor de cadeia de caracteres a um principal de serviço
+
+O exemplo a seguir mostra como atribuir um atributo de segurança customizado com um valor de cadeia de caracteres a um principal de serviço.
+
++ Conjunto de atributos: `Engineering`
++ Atributo: `ProjectDate`
++ Tipo de dados de atributo: cadeia de caracteres
++ Valor do atributo: `"2022-10-01"`
+
+Para atribuir atributos de segurança personalizados, o principal de chamada deve ser atribuído à função de Administrador de Atribuição de Atributo e deve receber a permissão *CustomSecAttributeAssignment.ReadWrite.All*.
+
+Para outros exemplos similares para usuários, veja [Atribuir, atualizar ou remover atributos de segurança personalizados usando a API gráfica da Microsoft](/graph/custom-security-attributes-examples).
+
+#### <a name="request"></a>Solicitação
+
+
+<!-- {
+  "blockType": "request",
+  "name": "assign_serviceprincipal_customsecurityattribute_string"
+}-->
+```http
+PATCH https://graph.microsoft.com/beta/servicePrincipals/{id}
+Content-type: application/json
+
+{
+    "customSecurityAttributes":
+    {
+        "Engineering":
+        {
+            "@odata.type":"#Microsoft.DirectoryServices.CustomSecurityAttributeValue",
+            "ProjectDate":"2022-10-01"
+        }
+    }
+}
+```
+
+#### <a name="response"></a>Resposta
+<!-- {
+  "blockType": "response"
+} -->
+```http
+HTTP/1.1 204 No Content
+```
 

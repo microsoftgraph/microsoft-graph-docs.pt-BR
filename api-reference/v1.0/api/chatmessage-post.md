@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: RamjotSingh
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 8cc9a6992d988473827e2253e992e9a85e59fa3b
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: 5c21b44e676335491f612816711b33b47988412b
+ms.sourcegitcommit: 70b3caded085ba8ef15e389f81fa005506f1e2fb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "61006771"
+ms.lasthandoff: 11/20/2021
+ms.locfileid: "61131824"
 ---
 # <a name="send-chatmessage-in-a-channel-or-a-chat"></a>Enviar chatMessage em um canal ou chat
 
@@ -31,7 +31,9 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |:---------------------------------------|:--------------------------------------------|
 | Delegado (conta corporativa ou de estudante)     | ChannelMessage.Send |
 | Delegado (conta pessoal da Microsoft) | Sem suporte. |
-| Aplicativo                            | Sem suporte. |
+| Aplicativo                            | Teamwork.Migrate.All |
+
+> **Observação**: as permissões de aplicativo só *são* suportadas para [migração](/microsoftteams/platform/graph-api/import-messages/import-external-messages-to-teams). No futuro, a Microsoft pode exigir que você ou seus clientes paguem taxas adicionais com base na quantidade de dados importados.
 
 ### <a name="permissions-for-chat"></a>Permissões para o chat
 | Tipo de permissão                        | Permissões (da com menos para a com mais privilégios) |

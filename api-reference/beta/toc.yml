@@ -14296,6 +14296,10 @@ items:
                 href: api/chat-markchatreadforuser.md
               - name: Marcar o chat como não lido
                 href: api/chat-markchatunreadforuser.md
+              - name: Ocultar chat
+                href: api/chat-hideforuser.md
+              - name: Chat não criptografado
+                href: api/chat-unhideforuser.md
           - name: Mensagem de chat
             href: resources/chatmessage.md
             items:

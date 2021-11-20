@@ -5,12 +5,12 @@ author: RamjotSingh
 doc_type: apiPageType
 ms.localizationpriority: medium
 ms.prod: microsoft-teams
-ms.openlocfilehash: 6a97e183c672de5de8fa72c712abaa363a980c73
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: 068886c61ba0cb47a680739a0368a3075d90a242
+ms.sourcegitcommit: 70b3caded085ba8ef15e389f81fa005506f1e2fb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "60975842"
+ms.lasthandoff: 11/20/2021
+ms.locfileid: "61131886"
 ---
 # <a name="update-chatmessage"></a>Atualizar chatMessage
 
@@ -38,6 +38,17 @@ PATCH /teams/(team-id)/channels/{channel-id}/messages/{message-id}
 PATCH /teams/(team-id)/channels/{channel-id}/messages/{message-id}/replies/{reply-id}
 PATCH /chats/{chatThread-id}/messages/{message-id}
 ```
+
+## <a name="optional-query-parameters"></a>Parâmetros de consulta opcionais
+
+Você pode usar `model` o parâmetro de consulta, que só dá suporte ao valor `A` , conforme mostrado nos exemplos a seguir.
+
+```http
+PATCH /teams/(team-id)/channels/{channel-id}/messages/{message-id}?model=A
+PATCH /teams/(team-id)/channels/{channel-id}/messages/{message-id}/replies/{reply-id}?model=A
+PATCH /chats/{chatThread-id}/messages/{message-id}?model=A
+```
+Se não `model` for especificado, o [modo de avaliação](/graph/teams-licenses#evaluation-mode-default-requirements) será usado. 
 
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
 
