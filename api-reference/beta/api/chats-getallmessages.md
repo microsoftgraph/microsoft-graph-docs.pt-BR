@@ -5,12 +5,12 @@ author: RamjotSingh
 ms.localizationpriority: high
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 6c270c5bd5c988c460060a2ca4fa930e789522ba
-ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
+ms.openlocfilehash: 98681b5dc0fd59a246bdd1f545a9189f1cb6ee2a
+ms.sourcegitcommit: 70b3caded085ba8ef15e389f81fa005506f1e2fb
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/12/2021
-ms.locfileid: "60934713"
+ms.lasthandoff: 11/20/2021
+ms.locfileid: "61131935"
 ---
 # <a name="chats-getallmessages"></a>chats: getAllMessages
 
@@ -43,6 +43,13 @@ GET /users/{id | user-principal-name}/chats/getAllMessages
 ```
 
 ## <a name="optional-query-parameters"></a>Parâmetros de consulta opcionais
+
+Você pode usar `model` parâmetro de consulta que suporta os valores `A` e `B`, com base nos requisitos preferenciais de licenciamento e pagamento. Se nenhum `model` for especificado, [modo de avaliação](/graph/teams-licenses#evaluation-mode-default-requirements) será usado. A seguir estão os exemplos.
+
+```http
+GET /users/{id | user-principal-name}/chats/getAllMessages?model=A
+GET /users/{id | user-principal-name}/chats/getAllMessages?model=B
+```
 
 Esta operação dá suporte aos [parâmetros de intervalo de datas](/graph/query-parameters) para personalizar a resposta, conforme mostrado no exemplo a seguir.
 

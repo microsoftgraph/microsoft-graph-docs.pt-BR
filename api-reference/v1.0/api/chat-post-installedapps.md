@@ -5,12 +5,12 @@ author: subray
 ms.localizationpriority: high
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 679d1057091bbb752844106820e6cc7eba1c2658
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: 3627d514a08aaa3a315a6c9db289fb5fbadd7180
+ms.sourcegitcommit: 2e94beae05043a88b389349f0767e3a657415e4c
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "61000611"
+ms.lasthandoff: 11/19/2021
+ms.locfileid: "61123625"
 ---
 # <a name="add-app-to-chat"></a>Adicionar o aplicativo ao chat
 
@@ -19,7 +19,9 @@ Namespace: microsoft.graph
 
 Instale um [teamsApp](../resources/teamsapp.md) para o [chat](../resources/chat.md)especificado.
 
-> **Observação**: Se o chat estiver associado a uma instância [onlineMeeting](../resources/onlinemeeting.md), então, efetivamente, o **teamsApp** será instalado na reunião.
+> **Observações**:
+> - Se o chat estiver associado a uma instância do [onlineMeeting](../resources/onlinemeeting.md), então, efetivamente, o **teamsApp** será instalado na reunião.
+> - Atualmente, essa operação não dá suporte à instalação de aplicativos que exigem permissões de consentimento específicas do recurso. Para mais detalhes, confira [Problemas conhecidos](/graph/known-issues#Installation-of-apps-that-require-resource-specific-consent-permissions-is-not-supported).
 
 ## <a name="permissions"></a>Permissões
 

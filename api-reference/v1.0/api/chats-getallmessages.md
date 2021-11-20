@@ -5,12 +5,12 @@ author: RamjotSingh
 ms.localizationpriority: high
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: c8c48019fa084d94eae1465d5384e5114c5bf349
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: 998be54216d3e961b89527f39bd657ac63dd2c3e
+ms.sourcegitcommit: 70b3caded085ba8ef15e389f81fa005506f1e2fb
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "61025944"
+ms.lasthandoff: 11/20/2021
+ms.locfileid: "61131905"
 ---
 # <a name="chats-getallmessages"></a>chats: getAllMessages
 
@@ -42,7 +42,15 @@ GET /users/{id | user-principal-name}/chats/getAllMessages
 
 ## <a name="optional-query-parameters"></a>Parâmetros de consulta opcionais
 
-Esta operação dá suporte aos [parâmetros de intervalo de datas](/graph/query-parameters) para personalizar a resposta, conforme mostrado no exemplo a seguir.
+Você pode usar `model` parâmetro de consulta, que suporta os valores `A` e `B`, com base nos requisitos preferenciais de licenciamento e pagamento, como mostrado nos exemplos a seguir.  
+
+```http
+GET /users/{id | user-principal-name}/chats/getAllMessages?model=A
+GET /users/{id | user-principal-name}/chats/getAllMessages?model=B
+```
+Se nenhum `model` for especificado, [modo de avaliação](/graph/teams-licenses#evaluation-mode-default-requirements) será usado.
+
+Esta operação também suporta [parâmetros de faixa de datas](/graph/query-parameters) para personalizar a resposta, como mostrado no exemplo a seguir.
 
 ``` http
 GET /users/{id}/chats/getAllMessages?$top=50&$filter=lastModifiedDateTime gt 2020-06-04T18:03:11.591Z and lastModifiedDateTime lt 2020-06-05T21:00:09.413Z
