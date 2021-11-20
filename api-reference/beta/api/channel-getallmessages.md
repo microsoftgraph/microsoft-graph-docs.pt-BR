@@ -5,12 +5,12 @@ author: RamjotSingh
 ms.localizationpriority: high
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 4e5fea915e905dd7bc55f85c736d8a88c24ff456
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: 8dae3add3a27b73d7c25c7b0980033654bfe5c52
+ms.sourcegitcommit: 70b3caded085ba8ef15e389f81fa005506f1e2fb
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "60999463"
+ms.lasthandoff: 11/20/2021
+ms.locfileid: "61131802"
 ---
 # <a name="channel-getallmessages"></a>channel: getAllMessages
 
@@ -45,6 +45,14 @@ GET /teams/{team-id}/channels/getAllMessages
 ```
 
 ## <a name="optional-query-parameters"></a>Parâmetros de consulta opcionais
+
+Você pode usar o parâmetro de consulta `model`, que dá suporte aos valores `A` e `B`, com base nos requisitos de licenciamento e pagamento preferenciais, conforme mostrado nos exemplos a seguir. 
+
+```http
+GET /teams/{team-id}/channels/getAllMessages?model=A
+GET /teams/{team-id}/channels/getAllMessages?model=B
+```
+Se nenhum parâmetro `model` for especificado, o [modo de avaliação](/graph/teams-licenses#evaluation-mode-default-requirements) será usado. 
 
 Você pode usar o parâmetro de consulta [$top](/graph/query-parameters#top-parameter) para controlar o número de itens por resposta.
 Além disso, [$filter](/graph/query-parameters#filter-parameter) é suportado com **dateTime** intervalo de consulta em **lastModifiedDateTime**. No momento, não há suporte para os outros [Parâmetros de consulta OData](/graph/query-parameters).

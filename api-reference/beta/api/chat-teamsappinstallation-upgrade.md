@@ -5,12 +5,12 @@ author: subray
 ms.localizationpriority: high
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 89a17a85ca4a7cc36bfb28292a92f4caef602cb0
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: 83485838cd34651d3cc224772b750fe001fa842e
+ms.sourcegitcommit: 2e94beae05043a88b389349f0767e3a657415e4c
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "61018839"
+ms.lasthandoff: 11/19/2021
+ms.locfileid: "61124039"
 ---
 # <a name="teamsappinstallation-upgrade"></a>teamsAppInstallation: upgrade
 
@@ -20,7 +20,9 @@ Namespace: microsoft.graph
 
 Atualize uma [instalação de aplicativo](../resources/teamsappinstallation.md) em um [chat](../resources/chat.md).
 
-> **Observação**: se o chat estiver associado a uma instância do [onlineMeeting](../resources/onlinemeeting.md), em seguida, o **teamsApp** instalado na reunião será atualizado.
+> **Observações**:
+> - Se o chat estiver associado a uma instância do [onlineMeeting](../resources/onlinemeeting.md), efetivamente, o **teamsApp** instalado na reunião será atualizado.
+> - Atualmente, essa operação não dá suporte à atualização de aplicativos que exigem permissões de consentimento específicas do recurso. Para mais detalhes, confira [Problemas conhecidos](/graph/known-issues#Installation-of-apps-that-require-resource-specific-consent-permissions-is-not-supported).
 
 ## <a name="permissions"></a>Permissões
 

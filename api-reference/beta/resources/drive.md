@@ -5,12 +5,12 @@ description: o recurso de unidade representa o OneDrive de um usuário ou uma bi
 ms.localizationpriority: high
 ms.prod: sharepoint
 doc_type: resourcePageType
-ms.openlocfilehash: 43791d730726dbf1a958c826c1a629af241eed70
-ms.sourcegitcommit: c333953a9188b4cd4a9ab94cbe68871e8f3563e5
+ms.openlocfilehash: 1df4114e9dd79dd5845ca0cf1aedfdc458b83668
+ms.sourcegitcommit: 2e94beae05043a88b389349f0767e3a657415e4c
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/30/2021
-ms.locfileid: "58696404"
+ms.lasthandoff: 11/19/2021
+ms.locfileid: "61123713"
 ---
 # <a name="drive-resource-type"></a>tipo de recurso de unidade
 
@@ -50,7 +50,7 @@ Os usuários do OneDrive sempre terão pelo menos uma unidade disponível, sua u
 | nome                 | string                        | O nome do item. Leitura e gravação.                                                                                                                                                                                                |
 | owner                | [identitySet](identityset.md) | Opcional. A conta do usuário que é proprietário da unidade. Somente leitura.                                                                                                                                                                       |
 | quota                | [quota](quota.md)             | Opcional. Informações sobre a cota de espaço de armazenamento da unidade. Somente leitura.                                                                                                                                                          |
-| sharepointIds        | [sharepointIds][]             | Retorna os identificadores úteis para fins de compatibilidade do REST do SharePoint. Somente leitura.                                                                                                                                                         |
+| sharepointIds        | [sharepointIds][]             | Retorna os identificadores úteis para fins de compatibilidade do REST do SharePoint. Somente leitura.  A propriedade não é retornada por padrão e deve ser selecionada usando o parâmetro de consulta `$select`.                                                                               |
 | sistema               | [systemFacet][]               | Se estiver presente, indica que se trata de uma unidade gerenciada pelo sistema. Somente leitura.
 | webUrl               | string (url)                  | URL que exibe o recurso no navegador. Somente leitura.                                                                                                                                                                        |
 
