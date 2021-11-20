@@ -5,12 +5,12 @@ author: mkhribech
 ms.localizationpriority: medium
 doc_type: resourcePageType
 ms.prod: cloud-communications
-ms.openlocfilehash: 5bb0946f7af1af852ad56ae362482015658c675c
-ms.sourcegitcommit: c7ff992ef63e480d070421ba99b28ee129cb6acb
+ms.openlocfilehash: 4002e66e9362c52f1a062460ac1ebf64e855c85a
+ms.sourcegitcommit: 1cf7a82df17afc6291e2c93d8b2c277bf3382e6a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "60695941"
+ms.lasthandoff: 11/20/2021
+ms.locfileid: "61130136"
 ---
 # <a name="onlinemeeting-resource-type"></a>Tipo de recurso onlineMeeting
 
@@ -25,7 +25,7 @@ Contém informações sobre uma reunião, incluindo a URL usada para ingressar e
 | Método | Tipo de retorno |Descrição |
 | ------ | ----------- | ---------- |
 | [Criar](../api/application-post-onlineMeetings.md) | [onlineMeeting](onlinemeeting.md) | Criar uma reunião online. |
-| [Obter](../api/onlinemeeting-get.md) | [onlineMeeting](onlinemeeting.md) | Leia as propriedades e as relações de um **objeto onlineMeeting.** |
+| [Get](../api/onlinemeeting-get.md) | [onlineMeeting](onlinemeeting.md) | Leia as propriedades e as relações de um **objeto onlineMeeting.** |
 | [Atualizar](../api/onlinemeeting-update.md) | [onlineMeeting](onlinemeeting.md) | Atualize as propriedades de um **objeto onlineMeeting.** |
 | [Excluir](../api/onlinemeeting-delete.md) | Nenhum | Excluir um **objeto onlineMeeting.** |
 | [Criar ou obter OnlineMeeting](../api/onlinemeeting-createorget.md) | [onlineMeeting](onlinemeeting.md) | Crie uma reunião online com uma ID externa personalizada. Se a reunião já existir, recupere suas propriedades. |
@@ -39,27 +39,27 @@ Contém informações sobre uma reunião, incluindo a URL usada para ingressar e
 | allowAttendeeToEnableMic | Booliano | Indica se os participantes podem ativar o microfone. |
 | allowMeetingChat      | [meetingChatMode](#meetingchatmode-values) | Especifica o modo de chat de reunião. |
 | allowTeamworkReactions | Booliano | Indica se Teams reações estão habilitadas para a reunião. |
-| alternativeRecording  | Stream | O fluxo de conteúdo da gravação alternativa de um [evento Microsoft Teams ao vivo](/microsoftteams/teams-live-events/what-are-teams-live-events). Apenas leitura. |
-| attendeeReport        | Stream | O fluxo de conteúdo do relatório do participante de um [evento Teams ao vivo](/microsoftteams/teams-live-events/what-are-teams-live-events). Apenas leitura.   |
+| alternativeRecording  | Stream | O fluxo de conteúdo da gravação alternativa de um [evento Microsoft Teams ao vivo](/microsoftteams/teams-live-events/what-are-teams-live-events). Somente leitura. |
+| attendeeReport        | Stream | O fluxo de conteúdo do relatório do participante de um [evento Teams ao vivo](/microsoftteams/teams-live-events/what-are-teams-live-events). Somente leitura.   |
 | audioConferencing     | [audioConferencing](audioconferencing.md)     | As informações de acesso por telefone (discagem) para uma reunião online. Somente leitura. |
 | broadcastSettings     | [broadcastMeetingSettings](broadcastMeetingSettings.md)     | Configurações relacionado a um evento ao vivo.      |
 | chatInfo              | [chatInfo](chatinfo.md) | As informações de chat associadas a essa reunião online.  |
 | creationDateTime      | DateTime | O tempo de criação da reunião em UTC. Somente leitura.     |
 | endDateTime           | DateTime | A hora de término da reunião em UTC.   |
 | externalId            | Cadeia de caracteres | A ID externa. Uma ID personalizada. Opcional.      |
-| id | String | A ID padrão associada à reunião online. Somente leitura.    |
+| id | Cadeia de caracteres | A ID padrão associada à reunião online. Somente leitura.    |
 | isBroadcast | Booliano | Indica se esse é um evento [Teams ao vivo.](/microsoftteams/teams-live-events/what-are-teams-live-events) |
-| isEntryExitAnnounced  | Booliano | Indica se os chamadores ingressarão ou sairão. |
-| joinWebUrl | String | A URL de junção da reunião online. Somente leitura. |
-| joinInformation | [itemBody](itembody.md) | As informações de junção no idioma e na variante de localidade especificadas no cabeçalho HTTP de solicitação "Accept-Language". Apenas leitura. |
+| isEntryExitAnnounced  | Boolean | Indica se os chamadores ingressarão ou sairão. |
+| joinWebUrl | Cadeia de caracteres | A URL de junção da reunião online. Somente leitura. |
+| joinInformation | [itemBody](itembody.md) | As informações de junção no idioma e na variante de localidade especificadas no cabeçalho HTTP de solicitação "Accept-Language". Somente leitura. |
 | lobbyBypassSettings | [lobbyBypassSettings](lobbyBypassSettings.md) | Especifica quais participantes podem ignorar o lobby da reunião. |
 | participants | [meetingParticipants](meetingparticipants.md) | Os participantes associados à reunião online. Isso inclui o organizador e os participantes. |
 | recordAutomatically | Booliano | Indica se deve gravar a reunião automaticamente. |
 | recording | Stream | O fluxo de conteúdo da gravação de um [evento Teams ao vivo](/microsoftteams/teams-live-events/what-are-teams-live-events). Somente leitura. |
 | startDateTime | DateTime | O horário de início da reunião em UTC. |
-| assunto | String | O assunto da reunião online. |
-| videoTeleconferenceId | String | A ID de teleconferência de vídeo. Somente leitura. |
-| autoAdmittedUsers (preterido) | String | A configuração que especifica o tipo de participantes que serão automaticamente permitidos na reunião online. Os valores possíveis são: `everyone`, `everyoneInSameAndFederatedCompany`, `everyoneInCompany`, `invitedUsersInCompany`, `organizer`. Somente leitura. |
+| assunto | Cadeia de caracteres | O assunto da reunião online. |
+| videoTeleconferenceId | Cadeia de caracteres | A ID de teleconferência de vídeo. Somente leitura. |
+| autoAdmittedUsers (preterido) | Cadeia de caracteres | A configuração que especifica o tipo de participantes que serão automaticamente permitidos na reunião online. Os valores possíveis são: `everyone`, `everyoneInSameAndFederatedCompany`, `everyoneInCompany`, `invitedUsersInCompany`, `organizer`. Somente leitura. |
 | capabilities (preterido) | coleção meetingCapabilities | A lista de recursos de reunião. Os valores possíveis são: `questionAndAnswer` , `unknownFutureValue` . |
 
 > [!CAUTION]
@@ -95,8 +95,12 @@ Contém informações sobre uma reunião, incluindo a URL usada para ingressar e
 
 | Relação | Tipo | Descrição |
 | ------------ | ---- | ----------- |
-| meetingAttendanceReport | [meetingAttendanceReport](meetingAttendanceReport.md) | O relatório de participação de uma reunião online. Apenas leitura. |
+| attendanceReports | [coleção meetingAttendanceReport](meetingAttendanceReport.md) | Os relatórios de participação de uma reunião online. Somente leitura. |
 | registration | [meetingRegistration](meetingregistration.md) | O registro que foi habilitado para uma reunião online. Uma reunião online só pode ter um registro habilitado.|
+| meetingAttendanceReport (preterido) | [meetingAttendanceReport](meetingAttendanceReport.md) | O relatório de participação da última sessão de reunião online. Somente leitura. |
+
+> [!TIP]
+> A **propriedade meetingAttendanceReport** é preterida. Ele permanecerá em beta para compatibilidade com versões. Em frente, use **a propriedade attendanceReports** para recuperar relatórios de participação de uma reunião online.
 
 ## <a name="json-representation"></a>Representação JSON
 

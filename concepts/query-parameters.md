@@ -4,12 +4,12 @@ description: O Microsoft Graph fornece parâmetros de consulta opcionais que voc
 author: mumbi-o
 ms.localizationpriority: high
 ms.custom: graphiamtop20, scenarios:getting-started
-ms.openlocfilehash: a5f4ee30ef7fdea9a2e8e4e0c73777cf9d226769
-ms.sourcegitcommit: 11be55b40804b07f4c422f09f601afa97c7d31ed
+ms.openlocfilehash: 4e2c0cc59f47e02b7bc9a1f0496bbbd06f1ffe4a
+ms.sourcegitcommit: 1cf7a82df17afc6291e2c93d8b2c277bf3382e6a
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/09/2021
-ms.locfileid: "60256407"
+ms.lasthandoff: 11/20/2021
+ms.locfileid: "61130203"
 ---
 # <a name="use-query-parameters-to-customize-responses"></a>Usar parâmetros de consulta para personalizar respostas
 
@@ -180,8 +180,8 @@ A propriedade **assignLicenses** do recurso do usuário contém uma coleção de
 GET https://graph.microsoft.com/v1.0/users?$filter=assignedLicenses/any(s:s/skuId eq 184efa21-98c3-4e5d-95ab-d07053a96e67)
 ```
 
-Para negar o resultado da expressão dentro da cláusula `any`, use o operador `NOT`, não o operador `ne`. Por exemplo, a consulta a seguir recupera apenas os usuários que não receberam o **imAddress** de `admin@contoso.com`.
->**Observação:** Para objetos de diretório como usuários, os operadores `NOT` e `ne` são suportados apenas em [consultas avançadas](/graph/aad-advanced-queries).
+Para negar o resultado da expressão dentro da cláusula `any`, use o operador `not`, não o operador `ne`. Por exemplo, a consulta a seguir recupera apenas os usuários que não receberam o **imAddress** de `admin@contoso.com`.
+>**Observação:** Para objetos de diretório como usuários, os operadores `not` e `ne` são suportados apenas em [consultas avançadas](/graph/aad-advanced-queries).
 
 ```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/users?$filter=NOT(imAddresses/any(s:s eq 'admin@contoso.com'))&$count=true

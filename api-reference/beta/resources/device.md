@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: sandeo-MSFT
 ms.prod: directory-management
 doc_type: resourcePageType
-ms.openlocfilehash: 13412d6e9509fc2bde2877c648155e8d991f2399
-ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
+ms.openlocfilehash: 035c63a161f62d08a16f4a2f0511020c46f59ccb
+ms.sourcegitcommit: 1cf7a82df17afc6291e2c93d8b2c277bf3382e6a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/12/2021
-ms.locfileid: "60938235"
+ms.lasthandoff: 11/20/2021
+ms.locfileid: "61130175"
 ---
 # <a name="device-resource-type"></a>tipo de recurso de dispositivo
 
@@ -49,41 +49,41 @@ Esse recurso permite que você adicione seus próprios dados às propriedades pe
 
 | Propriedade     | Tipo   |Descrição|
 |:---------------|:--------|:----------|
-|accountEnabled|Booliano| `true` se a conta estiver habilitada; caso contrário, `false`. O padrão é `true`. <br/><br/> Suporta `$filter` (`eq`, `ne`, `NOT`, `in`). Somente chamadores nas funções Administrador Global e Administrador de Dispositivos de Nuvem podem definir essa propriedade.|
-|alternativeSecurityIds|Coleção [alternativeSecurityId](alternativeSecurityId.md)| Apenas para uso interno. Não anulável. Suporta `$filter` (`eq`, `NOT`, `ge`, `le`). |
-|approximateLastSignInDateTime|DateTimeOffset| O tipo de data/hora representa informações de data e hora usando o formato ISO 8601 e está sempre em horário UTC. Por exemplo, meia-noite UTC em 1 de janeiro de 2014 é `2014-01-01T00:00:00Z`. Somente leitura. Suporta `$filter` ( , , , , e em `eq` `ne` `NOT` `ge` `le` `eq` `null` valores) e `$orderBy` . |
+|accountEnabled|Booliano| `true` se a conta estiver habilitada; caso contrário, `false`. O padrão é `true`. <br/><br/> Suporta `$filter` (`eq`, `ne`, `not`, `in`). Somente chamadores nas funções Administrador Global e Administrador de Dispositivos de Nuvem podem definir essa propriedade.|
+|alternativeSecurityIds|Coleção [alternativeSecurityId](alternativeSecurityId.md)| Apenas para uso interno. Não anulável. Suporta `$filter` (`eq`, `not`, `ge`, `le`). |
+|approximateLastSignInDateTime|DateTimeOffset| O tipo de data/hora representa informações de data e hora usando o formato ISO 8601 e está sempre em horário UTC. Por exemplo, meia-noite UTC em 1 de janeiro de 2014 é `2014-01-01T00:00:00Z`. Somente leitura. Suporta `$filter` ( , , , , e em `eq` `ne` `not` `ge` `le` `eq` `null` valores) e `$orderBy` . |
 |complianceExpirationDateTime|DateTimeOffset| O timestamp quando o dispositivo não é mais considerado compatível. O tipo de data/hora representa informações de data e hora usando o formato ISO 8601 e está sempre em horário UTC. Por exemplo, meia-noite UTC em 1 de janeiro de 2014 é `2014-01-01T00:00:00Z`. Somente leitura. |
 |deviceCategory|Cadeia de caracteres|Propriedade definida pelo usuário definida pelo Intune para adicionar automaticamente dispositivos a grupos e simplificar o gerenciamento de dispositivos.|
-|deviceId|Cadeia de caracteres| Identificador definido pelo Serviço de Registro de Dispositivo do Azure no momento do registro. Suporta `$filter` (`eq`, `ne`, `NOT`, `startsWith`). |
+|deviceId|Cadeia de caracteres| Identificador definido pelo Serviço de Registro de Dispositivo do Azure no momento do registro. Suporta `$filter` (`eq`, `ne`, `not`, `startsWith`). |
 |deviceMetadata|String| Apenas para uso interno. Definido como `null`. |
 |deviceOwnership|Cadeia de caracteres|Propriedade do dispositivo. Essa propriedade é definida pelo Intune. Os valores possíveis são: `unknown`, `company`, `personal`.|
 |deviceVersion|Int32| Apenas para uso interno. |
-|displayName|Cadeia de caracteres| O nome de exibição do dispositivo. Obrigatório. Suporta `$filter` ( , , , , , , , e `eq` em `ne` `NOT` `ge` `le` `in` `startsWith` `eq` `null` valores) e `$search` `$orderBy` .  |
+|displayName|Cadeia de caracteres| O nome de exibição do dispositivo. Obrigatório. Suporte `$filter` (`eq`, `ne`, `not`, `ge`, `le`, `in`, `startsWith`, e `eq` no `null` valores), `$search`, e `$orderBy`.  |
 |domainName|Cadeia de caracteres|O nome de domínio local dos dispositivos ingressados no Azure AD híbrido. Essa propriedade é definida pelo Intune.|
 |enrollmentProfileName|Cadeia de caracteres|Perfil de registro aplicado ao dispositivo. Por exemplo, `Apple Device Enrollment Profile` , `Device enrollment - Corporate device identifiers` ou `Windows Autopilot profile name` . Essa propriedade é definida pelo Intune.|
 |enrollmentType|String|Tipo de registro do dispositivo. Essa propriedade é definida pelo Intune. Os valores possíveis são: `unknown`, `userEnrollment`, `deviceEnrollmentManager`, `appleBulkWithUser`, `appleBulkWithoutUser`, `windowsAzureADJoin`, `windowsBulkUserless`, `windowsAutoEnrollment`, `windowsBulkAzureDomainJoin`, `windowsCoManagement`.|
-| extensionAttributes | [onPremisesExtensionAttributes](onpremisesextensionattributes.md) | Contém atributos de extensão 1 a 15 para o dispositivo. Os atributos de extensão individuais não são selecionáveis. Essas propriedades são masterizados na nuvem e podem ser definidas durante a criação ou atualização de um objeto de dispositivo no Azure AD. <br><br>Suporta `$filter` ( , , e sobre `eq` `NOT` `startsWith` `eq` `null` valores).|
-|id|Cadeia de caracteres|O identificador exclusivo do dispositivo. Herdado de [directoryObject](directoryobject.md). Chave, Não anulável. Somente leitura. Suporta `$filter` (`eq`, `ne`, `NOT`, `in`). |
-|isCompliant|Booliano|`true` se o dispositivo estiver em conformidade com políticas de Gerenciamento de Dispositivo Móvel (MDM); caso contrário, `false` . Somente leitura. Isso só pode ser atualizado pelo Intune para qualquer tipo de sistema operacional de dispositivo ou por um [aplicativo MDM](/windows/client-management/mdm/azure-active-directory-integration-with-mdm) aprovado para Windows do sistema operacional. Suporta `$filter` (`eq`, `ne`, `NOT`).|
-|isManaged|Booliano|`true` se o dispositivo for gerenciado por um aplicativo MDM (Gerenciamento de Dispositivo Móvel). caso contrário, `false` . Isso só pode ser atualizado pelo Intune para qualquer tipo de sistema operacional de dispositivo ou por um [aplicativo MDM](/windows/client-management/mdm/azure-active-directory-integration-with-mdm) aprovado para Windows do sistema operacional. Suporta `$filter` (`eq`, `ne`, `NOT`). |
+| extensionAttributes | [onPremisesExtensionAttributes](onpremisesextensionattributes.md) | Contém atributos de extensão 1 a 15 para o dispositivo. Os atributos de extensão individuais não são selecionáveis. Essas propriedades são masterizados na nuvem e podem ser definidas durante a criação ou atualização de um objeto de dispositivo no Azure AD. <br><br>Suporte `$filter` (`eq`, `not`, `startsWith`, e `eq` no `null` valores).|
+|id|Cadeia de caracteres|O identificador exclusivo do dispositivo. Herdado de [directoryObject](directoryobject.md). Chave, Não anulável. Somente leitura. Suporta `$filter` (`eq`, `ne`, `not`, `in`). |
+|isCompliant|Booliano|`true` se o dispositivo estiver em conformidade com políticas de Gerenciamento de Dispositivo Móvel (MDM); caso contrário, `false` . Somente leitura. Isso só pode ser atualizado pelo Intune para qualquer tipo de sistema operacional de dispositivo ou por um [aplicativo MDM](/windows/client-management/mdm/azure-active-directory-integration-with-mdm) aprovado para Windows do sistema operacional. Suporta `$filter` (`eq`, `ne`, `not`).|
+|isManaged|Booliano|`true` se o dispositivo for gerenciado por um aplicativo MDM (Gerenciamento de Dispositivo Móvel). caso contrário, `false` . Isso só pode ser atualizado pelo Intune para qualquer tipo de sistema operacional de dispositivo ou por um [aplicativo MDM](/windows/client-management/mdm/azure-active-directory-integration-with-mdm) aprovado para Windows do sistema operacional. Suporta `$filter` (`eq`, `ne`, `not`). |
 |isRooted|Boolean|`true` se o dispositivo estiver enraizado; `false` se o dispositivo estiver com a cadeia quebrada. Isso só pode ser atualizado pelo Intune.|
 |managementType|String|Canal de gerenciamento do dispositivo.  Essa propriedade é definida pelo Intune. Os valores possíveis são: `eas`, `mdm`, `easMdm`, `intuneClient`, `easIntuneClient`, `configurationManagerClient`, `configurationManagerClientMdm`, `configurationManagerClientMdmEas`, `unknown`, `jamf`, `googleCloudDevicePolicyController`.|
 |fabricante|String| Fabricante do dispositivo. Somente leitura. |
-|mdmAppId|Cadeia de caracteres|Identificador de aplicativo usado para registrar o dispositivo no MDM. Somente leitura. Suporta `$filter` (`eq`, `ne`, `NOT`, `startsWith`).|
+|mdmAppId|Cadeia de caracteres|Identificador de aplicativo usado para registrar o dispositivo no MDM. Somente leitura. Suporta `$filter` (`eq`, `ne`, `not`, `startsWith`).|
 |modelo|String| Modelo do dispositivo. Somente leitura. |
-|onPremisesLastSyncDateTime|DateTimeOffset|A última vez em que o objeto foi sincronizado com o diretório local. O tipo Timestamp representa informações de data e hora usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite UTC em 1º de janeiro de 2014 é `2014-01-01T00:00:00Z` somente leitura. Suporta `$filter` (`eq`, `ne`, `NOT`, `ge`, `le`, `in`). |
-|onPremisesSyncEnabled|Booliano|`true` se esse objeto está sincronizado de um diretório local; `false` se esse objeto foi originalmente sincronizado de um diretório local, mas não está mais sincronizado; `null` se esse objeto nunca foi sido sincronizado de um diretório local (padrão).  Somente leitura. Suporta `$filter` ( , , , e sobre `eq` `ne` `NOT` `in` `eq` `null` valores). |
-|operatingSystem|String| O tipo de sistema operacional do dispositivo. Obrigatório. Suporta `$filter` ( , , , , , e sobre `eq` `ne` `NOT` `ge` `le` `startsWith` `eq` `null` valores). |
-|operatingSystemVersion|String| A versão do sistema operacional do dispositivo. Obrigatório. Suporta `$filter` ( , , , , , e sobre `eq` `ne` `NOT` `ge` `le` `startsWith` `eq` `null` valores). |
-|physicalIds|Coleção de cadeias de caracteres| Apenas para uso interno. Não anulável. Suporta `$filter` (`eq`, `NOT`, `ge`, `le`, `startsWith`). |
+|onPremisesLastSyncDateTime|DateTimeOffset|A última vez em que o objeto foi sincronizado com o diretório local. O tipo Timestamp representa informações de data e hora usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite UTC em 1º de janeiro de 2014 é `2014-01-01T00:00:00Z` somente leitura. Suporta `$filter` (`eq`, `ne`, `not`, `ge`, `le`, `in`). |
+|onPremisesSyncEnabled|Booliano|`true` se esse objeto está sincronizado de um diretório local; `false` se esse objeto foi originalmente sincronizado de um diretório local, mas não está mais sincronizado; `null` se esse objeto nunca foi sido sincronizado de um diretório local (padrão).  Somente leitura. Suporte `$filter` (`eq`, `ne`, `not`, `in`, e `eq` no `null` valores). |
+|operatingSystem|String| O tipo de sistema operacional do dispositivo. Obrigatório. Suporta `$filter` ( , , , , , e sobre `eq` `ne` `not` `ge` `le` `startsWith` `eq` `null` valores). |
+|operatingSystemVersion|String| A versão do sistema operacional do dispositivo. Obrigatório. Suporta `$filter` ( , , , , , e sobre `eq` `ne` `not` `ge` `le` `startsWith` `eq` `null` valores). |
+|physicalIds|Coleção de cadeias de caracteres| Apenas para uso interno. Não anulável. Suporta `$filter` (`eq`, `not`, `ge`, `le`, `startsWith`). |
 |profileType|Cadeia de caracteres|O tipo de perfil do dispositivo. Valores possíveis: `RegisteredDevice` (padrão), `SecureVM` , , , `Printer` `Shared` `IoT` .|
 |registrationDateTime|DateTimeOffset|Data e hora de quando o dispositivo foi registrado. O tipo de data/hora representa informações de data e hora usando o formato ISO 8601 e está sempre em horário UTC. Por exemplo, meia-noite UTC em 1 de janeiro de 2014 é `2014-01-01T00:00:00Z`. Somente leitura.|
-|systemLabels|Coleção de cadeias de caracteres| Lista de rótulos aplicados ao dispositivo pelo sistema. |
-|hostnames|Coleção de cadeias de caracteres| Lista de hostNames do dispositivo.|
+|systemLabels|Conjunto de cadeias de caracteres| Lista de rótulos aplicados ao dispositivo pelo sistema. |
+|hostnames|Conjunto de cadeias de caracteres| Lista de hostNames do dispositivo.|
 |trustType|Cadeia de caracteres| Tipo de relação de confiança para o dispositivo associado. Somente leitura. Valores possíveis: (indica trazer seus próprios dispositivos pessoais ), (Dispositivos ingressados apenas na nuvem) (dispositivos ingressados no domínio local `Workplace`  `AzureAd` `ServerAd` ingressados no Azure AD). Saiba mais em [Introdução ao gerenciamento de dispositivo no Azure Active Directory](/azure/active-directory/device-management-introduction) |
 |nome| Cadeia de caracteres | Nome amigável de um dispositivo. Somente retornado se o usuário entrar com uma conta da Microsoft como parte Project Roma. |
 |status | Cadeia de caracteres| O dispositivo é `online` ou `offline` . Somente retornado se o usuário entrar com uma conta da Microsoft como parte Project Roma. |
-|plataforma |Cadeia de caracteres|Plataforma do dispositivo. Somente retornado se o usuário entrar com uma conta da Microsoft como parte Project Roma. Somente retornado se o usuário entrar com uma conta da Microsoft como parte Project Roma.|
+|plataforma |String|Plataforma do dispositivo. Somente retornado se o usuário entrar com uma conta da Microsoft como parte Project Roma. Somente retornado se o usuário entrar com uma conta da Microsoft como parte Project Roma.|
 |Tipo| Cadeia de caracteres| Fator de formulário do dispositivo. Somente retornado se o usuário entrar com uma conta da Microsoft como parte Project Roma. |
 |modelo| String| Modelo de dispositivo. Somente retornado se o usuário entrar com uma conta da Microsoft como parte Project Roma. |
 |fabricante| String| Fabricante do dispositivo. Somente retornado se o usuário entrar com uma conta da Microsoft como parte Project Roma. |

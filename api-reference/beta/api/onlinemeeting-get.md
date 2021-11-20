@@ -5,12 +5,12 @@ author: mkhribech
 ms.localizationpriority: medium
 ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: 6a92358fab7e70f5c20c1ea35c698349b10e6b9c
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: b3fd1a9214c22c92ab57af4dac3093743f509498
+ms.sourcegitcommit: 1cf7a82df17afc6291e2c93d8b2c277bf3382e6a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "60980790"
+ms.lasthandoff: 11/20/2021
+ms.locfileid: "61130196"
 ---
 # <a name="get-onlinemeeting"></a>Obter onlineMeeting
 
@@ -25,9 +25,8 @@ Por exemplo, você pode:
 - Obter detalhes de um onlineMeeting usando [videoTeleconferenceId](#example-1-retrieve-an-online-meeting-by-videoteleconferenceid), [ID](#example-2-retrieve-an-online-meeting-by-meeting-id)da reunião ou [joinWebURL](#example-3-retrieve-an-online-meeting-by-joinweburl).
 - Use o caminho para obter o relatório do participante de um evento Microsoft Teams ao vivo na forma de um link de download, conforme mostrado `/attendeeReport` no [exemplo 4](#example-4-fetch-attendee-report-of-a-teams-live-event) [](/microsoftteams/teams-live-events/what-are-teams-live-events) .
 - Use os caminhos e para obter as gravações de um evento Teams ao vivo na forma de um link de download, conforme mostrado `/recording` `/alternativeRecording` no exemplo [5](#example-5-fetch-recording-of-a-teams-live-event). [](/microsoftteams/teams-live-events/what-are-teams-live-events)
-- Use o `/meetingAttendanceReport` caminho para obter o relatório de participação de uma reunião agendada, conforme mostrado no [exemplo 6](#example-6-fetch-attendance-report-of-an-online-meeting).
 
-Relatório de participação da reunião, Teams ao vivo do participante do evento e Teams ao vivo são artefatos de reunião online. Para obter detalhes, consulte [Artefatos e permissões de](/graph/cloud-communications-online-meeting-artifacts)reunião online.
+Teams relatório do participante do evento ao vivo e Teams ao vivo são artefatos de reunião online. Para obter detalhes, consulte [Artefatos e permissões de](/graph/cloud-communications-online-meeting-artifacts)reunião online.
 
 ## <a name="permissions"></a>Permissões
 
@@ -65,14 +64,6 @@ Para obter uma **onlineMeeting** usando **joinWebUrl** com permissão delegada (
 ```http
 GET /me/onlineMeetings?$filter=JoinWebUrl%20eq%20'{joinWebUrl}'
 GET /users/{userId}/onlineMeetings?$filter=JoinWebUrl%20eq%20'{joinWebUrl}'
-```
-
-Para obter o relatório de participação de uma reunião online com permissão delegada ( `/me` ) e de aplicativo ( ) `/users/{userId}` :
-<!-- { "blockType": "ignored" }-->
-
-```http
-GET /me/onlineMeetings/{meetingId}/meetingAttendanceReport
-GET /users/{userId}/onlineMeetings/{meetingId}/meetingAttendanceReport
 ```
 
 Para obter o relatório do participante de um evento [Teams ao](/microsoftteams/teams-live-events/what-are-teams-live-events) vivo com permissão delegada ( ) e app ( `/me` ) `/users/{userId}` :
@@ -483,117 +474,4 @@ GET https://graph.microsoft.com/beta/users/dc74d9bb-6afe-433d-8eaa-e39d80d3a647/
 ```http
 HTTP/1.1 302 Found
 Location: https://01-a-noam.dog.attend.teams.microsoft.com/broadcast/909c6581-5130-43e9-88f3-fcb3582cde37/dc17674c-81d9-4adb-bfb2-8f6a442e4622/19%3Ameeting_ZWE0YzQwMzItYjEyNi00NjJjLWE4MjYtOTUxYjE1NmFjYWIw%40thread.v2/0/resource/recording
-```
-
-### <a name="example-6-fetch-attendance-report-of-an-online-meeting"></a>Exemplo 6: Buscar relatório de participação de uma reunião online
-
-O exemplo a seguir mostra uma solicitação para obter um relatório de participação na reunião.
-
-#### <a name="request"></a>Solicitação
-
-A solicitação a seguir usa permissão delegada.
-
-# <a name="http"></a>[HTTP](#tab/http)
-<!-- {
-  "blockType": "request",
-  "name": "get_attendance_report"
-}-->
-
-```msgraph-interactive
-GET https://graph.microsoft.com/beta/me/onlineMeetings/MSpkYzE3Njc0Yy04MWQ5LTRhZGItYmZiMi04ZdFpHRTNaR1F6WGhyZWFkLnYy/meetingAttendanceReport
-```
-# <a name="c"></a>[C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/get-attendance-report-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# <a name="javascript"></a>[JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/get-attendance-report-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# <a name="objective-c"></a>[Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/get-attendance-report-objc-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# <a name="java"></a>[Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/get-attendance-report-java-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# <a name="go"></a>[Ir](#tab/go)
-[!INCLUDE [sample-code](../includes/snippets/go/get-attendance-report-go-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
----
-
-
-A solicitação a seguir usa a permissão do aplicativo.
-<!-- { "blockType": "ignored" }-->
-```msgraph-interactive
-GET https://graph.microsoft.com/beta/users/dc74d9bb-6afe-433d-8eaa-e39d80d3a647/onlineMeetings/MSpkYzE3Njc0Yy04MWQ5LTRhZGItYmZiMi04ZdFpHRTNaR1F6WGhyZWFkLnYy/meetingAttendanceReport
-```
-
-#### <a name="response"></a>Resposta
-
-> **Observação:** o objeto de resposta mostrado aqui pode ser encurtado para legibilidade. 
-
-<!-- {
-  "blockType": "response",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.meetingAttendanceReport",
-  "name": "get_attendance_report"
-} -->
-
-```http
-HTTP/1.1 200 OK
-Content-Type: application/json
-
-{
-    "@odata.context": "https://graph.microsoft.com/beta/$metadata#users('dc74d9bb-6afe-433d-8eaa-e39d80d3a647')/onlineMeetings('MSpkYzE3Njc0Yy04MWQ5LTRhZGItYmZiMi04ZdFpHRTNaR1F6WGhyZWFkLnYy')/meetingAttendanceReport/$entity",
-    "attendanceRecords": [
-        {
-            "emailAddress": "email address",
-            "totalAttendanceInSeconds": 1558,
-            "role": "Organizer",
-            "identity": {
-                "id": "dc74d9bb-6afe-433d-8eaa-e39d80d3a647",
-                "displayName": "(redacted)",
-                "tenantId": null
-            },
-            "attendanceIntervals": [
-                {
-                    "joinDateTime": "2021-03-16T18:59:46.598956Z",
-                    "leaveDateTime": "2021-03-16T19:25:45.4473057Z",
-                    "durationInSeconds": 1558
-                }
-            ]
-        },
-        {
-            "emailAddress": "email address",
-            "totalAttendanceInSeconds": 1152,
-            "role": "Presenter",
-            "identity": {
-                "id": "(redacted)",
-                "displayName": "(redacted)",
-                "tenantId": null
-            },
-            "attendanceIntervals": [
-                {
-                    "joinDateTime": "2021-03-16T18:59:52.2782182Z",
-                    "leaveDateTime": "2021-03-16T19:06:47.7218491Z",
-                    "durationInSeconds": 415
-                },
-                {
-                    "joinDateTime": "2021-03-16T19:09:23.9834702Z",
-                    "leaveDateTime": "2021-03-16T19:16:31.1381195Z",
-                    "durationInSeconds": 427
-                },
-                {
-                    "joinDateTime": "2021-03-16T19:20:27.7094382Z",
-                    "leaveDateTime": "2021-03-16T19:25:37.7121956Z",
-                    "durationInSeconds": 310
-                }
-            ]
-        }
-    ],
-    "totalParticipantCount": 2
-}
 ```

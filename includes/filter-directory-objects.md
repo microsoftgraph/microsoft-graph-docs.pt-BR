@@ -1,11 +1,11 @@
 ---
 ms.localizationpriority: medium
-ms.openlocfilehash: 95e6218d0f21d81491652a0229d3272a6a61d243
-ms.sourcegitcommit: 0eb843a6f61f384bc28c0cce1ccb74f64bdb1fa6
+ms.openlocfilehash: 79b226f7b28840f37c557c206fb2ac4a9e6592b1
+ms.sourcegitcommit: 2e94beae05043a88b389349f0767e3a657415e4c
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/23/2021
-ms.locfileid: "60562734"
+ms.lasthandoff: 11/19/2021
+ms.locfileid: "61130021"
 ---
 ### <a name="application-properties"></a>Propriedades do aplicativo
 
@@ -31,7 +31,7 @@ ms.locfileid: "60562734"
 | Propriedade           | eq                                         | startsWith                                 | ge                                         | le                                         | Valor nulo                                 |
 | ----------------------------------- | ------------------------------------------ | ------------------------------------------ | ------------------------------------------ | ------------------------------------------ | ------------------------------------------ |
 | accountEnabled                      | ![Com suporte por Padrão][RDS]               |                                            |                                            |                                            | ![Não suportado][NS]                       |
-| appId                               | ![Com suporte por Padrão][RDS]               |                                            |                                            |                                            | ![Não suportado][NS]                       |
+| appId                               | ![Com suporte por Padrão][RDS]               | ![Requer parâmetros de consulta avançados][AQP]                                            |                                            |                                            | ![Não suportado][NS]                       |
 | applicationTemplateId               | ![Com suporte por Padrão][RDS]               |                                            |                                            |                                            | ![Não suportado][NS]                       |
 | appOwnerOrganizationId              | ![Requer parâmetros de consulta avançados][AQP] |                                            |                                            |                                            | ![Não suportado][NS]                       |
 | appRoleAssignmentRequired           | ![Requer parâmetros de consulta avançados][AQP] |                                            |                                            |                                            | ![Não suportado][NS]                       |
