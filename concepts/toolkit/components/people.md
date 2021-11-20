@@ -3,12 +3,12 @@ title: Componente Pessoas no Microsoft Graph Toolkit
 description: Você pode usar o componente web para exibir um grupo de pessoas ou contatos usando `mgt-people` suas fotos ou iniciais.
 ms.localizationpriority: medium
 author: nmetulev
-ms.openlocfilehash: c93de8e60260d654624ae84896953dffe8f2e0b4
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 44c97680d85d06f5f65703f68f33845f41514278
+ms.sourcegitcommit: 2e94beae05043a88b389349f0767e3a657415e4c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59083814"
+ms.lasthandoff: 11/19/2021
+ms.locfileid: "61123402"
 ---
 # <a name="people-component-in-the-microsoft-graph-toolkit"></a>Componente Pessoas no Microsoft Graph Toolkit
 
@@ -40,6 +40,7 @@ Por padrão, o componente busca eventos do ponto de extremidade com o filtro par
 | recurso | recurso | O recurso a ser Graph microsoft (por exemplo, `/me/people` ). |
 | escopos | escopos | Matriz opcional de cadeias de caracteres se estiver usando a propriedade ou um escopo delimitado por vírgula se estiver usando o atributo. O componente usará esses escopos (com um provedor com suporte) para garantir que o usuário tenha consentido com a permissão certa. |
 | versão | versão | Versão da API opcional a ser usada ao fazer a solicitação GET. O padrão é `v1.0`.  |
+| fallback-details| fallbackDetails| Matriz de objetos IDynamicPerson que representam uma pessoa ou várias pessoas quando nenhum usuário/pessoa/contato é encontrado no gráfico.
 
 O exemplo a seguir define o número máximo de pessoas a mostrar.
 

@@ -5,12 +5,12 @@ description: Atualize as propriedades em um **[listItem][]**.
 ms.localizationpriority: high
 ms.prod: sharepoint
 doc_type: apiPageType
-ms.openlocfilehash: 111753a400d817d5802e2349b3f3be42b5832e89
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: fdb64eda4753970b4526c09266ad0745d0ed20b4
+ms.sourcegitcommit: 2e94beae05043a88b389349f0767e3a657415e4c
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "61029509"
+ms.lasthandoff: 11/19/2021
+ms.locfileid: "61123660"
 ---
 # <a name="update-listitem"></a>Atualizar o listItem
 
@@ -53,7 +53,7 @@ No corpo da solicitação, forneça uma representação JSON de [fieldValueSet][
 
 ## <a name="response"></a>Resposta 
 
-Se bem-sucedido, esse método retornará um código de resposta `201 Created` e um [fieldValueSet][] no corpo da resposta para o item de lista atualizado.
+Se bem-sucedido, esse método retornará um código de resposta `200 Ok` e um [fieldValueSet][] no corpo da resposta para o item de lista atualizado.
 
 ## <a name="example"></a>Exemplo
 
@@ -102,7 +102,7 @@ Content-Type: application/json
 <!-- { "blockType": "response", "@odata.type": "microsoft.graph.fieldValueSet", "truncated": true } -->
 
 ```http
-HTTP/1.1 201 Created
+HTTP/1.1 200 Ok
 Content-type: application/json
 
 {

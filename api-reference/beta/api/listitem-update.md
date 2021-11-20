@@ -6,12 +6,12 @@ title: Atualizar um registro em uma lista do SharePoint
 ms.localizationpriority: medium
 ms.prod: sharepoint
 doc_type: apiPageType
-ms.openlocfilehash: 44f8a8aa93d293c305e156641c14aa33d814bef5
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: 1ca4ebfe0fc417470d96a4fedda75a37c7bd7a9c
+ms.sourcegitcommit: 2e94beae05043a88b389349f0767e3a657415e4c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "61012022"
+ms.lasthandoff: 11/19/2021
+ms.locfileid: "61123934"
 ---
 # <a name="update-an-item-in-a-list"></a>Atualizar um item em uma lista
 
@@ -94,7 +94,7 @@ Se for bem-sucedido, esse método retornará um [fieldValueSet][] no corpo da re
 <!-- { "blockType": "response", "@odata.type": "microsoft.graph.listItem", "truncated": true } -->
 
 ```http
-HTTP/1.1 201 Created
+HTTP/1.1 200 OK
 Content-type: application/json
 
 {

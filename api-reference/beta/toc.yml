@@ -347,15 +347,15 @@ items:
               - name: Atribuir licença
                 href: api/user-assignlicense.md
               - name: Verificar grupos de membros
-                href: api/user-checkmembergroups.md
+                href: api/directoryobject-checkmembergroups.md
               - name: Verificar objetos membros
                 href: api/user-checkmemberobjects.md
               - name: Exportar dados pessoais
                 href: api/user-exportpersonaldata.md
               - name: Obter grupos de membros
-                href: api/user-getmembergroups.md
+                href: api/directoryobject-getmembergroups.md
               - name: Obter objetos de membros
-                href: api/user-getmemberobjects.md
+                href: api/directoryobject-getmemberobjects.md
               - name: Obter objetos por ID
                 href: api/directoryobject-getbyids.md
               - name: Listar objetos criados
@@ -603,7 +603,7 @@ items:
               - name: Atribuir licença
                 href: api/group-assignlicense.md
               - name: Verificar grupos de membros
-                href: api/group-checkmembergroups.md
+                href: api/directoryobject-checkmembergroups.md
               - name: Avaliar associação dinâmica
                 href: api/group-evaluatedynamicmembership.md
               - name: Obter grupo excluído
@@ -613,7 +613,7 @@ items:
               - name: Obter o ponto de extremidade
                 href: api/endpoint-get.md
               - name: Obter grupos de membros
-                href: api/group-getmembergroups.md
+                href: api/directoryobject-getmembergroups.md
               - name: Obter objetos de membros
                 href: api/group-getmemberobjects.md
               - name: Listar grupos excluídos
@@ -1079,13 +1079,13 @@ items:
                     href: api/serviceprincipal-list-memberof.md
                   - name: Listar memberOf transitivos
                     href: api/serviceprincipal-list-transitivememberof.md
-                  - name: checkMemberGroups
-                    href: api/serviceprincipal-checkmembergroups.md
-                  - name: checkMemberObjects
+                  - name: Verificar grupos de membros
+                    href: api/directoryobject-checkmembergroups.md
+                  - name: Verificar objetos membros
                     href: api/serviceprincipal-checkmemberobjects.md
-                  - name: getMemberGroups
-                    href: api/serviceprincipal-getmembergroups.md
-                  - name: getMemberObjects
+                  - name: Obter grupos de membros
+                    href: api/directoryobject-getmembergroups.md
+                  - name: Obter objetos de membros
                     href: api/serviceprincipal-getmemberobjects.md
               - name: Proprietários
                 items:
@@ -1509,7 +1509,7 @@ items:
                 href: api/call-logteleconferencedevicequality.md
           - name: Registros de chamadas
             items:
-              - name: Visão Geral
+              - name: Visão geral
                 href: resources/callrecords-api-overview.md
               - name: Registro de chamada
                 items:
@@ -1588,7 +1588,7 @@ items:
             href: resources/complianceapioverview.md
           - name: Descoberta eDiscovery (visualização)
             items:
-              - name: Visão Geral
+              - name: Visão geral
                 href: resources/ediscovery-eDiscoveryapioverview.md
               - name: Caso de Descoberta Eletrônica
                 href: resources/ediscovery-case.md
@@ -1744,7 +1744,7 @@ items:
                     href: api/ediscovery-tag-ashierarchy.md
           - name: Solicitação de direitos do sujeito
             items:
-              - name: Visão Geral
+              - name: Visão geral
                 href: resources/subjectrightsrequest-subjectrightsrequestapioverview.md
               - name: Solicitação de direitos do sujeito
                 href: resources/subjectrightsrequest.md
@@ -1802,7 +1802,7 @@ items:
       - name: Reserva de clientes (visualização)
         displayName: 'Bookings, Microsoft Bookings'
         items:
-          - name: Visão Geral
+          - name: Visão geral
             href: resources/booking-api-overview.md
           - name: Negócio de reservas
             href: resources/bookingbusiness.md
@@ -10865,7 +10865,7 @@ items:
                     href: api/contract-list.md
               - name: Atributos de segurança personalizados (visualização)
                 items:
-                  - name: Visão Geral
+                  - name: Visão geral
                     href: resources/custom-security-attributes-overview.md
                   - name: Conjuntos de atributos
                     href: resources/attributeset.md
@@ -11072,9 +11072,9 @@ items:
                       - name: Listar memberOf
                         href: api/orgcontact-list-memberof.md
                       - name: Obter grupos de membros
-                        href: api/orgcontact-getmembergroups.md
+                        href: api/directoryobject-getmembergroups.md
                       - name: Verificar grupos de membros
-                        href: api/orgcontact-checkmembergroups.md
+                        href: api/directoryobject-checkmembergroups.md
                   - name: Hierarquia da organização
                     href: resources/directoryobject.md
                     items:
@@ -13283,7 +13283,7 @@ items:
                     href: api/provisioningobjectsummary-list.md
           - name: Relatórios de identidade e acesso
             items:
-              - name: Visão Geral
+              - name: Visão geral
                 href: resources/report-identity-access.md
               - name: Atividade de aplicativo no AD FS
                 items:
@@ -13306,7 +13306,7 @@ items:
                         href: api/applicationsignindetailedsummary-get.md
               - name: Registro e utilização
                 items:
-                  - name: Visão Geral
+                  - name: Visão geral
                     href: resources/authenticationmethods-usage-insights-overview.md
                   - name: Contagem de Registro de Usuário credencial
                     href: resources/credentialuserregistrationcount.md
@@ -13732,7 +13732,7 @@ items:
                     href: api/informationprotectionlabel-extractlabel.md
               - name: Avaliação de ameaças
                 items:
-                  - name: Visão Geral
+                  - name: Visão geral
                     href: resources/threatassessment-api-overview.md
                   - name: Solicitação de avaliação de ameaças
                     href: resources/threatassessmentrequest.md
@@ -13991,7 +13991,7 @@ items:
         items:
           - name: Visão Geral
             href: resources/planner-overview.md
-          - name: Planejar
+          - name: Plano
             href: resources/plannerplan.md
             items:
               - name: Listar os planos do grupo
@@ -14179,11 +14179,11 @@ items:
               - name: Remover proprietário
                 href: api/group-delete-owners.md
               - name: Obter grupos de membros
-                href: api/group-getmembergroups.md
+                href: api/directoryobject-getmembergroups.md
               - name: Obter objetos de membros
                 href: api/group-getmemberobjects.md
               - name: Verificar grupos de membros
-                href: api/group-checkmembergroups.md
+                href: api/directoryobject-checkmembergroups.md
               - name: Listar membro de
                 href: api/group-list-memberof.md
               - name: Obter grupo excluído
@@ -14653,7 +14653,7 @@ items:
       - name: Tarefas pendentes
         displayName: Microsoft To Do
         items:
-          - name: Visão Geral
+          - name: Visão geral
             href: resources/todo-overview.md
           - name: Lista de tarefas
             href: resources/todotasklist.md

@@ -5,18 +5,20 @@ author: akjo
 ms.localizationpriority: medium
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 4ad7fa79d3fd247e372ebd89baacc4fb903c2623
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: ff74796b88fe682f9b3dd28f6b57106ac84d9112
+ms.sourcegitcommit: 2e94beae05043a88b389349f0767e3a657415e4c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "60988444"
+ms.lasthandoff: 11/19/2021
+ms.locfileid: "61124102"
 ---
 # <a name="add-app-to-team"></a>Adicionar aplicativo à equipe
 
 Namespace: microsoft.graph
 
 Instale um [aplicativo](../resources/teamsapp.md) na equipe [especificada.](../resources/team.md)
+
+> **Observação:** Atualmente, essa operação não dá suporte à instalação de aplicativos que exigem permissões de consentimento específicas do recurso. Para mais detalhes, confira [Problemas conhecidos](/graph/known-issues#Installation-of-apps-that-require-resource-specific-consent-permissions-is-not-supported).
 
 ## <a name="permissions"></a>Permissões
 
@@ -29,6 +31,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |Aplicativo | TeamsAppInstallation.ReadWriteForTeam.All, Group.ReadWrite.All **, Directory.ReadWrite.All** |
 
 > **Observação**: as permissões marcadas com ** foram preteridas e não devem ser usadas.
+  
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- { "blockType": "ignored" } -->

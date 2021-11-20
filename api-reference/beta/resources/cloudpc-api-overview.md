@@ -1,22 +1,22 @@
 ---
-title: Trabalhando com Windows 365 Cloud PCs usando a API Graph Microsoft
-description: Com o Microsoft Graph, você pode provisionar e gerenciar PCs de Nuvem em sua organização e, se usado em conjunto com a API do Intune, você também pode gerenciar os PCs de Nuvem juntamente com pontos de extremidade físicos.
+title: Trabalhando com Cloud PCs do Windows 365 usando a API do Microsoft Graph
+description: A API Graph microsoft habilita o acesso programático às ações de gerenciamento e informações do Cloud PC em sua organização.
 author: cohanley
 ms.localizationpriority: medium
 ms.prod: cloud-pc
 doc_type: resourcePageType
-ms.openlocfilehash: e4e205631424ed2f93b748371c8f32c31b4398ee
-ms.sourcegitcommit: c7ff992ef63e480d070421ba99b28ee129cb6acb
+ms.openlocfilehash: 566c2e37c2b6ca6f36b6ef41d3f2911fc0539a6f
+ms.sourcegitcommit: 2e94beae05043a88b389349f0767e3a657415e4c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "60695423"
+ms.lasthandoff: 11/19/2021
+ms.locfileid: "61123709"
 ---
-# <a name="working-with-windows-365-cloud-pcs-using-the-microsoft-graph-api"></a>Trabalhando com Windows 365 Cloud PCs usando a API Graph Microsoft
+# <a name="working-with-windows-365-cloud-pcs-using-the-microsoft-graph-api"></a>Trabalhando com Cloud PCs do Windows 365 usando a API do Microsoft Graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Windows 365 é um serviço baseado em nuvem que provisiona e hospeda PCs de nuvem como máquinas virtuais para usuários finais. Os administradores podem configurar, gerenciar e dimensionar facilmente Windows 365 PCs de Nuvem para se ajustar às necessidades da organização. Os usuários finais individuais podem transmitir com segurança sua experiência rica e personalizada Windows , incluindo seus aplicativos, dados, conteúdo e configurações, da nuvem da Microsoft para qualquer dispositivo, a qualquer momento, com seu computador Windows 365 Cloud.
+O Windows 365 é um serviço baseado em nuvem que cria automaticamente um tipo de máquina virtual do Windows (PCs na nuvem) para os seus usuários finais. Cada computador cloud é atribuído a um usuário individual como um dispositivo Windows exclusivo. O Windows 365 fornece os benefícios de produtividade, segurança e colaboração do Microsoft 365.
 
 A API Graph microsoft habilita o acesso programático às ações de gerenciamento e informações do Cloud PC em sua organização. A API executa as mesmas operações que as disponíveis por meio Microsoft Endpoint Manager. 
 
@@ -45,3 +45,7 @@ O Microsoft Graph controla o acesso aos recursos por meio de permissões. Como d
 ## <a name="whats-new"></a>Novidades
 
 Saiba mais sobre os [novos recursos e atualizações mais recentes](/graph/whats-new-overview) para este conjunto de APIs.
+
+## <a name="next-steps"></a>Próximas etapas
+- Confira a visão [geral do Windows 365 Cloud PC no Microsoft Graph](/graph/cloudpc-concept-overview).
+- Experimente as APIs Windows 365 Cloud PCs usando o [Microsoft Graph Explorer](https://developer.microsoft.com/graph/graph-explorer).

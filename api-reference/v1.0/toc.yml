@@ -119,6 +119,8 @@ items:
             href: /graph/migrate-azure-ad-graph-deploy-test-extend?context=graph/api/1.0
           - name: Perguntas frequentes sobre migração
             href: /graph/migrate-azure-ad-graph-faq?context=graph/api/1.0
+          - name: Configurar permissões do Azure AD Graph
+            href: /graph/migrate-azure-ad-graph-configure-permissions?context=graph/api/1.0
   - name: Usar SDKs
     items:
       - name: Visão geral
@@ -280,7 +282,7 @@ items:
           - name: Atribuição de funções do aplicativo
             href: resources/approleassignment.md
             items:
-              - name: Listar
+              - name: List
                 href: api/user-list-approleassignments.md
               - name: Adicionar
                 href: api/user-post-approleassignments.md
@@ -323,7 +325,7 @@ items:
                 href: api/user-list-contactfolders.md
           - name: Concessões de permissão delegadas
             items:
-              - name: Listar
+              - name: List
                 href: api/user-list-oauth2permissiongrants.md
           - name: Objetos de diretório
             href: resources/directoryobject.md
@@ -331,15 +333,15 @@ items:
               - name: Atribuir licença
                 href: api/user-assignlicense.md
               - name: Verificar grupos de membros
-                href: api/user-checkmembergroups.md
+                href: api/directoryobject-checkmembergroups.md
               - name: Verificar objetos membros
                 href: api/user-checkmemberobjects.md
               - name: Exportar dados pessoais
                 href: api/user-exportpersonaldata.md
               - name: Obter objetos de membros
-                href: api/user-getmemberobjects.md
+                href: api/directoryobject-getmemberobjects.md
               - name: Obter grupos de membros
-                href: api/user-getmembergroups.md
+                href: api/directoryobject-getmembergroups.md
               - name: Obter objetos por ID
                 href: api/directoryobject-getbyids.md
               - name: Listar objetos criados
@@ -519,7 +521,7 @@ items:
                 href: api/usersettings-update.md
       - name: Grupos
         items:
-          - name: Visão Geral
+          - name: Visão geral
             href: resources/groups-overview.md
           - name: Group
             href: resources/group.md
@@ -543,13 +545,13 @@ items:
               - name: Atribuir licença
                 href: api/group-assignlicense.md
               - name: Verificar grupos de membros
-                href: api/group-checkmembergroups.md
+                href: api/directoryobject-checkmembergroups.md
               - name: Verificar objetos membros
                 href: api/group-checkmemberobjects.md
               - name: Obter intervalo
                 href: api/group-delta.md
               - name: Obter grupos de membros
-                href: api/group-getmembergroups.md
+                href: api/directoryobject-getmembergroups.md
               - name: Obter objetos de membros
                 href: api/group-getmemberobjects.md
               - name: Configuração de grupo
@@ -624,7 +626,7 @@ items:
           - name: Atribuição de funções do aplicativo
             href: resources/approleassignment.md
             items:
-              - name: Listar
+              - name: List
                 href: api/group-list-approleassignments.md
               - name: Adicionar
                 href: api/group-post-approleassignments.md
@@ -823,7 +825,7 @@ items:
                         href: api/application-delete-extensionproperty.md
               - name: Proprietários
                 items:
-                  - name: Listar
+                  - name: List
                     href: api/application-list-owners.md
                   - name: Adicionar
                     href: api/application-post-owners.md
@@ -836,7 +838,7 @@ items:
                     items:
                       - name: Atribuir
                         href: api/application-post-tokenissuancepolicies.md
-                      - name: Listar
+                      - name: List
                         href: api/application-list-tokenissuancepolicies.md
                       - name: Remover
                         href: api/application-delete-tokenissuancepolicies.md
@@ -845,7 +847,7 @@ items:
                     items:
                       - name: Atribuir
                         href: api/application-post-tokenlifetimepolicies.md
-                      - name: Listar
+                      - name: List
                         href: api/application-list-tokenlifetimepolicies.md
                       - name: Remover
                         href: api/application-delete-tokenlifetimepolicies.md
@@ -880,7 +882,7 @@ items:
               - name: Atribuição de funções do aplicativo
                 href: resources/approleassignment.md
                 items:
-                  - name: Listar
+                  - name: List
                     href: api/serviceprincipal-list-approleassignments.md
                   - name: Adicionar
                     href: api/serviceprincipal-post-approleassignments.md
@@ -904,7 +906,7 @@ items:
                     href: api/serviceprincipal-removekey.md
               - name: Concessões de permissão delegadas
                 items:
-                  - name: Listar
+                  - name: List
                     href: api/serviceprincipal-list-oauth2permissiongrants.md
               - name: Classificações de permissão delegada
                 href: resources/delegatedpermissionclassification.md
@@ -922,16 +924,16 @@ items:
                   - name: Listar membro transitivo de
                     href: api/serviceprincipal-list-transitivememberof.md
                   - name: Verificar grupos de membros
-                    href: api/serviceprincipal-checkmembergroups.md
+                    href: api/directoryobject-checkmembergroups.md
                   - name: Verificar objetos membros
                     href: api/serviceprincipal-checkmemberobjects.md
                   - name: Obter grupos de membros
-                    href: api/serviceprincipal-getmembergroups.md
+                    href: api/directoryobject-getmembergroups.md
                   - name: Obter objetos de membros
                     href: api/serviceprincipal-getmemberobjects.md
               - name: Proprietários
                 items:
-                  - name: Listar
+                  - name: List
                     href: api/serviceprincipal-list-owners.md
                   - name: Adicionar
                     href: api/serviceprincipal-post-owners.md
@@ -944,7 +946,7 @@ items:
                     items:
                       - name: Atribuir
                         href: api/serviceprincipal-post-claimsmappingpolicies.md
-                      - name: Listar
+                      - name: List
                         href: api/serviceprincipal-list-claimsmappingpolicies.md
                       - name: Remover
                         href: api/serviceprincipal-delete-claimsmappingpolicies.md
@@ -953,7 +955,7 @@ items:
                     items:
                       - name: Atribuir
                         href: api/serviceprincipal-post-homerealmdiscoverypolicies.md
-                      - name: Listar
+                      - name: List
                         href: api/serviceprincipal-list-homerealmdiscoverypolicies.md
                       - name: Remover
                         href: api/serviceprincipal-delete-homerealmdiscoverypolicies.md
@@ -990,7 +992,7 @@ items:
                     items:
                       - name: Atribuir
                         href: api/application-post-tokenissuancepolicies.md
-                      - name: Listar
+                      - name: List
                         href: api/application-list-tokenissuancepolicies.md
                       - name: Remover
                         href: api/application-delete-tokenissuancepolicies.md
@@ -999,7 +1001,7 @@ items:
                     items:
                       - name: Atribuir
                         href: api/application-post-tokenlifetimepolicies.md
-                      - name: Listar
+                      - name: List
                         href: api/application-list-tokenlifetimepolicies.md
                       - name: Remover
                         href: api/application-delete-tokenlifetimepolicies.md
@@ -1302,9 +1304,9 @@ items:
                     href: resources/callrecords-callrecord.md
                   - name: Obter registro de chamada
                     href: api/callrecords-callrecord-get.md
-              - name: Session
+              - name: Sessão
                 items:
-                  - name: Session
+                  - name: Sessão
                     href: resources/callrecords-session.md
                   - name: Listar sessões
                     href: api/callrecords-session-list.md
@@ -1352,7 +1354,7 @@ items:
             href: resources/complianceapioverview.md
           - name: Solicitação de direitos do sujeito
             items:
-              - name: Visão Geral
+              - name: Visão geral
                 href: resources/subjectrightsrequest-subjectrightsrequestapioverview.md
               - name: Solicitação de direitos do sujeito
                 href: resources/subjectrightsrequest.md
@@ -4120,7 +4122,7 @@ items:
                         href: api/intune-tem-telecomexpensemanagementpartner-update.md
           - name: Comunicações e integridade do serviço
             items:
-              - name: Visão Geral
+              - name: Visão geral
                 href: resources/service-communications-api-overview.md
               - name: Comunicado do serviço
                 href: resources/serviceannouncement.md
@@ -4656,9 +4658,9 @@ items:
                       - name: Listar memberOf
                         href: api/orgcontact-list-memberof.md
                       - name: Obter grupos de membros
-                        href: api/orgcontact-getmembergroups.md
+                        href: api/directoryobject-getmembergroups.md
                       - name: Verificar grupos de membros
-                        href: api/orgcontact-checkmembergroups.md
+                        href: api/directoryobject-checkmembergroups.md
                   - name: Hierarquia da organização
                     href: resources/directoryobject.md
                     items:
@@ -4708,7 +4710,7 @@ items:
             items:
               - name: Métodos de autenticação
                 items:
-                  - name: Visão Geral
+                  - name: Visão geral
                     href: resources/authenticationmethods-overview.md
                   - name: Listar todos os métodos
                     href: api/authentication-list-methods.md
@@ -5178,7 +5180,7 @@ items:
                   - name: Instância de revisão do Access
                     href: resources/accessreviewinstance.md
                     items:
-                      - name: Listar
+                      - name: List
                         href: api/accessreviewinstance-list.md
                       - name: Listar decisões
                         href: api/accessreviewinstance-list-decisions.md
@@ -5606,7 +5608,7 @@ items:
                 href: api/outlookcategory-delete.md
           - name: Propriedades estendidas
             items:
-              - name: Visão Geral
+              - name: Visão geral
                 href: resources/extended-properties-overview.md
               - name: Propriedades estendidas de valor único
                 items:
@@ -5651,7 +5653,7 @@ items:
                     href: api/provisioningobjectsummary-list.md
           - name: Microsoft 365 de uso
             items:
-              - name: Visão Geral
+              - name: Visão geral
                 href: resources/report.md
               - name: Uso do dispositivo do Microsoft Teams
                 href: resources/microsoft-teams-device-usage-reports.md
@@ -6029,7 +6031,7 @@ items:
                     href: api/site-delete-permission.md
           - name: Listas
             items:
-              - name: Listar
+              - name: List
                 href: resources/list.md
               - name: Criar lista
                 href: api/list-create.md
@@ -6122,7 +6124,7 @@ items:
               - name: Set
                 href: resources/termstore-set.md
                 items:
-                  - name: Listar
+                  - name: List
                     href: api/termstore-group-list-sets.md
                   - name: Listar filhos
                     href: api/termstore-term-list-children.md
@@ -6159,7 +6161,7 @@ items:
         items:
           - name: Visão Geral
             href: resources/planner-overview.md
-          - name: Planejar
+          - name: Plano
             href: resources/plannerplan.md
             items:
               - name: Criar plano
@@ -6307,11 +6309,11 @@ items:
               - name: Remover proprietário
                 href: api/group-delete-owners.md
               - name: Obter grupos de membros
-                href: api/group-getmembergroups.md
+                href: api/directoryobject-getmembergroups.md
               - name: Obter objetos de membros
                 href: api/group-getmemberobjects.md
               - name: Verificar grupos de membros
-                href: api/group-checkmembergroups.md
+                href: api/directoryobject-checkmembergroups.md
               - name: Listar membro de
                 href: api/group-list-memberof.md
               - name: Obter grupo excluído
@@ -6427,7 +6429,7 @@ items:
                 href: api/chats-getallmessages.md
               - name: Obter conteúdo hospedado
                 href: api/chatmessagehostedcontent-get.md
-          - name: Aplicativo
+          - name: App
             items:
               - name: Aplicativo no catálogo
                 href: resources/teamsapp.md
@@ -6583,7 +6585,7 @@ items:
                     href: api/offershiftrequest-post.md
                   - name: Obter
                     href: api/offershiftrequest-get.md
-                  - name: Listar
+                  - name: List
                     href: api/offershiftrequest-list.md
                   - name: Aprovar
                     href: api/offershiftrequest-approve.md
@@ -6712,7 +6714,7 @@ items:
       - name: Tarefas pendentes
         displayName: Microsoft To Do
         items:
-          - name: Visão Geral
+          - name: Visão geral
             href: resources/todo-overview.md
           - name: Lista de tarefas
             href: resources/todotasklist.md

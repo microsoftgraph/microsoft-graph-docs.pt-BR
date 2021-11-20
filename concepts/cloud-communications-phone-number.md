@@ -4,12 +4,12 @@ description: Este artigo descreve como criar um bot que é acessível por meio d
 author: ananmishr
 ms.localizationpriority: medium
 ms.prod: cloud-communications
-ms.openlocfilehash: 7ef62359d658ce848f922b5d2e083e7e952ddbcc
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 7d3a59f497f409c1292313b7847a66cd7138bed7
+ms.sourcegitcommit: 2e94beae05043a88b389349f0767e3a657415e4c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59136142"
+ms.lasthandoff: 11/19/2021
+ms.locfileid: "61124018"
 ---
 # <a name="manage-phone-numbers-for-bots"></a>Gerenciar números de telefone para bots 
 
@@ -98,5 +98,5 @@ Depois de desatribuição do número, você pode atribuir um número diferente a
 
 ## <a name="see-also"></a>Confira também
 
-- [Exemplo de bot de incidente](https://github.com/microsoftgraph/microsoft-graph-comms-samples/tree/master/Samples/BetaSamples/RemoteMediaSamples/IncidentBot). 
- - Para obter detalhes sobre como implantar, consulte [Deploying the sample](https://github.com/microsoftgraph/microsoft-graph-comms-samples/blob/master/Samples/BetaSamples/RemoteMediaSamples/README.md#deploying-the-sample).
+- [Exemplo de bot de incidente](https://github.com/microsoftgraph/microsoft-graph-comms-samples/tree/master/Samples/V1.0Samples/RemoteMediaSamples/IncidentBot). 
+ - Para obter detalhes sobre como implantar, consulte [Deploying the sample](https://github.com/microsoftgraph/microsoft-graph-comms-samples/blob/master/Samples/V1.0Samples/RemoteMediaSamples/README.md#deploying-the-sample).

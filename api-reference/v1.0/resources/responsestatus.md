@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: harini84
 ms.prod: outlook
 doc_type: resourcePageType
-ms.openlocfilehash: e1b2861386fc32589d35d6354345b1ba24471d98
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 92f5a5174709de465204d6dec53f05bf95bb2f85
+ms.sourcegitcommit: 2e94beae05043a88b389349f0767e3a657415e4c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59108867"
+ms.lasthandoff: 11/19/2021
+ms.locfileid: "61123913"
 ---
 # <a name="responsestatus-resource-type"></a>Tipo de recurso responseStatus
 
@@ -24,7 +24,7 @@ Você pode obter o status de resposta de um participante [](event.md) ou organiz
 
 | Propriedade | Tipo           | Descrição |
 |:---------|:---------------|:------------|
-| response | responseType   | O tipo de resposta. Os valores possíveis são: `none`, `organizer`, `tentativelyAccepted`, `accepted`, `declined`, `notResponded`.<br><br>Para diferenciar entre e : como exemplo, se o participante Alex não tiver respondido a uma solicitação de reunião, obter o status de resposta de Alex para esse evento no calendário de `none` `notResponded` Alex retornará `notResponded` . Obter a resposta de Alex do calendário de qualquer outro participante ou os retornos do organizador `none` . Obter a resposta do organizador para o evento no calendário de qualquer pessoa também retorna `none` . 
+| response | Cadeia de caracteres         | O tipo de resposta. Os valores possíveis são: `none`, `organizer`, `tentativelyAccepted`, `accepted`, `declined`, `notResponded`.<br><br>Para diferenciar entre `none` e `notResponded` : <br><br> `none` – da perspectiva do organizador. Esse valor é usado quando o status de um participante/participante é relatado ao organizador de uma reunião. <br><br> `notResponded` – da perspectiva do attendde. Indica que o participante não respondeu à solicitação de reunião. <br><br> Os clientes podem tratar `notResponded`  ==  `none` . <br><br> Como exemplo, se o participante Alex não tiver respondido a uma solicitação de reunião, obter o status de resposta de Alex para esse evento no calendário de Alex retornará `notResponded` . Obter a resposta de Alex do calendário de qualquer outro participante ou os retornos do organizador `none` . Obter a resposta do organizador para o evento no calendário de qualquer pessoa também retorna `none` . 
 | time     | DateTimeOffset | A data e hora em que a resposta retornou. Usa o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite UTC em 1 de janeiro de 2014 é `2014-01-01T00:00:00Z`
 
 ## <a name="json-representation"></a>Representação JSON

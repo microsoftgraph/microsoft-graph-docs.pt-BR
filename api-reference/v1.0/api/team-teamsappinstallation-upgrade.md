@@ -5,18 +5,20 @@ author: akjo
 ms.localizationpriority: medium
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 2144e203172abad2b9c4245dcd1cf8ec42b0d13d
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: 823b37985368be6cbed33dcb4603537372d6df69
+ms.sourcegitcommit: 2e94beae05043a88b389349f0767e3a657415e4c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "61029123"
+ms.lasthandoff: 11/19/2021
+ms.locfileid: "61123443"
 ---
 # <a name="teamsappinstallation-in-team-upgrade"></a>teamsAppInstallation na equipe: atualização
 
 Namespace: microsoft.graph
 
 Atualize [uma instalação de aplicativo](../resources/teamsappinstallation.md) em uma [equipe](../resources/team.md) para a versão mais recente do aplicativo.
+
+> **Observação:** Atualmente, essa operação não dá suporte à atualização de aplicativos que exigem permissões de consentimento específicas do recurso. Para mais detalhes, confira [Problemas conhecidos](/graph/known-issues#Installation-of-apps-that-require-resource-specific-consent-permissions-is-not-supported).
 
 ## <a name="permissions"></a>Permissões
 

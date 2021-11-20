@@ -217,6 +217,8 @@ items:
           - name: Gerenciamento corporativo
             href: intune-concept-overview.md
             displayName: Intune
+          - name: Cloud PC (visualização)
+            href: cloudpc-concept-overview.md
           - name: Atualizações do dispositivo (prévia)
             displayName: Windows updates
             items:

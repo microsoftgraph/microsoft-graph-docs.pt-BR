@@ -1,24 +1,24 @@
 ---
-title: Adicionar proprietário do grupo
-description: Adiciona um usuário aos proprietários do grupo.
+title: Adicionar proprietários
+description: Adicione um usuário ou entidade de serviço a Microsoft 365 proprietários de um grupo de segurança ou de segurança.
 ms.localizationpriority: medium
 author: Jordanndahl
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: 27eb44ffb2b3fe8a6ee047b49978ec0506dbd8f1
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: a47720e97a729aa061382938e6b4a88bf246a1d9
+ms.sourcegitcommit: 2e94beae05043a88b389349f0767e3a657415e4c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "61018616"
+ms.lasthandoff: 11/19/2021
+ms.locfileid: "61124109"
 ---
-# <a name="add-group-owner"></a>Adicionar proprietário do grupo
+# <a name="add-owners"></a>Adicionar proprietários
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Adicione um usuário ou diretor de serviço aos proprietários do grupo. Os proprietários são um conjunto de usuários ou diretores de serviço que têm permissão para modificar o objeto de grupo.
+Adicione um usuário ou entidade de serviço a Microsoft 365 proprietários de um grupo de segurança ou de segurança. Os proprietários são um conjunto de usuários ou os diretores de serviço que têm permissão para modificar o objeto do grupo.
 
 >**Importante:** se você atualizar os proprietários do grupo, e você criou uma equipe para o grupo, poderá levar até duas horas para que os proprietários sejam sincronizados com o Microsoft Teams. Além disso, se você quiser que o proprietário seja capaz de fazer alterações em uma equipe - por exemplo, criando um plano Planner - o proprietário também precisará ser adicionado como um membro do grupo/equipe. 
 

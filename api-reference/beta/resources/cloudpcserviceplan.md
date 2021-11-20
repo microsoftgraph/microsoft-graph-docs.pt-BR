@@ -1,16 +1,16 @@
 ---
 title: Tipo de recurso cloudPcServicePlan
-description: Representa uma coleção definida de configurações de plano de serviço que os PCs da Nuvem suportam para um locatário.
+description: Representa um Windows de serviço 365 configurado para um computador cloud.
 author: RuiHou105
 ms.localizationpriority: medium
 ms.prod: cloud-pc
 doc_type: resourcePageType
-ms.openlocfilehash: d2950e65ec3f90f2c7a3e55123e46c435dc805f4
-ms.sourcegitcommit: c7ff992ef63e480d070421ba99b28ee129cb6acb
+ms.openlocfilehash: 281bfdbaefde3b58b8bb9c0367d92d7dfc0bebb3
+ms.sourcegitcommit: 2e94beae05043a88b389349f0767e3a657415e4c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "60697176"
+ms.lasthandoff: 11/19/2021
+ms.locfileid: "61123948"
 ---
 # <a name="cloudpcserviceplan-resource-type"></a>Tipo de recurso cloudPcServicePlan
 
@@ -18,21 +18,23 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Representa uma coleção definida de configurações de plano de serviço que os PCs da Nuvem suportam para um locatário.
+Representa um Windows de serviço 365 configurado para um computador cloud.
+
+Para exemplos de planos de serviço disponíveis no momento, consulte [Windows 365 comparar planos e preços.](https://www.microsoft.com/windows-365/business/compare-plans-pricing) Atualmente, a API Graph microsoft está disponível para Windows 365 Enterprise.
 
 ## <a name="methods"></a>Métodos
 
 |Método|Tipo de retorno|Descrição|
 |:---|:---|:---|
-|[Listar servicePlans](../api/virtualendpoint-list-serviceplans.md)|[Coleção cloudPcServicePlan](../resources/cloudpcserviceplan.md)|Listar os planos de serviço que os PCs de Nuvem suportam para esse locatário.|
+|[Listar servicePlans](../api/virtualendpoint-list-serviceplans.md)|[Coleção cloudPcServicePlan](../resources/cloudpcserviceplan.md)|Lista os planos de serviço disponíveis no momento que a organização pode comprar para os PCs de Nuvem.|
 
 ## <a name="properties"></a>Propriedades
 
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|displayName|String|O nome do plano de serviço. Somente leitura.|
-|id|String|Identificador exclusivo do plano de serviço. Somente leitura.|
-|ramInGB|Int32|O tamanho da RAM em GB. Apenas leitura.|
+|displayName|Cadeia de caracteres|O nome do plano de serviço. Somente leitura.|
+|id|Cadeia de caracteres|Identificador exclusivo do plano de serviço. Somente leitura.|
+|ramInGB|Int32|O tamanho da RAM em GB. Somente leitura.|
 |storageInGB|Int32|O tamanho do disco do sistema operacional em GB. Somente leitura.|
 |type|[cloudPcServicePlanType](#cloudpcserviceplantype-values)|O tipo do plano de serviço. Os valores possíveis são: `enterprise`, `business`, `unknownFutureValue`. Somente leitura.|
 |userProfileInGB|Int32|O tamanho do disco de perfil do usuário em GB. Somente leitura.|

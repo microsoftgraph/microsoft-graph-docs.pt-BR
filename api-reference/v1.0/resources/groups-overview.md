@@ -5,12 +5,12 @@ author: Jordanndahl
 ms.localizationpriority: high
 ms.prod: groups
 doc_type: conceptualPageType
-ms.openlocfilehash: f5ec1ea04008542e1705ea12da7e5701bfd211e9
-ms.sourcegitcommit: c7ff992ef63e480d070421ba99b28ee129cb6acb
+ms.openlocfilehash: 4fba8ecca0fd82c5e7e45bd5aa0e1c05d4ef84e0
+ms.sourcegitcommit: 2e94beae05043a88b389349f0767e3a657415e4c
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "60688384"
+ms.lasthandoff: 11/19/2021
+ms.locfileid: "61124025"
 ---
 # <a name="working-with-groups-in-microsoft-graph"></a>Trabalhando com grupos no Microsoft Graph
 
@@ -139,7 +139,7 @@ Ao usar o Microsoft Graph, você pode executar as seguintes operações comuns.
 | Criar novos grupos, obter os grupos existentes, atualizar as propriedades nos grupos e excluir grupos. Atualmente, somente os grupos de segurança e grupos no Outlook podem ser criados por meio da API. | [grupo](group.md) | [Criar novos grupos](../api/group-post-groups.md) <br/> [Listar grupos](../api/group-list.md) <br/> [Atualizar grupos](../api/group-update.md) <br/> [Excluir grupos](../api/group-delete.md) |
 | **Métodos de associação a grupos** | | |
 | Listar os membros de um grupo e adicionar ou remover membros. | [usuário](user.md) <br/> [grupo](group.md)| [Listar membros](../api/group-list-members.md) <br/> [Adicionar membro](../api/group-post-members.md) <br/> [Remover membro](../api/group-delete-members.md)|
-| Determinar se um usuário faz parte de um grupo, acessar todos os grupos do qual o usuário faz parte. | [usuário](user.md) <br/> [grupo](group.md)| [Verificar grupos de membros](../api/group-checkmembergroups.md) <br/> [Obter grupos de membros](../api/group-getmembergroups.md)|
+| Determinar se um usuário faz parte de um grupo, acessar todos os grupos do qual o usuário faz parte. | [usuário](user.md) <br/> [group](group.md) <br/> [servicePrincipal](serviceprincipal.md) <br/> [orgContact](orgcontact.md)| [Verificar grupos de membros](../api/directoryobject-checkmembergroups.md) <br/> [Obter grupos de membros](../api/directoryobject-getmembergroups.md)|
 | Listar os proprietários de um grupo e adicionar ou remover proprietários. | [usuário](user.md) <br/> [grupo](group.md)| [Listar proprietários](../api/group-list-members.md) <br/> [Adicionar membro](../api/group-post-members.md) <br/> [Remover membro](../api/group-delete-members.md)|
 
 ## <a name="whats-new"></a>Novidades

@@ -3,12 +3,12 @@ title: Problemas conhecidos com o Microsoft Graph
 description: Este artigo descreve os problemas conhecidos com o Microsoft Graph.
 author: MSGraphDocsVTeam
 ms.localizationpriority: high
-ms.openlocfilehash: c971998ef191295bfcda25251b016d3b51dbb64f
-ms.sourcegitcommit: 42e0e15ff90815e0126c34b928405486cfb1ed86
+ms.openlocfilehash: e0e6ac6237d9d6dce6d5ec786b69d6faaba8b814
+ms.sourcegitcommit: 2e94beae05043a88b389349f0767e3a657415e4c
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/17/2021
-ms.locfileid: "61044817"
+ms.lasthandoff: 11/19/2021
+ms.locfileid: "61123576"
 ---
 # <a name="known-issues-with-microsoft-graph"></a>Problemas conhecidos com o Microsoft Graph
 
@@ -338,7 +338,12 @@ Sempre especifique URIs relativas em solicitações de lote. O Microsoft Graph e
 
 ### <a name="batch-size-is-limited"></a>O tamanho do lote é limitado
 
-No momento, as solicitações de lote JSON estão limitadas a 20 solicitações individuais.
+No momento, as solicitações de lote JSON estão limitadas a 20 solicitações individuais. 
+
+* Dependendo da parte das APIs da solicitação em lote, os serviços subjacentes impõem suas próprias limitações que afetam os aplicativos que usam o Microsoft Graph para acessá-los.
+* As solicitações em um lote são avaliadas individualmente em relação às limitações e, se qualquer solicitação exceder os limites, ela falhará com um status de 429.
+
+Para obter mais detalhes, visite [Limitação e envio em lote](/graph/concepts/throttling.md#throttling-and-batching).
 
 ### <a name="request-dependencies-are-limited"></a>As dependências de solicitação são limitadas
 
@@ -405,6 +410,13 @@ Em certos casos, a `tenantId` / `email` / `displayName` propriedade para os memb
 
 ### <a name="properties-are-missing-in-the-list-of-teams-that-a-user-has-joined"></a>Faltam propriedades na lista de equipes que um usuário ingressou
 A chamada à API para [me/joinedTeams](/graph/api/user-list-joinedteams) retorna apenas as propriedades **id**, **displayName** e **description** de uma [equipe](/graph/api/resources/team). Para obter todas as propriedades, use a operação[obter a equipe](/graph/api/team-get).
+
+### <a name="installation-of-apps-that-require-resource-specific-consent-permissions-is-not-supported"></a>A instalação de aplicativos que exigem permissões de consentimento específicas do recurso não é compatível
+As chamadas de API a seguir não suportam a instalação de aplicativos que exigem permissões de [consentimento específicas do recurso](https://aka.ms/teams-rsc).
+- [Adicionar aplicativo à equipe](/graph/api/team-post-installedapps.md)
+- [Atualizar o aplicativo instalado para a equipe](/graph/api/team-teamsappinstallation-upgrade.md)
+- [Adicionar o aplicativo ao chat](/graph/api/chat-post-installedapps.md)
+- [Atualizar aplicativo instalado no chat](/graph/api/chat-teamsappinstallation-upgrade.md)
 
 ## <a name="users"></a>Usuários
 

@@ -1,16 +1,16 @@
 ---
 title: Listar servicePlans
-description: Listar os planos de serviço que os PCs de Nuvem suportam para um locatário.
+description: Listar os planos de serviço disponíveis no momento que uma organização pode comprar para seus PCs de Nuvem.
 author: RuiHou105
 ms.localizationpriority: medium
 ms.prod: cloud-pc
 doc_type: apiPageType
-ms.openlocfilehash: 82b3659e1cae574990812f8ac83f90bf0aea64ec
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: 8dfda99dc45d27624f9d5f349461213b5e06f23e
+ms.sourcegitcommit: 2e94beae05043a88b389349f0767e3a657415e4c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "61033295"
+ms.lasthandoff: 11/19/2021
+ms.locfileid: "61123843"
 ---
 # <a name="list-serviceplans"></a>Listar servicePlans
 
@@ -18,7 +18,9 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Listar os planos de serviço que os PCs de Nuvem suportam para um locatário.
+Listar os planos de serviço disponíveis no momento que uma organização pode comprar para seus PCs de Nuvem.
+
+Para exemplos de planos de serviço disponíveis no momento, consulte [Windows 365 comparar planos e preços.](https://www.microsoft.com/windows-365/business/compare-plans-pricing) Atualmente, a API Graph microsoft está disponível para Windows 365 Enterprise.
 
 ## <a name="permissions"></a>Permissões
 

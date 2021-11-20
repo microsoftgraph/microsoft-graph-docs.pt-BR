@@ -2,15 +2,15 @@
 author: chackman
 description: Desa siga um item que o usuário está seguindo.
 title: Item de unidade de unfollow
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: sharepoint
 doc_type: apiPageType
-ms.openlocfilehash: fcaa9f39163daa42e12fbea324f4ecbc93ae0977
-ms.sourcegitcommit: 5b0aab5422e0619ce8806664c479479d223129ec
+ms.openlocfilehash: 741f4c16e44e37ae1d08902df1040aa2c921268d
+ms.sourcegitcommit: 2e94beae05043a88b389349f0767e3a657415e4c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/14/2021
-ms.locfileid: "50776792"
+ms.lasthandoff: 11/19/2021
+ms.locfileid: "61123744"
 ---
 # <a name="unfollow-drive-item"></a>Item de unidade de unfollow
 
@@ -22,7 +22,7 @@ Desa siga um [driveItem](../resources/driveitem.md).
 
 >**Observação:** Para seguir um item, consulte [Follow Item](driveitem-follow.md).
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>Permissões
 
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
@@ -61,7 +61,7 @@ Este exemplo não segue um item identificado por `{item-id}` .
 <!-- { "blockType": "request", "name": "unfollow-item", "scopes": "files.read" } -->
 
 ```http
-DELETE /me/drive/items/{item-id}/unfollow
+POST /me/drive/items/{item-id}/unfollow
 ```
 # <a name="c"></a>[C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/unfollow-item-csharp-snippets.md)]
