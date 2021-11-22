@@ -1,17 +1,17 @@
 ---
 description: Arquivo gerado automaticamente. NÃO MODIFICAR
-ms.openlocfilehash: b1e37f0a6afcb2a52180ab67382b3bc3d257740df1876285f4f1ddd9b697d16d
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 6b464f2fa2b5e91e69a03817313097428df1bcc8
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "57215138"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "61020981"
 ---
 ```java
 
 GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
 
-WebAccount webAccount = graphClient.me().profile().webAccounts("{id}")
+DriveItemVersion driveItemVersion = graphClient.me().drive().items("{item-id}").versions("current")
     .buildRequest()
     .get();
 

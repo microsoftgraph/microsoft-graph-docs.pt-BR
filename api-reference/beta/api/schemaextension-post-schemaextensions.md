@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: dkershaw10
 doc_type: apiPageType
 ms.prod: extensions
-ms.openlocfilehash: 2d9dc44af2bda69d9451ab76d1abdd3cabf64d37
-ms.sourcegitcommit: 08e9b0bac39c1b1d2c8a79539d24aaa93364baf2
+ms.openlocfilehash: af07042a869a76fb96ff9d8a8f7fd20c6548aaed
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/24/2021
-ms.locfileid: "59766982"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "60993809"
 ---
 # <a name="create-schemaextension"></a>Criar schemaExtension
 
@@ -123,6 +123,10 @@ Content-type: application/json
 [!INCLUDE [sample-code](../includes/snippets/java/create-schemaextension-from-schemaextensions-1-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# <a name="go"></a>[Ir](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/create-schemaextension-from-schemaextensions-1-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 
@@ -168,7 +172,7 @@ Content-type: application/json
 
 #### <a name="request"></a>Solicitação
 
-O exemplo a seguir mostra a especificação apenas de um nome de esquema, , na propriedade id na solicitação, juntamente com a representação JSON do restante das propriedades no objeto `courses` [schemaExtension.](../resources/schemaextension.md)  O Microsoft Graph atribuirá e retornará um valor de cadeia de caracteres exclusivo na resposta.
+O exemplo a seguir mostra a especificação de apenas um nome de esquema, `courses`, na propriedade **id** na solicitação, junto com a representação JSON do resto das propriedades no objeto [schemaExtension](../resources/schemaextension.md). O Microsoft Graph atribuirá e retornará um valor exclusivo de cadeia de caracteres na resposta.
 
 
 # <a name="http"></a>[HTTP](#tab/http)
@@ -218,13 +222,17 @@ Content-type: application/json
 [!INCLUDE [sample-code](../includes/snippets/java/create-schemaextension-from-schemaextensions-2-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# <a name="go"></a>[Ir](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/create-schemaextension-from-schemaextensions-2-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 
 #### <a name="response"></a>Resposta
 
 A resposta inclui uma cadeia de caracteres exclusiva na propriedade **id** com base no nome do esquema fornecido na solicitação, junto com o resto da definição de esquema recém-criada. O valor em **id** na resposta se baseia no formato, ext\{_&#65279;8-random-alphanumeric-chars_\}\_\{_&#65279;schema-name_\}.
->**Observação:** O objeto de resposta mostrado aqui pode ser encurtado para legibilidade.
+>**Observação:** o objeto de resposta mostrado aqui pode ser encurtado para legibilidade.
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -263,7 +271,7 @@ Content-type: application/json
 
 #### <a name="request"></a>Solicitação
 
-O exemplo a seguir mostra como criar uma extensão de esquema definindo o **proprietário**.  Neste cenário, o usuário do aplicativo pode não ser o proprietário do aplicativo (por exemplo, se você estiver usando o Microsoft Graph Explorer).  Neste caso, você deve definir a propriedade do **proprietário** como a **appId** de um aplicativo que você possui, caso contrário, você não terá autorização para criar uma extensão de esquema. Defina a propriedade **proprietário** na solicitação, juntamente com a representação JSON do restante das propriedades no objeto [schemaExtension](../resources/schemaextension.md).
+Este exemplo mostra como criar uma extensão de esquema configurando o **proprietário**.  Neste cenário, o usuário do aplicativo pode não ser o proprietário do aplicativo (por exemplo, se você estiver usando o Microsoft Graph Explorer).  Neste caso, você deve definir a propriedade do **proprietário** como a **appId** de um aplicativo que você possui, caso contrário, você não terá autorização para criar uma extensão de esquema. Defina a propriedade **proprietário** na solicitação, juntamente com a representação JSON do restante das propriedades no objeto [schemaExtension](../resources/schemaextension.md).
 
 
 # <a name="http"></a>[HTTP](#tab/http)
@@ -313,6 +321,10 @@ Content-type: application/json
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/create-schemaextension-from-schemaextensions-3-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[Ir](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/create-schemaextension-from-schemaextensions-3-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

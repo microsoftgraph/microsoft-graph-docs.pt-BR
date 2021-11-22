@@ -1,16 +1,16 @@
 ---
 title: Excluir perfil
 description: Excluir perfil.
-localization_priority: Normal
+ms.localizationpriority: medium
 author: kevinbellinger
 ms.prod: people
 doc_type: apiPageType
-ms.openlocfilehash: b38059b052592ed82191973dfbaf598b35f0ed29
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 1854fe80720a483aabda9cda0da7a720009a0b3a
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48976012"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "61019574"
 ---
 # <a name="delete-profile"></a>Excluir perfil
 
@@ -18,7 +18,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Exclui um objeto de [perfil](../resources/profile.md) da conta de um usuário.
+Exclui um [objeto de](../resources/profile.md) perfil da conta de um usuário.
 
 ## <a name="permissions"></a>Permissões
 
@@ -26,8 +26,8 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 | Tipo de permissão                        | Permissões (da com menos para a com mais privilégios)                                      |
 |:---------------------------------------|:---------------------------------------------------------------------------------|
-| Delegado (conta corporativa ou de estudante)     | User. ReadWrite, User. ReadWrite. All |
-| Delegado (conta pessoal da Microsoft) | User. ReadWrite, User. ReadWrite. All |
+| Delegado (conta corporativa ou de estudante)     | User.ReadWrite, User.ReadWrite.All |
+| Delegado (conta pessoal da Microsoft) | User.ReadWrite, User.ReadWrite.All |
 | Aplicativo                            | User.ReadWrite.All                            |
 
 ## <a name="http-request"></a>Solicitação HTTP
@@ -83,6 +83,10 @@ DELETE https://graph.microsoft.com/beta/me/profile
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/delete-profile-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[Ir](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/delete-profile-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: videor
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: a1f64d68a05516dab32b20dc2bf25bc3562971ef
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: c296034a0c3a61918bb6c4269686139d0f69db75
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59147810"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "60993659"
 ---
 # <a name="create-namedlocation"></a>Criar namedLocation
 
@@ -58,8 +58,8 @@ A tabela a seguir lista as propriedades necessárias para criar um [objeto count
 
 | Propriedade     | Tipo        | Descrição |
 |:-------------|:------------|:------------|
-|countriesAndRegions|Coleção String|Lista de países e/ou regiões no formato de duas letras especificado pela ISO 3166-2. Obrigatório.|
-|displayName|String|Nome acessível para humanos do local. Obrigatório.|
+|countriesAndRegions|Coleção de cadeias de caracteres|Lista de países e/ou regiões no formato de duas letras especificado pela ISO 3166-2. Obrigatório.|
+|displayName|Cadeia de caracteres|Nome acessível para humanos do local. Obrigatório.|
 
 ## <a name="response"></a>Resposta
 
@@ -114,6 +114,10 @@ Content-type: application/json
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/create-namedlocation-from-conditionalaccessroot-1-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[Ir](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/create-namedlocation-from-conditionalaccessroot-1-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -195,6 +199,10 @@ Content-type: application/json
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/create-namedlocation-from-conditionalaccessroot-2-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[Ir](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/create-namedlocation-from-conditionalaccessroot-2-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

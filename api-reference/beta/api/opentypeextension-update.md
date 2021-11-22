@@ -1,16 +1,16 @@
 ---
 title: Atualizar extensão aberta
 description: 'Atualize uma extensão aberta (objeto openTypeExtension) com as propriedades no corpo da solicitação:'
-localization_priority: Normal
+ms.localizationpriority: medium
 author: dkershaw10
 doc_type: apiPageType
 ms.prod: extensions
-ms.openlocfilehash: 1817d7074d5b81416f31af3799a47dc4efd4a207
-ms.sourcegitcommit: 69c355eeb620b76ca70d896f984e21c32ac09eb0
+ms.openlocfilehash: f840680e452f34deec639335759768a4f02bd7bb
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/03/2021
-ms.locfileid: "50092374"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "60980612"
 ---
 # <a name="update-open-extension"></a>Atualizar extensão aberta
 
@@ -25,11 +25,11 @@ Atualize uma extensão aberta[(objeto openTypeExtension)](../resources/opentypee
 
 Os dados em uma extensão podem ser tipos primitivos ou matrizes de tipos primitivos.
 
-Consulte a tabela na seção [Permissões para](#permissions) ver a lista de recursos que suportam extensões abertas.
+Consulte a tabela na seção [Permissões](#permissions) para a lista de recursos que suportam extensões abertas.
 
 ## <a name="permissions"></a>Permissões
 
-Dependendo do recurso no qual a extensão foi criada e do tipo de permissão (delegado ou aplicativo) solicitado, a permissão especificada na tabela a seguir é a menos privilegiada necessária para chamar essa API. Para saber mais, incluindo [tomar cuidado](/graph/auth/auth-concepts#best-practices-for-requesting-permissions) antes de escolher permissões mais privilegiadas, procure as seguintes permissões em [Permissões.](/graph/permissions-reference)
+Dependendo do recurso no qual a extensão foi criada e do tipo de permissão (delegado ou aplicativo) solicitado, a permissão especificada na tabela a seguir é o mínimo privilegiado necessário para chamar essa API. Para saber mais, incluindo [tomar cuidado](/graph/auth/auth-concepts#best-practices-for-requesting-permissions) antes de escolher as permissões mais privilegiadas, pesquise as seguintes permissões em [Permissões](/graph/permissions-reference).
 
 | Recurso com suporte | Delegada (conta corporativa ou de estudante) | Delegada (conta pessoal da Microsoft) | Application |
 |:-----|:-----|:-----|:-----|
@@ -42,7 +42,7 @@ Dependendo do recurso no qual a extensão foi criada e do tipo de permissão (de
 | [organization](../resources/organization.md) | Organization.ReadWrite.All | Incompatível | Organization.ReadWrite.All |
 | [contato pessoal](../resources/contact.md) | Contacts.ReadWrite | Contacts.ReadWrite | Contacts.ReadWrite |
 | [user](../resources/user.md) | User.ReadWrite | User.ReadWrite | User.ReadWrite.All |
-| [task](../resources/todotask.md) | Tasks.ReadWrite | Tasks.ReadWrite | Tasks.ReadWrite.All |
+| [tarefa](../resources/todotask.md) | Tasks.ReadWrite | Tasks.ReadWrite | Tasks.ReadWrite.All |
 | [tasklist](../resources/todotasklist.md)  | Tasks.ReadWrite | Tasks.ReadWrite | Tasks.ReadWrite.All |
 
 ## <a name="http-request"></a>Solicitação HTTP
@@ -65,7 +65,7 @@ PATCH /users/me/todo/lists/{todoTaskListId}/tasks/{taskId}/extensions/{extension
 PATCH /users/me/todo/lists/{todoTaskListId}/extensions/{extensionId}
 ```
 
->**Observação:** A sintaxe acima mostra algumas maneiras comuns de identificar uma instância de recurso, para atualizar uma extensão dela. Todas as outras sintaxes que permitem identificar essas instâncias de recursos suportam a atualização de extensões abertas neles de maneira semelhante.
+>**Observação:** A sintaxe acima mostra algumas maneiras comuns de identificar uma instância de recurso, a fim de atualizar uma extensão nele. Todas as outras sintaxes que permitem identificar essas instâncias de recursos suportam a atualização de extensões abertas neles de maneira semelhante.
 
 Confira a seção [Solicitar corpo](#request-body) sobre como incluir no corpo de solicitação dados personalizados para alterar ou adicionar a essa extensão.
 
@@ -230,6 +230,10 @@ Content-type: application/json
 
 # <a name="objective-c"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/update-opentypeextension-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[Ir](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/update-opentypeextension-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

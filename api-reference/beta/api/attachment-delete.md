@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 doc_type: apiPageType
 ms.prod: outlook
 author: abheek-das
-ms.openlocfilehash: 8dbb8fe04455a9432b8548333ebc9615fa3fbb97
-ms.sourcegitcommit: 11be55b40804b07f4c422f09f601afa97c7d31ed
+ms.openlocfilehash: aef3f278c4e05ac5ec89fa407a7f6b60b0fb822a
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/09/2021
-ms.locfileid: "60255981"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "60982509"
 ---
 # <a name="delete-attachment"></a>Excluir anexo
 
@@ -156,6 +156,10 @@ DELETE https://graph.microsoft.com/beta/me/events/{id}/attachments/{id}
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/delete-attachment-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[Ir](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/delete-attachment-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

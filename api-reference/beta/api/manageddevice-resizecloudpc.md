@@ -5,12 +5,12 @@ author: RuiHou105
 ms.localizationpriority: medium
 ms.prod: cloud-pc
 doc_type: apiPageType
-ms.openlocfilehash: c74dfce74fae4cff6f4a44ac112d3ef309f44737
-ms.sourcegitcommit: 08e9b0bac39c1b1d2c8a79539d24aaa93364baf2
+ms.openlocfilehash: 952c6996d60058b94ff93fe352a047a52370a07a
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/24/2021
-ms.locfileid: "59508062"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "61019827"
 ---
 # <a name="manageddevice-resizecloudpc"></a>managedDevice: resizeCloudPc
 
@@ -28,7 +28,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |:---|:---|
 |Delegado (conta corporativa ou de estudante)|CloudPC.ReadWrite.All|
 |Delegado (conta pessoal da Microsoft)|Sem suporte.|
-|Application|CloudPC.ReadWrite.All|
+|Aplicativo|CloudPC.ReadWrite.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
 
@@ -84,6 +84,10 @@ POST https://graph.microsoft.com/beta/deviceManagement/managedDevices/{managedDe
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/manageddevice-resizecloudpc-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[Ir](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/manageddevice-resizecloudpc-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

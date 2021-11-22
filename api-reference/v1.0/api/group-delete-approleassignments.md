@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 doc_type: apiPageType
 ms.prod: groups
 author: psignoret
-ms.openlocfilehash: d19ad9da300066b333204ac0ab6aea48966ef410
-ms.sourcegitcommit: f4999aa6fc05f845027db01aa489f7086f9850e1
+ms.openlocfilehash: fc69cb7ec9c04d995889d2b9643027d74ae2c45b
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/13/2021
-ms.locfileid: "60289921"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "60976717"
 ---
 # <a name="delete-approleassignment"></a>Excluir appRoleAssignment
 
@@ -83,6 +83,10 @@ DELETE https://graph.microsoft.com/v1.0/groups/{id}/appRoleAssignments/{id}
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/group-delete-approleassignment-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[Ir](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/group-delete-approleassignment-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

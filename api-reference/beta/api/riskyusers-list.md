@@ -1,16 +1,16 @@
 ---
 title: Listar riskyUsers
 description: Recupere as propriedades e as relações de uma coleção de **objetos riskyUser.**
-localization_priority: Normal
+ms.localizationpriority: medium
 author: cloudhandler
 doc_type: apiPageType
 ms.prod: identity-and-sign-in
-ms.openlocfilehash: d0ab9e55f6274f048d6fe25dd9f731c91dd182ad
-ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
+ms.openlocfilehash: 6b340c994f328411bc445bb10041b4bbfa21140e
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50440771"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "60979947"
 ---
 # <a name="list-riskyusers"></a>Listar riskyUsers
 
@@ -20,7 +20,7 @@ Namespace: microsoft.graph
 
 Recupere as propriedades e as relações de uma coleção de **objetos riskyUser.**
 
->**Observação:** Usar a API riskyUsers requer uma licença do Azure AD Premium P2.
+>**Observação:** Usar a API riskyUsers requer uma Azure AD Premium P2 de usuário.
 
 ## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
@@ -81,6 +81,10 @@ GET https://graph.microsoft.com/beta/riskyUsers
 [!INCLUDE [sample-code](../includes/snippets/java/list-riskyusers-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# <a name="go"></a>[Ir](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/list-riskyusers-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 #### <a name="response"></a>Resposta
@@ -139,6 +143,10 @@ GET https://graph.microsoft.com/beta/identityProtection/riskyUsers?$filter=riskL
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/list-filter-riskyusers-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[Ir](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/list-filter-riskyusers-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

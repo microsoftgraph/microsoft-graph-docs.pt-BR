@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 doc_type: apiPageType
 ms.prod: users
 author: psignoret
-ms.openlocfilehash: 8b8c1d3cf4dc0354ccc9f3b326024f321f904298
-ms.sourcegitcommit: f4999aa6fc05f845027db01aa489f7086f9850e1
+ms.openlocfilehash: 78d7dd573f84a14a917afcbd9a204e028e66d740
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/13/2021
-ms.locfileid: "60289865"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "61009921"
 ---
 # <a name="delete-approleassignment"></a>Excluir appRoleAssignment
 
@@ -85,6 +85,10 @@ DELETE https://graph.microsoft.com/beta/users/{id}/appRoleAssignments/{id}
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/user-delete-approleassignment-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[Ir](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/user-delete-approleassignment-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

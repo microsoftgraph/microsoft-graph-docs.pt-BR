@@ -2,15 +2,15 @@
 title: Listar participantes
 description: Recupere uma lista de objetos participantes na chamada.
 author: ananmishr
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: c108934020d3eddf2af8f5af1fcf7dd7873d61b8
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: aaca0d98f5e0a4d22abf1faa05601ec1db0d7c61
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48959673"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "61019974"
 ---
 # <a name="list-participants"></a>Listar participantes
 
@@ -26,7 +26,7 @@ Recupere uma lista de objetos participantes na chamada.
 | :-------------- | :------------------------------------------ |
 | Delegado (conta corporativa ou de estudante)     | Não suportado        |
 | Delegado (conta pessoal da Microsoft) | Não suportado        |
-| Aplicativo     | Nenhum                                        |
+| Aplicativo     | Nenhuma                                        |
 
 ## <a name="http-request"></a>Solicitação HTTP
 
@@ -54,7 +54,7 @@ Não forneça um corpo de solicitação para esse método.
 
 ## <a name="response"></a>Resposta
 
-Se tiver êxito, este método retornará um `200 OK` código de resposta e uma coleção de objetos [participantes](../resources/participant.md) no corpo da resposta.
+Se tiver êxito, este método retornará um código `200 OK` de resposta e uma coleção de objetos participantes no corpo da [](../resources/participant.md) resposta.
 
 ## <a name="example"></a>Exemplo
 
@@ -83,6 +83,10 @@ GET https://graph.microsoft.com/beta/communications/calls/7531d31f-d10d-44de-802
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/get-participants-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[Ir](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/get-participants-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 doc_type: apiPageType
 ms.prod: governance
 author: carolinetempleton
-ms.openlocfilehash: 83cb72ff092181a110ec80f350bc86a702cdad46
-ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
+ms.openlocfilehash: 83ef3cb4ac08a9351d63625ec643ff3ed2ce9565
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/12/2021
-ms.locfileid: "60935463"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "60997041"
 ---
 # <a name="create-privilegedroleassignmentrequest"></a>Criar privilegedRoleAssignmentRequest
 
@@ -28,7 +28,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |Tipo de permissão                        | Permissões (da com menos para a com mais privilégios)              |
 |:--------------------------------------|:---------------------------------------------------------|
 |Delegado (conta corporativa ou de estudante) | PrivilegedAccess.ReadWrite.AzureAD, Directory.AccessAsUser.All    |
-|Delegada (conta pessoal da Microsoft) | Sem suporte. |
+|Delegado (conta pessoal da Microsoft) | Sem suporte. |
 |Aplicativo                            | Sem suporte. |
 
 ## <a name="http-request"></a>Solicitação HTTP
@@ -50,7 +50,7 @@ No corpo da solicitação, fornece uma representação JSON [do objeto privilege
 |roleId|Cadeia de caracteres|A ID da função. Obrigatório.|
 |type|Cadeia de caracteres|Representa o tipo da operação na atribuição de função. O valor pode ser `AdminAdd` : Administradores adicionam usuários a funções; `UserAdd` : Os usuários adicionam atribuições de função. Obrigatório.|
 |assignmentState|Cadeia de caracteres|O estado da atribuição. O valor pode ser para atribuição qualificada - se ele for atribuído diretamente pelos administradores ou ativado em uma atribuição qualificada `Eligible` `Active` pelos `Active` usuários. Os valores possíveis são: ``NotStarted``, `Completed`, `RequestedApproval`, `Scheduled`, `Approved`, `ApprovalDenied`, `ApprovalAborted`, `Cancelling`, `Cancelled`, `Revoked`, `RequestExpired`. Obrigatório.|
-|motivo|Cadeia de caracteres|O motivo precisa ser fornecido para a solicitação de atribuição de função para fins de auditoria e revisão.|
+|motivo|String|O motivo precisa ser fornecido para a solicitação de atribuição de função para fins de auditoria e revisão.|
 |Cronograma|[governanceSchedule](../resources/governanceschedule.md)|O cronograma da solicitação de atribuição de função.|
 
 ## <a name="response"></a>Resposta
@@ -117,6 +117,10 @@ Content-type: application/json
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/post-privilegedroleassignmentrequest-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[Ir](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/post-privilegedroleassignmentrequest-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

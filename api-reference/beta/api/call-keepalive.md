@@ -2,15 +2,15 @@
 title: 'call: keepAlive'
 description: Faça uma solicitação a essa API a cada 15 a 45 minutos para garantir que uma chamada contínua permaneça ativa.
 author: ananmishr
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: ccc7d77d824252902e70c50c6c2cd7447616b603
-ms.sourcegitcommit: 0116750a01323bc9bedd192d4a780edbe7ce0fdc
+ms.openlocfilehash: 1a158718f2fad7327b7aad45ed564b4a0a5b4a52
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58264308"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "61020057"
 ---
 # <a name="call-keepalive"></a>call: keepAlive
 
@@ -33,7 +33,7 @@ Uma das seguintes permissões pode ser necessária para chamar essa API. Para sa
 | :-------------- | :------------------------------------------ |
 | Delegado (conta corporativa ou de estudante)     | Não suportado        |
 | Delegado (conta pessoal da Microsoft) | Não suportado        |
-| Aplicativo     | Nenhum                                        |
+| Aplicativo     | Nenhuma                                        |
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- { "blockType": "ignored" } -->
@@ -82,6 +82,10 @@ POST https://graph.microsoft.com/beta/communications/calls/2e1a0b00-2db4-4022-95
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/keep-alive-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[Ir](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/keep-alive-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

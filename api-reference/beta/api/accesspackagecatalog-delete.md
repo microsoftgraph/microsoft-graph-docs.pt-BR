@@ -1,16 +1,16 @@
 ---
 title: Excluir accessPackageCatalog
 description: Exclua accessPackageCatalog.
-localization_priority: Normal
+ms.localizationpriority: medium
 author: markwahl-msft
 ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: ad2dd60c9e2f104987edeef0bac46dcf940a14cd
-ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
+ms.openlocfilehash: 6977c8ade22b8cf9fb127788a98ac75688c1d669
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50439601"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "60983390"
 ---
 # <a name="delete-accesspackagecatalog"></a>Excluir accessPackageCatalog
 
@@ -81,6 +81,10 @@ DELETE https://graph.microsoft.com/beta/identityGovernance/entitlementManagement
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/delete-accesspackagecatalog-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[Ir](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/delete-accesspackagecatalog-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

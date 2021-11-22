@@ -1,16 +1,16 @@
 ---
 title: Excluir extensionProperty
-description: Exclua uma extensionProperty.
-localization_priority: Normal
+description: Excluir uma extensãoProperty.
+ms.localizationpriority: medium
 author: sureshja
 ms.prod: applications
 doc_type: apiPageType
-ms.openlocfilehash: ce1b58d22d58a261f1725bd304be01e5e27478ae
-ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
+ms.openlocfilehash: a0a497c54a39934a95a2e7ca57bbd96632422dfc
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/06/2021
-ms.locfileid: "50129286"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "60995522"
 ---
 # <a name="delete-extensionproperty"></a>Excluir extensionProperty
 
@@ -18,7 +18,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-[Exclua uma extensionProperty](../resources/extensionproperty.md).
+Excluir uma [extensãoProperty](../resources/extensionproperty.md).
 
 ## <a name="permissions"></a>Permissões
 
@@ -81,6 +81,10 @@ DELETE https://graph.microsoft.com/beta/applications/{id}/extensionProperties/{i
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/delete-extensionproperty-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[Ir](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/delete-extensionproperty-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
