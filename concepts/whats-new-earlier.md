@@ -3,14 +3,84 @@ title: Destaques de versões anteriores no Microsoft Graph
 description: O que havia de novo no Microsoft Graph
 author: angelgolfer-ms
 ms.localizationpriority: high
-ms.openlocfilehash: e9c62070be3dd1d646768fd207c5c1304bcf727b
-ms.sourcegitcommit: c7ff992ef63e480d070421ba99b28ee129cb6acb
+ms.openlocfilehash: 7c8a3e646f311d5c8c26d6375a29fe8c1119ba90
+ms.sourcegitcommit: c6bbba6cb9aaa7ad35374d1b5d4466c49878ab43
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "60695020"
+ms.lasthandoff: 11/22/2021
+ms.locfileid: "61135176"
 ---
 # <a name="highlights-of-earlier-releases"></a>Destaques de versões anteriores
+
+## <a name="september-2021-new-and-generally-available"></a>Setembro de 2021: novo e disponível para o público em geral
+
+### <a name="cloud-communications--calls"></a>Comunicações na nuvem | Chamadas
+- Colocar um [participante](/graph/api/resources/participant) em espera e tocar música em segundo plano usando a ação [startHoldMusic](/graph/api/participant-startHoldMusic).
+- Reincorporar um participante colocado em espera em uma chamada anteriormente usando a ação [stopHoldMusic](/graph/api/participant-stopHoldMusic).
+
+### <a name="cloud-communications--online-meetings"></a>Comunicações na nuvem | Reuniões on-line
+- Obtenha o fluxo de conteúdos de um relatório de participante de um [evento ao vivo do Teams](/microsoftteams/teams-live-events/what-are-teams-live-events).
+- Obtenha ou defina a opção para gravar automaticamente uma [reunião online](/graph/api/resources/onlineMeeting).
+- Use `OnlineMeetingArtifact.Read.All` como delegada ou permissão de aplicativo para ler artefatos de reuniões on-line. Para obter mais informações, consulte [permissões de reuniões on-line](permissions-reference.md#online-meetings-permissions).
+
+### <a name="devices-and-apps--cloud-printing"></a>Dispositivos e aplicativos | Impressão na nuvem
+O status da impressora em nuvem inclui todos os valores padrão [Internet Printing Protocol (IPP)](https://www.iana.org/assignments/ipp-registrations/ipp-registrations.xhtml).
+
+### <a name="devices-and-apps--corporate-management"></a>Dispositivos e aplicativos | Gerenciamento corporativo
+Atualizações mensais do Intune para a versão v1.0. No [log de mudanças](https://developer.microsoft.com/graph/changelog), defina o filtro de **Data** para setembro de 2021 e procure uma seção com esse mesmo título.
+
+### <a name="files"></a>Arquivos
+- Obtenha os detalhes de qualquer vírus detectado em um [driveItem](/graph/api/resources/driveItem) por meio de uma propriedade de **malware**.
+- Use a função [delta](/graph/api/driveitem-delta) para acompanhar as alterações não apenas no diretório raiz, mas também em outras pastas dentro de uma unidade.
+
+### <a name="identity-and-access--directory-management"></a>Identidade e acesso | Gerenciamento do diretório
+Os provedores de controle de acesso baseado em função (RBAC) podem [gerenciar funções](/graph/api/resources/rolemanagement) do Azure Active Directory, [definindo ações de funções](/graph/api/resources/unifiedroledefinition)que podem ser realizadas em recursos específicos e [atribuindo funções](/graph/api/resources/unifiedroleassignment) aos usuários com base em tais definições de função, fornecendo o acesso correspondente a esses recursos.
+
+### <a name="search--query"></a>Pesquisa | Consulta
+- Agregar resultados de pesquisa do tipo numérico ou cadeia de caracteres que são importados pelos [conectores do Microsoft Graph](/microsoftsearch/connectors-overview) e que estão configurados no [esquema](/graph/api/resources/schema) para serem refináveis. Veja mais informações sobre [como refinar resultados de pesquisa usando agregações](search-concept-aggregation.md).
+- [Classifique](/graph/api/resources/search-api-overview#sort-search-results) os resultados de pesquisa do OneDrive e do SharePoint em qualquer propriedade classificável. Para obter mais informações, consulte [Uso da API de Pesquisa da Microsoft para classificar resultados da pesquisa](search-concept-sort.md).
+
+### <a name="teamwork"></a>Trabalho em equipe
+Usar uma única ação [provisionEmail](/graph/api/channel-provisionemail) para obter o endereço de email de um [canal](/graph/api/resources/channel), se houver, ou criar um, se não houver. Usar a ação [removeEmail](/graph/api/channel-removeemail) para remover o endereço de email.
+
+### <a name="workbooks-and-charts"></a>Pastas de trabalho e gráficos
+Criar linhas de tabela de forma assíncrona. Para um melhor desempenho, uma boa prática para criar várias linhas de tabela é agrupá-las em uma operação do tipo [criar tableRow](/graph/api/table-post-rows) e realizar a operação de forma assíncrona. Prossiga com a operação [GET workbookOperation](/graph/api/workbookoperation-get) e a função [tableRowOperationResult](/graph/api/workbook-tableRowOperationResult) para obter o novo recurso [workbookTableRow](/graph/api/resources/workbooktablerow).
+
+
+## <a name="september-2021-new-in-preview-only"></a>Setembro de 2021: novos somente em versão prévia
+
+### <a name="applications"></a>Aplicativos
+Os aplicativos que usam fluxos de logon único do Security Assertion Markup Language (SAML) podem especificar um URI de redirecionamento padrão (propriedade **defaultRedirectUri** do [aplicativo](/graph/api/resources/application?view=graph-rest-beta&preserve-view=true)) ou identificar um URI de redirecionamento específico no qual os usuários são enviados para fazer logon (propriedade **redirectUriSettings** do [webApplication](/graph/api/resources/webapplication?view=graph-rest-beta&preserve-view=true)). 
+
+### <a name="cloud-communications--online-meetings"></a>Comunicações na nuvem | Reuniões on-line
+Obter o número total de participantes em um [relatório de presença de reunião](/graph/api/resources/meetingattendancereport?view=graph-rest-beta&preserve-view=true) de uma [reunião on-line](/graph/api/resources/onlinemeeting?view=graph-rest-beta&preserve-view=true).
+
+### <a name="compliance--ediscovery"></a>Conformidade | Descoberta eletrônica
+A operação [criar caso](/graph/api/ediscovery-case-post?view=graph-rest-beta&preserve-view=true) sempre cria casos em formato grande. Isso expande o limite do tamanho de caso para acomodar um volume total de dados e um número total de itens mais altos. Para obter mais detalhes, consulte [vantagens de casos grandes](/microsoft-365/compliance/advanced-ediscovery-large-cases?view=o365-worldwide&preserve-view=true#benefits-of-large-cases).
+
+### <a name="devices-and-apps--cloud-pc"></a>Dispositivos e aplicativos | Computador na nuvem
+- [Reprovisionar um computador na nuvem](/graph/api/manageddevice-reprovisioncloudpc?view=graph-rest-beta&preserve-view=true) como uma área de trabalho virtual gerenciada na nuvem registrada no Intune.
+- [Redimensionar um computador na nuvem](/graph/api/manageddevice-resizecloudpc?view=graph-rest-beta&preserve-view=true) atualizando-o ou rebaixando-o para outra configuração com uma CPU virtual (vCPU) e um tamanho de armazenamento novos.
+- [Configurar](/graph/api/virtualendpoint-post-onpremisesconnections?view=graph-rest-beta&preserve-view=true), [listar](/graph/api/virtualendpoint-list-onpremisesconnections?view=graph-rest-beta&preserve-view=true) e [executar verificações de integridade](/graph/api/cloudpconpremisesconnection-runhealthcheck?view=graph-rest-beta&preserve-view=true) em [conexões de rede locais](/graph/api/resources/cloudpconpremisesconnection?view=graph-rest-beta&preserve-view=true) para provisionar PCs na nuvem.
+
+### <a name="devices-and-apps--corporate-management"></a>Dispositivos e aplicativos | Gerenciamento corporativo
+Atualizações mensais do Intune para a versão beta. No [log de mudanças](https://developer.microsoft.com/graph/changelog), defina o filtro de **Data** para setembro de 2021 e procure uma seção com esse mesmo título.
+
+### <a name="education"></a>Educação
+- Permitir que os professores [reatribuam](/graph/api/educationsubmission-reassign?view=graph-rest-beta&preserve-view=true) o [envio](/graph/api/resources/educationsubmission?view=graph-rest-beta&preserve-view=true) de uma tarefa ao aluno com comentários para revisão.
+- Suporte para adicionar tarefas apenas aos calendários dos alunos se você usar o cabeçalho de solicitação `Prefer: include-unknown-enum-members` para operações nos recursos [educationAssignment](/graph/api/resources/educationassignment?view=graph-rest-beta&preserve-view=true) ou [educationAssignmentDefaults](/graph/api/resources/educationassignmentdefaults?view=graph-rest-beta&preserve-view=true).
+
+### <a name="identity-and-access--governance"></a>Identidade e acesso | Governança
+[Excluir](/graph/api/accesspackageassignmentrequest-delete?view=graph-rest-beta&preserve-view=true) um [accessPackageAssignmentRequest](/graph/api/resources/accesspackageassignmentrequest?view=graph-rest-beta&preserve-view=true) para remover uma solicitação negada ou concluída.
+
+### <a name="identity-and-access--identity-and-sign-in"></a>Identidade e acesso | Identidade e login
+- Permitir que os usuários executem a autenticação multifatorial usando um [token de software OATH](/graph/api/resources/softwareOathAuthenticationMethod?view=graph-rest-beta&preserve-view=true). Um token de software OATH é um gerador de números baseado em software que usa a Senha de Uso Único Baseada em Tempo (TOTP) padrão OATH.
+- Identifique se a correspondência de números está habilitada ou desabilitada para autenticação multifator pela política no Azure AD, usando a propriedade **numberMatchingRequiredState** do [microsoftAuthenticatorAuthenticationMethodTarget](/graph/api/resources/microsoftAuthenticatorAuthenticationMethodTarget?view=graph-rest-beta&preserve-view=true).
+- Identifique se um contexto adicional do usuário deve ser mostrado na notificação do aplicativo autenticador, usando a propriedade **displayAppInformationRequiredState** do [microsoftAuthenticatorAuthenticationMethodTarget](/graph/api/resources/microsoftAuthenticatorAuthenticationMethodTarget?view=graph-rest-beta&preserve-view=true).
+- Use o [fluxo de usuário B2C](/graph/api/resources/b2cidentityuserflow?view=graph-rest-beta&preserve-view=true) e o [fluxo de usuário de inscrição de autoatendimento](/graph/api/resources/b2xidentityuserflow?view=graph-rest-beta&preserve-view=true) em favor da API de [fluxo de usuário](/graph/api/resources/identityuserflow?view=graph-rest-beta&preserve-view=true) anterior, que foi preterida.
+
+### <a name="security--attack-simulation-and-training"></a>Segurança | Treinamento e simulação de ataque
+O lançamento da API para [treinamento e simulação de ataque](/microsoft-365/security/office-365-security/attack-simulation-training?view=o365-worldwide&preserve-view=true), que é um serviço disponível como parte do [Microsoft Defender para Office 365](/microsoft-365/security/office-365-security/defender-for-office-365?view=o365-worldwide&preserve-view=true). A API permite que os administradores de locatários [listem os exercícios e treinamentos de simulação lançados](/graph/api/attacksimulationroot-list-simulations?view=graph-rest-beta&preserve-view=true) e obtenham [relatórios](/graph/api/resources/report-m365defender-reports-overview?view=graph-rest-beta&preserve-view=true) sobre os insights derivados dos comportamentos online dos usuários nas simulações de phishing.
 
 ## <a name="august-2021-new-and-generally-available"></a>Agosto de 2021: novo e disponível para o público em geral
 
