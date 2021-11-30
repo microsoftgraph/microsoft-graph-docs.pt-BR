@@ -5,12 +5,12 @@ author: jpettere
 ms.localizationpriority: high
 ms.prod: users
 doc_type: apiPageType
-ms.openlocfilehash: 1d52400cbcb7e42a66a7be509448bf3f4e902f66
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: c26da292fbdaa2e7e14703269426a9b76a72baeb
+ms.sourcegitcommit: e497ed9bb56400bdd2bb53d52ddf057d9966220b
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "60988880"
+ms.lasthandoff: 11/30/2021
+ms.locfileid: "61226607"
 ---
 # <a name="get-a-user"></a>Obter um usuário
 
@@ -200,13 +200,14 @@ Content-type: application/json
 ```
 
 
-
 ### <a name="example-3-use-select-to-retrieve-specific-properties-of-a-user"></a>Exemplo 3: use $select para recuperar propriedades específicas de um usuário
 
 Para recuperar propriedades específicas, use o parâmetro de `$select` OData. Por exemplo, para retornar _displayName_, _givenName_, _postalCode_ e _identities_, você usaria adicionar o seguinte à sua consulta `$select=displayName,givenName,postalCode,identities`
 
 #### <a name="request"></a>Solicitação
 
+
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "get_user_select"
@@ -214,6 +215,28 @@ Para recuperar propriedades específicas, use o parâmetro de `$select` OData. P
 ```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/users/{id | userPrincipalName}?$select=displayName,givenName,postalCode,identities
 ```
+# <a name="c"></a>[C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/get-user-select-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/get-user-select-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/get-user-select-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/get-user-select-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[Ir](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/get-user-select-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 #### <a name="response"></a>Resposta
 <!-- {
@@ -237,6 +260,123 @@ Content-type: application/json
             "issuerAssignedId": "AdeleV@contoso.com"
         }
     ]
+}
+```
+
+### <a name="example-4-get-the-custom-security-attribute-assignments-of-the-specified-user"></a>Exemplo 4: Obtenha as atribuições personalizadas de atributos de segurança do usuário especificado
+
+O exemplo a seguir apresenta os atributos de segurança personalizados do usuário especificado.
+
+Atributo nº 1
+
++ Conjunto de atributos: `Engineering`
++ Atributo: `Project`
++ Tipo de dados de atributo: Coleção de cadeias de caracteres
++ Valor do atributo: `["Baker","Cascade"]`
+
+Atributo nº 2
+
++ Conjunto de atributos: `Engineering`
++ Atributo: `CostCenter`
++ Tipo de dados de atributo: Coleção de inteiros
++ Valor do atributo: `[1001]`
+
+Atributo nº 3
+
++ Conjunto de atributos: `Engineering`
++ Atributo: `Certification`
++ Tipo de dados de atributo: Booliano
++ Valor do atributo: `true`
+
+Atributo nº 4
+
++ Conjunto de atributos: `Marketing`
++ Atributo: `Level`
++ Tipo de dados de atributo: cadeia de caracteres
++ Valor do atributo: `"Public"`
+
+Para obter atribuições de atributo de segurança personalizados, a entidade de chamada deve receber a função Leitor de Atribuição de Atributos ou Administrador de Atribuição de Atributos e deve receber a permissão *CustomSecAttributeAssignment.ReadWrite.All*.
+
+#### <a name="request"></a>Solicitação
+
+
+
+# <a name="http"></a>[HTTP](#tab/http)
+<!-- {
+  "blockType": "request",
+  "name": "get_user_customsecurityattributes"
+}-->
+```msgraph-interactive
+GET https://graph.microsoft.com/beta/users/{id}?$select=customSecurityAttributes
+```
+# <a name="c"></a>[C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/get-user-customsecurityattributes-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/get-user-customsecurityattributes-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/get-user-customsecurityattributes-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/get-user-customsecurityattributes-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[Ir](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/get-user-customsecurityattributes-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
+
+
+#### <a name="response"></a>Resposta
+
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.user"
+} -->
+```http
+HTTP/1.1 200 OK
+Content-type: application/json
+
+{
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#users(customSecurityAttributes)/$entity",
+    "customSecurityAttributes": {
+        "Engineering": {
+            "@odata.type": "#microsoft.graph.customSecurityAttributeValue",
+            "Project@odata.type": "#Collection(String)",
+            "Project": [
+                "Baker",
+                "Cascade"
+            ],
+            "CostCenter@odata.type": "#Collection(Int32)",
+            "CostCenter": [
+                1001
+            ],
+            "Certification": true
+        },
+        "Marketing": {
+            "@odata.type": "#microsoft.graph.customSecurityAttributeValue",
+            "Level": "Public"
+        }
+    }
+}
+```
+
+Se não houver atributos de segurança personalizados atribuídos ao usuário ou se a entidade de chamada não tiver acesso, a seguinte será a resposta:
+
+```http
+HTTP/1.1 200 OK
+Content-type: application/json
+
+{
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#users(customSecurityAttributes)/$entity",
+    "customSecurityAttributes": null
 }
 ```
 

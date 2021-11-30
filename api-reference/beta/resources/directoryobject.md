@@ -1,16 +1,16 @@
 ---
 title: Tipo de recurso directoryObject
-description: Representa um objeto do Active Directory do Azure. O tipo **directoryObject** é o tipo básico de muitos outros tipos de entidade de diretório.
+description: Representa um objeto do Azure Active Directory. O tipo directoryObject é o tipo base para muitos outros tipos de entidade de diretório.
 ms.localizationpriority: high
 author: keylimesoda
 ms.prod: directory-management
 doc_type: resourcePageType
-ms.openlocfilehash: e704c59e594095f45abd03ce48937c45cdcf6d30
-ms.sourcegitcommit: c333953a9188b4cd4a9ab94cbe68871e8f3563e5
+ms.openlocfilehash: 86dbac660616ffdfd6fa767ed43ca1cb7c263447
+ms.sourcegitcommit: e497ed9bb56400bdd2bb53d52ddf057d9966220b
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/30/2021
-ms.locfileid: "58696411"
+ms.lasthandoff: 11/30/2021
+ms.locfileid: "61226005"
 ---
 # <a name="directoryobject-resource-type"></a>Tipo de recurso directoryObject
 
@@ -22,7 +22,7 @@ Representa um objeto do Active Directory do Azure. O tipo **directoryObject** é
 
 Esse recurso permite:
 
-- Usar a [consulta delta](/graph/delta-query-overview) para controlar adições, exclusões e atualizações incrementais oferecendo uma função [delta](../api/directoryobject-delta.md).
+- Usar a [consulta delta](/graph/delta-query-overview) para controlar adições, exclusões e atualizações incrementais oferecendo uma função **delta**.
 
 ## <a name="methods"></a>Métodos
 
@@ -30,12 +30,13 @@ Esse recurso permite:
 |:---------------|:--------|:----------|
 |[Get directoryObject](../api/directoryobject-get.md) | [directoryObject](directoryobject.md) |Leia as propriedades de um objeto de diretório.|
 |[Delete](../api/directoryobject-delete.md) | Nenhum |Exclua um objeto de diretório. |
-|[checkMemberGroups](../api/directoryobject-checkmembergroups.md)|Coleção de cadeias de caracteres|Verifique se há uma associação em uma lista de grupos. A verificação é transitiva.|
-|[getMemberGroups](../api/directoryobject-getmembergroups.md)|Coleção de cadeias de caracteres|Retorne todos os grupos dos quais o objeto de usuário, grupo ou diretório é membro. A verificação é transitiva.|
-|[getMemberObjects](../api/directoryobject-getmemberobjects.md)|Coleção de cadeias de caracteres| Retorne todos os grupos e funções de diretório dos quais o objeto de usuário, grupo ou diretório é membro. A verificação é transitiva. |
+|[checkMemberGroups](../api/directoryobject-checkmembergroups.md)|String collection|Verifique a associação em uma lista de grupos especificada e retorne dessa lista os grupos dos quais o usuário, grupo, entidade de serviço, contato organizacional ou objeto de diretório especificado é membro. A verificação é transitiva.|
+|[getMemberGroups](../api/directoryobject-getmembergroups.md)|String collection|Retorne todos os grupos dos qual o usuário, grupo, entidade de serviço, contato organizacional, dispositivo ou objeto de diretório é membro. A verificação é transitiva.|
+|[checkMemberObjects](../api/directoryobject-checkmemberobjects.md)|Coleção de cadeias de caracteres|Verifique se há associação em uma lista de funções de grupo, unidades administrativas ou diretórios para o usuário, grupo, dispositivo, contato organizacional ou objeto de diretório especificado. Esse método é transitivo.|
+|[getMemberObjects](../api/directoryobject-getmemberobjects.md)|String collection| Retorne todos os grupos, unidades administrativas e funções de diretório das quais o usuário, grupo, dispositivo, contato organizacional ou objeto de diretório é membro. A verificação é transitiva. |
 |[getByIds](../api/directoryobject-getbyids.md) | Coleção [directoryObject](directoryobject.md) | Obtenha um conjunto de objetos de diretório com base em um conjunto de ids fornecidas. |
 |[validateProperties](../api/directoryobject-validateproperties.md)|Json| Validar se o nome de exibição de um grupo do Microsoft 365 ou apelido de email está em conformidade com as políticas de nomenclatura. |
-|[delta](../api/directoryobject-delta.md)|Coleção [directoryObject](directoryobject.md)| Obtenha alterações incrementais para objetos de diretório. Oferece suporte à filtragem por tipo derivado. |
+|delta|Coleção [directoryObject](directoryObject.md)| Obtenha alterações incrementais para objetos de diretório, por exemplo, [usuários](../api/user-delta.md), [grupos](../api/group-delta.md), [aplicativos](../api/application-delta.md) e [entidades de serviço](../api/serviceprincipal-delta.md). Cada tipo derivado oferece suporte à filtragem pelo **id**. Para obter mais informações sobre consultas delta, consulte [Usar consulta delta para rastrear alterações nos dados do Microsoft Graph](/graph/delta-query-overview).|
 
 ## <a name="properties"></a>Propriedades
 
