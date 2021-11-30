@@ -1,47 +1,118 @@
 ---
-title: Obter objetos de membros
-description: " Retorna todos os grupos, unidades administrativas e funções de diretório das quais um usuário, grupo, entidades de serviço ou objeto de diretório é membro. Esta função é transitiva. "
+title: 'directoryObject: getMemberObjects'
+description: Retorne todos os grupos, unidades administrativas e funções de diretório das quais um usuário, grupo, entidade de serviço, contato organizacional, dispositivo ou objeto de diretório é membro. Esta função é transitiva.
 ms.localizationpriority: medium
 author: keylimesoda
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: 018f1d7499bc8293b88e573b7d58fdca7a46cbfb
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: 3ced425ff59cc03c2310b855ca083ec3eeaa3a02
+ms.sourcegitcommit: e497ed9bb56400bdd2bb53d52ddf057d9966220b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "61005316"
+ms.lasthandoff: 11/30/2021
+ms.locfileid: "61225459"
 ---
-# <a name="get-member-objects"></a>Obter objetos de membros
+# <a name="directoryobject-getmemberobjects"></a>directoryObject: getMemberObjects
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
- Retorna todos os grupos, unidades administrativas e funções de diretório das quais um usuário, grupo, entidades de serviço ou objeto de diretório é membro. Esta função é transitiva. 
+Retorne todos os grupos, unidades administrativas e funções de diretório das quais um usuário [,](../resources/user.md) [grupo,](../resources/group.md) [entidade](../resources/serviceprincipal.md)de [serviço,](../resources/orgcontact.md)contato [organizacional,](../resources/device.md)dispositivo ou [objeto de diretório](../resources/directoryobject.md) é membro. Esta função é transitiva.
 
-**Observação:** Somente os usuários podem ser membros de funções de diretório.
+**Observação:** Somente usuários e grupos habilitados para função podem ser membros de funções de diretório.
 
 ## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
+### <a name="memberships-for-a-directory-object"></a>Associações para um objeto directory
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegado (conta corporativa ou de estudante) | Directory.Read.All    |
+|Delegada (conta corporativa ou de estudante) | Directory.Read.All    |
 |Delegado (conta pessoal da Microsoft) | Sem suporte.    |
 |Aplicativo | Directory.Read.All |
 
+### <a name="memberships-for-a-user"></a>Associações para um usuário
+
+|Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
+|:--------------------|:---------------------------------------------------------|
+|Delegada (conta corporativa ou de estudante) | User.Read, User.Read.All, Directory.Read.All, User.ReadWrite.All, Directory.ReadWrite.All, Directory.AccessAsUser.All    |
+|Delegado (conta pessoal da Microsoft) | Sem suporte.    |
+|Application | User.Read.All, Directory.Read.All, User.ReadWrite.All, Directory.ReadWrite.All |
+
+### <a name="memberships-for-a-group"></a>Associações para um grupo
+
+| Tipo de permissão                        | Permissões (da com menos para a com mais privilégios)                                                 |
+| :------------------------------------- | :------------------------------------------------------------------------------------------ |
+| Delegado (conta corporativa ou de estudante)     | GroupMember. Read. All, Group. Read. All, Directory. Read. All, Group. ReadWrite. All, Directory. ReadWrite. All, Directory. AccessAsUser. All |
+| Delegado (conta pessoal da Microsoft) | Sem suporte.                                                                              |
+| Aplicativo                            | GroupMember. Read. All, Group. Read. All, Directory. Read. All, Group. ReadWrite. All, Directory. ReadWrite. All                             |
+
+### <a name="memberships-for-a-service-principal"></a>Associações para uma entidade de serviço
+
+|Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
+|:--------------------|:---------------------------------------------------------|
+|Delegada (conta corporativa ou de estudante) | Application.Read.All, Directory.Read.All, Application.ReadWrite.All, Directory.ReadWrite.All, Directory.AccessAsUser.All    |
+|Delegado (conta pessoal da Microsoft) | Sem suporte.    |
+|Aplicativo | Application.Read.All, Directory.Read.All, Application.ReadWrite.All, Directory.ReadWrite.All |
+
+### <a name="memberships-for-an-organizational-contact"></a>Associações para um contato organizacional
+
+|Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
+|:--------------------|:---------------------------------------------------------|
+|Delegado (conta corporativa ou de estudante) | Directory.Read.All, Directory.ReadWrite.All, Directory.AccessAsUser.All    |
+|Delegado (conta pessoal da Microsoft) | Sem suporte.    |
+|Aplicativo | Directory.Read.All, Directory.ReadWrite.All |
+
+### <a name="memberships-for-a-device"></a>Associações para um dispositivo
+
+| Tipo de permissão                        | Permissões (da com menos para a com mais privilégios) |
+|:---------------------------------------|:--------------------------------------------|
+| Delegada (conta corporativa ou de estudante)     | Device.Read.All, Directory.Read.All, Directory.ReadWrite.All, Directory.AccessAsUser.All |
+| Delegado (conta pessoal da Microsoft) | Sem suporte. |
+| Aplicativo                            | Device.Read.All, Device.ReadWrite.All, Directory.Read.All, Directory.ReadWrite.All |
+
+
 ## <a name="http-request"></a>Solicitação HTTP
+
+Associações para um objeto de diretório.
+<!-- { "blockType": "ignored" } -->
+```http
+POST /directoryObjects/{id}/getMemberObjects
+```
+
+Associações para um usuário.
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /me/getMemberObjects
 POST /users/{id | userPrincipalName}/getMemberObjects
-POST /groups/{id}/getMemberObjects
-POST /servicePrincipals/{id}/getMemberObjects
-POST /directoryObjects/{id}/getMemberObjects
-
 ```
+
+Associações para um grupo.
+<!-- { "blockType": "ignored" } -->
+```http
+POST /groups/{id}/getMemberObjects
+```
+
+Associações para uma entidade de serviço.
+<!-- { "blockType": "ignored" } -->
+```http
+POST /servicePrincipals/{id}/getMemberObjects
+```
+
+Associações para um contato organizacional.
+<!-- { "blockType": "ignored" } -->
+```http
+POST /contacts/{id}/getMemberObjects
+```
+
+Associações para um dispositivo.
+<!-- { "blockType": "ignored" } -->
+```http
+POST /devices/{id}/getMemberObjects
+```
+
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
 | Nome       | Descrição|
 |:---------------|:--------|
@@ -53,7 +124,7 @@ Forneça um objeto JSON com os seguintes parâmetros no corpo da solicitação.
 
 | Parâmetro    | Tipo   |Descrição|
 |:---------------|:--------|:----------|
-|securityEnabledOnly|Booliano| `true` para especificar que apenas grupos de segurança dos quais a entidade é membro devem ser retornados; para especificar que todos os grupos e funções de diretório das quais `false` a entidade é membro devem ser retornados. **Observação**: a função só poderá ser chamada em um usuário se o parâmetro for `true` . |
+|securityEnabledOnly|Booliano| `true` para especificar que apenas grupos de segurança dos quais a entidade é membro devem ser retornados; para especificar que todos os grupos, unidades administrativas e funções de diretório das quais a entidade é membro devem `false` ser retornadas. |
 
 ## <a name="response"></a>Resposta
 

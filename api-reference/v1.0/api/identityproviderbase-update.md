@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 doc_type: apiPageType
 author: namkedia
 ms.prod: identity-and-sign-in
-ms.openlocfilehash: 584b06ce6ba2e37453ad95716369e34895cee328
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: 7434e672c60bbf02c7135d0c0a2b26859d26fb49
+ms.sourcegitcommit: e497ed9bb56400bdd2bb53d52ddf057d9966220b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "61030803"
+ms.lasthandoff: 11/30/2021
+ms.locfileid: "61224563"
 ---
 # <a name="update-identityprovider"></a>Atualizar identityProvider
 Namespace: microsoft.graph
@@ -153,6 +153,7 @@ PATCH https://graph.microsoft.com/v1.0/identity/identityProviders/Apple-Managed-
 Content-type: application/json
 
 {
+  "@odata.type": "#microsoft.graph.socialIdentityProvider",
   "displayName": "Apple"
 }
 ```

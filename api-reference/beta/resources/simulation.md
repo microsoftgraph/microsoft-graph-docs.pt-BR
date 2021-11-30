@@ -5,12 +5,12 @@ author: Gopal-MSFT
 ms.localizationpriority: medium
 ms.prod: security
 doc_type: resourcePageType
-ms.openlocfilehash: b61a361f92e1abd8e168e1a59eac68e4edab0c96
-ms.sourcegitcommit: 84d9a50dfa9526a207696c69d92381c8763d986a
+ms.openlocfilehash: e0cee15f6298ce67ca8be3cf8f6b2aef9302ac2a
+ms.sourcegitcommit: e497ed9bb56400bdd2bb53d52ddf057d9966220b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/28/2021
-ms.locfileid: "59979474"
+ms.lasthandoff: 11/30/2021
+ms.locfileid: "61224794"
 ---
 # <a name="simulation-resource-type"></a>tipo de recurso de simulação
 
@@ -24,7 +24,7 @@ Simulação e treinamento de ataque é um serviço disponível como parte do [Mi
 
 A _API_ de simulação e treinamento de  ataque permite que os [](report-m365defender-reports-overview.md) administradores de locatários listem exercícios e treinamentos de simulação lançados e recebam relatórios sobre informações derivadas sobre comportamentos online dos usuários nas simulações de phishing.
 
-## <a name="methods"></a>Métodos
+## <a name="methods"></a>Methods
 |Método|Tipo de retorno|Descrição|
 |:---|:---|:---|
 |[Listar simulações](../api/attacksimulationroot-list-simulations.md)|[coleção simulation](../resources/simulation.md)|Obter uma lista dos objetos [de simulação](../resources/simulation.md) e suas propriedades.|
@@ -34,20 +34,19 @@ A _API_ de simulação e treinamento de  ataque permite que os [](report-m365def
 |:---|:---|:---|
 |attackTechnique|[simulationAttackTechnique](#simulationattacktechnique-values)|A técnica de engenharia social usada na campanha de simulação e treinamento de ataques. Oferece suporte para `$filter` e `$orderby`. Os valores possíveis são: `unknown`, `credentialHarvesting`, `attachmentMalware`, `driveByUrl`, `linkInAttachment`, `linkToMalwareFile`, `unknownFutureValue`. Para obter mais informações sobre os tipos de técnicas de ataque de engenharia social, consulte [simulações](/microsoft-365/security/office-365-security/attack-simulation-training-get-started?view=o365-worldwide&preserve-view=true#simulations).|
 |attackType|[simulationAttackType](#simulationattacktype-values)|Tipo de ataque da campanha de simulação e treinamento de ataque. Oferece suporte para `$filter` e `$orderby`. Os valores possíveis são: `unknown`, `social`, `cloud`, `endpoint`, `unknownFutureValue`.|
-|cleanupArtifacts|Boleano|Sinalizador representando se artefatos foram limpos na campanha de simulação e treinamento de ataque.|
+|cleanupArtifacts|Booleano|Sinalizador representando se artefatos foram limpos na campanha de simulação e treinamento de ataque.|
 |completionDateTime|DateTimeOffset|Data e hora de conclusão da campanha de simulação e treinamento de ataque. Oferece suporte para `$filter` e `$orderby`.|
 |createdBy|[emailIdentity](../resources/emailidentity.md)|Identidade do usuário que criou a campanha de simulação e treinamento de ataque.|
 |createdDateTime|DateTimeOffset|Data e hora da criação da campanha de simulação e treinamento de ataque.|
 |description|String|Descrição da campanha de simulação e treinamento de ataque.|
 |displayName|String|Nome de exibição da campanha de simulação e treinamento de ataque. Oferece suporte para `$filter` e `$orderby`.|
-|enableRegionTimezoneDelivery|Boleano|Sinalizador representando se é possível habilitar ou desabilitar a entrega ciente de zona de tempo da carga de phishing na campanha de treinamento e simulação de ataque.|
-|id|Cadeia de caracteres|ID da campanha de treinamento e simulação de ataque.|
-|includeAllAccountTargets|Boleano|Sinalizador representando a inclusão de todos os usuários de um locatário na campanha de simulação e treinamento de ataque.|
-|isAutomated|Boleano|Sinalizador representando se a campanha de simulação e treinamento de ataque foi criada a partir de um fluxo de automação de simulação. Oferece suporte para `$filter` e `$orderby`. |
+|enableRegionTimezoneDelivery|Booliano|Sinalizador representando se é possível habilitar ou desabilitar a entrega ciente de zona de tempo da carga de phishing na campanha de treinamento e simulação de ataque.|
+|id|String|ID da campanha de treinamento e simulação de ataque.|
+|includeAllAccountTargets|Booleano|Sinalizador representando a inclusão de todos os usuários de um locatário na campanha de simulação e treinamento de ataque.|
+|isAutomated|Booleano|Sinalizador representando se a campanha de simulação e treinamento de ataque foi criada a partir de um fluxo de automação de simulação. Oferece suporte para `$filter` e `$orderby`. |
 |lastModifiedBy|[emailIdentity](../resources/emailidentity.md)|Identidade do usuário que modificou a campanha de treinamento e simulação de ataque mais recentemente.|
 |lastModifiedDateTime|DateTimeOffset|Data e hora da modificação mais recente da campanha de simulação e treinamento de ataque.|
 |launchDateTime|DateTimeOffset|Data e hora do início/início da campanha de simulação e treinamento de ataque. Oferece suporte para `$filter` e `$orderby`.|
-|mode|[simulationMode](#simulationmode-values)|Modo da campanha de simulação e treinamento de ataque. Oferece suporte para `$filter` e `$orderby`. Os valores possíveis são: `real`, `preview`, `unknownFutureValue`.|
 |payloadDeliveryPlatform|payloadDeliveryPlatform|Método de entrega da carga de phishing usada na campanha de simulação e treinamento de ataques. Os valores possíveis são: `unknown`, `sms`, `email`, `teams`, `unknownFutureValue`.|
 |payloadSource|[payloadSource](#payloadsource-values)|Fonte de carga de phishing na campanha de simulação e treinamento de ataques. Os valores possíveis são: `unknown`, `global`, `tenant`, `unknownFutureValue`.|
 |report|[simulationReport](../resources/simulationreport.md)|Relatório da campanha de simulação e treinamento de ataque.|
@@ -76,14 +75,6 @@ A _API_ de simulação e treinamento de  ataque permite que os [](report-m365def
 |social| Ataque que usa habilidades sociais para manipular as vítimas de forma psicológica, criando uma falsa sensação de curiosidade, urgência ou medo. |
 |cloud| Ataque a um host ou usuário em um ambiente de nuvem, por exemplo, ataques de negação de serviço.|
 |ponto de extremidade| Ataque aos pontos de extremidade de uma rede corporativa, como desktops, laptops, telefones celulares, dispositivos de Internet das coisas. |
-|unknownFutureValue| Valor de sentinela de enumeração evolvável. Não usar. |
-
-### <a name="simulationmode-values"></a>valores simulationMode
-
-|Member|Descrição |
-|:---|:---|
-|real| Campanha lançada para todos os usuários finais necessários. |
-|visualização| Campanha lançada para apenas o usuário administrador para visualizar a carga de phishing recebida. |
 |unknownFutureValue| Valor de sentinela de enumeração evolvável. Não usar. |
 
 ### <a name="payloadsource-values"></a>valores payloadSource
@@ -147,7 +138,6 @@ Veja a seguir uma representação JSON do recurso.
   "completionDateTime": "String (timestamp)",
   "includeAllAccountTargets": "Boolean",
   "enableRegionTimezoneDelivery": "Boolean",
-  "mode": "String",
   "isAutomated": "Boolean",
   "cleanupArtifacts": "Boolean",
   "payloadSource": "String",

@@ -3,12 +3,12 @@ title: Crie uma Microsoft Teams com o microsoft Graph Toolkit
 description: Começar a criar uma guia Microsoft Teams usando o microsoft Graph Toolkit.
 ms.localizationpriority: medium
 author: simonagren
-ms.openlocfilehash: ac3309a0954cd7426b4399aca2043ff811f00c6a
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 76e8957ae515c784dcbbebbeb72bc04e5ab5c588
+ms.sourcegitcommit: e497ed9bb56400bdd2bb53d52ddf057d9966220b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59129555"
+ms.lasthandoff: 11/30/2021
+ms.locfileid: "61224871"
 ---
 # <a name="build-a-microsoft-teams-tab-with-the-microsoft-graph-toolkit"></a>Crie uma Microsoft Teams com o microsoft Graph Toolkit
 
@@ -81,7 +81,7 @@ Para obter uma ID do cliente, você precisa registrar um aplicativo Azure Active
 
 Certifique-se de definir o registro no aplicativo para apontar para `redirect URI` a página de auth que você criou na etapa anterior. Por exemplo, https://localhost:3000/tabauth.
 
-> **Observação:** Certifique-se de definir `redirect URI` o como `Single Page Application (SPA)` um . Teams O Provedor MSAL2 faz uso do Provedor MSAL2 nos bastidores.
+> **Observação:** Certifique-se de definir `redirect URI` o como `Single Page Application (SPA)` um . Teams provedor MSAL2 usa o Provedor MSAL2 nos bastidores.
 
 ## <a name="initialize-the-teams-msal2-provider"></a>Inicializar o provedor Teams MSAL2
 
@@ -141,3 +141,4 @@ Se você estiver usando React, recomendamos usar os componentes React em vez da 
 - Experimente os componentes do [playground](https://mgt.dev).
 - Faça uma pergunta sobre [o Microsoft Q&A](/answers/topics/microsoft-graph-toolkit.html).
 - Relate bugs ou deixe uma solicitação de recurso no [GitHub](https://aka.ms/mgt).
+- Confira as [amostras Microsoft Teams .](https://github.com/OfficeDev/Microsoft-Teams-Samples/tree/main/samples/tab-graph-toolkit)

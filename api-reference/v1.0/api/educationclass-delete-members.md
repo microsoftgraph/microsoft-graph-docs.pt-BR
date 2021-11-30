@@ -1,24 +1,24 @@
 ---
 title: Remover membro do educationClass
-description: Remove um educationUser de uma educationClass
+description: Remover um educationUser de uma educationClass.
 author: mmast-msft
 ms.localizationpriority: medium
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: 2f978af4882ced649b77fcd19acc0c23b6496393
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: c1901cdacfee980fd195715281b3f48ca98a53e4
+ms.sourcegitcommit: e497ed9bb56400bdd2bb53d52ddf057d9966220b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59074399"
+ms.lasthandoff: 11/30/2021
+ms.locfileid: "61223765"
 ---
 # <a name="remove-member-from-educationclass"></a>Remover membro do educationClass
 
 Namespace: microsoft.graph
 
-Remove um [educationUser](../resources/educationuser.md) de uma [educationClass](../resources/educationclass.md)
+Remover um [educationUser](../resources/educationuser.md) de uma [educationClass](../resources/educationclass.md).
 
-> **Observação:** professores _e_ alunos estão na coleção **members** da aula. Antes de chamar essa API, garanta que **educationUser** que você está removendo não seja um professor. Obtenha a lista de professores chamando [educationclass_list_teachers](educationclass-list-teachers.md) e verificando se a ID do usuário a ser removido não está na lista de professores retornada.
+> **Observação:** professores _e_ alunos estão na coleção **members** da aula. Antes de chamar essa API, verifique se **o educationUser** que você está removendo não é um professor. Obter a lista de professores chamando educationclass_list_teachers [e](educationclass-list-teachers.md) verificando se a ID do usuário a ser removida não está na lista de professores retornados.
 
 ## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
@@ -47,7 +47,7 @@ Não forneça um corpo de solicitação para esse método.
 Se bem-sucedido, esse método retornará um código de resposta `204 No Content` e um corpo de resposta vazio.
 
 ## <a name="example"></a>Exemplo
-##### <a name="request"></a>Solicitação
+### <a name="request"></a>Solicitação
 Este é um exemplo de solicitação.
 
 # <a name="http"></a>[HTTP](#tab/http)
@@ -77,7 +77,7 @@ DELETE https://graph.microsoft.com/v1.0/education/classes/{class-id}/members/{me
 ---
 
 
-##### <a name="response"></a>Resposta
+### <a name="response"></a>Resposta
 Este é um exemplo de resposta. 
 <!-- {
   "blockType": "response"

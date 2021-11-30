@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: Jumaodhiss
 ms.prod: change-notifications
 doc_type: apiPageType
-ms.openlocfilehash: d3eab6786a7b84dba7eb544ca038d79b962053bf
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: e14250a485b325dafe478ebfc70097659b0f6e8d
+ms.sourcegitcommit: e497ed9bb56400bdd2bb53d52ddf057d9966220b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "61030565"
+ms.lasthandoff: 11/30/2021
+ms.locfileid: "61223135"
 ---
 # <a name="update-subscription"></a>Atualizar assinatura
 
@@ -88,7 +88,7 @@ Para detalhes sobre como os erros são retornados, confira [Respostas de erro][e
 
 ## <a name="example"></a>Exemplo
 
-##### <a name="request"></a>Solicitação
+### <a name="request"></a>Solicitação
 
 Este é um exemplo da solicitação.
 
@@ -129,7 +129,7 @@ Content-type: application/json
 ---
 
 
-##### <a name="response"></a>Resposta
+### <a name="response"></a>Resposta
 
 Veja a seguir um exemplo da resposta.
 <!-- {

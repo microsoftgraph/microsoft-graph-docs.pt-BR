@@ -1,16 +1,16 @@
 ---
 title: 'passwordAuthenticationMethod: resetPassword'
 description: Redefinir a senha de um usuário
-localization_priority: Normal
+ms.localizationpriority: medium
 author: mmcla
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: 392629ed4cc686855b1ec31aba09f1b70a62c5a9
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: fad8afd1fd3d4507ad7cf9447b855e3d70bc65cc
+ms.sourcegitcommit: e497ed9bb56400bdd2bb53d52ddf057d9966220b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52049167"
+ms.lasthandoff: 11/30/2021
+ms.locfileid: "61224459"
 ---
 # <a name="passwordauthenticationmethod-resetpassword"></a>passwordAuthenticationMethod: resetPassword
 
@@ -28,15 +28,29 @@ Essa redefinição é uma operação de longa duração e retornará um link no 
 
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
-| Tipo de permissão                        | Permissões agindo por si mesmo (do mínimo para o mais privilegiado) | Permissões atuando em outras pessoas (do mínimo ao mais privilegiado)|
+### <a name="permissions-acting-on-self"></a>Permissões agindo em si mesmo
+
+A operação não pode ser executada na conta de um usuário.
+
+|Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
+|:---------------------------------------|:-------------------------|
+| Delegado (conta corporativa ou de estudante)     | Sem suporte. |
+| Delegado (conta pessoal da Microsoft) | Sem suporte. |
+| Aplicativo                            | Sem suporte. |
+
+### <a name="permissions-acting-on-other-users"></a>Permissões atuando em outros usuários
+
+Somente um administrador com as permissões apropriadas pode executar essa operação.
+
+|Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
 |:---------------------------------------|:-------------------------|:-----------------|
-| Delegado (conta corporativa ou de estudante)     | Sem suporte. | UserAuthenticationMethod.ReadWrite.All |
-| Delegado (conta pessoal da Microsoft) | Sem suporte. | Sem suporte. |
-| Aplicativo                            | Sem suporte. | Sem suporte. |
+| Delegada (conta corporativa ou de estudante)     | UserAuthenticationMethod.ReadWrite.All |
+| Delegado (conta pessoal da Microsoft) | Sem suporte. |
+| Aplicativo                            | Sem suporte. |
 
-Para cenários delegados em que um administrador está atuando em outro usuário, o administrador precisa de uma [das seguintes funções:](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles)
+Para cenários delegados em que um administrador está agindo em outro usuário, o administrador precisa de uma das seguintes funções [do Azure AD:](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles)
 
-* Administração global
+* Administrador global
 * Administrador de autenticação privilegiada
 * Administrador de autenticação
 
@@ -61,7 +75,7 @@ Forneça um objeto JSON com os seguintes parâmetros no corpo da solicitação.
 
 | Parâmetro    | Tipo        | Descrição |
 |:-------------|:------------|:------------|
-|newPassword|String|A nova senha inserida pelo administrador. Obrigatório para locatários com cenários de senha híbrida. Se for omitido para uma senha somente na nuvem, o sistema retornará uma senha gerada pelo sistema. Esta é uma cadeia de caracteres unicode sem outra codificação. Ele é validado no sistema de senhas proibido do locatário antes da aceitação e deve seguir os requisitos de senha na nuvem e/ou local do locatário.|
+|newPassword|Cadeia de Caracteres|A nova senha inserida pelo administrador. Obrigatório para locatários com cenários de senha híbrida. Se for omitido para uma senha somente na nuvem, o sistema retornará uma senha gerada pelo sistema. Esta é uma cadeia de caracteres unicode sem outra codificação. Ele é validado no sistema de senhas proibido do locatário antes da aceitação e deve seguir os requisitos de senha na nuvem e/ou local do locatário.|
 
 ## <a name="response"></a>Resposta
 

@@ -159,7 +159,7 @@ items:
         href: /graph/toolkit/overview?context=graph/api/1.0
       - name: Introdução
         items:
-          - name: Visão Geral
+          - name: Visão geral
             href: /graph/toolkit/get-started/overview?context=graph/api/1.0
           - name: /graph/toolkit para React
             href: /graph/toolkit/get-started/mgt-react?context=graph/api/1.0
@@ -256,11 +256,11 @@ items:
   - name: Referência v1.0
     expanded: true
     items:
-      - name: Visão Geral
+      - name: Visão geral
         href: overview.md
       - name: Usuários
         items:
-          - name: Visão Geral
+          - name: Visão geral
             href: resources/users.md
           - name: Usuário
             href: resources/user.md
@@ -332,16 +332,16 @@ items:
             items:
               - name: Atribuir licença
                 href: api/user-assignlicense.md
-              - name: Verificar grupos de membros
-                href: api/directoryobject-checkmembergroups.md
-              - name: Verificar objetos membros
-                href: api/user-checkmemberobjects.md
               - name: Exportar dados pessoais
                 href: api/user-exportpersonaldata.md
-              - name: Obter objetos de membros
-                href: api/directoryobject-getmemberobjects.md
+              - name: Verificar grupos de membros
+                href: api/directoryobject-checkmembergroups.md
               - name: Obter grupos de membros
                 href: api/directoryobject-getmembergroups.md
+              - name: Verificar objetos membros
+                href: api/directoryobject-checkmemberobjects.md
+              - name: Obter objetos de membros
+                href: api/directoryobject-getmemberobjects.md
               - name: Obter objetos por ID
                 href: api/directoryobject-getbyids.md
               - name: Listar objetos criados
@@ -427,7 +427,7 @@ items:
               - name: Listar blocos de anotações
                 href: api/onenote-list-notebooks.md
           - name: Hierarquia da organização
-            href: resources/organization.md
+            href: resources/user.md
             items:
               - name: Listar subordinados diretos
                 href: api/user-list-directreports.md
@@ -544,16 +544,16 @@ items:
                 href: api/group-post-owners.md
               - name: Atribuir licença
                 href: api/group-assignlicense.md
-              - name: Verificar grupos de membros
-                href: api/directoryobject-checkmembergroups.md
-              - name: Verificar objetos membros
-                href: api/group-checkmemberobjects.md
-              - name: Obter intervalo
-                href: api/group-delta.md
               - name: Obter grupos de membros
                 href: api/directoryobject-getmembergroups.md
+              - name: Verificar grupos de membros
+                href: api/directoryobject-checkmembergroups.md
               - name: Obter objetos de membros
-                href: api/group-getmemberobjects.md
+                href: api/directoryobject-getmemberobjects.md
+              - name: Verificar objetos membros
+                href: api/directoryobject-checkmemberobjects.md
+              - name: Obter intervalo
+                href: api/group-delta.md
               - name: Configuração de grupo
                 href: resources/groupsetting.md
                 items:
@@ -721,7 +721,7 @@ items:
                 href: api/driveitem-list-children.md
           - name: Propriedades estendidas
             items:
-              - name: Visão Geral
+              - name: Visão geral
                 href: resources/extended-properties-overview.md
               - name: Propriedades estendidas de valor único
                 items:
@@ -925,12 +925,12 @@ items:
                     href: api/serviceprincipal-list-transitivememberof.md
                   - name: Verificar grupos de membros
                     href: api/directoryobject-checkmembergroups.md
-                  - name: Verificar objetos membros
-                    href: api/serviceprincipal-checkmemberobjects.md
                   - name: Obter grupos de membros
                     href: api/directoryobject-getmembergroups.md
+                  - name: Verificar objetos membros
+                    href: api/directoryobject-checkmemberobjects.md
                   - name: Obter objetos de membros
-                    href: api/serviceprincipal-getmemberobjects.md
+                    href: api/directoryobject-getmemberobjects.md
               - name: Proprietários
                 items:
                   - name: List
@@ -1181,7 +1181,7 @@ items:
                 href: api/outlookcategory-delete.md
           - name: Propriedades estendidas
             items:
-              - name: Visão Geral
+              - name: Visão geral
                 href: resources/extended-properties-overview.md
               - name: Propriedades estendidas de valor único
                 items:
@@ -1296,7 +1296,7 @@ items:
                 href: api/call-logteleconferencedevicequality.md
           - name: Registros de chamadas
             items:
-              - name: Visão Geral
+              - name: Visão geral
                 href: resources/callrecords-api-overview.md
               - name: Registro de chamada
                 items:
@@ -1350,7 +1350,7 @@ items:
       - name: Conformidade
         displayName: 'Compliance API, Microsoft Graph Compliance API'
         items:
-          - name: Visão Geral
+          - name: Visão geral
             href: resources/complianceapioverview.md
           - name: Solicitação de direitos do sujeito
             items:
@@ -4395,7 +4395,7 @@ items:
       - name: Arquivos
         displayName: 'OneDrive, OneDrive for Business, OneDrive business, OneDrive personal, SharePoint'
         items:
-          - name: Visão Geral
+          - name: Visão geral
             href: resources/onedrive.md
           - name: Unidades
             href: resources/drive.md
@@ -4556,8 +4556,14 @@ items:
                     href: api/device-update.md
                   - name: Excluir dispositivo
                     href: api/device-delete.md
+                  - name: Verificar grupos de membros
+                    href: api/directoryobject-checkmembergroups.md
+                  - name: Obter grupos de membros
+                    href: api/directoryobject-getmembergroups.md
                   - name: Verificar objetos membros
-                    href: api/device-checkmemberobjects.md
+                    href: api/directoryobject-checkmemberobjects.md
+                  - name: Obter objetos de membros
+                    href: api/directoryobject-getmemberobjects.md
                   - name: Criar proprietário registrado
                     href: api/device-post-registeredowners.md
                   - name: Criar usuário registrado
@@ -4671,7 +4677,7 @@ items:
                       - name: Obter gerente
                         href: api/orgcontact-get-manager.md
                       - name: Obter objetos de membros
-                        href: api/orgcontact-getmemberobjects.md
+                        href: api/directoryobject-getmemberobjects.md
                   - name: SKU inscrita
                     href: resources/subscribedsku.md
                     items:
@@ -4942,7 +4948,7 @@ items:
                         href: api/authenticationflowspolicy-update.md
                   - name: Política de métodos de autenticação
                     items:
-                      - name: Visão Geral
+                      - name: Visão geral
                         href: resources/authenticationmethodspolicies-overview.md
                       - name: Política de método de autenticação
                         href: resources/authenticationmethodspolicy.md
@@ -5406,7 +5412,7 @@ items:
                 href: api/messagerule-delete.md
           - name: Propriedades estendidas
             items:
-              - name: Visão Geral
+              - name: Visão geral
                 href: resources/extended-properties-overview.md
               - name: Propriedades estendidas de valor único
                 items:
@@ -5517,7 +5523,7 @@ items:
                 href: api/resource-get.md
       - name: Inteligência de pessoas e local de trabalho
         items:
-          - name: Visão Geral
+          - name: Visão geral
             href: resources/social-overview.md
           - name: Pessoas
             items:
@@ -5630,7 +5636,7 @@ items:
         items:
           - name: Relatórios de atividade do Azure AD
             items:
-              - name: Visão Geral
+              - name: Visão geral
                 href: resources/azure-ad-auditlog-overview.md
               - name: Auditoria de diretório
                 href: resources/directoryaudit.md
@@ -5856,7 +5862,7 @@ items:
         items:
           - name: Consulta
             items:
-              - name: Visão Geral
+              - name: Visão geral
                 href: resources/search-api-overview.md
               - name: Tipo de solicitação de pesquisa
                 href: resources/searchrequest.md
@@ -5866,7 +5872,7 @@ items:
                 href: api/search-query.md
           - name: Index
             items:
-              - name: Visão Geral
+              - name: Visão geral
                 href: resources/indexing-api-overview.md
               - name: Conexão externa
                 items:
@@ -5942,7 +5948,7 @@ items:
             items:
               - name: Avaliação de ameaças
                 items:
-                  - name: Visão Geral
+                  - name: Visão geral
                     href: resources/threatassessment-api-overview.md
                   - name: Solicitação de avaliação de ameaças
                     href: resources/threatassessmentrequest.md
@@ -5981,7 +5987,7 @@ items:
       - name: Sites e listas
         displayName: 'SharePoint, OneDrive, OneDrive for Business, OneDrive business, OneDrive personal'
         items:
-          - name: Visão Geral
+          - name: Visão geral
             href: resources/sharepoint.md
           - name: Sites
             href: resources/site.md
@@ -6159,9 +6165,9 @@ items:
       - name: Tarefas e planos
         displayName: Planner
         items:
-          - name: Visão Geral
+          - name: Visão geral
             href: resources/planner-overview.md
-          - name: Plano
+          - name: Planejar
             href: resources/plannerplan.md
             items:
               - name: Criar plano
@@ -6311,7 +6317,7 @@ items:
               - name: Obter grupos de membros
                 href: api/directoryobject-getmembergroups.md
               - name: Obter objetos de membros
-                href: api/group-getmemberobjects.md
+                href: api/directoryobject-getmemberobjects.md
               - name: Verificar grupos de membros
                 href: api/directoryobject-checkmembergroups.md
               - name: Listar membro de
@@ -6429,7 +6435,7 @@ items:
                 href: api/chats-getallmessages.md
               - name: Obter conteúdo hospedado
                 href: api/chatmessagehostedcontent-get.md
-          - name: App
+          - name: Aplicativo
             items:
               - name: Aplicativo no catálogo
                 href: resources/teamsapp.md

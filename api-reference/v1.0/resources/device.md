@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: sandeo-MSFT
 ms.prod: directory-management
 doc_type: resourcePageType
-ms.openlocfilehash: 52551f96dc8bb55b2d971059cdb7bdc8de2975ad
-ms.sourcegitcommit: 1cf7a82df17afc6291e2c93d8b2c277bf3382e6a
+ms.openlocfilehash: 3f88d26437f47934554e3404a2be4ab1e617b266
+ms.sourcegitcommit: e497ed9bb56400bdd2bb53d52ddf057d9966220b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/20/2021
-ms.locfileid: "61130014"
+ms.lasthandoff: 11/30/2021
+ms.locfileid: "61226432"
 ---
 # <a name="device-resource-type"></a>tipo de recurso de dispositivo
 
@@ -18,10 +18,10 @@ Namespace: microsoft.graph
 
 Representa um dispositivo registrado na organização. Dispositivos são criados na nuvem usando o Serviço de Registro de Dispositivo ou por meio do Intune. Eles são usados por políticas de acesso condicional para a autenticação multifator. Estes dispositivos podem variar desde computadores desktop e laptops até telefones e tablets. Herda de [directoryObject](directoryobject.md).
 
-Esse recurso permite que você adicione seus próprios dados às propriedades personalizadas usando [extensions](/graph/extensibility-overview).
+Esse recurso permite que você adicione seus próprios dados às propriedades personalizadas usando [extensions](/graph/extensibility-overview). Esse recurso é um tipo aberto que permite que outras propriedades sejam passadas.
 
 
-## <a name="methods"></a>Métodos
+## <a name="methods"></a>Methods
 
 | Método       | Tipo de retorno  |Descrição|
 |:---------------|:--------|:----------|
@@ -32,7 +32,8 @@ Esse recurso permite que você adicione seus próprios dados às propriedades pe
 |[Listar memberOf](../api/device-list-memberof.md) |Coleção [directoryObject](directoryobject.md)| Listar os grupos dos que o dispositivo é um membro direto. |
 |[Listar registeredOwners](../api/device-list-registeredowners.md) |Coleção [directoryObject](directoryobject.md)| Obtenha os usuários que são proprietários registrados do dispositivo da propriedade de navegação registeredOwners.|
 |[Listar registeredUsers](../api/device-list-registeredusers.md) |Coleção [directoryObject](directoryobject.md)| Obtenha os usuários registrados do dispositivo da propriedade de navegação registeredUsers.|
-|[checkMemberObjects](../api/device-checkmemberobjects.md) | Coleção de cadeias de caracteres | Verifique se há associação em uma lista de grupos, função de diretório ou objetos de unidade administrativa. |
+|[checkMemberObjects](../api/directoryobject-checkmemberobjects.md) | Coleção de cadeias de caracteres | Verifique se há associação em uma lista de grupos, função de diretório ou objetos de unidade administrativa. |
+|[getMemberObjects](../api/directoryobject-checkmemberobjects.md) | String collection | Retorne todos os grupos, unidades administrativas e funções de diretório das quais o dispositivo é membro. A verificação é transitiva. |
 |**Extensões abertas**| | |
 |[Criar extensão aberta](../api/opentypeextension-post-opentypeextension.md) |[openTypeExtension](opentypeextension.md)| Crie uma extensão aberta e adicione propriedades personalizadas a uma instância nova ou existente de um recurso.|
 |[Obter extensão aberta](../api/opentypeextension-get.md) |Coleção [openTypeExtension](opentypeextension.md)| Obtenha uma extensão aberta identificada pelo nome da extensão.|
@@ -53,13 +54,13 @@ Esse recurso permite que você adicione seus próprios dados às propriedades pe
 |deviceId|Cadeia de caracteres| Identificador exclusivo definido pelo serviço de registro do dispositivo Azure no momento do registro. Suporta `$filter` (`eq`, `ne`, `not`, `startsWith`).|
 |deviceMetadata|String| Apenas para uso interno. Definido como `null`. |
 |deviceVersion|Int32| Apenas para uso interno. |
-|displayName|Cadeia de caracteres|O nome de exibição do dispositivo. Obrigatório. Suporte `$filter` (`eq`, `ne`, `not`, `ge`, `le`, `in`, `startsWith`, e `eq` no `null` valores), `$search`, e `$orderBy`.  |
+|displayName|String|O nome de exibição do dispositivo. Obrigatório. Suporte `$filter` (`eq`, `ne`, `not`, `ge`, `le`, `in`, `startsWith`, e `eq` no `null` valores), `$search`, e `$orderBy`.  |
 | extensionAttributes | [onPremisesExtensionAttributes](onpremisesextensionattributes.md) | Contém atributos de extensão 1 a 15 para o dispositivo. Os atributos de extensão individuais não são selecionáveis. Essas propriedades são masterizados na nuvem e podem ser definidas durante a criação ou atualização de um objeto de dispositivo no Azure AD. <br><br>Suporte `$filter` (`eq`, `not`, `startsWith`, e `eq` no `null` valores). |
-|id|Cadeia de caracteres|O identificador exclusivo do dispositivo. Herdado de [directoryObject](directoryobject.md). Chave, Não anulável. Somente leitura. Suporta `$filter` (`eq`, `ne`, `not`, `in`). |
-|isCompliant|Booliano|`true` se o dispositivo estiver em conformidade com políticas de Gerenciamento de Dispositivo Móvel (MDM); caso contrário, `false` . Somente leitura. Isso só pode ser atualizado pelo Intune para qualquer tipo de sistema operacional de dispositivo ou por um [aplicativo MDM](/windows/client-management/mdm/azure-active-directory-integration-with-mdm) aprovado para Windows do sistema operacional. Suporta `$filter` (`eq`, `ne`, `not`).|
+|id|String|O identificador exclusivo do dispositivo. Herdado de [directoryObject](directoryobject.md). Chave, Não anulável. Somente leitura. Suporta `$filter` (`eq`, `ne`, `not`, `in`). |
+|isCompliant|Booliano|`true` se o dispositivo estiver em conformidade com políticas de Gerenciamento de Dispositivo Móvel (MDM); caso contrário, `false` . Apenas leitura. Isso só pode ser atualizado pelo Intune para qualquer tipo de sistema operacional de dispositivo ou por um [aplicativo MDM](/windows/client-management/mdm/azure-active-directory-integration-with-mdm) aprovado para Windows do sistema operacional. Suporta `$filter` (`eq`, `ne`, `not`).|
 |isManaged|Booliano|`true` se o dispositivo for gerenciado por um aplicativo MDM (Gerenciamento de Dispositivo Móvel). caso contrário, `false` . Isso só pode ser atualizado pelo Intune para qualquer tipo de sistema operacional de dispositivo ou por um [aplicativo MDM](/windows/client-management/mdm/azure-active-directory-integration-with-mdm) aprovado para Windows do sistema operacional. Suporta `$filter` (`eq`, `ne`, `not`). |
-|fabricante|String| Fabricante do dispositivo. Somente leitura. |
-|mdmAppId|Cadeia de caracteres|Identificador de aplicativo usado para registrar o dispositivo no MDM. Somente leitura. Suporta `$filter` (`eq`, `ne`, `not`, `startsWith`).|
+|fabricante|String| Fabricante do dispositivo. Apenas leitura. |
+|mdmAppId|Cadeia de Caracteres|Identificador de aplicativo usado para registrar o dispositivo no MDM. Somente leitura. Suporta `$filter` (`eq`, `ne`, `not`, `startsWith`).|
 |modelo|String| Modelo do dispositivo. Somente leitura. |
 |onPremisesLastSyncDateTime|DateTimeOffset|A última vez em que o objeto foi sincronizado com o diretório local. O tipo Timestamp representa informações de data e hora usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite UTC em 1º de janeiro de 2014 é `2014-01-01T00:00:00Z` somente leitura. Suporta `$filter` (`eq`, `ne`, `not`, `ge`, `le`, `in`).|
 |onPremisesSyncEnabled|Booliano|`true` se esse objeto está sincronizado de um diretório local; `false` se esse objeto foi originalmente sincronizado de um diretório local, mas não está mais sincronizado; `null` se esse objeto nunca foi sido sincronizado de um diretório local (padrão).  Somente leitura. Suporte `$filter` (`eq`, `ne`, `not`, `in`, e `eq` no `null` valores). |
@@ -75,7 +76,7 @@ Esse recurso permite que você adicione seus próprios dados às propriedades pe
 |:---------------|:--------|:----------|
 |extensions|Coleção [extension](extension.md)|A coleção de extensões abertas definidas para o dispositivo. Somente leitura. Anulável.|
 |memberOf|Coleção [directoryObject](directoryobject.md)|Grupos dos que esse dispositivo é membro. Somente leitura. Anulável. Suporta o `$expand`. |
-|transitiveMemberOf |Coleção [directoryObject](directoryobject.md)| Grupos dos que o dispositivo é membro. Esta operação é transitiva. Suporta `$expand`.  |
+|transitiveMemberOf |Coleção [directoryObject](directoryobject.md)| Grupos dos que o dispositivo é membro. Esta operação é transitiva. Suporta o `$expand`.  |
 |registeredOwners|Coleção [directoryObject](directoryobject.md)|O usuário que associou o dispositivo na nuvem ou registrou seu dispositivo pessoal. O proprietário registrado é definido no momento do registro. Atualmente, só pode haver um proprietário. Somente leitura. Anulável. Suporta o `$expand`.  |
 |registeredUsers|Coleção [directoryObject](directoryobject.md)|Coleção de usuários registrados do dispositivo. Para dispositivos associados em nuvem e dispositivos pessoais registrados, os usuários registrados são definidos para o mesmo valor que proprietários registrados no momento do registro. Somente leitura. Anulável. Suporta o `$expand`. |
 

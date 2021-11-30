@@ -5,15 +5,17 @@ author: simonhult
 ms.localizationpriority: high
 ms.prod: insights
 ms.custom: scenarios:getting-started
-ms.openlocfilehash: e65df53dc8ef6e9eec0f70ce7dbe4fe55e7b1466
-ms.sourcegitcommit: ddeee0eec277df06d9e635e5b5c257d14c856273
+ms.openlocfilehash: c4d458c74b8197fe07f178ea9f725c8094228a2e
+ms.sourcegitcommit: e497ed9bb56400bdd2bb53d52ddf057d9966220b
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/04/2021
-ms.locfileid: "60780909"
+ms.lasthandoff: 11/30/2021
+ms.locfileid: "61223051"
 ---
 # <a name="overview-of-item-insights"></a>Visão geral dos insights do item
 As percepções do item são recomendações centradas no usuário para você e aqueles com quem você trabalha, com base em seu trabalho colaborativo no Microsoft 365.
+
+> [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RWPGbr] 
 
 ## <a name="computation-of-item-insights"></a>Cálculo de insights do item
 O Microsoft 365 é a nuvem de produtividade do mundo, onde muitos recursos são projetados para você, como usuário. Ao interagir com recursos como arquivos no Microsoft 365, você produz sinais que a Microsoft agrega e monta em um gráfico para sua organização. No gráfico, os dados do sinal são representados como relacionamentos entre você e os outros recursos. Derivados de sinais no gráfico, estão os insights que potencializam algumas experiências do Microsoft 365. Exemplos de experiências incluem sugerir o melhor horário para a próxima reunião de equipe, ajudá-lo a organizar informações pessoais e de trabalho em seu telefone e muitos outros cenários de inteligência. 
@@ -77,4 +79,4 @@ Está procurando a referência de API para esse serviço?
 ## <a name="next-steps"></a>Próximos passos
 
 - Use o [Graph Explorer](https://developer.microsoft.com/graph/graph-explorer) para experimentar a API de insights com seus próprios arquivos. Faça login, expanda **Insights** na coluna à esquerda e experimente as consultas de amostra.
-- Saiba mais sobre [personalizar a privacidade de insights de itens para usuários (visualização)](insights-customize-item-insights-privacy.md) e a [API de configurações de insights (visualização)](/graph/api/resources/insightssettings?view=graph-rest-beta&preserve-view=true) que suporta personalização.
+- Saiba mais sobre[ como personalizar a privacidade dos insights de itens para usuários (visualização)](insights-customize-item-insights-privacy.md) e a [API de configurações de insights de itens (visualização)](/graph/api/resources/iteminsightssettings?view=graph-rest-beta&preserve-view=true) que oferece suporte à personalização.

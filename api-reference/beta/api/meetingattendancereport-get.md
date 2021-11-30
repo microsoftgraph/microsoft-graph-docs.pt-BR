@@ -5,12 +5,12 @@ author: mkhribech
 ms.localizationpriority: medium
 ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: 6ff8c812928a983868b47775e3c970c4c60da21c
-ms.sourcegitcommit: 1cf7a82df17afc6291e2c93d8b2c277bf3382e6a
+ms.openlocfilehash: 88b8dfa0da8e64272f4e03c8896d545bffcd1d58
+ms.sourcegitcommit: e497ed9bb56400bdd2bb53d52ddf057d9966220b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/20/2021
-ms.locfileid: "61130248"
+ms.lasthandoff: 11/30/2021
+ms.locfileid: "61226243"
 ---
 # <a name="get-meetingattendancereport"></a>Obter meetingAttendanceReport
 
@@ -26,7 +26,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 | Tipo de permissão | Permissões (da com menos para a com mais privilégios) |
 |:----------------|:--------------------------------------------|
-| Delegado (conta corporativa ou de estudante) | OnlineMeetingArtifact.Read.All |
+| Delegada (conta corporativa ou de estudante) | OnlineMeetingArtifact.Read.All |
 | Delegado (conta pessoal da Microsoft) | Sem suporte. |
 | Aplicativo | OnlineMeetingArtifact.Read.All |
 
@@ -179,6 +179,10 @@ GET https://graph.microsoft.com/beta/me/onlineMeetings/MSpkYzE3Njc0Yy04MWQ5LTRhZ
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/get-attendance-report-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[Ir](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/get-attendance-report-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

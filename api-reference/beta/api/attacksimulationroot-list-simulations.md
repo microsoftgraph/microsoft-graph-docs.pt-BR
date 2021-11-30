@@ -5,12 +5,12 @@ author: Gopal-MSFT
 ms.localizationpriority: medium
 ms.prod: security
 doc_type: apiPageType
-ms.openlocfilehash: 23cbcc366c07ed3f6d1c8b2ab5ee2b4361bc980c
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: ce449178da32f31a3d9ffc644eff7d78171559b0
+ms.sourcegitcommit: e497ed9bb56400bdd2bb53d52ddf057d9966220b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "60982487"
+ms.lasthandoff: 11/30/2021
+ms.locfileid: "61223688"
 ---
 # <a name="list-simulations"></a>Listar simulações
 Namespace: microsoft.graph
@@ -24,7 +24,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 | Tipo de permissão                        | Permissões (da com menos para a com mais privilégios) |
 |:---------------------------------------|:--------------------------------------------|
-| Delegado (conta corporativa ou de estudante)     | SecurityEvents.Read.All                     |
+| Delegada (conta corporativa ou de estudante)     | SecurityEvents.Read.All                     |
 | Delegado (conta pessoal da Microsoft) | Sem suporte.                              |
 | Aplicativo                            | SecurityEvents.Read.All                     |
 
@@ -39,9 +39,9 @@ GET /security/attackSimulation/simulations
 ```
 
 ## <a name="optional-query-parameters"></a>Parâmetros de consulta opcionais
-Este método dá suporte aos seguintes parâmetros de consulta OData para ajudar a personalizar a resposta: `$count` , , , , , `$filter` `$orderby` `$skiptoken` `$top` .
+Este método dá suporte aos seguintes parâmetros de consulta OData para ajudar a personalizar a resposta: `$count` , , , , , , `$filter` `$orderby` `$skiptoken` `$top` `$select` .
 
-As seguintes propriedades suportam `$filter` e `$orderby` : **attackTechnique**, **attackType**, **completionDateTime**, **displayName**, **isAutomated**, **launchDateTime**, **mode**, **status**.
+As propriedades a seguir `$filter` suportam `$orderby` e : **attackTechnique**, **attackType**, **completionDateTime**, **displayName**, **isAutomated**, **launchDateTime**, **status**.
 
 Use `@odata.nextLink` para paginação.
 
@@ -57,6 +57,7 @@ GET /security/attackSimulation/simulations?$filter={property} eq '{property-valu
 GET /security/attackSimulation/simulations?$filter={property} eq '{property-value}'&$top=5
 GET /security/attackSimulation/simulations?$orderby={property}
 GET /security/attackSimulation/simulations?$top=1
+GET /security/attackSimulation/simulations?$select={property}
 ```
 
 Para obter informações gerais, acesse [Parâmetros de consulta OData](/graph/query-parameters).
@@ -147,7 +148,6 @@ Content-Type: application/json
       "completionDateTime": "2021-01-07T01:01:01.01Z",
       "includeAllAccountTargets": false,
       "enableRegionTimezoneDelivery": false,
-      "mode": "real",
       "isAutomated": false,
       "cleanupArtifacts": false,
       "payloadSource": "global",

@@ -5,12 +5,12 @@ author: spunukol
 ms.localizationpriority: medium
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: b02e1c9d6a0de046771e4a437cb1762eea73c6db
-ms.sourcegitcommit: 2f394a9f33f2fab3634d0f18882985ee211067d1
+ms.openlocfilehash: 5028cc130f08c8070b426e49085a3a4367e64e8d
+ms.sourcegitcommit: e497ed9bb56400bdd2bb53d52ddf057d9966220b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/05/2021
-ms.locfileid: "60127894"
+ms.lasthandoff: 11/30/2021
+ms.locfileid: "61226530"
 ---
 # <a name="get-deviceregistrationpolicy"></a>Obter deviceRegistrationPolicy
 
@@ -25,7 +25,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 |Tipo de permissão|Permissões (da com menos para a com mais privilégios)|
 |:---|:---|
-|Delegado (conta corporativa ou de estudante)| Policy.ReadWrite.DeviceConfiguration|
+|Delegada (conta corporativa ou de estudante)| Policy.ReadWrite.DeviceConfiguration|
 |Delegado (conta pessoal da Microsoft)|Sem suporte|
 |Aplicativo|Sem suporte|
 
@@ -67,7 +67,7 @@ Se tiver êxito, este método retornará um código de resposta e um `200 OK` [o
 }
 -->
 ``` http
-GET https://graph.microsoft.com/policies/deviceRegistrationPolicy
+GET https://graph.microsoft.com/beta/policies/deviceRegistrationPolicy
 ```
 
 

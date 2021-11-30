@@ -3,12 +3,12 @@ title: Implantações de nuvens nacionais
 description: Além de uma rede global de datacenters, os serviços em nuvem da Microsoft estão disponíveis em três nuvens nacionais separadas.
 author: arpitha-dhanapathi
 ms.localizationpriority: medium
-ms.openlocfilehash: 5ddbd3bcb9717d49efe109e2edc371e7fc623b42
-ms.sourcegitcommit: 08e9b0bac39c1b1d2c8a79539d24aaa93364baf2
+ms.openlocfilehash: a6c3ecbcb5cbb48d76c678c2496349e562721b8d
+ms.sourcegitcommit: e497ed9bb56400bdd2bb53d52ddf057d9966220b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/24/2021
-ms.locfileid: "59766149"
+ms.lasthandoff: 11/30/2021
+ms.locfileid: "61226901"
 ---
 # <a name="national-cloud-deployments"></a>Implantações de nuvem nacional
 
@@ -67,7 +67,7 @@ A tabela a seguir mostra os pontos de extremidade raiz do serviço para o Micros
 > [!NOTE]
 > Os aplicativos só podem acessar dados organizacionais por meio dos pontos de extremidade da nuvem nacional. Isso significa que os aplicativos só podem acessar dados em locatários registrados na nuvem nacional específica. Aplicativos que estão tentando acessar dados de consumidor associados a contas pessoais da Microsoft por meio do Microsoft Graph devem usar o serviço global `https://graph.microsoft.com` . Os tokens de acesso adquiridos para uma implantação nacional de nuvem não são intercambiáveis com aqueles adquiridos para o serviço global ou qualquer outra nuvem nacional.
 
-## <a name="supported-features"></a>Recursos com suporte
+## <a name="supported-features"></a>Recursos suportados
 
 Os seguintes recursos do Microsoft Graph estão geralmente disponíveis no ponto de extremidade em todas as implantações de nuvem `/v1.0` nacionais, exceto quando notados.
 
@@ -115,3 +115,9 @@ Para saber mais sobre nuvens nacionais, consulte os seguintes tópicos:
 * [Governo do Azure](https://azure.microsoft.com/global-infrastructure/government/)
 * [Azure China 21Vianet](/azure/china/)
 * [Azure Alemanha](/azure/germany/)
+
+Explore exemplos para autenticar e trabalhar com o Azure e Microsoft 365 em implantações de nuvem nacionais:
+
+* [Trabalhar com o Azure por meio do Microsoft Graph para o Governo dos EUA](https://github.com/SteveWinward/Azure-Samples/blob/master/AAD/SampleAadToken_AzureForGovernment.ps1)
+* [Conexão ambientes O365 do Governo dos EUA (GCC, GCC High e GCC DoD) usando o Microsoft Graph PowerShell](https://github.com/microsoft/Federal-Business-Applications/tree/main/demos/powershell-gov-samples#microsoft-graph-powershell)
+

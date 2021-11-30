@@ -5,12 +5,12 @@ author: mmcla
 ms.localizationpriority: medium
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: 75aa58e1c9def07e8eb9a3f9c6695531d81dfcac
-ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
+ms.openlocfilehash: 46a2a151bdaa6735f5d6594c48198cab40c11cbe
+ms.sourcegitcommit: e497ed9bb56400bdd2bb53d52ddf057d9966220b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/12/2021
-ms.locfileid: "60944645"
+ms.lasthandoff: 11/30/2021
+ms.locfileid: "61225144"
 ---
 # <a name="update-smsauthenticationmethodconfiguration"></a>Atualizar smsAuthenticationMethodConfiguration
 Namespace: microsoft.graph
@@ -25,10 +25,10 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |Tipo de permissão|Permissões (da com menos para a com mais privilégios)|
 |:---|:---|
 |Delegada (conta corporativa ou de estudante)|Policy.ReadWrite.AuthenticationMethod|
-|Delegada (conta pessoal da Microsoft)|Sem suporte.|
+|Delegado (conta pessoal da Microsoft)|Sem suporte.|
 |Aplicativo|Policy.ReadWrite.AuthenticationMethod|
 
-Para cenários delegados, o administrador precisa da seguinte [função:](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles)
+Para cenários delegados, o administrador precisa de uma das seguintes funções [do Azure AD:](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles)
 
 * Administrador de Política de Autenticação
 * Administrador Global
@@ -56,8 +56,8 @@ A tabela a seguir mostra as propriedades que são necessárias ao atualizar o [o
 
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|id|Cadeia de caracteres|O identificador de política do método de autenticação.|
-|state|authenticationMethodState|Os valores possíveis são: `enabled` e `disabled`.|
+|id|String|O identificador de política do método de autenticação.|
+|estado|authenticationMethodState|Os valores possíveis são: `enabled` e `disabled`.|
 
 >**Observação:** A `@odata.type` propriedade com um valor de deve ser incluída no `#microsoft.graph.smsAuthenticationMethodConfiguration` corpo.
 

@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: mmcla
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: bccec3710dbdc378f15415a17a4744c1e80c1860
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: cd3b1f64b1e7fdc43fd87e0faa37fdea6058ec29
+ms.sourcegitcommit: e497ed9bb56400bdd2bb53d52ddf057d9966220b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "60982362"
+ms.lasthandoff: 11/30/2021
+ms.locfileid: "61223247"
 ---
 # <a name="create-phoneauthenticationmethod"></a>Criar phoneAuthenticationMethod
 
@@ -28,13 +28,23 @@ Além disso, se um usuário estiver habilitado pela política para usar a assina
 
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
-| Tipo de permissão                        | Permissões agindo por si mesmo (do mínimo para o mais privilegiado) | Permissões atuando em outras pessoas (do mínimo ao mais privilegiado)|
-|:---------------------------------------|:-------------------------|:-----------------|
-| Delegado (conta corporativa ou de estudante)     | UserAuthenticationMethod.ReadWrite | UserAuthenticationMethod.ReadWrite.All |
-| Delegado (conta pessoal da Microsoft) | Sem suporte. | Sem suporte. |
-| Aplicativo                            | Não aplicável. | UserAuthenticationMethod.ReadWrite.All |
+### <a name="permissions-acting-on-self"></a>Permissões agindo em si mesmo
 
-Para cenários delegados em que um administrador está atuando em outro usuário, o administrador precisa de uma [das seguintes funções:](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles)
+|Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
+|:---------------------------------------|:-------------------------|
+| Delegada (conta corporativa ou de estudante)     | UserAuthenticationMethod.ReadWrite |
+| Delegado (conta pessoal da Microsoft) | Sem suporte. |
+| Aplicativo                            | Sem suporte. |
+
+### <a name="permissions-acting-on-other-users"></a>Permissões atuando em outros usuários
+
+|Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
+|:---------------------------------------|:-------------------------|
+| Delegada (conta corporativa ou de estudante)     | UserAuthenticationMethod.ReadWrite.All |
+| Delegado (conta pessoal da Microsoft) | Sem suporte. |
+| Aplicativo                            | UserAuthenticationMethod.ReadWrite.All |
+
+Para cenários delegados em que um administrador está agindo em outro usuário, o administrador precisa de uma das seguintes funções [do Azure AD:](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles)
 
 * Administrador global
 * Administrador de autenticação privilegiada
@@ -63,7 +73,7 @@ No corpo da solicitação, fornece uma representação JSON de [um objeto phoneA
 | Propriedade     | Tipo        | Descrição |
 |:-------------|:------------|:------------|
 |phoneNumber|String|O número de telefone para texto ou chamada para autenticação. Telefone números usam o formato "+ \<country code\> \<number\> x \<extension\> ", com extensão opcional. Por exemplo, +1 5555551234 ou +1 5555551234x123 são válidos. Os números são rejeitados ao criar/atualizar se não corresponderem ao formato necessário.|
-|phoneType|Cadeia de caracteres|Os valores possíveis são: `mobile` `alternateMobile` , e `office` .|
+|phoneType|Cadeia de Caracteres|Os valores possíveis são: `mobile` `alternateMobile` , e `office` .|
 
 ## <a name="response"></a>Resposta
 

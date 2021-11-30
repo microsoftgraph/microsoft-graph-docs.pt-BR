@@ -1,16 +1,16 @@
 ---
 title: Remover um aluno
-description: Remove um educationUser de uma educationClass
+description: Remover um educationUser de uma educationClass.
 author: mmast-msft
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: 0c34227cd6b3ce72c6aebe0ab6952d8167b9b89a
-ms.sourcegitcommit: 94c4acf8bd03c10a44b12952b6cb4827df55b978
+ms.openlocfilehash: 7e2d0701acd3fafa57228fe101c165ae7a058751
+ms.sourcegitcommit: e497ed9bb56400bdd2bb53d52ddf057d9966220b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/06/2021
-ms.locfileid: "52786775"
+ms.lasthandoff: 11/30/2021
+ms.locfileid: "61225921"
 ---
 # <a name="remove-a-student"></a>Remover um aluno
 
@@ -18,11 +18,11 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Remove um [educationUser](../resources/educationuser.md) de uma [educationClass](../resources/educationclass.md)
+Remover um [educationUser](../resources/educationuser.md) de uma [educationClass](../resources/educationclass.md).
 
->**Observação:** professores _e_ alunos estão na coleção **members** da aula. Antes de chamar essa API, garanta que **educationUser** que você está removendo não seja um professor.  Obtenha a lista de professores chamando [educationclass_list_teachers](educationclass-list-teachers.md) e verificando se a ID do usuário a ser removido não está na lista de professores retornada.
+>**Observação:** professores _e_ alunos estão na coleção **members** da aula. Antes de chamar essa API, verifique se **o educationUser** que você está removendo não é um professor.  Obter a lista de professores chamando educationclass_list_teachers [e](educationclass-list-teachers.md) verificando se a ID do usuário a ser removida não está na lista de professores retornados.
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
@@ -49,7 +49,7 @@ Não forneça um corpo de solicitação para esse método.
 Se bem-sucedido, esse método retornará um código de resposta `204 No Content` e um corpo de resposta vazio.
 
 ## <a name="example"></a>Exemplo
-##### <a name="request"></a>Solicitação
+### <a name="request"></a>Solicitação
 Este é um exemplo de solicitação.
 
 # <a name="http"></a>[HTTP](#tab/http)
@@ -79,7 +79,7 @@ DELETE https://graph.microsoft.com/beta/education/classes/11003/members/14008
 ---
 
 
-##### <a name="response"></a>Resposta
+### <a name="response"></a>Resposta
 Este é um exemplo de resposta. 
 <!-- {
   "blockType": "response"

@@ -5,24 +5,24 @@ author: isabelleatmsft
 ms.localizationpriority: medium
 ms.prod: governance
 doc_type: resourcePageType
-ms.openlocfilehash: 7fa385df5d0b57a79d5c41e9c00908b63a6b242f
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 82eaa0d9f95523829c0e0154d36cf8653116ee57
+ms.sourcegitcommit: e497ed9bb56400bdd2bb53d52ddf057d9966220b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59025640"
+ms.lasthandoff: 11/30/2021
+ms.locfileid: "61226915"
 ---
 # <a name="accessreviewinstancedecisionitem-resource-type"></a>Tipo de recurso accessReviewInstanceDecisionItem
 
 Namespace: microsoft.graph
 
-Representa uma decisão de revisão [de](accessreviewsv2-root.md) acesso do Azure AD em uma instância de uma revisão. Essa decisão representa a determinação do acesso de uma identidade a um recurso para um [determinado accessReviewInstance](accessreviewinstance.md).
+Representa uma decisão de revisão [de](accessreviewsv2-root.md) acesso do Azure AD em uma instância de uma revisão. Essa decisão é a determinação do acesso de uma identidade a um recurso para um [determinado accessReviewInstance](accessreviewinstance.md). accessReviewInstanceDecisionItem é um tipo aberto e permite que outras propriedades sejam passadas.
 
 Cada item de decisão é gerado pelo sistema com base no [accessReviewInstance pai.](accessreviewinstance.md)
 
 Herda da [entidade](../resources/entity.md).
 
-## <a name="methods"></a>Métodos
+## <a name="methods"></a>Methods
 |Método|Tipo de retorno|Descrição|
 |:---|:---|:---|
 |[Listar accessReviewInstanceDecisionItems](../api/accessreviewinstancedecisionitem-list.md)|[Coleção accessReviewInstanceDecisionItem](../resources/accessreviewinstancedecisionitem.md)|Obter uma lista dos [objetos accessReviewInstanceDecisionItem](../resources/accessreviewinstancedecisionitem.md) e suas propriedades.|
@@ -33,18 +33,18 @@ Herda da [entidade](../resources/entity.md).
 ## <a name="properties"></a>Propriedades
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|accessReviewId|String|O identificador do pai accessReviewInstance. Oferece suporte para `$select`. Somente leitura.|
-|appliedBy|[userIdentity](../resources/useridentity.md)|O identificador do usuário que aplicou a decisão. Somente leitura.|
+|accessReviewId|Cadeia de Caracteres|O identificador do pai accessReviewInstance. Oferece suporte para `$select`. Somente leitura.|
+|appliedBy|[userIdentity](../resources/useridentity.md)|O identificador do usuário que aplicou a decisão. Apenas leitura.|
 |appliedDateTime|DateTimeOffset|O timestamp quando a decisão de aprovação foi aplicada. O tipo DatetimeOffset representa informações de data e hora usando o formato ISO 8601 e está sempre em horário UTC. Por exemplo, meia-noite UTC em 1 de janeiro de 2014 é `2014-01-01T00:00:00Z`.  Oferece suporte para `$select`. Somente leitura.|
-|applyResult|Cadeia de caracteres|O resultado da aplicação da decisão. Valores possíveis: `New` `AppliedSuccessfully` , , e `AppliedWithUnknownFailure` `AppliedSuccessfullyButObjectNotFound` `ApplyNotSupported` . Suporta `$select` `$orderby` , e ( `$filter` `eq` somente). Somente leitura.|
-|decision|String|Resultado da revisão. Valores possíveis: `Approve` `Deny` , , ou `NotReviewed` `DontKnow` . Suporta `$select` `$orderby` , e ( `$filter` `eq` somente). |
-|id|Cadeia de caracteres| O identificador da decisão. Herdado da [entidade](../resources/entity.md). Oferece suporte para `$select`. Somente leitura.|
-|justification|String|Justification left by the reviewer when they made the decision.|
+|applyResult|Cadeia de Caracteres|O resultado da aplicação da decisão. Valores possíveis: `New` `AppliedSuccessfully` , , e `AppliedWithUnknownFailure` `AppliedSuccessfullyButObjectNotFound` `ApplyNotSupported` . Suporta `$select` `$orderby` , e ( `$filter` `eq` somente). Apenas leitura.|
+|decision|Cadeia de Caracteres|Resultado da revisão. Valores possíveis: `Approve` `Deny` , , ou `NotReviewed` `DontKnow` . Suporta `$select` `$orderby` , e ( `$filter` `eq` somente). |
+|id|String| O identificador da decisão. Herdado da [entidade](../resources/entity.md). Oferece suporte para `$select`. Somente leitura.|
+|justification|Cadeia de Caracteres|Justification left by the reviewer when they made the decision.|
 |principal|[identity](../resources/identity.md)|Cada item de decisão em uma revisão de acesso representa o acesso de uma entidade a um recurso. Essa propriedade representa detalhes da entidade. Por exemplo, se um item de decisão representa o acesso de Usuário "Bob" ao Grupo "Vendas" - a entidade é "Bob" e o recurso é "Vendas". Os principais podem ser de dois tipos - userIdentity e servicePrincipalIdentity. Oferece suporte para `$select`. Somente leitura.|
-|principalLink|String|Um link para o objeto principal. Por exemplo, `https://graph.microsoft.com/v1.0/users/a6c7aecb-cbfd-4763-87ef-e91b4bd509d9`. Somente leitura.|
-|recommendation|Cadeia de caracteres|Uma recomendação gerada pelo sistema para a decisão de aprovação com base na última indicação interativa para locatário. Recomendamos aprovar se a assinatura estiver dentro de trinta dias após o início da revisão. É recomendável negar se a assinatura for maior do que trinta dias do início da revisão. Recomendação não disponível caso contrário. Valores possíveis: `Approve` `Deny` , ou `NoInfoAvailable` . Suporta `$select` `$orderby` , e ( `$filter` `eq` somente). Somente leitura.|
-|recurso|[accessReviewInstanceDecisionItemResource](../resources/accessreviewinstancedecisionitemresource.md)|Cada item de decisão em uma revisão de acesso representa o acesso de uma entidade a um recurso. Essa propriedade representa detalhes do recurso. Por exemplo, se um item de decisão representa o acesso de Usuário "Bob" ao Grupo "Vendas" - a entidade é Bob e o recurso é "Vendas". Os recursos podem ser de vários tipos. Consulte [accessReviewInstanceDecisionItemResource](../resources/accessreviewinstancedecisionitemresource.md). Somente leitura.|
-|resourceLink|Cadeia de caracteres|Um link para o recurso. Por exemplo, `https://graph.microsoft.com/v1.0/servicePrincipals/c86300f3-8695-4320-9f6e-32a2555f5ff8`. Oferece suporte para `$select`. Somente leitura.|
+|principalLink|Cadeia de Caracteres|Um link para o objeto principal. Por exemplo, `https://graph.microsoft.com/v1.0/users/a6c7aecb-cbfd-4763-87ef-e91b4bd509d9`. Apenas leitura.|
+|recommendation|Cadeia de Caracteres|Uma recomendação gerada pelo sistema para a decisão de aprovação com base na última indicação interativa para locatário. Recomendamos aprovar se a assinatura estiver dentro de trinta dias após o início da revisão. É recomendável negar se a assinatura for maior do que trinta dias do início da revisão. Recomendação não disponível caso contrário. Valores possíveis: `Approve` `Deny` , ou `NoInfoAvailable` . Suporta `$select` `$orderby` , e ( `$filter` `eq` somente). Apenas leitura.|
+|recurso|[accessReviewInstanceDecisionItemResource](../resources/accessreviewinstancedecisionitemresource.md)|Cada item de decisão em uma revisão de acesso representa o acesso de uma entidade a um recurso. Essa propriedade representa detalhes do recurso. Por exemplo, se um item de decisão representa o acesso de Usuário "Bob" ao Grupo "Vendas" - a entidade é Bob e o recurso é "Vendas". Os recursos podem ser de vários tipos. Consulte [accessReviewInstanceDecisionItemResource](../resources/accessreviewinstancedecisionitemresource.md). Apenas leitura.|
+|resourceLink|Cadeia de Caracteres|Um link para o recurso. Por exemplo, `https://graph.microsoft.com/v1.0/servicePrincipals/c86300f3-8695-4320-9f6e-32a2555f5ff8`. Oferece suporte para `$select`. Somente leitura.|
 |reviewedBy|[userIdentity](../resources/useridentity.md)| O identificador do revistor. Oferece suporte para `$select`. Somente leitura.|
 |reviewedDateTime|DateTimeOffset| O timestamp quando ocorreu a decisão de revisão. Oferece suporte para `$select`. Somente leitura.|
 

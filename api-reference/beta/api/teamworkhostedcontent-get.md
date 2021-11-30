@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: jecha
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 33af64a32b88493793e01398c51d095a84f1118d
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: d0cbb26840e894eaddf87696e93290553da0486f
+ms.sourcegitcommit: e497ed9bb56400bdd2bb53d52ddf057d9966220b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "61017936"
+ms.lasthandoff: 11/30/2021
+ms.locfileid: "61226594"
 ---
 # <a name="get-teamworkhostedcontent"></a>Obter o trabalho em equipeHostedContent
 
@@ -27,9 +27,9 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 ### <a name="permissions-for-app-icon-in-app-catalog"></a>Permissões para ícone de aplicativo no catálogo de aplicativos
 | Tipo de permissão                        | Permissões (da com menos para a com mais privilégios)                      |
 | :------------------------------------- | :--------------------------------------------------------------- |
-| Delegado (conta corporativa ou de estudante)     | AppCatalog.Read.All, AppCatalog.ReadWrite.All, AppCatalog.Submit |
+| Delegada (conta corporativa ou de estudante)     | AppCatalog.Read.All, AppCatalog.ReadWrite.All, AppCatalog.Submit |
 | Delegado (conta pessoal da Microsoft) | Sem suporte.                                                   |
-| Aplicativo                            | Sem suporte.                                                   |
+| Aplicativo                            | AppCatalog.Read.All, AppCatalog.ReadWrite.All                    |
 
 ## <a name="http-request"></a>Solicitação HTTP
 

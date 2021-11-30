@@ -2,15 +2,15 @@
 title: Tipo de recurso directoryObject
 description: Descreve o recurso directoryAudit (entidade) da API do Microsoft Graph (REST), que ajuda a auditar atividades de diretório (locatário) (versão beta).
 author: SarahBar
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: identity-and-access-reports
 doc_type: resourcePageType
-ms.openlocfilehash: f7d7031033a791bb6cf02e2bad527d4decf2b3ea
-ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
+ms.openlocfilehash: 48aeaaf8db3cff792e1d1edf38040a1de09acb9c
+ms.sourcegitcommit: e497ed9bb56400bdd2bb53d52ddf057d9966220b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "50962613"
+ms.lasthandoff: 11/30/2021
+ms.locfileid: "61224948"
 ---
 # <a name="directoryaudit-resource-type"></a>Tipo de recurso directoryObject
 
@@ -20,7 +20,7 @@ Namespace: microsoft.graph
 
 Representa os itens de auditoria de diretório e sua coleção.
 
-## <a name="methods"></a>Métodos
+## <a name="methods"></a>Methods
 
 | Método           | Tipo de retorno    |Descrição|
 |:---------------|:--------|:----------|
@@ -41,7 +41,8 @@ Representa os itens de auditoria de diretório e sua coleção.
 | loggedByService     | Cadeia de caracteres                                              | Indica informação em que o serviço iniciou a atividade (por exemplo: gerenciamento de senha de autoatendimento, principais diretório, B2C, os usuários convidados, Microsoft Identity Manager, Privileged Identity Management.                                                          |
 | resultado              | operationResult                                              | Indica o resultado da atividade. Os valores possíveis são: `success`, `failure`, `timeout`, `unknownFutureValue`.                                                                                                                                                       |
 | resultReason        | Cadeia de caracteres                                              | Indica o motivo da falha se o **resultado** for `failure` ou `timeout` .                                                                                                                                                                                              |
-| targetResources     | [targetResource](targetresource.md) conjunto      | Indica informação que o recurso foi alterado devido a atividade. Tipo de Recurso de Destino `User` pode ser , , , , , ou `Device` `Directory` `App` `Role` `Group` `Policy` `Other` .                                                                                                       |
+| targetResources     | [targetResource](targetresource.md) conjunto      | Informações sobre o recurso que foi alterado devido à atividade.  | 
+| userAgent | Cadeia de Caracteres | Tipo de agente de usuário usado por um usuário na atividade. |                                                                                                      
 
 ## <a name="relationships"></a>Relações
 Nenhum
@@ -71,7 +72,8 @@ Veja a seguir uma representação JSON do recurso.
   "loggedByService": "String",
   "result": "string",
   "resultReason": "String",
-  "targetResources": [{"@odata.type": "microsoft.graph.targetResource"}]
+  "targetResources": [{"@odata.type": "microsoft.graph.targetResource"}],
+  "userAgent": "String"
 }
 ```
 

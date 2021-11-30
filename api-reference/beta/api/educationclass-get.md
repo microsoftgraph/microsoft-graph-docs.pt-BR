@@ -1,16 +1,16 @@
 ---
 title: Obter educationClass
-description: "  os administradores de grupo representam os professores da classe. Se estiver usando o token delegado, o usuário verá apenas as aulas das quais são membros."
+description: Recupere uma aula do sistema.
 ms.localizationpriority: medium
 author: mmast-msft
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: 8af518527c101bb6f00f13a8f2d7579f8c53ab4b
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: fc931bc0c6036adc73bf39f0352b9ae662c39ca5
+ms.sourcegitcommit: e497ed9bb56400bdd2bb53d52ddf057d9966220b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "60975296"
+ms.lasthandoff: 11/30/2021
+ms.locfileid: "61226327"
 ---
 # <a name="get-educationclass"></a>Obter educationClass
 
@@ -18,15 +18,15 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Recupere uma aula do sistema. Uma aula é um grupo universal com uma propriedade especial que indica ao sistema que o grupo é uma aula. Os membros do grupo representam os alunos; os administradores do grupo representam os professores da aula. Se estiver usando o token delegado, o usuário verá apenas as aulas das quais são membros.
+Recupere uma aula do sistema. Uma aula é um grupo universal com uma propriedade especial que indica ao sistema que o grupo é uma aula. Os membros do grupo representam os alunos; os administradores de grupo representam os professores da classe. Se estiver usando o token delegado, o usuário verá apenas as aulas das quais são membros.
 
 ## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegado (conta corporativa ou de estudante) |  EduRoster.ReadBasic  |
-|Delegado (conta pessoal da Microsoft) |  Sem suporte  |
+|Delegada (conta corporativa ou de estudante) |  EduRoster.ReadBasic  |
+|Delegado (conta pessoal da Microsoft) |  Sem suporte.  |
 |Aplicativo | EduRoster.Read.All, EduRoster.ReadWrite.All | 
 
 ## <a name="http-request"></a>Solicitação HTTP
@@ -46,8 +46,9 @@ Este método dá suporte a [Parâmetros de consulta OData](/graph/query-paramete
 Não forneça um corpo de solicitação para esse método.
 ## <a name="response"></a>Resposta
 Se bem-sucedido, esse método retornará um código de resposta `200 OK` e um objeto [educationClass](../resources/educationclass.md) no corpo da resposta.
+
 ## <a name="example"></a>Exemplo
-##### <a name="request"></a>Solicitação
+### <a name="request"></a>Solicitação
 Este é um exemplo da solicitação.
 
 # <a name="http"></a>[HTTP](#tab/http)
@@ -80,7 +81,7 @@ GET https://graph.microsoft.com/beta/education/classes/11023
 
 ---
 
-##### <a name="response"></a>Resposta
+### <a name="response"></a>Resposta
 Este é um exemplo de resposta. 
 
 >**Observação:** o objeto de resposta mostrado aqui pode ser encurtado para legibilidade.

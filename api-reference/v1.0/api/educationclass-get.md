@@ -1,16 +1,16 @@
 ---
 title: Obter educationClass
-description: Recuperar uma classe do sistema
+description: Recupere uma aula do sistema.
 ms.localizationpriority: medium
 author: mlafleur
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: 678048d58225396b7ce41d5d5316a3edfb03e89f
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: 18f314061e37dcbeebce0756a83db077b3e77029
+ms.sourcegitcommit: e497ed9bb56400bdd2bb53d52ddf057d9966220b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "61025650"
+ms.lasthandoff: 11/30/2021
+ms.locfileid: "61224829"
 ---
 # <a name="get-educationclass"></a>Obter educationClass
 
@@ -23,7 +23,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegado (conta corporativa ou de estudante) |  EduRoster.ReadBasic  |
+|Delegada (conta corporativa ou de estudante) |  EduRoster.ReadBasic  |
 |Delegado (conta pessoal da Microsoft) |  Sem suporte  |
 |Aplicativo | EduRoster.Read.All, EduRoster.ReadWrite.All | 
 
@@ -46,16 +46,10 @@ Para saber mais sobre as opções de consulta do OData, confira [Parâmetros de 
 Não forneça um corpo de solicitação para esse método.
 ## <a name="response"></a>Resposta
 Se bem-sucedido, esse método retornará um código de resposta `200 OK` e um objeto [educationClass](../resources/educationclass.md) no corpo da resposta.
+
 ## <a name="example"></a>Exemplo
-##### <a name="request"></a>Solicitação
-Este é um exemplo da solicitação.
-
-Se bem-sucedido, esse método retornará um código de resposta `200 OK` e um objeto [educationClass](../resources/educationclass.md) no corpo da resposta.
-
-## <a name="examples"></a>Exemplos
-
 ### <a name="request"></a>Solicitação
-
+Este é um exemplo da solicitação.
 
 # <a name="http"></a>[HTTP](#tab/http)
 <!-- {

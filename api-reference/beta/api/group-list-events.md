@@ -1,16 +1,16 @@
 ---
 title: Listar eventos
 description: Recuperar uma lista de objetos event.
-author: Jordanndahl
+author: Harini84
 ms.localizationpriority: medium
-ms.prod: groups
+ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: cb7b9f33ee60bedcef01dbfab7624d1b69df9a06
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: 3ea9e972fe49780d9b0e6d22590cf5064c3131ed
+ms.sourcegitcommit: e497ed9bb56400bdd2bb53d52ddf057d9966220b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "61022255"
+ms.lasthandoff: 11/30/2021
+ms.locfileid: "61225907"
 ---
 # <a name="list-events"></a>Listar eventos
 

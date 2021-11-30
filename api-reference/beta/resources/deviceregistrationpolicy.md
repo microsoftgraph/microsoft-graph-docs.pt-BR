@@ -5,12 +5,12 @@ author: spunukol
 ms.localizationpriority: medium
 ms.prod: directory-management
 doc_type: resourcePageType
-ms.openlocfilehash: 843bd77ef7fe2e7646d9e9cf849ae62d30d1ad57
-ms.sourcegitcommit: c7ff992ef63e480d070421ba99b28ee129cb6acb
+ms.openlocfilehash: 6b2fd1ac5d887aa324f4db898e3532c153c7a09c
+ms.sourcegitcommit: e497ed9bb56400bdd2bb53d52ddf057d9966220b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "60696802"
+ms.lasthandoff: 11/30/2021
+ms.locfileid: "61226747"
 ---
 # <a name="deviceregistrationpolicy-resource-type"></a>Tipo de recurso deviceRegistrationPolicy
 
@@ -20,7 +20,7 @@ Namespace: microsoft.graph
 
 Representa o escopo de política que controla restrições de cota, autenticação adicional e políticas de autorização para registrar identidades de dispositivos em sua organização.
 
-## <a name="methods"></a>Métodos
+## <a name="methods"></a>Methods
 
 |Método|Tipo de retorno|Descrição|
 |:---|:---|:---|
@@ -33,10 +33,10 @@ Representa o escopo de política que controla restrições de cota, autenticaç�
 |:---|:---|:---|
 |azureADJoin|[azureAdJoinPolicy](../resources/azureadjoinpolicy.md)|Especifica a política de autorização para controlar o registro de novos dispositivos usando o **Azure AD Join** em sua organização. Obrigatório. Para obter mais informações, consulte [O que é uma identidade de dispositivo?](/azure/active-directory/devices/overview).|
 |azureADRegistration|[azureADRegistrationPolicy](../resources/azureadregistrationpolicy.md)|Especifica a política de autorização para controlar o registro de novos dispositivos usando **o Azure AD registrado** em sua organização. Obrigatório. Para obter mais informações, consulte [O que é uma identidade de dispositivo?](/azure/active-directory/devices/overview).|
-|descrição|String|A descrição da política de registro do dispositivo. Ele está sempre definido como `Tenant-wide policy that manages intial provisioning controls using quota restrictions, additional authentication and authorization checks` . Somente leitura.|
+|description|String|A descrição da política de registro do dispositivo. Ele está sempre definido como `Tenant-wide policy that manages intial provisioning controls using quota restrictions, additional authentication and authorization checks` . Somente leitura.|
 |displayName|String|O nome da política de registro do dispositivo. Ele está sempre definido como `Device Registration Policy` . Somente leitura.|
-|id|String| O identificador da política de registro do dispositivo. Ele está sempre definido como `deviceRegistrationPolicy` . Somente leitura.|
-|multiFactorAuthConfiguration|multiFactorAuthConfiguration|Especifica a política de autenticação para um usuário concluir o registro usando o **Azure AD Join** ou **o Azure AD registrado** em sua organização. Os valores possíveis são: `notRequired` , `required` , `unknownFutureValue` . O valor padrão é `notRequired`. |
+|id|String| O identificador da política de registro do dispositivo. Ele está sempre definido como `deviceRegistrationPolicy` . Apenas leitura.|
+|multiFactorAuthConfiguration|multiFactorAuthConfiguration|Especifica a política de autenticação para um usuário concluir o registro usando o **Azure AD Join** ou **o Azure AD registrado** em sua organização. Os valores possíveis são: `0` (significado `notRequired` ), `1` (significado `required` ) e `2` (significado `unknownFutureValue` ). O valor padrão é `0`. |
 |userDeviceQuota|Int32|Especifica o número máximo de dispositivos que um usuário pode ter em sua organização antes de bloquear novos registros de dispositivo. O valor padrão é definido como 50. Se essa propriedade não for especificada durante a operação de atualização de política, ela será redefinida automaticamente para indicar que os usuários não têm permissão para `0` ingressar em nenhum dispositivo. |
 
 

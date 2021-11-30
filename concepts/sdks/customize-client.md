@@ -3,12 +3,12 @@ title: Personalizar o cliente de serviço do Microsoft Graph SDK
 description: Fornece instruções sobre como alterar o comportamento padrão do cliente de serviço do Microsoft Graph SDK.
 ms.localizationpriority: medium
 author: DarrelMiller
-ms.openlocfilehash: 12d6321fd9821653939b5533e8ce4ee5b57c788b
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: 1413511e04e508d76a5e7e7366c99699d17cf718
+ms.sourcegitcommit: e497ed9bb56400bdd2bb53d52ddf057d9966220b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "61019987"
+ms.lasthandoff: 11/30/2021
+ms.locfileid: "61225865"
 ---
 # <a name="customize-the-microsoft-graph-sdk-service-client"></a>Personalizar o cliente de serviço do Microsoft Graph SDK
 
@@ -120,6 +120,41 @@ final GraphServiceClient graphServiceClient = GraphServiceClient
                 .builder()
                 .httpClient(httpClient)
                 .buildClient();
+```
+
+## <a name="go"></a>[Ir](#tab/Go)
+
+[!INCLUDE [go-sdk-preview](../../includes/go-sdk-preview.md)]
+
+```go
+import (
+    a "github.com/microsoft/kiota/authentication/go/azure"
+    khttp "github.com/microsoft/kiota/http/go/nethttp"
+    msgraphsdk "github.com/microsoftgraph/msgraph-sdk-go"
+    core "github.com/microsoftgraph/msgraph-sdk-go-core"
+)
+
+// Auth provider
+auth, err := a.NewAzureIdentityAuthenticationProviderWithScopes(...)
+
+// Get default middleware from SDK
+defaultMiddleware := core.GetDefaultMiddlewaresWithOptions(msgraphsdk.GetDefaultClientOptions())
+
+// Get instance of custom middleware
+// Implement a custom middleware by implementing the Middleware interface
+// https://github.com/microsoft/kiota/blob/main/http/go/nethttp/middleware.go
+allMiddleware := append(defaultMiddleware, mycustom.NewCustomHandler())
+
+// Create an HTTP client with the middleware
+httpClient := khttp.GetDefaultClient(allMiddleware...)
+
+// Create the adapter
+// Passing nil values causes the adapter to use default implementations
+adapter, err :=
+    msgraphsdk.NewGraphRequestAdapterWithParseNodeFactoryAndSerializationWriterFactoryAndHttpClient(
+        auth, nil, nil, httpClient)
+
+client := msgraphsdk.NewGraphServiceClient(adapter)
 ```
 
 ---
@@ -259,5 +294,11 @@ final GraphServiceClient graphServiceClient =
 
 > [!NOTE]
 > Para obter mais informações sobre a configuração de proxy de Identidade do Azure, consulte [ProxyOptions](/java/api/com.azure.core.http.proxyoptions.proxyoptions).
+
+## <a name="go"></a>[Ir](#tab/Go)
+
+[!INCLUDE [go-sdk-preview](../../includes/go-sdk-preview.md)]
+
+O Microsoft Graph SDK para Go atualmente não dá suporte a proxy HTTP. Consulte [este GitHub para](https://github.com/microsoftgraph/msgraph-sdk-go-core/issues/15) obter mais detalhes.
 
 ---

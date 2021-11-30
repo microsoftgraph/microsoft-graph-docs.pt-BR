@@ -3,12 +3,12 @@ title: Defina os comportamentos de grupo do Microsoft 365 e opções de provisio
 description: Usando o recurso de grupo no Microsoft Graph, você pode definir comportamentos e recursos de grupo específicos para provisionar ao criar um grupo do Microsoft 365.
 author: Jordanndahl
 ms.localizationpriority: high
-ms.openlocfilehash: 3d4675425b258484d7e9bcbc17f0814817e11e2d
-ms.sourcegitcommit: 11be55b40804b07f4c422f09f601afa97c7d31ed
+ms.openlocfilehash: d8e902c0b2cd43c870d29fcf00b4e28e1e17fca8
+ms.sourcegitcommit: e497ed9bb56400bdd2bb53d52ddf057d9966220b
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/09/2021
-ms.locfileid: "60256456"
+ms.lasthandoff: 11/30/2021
+ms.locfileid: "61225928"
 ---
 # <a name="set-microsoft-365-group-behaviors-and-provisioning-options-preview"></a>Definir comportamentos de grupo do Microsoft 365 e opções de provisionamento (visualização)
 
@@ -31,7 +31,7 @@ O recurso **grupo** expõe duas propriedades, **resourceBehaviorOptions** e **re
 
 | Valores com suporte para resourceProvisioningOptions   |Descrição| Padrão se não for definido |
 |:---------------|:--------|:------------|
-| Teams|Provisione este grupo como uma equipe no Microsoft Teams. Além disso, esse valor também pode ser adicionado na [atualização do grupo](/graph/api/group-update) por meio de uma operação `PATCH`, a fim de provisionar uma equipe de um grupo Microsoft 365 existente.| O grupo é um grupo normal do Microsoft 365 sem recursos do Teams.|
+| Equipe|Provisione este grupo como uma equipe no Microsoft Teams. Além disso, esse valor também pode ser adicionado na [atualização do grupo](/graph/api/group-update) por meio de uma operação `PATCH`, a fim de provisionar uma equipe de um grupo Microsoft 365 existente.| O grupo é um grupo normal do Microsoft 365 sem recursos do Teams.|
 
 
 ## <a name="see-also"></a>Confira também

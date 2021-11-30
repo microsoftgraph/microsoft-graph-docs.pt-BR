@@ -4,12 +4,12 @@ description: " Blocos de anotações empresariais no Microsoft 365"
 author: jewan-microsoft
 ms.localizationpriority: medium
 ms.prod: onenote
-ms.openlocfilehash: 06594d0c5f584330b16d523e4f7dc2e8de4be080
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: d5a445877d8c814ef223ed89a540f9606afa1863
+ms.sourcegitcommit: e497ed9bb56400bdd2bb53d52ddf057d9966220b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59103974"
+ms.lasthandoff: 11/30/2021
+ms.locfileid: "61223037"
 ---
 # <a name="update-onenote-page-content"></a>Atualizar o conteúdo da página do OneNote
 
@@ -45,7 +45,7 @@ A **data-id** e os valores de **id** são usados como identificadores de **desti
 Sua solicitação de URI completa terá a seguinte aparência:<br/><br/>`https://graph.microsoft.com/v1.0/me/onenote/pages/{id}/content`
 
 
-Saiba mais sobre a [URL raiz de serviço](/graph/api/resources/onenote-api-overview?view=graph-rest-1.0#root-url).
+Saiba mais sobre a [URL raiz de serviço](/graph/api/resources/onenote-api-overview#root-url).
 
 
 <a name="message-body"></a>
@@ -464,7 +464,7 @@ A URL raiz do serviço do OneNote usa o formato a seguir para todas as chamadas 
 
 O segmento `version` na URL representa a versão do Microsoft Graph que você deseja usar. `v1.0` serve para o código de produção estável. `beta` serve para experimentar um recurso que está em desenvolvimento. Os recursos e a funcionalidade na versão beta podem mudar, por isso, você não deve usá-la no código de produção.
 
-`me` serve para o conteúdo do OneNote que o usuário atual pode acessar (exclusivo e compartilhado). `users/{id}` serve para o conteúdo do OneNote que o usuário especificado (na URL) compartilhou com o usuário atual. Use a [API do Microsoft Azure AD Graph](/previous-versions/azure/ad/graph/api/api-catalog).
+`me` serve para o conteúdo do OneNote que o usuário atual pode acessar (exclusivo e compartilhado). `users/{id}` serve para o conteúdo do OneNote que o usuário especificado (na URL) compartilhou com o usuário atual. Use a API de [usuários](/graph/v1.0/resources/user.md).
 
 
 > **Observação:** para obter as ids de usuário, faça uma solicitação GET em `https://graph.microsoft.com/v1.0/users`.

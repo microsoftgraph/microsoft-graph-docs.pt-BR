@@ -5,18 +5,18 @@ author: mlafleur
 ms.localizationpriority: medium
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: 25a9d4ad10e346e758a51574b2e75042b8d08aa0
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: a0ff83af594bbf163cecf64434060ac2bfa55966
+ms.sourcegitcommit: e497ed9bb56400bdd2bb53d52ddf057d9966220b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "61025700"
+ms.lasthandoff: 11/30/2021
+ms.locfileid: "61224381"
 ---
 # <a name="delete-educationclass"></a>Excluir educationClass
 
 Namespace: microsoft.graph
 
-Excluir uma [educationClass](../resources/educationclass.md).
+Excluir uma [educationClass](../resources/educationclass.md). Como uma aula também é um grupo universal, excluir uma aula exclui o grupo.
 
 > [!IMPORTANT]
 > Como uma aula também é um grupo universal, excluir uma aula exclui o grupo.
@@ -34,7 +34,6 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 <!-- { "blockType": "ignored" } -->
 ```http
 DELETE /education/classes/{id}
-
 ```
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
 | Cabeçalho       | Valor |
@@ -49,7 +48,7 @@ Não forneça um corpo de solicitação para esse método.
 Se bem-sucedido, este método retorna um código de resposta `204 No Content`. Não retorna nada no corpo da resposta.
 
 ## <a name="example"></a>Exemplo
-##### <a name="request"></a>Solicitação
+### <a name="request"></a>Solicitação
 Este é um exemplo de solicitação.
 
 # <a name="http"></a>[HTTP](#tab/http)
@@ -82,7 +81,7 @@ DELETE https://graph.microsoft.com/v1.0/education/classes/{class-id}
 
 ---
 
-##### <a name="response"></a>Resposta
+### <a name="response"></a>Resposta
 Este é um exemplo de resposta. 
 
 <!-- {

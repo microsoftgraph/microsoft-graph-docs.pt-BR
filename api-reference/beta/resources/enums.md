@@ -5,16 +5,23 @@ doc_type: enumPageType
 ms.localizationpriority: medium
 ms.prod: non-product-specific
 author: MSGraphDocsvTeam
-ms.openlocfilehash: f1f4ef82726167a5484eae35531763d53dfaec0a
-ms.sourcegitcommit: c7ff992ef63e480d070421ba99b28ee129cb6acb
+ms.openlocfilehash: 76b4c08fd3329d04613ea1bd0fd2c6c6d7a1d104
+ms.sourcegitcommit: e497ed9bb56400bdd2bb53d52ddf057d9966220b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "60693420"
+ms.lasthandoff: 11/30/2021
+ms.locfileid: "61225984"
 ---
 # <a name="enum-values"></a>Valores denum
 
 Namespace: microsoft.graph
+
+### <a name="accessreviewinstancedecisionitemfilterbycurrentuseroptions-values"></a>valores accessReviewInstanceDecisionItemFilterByCurrentUserOptions 
+
+|Member|
+|:---|
+|revistor|
+|unknownFutureValue|
 
 ### <a name="continuousaccessevaluationmode-values"></a>valores continuousAccessEvaluationMode 
 
@@ -184,11 +191,11 @@ Namespace: microsoft.graph
 
 |Member|
 |:---|
-|String|
+|Cadeia de Caracteres|
 |Inteiro|
 |Referência|
 |Binário|
-|Booliano|
+|Booleano|
 |DateTime|
 
 ### <a name="mutability-values"></a>valores de mutabilidade
@@ -1400,7 +1407,7 @@ Namespace: microsoft.graph
 | Automático
 | noPreview
 | checklist
-| descrição
+| description
 | referência
 
 
@@ -2559,7 +2566,6 @@ Valores possíveis para tipos de conta de usuário (associação ao grupo), por 
 |inProgress|
 |completed|
 |vencida|
-|notCompleted|
 |unknownFutureValue|
 
 ### <a name="teamworkcalleventtype-values"></a>valores de teamworkCallEventType

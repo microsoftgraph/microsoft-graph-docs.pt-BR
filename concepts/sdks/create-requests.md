@@ -3,13 +3,15 @@ title: Fazer chamadas de API usando o Microsoft Graph SDKs
 description: Fornece instruções para criar solicitações HTTP Graph Microsoft usando os SDKs.
 ms.localizationpriority: medium
 author: DarrelMiller
-ms.openlocfilehash: d8b7233fb360b3dd5bba088c6d193a6bac18f304
-ms.sourcegitcommit: c7ff992ef63e480d070421ba99b28ee129cb6acb
+ms.openlocfilehash: d2d7b1f1a19c1a0a890bab6ab6a8c51ba7ec47a0
+ms.sourcegitcommit: e497ed9bb56400bdd2bb53d52ddf057d9966220b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "60695381"
+ms.lasthandoff: 11/30/2021
+ms.locfileid: "61226348"
 ---
+<!-- markdownlint-disable MD025 -->
+
 # <a name="make-api-calls-using-the-microsoft-graph-sdks"></a>Fazer chamadas de API usando o Microsoft Graph SDKs
 
 As bibliotecas de serviços do Microsoft Graph SDK fornecem uma classe de cliente que você pode usar como ponto de partida para criar todas as solicitações de API. Há dois estilos de classe de cliente: um usa uma interface fluente para criar a solicitação (por exemplo) e o outro aceita uma cadeia de `client.Users["user-id"].Manager` caracteres de caminho (por exemplo, `api("/users/user-id/manager")` ). Quando você tem um objeto request, você pode especificar uma variedade de opções, como filtragem e classificação, e, por fim, você seleciona o tipo de operação que deseja executar.
@@ -36,6 +38,12 @@ Para ler informações do Microsoft Graph, primeiro você precisa criar um objet
 
 [!INCLUDE [sample-code](includes/snippets/powershell/create-requests-read.md)]
 
+# <a name="go"></a>[Ir](#tab/Go)
+
+[!INCLUDE [go-sdk-preview](../../includes/go-sdk-preview.md)]
+
+[!INCLUDE [sample-code](includes/snippets/go/create-requests-read.md)]
+
 ---
 
 ## <a name="use-select-to-control-the-properties-returned"></a>Use $select para controlar as propriedades retornadas
@@ -59,6 +67,12 @@ Ao recuperar uma entidade, nem todas as propriedades são recuperadas automatica
 
 [!INCLUDE [sample-code](includes/snippets/powershell/create-requests-select.md)]
 
+# <a name="go"></a>[Ir](#tab/Go)
+
+[!INCLUDE [go-sdk-preview](../../includes/go-sdk-preview.md)]
+
+[!INCLUDE [sample-code](includes/snippets/go/create-requests-select.md)]
+
 ---
 
 ## <a name="retrieve-a-list-of-entities"></a>Recuperar uma lista de entidades
@@ -80,6 +94,12 @@ Recuperar uma lista de entidades é semelhante à recuperação de uma única en
 # <a name="powershell"></a>[PowerShell](#tab/PowerShell)
 
 [!INCLUDE [sample-code](includes/snippets/powershell/create-requests-list.md)]
+
+# <a name="go"></a>[Ir](#tab/Go)
+
+[!INCLUDE [go-sdk-preview](../../includes/go-sdk-preview.md)]
+
+[!INCLUDE [sample-code](includes/snippets/go/create-requests-list.md)]
 
 ---
 
@@ -105,6 +125,12 @@ Para SDKs que suportam um estilo fluente, coleções de entidades podem ser aces
 
 [!INCLUDE [sample-code](includes/snippets/powershell/create-requests-index.md)]
 
+# <a name="go"></a>[Ir](#tab/Go)
+
+[!INCLUDE [go-sdk-preview](../../includes/go-sdk-preview.md)]
+
+[!INCLUDE [sample-code](includes/snippets/go/create-requests-index.md)]
+
 ---
 
 ## <a name="use-expand-to-access-related-entities"></a>Usar $expand para acessar entidades relacionadas
@@ -126,6 +152,12 @@ Você pode usar o filtro para solicitar uma entidade relacionada ou uma coleçã
 # <a name="powershell"></a>[PowerShell](#tab/PowerShell)
 
 [!INCLUDE [sample-code](includes/snippets/powershell/create-requests-expand.md)]
+
+# <a name="go"></a>[Ir](#tab/Go)
+
+[!INCLUDE [go-sdk-preview](../../includes/go-sdk-preview.md)]
+
+[!INCLUDE [sample-code](includes/snippets/go/create-requests-expand.md)]
 
 ---
 
@@ -149,6 +181,12 @@ As solicitações de exclusão são construídas da mesma forma que as solicita�
 
 [!INCLUDE [sample-code](includes/snippets/powershell/create-requests-delete.md)]
 
+# <a name="go"></a>[Ir](#tab/Go)
+
+[!INCLUDE [go-sdk-preview](../../includes/go-sdk-preview.md)]
+
+[!INCLUDE [sample-code](includes/snippets/go/create-requests-delete.md)]
+
 ---
 
 ## <a name="make-a-post-request-to-create-a-new-entity"></a>Fazer uma solicitação POST para criar uma nova entidade
@@ -170,6 +208,12 @@ Para SDKs que suportam um estilo fluente, novos itens podem ser adicionados a co
 # <a name="powershell"></a>[PowerShell](#tab/PowerShell)
 
 [!INCLUDE [sample-code](includes/snippets/powershell/create-requests-create.md)]
+
+# <a name="go"></a>[Ir](#tab/Go)
+
+[!INCLUDE [go-sdk-preview](../../includes/go-sdk-preview.md)]
+
+[!INCLUDE [sample-code](includes/snippets/go/create-requests-create.md)]
 
 ---
 
@@ -193,6 +237,12 @@ A maioria das atualizações no Microsoft Graph são executadas usando um métod
 
 [!INCLUDE [sample-code](includes/snippets/powershell/create-requests-update.md)]
 
+# <a name="go"></a>[Ir](#tab/Go)
+
+[!INCLUDE [go-sdk-preview](../../includes/go-sdk-preview.md)]
+
+[!INCLUDE [sample-code](includes/snippets/go/create-requests-update.md)]
+
 ---
 
 ## <a name="use-http-headers-to-control-request-behavior"></a>Usar cabeçalhos HTTP para controlar o comportamento da solicitação
@@ -215,11 +265,17 @@ Você pode usar uma `Header()` função para anexar os headers personalizados a 
 
 [!INCLUDE [sample-code](includes/snippets/powershell/create-requests-headers.md)]
 
+# <a name="go"></a>[Ir](#tab/Go)
+
+[!INCLUDE [go-sdk-preview](../../includes/go-sdk-preview.md)]
+
+[!INCLUDE [sample-code](includes/snippets/go/create-requests-headers.md)]
+
 ---
 
 ## <a name="provide-custom-query-parameters"></a>Fornecer parâmetros de consulta personalizados
 
-Para SDKs que oferecem suporte a um estilo fluente, você pode fornecer valores de parâmetro de consulta personalizados usando uma lista de `QueryOptions` objetos. Para SDKs baseados em modelo, os parâmetros são codificados por URL e adicionados ao URI de solicitação. Para o PowerShell, os parâmetros de consulta definidos para uma determinada API são expostos como parâmetros para o comando correspondente.
+Para SDKs que oferecem suporte a um estilo fluente, você pode fornecer valores de parâmetro de consulta personalizados usando uma lista de `QueryOptions` objetos. Para SDKs baseados em modelo, os parâmetros são codificados por URL e adicionados ao URI de solicitação. Para o PowerShell e o Go, os parâmetros de consulta definidos para uma determinada API são expostos como parâmetros para o comando correspondente.
 
 # <a name="c"></a>[C#](#tab/CS)
 
@@ -236,5 +292,11 @@ Para SDKs que oferecem suporte a um estilo fluente, você pode fornecer valores 
 # <a name="powershell"></a>[PowerShell](#tab/PowerShell)
 
 [!INCLUDE [sample-code](includes/snippets/powershell/create-requests-queryparams.md)]
+
+# <a name="go"></a>[Ir](#tab/Go)
+
+[!INCLUDE [go-sdk-preview](../../includes/go-sdk-preview.md)]
+
+[!INCLUDE [sample-code](includes/snippets/go/create-requests-queryparams.md)]
 
 ---
