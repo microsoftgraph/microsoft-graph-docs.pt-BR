@@ -4,12 +4,12 @@ description: O Microsoft Graph expõe as permissões granulares que controlam o 
 author: jackson-woods
 ms.localizationpriority: high
 ms.custom: graphiamtop20, scenarios:getting-started
-ms.openlocfilehash: 2be999743299d7023ea4e9b67a857d429304b7d1
-ms.sourcegitcommit: 2456cf3c4117b88afefef139593796a2f919e7cc
+ms.openlocfilehash: 472e6e6d3a68354e97c3714205ac7f1e1b558261
+ms.sourcegitcommit: e497ed9bb56400bdd2bb53d52ddf057d9966220b
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/18/2021
-ms.locfileid: "61077597"
+ms.lasthandoff: 11/30/2021
+ms.locfileid: "61224983"
 ---
 # <a name="microsoft-graph-permissions-reference"></a>Referência de permissões do Microsoft Graph
 
@@ -219,7 +219,10 @@ Nenhum
 
 #### <a name="application-permissions"></a>Permissões de aplicativos
 
-Nenhum.
+|   Permissão    |  Exibir Cadeia de Caracteres   |  Descrição | Consentimento Obrigatório do Administrador |
+|:-----------------------------|:-----------------------------------------|:-----------------|:-----------------|
+| _AppCatalog.Read.All_ | Ler todos os catálogos de aplicativos | Permite que o aplicativo leia aplicativos nos catálogos de aplicativos sem um usuário conectado. | Sim |
+| _AppCatalog.ReadWrite.All_ | Ler e gravar em todos os catálogos de aplicativo | Permite que o aplicativo crie, leia, atualize e exclua aplicativos nos catálogos de aplicativos sem um usuário conectado. | Sim |
 
 ### <a name="remarks"></a>Comentários
 
@@ -786,11 +789,21 @@ Para cenários mais complexos que envolvem várias permissões, confira [Cenári
 
 ## <a name="domain-permissions"></a>Permissões de domínio
 
+#### <a name="delegated-permissions"></a>Permissões delegadas
+
+|   Permissão    |  Exibir Cadeia de Caracteres   |  Descrição | Consentimento Obrigatório do Administrador | Suporte da conta da Microsoft |
+|:----------------|:------------------|:-------------|:-----------------------|:--------------|
+|_Domain.Read.All_ |Ler domínios|Permite que o aplicativo leia todas as propriedades de domínio, em nome do usuário conectado. |Sim | Não |
+|_Domain.ReadWrite.All_ | Ler e registrar domínios |Permite que o aplicativo leia e grave todas as propriedades de domínio, em nome do usuário conectado. Também permite que o aplicativo adicione, verifique e remova domínios. |Sim | Não |
+
 #### <a name="application-permissions"></a>Permissões de aplicativos
 
 |   Permissão    |  Exibir Cadeia de Caracteres   |  Descrição | Consentimento Obrigatório do Administrador |
 |:-----------------------------|:-----------------------------------------|:-----------------|:-----------------|
+| _Domain.Read.All_ | Ler domínios | Permite que o aplicativo leia todas as propriedades de domínio sem um usuário conectado. | Sim |
 | _Domain.ReadWrite.All_ | Ler e registrar domínios | Permite que o aplicativo leia e escreva domínios sem um usuário conectado. | Sim |
+
+---
 
 ## <a name="ediscovery-permissions"></a>Permissões de eDiscovery
 
@@ -1340,7 +1353,7 @@ _Notes.ReadWrite_ e _Notes.ReadWrite.All_ também permitem que o aplicativo modi
 Para contas corporativas ou de estudante, _Notes.Read.All_ e _Notes.ReadWrite.All_ permitem que o aplicativo acesse o conteúdo do OneNote de outros usuários ao qual o usuário conectado tenha permissão dentro da organização.
 
 ### <a name="example-usage"></a>Exemplo de uso
-#### <a name="delegated"></a>Delegated
+#### <a name="delegated"></a>Delegado
 
 * _Notes.Create_: Criar novos blocos de anotações para o usuário conectado (`POST /me/onenote/notebooks`).
 * _Notes.Read_: Criar blocos de anotações para o usuário conectado (`GET /me/onenote/notebooks`).
@@ -2194,28 +2207,6 @@ Para cenários mais complexos que envolvem várias permissões, confira [Cenári
 
 ---
 
-## <a name="teams-app-installation-permissions"></a>Permissões de instalação do aplicativo do Teams 
-
-#### <a name="delegated-permissions"></a>Permissões delegadas
-|   Permissão    |  Exibir Cadeia de Caracteres   |  Descrição | Consentimento Obrigatório do Administrador | Suporte da conta da Microsoft |
-|:----------------|:------------------|:-------------|:-----------------------|:--------------|
-| _TeamsAppInstallation.ReadForUser_ | Ler os aplicativos do Teams instalados do usuário| Permite que o aplicativo leia os aplicativos do Teams instalados para o usuário conectado. Não dá a capacidade de ler as configurações específicas do aplicativo.| Sim | Não |
-| _TeamsAppInstallation.ReadWriteForUser_ | Gerenciar os aplicativos do Teams instalados do usuário| Permite que o aplicativo leia instale, atualize e desinstale os aplicativos do Teams instalados para o usuário conectado. Não dá a capacidade de ler as configurações específicas do aplicativo.| Não | Não |
-| _TeamsAppInstallation.ReadWriteSelfForUser_ | Permitir que o aplicativo se gerencie nas equipes| Permite que um aplicativo do Teams se leia, se instale, se atualize e se desinstale para as equipes as quais o usuário conectado possa acessar.| Sim | Não |
-| _TeamsAppInstallation.ReadForTeam_ | Ler os seus aplicativos do Teams instalados nas equipes| Permite que o aplicativo leia os aplicativos do Teams instalados nas equipes que o usuário conectado pode acessar. Não dá a capacidade de ler as configurações específicas do aplicativo.| Sim | Não |
-| _TeamsAppInstallation.ReadWriteForTeam_ | Gerenciar os aplicativos do Teams instalados nas equipes| Permite que o aplicativo leia, instale, atualize e desinstale aplicativos do Teams nas equipes que o usuário conectado pode acessar. Não dá a capacidade de ler as configurações específicas do aplicativo.| Sim | Não |
-| _TeamsAppInstallation.ReadWriteSelfForTeam_ | Permitir que o aplicativo se gerencie nas equipes| Permite que um aplicativo do Teams se leia, se instale, se atualize e se desinstale para as equipes as quais o usuário conectado possa acessar.| Sim | Não |
-
-#### <a name="application-permissions"></a>Permissões de aplicativos
-|   Permissão    |  Exibir Cadeia de Caracteres   |  Descrição | Consentimento Obrigatório do Administrador |
-|:----------------|:------------------|:-------------|:-----------------------|
-| _TeamsAppInstallation.ReadForUser.All_ | Ler os aplicativos do Teams instalados para todos os usuários| Permite que o aplicativo leia os aplicativos do Teams instalados para qualquer usuário, sem um usuário conectado. Não dá a capacidade de ler as configurações específicas do aplicativo.| Sim |
-| _TeamsAppInstallation.ReadWriteForUser.All_ | Gerenciar aplicativos do Teams para todos os usuários| Permite que o aplicativo leia, instale, atualize e desinstale aplicativos do Teams para qualquer usuário, sem um usuário conectado. Não dá a capacidade de ler as configurações específicas do aplicativo.| Sim |
-| _TeamsAppInstallation.ReadWriteSelfForUser.All_ | Permitir que o aplicativo se gerencie para todos os usuários| Permite que o aplicativo do Teams se leia, se instale, se atualize e se desinstale para qualquer usuário, sem um usuário conectado.| Sim |
-| _TeamsAppInstallation.ReadForTeam.All_ | Ler os aplicativos do Teams instalados para todas as equipes| Permite que o aplicativo leia os aplicativos do Teams instalados para qualquer equipe, sem um usuário conectado. Não dá a capacidade de ler as configurações específicas do aplicativo.| Sim |
-| _TeamsAppInstallation.ReadWriteForTeam.All_ | Gerenciar aplicativos de Teams para todas as equipes| Permite que o aplicativo leia, instale, atualize e desinstale aplicativos do Teams em qualquer equipe, sem um usuário conectado. Não permite ler configurações específicas do aplicativo.| Sim |
-| _TeamsAppInstallation.ReadWriteSelfForTeam.All_ | Permitir que o aplicativo do Teams se gerencie para todas as equipes| Permite que o aplicativo do Teams se leia, se instale, se atualize e se desinstale em qualquer equipe, sem um usuário conectado.| Sim |
-
 ## <a name="threat-assessment-permissions"></a>Permissões de avaliação de ameaças
 
 #### <a name="delegated-permissions"></a>Permissões delegadas
@@ -2479,7 +2470,7 @@ Para que um aplicativo leia ou grave todas as configurações de implantação c
 
 ### <a name="example-usage"></a>Exemplo de uso
 
-#### <a name="delegated"></a>Delegated
+#### <a name="delegated"></a>Delegado
 
 * _WindowsUpdates.ReadWrite.All_: crie uma implantação (`POST /beta/admin/windows/updates/deployments`).
 

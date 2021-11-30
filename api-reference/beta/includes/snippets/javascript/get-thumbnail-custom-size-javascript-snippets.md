@@ -1,11 +1,11 @@
 ---
 description: Arquivo gerado automaticamente. NÃO MODIFICAR
-ms.openlocfilehash: fa4a6bf37969313a025e0d89741a919dfb7b8a8734d7bc984165d497199224c6
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 439afbcfe19285f1ca067869608800d0770b3224
+ms.sourcegitcommit: e497ed9bb56400bdd2bb53d52ddf057d9966220b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "57327972"
+ms.lasthandoff: 11/30/2021
+ms.locfileid: "61228316"
 ---
 ```javascript
 
@@ -15,7 +15,7 @@ const options = {
 
 const client = Client.init(options);
 
-let thumbnails = await client.api('/me/drive/items/{item-id}/thumbnails?select=c300x400_Crop')
+let thumbnails = await client.api('/me/drive/items/{item-id}/thumbnails?select=c300x400_crop')
     .version('beta')
     .get();
 
