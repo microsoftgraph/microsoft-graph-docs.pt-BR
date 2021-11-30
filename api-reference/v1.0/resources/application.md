@@ -5,12 +5,12 @@ ms.localizationpriority: high
 author: sureshja
 ms.prod: applications
 doc_type: resourcePageType
-ms.openlocfilehash: a4675092f968516967767a2153524f51eee3ab39
-ms.sourcegitcommit: 1cf7a82df17afc6291e2c93d8b2c277bf3382e6a
+ms.openlocfilehash: 7a4483c4146eb92c970ef149b9743dab763300e2
+ms.sourcegitcommit: e497ed9bb56400bdd2bb53d52ddf057d9966220b
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/20/2021
-ms.locfileid: "61130035"
+ms.lasthandoff: 11/30/2021
+ms.locfileid: "61224910"
 ---
 # <a name="application-resource-type"></a>tipo de recurso do aplicativo
 
@@ -18,9 +18,9 @@ Namespace: microsoft.graph
 
 Representa um aplicativo. Qualquer aplicativo que terceirize a autenticação no Azure Active Directory (Azure AD) deve estar registrado em um diretório. O registro do aplicativo envolve informar o Azure AD sobre seu aplicativo, incluindo a URL onde ele está localizado, a URL para enviar respostas após a autenticação, o URI para identificar seu aplicativo e muito mais. Para saber mais, confira [Noções básicas de como registrar um aplicativo no Azure AD](/azure/active-directory/develop/authentication-vs-authorization#basics-of-registering-an-application-in-azure-ad). Herda de [directoryObject](directoryobject.md).
 
-Esse recurso tem suporte para o uso da [consulta delta](/graph/delta-query-overview) para controlar adições, exclusões e atualizações incrementais oferecendo uma função [delta](../api/application-delta.md).
+Esse recurso tem suporte para o uso da [consulta delta](/graph/delta-query-overview) para controlar adições, exclusões e atualizações incrementais oferecendo uma função [delta](../api/application-delta.md). Este recurso é um tipo aberto que permite que outras propriedades sejam passadas.
 
-## <a name="methods"></a>Métodos
+## <a name="methods"></a>Methods
 
 | Método | Tipo de retorno | Descrição |
 |:---------------|:--------|:----------|

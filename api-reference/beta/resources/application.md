@@ -5,12 +5,12 @@ ms.localizationpriority: high
 author: sureshja
 ms.prod: applications
 doc_type: resourcePageType
-ms.openlocfilehash: 26b8314c1a00873856d6e456e03796a5344e70d1
-ms.sourcegitcommit: 1cf7a82df17afc6291e2c93d8b2c277bf3382e6a
+ms.openlocfilehash: f39d32ac8531103c3ff5b984590951807e905185
+ms.sourcegitcommit: e497ed9bb56400bdd2bb53d52ddf057d9966220b
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/20/2021
-ms.locfileid: "61130217"
+ms.lasthandoff: 11/30/2021
+ms.locfileid: "61226320"
 ---
 # <a name="application-resource-type"></a>tipo de recurso do aplicativo
 
@@ -23,9 +23,9 @@ Representa um aplicativo. Qualquer aplicativo que terceirize a autenticação no
 > [!Note]
 > Atualmente, as alterações no tipo de recurso do aplicativo estão em desenvolvimento. Para saber mais, confira [Problemas conhecidos do Microsoft Graph](/graph/known-issues#application-and-serviceprincipal-api-changes).
 
-Esse recurso tem suporte para o uso da [consulta delta](/graph/delta-query-overview) para controlar adições, exclusões e atualizações incrementais oferecendo uma função [delta](../api/application-delta.md).
+Esse recurso tem suporte para o uso da [consulta delta](/graph/delta-query-overview) para controlar adições, exclusões e atualizações incrementais oferecendo uma função [delta](../api/application-delta.md). Esse recurso é|está um tipo aberto que permite que outras propriedades sejam aprovadas.
 
-## <a name="methods"></a>Métodos
+## <a name="methods"></a>Methods
 
 | Método | Tipo de retorno | Descrição |
 |:---------------|:--------|:----------|

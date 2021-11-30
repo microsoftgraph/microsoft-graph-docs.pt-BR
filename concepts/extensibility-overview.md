@@ -4,16 +4,16 @@ description: O Microsoft Graph fornece um único ponto de extremidade de API que
 author: dkershaw10
 ms.localizationpriority: high
 ms.custom: graphiamtop20
-ms.openlocfilehash: e042ca2ea4a0b8f01eeb56621dfb77af970d00e0
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 2cc63ae714b09060976b984aff576dd5a7c0bf05
+ms.sourcegitcommit: e497ed9bb56400bdd2bb53d52ddf057d9966220b
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59127910"
+ms.lasthandoff: 11/30/2021
+ms.locfileid: "61224395"
 ---
 # <a name="add-custom-data-to-resources-using-extensions"></a>Adicionar dados personalizados aos recursos usando extensões
 
-O Microsoft Graph fornece um único ponto de extremidade de API que lhe dá acesso a dados e insights avançados centrados em pessoas através de uma série de recursos, como [usuário](/graph/api/resources/user?view=graph-rest-1.0) e [mensagem](/graph/api/resources/message?view=graph-rest-1.0). Você também pode ampliar o Microsoft Graph com seus próprios dados de aplicativo. Você pode adicionar propriedades personalizadas aos recursos do Microsoft Graph sem a necessidade de um repositório de dados externos.
+O Microsoft Graph fornece um único ponto de extremidade de API que lhe dá acesso a dados e insights avançados centrados em pessoas através de uma série de recursos, como [usuário](/graph/api/resources/user) e [mensagem](/graph/api/resources/message). Você também pode ampliar o Microsoft Graph com seus próprios dados de aplicativo. Você pode adicionar propriedades personalizadas aos recursos do Microsoft Graph sem a necessidade de um repositório de dados externos.
 
 Por exemplo, você pode decidir manter seu aplicativo leve e armazenar dados de perfil de usuário específicos do aplicativo no Microsoft Graph estendendo o recurso **user**. Como alternativa, convém manter o repositório de perfil de usuário existente do aplicativo e simplesmente adicionar um identificador de repositório específico do aplicativo para o recurso **user**.
 
@@ -30,24 +30,24 @@ A seguinte tabela lista os recursos que oferecem suporte às extensões de abert
 
 |Recurso |Extensões abertas |Extensões de esquema |
 |:------- |:------ |:------ |
-| [Unidade administrativa](/graph/api/resources/administrativeunit?view=graph-rest-beta) | Somente para visualização | Somente para visualização |
-| [Evento de calendário](/graph/api/resources/event?view=graph-rest-1.0) | GA | GA |
-| [Dispositivo](/graph/api/resources/device?view=graph-rest-1.0) | GA | GA |
-| [Grupo](/graph/api/resources/group?view=graph-rest-1.0) | GA | GA |
-| [Evento de calendário do grupo](/graph/api/resources/event?view=graph-rest-1.0) | GA | GA |
-| [Postagem de conversa em grupo](/graph/api/resources/post?view=graph-rest-1.0) | GA | GA |
-| [Mensagem](/graph/api/resources/message?view=graph-rest-1.0) | GA | GA |
-| [Organização](/graph/api/resources/organization?view=graph-rest-1.0) | GA | GA |
-| [Contato pessoal](/graph/api/resources/contact?view=graph-rest-1.0)| GA | GA |
-| [Usuário](/graph/api/resources/user?view=graph-rest-1.0) | GA | GA |
-| [Tarefa](/graph/api/resources/todotask?view=graph-rest-beta) | GA | GA |
-| [Lista de tarefas](/graph/api/resources/todotasklist?view=graph-rest-beta) | GA | GA |
+| [Unidade administrativa](/graph/api/resources/administrativeunit?view=graph-rest-beta&preserve-view=true) | Somente para visualização | Somente para visualização |
+| [Evento de calendário](/graph/api/resources/event) | GA | GA |
+| [Dispositivo](/graph/api/resources/device) | GA | GA |
+| [Grupo](/graph/api/resources/group) | GA | GA |
+| [Evento de calendário do grupo](/graph/api/resources/event) | GA | GA |
+| [Postagem de conversa em grupo](/graph/api/resources/post) | GA | GA |
+| [Mensagem](/graph/api/resources/message) | GA | GA |
+| [Organização](/graph/api/resources/organization) | GA | GA |
+| [Contato pessoal](/graph/api/resources/contact)| GA | GA |
+| [Usuário](/graph/api/resources/user) | GA | GA |
+| [Tarefa](/graph/api/resources/todotask) | GA | GA |
+| [Lista de tarefas](/graph/api/resources/todotasklist) | GA | GA |
 
 Você pode usar extensões em todos esses recursos ao se conectar com uma conta corporativa ou de estudante. Além disso, você pode usar extensões de recursos de **evento**, **post**, **grupo**, **mensagem**, **contato** e **usuário** quando conectado a uma conta pessoal.
 
 ## <a name="open-extensions"></a>Extensões abertas
 
-[Extensões abertas](/graph/api/resources/opentypeextension?view=graph-rest-1.0) (anteriormente conhecidas como extensões de dados do Office 365) são [tipos abertos](https://www.odata.org/getting-started/advanced-tutorial/#openType) que oferecem uma maneira flexível de adicionar dados de aplicativo não tipados diretamente a uma instância do recurso.
+[Extensões abertas](/graph/api/resources/opentypeextension) (anteriormente conhecidas como extensões de dados do Office 365) são [tipos abertos](https://www.odata.org/getting-started/advanced-tutorial/#openType) que oferecem uma maneira flexível de adicionar dados de aplicativo não tipados diretamente a uma instância do recurso.
 
 > [!VIDEO https://www.youtube-nocookie.com/embed/ibdlADb8IZc]
 
@@ -58,16 +58,16 @@ Uma maneira de fazer isso é usar um formato DNS (sistema de nomes de domínio) 
 
 Não use o domínio Microsoft (`Com.Microsoft` ou `Com.OnMicrosoft`) em um nome de extensão.
 
-Você pode [criar uma extensão aberta](/graph/api/opentypeextension-post-opentypeextension?view=graph-rest-1.0) em uma instância de recurso e armazenar dados personalizados nela, tudo na mesma operação (observe a [limitação conhecida](known-issues.md#extensions) para alguns dos recursos suportados).
+Você pode [criar uma extensão aberta](/graph/api/opentypeextension-post-opentypeextension) em uma instância de recurso e armazenar dados personalizados nela, tudo na mesma operação (observe a [limitação conhecida](known-issues.md#extensions) para alguns dos recursos suportados).
 
-Você pode posteriormente [ler](/graph/api/opentypeextension-get?view=graph-rest-1.0), [atualizar](/graph/api/opentypeextension-update?view=graph-rest-1.0) ou [excluir](/graph/api/opentypeextension-delete?view=graph-rest-1.0) a extensão e seus dados.
+Posteriormente, você poderá [ler](/graph/api/opentypeextension-get, [atualizar](/graph/api/opentypeextension-update) ou [excluir](/graph/api/opentypeextension-delete) a extensão e seus dados.
 
 Exemplo de extensão aberta: [Adicionar dados personalizados aos usuários usando extensões abertas](extensibility-open-users.md)
 
 ## <a name="schema-extensions"></a>Extensões de esquema
 
 
-[As extensões de esquema](/graph/api/resources/schemaextension?view=graph-rest-1.0) permitem que você defina um esquema que você pode usar para estender um tipo de recurso. Primeiro, crie a definição de extensão de esquema. Em seguida, use-a para estender instâncias de recurso com dados personalizados fortemente tipados. Além disso, você pode controlar o [status](#schema-extensions-lifecycle) da extensão de esquema e permitir que ela seja descoberta por outros aplicativos. Esses aplicativos, por sua vez, podem usar a extensão para seus dados e criar experiências adicionais nela.
+[As extensões de esquema](/graph/api/resources/schemaextension) permitem que você defina um esquema que você pode usar para estender um tipo de recurso. Primeiro, crie a definição de extensão de esquema. Em seguida, use-a para estender instâncias de recurso com dados personalizados fortemente tipados. Além disso, você pode controlar o [status](#schema-extensions-lifecycle) da extensão de esquema e permitir que ela seja descoberta por outros aplicativos. Esses aplicativos, por sua vez, podem usar a extensão para seus dados e criar experiências adicionais nela.
 
 
 > [!VIDEO https://www.youtube-nocookie.com/embed/3MOAlUFNus0]
@@ -79,11 +79,11 @@ Ao criar uma definição de extensão de esquema, você deve fornecer um nome ex
 
 Você verá este nome exclusivo na **id** usado como o nome do tipo complexo que armazenará seus dados personalizados na instância de recurso estendida.
 
-Diferentemente das extensões abertas, o gerenciamento de definições de extensão de esquema ([list](/graph/api/schemaextension-list?view=graph-rest-1.0), [create](/graph/api/schemaextension-post-schemaextensions?view=graph-rest-1.0), [get](/graph/api/schemaextension-get?view=graph-rest-1.0), [update](/graph/api/schemaextension-update?view=graph-rest-1.0) e [delete](/graph/api/schemaextension-delete?view=graph-rest-1.0)) e gerenciar seus dados (adicionar, obter, atualizar e excluir dados) são conjuntos separados de operações de API.
+Diferentemente das extensões abertas, o gerenciamento de definições de extensão de esquema ([list](/graph/api/schemaextension-list), [create](/graph/api/schemaextension-post-schemaextensions), [get](/graph/api/schemaextension-get), [update](/graph/api/schemaextension-update) e [delete](/graph/api/schemaextension-delete)) e gerenciar seus dados (adicionar, obter, atualizar e excluir dados) são conjuntos separados de operações de API.
 
 Como as extensões de esquema são acessíveis como tipos complexos em instâncias de recursos direcionados, você pode realizar operações CRUD nos dados personalizados em uma extensão de esquema das seguintes maneiras:
 
-- Use o método `POST` de recurso para especificar dados personalizados ao criar uma nova instância de recurso. Observe que há um [problema conhecido](known-issues.md#creating-a-resource-instance-and-adding-schema-extension-data-at-the-same-time) nos recursos **contato**, **evento**, **mensagem** e **postagem** que requer a criação de uma extensão de esquema usando uma operação `PATCH`.
+- Use o método `POST` de recurso para especificar dados personalizados ao criar uma nova instância de recurso. Observe que há um [problema conhecido](known-issues.md#unable-to-create-a-resource-instance-and-add-schema-extension-data-at-the-same-time) nos recursos **contato**, **evento**, **mensagem** e **postagem** que requer a criação de uma extensão de esquema usando uma operação `PATCH`.
 - Use o método `GET` de recurso para ler os dados personalizados.
 - Use o método `PATCH` de recurso para adicionar ou atualizar dados personalizados em uma instância de recursos existentes.
 - Use o método `PATCH` de recurso para definir o tipo complexo como nulo, para excluir os dados personalizados da instância do recurso.
@@ -120,7 +120,7 @@ Há suporte para os seguintes tipos de dados quando se define uma propriedade em
 
 ### <a name="azure-ad-directory-schema-extensions"></a>Extensões do esquema de diretório do Azure AD
 
-O Azure AD dá suporte a um tipo semelhante de extensão, conhecido como [extensões de esquema de diretório](/previous-versions/azure/ad/graph/howto/azure-ad-graph-api-directory-schema-extensions), em alguns recursos [directoryObject](/graph/api/resources/directoryobject?view=graph-rest-1.0). Você pode usar a API da Microsoft Graph para gerenciar as [definições de propriedade de extensão](/graph/api/resources/extensionproperty?view=graph-rest-1.0) e para adicionar, obter, atualizar e excluir _dados_ nas propriedades dessas extensões.
+O Azure AD dá suporte a um tipo semelhante de extensão, conhecido como [extensões de esquema de diretório](/previous-versions/azure/ad/graph/howto/azure-ad-graph-api-directory-schema-extensions), em alguns recursos [directoryObject](/graph/api/resources/directoryobject). Você pode usar a API da Microsoft Graph para gerenciar as [definições de propriedade de extensão](/graph/api/resources/extensionproperty) e para adicionar, obter, atualizar e excluir _dados_ nas propriedades dessas extensões.
 
 ## <a name="permissions"></a>Permissões
 
@@ -132,14 +132,14 @@ Além disso, para criar e gerenciar definições de extensão do esquema, um apl
 
 ### <a name="open-extension-limits"></a>Limites de extensão aberta
 
-Os seguintes limites se aplicam aos recursos de diretório (como **usuário**, **grupo**, **dispositivo**):
+Os seguintes limites se aplicam aos recursos do diretório (**usuário**, **grupo**, **dispositivo**, **administrativeUnit**, **organização**):
 
 - Cada extensão aberta pode ter até 2 KB de dados (incluindo a própria definição da extensão).
 - Um aplicativo pode adicionar até duas extensões abertas por instância do recurso.
 
 Os seguintes limites se aplicam aos recursos do Outlook (como **mensagem**, **evento** e **contatos**):
 
-- Cada extensão aberta é armazenada em uma [propriedade nomeada MAPI](/office/client-developer/outlook/mapi/mapi-named-properties), que é um recurso limitado na caixa de correio de um usuário. Para mais detalhes, confira [tipo de recurso openTypeExtension](/graph/api/resources/opentypeextension?view=graph-rest-1.0).
+- Cada extensão aberta é armazenada em uma [propriedade nomeada MAPI](/office/client-developer/outlook/mapi/mapi-named-properties), que é um recurso limitado na caixa de correio de um usuário. Para mais detalhes, confira [tipo de recurso openTypeExtension](/graph/api/resources/opentypeextension).
 
 ### <a name="schema-extension-limits"></a>Limites de extensão do esquema
 

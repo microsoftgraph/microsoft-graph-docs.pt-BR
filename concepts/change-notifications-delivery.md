@@ -4,12 +4,12 @@ description: As notificações de alteração podem ser enviadas por meio de tec
 author: Jumaodhiss
 ms.localizationpriority: high
 ms.custom: graphiamtop20, devx-track-azurecli
-ms.openlocfilehash: 59caceb3b56853b9bc4d20fa97cfc035b1a3ea0c
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 9e61d8352c2566b902fea045bc69eff5a91d0a8e
+ms.sourcegitcommit: e497ed9bb56400bdd2bb53d52ddf057d9966220b
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59134063"
+ms.lasthandoff: 11/30/2021
+ms.locfileid: "61225977"
 ---
 # <a name="get-change-notifications-delivered-in-different-ways"></a>Receber notificações de alterações de maneiras diferentes
 
@@ -127,7 +127,7 @@ Depois de você criar os serviços necessários Azure Key Vault e do Hubs de Eve
 
 #### <a name="creating-the-subcription"></a>Criando a assinatura
 
-As assinaturas para alterar as notificações com os Hubs de Eventos são quase idênticas como alterar as notificações com webhooks. A principal diferença é que elas dependem dos Hubs de Eventos para entregar notificações. Todas as outras operações são similares, inclusive a [criação de assinatura](/graph/api/subscription-post-subscriptions?view=graph-rest-beta).  
+As assinaturas para alterar as notificações com os Hubs de Eventos são quase idênticas como alterar as notificações com webhooks. A principal diferença é que elas dependem dos Hubs de Eventos para entregar notificações. Todas as outras operações são similares, inclusive a [criação de assinatura](/graph/api/subscription-post-subscriptions).  
 
 A principal diferença durante a criação da assinatura será o **notificationUrl**. Você deve defini-lo para `EventHub:https://<azurekeyvaultname>.vault.azure.net/secrets/<secretname>?tenantId=<domainname>` os seguintes valores:
 
@@ -164,14 +164,15 @@ Antes de receber as notificações no aplicativo, você precisará criar outra p
 }
 ```
 
-### <a name="what-happens-if-the-microsoft-graph-change-tracking-application-is-missing"></a>O que acontece se o aplicativo de controle de alterações do Microsoft Graph estiver ausente?
+### <a name="what-happens-if-the-microsoft-graph-change-tracking-application-is-missing"></a>O que acontece se o aplicativo Microsoft Graph Change Tracking estiver faltando?
 
 É possível que o serviço principal do **Controle de Alterações do Microsoft Graph** esteja ausente no seu locatário, dependendo de quando o locatário foi criado e de operações administrativas. Para resolver este problema, execute [a seguinte consulta](https://developer.microsoft.com/en-us/graph/graph-explorer?request=servicePrincipals&method=POST&version=v1.0&GraphUrl=https://graph.microsoft.com&requestBody=eyJhcHBJZCI6IjBiZjMwZjNiLTRhNTItNDhkZi05YTgyLTIzNDkxMGM0YTA4NiJ9) no [Microsoft Graph Explorer](https://developer.microsoft.com/en-us/graph/graph-explorer).
 
-Detalhes da consulta:
+Detalhes da consulta: `0bf30f3b-4a52-48df-9a82-234910c4a086` é o appId global para o aplicativo Microsoft Graph Change Tracking.
 
 ```http
 POST https://graph.microsoft.com/v1.0/servicePrincipals
+
 {
     "appId": "0bf30f3b-4a52-48df-9a82-234910c4a086"
 }
@@ -181,12 +182,11 @@ POST https://graph.microsoft.com/v1.0/servicePrincipals
 
 > **Observação:** Esta API só funciona com uma conta corporativa ou de estudante e não com uma conta pessoal. Certifique-se que você está conectado com uma conta no seu domínio.
 
-Como alternativa, você pode usar este script do [Azure Active Directory PowerShell](/powershell/azure/active-directory/install-adv2?view=azureadps-2.0) para adicionar o serviço principal ausente.
+Alternativamente, você pode usar cmdlet [New-MgServicePrincipal](/powershell/module/microsoft.graph.applications/new-mgserviceprincipal?view=graph-powershell-1.0&preserve-view=true) no Microsoft Graph PowerShell para adicionar o principal de serviço ausente. A seguir está um script de exemplo.
 
 ```PowerShell
-Connect-AzureAD -TenantId <tenant-id>
-# replace tenant-id by the id of your tenant.
-New-AzureADServicePrincipal -AppId 0bf30f3b-4a52-48df-9a82-234910c4a086
+Connect-Graph -Scopes "Application.ReadWrite.All"
+New-MgServicePrincipal -AppId "0bf30f3b-4a52-48df-9a82-234910c4a086"
 ```
 
 ## <a name="next-steps"></a>Próximas etapas
