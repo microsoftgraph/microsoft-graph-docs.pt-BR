@@ -5,18 +5,18 @@ author: jpettere
 ms.localizationpriority: high
 ms.prod: users
 doc_type: resourcePageType
-ms.openlocfilehash: 30466b70c663cd45630ed4f8508c1dc9b80bec56
-ms.sourcegitcommit: 1cf7a82df17afc6291e2c93d8b2c277bf3382e6a
+ms.openlocfilehash: b9e3ab5116cfab44641cc030c71c33d6e1b938ae
+ms.sourcegitcommit: e497ed9bb56400bdd2bb53d52ddf057d9966220b
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/20/2021
-ms.locfileid: "61130210"
+ms.lasthandoff: 11/30/2021
+ms.locfileid: "61224976"
 ---
 # <a name="user-resource-type"></a>Tipo de recurso de usuário
 
 Namespace: microsoft.graph
 
-Representa uma conta de usuário do Azure Active Directory (Azure AD). Herda de [directoryObject](directoryobject.md).
+Representa uma conta de usuário do Azure Active Directory (Azure AD). Esse recurso é um tipo aberto que permite que outras propriedades sejam passadas. Herda de [directoryObject](directoryobject.md).
 
 Esse recurso permite:
 
@@ -58,11 +58,11 @@ Esse recurso permite:
 | **Objetos de diretório**                                                                      |                                                                                  |                                                                                                                                                                                                                                     |
 | [assignLicense](../api/user-assignlicense.md)                                              | [user](user.md)                                                                  | Adicionar ou remover assinaturas para o usuário. Você também pode habilitar e desabilitar planos específicos associados a uma assinatura.                                                                                                            |
 | [checkMemberGroups](../api/directoryobject-checkmembergroups.md)                                      | Coleção de cadeias de caracteres                                                                | Verifique se há uma associação em uma lista de grupos. A verificação é transitiva.                                                                                                                                                                  |
-| [checkMemberObjects](../api/user-checkmemberobjects.md)                                    | Coleção de cadeias de caracteres                                                                | Verifique se há associação em uma lista de objetos de grupo, função de diretório ou unidade administrativa. A função é transitiva.                                                                                                                |
+| [checkMemberObjects](../api/directoryobject-checkmemberobjects.md)                                    | Coleção de cadeias de caracteres                                                                | Verifique se há associação em uma lista de objetos de grupo, função de diretório ou unidade administrativa. A função é transitiva.                                                                                                                |
 | [exportPersonalData](../api/user-exportpersonaldata.md)                                    | Nenhum                                                                             | Envia uma solicitação de operação de política de dados, realizada por um administrador da empresa para exportar os dados de um usuário da organização.                                                                                                                   |
 | [getByIds](../api/directoryobject-getbyids.md)                                             | Coleção de cadeias de caracteres                                                                | Retorna os objetos de diretório especificados a partir de uma lista de ids.                                                                                                                                                                           |
 | [getMemberGroups](../api/directoryobject-getmembergroups.md)                                          | Coleção de cadeias de caracteres                                                                | Retorne todos os grupos dos quais o usuário é membro. A verificação é transitiva.                                                                                                                                                        |
-| [getMemberObjects](../api/user-getmemberobjects.md)                                        | Coleção de cadeias de caracteres                                                                | Retorna todos os grupos e funções de diretório dos quais o usuário é membro. A verificação é transitiva.                                                                                                                                 |
+| [getMemberObjects](../api/directoryobject-getmemberobjects.md)                                        | String collection                                                                | Retorna todos os grupos e funções de diretório e unidades administrativas dos quais o usuário é membro. A verificação é transitiva.                                                                                                                                 |
 | [Listar createdObjects](../api/user-list-createdobjects.md)                                  | Coleção [directoryObject](directoryobject.md)                                 | Obter os objetos directory criados pelo usuário da propriedade de navegação createdObjects.                                                                                                                                          |
 | [Listar licenseDetails](../api/user-list-licensedetails.md)                                  | Coleção [licenseDetails](licensedetails.md)                                   | Obtenha uma coleção de objetos licenseDetails.                                                                                                                                                                                             |
 | [Listar ownedDevices](../api/user-list-owneddevices.md)                                      | Coleção [directoryObject](directoryobject.md)                                 | Obter os dispositivos que pertencem ao usuário da propriedade de navegação ownedDevices.                                                                                                                                               |

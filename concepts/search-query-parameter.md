@@ -4,12 +4,12 @@ description: Microsoft Graph dá suporte ao parâmetro de consulta $search OData
 author: mumbi-o
 ms.localizationpriority: high
 ms.custom: graphiamtop20, scenarios:getting-started
-ms.openlocfilehash: f6cb8f9d8fe1a1c8b14872f5979dabed2eff4717
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 6cd0d25d1ba9ef95c37d8e79eb8f5ea516926259
+ms.sourcegitcommit: e497ed9bb56400bdd2bb53d52ddf057d9966220b
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59093971"
+ms.lasthandoff: 11/30/2021
+ms.locfileid: "61226096"
 ---
 # <a name="use-the-search-query-parameter-to-match-a-search-criterion"></a>Usar o parâmetro de consulta de pesquisa para corresponder a um critério de pesquisa
 
@@ -22,7 +22,7 @@ O suporte para o parâmetro de consulta `$search` varia de acordo com a entidade
 
 ## <a name="using-search-on-message-collections"></a>Usando $search em conjuntos de mensagens
 
-Você pode pesquisar mensagens com base em um valor nas propriedades de mensagens específicas. Os resultados da pesquisa são classificados pela data e hora em que a mensagem foi enviada. Uma solicitação de `$search` retorna até 250 resultados.
+Você pode pesquisar mensagens com base em um valor nas propriedades de mensagens específicas. Os resultados da pesquisa são classificados pela data e hora em que a mensagem foi enviada. Uma solicitação `$search` retorna até 1000 resultados.
 
 Se você realizar uma pesquisa em mensagens e especificar apenas um valor sem as propriedades de mensagens específicas, a pesquisa será realizada nas propriedades de pesquisa padrão **from**, **subject** e **body**.
 

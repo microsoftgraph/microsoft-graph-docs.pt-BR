@@ -5,12 +5,12 @@ ms.localizationpriority: high
 author: Jordanndahl
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: 0e70de20cc0c3b23e57dc6f4cc3d83e900fe54d0
-ms.sourcegitcommit: 2e94beae05043a88b389349f0767e3a657415e4c
+ms.openlocfilehash: 685f534007e0b3a61da47cbcaf557ccf2a6ab313
+ms.sourcegitcommit: e497ed9bb56400bdd2bb53d52ddf057d9966220b
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/19/2021
-ms.locfileid: "61123590"
+ms.lasthandoff: 11/30/2021
+ms.locfileid: "61226446"
 ---
 # <a name="add-members"></a>Adicionar membros
 
@@ -21,10 +21,9 @@ Adicione um membro a um grupo de segurança ou Microsoft 365 por meio da proprie
 É possível adicionar usuários, contatos organizacionais, entidades de serviço ou outros grupos. 
 
 > [!IMPORTANT]
-> + Você só pode adicionar usuários a grupos gerenciados por meio da nuvem.
+> + Você só pode adicionar membros a grupos de segurança e Microsoft 365.
 > + Não é possível adicionar grupos de segurança a grupos do Microsoft 365.
 > + Não é possível adicionar grupos do Microsoft 365 a grupos de segurança ou a outros grupos do Microsoft 365.
-> + Você não pode usar essa API para adicionar membros a um grupo de segurança de email.
 
 ## <a name="permissions"></a>Permissões
 

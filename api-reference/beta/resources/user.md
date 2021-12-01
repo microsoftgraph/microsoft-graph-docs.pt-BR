@@ -5,12 +5,12 @@ author: jpettere
 ms.localizationpriority: high
 ms.prod: users
 doc_type: resourcePageType
-ms.openlocfilehash: b4c97481c67f6d68ad1335b160a4b7ef8f02617c
-ms.sourcegitcommit: 1cf7a82df17afc6291e2c93d8b2c277bf3382e6a
+ms.openlocfilehash: 3fbac5bccee4ef18f4d6de87d4371f98ac3807d4
+ms.sourcegitcommit: e497ed9bb56400bdd2bb53d52ddf057d9966220b
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/20/2021
-ms.locfileid: "61130091"
+ms.lasthandoff: 11/30/2021
+ms.locfileid: "61226299"
 ---
 # <a name="user-resource-type"></a>Tipo de recurso de usuário
 
@@ -18,7 +18,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Representa uma conta de usuário do Azure Active Directory (Azure AD). Herda de [directoryObject](directoryobject.md).
+Representa uma conta de usuário do Azure Active Directory (Azure AD). Esse recurso é um tipo aberto que permite que outras propriedades sejam passadas. Herda de [directoryObject](directoryobject.md).
 
 O recurso **usuário** permite que os aplicativos especifiquem as preferências do usuário para idiomas e formatos de data/hora para as caixas de correio primárias do Exchange e para o perfil do Azure AD do usuário. Para obter mais detalhes, consulte [preferências do usuário para idiomas e formatos regionais](#user-preferences-for-languages-and-regional-formats).
 
@@ -68,12 +68,12 @@ Esse recurso permite:
 | **Objetos de diretório**|||
 | [activateServicePlan](../api/user-activateserviceplan.md) | Nenhum | Ative um serviço com um determinado`servicePlanId` e `skuId`para um determinado[ usuário](user.md). |
 | [assignLicense](../api/user-assignlicense.md) | [user](user.md) | Adicionar ou remover assinaturas para o usuário. Você também pode habilitar e desabilitar planos específicos associados a uma assinatura. |
-| [checkMemberGroups](../api/directoryobject-checkmembergroups.md) | Coleção de cadeias de caracteres | Verifique se há uma associação em uma lista de grupos. A verificação é transitiva. |
-| [checkMemberObjects](../api/user-checkmemberobjects.md) | Coleção de cadeias de caracteres | Verifique se há associação em uma lista de objetos de grupo, função de diretório ou unidade administrativa. A verificação é transitiva. |
 | [exportPersonalData](../api/user-exportpersonaldata.md) | Nenhum | Envia uma solicitação de operação de política de dados, realizada por um administrador da empresa para exportar os dados de um usuário da organização. |
 | [getByIds](../api/directoryobject-getbyids.md) | Coleção de cadeias de caracteres | Retorna os objetos de diretório especificados a partir de uma lista de ids. |
+| [checkMemberGroups](../api/directoryobject-checkmembergroups.md) | Coleção de cadeias de caracteres | Verifique se há uma associação em uma lista de grupos. A verificação é transitiva. |
+| [checkMemberObjects](../api/directoryobject-checkmemberobjects.md) | Coleção de cadeias de caracteres | Verifique se há associação em uma lista de objetos de grupo, função de diretório ou unidade administrativa. A verificação é transitiva. |
 | [getMemberGroups](../api/directoryobject-getmembergroups.md) | Coleção de cadeias de caracteres | Retorne todos os grupos dos quais o usuário é membro. A verificação é transitiva. |
-| [getMemberObjects](../api/user-getmemberobjects.md) | Coleção String | Retorna todos os grupos, funções de diretório e unidades administrativas dos quais o usuário é membro. A verificação é transitiva. |
+| [getMemberObjects](../api/directoryobject-getmemberobjects.md) | Coleção String | Retorna todos os grupos, funções de diretório e unidades administrativas dos quais o usuário é membro. A verificação é transitiva. |
 | [Get transitiveReports](../api/user-get-transitivereports.md) | Inteiro | Obtenha a contagem de relatórios transitivos para um usuário na propriedade de navegação transitiveReports. |
 | [Listar createdObjects](../api/user-list-createdobjects.md) | Coleção [directoryObject](directoryobject.md) | Obter os objetos directory criados pelo usuário da propriedade de navegação createdObjects. |
 | [Listar licenseDetails](../api/user-list-licensedetails.md) | Coleção [licenseDetails](licensedetails.md) | Obtenha uma coleção de objetos licenseDetails. |

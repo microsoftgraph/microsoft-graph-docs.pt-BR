@@ -4,12 +4,12 @@ description: Os limites de controle limitam número de chamadas simultâneas par
 author: davidmu1
 ms.localizationpriority: high
 ms.custom: graphiamtop20
-ms.openlocfilehash: 38afc3388825b0b258bb51e6bcd6881600e1736f
-ms.sourcegitcommit: f7956d25472a55af03be83b6ab986a7149a7ac88
+ms.openlocfilehash: 082586ea7518df90b16bc2b2b2e0bafdfcc2779d
+ms.sourcegitcommit: e497ed9bb56400bdd2bb53d52ddf057d9966220b
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/12/2021
-ms.locfileid: "60270359"
+ms.lasthandoff: 11/30/2021
+ms.locfileid: "61226467"
 ---
 # <a name="microsoft-graph-throttling-guidance"></a>Diretrizes de limitação do Microsoft Graph
 
@@ -86,7 +86,7 @@ Para uma discussão mais ampla sobre a limitação no Microsoft Cloud, veja [Pad
 Padrões de programação como pesquisando continuamente um recurso para verificar se há atualizações e a verificação regular das coleções de recursos para verificar se há recursos novos ou excluídos, possuem maior propensão de levar aplicativos a serem regulados e prejudicam o desempenho geral. Em vez disso, você deve aproveitar o [controle de alterações](delta-query-overview.md) e [notificações de alteração](webhooks.md) quando estiverem disponíveis.
 
 >[!NOTE]
->[Práticas recomendadas para descobrir arquivos e detectar alterações em escala](/onedrive/developer/rest-api/concepts/scan-guidance?view=odsp-graph-online) descrevem as práticas recomendadas em detalhes.
+>[Práticas recomendadas para descobrir arquivos e detectar alterações em escala](/onedrive/developer/rest-api/concepts/scan-guidance) descrevem as práticas recomendadas em detalhes.
 
 ## <a name="throttling-and-batching"></a>Limitação e dosagem
 
@@ -222,13 +222,13 @@ A tabela a seguir lista a base dos custos da solicitação. Qualquer solicitaç�
 | OBTER | `applications/{id}/extensionProperties` | 2 | 0 |
 | OBTER | `contracts` | 3 | 0 |
 | POSTAR | `directoryObjects/getByIds` |  3 | 0 |
-| OBTER | `domains/{id}/domainNameReferences` | 4  | 0 |
+| OBTER | `domains/{id}/domainNameReferences` | 4 | 0 |
 | POSTAR | `getObjectsById` | 3 | 0 |
 | OBTER | `groups/{id}/members` | 3 | 0 |
 | OBTER | `groups/{id}/transitiveMembers` | 5 | 0 |
-| POSTAR | `isMemberOf` | 4  | 0 |
-| POSTAR | `me/checkMemberGroups` | 4  | 0 |
-| POSTAR | `me/checkMemberObjects` | 4  | 0 |
+| POSTAR | `isMemberOf` | 4 | 0 |
+| POSTAR | `me/checkMemberGroups` | 4 | 0 |
+| POSTAR | `me/checkMemberObjects` | 4 | 0 |
 | POSTAR | `me/getMemberGroups` | 2 | 0 |
 | POSTAR | `me/getMemberObjects` | 2 | 0 |
 | OBTER | `me/licenseDetails` | 2 | 0 |
@@ -293,7 +293,7 @@ Outros fatores que afetam um custo da solicitação:
 
 | Tipo de solicitação |  Limitar por aplicativo por locatário |
 | ------------ | ------------------------ |
-| Qualquer | 60 solicitações por 60 segundos |
+| Qualquer | Cinco solicitações a cada dez segundos |
 
 Os limites anteriores se aplicam aos seguintes recursos:
 
