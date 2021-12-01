@@ -4,14 +4,14 @@ ms.date: 09/10/2017
 title: Permissão
 ms.localizationpriority: high
 description: O recurso Permission fornece informações sobre uma permissão de compartilhamento concedida a um recurso DriveItem.
-ms.prod: ''
+ms.prod: sharepoint
 doc_type: resourcePageType
-ms.openlocfilehash: 34391b6d4c7cd23d92d2644e3417e90121c7f614
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: ef2d30f7c239bdca21a3b9d643a91c83c7999b30
+ms.sourcegitcommit: e1dd9860906e0b415fd376d70df1f928d1f3d29e
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59117911"
+ms.lasthandoff: 12/01/2021
+ms.locfileid: "61241419"
 ---
 # <a name="permission-resource-type"></a>Tipo de recurso permission
 
@@ -19,7 +19,11 @@ Namespace: microsoft.graph
 
 O recurso **Permission** fornece informações sobre uma permissão de compartilhamento concedida a um recurso [DriveItem](driveitem.md).
 
-As permissões de compartilhamento têm várias formas diferentes. O recurso **Permission** representa esses diferentes formulários por meio de facetas do recurso.
+As permissões de compartilhamento têm várias formas diferentes.
+O recurso de **permissão** representa esses diferentes formulários por meio de facetas no recurso.
+
+O OneDrive for Business e as bibliotecas de documentos do SharePoint não retornam a propriedade **inheritedFrom**.
+**grantedTo** e **grantedToIdentities** serão preteridos no futuro e a resposta será migrada para **grantedToV2** e **grantedToIdentitiesV2** respectivamente sob nomes de propriedade apropriados.
 
 ## <a name="json-representation"></a>Representação JSON
 
@@ -31,6 +35,8 @@ Veja a seguir uma representação JSON do recurso
     "link",
     "grantedTo",
     "grantedToIdentities",
+    "grantedToV2",
+    "grantedToIdentitiesV2",
     "invitation",
     "inheritedFrom",
     "shareId",
@@ -42,34 +48,39 @@ Veja a seguir uma representação JSON do recurso
   "@odata.type": "microsoft.graph.permission"
 }-->
 ```json
+
 {
   "id": "string (identifier)",
   "grantedTo": {"@odata.type": "microsoft.graph.identitySet"},
   "grantedToIdentities": [{"@odata.type": "microsoft.graph.identitySet"}],
+  "grantedToV2": {"@odata.type": "microsoft.graph.sharePointIdentitySet"},
+  "grantedToIdentitiesV2": [{"@odata.type": "microsoft.graph.sharePointIdentitySet"}],
   "inheritedFrom": {"@odata.type": "microsoft.graph.itemReference"},
   "invitation": {"@odata.type": "microsoft.graph.sharingInvitation"},
   "link": {"@odata.type": "microsoft.graph.sharingLink"},
   "roles": ["string"],
   "shareId": "string",
   "expirationDateTime": "string (timestamp)",
-  "hasPassword": "boolean"
+  "hasPassword": "boolean"  
 }
 ```
 
 ## <a name="properties"></a>Propriedades
 
-| Propriedade      | Tipo                                      | Descrição
-|:--------------|:------------------------------------------|:-----------------
-| id            | String                                    | O identificador exclusivo da permissão entre todas as permissões no item. Somente leitura.
-| grantedTo     | [IdentitySet](identityset.md)             | Para permissões de tipo de usuário, os detalhes de usuários e aplicativos para esta permissão. Somente leitura.
-| grantedToIdentities | Coleção([IdentitySet](identityset.md)) | Para permissões de tipo de link, os detalhes dos usuários a quem a permissão foi concedida. Somente leitura.
-| invitation    | [SharingInvitation][]                     | Detalhes de um convite de compartilhamento associado para esta permissão. Somente leitura.
-| inheritedFrom | [ItemReference](itemreference.md)         | Fornece uma referência para o ancestral da permissão atual, se ela for herdada de um ancestral. Somente leitura.
-| vínculo          | [SharingLink][]                           | Fornece os detalhes do link de permissão atual, caso se trate de permissões de tipo de link. Somente leitura.
-| funções         | Coleção de Cadeias de Caracteres                      | O tipo de permissão, por exemplo, `read`. Veja abaixo a lista completa de funções. Somente leitura.
-| shareId       | Cadeia de caracteres                                    | Um token exclusivo que pode ser usado para acessar esse item compartilhado por meio da [**API** Shares](../api/shares-get.md). Somente leitura.
-| expirationDateTime  | DateTimeOffset              | Um formato yyyy-MM-ddTHH:mm:ssZ de DateTimeOffset indica o tempo de expiração da permissão. DateTime.MinValue indica que não há expiração definida para esta permissão. Opcional.
-| hasPassword         | Boolean                     | Isso indica se a senha está configurada para esta permissão, está sendo exibida apenas em resposta. Opcional e Somente leitura e somente para o OneDrive Personal.
+| Propriedade                         | Tipo                                      | Descrição |
+|:---------------------------------|:------------------------------------------|:-----------------
+| id                               | String                                    | O identificador exclusivo da permissão entre todas as permissões no item. Somente leitura. |
+| grantedToV2                      | [SharePointIdentitySet][]                 | Para permissões de tipo de usuário, os detalhes dos usuários e aplicativos para essa permissão. Somente leitura. |
+| grantedToIdentitiesV2            | Coleção([SharePointIdentitySet][]) | Para permissões de tipo de link, os detalhes dos usuários a quem a permissão foi concedida. Somente leitura. |
+| invitation                       | [SharingInvitation][]                     | Detalhes de um convite de compartilhamento associado para esta permissão. Somente leitura. |
+| inheritedFrom                    | [ItemReference](itemreference.md)         | Fornece uma referência para o ancestral da permissão atual, se ela for herdada de um ancestral. Somente leitura. |
+| vínculo                             | [SharingLink][]                           | Fornece os detalhes do link de permissão atual, caso se trate de permissões de tipo de link. Somente leitura. |
+| funções                            | Coleção de Cadeias de Caracteres                      | O tipo de permissão, por exemplo, `read`. Veja abaixo a lista completa de funções. Somente leitura. |
+| shareId                          | Cadeia de caracteres                                    | Um token exclusivo que pode ser usado para acessar esse item compartilhado por meio da [**API** Shares](../api/shares-get.md). Somente leitura. |
+| expirationDateTime               | DateTimeOffset                            | Um formato yyyy-MM-ddTHH:mm:ssZ de DateTimeOffset indica o tempo de expiração da permissão. DateTime.MinValue indica que não há expiração definida para esta permissão. Opcional. |
+| hasPassword                      | Boolean                                   | Indica se a senha está definida para essa permissão. Essa propriedade só aparece na resposta. Opcional. Somente leitura. Somente para o OneDrive Pessoal.. |
+| grantedTo (preterido)           | [IdentitySet](identityset.md)             | Para permissões de tipo de usuário, os detalhes dos usuários e aplicativos para essa permissão. Somente leitura. |
+| grantedToIdentities (preterido) | Coleção([IdentitySet](identityset.md)) | Para permissões de tipo, os detalhes dos usuários aos quais a permissão foi concedida. Somente leitura. |
 
 O recurso permission usa _facetas_ para fornecer informações sobre o tipo de permissão representado pelo recurso.
 
@@ -79,11 +90,12 @@ Permissões com uma faceta [**invitation**][SharingInvitation] representam permi
 
 [SharingInvitation]: sharinginvitation.md
 [SharingLink]: sharinglink.md
+[SharePointIdentitySet]: sharePointIdentitySet.md
 
 ### <a name="roles-property-values"></a>Valores de propriedades Roles
 
-| Valor              | Descrição                                                                        |
-|:------------------|:-------------------------------------------------------------------------------|
+| Valor           | Descrição                                                                        |
+|:----------------|:-------------------------------------------------------------------------------|
 | leitura            | Oferece a capacidade de ler os metadados e o conteúdo do item.            |
 | gravação           | Oferece a capacidade de ler e modificar os metadados e o conteúdo do item. |
 | proprietário           | Para o Microsoft Office SharePoint Online e o OneDrive for Business, este representa o papel do proprietário.       |
@@ -149,6 +161,30 @@ Este link fornece acesso de leitura e gravação para as pessoas específicas na
       }
     }
   ],
+  "grantedToIdentitiesV2": [
+    {
+       "user": {
+        "id": "35fij1974gb8832",
+        "displayName&quot;: &quot;Misty Suarez"
+      },
+      "siteUser": {
+        "id": "1",
+        "displayName": "Misty Suarez",
+        "loginName&quot;: &quot;Misty Suarez"
+      }
+    },
+    {
+       "user": {
+        "id": "9397721fh4hgh73",
+        "displayName&quot;: &quot;Judith Clemons"
+      },
+      "siteUser": {
+        "id": "2",
+        "displayName": "Judith Clemons",
+        "loginName&quot;: &quot;Judith Clemons"
+      }
+    }
+  ],
   "roles": ["write"],
   "link": {
     "webUrl": "https://contoso.sharepoint.com/:w:/t/design/a577ghg9hgh737613bmbjf839026561fmzhsr85ng9f3hjck2t5s",
@@ -190,7 +226,7 @@ Se a permissão for enviada por meio do endereço de email para um destinatário
   "id": "1",
   "roles": ["write"],
   "invitation": {
-    "email": "jd@gmail.com",
+    "email": "jd@contoso.com",
     "signInRequired": true
   },
   "shareId": "FWxc1lasfdbEAGM5fI7B67aB5ZMPDMmQ11U",
@@ -208,11 +244,22 @@ Depois que o convite de compartilhamento tiver sido resgatado por um usuário, a
   "grantedTo": {
     "user": {
       "id": "5D33DD65C6932946",
-      "displayName&quot;: &quot;John Doe"
+      "displayName&quot;: &quot;Robin Danielsen"
+    }
+  },
+  "grantedToV2": {
+    "user": {
+      "id": "5D33DD65C6932946",
+      "displayName&quot;: &quot;Robin Danielsen"
+    },
+    "siteUser": {
+      "id": "1",
+      "displayName": "Robin Danielsen",
+      "loginName&quot;: &quot;Robin Danielsen"
     }
   },
   "invitation": {
-    "email": "jd@outlook.com",
+    "email": "rd@contoso.com",
     "signInRequired": true
   },
   "shareId": "FWxc1lasfdbEAGM5fI7B67aB5ZMPDMmQ11U",
@@ -231,11 +278,6 @@ Depois que o convite de compartilhamento tiver sido resgatado por um usuário, a
 | [Delete](../api/permission-delete.md)                    | `DELETE /drive/items/{item-id}/permissions/{id}`
 | [Adicionar usuários ao link de compartilhamento](../api/permission-grant.md)  | `POST /shares/{encoded-sharing-url}/permission/grant`
 
-
-## <a name="remarks"></a>Comentários
-
-O OneDrive for Business e as bibliotecas de documentos do SharePoint não retornam a propriedade **inheritedFrom**.
-
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
 <!-- {
@@ -245,4 +287,3 @@ O OneDrive for Business e as bibliotecas de documentos do SharePoint não retorn
   "section": "documentation",
   "tocPath": "Resources/Permission"
 } -->
-

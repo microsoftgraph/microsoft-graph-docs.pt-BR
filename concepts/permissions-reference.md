@@ -4,12 +4,12 @@ description: O Microsoft Graph expõe as permissões granulares que controlam o 
 author: jackson-woods
 ms.localizationpriority: high
 ms.custom: graphiamtop20, scenarios:getting-started
-ms.openlocfilehash: 472e6e6d3a68354e97c3714205ac7f1e1b558261
-ms.sourcegitcommit: e497ed9bb56400bdd2bb53d52ddf057d9966220b
+ms.openlocfilehash: 0577680b7cf2bb1a0a98a167aafe49bafdd0b94f
+ms.sourcegitcommit: e1dd9860906e0b415fd376d70df1f928d1f3d29e
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/30/2021
-ms.locfileid: "61224983"
+ms.lasthandoff: 12/01/2021
+ms.locfileid: "61241615"
 ---
 # <a name="microsoft-graph-permissions-reference"></a>Referência de permissões do Microsoft Graph
 
@@ -264,6 +264,9 @@ Nenhum.
 | _DelegatedPermissionGrant.ReadWrite.All_ | Gerenciar todas as concessões de permissão de representante | Permite que o aplicativo conceda ou revogue qualquer permissão delegada para qualquer API (incluindo Microsoft Graph), sem um usuário conectado. | Sim |
 
 ### <a name="remarks"></a>Comentários
+
+> [!CAUTION]
+> Permissões que permitem conceder autorização, tais como _ApproleAssignment.readwrite.all_, permitem que um aplicativo conceda privilégios adicionais a si mesmo, a outros aplicativos ou a qualquer usuário. Da mesma forma, as permissões que permitem o gerenciamento de credenciais, tais como _application.readwrite.all_, permitem que um aplicativo atue como outras entidades e use os privilégios que lhes foram concedidos. Tenha cuidado ao conceder qualquer uma dessas permissões.
 
 A permissão _Application.ReadWrite.OwnedBy_ permite as mesmas operações que _Application.ReadWrite.All_, exceto que a primeira permite essas operações apenas em aplicativos e entidades de serviço dos quais o aplicativo de chamada é proprietário. A propriedade é indicada pela `owners` propriedade de navegação no [aplicativo](/graph/api/application-list-owners?view=graph-rest-beta&preserve-view=true) de destino ou no recurso [principal de serviço](/graph/api/serviceprincipal-list-owners?view=graph-rest-beta&preserve-view=true).
 > OBSERVAÇÃO: o uso da permissão _Application.ReadWrite.OwnedBy_ para chamar `GET /applications` para listar aplicativos falhará com um erro 403.  Use `GET servicePrincipals/{id}/ownedObjects` para listar os aplicativos que pertencem ao aplicativo da chamada.
@@ -1743,6 +1746,10 @@ Para cenários mais complexos que envolvem várias permissões, confira [Cenári
 
 
 ### <a name="remarks"></a>Comentários
+
+> [!CAUTION]
+> Permissões que permitem conceder autorização, tais como _RoleManagement.readwrite.All_, permitem que um aplicativo conceda a si mesmo, a outros aplicativos ou a qualquer usuário privilégios adicionais. Tenha cuidado ao conceder qualquer uma dessas permissões.
+
 Com a permissão _RoleManagement.Read.Directory_ um aplicativo pode ler directoryRoles e directoryRoleTemplates. Isso inclui a leitura de informações de associação para funções de diretório.
 
 Com a permissão _RoleManagement.ReadWrite.Directory_, um aplicativo pode ler e gravar directoryRoles (directoryRoleTemplates são recursos somente leitura). Isso inclui adicionar e remover membros de funções de diretório.

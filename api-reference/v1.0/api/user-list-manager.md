@@ -5,12 +5,12 @@ ms.localizationpriority: high
 author: jpettere
 ms.prod: users
 doc_type: apiPageType
-ms.openlocfilehash: cabf3b87096ad76b26f9e23ece52dac625da91d2
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: e7234d8ed08888d650a3df6aeed35ce75562dcad
+ms.sourcegitcommit: e1dd9860906e0b415fd376d70df1f928d1f3d29e
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "61008438"
+ms.lasthandoff: 12/01/2021
+ms.locfileid: "61241601"
 ---
 # <a name="list-manager"></a>Listar gerente
 
@@ -53,15 +53,14 @@ Este método oferece suporte aos parâmetros de consulta `$select` e `$expand`[O
 >**Observação:** 
 > + O valor `n` de `$levels` pode ser `max` (para retornar todos os gerentes) ou um número entre 1 e 1000.  
 > + Quando o `$levels` parâmetro não for especificado, apenas o gerente imediato será retornado.  
-> + Você pode especificar `$select` dentro de `$expand` para selecionar as propriedades do gerente individual. O parâmetro `$levels` é obrigatório: `$expand=manager($levels=max;$select=id,displayName)`
-> + Para selecionar as propriedades do gerenciador expandido, o parâmetro `$count=true` deve ser adicionado à consulta, bem como ao cabeçalho, `ConsistencyLevel=eventual`. Você pode ver isso implementado no Exemplo 2.
+> + Você pode especificar `$select` dentro de `$expand` para selecionar as propriedades do gerente individual. O parâmetro `$levels` é necessário: `$expand=manager($levels=max;$select=id,displayName)`.
 
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
 
 | Cabeçalho       | Valor|
 |:-----------|:------|
 | Autorização  | {token} de portador. Obrigatório.  |
-| ConsistencyLevel | eventualmente. Obrigatório quando a solicitação inclui o parâmetro `$expand=manager($levels=max)`. |
+| ConsistencyLevel | eventualmente. Obrigatório quando a solicitação inclui a cadeia de caracteres de consulta `$count=true`. |
 
 ## <a name="request-body"></a>Corpo da solicitação
 
@@ -134,12 +133,11 @@ Content-type: application/json
 
 ### <a name="example-2-get-manager-chain-up-to-the-root-level"></a>Exemplo 2: obtenha a cadeia de gerentes ao nível raiz
 
-O exemplo a seguir mostra uma solicitação para obter a cadeia de gerentes ao nível raiz.
+O exemplo a seguir mostra uma solicitação para obter a cadeia de gerentes ao nível raiz. Essa solicitação requer o cabeçalho **ConsistencyLevel** definido como `eventual` porque a cadeia de caracteres de consulta `$count=true` está na solicitação. Para obter mais informações sobre o uso de **ConsistencyLevel** e `$count`, consulte [Funcionalidades avançadas de consulta nos objetos de diretório do Microsoft Azure AD](/graph/aad-advanced-queries).
 
 #### <a name="request"></a>Solicitação
 
 
-# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "get_transitive_managers"
@@ -148,11 +146,6 @@ O exemplo a seguir mostra uma solicitação para obter a cadeia de gerentes ao n
 GET https://graph.microsoft.com/v1.0/me?$expand=manager($levels=max;$select=id,displayName)&$select=id,displayName&$count=true
 ConsistencyLevel: eventual
 ```
-# <a name="go"></a>[Ir](#tab/go)
-[!INCLUDE [sample-code](../includes/snippets/go/get-transitive-managers-go-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
----
 
 
 #### <a name="response"></a>Resposta
