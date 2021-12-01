@@ -3,15 +3,15 @@ author: JeremyKelley
 description: Listar as permissões de compartilhamento eficazes de em um driveItem.
 ms.date: 09/10/2017
 title: Listar quem tem acesso a um arquivo
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: sharepoint
 doc_type: apiPageType
-ms.openlocfilehash: 346fb5de25021ae9672722a8a128fed224853368
-ms.sourcegitcommit: 0ca0a1e2810701c2392e5c685e984fbfb6785579
+ms.openlocfilehash: 8402a26f72e25d52b38f4becd8a7c02bd683f5d7
+ms.sourcegitcommit: e1dd9860906e0b415fd376d70df1f928d1f3d29e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/26/2021
-ms.locfileid: "53151472"
+ms.lasthandoff: 12/01/2021
+ms.locfileid: "61241468"
 ---
 # <a name="list-sharing-permissions-on-a-driveitem"></a>Listar permissões de compartilhamento em um driveItem
 
@@ -113,6 +113,7 @@ Esta resposta de exemplo inclui três permissões, a primeira é um link de comp
 HTTP/1.1 200 OK
 Content-Type: application/json
 
+
 {
   "value": [
     {
@@ -125,11 +126,23 @@ Content-Type: application/json
     },
     {
       "id": "2",
+      "@deprecated.GrantedTo": "GrantedTo has been deprecated. Refer to GrantedToV2",
       "roles": ["write"],
       "grantedTo": {
         "user": {
           "id": "5D33DD65C6932946",
-          "displayName": "John Doe"
+          "displayName": "Robin Danielsen"
+        }
+      },
+      "grantedToV2": {
+        "user": {
+          "id": "5D33DD65C6932946",
+          "displayName": "Robin Danielsen"
+        },
+        "siteUser": {
+          "id": "1",
+          "displayName": "Robin Danielsen",
+          "loginName": "Robin Danielsen"
         }
       },
       "inheritedFrom": {

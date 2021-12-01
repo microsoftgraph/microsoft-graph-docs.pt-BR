@@ -3,15 +3,15 @@ author: JeremyKelley
 description: Envia um convite de compartilhamento para um DriveItem.
 ms.date: 09/10/2017
 title: Enviar um convite para acessar um item
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: sharepoint
 doc_type: apiPageType
-ms.openlocfilehash: 00252b35b786d467848ed417d9a80dab2b165bc7
-ms.sourcegitcommit: d014f72cf2cd130bedb02651092c0be12967b679
+ms.openlocfilehash: 2a47a63186026dc3790c5231924a6beb6d2df28f
+ms.sourcegitcommit: e1dd9860906e0b415fd376d70df1f928d1f3d29e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "50473445"
+ms.lasthandoff: 12/01/2021
+ms.locfileid: "61241475"
 ---
 # <a name="send-a-sharing-invitation"></a>Enviar um convite de compartilhamento
 
@@ -69,8 +69,8 @@ Forneça um objeto JSON com os seguintes parâmetros no corpo da solicitação.
 | requireSignIn    | Booleano                                         | Especifica onde o destinatário do convite precisa entrar para exibir o item compartilhado.            |
 | sendInvitation   | Booliano                                         | Especifica se um email ou uma postagem é gerado (false) ou se a permissão é recém-criada (true).            |
 | funções            | Collection(String)                              | Especifique as funções que são concedidas aos destinatários do convite de compartilhamento.                         |
-| expirationDateTime | DateTimeOffset                       | Especifique o DateTime após o qual a permissão expira. Disponível em contas pessoais do OneDrive for Business, SharePoint e premium do OneDrive.
-| password           | String                         | A senha definida no convite pelo criador. Opcional e Somente OneDrive Personal
+| expirationDateTime | DateTimeOffset                       | Especifique o DateTime após o qual a permissão expira. Disponível em OneDrive for Business, SharePoint e contas de OneDrive pessoais premium.
+| password           | String                         | A senha definida no convite pelo criador. Opcional e somente OneDrive Pessoal
 
 ## <a name="example"></a>Exemplo
 
@@ -92,7 +92,7 @@ Content-type: application/json
 {
   "recipients": [
     {
-      "email": "ryan@contoso.org"
+      "email": "robin@contoso.org"
     }
   ],
   "message": "Here's the file that we're collaborating on.",
@@ -135,16 +135,28 @@ Content-type: application/json
 {
   "value": [
     {
+      "@deprecated.GrantedTo": "GrantedTo has been deprecated. Refer to GrantedToV2",
       "grantedTo": {
         "user": {
-          "displayName": "Ryan Gregg",
+          "displayName": "Robin Danielsen",
           "id": "42F177F1-22C0-4BE3-900D-4507125C5C20"
+        }
+      },
+      "grantedToV2": {
+        "user": {
+          "id": "42F177F1-22C0-4BE3-900D-4507125C5C20",
+          "displayName": "Robin Danielsen"
+        },
+        "siteUser": {
+          "id": "1",
+          "displayName": "Robin Danielsen",
+          "loginName": "Robin Danielsen"
         }
       },
       "hasPassword": true,
       "id": "CCFC7CA3-7A19-4D57-8CEF-149DB9DDFA62",
       "invitation": {
-        "email": "ryan@contoso.com",
+        "email": "robin@contoso.com",
         "signInRequired": true
       },
       "roles": [ "write" ],
@@ -172,13 +184,13 @@ Content-type: application/json
     {
       "grantedTo": {
         "user": {
-          "displayName": "John Adams",
+          "displayName": "Helga Hammeren",
           "id": "5D8CA5D0-FFF8-4A97-B0A6-8F5AEA339681"
         }
       },
       "id": "1EFG7CA3-7A19-4D57-8CEF-149DB9DDFA62",
       "invitation": {
-        "email": "adams@contoso.com",
+        "email": "helga@contoso.com",
         "signInRequired": true
       },
       "roles": [ "write" ],
@@ -195,13 +207,13 @@ Content-type: application/json
     {
       "grantedTo": {
         "user": {
-          "displayName": "Ryan Gregg",
+          "displayName": "Robin Danielsen",
           "id": "42F177F1-22C0-4BE3-900D-4507125C5C20"
         }
       },
       "id": "CCFC7CA3-7A19-4D57-8CEF-149DB9DDFA62",
       "invitation": {
-        "email": "ryan@contoso.com",
+        "email": "robin@contoso.com",
         "signInRequired": true
       },
       "roles": [ "write" ],
@@ -228,9 +240,9 @@ A seguir estão alguns erros adicionais que seu aplicativo pode encontrar dentro
 * [Drives](../resources/drive.md) com **driveType** de `personal` (OneDrive Pessoal) não podem criar ou alterar as permissões no DriveItem raiz.
 * Para ver uma lista de funções disponíveis, consulte [roles property values](../resources/permission.md#roles-property-values).
 
-## <a name="error-responses"></a>Respostas de erros
+## <a name="error-responses"></a>Respostas de erro
 
-Veja mais informações sobre como os erros são retornados no tópico [Respostas de erro][error-response].
+Leia o tópico [Respostas de Erro][error-response] para obter mais informações sobre como os erros são retornados.
 
 
 [error-response]: /graph/errors

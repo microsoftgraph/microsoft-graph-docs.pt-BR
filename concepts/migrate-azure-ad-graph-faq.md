@@ -4,12 +4,12 @@ description: Fornece respostas para perguntas frequentes sobre como migrar do Az
 author: FaithOmbongi
 ms.localizationpriority: medium
 ms.prod: applications
-ms.openlocfilehash: 3ad9eab71ee39509d3ad325fc98126dcdefaa60a
-ms.sourcegitcommit: 6b5bee1a1cea92c1f3d6439110c4916eb8b249a5
+ms.openlocfilehash: 34bbf90b42d1b85acc5f768599c4b50a88b859b1
+ms.sourcegitcommit: e1dd9860906e0b415fd376d70df1f928d1f3d29e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/11/2021
-ms.locfileid: "60908544"
+ms.lasthandoff: 12/01/2021
+ms.locfileid: "61241300"
 ---
 # <a name="azure-ad-graph-to-microsoft-graph-migration-faq"></a>Perguntas frequentes sobre migração do Azure AD Graph Microsoft Graph migração
 
@@ -122,7 +122,13 @@ Primeiro, confirme a lista completa de aplicativos pertencentes ao seu locatári
 
 ## <a name="can-i-request-for-an-exception-if-im-unable-to-meet-the-june-30-2022-migration-deadline"></a>Posso solicitar uma exceção se não conseguir cumprir o prazo de migração de 30 de junho de 2022?  
 
-Não há exceções para essa precarização. Seus aplicativos não receberão mais respostas do ponto de extremidade do Azure AD Graph após 30 de junho de 2022. 
+Não há exceções para essa precarização. Seus aplicativos não receberão mais respostas do ponto de extremidade do Azure AD Graph após 30 de junho de 2022.
+
+## <a name="my-organization-runs-azure-stack-hub-what-actions-should-i-take"></a>Minha organização executa o Azure Stack Hub. Quais ações devo tomar?
+
+Se sua organização executa o Azure Stack Hub, a ação mais importante é seguir a política de manutenção do Hub de Pilha do [Azure.](/azure-stack/operator/azure-stack-servicing-policy)
+
+Se necessário, o Azure Stack Hub continuará usando o Azure AD Graph além de 30 de junho de 2022, para garantir que todos os sistemas migrem para o uso do Microsoft Graph. Para migrar, os clientes serão notificados por meio do portal de administração do Hub de Pilha do Azure para atualizar seus diretórios de locatários de residência e convidados. A migração para o Microsoft Graph será gerenciada pela experiência de atualização integrada do sistema.
 
 ## <a name="i-need-to-add-new-azure-ad-graph-permissions-to-my-app-but-i-cant-select-azure-ad-graph-as-a-required-permission-for-my-app-registration-how-can-i-add-the-azure-ad-graph-permissions"></a>Preciso adicionar novas permissões do Azure AD Graph ao meu aplicativo, mas não posso selecionar o Azure AD Graph como uma permissão necessária para o registro do meu aplicativo. Como posso adicionar as permissões do Azure AD Graph?
 

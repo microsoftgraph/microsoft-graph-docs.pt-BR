@@ -5,16 +5,125 @@ ms.localizationpriority: medium
 ms.prod: non-product-specific
 author: MSGraphDocsvTeam
 doc_type: enumPageType
-ms.openlocfilehash: d91f7b7847d9c20465bbd507e59c882a337822b6
-ms.sourcegitcommit: e497ed9bb56400bdd2bb53d52ddf057d9966220b
+ms.openlocfilehash: 08d5cc4fca905c2b8ef442839e13752186417e5d
+ms.sourcegitcommit: e1dd9860906e0b415fd376d70df1f928d1f3d29e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/30/2021
-ms.locfileid: "61225858"
+ms.lasthandoff: 12/01/2021
+ms.locfileid: "61241678"
 ---
 # <a name="enum-values"></a>Valores denum
 
 Namespace: microsoft.graph
+
+### <a name="accesspackageassignmentfilterbycurrentuseroptions-values"></a>valores accessPackageAssignmentFilterByCurrentUserOptions
+
+|Member|
+|:---|
+|destino|
+|createdBy|
+|unknownFutureValue|
+
+### <a name="accesspackageassignmentrequestfilterbycurrentuseroptions-values"></a>valores accessPackageAssignmentRequestFilterByCurrentUserOptions
+
+|Member|
+|:---|
+|destino|
+|createdBy|
+|aprovador|
+|unknownFutureValue|
+
+### <a name="accesspackageassignmentstate-values"></a>valores accessPackageAssignmentState
+
+|Member|
+|:---|
+|entrega|
+|partiallyDelivered|
+|entregue|
+|expirado|
+|deliveryFailed|
+|unknownFutureValue|
+
+### <a name="accesspackagecatalogstate-values"></a>valores accessPackageCatalogState
+
+|Member|
+|:---|
+|não publicado|
+|publicado|
+|unknownFutureValue|
+
+### <a name="accesspackagecatalogtype-values"></a>valores accessPackageCatalogType
+
+|Member|
+|:---|
+|userManaged|
+|serviceDefault|
+|serviceManaged|
+|unknownFutureValue|
+
+### <a name="accesspackageexternaluserlifecycleaction-values"></a>accessPackageExternalUserLifecycleAction values
+
+|Member|
+|:---|
+|none|
+|blockSignIn|
+|blockSignInAndDelete|
+|unknownFutureValue|
+
+### <a name="accesspackagefilterbycurrentuseroptions-values"></a>valores accessPackageFilterByCurrentUserOptions
+
+|Member|
+|:---|
+|allowedRequestor|
+|unknownFutureValue|
+
+### <a name="accesspackagerequeststate-values"></a>valores accessPackageRequestState
+
+|Member|
+|:---|
+|enviado|
+|pendingApproval|
+|entrega|
+|entregue|
+|deliveryFailed|
+|denied|
+|agendado|
+|cancelado|
+|partiallyDelivered|
+|unknownFutureValue|
+
+### <a name="accesspackagerequesttype-values"></a>valores accessPackageRequestType
+
+|Member|
+|:---|
+|notSpecified|
+|userAdd|
+|userUpdate|
+|userRemove|
+|adminAdd|
+|adminUpdate|
+|adminRemove|
+|systemAdd|
+|systemUpdate|
+|systemRemove|
+|onBehalfAdd|
+|unknownFutureValue|
+
+### <a name="accesspackagesubjecttype-values"></a>valores accessPackageSubjectType
+
+|Member|
+|:---|
+|notSpecified|
+|usuário|
+|servicePrincipal|
+|unknownFutureValue|
+
+### <a name="connectedorganizationstate-values"></a>valores connectedOrganizationState
+
+|Member|
+|:---|
+|configurado|
+|proposta|
 
 ### <a name="accessreviewinstancedecisionitemfilterbycurrentuseroptions-values"></a>valores accessReviewInstanceDecisionItemFilterByCurrentUserOptions 
 
@@ -1468,7 +1577,7 @@ Valores possíveis para tipos de conta de usuário (associação ao grupo), por 
 
 | Member                |
 |:----------------------|
-| string                |
+| cadeia de caracteres                |
 | booliano               |
 | int64                 |
 | stringCollection      |

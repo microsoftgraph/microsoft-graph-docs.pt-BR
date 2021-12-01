@@ -5,12 +5,12 @@ author: AshleyYangSZ
 ms.localizationpriority: medium
 ms.prod: cloud-pc
 doc_type: resourcePageType
-ms.openlocfilehash: 6eb5d684419c0ebe7d68deab50cc0b4e01473466
-ms.sourcegitcommit: c7ff992ef63e480d070421ba99b28ee129cb6acb
+ms.openlocfilehash: 578ff7285803aa5cf86dc779dd771622045a2e88
+ms.sourcegitcommit: e1dd9860906e0b415fd376d70df1f928d1f3d29e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "60695416"
+ms.lasthandoff: 12/01/2021
+ms.locfileid: "61241391"
 ---
 # <a name="cloudpconpremisesconnectionhealthcheck-resource-type"></a>Tipo de recurso cloudPcOnPremisesConnectionHealthCheck
 
@@ -20,7 +20,7 @@ Namespace: microsoft.graph
 
 O resultado de uma verificação de saúde de conexão local do computador na nuvem.
 
-## <a name="methods"></a>Methods
+## <a name="methods"></a>Métodos
 
 |Método|Tipo de retorno|Descrição|
 |:---|:---|:---|
@@ -30,13 +30,13 @@ O resultado de uma verificação de saúde de conexão local do computador na nu
 
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|displayName|String|O nome de exibição desse item de verificação de saúde.|
+|displayName|Cadeia de caracteres|O nome de exibição desse item de verificação de saúde.|
 |status|[cloudPcOnPremisesConnectionStatus](../resources/cloudpconpremisesconnection.md#cloudpconpremisesconnectionstatus-values)|O status do item de verificação de saúde. Os valores possíveis são: `pending`, `running`, `passed`, `failed`, `unknownFutureValue`. Somente leitura.|
 |startDateTime|DateTimeOffset|A hora de início do item de verificação de saúde. Somente leitura.|
 |endDateTime|DateTimeOffset|A hora de término do item de verificação de saúde. Somente leitura.|
 |errorType|[cloudPcOnPremisesConnectionHealthCheckErrorType](#cloudpconpremisesconnectionhealthcheckerrortype-values)|O tipo de erro que ocorreu durante essa verificação de saúde.|
-|recommendedAction|String|A ação recomendada para corrigir o erro correspondente.|
-|additionalDetails|String|Detalhes adicionais sobre a verificação de saúde ou a ação recomendada.|
+|recommendedAction|Cadeia de Caracteres|A ação recomendada para corrigir o erro correspondente.|
+|additionalDetails|Cadeia de Caracteres|Detalhes adicionais sobre a verificação de saúde ou a ação recomendada.|
 
 ### <a name="cloudpconpremisesconnectionhealthcheckerrortype-values"></a>valores cloudPcOnPremisesConnectionHealthCheckErrorType
 
@@ -50,6 +50,9 @@ O resultado de uma verificação de saúde de conexão local do computador na nu
 |adJoinCheckOrganizationalUnitIncorrectFormat|A verificação de junção de domínio falhou porque a unidade organizacional (OU) não pode ser encontrada. Forneça uma UO no domínio. A UO deve estar no formato de nome diferenciado. Formato de exemplo: "OU=OU1,OU=OU2,OU=OU3,DC=DC1".|
 |adJoinCheckComputerObjectAlreadyExists|A conta do computador não pode ser encontrada na unidade organizacional (OU) fornecida na conexão de rede local, mas o nome do computador já existe no domínio. Isso geralmente ocorre depois que o objeto do computador foi movido para fora da UO configurada na conexão de rede local. Mova o objeto do computador de volta para a UO de destino.|
 |adJoinCheckAccessDenied|A verificação de junção de domínio falhou porque a conta de usuário fornecida não tem permissões suficientes para ingressar no domínio. Verifique se a conta fornecida tem permissões suficientes ou altere a conta de usuário definida nas propriedades de conexão de rede local. Permissões necessárias: Criar *objetos de computador e* Excluir objetos de *computador*.|
+|adJoinCheckCredentialsExpired|A verificação de junção de domínio falhou porque a senha do usuário de junção de domínio expirou. Primeiro atualize a senha e atualize a conexão de rede local com as novas credenciais.|
+|adJoinCheckAccountLockedOrDisabled|A verificação de junção de domínio falhou porque a conta de usuário de junção de domínio está bloqueada ou desabilitada no momento. Verifique se a conta de usuário de junção de domínio está desbloqueada, ativa e capaz de se autenticar no domínio.|
+|adJoinCheckAccountQuotaExceeded|A verificação de junção de domínio falhou porque o usuário de junção de domínio excedeu o máximo de junções de domínio. Verifique se a junção de domínio é permitida e a **propriedade ms-DS-MachineAccountQuota** Active Directory permite junções de domínio suficientes.|
 |adJoinCheckUnknownError|A verificação de junção de domínio falhou devido a um erro desconhecido. Certifique-se de que a conexão de rede local possa ingressar com êxito no domínio usando os detalhes fornecidos.|
 |endpointConnectivityCheckCloudPcUrlNotAllowListed|Durante o provisionamento, uma ou mais URLs necessárias não puderam ser contatadas. Verifique se todas as URLs necessárias são permitidas por meio dos firewalls e proxies.|
 |endpointConnectivityCheckWVDUrlNotAllowListed|Durante o provisionamento, uma ou mais URLs WVD necessárias não puderam ser contatadas. Verifique se todas as URLs necessárias são permitidas por meio dos firewalls e proxies.|
@@ -68,6 +71,15 @@ O resultado de uma verificação de saúde de conexão local do computador na nu
 |resourceAvailabilityCheckSubscriptionTransferred|A assinatura do Azure fornecida não pode ser acessada. Verifique se a assinatura do Azure está disponível para provisionamento.|
 |resourceAvailabilityCheckGeneralSubscriptionError|Uma política do Azure está restringindo a criação de recursos. Verifique se não há nenhuma política do Azure que restrinja a criação de recursos no grupo de assinaturas e/ou recursos.|
 |resourceAvailabilityCheckUnsupportedVNetRegion|O vNet selecionado está localizado em uma região sem suporte. Verifique se o vNet selecionado está localizado em uma região com suporte.|
+|resourceAvailabilityCheckResourceGroupInvalid|O grupo de recursos selecionado do Azure é inválido ou não encontrado. Verifique se o grupo de recursos selecionado do Azure está disponível para provisionar recursos. Como alternativa, atualize essa conexão de rede local com outro grupo de recursos.|
+|resourceAvailabilityCheckVNetInvalid|A rede virtual do Azure selecionada é inválida. Verifique se a rede virtual selecionada está disponível e saudável. Como alternativa, atualize essa conexão de rede local com outra rede virtual.|
+|resourceAvailabilityCheckSubnetInvalid|A sub-rede selecionada do Azure é inválida. Verifique se a sub-rede selecionada está disponível e saudável. Como alternativa, atualize essa conexão de rede local com outra sub-rede.|
+|resourceAvailabilityCheckResourceGroupBeingDeleted|O grupo de recursos selecionado do Azure está sendo excluído. Verifique se o grupo de recursos selecionado do Azure está disponível para provisionar recursos. Como alternativa, atualize essa conexão de rede local com outro grupo de recursos.|
+|resourceAvailabilityCheckVNetBeingMoved|A rede virtual do Azure selecionada está sendo movida. Verifique se sua rede virtual não está mudando ou sendo movida e tente novamente. Como alternativa, atualize essa conexão de rede local com outro vNet.|
+|resourceAvailabilityCheckSubnetDelegationFailed|A rede virtual do Azure selecionada tem delegação de sub-rede que bloqueia a criação de uma interface de rede (Nic). Peça ao proprietário da rede virtual do Azure para modificar sua política de delegação de sub-rede para permitir que o provisionamento seja bem-sucedido.|
+|resourceAvailabilityCheckSubnetWithExternalResources|A sub-rede selecionada não pode ser usada porque contém recursos externos. Remova todos os recursos que podem causar conflitos e tente novamente. Como alternativa, atualize essa conexão de rede local com outra sub-rede.|
+|resourceAvailabilityCheckResourceGroupLockedForReadonly|O grupo de recursos selecionado está bloqueado e não pode ser modificado para provisionamento. Remova esse bloqueio para permitir que o provisionamento seja bem-sucedido.|
+|resourceAvailabilityCheckResourceGroupLockedForDelete|O grupo de recursos selecionado ou seu escopo pai foi bloqueado para ações de exclusão. Pode ser porque os endereços IP são usados. Remova o bloqueio e tente novamente.|
 |resourceAvailabilityCheckTransientServiceError|A verificação de disponibilidade do recurso falhou devido a um erro transitório. Tente novamente. Se o problema persistir, entre em contato com o suporte do cliente.|
 |resourceAvailabilityCheckUnknownError|A verificação de disponibilidade de recursos do Azure falhou devido a um erro desconhecido. Verifique se todos os recursos do Azure atendem aos pré-requisitos.|
 |permissionCheckNoSubscriptionReaderRole|A entidade de serviço de computador na nuvem não tem permissões suficientes na assinatura do Azure. Certifique-se de que a entidade de serviço do computador na nuvem tenha as *permissões Reader* na assinatura.|
@@ -81,6 +93,7 @@ O resultado de uma verificação de saúde de conexão local do computador na nu
 |internalServerErrorVMDeploymentTimeout|O tempo de implantação da máquina virtual foi o tempo de implantação. Tente novamente mais tarde. Se o problema persistir, entre em contato com o suporte.|
 |internalServerErrorUnableToRunDscScript|Durante o provisionamento, alguns scripts DSC do PowerShell são executados no computador de nuvem. Não é possível baixar esses scripts DSC ou executá-los durante a verificação de saúde. Verifique se a vNet tem acesso irrestrito aos pontos de extremidade necessários, e o PowerShell não está bloqueado no ambiente ou na Política de Grupo.|
 |internalServerUnknownError|O provisionamento falhou devido a um erro interno. Entre em contato com o suporte ao cliente.|
+|unknownFutureValue|Valor de sentinela de enumeração evolvável. Não usar.|
 
 ## <a name="relationships"></a>Relações
 

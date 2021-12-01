@@ -3,15 +3,15 @@ author: JeremyKelley
 description: Atualiza as propriedades de permissão de compartilhamento pela correção do recurso de permissão.
 ms.date: 09/10/2017
 title: Alterar permissões de compartilhamento
-localization_priority: Normal
+ms.localizationpriority: medium
 doc_type: apiPageType
-ms.prod: ''
-ms.openlocfilehash: 56f9d600a36fb7b94757e6c783e2d397306e2de0
-ms.sourcegitcommit: de175a11806f9e9ba3c916384e897aee1cc7f75c
+ms.prod: sharepoint
+ms.openlocfilehash: b249d72a2ec4c774443987a6d01e16d10a782ec9
+ms.sourcegitcommit: e1dd9860906e0b415fd376d70df1f928d1f3d29e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/09/2021
-ms.locfileid: "49790682"
+ms.lasthandoff: 12/01/2021
+ms.locfileid: "61241349"
 ---
 # <a name="update-sharing-permission"></a>Atualizar a permissão de compartilhamento
 
@@ -63,7 +63,7 @@ As propriedades a seguir nesses tipos de permissão podem ser modificadas.
 | Tipo de permissão        | Propriedade | Tipo              | Descrição                   |
 |:-----------------------|:---------|:------------------|:------------------------------|
 | Usuário                   | funções    | Coleção de cadeias de caracteres | Uma matriz de tipos de permissão. |
-| Link de compartilhamento anônimo | expirationDateTime | DateTimeOffset | Um formato de yyyy-MM-ddTHH:mm:ssZ de DateTimeOffset para o tempo de expiração da permissão. |
+| Link de Compartilhamento Anônimo | expirationDateTime | DateTimeOffset | Um formato de yyyy-MM-ddTHH:mm:ssZ de DateTimeOffset para o tempo de expiração da permissão. |
 
 ### <a name="remarks"></a>Comentários
 As modificações de permissão sem suporte incluem o seguinte:
@@ -120,10 +120,22 @@ HTTP/1.1 200 OK
 Content-type: application/json
 
 {
+  "@deprecated.GrantedTo": "GrantedTo has been deprecated. Refer to GrantedToV2",
   "grantedTo": {
     "user": {
-      "displayName": "Ryan Gregg",
+      "displayName": "Robin Danielsen",
       "id": "efee1b77-fb3b-4f65-99d6-274c11914d12"
+    }
+  },
+  "grantedToV2": {
+    "user": {
+      "id": "efee1b77-fb3b-4f65-99d6-274c11914d12",
+      "displayName": "Robin Danielsen"
+    },
+    "siteUser": {
+      "id": "1",
+      "displayName": "Robin Danielsen",
+      "loginName": "Robin Danielsen"
     }
   },
   "id": "1",

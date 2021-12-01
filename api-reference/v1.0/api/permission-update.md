@@ -4,14 +4,14 @@ ms.date: 09/10/2017
 title: Alterar permissões de compartilhamento
 ms.localizationpriority: medium
 description: Atualiza as propriedades de permissão de compartilhamento pela correção do recurso de permissão.
-ms.prod: ''
+ms.prod: sharepoint
 doc_type: apiPageType
-ms.openlocfilehash: 60d59547d77d30c9be267cf2d880a8c4f3917e78
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: e695fe12875447c8ee0130aabfe556a84d6e1813
+ms.sourcegitcommit: e1dd9860906e0b415fd376d70df1f928d1f3d29e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59072822"
+ms.lasthandoff: 12/01/2021
+ms.locfileid: "61241412"
 ---
 # <a name="update-sharing-permission"></a>Atualizar a permissão de compartilhamento
 
@@ -45,7 +45,7 @@ PATCH /users/{user-id}/drive/items/{item-id}/permissions/{perm-id}
 
 ## <a name="optional-request-headers"></a>Cabeçalhos de solicitação opcionais
 
-| Name          | Tipo   | Descrição                                                                                                                                                                                       |
+| Nome          | Tipo   | Descrição                                                                                                                                                                                       |
 |:--------------|:-------|:--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | if-match      | string | Se este cabeçalho de solicitação estiver incluso e a eTag (ou cTag) fornecida não corresponder à marca atual no item, uma resposta `412 Precondition Failed` é exibida e o item não será excluído. |
 
@@ -60,7 +60,7 @@ As propriedades a seguir nesses tipos de permissão podem ser modificadas.
 
 | Tipo de permissão        | Propriedade | Tipo              | Descrição                   |
 |:-----------------------|:---------|:------------------|:------------------------------|
-| User                   | funções    | Coleção de cadeias de caracteres | Uma matriz de tipos de permissão. |
+| Usuário                   | funções    | Coleção de cadeias de caracteres | Uma matriz de tipos de permissão. |
 | Link de Compartilhamento Anônimo | expirationDateTime | DateTimeOffset | Um formato de yyyy-MM-ddTHH:mm:ssZ de DateTimeOffset para o tempo de expiração da permissão. |
 
 ### <a name="remarks"></a>Comentários
@@ -118,10 +118,22 @@ HTTP/1.1 200 OK
 Content-type: application/json
 
 {
+  "@deprecated.GrantedTo": "GrantedTo has been deprecated. Refer to GrantedToV2",
   "grantedTo": {
     "user": {
-      "displayName": "Ryan Gregg",
+      "displayName": "Robin Danielsen",
       "id": "efee1b77-fb3b-4f65-99d6-274c11914d12"
+    }
+  },
+  "grantedToV2": {
+    "user": {
+      "id": "efee1b77-fb3b-4f65-99d6-274c11914d12",
+      "displayName": "Robin Danielsen"
+    },
+    "siteUser": {
+      "id": "1",
+      "displayName": "Robin Danielsen",
+      "loginName": "Robin Danielsen"
     }
   },
   "id": "1",

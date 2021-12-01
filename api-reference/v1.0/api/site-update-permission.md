@@ -5,12 +5,12 @@ author: BarrySh
 ms.localizationpriority: medium
 ms.prod: sharepoint
 doc_type: apiPageType
-ms.openlocfilehash: 2620dfc2a49238e5f01e46ba17d23714d9dcbaee
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: 46994201f7b1093d42e6cefb26692454ca3ee04d
+ms.sourcegitcommit: e1dd9860906e0b415fd376d70df1f928d1f3d29e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "61027071"
+ms.lasthandoff: 12/01/2021
+ms.locfileid: "61241664"
 ---
 # <a name="update-permission"></a>Atualizar permissão
 Namespace: microsoft.graph
@@ -105,8 +105,15 @@ Content-Type: application/json
 
 {
     "id": "2",
+    "@deprecated.GrantedToIdentities": "GrantedToIdentities has been deprecated. Refer to GrantedToIdentitiesV2",
     "roles": ["read"],
     "grantedToIdentities": [{
+      "application": {
+        "id": "89ea5c94-7736-4e25-95ad-3fa95f62b66e",
+        "displayName": "Fabrikam Dashboard App"
+      }
+    }],
+    "grantedToIdentitiesV2": [{
       "application": {
         "id": "89ea5c94-7736-4e25-95ad-3fa95f62b66e",
         "displayName": "Fabrikam Dashboard App"
