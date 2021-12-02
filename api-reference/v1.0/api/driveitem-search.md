@@ -6,14 +6,14 @@ ms.localizationpriority: high
 ms.prod: sharepoint
 description: Pesquise a hierarquia de itens para itens que corresponda a uma consulta.
 doc_type: apiPageType
-ms.openlocfilehash: 88b75446b0d88e05db6c4ba9d586067d164207c5
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: e09ee38a2e8cd56195d03bac01db5f87a5eba3ae
+ms.sourcegitcommit: 3e2239e60b6dc53997b7d4356a20fc3d365d6238
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59053648"
+ms.lasthandoff: 12/02/2021
+ms.locfileid: "61266268"
 ---
-# <a name="search-for-a-driveitems-within-a-drive"></a>Pesquisar um DriveItem em uma unidade
+# <a name="search-for-driveitems-within-a-drive"></a>Pesquisar DriveItems em uma unidade
 
 Namespace: microsoft.graph
 

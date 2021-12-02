@@ -4,12 +4,12 @@ description: Microsoft Graph dá suporte ao parâmetro de consulta $search OData
 author: mumbi-o
 ms.localizationpriority: high
 ms.custom: graphiamtop20, scenarios:getting-started
-ms.openlocfilehash: 6cd0d25d1ba9ef95c37d8e79eb8f5ea516926259
-ms.sourcegitcommit: e497ed9bb56400bdd2bb53d52ddf057d9966220b
+ms.openlocfilehash: 3456985a8d8af1971cdda67a06c24e77e61efd4b
+ms.sourcegitcommit: 3e2239e60b6dc53997b7d4356a20fc3d365d6238
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/30/2021
-ms.locfileid: "61226096"
+ms.lasthandoff: 12/02/2021
+ms.locfileid: "61266079"
 ---
 # <a name="use-the-search-query-parameter-to-match-a-search-criterion"></a>Usar o parâmetro de consulta de pesquisa para corresponder a um critério de pesquisa
 
@@ -125,7 +125,7 @@ Saiba mais sobre a API de Pessoas em [Obter informações sobre pessoas relevant
 
 ## <a name="using-search-on-directory-object-collections"></a>Como usar $search nos conjuntos de objetos do diretório
 
-Os recursos do Microsoft Azure Active Directory e suas relações que derivam de [directoryObject](/graph/api/resources/directoryobject) dão suporte ao parâmetro de consulta `$search` somente em consultas avançadas. A pesquisa usa uma abordagem de geração de tokens que funciona extraindo palavras da cadeia de caracteres de entrada e saída, usando espaços, números, maiúsculas e minúsculas diferentes e símbolos para separar as palavras, da seguinte maneira:
+Os recursos do Microsoft Azure Active Directory e suas relações que derivam de [directoryObject](/graph/api/resources/directoryobject) dão suporte ao parâmetro de consulta `$search` somente em consultas avançadas. A implementação da pesquisa **não** suporta `contains`. Em vez disso, ele usa uma abordagem de geração de tokens que funciona extraindo palavras do valor da propriedade e da cadeia de caracteres de pesquisa usando espaços, números, maiúsculas e minúsculas diferentes, e símbolos conforme mostrado nos exemplos a seguir:
 
 * **Espaços**: `hello world` => `hello`, `world`
 * **Caixa diferente**⁽¹⁾: `HelloWorld` ou `helloWORLD` => `hello`, `world`
@@ -134,7 +134,7 @@ Os recursos do Microsoft Azure Active Directory e suas relações que derivam de
 
 ⁽¹⁾ Atualmente, a tokenização só funciona quando a caixa está mudando de minúsculas para maiúsculas, portanto, `HELLOworld` é considerada um único token: `helloworld`, e `HelloWORld` tem dois tokens: `hello`, `world`. ⁽²⁾ A lógica de tokenização também combina palavras que são separadas apenas por símbolos; por exemplo, pesquisar por `helloworld` irá localizar `hello-world` e `hello.world`.
 
-> **Observação**: após a geração de tokens, os tokens são combinados independentemente da capitalização original e são combinados em qualquer ordem.
+> **Observação**: após a geração de tokens, os tokens são combinados independentemente da capitalização original e são combinados em qualquer ordem. Por exemplo, displayName `李四(David Li)` corresponderá a cadeia de caracteres de pesquisa como `李四(David Li)`, `李四`, `David`, `Li`, `David)`, `(李四`, `Li 李`.
 
 O suporte à pesquisa com token funciona apenas nos campos **displayName** e **descrição**. Qualquer campo do tipo Cadeia de Caracteres pode ser inserido em `$search`; campos diferentes de **displayName** e **descrição** assumem o comportamento padrão `$filter` `startswith`. Por exemplo:
 

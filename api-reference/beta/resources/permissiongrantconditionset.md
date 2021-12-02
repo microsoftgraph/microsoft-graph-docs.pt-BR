@@ -5,12 +5,12 @@ ms.localizationpriority: high
 doc_type: resourcePageType
 ms.prod: identity-and-sign-in
 author: psignoret
-ms.openlocfilehash: 8e13beea466e1a6d4d950fcfc81c0546d0a62e57
-ms.sourcegitcommit: c333953a9188b4cd4a9ab94cbe68871e8f3563e5
+ms.openlocfilehash: fae77434aef5d4b6ea4f5c5884b20040db4f63b9
+ms.sourcegitcommit: 3e2239e60b6dc53997b7d4356a20fc3d365d6238
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/30/2021
-ms.locfileid: "58694644"
+ms.lasthandoff: 12/02/2021
+ms.locfileid: "61266093"
 ---
 # <a name="permissiongrantconditionset-resource-type"></a>tipo de recurso permissionGrantConditionSet
 
@@ -34,7 +34,8 @@ Um conjunto de condições para concessão de permissão contém várias condiç
 | clientApplicationIds | Coleção de cadeias de caracteres | A lista de **appld** valores para os aplicativos cliente corresponderem ou uma lista com o valor único `all` para corresponder a qualquer aplicativo cliente. O padrão é o valor único `all`. |
 | clientApplicationTenantIds | Coleção de cadeias de caracteres | Uma lista de IDs de locatário do Azure Active Directory em que o aplicativo cliente está registrado ou uma lista com o valor único `all` para corresponder aos aplicativos clientes registrados em qualquer locatário. O padrão é o valor único `all`. |
 | clientApplicationPublisherIds | Coleção de cadeias de caracteres | Uma lista de IDs do Microsoft Partner Network (MPN) para editores verificados do aplicativo cliente ou uma lista com o valor único `all` para combinar com aplicativos cliente de qualquer editor. O padrão é o valor único `all`. |
-| clientApplicationsFromVerifiedPublisherOnly | Booleano | Configure para `true` para corresponder apenas a aplicativos cliente com um fornecedor verificado. Configure para `false` para corresponder a qualquer aplicativo cliente, mesmo que não tenha um fornecedor verificado. O padrão é `false`. |
+| clientApplicationsFromVerifiedPublisherOnly | Booleano | Defina como `true` para corresponder apenas a aplicativos cliente com um [fornecedor verificado](/azure/active-directory/develop/publisher-verification-overview). Configure para `false` para corresponder a qualquer aplicativo cliente, mesmo que não tenha um fornecedor verificado. O padrão é `false`. |
+| certifiedClientApplicationsOnly | Boolean | Defina como `true` para corresponder apenas a aplicativos cliente com [certificado do Microsoft 365](/microsoft-365-app-certification/docs/enterprise-app-certification-guide). Defina como `false` para corresponder a qualquer outro aplicativo cliente. O padrão é `false`. |
 
 ## <a name="json-representation"></a>Representação JSON
 
@@ -54,6 +55,7 @@ Um conjunto de condições para concessão de permissão contém várias condiç
     "clientApplicationIds": [ "string" ],
     "clientApplicationTenantIds": [ "string" ],
     "clientApplicationPublisherIds": [ "string" ],
-    "clientApplicationsFromVerifiedPublisherOnly": false
+    "clientApplicationsFromVerifiedPublisherOnly": false,
+    "certifiedClientApplicationsOnly": false
 }
 ```
