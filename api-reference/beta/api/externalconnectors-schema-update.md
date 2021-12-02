@@ -1,24 +1,24 @@
 ---
-title: Criar esquema
-description: Crie o esquema para uma Pesquisa da Microsoft conexão.
+title: Atualizar esquema
+description: Atualize as propriedades de um esquema para um externalConnection.
 ms.localizationpriority: medium
-author: snlraju-msft
+author: mecampos
 ms.prod: search
 doc_type: apiPageType
-ms.openlocfilehash: 09709899718d2823026b43dc67bc61065819aff5
+ms.openlocfilehash: bd0aa8d8d37c9cf7652853b530f91627f2286974
 ms.sourcegitcommit: 3e2239e60b6dc53997b7d4356a20fc3d365d6238
 ms.translationtype: MT
 ms.contentlocale: pt-BR
 ms.lasthandoff: 12/02/2021
-ms.locfileid: "61266149"
+ms.locfileid: "61266426"
 ---
-# <a name="create-schema"></a>Criar esquema
+# <a name="update-schema"></a>Atualizar esquema
 
 Namespace: microsoft.graph.externalConnectors
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Crie o esquema para uma conexão Pesquisa da Microsoft [.](../resources/externalconnectors-externalconnection.md)
+Atualize as propriedades de [um esquema](../resources/externalconnectors-schema.md) para [um externalConnection](../resources/externalconnectors-externalconnection.md).
 
 ## <a name="permissions"></a>Permissões
 
@@ -35,7 +35,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 <!-- { "blockType": "ignored" } -->
 
 ```http
-POST /external/connections/{id}/schema
+PATCH /external/connections/{connectionId}/schema
 ```
 
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
@@ -58,21 +58,17 @@ Se tiver êxito, este método retornará um código de resposta e uma URL no hea
 
 ## <a name="examples"></a>Exemplos
 
-### <a name="example-register-custom-schema-asynchronously"></a>Exemplo: Registrar esquema personalizado de forma assíncrona
-
-#### <a name="request"></a>Solicitação
+### <a name="request"></a>Solicitação
 
 Este é um exemplo de solicitação.
 
-# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "create_schema_from_connection_async",
-  "@odata.type": "microsoft.graph.externalConnectors.schema"
+  "name": "update_schema"
 }-->
 
 ```http
-POST https://graph.microsoft.com/beta/external/connections/contosohr/schema
+PATCH https://graph.microsoft.com/beta/external/connections/contosohr/schema
 Content-type: application/json
 
 {
@@ -103,45 +99,28 @@ Content-type: application/json
 }
 ```
 
-# <a name="c"></a>[C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/create-schema-from-connection-async-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# <a name="javascript"></a>[JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/create-schema-from-connection-async-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# <a name="objective-c"></a>[Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/create-schema-from-connection-async-objc-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# <a name="java"></a>[Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/create-schema-from-connection-async-java-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
----
-
 <!-- markdownlint-disable MD024 -->
-#### <a name="response"></a>Resposta
+### <a name="response"></a>Resposta
 <!-- markdownlint-enable MD024 -->
 
 Este é um exemplo de resposta.
 
 <!-- {
   "blockType": "response",
-  "truncated": true
+  "truncated": true,
 } -->
 
 ```http
 HTTP/1.1 202 Accepted
 Location: https://graph.microsoft.com/beta/external/connections/contosohr/operations/616bfeed-666f-4ce0-8cd9-058939010bfc
+
 ```
 
 <!-- uuid: 16cd6b66-4b1a-43a1-adaf-3a886856ed98
 2019-02-04 14:57:30 UTC -->
 <!-- {
   "type": "#page.annotation",
-  "description": "Create externalItem",
+  "description": "Get schema",
   "keywords": "",
   "section": "documentation",
   "tocPath": ""

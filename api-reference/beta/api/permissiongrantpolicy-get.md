@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 doc_type: apiPageType
 ms.prod: identity-and-sign-in
 author: psignoret
-ms.openlocfilehash: 9d8209bfc002f74749ee688eca69f0f701bed39e
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: dc26fecfb85adb7801f55665794f47f9643d8a57
+ms.sourcegitcommit: 3e2239e60b6dc53997b7d4356a20fc3d365d6238
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "60985770"
+ms.lasthandoff: 12/02/2021
+ms.locfileid: "61266121"
 ---
 # <a name="get-permissiongrantpolicy"></a>Obter permissionGrantPolicy
 
@@ -126,7 +126,8 @@ Content-type: application/json
             "clientApplicationIds": [ "all" ],
             "clientApplicationTenantIds": [ "11e37ee2-48fe-42e0-aab9-07d0bb165353" ],
             "clientApplicationPublisherIds": [ "all" ],
-            "clientApplicationsFromVerifiedPublisherOnly": false
+            "clientApplicationsFromVerifiedPublisherOnly": false,
+            "certifiedClientApplicationsOnly": false
         },
         {
             "id": "8ce99f96-730c-4ebd-8397-07ee65942b97",
@@ -137,7 +138,8 @@ Content-type: application/json
             "clientApplicationIds": [ "all" ],
             "clientApplicationTenantIds": [ "all" ],
             "clientApplicationPublisherIds": [ "all" ],
-            "clientApplicationsFromVerifiedPublisherOnly": true
+            "clientApplicationsFromVerifiedPublisherOnly": true,
+            "certifiedClientApplicationsOnly": false
         }
     ],
     "excludes": []

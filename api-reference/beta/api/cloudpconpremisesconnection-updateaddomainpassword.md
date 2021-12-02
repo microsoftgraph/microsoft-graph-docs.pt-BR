@@ -1,23 +1,23 @@
 ---
 title: 'cloudPcOnPremisesConnection: updateAdDomainPassword'
-description: Atualize a senha de domínio do AD para um onPremisesConnection bem-sucedido.
+description: Atualize a senha de domínio do Active Directory para uma conexão local bem-sucedida. Essa API é suportada quando o tipo onPremisesConnection é híbridoAzureADJoin.
 author: AshleyYangSZ
 ms.localizationpriority: medium
 ms.prod: cloud-pc
 doc_type: apiPageType
-ms.openlocfilehash: 1f18f47e4e69810b62941e0d2cd6f8d8a9a26b6e
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: 3a2f518821eb7825146450dc6aaf2da00e39dd36
+ms.sourcegitcommit: 3e2239e60b6dc53997b7d4356a20fc3d365d6238
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "61032665"
+ms.lasthandoff: 12/02/2021
+ms.locfileid: "61266310"
 ---
 # <a name="cloudpconpremisesconnection-updateaddomainpassword"></a>cloudPcOnPremisesConnection: updateAdDomainPassword
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Atualize a senha de domínio do Active Directory para [um onPremisesConnection](../resources/cloudpconpremisesconnection.md).
+Atualize a senha de domínio do Active Directory para [um onPremisesConnection](../resources/cloudpconpremisesconnection.md). Essa API é suportada quando o tipo do **onPremisesConnection** é `hybridAzureADJoin` .
 
 
 ## <a name="permissions"></a>Permissões
@@ -52,7 +52,7 @@ A tabela a seguir mostra os parâmetros que podem ser usados com esta ação.
 
 |Parâmetro|Tipo|Descrição|
 |:---|:---|:---|
-|adDomainPassword|Cadeia de caracteres|A senha associada **a adDomainUsername**.|
+|adDomainPassword|String|A senha associada **a adDomainUsername**.|
 
 
 
@@ -96,7 +96,7 @@ Content-Type: application/json
 
 
 ### <a name="response"></a>Resposta
-**Observação:** o objeto de resposta mostrado aqui pode ser encurtado para legibilidade.
+
 <!-- {
   "blockType": "response",
   "truncated": true

@@ -2,15 +2,15 @@
 title: Obter transitiveReports para um usuário
 description: Obter a contagem de relatórios transitivos para um usuário.
 author: dkershaw10
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: users
 doc_type: apiPageType
-ms.openlocfilehash: 5d04b1240c54b186a2e5f5cfb77f651e032f1eda
-ms.sourcegitcommit: ada6eab637b9b318129aefb98edbe7316399d9ba
+ms.openlocfilehash: 477adec71ced518708a6b976972a93b480447783
+ms.sourcegitcommit: 3e2239e60b6dc53997b7d4356a20fc3d365d6238
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/07/2021
-ms.locfileid: "53316598"
+ms.lasthandoff: 12/02/2021
+ms.locfileid: "61266184"
 ---
 # <a name="get-transitivereports-for-a-user"></a>Obter transitiveReports para um usuário
 
@@ -98,10 +98,10 @@ Este é um exemplo de resposta.
 ```http
 HTTP/1.1 200 OK
 Content-type: text/plain
+
 ```
 
-5 
-
+`5`
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
 <!--

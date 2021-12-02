@@ -1,16 +1,16 @@
 ---
 title: Obter esquema
 description: Recupere as propriedades de um esquema para um externalConnection.
-localization_priority: Normal
+ms.localizationpriority: medium
 author: snlraju-msft
 ms.prod: search
 doc_type: apiPageType
-ms.openlocfilehash: e8efc13fe7cb96b0a820f80974710f5086f1349d
-ms.sourcegitcommit: 1940be9846055aa650c6c03982b74a961f1e316a
+ms.openlocfilehash: 9af589d20df4acccc942b296ab236c6b1fa1db4b
+ms.sourcegitcommit: 3e2239e60b6dc53997b7d4356a20fc3d365d6238
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/17/2021
-ms.locfileid: "53466968"
+ms.lasthandoff: 12/02/2021
+ms.locfileid: "61266198"
 ---
 # <a name="get-schema"></a>Obter esquema
 
@@ -40,7 +40,7 @@ GET /external/connections/{id}/schema
 
 ## <a name="optional-query-parameters"></a>Parâmetros de consulta opcionais
 
-Este método dá suporte a alguns parâmetros de consulta OData para ajudar a personalizar a resposta. Para obter informações gerais, acesse [Parâmetros de consulta OData](/graph/query-parameters).
+Este método não dá suporte a [parâmetros de](/graph/query-parameters) consulta OData para personalizar a resposta.
 
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
 

@@ -5,12 +5,12 @@ ms.localizationpriority: high
 author: sureshja
 ms.prod: applications
 doc_type: resourcePageType
-ms.openlocfilehash: 7a4483c4146eb92c970ef149b9743dab763300e2
-ms.sourcegitcommit: e497ed9bb56400bdd2bb53d52ddf057d9966220b
+ms.openlocfilehash: eafe2ebbccdeef90e127871d7da4377f771c099d
+ms.sourcegitcommit: 3e2239e60b6dc53997b7d4356a20fc3d365d6238
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/30/2021
-ms.locfileid: "61224910"
+ms.lasthandoff: 12/02/2021
+ms.locfileid: "61265638"
 ---
 # <a name="application-resource-type"></a>tipo de recurso do aplicativo
 
@@ -18,7 +18,7 @@ Namespace: microsoft.graph
 
 Representa um aplicativo. Qualquer aplicativo que terceirize a autenticação no Azure Active Directory (Azure AD) deve estar registrado em um diretório. O registro do aplicativo envolve informar o Azure AD sobre seu aplicativo, incluindo a URL onde ele está localizado, a URL para enviar respostas após a autenticação, o URI para identificar seu aplicativo e muito mais. Para saber mais, confira [Noções básicas de como registrar um aplicativo no Azure AD](/azure/active-directory/develop/authentication-vs-authorization#basics-of-registering-an-application-in-azure-ad). Herda de [directoryObject](directoryobject.md).
 
-Esse recurso tem suporte para o uso da [consulta delta](/graph/delta-query-overview) para controlar adições, exclusões e atualizações incrementais oferecendo uma função [delta](../api/application-delta.md). Este recurso é um tipo aberto que permite que outras propriedades sejam passadas.
+Esse recurso tem suporte para o uso da [consulta delta](/graph/delta-query-overview) para controlar adições, exclusões e atualizações incrementais oferecendo uma função [delta](../api/application-delta.md). Esse recurso é um tipo aberto que permite que outras propriedades sejam passadas.
 
 ## <a name="methods"></a>Methods
 
@@ -69,7 +69,7 @@ Esse recurso tem suporte para o uso da [consulta delta](/graph/delta-query-overv
 | addIns | Coleção [addIn](addin.md)| Define o comportamento personalizado que um serviço de consumo pode usar para chamar um aplicativo em contextos específicos. Por exemplo, aplicativos que podem renderizar fluxos de arquivo [podem definir a propriedade addIns](/onedrive/developer/file-handlers) para a funcionalidade "FileHandler". Isso permitirá que serviços como o Office 365 chamem o aplicativo no contexto de um documento em que o usuário esteja trabalhando. |
 | api | [apiApplication](apiapplication.md) | Especifica configurações para um aplicativo que implementa uma API Web. |
 | appId | Cadeia de caracteres | O identificador exclusivo para o aplicativo que está atribuído a um aplicativo pelo Microsoft Azure Active Directory. Não anulável. Somente leitura. |
-| applicationTemplateId | String | Identificador exclusivo do applicationTemplate. |
+| applicationTemplateId | String | Identificador exclusivo do applicationTemplate. Suporta `$filter` (`eq`, `not`, `ne`).|
 | appRoles | Coleção [appRole](approle.md) | O conjunto de funções atribuídas ao aplicativo. Com as [atribuições de funções do aplicativo](approleassignment.md), essas funções podem ser atribuídas a usuários, grupos ou entidades de serviço de outros aplicativos. Não anulável. |
 | createdDateTime | DateTimeOffset | A data e a hora em que o aplicativo foi registrado. O tipo DateTimeOffset representa informações de data e hora usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite UTC em 1º de janeiro de 2014 é `2014-01-01T00:00:00Z`. Somente leitura. <br><br> Dá suporte `$filter` (`eq`, `ne`, `not`, `ge`, `le`, `in`e `eq` em `null` valores ) e `$orderBy`. |
 | deletedDateTime | DateTimeOffset | A data e a hora em que o aplicativo foi excluído. O tipo DateTimeOffset representa informações de data e hora usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite UTC em 1º de janeiro de 2014 é `2014-01-01T00:00:00Z`. Somente leitura. |

@@ -5,12 +5,12 @@ author: sandeo-MSFT
 ms.localizationpriority: medium
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: 223329260132ff72e66ad99b76aeb8d4b5a57ddf
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: 64ff4c1bab7d0e86e6e518698e312e1be489072b
+ms.sourcegitcommit: 3e2239e60b6dc53997b7d4356a20fc3d365d6238
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "61005387"
+ms.lasthandoff: 12/02/2021
+ms.locfileid: "61266017"
 ---
 # <a name="list-devices"></a>Listar dispositivos
 
@@ -131,6 +131,8 @@ Content-type: application/json
 
 Este é um exemplo de solicitação. Esta solicitação exige o cabeçalho **ConsistencyLevel** definido como `eventual` porque `$count` está na solicitação. Para obter mais informações sobre o uso de **ConsistencyLevel** e `$count`, consulte [Funcionalidades avançadas de consulta nos objetos de diretório do Microsoft Azure AD](/graph/aad-advanced-queries).
 
+>**Observação:** Os parâmetros e de consulta atualmente não estão `$count` `$search` disponíveis em locatários do Azure AD B2C.
+
 <!-- {
   "blockType": "ignored",
   "name": "get_count_only"
@@ -146,16 +148,16 @@ Este é um exemplo de resposta.
 
 <!-- {
   "blockType": "response",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.device",
-  "isCollection": true
+  "truncated": true
 } -->
 ```http
 HTTP/1.1 200 OK
 Content-type: text/plain
-```
 
 294
+```
+
+
 
 ### <a name="example-3-list-all-devices-and-return-only-their-id-and-extensionattributes-properties"></a>Exemplo 3: listar todos os dispositivos e retornar apenas suas propriedades id e extensionAttributes
 
@@ -234,6 +236,7 @@ Content-type: application/json
 
 Este é um exemplo de solicitação. Esta solicitação exige o cabeçalho **ConsistencyLevel** definido como `eventual` e a cadeia de caracteres de consulta `$count=true` porque a solicitação tem os parâmetros de consulta `$orderBy` e `$filter`. Para obter mais informações sobre o uso de **ConsistencyLevel** e `$count`, consulte [Funcionalidades avançadas de consulta nos objetos de diretório do Microsoft Azure AD](/graph/aad-advanced-queries).
 
+>**Observação:** Os parâmetros e de consulta atualmente não estão `$count` `$search` disponíveis em locatários do Azure AD B2C.
 <!-- {
   "blockType": "ignored",
   "name": "get_a_count"
@@ -292,6 +295,7 @@ Content-type: application/json
 
 Este é um exemplo de solicitação. Essa solicitação exige o cabeçalho **ConsistencyLevel** definido como `eventual`, pois a solicitação tem `$search` e a cadeia de caracteres de consulta `$count=true`. Para obter mais informações sobre o uso de **ConsistencyLevel** e `$count`, consulte [Funcionalidades avançadas de consulta nos objetos de diretório do Microsoft Azure AD](/graph/aad-advanced-queries).
 
+>**Observação:** Os parâmetros e de consulta atualmente não estão `$count` `$search` disponíveis em locatários do Azure AD B2C.
 
 <!-- {
   "blockType": "ignored",
@@ -341,6 +345,7 @@ Content-type: application/json
 
 Este é um exemplo de solicitação. Essa solicitação requer o header **ConsistencyLevel** definido como e a cadeia de caracteres de consulta porque a propriedade `eventual` `$count=true` extensionAttributes oferece suporte apenas a parâmetros de `$filter` consulta avançados. Para obter mais informações sobre o uso de **ConsistencyLevel** e `$count`, consulte [Funcionalidades avançadas de consulta nos objetos de diretório do Microsoft Azure AD](/graph/aad-advanced-queries).
 
+>**Observação:** Os parâmetros e de consulta atualmente não estão `$count` `$search` disponíveis em locatários do Azure AD B2C.
 
 # <a name="http"></a>[HTTP](#tab/http)
 <!-- {

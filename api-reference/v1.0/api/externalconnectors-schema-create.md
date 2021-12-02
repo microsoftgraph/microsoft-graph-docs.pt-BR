@@ -5,17 +5,15 @@ author: mecampos
 ms.localizationpriority: medium
 ms.prod: search
 doc_type: apiPageType
-ms.openlocfilehash: 3417dfbf59db0d2488c365af5b880b4956d1240a
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 6e32cf8ac7e11d6cefea269c4e85ef95ca1b2db4
+ms.sourcegitcommit: 3e2239e60b6dc53997b7d4356a20fc3d365d6238
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59046122"
+ms.lasthandoff: 12/02/2021
+ms.locfileid: "61266254"
 ---
 # <a name="create-schema"></a>Criar esquema
 Namespace: microsoft.graph.externalConnectors
-
-
 
 Crie um novo [objeto de esquema.](../resources/externalconnectors-schema.md)
 
@@ -24,8 +22,8 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 |Tipo de permissão|Permissões (da com menos para a com mais privilégios)|
 |:---|:---|
-|Delegada (conta corporativa ou de estudante)|Não aplicável|
-|Delegada (conta pessoal da Microsoft)|Não aplicável|
+|Delegado (conta corporativa ou de estudante)|Não aplicável|
+|Delegado (conta pessoal da Microsoft)|Não aplicável|
 |Aplicativo| ExternalConnection.ReadWrite.OwnedBy|
 
 ## <a name="http-request"></a>Solicitação HTTP
@@ -39,7 +37,7 @@ POST /external/connections/{id}/schema
 ```
 No corpo da solicitação, fornece uma representação JSON de um [objeto de esquema.](../resources/externalconnectors-schema.md)
 
-Ao registrar um esquema de item personalizado, o objeto DEVE ter a propriedade `schema` definida como e DEVE conter a `baseType` `microsoft.graph.externalItem` `properties` propriedade. O `properties` objeto deve conter pelo menos uma propriedade, até um máximo de 64.
+Quando você registra um esquema de item  personalizado, o objeto **de esquema** deve ter a **propriedade baseType** definida como e `microsoft.graph.externalItem` **deve** conter a **propriedade properties.** O **objeto properties** **deve** conter pelo menos uma propriedade, até um máximo de 128.
 
 ## <a name="response"></a>Resposta
 

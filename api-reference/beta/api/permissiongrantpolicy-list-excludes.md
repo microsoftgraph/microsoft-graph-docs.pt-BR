@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 doc_type: apiPageType
 ms.prod: identity-and-sign-in
 author: psignoret
-ms.openlocfilehash: 90bbf50e78d1b0a6f27d0224da4309795b70ec5e
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: d641f76fc94f72d6b673bd265a919089486dfe2d
+ms.sourcegitcommit: 3e2239e60b6dc53997b7d4356a20fc3d365d6238
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "60985756"
+ms.lasthandoff: 12/02/2021
+ms.locfileid: "61266072"
 ---
 # <a name="list-excludes-collection-of-permissiongrantpolicy"></a>Lista exclui coleção de permissionGrantPolicy
 
@@ -59,7 +59,7 @@ Se tiver êxito, este método retornará um código de resposta e uma `200 OK` c
 
 ### <a name="request"></a>Solicitação
 
-A seguir, um exemplo da solicitação para recuperar os conjuntos de condições **de exclusão** da política de concessão de permissão interna `microsoft-application-admin` . Essa política de concessão de permissão inclui todas as permissões delegadas e todas as permissões de aplicativo excluindo permissões de aplicativo para o Microsoft Graph e permissões de aplicativo para o Azure AD Graph.
+A seguir, um exemplo da solicitação para recuperar os conjuntos de condições **de exclusão** da política interna de concessão de permissão `microsoft-application-admin` . Essa política de concessão de permissão inclui todas as permissões delegadas e todas as permissões de aplicativo, excluindo permissões de aplicativo para o Microsoft Graph e permissões de aplicativo para Azure Active Directory Graph.
 
 
 # <a name="http"></a>[HTTP](#tab/http)
@@ -122,7 +122,8 @@ Content-type: application/json
       "clientApplicationIds": [ "all" ],
       "clientApplicationTenantIds": [ "all" ],
       "clientApplicationPublisherIds": [ "all" ],
-      "clientApplicationsFromVerifiedPublisherOnly": false
+      "clientApplicationsFromVerifiedPublisherOnly": false,
+      "certifiedClientApplicationsOnly": false
     },
     {
       "id": "2a1fbb36-9d9a-42d8-8804-de2aa45aca80",
@@ -133,7 +134,8 @@ Content-type: application/json
       "clientApplicationIds": [ "all" ],
       "clientApplicationTenantIds": [ "all" ],
       "clientApplicationPublisherIds": [ "all" ],
-      "clientApplicationsFromVerifiedPublisherOnly": false
+      "clientApplicationsFromVerifiedPublisherOnly": false,
+      "certifiedClientApplicationsOnly": false
     }
   ]
 }

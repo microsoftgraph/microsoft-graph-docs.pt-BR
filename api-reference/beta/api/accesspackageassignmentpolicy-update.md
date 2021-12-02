@@ -5,12 +5,12 @@ author: markwahl-msft
 ms.localizationpriority: medium
 ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: ccb18e97c2436dfca4948c54032a1a6dd5076c01
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: 8fa0f3f1b304c830165c30496ca7e40c1dee2dcd
+ms.sourcegitcommit: 3e2239e60b6dc53997b7d4356a20fc3d365d6238
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "60988312"
+ms.lasthandoff: 12/02/2021
+ms.locfileid: "61266022"
 ---
 # <a name="update-accesspackageassignmentpolicy"></a>Atualizar accessPackageAssignmentPolicy
 
@@ -51,8 +51,8 @@ A tabela a seguir mostra as propriedades que são necessárias ao atualizar [um 
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
 |displayName|String|O nome de exibição da política.|
-|description|Cadeia de caracteres|A descrição da política.|
-|canExtend|Booliano|Indica se um usuário pode estender a duração da atribuição do pacote de acesso após a aprovação.|
+|description|String|A descrição da política.|
+|canExtend|Boolean|Indica se um usuário pode estender a duração da atribuição do pacote de acesso após a aprovação.|
 |durationInDays|Int32|O número de dias em que as atribuições dessa política duram até expirar.|
 |expirationDateTime|DateTimeOffset|A data de expiração das atribuições criadas nesta política. O tipo Timestamp representa informações de data e hora usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite UTC em 1 de janeiro de 2014 é `2014-01-01T00:00:00Z`|
 |requestorSettings|[requestorSettings](../resources/requestorsettings.md)|Who pode solicitar esse pacote de acesso a partir desta política.|
@@ -70,6 +70,8 @@ Se tiver êxito, este método retornará um código de resposta e um `200 OK` [o
 ### <a name="request"></a>Solicitação
 Nesta atualização de política, uma das opções para a pergunta de múltipla escolha foi removida. Os futuros solicitadores não terão mais a opção removida disponível para eles.
 
+
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "update_accesspackageassignmentpolicy"
@@ -158,8 +160,6 @@ Content-Type: application/json
     }]
 }
 ```
-
-
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/update-accesspackageassignmentpolicy-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]

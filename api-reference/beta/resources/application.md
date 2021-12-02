@@ -5,12 +5,12 @@ ms.localizationpriority: high
 author: sureshja
 ms.prod: applications
 doc_type: resourcePageType
-ms.openlocfilehash: f39d32ac8531103c3ff5b984590951807e905185
-ms.sourcegitcommit: e497ed9bb56400bdd2bb53d52ddf057d9966220b
+ms.openlocfilehash: f60e7f8a521b0fb647e8acf2095fc9cde588ef6b
+ms.sourcegitcommit: 3e2239e60b6dc53997b7d4356a20fc3d365d6238
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/30/2021
-ms.locfileid: "61226320"
+ms.lasthandoff: 12/02/2021
+ms.locfileid: "61266065"
 ---
 # <a name="application-resource-type"></a>tipo de recurso do aplicativo
 
@@ -23,7 +23,7 @@ Representa um aplicativo. Qualquer aplicativo que terceirize a autenticação no
 > [!Note]
 > Atualmente, as alterações no tipo de recurso do aplicativo estão em desenvolvimento. Para saber mais, confira [Problemas conhecidos do Microsoft Graph](/graph/known-issues#application-and-serviceprincipal-api-changes).
 
-Esse recurso tem suporte para o uso da [consulta delta](/graph/delta-query-overview) para controlar adições, exclusões e atualizações incrementais oferecendo uma função [delta](../api/application-delta.md). Esse recurso é|está um tipo aberto que permite que outras propriedades sejam aprovadas.
+Esse recurso tem suporte para o uso da [consulta delta](/graph/delta-query-overview) para controlar adições, exclusões e atualizações incrementais oferecendo uma função [delta](../api/application-delta.md). Esse recurso é um tipo aberto que permite que outras propriedades sejam passadas.
 
 ## <a name="methods"></a>Methods
 
@@ -81,8 +81,9 @@ Esse recurso tem suporte para o uso da [consulta delta](/graph/delta-query-overv
 | addIns | Coleção [addIn](addin.md) | Define o comportamento personalizado que um serviço de consumo pode usar para chamar um aplicativo em contextos específicos. Por exemplo, aplicativos que podem renderizar fluxos de arquivo [podem definir a propriedade addIns](/onedrive/developer/file-handlers) para a funcionalidade "FileHandler". Isso permitirá que serviços como o Office 365 chamem o aplicativo no contexto de um documento em que o usuário esteja trabalhando. |
 | api | [apiApplication](apiapplication.md) | Especifica configurações para um aplicativo que implementa uma API Web. |
 | appId | Cadeia de caracteres | O identificador exclusivo para o aplicativo que está atribuído a um aplicativo pelo Microsoft Azure Active Directory. Não anulável. Somente leitura. |
-|applicationTemplateId | String | Identificador exclusivo do applicationTemplate. |
+|applicationTemplateId | String | Identificador exclusivo do applicationTemplate. Suporta `$filter` (`eq`, `not`, `ne`).|
 | appRoles | Coleção [appRole](approle.md) | O conjunto de funções atribuídas ao aplicativo. Com as [atribuições de funções do aplicativo](approleassignment.md), essas funções podem ser atribuídas a usuários, grupos ou entidades de serviço de outros aplicativos. Não anulável. |
+|certificação|[certificação](certification.md)|Especifica o status de certificação do aplicativo.|
 | createdDateTime | DateTimeOffset | A data e a hora em que o aplicativo foi registrado. O tipo DateTimeOffset representa informações de data e hora usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite UTC em 1º de janeiro de 2014 é `2014-01-01T00:00:00Z`. Somente leitura. <br><br> Suporta `$filter` (`eq`, `ne`, `not`, `ge`, `le`, `in`, e `eq` em `null` valores) e `$orderBy`. |
 |defaultRedirectUri|String|O URI de redirecionamento padrão. Se especificado e não houver nenhum URI de redirecionamento explícito na solicitação de entrada para fluxos SAML e OIDC, o Azure AD enviará o token para esse URI de redirecionamento. O Azure AD também envia o token para esse URI padrão no logon único iniciado pelo IdP do SAML. O valor deve corresponder a um dos URIs de redirecionamento configurados para o aplicativo.|
 | deletedDateTime | DateTimeOffset | A data e a hora em que o aplicativo foi excluído. O tipo DateTimeOffset representa informações de data e hora usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite UTC em 1º de janeiro de 2014 é `2014-01-01T00:00:00Z`. Somente leitura. |
@@ -158,6 +159,7 @@ Veja a seguir uma representação JSON do recurso.
   "appId": "String",
   "applicationTemplateId": "String",
   "appRoles": [{"@odata.type": "microsoft.graph.appRole"}],
+  "certification": {"@odata.type": "microsoft.graph.certification"},
   "createdDateTime": "String (timestamp)",
   "deletedDateTime": "String (timestamp)",
   "disabledByMicrosoftStatus": "String",

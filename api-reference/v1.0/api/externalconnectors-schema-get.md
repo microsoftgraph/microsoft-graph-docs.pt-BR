@@ -5,17 +5,15 @@ author: mecampos
 ms.localizationpriority: medium
 ms.prod: search
 doc_type: apiPageType
-ms.openlocfilehash: d01c2ad63df7a2e3f30b3b8724bf5bd19565a0a1
-ms.sourcegitcommit: c7ff992ef63e480d070421ba99b28ee129cb6acb
+ms.openlocfilehash: 4d6b334dbe9911a12ef92e52e7a18b68be6dabff
+ms.sourcegitcommit: 3e2239e60b6dc53997b7d4356a20fc3d365d6238
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "60694373"
+ms.lasthandoff: 12/02/2021
+ms.locfileid: "61266219"
 ---
 # <a name="get-schema"></a>Obter esquema
 Namespace: microsoft.graph.externalConnectors
-
-
 
 Leia as propriedades e as relações de um [objeto de esquema.](../resources/externalconnectors-schema.md)
 
@@ -39,7 +37,8 @@ GET /external/connections/{connectionsId}/schema
 ```
 
 ## <a name="optional-query-parameters"></a>Parâmetros de consulta opcionais
-Este método dá suporte a alguns parâmetros de consulta OData para ajudar a personalizar a resposta. Para obter informações gerais, acesse [Parâmetros de consulta OData](/graph/query-parameters).
+
+Este método não dá suporte a [parâmetros de](/graph/query-parameters) consulta OData para personalizar a resposta.
 
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
 |Nome|Descrição|

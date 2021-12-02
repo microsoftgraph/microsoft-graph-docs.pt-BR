@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 doc_type: apiPageType
 ms.prod: identity-and-sign-in
 author: psignoret
-ms.openlocfilehash: a601f97979c4e4b1412859c83d67b2b5cc01a1e9
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: 7ec68815f9b614269ff0e179226768d53d7ee532
+ms.sourcegitcommit: 3e2239e60b6dc53997b7d4356a20fc3d365d6238
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "61026483"
+ms.lasthandoff: 12/02/2021
+ms.locfileid: "61266019"
 ---
 # <a name="list-permissiongrantpolicies"></a>Listar permissionGrantPolicies
 
@@ -128,7 +128,8 @@ Content-type: application/json
           "clientApplicationIds": [ "all" ],
           "clientApplicationTenantIds": [ "all" ],
           "clientApplicationPublisherIds": [ "all" ],
-          "clientApplicationsFromVerifiedPublisherOnly": true
+          "clientApplicationsFromVerifiedPublisherOnly": true,
+          "certifiedClientApplicationsOnly": false
         }
       ],
       "excludes": []
@@ -158,7 +159,8 @@ Content-type: application/json
           "clientApplicationIds": [ "all" ],
           "clientApplicationTenantIds": [ "all" ],
           "clientApplicationPublisherIds": [ "all" ],
-          "clientApplicationsFromVerifiedPublisherOnly": false
+          "clientApplicationsFromVerifiedPublisherOnly": false,
+          "certifiedClientApplicationsOnly": false
         }
       ],
       "excludes": []

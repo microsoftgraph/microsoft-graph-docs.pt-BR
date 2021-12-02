@@ -5,12 +5,12 @@ author: mmast-msft
 ms.localizationpriority: medium
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: f0dfe0599a2df4d2f387d2b0d97beae29c4954ec
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: ede658dcd9e2ddc80c4550e88e4d16a7eaab89d4
+ms.sourcegitcommit: 3e2239e60b6dc53997b7d4356a20fc3d365d6238
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "61028655"
+ms.lasthandoff: 12/02/2021
+ms.locfileid: "61266018"
 ---
 # <a name="add-a-student"></a>Adicionar um aluno
 
@@ -18,7 +18,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Adicione um membro a uma aula.
+Adicionar um [membro educationUser](../resources/educationuser.md) a uma [educationClass](../resources/educationclass.md).
 
 ## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
@@ -48,7 +48,7 @@ No corpo da solicitação, forneça uma representação JSON de um objeto [educa
 Se bem-sucedido, esse método retornará um código de resposta `204 No Content` e um objeto [educationClass](../resources/educationclass.md) no corpo da resposta.
 
 ## <a name="example"></a>Exemplo
-##### <a name="request"></a>Solicitação
+### <a name="request"></a>Solicitação
 Este é um exemplo de solicitação.
 
 # <a name="http"></a>[HTTP](#tab/http)
@@ -87,7 +87,7 @@ Content-type: application/json
 ---
 
 
-##### <a name="response"></a>Resposta
+### <a name="response"></a>Resposta
 Este é um exemplo de resposta. 
 
 

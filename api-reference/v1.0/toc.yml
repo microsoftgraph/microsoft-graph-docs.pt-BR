@@ -159,7 +159,7 @@ items:
         href: /graph/toolkit/overview?context=graph/api/1.0
       - name: Introdução
         items:
-          - name: Visão Geral
+          - name: Visão geral
             href: /graph/toolkit/get-started/overview?context=graph/api/1.0
           - name: /graph/toolkit para React
             href: /graph/toolkit/get-started/mgt-react?context=graph/api/1.0
@@ -721,7 +721,7 @@ items:
                 href: api/driveitem-list-children.md
           - name: Propriedades estendidas
             items:
-              - name: Visão Geral
+              - name: Visão geral
                 href: resources/extended-properties-overview.md
               - name: Propriedades estendidas de valor único
                 items:
@@ -904,6 +904,8 @@ items:
                     href: api/serviceprincipal-addkey.md
                   - name: Remover chave
                     href: api/serviceprincipal-removekey.md
+                  - name: Adicionar certificado de assinatura de token
+                    href: api/serviceprincipal-addtokensigningcertificate.md
               - name: Concessões de permissão delegadas
                 items:
                   - name: List
@@ -1181,7 +1183,7 @@ items:
                 href: api/outlookcategory-delete.md
           - name: Propriedades estendidas
             items:
-              - name: Visão Geral
+              - name: Visão geral
                 href: resources/extended-properties-overview.md
               - name: Propriedades estendidas de valor único
                 items:
@@ -1350,7 +1352,7 @@ items:
       - name: Conformidade
         displayName: 'Compliance API, Microsoft Graph Compliance API'
         items:
-          - name: Visão Geral
+          - name: Visão geral
             href: resources/complianceapioverview.md
           - name: Solicitação de direitos do sujeito
             items:
@@ -5699,7 +5701,7 @@ items:
                 href: api/outlookcategory-delete.md
           - name: Propriedades estendidas
             items:
-              - name: Visão Geral
+              - name: Visão geral
                 href: resources/extended-properties-overview.md
               - name: Propriedades estendidas de valor único
                 items:
@@ -5721,7 +5723,7 @@ items:
         items:
           - name: Relatórios de atividade do Azure AD
             items:
-              - name: Visão Geral
+              - name: Visão geral
                 href: resources/azure-ad-auditlog-overview.md
               - name: Auditoria de diretório
                 href: resources/directoryaudit.md
@@ -5947,7 +5949,7 @@ items:
         items:
           - name: Consulta
             items:
-              - name: Visão Geral
+              - name: Visão geral
                 href: resources/search-api-overview.md
               - name: Tipo de solicitação de pesquisa
                 href: resources/searchrequest.md
@@ -5957,7 +5959,7 @@ items:
                 href: api/search-query.md
           - name: Index
             items:
-              - name: Visão Geral
+              - name: Visão geral
                 href: resources/indexing-api-overview.md
               - name: Conexão externa
                 items:
@@ -6033,7 +6035,7 @@ items:
             items:
               - name: Avaliação de ameaças
                 items:
-                  - name: Visão Geral
+                  - name: Visão geral
                     href: resources/threatassessment-api-overview.md
                   - name: Solicitação de avaliação de ameaças
                     href: resources/threatassessmentrequest.md
@@ -6072,7 +6074,7 @@ items:
       - name: Sites e listas
         displayName: 'SharePoint, OneDrive, OneDrive for Business, OneDrive business, OneDrive personal'
         items:
-          - name: Visão Geral
+          - name: Visão geral
             href: resources/sharepoint.md
           - name: Sites
             href: resources/site.md

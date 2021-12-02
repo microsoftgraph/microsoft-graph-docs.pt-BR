@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 doc_type: apiPageType
 ms.prod: identity-and-sign-in
 author: psignoret
-ms.openlocfilehash: 372e91d2f1f94a937ab9f9bff6433add772d9706
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: 95a9b171fc77b3af657cb8a256c9e9f0683cc66a
+ms.sourcegitcommit: 3e2239e60b6dc53997b7d4356a20fc3d365d6238
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "60985735"
+ms.lasthandoff: 12/02/2021
+ms.locfileid: "61266205"
 ---
 # <a name="list-includes-collection-of-permissiongrantpolicy"></a>Lista inclui coleção de permissionGrantPolicy
 
@@ -122,7 +122,8 @@ Content-type: application/json
       "clientApplicationIds": [ "all" ],
       "clientApplicationTenantIds": [ "all" ],
       "clientApplicationPublisherIds": [ "all" ],
-      "clientApplicationsFromVerifiedPublisherOnly": false
+      "clientApplicationsFromVerifiedPublisherOnly": false,
+      "certifiedClientApplicationsOnly": false
     },
     {
       "id": "60461179-740e-4d8b-9e00-1456a338c44b",
@@ -133,7 +134,8 @@ Content-type: application/json
       "clientApplicationIds": [ "all" ],
       "clientApplicationTenantIds": [ "all" ],
       "clientApplicationPublisherIds": [ "all" ],
-      "clientApplicationsFromVerifiedPublisherOnly": false
+      "clientApplicationsFromVerifiedPublisherOnly": false,
+      "certifiedClientApplicationsOnly": false
     }
   ]
 }

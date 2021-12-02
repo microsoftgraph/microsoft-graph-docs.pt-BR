@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 doc_type: apiPageType
 ms.prod: identity-and-sign-in
 author: psignoret
-ms.openlocfilehash: 963fb9c2c4ef7b22da2f04526f2c84c66b60af0f
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: d55cb512f7553372f1c0f9663b31af7c6d7134a2
+ms.sourcegitcommit: 3e2239e60b6dc53997b7d4356a20fc3d365d6238
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "60984370"
+ms.lasthandoff: 12/02/2021
+ms.locfileid: "61266163"
 ---
 # <a name="list-excludes-collection-of-permissiongrantpolicy"></a>Lista exclui coleção de permissionGrantPolicy
 
@@ -57,7 +57,7 @@ Se tiver êxito, este método retornará um código de resposta e uma `200 OK` c
 
 ### <a name="request"></a>Solicitação
 
-A seguir, um exemplo da solicitação para recuperar os conjuntos de condições **de exclusão** da política de concessão de permissão interna `microsoft-application-admin` . Essa política de concessão de permissão inclui todas as permissões delegadas e todas as permissões de aplicativo excluindo permissões de aplicativo para o Microsoft Graph e permissões de aplicativo para o Azure AD Graph.
+A seguir, um exemplo da solicitação para recuperar os conjuntos de condições **de exclusão** da política interna de concessão de permissão `microsoft-application-admin` . Essa política de concessão de permissão inclui todas as permissões delegadas e todas as permissões de aplicativo, excluindo permissões de aplicativo para o Microsoft Graph e permissões de aplicativo para Azure Active Directory Graph.
 
 
 
