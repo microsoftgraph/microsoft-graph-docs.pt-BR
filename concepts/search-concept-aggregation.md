@@ -1,29 +1,32 @@
 ---
-title: Usar a API Pesquisa da Microsoft no Microsoft Graph refinar consultas com agregação
+title: Use a API Pesquisa da Microsoft no Microsoft Graph refinar consultas com agregação
 description: Você pode usar a API Pesquisa da Microsoft para recuperar agregações
 author: nmoreau
 ms.localizationpriority: medium
 ms.prod: search
-ms.openlocfilehash: 83f7b347739719a4100afb0cbecfb3009c454fbc
-ms.sourcegitcommit: 08e9b0bac39c1b1d2c8a79539d24aaa93364baf2
+ms.openlocfilehash: 49e3739985f2a715449ff28c1183d0427543b2c5
+ms.sourcegitcommit: b16e230f4347f23d8e1bda0681daa93025a39a6d
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/24/2021
-ms.locfileid: "59763978"
+ms.lasthandoff: 12/03/2021
+ms.locfileid: "61285081"
 ---
-# <a name="refine-search-results-using-aggregations"></a>Refinar resultados de pesquisa usando agregação
+# <a name="use-the-microsoft-search-api-in-microsoft-graph-to-refine-queries-with-aggregations"></a>Use a API Pesquisa da Microsoft no Microsoft Graph refinar consultas com agregação
 
-Refine os resultados da pesquisa e mostre sua distribuição no índice.
+Você pode usar a API Pesquisa da Microsoft no Microsoft Graph refinar os resultados da pesquisa e mostrar sua distribuição no índice. 
+
+Para refinar os resultados, na [solicitação de pesquisa,](/graph/api/resources/searchRequest?view=graph-rest-beta&preserve-view=true)especifique [a agregaçãoOption](/graph/api/resources/aggregationOption?view=graph-rest-beta&preserve-view=true). Cada **aggregationOption** especifica a propriedade na qual a agregação deve ser calculada e o número de [itens searchBucket](/graph/api/resources/searchBucket?view=graph-rest-beta&preserve-view=true) a serem retornados na resposta.
 
 ## <a name="example-1-request-aggregations-by-string-fields"></a>Exemplo 1: Solicitar agregação por campos de cadeia de caracteres
 
-O exemplo a seguir pesquisa **recursos listItem** e agrega resultados por seu tipo de arquivo e classe de conteúdo, ambos são valores de cadeia de caracteres.
+O exemplo a seguir pesquisa **recursos listItem** e agrega resultados por seu tipo de arquivo, classe de conteúdo e última vez modificada, todos eles são valores de cadeia de caracteres.
 
 A resposta inclui dois [objetos searchBucket](/graph/api/resources/searchbucket?view=graph-rest-beta&preserve-view=true) para as duas agregação:
-- A **propriedade** key especifica o valor real (por ou ) para os objetos `FileType` `contentclass` **listItem** correspondentes que são agregados no mesmo bucket por esse valor.
+- A **propriedade** key especifica o valor real (por , ou ) para os objetos `fileType` `contentclass` `lastModifiedTime` **listItem** correspondentes que são agregados no mesmo bucket por esse valor.
 - A **propriedade count** especifica o número de tais objetos agregados no mesmo bucket. Observe que esse número é uma aproximação do número de combinações e não fornecerá um número exato de combinações.
 - Buckets de resultados agregados por tipo de arquivo são classificação por contagem em ordem decrescente. Neste exemplo, há 3 buckets para 3 tipos de arquivo: `docx` `xlsx` , e `pptx` .
 - Buckets de resultados agregados por classe de conteúdo são classificação pelo valor de cadeia de caracteres da classe de conteúdo em ordem decrescente. Neste exemplo, há apenas um bucket com todos os objetos correspondentes compartilhando a mesma classe de conteúdo, `STS_ListItem_DocumentLibrary` .
+- Buckets de resultados agregados por lastModifiedTime são classificação pelo valor de cadeia de caracteres de lastModifiedTime em ordem decrescente. Este exemplo inclui três buckets: `Before 2021-09-01T09:08:19.6224752Z` , `From 2021-09-01T09:08:19.6224752Z up to 2021-11-09T09:08:19.6224752Z` e `2021-11-09T09:08:19.6224752Z or later` .
 
 ### <a name="request"></a>Solicitação
 
@@ -44,7 +47,7 @@ Content-Type: application/json
       "size": 25,
       "aggregations": [
           {
-              "field": "FileType",
+              "field": "fileType",
               "size": 20,
               "bucketDefinition": {
                   "sortBy": "count",
@@ -59,6 +62,27 @@ Content-Type: application/json
                   "sortBy": "keyAsString",
                   "isDescending": "true",
                   "minimumCount": 0
+              }
+          },
+          {
+              "field": "lastModifiedTime",
+              "size": 2,
+              "bucketDefinition": {
+                  "sortBy": "KeyAsString",
+                  "isDescending": "true",
+                  "minimumCount": 0,
+                  "ranges": [
+                      {
+                          "to": "2021-09-01T09:08:19.6224752Z"
+                      },
+                      {
+                          "from": "2021-09-01T09:08:19.6224752Z",
+                          "to": "2021-11-09T09:08:19.6224752Z"
+                      },
+                      {
+                          "from": "2021-11-09T09:08:19.6224752Z"
+                      }
+                ]
               }
           }
       ]
@@ -86,7 +110,7 @@ Content-type: application/json
             "aggregations": [
                 {
                     "@odata.type": "#microsoft.substrateSearch.searchAggregation",
-                    "field": "FileType",
+                    "field": "fileType",
                     "buckets": [
                         {
                             "@odata.type": "#microsoft.substrateSearch.searchBucket",
@@ -119,6 +143,27 @@ Content-type: application/json
                             "aggregationFilterToken": "\"ǂǂ5354535f4c6973744974656d5f446f63756d656e744c696272617279\""
                         }
                     ]
+                },
+                {
+                    "@odata.type": "#microsoft.substrateSearch.searchAggregation",
+                    "field": "lastModifiedTime",
+                    "buckets": [
+                        {
+                            "key": "Before 2021-09-01T09:08:19.6224752Z",
+                            "count": 5,
+                            "aggregationFilterToken": "range(min, 2021-09-01T09:08:19.6224752Z)"
+                        },
+                        {
+                            "key": "From 2021-09-01T09:08:19.6224752Z up to 2021-11-09T09:08:19.6224752Z",
+                            "count": 3,
+                            "aggregationFilterToken": "range(2021-09-01T09:08:19.6224752Z, 2021-11-09T09:08:19.6224752Z)"
+                        },
+                        {
+                            "key": "2021-11-09T09:08:19.6224752Z or later",
+                            "count": 1,
+                            "aggregationFilterToken": "range(2021-11-09T09:08:19.6224752Z, max, to=\"le\")"
+                        }
+                    ]
                 }
             ]
         }
@@ -128,9 +173,12 @@ Content-type: application/json
 
 ## <a name="example-2-apply-an-aggregation-filter-based-on-a-previous-request"></a>Exemplo 2: aplicar um filtro de agregação com base em uma solicitação anterior
 
-Neste exemplo, aplicamos um filtro de agregação baseado na **agregaçãoFilterToken** retornada como o `docx` campo no exemplo `FileType` 1.
+Este exemplo aplica um filtro de agregação que se baseia na **agregaçãoFilterToken** retornada como o campo e como o `docx` campo no exemplo `fileType` `From 2021-09-01T09:08:19.6224752Z up to 2021-11-09T09:08:19.6224752Z` `lastModifiedTime` 1.
 
 O valor da cadeia de caracteres atribuído à propriedade **aggregationFilters** segue o formato **"{field}: \\ "{aggregationFilterToken} \\ ""**. Se vários valores para o mesmo filtro são necessários, o valor de cadeia de caracteres atribuído à propriedade **aggregationFilters** deve seguir esse formato : **"{field}:or( \\ "{aggregationFilterToken1} \\ ", \\ "{aggregationFilterToken2} \\ ")"**.
+
+O valor da cadeia de caracteres de formatação de data/hora atribuída à propriedade **aggregationFilters** segue o formato **"{field}:{aggregationFilterToken}"**.
+
 
 ### <a name="request"></a>Solicitação
 
@@ -151,7 +199,7 @@ Content-Type: application/json
       "size": 20,
       "aggregations": [
           {
-              "field": "FileType",
+              "field": "fileType",
               "size": 10,
               "bucketDefinition": {
                   "sortBy": "count",
@@ -161,7 +209,8 @@ Content-Type: application/json
           }
       ],
       "aggregationFilters": [
-        "FileType:\"ǂǂ68746d6c\""
+        "fileType:\"ǂǂ68746d6c\"",
+        "lastModifiedTime:range(2021-09-01T09:08:19.6224752Z, 2021-11-09T09:08:19.6224752Z)"
       ]
     }
   ]
@@ -185,19 +234,40 @@ Content-type: application/json
             "total": 69960,
             "moreResultsAvailable": true,
             "aggregations": [
-            {
-                "@odata.type": "#microsoft.substrateSearch.searchAggregation",
-                "field": "FileType",
-                "buckets": [
-                    {
-                        "@odata.type": "#microsoft.substrateSearch.searchBucket",
-                        "key": "html",
-                        "count": 69960,
-                        "aggregationFilterToken": "\"ǂǂ68746d6c\""
-                    }
-                ]
-            }
-        ]
+                {
+                    "@odata.type": "#microsoft.substrateSearch.searchAggregation",
+                    "field": "fileType",
+                    "buckets": [
+                        {
+                            "@odata.type": "#microsoft.substrateSearch.searchBucket",
+                            "key": "html",
+                            "count": 69960,
+                            "aggregationFilterToken": "\"ǂǂ68746d6c\""
+                        }
+                    ]
+                },
+                {
+                    "@odata.type": "#microsoft.substrateSearch.searchAggregation",
+                    "field": "lastModifiedTime",
+                    "buckets": [
+                        {
+                            "key": "Before 2021-09-01T09:08:19.6224752Z",
+                            "count": 0,
+                            "aggregationFilterToken": "range(min, 2021-09-01T09:08:19.6224752Z)"
+                        },
+                        {
+                            "key": "From 2021-09-01T09:08:19.6224752Z up to 2021-11-09T09:08:19.6224752Z",
+                            "count": 69960,
+                            "aggregationFilterToken": "range(2021-09-01T09:08:19.6224752Z, 2021-11-09T09:08:19.6224752Z)"
+                        },
+                        {
+                            "key": "2021-11-09T09:08:19.6224752Z or later",
+                            "count": 0,
+                            "aggregationFilterToken": "range(2021-11-09T09:08:19.6224752Z, max, to=\"le\")"
+                        }
+                    ]
+                }
+            ]
         }
     ]
 }
