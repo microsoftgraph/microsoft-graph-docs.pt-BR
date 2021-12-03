@@ -1,11 +1,11 @@
 ---
 description: Arquivo gerado automaticamente. NÃO MODIFICAR
-ms.openlocfilehash: 6689c785d583c57ce0eaeb32c6c2b924792500e0
-ms.sourcegitcommit: 2456cf3c4117b88afefef139593796a2f919e7cc
+ms.openlocfilehash: 5e6ff2201dac02753e319d47f0ca242578fef33d
+ms.sourcegitcommit: b16e230f4347f23d8e1bda0681daa93025a39a6d
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/18/2021
-ms.locfileid: "61086458"
+ms.lasthandoff: 12/03/2021
+ms.locfileid: "61286444"
 ---
 ```go
 
@@ -13,7 +13,7 @@ ms.locfileid: "61086458"
 graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
 educationSynchronizationProfileId := "educationSynchronizationProfile-id"
-result, err := graphClient.Education().SynchronizationProfilesById(&educationSynchronizationProfileId).ProfileStatus().Get(options)
+result, err := graphClient.Education().SynchronizationProfilesById(&educationSynchronizationProfileId).ProfileStatus().Get(nil)
 
 
 ```
