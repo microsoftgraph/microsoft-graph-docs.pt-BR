@@ -1,18 +1,18 @@
 ---
 description: Arquivo gerado automaticamente. NÃO MODIFICAR
-ms.openlocfilehash: b297814dc5783a8efe115ed0cb78bc82038e834b
-ms.sourcegitcommit: 2456cf3c4117b88afefef139593796a2f919e7cc
+ms.openlocfilehash: 8f9b0829629bb668f8dbede0af8d75b0bf6e01e1
+ms.sourcegitcommit: b16e230f4347f23d8e1bda0681daa93025a39a6d
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/18/2021
-ms.locfileid: "61084256"
+ms.lasthandoff: 12/03/2021
+ms.locfileid: "61287325"
 ---
 ```go
 
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
 graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
-result, err := graphClient.Me().RegisteredDevices().Get(options)
+result, err := graphClient.Me().RegisteredDevices().Get(nil)
 
 
 ```

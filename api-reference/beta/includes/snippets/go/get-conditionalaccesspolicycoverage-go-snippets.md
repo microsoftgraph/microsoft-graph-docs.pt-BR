@@ -1,11 +1,11 @@
 ---
 description: Arquivo gerado automaticamente. NÃO MODIFICAR
-ms.openlocfilehash: 126e5b2442e79be08abd4356e280371fe7f79727
-ms.sourcegitcommit: 2456cf3c4117b88afefef139593796a2f919e7cc
+ms.openlocfilehash: c174975706b123c22b98056b03ca8f4d1d3660c3
+ms.sourcegitcommit: b16e230f4347f23d8e1bda0681daa93025a39a6d
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/18/2021
-ms.locfileid: "61095768"
+ms.lasthandoff: 12/03/2021
+ms.locfileid: "61286930"
 ---
 ```go
 
@@ -13,7 +13,7 @@ ms.locfileid: "61095768"
 graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
 conditionalAccessPolicyCoverageId := "conditionalAccessPolicyCoverage-id"
-result, err := graphClient.TenantRelationships().ManagedTenants().ConditionalAccessPolicyCoveragesById(&conditionalAccessPolicyCoverageId).Get(options)
+result, err := graphClient.TenantRelationships().ManagedTenants().ConditionalAccessPolicyCoveragesById(&conditionalAccessPolicyCoverageId).Get(nil)
 
 
 ```

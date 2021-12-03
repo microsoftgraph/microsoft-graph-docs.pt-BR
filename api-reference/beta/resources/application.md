@@ -5,12 +5,12 @@ ms.localizationpriority: high
 author: sureshja
 ms.prod: applications
 doc_type: resourcePageType
-ms.openlocfilehash: f60e7f8a521b0fb647e8acf2095fc9cde588ef6b
-ms.sourcegitcommit: 3e2239e60b6dc53997b7d4356a20fc3d365d6238
+ms.openlocfilehash: d0b36ecc2951744684c6ae24dbb9d19111c00ff8
+ms.sourcegitcommit: b16e230f4347f23d8e1bda0681daa93025a39a6d
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/02/2021
-ms.locfileid: "61266065"
+ms.lasthandoff: 12/03/2021
+ms.locfileid: "61285186"
 ---
 # <a name="application-resource-type"></a>tipo de recurso do aplicativo
 
@@ -87,7 +87,7 @@ Esse recurso tem suporte para o uso da [consulta delta](/graph/delta-query-overv
 | createdDateTime | DateTimeOffset | A data e a hora em que o aplicativo foi registrado. O tipo DateTimeOffset representa informações de data e hora usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite UTC em 1º de janeiro de 2014 é `2014-01-01T00:00:00Z`. Somente leitura. <br><br> Suporta `$filter` (`eq`, `ne`, `not`, `ge`, `le`, `in`, e `eq` em `null` valores) e `$orderBy`. |
 |defaultRedirectUri|String|O URI de redirecionamento padrão. Se especificado e não houver nenhum URI de redirecionamento explícito na solicitação de entrada para fluxos SAML e OIDC, o Azure AD enviará o token para esse URI de redirecionamento. O Azure AD também envia o token para esse URI padrão no logon único iniciado pelo IdP do SAML. O valor deve corresponder a um dos URIs de redirecionamento configurados para o aplicativo.|
 | deletedDateTime | DateTimeOffset | A data e a hora em que o aplicativo foi excluído. O tipo DateTimeOffset representa informações de data e hora usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite UTC em 1º de janeiro de 2014 é `2014-01-01T00:00:00Z`. Somente leitura. |
-| description | String | Uma descrição opcional do aplicativo. <br><br>Devolvido por padrão. Suporta `$filter` (`eq`, `ne`, `not`, `ge`, `le`, `startsWith`) e `$search`. |
+| description | Cadeia de caracteres | Campo de texto livre para fornecer uma descrição do objeto de aplicativo aos usuários finais. O tamanho máximo permitido é de 1.024 caracteres. <br><br>Devolvido por padrão. Suporta `$filter` (`eq`, `ne`, `not`, `ge`, `le`, `startsWith`) e `$search`. |
 | disabledByMicrosoftStatus | Cadeia de caracteres | Especifica se a Microsoft desabilitou o aplicativo registrado. Os valores possíveis são: `null`(valor padrão), `NotDisabled` e (os motivos podem incluir atividades suspeitas, abusivas ou mal-intencionadas ou uma violação do `DisabledDueToViolationOfServicesAgreement` Contrato de Serviços Microsoft). <br><br> Suporta `$filter` (`eq`, `ne`, `not`). |
 | displayName | String | O nome de exibição do aplicativo. Suporta `$filter` (`eq`, `ne`, `not`, `ge`, `le`, `in`, `startsWith`, e `eq` em `null` valores), `$search`, e `$orderBy`. |
 | groupMembershipClaims | Cadeia de caracteres | Configura a declaração `groups` emitida em um usuário ou token de acesso OAuth 2.0 que o aplicativo espera. Para definir esse atributo, use um dos seguintes valores de cadeia de caracteres: `None`, (para grupos de segurança e funções do `SecurityGroup` Azure AD), (isso obtém todos os grupos de segurança, grupos de distribuição e funções de diretório do Azure AD dos qual o usuário conectado é `All` membro). |
