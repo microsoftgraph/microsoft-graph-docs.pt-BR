@@ -5,12 +5,12 @@ author: sureshja
 ms.localizationpriority: high
 ms.prod: applications
 doc_type: apiPageType
-ms.openlocfilehash: eaedadcfcef0e54461e01e8366c4165cbbe4c401
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: 4fdfc1065e80b33ec5bc2b427881e5264f120bbf
+ms.sourcegitcommit: 3e2239e60b6dc53997b7d4356a20fc3d365d6238
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "60990868"
+ms.lasthandoff: 12/02/2021
+ms.locfileid: "61266114"
 ---
 # <a name="list-applications"></a>Listar aplicativos
 
@@ -137,6 +137,9 @@ Content-type: application/json
 
 Este é um exemplo de solicitação. Esta solicitação exige o cabeçalho **ConsistencyLevel** definido como `eventual` porque `$count` está na solicitação. Para obter mais informações sobre o uso de **ConsistencyLevel** e `$count`, consulte [Funcionalidades avançadas de consulta nos objetos de diretório do Microsoft Azure AD](/graph/aad-advanced-queries).
 
+
+>**Observação:** os parâmetros de consulta `$count` e `$search` não estão disponíveis atualmente nos locatários do Azure Active Directory B2C.
+
 <!-- {
   "blockType": "ignored",
   "name": "get_count_only"
@@ -152,9 +155,7 @@ Este é um exemplo de resposta.
 
 <!-- {
   "blockType": "response",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.application",
-  "isCollection": true
+  "truncated": true
 } -->
 ```http
 HTTP/1.1 200 OK
@@ -170,6 +171,7 @@ Content-type: text/plain
 
 Este é um exemplo de solicitação. Esta solicitação exige o cabeçalho **ConsistencyLevel** definido como `eventual` e a cadeia de caracteres de consulta `$count=true` porque a solicitação tem os parâmetros de consulta `$orderBy` e `$filter`. Para obter mais informações sobre o uso de **ConsistencyLevel** e `$count`, consulte [Funcionalidades avançadas de consulta nos objetos de diretório do Microsoft Azure AD](/graph/aad-advanced-queries).
 
+>**Observação:** os parâmetros de consulta `$count` e `$search` não estão disponíveis atualmente nos locatários do Azure Active Directory B2C.
 
 # <a name="http"></a>[HTTP](#tab/http)
 <!-- {
@@ -239,6 +241,7 @@ Content-type: application/json
 
 Este é um exemplo de solicitação. Essa solicitação exige o cabeçalho **ConsistencyLevel** definido como `eventual`, pois a solicitação tem `$search` e a cadeia de caracteres de consulta `$count=true`. Para obter mais informações sobre o uso de **ConsistencyLevel** e `$count`, consulte [Funcionalidades avançadas de consulta nos objetos de diretório do Microsoft Azure AD](/graph/aad-advanced-queries).
 
+>**Observação:** os parâmetros de consulta `$count` e `$search` não estão disponíveis atualmente nos locatários do Azure Active Directory B2C.
 
 # <a name="http"></a>[HTTP](#tab/http)
 <!-- {

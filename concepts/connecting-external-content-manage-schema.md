@@ -1,20 +1,20 @@
 ---
-title: Registrar o esquema da conexão do Microsoft Graph
+title: Registrar e atualizar o esquema para a Microsoft Graph conexão
 description: Aprenda a usar o Microsoft Graph para registrar o esquema da conexão do Microsoft Graph
 ms.localizationpriority: high
 author: mecampos
 doc_type: conceptualPageType
 ms.prod: search
-ms.openlocfilehash: 2511ebd1b5c37910316464f5b27a1a795478000a
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: c9a90807ae45184d6ae86d9ca9a5a6f9161f38b5
+ms.sourcegitcommit: 3e2239e60b6dc53997b7d4356a20fc3d365d6238
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59139251"
+ms.lasthandoff: 12/02/2021
+ms.locfileid: "61266170"
 ---
 <!---<author of this doc: rsamai>--->
 
-# <a name="register-schema-for-the-microsoft-graph-connection"></a>Registrar o esquema da conexão do Microsoft Graph
+# <a name="register-and-update-schema-for-the-microsoft-graph-connection"></a>Registrar e atualizar o esquema para a Microsoft Graph conexão
 
 O [esquema](/graph/api/resources/schema?view=graph-rest-beta&preserve-view=true) de conexão determina como o seu conteúdo será usado em várias experiências do Microsoft Graph. O esquema é uma lista simples de todas as propriedades que você planeja adicionar à conexão, juntamente com seus atributos, rótulos e aliases. Você deve registrá-lo antes de adicionar itens na conexão.
 
@@ -44,9 +44,9 @@ A tabela a seguir representa um exemplo de um esquema possível para um conector
 Se uma propriedade puder ser pesquisada, seu valor será adicionado ao índice de texto completo. Quando um usuário realiza uma pesquisa, retornamos resultados se houver uma ocorrência de pesquisa em um dos campos pesquisáveis ou seu [conteúdo](connecting-external-content-manage-items.md#content).
 
 <!-- markdownlint-disable MD036 -->
-![Uma pesquisa por "design" exibindo resultados de acertos contra conteúdo e propriedades](./images/connectors-images/connecting-external-content-manage-items-schema-1.svg)
+![Uma pesquisa por "design" exibindo resultados de ocorrências em relação ao título e conteúdo da propriedade](./images/connectors-images/connecting-external-content-manage-items-schema-1.png)
 
-*Uma pesquisa por "design" exibindo resultados de acertos contra conteúdo e propriedades (`title`, `tags`) e conteúdo*
+*Uma pesquisa por "design" exibindo resultados de ocorrências contra a propriedade (`title`) e conteúdo.*
 
 ### <a name="queryable"></a>Consultável
 
@@ -57,19 +57,19 @@ Se uma propriedade é consultável, você pode consultá-la usando a linguagem d
 
 ![Uma pesquisa por "search ba*" exibindo os resultados que correspondem a esse prefixo](./images/connectors-images/connecting-external-content-manage-items-schema-2.svg)
 
-*Uma pesquisa por "search ba"* exibindo os resultados que correspondem a esse prefixo*
+*Uma pesquisa por "barra de pesquisa*" exibindo resultados que correspondem a este prefixo.*
 
 ![Uma pesquisa por "tags:design" fazendo o escopo dos resultados em itens com "design" na propriedade categorias](./images/connectors-images/connecting-external-content-manage-items-schema-3.svg)
 
-*Uma pesquisa por "tags:design" fazendo o escopo dos resultados em itens com "design" na propriedade categorias*
+*Uma pesquisa por "marcas: design" definindo o escopo dos resultados para itens com "design" na propriedade marcas.*
 
 ### <a name="retrievable"></a>Recuperável
 
-Se uma propriedade for recuperável, seu valor poderá ser retornado nos resultados da pesquisa. As propriedades que você deseja adicionar ao modelo de exibição ou que são retornadas da consulta e sejam relevantes para os resultados da pesquisa devem ser recuperáveis. Marcar propriedades grandes, como `editHistory`, ou muitas propriedades como recuperáveis, aumentará a latência da pesquisa. Seja seletivo e escolha propriedades relevantes.
+Se uma propriedade for recuperável, seu valor poderá ser retornado nos resultados da pesquisa. As propriedades que você deseja adicionar ao modelo de exibição ou que são retornadas da consulta e sejam relevantes para os resultados da pesquisa devem ser recuperáveis. Marcar propriedades grandes ou demais como recuperáveis aumentará a latência de pesquisa. Seja seletivo e escolha propriedades relevantes.
 
 ![Um conjunto de propriedades recuperáveis processadas como resultado](./images/connectors-images/connecting-external-content-manage-schema-4.svg)
 
-*Um conjunto de propriedades recuperáveis (`title`, `lastEditedBy` etc.) processadas como resultado*
+*Um conjunto de propriedades recuperáveis (`title` e `lastEditedBy`) renderizadas como resultado.*
 
 ### <a name="refinable"></a>Refinável
 
@@ -77,30 +77,44 @@ Se uma propriedade for refinável, um administrador poderá configurá-la como u
 
 ![Refinar resultados por categorias, uma propriedade refinável](./images/connectors-images/connecting-external-content-manage-schema-5.svg)
 
-*Refinar resultados por `tags`, uma propriedade refinável*
+*Refinar resultados por `tags`, uma propriedade refináveis.*
 
-## <a name="labels"></a>Rótulos
+## <a name="semantic-labels"></a>Rótulos semânticos
 
-Um rótulo é uma categoria conhecida publicada pela Microsoft que você pode adicionar a uma propriedade no seu esquema. Adicionar um rótulo ajuda vários produtos da Microsoft a entender a propriedade e a oferecer uma melhor experiência.
+Um rótulo semântico é uma marca conhecida publicada pela Microsoft que você pode adicionar em relação a uma propriedade em seu esquema. Adicionar um rótulo semântico ajuda vários produtos da Microsoft a entender a propriedade e fornecer uma experiência melhor.
+
+Os rótulos semânticos fornecem uma abordagem independente de domínio para atribuir propriedades de diferentes domínios de conteúdo a um conjunto de classes conhecidas. Eles encontram aplicativos em muitas experiências de conteúdo diferentes e fornecem suporte automatizado para tarefas como:
+
+* Integração de dados em experiências heterogêneas
+* Criando grafos de conhecimento comuns (por exemplo, Tópicos do Viva)
+* Modelos padrão para experiências do usuário
+
+Você pode atribuir rótulos semânticos às propriedades de origem **atribuir rótulos de** página. Os rótulos fornecem significado semântico e permitem integrar os dados do conector Microsoft 365 experiências.  
 
 | Rótulo                 | Descrição                                                                          |
 |---------------------- |------------------------------------------------------------------------------------- |
-| title                 | O título do item que você deseja mostrar na pesquisa e outras experiências              |
-| url                   | A URL de destino do item na fonte de dados                                        |
-| createdBy             | O nome da pessoa que criou o item na fonte de dados                           |
-| lastModifiedBy        | O nome da pessoa que editou o item mais recentemente na fonte de dados              |
-| autores               | Nome de todas as pessoas que participaram/trabalharam no item na fonte de dados  |
-| createdDateTime       | Data e hora em que o item foi criado na fonte de dados                             |
-| lastModifiedDateTime  | Data e hora em que o item foi modificado pela última vez na fonte de dados                            |
-| fileName              | No caso de um arquivo, o nome do arquivo na fonte de dados                           |
-| FileExtension         | No caso de um arquivo, o nome da extensão do arquivo na fonte de dados                      |
+| title                 | O título do item que você deseja mostrar na pesquisa e em outras experiências.           |
+| url                   | A URL de destino do item na fonte de dados.                                        |
+| createdBy             | Nome da pessoa que criou o item na fonte de dados.                           |
+| lastModifiedBy        | Nome da pessoa que editou o item mais recentemente na fonte de dados.              |
+| autores               | Nome de todas as pessoas que participaram/colaboraram no item na fonte de dados.  |
+| createdDateTime       | Data e hora em que o item foi criado na fonte de dados.                             |
+| lastModifiedDateTime  | Data e hora em que o item foi modificado pela última vez na fonte de dados.                            |
+| fileName              | No caso de um arquivo, o nome do arquivo na fonte de dados.                           |
+| FileExtension         | No caso de um arquivo, a extensão do arquivo na fonte de dados.                     |
+| iconUrl               | A URL de um ícone.|
+| containerName         | Nome do contêiner.|
+| containerUrl          | A URL do contêiner.|
 
-Por exemplo, a propriedade de conexão *lastEditedBy* tem o mesmo significado que o rótulo da Microsoft *lastModifiedBy*.
+Por exemplo, a propriedade de conexão **lastEditedBy** tem o mesmo significado que o rótulo da Microsoft *lastModifiedBy*.
 
-Adicione quantas etiquetas você puder, mas certifique-se de que elas sejam mapeadas precisamente para as propriedades. Não adicione um rótulo a uma propriedade se não fizer sentido. Os mapeamentos incorretos deterioram a experiência.
+Adicione quantas etiquetas você puder, mas certifique-se de que elas sejam mapeadas precisamente para as propriedades. Não adicione um rótulo a uma propriedade se não fizer sentido. Mapeamentos incorretos degradam a experiência.
 
 > [!IMPORTANT]
 > Todas as propriedades que você mapeia para rótulos devem ser recuperáveis.
+
+O rótulo **título** é o rótulo mais importante. Certifique-se de atribuir uma propriedade a esse rótulo para permitir que sua conexão participe da experiência do cluster de resultados.
+O mapeamento incorreto de rótulos prejudicará a experiência de pesquisa. Não há problema em alguns rótulos não ter uma propriedade atribuída a eles.
 
 ### <a name="relevance"></a>Relevância
 
@@ -146,9 +160,39 @@ Por fim, ao atribuir rótulos, certifique-se do seguinte:
 
 Os aliases são nomes amigáveis para as propriedades que você atribuir. Elas serão usadas em consultas e nas seleções em filtros de propriedade refináveis.
 
+## <a name="schema-update-capabilities"></a>Recursos de atualização de esquema
+
+Esta seção inclui informações sobre os recursos de atualização da API do [esquema](/graph/api/resources/schema?view=graph-rest-beta&preserve-view=true).
+
+> [!NOTE]
+> Recomendamos que você reingressar itens após uma atualização, para trazê-los para o esquema mais recente. Sem reingestão, o comportamento dos itens será inconsistente.
+
+### <a name="adding-a-property"></a>Adicionando uma propriedade
+
+Você pode adicionar uma propriedade ao seu esquema; fazer isso não requer reingestão, mas é recomendado.
+
+Ao adicionar uma propriedade, você pode incluir todos os atributos de pesquisa necessários.
+
+### <a name="addingremoving-a-search-capability"></a>Adicionando/removendo uma funcionalidade de pesquisa
+
+Você pode adicionar atributos de pesquisa específicos a uma propriedade, mas lembre-se de que não é possível adicionar um atributo de pesquisa de refinador como uma alteração de esquema. Além disso, não é possível usar atributos refináveis como recursos pesquisáveis.
+
+Adicionar um recurso de pesquisa requer reingestão.
+
+### <a name="addingremoving-an-alias"></a>Adicionando/removendo um alias
+
+Você pode adicionar ou remover aliases e usá-los para suas consultas de pesquisa.
+
+Considere que você não conseguirá remover o alias original de uma propriedade refinável que foi criada automaticamente pelo sistema.
+
+### <a name="addingremoving-a-semantic-label"></a>Adicionando/removendo um rótulo semântico
+
+Adicionar um rótulo semântico pode afetar experiências como Relevância e Tópicos do Viva.
+
 ## <a name="next-steps"></a>Próximas etapas
 
 - [Adicionar itens à conexão](./connecting-external-content-manage-items.md)
 - [Revisar a referência da API do conectores do Microsoft Graph](/graph/api/resources/indexing-api-overview?view=graph-rest-beta&preserve-view=true)
 - [Pesquisar tipos personalizados (externalItem)](search-concept-custom-types.md)
-- Baixe o [exemplo de conector de pesquisa](https://github.com/microsoftgraph/msgraph-search-connector-sample) no GitHub
+- [crie seu primeiro conector personalizado com o Microsoft Graph](/graph/connecting-external-content-build-quickstart&preserve-view=true)
+
