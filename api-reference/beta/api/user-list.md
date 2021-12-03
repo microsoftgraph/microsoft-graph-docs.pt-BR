@@ -5,12 +5,12 @@ author: jpettere
 ms.localizationpriority: high
 ms.prod: users
 doc_type: apiPageType
-ms.openlocfilehash: c240fdbd83c0ab45e74ffdd8779e07555b892894
-ms.sourcegitcommit: e1dd9860906e0b415fd376d70df1f928d1f3d29e
+ms.openlocfilehash: 473e016b749345b52b211f8519e79f6f3d6318b2
+ms.sourcegitcommit: 3e2239e60b6dc53997b7d4356a20fc3d365d6238
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/01/2021
-ms.locfileid: "61241685"
+ms.lasthandoff: 12/02/2021
+ms.locfileid: "61266345"
 ---
 # <a name="list-users"></a>Listar usuários
 
@@ -413,6 +413,8 @@ Content-type: application/json
 
 Este é um exemplo de solicitação. Esta solicitação exige o cabeçalho **ConsistencyLevel** definido como `eventual` porque `$count` está na solicitação. Para obter mais informações sobre o uso de **ConsistencyLevel** e `$count`, consulte [Funcionalidades avançadas de consulta nos objetos de diretório do Microsoft Azure AD](/graph/aad-advanced-queries).
 
+>**Observação:** os parâmetros de consulta `$count` e `$search` não estão disponíveis atualmente nos locatários do Azure Active Directory B2C.
+
 <!-- {
   "blockType": "ignored",
   "name": "get_count_only"
@@ -444,6 +446,8 @@ Content-type: text/plain
 #### <a name="request"></a>Solicitação
 
 Este é um exemplo de solicitação. Esta solicitação exige o cabeçalho **ConsistencyLevel** definido como `eventual` e a cadeia de caracteres de consulta `$count=true` porque a solicitação tem os parâmetros de consulta `$orderBy` e `$filter`. Para obter mais informações sobre o uso de **ConsistencyLevel** e `$count`, consulte [Funcionalidades avançadas de consulta nos objetos de diretório do Microsoft Azure AD](/graph/aad-advanced-queries).
+
+>**Observação:** os parâmetros de consulta `$count` e `$search` não estão disponíveis atualmente nos locatários do Azure Active Directory B2C.
 
 <!-- {
   "blockType": "ignored",
@@ -491,6 +495,7 @@ Content-type: application/json
 
 Este é um exemplo de solicitação. Esta solicitação exige o cabeçalho **ConsistencyLevel** definido como `eventual` e a cadeia de consulta `$count=true` porque a solicitação tem os parâmetros de consulta `$orderBy` e `$filter`, e também usa o operador `endsWith`. Para obter mais informações sobre o uso de **ConsistencyLevel** e `$count`, consulte [Funcionalidades avançadas de consulta nos objetos de diretório do Microsoft Azure AD](/graph/aad-advanced-queries).
 
+>**Observação:** os parâmetros de consulta `$count` e `$search` não estão disponíveis atualmente nos locatários do Azure Active Directory B2C.
 
 # <a name="http"></a>[HTTP](#tab/http)
 <!-- {
@@ -562,6 +567,7 @@ Content-type: application/json
 
 Este é um exemplo de solicitação. Esta solicitação exige o cabeçalho **ConsistencyLevel** definido como `eventual` porque `$search` está na solicitação. Para obter mais informações sobre o uso de **ConsistencyLevel** e `$count`, consulte [Funcionalidades avançadas de consulta nos objetos de diretório do Microsoft Azure AD](/graph/aad-advanced-queries).
 
+>**Observação:** os parâmetros de consulta `$count` e `$search` não estão disponíveis atualmente nos locatários do Azure Active Directory B2C.
 
 # <a name="http"></a>[HTTP](#tab/http)
 <!-- {
@@ -632,6 +638,8 @@ Content-type: application/json
 
 Este é um exemplo de solicitação. Esta solicitação exige o cabeçalho **ConsistencyLevel** definido como `eventual` porque `$search` está na solicitação. Para obter mais informações sobre o uso de **ConsistencyLevel** e `$count`, consulte [Funcionalidades avançadas de consulta nos objetos de diretório do Microsoft Azure AD](/graph/aad-advanced-queries).
 
+>**Observação:** os parâmetros de consulta `$count` e `$search` não estão disponíveis atualmente nos locatários do Azure Active Directory B2C.
+
 <!-- {
   "blockType": "request",
   "name": "get_to_count"
@@ -685,6 +693,7 @@ Content-type: application/json
 
 Este é um exemplo de solicitação. Esta solicitação exige o cabeçalho **ConsistencyLevel** definido como `eventual` porque `$search` está na solicitação. Para obter mais informações sobre o uso de **ConsistencyLevel** e `$count`, consulte [Funcionalidades avançadas de consulta nos objetos de diretório do Microsoft Azure AD](/graph/aad-advanced-queries).
 
+>**Observação:** os parâmetros de consulta `$count` e `$search` não estão disponíveis atualmente nos locatários do Azure Active Directory B2C.
 
 # <a name="http"></a>[HTTP](#tab/http)
 <!-- {
