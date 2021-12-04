@@ -5,12 +5,12 @@ doc_type: enumPageType
 ms.localizationpriority: medium
 ms.prod: non-product-specific
 author: MSGraphDocsvTeam
-ms.openlocfilehash: 76b4c08fd3329d04613ea1bd0fd2c6c6d7a1d104
-ms.sourcegitcommit: e497ed9bb56400bdd2bb53d52ddf057d9966220b
+ms.openlocfilehash: 3190e107ed5b443f6a6d5944a124f3327353770e
+ms.sourcegitcommit: e75969aa44a1aab722ac44d09c37508ffbad8738
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/30/2021
-ms.locfileid: "61225984"
+ms.lasthandoff: 12/04/2021
+ms.locfileid: "61307598"
 ---
 # <a name="enum-values"></a>Valores denum
 
@@ -191,11 +191,11 @@ Namespace: microsoft.graph
 
 |Member|
 |:---|
-|Cadeia de Caracteres|
+|String|
 |Inteiro|
 |Referência|
-|Binário|
-|Booleano|
+|Binária|
+|Boolean|
 |DateTime|
 
 ### <a name="mutability-values"></a>valores de mutabilidade
@@ -653,37 +653,6 @@ Namespace: microsoft.graph
 |investigationsThreatIntelligenceSigninLinked|
 |maliciousIPAddressValidCredentialsBlockedIP|
 |unknownFutureValue|
-
-### <a name="risklevel-values"></a>valores riskLevel
-
-|Member|
-|:---|
-|low|
-|medium|
-|high|
-|hidden|
-|none|
-|unknownFutureValue|
-
-### <a name="riskstate-values"></a>valores riskState
-
-|Member|
-|:---|
-|none|
-|confirmedSafe|
-|remediado|
-|dismissed|
-|atRisk|
-|confirmedCompromised|
-|unknownFutureValue|
-
-### <a name="tokenissuertype-values"></a>Valores tokenIssuerType
-
-|Member|
-|:---|
-|AzureAD|
-|ADFederationServices|
-|UnknownFutureValue|
 
 ### <a name="usageauthmethod-values"></a>usageAuthMethod values
 
@@ -1630,7 +1599,7 @@ Enum para tipos de valor do Registro conforme definido pelos [tipos de valor do 
 | dwordLittleEndian | 3     | REG_DWORD_LITTLE_ENDIAN tipo de valor do Registro. |
 | dwordBigEndian    | 4     | REG_DWORD_BIG_ENDIAN tipo de valor do Registro.    |
 | expandSz          | 5     | REG_EXPAND_SZ tipo de valor do Registro.           |
-| link              | 6      | REG_LINK tipo de valor do Registro.                |
+| vínculo              | 6      | REG_LINK tipo de valor do Registro.                |
 | multiSz           | 7      | REG_MULTI_SZ tipo de valor do Registro.            |
 | none              | 8      | REG_NONE tipo de valor do Registro.                |
 | qword             | 9      | REG_QWORD tipo de valor do Registro.               |
@@ -1733,23 +1702,6 @@ Valores possíveis para tipos de conta de usuário (associação ao grupo), por 
 |confirmedCompromised|
 |unknownFutureValue|
 
-### <a name="riskdetail-values"></a>valores riskDetail
-
-|Member|
-|:---|
-|none|
-|adminGeneratedTemporaryPassword|
-|userPerformedSecuredPasswordChange|
-|userPerformedSecuredPasswordReset|
-|adminConfirmedSigninSafe|
-|aiConfirmedSigninSafe|
-|userPassedMFADrivenByRiskBasedPolicy|
-|adminDismissedAllRiskForUser|
-|adminConfirmedSigninCompromised|
-|adminConfirmedUserCompromised|
-|hidden|
-|unknownFutureValue|
-
 ### <a name="advancedconfigstate-values"></a>valores advancedConfigState
 
 |Member|
@@ -1779,26 +1731,6 @@ Valores possíveis para tipos de conta de usuário (associação ao grupo), por 
 |oneDriveBusiness|
 |oneDriveConsumer|
 |dropbox|
-
-### <a name="riskeventtype-values"></a>valores riskEventType
-
-|Member|
-|:---|
-|unlikelyTravel|
-|anonymizedIPAddress|
-|maliciousIPAddress|
-|unfamiliarFeatures|
-|malwareInfectedIPAddress|
-|suspiciousIPAddress|
-|leakedCredentials|
-|investigationsThreatIntelligence|
-|generic|
-|adminConfirmedUserCompromised|
-|mcasImpossibleTravel|
-|mcasSuspiciousInboxManipulationRules|
-|investigationsThreatIntelligenceSigninLinked|
-|maliciousIPAddressValidCredentialsBlockedIP|
-|unknownFutureValue|
 
 ### <a name="networktype-values"></a>valores networkType
 

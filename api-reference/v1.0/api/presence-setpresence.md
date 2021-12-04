@@ -5,12 +5,12 @@ author: jsandoval-msft
 ms.localizationpriority: medium
 doc_type: apiPageType
 ms.prod: cloud-communications
-ms.openlocfilehash: 3a811034419c0e9be0eca8ab123fce3a124178dd
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: 218dee5db32fbbe24bb59c61dfe31b785141ecd0
+ms.sourcegitcommit: e75969aa44a1aab722ac44d09c37508ffbad8738
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "60992616"
+ms.lasthandoff: 12/04/2021
+ms.locfileid: "61307591"
 ---
 # <a name="presence-setpresence"></a>presença: setPresence
 
@@ -63,7 +63,7 @@ Forneça um objeto JSON com os seguintes parâmetros no corpo da solicitação.
 | sessionId          | cadeia de caracteres   | A ID da sessão de presença do aplicativo.                                                          |
 | availability       | cadeia de caracteres   | As informações de presença base.                                                                         |
 | atividade           | cadeia de caracteres   | As informações complementares à disponibilidade.                                                          |
-| expirationDuration | duração | A expiração da sessão de presença do aplicativo. O valor é representado no formato ISO 8601 por durações.</p>Se não for fornecido, será aplicada uma expiração padrão de 5 minutos. |
+| expirationDuration | duração | A expiração da sessão de presença do aplicativo. O valor é representado no formato ISO 8601 por durações.</p>Se não for fornecido, será aplicada uma expiração padrão de 5 minutos. O intervalo de duração válido é de 5 a 240 minutos (PT5M a PT4H)|
 
 > [!IMPORTANT]
 >
