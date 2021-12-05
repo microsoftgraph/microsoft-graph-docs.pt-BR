@@ -4,12 +4,12 @@ description: O Microsoft Graph expõe as permissões granulares que controlam o 
 author: jackson-woods
 ms.localizationpriority: high
 ms.custom: graphiamtop20, scenarios:getting-started
-ms.openlocfilehash: 0577680b7cf2bb1a0a98a167aafe49bafdd0b94f
-ms.sourcegitcommit: e1dd9860906e0b415fd376d70df1f928d1f3d29e
+ms.openlocfilehash: e2dcdaaa608ff0d75845e826424ad0482efafd7f
+ms.sourcegitcommit: e75969aa44a1aab722ac44d09c37508ffbad8738
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/01/2021
-ms.locfileid: "61241615"
+ms.lasthandoff: 12/04/2021
+ms.locfileid: "61307605"
 ---
 # <a name="microsoft-graph-permissions-reference"></a>Referência de permissões do Microsoft Graph
 
@@ -1027,70 +1027,42 @@ Para cenários mais complexos que envolvem várias permissões, confira [Cenári
 
 ---
 
-## <a name="identity-risk-event-permissions"></a>Permissões de eventos de risco de identidade
+## <a name="identity-risk-permissions"></a>Permissões de risco de identidade
 
 #### <a name="delegated-permissions"></a>Permissões delegadas
 
 |   Permissão    |  Exibir Cadeia de Caracteres   |  Descrição | Consentimento Obrigatório do Administrador | Suporte da conta da Microsoft |
 |:----------------|:------------------|:-------------|:-----------------------|:--------------|
 | _IdentityRiskEvent.Read.All_ |   Leia as informações de evento de risco de identidade  | Permite que o aplicativo para leia as informações de evento de risco de identidade para todos os usuários em sua organização em nome do usuário conectado. | Sim | Não |
+| _IdentityRiskyUser.Read.All_ |   Leia as informações de risco de identidade do usuário.  | Permite que o aplicativo para leia as informações de risco de identidade do usuário para todos os usuários em sua organização em nome do usuário conectado. | Sim | Não |
+| _IdentityRiskyUser.ReadWrite.All_ |   Ler e atualizar as informações de risco de identidade do usuário.  | Permite que o aplicativo leia as informações de risco de identidade do usuário para todos os usuários em sua organização em nome do usuário conectado. | Sim | Não |
+
 
 #### <a name="application-permissions"></a>Permissões de aplicativos
 
 |   Permissão    |  Exibir Cadeia de Caracteres   |  Descrição | Consentimento Obrigatório do Administrador |
 |:-----------------------------|:-----------------------------------------|:-----------------|:-----------------|
 | _IdentityRiskEvent.Read.All_ |   Leia as informações de evento de risco de identidade | Permite que o aplicativo leia as informações do evento de risco de identidade para todos os usuários em sua organização sem um usuário conectado. | Sim |
-
-
-### <a name="remarks"></a>Comentários
-
-_IdentityRiskEvent.Read.All_ é válido apenas para contas corporativas ou de estudante. No caso de um aplicativo com permissões delegadas para ler as informações de risco de identidade, o usuário conectado deve ser um membro de uma das seguintes funções de administrador: Administrador Global, Administrador de Segurança ou funções do Leitor de Segurança. Para obter mais informações sobre funções de administrador, confira [Atribuindo funções de administrador no Azure Active Directory](/azure/active-directory/active-directory-assign-admin-roles).
-
-### <a name="example-usage"></a>Exemplo de uso
-
-#### <a name="delegated-and-application"></a>Permissões delegadas e de aplicativo
-
-Os seguintes usos são válidos para Permissões Delegadas e Permissões de aplicativo:
-
-* Ler todos os eventos de risco gerados para todos os usuários do locatário (`GET /beta/identityRiskEvents`)
-* Ler todos os eventos de risco de malware gerados pelo botnet Dorknet (`GET /beta/malwareRiskEvents?$filter=malwareName eq 'Dorkbot'`)
-* Ler os mais recentes 50 eventos de risco (`GET /beta/identityRiskEvents?$orderBy=riskEventDateTime desc&top=50`)
-
-Para cenários mais complexos que envolvem várias permissões, confira [Cenários de permissões](#permission-scenarios).
-
----
-
-
-## <a name="identity-risky-user-permissions"></a>Permissões de usuário com risco de identidade
-
-#### <a name="delegated-permissions"></a>Permissões delegadas
-
-|   Permissão    |  Exibir Cadeia de Caracteres   |  Descrição | Consentimento Obrigatório do Administrador | Suporte da conta da Microsoft |
-|:----------------|:------------------|:-------------|:-----------------------|:--------------|
-| _IdentityRiskyUser.Read.All_ |   Leia as informações de risco de identidade do usuário.  | Permite que o aplicativo para leia as informações de risco de identidade do usuário para todos os usuários em sua organização em nome do usuário conectado. | Sim | Não |
-| _IdentityRiskyUser.ReadWrite.All_ |   Ler e atualizar as informações de risco de identidade do usuário.  | Permite que o aplicativo leia as informações de risco de identidade do usuário para todos os usuários em sua organização em nome do usuário conectado. | Sim | Não |
-
-#### <a name="application-permissions"></a>Permissões de aplicativos
-
-|   Permissão    |  Exibir Cadeia de Caracteres   |  Descrição | Consentimento Obrigatório do Administrador |
-|:-----------------------------|:-----------------------------------------|:-----------------|:-----------------|
 | _IdentityRiskyUser.Read.All_ |   Leia as informações de risco de identidade do usuário. | Permite que o aplicativo leia as informações de risco de identidade do usuário para todos os usuários em sua organização sem um usuário conectado. | Sim |
 | _IdentityRiskyUser.ReadWrite.All_ |   Ler e atualizar as informações de risco de identidade do usuário. | Permite que o aplicativo leia as informações de risco de identidade do usuário para todos os usuários em sua organização sem um usuário conectado. | Sim |
 
 
-### <a name="remarks"></a>Comentários
-
-_IdentityRiskyUser.Read.All_ e _IdentityRiskyUser.ReadWrite.ALL_ é válido apenas para contas de trabalho ou estudante. Para um aplicativo com permissões delegadas para ler informações de risco do usuário de identidade, o usuário conectado deve ser membro de uma das seguintes funções de administrador: Administrador Global, Administrador de Segurança ou Leitor de Segurança. Para obter mais informações sobre funções de administrador, confira [Atribuição de funções de administrador no Azure Active Directory](/azure/active-directory/active-directory-assign-admin-roles).
+Todas as permissões de risco de identidade são válidas somente para contas corporativas ou de estudante. Para um aplicativo com permissões delegadas para ler informações de risco de identidade, o usuário conectado deve ser membro de uma das seguintes [funções de administrador do Azure Active Directory](/azure/active-directory/roles/permissions-reference): Administrador Global, Administrador de Segurança ou Leitor de Segurança.
 
 ### <a name="example-usage"></a>Exemplo de uso
 
-#### <a name="delegated-and-application"></a>Permissões delegadas e de aplicativo
+Os seguintes usos são válidos para permissões delegadas e permissões de aplicativo:
 
-Os seguintes usos são válidos para Permissões Delegadas e Permissões de aplicativo:
+#### <a name="read-risk-events"></a>Ler eventos de risco
 
-* Ler todos os usuários de risco e propriedades no locatário (`GET /beta/riskyUsers`)
-* Ler todos os usuários de risco cujo nível de risco agregação é Médio (`GET /beta/riskyUsers?$filter=risk/riskLevelAggregated eq microsoft.graph.riskLevel'medium'`)
-* Leia as informações de riscos de um usuário específico (`GET /beta/riskyUsers/$filter=id eq ‘{userObjectId}’`)
+* Ler todos os eventos de risco gerados para todos os usuários do locatário (`GET /identityProtection/riskDetections`)
+* Ler os mais recentes 50 eventos de risco (`GET /identityProtection/riskDetections?$orderBy=detectedDateTime desc&top=50`)
+
+#### <a name="read-risky-users"></a>Ler usuários arriscados
+
+* Ler todos os usuários de risco e propriedades no locatário (`GET /identityProtection/riskyUsers`)
+* Ler todos os usuários de risco cujo nível de risco agregação é Médio (`GET /identityProtection/riskyUsers?$filter=riskLevel eq 'medium'`)
+* Leia as informações de riscos de um usuário específico (`GET /identityProtection/riskyUsers?$filter=id eq 'userId'`)
 
 Para cenários mais complexos que envolvem várias permissões, confira [Cenários de permissões](#permission-scenarios).
 
