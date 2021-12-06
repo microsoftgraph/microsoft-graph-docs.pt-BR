@@ -98,7 +98,7 @@ Content-type: application/json
 [!INCLUDE [sample-code](../includes/snippets/java/tiindicator-deletetiindicatorsbyexternalid-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[Ir](#tab/go)
+# <a name="go"></a>[Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/tiindicator-deletetiindicatorsbyexternalid-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 

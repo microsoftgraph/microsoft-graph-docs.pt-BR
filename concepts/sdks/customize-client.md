@@ -122,7 +122,7 @@ final GraphServiceClient graphServiceClient = GraphServiceClient
                 .buildClient();
 ```
 
-## <a name="go"></a>[Ir](#tab/Go)
+## <a name="go"></a>[Go](#tab/go)
 
 [!INCLUDE [go-sdk-preview](../../includes/go-sdk-preview.md)]
 
@@ -295,7 +295,7 @@ final GraphServiceClient graphServiceClient =
 > [!NOTE]
 > Para obter mais informações sobre a configuração de proxy de Identidade do Azure, consulte [ProxyOptions](/java/api/com.azure.core.http.proxyoptions.proxyoptions).
 
-## <a name="go"></a>[Ir](#tab/Go)
+## <a name="go"></a>[Go](#tab/go)
 
 [!INCLUDE [go-sdk-preview](../../includes/go-sdk-preview.md)]
 

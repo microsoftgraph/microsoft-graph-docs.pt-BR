@@ -91,7 +91,7 @@ Content-type: application/json
 [!INCLUDE [sample-code](../includes/snippets/java/serviceprincipal-removepassword-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[Ir](#tab/go)
+# <a name="go"></a>[Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/serviceprincipal-removepassword-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 

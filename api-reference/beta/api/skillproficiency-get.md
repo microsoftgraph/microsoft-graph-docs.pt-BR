@@ -90,7 +90,7 @@ GET https://graph.microsoft.com/beta/me/profile/skills/{id}
 [!INCLUDE [sample-code](../includes/snippets/java/get-skillproficiency-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[Ir](#tab/go)
+# <a name="go"></a>[Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/get-skillproficiency-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 

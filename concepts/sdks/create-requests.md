@@ -38,7 +38,7 @@ Para ler informações do Microsoft Graph, primeiro você precisa criar um objet
 
 [!INCLUDE [sample-code](includes/snippets/powershell/create-requests-read.md)]
 
-# <a name="go"></a>[Ir](#tab/Go)
+# <a name="go"></a>[Go](#tab/go)
 
 [!INCLUDE [go-sdk-preview](../../includes/go-sdk-preview.md)]
 
@@ -67,7 +67,7 @@ Ao recuperar uma entidade, nem todas as propriedades são recuperadas automatica
 
 [!INCLUDE [sample-code](includes/snippets/powershell/create-requests-select.md)]
 
-# <a name="go"></a>[Ir](#tab/Go)
+# <a name="go"></a>[Go](#tab/go)
 
 [!INCLUDE [go-sdk-preview](../../includes/go-sdk-preview.md)]
 
@@ -95,7 +95,7 @@ Recuperar uma lista de entidades é semelhante à recuperação de uma única en
 
 [!INCLUDE [sample-code](includes/snippets/powershell/create-requests-list.md)]
 
-# <a name="go"></a>[Ir](#tab/Go)
+# <a name="go"></a>[Go](#tab/go)
 
 [!INCLUDE [go-sdk-preview](../../includes/go-sdk-preview.md)]
 
@@ -125,7 +125,7 @@ Para SDKs que suportam um estilo fluente, coleções de entidades podem ser aces
 
 [!INCLUDE [sample-code](includes/snippets/powershell/create-requests-index.md)]
 
-# <a name="go"></a>[Ir](#tab/Go)
+# <a name="go"></a>[Go](#tab/go)
 
 [!INCLUDE [go-sdk-preview](../../includes/go-sdk-preview.md)]
 
@@ -153,7 +153,7 @@ Você pode usar o filtro para solicitar uma entidade relacionada ou uma coleçã
 
 [!INCLUDE [sample-code](includes/snippets/powershell/create-requests-expand.md)]
 
-# <a name="go"></a>[Ir](#tab/Go)
+# <a name="go"></a>[Go](#tab/go)
 
 [!INCLUDE [go-sdk-preview](../../includes/go-sdk-preview.md)]
 
@@ -181,7 +181,7 @@ As solicitações de exclusão são construídas da mesma forma que as solicita�
 
 [!INCLUDE [sample-code](includes/snippets/powershell/create-requests-delete.md)]
 
-# <a name="go"></a>[Ir](#tab/Go)
+# <a name="go"></a>[Go](#tab/go)
 
 [!INCLUDE [go-sdk-preview](../../includes/go-sdk-preview.md)]
 
@@ -209,7 +209,7 @@ Para SDKs que suportam um estilo fluente, novos itens podem ser adicionados a co
 
 [!INCLUDE [sample-code](includes/snippets/powershell/create-requests-create.md)]
 
-# <a name="go"></a>[Ir](#tab/Go)
+# <a name="go"></a>[Go](#tab/go)
 
 [!INCLUDE [go-sdk-preview](../../includes/go-sdk-preview.md)]
 
@@ -237,7 +237,7 @@ A maioria das atualizações no Microsoft Graph são executadas usando um métod
 
 [!INCLUDE [sample-code](includes/snippets/powershell/create-requests-update.md)]
 
-# <a name="go"></a>[Ir](#tab/Go)
+# <a name="go"></a>[Go](#tab/go)
 
 [!INCLUDE [go-sdk-preview](../../includes/go-sdk-preview.md)]
 
@@ -265,7 +265,7 @@ Você pode usar uma `Header()` função para anexar os headers personalizados a 
 
 [!INCLUDE [sample-code](includes/snippets/powershell/create-requests-headers.md)]
 
-# <a name="go"></a>[Ir](#tab/Go)
+# <a name="go"></a>[Go](#tab/go)
 
 [!INCLUDE [go-sdk-preview](../../includes/go-sdk-preview.md)]
 
@@ -293,7 +293,7 @@ Para SDKs que oferecem suporte a um estilo fluente, você pode fornecer valores 
 
 [!INCLUDE [sample-code](includes/snippets/powershell/create-requests-queryparams.md)]
 
-# <a name="go"></a>[Ir](#tab/Go)
+# <a name="go"></a>[Go](#tab/go)
 
 [!INCLUDE [go-sdk-preview](../../includes/go-sdk-preview.md)]
 

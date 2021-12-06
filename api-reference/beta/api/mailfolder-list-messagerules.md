@@ -74,7 +74,7 @@ GET https://graph.microsoft.com/beta/me/mailFolders/inbox/messagerules
 [!INCLUDE [sample-code](../includes/snippets/java/get-messagerules-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[Ir](#tab/go)
+# <a name="go"></a>[Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/get-messagerules-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
