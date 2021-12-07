@@ -1,30 +1,30 @@
 ---
 title: Valores de enumeração de gerenciamento de vários locatários
 description: Valores Graph enumeração de gerenciamento de vários locatários
-author: isaiahwilliams
+author: idwilliams
 ms.localizationpriority: medium
 ms.prod: microsoft-365-lighthouse
 doc_type: enumTypes
-ms.openlocfilehash: 1814e7c846b9a3c2394497d0221d2bb8a7dc5a86
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 7218824959465cb7740953f837da0e3e630ec449
+ms.sourcegitcommit: f65eee432cc903324b5f9b31710fdc6100590f36
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59040572"
+ms.lasthandoff: 12/07/2021
+ms.locfileid: "61321621"
 ---
 # <a name="multi-tenant-management-enumeration-values"></a>Valores de enumeração de gerenciamento de vários locatários
 
 ### <a name="delegatedprivilegestatus-values"></a>valores delegatedPrivilegeStatus
 
-|Membro|
+|Member|
 |:---|
-|Nenhuma|
+|none|
 |delegatedAdminPrivileges|
 |unknownFutureValue|
 
 ### <a name="managementactionstatus-values"></a>valores managementActionStatus
 
-|Membro|
+|Member|
 |:---|
 |toAddress|
 |completed|
@@ -39,16 +39,16 @@ ms.locfileid: "59040572"
 
 ### <a name="managementcategory-values"></a>valores managementCategory
 
-|Membro|
+|Member|
 |:---|
 |custom|
-|devices|
+|dispositivos|
 |identity|
 |unknownFutureValue|
 
 ### <a name="managementparametervaluetype-values"></a>valores managementParameterValueType
 
-|Membro|
+|Member|
 |:---|
 |string|
 |inteiro|
@@ -62,7 +62,7 @@ ms.locfileid: "59040572"
 
 ### <a name="tenantonboardingstatus-values"></a>valores tenantOnboardingStatus
 
-|Membro|
+|Member|
 |:---|
 |inelegível|
 |inProcess|
@@ -70,9 +70,20 @@ ms.locfileid: "59040572"
 |inativo|
 |unknownFutureValue|
 
+### <a name="tenantonboardingeligibilityreason-values"></a>valores tenantOnboardingEligibilityReason
+
+|Member|
+|:---|
+|none|
+|contractType|
+|delegatedAdminPrivileges|
+|usersCount|
+|license|
+|unknownFutureValue|
+
 ### <a name="workloadactioncategory-values"></a>valores workloadActionCategory
 
-|Membro|
+|Member|
 |:---|
 |automatizado|
 |Manual|
@@ -80,7 +91,7 @@ ms.locfileid: "59040572"
 
 ### <a name="workloadactionstatus-values"></a>valores workloadActionStatus
 
-|Membro|
+|Member|
 |:---|
 |toAddress|
 |completed|
@@ -91,7 +102,7 @@ ms.locfileid: "59040572"
 
 ### <a name="workloadonboardingstatus-values"></a>valores workloadOnboardingStatus
 
-|Membro|
+|Member|
 |:---|
 |notOnboarded|
 |onboarded|

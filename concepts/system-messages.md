@@ -5,22 +5,22 @@ author: RamjotSingh
 ms.localizationpriority: high
 ms.prod: microsoft-teams
 ms.custom: scenarios:getting-started
-ms.openlocfilehash: 306c45ecf79454e01353101fbf1196304935932f
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 26e021f6e9cc68cab2b44df32c41fe1225b59215
+ms.sourcegitcommit: f65eee432cc903324b5f9b31710fdc6100590f36
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59138985"
+ms.lasthandoff: 12/07/2021
+ms.locfileid: "61321803"
 ---
 # <a name="get-system-messages-for-microsoft-teams-using-microsoft-graph-apis"></a>Obtenha mensagens do sistema para o Microsoft Teams usando as APIs do Microsoft Graph
 
 O Microsoft Teams gera mensagens do sistema para eventos, como membros adicionados a um chat, nome da equipe atualizado e descrição atualizada do canal. As mensagens do sistema permitem que o chamador tenha insights sobre os eventos que aconteceram em uma equipe, um canal ou um chat.
 
 
-O Microsoft Graph expõe as mensagens do sistema como parte das operações GET de [chatMessage](/graph/api/resources/chatMessage?view=graph-rest-beta&preserve-view=true) e [Alterar notificações para mensagens de chat e canal](teams-changenotifications-chatmessage.md).
+O Microsoft Graph expõe as mensagens do sistema como parte das operações GET de [chatMessage](/graph/api/resources/chatMessage?view=graph-rest-v1.0&preserve-view=true) e [Alterar notificações para mensagens de chat e canal](teams-changenotifications-chatmessage.md).
 
 
-As mensagens do sistema são apresentadas como objetos de [chatMessage](/graph/api/resources/chatMessage?view=graph-rest-beta&preserve-view=true).
+As mensagens do sistema são apresentadas como objetos de [chatMessage](/graph/api/resources/chatMessage?view=graph-rest-v1.0&preserve-view=true).
 Neste caso, a propriedade **messageType** é definida como `systemEventMessage` e a propriedade **eventDetail** fornece os detalhes do evento.
 
 
@@ -33,7 +33,7 @@ As seguintes operações GET suportam mensagens do sistema:
 - GET /chats/{chat-id}/messages
 - GET /chats/{chat-id}/messages/{message-id}
 
-Para obter detalhes, consulte [chatMessage](/graph/api/resources/chatMessage?view=graph-rest-beta&preserve-view=true).
+Para obter detalhes, consulte [chatMessage](/graph/api/resources/chatMessage?view=graph-rest-v1.0&preserve-view=true).
 
 ## <a name="supported-change-notifications"></a>Suporta alteração de notificações
 

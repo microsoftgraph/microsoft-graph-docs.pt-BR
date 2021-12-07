@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: kevinbellinger
 ms.prod: people
 doc_type: apiPageType
-ms.openlocfilehash: d1ef20e1c8d3a148718abaf0b5ca4af881547c3f
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: aaf102888087c6fecbd62276a48aaba6b49fe7c5
+ms.sourcegitcommit: f65eee432cc903324b5f9b31710fdc6100590f36
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "61026616"
+ms.lasthandoff: 12/07/2021
+ms.locfileid: "61322230"
 ---
 # <a name="get-organizationsettings"></a>Obter organizationSettings
 
@@ -20,7 +20,7 @@ Namespace: microsoft.graph
 
 Recupere as propriedades e as relações de um [objeto organizationSettings,](../resources/organizationsettings.md) incluindo **profileCardProperties**.
 
-Esta operação não retorna [itemInsightsSettings](../resources/iteminsightssettings.md) por meio da propriedade de navegação **itemInsights.** Use [get itemInsightsSettings](iteminsightssettings-get.md) em vez disso.
+Esta operação não retorna [insightsSettings](../resources/insightssettings.md). Dependendo do tipo de insights, você pode obter suas configurações usando [item de listaInsights](organizationsettings-list-iteminsights.md) ou [listar peopleInsights](organizationsettings-list-peopleinsights.md).
 
 ## <a name="permissions"></a>Permissões
 
@@ -28,8 +28,8 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 | Tipo de permissão                        | Permissões (da com menos para a com mais privilégios) |
 |:---------------------------------------|:--------------------------------------------|
-| Delegado (conta corporativa ou de estudante)     | User.Read, User.Read.All                    |
-| Delegado (conta pessoal da Microsoft) | Sem suporte.                              |
+| Delegada (conta corporativa ou de estudante)     | User.Read, User.Read.All                    |
+| Delegada (conta pessoal da Microsoft) | Sem suporte.                              |
 | Aplicativo                            | Sem suporte.                              |
 
 >**Observação:** O uso de permissões delegadas para essa operação exige que o usuário in-loco tenha um administrador de locatário ou uma função de administrador global.
@@ -93,7 +93,7 @@ GET https://graph.microsoft.com/beta/organization/a9f3c90b-04fd-4504-a302-47672b
 [!INCLUDE [sample-code](../includes/snippets/java/get-organizationsettings-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[Go](#tab/go)
+# <a name="go"></a>[Ir](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/get-organizationsettings-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 

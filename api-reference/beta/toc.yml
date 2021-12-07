@@ -163,7 +163,7 @@ items:
         href: /graph/toolkit/overview?context=graph/api/beta
       - name: Introdução
         items:
-          - name: Visão geral
+          - name: Visão Geral
             href: /graph/toolkit/get-started/overview?context=graph/api/beta
           - name: /graph/toolkit para React
             href: /graph/toolkit/get-started/mgt-react?context=graph/api/beta
@@ -260,11 +260,11 @@ items:
   - name: Referência beta
     expanded: true
     items:
-      - name: Visão geral
+      - name: Visão Geral
         href: overview.md
       - name: Usuários
         items:
-          - name: Visão geral
+          - name: Visão Geral
             href: resources/users.md
           - name: Usuário
             href: resources/user.md
@@ -406,12 +406,20 @@ items:
                     href: api/insights-list-used.md
               - name: Controle de organização (visualização)
                 items:
-                  - name: Configurações de insights de item
-                    href: resources/iteminsightssettings.md
-                  - name: Obter
-                    href: api/iteminsightssettings-get.md
-                  - name: Atualizar
-                    href: api/iteminsightssettings-update.md
+                  - name: Insights configurações
+                    href: resources/insightssettings.md
+                  - name: Configurações informações sobre o item
+                    items:
+                      - name: Listar
+                        href: api/organizationsettings-list-iteminsights.md
+                      - name: Atualizar
+                        href: api/insightssettings-update.md
+                  - name: Configurações informações de pessoas
+                    items:
+                      - name: Listar
+                        href: api/organizationsettings-list-peopleinsights.md
+                      - name: Atualizar
+                        href: api/insightssettings-update.md
               - name: Controle do usuário (visualização)
                 items:
                   - name: Configurações de insights do usuário
@@ -501,6 +509,14 @@ items:
                 href: resources/person.md
               - name: Listar pessoas
                 href: api/user-list-people.md
+              - name: Configurações informações de pessoas
+                items:
+                  - name: Insights configurações
+                    href: resources/insightssettings.md
+                  - name: Listar
+                    href: api/organizationsettings-list-peopleinsights.md
+                  - name: Atualizar
+                    href: api/insightssettings-update.md
           - name: Foto
             href: resources/profilephoto.md
             items:
@@ -758,7 +774,7 @@ items:
                 href: api/driveitem-list-children.md
           - name: Propriedades estendidas
             items:
-              - name: Visão geral
+              - name: Visão Geral
                 href: resources/extended-properties-overview.md
               - name: Propriedades estendidas de valor único
                 items:
@@ -1079,7 +1095,7 @@ items:
                 items:
                   - name: Listar memberOf
                     href: api/serviceprincipal-list-memberof.md
-                  - name: Listar memberOf transitivos
+                  - name: List transitive memberOf
                     href: api/serviceprincipal-list-transitivememberof.md
                   - name: Verificar grupos de membros
                     href: api/directoryobject-checkmembergroups.md
@@ -1379,7 +1395,7 @@ items:
                 href: api/outlookcategory-delete.md
           - name: Propriedades estendidas
             items:
-              - name: Visão geral
+              - name: Visão Geral
                 href: resources/extended-properties-overview.md
               - name: Propriedades estendidas de valor único
                 items:
@@ -1598,7 +1614,7 @@ items:
       - name: Conformidade
         displayName: 'Compliance API, Microsoft Graph Compliance API'
         items:
-          - name: Visão geral
+          - name: Visão Geral
             href: resources/complianceapioverview.md
           - name: Descoberta eDiscovery (visualização)
             items:
@@ -1816,7 +1832,7 @@ items:
       - name: Reserva de clientes (visualização)
         displayName: 'Bookings, Microsoft Bookings'
         items:
-          - name: Visão geral
+          - name: Visão Geral
             href: resources/booking-api-overview.md
           - name: Negócio de reservas
             href: resources/bookingbusiness.md
@@ -9834,9 +9850,9 @@ items:
               - name: Cloud PC
                 href: resources/cloudpc.md
                 items:
-                  - name: Listar PCs de nuvem
+                  - name: Listar
                     href: api/virtualendpoint-list-cloudpcs.md
-                  - name: Obter computador na nuvem
+                  - name: Obter
                     href: api/cloudpc-get.md
                   - name: Reprovision
                     href: api/cloudpc-reprovision.md
@@ -10597,7 +10613,7 @@ items:
       - name: Finanças (visualização)
         displayname: 'Dynamics, Dynamics 365 Business Central'
         items:
-          - name: Visão geral
+          - name: Visão Geral
             href: resources/dynamics-graph-reference.md
           - name: Conta
             href: resources/dynamics-account.md
@@ -10879,7 +10895,7 @@ items:
                     href: api/contract-list.md
               - name: Atributos de segurança personalizados (visualização)
                 items:
-                  - name: Visão geral
+                  - name: Visão Geral
                     href: resources/custom-security-attributes-overview.md
                   - name: Conjuntos de atributos
                     href: resources/attributeset.md
@@ -11286,7 +11302,7 @@ items:
             items:
               - name: Métodos de autenticação
                 items:
-                  - name: Visão geral
+                  - name: Visão Geral
                     href: resources/authenticationmethods-overview.md
                   - name: Listar todos os métodos
                     href: api/authentication-list-methods.md
@@ -11640,7 +11656,7 @@ items:
                         href: api/activitybasedtimeoutpolicy-delete.md
                   - name: Política de método de autenticação de aplicativo (visualização)
                     items:
-                      - name: Visão geral
+                      - name: Visão Geral
                         href: resources/applicationAuthenticationMethodPolicy.md
                       - name: Política de gerenciamento de aplicativos de locatário
                         items:
@@ -11700,7 +11716,7 @@ items:
                         href: api/authenticationflowspolicy-update.md
                   - name: Política de métodos de autenticação
                     items:
-                      - name: Visão geral
+                      - name: Visão Geral
                         href: resources/authenticationmethodspolicies-overview.md
                       - name: Política de métodos de autenticação
                         href: resources/authenticationmethodspolicy.md
@@ -12837,6 +12853,14 @@ items:
                 href: resources/person.md
               - name: Listar pessoas
                 href: api/user-list-people.md
+              - name: Configurações informações de pessoas
+                items:
+                  - name: Insights configurações
+                    href: resources/insightssettings.md
+                  - name: Listar
+                    href: api/organizationsettings-list-peopleinsights.md
+                  - name: Atualizar
+                    href: api/insightssettings-update.md
           - name: Perfil (visualização)
             items:
               - name: Perfil
@@ -13145,37 +13169,36 @@ items:
                 items:
                   - name: Insights de item (visualização)
                     href: resources/iteminsights.md
-                  - name: Compartilhados
-                    href: resources/insights-shared.md
+                  - name: Listar compartilhados
+                    href: api/insights-list-shared.md
+                  - name: Listar tendências
+                    href: api/insights-list-trending.md
+                  - name: Listar usados
+                    href: api/insights-list-used.md
+              - name: Controle de organização (visualização)
+                items:
+                  - name: Insights configurações
+                    href: resources/insightssettings.md
+                  - name: Configurações informações sobre o item
                     items:
-                      - name: Listar compartilhados
-                        href: api/insights-list-shared.md
-                  - name: Tendências
-                    href: resources/insights-trending.md
-                    items:
-                      - name: Listar tendências
-                        href: api/insights-list-trending.md
-                  - name: Usados
-                    href: resources/insights-used.md
-                    items:
-                      - name: Listar usados
-                        href: api/insights-list-used.md
-                  - name: Controle de organização (visualização)
-                    items:
-                      - name: Configurações de insights de item
-                        href: resources/iteminsightssettings.md
-                      - name: Obter
-                        href: api/iteminsightssettings-get.md
+                      - name: Listar
+                        href: api/organizationsettings-list-iteminsights.md
                       - name: Atualizar
-                        href: api/iteminsightssettings-update.md
-                  - name: Controle do usuário (visualização)
+                        href: api/insightssettings-update.md
+                  - name: Configurações informações de pessoas
                     items:
-                      - name: Configurações de insights do usuário
-                        href: resources/userinsightssettings.md
-                      - name: Obter
-                        href: api/userinsightssettings-get.md
+                      - name: Listar
+                        href: api/organizationsettings-list-peopleinsights.md
                       - name: Atualizar
-                        href: api/userinsightssettings-update.md
+                        href: api/insightssettings-update.md
+                      - name: Controle do usuário (visualização)
+                        items:
+                          - name: Configurações de insights do usuário
+                            href: resources/userinsightssettings.md
+                          - name: Obter
+                            href: api/userinsightssettings-get.md
+                          - name: Atualizar
+                            href: api/userinsightssettings-update.md
           - name: Menção (visualização)
             href: resources/mention.md
           - name: Análise (visualização)
@@ -13267,7 +13290,7 @@ items:
                 href: api/contact-delta.md
           - name: Propriedades estendidas
             items:
-              - name: Visão geral
+              - name: Visão Geral
                 href: resources/extended-properties-overview.md
               - name: Propriedades estendidas de valor único
                 items:
@@ -13289,7 +13312,7 @@ items:
         items:
           - name: Relatórios de atividade do Azure AD
             items:
-              - name: Visão geral
+              - name: Visão Geral
                 href: resources/azure-ad-auditlog-overview.md
               - name: Auditoria de diretório
                 href: resources/directoryaudit.md
@@ -13369,7 +13392,7 @@ items:
                         href: api/authenticationmethodsroot-usersregisteredbymethod.md
           - name: Microsoft 365 de uso
             items:
-              - name: Visão geral
+              - name: Visão Geral
                 href: resources/report.md
               - name: Uso do dispositivo do Microsoft Teams
                 href: resources/microsoft-teams-device-usage-reports.md
@@ -13616,7 +13639,7 @@ items:
         items:
           - name: Consulta
             items:
-              - name: Visão geral
+              - name: Visão Geral
                 href: resources/search-api-overview.md
               - name: Tipo de solicitação de pesquisa
                 href: resources/searchrequest.md
@@ -13626,7 +13649,7 @@ items:
                 href: api/search-query.md
           - name: Index
             items:
-              - name: Visão geral
+              - name: Visão Geral
                 href: resources/indexing-api-overview.md
               - name: Conexão externa
                 items:
@@ -14020,7 +14043,7 @@ items:
       - name: Tarefas e planos
         displayName: Planner
         items:
-          - name: Visão geral
+          - name: Visão Geral
             href: resources/planner-overview.md
           - name: Planejar
             href: resources/plannerplan.md
@@ -14688,7 +14711,7 @@ items:
       - name: Tarefas pendentes
         displayName: Microsoft To Do
         items:
-          - name: Visão geral
+          - name: Visão Geral
             href: resources/todo-overview.md
           - name: Lista de tarefas
             href: resources/todotasklist.md

@@ -1,16 +1,16 @@
 ---
 title: Listar pessoas
 description: Recupere uma lista de objetos person ordenados por relevância para o usuário, o que é determinado pelos padrões de comunicação e colaboração e pelas relações comerciais do usuário.
-author: dkershaw10
+author: anthona
 ms.localizationpriority: medium
 ms.prod: insights
 doc_type: apiPageType
-ms.openlocfilehash: 9366cb32b701f25984f0bfa106edba759e15a10e
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: 8780939bb1074925f14dca1cd4d80f9e2ae2fe96
+ms.sourcegitcommit: f65eee432cc903324b5f9b31710fdc6100590f36
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "61016803"
+ms.lasthandoff: 12/07/2021
+ms.locfileid: "61322258"
 ---
 # <a name="list-people"></a>Listar pessoas
 
@@ -26,9 +26,9 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegado (conta corporativa ou de estudante) | People.Read    |
+|Delegado (conta corporativa ou de estudante) | People.Read, People.Read.All    |
 |Delegado (conta pessoal da Microsoft) | People.Read    |
-|Aplicativo | Sem suporte. |
+|Aplicativo | People.Read.All |
 
 ## <a name="http-request"></a>Solicitação HTTP
 
@@ -104,7 +104,7 @@ GET https://graph.microsoft.com/beta/me/people
 [!INCLUDE [sample-code](../includes/snippets/java/get-person-collection-beta-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[Go](#tab/go)
+# <a name="go"></a>[Ir](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/get-person-collection-beta-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 

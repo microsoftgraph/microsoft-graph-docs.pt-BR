@@ -5,12 +5,12 @@ author: jpettere
 ms.localizationpriority: high
 ms.prod: users
 doc_type: resourcePageType
-ms.openlocfilehash: 25e947c5f244f2ba68f6353cdc44c304c742660c
-ms.sourcegitcommit: e75969aa44a1aab722ac44d09c37508ffbad8738
+ms.openlocfilehash: bfeb44e19d355b945b14dd83cb6ac5126ffcbe34
+ms.sourcegitcommit: f65eee432cc903324b5f9b31710fdc6100590f36
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/04/2021
-ms.locfileid: "61307612"
+ms.lasthandoff: 12/07/2021
+ms.locfileid: "61321901"
 ---
 # <a name="user-resource-type"></a>Tipo de recurso de usuário
 
@@ -163,7 +163,7 @@ Esse recurso permite:
 ## <a name="properties"></a>Propriedades
 
 > [!IMPORTANT]
-> O uso específico de `$filter` e o parâmetro de consulta `$search` é suportado somente quando se usa o cabeçalho **ConsistencyLevel** definido como `eventual` e `$count`. Para obter mais informações, consulte [Funcionalidades avançadas de consulta nos objetos de diretório do Microsoft Azure AD](/graph/aad-advanced-queries).
+> O uso específico de `$filter` e o parâmetro de consulta `$search` é suportado somente quando se usa o cabeçalho **ConsistencyLevel** definido como `eventual` e `$count`. Para obter mais informações, consulte [Funcionalidades avançadas de consulta nos objetos de diretório do Microsoft Azure AD](/graph/aad-advanced-queries#user-properties).
 
 | Propriedade       | Tipo    | Descrição |
 |:---------------|:--------|:------------|
@@ -235,7 +235,7 @@ Esse recurso permite:
 | showInAddressList | Booliano | `true` se a lista de endereços global do Outlook deve conter o usuário, caso contrário `false`. Se não estiver configurado, isso será tratado como `true`. Para os usuários convidados por meio do Gerenciador de convites, essa propriedade será definida como `false`. <br><br>Suporta `$filter` (`eq`, `ne`, `not`, `in`). |
 | signInSessionsValidFromDateTime | DateTimeOffset | Os tokens de atualização ou de sessão (cookies de sessão) emitidos antes dessa hora são inválidos e os aplicativos recebem um erro ao usar um token de atualização ou de sessão inválido para adquirir um token de acesso delegado (para acessar APIs como o Microsoft Graph).  Se isso acontecer, o aplicativo precisará adquirir um novo token de atualização, fazendo uma solicitação ao ponto de extremidade de autorização. Somente leitura. Use [revokeSignInSessions](../api/user-revokesigninsessions.md) para redefinir.|
 | skills | Coleção de cadeias de caracteres | Uma lista para o usuário enumerar suas qualificações. <br><br>Retornado apenas em `$select`. |
-| signInActivity | [signInActivity](signinactivity.md) | Obter a última data de login e solicitar a ID de login para um determinado usuário. Somente leitura.<br><br>Retornado apenas em `$select`. Suporta `$filter` (`eq`, `ne`, `not`, `ge`, `le`) *mas*, não com quaisquer outras propriedades filtráveis. **Observação:** os detalhes dessa propriedade exigem uma licença do Azure Active Directory Premium P1/P2 e a permissão **AuditLog.Read.All**.<br><br>**Observação**: há um [problema conhecido](/graph/known-issues#azure-ad-activity-reports) ao recuperar esta propriedade.|
+| signInActivity | [signInActivity](signinactivity.md) | Obter a última data de login e solicitar a ID de login para um determinado usuário. Somente leitura.<br><br>Retornado apenas em `$select`. Suporta `$filter` (`eq`, `ne`, `not`, `ge`, `le`) *mas*, não com quaisquer outras propriedades filtráveis. **Observação:** os detalhes dessa propriedade exigem uma licença do Azure Active Directory Premium P1/P2 e a permissão **AuditLog.Read.All**.<br><br>**Observação**: há um [problema conhecido](/graph/known-issues#license-check-errors-for-azure-ad-activity-reports) ao recuperar esta propriedade.|
 | estado | String | O estado ou município no endereço do usuário. O comprimento máximo é de 128 caracteres. <br><br>Suporte `$filter` (`eq`, `ne`, `not`, `ge`, `le`, `in`, `startsWith`, e `eq` no `null` valores). |
 | streetAddress | String | O endereço do local de trabalho do usuário. O comprimento máximo é de 1024 caracteres. <br><br>Suporte `$filter` (`eq`, `ne`, `not`, `ge`, `le`, `in`, `startsWith`, e `eq` no `null` valores).|
 | surname | String | O sobrenome do usuário (nome de família ou sobrenome). O comprimento máximo é de 64 caracteres. <br><br>Suporte `$filter` (`eq`, `ne`, `not`, `ge`, `le`, `in`, `startsWith`, e `eq` no `null` valores). |

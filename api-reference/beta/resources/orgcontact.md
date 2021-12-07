@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: dkershaw10
 ms.prod: identity-and-sign-in
 doc_type: resourcePageType
-ms.openlocfilehash: c17c41ee1cedeba914cfb3cedf17eb717b12b42e
-ms.sourcegitcommit: e497ed9bb56400bdd2bb53d52ddf057d9966220b
+ms.openlocfilehash: cc600505f6e814f209238628e74693f8632b2290
+ms.sourcegitcommit: f65eee432cc903324b5f9b31710fdc6100590f36
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/30/2021
-ms.locfileid: "61225109"
+ms.lasthandoff: 12/07/2021
+ms.locfileid: "61322055"
 ---
 # <a name="orgcontact-resource-type"></a>Tipo de recurso orgContact
 
@@ -34,22 +34,22 @@ Esse recurso tem suporte para o uso da [consulta delta](/graph/delta-query-overv
 | [Get transitiveReports](../api/orgcontact-get-transitivereports.md) | Inteiro | Obter a contagem de relatórios transitivos para um contato da organização a partir da propriedade de navegação transitiveReports. |
 | [Listar directReports](../api/orgcontact-list-directreports.md) | Coleção [directoryObject](directoryobject.md) | Listar os relatórios diretos do contato. |
 | [Listar memberOf](../api/orgcontact-list-memberof.md) | Coleção [directoryObject](directoryobject.md) | Obter uma coleção de objetos memberOf. |
-| [checkMemberGroups](../api/directoryobject-checkmembergroups.md) | String collection | Verifique se há associação ao grupo. |
-| [getMemberGroups](../api/directoryobject-getmembergroups.md) | String collection | Retorne todos os grupos dos que o contato especificado é membro. |
+| [checkMemberGroups](../api/directoryobject-checkmembergroups.md) | Coleção de cadeias de caracteres | Verifique se há associação ao grupo. |
+| [getMemberGroups](../api/directoryobject-getmembergroups.md) | Coleção de cadeias de caracteres | Retorne todos os grupos dos que o contato especificado é membro. |
 | [checkMemberObjects](../api/directoryobject-checkmemberobjects.md) | Coleção de cadeias de caracteres | Verifique se há associação em grupos, unidades administrativas e funções de diretório. |
-| [getMemberObjects](../api/directoryobject-getmemberobjects.md) | String collection | Obter a lista de grupos, unidades administrativas e funções de diretório das quais o contato é membro. |
+| [getMemberObjects](../api/directoryobject-getmemberobjects.md) | Coleção de cadeias de caracteres | Obter a lista de grupos, unidades administrativas e funções de diretório das quais o contato é membro. |
 
 ## <a name="properties"></a>Propriedades
 
 > [!IMPORTANT]
-> O uso específico de `$filter` e o parâmetro de consulta `$search` é suportado somente quando se usa o cabeçalho **ConsistencyLevel** definido como `eventual` e `$count`. Para obter mais informações, consulte [Funcionalidades avançadas de consulta nos objetos de diretório do Microsoft Azure AD](/graph/aad-advanced-queries).
+> O uso específico de `$filter` e o parâmetro de consulta `$search` é suportado somente quando se usa o cabeçalho **ConsistencyLevel** definido como `eventual` e `$count`. Para obter mais informações, consulte [Funcionalidades avançadas de consulta nos objetos de diretório do Microsoft Azure AD](/graph/aad-advanced-queries#organizational-contacts-properties).
 
 | Propriedade | Tipo | Descrição |
 | -------- | ---- | ----------- |
 | addresses | [Coleção physicalOfficeAddress](physicalofficeaddress.md) | Endereços postais para esse contato organizacional. Por enquanto, um contato só pode ter um endereço físico. |
 | companyName | String | Nome da empresa à que esse contato organizacional pertence. Suporte `$filter` (`eq`, `ne`, `not`, `ge`, `le`, `in`, `startsWith`, e `eq` no `null` valores). |
 | department | String | O nome do departamento no qual o contato funciona. Suporte `$filter` (`eq`, `ne`, `not`, `ge`, `le`, `in`, `startsWith`, e `eq` no `null` valores). |
-| displayName | String | Nome de exibição para esse contato organizacional. Suporte `$filter` (`eq`, `ne`, `not`, `ge`, `le`, `in`, `startsWith`, e `eq` no `null` valores), `$search`, e `$orderBy`.  |
+| displayName | String | Nome de exibição para esse contato organizacional. Suporta `$filter` (`eq`, `ne`, `not`, `ge`, `le`, `in`, `startsWith`, e `eq` em `null` valores), `$search`, e `$orderBy`.  |
 | givenName | String | Primeiro nome para esse contato organizacional. Suporte `$filter` (`eq`, `ne`, `not`, `ge`, `le`, `in`, `startsWith`, e `eq` no `null` valores).  |
 | id | String | Identificador exclusivo para esse contato organizacional. Suporta `$filter` (`eq`, `ne`, `not`, `in`). |
 | jobTitle | String | Cargo para esse contato organizacional. Suporte `$filter` (`eq`, `ne`, `not`, `ge`, `le`, `in`, `startsWith`, e `eq` no `null` valores). |
@@ -59,7 +59,7 @@ Esse recurso tem suporte para o uso da [consulta delta](/graph/delta-query-overv
 | onPremisesProvisioningErrors | coleção [OnPremisesProvisioningError](onpremisesprovisioningerror.md) | Lista de erros de provisionamento de sincronização para esse contato organizacional. Suporta `$filter` (`eq`, `not`). |
 | onPremisesSyncEnabled | Boolean | **true** se esse objeto for sincronizado de um diretório local; **false** se esse objeto foi originalmente sincronizado de um diretório local, mas não está mais sincronizado e agora mestre em Exchange; **null** se esse objeto nunca tiver sido sincronizado de um diretório local (padrão). <br/> <br/>Suporte `$filter` (`eq`, `ne`, `not`, `in`, e `eq` no `null` valores). |
 | telefones | Coleção [phone](phone.md) | Lista de telefones para esse contato organizacional. Telefone tipos podem ser móveis, comerciais e businessFax. Somente um de cada tipo pode estar presente na coleção. Suporta `$filter` (`eq`, `ne`, `not`, `in`). |
-| proxyAddresses | String collection | Por exemplo: "SMTP: bob@contoso.com", "smtp: bob@sales.contoso.com". O operador **any** é obrigatório para expressões de filtro em propriedades de vários valores. Suporta `$filter` (`eq`, `not`, `ge`, `le`, `startsWith`). |
+| proxyAddresses | Coleção de cadeias de caracteres | Por exemplo: "SMTP: bob@contoso.com", "smtp: bob@sales.contoso.com". O operador **any** é obrigatório para expressões de filtro em propriedades de vários valores. Suporta `$filter` (`eq`, `not`, `ge`, `le`, `startsWith`). |
 | surname | String | Sobrenome para esse contato organizacional. Suporta `$filter` (`eq`, `ne`, `not`, `ge`, `le`, `in`, `startsWith` e `eq` em valores `null`) |
 
 ## <a name="relationships"></a>Relações

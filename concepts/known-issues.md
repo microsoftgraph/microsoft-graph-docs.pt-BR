@@ -3,12 +3,12 @@ title: Problemas conhecidos com o Microsoft Graph
 description: Este artigo descreve os problemas conhecidos com o Microsoft Graph.
 author: MSGraphDocsVTeam
 ms.localizationpriority: high
-ms.openlocfilehash: e0e6ac6237d9d6dce6d5ec786b69d6faaba8b814
-ms.sourcegitcommit: 2e94beae05043a88b389349f0767e3a657415e4c
+ms.openlocfilehash: 09efbe4e6d4ff5cefa986e12fa730dc2ec418505
+ms.sourcegitcommit: f65eee432cc903324b5f9b31710fdc6100590f36
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/19/2021
-ms.locfileid: "61123576"
+ms.lasthandoff: 12/07/2021
+ms.locfileid: "61321817"
 ---
 # <a name="known-issues-with-microsoft-graph"></a>Problemas conhecidos com o Microsoft Graph
 
@@ -370,7 +370,7 @@ Em pontos de extremidade beta e v1.0, a resposta de `GET /users/id/messages` inc
 
 ## <a name="reports"></a>Relatórios
 
-### <a name="azure-ad-activity-reports-can-return-an-error"></a>Os relatórios de atividade do Azure AD podem retornar um erro
+### <a name="license-check-errors-for-azure-ad-activity-reports"></a>Erros de verificação de licença para os relatórios de atividades do Microsoft Azure AD
 
 Quando você tiver uma licença válida do Azure AD Premium e chamar [directoryAudit](/graph/api/resources/directoryaudit), [signIn](/graph/api/resources/signin)ou [provisionar](/graph/api/resources/provisioningobjectsummary) as APIs de relatórios de atividade do Azure AD, você ainda poderá encontrar uma mensagem de erro semelhante à seguinte:
 

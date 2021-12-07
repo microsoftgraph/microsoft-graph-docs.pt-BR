@@ -5,12 +5,12 @@ author: AshleyYangSZ
 ms.localizationpriority: medium
 ms.prod: cloud-pc
 doc_type: resourcePageType
-ms.openlocfilehash: 8e2a61858e1f01ee1070f7d7b1c7d1aaeb68b9e2
-ms.sourcegitcommit: 08e9b0bac39c1b1d2c8a79539d24aaa93364baf2
+ms.openlocfilehash: 22b825a04b1679385aa0cf14c6421a820b312941
+ms.sourcegitcommit: f65eee432cc903324b5f9b31710fdc6100590f36
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/24/2021
-ms.locfileid: "59765936"
+ms.lasthandoff: 12/07/2021
+ms.locfileid: "61321789"
 ---
 # <a name="cloudpcdeviceimage-resource-type"></a>Tipo de recurso cloudPcDeviceImage
 
@@ -20,7 +20,7 @@ Namespace: microsoft.graph
 
 Representa o recurso de imagem em um computador cloud.
 
-## <a name="methods"></a>Métodos
+## <a name="methods"></a>Methods
 
 |Método|Tipo de retorno|Descrição|
 |:---|:---|:---|
@@ -37,13 +37,13 @@ Representa o recurso de imagem em um computador cloud.
 |:---|:---|:---|
 |id|String|Identificador exclusivo do recurso de imagem no Cloud PC. Somente leitura.|
 |sourceImageResourceId|String|A ID do recurso de imagem de origem no Azure. Formato obrigatório: "/subscriptions/{subscription-id}/resourceGroups/{resourceGroupName}/providers/Microsoft.Compute/images/{imageName}".|
-|displayName|Cadeia de caracteres|O nome de exibição da imagem.|
-|versão|String|A versão da imagem. Por exemplo: 0.0.1, 1.5.13.|
+|displayName|String|O nome de exibição da imagem.|
+|versão|String|A versão da imagem. Por exemplo, 0.0.1, 1.5.13.|
 |osBuildNumber|String|A versão de com build do sistema operacional da imagem. Por exemplo: 1909.|
 |operatingSystem|String|O sistema operacional da imagem. Por exemplo: Windows 10 Enterprise.|
 |lastModifiedDateTime|DateTimeOffset|Os dados e a hora em que a imagem foi modificada pela última vez. O tempo é mostrado no formato ISO 8601 e hora UTC (Tempo Universal Coordenado). Por exemplo, meia-noite UTC em 1º de janeiro de 2014 aparece como '2014-01-01T00:00:00Z'.|
 |status|cloudPcDeviceImageStatus|O status da imagem no Cloud PC. Os valores possíveis são: `pending`, `ready`, `failed`.|
-|statusDetails|cloudPcDeviceImageStatusDetails|Os detalhes do status da imagem, que indica por que o carregamento falhou, se aplicável. Os valores possíveis são: `internalServerError`, `sourceImageNotFound`, `osVersionNotSupported`, e `sourceImageInvalid`.|
+|statusDetails|cloudPcDeviceImageStatusDetails|Os detalhes do status da imagem, que indica por que o carregamento falhou, se aplicável. Os valores possíveis são: `internalServerError` , , , e `sourceImageNotFound` `osVersionNotSupported` `sourceImageInvalid` `sourceImageNotGeneralized` .|
 
 ### <a name="cloudpcdeviceimagestatus-values"></a>valores cloudPcDeviceImageStatus
 
@@ -61,6 +61,8 @@ Representa o recurso de imagem em um computador cloud.
 |sourceImageNotFound|A imagem de origem está inacessível ou não encontrada.|
 |osVersionNotSupported| A versão do sistema operacional não é suportada.|
 |sourceImageInvalid|A imagem de origem não é válida para provisionar uma Windows VM com ela.|
+|sourceImageNotGeneralized|A imagem carregada não foi generalizada. Reupload the image after running the sysprep/generalize command. Para saber mais, confira Remover informações específicas do computador [generalizando uma VM antes de criar uma imagem](/azure/virtual-machines/generalize).|
+|unknownFutureValue|Valor de sentinela de enumeração evolvável. Não usar.|
 
 ## <a name="relationships"></a>Relações
 

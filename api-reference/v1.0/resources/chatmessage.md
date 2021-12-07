@@ -5,12 +5,12 @@ doc_type: resourcePageType
 ms.localizationpriority: medium
 author: RamjotSingh
 ms.prod: microsoft-teams
-ms.openlocfilehash: ba66bd1d8755f286f1cdda10ee785f410ae88ca1
-ms.sourcegitcommit: 6ae8c124fac63a195ccf516c9cff739f730b6b13
+ms.openlocfilehash: bbc5ca9f1aed7b53a1145c618bc551b6cfd26e8e
+ms.sourcegitcommit: f65eee432cc903324b5f9b31710fdc6100590f36
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/02/2021
-ms.locfileid: "60084053"
+ms.lasthandoff: 12/07/2021
+ms.locfileid: "61322104"
 ---
 # <a name="chatmessage-resource-type"></a>Tipo de recurso chatMessage
 
@@ -74,6 +74,7 @@ Representa uma mensagem de bate-papo individual em um [canal](channel.md) ou [ba
 |chatId|string|Se a mensagem foi enviada em um chat, representa a identidade do chat.|
 |channelIdentity|[channelIdentity](channelidentity.md)|Se a mensagem foi enviada em um canal, representa a identidade do canal.|
 |webUrl|cadeia de caracteres|Somente leitura. Link para a mensagem em Microsoft Teams.|
+|eventDetail|[eventMessageDetail](../resources/eventmessagedetail.md)|Somente leitura. Se presente, representa detalhes de um evento que aconteceu em um **chat**, um **canal** ou uma **equipe**, por exemplo, adicionando novos membros. Para mensagens de evento, a **propriedade messageType** será definida como `systemEventMessage` .|
 
 ## <a name="relationships"></a>Relações
 
@@ -128,7 +129,10 @@ Veja a seguir uma representação JSON do recurso.
   "policyViolation": {"@odata.type": "microsoft.graph.chatMessagePolicyViolation"},
   "chatId": "string",
   "channelIdentity": {"@odata.type": "microsoft.graph.channelIdentity"},
-  "webUrl": "string"
+  "webUrl": "string",
+  "eventDetail": {
+    "@odata.type": "microsoft.graph.eventMessageDetail"
+  }
 }
 ```
 

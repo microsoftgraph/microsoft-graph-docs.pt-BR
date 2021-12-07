@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: markwahl-msft
 ms.prod: governance
 doc_type: conceptualPageType
-ms.openlocfilehash: f296c4c29f150100b585e8c86651e42d841a8820
-ms.sourcegitcommit: e1dd9860906e0b415fd376d70df1f928d1f3d29e
+ms.openlocfilehash: 38d30da6d55ebdff4abb55d584b4c0cb7d59a9fa
+ms.sourcegitcommit: f65eee432cc903324b5f9b31710fdc6100590f36
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/01/2021
-ms.locfileid: "61242240"
+ms.lasthandoff: 12/07/2021
+ms.locfileid: "61322006"
 ---
 # <a name="working-with-the-azure-ad-entitlement-management-api"></a>Trabalhando com a API de gerenciamento de direitos do Azure AD
 
@@ -35,7 +35,7 @@ Observe que o recurso de gerenciamento de direitos, incluindo a API, está inclu
 
 A tabela a seguir lista os métodos que você pode usar para interagir com recursos relacionados ao gerenciamento de direitos.
 
-## <a name="methods"></a>Métodos
+## <a name="methods"></a>Methods
 
 | Método   | Tipo de retorno |Descrição|
 |:---------------|:--------|:----------|
@@ -48,6 +48,7 @@ A tabela a seguir lista os métodos que você pode usar para interagir com recur
 | [Excluir accessPackage](../api/accesspackage-delete.md) | | Excluir **accessPackage**. |
 | [FilterByCurrentUser](../api/accesspackage-filterbycurrentuser.md) | [Coleção accessPackage](accesspackage.md) | Recupere uma lista de **objetos accessPackage** filtrados no usuário de entrada. |
 | [Listar accessPackageAssignmentRequests](../api/entitlementmanagement-list-assignmentrequests.md) | [coleção accessPackageAssignmentRequest](accesspackageassignmentrequest.md) | Recupere uma lista de **objetos accessPackageAssignmentRequest.** |
+| [Criar accessPackageAssignmentRequest](../api/entitlementmanagement-post-assignmentrequests.md) | [accessPackageAssignmentRequest](accesspackageassignmentrequest.md) | Cria um novo **objeto accessPackageAssignmentRequest.** |
 | [Obter accessPackageAssignmentRequest](../api/accesspackageassignmentrequest-get.md) | [accessPackageAssignmentRequest](accesspackageassignmentrequest.md) | Leia propriedades e relações de um **objeto accessPackageAssignmentRequest.** |
 | [Excluir accessPackageAssignmentRequest](../api/accesspackageassignmentrequest-delete.md) |Nenhum | Excluir um **accessPackageAssignmentRequest**. |
 |[FilterByCurrentUser](../api/accesspackageassignmentrequest-filterbycurrentuser.md)|[coleção accessPackageAssignmentRequest](../resources/accesspackageassignmentrequest.md)|Recupere a lista de **objetos accessPackageAssignmentRequest** filtrados no usuário de entrada.|
@@ -64,7 +65,7 @@ A tabela a seguir lista os métodos que você pode usar para interagir com recur
 | [Obter connectedOrganization](../api/connectedorganization-get.md) | [connectedOrganization](connectedorganization.md) | Leia propriedades e relações de um **objeto connectedOrganization.** |
 | [Atualizar connectedOrganization](../api/connectedorganization-update.md) |Nenhum | Atualizar uma **connectedOrganization**. |
 | [Excluir connectedOrganization](../api/connectedorganization-delete.md) |Nenhum | Excluir uma **connectedOrganization**. |
-|[Listar internalSponsors](../api/connectedorganization-list-internalsponsors.md) | Coleção [directoryObject](directoryobject.md) | Recupere uma lista dos **patrocinadores internos de uma connectedOrganization.** |
+|[Listar internalSponsors](../api/connectedorganization-list-internalsponsors.md) | Conjunto [directoryObject](directoryobject.md) | Recupere uma lista dos **patrocinadores internos de uma connectedOrganization.** |
 |[Listar externalSponsors](../api/connectedorganization-list-externalsponsors.md) | Coleção [directoryObject](directoryobject.md) | Recupere uma lista de **patrocinadores externos de uma connectedOrganization.** |
 |[Adicionar internalSponsors](../api/connectedorganization-post-internalsponsors.md) | Nenhum | Adicione um usuário ou grupo aos patrocinadores internos de um **connectedOrganization.** |
 |[Adicionar externalSponsors](../api/connectedorganization-post-externalsponsors.md) | Nenhum | Adicione um usuário ou grupo aos patrocinadores **externos de um connectedOrganization.** |

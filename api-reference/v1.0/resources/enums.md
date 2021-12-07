@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 ms.prod: non-product-specific
 author: MSGraphDocsvTeam
 doc_type: enumPageType
-ms.openlocfilehash: 08d5cc4fca905c2b8ef442839e13752186417e5d
-ms.sourcegitcommit: e1dd9860906e0b415fd376d70df1f928d1f3d29e
+ms.openlocfilehash: 5e037aea9f5582760731fdc351b5b94bdd15a0d0
+ms.sourcegitcommit: f65eee432cc903324b5f9b31710fdc6100590f36
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/01/2021
-ms.locfileid: "61241678"
+ms.lasthandoff: 12/07/2021
+ms.locfileid: "61321999"
 ---
 # <a name="enum-values"></a>Valores denum
 
@@ -1122,7 +1122,7 @@ Enum para tipos de valor do Registro conforme definido por [/windows/desktop/sys
 |dwordLittleEndian|3| REG_DWORD_LITTLE_ENDIAN tipo de valor do Registro.|
 |dwordBigEndian|4| REG_DWORD_BIG_ENDIAN tipo de valor do Registro.|
 |expandSz|5| REG_EXPAND_SZ tipo de valor do Registro.|
-|link|6 | REG_LINK tipo de valor do Registro.|
+|vínculo|6 | REG_LINK tipo de valor do Registro.|
 |multiSz|7 | REG_MULTI_SZ tipo de valor do Registro.|
 |none|8 | REG_NONE tipo de valor do Registro.|
 |qword|9 | REG_QWORD tipo de valor do Registro.|
@@ -1304,7 +1304,7 @@ Valores possíveis para tipos de conta de usuário (associação ao grupo), por 
 
 | Membro | Valor | Descrição             |
 |:-------|:------|:------------------------|
-| email   | 1     | Ameaça de email.            |
+| Email   | 1     | Ameaça de email.            |
 | url    | 2     | Ameaça de URL.             |
 | file   | 3     | Ameaça de arquivo de anexo. |
 
@@ -1376,6 +1376,7 @@ Valores possíveis para tipos de conta de usuário (associação ao grupo), por 
 | chatEvent |
 | digitação |
 | unknownFutureValue |
+| systemEventMessage |
 
 ### <a name="chatmessagepolicyviolationdlpactiontype-values"></a>valores chatMessagePolicyViolationDlpActionType
 
@@ -1577,7 +1578,7 @@ Valores possíveis para tipos de conta de usuário (associação ao grupo), por 
 
 | Member                |
 |:----------------------|
-| cadeia de caracteres                |
+| string                |
 | booliano               |
 | int64                 |
 | stringCollection      |
@@ -1825,4 +1826,23 @@ Valores possíveis para tipos de conta de usuário (associação ao grupo), por 
 |Padrão.|
 |habilitadas|
 |desabilitadas|
+|unknownFutureValue|
+
+### <a name="callrecordingstatus-values"></a>valores callRecordingStatus 
+
+|Member|
+|:---|
+|sucesso|
+|failure|
+|initial|
+|chunkFinished|
+|unknownFutureValue|
+
+### <a name="teamworkcalleventtype-values"></a>valores de teamworkCallEventType 
+
+|Member|
+|:---|
+|call|
+|meeting|
+|screenShare|
 |unknownFutureValue|
