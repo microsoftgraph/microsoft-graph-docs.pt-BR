@@ -3,12 +3,12 @@ author: nkramer
 ms.topic: include
 ms.date: 01/25/2021
 ms.localizationpriority: medium
-ms.openlocfilehash: 0c2faca238d1127462de5f70aadffd1ef3edd2d0
-ms.sourcegitcommit: e497ed9bb56400bdd2bb53d52ddf057d9966220b
+ms.openlocfilehash: 0bd1801747eb5f4871e121009bb2017b2c17c9f3
+ms.sourcegitcommit: f65eee432cc903324b5f9b31710fdc6100590f36
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/30/2021
-ms.locfileid: "61132216"
+ms.lasthandoff: 12/07/2021
+ms.locfileid: "61323839"
 ---
 <!-- markdownlint-disable MD041-->
 
@@ -17,6 +17,8 @@ ms.locfileid: "61132216"
 **chatMessage** assinaturas com permissões delegadas não oferecem suporte a dados de recursos (**includeResourceData** deve ser `false`) e não requerem [criptografia](/graph/webhooks-with-resource-data). A única exceção é o recurso `/users/{id}/chats/getAllMessages` (disponível somente na versão beta) que oferece suporte a dados de recursos independentemente do tipo de permissão.
 
 Assinaturas **chatMessage** com permissões de aplicativo incluem dados de recurso e exigem [criptografia](/graph/webhooks-with-resource-data). A criação de assinatura falhará se um [encryptionCertificate](/graph/api/resources/subscription) não for especificado. Antes de criar uma assinatura **chatMessage**, você deve solicitar acesso. Para obter detalhes, confira [APIs protegidas no Microsoft Teams](/graph/teams-protected-apis).
+
+Você deve usar o header de solicitação para obter os seguintes valores em `Prefer: include-unknown-enum-members` **chatMessage** **messageType** [enum evolvable](/graph/best-practices-concept#handling-future-members-in-evolvable-enumerations): for and `systemEventMessage` `/teams/{id}/channels/{id}/messages` `/chats/{id}/messages` resource.
 
 > [!NOTE]
 >`/teams/getAllMessages`e `/chats/getAllMessages` tem [requisitos de licenciamento e pagamento.](/graph/teams-licenses)
