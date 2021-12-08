@@ -2,21 +2,21 @@
 title: Criar userExperienceAnalyticsAppHealthDevicePerformanceDetails
 description: Crie um novo objeto userExperienceAnalyticsAppHealthDevicePerformanceDetails.
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 2b926bfe799204f7d13dfc84723ef32504586a52
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: e627983171342c65cd40b40eaf2b7779a3d7acaa
+ms.sourcegitcommit: 65f4e128f96783c18d607a6dcffbc914291285d4
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59082610"
+ms.lasthandoff: 12/08/2021
+ms.locfileid: "61338222"
 ---
 # <a name="create-userexperienceanalyticsapphealthdeviceperformancedetails"></a>Criar userExperienceAnalyticsAppHealthDevicePerformanceDetails
 
 Namespace: microsoft.graph
 
-> **Importante:** As APIs Graph Microsoft na versão /beta estão sujeitas a alterações; não há suporte para uso de produção.
+> **Importante:** As GRAPH da Microsoft na versão /beta estão sujeitas a alterações; o uso de produção não é suportado.
 
 > **Observação:** A API do Microsoft Graph para Intune requer uma [licença ativa do Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
 
@@ -27,9 +27,9 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 |Tipo de permissão|Permissões (da com menos para a com mais privilégios)|
 |:---|:---|
-|Delegado (conta corporativa ou de estudante)|DeviceManagementManagedDevices.ReadWrite.All|
+|Delegado (conta corporativa ou de estudante)|DeviceManagementConfiguration.ReadWrite.All, DeviceManagementManagedDevices.ReadWrite.All|
 |Delegado (conta pessoal da Microsoft)|Sem suporte.|
-|Aplicativo|DeviceManagementManagedDevices.ReadWrite.All|
+|Aplicativo|DeviceManagementConfiguration.ReadWrite.All, DeviceManagementManagedDevices.ReadWrite.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- {
@@ -55,10 +55,10 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar o userEx
 |:---|:---|:---|
 |id|String|O identificador exclusivo do objeto de desempenho do dispositivo de análise de experiência do usuário.|
 |eventDateTime|DateTimeOffset|A hora em que o evento ocorreu.|
-|eventType|Cadeia de Caracteres|O tipo do evento.|
-|appDisplayName|Cadeia de caracteres|O nome amigável do aplicativo para o qual o evento ocorreu.|
-|appPublisher|Cadeia de Caracteres|O editor do aplicativo.|
-|appVersion|Cadeia de caracteres|A versão do aplicativo.|
+|eventType|String|O tipo do evento.|
+|appDisplayName|String|O nome amigável do aplicativo para o qual o evento ocorreu.|
+|appPublisher|String|O editor do aplicativo.|
+|appVersion|String|A versão do aplicativo.|
 |deviceId|Cadeia de caracteres|A id do dispositivo.|
 |deviceDisplayName|Cadeia de caracteres|O nome do dispositivo.|
 
@@ -107,6 +107,7 @@ Content-Length: 454
   "deviceDisplayName": "Device Display Name value"
 }
 ```
+
 
 
 

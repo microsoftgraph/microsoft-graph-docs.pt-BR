@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: williamlooney
 ms.prod: cloud-communications
 doc_type: resourcePageType
-ms.openlocfilehash: ba453f07d375fd95202446d66647d762ee4e5896
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: aec85e917c8029d80da64eea9d9dc45f0c5070e5
+ms.sourcegitcommit: 65f4e128f96783c18d607a6dcffbc914291285d4
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59104268"
+ms.lasthandoff: 12/08/2021
+ms.locfileid: "61345895"
 ---
 # <a name="clientuseragent-resource-type"></a>Tipo de recurso clientUserAgent
 
@@ -25,7 +25,7 @@ Representa um agente de usuário cliente de um ponto de extremidade em uma chama
 |applicationVersion|String|Identifica a versão do software de aplicativo usado por esse ponto de extremidade.|
 |headerValue|String|Valor de header do agente do usuário relatado por esse ponto de extremidade.|
 |plataforma|microsoft.graph.callRecords.clientPlatform|Identifica a plataforma usada por esse ponto de extremidade. Os valores possíveis são: `unknown`, `windows`, `macOS`, `iOS`, `android`, `web`, `ipPhone`, `roomSystem`, `surfaceHub`, `holoLens`, `unknownFutureValue`.|
-|productFamily|microsoft.graph.callRecords.productFamily|Identifica a família de softwares de aplicativos usados por esse ponto de extremidade. Os valores possíveis são: `unknown`, `teams`, `skypeForBusiness`, `lync`, `unknownFutureValue`.|
+|productFamily|microsoft.graph.callRecords.productFamily|Identifica a família de softwares de aplicativos usados por esse ponto de extremidade. Os possíveis valores são: `unknown`, `teams`, `skypeForBusiness`, `lync`, `unknownFutureValue`, `azureCommunicationServices`. Observe que você deve usar o header de solicitação para obter os seguintes valores nesta `Prefer: include-unknown-enum-members` [enum evolvável](/graph/best-practices-concept#handling-future-members-in-evolvable-enumerations): `azureCommunicationServices` .|
 
 ## <a name="json-representation"></a>Representação JSON
 

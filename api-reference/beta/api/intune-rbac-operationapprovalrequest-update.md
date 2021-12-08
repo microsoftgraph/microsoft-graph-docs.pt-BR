@@ -5,18 +5,18 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 1ce96e13b791db9667cc1ea07fb3ee1d21182410
-ms.sourcegitcommit: 4a960067cf2cd7d3c605550150eb3c9259adfe92
+ms.openlocfilehash: 68dd7303e9b444d35b4d3183043b498236d39393
+ms.sourcegitcommit: 65f4e128f96783c18d607a6dcffbc914291285d4
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/19/2021
-ms.locfileid: "60485038"
+ms.lasthandoff: 12/08/2021
+ms.locfileid: "61339672"
 ---
 # <a name="update-operationapprovalrequest"></a>Atualizar operationApprovalRequest
 
 Namespace: microsoft.graph
 
-> **Importante:** As APIs Graph Microsoft na versão /beta estão sujeitas a alterações; não há suporte para uso de produção.
+> **Importante:** As GRAPH da Microsoft na versão /beta estão sujeitas a alterações; o uso de produção não é suportado.
 
 > **Observação:** A API do Microsoft Graph para Intune requer uma [licença ativa do Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
 
@@ -27,9 +27,9 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 |Tipo de permissão|Permissões (da com menos para a com mais privilégios)|
 |:---|:---|
-|Delegado (conta corporativa ou de estudante)|DeviceManagementRBAC.ReadWrite.All|
+|Delegado (conta corporativa ou de estudante)|DeviceManagementConfiguration.ReadWrite.All, DeviceManagementRBAC.ReadWrite.All|
 |Delegado (conta pessoal da Microsoft)|Sem suporte.|
-|Aplicativo|DeviceManagementRBAC.ReadWrite.All|
+|Aplicativo|DeviceManagementConfiguration.ReadWrite.All, DeviceManagementRBAC.ReadWrite.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- {
@@ -53,15 +53,15 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar [operati
 
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|id|Cadeia de caracteres|A ID da Entidade|
+|id|String|A ID da Entidade|
 |requestDateTime|DateTimeOffset|DateTime da solicitação. Essa propriedade é somente leitura.|
 |expirationDateTime|DateTimeOffset|O DateTime em que as ações na solicitação não são mais permitidas. Essa propriedade é somente leitura.|
 |lastModifiedDateTime|DateTimeOffset|DateTime modificado pela última vez. Essa propriedade é somente leitura.|
 |requestor|[identitySet](../resources/intune-rbac-identityset.md)|A identidade do solicitante. Essa propriedade é somente leitura.|
 |aprovador|[identitySet](../resources/intune-rbac-identityset.md)|A identidade do aprovador. Essa propriedade é somente leitura.|
 |status|[operationApprovalRequestStatus](../resources/intune-rbac-operationapprovalrequeststatus.md)|O status atual da solicitação de aprovação. Essa propriedade é somente leitura. Os valores possíveis são: `unknown`, `needsApproval`, `approved`, `rejected`, `cancelled`, `completed`, `expired`.|
-|requestJustification|Cadeia de caracteres|A justificativa da solicitação. Essa propriedade é somente leitura.|
-|approvalJustification|Cadeia de caracteres|A justificativa para a aprovação da solicitação. Essa propriedade é somente leitura.|
+|requestJustification|String|A justificativa da solicitação. Essa propriedade é somente leitura.|
+|approvalJustification|String|A justificativa para a aprovação da solicitação. Essa propriedade é somente leitura.|
 
 
 
@@ -177,6 +177,7 @@ Content-Length: 1459
   "approvalJustification": "Approval Justification value"
 }
 ```
+
 
 
 

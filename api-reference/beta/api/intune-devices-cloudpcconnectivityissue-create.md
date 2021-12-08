@@ -2,21 +2,21 @@
 title: Criar cloudPCConnectivityIssue
 description: Crie um novo objeto cloudPCConnectivityIssue.
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 559b7746003009a7095944128d4560f169ca0ae4
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 7620de97b63b81a47e2577fd71f8c5cd8da8c0ca
+ms.sourcegitcommit: 65f4e128f96783c18d607a6dcffbc914291285d4
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59059137"
+ms.lasthandoff: 12/08/2021
+ms.locfileid: "61339826"
 ---
 # <a name="create-cloudpcconnectivityissue"></a>Criar cloudPCConnectivityIssue
 
 Namespace: microsoft.graph
 
-> **Importante:** As APIs Graph Microsoft na versão /beta estão sujeitas a alterações; não há suporte para uso de produção.
+> **Importante:** As GRAPH da Microsoft na versão /beta estão sujeitas a alterações; o uso de produção não é suportado.
 
 > **Observação:** A API do Microsoft Graph para Intune requer uma [licença ativa do Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
 
@@ -27,9 +27,9 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 |Tipo de permissão|Permissões (da com menos para a com mais privilégios)|
 |:---|:---|
-|Delegado (conta corporativa ou de estudante)|DeviceManagementManagedDevices.ReadWrite.All|
+|Delegado (conta corporativa ou de estudante)|DeviceManagementConfiguration.ReadWrite.All, DeviceManagementManagedDevices.ReadWrite.All|
 |Delegado (conta pessoal da Microsoft)|Sem suporte.|
-|Aplicativo|DeviceManagementManagedDevices.ReadWrite.All|
+|Aplicativo|DeviceManagementConfiguration.ReadWrite.All, DeviceManagementManagedDevices.ReadWrite.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- {
@@ -59,7 +59,7 @@ A tabela a seguir mostra as propriedades necessárias ao criar o cloudPCConnecti
 |errorDateTime|DateTimeOffset|A hora em que a conexão foi iniciada. O tempo é mostrado no formato ISO 8601 e hora UTC (Tempo Universal Coordenado).|
 |userId|Cadeia de caracteres|A ID exclusiva do usuário que inicializa a conexão.|
 |errorDescription|Cadeia de caracteres|A descrição detalhada do que deu errado.|
-|recommendedAction|Cadeia de caracteres|A ação recomendada para corrigir o erro correspondente.|
+|recommendedAction|String|A ação recomendada para corrigir o erro correspondente.|
 
 
 
@@ -104,6 +104,7 @@ Content-Length: 374
   "recommendedAction": "Recommended Action value"
 }
 ```
+
 
 
 

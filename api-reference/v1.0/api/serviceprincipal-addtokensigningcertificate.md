@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: alamaral
 ms.prod: applications
 doc_type: apiPageType
-ms.openlocfilehash: e8e7faffc0580391a27dabe8e76c98841e3fa7cb
-ms.sourcegitcommit: 3e2239e60b6dc53997b7d4356a20fc3d365d6238
+ms.openlocfilehash: c78aecfbc956d505ec46ff76e0b9e604335baa6b
+ms.sourcegitcommit: 65f4e128f96783c18d607a6dcffbc914291285d4
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/02/2021
-ms.locfileid: "61266394"
+ms.lasthandoff: 12/08/2021
+ms.locfileid: "61335457"
 ---
 # <a name="serviceprincipal-addtokensigningcertificate"></a>servicePrincipal: addTokenSigningCertificate
 
@@ -52,7 +52,7 @@ No corpo da solicitação, forneça as seguintes propriedades necessárias.
 
 | Propriedade     | Tipo   |Descrição|
 |:---------------|:--------|:----------|
-| displayName | cadeia de caracteres | Nome amigável para a chave.  Ele deve começar com `CN=` .|
+| displayName | string | Nome amigável para a chave.  Ele deve começar com `CN=` .|
 | endDateTime | DateTimeOffset |A data e a hora em que a credencial expira. Pode ser até 3 anos a partir da data em que o certificado é criado. Se não for fornecido, o padrão será de três anos a partir do momento da criação. O tipo de data/hora representa informações de data e hora usando o formato ISO 8601 e está sempre em horário UTC. Por exemplo, meia-noite UTC em 1 de janeiro de 2014 é `2014-01-01T00:00:00Z`.|
 
 ## <a name="response"></a>Resposta
@@ -66,6 +66,8 @@ Se tiver êxito, este método retornará um código `200 OK` de resposta e um no
 Este é um exemplo de solicitação.
 
 
+
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "serviceprincipal_addtokensigningcertificate"
@@ -80,6 +82,12 @@ Content-type: application/json
     "endDateTime":"2024-01-25T00:00:00Z"
 }
 ```
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/serviceprincipal-addtokensigningcertificate-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 
 ### <a name="response"></a>Resposta

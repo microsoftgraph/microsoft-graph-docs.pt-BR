@@ -5,24 +5,24 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: c0ecc24b6cb9069091fe9cbb51694c12f5a12b95
-ms.sourcegitcommit: c7ff992ef63e480d070421ba99b28ee129cb6acb
+ms.openlocfilehash: ef986108396bd1dbdb013be810aea01ebd1e6627
+ms.sourcegitcommit: 65f4e128f96783c18d607a6dcffbc914291285d4
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "60697139"
+ms.lasthandoff: 12/08/2021
+ms.locfileid: "61342409"
 ---
 # <a name="userexperienceanalyticsbatteryhealthappimpact-resource-type"></a>Tipo de recurso userExperienceAnalyticsBatteryHealthAppImpact
 
 Namespace: microsoft.graph
 
-> **Importante:** As APIs Graph Microsoft na versão /beta estão sujeitas a alterações; não há suporte para uso de produção.
+> **Importante:** As GRAPH da Microsoft na versão /beta estão sujeitas a alterações; o uso de produção não é suportado.
 
 > **Observação:** A API do Microsoft Graph para Intune requer uma [licença ativa do Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
 
 A entidade de impacto do aplicativo de saúde da bateria de análise de experiência do usuário contém informações relacionadas ao uso da bateria em um nível de aplicativo para o locatário.
 
-## <a name="methods"></a>Métodos
+## <a name="methods"></a>Methods
 |Método|Tipo de retorno|Descrição|
 |:---|:---|:---|
 |[Listar userExperienceAnalyticsBatteryHealthAppImpacts](../api/intune-devices-userexperienceanalyticsbatteryhealthappimpact-list.md)|[Coleção userExperienceAnalyticsBatteryHealthAppImpact](../resources/intune-devices-userexperienceanalyticsbatteryhealthappimpact.md)|Listar propriedades e relações dos [objetos userExperienceAnalyticsBatteryHealthAppImpact.](../resources/intune-devices-userexperienceanalyticsbatteryhealthappimpact.md)|
@@ -65,6 +65,7 @@ Veja a seguir uma representação JSON do recurso.
   "batteryUsagePercentage": "4.2"
 }
 ```
+
 
 
 

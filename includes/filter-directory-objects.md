@@ -1,12 +1,20 @@
 ---
 ms.localizationpriority: medium
-ms.openlocfilehash: 6c7ed4f818f7ce2e7780dfc37fac66549c53c5f5
-ms.sourcegitcommit: 3e2239e60b6dc53997b7d4356a20fc3d365d6238
+ms.openlocfilehash: 91a5d7042cbb336be47fd11a0846980bb49a0a0a
+ms.sourcegitcommit: f65eee432cc903324b5f9b31710fdc6100590f36
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/02/2021
-ms.locfileid: "61266290"
+ms.lasthandoff: 12/07/2021
+ms.locfileid: "61323840"
 ---
+### <a name="administrative-unit-properties"></a>Propriedades da unidade administrativa
+
+| Nome da propriedade | eq | startsWith | ge | le | Valor nulo |
+|--|--|--|--|--|--|
+| descrição | ![Requer parâmetros de consulta avançados][AQP] | ![Requer parâmetros de consulta avançados][AQP] |  |  | ![Não suportado][NS] |
+| displayName | ![Com suporte por Padrão][RDS] | ![Com suporte por Padrão][RDS] |  |  | ![Requer parâmetros de consulta avançados][AQP] |
+
+
 ### <a name="application-properties"></a>Propriedades do aplicativo
 
 | Nome da propriedade                                 | eq                                         | startsWith                                 | ge                                         | le                                         | Valor nulo                                 |

@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: jpettere
 ms.prod: users
 doc_type: apiPageType
-ms.openlocfilehash: a93d043977a56018e8d709e2081e1358499e44a9
-ms.sourcegitcommit: e1dd9860906e0b415fd376d70df1f928d1f3d29e
+ms.openlocfilehash: 83dfa08c0bbdc3d553340203b794845973261188
+ms.sourcegitcommit: 65f4e128f96783c18d607a6dcffbc914291285d4
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/01/2021
-ms.locfileid: "61241636"
+ms.lasthandoff: 12/08/2021
+ms.locfileid: "61341240"
 ---
 # <a name="list-manager"></a>Listar gerente
 
@@ -55,14 +55,14 @@ Este método oferece suporte aos parâmetros de consulta `$select` e `$expand`[O
 >**Observação:** 
 > + O valor `n` de `$levels` pode ser `max` (para retornar todos os gerentes) ou um número entre 1 e 1000.  
 > + Quando o `$levels` parâmetro não for especificado, apenas o gerente imediato será retornado.
-> + Você pode especificar `$select` dentro de `$expand` para selecionar as propriedades do gerente individual. O `$levels` parâmetro é necessário: `$expand=manager($levels=max;$select=id,displayName)` .
+> + Você pode especificar `$select` dentro de `$expand` para selecionar as propriedades do gerente individual. O parâmetro `$levels` é necessário: `$expand=manager($levels=max;$select=id,displayName)`.
 
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
 
 | Cabeçalho       | Valor|
 |:-----------|:------|
 | Autorização  | {token} de portador. Obrigatório.  |
-| ConsistencyLevel | eventualmente. Obrigatório quando a solicitação inclui a `$count=true` cadeia de caracteres de consulta. |
+| ConsistencyLevel | eventualmente. Obrigatório quando a solicitação inclui a cadeia de caracteres de consulta `$count=true`. |
 
 ## <a name="request-body"></a>Corpo da solicitação
 
@@ -104,7 +104,7 @@ GET https://graph.microsoft.com/beta/users/{id|userPrincipalName}/manager
 [!INCLUDE [sample-code](../includes/snippets/java/get-manager-2-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[Go](#tab/go)
+# <a name="go"></a>[Ir](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/get-manager-2-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
@@ -135,11 +135,13 @@ Content-type: application/json
 
 ### <a name="example-2-get-manager-chain-up-to-the-root-level"></a>Exemplo 2: obtenha a cadeia de gerentes ao nível raiz
 
-O exemplo a seguir mostra uma solicitação para obter a cadeia de gerentes ao nível raiz. Essa solicitação requer o header **ConsistencyLevel** definido como `eventual` porque a cadeia de `$count=true` caracteres de consulta está na solicitação. Para obter mais informações sobre o uso de **ConsistencyLevel** e `$count`, consulte [Funcionalidades avançadas de consulta nos objetos de diretório do Microsoft Azure AD](/graph/aad-advanced-queries).
+O exemplo a seguir mostra uma solicitação para obter a cadeia de gerentes ao nível raiz. Essa solicitação requer o cabeçalho **ConsistencyLevel** definido como `eventual` porque a cadeia de caracteres de consulta `$count=true` está na solicitação. Para obter mais informações sobre o uso de **ConsistencyLevel** e `$count`, consulte [Funcionalidades avançadas de consulta nos objetos de diretório do Microsoft Azure AD](/graph/aad-advanced-queries).
 
 #### <a name="request"></a>Solicitação
 
 
+
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "get_transitive_managers"
@@ -148,6 +150,12 @@ O exemplo a seguir mostra uma solicitação para obter a cadeia de gerentes ao n
 GET https://graph.microsoft.com/beta/me?$expand=manager($levels=max;$select=id,displayName)&$select=id,displayName&$count=true
 ConsistencyLevel: eventual
 ```
+# <a name="go"></a>[Ir](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/get-transitive-managers-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 
 #### <a name="response"></a>Resposta

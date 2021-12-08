@@ -2,21 +2,21 @@
 title: Criar groupPolicySettingMapping
 description: Crie um novo objeto groupPolicySettingMapping.
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 22b36b9f9da5256eced385b5926f95546790bd1c
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: fd2fd96004b5d8d7b36437eb3114472f2f60a6ff
+ms.sourcegitcommit: 65f4e128f96783c18d607a6dcffbc914291285d4
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59082316"
+ms.lasthandoff: 12/08/2021
+ms.locfileid: "61340309"
 ---
 # <a name="create-grouppolicysettingmapping"></a>Criar groupPolicySettingMapping
 
 Namespace: microsoft.graph
 
-> **Importante:** As APIs Graph Microsoft na versão /beta estão sujeitas a alterações; não há suporte para uso de produção.
+> **Importante:** As GRAPH da Microsoft na versão /beta estão sujeitas a alterações; o uso de produção não é suportado.
 
 > **Observação:** A API do Microsoft Graph para Intune requer uma [licença ativa do Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
 
@@ -53,27 +53,27 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar groupPol
 
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|id|Cadeia de caracteres|Ainda não documentado|
-|parentId|Cadeia de Caracteres|ID pai da configuração de política de grupo.|
-|childIdList|Conjunto de cadeias de caracteres|Lista de IDs Filho da configuração de política de grupo.|
+|id|String|Ainda não documentado|
+|parentId|String|ID pai da configuração de política de grupo.|
+|childIdList|Coleção String|Lista de IDs Filho da configuração de política de grupo.|
 |settingName|Cadeia de caracteres|O nome dessa configuração de política de grupo.|
-|settingValue|Cadeia de caracteres|O valor dessa configuração de política de grupo.|
-|settingValueType|Cadeia de caracteres|O tipo de valor dessa configuração de política de grupo.|
+|settingValue|String|O valor dessa configuração de política de grupo.|
+|settingValueType|String|O tipo de valor dessa configuração de política de grupo.|
 |settingDisplayName|String|O nome de exibição dessa configuração de política de grupo.|
-|settingDisplayValue|Cadeia de caracteres|O valor de exibição dessa configuração de política de grupo.|
-|settingDisplayValueType|Cadeia de caracteres|O tipo de valor de exibição dessa configuração de política de grupo.|
-|settingValueDisplayUnits|Cadeia de caracteres|As unidades de exibição desse valor de configuração de política de grupo|
-|settingCategory|Cadeia de Caracteres|A categoria em que a configuração da política de grupo está.|
-|mdmCspName|Cadeia de Caracteres|O nome CSP para o que a configuração da política de grupo mapeia.|
+|settingDisplayValue|String|O valor de exibição dessa configuração de política de grupo.|
+|settingDisplayValueType|String|O tipo de valor de exibição dessa configuração de política de grupo.|
+|settingValueDisplayUnits|String|As unidades de exibição desse valor de configuração de política de grupo|
+|settingCategory|String|A categoria em que a configuração da política de grupo está.|
+|mdmCspName|String|O nome CSP para o que a configuração da política de grupo mapeia.|
 |mdmSettingUri|String|O URI CSP do MDM para o que a política de grupo mapeia.|
 |mdmMinimumOSVersion|Int32|A versão mínima do sistema operacional compatível com essa configuração mdm.|
-|settingType|[groupPolicySettingType](../resources/intune-gpanalyticsservice-grouppolicysettingtype.md)|O tipo de configuração (segurança ou admx) da Política de Grupo. Os valores possíveis são: `unknown`, `policy`, `account`, `securityOptions`, `userRightsAssignment`, `auditSetting`, `windowsFirewallSettings`.|
-|isMdmSupported|Boleano|Indica se a configuração é suportada pelo Intune ou não|
+|settingType|[groupPolicySettingType](../resources/intune-gpanalyticsservice-grouppolicysettingtype.md)|O tipo de configuração (segurança ou admx) da Política de Grupo. Os valores possíveis são: `unknown` , , , , , , , , `policy` `account` `securityOptions` `userRightsAssignment` `auditSetting` `windowsFirewallSettings` `appLockerRuleCollection` `dataSourcesSettings` `devicesSettings` `driveMapSettings` `environmentVariables` `filesSettings` `folderOptions` , `folders` `iniFiles` `internetOptions` `localUsersAndGroups` `networkOptions` `networkShares` `ntServices` `powerOptions` `printers` `regionalOptionsSettings` `registrySettings` `scheduledTasks` `shortcutSettings` `startMenuSettings`|
+|isMdmSupported|Boolean|Indica se a configuração é suportada pelo Intune ou não|
 |mdmSupportedState|[mdmSupportedState](../resources/intune-gpanalyticsservice-mdmsupportedstate.md)|Indica se a configuração é suportada no Mdm ou não. Os valores possíveis são: `unknown`, `supported`, `unsupported`, `deprecated`.|
 |settingScope|[groupPolicySettingScope](../resources/intune-gpanalyticsservice-grouppolicysettingscope.md)|O escopo da configuração. Os valores possíveis são: `unknown`, `device`, `user`.|
-|intuneSettingUriList|Conjunto de cadeias de caracteres|A lista de URIs de configuração do Intune para as configurações de política de grupo mapeia para|
-|intuneSettingDefinitionId|Cadeia de caracteres|A ID de Definição de Configuração do Intune|
-|admxSettingDefinitionId|Cadeia de caracteres|ID da Política de Grupo Admx|
+|intuneSettingUriList|Coleção de cadeias de caracteres|A lista de URIs de configuração do Intune para as configurações de política de grupo mapeia para|
+|intuneSettingDefinitionId|String|A ID de Definição de Configuração do Intune|
+|admxSettingDefinitionId|String|ID da Política de Grupo Admx|
 
 
 
@@ -154,6 +154,7 @@ Content-Length: 1072
   "admxSettingDefinitionId": "Admx Setting Definition Id value"
 }
 ```
+
 
 
 

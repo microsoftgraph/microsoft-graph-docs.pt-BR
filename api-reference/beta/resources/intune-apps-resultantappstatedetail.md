@@ -2,21 +2,21 @@
 title: tipo denum resultantAppStateDetail
 description: Enum indicando detalhes adicionais sobre por que um aplicativo tem um estado de instalação específico.
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 58653891763433a6edc89986d6c076fa088142b9
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: b99d8cc0951692026809196ebd2f4f3613bac679
+ms.sourcegitcommit: 65f4e128f96783c18d607a6dcffbc914291285d4
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59047202"
+ms.lasthandoff: 12/08/2021
+ms.locfileid: "61336178"
 ---
 # <a name="resultantappstatedetail-enum-type"></a>tipo denum resultantAppStateDetail
 
 Namespace: microsoft.graph
 
-> **Importante:** As APIs Graph Microsoft na versão /beta estão sujeitas a alterações; não há suporte para uso de produção.
+> **Importante:** As GRAPH da Microsoft na versão /beta estão sujeitas a alterações; o uso de produção não é suportado.
 
 > **Observação:** A API do Microsoft Graph para Intune requer uma [licença ativa do Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
 
@@ -29,8 +29,8 @@ Enum indicando detalhes adicionais sobre por que um aplicativo tem um estado de 
 |dependencyFailedToInstall|1|Uma ou mais dependências do aplicativo falharam na instalação.|
 |dependencyWithRequirementsNotMet|2|Uma ou mais dependências do aplicativo têm requisitos que não são atendidos.|
 |dependencyPendingReboot|3|Uma ou mais dependências do aplicativo exigem uma reinicialização do dispositivo para concluir a instalação.|
-|dependencyWithAutoInstallDisabled|4 |Uma ou mais dependências do aplicativo são configuradas para não instalar automaticamente.|
-|supersededAppUninstallFailed|5 |Falha na desinstalação de um aplicativo sobresstalado.|
+|dependencyWithAutoInstallDisabled|4|Uma ou mais dependências do aplicativo são configuradas para não instalar automaticamente.|
+|supersededAppUninstallFailed|5|Falha na desinstalação de um aplicativo sobresstalado.|
 |supersededAppUninstallPendingReboot|6 |Um aplicativo supersedido requer uma reinicialização para concluir a desinstalação.|
 |removendoSupersededApps|7 |Aplicativos supersedados estão sendo removidos.|
 |iosAppStoreUpdateFailedToInstall|1000|A versão mais recente do aplicativo falhou ao atualizar de uma versão anterior.|
@@ -61,6 +61,7 @@ Enum indicando detalhes adicionais sobre por que um aplicativo tem um estado de 
 |minimumOsVersionNotMet|-1002|A versão do sistema operacional no dispositivo de destino é menor do que o mínimo configurado.|
 |minimumDiskSpaceNotMet|-1001|O espaço em disco disponível no dispositivo de destino é menor do que o mínimo configurado.|
 |processorArchitectureNotApplicable|-1000|A arquitetura do dispositivo (por exemplo, x86/amd64) não é aplicável para o aplicativo.|
+
 
 
 

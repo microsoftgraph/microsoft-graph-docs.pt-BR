@@ -163,7 +163,7 @@ items:
         href: /graph/toolkit/overview?context=graph/api/beta
       - name: Introdução
         items:
-          - name: Visão Geral
+          - name: Visão geral
             href: /graph/toolkit/get-started/overview?context=graph/api/beta
           - name: /graph/toolkit para React
             href: /graph/toolkit/get-started/mgt-react?context=graph/api/beta
@@ -260,11 +260,11 @@ items:
   - name: Referência beta
     expanded: true
     items:
-      - name: Visão Geral
+      - name: Visão geral
         href: overview.md
       - name: Usuários
         items:
-          - name: Visão Geral
+          - name: Visão geral
             href: resources/users.md
           - name: Usuário
             href: resources/user.md
@@ -897,7 +897,7 @@ items:
                         href: api/application-delete-extensionproperty.md
               - name: Credenciais de identidade federada (visualização)
                 items:
-                  - name: Visão Geral
+                  - name: Visão geral
                     href: resources/federatedidentitycredentials-overview.md
                   - name: Credenciais de identidade federada
                     href: resources/federatedidentitycredential.md
@@ -1618,7 +1618,7 @@ items:
             href: resources/complianceapioverview.md
           - name: Descoberta eDiscovery (visualização)
             items:
-              - name: Visão Geral
+              - name: Visão geral
                 href: resources/ediscovery-eDiscoveryapioverview.md
               - name: Caso de Descoberta Eletrônica
                 href: resources/ediscovery-case.md
@@ -2497,8 +2497,6 @@ items:
                         href: api/intune-books-iosvppebookassignment-delete.md
                       - name: Atualizar
                         href: api/intune-books-iosvppebookassignment-update.md
-                  - name: Par chave/valor
-                    href: resources/intune-androidforwork-keyvaluepair.md
                   - name: Aplicativo LOB para macOS
                     href: resources/intune-apps-macoslobapp.md
                     items:
@@ -3713,6 +3711,8 @@ items:
                         href: api/intune-deviceconfig-androiddeviceownercompliancepolicy-delete.md
                       - name: Atualizar
                         href: api/intune-deviceconfig-androiddeviceownercompliancepolicy-update.md
+                  - name: Proprietário de dispositivo Android compartilhamento de dados entre perfis
+                    href: resources/intune-deviceconfig-androiddeviceownercrossprofiledatasharing.md
                   - name: Tipo de política de permissão de aplicativo padrão do proprietário do dispositivo Android
                     href: resources/intune-deviceconfig-androiddeviceownerdefaultapppermissionpolicytype.md
                   - name: Configuração de autenticação de credencial derivada do proprietário do dispositivo Android
@@ -5299,6 +5299,84 @@ items:
                         href: api/intune-grouppolicy-grouppolicyuploadedpresentation-delete.md
                       - name: Atualizar
                         href: api/intune-grouppolicy-grouppolicyuploadedpresentation-update.md
+                  - name: Configuração de hardware
+                    href: resources/intune-deviceconfig-hardwareconfiguration.md
+                    items:
+                      - name: Listar
+                        href: api/intune-deviceconfig-hardwareconfiguration-list.md
+                      - name: Obter
+                        href: api/intune-deviceconfig-hardwareconfiguration-get.md
+                      - name: Criar
+                        href: api/intune-deviceconfig-hardwareconfiguration-create.md
+                      - name: Excluir
+                        href: api/intune-deviceconfig-hardwareconfiguration-delete.md
+                      - name: Atualizar
+                        href: api/intune-deviceconfig-hardwareconfiguration-update.md
+                      - name: atribuir ação
+                        href: api/intune-deviceconfig-hardwareconfiguration-assign.md
+                  - name: Atribuição de configuração de hardware
+                    href: resources/intune-deviceconfig-hardwareconfigurationassignment.md
+                    items:
+                      - name: Listar
+                        href: api/intune-deviceconfig-hardwareconfigurationassignment-list.md
+                      - name: Obter
+                        href: api/intune-deviceconfig-hardwareconfigurationassignment-get.md
+                      - name: Criar
+                        href: api/intune-deviceconfig-hardwareconfigurationassignment-create.md
+                      - name: Excluir
+                        href: api/intune-deviceconfig-hardwareconfigurationassignment-delete.md
+                      - name: Atualizar
+                        href: api/intune-deviceconfig-hardwareconfigurationassignment-update.md
+                  - name: Estado do dispositivo de configuração de hardware
+                    href: resources/intune-deviceconfig-hardwareconfigurationdevicestate.md
+                    items:
+                      - name: Listar
+                        href: api/intune-deviceconfig-hardwareconfigurationdevicestate-list.md
+                      - name: Obter
+                        href: api/intune-deviceconfig-hardwareconfigurationdevicestate-get.md
+                      - name: Criar
+                        href: api/intune-deviceconfig-hardwareconfigurationdevicestate-create.md
+                      - name: Excluir
+                        href: api/intune-deviceconfig-hardwareconfigurationdevicestate-delete.md
+                      - name: Atualizar
+                        href: api/intune-deviceconfig-hardwareconfigurationdevicestate-update.md
+                  - name: Formato de configuração de hardware
+                    href: resources/intune-deviceconfig-hardwareconfigurationformat.md
+                  - name: Resumo de execução da configuração de hardware
+                    href: resources/intune-deviceconfig-hardwareconfigurationrunsummary.md
+                    items:
+                      - name: Obter
+                        href: api/intune-deviceconfig-hardwareconfigurationrunsummary-get.md
+                      - name: Atualizar
+                        href: api/intune-deviceconfig-hardwareconfigurationrunsummary-update.md
+                  - name: Estado do usuário de configuração de hardware
+                    href: resources/intune-deviceconfig-hardwareconfigurationuserstate.md
+                    items:
+                      - name: Listar
+                        href: api/intune-deviceconfig-hardwareconfigurationuserstate-list.md
+                      - name: Obter
+                        href: api/intune-deviceconfig-hardwareconfigurationuserstate-get.md
+                      - name: Criar
+                        href: api/intune-deviceconfig-hardwareconfigurationuserstate-create.md
+                      - name: Excluir
+                        href: api/intune-deviceconfig-hardwareconfigurationuserstate-delete.md
+                      - name: Atualizar
+                        href: api/intune-deviceconfig-hardwareconfigurationuserstate-update.md
+                  - name: Informações de senha de hardware
+                    href: resources/intune-deviceconfig-hardwarepasswordinfo.md
+                    items:
+                      - name: Listar
+                        href: api/intune-deviceconfig-hardwarepasswordinfo-list.md
+                      - name: Obter
+                        href: api/intune-deviceconfig-hardwarepasswordinfo-get.md
+                      - name: Criar
+                        href: api/intune-deviceconfig-hardwarepasswordinfo-create.md
+                      - name: Excluir
+                        href: api/intune-deviceconfig-hardwarepasswordinfo-delete.md
+                      - name: Atualizar
+                        href: api/intune-deviceconfig-hardwarepasswordinfo-update.md
+                  - name: Fonte de ingestão
+                    href: resources/intune-grouppolicy-ingestionsource.md
                   - name: Configuração de acesso à tinta
                     href: resources/intune-deviceconfig-inkaccesssetting.md
                   - name: Finalidade pretendida
@@ -5632,10 +5710,6 @@ items:
                     href: resources/intune-deviceconfig-keytypedvaluepair.md
                   - name: Valor da chave
                     href: resources/intune-deviceconfig-keyvalue.md
-                  - name: Par chave/valor
-                    href: resources/intune-deviceconfig-keyvaluepair.md
-                  - name: Par chave/valor
-                    href: resources/intune-deviceconfig-keyvaluepair.md
                   - name: Complexidade de PIN de tela inicial gerenciada do modo quiosque
                     href: resources/intune-deviceconfig-kioskmodemanagedhomescreenpincomplexity.md
                   - name: Nível de autenticação do LAN Manager
@@ -8016,8 +8090,6 @@ items:
                     href: resources/intune-auditing-rolescopetaginfo.md
                   - name: Girar o resultado da ação do dispositivo de chaves do BitLocker
                     href: resources/intune-devices-rotatebitlockerkeysdeviceactionresult.md
-                  - name: Estado da execução
-                    href: resources/intune-devices-runstate.md
                   - name: Resumo do estado da categoria de linha de base de segurança
                     href: resources/intune-deviceintent-securitybaselinecategorystatesummary.md
                     items:
@@ -8746,8 +8818,6 @@ items:
                     href: resources/intune-mam-iosmobileappidentifier.md
                   - name: JSON
                     href: resources/intune-mam-json.md
-                  - name: Par chave/valor
-                    href: resources/intune-mam-keyvaluepair.md
                   - name: Identificador de aplicativo Mac
                     href: resources/intune-mam-macappidentifier.md
                   - name: Nível de compartilhamento de área de transferência do aplicativo gerenciado
@@ -9508,7 +9578,9 @@ items:
                         href: api/intune-shared-devicecompliancepolicy-get.md
                       - name: atribuir ação
                         href: api/intune-shared-devicecompliancepolicy-assign.md
-                      - name: ação
+                      - name: ação scheduleActionsForRules
+                        href: api/intune-shared-devicecompliancepolicy-scheduleactionsforrules.md
+                      - name: ação refreshDeviceComplianceReportSummarization
                         href: api/intune-shared-devicecompliancepolicy-refreshdevicecompliancereportsummarization.md
                       - name: Ação hasPayloadLinks
                         href: api/intune-shared-devicecompliancepolicy-haspayloadlinks.md
@@ -9563,7 +9635,7 @@ items:
                       - name: Listar
                         href: api/intune-shared-devicemanagementderivedcredentialsettings-list.md
                       - name: Criar
-                        href: resources/intune-shared-devicemanagementderivedcredentialsettings.md
+                        href: api/intune-shared-devicemanagementderivedcredentialsettings.md
                       - name: Excluir
                         href: api/intune-shared-devicemanagementderivedcredentialsettings-delete.md
                   - name: Script de gerenciamento de dispositivo
@@ -9651,6 +9723,8 @@ items:
                     href: resources/intune-shared-keystorageprovideroption.md
                   - name: Usos de chave
                     href: resources/intune-shared-keyusages.md
+                  - name: Par chave/valor
+                    href: resources/intune-shared-keyvaluepair.md
                   - name: Configurações de atribuição do aplicativo LOB do macOS
                     href: resources/intune-shared-macoslobappassignmentsettings.md
                   - name: Configurações de atribuição do aplicativo VPP do macOS
@@ -9725,6 +9799,8 @@ items:
                     href: resources/intune-shared-rgbcolor.md
                   - name: Executar como tipo de conta
                     href: resources/intune-shared-runasaccounttype.md
+                  - name: Estado da execução
+                    href: resources/intune-shared-runstate.md
                   - name: Opções de geração do estado da interface do usuário salvas
                     href: resources/intune-shared-saveduistategenerationoptions.md
                   - name: Definindo o tipo de origem
@@ -10613,7 +10689,7 @@ items:
       - name: Finanças (visualização)
         displayname: 'Dynamics, Dynamics 365 Business Central'
         items:
-          - name: Visão Geral
+          - name: Visão geral
             href: resources/dynamics-graph-reference.md
           - name: Conta
             href: resources/dynamics-account.md
@@ -12723,7 +12799,7 @@ items:
                 href: api/messagerule-delete.md
           - name: Propriedades estendidas
             items:
-              - name: Visão Geral
+              - name: Visão geral
                 href: resources/extended-properties-overview.md
               - name: Propriedades estendidas de valor único
                 items:
@@ -13191,14 +13267,14 @@ items:
                         href: api/organizationsettings-list-peopleinsights.md
                       - name: Atualizar
                         href: api/insightssettings-update.md
-                      - name: Controle do usuário (visualização)
-                        items:
-                          - name: Configurações de insights do usuário
-                            href: resources/userinsightssettings.md
-                          - name: Obter
-                            href: api/userinsightssettings-get.md
-                          - name: Atualizar
-                            href: api/userinsightssettings-update.md
+              - name: Controle do usuário (visualização)
+                items:
+                  - name: Configurações de insights do usuário
+                    href: resources/userinsightssettings.md
+                  - name: Obter
+                    href: api/userinsightssettings-get.md
+                  - name: Atualizar
+                    href: api/userinsightssettings-update.md
           - name: Menção (visualização)
             href: resources/mention.md
           - name: Análise (visualização)
@@ -13290,7 +13366,7 @@ items:
                 href: api/contact-delta.md
           - name: Propriedades estendidas
             items:
-              - name: Visão Geral
+              - name: Visão geral
                 href: resources/extended-properties-overview.md
               - name: Propriedades estendidas de valor único
                 items:
@@ -13312,7 +13388,7 @@ items:
         items:
           - name: Relatórios de atividade do Azure AD
             items:
-              - name: Visão Geral
+              - name: Visão geral
                 href: resources/azure-ad-auditlog-overview.md
               - name: Auditoria de diretório
                 href: resources/directoryaudit.md
@@ -13335,7 +13411,7 @@ items:
                     href: api/provisioningobjectsummary-list.md
           - name: Relatórios de identidade e acesso
             items:
-              - name: Visão Geral
+              - name: Visão geral
                 href: resources/report-identity-access.md
               - name: Atividade de aplicativo no AD FS
                 items:
@@ -13358,7 +13434,7 @@ items:
                         href: api/applicationsignindetailedsummary-get.md
               - name: Registro e utilização
                 items:
-                  - name: Visão Geral
+                  - name: Visão geral
                     href: resources/authenticationmethods-usage-insights-overview.md
                   - name: Contagem de Registro de Usuário credencial
                     href: resources/credentialuserregistrationcount.md
@@ -13639,7 +13715,7 @@ items:
         items:
           - name: Consulta
             items:
-              - name: Visão Geral
+              - name: Visão geral
                 href: resources/search-api-overview.md
               - name: Tipo de solicitação de pesquisa
                 href: resources/searchrequest.md
@@ -13649,7 +13725,7 @@ items:
                 href: api/search-query.md
           - name: Index
             items:
-              - name: Visão Geral
+              - name: Visão geral
                 href: resources/indexing-api-overview.md
               - name: Conexão externa
                 items:
@@ -13786,7 +13862,7 @@ items:
                     href: api/informationprotectionlabel-extractlabel.md
               - name: Avaliação de ameaças
                 items:
-                  - name: Visão Geral
+                  - name: Visão geral
                     href: resources/threatassessment-api-overview.md
                   - name: Solicitação de avaliação de ameaças
                     href: resources/threatassessmentrequest.md
@@ -13878,7 +13954,7 @@ items:
                 href: api/site-list-subsites.md
               - name: Procurar sites
                 href: api/site-search.md
-              - name: Permissões
+              - name: Permissions
                 items:
                   - name: Permissão
                     href: resources/permission.md
@@ -14711,7 +14787,7 @@ items:
       - name: Tarefas pendentes
         displayName: Microsoft To Do
         items:
-          - name: Visão Geral
+          - name: Visão geral
             href: resources/todo-overview.md
           - name: Lista de tarefas
             href: resources/todotasklist.md
@@ -14850,7 +14926,7 @@ items:
                     href: api/outlookcategory-delete.md
               - name: Propriedades estendidas
                 items:
-                  - name: Visão Geral
+                  - name: Visão geral
                     href: resources/extended-properties-overview.md
                   - name: Propriedades estendidas de valor único
                     items:

@@ -2,27 +2,27 @@
 title: Tipo de recurso mobileAppInstallStatus
 description: Contém propriedades para o estado de instalação de um aplicativo móvel para um dispositivo.
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 0853dc6c2fb471dc6617f0a7bdef658ed284b5ec
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 5366bb4cd2f17bb3000a9e6260b1fa57e0d49c8c
+ms.sourcegitcommit: 65f4e128f96783c18d607a6dcffbc914291285d4
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59086999"
+ms.lasthandoff: 12/08/2021
+ms.locfileid: "61337242"
 ---
 # <a name="mobileappinstallstatus-resource-type"></a>Tipo de recurso mobileAppInstallStatus
 
 Namespace: microsoft.graph
 
-> **Importante:** As APIs Graph Microsoft na versão /beta estão sujeitas a alterações; não há suporte para uso de produção.
+> **Importante:** As GRAPH da Microsoft na versão /beta estão sujeitas a alterações; o uso de produção não é suportado.
 
 > **Observação:** A API do Microsoft Graph para Intune requer uma [licença ativa do Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
 
 Contém propriedades para o estado de instalação de um aplicativo móvel para um dispositivo.
 
-## <a name="methods"></a>Métodos
+## <a name="methods"></a>Methods
 |Método|Tipo de retorno|Descrição|
 |:---|:---|:---|
 |[Listar mobileAppInstallStatuses](../api/intune-apps-mobileappinstallstatus-list.md)|[Coleção mobileAppInstallStatus](../resources/intune-apps-mobileappinstallstatus.md)|Listar propriedades e relações dos objetos [mobileAppInstallStatus.](../resources/intune-apps-mobileappinstallstatus.md)|
@@ -34,9 +34,9 @@ Contém propriedades para o estado de instalação de um aplicativo móvel para 
 ## <a name="properties"></a>Propriedades
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|id|Cadeia de caracteres|Chave da entidade.|
+|id|String|Chave da entidade.|
 |deviceName|String|Nome do dispositivo|
-|deviceId|Cadeia de caracteres|ID do dispositivo|
+|deviceId|Cadeia de caracteres|ID do Dispositivo|
 |lastSyncDateTime|DateTimeOffset|Hora da última sincronização|
 |mobileAppInstallStatusValue|[resultantAppState](../resources/intune-apps-resultantappstate.md)|O estado de instalação do aplicativo. Os valores possíveis são: `installed`, `failed`, `notInstalled`, `uninstallFailed`, `pendingInstall`, `unknown`, `notApplicable`.|
 |installState|[resultantAppState](../resources/intune-apps-resultantappstate.md)|O estado de instalação do aplicativo. Os valores possíveis são: `installed`, `failed`, `notInstalled`, `uninstallFailed`, `pendingInstall`, `unknown`, `notApplicable`.|
@@ -45,8 +45,8 @@ Contém propriedades para o estado de instalação de um aplicativo móvel para 
 |osVersion|String|Versão do sistema operacional|
 |osDescription|Cadeia de caracteres|Descrição do sistema operacional|
 |userName|Cadeia de caracteres|Nome de usuário do dispositivo|
-|userPrincipalName|Cadeia de caracteres|Nome UPN|
-|displayVersion|Cadeia de Caracteres|Versão acessível humana do aplicativo|
+|userPrincipalName|String|Nome UPN|
+|displayVersion|String|Versão acessível humana do aplicativo|
 
 ## <a name="relationships"></a>Relações
 |Relação|Tipo|Descrição|
@@ -79,6 +79,7 @@ Veja a seguir uma representação JSON do recurso.
   "displayVersion": "String"
 }
 ```
+
 
 
 

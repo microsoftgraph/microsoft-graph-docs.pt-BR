@@ -2,21 +2,21 @@
 title: Listar windowsDriverUpdateProfiles
 description: Listar propriedades e relações dos objetos windowsDriverUpdateProfile.
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: fe6bd5010d8539b1df163155dbe4b7e0fb8d4bb9
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 5da27ecfaa05676533ac0c1734f5b7b51e9f9531
+ms.sourcegitcommit: 65f4e128f96783c18d607a6dcffbc914291285d4
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59092543"
+ms.lasthandoff: 12/08/2021
+ms.locfileid: "61334267"
 ---
 # <a name="list-windowsdriverupdateprofiles"></a>Listar windowsDriverUpdateProfiles
 
 Namespace: microsoft.graph
 
-> **Importante:** As APIs Graph Microsoft na versão /beta estão sujeitas a alterações; não há suporte para uso de produção.
+> **Importante:** As GRAPH da Microsoft na versão /beta estão sujeitas a alterações; o uso de produção não é suportado.
 
 > **Observação:** A API do Microsoft Graph para Intune requer uma [licença ativa do Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
 
@@ -87,6 +87,7 @@ Content-Length: 579
   ]
 }
 ```
+
 
 
 

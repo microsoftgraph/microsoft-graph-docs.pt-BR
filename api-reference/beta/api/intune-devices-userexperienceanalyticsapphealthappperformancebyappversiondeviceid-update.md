@@ -2,21 +2,21 @@
 title: Atualizar userExperienceAnalyticsAppHealthAppPerformanceByAppVersionDeviceId
 description: Atualize as propriedades de um objeto userExperienceAnalyticsAppHealthAppPerformanceByAppVersionDeviceId.
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 899c3b3adbeacaea58ac1e2035e383d3cacd41cf
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: c9cd5f8c3b9c6954426a0c3b10a0781aaf36d1e0
+ms.sourcegitcommit: 65f4e128f96783c18d607a6dcffbc914291285d4
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59070584"
+ms.lasthandoff: 12/08/2021
+ms.locfileid: "61341275"
 ---
 # <a name="update-userexperienceanalyticsapphealthappperformancebyappversiondeviceid"></a>Atualizar userExperienceAnalyticsAppHealthAppPerformanceByAppVersionDeviceId
 
 Namespace: microsoft.graph
 
-> **Importante:** As APIs Graph Microsoft na versão /beta estão sujeitas a alterações; não há suporte para uso de produção.
+> **Importante:** As GRAPH da Microsoft na versão /beta estão sujeitas a alterações; o uso de produção não é suportado.
 
 > **Observação:** A API do Microsoft Graph para Intune requer uma [licença ativa do Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
 
@@ -27,9 +27,9 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 |Tipo de permissão|Permissões (da com menos para a com mais privilégios)|
 |:---|:---|
-|Delegado (conta corporativa ou de estudante)|DeviceManagementManagedDevices.ReadWrite.All|
+|Delegado (conta corporativa ou de estudante)|DeviceManagementConfiguration.ReadWrite.All, DeviceManagementManagedDevices.ReadWrite.All|
 |Delegado (conta pessoal da Microsoft)|Sem suporte.|
-|Aplicativo|DeviceManagementManagedDevices.ReadWrite.All|
+|Aplicativo|DeviceManagementConfiguration.ReadWrite.All, DeviceManagementManagedDevices.ReadWrite.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- {
@@ -58,9 +58,9 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar [o usuá
 |deviceDisplayName|Cadeia de caracteres|O nome do dispositivo.|
 |processedDateTime|DateTimeOffset|A data e a hora em que as estatísticas foram computadas pela última vez.|
 |appName|Cadeia de caracteres|O nome do aplicativo.|
-|appDisplayName|Cadeia de caracteres|O nome amigável do aplicativo.|
-|appPublisher|Cadeia de Caracteres|O editor do aplicativo.|
-|appVersion|Cadeia de caracteres|A versão do aplicativo.|
+|appDisplayName|String|O nome amigável do aplicativo.|
+|appPublisher|String|O editor do aplicativo.|
+|appVersion|String|A versão do aplicativo.|
 |appCrashCount|Int32|O número de falhas para o aplicativo. Valores válidos -2147483648 para 2147483647|
 
 
@@ -110,6 +110,7 @@ Content-Length: 488
   "appCrashCount": 13
 }
 ```
+
 
 
 

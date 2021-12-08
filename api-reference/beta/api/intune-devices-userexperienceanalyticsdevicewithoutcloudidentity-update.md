@@ -2,21 +2,21 @@
 title: Atualizar userExperienceAnalyticsDeviceWithoutCloudIdentity
 description: Atualize as propriedades de um objeto userExperienceAnalyticsDeviceWithoutCloudIdentity.
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 2868c769e7d358d674920b9c09acdb674470b993
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 471000d29bc011f00420b5c7f1b6943742386776
+ms.sourcegitcommit: 65f4e128f96783c18d607a6dcffbc914291285d4
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59132929"
+ms.lasthandoff: 12/08/2021
+ms.locfileid: "61341457"
 ---
 # <a name="update-userexperienceanalyticsdevicewithoutcloudidentity"></a>Atualizar userExperienceAnalyticsDeviceWithoutCloudIdentity
 
 Namespace: microsoft.graph
 
-> **Importante:** As APIs Graph Microsoft na versão /beta estão sujeitas a alterações; não há suporte para uso de produção.
+> **Importante:** As GRAPH da Microsoft na versão /beta estão sujeitas a alterações; o uso de produção não é suportado.
 
 > **Observação:** A API do Microsoft Graph para Intune requer uma [licença ativa do Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
 
@@ -27,9 +27,9 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 |Tipo de permissão|Permissões (da com menos para a com mais privilégios)|
 |:---|:---|
-|Delegado (conta corporativa ou de estudante)|DeviceManagementManagedDevices.ReadWrite.All|
+|Delegado (conta corporativa ou de estudante)|DeviceManagementConfiguration.ReadWrite.All, DeviceManagementManagedDevices.ReadWrite.All|
 |Delegado (conta pessoal da Microsoft)|Sem suporte.|
-|Aplicativo|DeviceManagementManagedDevices.ReadWrite.All|
+|Aplicativo|DeviceManagementConfiguration.ReadWrite.All, DeviceManagementManagedDevices.ReadWrite.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- {
@@ -53,9 +53,9 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar [o userE
 
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|id|Cadeia de caracteres|O identificador exclusivo do dispositivo de anexação do locatário de análise de experiência do usuário.|
+|id|String|O identificador exclusivo do dispositivo de anexação do locatário de análise de experiência do usuário.|
 |deviceName|String|O nome do dispositivo de anexação do locatário.|
-|azureAdDeviceId|Cadeia de Caracteres|Azure Active Directory ID do dispositivo|
+|azureAdDeviceId|String|Azure Active Directory ID do dispositivo|
 
 
 
@@ -92,6 +92,7 @@ Content-Length: 228
   "azureAdDeviceId": "Azure Ad Device Id value"
 }
 ```
+
 
 
 

@@ -2,21 +2,21 @@
 title: Atualizar windowsDriverUpdateInventory
 description: Atualize as propriedades de um objeto windowsDriverUpdateInventory.
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 90abc5dec10bed9998cf988783f4cdb9c67fef89
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: d183f2574150b30b26a508d588bef72e756e50b0
+ms.sourcegitcommit: 65f4e128f96783c18d607a6dcffbc914291285d4
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59138509"
+ms.lasthandoff: 12/08/2021
+ms.locfileid: "61341604"
 ---
 # <a name="update-windowsdriverupdateinventory"></a>Atualizar windowsDriverUpdateInventory
 
 Namespace: microsoft.graph
 
-> **Importante:** As APIs Graph Microsoft na versão /beta estão sujeitas a alterações; não há suporte para uso de produção.
+> **Importante:** As GRAPH da Microsoft na versão /beta estão sujeitas a alterações; o uso de produção não é suportado.
 
 > **Observação:** A API do Microsoft Graph para Intune requer uma [licença ativa do Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
 
@@ -53,12 +53,12 @@ A tabela a seguir mostra as propriedades necessárias ao criar [o windowsDriverU
 
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|id|Cadeia de caracteres|A id do driver.|
-|nome|Cadeia de caracteres|O nome do driver.|
+|id|String|A id do driver.|
+|nome|String|O nome do driver.|
 |versão|String|A versão do driver.|
 |fabricante|String|O fabricante do driver.|
 |releaseDateTime|DateTimeOffset|A data de lançamento do driver.|
-|driverClass|Cadeia de Caracteres|A classe do driver.|
+|driverClass|String|A classe do driver.|
 |applicableDeviceCount|Int32|O número de dispositivos para os quais esse driver é aplicável.|
 |approvalStatus|[driverApprovalStatus](../resources/intune-softwareupdate-driverapprovalstatus.md)|O status de aprovação desse driver. Os valores possíveis são: `needsReview`, `declined`, `approved`, `suspended`.|
 |category|[driverCategory](../resources/intune-softwareupdate-drivercategory.md)|A categoria desse driver. Os valores possíveis são: `recommended`, `previouslyApproved`, `other`.|
@@ -113,6 +113,7 @@ Content-Length: 474
   "deployDateTime": "2017-01-01T00:01:14.7822152-08:00"
 }
 ```
+
 
 
 

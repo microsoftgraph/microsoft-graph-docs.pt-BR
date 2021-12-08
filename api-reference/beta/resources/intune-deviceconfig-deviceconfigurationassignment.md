@@ -5,18 +5,18 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 50ec850986b907acf91c2c9f0518e9f76d1aa7be
-ms.sourcegitcommit: c7ff992ef63e480d070421ba99b28ee129cb6acb
+ms.openlocfilehash: 727bbfc8b0137331e3af42512c4e46ab6e6ed89a
+ms.sourcegitcommit: 65f4e128f96783c18d607a6dcffbc914291285d4
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "60696060"
+ms.lasthandoff: 12/08/2021
+ms.locfileid: "61339042"
 ---
 # <a name="deviceconfigurationassignment-resource-type"></a>Tipo de recurso deviceConfigurationAssignment
 
 Namespace: microsoft.graph
 
-> **Importante:** As APIs Graph Microsoft na versão /beta estão sujeitas a alterações; não há suporte para uso de produção.
+> **Importante:** As GRAPH da Microsoft na versão /beta estão sujeitas a alterações; o uso de produção não é suportado.
 
 > **Observação:** A API do Microsoft Graph para Intune requer uma [licença ativa do Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
 
@@ -38,7 +38,7 @@ A entidade de atribuição de configuração do dispositivo atribui um grupo AAD
 |destino|[deviceAndAppManagementAssignmentTarget](../resources/intune-shared-deviceandappmanagementassignmenttarget.md)|O destino da atribuição da configuração do dispositivo.|
 |source|[deviceAndAppManagementAssignmentSource](../resources/intune-shared-deviceandappmanagementassignmentsource.md)|A origem da atribuição para a configuração do dispositivo, direct ou parcel/policySet. Essa propriedade é somente leitura. Os valores possíveis são: `direct` e `policySets`.|
 |sourceId|String|O identificador da origem da atribuição. Essa propriedade é somente leitura.|
-|finalidade|[deviceConfigAssignmentIntent](../resources/intune-deviceconfig-deviceconfigassignmentintent.md)|A intenção do administrador de aplicar ou remover o perfil. Essa propriedade é somente leitura. Os valores possíveis são: `apply`, `remove`.|
+|finalidade|[deviceConfigAssignmentIntent](../resources/intune-deviceconfig-deviceconfigassignmentintent.md)|A intenção do administrador de aplicar ou remover o perfil. Os valores possíveis são: `apply`, `remove`.|
 
 ## <a name="relationships"></a>Relações
 Nenhum
@@ -66,6 +66,7 @@ Veja a seguir uma representação JSON do recurso.
   "intent": "String"
 }
 ```
+
 
 
 

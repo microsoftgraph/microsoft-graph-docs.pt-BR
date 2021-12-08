@@ -2,21 +2,21 @@
 title: Criar deviceShellScript
 description: Crie um novo objeto deviceShellScript.
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 218dbf0aaf761a90426b50c28226e3cd60fb0173
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 5acad1413223e83ba7fbaf37aa90e0a149e9626a
+ms.sourcegitcommit: 65f4e128f96783c18d607a6dcffbc914291285d4
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59042225"
+ms.lasthandoff: 12/08/2021
+ms.locfileid: "61340890"
 ---
 # <a name="create-deviceshellscript"></a>Criar deviceShellScript
 
 Namespace: microsoft.graph
 
-> **Importante:** As APIs Graph Microsoft na versão /beta estão sujeitas a alterações; não há suporte para uso de produção.
+> **Importante:** As GRAPH da Microsoft na versão /beta estão sujeitas a alterações; o uso de produção não é suportado.
 
 > **Observação:** A API do Microsoft Graph para Intune requer uma [licença ativa do Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
 
@@ -27,9 +27,9 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 |Tipo de permissão|Permissões (da com menos para a com mais privilégios)|
 |:---|:---|
-|Delegado (conta corporativa ou de estudante)|DeviceManagementManagedDevices.ReadWrite.All|
+|Delegado (conta corporativa ou de estudante)|DeviceManagementConfiguration.ReadWrite.All, DeviceManagementManagedDevices.ReadWrite.All|
 |Delegado (conta pessoal da Microsoft)|Sem suporte.|
-|Aplicativo|DeviceManagementManagedDevices.ReadWrite.All|
+|Aplicativo|DeviceManagementConfiguration.ReadWrite.All, DeviceManagementManagedDevices.ReadWrite.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- {
@@ -53,18 +53,18 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar o device
 
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|executionFrequency|Duration|O intervalo para que o script seja executado. Se não estiver definido, o script será executado uma vez|
+|executionFrequency|Duração|O intervalo para que o script seja executado. Se não estiver definido, o script será executado uma vez|
 |retryCount|Int32|Número de vezes em que o script será retridido se ele falhar|
-|blockExecutionNotifications|Boleano|Não notifica ao usuário que um script está sendo executado|
-|id|Cadeia de caracteres|Identificador exclusivo do script de gerenciamento de dispositivos.|
-|displayName|Cadeia de caracteres|Nome do script de gerenciamento de dispositivos.|
-|description|Cadeia de caracteres|Descrição opcional para o script de gerenciamento de dispositivos.|
-|scriptContent|Binário|O conteúdo do script.|
+|blockExecutionNotifications|Boolean|Não notifica ao usuário que um script está sendo executado|
+|id|String|Identificador exclusivo do script de gerenciamento de dispositivos.|
+|displayName|String|Nome do script de gerenciamento de dispositivos.|
+|description|String|Descrição opcional para o script de gerenciamento de dispositivos.|
+|scriptContent|Binária|O conteúdo do script.|
 |createdDateTime|DateTimeOffset|A data e a hora em que o script de gerenciamento de dispositivos foi criado. Essa propriedade é somente leitura.|
 |lastModifiedDateTime|DateTimeOffset|A data e a hora em que o script de gerenciamento de dispositivos foi modificado pela última vez. Essa propriedade é somente leitura.|
 |runAsAccount|[runAsAccountType](../resources/intune-shared-runasaccounttype.md)|Indica o tipo de contexto de execução. Os valores possíveis são: `system` e `user`.|
 |fileName|String|Nome do arquivo de script.|
-|roleScopeTagIds|String collection|Lista de IDs de marca de escopo para esta instância do PowerShellScript.|
+|roleScopeTagIds|Coleção de cadeias de caracteres|Lista de IDs de marca de escopo para esta instância do PowerShellScript.|
 
 
 
@@ -121,6 +121,7 @@ Content-Length: 581
   ]
 }
 ```
+
 
 
 

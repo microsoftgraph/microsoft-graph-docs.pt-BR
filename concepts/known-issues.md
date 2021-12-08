@@ -3,12 +3,12 @@ title: Problemas conhecidos com o Microsoft Graph
 description: Este artigo descreve os problemas conhecidos com o Microsoft Graph.
 author: MSGraphDocsVTeam
 ms.localizationpriority: high
-ms.openlocfilehash: 09efbe4e6d4ff5cefa986e12fa730dc2ec418505
-ms.sourcegitcommit: f65eee432cc903324b5f9b31710fdc6100590f36
+ms.openlocfilehash: 57419763ca3a35d41ecd871c83cc396f81936671
+ms.sourcegitcommit: 65f4e128f96783c18d607a6dcffbc914291285d4
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/07/2021
-ms.locfileid: "61321817"
+ms.lasthandoff: 12/08/2021
+ms.locfileid: "61335793"
 ---
 # <a name="known-issues-with-microsoft-graph"></a>Problemas conhecidos com o Microsoft Graph
 
@@ -420,13 +420,17 @@ As chamadas de API a seguir não suportam a instalação de aplicativos que exig
 
 ## <a name="users"></a>Usuários
 
-### <a name="use-the-dollar--symbol-in-the-userprincipalname"></a>Usar o símbolo de cifrão ($) no userPrincipalName
+### <a name="get-user-by-userprincipalname-that-starts-with-a-dollar--symbol"></a>Obter usuário pelo userPrincipalName que começa com um símbolo de dólar ($)
 
 O Microsoft Graph permite que o **userPrincipalName** comece com um caractere de cifrão (`$`). No entanto, ao consultar usuários por userPrincipalName, a url de solicitação `/users/$x@y.com` falha. Isso porque essa URL de solicitação viola a convenção de URL OData que espera que apenas as opções de consulta do sistema sejam prefixadas com um caractere `$`. Como alternativa, remova a barra (/) após `/users` e coloque o **userPrincipalName** entre parênteses e aspas simples como a seguir: `/users('$x@y.com')`
 
+### <a name="encode-number--symbols-in-userprincipalname"></a>Codificar símbolos de número (#) em userPrincipalName
+
+O **userPrincipalName** de usuários convidados adicionados por meio do Azure AD B2B geralmente contém o caractere de número (#). Usando `$filter` em um **userPrincipalName** que contém o símbolo #, por exemplo, `GET /users?$filter=userPrincipalName eq 'AdeleV_contoso.com#EXT#@fabrikam.com'`, retorna uma resposta de erro HTTP `400 Bad request`. Para filtrar pelo **userPrincipalName**, codifique o caractere # usando seu equivalente UTF-8 (`%23`), por exemplo, `GET /users?$filter=userPrincipalName eq 'AdeleV_contoso.com%23EXT%23@fabrikam.com'`.
+
 ### <a name="access-to-user-resources-is-delayed-after-creation"></a>O acesso aos recursos do usuário é aiado após a criação
 
-Os usuários podem ser criados imediatamente por um POST na entidade do usuário. Uma licença do Office 365 deve ser atribuída a um usuário primeiro para que ele possa ter acesso aos serviços do Microsoft 365. Mesmo assim, devido à natureza distribuída do serviço, pode demorar 15 minutos antes que os arquivos, as mensagens e as entidades de eventos fiquem disponíveis para uso por esse usuário na API do Microsoft Graph. Durante esse período, os aplicativos receberão uma resposta de erro HTTP `404`.
+Os usuários podem ser criados imediatamente por um POST na entidade do usuário. Uma licença do Office 365 deve ser atribuída a um usuário primeiro para que ele possa ter acesso aos serviços do Microsoft 365. Mesmo assim, devido à natureza distribuída do serviço, pode demorar 15 minutos antes que os arquivos, as mensagens e as entidades de eventos fiquem disponíveis para uso por esse usuário na API do Microsoft Graph. Durante esse período, os aplicativos receberão uma resposta de erro HTTP `404 Not Found`.
 
 ### <a name="access-to-a-users-profile-photo-is-limited"></a>O acesso à foto de perfil de um usuário é limitado
 
