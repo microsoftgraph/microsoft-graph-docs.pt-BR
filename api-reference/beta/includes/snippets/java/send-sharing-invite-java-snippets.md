@@ -1,11 +1,11 @@
 ---
 description: Arquivo gerado automaticamente. NÃO MODIFICAR
-ms.openlocfilehash: f48e2fa4a385e22561a3e23d8a35bd68ccaa7342415d23657ee6dd56f7ab3ea2
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: caabd73511946ec0ad1afbc052d83d448657ca0d
+ms.sourcegitcommit: 65f4e128f96783c18d607a6dcffbc914291285d4
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "57214687"
+ms.lasthandoff: 12/08/2021
+ms.locfileid: "61348765"
 ---
 ```java
 
@@ -13,7 +13,7 @@ GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProv
 
 LinkedList<DriveRecipient> recipientsList = new LinkedList<DriveRecipient>();
 DriveRecipient recipients = new DriveRecipient();
-recipients.email = "ryan@contoso.org";
+recipients.email = "robin@contoso.org";
 
 recipientsList.add(recipients);
 

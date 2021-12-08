@@ -1,11 +1,11 @@
 ---
 description: Arquivo gerado automaticamente. NÃO MODIFICAR
-ms.openlocfilehash: 1211944f5823a787f88e5acdd97c0dbd13341dd68fdb9d26bc3b4b6e9adbbe86
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: e0eb9a80c4fcf816cdd3e988317e9a560a0eb6db
+ms.sourcegitcommit: 65f4e128f96783c18d607a6dcffbc914291285d4
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "57213751"
+ms.lasthandoff: 12/08/2021
+ms.locfileid: "61348762"
 ---
 ```objc
 
@@ -18,7 +18,7 @@ NSMutableURLRequest *urlRequest = [NSMutableURLRequest requestWithURL:[NSURL URL
 
 MSGraphPermissionGrantConditionSet *permissionGrantConditionSet = [[MSGraphPermissionGrantConditionSet alloc] init];
 [permissionGrantConditionSet setPermissionType: [MSGraphPermissionType delegated]];
-[permissionGrantConditionSet setClientApplicationsFromVerifiedPublisherOnly: true];
+[permissionGrantConditionSet setCertifiedClientApplicationsOnly: true];
 
 NSError *error;
 NSData *permissionGrantConditionSetData = [permissionGrantConditionSet getSerializedDataWithError:&error];

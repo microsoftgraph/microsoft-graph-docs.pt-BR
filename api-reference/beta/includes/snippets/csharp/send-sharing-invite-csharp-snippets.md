@@ -1,11 +1,11 @@
 ---
 description: Arquivo gerado automaticamente. NÃO MODIFICAR
-ms.openlocfilehash: 2099fff6c344d73c9ef3577963f245c77f3ed0a9fc0b3d7a119cb910165217a6
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: ca3d5685c514a9ead75d39941ca11ebd6dadcb63
+ms.sourcegitcommit: 65f4e128f96783c18d607a6dcffbc914291285d4
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "57326669"
+ms.lasthandoff: 12/08/2021
+ms.locfileid: "61348768"
 ---
 ```csharp
 
@@ -15,7 +15,7 @@ var recipients = new List<DriveRecipient>()
 {
     new DriveRecipient
     {
-        Email = "ryan@contoso.org"
+        Email = "robin@contoso.org"
     }
 };
 
