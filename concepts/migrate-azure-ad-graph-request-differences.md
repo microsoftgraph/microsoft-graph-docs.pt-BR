@@ -1,21 +1,21 @@
 ---
-title: Solicitar diferenças entre o Azure Active Directory (Azure AD) Graph e o Microsoft Graph
+title: Solicitar diferenças entre o Azure AD Graph e o Microsoft Graph
 description: Descreve como as solicitações do Microsoft Graph diferem das solicitações Azure Active Directory (Azure AD) Graph, o que ajuda a migrar aplicativos para o serviço mais novo..
 author: dkershaw10
 ms.localizationpriority: medium
 ms.prod: applications
-ms.openlocfilehash: 2b253ee68cd0de691d173ebdeefadbe084c5dbc0
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: dc11e79faf3d2e1e0cc614fe9044eea7e41bb9a5
+ms.sourcegitcommit: 65f4e128f96783c18d607a6dcffbc914291285d4
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59078557"
+ms.lasthandoff: 12/08/2021
+ms.locfileid: "61344446"
 ---
-# <a name="request-differences-between-azure-active-directory-azure-ad-graph-and-microsoft-graph"></a>Solicitar diferenças entre o Azure Active Directory (Azure AD) Graph e o Microsoft Graph
+# <a name="request-differences-between-azure-ad-graph-and-microsoft-graph"></a>Solicitar diferenças entre o Azure AD Graph e o Microsoft Graph
 
 Este artigo faz parte da *etapa 1: analisar as* diferenças de API do processo para [migrar aplicativos.](migrate-azure-ad-graph-planning-checklist.md)
 
-O Microsoft Graph e a API de Graph do Azure AD são APIs REST e cada uma delas oferece suporte a convenções ODATA para parâmetros de consulta. No entanto, a sintaxe varia entre essas duas APIs.
+O microsoft Graph e a API Azure Active Directory (Azure AD) Graph são APIs REST e cada uma delas oferece suporte a convenções OData para parâmetros de consulta. No entanto, a sintaxe varia entre essas duas APIs.
 
 Use [Graph Explorer](https://aka.ms/ge) para experimentar esses padrões de solicitação em relação aos seus próprios dados, pois é uma ótima maneira de aprender sobre as diferenças de solicitação e resposta.
 
@@ -110,18 +110,18 @@ As relações (ou propriedades de navegação) são um conceito-chave no Azure A
 
 As relações também definem associações, como os grupos aos quais um usuário pertence, os membros pertencentes a um grupo ou a uma função de diretório e assim por diante.
 
-As solicitações do Azure AD Graph `$link` para indicar relações entre recursos.  No Microsoft Graph isso usa a notação ODATA 4.01. `$ref`
+As solicitações do Azure AD Graph `$links` para indicar relações entre recursos.  No Microsoft Graph isso usa a notação OData v4.01. `$ref`
 
 A tabela a seguir mostra vários exemplos:
 
 | Tarefa | Azure AD Graph. | Microsoft Graph |
 |------|----------------|-----------------|
-| Adicionar membro        | ```POST /groups/{id}/$link/members```        | ```POST /groups/{id}/members/$ref```        |
-| Listar links de membros | ```GET /groups/{id}/$link/members```         | ```GET /groups/{id}/members/$ref```         |
-| Listar membros      | ```GET /groups/{id}/members```                | ```GET /groups/{id}/members```               |
-| Remover membro     | ```DELETE /groups/{id}/$link/members/{id}``` | ```DELETE /groups/{id}/members/{id}/$ref``` |
+| Adicionar membro        | `POST /groups/{id}/$links/members`        | `POST /groups/{id}/members/$ref`        |
+| Listar links de membros | `GET /groups/{id}/$links/members`         | `GET /groups/{id}/members/$ref`         |
+| Listar membros      | `GET /groups/{id}/members`                | `GET /groups/{id}/members`               |
+| Remover membro     | `DELETE /groups/{id}/$links/members/{id}` | `DELETE /groups/{id}/members/{id}/$ref` |
 
-Ao migrar seus aplicativos para o Microsoft Graph, procure solicitações que usem para associar `$link` recursos; altere-os para `$ref` usar.
+Ao migrar seus aplicativos para o Microsoft Graph, procure solicitações que usem para associar `$links` recursos; altere-os para `$ref` usar.
 
 ## <a name="next-steps"></a>Próximas etapas
 

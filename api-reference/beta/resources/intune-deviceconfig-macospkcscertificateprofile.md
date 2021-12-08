@@ -5,18 +5,18 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 06123af09454b134dd8261a1ed3e9816e4d7e31d
-ms.sourcegitcommit: c7ff992ef63e480d070421ba99b28ee129cb6acb
+ms.openlocfilehash: 4e59625c6e9f92d3d974bc4e04f6e1c80f467872
+ms.sourcegitcommit: 65f4e128f96783c18d607a6dcffbc914291285d4
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "60696312"
+ms.lasthandoff: 12/08/2021
+ms.locfileid: "61336164"
 ---
 # <a name="macospkcscertificateprofile-resource-type"></a>Tipo de recurso macOSPkcsCertificateProfile
 
 Namespace: microsoft.graph
 
-> **Importante:** As APIs Graph Microsoft na versão /beta estão sujeitas a alterações; não há suporte para uso de produção.
+> **Importante:** As GRAPH da Microsoft na versão /beta estão sujeitas a alterações; o uso de produção não é suportado.
 
 > **Observação:** A API do Microsoft Graph para Intune requer uma [licença ativa do Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
 
@@ -25,7 +25,7 @@ Perfil de certificado PKCS do MacOS.
 
 Herda de [macOSCertificateProfileBase](../resources/intune-deviceconfig-macoscertificateprofilebase.md)
 
-## <a name="methods"></a>Métodos
+## <a name="methods"></a>Methods
 |Método|Tipo de retorno|Descrição|
 |:---|:---|:---|
 |[Listar macOSPkcsCertificateProfiles](../api/intune-deviceconfig-macospkcscertificateprofile-list.md)|[Coleção macOSPkcsCertificateProfile](../resources/intune-deviceconfig-macospkcscertificateprofile.md)|Listar propriedades e relações dos [objetos macOSPkcsCertificateProfile.](../resources/intune-deviceconfig-macospkcscertificateprofile.md)|
@@ -45,7 +45,7 @@ Herda de [macOSCertificateProfileBase](../resources/intune-deviceconfig-macoscer
 |deviceManagementApplicabilityRuleOsVersion|[deviceManagementApplicabilityRuleOsVersion](../resources/intune-deviceconfig-devicemanagementapplicabilityruleosversion.md)|A regra de aplicabilidade da versão do sistema operacional para esta Política. Herdada de [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
 |deviceManagementApplicabilityRuleDeviceMode|[deviceManagementApplicabilityRuleDeviceMode](../resources/intune-deviceconfig-devicemanagementapplicabilityruledevicemode.md)|A regra de aplicabilidade do modo de dispositivo para esta Política. Herdada de [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
 |createdDateTime|DateTimeOffset|DateTime em que o objeto foi criado. Herdada de [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
-|descrição|String|O administrador forneceu a descrição da Configuração do dispositivo. Herdada de [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
+|description|String|O administrador forneceu a descrição da Configuração do dispositivo. Herdada de [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
 |displayName|String|O administrador forneceu o nome da Configuração do dispositivo. Herdada de [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
 |versão|Int32|Versão da configuração do dispositivo. Herdada de [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
 |renewalThresholdPercentage|Int32|Porcentagem de limite de renovação de certificado. Herdado [do macOSCertificateProfileBase](../resources/intune-deviceconfig-macoscertificateprofilebase.md)|
@@ -60,7 +60,7 @@ Herda de [macOSCertificateProfileBase](../resources/intune-deviceconfig-macoscer
 |subjectNameFormatString|String|Formatar cadeia de caracteres que define o nome do assunto. Exemplo: CN={{EmailAddress}},E={{EmailAddress}},OU=Enterprise Users,O=Contoso Corporation,L=Redmond,ST=WA,C=US|
 |certificateStore|[certificateStore](../resources/intune-shared-certificatestore.md)|Certificado de armazenamento de destino. Os valores possíveis são: `user` e `machine`.|
 |customSubjectAlternativeNames|[Coleção customSubjectAlternativeName](../resources/intune-deviceconfig-customsubjectalternativename.md)|Nome alternativo de assunto personalizado Configurações. Esta coleção pode conter um máximo de 500 elementos.|
-|allowAllAppsAccess|Booliano|Configuração AllowAllAppsAccess|
+|allowAllAppsAccess|Boolean|Configuração AllowAllAppsAccess|
 
 ## <a name="relationships"></a>Relações
 |Relação|Tipo|Descrição|
@@ -137,6 +137,7 @@ Veja a seguir uma representação JSON do recurso.
   "allowAllAppsAccess": true
 }
 ```
+
 
 
 

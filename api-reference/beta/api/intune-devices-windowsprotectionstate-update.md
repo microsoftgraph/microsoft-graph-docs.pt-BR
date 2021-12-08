@@ -2,21 +2,21 @@
 title: Atualizar windowsProtectionState
 description: Atualize as propriedades de um objeto windowsProtectionState.
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 92174fd5788a424ceaab08815d143ae229ef7e5e
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: db2a4ff79635563d383ef4ffcbf797499a13adcb
+ms.sourcegitcommit: 65f4e128f96783c18d607a6dcffbc914291285d4
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59024541"
+ms.lasthandoff: 12/08/2021
+ms.locfileid: "61341989"
 ---
 # <a name="update-windowsprotectionstate"></a>Atualizar windowsProtectionState
 
 Namespace: microsoft.graph
 
-> **Importante:** As APIs Graph Microsoft na versão /beta estão sujeitas a alterações; não há suporte para uso de produção.
+> **Importante:** As GRAPH da Microsoft na versão /beta estão sujeitas a alterações; o uso de produção não é suportado.
 
 > **Observação:** A API do Microsoft Graph para Intune requer uma [licença ativa do Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
 
@@ -27,9 +27,9 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 |Tipo de permissão|Permissões (da com menos para a com mais privilégios)|
 |:---|:---|
-|Delegado (conta corporativa ou de estudante)|DeviceManagementManagedDevices.ReadWrite.All|
+|Delegado (conta corporativa ou de estudante)|DeviceManagementConfiguration.ReadWrite.All, DeviceManagementManagedDevices.ReadWrite.All|
 |Delegado (conta pessoal da Microsoft)|Sem suporte.|
-|Aplicativo|DeviceManagementManagedDevices.ReadWrite.All|
+|Aplicativo|DeviceManagementConfiguration.ReadWrite.All, DeviceManagementManagedDevices.ReadWrite.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- {
@@ -53,7 +53,7 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar [o windo
 
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|id|Cadeia de caracteres|O Identificador exclusivo do objeto de status de proteção do dispositivo. Esta é a ID do dispositivo|
+|id|String|O Identificador exclusivo do objeto de status de proteção do dispositivo. Esta é a ID do dispositivo|
 |malwareProtectionEnabled|Booliano|O anti malware está habilitado ou não|
 |deviceState|[windowsDeviceHealthState](../resources/intune-devices-windowsdevicehealthstate.md)|Estado do computador (como verificação completa ou pendente ou reinicialização pendente etc.). Os possíveis valores são: `clean`, `fullScanPending`, `rebootPending`, `manualStepsPending`, `offlineScanPending`, `critical`.|
 |realTimeProtectionEnabled|Booliano|A proteção em tempo real está habilitada ou não?|
@@ -63,16 +63,16 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar [o windo
 |signatureUpdateOverdue|Booliano|Assinatura desa datada ou não?|
 |rebootRequired|Boolean|Reiniciar obrigatório ou não?|
 |fullScanRequired|Booliano|Verificação completa necessária ou não?|
-|engineVersion|Cadeia de caracteres|Versão atual do mecanismo de proteção de ponto de extremidade|
+|engineVersion|String|Versão atual do mecanismo de proteção de ponto de extremidade|
 |signatureVersion|String|Versão atual das definições de malware|
-|antiMalwareVersion|Cadeia de caracteres|Versão anti malware atual|
+|antiMalwareVersion|String|Versão anti malware atual|
 |lastQuickScanDateTime|DateTimeOffset|Data da última verificação rápida|
 |lastFullScanDateTime|DateTimeOffset|Data da última verificação rápida|
-|lastQuickScanSignatureVersion|Cadeia de caracteres|Última versão de assinatura de verificação rápida|
-|lastFullScanSignatureVersion|Cadeia de caracteres|Última versão de assinatura de verificação completa|
+|lastQuickScanSignatureVersion|String|Última versão de assinatura de verificação rápida|
+|lastFullScanSignatureVersion|String|Última versão de assinatura de verificação completa|
 |lastReportedDateTime|DateTimeOffset|Tempo de notificado do último status de saúde do dispositivo|
 |productStatus|[windowsDefenderProductStatus](../resources/intune-devices-windowsdefenderproductstatus.md)|Status do produto Windows Defender Antivírus. Os valores possíveis são: `noStatus` , , , , , , , , `serviceNotRunning` `serviceStartedWithoutMalwareProtection` `pendingFullScanDueToThreatAction` `pendingRebootDueToThreatAction` `pendingManualStepsDueToThreatAction` `avSignaturesOutOfDate` `asSignaturesOutOfDate` `noQuickScanHappenedForSpecifiedPeriod` `noFullScanHappenedForSpecifiedPeriod` `systemInitiatedScanInProgress` `systemInitiatedCleanInProgress` `samplesPendingSubmission` `productRunningInEvaluationMode` , `productRunningInNonGenuineMode` `productExpired` `offlineScanRequired` `serviceShutdownAsPartOfSystemShutdown` `threatRemediationFailedCritically` `threatRemediationFailedNonCritically` `noStatusFlagsSet` `platformOutOfDate` `platformUpdateInProgress` `platformAboutToBeOutdated` `signatureOrPlatformEndOfLifeIsPastOrIsImpending` `windowsSModeSignaturesInUseOnNonWin10SInstall`|
-|isVirtualMachine|Boleano|Indica se o dispositivo é uma máquina virtual.|
+|isVirtualMachine|Boolean|Indica se o dispositivo é uma máquina virtual.|
 |tamperProtectionEnabled|Booliano|Indica se o recurso Windows Defender proteção contra adulteração está habilitado.|
 
 
@@ -146,6 +146,7 @@ Content-Length: 1020
   "tamperProtectionEnabled": true
 }
 ```
+
 
 
 

@@ -2,21 +2,21 @@
 title: Criar userExperienceAnalyticsAppHealthAppPerformanceByAppVersion
 description: Crie um novo objeto userExperienceAnalyticsAppHealthAppPerformanceByAppVersion.
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 3f5c4c2e40df48a811cf2db936284be189198842
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: f6198eda41352172102910e757dfdb996b290123
+ms.sourcegitcommit: 65f4e128f96783c18d607a6dcffbc914291285d4
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59027852"
+ms.lasthandoff: 12/08/2021
+ms.locfileid: "61337676"
 ---
 # <a name="create-userexperienceanalyticsapphealthappperformancebyappversion"></a>Criar userExperienceAnalyticsAppHealthAppPerformanceByAppVersion
 
 Namespace: microsoft.graph
 
-> **Importante:** As APIs Graph Microsoft na versão /beta estão sujeitas a alterações; não há suporte para uso de produção.
+> **Importante:** As GRAPH da Microsoft na versão /beta estão sujeitas a alterações; o uso de produção não é suportado.
 
 > **Observação:** A API do Microsoft Graph para Intune requer uma [licença ativa do Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
 
@@ -27,9 +27,9 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 |Tipo de permissão|Permissões (da com menos para a com mais privilégios)|
 |:---|:---|
-|Delegado (conta corporativa ou de estudante)|DeviceManagementManagedDevices.ReadWrite.All|
+|Delegado (conta corporativa ou de estudante)|DeviceManagementConfiguration.ReadWrite.All, DeviceManagementManagedDevices.ReadWrite.All|
 |Delegado (conta pessoal da Microsoft)|Sem suporte.|
-|Aplicativo|DeviceManagementManagedDevices.ReadWrite.All|
+|Aplicativo|DeviceManagementConfiguration.ReadWrite.All, DeviceManagementManagedDevices.ReadWrite.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- {
@@ -54,10 +54,10 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar o userEx
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
 |id|String|O identificador exclusivo do objeto de desempenho do aplicativo de análise de experiência do usuário.|
-|appVersion|Cadeia de Caracteres|A versão do aplicativo.|
+|appVersion|String|A versão do aplicativo.|
 |appName|Cadeia de caracteres|O nome do aplicativo.|
-|appDisplayName|Cadeia de caracteres|O nome amigável do aplicativo.|
-|appPublisher|Cadeia de caracteres|O editor do aplicativo.|
+|appDisplayName|String|O nome amigável do aplicativo.|
+|appPublisher|String|O editor do aplicativo.|
 |appUsageDuration|Int32|O tempo total de uso do aplicativo em minutos. Valores válidos -2147483648 para 2147483647|
 |appCrashCount|Int32|O número de falhas para o aplicativo. Valores válidos -2147483648 para 2147483647|
 |meanTimeToFailureInMinutes|Int32|O tempo de falha média do aplicativo em minutos. Valores válidos -2147483648 para 2147483647|
@@ -107,6 +107,7 @@ Content-Length: 395
   "meanTimeToFailureInMinutes": 10
 }
 ```
+
 
 
 

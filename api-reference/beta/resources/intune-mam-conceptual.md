@@ -4,12 +4,12 @@ description: Lista a API Graph microsoft para pontos de extremidade do Intune (R
 author: dougeby
 ms.localizationpriority: medium
 ms.prod: intune
-ms.openlocfilehash: 70164fe13a52ec574ed78cdae1320cc2d0bb234e
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: d71c275d6b40e5c71f2f7ca737c93f99480b71d1
+ms.sourcegitcommit: 65f4e128f96783c18d607a6dcffbc914291285d4
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59075177"
+ms.lasthandoff: 12/08/2021
+ms.locfileid: "61336157"
 ---
 # <a name="how-to-protect-your-company-app-data-with-microsoft-intune"></a>Como proteger dados de aplicativos corporativos com o Microsoft Intune
 
@@ -39,7 +39,6 @@ Os seguintes recursos do Graph estão disponíveis para gerenciar políticas de 
 - [Registro de aplicativo gerenciado iOS](intune-mam-iosmanagedappregistration.md)
 - [Identificador de aplicativo móvel iOS](intune-mam-iosmobileappidentifier.md)
 - [JSON](intune-mam-json.md)
-- [Par chave/valor](intune-mam-keyvaluepair.md)
 - [Identificador de aplicativo Mac](intune-mam-macappidentifier.md)
 - [Nível de compartilhamento de área de transferência do aplicativo gerenciado](intune-mam-managedappclipboardsharinglevel.md)
 - [Configuração de aplicativo gerenciado](intune-mam-managedappconfiguration.md)

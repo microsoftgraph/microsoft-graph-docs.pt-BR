@@ -2,27 +2,27 @@
 title: tipo de recurso userExperienceAnalyticsAppHealthDeviceModelPerformance
 description: A entidade de desempenho do modelo de dispositivo de análise de experiência do usuário contém detalhes de desempenho do modelo de dispositivo.
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 71d8815d699af333a67ba0487138aa6052a72c07
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 7cbeff4c4b89259edb0bfa4aa149156aba60434e
+ms.sourcegitcommit: 65f4e128f96783c18d607a6dcffbc914291285d4
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59081042"
+ms.lasthandoff: 12/08/2021
+ms.locfileid: "61339609"
 ---
 # <a name="userexperienceanalyticsapphealthdevicemodelperformance-resource-type"></a>tipo de recurso userExperienceAnalyticsAppHealthDeviceModelPerformance
 
 Namespace: microsoft.graph
 
-> **Importante:** As APIs Graph Microsoft na versão /beta estão sujeitas a alterações; não há suporte para uso de produção.
+> **Importante:** As GRAPH da Microsoft na versão /beta estão sujeitas a alterações; o uso de produção não é suportado.
 
 > **Observação:** A API do Microsoft Graph para Intune requer uma [licença ativa do Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
 
 A entidade de desempenho do modelo de dispositivo de análise de experiência do usuário contém detalhes de desempenho do modelo de dispositivo.
 
-## <a name="methods"></a>Métodos
+## <a name="methods"></a>Methods
 |Método|Tipo de retorno|Descrição|
 |:---|:---|:---|
 |[Listar userExperienceAnalyticsAppHealthDeviceModelPerformances](../api/intune-devices-userexperienceanalyticsapphealthdevicemodelperformance-list.md)|[coleção userExperienceAnalyticsAppHealthDeviceModelPerformance](../resources/intune-devices-userexperienceanalyticsapphealthdevicemodelperformance.md)|Listar propriedades e relações dos [objetos userExperienceAnalyticsAppHealthDeviceModelPerformance.](../resources/intune-devices-userexperienceanalyticsapphealthdevicemodelperformance.md)|
@@ -34,13 +34,14 @@ A entidade de desempenho do modelo de dispositivo de análise de experiência do
 ## <a name="properties"></a>Propriedades
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|id|Cadeia de caracteres|O identificador exclusivo do objeto de desempenho do modelo de dispositivo de análise de experiência do usuário.|
+|id|String|O identificador exclusivo do objeto de desempenho do modelo de dispositivo de análise de experiência do usuário.|
 |deviceModel|Cadeia de caracteres|O nome do modelo do dispositivo.|
 |deviceManufacturer|String|O nome do fabricante do dispositivo.|
 |activeDeviceCount|Int32|O número de dispositivos ativos para o modelo. Valores válidos -2147483648 para 2147483647|
 |meanTimeToFailureInMinutes|Int32|O tempo de falha média para o dispositivo modelo em minutos. Valores válidos -2147483648 para 2147483647|
 |modelAppHealthScore|Duplo|A pontuação de saúde do aplicativo do modelo de dispositivo. Valores válidos -1,79769313486232E+308 a 1.79769313486232E+308|
-|modelAppHealthStatus|Cadeia de caracteres|O status geral da saúde do aplicativo do modelo de dispositivo.|
+|modelAppHealthStatus|String|O status geral da saúde do aplicativo do modelo de dispositivo.|
+|healthStatus|[userExperienceAnalyticsHealthState](../resources/intune-devices-userexperienceanalyticshealthstate.md)|O estado de saúde do modelo de análise da experiência do usuário. Os valores possíveis são: `unknown`, `insufficientData`, `needsAttention`, `meetingGoals`.|
 
 ## <a name="relationships"></a>Relações
 Nenhum
@@ -62,9 +63,11 @@ Veja a seguir uma representação JSON do recurso.
   "activeDeviceCount": 1024,
   "meanTimeToFailureInMinutes": 1024,
   "modelAppHealthScore": "4.2",
-  "modelAppHealthStatus": "String"
+  "modelAppHealthStatus": "String",
+  "healthStatus": "String"
 }
 ```
+
 
 
 

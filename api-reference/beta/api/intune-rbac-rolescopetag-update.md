@@ -2,21 +2,21 @@
 title: Atualizar roleScopeTag
 description: Atualize as propriedades de um objeto roleScopeTag.
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 681c80c4c94aa7e8a47ed67a56368473a3e6a68a
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 2592bf38066f946bb75d293e4a8e835c1a2521f7
+ms.sourcegitcommit: 65f4e128f96783c18d607a6dcffbc914291285d4
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59064942"
+ms.lasthandoff: 12/08/2021
+ms.locfileid: "61337333"
 ---
 # <a name="update-rolescopetag"></a>Atualizar roleScopeTag
 
 Namespace: microsoft.graph
 
-> **Importante:** As APIs Graph Microsoft na versão /beta estão sujeitas a alterações; não há suporte para uso de produção.
+> **Importante:** As GRAPH da Microsoft na versão /beta estão sujeitas a alterações; o uso de produção não é suportado.
 
 > **Observação:** A API do Microsoft Graph para Intune requer uma [licença ativa do Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
 
@@ -27,9 +27,9 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 |Tipo de permissão|Permissões (da com menos para a com mais privilégios)|
 |:---|:---|
-|Delegado (conta corporativa ou de estudante)|DeviceManagementRBAC.ReadWrite.All|
+|Delegado (conta corporativa ou de estudante)|DeviceManagementConfiguration.ReadWrite.All, DeviceManagementRBAC.ReadWrite.All|
 |Delegado (conta pessoal da Microsoft)|Sem suporte.|
-|Aplicativo|DeviceManagementRBAC.ReadWrite.All|
+|Aplicativo|DeviceManagementConfiguration.ReadWrite.All, DeviceManagementRBAC.ReadWrite.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- {
@@ -56,7 +56,7 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar [a roleS
 |:---|:---|:---|
 |id|String|Chave da entidade. É somente leitura e gerada automaticamente. Essa propriedade é somente leitura.|
 |displayName|String|O nome de exibição ou amigável da Marca de Escopo de Função.|
-|description|Cadeia de caracteres|Descrição da marca escopo de função.|
+|description|String|Descrição da marca escopo de função.|
 |isBuiltIn|Booliano|Descrição da marca escopo de função. Essa propriedade é somente leitura.|
 
 
@@ -96,6 +96,7 @@ Content-Length: 204
   "isBuiltIn": true
 }
 ```
+
 
 
 

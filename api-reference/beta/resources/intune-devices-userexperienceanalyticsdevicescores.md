@@ -2,27 +2,27 @@
 title: Tipo de recurso userExperienceAnalyticsDeviceScores
 description: A entidade pontuações do dispositivo de análise de experiência do usuário consolida as várias pontuações de análise de ponto de extremidade.
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 331ba306d8f9b5ec8a98c66692b9c333a7933166
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 7b692508d8ff4e7b7f5e99e566b1293e24f8be30
+ms.sourcegitcommit: 65f4e128f96783c18d607a6dcffbc914291285d4
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59125796"
+ms.lasthandoff: 12/08/2021
+ms.locfileid: "61337536"
 ---
 # <a name="userexperienceanalyticsdevicescores-resource-type"></a>Tipo de recurso userExperienceAnalyticsDeviceScores
 
 Namespace: microsoft.graph
 
-> **Importante:** As APIs Graph Microsoft na versão /beta estão sujeitas a alterações; não há suporte para uso de produção.
+> **Importante:** As GRAPH da Microsoft na versão /beta estão sujeitas a alterações; o uso de produção não é suportado.
 
 > **Observação:** A API do Microsoft Graph para Intune requer uma [licença ativa do Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
 
 A entidade pontuações do dispositivo de análise de experiência do usuário consolida as várias pontuações de análise de ponto de extremidade.
 
-## <a name="methods"></a>Métodos
+## <a name="methods"></a>Methods
 |Método|Tipo de retorno|Descrição|
 |:---|:---|:---|
 |[Listar userExperienceAnalyticsDeviceScoreses](../api/intune-devices-userexperienceanalyticsdevicescores-list.md)|[Coleção userExperienceAnalyticsDeviceScores](../resources/intune-devices-userexperienceanalyticsdevicescores.md)|Listar propriedades e relações dos [objetos userExperienceAnalyticsDeviceScores.](../resources/intune-devices-userexperienceanalyticsdevicescores.md)|
@@ -34,7 +34,7 @@ A entidade pontuações do dispositivo de análise de experiência do usuário c
 ## <a name="properties"></a>Propriedades
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|id|Cadeia de caracteres|O identificador exclusivo do dispositivo de pontuação do dispositivo de análise de experiência do usuário.|
+|id|String|O identificador exclusivo do dispositivo de pontuação do dispositivo de análise de experiência do usuário.|
 |deviceName|String|O nome do dispositivo de análise de experiência do usuário.|
 |modelo|String|O modelo de dispositivo de análise de experiência do usuário.|
 |fabricante|String|O fabricante do dispositivo de análise de experiência do usuário.|
@@ -69,6 +69,7 @@ Veja a seguir uma representação JSON do recurso.
   "healthStatus": "String"
 }
 ```
+
 
 
 

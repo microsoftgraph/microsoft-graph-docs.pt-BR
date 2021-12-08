@@ -2,21 +2,21 @@
 title: Atualizar mobileAppInstallStatus
 description: Atualize as propriedades de um objeto mobileAppInstallStatus.
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: c450447ecf733494bd7dad31d4ad81090a2a8cc8
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 8b8350aac18a8728b0be4ecc355f5819b3407a0c
+ms.sourcegitcommit: 65f4e128f96783c18d607a6dcffbc914291285d4
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59028475"
+ms.lasthandoff: 12/08/2021
+ms.locfileid: "61339448"
 ---
 # <a name="update-mobileappinstallstatus"></a>Atualizar mobileAppInstallStatus
 
 Namespace: microsoft.graph
 
-> **Importante:** As APIs Graph Microsoft na versão /beta estão sujeitas a alterações; não há suporte para uso de produção.
+> **Importante:** As GRAPH da Microsoft na versão /beta estão sujeitas a alterações; o uso de produção não é suportado.
 
 > **Observação:** A API do Microsoft Graph para Intune requer uma [licença ativa do Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
 
@@ -56,7 +56,7 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar [o mobil
 |:---|:---|:---|
 |id|String|Chave da entidade.|
 |deviceName|String|Nome do dispositivo|
-|deviceId|Cadeia de caracteres|ID do dispositivo|
+|deviceId|Cadeia de caracteres|ID do Dispositivo|
 |lastSyncDateTime|DateTimeOffset|Hora da última sincronização|
 |mobileAppInstallStatusValue|[resultantAppState](../resources/intune-apps-resultantappstate.md)|O estado de instalação do aplicativo. Os valores possíveis são: `installed`, `failed`, `notInstalled`, `uninstallFailed`, `pendingInstall`, `unknown`, `notApplicable`.|
 |installState|[resultantAppState](../resources/intune-apps-resultantappstate.md)|O estado de instalação do aplicativo. Os valores possíveis são: `installed`, `failed`, `notInstalled`, `uninstallFailed`, `pendingInstall`, `unknown`, `notApplicable`.|
@@ -65,7 +65,7 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar [o mobil
 |osVersion|String|Versão do sistema operacional|
 |osDescription|Cadeia de caracteres|Descrição do sistema operacional|
 |userName|Cadeia de caracteres|Nome de usuário do dispositivo|
-|userPrincipalName|Cadeia de caracteres|Nome UPN|
+|userPrincipalName|String|Nome UPN|
 |displayVersion|String|Versão acessível humana do aplicativo|
 
 
@@ -123,6 +123,7 @@ Content-Length: 604
   "displayVersion": "Display Version value"
 }
 ```
+
 
 
 

@@ -5,18 +5,18 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: a53dd403abb8c9367122f75a2f8c4a45a3193488
-ms.sourcegitcommit: c7ff992ef63e480d070421ba99b28ee129cb6acb
+ms.openlocfilehash: 9e7a28dbd23218001030e34309ce751345489261
+ms.sourcegitcommit: 65f4e128f96783c18d607a6dcffbc914291285d4
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "60688784"
+ms.lasthandoff: 12/08/2021
+ms.locfileid: "61341975"
 ---
 # <a name="windows10generalconfiguration-resource-type"></a>Tipo de recurso windows10GeneralConfiguration
 
 Namespace: microsoft.graph
 
-> **Importante:** As APIs Graph Microsoft na versão /beta estão sujeitas a alterações; não há suporte para uso de produção.
+> **Importante:** As GRAPH da Microsoft na versão /beta estão sujeitas a alterações; o uso de produção não é suportado.
 
 > **Observação:** A API do Microsoft Graph para Intune requer uma [licença ativa do Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
 
@@ -40,12 +40,12 @@ Herda de [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md
 |id|String|Chave da entidade. Herdada de [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
 |lastModifiedDateTime|DateTimeOffset|DateTime da última modificação do objeto. Herdada de [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
 |roleScopeTagIds|Coleção de cadeias de caracteres|Lista de marcas de escopo para esta instância entity. Herdada de [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
-|supportsScopeTags|Booliano|Indica se a Configuração de Dispositivo subjacente dá suporte ou não à atribuição de marcas de escopo. A atribuição à propriedade ScopeTags não é permitida quando esse valor é falso e as entidades não estarão visíveis para usuários com escopo. Isso ocorre para políticas herdadas criadas no Silverlight e podem ser resolvidas excluindo e recriando a política no Portal do Azure. Essa propriedade é somente leitura. Herdada de [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
+|supportsScopeTags|Boolean|Indica se a Configuração de Dispositivo subjacente dá suporte ou não à atribuição de marcas de escopo. A atribuição à propriedade ScopeTags não é permitida quando esse valor é falso e as entidades não estarão visíveis para usuários com escopo. Isso ocorre para políticas herdadas criadas no Silverlight e podem ser resolvidas excluindo e recriando a política no Portal do Azure. Essa propriedade é somente leitura. Herdada de [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
 |deviceManagementApplicabilityRuleOsEdition|[deviceManagementApplicabilityRuleOsEdition](../resources/intune-deviceconfig-devicemanagementapplicabilityruleosedition.md)|A aplicabilidade da edição do sistema operacional para esta Política. Herdada de [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
 |deviceManagementApplicabilityRuleOsVersion|[deviceManagementApplicabilityRuleOsVersion](../resources/intune-deviceconfig-devicemanagementapplicabilityruleosversion.md)|A regra de aplicabilidade da versão do sistema operacional para esta Política. Herdada de [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
 |deviceManagementApplicabilityRuleDeviceMode|[deviceManagementApplicabilityRuleDeviceMode](../resources/intune-deviceconfig-devicemanagementapplicabilityruledevicemode.md)|A regra de aplicabilidade do modo de dispositivo para esta Política. Herdada de [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
 |createdDateTime|DateTimeOffset|DateTime em que o objeto foi criado. Herdada de [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
-|descrição|String|O administrador forneceu a descrição da Configuração do dispositivo. Herdada de [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
+|description|String|O administrador forneceu a descrição da Configuração do dispositivo. Herdada de [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
 |displayName|String|O administrador forneceu o nome da Configuração do dispositivo. Herdada de [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
 |versão|Int32|Versão da configuração do dispositivo. Herdada de [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
 |taskManagerBlockEndTask|Booliano|Especifique se os não administradores podem usar o Gerenciador de Tarefas para finalizar tarefas.|
@@ -60,14 +60,14 @@ Herda de [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md
 |powerHybridSleepOnBattery|[enablement](../resources/intune-shared-enablement.md)|Essa configuração permite desativar o sono híbrido durante a bateria. Se você definir essa configuração como desabilitada, um hiberfile não será gerado quando o sistema faz a transição para o sleep (Stand By). Se você definir essa configuração para habilitar ou não configurar essa configuração de política, os usuários controlarão essa configuração. Os valores possíveis são: `notConfigured`, `enabled`, `disabled`.|
 |powerHybridSleepPluggedIn|[enablement](../resources/intune-shared-enablement.md)|Essa configuração permite desativar o sono híbrido enquanto estiver conectado. Se você definir essa configuração como desabilitada, um hiberfile não será gerado quando o sistema faz a transição para o sleep (Stand By). Se você definir essa configuração para habilitar ou não configurar essa configuração de política, os usuários controlarão essa configuração. Os valores possíveis são: `notConfigured`, `enabled`, `disabled`.|
 |windows10AppsForceUpdateSchedule|[windows10AppsForceUpdateSchedule](../resources/intune-deviceconfig-windows10appsforceupdateschedule.md)|Windows 10 forçar o agendamento de atualização para Aplicativos.|
-|enableAutomaticRedeployment|Booliano|Permitir que os usuários com direitos administrativos excluam todos os dados e configurações do usuário usando CTRL + Win + R na tela de bloqueio do dispositivo para que o dispositivo possa ser automaticamente reconfigurado e re-inscrito no gerenciamento.|
+|enableAutomaticRedeployment|Boolean|Permitir que os usuários com direitos administrativos excluam todos os dados e configurações do usuário usando CTRL + Win + R na tela de bloqueio do dispositivo para que o dispositivo possa ser automaticamente reconfigurado e re-inscrito no gerenciamento.|
 |microsoftAccountSignInAssistantSettings|[signInAssistantOptions](../resources/intune-deviceconfig-signinassistantoptions.md)|Controla o serviço NT Sign-In assistente de conta da Microsoft (wlidsvc). Os valores possíveis são: `notConfigured` e `disabled`.|
 |authenticationAllowSecondaryDevice|Booliano|Permite que dispositivos de autenticação secundários funcionem com Windows.|
 |authenticationWebSignIn|[enablement](../resources/intune-shared-enablement.md)|Indica se o Provedor de Credenciais da Web será habilitado ou não. Os valores possíveis são: `notConfigured`, `enabled`, `disabled`.|
 |authenticationPreferredAzureADTenantDomainName|String|Especifica o domínio preferencial entre os domínios disponíveis no locatário do Azure AD.|
-|cryptographyAllowFipsAlgorithmPolicy|Booliano|Especifique se é permitido ou não a política FIPS (Federal Information Processing Standard).|
+|cryptographyAllowFipsAlgorithmPolicy|Boolean|Especifique se é permitido ou não a política FIPS (Federal Information Processing Standard).|
 |displayAppListWithGdiDPIScalingTurnedOn|Coleção de cadeias de caracteres|Lista de aplicativos herdado que têm o Dimensionamento de DPI GDI ligado.|
-|displayAppListWithGdiDPIScalingTurnedOff|Coleção de cadeias de caracteres|Lista de aplicativos herdado que têm o Dimensionamento de DPI GDI desligado.|
+|displayAppListWithGdiDPIScalingTurnedOff|Coleção String|Lista de aplicativos herdado que têm o Dimensionamento de DPI GDI desligado.|
 |enterpriseCloudPrintDiscoveryEndPoint|String|Ponto de extremidade para descoberta de impressoras na nuvem.|
 |enterpriseCloudPrintOAuthAuthority|String|Ponto de extremidade para aquisição de tokens OAuth.|
 |enterpriseCloudPrintOAuthClientIdentifier|String|GUID de um aplicativo cliente autorizado a recuperar tokens OAuth da autoridade OAuth.|
@@ -75,18 +75,18 @@ Herda de [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md
 |enterpriseCloudPrintDiscoveryMaxLimit|Int32|Número máximo de impressoras que devem ser consultadas em um ponto de extremidade de descoberta. Esta é uma configuração somente para dispositivos móveis. Valores válidos de 1 a 65535|
 |enterpriseCloudPrintMopriaDiscoveryResourceIdentifier|String|URI do recurso OAuth para serviço de descoberta de impressoras, conforme configurado no portal do Azure.|
 |experienceDoNotSyncBrowserSettings|[browserSyncSetting](../resources/intune-deviceconfig-browsersyncsetting.md)|Permitir ou impedir a sincronização de configurações Microsoft Edge Navegador. Opção para os administradores de IT impedirem a sincronização entre dispositivos, mas permitir a substituição do usuário. Os valores possíveis são: `notConfigured`, `blockedWithUserOverride`, `blocked`.|
-|messagingBlockSync|Booliano|Indica se a mensagem de texto deve ou não ser restaurada e restaurada em todos os lugares.|
-|messagingBlockMMS|Booliano|Indica se a funcionalidade de envio/recebimento MMS deve ou não ser bloqueado no dispositivo.|
+|messagingBlockSync|Boolean|Indica se a mensagem de texto deve ou não ser restaurada e restaurada em todos os lugares.|
+|messagingBlockMMS|Boolean|Indica se a funcionalidade de envio/recebimento MMS deve ou não ser bloqueado no dispositivo.|
 |messagingBlockRichCommunicationServices|Booliano|Indica se a funcionalidade RCS enviar/receber no dispositivo.|
-|printerNames|Coleção de cadeias de caracteres|Provisionar impressoras automaticamente com base em seus nomes (nomes de host de rede).|
+|printerNames|Coleção String|Provisionar impressoras automaticamente com base em seus nomes (nomes de host de rede).|
 |printerDefaultName|String|Nome (nome do host de rede) de uma impressora instalada.|
-|printerBlockAddition|Booliano|Impedir a instalação do usuário de impressoras adicionais de configurações de impressoras.|
+|printerBlockAddition|Boolean|Impedir a instalação do usuário de impressoras adicionais de configurações de impressoras.|
 |searchBlockDiacritics|Boolean|Especifica se a pesquisa pode usar diacríticos.|
 |searchDisableAutoLanguageDetection|Boolean|Especifica se a detecção automática de idioma será usada ao indexar conteúdo e propriedades.|
 |searchDisableIndexingEncryptedItems|Boolean|Indica se a indexação de itens protegidos por WIP será bloqueada ou não para que eles não apareçam nos resultados de pesquisa da Cortana ou do Explorer.|
 |searchEnableRemoteQueries|Boolean|Indica se as consultas remotas do índice deste computador serão bloqueadas ou não.|
 |searchDisableUseLocation|Booliano|Especifica se a pesquisa pode usar informações de local.|
-|searchDisableLocation|Booliano|Especifica se a pesquisa pode usar informações de local.|
+|searchDisableLocation|Boolean|Especifica se a pesquisa pode usar informações de local.|
 |searchDisableIndexerBackoff|Boolean|Indica se o recurso de retirada de indexador de pesquisa deve ou não ser desativado.|
 |searchDisableIndexingRemovableDrive|Boolean|Indica se os usuários poderão ou não adicionar locais de unidades removíveis a bibliotecas e para serem indexados.|
 |searchEnableAutomaticIndexSizeManangement|Boolean|Especifica uma quantidade mínima de espaço em disco rígido na mesma unidade como o local do índice antes que a indexação seja interrompida.|
@@ -126,22 +126,22 @@ Herda de [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md
 |edgeBlockLiveTileDataCollection|Boolean|Bloquear a coleta de informações da Microsoft para criação de bloco dinâmico quando os usuários fixarem um site para iniciar no Microsoft Edge.|
 |edgeSyncFavoritesWithInternetExplorer|Boolean|Habilitar a sincronização de favoritos entre o Internet Explorer e o Microsoft Edge. Adições, exclusões, modificações e outras alterações para favoritos são compartilhadas entre navegadores.|
 |edgeFavoritesListLocation|String|O local da lista de favoritos a ser provisionamento. Pode ser um arquivo local, rede local ou local http.|
-|edgeBlockEditFavorites|Booliano|Indica se o usuário deve ou não bloquear as alterações feitas em Favoritos.|
+|edgeBlockEditFavorites|Boolean|Indica se o usuário deve ou não bloquear as alterações feitas em Favoritos.|
 |edgeNewTabPageURL|String|Especifique a página aberta quando novas guias são criadas.|
 |edgeHomeButtonConfiguration|[edgeHomeButtonConfiguration](../resources/intune-deviceconfig-edgehomebuttonconfiguration.md)|Faz com que o botão Página Inicial seja ocultado, carregue a página Inicial padrão, carregue uma página nova guia ou uma URL personalizada|
 |edgeHomeButtonConfigurationEnabled|Booliano|Habilita a configuração do botão Página Inicial.|
 |edgeOpensWith|[edgeOpenOptions](../resources/intune-deviceconfig-edgeopenoptions.md)|Especifique que tipo de páginas estão abertas no início. Os valores possíveis são: `notConfigured`, `startPage`, `newTabPage`, `previousPages`, `specificPages`.|
-|edgeBlockSideloadingExtensions|Booliano|Indica se o usuário pode fazer sideload de extensões.|
+|edgeBlockSideloadingExtensions|Boolean|Indica se o usuário pode fazer sideload de extensões.|
 |edgeRequiredExtensionPackageFamilyNames|Coleção de cadeias de caracteres|Especifique a lista de nomes de família de pacotes de extensões do navegador que são necessárias e não podem ser desligadas pelo usuário.|
 |edgeBlockPrinting|Booliano|Configure Edge para permitir ou bloquear a impressão.|
 |edgeFavoritesBarVisibility|[visibilitySetting](../resources/intune-deviceconfig-visibilitysetting.md)|Obter ou definir um valor que especifica se a barra de favoritos deve ser sempre visível ou oculta em qualquer página. Os valores possíveis são: `notConfigured`, `hide`, `show`.|
-|edgeBlockSavingHistory|Booliano|Configure o Edge para permitir que o histórico de navegação seja salvo ou nunca salve o histórico de navegação.|
+|edgeBlockSavingHistory|Boolean|Configure o Edge para permitir que o histórico de navegação seja salvo ou nunca salve o histórico de navegação.|
 |edgeBlockFullScreenMode|Booliano|Permitir ou impedir que Edge entre no modo de tela inteira.|
 |edgeBlockWebContentOnNewTabPage|Booliano|Configure para carregar uma página em branco no Edge em vez da página de guia Nova padrão e impedir que os usuários a mudem.|
 |edgeBlockTabPreloading|Booliano|Configure se o Edge pré-carregará a nova página de tabulação na Windows inicialização.|
 |edgeBlockPrelaunch|Booliano|Decida se Microsoft Edge pré-inicialização na Windows inicialização.|
 |edgeShowMessageWhenOpeningInternetExplorerSites|[internetExplorerMessageSetting](../resources/intune-deviceconfig-internetexplorermessagesetting.md)|Controla a mensagem exibida pelo Edge antes de alternar para o Internet Explorer. Os valores possíveis são: `notConfigured`, `disabled`, `enabled`, `keepGoing`.|
-|edgePreventCertificateErrorOverride|Booliano|Permitir ou impedir que os usuários anulam erros de certificado.|
+|edgePreventCertificateErrorOverride|Boolean|Permitir ou impedir que os usuários anulam erros de certificado.|
 |edgeKioskModeRestriction|[edgeKioskModeRestrictionType](../resources/intune-deviceconfig-edgekioskmoderestrictiontype.md)|Controla como as Microsoft Edge são restritas com base no modo configurar quiosque. Os valores possíveis são: `notConfigured`, `digitalSignage`, `normalMode`, `publicBrowsingSingleApp`, `publicBrowsingMultiApp`.|
 |edgeKioskResetAfterIdleTimeInMinutes|Int32|Especifica o tempo em minutos da última atividade do usuário antes Microsoft Edge de quiosque.  Os valores válidos são 0-1440. O padrão é 5. 0 indica nenhuma redefinição. Valores válidos de 0 a 1440|
 |cellularBlockDataWhenRoaming|Boolean|Se o usuário será ou não impedido de usar dados da rede celular durante roaming.|
@@ -153,8 +153,8 @@ Herda de [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md
 |defenderRequireNetworkInspectionSystem|Boolean|Indica se o sistema de inspeção de rede deve ou não ser exigido.|
 |defenderScanDownloads|Boolean|Indica se os downloads devem ou não ser verificados.|
 |defenderScheduleScanEnableLowCpuPriority|Booliano|Quando habilitada, a baixa prioridade da CPU será usada durante verificações agendadas.|
-|defenderDisableCatchupQuickScan|Booliano|Quando bloqueado, as verificações de recuperação de verificações rápidas agendadas serão desligadas.|
-|defenderDisableCatchupFullScan|Booliano|Quando bloqueado, as verificações de catch-up para verificações completas agendadas serão desligadas.|
+|defenderDisableCatchupQuickScan|Boolean|Quando bloqueado, as verificações de recuperação de verificações rápidas agendadas serão desligadas.|
+|defenderDisableCatchupFullScan|Boolean|Quando bloqueado, as verificações de catch-up para verificações completas agendadas serão desligadas.|
 |defenderScanScriptsLoadedInInternetExplorer|Boolean|Indica se os scripts carregados no navegador Internet Explorer devem ou não ser verificados.|
 |defenderBlockEndUserAccess|Boolean|Se o usuário final será ou não impedido de acessar o Defender.|
 |defenderSignatureUpdateIntervalInHours|Int32|O intervalo de atualização da assinatura em horas. Especifique 0 para não verificar. Valores válidos de 0 a 24|
@@ -711,6 +711,7 @@ Veja a seguir uma representação JSON do recurso.
   "configureTimeZone": "String"
 }
 ```
+
 
 
 

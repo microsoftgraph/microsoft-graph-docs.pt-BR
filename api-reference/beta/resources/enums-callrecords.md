@@ -5,12 +5,12 @@ doc_type: enumPageType
 ms.localizationpriority: medium
 ms.prod: cloud-communications
 author: gageames
-ms.openlocfilehash: 039b0f825c17269bb6318ed45bc3cb5bb5317e19
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: b69b28e2aa7fa6d1b5f67aa4cf9620a59a7ee51d
+ms.sourcegitcommit: 65f4e128f96783c18d607a6dcffbc914291285d4
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59040635"
+ms.lasthandoff: 12/08/2021
+ms.locfileid: "61339679"
 ---
 # <a name="call-records-enum-values"></a>Valores de números de registros de chamada
 
@@ -18,7 +18,7 @@ Namespace: microsoft.graph.callRecords
 
 ### <a name="calltype-values"></a>valores callType
 
-| Membro
+| Member
 |:--------------
 | desconhecido
 | groupCall
@@ -27,7 +27,7 @@ Namespace: microsoft.graph.callRecords
 
 ### <a name="clientplatform-values"></a>valores clientPlatform
 
-| Membro
+| Member
 |:--------------
 | desconhecido
 | windows
@@ -43,7 +43,7 @@ Namespace: microsoft.graph.callRecords
 
 ### <a name="failurestage-values"></a>valores failureStage
 
-| Membro
+| Member
 |:--------------
 | desconhecido
 | callSetup
@@ -52,14 +52,14 @@ Namespace: microsoft.graph.callRecords
 
 ### <a name="mediastreamdirection-values"></a>valores mediaStreamDirection
 
-| Membro
+| Member
 |:--------------
 | callerToCallee
 | calleeToCaller
 
 ### <a name="modality-values"></a>valores de modalidade
 
-| Membro
+| Member
 |:--------------
 | desconhecido
 | audio
@@ -71,7 +71,7 @@ Namespace: microsoft.graph.callRecords
 
 ### <a name="networkconnectiontype-values"></a>valores networkConnectionType
 
-| Membro
+| Member
 |:--------------
 | desconhecido
 | wired
@@ -82,17 +82,18 @@ Namespace: microsoft.graph.callRecords
 
 ### <a name="productfamily-values"></a>ProductFamily values
 
-| Membro
+| Member
 |:--------------
 | desconhecido
 | teams
 | skypeForBusiness
 | lync
 | unknownFutureValue
+| azureCommunicationServices
 
 ### <a name="servicerole-values"></a>valores serviceRole
 
-| Membro
+| Member
 |:--------------
 | desconhecido
 | customBot
@@ -119,7 +120,7 @@ Namespace: microsoft.graph.callRecords
 
 ### <a name="userfeedbackrating-values"></a>valores userFeedbackRating
 
-| Membro
+| Member
 |:--------------
 | notRated
 | bad
@@ -131,7 +132,7 @@ Namespace: microsoft.graph.callRecords
 
 ### <a name="wifiband-values"></a>valores wifiBand
 
-| Membro
+| Member
 |:--------------
 | desconhecido
 | frequency24GHz
@@ -141,7 +142,7 @@ Namespace: microsoft.graph.callRecords
 
 ### <a name="wifiradiotype-values"></a>Valores wifiRadioType
 
-| Membro
+| Member
 |:--------------
 | desconhecido
 | wifi80211a
@@ -154,7 +155,7 @@ Namespace: microsoft.graph.callRecords
 
 ### <a name="pstncalldurationsource-values"></a>Valores pstnCallDurationSource 
 
-|Membro|
+|Member|
 |:---|
 |microsoft|
 |operator|

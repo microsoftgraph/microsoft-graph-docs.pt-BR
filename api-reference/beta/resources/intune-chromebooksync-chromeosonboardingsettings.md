@@ -2,27 +2,27 @@
 title: Tipo de recurso chromeOSOnboardingSettings
 description: Entidade que representa as configurações de locatário do Chromebook
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: e551a751ea5498d65d21974de6e7712e6a56ea11
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 76310cd79a16302c94e9bd2d0c407e82b197683c
+ms.sourcegitcommit: 65f4e128f96783c18d607a6dcffbc914291285d4
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59081483"
+ms.lasthandoff: 12/08/2021
+ms.locfileid: "61336962"
 ---
 # <a name="chromeosonboardingsettings-resource-type"></a>Tipo de recurso chromeOSOnboardingSettings
 
 Namespace: microsoft.graph
 
-> **Importante:** As APIs Graph Microsoft na versão /beta estão sujeitas a alterações; não há suporte para uso de produção.
+> **Importante:** As GRAPH da Microsoft na versão /beta estão sujeitas a alterações; o uso de produção não é suportado.
 
 > **Observação:** A API do Microsoft Graph para Intune requer uma [licença ativa do Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
 
 Entidade que representa as configurações de locatário do Chromebook
 
-## <a name="methods"></a>Métodos
+## <a name="methods"></a>Methods
 |Método|Tipo de retorno|Descrição|
 |:---|:---|:---|
 |[Listar chromeOSOnboardingSettingses](../api/intune-chromebooksync-chromeosonboardingsettings-list.md)|[Coleção chromeOSOnboardingSettings](../resources/intune-chromebooksync-chromeosonboardingsettings.md)|Listar propriedades e relações dos [objetos chromeOSOnboardingSettings.](../resources/intune-chromebooksync-chromeosonboardingsettings.md)|
@@ -31,13 +31,14 @@ Entidade que representa as configurações de locatário do Chromebook
 |[Excluir chromeOSOnboardingSettings](../api/intune-chromebooksync-chromeosonboardingsettings-delete.md)|Nenhum|Exclui um [chromeOSOnboardingSettings](../resources/intune-chromebooksync-chromeosonboardingsettings.md).|
 |[Atualizar chromeOSOnboardingSettings](../api/intune-chromebooksync-chromeosonboardingsettings-update.md)|[chromeOSOnboardingSettings.](../resources/intune-chromebooksync-chromeosonboardingsettings.md)|Atualize as propriedades de um [objeto chromeOSOnboardingSettings.](../resources/intune-chromebooksync-chromeosonboardingsettings.md)|
 |[ação connect](../api/intune-chromebooksync-chromeosonboardingsettings-connect.md)|[chromeOSOnboardingStatus](../resources/intune-chromebooksync-chromeosonboardingstatus.md)|Ainda não documentado|
+|[ação de desconectar](../api/intune-chromebooksync-chromeosonboardingsettings-disconnect.md)|[chromeOSOnboardingStatus](../resources/intune-chromebooksync-chromeosonboardingstatus.md)|Ainda não documentado|
 
 ## <a name="properties"></a>Propriedades
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|id|Cadeia de caracteres|A ID do ChromebookTenant|
+|id|String|A ID do ChromebookTenant|
 |ownerUserPrincipalName|String|OwnerUserPrincipalName do ChromebookTenant|
-|onboardingStatus|[onboardingStatus](../resources/intune-chromebooksync-onboardingstatus.md)|OnboardingStatus do ChromebookTenant. Os valores possíveis são: `unknown`, `inprogress`, `onboarded`, `failed`.|
+|onboardingStatus|[onboardingStatus](../resources/intune-chromebooksync-onboardingstatus.md)|OnboardingStatus do ChromebookTenant. Os possíveis valores são: `unknown`, `inprogress`, `onboarded`, `failed`, `offboarding`, `unknownFutureValue`.|
 |lastModifiedDateTime|DateTimeOffset|LastModifiedDateTime do ChromebookTenant|
 |lastDirectorySyncDateTime|DateTimeOffset|LastDirectorySyncDateTime do ChromebookTenant|
 
@@ -62,6 +63,7 @@ Veja a seguir uma representação JSON do recurso.
   "lastDirectorySyncDateTime": "String (timestamp)"
 }
 ```
+
 
 
 

@@ -2,21 +2,21 @@
 title: Atualizar userExperienceAnalyticsAppHealthDevicePerformanceDetails
 description: Atualize as propriedades de um objeto userExperienceAnalyticsAppHealthDevicePerformanceDetails.
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: fbe20355eade7920acf46b8243df1c3218650f5a
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: dabdc0dcb485493704c5dc19c5663b34dc14badb
+ms.sourcegitcommit: 65f4e128f96783c18d607a6dcffbc914291285d4
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59059095"
+ms.lasthandoff: 12/08/2021
+ms.locfileid: "61336787"
 ---
 # <a name="update-userexperienceanalyticsapphealthdeviceperformancedetails"></a>Atualizar userExperienceAnalyticsAppHealthDevicePerformanceDetails
 
 Namespace: microsoft.graph
 
-> **Importante:** As APIs Graph Microsoft na versão /beta estão sujeitas a alterações; não há suporte para uso de produção.
+> **Importante:** As GRAPH da Microsoft na versão /beta estão sujeitas a alterações; o uso de produção não é suportado.
 
 > **Observação:** A API do Microsoft Graph para Intune requer uma [licença ativa do Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
 
@@ -27,9 +27,9 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 |Tipo de permissão|Permissões (da com menos para a com mais privilégios)|
 |:---|:---|
-|Delegado (conta corporativa ou de estudante)|DeviceManagementManagedDevices.ReadWrite.All|
+|Delegado (conta corporativa ou de estudante)|DeviceManagementConfiguration.ReadWrite.All, DeviceManagementManagedDevices.ReadWrite.All|
 |Delegado (conta pessoal da Microsoft)|Sem suporte.|
-|Aplicativo|DeviceManagementManagedDevices.ReadWrite.All|
+|Aplicativo|DeviceManagementConfiguration.ReadWrite.All, DeviceManagementManagedDevices.ReadWrite.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- {
@@ -55,10 +55,10 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar [o userE
 |:---|:---|:---|
 |id|String|O identificador exclusivo do objeto de desempenho do dispositivo de análise de experiência do usuário.|
 |eventDateTime|DateTimeOffset|A hora em que o evento ocorreu.|
-|eventType|Cadeia de Caracteres|O tipo do evento.|
-|appDisplayName|Cadeia de caracteres|O nome amigável do aplicativo para o qual o evento ocorreu.|
-|appPublisher|Cadeia de Caracteres|O editor do aplicativo.|
-|appVersion|Cadeia de caracteres|A versão do aplicativo.|
+|eventType|String|O tipo do evento.|
+|appDisplayName|String|O nome amigável do aplicativo para o qual o evento ocorreu.|
+|appPublisher|String|O editor do aplicativo.|
+|appVersion|String|A versão do aplicativo.|
 |deviceId|Cadeia de caracteres|A id do dispositivo.|
 |deviceDisplayName|Cadeia de caracteres|O nome do dispositivo.|
 
@@ -107,6 +107,7 @@ Content-Length: 454
   "deviceDisplayName": "Device Display Name value"
 }
 ```
+
 
 
 

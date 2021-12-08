@@ -2,21 +2,21 @@
 title: Criar userExperienceAnalyticsMetricHistory
 description: Crie um novo objeto userExperienceAnalyticsMetricHistory.
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: c34b75726bea910d8dca1691beca5b056a651b83
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 07723ff6fa69890a155a3c6bcc4e4d0b5469b2d7
+ms.sourcegitcommit: 65f4e128f96783c18d607a6dcffbc914291285d4
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59070430"
+ms.lasthandoff: 12/08/2021
+ms.locfileid: "61339735"
 ---
 # <a name="create-userexperienceanalyticsmetrichistory"></a>Criar userExperienceAnalyticsMetricHistory
 
 Namespace: microsoft.graph
 
-> **Importante:** As APIs Graph Microsoft na versão /beta estão sujeitas a alterações; não há suporte para uso de produção.
+> **Importante:** As GRAPH da Microsoft na versão /beta estão sujeitas a alterações; o uso de produção não é suportado.
 
 > **Observação:** A API do Microsoft Graph para Intune requer uma [licença ativa do Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
 
@@ -27,9 +27,9 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 |Tipo de permissão|Permissões (da com menos para a com mais privilégios)|
 |:---|:---|
-|Delegado (conta corporativa ou de estudante)|DeviceManagementManagedDevices.ReadWrite.All|
+|Delegado (conta corporativa ou de estudante)|DeviceManagementConfiguration.ReadWrite.All, DeviceManagementManagedDevices.ReadWrite.All|
 |Delegado (conta pessoal da Microsoft)|Sem suporte.|
-|Aplicativo|DeviceManagementManagedDevices.ReadWrite.All|
+|Aplicativo|DeviceManagementConfiguration.ReadWrite.All, DeviceManagementManagedDevices.ReadWrite.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- {
@@ -54,7 +54,7 @@ A tabela a seguir mostra as propriedades necessárias ao criar o userExperienceA
 
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|id|Cadeia de caracteres|O identificador exclusivo do histórico métrico de análise da experiência do usuário.|
+|id|String|O identificador exclusivo do histórico métrico de análise da experiência do usuário.|
 |deviceId|Cadeia de caracteres|A ID do dispositivo de análise de experiência do usuário.|
 |metricDateTime|DateTimeOffset|A data de data métrica da análise da experiência do usuário.|
 |metricType|String|O tipo métrico de análise de experiência do usuário.|
@@ -96,6 +96,7 @@ Content-Length: 257
   "metricType": "Metric Type value"
 }
 ```
+
 
 
 

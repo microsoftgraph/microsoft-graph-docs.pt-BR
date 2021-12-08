@@ -2,27 +2,27 @@
 title: Tipo de recurso microsoftTunnelServer
 description: Entidade que representa um único Microsoft Tunnel servidor
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: b7869ad1f32e791180d8e671422580d406b13615
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 507c3d7af22614b96235853e0f5e0351adaf1198
+ms.sourcegitcommit: 65f4e128f96783c18d607a6dcffbc914291285d4
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59068659"
+ms.lasthandoff: 12/08/2021
+ms.locfileid: "61336129"
 ---
 # <a name="microsofttunnelserver-resource-type"></a>Tipo de recurso microsoftTunnelServer
 
 Namespace: microsoft.graph
 
-> **Importante:** As APIs Graph Microsoft na versão /beta estão sujeitas a alterações; não há suporte para uso de produção.
+> **Importante:** As GRAPH da Microsoft na versão /beta estão sujeitas a alterações; o uso de produção não é suportado.
 
 > **Observação:** A API do Microsoft Graph para Intune requer uma [licença ativa do Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
 
 Entidade que representa um único Microsoft Tunnel servidor
 
-## <a name="methods"></a>Métodos
+## <a name="methods"></a>Methods
 |Método|Tipo de retorno|Descrição|
 |:---|:---|:---|
 |[Listar microsoftTunnelServers](../api/intune-mstunnel-microsofttunnelserver-list.md)|[Coleção microsoftTunnelServer](../resources/intune-mstunnel-microsofttunnelserver.md)|Listar propriedades e relações dos [objetos microsoftTunnelServer.](../resources/intune-mstunnel-microsofttunnelserver.md)|
@@ -38,11 +38,11 @@ Entidade que representa um único Microsoft Tunnel servidor
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
 |id|String|Id do MicrosoftTunnelServer|
-|displayName|Cadeia de caracteres|O nome de exibição do MicrosoftTunnelServer|
+|displayName|String|O nome de exibição do MicrosoftTunnelServer|
 |tunnelServerHealthStatus|[microsoftTunnelServerHealthStatus](../resources/intune-mstunnel-microsofttunnelserverhealthstatus.md)|O status de saúde do MicrosoftTunnelServer. Os valores possíveis são: `unknown`, `healthy`, `unhealthy`, `warning`, `offline`, `upgradeInProgress`, `upgradeFailed`.|
 |lastCheckinDateTime|DateTimeOffset|Quando o MicrosoftTunnelServer entrou pela última vez|
 |agentImageDigest|String|O resumo da imagem do agente atual em execução neste servidor |
-|serverImageDigest|Cadeia de caracteres|O resumo da imagem atual do servidor em execução neste servidor |
+|serverImageDigest|String|O resumo da imagem atual do servidor em execução neste servidor |
 
 ## <a name="relationships"></a>Relações
 Nenhum
@@ -66,6 +66,7 @@ Veja a seguir uma representação JSON do recurso.
   "serverImageDigest": "String"
 }
 ```
+
 
 
 

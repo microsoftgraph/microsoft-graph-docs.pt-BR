@@ -2,21 +2,21 @@
 title: Atualizar userExperienceAnalyticsDeviceStartupHistory
 description: Atualize as propriedades de um objeto userExperienceAnalyticsDeviceStartupHistory.
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 63be7938b6e604d5213fa2f8d05daf94c0c5c9e4
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: c1e11002f15bbe2d48a8ea96690bf61144c92c26
+ms.sourcegitcommit: 65f4e128f96783c18d607a6dcffbc914291285d4
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59097212"
+ms.lasthandoff: 12/08/2021
+ms.locfileid: "61338859"
 ---
 # <a name="update-userexperienceanalyticsdevicestartuphistory"></a>Atualizar userExperienceAnalyticsDeviceStartupHistory
 
 Namespace: microsoft.graph
 
-> **Importante:** As APIs Graph Microsoft na versão /beta estão sujeitas a alterações; não há suporte para uso de produção.
+> **Importante:** As GRAPH da Microsoft na versão /beta estão sujeitas a alterações; o uso de produção não é suportado.
 
 > **Observação:** A API do Microsoft Graph para Intune requer uma [licença ativa do Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
 
@@ -27,9 +27,9 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 |Tipo de permissão|Permissões (da com menos para a com mais privilégios)|
 |:---|:---|
-|Delegado (conta corporativa ou de estudante)|DeviceManagementManagedDevices.ReadWrite.All|
+|Delegado (conta corporativa ou de estudante)|DeviceManagementConfiguration.ReadWrite.All, DeviceManagementManagedDevices.ReadWrite.All|
 |Delegado (conta pessoal da Microsoft)|Sem suporte.|
-|Aplicativo|DeviceManagementManagedDevices.ReadWrite.All|
+|Aplicativo|DeviceManagementConfiguration.ReadWrite.All, DeviceManagementManagedDevices.ReadWrite.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- {
@@ -53,7 +53,7 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar [o userE
 
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|id|Cadeia de caracteres|O identificador exclusivo do histórico de inicialização do dispositivo de análise de experiência do usuário.|
+|id|String|O identificador exclusivo do histórico de inicialização do dispositivo de análise de experiência do usuário.|
 |deviceId|Cadeia de caracteres|A ID do dispositivo de análise de experiência do usuário.|
 |startTime|DateTimeOffset|A hora de inicialização do dispositivo de análise de experiência do usuário.|
 |coreBootTimeInMs|Int32|O tempo de inicialização principal do dispositivo de análise de experiência do usuário em milissegundos.|
@@ -64,12 +64,12 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar [o userE
 |coreLoginTimeInMs|Int32|O tempo de logon principal do dispositivo de análise de experiência do usuário em milissegundos.|
 |responsiveDesktopTimeInMs|Int32|A análise da experiência do usuário responde ao tempo da área de trabalho em milissegundos.|
 |totalLoginTimeInMs|Int32|O tempo total de logon do dispositivo de análise de experiência do usuário em milissegundos.|
-|isFirstLogin|Boleano|O primeiro logon do dispositivo de análise de experiência do usuário.|
-|isFeatureUpdate|Boleano|O registro de inicialização do dispositivo de análise de experiência do usuário é uma atualização de recurso.|
+|isFirstLogin|Booliano|O primeiro logon do dispositivo de análise de experiência do usuário.|
+|isFeatureUpdate|Booliano|O registro de inicialização do dispositivo de análise de experiência do usuário é uma atualização de recurso.|
 |operatingSystemVersion|String|A versão do sistema operacional do registro de inicialização do dispositivo de análise de experiência do usuário.|
 |restartCategory|[userExperienceAnalyticsOperatingSystemRestartCategory](../resources/intune-devices-userexperienceanalyticsoperatingsystemrestartcategory.md)|Categoria de reinicialização do sistema operacional. Os valores possíveis são: `unknown`, `restartWithUpdate`, `restartWithoutUpdate`, `blueScreen`, `shutdownWithUpdate`, `shutdownWithoutUpdate`, `longPowerButtonPress`, `bootError`, `update`.|
-|restartStopCode|Cadeia de Caracteres|Código de parada de reinicialização do sistema operacional. Isso mostra o código de verificação de bugs que pode ser usado para procurar o motivo da tela azul.|
-|restartFaultBucket|Cadeia de Caracteres|Bucket de falha de reinicialização do sistema operacional. O bucket de falhas é usado para encontrar informações adicionais sobre uma falha no sistema.|
+|restartStopCode|String|Código de parada de reinicialização do sistema operacional. Isso mostra o código de verificação de bugs que pode ser usado para procurar o motivo da tela azul.|
+|restartFaultBucket|String|Bucket de falha de reinicialização do sistema operacional. O bucket de falhas é usado para encontrar informações adicionais sobre uma falha no sistema.|
 
 
 
@@ -134,6 +134,7 @@ Content-Length: 729
   "restartFaultBucket": "Restart Fault Bucket value"
 }
 ```
+
 
 
 

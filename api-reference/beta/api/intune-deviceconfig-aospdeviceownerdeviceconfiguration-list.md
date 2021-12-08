@@ -2,21 +2,21 @@
 title: Listar aospDeviceOwnerDeviceConfigurations
 description: Listar propriedades e relações dos objetos aospDeviceOwnerDeviceConfiguration.
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: b3852b2dd9e1b91adca2982aea20494e8f308d26
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 85ae9a4f9485e4937d4222111cc708a7e17a6736
+ms.sourcegitcommit: 65f4e128f96783c18d607a6dcffbc914291285d4
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59031275"
+ms.lasthandoff: 12/08/2021
+ms.locfileid: "61334484"
 ---
 # <a name="list-aospdeviceownerdeviceconfigurations"></a>Listar aospDeviceOwnerDeviceConfigurations
 
 Namespace: microsoft.graph
 
-> **Importante:** As APIs Graph Microsoft na versão /beta estão sujeitas a alterações; não há suporte para uso de produção.
+> **Importante:** As GRAPH da Microsoft na versão /beta estão sujeitas a alterações; o uso de produção não é suportado.
 
 > **Observação:** A API do Microsoft Graph para Intune requer uma [licença ativa do Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
 
@@ -66,7 +66,7 @@ Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado a
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 2126
+Content-Length: 2094
 
 {
   "value": [
@@ -103,7 +103,7 @@ Content-Length: 2126
       "description": "Description value",
       "displayName": "Display Name value",
       "version": 7,
-      "appsAllowInstallFromUnknownSources": true,
+      "appsBlockInstallFromUnknownSources": true,
       "bluetoothBlocked": true,
       "bluetoothBlockConfiguration": true,
       "bluetoothBlockContactSharing": true,
@@ -116,7 +116,6 @@ Content-Length: 2126
       "passwordSignInFailureCountBeforeFactoryReset": 12,
       "screenCaptureBlocked": true,
       "securityAllowDebuggingFeatures": true,
-      "storageAllowUsb": true,
       "storageBlockExternalMedia": true,
       "storageBlockUsbFileTransfer": true,
       "backupBlocked": true,
@@ -125,6 +124,7 @@ Content-Length: 2126
   ]
 }
 ```
+
 
 
 

@@ -2,21 +2,21 @@
 title: Tipo de recurso macOSMinimumOperatingSystem
 description: O sistema operacional mínimo necessário para um aplicativo MacOS.
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 46d6e02674af9683682e26d1a0af1839e3e5ff1a
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 564b96f1fd6fdfbc4c5bd915c4a8a444d6fbe86e
+ms.sourcegitcommit: 65f4e128f96783c18d607a6dcffbc914291285d4
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59064508"
+ms.lasthandoff: 12/08/2021
+ms.locfileid: "61334643"
 ---
 # <a name="macosminimumoperatingsystem-resource-type"></a>Tipo de recurso macOSMinimumOperatingSystem
 
 Namespace: microsoft.graph
 
-> **Importante:** As APIs Graph Microsoft na versão /beta estão sujeitas a alterações; não há suporte para uso de produção.
+> **Importante:** As GRAPH da Microsoft na versão /beta estão sujeitas a alterações; o uso de produção não é suportado.
 
 > **Observação:** A API do Microsoft Graph para Intune requer uma [licença ativa do Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
 
@@ -25,17 +25,17 @@ O sistema operacional mínimo necessário para um aplicativo MacOS.
 ## <a name="properties"></a>Propriedades
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|v10_7|Boleano|Mac OS 10.7 ou posterior.|
-|v10_8|Boleano|Mac OS 10.8 ou posterior.|
+|v10_7|Boolean|Mac OS 10.7 ou posterior.|
+|v10_8|Booliano|Mac OS 10.8 ou posterior.|
 |v10_9|Boolean|Mac OS 10.9 ou posterior.|
 |v10_10|Booliano|Mac OS 10.10 ou posterior.|
-|v10_11|Boleano|Mac OS 10.11 ou posterior.|
+|v10_11|Booliano|Mac OS 10.11 ou posterior.|
 |v10_12|Booliano|Mac OS 10.12 ou posterior.|
-|v10_13|Boleano|Mac OS 10.13 ou posterior.|
+|v10_13|Boolean|Mac OS 10.13 ou posterior.|
 |v10_14|Boolean|Mac OS 10.14 ou posterior.|
-|v10_15|Boleano|Mac OS 10.15 ou posterior.|
+|v10_15|Booliano|Mac OS 10.15 ou posterior.|
 |v11_0|Booliano|Mac OS 11.0 ou posterior.|
-|v12_0|Boleano|Mac OS 12.0 ou posterior.|
+|v12_0|Booliano|Mac OS 12.0 ou posterior.|
 
 ## <a name="relationships"></a>Relações
 Nenhum
@@ -63,6 +63,7 @@ Veja a seguir uma representação JSON do recurso.
   "v12_0": true
 }
 ```
+
 
 
 

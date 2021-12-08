@@ -5,18 +5,18 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: ceea9c04ef1a0b5f79fd966980ba9f207812b6a7
-ms.sourcegitcommit: c7ff992ef63e480d070421ba99b28ee129cb6acb
+ms.openlocfilehash: 2529a34fa15ce15b0a2652ffeea9c99bb1dab9f5
+ms.sourcegitcommit: 65f4e128f96783c18d607a6dcffbc914291285d4
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "60691551"
+ms.lasthandoff: 12/08/2021
+ms.locfileid: "61341940"
 ---
 # <a name="devicemanagementconfigurationsettingdefinition-resource-type"></a>Tipo de recurso deviceManagementConfigurationSettingDefinition
 
 Namespace: microsoft.graph
 
-> **Importante:** As APIs Graph Microsoft na versão /beta estão sujeitas a alterações; não há suporte para uso de produção.
+> **Importante:** As GRAPH da Microsoft na versão /beta estão sujeitas a alterações; o uso de produção não é suportado.
 
 > **Observação:** A API do Microsoft Graph para Intune requer uma [licença ativa do Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
 
@@ -48,9 +48,9 @@ Ainda não documentado
 |visibility|[deviceManagementConfigurationSettingVisibility](../resources/intune-deviceconfigv2-devicemanagementconfigurationsettingvisibility.md)|Definindo o escopo de visibilidade como UX. Os valores possíveis são: `none`, `settingsCatalog`, `template`.|
 |referredSettingInformationList|[coleção deviceManagementConfigurationReferredSettingInformation](../resources/intune-deviceconfigv2-devicemanagementconfigurationreferredsettinginformation.md)|Lista de informações de configuração referidas.|
 |id|String|Identificador de item|
-|descrição|String|Descrição do item|
+|description|String|Descrição do item|
 |helpText|String|Texto de ajuda do item|
-|name|String|Nome do item|
+|nome|String|Nome do item|
 |displayName|String|Nome de exibição do item|
 |versão|String|Versão do item|
 
@@ -108,6 +108,7 @@ Veja a seguir uma representação JSON do recurso.
   "version": "String"
 }
 ```
+
 
 
 

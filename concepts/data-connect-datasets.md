@@ -4,12 +4,12 @@ description: Descreve os conjuntos de dados com suporte aos tipos de armazenamen
 author: fercobo-msft
 ms.localizationpriority: high
 ms.prod: data-connect
-ms.openlocfilehash: 8e0aeffc6529737dbd89f759e8a9261d9989cad7
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 1ac242bf99707916e23f2cccfaba8a05cd62749d
+ms.sourcegitcommit: 65f4e128f96783c18d607a6dcffbc914291285d4
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59139174"
+ms.lasthandoff: 12/08/2021
+ms.locfileid: "61336598"
 ---
 # <a name="datasets-regions-and-sinks-supported-by-microsoft-graph-data-connect"></a>Conjuntos de dados, regiões e coletores com suporte da Conexão de dados do Microsoft Graph
 
@@ -27,6 +27,7 @@ A conexão de dados suporta hoje os seguintes conjuntos de dados. Para exibir es
 | BasicDataSet_v0.DirectReport_v0    | Contém informações de usuário sobre funcionários que se reportam diretamente a cada usuário.   | [DirectReport_v0](https://github.com/microsoftgraph/dataconnect-solutions/blob/main/sampledatasets/BasicDataSet_v0.DirectReport_v0.json)      | [Esquema](https://github.com/microsoftgraph/dataconnect-solutions/blob/main/datasetschemas/DirectReport_v0.md) |
 | BasicDataSet_v0.Event_v0           | Contém as informações de eventos de calendário de um usuário.                            | [Event_v0](https://github.com/microsoftgraph/dataconnect-solutions/blob/main/sampledatasets/BasicDataSet_v0.Event_v0.json)                    | [Esquema](https://github.com/microsoftgraph/dataconnect-solutions/blob/main/datasetschemas/Event_v0.md) |
 | BasicDataSet_v0.Event_v1           | Contém os eventos do calendário de cada usuário.                                       | [Event_v1](https://github.com/microsoftgraph/dataconnect-solutions/blob/main/sampledatasets/BasicDataSet_v0.Event_v1.json)                    | [Esquema](https://github.com/microsoftgraph/dataconnect-solutions/blob/main/datasetschemas/Event_v1.md) |
+| BasicDataSet_v0. Inbox_v1      | Contém as pastas de email da caixa de entrada de cada usuário.                                | [Inbox_v1](https://github.com/microsoftgraph/dataconnect-solutions/blob/main/sampledatasets/BasicDataSet_v0.Inbox_v1.json)          | [Esquema](https://github.com/microsoftgraph/dataconnect-solutions/blob/main/datasetschemas/Inbox_v1.md) |
 | BasicDataSet_v0.MailboxSettings_v0 | Contém as configurações da caixa de correio de cada usuário.                                        | [MailboxSetting_v0](https://github.com/microsoftgraph/dataconnect-solutions/blob/main/sampledatasets/BasicDataSet_v0.MailboxSettings_v0.json) | [Esquema](https://github.com/microsoftgraph/dataconnect-solutions/blob/main/datasetschemas/MailboxSettings_v0.md) |
 | BasicDataSet_v0.MailFolder_v0      | Contém as pastas de email da caixa de correio de cada usuário.                                | [MailFolder_v0](https://github.com/microsoftgraph/dataconnect-solutions/blob/main/sampledatasets/BasicDataSet_v0.MailFolder_v0.json)          | [Esquema](https://github.com/microsoftgraph/dataconnect-solutions/blob/main/datasetschemas/MailFolder_v0.md) |
 | BasicDataSet_v0.Manager_v0         | Contém as informações de usuário para o gerenciador de cada usuário.                            | [Manager_v0](https://github.com/microsoftgraph/dataconnect-solutions/blob/main/sampledatasets/BasicDataSet_v0.Manager_v0.json)                | [Esquema](https://github.com/microsoftgraph/dataconnect-solutions/blob/main/datasetschemas/Manager_v0.md) |
@@ -37,6 +38,7 @@ A conexão de dados suporta hoje os seguintes conjuntos de dados. Para exibir es
 | BasicDataSet_v0.TeamChat_v1        | Contém [Mensagens de chat do Teams](https://support.microsoft.com/office/first-things-to-know-about-chat-in-microsoft-teams-88ed0a06-6b59-43a3-8cf7-40c01f2f92f2) para mensagens de chat individuais e em grupo. Este conjunto de dados exclui mensagens de chat explicitamente excluídas pelos usuários.     | [TeamChat_v1](https://github.com/microsoftgraph/dataconnect-solutions/blob/main/sampledatasets/BasicDataSet_v0.TeamChat_v1.json)              | [Esquema](https://github.com/microsoftgraph/dataconnect-solutions/blob/main/datasetschemas/TeamChat_v1.md) |
 | BasicDataSet_v0.User_v0            | Contém informações do usuário (DisplayName, UserPrincipalName e outras informações). | [User_v0](https://github.com/microsoftgraph/dataconnect-solutions/blob/main/sampledatasets/BasicDataSet_v0.User_v0.json)                      | [Esquema](https://github.com/microsoftgraph/dataconnect-solutions/blob/main/datasetschemas/User_v0.md) |
 | BasicDataSet_v0.User_v1            | Contém informações do usuário.                                                         | [User_v1](https://github.com/microsoftgraph/dataconnect-solutions/blob/main/sampledatasets/BasicDataSet_v0.User_v1.json)                      | [Esquema](https://github.com/microsoftgraph/dataconnect-solutions/blob/main/datasetschemas/User_v1.md) |
+| DocumentSharingDataset_v0_Preview            | Contém informações sobre o compartilhamento de permissões de documentos.                                                         | [DocumentSharingDataset_v0_Preview](https://github.com/microsoftgraph/dataconnect-solutions/blob/main/sampledatasets/DocumentSharingDataset_v0_Preview.json)                      | [Esquema](https://github.com/microsoftgraph/dataconnect-solutions/blob/main/datasetschemas/DocumentSharingDataset_v0_Preview.md) |
 
 ## <a name="regions"></a>Regiões
 

@@ -2,27 +2,27 @@
 title: Tipo de recurso userExperienceAnalyticsModelScores
 description: A entidade de pontuações do modelo de análise de experiência do usuário consolida as várias pontuações de análise de ponto de extremidade.
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: a29726d69cca6330de93af4793862a76e6fc9ce2
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 677812396c24487729d2680c5b7c4a3dc82e0df9
+ms.sourcegitcommit: 65f4e128f96783c18d607a6dcffbc914291285d4
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59064060"
+ms.lasthandoff: 12/08/2021
+ms.locfileid: "61335660"
 ---
 # <a name="userexperienceanalyticsmodelscores-resource-type"></a>Tipo de recurso userExperienceAnalyticsModelScores
 
 Namespace: microsoft.graph
 
-> **Importante:** As APIs Graph Microsoft na versão /beta estão sujeitas a alterações; não há suporte para uso de produção.
+> **Importante:** As GRAPH da Microsoft na versão /beta estão sujeitas a alterações; o uso de produção não é suportado.
 
 > **Observação:** A API do Microsoft Graph para Intune requer uma [licença ativa do Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
 
 A entidade de pontuações do modelo de análise de experiência do usuário consolida as várias pontuações de análise de ponto de extremidade.
 
-## <a name="methods"></a>Métodos
+## <a name="methods"></a>Methods
 |Método|Tipo de retorno|Descrição|
 |:---|:---|:---|
 |[Listar userExperienceAnalyticsModelScoreses](../api/intune-devices-userexperienceanalyticsmodelscores-list.md)|[Coleção userExperienceAnalyticsModelScores](../resources/intune-devices-userexperienceanalyticsmodelscores.md)|Listar propriedades e relações dos [objetos userExperienceAnalyticsModelScores.](../resources/intune-devices-userexperienceanalyticsmodelscores.md)|
@@ -34,7 +34,7 @@ A entidade de pontuações do modelo de análise de experiência do usuário con
 ## <a name="properties"></a>Propriedades
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|id|Cadeia de caracteres|O identificador exclusivo do objeto de pontuação do modelo de análise de experiência do usuário.|
+|id|String|O identificador exclusivo do objeto de pontuação do modelo de análise de experiência do usuário.|
 |modelo|String|Um identificador exclusivo das pontuações do modelo de análise de experiência do usuário: modelo de dispositivo.|
 |fabricante|String|Um identificador exclusivo das pontuações do modelo de análise de experiência do usuário: fabricante do dispositivo.|
 |modelDeviceCount|Int64|A contagem de dispositivos do modelo de análise de experiência do usuário. Valores válidos -9.22337203685478E+18 a 9.22337203685478E+18|
@@ -67,6 +67,7 @@ Veja a seguir uma representação JSON do recurso.
   "healthStatus": "String"
 }
 ```
+
 
 
 

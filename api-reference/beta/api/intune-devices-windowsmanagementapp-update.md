@@ -2,21 +2,21 @@
 title: Atualizar windowsManagementApp
 description: Atualize as propriedades de um objeto windowsManagementApp.
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 88f7655a9819da4afb9b7a64665ecf912b208c26
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 69cdb248653b44479f804121921e8cd694309405
+ms.sourcegitcommit: 65f4e128f96783c18d607a6dcffbc914291285d4
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59087888"
+ms.lasthandoff: 12/08/2021
+ms.locfileid: "61336314"
 ---
 # <a name="update-windowsmanagementapp"></a>Atualizar windowsManagementApp
 
 Namespace: microsoft.graph
 
-> **Importante:** As APIs Graph Microsoft na versão /beta estão sujeitas a alterações; não há suporte para uso de produção.
+> **Importante:** As GRAPH da Microsoft na versão /beta estão sujeitas a alterações; o uso de produção não é suportado.
 
 > **Observação:** A API do Microsoft Graph para Intune requer uma [licença ativa do Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
 
@@ -27,9 +27,9 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 |Tipo de permissão|Permissões (da com menos para a com mais privilégios)|
 |:---|:---|
-|Delegado (conta corporativa ou de estudante)|DeviceManagementManagedDevices.ReadWrite.All|
+|Delegado (conta corporativa ou de estudante)|DeviceManagementConfiguration.ReadWrite.All, DeviceManagementManagedDevices.ReadWrite.All|
 |Delegado (conta pessoal da Microsoft)|Sem suporte.|
-|Aplicativo|DeviceManagementManagedDevices.ReadWrite.All|
+|Aplicativo|DeviceManagementConfiguration.ReadWrite.All, DeviceManagementManagedDevices.ReadWrite.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- {
@@ -53,10 +53,10 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar [o windo
 
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|id|Cadeia de caracteres|Identificador exclusivo do aplicativo Windows de gerenciamento|
-|availableVersion|Cadeia de Caracteres|Windows versão disponível do aplicativo de gerenciamento.|
+|id|String|Identificador exclusivo do aplicativo Windows de gerenciamento|
+|availableVersion|String|Windows versão disponível do aplicativo de gerenciamento.|
 |managedInstaller|[managedInstallerStatus](../resources/intune-devices-managedinstallerstatus.md)|Status do Instalador Gerenciado. Os valores possíveis são: `disabled` e `enabled`.|
-|managedInstallerConfiguredDateTime|Cadeia de Caracteres|Data configurada do Instalador Gerenciado|
+|managedInstallerConfiguredDateTime|String|Data configurada do Instalador Gerenciado|
 
 
 
@@ -95,6 +95,7 @@ Content-Length: 284
   "managedInstallerConfiguredDateTime": "Managed Installer Configured Date Time value"
 }
 ```
+
 
 
 

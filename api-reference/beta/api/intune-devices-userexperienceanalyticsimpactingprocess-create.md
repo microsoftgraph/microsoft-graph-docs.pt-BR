@@ -2,21 +2,21 @@
 title: Criar userExperienceAnalyticsImpactingProcess
 description: Crie um novo objeto userExperienceAnalyticsImpactingProcess.
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 0da159a410d7b550b535ec23875464edc557ee8f
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: b4e90c4656171ce0a58a957923188a1df49d9dd5
+ms.sourcegitcommit: 65f4e128f96783c18d607a6dcffbc914291285d4
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59124914"
+ms.lasthandoff: 12/08/2021
+ms.locfileid: "61335828"
 ---
 # <a name="create-userexperienceanalyticsimpactingprocess"></a>Criar userExperienceAnalyticsImpactingProcess
 
 Namespace: microsoft.graph
 
-> **Importante:** As APIs Graph Microsoft na versão /beta estão sujeitas a alterações; não há suporte para uso de produção.
+> **Importante:** As GRAPH da Microsoft na versão /beta estão sujeitas a alterações; o uso de produção não é suportado.
 
 > **Observação:** A API do Microsoft Graph para Intune requer uma [licença ativa do Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
 
@@ -27,9 +27,9 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 |Tipo de permissão|Permissões (da com menos para a com mais privilégios)|
 |:---|:---|
-|Delegado (conta corporativa ou de estudante)|DeviceManagementManagedDevices.ReadWrite.All|
+|Delegado (conta corporativa ou de estudante)|DeviceManagementConfiguration.ReadWrite.All, DeviceManagementManagedDevices.ReadWrite.All|
 |Delegado (conta pessoal da Microsoft)|Sem suporte.|
-|Aplicativo|DeviceManagementManagedDevices.ReadWrite.All|
+|Aplicativo|DeviceManagementConfiguration.ReadWrite.All, DeviceManagementManagedDevices.ReadWrite.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- {
@@ -53,11 +53,11 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar o userEx
 
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|id|Cadeia de caracteres|O identificador exclusivo da entidade de processo de análise de experiência do usuário.|
+|id|String|O identificador exclusivo da entidade de processo de análise de experiência do usuário.|
 |deviceId|Cadeia de caracteres|O identificador exclusivo do dispositivo afetado.|
-|category|Cadeia de caracteres|A categoria do processo de impacto.|
-|processName|Cadeia de Caracteres|O nome do processo.|
-|description|Cadeia de caracteres|A descrição do processo.|
+|category|String|A categoria do processo de impacto.|
+|processName|String|O nome do processo.|
+|description|String|A descrição do processo.|
 |publicador|String|O editor do processo.|
 |impactValue|Duplo|O valor de impacto do processo. Valores válidos de 0 a 1,79769313486232E+308|
 
@@ -104,6 +104,7 @@ Content-Length: 349
   "impactValue": 3.6666666666666665
 }
 ```
+
 
 
 

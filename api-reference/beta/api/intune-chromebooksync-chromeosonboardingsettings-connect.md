@@ -5,18 +5,18 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 155d5f46d95b5e906acc9f10053023c7eb3c38f6
-ms.sourcegitcommit: c7ff992ef63e480d070421ba99b28ee129cb6acb
+ms.openlocfilehash: ae61e817343f63aa9e5a753d86c87d2fa537f533
+ms.sourcegitcommit: 65f4e128f96783c18d607a6dcffbc914291285d4
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "60687730"
+ms.lasthandoff: 12/08/2021
+ms.locfileid: "61337494"
 ---
 # <a name="connect-action"></a>ação connect
 
 Namespace: microsoft.graph
 
-> **Importante:** As APIs Graph Microsoft na versão /beta estão sujeitas a alterações; não há suporte para uso de produção.
+> **Importante:** As GRAPH da Microsoft na versão /beta estão sujeitas a alterações; o uso de produção não é suportado.
 
 > **Observação:** A API do Microsoft Graph para Intune requer uma [licença ativa do Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
 
@@ -54,7 +54,7 @@ A tabela a seguir mostra os parâmetros que podem ser usados com esta ação.
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
 |ownerUserPrincipalName|String|Ainda não documentado|
-|serviceAccountCredentials|String|Ainda não documentado|
+|ownerAccessToken|String|Ainda não documentado|
 
 
 
@@ -69,11 +69,11 @@ Este é um exemplo da solicitação.
 POST https://graph.microsoft.com/beta/deviceManagement/chromeOSOnboardingSettings/connect
 
 Content-type: application/json
-Content-length: 136
+Content-length: 118
 
 {
   "ownerUserPrincipalName": "Owner User Principal Name value",
-  "serviceAccountCredentials": "Service Account Credentials value"
+  "ownerAccessToken": "Owner Access Token value"
 }
 ```
 
@@ -88,6 +88,7 @@ Content-Length: 29
   "value": "inprogress"
 }
 ```
+
 
 
 

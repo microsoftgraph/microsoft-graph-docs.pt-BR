@@ -2,15 +2,15 @@
 title: Excluir includedGroup
 description: Exclua um grupo da lista de grupos incluídos em uma política de gerenciamento de aplicativo móvel.
 author: ravennMSFT
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: afba78e846d8e45ccf21a612b99874a9c6d16681e967fd6b6a3c021c194f4290
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 1c3bdd8e3e910fa807750d3c6bcae1f007e9d246
+ms.sourcegitcommit: 65f4e128f96783c18d607a6dcffbc914291285d4
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "57099653"
+ms.lasthandoff: 12/08/2021
+ms.locfileid: "61338572"
 ---
 # <a name="delete-includedgroup"></a>Excluir includedGroup
 
@@ -20,14 +20,14 @@ Namespace: microsoft.graph
 
 Exclua um grupo da lista de grupos incluídos em uma política de gerenciamento de aplicativo móvel.
 
-## <a name="permissions"></a>Permissões
+## <a name="permissions"></a>Permissions
 
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão|Permissões (da com menos para a com mais privilégios)|
 |:---|:---|
-|Delegada (conta corporativa ou de estudante)|Policy.ReadWrite.MobilityManagement|
-|Delegada (conta pessoal da Microsoft) | Sem suporte.|
+|Delegado (conta corporativa ou de estudante)|Policy.ReadWrite.MobilityManagement|
+|Delegado (conta pessoal da Microsoft) | Sem suporte.|
 |Aplicativo | Sem suporte.|
 
 ## <a name="http-request"></a>Solicitação HTTP
@@ -84,6 +84,10 @@ DELETE https://graph.microsoft.com/beta/policies/mobileAppManagementPolicies/ab9
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/delete-group-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[Ir](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/delete-group-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

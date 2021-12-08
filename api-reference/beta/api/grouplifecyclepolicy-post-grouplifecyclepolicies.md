@@ -5,12 +5,12 @@ author: Jordanndahl
 ms.localizationpriority: medium
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: 9d2302c5d429cc0df0363303d62a2e2ada86745a
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: 26d79ba9d4be87400608c2e169ff573fa3c8a665
+ms.sourcegitcommit: 65f4e128f96783c18d607a6dcffbc914291285d4
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "60998280"
+ms.lasthandoff: 12/08/2021
+ms.locfileid: "61337130"
 ---
 # <a name="create-grouplifecyclepolicy"></a>Criar groupLifecyclePolicy
 
@@ -20,7 +20,7 @@ Namespace: microsoft.graph
 
 Cria um novo objeto [groupLifecyclePolicy](../resources/grouplifecyclepolicy.md).
 
-## <a name="permissions"></a>Permissões
+## <a name="permissions"></a>Permissions
 
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
@@ -28,14 +28,13 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
 |:--------------------|:---------------------------------------------------------|
 |Delegado (conta corporativa ou de estudante) | Directory.ReadWrite.All    |
-|Delegado (conta pessoal da Microsoft) | Sem suporte |
+|Delegado (conta pessoal da Microsoft) | Sem suporte. |
 |Aplicativo |  Directory.ReadWrite.All |
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /groupLifecyclePolicies
-
 ```
 
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
@@ -54,7 +53,7 @@ Quando é bem-sucedido, este método retorna o código de resposta `201 Created`
 
 ## <a name="example"></a>Exemplo
 
-##### <a name="request"></a>Solicitação
+### <a name="request"></a>Solicitação
 
 
 # <a name="http"></a>[HTTP](#tab/http)
@@ -88,14 +87,13 @@ Content-type: application/json
 [!INCLUDE [sample-code](../includes/snippets/java/create-grouplifecyclepolicy-from-group-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[Go](#tab/go)
+# <a name="go"></a>[Ir](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/create-grouplifecyclepolicy-from-group-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
-No corpo da solicitação, forneça uma representação JSON do objeto [groupLifecyclePolicy](../resources/grouplifecyclepolicy.md).
-##### <a name="response"></a>Resposta
+### <a name="response"></a>Resposta
 
 Observação: o objeto de resposta exibido aqui pode ser encurtado para legibilidade.
 <!-- {

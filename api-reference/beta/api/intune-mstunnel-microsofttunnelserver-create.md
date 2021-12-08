@@ -5,18 +5,18 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 9b1030ed45e4ac30de34535a5361dc1e1d425f18
-ms.sourcegitcommit: 4a960067cf2cd7d3c605550150eb3c9259adfe92
+ms.openlocfilehash: 10267b72faa1ead73bc9952b4f4e1af7a05fef24
+ms.sourcegitcommit: 65f4e128f96783c18d607a6dcffbc914291285d4
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/19/2021
-ms.locfileid: "60493237"
+ms.lasthandoff: 12/08/2021
+ms.locfileid: "61339287"
 ---
 # <a name="create-microsofttunnelserver"></a>Criar microsoftTunnelServer
 
 Namespace: microsoft.graph
 
-> **Importante:** As APIs Graph Microsoft na versão /beta estão sujeitas a alterações; não há suporte para uso de produção.
+> **Importante:** As GRAPH da Microsoft na versão /beta estão sujeitas a alterações; o uso de produção não é suportado.
 
 > **Observação:** A API do Microsoft Graph para Intune requer uma [licença ativa do Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
 
@@ -53,12 +53,12 @@ A tabela a seguir mostra as propriedades necessárias ao criar o microsoftTunnel
 
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|id|Cadeia de caracteres|Id do MicrosoftTunnelServer|
-|displayName|Cadeia de caracteres|O nome de exibição do MicrosoftTunnelServer|
+|id|String|Id do MicrosoftTunnelServer|
+|displayName|String|O nome de exibição do MicrosoftTunnelServer|
 |tunnelServerHealthStatus|[microsoftTunnelServerHealthStatus](../resources/intune-mstunnel-microsofttunnelserverhealthstatus.md)|O status de saúde do MicrosoftTunnelServer. Os valores possíveis são: `unknown`, `healthy`, `unhealthy`, `warning`, `offline`, `upgradeInProgress`, `upgradeFailed`.|
 |lastCheckinDateTime|DateTimeOffset|Quando o MicrosoftTunnelServer entrou pela última vez|
-|agentImageDigest|Cadeia de caracteres|O resumo da imagem do agente atual em execução neste servidor |
-|serverImageDigest|Cadeia de caracteres|O resumo da imagem atual do servidor em execução neste servidor |
+|agentImageDigest|String|O resumo da imagem do agente atual em execução neste servidor |
+|serverImageDigest|String|O resumo da imagem atual do servidor em execução neste servidor |
 
 
 
@@ -101,6 +101,7 @@ Content-Length: 361
   "serverImageDigest": "Server Image Digest value"
 }
 ```
+
 
 
 

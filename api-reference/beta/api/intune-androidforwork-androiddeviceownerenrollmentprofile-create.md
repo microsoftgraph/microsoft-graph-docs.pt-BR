@@ -5,18 +5,18 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 85c37942568292bc7dff9c2701a0dd37f26723f8
-ms.sourcegitcommit: 4a960067cf2cd7d3c605550150eb3c9259adfe92
+ms.openlocfilehash: d1b83f715aa65b601b77e88ec2c670f10e58ac54
+ms.sourcegitcommit: 65f4e128f96783c18d607a6dcffbc914291285d4
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/19/2021
-ms.locfileid: "60491757"
+ms.lasthandoff: 12/08/2021
+ms.locfileid: "61341765"
 ---
 # <a name="create-androiddeviceownerenrollmentprofile"></a>Criar androidDeviceOwnerEnrollmentProfile
 
 Namespace: microsoft.graph
 
-> **Importante:** As APIs Graph Microsoft na versão /beta estão sujeitas a alterações; não há suporte para uso de produção.
+> **Importante:** As GRAPH da Microsoft na versão /beta estão sujeitas a alterações; o uso de produção não é suportado.
 
 > **Observação:** A API do Microsoft Graph para Intune requer uma [licença ativa do Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
 
@@ -54,9 +54,9 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar o androi
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
 |accountId|String|GUID de locatário ao qual o perfil de registro pertence.|
-|id|Cadeia de caracteres|GUID exclusivo do perfil de registro.|
-|displayName|Cadeia de caracteres|Nome de exibição do perfil de registro.|
-|description|Cadeia de caracteres|Descrição do perfil de registro.|
+|id|String|GUID exclusivo do perfil de registro.|
+|displayName|String|Nome de exibição do perfil de registro.|
+|description|String|Descrição do perfil de registro.|
 |enrollmentMode|[androidDeviceOwnerEnrollmentMode](../resources/intune-androidforwork-androiddeviceownerenrollmentmode.md)|O modo de registro de dispositivos que usam esse perfil de registro. Os valores possíveis são: `corporateOwnedDedicatedDevice`, `corporateOwnedFullyManaged`, `corporateOwnedWorkProfile`, `corporateOwnedAOSPUserlessDevice`, `corporateOwnedAOSPUserAssociatedDevice`.|
 |enrollmentTokenType|[androidDeviceOwnerEnrollmentTokenType](../resources/intune-androidforwork-androiddeviceownerenrollmenttokentype.md)|O tipo de token de registro para um perfil de registro. Os valores possíveis são: `default` e `corporateOwnedDedicatedDeviceWithAzureADSharedMode`.|
 |createdDateTime|DateTimeOffset|Data e hora de criação do perfil de registro.|
@@ -68,11 +68,11 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar o androi
 |enrollmentTokenUsageCount|Int32|Número total de dispositivos AOSP que se registraram usando o token atual.|
 |qrCodeContent|String|Cadeia de caracteres usada para gerar um código QR para o token.|
 |qrCodeImage|[mimeContent](../resources/intune-shared-mimecontent.md)|Cadeia de caracteres usada para gerar um código QR para o token.|
-|roleScopeTagIds|Coleção de cadeias de caracteres|Lista de marcas de escopo para esta instância entity.|
-|wifiSsid|Cadeia de caracteres|Cadeia de caracteres que contém o ssid de logon wi-fi|
-|wifiPassword|Cadeia de caracteres|Cadeia de caracteres que contém a senha de logon wi-fi|
+|roleScopeTagIds|Coleção String|Lista de marcas de escopo para esta instância entity.|
+|wifiSsid|String|Cadeia de caracteres que contém o ssid de logon wi-fi|
+|wifiPassword|String|Cadeia de caracteres que contém a senha de logon wi-fi|
 |wifiSecurityType|[aospWifiSecurityType](../resources/intune-androidforwork-aospwifisecuritytype.md)|Cadeia de caracteres que contém o tipo de segurança wi-fi. Os valores possíveis são: `none`, `wpa`, `wep`.|
-|wifiHidden|Booliano|Boolean que indica se redes wifi ocultas estão habilitadas|
+|wifiHidden|Boolean|Boolean que indica se redes wifi ocultas estão habilitadas|
 
 
 
@@ -153,6 +153,7 @@ Content-Length: 1094
   "wifiHidden": true
 }
 ```
+
 
 
 

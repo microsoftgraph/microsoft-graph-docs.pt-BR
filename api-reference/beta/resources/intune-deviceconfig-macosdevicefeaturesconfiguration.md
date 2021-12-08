@@ -5,18 +5,18 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 6ed5280c7f3b1274e73403935e433fb1d5f3ce0b
-ms.sourcegitcommit: c7ff992ef63e480d070421ba99b28ee129cb6acb
+ms.openlocfilehash: 646e86fb618086b456aa275a3ab68df816b5a05f
+ms.sourcegitcommit: 65f4e128f96783c18d607a6dcffbc914291285d4
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "60684054"
+ms.lasthandoff: 12/08/2021
+ms.locfileid: "61338187"
 ---
 # <a name="macosdevicefeaturesconfiguration-resource-type"></a>Tipo de recurso macOSDeviceFeaturesConfiguration
 
 Namespace: microsoft.graph
 
-> **Importante:** As APIs Graph Microsoft na versão /beta estão sujeitas a alterações; não há suporte para uso de produção.
+> **Importante:** As GRAPH da Microsoft na versão /beta estão sujeitas a alterações; o uso de produção não é suportado.
 
 > **Observação:** A API do Microsoft Graph para Intune requer uma [licença ativa do Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
 
@@ -39,13 +39,13 @@ Herda de [appleDeviceFeaturesConfigurationBase](../resources/intune-deviceconfig
 |:---|:---|:---|
 |id|String|Chave da entidade. Herdada de [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
 |lastModifiedDateTime|DateTimeOffset|DateTime da última modificação do objeto. Herdada de [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
-|roleScopeTagIds|Coleção de cadeias de caracteres|Lista de marcas de escopo para esta instância entity. Herdada de [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
+|roleScopeTagIds|Coleção String|Lista de marcas de escopo para esta instância entity. Herdada de [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
 |supportsScopeTags|Booliano|Indica se a Configuração de Dispositivo subjacente dá suporte ou não à atribuição de marcas de escopo. A atribuição à propriedade ScopeTags não é permitida quando esse valor é falso e as entidades não estarão visíveis para usuários com escopo. Isso ocorre para políticas herdadas criadas no Silverlight e podem ser resolvidas excluindo e recriando a política no Portal do Azure. Essa propriedade é somente leitura. Herdada de [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
 |deviceManagementApplicabilityRuleOsEdition|[deviceManagementApplicabilityRuleOsEdition](../resources/intune-deviceconfig-devicemanagementapplicabilityruleosedition.md)|A aplicabilidade da edição do sistema operacional para esta Política. Herdada de [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
 |deviceManagementApplicabilityRuleOsVersion|[deviceManagementApplicabilityRuleOsVersion](../resources/intune-deviceconfig-devicemanagementapplicabilityruleosversion.md)|A regra de aplicabilidade da versão do sistema operacional para esta Política. Herdada de [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
 |deviceManagementApplicabilityRuleDeviceMode|[deviceManagementApplicabilityRuleDeviceMode](../resources/intune-deviceconfig-devicemanagementapplicabilityruledevicemode.md)|A regra de aplicabilidade do modo de dispositivo para esta Política. Herdada de [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
 |createdDateTime|DateTimeOffset|DateTime em que o objeto foi criado. Herdada de [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
-|descrição|String|O administrador forneceu a descrição da Configuração do dispositivo. Herdada de [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
+|description|String|O administrador forneceu a descrição da Configuração do dispositivo. Herdada de [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
 |displayName|String|O administrador forneceu o nome da Configuração do dispositivo. Herdada de [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
 |versão|Int32|Versão da configuração do dispositivo. Herdada de [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
 |airPrintDestinations|[Coleção airPrintDestination](../resources/intune-deviceconfig-airprintdestination.md)|Uma matriz de impressoras AirPrint que sempre devem ser mostradas. Esta coleção pode conter um máximo de 500 elementos. Herdado [do appleDeviceFeaturesConfigurationBase](../resources/intune-deviceconfig-appledevicefeaturesconfigurationbase.md)|
@@ -54,7 +54,7 @@ Herda de [appleDeviceFeaturesConfigurationBase](../resources/intune-deviceconfig
 |loginWindowText|String|Texto personalizado a ser exibido na janela de logon.|
 |authorizedUsersListHidden|Booliano|Se será exibida a caixa de diálogo nome e senha ou uma lista de usuários na janela de logon.|
 |authorizedUsersListHideLocalUsers|Booliano|Se apenas os usuários da rede e do sistema na lista de usuários autorizados na janela de logon.|
-|authorizedUsersListHideMobileAccounts|Booliano|Se deve ocultar usuários móveis na lista de usuários autorizados na janela de logon.|
+|authorizedUsersListHideMobileAccounts|Boolean|Se deve ocultar usuários móveis na lista de usuários autorizados na janela de logon.|
 |authorizedUsersListIncludeNetworkUsers|Booliano|Se deve mostrar usuários de rede na lista de usuários autorizados na janela de logon.|
 |authorizedUsersListHideAdminUsers|Booliano|Se deve ocultar usuários de administrador na lista de usuários autorizados na janela de logon.|
 |authorizedUsersListShowOtherManagedUsers|Booliano|Se deve mostrar outros usuários na lista de usuários autorizados na janela de logon.|
@@ -67,16 +67,16 @@ Herda de [appleDeviceFeaturesConfigurationBase](../resources/intune-deviceconfig
 |powerOffDisabledWhileLoggedIn|Booliano|Se o item de menu Desligar na janela de logon será desabilitado enquanto o usuário estiver conectado.|
 |logOutDisabledWhileLoggedIn|Booliano|Se o item de menu Sair na janela de logon será desabilitado enquanto o usuário estiver conectado.|
 |screenLockDisableImmediate|Booliano|Se desabilitar as funções imediatas de bloqueio de tela.|
-|associatedDomains|Coleção [keyValuePair](../resources/intune-deviceconfig-keyvaluepair.md)|PRETERIDO: use appAssociatedDomains. Obtém ou define uma lista que mapeia aplicativos para seus domínios associados. A chave deve corresponder à ID do aplicativo e o valor deve ser uma cadeia de caracteres na forma de "service:domain" em que o domínio é um nome de host totalmente qualificado (por exemplo, webcredentials:example.com). Esta coleção pode conter um máximo de 500 elementos.|
+|associatedDomains|Coleção [keyValuePair](../resources/intune-shared-keyvaluepair.md)|PRETERIDO: use appAssociatedDomains. Obtém ou define uma lista que mapeia aplicativos para seus domínios associados. A chave deve corresponder à ID do aplicativo e o valor deve ser uma cadeia de caracteres na forma de "service:domain" em que o domínio é um nome de host totalmente qualificado (por exemplo, webcredentials:example.com). Esta coleção pode conter um máximo de 500 elementos.|
 |appAssociatedDomains|[Coleção macOSAssociatedDomainsItem](../resources/intune-deviceconfig-macosassociateddomainsitem.md)|Obtém ou define uma lista que mapeia aplicativos para seus domínios associados. Os identificadores de aplicativo devem ser exclusivos. Esta coleção pode conter um máximo de 500 elementos.|
 |singleSignOnExtension|[singleSignOnExtension](../resources/intune-deviceconfig-singlesignonextension.md)|Obtém ou define um único perfil de extensão de entrada. Preterido: use MacOSSingleSignOnExtension.|
 |macOSSingleSignOnExtension|[macOSSingleSignOnExtension](../resources/intune-deviceconfig-macossinglesignonextension.md)|Obtém ou define um único perfil de extensão de entrada.|
-|contentCachingEnabled|Booliano|Habilita o cache de conteúdo e impede que ele seja desabilitado pelo usuário.|
+|contentCachingEnabled|Boolean|Habilita o cache de conteúdo e impede que ele seja desabilitado pelo usuário.|
 |contentCachingType|[macOSContentCachingType](../resources/intune-deviceconfig-macoscontentcachingtype.md)|Determina que tipo de conteúdo pode ser armazenado em cache pelo serviço de cache de conteúdo da Apple. Os valores possíveis são: `notConfigured`, `userContentOnly`, `sharedContentOnly`.|
-|contentCachingMaxSizeBytes|Int32|O número máximo de bytes de espaço em disco que será usado para o cache de conteúdo. Um valor 0 (padrão) indica espaço em disco ilimitado. |
+|contentCachingMaxSizeBytes|Int64|O número máximo de bytes de espaço em disco que será usado para o cache de conteúdo. Um valor 0 (padrão) indica espaço em disco ilimitado. |
 |contentCachingDataPath|String|O caminho para o diretório usado para armazenar conteúdo armazenado em cache. O valor deve ser (ou terminar com) /Library/Application Support/Apple/AssetCache/Data|
-|contentCachingDisableConnectionSharing|Booliano|Desabilita o compartilhamento de conexões com a Internet.|
-|contentCachingForceConnectionSharing|Booliano|Força o compartilhamento de conexão com a Internet. contentCachingDisableConnectionSharing substitui essa configuração.|
+|contentCachingDisableConnectionSharing|Boolean|Desabilita o compartilhamento de conexões com a Internet.|
+|contentCachingForceConnectionSharing|Boolean|Força o compartilhamento de conexão com a Internet. contentCachingDisableConnectionSharing substitui essa configuração.|
 |contentCachingClientPolicy|[macOSContentCachingClientPolicy](../resources/intune-deviceconfig-macoscontentcachingclientpolicy.md)|Determina o método no qual os servidores de cache de conteúdo escutarão clientes. Os valores possíveis são: `notConfigured`, `clientsInLocalNetwork`, `clientsWithSamePublicIpAddress`, `clientsInCustomLocalNetworks`, `clientsInCustomLocalNetworksWithFallback`.|
 |contentCachingClientListenRanges|Coleção [ipRange](../resources/intune-shared-iprange.md)|Uma lista de caches de conteúdo de intervalos IP personalizados será usada para escutar clientes. Esta coleção pode conter um máximo de 500 elementos.|
 |contentCachingPeerPolicy|[macOSContentCachingPeerPolicy](../resources/intune-deviceconfig-macoscontentcachingpeerpolicy.md)|Determina o método no qual o conteúdo armazena o par de caches com outros caches. Os valores possíveis são: `notConfigured`, `peersInLocalNetwork`, `peersWithSamePublicIpAddress`, `peersInCustomLocalNetworks`.|
@@ -86,9 +86,9 @@ Herda de [appleDeviceFeaturesConfigurationBase](../resources/intune-deviceconfig
 |contentCachingParents|Coleção de cadeias de caracteres|Uma lista de endereços IP que representam caches de conteúdo pai.|
 |contentCachingLogClientIdentities|Booliano|Habilita o registro em log de endereços IP e portas de clientes que solicitam conteúdo armazenado em cache.|
 |contentCachingPublicRanges|Coleção [ipRange](../resources/intune-shared-iprange.md)|Uma lista de intervalos IP personalizados que o serviço de cache de conteúdo da Apple deve usar para corresponder clientes a caches de conteúdo. Esta coleção pode conter um máximo de 500 elementos.|
-|contentCachingBlockDeletion|Booliano|Impede que os caches de conteúdo puriem conteúdo para liberar espaço em disco para outros aplicativos.|
-|contentCachingShowAlerts|Booliano|Exibir alertas de cache de conteúdo como notificações do sistema.|
-|contentCachingKeepAwake|Booliano|Impedir que o dispositivo adormeça se o cache de conteúdo estiver habilitado.|
+|contentCachingBlockDeletion|Boolean|Impede que os caches de conteúdo puriem conteúdo para liberar espaço em disco para outros aplicativos.|
+|contentCachingShowAlerts|Boolean|Exibir alertas de cache de conteúdo como notificações do sistema.|
+|contentCachingKeepAwake|Boolean|Impedir que o dispositivo adormeça se o cache de conteúdo estiver habilitado.|
 |contentCachingPort|Int32|Define a porta usada para o cache de conteúdo. Se o valor for 0, uma porta disponível aleatória será selecionada. Valores válidos de 0 a 65535|
 
 ## <a name="relationships"></a>Relações
@@ -303,6 +303,7 @@ Veja a seguir uma representação JSON do recurso.
   "contentCachingPort": 1024
 }
 ```
+
 
 
 

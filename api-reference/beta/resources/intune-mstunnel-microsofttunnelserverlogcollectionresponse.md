@@ -2,27 +2,27 @@
 title: Tipo de recurso microsoftTunnelServerLogCollectionResponse
 description: Entidade que armazena o status do conjunto de log do servidor.
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 99c788005d51c68e35684e62c906d60122a3625c
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 8b61d6fbec3dedbc61de8908dafc70ea7fea3497
+ms.sourcegitcommit: 65f4e128f96783c18d607a6dcffbc914291285d4
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59039726"
+ms.lasthandoff: 12/08/2021
+ms.locfileid: "61341926"
 ---
 # <a name="microsofttunnelserverlogcollectionresponse-resource-type"></a>Tipo de recurso microsoftTunnelServerLogCollectionResponse
 
 Namespace: microsoft.graph
 
-> **Importante:** As APIs Graph Microsoft na versão /beta estão sujeitas a alterações; não há suporte para uso de produção.
+> **Importante:** As GRAPH da Microsoft na versão /beta estão sujeitas a alterações; o uso de produção não é suportado.
 
 > **Observação:** A API do Microsoft Graph para Intune requer uma [licença ativa do Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
 
 Entidade que armazena o status do conjunto de log do servidor.
 
-## <a name="methods"></a>Métodos
+## <a name="methods"></a>Methods
 |Método|Tipo de retorno|Descrição|
 |:---|:---|:---|
 |[Listar microsoftTunnelServerLogCollectionResponses](../api/intune-mstunnel-microsofttunnelserverlogcollectionresponse-list.md)|[coleção microsoftTunnelServerLogCollectionResponse](../resources/intune-mstunnel-microsofttunnelserverlogcollectionresponse.md)|Listar propriedades e relações dos [objetos microsoftTunnelServerLogCollectionResponse.](../resources/intune-mstunnel-microsofttunnelserverlogcollectionresponse.md)|
@@ -35,12 +35,12 @@ Entidade que armazena o status do conjunto de log do servidor.
 ## <a name="properties"></a>Propriedades
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|id|Cadeia de caracteres|A ID exclusiva da entidade|
+|id|String|A ID exclusiva da entidade|
 |status|[microsoftTunnelLogCollectionStatus](../resources/intune-mstunnel-microsofttunnellogcollectionstatus.md)|O status do conjunto de log. Os valores possíveis são: `pending`, `completed`, `failed`.|
 |startDateTime|DateTimeOffset|A hora de início dos logs coletados |
 |endDateTime|DateTimeOffset|A hora de término dos logs coletados|
 |sizeInBytes|Int64|O tamanho dos logs em bytes|
-|serverId|Cadeia de Caracteres|ID do servidor em que o conjunto de log é solicitado|
+|serverId|String|ID do servidor em que o conjunto de log é solicitado|
 |requestDateTime|DateTimeOffset|A hora em que o conjunto de log foi solicitado|
 |expiryDateTime|DateTimeOffset|O tempo em que o conjunto de log expira|
 
@@ -68,6 +68,7 @@ Veja a seguir uma representação JSON do recurso.
   "expiryDateTime": "String (timestamp)"
 }
 ```
+
 
 
 

@@ -5,12 +5,12 @@ author: AlexanderMars
 ms.localizationpriority: medium
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: 59df189572ed494b4d5cf7e17185edd988c61b98
-ms.sourcegitcommit: 36bae3615df41876493b25da478e589d1974f97b
+ms.openlocfilehash: 89f7e61ab47903b37d15a6620a90ebc098abfe2b
+ms.sourcegitcommit: 65f4e128f96783c18d607a6dcffbc914291285d4
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "59996953"
+ms.lasthandoff: 12/08/2021
+ms.locfileid: "61340673"
 ---
 # <a name="create-organizationalbrandinglocalization"></a>Criar organizationalBrandingLocalization
 Namespace: microsoft.graph
@@ -19,7 +19,7 @@ Crie um novo [objeto organizationalBrandingLocalization.](../resources/organizat
 
 A identidade visual padrão é criada apenas uma vez. Ele é carregado quando uma identidade visual localizada não é configurada para o idioma do navegador do usuário. Para recuperar a identidade visual padrão, consulte [Obter identidade visual](organizationalbranding-get.md).
 
-## <a name="permissions"></a>Permissões
+## <a name="permissions"></a>Permissions
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 | Tipo de permissão                        | Permissões (da com menos para a com mais privilégios) |
@@ -50,7 +50,7 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar o [objet
 
 | Propriedade     | Tipo        | Descrição |
 |:-------------|:------------|:------------|
-| id | Cadeia de caracteres | Um identificador que representa a localidade especificada no padrão ISO 639-1, por exemplo, inglês é `en-US` . Não é possível criar a identidade visual padrão definindo o valor da **id** para os tipos de cadeia de caracteres `0` ou `default` .  <br/><br/>**OBSERVAÇÃO:** No momento, não há suporte para várias marcas para uma única localidade. |
+| id | String | Um identificador que representa a localidade especificada no padrão ISO 639-1, por exemplo, inglês é `en-US` . Não é possível criar a identidade visual padrão definindo o valor da **id** para os tipos de cadeia de caracteres `0` ou `default` .  <br/><br/>**OBSERVAÇÃO:** No momento, não há suporte para várias marcas para uma única localidade. |
 
 ## <a name="response"></a>Resposta
 
@@ -70,7 +70,7 @@ Este é um exemplo de solicitação.
   "blockType": "request",
   "name": "create_organizationalbrandinglocalization"
 }-->
-```http
+```msgraph-interactive
 POST https://graph.microsoft.com/v1.0/organization/d69179bf-f4a4-41a9-a9de-249c0f2efb1d/branding/localizations
 Content-Type: application/json
 

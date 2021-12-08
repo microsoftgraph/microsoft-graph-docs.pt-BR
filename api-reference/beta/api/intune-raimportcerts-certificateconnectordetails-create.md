@@ -2,21 +2,21 @@
 title: Criar certificateConnectorDetails
 description: Crie um novo objeto certificateConnectorDetails.
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: ec640219d77c991804f3ab5680c956a203df755f
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: fc35cfc346fd4e8ee60f51090cbc57f6137b5174
+ms.sourcegitcommit: 65f4e128f96783c18d607a6dcffbc914291285d4
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59111996"
+ms.lasthandoff: 12/08/2021
+ms.locfileid: "61339091"
 ---
 # <a name="create-certificateconnectordetails"></a>Criar certificateConnectorDetails
 
 Namespace: microsoft.graph
 
-> **Importante:** As APIs Graph Microsoft na versão /beta estão sujeitas a alterações; não há suporte para uso de produção.
+> **Importante:** As GRAPH da Microsoft na versão /beta estão sujeitas a alterações; o uso de produção não é suportado.
 
 > **Observação:** A API do Microsoft Graph para Intune requer uma [licença ativa do Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
 
@@ -53,9 +53,9 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar o certif
 
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|id|Cadeia de caracteres|Identificador exclusivo para este conjunto de ConnectorDetails.|
-|connectorName|Cadeia de Caracteres|Nome do conector (definido durante o registro).|
-|machineName|Cadeia de Caracteres|Nome do computador que hospeda esse serviço de conector.|
+|id|String|Identificador exclusivo para este conjunto de ConnectorDetails.|
+|connectorName|String|Nome do conector (definido durante o registro).|
+|machineName|String|Nome do computador que hospeda esse serviço de conector.|
 |enrollmentDateTime|DateTimeOffset|Data/hora em que esse conector foi inscrito.|
 |lastCheckinDateTime|DateTimeOffset|Data/hora em que esse conector se conectou pela última vez ao serviço.|
 
@@ -98,6 +98,7 @@ Content-Length: 327
   "lastCheckinDateTime": "2017-01-01T00:02:46.0431416-08:00"
 }
 ```
+
 
 
 

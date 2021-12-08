@@ -1,71 +1,57 @@
 ---
-title: Usar o Microsoft Graph para configurar permissões necessárias do Azure AD Graph para um registro de aplicativo
-description: Use o Microsoft Graph para configurar permissões necessárias do Azure AD Graph para um registro de aplicativo.
+title: Configurar permissões necessárias do Azure AD Graph para um registro de aplicativo
+description: Configure permissões necessárias do Azure AD Graph para um registro de aplicativo.
 author: FaithOmbongi
 ms.localizationpriority: medium
 ms.prod: applications
-ms.openlocfilehash: 25fac773056238bde7c50158eb09daf3f5080552
-ms.sourcegitcommit: 6b5bee1a1cea92c1f3d6439110c4916eb8b249a5
+ms.openlocfilehash: 7a892bcf27da48673704f3596d9ca24cd31c8bd9
+ms.sourcegitcommit: 65f4e128f96783c18d607a6dcffbc914291285d4
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/11/2021
-ms.locfileid: "60908579"
+ms.lasthandoff: 12/08/2021
+ms.locfileid: "61344481"
 ---
-# <a name="use-microsoft-graph-to-configure-required-azure-ad-graph-permissions-for-an-app-registration"></a>Usar o Microsoft Graph para configurar permissões necessárias do Azure AD Graph para um registro de aplicativo
+# <a name="configure-required-azure-ad-graph-permissions-for-an-app-registration"></a>Configurar permissões necessárias do Azure AD Graph para um registro de aplicativo
 
-Azure Active Directory (Azure AD) Graph está preterido e será retirado em 30 de junho de 2022. Como parte desse caminho de depreciação, a adição de permissões do Azure AD Graph permissões necessárias para um registro de aplicativo por meio do portal do Azure agora está desabilitada. Recomendamos que você siga a lista de verificação planejamento [de](migrate-azure-ad-graph-planning-checklist.md) migração de aplicativos para ajudá-lo a fazer a transição de seus aplicativos para a [API Graph](/graph/overview) Microsoft.
+Azure Active Directory (Azure AD) Graph está preterido e será retirado em 30 de junho de 2022. Como parte desse caminho de depreciação, a adição de permissões do Azure AD Graph a um registro de aplicativo por meio do portal do Azure agora está desabilitada. Recomendamos que você siga a lista de verificação planejamento [de migração](migrate-azure-ad-graph-planning-checklist.md) de aplicativos para ajudá-lo a fazer a transição de seus aplicativos [para a API Graph](/graph/overview) Microsoft.
 
-No entanto, talvez você ainda precise adicionar mais permissões do Azure AD Graph seu aplicativo. Este artigo fornece orientações sobre como usar o Microsoft Graph para configurar permissões necessárias para o Azure AD Graph para o registro do aplicativo.
+No entanto, seu aplicativo ainda pode exigir temporariamente permissões do Azure AD Graph acessar recursos. Este artigo fornece orientações para configurar permissões necessárias para o Azure AD Graph para o registro do aplicativo.
 
 > [!CAUTION]
 > Qualquer aplicativo usando o Azure AD Graph ainda irá parar de funcionar após 30 de junho de 2022. Para obter mais informações, [consulte Migrate Azure AD Graph aplicativos para o Microsoft Graph](migrate-azure-ad-graph-overview.md).
 
-## <a name="option-1-use-the-microsoft-graph-api"></a>Opção 1: Usar a API Graph Microsoft
+## <a name="option-1-use-the-azure-portal-to-find-the-apis-your-organization-uses"></a>Opção 1: Usar o portal do Azure para encontrar as APIs que sua organização usa
 
-A API Graph [aplicativo](/graph/api/resources/application) da Microsoft inclui uma propriedade **requiredResourceAccess** que é uma coleção de objetos [requiredResourceAccess.](/graph/api/resources/requiredresourceaccess) Use essa propriedade para configurar permissões necessárias do Azure AD Graph conforme descrito nas etapas a seguir.
+1. Entre no [portal do Azure](https://portal.azure.com) como administrador global ou administrador de aplicativos.
+1. Pesquise e **selecione Azure Active Directory**.
+1. Em **Gerenciar**, selecione **Registros de aplicativo**.
+1. Na janela **Registros de aplicativos,** na guia Todos os aplicativos, selecione o aplicativo para o qual você deseja adicionar permissões do Azure AD Graph.  Isso abre o painel Visão geral do registro **do** aplicativo.
+1. No painel esquerdo da janela, no grupo **de** menu Gerenciar, selecione Permissões **de API**. Isso revela as **permissões configuradas para** o registro do aplicativo. Selecione **Adicionar uma permissão**.
+1. Na janela **Solicitação de** permissões de API que é revelada, alterne para **as APIs** que minha organização usa guia e pesquisa `Windows Azure Active Directory` ou `00000002-0000-0000-c000-000000000000` . Selecione na lista filtrada para revelar a janela **Azure Active Directory Graph** permissões.
 
-### <a name="prerequisites"></a>Pré-requisitos
+    :::image type="content" source="/graph/images/aadgraph-to-msgraph-migration/AzureADGraphPermissionsAPI.png" alt-text="A API de Graph do Azure AD é identificada pelo Windows Azure Active Directory e clientID 00000002-0000-0000-c000-000000000000." border="true":::
 
-Para concluir as etapas a seguir, você precisa dos seguintes recursos e privilégios:
+1. Selecione a **guia Permissões delegadas** ou **permissões de** aplicativo para escolher entre permissões delegadas e de aplicativo, respectivamente. Selecione **Adicionar permissões para** adicionar a permissão ao registro do aplicativo.
+1. Depois de adicionar as permissões de  que você precisa,  na janela Permissões Configuradas, selecione Conceder consentimento ao administrador para conceder as permissões do Azure AD Graph ao registro do aplicativo.
 
-+ Execute as solicitações HTTP em uma ferramenta de sua escolha, por exemplo, em seu aplicativo, [Graph Explorer](https://aka.ms/ge)ou Postman.
-+ Execute as APIs como um usuário em uma função administrador global ou administrador de aplicativos ou como proprietário do registro do aplicativo de destino. Para obter mais informações sobre as ações suportadas por essas funções, consulte Funções integradas do [Azure AD](/azure/active-directory/roles/permissions-reference).
-+ O aplicativo usado para fazer essas alterações deve ter a `Application.ReadWrite.All` permissão concedida.
+## <a name="option-2-update-the-application-manifest-on-the-azure-portal"></a>Opção 2: Atualizar o manifesto do aplicativo no portal do Azure
 
-### <a name="step-1-identify-the-permission-ids-for-the-azure-ad-graph-permissions-your-app-requires"></a>Etapa 1: Identificar as IDs de permissão para o Azure AD Graph permissões que seu aplicativo exige
+1. Entre no [portal do Azure](https://portal.azure.com) como administrador global ou administrador de aplicativos.
+1. Pesquise e **selecione Azure Active Directory**.
+1. Em **Gerenciar**, selecione **Registros de aplicativo**.
+1. Na janela **Registros de aplicativos,** na guia Todos os aplicativos, selecione o aplicativo para o qual você deseja adicionar permissões do Azure AD Graph.  Isso abre o painel Visão geral do registro **do** aplicativo.
+1. No painel esquerdo da janela, no grupo **de** menu Gerenciar, selecione **Manifesto**. Isso abre um editor que permite editar diretamente os atributos do objeto de registro do aplicativo.
 
-Identifique as permissões do Azure AD Graph seu aplicativo, suas IDs de permissão e se elas são funções de aplicativo (permissões de aplicativo) ou permissões delegadas. Você pode recuperar as IDs de permissão de um registro de aplicativo existente que tenha a permissão configurada lendo sua propriedade **requiredResourceAccess** no **Manifesto** do aplicativo no portal do Azure ou por meio da API do Microsoft Graph. 
+    :::image type="content" source="/graph/images/aadgraph-to-msgraph-migration/AppRegistrationManifest.png" alt-text="Um arquivo de manifesto de registro de aplicativo permite que você edite os atributos do aplicativo." border="true":::
 
-O Azure AD Graph **appId** global exclusivo do Azure é e é identificado pela propriedade `00000002-0000-0000-c000-000000000000` **resourceAppId** da propriedade **requiredResourceAccess.**
+1. Edite cuidadosamente **a propriedade requiredResourceAccess** no arquivo de manifesto do aplicativo para adicionar os seguintes detalhes:
+    >**Observação:** Você pode editar o manifesto do aplicativo no portal do Azure ou  selecionar **Baixar** para editar o manifesto localmente e, em seguida, usar o Upload para reaplicar para seu aplicativo.
++ Adicione a **propriedade resourceAppId** e atribua o valor `00000002-0000-0000-c000-000000000000` que representa o Azure AD Graph
++ Adicione a **propriedade resourceAccess** e atribua as permissões necessárias.
 
-### <a name="request"></a>Solicitação
+    O trecho JSON a seguir mostra uma propriedade **requiredResourceAccess** com o Azure AD Graph como o recurso e atribuiu *user.Read* e *Application.Read.All* oauth2PermissionScope (permissão delegada) e appRole (permissão de aplicativo), respectivamente.    
 
-A solicitação a seguir recupera as IDs e tipos de permissão do Azure AD Graph de um aplicativo existente identificado **por id** `f7748341-825c-46e9-a111-5e3b56ae015b` .
-
-<!-- {
-  "blockType": "request",
-  "name": "migrate-azureadgraph-get-serviceprincipal-azureadgraph"
-}-->
-
-```msgraph-interactive
-https://graph.microsoft.com/v1.0/applications/f7748341-825c-46e9-a111-5e3b56ae015b?$select=requiredResourceAccess
-```
-
-### <a name="response"></a>Resposta
-
->**Observação:** o objeto de resposta mostrado aqui pode ser encurtado para legibilidade.
-<!-- {
-  "blockType": "response",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.servicePrincipal"
-} -->
-
-```http
-HTTP/1.1 200 OK
-Content-type: application/json
-
-{
-    "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#applications(requiredResourceAccess)/$entity",
+    ```JSON
     "requiredResourceAccess": [
         {
             "resourceAppId": "00000002-0000-0000-c000-000000000000",
@@ -80,11 +66,111 @@ Content-type: application/json
                 }
             ]
         }
+    ],
+    ```
+
+7. Salve suas alterações.
+8. Selecione **permissões de API** e nas permissões configuradas  para o registro do aplicativo, selecione Conceder consentimento ao administrador para conceder ao Azure AD Graph permissões para o registro do aplicativo. 
+
+## <a name="option-3-use-the-microsoft-graph-api"></a>Opção 3: Usar a API Graph Microsoft
+
+A API Graph [aplicativo](/graph/api/resources/application) da Microsoft inclui uma propriedade **requiredResourceAccess** que é uma coleção de objetos [requiredResourceAccess.](/graph/api/resources/requiredresourceaccess) Use essa propriedade para configurar permissões necessárias do Azure AD Graph conforme descrito nas etapas a seguir.
+
+### <a name="prerequisites"></a>Pré-requisitos
+
+Para concluir as etapas a seguir, você precisa dos seguintes recursos e privilégios:
+
++ Execute as solicitações HTTP em uma ferramenta de sua escolha, por exemplo, em seu aplicativo, [Graph Explorer](https://aka.ms/ge)ou Postman.
++ Execute as APIs como um usuário em uma função administrador global ou administrador de aplicativos ou como proprietário do registro do aplicativo de destino. Para obter mais informações sobre as ações suportadas por essas funções, consulte Funções integradas do [Azure AD](/azure/active-directory/roles/permissions-reference).
++ O aplicativo usado para fazer essas alterações deve ter a `Application.ReadWrite.All` permissão concedida.
+
+### <a name="step-1-identify-the-permission-ids-for-the-azure-ad-graph-permissions-your-app-requires"></a>Etapa 1: Identificar as IDs de permissão para o Azure AD Graph permissões que seu aplicativo exige
+
+Identifique as permissões do Azure AD Graph seu aplicativo, suas IDs de permissão e se elas são funções de aplicativo (permissões de aplicativo) ou oauth2PermissionScopes (permissões delegadas).
+
+O Azure AD Graph é identificado como um objeto servicePrincipal com como seu appId global exclusivo e como `00000002-0000-0000-c000-000000000000` seu `Windows Azure Active Directory` **displayName** e **appDisplayName**. Execute a seguinte solicitação para recuperar o objeto de entidade de serviço do Azure AD Graph.
+
+#### <a name="request"></a>Solicitação
+
+<!-- {
+  "blockType": "request",
+  "name": "migrate-azureadgraph-get-serviceprincipal-azureadgraph"
+}-->
+
+```msgraph-interactive
+GET https://graph.microsoft.com/v1.0/servicePrincipals?$filter=appId eq '00000002-0000-0000-c000-000000000000'
+```
+
+#### <a name="response"></a>Resposta
+
+No objeto response, detalhes para permissões de aplicativo do Azure AD Graph são listados no objeto **appRoles** enquanto os detalhes para permissões delegadas são listados no **objeto oauth2PermissionScopes.**
+
+>**Observação:** o objeto de resposta mostrado aqui pode ser encurtado para legibilidade.
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.servicePrincipal"
+} -->
+
+```http
+```http
+HTTP/1.1 200 OK
+Content-type: application/json
+
+{
+    "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#servicePrincipals",
+    "value": [
+        {
+            "id": "1804a6f8-e623-4520-8f40-ba1b0c11c42d",
+            "accountEnabled": true,
+            "appDisplayName": "Windows Azure Active Directory",
+            "appDescription": null,
+            "appId": "00000002-0000-0000-c000-000000000000",
+            "appOwnerOrganizationId": "f8cdef31-a31e-4b4a-93e4-5f571e91255a",
+            "appRoleAssignmentRequired": false,
+            "displayName": "Windows Azure Active Directory",
+            "servicePrincipalNames": [
+                "https://graph.windows.net",
+                "00000002-0000-0000-c000-000000000000/graph.microsoftazure.us",
+                "00000002-0000-0000-c000-000000000000/graph.windows.net",
+                "00000002-0000-0000-c000-000000000000/directory.windows.net",
+                "00000002-0000-0000-c000-000000000000",
+                "https://graph.windows.net/",
+                "https://graph.microsoftazure.us"
+            ],
+            "servicePrincipalType": "Application",
+            "signInAudience": "AzureADMultipleOrgs",
+            "appRoles": [
+                {
+                    "allowedMemberTypes": [
+                        "Application"
+                    ],
+                    "description": "Allows the app to read applications and service principals without a signed-in user",
+                    "displayName": "Read all applications",
+                    "id": "3afa6a7d-9b1a-42eb-948e-1650a849e176",
+                    "isEnabled": true,
+                    "origin": "Application",
+                    "value": "Application.Read.All"
+                }
+            ],
+            "oauth2PermissionScopes": [
+                {
+                    "adminConsentDescription": "Allows users to sign in to the app, and allows the app to read the profile of signed-in users. It also allow the app to read basic company information of signed-in users.",
+                    "adminConsentDisplayName": "Sign in and read user profile",
+                    "id": "311a71cc-e848-46a1-bdf8-97ff7156d8e6",
+                    "isEnabled": true,
+                    "type": "User",
+                    "userConsentDescription": "Allows you to sign in to the app with your work account and let the app read your profile. It also allows the app to read basic company information.",
+                    "userConsentDisplayName": "Sign you in and read your profile",
+                    "value": "User.Read"
+                }
+            ]
+        }
     ]
 }
 ```
 
-A partir dessa saída, é a ID de permissão da permissão delegada User.Read enquanto é a ID de permissão da função de aplicativo `311a71cc-e848-46a1-bdf8-97ff7156d8e6`  `3afa6a7d-9b1a-42eb-948e-1650a849e176` *Application.Read.All.*
+Na saída truncada acima, está a ID de permissão para a permissão delegada User.Read enquanto é a ID de permissão para a permissão do aplicativo `311a71cc-e848-46a1-bdf8-97ff7156d8e6`  `3afa6a7d-9b1a-42eb-948e-1650a849e176` *Application.Read.All.*
 
 ### <a name="step-2-add-required-azure-ad-graph-permissions-to-your-app"></a>Etapa 2: Adicionar permissões necessárias do Azure AD Graph seu aplicativo
 
@@ -147,7 +233,7 @@ GET https://graph.microsoft.com/v1.0/applications/581088ba-83c5-4975-b8af-11d2d7
 
 >**Observação:** Embora você tenha configurado as permissões que o aplicativo exige, essas permissões não foram concedidas. Muitas permissões exigem consentimento do administrador antes que possam ser usadas para acessar dados organizacionais.
 
-## <a name="option-2-use-microsoft-graph-powershell"></a>Opção 2: Usar o Microsoft Graph PowerShell
+## <a name="option-4-use-microsoft-graph-powershell"></a>Opção 4: Usar o Microsoft Graph PowerShell
 
 O cmdlet [Update-MgApplication](/powershell/module/microsoft.graph.applications/update-mgapplication?view=graph-powershell-1.0&preserve-view=true) no Microsoft Graph PowerShell inclui um parâmetro **RequiredResourceAccess** que é uma coleção de **objetos IMicrosoftGraphRequiredResourceAccess.** Use este parâmetro para configurar as permissões necessárias do Azure AD Graph conforme descrito nas etapas a seguir.
 
@@ -161,20 +247,27 @@ Para concluir as etapas a seguir, os seguintes privilégios são necessários:
 
 ### <a name="step-1-identify-the-permission-ids-for-the-azure-ad-graph-permissions-your-app-requires"></a>Etapa 1: Identificar as IDs de permissão para o Azure AD Graph permissões que seu aplicativo exige
 
-Identifique as permissões do Azure AD Graph seu aplicativo, suas IDs de permissão e se elas são funções de aplicativo (permissões de aplicativo) ou permissões delegadas. Você pode recuperar as IDs de permissão de um registro de aplicativo existente que tenha a permissão configurada lendo sua propriedade **RequiredResourceAccess** no **Manifesto** do aplicativo no portal do Azure ou por meio de um script do PowerShell.
+Identifique as permissões do Azure AD Graph seu aplicativo, suas IDs de permissão e se são funções de aplicativo (permissões de aplicativo) ou permissões delegadas.
 
-### <a name="request"></a>Solicitação
+O Graph do Azure AD é identificado como um objeto ServicePrincipal com como seu AppId global exclusivo e como `00000002-0000-0000-c000-000000000000` seu `Windows Azure Active Directory` **DisplayName** e **AppDisplayName**. Execute a seguinte solicitação para recuperar o objeto ServicePrincipal para o Azure AD Graph.
 
-Crie um novo script do PowerShell chamado **fetchPermissions.ps1** adicionar o código a seguir. Este código recupera as IDs e tipos de permissão do Azure AD Graph de um registro de aplicativo existente identificado pela ID do objeto `f7748341-825c-46e9-a111-5e3b56ae015b` . Substitua pela ID do objeto do aplicativo `f7748341-825c-46e9-a111-5e3b56ae015b` de origem.
+#### <a name="request"></a>Solicitação
+
+Crie um novo script do PowerShell chamado **fetchPermissions.ps1** adicionar o código a seguir. Este código recupera as IDs e tipos de permissões do Azure AD Graph. A saída exibe e formatará a saída dos **objetos AppRoles** e **Oauth2PermissionScopes.**
 
 ```powershell
 # Sign in with the required Application.ReadWrite.All scope
-Connect-Graph -Scopes "Application.ReadWrite.All" 
+Connect-Graph -Scopes "Application.ReadWrite.All"
 
-## Replace f7748341-825c-46e9-a111-5e3b56ae015b with the object ID of the existing app registration; then read and output the permission IDs and their types
-$sourceAppId= 'f7748341-825c-46e9-a111-5e3b56ae015b' 
-$sourceApp = Get-MgApplication -ApplicationId $sourceAppId 
-$sourceApp.RequiredResourceAccess.ResourceAccess
+# Retrieve the service principal details for Azure AD Graph API.
+$AADGraph = Get-MgServicePrincipal -Filter "appId eq '00000002-0000-0000-c000-000000000000'"
+
+# Format output of the request above and display AppRoles (application permissions) and oauth2PermissionScopes (delegated permissions)
+Echo "Azure AD Graph service principal object and its supported permissions:"
+Echo "Application permissions:"
+$AADGraph.AppRoles | Format-List
+Echo "Delegated permissions:"
+$AADGraph.Oauth2PermissionScopes | Format-List
 ```
 
 Execute o script usando o comando a seguir
@@ -182,18 +275,41 @@ Execute o script usando o comando a seguir
 .\fetchPermissions.ps1
 ```
 
-### <a name="response"></a>Resposta
+#### <a name="response"></a>Resposta
 
 A seguir, um exemplo de saída.
 
 ```powershell
-Id                                   Type
---                                   ----
-311a71cc-e848-46a1-bdf8-97ff7156d8e6 Scope
-3afa6a7d-9b1a-42eb-948e-1650a849e176 Role
+Welcome To Microsoft Graph!
+Azure AD Graph service principal object and its supported permissions:
+Application permissions:
+
+
+AllowedMemberTypes   : {Application}
+Description          : Allows the app to read applications and service principals without a signed-in user
+DisplayName          : Read all applications
+Id                   : 3afa6a7d-9b1a-42eb-948e-1650a849e176
+IsEnabled            : True
+Origin               : Application
+Value                : Application.Read.All
+AdditionalProperties : {}
+
+Delegated permissions:
+
+
+AdminConsentDescription : Allows users to sign in to the app, and allows the app to read the profile of signed-in users. It also allow the app to read basic company information of signed-in users.
+AdminConsentDisplayName : Sign in and read user profile
+Id                      : 311a71cc-e848-46a1-bdf8-97ff7156d8e6
+IsEnabled               : True
+Origin                  :
+Type                    : User
+UserConsentDescription  : Allows you to sign in to the app with your work account and let the app read your profile. It also allows the app to read basic company information.
+UserConsentDisplayName  : Sign you in and read your profile
+Value                   : User.Read
+AdditionalProperties    : {}
 ```
 
-A partir dessa saída, é a ID de permissão da permissão delegada User.Read enquanto é a ID de permissão da função de aplicativo `311a71cc-e848-46a1-bdf8-97ff7156d8e6`  `3afa6a7d-9b1a-42eb-948e-1650a849e176` *Application.Read.All.*
+A partir dessa saída, está a ID de permissão da permissão delegada User.Read enquanto é a ID de permissão da permissão `311a71cc-e848-46a1-bdf8-97ff7156d8e6`  `3afa6a7d-9b1a-42eb-948e-1650a849e176` *application.Read.All.*
 
 ### <a name="step-2-add-azure-ad-graph-permissions-to-your-app"></a>Etapa 2: Adicionar permissões do Azure AD Graph seu aplicativo
 

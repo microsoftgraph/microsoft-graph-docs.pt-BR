@@ -5,19 +5,19 @@ author: AlexanderMars
 ms.localizationpriority: medium
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: c9026c2bc28d32bbed9218c840a4e87ba7167b29
-ms.sourcegitcommit: 36bae3615df41876493b25da478e589d1974f97b
+ms.openlocfilehash: c966263cf7922183f79c966ece655d599c05b2c8
+ms.sourcegitcommit: 65f4e128f96783c18d607a6dcffbc914291285d4
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "59996988"
+ms.lasthandoff: 12/08/2021
+ms.locfileid: "61340685"
 ---
 # <a name="list-localizations"></a>Listar localizações
 Namespace: microsoft.graph
 
 Recupere todos os objetos de identidade visual de localização, incluindo a identidade visual padrão.
 
-## <a name="permissions"></a>Permissões
+## <a name="permissions"></a>Permissions
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 | Tipo de permissão                        | Permissões (da com menos para a com mais privilégios) |
@@ -63,7 +63,7 @@ Este é um exemplo de solicitação.
   "name": "list_organizationalbrandinglocalization"
 }
 -->
-``` http
+```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/organization/84841066-274d-4ec0-a5c1-276be684bdd3/branding/localizations/
 ```
 # <a name="c"></a>[C#](#tab/csharp)

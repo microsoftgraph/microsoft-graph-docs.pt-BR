@@ -2,21 +2,21 @@
 title: Obter windowsDriverUpdateProfile
 description: Ler propriedades e relações do objeto windowsDriverUpdateProfile.
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: a54318f9ed226bd118adeb0bbe536257810af745
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 3e5146251417cabcb2bc5c11ccbe4e07e6f009da
+ms.sourcegitcommit: 65f4e128f96783c18d607a6dcffbc914291285d4
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59138488"
+ms.lasthandoff: 12/08/2021
+ms.locfileid: "61334288"
 ---
 # <a name="get-windowsdriverupdateprofile"></a>Obter windowsDriverUpdateProfile
 
 Namespace: microsoft.graph
 
-> **Importante:** As APIs Graph Microsoft na versão /beta estão sujeitas a alterações; não há suporte para uso de produção.
+> **Importante:** As GRAPH da Microsoft na versão /beta estão sujeitas a alterações; o uso de produção não é suportado.
 
 > **Observação:** A API do Microsoft Graph para Intune requer uma [licença ativa do Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
 
@@ -88,6 +88,7 @@ Content-Length: 539
   }
 }
 ```
+
 
 
 

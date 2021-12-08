@@ -5,18 +5,18 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 997f8aa3f053900ba23573a983036932615fe891
-ms.sourcegitcommit: 4a960067cf2cd7d3c605550150eb3c9259adfe92
+ms.openlocfilehash: 4b8a935ec91cb2f3f2007d82364594bf15b9e892
+ms.sourcegitcommit: 65f4e128f96783c18d607a6dcffbc914291285d4
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/19/2021
-ms.locfileid: "60486737"
+ms.lasthandoff: 12/08/2021
+ms.locfileid: "61340295"
 ---
 # <a name="update-microsofttunnelserverlogcollectionresponse"></a>Atualizar microsoftTunnelServerLogCollectionResponse
 
 Namespace: microsoft.graph
 
-> **Importante:** As APIs Graph Microsoft na versão /beta estão sujeitas a alterações; não há suporte para uso de produção.
+> **Importante:** As GRAPH da Microsoft na versão /beta estão sujeitas a alterações; o uso de produção não é suportado.
 
 > **Observação:** A API do Microsoft Graph para Intune requer uma [licença ativa do Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
 
@@ -53,12 +53,12 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar [o micro
 
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|id|Cadeia de caracteres|A ID exclusiva da entidade|
+|id|String|A ID exclusiva da entidade|
 |status|[microsoftTunnelLogCollectionStatus](../resources/intune-mstunnel-microsofttunnellogcollectionstatus.md)|O status do conjunto de log. Os valores possíveis são: `pending`, `completed`, `failed`.|
 |startDateTime|DateTimeOffset|A hora de início dos logs coletados |
 |endDateTime|DateTimeOffset|A hora de término dos logs coletados|
 |sizeInBytes|Int64|O tamanho dos logs em bytes|
-|serverId|Cadeia de caracteres|ID do servidor em que o conjunto de log é solicitado|
+|serverId|String|ID do servidor em que o conjunto de log é solicitado|
 |requestDateTime|DateTimeOffset|A hora em que o conjunto de log foi solicitado|
 |expiryDateTime|DateTimeOffset|O tempo em que o conjunto de log expira|
 
@@ -107,6 +107,7 @@ Content-Length: 444
   "expiryDateTime": "2017-01-01T00:03:32.5199332-08:00"
 }
 ```
+
 
 
 

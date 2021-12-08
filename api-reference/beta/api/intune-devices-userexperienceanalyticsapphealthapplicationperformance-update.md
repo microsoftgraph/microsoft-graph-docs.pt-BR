@@ -2,21 +2,21 @@
 title: Atualizar userExperienceAnalyticsAppHealthApplicationPerformance
 description: Atualize as propriedades de um objeto userExperienceAnalyticsAppHealthApplicationPerformance.
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 2dcab34b468f170098d2361a576171e0361e4abb
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 4f29d1882800c604ccd0f28cc1c66b20915fa5f6
+ms.sourcegitcommit: 65f4e128f96783c18d607a6dcffbc914291285d4
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59027866"
+ms.lasthandoff: 12/08/2021
+ms.locfileid: "61334750"
 ---
 # <a name="update-userexperienceanalyticsapphealthapplicationperformance"></a>Atualizar userExperienceAnalyticsAppHealthApplicationPerformance
 
 Namespace: microsoft.graph
 
-> **Importante:** As APIs Graph Microsoft na versão /beta estão sujeitas a alterações; não há suporte para uso de produção.
+> **Importante:** As GRAPH da Microsoft na versão /beta estão sujeitas a alterações; o uso de produção não é suportado.
 
 > **Observação:** A API do Microsoft Graph para Intune requer uma [licença ativa do Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
 
@@ -27,9 +27,9 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 |Tipo de permissão|Permissões (da com menos para a com mais privilégios)|
 |:---|:---|
-|Delegado (conta corporativa ou de estudante)|DeviceManagementManagedDevices.ReadWrite.All|
+|Delegado (conta corporativa ou de estudante)|DeviceManagementConfiguration.ReadWrite.All, DeviceManagementManagedDevices.ReadWrite.All|
 |Delegado (conta pessoal da Microsoft)|Sem suporte.|
-|Aplicativo|DeviceManagementManagedDevices.ReadWrite.All|
+|Aplicativo|DeviceManagementConfiguration.ReadWrite.All, DeviceManagementManagedDevices.ReadWrite.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- {
@@ -56,12 +56,12 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar [o userE
 |id|String|O identificador exclusivo do objeto de desempenho do aplicativo de análise de experiência do usuário.|
 |appHangCount|Int32|O número de travas para o aplicativo. Valores válidos -2147483648 para 2147483647|
 |appHealthScore|Duplo|A pontuação de saúde do aplicativo. Valores válidos -1,79769313486232E+308 a 1.79769313486232E+308|
-|appHealthStatus|Cadeia de Caracteres|O status de saúde geral do aplicativo.|
+|appHealthStatus|String|O status de saúde geral do aplicativo.|
 |allOrgsHealthScore|Duplo|A pontuação de saúde mediana do aplicativo em todas as organizações. Valores válidos -1,79769313486232E+308 a 1.79769313486232E+308|
 |activeDeviceCount|Int32|O número de dispositivos em que o aplicativo está ativo. Valores válidos -2147483648 para 2147483647|
 |appName|Cadeia de caracteres|O nome do aplicativo.|
-|appDisplayName|Cadeia de caracteres|O nome amigável do aplicativo.|
-|appPublisher|Cadeia de Caracteres|O editor do aplicativo.|
+|appDisplayName|String|O nome amigável do aplicativo.|
+|appPublisher|String|O editor do aplicativo.|
 |appUsageDuration|Int32|O tempo total de uso do aplicativo em minutos. Valores válidos -2147483648 para 2147483647|
 |appCrashCount|Int32|O número de falhas para o aplicativo. Valores válidos -2147483648 para 2147483647|
 |meanTimeToFailureInMinutes|Int32|O tempo de falha média do aplicativo em minutos. Valores válidos -2147483648 para 2147483647|
@@ -119,6 +119,7 @@ Content-Length: 522
   "meanTimeToFailureInMinutes": 10
 }
 ```
+
 
 
 

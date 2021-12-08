@@ -2,27 +2,27 @@
 title: Tipo de recurso remoteAssistanceSettings
 description: Configurações de assistência remota para a conta
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 0179aaeb870c49c89bbb7795a1cc7962011dac68
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 26c085a2acfe5299196e3784e9e9ed7b45af35a7
+ms.sourcegitcommit: 65f4e128f96783c18d607a6dcffbc914291285d4
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59039452"
+ms.lasthandoff: 12/08/2021
+ms.locfileid: "61338103"
 ---
 # <a name="remoteassistancesettings-resource-type"></a>Tipo de recurso remoteAssistanceSettings
 
 Namespace: microsoft.graph
 
-> **Importante:** As APIs Graph Microsoft na versão /beta estão sujeitas a alterações; não há suporte para uso de produção.
+> **Importante:** As GRAPH da Microsoft na versão /beta estão sujeitas a alterações; o uso de produção não é suportado.
 
 > **Observação:** A API do Microsoft Graph para Intune requer uma [licença ativa do Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
 
 Configurações de assistência remota para a conta
 
-## <a name="methods"></a>Métodos
+## <a name="methods"></a>Methods
 |Método|Tipo de retorno|Descrição|
 |:---|:---|:---|
 |[Obter remoteAssistanceSettings](../api/intune-remoteassistance-remoteassistancesettings-get.md)|[remoteAssistanceSettings](../resources/intune-remoteassistance-remoteassistancesettings.md)|Leia propriedades e relações do [objeto remoteAssistanceSettings.](../resources/intune-remoteassistance-remoteassistancesettings.md)|
@@ -31,9 +31,9 @@ Configurações de assistência remota para a conta
 ## <a name="properties"></a>Propriedades
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|id|Cadeia de caracteres|O identificador de configurações de assistência remota|
-|remoteAssistanceState|[remoteAssistanceState](../resources/intune-remoteassistance-remoteassistancestate.md)|O estado atual da assistência remota para a conta. Os valores possíveis são: notConfigured, disabled, enabled. Essa configuração é configurável pelo administrador. As configurações de assistência remota que ainda não foram configuradas pelo administrador têm um estado nãoConfigurado. Retornado por padrão. Os valores possíveis são: `notConfigured`, `disabled`, `enabled`.|
-|allowSessionsToUnenrolledDevices|Boleano| Indica se as sessões para dispositivos não reemrollados são permitidas para a conta. Essa configuração é configurável pelo administrador. O valor padrão é false.|
+|id|String|O identificador de configurações de assistência remota|
+|remoteAssistanceState|[remoteAssistanceState](../resources/intune-remoteassistance-remoteassistancestate.md)|O estado atual da assistência remota para a conta. Os valores possíveis são: desabilitado, habilitado. Essa configuração é configurável pelo administrador. As configurações de assistência remota que ainda não foram configuradas pelo administrador têm um estado desabilitado. Devolvido por padrão. Os valores possíveis são: `disabled` e `enabled`.|
+|allowSessionsToUnenrolledDevices|Booliano| Indica se as sessões para dispositivos não reemrollados são permitidas para a conta. Essa configuração é configurável pelo administrador. O valor padrão é false.|
 
 ## <a name="relationships"></a>Relações
 Nenhum
@@ -54,6 +54,7 @@ Veja a seguir uma representação JSON do recurso.
   "allowSessionsToUnenrolledDevices": true
 }
 ```
+
 
 
 
