@@ -5,18 +5,18 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 4455b15f7e5aa58be64c8932db8f72f72f852532
-ms.sourcegitcommit: 4a960067cf2cd7d3c605550150eb3c9259adfe92
+ms.openlocfilehash: 7efd6a584628b80d9aec03b9fe916c2a401cfb3e
+ms.sourcegitcommit: 65f4e128f96783c18d607a6dcffbc914291285d4
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/19/2021
-ms.locfileid: "60492023"
+ms.lasthandoff: 12/08/2021
+ms.locfileid: "61344411"
 ---
 # <a name="update-devicemanagementconfigurationpolicytemplate"></a>Atualizar deviceManagementConfigurationPolicyTemplate
 
 Namespace: microsoft.graph
 
-> **Importante:** As APIs Graph Microsoft na versão /beta estão sujeitas a alterações; não há suporte para uso de produção.
+> **Importante:** As GRAPH da Microsoft na versão /beta estão sujeitas a alterações; o uso de produção não é suportado.
 
 > **Observação:** A API do Microsoft Graph para Intune requer uma [licença ativa do Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
 
@@ -53,12 +53,12 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar [deviceM
 
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|id|Cadeia de caracteres|Chave do documento do modelo, composta por BaseId e Version. Gerado automaticamente.|
-|baseId|Cadeia de caracteres|Identificador de base de modelos|
+|id|String|Chave do documento do modelo, composta por BaseId e Version. Gerado automaticamente.|
+|baseId|String|Identificador de base de modelos|
 |versão|Int32|Versão do modelo. Valores válidos 1 a 2147483647. Essa propriedade é somente leitura.|
-|displayName|Cadeia de caracteres|Nome de exibição do modelo|
-|description|Cadeia de caracteres|Descrição do modelo|
-|displayVersion|Cadeia de caracteres|Descrição da versão do modelo|
+|displayName|String|Nome de exibição do modelo|
+|descrição|String|Descrição do modelo|
+|displayVersion|String|Descrição da versão do modelo|
 |lifecycleState|[deviceManagementTemplateLifecycleState](../resources/intune-deviceconfigv2-devicemanagementtemplatelifecyclestate.md)|Indique o estado atual do modelo de ciclo de vida. Os possíveis valores são: `invalid`, `draft`, `active`, `superseded`, `deprecated`, `retired`.|
 |plataformas|[deviceManagementConfigurationPlatforms](../resources/intune-deviceconfigv2-devicemanagementconfigurationplatforms.md)|Plataformas para este modelo. Os possíveis valores são: `none`, `android`, `iOS`, `macOS`, `windows10X`, `windows10`.|
 |technologies|[deviceManagementConfigurationTechnologies](../resources/intune-deviceconfigv2-devicemanagementconfigurationtechnologies.md)|Tecnologias para este modelo. Os valores possíveis são: `none`, `mdm`, `windows10XManagement`, `configManager`, `microsoftSense`, `exchangeOnline`, `linuxMdm`, `unknownFutureValue`.|
@@ -119,6 +119,7 @@ Content-Length: 504
   "settingTemplateCount": 4
 }
 ```
+
 
 
 

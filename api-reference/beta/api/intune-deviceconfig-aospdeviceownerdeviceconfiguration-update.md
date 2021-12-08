@@ -2,21 +2,21 @@
 title: Atualizar aospDeviceOwnerDeviceConfiguration
 description: Atualize as propriedades de um objeto aospDeviceOwnerDeviceConfiguration.
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 1d383f229bf578ff2cf67c191a80202ade79c067
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 74af2a84c39bc8372bd54942e22cd2a9ae4c6f99
+ms.sourcegitcommit: 65f4e128f96783c18d607a6dcffbc914291285d4
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59031233"
+ms.lasthandoff: 12/08/2021
+ms.locfileid: "61344243"
 ---
 # <a name="update-aospdeviceownerdeviceconfiguration"></a>Atualizar aospDeviceOwnerDeviceConfiguration
 
 Namespace: microsoft.graph
 
-> **Importante:** As APIs Graph Microsoft na versão /beta estão sujeitas a alterações; não há suporte para uso de produção.
+> **Importante:** As GRAPH da Microsoft na versão /beta estão sujeitas a alterações; o uso de produção não é suportado.
 
 > **Observação:** A API do Microsoft Graph para Intune requer uma [licença ativa do Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
 
@@ -57,19 +57,19 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar [o aospD
 |:---|:---|:---|
 |id|String|Chave da entidade. Herdada de [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
 |lastModifiedDateTime|DateTimeOffset|DateTime da última modificação do objeto. Herdada de [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
-|roleScopeTagIds|Conjunto de cadeias de caracteres|Lista de marcas de escopo para esta instância entity. Herdada de [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
+|roleScopeTagIds|Coleção String|Lista de marcas de escopo para esta instância entity. Herdada de [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
 |supportsScopeTags|Boolean|Indica se a Configuração de Dispositivo subjacente dá suporte ou não à atribuição de marcas de escopo. A atribuição à propriedade ScopeTags não é permitida quando esse valor é falso e as entidades não estarão visíveis para usuários com escopo. Isso ocorre para políticas herdadas criadas no Silverlight e podem ser resolvidas excluindo e recriando a política no Portal do Azure. Essa propriedade é somente leitura. Herdada de [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
 |deviceManagementApplicabilityRuleOsEdition|[deviceManagementApplicabilityRuleOsEdition](../resources/intune-deviceconfig-devicemanagementapplicabilityruleosedition.md)|A aplicabilidade da edição do sistema operacional para esta Política. Herdada de [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
 |deviceManagementApplicabilityRuleOsVersion|[deviceManagementApplicabilityRuleOsVersion](../resources/intune-deviceconfig-devicemanagementapplicabilityruleosversion.md)|A regra de aplicabilidade da versão do sistema operacional para esta Política. Herdada de [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
 |deviceManagementApplicabilityRuleDeviceMode|[deviceManagementApplicabilityRuleDeviceMode](../resources/intune-deviceconfig-devicemanagementapplicabilityruledevicemode.md)|A regra de aplicabilidade do modo de dispositivo para esta Política. Herdada de [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
 |createdDateTime|DateTimeOffset|DateTime em que o objeto foi criado. Herdada de [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
-|description|String|O administrador forneceu a descrição da Configuração do dispositivo. Herdada de [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
-|displayName|Cadeia de caracteres|O administrador forneceu o nome da Configuração do dispositivo. Herdada de [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
+|descrição|String|O administrador forneceu a descrição da Configuração do dispositivo. Herdada de [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
+|displayName|String|O administrador forneceu o nome da Configuração do dispositivo. Herdada de [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
 |versão|Int32|Versão da configuração do dispositivo. Herdada de [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
-|appsAllowInstallFromUnknownSources|Booliano|Indica se o usuário tem ou não permissão para habilitar a configuração de fontes desconhecidas.|
+|appsBlockInstallFromUnknownSources|Booliano|Indica se o usuário tem ou não permissão para habilitar a configuração de fontes desconhecidas. Quando definido como true, o usuário não tem permissão para habilitar configurações de fontes desconhecidas.|
 |bluetoothBlocked|Boolean|Indica se o uso do bluetooth deve ou não ser desabilitado. Quando definido como true, o bluetooth não pode ser habilitado no dispositivo.|
-|bluetoothBlockConfiguration|Boleano|Indica se um usuário deve ou não bloquear a configuração do bluetooth.|
-|bluetoothBlockContactSharing|Boleano|Indica se um usuário deve ou não bloquear o compartilhamento de contatos via bluetooth.|
+|bluetoothBlockConfiguration|Boolean|Indica se um usuário deve ou não bloquear a configuração do bluetooth.|
+|bluetoothBlockContactSharing|Booliano|Indica se um usuário deve ou não bloquear o compartilhamento de contatos via bluetooth.|
 |cameraBlocked|Boolean|Indica se o uso da câmera deve ou não ser desabilitado.|
 |cellularBlockWiFiTethering|Boolean|Indica se o compartilhamento de Internet por Wi-Fi deve ou não ser bloqueado.|
 |factoryResetBlocked|Boolean|Indica se a opção de redefinição de fábrica nas configurações está desabilitada ou não.|
@@ -78,8 +78,7 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar [o aospD
 |passwordRequiredType|[androidDeviceOwnerRequiredPasswordType](../resources/intune-deviceconfig-androiddeviceownerrequiredpasswordtype.md)|Indica a qualidade mínima de senha necessária no dispositivo. Os valores possíveis são: `deviceDefault`, `required`, `numeric`, `numericComplex`, `alphabetic`, `alphanumeric`, `alphanumericWithSymbols`, `lowSecurityBiometric`, `customPassword`.|
 |passwordSignInFailureCountBeforeFactoryReset|Int32|Indica o número de vezes que um usuário pode inserir uma senha incorreta antes que o dispositivo seja apagado. Valores válidos de 4 a 11|
 |screenCaptureBlocked|Boolean|Indica se o recurso deve ou não ser desabilitado para fazer capturas de tela.|
-|securityAllowDebuggingFeatures|Booliano|Indica se o usuário deve ou não bloquear a habilitação de recursos de depuração no dispositivo.|
-|storageAllowUsb|Booliano|Indica se o armazenamento USB deve ou não ser bloqueado.|
+|securityAllowDebuggingFeatures|Boolean|Indica se o usuário deve ou não bloquear a habilitação de recursos de depuração no dispositivo.|
 |storageBlockExternalMedia|Booliano|Indica se a mídia externa deve ou não ser bloqueado.|
 |storageBlockUsbFileTransfer|Booliano|Indica se a transferência de arquivo USB deve ou não ser bloqueado.|
 |backupBlocked|Booliano|Indica se o serviço de backup deve ou não ser bloqueado.|
@@ -97,7 +96,7 @@ Este é um exemplo da solicitação.
 ``` http
 PATCH https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations/{deviceConfigurationId}
 Content-type: application/json
-Content-length: 1721
+Content-length: 1693
 
 {
   "@odata.type": "#microsoft.graph.aospDeviceOwnerDeviceConfiguration",
@@ -129,7 +128,7 @@ Content-length: 1721
   "description": "Description value",
   "displayName": "Display Name value",
   "version": 7,
-  "appsAllowInstallFromUnknownSources": true,
+  "appsBlockInstallFromUnknownSources": true,
   "bluetoothBlocked": true,
   "bluetoothBlockConfiguration": true,
   "bluetoothBlockContactSharing": true,
@@ -142,7 +141,6 @@ Content-length: 1721
   "passwordSignInFailureCountBeforeFactoryReset": 12,
   "screenCaptureBlocked": true,
   "securityAllowDebuggingFeatures": true,
-  "storageAllowUsb": true,
   "storageBlockExternalMedia": true,
   "storageBlockUsbFileTransfer": true,
   "backupBlocked": true,
@@ -155,7 +153,7 @@ Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado a
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 1893
+Content-Length: 1865
 
 {
   "@odata.type": "#microsoft.graph.aospDeviceOwnerDeviceConfiguration",
@@ -190,7 +188,7 @@ Content-Length: 1893
   "description": "Description value",
   "displayName": "Display Name value",
   "version": 7,
-  "appsAllowInstallFromUnknownSources": true,
+  "appsBlockInstallFromUnknownSources": true,
   "bluetoothBlocked": true,
   "bluetoothBlockConfiguration": true,
   "bluetoothBlockContactSharing": true,
@@ -203,13 +201,13 @@ Content-Length: 1893
   "passwordSignInFailureCountBeforeFactoryReset": 12,
   "screenCaptureBlocked": true,
   "securityAllowDebuggingFeatures": true,
-  "storageAllowUsb": true,
   "storageBlockExternalMedia": true,
   "storageBlockUsbFileTransfer": true,
   "backupBlocked": true,
   "wifiBlockEditConfigurations": true
 }
 ```
+
 
 
 

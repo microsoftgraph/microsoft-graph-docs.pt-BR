@@ -5,18 +5,18 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 647ce2fff931c7400cf85cbd2254b6cc0c90120b
-ms.sourcegitcommit: 4a960067cf2cd7d3c605550150eb3c9259adfe92
+ms.openlocfilehash: 921a960d4a6434a30701765a800283484a722dbb
+ms.sourcegitcommit: 65f4e128f96783c18d607a6dcffbc914291285d4
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/19/2021
-ms.locfileid: "60493176"
+ms.lasthandoff: 12/08/2021
+ms.locfileid: "61348056"
 ---
 # <a name="create-operationapprovalpolicy"></a>Criar operationApprovalPolicy
 
 Namespace: microsoft.graph
 
-> **Importante:** As APIs Graph Microsoft na versão /beta estão sujeitas a alterações; não há suporte para uso de produção.
+> **Importante:** As GRAPH da Microsoft na versão /beta estão sujeitas a alterações; o uso de produção não é suportado.
 
 > **Observação:** A API do Microsoft Graph para Intune requer uma [licença ativa do Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
 
@@ -27,9 +27,9 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 |Tipo de permissão|Permissões (da com menos para a com mais privilégios)|
 |:---|:---|
-|Delegado (conta corporativa ou de estudante)|DeviceManagementRBAC.ReadWrite.All|
+|Delegado (conta corporativa ou de estudante)|DeviceManagementConfiguration.ReadWrite.All, DeviceManagementRBAC.ReadWrite.All|
 |Delegado (conta pessoal da Microsoft)|Sem suporte.|
-|Aplicativo|DeviceManagementRBAC.ReadWrite.All|
+|Aplicativo|DeviceManagementConfiguration.ReadWrite.All, DeviceManagementRBAC.ReadWrite.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- {
@@ -53,13 +53,13 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar operatio
 
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|id|Cadeia de caracteres|A ID do OperationApprovalPolicy. Essa propriedade é somente leitura.|
-|displayName|Cadeia de caracteres|O nome de exibição deste OperationApprovalPolicy|
-|description|Cadeia de caracteres|A descrição deste OperationApprovalPolicy|
+|id|String|A ID do OperationApprovalPolicy. Essa propriedade é somente leitura.|
+|displayName|String|O nome de exibição deste OperationApprovalPolicy|
+|descrição|String|A descrição deste OperationApprovalPolicy|
 |lastModifiedDateTime|DateTimeOffset|A última data e hora modificadas deste OperationApprovalPolicy. Essa propriedade é somente leitura.|
-|policyType|[operationApprovalPolicyType](../resources/intune-rbac-operationapprovalpolicytype.md)|O tipo de política para este OperationApprovalPolicy. Os valores possíveis são: `deviceActions` , , , , , , , , , `deviceWipe` , , , , `deviceRetire` , , , `deviceRetireNonCompliant` , `deviceDelete` `deviceLock` , `deviceErase` `deviceDisableActivationLock` `windowsEnrollment` `compliancePolicies` `configurationPolicies` `appProtectionPolicies` `policySets` `filters` `endpointSecurity` `apps` `scripts` . `roles` `unknownFutureValue`|
+|policyType|[operationApprovalPolicyType](../resources/intune-rbac-operationapprovalpolicytype.md)|O tipo de política para este OperationApprovalPolicy. Os valores possíveis são: `deviceActions` , , , , , , , , `deviceWipe` , , `deviceRetire` , , , , , `deviceRetireNonCompliant` , , `deviceDelete` `deviceLock` `deviceErase` `deviceDisableActivationLock` , `windowsEnrollment` `compliancePolicies` `configurationPolicies` `appProtectionPolicies` `policySets` `filters` `endpointSecurity` `apps` `scripts` , `roles` `deviceResetPasscode` `unknownFutureValue`|
 |policyPlatform|[operationApprovalPolicyPlatform](../resources/intune-rbac-operationapprovalpolicyplatform.md)|As plataformas aplicáveis para este OperationApprovalPolicy. Os valores possíveis são: `notApplicable`, `androidDeviceAdministrator`, `androidEnterprise`, `iOSiPadOS`, `macOS`, `windows10AndLater`, `windows81AndLater`, `windows10X`.|
-|approverGroupIds|Coleção de cadeias de caracteres|As IDs de grupo para os aprovadores para este OperationApprovalPolicy|
+|approverGroupIds|Coleção String|As IDs de grupo para os aprovadores para este OperationApprovalPolicy|
 
 
 
@@ -107,6 +107,7 @@ Content-Length: 402
   ]
 }
 ```
+
 
 
 

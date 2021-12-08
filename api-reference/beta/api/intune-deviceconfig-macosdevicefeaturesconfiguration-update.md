@@ -5,18 +5,18 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 720bb389716ae374b72475e614ba75807f41f723
-ms.sourcegitcommit: c7ff992ef63e480d070421ba99b28ee129cb6acb
+ms.openlocfilehash: 878d98de32ed11ffc7ae587007a0f905d111b781
+ms.sourcegitcommit: 65f4e128f96783c18d607a6dcffbc914291285d4
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "60696711"
+ms.lasthandoff: 12/08/2021
+ms.locfileid: "61346945"
 ---
 # <a name="update-macosdevicefeaturesconfiguration"></a>Atualizar macOSDeviceFeaturesConfiguration
 
 Namespace: microsoft.graph
 
-> **Importante:** As APIs Graph Microsoft na versão /beta estão sujeitas a alterações; não há suporte para uso de produção.
+> **Importante:** As GRAPH da Microsoft na versão /beta estão sujeitas a alterações; o uso de produção não é suportado.
 
 > **Observação:** A API do Microsoft Graph para Intune requer uma [licença ativa do Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
 
@@ -57,8 +57,8 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar [macOSDe
 |:---|:---|:---|
 |id|String|Chave da entidade. Herdada de [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
 |lastModifiedDateTime|DateTimeOffset|DateTime da última modificação do objeto. Herdada de [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
-|roleScopeTagIds|Coleção de cadeias de caracteres|Lista de marcas de escopo para esta instância entity. Herdada de [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
-|supportsScopeTags|Booliano|Indica se a Configuração de Dispositivo subjacente dá suporte ou não à atribuição de marcas de escopo. A atribuição à propriedade ScopeTags não é permitida quando esse valor é falso e as entidades não estarão visíveis para usuários com escopo. Isso ocorre para políticas herdadas criadas no Silverlight e podem ser resolvidas excluindo e recriando a política no Portal do Azure. Essa propriedade é somente leitura. Herdada de [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
+|roleScopeTagIds|Coleção String|Lista de marcas de escopo para esta instância entity. Herdada de [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
+|supportsScopeTags|Boolean|Indica se a Configuração de Dispositivo subjacente dá suporte ou não à atribuição de marcas de escopo. A atribuição à propriedade ScopeTags não é permitida quando esse valor é falso e as entidades não estarão visíveis para usuários com escopo. Isso ocorre para políticas herdadas criadas no Silverlight e podem ser resolvidas excluindo e recriando a política no Portal do Azure. Essa propriedade é somente leitura. Herdada de [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
 |deviceManagementApplicabilityRuleOsEdition|[deviceManagementApplicabilityRuleOsEdition](../resources/intune-deviceconfig-devicemanagementapplicabilityruleosedition.md)|A aplicabilidade da edição do sistema operacional para esta Política. Herdada de [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
 |deviceManagementApplicabilityRuleOsVersion|[deviceManagementApplicabilityRuleOsVersion](../resources/intune-deviceconfig-devicemanagementapplicabilityruleosversion.md)|A regra de aplicabilidade da versão do sistema operacional para esta Política. Herdada de [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
 |deviceManagementApplicabilityRuleDeviceMode|[deviceManagementApplicabilityRuleDeviceMode](../resources/intune-deviceconfig-devicemanagementapplicabilityruledevicemode.md)|A regra de aplicabilidade do modo de dispositivo para esta Política. Herdada de [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
@@ -70,8 +70,8 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar [macOSDe
 |autoLaunchItems|[Coleção macOSLaunchItem](../resources/intune-deviceconfig-macoslaunchitem.md)|Lista de aplicativos, arquivos, pastas e outros itens a iniciar quando o usuário faz login. Esta coleção pode conter um máximo de 500 elementos.|
 |adminShowHostInfo|Booliano|Se deve mostrar informações do host do administrador na janela de logon.|
 |loginWindowText|String|Texto personalizado a ser exibido na janela de logon.|
-|authorizedUsersListHidden|Booliano|Se será exibida a caixa de diálogo nome e senha ou uma lista de usuários na janela de logon.|
-|authorizedUsersListHideLocalUsers|Booliano|Se apenas os usuários da rede e do sistema na lista de usuários autorizados na janela de logon.|
+|authorizedUsersListHidden|Boolean|Se será exibida a caixa de diálogo nome e senha ou uma lista de usuários na janela de logon.|
+|authorizedUsersListHideLocalUsers|Boolean|Se apenas os usuários da rede e do sistema na lista de usuários autorizados na janela de logon.|
 |authorizedUsersListHideMobileAccounts|Booliano|Se deve ocultar usuários móveis na lista de usuários autorizados na janela de logon.|
 |authorizedUsersListIncludeNetworkUsers|Booliano|Se deve mostrar usuários de rede na lista de usuários autorizados na janela de logon.|
 |authorizedUsersListHideAdminUsers|Booliano|Se deve ocultar usuários de administrador na lista de usuários autorizados na janela de logon.|
@@ -79,19 +79,19 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar [macOSDe
 |shutDownDisabled|Booliano|Se deve ocultar o item do botão Desligar na janela de logon.|
 |restartDisabled|Booliano|Se deve ocultar o item do botão Reiniciar na janela de logon.|
 |sleepDisabled|Booliano|Se deve ocultar o item de menu Ental na janela de logon.|
-|consoleAccessDisabled|Booliano|Se o outro usuário ignorará o uso do `console` nome de usuário especial.|
+|consoleAccessDisabled|Boolean|Se o outro usuário ignorará o uso do `console` nome de usuário especial.|
 |shutDownDisabledWhileLoggedIn|Booliano|Se o item de menu Desligar na janela de logon será desabilitado enquanto o usuário estiver conectado.|
 |restartDisabledWhileLoggedIn|Booliano|Se o item de menu Reiniciar na janela de logon será desabilitado enquanto o usuário estiver conectado.|
-|powerOffDisabledWhileLoggedIn|Booliano|Se o item de menu Desligar na janela de logon será desabilitado enquanto o usuário estiver conectado.|
-|logOutDisabledWhileLoggedIn|Booliano|Se o item de menu Sair na janela de logon será desabilitado enquanto o usuário estiver conectado.|
+|powerOffDisabledWhileLoggedIn|Boolean|Se o item de menu Desligar na janela de logon será desabilitado enquanto o usuário estiver conectado.|
+|logOutDisabledWhileLoggedIn|Boolean|Se o item de menu Sair na janela de logon será desabilitado enquanto o usuário estiver conectado.|
 |screenLockDisableImmediate|Booliano|Se desabilitar as funções imediatas de bloqueio de tela.|
-|associatedDomains|Coleção [keyValuePair](../resources/intune-deviceconfig-keyvaluepair.md)|PRETERIDO: use appAssociatedDomains. Obtém ou define uma lista que mapeia aplicativos para seus domínios associados. A chave deve corresponder à ID do aplicativo e o valor deve ser uma cadeia de caracteres na forma de "service:domain" em que o domínio é um nome de host totalmente qualificado (por exemplo, webcredentials:example.com). Esta coleção pode conter um máximo de 500 elementos.|
+|associatedDomains|Coleção [keyValuePair](../resources/intune-shared-keyvaluepair.md)|PRETERIDO: use appAssociatedDomains. Obtém ou define uma lista que mapeia aplicativos para seus domínios associados. A chave deve corresponder à ID do aplicativo e o valor deve ser uma cadeia de caracteres na forma de "service:domain" em que o domínio é um nome de host totalmente qualificado (por exemplo, webcredentials:example.com). Esta coleção pode conter um máximo de 500 elementos.|
 |appAssociatedDomains|[Coleção macOSAssociatedDomainsItem](../resources/intune-deviceconfig-macosassociateddomainsitem.md)|Obtém ou define uma lista que mapeia aplicativos para seus domínios associados. Os identificadores de aplicativo devem ser exclusivos. Esta coleção pode conter um máximo de 500 elementos.|
 |singleSignOnExtension|[singleSignOnExtension](../resources/intune-deviceconfig-singlesignonextension.md)|Obtém ou define um único perfil de extensão de entrada. Preterido: use MacOSSingleSignOnExtension.|
 |macOSSingleSignOnExtension|[macOSSingleSignOnExtension](../resources/intune-deviceconfig-macossinglesignonextension.md)|Obtém ou define um único perfil de extensão de entrada.|
-|contentCachingEnabled|Booliano|Habilita o cache de conteúdo e impede que ele seja desabilitado pelo usuário.|
+|contentCachingEnabled|Boolean|Habilita o cache de conteúdo e impede que ele seja desabilitado pelo usuário.|
 |contentCachingType|[macOSContentCachingType](../resources/intune-deviceconfig-macoscontentcachingtype.md)|Determina que tipo de conteúdo pode ser armazenado em cache pelo serviço de cache de conteúdo da Apple. Os valores possíveis são: `notConfigured`, `userContentOnly`, `sharedContentOnly`.|
-|contentCachingMaxSizeBytes|Int32|O número máximo de bytes de espaço em disco que será usado para o cache de conteúdo. Um valor 0 (padrão) indica espaço em disco ilimitado. |
+|contentCachingMaxSizeBytes|Int64|O número máximo de bytes de espaço em disco que será usado para o cache de conteúdo. Um valor 0 (padrão) indica espaço em disco ilimitado. |
 |contentCachingDataPath|String|O caminho para o diretório usado para armazenar conteúdo armazenado em cache. O valor deve ser (ou terminar com) /Library/Application Support/Apple/AssetCache/Data|
 |contentCachingDisableConnectionSharing|Booliano|Desabilita o compartilhamento de conexões com a Internet.|
 |contentCachingForceConnectionSharing|Booliano|Força o compartilhamento de conexão com a Internet. contentCachingDisableConnectionSharing substitui essa configuração.|
@@ -510,6 +510,7 @@ Content-Length: 6428
   "contentCachingPort": 2
 }
 ```
+
 
 
 

@@ -2,21 +2,21 @@
 title: Criar mobileThreatDefenseConnector
 description: Cria um novo objeto mobileThreatDefenseConnector.
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 3d20b762027b004ed1a5e0f442b8cadfce86d873
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: ba32a951f182ba7ba752410a3aac13b94da89850
+ms.sourcegitcommit: 65f4e128f96783c18d607a6dcffbc914291285d4
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59092816"
+ms.lasthandoff: 12/08/2021
+ms.locfileid: "61346015"
 ---
 # <a name="create-mobilethreatdefenseconnector"></a>Criar mobileThreatDefenseConnector
 
 Namespace: microsoft.graph
 
-> **Importante:** As APIs Graph Microsoft na versão /beta estão sujeitas a alterações; não há suporte para uso de produção.
+> **Importante:** As GRAPH da Microsoft na versão /beta estão sujeitas a alterações; o uso de produção não é suportado.
 
 > **Observação:** A API do Microsoft Graph para Intune requer uma [licença ativa do Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
 
@@ -53,23 +53,24 @@ A tabela a seguir mostra as propriedades obrigatórias ao criar mobileThreatDefe
 
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|id|Cadeia de caracteres|Ainda não documentado|
+|id|String|Ainda não documentado|
 |lastHeartbeatDateTime|DateTimeOffset|Data e hora da última Pulsação recebida de um Parceiro de Sincronização de Dados|
-|partnerState|[mobileThreatPartnerTenantState](../resources/intune-onboarding-mobilethreatpartnertenantstate.md)|Sincronização de Dados Estado do parceiro para essa conta. Os valores possíveis são: `unavailable`, `available`, `enabled`, `unresponsive`.|
-|androidMobileApplicationManagementEnabled|Boleano|Para Android, de definir se os dados do parceiro de sincronização de dados devem ser usados durante avaliações do Gerenciamento de Aplicativo Móvel (MAM). Somente um parceiro por plataforma pode estar habilitado para avaliação do Gerenciamento de Aplicativo Móvel (MAM).|
-|iosMobileApplicationManagementEnabled|Boleano|Para IOS, obter ou definir se os dados do parceiro de sincronização de dados devem ser usados durante avaliações do MAM (Gerenciamento de Aplicativo Móvel). Somente um parceiro por plataforma pode estar habilitado para avaliação do Gerenciamento de Aplicativo Móvel (MAM).|
+|partnerState|[mobileThreatPartnerTenantState](../resources/intune-onboarding-mobilethreatpartnertenantstate.md)|Sincronização de Dados estado do parceiro para essa conta. Os valores possíveis são: `unavailable`, `available`, `enabled`, `unresponsive`.|
+|androidMobileApplicationManagementEnabled|Booliano|Para Android, de definir se os dados do parceiro de sincronização de dados devem ser usados durante avaliações do Gerenciamento de Aplicativo Móvel (MAM). Somente um parceiro por plataforma pode estar habilitado para avaliação do Gerenciamento de Aplicativo Móvel (MAM).|
+|iosMobileApplicationManagementEnabled|Booliano|Para IOS, obter ou definir se os dados do parceiro de sincronização de dados devem ser usados durante avaliações do MAM (Gerenciamento de Aplicativo Móvel). Somente um parceiro por plataforma pode estar habilitado para avaliação do Gerenciamento de Aplicativo Móvel (MAM).|
 |androidEnabled|Boolean|No Android, definir se os dados do parceiro de sincronização de dados devem ser usados durante avaliações de conformidade|
 |iosEnabled|Boolean|No iOS, obter ou definir se os dados do parceiro de sincronização de dados devem ser usados durante avaliações de conformidade|
-|windowsEnabled|Boleano|Para Windows, obter ou definir se os dados do parceiro de sincronização de dados devem ser usados durante avaliações de conformidade|
-|macEnabled|Boleano|Para Mac, obter ou definir se os dados do parceiro de sincronização de dados devem ser usados durante avaliações de conformidade|
+|windowsEnabled|Boolean|Para Windows, obter ou definir se os dados do parceiro de sincronização de dados devem ser usados durante avaliações de conformidade|
+|macEnabled|Boolean|Para Mac, obter ou definir se os dados do parceiro de sincronização de dados devem ser usados durante avaliações de conformidade|
 |androidDeviceBlockedOnMissingPartnerData|Boolean|No Android, definir se o Intune deve receber os dados do parceiro de sincronização de dados antes de marcar um dispositivo como compatível|
 |iosDeviceBlockedOnMissingPartnerData|Boolean|No iOS, definir se o Intune deve receber os dados do parceiro de sincronização de dados antes de marcar um dispositivo como compatível|
-|windowsDeviceBlockedOnMissingPartnerData|Boleano|Para Windows, defina se o Intune deve receber dados do parceiro de sincronização de dados antes de marcar um dispositivo compatível|
-|macDeviceBlockedOnMissingPartnerData|Boleano|Para Mac, obter ou definir se o Intune deve receber dados do parceiro de sincronização de dados antes de marcar um dispositivo compatível|
+|windowsDeviceBlockedOnMissingPartnerData|Booliano|Para Windows, defina se o Intune deve receber dados do parceiro de sincronização de dados antes de marcar um dispositivo compatível|
+|macDeviceBlockedOnMissingPartnerData|Booliano|Para Mac, obter ou definir se o Intune deve receber dados do parceiro de sincronização de dados antes de marcar um dispositivo compatível|
 |partnerUnsupportedOsVersionBlocked|Boolean|Obter ou definir se dispositivos devem ser bloqueados nas plataformas habilitadas que não atendam aos requisitos mínimos de versão do Parceiro de Sincronização de Dados|
 |partnerUnresponsivenessThresholdInDays|Int32|Obtém ou define dias de tolerância por locatário à falta de resposta para esta integração de parceiro|
-|allowPartnerToCollectIOSApplicationMetadata|Boleano|Para dispositivos IOS, permite que o administrador configure se o parceiro de sincronização de dados também pode coletar metadados sobre aplicativos instalados do Intune|
-|microsoftDefenderForEndpointAttachEnabled|Boleano|Quando VERDADEIRO, o gerenciamento de perfil de configuração por meio do Microsoft Defender para Ponto de Extremidade está habilitado. Quando FALSE, o gerenciamento de perfil de configuração por meio do Microsoft Defender for Endpoint é desabilitado.|
+|allowPartnerToCollectIOSApplicationMetadata|Boolean|Para dispositivos IOS, permite que o administrador configure se o parceiro de sincronização de dados também pode coletar metadados sobre aplicativos instalados do Intune|
+|allowPartnerToCollectIOSPersonalApplicationMetadata|Boolean|Para dispositivos IOS, permite que o administrador configure se o parceiro de sincronização de dados também pode coletar metadados sobre aplicativos instalados pessoalmente do Intune|
+|microsoftDefenderForEndpointAttachEnabled|Booliano|Quando VERDADEIRO, o gerenciamento de perfil de configuração por meio do Microsoft Defender para Ponto de Extremidade está habilitado. Quando FALSE, o gerenciamento de perfil de configuração por meio do Microsoft Defender for Endpoint é desabilitado.|
 
 
 
@@ -83,7 +84,7 @@ Este é um exemplo da solicitação.
 ``` http
 POST https://graph.microsoft.com/beta/deviceManagement/mobileThreatDefenseConnectors
 Content-type: application/json
-Content-length: 780
+Content-length: 844
 
 {
   "@odata.type": "#microsoft.graph.mobileThreatDefenseConnector",
@@ -102,6 +103,7 @@ Content-length: 780
   "partnerUnsupportedOsVersionBlocked": true,
   "partnerUnresponsivenessThresholdInDays": 6,
   "allowPartnerToCollectIOSApplicationMetadata": true,
+  "allowPartnerToCollectIOSPersonalApplicationMetadata": true,
   "microsoftDefenderForEndpointAttachEnabled": true
 }
 ```
@@ -111,7 +113,7 @@ Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado a
 ``` http
 HTTP/1.1 201 Created
 Content-Type: application/json
-Content-Length: 829
+Content-Length: 893
 
 {
   "@odata.type": "#microsoft.graph.mobileThreatDefenseConnector",
@@ -131,9 +133,11 @@ Content-Length: 829
   "partnerUnsupportedOsVersionBlocked": true,
   "partnerUnresponsivenessThresholdInDays": 6,
   "allowPartnerToCollectIOSApplicationMetadata": true,
+  "allowPartnerToCollectIOSPersonalApplicationMetadata": true,
   "microsoftDefenderForEndpointAttachEnabled": true
 }
 ```
+
 
 
 

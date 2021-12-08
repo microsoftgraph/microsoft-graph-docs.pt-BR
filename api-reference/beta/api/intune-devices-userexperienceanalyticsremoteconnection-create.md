@@ -2,21 +2,21 @@
 title: Criar userExperienceAnalyticsRemoteConnection
 description: Crie um novo objeto userExperienceAnalyticsRemoteConnection.
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: b918a4e540230d7fd6a6f6cd7cfab6cd985d1be6
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 2ff06e498cd2f0d1757ae2e9f4c387c6f98efe90
+ms.sourcegitcommit: 65f4e128f96783c18d607a6dcffbc914291285d4
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59059011"
+ms.lasthandoff: 12/08/2021
+ms.locfileid: "61342101"
 ---
 # <a name="create-userexperienceanalyticsremoteconnection"></a>Criar userExperienceAnalyticsRemoteConnection
 
 Namespace: microsoft.graph
 
-> **Importante:** As APIs Graph Microsoft na versão /beta estão sujeitas a alterações; não há suporte para uso de produção.
+> **Importante:** As GRAPH da Microsoft na versão /beta estão sujeitas a alterações; o uso de produção não é suportado.
 
 > **Observação:** A API do Microsoft Graph para Intune requer uma [licença ativa do Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
 
@@ -27,9 +27,9 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 |Tipo de permissão|Permissões (da com menos para a com mais privilégios)|
 |:---|:---|
-|Delegado (conta corporativa ou de estudante)|DeviceManagementManagedDevices.ReadWrite.All|
+|Delegado (conta corporativa ou de estudante)|DeviceManagementConfiguration.ReadWrite.All, DeviceManagementManagedDevices.ReadWrite.All|
 |Delegado (conta pessoal da Microsoft)|Sem suporte.|
-|Aplicativo|DeviceManagementManagedDevices.ReadWrite.All|
+|Aplicativo|DeviceManagementConfiguration.ReadWrite.All, DeviceManagementManagedDevices.ReadWrite.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- {
@@ -57,7 +57,7 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar o userEx
 |deviceId|Cadeia de caracteres|A id do dispositivo.|
 |deviceName|String|O nome do dispositivo.|
 |modelo|String|O modelo de dispositivo de análise de experiência do usuário.|
-|virtualNetwork|Cadeia de Caracteres|A rede virtual de análise de experiência do usuário.|
+|virtualNetwork|String|A rede virtual de análise de experiência do usuário.|
 |fabricante|String|O fabricante de análise de experiência do usuário.|
 |deviceCount|Int32|A contagem de conexão remota. Valores válidos de 0 a 2147483647|
 |cloudPcRoundTripTime|Duplo|O tempo de dica de ida e volta do dispositivo cloud pc. Valores válidos de 0 a 1,79769313486232E+308|
@@ -66,7 +66,7 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar o userEx
 |coreBootTime|Duplo|O tempo de inicialização principal do Dispositivo cloud pc. Valores válidos de 0 a 1,79769313486232E+308|
 |coreSignInTime|Duplo|A hora de entrada principal do dispositivo cloud pc. Valores válidos de 0 a 1,79769313486232E+308|
 |cloudPcFailurePercentage|Duplo|A porcentagem de falha de entrada do dispositivo cloud pc. Valores válidos de 0 a 100|
-|userPrincipalName|Cadeia de caracteres|O usuário de análise de experiência do usuárioPrincipalName.|
+|userPrincipalName|String|O usuário de análise de experiência do usuárioPrincipalName.|
 
 
 
@@ -125,6 +125,7 @@ Content-Length: 622
   "userPrincipalName": "User Principal Name value"
 }
 ```
+
 
 
 

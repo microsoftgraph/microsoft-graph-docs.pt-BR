@@ -2,21 +2,21 @@
 title: Criar userExperienceAnalyticsNotAutopilotReadyDevice
 description: Crie um novo objeto userExperienceAnalyticsNotAutopilotReadyDevice.
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: c96995d78d5cd29e9354bdfc98a89a31cb1ae48d
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: ae6d52d3b8b97f8f09e75ba55b8dca36db1cba46
+ms.sourcegitcommit: 65f4e128f96783c18d607a6dcffbc914291285d4
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59077115"
+ms.lasthandoff: 12/08/2021
+ms.locfileid: "61344061"
 ---
 # <a name="create-userexperienceanalyticsnotautopilotreadydevice"></a>Criar userExperienceAnalyticsNotAutopilotReadyDevice
 
 Namespace: microsoft.graph
 
-> **Importante:** As APIs Graph Microsoft na versão /beta estão sujeitas a alterações; não há suporte para uso de produção.
+> **Importante:** As GRAPH da Microsoft na versão /beta estão sujeitas a alterações; o uso de produção não é suportado.
 
 > **Observação:** A API do Microsoft Graph para Intune requer uma [licença ativa do Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
 
@@ -27,9 +27,9 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 |Tipo de permissão|Permissões (da com menos para a com mais privilégios)|
 |:---|:---|
-|Delegado (conta corporativa ou de estudante)|DeviceManagementManagedDevices.ReadWrite.All|
+|Delegado (conta corporativa ou de estudante)|DeviceManagementConfiguration.ReadWrite.All, DeviceManagementManagedDevices.ReadWrite.All|
 |Delegado (conta pessoal da Microsoft)|Sem suporte.|
-|Aplicativo|DeviceManagementManagedDevices.ReadWrite.All|
+|Aplicativo|DeviceManagementConfiguration.ReadWrite.All, DeviceManagementManagedDevices.ReadWrite.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- {
@@ -53,16 +53,16 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar o userEx
 
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|id|Cadeia de caracteres|O identificador exclusivo do dispositivo intune de análise de experiência do usuário.|
+|id|String|O identificador exclusivo do dispositivo intune de análise de experiência do usuário.|
 |deviceName|String|O nome do dispositivo intune.|
 |serialNumber|String|O número de série do dispositivo intune.|
 |fabricante|String|O fabricante do dispositivo intune.|
 |modelo|String|O modelo do dispositivo intune.|
-|managedBy|Cadeia de caracteres|O dispositivo do intune é gerenciado por.|
+|managedBy|String|O dispositivo do intune é gerenciado por.|
 |autoPilotRegistered|Boolean|O piloto automático do dispositivo intuneRegistered.|
 |autoPilotProfileAssigned|Booliano|O autopilotProfileAssigned do dispositivo intune.|
 |azureAdRegistered|Booliano|O dispositivo do intune é azureAdRegistered.|
-|azureAdJoinType|Cadeia de caracteres|O azure Ad joinType do dispositivo do intune.|
+|azureAdJoinType|String|O azure Ad joinType do dispositivo do intune.|
 
 
 
@@ -113,6 +113,7 @@ Content-Length: 470
   "azureAdJoinType": "Azure Ad Join Type value"
 }
 ```
+
 
 
 

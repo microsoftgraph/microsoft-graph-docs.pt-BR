@@ -5,24 +5,24 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 0a06ea1c99f3a0b87c1b323f85278ace41b593d2
-ms.sourcegitcommit: 4a960067cf2cd7d3c605550150eb3c9259adfe92
+ms.openlocfilehash: 45c2b30a39c9930ee8a8d7def27a06e7617fddbf
+ms.sourcegitcommit: 65f4e128f96783c18d607a6dcffbc914291285d4
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/19/2021
-ms.locfileid: "60488914"
+ms.lasthandoff: 12/08/2021
+ms.locfileid: "61346742"
 ---
 # <a name="operationapprovalrequest-resource-type"></a>Tipo de recurso operationApprovalRequest
 
 Namespace: microsoft.graph
 
-> **Importante:** As APIs Graph Microsoft na versão /beta estão sujeitas a alterações; não há suporte para uso de produção.
+> **Importante:** As GRAPH da Microsoft na versão /beta estão sujeitas a alterações; o uso de produção não é suportado.
 
 > **Observação:** A API do Microsoft Graph para Intune requer uma [licença ativa do Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
 
 A entidade OperationApprovalRequest
 
-## <a name="methods"></a>Métodos
+## <a name="methods"></a>Methods
 |Método|Tipo de retorno|Descrição|
 |:---|:---|:---|
 |[Listar operationApprovalRequests](../api/intune-rbac-operationapprovalrequest-list.md)|[Coleção operationApprovalRequest](../resources/intune-rbac-operationapprovalrequest.md)|Listar propriedades e relações dos [objetos operationApprovalRequest.](../resources/intune-rbac-operationapprovalrequest.md)|
@@ -30,9 +30,9 @@ A entidade OperationApprovalRequest
 |[Criar operationApprovalRequest](../api/intune-rbac-operationapprovalrequest-create.md)|[operationApprovalRequest](../resources/intune-rbac-operationapprovalrequest.md)|Crie um novo [objeto operationApprovalRequest.](../resources/intune-rbac-operationapprovalrequest.md)|
 |[Excluir operationApprovalRequest](../api/intune-rbac-operationapprovalrequest-delete.md)|Nenhum|Exclui uma [operaçãoApprovalRequest](../resources/intune-rbac-operationapprovalrequest.md).|
 |[Atualizar operationApprovalRequest](../api/intune-rbac-operationapprovalrequest-update.md)|[operationApprovalRequest](../resources/intune-rbac-operationapprovalrequest.md)|Atualize as propriedades de um [objeto operationApprovalRequest.](../resources/intune-rbac-operationapprovalrequest.md)|
-|[aprovar ação](../api/intune-rbac-operationapprovalrequest-approve.md)|Cadeia de caracteres|Aprova a instância solicitada de uma operationApprovalRequest|
-|[rejeitar ação](../api/intune-rbac-operationapprovalrequest-reject.md)|Cadeia de caracteres|Rejeita a instância solicitada de uma operationApprovalRequest|
-|[Ação cancelApproval](../api/intune-rbac-operationapprovalrequest-cancelapproval.md)|Cadeia de caracteres|Cancela uma instância já aprovada de uma operaçãoApprovalRequest|
+|[aprovar ação](../api/intune-rbac-operationapprovalrequest-approve.md)|String|Aprova a instância solicitada de uma operationApprovalRequest|
+|[rejeitar ação](../api/intune-rbac-operationapprovalrequest-reject.md)|String|Rejeita a instância solicitada de uma operationApprovalRequest|
+|[Ação cancelApproval](../api/intune-rbac-operationapprovalrequest-cancelapproval.md)|String|Cancela uma instância já aprovada de uma operaçãoApprovalRequest|
 |[Ação getRequestStatus](../api/intune-rbac-operationapprovalrequest-getrequeststatus.md)|[operationApprovalRequestEntityStatus](../resources/intune-rbac-operationapprovalrequestentitystatus.md)|Ainda não documentado|
 |[função getMyRequestById](../api/intune-rbac-operationapprovalrequest-getmyrequestbyid.md)|[operationApprovalRequest](../resources/intune-rbac-operationapprovalrequest.md)|Ainda não documentado|
 |[função getMyRequests](../api/intune-rbac-operationapprovalrequest-getmyrequests.md)|[Coleção operationApprovalRequest](../resources/intune-rbac-operationapprovalrequest.md)|Ainda não documentado|
@@ -41,15 +41,15 @@ A entidade OperationApprovalRequest
 ## <a name="properties"></a>Propriedades
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|id|Cadeia de caracteres|A ID da Entidade|
+|id|String|A ID da Entidade|
 |requestDateTime|DateTimeOffset|DateTime da solicitação. Essa propriedade é somente leitura.|
 |expirationDateTime|DateTimeOffset|O DateTime em que as ações na solicitação não são mais permitidas. Essa propriedade é somente leitura.|
 |lastModifiedDateTime|DateTimeOffset|DateTime modificado pela última vez. Essa propriedade é somente leitura.|
 |requestor|[identitySet](../resources/intune-rbac-identityset.md)|A identidade do solicitante. Essa propriedade é somente leitura.|
 |aprovador|[identitySet](../resources/intune-rbac-identityset.md)|A identidade do aprovador. Essa propriedade é somente leitura.|
 |status|[operationApprovalRequestStatus](../resources/intune-rbac-operationapprovalrequeststatus.md)|O status atual da solicitação de aprovação. Essa propriedade é somente leitura. Os valores possíveis são: `unknown`, `needsApproval`, `approved`, `rejected`, `cancelled`, `completed`, `expired`.|
-|requestJustification|Cadeia de caracteres|A justificativa da solicitação. Essa propriedade é somente leitura.|
-|approvalJustification|Cadeia de caracteres|A justificativa para a aprovação da solicitação. Essa propriedade é somente leitura.|
+|requestJustification|String|A justificativa da solicitação. Essa propriedade é somente leitura.|
+|approvalJustification|String|A justificativa para a aprovação da solicitação. Essa propriedade é somente leitura.|
 
 ## <a name="relationships"></a>Relações
 Nenhum
@@ -110,6 +110,7 @@ Veja a seguir uma representação JSON do recurso.
   "approvalJustification": "String"
 }
 ```
+
 
 
 

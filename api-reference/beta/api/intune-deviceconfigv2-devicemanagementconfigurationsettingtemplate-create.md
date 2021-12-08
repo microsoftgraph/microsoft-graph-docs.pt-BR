@@ -5,18 +5,18 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: a3a98515b32c3b775631416355168f71e10a7fe2
-ms.sourcegitcommit: 4a960067cf2cd7d3c605550150eb3c9259adfe92
+ms.openlocfilehash: 38b9a34107c5262ea5dab7b2dd350904e9c8d992
+ms.sourcegitcommit: 65f4e128f96783c18d607a6dcffbc914291285d4
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/19/2021
-ms.locfileid: "60488126"
+ms.lasthandoff: 12/08/2021
+ms.locfileid: "61346882"
 ---
 # <a name="create-devicemanagementconfigurationsettingtemplate"></a>Criar deviceManagementConfigurationSettingTemplate
 
 Namespace: microsoft.graph
 
-> **Importante:** As APIs Graph Microsoft na versão /beta estão sujeitas a alterações; não há suporte para uso de produção.
+> **Importante:** As GRAPH da Microsoft na versão /beta estão sujeitas a alterações; o uso de produção não é suportado.
 
 > **Observação:** A API do Microsoft Graph para Intune requer uma [licença ativa do Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
 
@@ -54,7 +54,7 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar deviceMa
 
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|id|Cadeia de caracteres|Chave deste modelo de configuração no modelo de política que o contém. Gerado automaticamente.|
+|id|String|Chave deste modelo de configuração no modelo de política que o contém. Gerado automaticamente.|
 |settingInstanceTemplate|[deviceManagementConfigurationSettingInstanceTemplate](../resources/intune-deviceconfigv2-devicemanagementconfigurationsettinginstancetemplate.md)|Modelo de instância de configuração|
 
 
@@ -116,6 +116,7 @@ Content-Length: 833
   }
 }
 ```
+
 
 
 

@@ -2,27 +2,27 @@
 title: Tipo de recurso windowsDriverUpdateInventory
 description: Uma nova entidade para representar inventários de driver.
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 06fa58d5e4428e55e0d76a37c484519c566198d2
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: be31bcdc9193e6bbd62c0b5a2bca0e0d939bf530
+ms.sourcegitcommit: 65f4e128f96783c18d607a6dcffbc914291285d4
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59029931"
+ms.lasthandoff: 12/08/2021
+ms.locfileid: "61343599"
 ---
 # <a name="windowsdriverupdateinventory-resource-type"></a>Tipo de recurso windowsDriverUpdateInventory
 
 Namespace: microsoft.graph
 
-> **Importante:** As APIs Graph Microsoft na versão /beta estão sujeitas a alterações; não há suporte para uso de produção.
+> **Importante:** As GRAPH da Microsoft na versão /beta estão sujeitas a alterações; o uso de produção não é suportado.
 
 > **Observação:** A API do Microsoft Graph para Intune requer uma [licença ativa do Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
 
 Uma nova entidade para representar inventários de driver.
 
-## <a name="methods"></a>Métodos
+## <a name="methods"></a>Methods
 |Método|Tipo de retorno|Descrição|
 |:---|:---|:---|
 |[Listar windowsDriverUpdateInventories](../api/intune-softwareupdate-windowsdriverupdateinventory-list.md)|[Coleção windowsDriverUpdateInventory](../resources/intune-softwareupdate-windowsdriverupdateinventory.md)|Listar propriedades e relações dos [objetos windowsDriverUpdateInventory.](../resources/intune-softwareupdate-windowsdriverupdateinventory.md)|
@@ -35,7 +35,7 @@ Uma nova entidade para representar inventários de driver.
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
 |id|String|A id do driver.|
-|nome|Cadeia de caracteres|O nome do driver.|
+|nome|String|O nome do driver.|
 |versão|String|A versão do driver.|
 |fabricante|String|O fabricante do driver.|
 |releaseDateTime|DateTimeOffset|A data de lançamento do driver.|
@@ -71,6 +71,7 @@ Veja a seguir uma representação JSON do recurso.
   "deployDateTime": "String (timestamp)"
 }
 ```
+
 
 
 

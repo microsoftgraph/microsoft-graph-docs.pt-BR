@@ -5,18 +5,18 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: c4c85a2be954cba036df34d726c1c2cd30483f60
-ms.sourcegitcommit: 4a960067cf2cd7d3c605550150eb3c9259adfe92
+ms.openlocfilehash: 840ca65d6cd612e2744569ca4ca3d99cc34b8b45
+ms.sourcegitcommit: 65f4e128f96783c18d607a6dcffbc914291285d4
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/19/2021
-ms.locfileid: "60493230"
+ms.lasthandoff: 12/08/2021
+ms.locfileid: "61342990"
 ---
 # <a name="update-microsofttunnelsite"></a>Atualizar microsoftTunnelSite
 
 Namespace: microsoft.graph
 
-> **Importante:** As APIs Graph Microsoft na versão /beta estão sujeitas a alterações; não há suporte para uso de produção.
+> **Importante:** As GRAPH da Microsoft na versão /beta estão sujeitas a alterações; o uso de produção não é suportado.
 
 > **Observação:** A API do Microsoft Graph para Intune requer uma [licença ativa do Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
 
@@ -53,16 +53,16 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar [o micro
 
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|id|Cadeia de caracteres|Id do MicrosoftTunnelSite|
-|displayName|Cadeia de caracteres|O nome de exibição do MicrosoftTunnelSite|
-|description|Cadeia de caracteres|Descrição do MicrosoftTunnelSite|
-|publicAddress|Cadeia de caracteres|O nome de domínio público do MicrosoftTunnelSite ou o endereço IP|
+|id|String|Id do MicrosoftTunnelSite|
+|displayName|String|O nome de exibição do MicrosoftTunnelSite|
+|descrição|String|Descrição do MicrosoftTunnelSite|
+|publicAddress|String|O nome de domínio público do MicrosoftTunnelSite ou o endereço IP|
 |upgradeWindowUtcOffsetInMinutes|Int32|O timezone do site representado como um deslocamento de minuto do UTC|
 |upgradeWindowStartTime|TimeOfDay|Hora de início da janela de atualização do site|
 |upgradeWindowEndTime|TimeOfDay|Hora de término da janela de atualização do site|
-|upgradeAutomatically|Booliano|A configuração de atualização automática do site. True para atualizações automáticas, false para controle manual|
-|upgradeAvailable|Booliano|True se uma atualização estiver disponível|
-|internalNetworkProbeUrl|Cadeia de caracteres|A URL da Sonda de Acesso à Rede Interna do MicrosoftTunnelSite|
+|upgradeAutomatically|Boolean|A configuração de atualização automática do site. True para atualizações automáticas, false para controle manual|
+|upgradeAvailable|Boolean|True se uma atualização estiver disponível|
+|internalNetworkProbeUrl|String|A URL da Sonda de Acesso à Rede Interna do MicrosoftTunnelSite|
 |roleScopeTagIds|Coleção de cadeias de caracteres|Lista de marcas de escopo para esta instância entity.|
 
 
@@ -120,6 +120,7 @@ Content-Length: 573
   ]
 }
 ```
+
 
 
 

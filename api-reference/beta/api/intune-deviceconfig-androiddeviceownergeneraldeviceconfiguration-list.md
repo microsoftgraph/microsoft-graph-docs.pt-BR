@@ -5,18 +5,18 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 461709a7d22223a7b1438822dccbc06c8ecc5210
-ms.sourcegitcommit: 4a960067cf2cd7d3c605550150eb3c9259adfe92
+ms.openlocfilehash: 98697566e6a4a49c46a4b6a7887bbb2f16c7d2bc
+ms.sourcegitcommit: 65f4e128f96783c18d607a6dcffbc914291285d4
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/19/2021
-ms.locfileid: "60492571"
+ms.lasthandoff: 12/08/2021
+ms.locfileid: "61346966"
 ---
 # <a name="list-androiddeviceownergeneraldeviceconfigurations"></a>Listar androidDeviceOwnerGeneralDeviceConfigurations
 
 Namespace: microsoft.graph
 
-> **Importante:** As APIs Graph Microsoft na versão /beta estão sujeitas a alterações; não há suporte para uso de produção.
+> **Importante:** As GRAPH da Microsoft na versão /beta estão sujeitas a alterações; o uso de produção não é suportado.
 
 > **Observação:** A API do Microsoft Graph para Intune requer uma [licença ativa do Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
 
@@ -66,7 +66,7 @@ Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado a
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 9636
+Content-Length: 9759
 
 {
   "value": [
@@ -122,6 +122,9 @@ Content-Length: 9636
       "cameraBlocked": true,
       "cellularBlockWiFiTethering": true,
       "certificateCredentialConfigurationDisabled": true,
+      "crossProfilePoliciesAllowCopyPaste": true,
+      "crossProfilePoliciesAllowDataSharing": "crossProfileDataSharingBlocked",
+      "crossProfilePoliciesShowWorkContactsInPersonalProfile": true,
       "microsoftLauncherConfigurationEnabled": true,
       "microsoftLauncherCustomWallpaperEnabled": true,
       "microsoftLauncherCustomWallpaperImageUrl": "https://example.com/microsoftLauncherCustomWallpaperImageUrl/",
@@ -239,9 +242,7 @@ Content-Length: 9636
       "passwordRequiredType": "required",
       "passwordSignInFailureCountBeforeFactoryReset": 12,
       "playStoreMode": "allowList",
-      "safeBootBlocked": true,
       "screenCaptureBlocked": true,
-      "securityAllowDebuggingFeatures": true,
       "securityDeveloperSettingsEnabled": true,
       "securityRequireVerifyApps": true,
       "statusBarBlocked": true,
@@ -290,6 +291,7 @@ Content-Length: 9636
   ]
 }
 ```
+
 
 
 

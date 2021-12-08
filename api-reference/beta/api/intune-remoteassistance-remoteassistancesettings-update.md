@@ -2,21 +2,21 @@
 title: Atualizar remoteAssistanceSettings
 description: Atualize as propriedades de um objeto remoteAssistanceSettings.
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 056ba18203dad1ff0e59297959e18459a5b879d9
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: e3d81fbdbab253866de523d6d0c4083b29dc204d
+ms.sourcegitcommit: 65f4e128f96783c18d607a6dcffbc914291285d4
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59096428"
+ms.lasthandoff: 12/08/2021
+ms.locfileid: "61343683"
 ---
 # <a name="update-remoteassistancesettings"></a>Atualizar remoteAssistanceSettings
 
 Namespace: microsoft.graph
 
-> **Importante:** As APIs Graph Microsoft na versão /beta estão sujeitas a alterações; não há suporte para uso de produção.
+> **Importante:** As GRAPH da Microsoft na versão /beta estão sujeitas a alterações; o uso de produção não é suportado.
 
 > **Observação:** A API do Microsoft Graph para Intune requer uma [licença ativa do Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
 
@@ -27,9 +27,9 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 |Tipo de permissão|Permissões (da com menos para a com mais privilégios)|
 |:---|:---|
-|Delegado (conta corporativa ou de estudante)|DeviceManagementServiceConfig.ReadWrite.All|
+|Delegado (conta corporativa ou de estudante)|DeviceManagementServiceConfig.ReadWrite.All, DeviceManagementConfiguration.ReadWrite.All|
 |Delegado (conta pessoal da Microsoft)|Sem suporte.|
-|Aplicativo|DeviceManagementServiceConfig.ReadWrite.All|
+|Aplicativo|DeviceManagementServiceConfig.ReadWrite.All, DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- {
@@ -53,9 +53,9 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar [remoteA
 
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|id|Cadeia de caracteres|O identificador de configurações de assistência remota|
-|remoteAssistanceState|[remoteAssistanceState](../resources/intune-remoteassistance-remoteassistancestate.md)|O estado atual da assistência remota para a conta. Os valores possíveis são: notConfigured, disabled, enabled. Essa configuração é configurável pelo administrador. As configurações de assistência remota que ainda não foram configuradas pelo administrador têm um estado nãoConfigurado. Retornado por padrão. Os valores possíveis são: `notConfigured`, `disabled`, `enabled`.|
-|allowSessionsToUnenrolledDevices|Boleano| Indica se as sessões para dispositivos não reemrollados são permitidas para a conta. Essa configuração é configurável pelo administrador. O valor padrão é false.|
+|id|String|O identificador de configurações de assistência remota|
+|remoteAssistanceState|[remoteAssistanceState](../resources/intune-remoteassistance-remoteassistancestate.md)|O estado atual da assistência remota para a conta. Os valores possíveis são: desabilitado, habilitado. Essa configuração é configurável pelo administrador. As configurações de assistência remota que ainda não foram configuradas pelo administrador têm um estado desabilitado. Devolvido por padrão. Os valores possíveis são: `disabled` e `enabled`.|
+|allowSessionsToUnenrolledDevices|Booliano| Indica se as sessões para dispositivos não reemrollados são permitidas para a conta. Essa configuração é configurável pelo administrador. O valor padrão é false.|
 
 
 
@@ -69,11 +69,11 @@ Este é um exemplo da solicitação.
 ``` http
 PATCH https://graph.microsoft.com/beta/deviceManagement/remoteAssistanceSettings
 Content-type: application/json
-Content-length: 151
+Content-length: 150
 
 {
   "@odata.type": "#microsoft.graph.remoteAssistanceSettings",
-  "remoteAssistanceState": "disabled",
+  "remoteAssistanceState": "enabled",
   "allowSessionsToUnenrolledDevices": true
 }
 ```
@@ -83,15 +83,16 @@ Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado a
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 200
+Content-Length: 199
 
 {
   "@odata.type": "#microsoft.graph.remoteAssistanceSettings",
   "id": "cfef360e-360e-cfef-0e36-efcf0e36efcf",
-  "remoteAssistanceState": "disabled",
+  "remoteAssistanceState": "enabled",
   "allowSessionsToUnenrolledDevices": true
 }
 ```
+
 
 
 

@@ -2,27 +2,27 @@
 title: Tipo de recurso userExperienceAnalyticsDevicePerformance
 description: A entidade de desempenho do dispositivo de análise de experiência do usuário contém detalhes do desempenho da inicialização do dispositivo.
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: c79bbd7b12c82fec38cacf6835c5dd7675ad8558
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 8b8c1e28b373780221c3cf06d7b36d9e6fd631e9
+ms.sourcegitcommit: 65f4e128f96783c18d607a6dcffbc914291285d4
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59125810"
+ms.lasthandoff: 12/08/2021
+ms.locfileid: "61344495"
 ---
 # <a name="userexperienceanalyticsdeviceperformance-resource-type"></a>Tipo de recurso userExperienceAnalyticsDevicePerformance
 
 Namespace: microsoft.graph
 
-> **Importante:** As APIs Graph Microsoft na versão /beta estão sujeitas a alterações; não há suporte para uso de produção.
+> **Importante:** As GRAPH da Microsoft na versão /beta estão sujeitas a alterações; o uso de produção não é suportado.
 
 > **Observação:** A API do Microsoft Graph para Intune requer uma [licença ativa do Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
 
 A entidade de desempenho do dispositivo de análise de experiência do usuário contém detalhes do desempenho da inicialização do dispositivo.
 
-## <a name="methods"></a>Métodos
+## <a name="methods"></a>Methods
 |Método|Tipo de retorno|Descrição|
 |:---|:---|:---|
 |[Listar userExperienceAnalyticsDevicePerformances](../api/intune-devices-userexperienceanalyticsdeviceperformance-list.md)|[coleção userExperienceAnalyticsDevicePerformance](../resources/intune-devices-userexperienceanalyticsdeviceperformance.md)|Listar propriedades e relações dos [objetos userExperienceAnalyticsDevicePerformance.](../resources/intune-devices-userexperienceanalyticsdeviceperformance.md)|
@@ -35,7 +35,7 @@ A entidade de desempenho do dispositivo de análise de experiência do usuário 
 ## <a name="properties"></a>Propriedades
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|id|Cadeia de caracteres|O identificador exclusivo do dispositivo de desempenho de inicialização do dispositivo de análise de experiência do usuário.|
+|id|String|O identificador exclusivo do dispositivo de desempenho de inicialização do dispositivo de análise de experiência do usuário.|
 |deviceName|String|O nome do dispositivo de análise de experiência do usuário.|
 |modelo|String|O modelo de dispositivo de análise de experiência do usuário.|
 |fabricante|String|O fabricante do dispositivo de análise de experiência do usuário.|
@@ -94,6 +94,7 @@ Veja a seguir uma representação JSON do recurso.
   "modelStartupPerformanceScore": "4.2"
 }
 ```
+
 
 
 

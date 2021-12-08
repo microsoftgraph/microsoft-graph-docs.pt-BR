@@ -5,24 +5,24 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 40f43602000fa120b08e5b89a065572f23f90504
-ms.sourcegitcommit: 4a960067cf2cd7d3c605550150eb3c9259adfe92
+ms.openlocfilehash: 05ebbb411beb44d9877fd6b56b972fecb5519838
+ms.sourcegitcommit: 65f4e128f96783c18d607a6dcffbc914291285d4
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/19/2021
-ms.locfileid: "60494133"
+ms.lasthandoff: 12/08/2021
+ms.locfileid: "61343578"
 ---
 # <a name="userexperienceanalyticsworkfromanywheredevice-resource-type"></a>Tipo de recurso userExperienceAnalyticsWorkFromAnywhereDevice
 
 Namespace: microsoft.graph
 
-> **Importante:** As APIs Graph Microsoft na versão /beta estão sujeitas a alterações; não há suporte para uso de produção.
+> **Importante:** As GRAPH da Microsoft na versão /beta estão sujeitas a alterações; o uso de produção não é suportado.
 
 > **Observação:** A API do Microsoft Graph para Intune requer uma [licença ativa do Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
 
 O relatório de análise de experiência do usuário Dispositivo para trabalho em qualquer lugar
 
-## <a name="methods"></a>Métodos
+## <a name="methods"></a>Methods
 |Método|Tipo de retorno|Descrição|
 |:---|:---|:---|
 |[Listar userExperienceAnalyticsWorkFromAnywhereDevices](../api/intune-devices-userexperienceanalyticsworkfromanywheredevice-list.md)|[Coleção userExperienceAnalyticsWorkFromAnywhereDevice](../resources/intune-devices-userexperienceanalyticsworkfromanywheredevice.md)|Listar propriedades e relações dos [objetos userExperienceAnalyticsWorkFromAnywhereDevice.](../resources/intune-devices-userexperienceanalyticsworkfromanywheredevice.md)|
@@ -34,33 +34,33 @@ O relatório de análise de experiência do usuário Dispositivo para trabalho e
 ## <a name="properties"></a>Propriedades
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|id|Cadeia de caracteres|O identificador exclusivo da análise de experiência do usuário funciona em qualquer dispositivo.|
+|id|String|O identificador exclusivo da análise de experiência do usuário funciona em qualquer dispositivo.|
 |deviceId|Cadeia de caracteres|A experiência do usuário funciona a partir de qualquer ID do dispositivo.|
 |deviceName|String|O trabalho do nome do dispositivo em qualquer lugar.|
 |serialNumber|String|A experiência do usuário funciona de qualquer lugar do número de série do dispositivo.|
 |fabricante|String|A experiência do usuário funciona de qualquer fabricante do dispositivo.|
 |modelo|String|A experiência do usuário funciona de qualquer lugar do modelo do dispositivo.|
-|propriedade|Cadeia de caracteres|A experiência do usuário funciona de qualquer lugar da propriedade do dispositivo.|
-|managedBy|Cadeia de caracteres|A experiência do usuário funciona de qualquer lugar do agente de gerenciamento do dispositivo.|
-|autoPilotRegistered|Booliano|A experiência do usuário funciona em qualquer lugar do piloto automático do dispositivo intuneRegistered.|
-|autoPilotProfileAssigned|Booliano|A análise da experiência do usuário funciona em qualquer lugar do autopilotProfileAssigned do dispositivo intune.|
-|azureAdRegistered|Booliano|A experiência do usuário funciona de qualquer lugar do dispositivo azureAdRegistered.|
-|azureAdDeviceId|Cadeia de caracteres|A experiência do usuário funciona em qualquer lugar do Azure Ad device Id.|
-|azureAdJoinType|Cadeia de caracteres|A experiência do usuário funciona de qualquer lugar do azure Ad joinType do dispositivo.|
+|propriedade|String|A experiência do usuário funciona de qualquer lugar da propriedade do dispositivo.|
+|managedBy|String|A experiência do usuário funciona de qualquer lugar do agente de gerenciamento do dispositivo.|
+|autoPilotRegistered|Boolean|A experiência do usuário funciona em qualquer lugar do piloto automático do dispositivo intuneRegistered.|
+|autoPilotProfileAssigned|Boolean|A análise da experiência do usuário funciona em qualquer lugar do autopilotProfileAssigned do dispositivo intune.|
+|azureAdRegistered|Boolean|A experiência do usuário funciona de qualquer lugar do dispositivo azureAdRegistered.|
+|azureAdDeviceId|String|A experiência do usuário funciona em qualquer lugar do Azure Ad device Id.|
+|azureAdJoinType|String|A experiência do usuário funciona de qualquer lugar do azure Ad joinType do dispositivo.|
 |osDescription|Cadeia de caracteres|A experiência do usuário funciona de qualquer lugar da Descrição do sistema operacional do dispositivo.|
 |osVersion|String|A experiência do usuário funciona de qualquer lugar da versão do sistema operacional do dispositivo.|
-|tenantAttached|Booliano|A experiência do usuário funciona de qualquer locatário do dispositivoAttached.|
-|compliancePolicySetToIntune|Booliano|A experiência do usuário funciona de qualquer lugar do dispositivo compliancePolicySetToIntune.|
+|tenantAttached|Boolean|A experiência do usuário funciona de qualquer locatário do dispositivoAttached.|
+|compliancePolicySetToIntune|Boolean|A experiência do usuário funciona de qualquer lugar do dispositivo compliancePolicySetToIntune.|
 |otherWorkloadsSetToIntune|Booliano|A experiência do usuário funciona de qualquer outro dispositivoWorkloadsSetToIntune.|
 |isCloudManagedGatewayEnabled|Booliano|A experiência do usuário funciona em qualquer lugar que o Gateway de Gerenciamento de Nuvem do dispositivo para o Configuration Manager está habilitado.|
 |upgradeEligibility|[operatingSystemUpgradeEligibility](../resources/intune-devices-operatingsystemupgradeeligibility.md)|A experiência do usuário funciona em qualquer lugar do windows upgrade status de qualificação do dispositivo. Os valores possíveis são: `upgraded`, `unknown`, `notCapable`, `capable`.|
 |ramCheckFailed|Booliano|A análise da experiência do usuário funciona em qualquer lugar que a verificação de hardware ram do dispositivo falhou para que o dispositivo atualize para a versão mais recente do windows|
 |storageCheckFailed|Booliano|A experiência do usuário funciona de qualquer dispositivo, Falha na verificação de hardware de armazenamento para que o dispositivo atualize para a versão mais recente do windows.|
 |processorCoreCountCheckFailed|Booliano|A experiência do usuário funciona de qualquer dispositivo, Falha na contagem de núcleos de hardware do processador para que o dispositivo atualize para a versão mais recente do windows.|
-|processorSpeedCheckFailed|Booliano|A experiência do usuário funciona de qualquer dispositivo, Falha na verificação de velocidade de hardware do processador para que o dispositivo atualize para a versão mais recente do windows.|
+|processorSpeedCheckFailed|Boolean|A experiência do usuário funciona de qualquer dispositivo, Falha na verificação de velocidade de hardware do processador para que o dispositivo atualize para a versão mais recente do windows.|
 |tpmCheckFailed|Booliano|A experiência do usuário funciona de qualquer dispositivo, falha na verificação de hardware do Módulo de Plataforma Confiável (TPM) para o dispositivo para a versão mais recente da atualização para windows.|
 |secureBootCheckFailed|Booliano|A experiência do usuário funciona de qualquer dispositivo, Falha na verificação de hardware de inicialização segura para que o dispositivo atualize para a versão mais recente do windows.|
-|processorFamilyCheckFailed|Booliano|A experiência do usuário funciona de qualquer dispositivo, Falha na verificação da família de hardware do processador para que o dispositivo atualize para a versão mais recente do windows.|
+|processorFamilyCheckFailed|Boolean|A experiência do usuário funciona de qualquer dispositivo, Falha na verificação da família de hardware do processador para que o dispositivo atualize para a versão mais recente do windows.|
 |processor64BitCheckFailed|Booliano|A experiência do usuário funciona de qualquer dispositivo, a verificação de arquitetura de hardware de 64 bits do processador falhou para que o dispositivo atualize para a versão mais recente do windows.|
 |osCheckFailed|Booliano|A experiência do usuário funciona de qualquer dispositivo, falha na verificação do sistema operacional para que o dispositivo atualize para a versão mais recente do windows.|
 |workFromAnywhereScore|Duplo|A experiência do usuário funciona de qualquer lugar por pontuação geral do dispositivo. Valores válidos -1,79769313486232E+308 a 1.79769313486232E+308|
@@ -121,6 +121,7 @@ Veja a seguir uma representação JSON do recurso.
   "healthStatus": "String"
 }
 ```
+
 
 
 

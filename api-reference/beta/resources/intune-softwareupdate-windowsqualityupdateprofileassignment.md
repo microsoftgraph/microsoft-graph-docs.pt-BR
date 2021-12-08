@@ -2,27 +2,27 @@
 title: Tipo de recurso windowsQualityUpdateProfileAssignment
 description: Essa entidade contém as propriedades usadas para atribuir um perfil de atualização de qualidade do Windows a um grupo.
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 5c7e78d37e0c1d4fd104a408ff62522b533b3fcc
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 875ce2dc0ab7da6308a8163ac0652200d4c370c7
+ms.sourcegitcommit: 65f4e128f96783c18d607a6dcffbc914291285d4
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59054216"
+ms.lasthandoff: 12/08/2021
+ms.locfileid: "61346693"
 ---
 # <a name="windowsqualityupdateprofileassignment-resource-type"></a>Tipo de recurso windowsQualityUpdateProfileAssignment
 
 Namespace: microsoft.graph
 
-> **Importante:** As APIs Graph Microsoft na versão /beta estão sujeitas a alterações; não há suporte para uso de produção.
+> **Importante:** As GRAPH da Microsoft na versão /beta estão sujeitas a alterações; o uso de produção não é suportado.
 
 > **Observação:** A API do Microsoft Graph para Intune requer uma [licença ativa do Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
 
 Essa entidade contém as propriedades usadas para atribuir um perfil de atualização de qualidade do Windows a um grupo.
 
-## <a name="methods"></a>Métodos
+## <a name="methods"></a>Methods
 |Método|Tipo de retorno|Descrição|
 |:---|:---|:---|
 |[Listar windowsQualityUpdateProfileAssignments](../api/intune-softwareupdate-windowsqualityupdateprofileassignment-list.md)|[coleção windowsQualityUpdateProfileAssignment](../resources/intune-softwareupdate-windowsqualityupdateprofileassignment.md)|Listar propriedades e relações dos [objetos windowsQualityUpdateProfileAssignment.](../resources/intune-softwareupdate-windowsqualityupdateprofileassignment.md)|
@@ -34,7 +34,7 @@ Essa entidade contém as propriedades usadas para atribuir um perfil de atualiza
 ## <a name="properties"></a>Propriedades
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|id|Cadeia de caracteres|O Identificador da entidade|
+|id|String|O Identificador da entidade|
 |destino|[deviceAndAppManagementAssignmentTarget](../resources/intune-shared-deviceandappmanagementassignmenttarget.md)|O destino de atribuição ao que o perfil de atualização de qualidade é atribuído.|
 
 ## <a name="relationships"></a>Relações
@@ -59,6 +59,7 @@ Veja a seguir uma representação JSON do recurso.
   }
 }
 ```
+
 
 
 

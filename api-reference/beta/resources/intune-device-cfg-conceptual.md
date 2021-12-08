@@ -4,12 +4,12 @@ description: Lista a API Graph microsoft para pontos de extremidade do Intune (R
 author: dougeby
 ms.localizationpriority: medium
 ms.prod: intune
-ms.openlocfilehash: 106aed065f0480fcec01a8f680e8ee33001d5e45
-ms.sourcegitcommit: c7ff992ef63e480d070421ba99b28ee129cb6acb
+ms.openlocfilehash: 2688a9499565d7c93f23cac331040d74987ec9cc
+ms.sourcegitcommit: 65f4e128f96783c18d607a6dcffbc914291285d4
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "60696067"
+ms.lasthandoff: 12/08/2021
+ms.locfileid: "61342997"
 ---
 # <a name="device-configuration-in-microsoft-intune"></a>Configuração de dispositivo no Microsoft Intune
 
@@ -35,6 +35,7 @@ Os seguintes recursos do Graph estão disponíveis para gerenciar configuraçõe
 - [Modo conectado da bateria do proprietário do dispositivo Android](intune-deviceconfig-androiddeviceownerbatterypluggedmode.md)
 - [Base de perfil de certificado do proprietário do dispositivo Android](intune-deviceconfig-androiddeviceownercertificateprofilebase.md)
 - [Política de conformidade do proprietário do dispositivo Android](intune-deviceconfig-androiddeviceownercompliancepolicy.md)
+- [Proprietário de dispositivo Android compartilhamento de dados entre perfis](intune-deviceconfig-androiddeviceownercrossprofiledatasharing.md)
 - [Tipo de política de permissão de aplicativo padrão do proprietário do dispositivo Android](intune-deviceconfig-androiddeviceownerdefaultapppermissionpolicytype.md)
 - [Configuração de autenticação de credencial derivada do proprietário do dispositivo Android](intune-deviceconfig-androiddeviceownerderivedcredentialauthenticationconfiguration.md)
 - [Tipo de perfil de registro do proprietário do dispositivo Android](intune-deviceconfig-androiddeviceownerenrollmentprofiletype.md)
@@ -306,6 +307,14 @@ Os seguintes recursos do Graph estão disponíveis para gerenciar configuraçõe
 - [Status do arquivo de definição carregado da política de grupo](intune-grouppolicy-grouppolicyuploadeddefinitionfilestatus.md)
 - [Arquivo de idioma carregado da política de grupo](intune-grouppolicy-grouppolicyuploadedlanguagefile.md)
 - [Apresentação carregada de política de grupo](intune-grouppolicy-grouppolicyuploadedpresentation.md)
+- [Configuração de hardware](intune-deviceconfig-hardwareconfiguration.md)
+- [Atribuição de configuração de hardware](intune-deviceconfig-hardwareconfigurationassignment.md)
+- [Estado do dispositivo de configuração de hardware](intune-deviceconfig-hardwareconfigurationdevicestate.md)
+- [Formato de configuração de hardware](intune-deviceconfig-hardwareconfigurationformat.md)
+- [Resumo de execução da configuração de hardware](intune-deviceconfig-hardwareconfigurationrunsummary.md)
+- [Estado do usuário de configuração de hardware](intune-deviceconfig-hardwareconfigurationuserstate.md)
+- [Informações de senha de hardware](intune-deviceconfig-hardwarepasswordinfo.md)
+- [Fonte de ingestão](intune-grouppolicy-ingestionsource.md)
 - [Configuração de acesso à tinta](intune-deviceconfig-inkaccesssetting.md)
 - [Finalidade pretendida](intune-deviceconfig-intendedpurpose.md)
 - [Configuração de mensagem do Internet Explorer](intune-deviceconfig-internetexplorermessagesetting.md)
@@ -363,8 +372,6 @@ Os seguintes recursos do Graph estão disponíveis para gerenciar configuraçõe
 - [Par de valores de cadeia de caracteres de chave](intune-deviceconfig-keystringvaluepair.md)
 - [Par de valores digitados por chave](intune-deviceconfig-keytypedvaluepair.md)
 - [Valor da chave](intune-deviceconfig-keyvalue.md)
-- [Par chave/valor](intune-deviceconfig-keyvaluepair.md)
-- [Par chave/valor](intune-deviceconfig-keyvaluepair.md)
 - [Complexidade de PIN de tela inicial gerenciada do modo quiosque](intune-deviceconfig-kioskmodemanagedhomescreenpincomplexity.md)
 - [Nível de autenticação do LAN Manager](intune-deviceconfig-lanmanagerauthenticationlevel.md)
 - [Tipo de comportamento da solicitação de elevação do administrador de opções de segurança local](intune-deviceconfig-localsecurityoptionsadministratorelevationpromptbehaviortype.md)

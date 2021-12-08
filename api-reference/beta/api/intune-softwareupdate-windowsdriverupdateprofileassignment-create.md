@@ -2,21 +2,21 @@
 title: Criar windowsDriverUpdateProfileAssignment
 description: Crie um novo objeto windowsDriverUpdateProfileAssignment.
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 8b58bffd45e80afe9dd2c789bf7331843ec24533
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 0cf4db30418222f4c85eab02d24501ba449553a0
+ms.sourcegitcommit: 65f4e128f96783c18d607a6dcffbc914291285d4
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59138467"
+ms.lasthandoff: 12/08/2021
+ms.locfileid: "61344600"
 ---
 # <a name="create-windowsdriverupdateprofileassignment"></a>Criar windowsDriverUpdateProfileAssignment
 
 Namespace: microsoft.graph
 
-> **Importante:** As APIs Graph Microsoft na versão /beta estão sujeitas a alterações; não há suporte para uso de produção.
+> **Importante:** As GRAPH da Microsoft na versão /beta estão sujeitas a alterações; o uso de produção não é suportado.
 
 > **Observação:** A API do Microsoft Graph para Intune requer uma [licença ativa do Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
 
@@ -53,7 +53,7 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar o window
 
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|id|Cadeia de caracteres|O Identificador da entidade|
+|id|String|O Identificador da entidade|
 |destino|[deviceAndAppManagementAssignmentTarget](../resources/intune-shared-deviceandappmanagementassignmenttarget.md)|O destino de atribuição ao que o perfil de atualização de driver é atribuído.|
 
 
@@ -97,6 +97,7 @@ Content-Length: 392
   }
 }
 ```
+
 
 
 

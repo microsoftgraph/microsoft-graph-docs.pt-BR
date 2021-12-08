@@ -2,21 +2,21 @@
 title: Get iosGeneralDeviceConfiguration
 description: Ler propriedades e relações do objeto iosGeneralDeviceConfiguration.
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 509cdcd42fe7822412539c985d79bb583afacc81
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: cf0710b25b271c9f4b4980dbad7bb0a31081f8ab
+ms.sourcegitcommit: 65f4e128f96783c18d607a6dcffbc914291285d4
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59034909"
+ms.lasthandoff: 12/08/2021
+ms.locfileid: "61343074"
 ---
 # <a name="get-iosgeneraldeviceconfiguration"></a>Get iosGeneralDeviceConfiguration
 
 Namespace: microsoft.graph
 
-> **Importante:** As APIs Graph Microsoft na versão /beta estão sujeitas a alterações; não há suporte para uso de produção.
+> **Importante:** As GRAPH da Microsoft na versão /beta estão sujeitas a alterações; o uso de produção não é suportado.
 
 > **Observação:** A API do Microsoft Graph para Intune requer uma [licença ativa do Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
 
@@ -70,7 +70,7 @@ Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado a
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 11696
+Content-Length: 11736
 
 {
   "value": {
@@ -372,10 +372,12 @@ Content-Length: 11696
     "wiFiConnectToAllowedNetworksOnlyForced": true,
     "onDeviceOnlyTranslationForced": true,
     "managedPasteboardRequired": true,
+    "iCloudPrivateRelayBlocked": true,
     "kioskModeAppType": "appStoreApp"
   }
 }
 ```
+
 
 
 

@@ -2,21 +2,21 @@
 title: Ação createCopy
 description: Ainda não documentado
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 066ea77e9905952602a241de5e174f964f835fbd
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 27051d93d78e2da24a2abffe3575b10891703e1e
+ms.sourcegitcommit: 65f4e128f96783c18d607a6dcffbc914291285d4
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59124963"
+ms.lasthandoff: 12/08/2021
+ms.locfileid: "61345069"
 ---
 # <a name="createcopy-action"></a>Ação createCopy
 
 Namespace: microsoft.graph
 
-> **Importante:** As APIs Graph Microsoft na versão /beta estão sujeitas a alterações; não há suporte para uso de produção.
+> **Importante:** As GRAPH da Microsoft na versão /beta estão sujeitas a alterações; o uso de produção não é suportado.
 
 > **Observação:** A API do Microsoft Graph para Intune requer uma [licença ativa do Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
 
@@ -53,7 +53,8 @@ A tabela a seguir mostra os parâmetros que podem ser usados com esta ação.
 
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|displayName|Cadeia de caracteres|Ainda não documentado|
+|displayName|String|Ainda não documentado|
+|descrição|String|Ainda não documentado|
 
 
 
@@ -68,10 +69,11 @@ Este é um exemplo da solicitação.
 POST https://graph.microsoft.com/beta/deviceManagement/intents/{deviceManagementIntentId}/createCopy
 
 Content-type: application/json
-Content-length: 43
+Content-length: 82
 
 {
-  "displayName": "Display Name value"
+  "displayName": "Display Name value",
+  "description": "Description value"
 }
 ```
 
@@ -97,6 +99,7 @@ Content-Length: 418
   }
 }
 ```
+
 
 
 

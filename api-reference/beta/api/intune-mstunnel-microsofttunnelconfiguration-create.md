@@ -5,18 +5,18 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 6da18e706ed377e6730eb414c575da9f7bd12206
-ms.sourcegitcommit: c7ff992ef63e480d070421ba99b28ee129cb6acb
+ms.openlocfilehash: b984348c7f296b2f3c48e8960d3c1e22f6fde1f5
+ms.sourcegitcommit: 65f4e128f96783c18d607a6dcffbc914291285d4
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "60696123"
+ms.lasthandoff: 12/08/2021
+ms.locfileid: "61343249"
 ---
 # <a name="create-microsofttunnelconfiguration"></a>Criar microsoftTunnelConfiguration
 
 Namespace: microsoft.graph
 
-> **Importante:** As APIs Graph Microsoft na versão /beta estão sujeitas a alterações; não há suporte para uso de produção.
+> **Importante:** As GRAPH da Microsoft na versão /beta estão sujeitas a alterações; o uso de produção não é suportado.
 
 > **Observação:** A API do Microsoft Graph para Intune requer uma [licença ativa do Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
 
@@ -57,16 +57,16 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar o micros
 |displayName|String|O nome de exibição do MicrosoftTunnelConfiguration|
 |descrição|String|A descrição do MicrosoftTunnelConfiguration|
 |network|String|A sub-rede que será usada para alocar endereço virtual para os clientes|
-|dnsServers|Coleção de cadeias de caracteres|Os servidores DNS que serão usados pelos clientes|
+|dnsServers|Coleção String|Os servidores DNS que serão usados pelos clientes|
 |defaultDomainSuffix|String|O apêndice Domínio Padrão que será usado pelos clientes|
 |routesInclude|Coleção de cadeias de caracteres|Os routs que serão roteados pelo servidor|
-|routesExclude|Coleção de cadeias de caracteres|Subconjunto das rotas que não serão roteadas pelo servidor|
+|routesExclude|Coleção String|Subconjunto das rotas que não serão roteadas pelo servidor|
 |splitDNS|Coleção de cadeias de caracteres|Os domínios que serão resolvidos usando os servidores dns fornecidos|
 |listenPort|Int32|A porta que o TCP e o UPD escutarão no servidor|
-|advancedSettings|Coleção [keyValuePair](../resources/intune-mstunnel-keyvaluepair.md)|Configurações adicionais que podem ser aplicadas ao servidor|
+|advancedSettings|Coleção [keyValuePair](../resources/intune-shared-keyvaluepair.md)|Configurações adicionais que podem ser aplicadas ao servidor|
 |lastUpdateDateTime|DateTimeOffset|Quando o MicrosoftTunnelConfiguration foi atualizado pela última vez|
 |roleScopeTagIds|Coleção de cadeias de caracteres|Lista de marcas de escopo para esta instância entity.|
-|disableUDPConnections|Booliano|Quando DisableUDPConnections for definido, os clientes e o servidor VPN não usarão as connctions DTLS para fazer o tansfer de dados.|
+|disableUDPConnections|Boolean|Quando DisableUDPConnections for definido, os clientes e o servidor VPN não usarão as connctions DTLS para fazer o tansfer de dados.|
 
 
 
@@ -157,6 +157,7 @@ Content-Length: 831
   "disableUDPConnections": true
 }
 ```
+
 
 
 

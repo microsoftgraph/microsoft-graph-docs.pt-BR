@@ -4,12 +4,12 @@ description: Lista a API Graph microsoft para pontos de extremidade do Intune (R
 ms.localizationpriority: medium
 author: dougeby
 ms.prod: intune
-ms.openlocfilehash: 03a663f540ab51ea6f76274968b0ec52593dc597
-ms.sourcegitcommit: c7ff992ef63e480d070421ba99b28ee129cb6acb
+ms.openlocfilehash: 66d40ecd47b8ba1ab66bd6f596aa2bf6e47ba96a
+ms.sourcegitcommit: 65f4e128f96783c18d607a6dcffbc914291285d4
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "60687547"
+ms.lasthandoff: 12/08/2021
+ms.locfileid: "61348177"
 ---
 # <a name="shared-resources-in-microsoft-intune"></a>Recursos compartilhados em Microsoft Intune
 
@@ -68,6 +68,7 @@ Os seguintes Graph são compartilhados entre fluxos de trabalho do Intune:
 - [Tamanho da chave](intune-shared-keysize.md)
 - [Opção de provedor de armazenamento de chaves](intune-shared-keystorageprovideroption.md)
 - [Usos de chave](intune-shared-keyusages.md)
+- [Par chave/valor](intune-shared-keyvaluepair.md)
 - [Configurações de atribuição do aplicativo LOB do macOS](intune-shared-macoslobappassignmentsettings.md)
 - [Configurações de atribuição do aplicativo VPP do macOS](intune-shared-macosvppappassignmentsettings.md)
 - [Tipo de proprietário do dispositivo gerenciado](intune-shared-manageddeviceownertype.md)
@@ -84,6 +85,7 @@ Os seguintes Graph são compartilhados entre fluxos de trabalho do Intune:
 - [Raiz de relatório](intune-shared-reportroot.md)
 - [Cores RGB](intune-shared-rgbcolor.md)
 - [Executar como tipo de conta](intune-shared-runasaccounttype.md)
+- [Estado da execução](intune-shared-runstate.md)
 - [Opções de geração do estado da interface do usuário salvas](intune-shared-saveduistategenerationoptions.md)
 - [Definindo o tipo de origem](intune-shared-settingsourcetype.md)
 - [Tipo de nome alternativo da entidade](intune-shared-subjectalternativenametype.md)

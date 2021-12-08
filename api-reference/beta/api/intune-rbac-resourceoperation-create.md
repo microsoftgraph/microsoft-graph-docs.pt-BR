@@ -2,21 +2,21 @@
 title: Criar resourceOperation
 description: Criar um novo objeto resourceOperation.
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 564f134699e9168758fa885951410ef1fab8aadb
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 375fa0037879bfc3c018abd027a81e90e8cbd629
+ms.sourcegitcommit: 65f4e128f96783c18d607a6dcffbc914291285d4
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59064998"
+ms.lasthandoff: 12/08/2021
+ms.locfileid: "61343221"
 ---
 # <a name="create-resourceoperation"></a>Criar resourceOperation
 
 Namespace: microsoft.graph
 
-> **Importante:** As APIs Graph Microsoft na versão /beta estão sujeitas a alterações; não há suporte para uso de produção.
+> **Importante:** As GRAPH da Microsoft na versão /beta estão sujeitas a alterações; o uso de produção não é suportado.
 
 > **Observação:** A API do Microsoft Graph para Intune requer uma [licença ativa do Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
 
@@ -27,9 +27,9 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 |Tipo de permissão|Permissões (da com menos para a com mais privilégios)|
 |:---|:---|
-|Delegado (conta corporativa ou de estudante)|DeviceManagementRBAC.ReadWrite.All|
+|Delegado (conta corporativa ou de estudante)|DeviceManagementConfiguration.ReadWrite.All, DeviceManagementRBAC.ReadWrite.All|
 |Delegado (conta pessoal da Microsoft)|Sem suporte.|
-|Aplicativo|DeviceManagementRBAC.ReadWrite.All|
+|Aplicativo|DeviceManagementConfiguration.ReadWrite.All, DeviceManagementRBAC.ReadWrite.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- {
@@ -54,10 +54,10 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar resource
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
 |id|String|Chave da operação de recurso. Somente leitura, gerada automaticamente.|
-|recurso|Cadeia de Caracteres|Categoria de recurso à qual esta Operação pertence. Essa propriedade é somente leitura.|
+|recurso|String|Categoria de recurso à qual esta Operação pertence. Essa propriedade é somente leitura.|
 |resourceName|Cadeia de caracteres|Nome do recurso em que essa operação é executada.|
 |actionName|Cadeia de caracteres|Tipo de ação em que essa operação será executada. O actionName deve ser conciso e limitado ao mínimo de palavras possível.|
-|description|String|Descrição da operação de recurso. A descrição é usada no texto exibido com o passar o mouse para a operação quando exibida no Portal do Azure.|
+|descrição|String|Descrição da operação de recurso. A descrição é usada no texto exibido com o passar o mouse para a operação quando exibida no Portal do Azure.|
 |enabledForScopeValidation|Booliano|Determina se a Permissão é validada para Escopos definidos por Atribuição de Função. Essa propriedade é somente leitura.|
 
 
@@ -101,6 +101,7 @@ Content-Length: 298
   "enabledForScopeValidation": true
 }
 ```
+
 
 
 

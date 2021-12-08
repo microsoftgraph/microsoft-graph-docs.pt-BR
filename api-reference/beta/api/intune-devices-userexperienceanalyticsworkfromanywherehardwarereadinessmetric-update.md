@@ -2,21 +2,21 @@
 title: Atualizar userExperienceAnalyticsWorkFromAnywhereHardwareReadinessMetric
 description: Atualize as propriedades de um objeto userExperienceAnalyticsWorkFromAnywhereHardwareReadinessMetric.
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: c45ef2f94886aa02c1b931775014c43ce26bd856
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: dc9b89745c708c413da145ba5c8bd8da97f452ce
+ms.sourcegitcommit: 65f4e128f96783c18d607a6dcffbc914291285d4
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59034558"
+ms.lasthandoff: 12/08/2021
+ms.locfileid: "61345132"
 ---
 # <a name="update-userexperienceanalyticsworkfromanywherehardwarereadinessmetric"></a>Atualizar userExperienceAnalyticsWorkFromAnywhereHardwareReadinessMetric
 
 Namespace: microsoft.graph
 
-> **Importante:** As APIs Graph Microsoft na versão /beta estão sujeitas a alterações; não há suporte para uso de produção.
+> **Importante:** As GRAPH da Microsoft na versão /beta estão sujeitas a alterações; o uso de produção não é suportado.
 
 > **Observação:** A API do Microsoft Graph para Intune requer uma [licença ativa do Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
 
@@ -27,9 +27,9 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 |Tipo de permissão|Permissões (da com menos para a com mais privilégios)|
 |:---|:---|
-|Delegado (conta corporativa ou de estudante)|DeviceManagementManagedDevices.ReadWrite.All|
+|Delegado (conta corporativa ou de estudante)|DeviceManagementConfiguration.ReadWrite.All, DeviceManagementManagedDevices.ReadWrite.All|
 |Delegado (conta pessoal da Microsoft)|Sem suporte.|
-|Aplicativo|DeviceManagementManagedDevices.ReadWrite.All|
+|Aplicativo|DeviceManagementConfiguration.ReadWrite.All, DeviceManagementManagedDevices.ReadWrite.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- {
@@ -53,7 +53,7 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar [o userE
 
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|id|Cadeia de caracteres|O identificador exclusivo do objeto métrico de preparação de hardware de análise de experiência do usuário.|
+|id|String|O identificador exclusivo do objeto métrico de preparação de hardware de análise de experiência do usuário.|
 |totalDeviceCount|Int32|A contagem do total de dispositivos em uma organização. Valores válidos -2147483648 para 2147483647|
 |upgradeEligibleDeviceCount|Int32|A contagem de dispositivos em uma organização qualificada para atualização do Windows. Valores válidos -2147483648 para 2147483647|
 |ramCheckFailedPercentage|Duplo|A porcentagem de dispositivos para os quais a verificação de hardware ram falhou. Valores válidos -1,79769313486232E+308 a 1.79769313486232E+308|
@@ -119,6 +119,7 @@ Content-Length: 675
   "osCheckFailedPercentage": 7.666666666666667
 }
 ```
+
 
 
 
