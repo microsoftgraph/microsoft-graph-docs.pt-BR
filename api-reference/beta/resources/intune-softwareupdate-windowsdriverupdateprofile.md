@@ -1,28 +1,28 @@
 ---
 title: Tipo de recurso windowsDriverUpdateProfile
-description: Windows Perfil de Atualização de Driver
+description: Windows de atualização de driver
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: d8c50188b941c7196e3f2771c64dbffb51efe7de
-ms.sourcegitcommit: 4a960067cf2cd7d3c605550150eb3c9259adfe92
+ms.openlocfilehash: 9f8e29d336a0b04af4e4e5f045c6541e592e6981
+ms.sourcegitcommit: 65f4e128f96783c18d607a6dcffbc914291285d4
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/19/2021
-ms.locfileid: "60488602"
+ms.lasthandoff: 12/08/2021
+ms.locfileid: "61346973"
 ---
 # <a name="windowsdriverupdateprofile-resource-type"></a>Tipo de recurso windowsDriverUpdateProfile
 
 Namespace: microsoft.graph
 
-> **Importante:** As APIs Graph Microsoft na versão /beta estão sujeitas a alterações; não há suporte para uso de produção.
+> **Importante:** As GRAPH da Microsoft na versão /beta estão sujeitas a alterações; o uso de produção não é suportado.
 
 > **Observação:** A API do Microsoft Graph para Intune requer uma [licença ativa do Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
 
-Windows Perfil de Atualização de Driver
+Windows de atualização de driver
 
-## <a name="methods"></a>Métodos
+## <a name="methods"></a>Methods
 |Método|Tipo de retorno|Descrição|
 |:---|:---|:---|
 |[Listar windowsDriverUpdateProfiles](../api/intune-softwareupdate-windowsdriverupdateprofile-list.md)|[Coleção windowsDriverUpdateProfile](../resources/intune-softwareupdate-windowsdriverupdateprofile.md)|Listar propriedades e relações dos [objetos windowsDriverUpdateProfile.](../resources/intune-softwareupdate-windowsdriverupdateprofile.md)|
@@ -36,9 +36,9 @@ Windows Perfil de Atualização de Driver
 ## <a name="properties"></a>Propriedades
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|id|Cadeia de caracteres|A ID da política do Intune.|
-|displayName|Cadeia de caracteres|O nome de exibição do perfil.|
-|description|Cadeia de caracteres|A descrição do perfil especificado pelo usuário.|
+|id|String|A ID da política do Intune.|
+|displayName|String|O nome de exibição do perfil.|
+|descrição|String|A descrição do perfil especificado pelo usuário.|
 |approvalType|[driverUpdateProfileApprovalType](../resources/intune-softwareupdate-driverupdateprofileapprovaltype.md)|Tipo de aprovação de perfil de atualização de driver. Por exemplo, aprovação manual ou automática. Os valores possíveis são: `manual` e `automatic`.|
 |deviceReporting|Int32|Número de dispositivos que relatam esse perfil|
 |newUpdates|Int32|Número de novas atualizações de driver disponíveis para esse perfil.|
@@ -78,6 +78,7 @@ Veja a seguir uma representação JSON do recurso.
   ]
 }
 ```
+
 
 
 

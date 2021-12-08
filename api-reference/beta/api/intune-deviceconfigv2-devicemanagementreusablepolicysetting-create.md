@@ -5,18 +5,18 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 795b300d5443cbd82e9c71c25af622e3af236f04
-ms.sourcegitcommit: 4a960067cf2cd7d3c605550150eb3c9259adfe92
+ms.openlocfilehash: 39ec64938f3a74c0e1b98bc63c84bcb8997a3357
+ms.sourcegitcommit: 65f4e128f96783c18d607a6dcffbc914291285d4
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/19/2021
-ms.locfileid: "60489202"
+ms.lasthandoff: 12/08/2021
+ms.locfileid: "61343550"
 ---
 # <a name="create-devicemanagementreusablepolicysetting"></a>Criar deviceManagementReusablePolicySetting
 
 Namespace: microsoft.graph
 
-> **Importante:** As APIs Graph Microsoft na versão /beta estão sujeitas a alterações; não há suporte para uso de produção.
+> **Importante:** As GRAPH da Microsoft na versão /beta estão sujeitas a alterações; o uso de produção não é suportado.
 
 > **Observação:** A API do Microsoft Graph para Intune requer uma [licença ativa do Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
 
@@ -53,10 +53,10 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar deviceMa
 
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|id|Cadeia de caracteres|id de configuração reutilizável gerada pelo sistema.|
-|displayName|Cadeia de caracteres|nome de exibição de configuração reutilizável fornecido pelo usuário.|
-|description|Cadeia de caracteres|descrição da configuração reutilizável fornecida pelo usuário.|
-|settingDefinitionId|Cadeia de caracteres|id de definição de definição associada a essa configuração reutilizável.|
+|id|String|id de configuração reutilizável gerada pelo sistema.|
+|displayName|String|nome de exibição de configuração reutilizável fornecido pelo usuário.|
+|descrição|String|descrição da configuração reutilizável fornecida pelo usuário.|
+|settingDefinitionId|String|id de definição de definição associada a essa configuração reutilizável.|
 |settingInstance|[deviceManagementConfigurationSettingInstance](../resources/intune-deviceconfigv2-devicemanagementconfigurationsettinginstance.md)|instância de configuração de configuração reutilizável|
 |createdDateTime|DateTimeOffset|reutilizável definindo data e hora de criação. Essa propriedade é somente leitura.|
 |lastModifiedDateTime|DateTimeOffset|data e hora em que a configuração reutilizável foi modificada pela última vez. Essa propriedade é somente leitura.|
@@ -536,6 +536,7 @@ Content-Length: 16500
   "referencingConfigurationPolicyCount": 3
 }
 ```
+
 
 
 

@@ -2,21 +2,21 @@
 title: Obter groupPolicyUploadedDefinition
 description: Leia propriedades e relações do objeto groupPolicyUploadedDefinition.
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 2a5aa88670ffc7b4db9b29a92938220e149c4be8
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 72f7b73acc8d32977da7a4ffcde02afd982287cd
+ms.sourcegitcommit: 65f4e128f96783c18d607a6dcffbc914291285d4
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59048266"
+ms.lasthandoff: 12/08/2021
+ms.locfileid: "61342689"
 ---
 # <a name="get-grouppolicyuploadeddefinition"></a>Obter groupPolicyUploadedDefinition
 
 Namespace: microsoft.graph
 
-> **Importante:** As APIs Graph Microsoft na versão /beta estão sujeitas a alterações; não há suporte para uso de produção.
+> **Importante:** As GRAPH da Microsoft na versão /beta estão sujeitas a alterações; o uso de produção não é suportado.
 
 > **Observação:** A API do Microsoft Graph para Intune requer uma [licença ativa do Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
 
@@ -95,6 +95,7 @@ Content-Length: 698
   }
 }
 ```
+
 
 
 

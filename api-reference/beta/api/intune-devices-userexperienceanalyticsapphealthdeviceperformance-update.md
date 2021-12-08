@@ -2,21 +2,21 @@
 title: Atualizar userExperienceAnalyticsAppHealthDevicePerformance
 description: Atualize as propriedades de um objeto userExperienceAnalyticsAppHealthDevicePerformance.
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: efbbcfd93d77b8facd76f1238e8255f3839ebc2f
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 9b502d1432225b670613aa9b9d2d86dcd36f0a26
+ms.sourcegitcommit: 65f4e128f96783c18d607a6dcffbc914291285d4
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59034572"
+ms.lasthandoff: 12/08/2021
+ms.locfileid: "61347652"
 ---
 # <a name="update-userexperienceanalyticsapphealthdeviceperformance"></a>Atualizar userExperienceAnalyticsAppHealthDevicePerformance
 
 Namespace: microsoft.graph
 
-> **Importante:** As APIs Graph Microsoft na versão /beta estão sujeitas a alterações; não há suporte para uso de produção.
+> **Importante:** As GRAPH da Microsoft na versão /beta estão sujeitas a alterações; o uso de produção não é suportado.
 
 > **Observação:** A API do Microsoft Graph para Intune requer uma [licença ativa do Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
 
@@ -27,9 +27,9 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 |Tipo de permissão|Permissões (da com menos para a com mais privilégios)|
 |:---|:---|
-|Delegado (conta corporativa ou de estudante)|DeviceManagementManagedDevices.ReadWrite.All|
+|Delegado (conta corporativa ou de estudante)|DeviceManagementConfiguration.ReadWrite.All, DeviceManagementManagedDevices.ReadWrite.All|
 |Delegado (conta pessoal da Microsoft)|Sem suporte.|
-|Aplicativo|DeviceManagementManagedDevices.ReadWrite.All|
+|Aplicativo|DeviceManagementConfiguration.ReadWrite.All, DeviceManagementManagedDevices.ReadWrite.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- {
@@ -53,9 +53,9 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar [o userE
 
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|id|Cadeia de caracteres|O identificador exclusivo do objeto de desempenho do dispositivo de análise de experiência do usuário.|
+|id|String|O identificador exclusivo do objeto de desempenho do dispositivo de análise de experiência do usuário.|
 |deviceModel|Cadeia de caracteres|O nome do modelo do dispositivo.|
-|deviceManufacturer|Cadeia de Caracteres|O nome do fabricante do dispositivo.|
+|deviceManufacturer|String|O nome do fabricante do dispositivo.|
 |appCrashCount|Int32|O número de falhas de aplicativo para o dispositivo. Valores válidos -2147483648 para 2147483647|
 |crashedAppCount|Int32|O número de falhas distintas do aplicativo para o dispositivo. Valores válidos -2147483648 para 2147483647|
 |appHangCount|Int32|O número de travas de aplicativo para o dispositivo. Valores válidos -2147483648 para 2147483647|
@@ -63,6 +63,7 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar [o userE
 |meanTimeToFailureInMinutes|Int32|O tempo de falha média do dispositivo em minutos. Valores válidos -2147483648 para 2147483647|
 |deviceAppHealthScore|Duplo|A pontuação de saúde do aplicativo do dispositivo. Valores válidos -1,79769313486232E+308 a 1.79769313486232E+308|
 |deviceAppHealthStatus|String|O status geral da saúde do aplicativo do dispositivo.|
+|healthStatus|[userExperienceAnalyticsHealthState](../resources/intune-devices-userexperienceanalyticshealthstate.md)|O estado de saúde do dispositivo de análise de experiência do usuário. Os valores possíveis são: `unknown`, `insufficientData`, `needsAttention`, `meetingGoals`.|
 |deviceId|Cadeia de caracteres|A id do dispositivo.|
 |deviceDisplayName|Cadeia de caracteres|O nome do dispositivo.|
 
@@ -78,7 +79,7 @@ Este é um exemplo da solicitação.
 ``` http
 PATCH https://graph.microsoft.com/beta/deviceManagement/userExperienceAnalyticsAppHealthDevicePerformance/{userExperienceAnalyticsAppHealthDevicePerformanceId}
 Content-type: application/json
-Content-length: 551
+Content-length: 590
 
 {
   "@odata.type": "#microsoft.graph.userExperienceAnalyticsAppHealthDevicePerformance",
@@ -91,6 +92,7 @@ Content-length: 551
   "meanTimeToFailureInMinutes": 10,
   "deviceAppHealthScore": 6.666666666666667,
   "deviceAppHealthStatus": "Device App Health Status value",
+  "healthStatus": "insufficientData",
   "deviceId": "Device Id value",
   "deviceDisplayName": "Device Display Name value"
 }
@@ -101,7 +103,7 @@ Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado a
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 600
+Content-Length: 639
 
 {
   "@odata.type": "#microsoft.graph.userExperienceAnalyticsAppHealthDevicePerformance",
@@ -115,10 +117,12 @@ Content-Length: 600
   "meanTimeToFailureInMinutes": 10,
   "deviceAppHealthScore": 6.666666666666667,
   "deviceAppHealthStatus": "Device App Health Status value",
+  "healthStatus": "insufficientData",
   "deviceId": "Device Id value",
   "deviceDisplayName": "Device Display Name value"
 }
 ```
+
 
 
 

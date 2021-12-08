@@ -5,12 +5,12 @@ ms.localizationpriority: high
 author: Jordanndahl
 ms.prod: groups
 doc_type: resourcePageType
-ms.openlocfilehash: dd6efd84cbb3b42f250b74ce3b2c8af7f95abe74
-ms.sourcegitcommit: f65eee432cc903324b5f9b31710fdc6100590f36
+ms.openlocfilehash: e7b8479e4307f77d87a8b8b6d66cd68fda48bf1d
+ms.sourcegitcommit: 65f4e128f96783c18d607a6dcffbc914291285d4
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/07/2021
-ms.locfileid: "61321992"
+ms.lasthandoff: 12/08/2021
+ms.locfileid: "61347239"
 ---
 # <a name="group-resource-type"></a>tipo de recurso de grupo
 
@@ -138,7 +138,7 @@ Esse recurso permite:
 |licenseProcessingState|String|Indica o status da atribuição de licença do grupo a todos os membros do grupo. O valor padrão é `false`. Somente leitura. Valores possíveis: `QueuedForProcessing`, `ProcessingInProgress` e `ProcessingComplete`.<br><br>Retornado apenas em `$select`. Somente leitura.|
 |email|String|O endereço SMTP do grupo, por exemplo, "serviceadmins@contoso.onmicrosoft.com". <br><br>Retornado por padrão. Somente leitura. Suporte `$filter` (`eq`, `ne`, `not`, `ge`, `le`, `in`, `startsWith`, e `eq` no `null` valores).|
 |mailEnabled|Boolean|Especifica se o grupo está habilitado para email. Obrigatório.<br><br>Retornado por padrão. Suporta `$filter` (`eq`, `ne`, `not`).|
-|mailNickname|String|O alias de email do grupo, exclusivo na organização. O comprimento máximo é de 64 caracteres. Essa propriedade pode conter apenas caracteres no [conjunto de caracteres ASCII de 0 a 127](/office/vba/language/reference/user-interface-help/character-set-0127), exceto o seguinte: ` @ () \ [] " ; : . <> , SPACE`. <br><br>Obrigatório. Devolvido por padrão. Suporta `$filter` (`eq`, `ne`, `not`, `ge`, `le`, `in`, `startsWith`, e `eq` em `null` valores).|
+|mailNickname|String|O alias de email do grupo, exclusivo para grupos do Microsoft 365 na organização. O comprimento máximo é de 64 caracteres. Essa propriedade pode conter apenas caracteres no [conjunto de caracteres ASCII de 0 a 127](/office/vba/language/reference/user-interface-help/character-set-0127), exceto o seguinte: ` @ () \ [] " ; : . <> , SPACE`. <br><br>Obrigatório. Devolvido por padrão. Suporta `$filter` (`eq`, `ne`, `not`, `ge`, `le`, `in`, `startsWith`, e `eq` em `null` valores).|
 |membershipRule|String|A regra que determina membros para esse grupo se o grupo for um grupo dinâmico (groupTypes contém `DynamicMembership`). Para saber mais sobre a sintaxe da regra de associação, confira [sintaxe regras de associação](/azure/active-directory/users-groups-roles/groups-dynamic-membership). <br><br>Retornado por padrão. Suporta `$filter` (`eq`, `ne`, `not`, `ge`, `le`, `startsWith`). |
 |membershipRuleProcessingState|String|Indica se o processamento de associação dinâmica está ativado ou em pausa. Os valores possíveis são `On` ou `Paused`. <br><br>Retornado por padrão. Dá suporte `$filter` (`eq`, `ne`, `not`, `in`).  |
 |onPremisesLastSyncDateTime|DateTimeOffset|Indica a última vez em que o grupo foi sincronizado com o diretório local. O tipo de carimbo de data/hora representa informações de data e hora usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite UTC em 1º de janeiro de 2014 é `2014-01-01T00:00:00Z`. <br><br>Retornado por padrão. Somente leitura. Suporta `$filter` (`eq`, `ne`, `not`, `ge`, `le`, `in`).|
@@ -339,34 +339,34 @@ Veja a seguir uma representação JSON do recurso.
   "allowExternalSenders": false,
   "assignedLicenses": [{"@odata.type": "microsoft.graph.assignedLicense"}],
   "autoSubscribeNewMembers": true,
-  "classification": "string",
+  "classification": "String",
   "createdDateTime": "String (timestamp)",
-  "description": "string",
-  "displayName": "string",
-  "groupTypes": ["string"],
+  "description": "String",
+  "displayName": "String",
+  "groupTypes": ["String"],
   "hasMembersWithLicenseErrors": "Boolean",
   "hideFromAddressLists": false,
   "hideFromOutlookClients": false,
-  "id": "string (identifier)",
+  "id": "String (identifier)",
   "isSubscribedByMail": true,
   "isAssignableRole": false,
-  "licenseProcessingState": "string",
-  "mail": "string",
+  "licenseProcessingState": "String",
+  "mail": "String",
   "mailEnabled": true,
-  "mailNickname": "string",
+  "mailNickname": "String",
   "onPremisesLastSyncDateTime": "String (timestamp)",
   "onPremisesProvisioningErrors": [{"@odata.type": "microsoft.graph.onPremisesProvisioningError"}],
-  "onPremisesSecurityIdentifier": "string",
+  "onPremisesSecurityIdentifier": "String",
   "onPremisesSyncEnabled": true,
-  "preferredDataLocation": "string",
-  "proxyAddresses": ["string"],
+  "preferredDataLocation": "String",
+  "proxyAddresses": ["String"],
   "renewedDateTime": "String (timestamp)",
   "resourceBehaviorOptions": ["String"],
   "resourceProvisioningOptions": ["String"],
   "securityEnabled": true,
   "securityIdentifier": "String",
   "unseenCount": 1024,
-  "visibility": "string",
+  "visibility": "String",
   "acceptedSenders": [ { "@odata.type": "microsoft.graph.directoryObject"} ],
   "calendar": { "@odata.type": "microsoft.graph.calendar" },
   "calendarView": [{ "@odata.type": "microsoft.graph.event" }],

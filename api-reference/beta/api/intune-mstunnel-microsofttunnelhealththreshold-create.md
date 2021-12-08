@@ -5,18 +5,18 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 0cdaca5fc614e8eb5150a91f19f510b1751143b9
-ms.sourcegitcommit: 4a960067cf2cd7d3c605550150eb3c9259adfe92
+ms.openlocfilehash: c6776aef17bf5f8a80f15486233199a6e9f8307f
+ms.sourcegitcommit: 65f4e128f96783c18d607a6dcffbc914291285d4
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/19/2021
-ms.locfileid: "60491673"
+ms.lasthandoff: 12/08/2021
+ms.locfileid: "61343228"
 ---
 # <a name="create-microsofttunnelhealththreshold"></a>Criar microsoftTunnelHealthThreshold
 
 Namespace: microsoft.graph
 
-> **Importante:** As APIs Graph Microsoft na versão /beta estão sujeitas a alterações; não há suporte para uso de produção.
+> **Importante:** As GRAPH da Microsoft na versão /beta estão sujeitas a alterações; o uso de produção não é suportado.
 
 > **Observação:** A API do Microsoft Graph para Intune requer uma [licença ativa do Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
 
@@ -53,7 +53,7 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar o micros
 
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|id|Cadeia de caracteres|O nome métrico|
+|id|String|O nome métrico|
 |healthyThreshold|Int64|O limite para estar saudável|
 |unhealthyThreshold|Int64|O limite para não estar 100%|
 |defaultHealthyThreshold|Int64|O limite padrão para ser saudável|
@@ -98,6 +98,7 @@ Content-Length: 243
   "defaultUnhealthyThreshold": 9
 }
 ```
+
 
 
 

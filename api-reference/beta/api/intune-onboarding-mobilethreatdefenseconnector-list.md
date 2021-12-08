@@ -5,18 +5,18 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: c8fc9e303938ea22829717f4c3602394c7fda635
-ms.sourcegitcommit: 4a960067cf2cd7d3c605550150eb3c9259adfe92
+ms.openlocfilehash: 9c4a7c565cc5986d7543cfe144d85e75ec9cc896
+ms.sourcegitcommit: 65f4e128f96783c18d607a6dcffbc914291285d4
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/19/2021
-ms.locfileid: "60492543"
+ms.lasthandoff: 12/08/2021
+ms.locfileid: "61344670"
 ---
 # <a name="list-mobilethreatdefenseconnectors"></a>Listar mobileThreatDefenseConnectors
 
 Namespace: microsoft.graph
 
-> **Importante:** As APIs Graph Microsoft na versão /beta estão sujeitas a alterações; não há suporte para uso de produção.
+> **Importante:** As GRAPH da Microsoft na versão /beta estão sujeitas a alterações; o uso de produção não é suportado.
 
 > **Observação:** A API do Microsoft Graph para Intune requer uma [licença ativa do Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
 
@@ -65,7 +65,7 @@ Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado a
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 934
+Content-Length: 1002
 
 {
   "value": [
@@ -87,11 +87,13 @@ Content-Length: 934
       "partnerUnsupportedOsVersionBlocked": true,
       "partnerUnresponsivenessThresholdInDays": 6,
       "allowPartnerToCollectIOSApplicationMetadata": true,
+      "allowPartnerToCollectIOSPersonalApplicationMetadata": true,
       "microsoftDefenderForEndpointAttachEnabled": true
     }
   ]
 }
 ```
+
 
 
 

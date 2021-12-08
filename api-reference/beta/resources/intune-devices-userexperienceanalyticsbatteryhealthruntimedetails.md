@@ -5,24 +5,24 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: abad7a43373f572b8b6880ceb36d9463b2cdb8e7
-ms.sourcegitcommit: c7ff992ef63e480d070421ba99b28ee129cb6acb
+ms.openlocfilehash: 15d9100e31d870a1e6915ab3fb59335974eb06e8
+ms.sourcegitcommit: 65f4e128f96783c18d607a6dcffbc914291285d4
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "60697153"
+ms.lasthandoff: 12/08/2021
+ms.locfileid: "61342255"
 ---
 # <a name="userexperienceanalyticsbatteryhealthruntimedetails-resource-type"></a>tipo de recurso userExperienceAnalyticsBatteryHealthRuntimeDetails
 
 Namespace: microsoft.graph
 
-> **Importante:** As APIs Graph Microsoft na versão /beta estão sujeitas a alterações; não há suporte para uso de produção.
+> **Importante:** As GRAPH da Microsoft na versão /beta estão sujeitas a alterações; o uso de produção não é suportado.
 
 > **Observação:** A API do Microsoft Graph para Intune requer uma [licença ativa do Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
 
 A entidade de tempo de execução de bateria de análise de experiência do usuário contém a contagem de dispositivos divididos em 3 categorias - dispositivos com tempo de execução > 5 horas, dispositivos com tempo de execução de 3 a 5 horas e dispositivos com tempo de execução < 3 horas. Esta API fornece a contagem de dispositivos nessas três categorias.
 
-## <a name="methods"></a>Métodos
+## <a name="methods"></a>Methods
 |Método|Tipo de retorno|Descrição|
 |:---|:---|:---|
 |[Obter userExperienceAnalyticsBatteryHealthRuntimeDetails](../api/intune-devices-userexperienceanalyticsbatteryhealthruntimedetails-get.md)|[userExperienceAnalyticsBatteryHealthRuntimeDetails](../resources/intune-devices-userexperienceanalyticsbatteryhealthruntimedetails.md)|Leia propriedades e relações do [objeto userExperienceAnalyticsBatteryHealthRuntimeDetails.](../resources/intune-devices-userexperienceanalyticsbatteryhealthruntimedetails.md)|
@@ -58,6 +58,7 @@ Veja a seguir uma representação JSON do recurso.
   "batteryRuntimePoor": 1024
 }
 ```
+
 
 
 

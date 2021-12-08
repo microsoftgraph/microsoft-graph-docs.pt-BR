@@ -5,18 +5,18 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: f0cb2abc70021d03e696d7a0361f29dd34634601
-ms.sourcegitcommit: c7ff992ef63e480d070421ba99b28ee129cb6acb
+ms.openlocfilehash: 26ccec560c14207b7a607d053ee96e7013e8881e
+ms.sourcegitcommit: 65f4e128f96783c18d607a6dcffbc914291285d4
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "60696480"
+ms.lasthandoff: 12/08/2021
+ms.locfileid: "61347939"
 ---
 # <a name="create-devicemanagementconfigurationsettingdefinition"></a>Criar deviceManagementConfigurationSettingDefinition
 
 Namespace: microsoft.graph
 
-> **Importante:** As APIs Graph Microsoft na versão /beta estão sujeitas a alterações; não há suporte para uso de produção.
+> **Importante:** As GRAPH da Microsoft na versão /beta estão sujeitas a alterações; o uso de produção não é suportado.
 
 > **Observação:** A API do Microsoft Graph para Intune requer uma [licença ativa do Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
 
@@ -59,7 +59,7 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar deviceMa
 |:---|:---|:---|
 |aplicabilidade|[deviceManagementConfigurationSettingApplicability](../resources/intune-deviceconfigv2-devicemanagementconfigurationsettingapplicability.md)|Detalhes em qual configuração de dispositivo é aplicável|
 |accessTypes|[deviceManagementConfigurationSettingAccessTypes](../resources/intune-deviceconfigv2-devicemanagementconfigurationsettingaccesstypes.md)|Modo de acesso de leitura/gravação da configuração. Os valores possíveis são: `none`, `add`, `copy`, `delete`, `get`, `replace`, `execute`.|
-|palavras-chave|Coleção de cadeias de caracteres|Tokens em que as configurações de pesquisa|
+|palavras-chave|Coleção String|Tokens em que as configurações de pesquisa|
 |infoUrls|Coleção de cadeias de caracteres|Lista de links mais informações para a configuração podem ser encontradas em|
 |occurrence|[deviceManagementConfigurationSettingOccurrence](../resources/intune-deviceconfigv2-devicemanagementconfigurationsettingoccurrence.md)|Indica se a configuração é necessária ou não|
 |baseUri|String|Caminho CSP Base|
@@ -73,7 +73,7 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar deviceMa
 |id|String|Identificador de item|
 |descrição|String|Descrição do item|
 |helpText|String|Texto de ajuda do item|
-|name|String|Nome do item|
+|nome|String|Nome do item|
 |displayName|String|Nome de exibição do item|
 |versão|String|Versão do item|
 
@@ -182,6 +182,7 @@ Content-Length: 1309
   "version": "Version value"
 }
 ```
+
 
 
 

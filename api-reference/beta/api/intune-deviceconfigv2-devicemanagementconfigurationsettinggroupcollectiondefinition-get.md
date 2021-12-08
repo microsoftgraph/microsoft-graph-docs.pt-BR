@@ -5,18 +5,18 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 55adf862812537ed77e951da89df21bfde96561d
-ms.sourcegitcommit: c7ff992ef63e480d070421ba99b28ee129cb6acb
+ms.openlocfilehash: ef733a3d5c1cf21c39b98d2c9e62948d2a6b613e
+ms.sourcegitcommit: 65f4e128f96783c18d607a6dcffbc914291285d4
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "60687393"
+ms.lasthandoff: 12/08/2021
+ms.locfileid: "61342199"
 ---
 # <a name="get-devicemanagementconfigurationsettinggroupcollectiondefinition"></a>Obter deviceManagementConfigurationSettingGroupCollectionDefinition
 
 Namespace: microsoft.graph
 
-> **Importante:** As APIs Graph Microsoft na versão /beta estão sujeitas a alterações; não há suporte para uso de produção.
+> **Importante:** As GRAPH da Microsoft na versão /beta estão sujeitas a alterações; o uso de produção não é suportado.
 
 > **Observação:** A API do Microsoft Graph para Intune requer uma [licença ativa do Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
 
@@ -137,6 +137,7 @@ Content-Length: 1971
   }
 }
 ```
+
 
 
 

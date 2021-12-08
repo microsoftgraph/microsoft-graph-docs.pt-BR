@@ -5,12 +5,12 @@ author: AlexanderMars
 ms.localizationpriority: medium
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: 429e05a064a71e68823e3f0ede2c641ef5e2c6c7
-ms.sourcegitcommit: 36bae3615df41876493b25da478e589d1974f97b
+ms.openlocfilehash: 3e5a66e820022c57980656ca418463b529fa2d9c
+ms.sourcegitcommit: 65f4e128f96783c18d607a6dcffbc914291285d4
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "59995493"
+ms.lasthandoff: 12/08/2021
+ms.locfileid: "61343767"
 ---
 # <a name="delete-organizationalbrandinglocalization"></a>Excluir organizationalBrandingLocalization
 Namespace: microsoft.graph
@@ -19,7 +19,7 @@ Namespace: microsoft.graph
 
 Exclua um objeto de identidade visual localizado. Para excluir o [objeto organizationalBrandingLocalization,](../resources/organizationalbrandinglocalization.md) todas as imagens (tipos de fluxo) devem primeiro ser removidas do objeto.
 
-## <a name="permissions"></a>Permissões
+## <a name="permissions"></a>Permissions
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 | Tipo de permissão                        | Permissões (da com menos para a com mais privilégios) |
@@ -63,7 +63,7 @@ A seguir, um exemplo de uma solicitação para excluir o `fr-FR` objeto de local
   "name": "delete_organizationalbrandinglocalization"
 }-->
 
-```http
+```msgraph-interactive
 DELETE https://graph.microsoft.com/beta/organization/d69179bf-f4a4-41a9-a9de-249c0f2efb1d/branding/localizations/fr-FR
 ```
 # <a name="c"></a>[C#](#tab/csharp)

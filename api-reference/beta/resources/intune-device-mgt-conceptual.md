@@ -4,12 +4,12 @@ description: Lista a API Graph microsoft para pontos de extremidade do Intune (R
 author: dougeby
 ms.localizationpriority: medium
 ms.prod: intune
-ms.openlocfilehash: 33592ed42a2147cb2b8ba861bf96cae88a334f05
-ms.sourcegitcommit: c7ff992ef63e480d070421ba99b28ee129cb6acb
+ms.openlocfilehash: 314e4fd73b9495946aa2c056f307463c741f8bb0
+ms.sourcegitcommit: 65f4e128f96783c18d607a6dcffbc914291285d4
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "60696781"
+ms.lasthandoff: 12/08/2021
+ms.locfileid: "61342941"
 ---
 # <a name="device-management-in-microsoft-intune"></a>Gerenciamento de dispositivos no Microsoft Intune
 
@@ -192,7 +192,6 @@ Namespace: microsoft.graph
 - [Resultado de ação de revogar licenças VPP da Apple](intune-devices-revokeapplevpplicensesactionresult.md)
 - [Informações da marca de escopo de função](intune-auditing-rolescopetaginfo.md)
 - [Girar o resultado da ação do dispositivo de chaves do BitLocker](intune-devices-rotatebitlockerkeysdeviceactionresult.md)
-- [Estado da execução](intune-devices-runstate.md)
 - [Resumo do estado da categoria de linha de base de segurança](intune-deviceintent-securitybaselinecategorystatesummary.md)
 - [Estado de conformidade da linha de base de segurança](intune-deviceintent-securitybaselinecompliancestate.md)
 - [Política de contribuição da linha de base de segurança](intune-deviceintent-securitybaselinecontributingpolicy.md)
