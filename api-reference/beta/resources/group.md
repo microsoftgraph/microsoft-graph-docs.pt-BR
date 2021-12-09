@@ -5,12 +5,12 @@ ms.localizationpriority: high
 author: Jordanndahl
 ms.prod: groups
 doc_type: resourcePageType
-ms.openlocfilehash: 9447f5171a8d7e8657a5423a06ad9e93bfc5d506
-ms.sourcegitcommit: f65eee432cc903324b5f9b31710fdc6100590f36
+ms.openlocfilehash: fac57ae27845799f1d9e25b3ec0c437ed7de147c
+ms.sourcegitcommit: 65f4e128f96783c18d607a6dcffbc914291285d4
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/07/2021
-ms.locfileid: "61322217"
+ms.lasthandoff: 12/08/2021
+ms.locfileid: "61348212"
 ---
 # <a name="group-resource-type"></a>tipo de recurso de grupo
 
@@ -141,7 +141,7 @@ Esse recurso permite:
 |licenseProcessingState|String|Indica o status da atribuição de licença de grupo a todos os membros do grupo. Valores possíveis: `QueuedForProcessing`, `ProcessingInProgress`e `ProcessingComplete`. <br><br>Retornado apenas em `$select`. Somente leitura. |
 |email|String|O endereço SMTP do grupo, por exemplo, "serviceadmins@contoso.onmicrosoft.com". <br><br>Retornado por padrão. Somente leitura. Suporte `$filter` (`eq`, `ne`, `not`, `ge`, `le`, `in`, `startsWith`, e `eq` no `null` valores).|
 |mailEnabled|Boolean|Especifica se o grupo está habilitado para email. Obrigatório.<br><br>Devolvido por padrão. Suporte `$filter` (`eq`, `ne`, `not`, e `eq` no `null` valores).|
-|mailNickname|String|O alias de email do grupo, exclusivo na organização. O comprimento máximo é de 64 caracteres. Essa propriedade pode conter apenas caracteres no [conjunto de caracteres ASCII de 0 a 127](/office/vba/language/reference/user-interface-help/character-set-0127), exceto o seguinte: ` @ () \ [] " ; : . <> , SPACE`. <br><br>Devolvido por padrão. Suporta `$filter` (`eq`, `ne`, `not`, `ge`, `le`, `in`, `startsWith`).|
+|mailNickname|String|O alias de email para o grupo, exclusivo para grupos do Microsoft 365 na organização. O comprimento máximo é de 64 caracteres. Essa propriedade pode conter apenas caracteres no [conjunto de caracteres ASCII de 0 a 127](/office/vba/language/reference/user-interface-help/character-set-0127), exceto o seguinte: ` @ () \ [] " ; : . <> , SPACE`. <br><br>Devolvido por padrão. Suporta `$filter` (`eq`, `ne`, `not`, `ge`, `le`, `in`, `startsWith`).|
 |membershipRule|String|A regra que determina membros para esse grupo se o grupo for um grupo dinâmico (groupTypes contém `DynamicMembership`). Para saber mais sobre a sintaxe da regra de associação, confira [sintaxe regras de associação](https://azure.microsoft.com/documentation/articles/active-directory-accessmanagement-groups-with-advanced-rules/). <br><br>Retornado por padrão. Suporta `$filter` (`eq`, `ne`, `not`, `ge`, `le`, `startsWith`). |
 |membershipRuleProcessingState|String|Indica se o processamento de associação dinâmica está ativado ou em pausa. Os valores possíveis são `On` ou `Paused`. <br><br>Retornado por padrão. Suporta `$filter` (`eq`, `ne`, `not`, `in`). |
 |membershipRuleProcessingStatus|[membershipRuleProcessingStatus](membershipruleprocessingstatus.md) |Descreve o status de processamento para grupos dinâmicos baseados em regras. A propriedade é `null` para grupos dinâmicos não baseados em regras ou se o processamento do grupo dinâmico foi pausado. <br><br>Retornado somente no `$select`. Compatível apenas com a API obter grupo (`GET /groups/{ID}`). Somente leitura. |
@@ -157,7 +157,7 @@ Esse recurso permite:
 |proxyAddresses|String collection| Endereços de email para o grupo que direcionam para a mesma caixa de correio do grupo. Por exemplo: `["SMTP: bob@contoso.com", "smtp: bob@sales.contoso.com"]`. O operador **any** é obrigatório para expressões de filtro em propriedades de vários valores. <br><br>Retornado por padrão. Somente leitura. Não anulável. Suporta `$filter` (`eq`, `not`, `ge`, `le`, `startsWith`). |
 |renewedDateTime|DateTimeOffset| Carimbo de data/hora da ocasião em que o grupo foi renovado pela última vez. Não é possível modificar isso diretamente e a atualização ocorre apenas por meio da [ação de renovação de serviço](../api/grouplifecyclepolicy-renewgroup.md). O tipo Timestamp representa informações de data e hora usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite UTC em 1 de janeiro de 2014 é `2014-01-01T00:00:00Z`. <br><br>Retornado por padrão. Suporta `$filter` (`eq`, `ne`, `not`, `ge`, `le`, `in`). Apenas leitura.|
 |resourceBehaviorOptions|Conjunto de cadeias de caracteres|Especifica os comportamentos de grupo que podem ser configurados para um grupo do Microsoft 365 durante sua criação. Isso só pode ser definido como parte da criação (POST). Os valores possíveis são `AllowOnlyMembersToPost`, `HideGroupInOutlook`, `SubscribeNewGroupMembers`, `WelcomeEmailDisabled`. Para obter mais informações, confira o artigo [Definir as opções de provisionamento e comportamentos de grupo do Microsoft 365 ](/graph/group-set-options).|
-|resourceProvisioningOptions|Conjunto de cadeias de caracteres|Especifica os recursos de grupo provisionados como parte da criação de grupos do Microsoft 365 que não costumam fazer parte do processo padrão de criação de grupos. Um valor possível é `Team`. Para obter mais informações, confira o artigo [Definir as opções de provisionamento e comportamentos de grupo do Microsoft 365 ](/graph/group-set-options). <br><br>Devolvido por padrão. Suporta `$filter` (`eq`, `not`, `startsWith`.|
+|resourceProvisioningOptions|Conjunto de cadeias de caracteres|Especifica os recursos de grupo provisionados como parte da criação de grupos do Microsoft 365 que não costumam fazer parte do processo padrão de criação de grupos. Um valor possível é `Team`. Para obter mais informações, confira o artigo [Definir as opções de provisionamento e comportamentos de grupo do Microsoft 365 ](/graph/group-set-options). <br><br>Retornado por padrão. Suporta `$filter` (`eq`, `not`, `startsWith`.|
 |securityEnabled|Boolean|Especifica se o grupo é um grupo de segurança. Obrigatório.<br><br>Retornado por padrão. Suporta `$filter` (`eq`, `ne`, `not`, `in`).|
 |securityIdentifier|Cadeia de Caracteres|Identificador de segurança do grupo, usado em cenários do Windows. <br><br>Retornado por padrão.|
 |tema|Cadeia de caracteres|Especifica o tema de cor de um grupo do Microsoft 365. Os valores possíveis são: `Teal`, `Purple`, `Green`, `Blue`,`Pink`, `Orange` ou `Red`. <br><br>Retornado por padrão. |
@@ -250,7 +250,7 @@ Veja a seguir uma representação JSON do recurso.
 
 ```json
 {
-  "accessType": "string",
+  "accessType": "String",
   "assignedLabels": [{"@odata.type": "microsoft.graph.assignedLabel"}],
   "assignedLicenses": [{"@odata.type": "microsoft.graph.assignedLicense"}],
   "allowExternalSenders": false,
@@ -258,38 +258,38 @@ Veja a seguir uma representação JSON do recurso.
   "createdByAppId": "String",
   "createdDateTime": "String (timestamp)",
   "deletedDateTime": "String (timestamp)",
-  "description": "string",
-  "displayName": "string",
+  "description": "String",
+  "displayName": "String",
   "expirationDateTime": "String (timestamp)",
-  "groupTypes": ["string"],
+  "groupTypes": ["String"],
   "hideFromAddressLists": false,
   "hideFromOutlookClients": false,
-  "id": "string (identifier)",
+  "id": "String (identifier)",
   "isFavorite": true,
   "isAssignableRole": false,
   "isSubscribedByMail": true,
-  "licenseProcessingState": "string",
-  "mail": "string",
+  "licenseProcessingState": "String",
+  "mail": "String",
   "mailEnabled": true,
-  "mailNickname": "string",
-  "onPremisesDomainName": "string",
+  "mailNickname": "String",
+  "onPremisesDomainName": "String",
   "onPremisesLastSyncDateTime": "String (timestamp)",
-  "onPremisesNetBiosName": "string",
+  "onPremisesNetBiosName": "String",
   "onPremisesProvisioningErrors": [{"@odata.type": "microsoft.graph.onPremisesProvisioningError"}],
-  "onPremisesSamAccountName": "string",
-  "onPremisesSecurityIdentifier": "string",
+  "onPremisesSamAccountName": "String",
+  "onPremisesSecurityIdentifier": "String",
   "onPremisesSyncEnabled": true,
-  "preferredDataLocation": "string",
-  "proxyAddresses": ["string"],
+  "preferredDataLocation": "String",
+  "proxyAddresses": ["String"],
   "renewedDateTime": "String (timestamp)",
   "resourceBehaviorOptions": ["String"],
   "resourceProvisioningOptions": ["String"],
   "securityEnabled": true,
-  "securityIdentifier": "string",
+  "securityIdentifier": "String",
   "unseenConversationsCount": 1024,
   "unseenCount": 1024,
   "unseenMessagesCount": 1024,
-  "visibility": "string",
+  "visibility": "String",
   "acceptedSenders": [{"@odata.type": "microsoft.graph.directoryObject"}],
   "calendar": {"@odata.type": "microsoft.graph.calendar"},
   "calendarView": [{"@odata.type": "microsoft.graph.event"}],
@@ -305,13 +305,13 @@ Veja a seguir uma representação JSON do recurso.
   "rejectedSenders": [{"@odata.type": "microsoft.graph.directoryObject"}],
   "sites": [{"@odata.type": "microsoft.graph.site"}],
   "threads": [{"@odata.type": "microsoft.graph.conversationThread"}],
-  "classification": "string",
+  "classification": "String",
   "hasMembersWithLicenseErrors": true,
-  "membershipRule": "string",
-  "membershipRuleProcessingState": "string",
+  "membershipRule": "String",
+  "membershipRuleProcessingState": "String",
   "membershipRuleProcessingStatus":{"@odata.type": "microsoft.graph.membershipRuleProcessingStatus"},
-  "preferredLanguage": "string",
-  "theme": "string"
+  "preferredLanguage": "String",
+  "theme": "String"
 }
 ```
 
