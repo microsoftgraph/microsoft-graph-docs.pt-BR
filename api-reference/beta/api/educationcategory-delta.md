@@ -1,0 +1,238 @@
+---
+title: 'educationCategory: delta'
+description: Obter uma lista de objetos educationCategory recém-criados ou atualizados sem executar uma leitura completa da coleção.
+author: cristobal-buenrostro
+ms.localizationpriority: medium
+ms.prod: education
+doc_type: apiPageType
+ms.openlocfilehash: acb23d3251ee9e7a097b58e6376ab88cc30f5d4e
+ms.sourcegitcommit: f336c5c49fbcebe55312656aa8b50511fd99a657
+ms.translationtype: MT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 12/09/2021
+ms.locfileid: "61391103"
+---
+# <a name="educationcategory-delta"></a>educationCategory: delta
+Namespace: microsoft.graph
+
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
+Obter uma lista de objetos [educationCategory](../resources/educationcategory.md) recém-criados ou atualizados sem executar uma leitura completa da coleção.
+
+> Esse método não retorna categorias excluídas.
+
+## <a name="permissions"></a>Permissões
+Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
+
+| Tipo de permissão                        | Permissões (da com menos para a com mais privilégios)                                                            |
+| :------------------------------------- | :----------------------------------------------------------------------------------------------------- |
+| Delegado (conta corporativa ou de estudante)     | EduAssignments.ReadBasic, EduAssignments.ReadWriteBasic, EduAssignments.Read, EduAssignments.ReadWrite |
+| Delegado (conta pessoal da Microsoft) | Sem suporte.                                                                                         |
+| Aplicativo                            | EduAssignments.ReadBasic.All, EduAssignments.ReadWriteBasic.All, EduAssignments.Read.All, EduAssignments.ReadWrite.All |
+
+## <a name="optional-query-parameters"></a>Parâmetros de consulta opcionais
+Esse método não dá suporte aos `$expand` `$orderby` parâmetros de consulta , `$search` e `$filter` OData.
+
+Esse método só dá suporte ao parâmetro `$top` de consulta OData.
+
+## <a name="http-request"></a>Solicitação HTTP
+
+<!-- {
+  "blockType": "ignored"
+}
+-->
+``` http
+GET /education/classes/{educationClassId}/assignmentCategories/delta
+GET /education/classes/{educationClassId}/assignments/{educationAssignmentId}/categories/delta
+```
+
+## <a name="request-headers"></a>Cabeçalhos de solicitação
+|Nome|Descrição|
+|:---|:---|
+|Autorização|{token} de portador. Obrigatório.|
+
+## <a name="request-body"></a>Corpo da solicitação
+Não forneça um corpo de solicitação para esse método.
+
+## <a name="response"></a>Resposta
+
+Se tiver êxito, essa função retornará um código de resposta e uma coleção `200 OK` [educationCategory](../resources/educationcategory.md) no corpo da resposta.
+
+## <a name="examples"></a>Exemplos
+
+### <a name="example-1-get-assignment-categories"></a>Exemplo 1: Obter categorias de atribuição
+
+#### <a name="request"></a>Solicitação
+
+Este é um exemplo de solicitação. 
+
+Use o `$top` parâmetro para especificar o número de categorias a serem retornadas. O parâmetro é opcional, mas use-o de preferência quando você tiver uma longa lista de categorias, caso contrário, você receberá todas as categorias na classe.
+
+<!-- {
+  "blockType": "request",
+  "name": "get_classcategories_delta"
+}-->
+
+```http
+GET https://graph.microsoft.com/beta/education/classes/72a7baec-c3e9-4213-a850-f62de0adad5f/assignmentcategories/delta?$top=3
+```
+---
+
+#### <a name="response"></a>Resposta
+
+Este é um exemplo de resposta. 
+
+>**Observação:** Pegue o `@odata.nextLink` da resposta para fazer outra chamada e obter o próximo conjunto de categorias.
+
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.educationCategory",
+  "isCollection": true
+} -->
+
+```http
+HTTP/1.1 200 OK
+Content-type: application/json
+Content-length: 344
+
+{
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#Collection(educationCategory)",
+    "@odata.nextLink": "https://graph.microsoft.com/beta/education/classes/72a7baec-c3e9-4213-a850-f62de0adad5f/assignmentcategories/delta?$skiptoken=U43TyYWKlRvJ6wWxZOfJvkp22nMqShRw9f-GxBtG2FDy9b1hMDaAJGdLb7n2fh1IVSFtBcXz0jxjIEihcR91dS3R7i8Z2IMtxIn9rKbK9Jvurj6jCH-lDbSNatdesrK0PJ5zpZ_-i8HyqkdtLhWD9tewXVArIqQWJA7gJz8z4paG2q0MU9rixrQOTe7WIXikPiBTUPilHuUW-o1k7cvqke3K7llJbU3G7z_O7WGoVGE.l8-2OcBi9ZWAhwhPnXvJ-kyyk8GNb6-H4o6qofP5YBY",
+    "value": [
+        {
+            "@odata.type": "#microsoft.graph.educationCategory",
+            "displayName": "Fall 21",
+            "id": "f0fd3e18-87a7-4060-b348-bd2d7a178a9d"
+        },
+        {
+            "@odata.type": "#microsoft.graph.educationCategory",
+            "displayName": "reading",
+            "id": "10aa7bb1-7f5b-4c12-b1d4-0bf1429a12de"
+        },
+        {
+            "@odata.type": "#microsoft.graph.educationCategory",
+            "displayName": "expand",
+            "id": "02f60051-806d-4729-a251-4156f7d8e8a5"
+        }
+    ]
+}
+```
+
+### <a name="example-2-get-next-set-of-categories"></a>Exemplo 2: Obter o próximo conjunto de categorias 
+
+#### <a name="request"></a>Solicitação
+
+Este é um exemplo de solicitação.
+
+Use o `@odata.nextLink` valor da chamada anterior para essa solicitação.
+
+<!-- {
+  "blockType": "request",
+  "name": "get_classcategories_delta"
+}-->
+
+```http
+GET /education/classes/72a7baec-c3e9-4213-a850-f62de0adad5f/assignmentcategories/delta?$skiptoken=U43TyYWKlRvJ6wWxZOfJvkp22nMqShRw9f-GxBtG2FDy9b1hMDaAJGdLb7n2fh1IVSFtBcXz0jxjIEihcR91dS3R7i8Z2IMtxIn9rKbK9Jvurj6jCH-lDbSNatdesrK0PJ5zpZ_-i8HyqkdtLhWD9tewXVArIqQWJA7gJz8z4paG2q0MU9rixrQOTe7WIXikPiBTUPilHuUW-o1k7cvqke3K7llJbU3G7z_O7WGoVGE.l8-2OcBi9ZWAhwhPnXvJ-kyyk8GNb6-H4o6qofP5YBY
+```
+---
+
+#### <a name="response"></a>Resposta
+
+Este é um exemplo de resposta.
+
+>**Observação:** Você deve continuar usando o `@odata.nextLink` valor das chamadas conseqüente até obter `@odata.deltaLink` a propriedade na resposta.
+
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.educationCategory",
+  "isCollection": true
+} -->
+
+```http
+HTTP/1.1 200 OK
+Content-type: application/json
+Content-length: 344
+
+{
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#Collection(educationCategory)",
+    "@odata.deltaLink": "https://graph.microsoft.com/beta/education/classes/72a7baec-c3e9-4213-a850-f62de0adad5f/assignmentcategories/delta?$deltatoken=7ORzTfzlUEGDy6BRE3OC-3ePBbvLHCRe4aJ_hjaBKJxUHmn_ODgoM4xreLS7YRaxc-iACeqCQsT5Tb0u9vn6QXYflO6j0sRgRQlhcfR7DApZYl6uZqiXcR7H0G14btPqR761sKWNc0jgiczrHGF6dGfSQwsLzPT46og-84ArhOU.Jnxvkr08FE-QBvEYstYel3JZUrgwgTauo-GmpbdWeSA",
+    "value": [
+        {
+            "@odata.type": "#microsoft.graph.educationCategory",
+            "displayName": "apps",
+            "id": "62cee656-f3e7-45c9-958f-5dc3ff47dd97"
+        },
+        {
+            "@odata.type": "#microsoft.graph.educationCategory",
+            "displayName": "homework",
+            "id": "440c56ea-6c2a-4566-a8ab-56fcda3bc1e3"
+        }
+    ]
+}
+```
+
+### <a name="example-3-get-the-created-and-modified-categories-using-delta-token"></a>Exemplo 3: Obter as categorias criadas e modificadas usando o token delta
+
+#### <a name="request"></a>Solicitação
+
+Este é um exemplo de solicitação.
+
+Use o `@odata.deltaLink` valor da chamada anterior para essa solicitação.
+
+<!-- {
+  "blockType": "request",
+  "name": "get_classcategories_delta"
+}-->
+
+```http
+GET /education/classes/72a7baec-c3e9-4213-a850-f62de0adad5f/assignmentcategories/delta?$deltatoken=7ORzTfzlUEGDy6BRE3OC-3ePBbvLHCRe4aJ_hjaBKJxUHmn_ODgoM4xreLS7YRaxc-iACeqCQsT5Tb0u9vn6QXYflO6j0sRgRQlhcfR7DApZYl6uZqiXcR7H0G14btPqR761sKWNc0jgiczrHGF6dGfSQwsLzPT46og-84ArhOU.Jnxvkr08FE-QBvEYstYel3JZUrgwgTauo-GmpbdWeSA
+```
+---
+
+#### <a name="response"></a>Resposta
+
+Este é um exemplo de resposta.
+
+>**Observação:** Você deve continuar usando o `@odata.deltaLink` para obter as categorias recém-criadas ou modificadas desde a chamada delta inicial.
+
+>Às vezes, a resposta delta será muito grande e, nesse caso, um será retornado para continuar a buscar `@odata.nextLink` alterações até você atingir um `@odata.deltaLink` novamente.
+
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.educationCategory",
+  "isCollection": true
+} -->
+
+```http
+HTTP/1.1 200 OK
+Content-type: application/json
+Content-length: 344
+
+{
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#Collection(educationCategory)",
+    "@odata.deltaLink": "https://graph.microsoft.com/beta/education/classes/72a7baec-c3e9-4213-a850-f62de0adad5f/assignmentcategories/delta?$deltatoken=7ORzTfzlUEGDy6BRE3OC-3ePBbvLHCRe4aJ_hjaBKJxUHmn_ODgoM4xreLS7YRaxc-iACeqCQsT5Tb0u9vn6QXYflO6j0sRgRQlhcfR7DApVu5vuUKP3uuUhFpYW8Ku3RtYbkmxRlHbDAkK-NyvPczuDOJqONtesUhKgaoXQGmM.4Rw7IYlmUFBcaDmEbJoGDLMbchYNgoLiPNyp4e7z2po",
+    "value": [
+        {
+            "@odata.type": "#microsoft.graph.educationCategory",
+            "displayName": "arts",
+            "id": "d9fa9b82-04d5-4411-ae4d-848e6fd75575"
+        }
+    ]
+}
+```
+
+<!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
+2021-11-18 14:57:30 UTC -->
+<!--
+{
+  "type": "#page.annotation",
+  "description": "List categories: delta",
+  "keywords": "",
+  "section": "documentation",
+  "tocPath": "",
+  "suppressions": []
+}
+-->

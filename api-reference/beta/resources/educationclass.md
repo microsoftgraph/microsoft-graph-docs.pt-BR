@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: mmast-msft
 ms.prod: education
 doc_type: resourcePageType
-ms.openlocfilehash: 9d1b272689e1845d19ed657f26b36af608562942
-ms.sourcegitcommit: 2456cf3c4117b88afefef139593796a2f919e7cc
+ms.openlocfilehash: 973cb6ad47feb4d37030eb42d3bdca131c0bdd01
+ms.sourcegitcommit: f336c5c49fbcebe55312656aa8b50511fd99a657
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/18/2021
-ms.locfileid: "61077639"
+ms.lasthandoff: 12/09/2021
+ms.locfileid: "61390666"
 ---
 # <a name="educationclass-resource-type"></a>Tipo de recurso educationClass
 
@@ -24,7 +24,7 @@ Os alunos são membros regulares da classe e os professores são proprietários 
 > [!IMPORTANT]
 > Para Microsoft 365 experiências funcionem corretamente, os professores devem ser membros das coleções de professores e membros.
 
-## <a name="methods"></a>Methods
+## <a name="methods"></a>Métodos
 
 | Método                                                                  | Tipo de retorno                                    | Descrição                                                                               |
 | :---------------------------------------------------------------------- | :--------------------------------------------- | :---------------------------------------------------------------------------------------- |
@@ -43,7 +43,7 @@ Os alunos são membros regulares da classe e os professores são proprietários 
 | [Listar categorias](../api/educationclass-list-categories.md)             | [Coleção educationCategory]                 | Obter uma lista de **objetos educationCategory** que pertencem a essa classe.                      |
 | [Atualizar](../api/educationclass-update.md)                               | [educationClass]                               | Atualize o objeto **educationClass**.                                                         |
 | [Delete](../api/educationclass-delete.md)                               | Nenhum                                           | Exclua o objeto **educationClass**.                                                         |
-| [Delta](../api/educationclass-delta.md)                                 | Coleção [educationClass](educationclass.md) | Obter alterações incrementais **para educationClasses**.                                          |
+| [Obter delta](../api/educationclass-delta.md)                                 | Coleção [educationClass](educationclass.md) | Obter alterações incrementais **para educationClasses**.                                          |
 
 ## <a name="properties"></a>Propriedades
 

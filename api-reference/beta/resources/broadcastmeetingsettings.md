@@ -1,16 +1,16 @@
 ---
 title: Tipo de recurso broadcastMeetingSettings
-description: Configurações relacionado a um evento Teams ao vivo
+description: Representa configurações relacionadas a um evento ao vivo Microsoft Teams.
 author: mkhribech
 ms.localizationpriority: medium
 ms.prod: cloud-communications
 doc_type: resourcePageType
-ms.openlocfilehash: 36e5778761ac792e84096fd54f48c766e524149d
-ms.sourcegitcommit: c7ff992ef63e480d070421ba99b28ee129cb6acb
+ms.openlocfilehash: ca268c18f97db7609522a3bc6578acfd94d3ef0e
+ms.sourcegitcommit: f336c5c49fbcebe55312656aa8b50511fd99a657
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "60696529"
+ms.lasthandoff: 12/09/2021
+ms.locfileid: "61390833"
 ---
 # <a name="broadcastmeetingsettings-resource-type"></a>Tipo de recurso broadcastMeetingSettings
 
@@ -18,7 +18,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Configurações relacionado a um [evento Microsoft Teams ao vivo.](/microsoftteams/teams-live-events/what-are-teams-live-events)
+Representa configurações relacionadas a [um evento ao](/microsoftteams/teams-live-events/what-are-teams-live-events) vivo em Microsoft Teams.
 
 ## <a name="properties"></a>Propriedades
 
@@ -26,9 +26,9 @@ Configurações relacionado a um [evento Microsoft Teams ao vivo.](/microsofttea
 | -------------------------- | ------------------------ | ------------------------------------------------------------------------------- |
 | allowedAudience            | [broadcastMeetingAudience](#broadcastmeetingaudience-values) | Define quem pode ingressar no evento Teams ao vivo. Os valores possíveis são listados na tabela a seguir. |
 | isRecordingEnabled         | Booliano                  | Indica se a gravação está habilitada para esse Teams ao vivo. O valor padrão é `false`.          |
-| isAttendeeReportEnabled    | Booliano                  | Indica se o relatório do participante está habilitado para este evento Teams ao vivo. O valor padrão é `false`.    |
+| isAttendeeReportEnabled    | Boolean                  | Indica se o relatório do participante está habilitado para este evento Teams ao vivo. O valor padrão é `false`.    |
 | isQuestionAndAnswerEnabled | Booliano                  | Indica se a Q&A está habilitada para este evento Teams ao vivo. O valor padrão é `false`.                |
-| isVideoOnDemandEnabled     | Booliano                  | Indica se o vídeo sob demanda está habilitado para esse evento Teams ao vivo. O valor padrão é `false`.    |
+| isVideoOnDemandEnabled     | Boolean                  | Indica se o vídeo sob demanda está habilitado para esse evento Teams ao vivo. O valor padrão é `false`.    |
 
 ### <a name="broadcastmeetingaudience-values"></a>valores broadcastMeetingAudience
 

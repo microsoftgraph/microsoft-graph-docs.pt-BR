@@ -1,32 +1,32 @@
 ---
-title: Relatórios de ativações do Microsoft 365
-description: O relatório de ativação do Microsoft 365 oferece uma visão de quais usuários ativaram suas assinaturas do Microsoft 365 em pelo menos um dispositivo. Ele fornece uma divisão das ativações de assinatura do Microsoft 365 ProPlus, Project e Visio Pro para Microsoft 365, bem como o detalhamento das ativações em computadores e dispositivos. Esse relatório pode ajudá-lo a identificar usuários que podem precisar de suporte adicional para ativar a assinatura do Office.
-localization_priority: Normal
+title: Microsoft 365 relatórios de ativações
+description: O Microsoft 365 de ativação oferece uma exibição de quais usuários ativaram suas assinaturas Microsoft 365 em pelo menos um dispositivo. Ele fornece uma divisão do Microsoft 365 ProPlus, Project e Visio Pro para ativações de assinatura do Microsoft 365, bem como a divisão de ativações entre a área de trabalho e dispositivos. Este relatório pode ajudá-lo a identificar usuários que podem precisar de suporte adicional para ativar a assinatura Office assinatura.
+ms.localizationpriority: medium
 ms.prod: reports
 author: sarahwxy
 doc_type: conceptualPageType
-ms.openlocfilehash: 32fb2f1397218a5d6c99b071b7a398cf00cd54f7
-ms.sourcegitcommit: 479b366f3265b666fdc024b0f90b8d29764bb4b2
+ms.openlocfilehash: ca3a0218b288105982cb67664629a467a67d596a
+ms.sourcegitcommit: f336c5c49fbcebe55312656aa8b50511fd99a657
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/26/2021
-ms.locfileid: "49980789"
+ms.lasthandoff: 12/09/2021
+ms.locfileid: "61390624"
 ---
-# <a name="microsoft-365-activations-reports"></a>Relatórios de ativações do Microsoft 365
+# <a name="microsoft-365-activations-reports"></a>Microsoft 365 relatórios de ativações
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-O relatório de ativação do Microsoft 365 oferece uma visão de quais usuários ativaram suas assinaturas do Microsoft 365 em pelo menos um dispositivo. Ele fornece uma divisão das ativações de assinatura do Microsoft 365 ProPlus, Project e Visio Pro para Microsoft 365, bem como o detalhamento das ativações em computadores e dispositivos. Esse relatório pode ajudá-lo a identificar usuários que podem precisar de suporte adicional para ativar a assinatura do Office.
+O Microsoft 365 de ativação oferece uma exibição de quais usuários ativaram suas assinaturas Microsoft 365 em pelo menos um dispositivo. Ele fornece uma divisão do Microsoft 365 ProPlus, Project e Visio Pro para ativações de assinatura do Microsoft 365, bem como a divisão de ativações entre a área de trabalho e dispositivos. Este relatório pode ajudá-lo a identificar usuários que podem precisar de suporte adicional para ativar a assinatura Office assinatura.
 
-> **Observação:** Para obter detalhes sobre diferentes visualizações e nomes de relatórios, consulte [relatórios do Microsoft 365 - ativações do Microsoft Office.](https://support.office.com/client/Office-activations-87c24ae2-82e0-4d1e-be01-c3bcc3f18c60)
+> **Observação:** Para obter detalhes sobre diferentes exibições de relatório e nomes, [consulte Microsoft 365 relatórios - Microsoft Office ativações](https://support.office.com/client/Office-activations-87c24ae2-82e0-4d1e-be01-c3bcc3f18c60).
 
 ## <a name="reports"></a>Relatórios
-| Função                                 | Tipo de retorno CSV | Tipo de retorno JSON                         | Descrição                              |
-| :--------------------------------------- | :-------------- | :--------------------------------------- | ---------------------------------------- |
-| [Obter dados de usuário](../api/reportroot-getoffice365activationsuserdetail.md) | Fluxo          | [office365ActivationsUserDetail](../resources/office365activationsuserdetail.md) | Obter detalhes sobre os usuários que ativaram o Microsoft 365. |
-| [Obter contagens de ativação](../api/reportroot-getoffice365activationcounts.md) | Fluxo          | [office365ActivationCounts](../resources/office365activationcounts.md) | Obter a contagem de ativações do Microsoft 365 em desktops e dispositivos. |
-| [Obter contagens de usuários](../api/reportroot-getoffice365activationsusercounts.md) | Fluxo          | [office365ActivationsUserCounts](../resources/office365activationsusercounts.md) | Obtenha a contagem de usuários habilitados e aqueles que ativaram a assinatura do Office no desktop ou nos dispositivos. |
+| Função                                                     | Tipo de retorno CSV | Tipo de retorno JSON | Descrição                                                  |
+| :----------------------------------------------------------- | :-------------- | :--------------- | ------------------------------------------------------------ |
+| [Obter dados de usuário](../api/reportroot-getoffice365activationsuserdetail.md) | Fluxo          | Stream           | Obter detalhes sobre usuários que ativaram Microsoft 365.    |
+| [Obter contagens de ativação](../api/reportroot-getoffice365activationcounts.md) | Fluxo          | Stream           | Obter a contagem de Microsoft 365 ativações em desktops e dispositivos. |
+| [Obter contagens de usuários](../api/reportroot-getoffice365activationsusercounts.md) | Fluxo          | Fluxo           | Obtenha a contagem de usuários habilitados e aqueles que ativaram a assinatura do Office no desktop ou nos dispositivos. |
 
 

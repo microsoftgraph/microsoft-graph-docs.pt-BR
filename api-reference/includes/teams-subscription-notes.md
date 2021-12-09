@@ -3,12 +3,12 @@ author: nkramer
 ms.topic: include
 ms.date: 01/25/2021
 ms.localizationpriority: medium
-ms.openlocfilehash: 0bd1801747eb5f4871e121009bb2017b2c17c9f3
-ms.sourcegitcommit: f65eee432cc903324b5f9b31710fdc6100590f36
-ms.translationtype: MT
+ms.openlocfilehash: e9b65c0ed6c82e94a38bbeb08b208fbe24d60176
+ms.sourcegitcommit: f336c5c49fbcebe55312656aa8b50511fd99a657
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/07/2021
-ms.locfileid: "61323839"
+ms.lasthandoff: 12/09/2021
+ms.locfileid: "61390805"
 ---
 <!-- markdownlint-disable MD041-->
 
@@ -18,23 +18,23 @@ ms.locfileid: "61323839"
 
 Assinaturas **chatMessage** com permissões de aplicativo incluem dados de recurso e exigem [criptografia](/graph/webhooks-with-resource-data). A criação de assinatura falhará se um [encryptionCertificate](/graph/api/resources/subscription) não for especificado. Antes de criar uma assinatura **chatMessage**, você deve solicitar acesso. Para obter detalhes, confira [APIs protegidas no Microsoft Teams](/graph/teams-protected-apis).
 
-Você deve usar o header de solicitação para obter os seguintes valores em `Prefer: include-unknown-enum-members` **chatMessage** **messageType** [enum evolvable](/graph/best-practices-concept#handling-future-members-in-evolvable-enumerations): for and `systemEventMessage` `/teams/{id}/channels/{id}/messages` `/chats/{id}/messages` resource.
+Você deve usar o cabeçalho da solicitação `Prefer: include-unknown-enum-members` para obter os seguintes valores nos recursos **chatMessage** **messageType** [enumeração evoluível](/graph/best-practices-concept#handling-future-members-in-evolvable-enumerations): `systemEventMessage` para `/teams/{id}/channels/{id}/messages` e `/chats/{id}/messages`.
 
 > [!NOTE]
->`/teams/getAllMessages`e `/chats/getAllMessages` tem [requisitos de licenciamento e pagamento.](/graph/teams-licenses)
-> `/teams/getAllMessages` e `/chats/getAllMessages` dar suporte a `model=A` `model=B` parâmetros de consulta e.
+>`/teams/getAllMessages` e `/chats/getAllMessages` tem [requisitos de licenciamento e pagamento](/graph/teams-licenses).
+> `/teams/getAllMessages` e `/chats/getAllMessages` suportam os parâmetros de consulta `model=A` e `model=B`.
 > Se nenhum modelo for especificado, o [modo de avaliação](/graph/teams-licenses#evaluation-mode-default-requirements) será usado.
 
 ### <a name="conversationmember"></a>conversationMember
 
 > [!NOTE]
->`/teams/getAllMembers`e `/chats/getAllMembers` tem [requisitos de licenciamento e pagamento.](/graph/teams-licenses)
-> `/teams/getAllMembers` e `/chats/getAllMembers` dar suporte a `model=A` `model=B` parâmetros de consulta e.
+>`/teams/getAllMembers` e `/chats/getAllMembers` tem [requisitos de licenciamento e pagamento](/graph/teams-licenses).
+> `/teams/getAllMembers` e `/chats/getAllMembers` suportam os parâmetros de consulta `model=A` e `model=B`.
 > Se nenhum modelo for especificado, o [modo de avaliação](/graph/teams-licenses#evaluation-mode-default-requirements) será usado.
 
-### <a name="request-example"></a>Exemplo de solicitação
+#### <a name="request-example"></a>Exemplo de solicitação
 
-`model`Especifique o parâmetro de consulta na propriedade **resource** no corpo da solicitação.
+Especifique o parâmetro de consulta `model` na propriedade **recurso** no corpo da solicitação.
 
 ```http
 POST https://graph.microsoft.com/beta/subscriptions

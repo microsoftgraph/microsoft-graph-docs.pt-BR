@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: dipakboyed
 ms.prod: education
 doc_type: resourcePageType
-ms.openlocfilehash: 60af2b9ac859cb9704c45cb4d7f5fdc9ec6e3088
-ms.sourcegitcommit: 08e9b0bac39c1b1d2c8a79539d24aaa93364baf2
+ms.openlocfilehash: 900c5ba54623c251c3eb0069d8e4c05d8c4b53d5
+ms.sourcegitcommit: f336c5c49fbcebe55312656aa8b50511fd99a657
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/24/2021
-ms.locfileid: "59766002"
+ms.lasthandoff: 12/09/2021
+ms.locfileid: "61390910"
 ---
 # <a name="educationassignment-resource-type"></a>Tipo de recurso educationAssignment
 
@@ -32,7 +32,7 @@ As  APIs de atribuição são expostas no namespace de classe.
 |:---------------|:--------|:----------|
 |[Criar recurso de tarefa](../api/educationassignment-post-resources.md) |[educationAssignmentResource](educationassignmentresource.md)| Crie uma nova **educationAssignmentResource** postando na coleção resources.|
 |[Obter a tarefa](../api/educationassignment-get.md) | [educationAssignment](educationassignment.md) |Ler propriedades e relações de um **objeto educationAssignment.**|
-|[Atualização](../api/educationassignment-update.md) | [educationAssignment](educationassignment.md) |Atualize **um objeto educationAssignment.** |
+|[Atualizar](../api/educationassignment-update.md) | [educationAssignment](educationassignment.md) |Atualize **um objeto educationAssignment.** |
 |[Delete](../api/educationassignment-delete.md) | Nenhum |**Exclua um objeto educationAssignment.** |
 |[Publicar](../api/educationassignment-publish.md)|[educationAssignment](educationassignment.md)|Altere o estado de um **objeto educationAssignment** de rascunho para publicado.|
 |[Configurar pasta de recursos de atribuição](../api/educationassignment-setupresourcesfolder.md)| string| Crie uma SharePoint (em local pré-definido) para carregar arquivos como recursos de atribuição.|
@@ -43,6 +43,7 @@ As  APIs de atribuição são expostas no namespace de classe.
 |[Remover categoria](../api/educationassignment-remove-category.md) |Nenhum| Remover uma **educationCategory** pertencente à classe desta **atribuição**.|
 |[Anexar rubric](../api/educationassignment-put-rubric.md)|Nenhum|Anexe um **educationRubric existente** a esta **atribuição**.|
 |[Remover rubric](../api/educationassignment-delete-rubric.md)|Nenhum|Desconectar **educationRubric** desta **atribuição**.|
+|[Obter delta](../api/educationassignment-delta.md)|[coleção educationAssignment](../resources/educationassignment.md)|Obter uma **coleção de objetos educationAssignment** com suporte à consulta delta.|
 
 ## <a name="properties"></a>Propriedades
 | Propriedade     | Tipo   |Descrição|
@@ -55,7 +56,7 @@ As  APIs de atribuição são expostas no namespace de classe.
 |assignDateTime|DateTimeOffset|A data em que a **atribuição** deve ficar ativa.  Se, no futuro, a **atribuição** não for mostrada ao aluno até essa data.  O **tipo Timestamp** representa informações de data e hora usando o formato ISO 8601 e está sempre em horário UTC. Por exemplo, meia-noite UTC em 1 de janeiro de 2014 é `2014-01-01T00:00:00Z`|
 |assignTo|[educationAssignmentRecipient](educationassignmentrecipient.md)| Quais usuários ou classe inteira devem receber um objeto **de envio** depois que a **atribuição** for publicada. |
 |assignedDateTime|DateTimeOffset|O momento em que a **atribuição** foi publicada para os alunos e **a** atribuição aparece na linha do tempo dos alunos.  O tipo Timestamp representa informações de data e hora usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite UTC em 1 de janeiro de 2014 é `2014-01-01T00:00:00Z`|
-|classId|String| Classe a qual **essa atribuição** pertence. |
+|classId|Cadeia de caracteres| Classe a qual **essa atribuição** pertence. |
 |closeDateTime|DateTimeOffset| Data em que **a atribuição** será fechada para **envios.** Este é um campo opcional que  pode ser nulo se a atribuição não permitirLateSubmissions ou quando closeDateTime for igual ao dueDateTime. Mas, se especificado, o closeDateTime deve ser maior ou igual ao dueDateTime. O tipo Timestamp representa informações de data e hora usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite UTC em 1 de janeiro de 2014 é `2014-01-01T00:00:00Z`|
 |createdBy|[identitySet](identityset.md)| Who a **atribuição**. |
 |createdDateTime|DateTimeOffset|Momento em que **a atribuição** foi criada.  O tipo Timestamp representa informações de data e hora usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite UTC em 1 de janeiro de 2014 é `2014-01-01T00:00:00Z`|
@@ -65,7 +66,7 @@ As  APIs de atribuição são expostas no namespace de classe.
 |instructions|[itemBody](itembody.md)| Instruções para a **atribuição**.  Isso junto com o nome de exibição diz ao aluno o que fazer. |
 |lastModifiedBy|[identitySet](identityset.md)| Who última modificação da **atribuição**. |
 |lastModifiedDateTime|DateTimeOffset|Momento em que **a atribuição** foi modificada pela última vez.  O tipo Timestamp representa informações de data e hora usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite UTC em 1 de janeiro de 2014 é `2014-01-01T00:00:00Z`|
-|notificationChannelUrl|String|Campo opcional para especificar a URL do [canal para](channel.md) postar a notificação **de** publicação de atribuição. Se não for especificado ou nulo, o padrão será o `General` canal. Este campo só se aplica a **atribuições** em que o **valor assignTo** é [educationAssignmentClassRecipient](educationassignmentclassrecipient.md). A atualização do **notificationChannelUrl** não é permitida após **a** publicação da atribuição.|
+|notificationChannelUrl|Cadeia de caracteres|Campo opcional para especificar a URL do [canal para](channel.md) postar a notificação **de** publicação de atribuição. Se não for especificado ou nulo, o padrão será o `General` canal. Este campo só se aplica a **atribuições** em que o **valor assignTo** é [educationAssignmentClassRecipient](educationassignmentclassrecipient.md). A atualização do **notificationChannelUrl** não é permitida após **a** publicação da atribuição.|
 |status|cadeia de caracteres| Status da **atribuição**.  Você não pode CORRIGIR esse valor.  Os valores possíveis são: `draft`, `scheduled`, `published`, `assigned`.|
 |webUrl|cadeia de caracteres| A URL do link profundo para a **atribuição determinada.**|
 |resourcesFolderUrl|string| URL da pasta onde todos os recursos de arquivo para essa **atribuição** são armazenados.|

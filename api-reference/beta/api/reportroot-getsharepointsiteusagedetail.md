@@ -1,16 +1,16 @@
 ---
 title: 'reportRoot: getSharePointSiteUsageDetail'
 description: Obtenha dados sobre o uso do site do SharePoint.
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: reports
 author: sarahwxy
 doc_type: apiPageType
-ms.openlocfilehash: 7274d0b8425115afcfa7a7a18fd2ea2044e01e48
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: e1cefa554ce07a403d2cecc3a1a59387d4ddfe54
+ms.sourcegitcommit: f336c5c49fbcebe55312656aa8b50511fd99a657
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58804586"
+ms.lasthandoff: 12/09/2021
+ms.locfileid: "61390994"
 ---
 # <a name="reportroot-getsharepointsiteusagedetail"></a>reportRoot: getSharePointSiteUsageDetail
 
@@ -98,7 +98,7 @@ O arquivo CSV possui os seguintes cabeçalhos para colunas:
 
 ### <a name="json"></a>JSON
 
-Se tiver êxito, este método retornará um código de resposta e um `200 OK` **[objeto sharePointSiteUsageDetail](../resources/sharepointsiteusagedetail.md)** no corpo da resposta.
+Se tiver êxito, este método retornará um código de resposta e um `200 OK` objeto JSON no corpo da resposta.
 
 O tamanho padrão da página para essa solicitação é de 200 itens.
 
@@ -178,7 +178,7 @@ Este é um exemplo de resposta.
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.sharePointSiteUsageDetail"
+  "@odata.type": "stream"
 } -->
 
 ```http
@@ -187,7 +187,6 @@ Content-Type: application/json
 Content-Length: 484
 
 {
-  "@odata.context": "https://graph.microsoft.com/beta/$metadata#Collection(microsoft.graph.sharePointSiteUsageDetail)", 
   "value": [
     {
       "reportRefreshDate": "2017-09-01", 

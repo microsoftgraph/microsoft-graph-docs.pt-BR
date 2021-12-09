@@ -4,12 +4,12 @@ description: Saiba mais sobre os modelos de licenciamento e pagamento que se apl
 author: nkramer
 ms.localizationpriority: high
 ms.prod: microsoft-teams
-ms.openlocfilehash: 4f0f8c41d52ec54711e002253f691a3c298686f0
-ms.sourcegitcommit: c7ff992ef63e480d070421ba99b28ee129cb6acb
+ms.openlocfilehash: c59b13a68d16661212df21d9f710d0493e15c295
+ms.sourcegitcommit: f336c5c49fbcebe55312656aa8b50511fd99a657
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "60688686"
+ms.lasthandoff: 12/09/2021
+ms.locfileid: "61390449"
 ---
 # <a name="licensing-and-payment-requirements-for-microsoft-teams-apis-in-microsoft-graph"></a>Requisitos de licenciamento e pagamento para APIs do Microsoft Teams no Microsoft Graph
 
@@ -37,6 +37,8 @@ No futuro, os aplicativos também serão obrigados a pagar pelas mensagens que c
 | [Atualizando a policyViolation do chatMessage](/graph/api/chatmessage-update) |  Remetente de mensagem |  800 mensagens por usuário por mês por aplicativo | $0,00075 por mensagem |
 
 ## <a name="modelb-requirements"></a>Requisitos do `model=B`
+
+>**Observação:**[`model=B`](#modelb-requirements) é gratuito para uso hoje; no entanto, no futuro, os aplicativos pagarão com base no número de mensagens que consumirem. 
 
 |API                   | Quem precisa de uma [licença](#required-licenses-for-modela)  | Capacidade propagada | Preço para uso adicional | Notas |
 |:-----------------------------|:--------------------------------------------|:----------------|:-------|:------|

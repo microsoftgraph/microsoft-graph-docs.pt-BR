@@ -1,16 +1,16 @@
 ---
 title: 'presença: clearPresence'
 description: Desmarcar as informações de presença para a sessão de presença do aplicativo do usuário.
-author: jsandoval-msft
+author: mkhribech
 ms.localizationpriority: medium
 doc_type: apiPageType
 ms.prod: cloud-communications
-ms.openlocfilehash: af98bf701603acac022a0944c01937c2f0979641
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: af78f3718c45861b82428c6733c1dc8e7468bfc0
+ms.sourcegitcommit: f336c5c49fbcebe55312656aa8b50511fd99a657
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "60997355"
+ms.lasthandoff: 12/09/2021
+ms.locfileid: "61390875"
 ---
 # <a name="presence-clearpresence"></a>presença: clearPresence
 
@@ -18,16 +18,16 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Desmarcar a sessão de presença do aplicativo para um usuário. Se for a única sessão de presença do usuário, a presença do usuário mudará para `Offline/Offline` .
+[Desmarcar uma sessão de](presence-setpresence.md#presence-sessions) presença de um aplicativo para um usuário. Se for a única sessão de presença do usuário, uma **clearPresence** bem-sucedida altera a presença do usuário para `Offline/Offline` .
 
-Para obter detalhes sobre sessões de presença, [consulte presence: setPresence](presence-setpresence.md#presence-sessions).
+Leia mais sobre [sessões de presença](presence-setpresence.md#presence-sessions) e seu [tempo de expiração e expiração.](presence-setpresence.md#timeout-expiration-and-keep-alive) 
 
 ## <a name="permissions"></a>Permissões
 A permissão a seguir é necessária para chamar a API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 | Tipo de permissão                        | Permissões (da com menos para a com mais privilégios) |
 | :------------------------------------- | :------------------------------------------ |
-| Delegado (conta corporativa ou de estudante)     | Sem suporte.                              |
+| Delegado (conta corporativa ou de estudante)     | Presence.ReadWrite                          |
 | Delegado (conta pessoal da Microsoft) | Sem suporte.                              |
 | Aplicativo                            | Presence.ReadWrite.All                      |
 
@@ -57,7 +57,7 @@ Forneça um objeto JSON com os seguintes parâmetros no corpo da solicitação.
 > Forneça a ID do aplicativo como `sessionId` na solicitação.
 
 ## <a name="response"></a>Resposta
-Se tiver êxito, este método retornará um código de resposta `200 OK`.
+Se bem-sucedido, este método retorna um código de resposta `200 OK`.
 
 Se a sessão de presença não existir, este método retornará um `404 NotFound` código de resposta.
 
@@ -97,7 +97,7 @@ Content-Type: application/json
 [!INCLUDE [sample-code](../includes/snippets/java/clear--presence-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[Go](#tab/go)
+# <a name="go"></a>[Ir](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/clear--presence-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 

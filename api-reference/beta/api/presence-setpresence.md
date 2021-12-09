@@ -1,16 +1,16 @@
 ---
 title: 'presença: setPresence'
 description: De definir as informações de presença para a sessão de presença do aplicativo do usuário.
-author: jsandoval-msft
+author: mkhribech
 ms.localizationpriority: medium
 doc_type: apiPageType
 ms.prod: cloud-communications
-ms.openlocfilehash: f70207e151a1ffeff48dacf4c06d854a5f6ffc0f
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: f3a62e802d8ade524669aa68a0d6fb13ea717cc7
+ms.sourcegitcommit: f336c5c49fbcebe55312656aa8b50511fd99a657
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "60989676"
+ms.lasthandoff: 12/09/2021
+ms.locfileid: "61391071"
 ---
 # <a name="presence-setpresence"></a>presença: setPresence
 
@@ -18,16 +18,16 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-De definir o estado da sessão de presença de um usuário como um aplicativo.
+De definir o status de disponibilidade e atividade em uma sessão de presença de um aplicativo para um usuário.
 
 ### <a name="presence-sessions"></a>Sessões de presença
 Um usuário pode ter várias sessões de presença porque o usuário pode estar em vários Teams clientes (desktop, móvel e Web). Cada Teams cliente tem uma sessão de presença independente e a presença do usuário é um estado agregado de todas as sessões atrás.
 
 Da mesma forma, um aplicativo pode ter sua própria sessão de presença para um usuário e ser capaz de atualizar o estado.
 
-Veja a seguir a precedência de como os estados de sessão são agregados:
-* Configurada pelo usuário > configurada pelo aplicativo (o estado configurado pelo usuário substitui outras pessoas)
-* Entre os aplicativos configurados: DoNotDisturb (atualmente sem suporte para a presença definida) > Ocupado > Disponível > Distância
+A seguir está a precedência de como os estados de sessão são agregados, com "A > B" representando A tendo precedência sobre B:
+* Estado preferencial do usuário > de nível de sessão (o estado preferencial do usuário substitui estados no nível da sessão)
+* Entre estados de nível de sessão: DoNotDisturb (atualmente sem suporte para **setPresence**) > Ocupado > Disponível > Away
 
 ### <a name="timeout-expiration-and-keep-alive"></a>Tempo de expiração, expiração e manter-se vivo
 Uma sessão de presença pode **expirar** e **expirar**, portanto, o aplicativo precisa chamar essa API antes do tempo de tempo, para manter o estado da sessão; ou antes da **expiração**, para manter a sessão viva.
@@ -41,7 +41,7 @@ A permissão a seguir é necessária para chamar a API. Para saber mais, incluin
 
 | Tipo de permissão                        | Permissões (da com menos para a com mais privilégios) |
 | :------------------------------------- | :------------------------------------------ |
-| Delegado (conta corporativa ou de estudante)     | Sem suporte.                              |
+| Delegado (conta corporativa ou de estudante)     | Presence.ReadWrite                          |
 | Delegado (conta pessoal da Microsoft) | Sem suporte.                              |
 | Aplicativo                            | Presence.ReadWrite.All                      |
 
@@ -62,9 +62,9 @@ Forneça um objeto JSON com os seguintes parâmetros no corpo da solicitação.
 
 | Parâmetro          | Tipo     | Descrição                                                                                            |
 | :----------------- | :------- | :----------------------------------------------------------------------------------------------------- |
-| sessionId          | cadeia de caracteres   | A ID da sessão de presença do aplicativo.                                                          |
-| availability       | cadeia de caracteres   | As informações de presença base.                                                                         |
-| atividade           | cadeia de caracteres   | As informações complementares à disponibilidade.                                                          |
+| sessionId          | string   | A ID da sessão de presença do aplicativo.                                                          |
+| availability       | string   | As informações de presença base.                                                                         |
+| atividade           | string   | As informações complementares à disponibilidade.                                                          |
 | expirationDuration | duração | A expiração da sessão de presença do aplicativo. O valor é representado no formato ISO 8601 por durações.</p>Se não for fornecido, será aplicada uma expiração padrão de 5 minutos. |
 
 > [!IMPORTANT]
@@ -122,7 +122,7 @@ Content-Type: application/json
 [!INCLUDE [sample-code](../includes/snippets/java/set-presence-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[Go](#tab/go)
+# <a name="go"></a>[Ir](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/set-presence-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 

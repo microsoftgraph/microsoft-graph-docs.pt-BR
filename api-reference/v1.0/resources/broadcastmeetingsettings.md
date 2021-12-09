@@ -1,41 +1,41 @@
 ---
 title: Tipo de recurso broadcastMeetingSettings
-description: Configurações relacionado a um evento ao vivo
+description: Representa configurações relacionadas a um evento ao vivo Microsoft Teams.
 author: mkhribech
 ms.localizationpriority: medium
 ms.prod: cloud-communications
 doc_type: resourcePageType
-ms.openlocfilehash: 0a78c4665c42bf11c983bbf24aa72a93cdff323a
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 12176ab16bc842dc98a738e6b949ec06b661974d
+ms.sourcegitcommit: f336c5c49fbcebe55312656aa8b50511fd99a657
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59031709"
+ms.lasthandoff: 12/09/2021
+ms.locfileid: "61391001"
 ---
 # <a name="broadcastmeetingsettings-resource-type"></a>Tipo de recurso broadcastMeetingSettings
 
 Namespace: microsoft.graph
 
-Configurações relacionado a um evento ao vivo.
+Representa configurações relacionadas a [um evento ao](/microsoftteams/teams-live-events/what-are-teams-live-events) vivo em Microsoft Teams.
 
 ## <a name="properties"></a>Propriedades
 
 | Propriedade                   | Tipo                                                         | Descrição                                                                                 |
 |----------------------------|--------------------------------------------------------------|---------------------------------------------------------------------------------------------|
-| allowedAudience            | [broadcastMeetingAudience](#broadcastmeetingaudience-values) | Define quem pode participar do evento ao vivo. Os valores possíveis são listados na tabela a seguir.     |
-| isRecordingEnabled         | Booliano                                                      | Indica se a gravação está habilitada para esse evento ao vivo. O valor padrão é `false`.       |
-| isAttendeeReportEnabled    | Booliano                                                      | Indica se o relatório do participante está habilitado para este evento ao vivo. O valor padrão é `false`. |
-| isQuestionAndAnswerEnabled | Boolean                                                      | Indica se O&A está habilitado para este evento ao vivo. O valor padrão é `false`.             |
-| isVideoOnDemandEnabled     | Booliano                                                      | Indica se o vídeo sob demanda está habilitado para esse evento ao vivo. O valor padrão é `false`. |
+| allowedAudience            | [broadcastMeetingAudience](#broadcastmeetingaudience-values) | Define quem pode ingressar no evento Teams ao vivo. Os valores possíveis são listados na tabela a seguir.     |
+| isRecordingEnabled         | Booliano                                                      | Indica se a gravação está habilitada para esse Teams ao vivo. O valor padrão é `false`.       |
+| isAttendeeReportEnabled    | Boolean                                                      | Indica se o relatório do participante está habilitado para este evento Teams ao vivo. O valor padrão é `false`. |
+| isQuestionAndAnswerEnabled | Booliano                                                      | Indica se a Q&A está habilitada para este evento Teams ao vivo. O valor padrão é `false`.             |
+| isVideoOnDemandEnabled     | Boolean                                                      | Indica se o vídeo sob demanda está habilitado para esse evento Teams ao vivo. O valor padrão é `false`. |
 
 ### <a name="broadcastmeetingaudience-values"></a>valores broadcastMeetingAudience
 
 | Valor              | Descrição                                                       |
-|--------------------|-------------------------------------------------------------------|
-| everyone           | O evento ao vivo será aberto a qualquer pessoa. Esse é o valor padrão. |
-| organization       | Todos em sua organização podem participar do evento ao vivo.                     |
-| roleIsAttendee     | Somente as pessoas especificadas podem participar do evento ao vivo.                |
-| unknownFutureValue | Valor de sentinela de enumeração evolvável. Não usar.                 |
+| ------------------ | ----------------------------------------------------------------- |
+| everyone           | Esse Teams ao vivo será aberto a qualquer pessoa. Esse é o valor padrão. |
+| organização       | Todos em sua organização podem participar desse evento Teams ao vivo.                     |
+| roleIsAttendee     | Somente as pessoas especificadas podem participar desse evento Teams ao vivo.                |
+| unknownFutureValue | Valor de sentinela de enumeração evolvável. Não usar.  |
 
 ## <a name="json-representation"></a>Representação JSON
 

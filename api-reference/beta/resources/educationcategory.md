@@ -2,15 +2,15 @@
 title: Tipo de recurso educationCategory
 description: Uma categoria que pode ser aplicada a atribuições.
 author: mmast-msft
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: education
 doc_type: resourcePageType
-ms.openlocfilehash: 18ddcd32a2ab4a8d44505adbc92445a0feeae8b6
-ms.sourcegitcommit: f77c1385306fd40557aceb24fdfe4832cbb60a27
+ms.openlocfilehash: 15c6427062f09493168f0f94cca3060bc3f631de
+ms.sourcegitcommit: f336c5c49fbcebe55312656aa8b50511fd99a657
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/12/2021
-ms.locfileid: "52911316"
+ms.lasthandoff: 12/09/2021
+ms.locfileid: "61390882"
 ---
 # <a name="educationcategory-resource-type"></a>Tipo de recurso educationCategory
 
@@ -28,6 +28,7 @@ Uma categoria que pode ser aplicada a atribuições.
 |[Criar categoria](../api/educationclass-post-category.md) | [educationCategory](educationcategory.md) | Criar uma nova **educationCategory**.|
 |[Obter educationCategory](../api/educationcategory-get.md) | [educationCategory](educationcategory.md) | Obter uma **educationCategory existente**.|
 |[Excluir categoria](../api/educationcategory-delete.md) | Nenhum | Remover uma **educationCategory**.|
+|[Obter delta](../api/educationcategory-delta.md)|[Coleção educationCategory](../resources/educationcategory.md)|Obter uma lista de **objetos educationCategory** que pertencem a essa classe com suporte à consulta delta.|
 
 
 ## <a name="properties"></a>Propriedades

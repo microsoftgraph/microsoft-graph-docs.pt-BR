@@ -4,12 +4,12 @@ description: O Microsoft Graph expõe as permissões granulares que controlam o 
 author: jackson-woods
 ms.localizationpriority: high
 ms.custom: graphiamtop20, scenarios:getting-started
-ms.openlocfilehash: e2dcdaaa608ff0d75845e826424ad0482efafd7f
-ms.sourcegitcommit: e75969aa44a1aab722ac44d09c37508ffbad8738
+ms.openlocfilehash: f4e2929350b00fc2ba7180cd55652a161d6348bc
+ms.sourcegitcommit: f336c5c49fbcebe55312656aa8b50511fd99a657
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/04/2021
-ms.locfileid: "61307605"
+ms.lasthandoff: 12/09/2021
+ms.locfileid: "61390456"
 ---
 # <a name="microsoft-graph-permissions-reference"></a>Referência de permissões do Microsoft Graph
 
@@ -1628,12 +1628,24 @@ Para cenários mais complexos que envolvem várias permissões, confira [Cenári
 |:-----------------------------|:-----------------------------------------|:-----------------|:-----------------|
 | _Presence.Read_ | Ler as informações de presença do usuário | Permite que o aplicativo leia as informações de presença em nome do usuário conectado. As informações de presença incluem atividade, disponibilidade, nota de status, calendário de mensagens de ausência temporária, fuso horário e local. | Não |
 | _Presence.Read.All_ |   Ler as informações de presença de todos os usuários em sua organização | Permite que o aplicativo leia as informações de presença de todos os usuário do diretório em nome do usuário conectado. As informações de presença incluem atividade, disponibilidade, nota de status, calendário de mensagens de ausência temporária, fuso horário e local. | Não |
+| _Presence.ReadWrite_ | Leia e escreva as informações de presença de um usuário | Permite que o aplicativo leia as informações de presença e grave a atividade e a disponibilidade em nome do usuário conectado. As informações de presença incluem atividade, disponibilidade, nota de status, calendário de mensagens de ausência temporária, fuso horário e local. | Sim |
+
+#### <a name="application-permissions"></a>Permissões de aplicativos
+|   Permissão    |  Exibir Cadeia de Caracteres   |  Descrição | Consentimento Obrigatório do Administrador |
+|:-----------------------------|:-----------------------------------------|:-----------------|:-----------------|
+| _Presence.ReadWrite.All_ | Ler e escrever informações de presença para todos os usuários | Permite que o aplicativo leia todas as informações de presença e grave a atividade e a disponibilidade de todos os usuários no diretório sem um usuário conectado. As informações de presença incluem atividade, disponibilidade, nota de status, calendário de mensagens de ausência temporária, fuso horário e local. | Sim |
 
 ### <a name="example-usage"></a>Exemplo de uso
 
 * _Presence.Read_: se você estiver conectado, recupere a sua própria informação de presença (`GET /me/presence`)
 * _Presence.Read.All_: Recupere as informações de presença de outro usuário (`GET /users/{id}/presence`)
 * _Presence.Read.All_: Recupere as informações de presença de vários usuários (`POST /communications/getPresencesByUserId`)
+* _Presence.ReadWrite_:
+  * Se você estiver conectado, defina o estado da sua sessão de presença (`POST /me/presence/setPresence`)
+  * Se você estiver conectado, defina sua própria presença preferencial (`POST /me/presence/setUserPreferredPresence`)
+* _Presence.ReadWrite.All_:
+  * Definir o estado da sessão de presença de um usuário como um aplicativo (`POST /users/{id}/presence/setPresence`)
+  * Definir a presença preferencial de um usuário como um aplicativo (`POST /users/{id}/presence/setUserPreferredPresence`)
 
 ---
 
