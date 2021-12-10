@@ -4,12 +4,12 @@ description: A consulta delta permite que aplicativos localizem entidades recém
 author: davidmu1
 ms.localizationpriority: high
 ms.custom: graphiamtop20
-ms.openlocfilehash: 8f0ba6ba59f1a9c538f8a467c35ca9bfcd4baeee
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 9aead9c7a41acd7fc7f68bdd7575e8f9a318aeaa
+ms.sourcegitcommit: f336c5c49fbcebe55312656aa8b50511fd99a657
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59142380"
+ms.lasthandoff: 12/09/2021
+ms.locfileid: "61390938"
 ---
 # <a name="use-delta-query-to-track-changes-in-microsoft-graph-data"></a>Usar a consulta delta para controlar alterações nos dados do Microsoft Graph
 
@@ -63,9 +63,9 @@ Observe o suporte geral limitado dos seguintes parâmetros de consulta opcionais
 
     O número de objetos em cada página pode variar dependendo do tipo de recurso e do tipo de alterações feitas no recurso.
 
-Para obter o recurso[mensagem](/graph/api/resources/message?view=graph-rest-1.0), consulte os detalhes do [suporte aos parâmetros de consulta em uma consulta delta](delta-query-messages.md#use-query-parameters-in-a-delta-query-for-messages).
+Para obter o recurso[mensagem](/graph/api/resources/message), consulte os detalhes do [suporte aos parâmetros de consulta em uma consulta delta](delta-query-messages.md#use-query-parameters-in-a-delta-query-for-messages).
 
-Para os recursos de [usuário](/graph/api/resources/user?view=graph-rest-1.0) e [grupo](/graph/api/resources/group?view=graph-rest-1.0), há restrições no uso de alguns parâmetros de consulta:
+Para os recursos de [usuário](/graph/api/resources/user) e [grupo](/graph/api/resources/group), há restrições no uso de alguns parâmetros de consulta:
 
 - Não há suporte para `$expand`.
 - Não há suporte para `$top`.
@@ -111,29 +111,31 @@ A consulta delta é compatível atualmente com os seguintes recursos. Observe qu
 | :------------------------------------------------------------- | :----------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | Aplicativos                                                   | Função [delta](/graph/api/application-delta) do recurso [aplicativo](/graph/api/resources/application)                                               |
 | Unidades administrativas (visualização)                                 | Função [delta](/graph/api/administrativeunit-delta) (visualização) do recurso [administrativeUnit](/graph/api/resources/administrativeunit)                |
+| Categorias de atribuição                                          | função [delta](/graph/api/educationcategory-delta) do recurso [educationCategory](/graph/api/resources/educationcategory)                                    |
 | Mensagens de chat em um canal.                                     | Função [delta](/graph/api/chatmessage-delta) (visualização) do [chatMessage](/graph/api/resources/chatmessage)                                              |
 | Objetos de diretório                                              | Função [delta](/graph/api/directoryobject-delta) (visualização) do recurso [directoryObjects](/graph/api/resources/directoryobject)                         |
-| Funções de diretório                                                | Função [delta](/graph/api/directoryrole-delta?view=graph-rest-1.0) do recurso [directoryRole](/graph/api/resources/directoryrole?view=graph-rest-1.0) |
-| Itens de unidade\*                                                  | Função [delta](/graph/api/driveitem-delta?view=graph-rest-1.0) do recurso [driveItem](/graph/api/resources/driveitem?view=graph-rest-1.0)             |
-| Salas de Aula da Educação                                              | Função [delta](/graph/api/educationclass-delta) do recurso [educationClass](/graph/api/resources/educationclass)                                      |
-| Usuários da Educação                                                | Função [delta](/graph/api/educationuser-delta) do recurso [educationUser](/graph/api/resources/educationuser)                                         |
+| Funções de diretório                                                | Função [delta](/graph/api/directoryrole-delta) do recurso [directoryRole](/graph/api/resources/directoryrole) |
+| Itens de unidade\*                                                  | Função [delta](/graph/api/driveitem-delta) do recurso [driveItem](/graph/api/resources/driveitem)             |
+| Atribuições de educação                                          | função [delta](/graph/api/educationassignment-delta) do recurso [educationAssignment](/graph/api/resources/educationassignment)                                    |
+| Ccasses Educacionais                                              | Função [delta](/graph/api/educationclass-delta) do recurso [educationClass](/graph/api/resources/educationclass)                                      |
+| Usuários da educação                                                | Função [delta](/graph/api/educationuser-delta) do recurso [educationUser](/graph/api/resources/educationuser)                                         |
 | Escolas da Educação                                              | Função [delta](/graph/api/educationschool-delta) do recurso [educationSchool](/graph/api/resources/educationschool)                                   |
-| Eventos em um modo de exibição de calendário (intervalo de datas) do calendário principal | função [delta](/graph/api/event-delta?view=graph-rest-1.0) do recurso [evento](/graph/api/resources/event?view=graph-rest-1.0)                         |
-| Grupos                                                         | Função [delta](/graph/api/group-delta?view=graph-rest-1.0) do recurso [group](/graph/api/resources/group?view=graph-rest-1.0)                         |
-| Pastas de email                                                   | função [delta](/graph/api/mailfolder-delta?view=graph-rest-1.0) do recurso [mailFolder](/graph/api/resources/mailfolder?view=graph-rest-1.0)           |
-| Mensagens de uma pasta                                           | função [delta](/graph/api/message-delta?view=graph-rest-1.0) do recurso [mensagem](/graph/api/resources/message?view=graph-rest-1.0)                    |
-| Contatos organizacionais                                        | função [delta](/graph/api/orgcontact-delta?view=graph-rest-1.0) do recurso [orgContact](/graph/api/resources/orgcontact?view=graph-rest-1.0)          |
+| Eventos em um modo de exibição de calendário (intervalo de datas) do calendário principal | função [delta](/graph/api/event-delta) do recurso [evento](/graph/api/resources/event)                         |
+| Grupos                                                         | Função [delta](/graph/api/group-delta) do recurso [group](/graph/api/resources/group)                         |
+| Pastas de email                                                   | função [delta](/graph/api/mailfolder-delta) do recurso [mailFolder](/graph/api/resources/mailfolder)           |
+| Mensagens de uma pasta                                           | função [delta](/graph/api/message-delta) do recurso [mensagem](/graph/api/resources/message)                    |
+| Contatos organizacionais                                        | função [delta](/graph/api/orgcontact-delta) do recurso [orgContact](/graph/api/resources/orgcontact)          |
 | OAuth2PermissionGrants                                         | Função [delta](/graph/api/oauth2permissiongrant-delta) do recurso [oauth2permissiongrant](/graph/api/resources/oauth2permissiongrant)                  |
-| Pastas de contatos pessoais                                       | função [delta](/graph/api/contactfolder-delta?view=graph-rest-1.0) do recurso [contactFolder](/graph/api/resources/contactfolder?view=graph-rest-1.0) |
-| Contatos pessoais em uma pasta                                  | Função [delta](/graph/api/contact-delta?view=graph-rest-1.0) do recurso [contato](/graph/api/resources/contact?view=graph-rest-1.0)                   |
+| Pastas de contatos pessoais                                       | função [delta](/graph/api/contactfolder-delta) do recurso [contactFolder](/graph/api/resources/contactfolder) |
+| Contatos pessoais em uma pasta                                  | Função [delta](/graph/api/contact-delta) do recurso [contato](/graph/api/resources/contact)                   |
 | Itens do Planner\*\* (pré-visualização)                                    | Função [delta](/graph/api/planneruser-list-delta) (visualização) de todos os segmentos do recurso [plannerUser](/graph/api/resources/planneruser)                 |
 | Entidades de serviço                                             | Função [delta](/graph/api/serviceprincipal-delta) do recurso [servicePrincipal](/graph/api/resources/serviceprincipal)                                |
 | Tarefas em uma lista de tarefas                                           | Função [delta](/graph/api/todotask-delta) do recurso [todoTask](/graph/api/resources/todotask)                                                        |
 | Listas de tarefas                                                     | Função [delta](/graph/api/todotasklist-delta) do recurso [todoTaskList](/graph/api/resources/todotasklist)                                            |
-| Usuários                                                          | função [delta](/graph/api/user-delta?view=graph-rest-1.0) do recurso [usuário](/graph/api/resources/user?view=graph-rest-1.0)                            |
+| Usuários                                                          | função [delta](/graph/api/user-delta) do recurso [usuário](/graph/api/resources/user)                            |
 
 
-> \* O padrão de uso dos recursos do OneDrive é semelhante a outros recursos compatíveis com algumas diferenças secundárias de sintaxe. A consulta delta para unidades será atualizada no futuro para serem consistentes com outros tipos de recursos. Confira mais detalhes sobre a sintaxe atual em [Controlar alterações para uma unidade](/graph/api/driveitem-delta?view=graph-rest-1.0).
+> \* O padrão de uso dos recursos do OneDrive é semelhante a outros recursos compatíveis com algumas diferenças secundárias de sintaxe. A consulta delta para unidades será atualizada no futuro para serem consistentes com outros tipos de recursos. Confira mais detalhes sobre a sintaxe atual em [Controlar alterações para uma unidade](/graph/api/driveitem-delta).
 
 > \*\* O padrão de uso dos recursos do Planner é semelhante a outros recursos compatíveis, mas com algumas diferenças.  Para saber mais, consulte [Controlar alterações para o Planner](/graph/api/planneruser-list-delta).
 

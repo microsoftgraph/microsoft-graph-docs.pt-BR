@@ -4,12 +4,12 @@ description: O Microsoft Graph usa um mecanismo de webhook para fornecer notific
 author: Jumaodhiss
 ms.prod: non-product-specific
 ms.localizationpriority: high
-ms.openlocfilehash: 4086189e31dcbe64f9d12aca1204320a3aff4428
-ms.sourcegitcommit: 84d9a50dfa9526a207696c69d92381c8763d986a
+ms.openlocfilehash: 3a8d812aa344ae2a6fe43129c41f6786fad58ad8
+ms.sourcegitcommit: f336c5c49fbcebe55312656aa8b50511fd99a657
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/28/2021
-ms.locfileid: "59979233"
+ms.lasthandoff: 12/09/2021
+ms.locfileid: "61390966"
 ---
 # <a name="set-up-change-notifications-that-include-resource-data"></a>Configurar notificações de alteração que incluam dados de recurso
 
@@ -32,7 +32,7 @@ Geralmente, esse tipo de notificação de alteração inclui os seguintes dados 
 
 ## <a name="supported-resources"></a>Recursos com suporte
 
-Atualmente, o Microsoft Teams [chatMessage](/graph/api/resources/chatmessage) assim como os recursos de [presença](/graph/api/resources/presence) (visualização) do Microsoft Teams oferecem suporte a notificações de alterações que incluem dados de recursos. Especificamente, você pode configurar uma assinatura que se aplique a uma das seguintes opções:
+Atualmente, o [chatMessage](/graph/api/resources/chatmessage) do Microsoft Teams, bem como os recursos de [presença](/graph/api/resources/presence) do Microsoft Teams, oferecem suporte a notificações de alteração que incluem dados de recursos. Especificamente, você pode configurar uma assinatura que se aplique a uma das seguintes opções:
 
 - Mensagens novas ou alteradas em um canal específico do Teams: `/teams/{id}/channels/{id}/messages`
 - Mensagens novas ou alteradas em todos os canais do Teams em toda a organização (locatário): `/teams/getAllMessages`
@@ -40,7 +40,7 @@ Atualmente, o Microsoft Teams [chatMessage](/graph/api/resources/chatmessage) as
 - Mensagens novas ou alteradas em todos os bate-papos em toda a organização (locatário): `/chats/getAllMessages`
 - Atualização das informações de presença do usuário: `/communications/presences/{id}`
 
-Os recursos **chatMessage** e **presence** (visualização) suportam, incluindo todas as propriedades de uma instância modificada em uma notificação de alteração. Eles não suportam o retorno de apenas propriedades seletivas da instância. 
+Os recursos **chatMessage** e **presence** suportam, incluindo todas as propriedades de uma instância modificada em uma notificação de alteração. Eles não suportam o retorno de apenas propriedades seletivas da instância. 
 
 Este artigo mostra um exemplo de assinatura para alterar as notificações de mensagens em um canal do Teams, com cada notificação de alteração incluindo todos os dados do recurso da instância **chatMessage** alterada. Para obter mais detalhes sobre assinaturas baseadas em **chatMessage**, confira [Obter notificações de alteração para mensagens de chat e canal](teams-changenotifications-chatmessage.md).
 
@@ -385,7 +385,7 @@ Para decriptar os dados de recursos, o seu aplicativo deve executar as etapas in
 
 1. Use a propriedade **encryptionCertificateId** para identificar o certificado a ser usado.
 
-2. Inicialize um componente criptográfico da RSA (como o .NET [RSACryptoServiceProvider](/dotnet/api/system.security.cryptography.rsacryptoserviceprovider.decrypt?view=netframework-4.8)) com a chave privada.
+2. Inicialize um componente criptográfico da RSA (como o .NET [RSACryptoServiceProvider](/dotnet/api/system.security.cryptography.rsacryptoserviceprovider.decrypt?view=netframework-4.8&preserve-view=true)) com a chave privada.
 
 3. Decripte a chave simétrica entregue na propriedade **dataKey** de cada item na notificação de alteração.
 
@@ -395,7 +395,7 @@ Para decriptar os dados de recursos, o seu aplicativo deve executar as etapas in
   
     Compare-o com o valor em **dataSignature**. Se eles não corresponderem, considere que a carga foi adulterada e não a descriptografe.
 
-5. Use a chave simétrica com a criptografia AES (como o .NET [AesCryptoServiceProvider](/dotnet/api/system.security.cryptography.aescryptoserviceprovider?view=netframework-4.8)) para descriptografar o conteúdo em **dados**.
+5. Use a chave simétrica com a criptografia AES (como o .NET [AesCryptoServiceProvider](/dotnet/api/system.security.cryptography.aescryptoserviceprovider?view=netframework-4.8&preserve-view=true)) para descriptografar o conteúdo em **dados**.
 
     - Use os seguintes parâmetros de descriptografia para o algoritmo AES:
 
