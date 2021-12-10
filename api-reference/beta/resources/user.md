@@ -5,12 +5,12 @@ author: jpettere
 ms.localizationpriority: high
 ms.prod: users
 doc_type: resourcePageType
-ms.openlocfilehash: bfeb44e19d355b945b14dd83cb6ac5126ffcbe34
-ms.sourcegitcommit: f65eee432cc903324b5f9b31710fdc6100590f36
+ms.openlocfilehash: 2711368b46874616c8996cfb0a9125e0dc28d347
+ms.sourcegitcommit: 65f4e128f96783c18d607a6dcffbc914291285d4
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/07/2021
-ms.locfileid: "61321901"
+ms.lasthandoff: 12/08/2021
+ms.locfileid: "61345930"
 ---
 # <a name="user-resource-type"></a>Tipo de recurso de usuário
 
@@ -175,7 +175,7 @@ Esse recurso permite:
 | birthday | DateTimeOffset | O aniversário do usuário. O tipo de carimbo de data/hora representa informações de data e hora usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite UTC em 1º de janeiro de 2014 é `2014-01-01T00:00:00Z` <br><br>Retornado apenas em `$select`. |
 | businessPhones | Coleção de cadeias de caracteres | Números de telefone para o usuário. Somente um número pode ser definido para essa propriedade.<br><br>Somente leitura para usuários sincronizados do diretório local. Suporta `$filter` (`eq`, `not`, `ge`, `le`, `startsWith`).|
 | city | Cadeia de caracteres | A cidade em que o usuário está localizado. O comprimento máximo é de 128 caracteres. <br><br>Suporte `$filter` (`eq`, `ne`, `not`, `ge`, `le`, `in`, `startsWith`, e `eq` no `null` valores). |
-| companyName | String | O nome da empresa em que o usuário está associado. Essa propriedade pode ser útil para descrever a empresa de onde procede um usuário externo. O comprimento máximo do nome da empresa é 64 caracteres.<br><br>Suporte `$filter` (`eq`, `ne`, `not`, `ge`, `le`, `in`, `startsWith`, e `eq` no `null` valores).|
+| CompanyName | String | O nome da empresa em que o usuário está associado. Essa propriedade pode ser útil para descrever a empresa de onde procede um usuário externo. O comprimento máximo do nome da empresa é 64 caracteres.<br><br>Suporte `$filter` (`eq`, `ne`, `not`, `ge`, `le`, `in`, `startsWith`, e `eq` no `null` valores).|
 | consentProvidedForMinor | [consentProvidedForMinor](#consentprovidedforminor-values) | Define se o consentimento foi obtido para menores. Valores permitidos: `null`, `granted`, `denied` e `notRequired`. Confira as [definições de propriedades da faixa etária legal](#legal-age-group-property-definitions) para obter mais informações. <br><br>Suporte `$filter` (`eq`, `ne`, `not` e `in`).|
 | country | Cadeia de caracteres | O país/região em que o usuário está localizado; por exemplo, `US` ou `UK`. O comprimento máximo é de 128 caracteres. <br><br>Suporte `$filter` (`eq`, `ne`, `not`, `ge`, `le`, `in`, `startsWith`, e `eq` no `null` valores). |
 | createdDateTime | DateTimeOffset | A data e hora que o usuário foi criado. Não é possível modificar o valor e ele é preenchido automaticamente quando a entidade é criada. O tipo DateTimeOffset representa informações de data e hora usando o formato ISO 8601 e está sempre no horário UTC. A propriedade é anulável. Um valor nulo indica que uma hora de criação exata não pode ser determinada pelo usuário. Somente leitura. <br><br>Suporta `$filter` (`eq`, `ne`, `not` , `ge`, `le`, `in`). |
@@ -211,7 +211,7 @@ Esse recurso permite:
 | officeLocation | String | A localização do escritório no local de trabalho do usuário. O comprimento máximo é de 128 caracteres. <br><br>Suporte `$filter` (`eq`, `ne`, `not`, `ge`, `le`, `in`, `startsWith`, e `eq` no `null` valores). |
 | onPremisesDistinguishedName | String | Contém `distinguished name` ou `DN` do Active Directory local. A propriedade somente é preenchida para os clientes que estejam sincronizando o seu diretório local com o Azure Active Directory pelo Azure AD Connect. Somente leitura.  |
 | onPremisesDomainName | String | Contém o `domainFQDN` local, também chamado dnsDomainName sincronizado do diretório local. A propriedade só é populada para clientes que estão sincronizando seu diretório local para Azure Active Directory via Azure AD Connect. Somente leitura. |
-| onPremisesExtensionAttributes | [onPremisesExtensionAttributes](onpremisesextensionattributes.md) | Contém extensionAttributes 1-15 para o usuário. Observe que os atributos de extensão individuais não são selecionáveis nem filtráveis. Para um usuário do `onPremisesSyncEnabled`, a fonte de autoridade desse conjunto de propriedades é o local e é somente leitura. Para um usuário somente na nuvem (onde `onPremisesSyncEnabled` é falso), essas propriedades podem ser definidas durante a criação ou atualização. Esses atributos de extensão também são conhecidos como atributos personalizados do Exchange 1-15. <br><br>Suporte `$filter` (`eq`, `not`, `ge`, `le`, `in`, e `eq` no `null` valores).  |
+| onPremisesExtensionAttributes | [onPremisesExtensionAttributes](onpremisesextensionattributes.md) | Contém extensionAttributes1-15 para o usuário. Os atributos de extensão individuais não são selecionáveis nem filtráveis. <br><li>Para um usuário **onPremisesSyncEnabled**, a fonte de autoridade para este conjunto de propriedades é o local e é somente leitura. </li><li>Para um usuário apenas na nuvem (onde **onPremisesSyncEnabled** é `false`), essas propriedades podem ser definidas durante a criação ou atualização de um objeto de usuário.  </li><li>Para um usuário somente na nuvem previamente sincronizado a partir do Active Directory local, essas propriedades são somente leitura no Microsoft Graph, mas podem ser totalmente gerenciadas através do Centro de Administração do Exchange ou do módulo Exchange Online V2 no PowerShell.</li><br> Esses atributos de extensão também são conhecidos como atributos personalizados do Exchange 1-15. <br>Retornado apenas em `$select`. |
 | onPremisesImmutableId | String | Essa propriedade é usada para associar uma conta de usuário do Active Directory local com seu objeto de usuário do Azure AD. Essa propriedade deverá ser especificada ao criar uma nova conta de usuário no Graph se você estiver usando um domínio federado para a propriedade `userPrincipalName` (UPN) do usuário. **OBSERVAÇÃO:** Os caracteres **$** e **\_** não podem ser usados ao especificar essa propriedade. <br><br>Suporta `$filter` (`eq`, `ne`, `not`, `ge`, `le`, `in`). |
 | onPremisesLastSyncDateTime | DateTimeOffset | Indica a última vez em que o objeto foi sincronizado com o diretório local. Por exemplo: "2013-02-16T03:04:54Z". O tipo de carimbo de data/hora representa informações de data e hora usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite em UTC no dia 1º de janeiro de 2014 é `2014-01-01T00:00:00Z`. Somente leitura. <br><br>Suporta `$filter` (`eq`, `ne`, `not`, `ge`, `le`, `in`). |
 | onPremisesProvisioningErrors | coleção [OnPremisesProvisioningError](onpremisesprovisioningerror.md) | Erros ao usar o produto de sincronização da Microsoft durante a configuração. <br> Suporta `$filter` (`eq`, `not`, `ge`, `le`).|
