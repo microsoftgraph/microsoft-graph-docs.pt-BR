@@ -5,12 +5,12 @@ author: skadam-msft
 ms.localizationpriority: medium
 ms.prod: compliance
 doc_type: apiPageType
-ms.openlocfilehash: c378dbd399a3ee972181298dd1d1ed27b2f82015
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: a53dd43d676a441bd942ed9580a2471366b31037
+ms.sourcegitcommit: 33e0bbada1b47310a18d8f794914b1319d88e6f4
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "61024075"
+ms.lasthandoff: 12/10/2021
+ms.locfileid: "61403174"
 ---
 # <a name="list-subjectrightsrequests"></a>Listar subjectRightsRequests
 Namespace: microsoft.graph
@@ -22,12 +22,9 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 |Tipo de permissão|Permissões (da com menos para a com mais privilégios)|
 |:---|:---|
-|Delegado (conta corporativa ou de estudante)|SubjectRightsRequest.Read.All *, SubjectRightsRequest.ReadWrite.All*|
+|Delegado (conta corporativa ou de estudante)|SubjectRightsRequest.Read.All, SubjectRightsRequest.ReadWrite.All|
 |Delegado (conta pessoal da Microsoft)|Sem suporte.|
 |Aplicativo|Sem suporte.|
-
->[!IMPORTANT]
->No momento, as permissões marcadas com um asterisco (*) não estão disponíveis. Para mais detalhes, confira [Problemas conhecidos](/graph/known-issues#compliance).
 
 ## <a name="http-request"></a>Solicitação HTTP
 
@@ -41,7 +38,7 @@ GET /privacy/subjectRightsRequests
 
 ## <a name="optional-query-parameters"></a>Parâmetros de consulta opcionais
 
-Esse método não dá suporte aos [parâmetros de consulta OData](/graph/query-parameters) para ajudar a personalizar a resposta.
+Esse método não dá suporte aos [parâmetros de consulta OData](/graph/query-parameters) ajudar a personalizar a resposta.
 
 
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
@@ -85,7 +82,7 @@ GET https://graph.microsoft.com/v1.0/privacy/subjectRightsRequests
 [!INCLUDE [sample-code](../includes/snippets/java/list-subjectrightsrequest-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[Go](#tab/go)
+# <a name="go"></a>[Ir](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/list-subjectrightsrequest-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 

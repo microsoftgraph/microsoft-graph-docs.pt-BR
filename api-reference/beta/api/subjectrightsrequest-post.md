@@ -5,12 +5,12 @@ author: skadam-msft
 ms.localizationpriority: medium
 ms.prod: compliance
 doc_type: apiPageType
-ms.openlocfilehash: b5985abc610c3fe80dc4c7fcd645569826802b12
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: 5873e828c13c975d1064d7504e2af67604536a1a
+ms.sourcegitcommit: 33e0bbada1b47310a18d8f794914b1319d88e6f4
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "61010705"
+ms.lasthandoff: 12/10/2021
+ms.locfileid: "61402892"
 ---
 # <a name="create-subjectrightsrequest"></a>Criar subjectRightsRequest
 Namespace: microsoft.graph
@@ -24,12 +24,9 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 |Tipo de permissão|Permissões (da com menos para a com mais privilégios)|
 |:---|:---|
-|Delegado (conta corporativa ou de estudante)|SubjectRightsRequest.ReadWrite.All*|
+|Delegado (conta corporativa ou de estudante)|SubjectRightsRequest.ReadWrite.All|
 |Delegado (conta pessoal da Microsoft)|Sem suporte.|
 |Aplicativo|Sem suporte|
-
->[!IMPORTANT]
->No momento, as permissões marcadas com um asterisco (*) não estão disponíveis. Para mais detalhes, confira [Problemas conhecidos](/graph/known-issues#compliance).
 
 ## <a name="http-request"></a>Solicitação HTTP
 
@@ -57,7 +54,7 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar [subject
 |dataSubject|[microsoft.graph.dataSubject](../resources/datasubject.md)|Contém as propriedades do assunto de dados para a solicitação.|
 |dataSubjectType|dataSubjectType|Tipo de assunto de dados. Os valores possíveis são: `customer`, `currentEmployee`, `formerEmployee`, `prospectiveEmployee`, `student`, `teacher`, `faculty`, `other`, `unknownFutureValue`.|
 |description|String|Descrição da solicitação.|
-|displayName|Cadeia de caracteres|Nome da solicitação.|
+|displayName|String|Nome da solicitação.|
 |internalDueDateTime|DateTimeOffset|Data de conclusão interna usada para acompanhar a conclusão da solicitação.|
 |regulations|Coleção de cadeias de caracteres|Um ou mais regulamentos para a solicitação.|
 |type|subjectRightsRequestType|Tipo da solicitação. Os valores possíveis são: `export`, `delete`, `access`, `tagForAction`, `unknownFutureValue`.|
@@ -110,7 +107,7 @@ Content-Type: application/json
 [!INCLUDE [sample-code](../includes/snippets/objc/create-subjectrightsrequest-from--objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[Go](#tab/go)
+# <a name="go"></a>[Ir](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/create-subjectrightsrequest-from--go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 

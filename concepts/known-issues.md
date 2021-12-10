@@ -3,12 +3,12 @@ title: Problemas conhecidos com o Microsoft Graph
 description: Este artigo descreve os problemas conhecidos com o Microsoft Graph.
 author: MSGraphDocsVTeam
 ms.localizationpriority: high
-ms.openlocfilehash: 57419763ca3a35d41ecd871c83cc396f81936671
-ms.sourcegitcommit: 65f4e128f96783c18d607a6dcffbc914291285d4
+ms.openlocfilehash: 148a9d6d54ead703f32e4a3f27810fec11ebb711
+ms.sourcegitcommit: 33e0bbada1b47310a18d8f794914b1319d88e6f4
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/08/2021
-ms.locfileid: "61335793"
+ms.lasthandoff: 12/10/2021
+ms.locfileid: "61403124"
 ---
 # <a name="known-issues-with-microsoft-graph"></a>Problemas conhecidos com o Microsoft Graph
 
@@ -156,12 +156,6 @@ As [assinaturas](/graph/api/resources/subscription) de alterações no **grupo**
 ### <a name="view-meeting-details-menu-is-not-available-on-microsoft-teams-client"></a>O menu "Exibir detalhes da reunião" não está disponível no cliente Microsoft Teams
 
 O cliente do Microsoft Teams não mostra o menu **Exibir detalhes da Reunião** para reuniões de canal criadas por meio da API de comunicações na nuvem.
-
-## <a name="compliance"></a>Conformidade
-
-### <a name="subject-rights-request-api-permissions-are-not-currently-available"></a>As permissões da API de solicitação de direitos do titular dos dados não estão disponíveis no momento
-
-No momento, as entidades da API de solicitação de direitos do titular dos dados na API de privacidade do Microsoft Graph não têm permissões disponíveis. Esse problema pode impedir que os usuários vejam permissões e consentam com o uso da API em seu ambiente. 
 
 ## <a name="contacts"></a>Contatos
 

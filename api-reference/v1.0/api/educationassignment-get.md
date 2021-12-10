@@ -1,16 +1,16 @@
 ---
 title: Obter educationAssignment
 description: Obter as propriedades e as relações de uma atribuição.
-author: sharad-sharma-msft
+author: cristobal-buenrostro
 ms.localizationpriority: medium
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: 18f597eb9d04448a07caf95a94ce131d647193a2
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: 8d1efd497581d8e65c5e8d17cfdbc783cbd49630
+ms.sourcegitcommit: 33e0bbada1b47310a18d8f794914b1319d88e6f4
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "61025741"
+ms.lasthandoff: 12/10/2021
+ms.locfileid: "61403160"
 ---
 # <a name="get-educationassignment"></a>Obter educationAssignment
 
@@ -37,6 +37,8 @@ GET /education/classes/{id}/assignments/{id}
 ```
 ## <a name="optional-query-parameters"></a>Parâmetros de consulta opcionais
 Este método dá suporte a [Parâmetros de consulta OData](/graph/query-parameters) para ajudar a personalizar a resposta.
+
+As opções `$expand` disponíveis para este método são: , , e que inclui todas as opções `categories` `resources` `rubric` `submissions` `*` anteriores.
 
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
 | Cabeçalho       | Valor |
@@ -78,10 +80,6 @@ GET https://graph.microsoft.com/v1.0/education/classes/f4a941ff-9da6-4707-ba5b-0
 [!INCLUDE [sample-code](../includes/snippets/java/get-educationassignment-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[Go](#tab/go)
-[!INCLUDE [sample-code](../includes/snippets/go/get-educationassignment-go-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
 ---
 
 ### <a name="response"></a>Resposta
@@ -97,6 +95,7 @@ Este é um exemplo de resposta.
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
+Content-length: 279
 
 {
     "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#education/classes('f4a941ff-9da6-4707-ba5b-0eae93cad0b4')/assignments/$entity",

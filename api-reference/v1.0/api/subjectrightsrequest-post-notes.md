@@ -5,12 +5,12 @@ author: skadam-msft
 ms.localizationpriority: medium
 ms.prod: compliance
 doc_type: apiPageType
-ms.openlocfilehash: a047e8aff754ab2156a99fe010b662742828e5cc
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: b8b34d6041ca63f696a879ae237b9ffe324fc393
+ms.sourcegitcommit: 33e0bbada1b47310a18d8f794914b1319d88e6f4
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "60973693"
+ms.lasthandoff: 12/10/2021
+ms.locfileid: "61403145"
 ---
 # <a name="create-authorednote"></a>Criar authoredNote
 Namespace: microsoft.graph
@@ -22,12 +22,9 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 |Tipo de permissão|Permissões (da com menos para a com mais privilégios)|
 |:---|:---|
-|Delegado (conta corporativa ou de estudante)|SubjectRightsRequest.ReadWrite.All*|
+|Delegado (conta corporativa ou de estudante)|SubjectRightsRequest.ReadWrite.All|
 |Delegado (conta pessoal da Microsoft)|Sem suporte.|
 |Aplicativo|Sem suporte|
-
->[!IMPORTANT]
->No momento, as permissões marcadas com um asterisco (*) não estão disponíveis. Para mais detalhes, confira [Problemas conhecidos](/graph/known-issues#compliance).
 
 ## <a name="http-request"></a>Solicitação HTTP
 
@@ -97,7 +94,7 @@ Content-Type: application/json
 [!INCLUDE [sample-code](../includes/snippets/java/create-authorednote-from--java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[Go](#tab/go)
+# <a name="go"></a>[Ir](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/create-authorednote-from--go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 

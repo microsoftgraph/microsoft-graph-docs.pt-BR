@@ -1,16 +1,16 @@
 ---
 title: Tipo de recurso educationSubmission
 description: Representa os recursos que um indivíduo (ou grupo) envia para uma atribuição e os resultados (como notas ou comentários) associados ao envio.
-author: dipakboyed
+author: cristobal-buenrostro
 ms.localizationpriority: medium
 ms.prod: education
 doc_type: resourcePageType
-ms.openlocfilehash: 458d30bdf4955e2977903cbaf4ca384b63510bea
-ms.sourcegitcommit: 08e9b0bac39c1b1d2c8a79539d24aaa93364baf2
+ms.openlocfilehash: 5cb697eec89d681d7c24acbffd95740368f18f6d
+ms.sourcegitcommit: 33e0bbada1b47310a18d8f794914b1319d88e6f4
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/24/2021
-ms.locfileid: "59767283"
+ms.lasthandoff: 12/10/2021
+ms.locfileid: "61402967"
 ---
 # <a name="educationsubmission-resource-type"></a>Tipo de recurso educationSubmission
 
@@ -46,8 +46,8 @@ Se [setUpResourcesFolder](../api/educationsubmission-setupResourcesFolder.md) n�
 |destinatário|[educationSubmissionRecipient](educationsubmissionrecipient.md)|Who esse envio é atribuído.|
 |returnedBy|[identitySet](identityset.md)|Usuário que moveu o status desse envio para retornado.|
 |returnedDateTime|DateTimeOffset|Momento no tempo em que o envio foi retornado. O tipo Timestamp representa informações de data e hora usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite UTC em 1 de janeiro de 2014 é `2014-01-01T00:00:00Z`|
-|resourcesFolderUrl|Cadeia de caracteres|Pasta onde todos os recursos de arquivo para esse envio precisam ser armazenados.|
-|status|cadeia de caracteres| Somente leitura. Os valores possíveis são: `working` , , , e `submitted` `released` `returned` `reassigned` . Observe que você deve usar o header de solicitação para obter os seguintes valores nesta `Prefer: include-unknown-enum-members` [enum evolvável](/graph/best-practices-concept#handling-future-members-in-evolvable-enumerations): `reassigned` .|
+|resourcesFolderUrl|String|Pasta onde todos os recursos de arquivo para esse envio precisam ser armazenados.|
+|status|educationSubmissionStatus| Somente leitura. Os valores possíveis são: `working` , , , e `submitted` `released` `returned` `unknownFutureValue` `reassigned` . Observe que você deve usar o header de solicitação para obter os seguintes valores nesta `Prefer: include-unknown-enum-members` [enum evolvável](/graph/best-practices-concept#handling-future-members-in-evolvable-enumerations): `reassigned` .|
 |submittedBy|[identitySet](identityset.md)|Usuário que moveu o recurso para o estado enviado.|
 |submittedDateTime|DateTimeOffset|Momento no tempo em que o envio foi movido para o estado enviado. O tipo Timestamp representa informações de data e hora usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite UTC em 1 de janeiro de 2014 é `2014-01-01T00:00:00Z`|
 |unsubmittedBy|[identitySet](identityset.md)|Usuário que moveu o recurso de enviado para o estado de trabalho.|

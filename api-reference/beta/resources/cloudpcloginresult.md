@@ -1,16 +1,16 @@
 ---
 title: Tipo de recurso cloudPcLoginResult
-description: Representa os detalhes dos resultados do Cloud PC.
+description: Representa os detalhes dos resultados de login do Computador na Nuvem.
 author: RuiHou105
 ms.localizationpriority: medium
 ms.prod: cloud-pc
 doc_type: resourcePageType
-ms.openlocfilehash: b0ab1d22d5eabeaed84e8ee0d15f9527d64387e7
-ms.sourcegitcommit: f336c5c49fbcebe55312656aa8b50511fd99a657
+ms.openlocfilehash: f7b083e679939b5d4d478f09ddba6af76a33ac49
+ms.sourcegitcommit: 33e0bbada1b47310a18d8f794914b1319d88e6f4
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/09/2021
-ms.locfileid: "61391100"
+ms.lasthandoff: 12/10/2021
+ms.locfileid: "61403072"
 ---
 # <a name="cloudpcloginresult-resource-type"></a>Tipo de recurso cloudPcLoginResult
 
@@ -18,13 +18,13 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Representa os detalhes dos resultados do Cloud PC.
+Representa os detalhes dos resultados de login do Computador na Nuvem.
 
 ## <a name="properties"></a>Propriedades
 
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|hora|DateTimeOffSet|O tempo do cloud pc suspira em ação. O timestamp é mostrado no formato ISO 8601 e tempo universal coordenado (UTC). Por exemplo, meia-noite UTC em 1º de janeiro de 2014 aparece como '2014-01-01T00:00:00Z'. Somente leitura.|
+|hora|DateTimeOffSet|A hora da ação de login do Computador na Nuvem. O timestamp é mostrado no formato ISO 8601 e tempo universal coordenado (UTC). Por exemplo, meia-noite UTC em 1º de janeiro de 2014 aparece como '2014-01-01T00:00:00Z'. Somente leitura.|
 
 ## <a name="relationships"></a>Relações
 

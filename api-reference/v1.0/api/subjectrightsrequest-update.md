@@ -5,12 +5,12 @@ author: skadam-msft
 ms.localizationpriority: medium
 ms.prod: compliance
 doc_type: apiPageType
-ms.openlocfilehash: d3aba472f25c2a91d20e9ba42b40646a7c53b43b
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: 8f98d21c2ac68199478bab1167de6de6e408570a
+ms.sourcegitcommit: 33e0bbada1b47310a18d8f794914b1319d88e6f4
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "61016053"
+ms.lasthandoff: 12/10/2021
+ms.locfileid: "61403181"
 ---
 # <a name="update-subjectrightsrequest"></a>Atualizar subjectRightsRequest
 Namespace: microsoft.graph
@@ -22,12 +22,9 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 |Tipo de permissão|Permissões (da com menos para a com mais privilégios)|
 |:---|:---|
-|Delegado (conta corporativa ou de estudante)|SubjectRightsRequest.ReadWrite.All*|
+|Delegado (conta corporativa ou de estudante)|SubjectRightsRequest.ReadWrite.All|
 |Delegado (conta pessoal da Microsoft)|Sem suporte.|
 |Aplicativo|Sem suporte|
-
->[!IMPORTANT]
->No momento, as permissões marcadas com um asterisco (*) não estão disponíveis. Para mais detalhes, confira [Problemas conhecidos](/graph/known-issues#compliance).
 
 ## <a name="http-request"></a>Solicitação HTTP
 
@@ -53,7 +50,7 @@ A tabela a seguir mostra as propriedades que são necessárias ao atualizar [sub
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
 |assignedTo|[microsoft.graph.identity](../resources/identity.md)|As informações de identidade para o usuário ao que a solicitação é atribuída.|
-|description|Cadeia de caracteres|Descrição atualizada para a solicitação.|
+|description|String|Descrição atualizada para a solicitação.|
 |displayName|String|Nome atualizado da solicitação.|
 |internalDueDateTime|DateTimeOffset|Data de vencimento interna atualizada para a solicitação.|
 
@@ -96,7 +93,7 @@ Content-Type: application/json
 [!INCLUDE [sample-code](../includes/snippets/java/update-subjectrightsrequest-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[Go](#tab/go)
+# <a name="go"></a>[Ir](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/update-subjectrightsrequest-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 

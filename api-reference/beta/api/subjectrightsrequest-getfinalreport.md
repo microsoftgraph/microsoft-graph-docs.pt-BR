@@ -5,12 +5,12 @@ author: skadam-msft
 ms.localizationpriority: medium
 ms.prod: compliance
 doc_type: apiPageType
-ms.openlocfilehash: 51627aa19d266992e33bc5062c1adf3f4197eb2f
-ms.sourcegitcommit: 0eb843a6f61f384bc28c0cce1ccb74f64bdb1fa6
+ms.openlocfilehash: f6c4d3c1b6d34f8b785844b89a8026c1bbcb9dc4
+ms.sourcegitcommit: 33e0bbada1b47310a18d8f794914b1319d88e6f4
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/23/2021
-ms.locfileid: "60558963"
+ms.lasthandoff: 12/10/2021
+ms.locfileid: "61403021"
 ---
 # <a name="subjectrightsrequest-getfinalreport"></a>subjectRightsRequest: getFinalReport
 Namespace: microsoft.graph
@@ -24,12 +24,9 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 |Tipo de permissão|Permissões (da com menos para a com mais privilégios)|
 |:---|:---|
-|Delegado (conta corporativa ou de estudante)|SubjectRightsRequest.Read.All *, SubjectRightsRequest.ReadWrite.All*|
+|Delegado (conta corporativa ou de estudante)|SubjectRightsRequest.Read.All, SubjectRightsRequest.ReadWrite.All|
 |Delegado (conta pessoal da Microsoft)|Sem suporte.|
-|Application|Sem suporte|
-
->[!IMPORTANT]
->No momento, as permissões marcadas com um asterisco (*) não estão disponíveis.  Para mais detalhes, confira [Problemas conhecidos](/graph/known-issues#compliance).
+|Aplicativo|Sem suporte|
 
 ## <a name="http-request"></a>Solicitação HTTP
 
