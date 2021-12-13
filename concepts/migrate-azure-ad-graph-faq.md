@@ -4,12 +4,12 @@ description: Fornece respostas para perguntas frequentes sobre como migrar do Az
 author: FaithOmbongi
 ms.localizationpriority: medium
 ms.prod: applications
-ms.openlocfilehash: 34bbf90b42d1b85acc5f768599c4b50a88b859b1
-ms.sourcegitcommit: e1dd9860906e0b415fd376d70df1f928d1f3d29e
+ms.openlocfilehash: 19f1691126317861d84e89fab44f9cdbaaaa7ea2
+ms.sourcegitcommit: c900d22144429ac7aecae3355a4cdc1987cc4234
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/01/2021
-ms.locfileid: "61241300"
+ms.lasthandoff: 12/13/2021
+ms.locfileid: "61424326"
 ---
 # <a name="azure-ad-graph-to-microsoft-graph-migration-faq"></a>Perguntas frequentes sobre migração do Azure AD Graph Microsoft Graph migração
 
@@ -138,6 +138,8 @@ Se você identificou uma lacuna em que o Microsoft Graph não dá suporte a um r
 
 Se você ainda precisar configurar as permissões do Azure AD Graph seus aplicativos, use uma das seguintes soluções alternativas.
 
++ Usar o portal do Azure para encontrar as APIs que sua organização usa
++ Atualizar o manifesto do aplicativo no portal do Azure
 + Use a API [de](/graph/api/resources/application) aplicativo no Microsoft Graph atualizar [o objeto requiredResourceAccess](/graph/api/resources/requiredresourceaccess)
 + Use o cmdlet [Update-MgApplication](/powershell/module/microsoft.graph.applications/update-mgapplication?view=graph-powershell-1.0&preserve-view=true)   no Microsoft Graph PowerShell
 

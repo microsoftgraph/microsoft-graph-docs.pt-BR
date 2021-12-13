@@ -1,16 +1,16 @@
 ---
 title: Tipo de recurso openTypeExtension (extensões abertas)
 description: As extensões abertas (anteriormente conhecidas como extensões de dados do Office 365) oferecem uma maneira fácil de adicionar diretamente propriedades não tipadas a um recurso do Microsoft Graph.
-localization_priority: Normal
+ms.localizationpriority: medium
 author: dkershaw10
 doc_type: resourcePageType
 ms.prod: extensions
-ms.openlocfilehash: 08d33297d77354090ab62f4816a43388c32972e2
-ms.sourcegitcommit: d700b7e3b411e3226b5adf1f213539f05fe802e8
+ms.openlocfilehash: d0f2e474488cc0c264483f69b11e3cc95ed4f767
+ms.sourcegitcommit: c900d22144429ac7aecae3355a4cdc1987cc4234
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52547243"
+ms.lasthandoff: 12/13/2021
+ms.locfileid: "61424620"
 ---
 # <a name="opentypeextension-resource-type-open-extensions"></a>Tipo de recurso openTypeExtension (extensões abertas)
 
@@ -37,8 +37,8 @@ As extensões abertas têm suporte nos recursos a seguir nas versões correspond
 | [Organização](organization.md) | GA |
 | [Contato pessoal](contact.md) | GA |
 | [Usuário](user.md) | GA |
-| [Tarefa](todotask.md)  | GA |
-| [Lista de tarefas](todotasklist.md)  | GA |
+| [Tarefa](basetask.md)  | GA |
+| [Lista de tarefas](basetasklist.md)  | GA |
 
 ## <a name="outlook-specific-considerations"></a>Considerações específicas do Outlook
 
@@ -87,7 +87,7 @@ Nenhuma
 
 | Método | Tipo de retorno | Descrição |
 |:---------------|:--------|:----------|
-|[Criar](../api/opentypeextension-post-opentypeextension.md) | [openTypeExtension](opentypeextension.md)(em uma instância de recurso existente), ou um novo contato [,](contact.md)evento [,](event.md)mensagem [,](message.md) [postagem,](post.md) [todoTask](todotask.md)ou [todoTaskList](todotasklist.md) que contém um objeto openTypeExtension. | Crie um objeto openTypeExtension em uma instância de recurso nova ou existente.|
+|[Criar](../api/opentypeextension-post-opentypeextension.md) | [openTypeExtension](opentypeextension.md)(em uma instância de recurso existente), ou um novo contato [,](contact.md)evento [,](event.md)mensagem [,](message.md) [postagem,](post.md) [tarefa](basetask.md)ou [TaskList](basetasklist.md) que contém um objeto openTypeExtension. | Crie um objeto openTypeExtension em uma instância de recurso nova ou existente.|
 |[Get](../api/opentypeextension-get.md) | [openTypeExtension](opentypeextension.md) |Leia propriedades e relações do objeto openTypeExtension.|
 |[Update](../api/opentypeextension-update.md) | [openTypeExtension](opentypeextension.md) |Atualize o objeto openTypeExtension. |
 |[Delete](../api/opentypeextension-delete.md) | Nenhuma |Exclua um objeto openTypeExtension. |

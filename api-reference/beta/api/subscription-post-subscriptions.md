@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: Jumaodhiss
 doc_type: apiPageType
 ms.prod: change-notifications
-ms.openlocfilehash: 089b6831af5dd948d0738fd12302edba9a44bebd
-ms.sourcegitcommit: f336c5c49fbcebe55312656aa8b50511fd99a657
+ms.openlocfilehash: 88629f81300284bebe3276b437b406ece1b10360
+ms.sourcegitcommit: c900d22144429ac7aecae3355a4cdc1987cc4234
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/09/2021
-ms.locfileid: "61390892"
+ms.lasthandoff: 12/13/2021
+ms.locfileid: "61424655"
 ---
 # <a name="create-subscription"></a>Criar assinatura
 
@@ -52,14 +52,15 @@ Dependendo do recurso e do tipo de permissão (delegado ou aplicativo) solicitad
 |[conversa em grupo](../resources/conversation.md) | Group.Read.All | Sem suporte | Sem suporte |
 |[list](../resources/list.md) | Sites.ReadWrite.All | Sem suporte | Sites.ReadWrite.All |
 |[message](../resources/message.md) | Mail.ReadBasic, Mail.Read | Mail.ReadBasic, Mail.Read | Mail.ReadBasic, Mail.Read |
-|[presence](../resources/presence.md) | Presence.Read.All | Sem suporte | Incompatível |
+|[presence](../resources/presence.md) | Presence.Read.All | Incompatível | Incompatível |
 |[printer](../resources/printer.md) | Sem suporte | Sem suporte | Printer.Read.All, Printer.ReadWrite.All |
 |[printTaskDefinition](../resources/printtaskdefinition.md) | Sem suporte | Sem suporte | PrintTaskDefinition.ReadWrite.All |
 |[alerta de segurança](../resources/alert.md) | SecurityEvents.ReadWrite.All | Sem suporte | SecurityEvents.ReadWrite.All |
 |[teams](../resources/team.md) (/teams – todas as equipes em uma organização) | Sem suporte | Incompatível | Team.ReadBasic.All, TeamSettings.Read.All |
 |[teams](../resources/team.md) (/teams/{id}) | Team.ReadBasic.All, TeamSettings.Read.All | Incompatível | Team.ReadBasic.All, TeamSettings.Read.All |
 |[todoTask](../resources/todotask.md) | Tasks.ReadWrite | Tasks.ReadWrite | Incompatível |
-|[user](../resources/user.md) | User.Read.All | User.Read.All | User.Read.All |
+|[baseTask](../resources/basetask.md) | Tasks.ReadWrite | Tasks.ReadWrite | Incompatível |
+|[Usuário](../resources/user.md) | User.Read.All | User.Read.All | User.Read.All |
 
 > **Observação**: Permissões marcadas com * usam [consentimento específico de recurso]( https://aka.ms/teams-rsc).
 
@@ -85,7 +86,7 @@ As limitações adicionais se aplicam aos itens do Outlook. As limitações se a
 
 ### <a name="presence"></a>presença
 
-As assinaturas **em presença** exigem que todos os dados de recursos incluídos em uma notificação de alteração sejam criptografados. Sempre especifique o **parâmetro encryptionCertificate** ao [criar uma assinatura para](/graph/webhooks-with-resource-data#creating-a-subscription) evitar falhas. Confira mais informações sobre [como configurar notificações de alteração para incluir dados de recursos.](/graph/webhooks-with-resource-data)
+As assinaturas na **presença** exigem que todos os dados de recursos incluídos em uma notificação de alteração sejam criptografados. Sempre especifique o parâmetro **encryptionCertificate** ao [criar uma assinatura](/graph/webhooks-with-resource-data#creating-a-subscription) para evitar falha. Veja mais informações sobre como[ configurar notificações de mudança para incluir dados de recursos](/graph/webhooks-with-resource-data).
 
 ## <a name="http-request"></a>Solicitação HTTP
 
@@ -182,6 +183,7 @@ Os valores a seguir são válidos para a propriedade resource.
 |[Teams](../resources/team.md)|`/teams`, `/teams/{id}`|
 |[Usuários](../resources/user.md)|`users`|
 |[todoTask](../resources/todotask.md) | `/me/todo/lists/{todoTaskListId}/tasks`
+|[baseTask](../resources/basetask.md) | `/me/tasks/lists/{baseTaskListId}/tasks`, `/me/tasks/alltasks`
 |[Alerta de segurança](../resources/alert.md)|`security/alerts?$filter=status eq 'NewAlert'`|
 
 > **Observação:** qualquer caminho iniciado por `me` também pode ser usado com `users/{id}` em vez de `me` para direcionar um usuário específico, em vez de usar o usuário atual.

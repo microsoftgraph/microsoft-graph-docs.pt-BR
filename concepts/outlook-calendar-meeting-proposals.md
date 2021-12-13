@@ -4,12 +4,12 @@ description: No Outlook, o organizador da reunião pode permitir que os convidad
 author: harini84
 ms.localizationpriority: high
 ms.prod: outlook
-ms.openlocfilehash: eb75a950f627dde2cf54f373e17435b501a082df
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 75eb225da1cc1ea337b20e07a8429e9acdd32748
+ms.sourcegitcommit: c900d22144429ac7aecae3355a4cdc1987cc4234
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59103946"
+ms.lasthandoff: 12/13/2021
+ms.locfileid: "61424613"
 ---
 # <a name="propose-new-meeting-times-in-outlook"></a>Propor novos horários de reunião no Outlook
 
@@ -18,7 +18,7 @@ No Outlook, o organizador da reunião pode permitir que os convidados proponham 
 ## <a name="example-attendee-responds-tentative-and-suggests-a-different-datetime"></a>Exemplo: o participante responde provisoriamente e sugere uma data/hora diferente
 A seguir, é apresentado um exemplo em que Alex convida Adele para almoçar, Adele timidamente aceita e propõe uma data e hora alternativas. Alex aceita a proposta ajustando a reunião de acordo:
 
-1. Como organizador, Alex envia uma solicitação de reunião para Adele. Ele define a propriedade **allowNewTimeProposals** do [evento](/graph/api/resources/event?view=graph-rest-1.0) para `true` para deixar Adele sugerir outro horário se ela precisar.
+1. Como organizador, Alex envia uma solicitação de reunião para Adele. Ele define a propriedade **allowNewTimeProposals** do [evento](/graph/api/resources/event) para `true` para deixar Adele sugerir outro horário se ela precisar.
 
     <!-- {
       "blockType": "request",
@@ -80,7 +80,6 @@ A seguir, é apresentado um exemplo em que Alex convida Adele para almoçar, Ade
       "categories": [],
       "originalStartTimeZone": "Pacific Standard Time",
       "originalEndTimeZone": "Pacific Standard Time",
-      "uid": "0400000082008A9979A0BD16",
       "reminderMinutesBeforeStart": 15,
       "isReminderOn": true,
       "hasAttachments": false,
@@ -151,7 +150,7 @@ A seguir, é apresentado um exemplo em que Alex convida Adele para almoçar, Ade
     }
     ```
 
-2. Adele recebe o convite na caixa de entrada como um [eventMessageRequest](/graph/api/resources/eventmessagerequest?view=graph-rest-1.0). Ela observa que a propriedade **allowNewTimeProposals** está definida. [Ao usar o **evento** associado](/graph/api/eventmessage-get?view=graph-rest-1.0#example-2) a esse **eventMessageRequest**, ela responde provisoriamente e propõe o dia seguinte no mesmo horário, no parâmetro de corpo **proposedNewTime**. Ela também define o parâmetro **sendResponse** como verdadeiro.
+2. Adele recebe o convite na caixa de entrada como um [eventMessageRequest](/graph/api/resources/eventmessagerequest). Ela observa que a propriedade **allowNewTimeProposals** está definida. [Ao usar o **evento** associado](/graph/api/eventmessage-get#example-2) a esse **eventMessageRequest**, ela responde provisoriamente e propõe o dia seguinte no mesmo horário, no parâmetro de corpo **proposedNewTime**. Ela também define o parâmetro **sendResponse** como verdadeiro.
 
     <!-- {
       "blockType": "request",
@@ -188,7 +187,7 @@ A seguir, é apresentado um exemplo em que Alex convida Adele para almoçar, Ade
     HTTP/1.1 202 Accepted
     ```
 
-3. Alex recebe um email do tipo [eventMessageResponse](/graph/api/resources/eventmessageresponse?view=graph-rest-1.0). Ele observa o seguinte:
+3. Alex recebe um email do tipo [eventMessageResponse](/graph/api/resources/eventmessageresponse). Ele observa o seguinte:
 
    - O assunto inclui um prefixo e diz "Novo Horário Proposto: Vamos almoçar"
    - O remetente é Adele Vance
@@ -313,7 +312,7 @@ A seguir, é apresentado um exemplo em que Alex convida Adele para almoçar, Ade
     }
     ```
 
-4. Alex também observa que o **evento** do almoço agora inclui uma propriedade **proposedNewTime** que indica a proposta de Adele. Essa propriedade só estará presente como parte de uma instância [participante](/graph/api/resources/attendee?view=graph-rest-1.0) se o participante correspondente sugerir um horário de reunião alternativo. 
+4. Alex também observa que o **evento** do almoço agora inclui uma propriedade **proposedNewTime** que indica a proposta de Adele. Essa propriedade só estará presente como parte de uma instância [participante](/graph/api/resources/attendee) se o participante correspondente sugerir um horário de reunião alternativo. 
 
     <!-- {
       "blockType": "request",
@@ -424,7 +423,6 @@ A seguir, é apresentado um exemplo em que Alex convida Adele para almoçar, Ade
       "categories": [],
       "originalStartTimeZone": "Pacific Standard Time",
       "originalEndTimeZone": "Pacific Standard Time",
-      "uid": "0400000082008A9979A0BD16",
       "reminderMinutesBeforeStart": 15,
       "isReminderOn": true,
       "hasAttachments": false,

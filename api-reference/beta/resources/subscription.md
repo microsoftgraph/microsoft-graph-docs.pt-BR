@@ -1,16 +1,16 @@
 ---
 title: tipo de recurso de assinatura
 description: 'Uma assinatura que permite a um aplicativo cliente receber notificações sobre alterações de dados no Microsoft Graph. Atualmente, as assinaturas estão habilitadas para os seguintes recursos:'
-localization_priority: Normal
+ms.localizationpriority: medium
 author: Jumaodhiss
 doc_type: resourcePageType
 ms.prod: change-notifications
-ms.openlocfilehash: 70686ba3818855f84bc0f16ea2e7a03398472a8b
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 0e00ce027cee043157e6cd4e7417445c5398b279
+ms.sourcegitcommit: c900d22144429ac7aecae3355a4cdc1987cc4234
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58794690"
+ms.lasthandoff: 12/13/2021
+ms.locfileid: "61424347"
 ---
 # <a name="subscription-resource-type"></a>tipo de recurso de assinatura
 
@@ -36,10 +36,10 @@ Uma assinatura que permite a um aplicativo cliente receber notificações sobre 
 - A [presença][] de um usuário no Microsoft Teams.*
 - Uma [equipe](./team.md) em Microsoft Teams.*
 - Uma [printer][] (quando um trabalho de impressão para a impressora chegar ao estado JobFetchable – pronto para ser buscado para impressão) e uma [PrintTaskDefinition][] em Impressão Universal. Para saber mais, confira [Inscrever-se para alterar notificações de APIs de impressão na nuvem](/graph/universal-print-webhook-notifications).
-- Um [todoTask][] de um usuário em Microsoft To Do.*
+- Uma [baseTask][] de um usuário em Microsoft To Do.*
 - Um [usuário][] no Azure Active Directory.
 
-Para obter os valores de caminho de recurso possíveis para cada recurso com suporte, consulte Usar a API do [Microsoft Graph para receber notificações de alteração.](webhooks.md)
+Para obter os valores de caminho de recurso possíveis para cada recurso com suporte, consulte [Usar a API do Microsoft Graph para obter notificações de alteração](webhooks.md).
 
 ## <a name="methods"></a>Métodos
 
@@ -87,10 +87,10 @@ Para obter os valores de caminho de recurso possíveis para cada recurso com sup
 | **Lista** do Microsoft Office SharePoint Online    | 42.300 minutos (menos de 30 dias)    |
 | Outlook **mensagem**, **evento**, **contato**              | 4230 minutos (em 3 dias)    |
 | **usuário**, **grupo**, outros recursos de diretório   | 41760 minutos (menos de 29 dias)    |
-| **presença**        | 60 minutos (1 hora) |
+| **presence**        | 60 minutos (1 hora) |
 | Imprimir **printer** | 4230 minutos (em 3 dias)    |
 | Imprimir **printTaskDefinition** | 4230 minutos (em 3 dias)    |
-| **todoTask**              | 4230 minutos (em 3 dias)    |
+| **baseTask**              | 4230 minutos (em 3 dias)    |
 
 
 > **Observação:** Os aplicativos existentes e os novos aplicativos não devem ultrapassar o valor suportado. No futuro, as solicitações para criar ou renovar uma assinatura além do valor máximo falharão.
@@ -159,7 +159,7 @@ Veja a seguir uma representação JSON do recurso.
 [presence]: ./presence.md
 [impressora]: ./printer.md
 [printTaskDefinition]: ./printtaskdefinition.md
-[todoTask]: ./todotask.md
+[baseTask]: ./basetask.md
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->

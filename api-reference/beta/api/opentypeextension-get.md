@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: dkershaw10
 doc_type: apiPageType
 ms.prod: extensions
-ms.openlocfilehash: 4ea12ffcd7d9b6fef214129f5817f284d3e038b3
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: 3241ebbedebfcdcfcf9ccd1d5fd36edc7e0ff9f6
+ms.sourcegitcommit: c900d22144429ac7aecae3355a4cdc1987cc4234
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "61034070"
+ms.lasthandoff: 12/13/2021
+ms.locfileid: "61424564"
 ---
 # <a name="get-open-extension"></a>Obter extensão aberta
 
@@ -26,7 +26,7 @@ A tabela a seguir lista os três cenários em que é possível obter uma extens�
 
 |**Cenário GET**|**Recursos com suporte**|**Corpo da resposta**|
 |:-----|:-----|:-----|
-|Obtenha uma extensão específica de uma instância de recurso conhecida.| [Unidade administrativa](../resources/administrativeunit.md), [dispositivo](../resources/device.md), [evento](../resources/event.md) [,](../resources/group.md)grupo [,](../resources/event.md)evento de grupo [,](../resources/post.md)postagem de grupo [,](../resources/message.md)mensagem [,](../resources/organization.md)organização [,](../resources/contact.md)contato pessoal , [usuário](../resources/user.md), [tarefa](../resources/todotask.md), lista [de tarefas](../resources/todotasklist.md)  | Somente extensão aberta.|
+|Obtenha uma extensão específica de uma instância de recurso conhecida.| [Unidade administrativa](../resources/administrativeunit.md), [dispositivo](../resources/device.md), [evento](../resources/event.md) [,](../resources/group.md)grupo [,](../resources/event.md)evento de grupo [,](../resources/post.md)postagem de grupo [,](../resources/message.md)mensagem [,](../resources/organization.md)organização [,](../resources/contact.md)contato pessoal , [usuário](../resources/user.md), [tarefa](../resources/basetask.md), lista [de tarefas](../resources/basetasklist.md)  | Somente extensão aberta.|
 |Obtenha uma instância de recurso conhecida, expandida com uma extensão específica.|Unidade administrativa, dispositivo, evento, grupo, evento de grupo, postagem de grupo, mensagem, organização, contato pessoal, usuário, tarefa, lista de tarefas. |Uma instância de recurso expandida com a extensão aberta.|
 |Encontre e expanda instâncias de recursos com uma extensão específica. | Evento, evento de grupo, postagem de grupo, mensagem, contato pessoal, tarefa, lista de tarefas |Instâncias de recursos expandidas com a extensão aberta.|
 
@@ -45,8 +45,8 @@ Dependendo do recurso que contém a extensão e o tipo de permissão (delegado o
 | [organização](../resources/organization.md) | User.Read | Incompatível | Organization.Read.All |
 | [contato pessoal](../resources/contact.md) | Contacts.Read | Contacts.Read | Contacts.Read |
 | [usuário](../resources/user.md) | User.Read | User.Read | User.Read.All |
-| [tarefa](../resources/todotask.md) | Tasks.ReadWrite | Tasks.ReadWrite | Tasks.ReadWrite.All |
-| [tasklist](../resources/todotasklist.md)  | Tasks.ReadWrite | Tasks.ReadWrite | Tasks.ReadWrite.All |
+| [tarefa](../resources/basetask.md) | Tasks.ReadWrite | Tasks.ReadWrite | Sem suporte |
+| [tasklist](../resources/basetasklist.md)  | Tasks.ReadWrite | Tasks.ReadWrite | Sem suporte |
 
 ## <a name="http-request"></a>Solicitação HTTP
 
@@ -68,8 +68,8 @@ GET /users/{Id|userPrincipalName}/messages/{Id}/extensions/{extensionId}
 GET /organization/{Id}/extensions/{extensionId}
 GET /users/{Id|userPrincipalName}/contacts/{Id}/extensions/{extensionId}
 GET /users/{Id|userPrincipalName}/extensions/{extensionId}
-GET /users/{Id|userPrincipalName}/todo/lists/{todoTaskListId}/tasks/{taskId}/extensions/{extensionId}
-GET /users/{Id|userPrincipalName}/todo/lists/{todoTaskListId}/extensions/{extensionId}
+GET /users/{Id|userPrincipalName}/tasks/lists/{baseTaskListId}/tasks/{taskId}/extensions/{extensionId}
+GET /users/{Id|userPrincipalName}/tasks/lists/{baseTaskListId}/extensions/{extensionId}
 ```
 
 ### <a name="get-a-known-resource-instance-expanded-with-a-matching-extension"></a>Obtenha uma instância de recurso conhecida, expandida com uma extensão correspondente. 
@@ -83,8 +83,8 @@ GET /groups/{Id}/events/{Id}?$expand=extensions($filter=id eq '{extensionId}')
 GET /groups/{Id}/threads/{Id}/posts/{Id}?$expand=extensions($filter=id eq '{extensionId}')
 GET /users/{Id|userPrincipalName}/messages/{Id}?$expand=extensions($filter=id eq '{extensionId}')
 GET /users/{Id|userPrincipalName}/contacts/{Id}?$expand=extensions($filter=id eq '{extensionId}')
-GET /users/{Id|userPrincipalName}/todo/lists/{todoTaskListId}/tasks/{Id}?$expand=extensions($filter=id eq '{extensionId}')
-GET /users/{Id|userPrincipalName}/todo/lists/{Id}?$expand=extensions($filter=id eq '{extensionId}')
+GET /users/{Id|userPrincipalName}/tasks/lists/{baseTaskListId}/tasks/{Id}?$expand=extensions($filter=id eq '{extensionId}')
+GET /users/{Id|userPrincipalName}/tasks/lists/{Id}?$expand=extensions($filter=id eq '{extensionId}')
 ```
 
 
@@ -175,7 +175,7 @@ GET https://graph.microsoft.com/beta/me/messages/AAMkAGE1M2IyNGNmLTI5MTktNDUyZi1
 [!INCLUDE [sample-code](../includes/snippets/java/get-opentypeextension-1-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[Go](#tab/go)
+# <a name="go"></a>[Ir](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/get-opentypeextension-1-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
@@ -245,7 +245,7 @@ GET https://graph.microsoft.com/beta/groups/f5480dfd-7d77-4d0b-ba2e-3391953cc74a
 [!INCLUDE [sample-code](../includes/snippets/java/get-opentypeextension-2-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[Go](#tab/go)
+# <a name="go"></a>[Ir](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/get-opentypeextension-2-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
@@ -307,7 +307,7 @@ GET https://graph.microsoft.com/beta/me/messages/AAMkAGE1M2IyNGNmLTI5MTktNDUyZi1
 [!INCLUDE [sample-code](../includes/snippets/java/get-opentypeextension-3-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[Go](#tab/go)
+# <a name="go"></a>[Ir](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/get-opentypeextension-3-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
@@ -428,7 +428,7 @@ GET https://graph.microsoft.com/beta/groups/37df2ff0-0de0-4c33-8aee-75289364aef6
 [!INCLUDE [sample-code](../includes/snippets/java/get-opentypeextension-4-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[Go](#tab/go)
+# <a name="go"></a>[Ir](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/get-opentypeextension-4-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
@@ -469,22 +469,14 @@ Content-Type: application/json
 
 O quinto exemplo analisa todas as mensagens na caixa de correio do usuário conectado para localizar aquelas uma contêm uma extensão correspondente a um filtro e as expande com a inclusão dessa extensão. O filtro retorna extensões cuja propriedade **id** corresponde ao nome da extensão `Com.Contoso.Referral`.
 
-
-# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "get_opentypeextension_5"
 }-->
-```msgraph-interactive
+
+```http
 GET https://graph.microsoft.com/beta/me/messages?$filter=Extensions/any(f:f/id%20eq%20'Com.Contoso.Referral')&$expand=Extensions($filter=id%20eq%20'Com.Contoso.Referral')
 ```
-# <a name="go"></a>[Go](#tab/go)
-[!INCLUDE [sample-code](../includes/snippets/go/get-opentypeextension-5-go-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
----
-
-
 
 #### <a name="response-5"></a>Resposta 5
 

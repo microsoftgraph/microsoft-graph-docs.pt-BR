@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: Jumaodhiss
 doc_type: conceptualPageType
 ms.prod: change-notifications
-ms.openlocfilehash: 9f38f0b8539652e2eaf68d1ef285c325e9501c51
-ms.sourcegitcommit: 08e9b0bac39c1b1d2c8a79539d24aaa93364baf2
+ms.openlocfilehash: 33742bc9970f8e0758fe4ef5269974629c1ccd73
+ms.sourcegitcommit: c900d22144429ac7aecae3355a4cdc1987cc4234
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/24/2021
-ms.locfileid: "59763419"
+ms.lasthandoff: 12/13/2021
+ms.locfileid: "61424432"
 ---
 # <a name="use-the-microsoft-graph-api-to-get-change-notifications"></a>Usar a API do Microsoft Graph para acessar as notificações de alteração
 
@@ -42,7 +42,7 @@ Usando a API do Microsoft Graph, um aplicativo pode se inscrever para alteraçõ
 | [conversationMember][] do Teams | Alterações na associação em uma equipe específica:<br>`/teams/{id}/members` <br> Alterações na associação em um chat específico:<br>`/chats/{id}/members` <br> Alterações na associação em todos os chats:<br>`/chats/getAllMembers` <br> Alterações na associação em todos os canais em uma equipe específica:<br>`teams/{id}/channels/getAllMembers` | Sim |
 | Teams [presença][] | Alterações na presença de um único usuário: `/communications/presences/{id}` <br> Alterações em várias presenças de usuário:<br> `/communications/presences?$filter=id in ({id},{id}...)` | Sim |
 | Equipe do [Teams][] | Alterações em qualquer equipe no locatário:<br>`/teams` <br>Alterações em uma equipe específica:<br>`/teams/{id}` | Sim |
-| [todoTask][] | Alterações em todas as tarefas em uma lista de tarefas específica:<br>`/me/todo/lists/{todoTaskListId}/tasks` | Não |
+| [baseTask][] | Alterações em todas as tarefas em uma lista de tarefas específica:<br>`/me/tasks/lists/{baseTaskListId}/tasks`<br>Alterações em todas as tarefas:<br>`/me/tasks/lists/alltasks` | Não |
 | [Usuário][] | Alterações em todos os usuários:<br>`/users` <br>Alterações em um usuário específico:<br>`/users/{id}`| Não |
 
 
@@ -54,9 +54,9 @@ Em geral, as operações de assinatura exigem permissão de leitura ao recurso. 
 
 | Tipo de permissão                        | Tipos de recurso com suporte                                                      |
 | :------------------------------------- | :------------------------------------------------------------------------------------ |
-| Delegado - conta corporativa ou de estudante     | [alert][], channel , chat , [contact][], [conversation][], [conversationMember][], [driveItem][], [list][], [event][], [group][] [,][] [message][], user , [][] [presence][], [chatMessage][] (preview), [team][], [todoTask][] [][] |
-| Delegado - conta pessoal da Microsoft | [contact][], [driveItem][], [list][], [event][], [message][],[todoTask][]                                     |
-| Aplicativo                            | [alert][], [channel][], [chat][], [contact][], [driveItem][], [list][] [,][]event , [group][] [,][] [message][], user , [callRecord][], [chatMessage][], [conversationMember][], [printer][], [printTaskDefinition][], [team][] |
+| Delegado - conta corporativa ou de estudante     | [alert][], channel , chat , [contact][], [conversation][], [conversationMember][], [driveItem][], [list][], [event][], [group][] [,][] [message][], user , [][] [presence][], [chatMessage][] (preview), [team][], [baseTask][] [][] |
+| Delegado - conta pessoal da Microsoft | [contact][], [driveItem][], [list][], [event][], [message][], [baseTask][]                                     |
+| Application                            | [alert][], [channel][], [chat][], [contact][], [driveItem][], [list][] [,][]event , [group][] [,][] [message][], user , [callRecord][], [chatMessage][], [conversationMember][], [printer][], [printTaskDefinition][], [team][] |
 
 ## <a name="see-also"></a>Confira também
 
@@ -82,9 +82,9 @@ Em geral, as operações de assinatura exigem permissão de leitura ao recurso. 
 [usuário]: ./user.md
 [callRecord]: ./callrecords-callrecord.md
 [alerta]: ./alert.md
-[presença]: ./presence.md
+[presence]: ./presence.md
 [impressora]: ./printer.md
 [printTaskDefinition]: ./printtaskdefinition.md
-[team]: ./team.md
-[todoTask]: ./todoTask.md
+[equipe]: ./team.md
+[baseTask]: ./baseTask.md
 

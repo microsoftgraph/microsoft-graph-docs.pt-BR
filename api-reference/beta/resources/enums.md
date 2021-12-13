@@ -5,12 +5,12 @@ doc_type: enumPageType
 ms.localizationpriority: medium
 ms.prod: non-product-specific
 author: MSGraphDocsvTeam
-ms.openlocfilehash: 3190e107ed5b443f6a6d5944a124f3327353770e
-ms.sourcegitcommit: e75969aa44a1aab722ac44d09c37508ffbad8738
+ms.openlocfilehash: 0c71564588531094f7741f1bdf9ab22435816277
+ms.sourcegitcommit: c900d22144429ac7aecae3355a4cdc1987cc4234
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/04/2021
-ms.locfileid: "61307598"
+ms.lasthandoff: 12/13/2021
+ms.locfileid: "61424641"
 ---
 # <a name="enum-values"></a>Valores denum
 
@@ -191,7 +191,7 @@ Namespace: microsoft.graph
 
 |Member|
 |:---|
-|String|
+|Cadeia de Caracteres|
 |Inteiro|
 |Referência|
 |Binária|
@@ -916,7 +916,7 @@ Namespace: microsoft.graph
 |site|
 |list|
 |listItem|
-|drive|
+|Unidade|
 |unknownFutureValue|
 
 ### <a name="searchalterationtype-values"></a>searchAlterationType values
@@ -2568,4 +2568,23 @@ Valores possíveis para tipos de conta de usuário (associação ao grupo), por 
 |teacher|
 |faculty|
 |other|
+|unknownFutureValue|
+
+### <a name="taskstatus_v2-values"></a>taskStatus_v2 valores
+
+|Member|
+|:---|
+|notStarted|
+|inProgress|
+|completed|
+|unknownFutureValue|
+
+
+### <a name="wellknownlistname_v2-values"></a>wellKnownListName_v2 valores
+
+|Member|
+|:---|
+|none|
+|defaultList|
+|flaggedEmail|
 |unknownFutureValue|
