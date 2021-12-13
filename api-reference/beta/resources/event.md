@@ -5,12 +5,12 @@ author: harini84
 ms.localizationpriority: high
 ms.prod: outlook
 doc_type: resourcePageType
-ms.openlocfilehash: 74bf1c7e3a28280a0aca86aefb9e056befc29dff
-ms.sourcegitcommit: 6cea9bc17d3859e475a74c4a6f661f848e837e89
+ms.openlocfilehash: 8f4b7b53ef18e5e777b0b154b00e4473ba0cce49
+ms.sourcegitcommit: c900d22144429ac7aecae3355a4cdc1987cc4234
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/08/2021
-ms.locfileid: "60240920"
+ms.lasthandoff: 12/13/2021
+ms.locfileid: "61424725"
 ---
 # <a name="event-resource-type"></a>tipo de recurso de evento
 
@@ -80,7 +80,7 @@ Esse recurso permite:
 |changeKey|String|Identifica a versão do objeto event. Toda vez que o evento muda, ChangeKey também muda. Isso permite que o Exchange aplique alterações à versão correta do objeto.|
 |createdDateTime|DateTimeOffset|O tipo de carimbo de data/hora representa informações de data e hora usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite UTC em 1º de janeiro de 2014 é `2014-01-01T00:00:00Z`|
 |end|[DateTimeTimeZone](datetimetimezone.md)|A data, a hora e o fuso horário em que o evento termina. Por padrão, a hora de término é em UTC.|
-|exceptionOccurrences|Coleção de cadeia de caracteres|Contém os valores da propriedade **id** das instâncias de evento que são exceções em uma série recorrente.<br>As exceções podem diferir das outras ocorrências em uma série recorrente, tais como o assunto, o início ou fim do horário, ou os participantes. As exceções não incluem as ocorrências canceladas.<br><br>Devolvido somente em $select e $expand em uma operação [GET](../api/event-get.md) que especifica a identidade de uma série de eventos mestre (ou seja, o valor da propriedade seriesMasterId).|
+|exceptionOccurrences|Coleção [event](event.md)|Contém os valores da propriedade **id** das instâncias de evento que são exceções em uma série recorrente.<br>As exceções podem diferir das outras ocorrências em uma série recorrente, tais como o assunto, o início ou fim do horário, ou os participantes. As exceções não incluem as ocorrências canceladas.<br><br>Devolvido somente em $select e $expand em uma operação [GET](../api/event-get.md) que especifica a identidade de uma série de eventos mestre (ou seja, o valor da propriedade seriesMasterId).|
 |hasAttachments|Booliano|Defina como true se o evento tiver anexos.|
 |hideAttendees|Booliano|Quando definido como `true`, cada participante só se vê na solicitação de reunião e na lista de **Rastreamento** da reunião. O padrão é falso.|
 |id|Cadeia de caracteres| Identificador exclusivo do evento. [!INCLUDE [outlook-beta-id](../../includes/outlook-immutable-id.md)] Sensível a maiúsculas e minúsculas e somente leitura.|
@@ -107,7 +107,7 @@ Esse recurso permite:
 |responseRequested|Booliano|O padrão é true, representando que o organizador gostaria de ter um convidado para enviar uma resposta para o evento.|
 |responseStatus|[ResponseStatus](responsestatus.md)|Indica o tipo de resposta enviada em resposta a uma mensagem de evento.|
 |sensitivity|String| Os valores possíveis são: `normal`, `personal`, `private`, `confidential`.|
-|seriesMasterId|Cadeia de caracteres|A ID do item mestre da série recorrente se este evento for parte de uma série recorrente.|
+|seriesMasterId|String|A ID do item mestre da série recorrente se este evento for parte de uma série recorrente.|
 |showAs|String|O status a ser exibido. Os possíveis valores são: `free`, `tentative`, `busy`, `oof`, `workingElsewhere`, `unknown`.|
 |iniciar|[DateTimeTimeZone](datetimetimezone.md)|A data, a hora e o fuso horário do evento. Por padrão, a hora de início é em UTC.|
 |assunto|String|O texto da linha de assunto do evento.|
@@ -169,7 +169,7 @@ Veja a seguir uma representação JSON do recurso
   "changeKey": "string",
   "createdDateTime": "String (timestamp)",
   "end": {"@odata.type": "microsoft.graph.dateTimeTimeZone"},
-  "exceptionOccurrences":["string"],
+  "exceptionOccurrences":["microsoft.graph.event"],
   "hasAttachments": true,
   "hideAttendees": false,
   "uid": "string",

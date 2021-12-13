@@ -5,12 +5,12 @@ ms.localizationpriority: high
 author: preetikr
 ms.prod: security
 doc_type: resourcePageType
-ms.openlocfilehash: 774b5bff351b9ba1d69ddd2a7ac2ddfc369e4d32
-ms.sourcegitcommit: 2e94beae05043a88b389349f0767e3a657415e4c
+ms.openlocfilehash: 636a09bb7d0836ab7b814f978ecf38ee14416f8e
+ms.sourcegitcommit: c900d22144429ac7aecae3355a4cdc1987cc4234
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/19/2021
-ms.locfileid: "61123885"
+ms.lasthandoff: 12/13/2021
+ms.locfileid: "61424746"
 ---
 # <a name="use-the-microsoft-graph-security-api"></a>Usar a API de Segurança do Microsoft Graph
 
@@ -29,7 +29,7 @@ A API de Segurança do Microsoft Graph inclui as entidades principais a seguir.
 
 ## <a name="actions-preview"></a>Ações (visualização)
 
-Executar uma ação imediata proteger contra ameaças usando a entidade [securityAction](securityaction.md)de Segurança do Microsoft Graph. Quando um analista de segurança descobre um indicador novo, como um arquivo mal-intencionado, URL, domínio ou endereço IP, a proteção pode ser habilitada instantaneamente em suas soluções de segurança da Microsoft. Usar uma ação específica do provedor, ver todas as ações executadas e cancelar uma ação, se necessário. Experimente as ações de segurança com a [Proteção Avançada contra Ameaças do Microsoft Defender](/windows/security/threat-protection/windows-defender-atp/windows-defender-advanced-threat-protection) para bloquear as atividades mal-intencionados nos pontos de extremidade do Windows usando as propriedades vistas nos alertas ou identificadas durante as investigações.
+Executar uma ação imediata proteger contra ameaças usando a entidade [securityAction](securityaction.md)de Segurança do Microsoft Graph. Quando um analista de segurança descobre um indicador novo, como um arquivo mal-intencionado, URL, domínio ou endereço IP, a proteção pode ser habilitada instantaneamente em suas soluções de segurança da Microsoft. Usar uma ação específica do provedor, ver todas as ações executadas e cancelar uma ação, se necessário. Experimente ações de segurança com o [Microsoft Defender para Ponto de Extremidade](/windows/security/threat-protection/windows-defender-atp/windows-defender-advanced-threat-protection) (antigo Microsoft Defender ATP) para bloquear atividades mal-intencionadas nos seus pontos de extremidade com Windows usando propriedades vistas em alertas ou identificadas durante as investigações.
 
   > **Observação:** Ações de segurança no momento apenas oferecem suporte às permissões do aplicativo.
 
@@ -43,9 +43,9 @@ Alertas dos seguintes provedores estão disponíveis por meio da API de seguran�
 |:------------------|:---------|:-----------|:------------------|
 |[Central de Segurança do Azure](/azure/security-center/security-center-alerts-type)| <p align="center">&#x2713;</p> | <p align="center">&#x2713;</p> | <p align="center">&#x2713;</p> |
 |[Proteção de identidade do Azure Active Directory](/azure/active-directory/identity-protection/playbook) | <p align="center">&#x2713;</p> | <p align="center">[Problema de arquivo](https://github.com/microsoftgraph/security-api-solutions/issues/new) *</p> | <p align="center">&#x2713;</p> |
-| [Segurança no Aplicativo da Nuvem da Microsoft](/cloud-app-security/monitor-alerts) | <p align="center">&#x2713;</p> | <p align="center">[Problema de arquivo](https://github.com/microsoftgraph/security-api-solutions/issues/new) *</p> | <p align="center">&#x2713;</p> |
-|[Proteção Avançada contra Ameaças do Microsoft Defender](/windows/security/threat-protection/microsoft-defender-atp/attack-simulations) **| <p align="center">&#x2713;</p> | <p align="center">&#x2713;</p> | <p align="center"> [Problema de arquivo](https://github.com/microsoftgraph/security-api-solutions/issues/new) </p> |
-|[Proteção Avançada contra Ameaças do Azure](/azure-advanced-threat-protection/understanding-security-alerts#security-alert-categories) ***| <p align="center">&#x2713;</p> | <p align="center">[Problema de arquivo](https://github.com/microsoftgraph/security-api-solutions/issues/new) *</p> | <p align="center">&#x2713;</p> |
+| [Microsoft Defender for Cloud Apps](/cloud-app-security/monitor-alerts) (antigo Microsoft Cloud App Security) | <p align="center">&#x2713;</p> | <p align="center">[Problema de arquivo](https://github.com/microsoftgraph/security-api-solutions/issues/new) *</p> | <p align="center">&#x2713;</p> |
+|[Microsoft Defender para Ponto de Extremidade](/windows/security/threat-protection/microsoft-defender-atp/attack-simulations) (antigo Microsoft Defender ATP)**| <p align="center">&#x2713;</p> | <p align="center">&#x2713;</p> | <p align="center"> [Problema de arquivo](https://github.com/microsoftgraph/security-api-solutions/issues/new) </p> |
+|[Microsoft Defender para Identidade](/azure-advanced-threat-protection/understanding-security-alerts#security-alert-categories) (antigo Azure Advanced Threat Protection)***| <p align="center">&#x2713;</p> | <p align="center">[Problema de arquivo](https://github.com/microsoftgraph/security-api-solutions/issues/new) *</p> | <p align="center">&#x2713;</p> |
 |Microsoft 365 <ul><li> [Padrão](/office365/securitycompliance/alert-policies#default-alert-policies)</li> <li>[Segurança no Aplicativo na Nuvem](/office365/securitycompliance/anomaly-detection-policies-in-ocas)</li><li>Alerta personalizado</li></ul> | <p align="center">&#x2713;</p> | <p align="center"> [Problema de arquivo](https://github.com/microsoftgraph/security-api-solutions/issues/new) </p> | <p align="center"> [Problema de arquivo](https://github.com/microsoftgraph/security-api-solutions/issues/new) </p> |
 |[Proteção de Informações do Azure](/azure/information-protection/faqs#i-see-azure-information-protection-is-listed-as-a-security-provider-for-microsoft-graph-securityhow-does-this-work-and-what-alerts-will-i-receive) **(visualização)**| <p align="center">&#x2713;</p> | <p align="center">[Problema de arquivo](https://github.com/microsoftgraph/security-api-solutions/issues/new) *</p> | <p align="center">&#x2713;</p> |
 |[Azure Sentinel](/azure/sentinel/quickstart-get-visibility) **(visualização)**| <p align="center">&#x2713;</p> | <p align="center">Não possui suporte do Azure Sentinel </p> | <p align="center">&#x2713;</p> |
@@ -53,9 +53,9 @@ Alertas dos seguintes provedores estão disponíveis por meio da API de seguran�
 
 \* Problema no arquivo: o status do alerta é atualizado nos aplicativos integrados da API de segurança do Microsoft Graph, mas não reflete na experiência de gerenciamento do provedor.
 
-\*\* A Proteção avançada contra ameaças do Microsoft Defender exige [funções de usuário](/windows/security/threat-protection/microsoft-defender-atp/user-roles) adicionais para aquelas requeridas pela API de segurança do Microsoft Graph. Somente os usuários da Proteção Avançada contra Ameaças do Microsoft Defender e das funções da API de segurança do Microsoft Graph podem ter acesso aos dados da Proteção Avançada contra Ameaças do Microsoft Defender. A autenticação somente para aplicativos não é limitada por isso. Portanto, recomendamos que você use um token de autenticação somente para aplicativos.
+\*\* O Microsoft Defender para Ponto de Extremidade exige [funções de usuário](/windows/security/threat-protection/microsoft-defender-atp/user-roles) adicionais para aquelas requeridas pela API de Segurança do Microsoft Graph. Somente os usuários do Microsoft Defender para Ponto de Extremidade e as funções da API de Segurança do Microsoft Graph podem ter acesso aos dados do Microsoft Defender para Ponto de Extremidade. A autenticação somente para aplicativos não é limitada por isso. Portanto, recomendamos que você use um token de autenticação somente para aplicativos.
 
-\*\*\* Os alertas da Proteção Avançada contra Ameaças do Azure (Azure ATP) estão disponíveis através da integração do Microsoft Cloud App Security. Isso significa que você receberá os alertas do Azure ATP somente se você tiver ingressado na SecOps Unificada e conectado o Azure ATP ao Microsoft Cloud App Security. Saiba mais sobre [como integrar o Azure ATP e o Microsoft Cloud App Security](/azure-advanced-threat-protection/atp-mcas-integration).
+\*\*\* Os alertas do Microsoft Defender para Identidade estão disponíveis por meio da integração com o Microsoft Defender for Cloud Apps. Isso significa que você receberá alertas do Microsoft Defender para Identidade somente se tiver ingressado no portal Unified SecOps e conectado o Microsoft Defender para Identidade com o Microsoft Defender for Cloud Apps. Saiba mais sobre [como integrar o Microsoft Defender para Identidade com o Microsoft Defender for Cloud Apps.](/azure-advanced-threat-protection/atp-mcas-integration)
 
 ## <a name="attack-simulation-and-training-preview"></a>Simulação de ataque e treinamento (visualização)
 
@@ -85,7 +85,7 @@ Você pode integrar a entidade [tiIndicator](tiindicator.md) em seu aplicativo o
 Os indicadores de ameaças enviados por meio da API de Segurança do Microsoft Graph estão disponíveis hoje nos seguintes produtos:
 
 - [Azure Sentinel](/azure/sentinel/overview) – Permite correlacionar indicadores de ameaças com dados de log para receber alertas de atividades mal-intencionadas.
-- [ (Proteção Avançada contra Ameaças do Microsoft Defender)](/windows/security/threat-protection/microsoft-defender-atp/microsoft-defender-advanced-threat-protection) – Permite alertar e/ou bloquear indicadores sobre ameaças associados a atividades mal-intencionadas. Você também pode permitir que um indicador ignore o indicador das investigações automatizadas. Para mais detalhes sobre os tipos de indicadores com suporte e limites de contagens de indicadores por locatário, confira [Gerenciar indicadores](/windows/security/threat-protection/microsoft-defender-atp/manage-indicators).
+- [Microsoft Defender para Ponto de Extremidade](/windows/security/threat-protection/microsoft-defender-atp/microsoft-defender-advanced-threat-protection): permite que você alerte e/ou bloqueie os indicadores de ameaças associados a atividades mal-intencionadas. Você também pode permitir que um indicador ignore o indicador das investigações automatizadas. Para mais detalhes sobre os tipos de indicadores com suporte e limites de contagens de indicadores por locatário, confira [Gerenciar indicadores](/windows/security/threat-protection/microsoft-defender-atp/manage-indicators).
 
 O suporte a outros serviços de segurança da Microsoft estará disponível em breve.
 
