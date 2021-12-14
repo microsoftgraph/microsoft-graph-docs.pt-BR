@@ -5,12 +5,12 @@ author: davidmu1
 ms.prod: non-product-specific
 ms.localizationpriority: high
 ms.custom: graphiamtop20
-ms.openlocfilehash: 889c2e7de64069529ebf528dcd2a5aeb893854c1
-ms.sourcegitcommit: 84d9a50dfa9526a207696c69d92381c8763d986a
+ms.openlocfilehash: c98bb05b700ddabfda9544350e4be580ee818df6
+ms.sourcegitcommit: c99d3feb3ab5cae506c1f758bc277a637adc9111
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/28/2021
-ms.locfileid: "59979240"
+ms.lasthandoff: 12/13/2021
+ms.locfileid: "61432630"
 ---
 # <a name="set-up-notifications-for-changes-in-user-data"></a>Configurar notificações para alterações nos dados de usuário
 
@@ -264,7 +264,7 @@ O processo deve processar todas as notificações de alteração recebidas. Esta
 
     Se for esperado que seu processamento demore mais de 3 segundos, você deve persistir na notificação, retornar um código de status `202 - Accepted` em sua resposta ao Microsoft Graph, e então processar as notificações. Se a notificação não persistir, devolver um código de classe 5xx para indicar um erro, de modo que a notificação será novamente processada.
 
-    Se for esperado que seu processamento leve menos de 3 segundos, você deve processar as notificações e devolver um código de status `200 - Accepted` em sua resposta ao Microsoft Graph. Se a notificação não for processada corretamente, devolver um código de classe 5xx para indicar um erro, de modo que a notificação será novamente processada.
+    Se for esperado que seu processamento leve menos de 3 segundos, você deve processar as notificações e devolver um código de status `200 - OK` em sua resposta ao Microsoft Graph. Se a notificação não for processada corretamente, devolver um código de classe 5xx para indicar um erro, de modo que a notificação será novamente processada.
 
 1. Validar a propriedade `clientState`. Ela deve corresponder ao valor enviado originalmente com a solicitação de criação da assinatura.
 

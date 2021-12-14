@@ -4,12 +4,12 @@ description: 'O Microsoft Graph permite a integração com os melhores serviços
 author: angelgolfer-ms
 ms.localizationpriority: high
 ms.custom: scenarios:getting-started
-ms.openlocfilehash: e02bce5335561363788481f8bd205607eea48bf1
-ms.sourcegitcommit: 2e94beae05043a88b389349f0767e3a657415e4c
+ms.openlocfilehash: 7d2a3df6af87d9e3b9802e112bc429682a42d989
+ms.sourcegitcommit: c900d22144429ac7aecae3355a4cdc1987cc4234
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/19/2021
-ms.locfileid: "61123583"
+ms.lasthandoff: 12/13/2021
+ms.locfileid: "61424599"
 ---
 # <a name="major-services-and-features-in-microsoft-graph"></a>Principais serviços e recursos do Microsoft Graph
 
@@ -97,7 +97,7 @@ Alguns serviços do Microsoft Graph iniciam-se no próprio Microsoft Graph, outr
 
 |Recurso     |Serviços de suporte  |Descrição |Mais informações |
 |:-----------|:--------------------|:-----------|:----------------|
-| Integração de segurança | Azure AD Identity Protection, Proteção de Informações do Azure, Central de Segurança do Azure, Segurança do Aplicativo Microsoft Cloud, Proteção Avançada contra Ameaças do Windows Defender e [mais](/graph/api/resources/security-api-overview) | Fornece um gateway unificado para insights e ações de segurança em todos os parceiros da Microsoft e do ecossistema. | [Segurança no Microsoft Graph](security-concept-overview.md) |
+| Integração de segurança | Azure AD Identity Protection, Proteção de Informações do Azure, Central de Segurança do Azure, Microsoft Defender for Cloud Apps, Windows Defender Proteção Avançada contra Ameaças e [mais](/graph/api/resources/security-api-overview) | Fornece um gateway unificado para insights e ações de segurança em todos os parceiros da Microsoft e do ecossistema. | [Segurança no Microsoft Graph](security-concept-overview.md) |
 
 
 

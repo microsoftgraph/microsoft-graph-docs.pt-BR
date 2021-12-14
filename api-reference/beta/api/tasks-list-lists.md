@@ -5,12 +5,12 @@ author: devindrajit
 ms.localizationpriority: medium
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 5b3a6306ca565485bfc1eed775a8a4153fcecbb9
-ms.sourcegitcommit: c900d22144429ac7aecae3355a4cdc1987cc4234
+ms.openlocfilehash: 94ea95d30e3dddfe6cc4f050d05348de2c9498ee
+ms.sourcegitcommit: c99d3feb3ab5cae506c1f758bc277a637adc9111
 ms.translationtype: MT
 ms.contentlocale: pt-BR
 ms.lasthandoff: 12/13/2021
-ms.locfileid: "61424796"
+ms.locfileid: "61432637"
 ---
 # <a name="list-lists"></a>List lists
 Namespace: microsoft.graph
@@ -40,7 +40,7 @@ GET /users/{userId|userPrincipalName}/tasks/lists
 ```
 
 ## <a name="optional-query-parameters"></a>Parâmetros de consulta opcionais
-Este método oferece `$expand` suporte a `$filter` `top` [parâmetros de consulta EData](/graph/query-parameters) para personalizar a resposta.  
+Este método oferece `$expand` suporte a `$filter` `$top` [parâmetros de consulta EData](/graph/query-parameters) para personalizar a resposta.  
 
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
 |Nome|Descrição|

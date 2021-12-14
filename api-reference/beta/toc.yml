@@ -14285,6 +14285,8 @@ items:
                 href: api/team-clone.md
               - name: Listar suas equipes
                 href: api/user-list-joinedteams.md
+              - name: Listar todas as equipes em uma organização
+                href: api/teams-list.md
               - name: Obter canal principal
                 href: api/team-get-primarychannel.md
               - name: Obter foto da equipe

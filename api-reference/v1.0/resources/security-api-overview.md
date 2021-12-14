@@ -5,12 +5,12 @@ ms.localizationpriority: high
 author: preetikr
 ms.prod: security
 doc_type: conceptualPageType
-ms.openlocfilehash: 09630986ac095d10145332a26d7588362aa0e133
-ms.sourcegitcommit: e497ed9bb56400bdd2bb53d52ddf057d9966220b
+ms.openlocfilehash: ca0526b7eb1a044b3ba8ecf95d66a09b30b7d17d
+ms.sourcegitcommit: c900d22144429ac7aecae3355a4cdc1987cc4234
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/30/2021
-ms.locfileid: "61224486"
+ms.lasthandoff: 12/13/2021
+ms.locfileid: "61424690"
 ---
 # <a name="use-the-microsoft-graph-security-api"></a>Usar a API de Segurança do Microsoft Graph
 
@@ -35,7 +35,7 @@ Alertas dos seguintes provedores estão disponíveis por meio da API de seguran�
 |:------------------|:---------|:-----------|:------------------|
 |[Microsoft Defender para Nuvem](/azure/defender-for-cloud/alerts-overview)| <p align="center">&#x2713;</p> | <p align="center">&#x2713;</p> | <p align="center">&#x2713;</p> |
 |[Proteção de identidade do Azure Active Directory](/azure/active-directory/identity-protection/playbook) | <p align="center">&#x2713;</p> | <p align="center">[Problema de arquivo](https://github.com/microsoftgraph/security-api-solutions/issues/new) *</p> | <p align="center">&#x2713;</p> |
-| [Segurança no Aplicativo da Nuvem da Microsoft](/cloud-app-security/monitor-alerts) | <p align="center">&#x2713;</p> | <p align="center">[Problema de arquivo](https://github.com/microsoftgraph/security-api-solutions/issues/new) *</p> | <p align="center">&#x2713;</p> |
+| [Microsoft Defender for Cloud Apps](/cloud-app-security/monitor-alerts) | <p align="center">&#x2713;</p> | <p align="center">[Problema de arquivo](https://github.com/microsoftgraph/security-api-solutions/issues/new) *</p> | <p align="center">&#x2713;</p> |
 |[Microsoft Defender para Ponto de Extremidade](/windows/security/threat-protection/microsoft-defender-atp/attack-simulations) **| <p align="center">&#x2713;</p> | <p align="center">&#x2713;</p> | <p align="center"> [Problema de arquivo](https://github.com/microsoftgraph/security-api-solutions/issues/new) </p> |
 |[Microsoft Defender para Identidade](/defender-for-identity/understanding-security-alerts#security-alert-categories) ***| <p align="center">&#x2713;</p> | <p align="center">[Problema de arquivo](https://github.com/microsoftgraph/security-api-solutions/issues/new) *</p> | <p align="center">&#x2713;</p> |
 |Microsoft 365 <ul><li> [Padrão](/office365/securitycompliance/alert-policies#default-alert-policies)</li> <li>[Segurança no Aplicativo na Nuvem](/office365/securitycompliance/anomaly-detection-policies-in-ocas)</li><li>Alerta personalizado</li></ul> | <p align="center">&#x2713;</p> | <p align="center"> [Problema de arquivo](https://github.com/microsoftgraph/security-api-solutions/issues/new) </p> | <p align="center"> [Problema de arquivo](https://github.com/microsoftgraph/security-api-solutions/issues/new) </p> |
@@ -47,7 +47,7 @@ Alertas dos seguintes provedores estão disponíveis por meio da API de seguran�
 
 \*\* O Microsoft Defender para Ponto de Extremidade exige [funções de usuário](/windows/security/threat-protection/microsoft-defender-atp/user-roles) adicionais para aquelas requeridas pela API de Segurança do Microsoft Graph. Somente os usuários do Microsoft Defender para Ponto de Extremidade e as funções da API de Segurança do Microsoft Graph podem ter acesso aos dados do Microsoft Defender para Ponto de Extremidade. A autenticação somente para aplicativos não é limitada por isso. Portanto, recomendamos que você use um token de autenticação somente para aplicativos.
 
-\*\*\* Os alertas do Microsoft Defender para Identidade estão disponíveis por meio da integração do Microsoft Cloud App Security. Isso significa que você receberá alertas do Microsoft Defender para Identidade somente se você tiver ingressado em SecOps Unificado e conectado o Microsoft Defender para Identidade Microsoft Cloud App Security. Saiba mais sobre [como integrar o Microsoft Defender para Identidade e o Microsoft Cloud App Security](/defender-for-identity/mcas-integration).
+\*\*\* Os alertas do Microsoft Defender para Identidade estão disponíveis por meio da integração com o Microsoft Defender for Cloud Apps. Isso significa que você receberá alertas do Microsoft Defender para Identidade somente se tiver ingressado no portal Unified SecOps e conectado o Microsoft Defender para Identidade com o Microsoft Defender for Cloud Apps. Saiba mais sobre [como integrar o Microsoft Defender para Identidade com o Microsoft Defender for Cloud Apps.](/defender-for-identity/mcas-integration)
 
 ## <a name="information-protection"></a>Proteção de informações
 
