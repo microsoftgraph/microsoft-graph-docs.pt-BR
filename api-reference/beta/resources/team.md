@@ -1,16 +1,16 @@
 ---
 title: tipo de recurso de equipe
-description: 'No Microsoft Teams, uma equipe é um conjunto de canais. '
+description: No Microsoft Teams, uma equipe é um conjunto de canais.
 author: AkJo
 ms.localizationpriority: high
 ms.prod: microsoft-teams
 doc_type: resourcePageType
-ms.openlocfilehash: 7769fd62e04010b0ba36a325f64a62363570aa78
-ms.sourcegitcommit: c333953a9188b4cd4a9ab94cbe68871e8f3563e5
+ms.openlocfilehash: fa0289079f274f206dd630079084eef683a882d7
+ms.sourcegitcommit: c99d3feb3ab5cae506c1f758bc277a637adc9111
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/30/2021
-ms.locfileid: "58695298"
+ms.lasthandoff: 12/13/2021
+ms.locfileid: "61432658"
 ---
 # <a name="team-resource-type"></a>tipo de recurso de equipe
 
@@ -41,6 +41,7 @@ Cada equipe está associada a um [grupo](../resources/group.md). O grupo tem a m
 |[Desarquivar equipe](../api/team-unarchive.md) | [teamsAsyncOperation](../resources/teamsasyncoperation.md) |Restaure a equipe com um estado de leitura e gravação. |
 |[Clonar equipe](../api/team-clone.md) | [teamsAsyncOperation](../resources/teamsasyncoperation.md) |Copie a equipe e o grupo associado. |
 |[Listar suas equipes](../api/user-list-joinedteams.md) | Coleção [team](team.md) | Liste as equipes das quais você é membro. |
+|[Listar todas as equipes em uma organização](../api/teams-list.md) | Coleção [team](team.md) | Listar todas as equipes em uma organização. |
 |[Obter foto da equipe](../api/team-get-photo.md) | Dados Binários | Obter a foto (imagem) de uma equipe. |
 |[Migração completa](../api/team-completemigration.md)|[equipe](team.md)| Remove o modo de migração da equipe e disponibiliza a equipe aos usuários para postar e ler mensagens.|
 |[Listar aplicativos em equipe](../api/team-list-installedapps.md) | Coleção [teamsAppInstallation](teamsappinstallation.md) | Liste os aplicativos instalados em uma equipe.|
@@ -79,7 +80,7 @@ Atributos de instância são propriedades com comportamentos especiais. Essas pr
 |:-----------------------|:-------|:-------------------------|
 |@microsoft.graph.teamCreationMode|cadeia de caracteres|Indica que a equipe está em estado de migração e atualmente está sendo usada para fins de migração. Ele aceita um valor: `migration`. **Observação**: no futuro, a Microsoft pode exigir que você ou seus clientes paguem taxas adicionais com base na quantidade de dados importados.|
 
-Para um exemplo de solicitação POST, confira [Solicitação (criar equipe no estado de migração)](https://docs.microsoft.com/microsoftteams/platform/graph-api/import-messages/import-external-messages-to-teams).
+Para um exemplo de solicitação POST, confira [Solicitação (criar equipe no estado de migração)](/microsoftteams/platform/graph-api/import-messages/import-external-messages-to-teams).
 
 ## <a name="relationships"></a>Relações
 

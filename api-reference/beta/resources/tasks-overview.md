@@ -1,16 +1,16 @@
 ---
-title: Usar a API de Tarefas Pendentes da Microsoft
+title: Usar a API de Tarefas do Microsoft To Do
 description: Você pode usar a API Microsoft Graph para criar um aplicativo que se conecta a tarefas e listas de tarefas no Microsoft To Do.
 author: avijityadav
 ms.localizationpriority: high
 ms.prod: outlook
 doc_type: conceptualPageType
-ms.openlocfilehash: 1151b52f94c4458f500abb5a767674cf19aa5f5a
-ms.sourcegitcommit: c900d22144429ac7aecae3355a4cdc1987cc4234
+ms.openlocfilehash: 1275e9de566bad3797255d232d2edf5892ac4b6d
+ms.sourcegitcommit: c99d3feb3ab5cae506c1f758bc277a637adc9111
 ms.translationtype: HT
 ms.contentlocale: pt-BR
 ms.lasthandoff: 12/13/2021
-ms.locfileid: "61424821"
+ms.locfileid: "61432638"
 ---
 # <a name="use-the-microsoft-to-do-api"></a>Usar a API do Microsoft To Do
 
@@ -31,7 +31,7 @@ Antes de começar com a API de Tarefas Pendentes, dê uma olhada nos recursos e 
 
 ## <a name="task-list"></a>Lista de tarefas
 
-Uma [TaskList](./basetasklist.md) representa um contêiner lógico de recursos [Tarefa](./basetask.md). Atualmente, você só pode criar tarefas em uma lista de tarefas. As tarefas criadas sem especificar a lista são criadas na lista de Tarefas padrão. Para [obter todas as suas listas de tarefas](../api/todotasklist-get.md), faça a seguinte solicitação HTTP:
+Uma [TaskList](./basetasklist.md) representa um contêiner lógico de recursos [Tarefa](./basetask.md). Atualmente, você só pode criar tarefas em uma lista de tarefas. As tarefas criadas sem especificar a lista são criadas na lista de Tarefas padrão. Para [obter todas as suas listas de tarefas](../api/basetasklist-get.md), faça a seguinte solicitação HTTP:
 
 ``` http
 GET /me/tasks/lists
@@ -48,7 +48,7 @@ GET /me/tasks/lists/{taskListId}/tasks
 
 Um [ChecklistItem](linkedresource_v2.md) um item que ajuda a dividir tarefas complexas em etapas muito menores. Para obter um checklistItems de uma tarefa, faça a seguinte solicitação HTTP:
 ``` http
-GET /me/todo/lists/{taskListId}/tasks/{taskId}/checklistItems/{checklistItems}
+GET /me/tasks/lists/{taskListId}/tasks/{taskId}/checklistItems/{checklistItems}
 ```
 
 ## <a name="linked-resource"></a>Recurso vinculado
