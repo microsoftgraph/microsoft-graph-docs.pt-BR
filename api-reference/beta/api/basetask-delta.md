@@ -5,12 +5,12 @@ author: devindrajit
 ms.localizationpriority: medium
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 58f0514362776b064d3c47e3cd6dd1a50e5d19ae
-ms.sourcegitcommit: c900d22144429ac7aecae3355a4cdc1987cc4234
+ms.openlocfilehash: fc065195925fb39a3acb66a9c9d33c6eccc1a249
+ms.sourcegitcommit: c47e3d1f3c5f7e2635b2ad29dfef8fe7c8080bc8
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/13/2021
-ms.locfileid: "61424791"
+ms.lasthandoff: 12/15/2021
+ms.locfileid: "61525341"
 ---
 # <a name="basetask-delta"></a>baseTask: delta
 Namespace: microsoft.graph
@@ -21,12 +21,12 @@ Obter um conjunto de [recursos baseTask](../resources/basetask.md) que foram adi
 
 Uma **chamada** de função delta para **recursos baseTask** em uma **baseTaskList** é semelhante a uma solicitação GET, exceto que, aplicando [adequadamente tokens](/graph/delta-query-overview) de estado em uma ou mais dessas chamadas, você pode consultar alterações incrementais no **baseTask** nesse **baseTaskList**. Isso permite manter e sincronizar um armazenamento local dos recursos **baseTask** de um usuário sem precisar buscar todo o conjunto do servidor sempre.
 
-## <a name="permissions"></a>Permissões
+## <a name="permissions"></a>Permissions
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão|Permissões (da com menos para a com mais privilégios)|
 |:---|:---|
-|Delegada (conta corporativa ou de estudante)|Tasks.Read, Tasks.ReadWrite|
+|Delegado (conta corporativa ou de estudante)|Tasks.Read, Tasks.ReadWrite|
 |Delegada (conta pessoal da Microsoft)|Tasks.Read, Tasks.ReadWrite|
 |Aplicativo|Sem suporte|
 
@@ -71,6 +71,8 @@ Se tiver êxito, essa função retornará um código `200 OK` de resposta e uma 
 ## <a name="examples"></a>Exemplos
 
 ### <a name="request"></a>Solicitação
+
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "basetask_delta"
@@ -79,6 +81,24 @@ Se tiver êxito, essa função retornará um código `200 OK` de resposta e uma 
 ``` http
 GET /me/tasks/lists/AAMkAGVjMzJmMWZjLTgyYjgtNGIyNi1hOGQ0LWRjMjNmMGRmOWNiYQAuAAAAAAAboFsPFj7gQpLAt-6oC2JgAQCQ47jE5P--SoVECqTdM17RAAAB4mDIAAA=/tasks/delta
 ```
+# <a name="c"></a>[C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/basetask-delta-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/basetask-delta-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/basetask-delta-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/basetask-delta-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 
 ### <a name="response"></a>Resposta

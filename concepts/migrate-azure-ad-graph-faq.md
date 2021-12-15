@@ -4,12 +4,12 @@ description: Fornece respostas para perguntas frequentes sobre como migrar do Az
 author: FaithOmbongi
 ms.localizationpriority: medium
 ms.prod: applications
-ms.openlocfilehash: 19f1691126317861d84e89fab44f9cdbaaaa7ea2
-ms.sourcegitcommit: c900d22144429ac7aecae3355a4cdc1987cc4234
+ms.openlocfilehash: 2c3f64045cc7bf0f03b661f20bd5eb7a1e3fcd97
+ms.sourcegitcommit: c47e3d1f3c5f7e2635b2ad29dfef8fe7c8080bc8
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/13/2021
-ms.locfileid: "61424326"
+ms.lasthandoff: 12/15/2021
+ms.locfileid: "61526062"
 ---
 # <a name="azure-ad-graph-to-microsoft-graph-migration-faq"></a>Perguntas frequentes sobre migração do Azure AD Graph Microsoft Graph migração
 
@@ -141,7 +141,7 @@ Se você ainda precisar configurar as permissões do Azure AD Graph seus aplicat
 + Usar o portal do Azure para encontrar as APIs que sua organização usa
 + Atualizar o manifesto do aplicativo no portal do Azure
 + Use a API [de](/graph/api/resources/application) aplicativo no Microsoft Graph atualizar [o objeto requiredResourceAccess](/graph/api/resources/requiredresourceaccess)
-+ Use o cmdlet [Update-MgApplication](/powershell/module/microsoft.graph.applications/update-mgapplication?view=graph-powershell-1.0&preserve-view=true)   no Microsoft Graph PowerShell
++ Use o cmdlet [Update-MgApplication](/powershell/module/microsoft.graph.applications/update-mgapplication?view=graph-powershell-1.0&preserve-view=true)   no Microsoft Graph PowerShell SDK
 
 Para exemplos usando as soluções alternativas listadas, consulte Usar o Microsoft Graph para configurar permissões necessárias do [Azure AD Graph](migrate-azure-ad-graph-configure-permissions.md) para um registro de aplicativo
 

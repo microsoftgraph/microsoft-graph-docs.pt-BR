@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: abhijeetsinha
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: 528ed9ba1c0630b5a81689fc6094a1c0845b2315
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: a41946e3ceca815ed2263075a4e3fcc3554b2b17
+ms.sourcegitcommit: c47e3d1f3c5f7e2635b2ad29dfef8fe7c8080bc8
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "61033499"
+ms.lasthandoff: 12/15/2021
+ms.locfileid: "61526055"
 ---
 # <a name="get-unifiedroledefinition"></a>Obter unifiedRoleDefinition
 
@@ -26,40 +26,40 @@ No momento, há suporte para os seguintes provedores RBAC:
 - directory (funções de diretório do Azure AD)
 - gerenciamento de direitos (gerenciamento de direitos do Azure AD)
 
-## <a name="permissions"></a>Permissões
+## <a name="permissions"></a>Permissions
 
-Dependendo do provedor RBAC e do tipo de permissão (delegado ou aplicativo) necessário, escolha na tabela a seguinte permissão com menos privilégios necessária para chamar essa API. Para saber mais, incluindo [ter cuidado antes](/graph/auth/auth-concepts#best-practices-for-requesting-permissions) de escolher permissões mais privilegiadas, consulte [Permissions](/graph/permissions-reference). 
+Dependendo do provedor RBAC e do tipo de permissão (delegado ou aplicativo) necessário, escolha entre as tabelas a permissão menos privilegiada necessária para chamar essa API. Para saber mais, incluindo [ter cuidado antes](/graph/auth/auth-concepts#best-practices-for-requesting-permissions) de escolher permissões mais privilegiadas, consulte [Permissions](/graph/permissions-reference). 
 
-### <a name="for-cloud-pc-provider"></a>Para provedor de computadores na nuvem
+### <a name="for-a-cloud-pc-provider"></a>Para um provedor de computadores na nuvem
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegado (conta corporativa ou de estudante) |  CloudPC.Read.All, CloudPC.ReadWrite.All   |
-|Delegado (conta pessoal da Microsoft) | Sem suporte.    |
-|Aplicativo | CloudPC.Read.All, CloudPC.ReadWrite.All  |
+|Delegado (conta corporativa ou de estudante) |  CloudPC.Read.All, CloudPC.ReadWrite.All, RoleManagement.Read.All   |
+|Delegada (conta pessoal da Microsoft) | Sem suporte.    |
+|Aplicativo | CloudPC.Read.All, CloudPC.ReadWrite.All, RoleManagement.Read.All  |
 
-### <a name="for-device-management-intune-provider"></a>Para o provedor de gerenciamento de dispositivos (Intune)
+### <a name="for-a-device-management-intune-provider"></a>Para um provedor de gerenciamento de dispositivos (Intune)
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
 |:--------------------|:---------------------------------------------------------|
 |Delegado (conta corporativa ou de estudante) |  DeviceManagementRBAC.Read.All, DeviceManagementRBAC.ReadWrite.All   |
-|Delegado (conta pessoal da Microsoft) | Sem suporte.    |
+|Delegada (conta pessoal da Microsoft) | Sem suporte.    |
 |Aplicativo | DeviceManagementRBAC.Read.All, DeviceManagementRBAC.ReadWrite.All |
 
-### <a name="for-directory-azure-ad-provider"></a>Provedor do Azure AD (Diretório)
+### <a name="for-a-directory-azure-ad-provider"></a>Para um provedor de diretório (Azure AD)
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
 |:--------------------|:---------------------------------------------------------|
 |Delegado (conta corporativa ou de estudante) |  RoleManagement.Read.Directory, Directory.Read.All, RoleManagement.ReadWrite.Directory, Directory.ReadWrite.All, Directory.AccessAsUser.All   |
-|Delegado (conta pessoal da Microsoft) | Sem suporte.    |
+|Delegada (conta pessoal da Microsoft) | Sem suporte.    |
 |Aplicativo | RoleManagement.Read.Directory, Directory.Read.All, RoleManagement.ReadWrite.Directory, Directory.ReadWrite.All |
 
-### <a name="for-entitlement-management-provider"></a>Para provedor de gerenciamento de direitos
+### <a name="for-an-entitlement-management-provider"></a>Para um provedor de gerenciamento de direitos
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
 |:--------------------|:---------------------------------------------------------|
 |Delegado (conta corporativa ou de estudante) |  EntitlementManagement.Read.All, EntitlementManagement.ReadWrite.All   |
-|Delegado (conta pessoal da Microsoft) | Sem suporte.    |
+|Delegada (conta pessoal da Microsoft) | Sem suporte.    |
 |Aplicativo | Sem suporte. |
 
 ## <a name="http-request"></a>Solicitação HTTP
@@ -142,7 +142,7 @@ GET https://graph.microsoft.com/beta/roleManagement/directory/roleDefinitions/f1
 [!INCLUDE [sample-code](../includes/snippets/java/get-custom-role-unifiedroledefinition-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[Go](#tab/go)
+# <a name="go"></a>[Ir](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/get-custom-role-unifiedroledefinition-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
@@ -220,7 +220,7 @@ GET https://graph.microsoft.com/beta/roleManagement/directory/roleDefinitions/fd
 [!INCLUDE [sample-code](../includes/snippets/java/get-built-in-role-unifiedroledefinition-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[Go](#tab/go)
+# <a name="go"></a>[Ir](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/get-built-in-role-unifiedroledefinition-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
@@ -324,7 +324,7 @@ GET https://graph.microsoft.com/beta/roleManagement/directory/roleDefinitions/fd
 [!INCLUDE [sample-code](../includes/snippets/java/get-inheritsfrom-unifiedroledefinition-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[Go](#tab/go)
+# <a name="go"></a>[Ir](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/get-inheritsfrom-unifiedroledefinition-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
@@ -492,7 +492,7 @@ GET https://graph.microsoft.com/beta/roleManagement/cloudPC/roleDefinitions/d403
 [!INCLUDE [sample-code](../includes/snippets/java/get-built-in-cloudpc-role-unifiedroledefinition-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[Go](#tab/go)
+# <a name="go"></a>[Ir](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/get-built-in-cloudpc-role-unifiedroledefinition-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
@@ -571,7 +571,7 @@ GET https://graph.microsoft.com/beta/roleManagement/entitlementManagement/roleDe
 [!INCLUDE [sample-code](../includes/snippets/java/get-built-in-entitlementmanagement-role-unifiedroledefinition-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[Go](#tab/go)
+# <a name="go"></a>[Ir](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/get-built-in-entitlementmanagement-role-unifiedroledefinition-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 

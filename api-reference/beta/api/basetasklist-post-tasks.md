@@ -5,12 +5,12 @@ author: devindrajit
 ms.localizationpriority: medium
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 03d3ab9a0a16f1f2b16cf3aed5321fed8c535c76
-ms.sourcegitcommit: c900d22144429ac7aecae3355a4cdc1987cc4234
+ms.openlocfilehash: b450ed9e87af65fede3f8e850a55dcd41ac68897
+ms.sourcegitcommit: c47e3d1f3c5f7e2635b2ad29dfef8fe7c8080bc8
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/13/2021
-ms.locfileid: "61424783"
+ms.lasthandoff: 12/15/2021
+ms.locfileid: "61525229"
 ---
 # <a name="create-basetask"></a>Criar baseTask
 Namespace: microsoft.graph
@@ -19,12 +19,12 @@ Namespace: microsoft.graph
 
 Crie um novo [objeto baseTask](../resources/basetask.md) em uma [baseTaskList específica.](../resources/basetasklist.md)
 
-## <a name="permissions"></a>Permissões
+## <a name="permissions"></a>Permissions
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão|Permissões (da com menos para a com mais privilégios)|
 |:---|:---|
-|Delegada (conta corporativa ou de estudante)|Tasks.ReadWrite|
+|Delegado (conta corporativa ou de estudante)|Tasks.ReadWrite|
 |Delegada (conta pessoal da Microsoft)|Tasks.ReadWrite|
 |Aplicativo|Sem suporte|
 
@@ -61,7 +61,7 @@ Você pode especificar as seguintes propriedades ao criar **uma baseTask**.
 |startDateTime|[dateTimeTimeZone](../resources/datetimetimezone.md)|A data no fuso horário especificado que a tarefa será iniciada.|
 |importância|importância|A importância da tarefa. Os valores possíveis são: `low`, `normal`, `high`.|
 |recurrence|[patternedRecurrence](../resources/patternedrecurrence.md)|O padrão de recorrência da tarefa.|
-|displayName|String|Uma breve descrição da tarefa.|
+|displayName|Cadeia de caracteres|Uma breve descrição da tarefa.|
 |status|taskStatus_v2|Indica o estado ou o andamento da tarefa. Os valores possíveis são: `notStarted`, `inProgress`, `completed`, `unknownFutureValue`. Obrigatório.|
 |personalProperties|[personalTaskProperties](../resources/personaltaskproperties.md)|Propriedades que são pessoais para um usuário, como reminderDateTime.|
 
@@ -74,6 +74,8 @@ Se tiver êxito, este método retornará um código `201 Created` de resposta e 
 ## <a name="examples"></a>Exemplos
 
 ### <a name="request"></a>Solicitação
+
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "create_basetask_from_"
@@ -108,6 +110,12 @@ Content-length: 634
   }
 }
 ```
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/create-basetask-from--javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 
 ### <a name="response"></a>Resposta

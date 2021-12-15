@@ -1,15 +1,15 @@
 ---
 title: Resolver erros de autorização do Microsoft Graph
 description: Descubra como solucionar os erros de autorização do Microsoft Graph 401 e 403.
-author: davidmu1
+author: FaithOmbongi
 ms.localizationpriority: high
 ms.prod: applications
-ms.openlocfilehash: f3b6c4eee7bc99e755af2d071de7f1c4a1b075a3
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 38fab3502dbf025408b6abc45c9d50021284c727
+ms.sourcegitcommit: c47e3d1f3c5f7e2635b2ad29dfef8fe7c8080bc8
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59083912"
+ms.lasthandoff: 12/15/2021
+ms.locfileid: "61525824"
 ---
 # <a name="resolve-microsoft-graph-authorization-errors"></a>Resolver erros de autorização do Microsoft Graph
 

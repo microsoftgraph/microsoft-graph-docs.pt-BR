@@ -4,18 +4,23 @@ description: Configure permissões necessárias do Azure AD Graph para um regist
 author: FaithOmbongi
 ms.localizationpriority: medium
 ms.prod: applications
-ms.openlocfilehash: 7a892bcf27da48673704f3596d9ca24cd31c8bd9
-ms.sourcegitcommit: 65f4e128f96783c18d607a6dcffbc914291285d4
+ms.openlocfilehash: 916d368d880c615a7216b32e53946ff3b3554470
+ms.sourcegitcommit: c47e3d1f3c5f7e2635b2ad29dfef8fe7c8080bc8
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/08/2021
-ms.locfileid: "61344481"
+ms.lasthandoff: 12/15/2021
+ms.locfileid: "61526069"
 ---
 # <a name="configure-required-azure-ad-graph-permissions-for-an-app-registration"></a>Configurar permissões necessárias do Azure AD Graph para um registro de aplicativo
 
 Azure Active Directory (Azure AD) Graph está preterido e será retirado em 30 de junho de 2022. Como parte desse caminho de depreciação, a adição de permissões do Azure AD Graph a um registro de aplicativo por meio do portal do Azure agora está desabilitada. Recomendamos que você siga a lista de verificação planejamento [de migração](migrate-azure-ad-graph-planning-checklist.md) de aplicativos para ajudá-lo a fazer a transição de seus aplicativos [para a API Graph](/graph/overview) Microsoft.
 
-No entanto, seu aplicativo ainda pode exigir temporariamente permissões do Azure AD Graph acessar recursos. Este artigo fornece orientações para configurar permissões necessárias para o Azure AD Graph para o registro do aplicativo.
+No entanto, seu aplicativo ainda pode exigir temporariamente permissões do Azure AD Graph acessar recursos. Este artigo descreve os quatro métodos a seguir para configurar permissões necessárias do Azure AD Graph para o registro do aplicativo:
+
+1. [Usar o portal do Azure para encontrar as APIs que sua organização usa](#option-1-use-the-azure-portal-to-find-the-apis-your-organization-uses)
+1. [Atualizar o manifesto do aplicativo no portal do Azure](#option-2-update-the-application-manifest-on-the-azure-portal)
+1. [Usar a API do Microsoft Graph](#option-3-use-the-microsoft-graph-api)
+1. [Usar o Microsoft Graph PowerShell SDK](#option-4-use-the-microsoft-graph-powershell-sdk)
 
 > [!CAUTION]
 > Qualquer aplicativo usando o Azure AD Graph ainda irá parar de funcionar após 30 de junho de 2022. Para obter mais informações, [consulte Migrate Azure AD Graph aplicativos para o Microsoft Graph](migrate-azure-ad-graph-overview.md).
@@ -221,7 +226,7 @@ HTTP/1.1 204 No Content
 
 ### <a name="step-3-verify-that-the-required-azure-ad-graph-permissions-were-added-to-your-app"></a>Etapa 3: Verifique se as permissões necessárias do Azure AD Graph foram adicionadas ao seu aplicativo
 
-Verifique se o registro do aplicativo tem as permissões de API necessárias adicionadas na Etapa 2 usando a API do Microsoft Graph ou verificando a página Registros de aplicativo **no** portal do Azure.
+Verifique se o registro do aplicativo tem as permissões de API necessárias do Azure AD Graph adicionadas na Etapa 2 usando a API do Microsoft Graph ou verificando a página Registros de aplicativo **no** portal do Azure.
 
 #### <a name="use-the-microsoft-graph-get-applicationid-api"></a>Usar a API GET /application/{id} da Microsoft Graph microsoft
 
@@ -233,9 +238,9 @@ GET https://graph.microsoft.com/v1.0/applications/581088ba-83c5-4975-b8af-11d2d7
 
 >**Observação:** Embora você tenha configurado as permissões que o aplicativo exige, essas permissões não foram concedidas. Muitas permissões exigem consentimento do administrador antes que possam ser usadas para acessar dados organizacionais.
 
-## <a name="option-4-use-microsoft-graph-powershell"></a>Opção 4: Usar o Microsoft Graph PowerShell
+## <a name="option-4-use-the-microsoft-graph-powershell-sdk"></a>Opção 4: Usar o Microsoft Graph PowerShell SDK
 
-O cmdlet [Update-MgApplication](/powershell/module/microsoft.graph.applications/update-mgapplication?view=graph-powershell-1.0&preserve-view=true) no Microsoft Graph PowerShell inclui um parâmetro **RequiredResourceAccess** que é uma coleção de **objetos IMicrosoftGraphRequiredResourceAccess.** Use este parâmetro para configurar as permissões necessárias do Azure AD Graph conforme descrito nas etapas a seguir.
+O cmdlet [Update-MgApplication](/powershell/module/microsoft.graph.applications/update-mgapplication?view=graph-powershell-1.0&preserve-view=true) no Microsoft Graph PowerShell SDK inclui um parâmetro **RequiredResourceAccess** que é uma coleção de objetos **IMicrosoftGraphRequiredResourceAccess.** Use este parâmetro para configurar as permissões necessárias do Azure AD Graph conforme descrito nas etapas a seguir.
 
 ### <a name="prerequisites"></a>Pré-requisitos
 

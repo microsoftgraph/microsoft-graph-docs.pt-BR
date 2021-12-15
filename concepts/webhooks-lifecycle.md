@@ -1,15 +1,15 @@
 ---
 title: Reduzir assinaturas ausentes e alterar notificações
 description: Os aplicativos que estão se inscrevendo para alterar as notificações de recursos podem ter suas assinaturas removidas e perder algumas notificações de alteração. Os aplicativos devem implementar a lógica para detectar e recuperar da perda e retomar o fluxo de notificação de alteração contínua.
-author: davidmu1
+author: FaithOmbongi
 ms.localizationpriority: high
 ms.custom: graphiamtop20
-ms.openlocfilehash: 519178ee7609d615c32c628721b3154853273422
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: fed0c61d8cdf933d126c3ae880494afef51530a5
+ms.sourcegitcommit: c47e3d1f3c5f7e2635b2ad29dfef8fe7c8080bc8
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59108748"
+ms.lasthandoff: 12/15/2021
+ms.locfileid: "61523241"
 ---
 # <a name="reduce-missing-subscriptions-and-change-notifications"></a>Reduzir assinaturas ausentes e alterar notificações
 

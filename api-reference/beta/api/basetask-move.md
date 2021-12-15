@@ -5,12 +5,12 @@ author: devindrajit
 ms.localizationpriority: medium
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 313f4c330f8d239dc84e36917073124e146a3304
-ms.sourcegitcommit: c900d22144429ac7aecae3355a4cdc1987cc4234
+ms.openlocfilehash: 5d869b921fc00c683cb1d26ff30761480d665a30
+ms.sourcegitcommit: c47e3d1f3c5f7e2635b2ad29dfef8fe7c8080bc8
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/13/2021
-ms.locfileid: "61424772"
+ms.lasthandoff: 12/15/2021
+ms.locfileid: "61524774"
 ---
 # <a name="basetask-move"></a>baseTask: move
 Namespace: microsoft.graph
@@ -19,12 +19,12 @@ Namespace: microsoft.graph
 
 Mova um [objeto baseTask](../resources/basetask.md) de [um baseTaskList](../resources/basetasklist.md) para outro.
 
-## <a name="permissions"></a>Permissões
+## <a name="permissions"></a>Permissions
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão|Permissões (da com menos para a com mais privilégios)|
 |:---|:---|
-|Delegada (conta corporativa ou de estudante)|Tasks.ReadWrite|
+|Delegado (conta corporativa ou de estudante)|Tasks.ReadWrite|
 |Delegada (conta pessoal da Microsoft)|Tasks.ReadWrite|
 |Aplicativo|Sem suporte|
 
@@ -57,7 +57,7 @@ A tabela a seguir mostra os parâmetros que podem ser usados com esta ação.
 
 |Parâmetro|Tipo|Descrição|
 |:---|:---|:---|
-|destinationTaskListId|Cadeia de Caracteres|O [baseTaskList para](../resources/basetasklist.md) o qual [o objeto baseTask](../resources/basetask.md) deve ser movido.|
+|destinationTaskListId|Cadeia de caracteres|O [baseTaskList para](../resources/basetasklist.md) o qual [o objeto baseTask](../resources/basetask.md) deve ser movido.|
 
 
 
@@ -68,6 +68,8 @@ Se tiver êxito, essa ação retornará `200 OK` um código de resposta e um [ba
 ## <a name="examples"></a>Exemplos
 
 ### <a name="request"></a>Solicitação
+
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "basetask_move"
@@ -82,6 +84,12 @@ Content-length: 41
   "destinationTaskListId": "AAMkAGVjMzJmMWZjLTgyYjgtNGIyNi1hOGQ0LWRjMjNmMGRmOWNiYQAuAAAAAAAboFsPFj7gQqFxG"
 }
 ```
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/basetask-move-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 
 ### <a name="response"></a>Resposta

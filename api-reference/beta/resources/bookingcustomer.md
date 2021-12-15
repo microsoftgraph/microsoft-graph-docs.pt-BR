@@ -1,16 +1,16 @@
 ---
 title: Tipo de recurso bookingCustomer
-description: " > **Importante:** as APIs na versão /beta no Microsoft Graph estão em visualização e sujeitas a alterações. Não há suporte para o uso dessas APIs em aplicativos de produção."
+description: Representa um cliente de um bookingBusiness.
 ms.localizationpriority: medium
 author: arvindmicrosoft
 ms.prod: bookings
 doc_type: resourcePageType
-ms.openlocfilehash: 3d5eff9d0add4a0840e864b9f4caf1730be98e5a
-ms.sourcegitcommit: c7ff992ef63e480d070421ba99b28ee129cb6acb
+ms.openlocfilehash: 6c8dae5ce7f541f45bc3856e1c3b4de83d5a5307
+ms.sourcegitcommit: c47e3d1f3c5f7e2635b2ad29dfef8fe7c8080bc8
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "60696228"
+ms.lasthandoff: 12/15/2021
+ms.locfileid: "61526146"
 ---
 # <a name="bookingcustomer-resource-type"></a>Tipo de recurso bookingCustomer
 
@@ -21,7 +21,7 @@ Namespace: microsoft.graph
 Representa um cliente de [um bookingBusiness](bookingbusiness.md).
 
 
-## <a name="methods"></a>Métodos
+## <a name="methods"></a>Methods
 
 | Método           | Tipo de retorno    |Descrição|
 |:---------------|:--------|:----------|
@@ -29,15 +29,15 @@ Representa um cliente de [um bookingBusiness](bookingbusiness.md).
 |[Criar bookingCustomer](../api/bookingbusiness-post-customers.md) | [bookingCustomer](bookingcustomer.md) | Crie um novo **objeto bookingCustomer.** |
 |[Obter bookingCustomer](../api/bookingcustomer-get.md) | [bookingCustomer](bookingcustomer.md) |Leia as propriedades e as relações de um **objeto bookingCustomer.**|
 |[Atualizar](../api/bookingcustomer-update.md) | [bookingCustomer](bookingcustomer.md) |Atualize um **objeto bookingCustomer.** |
-|[Excluir](../api/bookingcustomer-delete.md) | Nenhum |**Exclua um objeto bookingCustomer.** |
+|[Delete](../api/bookingcustomer-delete.md) | Nenhuma |**Exclua um objeto bookingCustomer.** |
 
 ## <a name="properties"></a>Propriedades
 | Propriedade     | Tipo   |Descrição|
 |:---------------|:--------|:----------|
-|displayName|String|O nome do cliente.|
-|emailAddress|String|O endereço SMTP do cliente.|
-|id|String| A ID do cliente. Apenas leitura.|
 |addresses|[Coleção physicalAddress](../resources/physicaladdress.md)|Endereços associados ao cliente, incluindo home, business e outros endereços.|
+|displayName|Cadeia de caracteres|O nome do cliente.|
+|emailAddress|String|O endereço SMTP do cliente.|
+|id|Cadeia de caracteres| A ID do cliente. Somente leitura.|
 |telefones|Coleção [phone](../resources/phone.md)|Telefone números associados ao cliente, incluindo números fixos, comerciais e móveis.|
 
 ## <a name="relationships"></a>Relações

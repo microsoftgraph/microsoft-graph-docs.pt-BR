@@ -1,15 +1,15 @@
 ---
 title: 'Obter as alterações incrementais para os eventos em um modo de exibição de calendário '
 description: 'O modo de visualização de calendário em um conjunto de eventos em um intervalo de data/horário do calendário-padrão (../me/calendarview) '
-author: davidmu1
+author: FaithOmbongi
 ms.localizationpriority: high
 ms.custom: graphiamtop20
-ms.openlocfilehash: 37d7231962fbf025064bba96594b019506b69794
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 2734559d7c43b39cd3e144b1c78d2ebd5111fd27
+ms.sourcegitcommit: c47e3d1f3c5f7e2635b2ad29dfef8fe7c8080bc8
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59142429"
+ms.lasthandoff: 12/15/2021
+ms.locfileid: "61525495"
 ---
 # <a name="get-incremental-changes-to-events-in-a-calendar-view"></a>Obter as alterações incrementais para os eventos em um modo de exibição de calendário 
 

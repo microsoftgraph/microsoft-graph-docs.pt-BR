@@ -3,13 +3,13 @@ title: Gerando um token de comprovação de posse para sobrepor chaves
 description: Como parte da validação da solicitação para os métodos addKey e removeKey, é necessário um token de comprovação de posse. Este documento fornece orientação para gerar o token de comprovação de posse.
 ms.localizationpriority: high
 ms.prod: applications
-author: davidmu1
-ms.openlocfilehash: 1df754757ce5707f0c06c709fc3adc423ad36da0
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+author: FaithOmbongi
+ms.openlocfilehash: 6e3f3b0c807af73e53fe9ea5e122e17c4f79c7a9
+ms.sourcegitcommit: c47e3d1f3c5f7e2635b2ad29dfef8fe7c8080bc8
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59142415"
+ms.lasthandoff: 12/15/2021
+ms.locfileid: "61525481"
 ---
 # <a name="generating-proof-of-possession-tokens-for-rolling-keys"></a>Gerando um token de comprovação de posse para sobrepor chaves
 

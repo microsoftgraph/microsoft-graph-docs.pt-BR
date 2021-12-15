@@ -1,15 +1,15 @@
 ---
 title: 'Tutorial: identificar e correção de riscos usando APIs do Microsoft Graph'
 description: Saiba como identificar e correção de riscos usando APIs Graph Microsoft.
-author: davidmu1
+author: FaithOmbongi
 ms.localizationpriority: medium
 ms.prod: identity-and-sign-in
-ms.openlocfilehash: 4c1f901199e1d5a1d68694e80522c5180810cf2d
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 5c32ea73d83366188954f4736e0a1cbd17064ddb
+ms.sourcegitcommit: c47e3d1f3c5f7e2635b2ad29dfef8fe7c8080bc8
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59143493"
+ms.lasthandoff: 12/15/2021
+ms.locfileid: "61523255"
 ---
 # <a name="tutorial-identify-and-remediate-risks-using-microsoft-graph-apis"></a>Tutorial: identificar e correção de riscos usando APIs do Microsoft Graph
 

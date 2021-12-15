@@ -2,14 +2,14 @@
 title: API de retransmissão de dispositivos no Microsoft Graph (prévia)
 description: 'Hoje, as pessoas interagem com vários dispositivos diariamente. Os usuários geralmente iniciam tarefas de produtividade e atividades de entretenimento em um dispositivo e continuam em outro. Para atender às necessidades de seus clientes, seus aplicativos precisam abranger dispositivos e plataformas. '
 ms.localizationpriority: medium
-author: davidmu1
+author: FaithOmbongi
 ms.prod: cross-device-experiences
-ms.openlocfilehash: aa307f518cbd2ffd98aedb4737960da031f0b23a
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 38a90e2cbdb5357190edbf3f8d3ea6f234414902
+ms.sourcegitcommit: c47e3d1f3c5f7e2635b2ad29dfef8fe7c8080bc8
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59137410"
+ms.lasthandoff: 12/15/2021
+ms.locfileid: "61524571"
 ---
 # <a name="device-relay-api-in-microsoft-graph-preview"></a>API de retransmissão de dispositivos no Microsoft Graph (prévia)
 

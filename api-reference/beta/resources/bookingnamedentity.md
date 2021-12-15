@@ -1,29 +1,29 @@
 ---
-title: tipo de recurso bookingNamedEntity
-description: " > **Importante:** as APIs na versão /beta no Microsoft Graph estão em visualização e sujeitas a alterações. Não há suporte para o uso dessas APIs em aplicativos de produção."
-localization_priority: Normal
+title: Tipo de recurso bookingNamedEntity
+description: Esse é um tipo base para entidades do Microsoft Bookings que fornecem um nome de exibição, por exemplo, bookingBusiness, bookingPerson, bookingService.
+ms.localizationpriority: medium
 author: arvindmicrosoft
 ms.prod: bookings
 doc_type: resourcePageType
-ms.openlocfilehash: 3302f364b3f16dc6327b9a1e9ab74161e122ebfb
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 9d0700f6ac86d16ad00684d429a0f88fdb7a16a7
+ms.sourcegitcommit: c47e3d1f3c5f7e2635b2ad29dfef8fe7c8080bc8
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48071777"
+ms.lasthandoff: 12/15/2021
+ms.locfileid: "61525285"
 ---
-# <a name="bookingnamedentity-resource-type"></a>tipo de recurso bookingNamedEntity
+# <a name="bookingnamedentity-resource-type"></a>Tipo de recurso bookingNamedEntity
 
 Namespace: microsoft.graph
 
  [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
  
-Este é um tipo base para entidades de livros da Microsoft que fornecem um nome de exibição, por exemplo, [bookingBusiness](bookingbusiness.md), [bookingPerson](bookingperson.md), [bookingService](bookingservice.md).
+Este é um tipo base para entidades do Microsoft Bookings que fornecem um nome de exibição, por exemplo, [bookingBusiness](bookingbusiness.md), [bookingPerson](bookingperson.md), [bookingService](bookingservice.md), [bookingCustomQuestion](bookingcustomquestion.md).
 
 ## <a name="properties"></a>Propriedades
 | Propriedade     | Tipo   |Descrição|
 |:---------------|:--------|:----------|
-|displayName|Cadeia de caracteres|Um nome para a entidade derivada, que faz interface com clientes.|
+|displayName|Cadeia de caracteres|Um nome para a entidade derivada, que faz interface com os clientes.|
 |id|Cadeia de caracteres| A ID da entidade derivada. Somente leitura.|
 
 ## <a name="relationships"></a>Relações

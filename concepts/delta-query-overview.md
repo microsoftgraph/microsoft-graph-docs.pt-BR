@@ -1,15 +1,15 @@
 ---
 title: Usar a consulta delta para controlar alterações nos dados do Microsoft Graph
 description: A consulta delta permite que aplicativos localizem entidades recém-criadas, atualizadas ou excluídas sem executar uma leitura completa do recurso de destino com cada solicitação. Os aplicativos do Microsoft Graph podem usar consulta delta para sincronizar, com eficiência, alterações com armazenamento de dados local.
-author: davidmu1
+author: FaithOmbongi
 ms.localizationpriority: high
 ms.custom: graphiamtop20
-ms.openlocfilehash: 9aead9c7a41acd7fc7f68bdd7575e8f9a318aeaa
-ms.sourcegitcommit: f336c5c49fbcebe55312656aa8b50511fd99a657
+ms.openlocfilehash: 83f49d98145c4d795fac3c8df5eac0a7667bf06d
+ms.sourcegitcommit: c47e3d1f3c5f7e2635b2ad29dfef8fe7c8080bc8
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/09/2021
-ms.locfileid: "61390938"
+ms.lasthandoff: 12/15/2021
+ms.locfileid: "61526160"
 ---
 # <a name="use-delta-query-to-track-changes-in-microsoft-graph-data"></a>Usar a consulta delta para controlar alterações nos dados do Microsoft Graph
 

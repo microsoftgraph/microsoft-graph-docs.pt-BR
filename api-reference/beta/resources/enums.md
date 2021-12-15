@@ -5,12 +5,12 @@ doc_type: enumPageType
 ms.localizationpriority: medium
 ms.prod: non-product-specific
 author: MSGraphDocsvTeam
-ms.openlocfilehash: 0c71564588531094f7741f1bdf9ab22435816277
-ms.sourcegitcommit: c900d22144429ac7aecae3355a4cdc1987cc4234
+ms.openlocfilehash: c4e9835e140daa63e5b0c6fac4886e0b58a59880
+ms.sourcegitcommit: c47e3d1f3c5f7e2635b2ad29dfef8fe7c8080bc8
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/13/2021
-ms.locfileid: "61424641"
+ms.lasthandoff: 12/15/2021
+ms.locfileid: "61525733"
 ---
 # <a name="enum-values"></a>Valores denum
 
@@ -69,7 +69,7 @@ Namespace: microsoft.graph
 
 |Member|
 |:----|
-|Nenhum|
+|Nenhuma|
 |UserName|
 |Password|
 |SecretToken|
@@ -191,11 +191,11 @@ Namespace: microsoft.graph
 
 |Member|
 |:---|
-|Cadeia de Caracteres|
+|Cadeia de caracteres|
 |Inteiro|
 |Referência|
 |Binária|
-|Boolean|
+|Booliano|
 |DateTime|
 
 ### <a name="mutability-values"></a>valores de mutabilidade
@@ -211,7 +211,7 @@ Namespace: microsoft.graph
 
 |Member|
 |:---|
-|Nenhum|
+|Nenhuma|
 |AttributeNames|
 |AttributeDataTypes|
 |AttributeReadOnly|
@@ -2261,7 +2261,7 @@ Valores possíveis para tipos de conta de usuário (associação ao grupo), por 
 
 |Membro    |Valor    |Descrição |
 |:---------|:--------|:----------- |
-|equipe      |0        |Indica que o aplicativo Teams pode ser instalado em uma equipe e está autorizado a acessar os dados dessa equipe.|
+|team      |0        |Indica que o aplicativo Teams pode ser instalado em uma equipe e está autorizado a acessar os dados dessa equipe.|
 |groupChat |1        |Indica que o aplicativo Teams pode ser instalado em um chat de grupo e está autorizado a acessar os dados desse chat de grupo.|
 |pessoal  |2        |Indica que o aplicativo Teams pode ser instalado no escopo pessoal de um usuário e está autorizado a acessar os dados desse usuário.|
 
@@ -2434,7 +2434,7 @@ Valores possíveis para tipos de conta de usuário (associação ao grupo), por 
 
 |Member|
 |:---|
-|equipe|
+|team|
 |channel|
 |chat|
 |unknownFutureValue|
@@ -2570,6 +2570,14 @@ Valores possíveis para tipos de conta de usuário (associação ao grupo), por 
 |other|
 |unknownFutureValue|
 
+### <a name="answerinputtype-values"></a>valores answerInputType
+
+|Membro|Valor|Descrição|
+|:---|:---|:---|
+|texto|0|Texto.|
+|radioButton|1|RadioButton.|
+|unknownFutureValue|2|UnknownFutureValue.|
+
 ### <a name="taskstatus_v2-values"></a>taskStatus_v2 valores
 
 |Member|
@@ -2587,4 +2595,37 @@ Valores possíveis para tipos de conta de usuário (associação ao grupo), por 
 |none|
 |defaultList|
 |flaggedEmail|
+|unknownFutureValue|
+
+### <a name="bookingpricetype-values"></a>valores bookingPriceType
+
+|Member|
+|:---|
+|indefinido|
+|fixedPrice|
+|startingAt|
+|por hora|
+|gratuito|
+|priceVaries|
+|callUs|
+|notSet|
+|unknownFutureValue|
+
+### <a name="bookingstaffrole-values"></a>valores bookingStaffRole 
+
+|Member|
+|:---|
+|guest|
+|administrator|
+|visualizador|
+|externalGuest|
+|unknownFutureValue|
+
+### <a name="bookingreminderrecipients-values"></a>valores bookingReminderRecipients 
+
+|Member|
+|:---|
+|allAttendees|
+|staff|
+|customer|
 |unknownFutureValue|

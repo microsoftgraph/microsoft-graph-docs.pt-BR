@@ -5,12 +5,12 @@ author: avijityadav
 ms.localizationpriority: medium
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 91a7b521f1fbc836e591b3021a233a1c17d578a0
-ms.sourcegitcommit: c900d22144429ac7aecae3355a4cdc1987cc4234
+ms.openlocfilehash: 70554d1d64be0d3c497225ee25a124b3d52681d5
+ms.sourcegitcommit: c47e3d1f3c5f7e2635b2ad29dfef8fe7c8080bc8
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/13/2021
-ms.locfileid: "61424773"
+ms.lasthandoff: 12/15/2021
+ms.locfileid: "61526125"
 ---
 # <a name="update-linkedresource_v2"></a>Atualizar linkedResource_v2
 Namespace: microsoft.graph
@@ -19,14 +19,14 @@ Namespace: microsoft.graph
 
 Atualize as propriedades de um [linkedResource_v2](../resources/linkedresource_v2.md) objeto.
 
-## <a name="permissions"></a>Permissões
+## <a name="permissions"></a>Permissions
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão|Permissões (da com menos para a com mais privilégios)|
 |:---|:---|
-|Delegada (conta corporativa ou de estudante)|Tasks.ReadWrite|
+|Delegado (conta corporativa ou de estudante)|Tasks.ReadWrite|
 |Delegada (conta pessoal da Microsoft)|Tasks.ReadWrite|
-|Application|Tasks.ReadWrite|
+|Aplicativo|Tasks.ReadWrite|
 
 ## <a name="http-request"></a>Solicitação HTTP
 
@@ -52,7 +52,7 @@ PATCH /users/{id | userPrincipalName}/tasks/lists/{baseTaskListId}/tasks/{baseTa
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
 |applicationName|Cadeia de caracteres|Campo indicando o nome do aplicativo da fonte que está enviando **o linkedResource**.|
-|displayName|String|Campo que indica o título do **linkedResource**.|
+|displayName|Cadeia de caracteres|Campo que indica o título do **linkedResource**.|
 |externalId|Cadeia de caracteres|ID do objeto associado a essa tarefa no sistema de terceiros/parceiro.|
 |webUrl|String|Link profundo para **o linkedResource**.|
 
@@ -64,6 +64,8 @@ Se tiver êxito, este método retornará um código de resposta e um `200 OK` [o
 ## <a name="examples"></a>Exemplos
 
 ### <a name="request"></a>Solicitação
+
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "update_linkedresource_v2"
@@ -80,6 +82,12 @@ Content-Type: application/json
     "externalId": "dk9cddce2-dce2-f9dd-e2dc-cdf9e2dccdf9"
 }
 ```
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/update-linkedresource-v2-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 
 ### <a name="response"></a>Resposta

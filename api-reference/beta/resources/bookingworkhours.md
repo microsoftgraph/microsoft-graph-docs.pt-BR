@@ -1,30 +1,30 @@
 ---
-title: tipo de recurso bookingWorkHours
-description: " > **Importante:** as APIs na versão /beta no Microsoft Graph estão em visualização e sujeitas a alterações. Não há suporte para o uso dessas APIs em aplicativos de produção."
-localization_priority: Normal
+title: Tipo de recurso bookingWorkHours
+description: Representa o conjunto de horários de trabalho em um único dia da semana, para um bookingBusiness ou bookingStaffMember.
+ms.localizationpriority: medium
 author: arvindmicrosoft
 ms.prod: bookings
 doc_type: resourcePageType
-ms.openlocfilehash: 0c6eec989e4c5474115810dfefe6578d7fc5deec
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: d503d23cd8f6652e4e25c4f03e73a348baecd310
+ms.sourcegitcommit: c47e3d1f3c5f7e2635b2ad29dfef8fe7c8080bc8
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48071672"
+ms.lasthandoff: 12/15/2021
+ms.locfileid: "61526174"
 ---
-# <a name="bookingworkhours-resource-type"></a>tipo de recurso bookingWorkHours
+# <a name="bookingworkhours-resource-type"></a>Tipo de recurso bookingWorkHours
 
 Namespace: microsoft.graph
 
  [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
  
-Representa o conjunto de horas de trabalho em um único dia da semana, para um [bookingBusiness](bookingbusiness.md) ou [bookingStaffMember](bookingstaffmember.md).
+Representa o conjunto de horários de trabalho em um único dia da semana, para [um bookingBusiness](bookingbusiness.md) ou [bookingStaffMember](bookingstaffmember.md).
 
 ## <a name="properties"></a>Propriedades
 | Propriedade     | Tipo   |Descrição|
 |:---------------|:--------|:----------|
-|dia|Cadeia de caracteres| O dia da semana representado por esta instância. Os valores possíveis são: `sunday`, `monday`, `tuesday`, `wednesday`, `thursday`, `friday`, `saturday`.|
-|Intervalos|coleção [bookingWorkTimeSlot](bookingworktimeslot.md)|Uma lista de horários de início/término durante um dia.|
+|dia|Cadeia de caracteres| O dia da semana representado por essa instância. Os valores possíveis são: `sunday`, `monday`, `tuesday`, `wednesday`, `thursday`, `friday`, `saturday`.|
+|timeSlots|[Coleção bookingWorkTimeSlot](bookingworktimeslot.md)|Uma lista de horários de início/término durante um dia.|
 
 ## <a name="json-representation"></a>Representação JSON
 

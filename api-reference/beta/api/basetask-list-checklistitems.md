@@ -5,12 +5,12 @@ author: avijityadav
 ms.localizationpriority: medium
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 892552f8b3d82784107e7a36acfe16e8fb70c43f
-ms.sourcegitcommit: c900d22144429ac7aecae3355a4cdc1987cc4234
+ms.openlocfilehash: cb0554f0dfd856e032923d70b090eb0ac85a4581
+ms.sourcegitcommit: c47e3d1f3c5f7e2635b2ad29dfef8fe7c8080bc8
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/13/2021
-ms.locfileid: "61424789"
+ms.lasthandoff: 12/15/2021
+ms.locfileid: "61524501"
 ---
 # <a name="list-checklistitems"></a>Listar checklistItems
 Namespace: microsoft.graph
@@ -19,14 +19,14 @@ Namespace: microsoft.graph
 
 Obter os [recursos checklistItem](../resources/checklistitem.md) associados a um [baseTask](../resources/basetask.md) da propriedade de navegação checklistItems.
 
-## <a name="permissions"></a>Permissões
+## <a name="permissions"></a>Permissions
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão|Permissões (da com menos para a com mais privilégios)|
 |:---|:---|
-|Delegada (conta corporativa ou de estudante)|Tasks.Read, Tasks.ReadWrite|
+|Delegado (conta corporativa ou de estudante)|Tasks.Read, Tasks.ReadWrite|
 |Delegada (conta pessoal da Microsoft)|Tasks.Read, Tasks.ReadWrite|
-|Application|Tasks.Read, Tasks.ReadWrite|
+|Aplicativo|Tasks.Read, Tasks.ReadWrite|
 
 ## <a name="http-request"></a>Solicitação HTTP
 
@@ -57,6 +57,8 @@ Se tiver êxito, este método retornará um código de resposta e uma `200 OK` c
 ## <a name="examples"></a>Exemplos
 
 ### <a name="request"></a>Solicitação
+
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "list_checklistitem"
@@ -65,6 +67,24 @@ Se tiver êxito, este método retornará um código de resposta e uma `200 OK` c
 ``` http
 GET https://graph.microsoft.com/beta/me/tasks/lists/AAMkADliMmU5YjJlLTVmMmQtNGQzNS1iYjA0LTdmZTA2NTI0MTE5YwAuAAAAAADdOMUbUmCfTKa7OC-fqjkdAQBnu3olF7NfToRyJ2f__TNcAAAAAAESAAA=/tasks/AAkALgAAAAAAHYQDEapmEc2byACqAC-EWg0AZ7t6JRezX06Ecidn-vkzXAABPDii4gAA/checklistitems
 ```
+# <a name="c"></a>[C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/list-checklistitem-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/list-checklistitem-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/list-checklistitem-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/list-checklistitem-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 
 ### <a name="response"></a>Resposta

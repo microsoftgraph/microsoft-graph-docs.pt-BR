@@ -525,7 +525,7 @@ items:
         items:
           - name: Visão Geral
             href: resources/groups-overview.md
-          - name: Grupo
+          - name: Group
             href: resources/group.md
             items:
               - name: Listar grupos
@@ -1405,6 +1405,104 @@ items:
                     href: api/projectrome-put-historyitem.md
                   - name: Excluir um item do histórico
                     href: api/projectrome-delete-historyitem.md
+      - name: Reserva de clientes
+        displayName: 'Bookings, Microsoft Bookings'
+        items:
+          - name: Visão Geral
+            href: resources/booking-api-overview.md
+          - name: Negócio de reservas
+            href: resources/bookingbusiness.md
+            items:
+              - name: Listar
+                href: api/bookingbusiness-list.md
+              - name: Criar
+                href: api/bookingbusiness-post-bookingbusinesses.md
+              - name: Obter
+                href: api/bookingbusiness-get.md
+              - name: Atualizar
+                href: api/bookingbusiness-update.md
+              - name: Excluir
+                href: api/bookingbusiness-delete.md
+              - name: Publicar
+                href: api/bookingbusiness-publish.md
+              - name: Cancelar publicação
+                href: api/bookingbusiness-unpublish.md
+          - name: Marcação de compromisso
+            href: resources/bookingappointment.md
+            items:
+              - name: Listar modo de exibição de calendário
+                href: api/bookingbusiness-list-calendarview.md
+              - name: Listar compromissos
+                href: api/bookingbusiness-list-appointments.md
+              - name: Criar compromisso
+                href: api/bookingbusiness-post-appointments.md
+              - name: Obter compromisso
+                href: api/bookingappointment-get.md
+              - name: Atualizar compromisso
+                href: api/bookingappointment-update.md
+              - name: Excluir compromisso
+                href: api/bookingappointment-delete.md
+              - name: Cancelar compromisso
+                href: api/bookingappointment-cancel.md
+          - name: Moeda da reserva
+            href: resources/bookingcurrency.md
+            items:
+              - name: Listar
+                href: api/bookingcurrency-list.md
+              - name: Obter
+                href: api/bookingcurrency-get.md
+          - name: Booking custom question
+            href: resources/bookingcustomquestion.md
+            items:
+              - name: Listar
+                href: api/bookingbusiness-list-customquestions.md
+              - name: Criar
+                href: api/bookingbusiness-post-customquestions.md
+              - name: Obter
+                href: api/bookingcustomquestion-get.md
+              - name: Atualizar
+                href: api/bookingcustomquestion-update.md
+              - name: Excluir
+                href: api/bookingcustomquestion-delete.md
+          - name: Cliente da reserva
+            href: resources/bookingcustomer.md
+            items:
+              - name: Listar
+                href: api/bookingbusiness-list-customers.md
+              - name: Criar
+                href: api/bookingbusiness-post-customers.md
+              - name: Obter
+                href: api/bookingcustomer-get.md
+              - name: Atualizar
+                href: api/bookingcustomer-update.md
+              - name: Excluir
+                href: api/bookingcustomer-delete.md
+          - name: Serviço de reserva
+            href: resources/bookingservice.md
+            items:
+              - name: Listar
+                href: api/bookingbusiness-list-services.md
+              - name: Criar
+                href: api/bookingbusiness-post-services.md
+              - name: Obter
+                href: api/bookingservice-get.md
+              - name: Atualizar
+                href: api/bookingservice-update.md
+              - name: Excluir
+                href: api/bookingservice-delete.md
+          - name: Membro da equipe de reserva
+            href: resources/bookingstaffmember.md
+            items:
+              - name: Listar
+                href: api/bookingbusiness-list-staffmembers.md
+              - name: Criar
+                href: api/bookingbusiness-post-staffmembers.md
+              - name: Obter
+                href: api/bookingstaffmember-get.md
+              - name: Atualizar
+                href: api/bookingstaffmember-update.md
+              - name: Excluir
+                href: api/bookingstaffmember-delete.md
       - name: Dispositivos e aplicativos
         expanded: true
         items:
@@ -4124,7 +4222,7 @@ items:
                         href: api/intune-tem-telecomexpensemanagementpartner-delete.md
                       - name: Atualizar
                         href: api/intune-tem-telecomexpensemanagementpartner-update.md
-          - name: Comunicações e integridade do serviço
+          - name: Comunicações e Integridade do serviço
             items:
               - name: Visão Geral
                 href: resources/service-communications-api-overview.md
@@ -5612,7 +5710,7 @@ items:
             items:
               - name: Obter recurso
                 href: api/resource-get.md
-      - name: Inteligência de pessoas e local de trabalho
+      - name: Inteligência de pessoas e no local de trabalho
         items:
           - name: Visão Geral
             href: resources/social-overview.md
@@ -5801,7 +5899,7 @@ items:
                     href: api/reportroot-getmailboxusagequotastatusmailboxcounts.md
                   - name: Obter armazenamento
                     href: api/reportroot-getmailboxusagestorage.md
-              - name: Microsoft 365 ativações
+              - name: Ativações do Microsoft 365
                 href: resources/office-365-activations-reports.md
                 items:
                   - name: Obter detalhes do usuário
@@ -5810,7 +5908,7 @@ items:
                     href: api/reportroot-getoffice365activationcounts.md
                   - name: Obter contagens de usuários
                     href: api/reportroot-getoffice365activationsusercounts.md
-              - name: Microsoft 365 usuários ativos
+              - name: Usuários ativos do Microsoft 365
                 href: resources/office-365-active-users-reports.md
                 items:
                   - name: Obter detalhes do usuário
@@ -5819,7 +5917,7 @@ items:
                     href: api/reportroot-getoffice365activeusercounts.md
                   - name: Obter contagens de usuários dos serviços
                     href: api/reportroot-getoffice365servicesusercounts.md
-              - name: Microsoft 365 atividade de grupos
+              - name: Atividade de grupos do Microsoft 365
                 href: resources/office-365-groups-activity-reports.md
                 items:
                   - name: Obter detalhe do grupo
@@ -6113,7 +6211,7 @@ items:
                 href: api/site-list-subsites.md
               - name: Procurar sites
                 href: api/site-search.md
-              - name: Permissões
+              - name: Permissions
                 href: resources/permission.md
                 items:
                   - name: Obter permissão de site
@@ -6207,7 +6305,7 @@ items:
                     href: api/termstore-store-get.md
                   - name: Atualizar
                     href: api/termstore-store-update.md
-              - name: Grupo
+              - name: Group
                 href: resources/termstore-group.md
                 items:
                   - name: Listar
@@ -6526,7 +6624,7 @@ items:
                 href: api/chats-getallmessages.md
               - name: Obter conteúdo hospedado
                 href: api/chatmessagehostedcontent-get.md
-          - name: Aplicativo
+          - name: App
             items:
               - name: Aplicativo no catálogo
                 href: resources/teamsapp.md
@@ -6832,7 +6930,7 @@ items:
                 href: api/opentypeextension-post-opentypeextension.md
               - name: Obter extensão aberta
                 href: api/opentypeextension-get.md
-          - name: Tarefa
+          - name: Tarefas
             href: resources/todotask.md
             items:
               - name: Listar tarefas

@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 ms.prod: non-product-specific
 author: MSGraphDocsvTeam
 doc_type: enumPageType
-ms.openlocfilehash: 5e037aea9f5582760731fdc351b5b94bdd15a0d0
-ms.sourcegitcommit: f65eee432cc903324b5f9b31710fdc6100590f36
+ms.openlocfilehash: 1288bddd70c1ee82ed3f8056a295ecf3dfbc183c
+ms.sourcegitcommit: c47e3d1f3c5f7e2635b2ad29dfef8fe7c8080bc8
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/07/2021
-ms.locfileid: "61321999"
+ms.lasthandoff: 12/15/2021
+ms.locfileid: "61525383"
 ---
 # <a name="enum-values"></a>Valores denum
 
@@ -480,7 +480,7 @@ Namespace: microsoft.graph
 
 |Member|
 |:---|
-|Nenhum|
+|Nenhuma|
 |SecurityGroup|
 |Tudo|
 
@@ -1304,7 +1304,7 @@ Valores possíveis para tipos de conta de usuário (associação ao grupo), por 
 
 | Membro | Valor | Descrição             |
 |:-------|:------|:------------------------|
-| Email   | 1     | Ameaça de email.            |
+| email   | 1     | Ameaça de email.            |
 | url    | 2     | Ameaça de URL.             |
 | file   | 3     | Ameaça de arquivo de anexo. |
 
@@ -1681,7 +1681,7 @@ Valores possíveis para tipos de conta de usuário (associação ao grupo), por 
 
 |Member|
 |:---|
-|equipe|
+|team|
 |channel|
 |chat|
 |unknownFutureValue|
@@ -1845,4 +1845,45 @@ Valores possíveis para tipos de conta de usuário (associação ao grupo), por 
 |call|
 |meeting|
 |screenShare|
+|unknownFutureValue|
+
+### <a name="bookingreminderrecipients-values"></a>valores bookingReminderRecipients 
+
+|Member|
+|:---|
+|allAttendees|
+|staff|
+|customer|
+|unknownFutureValue|
+
+### <a name="bookingstaffrole-values"></a>valores bookingStaffRole 
+
+|Member|
+|:---|
+|guest|
+|administrator|
+|visualizador|
+|externalGuest|
+|unknownFutureValue|
+
+### <a name="answerinputtype-values"></a>valores answerInputType 
+
+|Member|
+|:---|
+|texto|
+|radioButton|
+|unknownFutureValue|
+
+### <a name="bookingpricetype-values"></a>valores bookingPriceType
+
+|Member|
+|:---|
+|indefinido|
+|fixedPrice|
+|startingAt|
+|por hora|
+|gratuito|
+|priceVaries|
+|callUs|
+|notSet|
 |unknownFutureValue|

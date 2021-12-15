@@ -1,15 +1,15 @@
 ---
 title: 'Tutorial: gerenciar o acesso aos recursos no gerenciamento de direitos do Active Directory usando APIs do Microsoft Graph'
 description: Saiba como gerenciar o acesso aos recursos no Gerenciamento de direitos do Active Directory (Azure AD) usando APIs do Microsoft Graph.
-author: davidmu1
+author: FaithOmbongi
 ms.localizationpriority: medium
 ms.prod: governance
-ms.openlocfilehash: ef171601ca5d0b91ddfd7ff58ca7ace1bc47ac1f
-ms.sourcegitcommit: f4999aa6fc05f845027db01aa489f7086f9850e1
+ms.openlocfilehash: 461d3ed9bdbc7fa09f84514abe222cabf8519bcd
+ms.sourcegitcommit: c47e3d1f3c5f7e2635b2ad29dfef8fe7c8080bc8
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/13/2021
-ms.locfileid: "60289116"
+ms.lasthandoff: 12/15/2021
+ms.locfileid: "61526006"
 ---
 # <a name="tutorial-manage-access-to-resources-in-active-directory-entitlement-management-using-microsoft-graph-apis"></a>Tutorial: gerenciar o acesso aos recursos no gerenciamento de direitos do Active Directory usando APIs do Microsoft Graph
 
@@ -743,5 +743,5 @@ Neste tutorial, você usou muitas APIs para realizar tarefas. Explore a referên
 - [accessPackageResourceRoleScope](/graph/api/resources/accesspackageresourcerolescope?view=graph-rest-beta&preserve-view=true)
 - [accessPackageAssignmentPolicy](/graph/api/resources/accesspackageassignmentpolicy?view=graph-rest-beta&preserve-view=true)
 - [accessPackageAssignmentRequest](/graph/api/resources/accesspackageassignmentrequest?view=graph-rest-beta&preserve-view=true)
-- [group](/graph/api/resources/group)
+- [grupo](/graph/api/resources/group)
 - [user](/graph/api/resources/user?)

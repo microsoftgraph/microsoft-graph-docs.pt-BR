@@ -5,12 +5,12 @@ author: devindrajit
 ms.localizationpriority: medium
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 1a4df47f32a92d78bdd56bf1d1a786ddde83a64b
-ms.sourcegitcommit: c99d3feb3ab5cae506c1f758bc277a637adc9111
+ms.openlocfilehash: 6b1dd51801d251b0960690f4dead274f98f0fc0d
+ms.sourcegitcommit: c47e3d1f3c5f7e2635b2ad29dfef8fe7c8080bc8
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/13/2021
-ms.locfileid: "61432639"
+ms.lasthandoff: 12/15/2021
+ms.locfileid: "61525446"
 ---
 # <a name="list-basetasks"></a>Listar baseTasks
 Namespace: microsoft.graph
@@ -19,12 +19,12 @@ Namespace: microsoft.graph
 
 Obter os [recursos baseTask](../resources/basetask.md) da propriedade de navegação tarefas de uma [baseTaskList específica.](../resources/basetasklist.md)
 
-## <a name="permissions"></a>Permissões
+## <a name="permissions"></a>Permissions
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão|Permissões (da com menos para a com mais privilégios)|
 |:---|:---|
-|Delegada (conta corporativa ou de estudante)|Tasks.Read, Tasks.ReadWrite|
+|Delegado (conta corporativa ou de estudante)|Tasks.Read, Tasks.ReadWrite|
 |Delegada (conta pessoal da Microsoft)|Tasks.Read, Tasks.ReadWrite|
 |Aplicativo|Sem suporte|
 
@@ -57,6 +57,8 @@ Se tiver êxito, este método retornará um código de resposta e uma `200 OK` c
 ## <a name="examples"></a>Exemplos
 
 ### <a name="request"></a>Solicitação
+
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "list_basetask"
@@ -65,6 +67,24 @@ Se tiver êxito, este método retornará um código de resposta e uma `200 OK` c
 ``` http
 GET https://graph.microsoft.com/beta/me/tasks/lists/AQMkAGVjMzJmMWZjLTgyYjgtNGIyNi1hOGQ0LWRjMjNm/tasks
 ```
+# <a name="c"></a>[C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/list-basetask-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/list-basetask-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/list-basetask-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/list-basetask-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 
 ### <a name="response"></a>Resposta

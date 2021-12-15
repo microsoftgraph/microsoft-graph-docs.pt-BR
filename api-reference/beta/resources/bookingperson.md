@@ -1,29 +1,31 @@
 ---
-title: tipo de recurso bookingPerson
-description: " > **Importante:** as APIs na versão /beta no Microsoft Graph estão em visualização e sujeitas a alterações. Não há suporte para o uso dessas APIs em aplicativos de produção."
-localization_priority: Normal
+title: Tipo de recurso bookingPerson
+description: Esse é um tipo base para uma pessoa em uma empresa do Microsoft Bookings, que pode ser um bookingCustomer ou bookingStaffMember.
+ms.localizationpriority: medium
 author: arvindmicrosoft
 ms.prod: bookings
 doc_type: resourcePageType
-ms.openlocfilehash: 04fabd62ee89c275d25075de7b489e512ebe3167
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 0ad4cd1d587fb2ccd88727f24944bc4226e43b7f
+ms.sourcegitcommit: c47e3d1f3c5f7e2635b2ad29dfef8fe7c8080bc8
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48071770"
+ms.lasthandoff: 12/15/2021
+ms.locfileid: "61526181"
 ---
-# <a name="bookingperson-resource-type"></a>tipo de recurso bookingPerson
+# <a name="bookingperson-resource-type"></a>Tipo de recurso bookingPerson
 
 Namespace: microsoft.graph
 
  [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
  
-Este é um tipo base para uma pessoa em um Microsoft bookings Business, que pode ser um [bookingCustomer](bookingcustomer.md) ou [bookingStaffMember](bookingstaffmember.md).
+Esse é um tipo base para uma pessoa em uma empresa do Microsoft Bookings, que pode ser [um bookingCustomer](bookingcustomer.md) ou [bookingStaffMember](bookingstaffmember.md).
+
+Herda de [bookingNamedEntity](bookingnamedentity.md)
 
 ## <a name="properties"></a>Propriedades
 | Propriedade     | Tipo   |Descrição|
 |:---------------|:--------|:----------|
-|displayName|Cadeia de caracteres|Um nome para a entidade derivada, que faz interface com clientes.|
+|displayName|Cadeia de caracteres|Um nome para a entidade derivada, que faz interface com os clientes. Herdado **de bookingNamedEntity**.|
 |emailAddress|String|O endereço de email da pessoa.|
 |id|Cadeia de caracteres| A ID da entidade derivada. Somente leitura.|
 

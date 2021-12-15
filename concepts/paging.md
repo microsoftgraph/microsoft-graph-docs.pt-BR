@@ -1,15 +1,15 @@
 ---
 title: 'Paginação de dados do Microsoft Graph em seu aplicativo '
 description: 'Propriedade odata.nextLink` na resposta que contém uma URL para a próxima página de resultados. '
-author: davidmu1
+author: FaithOmbongi
 ms.localizationpriority: high
 ms.custom: graphiamtop20, scenarios:getting-started
-ms.openlocfilehash: 8bfa1bb87e5a05e82d65e75742be4c9d6761c183
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 59bada32be7b896668bf4bd4cadf3894cdf7c5e4
+ms.sourcegitcommit: c47e3d1f3c5f7e2635b2ad29dfef8fe7c8080bc8
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59071718"
+ms.lasthandoff: 12/15/2021
+ms.locfileid: "61526024"
 ---
 # <a name="paging-microsoft-graph-data-in-your-app"></a>Paginação de dados do Microsoft Graph em seu aplicativo 
 

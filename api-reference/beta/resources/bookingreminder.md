@@ -1,32 +1,32 @@
 ---
-title: tipo de recurso bookingReminder
-description: " > **Importante:** as APIs na versão /beta no Microsoft Graph estão em visualização e sujeitas a alterações. Não há suporte para o uso dessas APIs em aplicativos de produção."
-localization_priority: Normal
+title: Tipo de recurso bookingReminder
+description: Representa quando e quem enviar um lembrete de email.
+ms.localizationpriority: medium
 author: arvindmicrosoft
 ms.prod: bookings
 doc_type: resourcePageType
-ms.openlocfilehash: f12a794b6ca624d3ef41a61bc93a8a0c9a867e99
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 51dde51c25064edb0c6548676bb7921b7705dcf2
+ms.sourcegitcommit: c47e3d1f3c5f7e2635b2ad29dfef8fe7c8080bc8
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48071756"
+ms.lasthandoff: 12/15/2021
+ms.locfileid: "61524676"
 ---
-# <a name="bookingreminder-resource-type"></a>tipo de recurso bookingReminder
+# <a name="bookingreminder-resource-type"></a>Tipo de recurso bookingReminder
 
 Namespace: microsoft.graph
 
  [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
  
-Representa quando e para quem enviar um lembrete de email.
+Representa quando e quem enviar um lembrete de email.
 
 
 ## <a name="properties"></a>Propriedades
 | Propriedade     | Tipo   |Descrição|
 |:---------------|:--------|:----------|
 |mensagem|String|A mensagem no lembrete.|
-|partida|Duração|O período de tempo antes do início de um compromisso para o qual o lembrete deve ser enviado. Ele é indicado no formato [ISO 8601](https://www.iso.org/iso-8601-date-and-time-format.html) .|
-|destinatários|Cadeia de caracteres| As pessoas que shouold receberão o lembrete. Os valores possíveis são: `allAttendees`, `staff`, `customer`.|
+|offset|Duração|A quantidade de tempo antes do início de um compromisso que o lembrete deve ser enviado. Ele é denotado no formato [ISO 8601.](https://www.iso.org/iso-8601-date-and-time-format.html)|
+|destinatários|bookingReminderRecipients| As pessoas que devem receber o lembrete. Os valores possíveis são: `allAttendees` `staff` , e `customer` `unknownFutureValue` .|
 
 ## <a name="json-representation"></a>Representação JSON
 
@@ -44,7 +44,7 @@ Veja a seguir uma representação JSON do recurso.
 {
   "message": "String",
   "offset": "String (timestamp)",
-  "recipients": "String"
+  "recipients": {"@odata.type": "microsoft.graph.bookingReminderRecipients"}
 }
 
 ```

@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: arvindmicrosoft
 ms.prod: bookings
 doc_type: apiPageType
-ms.openlocfilehash: f7afecf225d164e7e0d54d152c92bc25f662b9c2
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: 37417c6614dcc658c19b9233a1125d70f2fc48f3
+ms.sourcegitcommit: c47e3d1f3c5f7e2635b2ad29dfef8fe7c8080bc8
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "60990643"
+ms.lasthandoff: 12/15/2021
+ms.locfileid: "61524480"
 ---
 # <a name="list-bookings-calendarview"></a>Listar o calendarView do Bookings
 
@@ -20,13 +20,13 @@ Namespace: microsoft.graph
 
 Obter a coleção [de objetos bookingAppointment](../resources/bookingappointment.md) para [um bookingBusiness](../resources/bookingbusiness.md), que ocorre no intervalo de datas especificado.
 
-## <a name="permissions"></a>Permissões
+## <a name="permissions"></a>Permissions
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
 |:--------------------|:---------------------------------------------------------|
 |Delegado (conta corporativa ou de estudante) |  Bookings.Read.All, BookingsAppointment.ReadWrite.All, Bookings.ReadWrite.All, Bookings.Manage.All   |
-|Delegado (conta pessoal da Microsoft) | Sem suporte.   |
+|Delegada (conta pessoal da Microsoft) | Sem suporte.   |
 |Aplicativo | Sem suporte.  |
 
 ## <a name="http-request"></a>Solicitação HTTP
@@ -70,7 +70,7 @@ Este é um exemplo de solicitação.
   "name": "bookingbusiness_getcalendarview"
 }-->
 ```msgraph-interactive
-GET https://graph.microsoft.com/beta/bookingBusinesses/Contosolunchdelivery@M365B489948.onmicrosoft.com/calendarView?start=2018-04-30T00:00:00Z&end=2018-05-10T00:00:00Z
+GET https://graph.microsoft.com/beta/bookingBusinesses/Contosolunchdelivery@contoso.onmicrosoft.com/calendarView?start=2018-04-30T00:00:00Z&end=2018-05-10T00:00:00Z
 ```
 # <a name="c"></a>[C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/bookingbusiness-getcalendarview-csharp-snippets.md)]
@@ -88,7 +88,7 @@ GET https://graph.microsoft.com/beta/bookingBusinesses/Contosolunchdelivery@M365
 [!INCLUDE [sample-code](../includes/snippets/java/bookingbusiness-getcalendarview-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[Go](#tab/go)
+# <a name="go"></a>[Ir](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/bookingbusiness-getcalendarview-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
@@ -111,7 +111,7 @@ HTTP/1.1 200 OK
 Content-type: application/json
 
 {
-    "@odata.context": "https://graph.microsoft.com/beta/$metadata#bookingBusinesses('Contosolunchdelivery%40M365B489948.onmicrosoft.com')/calendarView",
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#bookingBusinesses('Contosolunchdelivery%40contoso.onmicrosoft.com')/calendarView",
     "value": [
         {
             "id": "AAMkADKpAAA=",
@@ -122,6 +122,41 @@ Content-type: application/json
             "customerName": "Adele Vance",
             "customerEmailAddress": "adelev@proseware.com",
             "customerPhone": "213-555-0156",
+            "customers": [
+                {
+                    "@odata.type": "#microsoft.graph.bookingCustomerInformation",
+                    "customerId": "80b5ddda-1e3b-4c9d-abe2-d606cc075e2e",
+                    "name": "Adele Vance",
+                    "emailAddress": "adelev@proseware.com",
+                    "phone": "213-555-0156",
+                    "notes": null,
+                    "location": {
+                        "displayName": "Customer",
+                        "locationEmailAddress": null,
+                        "locationUri": "",
+                        "locationType": null,
+                        "uniqueId": null,
+                        "uniqueIdType": null,
+                        "address": {
+                            "type": "home",
+                            "postOfficeBox": "",
+                            "street": "",
+                            "city": "",
+                            "state": "",
+                            "countryOrRegion": "",
+                            "postalCode": ""
+                        },
+                        "coordinates": {
+                            "altitude": null,
+                            "latitude": null,
+                            "longitude": null,
+                            "accuracy": null,
+                            "altitudeAccuracy": null
+                        }
+                    },
+                    "timeZone": "America/Chicago"
+                }
+            ],
             "customerTimeZone": "America/Chicago",
             "customerNotes": null,
             "smsNotificationsEnabled": true,
@@ -210,6 +245,41 @@ Content-type: application/json
             "customerName": "Jordan Miller",
             "customerEmailAddress": "jordanm@contoso.com",
             "customerPhone": "213-555-0199",
+            "customers": [
+                {
+                    "@odata.type": "#microsoft.graph.bookingCustomerInformation",
+                    "customerId": "7ed53fa5-9ef2-4f2f-975b-27447440bc09",
+                    "name": "Jordan Miller",
+                    "emailAddress": "jordanm@contoso.com",
+                    "phone": "213-555-0199",
+                    "notes": null,
+                    "location": {
+                        "displayName": "Customer",
+                        "locationEmailAddress": null,
+                        "locationUri": "",
+                        "locationType": null,
+                        "uniqueId": null,
+                        "uniqueIdType": null,
+                        "address": {
+                            "type": "home",
+                            "postOfficeBox": "",
+                            "street": "",
+                            "city": "",
+                            "state": "",
+                            "countryOrRegion": "",
+                            "postalCode": ""
+                        },
+                        "coordinates": {
+                            "altitude": null,
+                            "latitude": null,
+                            "longitude": null,
+                            "accuracy": null,
+                            "altitudeAccuracy": null
+                        }
+                    },
+                    "timeZone": "America/Chicago"
+                }
+            ],
             "customerTimeZone": "America/Chicago",
             "customerNotes": null,
             "smsNotificationsEnabled": true,

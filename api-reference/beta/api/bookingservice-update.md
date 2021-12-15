@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: arvindmicrosoft
 ms.prod: bookings
 doc_type: apiPageType
-ms.openlocfilehash: 4a84a19f9af0ac8ad6144ccdf9091b94d3d4c9a7
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: e226e77717c048cc0e8001506a4b5b3a497aeccf
+ms.sourcegitcommit: c47e3d1f3c5f7e2635b2ad29dfef8fe7c8080bc8
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "61005876"
+ms.lasthandoff: 12/15/2021
+ms.locfileid: "61525677"
 ---
 # <a name="update-bookingservice"></a>Atualizar bookingservice
 
@@ -27,13 +27,13 @@ Veja a seguir alguns exemplos que você pode personalizar para um serviço:
 - Qualquer buffer de tempo para configurar antes ou concluir após o serviço
 - [Os parâmetros de política](../resources/bookingschedulingpolicy.md) de agendamento, como aviso mínimo para reservar ou cancelar, e se os clientes podem selecionar membros específicos da equipe para um compromisso.
 
-## <a name="permissions"></a>Permissões
+## <a name="permissions"></a>Permissions
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
 |:--------------------|:---------------------------------------------------------|
 |Delegado (conta corporativa ou de estudante) |  Bookings.ReadWrite.All, Bookings.Manage.All   |
-|Delegado (conta pessoal da Microsoft) | Sem suporte.   |
+|Delegada (conta pessoal da Microsoft) | Sem suporte.   |
 |Aplicativo | Sem suporte.  |
 
 ## <a name="http-request"></a>Solicitação HTTP
@@ -54,20 +54,21 @@ No corpo da solicitação, forneça os valores para os campos relevantes que dev
 |defaultDuration|Duração|O comprimento padrão do serviço, representado em números de dias, horas, minutos e segundos. Por exemplo, P11D23H59M59.99999999999S. |
 |defaultLocation|[location](../resources/location.md)|O local físico padrão do serviço.|
 |defaultPrice|Duplo|O preço monetário padrão do serviço.|
-|defaultPriceType|cadeia de caracteres|A maneira padrão como o serviço é cobrado. Os valores possíveis são: `undefined`, `fixedPrice`, `startingAt`, `hourly`, `free`, `priceVaries`, `callUs`, `notSet`.|
+|defaultPriceType|bookingPriceType|A maneira padrão como o serviço é cobrado. Os valores possíveis são: `undefined`, `fixedPrice`, `startingAt`, `hourly`, `free`, `priceVaries`, `callUs`, `notSet`, `unknownFutureValue`.|
 |defaultReminders|[Coleção bookingReminder](../resources/bookingreminder.md)|O conjunto padrão de lembretes para um compromisso desse serviço. O valor dessa propriedade está disponível somente ao ler este **bookingService** por sua ID.|
 |description|Cadeia de caracteres|Uma descrição de texto para o serviço.|
 |displayName|Cadeia de caracteres|Um nome de serviço.|
-|emailAddress|String|Um endereço de email|
 |id|String| Somente leitura.|
 |isHiddenFromCustomers|Booliano|True significa que esse serviço não está disponível para os clientes para reserva.|
-|isLocationOnline|Boolean|True indica que os compromissos do serviço serão mantidos online. O valor padrão é falso.|
+|isLocationOnline|Booliano|True indica que os compromissos do serviço serão mantidos online. O valor padrão é falso.|
 |notes|String|Informações adicionais sobre esse serviço.|
 |postBuffer|Duração|O tempo para buffer após o fim de um compromisso para esse serviço e antes que o próximo compromisso do cliente possa ser reservado.|
 |preBuffer|Duração|O tempo para buffer antes que um compromisso para esse serviço possa começar.|
 |schedulingPolicy|[bookingSchedulingPolicy](../resources/bookingschedulingpolicy.md)|O conjunto de políticas que determinam como os compromissos para esse tipo de serviço devem ser criados e gerenciados.|
 |smsNotificationsEnabled|Booliano|True indica que as notificações de SMS podem ser enviadas aos clientes para o compromisso do serviço. O valor padrão é falso.|
 |staffMemberIds|Coleção de cadeias de caracteres|Representa os [membros da equipe](../resources/bookingstaffmember.md) que fornecem esse serviço. |
+|customQuestions|[coleção bookingQuestionAssignment](../resources/bookingquestionassignment.md)|Isso contém o conjunto de perguntas personalizadas associadas a um serviço específico. Opcional.|
+|maximumAttendeesCount|Int32|O número máximo de clientes permitidos em um serviço.  |
 
 ## <a name="response"></a>Resposta
 Se bem-sucedido, este método retorna um código de resposta `204 No content`. Não retorna nada no corpo da resposta.
@@ -81,7 +82,7 @@ O exemplo a seguir atualiza a duração do serviço especificado.
   "name": "update_bookingservice"
 }-->
 ```http
-PATCH https://graph.microsoft.com/beta/bookingBusinesses/Contosolunchdelivery@M365B489948.onmicrosoft.com/services/57da6774-a087-4d69-b0e6-6fb82c339976
+PATCH https://graph.microsoft.com/beta/bookingBusinesses/Contosolunchdelivery@contoso.onmicrosoft.com/services/57da6774-a087-4d69-b0e6-6fb82c339976
 Content-type: application/json
 
 {
@@ -105,7 +106,7 @@ Content-type: application/json
 [!INCLUDE [sample-code](../includes/snippets/java/update-bookingservice-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[Go](#tab/go)
+# <a name="go"></a>[Ir](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/update-bookingservice-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 

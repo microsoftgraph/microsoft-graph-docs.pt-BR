@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: arvindmicrosoft
 ms.prod: bookings
 doc_type: apiPageType
-ms.openlocfilehash: 686925bca89dcbb7dafcb701d716b9671864b833
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: d08e5497ed1a32772d7975d963d16c460c7cf97c
+ms.sourcegitcommit: c47e3d1f3c5f7e2635b2ad29dfef8fe7c8080bc8
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "60990546"
+ms.lasthandoff: 12/15/2021
+ms.locfileid: "61524865"
 ---
 # <a name="list-bookingbusinesses"></a>Listar bookingBusinesses
 
@@ -25,13 +25,13 @@ Essa operação retorna apenas **a id** e **displayName** de cada empresa do Boo
 Você também pode consultar empresas do Bookings especificando uma cadeia de caracteres em um parâmetro para fazer a correspondência de substring entre as `query` empresas de um locatário. Veja um [exemplo](#request-2) abaixo.
 
 
-## <a name="permissions"></a>Permissões
+## <a name="permissions"></a>Permissions
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
 |:--------------------|:---------------------------------------------------------|
 |Delegado (conta corporativa ou de estudante) |  Bookings.Read.All, BookingsAppointment.ReadWrite.All, Bookings.ReadWrite.All, Bookings.Manage.All   |
-|Delegado (conta pessoal da Microsoft) | Sem suporte.   |
+|Delegada (conta pessoal da Microsoft) | Sem suporte.   |
 |Aplicativo | Sem suporte.  |
 
 ## <a name="http-request"></a>Solicitação HTTP
@@ -82,7 +82,7 @@ GET https://graph.microsoft.com/beta/bookingBusinesses
 [!INCLUDE [sample-code](../includes/snippets/java/get-bookingbusinesses-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[Go](#tab/go)
+# <a name="go"></a>[Ir](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/get-bookingbusinesses-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
@@ -104,11 +104,11 @@ Content-type: application/json
     "@odata.context":"https://graph.microsoft.com/beta/$metadata#bookingBusinesses",
     "value":[
         {
-            "id":"Contosolunchdelivery@M365B489948.onmicrosoft.com",
+            "id":"Contosolunchdelivery@contoso.onmicrosoft.com",
             "displayName":"Contoso lunch delivery",
         },
         {
-            "id":"Fabrikam@M365B489948.onmicrosoft.com",
+            "id":"Fabrikam@contoso.onmicrosoft.com",
             "displayName":"Fabrikam",
         }
     ]
@@ -143,7 +143,7 @@ GET https://graph.microsoft.com/beta/bookingBusinesses?query=Adventure
 [!INCLUDE [sample-code](../includes/snippets/java/query-bookingbusinesses-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[Go](#tab/go)
+# <a name="go"></a>[Ir](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/query-bookingbusinesses-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 

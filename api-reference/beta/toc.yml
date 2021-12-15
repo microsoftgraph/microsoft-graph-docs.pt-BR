@@ -163,7 +163,7 @@ items:
         href: /graph/toolkit/overview?context=graph/api/beta
       - name: Introdução
         items:
-          - name: Visão geral
+          - name: Visão Geral
             href: /graph/toolkit/get-started/overview?context=graph/api/beta
           - name: /graph/toolkit para React
             href: /graph/toolkit/get-started/mgt-react?context=graph/api/beta
@@ -260,11 +260,11 @@ items:
   - name: Referência beta
     expanded: true
     items:
-      - name: Visão geral
+      - name: Visão Geral
         href: overview.md
       - name: Usuários
         items:
-          - name: Visão geral
+          - name: Visão Geral
             href: resources/users.md
           - name: Usuário
             href: resources/user.md
@@ -452,7 +452,7 @@ items:
                 href: api/mailfolder-list-messagerules.md
               - name: Enviar email
                 href: api/user-sendmail.md
-          - name: Notas
+          - name: Observações
             items:
               - name: Onenote
                 href: resources/onenote.md
@@ -595,9 +595,9 @@ items:
                 href: api/usersettings-update.md
       - name: Grupos
         items:
-          - name: Visão geral
+          - name: Visão Geral
             href: resources/groups-overview.md
-          - name: Grupo
+          - name: Group
             href: resources/group.md
             items:
               - name: Listar grupos
@@ -774,7 +774,7 @@ items:
                 href: api/driveitem-list-children.md
           - name: Propriedades estendidas
             items:
-              - name: Visão geral
+              - name: Visão Geral
                 href: resources/extended-properties-overview.md
               - name: Propriedades estendidas de valor único
                 items:
@@ -897,7 +897,7 @@ items:
                         href: api/application-delete-extensionproperty.md
               - name: Credenciais de identidade federada (visualização)
                 items:
-                  - name: Visão geral
+                  - name: Visão Geral
                     href: resources/federatedidentitycredentials-overview.md
                   - name: Credenciais de identidade federada
                     href: resources/federatedidentitycredential.md
@@ -1395,7 +1395,7 @@ items:
                 href: api/outlookcategory-delete.md
           - name: Propriedades estendidas
             items:
-              - name: Visão geral
+              - name: Visão Geral
                 href: resources/extended-properties-overview.md
               - name: Propriedades estendidas de valor único
                 items:
@@ -1527,7 +1527,7 @@ items:
                 href: api/call-logteleconferencedevicequality.md
           - name: Registros de chamadas
             items:
-              - name: Visão geral
+              - name: Visão Geral
                 href: resources/callrecords-api-overview.md
               - name: Registro de chamada
                 items:
@@ -1535,9 +1535,9 @@ items:
                     href: resources/callrecords-callrecord.md
                   - name: Obter
                     href: api/callrecords-callrecord-get.md
-              - name: Session
+              - name: Sessão
                 items:
-                  - name: Session
+                  - name: Sessão
                     href: resources/callrecords-session.md
                   - name: List
                     href: api/callrecords-session-list.md
@@ -1618,11 +1618,11 @@ items:
       - name: Conformidade
         displayName: 'Compliance API, Microsoft Graph Compliance API'
         items:
-          - name: Visão geral
+          - name: Visão Geral
             href: resources/complianceapioverview.md
           - name: Descoberta eDiscovery (visualização)
             items:
-              - name: Visão geral
+              - name: Visão Geral
                 href: resources/ediscovery-eDiscoveryapioverview.md
               - name: Caso de Descoberta Eletrônica
                 href: resources/ediscovery-case.md
@@ -1680,7 +1680,7 @@ items:
                     href: api/ediscovery-custodian-update.md
                   - name: Ativar
                     href: api/ediscovery-custodian-activate.md
-                  - name: Liberar
+                  - name: Lançar
                     href: api/ediscovery-custodian-release.md
               - name: Retenção legal
                 href: resources/ediscovery-legalhold.md
@@ -1706,7 +1706,7 @@ items:
                     href: api/ediscovery-noncustodialdatasource-get.md
                   - name: Listar datasource
                     href: api/ediscovery-noncustodialdatasource-list-datasource.md
-                  - name: Liberar
+                  - name: Lançar
                     href: api/ediscovery-noncustodialdatasource-release.md
               - name: Conjuntos de revisão
                 href: resources/ediscovery-reviewset.md
@@ -1778,7 +1778,7 @@ items:
                     href: api/ediscovery-tag-ashierarchy.md
           - name: Solicitação de direitos do sujeito
             items:
-              - name: Visão geral
+              - name: Visão Geral
                 href: resources/subjectrightsrequest-subjectrightsrequestapioverview.md
               - name: Solicitação de direitos do sujeito
                 href: resources/subjectrightsrequest.md
@@ -1833,10 +1833,10 @@ items:
                     href: api/projectrome-put-historyitem.md
                   - name: Excluir um item do histórico
                     href: api/projectrome-delete-historyitem.md
-      - name: Reserva de clientes (visualização)
+      - name: Reserva de clientes (prévia)
         displayName: 'Bookings, Microsoft Bookings'
         items:
-          - name: Visão geral
+          - name: Visão Geral
             href: resources/booking-api-overview.md
           - name: Negócio de reservas
             href: resources/bookingbusiness.md
@@ -1879,6 +1879,19 @@ items:
                 href: api/bookingcurrency-list.md
               - name: Obter
                 href: api/bookingcurrency-get.md
+          - name: Booking custom question
+            href: resources/bookingcustomquestion.md
+            items:
+              - name: Listar
+                href: api/bookingbusiness-list-customquestions.md
+              - name: Criar
+                href: api/bookingbusiness-post-customquestions.md
+              - name: Obter
+                href: api/bookingcustomquestion-get.md
+              - name: Atualizar
+                href: api/bookingcustomquestion-update.md
+              - name: Excluir
+                href: api/bookingcustomquestion-delete.md
           - name: Cliente da reserva
             href: resources/bookingcustomer.md
             items:
@@ -9920,7 +9933,7 @@ items:
                         href: api/intune-tem-telecomexpensemanagementpartner-update.md
           - name: Cloud PC (visualização)
             items:
-              - name: Visão geral
+              - name: Visão Geral
                 href: resources/cloudpc-api-overview.md
               - name: Ponto de extremidade virtual
                 href: resources/virtualendpoint.md
@@ -10040,7 +10053,7 @@ items:
                 items:
                   - name: List
                     href: api/virtualendpoint-list-serviceplans.md
-          - name: Atualizações do dispositivo (prévia)
+          - name: Atualizações do dispositivo (visualização)
             displayName: Windows updates
             items:
               - name: Atualizações
@@ -10297,9 +10310,9 @@ items:
                     href: api/managedtenants-managedtenant-list-windowsprotectionstates.md
                   - name: Obter Windows de proteção
                     href: api/managedtenants-windowsprotectionstate-get.md
-          - name: Comunicações e integridade do serviço
+          - name: Comunicações e Integridade do serviço
             items:
-              - name: Visão geral
+              - name: Visão Geral
                 href: resources/service-communications-api-overview.md
               - name: Comunicado do serviço
                 href: resources/serviceannouncement.md
@@ -10607,7 +10620,7 @@ items:
       - name: Arquivos
         displayName: 'OneDrive, OneDrive for Business, OneDrive business, OneDrive personal, SharePoint'
         items:
-          - name: Visão geral
+          - name: Visão Geral
             href: resources/onedrive.md
           - name: Unidades
             href: resources/drive.md
@@ -10703,7 +10716,7 @@ items:
       - name: Finanças (visualização)
         displayname: 'Dynamics, Dynamics 365 Business Central'
         items:
-          - name: Visão geral
+          - name: Visão Geral
             href: resources/dynamics-graph-reference.md
           - name: Conta
             href: resources/dynamics-account.md
@@ -10985,7 +10998,7 @@ items:
                     href: api/contract-list.md
               - name: Atributos de segurança personalizados (visualização)
                 items:
-                  - name: Visão geral
+                  - name: Visão Geral
                     href: resources/custom-security-attributes-overview.md
                   - name: Conjuntos de atributos
                     href: resources/attributeset.md
@@ -11392,7 +11405,7 @@ items:
             items:
               - name: Métodos de autenticação
                 items:
-                  - name: Visão geral
+                  - name: Visão Geral
                     href: resources/authenticationmethods-overview.md
                   - name: Listar todos os métodos
                     href: api/authentication-list-methods.md
@@ -11746,7 +11759,7 @@ items:
                         href: api/activitybasedtimeoutpolicy-delete.md
                   - name: Política de método de autenticação de aplicativo (visualização)
                     items:
-                      - name: Visão geral
+                      - name: Visão Geral
                         href: resources/applicationAuthenticationMethodPolicy.md
                       - name: Política de gerenciamento de aplicativos de locatário
                         items:
@@ -11806,7 +11819,7 @@ items:
                         href: api/authenticationflowspolicy-update.md
                   - name: Política de métodos de autenticação
                     items:
-                      - name: Visão geral
+                      - name: Visão Geral
                         href: resources/authenticationmethodspolicies-overview.md
                       - name: Política de métodos de autenticação
                         href: resources/authenticationmethodspolicy.md
@@ -12528,7 +12541,7 @@ items:
                     href: resources/privilegedidentitymanagement-root.md
                   - name: Azure AD (preterido))
                     items:
-                      - name: Microsoft Azure AD
+                      - name: Azure AD
                         href: resources/privilegedidentitymanagement-directory.md
                       - name: Função com privilégios
                         href: resources/privilegedrole.md
@@ -12813,7 +12826,7 @@ items:
                 href: api/messagerule-delete.md
           - name: Propriedades estendidas
             items:
-              - name: Visão geral
+              - name: Visão Geral
                 href: resources/extended-properties-overview.md
               - name: Propriedades estendidas de valor único
                 items:
@@ -12933,9 +12946,9 @@ items:
             items:
               - name: Criar e enviar uma notificação
                 href: api/user-post-notifications.md
-      - name: Inteligência de pessoas e local de trabalho
+      - name: Inteligência de pessoas e no local de trabalho
         items:
-          - name: Visão geral
+          - name: Visão Geral
             href: resources/social-overview.md
           - name: Pessoas
             items:
@@ -13099,7 +13112,7 @@ items:
                     href: api/personname-update.md
                   - name: Excluir
                     href: api/personname-delete.md
-              - name: Notas
+              - name: Observações
                 items:
                   - name: Anotação de pessoa
                     href: resources/personannotation.md
@@ -13380,7 +13393,7 @@ items:
                 href: api/contact-delta.md
           - name: Propriedades estendidas
             items:
-              - name: Visão geral
+              - name: Visão Geral
                 href: resources/extended-properties-overview.md
               - name: Propriedades estendidas de valor único
                 items:
@@ -13402,7 +13415,7 @@ items:
         items:
           - name: Relatórios de atividade do Azure AD
             items:
-              - name: Visão geral
+              - name: Visão Geral
                 href: resources/azure-ad-auditlog-overview.md
               - name: Auditoria de diretório
                 href: resources/directoryaudit.md
@@ -13425,7 +13438,7 @@ items:
                     href: api/provisioningobjectsummary-list.md
           - name: Relatórios de identidade e acesso
             items:
-              - name: Visão geral
+              - name: Visão Geral
                 href: resources/report-identity-access.md
               - name: Atividade de aplicativo no AD FS
                 items:
@@ -13448,7 +13461,7 @@ items:
                         href: api/applicationsignindetailedsummary-get.md
               - name: Registro e utilização
                 items:
-                  - name: Visão geral
+                  - name: Visão Geral
                     href: resources/authenticationmethods-usage-insights-overview.md
                   - name: Contagem de Registro de Usuário credencial
                     href: resources/credentialuserregistrationcount.md
@@ -13482,7 +13495,7 @@ items:
                         href: api/authenticationmethodsroot-usersregisteredbymethod.md
           - name: Microsoft 365 de uso
             items:
-              - name: Visão geral
+              - name: Visão Geral
                 href: resources/report.md
               - name: Uso do dispositivo do Microsoft Teams
                 href: resources/microsoft-teams-device-usage-reports.md
@@ -13729,7 +13742,7 @@ items:
         items:
           - name: Consulta
             items:
-              - name: Visão geral
+              - name: Visão Geral
                 href: resources/search-api-overview.md
               - name: Tipo de solicitação de pesquisa
                 href: resources/searchrequest.md
@@ -13739,7 +13752,7 @@ items:
                 href: api/search-query.md
           - name: Index
             items:
-              - name: Visão geral
+              - name: Visão Geral
                 href: resources/indexing-api-overview.md
               - name: Conexão externa
                 items:
@@ -13876,7 +13889,7 @@ items:
                     href: api/informationprotectionlabel-extractlabel.md
               - name: Avaliação de ameaças
                 items:
-                  - name: Visão geral
+                  - name: Visão Geral
                     href: resources/threatassessment-api-overview.md
                   - name: Solicitação de avaliação de ameaças
                     href: resources/threatassessmentrequest.md
@@ -13932,7 +13945,7 @@ items:
       - name: Sites e listas
         displayName: 'SharePoint, OneDrive, OneDrive for Business, OneDrive business, OneDrive personal'
         items:
-          - name: Visão geral
+          - name: Visão Geral
             href: resources/sharepoint.md
           - name: Sites
             items:
@@ -13968,7 +13981,7 @@ items:
                 href: api/site-list-subsites.md
               - name: Procurar sites
                 href: api/site-search.md
-              - name: Permissões
+              - name: Permissions
                 items:
                   - name: Permissão
                     href: resources/permission.md
@@ -14084,7 +14097,7 @@ items:
                     href: api/termstore-store-get.md
                   - name: Atualizar
                     href: api/termstore-store-update.md
-              - name: Grupo
+              - name: Group
                 href: resources/termstore-group.md
                 items:
                   - name: Criar
@@ -14133,9 +14146,9 @@ items:
       - name: Tarefas e planos
         displayName: Planner
         items:
-          - name: Visão geral
+          - name: Visão Geral
             href: resources/planner-overview.md
-          - name: Plano
+          - name: Planejar
             href: resources/plannerplan.md
             items:
               - name: Listar os planos do grupo
@@ -14482,7 +14495,7 @@ items:
                 href: api/teamworktagmember-get.md
               - name: Excluir membro
                 href: api/teamworktagmember-delete.md
-          - name: Aplicativo
+          - name: App
             items:
               - name: Aplicativo no catálogo
                 href: resources/teamsapp.md
@@ -14803,7 +14816,7 @@ items:
       - name: Tarefas pendentes
         displayName: Microsoft To Do
         items:
-          - name: Visão geral
+          - name: Visão Geral
             href: resources/tasks-overview.md
           - name: Lista de tarefas
             items:
@@ -14829,11 +14842,11 @@ items:
                 href: api/opentypeextension-post-opentypeextension.md
               - name: Obter extensão aberta
                 href: api/opentypeextension-get.md
-          - name: Tarefa
+          - name: Tarefas
             items:
               - name: Tarefa base
                 href: resources/basetask.md
-              - name: Tarefa
+              - name: Tarefas
                 href: resources/task.md
               - name: Listar tarefas
                 href: api/basetasklist-list-tasks.md
@@ -14881,7 +14894,7 @@ items:
                 href: api/linkedresource_v2-delete.md
           - name: Tarefas a fazer(antigo)
             items:
-              - name: Visão geral
+              - name: Visão Geral
                 href: resources/todo-overview.md
               - name: Lista de tarefas
                 href: resources/todotasklist.md
@@ -14902,7 +14915,7 @@ items:
                     href: api/opentypeextension-post-opentypeextension.md
                   - name: Obter extensão aberta
                     href: api/opentypeextension-get.md
-              - name: Tarefa
+              - name: Tarefas
                 href: resources/todotask.md
                 items:
                   - name: Listar tarefas
@@ -15020,7 +15033,7 @@ items:
                     href: api/outlookcategory-delete.md
               - name: Propriedades estendidas
                 items:
-                  - name: Visão geral
+                  - name: Visão Geral
                     href: resources/extended-properties-overview.md
                   - name: Propriedades estendidas de valor único
                     items:

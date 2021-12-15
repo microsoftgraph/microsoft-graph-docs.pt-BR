@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: arvindmicrosoft
 ms.prod: bookings
 doc_type: apiPageType
-ms.openlocfilehash: 39277d90349c0e9f996f2bb63a2f12a5a99d5d83
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: 446204052764f81bbe66d99a2c4d267232f0fad9
+ms.sourcegitcommit: c47e3d1f3c5f7e2635b2ad29dfef8fe7c8080bc8
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "60999716"
+ms.lasthandoff: 12/15/2021
+ms.locfileid: "61525684"
 ---
 # <a name="get-bookingappointment"></a>Obter bookingAppointment
 
@@ -21,13 +21,13 @@ Namespace: microsoft.graph
 Obter as propriedades e as relações de um [objeto bookingAppointment](../resources/bookingappointment.md) no [bookingBusiness especificado.](../resources/bookingbusiness.md)
 
 As **propriedades inicial** e **final** sempre são retornadas em UTC.
-## <a name="permissions"></a>Permissões
+## <a name="permissions"></a>Permissions
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
 |:--------------------|:---------------------------------------------------------|
 |Delegado (conta corporativa ou de estudante) |  Bookings.Read.All, BookingsAppointment.ReadWrite.All, Bookings.ReadWrite.All, Bookings.Manage.All   |
-|Delegado (conta pessoal da Microsoft) | Sem suporte.   |
+|Delegada (conta pessoal da Microsoft) | Sem suporte.   |
 |Aplicativo | Sem suporte.  |
 
 ## <a name="http-request"></a>Solicitação HTTP
@@ -57,7 +57,7 @@ Este é um exemplo de solicitação.
   "name": "get_bookingappointment"
 }-->
 ```msgraph-interactive
-GET https://graph.microsoft.com/beta/bookingBusinesses/Contosolunchdelivery@M365B489948.onmicrosoft.com/appointments/AAMkADKnAAA=
+GET https://graph.microsoft.com/beta/bookingBusinesses/Contosolunchdelivery@contoso.onmicrosoft.com/appointments/AAMkADKnAAA=
 ```
 # <a name="c"></a>[C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-bookingappointment-csharp-snippets.md)]
@@ -75,7 +75,7 @@ GET https://graph.microsoft.com/beta/bookingBusinesses/Contosolunchdelivery@M365
 [!INCLUDE [sample-code](../includes/snippets/java/get-bookingappointment-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[Go](#tab/go)
+# <a name="go"></a>[Ir](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/get-bookingappointment-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
@@ -96,7 +96,7 @@ HTTP/1.1 200 OK
 Content-type: application/json
 
 {
-    "@odata.context": "https://graph.microsoft.com/beta/$metadata#bookingBusinesses('Contosolunchdelivery%40M365B489948.onmicrosoft.com')/appointments/$entity",
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#bookingBusinesses('Contosolunchdelivery%40contoso.onmicrosoft.com')/appointments/$entity",
     "id": "AAMkADKnAAA=",
     "selfServiceAppointmentId": "00000000-0000-0000-0000-000000000000",
     "isLocationOnline": true,
@@ -198,7 +198,51 @@ Content-type: application/json
     "invoiceDate": {
         "dateTime": "2018-05-06T12:30:00.0000000Z",
         "timeZone": "UTC"
-    }
+    },
+    "maximumAttendeesCount": 5,
+    "filledAttendeesCount": 1,
+    "customers": [
+        {
+            "@odata.type": "#microsoft.graph.bookingCustomerInformation",
+            "customerId": "7ed53fa5-9ef2-4f2f-975b-27447440bc09",
+            "name": "Jordan Miller",
+            "emailAddress": "jordanm@contoso.com",
+            "phone": "213-555-0199",
+            "notes": null,
+            "location": 
+            {
+                "displayName": "Customer",
+                "locationEmailAddress": null,
+                "locationUri": "",
+                "locationType": null,
+                "uniqueId": null,
+                "uniqueIdType": null,
+                "address": 
+                {
+                    "type": "home",
+                    "postOfficeBox": "",
+                    "street": "",
+                    "city": "",
+                    "state": "",
+                    "countryOrRegion": "",
+                    "postalCode": ""
+                },
+                "coordinates": null
+            },
+            "timeZone": "America/Chicago",
+            "customQuestionAnswers": [
+                {
+                    "questionId": "3bc6fde0-4ad3-445d-ab17-0fc15dba0774",
+                    "question": "What is your age",
+                    "answerInputType": "text",
+                    "answerOptions": [],
+                    "isRequired": true,
+                    "answer": "25",
+                    "selectedOptions":[]
+                }
+            ]
+        }
+    ]
 }
 ```
 

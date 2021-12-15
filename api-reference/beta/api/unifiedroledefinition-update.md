@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: abhijeetsinha
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: 1b276ef09c72d4945b74fff5ee660c20ab95cb10
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: 3d6e727ad610594b1ba9997c81479fdd9dded2d9
+ms.sourcegitcommit: c47e3d1f3c5f7e2635b2ad29dfef8fe7c8080bc8
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "61017034"
+ms.lasthandoff: 12/15/2021
+ms.locfileid: "61524620"
 ---
 # <a name="update-unifiedroledefinition"></a>Atualizar unifiedRoleDefinition
 
@@ -20,31 +20,39 @@ Namespace: microsoft.graph
 
 Atualize as propriedades de [um objeto unifiedRoleDefinition](../resources/unifiedroledefinition.md) para um provedor RBAC.
 
+
 No momento, há suporte para os seguintes provedores RBAC:
+- Cloud PC
 - gerenciamento de dispositivos (Intune)
 - directory (Azure AD) 
 
-> [!NOTE]
-> No momento, o provedor RBAC do computador na nuvem dá suporte apenas à [lista](rbacapplication-list-roledefinitions.md) e [obter](unifiedroledefinition-get.md) operações.
 
-## <a name="permissions"></a>Permissões
+## <a name="permissions"></a>Permissions
 
-Dependendo do provedor RBAC e do tipo de permissão (delegado ou aplicativo) necessário, escolha na tabela a seguinte permissão com menos privilégios necessária para chamar essa API. Para saber mais, incluindo [ter cuidado antes](/graph/auth/auth-concepts#best-practices-for-requesting-permissions) de escolher permissões mais privilegiadas, pesquise as seguintes permissões na referência [Permissões.](/graph/permissions-reference) 
+Dependendo do provedor RBAC e do tipo de permissão (delegado ou aplicativo) necessário, escolha entre as tabelas a permissão menos privilegiada necessária para chamar essa API. Para saber mais, incluindo [ter cuidado antes](/graph/auth/auth-concepts#best-practices-for-requesting-permissions) de escolher permissões mais privilegiadas, pesquise as seguintes permissões na referência [Permissões.](/graph/permissions-reference) 
 
-### <a name="for-device-management-intune-provider"></a>Para o provedor de gerenciamento de dispositivos (Intune)
+### <a name="for-a-cloud-pc-provider"></a>Para um provedor de computadores na nuvem
+
+|Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
+|:--------------------|:---------------------------------------------------------|
+|Delegado (conta corporativa ou de estudante) | CloudPC.ReadWrite.All   |
+|Delegada (conta pessoal da Microsoft) | Sem suporte.    |
+|Aplicativo | CloudPC.ReadWrite.All  |
+
+### <a name="for-a-device-management-intune-provider"></a>Para um provedor de gerenciamento de dispositivos (Intune)
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
 |:--------------------|:---------------------------------------------------------|
 |Delegado (conta corporativa ou de estudante) |  DeviceManagementRBAC.ReadWrite.All   |
-|Delegado (conta pessoal da Microsoft) | Sem suporte.    |
+|Delegada (conta pessoal da Microsoft) | Sem suporte.    |
 |Aplicativo | DeviceManagementRBAC.ReadWrite.All |
 
-### <a name="for-directory-azure-ad-provider"></a>Provedor do Azure AD (Diretório)
+### <a name="for-a-directory-azure-ad-provider"></a>Para um provedor de diretório (Azure AD)
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
 |:--------------------|:---------------------------------------------------------|
 |Delegado (conta corporativa ou de estudante) |  RoleManagement.ReadWrite.Directory, Directory.ReadWrite.All, Directory.AccessAsUser.All   |
-|Delegado (conta pessoal da Microsoft) | Sem suporte.    |
+|Delegada (conta pessoal da Microsoft) | Sem suporte.    |
 |Aplicativo | RoleManagement.ReadWrite.Directory, Directory.ReadWrite.All |
 
 ## <a name="http-request"></a>Solicitação HTTP
@@ -61,6 +69,12 @@ Para atualizar uma definição de função para um provedor de diretórios:
 PATCH /roleManagement/directory/roleDefinitions/{id}
 ```
 
+Para atualizar uma definição de função para um provedor de computadores na nuvem:
+<!-- { "blockType": "ignored" } -->
+```http
+PATCH /roleManagement/cloudPc/roleDefinitions/{id}
+```
+
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
 
 | Nome       | Descrição|
@@ -73,8 +87,8 @@ No corpo da solicitação, forneça os valores para os campos relevantes que dev
 
 | Propriedade     | Tipo        | Descrição |
 |:-------------|:------------|:------------|
-|description|String| A descrição da definição de função. Somente leitura quando isBuiltIn for true. |
-|displayName|String| O nome de exibição da definição de função. Somente leitura quando isBuiltIn for true. Obrigatório.|
+|description|Cadeia de caracteres| A descrição da definição de função. Somente leitura quando isBuiltIn for true. |
+|displayName|Cadeia de caracteres| O nome de exibição da definição de função. Somente leitura quando isBuiltIn for true. Obrigatório.|
 |id|Cadeia de caracteres| O identificador exclusivo para a definição de função. Chave, não anulada, somente leitura. |
 |isBuiltIn|Booliano| Sinalizador indicando se a definição de função faz parte do conjunto padrão incluído no produto ou personalizado. Somente leitura. |
 |isEnabled|Booliano| Sinalizador indicando se a função está habilitada para atribuição. Se for false, a função não estará disponível para atribuição. Somente leitura quando isBuiltIn for true. |
@@ -86,13 +100,11 @@ No corpo da solicitação, forneça os valores para os campos relevantes que dev
 
 ## <a name="response"></a>Resposta
 
-Se tiver êxito, este método retornará um código de resposta `204 No Content`.
+Se bem-sucedido, este método retorna um código de resposta `204 No Content`.
 
-## <a name="example"></a>Exemplo
+## <a name="example-1-updates-a-unifiedroledefinition-for-a-directory-provider"></a>Exemplo 1: atualiza um **unifiedRoleDefinition** para um provedor de diretórios
 
 ### <a name="request"></a>Solicitação
-
-O exemplo a seguir atualiza **um unifiedRoleDefinition** para um provedor de diretórios.
 
 
 # <a name="http"></a>[HTTP](#tab/http)
@@ -135,7 +147,7 @@ Content-type: application/json
 [!INCLUDE [sample-code](../includes/snippets/java/update-unifiedroledefinition-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[Go](#tab/go)
+# <a name="go"></a>[Ir](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/update-unifiedroledefinition-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
@@ -167,4 +179,46 @@ Content-type: application/json
   "tocPath": ""
 }-->
 
+## <a name="example-2-updates-a-unifiedroledefinition-for-a-cloudpc-provider"></a>Exemplo 2: atualiza um **unifiedRoleDefinition para** um provedor CloudPC
 
+### <a name="request"></a>Solicitação
+
+<!-- {
+  "blockType": "request",
+  "name": "update_unifiedroledefinition_cloudpc"
+}-->
+
+```http
+PATCH https://graph.microsoft.com/beta/roleManagement/cloudPc/roleDefinitions/b7f5ddc1-b7dc-4d37-abce-b9d6fc15ffff
+Content-type: application/json
+
+{
+  "description": "Update basic properties and permission of application registrations",
+  "displayName": "ExampleCustomRole",
+  "rolePermissions":
+    [
+        {
+            "allowedResourceActions": 
+            [
+                "Microsoft.CloudPC/CloudPCs/Read",
+                "Microsoft.CloudPC/CloudPCs/Reprovision"
+            ]
+        }
+    ]
+}
+```
+
+### <a name="response"></a>Resposta
+
+Este é um exemplo de resposta.
+> **Observação:** o objeto de resposta mostrado aqui pode ser encurtado para legibilidade.
+
+<!-- {
+  "blockType": "response"
+} -->
+
+```http
+HTTP/1.1 204 No Content
+Content-type: application/json
+
+```
