@@ -12231,6 +12231,8 @@ items:
                         href: api/accessreviewinstance-list.md
                       - name: Obter
                         href: api/accessreviewinstance-get.md
+                      - name: Atualizar
+                        href: api/accessreviewinstance-update.md
                       - name: Filtrar pelo usuário atual
                         href: api/accessreviewinstance-filterbycurrentuser.md
                       - name: Listar aprovação pendente (preterida)

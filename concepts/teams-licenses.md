@@ -4,12 +4,12 @@ description: Saiba mais sobre os modelos de licenciamento e pagamento que se apl
 author: nkramer
 ms.localizationpriority: high
 ms.prod: microsoft-teams
-ms.openlocfilehash: c59b13a68d16661212df21d9f710d0493e15c295
-ms.sourcegitcommit: f336c5c49fbcebe55312656aa8b50511fd99a657
+ms.openlocfilehash: ca09c2fbfe2256f7858e12ed3ac3566025bfca2a
+ms.sourcegitcommit: 1a607ea5bee096944e0fea14167d372f1ff652f6
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/09/2021
-ms.locfileid: "61390449"
+ms.lasthandoff: 12/16/2021
+ms.locfileid: "61545312"
 ---
 # <a name="licensing-and-payment-requirements-for-microsoft-teams-apis-in-microsoft-graph"></a>Requisitos de licenciamento e pagamento para APIs do Microsoft Teams no Microsoft Graph
 
@@ -17,7 +17,7 @@ Este artigo descreve os requisitos de licenciamento e pagamento para APIs do Mic
 
 Algumas APIs oferecem a opção de escolher um modelo de licenciamento e pagamento por meio do parâmetro de consulta `model`; outras suportam somente um modelo ou não suportam um modelo de licenciamento e pagamento. Os seguintes modelos de licenciamento estão disponível:
 
-- [`model=A`](#modela-requirements) é restrito a aplicativos que executam uma [função de segurança ou conformidade](https://www.microsoft.com/licensing/terms/productoffering/MicrosoftAzureServices/MCA#ServiceSpecificTerms) e exige uma [licença com suporte.](#required-licenses-for-modela)
+- [`model=A`](#modela-requirements) é restrito a aplicativos que executam uma [função de segurança ou conformidade](https://www.microsoft.com/licensing/terms/productoffering/MicrosoftAzure/MCA#ServiceSpecificTerms) e exige uma [licença com suporte.](#required-licenses-for-modela)
 No futuro, os aplicativos também serão obrigados a pagar pelas mensagens que consomem além da [capacidade de propagação](#seeded-capacity).
 
 - [`model=B`](#modelb-requirements) está livre para usar hoje; no entanto, no futuro, os aplicativos pagarão com base no número de mensagens que consomem. Não há requisitos de licenciamento para `model=B`, e ele não está restrito a aplicativos que executam uma função de segurança ou conformidade.

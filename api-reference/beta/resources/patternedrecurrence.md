@@ -1,16 +1,16 @@
 ---
 title: Tipo de recurso patternedRecurrence
 description: O padrão e o intervalo da recorrência.
-localization_priority: Normal
+ms.localizationpriority: medium
 doc_type: resourcePageType
 ms.prod: governance
 author: harini84
-ms.openlocfilehash: baff2147ee0a9e03e4e55a143341171707dee2d7
-ms.sourcegitcommit: db3d2c6db8dd8f8cc14bdcebb2904d5e056a73e7
+ms.openlocfilehash: 9be505b1c9de704f1113e6cac3daa0396ca0949e
+ms.sourcegitcommit: 1a607ea5bee096944e0fea14167d372f1ff652f6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/20/2021
-ms.locfileid: "52579299"
+ms.lasthandoff: 12/16/2021
+ms.locfileid: "61545116"
 ---
 # <a name="patternedrecurrence-resource-type"></a>Tipo de recurso patternedRecurrence
 
@@ -18,12 +18,12 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-O padrão e o intervalo da recorrência.
+O padrão e o intervalo da recorrência. Esse objeto compartilhado é usado para definir a recorrência de avaliações de [acesso,](accessreviewscheduledefinition.md)eventos de calendário [e](event.md)atribuições de pacote de acesso [no](accesspackageassignment.md) Azure AD.
 
 ## <a name="properties"></a>Propriedades
 | Propriedade     | Tipo   |Descrição|
 |:---------------|:--------|:----------|
-|pattern|[recurrencePattern](recurrencepattern.md)|A frequência de um evento. Não especifique para uma revisão de acesso único.|
+|pattern|[recurrencePattern](recurrencepattern.md)|A frequência de um evento. Não especifique para uma revisão de acesso único. <br/><br/> Para análises de acesso: <li>Não especifique essa propriedade para uma revisão de acesso único. <li>  Somente **as** propriedades interval , **dayOfMonth** e **type** ( , ) `weekly` de `absoluteMonthly` [recurrencePattern](recurrencepattern.md) são suportadas.|
 |intervalo|[recurrenceRange](recurrencerange.md)|A duração de um evento.|
 
 ## <a name="json-representation"></a>Representação JSON

@@ -1330,16 +1330,29 @@ items:
             items:
               - name: Reunião online
                 href: resources/onlinemeeting.md
-              - name: Criar
-                href: api/application-post-onlinemeetings.md
-              - name: Obter
-                href: api/onlinemeeting-get.md
-              - name: Atualizar
-                href: api/onlinemeeting-update.md
-              - name: Excluir
-                href: api/onlinemeeting-delete.md
-              - name: Criar ou obter
-                href: api/onlinemeeting-createorget.md
+                items:
+                  - name: Criar
+                    href: api/application-post-onlinemeetings.md
+                  - name: Obter
+                    href: api/onlinemeeting-get.md
+                  - name: Atualizar
+                    href: api/onlinemeeting-update.md
+                  - name: Excluir
+                    href: api/onlinemeeting-delete.md
+                  - name: Criar ou obter
+                    href: api/onlinemeeting-createorget.md
+              - name: Relatório de presença
+                href: resources/meetingAttendanceReport.md
+                items:
+                  - name: Listar
+                    href: api/meetingattendancereport-list.md
+                  - name: Obter
+                    href: api/meetingattendancereport-get.md
+                  - name: Registro de presença
+                    href: resources/attendancerecord.md
+                    items:
+                      - name: List
+                        href: api/attendancerecord-list.md
           - name: Presença
             href: resources/presence.md
             items:
@@ -5288,26 +5301,28 @@ items:
                   - name: Instância de revisão do Access
                     href: resources/accessreviewinstance.md
                     items:
-                      - name: List
+                      - name: Listar
                         href: api/accessreviewinstance-list.md
-                      - name: Listar decisões
-                        href: api/accessreviewinstance-list-decisions.md
                       - name: Obter
                         href: api/accessreviewinstance-get.md
+                      - name: Atualizar
+                        href: api/accessreviewinstance-update.md
+                      - name: Filtrar pelo usuário atual
+                        href: api/accessreviewinstance-filterbycurrentuser.md
+                      - name: Enviar lembrete
+                        href: api/accessreviewinstance-sendreminder.md
+                      - name: Parar
+                        href: api/accessreviewinstance-stop.md
                       - name: Aceitar recomendações
                         href: api/accessreviewinstance-acceptrecommendations.md
                       - name: Aplicar decisões
                         href: api/accessreviewinstance-applydecisions.md
                       - name: Decisões de registro em lotes
                         href: api/accessreviewinstance-batchrecorddecisions.md
-                      - name: Filtrar pelo usuário atual
-                        href: api/accessreviewinstance-filterbycurrentuser.md
                       - name: Redefinir decisões
                         href: api/accessreviewinstance-resetdecisions.md
-                      - name: Enviar lembrete
-                        href: api/accessreviewinstance-sendreminder.md
-                      - name: Parar
-                        href: api/accessreviewinstance-stop.md
+                      - name: Listar decisões
+                        href: api/accessreviewinstance-list-decisions.md
                   - name: Item de decisão da instância de revisão do Access
                     href: resources/accessreviewinstancedecisionitem.md
                     items:

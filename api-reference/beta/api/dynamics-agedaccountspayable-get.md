@@ -4,15 +4,15 @@ description: Obtém um objeto a pagar contas com idade no Dynamics 365 Business 
 services: project-madeira
 documentationcenter: ''
 author: SusanneWindfeldPedersen
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: dynamics-365-business-central
 doc_type: apiPageType
-ms.openlocfilehash: 717b2df6664ae712f2d9e4c273eac13abf88a930
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: b5a7aaa79522322c7bb21244aada3aaf8e98a49b
+ms.sourcegitcommit: 1a607ea5bee096944e0fea14167d372f1ff652f6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52046178"
+ms.lasthandoff: 12/16/2021
+ms.locfileid: "61545277"
 ---
 # <a name="get-agedaccountspayable"></a>Obter agedAccountsPayable
 
@@ -22,14 +22,14 @@ Namespace: microsoft.graph
 
 Recupere as propriedades e as relações de um objeto de relatório de contas a pagar de contas de idade para o Dynamics 365 Business Central.
 
-## <a name="permissions"></a>Permissões
+## <a name="permissions"></a>Permissions
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão |Permissões (da com menos para a com mais privilégios)|
 |:---------------|:------------------------------------------|
 |Delegado (conta corporativa ou de estudante)|Financials.ReadWrite.All |
 |Delegada (conta pessoal da Microsoft|Sem suporte.|
-|Application|Financials.ReadWrite.All|
+|Aplicativo|Financials.ReadWrite.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
 ```http
@@ -51,16 +51,16 @@ Se tiver êxito, este método retornará um código de resposta e um `200 OK` **
 
 ## <a name="example"></a>Exemplo
 
-**Solicitação**
+### <a name="request"></a>Solicitação
 
-Este é um exemplo da solicitação.
+Este é um exemplo de solicitação.
 ```http
 GET https://graph.microsoft.com/beta/financials/companies/{id}/agedAccountsPayable?$filter=periodLengthFilter eq '3M'
 ```
 
-**Response**
+### <a name="response"></a>Resposta
 
-Veja a seguir um exemplo da resposta. 
+Este é um exemplo de resposta. 
 
 > **Observação**: o objeto de resposta mostrado aqui pode ser encurtado com fins de legibilidade.
 

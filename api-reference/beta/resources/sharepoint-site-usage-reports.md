@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 ms.prod: reports
 author: sarahwxy
 doc_type: conceptualPageType
-ms.openlocfilehash: dd0f57a197981ee41b887c824eddcbcf3a2b3814
-ms.sourcegitcommit: f336c5c49fbcebe55312656aa8b50511fd99a657
+ms.openlocfilehash: 7d54fc29b73edac1039f041d4a3dd1a2a2bcafb8
+ms.sourcegitcommit: 1a607ea5bee096944e0fea14167d372f1ff652f6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/09/2021
-ms.locfileid: "61390784"
+ms.lasthandoff: 12/16/2021
+ms.locfileid: "61545368"
 ---
 # <a name="sharepoint-site-usage-reports"></a>Relatórios de uso do site do SharePoint
 
@@ -28,7 +28,7 @@ Você pode obter uma exibição de alto nível do valor que está recebendo do S
 | :----------------------------------------------------------- | :-------------- | :--------------- | ------------------------------------------------------------ |
 | [Obter dados do site](../api/reportroot-getsharepointsiteusagedetail.md) | Fluxo          | Fluxo           | Obtenha dados sobre o uso do site do SharePoint.                     |
 | [Obter contagens de arquivo](../api/reportroot-getsharepointsiteusagefilecounts.md) | Fluxo          | Fluxo           | Obtenha o número total de arquivos em todos os sites e o número de arquivos ativos. Um arquivo (usuário ou sistema) é considerado ativo se ele foi salvo, sincronizado, modificado ou compartilhado dentro do período de tempo especificado. |
-| [Obter contagens do site](../api/reportroot-getsharepointsiteusagesitecounts.md) | Fluxo          | Fluxo           | Obtenha o número total de arquivos em todos os sites e o número de arquivos ativos. Um arquivo (usuário ou sistema) é considerado ativo se ele foi salvo, sincronizado, modificado ou compartilhado dentro do período de tempo especificado. |
+| [Obter contagens do site](../api/reportroot-getsharepointsiteusagesitecounts.md) | Fluxo          | Stream           | Obter a tendência da contagem total e ativa de sites durante o período de relatório. |
 | [Obter armazenamento](../api/reportroot-getsharepointsiteusagestorage.md) | Fluxo          | Fluxo           | Obtenha a tendência de armazenamento alocado e consumido durante o período de relatório. |
 | [Obter páginas](../api/reportroot-getsharepointsiteusagepages.md) | Fluxo          | Fluxo           | Obtenha o número de páginas visualizadas em todos os sites.             |
 

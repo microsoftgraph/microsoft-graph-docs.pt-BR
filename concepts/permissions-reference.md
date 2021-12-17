@@ -4,12 +4,12 @@ description: O Microsoft Graph expõe as permissões granulares que controlam o 
 author: jackson-woods
 ms.localizationpriority: high
 ms.custom: graphiamtop20, scenarios:getting-started
-ms.openlocfilehash: f4e2929350b00fc2ba7180cd55652a161d6348bc
-ms.sourcegitcommit: f336c5c49fbcebe55312656aa8b50511fd99a657
+ms.openlocfilehash: 6b042408d89c265f4689d3c32ed33046ba15baf6
+ms.sourcegitcommit: 1a607ea5bee096944e0fea14167d372f1ff652f6
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/09/2021
-ms.locfileid: "61390456"
+ms.lasthandoff: 12/16/2021
+ms.locfileid: "61545109"
 ---
 # <a name="microsoft-graph-permissions-reference"></a>Referência de permissões do Microsoft Graph
 
@@ -32,11 +32,22 @@ O elemento _constraint_ do nome determina a extensão potencial do acesso que o 
 * **AppFolder** concede permissão para o aplicativo ler e gravar arquivos em uma pasta dedicada no OneDrive. Essa restrição é exposta somente em [Permissões de arquivos](#files-permissions) e só é válida para contas da Microsoft.
 * Se **sem restrição** estiver especificado, o aplicativo estará limitado a executar as operações nos recursos pertencentes ao usuário conectado. Por exemplo, _User.Read_ concede privilégios para ler o perfil apenas do usuário conectado e _Mail.Read_ concede permissão para ler apenas os emails na caixa de correio do usuário conectado.
 
-> **Observação**: Em cenários delegados, as permissões efetivas concedidas ao aplicativo podem ser limitadas pelos privilégios do usuário conectado na organização.
+> **Observação**: em cenários delegados, as permissões efetivas concedidas ao seu aplicativo são restritas pelos privilégios do usuário conectado na organização.
 
 ## <a name="microsoft-accounts-and-work-or-school-accounts"></a>Contas da Microsoft e contas corporativas e de estudante
 
 Nem todas as permissões são válidas para contas da Microsoft e contas corporativas ou estudante. Você pode verificar a coluna da **Conta com Suporte da Microsoft** para cada grupo de permissão para determinar se uma permissão específica é válida para contas Microsoft, contas corporativas ou de estudante, ou ambas.
+
+## <a name="limits-on-requested-permissions-per-app"></a>Limites de permissões solicitadas por aplicativo
+
+O Azure AD limita o número de permissões que podem ser solicitadas e consentidas por um aplicativo cliente. Esses limites dependem do valor `signInAudience` do aplicativo, mostrado no manifesto do aplicativo. 
+
+| signInAudience                     | Usuários permitidos                                            | Máximo de permissões que o aplicativo pode solicitar   | Máximo de permissões do Microsoft Graph que o aplicativo pode solicitar   | Máximo de permissões que podem ser consentidas em uma única solicitação         |
+| ---------------------------------- | -------------------------------------------------------- | ----------------------------------------- | --------------------------------------------------------- | --------------------------------------------------------------------- |
+| AzureADMyOrg                       | Usuários da organização em que o aplicativo está registrado  | 400                                       | 400                                                       | Cerca de 155 permissões delegadas e cerca de 300 permissões de aplicativo |
+| AzureADMultipleOrgs                | Usuários de qualquer organização do Azure AD                     | 400                                       | 400                                                       | Cerca de 155 permissões delegadas e cerca de 300 permissões de aplicativo |
+| PersonalMicrosoftAccount           | Usuários consumidores (como contas do Outlook.com ou Live.com)  | 30                                        | 30                                                        | 30                                                                    |
+| AzureADandPersonalMicrosoftAccount | Usuários e usuários consumidores de qualquer organização do Azure AD  | 30                                        | 30                                                        | 30                                                                    |
 
 ## <a name="permissions-availability-status"></a>Status de disponibilidade de permissões
 
@@ -1328,7 +1339,7 @@ _Notes.ReadWrite_ e _Notes.ReadWrite.All_ também permitem que o aplicativo modi
 Para contas corporativas ou de estudante, _Notes.Read.All_ e _Notes.ReadWrite.All_ permitem que o aplicativo acesse o conteúdo do OneNote de outros usuários ao qual o usuário conectado tenha permissão dentro da organização.
 
 ### <a name="example-usage"></a>Exemplo de uso
-#### <a name="delegated"></a>Delegado
+#### <a name="delegated"></a>Delegated
 
 * _Notes.Create_: Criar novos blocos de anotações para o usuário conectado (`POST /me/onenote/notebooks`).
 * _Notes.Read_: Criar blocos de anotações para o usuário conectado (`GET /me/onenote/notebooks`).
@@ -1920,11 +1931,8 @@ A permissão do aplicativo _Sites.Selected_ está disponível apenas na API do M
 
 |   Permissão    |  Exibir Cadeia de Caracteres   |  Descrição | Consentimento Obrigatório do Administrador | Suporte da conta da Microsoft |
 |:----------------|:------------------|:-------------|:-----------------------|:--------------|
-SubjectRightsRequest.Read.All* | Ler solicitações de direitos da entidade | Permite que o aplicativo leia solicitações de direitos de entidade em nome do usuário conectado. | Sim | Não |
-SubjectRightsRequest.ReadWrite.All* | Ler e gravar solicitações de direitos da entidade | Permite que o aplicativo leia e grave solicitações de direitos de entidade em nome do usuário conectado. | Sim | Não |
-
-> **Importante** As permissões marcadas com um asterisco (*) não estão disponíveis no momento. Para mais detalhes, confira [Problemas conhecidos](/graph/known-issues#compliance).
-
+SubjectRightsRequest.Read.All | Ler solicitações de direitos da entidade | Permite que o aplicativo leia solicitações de direitos de entidade em nome do usuário conectado. | Sim | Não |
+SubjectRightsRequest.ReadWrite.All | Ler e gravar solicitações de direitos da entidade | Permite que o aplicativo leia e grave solicitações de direitos de entidade em nome do usuário conectado. | Sim | Não |
 
 #### <a name="application-permissions"></a>Permissões de aplicativos
 Nenhuma.
@@ -1935,7 +1943,6 @@ Nenhuma.
 - _SubjectRightsRequest.ReadWrite.All_: criar uma solicitação de direitos de entidade (`POST /privacy/subjectrightsrequests`).
 
 Para cenários mais complexos que envolvem várias permissões, confira [Cenários de permissões](#permission-scenarios).
-
 
 ## <a name="tasks-permissions"></a>Permissões de tarefas
 
@@ -2461,7 +2468,7 @@ Para que um aplicativo leia ou grave todas as configurações de implantação c
 
 ### <a name="example-usage"></a>Exemplo de uso
 
-#### <a name="delegated"></a>Delegado
+#### <a name="delegated"></a>Delegated
 
 * _WindowsUpdates.ReadWrite.All_: crie uma implantação (`POST /beta/admin/windows/updates/deployments`).
 

@@ -5,12 +5,12 @@ author: RamjotSingh
 ms.localizationpriority: medium
 ms.prod: microsoft-teams
 doc_type: resourcePageType
-ms.openlocfilehash: 82d7cfa6a4e966c7264be12fe23893c9cce2a8ef
-ms.sourcegitcommit: 0eb843a6f61f384bc28c0cce1ccb74f64bdb1fa6
+ms.openlocfilehash: c37ada5b19f915996e889e1f7dc91afec597c279
+ms.sourcegitcommit: 1a607ea5bee096944e0fea14167d372f1ff652f6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/23/2021
-ms.locfileid: "60560104"
+ms.lasthandoff: 12/16/2021
+ms.locfileid: "61545102"
 ---
 # <a name="chat-resource-type"></a>tipo de recurso de chat
 
@@ -20,7 +20,7 @@ Um chat é uma coleção [de chatMessages](chatmessage.md) entre um ou mais part
 
 > **Observação**: se o chat estiver associado a uma instância [onlineMeeting,](../resources/onlinemeeting.md) alguns dos métodos listados afetarão transitivamente a reunião.
 
-## <a name="methods"></a>Métodos
+## <a name="methods"></a>Methods
 
 |  Método       |  Tipo de retorno  | Descrição| 
 |:---------------|:--------|:----------|
@@ -41,14 +41,14 @@ Um chat é uma coleção [de chatMessages](chatmessage.md) entre um ou mais part
 |[Listar aplicativos no chat](../api/chat-list-installedapps.md) |Coleção [teamsAppInstallation](teamsappinstallation.md) | Listar aplicativos instalados em um chat (e reunião associada).|
 |[Obter aplicativo no chat](../api/chat-get-installedapps.md) | [teamsAppInstallation](teamsappinstallation.md) | Obter um aplicativo específico instalado em um chat (e reunião associada).|
 |[Adicionar aplicativo no chat](../api/chat-post-installedapps.md) | | Adicionar (instalar) um aplicativo em um chat (e reunião associada).|
-|[Atualizar aplicativo no chat](../api/chat-teamsappinstallation-upgrade.md) | Nenhum | Atualizar para a versão mais recente do aplicativo instalado no chat (e reunião associada).|
-|[Desinstalar aplicativo do chat](../api/chat-delete-installedapps.md) | Nenhum | Remover (desinstalar) aplicativo de um chat (e reunião associada).|
+|[Atualizar aplicativo no chat](../api/chat-teamsappinstallation-upgrade.md) | Nenhuma | Atualizar para a versão mais recente do aplicativo instalado no chat (e reunião associada).|
+|[Desinstalar aplicativo do chat](../api/chat-delete-installedapps.md) | Nenhuma | Remover (desinstalar) aplicativo de um chat (e reunião associada).|
 | **Guias** |||
 |[Listar guias no chat](../api/chat-list-tabs.md) | [teamsTab](teamstab.md) | Listar guias fixadas em um chat (e reunião associada).|
 |[Obter guia no chat](../api/chat-get-tabs.md) | [teamsTab](teamstab.md) | Obter uma guia específica fixada em um chat (e reunião associada).|
 |[Adicionar guia ao chat](../api/chat-post-tabs.md) | [teamsTab](teamstab.md) | Adicione (pin) uma guia a um chat (e reunião associada).|
 |[Guia Atualizar no chat](../api/chat-patch-tabs.md) | [teamsTab](teamstab.md) | Atualize as propriedades de uma guia em um chat (e reunião associada).|
-|[Remover guia do chat](../api/chat-delete-tabs.md) | Nenhum | Remover (desempinar) uma guia de um chat (e reunião associada).|
+|[Remover guia do chat](../api/chat-delete-tabs.md) | Nenhuma | Remover (desempinar) uma guia de um chat (e reunião associada).|
 
 >**Observação:** Ao usar permissões de aplicativo, certifique-se de saber como obter a ID do chat. Como não há suporte para listagem de chats com permissões de aplicativo, nem todos os cenários são possíveis. É possível obter IDs de chat com permissões delegadas e de notificações de alteração para [/chats/getAllMessages](../api/subscription-post-subscriptions.md) com permissões de aplicativo.
 
@@ -61,7 +61,7 @@ Um chat é uma coleção [de chatMessages](chatmessage.md) entre um ou mais part
 | id| Cadeia de caracteres| O identificador exclusivo do chat. Somente leitura.|
 | lastUpdatedDateTime| dateTimeOffset|  Data e hora em que o chat foi renomeado ou a lista de membros foi alterada pela última vez. Somente leitura.|
 | topic| String|  (Opcional) Assunto ou tópico para o chat. Disponível apenas para chats em grupo.|
-
+| webUrl | String| A URL do chat no Microsoft Teams. A URL deve ser tratada como um blob opaco e não analisado. Somente leitura. |
 
 ### <a name="chattype-values"></a>valores chatType 
 
@@ -96,7 +96,8 @@ Veja a seguir uma representação JSON do recurso.
   "topic": "string",
   "createdDateTime": "dateTimeOffset",
   "lastUpdatedDateTime": "dateTimeOffset",
-  "chatType": "String"
+  "chatType": "string",
+  "webUrl": "string"
 }
 ```
 
