@@ -5,12 +5,12 @@ author: mkhribech
 ms.localizationpriority: medium
 ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: 00fe202935a202b68da020a82c306a087dae340e
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: 0396c69dcdc3abe600d1b3c02146d5e7b19db0e8
+ms.sourcegitcommit: ba46f9f77d1e0eb9c7f5b2f4366534bfcf99d9c0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "60980878"
+ms.lasthandoff: 12/17/2021
+ms.locfileid: "61561486"
 ---
 # <a name="create-meetingregistrant"></a>Criar meetingRegistrant
 
@@ -25,7 +25,7 @@ Registre [um registro de reunião](../resources/meetingregistrant.md) em uma reu
 
 Em qualquer cenário, o registro receberá uma notificação por email que contém suas informações de registro.
 
-## <a name="permissions"></a>Permissões
+## <a name="permissions"></a>Permissions
 
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
@@ -58,6 +58,9 @@ POST /users/{userId}/onlineMeetings/{id}/registration/registrants
 
 No corpo da solicitação, fornece uma representação JSON das propriedades editáveis de um [objeto meetingRegistrant.](../resources/meetingRegistrant.md)
 
+> [!IMPORTANT]
+> Você deve fornecer a **propriedade @odata.type** para especificar o tipo de registro. Para obter mais detalhes, consulte o exemplo [a seguir](#examples).
+
 ## <a name="response"></a>Resposta
 
 Se tiver êxito, este método retornará um código de resposta e um `200 OK` [objeto meetingRegistrant](../resources/meetingRegistrant.md) parcial no corpo da resposta.
@@ -88,6 +91,7 @@ POST https://graph.microsoft.com/beta/users/16664f75-11dc-4870-bec6-38c1aaa81431
 Content-Type: application/json
 
 {
+  "@odata.type": "#microsoft.graph.meetingRegistrant",
   "firstName": "Frederick",
   "lastName": "Cormier",
   "email": "frederick.cormier@contoso.com",
@@ -119,7 +123,7 @@ Content-Type: application/json
 [!INCLUDE [sample-code](../includes/snippets/java/add-registratrant-user-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[Go](#tab/go)
+# <a name="go"></a>[Ir](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/add-registratrant-user-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
@@ -140,6 +144,7 @@ Content-Type: application/json
 
 {
   "@odata.context": "https://graph.microsoft.com/beta/$metadata#users('16664f75-11dc-4870-bec6-38c1aaa81431')/onlineMeetings('MSpkYzE3Njc0Yy04MWQ5LTRhZGItYmZ')/registration/registrants/$entity",
+  "@odata.type": "#microsoft.graph.meetingRegistrant",
   "id": "gWWckDBR6UOI8_yzWCzeNw,6pAAiSU1bkGqzLnbHG_muA,bzLh6uR-5EGYsCvtvIvs6Q,E4jbleVFdE6BDf6ei3YBOA,KvXQzK4zfU-5LQj_ZLWgow,A7_SArco00S-Qr707l0vBA,UFakyZrk1K9vBacExW1muA",
   "registrationDateTime": null,
   "joinWebUrl": "https://teams.microsoft.com/l/meetup-join/19%3ameeting_MmE4Mzg1OTItYjg2Ni00ZmNmLWI5NjMtODNkZDJiMWNlNTVi%40thread.v2/0?context=%7b%22Tid%22%3a%22909c6581-5131-43e9-88f3-fcb3582cde37%22%2c%22Oid%22%3a%22dc17674c-81d9-4adb-bfb2-8f6a442e4622%22%2c%22prid%22%3a%22gWWckDBR6UOI8_yzWCzeNw%2c6pAAiSa1bkGqzLnbHG_muA%2cbzLh6uR-5EGdsCvtvIvs6Q%2cE4jbleVFdE6BDf6ei3YBOA%2cKvXQzK4zfU-5LQj_ZLWgow%2cA7_SArco00S-Qr707l0vBA%2cUFaiyZrk1K9vBacExW1muA%22%2c%22isPublic%22%3afalse%7d",
@@ -169,6 +174,7 @@ POST https://graph.microsoft.com/beta/users/dc17674c-81d9-4adb-bfb2-8f6a442e4622
 Content-Type: application/json
 
 {
+  "@odata.type": "#microsoft.graph.meetingRegistrant",
   "firstName": "Lisa",
   "lastName": "Adkins",
   "email": "lisa.adkins@contoso.com",
@@ -200,7 +206,7 @@ Content-Type: application/json
 [!INCLUDE [sample-code](../includes/snippets/java/add-registratrant-app-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[Go](#tab/go)
+# <a name="go"></a>[Ir](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/add-registratrant-app-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
@@ -221,6 +227,7 @@ Content-Type: application/json
 
 {
     "@odata.context": "https://graph.microsoft.com/beta/$metadata#users('16664f75-11dc-4870-bec6-38c1aaa81431')/onlineMeetings('MSpkYzE3Njc0Yy04MWQ5LTRhZGItYmZ')/registration/registrants/$entity",
+    "@odata.type": "#microsoft.graph.meetingRegistrant",
     "id": "",
     "registrationDateTime": null,
     "joinWebUrl": "",

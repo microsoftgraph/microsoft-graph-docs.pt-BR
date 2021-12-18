@@ -1,18 +1,18 @@
 ---
-title: Personalizar o cartão de perfil usando a API de perfil no Microsoft Graph (visualização)
-description: Este artigo descreve como você pode personalizar o cartão de perfil tornando visíveis atributos adicionais ou adicionando atributos personalizados.
+title: Adicionar ou excluir propriedades personalizadas do cartão de perfil usando a API de cartão de perfil no Microsoft Graph (visualização)
+description: Como personalizar o cartão de perfil tornando atributos adicionais visíveis ou adicionando atributos personalizados. Você também pode excluir atributos personalizados.
 author: PollyNincevic
 ms.localizationpriority: high
 ms.prod: users
 ms.custom: scenarios:getting-started
-ms.openlocfilehash: a4d43cee6a2fb0d442a8dbf4db2f8283dc0c30be
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 5e1b140f5e3c9612475bcf0a6e404168cced1c92
+ms.sourcegitcommit: ba46f9f77d1e0eb9c7f5b2f4366534bfcf99d9c0
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59066965"
+ms.lasthandoff: 12/17/2021
+ms.locfileid: "61561507"
 ---
-# <a name="add-additional-properties-to-the-profile-card-using-the-profile-card-api-in-microsoft-graph-preview"></a>Adicionar propriedades adicionais ao cartão de perfil usando a API do cartão de perfil no Microsoft Graph (visualização)
+# <a name="add-or-delete-custom-properties-from-the-profile-card-using-the-profile-card-api-in-microsoft-graph-preview"></a>Adicionar ou excluir propriedades personalizadas do cartão de perfil usando a API de cartão de perfil no Microsoft Graph (visualização)
 
 No [cartão de perfil](https://support.office.com/article/profile-cards-in-office-365-e80f931f-5fc4-4a59-ba6e-c1e35a85b501) no Microsoft 365, você pode encontrar informações sobre os usuários armazenados e mantidos pela sua organização, por exemplo **Título do cargo** ou **Local do escritório**.
 
@@ -22,6 +22,8 @@ Use o recurso [profileCardProperty](/graph/api/resources/profilecardproperty) pa
 * Adicionando atributos personalizados
 
 As propriedades adicionais serão exibidas na seção **Contato** do cartão de perfil no Microsoft 365.
+
+Você também pode [excluir](/graph/api/profilecardproperty-delete?view=graph-rest-beta&preserve-view=true) atributos personalizados dos cartões de perfil da organização.
 
 > [!NOTE]
 > As operações no recurso **profileCardProperty** que usam permissões delegadas exigem que o usuário conectado tenha um administrador de locatários ou a função de administrador global.
@@ -78,7 +80,7 @@ Content-type: application/json
 }
 ```
 
-## <a name="adding-custom-attributes"></a>Adicionando atributos personalizados
+## <a name="adding-a-custom-attribute"></a>Adicionar um atributo personalizado
 
 Você pode adicionar qualquer desses 15 [atributos de extensão personalizada](/graph/api/resources/onpremisesextensionattributes) do Azure AD aos cartões de perfil do usuário ao definir as configurações da sua organização e [ao adicionar o valor correspondente como um profileCardProperty](/graph/api/organizationsettings-post-profilecardproperties) no Microsoft Graph. Você pode adicionar um recurso **profileCardProperty** de cada vez.
 
@@ -110,6 +112,8 @@ A tabela a seguir mostra como os nomes de atributo de extensão personalizada do
 
 O exemplo a seguir adiciona o primeiro atributo de extensão personalizada do Microsoft Azure Active Directory para o cartão de perfil, usando o nome de exibição **Centro de custos**. Para os usuários que definiram as configurações de idioma para o alemão, o nome de exibição será **Kostenstelle**.
 
+#### <a name="request"></a>Solicitação
+
 ``` http
 POST https://graph.microsoft.com/beta/organization/{tenantid}/settings/profileCardProperties
 Content-Type: application/json
@@ -134,6 +138,8 @@ Se não houver suporte a um idioma, o nome da propriedade será mostrado com o v
 
 Se bem-sucedido, este método retorna um `201 OK` código de resposta e um objeto **profileCardProperty** no corpo da resposta. Neste exemplo, você pode supor que o cartão de perfil exiba **Kostenstelle** para todos os usuários que definiram as configurações de idioma para o alemão no cartão de perfil. Para todos os outros usuários, **Centro de custos** será exibido no cartão de perfil.
 
+#### <a name="response"></a>Resposta
+
 ``` http
 HTTP/1.1 201 OK
 Content-type: application/json
@@ -152,6 +158,25 @@ Content-type: application/json
     }
   ]
 }
+```
+## <a name="deleting-a-custom-attribute"></a>Excluir um atributo personalizado
+
+Seguindo o mesmo mapeamento entre atributos de extensão personalizada do Azure AD e atributos personalizados do cartão de perfil (como `customAttribute1`), conforme descrito na seção anterior [Adicionando um atributo personalizado](/graph/add-properties-profilecard#adding-a-custom-attribute), você pode excluir um atributo personalizado usando a operação de [exclusão](/graph/api/profilecardproperty-delete?view=graph-rest-beta&preserve-view=true) conforme mostrado no exemplo abaixo:
+
+### <a name="example"></a>Exemplo
+
+O exemplo a seguir exclui o atributo personalizado `customAttribute5` das configurações da organização. Uma exclusão bem-sucedida retorna `HTTP 204`.
+
+#### <a name="request"></a>Solicitação
+
+``` http
+DELETE https://graph.microsoft.com/beta/organization/{organizationId}/settings/profileCardProperties/customAttribute5
+```
+
+#### <a name="response"></a>Resposta
+
+``` http
+HTTP/1.1 204 No Content
 ```
 
 ## <a name="see-also"></a>Confira também

@@ -5,12 +5,12 @@ author: mkhribech
 ms.localizationpriority: medium
 doc_type: resourcePageType
 ms.prod: cloud-communications
-ms.openlocfilehash: 4002e66e9362c52f1a062460ac1ebf64e855c85a
-ms.sourcegitcommit: 1cf7a82df17afc6291e2c93d8b2c277bf3382e6a
+ms.openlocfilehash: c82b4991262e23041d04b2d35ad01c54c8c9d33e
+ms.sourcegitcommit: ba46f9f77d1e0eb9c7f5b2f4366534bfcf99d9c0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/20/2021
-ms.locfileid: "61130136"
+ms.lasthandoff: 12/17/2021
+ms.locfileid: "61561316"
 ---
 # <a name="onlinemeeting-resource-type"></a>Tipo de recurso onlineMeeting
 
@@ -20,14 +20,14 @@ Namespace: microsoft.graph
 
 Contém informações sobre uma reunião, incluindo a URL usada para ingressar em uma reunião, a lista de participantes e a descrição.
 
-## <a name="methods"></a>Métodos
+## <a name="methods"></a>Methods
 
 | Método | Tipo de retorno |Descrição |
 | ------ | ----------- | ---------- |
 | [Criar](../api/application-post-onlineMeetings.md) | [onlineMeeting](onlinemeeting.md) | Criar uma reunião online. |
 | [Get](../api/onlinemeeting-get.md) | [onlineMeeting](onlinemeeting.md) | Leia as propriedades e as relações de um **objeto onlineMeeting.** |
 | [Atualizar](../api/onlinemeeting-update.md) | [onlineMeeting](onlinemeeting.md) | Atualize as propriedades de um **objeto onlineMeeting.** |
-| [Excluir](../api/onlinemeeting-delete.md) | Nenhum | Excluir um **objeto onlineMeeting.** |
+| [Delete](../api/onlinemeeting-delete.md) | Nenhum | Excluir um **objeto onlineMeeting.** |
 | [Criar ou obter OnlineMeeting](../api/onlinemeeting-createorget.md) | [onlineMeeting](onlinemeeting.md) | Crie uma reunião online com uma ID externa personalizada. Se a reunião já existir, recupere suas propriedades. |
 
 ## <a name="properties"></a>Propriedades
@@ -49,7 +49,7 @@ Contém informações sobre uma reunião, incluindo a URL usada para ingressar e
 | externalId            | Cadeia de caracteres | A ID externa. Uma ID personalizada. Opcional.      |
 | id | Cadeia de caracteres | A ID padrão associada à reunião online. Somente leitura.    |
 | isBroadcast | Booliano | Indica se esse é um evento [Teams ao vivo.](/microsoftteams/teams-live-events/what-are-teams-live-events) |
-| isEntryExitAnnounced  | Boolean | Indica se os chamadores ingressarão ou sairão. |
+| isEntryExitAnnounced  | Booliano | Indica se os chamadores ingressarão ou sairão. |
 | joinWebUrl | Cadeia de caracteres | A URL de junção da reunião online. Somente leitura. |
 | joinInformation | [itemBody](itembody.md) | As informações de junção no idioma e na variante de localidade especificadas no cabeçalho HTTP de solicitação "Accept-Language". Somente leitura. |
 | lobbyBypassSettings | [lobbyBypassSettings](lobbyBypassSettings.md) | Especifica quais participantes podem ignorar o lobby da reunião. |
@@ -96,11 +96,13 @@ Contém informações sobre uma reunião, incluindo a URL usada para ingressar e
 | Relação | Tipo | Descrição |
 | ------------ | ---- | ----------- |
 | attendanceReports | [coleção meetingAttendanceReport](meetingAttendanceReport.md) | Os relatórios de participação de uma reunião online. Somente leitura. |
-| registration | [meetingRegistration](meetingregistration.md) | O registro que foi habilitado para uma reunião online. Uma reunião online só pode ter um registro habilitado.|
+| registration | [meetingRegistrationBase](meetingregistrationbase.md) | O registro que foi habilitado para uma reunião online. Uma reunião online só pode ter um registro habilitado.|
 | meetingAttendanceReport (preterido) | [meetingAttendanceReport](meetingAttendanceReport.md) | O relatório de participação da última sessão de reunião online. Somente leitura. |
 
 > [!TIP]
-> A **propriedade meetingAttendanceReport** é preterida. Ele permanecerá em beta para compatibilidade com versões. Em frente, use **a propriedade attendanceReports** para recuperar relatórios de participação de uma reunião online.
+>
+>- A **propriedade meetingAttendanceReport** é preterida. Ele permanecerá em beta para compatibilidade com versões. Em frente, use **a propriedade attendanceReports** para recuperar relatórios de participação de uma reunião online.
+>- O tipo de **registro** pode ser [meetingRegistration](meetingregistration.md) ou [externalMeetingRegistration](externalmeetingregistration.md), ambos herdando de [meetingRegistrationBase](meetingregistrationbase.md).
 
 ## <a name="json-representation"></a>Representação JSON
 

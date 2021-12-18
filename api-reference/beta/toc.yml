@@ -597,7 +597,7 @@ items:
         items:
           - name: Visão Geral
             href: resources/groups-overview.md
-          - name: Group
+          - name: Grupo
             href: resources/group.md
             items:
               - name: Listar grupos
@@ -1600,6 +1600,24 @@ items:
                         href: api/meetingregistration-post-registrants.md
                       - name: Excluir
                         href: api/meetingregistrant-delete.md
+              - name: Registro de reunião externa
+                href: resources/externalmeetingregistration.md
+                items:
+                  - name: Criar
+                    href: api/externalmeetingregistration-post.md
+                  - name: Obter
+                    href: api/externalmeetingregistration-get.md
+                  - name: Excluir
+                    href: api/externalmeetingregistration-delete.md
+                  - name: Registro de reunião externa
+                    href: resources/externalmeetingregistrant.md
+                    items:
+                      - name: Listar
+                        href: api/externalmeetingregistrant-list.md
+                      - name: Criar
+                        href: api/externalmeetingregistrant-post.md
+                      - name: Excluir
+                        href: api/externalmeetingregistrant-delete.md
           - name: Presença
             href: resources/presence.md
             items:
@@ -1833,7 +1851,7 @@ items:
                     href: api/projectrome-put-historyitem.md
                   - name: Excluir um item do histórico
                     href: api/projectrome-delete-historyitem.md
-      - name: Reserva de clientes (prévia)
+      - name: Reserva de clientes
         displayName: 'Bookings, Microsoft Bookings'
         items:
           - name: Visão Geral
@@ -14099,7 +14117,7 @@ items:
                     href: api/termstore-store-get.md
                   - name: Atualizar
                     href: api/termstore-store-update.md
-              - name: Group
+              - name: Grupo
                 href: resources/termstore-group.md
                 items:
                   - name: Criar
