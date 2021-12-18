@@ -1,16 +1,16 @@
 ---
 title: Tipo de recurso educationAssignmentDefaults
 description: Especifica os padrões de nível de classe respeitados por novas atribuições criadas na classe
-author: sharad-sharma-msft
+author: cristobal-buenrostro
 ms.localizationpriority: medium
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: 7a21494ca3bd039e0ac5ac28c5f02be3c802dea0
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 620798d001df51bff352bcca4dce891a76f22cea
+ms.sourcegitcommit: 15dd0e98e69f872ed5a709600608b244759b0967
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59021712"
+ms.lasthandoff: 12/18/2021
+ms.locfileid: "61567388"
 ---
 # <a name="educationassignmentdefaults-resource-type"></a>Tipo de recurso educationAssignmentDefaults
 
@@ -20,7 +20,7 @@ Especifica os padrões de nível de classe respeitados por novas atribuições c
 
 Os chamadores podem continuar a especificar valores personalizados em cada criação de atribuição se não quiserem os comportamentos padrão.
 
-## <a name="methods"></a>Métodos
+## <a name="methods"></a>Methods
 |Método|Tipo de retorno|Descrição|
 |:---|:---|:---|
 |[Obter educationAssignmentDefaults](../api/educationassignmentdefaults-get.md)|[educationAssignmentDefaults](../resources/educationassignmentdefaults.md)|Leia as propriedades e as relações de um [objeto educationAssignmentDefaults.](../resources/educationassignmentdefaults.md)|
@@ -30,6 +30,7 @@ Os chamadores podem continuar a especificar valores personalizados em cada cria�
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
 |addedStudentAction|educationAddedStudentAction|Comportamento padrão no nível de classe para lidar com alunos que são adicionados após a publicação da atribuição. Os valores possíveis são: `none` e `assignIfOpen`.|
+|addToCalendarAction| educationAddToCalendarOptions|Campo opcional para controlar a adição de atribuições aos calendários dos alunos e professores quando a atribuição for publicada. Os valores possíveis são: `none` , , , e `studentsAndPublisher` `studentsAndTeamOwners` `unknownFutureValue` `studentsOnly` . Observe que você deve usar o header de solicitação para obter os seguintes valores nesta `Prefer: include-unknown-enum-members` [enum evolvável](/graph/best-practices-concept#handling-future-members-in-evolvable-enumerations): `studentsOnly` . O valor padrão é `none`.|
 |dueTime|TimeOfDay|Valor padrão de nível de classe para o campo de tempo de vencimento. O valor padrão é `23:59:00`.|
 |notificationChannelUrl|Cadeia de caracteres|Canal Teams padrão para o qual as notificações serão enviadas. O valor padrão é `null`.|
 
@@ -48,6 +49,7 @@ Veja a seguir uma representação JSON do recurso.
 ``` json
 {
   "addedStudentAction": "String",
+  "addToCalendarAction": "educationAddToCalendarOptions",  
   "dueTime": "String (timestamp)",
   "notificationChannelUrl": "String"
 }

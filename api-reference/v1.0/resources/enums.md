@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 ms.prod: non-product-specific
 author: MSGraphDocsvTeam
 doc_type: enumPageType
-ms.openlocfilehash: 1288bddd70c1ee82ed3f8056a295ecf3dfbc183c
-ms.sourcegitcommit: c47e3d1f3c5f7e2635b2ad29dfef8fe7c8080bc8
+ms.openlocfilehash: 2b0bf8890f4929d499b7a58f81d107f3b7c293d5
+ms.sourcegitcommit: 15dd0e98e69f872ed5a709600608b244759b0967
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/15/2021
-ms.locfileid: "61525383"
+ms.lasthandoff: 12/18/2021
+ms.locfileid: "61567374"
 ---
 # <a name="enum-values"></a>Valores denum
 
@@ -441,6 +441,25 @@ Namespace: microsoft.graph
 |peerToPeer|
 |unknownFutureValue|
 
+### <a name="educationaddtocalendaroptions-values"></a>valores educationAddToCalendarOptions
+|Member|
+|:---|
+|none|
+|studentsAndPublisher|
+|studentsAndTeamOwners|
+|unknownFutureValue|
+|studentsOnly|
+
+### <a name="educationsubmissionstatus-values"></a>valores educationSubmissionStatus
+|Member|
+|:---|
+|Trabalhando|
+|enviado|
+|released|
+|retornado|
+|unknownFutureValue|
+|reatribuido|
+
 ### <a name="onlinemeetingrole-values"></a>Valores onlineMeetingRole
 
 |Member|
@@ -480,7 +499,7 @@ Namespace: microsoft.graph
 
 |Member|
 |:---|
-|Nenhuma|
+|Nenhum|
 |SecurityGroup|
 |Tudo|
 
@@ -1304,7 +1323,7 @@ Valores possíveis para tipos de conta de usuário (associação ao grupo), por 
 
 | Membro | Valor | Descrição             |
 |:-------|:------|:------------------------|
-| email   | 1     | Ameaça de email.            |
+| Email   | 1     | Ameaça de email.            |
 | url    | 2     | Ameaça de URL.             |
 | file   | 3     | Ameaça de arquivo de anexo. |
 

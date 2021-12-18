@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: sharad-sharma-msft
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: e5b7115a936264cf1380cd7b515454099eddbdba
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: 786d364847297edea5538251c5701502c3ced7f2
+ms.sourcegitcommit: 15dd0e98e69f872ed5a709600608b244759b0967
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "61031097"
+ms.lasthandoff: 12/18/2021
+ms.locfileid: "61567304"
 ---
 # <a name="update-educationassignment"></a>Atualizar educationassignment
 
@@ -50,7 +50,8 @@ Propriedades existentes que não estão incluídas no corpo da solicitação ter
 | Propriedade     | Tipo   |Descrição|
 |:---------------|:--------|:----------|
 |addedStudentAction|Cadeia de caracteres| Descreve se a atribuição deve ser distribuída aos alunos que são adicionados após a data de publicação da atribuição.|
-|allowLateSubmissions|Boolean| Se os alunos podem enviar envio após a data de vencimento.|
+|addToCalendarAction|educationAddToCalendarOptions|Campo opcional para controlar o comportamento **de atribuição** para adicionar atribuições aos **calendários** dos alunos e professores quando a **atribuição** for publicada. Os valores possíveis são: `none`, `studentsAndPublisher`, `studentsAndTeamOwners`, `unknownFutureValue`, `studentsOnly`. Observe que você deve usar o header de solicitação para obter os seguintes valores nesta `Prefer: include - unknown -enum-members` [enum evolvável](/graph/best-practices-concept#handling-future-members-in-evolvable-enumerations): `studentsOnly` . Opcional.|
+|allowLateSubmissions|Booliano| Se os alunos podem enviar envio após a data de vencimento.|
 |allowStudentsToAddResourcesToSubmission|Booliano| Se um aluno pode adicionar recursos a um envio ou não. Além disso, indica se todos os recursos no envio correspondem à lista de recursos de atribuição. |
 |assignDateTime|DateTimeOffset| Indica a data para publicar a atribuição aos alunos. |
 |assignTo|educationAssignmentRecipient| Alunos que receberão a atribuição.|
@@ -59,7 +60,7 @@ Propriedades existentes que não estão incluídas no corpo da solicitação ter
 |dueDateTime|DateTimeOffset| A atribuição de data é devido. |
 |grading|educationAssignmentGradeType| Como a atribuição será gradeada.|
 |instructions|itemBody| Instruções a serem fornecidas aos alunos juntamente com a atribuição. |
-|notificationChannelUrl|String| O canal para comunicar notificações relacionadas à atribuição. Para alterar a URL, de definir `assignTo` o valor [como educationAssignmentClassRecipient](../resources/educationassignmentclassrecipient.md). A URL do canal não pode ser mudada após a publicação da atribuição.|
+|notificationChannelUrl|Cadeia de caracteres| O canal para comunicar notificações relacionadas à atribuição. Para alterar a URL, de definir `assignTo` o valor [como educationAssignmentClassRecipient](../resources/educationassignmentclassrecipient.md). A URL do canal não pode ser mudada após a publicação da atribuição.|
 
 ## <a name="response"></a>Resposta
 Se tiver êxito, este método retornará um código de resposta e um `200 OK` objeto [educationAssignment](../resources/educationassignment.md) atualizado no corpo da resposta.
@@ -106,7 +107,7 @@ Content-type: application/json
 [!INCLUDE [sample-code](../includes/snippets/java/update-educationassignment-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[Go](#tab/go)
+# <a name="go"></a>[Ir](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/update-educationassignment-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 

@@ -5,12 +5,12 @@ author: sharad-sharma-msft
 ms.localizationpriority: medium
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: fe0fe8452e3a18ca2910a78276c79895e77e2f3d
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: 020b68061ed32ddcdaab801eef07e2422176440f
+ms.sourcegitcommit: 15dd0e98e69f872ed5a709600608b244759b0967
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "61024719"
+ms.lasthandoff: 12/18/2021
+ms.locfileid: "61567309"
 ---
 # <a name="update-educationassignmentdefaults"></a>Atualizar educationAssignmentDefaults
 Namespace: microsoft.graph
@@ -52,6 +52,7 @@ Propriedades existentes que não estão incluídas no corpo da solicitação ter
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
 |addedStudentAction|educationAddedStudentAction| Ações padrão de nível de classe para alunos adicionados após a data de publicação da atribuição. Os valores possíveis são: `none` e `assignIfOpen`. O valor padrão é `none`.|
+|addToCalendarAction|educationAddToCalendarOptions|Campo opcional para controlar o comportamento **de atribuição** para adicionar atribuições aos **calendários** dos alunos e professores quando a **atribuição** for publicada. Os valores possíveis são: `none`, `studentsAndPublisher`, `studentsAndTeamOwners`, `unknownFutureValue`, `studentsOnly`. Observe que você deve usar o header de solicitação para obter os seguintes valores nesta `Prefer: include - unknown -enum-members` [enum evolvável](/graph/best-practices-concept#handling-future-members-in-evolvable-enumerations): `studentsOnly` . Opcional.|
 |dueTime|TimeOfDay| Valor padrão de nível de classe para o campo de tempo de vencimento. O valor padrão é `23:59:00`|
 |notificationChannelUrl|Cadeia de caracteres| Canal Teams padrão para enviar notificações relacionadas à atribuição. O valor padrão é `null`.|
 
@@ -97,7 +98,7 @@ Content-Type: application/json
 [!INCLUDE [sample-code](../includes/snippets/java/update-educationassignmentdefaults-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[Go](#tab/go)
+# <a name="go"></a>[Ir](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/update-educationassignmentdefaults-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 

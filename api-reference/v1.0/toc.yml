@@ -525,7 +525,7 @@ items:
         items:
           - name: Visão Geral
             href: resources/groups-overview.md
-          - name: Group
+          - name: Grupo
             href: resources/group.md
             items:
               - name: Listar grupos
@@ -4369,6 +4369,8 @@ items:
                 href: api/educationuser-list-taughtclasses.md
               - name: Criar rubrica
                 href: api/educationuser-post-rubrics.md
+              - name: Listar tarefas
+                href: api/educationuser-list-assignments.md
           - name: Tarefa
             href: resources/educationassignment.md
             items:
@@ -4467,6 +4469,8 @@ items:
                 href: api/educationsubmittedsubmissionresource-get.md
               - name: Retornar envio
                 href: api/educationsubmission-return.md
+              - name: Reatribuir envio
+                href: api/educationsubmission-reassign.md
           - name: Resultado
             items:
               - name: Resultado
@@ -6226,7 +6230,7 @@ items:
                 href: api/site-list-subsites.md
               - name: Procurar sites
                 href: api/site-search.md
-              - name: Permissions
+              - name: Permissões
                 href: resources/permission.md
                 items:
                   - name: Obter permissão de site
@@ -6320,7 +6324,7 @@ items:
                     href: api/termstore-store-get.md
                   - name: Atualizar
                     href: api/termstore-store-update.md
-              - name: Group
+              - name: Grupo
                 href: resources/termstore-group.md
                 items:
                   - name: Listar

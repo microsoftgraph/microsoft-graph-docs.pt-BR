@@ -5,12 +5,12 @@ author: mlafleur
 ms.localizationpriority: medium
 ms.prod: education
 doc_type: resourcePageType
-ms.openlocfilehash: 17fc8443bf6fb9a038465e78072637965ac8ec94
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: fda049baac2a2a12d9abd21f0af1742ffecbf348
+ms.sourcegitcommit: 15dd0e98e69f872ed5a709600608b244759b0967
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59118629"
+ms.lasthandoff: 12/18/2021
+ms.locfileid: "61567381"
 ---
 # <a name="educationuser-resource-type"></a>Tipo de recurso educationUser
 
@@ -20,7 +20,7 @@ Um usuário no sistema. Essa é uma variante específica de educação do usuár
 
 Herda da [entidade](../resources/entity.md).
 
-## <a name="methods"></a>Métodos
+## <a name="methods"></a>Methods
 
 | Método                                                           | Tipo de retorno                                                 | Descrição                                                                                        |
 | :--------------------------------------------------------------- | :---------------------------------------------------------- | :------------------------------------------------------------------------------------------------- |
@@ -44,7 +44,7 @@ Herda da [entidade](../resources/entity.md).
 | departamento           | String                                                             | O nome do departamento no qual o usuário trabalha. Oferece suporte para `$filter`.                                                                                                                                                                                                                                                                                                                                                                                                                                                           |
 | displayName          | String                                                             | O nome exibido para o usuário no catálogo de endereços. Geralmente é a combinação do nome, da inicial do nome do meio e do sobrenome do usuário. Essa propriedade é obrigatória quando um usuário é criado e não pode ser apagado durante atualizações. Oferece suporte para `$filter` e `$orderby`.                                                                                                                                                                                                                                                           |
 | externalSource       | educationExternalSource                                            | De onde esse usuário foi criado. Os valores possíveis são: `sis` e `manual`.                                                                                                                                                                                                                                                                                                                                                                                                                                                          |
-| externalSourceDetail | String                                                             | O nome da fonte externa de onde esses recursos foram gerados.                                                                                                                                                                                                                                                                                                                                                                                                                                                               |
+| externalSourceDetail | Cadeia de caracteres                                                             | O nome da fonte externa de onde esses recursos foram gerados.                                                                                                                                                                                                                                                                                                                                                                                                                                                               |
 | givenName            | String                                                             | O nome fornecido (nome) do usuário. Oferece suporte para `$filter`.                                                                                                                                                                                                                                                                                                                                                                                                                                                                       |
 | id                   | Cadeia de caracteres                                                             | Identificador de objeto. Herdado da [entidade](../resources/entity.md)                                                                                                                                                                                                                                                                                                                                                                                                                                                               |
 | email                 | String                                                             | O endereço SMTP do usuário; por exemplo, jeff@contoso.onmicrosoft.com. Somente Leitura. Suporta o `$filter`.                                                                                                                                                                                                                                                                                                                                                                                                                         |
@@ -74,6 +74,7 @@ Herda da [entidade](../resources/entity.md).
 
 | Relação  | Tipo                                                          | Descrição                                    |
 | :------------ | :------------------------------------------------------------ | :--------------------------------------------- |
+| assignments   | [coleção educationAssignment](../resources/educationassignment.md)   | Atribuições pertencentes ao usuário.   |
 | classes       | Coleção [educationClass](../resources/educationclass.md)   | Aulas às quais o usuário pertence. Anulável.   |
 | schools       | Coleção [educationSchool](../resources/educationschool.md) | Escolas às quais o usuário pertence. Anulável.   |
 | taughtClasses | Coleção [educationClass](../resources/educationclass.md)   | Classes para as quais o usuário é professor.       |
