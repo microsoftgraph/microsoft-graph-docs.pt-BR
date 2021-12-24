@@ -5,16 +5,18 @@ ms.localizationpriority: medium
 author: Jordanndahl
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: 5ed316cff674e32a31c491a8ea225955fa08b691
+ms.openlocfilehash: d1b83cfa1072e8fe2eb7ac9b27beb8342815edcb
 ms.sourcegitcommit: 9759b647acfbed99d5675a6f512aaa33932a723f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
 ms.lasthandoff: 12/23/2021
-ms.locfileid: "61604270"
+ms.locfileid: "61604368"
 ---
 # <a name="group-renew"></a>group: renew
 
 Namespace: microsoft.graph
+
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Renova a expiração de um grupo. Quando um grupo é renovado, a expiração do grupo é estendida pelo número de dias definido na política.
 
@@ -54,35 +56,13 @@ Se bem-sucedido, este método retorna um código de resposta `204 No Content`. N
 ### <a name="request"></a>Solicitação
 
 
-# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "group_renew"
 }-->
 ```http
-POST https://graph.microsoft.com/v1.0/groups/{id}/renew
+POST https://graph.microsoft.com/beta/groups/{id}/renew
 ```
-# <a name="c"></a>[C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/group-renew-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# <a name="javascript"></a>[JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/group-renew-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# <a name="objective-c"></a>[Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/group-renew-objc-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# <a name="java"></a>[Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/group-renew-java-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# <a name="go"></a>[Ir](#tab/go)
-[!INCLUDE [sample-code](../includes/snippets/go/group-renew-go-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
----
 
 
 ### <a name="response"></a>Resposta
@@ -92,16 +72,3 @@ POST https://graph.microsoft.com/v1.0/groups/{id}/renew
 ```http
 HTTP/1.1 204 No Content
 ```
-
-<!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
-2015-10-25 14:57:30 UTC -->
-<!-- {
-  "type": "#page.annotation",
-  "description": "group: renew",
-  "keywords": "",
-  "section": "documentation",
-  "tocPath": "",
-  "suppressions": [
-  ]
-}-->
-

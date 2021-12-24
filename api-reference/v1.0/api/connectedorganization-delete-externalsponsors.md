@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: markwahl-msft
 ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: ba93d4d111494b35599046d0e24bd662a7e86778
-ms.sourcegitcommit: 65f4e128f96783c18d607a6dcffbc914291285d4
+ms.openlocfilehash: b4ec9d98114ed9f87498c0432ac36de899174157
+ms.sourcegitcommit: 9759b647acfbed99d5675a6f512aaa33932a723f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/08/2021
-ms.locfileid: "61347953"
+ms.lasthandoff: 12/23/2021
+ms.locfileid: "61604165"
 ---
 # <a name="remove-externalsponsors"></a>Remover externalSponsors
 
@@ -19,7 +19,7 @@ Namespace: microsoft.graph
 Remova um usuário ou um grupo dos patrocinadores externos da organização conectada. Os [patrocinadores externos](../resources/externalsponsors.md) são um conjunto de usuários que podem aprovar solicitações em nome de outros usuários dessa organização conectada.
 
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
@@ -55,7 +55,7 @@ Este é um exemplo de solicitação.
 # <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "delete_internalsponsor_from_connectedorganization"
+  "name": "delete_externalsponsor_from_connectedorganization"
 }
 -->
 ``` http

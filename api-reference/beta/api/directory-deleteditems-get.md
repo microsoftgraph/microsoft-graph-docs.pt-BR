@@ -5,12 +5,12 @@ author: keylimesoda
 ms.localizationpriority: medium
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: 5f6c46024fa1e867e35b8c4da4503eb8fc8e19b4
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: 57084dbcb85dc8737ef73bcb0c7ac9f25f875dd8
+ms.sourcegitcommit: 9759b647acfbed99d5675a6f512aaa33932a723f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "61003293"
+ms.lasthandoff: 12/23/2021
+ms.locfileid: "61604186"
 ---
 # <a name="get-deleted-item"></a>Obter item excluído
 
@@ -21,6 +21,8 @@ Namespace: microsoft.graph
 Recupera as propriedades de um item recentemente excluído em [itens excluídos](../resources/directory.md).
 
 Atualmente, a funcionalidade de itens excluídos só tem suporte para os recursos [de](../resources/application.md)aplicativo, [grupo](../resources/group.md) [e](../resources/user.md) usuário.
+
+>**Observação:** Grupos de segurança excluídos e listas de distribuição são excluídos permanentemente e não podem ser recuperados por meio dessa API.
 
 ## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
@@ -98,7 +100,7 @@ GET https://graph.microsoft.com/beta/directory/deleteditems/46cc6179-19d0-473e-9
 [!INCLUDE [sample-code](../includes/snippets/java/get-directory-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[Go](#tab/go)
+# <a name="go"></a>[Ir](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/get-directory-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 

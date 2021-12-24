@@ -5,20 +5,20 @@ ms.localizationpriority: medium
 doc_type: resourcePageType
 ms.prod: governance
 author: raprakasMSFT
-ms.openlocfilehash: f77172c3ddae5799ce1c46dec09fe468b67606ce
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 21563f8a0c884c1b290a4dad8c807e7b2e9d3e81
+ms.sourcegitcommit: 9759b647acfbed99d5675a6f512aaa33932a723f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59089981"
+ms.lasthandoff: 12/23/2021
+ms.locfileid: "61604396"
 ---
 # <a name="agreement-resource-type"></a>tipo de recurso de contrato
 
 Namespace: microsoft.graph
 
-Representa os termos de uso personalizáveis de um locatário que são criados e gerenciados com Azure Active Directory (Azure AD). Você pode usar os métodos a seguir para criar e gerenciar o recurso Azure Active Directory [termos de uso](/azure/active-directory/active-directory-tou) de acordo com seu cenário.
+Representa os termos de uso personalizáveis de um locatário que são criados e gerenciados com Azure Active Directory (Azure AD). Você pode usar os métodos a seguir para criar e gerenciar o recurso Azure Active Directory [termos de uso](/azure/active-directory/conditional-access/terms-of-use) de acordo com seu cenário.
 
-## <a name="methods"></a>Métodos
+## <a name="methods"></a>Methods
 
 | Método       | Tipo de retorno | Descrição |
 |:-------------|:------------|:------------|
@@ -26,17 +26,17 @@ Representa os termos de uso personalizáveis de um locatário que são criados e
 | [Criar acordos](../api/agreement-post-agreements.md) | [agreement](agreement.md) | Crie um novo contrato postando na coleção de contratos. |
 | [Obter contrato](../api/agreement-get.md) | [agreement](agreement.md) | Ler propriedades e relações de um objeto de contrato. |
 | [Atualizar contrato](../api/agreement-update.md) | [agreement](agreement.md) | Atualize um objeto agreement. |
-| [Excluir contrato](../api/agreement-delete.md) | Nenhum(a) | Excluir um objeto agreement. |
+| [Excluir contrato](../api/agreement-delete.md) | Nenhum | Excluir um objeto agreement. |
 
 ## <a name="properties"></a>Propriedades
 | Propriedade     | Tipo        | Descrição |
 |:-------------|:------------|:------------|
 |displayName|Cadeia de caracteres|Nome de exibição do contrato. O nome de exibição é usado para o controle interno do contrato, mas não é mostrado aos usuários finais que visualizam o contrato.|
-|id|String| O identificador do contrato. Somente leitura.|
+|id|Cadeia de caracteres| O identificador do contrato. Somente leitura.|
 |isPerDeviceAcceptanceRequired|Booliano|Indica se os usuários finais são necessários para aceitar esse contrato em todos os dispositivos de onde eles o acessam. O usuário final deve registrar seu dispositivo no Azure AD, caso ainda não tenha feito isso.|
-|isViewingBeforeAcceptanceRequired|Boolean|Indica se o usuário precisa expandir o contrato antes de aceitar.|
+|isViewingBeforeAcceptanceRequired|Booliano|Indica se o usuário precisa expandir o contrato antes de aceitar.|
 |termsExpiration|[termsExpiration](termsexpiration.md)| Cronograma de expiração e frequência de acordo para todos os usuários. |
-|userReacceptRequiredFrequency|Duration|A duração após a qual o usuário deve aceitar os termos de uso. O valor é representado no formato ISO 8601 por durações.|
+|userReacceptRequiredFrequency|Duração|A duração após a qual o usuário deve aceitar os termos de uso. O valor é representado no formato ISO 8601 por durações.|
 
 
 ## <a name="relationships"></a>Relações

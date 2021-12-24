@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: Jumaodhiss
 doc_type: apiPageType
 ms.prod: change-notifications
-ms.openlocfilehash: 88629f81300284bebe3276b437b406ece1b10360
-ms.sourcegitcommit: c900d22144429ac7aecae3355a4cdc1987cc4234
+ms.openlocfilehash: 0513533031b7f8bc5bd35dd2cf080dfd7ff2d577
+ms.sourcegitcommit: 9759b647acfbed99d5675a6f512aaa33932a723f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/13/2021
-ms.locfileid: "61424655"
+ms.lasthandoff: 12/23/2021
+ms.locfileid: "61604418"
 ---
 # <a name="create-subscription"></a>Criar assinatura
 
@@ -32,7 +32,7 @@ Dependendo do recurso e do tipo de permissão (delegado ou aplicativo) solicitad
 |:-----|:-----|:-----|:-----|
 |[callRecord](../resources/callrecords-callrecord.md) (/communications/callRecords) | Incompatível | Incompatível | CallRecords.Read.All  |
 |[canais](../resources/channel.md) (/teams/getAllChannels todos – os canais em uma organização) | Incompatível  | Sem suporte | Channel.ReadBasic.All, ChannelSettings.Read.All |
-|[canais](../resources/channel.md) (/teams/{id}/channels) | Channel.ReadBasic.All, ChannelSettings.Read.All  | Incompatível | Channel.ReadBasic.All, ChannelSettings.Read.All  |
+|[canais](../resources/channel.md) (/teams/{id}/channels) | Channel.ReadBasic.All, ChannelSettings.Read.All  | Sem suporte | Channel.ReadBasic.All, ChannelSettings.Read.All  |
 |[chat](../resources/chat.md) chat (/conversa – todos os chats em uma organização) | Incompatível | Incompatível | Chat.ReadBasic.All, Chat.Read.All, Chat.ReadWrite.All |
 |[chat](../resources/chat.md) (/chats/{id}) | Chat.ReadBasic, Chat.Read, Chat.ReadWrite | Sem suporte | ChatSettings.Read.Chat *, ChatSettings.ReadWrite.Chat*, Chat.Manage.Chat*, Chat.ReadBasic.All, Chat.Read.All, Chat.ReadWrite.All |
 |[chatMessage](../resources/chatmessage.md) (/teams/{id}/channels/{id}/messages) | ChannelMessage.Read.All, Group.Read.All, Group.ReadWrite.All | Sem suporte | ChannelMessage.Read.Group*, ChannelMessage.Read.All  |
@@ -58,9 +58,9 @@ Dependendo do recurso e do tipo de permissão (delegado ou aplicativo) solicitad
 |[alerta de segurança](../resources/alert.md) | SecurityEvents.ReadWrite.All | Sem suporte | SecurityEvents.ReadWrite.All |
 |[teams](../resources/team.md) (/teams – todas as equipes em uma organização) | Sem suporte | Incompatível | Team.ReadBasic.All, TeamSettings.Read.All |
 |[teams](../resources/team.md) (/teams/{id}) | Team.ReadBasic.All, TeamSettings.Read.All | Incompatível | Team.ReadBasic.All, TeamSettings.Read.All |
-|[todoTask](../resources/todotask.md) | Tasks.ReadWrite | Tasks.ReadWrite | Incompatível |
+|[todoTask](../resources/todotask.md) | Tasks.ReadWrite | Tasks.ReadWrite | Sem suporte |
 |[baseTask](../resources/basetask.md) | Tasks.ReadWrite | Tasks.ReadWrite | Incompatível |
-|[Usuário](../resources/user.md) | User.Read.All | User.Read.All | User.Read.All |
+|[user](../resources/user.md) | User.Read.All | User.Read.All | User.Read.All |
 
 > **Observação**: Permissões marcadas com * usam [consentimento específico de recurso]( https://aka.ms/teams-rsc).
 
@@ -101,6 +101,10 @@ POST /subscriptions
 | Nome       | Tipo | Descrição|
 |:-----------|:------|:----------|
 | Autorização  | string  | {token} de portador. Obrigatório. |
+
+## <a name="request-body"></a>Corpo da solicitação
+
+No corpo da solicitação, fornece uma representação JSON do [objeto subscription.](../resources/subscription.md)
 
 ## <a name="response"></a>Resposta
 
@@ -151,7 +155,7 @@ Content-type: application/json
 [!INCLUDE [sample-code](../includes/snippets/java/create-subscription-from-subscriptions-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[Go](#tab/go)
+# <a name="go"></a>[Ir](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/create-subscription-from-subscriptions-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
@@ -218,7 +222,7 @@ Content-type: application/json
 }
 ```
 
-### <a name="notification-endpoint-validation"></a>Validação de ponto de extremidade da notificação
+#### <a name="notification-endpoint-validation"></a>Validação de ponto de extremidade da notificação
 
 O ponto de extremidade de notificação de assinatura (especificado na propriedade **notificationUrl)** deve ser capaz de responder a uma solicitação de validação conforme descrito em [Set up notifications for changes in user data](/graph/webhooks#notification-endpoint-validation). Se a validação falhar, a solicitação para criar a assinatura retornará um erro de Solicitação Incorreta 400.
 

@@ -5,12 +5,12 @@ author: jpettere
 ms.localizationpriority: high
 ms.prod: users
 doc_type: apiPageType
-ms.openlocfilehash: c7748ba6ec8663274b030465126a3b8f66e7c7ea
-ms.sourcegitcommit: f65eee432cc903324b5f9b31710fdc6100590f36
+ms.openlocfilehash: 5b946f3c624acde3e30d2013a9b11e617fa7760f
+ms.sourcegitcommit: 9759b647acfbed99d5675a6f512aaa33932a723f
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/07/2021
-ms.locfileid: "61322272"
+ms.lasthandoff: 12/23/2021
+ms.locfileid: "61604382"
 ---
 # <a name="list-users"></a>Listar usuários
 
@@ -98,7 +98,7 @@ GET https://graph.microsoft.com/beta/users
 [!INCLUDE [sample-code](../includes/snippets/java/get-users-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[Go](#tab/go)
+# <a name="go"></a>[Ir](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/get-users-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
@@ -168,7 +168,7 @@ GET https://graph.microsoft.com/beta/users?$select=displayName,id&$filter=identi
 [!INCLUDE [sample-code](../includes/snippets/java/get-signinname-users-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[Go](#tab/go)
+# <a name="go"></a>[Ir](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/get-signinname-users-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
@@ -204,7 +204,7 @@ Content-type: application/json
 
 A seguir está um exemplo de solicitação. Os detalhes da propriedade **signInActivity** requerem uma licença do Azure AD Premium P1/P2 e a permissão AuditLog.Read.All. 
 
->**Observação**: há um [problema conhecido](/graph//graph/known-issues#license-check-errors-for-azure-ad-activity-reports) ao recuperar a propriedade **signInActivity**.
+>**Observação**: há um [problema conhecido](/graph/known-issues#license-check-errors-for-azure-ad-activity-reports) ao recuperar a propriedade **signInActivity**.
 
 
 # <a name="http"></a>[HTTP](#tab/http)
@@ -231,7 +231,7 @@ GET https://graph.microsoft.com/beta/users?$select=displayName,userPrincipalName
 [!INCLUDE [sample-code](../includes/snippets/java/get-signin-last-time-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[Go](#tab/go)
+# <a name="go"></a>[Ir](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/get-signin-last-time-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
@@ -311,7 +311,7 @@ GET https://graph.microsoft.com/beta/users?$filter=startswith(displayName,'Eric'
 [!INCLUDE [sample-code](../includes/snippets/java/get-signin-last-time-filter-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[Go](#tab/go)
+# <a name="go"></a>[Ir](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/get-signin-last-time-filter-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
@@ -522,7 +522,7 @@ ConsistencyLevel: eventual
 [!INCLUDE [sample-code](../includes/snippets/java/get-a-count-endswith-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[Go](#tab/go)
+# <a name="go"></a>[Ir](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/get-a-count-endswith-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
@@ -594,7 +594,7 @@ ConsistencyLevel: eventual
 [!INCLUDE [sample-code](../includes/snippets/java/get-wa-count-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[Go](#tab/go)
+# <a name="go"></a>[Ir](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/get-wa-count-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
@@ -719,7 +719,7 @@ GET https://graph.microsoft.com/beta/users?$select=id,mail,assignedLicenses&$fil
 [!INCLUDE [sample-code](../includes/snippets/java/get-user-assignedlicenses-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[Go](#tab/go)
+# <a name="go"></a>[Ir](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/get-user-assignedlicenses-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 

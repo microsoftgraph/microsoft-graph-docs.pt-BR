@@ -5,12 +5,12 @@ author: jpettere
 ms.localizationpriority: medium
 ms.prod: users
 doc_type: apiPageType
-ms.openlocfilehash: bc0b8e74c3b14f32ef5bfca0c875019a26376ea7
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: 0327de074e102354e8e2ae9cb3e8e23f9e26fb8c
+ms.sourcegitcommit: 9759b647acfbed99d5675a6f512aaa33932a723f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "61033443"
+ms.lasthandoff: 12/23/2021
+ms.locfileid: "61604200"
 ---
 # <a name="list-licensedetails"></a>Listar licenseDetails
 
@@ -48,9 +48,9 @@ Não forneça um corpo de solicitação para esse método.
 
 ## <a name="response"></a>Resposta
 
-Se tiver êxito, este método retornará um código `200 OK` de resposta e uma coleção de objetos [licenseDetails](../resources/licensedetails.md) no corpo da resposta.
+Se tiver êxito, este método retornará um código de resposta e uma `200 OK` coleção de [objetos licenseDetails](../resources/licensedetails.md) no corpo da resposta.
 ## <a name="example"></a>Exemplo
-##### <a name="request"></a>Solicitação
+### <a name="request"></a>Solicitação
 
 
 # <a name="http"></a>[HTTP](#tab/http)
@@ -77,13 +77,13 @@ GET https://graph.microsoft.com/beta/me/licenseDetails
 [!INCLUDE [sample-code](../includes/snippets/java/get-licensedetails-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[Go](#tab/go)
+# <a name="go"></a>[Ir](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/get-licensedetails-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
-##### <a name="response"></a>Resposta
+### <a name="response"></a>Resposta
 Observação: o objeto de resposta exibido aqui pode ser encurtado para legibilidade.
 <!-- {
   "blockType": "response",

@@ -5,12 +5,12 @@ author: Jordanndahl
 ms.localizationpriority: high
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: 00b2db3298fb98eba0d70e676c757aab441d7a15
-ms.sourcegitcommit: 65f4e128f96783c18d607a6dcffbc914291285d4
+ms.openlocfilehash: 22782e009bf2c8bd866fccd004948b2dac39209d
+ms.sourcegitcommit: 9759b647acfbed99d5675a6f512aaa33932a723f
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/08/2021
-ms.locfileid: "61338576"
+ms.lasthandoff: 12/23/2021
+ms.locfileid: "61604242"
 ---
 # <a name="create-group"></a>Criar grupo
 
@@ -57,7 +57,7 @@ A tabela a seguir mostra as propriedades necessárias ao criar o [grupo](../reso
 
 | Propriedade | Tipo | Descrição|
 |:---------------|:--------|:----------|
-| displayName | string | O nome para exibição no catálogo de endereços do grupo. Necessário. |
+| displayName | string | O nome para exibição no catálogo de endereços do grupo. O comprimento máximo é de 256 caracteres. Obrigatório. |
 | mailEnabled | booliano | Definir como `true` para grupos habilitados para e-mail. Obrigatório. |
 | mailNickname | string | O alias de email do grupo, exclusivo para grupos do Microsoft 365 na organização. O comprimento máximo é de 64 caracteres. Essa propriedade pode conter apenas caracteres no [conjunto de caracteres ASCII de 0 a 127](/office/vba/language/reference/user-interface-help/character-set-0127), exceto o seguinte: ` @ () \ [] " ; : . <> , SPACE`. Obrigatório. |
 | securityEnabled | booliano | Definido como `true` para grupos habilitados para segurança, incluindo Microsoft 365 grupos. Obrigatório. **Observação:** os grupos criados usando o portal do Microsoft Azure sempre terão **securityEnabled** definido inicialmente como `true`.|
@@ -131,7 +131,7 @@ Content-type: application/json
 [!INCLUDE [sample-code](../includes/snippets/java/create-group-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[Go](#tab/go)
+# <a name="go"></a>[Ir](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/create-group-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
@@ -339,7 +339,7 @@ Content-Type: application/json
 [!INCLUDE [sample-code](../includes/snippets/java/create-role-enabled-group-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[Go](#tab/go)
+# <a name="go"></a>[Ir](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/create-role-enabled-group-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 

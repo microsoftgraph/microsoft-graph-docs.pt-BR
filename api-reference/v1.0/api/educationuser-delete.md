@@ -5,12 +5,12 @@ author: mmast-msft
 ms.localizationpriority: medium
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: 60bce4bf6d4570728ba71bc645398331f36278d4
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: a60c1621ab1355aef86fdb8110da3dce0a91fd2a
+ms.sourcegitcommit: 9759b647acfbed99d5675a6f512aaa33932a723f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "61016235"
+ms.lasthandoff: 12/23/2021
+ms.locfileid: "61604361"
 ---
 # <a name="delete-educationuser"></a>Excluir educationUser
 
@@ -29,6 +29,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |Aplicativo | EduRoster.ReadWrite.All |
 
 ## <a name="http-request"></a>Solicitação HTTP
+
 <!-- { "blockType": "ignored" } -->
 ```http
 DELETE /education/users/{id}
@@ -46,8 +47,8 @@ Não forneça um corpo de solicitação para esse método.
 Se bem-sucedido, este método retorna um código de resposta `204 No Content`. Não retorna nada no corpo da resposta.
 
 ## <a name="example"></a>Exemplo
-##### <a name="request"></a>Solicitação
-Este é um exemplo da solicitação.
+### <a name="request"></a>Solicitação
+Este é um exemplo de solicitação.
 
 # <a name="http"></a>[HTTP](#tab/http)
 <!-- {
@@ -73,13 +74,13 @@ DELETE https://graph.microsoft.com/v1.0/education/users/{user-id}
 [!INCLUDE [sample-code](../includes/snippets/java/delete-educationuser-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[Go](#tab/go)
+# <a name="go"></a>[Ir](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/delete-educationuser-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
-##### <a name="response"></a>Resposta
+### <a name="response"></a>Resposta
 Este é um exemplo de resposta. 
 <!-- {
   "blockType": "response",

@@ -5,18 +5,18 @@ ms.localizationpriority: medium
 author: Jordanndahl
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: 47558c1691fc40b0668e74a2b745323f70637ff3
-ms.sourcegitcommit: f4999aa6fc05f845027db01aa489f7086f9850e1
+ms.openlocfilehash: 728c0e9e75496a5641e66f14cbe2578cb42d0ed3
+ms.sourcegitcommit: 9759b647acfbed99d5675a6f512aaa33932a723f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/13/2021
-ms.locfileid: "60290306"
+ms.lasthandoff: 12/23/2021
+ms.locfileid: "61604354"
 ---
 # <a name="remove-group-owner"></a>Remover proprietário do grupo
 
 Namespace: microsoft.graph
 
-Use essa API para remover um proprietário de um grupo de Microsoft 365, um grupo de segurança ou um grupo de segurança habilitado para email por meio da propriedade de navegação de proprietários. Depois que os proprietários são atribuídos a um grupo, o último proprietário do grupo não pode ser removido. 
+Use essa API para remover um proprietário de um grupo de Microsoft 365, um grupo de segurança ou um grupo de segurança habilitado para email por meio da propriedade de navegação de proprietários. Depois que os proprietários são atribuídos a um grupo, o último proprietário (um objeto de usuário) do grupo não pode ser removido.
 
 > **Observação:** Para problemas encontrados ao remover o proprietário de um grupo associado a uma [equipe,](/graph/api/resources/team.md)consulte [Problemas Conhecidos.](/graph/known-issues#removing-a-group-owner-also-removes-the-user-as-a-group-member)
 

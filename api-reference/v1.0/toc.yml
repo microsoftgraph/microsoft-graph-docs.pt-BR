@@ -42,7 +42,7 @@ items:
         displayname: 'Webhooks, Outlook mail, Outlook calendar, Outlook contacts, Outlook contact, People, Microsoft Teams, Teams, OneDrive, OneDrive for Business, OneDrive business, OneDrive personal, SharePoint, Security, Users, Groups'
         items:
           - name: Visão Geral
-            href: /graph/webhooks?context=graph/api/1.0
+            href: /graph/api/resources/webhooks?context=graph/api/1.0
           - name: Tutorial
             href: /learn/modules/msgraph-changenotifications-trackchanges
           - name: Notificações de alterações ausentes
@@ -360,6 +360,14 @@ items:
                 href: api/user-reprocesslicenseassignment.md
               - name: Revogar sessão de login
                 href: api/user-revokesigninsessions.md
+              - name: Listar usuários excluídos
+                href: api/directory-deleteditems-list.md
+              - name: Obter usuário excluído
+                href: api/directory-deleteditems-get.md
+              - name: Excluir usuário permanentemente
+                href: api/directory-deleteditems-delete.md
+              - name: Restaurar usuário excluído
+                href: api/directory-deleteditems-restore.md
           - name: Unidade
             href: resources/drive.md
             items:
@@ -420,7 +428,7 @@ items:
                 href: api/mailfolder-list-messagerules.md
               - name: Enviar email
                 href: api/user-sendmail.md
-          - name: Observações
+          - name: Notas
             items:
               - name: Onenote
                 href: resources/onenote.md
@@ -538,24 +546,34 @@ items:
                 href: api/group-update.md
               - name: Excluir grupo
                 href: api/group-delete.md
+              - name: Renovar grupo
+                href: api/group-renew.md
               - name: Adicionar favorito
                 href: api/group-addfavorite.md
+              - name: Remover favorito
+                href: api/group-removefavorite.md
+              - name: Listar membros
+                href: api/group-list-members.md
               - name: Adicionar membro
                 href: api/group-post-members.md
+              - name: Remover membro
+                href: api/group-delete-members.md
+              - name: Listar membro de
+                href: api/group-list-memberof.md
+              - name: Listar membro transitivo de
+                href: api/group-list-transitivememberof.md
+              - name: Listar membros transitivos
+                href: api/group-list-transitivemembers.md
+              - name: Listar proprietários
+                href: api/group-list-owners.md
               - name: Adicionar proprietário
                 href: api/group-post-owners.md
-              - name: Atribuir licença
-                href: api/group-assignlicense.md
-              - name: Obter grupos de membros
-                href: api/directoryobject-getmembergroups.md
-              - name: Verificar grupos de membros
-                href: api/directoryobject-checkmembergroups.md
-              - name: Obter objetos de membros
-                href: api/directoryobject-getmemberobjects.md
-              - name: Verificar objetos membros
-                href: api/directoryobject-checkmemberobjects.md
+              - name: Remover proprietário
+                href: api/group-delete-owners.md
               - name: Obter intervalo
                 href: api/group-delta.md
+              - name: Atribuir licença
+                href: api/group-assignlicense.md
               - name: Configuração de grupo
                 href: resources/groupsetting.md
                 items:
@@ -578,28 +596,10 @@ items:
                     href: api/groupsettingtemplate-get.md
               - name: Listar políticas de ciclo de vida
                 href: api/group-list-grouplifecyclepolicies.md
-              - name: Listar membro de
-                href: api/group-list-memberof.md
-              - name: Listar membro transitivo de
-                href: api/group-list-transitivememberof.md
-              - name: Listar membros
-                href: api/group-list-members.md
-              - name: Listar membros transitivos
-                href: api/group-list-transitivemembers.md
-              - name: Listar proprietários
-                href: api/group-list-owners.md
               - name: Listar fotos
                 href: api/group-list-photos.md
               - name: Listar as concessões de permissões
                 href: api/group-list-permissiongrants.md
-              - name: Remover favorito
-                href: api/group-removefavorite.md
-              - name: Remover membro
-                href: api/group-delete-members.md
-              - name: Remover proprietário
-                href: api/group-delete-owners.md
-              - name: Renovar grupo
-                href: api/group-renew.md
               - name: Redefinir contagem não vista
                 href: api/group-resetunseencount.md
               - name: Assinar por email
@@ -714,6 +714,27 @@ items:
                 href: api/group-delete-thread.md
               - name: Responder thread de conversas
                 href: api/conversationthread-reply.md
+          - name: Objeto de diretório
+            href: resources/directoryobject.md
+            items:
+              - name: Verificar grupos de membros
+                href: api/directoryobject-checkmembergroups.md
+              - name: Obter grupos de membros
+                href: api/directoryobject-getmembergroups.md
+              - name: Verificar objetos membros
+                href: api/directoryobject-checkmemberobjects.md
+              - name: Obter objetos de membros
+                href: api/directoryobject-getmemberobjects.md
+              - name: Listar grupos excluídos
+                href: api/directory-deleteditems-list.md
+              - name: Listar grupos excluídos pertencentes ao usuário
+                href: api/directory-deleteditems-user-owned.md
+              - name: Obter grupo excluído
+                href: api/directory-deleteditems-get.md
+              - name: Excluir permanentemente um grupo
+                href: api/directory-deleteditems-delete.md
+              - name: Restaurar grupo excluído
+                href: api/directory-deleteditems-restore.md
           - name: Unidade
             href: resources/drive.md
             items:
@@ -798,6 +819,8 @@ items:
                 href: api/application-delta.md
               - name: Listar aplicativos excluídos
                 href: api/directory-deleteditems-list.md
+              - name: Listar aplicativos excluídos pertencentes ao usuário
+                href: api/directory-deleteditems-user-owned.md
               - name: Obter o aplicativo excluído
                 href: api/directory-deleteditems-get.md
               - name: Excluir aplicativo permanentemente
@@ -1371,7 +1394,7 @@ items:
             href: resources/complianceapioverview.md
           - name: Solicitação de direitos do sujeito
             items:
-              - name: Visão Geral
+              - name: Visão geral
                 href: resources/subjectrightsrequest-subjectrightsrequestapioverview.md
               - name: Solicitação de direitos do sujeito
                 href: resources/subjectrightsrequest.md
@@ -4237,7 +4260,7 @@ items:
                         href: api/intune-tem-telecomexpensemanagementpartner-update.md
           - name: Comunicações e Integridade do serviço
             items:
-              - name: Visão Geral
+              - name: Visão geral
                 href: resources/service-communications-api-overview.md
               - name: Comunicado do serviço
                 href: resources/serviceannouncement.md
@@ -4835,7 +4858,7 @@ items:
             items:
               - name: Métodos de autenticação
                 items:
-                  - name: Visão Geral
+                  - name: Visão geral
                     href: resources/authenticationmethods-overview.md
                   - name: Listar todos os métodos
                     href: api/authentication-list-methods.md
@@ -5731,7 +5754,7 @@ items:
                 href: api/resource-get.md
       - name: Inteligência de pessoas e no local de trabalho
         items:
-          - name: Visão Geral
+          - name: Visão geral
             href: resources/social-overview.md
           - name: Pessoas
             items:
@@ -6530,10 +6553,12 @@ items:
                 href: api/directoryobject-checkmembergroups.md
               - name: Listar membro de
                 href: api/group-list-memberof.md
-              - name: Obter grupo excluído
-                href: api/directory-deleteditems-get.md
               - name: Listar grupos excluídos
                 href: api/directory-deleteditems-list.md
+              - name: Listar grupos excluídos pertencentes ao usuário
+                href: api/directory-deleteditems-user-owned.md
+              - name: Obter grupo excluído
+                href: api/directory-deleteditems-get.md
               - name: Excluir permanentemente um grupo
                 href: api/directory-deleteditems-delete.md
               - name: Restaurar grupo excluído
@@ -6643,7 +6668,7 @@ items:
                 href: api/chats-getallmessages.md
               - name: Obter conteúdo hospedado
                 href: api/chatmessagehostedcontent-get.md
-          - name: App
+          - name: Aplicativo
             items:
               - name: Aplicativo no catálogo
                 href: resources/teamsapp.md
@@ -6928,7 +6953,7 @@ items:
       - name: Tarefas pendentes
         displayName: Microsoft To Do
         items:
-          - name: Visão Geral
+          - name: Visão geral
             href: resources/todo-overview.md
           - name: Lista de tarefas
             href: resources/todotasklist.md
