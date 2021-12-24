@@ -5,12 +5,12 @@ author: jpettere
 ms.localizationpriority: high
 ms.prod: users
 doc_type: resourcePageType
-ms.openlocfilehash: 2711368b46874616c8996cfb0a9125e0dc28d347
-ms.sourcegitcommit: 65f4e128f96783c18d607a6dcffbc914291285d4
+ms.openlocfilehash: 0d34bcb107c1b452bc175504ceda58a931f0c7c3
+ms.sourcegitcommit: 9759b647acfbed99d5675a6f512aaa33932a723f
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/08/2021
-ms.locfileid: "61345930"
+ms.lasthandoff: 12/23/2021
+ms.locfileid: "61604305"
 ---
 # <a name="user-resource-type"></a>Tipo de recurso de usuário
 
@@ -84,6 +84,10 @@ Esse recurso permite:
 | [List usageRights](../api/user-list-usagerights.md) | Coleção [usageRight](usageright.md) | Obtenha uma coleção de direitos de uso concedidos ao usuário. |
 | [reprocessLicense](../api/user-reprocesslicenseassignment.md) | [user](user.md) | Reprocessar as atribuições de assinatura do usuário. |
 | [revokeSignInSessions](../api/user-revokesigninsessions.md) | Nenhum | Revoga todos os tokens de sessão e de atualização do usuário emitidos para aplicativos, redefinindo a propriedade do usuário **signInSessionsValidFromDateTime** para data e a hora atuais. Força o usuário a entrar novamente nesses aplicativos. Este método substitui **invalidateAllRefreshTokens**. |
+| [Listar usuários excluídos](../api/directory-deleteditems-list.md) | Coleção [directoryObject](directoryobject.md) | Recupere os usuários excluídos no locatário nos últimos 30 dias. |
+| [Obter usuário excluído](../api/directory-deleteditems-get.md) | Coleção [directoryObject](directoryobject.md) | Recupere um usuário excluído por ID. |
+| [Restaurar usuário excluído](../api/directory-deleteditems-delete.md) | Coleção [directoryObject](directoryobject.md) | Restaure um usuário excluído do locatário nos últimos 30 dias. |
+| [Excluir usuário permanentemente](../api/directory-deleteditems-restore.md) | Coleção [directoryObject](directoryobject.md) | Exclua permanentemente um usuário excluído do locatário. |
 | **Unidade** |||
 | [Obter unidade](../api/drive-get.md) | [unidade](drive.md) | Recuperar as propriedades e as relações de um recurso Drive. |
 | [Filhos de lista](../api/driveitem-list-children.md) | [DriveItems](driveitem.md) | Retornar uma coleção de DriveItems no relacionamento filho de um DriveItem. |
