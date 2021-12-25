@@ -5,12 +5,12 @@ author: nkramer
 ms.localizationpriority: high
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: ed4457a55c96b33faae433dc47e2be43f7951ebe
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: ab879e0926012d51f131cd218211743ddde64579
+ms.sourcegitcommit: 9759b647acfbed99d5675a6f512aaa33932a723f
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "61032820"
+ms.lasthandoff: 12/23/2021
+ms.locfileid: "61604166"
 ---
 # <a name="archive-team"></a>Arquivar equipe
 
@@ -20,7 +20,7 @@ Arquive o [team](../resources/team.md) especificado. Quando uma equipe é arquiv
 
 O arquivamento é uma operação assíncrona. Uma equipe é arquivada assim que a operação assíncrona é concluída com êxito, o que pode ocorrer após uma resposta desta API.
 
-Para arquivar uma equipe, a equipe e o [grupo](../resources/group.md) devem ter um proprietário.
+Para arquivar uma equipe, a equipe e [grupo](../resources/group.md) devem ter um proprietário.
 
 Para restaurar uma equipe do estado arquivado, use a API para [desarquivar](team-unarchive.md).
 
@@ -64,7 +64,7 @@ Este parâmetro opcional define se as permissões dos membros da equipe devem se
 Se o arquivamento for iniciado com êxito, esse método retornará um código de resposta `202 Accepted`. A resposta também conterá um cabeçalho `Location`, que contém o local da [teamsAsyncOperation](../resources/teamsasyncoperation.md) criada para lidar com o arquivamento da equipe. Verifique o status da operação de arquivamento fazendo uma solicitação GET para esse local.
 
 ## <a name="example"></a>Exemplo
-#### <a name="request"></a>Solicitação
+### <a name="request"></a>Solicitação
 Veja a seguir um exemplo de uma solicitação.
 
 # <a name="http"></a>[HTTP](#tab/http)
@@ -91,13 +91,13 @@ POST https://graph.microsoft.com/v1.0/teams/{id}/archive
 [!INCLUDE [sample-code](../includes/snippets/java/archive-team-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[Go](#tab/go)
+# <a name="go"></a>[Ir](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/archive-team-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
-#### <a name="response"></a>Resposta
+### <a name="response"></a>Resposta
 Veja a seguir um exemplo de uma resposta.
 
 <!-- {

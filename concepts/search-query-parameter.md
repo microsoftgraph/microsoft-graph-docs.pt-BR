@@ -4,12 +4,12 @@ description: Microsoft Graph dá suporte ao parâmetro de consulta $search OData
 author: mumbi-o
 ms.localizationpriority: high
 ms.custom: graphiamtop20, scenarios:getting-started
-ms.openlocfilehash: 3456985a8d8af1971cdda67a06c24e77e61efd4b
-ms.sourcegitcommit: 3e2239e60b6dc53997b7d4356a20fc3d365d6238
+ms.openlocfilehash: b4b5f1999dd324ad335d54fafd0f9e0c19a1053a
+ms.sourcegitcommit: 9759b647acfbed99d5675a6f512aaa33932a723f
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/02/2021
-ms.locfileid: "61266079"
+ms.lasthandoff: 12/23/2021
+ms.locfileid: "61604193"
 ---
 # <a name="use-the-search-query-parameter-to-match-a-search-criterion"></a>Usar o parâmetro de consulta de pesquisa para corresponder a um critério de pesquisa
 
@@ -151,10 +151,9 @@ A sintaxe da pesquisa segue as seguintes regras:
 * Formato genérico: $search="clause1" \[AND \| OR\] "\[clauseX\]"\.
 * O número de cláusulas (clause) não é limitado. O uso de parênteses para a precedência também é suportado.
 * A sintaxe para cada cláusula é: “\<property>:\<text to search>”.
-* O nome da propriedade deve ser especificado na cláusula. Qualquer propriedade que possa ser usada em `$filter` também pode ser usada dentro de `$search`. Dependendo da propriedade, o comportamento da pesquisa será "search" ou, se “search” não for suportado na propriedade, "startswith".
-* Todas as partes de cláusula devem ser colocadas entre aspas duplas.
-* Os operadores lógicos “AND” e “OR” devem ser colocados fora das aspas duplas. Devem sempre ser grafados em maiúsculas.
-* Considerando que toda a parte da cláusula precisa ser colocada entre aspas duplas, se ela contiver aspas duplas e barra invertida, ela precisará ter uma barra invertida como escape. Nenhum outro caractere precisa ter escape.
+* O nome da propriedade deve ser especificado na cláusula. Qualquer propriedade que possa ser usada em `$filter` também pode ser usada dentro de `$search`. Dependendo da propriedade, o comportamento de pesquisa será "search" ou "startsWith" se a pesquisa não tiver suporte na propriedade.
+* A cláusula inteira deve ser declarada entre aspas duplas. Se ele contiver aspas duplas ou barra invertida, ele deverá ser escapado com uma barra invertida. Não é preciso escapar nenhum outro caractere.
+* Operadores lógicos `AND` e `OR` devem ser colocados fora das aspas duplas e devem estar em maiúsculas.
 
 A tabela a seguir mostra alguns exemplos.
 
@@ -195,4 +194,4 @@ Ambas as entradas da cadeia de caracteres fornecidas em `$search`, bem como as p
 
 - [Usar parâmetros de consulta para personalizar respostas](/graph/query-parameters)
 - [Recursos avançados de consulta em objetos de diretório do Microsoft Azure Active Directory](/graph/aad-advanced-queries)
-- [Limitações de parâmetro de consulta](known-issues.md#query-parameter-limitations)
+- [Limitações de parâmetro de consulta](known-issues.md#query-parameters)

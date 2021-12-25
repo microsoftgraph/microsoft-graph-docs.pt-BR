@@ -5,12 +5,12 @@ ms.localizationpriority: high
 author: sureshja
 ms.prod: applications
 doc_type: resourcePageType
-ms.openlocfilehash: 478aaf261094edd62bd865c5989288d600c22090
-ms.sourcegitcommit: f65eee432cc903324b5f9b31710fdc6100590f36
+ms.openlocfilehash: e75fc1ab62710e639108cb3412fc92073c5101cc
+ms.sourcegitcommit: 9759b647acfbed99d5675a6f512aaa33932a723f
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/07/2021
-ms.locfileid: "61321607"
+ms.lasthandoff: 12/23/2021
+ms.locfileid: "61604214"
 ---
 # <a name="application-resource-type"></a>tipo de recurso do aplicativo
 
@@ -31,6 +31,7 @@ Esse recurso tem suporte para o uso da [consulta delta](/graph/delta-query-overv
 |[Excluir aplicativo](../api/application-delete.md) | Nenhum |Exclua o objeto application. |
 |[Obter delta](../api/application-delta.md)|[aplicativo](application.md)|Obtenha os aplicativos recentemente criados, atualizados ou excluídos sem ter que executar uma leitura completa de toda a coleção de recursos.|
 |[Listar aplicativos excluídos](../api/directory-deleteditems-list.md) | Conjunto [directoryObject](directoryobject.md) | Recuperar uma lista de aplicativos excluídos recentemente. |
+| [Lista de aplicativos excluídos pertencentes a usuários](../api/directory-deleteditems-user-owned.md) | Coleção [directoryObject](directoryobject.md) | Recupere os aplicativos excluídos no locatário nos últimos 30 dias e que pertencem a um usuário. |
 |[Obter o aplicativo excluído](../api/directory-deleteditems-get.md) | [directoryObject](directoryobject.md) | Recuperar as propriedades de um aplicativo excluído recentemente. |
 |[Excluir aplicativo permanentemente](../api/directory-deleteditems-delete.md) | Nenhum | Excluir permanentemente um aplicativo. |
 |[Restaurar aplicativo excluído](../api/directory-deleteditems-restore.md) | [directoryObject](directoryobject.md) | Restaurar um aplicativo excluído recentemente. |

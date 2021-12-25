@@ -5,12 +5,12 @@ ms.localizationpriority: high
 author: Jumaodhiss
 ms.prod: change-notifications
 doc_type: apiPageType
-ms.openlocfilehash: c3726459f31976bf687dd0a80f3cd3a8b4062116
-ms.sourcegitcommit: f336c5c49fbcebe55312656aa8b50511fd99a657
+ms.openlocfilehash: 5ab0d5fcec2156f4b5f69e38594bc25a29b6b400
+ms.sourcegitcommit: 9759b647acfbed99d5675a6f512aaa33932a723f
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/09/2021
-ms.locfileid: "61390806"
+ms.lasthandoff: 12/23/2021
+ms.locfileid: "61604403"
 ---
 # <a name="create-subscription"></a>Criar assinatura
 
@@ -87,6 +87,10 @@ POST /subscriptions
 |:-----------|:------|:----------|
 | Autorização  | string  | {token} de portador. Obrigatório. |
 
+## <a name="request-body"></a>Corpo da solicitação
+
+No corpo da solicitação, forneça uma representação JSON do objeto de [assinatura](../resources/subscription.md).
+
 ## <a name="response"></a>Resposta
 
 Se bem-sucedido, este método retorna o código de resposta `201 Created` e um objeto [subscription](../resources/subscription.md) no corpo da resposta.
@@ -94,7 +98,7 @@ Para detalhes sobre como os erros são retornados, confira [Respostas de erro][e
 
 ## <a name="example"></a>Exemplo
 
-##### <a name="request"></a>Solicitação
+### <a name="request"></a>Solicitação
 
 Veja a seguir um exemplo da solicitação de envio de uma notificação quando o usuário receber um novo email.
 
@@ -133,7 +137,7 @@ Content-type: application/json
 [!INCLUDE [sample-code](../includes/snippets/java/create-subscription-from-subscriptions-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[Go](#tab/go)
+# <a name="go"></a>[Ir](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/create-subscription-from-subscriptions-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
@@ -142,7 +146,7 @@ Content-type: application/json
 
 No corpo da solicitação, forneça uma representação JSON do objeto de [assinatura](../resources/subscription.md). Os campos `clientState` e `latestSupportedTlsVersion` são opcionais.
 
-##### <a name="resources-examples"></a>Exemplos de recursos
+#### <a name="resources-examples"></a>Exemplos de recursos
 
 Estes são os valores válidos da propriedade de recurso da assinatura:
 
@@ -165,9 +169,10 @@ Estes são os valores válidos da propriedade de recurso da assinatura:
 
 > **Observação:** qualquer caminho iniciado por `me` também pode ser usado com `users/{id}` em vez de `me` para direcionar um usuário específico, em vez de usar o usuário atual.
 
-##### <a name="response"></a>Resposta
+### <a name="response"></a>Resposta
 
-Aqui está um exemplo da resposta. Observação: o objeto de resposta mostrado aqui pode ser reduzido para facilitar a leitura.
+Este é um exemplo de resposta. 
+>**Observação:** o objeto de resposta mostrado aqui pode ser encurtado para legibilidade.
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -193,7 +198,7 @@ Content-type: application/json
 }
 ```
 
-## <a name="notification-endpoint-validation"></a>Validação de ponto de extremidade da notificação
+#### <a name="notification-endpoint-validation"></a>Validação de ponto de extremidade da notificação
 
 O ponto de extremidade da notificação da assinatura (especificado na `notificationUrl` propriedade) deve ser capaz de responder a uma solicitação de validação, conforme descrito em [Configurar notificações para alterações nos dados do usuário](/graph/webhooks#notification-endpoint-validation). Se a validação falhar, a solicitação para criar a assinatura retornará um erro de Solicitação Incorreta 400.
 

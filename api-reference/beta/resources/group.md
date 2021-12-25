@@ -5,12 +5,12 @@ ms.localizationpriority: high
 author: Jordanndahl
 ms.prod: groups
 doc_type: resourcePageType
-ms.openlocfilehash: fac57ae27845799f1d9e25b3ec0c437ed7de147c
-ms.sourcegitcommit: 65f4e128f96783c18d607a6dcffbc914291285d4
+ms.openlocfilehash: d98f91b33cc13e874d8b3dce42ad9bb871349e9d
+ms.sourcegitcommit: 9759b647acfbed99d5675a6f512aaa33932a723f
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/08/2021
-ms.locfileid: "61348212"
+ms.lasthandoff: 12/23/2021
+ms.locfileid: "61604347"
 ---
 # <a name="group-resource-type"></a>tipo de recurso de grupo
 
@@ -61,11 +61,8 @@ Esse recurso permite:
 | [Remover membro](../api/group-delete-members.md) | Nenhum | Remover um membro de um grupo do Microsoft 365, de um grupo de segurança ou de um grupo de segurança habilitado para email por meio da propriedade de navegação **members**. É possível remover usuários ou outros grupos. |
 | [Atualizar configuração](../api/directorysetting-update.md) | [directorySetting](directorysetting.md) | Atualizar um objeto setting. |
 | [assignLicense](../api/group-assignlicense.md) | [group](group.md) | Adicione ou remova inscrições para o grupo. Você também pode habilitar e desabilitar planos específicos associados a uma assinatura. |
-| [checkMemberGroups](../api/directoryobject-checkmembergroups.md) | Coleção de cadeias de caracteres | Verificar associação em uma lista de grupos. Essa função é transitiva. |
-| [checkMemberObjects](../api/directoryobject-checkmemberobjects.md) | Coleção de cadeias de caracteres | Verifique se há associação em uma lista de objetos de grupo, função de diretório ou unidade administrativa. A função é transitiva. |
 | [evaluateDynamicMembership](../api/group-evaluatedynamicmembership.md) | [evaluateDynamicMembershipResult](evaluatedynamicmembershipresult.md) | Avaliar se um usuário ou dispositivo é ou seria membro de um grupo dinâmico. |
-| [getMemberGroups](../api/directoryobject-getmembergroups.md) | Coleção de cadeias de caracteres | Retornar todos os grupos dos quais o grupo é membro. Essa função é transitiva. |
-| [getMemberObjects](../api/directoryobject-getmemberobjects.md) | Coleção de cadeias de caracteres | Retornar todas as unidades administrativas e grupos dos quais o grupo é membro. Essa função é transitiva. |
+| [renovar](../api/group-renew.md) | Booleano | Renova a expiração de um grupo. Quando um grupo é renovado, a expiração do grupo é estendida pelo número de dias definido na política. |
 | [validateProperties](../api/group-validateproperties.md) | JSON | Validar se o nome de exibição de um grupo do Microsoft 365 ou apelido de email está em conformidade com as políticas de nomenclatura. |
 | **Atribuição de funções do aplicativo** |||
 | [List appRoleAssignments](../api/group-list-approleassignments.md) | [appRoleAssignment](approleassignment.md) collection | Obter os aplicativos e funções do aplicativo atribuídos a esse grupo. |
@@ -94,6 +91,16 @@ Esse recurso permite:
 | [Listar rejectedSenders](../api/group-list-rejectedsenders.md) | Coleção [directoryObject](directoryobject.md) | Obtenha uma lista de usuários ou grupos que estão na lista de remetentes rejeitados para este grupo. |
 | [Adicionar rejectedSender](../api/group-post-rejectedsenders.md) | [directoryObject](directoryobject.md) | Adicionar um novo Usuário ou Grupo à coleção rejectedSenders. |
 | [Remover rejectedSender](../api/group-delete-rejectedsenders.md) | [directoryObject](directoryobject.md) | Remover um novo Usuário ou Grupo da coleção Remetentesrejeitados. |
+| **Objetos de diretório** |||
+| [Listar grupos excluídos](../api/directory-deleteditems-list.md) | Coleção [directoryObject](directoryobject.md) | Recupere os grupos excluídos no locatário nos últimos 30 dias. |
+| [Listar grupos excluídos pertencentes ao usuário](../api/directory-deleteditems-user-owned.md) | Coleção [directoryObject](directoryobject.md) | Recupere os grupos excluídos no locatário nos últimos 30 dias e que pertencem a um usuário. |
+| [Obter grupo excluído](../api/directory-deleteditems-get.md) | Coleção [directoryObject](directoryobject.md) | Recupere um grupo excluído por ID. |
+| [Restaurar grupo excluído](../api/directory-deleteditems-delete.md) | Coleção [directoryObject](directoryobject.md) | Restaure um grupo excluído no locatário nos últimos 30 dias. |
+| [Excluir permanentemente um grupo](../api/directory-deleteditems-restore.md) | Coleção [directoryObject](directoryobject.md) | Exclua permanentemente um grupo excluído do locatário. |
+| [checkMemberGroups](../api/directoryobject-checkmembergroups.md) | Coleção de cadeias de caracteres | Verificar associação em uma lista de grupos. Essa função é transitiva. |
+| [getMemberGroups](../api/directoryobject-getmembergroups.md) | Coleção de cadeias de caracteres | Retornar todos os grupos dos quais o grupo é membro. Essa função é transitiva. |
+| [checkMemberObjects](../api/directoryobject-checkmemberobjects.md) | Coleção de cadeias de caracteres | Verifique se há associação em uma lista de objetos de grupo, função de diretório ou unidade administrativa. A função é transitiva. |
+| [getMemberObjects](../api/directoryobject-getmemberobjects.md) | Coleção de cadeias de caracteres | Retornar todas as unidades administrativas e grupos dos quais o grupo é membro. Essa função é transitiva. |
 | **Extensões abertas** |||
 | [Criar extensão aberta](../api/opentypeextension-post-opentypeextension.md) | [openTypeExtension](opentypeextension.md) | Crie uma extensão aberta e adicione propriedades personalizadas a uma instância nova ou existente de um recurso. |
 | [Obter extensão aberta](../api/opentypeextension-get.md) | Coleção [openTypeExtension](opentypeextension.md) | Obtenha uma extensão aberta identificada pelo nome da extensão. |
@@ -119,7 +126,7 @@ Esse recurso permite:
 
 | Propriedade     | Tipo   |Descrição|
 |:---------------|:--------|:----------|
-|allowExternalSenders|Boolean| Indica se as pessoas externas à organização podem enviar mensagens para o grupo. O valor padrão é `false`. <br><br>Retornado somente em `$select`. Com suporte apenas para a API Get group (`GET /groups/{ID}`). |
+|allowExternalSenders|Boolean| Indica se as pessoas externas à organização podem enviar mensagens para o grupo. O valor padrão é `false`. <br><br>Retornado somente em `$select`. Compatível apenas com a API Obter grupo (`GET /groups/{ID}`). |
 |assignedLabels|coleção [assignedLabel](assignedlabel.md)|Lista de pares de rótulos de confidencialidade (ID do rótulo, nome do rótulo) associados a um grupo do Microsoft 365. <br><br>Retornado apenas em `$select`.|
 |assignedLicenses|Coleção [assignedLicense](assignedlicense.md)|As licenças que são atribuídas ao grupo. <br><br>Retornado apenas em `$select`. Suporta `$filter` (`eq`). Somente leitura.|
 |autoSubscribeNewMembers|Boolean|Indica se novos membros adicionados ao grupo serão automaticamente inscritos para receberem notificações por email. Você pode definir essa propriedade em uma solicitação PATCH para o grupo. Não a defina na solicitação POST inicial que cria esse grupo. O valor padrão é `false`. <br><br>Retornado somente em `$select`. Com suporte apenas para a API Get group (`GET /groups/{ID}`).|
@@ -141,7 +148,7 @@ Esse recurso permite:
 |licenseProcessingState|String|Indica o status da atribuição de licença de grupo a todos os membros do grupo. Valores possíveis: `QueuedForProcessing`, `ProcessingInProgress`e `ProcessingComplete`. <br><br>Retornado apenas em `$select`. Somente leitura. |
 |email|String|O endereço SMTP do grupo, por exemplo, "serviceadmins@contoso.onmicrosoft.com". <br><br>Retornado por padrão. Somente leitura. Suporte `$filter` (`eq`, `ne`, `not`, `ge`, `le`, `in`, `startsWith`, e `eq` no `null` valores).|
 |mailEnabled|Boolean|Especifica se o grupo está habilitado para email. Obrigatório.<br><br>Devolvido por padrão. Suporte `$filter` (`eq`, `ne`, `not`, e `eq` no `null` valores).|
-|mailNickname|String|O alias de email para o grupo, exclusivo para grupos do Microsoft 365 na organização. O comprimento máximo é de 64 caracteres. Essa propriedade pode conter apenas caracteres no [conjunto de caracteres ASCII de 0 a 127](/office/vba/language/reference/user-interface-help/character-set-0127), exceto o seguinte: ` @ () \ [] " ; : . <> , SPACE`. <br><br>Devolvido por padrão. Suporta `$filter` (`eq`, `ne`, `not`, `ge`, `le`, `in`, `startsWith`).|
+|mailNickname|String|O alias de email do grupo, exclusivo para grupos do Microsoft 365 na organização. O comprimento máximo é de 64 caracteres. Essa propriedade pode conter apenas caracteres no [conjunto de caracteres ASCII de 0 a 127](/office/vba/language/reference/user-interface-help/character-set-0127), exceto o seguinte: ` @ () \ [] " ; : . <> , SPACE`. <br><br>Devolvido por padrão. Suporta `$filter` (`eq`, `ne`, `not`, `ge`, `le`, `in`, `startsWith`).|
 |membershipRule|String|A regra que determina membros para esse grupo se o grupo for um grupo dinâmico (groupTypes contém `DynamicMembership`). Para saber mais sobre a sintaxe da regra de associação, confira [sintaxe regras de associação](https://azure.microsoft.com/documentation/articles/active-directory-accessmanagement-groups-with-advanced-rules/). <br><br>Retornado por padrão. Suporta `$filter` (`eq`, `ne`, `not`, `ge`, `le`, `startsWith`). |
 |membershipRuleProcessingState|String|Indica se o processamento de associação dinâmica está ativado ou em pausa. Os valores possíveis são `On` ou `Paused`. <br><br>Retornado por padrão. Suporta `$filter` (`eq`, `ne`, `not`, `in`). |
 |membershipRuleProcessingStatus|[membershipRuleProcessingStatus](membershipruleprocessingstatus.md) |Descreve o status de processamento para grupos dinâmicos baseados em regras. A propriedade é `null` para grupos dinâmicos não baseados em regras ou se o processamento do grupo dinâmico foi pausado. <br><br>Retornado somente no `$select`. Compatível apenas com a API obter grupo (`GET /groups/{ID}`). Somente leitura. |
@@ -153,7 +160,7 @@ Esse recurso permite:
 |onPremisesSecurityIdentifier|String|Contém o identificador de segurança (SID) local do grupo que foi sincronizado do local com a nuvem. <br><br>Retornado por padrão. Suporta `$filter` em `null` valores. Somente leitura. |
 |onPremisesSyncEnabled|Booliano|`true` se esse grupo está sincronizado de um diretório local; `false` se esse grupo foi originalmente sincronizado de um diretório local, mas não está mais sincronizado; **null** se esse objeto nunca foi sido sincronizado de um diretório local (padrão). <br><br>Retornado por padrão. Somente leitura. Suporte `$filter` (`eq`, `ne`, `not`, `in`, e `eq` no `null` valores). |
 |preferredDataLocation|String|O local de data preferido para o grupo do Microsoft 365. Por padrão, o grupo herda o local de dados preferencial do criador do grupo. Para definir essa propriedade, o usuário de chamada deve ter uma das seguintes [funções do Azure AD](/azure/active-directory/roles/permissions-reference): <br><ul><li> Administrador Global <li> Administrador de Conta de Usuário <li>Escritor de Diretórios <li> Administrador do Exchange <li> Administrador do SharePoint </ul><br/> Para obter mais informações sobre essa propriedade, consulte [OneDrive Online Multi-Geo](/sharepoint/dev/solution-guidance/multigeo-introduction). <br><br>Anulável. Retornado por padrão.|
-|preferredLanguage|String|O idioma preferencial para um Microsoft 365 grupo. Deve seguir o código ISO 639-1; por exemplo, `en-US`. <br><br>Retornado por padrão. Suporte `$filter` (`eq`, `ne`, `not`, `ge`, `le`, `in`, `startsWith`, e `eq` no `null` valores). |
+|preferredLanguage|Cadeia de caracteres|O idioma preferencial para um Microsoft 365 grupo. Deve seguir o código ISO 639-1; por exemplo, `en-US`. <br><br>Retornado por padrão. Suporte `$filter` (`eq`, `ne`, `not`, `ge`, `le`, `in`, `startsWith`, e `eq` no `null` valores). |
 |proxyAddresses|String collection| Endereços de email para o grupo que direcionam para a mesma caixa de correio do grupo. Por exemplo: `["SMTP: bob@contoso.com", "smtp: bob@sales.contoso.com"]`. O operador **any** é obrigatório para expressões de filtro em propriedades de vários valores. <br><br>Retornado por padrão. Somente leitura. Não anulável. Suporta `$filter` (`eq`, `not`, `ge`, `le`, `startsWith`). |
 |renewedDateTime|DateTimeOffset| Carimbo de data/hora da ocasião em que o grupo foi renovado pela última vez. Não é possível modificar isso diretamente e a atualização ocorre apenas por meio da [ação de renovação de serviço](../api/grouplifecyclepolicy-renewgroup.md). O tipo Timestamp representa informações de data e hora usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite UTC em 1 de janeiro de 2014 é `2014-01-01T00:00:00Z`. <br><br>Retornado por padrão. Suporta `$filter` (`eq`, `ne`, `not`, `ge`, `le`, `in`). Apenas leitura.|
 |resourceBehaviorOptions|Conjunto de cadeias de caracteres|Especifica os comportamentos de grupo que podem ser configurados para um grupo do Microsoft 365 durante sua criação. Isso só pode ser definido como parte da criação (POST). Os valores possíveis são `AllowOnlyMembersToPost`, `HideGroupInOutlook`, `SubscribeNewGroupMembers`, `WelcomeEmailDisabled`. Para obter mais informações, confira o artigo [Definir as opções de provisionamento e comportamentos de grupo do Microsoft 365 ](/graph/group-set-options).|
