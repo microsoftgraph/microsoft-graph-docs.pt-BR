@@ -2,15 +2,15 @@
 title: Atualizar educationassignment
 description: Atualizar um objeto educationAssigment.
 ms.localizationpriority: medium
-author: dipakboyed
+author: cristobal-buenrostro
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: 615f9eec57a4ec87ef7dccad3226a83d2a4a9a5b
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: 9bd6260629da8399acc761f4e2df570db45a7c56
+ms.sourcegitcommit: 7a0f9f1a535795c6f77c80e02fd97581c36f1273
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "61003146"
+ms.lasthandoff: 12/27/2021
+ms.locfileid: "61608973"
 ---
 # <a name="update-educationassignment"></a>Atualizar educationassignment
 
@@ -48,17 +48,17 @@ No corpo da solicitação, forneça os valores para os campos relevantes que dev
 | Propriedade     | Tipo   |Descrição|
 |:---------------|:--------|:----------|
 |addedStudentAction|Cadeia de caracteres| Controla o comportamento dos alunos que são adicionados após a publicação da atribuição.|
-|addToCalendarAction|educationAddToCalendarOptions|Campo opcional para controlar o comportamento de atribuição para adicionar atribuições aos calendários dos alunos e professores quando a atribuição for publicada. Os valores possíveis são: `none` `studentsAndPublisher` , , e `studentsAndTeamOwners` `studentsOnly` `unknownFutureValue` . O valor padrão é `none`.|
+|addToCalendarAction|educationAddToCalendarOptions|Campo opcional para controlar o comportamento de atribuição para adicionar atribuições aos calendários dos alunos e professores quando a atribuição for publicada. Os valores possíveis são: `none` `studentsAndPublisher` , , e `studentsAndTeamOwners` `studentsOnly` `unknownFutureValue` . O valor padrão é `none`. Não é possível modificar quando a atribuição está **no estado** Publicado. |
 |allowLateSubmissions|Booliano| Se os envios podem ser enviados após a data de vencimento.|
-|allowStudentsToAddResourcesToSubmission|Boolean| Se um aluno pode adicionar recursos a um envio. Indica se os únicos itens no envio vieram da lista de recursos de atribuição. |
-|assignDateTime|DateTimeOffset| Data em que a atribuição deve ser publicada para os alunos. |
-|assignTo|educationAssignmentRecipient| Alunos que receberão a atribuição.|
+|allowStudentsToAddResourcesToSubmission|Booliano| Se um aluno pode adicionar recursos a um envio. Indica se os únicos itens no envio vieram da lista de recursos de atribuição. |
+|assignDateTime|DateTimeOffset| Data em que a atribuição deve ser publicada para os alunos. Não é possível editar após a publicação da atribuição. |
+|assignTo|[educationAssignmentRecipient](../resources/educationassignmentrecipient.md)| Alunos que receberão a atribuição.|
 |closeDateTime|DateTimeOffset| Data em que a atribuição será fechada para envios. Este é um campo opcional que pode ser nulo se a atribuição não permitirLateSubmissions ou closeDateTime for igual ao dueDateTime, mas se especificado, ele deve ser maior ou igual ao dueDateTime.|
-|displayName|Cadeia de caracteres| Nome da atribuição. |
+|displayName|String| Nome da atribuição. |
 |dueDateTime|DateTimeOffset| A atribuição de data é devido. |
-|grading|educationAssignmentGradeType| Como a atribuição será gradeada.|
+|grading|[educationAssignmentGradeType](../resources/educationassignmentgradetype.md)| Como a atribuição será gradeada.|
 |instructions|itemBody| Instruções a serem fornecidas aos alunos juntamente com a atribuição. |
-|notificationChannelUrl|String| Canal para postar notificação de publicação de atribuição. A atualização da URL do canal não é permitida após a publicação da atribuição e só é permitida quando o valor **assignTo** é [educationAssignmentClassRecipient](../resources/educationassignmentclassrecipient.md).|
+|notificationChannelUrl|Cadeia de caracteres| Canal para postar notificação de publicação de atribuição. A atualização da URL do canal não é permitida após a publicação da atribuição e só é permitida quando o valor **assignTo** é [educationAssignmentClassRecipient](../resources/educationassignmentclassrecipient.md).|
 
 ## <a name="response"></a>Resposta
 Se tiver êxito, este método retornará um código de resposta e um `200 OK` objeto [educationAssignment](../resources/educationassignment.md) atualizado no corpo da resposta.
@@ -103,7 +103,7 @@ Content-type: application/json
 [!INCLUDE [sample-code](../includes/snippets/java/update-educationassignment-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[Go](#tab/go)
+# <a name="go"></a>[Ir](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/update-educationassignment-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
@@ -174,7 +174,7 @@ Content-type: application/json
 
 ## <a name="see-also"></a>Confira também
 
-* [Transição de estado de atribuições e envios](/graph/assignments-submissions-states-transition)
+* [Estados, transições e limitações para atribuições e envios](/graph/assignments-submissions-states-transition)
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->

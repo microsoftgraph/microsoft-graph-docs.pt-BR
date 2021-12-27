@@ -1,28 +1,31 @@
 ---
-title: Criar e enviar uma notificação
-description: Criar e enviar uma notificação direcionada a um usuário por meio do Microsoft Graph.
-localization_priority: Normal
+title: Criar e enviar uma notificação (preterida)
+description: Crie e envie uma notificação voltada para um usuário por meio do Microsoft Graph.
+ms.localizationpriority: medium
 ms.prod: notifications
 doc_type: apiPageType
 author: merzink
-ms.openlocfilehash: 7296a136a4d2bab38eaf8ef25790019abc05bf6b
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 33346ef8a625b08652c3b11d8ac9e4e3b17e6060
+ms.sourcegitcommit: 7a0f9f1a535795c6f77c80e02fd97581c36f1273
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48064511"
+ms.lasthandoff: 12/27/2021
+ms.locfileid: "61608910"
 ---
-# <a name="create-and-send-a-notification"></a>Criar e enviar uma notificação
+# <a name="create-and-send-a-notification-deprecated"></a>Criar e enviar uma notificação (preterida)
 
-Namespace: Microsoft. Graph [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
-
-Criar e enviar uma notificação direcionada a um usuário por meio do Microsoft Graph. A notificação é armazenada no repositório de feeds de notificação do Microsoft Graph e é enviada a todos os clientes de aplicativos em todos os pontos de extremidade do dispositivo nos quais o usuário está conectado.  
-
-## <a name="permissions"></a>Permissões
-O serviço de aplicativo não requer nenhuma permissão adicional para postar notificações para o usuário de destino.  
+Namespace: microsoft.graph
 
 > [!IMPORTANT]
-> Se você optar por publicar notificações em nome de um usuário via permissões delegadas, uma das seguintes permissões é necessária para chamar essa API. Não recomendamos esta opção para a criação de notificações. Se quiser saber mais, incluindo como escolher permissões, consulte [permissões](/graph/permissions-reference).
+> A API Graph de notificações da Microsoft está preterida e interromperá o retorno de dados até o final de janeiro de 2022. Para obter uma experiência de notificação alternativa, [consulte Microsoft Azure Hubs](/azure/notification-hubs)de Notificação e confira [esta postagem de blog](https://devblogs.microsoft.com/microsoft365dev/retiring-microsoft-graph-notifications/) para obter mais informações.
+
+Crie e envie uma notificação voltada para um usuário por meio do Microsoft Graph. A notificação é armazenada no armazenamento de feed de notificação do Microsoft Graph e é enviada a todos os clientes de aplicativos em todos os pontos de extremidade do dispositivo aos que o usuário está conectado.  
+
+## <a name="permissions"></a>Permissões
+Seu serviço de aplicativo não exige permissões adicionais para postar notificações ao usuário direcionado.  
+
+> [!IMPORTANT]
+> Se você optar por postar notificações em nome de um usuário por meio de permissões delegadas, uma das seguintes permissões será necessária para chamar essa API. Não recomendamos essa opção para criar notificações. Se você quiser saber mais, incluindo como escolher permissões, consulte [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
 |:--------------------|:---------------------------------------------------------|
@@ -42,31 +45,31 @@ POST /me/notifications/
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
 |Nome | Descrição|
 |:----|:-----------|
-|Autorização | O cabeçalho de autorização é usado para passar as credenciais da parte de chamada. Portador {token}. Obrigatório. |
+|Autorização | O header de autorização é usado para passar as credenciais do chamador. Portador {token}. Obrigatório. |
 |X-UNS-ID | O UserNotificationSubscriptionId retornado pelo serviço de notificação do Microsoft Graph após a criação de uma assinatura e é usado para direcionar o usuário específico. Obrigatório. |
 |Content-type | application/json. Obrigatório.|
 
 ## <a name="request-body"></a>Corpo da solicitação
-No corpo da solicitação, forneça uma representação JSON de um objeto [Notification](../resources/projectrome-notification.md) .
+No corpo da solicitação, fornece uma representação JSON de um [objeto de](../resources/projectrome-notification.md) notificação.
 
 ## <a name="response"></a>Resposta
-Se tiver êxito, este método retornará um `201 Created` código de resposta que indica que a notificação foi criada e armazenada com êxito. A notificação será subseqüentemente fanned a todos os pontos de extremidade especificados com uma assinatura válida. 
+Se tiver êxito, este método retornará um código de resposta que indica que a notificação foi criada `201 Created` e armazenada com êxito. A notificação será subsequentemente fanned-out para todos os pontos de extremidade especificados com uma assinatura válida. 
 
-A tabela a seguir lista os possíveis códigos de erro e resposta que podem ser retornados.
+A tabela a seguir lista os códigos de erro e resposta possíveis que podem ser retornados.
 
-|Código de erro             | Descrition                             |
+|Código de erro             | Descrition                              |
 |:-----------------------------------|:----------------------------------------------------------|
-|HttpStatusCode. BadRequest           | O corpo é uma matriz (não há suporte para várias notificações).|
-|HttpStatusCode. BadRequest           | O corpo não corresponde ao contrato da API.               |
-|HttpStatusCode. proibido            | O chamador está na lista de bloqueados.                          |
-|HttpStatusCode. MethodNotAllowed     | Não há suporte para o método HTTP usado.                     |
-|HttpStatusCode. BadRequest           | Cabeçalhos sem suporte estão presentes na solicitação. Não há suporte para dois cabeçalhos:<br/><br/>If-Modified-Since<br/>If-Range |                    
-|HttpStatusCode. UnsupportedMediaType | O cabeçalho Content-Encoding está presente e tem valores de algoritmo de compactação diferentes de `Deflate` ou `Gzip` .  |
-|HttpStatusCode. BadRequest           | Carga inválida.                                           |
-|HttpStatusCode. proibido            | O chamador não está autorizado a atuar em nome do usuário ou enviar notificação para o usuário.                         |
-|HttpStatusCode. não autorizado         |  O corpo da solicitação contém tipos de dados de atividade inválidos.        |
-|HttpStatusCode. OK                   |  Atividade criada com êxito.                            |
-|HttpStatusCode. não aceito        |  A solicitação foi limitada ou o servidor está ocupado.    |
+|HttpStatusCode.BadRequest           | Body é uma matriz (não há suporte para várias notificações).|
+|HttpStatusCode.BadRequest           | Body não combina com o contrato da API.               |
+|HttpStatusCode.Forbidden            | O chamador está na lista bloqueada.                          |
+|HttpStatusCode.MethodNotAllowed     | O método HTTP usado não é suportado.                     |
+|HttpStatusCode.BadRequest           | Os headers sem suporte estão presentes na solicitação. Não há suporte para dois headers:<br/><br/>If-Modified-Since<br/>If-Range |                    
+|HttpStatusCode.UnsupportedMediaType | O header Content-Encoding está presente e tem valores de algoritmo de compactação diferentes `Deflate` ou `Gzip` .  |
+|HttpStatusCode.BadRequest           | Carga inválida.                                           |
+|HttpStatusCode.Forbidden            | O chamador não está autorizado a agir em nome do usuário ou enviar notificação ao usuário.                         |
+|HttpStatusCode.Unauthorized         |    O corpo da solicitação contém tipos de dados de atividade inválidos.        |
+|HttpStatusCode.OK                   |     Atividade criada com êxito.                            |
+|HttpStatusCode.NotAcceptable        |    A solicitação foi acelerada ou o servidor está ocupado.    |
 
 
 ## <a name="example"></a>Exemplo
@@ -101,7 +104,7 @@ Content-type: application/json
 ```
 
 ### <a name="response"></a>Resposta
-Veja a seguir um exemplo da resposta correspondente.
+A seguir, um exemplo da resposta correspondente.
 
 ```http
 HTTP/1.1 201

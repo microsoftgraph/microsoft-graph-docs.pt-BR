@@ -2,15 +2,15 @@
 title: 'educationAssignment: publish'
 description: Altere o estado de um educationAssignment de seu status de rascunho original para o status publicado.
 ms.localizationpriority: medium
-author: dipakboyed
+author: cristobal-buenrostro
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: c466759baa053b4c205dfcebfc75bee1124e8d4d
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: fd3daac7d17b4b88c5f17d3d2a1dca676cfa602b
+ms.sourcegitcommit: 7a0f9f1a535795c6f77c80e02fd97581c36f1273
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "61015501"
+ms.lasthandoff: 12/27/2021
+ms.locfileid: "61608980"
 ---
 # <a name="educationassignment-publish"></a>educationAssignment: publish
 
@@ -22,9 +22,13 @@ Altere o estado de [um educationAssignment](../resources/educationassignment.md)
 
 Você pode alterar o estado de `draft` para `scheduled` se a **atribuição** estiver agendada para uma data futura. 
 
-Somente um professor da classe pode fazer essa chamada. Quando uma atribuição estiver no status de rascunho, os alunos não verão a atribuição, nem haverá objetos de envio. Quando você chama essa API, [os objetos educationSubmission](../resources/educationsubmission.md) são criados e a atribuição aparece na lista do aluno.
+Somente um professor da classe pode fazer essa chamada. Quando uma **atribuição** estiver no status de rascunho, os alunos não verão a **atribuição**, nem haverá objetos de envio. Quando você chama essa API, [os objetos educationSubmission](../resources/educationsubmission.md) são criados e a atribuição aparece na lista do aluno.
 
-O estado da atribuição volta para se houver alguma falha `draft` de back-end durante o processo de publicação.
+O estado da **atribuição** volta para se houver alguma falha `draft` de back-end durante o processo de publicação.
+
+Para atualizar as propriedades de uma atribuição **publicada,** consulte [atualizar uma atribuição](../api/educationassignment-update.md).
+
+Para atualizar as propriedades de uma atribuição publicada, consulte [atualizar uma atribuição](../api/educationassignment-update.md).
 
 ## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
@@ -84,7 +88,7 @@ POST https://graph.microsoft.com/beta/education/classes/72a7baec-c3e9-4213-a850-
 [!INCLUDE [sample-code](../includes/snippets/java/educationassignment-publish-2-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[Go](#tab/go)
+# <a name="go"></a>[Ir](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/educationassignment-publish-2-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 

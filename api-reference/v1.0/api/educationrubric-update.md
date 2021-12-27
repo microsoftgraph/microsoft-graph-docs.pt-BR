@@ -2,15 +2,15 @@
 title: Atualizar educationRubric
 description: Atualize as propriedades do objeto educationRubric.
 ms.localizationpriority: medium
-author: sharad-sharma-msft
+author: cristobal-buenrostro
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: b35a9e40f24fd52e7a16cffa3e60b1491e2e120f
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: 32a2d1f8a43282f69f1d6fb6ab0df2e936c8d299
+ms.sourcegitcommit: 7a0f9f1a535795c6f77c80e02fd97581c36f1273
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "61006211"
+ms.lasthandoff: 12/27/2021
+ms.locfileid: "61608791"
 ---
 # <a name="update-educationrubric"></a>Atualizar educationRubric
 
@@ -53,7 +53,7 @@ No corpo da solicitação, forneça os valores para os campos relevantes que dev
 |:-------------|:------------|:------------|
 |description|itemBody|A descrição dessa rubrica.|
 |displayName|Cadeia de caracteres|O nome dessa rubrica.|
-|grading|educationAssignmentGradeType|Se essa rubrica tem pontos ou não.|
+|grading|[educationAssignmentGradeType](../resources/educationassignmentgradetype.md)|O tipo de classificação do rubric. `null` se for uma rubrica sem pontos e [educationAssignmentPointsGradeType](../resources/educationassignmentpointsgradetype.md) se for uma rubrica com pontos.|
 |levels|Coleção rubricLevel|A coleção de níveis que comem essa rubrica.|
 |qualidades|Coleção rubricQuality|A coleção de qualidades que com isso é rubrica.|
 
@@ -98,7 +98,7 @@ Content-type: application/json
 [!INCLUDE [sample-code](../includes/snippets/java/update-educationrubric-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[Go](#tab/go)
+# <a name="go"></a>[Ir](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/update-educationrubric-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 

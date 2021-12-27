@@ -881,7 +881,7 @@ items:
                 href: api/application-delta.md
               - name: Listar aplicativos excluídos
                 href: api/directory-deleteditems-list.md
-              - name: Listar aplicativos excluídos pertencentes ao usuário
+              - name: Lista de aplicativos excluídos pertencentes a usuários
                 href: api/directory-deleteditems-user-owned.md
               - name: Obter o aplicativo excluído
                 href: api/directory-deleteditems-get.md
@@ -12972,14 +12972,14 @@ items:
             items:
               - name: Obter recurso
                 href: api/resource-get.md
-      - name: Notificações (visualização)
+      - name: Notificações (preterida)
         items:
           - name: Visão Geral
             href: resources/notifications-api-overview.md
-          - name: Notificação
+          - name: Notificação (preterida)
             href: resources/projectrome-notification.md
             items:
-              - name: Criar e enviar uma notificação
+              - name: Criar e enviar uma notificação (preterida)
                 href: api/user-post-notifications.md
       - name: Inteligência de pessoas e no local de trabalho
         items:

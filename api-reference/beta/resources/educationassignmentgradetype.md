@@ -1,26 +1,28 @@
 ---
-title: tipo de recurso educationAssignmentGradeType
-description: Representa como uma atribuição será classificada. Isso é usado na propriedade **assignments. Grading** .
-localization_priority: Normal
-author: dipakboyed
+title: Tipo de recurso educationAssignmentGradeType
+description: Representa como uma atribuição será gradeada. Isso é usado na **propriedade assignments.grading.**
+ms.localizationpriority: medium
+author: cristobal-buenrostro
 ms.prod: education
 doc_type: resourcePageType
-ms.openlocfilehash: bf658fe2fa2b729a7e07d59613f86fe1f324798b
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: d0aa68b27c311c297b81e6007c01b2fa35c09e79
+ms.sourcegitcommit: 7a0f9f1a535795c6f77c80e02fd97581c36f1273
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48013738"
+ms.lasthandoff: 12/27/2021
+ms.locfileid: "61608959"
 ---
-# <a name="educationassignmentgradetype-resource-type"></a>tipo de recurso educationAssignmentGradeType
+# <a name="educationassignmentgradetype-resource-type"></a>Tipo de recurso educationAssignmentGradeType
 
-Namespace: Microsoft Graph
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Representa como uma atribuição será classificada. Isso é usado na propriedade **assignments. Grading** .
+Representa como uma atribuição será gradeada. Isso é usado na **propriedade assignments.grading.**
 
-Essa superclasse não pode ser usada diretamente na propriedade assignment. Ele existe para permitir várias maneiras diferentes de comparecer as atribuições.
+Essa superclasse não pode ser usada diretamente na propriedade assignment. Ela existe para permitir várias maneiras diferentes de fazer atribuições de classificação.
+
+Classe base [para educationAssignmentPointsGradeType](../resources/educationassignmentpointsgradetype.md).
 
 
 ## <a name="properties"></a>Propriedades

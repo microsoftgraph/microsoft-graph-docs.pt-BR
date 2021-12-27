@@ -5,18 +5,18 @@ author: sharad-sharma-msft
 ms.localizationpriority: medium
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: 790c65c91ec02266715e84e62ea4ba9f1170edc3
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: 8ab5d36dd248df367ec7ff6168b0c921226117fb
+ms.sourcegitcommit: 7a0f9f1a535795c6f77c80e02fd97581c36f1273
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "61006281"
+ms.lasthandoff: 12/27/2021
+ms.locfileid: "61608896"
 ---
 # <a name="delete-educationassignmentresource"></a>Excluir educationAssignmentResource
 
 Namespace: microsoft.graph
 
-Exclua um recurso específico anexado a uma atribuição.
+Exclua um [educationAssignmentResource](../resources/educationassignmentresource.md) específico anexado a uma atribuição.
 
 Em geral, somente os professores da classe podem remover um recurso. No entanto, os professores não podem remover recursos marcados como "distributeToStudents", depois que a atribuição tiver sido publicada para os alunos.
 
@@ -76,7 +76,7 @@ DELETE https://graph.microsoft.com/v1.0/education/classes/72a7baec-c3e9-4213-a85
 [!INCLUDE [sample-code](../includes/snippets/java/delete-educationassignmentresource-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[Go](#tab/go)
+# <a name="go"></a>[Ir](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/delete-educationassignmentresource-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
