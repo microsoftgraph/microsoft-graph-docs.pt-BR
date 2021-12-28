@@ -4,12 +4,12 @@ description: 'O Microsoft Graph permite a integração com os melhores serviços
 author: angelgolfer-ms
 ms.localizationpriority: high
 ms.custom: scenarios:getting-started
-ms.openlocfilehash: 7d2a3df6af87d9e3b9802e112bc429682a42d989
-ms.sourcegitcommit: c900d22144429ac7aecae3355a4cdc1987cc4234
+ms.openlocfilehash: c6c8ecf7ecc7e53a71b84ba77417e08adfd46561
+ms.sourcegitcommit: 7a0f9f1a535795c6f77c80e02fd97581c36f1273
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/13/2021
-ms.locfileid: "61424599"
+ms.lasthandoff: 12/27/2021
+ms.locfileid: "61609001"
 ---
 # <a name="major-services-and-features-in-microsoft-graph"></a>Principais serviços e recursos do Microsoft Graph
 
@@ -107,7 +107,10 @@ Alguns serviços do Microsoft Graph iniciam-se no próprio Microsoft Graph, outr
 |:-----------|:--------------------|:-----------|:----------------|
 | Experiências entre dispositivos | Feed de atividades, retransmissão de dispositivos | Permite experiências de aplicativos que transcendem um único dispositivo e que, em vez disso, são movidas com o usuário de dispositivo para dispositivo, independentemente do tipo e da plataforma. | [Visão geral das experiências entre dispositivos](cross-device-concept-overview.md) |
 
-## <a name="user-notifications"></a>Notificações do usuário
+## <a name="user-notifications-deprecated"></a>Notificações do usuário (preteridas)
+
+> [!IMPORTANT]
+> A API Microsoft Graph notificações de falha foi preterida e deixará de retornar dados até o final de janeiro de 2022. Para uma experiência de notificação alternativa, consulte [Hubs de Notificações do Microsoft Azure](/azure/notification-hubs), and [veja esta postagem do blog](https://devblogs.microsoft.com/microsoft365dev/retiring-microsoft-graph-notifications/) Para maiores informações.
 
 |Recurso     |Serviços de suporte  |Descrição |Mais informações |
 |:-----------|:--------------------|:-----------|:----------------|
