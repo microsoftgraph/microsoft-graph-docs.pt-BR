@@ -1,18 +1,21 @@
 ---
-title: 'Ativando experiências de notificação centradas no ser humano usando notificações do Microsoft Graph '
+title: Habilitar experiências de notificação centradas no ser humano usando notificações do Microsoft Graph (preterido)
 description: A plataforma de notificações do Microsoft Graph fornece uma abordagem centrada no ser humano que permite segmentar seus usuários em todo e qualquer ponto de extremidade do dispositivo.
 ms.localizationpriority: high
 ms.prod: notifications
 ms.custom: scenarios:getting-started
 author: merzink
-ms.openlocfilehash: d63b5367b481ce6826929034f46c5f530c40f32d
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 0979e2c780d0d589ec24575385113057e6a44066
+ms.sourcegitcommit: 7a0f9f1a535795c6f77c80e02fd97581c36f1273
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59062338"
+ms.lasthandoff: 12/27/2021
+ms.locfileid: "61609015"
 ---
-# <a name="enabling-human-centric-notification-experiences-using-microsoft-graph-notifications"></a>Ativando experiências de notificação centradas no ser humano usando notificações do Microsoft Graph
+# <a name="enabling-human-centric-notification-experiences-using-microsoft-graph-notifications-deprecated"></a>Habilitar experiências de notificação centradas no ser humano usando notificações do Microsoft Graph (preterido)
+
+> [!IMPORTANT]
+> A API de notificações do Microsoft Graph está obsoleta e deixará de retornar dados até o final de janeiro de 2022. Para uma experiência de notificação alternativa, consulte os [Hubs de Notificações do Microsoft Azure](/azure/notification-hubs) e [veja esta postagem no blog](https://devblogs.microsoft.com/microsoft365dev/retiring-microsoft-graph-notifications/) para obter mais informações.
 
 As notificações são uma das formas mais eficazes de interagir com os usuários do seu aplicativo. Uma ótima experiência de notificação pode ajudar a abrir um canal de comunicação quase em tempo real entre você e seus usuários, o que pode aumentar o engajamento com o aplicativo no momento certo, tornar os usuários mais produtivos e alertá-los sobre eventos importantes ou ações necessárias.
 
@@ -34,7 +37,7 @@ Você pode usar a API de notificações para direcionar uma conta pessoal da Mic
 
 ### <a name="easily-manage-notifications-across-endpoints"></a>Gerencie as notificações facilmente pelos pontos de extremidade
 
-Com o novo e aprimorado [SDK do cliente de notificações](https://aka.ms/GNSDK) em seu aplicativo cliente, você pode atualizar o estado de uma notificação e sincronizá-lo em todos os pontos de extremidade. Por exemplo, quando um usuário age sobre uma notificação em um dispositivo, você pode atualizar o estado essa notificação (por exemplo, marcá-la como lida ou ignorada), e essa alteração de estado será distribuída a todos os outros pontos de extremidade. A API de notificações do Microsoft Graph acompanha o estado das notificações do usuário de forma centralizada, facilitando a garantia de que suas notificações sejam tratadas uma vez e descartadas em todo lugar, minimizando a redundância e garantindo uma excelente experiência do cliente.
+Com o novo e aprimorado [SDK do cliente de notificações](https://aka.ms/GNSDK) em seu aplicativo cliente, você pode atualizar o estado de uma notificação e sincronizá-lo em todos os pontos de extremidade. Por exemplo, quando um usuário age sobre uma notificação em um dispositivo, você pode atualizar o estado essa notificação (por exemplo, marcá-la como lida ou ignorada), e essa alteração de estado será distribuída a todos os outros pontos de extremidade. A API de notificações do Microsoft Graph rastreia o estado das notificações do usuário de forma centralizada, tornando mais fácil para você garantir que suas notificações sejam tratadas uma vez e descartadas em todos os lugares, minimizando assim a redundância e garantindo uma ótima experiência do cliente.
 
 ### <a name="retrieve-notification-state-and-history"></a>Recuperar estado e histórico de notificação
 
@@ -55,4 +58,4 @@ Para começar, consulte a seção de [visão geral da integração](notification
 ## <a name="api-reference"></a>Referência da API
 Está procurando a referência de API para esse serviço?
 
-- [Usar API REST de notificações no Microsoft Graph](/graph/api/resources/notifications-api-overview?view=graph-rest-beta)
+- [Usar API REST de notificações no Microsoft Graph](/graph/api/resources/notifications-api-overview?view=graph-rest-beta&preserve-view=true)

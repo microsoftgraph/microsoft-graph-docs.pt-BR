@@ -346,10 +346,10 @@ items:
                 href: onenote-branding.md
               - name: Códigos de erro
                 href: onenote-error-codes.md
-      - name: Notificações (visualização)
+      - name: Notificações (preteridas)
         displayName: Notifications
         items:
-          - name: Visão Geral
+          - name: Visão geral
             href: notifications-concept-overview.md
           - name: Introdução
             displayName: Notifications
