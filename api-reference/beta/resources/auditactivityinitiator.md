@@ -4,13 +4,13 @@ description: Identidade do objeto de recurso que inicia a atividade. O iniciador
 ms.localizationpriority: medium
 doc_type: resourcePageType
 ms.prod: identity-and-access-reports
-author: SarahBar
-ms.openlocfilehash: a018a6e74f9ee89b879577bec6f64a94ab15cdca
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+author: besiler
+ms.openlocfilehash: e681f56f3caf0792241a92ce5137ac8468b623d8
+ms.sourcegitcommit: 12f07c009c57db3cc9174b165b5ec30195c00996
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59047482"
+ms.lasthandoff: 12/30/2021
+ms.locfileid: "61647159"
 ---
 # <a name="auditactivityinitiator-resource-type"></a>Tipo de recurso auditActivityInitiator
 
@@ -21,8 +21,8 @@ Namespace: microsoft.graph Identity o objeto de recurso que inicia a atividade. 
 ## <a name="properties"></a>Propriedades
 | Propriedade     | Tipo   |Descrição|
 |:---------------|:--------|:----------|
-|aplicativo|[appIdentity](appidentity.md)|Se o recurso que inicia a atividade for um aplicativo, essa propriedade indicará todas as informações relacionadas ao aplicativo, como appId, Name, servicePrincipalId, Name.|
-|usuário|[userIdentity](useridentity.md)|Se o recurso que inicia a atividade for um usuário, essa propriedade indicará todas as informações relacionadas ao usuário, como userId, Name, UserPrinicpalName.|
+|aplicativo|[appIdentity](appidentity.md)|Se o ator que inicia a atividade for um aplicativo, essa propriedade indicará todas as suas informações de identificação, incluindo appId, displayName, servicePrincipalId e servicePrincipalName.|
+|usuário|[auditUserIdentity](auditUserIdentity.md)|Se o ator que inicia a atividade for um usuário, essa propriedade indicará suas informações de identificação, incluindo sua id, displayName e userPrincipalName.|
 
 ## <a name="json-representation"></a>Representação JSON
 

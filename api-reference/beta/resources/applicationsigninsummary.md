@@ -1,16 +1,16 @@
 ---
 title: Tipo de recurso applicationSignInDetailedSummary
 description: Representa um resumo de login do aplicativo.
-localization_priority: Normal
+ms.localizationpriority: medium
 author: besiler
 ms.prod: identity-and-access-reports
 doc_type: resourcePageType
-ms.openlocfilehash: 454c4e2e9e57b61194e6f3e6970e5db1ea414369
-ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
+ms.openlocfilehash: 1c0f07f40ee2b03dd350ea918dc0b1fe43a1b1c5
+ms.sourcegitcommit: 12f07c009c57db3cc9174b165b5ec30195c00996
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/06/2021
-ms.locfileid: "50137407"
+ms.lasthandoff: 12/30/2021
+ms.locfileid: "61647138"
 ---
 # <a name="applicationsigninsummary-resource-type"></a>Tipo de recurso applicationSignInSummary
 
@@ -24,16 +24,18 @@ Representa um resumo de login do aplicativo.
 
 | Método       | Tipo de retorno | Descrição |
 |:-------------|:------------|:------------|
-| [Obter applicationSignInSummary](../api/applicationsigninsummary-get.md) | [applicationSignInSummary](applicationsigninsummary.md) | Leia as propriedades e os relacionamentos de **um objeto applicationSignInSummary.** |
+| [getAzureADApplicationSignInSummary](../api/reportroot-getazureadapplicationsigninsummary.md) | [applicationSignInSummary](applicationsigninsummary.md) | Leia as propriedades e as relações de **um objeto applicationSignInSummary.** |
 
 ## <a name="properties"></a>Propriedades
 | Propriedade     | Tipo        | Descrição |
 |:-------------|:------------|:------------|
-|appDisplayName|String|Nome do aplicativo em que o usuário se inscreveu.|
-|appId|String|  ID do aplicativo que o usuário assinou i nto.|
-|failedSignInCount|Int64|Contagem de falhas de logins feitas pelo aplicativo.|
+|appDisplayName|String|Nome do aplicativo em que o usuário entrou.|
+|failedSignInCount|Int64|Contagem de sign-ins com falha feitas pelo aplicativo.|
 |successPercentage|Int32|Porcentagem de logins bem-sucedidos feitos pelo aplicativo.|
 |successfulSignInCount|Int64|Contagem de logins bem-sucedidos feitos pelo aplicativo.|
+<!--Hiding this because it's not in the metadata nor in public response objects
+|appId|String|  Identifier of the application that the user signed into.|
+-->
 
 ## <a name="relationships"></a>Relações
 Nenhum

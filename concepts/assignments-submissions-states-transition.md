@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: cristobal-buenrostro
 ms.prod: education
 doc_type: conceptualPageType
-ms.openlocfilehash: 1cedb6c2ab34511134716efe5c205a4738d10f0c
-ms.sourcegitcommit: 08e9b0bac39c1b1d2c8a79539d24aaa93364baf2
+ms.openlocfilehash: 97e75c7ef87d47c0359d6b8d6a5e5db2bb21a518
+ms.sourcegitcommit: 12f07c009c57db3cc9174b165b5ec30195c00996
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/24/2021
-ms.locfileid: "59767333"
+ms.lasthandoff: 12/30/2021
+ms.locfileid: "61647004"
 ---
 # <a name="states-transitions-and-limitations-for-assignments-and-submissions-in-microsoft-graph"></a>Estados, transições e limitações para atribuições e envios no Microsoft Graph
 
@@ -26,7 +26,7 @@ Uma atribuição representa uma tarefa ou unidade de trabalho atribuída a um al
 | Published | Um estado de processamento em segundo plano quando a atribuição é distribuída a cada aluno atribuído. | `POST /education/classes/{id}/assignments/{id}/publish` |
 | Agendada | Status quando o professor agendou a atribuição para publicar em uma hora futura. | `PATCH /education/classes/{id}/assignments/{id}`<br/>`POST /education/classes/{id}/assignments/{id}/publish` |
 | Atribuído | Depois de concluir a publicação, a atribuição é movida para o estado Atribuído e está disponível para os alunos. | `POST /education/classes/{id}/assignments/{id}/publish` |
-| Pendente | Status do processamento em segundo plano quando uma nova atribuição está sendo copiada de uma tarefa existente. | `POST /education/classes/{id}/assignments/{id}/copy`<br/>`PATCH /education/classes/{id}/assignments/{id}` |
+| Pending | Status do processamento em segundo plano quando uma nova atribuição está sendo copiada de uma tarefa existente. | `POST /education/classes/{id}/assignments/{id}/copy`<br/>`PATCH /education/classes/{id}/assignments/{id}` |
 
 O diagrama a seguir mostra as transições de estado que podem ocorrer para atribuições.
 
@@ -48,8 +48,8 @@ O chamador deve usar a operação [de atribuição GET](/graph/api/educationassi
 | Agendada | Cancelar agendamento | Rascunho |
 | Agendada | Reagendar | Agendada |
 | Atribuído | Descartado | |
-| Pendente | Cópia concluída | Rascunho |
-| Pendente | Descartado | |   
+| Pending | Cópia concluída | Rascunho |
+| Pending | Descartado | |   
 
 `Note: Any action and state transition not listed in the table is NOT allowed`
 
@@ -75,7 +75,7 @@ O status é uma propriedade somente leitura no envio e muda com base nas ações
 | Estado | Descrição | Chamada da API REST |
 |:--|:--|:--|
 | Trabalhando | Estado inicial após a criação do envio. | `POST /education/classes/{id}/assignments`<br/>`POST /education/classes/{id}/assignments/{id}/submissions/{id}/unsubmit` |
-| Submitted | Isso acontece depois que o aluno se transforma na atribuição. | `POST /education/classes/{id}/assignments/{id}/submissions/{id}/submit` |
+| Submitted | Isso acontece depois que o aluno foi transformado na atribuição. | `POST /education/classes/{id}/assignments/{id}/submissions/{id}/submit` |
 | Retornado | Depois que o professor retornou a atribuição ao aluno. | `POST /education/classes/{id}/assignments/{id}/submissions/{id}/return` |
 | Reatribuido | Depois que o professor retornou a atribuição ao aluno para revisão. | `POST /education/classes/{id}/assignments/{id}/submissions/{id}/reassign` |
 

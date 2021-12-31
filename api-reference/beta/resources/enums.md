@@ -5,16 +5,38 @@ doc_type: enumPageType
 ms.localizationpriority: medium
 ms.prod: non-product-specific
 author: MSGraphDocsvTeam
-ms.openlocfilehash: c4e9835e140daa63e5b0c6fac4886e0b58a59880
-ms.sourcegitcommit: c47e3d1f3c5f7e2635b2ad29dfef8fe7c8080bc8
+ms.openlocfilehash: 507088d2c71137ab416ba39629c8607bf7554e83
+ms.sourcegitcommit: 12f07c009c57db3cc9174b165b5ec30195c00996
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/15/2021
-ms.locfileid: "61525733"
+ms.lasthandoff: 12/30/2021
+ms.locfileid: "61646752"
 ---
 # <a name="enum-values"></a>Valores denum
 
 Namespace: microsoft.graph
+
+### <a name="incomingtokentype-values"></a>valores incomingTokenType 
+
+|Member|
+|:---|
+|none|
+|primaryRefreshToken|
+|saml11|
+|saml20|
+|unknownFutureValue|
+
+### <a name="protocoltype-values"></a>valores protocolType 
+
+|Member|
+|:---|
+|none|
+|oAuth2|
+|ropc|
+|wsFederation|
+|saml20|
+|deviceCode|
+|unknownFutureValue|
 
 ### <a name="accessreviewinstancedecisionitemfilterbycurrentuseroptions-values"></a>valores accessReviewInstanceDecisionItemFilterByCurrentUserOptions 
 
@@ -69,7 +91,7 @@ Namespace: microsoft.graph
 
 |Member|
 |:----|
-|Nenhuma|
+|Nenhum|
 |UserName|
 |Password|
 |SecretToken|
@@ -191,7 +213,7 @@ Namespace: microsoft.graph
 
 |Member|
 |:---|
-|Cadeia de caracteres|
+|String|
 |Inteiro|
 |Referência|
 |Binária|
@@ -211,7 +233,7 @@ Namespace: microsoft.graph
 
 |Member|
 |:---|
-|Nenhuma|
+|Nenhum|
 |AttributeNames|
 |AttributeDataTypes|
 |AttributeReadOnly|
@@ -475,6 +497,11 @@ Namespace: microsoft.graph
 |hora|
 |deviceState|
 |client|
+|ipAddressSeenByAzureAD|
+|ipAddressSeenByResourceProvider|
+|unknownFutureValue|
+|servicePrincipals|
+|servicePrincipalRisk|
 
 ### <a name="conditionalaccessstatus-values"></a>conditionalAccessStatus values
 
@@ -604,12 +631,52 @@ Namespace: microsoft.graph
 |mfaRegistered|
 |unknownFutureValue|
 
-### <a name="requirementprovider-values"></a>valores de requirementProvider
+
+### <a name="signinidentifiertype-values"></a>Valores signInIdentifierType 
 
 |Member|
 |:---|
-|MFA|
-|CA|
+|userPrincipalName|
+|phoneNumber|
+|proxyAddress|
+|qrCode|
+|onPremisesUserPrincipalName|
+|unknownFutureValue|
+
+
+### <a name="signinusertype-values"></a>Valores signInUserType 
+
+|Member|
+|:---|
+|Membro|
+|guest|
+|unknownFutureValue|
+
+### <a name="requirementprovider-values"></a>valores de requirementProvider 
+
+
+|Member|
+|:---|
+|usuário|
+|request|
+|servicePrincipal|
+|v1ConditionalAccess|
+|multiConditionalAccess|
+|tenantSessionRiskPolicy|
+|accountCompromisePolicies|
+|v1ConditionalAccessDependency|
+|v1ConditionalAccessPolicyIdRequested|
+|mfaRegistrationRequiredByIdentityProtectionPolicy|
+|baselineProtection|
+|mfaRegistrationRequiredByBaselineProtection|
+|mfaRegistrationRequiredByMultiConditionalAccess|
+|enforcedForCspAdmins|
+|securityDefaults|
+|mfaRegistrationRequiredBySecurityDefaults|
+|proofUpCodeRequest|
+|crossTenantOutboundRule|
+|gpsLocationCondition|
+|riskBasedPolicy|
 |unknownFutureValue|
 
 
@@ -634,6 +701,8 @@ Namespace: microsoft.graph
 |adminConfirmedUserCompromised|
 |unknownFutureValue|
 
+
+<!-- maintenance comment: Do not delete enum delcaration for riskEventType until all properties of this type are marked as deleted. Dec 28, 2021: Pending eventTypes (in riskUserActivity) and riskType (in riskDetection)-->
 ### <a name="riskeventtype-values"></a>valores riskEventType
 
 |Member|
@@ -1376,7 +1445,7 @@ Namespace: microsoft.graph
 | Automático
 | noPreview
 | checklist
-| description
+| descrição
 | referência
 
 
@@ -1821,6 +1890,7 @@ Valores possíveis para tipos de conta de usuário (associação ao grupo), por 
 |AzureAD|
 |ADFederationServices|
 |unknownFutureValue|
+|AzureADBackupAuth|
 
 ### <a name="riskdetectiontimingtype-values"></a>valores riskDetectionTimingType
 
@@ -1964,6 +2034,45 @@ Valores possíveis para tipos de conta de usuário (associação ao grupo), por 
 |approvedApplication|
 |compliantApplication|
 |passwordChange|
+|unknownFutureValue|
+
+### <a name="conditionalaccessrule-values"></a>conditionalAccessRule values 
+
+|Member|
+|:---|
+|allApps|
+|firstPartyApps|
+|office365|
+|appId|
+|acr|
+|appFilter|
+|allUsers|
+|guest|
+|groupId|
+|roleId|
+|userId|
+|allDevicePlatforms|
+|devicePlatform|
+|allLocations|
+|insideCorpnet|
+|allTrustedLocations|
+|locationId|
+|allDevices|
+|deviceFilter|
+|deviceState|
+|unknownFutureValue|
+|deviceFilterIncludeRuleNotMatched|
+|allDeviceStates|
+
+### <a name="signinaccesstype-values"></a>Valores signInAccessType 
+
+|Member|
+|:---|
+|none|
+|b2bCollaboration|
+|b2bDirectConnect|
+|microsoftSupport|
+|serviceProvider|
 |unknownFutureValue|
 
 ### <a name="signinfrequencytype-values"></a>Valores signinFrequencyType
@@ -2261,7 +2370,7 @@ Valores possíveis para tipos de conta de usuário (associação ao grupo), por 
 
 |Membro    |Valor    |Descrição |
 |:---------|:--------|:----------- |
-|team      |0        |Indica que o aplicativo Teams pode ser instalado em uma equipe e está autorizado a acessar os dados dessa equipe.|
+|equipe      |0        |Indica que o aplicativo Teams pode ser instalado em uma equipe e está autorizado a acessar os dados dessa equipe.|
 |groupChat |1        |Indica que o aplicativo Teams pode ser instalado em um chat de grupo e está autorizado a acessar os dados desse chat de grupo.|
 |pessoal  |2        |Indica que o aplicativo Teams pode ser instalado no escopo pessoal de um usuário e está autorizado a acessar os dados desse usuário.|
 
@@ -2434,8 +2543,8 @@ Valores possíveis para tipos de conta de usuário (associação ao grupo), por 
 
 |Member|
 |:---|
-|team|
-|channel|
+|equipe|
+|canal|
 |chat|
 |unknownFutureValue|
 

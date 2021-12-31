@@ -5,12 +5,12 @@ author: AlexanderMars
 ms.localizationpriority: medium
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: 89f7e61ab47903b37d15a6620a90ebc098abfe2b
-ms.sourcegitcommit: 65f4e128f96783c18d607a6dcffbc914291285d4
+ms.openlocfilehash: 5bce770759d9988b6c08a5dab49af897865f8754
+ms.sourcegitcommit: 12f07c009c57db3cc9174b165b5ec30195c00996
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/08/2021
-ms.locfileid: "61340673"
+ms.lasthandoff: 12/30/2021
+ms.locfileid: "61646990"
 ---
 # <a name="create-organizationalbrandinglocalization"></a>Criar organizationalBrandingLocalization
 Namespace: microsoft.graph
@@ -19,7 +19,7 @@ Crie um novo [objeto organizationalBrandingLocalization.](../resources/organizat
 
 A identidade visual padrão é criada apenas uma vez. Ele é carregado quando uma identidade visual localizada não é configurada para o idioma do navegador do usuário. Para recuperar a identidade visual padrão, consulte [Obter identidade visual](organizationalbranding-get.md).
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 | Tipo de permissão                        | Permissões (da com menos para a com mais privilégios) |
@@ -50,7 +50,7 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar o [objet
 
 | Propriedade     | Tipo        | Descrição |
 |:-------------|:------------|:------------|
-| id | String | Um identificador que representa a localidade especificada no padrão ISO 639-1, por exemplo, inglês é `en-US` . Não é possível criar a identidade visual padrão definindo o valor da **id** para os tipos de cadeia de caracteres `0` ou `default` .  <br/><br/>**OBSERVAÇÃO:** No momento, não há suporte para várias marcas para uma única localidade. |
+| id | String | Um identificador que representa a localidade especificada usando nomes de cultura. Os nomes de cultura seguem o padrão RFC 1766 no formato "languagecode2-country/regioncode2", onde "languagecode2" é um código de duas letras minúsculo derivado da ISO 639-1 e "country/regioncode2" é um código de duas letras maiúscula derivado da ISO 3166. Por exemplo, inglês dos EUA é `en-US` . Não é possível criar a identidade visual padrão definindo o valor da **id** para os tipos de cadeia de caracteres `0` ou `default` .  <br/><br/>**OBSERVAÇÃO:** No momento, não há suporte para várias marcas para uma única localidade. |
 
 ## <a name="response"></a>Resposta
 
