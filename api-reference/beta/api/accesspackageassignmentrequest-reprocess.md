@@ -1,16 +1,16 @@
 ---
 title: 'accessPackageAssignmentRequest: reprocessar'
 description: Reprocessar objetos accessPackageAssignmentRequest.
-localization_priority: Normal
+ms.localizationpriority: medium
 author: markwahl-msft
 ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: 36dd0d9d3e004d916e508b4f710728b214ac5a79
-ms.sourcegitcommit: 0116750a01323bc9bedd192d4a780edbe7ce0fdc
+ms.openlocfilehash: 39104bb29ba7b1f8a9e672775781a5303ab0fa81
+ms.sourcegitcommit: fd609cb401ff862c3f5c21847bac9af967c6bf82
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58257939"
+ms.lasthandoff: 12/31/2021
+ms.locfileid: "61650738"
 ---
 # <a name="accesspackageassignmentrequest-reprocess"></a>accessPackageAssignmentRequest: reprocessar
 
@@ -18,7 +18,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-No gerenciamento de direitos do [Azure AD,](../resources/entitlementmanagement-root.md)os chamadores podem repetir automaticamente a solicitação de acesso de um usuário a um pacote de acesso. Ele é executado em um [objeto accessPackageAssignmentRequest](../resources/accesspackageassignmentrequest.md) cuja **requestState** está em `DeliveryFailed` um ou `PartiallyDelivered` estado. 
+No gerenciamento de direitos do [Azure AD,](../resources/entitlementmanagement-overview.md)os chamadores podem repetir automaticamente a solicitação de acesso de um usuário a um pacote de acesso. Ele é executado em um [objeto accessPackageAssignmentRequest](../resources/accesspackageassignmentrequest.md) cuja **requestState** está em `DeliveryFailed` um ou `PartiallyDelivered` estado. 
 
 ## <a name="permissions"></a>Permissões
 
@@ -26,8 +26,8 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 | Tipo de permissão                        | Permissões (da com menos para a com mais privilégios) |
 |:---------------------------------------|:--------------------------------------------|
-| Delegada (conta corporativa ou de estudante) | EntitlementManagement.ReadWrite.All |
-| Delegada (conta pessoal da Microsoft) | Sem suporte. |
+| Delegado (conta corporativa ou de estudante) | EntitlementManagement.ReadWrite.All |
+| Delegado (conta pessoal da Microsoft) | Sem suporte. |
 | Aplicativo | EntitlementManagement.ReadWrite.All |
   
 ## <a name="http-request"></a>Solicitação HTTP

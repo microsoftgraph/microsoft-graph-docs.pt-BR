@@ -1,16 +1,16 @@
 ---
 title: Tipo de recurso agreementFileLocalization
-description: Representa um arquivo de política localizado de termos de uso no Azure Active Directory (Azure AD). Ele contém metadados sobre o arquivo de contrato (por exemplo, o nome, o idioma e se é o arquivo padrão).
-localization_priority: Normal
+description: Representa arquivos de política localizados de termos de uso no Azure Active Directory (Azure AD). Ele contém metadados sobre o arquivo de contrato (por exemplo, o nome, o idioma e se é o arquivo padrão).
+ms.localizationpriority: medium
 doc_type: resourcePageType
 ms.prod: governance
 author: raprakasMSFT
-ms.openlocfilehash: 58769f65ceedfb55dc683ad2d014f70a1cc776c4
-ms.sourcegitcommit: 9d98d9e9cc1e193850ab9b82aaaf906d70e1378b
+ms.openlocfilehash: a12aed22d4b2c6678b270d99bcbc3e834d94ac6d
+ms.sourcegitcommit: fd609cb401ff862c3f5c21847bac9af967c6bf82
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/12/2021
-ms.locfileid: "50761153"
+ms.lasthandoff: 12/31/2021
+ms.locfileid: "61651172"
 ---
 # <a name="agreementfilelocalization-resource-type"></a>Tipo de recurso agreementFileLocalization
 
@@ -18,38 +18,31 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Representa um arquivo de contrato de termos de uso personalizável que um locatário gerencia com o Azure Active Directory (Azure AD). Ele contém metadados sobre o arquivo de contrato (por exemplo, o nome, o idioma e se é o arquivo padrão).
+Representa um arquivo de contrato de termos de uso personalizável que um locatário gerencia com Azure Active Directory (Azure AD). Ele contém metadados sobre o arquivo de contrato (por exemplo, o nome, o idioma e se é o arquivo padrão).
 
-<!--
-## Methods
+Herda de [agreementFileProperties](agreementfileproperties.md).
 
-| Method       | Return Type | Description |
-|:-------------|:------------|:------------|
-| [Create agreementFileLocalization](../api/agreementfilelocalization-post-agreementfilelocalizations.md) | [agreementfilelocalization](agreementfilelocalization.md) | Create a new agreementFileLocalization. |
-| [List agreementFileLocalizations](../api/agreementfilelocalization-list.md) | [agreementfilelocalization](agreementfilelocalization.md) collection | Get an agreementFileLocalization object collection. |
-| [Get agreementFileLocalization](../api/agreementfilelocalization-get.md) | [agreementfilelocalization](agreementfilelocalization.md) | Read properties and relationships of an agreementFileLocalization object. |
-| [List agreementFileVersions](../api/agreementfileversion-list.md) | [agreementfileversion](agreementfileversion.md) collection | Get an agreementFileVersion object collection. |
-| [Get agreementFileVersion](../api/agreementfileversion-get.md) | [agreementfileversion](agreementfileversion.md) | Read properties and relationships of an agreementFileVersion object. |
--->
+## <a name="methods"></a>Métodos
+
+Nenhum.
 
 ## <a name="properties"></a>Propriedades
 | Propriedade     | Tipo        | Descrição |
 |:-------------|:------------|:------------|
-|fileData|[agreementFileData](agreementfiledata.md)|Dados que representam os termos de uso do documento PDF. Somente leitura.|
-|fileName|String|Nome do arquivo de contrato (por exemplo, TOU.pdf). Somente leitura.|
-|id|String|Somente leitura.|
-|isDefault|Booliano|Indica se esse é o arquivo de contrato padrão se nenhuma das culturas corresponde à preferência do cliente. Se nenhum dos arquivos for marcado como padrão, o primeiro será tratado como padrão. Somente leitura.|
-|idioma|Cadeia de caracteres|Cultura do arquivo de contrato no formato languagecode2-country/regioncode2. languagecode2 é um código de duas letras minúsculo derivado da ISO 639-1. country/regioncode2 é derivado da ISO 3166 e geralmente consiste em duas letras maiúsculas, ou uma marca de idioma BCP-47 (por exemplo, en-US). Somente leitura.|
-|isMajorVersion|Boolean|Indica se o arquivo de contrato é uma atualização de versão principal. Atualizações de versão principais invalidam as aceitaçãos do contrato no idioma correspondente. |
-|createdDateTime|DateTimeOffset|A data que representa quando o arquivo foi criado. O tipo Timestamp representa informações de data e hora usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite UTC em 1º de janeiro de 2014 é: '2014-01-01T00:00:00Z'.|
-|displayName|Cadeia de caracteres|Nome de exibição localizado do arquivo de política de um contrato. O nome de exibição localizado é mostrado aos usuários finais que visualizam o contrato.
+|createdDateTime|DateTimeOffset|A data que representa quando o arquivo foi criado. O tipo Timestamp representa informações de data e hora usando o formato ISO 8601 e está sempre em horário UTC. Por exemplo, meia-noite UTC em 1 de janeiro de 2014 é `2014-01-01T00:00:00Z`. Herdado [de agreementFileProperties](../resources/agreementfileproperties.md).|
+|displayName|String|Nome de exibição localizado do arquivo de política de um contrato. O nome de exibição localizado é mostrado aos usuários finais que visualizam o contrato. Herdado [de agreementFileProperties](../resources/agreementfileproperties.md).|
+|fileData|[agreementFileData](agreementfiledata.md)|Dados que representam os termos de uso do documento PDF. Somente leitura. Herdado [de agreementFileProperties](../resources/agreementfileproperties.md).|
+|fileName|String|Nome do arquivo de contrato (por exemplo, TOU.pdf). Somente leitura. Herdado [de agreementFileProperties](../resources/agreementfileproperties.md).|
+|id|String|O identificador do objeto agreementFileVersion. Somente leitura. Herdado [de agreementFileProperties](../resources/agreementfileproperties.md).|
+|isDefault|Booliano|Se nenhum dos idiomas corresponde à preferência do cliente, indica se esse é o arquivo de contrato padrão . Se nenhum dos arquivos for marcado como padrão, o primeiro será tratado como padrão. Somente leitura. Herdado [de agreementFileProperties](../resources/agreementfileproperties.md).|
+|isMajorVersion|Booliano|Indica se o arquivo de contrato é uma atualização de versão principal. Atualizações de versão principais invalidam as aceitaçãos do contrato no idioma correspondente. Herdado [de agreementFileProperties](../resources/agreementfileproperties.md).|
+|idioma|Cadeia de caracteres|O idioma do arquivo de contrato no formato "languagecode2-country/regioncode2". "languagecode2" é um código de duas letras minúsculo derivado da ISO 639-1, enquanto "country/regioncode2" é derivado da ISO 3166 e geralmente consiste em duas letras maiúsculas, ou uma marca de idioma BCP-47. Por exemplo, inglês dos EUA é `en-US` . Somente leitura. Herdado [de agreementFileProperties](../resources/agreementfileproperties.md).|
 
-<!--
-## Relationships
-| Relationship | Type        | Description |
+## <a name="relationships"></a>Relações
+| Relação | Tipo        | Descrição |
 |:-------------|:------------|:------------|
-|versions|[agreementFileVersion](agreementfileversion.md) collection|The version history for the localized agreement file.|
--->
+|versões|[Coleção agreementFileVersion](agreementfileversion.md)|Somente leitura. Versões personalizadas dos termos de contrato de uso no locatário do Azure AD.|
+
 
 ## <a name="json-representation"></a>Representação JSON
 

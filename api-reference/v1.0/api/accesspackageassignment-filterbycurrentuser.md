@@ -5,20 +5,20 @@ author: markwahl-msft
 ms.localizationpriority: medium
 ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: 74843c0b8ca2f47959e448f91a1c51df107cdeb7
-ms.sourcegitcommit: 65f4e128f96783c18d607a6dcffbc914291285d4
+ms.openlocfilehash: 0dd6eee1b8d5813e629eac036262add9271ade47
+ms.sourcegitcommit: fd609cb401ff862c3f5c21847bac9af967c6bf82
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/08/2021
-ms.locfileid: "61342871"
+ms.lasthandoff: 12/31/2021
+ms.locfileid: "61651214"
 ---
 # <a name="accesspackageassignment-filterbycurrentuser"></a>accessPackageAssignment: filterByCurrentUser
 Namespace: microsoft.graph
 
 
-No [Azure AD Entitlement Management](../resources/entitlementmanagement-root.md), recupere uma lista de objetos [accessPackageAssignment](../resources/accesspackageassignment.md) filtrados no usuário de entrada.
+No [Azure AD Entitlement Management](../resources/entitlementmanagement-overview.md), recupere uma lista de objetos [accessPackageAssignment](../resources/accesspackageassignment.md) filtrados no usuário de entrada.
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão|Permissões (da com menos para a com mais privilégios)|
@@ -42,7 +42,7 @@ A tabela a seguir mostra os parâmetros que podem ser usados com esta função.
 
 |Parâmetro|Tipo|Descrição|
 |:---|:---|:---|
-|on|accessPackageAssignmentFilterByCurrentUserOptions|A lista de opções de usuário que podem ser usadas para filtrar na lista de atribuições do pacote de acesso.|
+|on|accessPackageAssignmentFilterByCurrentUserOptions|A lista de opções de usuário que podem ser usadas para filtrar na lista de atribuições do pacote de acesso. Os valores possíveis são: `target` , `createdBy` . |
 
 - `target` é usado para obter os `accessPackageAssignment` objetos em que o usuário inscreva é o destino. A lista resultante inclui todas as atribuições, atuais e expiradas, para o chamador em todos os catálogos e pacotes de acesso.
 
@@ -91,7 +91,7 @@ GET https://graph.microsoft.com/v1.0/identityGovernance/entitlementManagement/as
 [!INCLUDE [sample-code](../includes/snippets/java/accesspackageassignment-filterbycurrentuser-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[Go](#tab/go)
+# <a name="go"></a>[Ir](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/accesspackageassignment-filterbycurrentuser-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 

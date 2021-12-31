@@ -5,12 +5,12 @@ ms.localizationpriority: high
 author: dkershaw10
 ms.prod: identity-and-access
 doc_type: conceptualPageType
-ms.openlocfilehash: d914426725f32799cda2ab884fe531d47db5b940
-ms.sourcegitcommit: 7ce66321abb6a2cdca8685d3ce0a004c376ae33b
+ms.openlocfilehash: fd58ab506d7fe0df4c1802e004c51a25de52bdbd
+ms.sourcegitcommit: fd609cb401ff862c3f5c21847bac9af967c6bf82
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/24/2021
-ms.locfileid: "59777510"
+ms.lasthandoff: 12/31/2021
+ms.locfileid: "61650514"
 ---
 # <a name="working-with-azure-active-directory-resources-in-microsoft-graph"></a>Trabalhar com os recursos do Azure Active Directory no Microsoft Graph
 
@@ -49,7 +49,7 @@ A tabela a seguir lista alguns casos comuns de uso de recursos do Azure AD.
 | Convidar usuários externos (convidado) para uma organização. | [invitation](../resources/invitation.md) | [O que é a colaboração B2B do Azure AD?](/azure/active-directory/active-directory-b2b-what-is-azure-ad-b2b) |
 | Gerenciar a identidade visual da experiência de entrada de uma organização. | [organizationalbranding](../resources/organizationalbranding.md) | [Adicionar identidade visual à página de entrada do Azure Active Directory da sua organização](/azure/active-directory/fundamentals/customize-branding)|
 | **Solicitações de consentimento** | | |
-| Gerenciar o fluxo de trabalho da solicitação de consentimento para usuários que tentam acessar aplicativos que requerem autorização do administrador.  | [API de solicitações de consentimento](../resources/consentrequests-root.md) |[Configure o fluxo de trabalho de consentimento do administrador](/azure/active-directory/manage-apps/configure-admin-consent-workflow) |
+| Gerenciar o fluxo de trabalho da solicitação de consentimento para usuários que tentam acessar aplicativos que requerem autorização do administrador.  | [API de solicitações de consentimento](../resources/consentrequests-overview.md) |[Configure o fluxo de trabalho de consentimento do administrador](/azure/active-directory/manage-apps/configure-admin-consent-workflow) |
 
 ## <a name="whats-new"></a>Novidades
 Saiba mais sobre os [novos recursos e atualizações mais recentes](/graph/whats-new-overview) para este conjunto de APIs.

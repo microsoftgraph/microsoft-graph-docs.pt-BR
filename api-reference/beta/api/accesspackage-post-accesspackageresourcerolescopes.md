@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: markwahl-msft
 ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: 517406d67ba4892b45d9205056a69f553c0cccc7
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: 5662ba7b6f1c524a0f6c12684e59ff98a60d9da6
+ms.sourcegitcommit: fd609cb401ff862c3f5c21847bac9af967c6bf82
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "60983734"
+ms.lasthandoff: 12/31/2021
+ms.locfileid: "61650878"
 ---
 # <a name="create-accesspackageresourcerolescope"></a>Criar accessPackageResourceRoleScope
 
@@ -59,7 +59,7 @@ Se tiver êxito, este método retornará um código de resposta de 200 séries e
 
 #### <a name="request"></a>Solicitação
 
-Este é um exemplo de solicitação.  Antes dessa solicitação, o recurso do pacote de acesso para o grupo já deve ter sido adicionado ao catálogo de pacotes de acesso `1d08498d-72a1-403f-8511-6b1f875746a0` que contém esse pacote de `b31fe1f1-3651-488f-bd9a-1711887fd4ca` acesso.  O recurso poderia ter sido adicionado ao catálogo criando uma solicitação de recurso [do pacote de acesso.](accesspackageresourcerequest-post.md)
+Este é um exemplo de solicitação.  Antes dessa solicitação, o recurso do pacote de acesso para o grupo já deve ter sido adicionado ao catálogo de pacotes de acesso `1d08498d-72a1-403f-8511-6b1f875746a0` que contém esse pacote de `b31fe1f1-3651-488f-bd9a-1711887fd4ca` acesso.  O recurso poderia ter sido adicionado ao catálogo criando uma solicitação de recurso [do pacote de acesso.](entitlementmanagement-post-accesspackageresourcerequests.md)
 
 # <a name="http"></a>[HTTP](#tab/http)
 <!-- {
@@ -99,7 +99,7 @@ Content-type: application/json
 [!INCLUDE [sample-code](../includes/snippets/java/create-accesspackageresourcerolescope-from-accesspackage-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[Go](#tab/go)
+# <a name="go"></a>[Ir](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/create-accesspackageresourcerolescope-from-accesspackage-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
@@ -182,7 +182,7 @@ Content-type: application/json
 [!INCLUDE [sample-code](../includes/snippets/java/create-accesspackageresourcerolescope-from-accesspackage2-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[Go](#tab/go)
+# <a name="go"></a>[Ir](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/create-accesspackageresourcerolescope-from-accesspackage2-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 

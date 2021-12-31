@@ -5,12 +5,12 @@ author: psignoret
 ms.localizationpriority: medium
 ms.prod: governance
 doc_type: resourcePageType
-ms.openlocfilehash: f4fd22b99e0d55a4caed31daed9d35e1ff345d6e
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 320993875b7a4e528881fc437c772006f58f775b
+ms.sourcegitcommit: fd609cb401ff862c3f5c21847bac9af967c6bf82
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59083954"
+ms.lasthandoff: 12/31/2021
+ms.locfileid: "61650885"
 ---
 # <a name="userconsentrequest-resource-type"></a>Tipo de recurso userConsentRequest
 
@@ -22,7 +22,7 @@ Um [userConsentRequest](../resources/userconsentrequest.md) é criado por um usu
 
 Método|Tipo de retorno|Descrição|
 |:---|:---|:---|
-|[Listar userConsentRequests](../api/userconsentrequest-list.md)|[Coleção userConsentRequest](../resources/userconsentrequest.md)|Recupere uma coleção de [objetos userConsentRequest](userconsentrequest.md) para [um appConsentRequest](appconsentrequest.md).|
+|[Listar userConsentRequests](../api/appconsentrequest-list-userconsentrequests.md)|[Coleção userConsentRequest](../resources/userconsentrequest.md)|Recupere uma coleção de [objetos userConsentRequest](userconsentrequest.md) para [um appConsentRequest](appconsentrequest.md).|
 |[Obter userConsentRequest](../api/userconsentrequest-get.md)|[userConsentRequest](../resources/userconsentrequest.md)|Leia as propriedades e as relações de um [objeto userConsentRequest.](../resources/userconsentrequest.md)|
 |[filterByCurrentUser](../api/userconsentrequest-filterByCurrentUser.md)|[Coleção userConsentRequest](../resources/userconsentrequest.md)|Leia as propriedades dos [objetos userConsentRequest](../resources/userconsentrequest.md) para [um appConsentRequest](appconsentrequest.md) para o qual o usuário atual é o revistor.|
 
@@ -35,7 +35,7 @@ Método|Tipo de retorno|Descrição|
 |createdBy|[identitySet](../resources/identityset.md)|O usuário que criou a solicitação.|
 |createdDateTime|DateTimeOffset|A data e a hora em que a solicitação foi criada. As informações de data e hora usam o formato ISO 8601 e estão sempre no horário UTC. Por exemplo, meia-noite UTC em 1 de janeiro de 2014 é `2014-01-01T00:00:00Z`. Suporta `$filter` ( `eq` somente) e `$orderby` .|
 |customData|String|Campo de texto livre para definir quaisquer dados personalizados para a solicitação de consentimento do usuário. Não usado.|
-|id|Cadeia de caracteres|Identificador da solicitação. |
+|id|String|Identificador da solicitação. |
 |motivo|String|A justificativa do usuário para exigir acesso ao aplicativo. Suporta `$filter` ( `eq` somente) e `$orderby` .  |
 |status|String|O status da solicitação de consentimento do aplicativo do usuário. Os valores possíveis são: `Initializing` `InProgress` , e `Completed` . Suporta `$filter` ( `eq` somente) e `$orderby` . |
 

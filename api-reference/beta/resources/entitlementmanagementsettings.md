@@ -1,16 +1,16 @@
 ---
 title: Tipo de recurso entitlementManagementSettings
 description: Representa as configurações de todo o locatário para o gerenciamento de direitos do Azure AD.
-localization_priority: Normal
+ms.localizationpriority: medium
 author: markwahl-msft
 ms.prod: governance
 doc_type: resourcePageType
-ms.openlocfilehash: d34a04d0f8eb3bdff16befd43870b75d473a8d0c
-ms.sourcegitcommit: 4888ac7504533344c4fc6828e2a06a002a1d72d3
+ms.openlocfilehash: d578781ed4b9b03d9a375a7cd9875df2f6fc4d0f
+ms.sourcegitcommit: fd609cb401ff862c3f5c21847bac9af967c6bf82
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/09/2021
-ms.locfileid: "53350975"
+ms.lasthandoff: 12/31/2021
+ms.locfileid: "61649757"
 ---
 # <a name="entitlementmanagementsettings-resource-type"></a>Tipo de recurso entitlementManagementSettings
 
@@ -18,7 +18,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Representa configurações que controlam o comportamento do gerenciamento de direitos do [Azure AD.](entitlementmanagement-root.md)  Esse recurso não inclui a configuração de criadores de catálogos; para exibir ou alterar a associação de função de criadores de catálogo, use a [API](unifiedroleassignment.md) de atribuições de função com o provedor RBAC de gerenciamento de direitos.
+Representa configurações que controlam o comportamento do gerenciamento de direitos do [Azure AD.](entitlementmanagement-overview.md)  Esse recurso não inclui a configuração de criadores de catálogos; para exibir ou alterar a associação de função de criadores de catálogo, use a [API](unifiedroleassignment.md) de atribuições de função com o provedor RBAC de gerenciamento de direitos.
 
 ## <a name="methods"></a>Métodos
 
@@ -31,7 +31,7 @@ Representa configurações que controlam o comportamento do gerenciamento de dir
 
 | Propriedade     | Tipo        | Descrição |
 |:-------------|:------------|:------------|
-|externalUserLifecycleAction|Cadeia de caracteres|Um dos `None` , `BlockSignIn` ou `BlockSignInAndDelete` . |
+|externalUserLifecycleAction|String|Um dos `None` , `BlockSignIn` ou `BlockSignInAndDelete` . |
 |daysUntilExternalUserDeletedAfterBlocked|Int64|Se **externalUserLifecycleAction** for , o número de dias após um usuário externo ser bloqueado de entrar antes de `BlockSignInAndDelete` sua conta ser excluída.|
 
 ## <a name="relationships"></a>Relações

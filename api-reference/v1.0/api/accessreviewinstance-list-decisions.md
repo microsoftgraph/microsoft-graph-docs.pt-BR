@@ -5,17 +5,17 @@ author: isabelleatmsft
 ms.localizationpriority: medium
 ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: 9e4235fbbffe6bad1c9ec121201fb2f73a0c04d0
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: a3c822d56d0e25209b66b531c47aa9b934d9a1d3
+ms.sourcegitcommit: fd609cb401ff862c3f5c21847bac9af967c6bf82
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "61009207"
+ms.lasthandoff: 12/31/2021
+ms.locfileid: "61651165"
 ---
 # <a name="list-decisions"></a>Listar decisões
 Namespace: microsoft.graph
 
-Obter os [recursos accessReviewInstanceDecisionItem](../resources/accessreviewinstancedecisionitem.md) da propriedade de navegação de decisões em um [determinado accessReviewInstance](../resources/accessreviewinstance.md).
+Obter os [recursos accessReviewInstanceDecisionItem](../resources/accessreviewinstancedecisionitem.md) da propriedade de navegação de decisões em um [determinado accessReviewInstance](../resources/accessreviewinstance.md). Uma lista de zero ou mais objetos accessReviewInstanceDecisionItem é retornada, incluindo todas as suas propriedades aninhadas.
 
 >[!NOTE]
 >O tamanho padrão da página para essa API é de 100 objetos accessReviewScheduleDefinition. Para melhorar a eficiência e evitar tempos-de-tempo devido a grandes conjuntos de resultados, aplique paginação usando os `$skip` parâmetros e `$top` de consulta. Para mais informações, consulte [Paginação de dados do Microsoft Graph em seu aplicativo](/graph/paging).
@@ -83,7 +83,7 @@ GET https://graph.microsoft.com/v1.0/identityGovernance/accessReviews/definition
 [!INCLUDE [sample-code](../includes/snippets/java/list-accessreviewinstancedecisionitem-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[Go](#tab/go)
+# <a name="go"></a>[Ir](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/list-accessreviewinstancedecisionitem-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 

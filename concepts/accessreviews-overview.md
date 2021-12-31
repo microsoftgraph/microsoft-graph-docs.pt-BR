@@ -5,16 +5,16 @@ author: FaithOmbongi
 ms.localizationpriority: medium
 ms.prod: governance
 doc_type: conceptualPageType
-ms.openlocfilehash: 53e7d075323297b6e152cc9458266d571f26477b
-ms.sourcegitcommit: 08e9b0bac39c1b1d2c8a79539d24aaa93364baf2
+ms.openlocfilehash: 128732f237a6a639152d9739e05b1cdbe389f00a
+ms.sourcegitcommit: fd609cb401ff862c3f5c21847bac9af967c6bf82
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/24/2021
-ms.locfileid: "59766954"
+ms.lasthandoff: 12/31/2021
+ms.locfileid: "61651404"
 ---
 # <a name="overview-of-the-access-reviews-api"></a>Visão geral da API de análises de acesso
 
-A [API de revisões](/graph/api/resources/accessreviewsv2-root) de acesso no Microsoft Graph permite que você revise programaticamente o acesso aos recursos do Azure AD. Essa revisão ajuda a garantir que as pessoas certas tenham o acesso certo aos recursos certos na organização.
+A [API de revisões](/graph/api/resources/accessreviewsv2-overview) de acesso no Microsoft Graph permite que você revise programaticamente o acesso aos recursos do Azure AD. Essa revisão ajuda a garantir que as pessoas certas tenham o acesso certo aos recursos certos na organização.
 
 Usando a API de críticas de acesso, você pode fazer as seguintes ações:
 + Crie, leia, atualize e exclua avaliações de acesso, configurações de revisão de acesso e agendamentos.

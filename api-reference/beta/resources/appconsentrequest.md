@@ -2,15 +2,15 @@
 title: Tipo de recurso appConsentRequest
 description: Uma solicitação que representa uma coleção de objetos userConsentRequest para um aplicativo específico.
 author: psignoret
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: governance
 doc_type: resourcePageType
-ms.openlocfilehash: d9c01fd4e752bca0fe9518553f52312e523da3a3
-ms.sourcegitcommit: ad1e4d758d4fe6025987c1c3528ce644edb27062
+ms.openlocfilehash: 35372f06ae704136d81333bd36134f26aa1c1827
+ms.sourcegitcommit: fd609cb401ff862c3f5c21847bac9af967c6bf82
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "51697898"
+ms.lasthandoff: 12/31/2021
+ms.locfileid: "61649758"
 ---
 # <a name="appconsentrequest-resource-type"></a>Tipo de recurso appConsentRequest
 
@@ -23,7 +23,7 @@ Uma coleção de [objetos userConsentRequest](../resources/userconsentrequest.md
 ## <a name="methods"></a>Métodos
 |Método|Tipo de retorno|Descrição|
 |:---|:---|:---|
-|[Listar appConsentRequests](../api/appconsentrequest-list.md)|[Coleção appConsentRequest](../resources/appconsentrequest.md)|Recupere uma coleção de [objetos appConsentRequest](appconsentrequest.md) e suas propriedades.|
+|[Listar appConsentRequests](../api/appconsentapprovalroute-list-appconsentrequests.md)|[Coleção appConsentRequest](../resources/appconsentrequest.md)|Recupere uma coleção de [objetos appConsentRequest](appconsentrequest.md) e suas propriedades.|
 |[Obter appConsentRequest](../api/appconsentrequest-get.md)|[appConsentRequest](../resources/appconsentrequest.md)|Leia as propriedades e as relações de um [objeto appConsentRequest.](../resources/appconsentrequest.md)|
 |[filterByCurrentUser](../api/appconsentrequest-filterByCurrentUser.md)|[appConsentRequest](../resources/appconsentrequest.md)|Leia as propriedades dos [objetos appConsentRequest](../resources/appconsentrequest.md) para os quais o usuário atual é o revistor e o status da solicitação de consentimento do usuário é `InProgress` .|
 

@@ -2,15 +2,15 @@
 title: Tipo de recurso userConsentRequest
 description: Uma solicitação criada por um usuário para usar um aplicativo que exige acesso a dados organizacionais que o usuário não tem autorização para conceder consentimento a si mesmo.
 author: psignoret
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: governance
 doc_type: resourcePageType
-ms.openlocfilehash: ea9520e34237a0e4b60e5e077a487182b18369e6
-ms.sourcegitcommit: ad1e4d758d4fe6025987c1c3528ce644edb27062
+ms.openlocfilehash: ba332a2ebdfa8735bd1e4cf750479aae203277f2
+ms.sourcegitcommit: fd609cb401ff862c3f5c21847bac9af967c6bf82
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "51698066"
+ms.lasthandoff: 12/31/2021
+ms.locfileid: "61649760"
 ---
 # <a name="userconsentrequest-resource-type"></a>Tipo de recurso userConsentRequest
 
@@ -23,7 +23,7 @@ Um [userConsentRequest](../resources/userconsentrequest.md) é criado por um usu
 ## <a name="methods"></a>Métodos
 |Método|Tipo de retorno|Descrição|
 |:---|:---|:---|
-|[Listar userConsentRequests](../api/userconsentrequest-list.md)|[Coleção userConsentRequest](../resources/userconsentrequest.md)|Recupere uma coleção de [objetos userConsentRequest](userconsentrequest.md) para [um appConsentRequest](appconsentrequest.md).|
+|[Listar userConsentRequests](../api/appconsentrequest-list-userconsentrequests.md)|[Coleção userConsentRequest](../resources/userconsentrequest.md)|Recupere uma coleção de [objetos userConsentRequest](userconsentrequest.md) para [um appConsentRequest](appconsentrequest.md).|
 |[Obter userConsentRequest](../api/userconsentrequest-get.md)|[userConsentRequest](../resources/userconsentrequest.md)|Leia as propriedades e as relações de um [objeto userConsentRequest.](../resources/userconsentrequest.md)|
 |[filterByCurrentUser](../api/userconsentrequest-filterByCurrentUser.md)|[Coleção userConsentRequest](../resources/userconsentrequest.md)|Leia as propriedades dos [objetos userConsentRequest](../resources/userconsentrequest.md) para [um appConsentRequest](appconsentrequest.md) para o qual o usuário atual é o revistor.|
 

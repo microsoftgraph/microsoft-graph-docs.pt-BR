@@ -163,7 +163,7 @@ items:
         href: /graph/toolkit/overview?context=graph/api/beta
       - name: Introdução
         items:
-          - name: Visão geral
+          - name: Visão Geral
             href: /graph/toolkit/get-started/overview?context=graph/api/beta
           - name: /graph/toolkit para React
             href: /graph/toolkit/get-started/mgt-react?context=graph/api/beta
@@ -260,11 +260,11 @@ items:
   - name: Referência beta
     expanded: true
     items:
-      - name: Visão geral
+      - name: Visão Geral
         href: overview.md
       - name: Usuários
         items:
-          - name: Visão geral
+          - name: Visão Geral
             href: resources/users.md
           - name: Usuário
             href: resources/user.md
@@ -561,7 +561,7 @@ items:
                 href: api/profile-get.md
               - name: Excluir perfil do usuário
                 href: api/profile-delete.md
-          - name: Trabalho em equipe
+          - name: Teamwork
             items:
               - name: Aplicativo instalado
                 href: resources/teamsappinstallation.md
@@ -603,7 +603,7 @@ items:
                 href: api/usersettings-update.md
       - name: Grupos
         items:
-          - name: Visão geral
+          - name: Visão Geral
             href: resources/groups-overview.md
           - name: Grupo
             href: resources/group.md
@@ -787,7 +787,7 @@ items:
                 href: api/driveitem-list-children.md
           - name: Propriedades estendidas
             items:
-              - name: Visão geral
+              - name: Visão Geral
                 href: resources/extended-properties-overview.md
               - name: Propriedades estendidas de valor único
                 items:
@@ -912,7 +912,7 @@ items:
                         href: api/application-delete-extensionproperty.md
               - name: Credenciais de identidade federada (visualização)
                 items:
-                  - name: Visão geral
+                  - name: Visão Geral
                     href: resources/federatedidentitycredentials-overview.md
                   - name: Credenciais de identidade federada
                     href: resources/federatedidentitycredential.md
@@ -1410,7 +1410,7 @@ items:
                 href: api/outlookcategory-delete.md
           - name: Propriedades estendidas
             items:
-              - name: Visão geral
+              - name: Visão Geral
                 href: resources/extended-properties-overview.md
               - name: Propriedades estendidas de valor único
                 items:
@@ -1869,7 +1869,7 @@ items:
       - name: Reserva de clientes
         displayName: 'Bookings, Microsoft Bookings'
         items:
-          - name: Visão geral
+          - name: Visão Geral
             href: resources/booking-api-overview.md
           - name: Negócio de reservas
             href: resources/bookingbusiness.md
@@ -10086,7 +10086,7 @@ items:
                 items:
                   - name: List
                     href: api/virtualendpoint-list-serviceplans.md
-          - name: Atualizações do dispositivo (visualização)
+          - name: Atualizações do dispositivo (prévia)
             displayName: Windows updates
             items:
               - name: Atualizações
@@ -10343,9 +10343,9 @@ items:
                     href: api/managedtenants-managedtenant-list-windowsprotectionstates.md
                   - name: Obter Windows de proteção
                     href: api/managedtenants-windowsprotectionstate-get.md
-          - name: Comunicações e Integridade do serviço
+          - name: Comunicações e integridade do serviço
             items:
-              - name: Visão geral
+              - name: Visão Geral
                 href: resources/service-communications-api-overview.md
               - name: Comunicado do serviço
                 href: resources/serviceannouncement.md
@@ -10749,7 +10749,7 @@ items:
       - name: Finanças (visualização)
         displayname: 'Dynamics, Dynamics 365 Business Central'
         items:
-          - name: Visão geral
+          - name: Visão Geral
             href: resources/dynamics-graph-reference.md
           - name: Conta
             href: resources/dynamics-account.md
@@ -11031,7 +11031,7 @@ items:
                     href: api/contract-list.md
               - name: Atributos de segurança personalizados (visualização)
                 items:
-                  - name: Visão geral
+                  - name: Visão Geral
                     href: resources/custom-security-attributes-overview.md
                   - name: Conjuntos de atributos
                     href: resources/attributeset.md
@@ -11438,7 +11438,7 @@ items:
             items:
               - name: Métodos de autenticação
                 items:
-                  - name: Visão geral
+                  - name: Visão Geral
                     href: resources/authenticationmethods-overview.md
                   - name: Listar todos os métodos
                     href: api/authentication-list-methods.md
@@ -11792,7 +11792,7 @@ items:
                         href: api/activitybasedtimeoutpolicy-delete.md
                   - name: Política de método de autenticação de aplicativo (visualização)
                     items:
-                      - name: Visão geral
+                      - name: Visão Geral
                         href: resources/applicationAuthenticationMethodPolicy.md
                       - name: Política de gerenciamento de aplicativos de locatário
                         items:
@@ -12240,36 +12240,34 @@ items:
           - name: Governança
             items:
               - name: Avaliações do acesso
-                href: resources/accessreviewsv2-root.md
+                href: resources/accessreviewsv2-overview.md
                 items:
                   - name: Definição do agendamento de revisão do Access
                     href: resources/accessreviewscheduledefinition.md
                     items:
                       - name: Listar
-                        href: api/accessreviewscheduledefinition-list.md
+                        href: api/accessreviewset-list-definitions.md
                       - name: Obter
                         href: api/accessreviewscheduledefinition-get.md
                       - name: Criar
-                        href: api/accessreviewscheduledefinition-post.md
+                        href: api/accessreviewset-post-definitions.md
                       - name: Excluir
                         href: api/accessreviewscheduledefinition-delete.md
                       - name: Atualizar
                         href: api/accessreviewscheduledefinition-update.md
                       - name: Filtrar pelo usuário atual
-                        href: api/accessreviewinstancedecisionitem-filterbycurrentuser.md
+                        href: api/accessreviewscheduledefinition-filterbycurrentuser.md
                   - name: Instância de revisão do Access
                     href: resources/accessreviewinstance.md
                     items:
                       - name: Listar
-                        href: api/accessreviewinstance-list.md
+                        href: api/accessreviewscheduledefinition-list-instances.md
                       - name: Obter
                         href: api/accessreviewinstance-get.md
                       - name: Atualizar
                         href: api/accessreviewinstance-update.md
                       - name: Filtrar pelo usuário atual
                         href: api/accessreviewinstance-filterbycurrentuser.md
-                      - name: Listar aprovação pendente (preterida)
-                        href: api/accessreviewinstance-pendingaccessreviewinstances.md
                       - name: Enviar lembrete
                         href: api/accessreviewinstance-sendreminder.md
                       - name: Parar
@@ -12284,19 +12282,21 @@ items:
                         href: api/accessreviewinstance-resetdecisions.md
                       - name: Listar decisões
                         href: api/accessreviewinstance-list-decisions.md
+                      - name: Listar aprovação pendente (preterida)
+                        href: api/accessreviewinstance-pendingaccessreviewinstances.md
                   - name: Item de decisão da instância de revisão do Access
                     href: resources/accessreviewinstancedecisionitem.md
                     items:
                       - name: Listar
-                        href: api/accessreviewinstancedecisionitem-list.md
+                        href: api/accessreviewinstance-list-decisions.md
                       - name: Obter
                         href: api/accessreviewinstancedecisionitem-get.md
                       - name: Filtrar pelo usuário atual
                         href: api/accessreviewinstancedecisionitem-filterbycurrentuser.md
-                      - name: Listar aprovação pendente (preterida)
-                        href: api/accessreviewinstancedecisionitem-listpendingapproval.md
                       - name: Atualizar
                         href: api/accessreviewinstancedecisionitem-update.md
+                      - name: Listar aprovação pendente (preterida)
+                        href: api/accessreviewinstancedecisionitem-listpendingapproval.md
                   - name: Política de revisão do Access
                     href: resources/accessreviewpolicy.md
                     items:
@@ -12310,9 +12310,9 @@ items:
                       - name: Obter
                         href: api/accessreviewhistorydefinition-get.md
                       - name: Listar
-                        href: api/accessreviewhistorydefinition-list.md
+                        href: api/accessreviewset-list-historydefinitions.md
                       - name: Criar
-                        href: api/accessreviewhistorydefinition-post.md
+                        href: api/accessreviewset-post-historydefinitions.md
                       - name: Gerar URI de download
                         href: api/accessreviewhistorydefinition-generatedownloaduri.md
               - name: Avaliações do Access (preterida)
@@ -12380,7 +12380,7 @@ items:
                       - name: Listar
                         href: api/programcontroltype-list.md
               - name: Solicitações de consentimento
-                href: resources/consentrequests-root.md
+                href: resources/consentrequests-overview.md
                 items:
                   - name: Política de solicitação de consentimento do administrador
                     href: resources/adminconsentrequestpolicy.md
@@ -12393,7 +12393,7 @@ items:
                     href: resources/appconsentrequest.md
                     items:
                       - name: Listar
-                        href: api/appconsentrequest-list.md
+                        href: api/appconsentapprovalroute-list-appconsentrequests.md
                       - name: Obter
                         href: api/appconsentrequest-get.md
                       - name: Filtrar pelo usuário atual
@@ -12402,21 +12402,21 @@ items:
                     href: resources/userconsentrequest.md
                     items:
                       - name: Listar
-                        href: api/userconsentrequest-list.md
+                        href: api/appconsentrequest-list-userconsentrequests.md
                       - name: Obter
                         href: api/userconsentrequest-get.md
                       - name: Filtrar pelo usuário atual
                         href: api/userconsentrequest-filterByCurrentUser.md
               - name: Gerenciamento de direitos
-                href: resources/entitlementmanagement-root.md
+                href: resources/entitlementmanagement-overview.md
                 items:
                   - name: Pacote do Access
                     href: resources/accesspackage.md
                     items:
                       - name: Listar
-                        href: api/accesspackage-list.md
+                        href: api/entitlementmanagement-list-accesspackages.md
                       - name: Criar
-                        href: api/accesspackage-post.md
+                        href: api/entitlementmanagement-post-accesspackages.md
                       - name: Obter
                         href: api/accesspackage-get.md
                       - name: Atualizar
@@ -12445,31 +12445,34 @@ items:
                     href: resources/accesspackageassignment.md
                     items:
                       - name: List
-                        href: api/accesspackageassignment-list.md
+                        href: api/entitlementmanagement-list-accesspackageassignments.md
                       - name: Filtrar pelo usuário atual
                         href: api/accesspackageassignment-filterbycurrentuser.md
                       - name: Reprocessar
                         href: api/accesspackageassignment-reprocess.md
                   - name: Aprovação de atribuição de pacote de acesso
-                    href: resources/approval.md
                     items:
-                      - name: Etapa de aprovação
-                        href: resources/approvalstep.md
-                      - name: Obter aprovação
+                      - name: Aprovação
+                        href: resources/approval.md
+                      - name: Obter
                         href: api/approval-get.md
-                      - name: Listar etapas de aprovação
-                        href: api/approval-list-steps.md
-                      - name: Obter etapa de aprovação
-                        href: api/approvalstep-get.md
-                      - name: Atualizar etapa de aprovação
-                        href: api/approvalstep-update.md
+                      - name: Etapa de aprovação
+                        items:
+                          - name: Aprovação
+                            href: resources/approvalstep.md
+                          - name: Listar
+                            href: api/approval-list-steps.md
+                          - name: Obter
+                            href: api/approvalstep-get.md
+                          - name: Atualizar
+                            href: api/approvalstep-update.md
                   - name: Política de atribuição de pacote de acesso
                     href: resources/accesspackageassignmentpolicy.md
                     items:
                       - name: Listar
-                        href: api/accesspackageassignmentpolicy-list.md
+                        href: api/entitlementmanagement-list-accesspackageassignmentpolicies.md
                       - name: Criar
-                        href: api/accesspackageassignmentpolicy-post.md
+                        href: api/entitlementmanagement-post-accesspackageassignmentpolicies.md
                       - name: Obter
                         href: api/accesspackageassignmentpolicy-get.md
                       - name: Atualizar
@@ -12480,9 +12483,9 @@ items:
                     href: resources/accesspackageassignmentrequest.md
                     items:
                       - name: Listar
-                        href: api/accesspackageassignmentrequest-list.md
+                        href: api/entitlementmanagement-list-accesspackageassignmentrequests.md
                       - name: Criar
-                        href: api/accesspackageassignmentrequest-post.md
+                        href: api/entitlementmanagement-post-accesspackageassignmentrequests
                       - name: Obter
                         href: api/accesspackageassignmentrequest-get.md
                       - name: Excluir
@@ -12497,16 +12500,16 @@ items:
                     href: resources/accesspackageassignmentresourcerole.md
                     items:
                       - name: Listar
-                        href: api/accesspackageassignmentresourcerole-list.md
+                        href: api/entitlementmanagement-list-accesspackageassignmentresourceroles.md
                       - name: Obter
                         href: api/accesspackageassignmentresourcerole-get.md
                   - name: Catálogo de pacotes do Access
                     href: resources/accesspackagecatalog.md
                     items:
                       - name: Listar
-                        href: api/accesspackagecatalog-list.md
+                        href: api/entitlementmanagement-list-accesspackagecatalogs.md
                       - name: Criar
-                        href: api/accesspackagecatalog-post.md
+                        href: api/entitlementmanagement-post-accesspackagecatalogs.md
                       - name: Obter
                         href: api/accesspackagecatalog-get.md
                       - name: Atualizar
@@ -12521,14 +12524,14 @@ items:
                     href: resources/accesspackageresourcerequest.md
                     items:
                       - name: Listar
-                        href: api/accesspackageresourcerequest-list.md
+                        href: api/entitlementmanagement-list-accesspackageresourcerequests.md
                       - name: Criar
-                        href: api/accesspackageresourcerequest-post.md
+                        href: api/entitlementmanagement-post-accesspackageresourcerequests.md
                   - name: Ambiente de recursos do pacote de acesso
                     href: resources/accesspackageresourceenvironment.md
                     items:
                       - name: Listar
-                        href: api/accesspackageresourceenvironment-list.md
+                        href: api/entitlementmanagement-list-accesspackageresourceenvironment.md
                       - name: Obter
                         href: api/accesspackageresourceenvironment-get.md
                   - name: Escopo da função de recurso do pacote de acesso
@@ -12542,9 +12545,9 @@ items:
                     href: resources/connectedorganization.md
                     items:
                       - name: Listar
-                        href: api/connectedorganization-list.md
+                        href: api/entitlementmanagement-list-connectedorganizations.md
                       - name: Criar
-                        href: api/connectedorganization-post.md
+                        href: api/entitlementmanagement-post-connectedorganizations.md
                       - name: Obter
                         href: api/connectedorganization-get.md
                       - name: Atualizar
@@ -12695,9 +12698,9 @@ items:
                   - name: Contrato
                     href: resources/agreement.md
                   - name: Criar
-                    href: api/agreement-post-agreements.md
+                    href: api/termsofusecontainer-post-agreements.md
                   - name: Listar
-                    href: api/agreement-list.md
+                    href: api/termsofusecontainer-list-agreements.md
                   - name: Obter
                     href: api/agreement-get.md
                   - name: Atualizar
@@ -12861,7 +12864,7 @@ items:
                 href: api/messagerule-delete.md
           - name: Propriedades estendidas
             items:
-              - name: Visão geral
+              - name: Visão Geral
                 href: resources/extended-properties-overview.md
               - name: Propriedades estendidas de valor único
                 items:
@@ -12981,9 +12984,9 @@ items:
             items:
               - name: Criar e enviar uma notificação (preterida)
                 href: api/user-post-notifications.md
-      - name: Inteligência de pessoas e no local de trabalho
+      - name: Inteligência de pessoas e local de trabalho
         items:
-          - name: Visão geral
+          - name: Visão Geral
             href: resources/social-overview.md
           - name: Pessoas
             items:
@@ -13450,7 +13453,7 @@ items:
         items:
           - name: Relatórios de atividade do Azure AD
             items:
-              - name: Visão geral
+              - name: Visão Geral
                 href: resources/azure-ad-auditlog-overview.md
               - name: Auditoria de diretório
                 href: resources/directoryaudit.md
@@ -13473,7 +13476,7 @@ items:
                     href: api/provisioningobjectsummary-list.md
           - name: Relatórios de identidade e acesso
             items:
-              - name: Visão geral
+              - name: Visão Geral
                 href: resources/report-identity-access.md
               - name: Atividade de aplicativo no AD FS
                 items:
@@ -13498,7 +13501,7 @@ items:
                         href: api/applicationsignindetailedsummary-get.md
               - name: Registro e utilização
                 items:
-                  - name: Visão geral
+                  - name: Visão Geral
                     href: resources/authenticationmethods-usage-insights-overview.md
                   - name: Contagem de Registro de Usuário credencial
                     href: resources/credentialuserregistrationcount.md
@@ -13532,7 +13535,7 @@ items:
                         href: api/authenticationmethodsroot-usersregisteredbymethod.md
           - name: Microsoft 365 de uso
             items:
-              - name: Visão geral
+              - name: Visão Geral
                 href: resources/report.md
               - name: Uso do dispositivo do Microsoft Teams
                 href: resources/microsoft-teams-device-usage-reports.md
@@ -13779,7 +13782,7 @@ items:
         items:
           - name: Consulta
             items:
-              - name: Visão geral
+              - name: Visão Geral
                 href: resources/search-api-overview.md
               - name: Tipo de solicitação de pesquisa
                 href: resources/searchrequest.md
@@ -13789,7 +13792,7 @@ items:
                 href: api/search-query.md
           - name: Index
             items:
-              - name: Visão geral
+              - name: Visão Geral
                 href: resources/indexing-api-overview.md
               - name: Conexão externa
                 items:
@@ -13926,7 +13929,7 @@ items:
                     href: api/informationprotectionlabel-extractlabel.md
               - name: Avaliação de ameaças
                 items:
-                  - name: Visão geral
+                  - name: Visão Geral
                     href: resources/threatassessment-api-overview.md
                   - name: Solicitação de avaliação de ameaças
                     href: resources/threatassessmentrequest.md
@@ -13982,7 +13985,7 @@ items:
       - name: Sites e listas
         displayName: 'SharePoint, OneDrive, OneDrive for Business, OneDrive business, OneDrive personal'
         items:
-          - name: Visão geral
+          - name: Visão Geral
             href: resources/sharepoint.md
           - name: Sites
             items:
@@ -14183,7 +14186,7 @@ items:
       - name: Tarefas e planos
         displayName: Planner
         items:
-          - name: Visão geral
+          - name: Visão Geral
             href: resources/planner-overview.md
           - name: Plano
             href: resources/plannerplan.md
@@ -14933,7 +14936,7 @@ items:
                 href: api/linkedresource_v2-delete.md
           - name: Tarefas a fazer(antigo)
             items:
-              - name: Visão geral
+              - name: Visão Geral
                 href: resources/todo-overview.md
               - name: Lista de tarefas
                 href: resources/todotasklist.md
@@ -15072,7 +15075,7 @@ items:
                     href: api/outlookcategory-delete.md
               - name: Propriedades estendidas
                 items:
-                  - name: Visão geral
+                  - name: Visão Geral
                     href: resources/extended-properties-overview.md
                   - name: Propriedades estendidas de valor único
                     items:

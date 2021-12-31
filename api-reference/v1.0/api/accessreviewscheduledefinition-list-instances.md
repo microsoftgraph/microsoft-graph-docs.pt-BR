@@ -1,21 +1,21 @@
 ---
 title: Listar instâncias
-description: Obter os recursos accessReviewInstance da propriedade de navegação de instâncias.
+description: Obter uma lista dos objetos accessReviewInstance e suas propriedades.
 author: isabelleatmsft
 ms.localizationpriority: medium
 ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: 91351dd96f6ea44821efded74cb8c76b1113a261
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: f5fab4ee2dff4ff9d7337474671a6d055e430848
+ms.sourcegitcommit: fd609cb401ff862c3f5c21847bac9af967c6bf82
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "60979735"
+ms.lasthandoff: 12/31/2021
+ms.locfileid: "61651285"
 ---
 # <a name="list-instances"></a>Instâncias de lista
 Namespace: microsoft.graph
 
-Obter os [recursos accessReviewInstance](../resources/accessreviewinstance.md) da propriedade de navegação de instâncias em [um accessReviewScheduleDefinition](../resources/accessreviewscheduledefinition.md).
+Obter uma lista dos [objetos accessReviewInstance](../resources/accessreviewinstance.md) e suas propriedades.
 
 >[!NOTE]
 >O tamanho padrão da página para essa API é de 100 objetos accessReviewScheduleDefinition. Para melhorar a eficiência e evitar tempos-de-tempo devido a grandes conjuntos de resultados, aplique paginação usando os `$skip` parâmetros e `$top` de consulta. Para mais informações, consulte [Paginação de dados do Microsoft Graph em seu aplicativo](/graph/paging).
@@ -65,7 +65,7 @@ Se tiver êxito, este método retornará um código de resposta e uma coleção 
 }
 -->
 ``` http
-GET https://graph.microsoft.com/v1.0/identityGovernance/accessReviews/definitions/2dca8959-b716-4b4c-a93d-a535c01eb6e0/instances
+GET https://graph.microsoft.com/v1.0/identityGovernance/accessReviews/definitions/8564a649-4f67-4e09-88e7-55def6530e88/instances
 ```
 # <a name="c"></a>[C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/list-accessreviewinstance-csharp-snippets.md)]
@@ -83,7 +83,7 @@ GET https://graph.microsoft.com/v1.0/identityGovernance/accessReviews/definition
 [!INCLUDE [sample-code](../includes/snippets/java/list-accessreviewinstance-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[Go](#tab/go)
+# <a name="go"></a>[Ir](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/list-accessreviewinstance-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
@@ -104,17 +104,17 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-    "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#identityGovernance/accessReviews/definitions('2dca8959-b716-4b4c-a93d-a535c01eb6e0')/instances",
-    "@odata.count": 1,
+    "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#identityGovernance/accessReviews/definitions('8564a649-4f67-4e09-88e7-55def6530e88')/instances",
+    "@odata.count": 2,
     "value": [
         {
-            "id": "8d035c9d-798d-47fa-beb4-f986a4b8126f",
-            "startDateTime": "2021-05-01T07:00:00Z",
-            "endDateTime": "2021-05-15T07:00:00Z",
-            "status": "InProgress",
+            "id": "7bc18cf4-3d70-4009-bc8e-a7c5adb30849",
+            "startDateTime": "2021-03-09T23:10:28.83Z",
+            "endDateTime": "2021-03-09T23:10:28.83Z",
+            "status": "Applied",
             "scope": {
                 "@odata.type": "#microsoft.graph.accessReviewQueryScope",
-                "query": "/v1.0/groups/0914d821-ca3b-45cc-98ee-54c00a04deef/transitiveMembers",
+                "query": "/v1.0/groups/f661fdd0-f0f7-42c0-8281-e89c6527ac63/members/microsoft.graph.user/?$count=true&$filter=(userType eq 'Guest')",
                 "queryType": "MicrosoftGraph",
                 "queryRoot": null
             }

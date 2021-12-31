@@ -1,16 +1,16 @@
 ---
 title: 'accessPackageAssignment: reprocessamento'
 description: Reprocessar objetos accesspackageassignment.
-localization_priority: Normal
+ms.localizationpriority: medium
 author: markwahl-msft
 ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: 4ba699950b7c4ab54eca1a75a1a85f1e63c9c774
-ms.sourcegitcommit: 0116750a01323bc9bedd192d4a780edbe7ce0fdc
+ms.openlocfilehash: 66356cd856906ba73b107c06cfd36cc52bf85acb
+ms.sourcegitcommit: fd609cb401ff862c3f5c21847bac9af967c6bf82
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58257357"
+ms.lasthandoff: 12/31/2021
+ms.locfileid: "61650864"
 ---
 # <a name="accesspackageassignment-reprocess"></a>accessPackageAssignment: reprocessamento
 
@@ -18,7 +18,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-No gerenciamento de direitos do [Azure AD,](../resources/entitlementmanagement-root.md)os chamadores podem reavaliar automaticamente e impor um objeto [accessPackageAssignment](../resources/accesspackageassignment.md) das atribuições de um usuário para um pacote de acesso específico. O **assignmentState** do pacote de acesso deve ser para `Delivered` o administrador reprocessar a atribuição do usuário. Somente os administradores com a função Gerenciador de Atribuição de Pacote do Access, ou superior, no gerenciamento de direitos do Azure AD podem executar essa ação.
+No gerenciamento de direitos do [Azure AD,](../resources/entitlementmanagement-overview.md)os chamadores podem reavaliar automaticamente e impor um objeto [accessPackageAssignment](../resources/accesspackageassignment.md) das atribuições de um usuário para um pacote de acesso específico. O **assignmentState** do pacote de acesso deve ser para `Delivered` o administrador reprocessar a atribuição do usuário. Somente os administradores com a função Gerenciador de Atribuição de Pacote do Access, ou superior, no gerenciamento de direitos do Azure AD podem executar essa ação.
 
 ## <a name="permissions"></a>Permissões
 
@@ -26,8 +26,8 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 | Tipo de permissão                        | Permissões (da com menos para a com mais privilégios) |
 |:---------------------------------------|:--------------------------------------------|
-| Delegada (conta corporativa ou de estudante) | EntitlementManagement.ReadWrite.All |
-| Delegada (conta pessoal da Microsoft) | Sem suporte. |
+| Delegado (conta corporativa ou de estudante) | EntitlementManagement.ReadWrite.All |
+| Delegado (conta pessoal da Microsoft) | Sem suporte. |
 | Aplicativo | EntitlementManagement.ReadWrite.All |
   
 ## <a name="http-request"></a>Solicitação HTTP

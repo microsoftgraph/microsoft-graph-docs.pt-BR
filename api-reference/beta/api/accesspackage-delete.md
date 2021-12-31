@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: markwahl-msft
 ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: 61db7e5baf0c639a3adae55c11ffe7f429263a06
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: b6d3a30ca36cd31bc8134ab31f31b93d57e10e9a
+ms.sourcegitcommit: fd609cb401ff862c3f5c21847bac9af967c6bf82
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "60983895"
+ms.lasthandoff: 12/31/2021
+ms.locfileid: "61650563"
 ---
 # <a name="delete-accesspackage"></a>Excluir accessPackage
 
@@ -20,7 +20,7 @@ Namespace: microsoft.graph
 
 [Exclua um objeto accessPackage.](../resources/accesspackage.md)
 
-Não é possível excluir um pacote de acesso se ele tiver **qualquer accessPackageAssignment**. Para excluir o pacote de acesso, [primeiro consulte](accesspackageassignment-list.md) se há alguma atribuição com um filtro para indicar o pacote de acesso específico, como: `$filter=accessPackage/id eq 'a914b616-e04e-476b-aa37-91038f0b165b'` . Para obter mais informações sobre como remover atribuições que ainda estão no estado entregue, consulte [Remover uma atribuição](accesspackageassignmentrequest-post.md#example-4-remove-an-assignment).
+Não é possível excluir um pacote de acesso se ele tiver **qualquer accessPackageAssignment**. Para excluir o pacote de acesso, [primeiro consulte](entitlementmanagement-list-accesspackageassignments.md) se há alguma atribuição com um filtro para indicar o pacote de acesso específico, como: `$filter=accessPackage/id eq 'a914b616-e04e-476b-aa37-91038f0b165b'` . Para obter mais informações sobre como remover atribuições que ainda estão no estado entregue, consulte [Remover uma atribuição](entitlementmanagement-post-accesspackageassignmentrequests.md#example-4-remove-an-assignment).
 
 
 ## <a name="permissions"></a>Permissões
@@ -86,7 +86,7 @@ DELETE https://graph.microsoft.com/beta/identityGovernance/entitlementManagement
 [!INCLUDE [sample-code](../includes/snippets/java/delete-accesspackage-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[Go](#tab/go)
+# <a name="go"></a>[Ir](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/delete-accesspackage-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 

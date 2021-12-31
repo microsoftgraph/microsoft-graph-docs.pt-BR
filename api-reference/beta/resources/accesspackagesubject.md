@@ -1,16 +1,16 @@
 ---
 title: Tipo de recurso accessPackageSubject
 description: No gerenciamento de direitos do Azure AD, um assunto de uma atribuição de pacote de acesso.
-localization_priority: Normal
+ms.localizationpriority: medium
 author: markwahl-msft
 ms.prod: governance
 doc_type: resourcePageType
-ms.openlocfilehash: 0adfca021ec463029a4b35c047ac85f8ce52921b
-ms.sourcegitcommit: 1940be9846055aa650c6c03982b74a961f1e316a
+ms.openlocfilehash: 5092494b1c5f496a1ee3abf76800dbb8a05f49ff
+ms.sourcegitcommit: fd609cb401ff862c3f5c21847bac9af967c6bf82
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/17/2021
-ms.locfileid: "53467054"
+ms.lasthandoff: 12/31/2021
+ms.locfileid: "61651179"
 ---
 # <a name="accesspackagesubject-resource-type"></a>Tipo de recurso accessPackageSubject
 
@@ -18,7 +18,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-No gerenciamento de direitos do [Azure AD,](entitlementmanagement-root.md)um assunto do pacote de acesso é um usuário, entidade de serviço ou outra entidade que pode ser configurada para solicitar ou ter um pacote de acesso atribuído.  Ele pode representar um solicitante de uma organização conectada que ainda não está no locatário.
+No gerenciamento de direitos do [Azure AD,](entitlementmanagement-overview.md)um assunto do pacote de acesso é um usuário, entidade de serviço ou outra entidade que pode ser configurada para solicitar ou ter um pacote de acesso atribuído.  Ele pode representar um solicitante de uma organização conectada que ainda não está no locatário.
 
 ## <a name="properties"></a>Propriedades
 
@@ -29,7 +29,7 @@ No gerenciamento de direitos do [Azure AD,](entitlementmanagement-root.md)um ass
 |id|String| Somente leitura.|
 |objectId|Cadeia de caracteres|O identificador de objeto do assunto. `null` se o assunto ainda não for um usuário no locatário.|
 |principalName|Cadeia de caracteres|O nome principal, se conhecido, do assunto.|
-|tipo|String|O tipo de recurso do assunto.|
+|type|String|O tipo de recurso do assunto.|
 |connectedOrganizationId|String|O identificador da organização conectada do assunto.|
 
 ## <a name="relationships"></a>Relações

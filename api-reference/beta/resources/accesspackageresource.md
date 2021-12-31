@@ -1,16 +1,16 @@
 ---
 title: Tipo de recurso accessPackageResource
 description: Um recurso de pacote de acesso é uma referência a um recurso associado a um catálogo para o qual as funções podem ser usadas em um ou mais pacotes de acesso.
-localization_priority: Normal
+ms.localizationpriority: medium
 author: markwahl-msft
 ms.prod: governance
 doc_type: resourcePageType
-ms.openlocfilehash: 14bbbe23fca77f8fef06a2cb546cd0b1fdcc1949
-ms.sourcegitcommit: 1940be9846055aa650c6c03982b74a961f1e316a
+ms.openlocfilehash: e7d82ac5ab0710b7b77a149a01b164a76d5f64bd
+ms.sourcegitcommit: fd609cb401ff862c3f5c21847bac9af967c6bf82
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/17/2021
-ms.locfileid: "53467110"
+ms.lasthandoff: 12/31/2021
+ms.locfileid: "61651334"
 ---
 # <a name="accesspackageresource-resource-type"></a>Tipo de recurso accessPackageResource
 
@@ -18,7 +18,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-No [Azure AD Entitlement Management](entitlementmanagement-root.md), um recurso de pacote de acesso é uma referência a um recurso associado a um catálogo de pacotes de acesso. As funções do recurso de pacote de acesso podem ser usadas em um ou mais pacotes de acesso.  Para solicitar a associação de um recurso a um catálogo de pacotes de acesso ou remover um recurso de um catálogo, crie [um accessPackageResourceRequest](accesspackageresourcerequest.md).
+No [Azure AD Entitlement Management](entitlementmanagement-overview.md), um recurso de pacote de acesso é uma referência a um recurso associado a um catálogo de pacotes de acesso. As funções do recurso de pacote de acesso podem ser usadas em um ou mais pacotes de acesso.  Para solicitar a associação de um recurso a um catálogo de pacotes de acesso ou remover um recurso de um catálogo, crie [um accessPackageResourceRequest](accesspackageresourcerequest.md).
 
 ## <a name="methods"></a>Métodos
 
@@ -32,8 +32,8 @@ No [Azure AD Entitlement Management](entitlementmanagement-root.md), um recurso 
 |:-------------|:------------|:------------|
 |accessPackageResourceEnvironment|[accessPackageResourceEnvironment](../resources/accesspackageresourceenvironment.md)|Contém as informações de ambiente do recurso. Isso pode ser definido usando `@odata.bind` a anotação ou a *origem do ambienteId*.|
 |addedBy|String|Somente leitura.|
-|addedOn|DateTimeOffset|O tipo Timestamp representa informações de data e hora usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite UTC em 1 de janeiro de 2014 é `2014-01-01T00:00:00Z`|
-|description|String|Uma descrição do recurso.|
+|addedOn|DateTimeOffset|O tipo de carimbo de data/hora representa informações de data e hora usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite UTC em 1º de janeiro de 2014 é `2014-01-01T00:00:00Z`|
+|descrição|String|Uma descrição do recurso.|
 |displayName|String|O nome de exibição do recurso, como nome do aplicativo, nome do grupo ou nome do site.|
 |id|String| Somente leitura.|
 |isPendingOnboarding|Booliano|True se o recurso ainda não estiver disponível para atribuição.|

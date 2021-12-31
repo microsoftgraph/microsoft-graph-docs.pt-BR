@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: markwahl-msft
 ms.prod: governance
 doc_type: resourcePageType
-ms.openlocfilehash: e9c459563fa776427dfebcc6c6063b9bda1da846
-ms.sourcegitcommit: 64d27a0e3dcccc9d857e62aace4153e5d98fb3d0
+ms.openlocfilehash: ccc04245cb3637290d75d842be88b55d84e832a3
+ms.sourcegitcommit: fd609cb401ff862c3f5c21847bac9af967c6bf82
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "60730386"
+ms.lasthandoff: 12/31/2021
+ms.locfileid: "61651516"
 ---
 # <a name="approval-resource-type"></a>tipo de recurso de aprovação
 
@@ -18,7 +18,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-No [Azure AD Entitlement Management](entitlementmanagement-root.md), o objeto de aprovação para decisões associadas ao `accessPackageAssignmentRequest` . Uma única solicitação de etapa pode ter uma etapa associada a ela na qual os aprovadores podem agir. Da mesma forma, uma solicitação em várias etapas pode ter várias etapas associadas a ela nas quais os aprovadores podem agir. No entanto, em aprovações em várias etapas, as etapas pendentes e concluídas anteriormente são mostradas.
+No [Azure AD Entitlement Management](entitlementmanagement-overview.md), o objeto de aprovação para decisões associadas ao `accessPackageAssignmentRequest` . Uma única solicitação de etapa pode ter uma etapa associada a ela na qual os aprovadores podem agir. Da mesma forma, uma solicitação em várias etapas pode ter várias etapas associadas a ela nas quais os aprovadores podem agir. No entanto, em aprovações em várias etapas, as etapas pendentes e concluídas anteriormente são mostradas.
 
 Em [userConsentRequests](../resources/userconsentrequest.md), o objeto de aprovação para decisões associadas a uma solicitação.
 

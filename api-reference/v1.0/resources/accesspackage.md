@@ -5,18 +5,18 @@ author: markwahl-msft
 ms.localizationpriority: medium
 ms.prod: governance
 doc_type: resourcePageType
-ms.openlocfilehash: 729f25ac6d084259541dc47db1c597b0c8b6b467
-ms.sourcegitcommit: e1dd9860906e0b415fd376d70df1f928d1f3d29e
+ms.openlocfilehash: 226715a4678b593e68a8364e326950c7af019212
+ms.sourcegitcommit: fd609cb401ff862c3f5c21847bac9af967c6bf82
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/01/2021
-ms.locfileid: "61242185"
+ms.lasthandoff: 12/31/2021
+ms.locfileid: "61651453"
 ---
 # <a name="accesspackage-resource-type"></a>Tipo de recurso accessPackage
 
 Namespace: microsoft.graph
 
-No [Azure AD Entitlement Management](entitlementmanagement-root.md), um pacote de acesso define as coleções de funções de recurso e as políticas de como um ou mais usuários podem obter acesso a esses recursos.  
+No [Azure AD Entitlement Management](entitlementmanagement-overview.md), um pacote de acesso define as coleções de funções de recurso e as políticas de como um ou mais usuários podem obter acesso a esses recursos.  
 
 Cada pacote de acesso é referenciado por um catálogo de pacotes de acesso único e tem links para os recursos desse catálogo por meio dos escopos de função específicos do recurso que definem o acesso que o pacote fornece.  Um pacote de acesso também se vincula às políticas de atribuição de pacote de acesso, cada uma das quais define quem pode solicitar ou ser atribuído a uma atribuição de pacote de acesso.
 
@@ -37,8 +37,8 @@ Cada pacote de acesso é referenciado por um catálogo de pacotes de acesso úni
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
 |createdDateTime|DateTimeOffset|O tipo Timestamp representa informações de data e hora usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite UTC em 1 de janeiro de 2014 é `2014-01-01T00:00:00Z`. Somente leitura.|
-|description|Cadeia de caracteres|A descrição do pacote de acesso.|
-|displayName|Cadeia de caracteres|O nome de exibição do pacote de acesso.|
+|description|String|A descrição do pacote de acesso.|
+|displayName|String|O nome de exibição do pacote de acesso. Suporta $filter ( `eq` , `contains` ).|
 |id|String|Somente leitura.|
 |IsHidden|Booleano|Se o pacote de acesso está oculto do solicitante.|
 |modifiedDateTime|DateTimeOffset|O tipo Timestamp representa informações de data e hora usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite UTC em 1 de janeiro de 2014 é `2014-01-01T00:00:00Z`. Somente leitura. |

@@ -5,12 +5,12 @@ author: markwahl-msft
 ms.prod: governance
 ms.localizationpriority: medium
 doc_type: apiPageType
-ms.openlocfilehash: 9e9d4a877bce930446f0d1f118787472063ce937
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: 4de9cf6f20eed98b3fe49a6fa5358d27cac4d532
+ms.sourcegitcommit: fd609cb401ff862c3f5c21847bac9af967c6bf82
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "61005721"
+ms.lasthandoff: 12/31/2021
+ms.locfileid: "61650640"
 ---
 # <a name="get-connectedorganization"></a>Obter connectedOrganization
 
@@ -42,7 +42,7 @@ GET /identityGovernance/entitlementManagement/connectedOrganizations/{id}
 
 ## <a name="optional-query-parameters"></a>Parâmetros de consulta opcionais
 
-Este método dá suporte a alguns parâmetros de consulta OData para ajudar a personalizar a resposta. Por exemplo, para recuperar apenas as fontes de identidade, adicione `$select=identitySources` . Para obter informações gerais, acesse [Parâmetros de consulta OData](/graph/query-parameters).
+Este método dá suporte ao `$select` parâmetro de consulta OData para ajudar a personalizar a resposta. Por exemplo, para recuperar apenas as fontes de identidade, adicione `$select=identitySources` . Para obter informações gerais, acesse [Parâmetros de consulta OData](/graph/query-parameters).
 
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
 
@@ -87,7 +87,7 @@ GET https://graph.microsoft.com/beta/identityGovernance/entitlementManagement/co
 [!INCLUDE [sample-code](../includes/snippets/java/get-connectedorganization-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[Go](#tab/go)
+# <a name="go"></a>[Ir](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/get-connectedorganization-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 

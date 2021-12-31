@@ -1,16 +1,16 @@
 ---
 title: Tipo de recurso accessPackageResourceScope
 description: No gerenciamento de direitos do Azure AD, um escopo de recurso do pacote de acesso é uma referência a um escopo dentro de um recurso.
-localization_priority: Normal
+ms.localizationpriority: medium
 author: markwahl-msft
 ms.prod: governance
 doc_type: resourcePageType
-ms.openlocfilehash: 6da0211cad6dcca225f4c9848216eda2deaf7b0a
-ms.sourcegitcommit: 1940be9846055aa650c6c03982b74a961f1e316a
+ms.openlocfilehash: f403f6b2d7c88d1e24c579578c2c1b872bbbecdf
+ms.sourcegitcommit: fd609cb401ff862c3f5c21847bac9af967c6bf82
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/17/2021
-ms.locfileid: "53467173"
+ms.lasthandoff: 12/31/2021
+ms.locfileid: "61651229"
 ---
 # <a name="accesspackageresourcescope-resource-type"></a>Tipo de recurso accessPackageResourceScope
 
@@ -18,7 +18,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-No gerenciamento de direitos do [Azure AD,](entitlementmanagement-root.md)um escopo de recurso do pacote de acesso é uma referência a um escopo dentro de um recurso, para esses recursos que têm vários escopos.
+No gerenciamento de direitos do [Azure AD,](entitlementmanagement-overview.md)um escopo de recurso do pacote de acesso é uma referência a um escopo dentro de um recurso, para esses recursos que têm vários escopos.
 
 Você pode determinar o escopo de recurso do pacote de acesso, para um recurso que já tenha funções adicionadas a um pacote de acesso, usando [accessPackageResourceRoleScopes](../api/accesspackage-list-accesspackageresourcerolescopes.md) de lista para retornar uma coleção de objetos [accessPackageResourceRoleScope.](accesspackageresourcerolescope.md)
 

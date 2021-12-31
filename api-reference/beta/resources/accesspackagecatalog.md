@@ -1,16 +1,16 @@
 ---
 title: Tipo de recurso accessPackageCatalog
 description: Um catálogo de pacotes de acesso é um contêiner para pacotes de acesso.
-localization_priority: Normal
+ms.localizationpriority: medium
 author: markwahl-msft
 ms.prod: governance
 doc_type: resourcePageType
-ms.openlocfilehash: 051657b5c8c7edb51a4c2c5c3a15bf3740052b86
-ms.sourcegitcommit: 4888ac7504533344c4fc6828e2a06a002a1d72d3
+ms.openlocfilehash: 5d6eb82a55e21469ea1f0169f0a589fd4f449d15
+ms.sourcegitcommit: fd609cb401ff862c3f5c21847bac9af967c6bf82
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/09/2021
-ms.locfileid: "53351094"
+ms.lasthandoff: 12/31/2021
+ms.locfileid: "61650507"
 ---
 # <a name="accesspackagecatalog-resource-type"></a>Tipo de recurso accessPackageCatalog
 
@@ -18,7 +18,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-No gerenciamento de direitos do [Azure AD,](entitlementmanagement-root.md)um catálogo de pacotes de acesso é um contêiner para zero ou mais pacotes de acesso. Um catálogo de pacotes de acesso também pode ter recursos vinculados usados nesses pacotes de acesso para fornecer acesso. Para exibir ou alterar a associação de funções com escopo de catálogo, use a [API](unifiedroleassignment.md) de atribuições de função com o provedor RBAC de gerenciamento de direitos.
+No gerenciamento de direitos do [Azure AD,](entitlementmanagement-overview.md)um catálogo de pacotes de acesso é um contêiner para zero ou mais pacotes de acesso. Um catálogo de pacotes de acesso também pode ter recursos vinculados usados nesses pacotes de acesso para fornecer acesso. Para exibir ou alterar a associação de funções com escopo de catálogo, use a [API](unifiedroleassignment.md) de atribuições de função com o provedor RBAC de gerenciamento de direitos.
 
 
 
@@ -26,10 +26,10 @@ No gerenciamento de direitos do [Azure AD,](entitlementmanagement-root.md)um cat
 
 | Método       | Tipo de retorno | Descrição |
 |:-------------|:------------|:------------|
-| [Listar accessPackageCatalogs](../api/accesspackagecatalog-list.md) | [Coleção accessPackageCatalog](accesspackagecatalog.md) | Recupere uma lista de objetos accesspackagecatalog. |
-| [Criar accessPackageCatalog](../api/accesspackagecatalog-post.md) | [accessPackageCatalog](accesspackagecatalog.md) | Crie um novo objeto accessPackageCatalog. |
+| [Listar accessPackageCatalogs](../api/entitlementmanagement-list-accesspackagecatalogs.md) | [Coleção accessPackageCatalog](accesspackagecatalog.md) | Recupere uma lista de objetos accesspackagecatalog. |
+| [Criar accessPackageCatalog](../api/entitlementmanagement-post-accesspackagecatalogs.md) | [accessPackageCatalog](accesspackagecatalog.md) | Crie um novo objeto accessPackageCatalog. |
 | [Obter accessPackageCatalog](../api/accesspackagecatalog-get.md) | [accessPackageCatalog](accesspackagecatalog.md) | Ler propriedades e relações de um objeto accessPackageCatalog. |
-| [Atualizar accessPackageCatalog](../api/accesspackagecatalog-update.md)|Nenhuma | Atualize as propriedades de um objeto accessPackageCatalog. |
+| [Atualizar accessPackageCatalog](../api/accesspackagecatalog-update.md)|Nenhum | Atualize as propriedades de um objeto accessPackageCatalog. |
 | [Excluir accessPackageCatalog](../api/accesspackagecatalog-delete.md) | | Exclua accessPackageCatalog. |
 | [Listar recursos do accessPackageCatalog](../api/accesspackagecatalog-list-accesspackageresources.md) | [Coleção accessPackageResource](accesspackageresource.md) | Recupere uma lista de objetos accessPackageResource em um catálogo. |
 | [Listar funções de recurso accessPackageCatalog](../api/accesspackagecatalog-list-accesspackageresourceroles.md) | [Coleção accessPackageResourceRole](accesspackageresourcerole.md) | Recupere uma lista de objetos accessPackageResourceRole para recursos em um catálogo. |
@@ -38,15 +38,15 @@ No gerenciamento de direitos do [Azure AD,](entitlementmanagement-root.md)um cat
 
 | Propriedade     | Tipo        | Descrição |
 |:-------------|:------------|:------------|
-|catalogStatus|Cadeia de caracteres|Tem o valor `Published` se os pacotes de acesso estão disponíveis para gerenciamento.|
-|catalogType|Cadeia de caracteres|Um dos `UserManaged` ou `ServiceDefault` . |
+|catalogStatus|String|Tem o valor `Published` se os pacotes de acesso estão disponíveis para gerenciamento.|
+|catalogType|String|Um dos `UserManaged` ou `ServiceDefault` . |
 |createdBy|Cadeia de caracteres|UPN do usuário que criou esse recurso. Somente leitura.|
 |createdDateTime|DateTimeOffset|O tipo Timestamp representa informações de data e hora usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite UTC em 1 de janeiro de 2014 é `2014-01-01T00:00:00Z`. Somente leitura.|
-|description|Cadeia de caracteres|A descrição do catálogo de pacotes de acesso.|
-|displayName|Cadeia de caracteres|O nome de exibição do catálogo de pacotes de acesso.|
+|description|String|A descrição do catálogo de pacotes de acesso.|
+|displayName|String|O nome de exibição do catálogo de pacotes de acesso. Suporta `$filter` (`eq`, `contains`).|
 |id|String| Somente leitura.|
 |isExternallyVisible|Booliano|Se os pacotes de acesso neste catálogo podem ser solicitados por usuários fora do locatário.|
-|modifiedBy|Cadeia de caracteres|O UPN do usuário que modificou esse recurso pela última vez. Somente leitura.|
+|modifiedBy|String|O UPN do usuário que modificou esse recurso pela última vez. Somente leitura.|
 |modifiedDateTime|DateTimeOffset|O tipo Timestamp representa informações de data e hora usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite UTC em 1 de janeiro de 2014 é `2014-01-01T00:00:00Z`. Somente leitura. |
 
 
@@ -54,7 +54,7 @@ No gerenciamento de direitos do [Azure AD,](entitlementmanagement-root.md)um cat
 
 | Relação | Tipo        | Descrição |
 |:-------------|:------------|:------------|
-|accessPackages|[Coleção accessPackage](accesspackage.md)| Os pacotes de acesso neste catálogo. Somente leitura. Anulável.|
+|accessPackages|[Coleção accessPackage](accesspackage.md)| Os pacotes de acesso neste catálogo. Somente leitura. Anulável. Suporta o `$expand`.|
 |accessPackageResources|[Coleção accessPackageResource](accesspackageresource.md)| Somente leitura. Anulável.|
 
 ## <a name="json-representation"></a>Representação JSON

@@ -5,19 +5,19 @@ author: markwahl-msft
 ms.localizationpriority: medium
 ms.prod: governance
 doc_type: resourcePageType
-ms.openlocfilehash: d22ab7f69213625468b1cb5857a47147fbdd7889
-ms.sourcegitcommit: e1dd9860906e0b415fd376d70df1f928d1f3d29e
+ms.openlocfilehash: d8c8a7bb8943f88657392f06ea78ec2ec502d436
+ms.sourcegitcommit: fd609cb401ff862c3f5c21847bac9af967c6bf82
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/01/2021
-ms.locfileid: "61242228"
+ms.lasthandoff: 12/31/2021
+ms.locfileid: "61651439"
 ---
 # <a name="accesspackagesubject-resource-type"></a>Tipo de recurso accessPackageSubject
 
 Namespace: microsoft.graph
 
 
-No gerenciamento de direitos do [Azure AD,](entitlementmanagement-root.md)um assunto do pacote de acesso é um usuário, entidade de serviço ou outra entidade que pode ser configurada para solicitar ou ter um pacote de acesso atribuído.  Ele pode representar um solicitante de uma organização conectada que ainda não está no locatário.
+No gerenciamento de direitos do [Azure AD,](entitlementmanagement-overview.md)um assunto do pacote de acesso é um usuário, entidade de serviço ou outra entidade que pode ser configurada para solicitar ou ter um pacote de acesso atribuído.  Ele pode representar um solicitante de uma organização conectada que ainda não está no locatário.
 
 ## <a name="methods"></a>Métodos
 
@@ -25,7 +25,7 @@ Nenhum.
 ## <a name="properties"></a>Propriedades
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|displayName|Cadeia de caracteres|O nome de exibição do assunto.|
+|displayName|String|O nome de exibição do assunto.|
 |email|Cadeia de caracteres|O endereço de email do assunto.|
 |id|String|Somente leitura.|
 |objectId|Cadeia de caracteres|O identificador de objeto do assunto. `null` se o assunto ainda não for um usuário no locatário.|

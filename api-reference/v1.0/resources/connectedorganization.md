@@ -5,19 +5,19 @@ author: markwahl-msft
 ms.localizationpriority: medium
 ms.prod: governance
 doc_type: resourcePageType
-ms.openlocfilehash: 42ec49fd292f0e7c59002a57f7f4ccaff47c292d
-ms.sourcegitcommit: e1dd9860906e0b415fd376d70df1f928d1f3d29e
+ms.openlocfilehash: 30f8ed82aba6a9e4ab22f90dca8f9c912ba2e947
+ms.sourcegitcommit: fd609cb401ff862c3f5c21847bac9af967c6bf82
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/01/2021
-ms.locfileid: "61242241"
+ms.lasthandoff: 12/31/2021
+ms.locfileid: "61651200"
 ---
 # <a name="connectedorganization-resource-type"></a>Tipo de recurso connectedOrganization
 
 Namespace: microsoft.graph
 
 
-No gerenciamento de direitos do [Azure AD,](entitlementmanagement-root.md)uma organização conectada é uma referência a um diretório ou domínio de outra organização cujos usuários podem solicitar acesso.
+No gerenciamento de direitos do [Azure AD,](entitlementmanagement-overview.md)uma organização conectada é uma referência a um diretório ou domínio de outra organização cujos usuários podem solicitar acesso.
 
 ## <a name="methods"></a>Métodos
 |Método|Tipo de retorno|Descrição|
@@ -38,8 +38,8 @@ No gerenciamento de direitos do [Azure AD,](entitlementmanagement-root.md)uma or
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
 |createdDateTime|DateTimeOffset|O tipo Timestamp representa informações de data e hora usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite UTC em 1 de janeiro de 2014 é `2014-01-01T00:00:00Z`. Somente leitura.|
-|description|Cadeia de caracteres|A descrição da organização conectada.|
-|displayName|Cadeia de caracteres|O nome de exibição da organização conectada.|
+|description|String|A descrição da organização conectada.|
+|displayName|String|O nome de exibição da organização conectada. Suporta `$filter` (`eq`).|
 |id|String|Somente leitura.|
 |identitySources|[Coleção identitySource](../resources/identitysource.md)|As fontes de identidade nesta organização conectada, uma de [azureActiveDirectoryTenant](azureactivedirectorytenant.md), [domainIdentitySource](domainidentitysource.md) ou [externalDomainFederation](externaldomainfederation.md). Anulável.|
 |modifiedDateTime|DateTimeOffset|*O tipo Timestamp representa informações de data e hora usando o formato ISO 8601 e está sempre em horário UTC. Por exemplo, meia-noite UTC em 1 de janeiro de 2014 é `2014-01-01T00:00:00Z`. Somente leitura.|

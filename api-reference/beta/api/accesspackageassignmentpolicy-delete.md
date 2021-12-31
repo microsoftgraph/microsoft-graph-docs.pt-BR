@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: markwahl-msft
 ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: 0407b37c21c5e2e8067c8f535f1d4427f6ead6c0
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: f463a4105de050a177f1737289f0b5a35c1c748e
+ms.sourcegitcommit: fd609cb401ff862c3f5c21847bac9af967c6bf82
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "60983544"
+ms.lasthandoff: 12/31/2021
+ms.locfileid: "61650857"
 ---
 # <a name="delete-accesspackageassignmentpolicy"></a>Excluir accessPackageAssignmentPolicy
 
@@ -18,7 +18,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-No gerenciamento de direitos do [Azure AD,](../resources/entitlementmanagement-root.md)exclua [um accessPackageAssignmentPolicy](../resources/accesspackageassignmentpolicy.md).
+No gerenciamento de direitos do [Azure AD,](../resources/entitlementmanagement-overview.md)exclua [um accessPackageAssignmentPolicy](../resources/accesspackageassignmentpolicy.md).
 
 ## <a name="permissions"></a>Permissões
 
@@ -83,7 +83,7 @@ DELETE https://graph.microsoft.com/beta/identityGovernance/entitlementManagement
 [!INCLUDE [sample-code](../includes/snippets/java/delete-accesspackageassignmentpolicy-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[Go](#tab/go)
+# <a name="go"></a>[Ir](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/delete-accesspackageassignmentpolicy-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 

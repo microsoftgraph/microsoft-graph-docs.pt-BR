@@ -2,15 +2,15 @@
 title: Tipo de recurso accessReviewQueryScope
 description: Define o que será revisado em uma revisão de acesso.
 author: isabelleatmsft
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: governance
 doc_type: resourcePageType
-ms.openlocfilehash: 07a13d12b821d055c8200da2fa5450958a8f53ee
-ms.sourcegitcommit: db3d2c6db8dd8f8cc14bdcebb2904d5e056a73e7
+ms.openlocfilehash: f1435e235baec8657f9f78c9bf842aa5ee6b61cf
+ms.sourcegitcommit: fd609cb401ff862c3f5c21847bac9af967c6bf82
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/20/2021
-ms.locfileid: "52579275"
+ms.lasthandoff: 12/31/2021
+ms.locfileid: "61650479"
 ---
 # <a name="accessreviewqueryscope-resource-type"></a>Tipo de recurso accessReviewQueryScope
 
@@ -19,7 +19,7 @@ Namespace: microsoft.graph
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 [!INCLUDE [accessreviews-disclaimer-v2](../../includes/accessreviews-disclaimer-v2.md)]
 
-Um objeto accessReviewQueryScope define o que será revisado em uma revisão [de acesso.](../resources/accessreviewsv2-root.md) Para analisar o escopo de uma revisão de acesso a usuários inativos, consulte [accessReviewInactiveUserQueryScope](../resources/accessreviewinactiveusersqueryscope.md). 
+Um objeto accessReviewQueryScope define o que será revisado em uma revisão [de acesso.](../resources/accessreviewsv2-overview.md) Para analisar o escopo de uma revisão de acesso a usuários inativos, consulte [accessReviewInactiveUserQueryScope](../resources/accessreviewinactiveusersqueryscope.md). 
 
 Herda de [accessReviewScope](../resources/accessreviewscope.md).
 

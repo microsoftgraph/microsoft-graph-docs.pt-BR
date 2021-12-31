@@ -1,16 +1,16 @@
 ---
 title: Tipo de recurso accessPackageAssignmentResourceRole
 description: Uma função de recurso de atribuição de pacote de acesso indica a função específica do recurso que um assunto foi atribuído por meio de uma atribuição de pacote de acesso.
-localization_priority: Normal
+ms.localizationpriority: medium
 author: markwahl-msft
 ms.prod: governance
 doc_type: resourcePageType
-ms.openlocfilehash: 4473c303a74cbf9e8e0c17d6c9060960590a3405
-ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
+ms.openlocfilehash: 686413addb62dd304d75a25fd475d35f29ffae90
+ms.sourcegitcommit: fd609cb401ff862c3f5c21847bac9af967c6bf82
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50433262"
+ms.lasthandoff: 12/31/2021
+ms.locfileid: "61651523"
 ---
 # <a name="accesspackageassignmentresourcerole-resource-type"></a>Tipo de recurso accessPackageAssignmentResourceRole
 
@@ -18,14 +18,14 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-No gerenciamento de direitos do [Azure AD,](entitlementmanagement-root.md)uma função de recurso de atribuição de pacote de acesso indica a função específica do recurso que um assunto foi atribuído por meio de uma atribuição de pacote de acesso.
+No gerenciamento de direitos do [Azure AD,](entitlementmanagement-overview.md)uma função de recurso de atribuição de pacote de acesso indica a função específica do recurso que um assunto foi atribuído por meio de uma atribuição de pacote de acesso.
 
-## <a name="methods"></a>Methods
+## <a name="methods"></a>Métodos
 
 | Método       | Tipo de retorno | Descrição |
 |:-------------|:------------|:------------|
 | [Obter accessPackageAssignmentResourceRole](../api/accesspackageassignmentresourcerole-get.md) | [accessPackageAssignmentResourceRole](accesspackageassignmentresourcerole.md)  | Recupere um objeto accessPackageAssignmentResourceRole. |
-| [Listar accessPackageAssignmentResourceRoles](../api/accesspackageassignmentresourcerole-list.md) | [Coleção accessPackageAssignmentResourceRole](accesspackageassignmentresourcerole.md) | Recupere uma lista de objetos accessPackageAssignmentResourceRole. |
+| [Listar accessPackageAssignmentResourceRoles](../api/entitlementmanagement-list-accesspackageassignmentresourceroles.md) | [Coleção accessPackageAssignmentResourceRole](accesspackageassignmentresourcerole.md) | Recupere uma lista de objetos accessPackageAssignmentResourceRole. |
 
 ## <a name="properties"></a>Propriedades
 
@@ -43,7 +43,7 @@ No gerenciamento de direitos do [Azure AD,](entitlementmanagement-root.md)uma fu
 |accessPackageAssignments|[Coleção accessPackageAssignment](accesspackageassignment.md)| As atribuições do pacote de acesso resultantes dessa atribuição de função. Somente leitura. Anulável.|
 |accessPackageResourceRole|[accessPackageResourceRole](accesspackageresourcerole.md)| Somente leitura. Anulável.|
 |accessPackageResourceScope|[accessPackageResourceScope](accesspackageresourcescope.md)| Somente leitura. Anulável.|
-|accessPackageSubject|[accessPackageSubject](accesspackagesubject.md)| Somente leitura. Anulável.|
+|accessPackageSubject|[accessPackageSubject](accesspackagesubject.md)| Somente leitura. Anulável. Dá `$filter` suporte a ( ) em `eq` **parâmetros objectId** e `$expand` query.|
 
 
 ## <a name="json-representation"></a>Representação JSON

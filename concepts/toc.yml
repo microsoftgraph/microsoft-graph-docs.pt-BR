@@ -257,8 +257,12 @@ items:
           - name: Transições de estado de atribuição e envio
             href: assignments-submissions-states-transition.md
       - name: Arquivos
-        href: onedrive-concept-overview.md
         displayName: 'OneDrive, OneDrive for Business, OneDrive business, OneDrive personal, SharePoint'
+        items:
+          - name: Visão geral
+            href: onedrive-concept-overview.md
+          - name: Endereçamento de itens da unidade
+            href: onedrive-addressing-driveitems.md
       - name: Finanças (visualização)
         href: dynamics-business-central-concept-overview.md
         displayName: 'Dynamics, Dynamics 365 Business Central'

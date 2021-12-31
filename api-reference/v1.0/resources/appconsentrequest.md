@@ -5,12 +5,12 @@ author: psignoret
 ms.localizationpriority: medium
 ms.prod: governance
 doc_type: resourcePageType
-ms.openlocfilehash: ef5eed15ad094e35d4db49ee4e34def6de5f2861
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 36323f32276b609eeda2430c5a71f4bd5855599d
+ms.sourcegitcommit: fd609cb401ff862c3f5c21847bac9af967c6bf82
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59094433"
+ms.lasthandoff: 12/31/2021
+ms.locfileid: "61651299"
 ---
 # <a name="appconsentrequest-resource-type"></a>Tipo de recurso appConsentRequest
 
@@ -22,7 +22,7 @@ Uma coleção de [objetos userConsentRequest](../resources/userconsentrequest.md
 
 |Método|Tipo de retorno|Descrição|
 |:---|:---|:---|
-|[Listar appConsentRequests](../api/appconsentrequest-list.md)|[Coleção appConsentRequest](../resources/appconsentrequest.md)|Recupere uma coleção de [objetos appConsentRequest](appconsentrequest.md) e suas propriedades.|
+|[Listar appConsentRequests](../api/appconsentapprovalroute-list-appconsentrequests.md)|[Coleção appConsentRequest](../resources/appconsentrequest.md)|Recupere uma coleção de [objetos appConsentRequest](appconsentrequest.md) e suas propriedades.|
 |[Obter appConsentRequest](../api/appconsentrequest-get.md)|[appConsentRequest](../resources/appconsentrequest.md)|Leia as propriedades e as relações de um [objeto appConsentRequest.](../resources/appconsentrequest.md)|
 |[filterByCurrentUser](../api/appconsentrequest-filterByCurrentUser.md)|[appConsentRequest](../resources/appconsentrequest.md)|Leia as propriedades dos [objetos appConsentRequest](../resources/appconsentrequest.md) para os quais o usuário atual é o revistor e o status da solicitação de consentimento do usuário é `InProgress` . |
 
@@ -30,7 +30,7 @@ Uma coleção de [objetos userConsentRequest](../resources/userconsentrequest.md
 
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|appDisplayName|Cadeia de caracteres|O nome de exibição do aplicativo para o qual o consentimento é solicitado. Obrigatório. Suporta `$filter` ( `eq` somente) e `$orderby` . |
+|appDisplayName|String|O nome de exibição do aplicativo para o qual o consentimento é solicitado. Obrigatório. Suporta `$filter` ( `eq` somente) e `$orderby` . |
 |appId|String|O identificador do aplicativo. Obrigatório. Suporta `$filter` ( `eq` somente) e `$orderby` . |
 |id|String|O identificador da solicitação de consentimento do aplicativo. Obrigatório.|
 |pendingScopes|[Coleção appConsentRequestScope](../resources/appconsentrequestscope.md)|Uma lista de escopos pendentes aguardando aprovação. Obrigatório.|

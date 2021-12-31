@@ -4,12 +4,12 @@ description: Descreve como migrar aplicativos de API Azure Active Directory (Azu
 author: dkershaw10
 ms.localizationpriority: medium
 ms.prod: applications
-ms.openlocfilehash: 15158d916166f26594c13c5dfc48942cef473c91
-ms.sourcegitcommit: 2456cf3c4117b88afefef139593796a2f919e7cc
+ms.openlocfilehash: 100fa23b9fdd7b82e201ed2fc6139f62ca93f74c
+ms.sourcegitcommit: fd609cb401ff862c3f5c21847bac9af967c6bf82
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/18/2021
-ms.locfileid: "61077604"
+ms.lasthandoff: 12/31/2021
+ms.locfileid: "61651278"
 ---
 # <a name="migrate-azure-ad-graph-apps-to-microsoft-graph"></a>Migrar aplicativos do Azure AD Graph microsoft Graph
 
@@ -35,7 +35,7 @@ Além disso, o Microsoft Graph oferece suporte a muitos novos conjuntos de dados
 - Recursos avançados de gerenciamento de licenças, incluindo [licenciamento baseado em grupo.](/graph/api/group-assignlicense)
 - Recursos de governança de identidade, como:
   - [PiM (gerenciamento de](/graph/api/resources/privilegedidentitymanagement-root?view=graph-rest-beta&preserve-view=true) identidade privilegiada) para elevar os usuários a funções privilegiadas somente quando necessário e por um período limitado.
-  - [Acesse análises de](/graph/api/resources/accessreviewsv2-root) acesso para análises de acesso única ou recorrentes para atestar os direitos de acesso do usuário.
+  - [Acesse análises de](/graph/api/resources/accessreviewsv2-overview) acesso para análises de acesso única ou recorrentes para atestar os direitos de acesso do usuário.
   - [Termos de uso para permitir que](/graph/api/resources/agreement) as organizações apresentem informações para requisitos legais ou de conformidade, como avisos de isenção de responsabilidade.
 - Recursos de segurança como:
   - [Eventos de risco de identidade](/graph/api/resources/riskdetection).

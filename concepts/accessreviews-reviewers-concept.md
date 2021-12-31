@@ -5,16 +5,16 @@ author: isabelleatmsft
 ms.localizationpriority: medium
 ms.prod: governance
 doc_type: conceptualPageType
-ms.openlocfilehash: 78a8ce78337c2c2e00c96cea7dbb59a6df0e7a11
-ms.sourcegitcommit: 08e9b0bac39c1b1d2c8a79539d24aaa93364baf2
+ms.openlocfilehash: 59acd960b0c3234262db05e05066bcef7ce98709
+ms.sourcegitcommit: fd609cb401ff862c3f5c21847bac9af967c6bf82
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/24/2021
-ms.locfileid: "59507750"
+ms.lasthandoff: 12/31/2021
+ms.locfileid: "61651292"
 ---
 # <a name="assign-reviewers-to-your-access-review-using-the-microsoft-graph-api"></a>Atribuir revisadores à sua revisão de acesso usando a API Graph Microsoft
 
-A [API](/graph/api/resources/accessreviewsv2-root) de revisões de acesso do Azure AD permite que você revise programaticamente o acesso que os usuários, entidades de serviço ou grupos têm aos recursos do Azure AD.
+A [API](/graph/api/resources/accessreviewsv2-overview) de revisões de acesso do Azure AD permite que você revise programaticamente o acesso que os usuários, entidades de serviço ou grupos têm aos recursos do Azure AD.
 
 Os revisores primários são configurados na propriedade **reviewers** do recurso [access Reviews accessReviewScheduleDefinition.](/graph/api/resources/accessreviewscheduledefinition)  Além disso, você pode especificar revisores de fallback usando **a propriedade fallbackReviewers.** Essas propriedades não são necessárias ao criar uma auto-revisão (onde os usuários revisam seu próprio acesso).
 

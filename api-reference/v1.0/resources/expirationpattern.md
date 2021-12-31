@@ -5,18 +5,18 @@ author: markwahl-msft
 ms.localizationpriority: medium
 ms.prod: governance
 doc_type: resourcePageType
-ms.openlocfilehash: 413fde6006f8a7fdf9aa5175adbb2d57c957c817
-ms.sourcegitcommit: e1dd9860906e0b415fd376d70df1f928d1f3d29e
+ms.openlocfilehash: 83ec2f3cafc25787a979103f4edea5e6436b57a9
+ms.sourcegitcommit: fd609cb401ff862c3f5c21847bac9af967c6bf82
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/01/2021
-ms.locfileid: "61242182"
+ms.lasthandoff: 12/31/2021
+ms.locfileid: "61650689"
 ---
 # <a name="expirationpattern-resource-type"></a>Tipo de recurso expirationPattern
 
 Namespace: microsoft.graph
 
-No gerenciamento de direitos do [Azure AD,](entitlementmanagement-root.md)uma solicitação de atribuição de pacote de acesso é criada por um usuário que deseja obter uma atribuição de pacote de acesso. Essa solicitação pode incluir um cronograma para quando o usuário gostaria de ter uma atribuição.  Uma atribuição de pacote de acesso que resulta de tal solicitação também tem um cronograma.  O campo de expiração [de um direitoManagementSchedule](entitlementmanagementschedule.md) indica quando a atribuição do pacote de acesso deve expirar.
+No gerenciamento de direitos do [Azure AD,](entitlementmanagement-overview.md)uma solicitação de atribuição de pacote de acesso é criada por um usuário que deseja obter uma atribuição de pacote de acesso. Essa solicitação pode incluir um cronograma para quando o usuário gostaria de ter uma atribuição.  Uma atribuição de pacote de acesso que resulta de tal solicitação também tem um cronograma.  O campo de expiração [de um direitoManagementSchedule](entitlementmanagementschedule.md) indica quando a atribuição do pacote de acesso deve expirar.
 
 ## <a name="properties"></a>Propriedades
 |Propriedade|Tipo|Descrição|

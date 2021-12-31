@@ -5,12 +5,12 @@ ms.localizationpriority: high
 doc_type: conceptualPageType
 ms.prod: identity-and-access
 author: dkershaw10
-ms.openlocfilehash: f5ae8eadb7b18d2091d06cd6a69d48afa78ccffa
-ms.sourcegitcommit: 6cea9bc17d3859e475a74c4a6f661f848e837e89
+ms.openlocfilehash: 79bb030b852e861fb3437f3ba90181703b0b735e
+ms.sourcegitcommit: fd609cb401ff862c3f5c21847bac9af967c6bf82
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/08/2021
-ms.locfileid: "60240940"
+ms.lasthandoff: 12/31/2021
+ms.locfileid: "61649761"
 ---
 # <a name="working-with-azure-active-directory-resources-in-microsoft-graph"></a>Trabalhar com os recursos do Azure Active Directory no Microsoft Graph
 
@@ -41,7 +41,7 @@ A tabela a seguir lista alguns casos comuns de uso de recursos do Azure AD.
 | Ative funções de diretório em um locatário do Azure AD e gerencie associações de usuário em funções de diretório. As funções de diretório também são conhecidas como funções de administrador. | [directoryRole](../resources/directoryrole.md) <br/>[directoryRoleTemplate](../resources/directoryroletemplate.md) |[Atribuindo funções de administrador no Azure Active Directory](/azure/active-directory/active-directory-assign-admin-roles)|
 | Gerencie unidades administrativas. As funções de diretório delegam autoridade em todos os locatários aos seus membros. Um administrador pode criar e gerenciar unidades administrativas para delegar a autoridade administrativa com escopo de maior granularidade para os usuários. | [administrativeUnit](../resources/administrativeunit.md) | [Gerenciamento de unidades administrativas no Azure AD](/azure/active-directory/active-directory-administrative-units-management) |
 | Aplique configurações de diretórios predefinidas a um locatário ou a instâncias de recurso individuais. Atualmente, apenas as configurações para grupos do Microsoft 365 são compatíveis. Aplica configurações de grupo predefinidas a um locatário ou a instâncias de recurso individuais. Configurações de grupo controlam comportamentos como listas de palavras bloqueadas para nome de exibições de grupo, se os usuários convidados podem ser proprietários de grupo e muito mais. | [directorySetting](../resources/directorysetting.md) <br/>[directorySettingTemplate](../resources/directorysettingtemplate.md)| [Cmdlets do Azure Active Directory para definição de configurações de grupo](/azure/active-directory/active-directory-accessmanagement-groups-settings-cmdlets)|
-| Aplique políticas do Azure AD para aplicativos, entidades de serviço, grupos ou toda a organização. As políticas para mapeamento de declarações, emissão de token, duração de token, descoberta de realm inicial e mais são suportados.  | [Políticas disponíveis](../resources/policy-overview.md) | N/A |
+| Aplique políticas do Azure AD para aplicativos, entidades de serviço, grupos ou toda a organização. As políticas para mapeamento de declarações, emissão de token, duração de token, descoberta de realm inicial e mais são suportados.  | [Políticas disponíveis](../resources/policy-overview.md) | Não disponível |
 | **Acesso seguro privilegiado ao Azure AD** | | |
 | Gerencie e monitore o acesso privilegiado com limite de tempo aos diretório e os recursos do Azure para administradores e profissionais de TI com PIM (Privileged Identity Management). | [APIs de Privileged Identity Management](../resources/privilegedidentitymanagement-root.md) | [O que é o Azure AD Privileged Identity Management?](/azure/active-directory/active-directory-privileged-identity-management-configure)|
 | Monitore os eventos de risco de identidade, como os usuários fazendo logon em dispositivos infectado por malware ou locais desconhecidos. | [API do serviço de proteção de identidade](../resources/identityprotection-root.md) | [Azure Active Directory Identity Protection](/azure/active-directory/active-directory-identityprotection)<br/><br/>[Eventos de risco do Azure Active Directory](/azure/active-directory/active-directory-reporting-risk-events) |
@@ -63,7 +63,7 @@ A tabela a seguir lista alguns casos comuns de uso de recursos do Azure AD.
 | **Avaliações do Access** | | |
 | Certifique-se de que as associações ao grupo e os direitos de acesso ao aplicativo estejam corretos com as análises de acesso. | [API de revisões de acesso](../resources/accessreviews-root.md) |[Revisões de acesso ao Azure AD](/azure/active-directory/active-directory-azure-ad-controls-access-reviews-overview) |
 | **Solicitações de consentimento** | | |
-| Gerenciar o fluxo de trabalho da solicitação de consentimento para usuários que tentam acessar aplicativos que requerem autorização do administrador.  | [API de solicitações de consentimento](../resources/consentrequests-root.md) |[Configure o fluxo de trabalho de consentimento do administrador](/azure/active-directory/manage-apps/configure-admin-consent-workflow) |
+| Gerenciar o fluxo de trabalho da solicitação de consentimento para usuários que tentam acessar aplicativos que requerem autorização do administrador.  | [API de solicitações de consentimento](../resources/consentrequests-overview.md) |[Configure o fluxo de trabalho de consentimento do administrador](/azure/active-directory/manage-apps/configure-admin-consent-workflow) |
 
 ## <a name="whats-new"></a>Novidades
 Saiba mais sobre os [novos recursos e atualizações mais recentes](/graph/whats-new-overview) para este conjunto de APIs.
