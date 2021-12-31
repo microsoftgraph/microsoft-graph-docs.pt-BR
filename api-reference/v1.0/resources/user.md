@@ -5,12 +5,12 @@ author: jpettere
 ms.localizationpriority: high
 ms.prod: users
 doc_type: resourcePageType
-ms.openlocfilehash: d48bf1b081b604cfdd53d1307ce931b7a06ca461
-ms.sourcegitcommit: 9759b647acfbed99d5675a6f512aaa33932a723f
+ms.openlocfilehash: d49cc39b02e3d83dc35bf036e3da9cae53ab1798
+ms.sourcegitcommit: fd609cb401ff862c3f5c21847bac9af967c6bf82
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/23/2021
-ms.locfileid: "61604018"
+ms.lasthandoff: 12/31/2021
+ms.locfileid: "61650892"
 ---
 # <a name="user-resource-type"></a>Tipo de recurso de usuário
 
@@ -181,7 +181,7 @@ Esse recurso permite:
 |mailNickname|String|O alias de email do usuário. Essa propriedade deve ser especificada quando um usuário é criado. O comprimento máximo é de 64 caracteres.<br><br>Retornado apenas em `$select`. Suporta `$filter` (`eq`, `ne`, `not`, `ge`, `le`, `in`, `startsWith`, e `eq` em `null` valores).|
 |mobilePhone|String|O número de celular principal do usuário. Somente leitura para usuários sincronizados do diretório local. O comprimento máximo é de 64 caracteres. <br><br>Retornado por padrão. Suporte `$filter` (`eq`, `ne`, `not`, `ge`, `le`, `in`, `startsWith`, e `eq` no `null` valores). |
 |mySite|String|A URL do site pessoal do usuário. <br><br>Retornado apenas em `$select`.|
-|officeLocation|String|A localização do escritório no local de trabalho do usuário. <br><br>Retornado por padrão. Suporte `$filter` (`eq`, `ne`, `not`, `ge`, `le`, `in`, `startsWith`, e `eq` no `null` valores).|
+|officeLocation|String|A localização do escritório no local de trabalho do usuário. <br><br>Retornado por padrão. Suporta `$filter` (`eq`, `ne`, `not`, `ge`, `le`, `in`, `startsWith`, e `eq` em `null` valores).|
 |onPremisesDistinguishedName|String| Contém `distinguished name` ou `DN` do Active Directory local. A propriedade somente é preenchida para os clientes que estejam sincronizando o seu diretório local com o Azure Active Directory pelo Azure AD Connect. Somente leitura.<br><br>Retornado apenas em `$select`. |
 |onPremisesDomainName|String| Contém o `domainFQDN` local, também chamado dnsDomainName, sincronizado do diretório local. A propriedade é preenchida apenas para clientes que estão sincronizando seu diretório local com o Azure Active Directory por meio do Azure AD Connect. Somente leitura. <br><br>Retornado apenas em `$select`.|
 |onPremisesExtensionAttributes|[onPremisesExtensionAttributes](onpremisesextensionattributes.md)|Contém extensionAttributes1-15 para o usuário. Os atributos de extensão individuais não são selecionáveis nem filtráveis. <br><li>Para um usuário **onPremisesSyncEnabled**, a fonte de autoridade para este conjunto de propriedades é o local e é somente leitura. </li><li>Para um usuário apenas na nuvem (onde **onPremisesSyncEnabled** é `false`), essas propriedades podem ser definidas durante a criação ou atualização de um objeto de usuário.  </li><li>Para um usuário somente na nuvem previamente sincronizado a partir do Active Directory local, essas propriedades são somente leitura no Microsoft Graph, mas podem ser totalmente gerenciadas através do Centro de Administração do Exchange ou do módulo Exchange Online V2 no PowerShell.</li><br> Esses atributos de extensão também são conhecidos como atributos personalizados do Exchange 1-15. |
@@ -212,7 +212,7 @@ Esse recurso permite:
 |streetAddress|String|O endereço do local de trabalho do usuário. O comprimento máximo é de 1024 caracteres. <br><br>Retornado apenas em `$select`. Suporta `$filter` (`eq`, `ne`, `not`, `ge`, `le`, `in`, `startsWith`, e `eq` em `null` valores).|
 |surname|String|O sobrenome do usuário (nome de família ou sobrenome). O comprimento máximo é de 64 caracteres. <br><br>Retornado por padrão. Suporte `$filter` (`eq`, `ne`, `not`, `ge`, `le`, `in`, `startsWith`, e `eq` no `null` valores).|
 |usageLocation|String|Um código de duas letras (padrão ISO 3166). Obrigatório para os usuários que receberão licenças devido à exigência legal de verificar a disponibilidade de serviços nos países/regiões. Por exemplo: `US`, `JP`, e `GB`. Não anulável.<br><br>Retornado apenas em `$select`. Suporta `$filter` (`eq`, `ne`, `not`, `ge`, `le`, `in`, `startsWith`, e `eq` em `null` valores).|
-|userPrincipalName|Cadeia de caracteres|O nome UPN do usuário. O nome UPN é um nome de logon para o usuário ao estilo da Internet com base na RFC 822 padrão da Internet. Por convenção, ele deve ser mapeado para o nome de email do usuário. O formato geral é alias@domain, em que o domínio deve estar presente na coleção de domínios verificados do locatário. Essa propriedade é obrigatória quando um usuário é criado. Os domínios verificados para o locatário podem ser acessados pela propriedade **verifiedDomains** da [organização](organization.md).<br>OBSERVAÇÃO: esta propriedade não pode conter caracteres de ênfase. <br><br>Retornado por padrão. Suporta `$filter` (`eq`, `ne`, `not`, `ge`, `le`, `in`, `startsWith`, `endsWith`) e `$orderBy`.
+|userPrincipalName|Cadeia de caracteres|O nome UPN do usuário. O nome UPN é um nome de logon para o usuário ao estilo da Internet com base na RFC 822 padrão da Internet. Por convenção, ele deve ser mapeado para o nome de email do usuário. O formato geral é alias@domain, em que o domínio deve estar presente na coleção de domínios verificados do locatário. Essa propriedade é obrigatória quando um usuário é criado. Os domínios verificados para o locatário podem ser acessados pela propriedade **verifiedDomains** da [organização](organization.md).<br>OBSERVAÇÃO: esta propriedade não pode conter caracteres de ênfase. Somente os seguintes caracteres são permitidos `A - Z`, `a - z`, `0 - 9`, ` ' . - _ ! # ^ ~`. Para obter a lista completa de caracteres permitidos, consulte as [políticas de nome de usuário](/azure/active-directory/authentication/concept-sspr-policy#userprincipalname-policies-that-apply-to-all-user-accounts). <br><br>Retornado por padrão. Suporta `$filter` (`eq`, `ne`, `not`, `ge`, `le`, `in`, `startsWith`, `endsWith`) e `$orderBy`.
 |userType|String|Um valor de string que pode ser usado para classificar tipos de usuário em seu diretório, como `Member` e `Guest`. <br><br>Retornado apenas em `$select`. Suporta `$filter` (`eq`, `ne`, `not`, `in` e `eq` em `null` valores). **OBSERVAÇÃO:** Para obter mais informações sobre as permissões para usuários membros e convidados, consulte [Quais são as permissões padrão de usuário em Azure Active Directory?](/azure/active-directory/fundamentals/users-default-permissions#member-and-guest-users)         |
 
 ### <a name="legal-age-group-property-definitions"></a>Definições de propriedade da faixa etária legal
