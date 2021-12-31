@@ -5,12 +5,12 @@ ms.localizationpriority: high
 ms.prod: sharepoint
 author: jewan-microsoft
 doc_type: conceptualPageType
-ms.openlocfilehash: bc3b425a25cb55bdbebbf354a296ac4e9235f047
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: cc7c4554ebc877d87590547f14d2cfd0d52a01bb
+ms.sourcegitcommit: 12f07c009c57db3cc9174b165b5ec30195c00996
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59062429"
+ms.lasthandoff: 12/30/2021
+ms.locfileid: "61647095"
 ---
 # <a name="working-with-files-in-microsoft-graph"></a>Trabalhando com arquivos no Microsoft Graph
 
@@ -83,6 +83,8 @@ Além de endereçar **DriveItem** dentro de **Drive** com base na ID exclusiva, 
 | `/me/drive/root:/path/to/folder:/children` | Listar os filhos de um **DriveItem** com base no caminho relativo para a raiz do OneDrive do usuário. |
 | `/me/drive/items/{item-id}:/path/to/folder:/children` | Listar os filhos de um **DriveItem** com base no caminho relativo para outro item. |
 
+Para obter mais informações, consulte o [endereçamento de ItensDaUnidade](/graph/concepts/onedrive-addressing-driveitems.md).
+
 ## <a name="drive-resource"></a>Recurso Drive
 
 O [Recurso drive](drive.md) é o objeto de nível superior no OneDrive de um usuário ou uma biblioteca de documentos do [Sharepoint][]. Quase todas as operações de arquivos começarão abordando um recurso drive específico.
@@ -114,4 +116,3 @@ Saiba mais sobre os [novos recursos e atualizações mais recentes](/graph/whats
 
 [SharePoint]: sharepoint.md
 [site]: site.md
-
