@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 49e5390181c61c9817fa79f90073a7b355758e72
-ms.sourcegitcommit: 65f4e128f96783c18d607a6dcffbc914291285d4
+ms.openlocfilehash: 0f82ebe1a22f42829049cc4e855e96249f6ec7ae
+ms.sourcegitcommit: 00ac72f7b1cdde4f71ff332c2e7953908ef9de52
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/08/2021
-ms.locfileid: "61348016"
+ms.lasthandoff: 01/04/2022
+ms.locfileid: "61711897"
 ---
 # <a name="userexperienceanalyticsscorehistory-resource-type"></a>Tipo de recurso userExperienceAnalyticsScoreHistory
 
@@ -22,7 +22,7 @@ Namespace: microsoft.graph
 
 Histórico de pontuação de inicialização do dispositivo de análise de experiência do usuário.
 
-## <a name="methods"></a>Methods
+## <a name="methods"></a>Métodos
 |Método|Tipo de retorno|Descrição|
 |:---|:---|:---|
 |[Listar userExperienceAnalyticsScoreHistories](../api/intune-devices-userexperienceanalyticsscorehistory-list.md)|[coleção userExperienceAnalyticsScoreHistory](../resources/intune-devices-userexperienceanalyticsscorehistory.md)|Listar propriedades e relações dos [objetos userExperienceAnalyticsScoreHistory.](../resources/intune-devices-userexperienceanalyticsscorehistory.md)|
@@ -42,10 +42,12 @@ Histórico de pontuação de inicialização do dispositivo de análise de exper
 |coreSigninScore|Int32|A pontuação de entrada principal do dispositivo de análise de experiência do usuário. A pontuação estará no intervalo de 0 a 100, 100 é a pontuação ideal.|
 |recommendedSoftwareScore|Int32|A pontuação de entrada principal do dispositivo de análise de experiência do usuário. A pontuação estará no intervalo de 0 a 100, 100 é a pontuação ideal.|
 |appHealthOverallScore|Int32|A pontuação geral de saúde geral do aplicativo de análise de experiência do usuário.|
+|workFromAnywhereScore|Int32|A análise de experiência do usuário funciona de qualquer lugar.|
 |batteryHealthScore|Int32|A pontuação de saúde da bateria de análise de experiência do usuário.|
 |startupTotalDevices|Int32|A contagem total de dispositivos do desempenho de inicialização da categoria de análise de experiência do usuário.|
 |recommendedSoftwareTotalDevices|Int32|A contagem total de dispositivos do software recomendado da categoria de análise de experiência do usuário.|
 |appHealthTotalDevices|Int32|A contagem total de dispositivos da saúde do aplicativo de categoria de análise de experiência do usuário.|
+|workFromAnywhereTotalDevices|Int32|A contagem total de dispositivos da categoria de análise de experiência do usuário funciona em qualquer lugar.|
 |batteryHealthTotalDevices|Int32|A contagem total de dispositivos da saúde da bateria da categoria de análise de experiência do usuário.|
 |restartScore|Int32|Reinicie a pontuação. A pontuação estará no intervalo de 0 a 100, 100 é a pontuação ideal, 0 indica reinicializações excessivas. Valores válidos de 0 a 9999999|
 
@@ -71,10 +73,12 @@ Veja a seguir uma representação JSON do recurso.
   "coreSigninScore": 1024,
   "recommendedSoftwareScore": 1024,
   "appHealthOverallScore": 1024,
+  "workFromAnywhereScore": 1024,
   "batteryHealthScore": 1024,
   "startupTotalDevices": 1024,
   "recommendedSoftwareTotalDevices": 1024,
   "appHealthTotalDevices": 1024,
+  "workFromAnywhereTotalDevices": 1024,
   "batteryHealthTotalDevices": 1024,
   "restartScore": 1024
 }

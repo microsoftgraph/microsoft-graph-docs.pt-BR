@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: d19f8f3b8efc3d60fb60bce18851a072a50d8895
-ms.sourcegitcommit: 65f4e128f96783c18d607a6dcffbc914291285d4
+ms.openlocfilehash: 12d6eda9d2372d07c2f54bc19583d169657822ba
+ms.sourcegitcommit: 00ac72f7b1cdde4f71ff332c2e7953908ef9de52
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/08/2021
-ms.locfileid: "61345349"
+ms.lasthandoff: 01/04/2022
+ms.locfileid: "61711582"
 ---
 # <a name="hardwareconfiguration-resource-type"></a>Tipo de recurso hardwareConfiguration
 
@@ -22,7 +22,7 @@ Namespace: microsoft.graph
 
 O Intune fornecerá ao cliente a capacidade de configurar configurações de hardware/bios nos dispositivos inscritos do Windows 10 Azure Active Directory ingressados.
 
-## <a name="methods"></a>Methods
+## <a name="methods"></a>Métodos
 |Método|Tipo de retorno|Descrição|
 |:---|:---|:---|
 |[Listar hardwareConfigurations](../api/intune-deviceconfig-hardwareconfiguration-list.md)|[Coleção hardwareConfiguration](../resources/intune-deviceconfig-hardwareconfiguration.md)|Listar propriedades e relações dos objetos [hardwareConfiguration.](../resources/intune-deviceconfig-hardwareconfiguration.md)|
@@ -30,6 +30,7 @@ O Intune fornecerá ao cliente a capacidade de configurar configurações de har
 |[Criar hardwareConfiguration](../api/intune-deviceconfig-hardwareconfiguration-create.md)|[hardwareConfiguration](../resources/intune-deviceconfig-hardwareconfiguration.md)|Crie um novo [objeto hardwareConfiguration.](../resources/intune-deviceconfig-hardwareconfiguration.md)|
 |[Excluir hardwareConfiguration](../api/intune-deviceconfig-hardwareconfiguration-delete.md)|Nenhum|Exclui um [hardwareConfiguration](../resources/intune-deviceconfig-hardwareconfiguration.md).|
 |[Atualizar hardwareConfiguration](../api/intune-deviceconfig-hardwareconfiguration-update.md)|[hardwareConfiguration](../resources/intune-deviceconfig-hardwareconfiguration.md)|Atualize as propriedades de um [objeto hardwareConfiguration.](../resources/intune-deviceconfig-hardwareconfiguration.md)|
+|[ação assignHardwareConfiguration](../api/intune-deviceconfig-hardwareconfiguration-assignhardwareconfiguration.md)|[Coleção hardwareConfigurationAssignment](../resources/intune-deviceconfig-hardwareconfigurationassignment.md)|Ainda não documentado|
 |[atribuir ação](../api/intune-deviceconfig-hardwareconfiguration-assign.md)|[Coleção hardwareConfigurationAssignment](../resources/intune-deviceconfig-hardwareconfigurationassignment.md)|Ainda não documentado|
 
 ## <a name="properties"></a>Propriedades
@@ -44,7 +45,7 @@ O Intune fornecerá ao cliente a capacidade de configurar configurações de har
 |fileName|String|Nome do arquivo da configuração de hardware|
 |configurationFileContent|Binária|Conteúdo do arquivo da configuração de hardware|
 |hardwareConfigurationFormat|[hardwareConfigurationFormat](../resources/intune-deviceconfig-hardwareconfigurationformat.md)|Tipo Oem da configuração de hardware. Os valores possíveis são: `dell`, `surface`, `surfaceDock`.|
-|roleScopeTagIds|Coleção String|Lista de IDs de marca de escopo para a configuração de hardware|
+|roleScopeTagIds|String collection|Lista de IDs de marca de escopo para a configuração de hardware|
 |perDevicePasswordDisabled|Booliano|Um valor que indica se por pasword devcive desabilitado|
 
 ## <a name="relationships"></a>Relações

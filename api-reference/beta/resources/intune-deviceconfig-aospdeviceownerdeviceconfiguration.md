@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 2d682af96e2d681c2b425972d33c985fde5bab9c
-ms.sourcegitcommit: 65f4e128f96783c18d607a6dcffbc914291285d4
+ms.openlocfilehash: 196c345fb1c5937e36f5c8859a798d872cb771ff
+ms.sourcegitcommit: 00ac72f7b1cdde4f71ff332c2e7953908ef9de52
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/08/2021
-ms.locfileid: "61339616"
+ms.lasthandoff: 01/04/2022
+ms.locfileid: "61711939"
 ---
 # <a name="aospdeviceownerdeviceconfiguration-resource-type"></a>tipo de recurso aospDeviceOwnerDeviceConfiguration
 
@@ -25,7 +25,7 @@ Este tópico fornece descrições dos métodos, propriedades e relações declar
 
 Herda de [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)
 
-## <a name="methods"></a>Methods
+## <a name="methods"></a>Métodos
 |Método|Tipo de retorno|Descrição|
 |:---|:---|:---|
 |[Listar aospDeviceOwnerDeviceConfigurations](../api/intune-deviceconfig-aospdeviceownerdeviceconfiguration-list.md)|[coleção aospDeviceOwnerDeviceConfiguration](../resources/intune-deviceconfig-aospdeviceownerdeviceconfiguration.md)|Listar propriedades e relações dos [objetos aospDeviceOwnerDeviceConfiguration.](../resources/intune-deviceconfig-aospdeviceownerdeviceconfiguration.md)|
@@ -45,15 +45,13 @@ Herda de [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md
 |deviceManagementApplicabilityRuleOsVersion|[deviceManagementApplicabilityRuleOsVersion](../resources/intune-deviceconfig-devicemanagementapplicabilityruleosversion.md)|A regra de aplicabilidade da versão do sistema operacional para esta Política. Herdada de [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
 |deviceManagementApplicabilityRuleDeviceMode|[deviceManagementApplicabilityRuleDeviceMode](../resources/intune-deviceconfig-devicemanagementapplicabilityruledevicemode.md)|A regra de aplicabilidade do modo de dispositivo para esta Política. Herdada de [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
 |createdDateTime|DateTimeOffset|DateTime em que o objeto foi criado. Herdada de [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
-|description|String|O administrador forneceu a descrição da Configuração do dispositivo. Herdada de [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
+|descrição|String|O administrador forneceu a descrição da Configuração do dispositivo. Herdada de [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
 |displayName|String|O administrador forneceu o nome da Configuração do dispositivo. Herdada de [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
 |versão|Int32|Versão da configuração do dispositivo. Herdada de [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
-|appsBlockInstallFromUnknownSources|Booliano|Indica se o usuário tem ou não permissão para habilitar a configuração de fontes desconhecidas. Quando definido como true, o usuário não tem permissão para habilitar configurações de fontes desconhecidas.|
+|appsBlockInstallFromUnknownSources|Boolean|Indica se o usuário tem ou não permissão para habilitar a configuração de fontes desconhecidas. Quando definido como true, o usuário não tem permissão para habilitar configurações de fontes desconhecidas.|
 |bluetoothBlocked|Boolean|Indica se o uso do bluetooth deve ou não ser desabilitado. Quando definido como true, o bluetooth não pode ser habilitado no dispositivo.|
-|bluetoothBlockConfiguration|Booliano|Indica se um usuário deve ou não bloquear a configuração do bluetooth.|
-|bluetoothBlockContactSharing|Boolean|Indica se um usuário deve ou não bloquear o compartilhamento de contatos via bluetooth.|
+|bluetoothBlockConfiguration|Boolean|Indica se um usuário deve ou não bloquear a configuração do bluetooth.|
 |cameraBlocked|Boolean|Indica se o uso da câmera deve ou não ser desabilitado.|
-|cellularBlockWiFiTethering|Boolean|Indica se o compartilhamento de Internet por Wi-Fi deve ou não ser bloqueado.|
 |factoryResetBlocked|Boolean|Indica se a opção de redefinição de fábrica nas configurações está desabilitada ou não.|
 |passwordMinimumLength|Int32|Indica o tamanho mínimo da senha necessária no dispositivo. Valores válidos de 4 a 16|
 |passwordMinutesOfInactivityBeforeScreenTimeout|Int32|Minutos de inatividade antes que a tela atinja o tempo limite.|
@@ -61,9 +59,8 @@ Herda de [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md
 |passwordSignInFailureCountBeforeFactoryReset|Int32|Indica o número de vezes que um usuário pode inserir uma senha incorreta antes que o dispositivo seja apagado. Valores válidos de 4 a 11|
 |screenCaptureBlocked|Boolean|Indica se o recurso deve ou não ser desabilitado para fazer capturas de tela.|
 |securityAllowDebuggingFeatures|Booliano|Indica se o usuário deve ou não bloquear a habilitação de recursos de depuração no dispositivo.|
-|storageBlockExternalMedia|Boolean|Indica se a mídia externa deve ou não ser bloqueado.|
+|storageBlockExternalMedia|Booliano|Indica se a mídia externa deve ou não ser bloqueado.|
 |storageBlockUsbFileTransfer|Booliano|Indica se a transferência de arquivo USB deve ou não ser bloqueado.|
-|backupBlocked|Boolean|Indica se o serviço de backup deve ou não ser bloqueado.|
 |wifiBlockEditConfigurations|Booliano|Indica se o usuário deve ou não bloquear a edição das configurações de conexão wifi.|
 
 ## <a name="relationships"></a>Relações
@@ -122,9 +119,7 @@ Veja a seguir uma representação JSON do recurso.
   "appsBlockInstallFromUnknownSources": true,
   "bluetoothBlocked": true,
   "bluetoothBlockConfiguration": true,
-  "bluetoothBlockContactSharing": true,
   "cameraBlocked": true,
-  "cellularBlockWiFiTethering": true,
   "factoryResetBlocked": true,
   "passwordMinimumLength": 1024,
   "passwordMinutesOfInactivityBeforeScreenTimeout": 1024,
@@ -134,7 +129,6 @@ Veja a seguir uma representação JSON do recurso.
   "securityAllowDebuggingFeatures": true,
   "storageBlockExternalMedia": true,
   "storageBlockUsbFileTransfer": true,
-  "backupBlocked": true,
   "wifiBlockEditConfigurations": true
 }
 ```

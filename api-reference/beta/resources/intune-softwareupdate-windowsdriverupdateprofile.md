@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 9f8e29d336a0b04af4e4e5f045c6541e592e6981
-ms.sourcegitcommit: 65f4e128f96783c18d607a6dcffbc914291285d4
+ms.openlocfilehash: ee9304666ac2bc71485e25f8de16decc5c4d10fc
+ms.sourcegitcommit: 00ac72f7b1cdde4f71ff332c2e7953908ef9de52
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/08/2021
-ms.locfileid: "61346973"
+ms.lasthandoff: 01/04/2022
+ms.locfileid: "61712093"
 ---
 # <a name="windowsdriverupdateprofile-resource-type"></a>Tipo de recurso windowsDriverUpdateProfile
 
@@ -22,7 +22,7 @@ Namespace: microsoft.graph
 
 Windows de atualização de driver
 
-## <a name="methods"></a>Methods
+## <a name="methods"></a>Métodos
 |Método|Tipo de retorno|Descrição|
 |:---|:---|:---|
 |[Listar windowsDriverUpdateProfiles](../api/intune-softwareupdate-windowsdriverupdateprofile-list.md)|[Coleção windowsDriverUpdateProfile](../resources/intune-softwareupdate-windowsdriverupdateprofile.md)|Listar propriedades e relações dos [objetos windowsDriverUpdateProfile.](../resources/intune-softwareupdate-windowsdriverupdateprofile.md)|
@@ -32,6 +32,7 @@ Windows de atualização de driver
 |[Atualizar windowsDriverUpdateProfile](../api/intune-softwareupdate-windowsdriverupdateprofile-update.md)|[windowsDriverUpdateProfile](../resources/intune-softwareupdate-windowsdriverupdateprofile.md)|Atualize as propriedades de um [objeto windowsDriverUpdateProfile.](../resources/intune-softwareupdate-windowsdriverupdateprofile.md)|
 |[atribuir ação](../api/intune-softwareupdate-windowsdriverupdateprofile-assign.md)|Nenhuma|Ainda não documentado|
 |[Ação executeAction](../api/intune-softwareupdate-windowsdriverupdateprofile-executeaction.md)|[bulkDriverActionResult](../resources/intune-softwareupdate-bulkdriveractionresult.md)|Ainda não documentado|
+|[Ação syncInventory](../api/intune-softwareupdate-windowsdriverupdateprofile-syncinventory.md)|Nenhum|Sincronizar o inventário de driver de um WindowsDriverUpdateProfile.|
 
 ## <a name="properties"></a>Propriedades
 |Propriedade|Tipo|Descrição|
@@ -45,7 +46,7 @@ Windows de atualização de driver
 |deploymentDeferralInDays|Int32|Configurações de adiamento de implantação em dias, aplicável somente quando ApprovalType é definido como aprovação automática.|
 |createdDateTime|DateTimeOffset|A data em que o perfil foi criado.|
 |lastModifiedDateTime|DateTimeOffset|A data em que o perfil foi modificado pela última vez.|
-|roleScopeTagIds|Coleção de cadeias de caracteres|Lista de Marcas de Escopo para essa entidade de Atualização de Driver.|
+|roleScopeTagIds|Coleção String|Lista de Marcas de Escopo para essa entidade de Atualização de Driver.|
 
 ## <a name="relationships"></a>Relações
 |Relação|Tipo|Descrição|

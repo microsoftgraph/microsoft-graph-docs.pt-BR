@@ -4,12 +4,12 @@ description: Lista a API Graph microsoft para pontos de extremidade do Intune (R
 author: dougeby
 ms.localizationpriority: medium
 ms.prod: intune
-ms.openlocfilehash: 2688a9499565d7c93f23cac331040d74987ec9cc
-ms.sourcegitcommit: 65f4e128f96783c18d607a6dcffbc914291285d4
+ms.openlocfilehash: f59329e22a916582d13ee4da01179f31440d7f2d
+ms.sourcegitcommit: 00ac72f7b1cdde4f71ff332c2e7953908ef9de52
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/08/2021
-ms.locfileid: "61342997"
+ms.lasthandoff: 01/04/2022
+ms.locfileid: "61712023"
 ---
 # <a name="device-configuration-in-microsoft-intune"></a>Configuração de dispositivo no Microsoft Intune
 
@@ -61,6 +61,7 @@ Os seguintes recursos do Graph estão disponíveis para gerenciar configuraçõe
 - [O proprietário do dispositivo Android reproduz o modo de loja](intune-deviceconfig-androiddeviceownerplaystoremode.md)
 - [Tipo de senha obrigatória do proprietário do dispositivo Android](intune-deviceconfig-androiddeviceownerrequiredpasswordtype.md)
 - [Perfil de certificado SCEP do proprietário do dispositivo Android](intune-deviceconfig-androiddeviceownerscepcertificateprofile.md)
+- [Período de congelamento da atualização do sistema do proprietário do dispositivo Android](intune-deviceconfig-androiddeviceownersystemupdatefreezeperiod.md)
 - [Tipo de instalação de atualização do sistema do proprietário do dispositivo Android](intune-deviceconfig-androiddeviceownersystemupdateinstalltype.md)
 - [Certificado raiz confiável do proprietário do dispositivo Android](intune-deviceconfig-androiddeviceownertrustedrootcertificate.md)
 - [Tipo de botão home virtual do proprietário do dispositivo Android](intune-deviceconfig-androiddeviceownervirtualhomebuttontype.md)

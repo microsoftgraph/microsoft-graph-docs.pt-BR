@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 5f5726fe45cbbe9376bae9169de203630520bb34
-ms.sourcegitcommit: 65f4e128f96783c18d607a6dcffbc914291285d4
+ms.openlocfilehash: a7c414be4fd3c2a484686c6298d0889efc7a0f73
+ms.sourcegitcommit: 00ac72f7b1cdde4f71ff332c2e7953908ef9de52
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/08/2021
-ms.locfileid: "61341170"
+ms.lasthandoff: 01/04/2022
+ms.locfileid: "61712072"
 ---
 # <a name="create-aospdeviceownerdeviceconfiguration"></a>Criar aospDeviceOwnerDeviceConfiguration
 
@@ -56,21 +56,19 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar o aospDe
 |:---|:---|:---|
 |id|String|Chave da entidade. Herdada de [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
 |lastModifiedDateTime|DateTimeOffset|DateTime da última modificação do objeto. Herdada de [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
-|roleScopeTagIds|Coleção String|Lista de marcas de escopo para esta instância entity. Herdada de [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
-|supportsScopeTags|Boolean|Indica se a Configuração de Dispositivo subjacente dá suporte ou não à atribuição de marcas de escopo. A atribuição à propriedade ScopeTags não é permitida quando esse valor é falso e as entidades não estarão visíveis para usuários com escopo. Isso ocorre para políticas herdadas criadas no Silverlight e podem ser resolvidas excluindo e recriando a política no Portal do Azure. Essa propriedade é somente leitura. Herdada de [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
+|roleScopeTagIds|String collection|Lista de marcas de escopo para esta instância entity. Herdada de [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
+|supportsScopeTags|Booliano|Indica se a Configuração de Dispositivo subjacente dá suporte ou não à atribuição de marcas de escopo. A atribuição à propriedade ScopeTags não é permitida quando esse valor é falso e as entidades não estarão visíveis para usuários com escopo. Isso ocorre para políticas herdadas criadas no Silverlight e podem ser resolvidas excluindo e recriando a política no Portal do Azure. Essa propriedade é somente leitura. Herdada de [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
 |deviceManagementApplicabilityRuleOsEdition|[deviceManagementApplicabilityRuleOsEdition](../resources/intune-deviceconfig-devicemanagementapplicabilityruleosedition.md)|A aplicabilidade da edição do sistema operacional para esta Política. Herdada de [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
 |deviceManagementApplicabilityRuleOsVersion|[deviceManagementApplicabilityRuleOsVersion](../resources/intune-deviceconfig-devicemanagementapplicabilityruleosversion.md)|A regra de aplicabilidade da versão do sistema operacional para esta Política. Herdada de [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
 |deviceManagementApplicabilityRuleDeviceMode|[deviceManagementApplicabilityRuleDeviceMode](../resources/intune-deviceconfig-devicemanagementapplicabilityruledevicemode.md)|A regra de aplicabilidade do modo de dispositivo para esta Política. Herdada de [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
 |createdDateTime|DateTimeOffset|DateTime em que o objeto foi criado. Herdada de [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
-|description|String|O administrador forneceu a descrição da Configuração do dispositivo. Herdada de [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
+|descrição|String|O administrador forneceu a descrição da Configuração do dispositivo. Herdada de [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
 |displayName|String|O administrador forneceu o nome da Configuração do dispositivo. Herdada de [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
 |versão|Int32|Versão da configuração do dispositivo. Herdada de [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
-|appsBlockInstallFromUnknownSources|Booliano|Indica se o usuário tem ou não permissão para habilitar a configuração de fontes desconhecidas. Quando definido como true, o usuário não tem permissão para habilitar configurações de fontes desconhecidas.|
+|appsBlockInstallFromUnknownSources|Boolean|Indica se o usuário tem ou não permissão para habilitar a configuração de fontes desconhecidas. Quando definido como true, o usuário não tem permissão para habilitar configurações de fontes desconhecidas.|
 |bluetoothBlocked|Boolean|Indica se o uso do bluetooth deve ou não ser desabilitado. Quando definido como true, o bluetooth não pode ser habilitado no dispositivo.|
 |bluetoothBlockConfiguration|Boolean|Indica se um usuário deve ou não bloquear a configuração do bluetooth.|
-|bluetoothBlockContactSharing|Booliano|Indica se um usuário deve ou não bloquear o compartilhamento de contatos via bluetooth.|
 |cameraBlocked|Boolean|Indica se o uso da câmera deve ou não ser desabilitado.|
-|cellularBlockWiFiTethering|Boolean|Indica se o compartilhamento de Internet por Wi-Fi deve ou não ser bloqueado.|
 |factoryResetBlocked|Boolean|Indica se a opção de redefinição de fábrica nas configurações está desabilitada ou não.|
 |passwordMinimumLength|Int32|Indica o tamanho mínimo da senha necessária no dispositivo. Valores válidos de 4 a 16|
 |passwordMinutesOfInactivityBeforeScreenTimeout|Int32|Minutos de inatividade antes que a tela atinja o tempo limite.|
@@ -80,7 +78,6 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar o aospDe
 |securityAllowDebuggingFeatures|Boolean|Indica se o usuário deve ou não bloquear a habilitação de recursos de depuração no dispositivo.|
 |storageBlockExternalMedia|Booliano|Indica se a mídia externa deve ou não ser bloqueado.|
 |storageBlockUsbFileTransfer|Booliano|Indica se a transferência de arquivo USB deve ou não ser bloqueado.|
-|backupBlocked|Booliano|Indica se o serviço de backup deve ou não ser bloqueado.|
 |wifiBlockEditConfigurations|Booliano|Indica se o usuário deve ou não bloquear a edição das configurações de conexão wifi.|
 
 
@@ -95,7 +92,7 @@ Este é um exemplo da solicitação.
 ``` http
 POST https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations
 Content-type: application/json
-Content-length: 1693
+Content-length: 1587
 
 {
   "@odata.type": "#microsoft.graph.aospDeviceOwnerDeviceConfiguration",
@@ -130,9 +127,7 @@ Content-length: 1693
   "appsBlockInstallFromUnknownSources": true,
   "bluetoothBlocked": true,
   "bluetoothBlockConfiguration": true,
-  "bluetoothBlockContactSharing": true,
   "cameraBlocked": true,
-  "cellularBlockWiFiTethering": true,
   "factoryResetBlocked": true,
   "passwordMinimumLength": 5,
   "passwordMinutesOfInactivityBeforeScreenTimeout": 14,
@@ -142,7 +137,6 @@ Content-length: 1693
   "securityAllowDebuggingFeatures": true,
   "storageBlockExternalMedia": true,
   "storageBlockUsbFileTransfer": true,
-  "backupBlocked": true,
   "wifiBlockEditConfigurations": true
 }
 ```
@@ -152,7 +146,7 @@ Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado a
 ``` http
 HTTP/1.1 201 Created
 Content-Type: application/json
-Content-Length: 1865
+Content-Length: 1759
 
 {
   "@odata.type": "#microsoft.graph.aospDeviceOwnerDeviceConfiguration",
@@ -190,9 +184,7 @@ Content-Length: 1865
   "appsBlockInstallFromUnknownSources": true,
   "bluetoothBlocked": true,
   "bluetoothBlockConfiguration": true,
-  "bluetoothBlockContactSharing": true,
   "cameraBlocked": true,
-  "cellularBlockWiFiTethering": true,
   "factoryResetBlocked": true,
   "passwordMinimumLength": 5,
   "passwordMinutesOfInactivityBeforeScreenTimeout": 14,
@@ -202,7 +194,6 @@ Content-Length: 1865
   "securityAllowDebuggingFeatures": true,
   "storageBlockExternalMedia": true,
   "storageBlockUsbFileTransfer": true,
-  "backupBlocked": true,
   "wifiBlockEditConfigurations": true
 }
 ```

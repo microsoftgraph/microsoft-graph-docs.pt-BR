@@ -2,21 +2,21 @@
 title: Criar deviceManagementScript
 description: Crie um novo objeto deviceManagementScript.
 author: rolyon
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 75a859b273b87a2b409377a7e8ca245b354b8134
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 0c457bc23e2bcd6aa1ea8b44731189f96e539dc2
+ms.sourcegitcommit: 00ac72f7b1cdde4f71ff332c2e7953908ef9de52
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59064746"
+ms.lasthandoff: 01/04/2022
+ms.locfileid: "61712030"
 ---
 # <a name="create-devicemanagementscript"></a>Criar deviceManagementScript
 
 Namespace: microsoft.graph
 
-> **Importante:** As APIs Graph Microsoft na versão /beta estão sujeitas a alterações; não há suporte para uso de produção.
+> **Importante:** As GRAPH da Microsoft na versão /beta estão sujeitas a alterações; o uso de produção não é suportado.
 
 > **Observação:** A API do Microsoft Graph para Intune requer uma [licença ativa do Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
 
@@ -59,16 +59,15 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar deviceMa
 |:---|:---|:---|
 |id|String|Identificador exclusivo do script de gerenciamento de dispositivos.|
 |displayName|String|Nome do script de gerenciamento de dispositivos.|
-|description|Cadeia de caracteres|Descrição opcional para o script de gerenciamento de dispositivos.|
-|runSchedule|[runSchedule](../resources/intune-devices-runschedule.md)|O intervalo para que o script seja executado. Se não estiver definido, o script será executado uma vez|
-|scriptContent|Binário|O conteúdo do script.|
+|descrição|String|Descrição opcional para o script de gerenciamento de dispositivos.|
+|scriptContent|Binária|O conteúdo do script.|
 |createdDateTime|DateTimeOffset|A data e a hora em que o script de gerenciamento de dispositivos foi criado. Essa propriedade é somente leitura.|
 |lastModifiedDateTime|DateTimeOffset|A data e a hora em que o script de gerenciamento de dispositivos foi modificado pela última vez. Essa propriedade é somente leitura.|
 |runAsAccount|[runAsAccountType](../resources/intune-shared-runasaccounttype.md)|Indica o tipo de contexto de execução. Os valores possíveis são: `system` e `user`.|
 |enforceSignatureCheck|Booliano|Indique se a assinatura de script precisa ser verificada.|
 |fileName|String|Nome do arquivo de script.|
-|roleScopeTagIds|Conjunto de cadeias de caracteres|Lista de IDs de marca de escopo para esta instância do PowerShellScript.|
-|runAs32Bit|Booliano|Um valor que indica se o script do PowerShell deve ser executado como 32 bits|
+|roleScopeTagIds|String collection|Lista de IDs de marca de escopo para esta instância do PowerShellScript.|
+|runAs32Bit|Boolean|Um valor que indica se o script do PowerShell deve ser executado como 32 bits|
 
 
 
@@ -111,6 +110,9 @@ Content-Length: 615
   "id": "59ea4525-4525-59ea-2545-ea592545ea59",
   "displayName": "Display Name value",
   "description": "Description value",
+  "runSchedule": {
+    "@odata.type": "microsoft.graph.runSchedule"
+  },
   "scriptContent": "c2NyaXB0Q29udGVudA==",
   "createdDateTime": "2017-01-01T00:02:43.5775965-08:00",
   "lastModifiedDateTime": "2017-01-01T00:00:35.1329464-08:00",

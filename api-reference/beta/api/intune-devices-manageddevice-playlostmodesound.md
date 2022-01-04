@@ -1,16 +1,16 @@
 ---
 title: Ação playLostModeSound
-description: Bloqueio remoto
+description: Reproduzir som de modo perdido
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: bd08fb249ac2a03c30cdc91b521bd7664735c450
-ms.sourcegitcommit: 65f4e128f96783c18d607a6dcffbc914291285d4
+ms.openlocfilehash: 4c204f01f6baf33329d6a7a5c33770d1bcce9dfd
+ms.sourcegitcommit: 00ac72f7b1cdde4f71ff332c2e7953908ef9de52
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/08/2021
-ms.locfileid: "61338278"
+ms.lasthandoff: 01/04/2022
+ms.locfileid: "61711603"
 ---
 # <a name="playlostmodesound-action"></a>Ação playLostModeSound
 
@@ -20,7 +20,7 @@ Namespace: microsoft.graph
 
 > **Observação:** A API do Microsoft Graph para Intune requer uma [licença ativa do Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
 
-Bloqueio remoto
+Reproduzir som de modo perdido
 
 ## <a name="prerequisites"></a>Pré-requisitos
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
@@ -53,7 +53,15 @@ POST /deviceManagement/deviceManagementScripts/{deviceManagementScriptId}/device
 |Aceitar|application/json|
 
 ## <a name="request-body"></a>Corpo da solicitação
-Não forneça um corpo de solicitação para esse método.
+No corpo da solicitação, forneça uma representação JSON dos parâmetros.
+
+A tabela a seguir mostra os parâmetros que podem ser usados com esta ação.
+
+|Propriedade|Tipo|Descrição|
+|:---|:---|:---|
+|durationInMinutes|String|Ainda não documentado|
+
+
 
 ## <a name="response"></a>Resposta
 Se tiver êxito, esta ação retornará um código de resposta `204 No Content`.
@@ -64,6 +72,13 @@ Se tiver êxito, esta ação retornará um código de resposta `204 No Content`.
 Este é um exemplo da solicitação.
 ``` http
 POST https://graph.microsoft.com/beta/deviceManagement/managedDevices/{managedDeviceId}/playLostModeSound
+
+Content-type: application/json
+Content-length: 56
+
+{
+  "durationInMinutes": "Duration In Minutes value"
+}
 ```
 
 ### <a name="response"></a>Resposta

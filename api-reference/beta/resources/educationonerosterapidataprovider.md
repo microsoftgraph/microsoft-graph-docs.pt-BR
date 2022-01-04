@@ -5,12 +5,12 @@ author: mmast-msft
 ms.localizationpriority: medium
 ms.prod: education
 doc_type: resourcePageType
-ms.openlocfilehash: 538f3740fafc3c0debe6dacd8b0a76c81c14a228
-ms.sourcegitcommit: c7ff992ef63e480d070421ba99b28ee129cb6acb
+ms.openlocfilehash: bf6149a35e5622b1cc06be84d2566d14508d6b0f
+ms.sourcegitcommit: 00ac72f7b1cdde4f71ff332c2e7953908ef9de52
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "60695703"
+ms.lasthandoff: 01/04/2022
+ms.locfileid: "61712051"
 ---
 # <a name="educationonerosterapidataprovider-resource"></a>recurso educationOneRosterApiDataProvider
 
@@ -28,8 +28,8 @@ Derivado de [educationSynchronizationDataProvider](educationsynchronizationdatap
 | :----------------- | :------------------------------------------- | :---------------------------------------------------------------------------------------------------- |
 | connectionUrl      | String                                       | A URL da conexão com a instância do OneRoster.                                                         |
 | providerName       | String                                       | O nome do Provedor de Serviços do OneRoster conforme definido pela [especificação do OneRoster][oneroster].           |
-| schoolsIds         | Coleção de cadeias de caracteres                            | A lista de [Escola/Organização a][orgs] `sourcedId` ser sincronizada.                                                   |
-| termIds            | Coleção de cadeias de caracteres                            | A lista de [sessões acadêmicas][terms] a sincronizar.                                                       |
+| schoolsIds         | String collection                            | A lista de [Escola/Organização a][orgs] `sourcedId` ser sincronizada.                                                   |
+| termIds            | Coleção String                            | A lista de [sessões acadêmicas][terms] a sincronizar.                                                       |
 | connectionSettings | [educationSynchronizationConnectionSettings] | As [configurações OAuth 1.0][onerosteroauth1] ou [OAuth 2.0][onerosteroauth2] para a instância do OneRoster. |
 | personalizações     | [educationSynchronizationCustomizations]    | Personalização opcional a ser aplicada ao perfil de sincronização.                                  |
 
@@ -63,7 +63,6 @@ Derivado de [educationSynchronizationDataProvider](educationsynchronizationdatap
   "schoolsIds": ["String"],
   "termIds": ["String"],
   "connectionSettings": {
-    "@odata.type": "microsoft.graph.educationSynchronizationConnectionSettings",
     "clientId": "String",
     "clientSecret&quot;: &quot;String"
   },

@@ -2,21 +2,21 @@
 title: Tipo de número macOSSoftwareUpdateBehavior
 description: Atualize as opções de comportamento para atualizações de software macOS.
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 5bfde3d153be43bbaa79f8ab059852ecce98be90
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: a0fa894d17e126287ccb1e1c63e36160cf2dcd3e
+ms.sourcegitcommit: 00ac72f7b1cdde4f71ff332c2e7953908ef9de52
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59030435"
+ms.lasthandoff: 01/04/2022
+ms.locfileid: "61712079"
 ---
 # <a name="macossoftwareupdatebehavior-enum-type"></a>Tipo de número macOSSoftwareUpdateBehavior
 
 Namespace: microsoft.graph
 
-> **Importante:** As APIs Graph Microsoft na versão /beta estão sujeitas a alterações; não há suporte para uso de produção.
+> **Importante:** As GRAPH da Microsoft na versão /beta estão sujeitas a alterações; o uso de produção não é suportado.
 
 > **Observação:** A API do Microsoft Graph para Intune requer uma [licença ativa do Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
 
@@ -27,6 +27,11 @@ Atualize as opções de comportamento para atualizações de software macOS.
 |:---|:---|:---|
 |notConfigured|0|Não configurado.|
 |Padrão.|1|Baixe e/ou instale a atualização de software, dependendo do estado atual do dispositivo.|
+|downloadOnly|2|Baixe a atualização de software sem instalá-la.|
+|installASAP|3|Instale uma atualização de software já baixada.|
+|notifyOnly|4|Baixe a atualização de software e notifique o usuário por meio da App Store.|
+|installLater|5|Baixe a atualização de software e instale-a posteriormente.|
+
 
 
 

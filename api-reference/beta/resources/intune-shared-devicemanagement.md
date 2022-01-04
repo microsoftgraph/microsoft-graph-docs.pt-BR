@@ -1,22 +1,22 @@
 ---
 title: Tipo de recurso deviceManagement
 description: 'O recurso deviceManagement representa um contêiner cujo conteúdo varia de acordo com o fluxo de trabalho, incluindo:  '
-ms.localizationpriority: medium
+localization_priority: Normal
 author: rolyon
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: c1562f91f3728830f4d220063651d03823c052eb
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: a06604a540ebe054d4a9a1c964b568c8210a1f29
+ms.sourcegitcommit: 00ac72f7b1cdde4f71ff332c2e7953908ef9de52
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59039130"
+ms.lasthandoff: 01/04/2022
+ms.locfileid: "61711617"
 ---
 # <a name="devicemanagement-resource-type"></a>Tipo de recurso deviceManagement
 
 Namespace: microsoft.graph
 
-> **Importante:** As APIs Graph Microsoft na versão /beta estão sujeitas a alterações; não há suporte para uso de produção.
+> **Importante:** As GRAPH da Microsoft na versão /beta estão sujeitas a alterações; o uso de produção não é suportado.
 
 > **Observação:** A API do Microsoft Graph para Intune requer uma [licença ativa do Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
 
@@ -28,7 +28,7 @@ O recurso deviceManagement representa um contêiner cujo conteúdo varia de acor
 - Perfis de registro corporativo
 - Configurações de dispositivo
 - Configurações de intenção de dispositivo
-- Gerenciamento de dispositivo
+- Gerenciamento de dispositivos
 - SIM Eletrônico (ESIM)
 - Esgrima
 - Análise de Política de Grupo
@@ -42,7 +42,7 @@ O recurso deviceManagement representa um contêiner cujo conteúdo varia de acor
 - Relatórios
 - Parceiros de gerenciamento de expansão de telecomunicações
 - Solução de problemas de eventos
-- Windows Resumos da Proteção de Informações
+- Windows resumos da Proteção de Informações
 
 ## <a name="methods"></a>Métodos
 |Método|Tipo de retorno|Descrição|
@@ -64,10 +64,10 @@ O recurso deviceManagement representa um contêiner cujo conteúdo varia de acor
 ## <a name="properties"></a>Propriedades
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|id|Cadeia de caracteres|Identificador exclusivo associado ao dispositivo.|
+|id|String|Identificador exclusivo associado ao dispositivo.|
 |**Configuração do dispositivo**|
 |intuneAccountId|Guid|ID da conta do Intune para determinado locatário|
-|legacyPcManangementEnabled|Boleano|A propriedade para habilitar o gerenciamento de computador herdado não-MDM gerenciado para essa conta. Essa propriedade é somente leitura.|
+|legacyPcManangementEnabled|Booliano|A propriedade para habilitar o gerenciamento de computador herdado não-MDM gerenciado para essa conta. Essa propriedade é somente leitura.|
 |maximumDepTokens|Int32|Número máximo de tokens DEP permitidos por locatário.|
 |settings|[deviceManagementSettings](../resources/intune-deviceconfig-devicemanagementsettings.md)|Configurações de nível da conta.|
 |**Gerenciamento de dispositivo**|
@@ -138,15 +138,16 @@ O recurso deviceManagement representa um contêiner cujo conteúdo varia de acor
 |remoteActionAudits|[Coleção remoteActionAudit](../resources/intune-devices-remoteactionaudit.md)|A lista de auditorias de ação remota do dispositivo com o locatário.|
 |windowsMalwareInformation|[Coleção windowsMalwareInformation](../resources/intune-devices-windowsmalwareinformation.md)|A lista de malware afetados no locatário.|
 |mobileAppTroubleshootingEvents|[Coleção mobileAppTroubleshootingEvent](../resources/intune-shared-mobileapptroubleshootingevent.md)|A propriedade collection de MobileAppTroubleshootingEvent.|
-|userExperienceAnalyticsOverview|[userExperienceAnalyticsOverview](../resources/userExperienceAnalyticsOverview.md)|Visão geral da análise da experiência do usuário|
-|userExperienceAnalyticsBaselines|[Coleção userExperienceAnalyticsBaseline](../resources/userExperienceAnalyticsBaseline.md)|Linhas de base de análise de experiência do usuário|
-|userExperienceAnalyticsCategories|[coleção userExperienceAnalyticsCategory](../resources/userExperienceAnalyticsCategory.md)|Categorias de análise de experiência do usuário|
-|userExperienceAnalyticsDevicePerformance|[coleção userExperienceAnalyticsDevicePerformance](../resources/userExperienceAnalyticsDevicePerformance.md)|Desempenho do dispositivo de análise de experiência do usuário|
-|userExperienceAnalyticsRegressionSummary|[userExperienceAnalyticsRegressionSummary](../resources/userExperienceAnalyticsRegressionSummary.md)|Resumo de regressão de análise de experiência do usuário|
-|userExperienceAnalyticsDeviceStartupHistory|[coleção userExperienceAnalyticsDeviceStartupHistory](../resources/userExperienceAnalyticsDeviceStartupHistory.md)|Histórico de inicialização do dispositivo de análise de experiência do usuário|
-|userExperienceAnalyticsDeviceStartupProcesses|[Coleção userExperienceAnalyticsDeviceStartupProcess](../resources/userExperienceAnalyticsDeviceStartupProcess.md)|Processos de inicialização do dispositivo de análise de experiência do usuário|
-|userExperienceAnalyticsDeviceStartupProcessPerformance|[coleção userExperienceAnalyticsDeviceStartupProcessPerformance](../resources/userExperienceAnalyticsDeviceStartupProcessPerformance.md)|Desempenho do processo de inicialização do dispositivo de análise de experiência do usuário|
-|**Inscrição**|
+|userExperienceAnalyticsOverview|[userExperienceAnalyticsOverview](../resources/intune-devices-userExperienceAnalyticsOverview.md)|Visão geral da análise da experiência do usuário|
+|userExperienceAnalyticsBaselines|[Coleção userExperienceAnalyticsBaseline](../resources/intune-devices-userExperienceAnalyticsBaseline.md)|Linhas de base de análise de experiência do usuário|
+|userExperienceAnalyticsCategories|[coleção userExperienceAnalyticsCategory](../resources/intune-devices-userExperienceAnalyticsCategory.md)|Categorias de análise de experiência do usuário|
+|userExperienceAnalyticsDevicePerformance|[coleção userExperienceAnalyticsDevicePerformance](../resources/intune-devices-userExperienceAnalyticsDevicePerformance.md)|Desempenho do dispositivo de análise de experiência do usuário|
+|userExperienceAnalyticsRegressionSummary|[userExperienceAnalyticsRegressionSummary](../resources/intune-devices-userExperienceAnalyticsRegressionSummary.md)|Resumo de regressão de análise de experiência do usuário|
+|userExperienceAnalyticsDeviceStartupHistory|[coleção userExperienceAnalyticsDeviceStartupHistory](../resources/intune-devices-userExperienceAnalyticsDeviceStartupHistory.md)|Histórico de inicialização do dispositivo de análise de experiência do usuário|
+|userExperienceAnalyticsDeviceStartupProcesses|[Coleção userExperienceAnalyticsDeviceStartupProcess](../resources/intune-devices-userExperienceAnalyticsDeviceStartupProcess.md)|Processos de inicialização do dispositivo de análise de experiência do usuário|
+|userExperienceAnalyticsDeviceStartupProcessPerformance|[coleção userExperienceAnalyticsDeviceStartupProcessPerformance](../resources/intune-devices-userExperienceAnalyticsDeviceStartupProcessPerformance.md)|Desempenho do processo de inicialização do dispositivo de análise de experiência do usuário|
+|userExperienceAnalyticsScoreHistory|[coleção userExperienceAnalyticsScoreHistory](../resources/intune-devices-userExperienceAnalyticsScoreHistory.md)|Histórico de pontuação de inicialização do dispositivo de análise de experiência do usuário|
+|**Registro**|
 |depOnboardingSettings|[Coleção depOnboardingSetting](../resources/intune-enrollment-deponboardingsetting.md)|Essas coleções de vários tokens DEP por locatário.|
 |importedDeviceIdentities|[Coleção importedDeviceIdentity](../resources/intune-enrollment-importeddeviceidentity.md)|As identidades dos dispositivos importados.|
 |importedWindowsAutopilotDeviceIdentities|Coleção [importedWindowsAutopilotDeviceIdentity](../resources/intune-enrollment-importedwindowsautopilotdeviceidentity.md)|Coleção de dispositivos do Windows AutoPilot importados.|
@@ -200,7 +201,7 @@ O recurso deviceManagement representa um contêiner cujo conteúdo varia de acor
 |**Solução de Problemas**|
 |troubleshootingEvents|Conjunto [deviceManagementTroubleshootingEvent](../resources/intune-troubleshooting-devicemanagementtroubleshootingevent.md)|A lista de eventos de solução de problemas para o locatário.|
 |**Proteção de Informações do Windows**|
-|intuneBrandingProfiles|[Coleção intuneBrandingProfile](../resources/intune-wip-intunebrandingprofile.md)|Perfis de identidade visual do Intune direcionados a grupos do AAD|
+|intuneBrandingProfiles|[Coleção intuneBrandingProfile](../resources/intune-wip-intunebrandingprofile.md)|Perfis de identidade visual do Intune direcionados AAD grupos|
 |windowsInformationProtectionAppLearningSummaries|Conjunto [windowsInformationProtectionAppLearningSummary](../resources/intune-wip-windowsinformationprotectionapplearningsummary.md)|Os resumos de aprendizagem de aplicativos da proteção de informações do Windows.|
 |windowsInformationProtectionNetworkLearningSummaries|Conjunto [windowsInformationProtectionNetworkLearningSummary](../resources/intune-wip-windowsinformationprotectionnetworklearningsummary.md)|Os resumos de aprendizagem de redes da proteção de informações do Windows.|
 

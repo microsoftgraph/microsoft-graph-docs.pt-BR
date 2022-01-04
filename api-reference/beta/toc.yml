@@ -561,7 +561,7 @@ items:
                 href: api/profile-get.md
               - name: Excluir perfil do usuário
                 href: api/profile-delete.md
-          - name: Teamwork
+          - name: Trabalho em equipe
             items:
               - name: Aplicativo instalado
                 href: resources/teamsappinstallation.md
@@ -1651,11 +1651,11 @@ items:
       - name: Conformidade
         displayName: 'Compliance API, Microsoft Graph Compliance API'
         items:
-          - name: Visão geral
+          - name: Visão Geral
             href: resources/complianceapioverview.md
           - name: Descoberta eDiscovery (visualização)
             items:
-              - name: Visão geral
+              - name: Visão Geral
                 href: resources/ediscovery-eDiscoveryapioverview.md
               - name: Caso de Descoberta Eletrônica
                 href: resources/ediscovery-case.md
@@ -2547,6 +2547,21 @@ items:
                         href: api/intune-books-iosvppebookassignment-delete.md
                       - name: Atualizar
                         href: api/intune-books-iosvppebookassignment-update.md
+                  - name: macOS dmg app
+                    href: resources/intune-apps-macosdmgapp.md
+                    items:
+                      - name: Listar
+                        href: api/intune-apps-macosdmgapp-list.md
+                      - name: Obter
+                        href: api/intune-apps-macosdmgapp-get.md
+                      - name: Criar
+                        href: api/intune-apps-macosdmgapp-create.md
+                      - name: Excluir
+                        href: api/intune-apps-macosdmgapp-delete.md
+                      - name: Atualizar
+                        href: api/intune-apps-macosdmgapp-update.md
+                  - name: aplicativo incluído no macOS
+                    href: resources/intune-apps-macosincludedapp.md
                   - name: Aplicativo LOB para macOS
                     href: resources/intune-apps-macoslobapp.md
                     items:
@@ -3879,6 +3894,8 @@ items:
                         href: api/intune-deviceconfig-androiddeviceownerscepcertificateprofile-delete.md
                       - name: Atualizar
                         href: api/intune-deviceconfig-androiddeviceownerscepcertificateprofile-update.md
+                  - name: Período de congelamento da atualização do sistema do proprietário do dispositivo Android
+                    href: resources/intune-deviceconfig-androiddeviceownersystemupdatefreezeperiod.md
                   - name: Tipo de instalação de atualização do sistema do proprietário do dispositivo Android
                     href: resources/intune-deviceconfig-androiddeviceownersystemupdateinstalltype.md
                   - name: Certificado raiz confiável do proprietário do dispositivo Android
@@ -5362,6 +5379,8 @@ items:
                         href: api/intune-deviceconfig-hardwareconfiguration-delete.md
                       - name: Atualizar
                         href: api/intune-deviceconfig-hardwareconfiguration-update.md
+                      - name: ação assignHardwareConfiguration
+                        href: api/intune-deviceconfig-hardwareconfiguration-assignhardwareconfiguration.md
                       - name: atribuir ação
                         href: api/intune-deviceconfig-hardwareconfiguration-assign.md
                   - name: Atribuição de configuração de hardware
@@ -9628,8 +9647,6 @@ items:
                         href: api/intune-shared-devicecompliancepolicy-get.md
                       - name: atribuir ação
                         href: api/intune-shared-devicecompliancepolicy-assign.md
-                      - name: ação scheduleActionsForRules
-                        href: api/intune-shared-devicecompliancepolicy-scheduleactionsforrules.md
                       - name: ação refreshDeviceComplianceReportSummarization
                         href: api/intune-shared-devicecompliancepolicy-refreshdevicecompliancereportsummarization.md
                       - name: Ação hasPayloadLinks
@@ -11031,7 +11048,7 @@ items:
                     href: api/contract-list.md
               - name: Atributos de segurança personalizados (visualização)
                 items:
-                  - name: Visão Geral
+                  - name: Visão geral
                     href: resources/custom-security-attributes-overview.md
                   - name: Conjuntos de atributos
                     href: resources/attributeset.md
@@ -11438,7 +11455,7 @@ items:
             items:
               - name: Métodos de autenticação
                 items:
-                  - name: Visão Geral
+                  - name: Visão geral
                     href: resources/authenticationmethods-overview.md
                   - name: Listar todos os métodos
                     href: api/authentication-list-methods.md
@@ -11852,7 +11869,7 @@ items:
                         href: api/authenticationflowspolicy-update.md
                   - name: Política de métodos de autenticação
                     items:
-                      - name: Visão geral
+                      - name: Visão Geral
                         href: resources/authenticationmethodspolicies-overview.md
                       - name: Política de métodos de autenticação
                         href: resources/authenticationmethodspolicy.md
@@ -12864,7 +12881,7 @@ items:
                 href: api/messagerule-delete.md
           - name: Propriedades estendidas
             items:
-              - name: Visão Geral
+              - name: Visão geral
                 href: resources/extended-properties-overview.md
               - name: Propriedades estendidas de valor único
                 items:
@@ -13431,7 +13448,7 @@ items:
                 href: api/contact-delta.md
           - name: Propriedades estendidas
             items:
-              - name: Visão geral
+              - name: Visão Geral
                 href: resources/extended-properties-overview.md
               - name: Propriedades estendidas de valor único
                 items:
@@ -13453,7 +13470,7 @@ items:
         items:
           - name: Relatórios de atividade do Azure AD
             items:
-              - name: Visão Geral
+              - name: Visão geral
                 href: resources/azure-ad-auditlog-overview.md
               - name: Auditoria de diretório
                 href: resources/directoryaudit.md
@@ -13501,7 +13518,7 @@ items:
                         href: api/applicationsignindetailedsummary-get.md
               - name: Registro e utilização
                 items:
-                  - name: Visão Geral
+                  - name: Visão geral
                     href: resources/authenticationmethods-usage-insights-overview.md
                   - name: Contagem de Registro de Usuário credencial
                     href: resources/credentialuserregistrationcount.md
@@ -14858,7 +14875,7 @@ items:
       - name: Tarefas pendentes
         displayName: Microsoft To Do
         items:
-          - name: Visão geral
+          - name: Visão Geral
             href: resources/tasks-overview.md
           - name: Lista de tarefas
             items:

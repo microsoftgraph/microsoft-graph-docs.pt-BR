@@ -1,18 +1,18 @@
 ---
-title: Tipo de recurso configurationManagerAction
-description: Parâmetro para trigger de açãoConfigurationManagerAction
+title: Tipo de recurso macOSIncludedApp
+description: Contém propriedades de um .app incluído em um aplicativo MacOS.
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 07cf57cf159b9a30dc653a0cbe26451b97b903fe
+ms.openlocfilehash: 87c7d8b5cc5eb1229b9860fe8192b0cd765c33c5
 ms.sourcegitcommit: 00ac72f7b1cdde4f71ff332c2e7953908ef9de52
 ms.translationtype: MT
 ms.contentlocale: pt-BR
 ms.lasthandoff: 01/04/2022
-ms.locfileid: "61711911"
+ms.locfileid: "61712140"
 ---
-# <a name="configurationmanageraction-resource-type"></a>Tipo de recurso configurationManagerAction
+# <a name="macosincludedapp-resource-type"></a>Tipo de recurso macOSIncludedApp
 
 Namespace: microsoft.graph
 
@@ -20,12 +20,13 @@ Namespace: microsoft.graph
 
 > **Observação:** A API do Microsoft Graph para Intune requer uma [licença ativa do Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
 
-Parâmetro para trigger de açãoConfigurationManagerAction
+Contém propriedades de um .app incluído em um aplicativo MacOS.
 
 ## <a name="properties"></a>Propriedades
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|ação|[configurationManagerActionType](../resources/intune-devices-configurationmanageractiontype.md)|O tipo de ação a ser disparado no cliente do Configuration Manager. Os valores possíveis são: `refreshMachinePolicy`, `refreshUserPolicy`, `wakeUpClient`, `appEvaluation`, `quickScan`, `fullScan`, `windowsDefenderUpdateSignatures`.|
+|bundleId|String|O CFBundleIdentifier.|
+|bundleVersion|String|O CFBundleVersion.|
 
 ## <a name="relationships"></a>Relações
 Nenhum
@@ -34,13 +35,14 @@ Nenhum
 Veja a seguir uma representação JSON do recurso.
 <!-- {
   "blockType": "resource",
-  "@odata.type": "microsoft.graph.configurationManagerAction"
+  "@odata.type": "microsoft.graph.macOSIncludedApp"
 }
 -->
 ``` json
 {
-  "@odata.type": "#microsoft.graph.configurationManagerAction",
-  "action": "String"
+  "@odata.type": "#microsoft.graph.macOSIncludedApp",
+  "bundleId": "String",
+  "bundleVersion": "String"
 }
 ```
 

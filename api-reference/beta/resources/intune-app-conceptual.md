@@ -4,12 +4,12 @@ description: Lista a API Graph microsoft para pontos de extremidade do Intune (R
 author: dougeby
 ms.localizationpriority: medium
 ms.prod: intune
-ms.openlocfilehash: 5cc9d43fb9f4bb7f4729bfecf5e8825a7c043caf
-ms.sourcegitcommit: 65f4e128f96783c18d607a6dcffbc914291285d4
+ms.openlocfilehash: 8372aa4c125f0b0e56423bb248fabcd0ee604005
+ms.sourcegitcommit: 00ac72f7b1cdde4f71ff332c2e7953908ef9de52
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/08/2021
-ms.locfileid: "61338229"
+ms.lasthandoff: 01/04/2022
+ms.locfileid: "61711946"
 ---
 # <a name="how-to-protect-your-company-app-data-with-microsoft-intune"></a>Como proteger dados de aplicativos corporativos com o Microsoft Intune
 
@@ -78,6 +78,8 @@ Os seguintes recursos do Graph estão disponíveis para gerenciar políticas de 
 - [Resultado da ação de revogar licenças de aplicativo do VPP do iOS](intune-apps-iosvppapprevokelicensesactionresult.md)
 - [Livro eletrônico do VPP do iOS](intune-books-iosvppebook.md)
 - [Atribuição de livros eletrônicos do VPP do iOS](intune-books-iosvppebookassignment.md)
+- [macOS dmg app](intune-apps-macosdmgapp.md)
+- [aplicativo incluído no macOS](intune-apps-macosincludedapp.md)
 - [Aplicativo LOB para macOS](intune-apps-macoslobapp.md)
 - [Aplicativo filho macOS LOB](intune-apps-macoslobchildapp.md)
 - [aplicativo mdatp do macOS](intune-apps-macosmdatpapp.md)

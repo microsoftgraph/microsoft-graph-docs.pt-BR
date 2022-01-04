@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: ecd964d5c5f2d18ffef71e04ebba40de8f3759ff
-ms.sourcegitcommit: 65f4e128f96783c18d607a6dcffbc914291285d4
+ms.openlocfilehash: 3a9fab2a1b312e9b18ff38f5548e964a5256335f
+ms.sourcegitcommit: 00ac72f7b1cdde4f71ff332c2e7953908ef9de52
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/08/2021
-ms.locfileid: "61345376"
+ms.lasthandoff: 01/04/2022
+ms.locfileid: "61711974"
 ---
 # <a name="hardwareconfigurationuserstate-resource-type"></a>Tipo de recurso hardwareConfigurationUserState
 
@@ -22,7 +22,7 @@ Namespace: microsoft.graph
 
 Contém propriedades para o estado do usuário da configuração de hardware
 
-## <a name="methods"></a>Methods
+## <a name="methods"></a>Métodos
 |Método|Tipo de retorno|Descrição|
 |:---|:---|:---|
 |[Listar hardwareConfigurationUserStates](../api/intune-deviceconfig-hardwareconfigurationuserstate-list.md)|[Coleção hardwareConfigurationUserState](../resources/intune-deviceconfig-hardwareconfigurationuserstate.md)|Listar propriedades e relações dos [objetos hardwareConfigurationUserState.](../resources/intune-deviceconfig-hardwareconfigurationuserstate.md)|
@@ -35,12 +35,12 @@ Contém propriedades para o estado do usuário da configuração de hardware
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
 |id|String|Chave da entidade de estado do usuário do script de configuração de hardware. Essa propriedade é somente leitura.|
-|upn|String|Nome UPN|
-|userEmail|Cadeia de caracteres|Endereço de Email do Usuário|
+|upn|Cadeia de caracteres|Nome principal do usuário (UPN).|
+|userEmail|Cadeia de caracteres|Endereço de Email do Usuário.|
 |userName|Cadeia de caracteres|Nome de usuário|
 |lastStateUpdateDateTime|DateTimeOffset|Last timestamp when the hardware configuration executed|
-|successfulDeviceCount|Int32|Contagem de dispositivos de sucesso para um usuário específico|
-|failedDeviceCount|Int32|Contagem de dispositivos com falha para um usuário específico|
+|successfulDeviceCount|Int32|Contagem de dispositivos de sucesso para usuários específicos.|
+|failedDeviceCount|Int32|Contagem de dispositivos com falha para um usuário específico.|
 |pendingDeviceCount|Int32|Contagem de dispositivos pendente para um usuário específico.|
 |errorDeviceCount|Int32|Contagem de dispositivos de erro para usuário específico.|
 |notApplicableDeviceCount|Int32|Contagem de dispositivos não aplicável para um usuário específico.|

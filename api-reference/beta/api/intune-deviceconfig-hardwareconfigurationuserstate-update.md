@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 502e007407fc8df86f2db41d7f99b6685b6c4f27
-ms.sourcegitcommit: 65f4e128f96783c18d607a6dcffbc914291285d4
+ms.openlocfilehash: 866048d91807ce74cb6c65f12c4330e096c77355
+ms.sourcegitcommit: 00ac72f7b1cdde4f71ff332c2e7953908ef9de52
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/08/2021
-ms.locfileid: "61345337"
+ms.lasthandoff: 01/04/2022
+ms.locfileid: "61712016"
 ---
 # <a name="update-hardwareconfigurationuserstate"></a>Atualizar hardwareConfigurationUserState
 
@@ -54,12 +54,12 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar [o hardw
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
 |id|String|Chave da entidade de estado do usuário do script de configuração de hardware. Essa propriedade é somente leitura.|
-|upn|String|Nome UPN|
-|userEmail|Cadeia de caracteres|Endereço de Email do Usuário|
+|upn|Cadeia de caracteres|Nome principal do usuário (UPN).|
+|userEmail|Cadeia de caracteres|Endereço de Email do Usuário.|
 |userName|Cadeia de caracteres|Nome de usuário|
 |lastStateUpdateDateTime|DateTimeOffset|Last timestamp when the hardware configuration executed|
-|successfulDeviceCount|Int32|Contagem de dispositivos de sucesso para um usuário específico|
-|failedDeviceCount|Int32|Contagem de dispositivos com falha para um usuário específico|
+|successfulDeviceCount|Int32|Contagem de dispositivos de sucesso para usuários específicos.|
+|failedDeviceCount|Int32|Contagem de dispositivos com falha para um usuário específico.|
 |pendingDeviceCount|Int32|Contagem de dispositivos pendente para um usuário específico.|
 |errorDeviceCount|Int32|Contagem de dispositivos de erro para usuário específico.|
 |notApplicableDeviceCount|Int32|Contagem de dispositivos não aplicável para um usuário específico.|
