@@ -1,16 +1,16 @@
 ---
 title: Tipo de recurso managementIntentInfo
 description: Representa informações de relação para uma intenção de gerenciamento.
-author: isaiahwilliams
-localization_priority: Normal
+author: idwilliams
+ms.localizationpriority: medium
 ms.prod: microsoft-365-lighthouse
 doc_type: resourcePageType
-ms.openlocfilehash: 9bc58ff4c850661b968e7b540de9038074406ac5
-ms.sourcegitcommit: e372382019f1a136543eadab02ba70af3921e098
+ms.openlocfilehash: 05442959aaa64ddc0fa1059ff599b18d421dcd7b
+ms.sourcegitcommit: 71186ad44d8d0df15e10b0f89df68d2ef0cf9d14
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/13/2021
-ms.locfileid: "53401997"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "61789982"
 ---
 # <a name="managementintentinfo-resource-type"></a>Tipo de recurso managementIntentInfo
 
@@ -23,8 +23,8 @@ Representa informações de relação para uma intenção de gerenciamento.
 ## <a name="properties"></a>Propriedades
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|managementIntentDisplayName|Cadeia de caracteres|O nome de exibição para a intenção de gerenciamento. Opcional. Somente leitura.|
-|managementIntentId|Cadeia de caracteres|O identificador da intenção de gerenciamento. Obrigatório. Somente leitura.|
+|managementIntentDisplayName|String|O nome de exibição para a intenção de gerenciamento. Opcional. Somente leitura.|
+|managementIntentId|String|O identificador da intenção de gerenciamento. Obrigatório. Somente leitura.|
 |managementTemplates|[coleção microsoft.graph.managedTenants.managementTemplateDetailedInfo](../resources/managedtenants-managementtemplatedetailedinfo.md)|A coleção de informações do modelo de gerenciamento associadas à intenção de gerenciamento. Opcional. Somente leitura.|
 
 ## <a name="relationships"></a>Relações

@@ -1,16 +1,16 @@
 ---
 title: 'locatário: resetTenantOnboardingStatus'
 description: Executa os procedimentos apropriados para redefinir o status de integração do locatário gerenciado que foi removido da plataforma de gerenciamento de vários locatários usando a ação offboardTenant. Ao invocar essa ação, a plataforma tentará integrar o locatário gerenciado para gerenciamento.
-author: isaiahwilliams
+author: idwilliams
 ms.localizationpriority: medium
 ms.prod: microsoft-365-lighthouse
 doc_type: apiPageType
-ms.openlocfilehash: 9bd195b42f2daac4a0264e4a508947410bd3a496
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: 49f16e1a232125644aec4bf537018921c4fc70e8
+ms.sourcegitcommit: 71186ad44d8d0df15e10b0f89df68d2ef0cf9d14
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "60980863"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "61789989"
 ---
 # <a name="tenant-resettenantonboardingstatus"></a>locatário: resetTenantOnboardingStatus
 Namespace: microsoft.graph.managedTenants
@@ -79,7 +79,7 @@ POST https://graph.microsoft.com/beta/tenantRelationships/managedTenants/tenants
 [!INCLUDE [sample-code](../includes/snippets/java/tenant-resettenantonboardingstatus-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[Go](#tab/go)
+# <a name="go"></a>[Ir](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/tenant-resettenantonboardingstatus-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 

@@ -1,16 +1,16 @@
 ---
 title: Atualizar tenantCustomizedInformation
 description: Atualize as propriedades de um objeto tenantCustomizedInformation.
-author: isaiahwilliams
+author: idwilliams
 ms.localizationpriority: medium
 ms.prod: microsoft-365-lighthouse
 doc_type: apiPageType
-ms.openlocfilehash: 4d9c21a79ff2e25052e37e146ebaf9a371b570b5
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: 1b4ee2a024041080a690aab2096266ceab1d18a5
+ms.sourcegitcommit: 71186ad44d8d0df15e10b0f89df68d2ef0cf9d14
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "61011833"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "61789991"
 ---
 # <a name="update-tenantcustomizedinformation"></a>Atualizar tenantCustomizedInformation
 Namespace: microsoft.graph.managedTenants
@@ -51,10 +51,10 @@ A tabela a seguir mostra as propriedades que são necessárias ao atualizar [o t
 
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|id|Cadeia de caracteres|O Azure Active Directory de locatário do locatário gerenciado.|
+|id|String|O Azure Active Directory de locatário do locatário gerenciado.|
 |tenantId|String|O Azure Active Directory do locatário para o [locatário gerenciado.](../resources/managedtenants-tenant.md)|
 |contacts|[coleção microsoft.graph.managedTenants.tenantContactInformation](../resources/managedtenants-tenantcontactinformation.md)|A coleção de contatos associados ao locatário gerenciado.|
-|site|Cadeia de caracteres|O site do locatário gerenciado.|
+|site|String|O site do locatário gerenciado.|
 
 ## <a name="response"></a>Resposta
 
@@ -79,7 +79,12 @@ Content-Type: application/json
   "tenantId": "String",
   "contacts": [
     {
-      "@odata.type": "microsoft.graph.managedTenants.tenantContactInformation"
+      "@odata.type": "microsoft.graph.managedTenants.tenantContactInformation",
+      "name": "String",
+      "title": "String",
+      "email": "String",
+      "phone": "String",
+      "notes": "String"
     }
   ],
   "website": "String"
@@ -101,7 +106,7 @@ Content-Type: application/json
 [!INCLUDE [sample-code](../includes/snippets/java/update-tenantcustomizedinformation-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[Go](#tab/go)
+# <a name="go"></a>[Ir](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/update-tenantcustomizedinformation-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 

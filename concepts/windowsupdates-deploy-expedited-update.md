@@ -1,16 +1,16 @@
 ---
 title: Implantar uma atualização de segurança acelerada usando o serviço de implantação Windows Update for Business
 description: Com o serviço de implantação do Windows Update for Business, você pode implantar atualizações de segurança Windows em dispositivos em um locatário do Azure AD caso surja uma emergência e você precise implantar imediatamente uma atualização de segurança.
-author: Alice-at-Microsoft
+author: aarononeal
 ms.localizationpriority: medium
 ms.prod: w10
 doc_type: conceptualPageType
-ms.openlocfilehash: 855f123fbd81d19f17dca6e436586365a0b221a5
-ms.sourcegitcommit: c7ff992ef63e480d070421ba99b28ee129cb6acb
+ms.openlocfilehash: d380333cbaa48f0e242e374e19b2907ba6b35e02
+ms.sourcegitcommit: 71186ad44d8d0df15e10b0f89df68d2ef0cf9d14
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "60688623"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "61791809"
 ---
 # <a name="deploy-an-expedited-security-update-using-the-windows-update-for-business-deployment-service"></a>Implantar uma atualização de segurança acelerada usando o serviço de implantação Windows Update for Business
 
@@ -20,11 +20,11 @@ Agilizar uma atualização de segurança substitui Windows políticas de adiamen
 
 Quando você implanta uma atualização de segurança acelerada em um dispositivo, o Windows Update oferece a atualização aplicável mais recente ao dispositivo se ainda não tiver recebido a atualização com a data de lançamento especificada. Por exemplo, se você implantar a atualização de segurança Windows 10 lançada em 13 de abril de 2021 em um dispositivo que não tenha a atualização no momento, o dispositivo receberá uma atualização acelerada. Se o dispositivo já tiver a atualização especificada ou mais recente, ele não receberá uma atualização acelerada.
 
-Atualizações de segurança aceleradas também têm as seguintes características:
+As atualizações de segurança aceleradas também têm as seguintes características:
 
-* A atualização começa imediatamente, em vez de aguardar a próxima verificação de atualização regular, que ocorre uma vez a cada 22 horas por padrão.
-* A atualização baixa e instala o mais rápido possível.
-* O processo de atualização substitui configurações de política de dispositivo, como dias até que o dispositivo seja forçado a reiniciar. Depois que a atualização acelerada é instalada, o dispositivo retorna às configurações de política atuais.
+* A atualização é iniciada imediatamente em vez de aguardar a próxima verificação de atualização regular, que ocorre uma vez a cada 22 horas por padrão.
+* A atualização é baixada e instalada o mais rápido possível.
+* O processo de atualização substitui as configurações de política de dispositivo definidas, como dias até que o dispositivo seja forçado a reiniciar. Depois que a atualização acelerada é instalada, o dispositivo retorna para as configurações de política atuais.
 
 ## <a name="prerequisites"></a>Pré-requisitos
 

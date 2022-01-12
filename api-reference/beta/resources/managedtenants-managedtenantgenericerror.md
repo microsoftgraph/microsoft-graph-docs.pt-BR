@@ -1,16 +1,16 @@
 ---
 title: Tipo de recurso managedTenantGenericError
 description: Representa um erro genérico para um locatário gerenciado.
-author: isaiahwilliams
-localization_priority: Normal
+author: idwilliams
+ms.localizationpriority: medium
 ms.prod: microsoft-365-lighthouse
 doc_type: resourcePageType
-ms.openlocfilehash: d9cb6ac80bb48e7d8afc91db2cf386a21c7318e9
-ms.sourcegitcommit: e372382019f1a136543eadab02ba70af3921e098
+ms.openlocfilehash: 167d8a581f2e8020ea4efabf951d07c409947ef3
+ms.sourcegitcommit: 71186ad44d8d0df15e10b0f89df68d2ef0cf9d14
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/13/2021
-ms.locfileid: "53401899"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "61789975"
 ---
 # <a name="managedtenantgenericerror-resource-type"></a>Tipo de recurso managedTenantGenericError
 
@@ -25,7 +25,7 @@ Herda de [managedTenantOperationError](../resources/managedtenants-managedtenant
 ## <a name="properties"></a>Propriedades
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|erro|Cadeia de caracteres|A mensagem de erro da exceção. Herdado [de managedTenantOperationError](../resources/managedtenants-managedtenantoperationerror.md). Obrigatório. Somente leitura.|
+|erro|String|A mensagem de erro da exceção. Herdado [de managedTenantOperationError](../resources/managedtenants-managedtenantoperationerror.md). Obrigatório. Somente leitura.|
 |tenantId|String|O Azure Active Directory de locatário do locatário gerenciado. Herdado [de managedTenantOperationError](../resources/managedtenants-managedtenantoperationerror.md). Opcional. Somente leitura.|
 
 ## <a name="relationships"></a>Relações
