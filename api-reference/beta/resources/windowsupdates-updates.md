@@ -1,16 +1,16 @@
 ---
 title: atualiza tipo de recurso
 description: Entidade que atua como um contêiner para todas as Windows de implantação do Update for Business.
-author: Alice-at-Microsoft
-localization_priority: Normal
+author: aarononeal
+ms.localizationpriority: medium
 ms.prod: w10
 doc_type: resourcePageType
-ms.openlocfilehash: 0306dbadd815bdd8ff0ffde5719a950bcdff4683
-ms.sourcegitcommit: 1b09298649d5606b471b4cbe1055419bbe2fc7e5
+ms.openlocfilehash: 748ef5c6e8e334b2e1c311c07617c181490f4f39
+ms.sourcegitcommit: 71186ad44d8d0df15e10b0f89df68d2ef0cf9d14
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "52067228"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "61861537"
 ---
 # <a name="updates-resource-type"></a>atualiza tipo de recurso
 

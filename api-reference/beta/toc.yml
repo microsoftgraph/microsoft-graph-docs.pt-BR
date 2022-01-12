@@ -324,7 +324,7 @@ items:
                 href: api/user-list-events.md
               - name: Modo de exibição de lembrete
                 href: api/user-reminderview.md
-          - name: Contatos
+          - name: Contacts
             href: resources/contact.md
             items:
               - name: Criar contato
@@ -889,6 +889,15 @@ items:
                 href: api/directory-deleteditems-delete.md
               - name: Restaurar aplicativo excluído
                 href: api/directory-deleteditems-restore.md
+              - name: Modelo de aplicativo
+                href: resources/applicationtemplate.md
+                items:
+                  - name: Listar
+                    href: api/applicationtemplate-list.md
+                  - name: Obter
+                    href: api/applicationtemplate-get.md
+                  - name: Instantiate
+                    href: api/applicationtemplate-instantiate.md
               - name: Certificados e segredos
                 items:
                   - name: Adicionar senha
@@ -955,15 +964,12 @@ items:
                         href: api/application-list-tokenlifetimepolicies.md
                       - name: Remover
                         href: api/application-delete-tokenlifetimepolicies.md
-              - name: Modelo de aplicativo
-                href: resources/applicationtemplate.md
+              - name: Distribuidor verificado
                 items:
-                  - name: Listar modelos de aplicativos
-                    href: api/applicationtemplate-list.md
-                  - name: Obter modelo de aplicativo
-                    href: api/applicationtemplate-get.md
-                  - name: Modelo de aplicativo de insinuidade
-                    href: api/applicationtemplate-instantiate.md
+                  - name: Set
+                    href: api/application-setverifiedpublisher.md
+                  - name: Unset
+                    href: api/application-unsetverifiedpublisher.md
           - name: Publicação local
             href: resources/onpremisespublishingprofile-root.md
             items:
@@ -1542,7 +1548,7 @@ items:
                 href: api/call-logteleconferencedevicequality.md
           - name: Registros de chamadas
             items:
-              - name: Visão geral
+              - name: Visão Geral
                 href: resources/callrecords-api-overview.md
               - name: Registro de chamada
                 items:
@@ -1811,7 +1817,7 @@ items:
                     href: api/ediscovery-tag-ashierarchy.md
           - name: Solicitação de direitos do sujeito
             items:
-              - name: Visão geral
+              - name: Visão Geral
                 href: resources/subjectrightsrequest-subjectrightsrequestapioverview.md
               - name: Solicitação de direitos do sujeito
                 href: resources/subjectrightsrequest.md
@@ -9983,7 +9989,7 @@ items:
                         href: api/intune-tem-telecomexpensemanagementpartner-update.md
           - name: Cloud PC (visualização)
             items:
-              - name: Visão geral
+              - name: Visão Geral
                 href: resources/cloudpc-api-overview.md
               - name: Ponto de extremidade virtual
                 href: resources/virtualendpoint.md
@@ -11048,7 +11054,7 @@ items:
                     href: api/contract-list.md
               - name: Atributos de segurança personalizados (visualização)
                 items:
-                  - name: Visão geral
+                  - name: Visão Geral
                     href: resources/custom-security-attributes-overview.md
                   - name: Conjuntos de atributos
                     href: resources/attributeset.md
@@ -11455,7 +11461,7 @@ items:
             items:
               - name: Métodos de autenticação
                 items:
-                  - name: Visão geral
+                  - name: Visão Geral
                     href: resources/authenticationmethods-overview.md
                   - name: Listar todos os métodos
                     href: api/authentication-list-methods.md
@@ -12502,7 +12508,7 @@ items:
                       - name: Listar
                         href: api/entitlementmanagement-list-accesspackageassignmentrequests.md
                       - name: Criar
-                        href: api/entitlementmanagement-post-accesspackageassignmentrequests
+                        href: api/entitlementmanagement-post-accesspackageassignmentrequests.md
                       - name: Obter
                         href: api/accesspackageassignmentrequest-get.md
                       - name: Excluir
@@ -12881,7 +12887,7 @@ items:
                 href: api/messagerule-delete.md
           - name: Propriedades estendidas
             items:
-              - name: Visão geral
+              - name: Visão Geral
                 href: resources/extended-properties-overview.md
               - name: Propriedades estendidas de valor único
                 items:
@@ -13470,7 +13476,7 @@ items:
         items:
           - name: Relatórios de atividade do Azure AD
             items:
-              - name: Visão geral
+              - name: Visão Geral
                 href: resources/azure-ad-auditlog-overview.md
               - name: Auditoria de diretório
                 href: resources/directoryaudit.md
@@ -13518,7 +13524,7 @@ items:
                         href: api/applicationsignindetailedsummary-get.md
               - name: Registro e utilização
                 items:
-                  - name: Visão geral
+                  - name: Visão Geral
                     href: resources/authenticationmethods-usage-insights-overview.md
                   - name: Contagem de Registro de Usuário credencial
                     href: resources/credentialuserregistrationcount.md

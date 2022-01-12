@@ -1,18 +1,18 @@
 ---
-title: Obter foto
-description: Obtenha a profilePhoto específica ou seus metadados (propriedades **profilePhoto**).
-ms.localizationpriority: high
+title: Get profilePhoto
+description: Obtém o profilePhoto especificado ou seus metadados (propriedades profilePhoto).
+ms.localizationpriority: medium
 doc_type: apiPageType
 ms.prod: people
 author: kevinbellinger
-ms.openlocfilehash: 0e26a038b61bb565b5592a70687fd4bd9667cce6
-ms.sourcegitcommit: 2e94beae05043a88b389349f0767e3a657415e4c
-ms.translationtype: HT
+ms.openlocfilehash: 4f5ddbc309c874e49cd7595ed89517eff8a6585c
+ms.sourcegitcommit: 71186ad44d8d0df15e10b0f89df68d2ef0cf9d14
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/19/2021
-ms.locfileid: "61124043"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "61860711"
 ---
-# <a name="get-photo"></a>Obter foto
+# <a name="get-profilephoto"></a>Get profilePhoto
 
 Namespace: microsoft.graph
 
@@ -58,9 +58,11 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |Delegado (conta pessoal da Microsoft)      |   Contacts.Read, Contacts.ReadWrite            |
 |Aplicativo      |    Contacts.Read, Contacts.ReadWrite           |
 
-> **Observação:**  
-> 1. Não há suporte para a operação de metadados em contas pessoais da Microsoft. 
+> [!NOTE]
+> 
+> 1. Não há suporte para a operação de metadados em contas pessoais da Microsoft.
 > 2. Atualmente, há um [problema conhecido](/graph/known-issues#groups) ao acessar fotos de grupo usando permissões de aplicativos.
+> 3. Recuperar a foto de um usuário usando a API do Microsoft Graph atualmente não é suportado em locatários do Azure AD B2C.
 
 ## <a name="http-request"></a>Solicitação HTTP
 

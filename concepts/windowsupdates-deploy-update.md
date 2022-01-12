@@ -1,16 +1,16 @@
 ---
 title: Implantar uma atualização de recurso usando o serviço de implantação Windows Atualização para Empresas
 description: Com o Windows de implantação do Update for Business, você pode implantar Windows de recursos em dispositivos em um locatário do Azure AD.
-author: Alice-at-Microsoft
+author: aarononeal
 ms.localizationpriority: medium
 ms.prod: w10
 doc_type: conceptualPageType
-ms.openlocfilehash: 11dbc40cb405b7b673fa02ba4845ced6e57c9986
-ms.sourcegitcommit: c7ff992ef63e480d070421ba99b28ee129cb6acb
+ms.openlocfilehash: 872b0e0a4b8acc0d31821be7a21283c7dc2e70ca
+ms.sourcegitcommit: 71186ad44d8d0df15e10b0f89df68d2ef0cf9d14
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "60696039"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "61859900"
 ---
 # <a name="deploy-a-feature-update-using-the-windows-update-for-business-deployment-service"></a>Implantar uma atualização de recurso usando o serviço de implantação Windows Atualização para Empresas
 
@@ -21,7 +21,7 @@ Quando você implanta uma atualização de recurso em um dispositivo, o Windows 
 Enquanto um dispositivo permanecer inscrito no gerenciamento de atualização de recursos, o dispositivo não receberá outras atualizações de recursos do Windows Update, a menos que seja implantado explicitamente usando o serviço de implantação.
 
 > [!IMPORTANT]
-> Usando o serviço de implantação do Windows Update for Business para atualizar dispositivos para o Windows 11 (definindo o paramater de versão de uma implantação como "Windows 11, versão 21H2"), você concorda que ao aplicar esse sistema operacional a um dispositivo (1) a licença de Windows aplicável foi adquirida embora o licenciamento por volume ou (2) que você está autorizado a vincular seu organi zation e estão aceitando em seu nome os Termos de Licença de Software da Microsoft relevantes a serem encontrados aqui: Termos de Licença [de Software da Microsoft](https://www.microsoft.com/Useterms).
+> Usando o serviço de implantação do Windows Update for Business para atualizar dispositivos para o Windows 11 (definindo o paramater de versão de uma implantação como "Windows 11, versão 21H2"), você concorda que ao aplicar esse sistema operacional a um dispositivo (1) o Windows  licença foi adquirida embora o licenciamento por volume, ou (2) que você está autorizado a vincular sua organização e está aceitando em seu nome os Termos de Licença de Software da Microsoft relevantes a serem encontrados aqui: Termos de Licença de Software da [Microsoft](https://www.microsoft.com/Useterms).
 
 ## <a name="prerequisites"></a>Pré-requisitos
 

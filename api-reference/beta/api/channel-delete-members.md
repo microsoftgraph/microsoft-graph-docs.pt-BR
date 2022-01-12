@@ -5,12 +5,12 @@ author: akjo
 doc_type: apiPageType
 ms.localizationpriority: medium
 ms.prod: microsoft-teams
-ms.openlocfilehash: 4d001132e5acc5a2f418809cef037e931cb2f4fd
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: b51bb0ee2082660912ccaa6a0dcc20396fa065c4
+ms.sourcegitcommit: 71186ad44d8d0df15e10b0f89df68d2ef0cf9d14
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "60975899"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "61791802"
 ---
 # <a name="remove-member-from-channel"></a>Remover membro do canal
 
@@ -56,7 +56,7 @@ Se tiver êxito, este método retornará um código de resposta `204 No Content`
 
 ### <a name="request"></a>Solicitação
 
-Este é um exemplo da solicitação.
+Veja a seguir um exemplo de uma solicitação.
 
 
 # <a name="http"></a>[HTTP](#tab/http)
@@ -83,7 +83,7 @@ DELETE https://graph.microsoft.com/beta/teams/ece6f0a1-7ca4-498b-be79-edf6c8fc4d
 [!INCLUDE [sample-code](../includes/snippets/java/delete-channel-member-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[Go](#tab/go)
+# <a name="go"></a>[Ir](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/delete-channel-member-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
@@ -92,7 +92,7 @@ DELETE https://graph.microsoft.com/beta/teams/ece6f0a1-7ca4-498b-be79-edf6c8fc4d
 
 ### <a name="response"></a>Resposta
 
-Veja a seguir um exemplo da resposta.
+Este é um exemplo de resposta.
 
 <!-- {
   "blockType": "response"

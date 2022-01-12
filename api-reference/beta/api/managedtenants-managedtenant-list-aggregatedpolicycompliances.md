@@ -1,16 +1,16 @@
 ---
 title: Listar aggregatedPolicyCompliances
 description: Obter uma lista dos objetos aggregatedPolicyCompliance e suas propriedades.
-author: isaiahwilliams
+author: idwilliams
 ms.localizationpriority: medium
 ms.prod: microsoft-365-lighthouse
 doc_type: apiPageType
-ms.openlocfilehash: e29f727b7fc89687bde99f8fd2bb7be353891cdb
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: 7ba26a6ea4029184862feffac3e918d83b2b6827
+ms.sourcegitcommit: 71186ad44d8d0df15e10b0f89df68d2ef0cf9d14
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "61014723"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "61791543"
 ---
 # <a name="list-aggregatedpolicycompliances"></a>Listar aggregatedPolicyCompliances
 Namespace: microsoft.graph.managedTenants
@@ -82,7 +82,7 @@ GET https://graph.microsoft.com/beta/tenantRelationships/managedTenants/aggregat
 [!INCLUDE [sample-code](../includes/snippets/java/list-aggregatedpolicycompliance-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[Go](#tab/go)
+# <a name="go"></a>[Ir](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/list-aggregatedpolicycompliance-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 

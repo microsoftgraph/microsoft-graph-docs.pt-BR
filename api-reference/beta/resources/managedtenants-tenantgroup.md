@@ -1,16 +1,16 @@
 ---
 title: Tipo de recurso tenantGroup
 description: Representa um grupo lógico de locatários gerenciados.
-author: isaiahwilliams
-localization_priority: Normal
+author: idwilliams
+ms.localizationpriority: medium
 ms.prod: microsoft-365-lighthouse
 doc_type: resourcePageType
-ms.openlocfilehash: 2ab0d97afff68dca7d76b1ad6c4e461ad6af6233
-ms.sourcegitcommit: e372382019f1a136543eadab02ba70af3921e098
+ms.openlocfilehash: fa731082fbfc32f323b15460780e2ff355a965f8
+ms.sourcegitcommit: 71186ad44d8d0df15e10b0f89df68d2ef0cf9d14
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/13/2021
-ms.locfileid: "53401993"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "61791859"
 ---
 # <a name="tenantgroup-resource-type"></a>Tipo de recurso tenantGroup
 
@@ -30,12 +30,12 @@ Representa um grupo lógico de locatários gerenciados.
 ## <a name="properties"></a>Propriedades
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|allTenantsIncluded|Boolean|Um sinalizador indicando se todos os locatários gerenciados estão incluídos no grupo de locatários. Obrigatório. Somente leitura.|
-|displayName|Cadeia de caracteres|O nome de exibição do grupo de locatários. Opcional. Somente leitura.|
-|id|Cadeia de caracteres|O identificador exclusivo do grupo de locatários. Obrigatório. Somente leitura.|
+|allTenantsIncluded|Booliano|Um sinalizador indicando se todos os locatários gerenciados estão incluídos no grupo de locatários. Obrigatório. Somente leitura.|
+|displayName|String|O nome de exibição do grupo de locatários. Opcional. Somente leitura.|
+|id|String|O identificador exclusivo do grupo de locatários. Obrigatório. Somente leitura.|
 |managementActions|[coleção microsoft.graph.managedTenants.managementActionInfo](../resources/managedtenants-managementactioninfo.md)|O conjunto de ações de gerenciamento associadas ao grupo de locatários. Opcional. Somente leitura.|
 |managementIntents|[coleção microsoft.graph.managedTenants.managementIntentInfo](../resources/managedtenants-managementintentinfo.md)|A coleção de intenções de gerenciamento associadas ao grupo de locatários. Opcional. Somente leitura.|
-|tenantIds|Conjunto de cadeias de caracteres|A coleção de identificadores de locatários gerenciados inclui no grupo de locatários. Opcional. Somente leitura.|
+|tenantIds|Coleção String|A coleção de identificadores de locatários gerenciados inclui no grupo de locatários. Opcional. Somente leitura.|
 
 ## <a name="relationships"></a>Relações
 Nenhum

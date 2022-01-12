@@ -1,18 +1,18 @@
 ---
-title: Gerenciar regras de monitoramento para uma implantação usando o serviço de implantação Windows Update for Business
+title: Gerenciar regras de monitoramento usando o serviço de implantação Windows Update for Business
 description: Para implantações iniciadas pelo serviço de implantação, você pode usar regras de monitoramento que configurem alertas e ações automatizadas com base em sinais de implantação.
-author: Alice-at-Microsoft
+author: aarononeal
 ms.localizationpriority: medium
 ms.prod: w10
 doc_type: conceptualPageType
-ms.openlocfilehash: eaef1105d5163bd0c0ab1e4859ef9d4979eb7bee
-ms.sourcegitcommit: 11be55b40804b07f4c422f09f601afa97c7d31ed
+ms.openlocfilehash: 0d0b76b2c5e29e164cce6a69bcdccbefd13033ad
+ms.sourcegitcommit: 71186ad44d8d0df15e10b0f89df68d2ef0cf9d14
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/09/2021
-ms.locfileid: "60255945"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "61856747"
 ---
-# <a name="manage-monitoring-rules-for-a-feature-update-deployment-using-the-windows-update-for-business-deployment-service"></a>Gerenciar regras de monitoramento para uma implantação de atualização de recursos usando o serviço de implantação Windows Update for Business
+# <a name="manage-monitoring-rules-using-the-windows-update-for-business-deployment-service"></a>Gerenciar regras de monitoramento usando o serviço de implantação Windows Update for Business
 
 Para implantações iniciadas pelo serviço de implantação, você pode usar uma regra de monitoramento para configurar alertas e ações automatizadas com base em sinais de implantação.
 
@@ -46,7 +46,6 @@ Content-type: application/json
         "monitoring": {
             "monitoringRules": [
                 {
-                    "@odata.type": "#microsoft.graph.windowsUpdates.monitoringRule",
                     "signal": "rollback",
                     "threshold": 5,
                     "action": "pauseDeployment"
@@ -95,7 +94,8 @@ Content-Type: application/json
             ]
         },
         "rollout": null,
-        "userExperience": null
+        "userExperience": null,
+        "safeguard": null
     },
     "createdDateTime": "String (timestamp)",
     "lastModifiedDateTime": "String (timestamp)"
@@ -158,7 +158,8 @@ Content-Type: application/json
             "monitoringRules": []
         },
         "rollout": null,
-        "userExperience": null
+        "userExperience": null,
+        "safeguard": null
     },
     "createdDateTime": "String (timestamp)",
     "lastModifiedDateTime": "String (timestamp)"
@@ -183,7 +184,6 @@ Content-Type: application/json
         "monitoring": {
             "monitoringRules": [
                 {
-                    "@odata.type": "#microsoft.graph.windowsUpdates.monitoringRule",
                     "signal": "rollback",
                     "threshold": 10,
                     "action": "pauseDeployment"
@@ -232,7 +232,8 @@ Content-Type: application/json
             ]
         },
         "rollout": null,
-        "userExperience": null
+        "userExperience": null,
+        "safeguard": null
     },
     "createdDateTime": "String (timestamp)",
     "lastModifiedDateTime": "String (timestamp)"

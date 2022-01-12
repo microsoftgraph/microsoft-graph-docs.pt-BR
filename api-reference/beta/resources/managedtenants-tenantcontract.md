@@ -1,16 +1,16 @@
 ---
 title: Tipo de recurso tenantContract
 description: Representa as informações de relação entre um locatário e a entidade de gerenciamento.
-author: isaiahwilliams
-localization_priority: Normal
+author: idwilliams
+ms.localizationpriority: medium
 ms.prod: microsoft-365-lighthouse
 doc_type: resourcePageType
-ms.openlocfilehash: 104b475428efe82a2e56f823845b933149aeab18
-ms.sourcegitcommit: e372382019f1a136543eadab02ba70af3921e098
+ms.openlocfilehash: d2531120eda65f90cd541e9f536f74733d423ec8
+ms.sourcegitcommit: 71186ad44d8d0df15e10b0f89df68d2ef0cf9d14
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/13/2021
-ms.locfileid: "53401995"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "61791858"
 ---
 # <a name="tenantcontract-resource-type"></a>Tipo de recurso tenantContract
 
@@ -24,7 +24,7 @@ Representa as informações de relação entre um locatário e a entidade de ger
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
 |contractType|Int32|O tipo de relação existente entre a entidade de gerenciamento e o locatário. Opcional. Somente leitura.|
-|defaultDomainName|Cadeia de caracteres|O nome de domínio padrão para o locatário. Obrigatório. Somente leitura.|
+|defaultDomainName|String|O nome de domínio padrão para o locatário. Obrigatório. Somente leitura.|
 |displayName|String|O nome de exibição do locatário. Opcional. Somente leitura.|
 
 ## <a name="relationships"></a>Relações

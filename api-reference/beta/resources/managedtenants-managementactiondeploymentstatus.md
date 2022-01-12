@@ -1,16 +1,16 @@
 ---
 title: tipo de recurso managementActionDeploymentStatus
 description: Representa o status de implantação de um determinado locatário gerenciado.
-author: isaiahwilliams
-localization_priority: Normal
+author: idwilliams
+ms.localizationpriority: medium
 ms.prod: microsoft-365-lighthouse
 doc_type: resourcePageType
-ms.openlocfilehash: efd789a7b4b48098e8d679273da1152f6611a28c
-ms.sourcegitcommit: e372382019f1a136543eadab02ba70af3921e098
+ms.openlocfilehash: 2f9b8ce493239e4c33bc2f20c615897afab41d9b
+ms.sourcegitcommit: 71186ad44d8d0df15e10b0f89df68d2ef0cf9d14
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/13/2021
-ms.locfileid: "53402011"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "61791879"
 ---
 # <a name="managementactiondeploymentstatus-resource-type"></a>tipo de recurso managementActionDeploymentStatus
 
@@ -23,8 +23,8 @@ Representa o status de implantação de um determinado locatário gerenciado.
 ## <a name="properties"></a>Propriedades
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|managementActionId|Cadeia de caracteres|O identificador da ação de gerenciamento. Obrigatório. Somente leitura.|
-|managementTemplateId|Cadeia de caracteres|O identificador de modelo de gerenciamento usado para gerar a ação de gerenciamento. Obrigatório. Somente leitura.|
+|managementActionId|String|O identificador da ação de gerenciamento. Obrigatório. Somente leitura.|
+|managementTemplateId|String|O identificador de modelo de gerenciamento usado para gerar a ação de gerenciamento. Obrigatório. Somente leitura.|
 |status|managementActionStatus|O status da ação de gerenciamento. Os valores possíveis são: `toAddress`, `completed`, `error`, `timeOut`, `inProgress`, `planned`, `resolvedBy3rdParty`, `resolvedThroughAlternateMitigation`, `riskAccepted`, `unknownFutureValue`. Obrigatório.|
 |workloadActionDeploymentStatuses|[coleção microsoft.graph.managedTenants.workloadActionDeploymentStatus](../resources/managedtenants-workloadactiondeploymentstatus.md)|A coleção de estatuetas de implantação de ação de carga de trabalho para a ação de gerenciamento determinada. Opcional.|
 

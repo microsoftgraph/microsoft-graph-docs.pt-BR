@@ -1,16 +1,16 @@
 ---
 title: Gerenciamento de listaActionTenantDeploymentStatus
 description: Obter uma lista dos objetos managementActionTenantDeploymentStatus e suas propriedades.
-author: isaiahwilliams
+author: idwilliams
 ms.localizationpriority: medium
 ms.prod: microsoft-365-lighthouse
 doc_type: apiPageType
-ms.openlocfilehash: a9681e5d6a5bc5537854971bd1e579e7bc8a6871
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: 3f51550c706cb1b269cbdf7dd2eed43a4e61737e
+ms.sourcegitcommit: 71186ad44d8d0df15e10b0f89df68d2ef0cf9d14
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "60981101"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "61861947"
 ---
 # <a name="list-managementactiontenantdeploymentstatus"></a>Gerenciamento de listaActionTenantDeploymentStatus
 Namespace: microsoft.graph.managedTenants
@@ -82,7 +82,7 @@ GET https://graph.microsoft.com/beta/tenantRelationships/managedTenants/manageme
 [!INCLUDE [sample-code](../includes/snippets/java/list-managementactiontenantdeploymentstatus-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[Go](#tab/go)
+# <a name="go"></a>[Ir](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/list-managementactiontenantdeploymentstatus-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 

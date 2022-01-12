@@ -3,12 +3,12 @@ title: Componente person no microsoft Graph Toolkit
 description: O componente de pessoa é usado para exibir uma pessoa ou contato usando sua foto, nome e/ou endereço de email.
 ms.localizationpriority: medium
 author: nmetulev
-ms.openlocfilehash: 0cb5c1306a9cec54df6ab6a9d3cbd1aa0995a64a
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: ab941533b816d80c490c74e157f3d6aa09760928
+ms.sourcegitcommit: 71186ad44d8d0df15e10b0f89df68d2ef0cf9d14
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59103841"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "61859950"
 ---
 # <a name="person-component-in-the-microsoft-graph-toolkit"></a>Componente person no microsoft Graph Toolkit
 
@@ -67,7 +67,7 @@ Você pode usar várias propriedades para personalizar o componente.
 | presença de pessoa | personPresence | Desmarcar a presença da pessoa. |
 | fetch-image     | fetchImage     | De definir o sinalizador para buscar automaticamente do `personImage` Microsoft Graph com base no objeto fornecido pelo `personDetails` usuário. |
 | tipo avatar     | avatarType     | Definir ou `initials` `photo` renderizar o estado de exibição - o padrão é foto. |
-| modo de exibição            | modo de exibição           | Definir para controlar como a pessoa é renderizada. O padrão é `avatar` <br /> `avatar` - mostrar somente o avatar <br /> `oneline` - mostrar avatar e primeira linha ( `displayName` por padrão) <br /> `twolines` - mostrar avatar e duas linhas de texto ( `displayName` `mail` e por padrão)|
+| modo de exibição            | modo de exibição           | Definir para controlar como a pessoa é renderizada. O padrão é `avatar` <br /> `avatar` - mostrar somente o avatar <br /> `oneline` - mostrar avatar e primeira linha ( `displayName` por padrão) <br /> `twolines` - mostrar avatar e duas linhas de texto ( `displayName` `mail` e por padrão) <br /> `threelines` - mostrar avatar e três linhas de texto ( `displayName` e `mail` por `jobTitle` padrão) |
 | line1-property  | line1Property  | Define a propriedade da personDetails a ser usada para a primeira linha de texto. O padrão é `displayName`.|
 | line2-property  | line2Property  | Define a propriedade da personDetails a ser usada para a segunda linha de texto. O padrão é `mail`.|
 | line3-property  | line3Property  | Define a propriedade da personDetails a ser usada para a terceira linha de texto. O padrão é `jobTitle`.|
@@ -130,8 +130,8 @@ O `mgt-person` componente dá suporte a vários [modelos](../customize-component
 
 | Tipo de dados | Contexto de dados | Descrição |
 | --------- | ------------ | ----------- |
-| loading | Nenhuma | O modelo a ser render enquanto o componente está em um estado de carregamento. |
-| no-data | Nenhuma | O modelo a ser renderizar quando nenhuma imagem ou dados de pessoa estiver disponível. | 
+| loading | none | O modelo a ser render enquanto o componente está em um estado de carregamento. |
+| no-data | none | O modelo a ser renderizar quando nenhuma imagem ou dados de pessoa estiver disponível. | 
 | Padrão. | pessoa: o objeto de detalhes da pessoa <br> `personImage`: A URL da imagem <br> `personPresence`: O objeto de detalhes de presença para pessoa  | O modelo padrão substitui todo o componente por seu próprio. |
 | person-card | pessoa: o objeto de detalhes da pessoa <br> `personImage`: A URL da imagem | O modelo para atualizar o mgt-person-card exibido em foco ou clique. |
 | line1 | pessoa: o objeto de detalhes da pessoa | O modelo para a primeira linha de metadados de pessoa. |

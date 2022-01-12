@@ -1,16 +1,16 @@
 ---
 title: Excluir updatableAsset
 description: Exclua um objeto updatableAsset.
-author: Alice-at-Microsoft
+author: aarononeal
 ms.localizationpriority: medium
 ms.prod: w10
 doc_type: apiPageType
-ms.openlocfilehash: 069d3806dc94bde3ddc1e89a00093e9ba1adda8d
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: 665953a75322bd8d949610ed80630349f59c650d
+ms.sourcegitcommit: 71186ad44d8d0df15e10b0f89df68d2ef0cf9d14
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "61031258"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "61860018"
 ---
 # <a name="delete-updatableasset"></a>Excluir updatableAsset
 Namespace: microsoft.graph.windowsUpdates
@@ -79,7 +79,7 @@ DELETE https://graph.microsoft.com/beta/admin/windows/updates/updatableAssets/{u
 [!INCLUDE [sample-code](../includes/snippets/java/delete-updatableasset-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[Go](#tab/go)
+# <a name="go"></a>[Ir](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/delete-updatableasset-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 

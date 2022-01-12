@@ -5,12 +5,12 @@ ms.localizationpriority: high
 author: simonhult
 ms.prod: insights
 doc_type: conceptualPageType
-ms.openlocfilehash: 17b0c03659e53685ff0644100f31dc7bd20df4d4
-ms.sourcegitcommit: c333953a9188b4cd4a9ab94cbe68871e8f3563e5
+ms.openlocfilehash: 1ae0e4bd967238aa5566177b89c808231999f688
+ms.sourcegitcommit: 71186ad44d8d0df15e10b0f89df68d2ef0cf9d14
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/30/2021
-ms.locfileid: "58695249"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "61861248"
 ---
 # <a name="use-the-microsoft-graph-api-to-integrate-people-and-workplace-intelligence-in-an-app"></a>Usar a API do Microsoft Graph para integrar a inteligência de pessoas e de local de trabalho em um aplicativo
 
@@ -51,7 +51,7 @@ Usar a API insights para identificar os documentos mais relevantes para o usuár
 - Listar documentos [mais populares](../api/insights-list-trending.md) de um usuário
 - Listar documentos [usados por](../api/insights-list-used.md) um usuário
 - Listar documentos [compartilhados com ou por](../api/insights-list-shared.md) um usuário
-- Explore maneiras de [personalizar as configurações de privacidade para obter informações sobre itens](/graph/insights-customize-item-insights-privacy.md) em uma organização.
+- Explore maneiras de [personalizar as configurações de privacidade para obter informações sobre itens](/graph/insights-customize-item-insights-privacy) em uma organização.
 
 ## <a name="manage--mentions"></a>Gerenciar as @menções
 

@@ -1,16 +1,16 @@
 ---
 title: Tipo de recurso qualityUpdateCatalogEntry
 description: Metadados para uma atualização Windows 10 de qualidade que você pode aprovar para implantação.
-author: Alice-at-Microsoft
+author: aarononeal
 ms.localizationpriority: medium
 ms.prod: w10
 doc_type: resourcePageType
-ms.openlocfilehash: 23301d5de5d089ed47dc884ad62a88b0660cd0ec
-ms.sourcegitcommit: c6a8c1cc13ace38d6c4371139ee84707c5c93352
+ms.openlocfilehash: bdac770931e6986ac4233bf32d0eb82bc9a08be4
+ms.sourcegitcommit: 71186ad44d8d0df15e10b0f89df68d2ef0cf9d14
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/10/2021
-ms.locfileid: "60891176"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "61863009"
 ---
 # <a name="qualityupdatecatalogentry-resource-type"></a>Tipo de recurso qualityUpdateCatalogEntry
 
@@ -28,9 +28,9 @@ Herda de [softwareUpdateCatalogEntry](../resources/windowsupdates-softwareupdate
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
 |deployableUntilDateTime|DateTimeOffset|A data em que o conteúdo não está mais disponível para implantação usando o serviço. Somente leitura. Herdado [de softwareUpdateCatalogEntry](../resources/windowsupdates-softwareupdatecatalogentry.md).|
-|displayName|Cadeia de caracteres|O nome de exibição do conteúdo. Somente leitura. Herdado [de softwareUpdateCatalogEntry](../resources/windowsupdates-softwareupdatecatalogentry.md).|
+|displayName|String|O nome de exibição do conteúdo. Somente leitura. Herdado [de softwareUpdateCatalogEntry](../resources/windowsupdates-softwareupdatecatalogentry.md).|
 |id|String|O identificador exclusivo para a entrada do catálogo. Somente leitura. Herdado [de softwareUpdateCatalogEntry](../resources/windowsupdates-softwareupdatecatalogentry.md).|
-|isExpeditable|Boolean|Indica se o conteúdo pode ser implantado como uma atualização de qualidade acelerada. Somente leitura.|
+|isExpeditable|Booliano|Indica se o conteúdo pode ser implantado como uma atualização de qualidade acelerada. Somente leitura.|
 |qualityUpdateClassification|microsoft.graph.windowsUpdates.qualityUpdateClassification|A classificação na atualização de qualidade. Os valores possíveis são: `all`, `security`, `nonSecurity`, `unknownFutureValue`. Somente leitura.|
 |releaseDateTime|DateTimeOffset|A data de lançamento do conteúdo. Somente leitura. Herdado [de softwareUpdateCatalogEntry](../resources/windowsupdates-softwareupdatecatalogentry.md).|
 

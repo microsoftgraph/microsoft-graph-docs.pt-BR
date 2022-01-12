@@ -1,16 +1,16 @@
 ---
 title: Tipo de recurso cloudPcDevice
 description: Representa um dispositivo de computador na nuvem que pertence a um determinado locatário gerenciado.
-author: isaiahwilliams
-localization_priority: Normal
+author: idwilliams
+ms.localizationpriority: medium
 ms.prod: microsoft-365-lighthouse
 doc_type: resourcePageType
-ms.openlocfilehash: 57eabb6720987a8a9bfca4c18e283057848b65cf
-ms.sourcegitcommit: e372382019f1a136543eadab02ba70af3921e098
+ms.openlocfilehash: f45893c100f335c34d700ba4eef07074469fa97c
+ms.sourcegitcommit: 71186ad44d8d0df15e10b0f89df68d2ef0cf9d14
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/13/2021
-ms.locfileid: "53401945"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "61862343"
 ---
 # <a name="cloudpcdevice-resource-type"></a>Tipo de recurso cloudPcDevice
 
@@ -29,17 +29,17 @@ Representa um dispositivo de computador na nuvem que pertence a um determinado l
 ## <a name="properties"></a>Propriedades
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|cloudPcStatus|Cadeia de caracteres|O status do computador de nuvem. Os valores possíveis são: `notProvisioned`, `provisioning`, `provisioned`, `upgrading`, `inGracePeriod`, `deprovisioning`, `failed`. Obrigatório. Somente leitura.|
-|displayName|Cadeia de caracteres|O nome de exibição do computador de nuvem. Obrigatório. Somente leitura.|
-|id|Cadeia de caracteres|O identificador exclusivo do computador de nuvem. Obrigatório. Somente leitura.|
+|cloudPcStatus|String|O status do computador de nuvem. Os valores possíveis são: `notProvisioned`, `provisioning`, `provisioned`, `upgrading`, `inGracePeriod`, `deprovisioning`, `failed`. Obrigatório. Somente leitura.|
+|displayName|String|O nome de exibição do computador de nuvem. Obrigatório. Somente leitura.|
+|id|String|O identificador exclusivo do computador de nuvem. Obrigatório. Somente leitura.|
 |lastRefreshedDateTime|DateTimeOffset|Data e hora em que a entidade foi atualizada pela última vez na plataforma de gerenciamento de vários locatários. Obrigatório. Somente leitura.|
-|managedDeviceId|Cadeia de caracteres|O identificador de dispositivo gerenciado para o computador de nuvem. Opcional. Somente leitura.|
+|managedDeviceId|String|O identificador de dispositivo gerenciado para o computador de nuvem. Opcional. Somente leitura.|
 |managedDeviceName|String|O nome de exibição do dispositivo gerenciado para o computador de nuvem. Opcional. Somente leitura.|
-|provisioningPolicyId|Cadeia de caracteres|O identificador de política de provisionamento para o computador de nuvem. Obrigatório. Somente leitura.|
+|provisioningPolicyId|String|O identificador de política de provisionamento para o computador de nuvem. Obrigatório. Somente leitura.|
 |servicePlanName|Cadeia de caracteres|O nome do plano de serviço para o computador na nuvem. Obrigatório. Somente leitura.|
-|tenantDisplayName|Cadeia de caracteres|O nome de exibição do locatário gerenciado. Obrigatório. Somente leitura.|
+|tenantDisplayName|String|O nome de exibição do locatário gerenciado. Obrigatório. Somente leitura.|
 |tenantId|String|O Azure Active Directory do locatário para o [locatário gerenciado.](../resources/managedtenants-tenant.md) Obrigatório. Somente leitura.|
-|userPrincipalName|Cadeia de caracteres|O nome principal do usuário (UPN) do usuário atribuído ao computador de nuvem. Obrigatório. Somente leitura.|
+|userPrincipalName|String|O nome principal do usuário (UPN) do usuário atribuído ao computador de nuvem. Obrigatório. Somente leitura.|
 
 ## <a name="relationships"></a>Relações
 Nenhum

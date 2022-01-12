@@ -3,15 +3,15 @@ author: ananmishr
 description: O recurso Audio agrupa propriedades relacionadas a áudio em um item em uma estrutura simples.
 ms.date: 09/10/2017
 title: Áudio
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: microsoft-teams
 doc_type: resourcePageType
-ms.openlocfilehash: 146d9730c0a1c4e73ac16815abddd37eb729545b
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 436ff5a46dd83c3a736765515678a3e2e47f620f
+ms.sourcegitcommit: 71186ad44d8d0df15e10b0f89df68d2ef0cf9d14
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48034200"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "61792061"
 ---
 # <a name="audio-facet"></a>Faceta Audio
 
@@ -22,6 +22,8 @@ Namespace: microsoft.graph
 O recurso **Audio** agrupa propriedades relacionadas a áudio em um item em uma estrutura simples.
 
 Se um [**DriveItem**](driveitem.md) tiver uma faceta **audio** não nula, o item representará um arquivo de áudio. As propriedades do recurso **Áudio** são preenchidas extraindo-se os metadados do arquivo. 
+
+O **recurso Audio** só é suportado no OneDrive Pessoal.
 
 ## <a name="json-representation"></a>Representação JSON
 

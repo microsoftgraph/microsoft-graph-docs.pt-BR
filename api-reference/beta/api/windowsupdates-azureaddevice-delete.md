@@ -1,16 +1,16 @@
 ---
 title: Excluir azureADDevice
 description: Exclua um objeto azureADDevice.
-author: Alice-at-Microsoft
+author: aarononeal
 ms.localizationpriority: medium
 ms.prod: w10
 doc_type: apiPageType
-ms.openlocfilehash: f0308c61a73be5f29ad8087de0372d6dbf4f6b1f
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: 39bc0d0dffb2a1ac9bb00115376c4fd03058e958
+ms.sourcegitcommit: 71186ad44d8d0df15e10b0f89df68d2ef0cf9d14
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "61029984"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "61791956"
 ---
 # <a name="delete-azureaddevice"></a>Excluir azureADDevice
 Namespace: microsoft.graph.windowsUpdates
@@ -81,7 +81,7 @@ DELETE https://graph.microsoft.com/beta/admin/windows/updates/updatableAssets/{a
 [!INCLUDE [sample-code](../includes/snippets/java/delete-azureaddevice-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[Go](#tab/go)
+# <a name="go"></a>[Ir](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/delete-azureaddevice-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 

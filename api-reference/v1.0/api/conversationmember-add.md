@@ -1,16 +1,16 @@
 ---
 title: Adicionar conversationMember
-description: Adicionar conversationMember a um canal.
+description: Adicione um conversationMember a um canal.
 author: akjo
 doc_type: apiPageType
 ms.localizationpriority: medium
 ms.prod: microsoft-teams
-ms.openlocfilehash: adda61aabc9e903bb2883ef393bbe1f02dc362be
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: 2d85a4370f039d84124a00629dbed2d413639842
+ms.sourcegitcommit: 71186ad44d8d0df15e10b0f89df68d2ef0cf9d14
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "61031174"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "61792110"
 ---
 # <a name="add-conversationmember"></a>Adicionar conversationMember
 
@@ -57,7 +57,7 @@ Se bem-sucedido, este método retornará um código de resposta `201 Created` e 
 
 ### <a name="request"></a>Solicitação
 
-Este é um exemplo da solicitação.
+Veja a seguir um exemplo de uma solicitação.
 
 
 # <a name="http"></a>[HTTP](#tab/http)
@@ -92,7 +92,7 @@ content-length: 26
 [!INCLUDE [sample-code](../includes/snippets/java/create-conversation-member-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[Go](#tab/go)
+# <a name="go"></a>[Ir](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/create-conversation-member-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
@@ -101,7 +101,7 @@ content-length: 26
 
 ### <a name="response"></a>Resposta
 
-Veja a seguir um exemplo da resposta.
+Este é um exemplo de resposta.
 
 >**Observação:** o objeto de resposta mostrado aqui pode ser encurtado para legibilidade.
 <!-- {

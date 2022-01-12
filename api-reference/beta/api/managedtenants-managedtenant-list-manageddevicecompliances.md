@@ -1,16 +1,16 @@
 ---
 title: Listar managedDeviceCompliances
 description: Obter uma lista dos objetos managedDeviceCompliance e suas propriedades.
-author: isaiahwilliams
+author: idwilliams
 ms.localizationpriority: medium
 ms.prod: microsoft-365-lighthouse
 doc_type: apiPageType
-ms.openlocfilehash: 869f37bcfc17d0321ba47894906a42c32922d62c
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: ea9d76b24e6f2a46fa58eff0dbe2f88b4a6e8cde
+ms.sourcegitcommit: 71186ad44d8d0df15e10b0f89df68d2ef0cf9d14
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "61022115"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "61791487"
 ---
 # <a name="list-manageddevicecompliances"></a>Listar managedDeviceCompliances
 Namespace: microsoft.graph.managedTenants
@@ -82,7 +82,7 @@ GET https://graph.microsoft.com/beta/tenantRelationships/managedTenants/managedD
 [!INCLUDE [sample-code](../includes/snippets/java/list-manageddevicecompliance-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[Go](#tab/go)
+# <a name="go"></a>[Ir](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/list-manageddevicecompliance-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 

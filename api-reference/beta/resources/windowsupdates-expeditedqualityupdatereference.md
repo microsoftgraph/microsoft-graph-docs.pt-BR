@@ -1,16 +1,16 @@
 ---
 title: Tipo de recurso expeditedQualityUpdateReference
 description: Representa Windows 10 conteúdo de atualização de qualidade para acelerar.
-author: Alice-at-Microsoft
+author: aarononeal
 ms.localizationpriority: medium
 ms.prod: w10
 doc_type: resourcePageType
-ms.openlocfilehash: c3313483305613cf684b066f2ba9569676974b23
-ms.sourcegitcommit: c6a8c1cc13ace38d6c4371139ee84707c5c93352
+ms.openlocfilehash: fa89e4c7cb8a20431b07b88e4d2eb92193d7148c
+ms.sourcegitcommit: 71186ad44d8d0df15e10b0f89df68d2ef0cf9d14
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/10/2021
-ms.locfileid: "60890819"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "61861119"
 ---
 # <a name="expeditedqualityupdatereference-resource-type"></a>Tipo de recurso expeditedQualityUpdateReference
 

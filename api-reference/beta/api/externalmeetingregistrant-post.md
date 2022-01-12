@@ -5,12 +5,12 @@ author: mkhribech
 ms.localizationpriority: medium
 ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: 226cb77bcc68612982769168945d1d1d556d4027
-ms.sourcegitcommit: ba46f9f77d1e0eb9c7f5b2f4366534bfcf99d9c0
+ms.openlocfilehash: b5c3bb05638325778188fcb265cb33198988d0a8
+ms.sourcegitcommit: 71186ad44d8d0df15e10b0f89df68d2ef0cf9d14
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/17/2021
-ms.locfileid: "61565130"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "61832450"
 ---
 # <a name="create-externalmeetingregistrant"></a>Criar externalMeetingRegistrant
 
@@ -20,7 +20,7 @@ Namespace: microsoft.graph
 
 Registrar um [externalMeetingRegistrant em](../resources/externalmeetingregistrant.md) uma reunião online que tenha [externalMeetingRegistration](../resources/externalmeetingregistration.md) habilitado. O organizador da reunião registra alguém fornecendo uma **id** exclusiva no sistema de registro externo e obtém o **joinWebUrl** exclusivo desse registro.
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>Permissões
 
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
@@ -39,7 +39,7 @@ Para criar um registro de reunião externa com permissão delegada ( `/me` ) e a
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /me/onlineMeetings/{meetingId}/registration/registrants
-POST /users/{userId}/onlineMeetings{meetingId}/registration/registrants
+POST /users/{userId}/onlineMeetings/{meetingId}/registration/registrants
 ```
 
 > [!TIP]

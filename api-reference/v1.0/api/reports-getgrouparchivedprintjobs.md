@@ -5,12 +5,12 @@ author: nilakhan
 ms.localizationpriority: medium
 ms.prod: cloud-printing
 doc_type: apiPageType
-ms.openlocfilehash: 646d877525e0aebefe3ca0a67454d747cfda2305
-ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
+ms.openlocfilehash: 9179827d9f46d468d384cb98a324832694ff15df
+ms.sourcegitcommit: 71186ad44d8d0df15e10b0f89df68d2ef0cf9d14
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/12/2021
-ms.locfileid: "60942692"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "61791921"
 ---
 # <a name="reportroot-getgrouparchivedprintjobs"></a>reportRoot: getGroupArchivedPrintJobs
 Namespace: microsoft.graph
@@ -39,13 +39,15 @@ GET /reports/getGroupArchivedPrintJobs
 ```
 
 ## <a name="function-parameters"></a>Parâmetros de função
+Na URL de solicitação, forneça os seguintes parâmetros de função com valores:
 
 | Parâmetro     | Tipo                 | Obrigatório? | Descrição                                                          |
 |---------------|----------------------|-----------|----------------------------------------------------------------------|
 | `groupId`     | `Edm.String`         | Sim       | A ID do grupo para o que retornar dados.                              |
-| `startDateTime` | `Edm.DateTimeOffset` | Não        | A data de início (inclusive) do período de tempo a ser incluído. |
-| `endDateTime`   | `Edm.DateTimeOffset` | Não        | A data de término (inclusive) do período de tempo a ser incluído.   |
+| `startDateTime` | `Edm.DateTimeOffset` | Não        | A data de início (inclusive) do período de tempo a ser incluído.|
+| `endDateTime`   | `Edm.DateTimeOffset` | Não        | A data de término (inclusive) do período de tempo a ser incluído.|
 
+>**Observação:** Se um valor não for necessário, passe o parâmetro com valor nulo.
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
 |Nome|Descrição|
 |:---|:---|

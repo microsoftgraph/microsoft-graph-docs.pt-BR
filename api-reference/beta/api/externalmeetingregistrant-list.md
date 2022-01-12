@@ -5,12 +5,12 @@ author: mkhribech
 ms.localizationpriority: medium
 ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: c232d26a57481f0cab4542f8f769522bc75e9bc1
-ms.sourcegitcommit: ba46f9f77d1e0eb9c7f5b2f4366534bfcf99d9c0
+ms.openlocfilehash: 81810e47432aaa0d64032ef481522620c02314a8
+ms.sourcegitcommit: 71186ad44d8d0df15e10b0f89df68d2ef0cf9d14
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/17/2021
-ms.locfileid: "61565129"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "61792019"
 ---
 # <a name="list-externalmeetingregistrants"></a>Listar externalMeetingRegistrants
 
@@ -20,7 +20,7 @@ Namespace: microsoft.graph
 
 Obter uma lista dos [externalMeetingRegistrants](../resources/externalmeetingregistrant.md) de um [onlineMeeting](../resources/onlinemeeting.md).
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>Permissões
 
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
@@ -39,7 +39,7 @@ Para obter uma lista de todos os registrantes de reuniões externas com permiss�
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /me/onlineMeetings/{meetingId}/registration/registrants
-GET /users/{userId}/onlineMeetings{meetingId}/registration/registrants
+GET /users/{userId}/onlineMeetings/{meetingId}/registration/registrants
 ```
 
 > [!TIP]

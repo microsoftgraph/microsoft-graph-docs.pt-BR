@@ -1,16 +1,16 @@
 ---
 title: tipo de recurso managementIntent
 description: Representa metadados para uma linha de base e quais modelos de gerenciamento estão incluídos.
-author: isaiahwilliams
-localization_priority: Normal
+author: idwilliams
+ms.localizationpriority: medium
 ms.prod: microsoft-365-lighthouse
 doc_type: resourcePageType
-ms.openlocfilehash: 7648da23e5d49a9bd2910c2ccbde7e676a1d7cd0
-ms.sourcegitcommit: e372382019f1a136543eadab02ba70af3921e098
+ms.openlocfilehash: c3e4954e34768b711f621efe98b00eda5baae1d9
+ms.sourcegitcommit: 71186ad44d8d0df15e10b0f89df68d2ef0cf9d14
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/13/2021
-ms.locfileid: "53401998"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "61791928"
 ---
 # <a name="managementintent-resource-type"></a>tipo de recurso managementIntent
 
@@ -29,9 +29,9 @@ Representa metadados para uma linha de base e quais modelos de gerenciamento est
 ## <a name="properties"></a>Propriedades
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|displayName|Cadeia de caracteres|O nome de exibição para a intenção de gerenciamento. Opcional. Somente leitura.|
-|id|Cadeia de caracteres|O identificador exclusivo para a intenção de gerenciamento. Obrigatório. Somente leitura.|
-|isGlobal|Boolean|Um sinalizador que indica se a intenção de gerenciamento é global. Obrigatório. Somente leitura.|
+|displayName|String|O nome de exibição para a intenção de gerenciamento. Opcional. Somente leitura.|
+|id|String|O identificador exclusivo para a intenção de gerenciamento. Obrigatório. Somente leitura.|
+|isGlobal|Booliano|Um sinalizador que indica se a intenção de gerenciamento é global. Obrigatório. Somente leitura.|
 |managementTemplates|[coleção microsoft.graph.managedTenants.managementTemplateDetailedInfo](../resources/managedtenants-managementtemplatedetailedinfo.md)|A coleção de modelos de gerenciamento associados à intenção de gerenciamento. Opcional. Somente leitura.|
 
 ## <a name="relationships"></a>Relações

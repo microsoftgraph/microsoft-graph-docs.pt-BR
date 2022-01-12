@@ -1,16 +1,16 @@
 ---
 title: Obter tenantCustomizedInformation
 description: Leia as propriedades e as relações de um objeto tenantCustomizedInformation.
-author: isaiahwilliams
+author: idwilliams
 ms.localizationpriority: medium
 ms.prod: microsoft-365-lighthouse
 doc_type: apiPageType
-ms.openlocfilehash: 9658e3862e2e64f0bae1e91efe668a80aa32b938
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: 882f53579f59943f17f7caa0de30275fe5437b63
+ms.sourcegitcommit: 71186ad44d8d0df15e10b0f89df68d2ef0cf9d14
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "61014618"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "61861853"
 ---
 # <a name="get-tenantcustomizedinformation"></a>Obter tenantCustomizedInformation
 Namespace: microsoft.graph.managedTenants
@@ -82,7 +82,7 @@ GET https://graph.microsoft.com/beta/tenantRelationships/managedTenants/tenantsC
 [!INCLUDE [sample-code](../includes/snippets/java/get-tenantcustomizedinformation-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[Go](#tab/go)
+# <a name="go"></a>[Ir](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/get-tenantcustomizedinformation-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 

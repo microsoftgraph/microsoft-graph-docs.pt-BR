@@ -1,16 +1,16 @@
 ---
 title: Tipo de recurso managedTenantExecutionError
 description: Representa uma exceção para uma operação de locatário gerenciado.
-author: isaiahwilliams
-localization_priority: Normal
+author: idwilliams
+ms.localizationpriority: medium
 ms.prod: microsoft-365-lighthouse
 doc_type: resourcePageType
-ms.openlocfilehash: 5a1fd2d1524cad663ee6acef93ab20cc8e40fd24
-ms.sourcegitcommit: e372382019f1a136543eadab02ba70af3921e098
+ms.openlocfilehash: 92917d60cc3bd22da02a8d447c305e275bab51a3
+ms.sourcegitcommit: 71186ad44d8d0df15e10b0f89df68d2ef0cf9d14
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/13/2021
-ms.locfileid: "53401905"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "61791893"
 ---
 # <a name="managedtenantexecutionerror-resource-type"></a>Tipo de recurso managedTenantExecutionError
 
@@ -25,10 +25,10 @@ Herda de [managedTenantOperationError](../resources/managedtenants-managedtenant
 ## <a name="properties"></a>Propriedades
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|erro|Cadeia de caracteres|A mensagem de erro da exceção. Herdado [de managedTenantOperationError](../resources/managedtenants-managedtenantoperationerror.md). Obrigatório. Somente leitura.|
-|errorDetails|Cadeia de caracteres|Informações de erro adicionais para a exceção. Opcional. Somente leitura.|
+|erro|String|A mensagem de erro da exceção. Herdado [de managedTenantOperationError](../resources/managedtenants-managedtenantoperationerror.md). Obrigatório. Somente leitura.|
+|errorDetails|String|Informações de erro adicionais para a exceção. Opcional. Somente leitura.|
 |nodeId|Int32|O identificador do nó onde ocorreu a exceção. Obrigatório. Somente leitura.|
-|rawToken|Cadeia de caracteres|O token da exceção. Opcional. Somente leitura.|
+|rawToken|String|O token da exceção. Opcional. Somente leitura.|
 |statementIndex|Int32|O índice de instrução da exceção. Obrigatório. Somente leitura.|
 |tenantId|String|O Azure Active Directory de locatário do locatário gerenciado. Herdado [de managedTenantOperationError](../resources/managedtenants-managedtenantoperationerror.md). Obrigatório. Somente leitura.|
 

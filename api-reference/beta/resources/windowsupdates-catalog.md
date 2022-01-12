@@ -1,16 +1,16 @@
 ---
 title: tipo de recurso de catálogo
 description: Entidade que representa o catálogo de conteúdo que você pode aprovar para implantação.
-author: Alice-at-Microsoft
-localization_priority: Normal
+author: aarononeal
+ms.localizationpriority: medium
 ms.prod: w10
 doc_type: resourcePageType
-ms.openlocfilehash: 3fc0630a36d123e6c3e208838d81ee7c33c62853
-ms.sourcegitcommit: 1b09298649d5606b471b4cbe1055419bbe2fc7e5
+ms.openlocfilehash: 0150875b940c9568212ae6a4acee0a0d01057feb
+ms.sourcegitcommit: 71186ad44d8d0df15e10b0f89df68d2ef0cf9d14
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "52067828"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "61863368"
 ---
 # <a name="catalog-resource-type"></a>tipo de recurso de catálogo
 
@@ -28,7 +28,7 @@ Entidade que representa o catálogo de conteúdo que você pode aprovar para imp
 ## <a name="properties"></a>Propriedades
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|id|Cadeia de caracteres|Um identificador para o catálogo. Somente leitura.|
+|id|String|Um identificador para o catálogo. Somente leitura.|
 
 ## <a name="relationships"></a>Relações
 |Relação|Tipo|Descrição|

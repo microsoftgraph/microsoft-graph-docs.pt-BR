@@ -1,16 +1,16 @@
 ---
 title: Tipo de recurso deploymentStateReason
 description: Um motivo para um estado de implantação específico.
-author: Alice-at-Microsoft
+author: aarononeal
 ms.localizationpriority: medium
 ms.prod: w10
 doc_type: resourcePageType
-ms.openlocfilehash: 54240d057734d17df3e0df3a270d1aab00022586
-ms.sourcegitcommit: c6a8c1cc13ace38d6c4371139ee84707c5c93352
+ms.openlocfilehash: 754bf9ad430e86be987d913335b761447a9c6956
+ms.sourcegitcommit: 71186ad44d8d0df15e10b0f89df68d2ef0cf9d14
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/10/2021
-ms.locfileid: "60890448"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "61862329"
 ---
 # <a name="deploymentstatereason-resource-type"></a>Tipo de recurso deploymentStateReason
 

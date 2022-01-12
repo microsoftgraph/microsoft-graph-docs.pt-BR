@@ -1,16 +1,16 @@
 ---
 title: Tipo de recurso updatableAsset
 description: Representa um ativo que pode receber atualizações.
-author: Alice-at-Microsoft
-localization_priority: Normal
+author: aarononeal
+ms.localizationpriority: medium
 ms.prod: w10
 doc_type: resourcePageType
-ms.openlocfilehash: 4bfdd3663c0868d22b262d398e505e0e8cb82835
-ms.sourcegitcommit: 1b09298649d5606b471b4cbe1055419bbe2fc7e5
+ms.openlocfilehash: af8759504e5b79a28686a9070de23c522b9eb0e3
+ms.sourcegitcommit: 71186ad44d8d0df15e10b0f89df68d2ef0cf9d14
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "52067231"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "61859964"
 ---
 # <a name="updatableasset-resource-type"></a>Tipo de recurso updatableAsset
 
@@ -45,7 +45,7 @@ Esse é um tipo abstrato.
 ## <a name="properties"></a>Propriedades
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|id|Cadeia de caracteres|Um identificador para o ativo. Chave. Não anulável. Somente leitura. Retornado por padrão.|
+|id|String|Um identificador para o ativo. Chave. Não anulável. Somente leitura. Devolvido por padrão.|
 
 ## <a name="relationships"></a>Relações
 Nenhum

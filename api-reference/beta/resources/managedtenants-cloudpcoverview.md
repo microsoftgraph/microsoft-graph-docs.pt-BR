@@ -1,16 +1,16 @@
 ---
 title: Tipo de recurso cloudPcOverview
 description: Representa uma visão geral dos PCs de nuvem para um determinado locatário gerenciado.
-author: isaiahwilliams
-localization_priority: Normal
+author: idwilliams
+ms.localizationpriority: medium
 ms.prod: microsoft-365-lighthouse
 doc_type: resourcePageType
-ms.openlocfilehash: a527dea18db31c8d7598a5b04ba538fa9a5af1ab
-ms.sourcegitcommit: e372382019f1a136543eadab02ba70af3921e098
+ms.openlocfilehash: 1eb4349c16a529c1ae3a8a9f57c221dd129ba5cc
+ms.sourcegitcommit: 71186ad44d8d0df15e10b0f89df68d2ef0cf9d14
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/13/2021
-ms.locfileid: "53401944"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "61795554"
 ---
 # <a name="cloudpcoverview-resource-type"></a>Tipo de recurso cloudPcOverview
 
@@ -29,7 +29,7 @@ Representa uma visão geral dos PCs de nuvem para um determinado locatário gere
 ## <a name="properties"></a>Propriedades
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|id|Cadeia de caracteres|O identificador exclusivo para a visão geral do computador na nuvem. Obrigatório. Somente leitura.|
+|id|String|O identificador exclusivo para a visão geral do computador na nuvem. Obrigatório. Somente leitura.|
 |lastRefreshedDateTime|DateTimeOffset|Data e hora em que a entidade foi atualizada pela última vez na plataforma de gerenciamento de vários locatários. Opcional. Somente leitura.|
 |numberOfCloudPcConnectionStatusFailed|Int32|O número de conexões de computador na nuvem que têm um status `failed` de . Opcional. Somente leitura.|
 |numberOfCloudPcConnectionStatusPassed|Int32|O número de conexões de computador na nuvem que têm um status `passed` de . Opcional. Somente leitura.|
@@ -44,7 +44,7 @@ Representa uma visão geral dos PCs de nuvem para um determinado locatário gere
 |numberOfCloudPcStatusProvisioning|Int32|O número de PCs de nuvem que têm um status `provisioning` de . Opcional. Somente leitura.|
 |numberOfCloudPcStatusUnknown|Int32|O número de PCs de nuvem que têm um status `unknown` de . Opcional. Somente leitura.|
 |numberOfCloudPcStatusUpgrading|Int32|O número de PCs de nuvem que têm um status `upgrading` de . Opcional. Somente leitura.|
-|tenantDisplayName|Cadeia de caracteres|O nome de exibição do locatário gerenciado. Opcional. Somente leitura.|
+|tenantDisplayName|String|O nome de exibição do locatário gerenciado. Opcional. Somente leitura.|
 |totalCloudPcConnectionStatus|Int32|O número total de status de conexão de computador na nuvem para o locatário gerenciado determinado. Opcional. Somente leitura.|
 |totalCloudPcStatus|Int32|O número total de estatuetas de computador na nuvem para o locatário gerenciado determinado. Opcional. Somente leitura.|
 

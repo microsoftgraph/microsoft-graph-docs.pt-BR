@@ -1,16 +1,16 @@
 ---
 title: Listar cloudPcOverviews
 description: Obter uma lista dos objetos cloudPcOverview e suas propriedades.
-author: isaiahwilliams
+author: idwilliams
 ms.localizationpriority: medium
 ms.prod: microsoft-365-lighthouse
 doc_type: apiPageType
-ms.openlocfilehash: aea13f5df557c7bbba1d86160a56583aabd74b8d
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: 6a642596dae136ddc2291895c74e9f03c081d010
+ms.sourcegitcommit: 71186ad44d8d0df15e10b0f89df68d2ef0cf9d14
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "61014660"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "61791522"
 ---
 # <a name="list-cloudpcoverviews"></a>Listar cloudPcOverviews
 Namespace: microsoft.graph.managedTenants
@@ -82,7 +82,7 @@ GET https://graph.microsoft.com/beta/tenantRelationships/managedTenants/cloudPcs
 [!INCLUDE [sample-code](../includes/snippets/java/list-cloudpcoverview-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[Go](#tab/go)
+# <a name="go"></a>[Ir](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/list-cloudpcoverview-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 

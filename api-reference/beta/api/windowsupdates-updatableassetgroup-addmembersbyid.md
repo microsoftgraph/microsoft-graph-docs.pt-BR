@@ -1,16 +1,16 @@
 ---
 title: 'updatableAssetGroup: addMembersById'
 description: Adicione membros do mesmo tipo a um updatableAssetGroup.
-author: Alice-at-Microsoft
+author: aarononeal
 ms.localizationpriority: medium
 ms.prod: w10
 doc_type: apiPageType
-ms.openlocfilehash: 6db28d08f600a3015e3a53b2cbaa7b86640beac3
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: ef0e17df9073c56f249f590544feaff696691925
+ms.sourcegitcommit: 71186ad44d8d0df15e10b0f89df68d2ef0cf9d14
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "61031244"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "61862787"
 ---
 # <a name="updatableassetgroup-addmembersbyid"></a>updatableAssetGroup: addMembersById
 Namespace: microsoft.graph.windowsUpdates
@@ -54,7 +54,7 @@ A tabela a seguir mostra os parâmetros que podem ser usados com esta ação.
 |Parâmetro|Tipo|Descrição|
 |:---|:---|:---|
 |ids|Coleção de cadeias de caracteres|Lista de identificadores correspondentes aos [recursos updatableAsset](../resources/windowsupdates-updatableasset.md) a adicionar como membros do **updatableAssetGroup**.|
-|memberEntityType|Cadeia de caracteres|O tipo completo dos **recursos updatableAsset.** Os valores possíveis são: `#microsoft.graph.windowsUpdates.azureADDevice` .|
+|memberEntityType|String|O tipo completo dos **recursos updatableAsset.** Os valores possíveis são: `#microsoft.graph.windowsUpdates.azureADDevice` .|
 
 ## <a name="response"></a>Resposta
 
@@ -99,7 +99,7 @@ Content-Type: application/json
 [!INCLUDE [sample-code](../includes/snippets/java/updatableassetgroup-addmembersbyid-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[Go](#tab/go)
+# <a name="go"></a>[Ir](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/updatableassetgroup-addmembersbyid-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 

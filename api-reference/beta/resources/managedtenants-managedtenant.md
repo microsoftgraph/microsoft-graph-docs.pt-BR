@@ -1,16 +1,16 @@
 ---
 title: Tipo de recurso managedTenant
 description: Represente as operações disponíveis que interagem com a plataforma de gerenciamento de vários locatários.
-author: isaiahwilliams
+author: idwilliams
 ms.localizationpriority: medium
 ms.prod: microsoft-365-lighthouse
 doc_type: resourcePageType
-ms.openlocfilehash: 7689344ee2e42df57a30f95c33628d607895610d
-ms.sourcegitcommit: 2456cf3c4117b88afefef139593796a2f919e7cc
+ms.openlocfilehash: 9047977dd701e9844ae7158b6a6c1845a189de4e
+ms.sourcegitcommit: 71186ad44d8d0df15e10b0f89df68d2ef0cf9d14
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/18/2021
-ms.locfileid: "61077130"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "61791900"
 ---
 # <a name="managedtenant-resource-type"></a>Tipo de recurso managedTenant
 

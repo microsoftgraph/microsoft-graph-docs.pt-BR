@@ -1,16 +1,16 @@
 ---
 title: Tipo de recurso do azureADDevice
 description: Representa um dispositivo no Azure Active Directory (Azure AD) registrado no serviço de implantação.
-author: Alice-at-Microsoft
-localization_priority: Normal
+author: aarononeal
+ms.localizationpriority: medium
 ms.prod: w10
 doc_type: resourcePageType
-ms.openlocfilehash: a9d7b68257895674530acfbafcd0fb6b6c9c7b02
-ms.sourcegitcommit: 1b09298649d5606b471b4cbe1055419bbe2fc7e5
+ms.openlocfilehash: a055c944c1b7a5f2bd4bbd23a9edc8d9c3b3ff88
+ms.sourcegitcommit: 71186ad44d8d0df15e10b0f89df68d2ef0cf9d14
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "52067809"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "61792187"
 ---
 # <a name="azureaddevice-resource-type"></a>Tipo de recurso do azureADDevice
 
@@ -44,9 +44,9 @@ Herda de [updatableAsset](../resources/windowsupdates-updatableasset.md).
 ## <a name="properties"></a>Propriedades
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|enrollments|[coleção microsoft.graph.windowsUpdates.updatableAssetEnrollment](../resources/windowsupdates-updatableassetenrollment.md)|Especifica áreas do serviço em que o dispositivo está inscrito. Somente leitura. Retornado por padrão.|
-|erros|[coleção microsoft.graph.windowsUpdates.updatableAssetError](../resources/windowsupdates-updatableasseterror.md)|Especifica quaisquer erros que impeçam que o dispositivo seja inscrito no gerenciamento de atualizações ou receving conteúdo implantado. Somente leitura. Retornado por padrão.|
-|id|Cadeia de caracteres|Um identificador do dispositivo. Chave. Não anulável. Somente leitura. Retornado por padrão. Herdado [de updatableAsset](../resources/windowsupdates-updatableasset.md)|
+|enrollments|[coleção microsoft.graph.windowsUpdates.updatableAssetEnrollment](../resources/windowsupdates-updatableassetenrollment.md)|Especifica áreas do serviço em que o dispositivo está inscrito. Somente leitura. Devolvido por padrão.|
+|erros|[coleção microsoft.graph.windowsUpdates.updatableAssetError](../resources/windowsupdates-updatableasseterror.md)|Especifica quaisquer erros que impeçam que o dispositivo seja inscrito no gerenciamento de atualizações ou receving conteúdo implantado. Somente leitura. Devolvido por padrão.|
+|id|String|Um identificador do dispositivo. Chave. Não anulável. Somente leitura. Devolvido por padrão. Herdado [de updatableAsset](../resources/windowsupdates-updatableasset.md)|
 
 ## <a name="relationships"></a>Relações
 Nenhum

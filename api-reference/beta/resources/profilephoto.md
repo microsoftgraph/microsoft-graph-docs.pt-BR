@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 doc_type: resourcePageType
 ms.prod: people
 author: kevinbellinger
-ms.openlocfilehash: f64f87c18bd6e5752671a6dbb28b8464f07cfa3a
-ms.sourcegitcommit: 8ae180a32dbd5a2b12512aee64699a2c23b8678b
+ms.openlocfilehash: 7f88fc5f2d8f3ebedce9301124e266ef84adff13
+ms.sourcegitcommit: 71186ad44d8d0df15e10b0f89df68d2ef0cf9d14
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/14/2021
-ms.locfileid: "60355544"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "61792005"
 ---
 # <a name="profilephoto-resource-type"></a>Tipo de recurso de profilePhoto
 
@@ -28,6 +28,10 @@ Os tamanhos de fotos em HD compatíveis com o Exchange Online são os seguintes:
 |:---------------|:--------|:----------|
 |[Get profilePhoto](../api/profilephoto-get.md) | [profilePhoto](profilephoto.md) |Obtenha a **profilePhoto** específica ou seus metadados (propriedades **profilePhoto**). |
 |[Update](../api/profilephoto-update.md) | [profilePhoto](profilephoto.md)  |Atribua uma foto para o usuário, grupo ou contato especificado. A foto deve estar em formato binário. Ela substitui a foto existente, se houver. |
+
+> [!NOTE]
+> 
+> No momento, não há suporte para o gerenciamento de fotos dos usuários usando Graph API do Microsoft AD B2C em locatários do Azure AD B2C.
 
 ## <a name="properties"></a>Propriedades
 | Propriedade     | Tipo   |Descrição|

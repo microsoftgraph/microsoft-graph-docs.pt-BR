@@ -1,16 +1,16 @@
 ---
 title: Tipo de recurso updatableAssetGroup
 description: Um grupo de recursos do azureADDevice que podem receber atualizações.
-author: Alice-at-Microsoft
-localization_priority: Normal
+author: aarononeal
+ms.localizationpriority: medium
 ms.prod: w10
 doc_type: resourcePageType
-ms.openlocfilehash: a3aca42b69a906f167393cfd284d6756b3c4bb52
-ms.sourcegitcommit: 1b09298649d5606b471b4cbe1055419bbe2fc7e5
+ms.openlocfilehash: 91e230fe3c158da0b02ce5af9df6f660855d253a
+ms.sourcegitcommit: 71186ad44d8d0df15e10b0f89df68d2ef0cf9d14
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "52067233"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "61861587"
 ---
 # <a name="updatableassetgroup-resource-type"></a>Tipo de recurso updatableAssetGroup
 
@@ -40,7 +40,7 @@ Herda de [updatableAsset](../resources/windowsupdates-updatableasset.md).
 ## <a name="properties"></a>Propriedades
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|id|Cadeia de caracteres|Um identificador para o grupo. Chave. Não anulável. Somente leitura. Retornado por padrão. Herdado [de updatableAsset](../resources/windowsupdates-updatableasset.md).|
+|id|String|Um identificador para o grupo. Chave. Não anulável. Somente leitura. Devolvido por padrão. Herdado [de updatableAsset](../resources/windowsupdates-updatableasset.md).|
 
 ## <a name="relationships"></a>Relações
 |Relação|Tipo|Descrição|

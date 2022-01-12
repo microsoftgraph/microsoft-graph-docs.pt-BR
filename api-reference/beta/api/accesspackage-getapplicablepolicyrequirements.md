@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: markwahl-msft
 ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: 598c33bb9e6de5f911c4db333fcecc717a08d1a2
-ms.sourcegitcommit: fd609cb401ff862c3f5c21847bac9af967c6bf82
+ms.openlocfilehash: b158fcfee76d583bd2b44baa1216badf4494f8a9
+ms.sourcegitcommit: 71186ad44d8d0df15e10b0f89df68d2ef0cf9d14
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/31/2021
-ms.locfileid: "61650654"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "61791914"
 ---
 # <a name="accesspackage-getapplicablepolicyrequirements"></a>accessPackage: getApplicablePolicyRequirements
 Namespace: microsoft.graph
@@ -48,15 +48,16 @@ Nenhum.
 |Autorização|{token} de portador. Obrigatório.|
 
 ## <a name="request-body"></a>Corpo da solicitação
-Não forneça um corpo de solicitação para esse método.
+Não fornece um corpo de solicitação para esse método se quiser recuperar uma lista de requisitos de pacote de acesso, como no exemplo 1. Se você quiser obter requisitos de política para o escopo do usuário, como no exemplo 2, deverá fornecer um corpo da solicitação.
 
 ## <a name="response"></a>Resposta
 Se tiver êxito, este método retornará um código de resposta e uma coleção `200 OK` [accessPackageAssignmentRequestRequirements](../resources/accesspackageassignmentrequestrequirements.md) no corpo da resposta, um objeto para cada política para a qual o usuário é **um allowedRequestor**. Se houver uma política sem requisitos, **o accessPackageAssignmentRequestRequirements** terá `false` e `null` valores. Se não houver políticas em que o usuário seja **um allowedRequestor**, uma coleção vazia será retornada.
 
 ## <a name="examples"></a>Exemplos
 
-### <a name="request"></a>Solicitação
+### <a name="example-1-retrieve-a-list-of-access-package-requirements-to-create-an-access-package"></a>Exemplo 1: recuperar uma lista de requisitos de pacote de acesso para criar um pacote de acesso
 
+#### <a name="request"></a>Solicitação
 
 # <a name="http"></a>[HTTP](#tab/http)
 <!-- {
@@ -83,14 +84,13 @@ POST https://graph.microsoft.com/beta/identityGovernance/entitlementManagement/a
 [!INCLUDE [sample-code](../includes/snippets/java/accesspackage-getapplicablepolicyrequirements-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[Go](#tab/go)
+# <a name="go"></a>[Ir](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/accesspackage-getapplicablepolicyrequirements-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
-
-### <a name="response"></a>Resposta
+#### <a name="response"></a>Resposta
 > **Observação:** o objeto de resposta mostrado aqui pode ser encurtado para legibilidade.
 <!-- {
   "blockType": "response",
@@ -106,16 +106,100 @@ Content-Type: application/json
 {
     "value": [
         {
-            "policyId": "449feb20-7040-499a-ba91-bdfb93ede34b", 
-            "policyDisplayName": "Initial Policy", 
-            "policyDescription": "Initial Policy", 
-            "isApprovalRequired": false, 
-            "isApprovalRequiredForExtension": false, 
-            "isRequestorJustificationRequired": false, 
-            "questions": [], 
+            "policyId": "d6322c23-04d6-eb11-b22b-c8d9d21f4e9a",
+            "policyDisplayName": "Initial Policy",
+            "policyDescription": "Initial Policy",
+            "isApprovalRequired": false,
+            "isApprovalRequiredForExtension": false,
+            "isRequestorJustificationRequired": false,
+            "questions": [
+                {
+                    "@odata.type": "#microsoft.graph.textInputQuestion",
+                    "id": "0fd349e2-a3a7-4712-af08-660f29c12b90",
+                    "isRequired": true,
+                    "isAnswerEditable": null,
+                    "sequence": 0,
+                    "isSingleLineQuestion": true,
+                    "text": {
+                        "defaultText": "What is your display name",
+                        "localizedTexts": []
+                    }
+                }
+            ],
             "existingAnswers": [],
             "schedule": []
         }
     ]
 }
 ``` 
+
+### <a name="example-2-get-policy-requirements-for-a-given-user-scope"></a>Exemplo 2: Obter requisitos de política para um determinado escopo de usuário
+
+#### <a name="request"></a>Solicitação
+
+<!-- { "blockType": "ignored" } -->
+```http
+POST /identityGovernance/entitlementManagement/accessPackages(‘b15419bb-5ffc-ea11-b207-c8d9d21f4e9a’)/getApplicablePolicyRequirements
+
+{
+        "subject": {
+            "objectId": "5acd375c-8acb-45de-a958-fa0dd89259ad"
+        }
+    }
+```
+
+
+
+#### <a name="response"></a>Resposta
+
+```http
+HTTP/1.1 200 OK
+Content-Type: application/json
+
+{
+    "value": [
+        {
+            "policyId": "d6322c23-04d6-eb11-b22b-c8d9d21f4e9a",
+            "policyDisplayName": "Initial Policy",
+            "policyDescription": "Initial Policy",
+            "isApprovalRequired": false,
+            "isApprovalRequiredForExtension": false,
+            "isRequestorJustificationRequired": false,
+            "questions": [
+                {
+                    "@odata.type": "#microsoft.graph.textInputQuestion",
+                    "id": "5a7f2a8f-b802-4438-bec6-09599bc43e13",
+                    "isRequired": false,
+                    "isAnswerEditable": true,
+                    "sequence": 0,
+                    "isSingleLineQuestion": true,
+                    "text": {
+                        "defaultText": "Enter your mail",
+                        "localizedTexts": []
+                    }
+                }
+            ],
+            "existingAnswers": [
+                {
+                    "@odata.type": "#microsoft.graph.answerString",
+                    "displayValue": "admin@contoso.com",
+                    "value": "admin@contoso.com",
+                    "answeredQuestion": {
+                        "@odata.type": "#microsoft.graph.textInputQuestion",
+                        "id": "5a7f2a8f-b802-4438-bec6-09599bc43e13",
+                        "isRequired": false,
+                        "isAnswerEditable": true,
+                        "sequence": 0,
+                        "isSingleLineQuestion": true,
+                        "text": {
+                            "defaultText": "Enter your mail",
+                            "localizedTexts": []
+                        }
+                    }
+                }
+            ],
+            "schedule": []
+        }
+    ]
+}
+```

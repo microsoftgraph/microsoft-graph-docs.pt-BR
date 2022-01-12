@@ -1,16 +1,16 @@
 ---
 title: Tipo de recurso tenantInfo
 description: Representa informações para um locatário gerenciado.
-author: isaiahwilliams
-localization_priority: Normal
+author: idwilliams
+ms.localizationpriority: medium
 ms.prod: microsoft-365-lighthouse
 doc_type: resourcePageType
-ms.openlocfilehash: c81df716b74511daab1f713f73bdd872e84e4987
-ms.sourcegitcommit: e372382019f1a136543eadab02ba70af3921e098
+ms.openlocfilehash: 96b899eeb6e16ef42b94f0632501e562db0a460f
+ms.sourcegitcommit: 71186ad44d8d0df15e10b0f89df68d2ef0cf9d14
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/13/2021
-ms.locfileid: "53401992"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "61791851"
 ---
 # <a name="tenantinfo-resource-type"></a>Tipo de recurso tenantInfo
 

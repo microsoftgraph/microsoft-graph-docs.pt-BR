@@ -1,16 +1,16 @@
 ---
 title: tipo de recurso managementActionTenantDeploymentStatus
 description: Representa o status de implantação de nível de locatário para a ação de gerenciamento.
-author: isaiahwilliams
-localization_priority: Normal
+author: idwilliams
+ms.localizationpriority: medium
 ms.prod: microsoft-365-lighthouse
 doc_type: resourcePageType
-ms.openlocfilehash: 1967c3ad96cc9c4e76a718cafab7ba14207753a9
-ms.sourcegitcommit: e372382019f1a136543eadab02ba70af3921e098
+ms.openlocfilehash: c06857bcdf492dc9779768df6fe09d08a6ec87b7
+ms.sourcegitcommit: 71186ad44d8d0df15e10b0f89df68d2ef0cf9d14
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/13/2021
-ms.locfileid: "53401999"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "61860572"
 ---
 # <a name="managementactiontenantdeploymentstatus-resource-type"></a>tipo de recurso managementActionTenantDeploymentStatus
 
@@ -30,9 +30,9 @@ Representa o status de implantação de nível de locatário para a ação de ge
 ## <a name="properties"></a>Propriedades
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|id|Cadeia de caracteres|O identificador exclusivo para o status de implantação no nível do locatário. Obrigatório. Somente leitura.|
+|id|String|O identificador exclusivo para o status de implantação no nível do locatário. Obrigatório. Somente leitura.|
 |statuses|[coleção microsoft.graph.managedTenants.managementActionDeploymentStatus](../resources/managedtenants-managementactiondeploymentstatus.md)|O conjunto de status de implantação para cada instância de uma ação de gerenciamento. Opcional.|
-|tenantGroupId|Cadeia de caracteres|O identificador do grupo de locatários associado à ação de gerenciamento. Obrigatório. Somente leitura.|
+|tenantGroupId|String|O identificador do grupo de locatários associado à ação de gerenciamento. Obrigatório. Somente leitura.|
 |tenantId|String|O Azure Active Directory do locatário para o [locatário gerenciado.](../resources/managedtenants-tenant.md) Obrigatório. Somente leitura.|
 
 ## <a name="relationships"></a>Relações

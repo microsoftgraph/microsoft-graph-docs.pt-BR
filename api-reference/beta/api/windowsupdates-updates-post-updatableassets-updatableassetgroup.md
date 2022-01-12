@@ -1,16 +1,16 @@
 ---
 title: Criar updatableAssetGroup
 description: Crie um novo objeto updatableAssetGroup.
-author: Alice-at-Microsoft
+author: aarononeal
 ms.localizationpriority: medium
 ms.prod: w10
 doc_type: apiPageType
-ms.openlocfilehash: db391f9e9fa755e309a834170f1834bc6adbf03e
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: 76bc738f36e4000152d4c5869995008df888b2e0
+ms.sourcegitcommit: 71186ad44d8d0df15e10b0f89df68d2ef0cf9d14
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "61029914"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "61863662"
 ---
 # <a name="create-updatableassetgroup"></a>Criar updatableAssetGroup
 Namespace: microsoft.graph.windowsUpdates
@@ -90,7 +90,7 @@ Content-Type: application/json
 [!INCLUDE [sample-code](../includes/snippets/java/create-updatableassetgroup-from--java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[Go](#tab/go)
+# <a name="go"></a>[Ir](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/create-updatableassetgroup-from--go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 

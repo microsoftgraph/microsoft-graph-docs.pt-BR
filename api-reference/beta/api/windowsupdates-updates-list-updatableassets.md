@@ -1,16 +1,16 @@
 ---
 title: Listar updatableAssets
 description: Obter uma lista de objetos updatableAsset e suas propriedades.
-author: Alice-at-Microsoft
+author: aarononeal
 ms.localizationpriority: medium
 ms.prod: w10
 doc_type: apiPageType
-ms.openlocfilehash: 25753356865e79a65a25d4911947ce9842d6d524
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: a65cc1815c8ae8bcd7e9d385719afc9a741e97dc
+ms.sourcegitcommit: 71186ad44d8d0df15e10b0f89df68d2ef0cf9d14
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "61019231"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "61848389"
 ---
 # <a name="list-updatableassets"></a>Listar updatableAssets
 Namespace: microsoft.graph.windowsUpdates
@@ -88,7 +88,7 @@ GET https://graph.microsoft.com/beta/admin/windows/updates/updatableAssets
 [!INCLUDE [sample-code](../includes/snippets/java/list-updatableasset-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[Go](#tab/go)
+# <a name="go"></a>[Ir](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/list-updatableasset-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 

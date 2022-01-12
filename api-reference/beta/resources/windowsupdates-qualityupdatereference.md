@@ -1,16 +1,16 @@
 ---
 title: Tipo de recurso qualityUpdateReference
 description: Representa Windows 10 conteúdo de atualização de qualidade.
-author: Alice-at-Microsoft
+author: aarononeal
 ms.localizationpriority: medium
 ms.prod: w10
 doc_type: resourcePageType
-ms.openlocfilehash: bae1315caf6efd2096f9039ca774db18f0b6b764
-ms.sourcegitcommit: c6a8c1cc13ace38d6c4371139ee84707c5c93352
+ms.openlocfilehash: ecfddf24b8e2550f55c28ef60e218b5caae985da
+ms.sourcegitcommit: 71186ad44d8d0df15e10b0f89df68d2ef0cf9d14
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/10/2021
-ms.locfileid: "60890756"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "61861595"
 ---
 # <a name="qualityupdatereference-resource-type"></a>Tipo de recurso qualityUpdateReference
 

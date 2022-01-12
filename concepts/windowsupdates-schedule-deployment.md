@@ -1,16 +1,16 @@
 ---
 title: Agendar uma implantação usando o serviço de implantação Windows Atualização para Empresas
 description: Ao implantar uma atualização usando o serviço de implantação, você pode agendar a implantação para que os dispositivos recebam a atualização em uma data futura.
-author: Alice-at-Microsoft
+author: aarononeal
 ms.localizationpriority: medium
 ms.prod: w10
 doc_type: conceptualPageType
-ms.openlocfilehash: 1cee20415b3663b26bffe6c7682e04880cb5fde8
-ms.sourcegitcommit: c7ff992ef63e480d070421ba99b28ee129cb6acb
+ms.openlocfilehash: 650e35dc8496bcb9e2dbcee33d7dfca58db1615b
+ms.sourcegitcommit: 71186ad44d8d0df15e10b0f89df68d2ef0cf9d14
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "60696032"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "61854825"
 ---
 # <a name="schedule-a-deployment-using-the-windows-update-for-business-deployment-service"></a>Agendar uma implantação usando o serviço de implantação Windows Atualização para Empresas
 
@@ -87,7 +87,7 @@ Content-Type: application/json
 
 ## <a name="stage-a-deployment-over-a-period-of-time"></a>Estágio de uma implantação por um período de tempo
 
-Você também pode agendar uma implantação para que os dispositivos atribuídos sejam oferecidos a atualização em uma distribuição gradual que é em estágios ao longo do tempo. A atualização é oferecida aos subconjunto de dispositivos atribuídos à implantação em intervalos regulares, com a duração total da distribuição determinada por uma data de término ou taxa de oferta. Você pode pensar em uma rollout gradual como semelhante a uma série de eventos de calendário recorrente.
+Você também pode agendar uma implantação para que os dispositivos atribuídos sejam oferecidos a atualização em uma distribuição gradual que é em estágios ao longo do tempo. A atualização é oferecida aos subconjunto de dispositivos atribuídos à implantação em intervalos regulares, com a duração total da distribuição determinada por uma data de término ou taxa de oferta. Você pode pensar em uma distribuição gradual como semelhante a uma série de eventos de calendário recorrente.
 
 ### <a name="example-stage-a-deployment-at-regular-intervals-between-start-and-end-dates"></a>Exemplo: estágio uma implantação em intervalos regulares entre as datas inicial e final
 

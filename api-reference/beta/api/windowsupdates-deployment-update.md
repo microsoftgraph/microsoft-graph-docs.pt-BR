@@ -1,16 +1,16 @@
 ---
 title: Atualizar implantação
 description: Atualize as propriedades de um objeto de implantação.
-author: Alice-at-Microsoft
+author: aarononeal
 ms.localizationpriority: medium
 ms.prod: w10
 doc_type: apiPageType
-ms.openlocfilehash: f86305a223147cfc081cd5dd71657e25260ce4e8
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: e1d0b26f1a6afa20b8b69e6b80ae26de1371c87b
+ms.sourcegitcommit: 71186ad44d8d0df15e10b0f89df68d2ef0cf9d14
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "61004363"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "61863210"
 ---
 # <a name="update-deployment"></a>Atualizar implantação
 Namespace: microsoft.graph.windowsUpdates
@@ -102,7 +102,7 @@ Content-Type: application/json
 [!INCLUDE [sample-code](../includes/snippets/java/update-deployment-1-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[Go](#tab/go)
+# <a name="go"></a>[Ir](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/update-deployment-1-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
@@ -195,7 +195,7 @@ Content-Type: application/json
 [!INCLUDE [sample-code](../includes/snippets/java/update-deployment-2-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[Go](#tab/go)
+# <a name="go"></a>[Ir](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/update-deployment-2-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 

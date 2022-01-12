@@ -1,16 +1,16 @@
 ---
 title: Tipo de recurso azureADDeviceRegistrationError
 description: Um erro no processo de registro de um dispositivo do Azure AD que impede o serviço de registrar o dispositivo no gerenciamento de atualizações ou implantar conteúdo no dispositivo.
-author: Alice-at-Microsoft
+author: aarononeal
 ms.localizationpriority: medium
 ms.prod: w10
 doc_type: resourcePageType
-ms.openlocfilehash: 8ef1d16203f4b2197a0f8cdb93aaeae073d77ccb
-ms.sourcegitcommit: c6a8c1cc13ace38d6c4371139ee84707c5c93352
+ms.openlocfilehash: cd2699c4fecb694e5678d192d07c0fe2f904ee92
+ms.sourcegitcommit: 71186ad44d8d0df15e10b0f89df68d2ef0cf9d14
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/10/2021
-ms.locfileid: "60890364"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "61863519"
 ---
 # <a name="azureaddeviceregistrationerror-resource-type"></a>Tipo de recurso azureADDeviceRegistrationError
 

@@ -1,16 +1,16 @@
 ---
 title: Listar recursos do azureADDevice
 description: Obter uma lista de objetos azureADDevice e suas propriedades.
-author: Alice-at-Microsoft
+author: aarononeal
 ms.localizationpriority: medium
 ms.prod: w10
 doc_type: apiPageType
-ms.openlocfilehash: 4a1bd145eae052a797f0c5a2b7378e5fce8d6f53
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: e76d4fc7e99578372a76cd43c245978284f98ef6
+ms.sourcegitcommit: 71186ad44d8d0df15e10b0f89df68d2ef0cf9d14
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "61004216"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "61799405"
 ---
 # <a name="list-azureaddevice-resources"></a>Listar recursos do azureADDevice
 Namespace: microsoft.graph.windowsUpdates
@@ -86,7 +86,7 @@ GET https://graph.microsoft.com/beta/admin/windows/updates/updatableAssets/?$fil
 [!INCLUDE [sample-code](../includes/snippets/java/list-azureaddevice-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[Go](#tab/go)
+# <a name="go"></a>[Ir](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/list-azureaddevice-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 

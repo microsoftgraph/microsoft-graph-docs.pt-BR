@@ -1,15 +1,15 @@
 ---
-title: Microsoft 365 Lighthouse Visão geral da API
+title: Microsoft 365 Lighthouse visão geral da API
 description: Microsoft 365 Lighthouse é um portal de administração que ajuda os MSPs (Provedores de Serviços Gerenciados) a proteger e gerenciar dispositivos, dados e usuários em escala para clientes de pequenas e médias empresas (SMB) que estão usando o Microsoft 365 Business Premium.
-author: isaiahwilliams
+author: idwilliams
 ms.localizationpriority: medium
 ms.prod: microsoft-365-lighthouse
-ms.openlocfilehash: 9dee6ce8d29225dafa8e2e724b6896fa391c8e0d
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 7ce7d5a12b73d0e67f4ecef35f6ff3465c362fa8
+ms.sourcegitcommit: 71186ad44d8d0df15e10b0f89df68d2ef0cf9d14
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59135988"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "61841788"
 ---
 # <a name="overview-for-multi-tenant-management-using-the-microsoft-365-lighthouse-api"></a>Visão geral do gerenciamento de vários locatários usando Microsoft 365 Lighthouse API
 

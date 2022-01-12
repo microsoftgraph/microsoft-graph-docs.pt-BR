@@ -1,16 +1,16 @@
 ---
 title: Atualizações de software com o serviço de implantação Windows Update for Business
 description: As atualizações de software são o tipo principal de conteúdo implantado pelo serviço de implantação. Você pode procurar em um catálogo para encontrar atualizações específicas disponíveis para implantar.
-author: Alice-at-Microsoft
+author: aarononeal
 ms.localizationpriority: medium
 ms.prod: w10
 doc_type: conceptualPageType
-ms.openlocfilehash: 72f56b46ceb27a8f4dbbb7c7cc52ccc10a0decc0
-ms.sourcegitcommit: f7956d25472a55af03be83b6ab986a7149a7ac88
+ms.openlocfilehash: 47347e9d476b2a8c73a04d84ab83298140da001f
+ms.sourcegitcommit: 71186ad44d8d0df15e10b0f89df68d2ef0cf9d14
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/12/2021
-ms.locfileid: "60270338"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "61854710"
 ---
 # <a name="software-updates-with-the-windows-update-for-business-deployment-service"></a>Atualizações de software com o serviço de implantação Windows Update for Business
 
@@ -18,7 +18,7 @@ As atualizações de software são o tipo principal de conteúdo implantado pelo
 
 Você pode já estar familiarizado com o [Catálogo de Atualizações](https://www.catalog.update.microsoft.com/) da Microsoft que lista atualizações de software para Windows. O serviço de implantação fornece seu próprio [catálogo](/graph/api/resources/windowsupdates-catalog)e agrega atualizações equivalentes em um único [catalogEntry](/graph/api/resources/windowsupdates-catalogentry) para simplificar a tomada de decisões e os fluxos de trabalho de aprovação.
 
-## <a name="windows-update-categories"></a>Windows de atualização
+## <a name="windows-update-categories"></a>Categorias de atualização do Windows
 
 Em geral, há duas categorias de alto nível de Windows 10 atualizações: atualizações de recursos e atualizações de qualidade. A categoria atualizações de qualidade inclui atualizações de segurança, atualizações de driver e outras.
 
@@ -36,12 +36,12 @@ Por exemplo, as duas atualizações de qualidade de segurança a seguir são con
 
 | Título                                                                                   | Produtos                           | Classificação   |
 |-----------------------------------------------------------------------------------------|------------------------------------|------------------|
-| Atualização Cumulativa 2021-03 para Windows 10 versão 20H2 para sistemas baseados em **x86**(KB5000802) | Windows 10, versão 1903 e posterior | Atualizações de Segurança |
-| Atualização Cumulativa 2021-03 para Windows 10 versão 20H2 para sistemas baseados em **x64**(KB5000802) | Windows 10, versão 1903 e posterior | Atualizações de Segurança |
+| Atualização Cumulativa 2021-03 para Windows 10 versão 20H2 para sistemas baseados em **x86**(KB5000802) | Windows 10, versão 1903 e posterior | Atualizações de segurança |
+| Atualização Cumulativa 2021-03 para Windows 10 versão 20H2 para sistemas baseados em **x64**(KB5000802) | Windows 10, versão 1903 e posterior | Atualizações de segurança |
 
 No catálogo fornecido pelo serviço de implantação Windows Update for Business, essas atualizações são agregadas em uma única entrada.
 
-| Nome de exibição                                           | Tipo                                                     |
+| Nome                                           | Tipo                                                     |
 |--------------------------------------------------------|----------------------------------------------------------|
 | 03/09/2021 - Atualizações de segurança de 2021.03 B para Windows 10 | microsoft.graph.windowsUpdates.qualityUpdateCatalogEntry |
 
@@ -68,7 +68,7 @@ As atualizações de recursos no catálogo de serviços de implantação são id
 
 Veja a seguir alguns exemplos de atualizações de recursos no catálogo de serviços de implantação.
 
-| Nome de exibição                               | Versão |
+| Nome                               | Versão |
 |--------------------------------------------|---------|
 | Atualização de recursos Windows 10 versão 20H1 | 20H1    |
 | Atualização de recursos Windows 10 versão 1909 | 1909    |
@@ -88,7 +88,7 @@ As atualizações de qualidade no catálogo de serviços de implantação são i
 
 A tabela a seguir mostra o mapeamento de classificação entre o catálogo de serviços de implantação e o Catálogo de Atualizações da Microsoft.
 
-| Catálogo de serviços de implantação | Catálogo de Atualizações da Microsoft                                                                                                               |
+| Catálogo de serviços de implantação | Catálogo do Microsoft Update                                                                                                               |
 |------------------|--------------------------------------------------------------------------------------------------------------------------------|
 | Segurança         | Atualização de Segurança<br>Atualização Crítica<br>Atualizar (se necessário como dependência)<br>Manutenção da Atualização de Pilha (se necessário como dependência) |
 | Não segurança     | Atualizar<br>Atualização de Pilha de Manutenção                                                                                               |
@@ -97,10 +97,10 @@ As entradas do Catálogo de Atualizações da Microsoft correspondentes a uma at
 
 | Título                                                                                   | Produtos                           | Classificação   |
 |-----------------------------------------------------------------------------------------|------------------------------------|------------------|
-| Atualização Cumulativa 2021-03 para Windows 10 versão 20H2 para sistemas baseados em x86 (KB5000802) | Windows 10, versão 1903 e posterior | Atualizações de Segurança |
-| Atualização Cumulativa 2021-03 para Windows 10 versão 20H2 para sistemas baseados em x64 (KB5000802) | Windows 10, versão 1903 e posterior | Atualizações de Segurança |
-| Atualização Cumulativa 2021-03 para Windows 10 versão 1909 para sistemas baseados em x86 (KB5000808) | Windows 10, versão 1903 e posterior | Atualizações de Segurança |
-| Atualização Cumulativa 2021-03 para Windows 10 versão 1809 para sistemas baseados em x64 (KB5000822) | Windows 10, Windows 10 LTSB        | Atualizações de Segurança |
+| Atualização Cumulativa 2021-03 para Windows 10 versão 20H2 para sistemas baseados em x86 (KB5000802) | Windows 10, versão 1903 e posterior | Atualizações de segurança |
+| Atualização Cumulativa 2021-03 para Windows 10 versão 20H2 para sistemas baseados em x64 (KB5000802) | Windows 10, versão 1903 e posterior | Atualizações de segurança |
+| Atualização Cumulativa 2021-03 para Windows 10 versão 1909 para sistemas baseados em x86 (KB5000808) | Windows 10, versão 1903 e posterior | Atualizações de segurança |
+| Atualização Cumulativa 2021-03 para Windows 10 versão 1809 para sistemas baseados em x64 (KB5000822) | Windows 10, Windows 10 LTSB        | Atualizações de segurança |
 
 Depois de identificar a atualização desejada, atribua-a como conteúdo a uma implantação usando [uma qualityUpdateReference](/graph/api/resources/windowsupdates-qualityupdatereference) e especificando as **propriedades releaseDateTime** **e classificação.**
 

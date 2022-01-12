@@ -1,16 +1,16 @@
 ---
 title: tipo de recurso de implantação
 description: Representa a implantação de conteúdo para um conjunto de dispositivos.
-author: Alice-at-Microsoft
-localization_priority: Normal
+author: aarononeal
+ms.localizationpriority: medium
 ms.prod: w10
 doc_type: resourcePageType
-ms.openlocfilehash: e34bca8fc1776c749e42e97caa1dd0d91fa51433
-ms.sourcegitcommit: 1b09298649d5606b471b4cbe1055419bbe2fc7e5
+ms.openlocfilehash: d4d34481b6a1d99d7c2a48b3becd7b8def764924
+ms.sourcegitcommit: 71186ad44d8d0df15e10b0f89df68d2ef0cf9d14
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "52067797"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "61841939"
 ---
 # <a name="deployment-resource-type"></a>tipo de recurso de implantação
 
@@ -37,9 +37,9 @@ Representa a implantação de conteúdo para um conjunto de dispositivos.
 |:---|:---|:---|
 |content|[microsoft.graph.windowsUpdates.deployableContent](../resources/windowsupdates-deployablecontent.md)|Especifica qual conteúdo implantar. Não é possível mudar. Retornado por padrão.|
 |createdDateTime|DateTimeOffset|A data e a hora em que a implantação foi criada. Retornado por padrão. Somente leitura.|
-|id|Cadeia de caracteres|O identificador exclusivo da implantação. Retornado por padrão. Chave. Não anulável. Somente leitura.|
+|id|String|O identificador exclusivo da implantação. Devolvido por padrão. Chave. Não anulável. Somente leitura.|
 |lastModifiedDateTime|DateTimeOffset|A data e a hora em que a implantação foi modificada pela última vez. Retornado por padrão. Somente leitura.|
-|configurações|[microsoft.graph.windowsUpdates.deploymentSettings](../resources/windowsupdates-deploymentsettings.md)|Configurações especificado na implantação específica que rege como implantar **conteúdo**. Retornado por padrão.|
+|settings|[microsoft.graph.windowsUpdates.deploymentSettings](../resources/windowsupdates-deploymentsettings.md)|Configurações especificado na implantação específica que rege como implantar **conteúdo**. Retornado por padrão.|
 |state|[microsoft.graph.windowsUpdates.deploymentState](../resources/windowsupdates-deploymentstate.md)|Status de execução da implantação. Retornado por padrão.|
 
 ## <a name="relationships"></a>Relações

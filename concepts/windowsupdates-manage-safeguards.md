@@ -1,16 +1,16 @@
 ---
 title: Gerenciar proteções usando o serviço de implantação Windows Update for Business
 description: Quando você implanta atualizações com o serviço de implantação, o serviço protege automaticamente as implantações, impedindo que dispositivos com problemas conhecidos ou prováveis de serem oferecidos a atualização pelo Windows Update.
-author: Alice-at-Microsoft
+author: aarononeal
 ms.localizationpriority: medium
 ms.prod: w10
 doc_type: conceptualPageType
-ms.openlocfilehash: 22ce9a2e9e418ee5846881e72b98d213d9294247
-ms.sourcegitcommit: c7ff992ef63e480d070421ba99b28ee129cb6acb
+ms.openlocfilehash: ff3d8c594087253db85fb943bd34fe9478f45bb9
+ms.sourcegitcommit: 71186ad44d8d0df15e10b0f89df68d2ef0cf9d14
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "60697012"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "61855516"
 ---
 # <a name="manage-safeguards-using-the-windows-update-for-business-deployment-service"></a>Gerenciar proteções usando o serviço de implantação Windows Update for Business
 

@@ -1,16 +1,16 @@
 ---
 title: Tipo de recurso tenantTag
 description: Representa uma marca que pode ser atribuída ao locatário gerenciado.
-author: isaiahwilliams
-localization_priority: Normal
+author: idwilliams
+ms.localizationpriority: medium
 ms.prod: microsoft-365-lighthouse
 doc_type: resourcePageType
-ms.openlocfilehash: e48ad25e2af3ac491c6affe4bbb4712ab45e42fc
-ms.sourcegitcommit: e372382019f1a136543eadab02ba70af3921e098
+ms.openlocfilehash: fa62dd86f14a85f6a7a8c4eaf9d722909f03981e
+ms.sourcegitcommit: 71186ad44d8d0df15e10b0f89df68d2ef0cf9d14
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/13/2021
-ms.locfileid: "53401980"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "61862601"
 ---
 # <a name="tenanttag-resource-type"></a>Tipo de recurso tenantTag
 
@@ -34,13 +34,13 @@ Representa uma marca que pode ser atribuída ao locatário gerenciado.
 ## <a name="properties"></a>Propriedades
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|createdByUserId|Cadeia de caracteres|O identificador da conta que criou a marca de locatário. Obrigatório. Somente leitura.|
+|createdByUserId|String|O identificador da conta que criou a marca de locatário. Obrigatório. Somente leitura.|
 |createdDateTime|DateTimeOffset|A data e a hora em que a marca de locatário foi criada. Obrigatório. Somente leitura.|
 |deletedDateTime|DateTimeOffset|A data e a hora em que a marca de locatário foi excluída. Obrigatório. Somente leitura.|
-|description|Cadeia de caracteres|A descrição da marca de locatário. Opcional. Somente leitura.|
-|displayName|Cadeia de caracteres|O nome de exibição da marca de locatário. Obrigatório. Somente leitura.|
-|id|Cadeia de caracteres|O identificador exclusivo da marca de locatário. Obrigatório. Somente leitura.|
-|lastActionByUserId|Cadeia de caracteres|O identificador da conta que durou na marca de locatário. Opcional. Somente leitura.|
+|description|String|A descrição da marca de locatário. Opcional. Somente leitura.|
+|displayName|String|O nome de exibição da marca de locatário. Obrigatório. Somente leitura.|
+|id|String|O identificador exclusivo da marca de locatário. Obrigatório. Somente leitura.|
+|lastActionByUserId|String|O identificador da conta que durou na marca de locatário. Opcional. Somente leitura.|
 |lastActionDateTime|DateTimeOffset|A data e a hora em que a última ação foi executada contra a marca de locatário. Opcional. Somente leitura.|
 |locatários|[coleção microsoft.graph.managedTenants.tenantInfo](../resources/managedtenants-tenantinfo.md)|A coleção de locatários gerenciados associados à marca de locatário. Opcional.|
 

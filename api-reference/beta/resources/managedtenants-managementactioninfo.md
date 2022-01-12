@@ -1,16 +1,16 @@
 ---
 title: Tipo de recurso managementActionInfo
 description: Representa informações de referência para uma ação de gerenciamento.
-author: isaiahwilliams
-localization_priority: Normal
+author: idwilliams
+ms.localizationpriority: medium
 ms.prod: microsoft-365-lighthouse
 doc_type: resourcePageType
-ms.openlocfilehash: cde8e52b8329d03169eb5953dd92b897b3b8272e
-ms.sourcegitcommit: e372382019f1a136543eadab02ba70af3921e098
+ms.openlocfilehash: afd219145ae5a58048985290bc1a01e9e7cccf09
+ms.sourcegitcommit: 71186ad44d8d0df15e10b0f89df68d2ef0cf9d14
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/13/2021
-ms.locfileid: "53402000"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "61860954"
 ---
 # <a name="managementactioninfo-resource-type"></a>Tipo de recurso managementActionInfo
 
@@ -23,8 +23,8 @@ Representa informações de referência para uma ação de gerenciamento.
 ## <a name="properties"></a>Propriedades
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|managementActionId|Cadeia de caracteres|O identificador da ação de gerenciamento. Obrigatório. Somente leitura.|
-|managementTemplateId|Cadeia de caracteres|O identificador do modelo de gerenciamento. Obrigatório. Somente leitura.|
+|managementActionId|String|O identificador da ação de gerenciamento. Obrigatório. Somente leitura.|
+|managementTemplateId|String|O identificador do modelo de gerenciamento. Obrigatório. Somente leitura.|
 
 ## <a name="relationships"></a>Relações
 Nenhum

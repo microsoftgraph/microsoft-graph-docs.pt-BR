@@ -1,16 +1,16 @@
 ---
 title: Tipo de recurso tenantContactInformation
 description: Representa um contato em um locatário gerenciado.
-author: isaiahwilliams
-localization_priority: Normal
+author: idwilliams
+ms.localizationpriority: medium
 ms.prod: microsoft-365-lighthouse
 doc_type: resourcePageType
-ms.openlocfilehash: b60005cf60a9ac1b96a3b650a853f8b198d27e48
-ms.sourcegitcommit: e372382019f1a136543eadab02ba70af3921e098
+ms.openlocfilehash: f852bbae5a08c00d101e122443b9e5b50382eb62
+ms.sourcegitcommit: 71186ad44d8d0df15e10b0f89df68d2ef0cf9d14
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/13/2021
-ms.locfileid: "53402138"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "61860457"
 ---
 # <a name="tenantcontactinformation-resource-type"></a>Tipo de recurso tenantContactInformation
 
@@ -24,10 +24,10 @@ Representa um contato em um locatário gerenciado.
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
 |email|Cadeia de caracteres|O endereço de email do contato. Opcional|
-|nome|Cadeia de caracteres|O nome do contato. Obrigatório.|
+|nome|String|O nome do contato. Obrigatório.|
 |notes|String|As anotações associadas ao contato. Opcional|
 |phone|Cadeia de caracteres|O número de telefone do contato. Opcional.|
-|title|Cadeia de caracteres|O título do contato. Obrigatório.|
+|title|String|O título do contato. Obrigatório.|
 
 ## <a name="relationships"></a>Relações
 Nenhum

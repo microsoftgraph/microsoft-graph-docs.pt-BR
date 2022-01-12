@@ -1,16 +1,16 @@
 ---
 title: 'deploymentAudience: updateAudience'
 description: Atualize os membros e as coleções de exclusões de uma deploymentAudience.
-author: Alice-at-Microsoft
+author: aarononeal
 ms.localizationpriority: medium
 ms.prod: w10
 doc_type: apiPageType
-ms.openlocfilehash: d8d4d238f2d03359a95f6498890fdd4c34321d22
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: c1c8f1a837810af8bc8dd5c9787e3a16532a5dad
+ms.sourcegitcommit: 71186ad44d8d0df15e10b0f89df68d2ef0cf9d14
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "61009389"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "61800276"
 ---
 # <a name="deploymentaudience-updateaudience"></a>deploymentAudience: updateAudience
 
@@ -130,7 +130,7 @@ Content-Type: application/json
 [!INCLUDE [sample-code](../includes/snippets/java/deploymentaudience-updateaudience-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[Go](#tab/go)
+# <a name="go"></a>[Ir](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/deploymentaudience-updateaudience-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 

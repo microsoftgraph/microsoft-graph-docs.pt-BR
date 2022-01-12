@@ -1,16 +1,16 @@
 ---
 title: Criar tenantTag
 description: Crie um novo objeto tenantTag.
-author: isaiahwilliams
+author: idwilliams
 ms.localizationpriority: medium
 ms.prod: microsoft-365-lighthouse
 doc_type: apiPageType
-ms.openlocfilehash: 30cda4618023fc4258c439d1e3321346182a2421
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: 2fb711f789434c9f66fbc4cfb895e78166f1628f
+ms.sourcegitcommit: 71186ad44d8d0df15e10b0f89df68d2ef0cf9d14
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "61034205"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "61818741"
 ---
 # <a name="create-tenanttag"></a>Criar tenantTag
 Namespace: microsoft.graph.managedTenants
@@ -51,8 +51,8 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar [a tenan
 
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|displayName|Cadeia de caracteres|O nome de exibição da marca de locatário.|
-|description|Cadeia de caracteres|A descrição da marca de locatário.|
+|displayName|String|O nome de exibição da marca de locatário.|
+|descrição|String|A descrição da marca de locatário.|
 
 ## <a name="response"></a>Resposta
 
@@ -93,7 +93,7 @@ Content-Type: application/json
 [!INCLUDE [sample-code](../includes/snippets/java/create-tenanttag-from--java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[Go](#tab/go)
+# <a name="go"></a>[Ir](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/create-tenanttag-from--go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 

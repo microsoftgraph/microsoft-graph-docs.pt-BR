@@ -1,16 +1,16 @@
 ---
 title: 'updatableAssetGroup: addMembers'
 description: Adicione membros a um updatableAssetGroup.
-author: Alice-at-Microsoft
+author: aarononeal
 ms.localizationpriority: medium
 ms.prod: w10
 doc_type: apiPageType
-ms.openlocfilehash: 4a84a65e1beec2c7a0ab60c9f864d028cbd7f60e
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: 0782a630e0dcbc4ed5e55af79abee554f8d0a87b
+ms.sourcegitcommit: 71186ad44d8d0df15e10b0f89df68d2ef0cf9d14
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "61029928"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "61860007"
 ---
 # <a name="updatableassetgroup-addmembers"></a>updatableAssetGroup: addMembers
 Namespace: microsoft.graph.windowsUpdates
@@ -102,7 +102,7 @@ Content-Type: application/json
 [!INCLUDE [sample-code](../includes/snippets/java/updatableassetgroup-addmembers-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[Go](#tab/go)
+# <a name="go"></a>[Ir](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/updatableassetgroup-addmembers-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 

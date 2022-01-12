@@ -1,16 +1,16 @@
 ---
-title: Microsoft Teams Provedor MSAL2
+title: Microsoft Teams provedor MSAL2
 description: Use o Teams MSAL2 dentro da guia Microsoft Teams para facilitar a autenticação e o acesso Graph Microsoft a todos os componentes. O provedor pode ser usado para SSO (single-sign-on) ou para entrar interativo.
 ms.localizationpriority: medium
 author: simonagren
-ms.openlocfilehash: 658c79d2b8c709c940a4db7565677ceb88c2ad12
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: f46bff605b0980ab71b5ae204e86d90949760117
+ms.sourcegitcommit: 71186ad44d8d0df15e10b0f89df68d2ef0cf9d14
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59130605"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "61862837"
 ---
-# <a name="microsoft-teams-msal2-provider"></a>Microsoft Teams Provedor MSAL2
+# <a name="microsoft-teams-msal2-provider"></a>Microsoft Teams provedor MSAL2
 
 Use o Microsoft Teams MSAL2 dentro da guia Microsoft Teams para facilitar a autenticação e o acesso Graph Microsoft a todos os componentes. O provedor pode ser usado para SSO (login único) ou para entrar interativo.
 
@@ -34,7 +34,7 @@ Na autenticação do lado do cliente (ou autenticação interativa), o usuário 
 ### <a name="sso-authentication"></a>Autenticação SSO
 Para evitar que o usuário se autenture no aplicativo, Microsoft Teams guias também podem [usar o SSO](/microsoftteams/platform/tabs/how-to/authentication/auth-aad-sso) para autenticar automaticamente os usuários. No entanto, esse processo requer um serviço back-end usado para trocar o token Microsoft Teams fornecido por um token de acesso que pode ser usado para acessar o Microsoft Graph.
 
-Teams O provedor MSAL2 dá suporte ao modo SSO, que é habilitado quando definido como um serviço back-end capaz de `ssoUrl`  \  `sso-url` trocar os tokens. O serviço back-end é necessário para expor uma API (como ) que receberá um token de autenticação do Microsoft Teams e usará o fluxo para trocar o token por um token de acesso que possa acessar o `api/token` `on-behalf-of` Microsoft Graph. Para uma implementação de referência de um serviço de back-end de nó, consulte o [exemplo Microsoft Teams SSO do nó](https://github.com/microsoftgraph/microsoft-graph-toolkit/tree/master/samples/teams-tab).
+Teams provedor MSAL2 dá suporte ao modo SSO, que é habilitado quando `ssoUrl`  \  `sso-url` são definidos como um serviço de back-end que é capaz de trocar os tokens. O serviço back-end é necessário para expor uma API (como ) que receberá um token de autenticação do Microsoft Teams e usará o fluxo para trocar o token por um token de acesso que possa acessar o `api/token` `on-behalf-of` Microsoft Graph. Para uma implementação de referência de um serviço de back-end de nó, consulte o [exemplo Microsoft Teams SSO do nó](https://github.com/microsoftgraph/microsoft-graph-toolkit/tree/master/samples/teams-tab).
 
 ### <a name="initialize-the-provider"></a>Inicializar o provedor
 Antes de usar o Teams MSAL2, certifique-se de fazer referência ao [SDK](/javascript/api/overview/msteams-client?view=msteams-client-js-latest&preserve-view=true#using-the-sdk) Microsoft Teams em sua página.
@@ -55,7 +55,7 @@ import {Providers} from '@microsoft/mgt-element';
 import {TeamsMsal2Provider} from '@microsoft/mgt-teams-msal2-provider';
 import * as MicrosoftTeams from "@microsoft/teams-js";
 
-TeamsProvider.microsoftTeamsLib = MicrosoftTeams;
+TeamsMsal2Provider.microsoftTeamsLib = MicrosoftTeams;
 
 Providers.globalProvider = new TeamsMsal2Provider(config);
 ```
@@ -96,7 +96,7 @@ export interface TeamsMsal2Config {
 | client-id   | ID do cliente de cadeia de caracteres (consulte [Configure your Teams app](#configure-your-teams-app). Obrigatório. |
 | auth-popup-url  | Caminho absoluto ou relativo para a página que manipulará a auth no pop-up (consulte [Criar a página pop-up](#create-the-popup-page)). Obrigatório. |
 | escopos  | Cadeias de caracteres separadas por vírgulas para escopos que o usuário deve consentir ao entrar. Opcional. |
-| authority    | Cadeia de caracteres de autoridade. O padrão é a autoridade comum. Para aplicativos de locatário único, use sua ID de locatário ou nome de locatário. Por exemplo, `https://login.microsoftonline.com/[your-tenant-name].onmicrosoft.com` ou `https://login.microsoftonline.com/[your-tenant-id]` . Opcional. |
+| authority    | Cadeia de caracteres de autoridade. O padrão é a autoridade comum. Para aplicativos de locatário único, use sua ID de locatário ou nome de locatário. Por exemplo: `https://login.microsoftonline.com/[your-tenant-name].onmicrosoft.com` ou `https://login.microsoftonline.com/[your-tenant-id]`. Opcional. |
 | sso-url  | Caminho absoluto ou relativo para a API de back-end que lida com o exchange de tokens OBO. Opcional. |
 | http-method  | Tipo de método HTTP a ser usado para chamar a API back-end. `POST` ou `GET`. O padrão é `GET`. Opcional |
 
@@ -163,12 +163,12 @@ Para migrar um aplicativo que está usando o provedor Teams para o provedor Team
     ```html
     <mgt-teams-provider client-id="<YOUR_CLIENT_ID>" auth-popup-url="/AUTH-PATH" ... ></mgt-teams-provider>
     ``` 
-    com 
+     com  
     ```html
     <mgt-teams-msal2-provider client-id="<YOUR_CLIENT_ID>" auth-popup-url="/AUTH-PATH" ... ></mgt-teams-msal2-provider>
     ```
 
 ## <a name="see-also"></a>Confira também
-* [Microsoft Teams Exemplo de SSO do nó](https://github.com/microsoftgraph/microsoft-graph-toolkit/tree/master/samples/teams-tab)
+* [Microsoft Teams de SSO do nó](https://github.com/microsoftgraph/microsoft-graph-toolkit/tree/master/samples/teams-tab)
 * [Criar uma guia do Microsoft Teams](../get-started/build-a-microsoft-teams-tab.md)
 * [Criar uma Microsoft Teams com SSO](../get-started/build-a-microsoft-teams-sso-tab.md)

@@ -1,18 +1,18 @@
 ---
-title: Atualizar profilephoto
-description: Atualize a foto do **usuário** conectado ou do **grupo** ou **contato** especificado.
-ms.localizationpriority: high
+title: Atualizar profilePhoto
+description: Atualize a foto do usuário conectado, ou do grupo ou cotato especificado.
+ms.localizationpriority: medium
 author: kevinbellinger
-ms.prod: ''
+ms.prod: people
 doc_type: apiPageType
-ms.openlocfilehash: fb813fbd135959f225d418fa94e7abe913612c15
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
-ms.translationtype: HT
+ms.openlocfilehash: 7f580dbce3bf83bc09403bd25a60cd00a01ab5d5
+ms.sourcegitcommit: 71186ad44d8d0df15e10b0f89df68d2ef0cf9d14
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59104807"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "61791837"
 ---
-# <a name="update-profilephoto"></a>Atualizar profilephoto
+# <a name="update-profilephoto"></a>Atualizar profilePhoto
 
 Namespace: microsoft.graph
 
@@ -49,9 +49,10 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |Delegado (conta pessoal da Microsoft)      |   Sem suporte.            |
 |Aplicativo      |    Contacts.ReadWrite           |
 
-> **Observações:** Para atualizar a foto de qualquer usuário na organização, o aplicativo deve ter a permissão de aplicativo User.ReadWrite.All e chamar esta API usando sua própria identidade, e não em nome de um usuário. Para saber mais, veja como [obter acesso sem um usuário conectado](/graph/auth-v2-service).
->
-> Atualmente, há um [problema conhecido](/graph/known-issues#groups) ao acessar fotos de grupo usando permissões de aplicativos.
+> [!NOTE]
+> 1. Para atualizar a foto de qualquer usuário na organização, seu aplicativo deve ter a permissão de aplicativo *User.ReadWrite.All* e chamar essa API sob sua própria identidade, não em nome de um usuário. Para saber mais, confira [obter acesso sem um usuário conectado](/graph/auth-v2-service). A atualização da foto do usuário in-loco requer apenas a *permissão User.ReadWrite.*
+> 2. Atualmente, há um [problema conhecido](/graph/known-issues#groups) ao acessar fotos de grupo usando permissões de aplicativos.
+> 3. A atualização da foto de um usuário usando a API do Microsoft Graph atualmente não é suportada em locatários do Azure AD B2C.
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- { "blockType": "ignored" } -->
@@ -85,7 +86,7 @@ Inclua os dados binários da foto no corpo da solicitação.
 
 Se tiver êxito, este método retornará um código de resposta `200 OK`.
 ## <a name="example"></a>Exemplo
-##### <a name="request"></a>Solicitação
+### <a name="request"></a>Solicitação
 Este é um exemplo da solicitação.
 
 # <a name="http"></a>[HTTP](#tab/http)
@@ -114,8 +115,9 @@ Binary data for the image
 
 ---
 
-##### <a name="response"></a>Resposta
-Aqui está um exemplo da resposta. Observação: o objeto de resposta mostrado aqui pode ser reduzido para facilitar a leitura.
+### <a name="response"></a>Resposta
+Este é um exemplo de resposta. 
+>**Observação:** o objeto de resposta mostrado aqui pode ser encurtado para legibilidade.
 <!-- {
   "blockType": "response"
 } -->

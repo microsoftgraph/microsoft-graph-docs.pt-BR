@@ -1,16 +1,16 @@
 ---
 title: Tipo de recurso safeguardSettings
 description: Gerencia as proteções que o serviço se aplica a dispositivos em uma implantação.
-author: Alice-at-Microsoft
+author: aarononeal
 ms.localizationpriority: medium
 ms.prod: w10
 doc_type: resourcePageType
-ms.openlocfilehash: af40a9aaa8001bda15f442dd7f79baac014168a2
-ms.sourcegitcommit: c7ff992ef63e480d070421ba99b28ee129cb6acb
+ms.openlocfilehash: d3c276a07483b42e513266077ef1ada3bc516d47
+ms.sourcegitcommit: 71186ad44d8d0df15e10b0f89df68d2ef0cf9d14
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "60695497"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "61792117"
 ---
 # <a name="safeguardsettings-resource-type"></a>Tipo de recurso safeguardSettings
 

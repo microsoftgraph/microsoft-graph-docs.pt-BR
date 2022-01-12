@@ -1,16 +1,16 @@
 ---
 title: 'deploymentAudience: updateAudienceById'
 description: Atualize os membros e as coleções de exclusões de uma deploymentAudience com recursos updatableAsset do mesmo tipo.
-author: Alice-at-Microsoft
+author: aarononeal
 ms.localizationpriority: medium
 ms.prod: w10
 doc_type: apiPageType
-ms.openlocfilehash: b2aaa550769a96d5f21cabe5f57b28578ff13736
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: 523e2d0585a3f3716cc5daf182a728340214f307
+ms.sourcegitcommit: 71186ad44d8d0df15e10b0f89df68d2ef0cf9d14
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "61029943"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "61862400"
 ---
 # <a name="deploymentaudience-updateaudiencebyid"></a>deploymentAudience: updateAudienceById
 
@@ -61,11 +61,11 @@ A tabela a seguir mostra os parâmetros que podem ser usados com esta ação.
 
 |Parâmetro|Tipo|Descrição|
 |:---|:---|:---|
-|memberEntityType|Cadeia de caracteres|O tipo completo dos ativos atualizáveis. Os valores possíveis são: `#microsoft.graph.windowsUpdates.azureADDevice` e `#microsoft.graph.windowsUpdates.updatableAssetGroup`.|
-|addMembers|Coleção de cadeias de caracteres|Lista de identificadores correspondentes aos ativos atualizáveis a adicionar como membros da audiência de implantação.|
-|removeMembers|Conjunto de cadeias de caracteres|Lista de identificadores correspondentes aos ativos atualizáveis a ser removidos como membros da audiência de implantação.|
-|addExclusions|Conjunto de cadeias de caracteres|Lista de identificadores correspondentes aos ativos atualizáveis para adicionar como exclusões do público de implantação.|
-|removeExclusions|Conjunto de cadeias de caracteres|Lista de identificadores correspondentes aos ativos atualizáveis para remover como exclusões do público de implantação.|
+|memberEntityType|String|O tipo completo dos ativos atualizáveis. Os valores possíveis são: `#microsoft.graph.windowsUpdates.azureADDevice` e `#microsoft.graph.windowsUpdates.updatableAssetGroup`.|
+|addMembers|Coleção String|Lista de identificadores correspondentes aos ativos atualizáveis a adicionar como membros da audiência de implantação.|
+|removeMembers|String collection|Lista de identificadores correspondentes aos ativos atualizáveis a ser removidos como membros da audiência de implantação.|
+|addExclusions|String collection|Lista de identificadores correspondentes aos ativos atualizáveis para adicionar como exclusões do público de implantação.|
+|removeExclusions|Coleção String|Lista de identificadores correspondentes aos ativos atualizáveis para remover como exclusões do público de implantação.|
 
 
 
@@ -120,7 +120,7 @@ Content-Type: application/json
 [!INCLUDE [sample-code](../includes/snippets/java/deploymentaudience-updateaudiencebyid-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[Go](#tab/go)
+# <a name="go"></a>[Ir](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/deploymentaudience-updateaudiencebyid-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 

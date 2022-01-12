@@ -1,16 +1,16 @@
 ---
 title: 'updatableAsset: enrollAssetsById'
 description: Registrar recursos updatableAsset do mesmo tipo no gerenciamento de atualizações pelo serviço de implantação.
-author: Alice-at-Microsoft
+author: aarononeal
 ms.localizationpriority: medium
 ms.prod: w10
 doc_type: apiPageType
-ms.openlocfilehash: 251a4d3d9dcb03a50693c5177deb332e50786161
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: 73548492a90dae28a9749ba4b19edd0ee2a333f8
+ms.sourcegitcommit: 71186ad44d8d0df15e10b0f89df68d2ef0cf9d14
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "61009361"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "61860940"
 ---
 # <a name="updatableasset-enrollassetsbyid"></a>updatableAsset: enrollAssetsById
 Namespace: microsoft.graph.windowsUpdates
@@ -54,7 +54,7 @@ A tabela a seguir mostra os parâmetros que podem ser usados com esta ação.
 |Parâmetro|Tipo|Descrição|
 |:---|:---|:---|
 |updateCategory|microsoft.graph.windowsUpdates.updateCategory|A categoria de atualizações para o serviço gerenciar. Oferece suporte a um subconjunto dos valores **para updateCategory**. Os valores possíveis são: `feature` e `unknownFutureValue`.|
-|memberEntityType|Cadeia de caracteres|O tipo completo dos **recursos updatableAsset.** Os valores possíveis são: `#microsoft.graph.windowsUpdates.azureADDevice` .|
+|memberEntityType|String|O tipo completo dos **recursos updatableAsset.** Os valores possíveis são: `#microsoft.graph.windowsUpdates.azureADDevice` .|
 |ids|Coleção de cadeias de caracteres|Lista de identificadores correspondentes aos **recursos updatableAsset** para se inscrever no gerenciamento de atualizações pelo serviço para **a atualização determinadaCategory**.|
 
 ## <a name="response"></a>Resposta
@@ -101,7 +101,7 @@ Content-Type: application/json
 [!INCLUDE [sample-code](../includes/snippets/java/updatableasset-enrollassetsbyid-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[Go](#tab/go)
+# <a name="go"></a>[Ir](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/updatableasset-enrollassetsbyid-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 

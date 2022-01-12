@@ -1,16 +1,16 @@
 ---
 title: Tipo de recurso managedTenantOperationError
 description: Um tipo abstrato que representa um erro para uma operação de locatário gerenciado.
-author: isaiahwilliams
-localization_priority: Normal
+author: idwilliams
+ms.localizationpriority: medium
 ms.prod: microsoft-365-lighthouse
 doc_type: resourcePageType
-ms.openlocfilehash: d8dc51747ac63f6f8a719b0256c398d14d1c4034
-ms.sourcegitcommit: e372382019f1a136543eadab02ba70af3921e098
+ms.openlocfilehash: 3708f0a2727a59390dc0c91c26191d12a9f28b0e
+ms.sourcegitcommit: 71186ad44d8d0df15e10b0f89df68d2ef0cf9d14
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/13/2021
-ms.locfileid: "53402012"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "61791886"
 ---
 # <a name="managedtenantoperationerror-resource-type"></a>Tipo de recurso managedTenantOperationError
 
@@ -23,7 +23,7 @@ Um tipo abstrato que representa um erro para uma operação de locatário gerenc
 ## <a name="properties"></a>Propriedades
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|erro|Cadeia de caracteres|A mensagem de erro da exceção.|
+|erro|String|A mensagem de erro da exceção.|
 |tenantId|String|O Azure Active Directory do locatário para o [locatário gerenciado.](../resources/managedtenants-tenant.md)|
 
 ## <a name="relationships"></a>Relações

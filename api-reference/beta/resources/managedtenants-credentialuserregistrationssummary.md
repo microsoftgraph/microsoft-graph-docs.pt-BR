@@ -1,16 +1,16 @@
 ---
 title: tipo de recurso credentialUserRegistrationsSummary
 description: Representa um resumo dos registros Azure Active Directory de credenciais de um determinado locatário gerenciado.
-author: isaiahwilliams
-localization_priority: Normal
+author: idwilliams
+ms.localizationpriority: medium
 ms.prod: microsoft-365-lighthouse
 doc_type: resourcePageType
-ms.openlocfilehash: 43a3f5cd39e8c151c71f976042e9bb33ae527dc4
-ms.sourcegitcommit: e372382019f1a136543eadab02ba70af3921e098
+ms.openlocfilehash: 4ffa029d74ea3ee459be9822b262e0963ec2cf9c
+ms.sourcegitcommit: 71186ad44d8d0df15e10b0f89df68d2ef0cf9d14
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/13/2021
-ms.locfileid: "53401942"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "61791935"
 ---
 # <a name="credentialuserregistrationssummary-resource-type"></a>tipo de recurso credentialUserRegistrationsSummary
 
@@ -29,15 +29,15 @@ Representa um resumo dos registros Azure Active Directory de credenciais de um d
 ## <a name="properties"></a>Propriedades
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|id|Cadeia de caracteres|O identificador exclusivo dessa entidade. Obrigatório. Somente leitura.|
+|id|String|O identificador exclusivo dessa entidade. Obrigatório. Somente leitura.|
 |lastRefreshedDateTime|DateTimeOffset|Data e hora em que a entidade foi atualizada pela última vez na plataforma de gerenciamento de vários locatários. Opcional. Somente leitura.|
 |mfaAndSsprCapableUserCount|Int32|O número de usuários que são capazes de executar autenticação multifa factor ou redefinição de senha de autoatendados. Opcional. Somente leitura.|
-|mfaConditionalAccessPolicyState|Cadeia de caracteres|O estado de uma política de acesso condicional que impõe a autenticação multifacional. Opcional. Somente leitura.|
+|mfaConditionalAccessPolicyState|String|O estado de uma política de acesso condicional que impõe a autenticação multifacional. Opcional. Somente leitura.|
 |mfaRegisteredUserCount|Int32|O número de usuários registrados para autenticação multifa factor. Opcional. Somente leitura.|
-|securityDefaultsEnabled|Boolean|Um sinalizador que indica se os Padrões de Segurança de Identidade estão habilitados. Opcional. Somente leitura.|
+|securityDefaultsEnabled|Booliano|Um sinalizador que indica se os Padrões de Segurança de Identidade estão habilitados. Opcional. Somente leitura.|
 |ssprEnabledUserCount|Int32|O número de usuários habilitados para redefinição de senha de autoatendados. Opcional. Somente leitura.|
 |ssprRegisteredUserCount|Int32|O número de usuários registrados para redefinição de senha de autoatendados. Opcional. Somente leitura.|
-|tenantDisplayName|Cadeia de caracteres|O nome de exibição do locatário gerenciado. Obrigatório. Somente leitura.|
+|tenantDisplayName|String|O nome de exibição do locatário gerenciado. Obrigatório. Somente leitura.|
 |tenantId|String|O Azure Active Directory do locatário para o [locatário gerenciado.](../resources/managedtenants-tenant.md) Obrigatório. Somente leitura.|
 |totalUserCount|Int32|O número total de usuários no locatário gerenciado determinado. Opcional. Somente leitura.|
 

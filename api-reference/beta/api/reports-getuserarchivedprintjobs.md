@@ -5,12 +5,12 @@ author: braedenp-msft
 ms.localizationpriority: medium
 ms.prod: cloud-printing
 doc_type: apiPageType
-ms.openlocfilehash: 7f766f78361af3bd4bc1e5bd1eda81b035aa3a40
-ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
+ms.openlocfilehash: 36547593028f1c6d8a5b7fe5afff058a38d313fa
+ms.sourcegitcommit: 71186ad44d8d0df15e10b0f89df68d2ef0cf9d14
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/12/2021
-ms.locfileid: "60946633"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "61792208"
 ---
 # <a name="reports-getuserarchivedprintjobs"></a>reports: getUserArchivedPrintJobs
 
@@ -43,13 +43,15 @@ GET /reports/getUserArchivedPrintJobs(userId=userId-value,startDateTime=startDat
 | Autorização | {token} de portador. Obrigatório. |
 
 ## <a name="function-parameters"></a>Parâmetros de função
+Na URL de solicitação, forneça os seguintes parâmetros de função com valores:
 
 | Parâmetro     | Tipo                 | Obrigatório? | Descrição                                                          |
 |---------------|----------------------|-----------|----------------------------------------------------------------------|
 | `userId`      | `Edm.String`         | Sim       | A ID do usuário para o que retornar dados.                               |
 | `startDateTime` | `Edm.DateTimeOffset` | Não        | A data de início (inclusive) do período de tempo a ser incluído. |
-| `endDateTime`   | `Edm.DateTimeOffset` | Não        | A data de término (inclusive) do período de tempo a ser incluído.   |
+| `endDateTime`   | `Edm.DateTimeOffset` | Não        | A data de término (inclusive) do período de tempo a ser incluído. |
 
+>**Observação:** Se um valor não for necessário, passe o parâmetro com valor nulo.
 ## <a name="response"></a>Resposta
 Se tiver êxito, este método retornará um código de resposta e uma `200 OK` coleção de objetos [archivedPrintJob](../resources/archivedprintjob.md) no corpo da resposta.
 

@@ -1,16 +1,16 @@
 ---
 title: Atualizar profilephoto
-description: Atualiza a foto de qualquer usuário no locatário, incluindo o usuário conectado ou o grupo ou contato especificado. Desde lá
-localization_priority: Normal
+description: Atualiza a foto de qualquer usuário no locatário, incluindo o usuário conectado ou o grupo ou contato especificado.
+ms.localizationpriority: medium
 doc_type: apiPageType
-ms.prod: ''
+ms.prod: people
 author: kevinbellinger
-ms.openlocfilehash: e6ccd0fe70f2e48c890df074c6a7865cbf502f83
-ms.sourcegitcommit: 94c4acf8bd03c10a44b12952b6cb4827df55b978
+ms.openlocfilehash: 31d3ace676a00af96a21cf0d666012dfba4df6ae
+ms.sourcegitcommit: 71186ad44d8d0df15e10b0f89df68d2ef0cf9d14
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/06/2021
-ms.locfileid: "52787587"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "61861362"
 ---
 # <a name="update-profilephoto"></a>Atualizar profilephoto
 
@@ -24,18 +24,37 @@ Use SOMENTE PUT para essa operação.
 
 > **Observação**: ao atualizar a **foto do usuário,** essa operação tenta primeiro atualizar a foto no Microsoft 365. Se isso falhar (devido ao usuário não ter uma caixa de correio), essa API tentará atualizar a foto no Azure Active Directory.
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
+
+### <a name="to-update-the-profile-photo-of-the-signed-in-user"></a>Para atualizar a foto do perfil do usuário conectado
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegado (conta corporativa ou de estudante)     | Foto de perfil do usuário **de entrada**:<br/>User.ReadWrite, User.ReadWrite.All<br /><br />Para recurso de **grupo**:<br />Group.ReadWrite.All<br /><br />Para recurso de **contato**:<br />Contacts.ReadWrite |
-|Delegado (conta pessoal da Microsoft) | Sem suporte. |
-|Aplicativo                            | Para recurso de **usuário**:<br/>User.ReadWrite.All<br /><br />Para recurso de **grupo**:<br />Group.ReadWrite.All<br /><br />Para recurso de **contato**:<br />Contacts.ReadWrite |
+|Delegado (conta corporativa ou de estudante)      |   User.ReadWrite, User.ReadWrite.All           |
+|Delegado (conta pessoal da Microsoft)      |   Sem suporte.            |
+|Aplicativo      |    User.ReadWrite.All           |
 
-> **Observação:** para atualizar a foto de qualquer usuário na organização, o aplicativo deve ter a Permissão do aplicativo User.ReadWrite.All e chamar esta API usando a própria identidade, não em nome de um usuário. Para saber mais, confira [obter acesso sem um usuário conectado](/graph/auth-v2-service). A atualização da foto do usuário in-loco requer apenas a permissão User.ReadWrite.
+### <a name="to-update-the-profile-photo-of-a-group"></a>Para atualizar a foto de perfil de um grupo
 
-> **Observação:** Há um [problema conhecido](/graph/known-issues#groups)ao acessar fotos de grupo usando permissões de aplicativo.
+|Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
+|:--------------------|:---------------------------------------------------------|
+|Delegado (conta corporativa ou de estudante)      |   Group.ReadWrite.All           |
+|Delegado (conta pessoal da Microsoft)      |   Sem suporte.            |
+|Aplicativo      |    Group.ReadWrite.All           |
+
+### <a name="to-update-the-profile-photo-of-a-contact"></a>Para atualizar a foto de perfil de um contato
+
+|Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
+|:--------------------|:---------------------------------------------------------|
+|Delegado (conta corporativa ou de estudante)      |   Contacts.ReadWrite           |
+|Delegado (conta pessoal da Microsoft)      |   Sem suporte.            |
+|Aplicativo      |    Contacts.ReadWrite           |
+
+> [!NOTE]
+> 1. Para atualizar a foto de qualquer usuário na organização, seu aplicativo deve ter a permissão de aplicativo *User.ReadWrite.All* e chamar essa API sob sua própria identidade, não em nome de um usuário. Para saber mais, confira [obter acesso sem um usuário conectado](/graph/auth-v2-service). A atualização da foto do usuário in-loco requer apenas a *permissão User.ReadWrite.*
+> 2. Atualmente, há um [problema conhecido](/graph/known-issues#groups) ao acessar fotos de grupo usando permissões de aplicativos.
+> 3. A atualização da foto de um usuário usando a API do Microsoft Graph atualmente não é suportada em locatários do Azure AD B2C.
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- { "blockType": "ignored" } -->

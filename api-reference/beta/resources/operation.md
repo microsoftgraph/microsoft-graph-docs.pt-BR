@@ -1,35 +1,35 @@
 ---
-title: tipo de recurso Operation
-description: O status de uma operação de execução longa.
-localization_priority: Normal
+title: tipo de recurso operation
+description: O status de uma operação de longa duração.
+ms.localizationpriority: medium
 doc_type: resourcePageType
 ms.prod: ''
 author: billbliss
-ms.openlocfilehash: f57b9f14603fdeae539e872d87b5af2645cedef0
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 781dcf64cae103cd65f460edead13ca6995d2a51
+ms.sourcegitcommit: 71186ad44d8d0df15e10b0f89df68d2ef0cf9d14
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47998506"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "61792257"
 ---
-# <a name="operation-resource-type"></a>tipo de recurso Operation
+# <a name="operation-resource-type"></a>tipo de recurso operation
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-O status de uma operação de execução longa.
+O status de uma operação de longa duração.
 
-## <a name="methods"></a>Methods
+## <a name="methods"></a>Métodos
 
-Nenhum
+Nenhum.
 
 ## <a name="properties"></a>Propriedades
 
 | Propriedade           | Tipo            | Descrição                                                                     |
 | :----------------- | :-------------- | :-------------------------------------------------------------------------------|
 | createdDateTime    | DateTimeOffset  | A hora de início da operação.                                                |
-| id                 | String          | A ID da operação. somente leitura. Servidor gerado.                                  |
+| id                 | String          | A ID da operação. Somente leitura. Servidor gerado.                                  |
 | lastActionDateTime | DateTimeOffset  | A hora da última ação da operação.                                   |
 | status             | String          | Os valores possíveis são: `notStarted`, `running`, `completed`, `failed`. Somente leitura. |
 

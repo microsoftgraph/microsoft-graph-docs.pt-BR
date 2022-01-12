@@ -1,16 +1,16 @@
 ---
 title: 'tenantTag: assignTag'
 description: Atribua a marca de locatário aos locatários gerenciados especificados.
-author: isaiahwilliams
+author: idwilliams
 ms.localizationpriority: medium
 ms.prod: microsoft-365-lighthouse
 doc_type: apiPageType
-ms.openlocfilehash: f1c2ae61e2df3265d4b8383fb428478f382d4bfb
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: 05c5f16e905842acf2bee7e92fc7fb294754f850
+ms.sourcegitcommit: 71186ad44d8d0df15e10b0f89df68d2ef0cf9d14
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "61014604"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "61861731"
 ---
 # <a name="tenanttag-assigntag"></a>tenantTag: assignTag
 Namespace: microsoft.graph.managedTenants
@@ -51,7 +51,7 @@ A tabela a seguir mostra os parâmetros que podem ser usados com esta ação.
 
 |Parâmetro|Tipo|Descrição|
 |:---|:---|:---|
-|tenantIds|Coleção de cadeias de caracteres|A coleção de Azure Active Directory de locatários onde a marca de locatário deve ser atribuída.|
+|tenantIds|String collection|A coleção de Azure Active Directory de locatários onde a marca de locatário deve ser atribuída.|
 
 ## <a name="response"></a>Resposta
 
@@ -93,7 +93,7 @@ Content-Type: application/json
 [!INCLUDE [sample-code](../includes/snippets/java/tenanttag-assigntag-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[Go](#tab/go)
+# <a name="go"></a>[Ir](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/tenanttag-assigntag-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 

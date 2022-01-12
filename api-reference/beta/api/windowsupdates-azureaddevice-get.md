@@ -1,16 +1,16 @@
 ---
 title: Obter azureADDevice
 description: Leia as propriedades de um objeto azureADDevice.
-author: Alice-at-Microsoft
+author: aarononeal
 ms.localizationpriority: medium
 ms.prod: w10
 doc_type: apiPageType
-ms.openlocfilehash: d0c4f8eeeb5f2a97095869c610ff9f37db110ed3
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: adbf8f892868e1821fcb2a744e670360eee39f90
+ms.sourcegitcommit: 71186ad44d8d0df15e10b0f89df68d2ef0cf9d14
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "61013246"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "61863217"
 ---
 # <a name="get-azureaddevice"></a>Obter azureADDevice
 Namespace: microsoft.graph.windowsUpdates
@@ -84,7 +84,7 @@ GET https://graph.microsoft.com/beta/admin/windows/updates/updatableAssets/983f0
 [!INCLUDE [sample-code](../includes/snippets/java/get-azureaddevice-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[Go](#tab/go)
+# <a name="go"></a>[Ir](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/get-azureaddevice-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 

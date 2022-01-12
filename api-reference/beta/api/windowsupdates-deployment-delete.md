@@ -1,16 +1,16 @@
 ---
 title: Excluir implantação
 description: Excluir um objeto de implantação.
-author: Alice-at-Microsoft
+author: aarononeal
 ms.localizationpriority: medium
 ms.prod: w10
 doc_type: apiPageType
-ms.openlocfilehash: bacfe548b90c6e2587b6691cf419397d795e2c01
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: 750179a71ccf969a2a4b1ab304b9a3dfc5e2224a
+ms.sourcegitcommit: 71186ad44d8d0df15e10b0f89df68d2ef0cf9d14
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "61031272"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "61796281"
 ---
 # <a name="delete-deployment"></a>Excluir implantação
 Namespace: microsoft.graph.windowsUpdates
@@ -79,7 +79,7 @@ DELETE https://graph.microsoft.com/beta/admin/windows/updates/deployments/{deplo
 [!INCLUDE [sample-code](../includes/snippets/java/delete-deployment-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[Go](#tab/go)
+# <a name="go"></a>[Ir](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/delete-deployment-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 

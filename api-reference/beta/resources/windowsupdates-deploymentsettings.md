@@ -1,16 +1,16 @@
 ---
 title: Tipo de recurso deploymentSettings
 description: Determina quando e como o serviço implanta uma atualização.
-author: Alice-at-Microsoft
+author: aarononeal
 ms.localizationpriority: medium
 ms.prod: w10
 doc_type: resourcePageType
-ms.openlocfilehash: 0906f401ac414928549602d602317ddc3f5305c5
-ms.sourcegitcommit: c7ff992ef63e480d070421ba99b28ee129cb6acb
+ms.openlocfilehash: d1cad7bd51b8d94078c1264f2dadc352af4056c7
+ms.sourcegitcommit: 71186ad44d8d0df15e10b0f89df68d2ef0cf9d14
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "60695710"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "61861198"
 ---
 # <a name="deploymentsettings-resource-type"></a>Tipo de recurso deploymentSettings
 

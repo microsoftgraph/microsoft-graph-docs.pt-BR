@@ -5,12 +5,12 @@ author: lumine2008
 ms.localizationpriority: medium
 ms.prod: excel
 doc_type: apiPageTypes
-ms.openlocfilehash: 5d6fdccb42673e1668a6674389ed9a60cc5895eb
-ms.sourcegitcommit: 08e9b0bac39c1b1d2c8a79539d24aaa93364baf2
+ms.openlocfilehash: ff8cc865dd08653aed45479dd558fd4c7ad61b41
+ms.sourcegitcommit: 71186ad44d8d0df15e10b0f89df68d2ef0cf9d14
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/24/2021
-ms.locfileid: "59777345"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "61838541"
 ---
 # <a name="workbook-tablerowoperationresult"></a>workbook: tableRowOperationResult
 Namespace: microsoft.graph
@@ -44,7 +44,8 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 }
 -->
 ``` http
-GET /driveItem/workbook/tableRowOperationResult(key={operation-id})
+GET /me/drive/items/{id}/workbook/tableRowOperationResult(key={operation-id})
+GET /me/drive/root:/{item-path}:/workbook/tableRowOperationResult(key={operation-id})
 ```
 
 ## <a name="function-parameters"></a>Parâmetros de função
@@ -79,7 +80,7 @@ O exemplo a seguir mostra uma solicitação.
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta/driveItem/workbook/tableRowOperationResult(key='0195cfac-bd22-4f91-b276-dece0aa2378b')
+GET https://graph.microsoft.com/beta/me/drive/items/01CCETFLK7GVZTZHSQNRD2AEI5XWTCU6FJ/workbook/tableRowOperationResult(key='0195cfac-bd22-4f91-b276-dece0aa2378b')
 ```
 
 

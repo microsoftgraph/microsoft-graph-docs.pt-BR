@@ -1,16 +1,16 @@
 ---
 title: Listar cloudPcConnections
 description: Obter uma lista dos objetos cloudPcConnection e suas propriedades.
-author: isaiahwilliams
+author: idwilliams
 ms.localizationpriority: medium
 ms.prod: microsoft-365-lighthouse
 doc_type: apiPageType
-ms.openlocfilehash: 9c93d0e45ab6fc8fd81ea0f3a98271f42d2c52fa
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: f3276abafea107207b4c211a029ccd56b05bf117
+ms.sourcegitcommit: 71186ad44d8d0df15e10b0f89df68d2ef0cf9d14
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "61014695"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "61862069"
 ---
 # <a name="list-cloudpcconnections"></a>Listar cloudPcConnections
 Namespace: microsoft.graph.managedTenants
@@ -82,7 +82,7 @@ GET https://graph.microsoft.com/beta/tenantRelationships/managedTenants/cloudPcC
 [!INCLUDE [sample-code](../includes/snippets/java/list-cloudpcconnection-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[Go](#tab/go)
+# <a name="go"></a>[Ir](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/list-cloudpcconnection-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 

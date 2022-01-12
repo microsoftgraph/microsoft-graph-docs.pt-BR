@@ -314,7 +314,7 @@ items:
                 href: api/user-list-events.md
               - name: Modo de exibição de lembrete
                 href: api/user-reminderview.md
-          - name: Contatos
+          - name: Contacts
             href: resources/contact.md
             items:
               - name: Criar contato
@@ -489,7 +489,7 @@ items:
             items:
               - name: Listar tarefas
                 href: api/planneruser-list-tasks.md
-          - name: Teamwork
+          - name: Trabalho em equipe
             items:
               - name: Aplicativo instalado
                 href: resources/teamsappinstallation.md
@@ -827,6 +827,15 @@ items:
                 href: api/directory-deleteditems-delete.md
               - name: Restaurar aplicativo excluído
                 href: api/directory-deleteditems-restore.md
+              - name: Modelo de aplicativo
+                href: resources/applicationtemplate.md
+                items:
+                  - name: Listar
+                    href: api/applicationtemplate-list.md
+                  - name: Obter
+                    href: api/applicationtemplate-get.md
+                  - name: Instantiate
+                    href: api/applicationtemplate-instantiate.md
               - name: Certificados e segredos
                 items:
                   - name: Adicionar senha
@@ -876,15 +885,12 @@ items:
                         href: api/application-list-tokenlifetimepolicies.md
                       - name: Remover
                         href: api/application-delete-tokenlifetimepolicies.md
-              - name: Modelo de aplicativo
-                href: resources/applicationtemplate.md
+              - name: Distribuidor verificado
                 items:
-                  - name: Listar
-                    href: api/applicationtemplate-list.md
-                  - name: Obter
-                    href: api/applicationtemplate-get.md
-                  - name: Instantiate
-                    href: api/applicationtemplate-instantiate.md
+                  - name: Set
+                    href: api/application-setverifiedpublisher.md
+                  - name: Unset
+                    href: api/application-unsetverifiedpublisher.md
           - name: Entidade de serviço
             href: resources/serviceprincipal.md
             items:
@@ -1192,7 +1198,7 @@ items:
                 href: api/calendarpermission-update.md
               - name: Excluir
                 href: api/calendarpermission-delete.md
-          - name: Categorias
+          - name: Categories
             items:
               - name: Categoria
                 href: resources/outlookcategory.md
@@ -1394,7 +1400,7 @@ items:
             href: resources/complianceapioverview.md
           - name: Solicitação de direitos do sujeito
             items:
-              - name: Visão geral
+              - name: Visão Geral
                 href: resources/subjectrightsrequest-subjectrightsrequestapioverview.md
               - name: Solicitação de direitos do sujeito
                 href: resources/subjectrightsrequest.md
@@ -4858,7 +4864,7 @@ items:
             items:
               - name: Métodos de autenticação
                 items:
-                  - name: Visão geral
+                  - name: Visão Geral
                     href: resources/authenticationmethods-overview.md
                   - name: Listar todos os métodos
                     href: api/authentication-list-methods.md
@@ -5754,7 +5760,7 @@ items:
                 href: api/resource-get.md
       - name: Inteligência de pessoas e local de trabalho
         items:
-          - name: Visão geral
+          - name: Visão Geral
             href: resources/social-overview.md
           - name: Pessoas
             items:
@@ -6474,7 +6480,7 @@ items:
                 href: api/plannerprogresstaskboardtaskformat-get.md
               - name: Atualizar progresso do formato de quadro de tarefas
                 href: api/plannerprogresstaskboardtaskformat-update.md
-      - name: Teamwork
+      - name: Trabalho em equipe
         displayName: Microsoft Teams
         items:
           - name: Visão Geral
@@ -6953,7 +6959,7 @@ items:
       - name: Tarefas pendentes
         displayName: Microsoft To Do
         items:
-          - name: Visão geral
+          - name: Visão Geral
             href: resources/todo-overview.md
           - name: Lista de tarefas
             href: resources/todotasklist.md

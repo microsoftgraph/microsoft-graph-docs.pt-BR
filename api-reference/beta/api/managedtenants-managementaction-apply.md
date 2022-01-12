@@ -1,16 +1,16 @@
 ---
 title: 'managementAction: apply'
 description: Aplica uma ação de gerenciamento a um locatário gerenciado específico. Ao executar essa operação, as configurações apropriadas serão feitas e as políticas serão criadas. Por exemplo, ao aplicar a autenticação multifacional necessária para a ação de gerenciamento de administradores, criará uma política de acesso condicional Azure Active Directory que requer autenticação multifacional para todos os usuários que foram atribuídos a uma função de diretório administrativo.
-author: isaiahwilliams
+author: idwilliams
 ms.localizationpriority: medium
 ms.prod: microsoft-365-lighthouse
 doc_type: apiPageType
-ms.openlocfilehash: 25b60d217a312a28210106b62f609c07384de904
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: 72ec7a55adf9566166307567a483497959a01750
+ms.sourcegitcommit: 71186ad44d8d0df15e10b0f89df68d2ef0cf9d14
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "60980940"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "61790962"
 ---
 # <a name="managementaction-apply"></a>managementAction: apply
 Namespace: microsoft.graph.managedTenants
@@ -52,7 +52,7 @@ A tabela a seguir mostra os parâmetros que podem ser usados com esta ação.
 |Parâmetro|Tipo|Descrição|
 |:---|:---|:---|
 |tenantId|String|O Azure Active Directory do locatário para o [locatário gerenciado.](../resources/managedtenants-tenant.md)|
-|tenantGroupId|Cadeia de caracteres|O identificador do grupo de locatários.|
+|tenantGroupId|String|O identificador do grupo de locatários.|
 |managementTemplateId|String|O identificador do modelo [de gerenciamento](../resources/managedtenants-managementtemplate.md).|
 
 ## <a name="response"></a>Resposta
@@ -95,7 +95,7 @@ Content-Type: application/json
 [!INCLUDE [sample-code](../includes/snippets/java/managementaction-apply-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[Go](#tab/go)
+# <a name="go"></a>[Ir](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/managementaction-apply-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 

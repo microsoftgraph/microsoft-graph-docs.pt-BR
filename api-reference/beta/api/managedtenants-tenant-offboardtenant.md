@@ -1,16 +1,16 @@
 ---
 title: 'tenant: offboardTenant'
 description: Executa os procedimentos apropriados para remover um locatário gerenciado da plataforma de gerenciamento de vários locatários. Nenhum relacionamento, como o comércio e privilégios administrativos de representante, será afetado. A única alteração feita invocando essa ação é que o locatário será desprovisionado da plataforma de gerenciamento de vários locatários.
-author: isaiahwilliams
+author: idwilliams
 ms.localizationpriority: medium
 ms.prod: microsoft-365-lighthouse
 doc_type: apiPageType
-ms.openlocfilehash: 2e99740631880108a115612d59b5f50a8e3d4c82
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: c42f04df0dae01db204169973fb71f128b648031
+ms.sourcegitcommit: 71186ad44d8d0df15e10b0f89df68d2ef0cf9d14
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "61014646"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "61861860"
 ---
 # <a name="tenant-offboardtenant"></a>tenant: offboardTenant
 Namespace: microsoft.graph.managedTenants
@@ -79,7 +79,7 @@ POST https://graph.microsoft.com/beta/tenantRelationships/managedTenants/tenants
 [!INCLUDE [sample-code](../includes/snippets/java/tenant-offboardtenant-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[Go](#tab/go)
+# <a name="go"></a>[Ir](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/tenant-offboardtenant-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 

@@ -1,16 +1,16 @@
 ---
 title: tipo de recurso monitoringRule
 description: Regra que define um sinal e um limite a ser monitorado e a ação a ser cumprida quando atendida.
-author: Alice-at-Microsoft
+author: aarononeal
 ms.localizationpriority: medium
 ms.prod: w10
 doc_type: resourcePageType
-ms.openlocfilehash: 376de8e06d5fee242dc068362a4daaa99c977cd2
-ms.sourcegitcommit: c6a8c1cc13ace38d6c4371139ee84707c5c93352
+ms.openlocfilehash: 3ae09d2f4a3badf62ffa22380372e597b7fd6a4f
+ms.sourcegitcommit: 71186ad44d8d0df15e10b0f89df68d2ef0cf9d14
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/10/2021
-ms.locfileid: "60890434"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "61792180"
 ---
 # <a name="monitoringrule-resource-type"></a>tipo de recurso monitoringRule
 

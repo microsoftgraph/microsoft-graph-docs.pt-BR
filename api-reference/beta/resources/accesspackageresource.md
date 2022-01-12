@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: markwahl-msft
 ms.prod: governance
 doc_type: resourcePageType
-ms.openlocfilehash: e7d82ac5ab0710b7b77a149a01b164a76d5f64bd
-ms.sourcegitcommit: fd609cb401ff862c3f5c21847bac9af967c6bf82
+ms.openlocfilehash: 01c37923f3ca63b7dd7ccf6803bb2bc696ef4546
+ms.sourcegitcommit: 71186ad44d8d0df15e10b0f89df68d2ef0cf9d14
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/31/2021
-ms.locfileid: "61651334"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "61792138"
 ---
 # <a name="accesspackageresource-resource-type"></a>Tipo de recurso accessPackageResource
 
@@ -31,6 +31,7 @@ No [Azure AD Entitlement Management](entitlementmanagement-overview.md), um recu
 | Propriedade     | Tipo        | Descrição |
 |:-------------|:------------|:------------|
 |accessPackageResourceEnvironment|[accessPackageResourceEnvironment](../resources/accesspackageresourceenvironment.md)|Contém as informações de ambiente do recurso. Isso pode ser definido usando `@odata.bind` a anotação ou a *origem do ambienteId*.|
+|attributes|[coleção accessPackageResourceAttribute](../resources/accesspackageresourceattribute.md)| Contém informações de atributo para o recurso.
 |addedBy|String|Somente leitura.|
 |addedOn|DateTimeOffset|O tipo de carimbo de data/hora representa informações de data e hora usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite UTC em 1º de janeiro de 2014 é `2014-01-01T00:00:00Z`|
 |descrição|String|Uma descrição do recurso.|
@@ -67,6 +68,11 @@ Veja a seguir uma representação JSON do recurso.
 {
   "addedBy": "String",
   "addedOn": "String (timestamp)",
+  "attributes": [
+    {
+      "@odata.type": "microsoft.graph.accessPackageResourceAttribute"
+    }
+   ],
   "description": "String",
   "displayName": "String",
   "id": "String (identifier)",

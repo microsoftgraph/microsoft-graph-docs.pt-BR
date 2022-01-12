@@ -1,16 +1,16 @@
 ---
 title: Tipo de recurso deploymentState
 description: Descreve e controla o estado atual de uma implantação.
-author: Alice-at-Microsoft
+author: aarononeal
 ms.localizationpriority: medium
 ms.prod: w10
 doc_type: resourcePageType
-ms.openlocfilehash: 80b691c6404bac3e98c4c5c6acb9596b5d4c8821
-ms.sourcegitcommit: c6a8c1cc13ace38d6c4371139ee84707c5c93352
+ms.openlocfilehash: e900e3ec23e50a33fabb2d9bb55cf5bfab91a3f3
+ms.sourcegitcommit: 71186ad44d8d0df15e10b0f89df68d2ef0cf9d14
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/10/2021
-ms.locfileid: "60890826"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "61798491"
 ---
 # <a name="deploymentstate-resource-type"></a>Tipo de recurso deploymentState
 

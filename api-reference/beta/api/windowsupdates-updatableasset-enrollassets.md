@@ -1,16 +1,16 @@
 ---
 title: 'updatableAsset: enrollAssets'
 description: Registrar recursos updatableAsset no gerenciamento de atualizações pelo serviço de implantação.
-author: Alice-at-Microsoft
+author: aarononeal
 ms.localizationpriority: medium
 ms.prod: w10
 doc_type: apiPageType
-ms.openlocfilehash: 4fb2ac263f55c72539c9252422ae0b879c9af411
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: 159d2fdc19a8f47e93dfb7d9f734e6566b57f5d6
+ms.sourcegitcommit: 71186ad44d8d0df15e10b0f89df68d2ef0cf9d14
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "61019252"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "61811528"
 ---
 # <a name="updatableasset-enrollassets"></a>updatableAsset: enrollAssets
 Namespace: microsoft.graph.windowsUpdates
@@ -104,7 +104,7 @@ Content-Type: application/json
 [!INCLUDE [sample-code](../includes/snippets/java/updatableasset-enrollassets-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[Go](#tab/go)
+# <a name="go"></a>[Ir](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/updatableasset-enrollassets-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 

@@ -1,16 +1,16 @@
 ---
 title: Tipo de recurso deploymentAudience
 description: O conjunto de recursos updatableAsset aos quais uma implantação pode ser aplicada.
-author: Alice-at-Microsoft
-localization_priority: Normal
+author: aarononeal
+ms.localizationpriority: medium
 ms.prod: w10
 doc_type: resourcePageType
-ms.openlocfilehash: 98d295183f69012da6ea9fc5803bc440465854c8
-ms.sourcegitcommit: 1b09298649d5606b471b4cbe1055419bbe2fc7e5
+ms.openlocfilehash: ab436c0fa9f726528b190fa6fe2f638890447ce4
+ms.sourcegitcommit: 71186ad44d8d0df15e10b0f89df68d2ef0cf9d14
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "52067246"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "61863361"
 ---
 # <a name="deploymentaudience-resource-type"></a>Tipo de recurso deploymentAudience
 
@@ -33,13 +33,13 @@ Se o mesmo **recurso updatableAsset** estiver  incluído nas exclusões e relaç
 ## <a name="properties"></a>Propriedades
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|id|Cadeia de caracteres|O identificador exclusivo para o público de implantação. Retornado por padrão. Chave. Não anulável. Somente leitura.|
+|id|String|O identificador exclusivo para o público de implantação. Devolvido por padrão. Chave. Não anulável. Somente leitura.|
 
 ## <a name="relationships"></a>Relações
 |Relação|Tipo|Descrição|
 |:---|:---|:---|
 |exclusões|[coleção microsoft.graph.windowsUpdates.updatableAsset](../resources/windowsupdates-updatableasset.md)|Especifica os ativos a ser excluídos da audiência.|
-|membros|[coleção microsoft.graph.windowsUpdates.updatableAsset](../resources/windowsupdates-updatableasset.md)|Especifica os ativos a ser incluídos na audiência.|
+|members|[coleção microsoft.graph.windowsUpdates.updatableAsset](../resources/windowsupdates-updatableasset.md)|Especifica os ativos a ser incluídos na audiência.|
 
 ## <a name="json-representation"></a>Representação JSON
 Veja a seguir uma representação JSON do recurso.

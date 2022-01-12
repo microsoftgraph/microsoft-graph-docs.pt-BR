@@ -1,16 +1,16 @@
 ---
 title: Tipo de recurso tenantCustomizedInformation
 description: Representa informações personalizáveis para um locatário gerenciado.
-author: isaiahwilliams
-localization_priority: Normal
+author: idwilliams
+ms.localizationpriority: medium
 ms.prod: microsoft-365-lighthouse
 doc_type: resourcePageType
-ms.openlocfilehash: 580479e6fd710eef7a0907ea51cd5605ef445e40
-ms.sourcegitcommit: e372382019f1a136543eadab02ba70af3921e098
+ms.openlocfilehash: 4b6ad664b8b3bf42cf9fef2410ed0f9eac58e464
+ms.sourcegitcommit: 71186ad44d8d0df15e10b0f89df68d2ef0cf9d14
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/13/2021
-ms.locfileid: "53402137"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "61860947"
 ---
 # <a name="tenantcustomizedinformation-resource-type"></a>Tipo de recurso tenantCustomizedInformation
 
@@ -31,10 +31,10 @@ Representa informações personalizáveis para um locatário gerenciado.
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
 |contacts|[coleção microsoft.graph.managedTenants.tenantContactInformation](../resources/managedtenants-tenantcontactinformation.md)|A coleção de contatos do locatário gerenciado. Opcional.|
-|displayName|Cadeia de caracteres|O nome de exibição do locatário gerenciado. Obrigatório. Somente leitura.|
-|id|Cadeia de caracteres|O Azure Active Directory de locatário do locatário gerenciado. Obrigatório. Somente leitura.|
+|displayName|String|O nome de exibição do locatário gerenciado. Obrigatório. Somente leitura.|
+|id|String|O Azure Active Directory de locatário do locatário gerenciado. Obrigatório. Somente leitura.|
 |tenantId|String|O Azure Active Directory do locatário para o [locatário gerenciado.](../resources/managedtenants-tenant.md) Opcional. Somente leitura.|
-|site|Cadeia de caracteres|O site do locatário gerenciado. Obrigatório.|
+|site|String|O site do locatário gerenciado. Obrigatório.|
 
 ## <a name="relationships"></a>Relações
 Nenhum
