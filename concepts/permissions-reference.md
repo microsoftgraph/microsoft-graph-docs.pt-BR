@@ -4,12 +4,12 @@ description: O Microsoft Graph expõe as permissões granulares que controlam o 
 author: jackson-woods
 ms.localizationpriority: high
 ms.custom: graphiamtop20, scenarios:getting-started
-ms.openlocfilehash: 02a37f6a80c6bfa373583c7ceeaa06c026b11ce8
-ms.sourcegitcommit: 15dd0e98e69f872ed5a709600608b244759b0967
+ms.openlocfilehash: c03900468268c903db79e122dc4f02fc1d5b7222
+ms.sourcegitcommit: 71186ad44d8d0df15e10b0f89df68d2ef0cf9d14
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/18/2021
-ms.locfileid: "61567346"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "61860912"
 ---
 # <a name="microsoft-graph-permissions-reference"></a>Referência de permissões do Microsoft Graph
 
@@ -1744,7 +1744,7 @@ Para cenários mais complexos que envolvem várias permissões, confira [Cenári
 ### <a name="remarks"></a>Comentários
 
 > [!CAUTION]
-> Permissões que permitem conceder autorização, tais como _RoleManagement.readwrite.All_, permitem que um aplicativo conceda a si mesmo, a outros aplicativos ou a qualquer usuário privilégios adicionais. Tenha cuidado ao conceder qualquer uma dessas permissões.
+> Permissões que permitem a concessão de autorização, como _roleManagement.ReadWrite.Directory_, permitem que um aplicativo conceda a si mesmo, outros aplicativos ou qualquer usuário, privilégios adicionais. Tenha cuidado ao conceder qualquer uma dessas permissões.
 
 Com a permissão _RoleManagement.Read.Directory_ um aplicativo pode ler directoryRoles e directoryRoleTemplates. Isso inclui a leitura de informações de associação para funções de diretório.
 

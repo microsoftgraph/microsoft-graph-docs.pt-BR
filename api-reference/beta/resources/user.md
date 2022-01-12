@@ -5,12 +5,12 @@ author: jpettere
 ms.localizationpriority: high
 ms.prod: users
 doc_type: resourcePageType
-ms.openlocfilehash: 29b3d33b140f40f61f6e9a1d31eec6ddeeb88bec
-ms.sourcegitcommit: fd609cb401ff862c3f5c21847bac9af967c6bf82
+ms.openlocfilehash: 51362d1ab8b987445f9dba30b0fde3b0f6768ab5
+ms.sourcegitcommit: 71186ad44d8d0df15e10b0f89df68d2ef0cf9d14
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/31/2021
-ms.locfileid: "61651537"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "61791844"
 ---
 # <a name="user-resource-type"></a>Tipo de recurso de usuário
 
@@ -208,7 +208,7 @@ Esse recurso permite:
 | legalAgeGroupClassification | [legalAgeGroupClassification](#legalagegroupclassification-values) | Usado por aplicativos empresariais para determinar a faixa etária legal do usuário. Essa propriedade é somente leitura e calculada com base nas propriedades **ageGroup** e **consentProvidedForMinor**. Valores permitidos: `null`, `minorWithOutParentalConsent`, `minorWithParentalConsent`, `minorNoParentalConsentRequired`, `notAdult` e `adult`. Confira as [definições de propriedades da faixa etária legal](#legal-age-group-property-definitions) para obter mais informações. <br><br>Retornado apenas em `$select`. |
 | licenseAssignmentStates | Coleção [licenseAssignmentState](licenseassignmentstate.md) | Estado das atribuições de licença para este usuário. Somente leitura.<br><br>Retornado apenas em `$select`. |
 | email | String | O endereço SMTP do usuário, por exemplo, `admin@contoso.com`. As alterações feitas nessa propriedade também atualizarão a coleção **proxyAddresses** do usuário para incluir o valor como um endereço SMTP. Para contas do Azure AD B2C, esta propriedade só pode ser atualizada até dez vezes com endereços SMTP exclusivos. Esta propriedade não pode conter caracteres de destaque. <br><br> Suporte `$filter` (`eq`, `ne`, `not`, `ge`, `le`, `in`, `startsWith`, `endsWith`, e `eq` no `null` valores). |
-| mailboxSettings | [mailboxSettings](mailboxsettings.md) | Configurações da caixa de correio principal do usuário conectado. Você pode [obter](../api/user-get-mailboxsettings.md) ou [atualizar](../api/user-update-mailboxsettings.md) as configurações de localidade, fuso horário ou de envio de respostas automáticas a mensagens de entrada.<br><br>Retornado apenas em `$select`. |
+| mailboxSettings | [mailboxSettings](mailboxsettings.md) | Configurações para a caixa de correio principal do usuário conectado. Você pode [obter](../api/user-get-mailboxsettings.md) ou [atualizar](../api/user-update-mailboxsettings.md) as configurações de localidade, fuso horário ou de envio de respostas automáticas a mensagens de entrada. Para obter mais informações, confira [Preferências do usuário para idiomas e formatos regionais](#user-preferences-for-languages-and-regional-formats). <br><br>Retornado apenas em `$select`. |
 | mailNickname | String | O alias de email do usuário. Essa propriedade deve ser especificada quando um usuário é criado. O comprimento máximo é de 64 caracteres.<br><br>Suporte `$filter` (`eq`, `ne`, `not`, `ge`, `le`, `in`, `startsWith`, e `eq` no `null` valores). |
 | mobilePhone | String | O número de celular principal do usuário. Somente leitura para usuários sincronizados do diretório local. <br><br> Suporte `$filter` (`eq`, `ne`, `not`, `ge`, `le`, `in`, `startsWith`, e `eq` no `null` valores).|
 | mySite | String | A URL do site pessoal do usuário. <br><br>Retornado apenas em `$select`. |
@@ -232,7 +232,7 @@ Esse recurso permite:
 | preferredLanguage | Cadeia de caracteres | O idioma preferencial do usuário. Deve seguir o Código ISO 639-1; por exemplo, `en-US`.<br><br>Suporte `$filter` (`eq`, `ne`, `not`, `ge`, `le`, `in`, `startsWith`, e `eq` no `null` valores). |
 | preferredName | String | O nome preferencial do usuário. <br><br>Retornado apenas em `$select`. |
 | provisionedPlans | coleção [provisionedPlan](provisionedplan.md) | Os planos que estão provisionados para o usuário. Somente leitura. Não anulável. Dá suporte a `$filter` (`eq`, `not`, `ge`, `le`).|
-| proxyAddresses | Coleção de cadeias de caracteres | Por exemplo: `["SMTP: bob@contoso.com", "smtp: bob@sales.contoso.com"]`. Para contas do Azure AD B2C, essa propriedade tem um limite de dez endereços exclusivos. Somente leitura, Não anulável. <br><br>Suporta `$filter` (`eq`, `not`, `ge`, `le`, `startsWith`). |
+| proxyAddresses | Coleção de cadeias de caracteres | Por exemplo: `["SMTP: bob@contoso.com", "smtp: bob@sales.contoso.com"]`. O endereço proxy prefixado com `SMTP` (em maiúsculas) é o endereço proxy primário, enquanto aqueles prefixados com `smtp` são os endereços proxy secundários. Para contas do Azure AD B2C, essa propriedade tem um limite de dez endereços exclusivos. Somente leitura no Microsoft Graph; você pode atualizar essa propriedade somente por meio do [Microsoft 365 de administração](/exchange/recipients-in-exchange-online/manage-user-mailboxes/add-or-remove-email-addresses). Não anulável. <br><br>Suporta `$filter` (`eq`, `not`, `ge`, `le`, `startsWith`). |
 | refreshTokensValidFromDateTime | DateTimeOffset | Os tokens de atualização ou de sessão (cookies de sessão) emitidos antes dessa hora são inválidos e os aplicativos recebem um erro ao usar um token de atualização ou de sessão inválido para adquirir um token de acesso delegado (para acessar APIs como o Microsoft Graph).  Se isso acontecer, o aplicativo precisará adquirir um novo token de atualização, fazendo uma solicitação ao ponto de extremidade de autorização. Somente leitura. Use [invalidateAllRefreshTokens](../api/user-invalidateallrefreshtokens.md) para redefinir.|
 | responsibilities | Coleção de cadeias de caracteres | Uma lista para o usuário enumerar suas responsabilidades. <br><br>Retornado apenas em `$select`. |
 | schools | Coleção de cadeias de caracteres | Uma lista para o usuário enumerar as escolas que frequentou. <br><br>Retornado apenas em `$select`. |
@@ -247,6 +247,11 @@ Esse recurso permite:
 | userPrincipalName | Cadeia de caracteres | O nome UPN do usuário. O nome UPN é um nome de logon para o usuário ao estilo da Internet com base na RFC 822 padrão da Internet. Por convenção, ele deve ser mapeado para o nome de email do usuário. O formato geral é alias@domain, em que o domínio deve estar presente na coleção de domínios verificados do locatário. Essa propriedade é obrigatória quando um usuário é criado. Os domínios verificados para o locatário podem ser acessados pela propriedade **verifiedDomains** da [organização](organization.md).<br>OBSERVAÇÃO: esta propriedade não pode conter caracteres de ênfase. Somente os seguintes caracteres são permitidos `A - Z`, `a - z`, `0 - 9`, ` ' . - _ ! # ^ ~`. Para ver a lista completa de caracteres permitidos, consulte [políticas de nome de usuário](/azure/active-directory/authentication/concept-sspr-policy#userprincipalname-policies-that-apply-to-all-user-accounts). <br><br>Suporta `$filter` (`eq`, `ne`, `not`, `ge`, `le`, `in`, `startsWith`, `endsWith`) e `$orderBy`.
 | userType | String | Um valor de String que pode ser usado para classificar tipos de usuário em seu diretório, como `Member` e `Guest`. <br><br>Suporte `$filter` (`eq`, `ne`, `not`, `in`, e `eq` no `null` valores). **OBSERVAÇÃO:** Para obter mais informações sobre as permissões para usuários membros e convidados, consulte [Quais são as permissões padrão de usuário em Azure Active Directory?](/azure/active-directory/fundamentals/users-default-permissions#member-and-guest-users) |
 
+### <a name="user-preferences-for-languages-and-regional-formats"></a>Preferências do usuário para idiomas e formatos regionais.
+O recurso do **usuário** contém uma propriedade [mailboxSettings](../resources/mailboxsettings.md), que inclui o idioma, a formatação de data e hora, o fuso horário padrão e outras configurações preferidas do usuário especificamente para a caixa de correio principal do Exchange. Essas preferências são direcionadas para os clientes de email e só estarão disponíveis se o usuário tiver uma caixa de correio provisionada. Você pode optar por usar **mailboxSettings** se o seu cenário se concentrar apenas em emails, calendários, contatos ou tarefas pendentes do Outlook.
+
+Além de **mailboxSettings**, **usuário** inclui uma relação por meio de [userSettings](../resources/usersettings.md) para [regionalAndLanguageSettings](../resources/regionalandlanguagesettings.md), o superconjunto de preferências de formatação regional e de idioma, que pode ser usado por qualquer aplicativo para oferecer ao usuário uma experiência de formatação regional e de idioma melhor. Use **userSettings** para uma experiência consistente entre aplicativos que tocam no perfil de usuário do Azure AD para refletir as mesmas preferências do usuário.
+
 ### <a name="legal-age-group-property-definitions"></a>Definições de propriedade da faixa etária legal
 
 Esta seção explica como as três propriedades de grupo idade (**legalAgeGroupClassification**, **ageGroup** e **consentProvidedForMinor**) são usadas por administradores do Azure Active Directory e desenvolvedores de aplicativos empresariais para atender às regulamentações relacionadas à idade:
@@ -254,10 +259,8 @@ Esta seção explica como as três propriedades de grupo idade (**legalAgeGroupC
 - **ageGroup** e **consentProvidedForMinor** são propriedades opcionais usadas pelos administradores do Azure Active Directory para ajudar a garantir que o uso de uma conta seja tratado corretamente com base nas regras regulatórias relacionadas à idade que regem o país ou região do usuário.
 
 Por exemplo: Cameron é o administrador de um diretório em uma escola de ensino fundamental em Holyport, no Reino Unido. No início do ano letivo ele usa a documentação de admissão para obter o consentimento dos pais dos menores baseado nos regulamentos relacionadas com a idade no Reino Unido. O consentimento obtido do pai permite que a conta do menor seja usado pela escola de Holyport e os aplicativos da Microsoft. Cameron cria todas as contas e define o ageGroup para "menor" e consentProvidedForMinor para "concedido". Os aplicativos usados por seus alunos poderão, então suprimir recursos que não são adequados para menores.
-<!-- Note that the following 3 sub-sections are only documented like enums for a consistent user experience.
-For some reason they are not defined as enums in the CSDL.
-Hence the type of the corresponding 3 properties remain as String type in the Properties table.
--->
+
+<!-- Note that the following 3 sub-sections are only documented like enums for a consistent user experience but they are String types.-->
 
 #### <a name="legalagegroupclassification-values"></a>legalAgeGroupClassification values
 
@@ -331,11 +334,6 @@ Hence the type of the corresponding 3 properties remain as String type in the Pr
 |todo|[todo](todo.md)|Representa os serviços To Do disponíveis para um usuário. |
 |transitiveReports|Coleção [directoryObject](directoryobject.md) | Os relatórios transitivos para um usuário. Somente leitura.|
 |usageRight|Coleção [usageRight](usageright.md)|Representa os direitos de uso concedidos a um usuário. |
-
-### <a name="user-preferences-for-languages-and-regional-formats"></a>Preferências do usuário para idiomas e formatos regionais.
-O recurso do **usuário** contém uma propriedade [mailboxSettings](../resources/mailboxsettings.md), que inclui o idioma, a formatação de data e hora, o fuso horário padrão e outras configurações preferidas do usuário especificamente para a caixa de correio principal do Exchange. Essas preferências são direcionadas para os clientes de email e só estarão disponíveis se o usuário tiver uma caixa de correio provisionada. Você pode optar por usar **mailboxSettings** se o seu cenário se concentrar apenas em emails, calendários, contatos ou tarefas pendentes do Outlook.
-
-Além de **mailboxSettings**, **usuário** inclui uma relação por meio de [userSettings](../resources/usersettings.md) para [regionalAndLanguageSettings](../resources/regionalandlanguagesettings.md), o superconjunto de preferências de formatação regional e de idioma, que pode ser usado por qualquer aplicativo para oferecer ao usuário uma experiência de formatação regional e de idioma melhor. Use **userSettings** para uma experiência consistente entre aplicativos que tocam no perfil de usuário do Azure AD para refletir as mesmas preferências do usuário.
 
 ## <a name="json-representation"></a>Representação JSON
 

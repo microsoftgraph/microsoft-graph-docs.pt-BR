@@ -5,12 +5,12 @@ description: Item é o principal modelo de dados na API do OneDrive. Tudo é um 
 ms.localizationpriority: high
 ms.prod: sharepoint
 doc_type: resourcePageType
-ms.openlocfilehash: 9bf51634a9e3923b281fee2d35e9a920eb70f22a
-ms.sourcegitcommit: 12f07c009c57db3cc9174b165b5ec30195c00996
+ms.openlocfilehash: 3be0a329d891bbaccac012b8753a5c374b49a8a7
+ms.sourcegitcommit: 71186ad44d8d0df15e10b0f89df68d2ef0cf9d14
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/30/2021
-ms.locfileid: "61647131"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "61847223"
 ---
 # <a name="driveitem-resource-type"></a>tipo de recurso driveItem
 
@@ -73,13 +73,13 @@ Itens com a faceta **folder** atuam como contêineres de itens e, portanto, têm
 
 | Propriedade             | Tipo               | Descrição
 |:---------------------|:-------------------|:---------------------------------
-| audio                | [audio][]          | Metadados de áudio, se o item for um arquivo de áudio. Somente leitura.
+| audio                | [audio][]          | Metadados de áudio, se o item for um arquivo de áudio. Somente leitura. Somente no OneDrive Personal.
 | conteúdo              | Fluxo             | O fluxo de conteúdo, se o item representar um arquivo.
 | createdBy            | [identitySet][]    | Identidade do usuário, dispositivo e aplicativo que criou o item. Somente leitura.
 | createdDateTime      | DateTimeOffset     | Data e hora de criação do item. Somente leitura.
 | cTag                 | String             | Uma eTag para o conteúdo do item. Essa eTag não será alterada se apenas os metadados forem alterados. **Observação** Essa propriedade não será retornada se o item for uma pasta. Somente leitura.
 | deleted              | [deleted][]        | Informações sobre o estado excluído do item. Somente leitura.
-| descrição          | String             | Fornece uma descrição do item visível para o usuário. Leitura e gravação. Somente no OneDrive Personal
+| descrição          | String             | Fornece uma descrição visível ao usuário do item. Leitura/gravação. Somente no OneDrive Personal.
 | eTag                 | String             | eTag para o item inteiro (metadados + conteúdo). Somente leitura.
 | file                 | [file][]           | Metadados de arquivo, se o item for um arquivo. Somente leitura.
 | fileSystemInfo       | [fileSystemInfo][] | Informações do sistema de arquivos no cliente. Leitura e gravação.

@@ -3,12 +3,12 @@ title: Problemas conhecidos com o Microsoft Graph
 description: Este artigo descreve os problemas conhecidos com o Microsoft Graph.
 author: MSGraphDocsVTeam
 ms.localizationpriority: high
-ms.openlocfilehash: 148a9d6d54ead703f32e4a3f27810fec11ebb711
-ms.sourcegitcommit: 33e0bbada1b47310a18d8f794914b1319d88e6f4
+ms.openlocfilehash: bbca6eaa30d28a20d17b2b502357e9eb55abc59a
+ms.sourcegitcommit: 71186ad44d8d0df15e10b0f89df68d2ef0cf9d14
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/10/2021
-ms.locfileid: "61403124"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "61791823"
 ---
 # <a name="known-issues-with-microsoft-graph"></a>Problemas conhecidos com o Microsoft Graph
 
@@ -428,17 +428,18 @@ Os usuários podem ser criados imediatamente por um POST na entidade do usuário
 
 ### <a name="access-to-a-users-profile-photo-is-limited"></a>O acesso à foto de perfil de um usuário é limitado
 
-A leitura e a atualização da foto do perfil do usuário só serão possíveis se o usuário tiver uma caixa de correio. Além disso, quaisquer fotos que *possam* ter sido armazenadas anteriormente usando a propriedade **thumbnailPhoto** (usando a API do Azure AD Graph (preterido) ou por meio da sincronização do AD Connect) não estarão mais acessíveis por meio da propriedade de **foto** do Microsoft Graph do recurso de [usuário](/graph/api/resources/user).
-Falha ao ler ou atualizar uma foto, nesse caso, resulta no seguinte erro:
+1. A leitura e a atualização da foto do perfil do usuário só serão possíveis se o usuário tiver uma caixa de correio. Falha ao ler ou atualizar uma foto, nesse caso, resulta no seguinte erro:
 
-```javascript
-{
-  "error": {
-    "code": "ErrorNonExistentMailbox",
-    "message": "The SMTP address has no mailbox associated with it."
-  }
-}
-```
+    ```html
+    {
+      "error": {
+        "code": "ErrorNonExistentMailbox",
+        "message": "The SMTP address has no mailbox associated with it."
+      }
+    }
+    ``` 
+2. Todas as fotos que *podem* ter sido armazenadas anteriormente usando a propriedade **thumbnailPhoto** (usando a API do Azure AD Graph (obsoleta) ou por meio da sincronização do AD Connect) não podem mais ser acessadas por meio do Microsoft Graph **photo** do recurso [user](/graph/api/resources/user).
+3. No momento, não há suporte para o gerenciamento de fotos dos usuários por meio do [recurso profilePhoto](/graph/api/resources/profilephoto) da API do Microsoft Graph em Azure AD B2C locatários.
 
 ### <a name="revoke-sign-in-sessions-returns-wrong-http-code"></a>A revogação de sessões de entrada retorna um código HTTP errado
 
@@ -469,9 +470,9 @@ As seguintes limitações se aplicam aos parâmetros de consulta:
 * `$search`:
   * A pesquisa de texto completo só está disponível para um subconjunto de entidades, como mensagens.
   * Não há suporte para pesquisa de carga de trabalho cruzada.
-  * A pesquisa não é suportada nos locatários do Azure AD B2C.
+  * Não há suporte para pesquisa em Azure AD B2C locatários.
 * `$count`:
-  * Não é apoiado em locatários do Azure AD B2C.
+  * Não há suporte para locatários Azure AD B2C aplicativos.
   * Ao usar a cadeia de consulta `$count=true` ao consultar recursos de diretório, a propriedade `@odata.count` estará presente apenas na primeira página dos dados paginados.
 * Os parâmetros de consulta especificados em uma solicitação podem falhar silenciosamente. Isto pode ser verdade tanto para parâmetros de consulta não suportados quanto para combinações não suportadas de parâmetros de consulta..
 
