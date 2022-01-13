@@ -3,12 +3,12 @@ title: Componente Pessoas no Microsoft Graph Toolkit
 description: Você pode usar o componente web para exibir um grupo de pessoas ou contatos usando `mgt-people` suas fotos ou iniciais.
 ms.localizationpriority: medium
 author: nmetulev
-ms.openlocfilehash: 44c97680d85d06f5f65703f68f33845f41514278
-ms.sourcegitcommit: 2e94beae05043a88b389349f0767e3a657415e4c
+ms.openlocfilehash: f2f20a524575ab8f7d5ad19e35f29d581a46a0a7
+ms.sourcegitcommit: 54e19ec90dc5441e1b93f713889ddc831782789e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/19/2021
-ms.locfileid: "61123402"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "61995932"
 ---
 # <a name="people-component-in-the-microsoft-graph-toolkit"></a>Componente Pessoas no Microsoft Graph Toolkit
 
@@ -35,8 +35,8 @@ Por padrão, o componente busca eventos do ponto de extremidade com o filtro par
 | group-id | groupId | Recupera pessoas de um microsoft Graph da respectiva ID. |
 | user-ids | userIds | Devido a uma matriz de usuários Graph `ids` Microsoft, o componente renderizará esses usuários.  |
 | people-queries | peopleQueries | Devido a uma matriz de consultas de pessoas (nomes, upns, emails), o componente renderizará esses usuários. |
-| person-card | personCard | Uma enumeração para determinar a ação do usuário necessária para ativar o painel do sub-sub-plano - `hover` ou `click` . O valor padrão é `none`. |
-| show-presence | showPresence | Um booleano para determinar se deve mostrar o selo de presença da pessoa na imagem da pessoa. |
+| person-card | personCard | Uma enumeração para determinar a ação do usuário necessária para ativar o painel do sub-sub-plano - `hover` `click` , ou `none` . O valor padrão é `hover`. |
+| show-presence | showPresence | Um Boolean para determinar se deve mostrar o selo de presença da pessoa na imagem da pessoa. |
 | recurso | recurso | O recurso a ser Graph microsoft (por exemplo, `/me/people` ). |
 | escopos | escopos | Matriz opcional de cadeias de caracteres se estiver usando a propriedade ou um escopo delimitado por vírgula se estiver usando o atributo. O componente usará esses escopos (com um provedor com suporte) para garantir que o usuário tenha consentido com a permissão certa. |
 | versão | versão | Versão da API opcional a ser usada ao fazer a solicitação GET. O padrão é `v1.0`.  |
@@ -95,7 +95,7 @@ Este componente usa as seguintes APIs Graph Microsoft e permissões:
 
 | Configuração | Permissão | API
 | --- | ---------- | ------- |
-| `groupId` set | User.Read.All, People.Read | [/groups/ \$ {groupId}/members](/graph/api/group-list-members) |
+| `groupId` set | GroupMember.Read.All | [/groups/ \$ {groupId}/members](/graph/api/group-list-members) |
 | `userIds` set | User.ReadBasic.All | [/users/${userId}](/graph/api/user-get) |
 | `peopleQueries` set | People.Read | [/me/people](/graph/api/user-list-people) |
 | `resource` set | Permissões especificadas em `scopes` | Especificado em `resource` |
@@ -119,7 +119,7 @@ O controle usa o provedor de autenticação global descrito na [documentação d
 > [!NOTE]
 > Por padrão, o `mgt-people` componente usa o componente para exibir informações sobre [`mgt-person`](./person.md) pessoas. O `mgt-person` componente baixa automaticamente e armazena em cache a foto para cada pessoa.
 
-Consulte [Caching](../customize-components/cache.md) para obter mais detalhes sobre como configurar o cache.
+Para obter detalhes sobre como configurar o cache, [consulte Caching](../customize-components/cache.md).
 ## <a name="extend-for-more-control"></a>Estender para obter mais controle
 
 Para cenários mais complexos ou um UX realmente personalizado, esse componente expõe vários métodos para substituição `protected render*` em extensões de componentes.

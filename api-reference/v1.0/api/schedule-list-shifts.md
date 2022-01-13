@@ -5,12 +5,12 @@ author: akumar39
 ms.localizationpriority: medium
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: dbb7d9b164bee8cabee34f922dead3d40344c65f
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: 6b5c0c82b89709f6dfe86b66087d0a5bc3430261
+ms.sourcegitcommit: 54e19ec90dc5441e1b93f713889ddc831782789e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "61024418"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "61995953"
 ---
 # <a name="list-shifts"></a>Listar turnos
 
@@ -26,7 +26,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |:--------------------|:---------------------------------------------------------|
 |Delegado (conta corporativa ou de estudante) | Schedule.Read.All, Group.Read.All,Schedule.ReadWrite.All, Group.ReadWrite.All    |
 |Delegado (conta pessoal da Microsoft) | Sem suporte.    |
-|Aplicativo | Schedule.Read.All, Schedule.ReadWrite.All |
+|Application | Schedule.Read.All, Schedule.ReadWrite.All |
 
 > **Observação**: esta API oferece transporte a permissões de administrador. Os administradores globais podem acessar grupos dos que não são membros.
 
@@ -56,7 +56,7 @@ Se tiver êxito, este método retornará um código de resposta e uma `200 OK` c
 
 ## <a name="example"></a>Exemplo
 
-#### <a name="request"></a>Solicitação
+### <a name="request"></a>Solicitação
 
 A seguir, um exemplo de uma solicitação que obtém todos os objetos **shift** que tenham uma versão compartilhada e uma versão de rascunho entre 11 de março e 18 de março de 2019.
 
@@ -85,7 +85,7 @@ GET https://graph.microsoft.com/v1.0/teams/{teamId}/schedule/shifts?$filter=shar
 [!INCLUDE [sample-code](../includes/snippets/java/schedule-list-shifts-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[Go](#tab/go)
+# <a name="go"></a>[Ir](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/schedule-list-shifts-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
@@ -94,7 +94,7 @@ GET https://graph.microsoft.com/v1.0/teams/{teamId}/schedule/shifts?$filter=shar
 ---
 
 
-#### <a name="response"></a>Resposta
+### <a name="response"></a>Resposta
 
 Este é um exemplo de resposta. 
 
