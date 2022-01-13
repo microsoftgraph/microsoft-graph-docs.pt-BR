@@ -5,12 +5,12 @@ author: AshleyYangSZ
 ms.localizationpriority: medium
 ms.prod: cloud-pc
 doc_type: apiPageType
-ms.openlocfilehash: 05833d4d9d7caecac7fb84133aa58e162cc8ae23
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: 7d4f4fbf840ef069447c462e06f1f41ffa2515d4
+ms.sourcegitcommit: 086e9a2ccaef411f9471cca164a79197bb254521
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "60975646"
+ms.lasthandoff: 01/13/2022
+ms.locfileid: "62014072"
 ---
 # <a name="get-cloudpcprovisioningpolicy"></a>Obter cloudPcProvisioningPolicy
 
@@ -29,7 +29,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |:---|:---|
 |Delegado (conta corporativa ou de estudante)|CloudPC.Read.All, CloudPC.ReadWrite.All|
 |Delegado (conta pessoal da Microsoft)|Sem suporte.|
-|Aplicativo|CloudPC.Read.All, CloudPC.ReadWrite.All|
+|Application|CloudPC.Read.All, CloudPC.ReadWrite.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
 
@@ -93,7 +93,7 @@ GET https://graph.microsoft.com/beta/deviceManagement/virtualEndpoint/provisioni
 [!INCLUDE [sample-code](../includes/snippets/java/get-cloudpcprovisioningpolicy-1-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[Go](#tab/go)
+# <a name="go"></a>[Ir](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/get-cloudpcprovisioningpolicy-1-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
@@ -116,13 +116,17 @@ Content-Type: application/json
 
 {
     "@odata.type": "#microsoft.graph.cloudPcProvisioningPolicy",
-    "id": "b0c2d35f-3385-46c8-a6f5-6c3dfad7ffff",
-    "displayName": "Display Name value",
     "description": "Description value",
-    "onPremisesConnectionId": "6bf90392-5fea-459a-9e9d-a2484abbffff",
-    "imageId": "Image ID value",
+    "displayName": "Display Name value",
+    "domainJoinConfiguration": {
+        "domainJoinType": "hybridAzureADJoin",
+        "onPremisesConnectionId": "16ee6c71-fc10-438b-88ac-daa1ccafffff"
+    },
+    "id": "1d164206-bf41-4fd2-8424-a3192d39ffff",
     "imageDisplayName": "Image Display Name value",
-    "imageType": "custom"
+    "imageId": "Image ID value",
+    "imageType":"custom",
+    "onPremisesConnectionId": "4e47d0f6-6f77-44f0-8893-c0fe1701ffff"
 }
 ```
 
@@ -157,7 +161,7 @@ GET https://graph.microsoft.com/beta/deviceManagement/virtualEndpoint/provisioni
 [!INCLUDE [sample-code](../includes/snippets/java/get-cloudpcprovisioningpolicy-2-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[Go](#tab/go)
+# <a name="go"></a>[Ir](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/get-cloudpcprovisioningpolicy-2-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
@@ -180,13 +184,18 @@ Content-Type: application/json
 
 {
     "@odata.type": "#microsoft.graph.cloudPcProvisioningPolicy",
-    "id": "b0c2d35f-3385-46c8-a6f5-6c3dfad7ffff",
-    "displayName": "Display Name value",
     "description": "Description value",
-    "onPremisesConnectionId": "6bf90392-5fea-459a-9e9d-a2484abbffff",
-    "imageId": "Image ID value",
+    "displayName": "Display Name value",
+    "domainJoinConfiguration": {
+        "onPremisesConnectionId": "4e47d0f6-6f77-44f0-8893-c0fe1701ffff",
+        "regionName": null,
+        "type": "hybridAzureADJoin"
+    },
+    "id": "1d164206-bf41-4fd2-8424-a3192d39ffff",
     "imageDisplayName": "Image Display Name value",
-    "imageType": "custom",
+    "imageId": "Image ID value",
+    "imageType":"custom",
+    "onPremisesConnectionId": "4e47d0f6-6f77-44f0-8893-c0fe1701ffff",
     "assignments": [
       {
         "@odata.type": "microsoft.graph.cloudPcProvisioningPolicyAssignment",

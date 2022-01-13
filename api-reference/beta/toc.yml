@@ -324,7 +324,7 @@ items:
                 href: api/user-list-events.md
               - name: Modo de exibição de lembrete
                 href: api/user-reminderview.md
-          - name: Contacts
+          - name: Contatos
             href: resources/contact.md
             items:
               - name: Criar contato
@@ -469,7 +469,6 @@ items:
               - name: Listar blocos de anotações
                 href: api/onenote-list-notebooks.md
           - name: Hierarquia da organização
-            href: resources/user.md
             items:
               - name: Atribuir gerente
                 href: api/user-post-manager.md
@@ -921,7 +920,7 @@ items:
                         href: api/application-delete-extensionproperty.md
               - name: Credenciais de identidade federada (visualização)
                 items:
-                  - name: Visão Geral
+                  - name: Visão geral
                     href: resources/federatedidentitycredentials-overview.md
                   - name: Credenciais de identidade federada
                     href: resources/federatedidentitycredential.md
@@ -1548,7 +1547,7 @@ items:
                 href: api/call-logteleconferencedevicequality.md
           - name: Registros de chamadas
             items:
-              - name: Visão Geral
+              - name: Visão geral
                 href: resources/callrecords-api-overview.md
               - name: Registro de chamada
                 items:
@@ -1556,9 +1555,9 @@ items:
                     href: resources/callrecords-callrecord.md
                   - name: Obter
                     href: api/callrecords-callrecord-get.md
-              - name: Sessão
+              - name: Session
                 items:
-                  - name: Sessão
+                  - name: Session
                     href: resources/callrecords-session.md
                   - name: List
                     href: api/callrecords-session-list.md
@@ -1719,7 +1718,7 @@ items:
                     href: api/ediscovery-custodian-update.md
                   - name: Ativar
                     href: api/ediscovery-custodian-activate.md
-                  - name: Lançar
+                  - name: Liberar
                     href: api/ediscovery-custodian-release.md
               - name: Retenção legal
                 href: resources/ediscovery-legalhold.md
@@ -1745,7 +1744,7 @@ items:
                     href: api/ediscovery-noncustodialdatasource-get.md
                   - name: Listar datasource
                     href: api/ediscovery-noncustodialdatasource-list-datasource.md
-                  - name: Lançar
+                  - name: Liberar
                     href: api/ediscovery-noncustodialdatasource-release.md
               - name: Conjuntos de revisão
                 href: resources/ediscovery-reviewset.md
@@ -1817,7 +1816,7 @@ items:
                     href: api/ediscovery-tag-ashierarchy.md
           - name: Solicitação de direitos do sujeito
             items:
-              - name: Visão Geral
+              - name: Visão geral
                 href: resources/subjectrightsrequest-subjectrightsrequestapioverview.md
               - name: Solicitação de direitos do sujeito
                 href: resources/subjectrightsrequest.md
@@ -9989,7 +9988,7 @@ items:
                         href: api/intune-tem-telecomexpensemanagementpartner-update.md
           - name: Cloud PC (visualização)
             items:
-              - name: Visão Geral
+              - name: Visão geral
                 href: resources/cloudpc-api-overview.md
               - name: Ponto de extremidade virtual
                 href: resources/virtualendpoint.md
@@ -10368,7 +10367,7 @@ items:
                     href: api/managedtenants-windowsprotectionstate-get.md
           - name: Comunicações e integridade do serviço
             items:
-              - name: Visão Geral
+              - name: Visão geral
                 href: resources/service-communications-api-overview.md
               - name: Comunicado do serviço
                 href: resources/serviceannouncement.md
@@ -11054,7 +11053,7 @@ items:
                     href: api/contract-list.md
               - name: Atributos de segurança personalizados (visualização)
                 items:
-                  - name: Visão Geral
+                  - name: Visão geral
                     href: resources/custom-security-attributes-overview.md
                   - name: Conjuntos de atributos
                     href: resources/attributeset.md
@@ -11282,7 +11281,6 @@ items:
                       - name: Verificar grupos de membros
                         href: api/directoryobject-checkmembergroups.md
                   - name: Hierarquia da organização
-                    href: resources/directoryobject.md
                     items:
                       - name: Listar subordinados diretos
                         href: api/orgcontact-list-directreports.md
@@ -11737,7 +11735,7 @@ items:
                         href: api/samlorwsfedexternaldomainfederation-delete.md
                       - name: Listar domínios
                         href: api/samlorwsfedexternaldomainfederation-list-domains.md
-                      - name: Criar externalDomainName
+                      - name: Criar domínio
                         href: api/samlorwsfedexternaldomainfederation-post-domains.md
               - name: Provedor de identidade (preterido)
                 items:
@@ -11782,21 +11780,6 @@ items:
                         href: api/organizationalbrandinglocalization-update.md
                       - name: Excluir
                         href: api/organizationalbrandinglocalization-delete.md
-              - name: Contatos organizacionais
-                href: resources/orgcontact.md
-                items:
-                  - name: Listar contatos org
-                    href: api/orgcontact-list.md
-                  - name: Obter contato org
-                    href: api/orgcontact-get.md
-                  - name: Atualizar contato org
-                    href: api/orgcontact-update.md
-                  - name: Excluir contato org
-                    href: api/orgcontact-delete.md
-                  - name: Obter delta de contato da organização
-                    href: api/orgcontact-delta.md
-                  - name: Grupos
-                    href: resources/group.md
               - name: Política
                 href: resources/policy-overview.md
                 items:
@@ -13476,7 +13459,7 @@ items:
         items:
           - name: Relatórios de atividade do Azure AD
             items:
-              - name: Visão Geral
+              - name: Visão geral
                 href: resources/azure-ad-auditlog-overview.md
               - name: Auditoria de diretório
                 href: resources/directoryaudit.md
@@ -13558,7 +13541,7 @@ items:
                         href: api/authenticationmethodsroot-usersregisteredbymethod.md
           - name: Microsoft 365 de uso
             items:
-              - name: Visão Geral
+              - name: Visão geral
                 href: resources/report.md
               - name: Uso do dispositivo do Microsoft Teams
                 href: resources/microsoft-teams-device-usage-reports.md
@@ -14211,7 +14194,7 @@ items:
         items:
           - name: Visão Geral
             href: resources/planner-overview.md
-          - name: Plano
+          - name: Planejar
             href: resources/plannerplan.md
             items:
               - name: Listar os planos do grupo

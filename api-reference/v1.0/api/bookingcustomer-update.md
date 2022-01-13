@@ -5,31 +5,31 @@ ms.localizationpriority: medium
 author: arvindmicrosoft
 ms.prod: bookings
 doc_type: apiPageType
-ms.openlocfilehash: d1576887ff634aa955246e63c3f57b560fc263d3
-ms.sourcegitcommit: c47e3d1f3c5f7e2635b2ad29dfef8fe7c8080bc8
+ms.openlocfilehash: 23af89229a3280a725deb3c756e9e790dbccd5e5
+ms.sourcegitcommit: 086e9a2ccaef411f9471cca164a79197bb254521
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/15/2021
-ms.locfileid: "61525008"
+ms.lasthandoff: 01/13/2022
+ms.locfileid: "62014128"
 ---
 # <a name="update-bookingcustomer"></a>Atualizar bookingCustomer
 
 Namespace: microsoft.graph
 
 Atualize as propriedades de um [objeto bookingCustomer.](../resources/bookingcustomer.md)
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
 |:--------------------|:---------------------------------------------------------|
 |Delegado (conta corporativa ou de estudante) | BookingsAppointment.ReadWrite.All, Bookings.ReadWrite.All, Bookings.Manage.All   |
-|Delegada (conta pessoal da Microsoft) | Sem suporte.   |
+|Delegado (conta pessoal da Microsoft) | Sem suporte.   |
 |Aplicativo | Sem suporte.  |
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- { "blockType": "ignored" } -->
 ```http
-PATCH /bookingBusinesses/{id}/customers/{id}
+PATCH /solutions/bookingBusinesses/{id}/customers/{id}
 ```
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
 | Nome       | Descrição|
@@ -42,7 +42,7 @@ PATCH /bookingBusinesses/{id}/customers/{id}
 | Propriedade     | Tipo   |Descrição|
 |:---------------|:--------|:----------|
 |addresses|[Coleção physicalAddress](../resources/physicaladdress.md)|Endereços associados ao cliente. O tipo **de** atributo physicalAddress não é suportado em v1.0. Internamente, mapeemos os endereços para o tipo `others` .|
-|displayName|Cadeia de caracteres|O nome do cliente.|
+|displayName|String|O nome do cliente.|
 |emailAddress|String|O endereço SMTP do cliente.|
 |telefones|Coleção [phone](../resources/phone.md)|Telefone números associados ao cliente, incluindo números móveis, comerciais e de residência.|
 

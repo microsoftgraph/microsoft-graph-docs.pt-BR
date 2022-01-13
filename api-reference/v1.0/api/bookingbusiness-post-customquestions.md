@@ -5,12 +5,12 @@ author: razortbone
 ms.localizationpriority: medium
 ms.prod: bookings
 doc_type: apiPageType
-ms.openlocfilehash: 6c2cf2289770d72bc0d79c0069b89b4418fea413
-ms.sourcegitcommit: c47e3d1f3c5f7e2635b2ad29dfef8fe7c8080bc8
+ms.openlocfilehash: 056de1e6db71fea98fea3023fc852843102dd34f
+ms.sourcegitcommit: 086e9a2ccaef411f9471cca164a79197bb254521
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/15/2021
-ms.locfileid: "61526430"
+ms.lasthandoff: 01/13/2022
+ms.locfileid: "62014198"
 ---
 # <a name="create-bookingcustomquestion"></a>Criar bookingCustomQuestion
 
@@ -18,14 +18,14 @@ Namespace: microsoft.graph
 
 Crie um novo [objeto bookingCustomQuestion.](../resources/bookingcustomquestion.md)
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>Permissões
 
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 | Tipo de permissão                        | Permissões (da com menos para a com mais privilégios)                                    |
 | :------------------------------------- | :----------------------------------------------------------------------------- |
 | Delegado (conta corporativa ou de estudante)     | BookingsAppointment.ReadWrite.All, Bookings.ReadWrite.All, Bookings.Manage.All |
-| Delegada (conta pessoal da Microsoft) | Sem suporte.                                                                 |
+| Delegado (conta pessoal da Microsoft) | Sem suporte.                                                                 |
 | Aplicativo                            | Sem suporte.                                                                 |
 
 ## <a name="http-request"></a>Solicitação HTTP
@@ -35,7 +35,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 }-->
 
 ```http
-POST /bookingBusinesses/{bookingBusinessesId}/customQuestions
+POST /solutions/bookingBusinesses/{bookingBusinessesId}/customQuestions
 ```
 
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
@@ -55,7 +55,7 @@ Você pode especificar as seguintes propriedades ao criar **um bookingCustomQues
 | :-------------- | :---------------- | :------------------------------------------------------------------------------------------------------------------ |
 | answerInputType | answerInputType   | O tipo de resposta esperado. Os valores possíveis são: `text`, `radioButton`, `unknownFutureValue`. Opcional.    |
 | answerOptions   | Coleção de cadeias de caracteres | Lista de valores de resposta possíveis. Opcional.                                                                     |
-| displayName     | Cadeia de caracteres            | A pergunta. Obrigatório. |
+| displayName     | String            | A pergunta. Obrigatório. |
 
 ## <a name="response"></a>Resposta
 

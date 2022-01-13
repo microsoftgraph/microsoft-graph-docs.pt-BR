@@ -5,12 +5,12 @@ author: jpettere
 ms.localizationpriority: high
 ms.prod: users
 doc_type: resourcePageType
-ms.openlocfilehash: d49cc39b02e3d83dc35bf036e3da9cae53ab1798
-ms.sourcegitcommit: fd609cb401ff862c3f5c21847bac9af967c6bf82
+ms.openlocfilehash: 7739e4a47f269f9bc665dc9a07c274348445ecb5
+ms.sourcegitcommit: 086e9a2ccaef411f9471cca164a79197bb254521
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/31/2021
-ms.locfileid: "61650892"
+ms.lasthandoff: 01/13/2022
+ms.locfileid: "62014023"
 ---
 # <a name="user-resource-type"></a>Tipo de recurso de usuário
 
@@ -181,7 +181,7 @@ Esse recurso permite:
 |mailNickname|String|O alias de email do usuário. Essa propriedade deve ser especificada quando um usuário é criado. O comprimento máximo é de 64 caracteres.<br><br>Retornado apenas em `$select`. Suporta `$filter` (`eq`, `ne`, `not`, `ge`, `le`, `in`, `startsWith`, e `eq` em `null` valores).|
 |mobilePhone|String|O número de celular principal do usuário. Somente leitura para usuários sincronizados do diretório local. O comprimento máximo é de 64 caracteres. <br><br>Retornado por padrão. Suporte `$filter` (`eq`, `ne`, `not`, `ge`, `le`, `in`, `startsWith`, e `eq` no `null` valores). |
 |mySite|String|A URL do site pessoal do usuário. <br><br>Retornado apenas em `$select`.|
-|officeLocation|String|A localização do escritório no local de trabalho do usuário. <br><br>Retornado por padrão. Suporta `$filter` (`eq`, `ne`, `not`, `ge`, `le`, `in`, `startsWith`, e `eq` em `null` valores).|
+|officeLocation|String|A localização do escritório no local de trabalho do usuário. <br><br>Retornado por padrão. Suporte `$filter` (`eq`, `ne`, `not`, `ge`, `le`, `in`, `startsWith`, e `eq` no `null` valores).|
 |onPremisesDistinguishedName|String| Contém `distinguished name` ou `DN` do Active Directory local. A propriedade somente é preenchida para os clientes que estejam sincronizando o seu diretório local com o Azure Active Directory pelo Azure AD Connect. Somente leitura.<br><br>Retornado apenas em `$select`. |
 |onPremisesDomainName|String| Contém o `domainFQDN` local, também chamado dnsDomainName, sincronizado do diretório local. A propriedade é preenchida apenas para clientes que estão sincronizando seu diretório local com o Azure Active Directory por meio do Azure AD Connect. Somente leitura. <br><br>Retornado apenas em `$select`.|
 |onPremisesExtensionAttributes|[onPremisesExtensionAttributes](onpremisesextensionattributes.md)|Contém extensionAttributes1-15 para o usuário. Os atributos de extensão individuais não são selecionáveis nem filtráveis. <br><li>Para um usuário **onPremisesSyncEnabled**, a fonte de autoridade para este conjunto de propriedades é o local e é somente leitura. </li><li>Para um usuário apenas na nuvem (onde **onPremisesSyncEnabled** é `false`), essas propriedades podem ser definidas durante a criação ou atualização de um objeto de usuário.  </li><li>Para um usuário somente na nuvem previamente sincronizado a partir do Active Directory local, essas propriedades são somente leitura no Microsoft Graph, mas podem ser totalmente gerenciadas através do Centro de Administração do Exchange ou do módulo Exchange Online V2 no PowerShell.</li><br> Esses atributos de extensão também são conhecidos como atributos personalizados do Exchange 1-15. |
@@ -201,7 +201,7 @@ Esse recurso permite:
 |preferredLanguage|Cadeia de caracteres|O idioma preferencial do usuário. Deve seguir o Código ISO 639-1; por exemplo, `en-US`.<br><br>Devolvido por padrão. Suporta `$filter` (`eq`, `ne`, `not`, `ge`, `le`, `in`, `startsWith` e `eq` em valores `null`)|
 |preferredName|String|O nome preferencial do usuário. <br><br>Retornado apenas em `$select`.|
 |provisionedPlans|coleção [provisionedPlan](provisionedplan.md)|Os planos que estão provisionados para o usuário. Somente leitura. Não anulável.<br><br>Retornado apenas em `$select`. Suporta `$filter` (`eq`, `not`, `ge`, `le`).|
-|proxyAddresses|Coleção de cadeias de caracteres|Por exemplo: `["SMTP: bob@contoso.com", "smtp: bob@sales.contoso.com"]`. Para contas do Azure AD B2C, essa propriedade tem um limite de dez endereços exclusivos. Somente leitura, Não anulável.<br><br>Retornado apenas em `$select`. Suporta `$filter` (`eq`, `not`, `ge`, `le`, `startsWith`).|
+|proxyAddresses|Coleção de cadeias de caracteres|Por exemplo: `["SMTP: bob@contoso.com", "smtp: bob@sales.contoso.com"]`. As alterações na propriedade **mail** também atualizarão essa coleção para incluir o valor como um endereço SMTP. Para obter mais informações, consulte as[propriedades mail e proxyAddresses](#mail-and-proxyaddresses-properties). O endereço proxy prefixado com `SMTP` (em maiúsculas) é o endereço proxy primário, enquanto aqueles prefixados com `smtp` são os endereços proxy secundários. Para contas do Azure AD B2C, essa propriedade tem um limite de dez endereços exclusivos. Somente leitura no Microsoft Graph; você pode atualizar essa propriedade somente por meio do [Microsoft 365 de administração](/exchange/recipients-in-exchange-online/manage-user-mailboxes/add-or-remove-email-addresses). Não anulável. <br><br>Retornado apenas em `$select`. Suporta `$filter` (`eq`, `not`, `ge`, `le`, `startsWith`).|
 |refreshTokensValidFromDateTime|DateTimeOffset|Os tokens de atualização ou de sessão (cookies de sessão) emitidos antes dessa hora são inválidos e os aplicativos recebem um erro ao usar um token de atualização ou de sessão inválido para adquirir um token de acesso delegado (para acessar APIs como o Microsoft Graph).  Se isso acontecer, o aplicativo precisará adquirir um novo token de atualização, fazendo uma solicitação ao ponto de extremidade de autorização. <br><br>Retornado apenas em `$select`. Somente leitura. |
 |responsibilities|Coleção de cadeias de caracteres|Uma lista para o usuário enumerar suas responsabilidades. <br><br>Retornado apenas em `$select`.|
 |schools|Coleção de cadeias de caracteres|Uma lista para o usuário enumerar as escolas que frequentou. <br><br>Retornado apenas em `$select`.|
@@ -215,6 +215,17 @@ Esse recurso permite:
 |userPrincipalName|Cadeia de caracteres|O nome UPN do usuário. O nome UPN é um nome de logon para o usuário ao estilo da Internet com base na RFC 822 padrão da Internet. Por convenção, ele deve ser mapeado para o nome de email do usuário. O formato geral é alias@domain, em que o domínio deve estar presente na coleção de domínios verificados do locatário. Essa propriedade é obrigatória quando um usuário é criado. Os domínios verificados para o locatário podem ser acessados pela propriedade **verifiedDomains** da [organização](organization.md).<br>OBSERVAÇÃO: esta propriedade não pode conter caracteres de ênfase. Somente os seguintes caracteres são permitidos `A - Z`, `a - z`, `0 - 9`, ` ' . - _ ! # ^ ~`. Para obter a lista completa de caracteres permitidos, consulte as [políticas de nome de usuário](/azure/active-directory/authentication/concept-sspr-policy#userprincipalname-policies-that-apply-to-all-user-accounts). <br><br>Retornado por padrão. Suporta `$filter` (`eq`, `ne`, `not`, `ge`, `le`, `in`, `startsWith`, `endsWith`) e `$orderBy`.
 |userType|String|Um valor de string que pode ser usado para classificar tipos de usuário em seu diretório, como `Member` e `Guest`. <br><br>Retornado apenas em `$select`. Suporta `$filter` (`eq`, `ne`, `not`, `in` e `eq` em `null` valores). **OBSERVAÇÃO:** Para obter mais informações sobre as permissões para usuários membros e convidados, consulte [Quais são as permissões padrão de usuário em Azure Active Directory?](/azure/active-directory/fundamentals/users-default-permissions#member-and-guest-users)         |
 
+### <a name="mail-and-proxyaddresses-properties"></a>propriedades mail e proxyAddresses
+**mail** and **proxyAddresses** são propriedades relacionadas ao email. **proxyAddresses** é uma coleção de endereços relevantes apenas para o servidor Microsoft Exchange. Ela é usada para armazenar uma lista de endereços de email para um usuário que está vinculado a uma única caixa de correio. A propriedade **mail** é usada como endereço de email do usuário para várias finalidades, incluindo a entrada do usuário e define o endereço proxy primário.
+ 
+Tanto **mail** quanto **proxyAddresses** podem ser recuperadas por meio da API [GET user](add link) no MS Graph. **mail** pode ser atualizada por meio do [método PATCH da API atualizar usuário](add link). Mas **proxyAddresses** não pode ser atualizada por meio do Microsoft Graph. Quando a propriedade **mail** de um usuário é atualizada, ela dispara o recálculo de **proxyAddresses** e o email recém-atualizado é definido como o endereço proxy primário, exceto nos seguintes cenários: 
+ 
+1. Se um usuário tiver uma licença que inclua o Microsoft Exchange, todos os endereços proxy deverão pertencer a um domínio verificado no locatário. Qualquer um que não pertença a domínios verificados é removido silenciosamente.
+2. O email de um usuário NÃO será definido como o endereço de proxy primário se o usuário for um convidado e o endereço de proxy primário contiver a cadeia de caracteres UPN do usuário convidado com #EXT#.
+3. O email de um usuário NÃO será removido, mesmo que ele não tenha mais endereços proxy, se o usuário for um convidado.
+ 
+**proxyAddresses** são exclusivos entre objetos de diretório (usuários, grupos e contatos organizacionais). Se a propriedade **mail** de um usuário estiver em conflito com um dos **proxyAddresses** de outro objeto, você atualizará com êxito a propriedade **mail**. No entanto, o novo valor de email não será adicionado à coleção **proxyAddresses**.
+
 ### <a name="legal-age-group-property-definitions"></a>Definições de propriedade da faixa etária legal
 
 Esta seção explica como as três propriedades de grupo idade (**legalAgeGroupClassification**, **ageGroup** e **consentProvidedForMinor**) são usadas por administradores do Azure Active Directory e desenvolvedores de aplicativos empresariais para atender às regulamentações relacionadas à idade:
@@ -223,10 +234,7 @@ Esta seção explica como as três propriedades de grupo idade (**legalAgeGroupC
 
 Por exemplo: Cameron é o administrador de um diretório em uma escola de ensino fundamental em Holyport, no Reino Unido. No início do ano letivo ele usa a documentação de admissão para obter o consentimento dos pais dos menores baseado nos regulamentos relacionadas com a idade no Reino Unido. O consentimento obtido do pai permite que a conta do menor seja usado pela escola de Holyport e os aplicativos da Microsoft. Cameron cria todas as contas e define **ageGroup** como `minor` e **consentProvidedForMinor** como `granted`. Os aplicativos usados ​​por seus alunos podem suprimir recursos que não são adequados para menores.
 
-<!-- Note that the following 3 sub-sections are only documented like enums for a consistent user experience. 
-For some reason they are not defined as enums in the CSDL. 
-Hence the type of the corresponding 3 properties remain as string type in the Properties table.
--->
+<!-- Note that the following 3 sub-sections are only documented like enums for a consistent user experience but they are String types.-->
 
 #### <a name="legalagegroupclassification-values"></a>legalAgeGroupClassification values
 
@@ -295,7 +303,7 @@ Hence the type of the corresponding 3 properties remain as string type in the Pr
 
 ## <a name="json-representation"></a>Representação JSON
 
-Veja a seguir uma representação JSON do recurso
+Veja a seguir uma representação JSON do recurso.
 
 <!--{
   "blockType": "resource",

@@ -5,31 +5,31 @@ ms.localizationpriority: medium
 author: arvindmicrosoft
 ms.prod: bookings
 doc_type: apiPageType
-ms.openlocfilehash: 2ff072b07a3d1812f9fc80954507020d5be4eef1
-ms.sourcegitcommit: c47e3d1f3c5f7e2635b2ad29dfef8fe7c8080bc8
+ms.openlocfilehash: 3e86b5815999dc4c7388f00dd8077bed0fb1b906
+ms.sourcegitcommit: 086e9a2ccaef411f9471cca164a79197bb254521
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/15/2021
-ms.locfileid: "61526456"
+ms.lasthandoff: 01/13/2022
+ms.locfileid: "62014163"
 ---
 # <a name="update-bookingbusiness"></a>Atualizar bookingbusiness
 
 Namespace: microsoft.graph
 
 Atualize as propriedades de um [objeto bookingBusiness.](../resources/bookingbusiness.md)
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
 |:--------------------|:---------------------------------------------------------|
 |Delegado (conta corporativa ou de estudante) |  Bookings.ReadWrite.All, Bookings.Manage.All   |
-|Delegada (conta pessoal da Microsoft) | Sem suporte.   |
+|Delegado (conta pessoal da Microsoft) | Sem suporte.   |
 |Aplicativo | Sem suporte.  |
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- { "blockType": "ignored" } -->
 ```http
-PATCH /bookingBusinesses/{id}
+PATCH /solutions/bookingBusinesses/{id}
 ```
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
 | Nome       | Descrição|
@@ -43,13 +43,13 @@ PATCH /bookingBusinesses/{id}
 |:---------------|:--------|:----------|
 |address|[physicalAddress](../resources/physicaladdress.md)|O endereço da rua do negócio. O tipo **de** atributo physicalAddress não é suportado em v1.0. Internamente, mapeemos os endereços para o tipo `others` .|
 |businessHours|[Coleção bookingWorkHours](../resources/bookingworkhours.md)|Os horários de operação para os negócios.|
-|businessType|Cadeia de caracteres|O tipo de negócio.|
-|defaultCurrencyIso|Cadeia de caracteres|O código da moeda em que a empresa opera no Microsoft Bookings.|
-|displayName|Cadeia de caracteres|Um nome para a empresa que faz interface com os clientes.|
+|businessType|String|O tipo de negócio.|
+|defaultCurrencyIso|String|O código da moeda em que a empresa opera no Microsoft Bookings.|
+|displayName|String|Um nome para a empresa que faz interface com os clientes.|
 |email|Cadeia de caracteres|O endereço de email da empresa.|
 |phone|Cadeia de caracteres|O número de telefone da empresa.|
 |schedulingPolicy|[bookingSchedulingPolicy](../resources/bookingschedulingpolicy.md)|Especifica como as reservas podem ser criadas para essa empresa.|
-|webSiteUrl|Cadeia de caracteres|A URL do site comercial.|
+|webSiteUrl|String|A URL do site comercial.|
 
 ## <a name="response"></a>Resposta
 Se bem-sucedido, este método retorna um código de resposta `204 No Content`. Não retorna nada no corpo da resposta.

@@ -5,12 +5,12 @@ author: razortbone
 ms.localizationpriority: medium
 ms.prod: bookings
 doc_type: apiPageType
-ms.openlocfilehash: 0c466c5c0dc4bab85e7ee4848b4d4bedbf1249f5
-ms.sourcegitcommit: c47e3d1f3c5f7e2635b2ad29dfef8fe7c8080bc8
+ms.openlocfilehash: 97391e771293fc4ee9b020d0dddf25f44bb7aa6e
+ms.sourcegitcommit: 086e9a2ccaef411f9471cca164a79197bb254521
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/15/2021
-ms.locfileid: "61526428"
+ms.lasthandoff: 01/13/2022
+ms.locfileid: "62014121"
 ---
 # <a name="delete-bookingcustomquestion"></a>Excluir bookingCustomQuestion
 
@@ -18,14 +18,14 @@ Namespace: microsoft.graph
 
 [Exclua um objeto bookingCustomQuestion.](../resources/bookingcustomquestion.md)
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>Permissões
 
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 | Tipo de permissão                        | Permissões (da com menos para a com mais privilégios)                                    |
 | :------------------------------------- | :----------------------------------------------------------------------------- |
 | Delegado (conta corporativa ou de estudante)     | BookingsAppointment.ReadWrite.All, Bookings.ReadWrite.All, Bookings.Manage.All |
-| Delegada (conta pessoal da Microsoft) | Sem suporte.                                                                 |
+| Delegado (conta pessoal da Microsoft) | Sem suporte.                                                                 |
 | Aplicativo                            | Sem suporte.                                                                 |
 
 ## <a name="http-request"></a>Solicitação HTTP
@@ -33,7 +33,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 <!-- { "blockType": "ignored" } -->
 
 ```http
-DELETE /bookingBusinesses/{bookingBusinessesId}/customQuestions/{bookingCustomQuestionId}
+DELETE /solutions/bookingBusinesses/{bookingBusinessesId}/customQuestions/{bookingCustomQuestionId}
 ```
 
 ## <a name="request-headers"></a>Cabeçalhos de solicitação

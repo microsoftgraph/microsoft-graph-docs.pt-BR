@@ -314,7 +314,7 @@ items:
                 href: api/user-list-events.md
               - name: Modo de exibição de lembrete
                 href: api/user-reminderview.md
-          - name: Contacts
+          - name: Contatos
             href: resources/contact.md
             items:
               - name: Criar contato
@@ -437,7 +437,6 @@ items:
               - name: Listar blocos de anotações
                 href: api/onenote-list-notebooks.md
           - name: Hierarquia da organização
-            href: resources/user.md
             items:
               - name: Listar subordinados diretos
                 href: api/user-list-directreports.md
@@ -531,7 +530,7 @@ items:
                 href: api/usersettings-update.md
       - name: Grupos
         items:
-          - name: Visão Geral
+          - name: Visão geral
             href: resources/groups-overview.md
           - name: Grupo
             href: resources/group.md
@@ -1337,9 +1336,9 @@ items:
                     href: resources/callrecords-callrecord.md
                   - name: Obter registro de chamada
                     href: api/callrecords-callrecord-get.md
-              - name: Sessão
+              - name: Session
                 items:
-                  - name: Sessão
+                  - name: Session
                     href: resources/callrecords-session.md
                   - name: Listar sessões
                     href: api/callrecords-session-list.md
@@ -1396,11 +1395,11 @@ items:
       - name: Conformidade
         displayName: 'Compliance API, Microsoft Graph Compliance API'
         items:
-          - name: Visão Geral
+          - name: Visão geral
             href: resources/complianceapioverview.md
           - name: Solicitação de direitos do sujeito
             items:
-              - name: Visão Geral
+              - name: Visão geral
                 href: resources/subjectrightsrequest-subjectrightsrequestapioverview.md
               - name: Solicitação de direitos do sujeito
                 href: resources/subjectrightsrequest.md
@@ -4266,7 +4265,7 @@ items:
                         href: api/intune-tem-telecomexpensemanagementpartner-update.md
           - name: Comunicações e integridade do serviço
             items:
-              - name: Visão Geral
+              - name: Visão geral
                 href: resources/service-communications-api-overview.md
               - name: Comunicado do serviço
                 href: resources/serviceannouncement.md
@@ -4800,11 +4799,11 @@ items:
               - name: Contatos organizacionais
                 href: resources/orgcontact.md
                 items:
-                  - name: Listar contatos org
+                  - name: Listar
                     href: api/orgcontact-list.md
-                  - name: Obter contato org
+                  - name: Obter
                     href: api/orgcontact-get.md
-                  - name: Obter delta de contato da organização
+                  - name: Obter intervalo
                     href: api/orgcontact-delta.md
                   - name: Grupos
                     href: resources/group.md
@@ -4816,7 +4815,6 @@ items:
                       - name: Verificar grupos de membros
                         href: api/directoryobject-checkmembergroups.md
                   - name: Hierarquia da organização
-                    href: resources/directoryobject.md
                     items:
                       - name: Listar subordinados diretos
                         href: api/orgcontact-list-directreports.md
@@ -5760,7 +5758,7 @@ items:
                 href: api/resource-get.md
       - name: Inteligência de pessoas e local de trabalho
         items:
-          - name: Visão Geral
+          - name: Visão geral
             href: resources/social-overview.md
           - name: Pessoas
             items:
@@ -5873,7 +5871,7 @@ items:
         items:
           - name: Relatórios de atividade do Azure AD
             items:
-              - name: Visão Geral
+              - name: Visão geral
                 href: resources/azure-ad-auditlog-overview.md
               - name: Auditoria de diretório
                 href: resources/directoryaudit.md
@@ -6404,7 +6402,7 @@ items:
         items:
           - name: Visão Geral
             href: resources/planner-overview.md
-          - name: Plano
+          - name: Planejar
             href: resources/plannerplan.md
             items:
               - name: Criar plano
@@ -6959,7 +6957,7 @@ items:
       - name: Tarefas pendentes
         displayName: Microsoft To Do
         items:
-          - name: Visão Geral
+          - name: Visão geral
             href: resources/todo-overview.md
           - name: Lista de tarefas
             href: resources/todotasklist.md

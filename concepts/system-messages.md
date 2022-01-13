@@ -5,12 +5,12 @@ author: RamjotSingh
 ms.localizationpriority: high
 ms.prod: microsoft-teams
 ms.custom: scenarios:getting-started
-ms.openlocfilehash: 5c3aa7cb7d922805e94099db302de1f361783474
-ms.sourcegitcommit: 71186ad44d8d0df15e10b0f89df68d2ef0cf9d14
+ms.openlocfilehash: 7d7b4a83fa4f6a85a2991d8f2f91935157234460
+ms.sourcegitcommit: 54e19ec90dc5441e1b93f713889ddc831782789e
 ms.translationtype: HT
 ms.contentlocale: pt-BR
 ms.lasthandoff: 01/12/2022
-ms.locfileid: "61860905"
+ms.locfileid: "61995939"
 ---
 # <a name="get-system-messages-for-microsoft-teams-using-microsoft-graph-apis"></a>Obtenha mensagens do sistema para o Microsoft Teams usando as APIs do Microsoft Graph
 
@@ -28,8 +28,8 @@ Neste caso, a propriedade **messageType** é definida como `systemEventMessage` 
 
 As seguintes operações GET suportam mensagens do sistema:
 
-- GET /teams/{team-id}/channel/{channel-id}/messages
-- GET /teams/{team-td}/channel/{channel-id}/messages/{message-id}
+- OBTER /teams/{team-id}/channels/{channel-id}/messages
+- OBTER /teams/{team-td}/channels/{channel-id}/messages/{message-id}
 - GET /chats/{chat-id}/messages
 - GET /chats/{chat-id}/messages/{message-id}
 

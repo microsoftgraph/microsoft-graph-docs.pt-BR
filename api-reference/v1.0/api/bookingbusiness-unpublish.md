@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: arvindmicrosoft
 ms.prod: bookings
 doc_type: apiPageType
-ms.openlocfilehash: 2e3d80061f5438120fcb98429ab0e0e12f1b5fd8
-ms.sourcegitcommit: c47e3d1f3c5f7e2635b2ad29dfef8fe7c8080bc8
+ms.openlocfilehash: 4b65abe23d0f43f3d8d11249f6108c87ca62a0c7
+ms.sourcegitcommit: 086e9a2ccaef411f9471cca164a79197bb254521
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/15/2021
-ms.locfileid: "61525013"
+ms.lasthandoff: 01/13/2022
+ms.locfileid: "62014170"
 ---
 # <a name="bookingbusiness-unpublish"></a>bookingBusiness: não publicado
 
@@ -20,19 +20,19 @@ Tornar a página de agendamento dessa empresa não disponível para clientes ext
 
 Defina a **propriedade isPublished** como `false` , e a propriedade **publicUrl** como `null` .
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
 |:--------------------|:---------------------------------------------------------|
 |Delegado (conta corporativa ou de estudante) |  Bookings.Manage.All   |
-|Delegada (conta pessoal da Microsoft) | Sem suporte.   |
+|Delegado (conta pessoal da Microsoft) | Sem suporte.   |
 |Aplicativo | Sem suporte.  |
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- { "blockType": "ignored" } -->
 ```http
-POST /bookingBusinesses/{id}/unpublish
+POST /solutions/bookingBusinesses/{id}/unpublish
 
 ```
 ## <a name="request-headers"></a>Cabeçalhos de solicitação

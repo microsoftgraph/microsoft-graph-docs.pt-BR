@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: dkershaw10
 ms.prod: identity-and-sign-in
 doc_type: resourcePageType
-ms.openlocfilehash: cc600505f6e814f209238628e74693f8632b2290
-ms.sourcegitcommit: f65eee432cc903324b5f9b31710fdc6100590f36
+ms.openlocfilehash: 09d2897bb2b722cd505402feabc572669c29b623
+ms.sourcegitcommit: 086e9a2ccaef411f9471cca164a79197bb254521
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/07/2021
-ms.locfileid: "61322055"
+ms.lasthandoff: 01/13/2022
+ms.locfileid: "62014093"
 ---
 # <a name="orgcontact-resource-type"></a>Tipo de recurso orgContact
 
@@ -18,7 +18,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Representa um contato organizacional. Os contatos organizacionais são gerenciados pelos administradores de uma organização e são diferentes dos [contatos pessoais.](contact.md) Além disso, os contatos organizacionais são sincronizados de diretórios locais ou de Exchange Online e são somente leitura.
+Representa um contato organizacional. Os contatos organizacionais são gerenciados pelos administradores de uma organização e são diferentes dos [contatos pessoais.](contact.md) Além disso, os contatos organizacionais são sincronizados de diretórios locais ou de Exchange Online e são somente leitura no Microsoft Graph.
 
 Herda de [directoryObject](directoryobject.md).
 
@@ -28,8 +28,10 @@ Esse recurso tem suporte para o uso da [consulta delta](/graph/delta-query-overv
 
 | Método | Tipo de retorno | Descrição |
 | ------ | ----------- | ----------- |
+| **Contatos organizacionais** |
 | [Listar contatos organizacionais](../api/orgcontact-list.md) | [coleção orgContact](orgcontact.md) | Listar propriedades de contatos organizacionais. |
 | [Obter contato organizacional](../api/orgcontact-get.md) | [orgContact](orgcontact.md) | Ler propriedades e relações do objeto orgContact. |
+| **Hierarquia organizacional** |
 | [Obter gerenciador](../api/orgcontact-get-manager.md) | [directoryObject](directoryobject.md) | Obter o gerente do contato. |
 | [Get transitiveReports](../api/orgcontact-get-transitivereports.md) | Inteiro | Obter a contagem de relatórios transitivos para um contato da organização a partir da propriedade de navegação transitiveReports. |
 | [Listar directReports](../api/orgcontact-list-directreports.md) | Coleção [directoryObject](directoryobject.md) | Listar os relatórios diretos do contato. |
@@ -37,7 +39,7 @@ Esse recurso tem suporte para o uso da [consulta delta](/graph/delta-query-overv
 | [checkMemberGroups](../api/directoryobject-checkmembergroups.md) | Coleção de cadeias de caracteres | Verifique se há associação ao grupo. |
 | [getMemberGroups](../api/directoryobject-getmembergroups.md) | Coleção de cadeias de caracteres | Retorne todos os grupos dos que o contato especificado é membro. |
 | [checkMemberObjects](../api/directoryobject-checkmemberobjects.md) | Coleção de cadeias de caracteres | Verifique se há associação em grupos, unidades administrativas e funções de diretório. |
-| [getMemberObjects](../api/directoryobject-getmemberobjects.md) | Coleção de cadeias de caracteres | Obter a lista de grupos, unidades administrativas e funções de diretório das quais o contato é membro. |
+| [getMemberObjects](../api/directoryobject-getmemberobjects.md) | Coleção String | Obter a lista de grupos, unidades administrativas e funções de diretório das quais o contato é membro. |
 
 ## <a name="properties"></a>Propriedades
 
@@ -47,8 +49,8 @@ Esse recurso tem suporte para o uso da [consulta delta](/graph/delta-query-overv
 | Propriedade | Tipo | Descrição |
 | -------- | ---- | ----------- |
 | addresses | [Coleção physicalOfficeAddress](physicalofficeaddress.md) | Endereços postais para esse contato organizacional. Por enquanto, um contato só pode ter um endereço físico. |
-| companyName | String | Nome da empresa à que esse contato organizacional pertence. Suporte `$filter` (`eq`, `ne`, `not`, `ge`, `le`, `in`, `startsWith`, e `eq` no `null` valores). |
-| department | String | O nome do departamento no qual o contato funciona. Suporte `$filter` (`eq`, `ne`, `not`, `ge`, `le`, `in`, `startsWith`, e `eq` no `null` valores). |
+| CompanyName | String | Nome da empresa à que esse contato organizacional pertence. Suporte `$filter` (`eq`, `ne`, `not`, `ge`, `le`, `in`, `startsWith`, e `eq` no `null` valores). |
+| departamento | String | O nome do departamento no qual o contato funciona. Suporte `$filter` (`eq`, `ne`, `not`, `ge`, `le`, `in`, `startsWith`, e `eq` no `null` valores). |
 | displayName | String | Nome de exibição para esse contato organizacional. Suporta `$filter` (`eq`, `ne`, `not`, `ge`, `le`, `in`, `startsWith`, e `eq` em `null` valores), `$search`, e `$orderBy`.  |
 | givenName | String | Primeiro nome para esse contato organizacional. Suporte `$filter` (`eq`, `ne`, `not`, `ge`, `le`, `in`, `startsWith`, e `eq` no `null` valores).  |
 | id | String | Identificador exclusivo para esse contato organizacional. Suporta `$filter` (`eq`, `ne`, `not`, `in`). |

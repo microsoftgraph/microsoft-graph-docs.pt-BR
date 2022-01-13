@@ -5,18 +5,18 @@ ms.localizationpriority: medium
 author: dkershaw10
 ms.prod: directory-management
 doc_type: resourcePageType
-ms.openlocfilehash: 345af9f8b7a7919667ed1e7a8155c4e0f9bdb31e
-ms.sourcegitcommit: f65eee432cc903324b5f9b31710fdc6100590f36
+ms.openlocfilehash: 5db56af8b2f734044331c0aab3320c6e25d49e39
+ms.sourcegitcommit: 086e9a2ccaef411f9471cca164a79197bb254521
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/07/2021
-ms.locfileid: "61321600"
+ms.lasthandoff: 01/13/2022
+ms.locfileid: "62014296"
 ---
 # <a name="orgcontact-resource-type"></a>Tipo de recurso orgContact
 
 Namespace: microsoft.graph
 
-Representa um contato organizacional. Os contatos organizacionais são gerenciados pelos administradores de uma organização e são diferentes dos [contatos pessoais.](contact.md) Além disso, os contatos organizacionais são sincronizados de diretórios locais ou de Exchange Online e são somente leitura.
+Representa um contato organizacional. Os contatos organizacionais são gerenciados pelos administradores de uma organização e são diferentes dos [contatos pessoais.](contact.md) Além disso, os contatos organizacionais são sincronizados de diretórios locais ou de Exchange Online e são somente leitura no Microsoft Graph.
 
 Herda de [directoryObject](directoryobject.md).
 
@@ -26,8 +26,10 @@ Esse recurso tem suporte para o uso da [consulta delta](/graph/delta-query-overv
 
 | Método                                                                  | Tipo de retorno                                      | Descrição                                                                                                                 |
 |:------------------------------------------------------------------------|:-------------------------------------------------|:----------------------------------------------------------------------------------------------------------------------------|
+| **Contatos organizacionais** |
 | [Listar contatos organizacionais](../api/orgcontact-list.md)               | [orgContact](orgcontact.md)                      | Listar propriedades de contatos organizacionais.                                                                                 |
 | [Obter contato organizacional](../api/orgcontact-get.md)                  | [orgContact](orgcontact.md)                      | Ler propriedades e relações de um contato organizacional.                                                             |
+| **Hierarquia organizacional** |
 | [Obter gerenciador](../api/orgcontact-get-manager.md)                         | [directoryObject](directoryobject.md)            | Obter o gerente do contato organizacional.                                                                                   |
 | [Listar directReports](../api/orgcontact-list-directreports.md)           | Coleção [directoryObject](directoryobject.md) | Listar os relatórios diretos do contato organizacional.                                                                           |
 | [Listar memberOf](../api/orgcontact-list-memberof.md)                     | Coleção [directoryObject](directoryobject.md) | Listar os grupos de que um contato organizacional é membro.                                                                   |
@@ -44,8 +46,8 @@ Esse recurso tem suporte para o uso da [consulta delta](/graph/delta-query-overv
 | Propriedade                     | Tipo                                                                     | Descrição                                                                                                                                                                                                                                                                                                                        |
 |:-----------------------------|:-------------------------------------------------------------------------|:-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | addresses                    | [Coleção physicalOfficeAddress](physicalofficeaddress.md)             | Endereços postais para esse contato organizacional. Por enquanto, um contato só pode ter um endereço físico.                                                                                                                                                                                                                            |
-| companyName                  | String                                                                   | Nome da empresa à que esse contato organizacional pertence.  Suporte `$filter` (`eq`, `ne`, `not`, `ge`, `le`, `in`, `startsWith`, e `eq` no `null` valores).                                                                                                                                                                                          |
-| department                   | String                                                                   | O nome do departamento no qual o contato funciona.  Suporte `$filter` (`eq`, `ne`, `not`, `ge`, `le`, `in`, `startsWith`, e `eq` no `null` valores).                                                                                                                                                                                                   |
+| CompanyName                  | String                                                                   | Nome da empresa à que esse contato organizacional pertence.  Suporte `$filter` (`eq`, `ne`, `not`, `ge`, `le`, `in`, `startsWith`, e `eq` no `null` valores).                                                                                                                                                                                          |
+| departamento                   | String                                                                   | O nome do departamento no qual o contato funciona.  Suporte `$filter` (`eq`, `ne`, `not`, `ge`, `le`, `in`, `startsWith`, e `eq` no `null` valores).                                                                                                                                                                                                   |
 | displayName                  | String                                                                   | Nome de exibição para esse contato organizacional. Suporta `$filter` (`eq`, `ne`, `not`, `ge`, `le`, `in`, `startsWith`, e `eq` em `null` valores), `$search`, e `$orderBy`.                                                                                                                                                                                   |
 | givenName                    | String                                                                   | Primeiro nome para esse contato organizacional. Suporte `$filter` (`eq`, `ne`, `not`, `ge`, `le`, `in`, `startsWith`, e `eq` no `null` valores).                                                                                                                                                                                                                |
 | id                           | String                                                                   | Identificador exclusivo para esse contato organizacional.  Suporta `$filter` (`eq`, `ne`, `not`, `in`).                                                                                                                                                                                                                                  |
@@ -66,7 +68,7 @@ Esse recurso tem suporte para o uso da [consulta delta](/graph/delta-query-overv
 | directReports      | Coleção [directoryObject](directoryobject.md) | Os relatórios diretos do contato. (Os usuários e contatos que têm suas propriedades de gerente definidas para esse contato.)  Somente leitura. Anulável. Suporta o `$expand`. |
 | manager            | [directoryObject](directoryobject.md)            | O usuário ou contato que é o gerente desse contato. Somente leitura. Suporta o `$expand`.                                                                     |
 | memberOf           | Coleção [directoryObject](directoryobject.md) | Grupos dos que esse contato é membro. Somente leitura. Anulável. Suporta o `$expand`.                                                                      |
-| transitiveMemberOf | Coleção [directoryObject](directoryobject.md) | Grupos dos quais esse contato é membro, incluindo grupos nos quais o contato está aninhado. Somente leitura. Anulável.                                       |
+| transitiveMemberOf | Conjunto [directoryObject](directoryobject.md) | Grupos dos quais esse contato é membro, incluindo grupos nos quais o contato está aninhado. Somente leitura. Anulável.                                       |
 
 ## <a name="json-representation"></a>Representação JSON
 
