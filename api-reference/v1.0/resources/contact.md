@@ -5,12 +5,12 @@ author: kevinbellinger
 ms.localizationpriority: high
 ms.prod: outlook
 doc_type: resourcePageType
-ms.openlocfilehash: c527b9c25a038e7440c4136b339bcc52b43b8958
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 2d2622fe78ffedbddf60ab990fb89293845bdd3e
+ms.sourcegitcommit: 086e9a2ccaef411f9471cca164a79197bb254521
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59049652"
+ms.lasthandoff: 01/13/2022
+ms.locfileid: "62014303"
 ---
 # <a name="contact-resource-type"></a>tipo de recurso contact
 
@@ -66,7 +66,7 @@ Esse recurso permite:
 |givenName|String|O nome do contato.|
 |homeAddress|[PhysicalAddress](physicaladdress.md)|O endereço residencial do contato.|
 |homePhones|Coleção de cadeias de caracteres|Os números de telefone residenciais do contato.|
-|id|String|O identificador exclusivo do contato. Somente leitura.|
+|id|String|O identificador exclusivo do contato. [!INCLUDE [outlook-beta-id](../../includes/outlook-immutable-id.md)] Somente leitura.|
 |imAddresses|Coleção de cadeias de caracteres|Os endereços de mensagens instantâneas do contato.|
 |initials|String|As iniciais do contato.|
 |jobTitle|String|O cargo do contato.|
@@ -97,7 +97,7 @@ Esse recurso permite:
 
 ## <a name="json-representation"></a>Representação JSON
 
-Veja a seguir uma representação JSON do recurso
+Veja a seguir uma representação JSON do recurso.
 
 <!-- {
   "blockType": "resource",
@@ -175,7 +175,6 @@ Veja a seguir uma representação JSON do recurso
 
   "photo": { "@odata.type": "microsoft.graph.profilePhoto" }
 }
-
 ```
 
 ## <a name="see-also"></a>Confira também
