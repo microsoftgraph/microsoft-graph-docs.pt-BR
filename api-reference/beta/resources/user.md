@@ -5,12 +5,12 @@ author: jpettere
 ms.localizationpriority: high
 ms.prod: users
 doc_type: resourcePageType
-ms.openlocfilehash: 51362d1ab8b987445f9dba30b0fde3b0f6768ab5
-ms.sourcegitcommit: 71186ad44d8d0df15e10b0f89df68d2ef0cf9d14
+ms.openlocfilehash: 561c90f89699638e4c9846074f9160b461ec9032
+ms.sourcegitcommit: 086e9a2ccaef411f9471cca164a79197bb254521
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/12/2022
-ms.locfileid: "61791844"
+ms.lasthandoff: 01/13/2022
+ms.locfileid: "62014324"
 ---
 # <a name="user-resource-type"></a>Tipo de recurso de usuário
 
@@ -232,7 +232,7 @@ Esse recurso permite:
 | preferredLanguage | Cadeia de caracteres | O idioma preferencial do usuário. Deve seguir o Código ISO 639-1; por exemplo, `en-US`.<br><br>Suporte `$filter` (`eq`, `ne`, `not`, `ge`, `le`, `in`, `startsWith`, e `eq` no `null` valores). |
 | preferredName | String | O nome preferencial do usuário. <br><br>Retornado apenas em `$select`. |
 | provisionedPlans | coleção [provisionedPlan](provisionedplan.md) | Os planos que estão provisionados para o usuário. Somente leitura. Não anulável. Dá suporte a `$filter` (`eq`, `not`, `ge`, `le`).|
-| proxyAddresses | Coleção de cadeias de caracteres | Por exemplo: `["SMTP: bob@contoso.com", "smtp: bob@sales.contoso.com"]`. O endereço proxy prefixado com `SMTP` (em maiúsculas) é o endereço proxy primário, enquanto aqueles prefixados com `smtp` são os endereços proxy secundários. Para contas do Azure AD B2C, essa propriedade tem um limite de dez endereços exclusivos. Somente leitura no Microsoft Graph; você pode atualizar essa propriedade somente por meio do [Microsoft 365 de administração](/exchange/recipients-in-exchange-online/manage-user-mailboxes/add-or-remove-email-addresses). Não anulável. <br><br>Suporta `$filter` (`eq`, `not`, `ge`, `le`, `startsWith`). |
+| proxyAddresses | Coleção de cadeias de caracteres | Por exemplo: `["SMTP: bob@contoso.com", "smtp: bob@sales.contoso.com"]`. As alterações na propriedade **mail** também atualizarão essa coleção para incluir o valor como um endereço SMTP. Para obter mais informações, consulte propriedades de [email e proxyAddresses](#mail-and-proxyaddresses-properties). O endereço proxy prefixado com `SMTP` (em maiúsculas) é o endereço proxy primário, enquanto aqueles prefixados com `smtp` são os endereços proxy secundários. Para contas do Azure AD B2C, essa propriedade tem um limite de dez endereços exclusivos. Somente leitura no Microsoft Graph; você pode atualizar essa propriedade somente por meio do [Microsoft 365 de administração](/exchange/recipients-in-exchange-online/manage-user-mailboxes/add-or-remove-email-addresses). Não anulável. <br><br>Suporta `$filter` (`eq`, `not`, `ge`, `le`, `startsWith`). |
 | refreshTokensValidFromDateTime | DateTimeOffset | Os tokens de atualização ou de sessão (cookies de sessão) emitidos antes dessa hora são inválidos e os aplicativos recebem um erro ao usar um token de atualização ou de sessão inválido para adquirir um token de acesso delegado (para acessar APIs como o Microsoft Graph).  Se isso acontecer, o aplicativo precisará adquirir um novo token de atualização, fazendo uma solicitação ao ponto de extremidade de autorização. Somente leitura. Use [invalidateAllRefreshTokens](../api/user-invalidateallrefreshtokens.md) para redefinir.|
 | responsibilities | Coleção de cadeias de caracteres | Uma lista para o usuário enumerar suas responsabilidades. <br><br>Retornado apenas em `$select`. |
 | schools | Coleção de cadeias de caracteres | Uma lista para o usuário enumerar as escolas que frequentou. <br><br>Retornado apenas em `$select`. |
@@ -246,6 +246,17 @@ Esse recurso permite:
 | usageLocation | String | Um código de duas letras (padrão ISO 3166). Obrigatório para os usuários que receberão licenças devido à exigência legal de verificar a disponibilidade de serviços nos países/regiões. Por exemplo: `US`, `JP`, e `GB`. Não anulável.<br><br>Suporte `$filter` (`eq`, `ne`, `not`, `ge`, `le`, `in`, `startsWith`, e `eq` no `null` valores).|
 | userPrincipalName | Cadeia de caracteres | O nome UPN do usuário. O nome UPN é um nome de logon para o usuário ao estilo da Internet com base na RFC 822 padrão da Internet. Por convenção, ele deve ser mapeado para o nome de email do usuário. O formato geral é alias@domain, em que o domínio deve estar presente na coleção de domínios verificados do locatário. Essa propriedade é obrigatória quando um usuário é criado. Os domínios verificados para o locatário podem ser acessados pela propriedade **verifiedDomains** da [organização](organization.md).<br>OBSERVAÇÃO: esta propriedade não pode conter caracteres de ênfase. Somente os seguintes caracteres são permitidos `A - Z`, `a - z`, `0 - 9`, ` ' . - _ ! # ^ ~`. Para ver a lista completa de caracteres permitidos, consulte [políticas de nome de usuário](/azure/active-directory/authentication/concept-sspr-policy#userprincipalname-policies-that-apply-to-all-user-accounts). <br><br>Suporta `$filter` (`eq`, `ne`, `not`, `ge`, `le`, `in`, `startsWith`, `endsWith`) e `$orderBy`.
 | userType | String | Um valor de String que pode ser usado para classificar tipos de usuário em seu diretório, como `Member` e `Guest`. <br><br>Suporte `$filter` (`eq`, `ne`, `not`, `in`, e `eq` no `null` valores). **OBSERVAÇÃO:** Para obter mais informações sobre as permissões para usuários membros e convidados, consulte [Quais são as permissões padrão de usuário em Azure Active Directory?](/azure/active-directory/fundamentals/users-default-permissions#member-and-guest-users) |
+
+### <a name="mail-and-proxyaddresses-properties"></a>propriedades mail e proxyAddresses
+**email** e **proxyAddresses** são propriedades relacionadas a email. **proxyAddresses** é uma coleção de endereços relevantes apenas para o servidor do Microsoft Exchange. Ele é usado para armazenar uma lista de endereços de email para um usuário que está vinculado a uma única caixa de correio. **email** propriedade é usada como o endereço de email do usuário para várias finalidades, incluindo a entrada do usuário e define o endereço proxy principal.
+ 
+**email** e **proxyAddresses** podem ser recuperados por meio da API de [usuário GET](add link) no MS Graph. **email** pode ser atualizado por meio do método [PATCH da API de usuário de atualização](add link), mas **proxyAddresses** não pode ser atualizado por meio do Microsoft Graph. Quando a propriedade de **email** de um usuário é atualizada, ela aciona o recálculo de **proxyAddresses** e o email recém-atualizado é definido como o endereço de proxy primário, exceto nos seguintes cenários: 
+ 
+1. Se um usuário tiver uma licença que inclua o Microsoft Exchange, todos os endereços proxy deverão pertencer a um domínio verificado no locatário. Qualquer um que não pertença a domínios verificados é removido silenciosamente.
+2. O email de um usuário NÃO será definido como o endereço de proxy primário se o usuário for um convidado e o endereço de proxy primário contiver a cadeia de caracteres UPN do usuário convidado com #EXT#.
+3. O email de um usuário NÃO será removido, mesmo que ele não tenha mais endereços proxy, se o usuário for um convidado.
+ 
+**proxyAddresses** são exclusivos entre objetos de diretório (usuários, grupos e contatos organizacionais). Se a propriedade **email** de um usuário entrar em conflito com um dos **proxyAddresses** de outro objeto, você atualizará com êxito a propriedade **email**; no entanto, o novo valor de correio não será adicionado à coleção **proxyAddresses**.
 
 ### <a name="user-preferences-for-languages-and-regional-formats"></a>Preferências do usuário para idiomas e formatos regionais.
 O recurso do **usuário** contém uma propriedade [mailboxSettings](../resources/mailboxsettings.md), que inclui o idioma, a formatação de data e hora, o fuso horário padrão e outras configurações preferidas do usuário especificamente para a caixa de correio principal do Exchange. Essas preferências são direcionadas para os clientes de email e só estarão disponíveis se o usuário tiver uma caixa de correio provisionada. Você pode optar por usar **mailboxSettings** se o seu cenário se concentrar apenas em emails, calendários, contatos ou tarefas pendentes do Outlook.
