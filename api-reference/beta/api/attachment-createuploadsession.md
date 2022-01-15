@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: abheek-das
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 00758998dd0fbb528868ebd5bdc0512e10a3be9f
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: 159058eb7a7882578d79e5369d43b052be5a6fd5
+ms.sourcegitcommit: 94741ff7f61f20a39dacfa6ce451a77ca02dd68a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "60982551"
+ms.lasthandoff: 01/14/2022
+ms.locfileid: "62047130"
 ---
 # <a name="attachment-createuploadsession"></a>attachment: createUploadSession
 
@@ -40,7 +40,7 @@ Consulte [anexar arquivos grandes Outlook mensagens ou eventos](/graph/outlook-l
 > Esteja ciente de um [problema](/graph/known-issues#attaching-large-files-to-messages) conhecido se você estiver anexando um arquivo grande a uma mensagem ou evento em uma caixa de correio compartilhada ou delegada.
 
 
-## <a name="permissions"></a>Permissões
+## <a name="permissions"></a>Permissions
 
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
@@ -96,9 +96,10 @@ Se tiver êxito, este método retornará um código de resposta e um `201 Create
 
 ## <a name="examples"></a>Exemplos
 
+### <a name="example-1-create-an-upload-session-to-add-a-large-attachment-to-a-draft-message"></a>Exemplo 1: Criar uma sessão de carregamento para adicionar um anexo grande a uma mensagem de rascunho
 O exemplo a seguir mostra como criar uma sessão de carregamento que você pode usar nas operações subsequentes de carregamento de arquivo para a mensagem especificada.
 
-### <a name="request"></a>Solicitação
+#### <a name="request"></a>Solicitação
 
 # <a name="http"></a>[HTTP](#tab/http)
 <!-- {
@@ -135,14 +136,14 @@ Content-type: application/json
 [!INCLUDE [sample-code](../includes/snippets/java/attachment-createuploadsession-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[Go](#tab/go)
+# <a name="go"></a>[Ir](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/attachment-createuploadsession-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
 
-### <a name="response"></a>Resposta
+#### <a name="response"></a>Resposta
 
 > **Observação:** o objeto de resposta mostrado aqui pode ser encurtado para legibilidade.
 
@@ -161,6 +162,59 @@ Content-type: application/json
     "@odata.context": "https://graph.microsoft.com/beta/$metadata#microsoft.graph.uploadSession",
     "uploadUrl": "https://outlook.office.com/api/beta/Users('a8e8e219-4931-95c1-b73d-62626fd79c32@72aa88bf-76f0-494f-91ab-2d7cd730db47')/Messages('AAMkADI5MAAIT3drCAAA=')/AttachmentSessions('AAMkADI5MAAIT3k0uAAA=')?authtoken=eyJhbGciOiJSUzI1NiIsImtpZCI6IktmYUNIUlN6bllHMmNI",
     "expirationDateTime": "2019-09-25T01:09:30.7671707Z",
+    "nextExpectedRanges": [
+        "0-"
+    ]
+}
+```
+
+### <a name="example-2-create-an-upload-session-to-add-a-large-in-line-attachment-to-a-draft-message"></a>Exemplo 2: Criar uma sessão de carregamento para adicionar um anexo em linha grande a uma mensagem de rascunho
+
+O exemplo a seguir mostra como criar uma sessão de carregamento que pode ser usada para adicionar um anexo em linha grande a uma mensagem de rascunho.
+
+Para um anexo em linha, de set _isInline_ property to `true` and use the _contentId_ property to specify a CID for the attachment as shown below. No corpo da mensagem de rascunho, use o mesmo valor CID para indicar a posição onde você deseja incluir o anexo usando uma marca de referência HTML CID, por exemplo `<img src="cid:my_inline_picture">` . Ao carregar o arquivo com êxito, a mensagem renderizada incluirá o anexo como parte do corpo da mensagem no local especificado.
+
+#### <a name="request"></a>Solicitação
+
+<!-- {
+  "blockType": "request",
+  "name": "attachment_createuploadsession_inline",
+  "sampleKeys": ["AAMkAGUwNjQ4ZjIxLTQ3Y2YtNDViMi1iZjc4LTMA="]
+}-->
+
+```http
+POST https://graph.microsoft.com/v1.0/me/messages/AAMkAGUwNjQ4ZjIxLTQ3Y2YtNDViMi1iZjc4LTMA=/attachments/createUploadSession
+Content-type: application/json
+
+{
+  "AttachmentItem": {
+    "attachmentType": "file",
+    "name": "scenary", 
+    "size": 7208534,
+    "isInline": true,
+    "contentId": "my_inline_picture"
+  }
+}
+```
+#### <a name="response"></a>Resposta
+
+> **Observação:** o objeto de resposta mostrado aqui pode ser encurtado para legibilidade.
+
+<!-- {
+  "blockType": "response",
+  "name": "attachment_createuploadsession_inline",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.uploadSession"
+} -->
+
+```http
+HTTP/1.1 201 Created
+Content-type: application/json
+
+{
+    "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#microsoft.graph.uploadSession",
+    "uploadUrl": "https://outlook.office.com/api/gv1.0/users('a8e8e219-4931-95c1-b73d-62626fd79c32@72aa88bf-76f0-494f-91ab-2d7cd730db47')/messages('AAMkAGUwNjQ4ZjIxLTQ3Y2YtNDViMi1iZjc4LTMA=')/AttachmentSessions('AAMkAGUwNjQ4ZjIxLTAAA=')?authtoken=eyJhbGciOiJSUzI1NiIsImtpZCI6IjFTeXQ1bXdXYVh5UFJ",
+    "expirationDateTime": "2021-12-27T14:20:12.9708933Z",
     "nextExpectedRanges": [
         "0-"
     ]

@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: abheek-das
 ms.prod: outlook
 doc_type: resourcePageType
-ms.openlocfilehash: c7ff765207dfc4e470720829b783a1f1ad8127d9
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 219632b035b31a32428bd27aac324cb99dda168d
+ms.sourcegitcommit: 94741ff7f61f20a39dacfa6ce451a77ca02dd68a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59067574"
+ms.lasthandoff: 01/14/2022
+ms.locfileid: "62047081"
 ---
 # <a name="attachmentitem-resource-type"></a>Tipo de recurso attachmentItem
 
@@ -23,6 +23,7 @@ Representa atributos de um item a ser anexado.
 | Propriedade     | Tipo        | Descrição |
 |:-------------|:------------|:------------|
 |attachmentType|String| O tipo de anexo. Os valores possíveis são: `file`, `item`, `reference`. Obrigatório.|
+|contentId|String| A CID ou a ID de conteúdo do anexo para fazer referência em caso de anexos em linha usando `<img src="cid:contentId">` a marca em mensagens HTML. Opcional.|
 |contentType|String|A natureza dos dados no anexo. Opcional.|
 |isInline|Booliano|`true` se o anexo for embutido; caso contrário, `false`. Opcional.|
 |nome|Cadeia de caracteres|O nome de exibição do anexo. Isso pode ser uma cadeia de caracteres descritiva e não precisa ser o nome de arquivo real. Obrigatório.|
@@ -35,6 +36,7 @@ Veja a seguir uma representação JSON do recurso.
 <!-- {
   "blockType": "resource",
   "optionalProperties": [
+    "contentId",
     "contentType",
     "isInline"
   ],
@@ -45,6 +47,7 @@ Veja a seguir uma representação JSON do recurso.
 ```json
 {
   "attachmentType": "String",
+  "contentId": "String",
   "contentType": "String",
   "isInline": true,
   "name": "String",

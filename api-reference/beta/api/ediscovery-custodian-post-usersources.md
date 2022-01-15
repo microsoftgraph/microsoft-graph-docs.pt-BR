@@ -5,12 +5,12 @@ author: mahage-msft
 ms.localizationpriority: medium
 ms.prod: ediscovery
 doc_type: apiPageType
-ms.openlocfilehash: 12644b0ecab23b3c7544fd9a7e284e7e54d69175
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: 7b1c58ecbb34d699687c5bb030fe04bc5572aaf2
+ms.sourcegitcommit: 096bad7aaaa5d9b5ce698a524cb21f4070c7b4d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "60986897"
+ms.lasthandoff: 01/15/2022
+ms.locfileid: "62056313"
 ---
 # <a name="create-custodian-usersource"></a>Criar usuário custodiadoSource
 
@@ -20,7 +20,7 @@ Namespace: microsoft.graph.ediscovery
 
 Crie um novo objeto [userSource](../resources/ediscovery-usersource.md) custodiante.
 
-## <a name="permissions"></a>Permissões
+## <a name="permissions"></a>Permissions
 
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
@@ -100,12 +100,9 @@ Content-Type: application/json
 [!INCLUDE [sample-code](../includes/snippets/java/create-usersource-from--1-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[Go](#tab/go)
+# <a name="go"></a>[Ir](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/create-usersource-from--1-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
----
-
 
 ---
 
@@ -130,6 +127,7 @@ Content-Type: application/json
     "id": "34383036-3741-4545-3242-373530353435",
     "email": "megan@contoso.com",
     "includedSources": "mailbox,site",
+    "siteWebUrl": "https://contoso.sharepoint.com/personal/megan_contoso_com/",
     "createdBy": {
         "user": {
             "id": "c1db6f13-332a-4d84-b111-914383ff9fc9",

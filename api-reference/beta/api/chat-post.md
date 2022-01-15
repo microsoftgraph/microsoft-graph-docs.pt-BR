@@ -1,16 +1,16 @@
 ---
 title: Criar chat
 description: Crie um novo objeto de chat.
-author: bhartono
+author: RamjotSingh
 ms.localizationpriority: medium
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: fa4287ab39db02b53507fb83ed4c7dc34e174e79
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: 38dac8e44ddbf61576b23c7bc90964e714ef1946
+ms.sourcegitcommit: 096bad7aaaa5d9b5ce698a524cb21f4070c7b4d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "61018912"
+ms.lasthandoff: 01/15/2022
+ms.locfileid: "62056292"
 ---
 # <a name="create-chat"></a>Criar chat
 Namespace: microsoft.graph
@@ -19,14 +19,14 @@ Namespace: microsoft.graph
 
 Crie um novo [objeto de chat.](../resources/chat.md)
 
-## <a name="permissions"></a>Permissões
+## <a name="permissions"></a>Permissions
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão|Permissões (da com menos para a com mais privilégios)|
 |:---|:---|
 |Delegado (conta corporativa ou de estudante)|Chat.Create, Chat.ReadWrite|
 |Delegado (conta pessoal da Microsoft) | Sem suporte. |
-|Aplicativo | Sem suporte. |
+|Aplicativo | Chat.Create |
 
 ## <a name="http-request"></a>Solicitação HTTP
 
@@ -114,7 +114,7 @@ Content-Type: application/json
 [!INCLUDE [sample-code](../includes/snippets/java/create-chat-oneonone-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[Go](#tab/go)
+# <a name="go"></a>[Ir](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/create-chat-oneonone-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
@@ -198,7 +198,7 @@ Content-Type: application/json
 [!INCLUDE [sample-code](../includes/snippets/java/create-chat-group-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[Go](#tab/go)
+# <a name="go"></a>[Ir](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/create-chat-group-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
@@ -281,7 +281,7 @@ Content-Type: application/json
 [!INCLUDE [sample-code](../includes/snippets/java/create-chat-oneonone-with-installed-apps-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[Go](#tab/go)
+# <a name="go"></a>[Ir](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/create-chat-oneonone-with-installed-apps-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
@@ -351,7 +351,7 @@ Content-Type: application/json
 [!INCLUDE [sample-code](../includes/snippets/java/create-chat-oneonone-upn-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[Go](#tab/go)
+# <a name="go"></a>[Ir](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/create-chat-oneonone-upn-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 

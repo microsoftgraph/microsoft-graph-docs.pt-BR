@@ -1,16 +1,16 @@
 ---
 title: tipo de recurso conversationMember
 description: Representa um usuário em uma conversa.
-localization_priority: Normal
+ms.localizationpriority: medium
 author: akjo
 ms.prod: microsoft-teams
 doc_type: resourcePageType
-ms.openlocfilehash: 679ab696c0f5752d8e59a2cb9de560c11bcc4ca9
-ms.sourcegitcommit: 456ec9510807d05623c0ed1dd049c9676f53f56b
+ms.openlocfilehash: fd0a85bb14d6b205e81a47259dbdc7616fc86a9f
+ms.sourcegitcommit: 096bad7aaaa5d9b5ce698a524cb21f4070c7b4d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/22/2021
-ms.locfileid: "53060040"
+ms.lasthandoff: 01/15/2022
+ms.locfileid: "62056334"
 ---
 # <a name="conversationmember-resource-type"></a>tipo de recurso conversationMember
 
@@ -19,9 +19,8 @@ Namespace: microsoft.graph
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Representa um usuário em uma [equipe ou](team.md) canal [ou](channel.md) [chat.](chat.md)
-Consulte também [aadUserConversationMember](aaduserconversationmember.md).
 
-## <a name="methods"></a>Métodos
+## <a name="methods"></a>Methods
 
 | Método       | Tipo de retorno  |Descrição|
 |:---------------|:--------|:----------|
@@ -45,7 +44,7 @@ Consulte também [aadUserConversationMember](aaduserconversationmember.md).
 
 | Propriedade   | Tipo |Descrição|
 |:---------------|:--------|:----------|
-|id|String| Somente leitura. ID exclusivo do usuário.|
+|id|String| Somente leitura. ID exclusiva do usuário.|
 |displayName| cadeia de caracteres | O nome de exibição do usuário. |
 |funções| coleção de cadeias de caracteres | As funções desse usuário. |
 |visibleHistoryStartDateTime| DateTimeOffset | O carimbo de data/hora indicando quanto o histórico de uma conversa é compartilhado com o membro da conversa. Essa propriedade é configurável somente para os membros de um bate-papo. |
@@ -73,6 +72,14 @@ Veja a seguir uma representação JSON do recurso.
   "visibleHistoryStartDateTime": "String (timestamp)"
 }
 ```
+
+## <a name="see-also"></a>Confira também
+
+- [aadUserConversationMember](aaduserconversationmember.md)
+- [skypeForBusinessUserConversationMember](skypeForBusinessUserConversationMember.md)
+- [anonymousGuestConversationMember](anonymousGuestConversationMember.md)
+- [skypeUserConversationMember](skypeUserConversationMember.md)
+- [microsoftAccountUserConversationMember](microsoftAccountUserConversationMember.md)
 
 <!-- uuid: 16cd6b66-4b1a-43a1-adaf-3a886856ed98
 2019-02-04 14:57:30 UTC -->

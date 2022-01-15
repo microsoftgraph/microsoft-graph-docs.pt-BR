@@ -1,16 +1,16 @@
 ---
 title: Tipo de recurso attachmentItem
 description: Representa atributos de um item a ser anexado.
-localization_priority: Normal
+ms.localizationpriority: medium
 author: abheek-das
 ms.prod: outlook
 doc_type: resourcePageType
-ms.openlocfilehash: a469ff035b63c16b422a23d4ffad91dbc361157f
-ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
+ms.openlocfilehash: 236e2ed7cb26f0c8c5cd3e4ed086ab58f77087d6
+ms.sourcegitcommit: 94741ff7f61f20a39dacfa6ce451a77ca02dd68a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/06/2021
-ms.locfileid: "50130287"
+ms.lasthandoff: 01/14/2022
+ms.locfileid: "62047231"
 ---
 # <a name="attachmentitem-resource-type"></a>Tipo de recurso attachmentItem
 
@@ -25,9 +25,10 @@ Representa atributos de um item a ser anexado.
 | Propriedade     | Tipo        | Descrição |
 |:-------------|:------------|:------------|
 |attachmentType|String| O tipo de anexo. Os valores possíveis são: `file`, `item`, `reference`. Obrigatório.|
+|contentId|String| A CID ou a ID de conteúdo do anexo para fazer referência em caso de anexos em linha usando `<img src="cid:contentId">` a marca em mensagens HTML. Opcional.|
 |contentType|String|A natureza dos dados no anexo. Opcional.|
 |isInline|Booliano|`true` se o anexo for embutido; caso contrário, `false`. Opcional.|
-|nome|Cadeia de caracteres|O nome de exibição do anexo. Pode ser uma cadeia de caracteres descritiva e não precisa ser o nome de arquivo real. Obrigatório.|
+|nome|Cadeia de caracteres|O nome de exibição do anexo. Isso pode ser uma cadeia de caracteres descritiva e não precisa ser o nome de arquivo real. Obrigatório.|
 |size|Int64|O comprimento do anexo em bytes. Obrigatório.|
 
 ## <a name="json-representation"></a>Representação JSON
@@ -37,6 +38,7 @@ Veja a seguir uma representação JSON do recurso.
 <!-- {
   "blockType": "resource",
   "optionalProperties": [
+    "contentId",
     "contentType",
     "isInline"
   ],
@@ -47,6 +49,7 @@ Veja a seguir uma representação JSON do recurso.
 ```json
 {
   "attachmentType": "String",
+  "contentId": "String",
   "contentType": "String",
   "isInline": true,
   "name": "String",

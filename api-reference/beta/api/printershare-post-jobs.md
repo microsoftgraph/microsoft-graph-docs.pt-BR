@@ -5,12 +5,12 @@ author: braedenp-msft
 ms.localizationpriority: medium
 ms.prod: universal-print
 doc_type: apiPageType
-ms.openlocfilehash: 9ad0704df0fa1c4d06f4a7ea71acdf0124e73592
-ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
+ms.openlocfilehash: 1f15640fac2fd8a2a5e8b6c9d67c2fe0d03068cb
+ms.sourcegitcommit: 096bad7aaaa5d9b5ce698a524cb21f4070c7b4d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/12/2021
-ms.locfileid: "60938543"
+ms.lasthandoff: 01/15/2022
+ms.locfileid: "62056299"
 ---
 # <a name="create-printjob-for-a-printershare"></a>Criar printJob para uma printerShare
 
@@ -20,15 +20,15 @@ Namespace: microsoft.graph
 
 Criar um novo [printJob](../resources/printJob.md) para uma [printerShare](../resources/printerShare.md). 
 
-## <a name="permissions"></a>Permissões
+## <a name="permissions"></a>Permissions
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
-Além das permissões a seguir, o usuário ou locatário do aplicativo deve ter uma assinatura de Impressão Universal ativa e ter uma permissão que conceda [acesso a Get printerShare.](printerShare-get.md) O usuário inscreveu deve ser um [Administrador de Impressora.](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#printer-administrator)
+Além das permissões a seguir, o usuário ou locatário do aplicativo deve ter uma assinatura de Impressão Universal ativa e ter uma permissão que conceda [acesso a Get printerShare.](printerShare-get.md)
 
 |Tipo de permissão | Permissões (da com menos para a com mais privilégios) |
 |:---------------|:--------------------------------------------|
 |Delegado (conta corporativa ou de estudante)| PrintJob.ReadWriteBasic, PrintJob.ReadWrite, PrintJob.ReadWriteBasic.All, PrintJob.ReadWrite.All |
-|Delegada (conta pessoal da Microsoft)|Sem suporte.|
+|Delegado (conta pessoal da Microsoft)|Sem suporte.|
 |Aplicativo| Sem suporte. |
 
 ## <a name="http-request"></a>Solicitação HTTP

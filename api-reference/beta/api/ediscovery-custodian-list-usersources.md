@@ -5,12 +5,12 @@ author: mahage-msft
 ms.localizationpriority: medium
 ms.prod: ediscovery
 doc_type: apiPageType
-ms.openlocfilehash: 7ab4aae4ce9bfddfb0e588b95e11e030bf7639a1
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: 5793ba708808b22abdbfc3b2285beded115f6dc6
+ms.sourcegitcommit: 096bad7aaaa5d9b5ce698a524cb21f4070c7b4d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "60986974"
+ms.lasthandoff: 01/15/2022
+ms.locfileid: "62056306"
 ---
 # <a name="list-custodian-usersources"></a>Listar usuários custodiadosSources
 
@@ -20,7 +20,7 @@ Namespace: microsoft.graph.ediscovery
 
 Obter uma lista dos [objetos userSource](../resources/ediscovery-usersource.md) e suas propriedades.
 
-## <a name="permissions"></a>Permissões
+## <a name="permissions"></a>Permissions
 
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
@@ -90,7 +90,7 @@ GET https://graph.microsoft.com/beta/compliance/ediscovery/cases/4c8f8f70-7785-4
 [!INCLUDE [sample-code](../includes/snippets/java/get-usersource-1-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[Go](#tab/go)
+# <a name="go"></a>[Ir](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/get-usersource-1-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
@@ -120,6 +120,7 @@ Content-Type: application/json
             "id": "46384443-4137-3032-3437-363939433735",
             "email": "megan@contoso.com",
             "includedSources": "mailbox,site",
+            "siteWebUrl": "https://contoso.sharepoint.com/personal/megan_contoso_com/",
             "createdBy": {
                 "user": {
                     "id": "c1db6f13-332a-4d84-b111-914383ff9fc9",

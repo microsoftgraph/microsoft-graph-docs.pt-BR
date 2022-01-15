@@ -5,12 +5,12 @@ author: jpettere
 ms.localizationpriority: medium
 ms.prod: users
 doc_type: apiPageType
-ms.openlocfilehash: 954a38b88f659c7049dfca162e292fa5f035090a
-ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
+ms.openlocfilehash: 8c78950129ccb0c469b505970c696a4b57236e9d
+ms.sourcegitcommit: 94741ff7f61f20a39dacfa6ce451a77ca02dd68a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/12/2021
-ms.locfileid: "60946885"
+ms.lasthandoff: 01/14/2022
+ms.locfileid: "62047102"
 ---
 # <a name="update-settings"></a>Atualizar configurações
 
@@ -23,11 +23,11 @@ Atualize as propriedades do [objeto userSettings.](../resources/usersettings.md)
 Também é possível desativar vários usuários do Delve e desabilitar sua contribuição sobre a relevância do conteúdo para toda a organização por meio de uma solicitação em lotes.
 Para saber mais, consulte [JSON batching](/graph/json-batching).
 
->**Importante:** somente membros do grupo de função [de gerenciamento](https://support.office.com/article/permissions-in-the-office-365-security-compliance-center-d10608af-7934-490a-818e-e68f17d0e9c1?ui=en-US&rs=en-US&ad=US) da organização podem atualizar vários usuários. 
+>**Importante:** somente membros do grupo de função [de gerenciamento](/exchange/permissions/permissions?view=exchserver-2019#role-groups) da organização podem atualizar vários usuários. 
 
 
 
-## <a name="permissions"></a>Permissões
+## <a name="permissions"></a>Permissions
 
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 

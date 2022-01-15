@@ -269,15 +269,15 @@ items:
           - name: Usuário
             href: resources/user.md
             items:
-              - name: Listar usuários
+              - name: Listar
                 href: api/user-list.md
-              - name: Criar usuário
+              - name: Criar
                 href: api/user-post-users.md
-              - name: Obter usuário
+              - name: Obter
                 href: api/user-get.md
-              - name: Atualizar usuário
+              - name: Atualizar
                 href: api/user-update.md
-              - name: Excluir usuário
+              - name: Excluir
                 href: api/user-delete.md
               - name: Alterar senha
                 href: api/user-changepassword.md
@@ -920,7 +920,7 @@ items:
                         href: api/application-delete-extensionproperty.md
               - name: Credenciais de identidade federada (visualização)
                 items:
-                  - name: Visão geral
+                  - name: Visão Geral
                     href: resources/federatedidentitycredentials-overview.md
                   - name: Credenciais de identidade federada
                     href: resources/federatedidentitycredential.md
@@ -1547,7 +1547,7 @@ items:
                 href: api/call-logteleconferencedevicequality.md
           - name: Registros de chamadas
             items:
-              - name: Visão geral
+              - name: Visão Geral
                 href: resources/callrecords-api-overview.md
               - name: Registro de chamada
                 items:
@@ -1816,7 +1816,7 @@ items:
                     href: api/ediscovery-tag-ashierarchy.md
           - name: Solicitação de direitos do sujeito
             items:
-              - name: Visão geral
+              - name: Visão Geral
                 href: resources/subjectrightsrequest-subjectrightsrequestapioverview.md
               - name: Solicitação de direitos do sujeito
                 href: resources/subjectrightsrequest.md
@@ -9988,7 +9988,7 @@ items:
                         href: api/intune-tem-telecomexpensemanagementpartner-update.md
           - name: Cloud PC (visualização)
             items:
-              - name: Visão geral
+              - name: Visão Geral
                 href: resources/cloudpc-api-overview.md
               - name: Ponto de extremidade virtual
                 href: resources/virtualendpoint.md
@@ -10367,7 +10367,7 @@ items:
                     href: api/managedtenants-windowsprotectionstate-get.md
           - name: Comunicações e integridade do serviço
             items:
-              - name: Visão geral
+              - name: Visão Geral
                 href: resources/service-communications-api-overview.md
               - name: Comunicado do serviço
                 href: resources/serviceannouncement.md
@@ -11053,7 +11053,7 @@ items:
                     href: api/contract-list.md
               - name: Atributos de segurança personalizados (visualização)
                 items:
-                  - name: Visão geral
+                  - name: Visão Geral
                     href: resources/custom-security-attributes-overview.md
                   - name: Conjuntos de atributos
                     href: resources/attributeset.md
@@ -12290,19 +12290,19 @@ items:
                         href: api/accessreviewinstance-list-decisions.md
                       - name: Listar aprovação pendente (preterida)
                         href: api/accessreviewinstance-pendingaccessreviewinstances.md
-                  - name: Item de decisão da instância de revisão do Access
-                    href: resources/accessreviewinstancedecisionitem.md
-                    items:
-                      - name: Listar
-                        href: api/accessreviewinstance-list-decisions.md
-                      - name: Obter
-                        href: api/accessreviewinstancedecisionitem-get.md
-                      - name: Filtrar pelo usuário atual
-                        href: api/accessreviewinstancedecisionitem-filterbycurrentuser.md
-                      - name: Atualizar
-                        href: api/accessreviewinstancedecisionitem-update.md
-                      - name: Listar aprovação pendente (preterida)
-                        href: api/accessreviewinstancedecisionitem-listpendingapproval.md
+                      - name: Item de decisão da instância de revisão do Access
+                        href: resources/accessreviewinstancedecisionitem.md
+                        items:
+                          - name: Listar
+                            href: api/accessreviewinstance-list-decisions.md
+                          - name: Obter
+                            href: api/accessreviewinstancedecisionitem-get.md
+                          - name: Filtrar pelo usuário atual
+                            href: api/accessreviewinstancedecisionitem-filterbycurrentuser.md
+                          - name: Atualizar
+                            href: api/accessreviewinstancedecisionitem-update.md
+                          - name: Listar aprovação pendente (preterida)
+                            href: api/accessreviewinstancedecisionitem-listpendingapproval.md
                   - name: Política de revisão do Access
                     href: resources/accessreviewpolicy.md
                     items:
@@ -13459,7 +13459,7 @@ items:
         items:
           - name: Relatórios de atividade do Azure AD
             items:
-              - name: Visão geral
+              - name: Visão Geral
                 href: resources/azure-ad-auditlog-overview.md
               - name: Auditoria de diretório
                 href: resources/directoryaudit.md
@@ -13541,7 +13541,7 @@ items:
                         href: api/authenticationmethodsroot-usersregisteredbymethod.md
           - name: Microsoft 365 de uso
             items:
-              - name: Visão geral
+              - name: Visão Geral
                 href: resources/report.md
               - name: Uso do dispositivo do Microsoft Teams
                 href: resources/microsoft-teams-device-usage-reports.md
@@ -14027,7 +14027,7 @@ items:
                 href: api/site-list-subsites.md
               - name: Procurar sites
                 href: api/site-search.md
-              - name: Permissões
+              - name: Permissions
                 items:
                   - name: Permissão
                     href: resources/permission.md

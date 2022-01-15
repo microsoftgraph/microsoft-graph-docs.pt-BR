@@ -1,27 +1,28 @@
 ---
-title: Diferenças de tipo de recurso entre o Azure Active Directory (Azure AD) Graph e o Microsoft Graph
+title: Diferenças de tipo de recurso entre o Azure AD Graph e o Microsoft Graph
 description: Descreve as diferenças entre recursos no Azure Active Directory (Azure AD) Graph e recursos no Microsoft Graph para ajudar a migrar aplicativos.
 author: dkershaw10
 ms.localizationpriority: medium
 ms.prod: applications
-ms.openlocfilehash: ffd0f23c417ead7fa8457bac9ef8cd00e10f1dcd
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 99a32a189028b40095ad92a07d7628dd0f24d292
+ms.sourcegitcommit: 096bad7aaaa5d9b5ce698a524cb21f4070c7b4d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59044248"
+ms.lasthandoff: 01/15/2022
+ms.locfileid: "62056257"
 ---
-# <a name="resource-type-differences-between-azure-active-directory-azure-ad-graph-and-microsoft-graph"></a>Diferenças de tipo de recurso entre o Azure Active Directory (Azure AD) Graph e o Microsoft Graph
+# <a name="resource-type-differences-between-azure-ad-graph-and-microsoft-graph"></a>Diferenças de tipo de recurso entre o Azure AD Graph e o Microsoft Graph
 
 Este artigo faz parte da *etapa 1: analisar as* diferenças de API do processo para [migrar aplicativos.](migrate-azure-ad-graph-planning-checklist.md)
 
-Ao migrar aplicativos do Azure AD Graph para o Microsoft Graph, esteja ciente de que alguns recursos têm nomes diferentes e tipos diferentes.  Por exemplo, se seu aplicativo do Azure AD Graph usar o recurso **tenantInfo,** você precisará atualizar seu código para se referir à [organização.](/graph/api/resources/organization)
+Ao migrar aplicativos do Azure Active Directory (Azure AD) Graph para o Microsoft Graph, saiba que alguns recursos têm nomes diferentes e tipos diferentes.  Por exemplo, se seu aplicativo do Azure AD Graph usar o recurso **TenantDetail,** você precisará atualizar seu código para se referir à [organização.](/graph/api/resources/organization)
 
-A tabela a seguir destaca as diferenças entre os recursos do Azure AD Graph microsoft Graph recursos.  Ele mostra recursos que têm nomes diferentes ou não estão disponíveis; ele também realça os recursos disponíveis na versão beta do Microsoft Graph, mas não na versão v1.0.
+A tabela a seguir destaca as diferenças entre os recursos do Azure AD Graph microsoft Graph recursos. Ele mostra recursos que têm nomes diferentes ou não estão disponíveis; ele também realça os recursos disponíveis na versão beta do Microsoft Graph, mas não na versão v1.0.
 
 Se um  recurso não for mostrado nesta lista, ele já estará disponível na [versão v1.0](/graph/api/overview) do Microsoft Graph, com o mesmo nome do Azure AD Graph.
 
-> **OBSERVAÇÃO**: os nomes de tipo de recurso no Azure AD Graph são em caso pascal, enquanto na Microsoft Graph eles são camel-cased.
+> [!NOTE]
+> Os nomes de tipo de recurso no Azure AD Graph são em caso pascal, enquanto na Microsoft Graph eles são casos de camel.
 
 |Azure AD Graph. <br>Recurso (v1.6) |Microsoft Graph<br>recurso|Comentários|
 |---|---|---|

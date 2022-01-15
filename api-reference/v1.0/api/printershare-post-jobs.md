@@ -5,12 +5,12 @@ author: nilakhan
 ms.localizationpriority: medium
 ms.prod: cloud-printing
 doc_type: apiPageType
-ms.openlocfilehash: e7ac6998ebd6f7757f5dde871d65191e9a3a38ed
-ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
+ms.openlocfilehash: a3c5bd914321923c1f4004836e69976fd727654e
+ms.sourcegitcommit: 096bad7aaaa5d9b5ce698a524cb21f4070c7b4d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/12/2021
-ms.locfileid: "60937164"
+ms.lasthandoff: 01/15/2022
+ms.locfileid: "62056327"
 ---
 # <a name="create-printjob-for-a-printershare"></a>Criar printJob para uma printerShare
 Namespace: microsoft.graph
@@ -19,15 +19,15 @@ Criar um novo [printJob](../resources/printJob.md) para uma [printerShare](../re
 
 Também cria um [novo printDocument](../resources/printDocument.md) associado ao printJob.
 
-## <a name="permissions"></a>Permissões
+## <a name="permissions"></a>Permissions
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
-Além das permissões a seguir, o usuário ou locatário do aplicativo deve ter uma assinatura de Impressão Universal ativa e ter uma permissão que conceda [acesso a Get printerShare.](printerShare-get.md) O usuário inscreveu deve ser um [Administrador de Impressora.](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#printer-administrator)
+Além das permissões a seguir, o usuário ou locatário do aplicativo deve ter uma assinatura de Impressão Universal ativa e ter uma permissão que conceda [acesso a Get printerShare.](printerShare-get.md)
 
 |Tipo de permissão | Permissões (da com menos para a com mais privilégios) |
 |:---------------|:--------------------------------------------|
 |Delegado (conta corporativa ou de estudante)| PrintJob.ReadWriteBasic, PrintJob.ReadWrite, PrintJob.ReadWriteBasic.All, PrintJob.ReadWrite.All |
-|Delegada (conta pessoal da Microsoft)|Sem suporte.|
+|Delegado (conta pessoal da Microsoft)|Sem suporte.|
 |Aplicativo| Sem suporte. |
 
 ## <a name="http-request"></a>Solicitação HTTP
