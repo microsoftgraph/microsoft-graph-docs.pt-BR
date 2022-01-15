@@ -5,12 +5,12 @@ author: simonhult
 ms.localizationpriority: high
 ms.prod: insights
 ms.custom: scenarios:getting-started
-ms.openlocfilehash: 7769bbce057dd387bdc7494c98f069f6a4d06c9b
-ms.sourcegitcommit: ddeee0eec277df06d9e635e5b5c257d14c856273
+ms.openlocfilehash: 10bffe31804048328eac1ab1e8f080a2ef3ed263
+ms.sourcegitcommit: 94741ff7f61f20a39dacfa6ce451a77ca02dd68a
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/04/2021
-ms.locfileid: "60780860"
+ms.lasthandoff: 01/14/2022
+ms.locfileid: "62047144"
 ---
 # <a name="overview-of-people-and-workplace-intelligence-in-microsoft-graph"></a>Visão geral da inteligência pessoal e de local de trabalho no Microsoft Graph
 
@@ -62,7 +62,7 @@ Os cartões de perfil permitem que os usuários em uma organização confiram in
 
 ### <a name="use-intelligence-to-improve-collaboration"></a>Use inteligência para melhorar a colaboração
 
-Durante um dia de trabalho típico, usuários frequentemente interagem com grandes quantidades de informações armazenadas em muitos documentos e colaboram com outros usuários de muitas maneiras diferentes. É importante que eles sempre possam encontrar o precisam no momento certo.
+Durante um dia de trabalho típico, usuários frequentemente interagem com grandes quantidades de informações armazenadas em muitos documentos e colaboram com outros usuários de muitas maneiras diferentes. É importante que eles sempre possam encontrar o que precisam no momento certo.
 
 Você pode usar a API do Insights, que inclui as APIs [trending](/graph/api/resources/insights-trending), [shared](/graph/api/resources/insights-shared) e [used](/graph/api/resources/insights-used) para localizar arquivos no Microsoft 365 com base no contexto e nas necessidades atuais dos seus usuários, tornando os usuários mais produtivos e melhorando a colaboração em sua organização. As organizações podem [personalizar as configurações de privacidade](insights-customize-item-insights-privacy.md) para essas informações baseadas em documentos e controlar a disponibilidade dessas informações em experiências específicas do Microsoft 365.
 
