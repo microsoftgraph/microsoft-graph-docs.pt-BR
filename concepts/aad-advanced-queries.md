@@ -4,43 +4,43 @@ description: Os objetos do diretório Microsoft Azure Active Directory suportam 
 author: Licantrop0
 ms.localizationpriority: high
 ms.custom: graphiamtop20, scenarios:getting-started
-ms.openlocfilehash: 95e7b4650bdca66f824849033c7583ff9eaa9d48
-ms.sourcegitcommit: 3e2239e60b6dc53997b7d4356a20fc3d365d6238
+ms.openlocfilehash: 3b4dccfc09b0520d787474256493be2a0b698b7a
+ms.sourcegitcommit: bfd1ab7e015ef04cb2ca3fb85d308ba2ce830a89
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/02/2021
-ms.locfileid: "61266289"
+ms.lasthandoff: 01/19/2022
+ms.locfileid: "62072569"
 ---
 # <a name="advanced-query-capabilities-on-azure-ad-directory-objects"></a>Recursos avançados de consulta nos objetos do diretório Microsoft Azure Active Directory
 
-Como o Microsoft Azure Active Directory continua a oferecer mais capacidades e melhorias na estabilidade, disponibilidade e desempenho, o Microsoft Graph também continua a evoluir e a escalar para acessar os dados de forma eficiente. Uma maneira é através do suporte crescente do Microsoft Graph para capacidades avançadas de consulta em vários objetos Microsoft Azure Active Directory e suas propriedades. Por exemplo, a adição de **Não** (`not`), **não é igual a** (`ne`), e **Termina com** (`endsWith`) operadores nos parâmetros de consulta `$filter`.
+Como o Microsoft Azure Active Directory continua a oferecer mais capacidades e melhorias na estabilidade, disponibilidade e desempenho, o Microsoft Graph também continua a evoluir e a escalar para acessar os dados de forma eficiente. Uma maneira é através do suporte crescente do Microsoft Graph para capacidades avançadas de consulta em vários objetos Microsoft Azure Active Directory e suas propriedades. Por exemplo, a adição de **Não** (`not`), **Não é igual a** (`ne`) e **termina com** (`endsWith`) operadores no parâmetro de consulta `$filter`.
 
 O mecanismo de consulta do Microsoft Graph usa um repositório de índice para atender às solicitações de consulta. Para adicionar suporte as funcionalidades adicionais de consulta em algumas propriedades, essas propriedades agora são indexadas em um repositório separado. Essa indexação separada permite que o Microsoft Azure AD aumente o suporte e melhore o desempenho das solicitações de consulta. No entanto, essas funcionalidades de consulta avançada não estão disponíveis por padrão, mas o solicitante também deve definir o cabeçalho **ConsistencyLevel** para `eventual` *e*, com exceção de `$search`, use o parâmetro de consulta `$count`. O cabeçalho **ConsistencyLevel** e `$count` são referidos como *parâmetros de consulta avançados*.
 
 Por exemplo, se você deseja recuperar apenas contas de usuários inativos, você pode executar qualquer uma destas consultas que utilizam o Parâmetro de consulta `$filter`.
 
-+ Usar o parâmetro `$filter` consulta com o operador `eq`. Esta solicitação funcionará por padrão, ou seja, a solicitação não requer os parâmetros de consulta avançados.
++ Opção 1: Use o parâmetro de consulta `$filter` com o operador `eq`. Esta solicitação funcionará por padrão, ou seja, a solicitação não requer os parâmetros de consulta avançados.
 
-<!-- {
-  "blockType": "request",
-  "name": "get_users_enabled"
-} -->
-```msgraph-interactive
-GET https://graph.microsoft.com/v1.0/users?$filter=accountEnabled eq false
-```
+    <!-- {
+      "blockType": "request",
+      "name": "get_users_enabled"
+    } -->
+    ```msgraph-interactive
+    GET https://graph.microsoft.com/v1.0/users?$filter=accountEnabled eq false
+    ```
 
-+ Usar o parâmetro `$filter` consulta com o operador `ne`. Esta solicitação não é suportada por padrão porque o `ne` operador só é suportado em consultas avançadas. Portanto, você deve adicionar o **ConsistencyLevel** cabeçalho para `eventual`*e* usar a `$count=true` cadeia de caracteres.
++ Opção 2: Use o parâmetro de consulta `$filter` com o operador `ne`. Esta solicitação não é suportada por padrão porque o `ne` operador só é suportado em consultas avançadas. Portanto, você deve adicionar o **ConsistencyLevel** cabeçalho para `eventual`*e* usar a `$count=true` cadeia de caracteres.
 
-<!-- {
-  "blockType": "request",
-  "name": "get_users_not_enabled"
-} -->
-```msgraph-interactive
-GET https://graph.microsoft.com/v1.0/users?$filter=accountEnabled ne true&$count=true
-ConsistencyLevel: eventual
-```
+    <!-- {
+      "blockType": "request",
+      "name": "get_users_not_enabled"
+    } -->
+    ```msgraph-interactive
+    GET https://graph.microsoft.com/v1.0/users?$filter=accountEnabled ne true&$count=true
+    ConsistencyLevel: eventual
+    ```
 
-Essas funcionalidades de consulta avançada têm suporte apenas nos seguintes subconjuntos de objetos de diretório do Microsoft Azure AD e seus relacionamentos:
+Estas funcionalidades avançados de consulta são compatíveis somente com objetos de diretório do Microsoft Azure AD e suas relações, incluindo os seguintes objetos usados com frequência:
 
 | Objeto                                                         | Relações                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       |
 | -------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |

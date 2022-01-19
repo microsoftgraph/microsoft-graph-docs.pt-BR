@@ -4,12 +4,12 @@ description: O Microsoft Graph fornece parâmetros de consulta opcionais que voc
 author: mumbi-o
 ms.localizationpriority: high
 ms.custom: graphiamtop20, scenarios:getting-started
-ms.openlocfilehash: 4e2c0cc59f47e02b7bc9a1f0496bbbd06f1ffe4a
-ms.sourcegitcommit: 1cf7a82df17afc6291e2c93d8b2c277bf3382e6a
+ms.openlocfilehash: 358fa02a09c1ded92fd86596b634d59783b2ee16
+ms.sourcegitcommit: bfd1ab7e015ef04cb2ca3fb85d308ba2ce830a89
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/20/2021
-ms.locfileid: "61130203"
+ms.lasthandoff: 01/19/2022
+ms.locfileid: "62072058"
 ---
 # <a name="use-query-parameters-to-customize-responses"></a>Usar parâmetros de consulta para personalizar respostas
 
@@ -97,8 +97,9 @@ Por exemplo, a solicitação a seguir retornará tanto o conjunto **contato** do
 GET  https://graph.microsoft.com/v1.0/me/contacts?$count=true
 ```
 
-O parâmetro de consulta `$count` tem suporte para essas coleções de recursos e suas relações que derivam de [directoryObject](/graph/api/resources/directoryobject) e somente em [consultas avançadas](/graph/aad-advanced-queries):
-- [aplicativo](/graph/api/resources/application)
+O parâmetro de consulta `$count` é suportado nas coleções dos seguintes recursos utilizados com frequência e suas relações que derivam do [directoryObject](/graph/api/resources/directoryobject) e somente em [consultas avançadas](/graph/aad-advanced-queries):
+- [administrativeUnit](/graph/api/resources/administrativeunit)
+- [application](/graph/api/resources/application)
 - [orgContact](/graph/api/resources/orgcontact)
 - [device](/graph/api/resources/device)
 - [group](/graph/api/resources/group)
@@ -143,11 +144,11 @@ O suporte para operadores `$filter` varia entre as APIs do Microsoft Graph. Os s
 
 | Tipo de operador | Operador |
 | --- | --- |
-| Operadores de igualdade | <ul><li> igual a `eq` </li><li> não é igual a `ne`</li><li> Negação `not`</li><li> em `in`</li></ul> |
-| Operadores relacionais | <ul><li> menor que `lt` </li><li> maior que `gt`</li><li> menor ou igual a `le`</li><li> maior ou igual a `ge`</li></ul> |
-| Operadores Lambda | <ul><li> qualquer `any` </li><li> todos `all`</li></ul>|
-| Operadores condicionais | <ul><li> e `and` </li><li> ou `or`</li> |
-| Funções | <ul><li> Começa com`startsWith` </li><li> Termina com`endsWith`</li><li> Contém `contains`</li></ul>|
+| Operadores de igualdade | <ul><li> Igual a (`eq`) </li><li> Não é igual a (`ne`)</li><li> Negação lógica (`not`)</li><li> Em (`in`)</li></ul> |
+| Operadores relacionais | <ul><li> Menor que (`lt`) </li><li> Maior que (`gt`)</li><li> Menor ou igual a ( `le` )</li><li> Maior ou igual a (`ge`)</li></ul> |
+| Operadores Lambda | <ul><li> Qualquer (`any`) </li><li> Todos (`all`)</li></ul>|
+| Operadores condicionais | <ul><li> E (`and`) </li><li> Ou (`or`)</li> |
+| Functions | <ul><li> Inicia com ( `startsWith` ) </li><li> Termina com (`endsWith`)</li><li> Contém ( `contains` )</li></ul>|
 
 
 > **Observação:** o suporte para esses operadores varia de acordo com a entidade e algumas propriedades oferecem suporte `$filter` apenas em [consultas avançadas](/graph/aad-advanced-queries). Consulte a documentação específica da entidade para obter detalhes.

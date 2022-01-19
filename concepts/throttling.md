@@ -1,15 +1,15 @@
 ---
 title: Diretrizes de limitação do Microsoft Graph
 description: Os limites de controle limitam número de chamadas simultâneas para um serviço para evitar a utilização exagerada dos recursos. O Microsoft Graph foi projetado para lidar com um alto volume de solicitações. Se ocorrer um número impressionante de solicitações, a limitação ajuda a manter um desempenho ideal e a confiabilidade do serviço Microsoft Graph.
-author: davidmu1
+author: FaithOmbongi
 ms.localizationpriority: high
 ms.custom: graphiamtop20
-ms.openlocfilehash: 082586ea7518df90b16bc2b2b2e0bafdfcc2779d
-ms.sourcegitcommit: e497ed9bb56400bdd2bb53d52ddf057d9966220b
+ms.openlocfilehash: e7431245c63bb9c29ed32a2f07c55394198f1b60
+ms.sourcegitcommit: bfd1ab7e015ef04cb2ca3fb85d308ba2ce830a89
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/30/2021
-ms.locfileid: "61226467"
+ms.lasthandoff: 01/19/2022
+ms.locfileid: "62072121"
 ---
 # <a name="microsoft-graph-throttling-guidance"></a>Diretrizes de limitação do Microsoft Graph
 
@@ -483,3 +483,11 @@ Os limites anteriores se aplicam aos seguintes recursos:
 | <!-- fake header--> |
 |--|
 | <ul> <li> [educationAssignment](/graph/api/resources/educationassignment) <li> [educationSubmission](/graph/api/resources/educationsubmission) <li> [tendências](/graph/api/resources/trending)  <li> [educationResource](/graph/api/resources/educationresource) </ul>|
+
+### <a name="service-communications-service-limits"></a>Limites do Serviço de Comunicações
+Os limites a seguir se aplicam a qualquer tipo de solicitação de comunicações de serviço em `/admin/serviceAnnouncement/`.
+
+| Tipo de solicitação |  Limitar por aplicativo por locatário |
+| ------------ | ------------------------ |
+| Qualquer | 240 solicitações por 60 segundos |
+|Qualquer | 800 solicitações por hora |
