@@ -24,7 +24,7 @@ highlightedContent:
       url: ./whats-new-overview.md
     - title: API REST do Microsoft Graph
       itemType: reference
-      url: 'https://docs.microsoft.com/graph/api/overview?view=graph-rest-1.0'
+      url: /graph/api/overview?view=graph-rest-1.0
 conceptualContent:
   title: Trabalhar com o Microsoft Graph
   items:
@@ -76,11 +76,11 @@ tools:
   items:
     - title: SDKs
       imageSrc: ./images/hub/icon01-sdk.svg
-      url: 'https://docs.microsoft.com/graph/sdks/sdk-installation'
+      url: /graph/sdks/sdk-installation
     - title: Inícios rápidos
       imageSrc: ./images/hub/icon02-quickstart.svg
       url: 'https://developer.microsoft.com/graph/quick-start'
-    - title: Graph Explorer
+    - title: Explorador do Graph
       imageSrc: ./images/hub/icon03-graphexplorer.svg
       url: 'https://developer.microsoft.com/graph/graph-explorer/'
     - title: Kit de ferramentas do Microsoft Graph
@@ -93,29 +93,29 @@ additionalContent:
         - title: Learning caminhos
           links:
             - text: Fundamentos Graph Microsoft
-              url: 'https://docs.microsoft.com/learn/paths/m365-msgraph-fundamentals/'
+              url: /learn/paths/m365-msgraph-fundamentals/
             - text: Criar aplicativos com o Microsoft Graph – Associado
-              url: 'https://docs.microsoft.com/learn/paths/m365-msgraph-associate/'
+              url: /learn/paths/m365-msgraph-associate/
             - text: Explorar os cenários do Microsoft Graph para o desenvolvimento do JavaScript
-              url: 'https://docs.microsoft.com/learn/paths/m365-msgraph-scenarios'
+              url: /learn/paths/m365-msgraph-scenarios
             - text: Explore cenários do Microsoft Graph para desenvolvimento ASP.NET Core
-              url: 'https://docs.microsoft.com/learn/paths/m365-msgraph-dotnet-core-scenarios/'
+              url: /learn/paths/m365-msgraph-dotnet-core-scenarios/
             - text: Desenvolver aplicativos com o Microsoft Graph Toolkit
-              url: 'https://docs.microsoft.com/learn/paths/m365-msgraph-toolkit'
+              url: /learn/paths/m365-msgraph-toolkit
         - title: Instruções
           links:
             - text: 'Conectores: crie seu primeiro conector personalizado'
-              url: 'https://docs.microsoft.com/en-us/graph/connecting-external-content-build-quickstart'
+              url: /graph/connecting-external-content-build-quickstart
             - text: 'Pesquisa da Microsoft: pesquisar conteúdo no OneDrive e no Sharepoint'
-              url: 'https://docs.microsoft.com/graph/search-concept-files'
+              url: /graph/search-concept-files
             - text: 'Identidade: Gerenciar o acesso aos recursos'
-              url: 'https://docs.microsoft.com/en-us/graph/tutorial-access-package-api'
+              url: /graph/tutorial-access-package-api
             - text: 'Outlook: anexar arquivos grandes a uma mensagem ou evento'
-              url: 'https://docs.microsoft.com/graph/outlook-large-attachments'
+              url: /graph/outlook-large-attachments
             - text: 'Outlook: obter conteúdo MIME de uma mensagem'
-              url: 'https://docs.microsoft.com/graph/outlook-get-mime-message'
+              url: /graph/outlook-get-mime-message
             - text: Mais tutoriais...
-              url: 'https://docs.microsoft.com/en-us/graph/tutorials'
+              url: /graph/tutorials
         - title: Recursos e comunidade
           links:
             - text: Log de mudanças
@@ -125,7 +125,7 @@ additionalContent:
             - text: Suporte
               url: 'https://developer.microsoft.com/graph/support'
             - text: Microsoft Graph em Q&A
-              url: 'https://docs.microsoft.com/en-us/answers/products/graph'
+              url: /answers/products/graph
             - text: Blog do Microsoft Graph
               url: 'https://developer.microsoft.com/graph/blogs/'
             - text: Vídeos e podcasts

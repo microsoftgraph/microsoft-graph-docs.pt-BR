@@ -1,16 +1,16 @@
 ---
 title: tipo de recurso directoryRole
 description: Representa uma função do diretório do Azure AD. As funções de diretório do AD do Azure também são conhecidas como *funções de administrador*.
-localization_priority: Normal
+ms.localizationpriority: medium
 author: abhijeetsinha
 ms.prod: directory-management
 doc_type: resourcePageType
-ms.openlocfilehash: 701920b532e0c7003e624466c2d8d0614f47989f
-ms.sourcegitcommit: d0d2d17a31cbcb01b1ae18bd6a18c39d7077069a
+ms.openlocfilehash: 012dd2dd0eb703e962e75156760322c15e72c6a0
+ms.sourcegitcommit: bfd1ab7e015ef04cb2ca3fb85d308ba2ce830a89
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/24/2021
-ms.locfileid: "53118697"
+ms.lasthandoff: 01/19/2022
+ms.locfileid: "62072667"
 ---
 # <a name="directoryrole-resource-type"></a>tipo de recurso directoryRole
 
@@ -36,22 +36,22 @@ Esse recurso permite:
 |[Listar membros](../api/directoryrole-list-members.md) |Coleção [directoryObject](directoryobject.md)| Obtenha os usuários que são membros da função directory da propriedade de navegação members.|
 |[Remover um membro](../api/directoryrole-delete-member.md) |[directoryObject](directoryobject.md)| Remova um usuário da função de diretório.|
 |[Ativar directoryRole](../api/directoryrole-post-directoryroles.md) |[directoryRole](directoryrole.md) | Ative uma função de diretório.|
-|[Listar scopeMembers](../api/directoryrole-list-scopedmembers.md) |Coleção [scopedRoleMembership](scopedrolemembership.md)| Listar os membros dessa função de diretório que são escopos para unidades administrativas [,](administrativeunit.md)por meio da coleção de recursos scopedRoleMembership.|
+|[Listar scopeMembers](../api/directoryrole-list-scopedmembers.md) |Coleção [scopedRoleMembership](scopedrolemembership.md)| Liste os membros desta função de diretório que têm como escopo as [unidades administrativas](administrativeunit.md), por meio da coleção de recursos scopedRoleMembership.|
 |[delta](../api/directoryrole-delta.md)|Coleção directoryRole| Obtenha alterações incrementais para as funções de diretório. |
 
 ## <a name="properties"></a>Propriedades
 | Propriedade   | Tipo |Descrição|
 |:---------------|:--------|:----------|
-|description|String|A descrição da função de diretório. Somente leitura. |
-|displayName|String|O nome de exibição da função de diretório. Somente leitura. |
-|id|String|O identificador exclusivo da função de diretório. Herdado de [directoryObject](directoryobject.md). Chave, Não Anulável, Somente Leitura.|
-|roleTemplateId|String| A **id** do [directoryRoleTemplate](directoryroletemplate.md) em que esta função se baseia. A propriedade deve ser especificada ao ativar uma função de diretório em um locatário com uma operação POST. Depois que a função directory tiver sido ativada, a propriedade será somente leitura. |
+|description|Cadeia de caracteres|A descrição da função de diretório. Somente leitura. Suporta `$filter` ( ), , `eq` `$search` `$select` .|
+|displayName|Cadeia de caracteres|O nome de exibição da função de diretório. Somente leitura. Suporta `$filter` ( ), , `eq` `$search` `$select` . |
+|id|Cadeia de caracteres|O identificador exclusivo da função de diretório. Herdado de [directoryObject](directoryobject.md). Chave, Não Anulável, Somente Leitura. Suporta `$filter` ( `eq` ), `$select` .|
+|roleTemplateId|String| A **id** do [directoryRoleTemplate](directoryroletemplate.md) em que esta função se baseia. A propriedade deve ser especificada ao ativar uma função de diretório em um locatário com uma operação POST. Depois que a função directory tiver sido ativada, a propriedade será somente leitura. Suporta `$filter` ( `eq` ), `$select` . |
 
 ## <a name="relationships"></a>Relações
 | Relação | Tipo |Descrição|
 |:---------------|:--------|:----------|
-|membros|Coleção [directoryObject](directoryobject.md)|Usuários que são membros desta função de diretório. Métodos HTTP: GET, POST, DELETE. Somente leitura. Anulável.|
-|scopedMembers|Coleção [scopedRoleMembership](scopedrolemembership.md)| Membros dessa função de diretório com escopo para unidades [administrativas](administrativeunit.md). Somente leitura. Anulável.|
+|membros|Coleção [directoryObject](directoryobject.md)|Usuários que são membros desta função de diretório. Métodos HTTP: GET, POST, DELETE. Somente leitura. Anulável. Suporta o `$expand`.|
+|scopedMembers|Coleção [scopedRoleMembership](scopedrolemembership.md)| Membros dessa função de diretório que têm como escopo [unidades administrativas](administrativeunit.md). Somente leitura. Anulável.|
 
 ## <a name="json-representation"></a>Representação JSON
 

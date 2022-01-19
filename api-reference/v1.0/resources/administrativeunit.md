@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: DougKirschner
 ms.prod: directory-management
 doc_type: resourcePageType
-ms.openlocfilehash: 4228c2f4cb4f7dfcd9087a6c6fcf8e28f6dcdf34
-ms.sourcegitcommit: f65eee432cc903324b5f9b31710fdc6100590f36
+ms.openlocfilehash: a1a75251c52ab74355b07879eeeeb8c7e3bd22a5
+ms.sourcegitcommit: bfd1ab7e015ef04cb2ca3fb85d308ba2ce830a89
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/07/2021
-ms.locfileid: "61321614"
+ms.lasthandoff: 01/19/2022
+ms.locfileid: "62072429"
 ---
 # <a name="administrativeunit-resource-type"></a>Tipo de recurso administrativeUnit
 
@@ -29,9 +29,9 @@ Este tópico fornece descrições das propriedades declaradas e propriedades de 
 | Método   | Tipo de retorno | Descrição |
 |:---------------|:--------|:----------|
 |[Criar](../api/administrativeunit-post-administrativeunits.md) | [administrativeUnit](administrativeunit.md) | Crie uma nova unidade administrativa.|
-|[List](../api/administrativeunit-list.md) | [Coleção administrativeUnit](administrativeunit.md) |Listar propriedades de todas as administrativeUnits.|
+|[Lista](../api/administrativeunit-list.md) | [Coleção administrativeUnit](administrativeunit.md) |Listar propriedades de todas as administrativeUnits.|
 |[Get](../api/administrativeunit-get.md) | [administrativeUnit](administrativeunit.md) |Ler propriedades e relações de um objeto administrativeUnit específico.|
-|[Atualizar](../api/administrativeunit-update.md) | [administrativeUnit](administrativeunit.md)    |Atualizar o objeto administrativeUnit. |
+|[Update](../api/administrativeunit-update.md) | [administrativeUnit](administrativeunit.md)    |Atualizar o objeto administrativeUnit. |
 |[Delete](../api/administrativeunit-delete.md) | Nenhum |Excluir objeto administrativeUnit. |
 |[Adicionar um membro](../api/administrativeunit-post-members.md) |[directoryObject](directoryobject.md)| Adicionar um membro (usuário ou grupo).|
 |[Listar membros](../api/administrativeunit-list-members.md) |Coleção [directoryObject](directoryobject.md)| Obter a lista de membros (usuário e grupo).|
@@ -49,7 +49,7 @@ Este tópico fornece descrições das propriedades declaradas e propriedades de 
 
 | Propriedade     | Tipo   |Descrição|
 |:---------------|:--------|:----------|
-|description|string|Uma descrição opcional para a unidade administrativa. Suporta `$filter` (`eq`, `ne`, `in`, `startsWith`).|
+|description|string|Uma descrição opcional para a unidade administrativa. Suporta `$filter` ( , , , ), `eq` `ne` `in` `startsWith` `$search` .|
 |displayName|string|Nome de exibição da unidade administrativa. Suporta `$filter` (`eq`, `ne`, `not`, `ge`, `le`, `in`, `startsWith`, e `eq` em `null` valores), `$search`, e `$orderBy`.|
 |id|string|Identificador exclusivo da unidade administrativa. Somente leitura. Suporta `$filter` (`eq`).|
 |visibilidade|string|Controla se a unidade administrativa e seus membros estão ocultos ou públicos. Pode ser definido como `HiddenMembership` ou `Public` . Se não estiver definido, o comportamento padrão será `Public` . Quando definido como `HiddenMembership` , somente membros da unidade administrativa podem listar outros membros da unidade administrativa.|
@@ -58,8 +58,8 @@ Este tópico fornece descrições das propriedades declaradas e propriedades de 
 | Relação | Tipo   |Descrição|
 |:---------------|:--------|:----------|
 |extensions|Coleção [extension](extension.md)|A coleção de extensões abertas definidas para essa unidade administrativa. Anulável.|
-|members|Coleção [directoryObject](directoryobject.md)|Usuários e grupos que são membros dessa unidade administrativa. Métodos HTTP: GET (membros da lista), POST (adicionar membros), DELETE (remover membros).|
-|scopedRoleMembers|Coleção [scopedRoleMembership](scopedrolemembership.md)| Membros de função de escopo desta unidade administrativa.  Métodos HTTP: GET (list scopedRoleMemberships), POST (adicionar scopedRoleMembership), DELETE (remover scopedRoleMembership). |
+|members|Coleção [directoryObject](directoryobject.md)|Usuários e grupos que são membros dessa unidade administrativa. Suporta o `$expand`.|
+|scopedRoleMembers|Coleção [scopedRoleMembership](scopedrolemembership.md)| Membros de função de escopo desta unidade administrativa. |
 
 ## <a name="json-representation"></a>Representação JSON
 

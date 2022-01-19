@@ -5,12 +5,12 @@ author: payiAzure
 ms.localizationpriority: medium
 ms.prod: service-communications
 doc_type: apiPageType
-ms.openlocfilehash: 5c22b1020a2c85e5e82616bae217ca09b66b1a5a
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: fe219af5db0d7cda28a52bb65ffdd3ecc3594361
+ms.sourcegitcommit: bfd1ab7e015ef04cb2ca3fb85d308ba2ce830a89
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "60973840"
+ms.lasthandoff: 01/19/2022
+ms.locfileid: "62072672"
 ---
 # <a name="list-issues"></a>Listar problemas
 Namespace: microsoft.graph
@@ -51,7 +51,7 @@ Não forneça um corpo de solicitação para esse método.
 
 ## <a name="response"></a>Resposta
 
-Se tiver êxito, este método retornará um código de resposta e uma `200 OK` coleção de [objetos serviceHealthIssue](../resources/servicehealthissue.md) no corpo da resposta.
+Se tiver êxito, este método retornará um código de resposta e uma `200 OK` coleção de [objetos serviceHealthIssue](../resources/servicehealthissue.md) no corpo da resposta. A resposta é paginada e cada página contém 100 objetos.
 
 ## <a name="example"></a>Exemplo
 
@@ -83,7 +83,7 @@ GET https://graph.microsoft.com/v1.0/admin/serviceAnnouncement/issues
 [!INCLUDE [sample-code](../includes/snippets/java/list-servicehealthissue-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[Go](#tab/go)
+# <a name="go"></a>[Ir](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/list-servicehealthissue-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
@@ -105,6 +105,7 @@ Content-Type: application/json
 
 {
   "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#admin/serviceAnnouncement/issues",
+  "@odata.nextLink": "https://graph.microsoft.com/v1.0/admin/serviceAnnouncement/issues?$skip=100",
   "value": [
     {
       "startDateTime": "2020-11-13T21:00:00Z",

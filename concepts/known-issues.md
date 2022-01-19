@@ -3,12 +3,12 @@ title: Problemas conhecidos com o Microsoft Graph
 description: Este artigo descreve os problemas conhecidos com o Microsoft Graph.
 author: MSGraphDocsVTeam
 ms.localizationpriority: high
-ms.openlocfilehash: bbca6eaa30d28a20d17b2b502357e9eb55abc59a
-ms.sourcegitcommit: 71186ad44d8d0df15e10b0f89df68d2ef0cf9d14
+ms.openlocfilehash: 0321ad71dd1f9604f70eed5c4602610e867ed2fa
+ms.sourcegitcommit: bfd1ab7e015ef04cb2ca3fb85d308ba2ce830a89
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/12/2022
-ms.locfileid: "61791823"
+ms.lasthandoff: 01/19/2022
+ms.locfileid: "62072562"
 ---
 # <a name="known-issues-with-microsoft-graph"></a>Problemas conhecidos com o Microsoft Graph
 
@@ -406,7 +406,7 @@ Em certos casos, a `tenantId` / `email` / `displayName` propriedade para os memb
 A chamada à API para [me/joinedTeams](/graph/api/user-list-joinedteams) retorna apenas as propriedades **id**, **displayName** e **description** de uma [equipe](/graph/api/resources/team). Para obter todas as propriedades, use a operação[obter a equipe](/graph/api/team-get).
 
 ### <a name="installation-of-apps-that-require-resource-specific-consent-permissions-is-not-supported"></a>A instalação de aplicativos que exigem permissões de consentimento específicas do recurso não é compatível
-As chamadas de API a seguir não suportam a instalação de aplicativos que exigem permissões de [consentimento específicas do recurso](https://aka.ms/teams-rsc).
+As chamadas de API a seguir não suportam a instalação de aplicativos que exigem permissões de [consentimento específicas do recurso](/microsoftteams/platform/graph-api/rsc/resource-specific-consent).
 - [Adicionar aplicativo à equipe](/graph/api/team-post-installedapps.md)
 - [Atualizar o aplicativo instalado para a equipe](/graph/api/team-teamsappinstallation-upgrade.md)
 - [Adicionar o aplicativo ao chat](/graph/api/chat-post-installedapps.md)

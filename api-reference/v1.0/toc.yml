@@ -294,7 +294,7 @@ items:
             href: resources/calendar.md
             displayName: 'Outlook, Outlook calendar'
             items:
-              - name: Criar calendário
+              - name: Criar
                 href: api/user-post-calendars.md
               - name: Criar grupo de calendários
                 href: api/user-post-calendargroups.md
@@ -304,7 +304,7 @@ items:
                 href: api/user-findmeetingtimes.md
               - name: Obter agenda de disponibilidade
                 href: api/calendar-getschedule.md
-              - name: Listar calendários
+              - name: List
                 href: api/user-list-calendars.md
               - name: Listar grupos de calendários
                 href: api/user-list-calendargroups.md
@@ -317,11 +317,11 @@ items:
           - name: Contatos
             href: resources/contact.md
             items:
-              - name: Criar contato
+              - name: Criar
                 href: api/user-post-contacts.md
               - name: Criar pasta de contatos
                 href: api/user-post-contactfolders.md
-              - name: Listar contatos
+              - name: List
                 href: api/user-list-contacts.md
               - name: Listar pastas de contatos
                 href: api/user-list-contactfolders.md
@@ -1197,7 +1197,7 @@ items:
                 href: api/calendarpermission-update.md
               - name: Excluir
                 href: api/calendarpermission-delete.md
-          - name: Categories
+          - name: Categorias
             items:
               - name: Categoria
                 href: resources/outlookcategory.md
@@ -4304,6 +4304,13 @@ items:
                     href: api/serviceupdatemessage-favorite.md
                   - name: Remover status favorito
                     href: api/serviceupdatemessage-unfavorite.md
+                  - name: Listar anexos de mensagens
+                    href: api/serviceupdatemessage-list-attachments.md
+              - name: Anexo de comunicado do serviço
+                href: resources/serviceannouncementattachment.md
+                items:
+                  - name: Obter
+                    href: api/serviceannouncementattachment-get.md
       - name: Educação
         items:
           - name: Visão geral
@@ -6257,7 +6264,7 @@ items:
                 href: api/site-list-subsites.md
               - name: Procurar sites
                 href: api/site-search.md
-              - name: Permissions
+              - name: Permissões
                 href: resources/permission.md
                 items:
                   - name: Obter permissão de site
@@ -6486,15 +6493,15 @@ items:
           - name: Equipe
             href: resources/team.md
             items:
-              - name: Criar equipe
+              - name: Criar
                 href: api/team-post.md
               - name: Criar equipe a partir do grupo
                 href: api/team-put-teams.md
-              - name: Obter equipe
+              - name: Obter
                 href: api/team-get.md
-              - name: Atualizar equipe
+              - name: Atualizar
                 href: api/team-update.md
-              - name: Excluir equipe
+              - name: Excluir
                 href: api/group-delete.md
               - name: Listar membros
                 href: api/team-list-members.md
@@ -6525,15 +6532,15 @@ items:
           - name: Grupo (equipe)
             href: resources/group.md
             items:
-              - name: Criar grupo
+              - name: Criar
                 href: api/group-post-groups.md
-              - name: Obter grupo
+              - name: Obter
                 href: api/group-get.md
-              - name: Listar grupos
+              - name: Listar
                 href: api/group-list.md
-              - name: Atualizar grupo
+              - name: Atualizar
                 href: api/group-update.md
-              - name: Excluir grupo
+              - name: Excluir
                 href: api/group-delete.md
               - name: Listar equipes unidas
                 href: api/user-list-joinedteams.md
@@ -6978,7 +6985,7 @@ items:
                 href: api/opentypeextension-post-opentypeextension.md
               - name: Obter extensão aberta
                 href: api/opentypeextension-get.md
-          - name: Tarefas
+          - name: Tarefa
             href: resources/todotask.md
             items:
               - name: Listar tarefas

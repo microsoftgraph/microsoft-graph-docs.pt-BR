@@ -5,12 +5,12 @@ author: AshleyYangSZ
 ms.localizationpriority: medium
 ms.prod: cloud-pc
 doc_type: resourcePageType
-ms.openlocfilehash: 578ff7285803aa5cf86dc779dd771622045a2e88
-ms.sourcegitcommit: e1dd9860906e0b415fd376d70df1f928d1f3d29e
+ms.openlocfilehash: 4b794e91a5bf884214c254a6be7d4a3bc7abacc0
+ms.sourcegitcommit: bfd1ab7e015ef04cb2ca3fb85d308ba2ce830a89
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/01/2021
-ms.locfileid: "61241391"
+ms.lasthandoff: 01/19/2022
+ms.locfileid: "62072111"
 ---
 # <a name="cloudpconpremisesconnectionhealthcheck-resource-type"></a>Tipo de recurso cloudPcOnPremisesConnectionHealthCheck
 
@@ -20,7 +20,7 @@ Namespace: microsoft.graph
 
 O resultado de uma verificação de saúde de conexão local do computador na nuvem.
 
-## <a name="methods"></a>Métodos
+## <a name="methods"></a>Methods
 
 |Método|Tipo de retorno|Descrição|
 |:---|:---|:---|
@@ -35,14 +35,15 @@ O resultado de uma verificação de saúde de conexão local do computador na nu
 |startDateTime|DateTimeOffset|A hora de início do item de verificação de saúde. Somente leitura.|
 |endDateTime|DateTimeOffset|A hora de término do item de verificação de saúde. Somente leitura.|
 |errorType|[cloudPcOnPremisesConnectionHealthCheckErrorType](#cloudpconpremisesconnectionhealthcheckerrortype-values)|O tipo de erro que ocorreu durante essa verificação de saúde.|
-|recommendedAction|Cadeia de Caracteres|A ação recomendada para corrigir o erro correspondente.|
-|additionalDetails|Cadeia de Caracteres|Detalhes adicionais sobre a verificação de saúde ou a ação recomendada.|
+|recommendedAction|Cadeia de caracteres|A ação recomendada para corrigir o erro correspondente.|
+|additionalDetails|Cadeia de caracteres|Detalhes adicionais sobre a verificação de saúde ou a ação recomendada.|
 
 ### <a name="cloudpconpremisesconnectionhealthcheckerrortype-values"></a>valores cloudPcOnPremisesConnectionHealthCheckErrorType
 
 |Member|Descrição|
 |:---|:---|
 |dnsCheckFqdnNotFound|A resolução DNS falhou para o nome de domínio. Possíveis causas de erro: 1. O servidor DNS do Azure vNet especificado não pode resolver o nome de domínio. Atualize a vNet com um servidor DNS apropriado; 2. O nome de domínio fornecido não existe ou não está correto. Atualize a conexão de rede local com o nome de domínio correto. Verifique se a vNet definida na conexão de rede local pode resolver o nome de domínio.|
+|dnsCheckNameWithInvalidCharacter|A verificação DNS falhou porque o nome de domínio inserido contém um caractere sem suporte. Verifique se o nome de domínio contém apenas caracteres com suporte.|
 |dnsCheckUnknownError|A resolução DNS falhou para o nome de domínio. Possíveis causas de erro: 1. O servidor DNS do Azure vNet especificado não pode resolver o nome de domínio. Atualize a vNet com um servidor DNS apropriado; 2. O nome de domínio fornecido não existe ou não está correto. Atualize a conexão de rede local com o nome de domínio correto. Verifique se a vNet definida na conexão de rede local pode resolver o nome de domínio.|
 |adJoinCheckFqdnNotFound|A verificação de junção de domínio falhou porque o nome de domínio não pôde ser encontrado. Verifique se um controlador de domínio para o nome de domínio pode ser contatado pela vNet definida na conexão de rede local.|
 |adJoinCheckIncorrectCredentials|A verificação de junção de domínio falhou porque as credenciais fornecidas para o domínio não estão corretas. Atualize a conexão de rede local com credenciais corretas.|
@@ -62,6 +63,7 @@ O resultado de uma verificação de saúde de conexão local do computador na nu
 |azureAdDeviceSyncCheckLongSyncCircle|A verificação se o objeto do computador do computador na nuvem foi sincronizado com Azure Active Directory (Azure AD) foi o tempo de tempo. Certifique-se de que a conexão do Azure AD funcione e sincronize com frequência para que os objetos do computador do computador na nuvem sejam sincronizados com o Azure AD. A sincronização de dispositivos do Azure AD deve ser habilitada e sincronizada nos últimos 60 minutos.|
 |azureAdDeviceSyncCheckConnectDisabled|A Azure Active Directory de sincronização do dispositivo (Azure AD) falhou porque o Conexão do Azure AD está desabilitado. Verifique se a Conexão do Azure AD está habilitada e sincroniza com frequência. Se o Azure AD Conexão não sincronizar o computador em 60 minutos, a verificação falhará.|
 |azureAdDeviceSyncCheckDurationExceeded|A Azure Active Directory de sincronização do dispositivo (Azure AD) falhou porque a sincronização de Conexão do Azure AD não foi sincronizada dentro de 60 minutos. Verifique se a Conexão do Azure AD está habilitada e sincroniza com frequência. Se o Azure AD Conexão não sincronizar o computador em 60 minutos, a verificação falhará.|
+|azureAdDeviceSyncCheckScpNotConfigured|A junção Azure Active Directory Híbrida (Azure AD) falhou devido a erros de configuração no Ponto de Configuração do Serviço (SCP). Verifique se sua configuração SCP é válida e disponível para executar uma junção híbrida do Azure AD. Seu SCP pode ser criado e configurado no assistente de Conexão do Azure AD.|
 |azureAdDeviceSyncCheckTransientServiceError|A Azure Active Directory de sincronização de dispositivos (Azure AD) falhou devido a um erro transitório. Tente novamente. Se o problema persistir, entre em contato com o suporte do cliente.|
 |azureAdDeviceSyncCheckUnknownError|Falha na Azure Active Directory de conectividade híbrida (Azure AD). Certifique-se de que a conexão do Azure AD funcione e sincronize com frequência para que os objetos do computador do computador na nuvem sejam sincronizados com o Azure AD. A sincronização de dispositivos do Azure AD deve ser habilitada e sincronizada nos últimos 60 minutos.|
 |resourceAvailabilityCheckNoSubnetIP|A sub-rede fornecida não tem endereços IP disponíveis. Verifique se a sub-rede fornecida na conexão de rede local tem endereços IP suficientes disponíveis. Expanda a sub-rede selecionada atual ou selecione uma sub-rede diferente a ser usada para provisionamento.|

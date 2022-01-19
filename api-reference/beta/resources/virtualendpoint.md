@@ -5,12 +5,12 @@ author: AshleyYangSZ
 ms.localizationpriority: medium
 ms.prod: cloud-pc
 doc_type: resourcePageType
-ms.openlocfilehash: 395919dd0ee9b0a2399f991e58d9d10ec81fee5a
-ms.sourcegitcommit: c00c61ce35a6f204a9907aa6f2644ea7a86a5b6e
+ms.openlocfilehash: c616d3894b5c9efaf356e28879edc067d7d3ffcd
+ms.sourcegitcommit: bfd1ab7e015ef04cb2ca3fb85d308ba2ce830a89
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/06/2021
-ms.locfileid: "60805392"
+ms.lasthandoff: 01/19/2022
+ms.locfileid: "62072254"
 ---
 # <a name="virtualendpoint-resource-type"></a>Tipo de recurso virtualEndpoint
 
@@ -22,11 +22,11 @@ Representa um contêiner para APIs gerenciar o Cloud PC.
 
 Use a API do Cloud PC para provisionar e gerenciar áreas de trabalho virtuais para funcionários em uma organização. Use-o em conjunto com a [API do Intune](../resources/intune-graph-overview.md) para gerenciar pontos de extremidade físicos e virtuais.
 
-## <a name="methods"></a>Métodos
+## <a name="methods"></a>Methods
 
 |Método|Tipo de retorno|Descrição|
 |:---|:---|:---|
-|[Obter permissões efetivas](../api/virtualendpoint-geteffectivepermissions.md)|String collection|Exibir as permissões efetivas do usuário autenticado no momento.|
+|[Obter permissões efetivas](../api/virtualendpoint-geteffectivepermissions.md)|Coleção de cadeias de caracteres|Exibir as permissões efetivas do usuário autenticado no momento.|
 |[Listar cloudPCs](../api/virtualendpoint-list-cloudpcs.md)|[Coleção cloudPC](../resources/cloudpc.md)|Listar propriedades e relações dos objetos [cloudPC.](../resources/cloudpc.md)|
 |[Listar deviceImages](../api/virtualendpoint-list-deviceimages.md)|[Coleção cloudPcDeviceImage](../resources/cloudpcdeviceimage.md)|Listar as propriedades e as relações dos [objetos cloudPcDeviceImage.](../resources/cloudpcdeviceimage.md)|
 |[List galleryImages](../api/virtualendpoint-list-galleryimages.md)|[Coleção cloudPcGalleryImage](../resources/cloudpcgalleryimage.md)|Listar as propriedades e as relações dos [objetos cloudPcGalleryImage.](../resources/cloudpcgalleryimage.md)|
@@ -60,6 +60,7 @@ Use a API do Cloud PC para provisionar e gerenciar áreas de trabalho virtuais p
 |auditEvents|[Coleção cloudPcAuditEvent](../resources/cloudpcauditevent.md)|Evento de auditoria de computador na nuvem.|
 |supportedRegions|[coleção cloudPcSupportedRegion](../resources/cloudpcsupportedregion.md)|Regiões com suporte para computador na nuvem.|
 |servicePlans|[Coleção cloudPcServicePlan](../resources/cloudpcserviceplan.md)|Planos de serviço de computador na nuvem.|
+|organizationSettings|[cloudPcOrganizationSettings](../resources/cloudpcorganizationsettings.md) |As configurações da organização do Cloud PC para um locatário. |
 
 ## <a name="json-representation"></a>Representação JSON
 

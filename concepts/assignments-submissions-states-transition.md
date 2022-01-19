@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: cristobal-buenrostro
 ms.prod: education
 doc_type: conceptualPageType
-ms.openlocfilehash: 97e75c7ef87d47c0359d6b8d6a5e5db2bb21a518
-ms.sourcegitcommit: 12f07c009c57db3cc9174b165b5ec30195c00996
+ms.openlocfilehash: 456c2c8351521146f7160d65b6b0d2dff37d31dc
+ms.sourcegitcommit: bfd1ab7e015ef04cb2ca3fb85d308ba2ce830a89
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/30/2021
-ms.locfileid: "61647004"
+ms.lasthandoff: 01/19/2022
+ms.locfileid: "62072065"
 ---
 # <a name="states-transitions-and-limitations-for-assignments-and-submissions-in-microsoft-graph"></a>Estados, transições e limitações para atribuições e envios no Microsoft Graph
 
@@ -23,10 +23,10 @@ Uma atribuição representa uma tarefa ou unidade de trabalho atribuída a um al
 | Estado | Descrição | Chamada da API REST |
 |:--|:--|:--|
 | Rascunho | Status inicial quando uma nova atribuição é criada ou copiada de uma atribuição existente. | `POST /education/classes/{id}/assignments` |
-| Published | Um estado de processamento em segundo plano quando a atribuição é distribuída a cada aluno atribuído. | `POST /education/classes/{id}/assignments/{id}/publish` |
+| Publicado | Um estado de processamento em segundo plano quando a atribuição é distribuída a cada aluno atribuído. | `POST /education/classes/{id}/assignments/{id}/publish` |
 | Agendada | Status quando o professor agendou a atribuição para publicar em uma hora futura. | `PATCH /education/classes/{id}/assignments/{id}`<br/>`POST /education/classes/{id}/assignments/{id}/publish` |
 | Atribuído | Depois de concluir a publicação, a atribuição é movida para o estado Atribuído e está disponível para os alunos. | `POST /education/classes/{id}/assignments/{id}/publish` |
-| Pending | Status do processamento em segundo plano quando uma nova atribuição está sendo copiada de uma tarefa existente. | `POST /education/classes/{id}/assignments/{id}/copy`<br/>`PATCH /education/classes/{id}/assignments/{id}` |
+| Pendente | Status do processamento em segundo plano quando uma nova atribuição está sendo copiada de uma tarefa existente. | `POST /education/classes/{id}/assignments/{id}/copy`<br/>`PATCH /education/classes/{id}/assignments/{id}` |
 
 O diagrama a seguir mostra as transições de estado que podem ocorrer para atribuições.
 
@@ -39,17 +39,17 @@ O chamador deve usar a operação [de atribuição GET](/graph/api/educationassi
 | Estado atual da atribuição | Ação | Novo estado |
 |:--|:--|:--|
 | Rascunho | O professor agenda a atribuição | Agendada |
-| Rascunho | Publicar | Published |
+| Rascunho | Publicar | Publicado |
 | Rascunho | Editado | Rascunho |
 | Rascunho | Descartado | | 
-| Published | Publicar concluído | Atribuído |
-| Published | Descartado | |
-| Agendada | Alcançar a data de vencimento | Published |
+| Publicado | Publicar concluído | Atribuído |
+| Publicado | Descartado | |
+| Agendada | Alcançar a data de vencimento | Publicado |
 | Agendada | Cancelar agendamento | Rascunho |
 | Agendada | Reagendar | Agendada |
 | Atribuído | Descartado | |
-| Pending | Cópia concluída | Rascunho |
-| Pending | Descartado | |   
+| Pendente | Cópia concluída | Rascunho |
+| Pendente | Descartado | |   
 
 `Note: Any action and state transition not listed in the table is NOT allowed`
 
@@ -118,4 +118,4 @@ Os seguintes limites se aplicam a todas as chamadas de API:
 
 * O número máximo de recursos de atribuições e envios é 10 para o professor e mais 10 para o aluno.
 * O tamanho máximo permitido para recursos é de 50 MB ou 10 recursos.
-* Limites de limitação se aplicam; para obter detalhes, consulte [Diretrizes](https://docs.microsoft.com/graph/throttling)de Graph de Graph da Microsoft.
+* Limites de limitação se aplicam; para obter detalhes, consulte [Diretrizes](/graph/throttling)de Graph de Graph da Microsoft.

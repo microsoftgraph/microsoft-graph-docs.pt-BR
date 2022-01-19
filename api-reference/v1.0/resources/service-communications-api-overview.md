@@ -5,12 +5,12 @@ author: payiAzure
 ms.localizationpriority: medium
 ms.prod: service-communications
 doc_type: resourcePageType
-ms.openlocfilehash: 4fd39d5e488ba8abb459657a21e00fcd60940657
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: d876a179530cb2a7e29de12b0a5499de1dd34e9d
+ms.sourcegitcommit: bfd1ab7e015ef04cb2ca3fb85d308ba2ce830a89
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59019157"
+ms.lasthandoff: 01/19/2022
+ms.locfileid: "62072695"
 ---
 # <a name="working-with-service-communications-api-in-microsoft-graph"></a>Trabalhando com a API de comunicações de serviço no Microsoft Graph
 A API de comunicações de serviço fornece postagens de centro de mensagens e de saúde do serviço pertencentes aos serviços de nuvem da Microsoft inscritos pelo locatário. Você pode obter dados de saúde atuais e históricos de um serviço da Microsoft (por exemplo, o serviço Exchange Online está para baixo). Você pode verificar a saúde do serviço para determinar se um problema foi rastreado e uma resolução está em andamento antes de chamar o suporte ou passar o tempo solucionando problemas. As postagens da central de mensagens permitem que você acompanhe as alterações futuras, incluindo novos recursos, atualizações e outros comunicados importantes (por exemplo, Exchange Online está recebendo um novo recurso).
@@ -52,6 +52,10 @@ A API de comunicações de serviço também está disponível Graph nuvem nacion
 |Microsoft Graph para o Us Government L5 (DoD)|https://dod-graph.microsoft.us/v1.0/admin/serviceAnnouncement/|
 |Microsoft Graph Alemanha|https://graph.microsoft.de/v1.0/admin/serviceAnnouncement/|
 |Microsoft Graph China operado pela 21Vianet|https://microsoftgraph.chinacloudapi.cn/v1.0/admin/serviceAnnouncement/|
+
+## <a name="service-communications-limits"></a>Limites de comunicações de serviço
+
+Para garantir o desempenho do serviço, a API de comunicações de serviço tem limites de limitação para as solicitações por locatário por aplicativo. Para obter detalhes sobre os limites, consulte limitação de limites [para o serviço de comunicações de serviço](/graph/throttling#service-communications-service-limits).
 
 ## <a name="whats-new"></a>Novidades
 Saiba mais sobre os [novos recursos e atualizações mais recentes](/graph/whats-new-overview) para este conjunto de APIs.

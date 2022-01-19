@@ -5,12 +5,12 @@ author: aarononeal
 ms.localizationpriority: medium
 ms.prod: w10
 doc_type: conceptualPageType
-ms.openlocfilehash: 47347e9d476b2a8c73a04d84ab83298140da001f
-ms.sourcegitcommit: 71186ad44d8d0df15e10b0f89df68d2ef0cf9d14
+ms.openlocfilehash: 3f3dd0a1da1c6426c8415fe3c6f37767d1613627
+ms.sourcegitcommit: bfd1ab7e015ef04cb2ca3fb85d308ba2ce830a89
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/12/2022
-ms.locfileid: "61854710"
+ms.lasthandoff: 01/19/2022
+ms.locfileid: "62072233"
 ---
 # <a name="software-updates-with-the-windows-update-for-business-deployment-service"></a>Atualizações de software com o serviço de implantação Windows Update for Business
 
@@ -26,7 +26,7 @@ O catálogo de serviços [de implantação](/graph/api/resources/windowsupdates-
 
 Efetivamente, o serviço de implantação atualmente  implanta apenas atualizações de recursos e atualizações de qualidade de segurança, conforme definido em seu catálogo. No momento, o serviço não implanta atualizações de qualidade não segurança ou atualizações de driver.
 
-Para saber mais sobre Windows 10 atualizações e manutenção, consulte [Guia rápido para Windows como serviço](https://docs.microsoft.com/windows/deployment/update/waas-quick-start).
+Para saber mais sobre Windows 10 atualizações e manutenção, consulte [Guia rápido para Windows como serviço](/windows/deployment/update/waas-quick-start).
 
 ## <a name="identifying-updates-for-deployment"></a>Identificar atualizações para implantação
 
@@ -41,7 +41,7 @@ Por exemplo, as duas atualizações de qualidade de segurança a seguir são con
 
 No catálogo fornecido pelo serviço de implantação Windows Update for Business, essas atualizações são agregadas em uma única entrada.
 
-| Nome                                           | Tipo                                                     |
+| Nome de exibição                                           | Tipo                                                     |
 |--------------------------------------------------------|----------------------------------------------------------|
 | 03/09/2021 - Atualizações de segurança de 2021.03 B para Windows 10 | microsoft.graph.windowsUpdates.qualityUpdateCatalogEntry |
 

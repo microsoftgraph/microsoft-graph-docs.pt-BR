@@ -4,12 +4,12 @@ description: Saiba mais sobre os modelos de licenciamento e pagamento que se apl
 author: nkramer
 ms.localizationpriority: high
 ms.prod: microsoft-teams
-ms.openlocfilehash: ca09c2fbfe2256f7858e12ed3ac3566025bfca2a
-ms.sourcegitcommit: 1a607ea5bee096944e0fea14167d372f1ff652f6
+ms.openlocfilehash: 8edb5bc5e35c5c48d61a8e1d48ca724f023a5d8d
+ms.sourcegitcommit: bfd1ab7e015ef04cb2ca3fb85d308ba2ce830a89
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/16/2021
-ms.locfileid: "61545312"
+ms.lasthandoff: 01/19/2022
+ms.locfileid: "62072653"
 ---
 # <a name="licensing-and-payment-requirements-for-microsoft-teams-apis-in-microsoft-graph"></a>Requisitos de licenciamento e pagamento para APIs do Microsoft Teams no Microsoft Graph
 
@@ -64,7 +64,7 @@ No modo de avaliação, a capacidade de propagação é compartilhada em todas a
 
 ## <a name="required-licenses-for-modela"></a>Licenças necessárias para `model=A` 
 
-O usuário precisará de uma das [licenças com suporte.](https://aka.ms/teams-api-license-list) Qual usuário precisa da licença varia de acordo com a API; para obter detalhes, consulte os [`model=A` requisitos](#modela-requirements).
+O usuário precisará de uma das [licenças com suporte.](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#microsoft-graph-apis-for-teams-data-loss-prevention-dlp-and-for-teams-export) Qual usuário precisa da licença varia de acordo com a API; para obter detalhes, consulte os [`model=A` requisitos](#modela-requirements).
 
 Os usuários convidados estão isentos desses requisitos de licenciamento.
 Da mesma forma, as mensagens enviadas de fora do locatário (chat federado) são isentas.

@@ -5,19 +5,19 @@ author: payiAzure
 ms.localizationpriority: medium
 ms.prod: service-communications
 doc_type: apiPageType
-ms.openlocfilehash: b14b8deba65ac1aefba9d5af3d4ae1fd3e48b7a5
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 830323ea57d7932d0f8d95750e5d217d892c10a8
+ms.sourcegitcommit: bfd1ab7e015ef04cb2ca3fb85d308ba2ce830a89
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59113935"
+ms.lasthandoff: 01/19/2022
+ms.locfileid: "62072583"
 ---
 # <a name="servicehealthissue-incidentreport"></a>serviceHealthIssue: incidentReport
 Namespace: microsoft.graph
 
-Forneça o documento PIR (Revisão pós-incidente) de um problema de serviço especificado para locatário.
+Forneça o documento PIR (Revisão pós-incidente) de um problema de serviço especificado para locatário. 
 
-A operação retornará um erro se o problema especificado não existir para o locatário.
+Um problema apenas com o status de `PostIncidentReviewPublished` indica que o documento PIR existe para o problema. A operação retornará um erro se o problema especificado não existir para o locatário ou se o documento PIR não existir para o problema.
 
 ## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).

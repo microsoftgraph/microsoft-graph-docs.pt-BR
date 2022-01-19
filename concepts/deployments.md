@@ -3,12 +3,12 @@ title: Implantações de nuvens nacionais
 description: Além de uma rede global de datacenters, os serviços em nuvem da Microsoft estão disponíveis em três nuvens nacionais separadas.
 author: arpitha-dhanapathi
 ms.localizationpriority: medium
-ms.openlocfilehash: 9ee8d310017162035b8af5ea40c21f35e80d03a5
-ms.sourcegitcommit: f336c5c49fbcebe55312656aa8b50511fd99a657
+ms.openlocfilehash: 28e8e422d121651787dca2f4adf0a153baed072a
+ms.sourcegitcommit: bfd1ab7e015ef04cb2ca3fb85d308ba2ce830a89
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/09/2021
-ms.locfileid: "61390708"
+ms.lasthandoff: 01/19/2022
+ms.locfileid: "62072527"
 ---
 # <a name="national-cloud-deployments"></a>Implantações de nuvem nacional
 
@@ -73,6 +73,7 @@ Os seguintes recursos do Microsoft Graph estão geralmente disponíveis no ponto
 
 | Recursos Graph Microsoft | Microsoft Cloud para o Governo dos EUA | Microsoft Cloud China operado pela 21Vianet | Microsoft Cloud Germany |
 | ------------------------ | --------------------------------- | ------------------------------------------ | ----------------------- |
+| Avaliações do acesso | ✔ | ✔ | ➖ |
 | Aplicativos | ✔ | ➖ | ➖ |
 | Alterar notificações (Webhooks) | ✔ | ✔ | ✔\* |
 | Consulta delta | ✔ | ✔ | ➖ |
@@ -95,7 +96,7 @@ Os seguintes recursos do Microsoft Graph estão geralmente disponíveis no ponto
 | Teams | ✔ | ✔ | ✔ |
 | Usuários | ✔ | ✔ | ✔ |
 
-Os seguintes recursos do Microsoft Graph estão disponíveis na visualização (no ponto de extremidade) no Microsoft Cloud China e no Microsoft Cloud Germany (pontos de extremidade V1.0 para esses recursos estão disponíveis somente `/beta` no Microsoft Cloud for US Government):
+Os seguintes recursos do Microsoft Graph estão disponíveis na visualização (no ponto de extremidade) no Microsoft Cloud China e no Microsoft Cloud Germany (pontos de extremidade v1.0 para esses recursos estão disponíveis somente `/beta` Microsoft Cloud for US Government):
 
 * Contatos organizacionais
 * Aplicativos

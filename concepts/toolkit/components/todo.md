@@ -3,12 +3,12 @@ title: To Do componente no microsoft Graph Toolkit
 description: O To Do componente permite ao usuário exibir, adicionar, remover, concluir ou editar todas as tarefas. Ele funciona com qualquer tarefa no Microsoft To-Do.
 ms.localizationpriority: medium
 author: shweaver-MSFT
-ms.openlocfilehash: 4c2b54d0c6b5307762d38a9cb204a896aaaa4e9d
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: de9c49937b3db76c2d93c308b88d03ec577f76ed
+ms.sourcegitcommit: bfd1ab7e015ef04cb2ca3fb85d308ba2ce830a89
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59129625"
+ms.lasthandoff: 01/19/2022
+ms.locfileid: "62072688"
 ---
 # <a name="to-do-component-in-the-microsoft-graph-toolkit"></a>To Do componente no microsoft Graph Toolkit
 
@@ -33,8 +33,8 @@ Você pode usar os seguintes atributos e propriedades para personalizar o compon
 | hide-options | hideOptions | Um Boolean para mostrar ou ocultar as opções em tarefas. O padrão é `false`.
 | initial-id="folder_id" | initialId | Uma ID de cadeia de caracteres para definir a pasta inicialmente exibida como a ID fornecida. |
 | target-id="folder_id"| targetId | Uma ID de cadeia de caracteres para bloquear a interface de tarefas na ID da pasta fornecida. |
-| N/A | isNewTaskVisible  | Determina se o novo exibição de tarefa está visível na renderização. |
-| N/A | taskFilter  | Uma função opcional para filtrar quais tarefas são mostradas ao usuário. |
+| N/D | isNewTaskVisible  | Determina se o novo exibição de tarefa está visível na renderização. |
+| N/D | taskFilter  | Uma função opcional para filtrar quais tarefas são mostradas ao usuário. |
 
 O exemplo a seguir mostra apenas tarefas da pasta com a ID *12345* e não permite que o usuário crie novas tarefas.
 
@@ -93,9 +93,9 @@ mgt-todo {
 }
 ````
 
-Para saber mais, confira [componentes de estilo](https://docs.microsoft.com/graph/toolkit/style.md).
+Para saber mais, confira [componentes de estilo](/graph/toolkit/style.md).
 
-## <a name="events"></a>Events
+## <a name="events"></a>Eventos
 
 Os eventos a seguir são disparados do componente.
 
