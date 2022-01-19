@@ -5,12 +5,12 @@ ms.localizationpriority: high
 author: abhijeetsinha
 ms.prod: directory-management
 doc_type: resourcePageType
-ms.openlocfilehash: 3effb90d2ddeffccd59de35b04295fc83b86e5f8
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 051278a83d0d45a87ec397ca3c7fdf2fb80b1a24
+ms.sourcegitcommit: bfd1ab7e015ef04cb2ca3fb85d308ba2ce830a89
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59089743"
+ms.lasthandoff: 01/19/2022
+ms.locfileid: "62072660"
 ---
 # <a name="directoryrole-resource-type"></a>tipo de recurso directoryRole
 
@@ -38,15 +38,15 @@ Esse recurso permite:
 ## <a name="properties"></a>Propriedades
 | Propriedade   | Tipo | Descrição |
 |:---------------|:--------|:----------|
-|description|String|A descrição da função de diretório. Somente leitura. |
-|displayName|String|O nome de exibição da função de diretório. Somente leitura. |
-|id|String|O identificador exclusivo da função de diretório. Herdado de [directoryObject](directoryobject.md). Chave, Não Anulável, Somente Leitura.|
-|roleTemplateId|String| A **id** do [directoryRoleTemplate](directoryroletemplate.md) em que esta função se baseia. A propriedade deve ser especificada ao ativar uma função de diretório em um locatário com uma operação POST. Depois que a função directory tiver sido ativada, a propriedade será somente leitura. |
+|description|Cadeia de caracteres|A descrição da função de diretório. Somente leitura. Suporta `$filter` (`eq`), `$search`, `$select`. |
+|displayName|Cadeia de caracteres|O nome de exibição da função de diretório. Somente leitura. Suporta `$filter` (`eq`), `$search`, `$select`. |
+|id|Cadeia de caracteres|O identificador exclusivo da função de diretório. Herdado de [directoryObject](directoryobject.md). Chave, Não Anulável, Somente Leitura. Suporta `$filter` (`eq`), `$select`.|
+|roleTemplateId|String| A **id** do [directoryRoleTemplate](directoryroletemplate.md) em que esta função se baseia. A propriedade deve ser especificada ao ativar uma função de diretório em um locatário com uma operação POST. Depois que a função directory tiver sido ativada, a propriedade será somente leitura. Suporta `$filter` (`eq`), `$select`. |
 
 ## <a name="relationships"></a>Relações
 | Relação | Tipo |Descrição|
 |:---------------|:--------|:----------|
-|membros|Coleção [directoryObject](directoryobject.md)|Usuários que são membros desta função de diretório. Métodos HTTP: GET, POST, DELETE. Somente leitura. Anulável.|
+|membros|Coleção [directoryObject](directoryobject.md)|Usuários que são membros desta função de diretório. Métodos HTTP: GET, POST, DELETE. Somente leitura. Anulável. Suporta o `$expand`.|
 |scopedMembers|Coleção [scopedRoleMembership](scopedrolemembership.md)| Membros dessa função de diretório que têm como escopo [unidades administrativas](administrativeunit.md). Somente leitura. Anulável.|
 
 ## <a name="json-representation"></a>Representação JSON
