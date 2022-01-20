@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: madehmer
 ms.prod: insights
 doc_type: apiPageType
-ms.openlocfilehash: 6b31c5abb34508431b86d9b57c54fa88c0f29ccd
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: 90fb0debd148edc4d3e3c4db8ca161f54cbf125a
+ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "60987625"
+ms.lasthandoff: 01/20/2022
+ms.locfileid: "62109991"
 ---
 # <a name="list-activitystatistics"></a>Listar activityStatistics
 
@@ -89,8 +89,12 @@ GET https://graph.microsoft.com/beta/me/analytics/activitystatistics
 [!INCLUDE [sample-code](../includes/snippets/java/get-activitystatistics-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[Go](#tab/go)
+# <a name="go"></a>[Ir](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/get-activitystatistics-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/get-activitystatistics-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

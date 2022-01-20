@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: abhijeetsinha
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: bd7ceb47c3a1d95264405a3d72ef140742c63933
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: c53d2913442ee94ddb8560b4a57a87cea827889c
+ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "61008486"
+ms.lasthandoff: 01/20/2022
+ms.locfileid: "62091460"
 ---
 # <a name="update-unifiedroledefinition"></a>Atualizar unifiedRoleDefinition
 
@@ -56,7 +56,7 @@ A tabela a seguir mostra as propriedades que são necessárias ao atualizar [uni
 |isEnabled|Booliano| Sinalizador indicando se a função está habilitada para atribuição. Se `false` , a função não está disponível para atribuição. Somente leitura quando **isBuiltIn** for true. |
 |resourceScopes|Coleção de cadeias de caracteres| Lista de escopos e permissões às que a definição de função se aplica. Atualmente, `/` só há suporte. Somente leitura quando **isBuiltIn** for true. **NÃO USE. Essa propriedade será preterida em breve. Anexar escopo à atribuição de função.**|
 |rolePermissions|[Coleção unifiedRolePermission](../resources/unifiedrolepermission.md)| Lista de permissões incluídas na função. Somente leitura quando **isBuiltIn** é `true` . Obrigatório. |
-|templateId|String| Identificador de modelo personalizado que pode ser definido **quando isBuiltIn** é `false` . Esse identificador normalmente é usado se um identificador precisa ser o mesmo em diretórios diferentes. Somente leitura quando **isBuiltIn** é `true` . |
+|templateId|Cadeia de caracteres| Identificador de modelo personalizado que pode ser definido **quando isBuiltIn** é `false` . Esse identificador normalmente é usado se um identificador precisa ser o mesmo em diretórios diferentes. Somente leitura quando **isBuiltIn** é `true` . |
 |versão|String| Indica a versão da definição de função. Somente leitura quando **isBuiltIn** é `true` .|
 
 ## <a name="response"></a>Resposta
@@ -111,8 +111,12 @@ Content-type: application/json
 [!INCLUDE [sample-code](../includes/snippets/java/update-unifiedroledefinition-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[Go](#tab/go)
+# <a name="go"></a>[Ir](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/update-unifiedroledefinition-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/update-unifiedroledefinition-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

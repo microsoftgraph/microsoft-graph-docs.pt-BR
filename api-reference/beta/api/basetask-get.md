@@ -5,12 +5,12 @@ author: devindrajit
 ms.localizationpriority: medium
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: becd5610b4b490a0074647daa038f58cb41d5e22
-ms.sourcegitcommit: c47e3d1f3c5f7e2635b2ad29dfef8fe7c8080bc8
+ms.openlocfilehash: 4418b5b628bf797f36d85aca99576e1455cfb948
+ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/15/2021
-ms.locfileid: "61524788"
+ms.lasthandoff: 01/20/2022
+ms.locfileid: "62109774"
 ---
 # <a name="get-basetask"></a>Obter baseTask
 Namespace: microsoft.graph
@@ -19,13 +19,13 @@ Namespace: microsoft.graph
 
 Leia as propriedades e as relações de um [objeto baseTask.](../resources/basetask.md)
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão|Permissões (da com menos para a com mais privilégios)|
 |:---|:---|
 |Delegado (conta corporativa ou de estudante)|Tasks.Read, Tasks.ReadWrite|
-|Delegada (conta pessoal da Microsoft)|Tasks.Read, Tasks.ReadWrite|
+|Delegado (conta pessoal da Microsoft)|Tasks.Read, Tasks.ReadWrite|
 |Aplicativo|Sem suporte|
 
 ## <a name="http-request"></a>Solicitação HTTP
@@ -84,6 +84,10 @@ GET https://graph.microsoft.com/beta/me/tasks/lists/AAMkAGVjMzJmMWZjLTgyYjgtNGIy
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/get-basetask-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[Ir](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/get-basetask-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

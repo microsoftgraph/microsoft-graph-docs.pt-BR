@@ -6,12 +6,12 @@ title: Criar uma nova página em um SharePoint site
 ms.localizationpriority: medium
 ms.prod: sharepoint
 doc_type: apiPageType
-ms.openlocfilehash: 3b6119aaff157ea56f701437829b2aabce032a5d
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: 9b88cd2d85e03e2765e4b8af2e4f41ce7f6f664a
+ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "61014094"
+ms.lasthandoff: 01/20/2022
+ms.locfileid: "62111687"
 ---
 # <a name="create-a-page-in-the-site-pages-list-of-a-site"></a>Criar uma página na lista de páginas do site de um site
 
@@ -113,8 +113,12 @@ Content-Type: application/json
 [!INCLUDE [sample-code](../includes/snippets/csharp/create-page-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[Go](#tab/go)
+# <a name="go"></a>[Ir](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/create-page-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/create-page-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

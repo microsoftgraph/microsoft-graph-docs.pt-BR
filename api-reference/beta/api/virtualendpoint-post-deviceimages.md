@@ -5,12 +5,12 @@ author: AshleyYangSZ
 ms.localizationpriority: medium
 ms.prod: cloud-pc
 doc_type: apiPageType
-ms.openlocfilehash: 17b919a4378d95a87a6fc30baa525ed6439c2830
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: 174cb16055f1979ac322b2c2bd667ddcd941038e
+ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "61019266"
+ms.lasthandoff: 01/20/2022
+ms.locfileid: "62122530"
 ---
 # <a name="create-cloudpcdeviceimage"></a>Criar cloudPcDeviceImage
 
@@ -57,10 +57,10 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar [o cloud
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
 |displayName|Cadeia de caracteres|O nome de exibição da imagem.|
-|sourceImageResourceId|String|A ID do recurso de imagem de origem no Azure. Formato obrigatório: "/subscriptions/{subscription-id}/resourceGroups/{resourceGroupName}/providers/Microsoft.Compute/images/{imageName}".|
+|sourceImageResourceId|Cadeia de caracteres|A ID do recurso de imagem de origem no Azure. Formato obrigatório: "/subscriptions/{subscription-id}/resourceGroups/{resourceGroupName}/providers/Microsoft.Compute/images/{imageName}".|
 |operatingSystem|String|O sistema operacional da imagem. Por exemplo: Windows 10 Enterprise.|
-|osBuildNumber|String|A versão de com build do sistema operacional da imagem. Por exemplo: 1909.|
-|versão|String|A versão da imagem. Por exemplo: 0.0.1, 1.5.13.|
+|osBuildNumber|Cadeia de caracteres|A versão de com build do sistema operacional da imagem. Por exemplo: 1909.|
+|versão|String|A versão da imagem. Por exemplo, 0.0.1, 1.5.13.|
 
 ## <a name="response"></a>Resposta
 
@@ -107,8 +107,12 @@ Content-Type: application/json
 [!INCLUDE [sample-code](../includes/snippets/java/create-cloudpcdeviceimage-from-cloudpcdeviceimage-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[Go](#tab/go)
+# <a name="go"></a>[Ir](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/create-cloudpcdeviceimage-from-cloudpcdeviceimage-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/create-cloudpcdeviceimage-from-cloudpcdeviceimage-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

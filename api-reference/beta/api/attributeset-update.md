@@ -5,12 +5,12 @@ author: rolyon
 ms.localizationpriority: medium
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: 7ddaa06b632a044254e52c025aea2827259990ae
-ms.sourcegitcommit: e497ed9bb56400bdd2bb53d52ddf057d9966220b
+ms.openlocfilehash: eadca0924e3d652180d243514d805d31accf07be
+ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/30/2021
-ms.locfileid: "61223528"
+ms.lasthandoff: 01/20/2022
+ms.locfileid: "62116860"
 ---
 # <a name="update-attributeset"></a>Atualizar attributeSet
 Namespace: microsoft.graph
@@ -24,7 +24,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 |Tipo de permissão|Permissões (da com menos para a com mais privilégios)|
 |:---|:---|
-|Delegada (conta corporativa ou de estudante)|CustomSecAttributeDefinition.ReadWrite.All|
+|Delegado (conta corporativa ou de estudante)|CustomSecAttributeDefinition.ReadWrite.All|
 |Delegado (conta pessoal da Microsoft)|Sem suporte.|
 |Aplicativo|CustomSecAttributeDefinition.ReadWrite.All|
 
@@ -53,7 +53,7 @@ A tabela a seguir especifica as propriedades que podem ser atualizadas.
 
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|description|String|Descrição do conjunto de atributos. Pode ter até 128 caracteres e incluir caracteres Unicode. Opcional.|
+|description|Cadeia de caracteres|Descrição do conjunto de atributos. Pode ter até 128 caracteres e incluir caracteres Unicode. Opcional.|
 |maxAttributesPerSet|Int32|Número máximo de atributos de segurança personalizados que podem ser definidos neste conjunto de atributos. O valor padrão é `null`. Se não for especificado, o administrador poderá adicionar até o máximo de 500 atributos ativos por locatário. Opcional.|
 
 
@@ -102,8 +102,12 @@ Content-length: 119
 [!INCLUDE [sample-code](../includes/snippets/java/update-attributeset-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[Go](#tab/go)
+# <a name="go"></a>[Ir](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/update-attributeset-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/update-attributeset-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: kevinbellinger
 ms.prod: people
 doc_type: apiPageType
-ms.openlocfilehash: 04f7ba9c28a1f5649724c18a1cd03b9552a0ba13
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: efe197a26905b55f1141bf69c77290847b756f2d
+ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "61027946"
+ms.lasthandoff: 01/20/2022
+ms.locfileid: "62135284"
 ---
 # <a name="create-personaward"></a>Criar personAward
 
@@ -52,7 +52,7 @@ A tabela a seguir mostra as propriedades que são possíveis de definir ao criar
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
 |allowedAudiences|Cadeia de caracteres|As audiências que são capazes de ver os valores contidos na entidade. Herdado [do itemFacet](../resources/itemfacet.md). Os valores possíveis são: `me`, `family`, `contacts`, `groupMembers`, `organization`, `federatedOrganizations`, `everyone`, `unknownFutureValue`.|
-|description|String|Descpription of the award or honor. |
+|description|Cadeia de caracteres|Descpription of the award or honor. |
 |displayName|Cadeia de caracteres|Nome do prêmio ou da honra. |
 |inferência|[inferenceData](../resources/inferencedata.md)|Contém detalhes de inferência se a entidade for inferida pelo aplicativo de criação ou modificação. Herdado [do itemFacet](../resources/itemfacet.md).|
 |issuedDate|Data|A data em que o prêmio ou a honra foi concedido. |
@@ -102,8 +102,12 @@ Content-Type: application/json
 [!INCLUDE [sample-code](../includes/snippets/java/create-personaward-from-profile-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[Go](#tab/go)
+# <a name="go"></a>[Ir](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/create-personaward-from-profile-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/create-personaward-from-profile-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

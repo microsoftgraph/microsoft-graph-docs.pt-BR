@@ -5,12 +5,12 @@ author: aarononeal
 ms.localizationpriority: medium
 ms.prod: w10
 doc_type: apiPageType
-ms.openlocfilehash: e98ba54f0dcfb5591ce3b3d51c67b53481c8923b
-ms.sourcegitcommit: 71186ad44d8d0df15e10b0f89df68d2ef0cf9d14
+ms.openlocfilehash: 71badb1b9efe7fce3b867926aa516d352b867c94
+ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/12/2022
-ms.locfileid: "61863669"
+ms.lasthandoff: 01/20/2022
+ms.locfileid: "62111588"
 ---
 # <a name="list-updatable-asset-group-members"></a>Listar membros do grupo de ativos atualizáveis
 Namespace: microsoft.graph.windowsUpdates
@@ -88,6 +88,10 @@ GET https://graph.microsoft.com/beta/admin/windows/updates/updatableAssets/{upda
 
 # <a name="go"></a>[Ir](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/list-updatableasset-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/list-updatableasset-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

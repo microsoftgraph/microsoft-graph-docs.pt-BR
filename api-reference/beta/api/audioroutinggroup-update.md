@@ -5,12 +5,12 @@ author: ananmishr
 ms.localizationpriority: medium
 ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: c5aafe6f290af213fba6d2bc9f0fac835d75c512
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: 5dfa772c0f4377af17dbec7e554cce99522f7b74
+ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "60995326"
+ms.lasthandoff: 01/20/2022
+ms.locfileid: "62116833"
 ---
 # <a name="update-audio-routing-group"></a>Atualizar grupo de roteamento de áudio
 
@@ -47,9 +47,9 @@ No corpo da solicitação, forneça os valores para os campos relevantes que dev
 
 | Propriedade       | Tipo    |Descrição|
 |:---------------|:--------|:----------|
-| receptores | Conjunto de cadeias de caracteres | Os participantes de destino no audioRoutingGroup. |
+| receptores | Coleção de cadeias de caracteres | Os participantes de destino no audioRoutingGroup. |
 | routingMode | String | Os valores possíveis são: `oneToOne` e `multicast`. |
-| fontes | Coleção de cadeias de caracteres | O participante de origem no audioRoutingGroup. |
+| fontes | Coleção String | O participante de origem no audioRoutingGroup. |
 
 ## <a name="response"></a>Resposta
 Se tiver êxito, este método retornará um código de resposta e um `200 OK` [objeto audioRoutingGroup](../resources/audioroutinggroup.md) atualizado no corpo da resposta.
@@ -97,8 +97,12 @@ Content-Type: application/json
 [!INCLUDE [sample-code](../includes/snippets/java/update-audioroutinggroup-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[Go](#tab/go)
+# <a name="go"></a>[Ir](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/update-audioroutinggroup-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/update-audioroutinggroup-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

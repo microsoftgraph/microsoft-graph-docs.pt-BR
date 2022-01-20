@@ -6,12 +6,12 @@ title: Excluir uma entrada de uma lista do SharePoint
 ms.localizationpriority: medium
 ms.prod: sharepoint
 doc_type: apiPageType
-ms.openlocfilehash: e69d612c722295dcb3a1945e2a8044d02a5ca62d
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: 47a116ef154990dda4485cfb1b2d1f5afec20ef5
+ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "61014794"
+ms.lasthandoff: 01/20/2022
+ms.locfileid: "62116049"
 ---
 # <a name="delete-an-item-from-a-list"></a>Excluir um item de uma lista.
 
@@ -78,8 +78,12 @@ DELETE https://graph.microsoft.com/beta/sites/{site-id}/lists/{list-id}/items/{i
 [!INCLUDE [sample-code](../includes/snippets/java/delete-item-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[Go](#tab/go)
+# <a name="go"></a>[Ir](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/delete-item-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/delete-item-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

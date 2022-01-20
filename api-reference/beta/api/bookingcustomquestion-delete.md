@@ -5,12 +5,12 @@ author: razortbone
 ms.localizationpriority: medium
 ms.prod: bookings
 doc_type: apiPageType
-ms.openlocfilehash: 0c5a4b29448b1daae3078b404dcdfa2f9258ff4a
-ms.sourcegitcommit: c47e3d1f3c5f7e2635b2ad29dfef8fe7c8080bc8
+ms.openlocfilehash: 9d68db5b8f001180091783e83cad1067fbf9bc3b
+ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/15/2021
-ms.locfileid: "61525593"
+ms.lasthandoff: 01/20/2022
+ms.locfileid: "62106791"
 ---
 # <a name="delete-bookingcustomquestion"></a>Excluir bookingCustomQuestion
 
@@ -20,14 +20,14 @@ Namespace: microsoft.graph
 
 Exclua o objeto [bookingCustomQuestion](../resources/bookingcustomquestion.md) especificado.
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>Permissões
 
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 | Tipo de permissão                        | Permissões (da com menos para a com mais privilégios)                                    |
 | :------------------------------------- | :----------------------------------------------------------------------------- |
 | Delegado (conta corporativa ou de estudante)     | BookingsAppointment.ReadWrite.All, Bookings.ReadWrite.All, Bookings.Manage.All |
-| Delegada (conta pessoal da Microsoft) | Sem suporte.                                                                 |
+| Delegado (conta pessoal da Microsoft) | Sem suporte.                                                                 |
 | Aplicativo                            | Sem suporte.                                                                 |
 
 ## <a name="http-request"></a>Solicitação HTTP
@@ -56,6 +56,8 @@ Se tiver êxito, este método retornará um código de resposta `204 No Content`
 
 ### <a name="request"></a>Solicitação
 
+
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "delete_bookingcustomQuestions"
@@ -65,6 +67,32 @@ Se tiver êxito, este método retornará um código de resposta `204 No Content`
 ```http
 DELETE https://graph.microsoft.com/beta/bookingBusinesses/Contosolunchdelivery@contoso.onmicrosoft.com/customQuestions/80b5ddda-1e3b-4c9d-abe2-d606cc075e2e
 ```
+# <a name="c"></a>[C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/delete-bookingcustomquestions-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/delete-bookingcustomquestions-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/delete-bookingcustomquestions-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/delete-bookingcustomquestions-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[Ir](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/delete-bookingcustomquestions-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/delete-bookingcustomquestions-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 ### <a name="response"></a>Resposta
 

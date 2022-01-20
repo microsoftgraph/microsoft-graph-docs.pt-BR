@@ -1,11 +1,11 @@
 ---
 description: Arquivo gerado automaticamente. NÃO MODIFICAR
-ms.openlocfilehash: 39ae372de54ba9f5ed84c453f2a319fb397da4fc
-ms.sourcegitcommit: c47e3d1f3c5f7e2635b2ad29dfef8fe7c8080bc8
+ms.openlocfilehash: ba7432f790c100f5029f98d73eb102447454d424
+ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/15/2021
-ms.locfileid: "61525573"
+ms.lasthandoff: 01/20/2022
+ms.locfileid: "62119976"
 ---
 ```javascript
 
@@ -15,12 +15,12 @@ const options = {
 
 const client = Client.init(options);
 
-const aAMkAGVjMzJmMWZjLTgyYjgtNGIyNi1hOGQ0LWRjMjNmMGRmOWNiYQAuAAAAAAAboFs = {
+const baseTaskList = {
     displayName: 'Travel Plan'
 };
 
 await client.api('/me/tasks/lists/AAMkAGVjMzJmMWZjLTgyYjgtNGIyNi1hOGQ0LWRjMjNmMGRmOWNiYQAuAAAAAAAboFs')
     .version('beta')
-    .update(aAMkAGVjMzJmMWZjLTgyYjgtNGIyNi1hOGQ0LWRjMjNmMGRmOWNiYQAuAAAAAAAboFs);
+    .update(baseTaskList);
 
 ```

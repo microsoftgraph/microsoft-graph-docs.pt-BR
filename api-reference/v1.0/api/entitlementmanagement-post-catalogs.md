@@ -5,12 +5,12 @@ author: markwahl-msft
 ms.localizationpriority: medium
 ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: f8b95255a8927e27e5a1ff0d23decfd4472adea3
-ms.sourcegitcommit: 65f4e128f96783c18d607a6dcffbc914291285d4
+ms.openlocfilehash: 3d6d80f048fbaa7765fbf884e28afa5f00796826
+ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/08/2021
-ms.locfileid: "61335471"
+ms.lasthandoff: 01/20/2022
+ms.locfileid: "62114977"
 ---
 # <a name="create-accesspackagecatalog"></a>Criar accessPackageCatalog
 
@@ -19,7 +19,7 @@ Namespace: microsoft.graph
 
 Crie um novo [objeto accessPackageCatalog.](../resources/accesspackagecatalog.md)
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>Permissões
 
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
@@ -53,8 +53,8 @@ Você pode especificar as seguintes propriedades ao criar **um accessPackageCata
 
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|displayName|String|O nome de exibição do catálogo de pacotes de acesso.|
-|description|String|A descrição do catálogo de pacotes de acesso.|
+|displayName|Cadeia de caracteres|O nome de exibição do catálogo de pacotes de acesso.|
+|description|Cadeia de caracteres|A descrição do catálogo de pacotes de acesso.|
 |estado|accessPackageCatalogState|Tem o valor `published` se os pacotes de acesso estão disponíveis para gerenciamento. Os valores possíveis são: `unpublished` e `published` .|
 |isExternallyVisible|Booliano|Se os pacotes de acesso neste catálogo podem ser solicitados por usuários fora do locatário.|
 
@@ -99,8 +99,12 @@ Content-Type: application/json
 [!INCLUDE [sample-code](../includes/snippets/java/create-accesspackagecatalog-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[Go](#tab/go)
+# <a name="go"></a>[Ir](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/create-accesspackagecatalog-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/create-accesspackagecatalog-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

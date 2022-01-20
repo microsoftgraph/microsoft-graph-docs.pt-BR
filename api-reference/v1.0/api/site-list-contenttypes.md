@@ -5,12 +5,12 @@ description: Obter o conjunto de tipos de conteúdo em um site.
 ms.localizationpriority: medium
 doc_type: apiPageType
 ms.prod: sites-and-lists
-ms.openlocfilehash: b96a8173b0b76e34c3eaa25a74b3fa0e6c1ef2ce
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: 292dd475ff4a1a9d2cc4717f4d06029d913e6dc4
+ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "61027162"
+ms.lasthandoff: 01/20/2022
+ms.locfileid: "62121846"
 ---
 # <a name="list-contenttypes-in-a-site"></a>Listar contentTypes em um site
 Namespace: microsoft.graph
@@ -80,8 +80,12 @@ GET https://graph.microsoft.com/v1.0/sites/{site-id}/contentTypes
 [!INCLUDE [sample-code](../includes/snippets/java/enum-contenttypes-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[Go](#tab/go)
+# <a name="go"></a>[Ir](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/enum-contenttypes-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/enum-contenttypes-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

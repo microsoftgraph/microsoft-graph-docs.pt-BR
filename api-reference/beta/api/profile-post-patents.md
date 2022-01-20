@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: kevinbellinger
 ms.prod: people
 doc_type: apiPageType
-ms.openlocfilehash: 1e96f8b774e5bfaedfd7e620a34b1a058ed51bff
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: 304f3c040460d81fcc4652dd3329e57bf6d59a03
+ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "61023648"
+ms.lasthandoff: 01/20/2022
+ms.locfileid: "62135214"
 ---
 # <a name="create-itempatent"></a>Criar itemPatent
 
@@ -51,14 +51,14 @@ A tabela a seguir mostra as propriedades que são possíveis de definir ao criar
 
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|allowedAudiences|String|As audiências que são capazes de ver os valores contidos na entidade. Herdado [do itemFacet](../resources/itemfacet.md). Os valores possíveis são: `me`, `family`, `contacts`, `groupMembers`, `organization`, `federatedOrganizations`, `everyone`, `unknownFutureValue`.|
+|allowedAudiences|Cadeia de caracteres|As audiências que são capazes de ver os valores contidos na entidade. Herdado [do itemFacet](../resources/itemfacet.md). Os valores possíveis são: `me`, `family`, `contacts`, `groupMembers`, `organization`, `federatedOrganizations`, `everyone`, `unknownFutureValue`.|
 |description|Cadeia de caracteres|Descpription of the patent or filing. |
 |displayName|Cadeia de caracteres|Título da patente ou arquivamento. |
 |inferência|[inferenceData](../resources/inferencedata.md)|Contém detalhes de inferência se a entidade for inferida pelo aplicativo de criação ou modificação. Herdado [do itemFacet](../resources/itemfacet.md).|
 |isPending        |Booliano     |Indica que a patente está pendente.        |
 |issuedDate       |Data        |A data em que a patente foi concedida.   |
 |issuingAuthority |Cadeia de caracteres      |Autoridade que concedeu a patente.     |
-|number           |String      |O número da patente.                      |
+|number           |Cadeia de caracteres      |O número da patente.                      |
 |source|[personDataSource](../resources/persondatasource.md)|Onde os valores se originaram se sincronizados de outro serviço. Herdado [do itemFacet](../resources/itemfacet.md).|
 |webUrl           |String      |URL fazendo referência à patente ou ao arquivamento. |
 
@@ -102,8 +102,12 @@ Content-Type: application/json
 [!INCLUDE [sample-code](../includes/snippets/java/create-itempatent-from-profile-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[Go](#tab/go)
+# <a name="go"></a>[Ir](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/create-itempatent-from-profile-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/create-itempatent-from-profile-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

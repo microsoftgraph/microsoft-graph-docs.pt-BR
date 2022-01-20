@@ -5,12 +5,12 @@ author: simonhult
 ms.localizationpriority: medium
 ms.prod: insights
 doc_type: apiPageType
-ms.openlocfilehash: d4ff6298e6266d24a8b490bcbefc4ea30eea1d3c
-ms.sourcegitcommit: 65f4e128f96783c18d607a6dcffbc914291285d4
+ms.openlocfilehash: dcf841ce7b5da1b5796d8a86fb6e6be5e0e58bf5
+ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/08/2021
-ms.locfileid: "61339490"
+ms.lasthandoff: 01/20/2022
+ms.locfileid: "62096409"
 ---
 # <a name="update-insightssettings"></a>Atualizar insightsSettings
 
@@ -65,8 +65,8 @@ No corpo da solicitação, forneça os valores para os campos relevantes que dev
 
 | Propriedade     | Tipo   |Descrição|
 |:---------------|:--------|:----------|
-|isEnabledInOrganization|Boolean| `true` se o tipo especificado de insights estiver habilitado para a organização; `false` se o tipo especificado de insights estiver desabilitado para todos os usuários sem exceções. O padrão é `true`. Opcional.|
-|disabledForGroup|String| A ID de um grupo do Azure AD, do qual o tipo especificado de insights está desabilitado para seus membros. O padrão é `empty`. Opcional.|
+|isEnabledInOrganization|Booliano| `true` se o tipo especificado de insights estiver habilitado para a organização; `false` se o tipo especificado de insights estiver desabilitado para todos os usuários sem exceções. O padrão é `true`. Opcional.|
+|disabledForGroup|Cadeia de caracteres| A ID de um grupo do Azure AD, do qual o tipo especificado de insights está desabilitado para seus membros. O padrão é `empty`. Opcional.|
 
 >**Observação:** Esta operação não verifica o valor **da propriedade disabledForGroup** se você o incluir no corpo da solicitação. Se você definir a **propriedade disabledForGroup** como uma cadeia de caracteres, essa operação não verificará a existência do grupo correspondente do Azure AD. Isso significa que, se você definir **disabledForGroup** para um grupo do Azure AD que não existe ou é excluído posteriormente, essa operação não será capaz de identificar qualquer associação de grupo e desabilitar informações de itens ou pessoas para usuários específicos. Se **isEnabledInOrganization** estiver definido como , a operação habilita o tipo especificado de insights para todos os `true` usuários da organização.  
 ## <a name="response"></a>Resposta
@@ -112,8 +112,12 @@ Content-type: application/json
 [!INCLUDE [sample-code](../includes/snippets/java/update-insightssettings-iteminsightrequest-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[Go](#tab/go)
+# <a name="go"></a>[Ir](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/update-insightssettings-iteminsightrequest-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/update-insightssettings-iteminsightrequest-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -178,8 +182,12 @@ Content-type: application/json
 [!INCLUDE [sample-code](../includes/snippets/java/update-insightssettings-peopleinsightsrequest-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[Go](#tab/go)
+# <a name="go"></a>[Ir](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/update-insightssettings-peopleinsightsrequest-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/update-insightssettings-peopleinsightsrequest-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

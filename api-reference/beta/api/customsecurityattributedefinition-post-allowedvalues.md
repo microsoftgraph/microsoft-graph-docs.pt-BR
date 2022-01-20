@@ -5,12 +5,12 @@ author: rolyon
 ms.localizationpriority: medium
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: 9803670f20c6c446c41b04e2b62c71fa79ef57da
-ms.sourcegitcommit: e497ed9bb56400bdd2bb53d52ddf057d9966220b
+ms.openlocfilehash: dd6c32ac226002baa469cd0ce5a8c75fd813f0b6
+ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/30/2021
-ms.locfileid: "61224493"
+ms.lasthandoff: 01/20/2022
+ms.locfileid: "62090725"
 ---
 # <a name="create-allowedvalue"></a>Criar allowedValue
 Namespace: microsoft.graph
@@ -24,7 +24,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 |Tipo de permissão|Permissões (da com menos para a com mais privilégios)|
 |:---|:---|
-|Delegada (conta corporativa ou de estudante)|CustomSecAttributeDefinition.ReadWrite.All|
+|Delegado (conta corporativa ou de estudante)|CustomSecAttributeDefinition.ReadWrite.All|
 |Delegado (conta pessoal da Microsoft)|Sem suporte.|
 |Aplicativo|CustomSecAttributeDefinition.ReadWrite.All|
 
@@ -54,8 +54,8 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar [allowed
 
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|id|String|Identificador do valor predefinido. Pode ter até 64 caracteres e incluir caracteres Unicode. Pode incluir espaços, mas alguns caracteres especiais não são permitidos. Não é possível alterá-los posteriormente. Case sensitive. Obrigatório.|
-|isActive|Booleano|Indica se o valor predefinido está ativo ou desativado. Se definido como , esse valor predefinido não poderá ser atribuído a `false` nenhum objeto de diretório com suporte adicional. Obrigatório.|
+|id|Cadeia de caracteres|Identificador do valor predefinido. Pode ter até 64 caracteres e incluir caracteres Unicode. Pode incluir espaços, mas alguns caracteres especiais não são permitidos. Não é possível alterá-los posteriormente. Case sensitive. Obrigatório.|
+|isActive|Booliano|Indica se o valor predefinido está ativo ou desativado. Se definido como , esse valor predefinido não poderá ser atribuído a `false` nenhum objeto de diretório com suporte adicional. Obrigatório.|
 
 
 
@@ -106,8 +106,12 @@ Content-Type: application/json
 [!INCLUDE [sample-code](../includes/snippets/java/create-allowedvalue-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[Go](#tab/go)
+# <a name="go"></a>[Ir](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/create-allowedvalue-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/create-allowedvalue-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

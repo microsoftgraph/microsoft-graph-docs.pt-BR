@@ -5,12 +5,12 @@ author: braedenp-msft
 ms.localizationpriority: medium
 ms.prod: universal-print
 doc_type: apiPageType
-ms.openlocfilehash: 85644248015ee4a55591ddee23231f04a82d7a52
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: 9911b925b4f6f93cf50d316bbfc8da6f25e3e96f
+ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "60980408"
+ms.lasthandoff: 01/20/2022
+ms.locfileid: "62112310"
 ---
 # <a name="update-printer"></a>Atualização da impressora
 
@@ -73,7 +73,7 @@ As propriedades a seguir podem ser atualizadas usando permissões de aplicativo.
 |fabricante|String|O fabricante da impressora.|
 |modelo|String|O nome do modelo da impressora.|
 |status|[printerStatus](../resources/printerstatus.md)|O status de processamento da impressora, incluindo quaisquer erros.|
-|isAcceptingJobs|Boolean|Se a impressora está aceitando novos trabalhos de impressão no momento.|
+|isAcceptingJobs|Booliano|Se a impressora está aceitando novos trabalhos de impressão no momento.|
 
 ### <a name="application-permissions-and-ipp-payload"></a>Permissões de aplicativo e carga IPP
 
@@ -141,8 +141,12 @@ Content-type: application/json
 [!INCLUDE [sample-code](../includes/snippets/java/update-printer-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[Go](#tab/go)
+# <a name="go"></a>[Ir](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/update-printer-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/update-printer-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

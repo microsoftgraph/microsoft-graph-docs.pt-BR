@@ -5,12 +5,12 @@ author: nilakhan
 ms.localizationpriority: medium
 ms.prod: cloud-printing
 doc_type: apiPageType
-ms.openlocfilehash: e8046d9e3dae8cd433dfcab8040af0cdd60a603f
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: d9eec7f992bd0215fdf8ee3d9ba827c1e93b16ba
+ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "61025111"
+ms.lasthandoff: 01/20/2022
+ms.locfileid: "62135746"
 ---
 # <a name="list-printconnectors-for-a-printer"></a>Listar printConnectors para uma impressora
 Namespace: microsoft.graph
@@ -82,8 +82,12 @@ GET https://graph.microsoft.com/v1.0/print/printers/{printerId}/connectors
 [!INCLUDE [sample-code](../includes/snippets/java/list-printconnector-2-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[Go](#tab/go)
+# <a name="go"></a>[Ir](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/list-printconnector-2-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/list-printconnector-2-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

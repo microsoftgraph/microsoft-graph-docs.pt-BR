@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: japere
 ms.prod: applications
 doc_type: apiPageType
-ms.openlocfilehash: 0f4de726b7ad5e553e95b202f57930f6c0e3a4b7
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: 9af879a48bd93fbcb3af17c4280ae4f2db3d3be2
+ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "61034626"
+ms.lasthandoff: 01/20/2022
+ms.locfileid: "62097103"
 ---
 # <a name="update-connectorgroups"></a>Atualizar connectorGroups
 
@@ -44,11 +44,11 @@ No corpo da solicitação, forneça os valores para os campos relevantes que dev
 
 | Propriedade     | Tipo   |Descrição|
 |:---------------|:--------|:----------|
-|connectorGroupType|cadeia de caracteres| Indica o tipo de agente híbrido. Este pré-definido pelo sistema. |
-|id|cadeia de caracteres| Identificador exclusivo para este connectorGroup. Somente leitura. |
+|connectorGroupType|string| Indica o tipo de agente híbrido. Este pré-definido pelo sistema. |
+|id|string| Identificador exclusivo para este connectorGroup. Somente leitura. |
 |isDefault|booliano| Indica se o connectorGroup é o connectorGroup padrão. Somente um único grupo de conectores pode ser o connectorGroup padrão e isso é pré-definido pelo sistema. |
 |nome|string| O nome associado ao connectorGroup. |
-|region|cadeia de caracteres| A região à que o connectorGroup é atribuído e otimizará o tráfego. Essa região só poderá ser definida se **nenhum** conector ou aplicativo for atribuído ao connectorGroup. As regiões disponíveis incluem: América do Norte, Europa, Austrália, Ásia e Índia. Os valores possíveis são: `nam`, `eur`, `aus`, `asia`, `ind`.|
+|region|string| A região à que o connectorGroup é atribuído e otimizará o tráfego. Essa região só poderá ser definida se **nenhum** conector ou aplicativo for atribuído ao connectorGroup. As regiões disponíveis incluem: América do Norte, Europa, Austrália, Ásia e Índia. Os valores possíveis são: `nam`, `eur`, `aus`, `asia`, `ind`.|
 
 ## <a name="response"></a>Resposta
 
@@ -87,8 +87,12 @@ Content-type: application/json
 [!INCLUDE [sample-code](../includes/snippets/java/update-connectorgroup-2-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[Go](#tab/go)
+# <a name="go"></a>[Ir](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/update-connectorgroup-2-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/update-connectorgroup-2-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
