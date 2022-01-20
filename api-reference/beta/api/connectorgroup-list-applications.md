@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: japere
 ms.prod: applications
 doc_type: apiPageType
-ms.openlocfilehash: e1ed9c2a9efb06cb86f6d854439a7dd833b1a5a2
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: daae2148a46bd4f55834c998a477bd57a655db10
+ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "61026757"
+ms.lasthandoff: 01/20/2022
+ms.locfileid: "62100449"
 ---
 # <a name="list-applications-assigned-to-a-connectorgroup"></a>Listar aplicativos atribuídos a um connectorGroup
 
@@ -77,8 +77,12 @@ GET https://graph.microsoft.com/beta/onPremisesPublishingProfiles/applicationPro
 [!INCLUDE [sample-code](../includes/snippets/java/get-applications-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[Go](#tab/go)
+# <a name="go"></a>[Ir](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/get-applications-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/get-applications-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

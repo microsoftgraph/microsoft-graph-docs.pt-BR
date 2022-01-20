@@ -5,12 +5,12 @@ author: akumar39
 ms.localizationpriority: medium
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: b8d21676967011c3fa3560c6e41b661d2ec4222b
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: 2a0b6ddc001827e2502d14b3bb8634763c21346d
+ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "61024390"
+ms.lasthandoff: 01/20/2022
+ms.locfileid: "62088050"
 ---
 # <a name="list-timesoff"></a>Listar timesOff
 
@@ -84,8 +84,12 @@ GET https://graph.microsoft.com/v1.0/teams/{teamId}/schedule/timesOff?$filter=sh
 [!INCLUDE [sample-code](../includes/snippets/java/schedule-list-timesoff-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[Go](#tab/go)
+# <a name="go"></a>[Ir](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/schedule-list-timesoff-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/schedule-list-timesoff-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

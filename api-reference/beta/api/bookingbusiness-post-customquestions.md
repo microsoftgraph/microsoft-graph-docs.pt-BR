@@ -5,12 +5,12 @@ author: razortbone
 ms.localizationpriority: medium
 ms.prod: bookings
 doc_type: apiPageType
-ms.openlocfilehash: 54d2a57cb5abdb334ba89bdfd36b8d8e5402f41f
-ms.sourcegitcommit: c47e3d1f3c5f7e2635b2ad29dfef8fe7c8080bc8
+ms.openlocfilehash: f1b8ee38c527d8972ee38014a51f6f38cb3bd3b6
+ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/15/2021
-ms.locfileid: "61525605"
+ms.lasthandoff: 01/20/2022
+ms.locfileid: "62106889"
 ---
 # <a name="create-bookingcustomquestion"></a>Criar bookingCustomQuestion
 
@@ -20,14 +20,14 @@ Namespace: microsoft.graph
 
 Crie um novo [objeto bookingCustomQuestion.](../resources/bookingcustomquestion.md)
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>Permissões
 
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 | Tipo de permissão                        | Permissões (da com menos para a com mais privilégios)                                    |
 | :------------------------------------- | :----------------------------------------------------------------------------- |
 | Delegado (conta corporativa ou de estudante)     | BookingsAppointment.ReadWrite.All, Bookings.ReadWrite.All, Bookings.Manage.All |
-| Delegada (conta pessoal da Microsoft) | Sem suporte.                                                                 |
+| Delegado (conta pessoal da Microsoft) | Sem suporte.                                                                 |
 | Aplicativo                            | Sem suporte.                                                                 |
 
 ## <a name="http-request"></a>Solicitação HTTP
@@ -57,7 +57,7 @@ Você pode especificar as seguintes propriedades ao criar **um bookingCustomQues
 | Propriedade        | Tipo              | Descrição                                                                                                         |
 | :-------------- | :---------------- | :------------------------------------------------------------------------------------------------------------------ |
 | answerInputType | answerInputType   | O tipo de resposta esperado. Os valores possíveis são: `text`, `radioButton`, `unknownFutureValue`. Opcional.    |
-| answerOptions   | Coleção de cadeias de caracteres | Lista de valores de resposta possíveis. Opcional.                                                                     |
+| answerOptions   | Coleção String | Lista de valores de resposta possíveis. Opcional.                                                                     |
 | displayName     | Cadeia de caracteres            | A pergunta. Herdado [de bookingNamedEntity](../resources/bookingnamedentity.md). Obrigatório. |
 
 ## <a name="response"></a>Resposta
@@ -68,6 +68,8 @@ Se tiver êxito, este método retornará um código de resposta e um `201 Create
 
 ### <a name="request"></a>Solicitação
 
+
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "create_bookingcustomquestion_from_"
@@ -86,6 +88,16 @@ Content-length: 165
   "answerOptions": []
 }
 ```
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/create-bookingcustomquestion-from--javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/create-bookingcustomquestion-from--objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 ### <a name="response"></a>Resposta
 

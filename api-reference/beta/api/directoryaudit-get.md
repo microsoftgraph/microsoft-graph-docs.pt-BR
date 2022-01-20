@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: SarahBar
 ms.prod: identity-and-access-reports
 doc_type: apiPageType
-ms.openlocfilehash: d4b53e8458727ab61177b8036b976d1e6f91611e
-ms.sourcegitcommit: 71186ad44d8d0df15e10b0f89df68d2ef0cf9d14
+ms.openlocfilehash: a4190d9b325b67fc2f6530502f87bb10b644c64b
+ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/12/2022
-ms.locfileid: "61792054"
+ms.lasthandoff: 01/20/2022
+ms.locfileid: "62133962"
 ---
 # <a name="get-directoryaudit"></a>Obter directoryAudit
 
@@ -93,6 +93,10 @@ GET https://graph.microsoft.com/beta/auditLogs/directoryAudits/{id}
 
 # <a name="go"></a>[Ir](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/get-directoryaudit-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/get-directoryaudit-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

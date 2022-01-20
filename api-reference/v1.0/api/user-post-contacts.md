@@ -5,12 +5,12 @@ author: kevinbellinger
 ms.localizationpriority: high
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 53691c4a8251745f4d6d693f0a62914739592e3a
-ms.sourcegitcommit: f65eee432cc903324b5f9b31710fdc6100590f36
+ms.openlocfilehash: 05e95ba08a147c2bf8f024df970f4e32711c9b88
+ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/07/2021
-ms.locfileid: "61321761"
+ms.lasthandoff: 01/20/2022
+ms.locfileid: "62087512"
 ---
 # <a name="create-contact"></a>Criar contato
 
@@ -90,8 +90,12 @@ Content-type: application/json
 [!INCLUDE [sample-code](../includes/snippets/java/create-contact-from-user-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[Go](#tab/go)
+# <a name="go"></a>[Ir](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/create-contact-from-user-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/create-contact-from-user-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

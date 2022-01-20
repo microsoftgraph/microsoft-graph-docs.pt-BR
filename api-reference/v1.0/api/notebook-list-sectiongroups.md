@@ -5,12 +5,12 @@ author: jewan-microsoft
 ms.localizationpriority: medium
 ms.prod: onenote
 doc_type: apiPageType
-ms.openlocfilehash: 489265d1408323cde2f888a59e4fbe1a48c118b6
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: f1ac05a8380a86463a3a4180110a90434f86803b
+ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "61033071"
+ms.lasthandoff: 01/20/2022
+ms.locfileid: "62095157"
 ---
 # <a name="list-sectiongroups"></a>Listar sectionGroups
 
@@ -81,8 +81,12 @@ GET https://graph.microsoft.com/v1.0/me/onenote/notebooks/{id}/sectionGroups
 [!INCLUDE [sample-code](../includes/snippets/java/notebook-get-sectiongroups-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[Go](#tab/go)
+# <a name="go"></a>[Ir](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/notebook-get-sectiongroups-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/notebook-get-sectiongroups-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

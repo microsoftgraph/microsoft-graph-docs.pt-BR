@@ -1,16 +1,16 @@
 ---
 title: Adicionar proprietários
-description: Adicione um usuário ou entidade de serviço a Microsoft 365 proprietários de um grupo de segurança ou de segurança.
+description: Adicione um usuário ou entidade de serviço a Microsoft 365 ou proprietários de um grupo de segurança.
 ms.localizationpriority: medium
 author: Jordanndahl
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: a47720e97a729aa061382938e6b4a88bf246a1d9
-ms.sourcegitcommit: 2e94beae05043a88b389349f0767e3a657415e4c
+ms.openlocfilehash: 089fd49744a0ab07cd2b26f5fbc9cb5fb51e6c17
+ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/19/2021
-ms.locfileid: "61124109"
+ms.lasthandoff: 01/20/2022
+ms.locfileid: "62127662"
 ---
 # <a name="add-owners"></a>Adicionar proprietários
 
@@ -18,7 +18,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Adicione um usuário ou entidade de serviço a Microsoft 365 proprietários de um grupo de segurança ou de segurança. Os proprietários são um conjunto de usuários ou os diretores de serviço que têm permissão para modificar o objeto do grupo.
+Adicione um usuário ou entidade de serviço a Microsoft 365 ou proprietários de um grupo de segurança. Os proprietários são um conjunto de usuários ou os diretores de serviço que têm permissão para modificar o objeto do grupo.
 
 >**Importante:** se você atualizar os proprietários do grupo, e você criou uma equipe para o grupo, poderá levar até duas horas para que os proprietários sejam sincronizados com o Microsoft Teams. Além disso, se você quiser que o proprietário seja capaz de fazer alterações em uma equipe - por exemplo, criando um plano Planner - o proprietário também precisará ser adicionado como um membro do grupo/equipe. 
 
@@ -81,8 +81,12 @@ Content-type: application/json
 [!INCLUDE [sample-code](../includes/snippets/java/create-owner-from-group-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[Go](#tab/go)
+# <a name="go"></a>[Ir](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/create-owner-from-group-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/create-owner-from-group-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

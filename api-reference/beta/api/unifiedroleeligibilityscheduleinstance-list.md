@@ -5,12 +5,12 @@ author: carolinetempleton
 ms.localizationpriority: medium
 ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: f1b7465fa572974755022e06561b824ea41f6835
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: 2995a579684a7a5e50f8b295693d721c64532934
+ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "61027820"
+ms.lasthandoff: 01/20/2022
+ms.locfileid: "62132659"
 ---
 # <a name="list-unifiedroleeligibilityscheduleinstances"></a>Listar unifiedRoleEligibilityScheduleInstances
 Namespace: microsoft.graph
@@ -82,8 +82,12 @@ GET https://graph.microsoft.com/beta/roleManagement/directory/roleEligibilitySch
 [!INCLUDE [sample-code](../includes/snippets/java/list-unifiedroleeligibilityscheduleinstance-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[Go](#tab/go)
+# <a name="go"></a>[Ir](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/list-unifiedroleeligibilityscheduleinstance-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/list-unifiedroleeligibilityscheduleinstance-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

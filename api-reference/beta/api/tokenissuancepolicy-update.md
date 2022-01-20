@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: luleonpla
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: 9cdfe444b52bd5346067d7e7747fcbf252b188b8
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: 0cf95eba2e3fa622b3a76d59735f2bba5e91a1e3
+ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "60976955"
+ms.lasthandoff: 01/20/2022
+ms.locfileid: "62092951"
 ---
 # <a name="update-tokenissuancepolicy"></a>Atualizar tokenIssuancePolicy
 
@@ -53,8 +53,8 @@ No corpo da solicitação, forneça os valores para os campos relevantes que dev
 |:-------------|:------------|:------------|
 |definition|Coleção de cadeias de caracteres| Uma coleção de cadeias de caracteres que contém uma cadeia de caracteres JSON que define as regras e as configurações dessa política.  Obrigatório.|
 |description|Cadeia de caracteres| Descrição dessa política.|
-|displayName|String| Nome de exibição para esta política. Obrigatório.|
-|isOrganizationDefault|Boolean|Se definido como true, ativa essa política. Pode haver muitas políticas para o mesmo tipo de política, mas apenas uma pode ser ativada como o padrão da organização. Opcional, o valor padrão é false.|
+|displayName|Cadeia de caracteres| Nome de exibição para esta política. Obrigatório.|
+|isOrganizationDefault|Booliano|Se definido como true, ativa essa política. Pode haver muitas políticas para o mesmo tipo de política, mas apenas uma pode ser ativada como o padrão da organização. Opcional, o valor padrão é false.|
 
 ## <a name="response"></a>Resposta
 
@@ -100,8 +100,12 @@ Content-type: application/json
 [!INCLUDE [sample-code](../includes/snippets/java/update-tokenissuancepolicy-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[Go](#tab/go)
+# <a name="go"></a>[Ir](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/update-tokenissuancepolicy-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/update-tokenissuancepolicy-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

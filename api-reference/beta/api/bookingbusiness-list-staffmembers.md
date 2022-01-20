@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: arvindmicrosoft
 ms.prod: bookings
 doc_type: apiPageType
-ms.openlocfilehash: c41fb5b1baf7cd5c70cc807f99d0548f33028099
-ms.sourcegitcommit: c47e3d1f3c5f7e2635b2ad29dfef8fe7c8080bc8
+ms.openlocfilehash: a855d278c58357669874f82204ae7b584ddedfeb
+ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/15/2021
-ms.locfileid: "61524970"
+ms.lasthandoff: 01/20/2022
+ms.locfileid: "62106928"
 ---
 # <a name="list-staffmembers"></a>Listar staffMembers
 
@@ -19,13 +19,13 @@ Namespace: microsoft.graph
  [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Obter uma lista de [objetos bookingStaffMember](../resources/bookingstaffmember.md) no [bookingBusiness especificado.](../resources/bookingbusiness.md)
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
 |:--------------------|:---------------------------------------------------------|
 |Delegado (conta corporativa ou de estudante) |  Bookings.Read.All, BookingsAppointment.ReadWrite.All, Bookings.ReadWrite.All, Bookings.Manage.All   |
-|Delegada (conta pessoal da Microsoft) | Sem suporte.   |
+|Delegado (conta pessoal da Microsoft) | Sem suporte.   |
 |Aplicativo | Sem suporte.  |
 
 ## <a name="http-request"></a>Solicitação HTTP
@@ -73,8 +73,12 @@ GET https://graph.microsoft.com/beta/bookingBusinesses/Contosolunchdelivery@cont
 [!INCLUDE [sample-code](../includes/snippets/java/get-staffmembers-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[Go](#tab/go)
+# <a name="go"></a>[Ir](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/get-staffmembers-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/get-staffmembers-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

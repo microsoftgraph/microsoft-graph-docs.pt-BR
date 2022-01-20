@@ -5,12 +5,12 @@ author: abhijeetsinha
 ms.localizationpriority: medium
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: 5cc32d0c21820d20c860e83ca3c5b60c16952bd3
-ms.sourcegitcommit: bfd1ab7e015ef04cb2ca3fb85d308ba2ce830a89
+ms.openlocfilehash: 9b3596cdc02dfea8b4144ff4a279a99780d01ed7
+ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/19/2022
-ms.locfileid: "62072180"
+ms.lasthandoff: 01/20/2022
+ms.locfileid: "62094247"
 ---
 # <a name="get-directoryrole"></a>Obter directoryRole
 
@@ -83,6 +83,10 @@ GET https://graph.microsoft.com/beta/directoryRoles/fe8f10bf-c9c2-47eb-95cb-c26c
 
 # <a name="go"></a>[Ir](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/get-directoryrole-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/get-directoryrole-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

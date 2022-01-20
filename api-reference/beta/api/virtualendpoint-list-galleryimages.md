@@ -5,12 +5,12 @@ author: AshleyYangSZ
 ms.localizationpriority: medium
 ms.prod: cloud-pc
 doc_type: apiPageType
-ms.openlocfilehash: 1d2288844b6823e3690cab3016b760950842c6c4
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: a0e932684c0f75112792a8082889c5dbe6a44dcc
+ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "61031314"
+ms.lasthandoff: 01/20/2022
+ms.locfileid: "62126541"
 ---
 # <a name="list-galleryimages"></a>List galleryImages
 
@@ -88,8 +88,12 @@ GET https://graph.microsoft.com/beta/deviceManagement/virtualEndpoint/galleryIma
 [!INCLUDE [sample-code](../includes/snippets/java/list-cloudpcgalleryimage-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[Go](#tab/go)
+# <a name="go"></a>[Ir](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/list-cloudpcgalleryimage-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/list-cloudpcgalleryimage-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

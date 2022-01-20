@@ -5,12 +5,12 @@ author: dipakboyed
 ms.localizationpriority: medium
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: 406929a4c568c71e8a5eae6136768227d6fba8bc
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: 10422dde50d119af32dee997fc7cc88abe55d22e
+ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "61030201"
+ms.lasthandoff: 01/20/2022
+ms.locfileid: "62100063"
 ---
 # <a name="get-educationassignmentdefaults"></a>Obter educationAssignmentDefaults
 Namespace: microsoft.graph
@@ -85,8 +85,12 @@ GET https://graph.microsoft.com/beta/education/classes/72a7baec-c3e9-4213-a850-f
 [!INCLUDE [sample-code](../includes/snippets/java/get-educationassignmentdefaults-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[Go](#tab/go)
+# <a name="go"></a>[Ir](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/get-educationassignmentdefaults-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/get-educationassignmentdefaults-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

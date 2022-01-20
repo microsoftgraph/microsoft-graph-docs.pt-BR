@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 doc_type: apiPageType
 ms.prod: governance
 author: carolinetempleton
-ms.openlocfilehash: 54458604e544b7d4f538d2f9792a48264c077e17
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: eef93119d2f8ddad51b15b6de66fbffe1f4744d1
+ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "60990305"
+ms.lasthandoff: 01/20/2022
+ms.locfileid: "62113674"
 ---
 # <a name="create-governanceroleassignmentrequest"></a>Criar governanceRoleAssignmentRequest
 
@@ -85,7 +85,7 @@ No corpo da solicitação, fornece uma representação JSON de um [objeto govern
 | resourceId       | Cadeia de caracteres                                                   | A ID do recurso. Obrigatório. |
 | roleDefinitionId | Cadeia de caracteres                                                   | A ID da definição de função. Obrigatório. |
 | subjectId        | Cadeia de caracteres                                                   | A ID do assunto. Obrigatório. |
-| assignmentState  | String                                                   | O estado da atribuição. O valor pode ser `Eligible` e `Active` . Obrigatório. |
+| assignmentState  | Cadeia de caracteres                                                   | O estado da atribuição. O valor pode ser `Eligible` e `Active` . Obrigatório. |
 | type             | Cadeia de caracteres                                                   | O tipo de solicitação. O valor pode `AdminAdd` ser , , , , , , `UserAdd` e `AdminUpdate` `AdminRemove` `UserRemove` `UserExtend` `UserRenew` `AdminRenew` `AdminExtend` . Obrigatório. |
 | motivo           | Cadeia de caracteres                                                   | O motivo precisa ser fornecido para a solicitação de atribuição de função para fins de auditoria e revisão. |
 | Cronograma         | [governanceSchedule](../resources/governanceschedule.md) | O cronograma da solicitação de atribuição de função. Para o tipo de `UserAdd` `AdminAdd` solicitação de , `AdminUpdate` , e , é `AdminExtend` necessário. |
@@ -123,9 +123,9 @@ Neste exemplo, um administrador atribui nawu@contoso.com usuário à função Le
 | resourceId       | Cadeia de caracteres                                                   | Sim                      | \<resourceId\> |
 | roleDefinitionId | Cadeia de caracteres                                                   | Sim                      | \<roleDefinitionId\> |
 | subjectId        | Cadeia de caracteres                                                   | Sim                      | \<subjectId\> |
-| assignmentState  | String                                                   | Sim                      | Qualificado / Ativo |
-| type             | String                                                   | Sim                      | AdminAdd |
-| motivo           | String                                                   | depende da função Configurações |   |
+| assignmentState  | Cadeia de caracteres                                                   | Sim                      | Qualificado / Ativo |
+| type             | Cadeia de caracteres                                                   | Sim                      | AdminAdd |
+| motivo           | Cadeia de caracteres                                                   | depende da função Configurações |   |
 | Cronograma         | [governanceSchedule](../resources/governanceschedule.md) | Sim                      |   |
 
 #### <a name="request"></a>Solicitação
@@ -171,8 +171,12 @@ Content-type: application/json
 [!INCLUDE [sample-code](../includes/snippets/java/governanceroleassignmentrequest-post-1-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[Go](#tab/go)
+# <a name="go"></a>[Ir](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/governanceroleassignmentrequest-post-1-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/governanceroleassignmentrequest-post-1-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -237,9 +241,9 @@ Neste exemplo, o usuário nawu@contoso.com ativa a função leitor de cobrança 
 | Propriedade         | Tipo                                                     | Obrigatório                 | Valor |
 |:-----------------|:---------------------------------------------------------|:-------------------------|:--|
 | resourceId       | Cadeia de caracteres                                                   | Sim                      | \<resourceId\> |
-| roleDefinitionId | String                                                   | Sim                      | \<roleDefinitionId\> |
+| roleDefinitionId | Cadeia de caracteres                                                   | Sim                      | \<roleDefinitionId\> |
 | subjectId        | Cadeia de caracteres                                                   | Sim                      | \<subjectId\> |
-| assignmentState  | String                                                   | Sim                      | Ativo |
+| assignmentState  | Cadeia de caracteres                                                   | Sim                      | Ativo |
 | type             | Cadeia de caracteres                                                   | Sim                      | UserAdd |
 | motivo           | Cadeia de caracteres                                                   | depende da função Configurações |   |
 | Cronograma         | [governanceSchedule](../resources/governanceschedule.md) | Sim                      |   |
@@ -288,8 +292,12 @@ Content-type: application/json
 [!INCLUDE [sample-code](../includes/snippets/java/governanceroleassignmentrequest-post-2-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[Go](#tab/go)
+# <a name="go"></a>[Ir](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/governanceroleassignmentrequest-post-2-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/governanceroleassignmentrequest-post-2-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -410,8 +418,12 @@ Content-type: application/json
 [!INCLUDE [sample-code](../includes/snippets/java/governanceroleassignmentrequest-post-3-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[Go](#tab/go)
+# <a name="go"></a>[Ir](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/governanceroleassignmentrequest-post-3-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/governanceroleassignmentrequest-post-3-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -458,9 +470,9 @@ Neste exemplo, um administrador remove o usuário nawu@contoso.com da função L
 | Propriedade         | Tipo                                                     | Obrigatório | Valor |
 |:-----------------|:---------------------------------------------------------|:---------|:--|
 | resourceId       | Cadeia de caracteres                                                   | Sim      | \<resourceId\> |
-| roleDefinitionId | String                                                   | Sim      | \<roleDefinitionId\> |
+| roleDefinitionId | Cadeia de caracteres                                                   | Sim      | \<roleDefinitionId\> |
 | subjectId        | Cadeia de caracteres                                                   | Sim      | \<subjectId\> |
-| assignmentState  | String                                                   | Sim      | Qualificado / Ativo |
+| assignmentState  | Cadeia de caracteres                                                   | Sim      | Qualificado / Ativo |
 | type             | Cadeia de caracteres                                                   | Sim      | AdminRemove |
 | motivo           | Cadeia de caracteres                                                   | Não       |   |
 | Cronograma         | [governanceSchedule](../resources/governanceschedule.md) | Não       |   |
@@ -502,8 +514,12 @@ Content-type: application/json
 [!INCLUDE [sample-code](../includes/snippets/java/governanceroleassignmentrequest-post-4-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[Go](#tab/go)
+# <a name="go"></a>[Ir](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/governanceroleassignmentrequest-post-4-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/governanceroleassignmentrequest-post-4-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -552,7 +568,7 @@ Neste exemplo, os administradores atualizam a atribuição de função para o us
 | resourceId       | Cadeia de caracteres                                                   | Sim                     | \<resourceId\> |
 | roleDefinitionId | Cadeia de caracteres                                                   | Sim                     | \<roleDefinitionId\> |
 | subjectId        | Cadeia de caracteres                                                   | Sim                     | \<subjectId\> |
-| assignmentState  | String                                                   | Sim                     | Qualificado / Ativo |
+| assignmentState  | Cadeia de caracteres                                                   | Sim                     | Qualificado / Ativo |
 | type             | Cadeia de caracteres                                                   | Sim                     | AdminUpdate |
 | motivo           | Cadeia de caracteres                                                   | depende de roleSettings |   |
 | Cronograma         | [governanceSchedule](../resources/governanceschedule.md) | Sim                     |   |
@@ -599,8 +615,12 @@ Content-type: application/json
 [!INCLUDE [sample-code](../includes/snippets/java/governanceroleassignmentrequest-post-5-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[Go](#tab/go)
+# <a name="go"></a>[Ir](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/governanceroleassignmentrequest-post-5-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/governanceroleassignmentrequest-post-5-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -666,9 +686,9 @@ Este exemplo estende a atribuição de função de expiração para o usuário A
 |:-----------------|:---------------------------------------------------------|:------------------------|:--|
 | resourceId       | Cadeia de caracteres                                                   | Sim                     | \<resourceId\> |
 | roleDefinitionId | Cadeia de caracteres                                                   | Sim                     | \<roleDefinitionId\> |
-| subjectId        | String                                                   | Sim                     | \<subjectId\> |
-| assignmentState  | String                                                   | Sim                     | Qualificado / Ativo |
-| type             | String                                                   | Sim                     | AdminExtend |
+| subjectId        | Cadeia de caracteres                                                   | Sim                     | \<subjectId\> |
+| assignmentState  | Cadeia de caracteres                                                   | Sim                     | Qualificado / Ativo |
+| type             | Cadeia de caracteres                                                   | Sim                     | AdminExtend |
 | motivo           | Cadeia de caracteres                                                   | depende de roleSettings |   |
 | Cronograma         | [governanceSchedule](../resources/governanceschedule.md) | Sim                     |   |
 
@@ -715,8 +735,12 @@ Content-type: application/json
 [!INCLUDE [sample-code](../includes/snippets/java/governanceroleassignmentrequest-post-6-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[Go](#tab/go)
+# <a name="go"></a>[Ir](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/governanceroleassignmentrequest-post-6-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/governanceroleassignmentrequest-post-6-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

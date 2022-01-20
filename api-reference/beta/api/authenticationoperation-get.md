@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: mmcla
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: c574a3450b70211a997243673973a18080391aef
-ms.sourcegitcommit: e497ed9bb56400bdd2bb53d52ddf057d9966220b
+ms.openlocfilehash: 18244c3f0e4350bdfdcfc8405746c4a69f12542f
+ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/30/2021
-ms.locfileid: "61223255"
+ms.lasthandoff: 01/20/2022
+ms.locfileid: "62094905"
 ---
 # <a name="get-authentication-operation"></a>Obter operação de autenticação
 
@@ -33,7 +33,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 | Tipo de permissão                        | Permissões agindo por si mesmo (do mínimo para o mais privilegiado) | Permissões atuando em outras pessoas (do mínimo ao mais privilegiado)|
 |:---------------------------------------|:-------------------------|:-----------------|
-| Delegada (conta corporativa ou de estudante)     | UserAuthenticationMethod.Read, UserAuthenticationMethod.Read.All, UserAuthenticationMethod.ReadWrite, UserAuthenticationMethod.ReadWrite.All | UserAuthenticationMethod.Read.All, UserAuthenticationMethod.ReadWrite.All |
+| Delegado (conta corporativa ou de estudante)     | UserAuthenticationMethod.Read, UserAuthenticationMethod.Read.All, UserAuthenticationMethod.ReadWrite, UserAuthenticationMethod.ReadWrite.All | UserAuthenticationMethod.Read.All, UserAuthenticationMethod.ReadWrite.All |
 | Delegado (conta pessoal da Microsoft) | Sem suporte. | Sem suporte. |
 | Aplicativo                            | Sem suporte. | Sem suporte. |
 
@@ -101,8 +101,12 @@ GET /users/{id | userPrincipalName}/authentication/operations/{id}
 [!INCLUDE [sample-code](../includes/snippets/java/get-operation-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[Go](#tab/go)
+# <a name="go"></a>[Ir](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/get-operation-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/get-operation-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

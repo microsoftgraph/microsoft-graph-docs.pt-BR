@@ -1,17 +1,17 @@
 ---
 description: Arquivo gerado automaticamente. NÃO MODIFICAR
-ms.openlocfilehash: 17952b76d2e565d98381dc26244d02cecbbc6e55
-ms.sourcegitcommit: c47e3d1f3c5f7e2635b2ad29dfef8fe7c8080bc8
+ms.openlocfilehash: a62daf50d6de31ad480989aa7185a2ff35ae3fbf
+ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/15/2021
-ms.locfileid: "61524685"
+ms.lasthandoff: 01/20/2022
+ms.locfileid: "62099569"
 ---
 ```csharp
 
 GraphServiceClient graphClient = new GraphServiceClient( authProvider );
 
-var e2c5ed75-7aa4-4f8e-84ab-98b5e0b56ee8 = await graphClient.Me.Tasks.Lists.AAMkADliMmU5YjJlLTVmMmQtNGQzNS1iYjA0LTdmZTA2NTI0MTE5YwAuAAAAAADdOMUbUmCfTKa7OC-fqjkdAQBnu3olF7NfToRyJ2f__TNcAAAAAAESAAA=.Tasks.AAkALgAAAAAAHYQDEapmEc2byACqAC-EWg0AZ7t6JRezX06Ecidn-vkzXAABPDii4gAA.LinkedResources.E2c5ed75-7aa4-4f8e-84ab-98b5e0b56ee8
+var linkedResource_v2 = await graphClient.Me.Tasks.Lists["{baseTaskList-id}"].Tasks["{baseTask-id}"].LinkedResources["{linkedResource_v2-id}"]
     .Request()
     .GetAsync();
 

@@ -5,12 +5,12 @@ author: preetikr
 ms.localizationpriority: medium
 ms.prod: security
 doc_type: apiPageType
-ms.openlocfilehash: a5c890798fca545b770b8bba0da6119c40ffbe36
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: b27face4b2f5f61aa4583b9024962f6ba7b9ce26
+ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "61024348"
+ms.lasthandoff: 01/20/2022
+ms.locfileid: "62095115"
 ---
 # <a name="get-securescore"></a>Obter secureScore
 
@@ -81,8 +81,12 @@ GET https://graph.microsoft.com/v1.0/security/secureScores/{id}
 [!INCLUDE [sample-code](../includes/snippets/java/get-securescore-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[Go](#tab/go)
+# <a name="go"></a>[Ir](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/get-securescore-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/get-securescore-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

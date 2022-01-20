@@ -5,12 +5,12 @@ author: akjo
 doc_type: apiPageType
 ms.localizationpriority: medium
 ms.prod: microsoft-teams
-ms.openlocfilehash: cb900a40dedcc8fad4e12fbf6ce12af39fa5e015
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: a0f476bd8cfbbada3f31c883575292c37b5a9edc
+ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "61031356"
+ms.lasthandoff: 01/20/2022
+ms.locfileid: "62107862"
 ---
 # <a name="install-app-for-user"></a>Instalar o aplicativo para o usuário
 
@@ -89,8 +89,12 @@ Content-type: application/json
 [!INCLUDE [sample-code](../includes/snippets/java/user-add-teamsapp-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[Go](#tab/go)
+# <a name="go"></a>[Ir](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/user-add-teamsapp-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/user-add-teamsapp-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

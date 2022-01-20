@@ -5,12 +5,12 @@ author: aarononeal
 ms.localizationpriority: medium
 ms.prod: w10
 doc_type: apiPageType
-ms.openlocfilehash: 39bc0d0dffb2a1ac9bb00115376c4fd03058e958
-ms.sourcegitcommit: 71186ad44d8d0df15e10b0f89df68d2ef0cf9d14
+ms.openlocfilehash: 07638ba0f98b518c7c5f47463a381b527e926f89
+ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/12/2022
-ms.locfileid: "61791956"
+ms.lasthandoff: 01/20/2022
+ms.locfileid: "62107841"
 ---
 # <a name="delete-azureaddevice"></a>Excluir azureADDevice
 Namespace: microsoft.graph.windowsUpdates
@@ -83,6 +83,10 @@ DELETE https://graph.microsoft.com/beta/admin/windows/updates/updatableAssets/{a
 
 # <a name="go"></a>[Ir](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/delete-azureaddevice-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/delete-azureaddevice-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

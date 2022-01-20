@@ -5,12 +5,12 @@ author: kevinbellinger
 ms.localizationpriority: medium
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 22e1e6a91341c6ef3f660c3840c12fa38e3f1e66
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: 0a696630af0c240b5ae02865b59142b9e7e70ff0
+ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "61003307"
+ms.lasthandoff: 01/20/2022
+ms.locfileid: "62106568"
 ---
 # <a name="delete-contact"></a>Excluir contato
 
@@ -85,8 +85,12 @@ DELETE https://graph.microsoft.com/beta/me/contacts/{id}
 [!INCLUDE [sample-code](../includes/snippets/java/delete-contact-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[Go](#tab/go)
+# <a name="go"></a>[Ir](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/delete-contact-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/delete-contact-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

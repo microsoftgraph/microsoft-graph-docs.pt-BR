@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: Jordanndahl
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: 45fcfd9ab14e87d179264b276c79e26e46b66829
-ms.sourcegitcommit: e497ed9bb56400bdd2bb53d52ddf057d9966220b
+ms.openlocfilehash: ad454155b471eee5338c1efffc670a56dc820689
+ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/30/2021
-ms.locfileid: "61223254"
+ms.lasthandoff: 01/20/2022
+ms.locfileid: "62113382"
 ---
 # <a name="add-members"></a>Adicionar membros
 
@@ -23,7 +23,7 @@ Adicione um membro a um grupo de segurança ou Microsoft 365 por meio da proprie
 Você pode adicionar usuários, entidades de serviço ou outros grupos. 
 
 > [!IMPORTANT]
-> + Você só pode adicionar membros a grupos de Microsoft 365 segurança.
+> + Você só pode adicionar membros a grupos de segurança e Microsoft 365.
 > + Não é possível adicionar grupos de segurança a grupos do Microsoft 365.
 > + Não é possível adicionar grupos do Microsoft 365 a grupos de segurança ou a outros grupos do Microsoft 365.
 
@@ -86,8 +86,12 @@ Content-type: application/json
 [!INCLUDE [sample-code](../includes/snippets/java/add-group-member-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[Go](#tab/go)
+# <a name="go"></a>[Ir](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/add-group-member-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/add-group-member-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

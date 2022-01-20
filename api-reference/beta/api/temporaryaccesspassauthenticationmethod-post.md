@@ -5,12 +5,12 @@ author: inbarckMS
 ms.localizationpriority: medium
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: 33adfcfcd88c32f5f46f35d071bee0c1b56efd5f
-ms.sourcegitcommit: e497ed9bb56400bdd2bb53d52ddf057d9966220b
+ms.openlocfilehash: e96a886a3627bf12b42bcd249bd5b800036c67c5
+ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/30/2021
-ms.locfileid: "61226579"
+ms.lasthandoff: 01/20/2022
+ms.locfileid: "62126744"
 ---
 # <a name="create-temporaryaccesspassauthenticationmethod"></a>Criar temporaryAccessPassAuthenticationMethod
 Namespace: microsoft.graph
@@ -30,7 +30,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
 |:---------------------------------------|:-------------------------|
-| Delegada (conta corporativa ou de estudante)     | UserAuthenticationMethod.ReadWrite |
+| Delegado (conta corporativa ou de estudante)     | UserAuthenticationMethod.ReadWrite |
 | Delegado (conta pessoal da Microsoft) | Sem suporte. |
 | Aplicativo                            | Sem suporte. |
 
@@ -38,7 +38,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
 |:---------------------------------------|:-------------------------|
-| Delegada (conta corporativa ou de estudante)     | UserAuthenticationMethod.ReadWrite.All |
+| Delegado (conta corporativa ou de estudante)     | UserAuthenticationMethod.ReadWrite.All |
 | Delegado (conta pessoal da Microsoft) | Sem suporte. |
 | Aplicativo                            | UserAuthenticationMethod.ReadWrite.All |
 
@@ -117,8 +117,12 @@ Content-Type: application/json
 [!INCLUDE [sample-code](../includes/snippets/java/create-temporaryaccesspassauthenticationmethod-from--java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[Go](#tab/go)
+# <a name="go"></a>[Ir](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/create-temporaryaccesspassauthenticationmethod-from--go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/create-temporaryaccesspassauthenticationmethod-from--powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

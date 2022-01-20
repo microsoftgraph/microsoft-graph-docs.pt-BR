@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: TarkanSevilmis
 ms.prod: planner
 doc_type: apiPageType
-ms.openlocfilehash: 11c4b4b592dc926de0030f8c58c9c315765f3a19
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: c423b3d3faa02771d18017dac2707b3010fd3c2c
+ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "61033919"
+ms.lasthandoff: 01/20/2022
+ms.locfileid: "62133135"
 ---
 # <a name="update-plannerassignedtotaskboardtaskformat"></a>Atualizar plannerAssignedToTaskBoardTaskFormat
 
@@ -45,7 +45,7 @@ No corpo da solicitação, forneça os valores para os campos relevantes que dev
 | Propriedade     | Tipo   |Descrição|
 |:---------------|:--------|:----------|
 |orderHintsByAssignee|[plannerOrderHintsByAssignee](../resources/plannerorderhintsbyassignee.md)|Dicionário de dicas usadas para ordenar tarefas no modo de exibição AssignedTo do Quadro de Tarefas. A chave de cada entrada é um dos usuários aos qual a tarefa é atribuída e o valor é a dica de pedido. O formato de cada valor é definido em [Usando dicas de ordem no Planner(.). /resources/planner_order_hint_format.md).|
-|unassignedOrderHint|String|Valor de dica usado para ordenar a tarefa no modo de exibição AssignedTo do Quadro de Tarefas quando a tarefa não é atribuída a ninguém ou se o dicionário orderHintsByAssignee não fornecer uma dica de ordem para o usuário ao qual a tarefa é atribuída. O formato é definido em [Usando dicas de ordem no Planner](../resources/planner-order-hint-format.md).|
+|unassignedOrderHint|Cadeia de caracteres|Valor de dica usado para ordenar a tarefa no modo de exibição AssignedTo do Quadro de Tarefas quando a tarefa não é atribuída a ninguém ou se o dicionário orderHintsByAssignee não fornecer uma dica de ordem para o usuário ao qual a tarefa é atribuída. O formato é definido em [Usando dicas de ordem no Planner](../resources/planner-order-hint-format.md).|
 
 ## <a name="response"></a>Resposta
 
@@ -86,8 +86,12 @@ If-Match: W/"JzEtVGFzayAgQEBAQEBAQEBAQEBAQEBAWCc="
 [!INCLUDE [sample-code](../includes/snippets/objc/update-plannerassignedtotaskboardtaskformat-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[Go](#tab/go)
+# <a name="go"></a>[Ir](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/update-plannerassignedtotaskboardtaskformat-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/update-plannerassignedtotaskboardtaskformat-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

@@ -5,12 +5,12 @@ author: rolyon
 ms.localizationpriority: medium
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: 064d57abb9517579982e424ed65e3e5800da663d
-ms.sourcegitcommit: e497ed9bb56400bdd2bb53d52ddf057d9966220b
+ms.openlocfilehash: fe93531c64d0664c93083dd0847d4eb980120c1a
+ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/30/2021
-ms.locfileid: "61225935"
+ms.lasthandoff: 01/20/2022
+ms.locfileid: "62106385"
 ---
 # <a name="list-allowedvalues"></a>Listar allowedValues
 Namespace: microsoft.graph
@@ -24,7 +24,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 |Tipo de permissão|Permissões (da com menos para a com mais privilégios)|
 |:---|:---|
-|Delegada (conta corporativa ou de estudante)|CustomSecAttributeAssignment.ReadWrite.All, CustomSecAttributeDefinition.ReadWrite.All|
+|Delegado (conta corporativa ou de estudante)|CustomSecAttributeAssignment.ReadWrite.All, CustomSecAttributeDefinition.ReadWrite.All|
 |Delegado (conta pessoal da Microsoft)|Sem suporte.|
 |Aplicativo|CustomSecAttributeAssignment.ReadWrite.All, CustomSecAttributeDefinition.ReadWrite.All|
 
@@ -98,8 +98,12 @@ GET https://graph.microsoft.com/beta/directory/customSecurityAttributeDefinition
 [!INCLUDE [sample-code](../includes/snippets/java/list-allowedvalue-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[Go](#tab/go)
+# <a name="go"></a>[Ir](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/list-allowedvalue-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/list-allowedvalue-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

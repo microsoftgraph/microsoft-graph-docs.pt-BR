@@ -5,12 +5,12 @@ author: cloudhandler
 ms.localizationpriority: medium
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: 6ad2a5ce14592c485a6c947e6d9139fd36497e35
-ms.sourcegitcommit: 64d27a0e3dcccc9d857e62aace4153e5d98fb3d0
+ms.openlocfilehash: 2438314a2358a394e5160840d0f93c338bb9542f
+ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "60729602"
+ms.lasthandoff: 01/20/2022
+ms.locfileid: "62088225"
 ---
 # <a name="get-riskdetection"></a>Obter riskDetection
 Namespace: microsoft.graph
@@ -57,6 +57,8 @@ Se tiver êxito, este método retornará um código `200 OK` de resposta e um ob
 ## <a name="examples"></a>Exemplos
 
 ### <a name="request"></a>Solicitação
+
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "get_riskdetection_1"
@@ -65,6 +67,28 @@ Se tiver êxito, este método retornará um código `200 OK` de resposta e um ob
 ``` http
 GET https://graph.microsoft.com/v1.0/identityProtection/riskDetections/c2b6c2b9-dddc-acd0-2b39-d519d803dbc3
 ```
+# <a name="c"></a>[C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/get-riskdetection-1-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/get-riskdetection-1-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/get-riskdetection-1-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/get-riskdetection-1-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[Ir](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/get-riskdetection-1-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 
 ### <a name="response"></a>Resposta

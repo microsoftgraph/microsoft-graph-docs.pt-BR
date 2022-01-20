@@ -5,12 +5,12 @@ author: mecampos
 ms.localizationpriority: medium
 ms.prod: search
 doc_type: apiPageType
-ms.openlocfilehash: 0331eeec7481ec5ceaa26f97e6f9d015a2854abb
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: 7d93dfffa3b28a5ab9877046b6e38a7ad3dd6a8f
+ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "61016207"
+ms.lasthandoff: 01/20/2022
+ms.locfileid: "62088687"
 ---
 # <a name="update-externalconnection"></a>Atualizar externalConnection
 
@@ -51,7 +51,7 @@ No corpo da solicitação, forneça os valores para os campos relevantes que dev
 |:--------------|:-----------------------------------------------|:------------|
 | configuração | [microsoft.graph.externalConnectors.configuration](../resources/externalconnectors-configuration.md) | Especifica IDs de aplicativo adicionais que têm permissão para gerenciar a conexão e indexar conteúdo na conexão. |
 | description   | Cadeia de caracteres                                         | Descrição da conexão exibida no Centro de administração do Microsoft 365. |
-| nome          | String                                         | O nome de exibição da conexão a ser exibida no Centro de administração do Microsoft 365. Comprimento máximo de 128 caracteres. |
+| nome          | Cadeia de caracteres                                         | O nome de exibição da conexão a ser exibida no Centro de administração do Microsoft 365. Comprimento máximo de 128 caracteres. |
 
 
 ## <a name="response"></a>Resposta
@@ -95,8 +95,12 @@ Content-type: application/json
 [!INCLUDE [sample-code](../includes/snippets/java/update-externalconnection-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[Go](#tab/go)
+# <a name="go"></a>[Ir](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/update-externalconnection-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/update-externalconnection-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

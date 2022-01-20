@@ -5,12 +5,12 @@ author: mkhribech
 ms.localizationpriority: medium
 ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: 6f9ca192567cf1b5d4073d4ed6810bc861f120e5
-ms.sourcegitcommit: ba46f9f77d1e0eb9c7f5b2f4366534bfcf99d9c0
+ms.openlocfilehash: a8b5e59faacb88efb68b54e7fea9b7dcb6fe78dd
+ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/17/2021
-ms.locfileid: "61565126"
+ms.lasthandoff: 01/20/2022
+ms.locfileid: "62113570"
 ---
 # <a name="delete-externalmeetingregistration"></a>Excluir externalMeetingRegistration
 
@@ -20,7 +20,7 @@ Namespace: microsoft.graph
 
 Desabilitar e excluir [o externalMeetingRegistration](../resources/externalmeetingregistration.md) de um [onlineMeeting](../resources/onlinemeeting.md).
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>Permissões
 
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
@@ -65,6 +65,8 @@ Se tiver êxito, este método retornará apenas um `204 No Content` código de r
 
 ### <a name="request"></a>Solicitação
 
+
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "delete-external-registration"
@@ -73,6 +75,32 @@ Se tiver êxito, este método retornará apenas um `204 No Content` código de r
 ```http
 DELETE https://graph.microsoft.com/beta/me/onlineMeetings/MSpkYzE3Njc0Yy04MWQ5LTRhZGItYmZ/registration
 ```
+# <a name="c"></a>[C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/delete-external-registration-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/delete-external-registration-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/delete-external-registration-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/delete-external-registration-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[Ir](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/delete-external-registration-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/delete-external-registration-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 ### <a name="response"></a>Resposta
 

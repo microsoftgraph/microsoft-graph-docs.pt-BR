@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: markwahl-msft
 ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: 3e5380a15446e0d5454623444b47162e557939d5
-ms.sourcegitcommit: fd609cb401ff862c3f5c21847bac9af967c6bf82
+ms.openlocfilehash: 928063cd435aa2d0346a7b2935b69b16b8b59c5a
+ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/31/2021
-ms.locfileid: "61650752"
+ms.lasthandoff: 01/20/2022
+ms.locfileid: "62107205"
 ---
 # <a name="accesspackageassignmentrequest-filterbycurrentuser"></a>accessPackageAssignmentRequest: filterByCurrentUser
 Namespace: microsoft.graph
@@ -94,8 +94,12 @@ GET https://graph.microsoft.com/beta/identityGovernance/entitlementManagement/ac
 [!INCLUDE [sample-code](../includes/snippets/java/accesspackageassignmentrequest-filterbycurrentuser-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[Go](#tab/go)
+# <a name="go"></a>[Ir](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/accesspackageassignmentrequest-filterbycurrentuser-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/accesspackageassignmentrequest-filterbycurrentuser-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

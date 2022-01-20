@@ -5,12 +5,12 @@ author: Jordanndahl
 ms.localizationpriority: medium
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: dc4c11528d12d987f8856d0f57376d4ff9e9cb46
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: 29b2e6ebaeebfe7632b58ef42afc26d8fb02d2aa
+ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "61032407"
+ms.lasthandoff: 01/20/2022
+ms.locfileid: "62133556"
 ---
 # <a name="update-conversation-thread"></a>Atualizar thread de conversas
 
@@ -76,8 +76,12 @@ Content-type: application/json
 [!INCLUDE [sample-code](../includes/snippets/javascript/update-group-thread-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[Go](#tab/go)
+# <a name="go"></a>[Ir](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/update-group-thread-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/update-group-thread-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

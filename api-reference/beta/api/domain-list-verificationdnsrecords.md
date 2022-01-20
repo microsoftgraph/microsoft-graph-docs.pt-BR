@@ -5,12 +5,12 @@ author: adimitui
 ms.localizationpriority: medium
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: 7d7e34dedf2925aaacd731dd0178928f7d8c5aa3
-ms.sourcegitcommit: e497ed9bb56400bdd2bb53d52ddf057d9966220b
+ms.openlocfilehash: 9a3e6133288db1c2bf0dbdfe14bb3206c2fa2d29
+ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/30/2021
-ms.locfileid: "61226439"
+ms.lasthandoff: 01/20/2022
+ms.locfileid: "62133892"
 ---
 # <a name="list-verificationdnsrecords"></a>Listar verificationDnsRecords
 
@@ -31,7 +31,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegada (conta corporativa ou de estudante) | Domain.Read.All, Domain.ReadWrite.All    |
+|Delegado (conta corporativa ou de estudante) | Domain.Read.All, Domain.ReadWrite.All    |
 |Delegado (conta pessoal da Microsoft) | Sem suporte.    |
 |Aplicativo | Domain.Read.All, Domain.ReadWrite.All|
 
@@ -90,8 +90,12 @@ GET https://graph.microsoft.com/beta/domains/contoso.com/verificationDnsRecords
 [!INCLUDE [sample-code](../includes/snippets/java/get-verificationdnsrecords-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[Go](#tab/go)
+# <a name="go"></a>[Ir](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/get-verificationdnsrecords-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/get-verificationdnsrecords-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

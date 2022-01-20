@@ -5,12 +5,12 @@ author: braedenp-msft
 ms.localizationpriority: medium
 ms.prod: universal-print
 doc_type: apiPageType
-ms.openlocfilehash: ce52494b4b1a701d7c7f392f7576c7a3a35a3d5e
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: b07b6b9c0a549baf345b1bfa06dda967b8f4114a
+ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "61032232"
+ms.lasthandoff: 01/20/2022
+ms.locfileid: "62127109"
 ---
 # <a name="list-allowedgroups-for-printershare"></a>Listar allowedGroups para printerShare
 
@@ -75,8 +75,12 @@ GET https://graph.microsoft.com/beta/print/shares/{id}/allowedGroups
 [!INCLUDE [sample-code](../includes/snippets/java/get-allowedgroups-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[Go](#tab/go)
+# <a name="go"></a>[Ir](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/get-allowedgroups-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/get-allowedgroups-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

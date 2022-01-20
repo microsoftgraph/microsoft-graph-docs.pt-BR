@@ -5,12 +5,12 @@ author: sureshja
 ms.localizationpriority: medium
 ms.prod: applications
 doc_type: apiPageType
-ms.openlocfilehash: 38a56d02e97dae6d813b57d6c6e46e98ace2894a
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: c6d1e15b764521f1f078c88e1862efed0467dc33
+ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "60982789"
+ms.lasthandoff: 01/20/2022
+ms.locfileid: "62126171"
 ---
 # <a name="update-application"></a>Atualizar aplicativo
 
@@ -58,7 +58,7 @@ No corpo da solicitação, forneça os valores para os campos relevantes que dev
 | isFallbackPublicClient  | Booliano                                                                     | Especifica o tipo de aplicativo de fallback como cliente público; por exemplo, um aplicativo instalado em um dispositivo móvel. O valor padrão é , o que significa que o tipo de `false` aplicativo de fallback é cliente confidencial, como aplicativo Web. Há certos cenários em que o Azure AD não pode determinar o tipo de aplicativo cliente (por exemplo, o fluxo [ropc](https://tools.ietf.org/html/rfc6749#section-4.3) em que ele é configurado sem especificar um URI de redirecionamento). Nesses casos, o Azure AD interpretará o tipo de aplicativo com base no valor dessa propriedade. |
 | keyCredentials          | [keyCredential](../resources/keycredential.md) collection                   | A coleção das principais credenciais associadas ao aplicativo. Não anulável.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       |
 | logo                    | Stream                                                                      | O logotipo principal do aplicativo. Não anulável.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       |
-| onPremisesPublishing    | [onPremisesPublishing](../resources/onpremisespublishing.md)                | Representa o conjunto de propriedades para configurar o Proxy de Aplicativo [do Azure AD](https://aka.ms/whyappproxy) para um aplicativo local. Essa propriedade só pode ser definida após a criação do aplicativo.                                                                                                                                                                                                                                                                                                                                                        |
+| onPremisesPublishing    | [onPremisesPublishing](../resources/onpremisespublishing.md)                | Representa o conjunto de propriedades para configurar o Proxy de Aplicativo [do Azure AD](/azure/active-directory/app-proxy/what-is-application-proxy) para um aplicativo local. Essa propriedade só pode ser definida após a criação do aplicativo.                                                                                                                                                                                                                                                                                                                                                        |
 | optionalClaims          | optionalClaims                                                              | Desenvolvedores de aplicativos podem configurar declarações opcionais em aplicativos do Azure AD para especificar quais declarações desejam em tokens enviados ao aplicativo pelo serviço de token de segurança da Microsoft. Consulte [declarações opcionais](/azure/active-directory/develop/active-directory-optional-claims) para obter mais informações.                                                                                                                                                                                                                                                               |
 | parentalControlSettings | [parentalControlSettings](../resources/parentalcontrolsettings.md)          | Especifica as configurações de controle parental de um aplicativo.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                |
 | publicClient            | [publicClientApplication](../resources/publicclientapplication.md)          | Especifica configurações para clientes instalados, como dispositivos móveis ou da área de trabalho.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            |
@@ -106,8 +106,12 @@ Content-type: application/json
 [!INCLUDE [sample-code](../includes/snippets/java/update-application-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[Go](#tab/go)
+# <a name="go"></a>[Ir](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/update-application-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/update-application-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -134,6 +138,3 @@ HTTP/1.1 204 No Content
   ]
 }
 -->
-
-
-

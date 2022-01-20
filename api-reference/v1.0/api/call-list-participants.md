@@ -5,12 +5,12 @@ author: ananmishr
 ms.localizationpriority: medium
 ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: 0c4d332eb6bc56110271f823bb3145b91e5506b1
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: 7f9f1ebdd7013a57af558d1de142f345136cbcd6
+ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "61007002"
+ms.lasthandoff: 01/20/2022
+ms.locfileid: "62101610"
 ---
 # <a name="list-participants"></a>Listar participantes
 
@@ -24,7 +24,7 @@ Recupere uma lista de objetos participantes na chamada.
 | :-------------- | :------------------------------------------ |
 | Delegado (conta corporativa ou de estudante)     | Não suportado        |
 | Delegado (conta pessoal da Microsoft) | Não suportado        |
-| Aplicativo     | Nenhuma                                        |
+| Aplicativo     | Nenhum                                        |
 
 ## <a name="http-request"></a>Solicitação HTTP
 
@@ -81,8 +81,12 @@ GET https://graph.microsoft.com/v1.0/communications/calls/7531d31f-d10d-44de-802
 [!INCLUDE [sample-code](../includes/snippets/java/get-participants-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[Go](#tab/go)
+# <a name="go"></a>[Ir](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/get-participants-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/get-participants-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

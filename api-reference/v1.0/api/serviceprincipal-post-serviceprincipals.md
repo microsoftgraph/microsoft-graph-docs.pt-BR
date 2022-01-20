@@ -5,12 +5,12 @@ author: sureshja
 ms.localizationpriority: high
 doc_type: apiPageType
 ms.prod: applications
-ms.openlocfilehash: 20c756128cd318ab7709d96a2a90d13d24841b7c
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: df5935ce9a58857114c64ac1decd3b18fa3ab608
+ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "61024173"
+ms.lasthandoff: 01/20/2022
+ms.locfileid: "62128529"
 ---
 # <a name="create-serviceprincipal"></a>Criar servicePrincipal
 
@@ -84,8 +84,12 @@ Content-type: application/json
 [!INCLUDE [sample-code](../includes/snippets/java/create-serviceprincipal-from-serviceprincipals-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[Go](#tab/go)
+# <a name="go"></a>[Ir](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/create-serviceprincipal-from-serviceprincipals-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/create-serviceprincipal-from-serviceprincipals-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

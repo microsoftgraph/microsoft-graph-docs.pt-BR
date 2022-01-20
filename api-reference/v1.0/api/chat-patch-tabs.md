@@ -5,12 +5,12 @@ author: subray
 ms.localizationpriority: medium
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 3e06d63f118aa24cab5c0130dc2c2edd4018a870
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: 4a5f04d3367c7f6643506f2a76cb9c9c299b5d2c
+ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "61000723"
+ms.lasthandoff: 01/20/2022
+ms.locfileid: "62107624"
 ---
 # <a name="update-tab-in-chat"></a>Guia Atualizar no chat
 
@@ -90,8 +90,12 @@ Content-type: application/json
 [!INCLUDE [sample-code](../includes/snippets/java/update-tabs-in-chat-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[Go](#tab/go)
+# <a name="go"></a>[Ir](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/update-tabs-in-chat-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/update-tabs-in-chat-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

@@ -5,12 +5,12 @@ author: mahage-msft
 ms.localizationpriority: medium
 ms.prod: ediscovery
 doc_type: apiPageType
-ms.openlocfilehash: fec318d4c154b68a7b84cc54c386772cd658dc9c
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: 89114c2d85d2f9f998b821f0cb4cea67c326e301
+ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "61012259"
+ms.lasthandoff: 01/20/2022
+ms.locfileid: "62090304"
 ---
 # <a name="delete-tag"></a>Excluir marca
 
@@ -94,8 +94,12 @@ DELETE https://graph.microsoft.com/beta/compliance/ediscovery/cases/47746044-fd0
 [!INCLUDE [sample-code](../includes/snippets/java/delete-tag-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[Go](#tab/go)
+# <a name="go"></a>[Ir](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/delete-tag-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/delete-tag-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

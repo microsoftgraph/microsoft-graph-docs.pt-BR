@@ -5,12 +5,12 @@ author: akjo
 doc_type: apiPageType
 ms.localizationpriority: medium
 ms.prod: microsoft-teams
-ms.openlocfilehash: 8f5c2ca19855ba0083f49994cdb9010855ba5156
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: 7298a3739edbcf653a329f4e84b7297f4e9a93fc
+ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "61018944"
+ms.lasthandoff: 01/20/2022
+ms.locfileid: "62134241"
 ---
 # <a name="update-member-in-team"></a>Atualizar membro na equipe
 
@@ -91,8 +91,12 @@ content-length: 26
 [!INCLUDE [sample-code](../includes/snippets/java/update-member-2-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[Go](#tab/go)
+# <a name="go"></a>[Ir](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/update-member-2-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/update-member-2-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

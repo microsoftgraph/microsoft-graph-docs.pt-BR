@@ -5,12 +5,12 @@ author: isabelleatmsft
 ms.localizationpriority: medium
 ms.prod: governance
 doc_type: resourcePageType
-ms.openlocfilehash: 9c7a0e3ee6fa5c39345e45eca7f364ba95661fde
-ms.sourcegitcommit: 1a607ea5bee096944e0fea14167d372f1ff652f6
+ms.openlocfilehash: 8372dd95c290af52e23b8ba62064b1e1aad8c836
+ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/16/2021
-ms.locfileid: "61545118"
+ms.lasthandoff: 01/20/2022
+ms.locfileid: "62126499"
 ---
 # <a name="accessreviewschedulesettings-resource-type"></a>Tipo de recurso accessReviewScheduleSettings
 
@@ -36,6 +36,7 @@ O **accessReviewScheduleSettings** define as configurações de [um accessReview
 | applyActions|[Coleção accessReviewApplyAction](../resources/accessreviewapplyaction.md) | Campo opcional. Descreve as ações a ser realizadas depois que uma revisão é concluída. Há dois tipos com suporte no momento: `removeAccessApplyAction` (padrão) e `disableAndDeleteUserApplyAction` . O campo só precisa ser especificado no caso de `disableAndDeleteUserApplyAction` . |
 | recommendationsEnabled|Booliano | Indica se as recomendações de decisão estão habilitadas ou desabilitadas. |
 | recommendationLookBackDuration | Duração| Campo opcional. Indica o período de inatividade (em relação à data de início da instância de revisão) de onde as recomendações serão configuradas. A recomendação será para `deny` se o usuário estiver inativo durante a duração de retorno. Para análises de grupos e funções do Azure AD, qualquer duração é aceita. Para análises de aplicativos, 30 dias é a duração máxima. Se não for especificado, a duração será de 30 dias. |
+| recommendationInsightSettings|[coleção accessReviewRecommendationInsightSetting](../resources/accessReviewRecommendationInsightSetting.md) | Opcional. Descreve os tipos de insights que ajudam os revisadores a tomar decisões de revisão de acesso. |
 
 ## <a name="relationships"></a>Relações
 Nenhum
@@ -66,7 +67,12 @@ Veja a seguir uma representação JSON do recurso.
     }
   ],
   "recommendationsEnabled": "Boolean",
-  "recommendationLookBackDuration": "Duration"
+  "recommendationLookBackDuration": "Duration",
+  "recommendationInsightSettings": [
+    {
+      "@odata.type": "microsoft.graph.accessReviewRecommendationInsightSetting"
+    }
+  ]
 }
 ```
 

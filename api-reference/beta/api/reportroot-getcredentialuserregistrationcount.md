@@ -1,16 +1,16 @@
 ---
 title: 'reportRoot: getCredentialUserRegistrationCount'
-description: Relatar o estado atual de quantos usuários em sua organização estão registrados para redefinição de senha de autoatendado e recursos de autenticação multifatória (MFA).
-localization_priority: Normal
+description: Reporte o estado atual de quantos usuários em sua organização estão registrados para a redefinição de senha de autoatendados e recursos de autenticação multifatória (MFA).
+ms.localizationpriority: medium
 author: besiler
 ms.prod: identity-and-access-reports
 doc_type: apiPageType
-ms.openlocfilehash: 7224d49e71933716fb36b90dfe5cbb2b0d99223f
-ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
+ms.openlocfilehash: d9ba5d31d622dbf282e0ef3b51a7af9d5fd0f6ff
+ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/06/2021
-ms.locfileid: "50131345"
+ms.lasthandoff: 01/20/2022
+ms.locfileid: "62093239"
 ---
 # <a name="reportroot-getcredentialuserregistrationcount"></a>reportRoot: getCredentialUserRegistrationCount
 
@@ -18,7 +18,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Relatar o estado atual de quantos usuários em sua organização estão registrados para redefinição de senha de autoatendado e recursos de autenticação multifatória (MFA).
+Reporte o estado atual de quantos usuários em sua organização estão registrados para a redefinição de senha de autoatendados e recursos de autenticação multifatória (MFA).
 
 ## <a name="permissions"></a>Permissões
 
@@ -84,6 +84,10 @@ GET https://graph.microsoft.com/beta/reports/getCredentialUserRegistrationCount
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/reportroot-getcredentialuserregistrationcount-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[Ir](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/reportroot-getcredentialuserregistrationcount-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

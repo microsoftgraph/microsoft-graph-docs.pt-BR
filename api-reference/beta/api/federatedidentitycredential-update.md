@@ -5,12 +5,12 @@ author: kjyam98
 ms.localizationpriority: medium
 ms.prod: applications
 doc_type: apiPageType
-ms.openlocfilehash: b9e8739dc0ae0b8f3eddd11ff395911d01ee2552
-ms.sourcegitcommit: 71186ad44d8d0df15e10b0f89df68d2ef0cf9d14
+ms.openlocfilehash: 4ed503883bca7da4a1e141684f373f932d07b2db
+ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/12/2022
-ms.locfileid: "61860035"
+ms.lasthandoff: 01/20/2022
+ms.locfileid: "62127864"
 ---
 # <a name="update-federatedidentitycredential"></a>Atualizar federatedIdentityCredential
 Namespace: microsoft.graph
@@ -55,10 +55,10 @@ A tabela a seguir especifica as propriedades que podem ser atualizadas.
 
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|audiences|String collection|A lista de audiências que podem aparecer no token emitido. O valor recomendado é `api://AzureADTokenExchange` . |
-|descrição|String|Uma descrição fornecida pelo usuário para o qual o federatedIdentityCredential é usado. |
-|emissor|String|A URL do emissor confiável de entrada (Serviço de Token Seguro). Corresponde à declaração do emissor de um token de acesso. Por exemplo, com o cenário chaves gerenciadas pelo cliente, o Azure AD é o emissor e um valor válido seria `https://login.microsoftonline.com/{tenantid}/v2.0` . A combinação dos valores de **emissor** e **assunto** deve ser exclusiva no aplicativo. |
-|assunto|String|<li>Para o emissor do Azure AD, o do servicePrincipal (pode representar uma identidade gerenciada) que `objectId` pode representar o aplicativo. O objeto associado a esse GUID precisa existir no locatário.</li><li>Para todos os outros emissores, uma cadeia de caracteres sem validação adicional</ul><br><br>A combinação dos valores de **emissor** e **assunto** deve ser exclusiva no aplicativo.|
+|audiences|Coleção de cadeias de caracteres|A lista de audiências que podem aparecer no token emitido. O valor recomendado é `api://AzureADTokenExchange` . |
+|description|Cadeia de caracteres|Uma descrição fornecida pelo usuário para o qual o federatedIdentityCredential é usado. |
+|emissor|Cadeia de caracteres|A URL do emissor confiável de entrada (Serviço de Token Seguro). Corresponde à declaração do emissor de um token de acesso. Por exemplo, com o cenário chaves gerenciadas pelo cliente, o Azure AD é o emissor e um valor válido seria `https://login.microsoftonline.com/{tenantid}/v2.0` . A combinação dos valores de **emissor** e **assunto** deve ser exclusiva no aplicativo. |
+|assunto|Cadeia de caracteres|<li>Para o emissor do Azure AD, o do servicePrincipal (pode representar uma identidade gerenciada) que `objectId` pode representar o aplicativo. O objeto associado a esse GUID precisa existir no locatário.</li><li>Para todos os outros emissores, uma cadeia de caracteres sem validação adicional</ul><br><br>A combinação dos valores de **emissor** e **assunto** deve ser exclusiva no aplicativo.|
 
 
 
@@ -108,6 +108,10 @@ Content-Type: application/json
 
 # <a name="go"></a>[Ir](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/update-federatedidentitycredential-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/update-federatedidentitycredential-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

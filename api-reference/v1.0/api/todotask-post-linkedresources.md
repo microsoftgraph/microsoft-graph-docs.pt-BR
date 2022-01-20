@@ -5,12 +5,12 @@ author: avijityadav
 ms.localizationpriority: medium
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: e65970401ae9bd3003a685af0c1ce94f17e6b867
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: e79db0afdcf223e7619fa45612a5e6971fa1771f
+ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "61022955"
+ms.lasthandoff: 01/20/2022
+ms.locfileid: "62128249"
 ---
 # <a name="create-linkedresource"></a>Criar linkedResource
 Namespace: microsoft.graph
@@ -52,10 +52,10 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar [o linke
 
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|id|String|ID gerada do servidor para a entidade vinculada Herdada da [entidade](../resources/entity.md)|
+|id|Cadeia de caracteres|ID gerada do servidor para a entidade vinculada Herdada da [entidade](../resources/entity.md)|
 |webUrl|String|Deeplink para a entidade vinculada |
 |applicationName|Cadeia de caracteres|Campo indicando o nome do aplicativo da fonte que está enviando a entidade vinculada |
-|displayName|String|Campo indicando o título da entidade vinculada. |
+|displayName|Cadeia de caracteres|Campo indicando o título da entidade vinculada. |
 |externalId|Cadeia de caracteres|ID do objeto associado a essa tarefa no sistema de terceiros/parceiro |
 
 
@@ -103,8 +103,12 @@ Content-Type: application/json
 [!INCLUDE [sample-code](../includes/snippets/java/create-linkedresource-from-linkedresources-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[Go](#tab/go)
+# <a name="go"></a>[Ir](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/create-linkedresource-from-linkedresources-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/create-linkedresource-from-linkedresources-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

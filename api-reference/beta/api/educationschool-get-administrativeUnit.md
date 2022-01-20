@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: mmast-msft
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: 9ec9e392e106a503916188cc2b7a08c292e15cef
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: 8cdf409753d25b961a3f466fb822f28708782741
+ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "60975163"
+ms.lasthandoff: 01/20/2022
+ms.locfileid: "62133682"
 ---
 # <a name="get-administrativeunit"></a>Obter administrativeUnit
 
@@ -73,8 +73,12 @@ GET https://graph.microsoft.com/beta/education/schools/2961761D-8094-4183-A9F6-8
 [!INCLUDE [sample-code](../includes/snippets/java/educationschool-get-administrativeunit-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[Go](#tab/go)
+# <a name="go"></a>[Ir](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/educationschool-get-administrativeunit-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/educationschool-get-administrativeunit-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

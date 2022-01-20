@@ -5,12 +5,12 @@ author: dkershaw10
 ms.localizationpriority: medium
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: e74054061d8117222c6e81e8fffc1fc491e414a4
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: cd32015be1dcc33cbf05b14355f54c5f12190327
+ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "61028115"
+ms.lasthandoff: 01/20/2022
+ms.locfileid: "62120137"
 ---
 # <a name="list-attachments"></a>Listar anexos
 
@@ -85,8 +85,12 @@ GET https://graph.microsoft.com/beta/groups/1848753d-185d-4c08-a4e4-6ee40521d115
 [!INCLUDE [sample-code](../includes/snippets/java/post-get-attachments-beta-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[Go](#tab/go)
+# <a name="go"></a>[Ir](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/post-get-attachments-beta-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/post-get-attachments-beta-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: akumar39
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 831510b220c7a1d48f69f51731c83761b2e22e58
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: ccdfe7f88c57d3c6c9096fb4390316d7be612bab
+ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "61032763"
+ms.lasthandoff: 01/20/2022
+ms.locfileid: "62087595"
 ---
 # <a name="delete-timeoffrequest"></a>Excluir timeOffRequest
 
@@ -84,8 +84,12 @@ DELETE https://graph.microsoft.com/v1.0/teams/{teamId}/schedule/timeOffRequests/
 [!INCLUDE [sample-code](../includes/snippets/java/delete-timeoffrequest-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[Go](#tab/go)
+# <a name="go"></a>[Ir](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/delete-timeoffrequest-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/delete-timeoffrequest-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

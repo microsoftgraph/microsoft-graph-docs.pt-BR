@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: abheek-das
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 159058eb7a7882578d79e5369d43b052be5a6fd5
-ms.sourcegitcommit: 94741ff7f61f20a39dacfa6ce451a77ca02dd68a
+ms.openlocfilehash: e199c36ac6abcf95329cbcd87b320f5cfff27b22
+ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/14/2022
-ms.locfileid: "62047130"
+ms.lasthandoff: 01/20/2022
+ms.locfileid: "62107090"
 ---
 # <a name="attachment-createuploadsession"></a>attachment: createUploadSession
 
@@ -40,7 +40,7 @@ Consulte [anexar arquivos grandes Outlook mensagens ou eventos](/graph/outlook-l
 > Esteja ciente de um [problema](/graph/known-issues#attaching-large-files-to-messages) conhecido se você estiver anexando um arquivo grande a uma mensagem ou evento em uma caixa de correio compartilhada ou delegada.
 
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>Permissões
 
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
@@ -176,6 +176,8 @@ Para um anexo em linha, de set _isInline_ property to `true` and use the _conten
 
 #### <a name="request"></a>Solicitação
 
+
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "attachment_createuploadsession_inline",
@@ -196,6 +198,28 @@ Content-type: application/json
   }
 }
 ```
+# <a name="c"></a>[C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/attachment-createuploadsession-inline-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/attachment-createuploadsession-inline-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/attachment-createuploadsession-inline-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/attachment-createuploadsession-inline-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[Ir](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/attachment-createuploadsession-inline-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 #### <a name="response"></a>Resposta
 
 > **Observação:** o objeto de resposta mostrado aqui pode ser encurtado para legibilidade.

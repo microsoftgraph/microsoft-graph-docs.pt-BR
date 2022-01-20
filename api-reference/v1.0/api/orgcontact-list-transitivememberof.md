@@ -5,12 +5,12 @@ author: dkershaw10
 ms.localizationpriority: medium
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: bf56371c73878b717785c608aa45b236c1c5e45f
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: a01194bdeef5390a31d57a43949f18df9cb09980
+ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "61003782"
+ms.lasthandoff: 01/20/2022
+ms.locfileid: "62088548"
 ---
 # <a name="list-transitivememberof"></a>Listar transitiveMemberOf
 
@@ -38,7 +38,7 @@ GET /contacts/{id}/transitiveMemberOf
 
 ## <a name="optional-query-parameters"></a>Parâmetros de consulta opcionais
 
-Este método dá suporte a `$select` [Parâmetros de consulta OData](/graph/query-parameters) para ajudar a personalizar a resposta.
+Este método dá suporte aos `$select` [parâmetros de consulta OData](/graph/query-parameters) para ajudar a personalizar a resposta.
 
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
 
@@ -87,8 +87,12 @@ GET https://graph.microsoft.com/v1.0/contacts/{id}/transitiveMemberOf
 [!INCLUDE [sample-code](../includes/snippets/java/orgcontact-list-transitivememberof-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[Go](#tab/go)
+# <a name="go"></a>[Ir](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/orgcontact-list-transitivememberof-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/orgcontact-list-transitivememberof-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

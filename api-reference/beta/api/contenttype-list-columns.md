@@ -5,12 +5,12 @@ description: Listar colunas em um tipo de conteúdo.
 ms.localizationpriority: medium
 doc_type: apiPageType
 ms.prod: sites-and-lists
-ms.openlocfilehash: aa6a905b53f91ef3ceb4779018660f3307f12440
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: 691393e81180dcacc9721c01de00e50fbbe657c4
+ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "61005427"
+ms.lasthandoff: 01/20/2022
+ms.locfileid: "62106525"
 ---
 # <a name="list-columns-in-a-content-type"></a>Listar colunas em um tipo de conteúdo
 Namespace: microsoft.graph
@@ -94,8 +94,12 @@ GET https://graph.microsoft.com/beta/sites/{site-id}/contentTypes/{contentType-i
 [!INCLUDE [sample-code](../includes/snippets/java/get-columns-from-contenttype-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[Go](#tab/go)
+# <a name="go"></a>[Ir](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/get-columns-from-contenttype-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/get-columns-from-contenttype-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

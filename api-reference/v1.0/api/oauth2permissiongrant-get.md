@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 doc_type: apiPageType
 ms.prod: identity-and-sign-in
 author: psignoret
-ms.openlocfilehash: 592d558eea85ae5b9c68f16c60491428e08859c7
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: 220ebd3fcb4bf0e92dce53fcc80d68bab617cfe6
+ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "60992827"
+ms.lasthandoff: 01/20/2022
+ms.locfileid: "62119569"
 ---
 # <a name="get-oauth2permissiongrant-a-delegated-permission-grant"></a>Obter oAuth2PermissionGrant (uma concessão de permissão delegada)
 
@@ -86,8 +86,12 @@ GET https://graph.microsoft.com/v1.0/oauth2PermissionGrants/AVs6JuUDjkCFV7q2gd8Q
 [!INCLUDE [sample-code](../includes/snippets/java/get-oauth2permissiongrant-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[Go](#tab/go)
+# <a name="go"></a>[Ir](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/get-oauth2permissiongrant-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/get-oauth2permissiongrant-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

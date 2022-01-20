@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: paulgarn
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: cbc6b65631db29e228e248d6abb67c620a7ff86b
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: 30c4296616f6ffab300d73cdcceb56a94835c245
+ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "60975702"
+ms.lasthandoff: 01/20/2022
+ms.locfileid: "62121333"
 ---
 # <a name="list-claimsmappingpolicies"></a>Listar claimsMappingPolicies
 
@@ -90,8 +90,12 @@ GET https://graph.microsoft.com/beta/policies/claimsMappingPolicies
 [!INCLUDE [sample-code](../includes/snippets/java/get-claimsmappingpolicies-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[Go](#tab/go)
+# <a name="go"></a>[Ir](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/get-claimsmappingpolicies-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/get-claimsmappingpolicies-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

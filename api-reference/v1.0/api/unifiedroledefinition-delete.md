@@ -5,18 +5,18 @@ ms.localizationpriority: medium
 author: abhijeetsinha
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: a1c56a9218dddf50cded46b263b18dd08ba5acd4
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: 8a396dd4a99abf8dbaed5e43b32bd35024f614f1
+ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "61008563"
+ms.lasthandoff: 01/20/2022
+ms.locfileid: "62134171"
 ---
 # <a name="delete-unifiedroledefinition"></a>Excluir unifiedRoleDefinition
 
 Namespace: microsoft.graph
 
-[Exclua um objeto unifiedRoleDefinition.](../resources/unifiedRoleDefinition.md) Não é possível excluir funções de dentro.
+[Exclua um objeto unifiedRoleDefinition.](../resources/unifiedRoleDefinition.md) Não é possível excluir funções internas.
 
 ## <a name="permissions"></a>Permissões
 
@@ -83,8 +83,12 @@ DELETE https://graph.microsoft.com/v1.0/roleManagement/directory/roleDefinitions
 [!INCLUDE [sample-code](../includes/snippets/java/delete-unifiedroledefinition-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[Go](#tab/go)
+# <a name="go"></a>[Ir](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/delete-unifiedroledefinition-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/delete-unifiedroledefinition-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

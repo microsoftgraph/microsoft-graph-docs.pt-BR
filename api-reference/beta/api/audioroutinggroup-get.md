@@ -5,12 +5,12 @@ author: ananmishr
 ms.localizationpriority: medium
 ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: 8471a706500d2b139c01d0158a3a588da538e332
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: 5d60f7cf26b689034f7f8df870a50365f82236b2
+ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "60982460"
+ms.lasthandoff: 01/20/2022
+ms.locfileid: "62094975"
 ---
 # <a name="get-audio-routing-group"></a>Obter grupo de roteamento de áudio
 
@@ -81,8 +81,12 @@ GET https://graph.microsoft.com/beta/communications/calls/{id}/audioRoutingGroup
 [!INCLUDE [sample-code](../includes/snippets/java/get-audioroutinggroup-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[Go](#tab/go)
+# <a name="go"></a>[Ir](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/get-audioroutinggroup-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/get-audioroutinggroup-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

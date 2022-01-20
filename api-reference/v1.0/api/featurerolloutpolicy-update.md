@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: madhavpatel6
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: c834641e90b8e806d59dda1f437884ef04e1aa4b
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: 1af3a45901590899fbf099b8b417fa4d2ea8a9f9
+ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "61025370"
+ms.lasthandoff: 01/20/2022
+ms.locfileid: "62100868"
 ---
 # <a name="update-featurerolloutpolicy"></a>Atualizar featurerolloutpolicy
 
@@ -49,7 +49,7 @@ No corpo da solicitação, fornece os valores para propriedades relevantes que d
 | Propriedade     | Tipo        | Descrição |
 |:-------------|:------------|:------------|
 |description|Cadeia de caracteres|Uma descrição dessa política.|
-|displayName|String|O nome de exibição dessa política.|
+|displayName|Cadeia de caracteres|O nome de exibição dessa política.|
 |isAppliedToOrganization|Booliano|Indica se essa política de lançamento de recursos deve ser aplicada a toda a organização.|
 |isEnabled|Booliano|Indica se a adoção de recursos está habilitada.|
 
@@ -96,8 +96,12 @@ Content-type: application/json
 [!INCLUDE [sample-code](../includes/snippets/java/update-featurerolloutpolicy-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[Go](#tab/go)
+# <a name="go"></a>[Ir](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/update-featurerolloutpolicy-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/update-featurerolloutpolicy-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

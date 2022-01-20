@@ -5,12 +5,12 @@ author: markwahl-msft
 ms.localizationpriority: medium
 ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: 9ff75bc5bc2562eee7cba186acaa2e47213df29d
-ms.sourcegitcommit: 65f4e128f96783c18d607a6dcffbc914291285d4
+ms.openlocfilehash: 18bb44656048cc38c05d3d5619e80811938f8765
+ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/08/2021
-ms.locfileid: "61334555"
+ms.lasthandoff: 01/20/2022
+ms.locfileid: "62101869"
 ---
 # <a name="delete-accesspackageassignmentrequest"></a>Excluir accessPackageAssignmentRequest
 
@@ -21,7 +21,7 @@ Namespace: microsoft.graph
 
 Essa solicitação pode ser feita para remover uma solicitação negada ou concluída.  Não é possível excluir uma solicitação de atribuição de pacote de acesso se ela tiver objetos **accessPackageAssignment.**
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>Permissões
 
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
@@ -83,8 +83,12 @@ DELETE https://graph.microsoft.com/v1.0/identityGovernance/entitlementManagement
 [!INCLUDE [sample-code](../includes/snippets/java/delete-accesspackageassignmentrequest-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[Go](#tab/go)
+# <a name="go"></a>[Ir](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/delete-accesspackageassignmentrequest-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/delete-accesspackageassignmentrequest-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

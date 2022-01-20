@@ -5,12 +5,12 @@ author: sharad-sharma-msft
 ms.localizationpriority: medium
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: 8ab5d36dd248df367ec7ff6168b0c921226117fb
-ms.sourcegitcommit: 7a0f9f1a535795c6f77c80e02fd97581c36f1273
+ms.openlocfilehash: a2b472d8a88fa6bc5e43ab285d5887cc6dad0ec0
+ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/27/2021
-ms.locfileid: "61608896"
+ms.lasthandoff: 01/20/2022
+ms.locfileid: "62101106"
 ---
 # <a name="delete-educationassignmentresource"></a>Excluir educationAssignmentResource
 
@@ -76,8 +76,12 @@ DELETE https://graph.microsoft.com/v1.0/education/classes/72a7baec-c3e9-4213-a85
 [!INCLUDE [sample-code](../includes/snippets/java/delete-educationassignmentresource-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[Go](#tab/go)
+# <a name="go"></a>[Ir](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/delete-educationassignmentresource-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/delete-educationassignmentresource-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

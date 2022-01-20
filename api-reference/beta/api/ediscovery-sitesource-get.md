@@ -5,12 +5,12 @@ author: mahage-msft
 ms.localizationpriority: medium
 ms.prod: ediscovery
 doc_type: apiPageType
-ms.openlocfilehash: 78ded63ee5cc016064516ac85a9cf17d2008c4f9
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: 77301d108e1086645d3d81fbd41df22413e7e2d8
+ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "60998574"
+ms.lasthandoff: 01/20/2022
+ms.locfileid: "62133821"
 ---
 # <a name="get-sitesource"></a>Obter siteSource
 
@@ -90,8 +90,12 @@ GET https://graph.microsoft.com/beta/compliance/ediscovery/cases/4c8f8f70-7785-4
 [!INCLUDE [sample-code](../includes/snippets/java/get-sitesource-2-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[Go](#tab/go)
+# <a name="go"></a>[Ir](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/get-sitesource-2-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/get-sitesource-2-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

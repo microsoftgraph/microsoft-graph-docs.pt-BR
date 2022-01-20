@@ -5,12 +5,12 @@ ms.localizationpriority: high
 author: harini84
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: a8ba60e7796fca773352dc1f0b719f57ee8a05ba
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: 6d3018e2fa45ecd8fa83e3382259f6446d0b7329
+ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "61001067"
+ms.lasthandoff: 01/20/2022
+ms.locfileid: "62107758"
 ---
 # <a name="get-calendar"></a>Obter calendário
 
@@ -91,8 +91,12 @@ GET https://graph.microsoft.com/v1.0/me/calendar
 [!INCLUDE [sample-code](../includes/snippets/java/get-calendar-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[Go](#tab/go)
+# <a name="go"></a>[Ir](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/get-calendar-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/get-calendar-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

@@ -1,16 +1,16 @@
 ---
 title: Tipo de recurso connectorGroup
 description: Representa um Application Proxy connectorGroup.
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: applications
 author: japere
 doc_type: resourcePageType
-ms.openlocfilehash: df3a80c6dfd4004daccfe33045c8775c2e2e6e48
-ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
+ms.openlocfilehash: b5fc35d95479d8671ba4fd15f47f6beb857b9448
+ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "50958805"
+ms.lasthandoff: 01/20/2022
+ms.locfileid: "62088918"
 ---
 # <a name="connectorgroup-resource-type"></a>Tipo de recurso connectorGroup
 
@@ -18,7 +18,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Cada conector proxy de aplicativo [do Azure AD](https://aka.ms/whyappproxy) sempre faz parte de um grupo de conectores. Todos os conectores que pertencem ao mesmo grupo de conectores atuam como uma unidade separada para balanceamento de carga e alta disponibilidade. Se você não criar grupos de conectores, todos os conectores serão parte do grupo padrão. Ao configurar um aplicativo com Proxy de Aplicativo, você também deve especificar a qual grupo de conectores atribuir o aplicativo.
+Cada conector proxy de aplicativo [do Azure AD](/azure/active-directory/app-proxy/what-is-application-proxy) sempre faz parte de um grupo de conectores. Todos os conectores que pertencem ao mesmo grupo de conectores atuam como uma unidade separada para balanceamento de carga e alta disponibilidade. Se você não criar grupos de conectores, todos os conectores serão parte do grupo padrão. Ao configurar um aplicativo com Proxy de Aplicativo, você também deve especificar a qual grupo de conectores atribuir o aplicativo.
 
 Depois que um grupo de conectores for criado, você poderá adicionar ou mover conectores para o grupo do conector usando [Add connector](../api/connectorgroup-post-members.md). Você também pode usar [o aplicativo Add](../api/connectorgroup-post-applications.md) para atribuir um aplicativo a um grupo de conectores.
 
@@ -40,7 +40,7 @@ Depois que um grupo de conectores for criado, você poderá adicionar ou mover c
 | Propriedade     | Tipo   |Descrição|
 |:---------------|:--------|:----------|
 |connectorGroupType|connectorGroupType| Indica o tipo de agente híbrido. Este pré-definido pelo sistema. Os valores possíveis são: `applicationProxy` . Somente leitura. |
-|id|cadeia de caracteres| Identificador exclusivo para este connectorGroup. Somente leitura. |
+|id|string| Identificador exclusivo para este connectorGroup. Somente leitura. |
 |isDefault|booliano| Indica se o connectorGroup é o connectorGroup padrão. Somente um único grupo de conectores pode ser o connectorGroup padrão e isso é pré-definido pelo sistema. Somente leitura. |
 |name|string| O nome associado ao connectorGroup. |
 |region|connectorGroupRegion| A região à que o connectorGroup é atribuído e otimizará o tráfego. Essa região só poderá ser definida se **nenhum conector ou aplicativo** for atribuído ao connectorGroup. Os valores possíveis são: `nam` (para **a América do Norte**), (para a `eur` Europa), (para a `aus` Austrália), (para a `asia` Ásia), `ind` (para a Índia) e `unknownFutureValue` .|
@@ -49,7 +49,7 @@ Depois que um grupo de conectores for criado, você poderá adicionar ou mover c
 | Relação | Tipo   |Descrição|
 |:---------------|:--------|:----------|
 |applications|Coleção [application](application.md)| Somente leitura. Anulável.|
-|members|[coleção connector](connector.md)| Somente leitura. Anulável.|
+|membros|[coleção connector](connector.md)| Somente leitura. Anulável.|
 
 ## <a name="json-representation"></a>Representação JSON
 
@@ -86,6 +86,3 @@ Veja a seguir uma representação JSON do recurso.
   "suppressions": []
 }
 -->
-
-
-

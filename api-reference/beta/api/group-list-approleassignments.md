@@ -5,12 +5,12 @@ ms.localizationpriority: high
 doc_type: apiPageType
 ms.prod: groups
 author: psignoret
-ms.openlocfilehash: a4804c824bd078d0bf89a7a2598cbad8d055fe2a
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: eba08369b5260c2a22cedfc3887495a47b0d51d6
+ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "61022283"
+ms.lasthandoff: 01/20/2022
+ms.locfileid: "62127815"
 ---
 # <a name="list-approleassignments-granted-to-a-group"></a>Listar appRoleAssignments concedido a um grupo
 
@@ -87,8 +87,12 @@ GET https://graph.microsoft.com/beta/groups/7679d9a4-2323-44cd-b5c2-673ec88d8b12
 [!INCLUDE [sample-code](../includes/snippets/java/group-get-approleassignments-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[Go](#tab/go)
+# <a name="go"></a>[Ir](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/group-get-approleassignments-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/group-get-approleassignments-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

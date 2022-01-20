@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 doc_type: apiPageType
 ms.prod: identity-and-sign-in
 author: psignoret
-ms.openlocfilehash: 7ec68815f9b614269ff0e179226768d53d7ee532
-ms.sourcegitcommit: 3e2239e60b6dc53997b7d4356a20fc3d365d6238
+ms.openlocfilehash: 806db05dd963d58ebb7d541824ec1824926cc719
+ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/02/2021
-ms.locfileid: "61266019"
+ms.lasthandoff: 01/20/2022
+ms.locfileid: "62093987"
 ---
 # <a name="list-permissiongrantpolicies"></a>Listar permissionGrantPolicies
 
@@ -88,8 +88,12 @@ GET https://graph.microsoft.com/beta/policies/permissionGrantPolicies
 [!INCLUDE [sample-code](../includes/snippets/java/list-permissiongrantpolicies-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[Go](#tab/go)
+# <a name="go"></a>[Ir](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/list-permissiongrantpolicies-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/list-permissiongrantpolicies-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

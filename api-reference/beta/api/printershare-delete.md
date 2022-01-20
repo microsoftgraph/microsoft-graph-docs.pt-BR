@@ -5,12 +5,12 @@ author: braedenp-msft
 ms.localizationpriority: medium
 ms.prod: universal-print
 doc_type: apiPageType
-ms.openlocfilehash: 2c4567986467613b6a05e2989697a5f841198979
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: 1abcb6cfdf6ac342b800e2f4b963535421cca50d
+ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "60997082"
+ms.lasthandoff: 01/20/2022
+ms.locfileid: "62132996"
 ---
 # <a name="delete-printershare"></a>Eliminar printerShare
 
@@ -76,8 +76,12 @@ DELETE https://graph.microsoft.com/beta/print/shares/{id}
 [!INCLUDE [sample-code](../includes/snippets/java/delete-printershare-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[Go](#tab/go)
+# <a name="go"></a>[Ir](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/delete-printershare-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/delete-printershare-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

@@ -5,12 +5,12 @@ author: nkramer
 ms.localizationpriority: medium
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 7caf3235af94b11469f6cdd17c30d758c8c094ef
-ms.sourcegitcommit: bfd1ab7e015ef04cb2ca3fb85d308ba2ce830a89
+ms.openlocfilehash: 0128facc7c0ee69a7c46b44af09da4b9ed8e84f6
+ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/19/2022
-ms.locfileid: "62072324"
+ms.lasthandoff: 01/20/2022
+ms.locfileid: "62128348"
 ---
 # <a name="update-team"></a>Atualizar equipe
 
@@ -98,6 +98,10 @@ Content-type: application/json
 
 # <a name="go"></a>[Ir](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/update-team-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/update-team-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
