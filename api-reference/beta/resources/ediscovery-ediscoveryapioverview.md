@@ -5,12 +5,12 @@ ms.localizationpriority: high
 author: mahage-msft
 ms.prod: ediscovery
 doc_type: conceptualPageType
-ms.openlocfilehash: 239704caecba229e66959276effa77091965efa1
-ms.sourcegitcommit: c333953a9188b4cd4a9ab94cbe68871e8f3563e5
+ms.openlocfilehash: 655636052c849e42b977b0dbca121b4f8b62c21b
+ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/30/2021
-ms.locfileid: "58696397"
+ms.lasthandoff: 01/20/2022
+ms.locfileid: "62101890"
 ---
 # <a name="use-the-microsoft-graph-ediscovery-api"></a>Usar a API de Descoberta Eletrônica do Microsoft Graph
 
@@ -32,7 +32,7 @@ A API da Descoberta Eletrônica é definida no subnamespace OData, microsoft.gra
 |:-|:-|:-|
 | Caso | [microsoft.graph.ediscovery.case](ediscovery-case.md) | O contêiner para todos os objetos de Descoberta Eletrônica, incluindo custodiantes, retenções, pesquisas, conjuntos de revisões e exportações. |
 | Custodian | [microsoft.graph.ediscovery.custodian](ediscovery-custodian.md) | Uma pessoa e os dados sobre os quais ela tem controle administrativo. Quando os custodiantes são identificados, *Descoberta Eletrônica Avançada* pode armazenar, pesquisar, selecionar e exportar seus dados. Para detalhes, consulte [Trabalhar com custodiantes e fontes de dados não custodiais na Descoberta Eletrônica Avançada](/microsoft-365/compliance/managing-custodians).|
-| Retenção legal | [microsoft.graph.ediscovery.legalHold](ediscovery-legalhold.md) | Usado para retenção de conteúdo para litígios e propósitos legais. A retenção de informações legais não deve ser confundida ou usada como guarda de documentos, que normalmente é usada para cumprir regulamentações governamentais ou do setor. Para saber mais, consulte [Gerenciar retenções na Descoberta Eletrônica Avançada](https://docs.microsoft.com/microsoft-365/compliance/managing-holds).|
+| Retenção legal | [microsoft.graph.ediscovery.legalHold](ediscovery-legalhold.md) | Usado para retenção de conteúdo para litígios e propósitos legais. A retenção de informações legais não deve ser confundida ou usada como guarda de documentos, que normalmente é usada para cumprir regulamentações governamentais ou do setor. Para saber mais, consulte [Gerenciar retenções na Descoberta Eletrônica Avançada](/microsoft-365/compliance/managing-holds).|
 | Conjuntos de revisão| [microsoft.graph.ediscovery.reviewSet](ediscovery-reviewset.md) | Um conjunto estático de informações armazenadas eletronicamente coletadas para uso em um litígio, investigação ou solicitação regulatória. |
 | Resumo do conjunto de consulta | [microsoft.graph.ediscovery.reviewSetQuery](ediscovery-reviewsetquery.md) | Usado para descobrir, selecionar, revisar e marcar [ESI](https://en.wikipedia.org/wiki/Electronically_stored_information_(Federal_Rules_of_Civil_Procedure)) com o objetivo de produção para o solicitante ou advogado oposto.|
 | Coleção fonte| [microsoft.graph.ediscovery.sourceCollection](ediscovery-sourcecollection.md)| Comumente conhecido como pesquisas, permite que você colete dados dos serviços ativos do Microsoft 365, como Exchange, SharePoint e Teams. Coleções de fontes podem ser adicionadas a um conjunto de revisões para selecionar e, eventualmente, exportar dados relevantes para o seu caso. Para detalhes, consulte [Coletar dados para um caso na Descoberta Eletrônica Avançada](/microsoft-365/compliance/collecting-data-for-ediscovery).|

@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: madansr7
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: b535999e529dcf8f67cdf9c68fe3f14163ed8beb
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: c1d1e150d0eae6ed820b4ed0963a010b3bcfcea1
+ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "61017516"
+ms.lasthandoff: 01/20/2022
+ms.locfileid: "62098488"
 ---
 # <a name="update-tenantappmanagementpolicy"></a>Atualizar tenantAppManagementPolicy
 
@@ -51,7 +51,7 @@ No corpo da solicitação, fornece os valores para campos relevantes do [tenantA
 
 | Propriedade                | Tipo                                                                        | Descrição |
 |:------------------------|:----------------------------------------------------------------------------|:----------------------------------------------------|
-| displayName                  | String                                                                   | O nome de exibição da política padrão. Herdado de [policyBase](../resources/policybase.md).                                |
+| displayName                  | Cadeia de caracteres                                                                   | O nome de exibição da política padrão. Herdado de [policyBase](../resources/policybase.md).                                |
 | description                  | Cadeia de caracteres                                                                   | A descrição da política padrão. Herdado de [policyBase](../resources/policybase.md).                                |
 | isEnabled                    | Booliano                                                                  | Indica se a política está habilitada. O valor padrão é falso.                                    |
 | applicationRestrictions      | [appManagementConfiguration](../resources/appManagementConfiguration.md) | Restrições que se aplicam como padrão a todos os objetos de aplicativo no locatário.               |
@@ -130,8 +130,12 @@ Content-Type: application/json
 [!INCLUDE [sample-code](../includes/snippets/java/update-tenantappmanagementpolicy-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[Go](#tab/go)
+# <a name="go"></a>[Ir](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/update-tenantappmanagementpolicy-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/update-tenantappmanagementpolicy-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

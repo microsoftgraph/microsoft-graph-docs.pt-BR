@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: akumar39
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 6183cd8c17aacc359f8780f9606c1bdcaacc6145
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: 334ff06f7471c6d7367b02c773a493313ba189e5
+ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "61020071"
+ms.lasthandoff: 01/20/2022
+ms.locfileid: "62104124"
 ---
 # <a name="update-workforceintegration"></a>Atualizar workforceIntegration
 
@@ -54,7 +54,7 @@ No corpo da solicitação, forneça os valores para os campos relevantes que dev
 |displayName|Cadeia de caracteres|Nome da integração da força de trabalho.|
 |encryption|workforceIntegrationEncryption|O recurso de criptografia de integração de força de trabalho. |
 |isActive|Booliano|Indica se essa integração de força de trabalho está ativa e disponível no momento.|
-|supportedEntities|cadeia de caracteres| Os possíveis valores são: `none`, `shift`, `swapRequest`, `openshift`, `openShiftRequest`, `userShiftPreferences`. Se selecionar mais de um valor, todos os valores devem começar com a primeira letra em maiúscula.|
+|supportedEntities|string| Os possíveis valores são: `none`, `shift`, `swapRequest`, `openshift`, `openShiftRequest`, `userShiftPreferences`. Se selecionar mais de um valor, todos os valores devem começar com a primeira letra em maiúscula.|
 |url|Cadeia de caracteres| URL de integração de força de trabalho para retornos de chamada do serviço de turno. |
 
 ## <a name="response"></a>Resposta
@@ -106,8 +106,12 @@ Content-type: application/json
 [!INCLUDE [sample-code](../includes/snippets/java/update-workforceintegration-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[Go](#tab/go)
+# <a name="go"></a>[Ir](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/update-workforceintegration-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/update-workforceintegration-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

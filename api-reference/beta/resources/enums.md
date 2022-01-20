@@ -5,16 +5,23 @@ doc_type: enumPageType
 ms.localizationpriority: medium
 ms.prod: non-product-specific
 author: MSGraphDocsvTeam
-ms.openlocfilehash: 507088d2c71137ab416ba39629c8607bf7554e83
-ms.sourcegitcommit: 12f07c009c57db3cc9174b165b5ec30195c00996
+ms.openlocfilehash: 17fd1b8df73c16dea859fc9a35ae12c19a0b381a
+ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/30/2021
-ms.locfileid: "61646752"
+ms.lasthandoff: 01/20/2022
+ms.locfileid: "62104964"
 ---
 # <a name="enum-values"></a>Valores denum
 
 Namespace: microsoft.graph
+
+### <a name="usersigninrecommendationscope-values"></a>valores userSignInRecommendationScope 
+
+|Member|
+|:---|
+|locatário|
+|aplicação|
 
 ### <a name="incomingtokentype-values"></a>valores incomingTokenType 
 
@@ -213,7 +220,7 @@ Namespace: microsoft.graph
 
 |Member|
 |:---|
-|String|
+|Cadeia de caracteres|
 |Inteiro|
 |Referência|
 |Binária|
@@ -747,6 +754,15 @@ Namespace: microsoft.graph
 |fraco|
 |desconhecido|
 
+### <a name="authenticationcontextdetail-values"></a>Valores authenticationContextDetail
+
+|Member|
+|:---|
+|obrigatório|
+|previouslySatisfied|
+|notApplicable|
+|unknownFutureValue|
+
 ### <a name="educationaddedstudentaction-values"></a>valores educationAddedStudentAction
 
 |Member|
@@ -790,6 +806,19 @@ Namespace: microsoft.graph
 |habilitadas|
 |desabilitadas|
 |unknownFutureValue|
+
+### <a name="expirationrequirement-values"></a>expirationRequirement values
+
+|Member|
+|:---|
+|rememberMultifactorAuthenticationOnTrustedDevices|
+|tenantTokenLifetimePolicy|
+|audienceTokenLifetimePolicy|
+|signInFrequencyPeriodicReauthentication|
+|ngcMfa|
+|signInFrequencyEveryTime|
+|unknownFutureValue|
+
 
 ### <a name="replyrestriction-values"></a>valores replyRestriction
 
@@ -1445,7 +1474,7 @@ Namespace: microsoft.graph
 | Automático
 | noPreview
 | checklist
-| descrição
+| description
 | referência
 
 
@@ -1891,6 +1920,9 @@ Valores possíveis para tipos de conta de usuário (associação ao grupo), por 
 |ADFederationServices|
 |unknownFutureValue|
 |AzureADBackupAuth|
+|ADFederationServicesMFAAdapter|
+|NPSExtension|
+
 
 ### <a name="riskdetectiontimingtype-values"></a>valores riskDetectionTimingType
 
@@ -2370,7 +2402,7 @@ Valores possíveis para tipos de conta de usuário (associação ao grupo), por 
 
 |Membro    |Valor    |Descrição |
 |:---------|:--------|:----------- |
-|equipe      |0        |Indica que o aplicativo Teams pode ser instalado em uma equipe e está autorizado a acessar os dados dessa equipe.|
+|team      |0        |Indica que o aplicativo Teams pode ser instalado em uma equipe e está autorizado a acessar os dados dessa equipe.|
 |groupChat |1        |Indica que o aplicativo Teams pode ser instalado em um chat de grupo e está autorizado a acessar os dados desse chat de grupo.|
 |pessoal  |2        |Indica que o aplicativo Teams pode ser instalado no escopo pessoal de um usuário e está autorizado a acessar os dados desse usuário.|
 
@@ -2543,8 +2575,8 @@ Valores possíveis para tipos de conta de usuário (associação ao grupo), por 
 
 |Member|
 |:---|
-|equipe|
-|canal|
+|team|
+|channel|
 |chat|
 |unknownFutureValue|
 

@@ -2,15 +2,15 @@
 author: swapnil1993
 title: 'contentType: isPublished'
 description: Verifique o status de publicação de um tipo de conteúdo em um site de hub de tipo de conteúdo.
-localization_priority: Normal
+ms.localizationpriority: medium
 doc_type: apiPageType
 ms.prod: sites-and-lists
-ms.openlocfilehash: e61d488dddc9797c3f0623a3e534f54b1bab4708
-ms.sourcegitcommit: 486fe9c77d4d89c5416bb83e8c716e6918c47370
+ms.openlocfilehash: aab304fed276e9794cc1bb2d0536f19e82ef22ac
+ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/15/2021
-ms.locfileid: "53439402"
+ms.lasthandoff: 01/20/2022
+ms.locfileid: "62100350"
 ---
 # <a name="contenttype-ispublished"></a>contentType: isPublished
 Namespace: microsoft.graph
@@ -18,14 +18,14 @@ Namespace: microsoft.graph
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 Verifique o status de publicação de um [contentType][] em um site de hub de tipo de conteúdo.
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>Permissões
 
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegada (conta corporativa ou de estudante) | Sites.FullControl.All    |
-|Delegada (conta pessoal da Microsoft) | Não suportado   |
+|Delegado (conta corporativa ou de estudante) | Sites.FullControl.All    |
+|Delegado (conta pessoal da Microsoft) | Não suportado   |
 |Aplicativo | Sites.FullControl.All |
 
 ## <a name="http-request"></a>Solicitação HTTP
@@ -75,6 +75,10 @@ GET https://graph.microsoft.com/beta/sites/{siteId}/contentTypes/{contentTypeId}
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/contenttype-ispublished-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[Ir](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/contenttype-ispublished-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

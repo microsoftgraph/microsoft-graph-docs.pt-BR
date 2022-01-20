@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: videor
 ms.prod: identity-and-sign-in
 doc_type: resourcePageType
-ms.openlocfilehash: a531eb54d7dcb4221cd788a7f615ff006b75a648
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 234e0cda7f379477d5780fd554098e4931417884
+ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59129940"
+ms.lasthandoff: 01/20/2022
+ms.locfileid: "62104068"
 ---
 # <a name="conditionalaccesssessioncontrols-resource-type"></a>Tipo de recurso conditionalAccessSessionControls
 
@@ -25,6 +25,7 @@ Todos os controles de sessão herdam [de conditionalAccessSessionControl](condit
 |:-------------|:------------|:------------|
 |applicationEnforcedRestrictions|[applicationEnforcedRestrictionsSessionControl](applicationenforcedrestrictionssessioncontrol.md)| Controle de sessão para impor restrições de aplicativo. Somente Exchange Online e o Sharepoint Online suportam esse controle de sessão. |
 |cloudAppSecurity|[cloudAppSecuritySessionControl](cloudappsecuritysessioncontrol.md)| Controle de sessão para aplicar a segurança do aplicativo na nuvem.|
+|disableResilienceDefaults|Booliano| Controle de sessão que determina se é aceitável para o Azure AD estender sessões existentes com base nas informações coletadas antes de uma paralisação ou não.|
 |persistentBrowser|[persistentBrowserSessionControl](persistentbrowsersessioncontrol.md)| Controle de sessão para definir se os cookies serão persistentes ou não. Todos os aplicativos devem ser selecionados para que esse controle de sessão funcione corretamente. |
 |signInFrequency|[signInFrequencySessionControl](signinfrequencysessioncontrol.md)| Controle de sessão para impor a frequência de signin.|
 
@@ -42,7 +43,8 @@ Veja a seguir uma representação JSON do recurso.
     "applicationEnforcedRestrictions",
     "persistentBrowser",
     "cloudAppSecurity",
-    "signInFrequency"
+    "signInFrequency",
+    "disableResilienceDefaults"
   ],
   "@odata.type": "microsoft.graph.conditionalAccessSessionControls",
   "baseType": null
@@ -53,7 +55,8 @@ Veja a seguir uma representação JSON do recurso.
   "applicationEnforcedRestrictions": {"@odata.type": "microsoft.graph.applicationEnforcedRestrictionsSessionControl"},
   "cloudAppSecurity": {"@odata.type": "microsoft.graph.cloudAppSecuritySessionControl"},
   "persistentBrowser": {"@odata.type": "microsoft.graph.persistentBrowserSessionControl"},
-  "signInFrequency": {"@odata.type": "microsoft.graph.signInFrequencySessionControl"}
+  "signInFrequency": {"@odata.type": "microsoft.graph.signInFrequencySessionControl"},
+  "disableResilienceDefaults": false
 }
 ```
 

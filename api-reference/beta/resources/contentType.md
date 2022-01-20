@@ -2,15 +2,15 @@
 author: daspek
 description: O recurso contentType representa um tipo de conteúdo no SharePoint.
 title: contentType
-localization_priority: Normal
+ms.localizationpriority: medium
 doc_type: resourcePageType
 ms.prod: sites-and-lists
-ms.openlocfilehash: bcd888d01f47b98fa5a55a4b6da2fdfe2028e05b
-ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
+ms.openlocfilehash: 5a0f8fb70900e4498a17db4bc7ba75337c3e4c4d
+ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "50962655"
+ms.lasthandoff: 01/20/2022
+ms.locfileid: "62111553"
 ---
 # <a name="contenttype-resource-type"></a>Tipo de recurso contentType
 
@@ -18,7 +18,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Representa um tipo de conteúdo no SharePoint.
+Representa um tipo de conteúdo SharePoint.
 Os tipos de conteúdo permitem definir um conjunto de colunas que devem estar presentes em cada [**listItem**][listItem] em uma [**lista**][list].
 
 ## <a name="methods"></a>Métodos
@@ -47,7 +47,7 @@ Os tipos de conteúdo permitem definir um conjunto de colunas que devem estar pr
 | **description**   | string               | O texto descritivo do item.
 | **group**         | string               | O nome do grupo ao qual esse tipo de conteúdo pertence. Ajuda a organizar os tipos de conteúdo relacionados.
 | **hidden**        | Booliano              | Indica se o tipo de conteúdo está oculto no menu “Novo” da lista.
-| **id**            | cadeia de caracteres               | O identificador exclusivo do tipo de conteúdo.
+| **id**            | string               | O identificador exclusivo do tipo de conteúdo.
 | **inheritedFrom** | [itemReference][]    | Se esse tipo de conteúdo for herdado de outro escopo (como um site), fornece uma referência para o item no qual o tipo de conteúdo foi definido.
 | **name**          | string               | O nome do tipo de conteúdo.
 | **order**         | [contentTypeOrder][] | Especifica a ordem na qual o tipo de conteúdo aparece na seleção da interface do usuário.
@@ -55,7 +55,7 @@ Os tipos de conteúdo permitem definir um conjunto de colunas que devem estar pr
 | **readOnly**      | Booliano              | Se `true`, o tipo de conteúdo não pode ser modificado, a menos que esse valor seja definido primeiro como `false`.
 | **sealed**        | Booliano              | Se `true`, o tipo de conteúdo não pode ser modificado por usuários ou por operações de push-down. Somente administradores de conjunto de sites podem lacrar ou retirar o lacre dos tipos de conteúdo.
 | **isBuiltIn**            | Booliano| Especifica se um tipo de conteúdo é um tipo de conteúdo integrado. 
-| **documentSet**       | [documentSet][]      | [Metadados do Conjunto](https://docs.microsoft.com/sharepoint/governance/document-set-planning#about-document-sets) de Documentos.
+| **documentSet**       | [documentSet][]      | [Metadados do Conjunto](/sharepoint/governance/document-set-planning#about-document-sets) de Documentos.
 | **documentTemplate**  | [documentSetContent][] | Metadados do modelo de documento. Para garantir que os documentos tenham conteúdo consistente em um site e seus subsites, você pode associar um modelo do Word, Excel ou PowerPoint a um tipo de conteúdo de site.
 | **associatedHubsUrls**       | Collection(string) | Lista de URLs canônicas para sites de hub aos quais esse tipo de conteúdo está associado. Isso conterá todos os hubsites em que esse tipo de conteúdo está na fila para ser imposto ou já está imposto. Impor um tipo de conteúdo significa que o tipo de conteúdo será aplicado às listas nos sites imposto.
 | **propagateChanges**   | Booliano              | If `true` , any changes made to the content type will be pushed to inherited content types and lists that implement the content type.
@@ -126,5 +126,3 @@ A seguir está uma representação JSON de um **recurso contentType.**
   "suppressions": []
 }
 -->
-
-

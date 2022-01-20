@@ -5,12 +5,12 @@ ms.localizationpriority: high
 author: preetikr
 ms.prod: security
 doc_type: resourcePageType
-ms.openlocfilehash: 636a09bb7d0836ab7b814f978ecf38ee14416f8e
-ms.sourcegitcommit: c900d22144429ac7aecae3355a4cdc1987cc4234
+ms.openlocfilehash: 86a26afb9bba3421fa2ceaa8fbad035e2f47b6fa
+ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/13/2021
-ms.locfileid: "61424746"
+ms.lasthandoff: 01/20/2022
+ms.locfileid: "62129264"
 ---
 # <a name="use-the-microsoft-graph-security-api"></a>Usar a API de Segurança do Microsoft Graph
 
@@ -148,12 +148,10 @@ Precisa de mais ideias? Veja [como alguns de nossos parceiros usam o Microsoft G
 
 Explore outras opções para se conectar com a API de segurança da Microsoft Graph:
 
-- [Conectores de Segurança do Microsoft Graph para Aplicativos de Lógica, Flow e PowerApps](https://aka.ms/graphsecurityconnectors)
+- [Conectores de Segurança do Microsoft Graph para Aplicativos de Lógica, Flow e PowerApps](/azure/connectors/connectors-integrate-security-operations-create-api-microsoft-graph-security)
 - [Exemplos de bloco de anotações Jupyter](https://aka.ms/graphsecurityjupyternotebooks)
 
 Participe da comunidade:
 
 - [Junte-se à comunidade técnica](https://techcommunity.microsoft.com/t5/microsoft-graph-security-api/bd-p/SecurityGraphAPI)
 - [Discussão no StackOverflow](https://stackoverflow.com/questions/tagged/microsoft-graph-security)
-
-

@@ -1,16 +1,16 @@
 ---
 title: Listar calendarView
-description: Obter as ocorrências, exceções e instâncias únicas de eventos em uma exibição de calendário definida por um intervalo de tempo,
+description: Obter as ocorrências, exceções e instâncias únicas de eventos em um modo de exibição de calendário definido por um intervalo de tempo, a partir do calendário padrão do usuário,
 ms.localizationpriority: medium
 author: harini84
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 57bece413ef8841a57adaefb0dcfadc00d3fa666
-ms.sourcegitcommit: 7a0f9f1a535795c6f77c80e02fd97581c36f1273
+ms.openlocfilehash: 73c64648ce02d63e4d8d6f6979b0c45e0164ddbd
+ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/27/2021
-ms.locfileid: "61608735"
+ms.lasthandoff: 01/20/2022
+ms.locfileid: "62106764"
 ---
 # <a name="list-calendarview"></a>Listar calendarView
 
@@ -18,7 +18,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Obter as ocorrências, exceções e instâncias únicas de eventos em um modo de exibição de calendário definido por um intervalo de tempo, do calendário padrão de um usuário ou de algum outro calendário `(../me/calendarview)` do usuário.
+Obtenha as ocorrências, exceções e instâncias únicas de eventos em um modo de exibição de calendário definido por um intervalo de tempo, do calendário padrão do usuário `(../me/calendarview)` ou de algum outro calendário do usuário.
 
 ## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
@@ -62,7 +62,7 @@ Os valores de `startDateTime` e `endDateTime` são interpretados usando o desloc
 
 Este método também dá suporte a alguns [Parâmetros de consulta OData](/graph/query-parameters) para ajudar a personalizar a resposta.
 
-**CalendarView** com `$top` tem um valor mínimo de 1 e máximo de 1000.
+**CalendarView** com `$top` tem um valor mínimo de 1 e máximo de 1000.
 
 > [!NOTE]
 > As propriedades **createdDateTime** e **lastModifiedDateTime** do [evento](../resources/event.md) não são compatíveis com `$select`. Para obter os valores, basta consultar no **calendarView** sem aplicar `$select`.
@@ -80,7 +80,7 @@ Não forneça um corpo de solicitação para esse método.
 
 Se bem-sucedido, este método retorna um código de resposta `200 OK` e uma coleção de objetos [event](../resources/event.md) no corpo da resposta.
 
-Se o conjunto de resultados abranger várias páginas, **calendarView** retornará uma propriedade **@odata.nextLink** na resposta que contém uma URL para a próxima página de resultados. Consulte [paging](/graph/concepts/paging.md) para obter detalhes.
+Se o conjunto de resultados abranger várias páginas, o **calendarView** retornará uma propriedade **@odata.nextLink** na réplica que contém um URL para a próxima página de resultados. Consulte a [paginação](/graph/concepts/paging.md) para detalhes.
 
 ## <a name="example"></a>Exemplo
 ### <a name="request"></a>Solicitação
@@ -110,8 +110,12 @@ GET https://graph.microsoft.com/beta/me/calendar/calendarView?startDateTime=2017
 [!INCLUDE [sample-code](../includes/snippets/java/get-calendarview-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[Go](#tab/go)
+# <a name="go"></a>[Ir](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/get-calendarview-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/get-calendarview-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

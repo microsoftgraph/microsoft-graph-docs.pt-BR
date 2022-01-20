@@ -5,12 +5,12 @@ author: anniecolonna
 ms.localizationpriority: medium
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 3e5052b5807cc0ce947caf9bcdc1313d3abdddcf
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: b54fecdf51a18354445dd207bbb0c4d6063cb54a
+ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "61017775"
+ms.lasthandoff: 01/20/2022
+ms.locfileid: "62108065"
 ---
 # <a name="create-teamworktag"></a>Criar teamworkTag
 Namespace: microsoft.graph
@@ -52,7 +52,7 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar o trabal
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
 |displayName|Cadeia de caracteres|Nome da marca. O valor não pode ter mais de 40 caracteres.|
-|members| [coleção teamworkTagMember](../resources/teamworktagmember.md) |Membros da equipe a adicionar à marca. De definir a propriedade do identificador de usuário de cada membro. A contagem de membros não deve ter mais de 25.|
+|membros| [coleção teamworkTagMember](../resources/teamworktagmember.md) |Membros da equipe a adicionar à marca. De definir a propriedade do identificador de usuário de cada membro. A contagem de membros não deve ter mais de 25.|
 
 
 
@@ -103,8 +103,12 @@ Content-Type: application/json
 [!INCLUDE [sample-code](../includes/snippets/java/create-teamworktag-from-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[Go](#tab/go)
+# <a name="go"></a>[Ir](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/create-teamworktag-from-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/create-teamworktag-from-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

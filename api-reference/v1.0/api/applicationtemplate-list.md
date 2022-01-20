@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: luleonpla
 ms.prod: applications
 doc_type: apiPageType
-ms.openlocfilehash: ea11332463269cbcf9cae9de556f453fce5226f0
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: 91786e90dd04fb7e35185d5c355dc9a0c3d5c7bf
+ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "60979588"
+ms.lasthandoff: 01/20/2022
+ms.locfileid: "62115124"
 ---
 # <a name="list-applicationtemplates"></a>Listar applicationTemplates
 
@@ -42,7 +42,7 @@ GET /applicationTemplates
 
 Este método dá suporte a alguns parâmetros de consulta OData para ajudar a personalizar a resposta.
 
-- Você pode usar o `$filter` parâmetro de forma limitada. Você só pode filtrar por **displayName** ou **categorias.** Por exemplo, `$filter=contains(displayName, 'salesf')` ou `$filter=categories/any(c:contains(c, 'myCategory'))` .
+- Você pode usar o `$filter` parâmetro de forma limitada. Você só pode filtrar por **displayName** ou **categorias.** Por exemplo: `$filter=contains(displayName, 'salesf')` ou `$filter=categories/any(c:contains(c, 'myCategory'))`.
 - Você pode usar `$orderby` e `$top,` consultar `$skip` parâmetros em qualquer solicitação GET.
 
 Para obter informações gerais, acesse [Parâmetros de consulta OData](/graph/query-parameters).
@@ -93,8 +93,12 @@ GET https://graph.microsoft.com/v1.0/applicationTemplates
 [!INCLUDE [sample-code](../includes/snippets/java/get-applicationtemplates-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[Go](#tab/go)
+# <a name="go"></a>[Ir](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/get-applicationtemplates-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/get-applicationtemplates-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

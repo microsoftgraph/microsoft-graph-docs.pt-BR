@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: preetikr
 ms.prod: security
 doc_type: apiPageType
-ms.openlocfilehash: 0cec69b3c56702ad99779dc7941da2b6b59bbf4c
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: d3e4c65971ad240e5b8ede46a7562f102a4c8ece
+ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "60989461"
+ms.lasthandoff: 01/20/2022
+ms.locfileid: "62115548"
 ---
 # <a name="update-tiindicator"></a>Atualizar tiIndicator
 
@@ -51,17 +51,17 @@ No corpo da solicitação, forneça os valores para os campos relevantes que dev
 
 | Propriedade     | Tipo        | Descrição |
 |:-------------|:------------|:------------|
-|ação|cadeia de caracteres| A ação a ser aplicada se o indicador for matched de dentro da ferramenta de segurança targetProduct. Os valores possíveis são: `unknown`, `allow`, `block`, `alert`.|
-|activityGroupNames|Coleção de cadeias de caracteres|Os nomes(s) de inteligência de ameaças cibernéticas para as partes responsáveis pela atividade mal-intencionada coberta pelo indicador de ameaça.|
+|ação|string| A ação a ser aplicada se o indicador for matched de dentro da ferramenta de segurança targetProduct. Os valores possíveis são: `unknown`, `allow`, `block`, `alert`.|
+|activityGroupNames|Coleção String|Os nomes(s) de inteligência de ameaças cibernéticas para as partes responsáveis pela atividade mal-intencionada coberta pelo indicador de ameaça.|
 |additionalInformation|Cadeia de caracteres|Uma área de catchall na qual os dados extras do indicador não cobertos pelas outras propriedades tiIndicator podem ser colocados. Os dados colocados em additionalInformation normalmente não serão usados pela ferramenta de segurança targetProduct.|
 |confidence|Int32|Um inteiro que representa a confiança dos dados no indicador identifica com precisão comportamento mal-intencionado. Os valores aceitáveis são 0 – 100 com 100 sendo os mais altos.|
-|description|String|Breve descrição (100 caracteres ou menos) da ameaça representada pelo indicador.|
+|description|Cadeia de caracteres|Breve descrição (100 caracteres ou menos) da ameaça representada pelo indicador.|
 |diamondModel|[diamondModel](../resources/tiindicator.md#diamondmodel-values)|A área do Modelo de Diamante na qual esse indicador existe. Os valores possíveis são: `unknown`, `adversary`, `capability`, `infrastructure`, `victim`.|
 |expirationDateTime|DateTimeOffset| Cadeia de caracteres DateTime indicando quando o Indicador expira. Todos os indicadores devem ter uma data de expiração para evitar que os indicadores de stale persistam no sistema. O tipo Timestamp representa informações de data e hora usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite UTC em 1 de janeiro de 2014 é `2014-01-01T00:00:00Z`.|
 |externalId|Cadeia de caracteres|Um número de identificação que vincula o indicador ao sistema do provedor de indicadores (por exemplo, uma chave estrangeira).|
 |isActive|Booliano|Usado para desativar indicadores dentro do sistema. Por padrão, qualquer indicador enviado é definido como ativo. No entanto, os provedores podem enviar indicadores existentes com esse conjunto como "False" para desativar indicadores no sistema.|
 |killChain|[Coleção killChain](../resources/tiindicator.md#killchain-values)|Uma matriz JSON de cadeias de caracteres que descreve qual ponto ou pontos na Cadeia de Kill esse indicador tem como destino. Consulte "valores killChain" abaixo para saber os valores exatos.|
-|knownFalsePositives|String|Cenários em que o indicador pode causar falsos positivos. Este deve ser um texto aceitável para humanos.|
+|knownFalsePositives|Cadeia de caracteres|Cenários em que o indicador pode causar falsos positivos. Este deve ser um texto aceitável para humanos.|
 |lastReportedDateTime|DateTimeOffset|A última vez que o indicador foi visto. O tipo Timestamp representa informações de data e hora usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite UTC em 1 de janeiro de 2014 é `2014-01-01T00:00:00Z`.|
 |malwareFamilyNames|Coleção de cadeias de caracteres|O nome da família de malware associado a um indicador se ele existir. A Microsoft prefere o nome da família de malware da Microsoft, se possível, o que pode ser encontrado por meio da Windows Defender de ameaças [do](https://www.microsoft.com/wdsi/threats)Security Intelligence.|
 |passiveOnly|Booliano|Determina se o indicador deve disparar um evento visível para um usuário final. Quando definida como "true", as ferramentas de segurança não notificarão o usuário final de que ocorreu um "acerto". Isso é tratado com mais frequência como modo de auditoria ou silencioso pelos produtos de segurança, onde eles simplesmente registrarão que ocorreu uma combinação, mas não executarão a ação. O valor padrão é falso.|
@@ -114,8 +114,12 @@ Content-type: application/json
 [!INCLUDE [sample-code](../includes/snippets/java/update-tiindicator-1-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[Go](#tab/go)
+# <a name="go"></a>[Ir](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/update-tiindicator-1-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/update-tiindicator-1-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -173,8 +177,12 @@ Prefer: return=representation
 [!INCLUDE [sample-code](../includes/snippets/java/update-tiindicator-2-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[Go](#tab/go)
+# <a name="go"></a>[Ir](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/update-tiindicator-2-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/update-tiindicator-2-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

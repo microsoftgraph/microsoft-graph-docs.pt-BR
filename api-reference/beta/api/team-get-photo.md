@@ -5,12 +5,12 @@ author: akjo
 ms.localizationpriority: high
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 3e05c5ab8ab5bcf9650285dd7e9c24fffad06b4a
-ms.sourcegitcommit: 71186ad44d8d0df15e10b0f89df68d2ef0cf9d14
+ms.openlocfilehash: 0e39310fcbc3bbe69c13525f74a4d3631e8e8dbc
+ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/12/2022
-ms.locfileid: "61862780"
+ms.lasthandoff: 01/20/2022
+ms.locfileid: "62122929"
 ---
 # <a name="get-team-photo"></a>Obter foto da equipe
 
@@ -32,7 +32,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |Delegado (conta pessoal da Microsoft) | Sem suporte.    |
 |Application | TeamSettings.Read.Group *, TeamSettings.ReadWrite.Group*, Team.ReadBasic.All, TeamSettings.Read.All, TeamSettings.ReadWrite.All, Group.Read.All **, Group.ReadWrite.All**, Directory.Read.All **, Directory.ReadWrite.All**  |
 
-> **Observação**: Permissões marcadas com * usam [consentimento específico de recurso](https://aka.ms/teams-rsc). As permissões marcadas com ** são preteridas e não devem ser usadas.
+> **Observação**: Permissões marcadas com * usam [consentimento específico de recurso](/microsoftteams/platform/graph-api/rsc/resource-specific-consent). As permissões marcadas com ** são preteridas e não devem ser usadas.
 
 > **Observação**: esta API dá suporte a permissões de administrador. Os administradores globais e os administradores de serviços do Microsoft Teams podem acessar equipes das quais não são membros.
 
@@ -59,7 +59,7 @@ Este ponto de extremidade recuperará os dados binários da foto.
 }-->
 
 ```http
-GET /beta/teams/{id}/photo/$value
+GET /teams/{id}/photo/$value
 ```
 
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
@@ -154,5 +154,3 @@ Contém os dados binários da foto solicitada. O código de resposta HTTP é 200
   ]
 }
 -->
-
-
