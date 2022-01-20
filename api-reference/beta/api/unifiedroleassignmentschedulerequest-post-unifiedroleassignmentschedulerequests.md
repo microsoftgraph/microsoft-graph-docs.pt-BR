@@ -5,12 +5,12 @@ author: carolinetempleton
 ms.localizationpriority: medium
 ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: ff9f8a5ac0c57b3b0906c8972d4208535f7f5c8a
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: 3caaa5a39542555f6cc89d2385fd56721bb55beb
+ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "61031538"
+ms.lasthandoff: 01/20/2022
+ms.locfileid: "62098406"
 ---
 # <a name="create-unifiedroleassignmentschedulerequest"></a>Criar unifiedRoleAssignmentScheduleRequest
 Namespace: microsoft.graph
@@ -53,9 +53,9 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar [unified
 |:---|:---|:---|
 |id|Cadeia de caracteres|O identificador exclusivo para unifiedRoleAssignmentScheduleRequest. Chave, não anulada, somente leitura.|
 |ação|Cadeia de caracteres|Representa o tipo da operação na atribuição de função. Os valores possíveis são: <ul><li>`AdminAssign`: Para que os administradores atribuam funções a usuários ou grupos.</li><li>`AdminRemove`: Para que os administradores removam usuários ou grupos de funções.</li><li> `AdminUpdate`: Para que os administradores alterem as atribuições de função existentes.</li><li>`AdminExtend`: Para que os administradores estendam atribuições expiradas.</li><li>`AdminRenew`: Para que os administradores renovem atribuições expiradas.</li><li>`SelfActivate`: Para que os usuários ativem suas atribuições.</li><li>`SelfDeactivate`: Para que os usuários desativem suas atribuições ativas.</li><li>`SelfExtend`: Para que os usuários solicitem estender suas atribuições de expiração.</li><li>`SelfRenew`: Para que os usuários solicitem a renovação de suas atribuições expiradas.</li></ul>
-|principalId|String|Identificador da entidade à qual a atribuição está sendo concedida.|
-|roleDefinitionId|String|Identificador do unifiedRoleDefinition para o que a atribuição se destina. Somente leitura.|
-|directoryScopeId|String|Identificador do objeto directory que representa o escopo da atribuição. O escopo de uma atribuição determina o conjunto de recursos para os quais a entidade foi concedida acesso. Os escopos de diretório são escopos compartilhados armazenados no diretório que são compreendidos por vários aplicativos. Use `/` para escopo de todo o locatário. Use **appScopeId** para limitar o escopo somente a um aplicativo. |
+|principalId|Cadeia de caracteres|Identificador da entidade à qual a atribuição está sendo concedida.|
+|roleDefinitionId|Cadeia de caracteres|Identificador do unifiedRoleDefinition para o que a atribuição se destina. Somente leitura.|
+|directoryScopeId|Cadeia de caracteres|Identificador do objeto directory que representa o escopo da atribuição. O escopo de uma atribuição determina o conjunto de recursos para os quais a entidade foi concedida acesso. Os escopos de diretório são escopos compartilhados armazenados no diretório que são compreendidos por vários aplicativos. Use `/` para escopo de todo o locatário. Use **appScopeId** para limitar o escopo somente a um aplicativo. |
 |appScopeId|Cadeia de caracteres|Identificador do escopo específico do aplicativo quando o escopo de atribuição for específico do aplicativo. O escopo de uma atribuição determina o conjunto de recursos para os quais a entidade foi concedida acesso. Os escopos do aplicativo são escopos definidos e compreendidos somente por esse aplicativo. Use `/` para escopos de aplicativos de todo o locatário. Use **directoryScopeId** para limitar o escopo a objetos de diretório específicos, por exemplo, unidades administrativas.|
 |isValidationOnly|Booliano|Especifica se a chamada é uma validação ou uma chamada real. De definir essa propriedade somente se você quiser verificar se uma ativação está sujeita a regras adicionais, como MFA, antes de realmente enviar a solicitação.|
 |targetScheduleId|Cadeia de caracteres|ID do objeto schedule anexado à atribuição.|
@@ -117,8 +117,12 @@ Content-Type: application/json
 [!INCLUDE [sample-code](../includes/snippets/java/create-unifiedroleassignmentschedulerequest-from-unifiedroleassignmentschedulerequests-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[Go](#tab/go)
+# <a name="go"></a>[Ir](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/create-unifiedroleassignmentschedulerequest-from-unifiedroleassignmentschedulerequests-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/create-unifiedroleassignmentschedulerequest-from-unifiedroleassignmentschedulerequests-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -231,8 +235,12 @@ Content-Type: application/json
 [!INCLUDE [sample-code](../includes/snippets/java/create-unifiedroleassignmentschedulerequest-from-unifiedroleassignmentschedulerequests-selfactivate-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[Go](#tab/go)
+# <a name="go"></a>[Ir](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/create-unifiedroleassignmentschedulerequest-from-unifiedroleassignmentschedulerequests-selfactivate-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/create-unifiedroleassignmentschedulerequest-from-unifiedroleassignmentschedulerequests-selfactivate-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

@@ -5,12 +5,12 @@ author: nkramer
 ms.localizationpriority: high
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 0593d5f1588c5737aff03357d5ab23348d87a164
-ms.sourcegitcommit: ba46f9f77d1e0eb9c7f5b2f4366534bfcf99d9c0
+ms.openlocfilehash: c082d50af07d7a6652fe2c15f8e0676c5dbe46e9
+ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/17/2021
-ms.locfileid: "61561521"
+ms.lasthandoff: 01/20/2022
+ms.locfileid: "62098349"
 ---
 # <a name="list-joinedteams"></a>Listar joinedTeams
 
@@ -54,7 +54,7 @@ Não forneça um corpo de solicitação para esse método.
 
 ## <a name="response"></a>Resposta
 
-Se tiver êxito, este método retornará um `200 OK`código de resposta e uma coleção de objetos de [equipe](../resources/team.md) no corpo da resposta.
+Se for bem-sucedido, este método retorna um `200 OK` código de resposta e uma coleção de objetos [equipe](../resources/team.md) no corpo da resposta.
 
 > [!Note]
 > Atualmente, essa chamada à API retorna apenas as propriedades **ID**, **displayName** e **description** de uma [equipe](../resources/team.md). Para obter todas as propriedades, use a operação[Obter equipe](../api/team-get.md). Para saber mais, confira [problemas conhecidos](/graph/known-issues#unable-to-return-all-values-for-properties-for-a-user-joined-teams).
@@ -87,8 +87,12 @@ GET https://graph.microsoft.com/beta/me/joinedTeams
 [!INCLUDE [sample-code](../includes/snippets/java/get-joinedteams-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[Go](#tab/go)
+# <a name="go"></a>[Ir](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/get-joinedteams-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/get-joinedteams-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 doc_type: apiPageType
 ms.prod: groups
 author: psignoret
-ms.openlocfilehash: fc69cb7ec9c04d995889d2b9643027d74ae2c45b
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: 2e1bd0c6d5dacf0323570360d7a0050777408435
+ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "60976717"
+ms.lasthandoff: 01/20/2022
+ms.locfileid: "62117448"
 ---
 # <a name="delete-approleassignment"></a>Excluir appRoleAssignment
 
@@ -85,8 +85,12 @@ DELETE https://graph.microsoft.com/v1.0/groups/{id}/appRoleAssignments/{id}
 [!INCLUDE [sample-code](../includes/snippets/java/group-delete-approleassignment-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[Go](#tab/go)
+# <a name="go"></a>[Ir](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/group-delete-approleassignment-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/group-delete-approleassignment-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

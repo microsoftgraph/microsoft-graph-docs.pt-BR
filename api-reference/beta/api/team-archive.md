@@ -5,12 +5,12 @@ author: nkramer
 ms.localizationpriority: medium
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 99d1dda8a367b3f356a77a619ef6f73d8fb45ff8
-ms.sourcegitcommit: 9759b647acfbed99d5675a6f512aaa33932a723f
+ms.openlocfilehash: 2f06ea5d16e67aaecf6d43717875c01427eccc5b
+ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/23/2021
-ms.locfileid: "61604410"
+ms.lasthandoff: 01/20/2022
+ms.locfileid: "62105279"
 ---
 # <a name="archive-team"></a>Arquivar equipe
 
@@ -22,7 +22,7 @@ Arquive o [team](../resources/team.md) especificado. Quando uma equipe é arquiv
 
 O arquivamento é uma operação assíncrona. Uma equipe é arquivada assim que a operação assíncrona é concluída com êxito, o que pode ocorrer após uma resposta desta API.
 
-Para arquivar uma equipe, a equipe e [o grupo](../resources/group.md) devem ter um proprietário.
+Para arquivar uma equipe, a equipe e [grupo](../resources/group.md) devem ter um proprietário.
 
 Para restaurar uma equipe do estado arquivado, use a API para [desarquivar](team-unarchive.md).
 
@@ -35,7 +35,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |Delegado (conta pessoal da Microsoft) | Sem suporte.    |
 |Application | TeamSettings.ReadWrite.Group *, TeamSettings.ReadWrite.All, Group.ReadWrite.All, Directory.ReadWrite.All** |
 
-> **Observação**: Permissões marcadas com * usam [consentimento específico de recurso](https://aka.ms/teams-rsc). As permissões marcadas com ** são preteridas e não devem ser usadas.
+> **Observação**: Permissões marcadas com * usam [consentimento específico de recurso](/microsoftteams/platform/graph-api/rsc/resource-specific-consent). As permissões marcadas com ** são preteridas e não devem ser usadas.
 
 > **Observação**: esta API dá suporte a permissões de administrador. Os administradores globais e os administradores de serviços do Microsoft Teams podem acessar equipes das quais não são membros.
 
@@ -90,7 +90,7 @@ POST https://graph.microsoft.com/beta/teams/{id}/archive
 [!INCLUDE [sample-code](../includes/snippets/java/archive-team-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[Go](#tab/go)
+# <a name="go"></a>[Ir](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/archive-team-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
@@ -120,5 +120,3 @@ Content-Length: 0
   "suppressions": []
 }
 -->
-
-

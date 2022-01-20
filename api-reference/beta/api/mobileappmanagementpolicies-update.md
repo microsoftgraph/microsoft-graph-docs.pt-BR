@@ -5,12 +5,12 @@ author: ravennMSFT
 ms.localizationpriority: medium
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: 71dadfa45b09ec40e3ffa43720e2e7e42a55f770
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: eb8f9fdb1c07ed95da0f49149d590b403d211748
+ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "61011678"
+ms.lasthandoff: 01/20/2022
+ms.locfileid: "62105832"
 ---
 # <a name="update-mobileappmanagementpolicy"></a>Atualizar mobileAppManagementPolicy
 
@@ -59,7 +59,7 @@ No corpo da solicitação, fornece os valores para os campos listados abaixo que
 |appliesTo|policyScope|Determina os grupos aos quais essa configuração de política se aplica. Os valores possíveis são: `none` , `all` , `selected` **Importante:** `selected` não pode ser usado ao especificar essa propriedade. Use [includedGroups](../api/mobileappmanagementpolicies-post-includedgroups.md) para adicionar grupos específicos.|
 |complianceUrl|Cadeia de caracteres|URL de conformidade do aplicativo de gerenciamento de mobilidade|
 |discoveryUrl|Cadeia de caracteres|URL de descoberta do aplicativo de gerenciamento de mobilidade|
-|termsOfUseUrl|String|TERMOS DE USO URL do aplicativo de gerenciamento de mobilidade|
+|termsOfUseUrl|Cadeia de caracteres|TERMOS DE USO URL do aplicativo de gerenciamento de mobilidade|
 
 ## <a name="response"></a>Resposta
 
@@ -104,8 +104,12 @@ Content-Type: application/json
 [!INCLUDE [sample-code](../includes/snippets/java/update-mobilitymanagementpolicy-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[Go](#tab/go)
+# <a name="go"></a>[Ir](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/update-mobilitymanagementpolicy-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/update-mobilitymanagementpolicy-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

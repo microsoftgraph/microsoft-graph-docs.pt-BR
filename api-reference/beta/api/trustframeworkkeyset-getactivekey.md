@@ -1,16 +1,16 @@
 ---
 title: 'trustFrameworkKeySet: getActiveKey'
 description: Obter a chave ativa no keyset.
-localization_priority: Normal
+ms.localizationpriority: medium
 author: Nickgmicrosoft
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: befdd0ba66a7650774a73b5e2b4e3e09c5859bd2
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: 35caa8ff57ae6f5fdafa12b3c4aa84b60f2b737e
+ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52051743"
+ms.lasthandoff: 01/20/2022
+ms.locfileid: "62136901"
 ---
 # <a name="trustframeworkkeyset-getactivekey"></a>trustFrameworkKeySet: getActiveKey
 
@@ -29,7 +29,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |:---------------------------------------|:--------------------------------------------|
 | Delegado (conta corporativa ou de estudante)     | TrustFrameworkKeySet.Read.All, TrustFrameworkKeySet.ReadWrite.All |
 | Delegado (conta pessoal da Microsoft) | Sem suporte. |
-| Application                            | TrustFrameworkKeySet.Read.All, TrustFrameworkKeySet.ReadWrite.All |
+| Aplicativo                            | TrustFrameworkKeySet.Read.All, TrustFrameworkKeySet.ReadWrite.All |
 
 ## <a name="http-request"></a>Solicitação HTTP
 
@@ -82,6 +82,10 @@ GET https://graph.microsoft.com/beta/trustFramework/keySets/{id}/getActiveKey
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/trustframeworkkeyset-getactivekey-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[Ir](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/trustframeworkkeyset-getactivekey-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

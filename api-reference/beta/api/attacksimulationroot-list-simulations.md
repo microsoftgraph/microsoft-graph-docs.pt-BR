@@ -5,12 +5,12 @@ author: Gopal-MSFT
 ms.localizationpriority: medium
 ms.prod: security
 doc_type: apiPageType
-ms.openlocfilehash: ce449178da32f31a3d9ffc644eff7d78171559b0
-ms.sourcegitcommit: e497ed9bb56400bdd2bb53d52ddf057d9966220b
+ms.openlocfilehash: d0fb681c1f1d1e6eb1b4eff9eaf293e6c142e8b9
+ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/30/2021
-ms.locfileid: "61223688"
+ms.lasthandoff: 01/20/2022
+ms.locfileid: "62114305"
 ---
 # <a name="list-simulations"></a>Listar simulações
 Namespace: microsoft.graph
@@ -24,7 +24,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 | Tipo de permissão                        | Permissões (da com menos para a com mais privilégios) |
 |:---------------------------------------|:--------------------------------------------|
-| Delegada (conta corporativa ou de estudante)     | SecurityEvents.Read.All                     |
+| Delegado (conta corporativa ou de estudante)     | SecurityEvents.Read.All                     |
 | Delegado (conta pessoal da Microsoft) | Sem suporte.                              |
 | Aplicativo                            | SecurityEvents.Read.All                     |
 
@@ -103,8 +103,12 @@ GET https://graph.microsoft.com/beta/security/attackSimulation/simulations
 [!INCLUDE [sample-code](../includes/snippets/java/list-simulation-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[Go](#tab/go)
+# <a name="go"></a>[Ir](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/list-simulation-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/list-simulation-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

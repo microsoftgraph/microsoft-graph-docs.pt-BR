@@ -5,12 +5,12 @@ author: mkhribech
 ms.localizationpriority: medium
 ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: 89d94ea92be942ab35bf3a7e0bb4f85b4e7b9756
-ms.sourcegitcommit: 1a607ea5bee096944e0fea14167d372f1ff652f6
+ms.openlocfilehash: d99e8c832db9bab9abd21fc380f4d8a1daf22e4b
+ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/16/2021
-ms.locfileid: "61545130"
+ms.lasthandoff: 01/20/2022
+ms.locfileid: "62130993"
 ---
 # <a name="get-meetingattendancereport"></a>Obter meetingAttendanceReport
 
@@ -20,14 +20,14 @@ Namespace: microsoft.graph
 
 Obter [o meetingAttendanceReport](../resources/meetingAttendanceReport.md) para um [onlineMeeting](../resources/onlinemeeting.md). Sempre que uma reunião online termina, um relatório de participação será gerado para essa sessão.
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>Permissões
 
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 | Tipo de permissão | Permissões (da com menos para a com mais privilégios) |
 |:----------------|:--------------------------------------------|
 | Delegado (conta corporativa ou de estudante) | OnlineMeetingArtifact.Read.All |
-| Delegada (conta pessoal da Microsoft) | Sem suporte. |
+| Delegado (conta pessoal da Microsoft) | Sem suporte. |
 | Aplicativo | OnlineMeetingArtifact.Read.All |
 
 Para usar a permissão do aplicativo para essa API, os administradores de locatários devem criar uma política de acesso a aplicativos e concedi-la a um usuário. Isso autoriza o aplicativo configurado na política a buscar reuniões online e/ou artefatos de reunião online em nome desse usuário (com a ID do usuário especificada no caminho da solicitação). Para obter mais detalhes, consulte [Permitir que os aplicativos acessem reuniões online em nome de um usuário](/graph/cloud-communication-online-meeting-application-access-policy).
@@ -181,8 +181,12 @@ GET https://graph.microsoft.com/beta/me/onlineMeetings/MSpkYzE3Njc0Yy04MWQ5LTRhZ
 [!INCLUDE [sample-code](../includes/snippets/java/get-attendance-report-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[Go](#tab/go)
+# <a name="go"></a>[Ir](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/get-attendance-report-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/get-attendancereport-by-id-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

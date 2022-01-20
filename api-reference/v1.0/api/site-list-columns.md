@@ -5,12 +5,12 @@ description: Obter o conjunto de colunas em um site.
 ms.localizationpriority: medium
 doc_type: apiPageType
 ms.prod: sites-and-lists
-ms.openlocfilehash: 7931fe6a3e3d7627f71658c695b797558394b7cc
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: c8228ebad9e3c21a7e026c39186bbb02f3f48653
+ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "61027169"
+ms.lasthandoff: 01/20/2022
+ms.locfileid: "62110643"
 ---
 # <a name="list-columns-in-a-site"></a>Listar colunas em um site
 Namespace: microsoft.graph
@@ -93,8 +93,12 @@ GET https://graph.microsoft.com/v1.0/sites/{site-id}/columns
 [!INCLUDE [sample-code](../includes/snippets/java/get-columns-from-site-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[Go](#tab/go)
+# <a name="go"></a>[Ir](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/get-columns-from-site-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/get-columns-from-site-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

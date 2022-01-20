@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: markwahl-msft
 ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: 516a1567921089f1285d639f4e12f8747e92de91
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: 4c2ac0c265675516f985a36d29d1b0f2ec76bfd2
+ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "60988151"
+ms.lasthandoff: 01/20/2022
+ms.locfileid: "62100757"
 ---
 # <a name="create-accessreview"></a>Criar accessReview
 
@@ -58,7 +58,7 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar um acces
 | displayName             |Cadeia de caracteres                                                        | O nome da revisão de acesso.  |
 | startDateTime           |DateTimeOffset                                                | DateTime quando a revisão está agendada para ser inicial.  Essa deve ser uma data no futuro.   |
 | endDateTime             |DateTimeOffset                                                | DateTime quando a revisão está agendada para terminar. Isso deve ser pelo menos um dia depois da data de início.   |
-| description             |String                                                        | A descrição, para mostrar aos revisadores. |
+| description             |Cadeia de caracteres                                                        | A descrição, para mostrar aos revisadores. |
 | businessFlowTemplateId  |Cadeia de caracteres                                                        | O identificador do modelo de fluxo de negócios, obtido de um [businessFlowTemplate](../resources/businessflowtemplate.md).  |
 | reviewerType            |Cadeia de caracteres                                                        | O tipo de relação do revistor para os direitos de acesso do objeto revisado, um `self` de `delegated` , ou `entityOwners` . | 
 | reviewedEntity          |[identity](../resources/identity.md)                                     | O objeto para o qual uma revisão de acesso é criada, como a associação de um grupo ou as atribuições de usuários a um aplicativo. | 
@@ -147,8 +147,12 @@ Content-type: application/json
 [!INCLUDE [sample-code](../includes/snippets/java/create-accessreview-from-accessreviews-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[Go](#tab/go)
+# <a name="go"></a>[Ir](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/create-accessreview-from-accessreviews-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/create-accessreview-from-accessreviews-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

@@ -5,12 +5,12 @@ author: mkhribech
 ms.localizationpriority: medium
 ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: 728c6bf9c6ae4cee619abca7f7d3a592585473c1
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: bb416735b1306d5a8addcd139abb1244987627d4
+ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "61023221"
+ms.lasthandoff: 01/20/2022
+ms.locfileid: "62136000"
 ---
 # <a name="update-onlinemeeting"></a>Atualizar onlineMeeting
 
@@ -67,7 +67,7 @@ A última coluna indica se a atualização dessa propriedade terá efeito para u
 | endDateTime                 | DateTime                                                   | A hora de término da reunião em UTC.                                                        | Não                           |
 | assunto                     | Cadeia de caracteres                                                     | O assunto da reunião online.                                                  | Não                           |
 | participants                | [meetingParticipants](../resources/meetingparticipants.md) | Os participantes associados à reunião online. Somente participantes podem ser atualizados. | Não                           |
-| isEntryExitAnnounced        | Boolean                                                    | Se os chamadores ingressarão ou sairão.                              | Sim                          |
+| isEntryExitAnnounced        | Booliano                                                    | Se os chamadores ingressarão ou sairão.                              | Sim                          |
 | lobbyBypassSettings         | [lobbyBypassSettings](../resources/lobbyBypassSettings.md) | Especifica quais participantes podem ignorar o lobby da reunião.                          | Sim                          |
 | allowedPresenters           | onlineMeetingPresenters                                    | Especifica quem pode ser um apresentador em uma reunião.                                      | Sim |
 | allowAttendeeToEnableCamera | Booliano                                                    | Indica se os participantes podem ativar a câmera.                               | Sim                          |
@@ -125,8 +125,12 @@ Content-Type: application/json
 [!INCLUDE [sample-code](../includes/snippets/java/update-start-end-subject-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[Go](#tab/go)
+# <a name="go"></a>[Ir](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/update-start-end-subject-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/update-start-end-subject-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -219,8 +223,12 @@ Content-Type: application/json
 [!INCLUDE [sample-code](../includes/snippets/java/update-lobbybypasssettings-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[Go](#tab/go)
+# <a name="go"></a>[Ir](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/update-lobbybypasssettings-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/update-lobbybypasssettings-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

@@ -5,12 +5,12 @@ author: ravennMSFT
 ms.localizationpriority: medium
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: 1c3bdd8e3e910fa807750d3c6bcae1f007e9d246
-ms.sourcegitcommit: 65f4e128f96783c18d607a6dcffbc914291285d4
+ms.openlocfilehash: a1cff75da04ce8819ce660b0a500208506f582f5
+ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/08/2021
-ms.locfileid: "61338572"
+ms.lasthandoff: 01/20/2022
+ms.locfileid: "62133366"
 ---
 # <a name="delete-includedgroup"></a>Excluir includedGroup
 
@@ -20,7 +20,7 @@ Namespace: microsoft.graph
 
 Exclua um grupo da lista de grupos incluídos em uma política de gerenciamento de aplicativo móvel.
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>Permissões
 
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
@@ -86,8 +86,12 @@ DELETE https://graph.microsoft.com/beta/policies/mobileAppManagementPolicies/ab9
 [!INCLUDE [sample-code](../includes/snippets/java/delete-group-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[Go](#tab/go)
+# <a name="go"></a>[Ir](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/delete-group-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/delete-group-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

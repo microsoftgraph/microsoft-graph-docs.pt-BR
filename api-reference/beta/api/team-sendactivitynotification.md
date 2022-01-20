@@ -5,12 +5,12 @@ author: RamjotSingh
 ms.localizationpriority: medium
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 52ff5d416909d5e88ea56354a772e9c74126f890
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: 1d115d00fc4c34ec1ba167064116417980ef6165
+ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "61013750"
+ms.lasthandoff: 01/20/2022
+ms.locfileid: "62122888"
 ---
 # <a name="team-sendactivitynotification"></a>team: sendActivityNotification
 Namespace: microsoft.graph
@@ -28,7 +28,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |Delegado (conta pessoal da Microsoft)|Sem suporte.|
 |Aplicativo|TeamsActivity.Send.Group*, TeamsActivity.Send|
 
->**Observação:** Permissões marcadas com * use [o consentimento específico do recurso.](https://aka.ms/teams-rsc)
+>**Observação:** Permissões marcadas com * use [o consentimento específico do recurso.](/microsoftteams/platform/graph-api/rsc/resource-specific-consent)
 
 ## <a name="http-request"></a>Solicitação HTTP
 
@@ -62,7 +62,7 @@ A tabela a seguir mostra os parâmetros que podem ser usados com esta ação.
 
 Os seguintes recursos são suportados ao definir o `source` valor da propriedade **topic** como `entityUrl` :
 
-- [equipe](../resources/team.md)
+- [team](../resources/team.md)
 - [channel](../resources/channel.md)
 - [chatMesage](../resources/chatmessage.md)
 - [teamsTab](../resources/teamstab.md)
@@ -128,7 +128,7 @@ Content-Type: application/json
 [!INCLUDE [sample-code](../includes/snippets/java/team-sendactivitynotification-1-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[Go](#tab/go)
+# <a name="go"></a>[Ir](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/team-sendactivitynotification-1-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
@@ -202,7 +202,7 @@ Content-Type: application/json
 [!INCLUDE [sample-code](../includes/snippets/java/team-sendactivitynotification-2-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[Go](#tab/go)
+# <a name="go"></a>[Ir](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/team-sendactivitynotification-2-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
@@ -325,7 +325,7 @@ Content-Type: application/json
 [!INCLUDE [sample-code](../includes/snippets/java/team-sendactivitynotification-3-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[Go](#tab/go)
+# <a name="go"></a>[Ir](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/team-sendactivitynotification-3-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
@@ -398,7 +398,7 @@ Content-Type: application/json
 [!INCLUDE [sample-code](../includes/snippets/java/team-sendactivitynotification-4-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[Go](#tab/go)
+# <a name="go"></a>[Ir](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/team-sendactivitynotification-4-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
@@ -470,7 +470,7 @@ Content-Type: application/json
 [!INCLUDE [sample-code](../includes/snippets/java/team-sendactivitynotification-5-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[Go](#tab/go)
+# <a name="go"></a>[Ir](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/team-sendactivitynotification-5-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 

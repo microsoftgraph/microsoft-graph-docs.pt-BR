@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 doc_type: apiPageType
 author: abheek-das
 ms.prod: outlook
-ms.openlocfilehash: 9ce4013d9da017f6384ea6299b5238c65bf88a36
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: f49ee7d3aebb7aca29e39ad158dc8f0cceb7a07d
+ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "60982531"
+ms.lasthandoff: 01/20/2022
+ms.locfileid: "62094990"
 ---
 # <a name="get-attachment"></a>Obter anexo
 
@@ -53,7 +53,7 @@ Dependendo do recurso (**evento** **,** mensagem , **outlookTask** ou **postagem
 |:-----|:-----|:-----|:-----|
 | [evento](../resources/event.md) | Calendars.Read | Calendars.Read | Calendars.Read |
 | [message](../resources/message.md) | Mail.Read | Mail.Read | Mail.Read |
-| [outlookTask](../resources/outlooktask.md) |  Tasks.Read | Tasks.Read | Incompatível |
+| [outlookTask](../resources/outlooktask.md) |  Tasks.Read | Tasks.Read | Sem suporte |
 | [postagem](../resources/post.md) | Group.Read.All | Sem suporte | Sem suporte |
 
 
@@ -194,8 +194,12 @@ GET https://graph.microsoft.com/beta/me/messages/AAMkAGUzY5QKjAAA=/attachments/A
 [!INCLUDE [sample-code](../includes/snippets/java/get-file-attachment-beta-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[Go](#tab/go)
+# <a name="go"></a>[Ir](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/get-file-attachment-beta-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/get-file-attachment-beta-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -541,8 +545,12 @@ GET https://graph.microsoft.com/beta/me/events/AAMkAGE1M88AADUv0uAAAG=/attachmen
 [!INCLUDE [sample-code](../includes/snippets/java/get-reference-attachment-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[Go](#tab/go)
+# <a name="go"></a>[Ir](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/get-reference-attachment-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/get-reference-attachment-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

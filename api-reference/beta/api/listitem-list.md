@@ -6,12 +6,12 @@ title: Recuperar itens de uma lista do SharePoint
 ms.localizationpriority: medium
 ms.prod: sharepoint
 doc_type: apiPageType
-ms.openlocfilehash: 025eb2fbcf0d80925b74902d6a2b48b3f8aebb75
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: bc6f0d0f8fc96ceffd3114a4cfc3ac99ebf8a0e9
+ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "60997944"
+ms.lasthandoff: 01/20/2022
+ms.locfileid: "62096277"
 ---
 # <a name="enumerate-items-in-a-list"></a>Enumerar itens em uma lista
 
@@ -69,8 +69,12 @@ GET https://graph.microsoft.com/beta/sites/{site-id}/lists/{list-id}/items?expan
 [!INCLUDE [sample-code](../includes/snippets/java/get-list-items-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[Go](#tab/go)
+# <a name="go"></a>[Ir](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/get-list-items-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/get-list-items-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

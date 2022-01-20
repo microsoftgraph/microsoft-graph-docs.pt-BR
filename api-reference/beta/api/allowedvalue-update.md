@@ -5,12 +5,12 @@ author: rolyon
 ms.localizationpriority: medium
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: 17cf219533bb1e27777f8385f5f6536c690e92ec
-ms.sourcegitcommit: e497ed9bb56400bdd2bb53d52ddf057d9966220b
+ms.openlocfilehash: 2f0f8a20ea4b78bfab332082bca780a61ed0d4bf
+ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/30/2021
-ms.locfileid: "61223933"
+ms.lasthandoff: 01/20/2022
+ms.locfileid: "62103914"
 ---
 # <a name="update-allowedvalue"></a>Atualizar allowedValue
 Namespace: microsoft.graph
@@ -24,7 +24,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 |Tipo de permissão|Permissões (da com menos para a com mais privilégios)|
 |:---|:---|
-|Delegada (conta corporativa ou de estudante)|CustomSecAttributeDefinition.ReadWrite.All|
+|Delegado (conta corporativa ou de estudante)|CustomSecAttributeDefinition.ReadWrite.All|
 |Delegado (conta pessoal da Microsoft)|Sem suporte.|
 |Aplicativo|CustomSecAttributeDefinition.ReadWrite.All|
 
@@ -54,7 +54,7 @@ A tabela a seguir especifica as propriedades que podem ser atualizadas.
 
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|isActive|Booleano|Indica se o valor predefinido está ativo ou desativado. Se definido como , esse valor predefinido não poderá ser atribuído a `false` nenhum objeto de diretório com suporte adicional. Opcional.|
+|isActive|Booliano|Indica se o valor predefinido está ativo ou desativado. Se definido como , esse valor predefinido não poderá ser atribuído a `false` nenhum objeto de diretório com suporte adicional. Opcional.|
 
 
 
@@ -105,8 +105,12 @@ Content-length: 80
 [!INCLUDE [sample-code](../includes/snippets/java/update-allowedvalue-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[Go](#tab/go)
+# <a name="go"></a>[Ir](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/update-allowedvalue-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/update-allowedvalue-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

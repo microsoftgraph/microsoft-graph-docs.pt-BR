@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: vrod9429
 ms.prod: Outlook
 doc_type: apiPageType
-ms.openlocfilehash: df5262b93eaabc95d45a8191a177c7967dac488c
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: f313a450c1281476265d51e47c1a2b9be626366c
+ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "61011190"
+ms.lasthandoff: 01/20/2022
+ms.locfileid: "62118618"
 ---
 # <a name="update-place"></a>Local de atualização
 
@@ -54,7 +54,7 @@ No corpo da solicitação, forneça os valores para os campos relevantes que dev
 | address                | [physicalAddress](../resources/physicaladdress.md)             | O endereço de rua da sala ou da lista de sala. |
 | audioDeviceName        | Cadeia de caracteres                                            | Especifica o nome do dispositivo de áudio na sala. |
 | bookingType            | [bookingType](../resources/room.md)                            | Tipo de sala. Os valores possíveis são: `Standard` e `Reserved`. |
-| building               | String                                            | Especifica o nome do edifício ou o número de construção em que a sala está. |
+| building               | Cadeia de caracteres                                            | Especifica o nome do edifício ou o número de construção em que a sala está. |
 | capacity               | Int32                                             | Especifica a capacidade da sala. |
 | displayDeviceName      | Cadeia de caracteres                                            | Especifica o nome do dispositivo de exibição na sala. |
 | floorLabel             | Cadeia de caracteres                                            | Especifica a letra do piso em que a sala está. |
@@ -62,10 +62,10 @@ No corpo da solicitação, forneça os valores para os campos relevantes que dev
 | geoCoordinates         | [outlookGeoCoordinates](../resources/outlookgeocoordinates.md) | Especifica o local da sala ou da lista de espaços em latitude, longitude e, opcionalmente, coordenadas de altitude. |
 | isWheelChairAccessible | Booliano                                           | Especifica se a sala está acessível para cadeira de rodas. |
 | rótulo                  | Cadeia de caracteres                                            | Especifica um rótulo descritivo para a sala, por exemplo, um número ou nome. |
-| nickname               | String                                            | Especifica um apelido para a sala, por exemplo, "conf room". |
+| nickname               | Cadeia de caracteres                                            | Especifica um apelido para a sala, por exemplo, "conf room". |
 | phone                  | Cadeia de caracteres                                            | O número de telefone da sala ou da lista de sala. |
 | categorias                   | Coleção de cadeias de caracteres                                 | Especifica recursos adicionais da sala, por exemplo, detalhes como o tipo de exibição ou tipo de móvel. |
-| videoDeviceName        | String                                            | Especifica o nome do dispositivo de vídeo na sala. |
+| videoDeviceName        | Cadeia de caracteres                                            | Especifica o nome do dispositivo de vídeo na sala. |
 
 ## <a name="response"></a>Resposta
 
@@ -115,8 +115,12 @@ Content-type: application/json
 [!INCLUDE [sample-code](../includes/snippets/java/update-room-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[Go](#tab/go)
+# <a name="go"></a>[Ir](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/update-room-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/update-room-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -228,8 +232,12 @@ Content-type: application/json
 [!INCLUDE [sample-code](../includes/snippets/java/update-roomlist-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[Go](#tab/go)
+# <a name="go"></a>[Ir](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/update-roomlist-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/update-roomlist-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

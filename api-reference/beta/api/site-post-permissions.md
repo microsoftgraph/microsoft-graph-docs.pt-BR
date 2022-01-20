@@ -5,12 +5,12 @@ author: BarrySh
 ms.localizationpriority: medium
 ms.prod: sharepoint
 doc_type: apiPageType
-ms.openlocfilehash: 7ae87a556dcd19b99bc268d6a39e8d1ba528d12d
-ms.sourcegitcommit: e1dd9860906e0b415fd376d70df1f928d1f3d29e
+ms.openlocfilehash: 2f9f615f1f2898d9c6b2e8ef0725621f2087a152
+ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/01/2021
-ms.locfileid: "61241622"
+ms.lasthandoff: 01/20/2022
+ms.locfileid: "62111707"
 ---
 # <a name="create-permission"></a>Criar permissão
 Namespace: microsoft.graph
@@ -95,8 +95,12 @@ Content-Type: application/json
 [!INCLUDE [sample-code](../includes/snippets/java/create-permission-from--java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[Go](#tab/go)
+# <a name="go"></a>[Ir](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/create-permission-from--go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/create-permission-from--powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

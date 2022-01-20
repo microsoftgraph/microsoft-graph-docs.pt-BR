@@ -5,12 +5,12 @@ author: markwahl-msft
 ms.localizationpriority: medium
 ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: 18e7008052a0c4b32d6cb765b35e1cef17f89c4d
-ms.sourcegitcommit: 65f4e128f96783c18d607a6dcffbc914291285d4
+ms.openlocfilehash: c4eacb1d678fbe1f6e51f433e77e0cd4faf59cef
+ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/08/2021
-ms.locfileid: "61347956"
+ms.lasthandoff: 01/20/2022
+ms.locfileid: "62100910"
 ---
 # <a name="create-connectedorganization"></a>Criar connectedOrganization
 
@@ -19,7 +19,7 @@ Namespace: microsoft.graph
 
 Crie um novo [objeto connectedOrganization.](../resources/connectedorganization.md)
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>Permissões
 
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
@@ -53,8 +53,8 @@ Você pode especificar as seguintes propriedades ao criar **uma connectedOrganiz
 
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|displayName|String|O nome da organização conectada. |
-|description|String|A descrição da organização conectada.|
+|displayName|Cadeia de caracteres|O nome da organização conectada. |
+|description|Cadeia de caracteres|A descrição da organização conectada.|
 |identitySources|[Coleção identitySource](../resources/identitysource.md)|Uma coleção com um elemento, a fonte de identidade inicial nesta organização conectada.|
 |estado|connectedOrganizationState|O estado de uma organização conectada define se as políticas de atribuição com o tipo de escopo do solicitante `AllConfiguredConnectedOrganizationSubjects` são aplicáveis ou não. Os valores possíveis são: `configured` e `proposed`.|
 
@@ -108,8 +108,12 @@ Content-Type: application/json
 [!INCLUDE [sample-code](../includes/snippets/java/create-connectedorganization-from-connectedorganizations-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[Go](#tab/go)
+# <a name="go"></a>[Ir](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/create-connectedorganization-from-connectedorganizations-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/create-connectedorganization-from-connectedorganizations-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

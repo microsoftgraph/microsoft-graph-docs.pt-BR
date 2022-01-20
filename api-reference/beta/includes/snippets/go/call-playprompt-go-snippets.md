@@ -1,19 +1,33 @@
 ---
 description: Arquivo gerado automaticamente. NÃO MODIFICAR
-ms.openlocfilehash: 2fb2a06719d24508c7cca4ec1159c20af2105404
-ms.sourcegitcommit: b16e230f4347f23d8e1bda0681daa93025a39a6d
+ms.openlocfilehash: b2d5e12583a7495a1ff5ad4a472178361da7bb90
+ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/03/2021
-ms.locfileid: "61286199"
+ms.lasthandoff: 01/20/2022
+ms.locfileid: "62137553"
 ---
 ```go
 
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
 graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
+requestBody := msgraphsdk.New()
+clientContext := "d45324c1-fcb5-430a-902c-f20af696537c"
+requestBody.SetClientContext(&clientContext)
+requestBody.SetPrompts( []Prompt {
+    msgraphsdk.NewPrompt(),
+    SetAdditionalData(map[string]interface{}{
+        "@odata.type": "#microsoft.graph.mediaPrompt",
+    }
+}
+loop := false
+requestBody.SetLoop(&loop)
+options := &msgraphsdk.PlayPromptRequestBuilderPostOptions{
+    Body: requestBody,
+}
 callId := "call-id"
-result, err := graphClient.Communications().CallsById(&callId).PlayPrompt().Post(nil)
+result, err := graphClient.Communications().CallsById(&callId).PlayPrompt().Post(options)
 
 
 ```

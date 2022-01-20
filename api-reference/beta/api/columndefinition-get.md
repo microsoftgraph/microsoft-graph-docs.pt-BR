@@ -5,12 +5,12 @@ description: " Obter uma coluna de site, lista ou tipo de conteúdo."
 ms.localizationpriority: medium
 doc_type: apiPageType
 ms.prod: sites-and-lists
-ms.openlocfilehash: ff601b2e3cdb75adc6f25907aac9249a374dd956
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: 1d0a04bbbef93fb9cf8ac724b5371ae43dc25ca0
+ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "61032651"
+ms.lasthandoff: 01/20/2022
+ms.locfileid: "62125932"
 ---
 # <a name="get-columndefinition"></a>Obter columnDefinition
 Namespace: microsoft.graph
@@ -96,8 +96,12 @@ GET /sites/{site-id}/contentTypes/{contentType-id}/columns/{column-id}
 [!INCLUDE [sample-code](../includes/snippets/java/get-column-from-contenttype-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[Go](#tab/go)
+# <a name="go"></a>[Ir](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/get-column-from-contenttype-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/get-column-from-contenttype-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

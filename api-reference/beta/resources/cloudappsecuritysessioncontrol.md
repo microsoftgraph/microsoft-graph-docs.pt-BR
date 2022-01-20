@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: dkershaw10
 ms.prod: identity-and-sign-in
 doc_type: resourcePageType
-ms.openlocfilehash: 689b065a6156f009d2425a294aaec8e49c4bee93
-ms.sourcegitcommit: 4a960067cf2cd7d3c605550150eb3c9259adfe92
+ms.openlocfilehash: d2206ea95d4c1d719193ef1ec9aba167c42d79c1
+ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/19/2021
-ms.locfileid: "60488609"
+ms.lasthandoff: 01/20/2022
+ms.locfileid: "62136691"
 ---
 # <a name="cloudappsecuritysessioncontrol-resource-type"></a>Tipo de recurso cloudAppSecuritySessionControl
 
@@ -25,7 +25,7 @@ Controle de sessão usado para impor verificações de segurança do aplicativo 
 | Propriedade     | Tipo        | Descrição |
 |:-------------|:------------|:------------|
 |isEnabled     |Booliano      | Especifica se o controle de sessão está habilitado. |
-|cloudAppSecurityType|cloudAppSecuritySessionControlType| Os valores possíveis são: `mcasConfigured`, `monitorOnly`, `blockDownloads`. Para saber mais sobre esses valores, Implante o Controle de Aplicativo de [Acesso Condicional para aplicativos em destaque.](https://docs.microsoft.com/cloud-app-security/proxy-deployment-aad#step-1--configure-your-idp-to-work-with-cloud-app-security) |
+|cloudAppSecurityType|cloudAppSecuritySessionControlType| Os valores possíveis são: `mcasConfigured`, `monitorOnly`, `blockDownloads`. Para saber mais sobre esses valores, Implante o Controle de Aplicativo de [Acesso Condicional para aplicativos em destaque.](/cloud-app-security/proxy-deployment-aad#step-1--configure-your-idp-to-work-with-cloud-app-security) |
 
 ## <a name="relationships"></a>Relações
 
@@ -60,4 +60,3 @@ Veja a seguir uma representação JSON do recurso.
   "section": "documentation",
   "tocPath": ""
 }-->
-
