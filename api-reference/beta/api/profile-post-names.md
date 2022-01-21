@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: kevinbellinger
 ms.prod: people
 doc_type: apiPageType
-ms.openlocfilehash: d1c77eab002d194f3de3992d68533e2823d45fcd
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: a63d3d200617d8bf696bf637c9a0dfa2a383662d
+ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "61007632"
+ms.lasthandoff: 01/20/2022
+ms.locfileid: "62135228"
 ---
 # <a name="create-personname"></a>Criar personName
 
@@ -54,19 +54,19 @@ A tabela a seguir mostra as propriedades que são possíveis de definir ao criar
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
 |allowedAudiences|Cadeia de caracteres|As audiências que são capazes de ver os valores contidos na entidade. Herdado [do itemFacet](../resources/itemfacet.md). Os valores possíveis são: `me`, `family`, `contacts`, `groupMembers`, `organization`, `federatedOrganizations`, `everyone`, `unknownFutureValue`.|
-|displayName|String|Fornece uma renderização ordenada de firstName e lastName, dependendo da localidade do usuário ou de seu dispositivo.|
+|displayName|Cadeia de caracteres|Fornece uma renderização ordenada de firstName e lastName, dependendo da localidade do usuário ou de seu dispositivo.|
 |first|Cadeia de caracteres|Nome do usuário.|
-|id|String|Identificador usado para endereçamento individual da entidade. Herdado da [entidade](../resources/entity.md)|
+|id|Cadeia de caracteres|Identificador usado para endereçamento individual da entidade. Herdado da [entidade](../resources/entity.md)|
 |inferência|[inferenceData](../resources/inferencedata.md)|Contém detalhes de inferência se a entidade for inferida pelo aplicativo de criação ou modificação. Herdado [do itemFacet](../resources/itemfacet.md).|
 |initials|String|Iniciais do usuário.|
 |languageTag|Cadeia de caracteres|Contém o nome do idioma (en-US, no-NB, en-AU) após o formato IETF BCP47.   |
-|last|String|Sobrenome do usuário.|
+|last|Cadeia de caracteres|Sobrenome do usuário.|
 |maiden|Cadeia de caracteres|Nome de solteira do usuário. |
-|middle|String|Nome do meio do usuário.|
+|middle|Cadeia de caracteres|Nome do meio do usuário.|
 |nickname|Cadeia de caracteres|Apelido do usuário.|
 |pronúncia|[yomiPersonName](../resources/yomipersonname.md)|Diretrizes sobre como pronunciar o nome dos usuários.|
 |sufixo|Cadeia de caracteres|Designadores usados após o nome dos usuários (por exemplo: PhD.)  |
-|title|String|Honorifics usado para prefixar um nome de usuário (por exemplo: Dr, Sir, Mrs.)|
+|title|Cadeia de caracteres|Honorifics usado para prefixar um nome de usuário (por exemplo: Dr, Sir, Mrs.)|
 
 ## <a name="response"></a>Resposta
 
@@ -114,8 +114,12 @@ Content-type: application/json
 [!INCLUDE [sample-code](../includes/snippets/java/create-personname-from-profilev2-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[Go](#tab/go)
+# <a name="go"></a>[Ir](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/create-personname-from-profilev2-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/create-personname-from-profilev2-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

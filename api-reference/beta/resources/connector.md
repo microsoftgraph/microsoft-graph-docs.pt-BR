@@ -2,15 +2,15 @@
 title: tipo de recurso do conector
 description: Representa um conector proxy de aplicativo.
 author: japere
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: applications
 doc_type: resourcePageType
-ms.openlocfilehash: 567b67576c5300419c9671de8bd82df84bf49685
-ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
+ms.openlocfilehash: d88d7468872fb4e0e6b8d6ae5dd84346ba7de36a
+ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "50945694"
+ms.lasthandoff: 01/20/2022
+ms.locfileid: "62136684"
 ---
 # <a name="connector-resource-type"></a>tipo de recurso do conector
 
@@ -18,7 +18,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Os conectores são agentes leves que se sentam no local e facilitam a conexão de saída para o serviço proxy de aplicativo do [Azure AD.](https://aka.ms/whyappproxy) Cada conector faz parte de um [connectorGroup](connectorgroup.md).
+Os conectores são agentes leves que se sentam no local e facilitam a conexão de saída para o serviço proxy de aplicativo do [Azure AD.](/azure/active-directory/app-proxy/what-is-application-proxy) Cada conector faz parte de um [connectorGroup](connectorgroup.md).
 
 ## <a name="methods"></a>Métodos
 
@@ -78,6 +78,3 @@ Veja a seguir uma representação JSON do recurso.
   "suppressions": []
 }
 -->
-
-
-

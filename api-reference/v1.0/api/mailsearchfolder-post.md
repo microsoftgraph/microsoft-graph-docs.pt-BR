@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: abheek-das
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 81b1402c28401721e5fa52bc19966b00e1f3473f
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: a3fdc0dbfd03787dbe3da6dab4e01d74673dd7bb
+ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "60984546"
+ms.lasthandoff: 01/20/2022
+ms.locfileid: "62126290"
 ---
 # <a name="create-mailsearchfolder"></a>Criar mailSearchFolder
 
@@ -52,11 +52,11 @@ Forneça um objeto JSON com os seguintes parâmetros no corpo da solicitação.
 
 | Parâmetro | Tipo | Descrição |
 |:----------|:-----|:------------|
-| @odata.type | String | O tipo de pasta a ser criada. De definida como "microsoft.graph.mailSearchFolder". |
-| displayName | String | O nome de exibição da nova pasta.|
+| @odata.type | Cadeia de caracteres | O tipo de pasta a ser criada. De definida como "microsoft.graph.mailSearchFolder". |
+| displayName | Cadeia de caracteres | O nome de exibição da nova pasta.|
 | includeNestedFolders | Booliano | Indica como a hierarquia de pastas de caixa de correio deve ser percorrido na pesquisa. `true` significa que uma pesquisa profunda deve ser feita para incluir pastas filho na hierarquia de cada pasta explicitamente especificada em **sourceFolderIds**. `false` significa uma pesquisa superficial de apenas cada uma das pastas explicitamente especificadas em **sourceFolderIds**. |
-| sourceFolderIds | Coleção de cadeias de caracteres | As pastas de caixa de correio que devem ser mineradas. |
-| filterQuery | String | A consulta OData para filtrar as mensagens. |
+| sourceFolderIds | Coleção String | As pastas de caixa de correio que devem ser mineradas. |
+| filterQuery | Cadeia de caracteres | A consulta OData para filtrar as mensagens. |
 
 ## <a name="response"></a>Resposta
 
@@ -103,8 +103,12 @@ Content-type: application/json
 [!INCLUDE [sample-code](../includes/snippets/java/create-mailsearchfolder-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[Go](#tab/go)
+# <a name="go"></a>[Ir](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/create-mailsearchfolder-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/create-mailsearchfolder-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

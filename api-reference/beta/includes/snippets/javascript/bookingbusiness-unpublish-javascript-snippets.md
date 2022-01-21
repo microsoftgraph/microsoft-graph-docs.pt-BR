@@ -1,11 +1,11 @@
 ---
 description: Arquivo gerado automaticamente. NÃO MODIFICAR
-ms.openlocfilehash: ffb4d95c1ae9612e6637fba00fef969c4911af088ef1cffa9777ef241f8d50ab
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 40214c5d76099776b27e0fdc5e76e03a14791b19
+ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "57101806"
+ms.lasthandoff: 01/20/2022
+ms.locfileid: "62137541"
 ---
 ```javascript
 
@@ -15,7 +15,7 @@ const options = {
 
 const client = Client.init(options);
 
-await client.api('/bookingBusinesses/Contosolunchdelivery@M365B489948.onmicrosoft.com/unpublish')
+await client.api('/bookingBusinesses/Contosolunchdelivery@contoso.onmicrosoft.com/unpublish')
     .version('beta')
     .post();
 

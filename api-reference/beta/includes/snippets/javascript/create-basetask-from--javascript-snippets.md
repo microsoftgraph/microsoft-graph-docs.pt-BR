@@ -1,11 +1,11 @@
 ---
 description: Arquivo gerado automaticamente. NÃO MODIFICAR
-ms.openlocfilehash: 02fbd58af59900173c1ac03ca7ee9d980e74f407
-ms.sourcegitcommit: c47e3d1f3c5f7e2635b2ad29dfef8fe7c8080bc8
+ms.openlocfilehash: cc5a1208ab9a9fe7f15defa5cfdd2be54df07be4
+ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/15/2021
-ms.locfileid: "61525230"
+ms.lasthandoff: 01/20/2022
+ms.locfileid: "62130098"
 ---
 ```javascript
 
@@ -15,7 +15,7 @@ const options = {
 
 const client = Client.init(options);
 
-const tasks = {
+const baseTask = {
   '@odata.type': '#microsoft.graph.baseTask',
   body: {
     '@odata.type': 'microsoft.graph.itemBody'
@@ -41,6 +41,6 @@ const tasks = {
 
 await client.api('/me/tasks/lists/AQMkAGVjMzJmMWZjLTgyYjgtNGIyNi1hOGQ0LWRjMjNmMGRmOWNi/tasks')
     .version('beta')
-    .post(tasks);
+    .post(baseTask);
 
 ```
