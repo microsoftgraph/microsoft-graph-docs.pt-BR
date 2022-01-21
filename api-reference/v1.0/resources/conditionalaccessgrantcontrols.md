@@ -2,15 +2,15 @@
 title: Tipo de recurso conditionalAccessGrantControls
 description: Representa os controles de concessão que devem ser cumpridos para passar a política.
 ms.localizationpriority: medium
-author: videor
+author: davidspooner
 ms.prod: identity-and-sign-in
 doc_type: resourcePageType
-ms.openlocfilehash: d4e1b01338011e41994347beeeaeb2c7d53fbb16
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 03b1b717b59e91d115f5974ff691ad2db956b4a3
+ms.sourcegitcommit: 3f3975916b5c531ee63d92340ccd6e73e879e8d7
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59104219"
+ms.lasthandoff: 01/21/2022
+ms.locfileid: "62162053"
 ---
 # <a name="conditionalaccessgrantcontrols-resource-type"></a>Tipo de recurso conditionalAccessGrantControls
 
@@ -22,9 +22,9 @@ Representa os controles de concessão que devem ser cumpridos para passar a pol�
 
 | Propriedade | Tipo | Descrição |
 |:-------- |:---- |:----------- |
-| operator | String | Define a relação dos controles de concessão. Valores possíveis: `AND` , `OR` . |
+| operator | Cadeia de caracteres | Define a relação dos controles de concessão. Valores possíveis: `AND` , `OR` . |
 | builtInControls | Coleção conditionalAccessGrantControl | Lista de valores de controles internos exigidos pela política. Valores possíveis: `block` , , , , , , , `mfa` `compliantDevice` `domainJoinedDevice` `approvedApplication` `compliantApplication` `passwordChange` `unknownFutureValue` . |
-| customAuthenticationFactors | Coleção String | Lista de IDs de controles personalizados exigidas pela política. Para obter mais informações, consulte [Controles personalizados](/azure/active-directory/conditional-access/controls). |
+| customAuthenticationFactors | Coleção de cadeias de caracteres | Lista de IDs de controles personalizados exigidas pela política. Para obter mais informações, consulte [Controles personalizados](/azure/active-directory/conditional-access/controls). |
 | termsOfUse | Coleção String | Lista de [termos de](/graph/api/resources/agreement) IDs de uso exigidos pela política. |
 
 ### <a name="special-considerations-when-using-passwordchange-as-a-control"></a>Considerações especiais ao usar `passwordChange` como um controle

@@ -5,12 +5,12 @@ author: isabelleatmsft
 ms.localizationpriority: medium
 ms.prod: governance
 doc_type: resourcePageType
-ms.openlocfilehash: 214396b8d551009d831e64017424d6d20c00d316
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: 2870732152bbb19cc2145b9dd54d7020ac01e6c0
+ms.sourcegitcommit: 3f3975916b5c531ee63d92340ccd6e73e879e8d7
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62107785"
+ms.lasthandoff: 01/21/2022
+ms.locfileid: "62161932"
 ---
 # <a name="accessreviewinstancedecisionitem-resource-type"></a>Tipo de recurso accessReviewInstanceDecisionItem
 
@@ -20,9 +20,9 @@ Namespace: microsoft.graph
 
 [!INCLUDE [accessreviews-disclaimer-v2](../../includes/accessreviews-disclaimer-v2.md)]
 
-Representa uma decisão de revisão [de](accessreviewsv2-overview.md) acesso do Azure AD em uma instância de uma revisão. Essa decisão é a determinação do acesso de um usuário ou entidade de serviço para uma determinada instância de revisão [de acesso.](accessreviewinstance.md) accessReviewInstanceDecisionItem é um tipo aberto e permite que outras propriedades sejam passadas.
+Representa uma decisão de revisão [de](accessreviewsv2-overview.md) acesso do Azure AD em uma instância de uma revisão. Essa decisão representa a determinação do acesso de um usuário ou entidade de serviço para uma determinada instância de revisão [de acesso.](accessreviewinstance.md)  Esse recurso é um tipo aberto que permite que outras propriedades sejam passadas.
 
-## <a name="methods"></a>Métodos
+## <a name="methods"></a>Methods
 
 | Método | Tipo de retorno | Descrição |
 |:---------------|:--------|:----------|

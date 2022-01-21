@@ -2,15 +2,15 @@
 title: Tipo de recurso namedLocation
 description: Esta é a classe base que representa um Azure Active Directory local nomeado. Locais nomeados são regras personalizadas que definem locais de rede que podem ser usados em uma política de Acesso Condicional.
 ms.localizationpriority: medium
-author: videor
+author: davidspooner
 ms.prod: identity-and-sign-in
 doc_type: resourcePageType
-ms.openlocfilehash: 01825465c415ef3a769812896dbc80105c50ed68
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 9431c576d43aa521316d74fe1cb4265c408ed8bb
+ms.sourcegitcommit: 3f3975916b5c531ee63d92340ccd6e73e879e8d7
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59084269"
+ms.lasthandoff: 01/21/2022
+ms.locfileid: "62162010"
 ---
 # <a name="namedlocation-resource-type"></a>Tipo de recurso namedLocation
 
@@ -24,7 +24,7 @@ Esta é a classe base que representa um Azure Active Directory local nomeado. Lo
 |:-------------|:------------|:------------|
 | [Listar namedLocations](../api/conditionalaccessroot-list-namedlocations.md) | [coleção namedLocation](namedLocation.md) | Obter todos os **objetos namedLocation** na organização. |
 | [Obter namedLocation](../api/namedlocation-get.md) | [namedLocation](namedlocation.md) | Leia as propriedades e as relações de um **objeto namedLocation.** |
-| [Excluir namedLocation](../api/namedlocation-delete.md) | Nenhum(a) | Exclua **um objeto namedLocation.** |
+| [Excluir namedLocation](../api/namedlocation-delete.md) | Nenhum | Exclua **um objeto namedLocation.** |
 
 ## <a name="properties"></a>Propriedades
 
@@ -32,7 +32,7 @@ Esta é a classe base que representa um Azure Active Directory local nomeado. Lo
 |:-------------|:------------|:------------|
 |createdDateTime|DateTimeOffset|O tipo Timestamp representa a data e a hora de criação do local usando o formato ISO 8601 e está sempre em horário UTC. Por exemplo, meia-noite UTC em 1 de janeiro de 2014 é `2014-01-01T00:00:00Z`. Somente leitura.|
 |displayName|Cadeia de caracteres|Nome acessível para humanos do local.|
-|id|String|Identificador de um objeto namedLocation. Somente leitura.|
+|id|Cadeia de caracteres|Identificador de um objeto namedLocation. Somente leitura.|
 |modifiedDateTime|DateTimeOffset|O tipo Timestamp representa a última data e hora modificadas do local usando o formato ISO 8601 e está sempre em horário UTC. Por exemplo, meia-noite UTC em 1 de janeiro de 2014 é `2014-01-01T00:00:00Z`. Somente leitura.|
 
 ## <a name="relationships"></a>Relações

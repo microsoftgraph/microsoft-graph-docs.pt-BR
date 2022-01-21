@@ -5,12 +5,12 @@ ms.localizationpriority: high
 doc_type: conceptualPageType
 ms.prod: identity-and-access
 author: dkershaw10
-ms.openlocfilehash: 79bb030b852e861fb3437f3ba90181703b0b735e
-ms.sourcegitcommit: fd609cb401ff862c3f5c21847bac9af967c6bf82
+ms.openlocfilehash: 566b748d76b5947d9807d212d15aeb299f2364b1
+ms.sourcegitcommit: 3f3975916b5c531ee63d92340ccd6e73e879e8d7
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/31/2021
-ms.locfileid: "61649761"
+ms.lasthandoff: 01/21/2022
+ms.locfileid: "62162080"
 ---
 # <a name="working-with-azure-active-directory-resources-in-microsoft-graph"></a>Trabalhar com os recursos do Azure Active Directory no Microsoft Graph
 
@@ -44,7 +44,7 @@ A tabela a seguir lista alguns casos comuns de uso de recursos do Azure AD.
 | Aplique políticas do Azure AD para aplicativos, entidades de serviço, grupos ou toda a organização. As políticas para mapeamento de declarações, emissão de token, duração de token, descoberta de realm inicial e mais são suportados.  | [Políticas disponíveis](../resources/policy-overview.md) | Não disponível |
 | **Acesso seguro privilegiado ao Azure AD** | | |
 | Gerencie e monitore o acesso privilegiado com limite de tempo aos diretório e os recursos do Azure para administradores e profissionais de TI com PIM (Privileged Identity Management). | [APIs de Privileged Identity Management](../resources/privilegedidentitymanagement-root.md) | [O que é o Azure AD Privileged Identity Management?](/azure/active-directory/active-directory-privileged-identity-management-configure)|
-| Monitore os eventos de risco de identidade, como os usuários fazendo logon em dispositivos infectado por malware ou locais desconhecidos. | [API do serviço de proteção de identidade](../resources/identityprotection-root.md) | [Azure Active Directory Identity Protection](/azure/active-directory/active-directory-identityprotection)<br/><br/>[Eventos de risco do Azure Active Directory](/azure/active-directory/active-directory-reporting-risk-events) |
+| Monitore os eventos de risco de identidade, como os usuários fazendo logon em dispositivos infectado por malware ou locais desconhecidos. | [API do serviço de proteção de identidade](../resources/identityprotection-overview.md) | [Azure Active Directory Identity Protection](/azure/active-directory/active-directory-identityprotection)<br/><br/>[Eventos de risco do Azure Active Directory](/azure/active-directory/active-directory-reporting-risk-events) |
 | **Gerenciar dispositivos** | | |
 | Gerenciar os dispositivos registrados na organização. Os dispositivos são registrados a usuários e incluem itens como laptops, computadores desktop e celulares. Os dispositivos são em geral criados na nuvem usando o Serviço de Registro de Dispositivo ou por meio do Microsoft Intune. Eles são utilizados por políticas de acesso condicional para a autenticação multifator. | [device](../resources/device.md) | [Introdução ao registro de dispositivos do Azure Active Directory](/azure/active-directory/active-directory-device-registration-overview) |
 | **Gerenciamento de aplicativos** | | |

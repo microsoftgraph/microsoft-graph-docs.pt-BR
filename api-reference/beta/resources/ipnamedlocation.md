@@ -1,16 +1,16 @@
 ---
 title: Tipo de recurso ipNamedLocation
-description: Representa um local nomeado pelo Azure Active Directory definido por intervalos IP. Locais nomeados são regras personalizadas que definem locais de rede que podem ser usados em uma política de Acesso Condicional.
-localization_priority: Normal
-author: videor
+description: Representa um Azure Active Directory nome definido por intervalos IP. Locais nomeados são regras personalizadas que definem locais de rede que podem ser usados em uma política de Acesso Condicional.
+ms.localizationpriority: medium
+author: davidspooner
 ms.prod: identity-and-sign-in
 doc_type: resourcePageType
-ms.openlocfilehash: 02b704b1216c34f80155cf1ebf323e29f565c620
-ms.sourcegitcommit: 14648839f2feac2e5d6c8f876b7ae43e996ea6a0
+ms.openlocfilehash: 44fc4c076f5c99ca0f14e0fc2771ad930f20b144
+ms.sourcegitcommit: 3f3975916b5c531ee63d92340ccd6e73e879e8d7
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/11/2021
-ms.locfileid: "50720666"
+ms.lasthandoff: 01/21/2022
+ms.locfileid: "62161736"
 ---
 # <a name="ipnamedlocation-resource-type"></a>Tipo de recurso ipNamedLocation
 
@@ -18,7 +18,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Representa um local nomeado pelo Azure Active Directory definido por intervalos IP. Locais nomeados são regras personalizadas que definem locais de rede que podem ser usados em uma política de Acesso Condicional.
+Representa um Azure Active Directory nome definido por intervalos IP. Locais nomeados são regras personalizadas que definem locais de rede que podem ser usados em uma política de Acesso Condicional.
 
 Herda de [namedLocation](../resources/namedLocation.md)
 
@@ -30,17 +30,17 @@ Herda de [namedLocation](../resources/namedLocation.md)
 | [Criar ipNamedLocation](../api/conditionalaccessroot-post-namedlocations.md) | [ipNamedLocation](ipNamedLocation.md) | Crie um novo **objeto ipNamedLocation.** |
 | [Obter ipNamedLocation](../api/ipnamedlocation-get.md) | [ipNamedLocation](ipnamedlocation.md) | Leia as propriedades e as relações de um **objeto ipNamedLocation.** |
 | [Atualizar ipNamedLocation](../api/ipnamedlocation-update.md) | [ipNamedLocation](ipnamedlocation.md) | Atualize um **objeto ipNamedLocation.** |
-| [Excluir ipNamedLocation](../api/ipnamedlocation-delete.md) | Nenhum(a) | **Exclua um objeto ipNamedLocation.** |
+| [Excluir ipNamedLocation](../api/ipnamedlocation-delete.md) | Nenhum | **Exclua um objeto ipNamedLocation.** |
 
 ## <a name="properties"></a>Propriedades
 
 | Propriedade     | Tipo        | Descrição |
 |:-------------|:------------|:------------|
 |createdDateTime|DateTimeOffset|O tipo Timestamp representa a data e a hora de criação do local usando o formato ISO 8601 e está sempre em horário UTC. Por exemplo, meia-noite UTC em 1 de janeiro de 2014 é `2014-01-01T00:00:00Z`. Somente leitura. Herdado [de namedLocation](../resources/namedLocation.md).|
-|displayName|Cadeia de caracteres|Nome acessível para humanos do local.|
+|displayName|Cadeia de caracteres|Nome acessível para humanos do local. Obrigatório.|
 |id|Cadeia de caracteres|Identificador de um objeto namedLocation. Somente leitura. Herdado [de namedLocation](../resources/namedLocation.md).|
-|ipRanges|Coleção [ipRange](iprange.md)|Lista de intervalos de endereços IP no formato CIDR IPv4 (por exemplo, 1.2.3.4/32) ou qualquer formato IPv6 acessível do IETF RFC596.|
-|isTrusted|Booliano|True se esse local for explicitamente confiável.|
+|ipRanges|Coleção [ipRange](iprange.md)|Lista de intervalos de endereços IP no formato CIDR IPv4 (por exemplo, 1.2.3.4/32) ou qualquer formato IPv6 acessível do IETF RFC596. Obrigatório.|
+|isTrusted|Booliano|`true` se esse local for explicitamente confiável. Opcional. O valor padrão é `false`.|
 |modifiedDateTime|DateTimeOffset|O tipo Timestamp representa a última data e hora modificadas do local usando o formato ISO 8601 e está sempre em horário UTC. Por exemplo, meia-noite UTC em 1 de janeiro de 2014 é `2014-01-01T00:00:00Z`. Somente leitura. Herdado [de namedLocation](../resources/namedLocation.md).|
 
 ## <a name="relationships"></a>Relações
@@ -69,6 +69,12 @@ Veja a seguir uma representação JSON do recurso.
   "modifiedDateTime": "String (timestamp)"
 }
 ```
+
+## <a name="see-also"></a>Confira também
+
++ [O que é Acesso Condicional?](/azure/active-directory/conditional-access/overview)
++ [Usando a condição de local em uma política de Acesso Condicional](/azure/active-directory/conditional-access/location-condition)
+
 
 <!-- uuid: 16cd6b66-4b1a-43a1-adaf-3a886856ed98
 2019-02-04 14:57:30 UTC -->

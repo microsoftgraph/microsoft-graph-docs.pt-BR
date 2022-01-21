@@ -2,15 +2,15 @@
 title: Tipo de recurso iPv4CidrRange
 description: Representa um intervalo IPv4 usando a notação CIDR.
 ms.localizationpriority: medium
-author: videor
+author: davidspooner
 ms.prod: directory-management
 doc_type: resourcePageType
-ms.openlocfilehash: b11286b1de310b4d95f6f323a7c0a94b468a75a5
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 5a5d9114ea93150d6391ecc6b18813b97e99cdfd
+ms.sourcegitcommit: 3f3975916b5c531ee63d92340ccd6e73e879e8d7
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59134749"
+ms.lasthandoff: 01/21/2022
+ms.locfileid: "62161975"
 ---
 # <a name="ipv4cidrrange-resource-type"></a>Tipo de recurso iPv4CidrRange
 
@@ -24,7 +24,7 @@ Herda de [ipRange](../resources/iprange.md)
 
 | Propriedade     | Tipo        | Descrição |
 |:-------------|:------------|:------------|
-|cidrAddress|String|Endereço IPv4 na notação CIDR. Não anulável.|
+|cidrAddress|Cadeia de caracteres|Endereço IPv4 na notação CIDR. Não anulável.|
 
 ## <a name="json-representation"></a>Representação JSON
 

@@ -1,16 +1,16 @@
 ---
 title: Tipo de recurso conditionalAccessConditionSet
 description: Representa o tipo de condições que regem quando a política se aplica.
-localization_priority: Normal
-author: videor
+ms.localizationpriority: medium
+author: davidspooner
 ms.prod: identity-and-sign-in
 doc_type: resourcePageType
-ms.openlocfilehash: 162943a5f2d51744ae37d6644f8a01eafb31c259
-ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
+ms.openlocfilehash: b5147735cb34a6dc10898257ff76a32ebe0b5b26
+ms.sourcegitcommit: 3f3975916b5c531ee63d92340ccd6e73e879e8d7
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "50961287"
+ms.lasthandoff: 01/21/2022
+ms.locfileid: "62161652"
 ---
 # <a name="conditionalaccessconditionset-resource-type"></a>Tipo de recurso conditionalAccessConditionSet
 
@@ -28,7 +28,7 @@ Representa o tipo de condições que regem quando a política se aplica.
 |usuários|[conditionalAccessUsers](conditionalaccessusers.md)| Usuários, grupos e funções incluídos e excluídos da política. Obrigatório. |
 |clientAppTypes|coleção conditionalAccessClientApp| Tipos de aplicativo cliente incluídos na política. Os possíveis valores são: `all`, `browser`, `mobileAppsAndDesktopClients`, `exchangeActiveSync`, `easSupported`, `other`. Obrigatório.|
 |deviceStates|[conditionalAccessDeviceStates](conditionalaccessdevicestates.md)| Estados do dispositivo na política. |
-|devices|[conditionalAccessDevices](conditionalaccessdevices.md)| Dispositivos na política. |
+|dispositivos|[conditionalAccessDevices](conditionalaccessdevices.md)| Dispositivos na política. |
 |locations|[conditionalAccessLocations](conditionalaccesslocations.md)| Locais incluídos e excluídos da política. |
 |plataformas|[conditionalAccessPlatforms](conditionalaccessplatforms.md)| Plataformas incluídas e excluídas da política. |
 |signInRiskLevels|Coleção riskLevel| Níveis de risco de login incluídos na política. Os possíveis valores são: `low`, `medium`, `high`, `hidden`, `none`, `unknownFutureValue`. Obrigatório.|

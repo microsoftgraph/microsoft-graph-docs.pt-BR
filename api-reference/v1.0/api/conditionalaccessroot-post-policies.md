@@ -2,15 +2,15 @@
 title: Criar conditionalAccessPolicy
 description: Crie um novo conditionalAccessPolicy.
 ms.localizationpriority: medium
-author: videor
+author: davidspooner
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: a17f92d882e2013f3ddfd6a4655054bf302c01c8
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: 38c6214d2341840f5b321884e8bde40b427a79b1
+ms.sourcegitcommit: 3f3975916b5c531ee63d92340ccd6e73e879e8d7
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62101449"
+ms.lasthandoff: 01/21/2022
+ms.locfileid: "62161911"
 ---
 # <a name="create-conditionalaccesspolicy"></a>Criar conditionalAccessPolicy
 
@@ -26,7 +26,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |:---------------------------------------|:--------------------------------------------|
 | Delegado (conta corporativa ou de estudante)     | Policy.Read.All, Policy.ReadWrite.ConditionalAccess e Application.Read.All |
 | Delegado (conta pessoal da Microsoft) | Sem suporte. |
-| Aplicativo                            | Policy.Read.All, Policy.ReadWrite.ConditionalAccess e Application.Read.All |
+| Application                            | Policy.Read.All, Policy.ReadWrite.ConditionalAccess e Application.Read.All |
 
 ## <a name="http-request"></a>Solicitação HTTP
 

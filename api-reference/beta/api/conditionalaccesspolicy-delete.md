@@ -2,15 +2,15 @@
 title: Excluir conditionalAccessPolicy
 description: Exclua um conditionalAccessPolicy.
 ms.localizationpriority: medium
-author: videor
+author: davidspooner
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: d4178d8c067fa7a8cbe47f653eed24041b8a2b79
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: 01f71fd54e9fb2edd94341e17622c45989315aaf
+ms.sourcegitcommit: 3f3975916b5c531ee63d92340ccd6e73e879e8d7
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62106631"
+ms.lasthandoff: 01/21/2022
+ms.locfileid: "62162024"
 ---
 # <a name="delete-conditionalaccesspolicy"></a>Excluir conditionalAccessPolicy
 
@@ -28,7 +28,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |:--------------------------------------|:---------------------------------------------------------------|
 |Delegado (conta corporativa ou de estudante)     | Policy.Read.All e Policy.ReadWrite.ConditionalAccess |
 |Delegado (conta pessoal da Microsoft) | Sem suporte. |
-|Aplicativo                            | Policy.Read.All e Policy.ReadWrite.ConditionalAccess |
+|Application                            | Policy.Read.All e Policy.ReadWrite.ConditionalAccess |
 
 ## <a name="http-request"></a>Solicitação HTTP
 

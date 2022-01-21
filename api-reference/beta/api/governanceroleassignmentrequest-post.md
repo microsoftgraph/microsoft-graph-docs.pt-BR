@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 doc_type: apiPageType
 ms.prod: governance
 author: carolinetempleton
-ms.openlocfilehash: eef93119d2f8ddad51b15b6de66fbffe1f4744d1
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: f4a28ef2450411cd9d9f2a03c8ba418982ebee9d
+ms.sourcegitcommit: 3f3975916b5c531ee63d92340ccd6e73e879e8d7
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62113674"
+ms.lasthandoff: 01/21/2022
+ms.locfileid: "62161897"
 ---
 # <a name="create-governanceroleassignmentrequest"></a>Criar governanceRoleAssignmentRequest
 
@@ -82,9 +82,9 @@ No corpo da solicitação, fornece uma representação JSON de um [objeto govern
 
 | Propriedade         | Tipo                                                     | Descrição |
 |:-----------------|:---------------------------------------------------------|:--|
-| resourceId       | Cadeia de caracteres                                                   | A ID do recurso. Obrigatório. |
-| roleDefinitionId | Cadeia de caracteres                                                   | A ID da definição de função. Obrigatório. |
-| subjectId        | Cadeia de caracteres                                                   | A ID do assunto. Obrigatório. |
+| resourceId       | Cadeia de caracteres                                                   | O identificador exclusivo do recurso do Azure associado à solicitação de atribuição de função. Os recursos do Azure podem incluir assinaturas, grupos de recursos, máquinas virtuais e SQL bancos de dados. Obrigatório. |
+| roleDefinitionId | Cadeia de caracteres                                                   | O identificador da definição de função do Azure à que a solicitação de atribuição de função está associada. Obrigatório. |
+| subjectId        | Cadeia de caracteres                                                   | O identificador exclusivo da entidade ou entidade à que a solicitação de atribuição de função está associada. Entidades podem ser usuários, grupos ou entidades de serviço. Obrigatório. |
 | assignmentState  | Cadeia de caracteres                                                   | O estado da atribuição. O valor pode ser `Eligible` e `Active` . Obrigatório. |
 | type             | Cadeia de caracteres                                                   | O tipo de solicitação. O valor pode `AdminAdd` ser , , , , , , `UserAdd` e `AdminUpdate` `AdminRemove` `UserRemove` `UserExtend` `UserRenew` `AdminRenew` `AdminExtend` . Obrigatório. |
 | motivo           | Cadeia de caracteres                                                   | O motivo precisa ser fornecido para a solicitação de atribuição de função para fins de auditoria e revisão. |

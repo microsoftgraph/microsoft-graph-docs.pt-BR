@@ -5,12 +5,12 @@ title: contentType
 ms.localizationpriority: medium
 doc_type: resourcePageType
 ms.prod: sites-and-lists
-ms.openlocfilehash: 5a0f8fb70900e4498a17db4bc7ba75337c3e4c4d
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: b2c4cc3e7fe2b9e516936cf4eb28cdb14193e0fc
+ms.sourcegitcommit: 3f3975916b5c531ee63d92340ccd6e73e879e8d7
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62111553"
+ms.lasthandoff: 01/21/2022
+ms.locfileid: "62161645"
 ---
 # <a name="contenttype-resource-type"></a>Tipo de recurso contentType
 
@@ -38,7 +38,8 @@ Os tipos de conteúdo permitem definir um conjunto de colunas que devem estar pr
 |[copyToDefaultContentLocation](../api/contenttype-copytodefaultcontentlocation.md)|[contentType](../resources/contenttype.md)| Copie um arquivo para o local de conteúdo padrão em [um contentType](../resources/contenttype.md).|
 |[List columns](../api/contenttype-list-columns.md)|[coleção columnDefinition](../resources/columnDefinition.md)|Obter uma coleção de colunas, representadas como [recursos columnDefinition,](../resources/columnDefinition.md) em **um contentType**.|
 |[Criar coluna](../api/contenttype-post-columns.md)|[columnDefinition](../resources/columnDefinition.md)|Adicione uma coluna a **um tipo de conteúdo** em um site ou lista.|
-
+|[getCompatibleHubContentTypes](../api/contenttype-getcompatiblehubcontenttypes.md)|[coleção contentType](../resources/contenttype.md)| Recupere tipos de conteúdo publicados do hub de tipo de conteúdo que pode ser adicionado a um site ou uma lista.|
+|[addCopyFromContentTypeHub](../api/contenttype-addcopyfromcontenttypehub.md)|[contentType](../resources/contenttype.md)| Adicione ou sincronize um tipo de conteúdo compatível do hub de tipo de conteúdo para um site ou uma lista.|
 
 ## <a name="properties"></a>Propriedades
 

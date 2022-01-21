@@ -2,15 +2,15 @@
 title: Tipo de recurso conditionalAccessDevices
 description: Representa dispositivos no escopo da política.
 ms.localizationpriority: medium
-author: videor
+author: davidspooner
 ms.prod: identity-and-sign-in
 doc_type: resourcePageType
-ms.openlocfilehash: 0c4bc7721566bd8210830e51dbe820b1b44813e1
-ms.sourcegitcommit: 36bae3615df41876493b25da478e589d1974f97b
+ms.openlocfilehash: e5e16500dbecaa133e11f14ff7d2690ffbc2a64e
+ms.sourcegitcommit: 3f3975916b5c531ee63d92340ccd6e73e879e8d7
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "59996364"
+ms.lasthandoff: 01/21/2022
+ms.locfileid: "62161617"
 ---
 # <a name="conditionalaccessdevices-resource-type"></a>Tipo de recurso conditionalAccessDevices
 
@@ -24,11 +24,11 @@ Representa dispositivos no escopo da política.
 
 | Propriedade     | Tipo        | Descrição |
 |:-------------|:------------|:------------|
-| includeDevices | Coleção de cadeia de caracteres | Estados no escopo da política. `All` é o único valor permitido. Não será possível definir *se deviceFIlter* estiver definido. |
-| excludeDevices | Coleção de cadeia de caracteres | Estados excluídos do escopo da política. Valores possíveis: `Compliant` , `DomainJoined` . Não será possível definir **se deviceFIlter** estiver definido. |
+| includeDevices | Coleção String | Estados no escopo da política. `All` é o único valor permitido. Não será possível definir *se deviceFIlter* estiver definido. |
+| excludeDevices | Coleção String | Estados excluídos do escopo da política. Valores possíveis: `Compliant` , `DomainJoined` . Não será possível definir **se deviceFIlter** estiver definido. |
 | deviceFilter | [conditionalAccessFilter](conditionalaccessfilter.md) | Filtro que define a regra de sintaxe de dispositivo dinâmico para incluir/excluir dispositivos. Um filtro pode usar propriedades de dispositivo (como atributos de extensão) para incluí-las/excluir. Não será possível definir **se includeDevices** ou **excludeDevices** estiver definido. |
-| includeDeviceStates (preterido)| Coleção de cadeia de caracteres | Estados no escopo da política. `All` é o único valor permitido. |
-| excludeDeviceStates (preterido)| Coleção de cadeia de caracteres | Estados excluídos do escopo da política. Valores possíveis: `Compliant` , `DomainJoined` . |
+| includeDeviceStates (preterido)| Coleção String | Estados no escopo da política. `All` é o único valor permitido. |
+| excludeDeviceStates (preterido)| Coleção de cadeias de caracteres | Estados excluídos do escopo da política. Valores possíveis: `Compliant` , `DomainJoined` . |
 
 ## <a name="relationships"></a>Relações
 

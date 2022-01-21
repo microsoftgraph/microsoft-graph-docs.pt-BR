@@ -1,16 +1,16 @@
 ---
 title: Tipo de recurso conditionalAccessDeviceStates
 description: Representa os estados do dispositivo no escopo da política.
-localization_priority: Normal
-author: videor
+ms.localizationpriority: medium
+author: davidspooner
 ms.prod: identity-and-sign-in
 doc_type: resourcePageType
-ms.openlocfilehash: 152c4edbd641d68f6211111cb29e9794e2a88260
-ms.sourcegitcommit: 9d98d9e9cc1e193850ab9b82aaaf906d70e1378b
+ms.openlocfilehash: baeb5bd02534cd700af50d9f4984ef7e1baf4eb6
+ms.sourcegitcommit: 3f3975916b5c531ee63d92340ccd6e73e879e8d7
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/12/2021
-ms.locfileid: "50761797"
+ms.lasthandoff: 01/21/2022
+ms.locfileid: "62161996"
 ---
 # <a name="conditionalaccessdevicestates-resource-type"></a>Tipo de recurso conditionalAccessDeviceStates
 
@@ -24,7 +24,7 @@ Representa os estados do dispositivo no escopo da política.
 
 | Propriedade     | Tipo        | Descrição |
 |:-------------|:------------|:------------|
-| includeStates | Coleção de cadeias de caracteres | Estados no escopo da política. `All` é o único valor permitido. |
+| includeStates | Coleção String | Estados no escopo da política. `All` é o único valor permitido. |
 | excludeStates | Coleção de cadeias de caracteres | Estados excluídos do escopo da política. Valores possíveis: `Compliant` , `DomainJoined` . |
 
 ## <a name="relationships"></a>Relações

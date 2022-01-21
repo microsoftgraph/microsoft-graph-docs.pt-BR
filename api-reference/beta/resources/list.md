@@ -3,15 +3,15 @@ author: JeremyKelley
 description: O recurso de lista representa uma lista em um site.
 ms.date: 09/11/2017
 title: Listar
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: sharepoint
 doc_type: resourcePageType
-ms.openlocfilehash: 30d26dfd3e140f302c6535cd6603a90568dbb567
-ms.sourcegitcommit: ada6eab637b9b318129aefb98edbe7316399d9ba
+ms.openlocfilehash: 0703f3df00f97391f7f06785bebc880b29bbefbd
+ms.sourcegitcommit: 3f3975916b5c531ee63d92340ccd6e73e879e8d7
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/07/2021
-ms.locfileid: "53317095"
+ms.lasthandoff: 01/21/2022
+ms.locfileid: "62161862"
 ---
 # <a name="list-resource"></a>Recurso List
 
@@ -28,7 +28,7 @@ As tarefas a seguir estão disponíveis para os recursos list.
 **Observação:** esta versão beta só permite navegar por listas, não criar ou atualizá-las.
 Você pode, no entanto, criar ou atualizar [itens de lista][listItem].
 
-Todos os exemplos abaixo são relativos a um site, por exemplo, `https://graph.microsoft.com/beta/sites/{site-id}` .
+Todos os exemplos abaixo são relativos a um site, por exemplo, `https://graph.microsoft.com/beta/sites/{site-id}`.
 
 | Tarefa comum               | Método HTTP
 |:--------------------------|:------------------------------
@@ -43,8 +43,9 @@ Todos os exemplos abaixo são relativos a um site, por exemplo, `https://graph.m
 | [Obter canal WebSocket][] | GET /lists/{list-id}/subscriptions/socketIo
 |[Tipos de conteúdo de lista][]          | GET /lists/{list-id}/contentTypes
 |[Adicionar cópia do tipo de conteúdo do site][] | POST /lists/{list-id}/contentTypes/addCopy
-|[Colunas de lista][]               | GET /lists/{list-id}/columns
+|[List columns][]               | GET /lists/{list-id}/columns
 |[Criar coluna][]              | POST /lists/{list-id}/columns
+|[Listar operações](../api/list-list-operations.md)|GET /lists/{list-id}/operations
 
 [Obter listas em um site]: ../api/list-list.md
 [Obter lista]: ../api/list-get.md
@@ -59,6 +60,7 @@ Todos os exemplos abaixo são relativos a um site, por exemplo, `https://graph.m
 [Adicionar cópia do tipo de conteúdo do site]: ../api/contenttype-addCopy.md
 [Colunas de lista]: ../api/list-list-columns.md
 [Criar coluna]: ../api/list-post-columns.md
+
 ## <a name="json-representation"></a>Representação JSON
 
 Veja a seguir uma representação JSON de um recurso **list**.
@@ -107,7 +109,7 @@ O recurso **list** tem as seguintes propriedades.
 | **contentTypes** | Collection([contentType][])      | A coleção de tipos de conteúdo presentes nesta lista.
 | **displayName**  | string                           | O título em exibição da lista.
 | **list**         | [listInfo][]                     | Fornece mais detalhes sobre a lista.
-| **system**       | [systemFacet][]                  | Se estiver presente, indica que se trata de uma lista gerenciada pelo sistema. Somente leitura.
+| **system**       | [systemFacet][]                  | Se presente, indica que esta é uma lista gerenciada pelo sistema. Somente leitura.
 
 As propriedades a seguir são herdadas do **[baseItem][]**.
 
@@ -115,10 +117,10 @@ As propriedades a seguir são herdadas do **[baseItem][]**.
 |:-------------------------|:-----------------|:-------------------------------
 | **id**                   | string           | O identificador exclusivo do item. Somente leitura.
 | **name**                 | string           | O nome do item.
-| **createdBy**            | [identitySet][]  | Identidade do criador desse item. Somente leitura.
+| **createdBy**            | [identitySet][]  | Identidade do criador deste item. Somente leitura.
 | **createdDateTime**      | DateTimeOffset   | A data e a hora da criação do item. Somente leitura.
 | **description**          | string           | O texto descritivo do item.
-| **lastModifiedBy**       | [identitySet][]  | Identidade da última pessoa que alterou esse item. Somente leitura.
+| **lastModifiedBy**       | [identitySet][]  | Identidade do último modificador deste item. Somente leitura.
 | **lastModifiedDateTime** | DateTimeOffset   | A data e a hora que o item foi modificado pela última vez. Somente leitura.
 | **webUrl**               | string (url)     | A URL que exibe o item no navegador. Somente leitura.
 
@@ -129,9 +131,10 @@ O recurso **list** tem as seguintes relações com outros recursos.
 | Nome da relação | Tipo                        | Descrição
 |:------------------|:----------------------------|:------------------------------
 | **activities**    | Conjunto [itemActivity][] | As atividades recentes que ocorreram nesta lista.
-| **drive**         | [drive][]                   | Presente somente em bibliotecas de documentos. Permite o acesso à lista como um recurso de [unidade][] com [driveItems][driveItem].
+| **drive**         | [drive][]                   | Presente apenas em bibliotecas de documentos. Permite o acesso à lista como um recurso [drive][] com [driveItems][driveItem].
 | **items**         | Collection([listItem][])    | Todos os itens contidos na lista.
 | assinaturas      | conjunto de [assinaturas][] | O conjunto de assinaturas na lista.
+|**operations**|[coleção richLongRunningOperation](../resources/richlongrunningoperation.md)| A coleção de operações em execução longa para a lista.
 
 [baseItem]: baseitem.md
 [contentType]: contenttype.md

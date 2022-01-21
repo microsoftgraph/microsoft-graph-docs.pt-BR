@@ -2,15 +2,15 @@
 title: Listar namedLocations
 description: Obter uma lista de objetos namedLocation.
 ms.localizationpriority: medium
-author: videor
+author: davidspooner
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: 04e6603c5a0eccbe7b247a3f1200601367db7f7b
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: 664806f35f18466835ca634cfc2135663f99764f
+ms.sourcegitcommit: 3f3975916b5c531ee63d92340ccd6e73e879e8d7
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62109244"
+ms.lasthandoff: 01/21/2022
+ms.locfileid: "62161827"
 ---
 # <a name="list-namedlocations"></a>Listar namedLocations
 

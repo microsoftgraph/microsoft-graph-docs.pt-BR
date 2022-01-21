@@ -2,15 +2,15 @@
 title: Tipo de recurso conditionalAccessSessionControl
 description: Tipo de base de controle de sessão.
 ms.localizationpriority: medium
-author: videor
+author: davidspooner
 ms.prod: identity-and-sign-in
 doc_type: resourcePageType
-ms.openlocfilehash: 8c32bdd34baeeb6b034c24795e8ddb87d3dd5bb6
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: f9f66b50edffec1aeb1fdfd0d9627c9f61292bb0
+ms.sourcegitcommit: 3f3975916b5c531ee63d92340ccd6e73e879e8d7
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59084591"
+ms.lasthandoff: 01/21/2022
+ms.locfileid: "62161883"
 ---
 # <a name="conditionalaccesssessioncontrol-resource-type"></a>Tipo de recurso conditionalAccessSessionControl
 

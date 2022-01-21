@@ -2,15 +2,15 @@
 title: Listar políticas
 description: Recupere uma lista de objetos conditionalaccesspolicy.
 ms.localizationpriority: medium
-author: videor
+author: davidspooner
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: a15e4afa7aba1c43e1f9f21df7a71b22ca2dcc21
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: ada730708a90857f0b617d4ee5264510f472b8a7
+ms.sourcegitcommit: 3f3975916b5c531ee63d92340ccd6e73e879e8d7
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62128900"
+ms.lasthandoff: 01/21/2022
+ms.locfileid: "62161820"
 ---
 # <a name="list-policies"></a>Listar políticas
 

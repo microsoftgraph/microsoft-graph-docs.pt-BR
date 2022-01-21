@@ -2,15 +2,15 @@
 title: Tipo de recurso conditionalAccessLocations
 description: Representa locais incluídos e excluídos do escopo da política.
 ms.localizationpriority: medium
-author: videor
+author: davidspooner
 ms.prod: identity-and-sign-in
 doc_type: resourcePageType
-ms.openlocfilehash: 68804b5728fd058d2502ac041a24c3a218692b93
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 0e5e7de8a751c118a4d1a260a348a04ec1da2fb5
+ms.sourcegitcommit: 3f3975916b5c531ee63d92340ccd6e73e879e8d7
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59109240"
+ms.lasthandoff: 01/21/2022
+ms.locfileid: "62161211"
 ---
 # <a name="conditionalaccesslocations-resource-type"></a>Tipo de recurso conditionalAccessLocations
 

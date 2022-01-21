@@ -1,16 +1,16 @@
 ---
 title: Tipo de recurso namedLocation
-description: Esta é a classe base que representa um local nomeado pelo Azure Active Directory. Locais nomeados são regras personalizadas que definem locais de rede que podem ser usados em uma política de Acesso Condicional.
-localization_priority: Normal
-author: videor
+description: Esta é a classe base que representa um Azure Active Directory local nomeado. Locais nomeados são regras personalizadas que definem locais de rede que podem ser usados em uma política de Acesso Condicional.
+ms.localizationpriority: medium
+author: davidspooner
 ms.prod: identity-and-sign-in
 doc_type: resourcePageType
-ms.openlocfilehash: ae3ec6235259001a453bac50e45d2b142cdbaa8f
-ms.sourcegitcommit: 14648839f2feac2e5d6c8f876b7ae43e996ea6a0
+ms.openlocfilehash: 16958fd48e2020cb5a59f496c64f1c4fe0fbd9f0
+ms.sourcegitcommit: 3f3975916b5c531ee63d92340ccd6e73e879e8d7
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/11/2021
-ms.locfileid: "50722115"
+ms.lasthandoff: 01/21/2022
+ms.locfileid: "62161729"
 ---
 # <a name="namedlocation-resource-type"></a>Tipo de recurso namedLocation
 
@@ -18,7 +18,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Esta é a classe base que representa um local nomeado pelo Azure Active Directory. Locais nomeados são regras personalizadas que definem locais de rede que podem ser usados em uma política de Acesso Condicional.
+Esta é a classe base que representa um Azure Active Directory local nomeado. Locais nomeados são regras personalizadas que definem locais de rede que podem ser usados em uma política de Acesso Condicional (CA).
 
 ## <a name="methods"></a>Métodos
 
@@ -26,7 +26,7 @@ Esta é a classe base que representa um local nomeado pelo Azure Active Director
 |:-------------|:------------|:------------|
 | [Listar namedLocations](../api/conditionalaccessroot-list-namedlocations.md) | [coleção namedLocation](namedLocation.md) | Obter todos os **objetos namedLocation** na organização. |
 | [Obter namedLocation](../api/namedlocation-get.md) | [namedLocation](namedlocation.md) | Leia as propriedades e as relações de um **objeto namedLocation.** |
-| [Excluir namedLocation](../api/namedlocation-delete.md) | Nenhum(a) | Exclua **um objeto namedLocation.** |
+| [Excluir namedLocation](../api/namedlocation-delete.md) | Nenhum | Exclua **um objeto namedLocation.** |
 
 ## <a name="properties"></a>Propriedades
 
@@ -62,6 +62,12 @@ Veja a seguir uma representação JSON do recurso.
   "modifiedDateTime": "String (timestamp)"
 }
 ```
+
+## <a name="see-also"></a>Confira também
+
++ [O que é Acesso Condicional?](/azure/active-directory/conditional-access/overview)
++ [Usando a condição de local em uma política de Acesso Condicional](/azure/active-directory/conditional-access/location-condition)
+
 
 <!-- uuid: 16cd6b66-4b1a-43a1-adaf-3a886856ed98
 2019-02-04 14:57:30 UTC -->

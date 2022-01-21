@@ -2,15 +2,15 @@
 title: Tipo de recurso conditionalAccessApplications
 description: Representa aplicativos e ações do usuário incluídas e excluídas do escopo da política.
 ms.localizationpriority: medium
-author: videor
+author: davidspooner
 ms.prod: identity-and-sign-in
 doc_type: resourcePageType
-ms.openlocfilehash: bd1b478b3bb77617d132a38217e43e4b053a2772
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: df2802c605bb4cbc8874e08d1bd9c9a63a47257f
+ms.sourcegitcommit: 3f3975916b5c531ee63d92340ccd6e73e879e8d7
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59084612"
+ms.lasthandoff: 01/21/2022
+ms.locfileid: "62161890"
 ---
 # <a name="conditionalaccessapplications-resource-type"></a>Tipo de recurso conditionalAccessApplications
 

@@ -1336,9 +1336,9 @@ items:
                     href: resources/callrecords-callrecord.md
                   - name: Obter registro de chamada
                     href: api/callrecords-callrecord-get.md
-              - name: Session
+              - name: Sessão
                 items:
-                  - name: Session
+                  - name: Sessão
                     href: resources/callrecords-session.md
                   - name: Listar sessões
                     href: api/callrecords-session-list.md
@@ -4988,7 +4988,7 @@ items:
                   - name: Obter intervalo
                     href: api/oauth2permissiongrant-delta.md
               - name: Proteção de identidade
-                href: resources/identityprotectionroot.md
+                href: resources/identityprotection-overview.md
                 items:
                   - name: Detecção de riscos
                     href: resources/riskdetection.md
@@ -5359,8 +5359,8 @@ items:
                         href: api/accessreviewinstance-batchrecorddecisions.md
                       - name: Redefinir decisões
                         href: api/accessreviewinstance-resetdecisions.md
-                      - name: Listar decisões
-                        href: api/accessreviewinstance-list-decisions.md
+                      - name: Listar revisadores contatados
+                        href: api/accessreviewinstance-list-contactedreviewers.md
                       - name: Item de decisão da instância de revisão do Access
                         href: resources/accessreviewinstancedecisionitem.md
                         items:
@@ -6120,15 +6120,15 @@ items:
                 items:
                   - name: Conexão externa
                     href: resources/externalconnectors-externalconnection.md
-                  - name: Listar conexões externas
+                  - name: Listar
                     href: api/externalconnectors-externalconnection-list.md
-                  - name: Criar conexão externa
+                  - name: Criar
                     href: api/externalconnectors-external-post-connections.md
-                  - name: Obter conexão externa
+                  - name: Obter
                     href: api/externalconnectors-externalconnection-get.md
-                  - name: Atualizar conexão externa
+                  - name: Atualizar
                     href: api/externalconnectors-externalconnection-update.md
-                  - name: Excluir conexão externa
+                  - name: Excluir
                     href: api/externalconnectors-externalconnection-delete.md
                   - name: Obter operação
                     href: api/externalconnectors-connectionoperation-get.md
@@ -6136,41 +6136,41 @@ items:
                 items:
                   - name: Esquema
                     href: resources/externalconnectors-schema.md
-                  - name: Criar esquema
+                  - name: Criar
                     href: api/externalconnectors-schema-create.md
-                  - name: Obter esquema
+                  - name: Obter
                     href: api/externalconnectors-schema-get.md
               - name: Item externo
                 items:
                   - name: Item externo
                     href: resources/externalconnectors-externalitem.md
-                  - name: Criar item externo
+                  - name: Criar
                     href: api/externalconnectors-externalitem-create.md
-                  - name: Obter item externo
+                  - name: Obter
                     href: api/externalconnectors-externalitem-get.md
-                  - name: Atualizar item externo
+                  - name: Atualizar
                     href: api/externalconnectors-externalitem-update.md
-                  - name: Excluir item externo
+                  - name: Excluir
                     href: api/externalconnectors-externalitem-delete.md
               - name: Grupo externo
                 items:
                   - name: Grupo externo
                     href: resources/externalconnectors-externalgroup.md
-                  - name: Criar grupo externo
+                  - name: Criar
                     href: api/externalconnectors-externalconnection-post-groups.md
-                  - name: Obter grupo externo
+                  - name: Obter
                     href: api/externalconnectors-externalgroup-get.md
-                  - name: Atualizar grupo externo
+                  - name: Atualizar
                     href: api/externalconnectors-externalgroup-update.md
-                  - name: Excluir grupo externo
+                  - name: Excluir
                     href: api/externalconnectors-externalgroup-delete.md
               - name: Membro do grupo externo
                 items:
                   - name: Identidade
                     href: resources/externalconnectors-identity.md
-                  - name: Criar identidade para membro
+                  - name: Criar
                     href: api/externalconnectors-externalgroup-post-members.md
-                  - name: Excluir identidade do membro
+                  - name: Excluir
                     href: api/externalconnectors-identity-delete.md
       - name: Segurança
         displayname: 'Security API, Microsoft Intelligent Security Graph'
@@ -6679,7 +6679,7 @@ items:
                 href: api/chats-getallmessages.md
               - name: Obter conteúdo hospedado
                 href: api/chatmessagehostedcontent-get.md
-          - name: Aplicativo
+          - name: App
             items:
               - name: Aplicativo no catálogo
                 href: resources/teamsapp.md
