@@ -5,12 +5,12 @@ title: tipo de recurso do site
 ms.localizationpriority: high
 ms.prod: sites-and-lists
 doc_type: resourcePageType
-ms.openlocfilehash: 67b482b268c871e6e9b99d2812172551918807ab
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: 496796c5d7d2667b41ca97f31f81c3c79fc5de96
+ms.sourcegitcommit: 3f3975916b5c531ee63d92340ccd6e73e879e8d7
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62104992"
+ms.lasthandoff: 01/21/2022
+ms.locfileid: "62162066"
 ---
 # <a name="site-resource-type"></a>tipo de recurso do site
 
@@ -45,6 +45,7 @@ O recurso **site** fornece metadados e relações para um site do SharePoint.
 |[Criar contentType][]        | POSTAR /sites/{site-id}/contentTypes
 |[Colunas de lista][]               | OBTER /sites/{site-id}/columns
 |[Criar coluna][]              | POSTAR /sites/{site-id}/columns
+|[Listar operações](../api/site-list-operations.md)|OBTER /sites/{site-id}/operações
 
 [Obter site]: ../api/site-get.md
 [Obter site raiz]: ../api/site-get.md
@@ -107,6 +108,7 @@ O identificador `root` sempre faz referência ao site raiz de um determinado des
 | **drives**        | Collection([drive][])            | O conjunto de unidades (bibliotecas de documentos) nesse site.
 | **items**         | Collection([baseItem][])         | Usado para lidar com qualquer item contido neste site. Não é possível enumerar este conjunto.
 | **lists**         | Collection([list][])             | O conjunto de listas neste site.
+|**operations**|Coleção [richLongRunningOperation](../resources/richlongrunningoperation.md)| A coleção de operações de execução prolongada para o site.
 | **pages**         | Collection([sitePage][])         | O conjunto de páginas na lista SitePages no site.
 | **permissões**   | Coleção ([permissão][])         | As permissões associadas ao site. Nulas.
 | **sites**         | Collection([site][])             | O conjunto dos subsites neste site.
