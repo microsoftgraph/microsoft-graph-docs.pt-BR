@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: dkershaw10
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: 75c5fac1bcdd39032e2aa3d1f85b10573875cc45
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: 087ef1e9864fa7792bee3ea0c233afebcc0cfa63
+ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "60985848"
+ms.lasthandoff: 01/20/2022
+ms.locfileid: "62112716"
 ---
 # <a name="update-orgcontact"></a>Atualizar orgcontact
 
@@ -44,10 +44,10 @@ No corpo da solicitação, forneça os valores para os campos relevantes que dev
 | Propriedade     | Tipo   |Descrição|
 |:---------------|:--------|:----------|
 |city|Cadeia de caracteres||
-|country|String||
+|country|Cadeia de caracteres||
 |departamento|String||
 |onPremisesSyncEnabled|Booliano||
-|displayName|String||
+|displayName|Cadeia de caracteres||
 |givenName|Cadeia de caracteres||
 |jobTitle|String||
 |onPremisesLastSyncDateTime|DateTimeOffset||
@@ -55,7 +55,7 @@ No corpo da solicitação, forneça os valores para os campos relevantes que dev
 |mailNickname|String||
 |mobilePhone|String||
 |officeLocation|String||
-|postalCode|String||
+|postalCode|Cadeia de caracteres||
 |proxyAddresses|String||
 |estado|Cadeia de caracteres||
 |streetAddress|String||
@@ -102,8 +102,12 @@ Content-type: application/json
 [!INCLUDE [sample-code](../includes/snippets/objc/update-orgcontact-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[Go](#tab/go)
+# <a name="go"></a>[Ir](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/update-orgcontact-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/update-orgcontact-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

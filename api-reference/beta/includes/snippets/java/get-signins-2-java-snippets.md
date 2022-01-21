@@ -1,0 +1,22 @@
+---
+description: Arquivo gerado automaticamente. NÃO MODIFICAR
+ms.openlocfilehash: 8a9a21dbd57d2aa510f2a97f83c6e1a429f491af
+ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.translationtype: MT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 01/20/2022
+ms.locfileid: "62095907"
+---
+```java
+
+GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+
+LinkedList<Option> requestOptions = new LinkedList<Option>();
+requestOptions.add(new QueryOption("top", "10"));
+
+SignInCollectionPage signIns = graphClient.auditLogs().signIns()
+    .buildRequest( requestOptions )
+    .filter("startsWith(appDisplayName,'Azure')")
+    .get();
+
+```

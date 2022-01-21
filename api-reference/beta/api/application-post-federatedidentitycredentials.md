@@ -5,12 +5,12 @@ author: kjyam98
 ms.localizationpriority: medium
 ms.prod: applications
 doc_type: apiPageType
-ms.openlocfilehash: 32c78ddb7525c2331dd16cbb5bc4661f49e260df
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: 09c06d30a39755b7b0d04fba29352d4f4a94da64
+ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "60983026"
+ms.lasthandoff: 01/20/2022
+ms.locfileid: "62097270"
 ---
 # <a name="create-federatedidentitycredential"></a>Criar federatedIdentityCredential
 Namespace: microsoft.graph
@@ -52,9 +52,9 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar [federat
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
 |audiences|Coleção de cadeias de caracteres|Lista as audiências que podem aparecer no token externo. Esse campo é obrigatório e é padrão para "api://AzureADTokenExchange". Ele diz o plataforma de identidade da Microsoft deve aceitar na `aud` declaração no token de entrada. Esse valor representa o Azure AD em seu provedor de identidade externo e não tem valor fixo entre provedores de identidade - talvez seja necessário criar um novo registro de aplicativo em seu provedor de identidade para servir como audiência desse token. Obrigatório.|
-|emissor|String|TThe URL of the external identity provider and must match the issuer claim of the external token being exchanged. A combinação dos valores de **emissor** e **assunto** deve ser exclusiva no aplicativo. Obrigatório.|
-|nome|String|O identificador exclusivo da credencial de identidade federada, que tem um limite de caracteres de 120 caracteres e deve ser amigável à URL. É imutável uma vez criado|
-|assunto|String|Obrigatório. O identificador da carga de trabalho de software externo no provedor de identidade externa. Como o valor da audiência, ele não tem formato fixo, pois cada provedor de identidade usa seu próprio - às vezes um GUID, às vezes um identificador delimitado por dois pontos, às vezes cadeias de caracteres arbitrárias. O valor aqui deve corresponder à subclatura dentro do token apresentado ao Azure AD. A combinação de **emissor e** **assunto** deve ser exclusiva no aplicativo.|
+|emissor|Cadeia de caracteres|TThe URL of the external identity provider and must match the issuer claim of the external token being exchanged. A combinação dos valores de **emissor** e **assunto** deve ser exclusiva no aplicativo. Obrigatório.|
+|nome|Cadeia de caracteres|O identificador exclusivo da credencial de identidade federada, que tem um limite de caracteres de 120 caracteres e deve ser amigável à URL. É imutável uma vez criado|
+|assunto|Cadeia de caracteres|Obrigatório. O identificador da carga de trabalho de software externo no provedor de identidade externa. Como o valor da audiência, ele não tem formato fixo, pois cada provedor de identidade usa seu próprio - às vezes um GUID, às vezes um identificador delimitado por dois pontos, às vezes cadeias de caracteres arbitrárias. O valor aqui deve corresponder à subclatura dentro do token apresentado ao Azure AD. A combinação de **emissor e** **assunto** deve ser exclusiva no aplicativo.|
 
 
 
@@ -101,8 +101,12 @@ Content-Type: application/json
 [!INCLUDE [sample-code](../includes/snippets/java/create-federatedidentitycredential-from--java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[Go](#tab/go)
+# <a name="go"></a>[Ir](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/create-federatedidentitycredential-from--go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/create-federatedidentitycredential-from--powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

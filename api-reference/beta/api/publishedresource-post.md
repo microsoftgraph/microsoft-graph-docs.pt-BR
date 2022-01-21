@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: japere
 ms.prod: applications
 doc_type: apiPageType
-ms.openlocfilehash: 99ea0514c5fb05efd8cdb3b7da99adbd9b3c5076
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: f03c16a0eb15ed1844d99ac3c35e7bef46c3fbba
+ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "61004454"
+ms.lasthandoff: 01/20/2022
+ms.locfileid: "62105560"
 ---
 # <a name="create-publishedresource"></a>Criar publishedResource
 
@@ -52,7 +52,7 @@ Fornecer os valores para as propriedades a seguir.
 
 | Propriedade     | Tipo        | Descrição |
 |:-------------|:------------|:------------|
-|displayName|String|Nome de exibição do publishedResource.|
+|displayName|Cadeia de caracteres|Nome de exibição do publishedResource.|
 |resourceName|Cadeia de caracteres|Nome do publishedResource.|
 
 ## <a name="response"></a>Resposta
@@ -96,8 +96,12 @@ Content-Type: application/json
 [!INCLUDE [sample-code](../includes/snippets/java/create-publishedresource-from-onpremisespublishingprofile-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[Go](#tab/go)
+# <a name="go"></a>[Ir](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/create-publishedresource-from-onpremisespublishingprofile-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/create-publishedresource-from-onpremisespublishingprofile-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

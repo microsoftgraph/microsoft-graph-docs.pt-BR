@@ -5,12 +5,12 @@ author: markwahl-msft
 ms.localizationpriority: medium
 ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: 302f245fd19671ae8045640032c571b875b4abf1
-ms.sourcegitcommit: 65f4e128f96783c18d607a6dcffbc914291285d4
+ms.openlocfilehash: dd1f496cb5f4d6761f14f530cff997fbc3a1792c
+ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/08/2021
-ms.locfileid: "61334939"
+ms.lasthandoff: 01/20/2022
+ms.locfileid: "62098257"
 ---
 # <a name="update-accesspackage"></a>Atualizar accessPackage
 
@@ -19,7 +19,7 @@ Namespace: microsoft.graph
 
 Atualize um objeto [accessPackage](../resources/accesspackage.md) existente para alterar uma ou mais de suas propriedades, como o nome de exibição ou a descrição.
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão|Permissões (da com menos para a com mais privilégios)|
@@ -50,8 +50,8 @@ PATCH /identityGovernance/entitlementManagement/accessPackages/{accessPackageId}
 
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|displayName|String|O nome do pacote de acesso.|
-|description|String|A descrição do pacote de acesso.|
+|displayName|Cadeia de caracteres|O nome do pacote de acesso.|
+|description|Cadeia de caracteres|A descrição do pacote de acesso.|
 |IsHidden|Booleano|Se o pacote de acesso está oculto do solicitante.|
 
 
@@ -96,8 +96,12 @@ Content-Type: application/json
 [!INCLUDE [sample-code](../includes/snippets/java/update-accesspackage-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[Go](#tab/go)
+# <a name="go"></a>[Ir](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/update-accesspackage-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/update-accesspackage-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

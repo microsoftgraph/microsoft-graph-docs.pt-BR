@@ -5,12 +5,12 @@ author: RamjotSingh
 doc_type: apiPageType
 ms.localizationpriority: medium
 ms.prod: microsoft-teams
-ms.openlocfilehash: 068886c61ba0cb47a680739a0368a3075d90a242
-ms.sourcegitcommit: 70b3caded085ba8ef15e389f81fa005506f1e2fb
+ms.openlocfilehash: d180b5cd6eed0158a2892782f2d75bd5b3c03216
+ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/20/2021
-ms.locfileid: "61131886"
+ms.lasthandoff: 01/20/2022
+ms.locfileid: "62109290"
 ---
 # <a name="update-chatmessage"></a>Atualizar chatMessage
 
@@ -48,7 +48,7 @@ PATCH /teams/(team-id)/channels/{channel-id}/messages/{message-id}?model=A
 PATCH /teams/(team-id)/channels/{channel-id}/messages/{message-id}/replies/{reply-id}?model=A
 PATCH /chats/{chatThread-id}/messages/{message-id}?model=A
 ```
-Se não `model` for especificado, o [modo de avaliação](/graph/teams-licenses#evaluation-mode-default-requirements) será usado. 
+Se nenhum `model` for especificado, [modo de avaliação](/graph/teams-licenses#evaluation-mode-default-requirements) será usado. 
 
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
 
@@ -109,8 +109,12 @@ Content-Type: application/json
 [!INCLUDE [sample-code](../includes/snippets/java/chatmessagepatchpolicyviolationall-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[Go](#tab/go)
+# <a name="go"></a>[Ir](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/chatmessagepatchpolicyviolationall-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/chatmessagepatchpolicyviolationall-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

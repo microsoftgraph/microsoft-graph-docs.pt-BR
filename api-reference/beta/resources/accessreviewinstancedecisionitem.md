@@ -5,12 +5,12 @@ author: isabelleatmsft
 ms.localizationpriority: medium
 ms.prod: governance
 doc_type: resourcePageType
-ms.openlocfilehash: ec8d3fdd98c85caeb82552d41b0501fe06c80378
-ms.sourcegitcommit: 94741ff7f61f20a39dacfa6ce451a77ca02dd68a
+ms.openlocfilehash: 214396b8d551009d831e64017424d6d20c00d316
+ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/14/2022
-ms.locfileid: "62047238"
+ms.lasthandoff: 01/20/2022
+ms.locfileid: "62107785"
 ---
 # <a name="accessreviewinstancedecisionitem-resource-type"></a>Tipo de recurso accessReviewInstanceDecisionItem
 
@@ -22,7 +22,7 @@ Namespace: microsoft.graph
 
 Representa uma decisão de revisão [de](accessreviewsv2-overview.md) acesso do Azure AD em uma instância de uma revisão. Essa decisão é a determinação do acesso de um usuário ou entidade de serviço para uma determinada instância de revisão [de acesso.](accessreviewinstance.md) accessReviewInstanceDecisionItem é um tipo aberto e permite que outras propriedades sejam passadas.
 
-## <a name="methods"></a>Methods
+## <a name="methods"></a>Métodos
 
 | Método | Tipo de retorno | Descrição |
 |:---------------|:--------|:----------|
@@ -56,6 +56,7 @@ Representa uma decisão de revisão [de](accessreviewsv2-overview.md) acesso do 
 | Relação | Tipo   |Descrição|
 |:---------------|:--------|:----------|
 | instância |[accessReviewInstance](accessreviewinstance.md) | Há exatamente um accessReviewInstance associado a cada decisão. A instância é o pai do item de decisão, representando a recorrência da revisão de acesso em que a decisão é tomada. |
+| insights |[Coleção governanceInsight](governanceinsight.md) | Insights recomendações aos revisadores sobre se uma decisão deve ser aprovada ou negada. Pode haver várias percepções associadas a **um accessReviewInstanceDecisionItem**. |
 
 
 ## <a name="json-representation"></a>Representação JSON

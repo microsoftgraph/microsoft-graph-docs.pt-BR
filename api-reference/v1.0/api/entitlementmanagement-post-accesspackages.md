@@ -5,12 +5,12 @@ author: markwahl-msft
 ms.localizationpriority: medium
 ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: 2c912ecd8cf23c35674c4621d69ca2e4ff50ada5
-ms.sourcegitcommit: 65f4e128f96783c18d607a6dcffbc914291285d4
+ms.openlocfilehash: f795b18f70c7d7be07a1a46f8336af728d2500d1
+ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/08/2021
-ms.locfileid: "61341791"
+ms.lasthandoff: 01/20/2022
+ms.locfileid: "62100946"
 ---
 # <a name="create-accesspackage"></a>Criar accessPackage
 
@@ -20,7 +20,7 @@ Crie um novo [objeto accessPackage.](../resources/accesspackage.md)
 
 O pacote de acesso será adicionado a um [accessPackageCatalog existente.](../resources/accesspackagecatalog.md)
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>Permissões
 
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
@@ -54,8 +54,8 @@ Você pode especificar as seguintes propriedades ao criar **um accessPackage**.
 
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|displayName|String|O nome de exibição do pacote de acesso.|
-|description|String|A descrição do pacote de acesso.|
+|displayName|Cadeia de caracteres|O nome de exibição do pacote de acesso.|
+|description|Cadeia de caracteres|A descrição do pacote de acesso.|
 |IsHidden|Booleano|Se o pacote de acesso está oculto do solicitante.|
 
 
@@ -103,8 +103,12 @@ Content-Type: application/json
 [!INCLUDE [sample-code](../includes/snippets/java/create-accesspackage-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[Go](#tab/go)
+# <a name="go"></a>[Ir](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/create-accesspackage-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/create-accesspackage-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

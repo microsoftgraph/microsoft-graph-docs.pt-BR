@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: besiler
 ms.prod: identity-and-access-reports
 doc_type: apiPageType
-ms.openlocfilehash: a55bb0feedd813bce2e66d0a82594f20b67f033b
-ms.sourcegitcommit: 71186ad44d8d0df15e10b0f89df68d2ef0cf9d14
+ms.openlocfilehash: 9c5b6a97c288379c0aecfd2c099c8bbd53ed75f6
+ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/12/2022
-ms.locfileid: "61791984"
+ms.lasthandoff: 01/20/2022
+ms.locfileid: "62091671"
 ---
 # <a name="get-signin"></a>Obter entrada
 
@@ -35,11 +35,11 @@ Os aplicativos devem [estar registrados corretamente](/azure/active-directory/ac
 
 Além das permissões delegadas, o usuário inscreveu precisa pertencer a uma das seguintes funções de diretório que permitem ler relatórios de logons. Para saber mais sobre funções de diretório, consulte Funções do [Azure AD integrados](/azure/active-directory/roles/permissions-reference):
 + Administrador global
-+ Leitor Global
++ Leitor global
 + Leitor de Relatórios
 + Administrador de Segurança
-+ Operador de Segurança
-+ Leitor de Segurança
++ Operador de segurança
++ Leitor de segurança
 
 ## <a name="http-request"></a>Solicitação HTTP
 
@@ -100,6 +100,10 @@ GET https://graph.microsoft.com/v1.0/auditLogs/signIns/66ea54eb-6301-4ee5-be62-f
 
 # <a name="go"></a>[Ir](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/get-signin-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/get-signin-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
