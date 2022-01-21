@@ -1,17 +1,16 @@
 ---
 author: JeremyKelley
 description: O recurso site fornece metadados e relações para um site do SharePoint.
-ms.date: 09/10/2017
-title: Site
+title: tipo de recurso do site
 ms.localizationpriority: high
 ms.prod: sites-and-lists
 doc_type: resourcePageType
-ms.openlocfilehash: 7959908fb0bfe74cb4cbf1ba242988e3ecbf5848
-ms.sourcegitcommit: c333953a9188b4cd4a9ab94cbe68871e8f3563e5
+ms.openlocfilehash: 67b482b268c871e6e9b99d2812172551918807ab
+ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/30/2021
-ms.locfileid: "58696194"
+ms.lasthandoff: 01/20/2022
+ms.locfileid: "62104992"
 ---
 # <a name="site-resource-type"></a>tipo de recurso do site
 
@@ -131,7 +130,7 @@ O identificador `root` sempre faz referência ao site raiz de um determinado des
 
 ## <a name="json-representation"></a>Representação JSON
 
-Veja a seguir uma representação JSON de um recurso **site**.
+Veja a seguir uma representação JSON do recurso.
 
 O recurso **site** é derivado de [**baseItem**](baseitem.md) e herda propriedades desse recurso.
 
