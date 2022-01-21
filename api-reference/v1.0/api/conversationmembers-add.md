@@ -5,12 +5,12 @@ author: abshar-teams
 doc_type: apiPageType
 ms.localizationpriority: medium
 ms.prod: microsoft-teams
-ms.openlocfilehash: e33022a593d855c8096e7b74064d58e8ebf26db4
-ms.sourcegitcommit: c7ff992ef63e480d070421ba99b28ee129cb6acb
+ms.openlocfilehash: 5a3c2636858aae60821f9734cc3a5c29b90c33ff
+ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "60688402"
+ms.lasthandoff: 01/20/2022
+ms.locfileid: "62117756"
 ---
 # <a name="conversationmember-add"></a>conversationMember: adicionar
 
@@ -45,7 +45,7 @@ POST /teams/{team-id}/members/add
 | Autorização | {token} de portador. Obrigatório. |
 
 ## <a name="request-body"></a>Corpo da solicitação
-No corpo da solicitação, forneça a representação JSON da lista de `conversationMember` derivados que precisam ser adicionados à equipe.
+No corpo da solicitação, forneça a representação JSON da lista de `conversationMember` derivados que precisam ser adicionados à equipe. No máximo 200 `conversationMember` derivativos podem ser adicionados em uma única solicitação.
 
 A tabela a seguir mostra os parâmetros que podem ser usados com esta ação.
 

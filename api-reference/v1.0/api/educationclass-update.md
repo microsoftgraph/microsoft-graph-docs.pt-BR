@@ -5,12 +5,12 @@ author: mlafleur
 ms.localizationpriority: medium
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: 5341a4daec250cbf4afe1dd37511528fecd8bdae
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: 97d30903e5d4f54d1ad2018bfc431799f0842a5d
+ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "61031055"
+ms.lasthandoff: 01/20/2022
+ms.locfileid: "62101031"
 ---
 # <a name="update-educationclass"></a>Atualizar educationClass
 
@@ -45,7 +45,7 @@ No corpo da solicitação, forneça os valores para os campos relevantes que dev
 | :------------------- | :------------------------------------------------- | :----------------------------------------------------------------- |
 | displayName          | Cadeia de caracteres                                             | Nome da aula.                                                 |
 | mailNickname         | String                                             | Nome de email para enviar email a todos os membros, se essa propriedade estiver habilitada.    |
-| description          | String                                             | Descrição da aula.                                          |
+| description          | Cadeia de caracteres                                             | Descrição da aula.                                          |
 | createdBy            | [identitySet](../resources/identityset.md)         | Entidade que criou a aula                                       |
 | classCode            | Cadeia de caracteres                                             | Código de aula usada pela escola para identificar a aula.               |
 | externalId           | Cadeia de caracteres                                             | ID da aula no sistema de sincronização.                           |
@@ -90,8 +90,12 @@ Content-type: application/json
 [!INCLUDE [sample-code](../includes/snippets/java/update-educationclass-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[Go](#tab/go)
+# <a name="go"></a>[Ir](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/update-educationclass-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/update-educationclass-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

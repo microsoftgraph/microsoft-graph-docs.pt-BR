@@ -5,12 +5,12 @@ author: mahage-msft
 ms.localizationpriority: medium
 ms.prod: ediscovery
 doc_type: apiPageType
-ms.openlocfilehash: 25e8636ae12ad982ae7f7b6fe07af241a3dbde3c
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: 7c1be75cb01ab525ea061df653bd4f85ffc204af
+ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "60994177"
+ms.lasthandoff: 01/20/2022
+ms.locfileid: "62127934"
 ---
 # <a name="create-datasource"></a>Criar dataSource
 
@@ -59,7 +59,7 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar [o dataS
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
 |email|cadeia de caracteres|Endereço SMTP da caixa de correio. Para obter o endereço de email de um grupo, use [List groups](../api/group-list.md) ou [Get group](../api/group-get.md). Você pode consultar pelo nome do grupo usando `$filter` ; por exemplo, `https://graph.microsoft.com/v1.0/groups?$filter=displayName eq 'secret group'&$select=mail,id,displayName` .|
-|site|cadeia de caracteres|URL do site; por exemplo, `https://contoso.sharepoint.com/sites/HumanResources` . |
+|site|string|URL do site; por exemplo, `https://contoso.sharepoint.com/sites/HumanResources` . |
 
 ## <a name="response"></a>Resposta
 
@@ -104,8 +104,12 @@ Content-Type: application/json
 [!INCLUDE [sample-code](../includes/snippets/java/create-datasource-from--1-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[Go](#tab/go)
+# <a name="go"></a>[Ir](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/create-datasource-from--1-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/create-datasource-from--1-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

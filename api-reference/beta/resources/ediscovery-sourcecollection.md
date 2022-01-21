@@ -5,12 +5,12 @@ author: mahage-msft
 ms.localizationpriority: medium
 ms.prod: ediscovery
 doc_type: resourcePageType
-ms.openlocfilehash: 13d98f74ce4ce0c734f4950ec028b038a9819a30
-ms.sourcegitcommit: c7ff992ef63e480d070421ba99b28ee129cb6acb
+ms.openlocfilehash: a67599c4a813e1ac7e354d1fd2b0c26c8eb366bb
+ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "60687989"
+ms.lasthandoff: 01/20/2022
+ms.locfileid: "62101883"
 ---
 # <a name="sourcecollection-resource-type"></a>Tipo de recurso sourceCollection
 
@@ -20,7 +20,7 @@ Namespace: microsoft.graph.ediscovery
 
 Representa uma coleção eDiscovery, comumente conhecida como pesquisa. Para detalhes, consulte [Coletar dados para um caso na Descoberta Eletrônica Avançada](/microsoft-365/compliance/collecting-data-for-ediscovery).
 
-## <a name="methods"></a>Methods
+## <a name="methods"></a>Métodos
 
 |Método|Tipo de retorno|Descrição|
 |:---|:---|:---|
@@ -41,13 +41,13 @@ Representa uma coleção eDiscovery, comumente conhecida como pesquisa. Para det
 
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|contentQuery|String|A cadeia de caracteres de consulta na consulta KQL (Keyword Query Language). Para obter detalhes, consulte [Consultas de palavra-chave e condições de pesquisa para Pesquisa de Conteúdo e Descoberta De Conteúdo.](https://docs.microsoft.com/microsoft-365/compliance/keyword-queries-and-search-conditions) Você pode refinar pesquisas usando campos emparelhados com valores; por exemplo, *subject:"Quarterly Financials" AND Date>=06/01/2016 AND Date<=07/01/2016*.|
+|contentQuery|Cadeia de caracteres|A cadeia de caracteres de consulta na consulta KQL (Keyword Query Language). Para obter detalhes, consulte [Consultas de palavra-chave e condições de pesquisa para Pesquisa de Conteúdo e Descoberta De Conteúdo.](/microsoft-365/compliance/keyword-queries-and-search-conditions) Você pode refinar pesquisas usando campos emparelhados com valores; por exemplo, *subject:"Quarterly Financials" AND Date>=06/01/2016 AND Date<=07/01/2016*.|
 |createdBy|[identitySet](../resources/identityset.md)|O usuário que criou **o sourceCollection**.|
 |createdDateTime|DateTimeOffset|A data e a hora em **que o sourceCollection** foi criado.|
 |dataSourceScopes|microsoft.graph.ediscovery.dataSourceScopes|Quando especificado, a coleção se estenderá por um serviço para uma carga de trabalho inteira. Os valores possíveis são: `none`, `allTenantMailboxes`, `allTenantSites`, `allCaseCustodians`, `allCaseNoncustodialDataSources`.|
-|descrição|String|A descrição da **sourceCollection**.|
-|displayName|String|O nome de exibição do **sourceCollection**.|
-|id|String| A ID da **sourceCollection**. Somente leitura. |
+|description|Cadeia de caracteres|A descrição da **sourceCollection**.|
+|displayName|Cadeia de caracteres|O nome de exibição do **sourceCollection**.|
+|id|Cadeia de caracteres| A ID da **sourceCollection**. Somente leitura. |
 |lastModifiedBy|[identitySet](../resources/identityset.md)|O último usuário que modificou **o sourceCollection**.|
 |lastModifiedDateTime|DateTimeOffset|A última data e hora em **que o sourceCollection** foi modificado.|
 

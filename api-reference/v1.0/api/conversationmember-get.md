@@ -5,12 +5,12 @@ author: akjo
 ms.localizationpriority: high
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 44daddda91504432668e1f65e36d1318801cc385
-ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
+ms.openlocfilehash: 03c54fc7762cc66013bf9c465bced2a43e204509
+ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/12/2021
-ms.locfileid: "60924759"
+ms.lasthandoff: 01/20/2022
+ms.locfileid: "62098040"
 ---
 # <a name="get-conversationmember"></a>Obter conversationMember
 
@@ -28,7 +28,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |Delegado (conta pessoal da Microsoft)|Sem suporte.|
 |Aplicativo| Para **usuário** ou **recurso de chat**: Não suportado.<br/><br/>Para o recurso **canal**: TeamMember.Read.Group*, ChannelMember.Read.All, ChannelMember.ReadWrite.All |
 
-> **Observação**: Permissões marcadas com * usam [consentimento específico de recurso](https://aka.ms/teams-rsc).
+> **Observação**: Permissões marcadas com * usam [consentimento específico de recurso](/microsoftteams/platform/graph-api/rsc/resource-specific-consent).
 
 
 ## <a name="http-request"></a>Solicitação HTTP

@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: kevinbellinger
 ms.prod: people
 doc_type: apiPageType
-ms.openlocfilehash: bf531f9bc776ee6ffa00e681022a1984620806fa
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: 255b549bc3cba2f58ad121440094c0a01c9edf08
+ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "61018118"
+ms.lasthandoff: 01/20/2022
+ms.locfileid: "62093959"
 ---
 # <a name="update-personcertification"></a>Atualizar personCertification
 Namespace: microsoft.graph
@@ -50,14 +50,14 @@ No corpo da solicitação, forneça os valores para os campos relevantes que dev
 
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|allowedAudiences|String|As audiências que são capazes de ver os valores contidos na entidade. Herdado [do itemFacet](../resources/itemfacet.md). Os valores possíveis são: `me`, `family`, `contacts`, `groupMembers`, `organization`, `federatedOrganizations`, `everyone`, `unknownFutureValue`.|
+|allowedAudiences|Cadeia de caracteres|As audiências que são capazes de ver os valores contidos na entidade. Herdado [do itemFacet](../resources/itemfacet.md). Os valores possíveis são: `me`, `family`, `contacts`, `groupMembers`, `organization`, `federatedOrganizations`, `everyone`, `unknownFutureValue`.|
 |certificationId  |Cadeia de caracteres      |O identificador referencial para a certificação. |
 |description      |Cadeia de caracteres      |Descrição da certificação.                   |
-|displayName      |String      |Título da certificação.                         |
+|displayName      |Cadeia de caracteres      |Título da certificação.                         |
 |endDate          |Data        |A data em que a certificação expira.            |
 |inferência|[inferenceData](../resources/inferencedata.md)|Contém detalhes de inferência se a entidade for inferida pelo aplicativo de criação ou modificação. Herdado [do itemFacet](../resources/itemfacet.md).|
 |issuedDate       |Data        |A data em que a certificação foi emitida.         |
-|issuingAuthority |String      |Autoridade que concedeu a certificação.          |
+|issuingAuthority |Cadeia de caracteres      |Autoridade que concedeu a certificação.          |
 |emissãoCompany   |Cadeia de caracteres      |Autoridade que concedeu a certificação.          |
 |startDate        |Data        |A data em que a certificação se tornou válida.       |
 |thumbnailUrl     |Cadeia de caracteres      |URL fazendo referência a uma miniatura da certificação.   |
@@ -101,8 +101,12 @@ Content-Type: application/json
 [!INCLUDE [sample-code](../includes/snippets/java/update-personcertification-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[Go](#tab/go)
+# <a name="go"></a>[Ir](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/update-personcertification-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/update-personcertification-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

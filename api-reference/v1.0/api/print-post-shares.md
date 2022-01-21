@@ -5,12 +5,12 @@ author: nilakhan
 ms.localizationpriority: medium
 ms.prod: cloud-printing
 doc_type: apiPageType
-ms.openlocfilehash: 4d4f2115259c48110e11c070d62b4820a6c9738e
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: 30f5e8621c0ff694b76fe580fbf262de4686530c
+ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "61025125"
+ms.lasthandoff: 01/20/2022
+ms.locfileid: "62134493"
 ---
 # <a name="create-printershare"></a>Criar printerShare
 Namespace: microsoft.graph
@@ -52,7 +52,7 @@ A tabela a seguir mostra as propriedades que podem ser fornecidas ao criar [a pr
 |Propriedade|Tipo|Descrição|Obrigatório?|
 |:---|:---|:---|:---|
 |impressora|microsoft.graph.printer|A impressora à que essa impressora está relacionada. Use a `printer@odata.bind` sintaxe, conforme mostrado no exemplo a seguir.|Sim|
-|displayName|String|O nome do compartilhamento de impressora que os clientes de impressão devem exibir. O comprimento máximo permitido é de 50 caracteres.|Sim|
+|displayName|Cadeia de caracteres|O nome do compartilhamento de impressora que os clientes de impressão devem exibir. O comprimento máximo permitido é de 50 caracteres.|Sim|
 |allowAllUsers|Booliano|Se `true` , todos os usuários e grupos terão acesso a esse compartilhamento de impressora. Isso sobressalta as listas de permissão definidas pelas propriedades de navegação **allowedUsers** e **allowedGroups.**|Não|
 
 ## <a name="response"></a>Resposta
@@ -95,8 +95,12 @@ Content-Type: application/json
 [!INCLUDE [sample-code](../includes/snippets/java/create-printershare-from--java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[Go](#tab/go)
+# <a name="go"></a>[Ir](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/create-printershare-from--go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/create-printershare-from--powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
