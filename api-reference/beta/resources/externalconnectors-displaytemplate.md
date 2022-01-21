@@ -5,12 +5,12 @@ author: emzho
 ms.localizationpriority: normal
 ms.prod: search
 doc_type: resourcePageType
-ms.openlocfilehash: 5138bb43bea3aec216dcb86ffc2f09eaec96e315
-ms.sourcegitcommit: 2a9b82dae63d8a998711679a379ae1fa89df80e0
+ms.openlocfilehash: cd18d8ec9b38e0011436dad13a97d8f09fe87ba2
+ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60214915"
+ms.lasthandoff: 01/20/2022
+ms.locfileid: "62132589"
 ---
 # <a name="displaytemplate-resource-type"></a>Tipo de recurso displayTemplate
 
@@ -24,7 +24,7 @@ Define a aparência do conteúdo e as condições que ditam quando o modelo deve
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
 |id|Cadeia de caracteres|O identificador de texto do modelo de exibição; por exemplo, `contosoTickets` .|
-|layout|[microsoft.graph.Json](../resources/intune-mam-json.md)|A definição da aparência do conteúdo, representada por um [Cartão Adaptável](https://docs.microsoft.com/adaptive-cards/authoring-cards/getting-started), que é um modelo de objeto de cartão serializado JSON.|
+|layout|[microsoft.graph.Json](../resources/intune-mam-json.md)|A definição da aparência do conteúdo, representada por um [Cartão Adaptável](/adaptive-cards/authoring-cards/getting-started), que é um modelo de objeto de cartão serializado JSON.|
 |prioridade|Int32|Define a prioridade de um modelo de exibição. Um modelo de exibição com prioridade 1 é avaliado antes de um modelo com prioridade 4. Há suporte para lacunas nos valores de prioridade.|
 |rules|[coleção microsoft.graph.externalConnectors.propertyRule](../resources/externalconnectors-propertyrule.md)|Especifica regras adicionais para selecionar esse modelo de exibição com base no esquema do item. Opcional.|
 
@@ -56,4 +56,3 @@ Veja a seguir uma representação JSON do recurso.
       "priority": 0
     }
 ```
-

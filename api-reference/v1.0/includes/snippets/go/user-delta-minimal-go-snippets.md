@@ -1,29 +1,28 @@
 ---
 description: Arquivo gerado automaticamente. NÃO MODIFICAR
-ms.openlocfilehash: 6cfb9616e9f108ed5e880b100669d18aef8b3010
-ms.sourcegitcommit: 2456cf3c4117b88afefef139593796a2f919e7cc
+ms.openlocfilehash: ad2dcfdd60a91ed11b52fefdea09b8fe3ecfc143
+ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/18/2021
-ms.locfileid: "61089942"
+ms.lasthandoff: 01/20/2022
+ms.locfileid: "62137457"
 ---
 ```go
 
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
 graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
-requestParameters := &msgraphsdk.UserRequestBuilderGetQueryParameters{
+requestParameters := &msgraphsdk.DeltaRequestBuilderGetQueryParameters{
     Select: "displayName,jobTitle,mobilePhone",
 }
 headers := map[string]string{
     "Prefer": "return=minimal"
 }
-options := &msgraphsdk.UserRequestBuilderGetOptions{
+options := &msgraphsdk.DeltaRequestBuilderGetOptions{
     Q: requestParameters,
     H: headers,
 }
-userId := "user-id"
-result, err := graphClient.UsersById(&userId).Get(options)
+result, err := graphClient.Users().Delta()().Get(options)
 
 
 ```

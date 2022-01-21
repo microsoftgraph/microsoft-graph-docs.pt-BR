@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: preetikr
 ms.prod: security
 doc_type: apiPageType
-ms.openlocfilehash: ac495739dbf563ba4395225ef8faaabed25bc4a8
-ms.sourcegitcommit: c900d22144429ac7aecae3355a4cdc1987cc4234
+ms.openlocfilehash: 026eb386beed8b9dc181d9734425f72e2a9719ce
+ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/13/2021
-ms.locfileid: "61424606"
+ms.lasthandoff: 01/20/2022
+ms.locfileid: "62109971"
 ---
 # <a name="list-alerts"></a>Listar alertas
 
@@ -53,7 +53,7 @@ Este método suporta os seguintes [parâmetros de consulta OData](/graph/query-p
 - `$top` - Retorna os principais resultados agregados de cada provedor de API de segurança.
 - `$filter`
 
-A tabela a seguir lista as palavras-chave `$filter` para cada nome de fornecedor. Mesmo que alguns desses produtos tenham sido renomeados, a API ainda não foi atualizada. As palavras-chave de filtro continuarão a usar os nomes herdados até aviso prévio. Consulte [o changelog](https://developer.microsoft.com/en-us/graph/changelog) para atualizações.
+A tabela a seguir lista as palavras-chave `$filter` para cada nome de fornecedor. Embora alguns desses produtos tenham sido renomeados, a API ainda deve ser atualizada. As palavras-chave de filtro continuarão a usar os nomes herdados até mais aviso. Consulte o [changelog](https://developer.microsoft.com/en-us/graph/changelog) para atualizações.
 
 | Anotações do fornecedor      |palavra-chave $filter|
 |:----------|:----------|
@@ -114,8 +114,12 @@ GET https://graph.microsoft.com/beta/security/alerts
 [!INCLUDE [sample-code](../includes/snippets/java/get-alerts-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[Go](#tab/go)
+# <a name="go"></a>[Ir](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/get-alerts-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/get-alerts-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

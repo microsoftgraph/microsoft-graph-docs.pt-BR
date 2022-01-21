@@ -1,11 +1,11 @@
 ---
 description: Arquivo gerado automaticamente. NÃO MODIFICAR
-ms.openlocfilehash: 81300fc7877a8cee888adb20d6a8bafde752d8f8fcaa01ada42656dea3691cea
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 69ac55df9394b3e2edce01ad26959b71448cccdf
+ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "57327658"
+ms.lasthandoff: 01/20/2022
+ms.locfileid: "62137594"
 ---
 ```csharp
 
@@ -25,7 +25,7 @@ var recipients = new List<DriveRecipient>()
 };
 
 await graphClient.Me.Drive.Items["{driveItem-id}"]
-    .CreateLink(type,scope,null,password,null,recipients)
+    .CreateLink(type,scope,null,password,null,recipients,null)
     .Request()
     .PostAsync();
 
