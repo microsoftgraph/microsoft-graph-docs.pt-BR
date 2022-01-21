@@ -2,15 +2,15 @@
 title: Tipo de recurso noncustodialDataSource
 description: Fontes de dados não custodiais permitem adicionar dados a um caso sem precisar associá-los a um custodiante
 author: mahage-msft
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: ediscovery
 doc_type: resourcePageType
-ms.openlocfilehash: 1e7dd0d656a58e65e460742158cdcc70da1f1d5a
-ms.sourcegitcommit: e440d855f1106390d842905d97ceb16f143db2e5
+ms.openlocfilehash: 238a09015efa5f445dcc92390ee7a8eff19d8df5
+ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/29/2021
-ms.locfileid: "52080751"
+ms.lasthandoff: 01/20/2022
+ms.locfileid: "62115187"
 ---
 # <a name="noncustodialdatasource-resource-type"></a>Tipo de recurso noncustodialDataSource
 
@@ -18,7 +18,7 @@ Namespace: microsoft.graph.ediscovery
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Fontes de dados não custodiais permitem adicionar dados a um caso sem precisar associá-los a um custodiante. Para saber mais, visite Adicionar fontes de dados não [custodiais a um Advanced eDiscovery caso](https://docs.microsoft.com/microsoft-365/compliance/non-custodial-data-sources)
+Fontes de dados não custodiais permitem adicionar dados a um caso sem precisar associá-los a um custodiante. Para saber mais, visite Adicionar fontes de dados não [custodiais a um Advanced eDiscovery caso](/microsoft-365/compliance/non-custodial-data-sources)
 
 Herda de [dataSourceContainer](../resources/ediscovery-datasourcecontainer.md).
 
@@ -36,10 +36,10 @@ Herda de [dataSourceContainer](../resources/ediscovery-datasourcecontainer.md).
 
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|applyHoldToSource|Boolean|Indica se a espera é aplicada à fonte de dados não custodial (como caixa de correio ou site).|
+|applyHoldToSource|Booliano|Indica se a espera é aplicada à fonte de dados não custodial (como caixa de correio ou site).|
 |createdDateTime|DateTimeOffset|Data e hora criadas do nonCustodialDataSource. Herdado [de microsoft.graph.ediscovery.dataSourceContainer](../resources/ediscovery-datasourcecontainer.md).|
-|displayName|String|Nome de exibição do noncustodialDataSource. Herdado [de microsoft.graph.ediscovery.dataSourceContainer](../resources/ediscovery-datasourcecontainer.md).|
-|id|String|Identificador exclusivo do nonCustodialDataSource. Herdado da [entidade](../resources/entity.md).|
+|displayName|Cadeia de caracteres|Nome de exibição do noncustodialDataSource. Herdado [de microsoft.graph.ediscovery.dataSourceContainer](../resources/ediscovery-datasourcecontainer.md).|
+|id|Cadeia de caracteres|Identificador exclusivo do nonCustodialDataSource. Herdado da [entidade](../resources/entity.md).|
 |lastModifiedDateTime|DateTimeOffset|Data e hora da última modificação do nonCustodialDataSource. Herdado [de microsoft.graph.ediscovery.dataSourceContainer](../resources/ediscovery-datasourcecontainer.md).|
 |releasedDateTime|DateTimeOffset|Data e hora em que o nonCustodialDataSource foi liberado do caso. Herdado [de microsoft.graph.ediscovery.dataSourceContainer](../resources/ediscovery-datasourcecontainer.md).|
 |status|microsoft.graph.ediscovery.dataSourceContainerStatus|Status mais recente do nonCustodialDataSource. Herdado [de microsoft.graph.ediscovery.dataSourceContainer](../resources/ediscovery-datasourcecontainer.md). Os valores possíveis são: `Active`, `Released`.|

@@ -1473,15 +1473,15 @@ items:
             items:
               - name: Listar modo de exibição de calendário
                 href: api/bookingbusiness-list-calendarview.md
-              - name: Listar compromissos
+              - name: Listar
                 href: api/bookingbusiness-list-appointments.md
-              - name: Criar compromisso
+              - name: Criar
                 href: api/bookingbusiness-post-appointments.md
-              - name: Obter compromisso
+              - name: Obter
                 href: api/bookingappointment-get.md
-              - name: Atualizar compromisso
+              - name: Atualizar
                 href: api/bookingappointment-update.md
-              - name: Excluir compromisso
+              - name: Excluir
                 href: api/bookingappointment-delete.md
               - name: Cancelar compromisso
                 href: api/bookingappointment-cancel.md
