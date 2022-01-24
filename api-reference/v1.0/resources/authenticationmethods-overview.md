@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: mmcla
 ms.prod: identity-and-sign-in
 doc_type: conceptualPageType
-ms.openlocfilehash: 22b9db5d6f38264f12397d4fc63724ce6939063f
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 88542ae3571d4c718c0f163d7fd06927fa22501e
+ms.sourcegitcommit: 709d2e3069765c2e570ac1128847c165ab233aa8
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59123773"
+ms.lasthandoff: 01/24/2022
+ms.locfileid: "62184084"
 ---
 # <a name="azure-ad-authentication-methods-api-overview"></a>Visão geral da API de métodos de autenticação do Azure AD
 
@@ -35,16 +35,17 @@ Os métodos de autenticação a seguir ainda não são suportados no Microsoft G
 
 |Método de autenticação       | Descrição |Exemplos     |
 |:---------------------------|:------------|:------------|
-|Password | No momento, uma senha é o método de autenticação principal padrão no Azure AD.|Redefinir a senha de um usuário.|
+|Password | No momento, uma senha é o método de autenticação principal padrão no Azure AD.|Redefina a senha de um usuário.|
 |phoneAuthenticationMethod (ainda não suportado) |Um telefone pode ser usado por um usuário para autenticar usando SMS ou chamadas de [voz](/azure/active-directory/authentication/concept-authentication-methods#phone-options) (conforme permitido pela política).|Consulte os números de telefone de autenticação de um usuário. Adicionar, atualizar ou remover um número de telefone para um usuário. Habilitar ou desabilitar um telefone celular principal para a assinatura SMS.|
 |Email |Um endereço de email pode ser usuário por um usuário como parte do processo Self-Service redefinição de senha (SSPR).|Consulte o endereço de email de autenticação de um usuário. Adicionar, atualizar ou remover um endereço de email para um usuário.|
 |Passagem de Acesso Temporário |Passagem de Acesso Temporário é uma senha limitada por tempo que serve como uma credencial forte e permite a integração de credenciais sem senha. | Definir uma nova Passagem de Acesso Temporário em um usuário.|
 |Token de hardware | Permitir que os usuários executem a autenticação multifator usando um dispositivo físico que fornece um código único. | Obter um token de hardware atribuído a um usuário.|
 |Token de software | Permitir que os usuários executem a autenticação multifator usando um aplicativo que apoia a especificação DEM E fornece um código único. | Obter e excluir um token de software atribuído a um usuário.|
 |Perguntas e respostas de segurança | Permitir que os usuários validem sua identidade ao executar uma redefinição de senha de autoatendida. |Excluir uma pergunta de segurança registrada por um usuário.|
-|Método padrão | Representa o método que o usuário selecionou como padrão para executar a autenticação multifato.| Alterar o método MFA padrão de um usuário.|
+|Método padrão | Representa o método que o usuário selecionou como padrão para executar a autenticação multifato.| Alterar o método MFA padrão de um usuário. <br/> **OBSERVAÇÃO:** No momento, o gerenciamento dos detalhes do método padrão só tem suporte por meio do MSOL e `Get-MsolUser` `Set-MsolUser` cmdlets, usando a propriedade **StrongAuthenticationMethods.** |
+|Exigir o re-registro MFA | Representa uma configuração que exige que, quando o usuário entrar na próxima vez, ele seja solicitado a configurar um novo método de autenticação MFA.| Permita que o usuário configurar novos métodos MFA, por exemplo, se ele alterou seu dispositivo de autenticação. <br/> **OBSERVAÇÃO:** Atualmente, esse recurso só tem suporte por meio do `Set-MsolUser` cmdlet MSOL, usando a **propriedade StrongAuthenticationMethods.** |
 
 ## <a name="next-steps"></a>Próximas etapas
 
 * Revise os tipos de método de autenticação e seus vários métodos.
-* Experimente a API no [Explorador do Graph](https://developer.microsoft.com/graph/graph-explorer).
+* Experimente a API no [Graph Explorer](https://developer.microsoft.com/graph/graph-explorer).

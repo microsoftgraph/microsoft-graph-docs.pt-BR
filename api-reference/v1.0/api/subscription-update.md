@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: Jumaodhiss
 ms.prod: change-notifications
 doc_type: apiPageType
-ms.openlocfilehash: 12621eb426100f97e746172f64287d95a0742132
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: a218ed4905974facab316bbc6c57cd6df0a47255
+ms.sourcegitcommit: 709d2e3069765c2e570ac1128847c165ab233aa8
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62128375"
+ms.lasthandoff: 01/24/2022
+ms.locfileid: "62184007"
 ---
 # <a name="update-subscription"></a>Atualizar assinatura
 
@@ -79,6 +79,14 @@ PATCH /subscriptions/{id}
 | Nome       | Tipo | Descrição|
 |:-----------|:------|:----------|
 | Autorização  | string  | {token} de portador. Obrigatório. |
+
+## <a name="request-body"></a>Corpo da solicitação
+
+[!INCLUDE [table-intro](../../includes/update-property-table-intro.md)]
+
+| Nome       | Tipo | Descrição|
+|:-----------|:------|:----------|
+| expirationDateTime  | DateTimeOffset  | Especifica a data e a hora em UTC quando a assinatura expira. Para o tempo máximo de assinatura com suporte varia dependendo do recurso. |
 
 ## <a name="response"></a>Resposta
 

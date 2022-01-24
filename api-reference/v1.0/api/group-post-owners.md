@@ -5,12 +5,12 @@ ms.localizationpriority: high
 author: Jordanndahl
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: 4da378ccc4c5386764711995b62ad327c28cf664
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: 3affc04192f198a23e0a7bc0b38141228a88dd1a
+ms.sourcegitcommit: 709d2e3069765c2e570ac1128847c165ab233aa8
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62114789"
+ms.lasthandoff: 01/24/2022
+ms.locfileid: "62184049"
 ---
 # <a name="add-owners"></a>Adicionar proprietários
 
@@ -41,14 +41,14 @@ POST /groups/{id}/owners/$ref
 | Content-Type | application/json. Obrigatório. |
 
 ## <a name="request-body"></a>Corpo da solicitação
-No corpo da solicitação, forneça uma representação JSON do objeto [user](../resources/user.md) a ser adicionado.
+No corpo da solicitação, forneça uma representação JSON com o **@odata.id** de um objeto [user](../resources/user.md) ou [servicePrincipal](../resources/user.md) a ser adicionado
 
 ## <a name="response"></a>Resposta
 Se bem-sucedido, este método retorna um código de resposta `204 No Content`. Não retorna nada no corpo da resposta. Esse método retorna um `400 Bad Request` código de resposta quando o objeto já é um membro do grupo. Esse método retorna um `404 Not Found` código de resposta quando o objeto adicionado não existe.
 
 ## <a name="example"></a>Exemplo
-#### <a name="request"></a>Solicitação
-Este é um exemplo de solicitação.
+### <a name="request"></a>Solicitação
+Veja a seguir um exemplo de solicitação que adiciona um usuário como proprietário de grupo.
 
 # <a name="http"></a>[HTTP](#tab/http)
 <!-- {
@@ -89,9 +89,9 @@ Content-type: application/json
 
 ---
 
-No corpo da solicitação, forneça uma representação JSON de um objeto [user](../resources/user.md) a ser adicionado.
+No corpo da solicitação, forneça uma representação JSON com o **@odata.id** de um objeto [user](../resources/user.md) ou [servicePrincipal](../resources/user.md) a ser adicionado.
 
-#### <a name="response"></a>Resposta
+### <a name="response"></a>Resposta
 Este é um exemplo de resposta.
 >**Observação:** o objeto de resposta mostrado aqui pode ser encurtado para legibilidade.
 <!-- {

@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: mmcla
 ms.prod: identity-and-sign-in
 doc_type: conceptualPageType
-ms.openlocfilehash: 080fa60c83edd0b1c5340102fe4f6886dc1e7e08
-ms.sourcegitcommit: 4a960067cf2cd7d3c605550150eb3c9259adfe92
+ms.openlocfilehash: 4830a9e098c84488441ec95250919ea317a0e8fb
+ms.sourcegitcommit: 709d2e3069765c2e570ac1128847c165ab233aa8
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/19/2021
-ms.locfileid: "60486639"
+ms.lasthandoff: 01/24/2022
+ms.locfileid: "62184070"
 ---
 # <a name="azure-ad-authentication-methods-api-overview"></a>Visão geral da API de métodos de autenticação do Azure AD
 
@@ -39,21 +39,22 @@ As APIs do método de autenticação são usadas para gerenciar os métodos de a
 |[phoneAuthenticationMethod](phoneauthenticationmethod.md)|Um telefone pode ser usado por um usuário para autenticar usando SMS ou chamadas de [voz](/azure/active-directory/authentication/concept-authentication-methods#phone-options) (conforme permitido pela política).|Consulte os números de telefone de autenticação de um usuário. Adicionar, atualizar ou remover um número de telefone para um usuário. Habilitar ou desabilitar um telefone celular principal para a assinatura SMS.|
 |[fido2AuthenticationMethod](fido2authenticationmethod.md)|Uma Chave de Segurança FIDO2 pode ser usada por um usuário para entrar no Azure AD.|Excluir uma chave de segurança FIDO2 perdida.|
 |[microsoftAuthenticatorAuthenticationMethod](microsoftauthenticatorauthenticationmethod.md)|Microsoft Authenticator pode ser usado por um usuário para entrar ou executar a autenticação multifafação no Azure AD|Exclua um Microsoft Authenticator de autenticação.|
-|[passwordlessmicrosoftauthenticatorauthenticationmethod](passwordlessmicrosoftauthenticatorauthenticationmethod.md) (preterido)|Microsoft Authenticator Acesso sem Telefone senha pode ser usado por um usuário para entrar no Azure AD|Exclua um método Telefone autenticação de login sem senha.|
+|[passwordlessmicrosoftauthenticatorauthenticationmethod](passwordlessmicrosoftauthenticatorauthenticationmethod.md) (preterido)|Microsoft Authenticator senha Telefone entrar sem senha pode ser usado por um usuário para entrar no Azure AD|Exclua um método Telefone autenticação de login sem senha.|
 |[emailAuthenticationMethod](emailauthenticationmethod.md)|Um endereço de email pode ser usado por um usuário como parte do processo Self-Service redefinição de senha (SSPR).|Consulte o endereço de email de autenticação de um usuário. Adicionar, atualizar ou remover um endereço de email para um usuário.|
 |[windowsHelloForBusinessAuthenticationMethod](windowsHelloForBusinessAuthenticationMethod.md)|Windows Hello para Empresas é um método de entrada sem senha em Windows dispositivos.|Consulte dispositivos onde um usuário habilitar Windows Hello entrada para Empresas. Exclua uma Windows Hello para Empresas.|
 |[temporaryaccesspassauthenticationmethod](temporaryaccesspassauthenticationmethod.md)|Passagem de Acesso Temporário é uma senha limitada por tempo que serve como uma credencial forte e permite a integração de credenciais sem senha. | Definir uma nova Passagem de Acesso Temporário em um usuário.|
 |[softwareOathAuthenticationMethod](../resources/softwareoathauthenticationmethod.md)| Permitir que os usuários executem a autenticação multifator usando um aplicativo que dá suporte à especificação DODL e fornece um código único. | Obter e excluir um token de software atribuído a um usuário.|
 
-Os métodos de autenticação a seguir ainda não são suportados no Microsoft Graph beta.
+Os métodos de autenticação a seguir ainda não são suportados no Microsoft Graph `beta` .
 
 |Método de autenticação       | Descrição |Exemplos     |
 |:---------------------------|:------------|:------------|
 |Token de hardware | Permitir que os usuários executem a autenticação multifator usando um dispositivo físico que fornece um código único. | Obter um token de hardware atribuído a um usuário.|
 |Perguntas e respostas de segurança | Permitir que os usuários validem sua identidade ao executar uma redefinição de senha de autoatendida. |Excluir uma pergunta de segurança registrada por um usuário.|
-|Método padrão | Representa o método que o usuário selecionou como padrão para executar a autenticação multifato.| Alterar o método MFA padrão de um usuário.|
+|Método padrão | Representa o método que o usuário selecionou como padrão para executar a autenticação multifato.| Alterar o método MFA padrão de um usuário. <br/> **OBSERVAÇÃO:** No momento, o gerenciamento dos detalhes do método padrão só tem suporte por meio do MSOL e `Get-MsolUser` `Set-MsolUser` cmdlets, usando a propriedade **StrongAuthenticationMethods.** |
+|Exigir o re-registro MFA | Representa uma configuração que exige que, quando o usuário entrar na próxima vez, ele seja solicitado a configurar um novo método de autenticação MFA.| Permita que o usuário configurar novos métodos MFA, por exemplo, se ele alterou seu dispositivo de autenticação. <br/> **OBSERVAÇÃO:** Atualmente, esse recurso só tem suporte por meio do `Set-MsolUser` cmdlet MSOL, usando a **propriedade StrongAuthenticationMethods.** |
 
 ## <a name="next-steps"></a>Próximas etapas
 
 * Revise os tipos de método de autenticação e seus vários métodos.
-* Experimente a API no [Explorador do Graph](https://developer.microsoft.com/graph/graph-explorer).
+* Experimente a API no [Graph Explorer](https://developer.microsoft.com/graph/graph-explorer).

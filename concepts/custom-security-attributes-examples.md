@@ -5,12 +5,12 @@ author: rolyon
 ms.localizationpriority: medium
 ms.topic: how-to
 ms.prod: directory-management
-ms.openlocfilehash: 74603d7d39203134151928243de98624fc7a0dad
-ms.sourcegitcommit: 2456cf3c4117b88afefef139593796a2f919e7cc
+ms.openlocfilehash: fa046c1e55055ed1d8c00fdda67ea8be71c5d804
+ms.sourcegitcommit: 709d2e3069765c2e570ac1128847c165ab233aa8
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/18/2021
-ms.locfileid: "61077660"
+ms.lasthandoff: 01/24/2022
+ms.locfileid: "62184000"
 ---
 # <a name="assign-update-or-remove-custom-security-attributes-using-the-microsoft-graph-api-preview"></a>Atribuir, atualizar ou remover atributos de segurança personalizados usando a API do Microsoft Graph (Visualização)
 
@@ -27,9 +27,12 @@ Para gerenciar atributos de segurança personalizados, a entidade de chamada dev
 
 - [Administrador de Atribuição de Atributo](/azure/active-directory/roles/permissions-reference#attribute-assignment-administrator)
 
-Além disso, a entidade de chamada deve ter a seguinte permissão.
+Além disso, a entidade de chamada deve ter as seguintes permissões.
 
 - [CustomSecAttributeAssignment.ReadWrite.All](permissions-reference.md#custom-security-attributes-permissions)
+- [User.Read.All](permissions-reference.md#user-permissions)
+
+Permissões para ler, atribuir, atualizar ou remover atributos de um aplicativo são concedidas por *CustomSecAttributeAssignment.ReadWrite.All*. Permissões para ler o objeto de recurso, como usuários, são concedidas separadamente usando permissões de objeto de recurso, como *User.Read.All*.
 
 ## <a name="assign-custom-security-attributes"></a>Atribuir atributos de segurança personalizados
 
@@ -39,7 +42,7 @@ O exemplo a seguir mostra como atribuir um atributo de segurança personalizado 
 
 - Conjunto de atributos: `Engineering`
 - Atributo: `ProjectDate`
-- Tipo de dados de atributo: Cadeia de caracteres
+- Tipo de dados de atributo: cadeia de caracteres
 - Valor do atributo: `"2022-10-01"`
 
 #### <a name="request"></a>Solicitação
@@ -73,13 +76,13 @@ Content-type: application/json
 HTTP/1.1 204 No Content
 ```
 
-### <a name="example-2-assign-a-custom-security-attribute-with-a-string-value-to-a-service-principal"></a>Exemplo 2: Atribuir um atributo de segurança personalizado com um valor de cadeia de caracteres a uma entidade de serviço
+### <a name="example-2-assign-a-custom-security-attribute-with-a-string-value-to-a-service-principal"></a>Exemplo 2: atribuir um atributo de segurança personalizado com um valor de cadeia de caracteres a um principal de serviço
 
-O exemplo a seguir mostra como atribuir um atributo de segurança personalizado com um valor de cadeia de caracteres a uma entidade de serviço.
+O exemplo a seguir mostra como atribuir um atributo de segurança customizado com um valor de cadeia de caracteres a um principal de serviço.
 
 - Conjunto de atributos: `Engineering`
 - Atributo: `ProjectDate`
-- Tipo de dados de atributo: Cadeia de caracteres
+- Tipo de dados de atributo: cadeia de caracteres
 - Valor do atributo: `"2022-10-01"`
 
 #### <a name="request"></a>Solicitação
@@ -119,7 +122,7 @@ O exemplo a seguir mostra como atribuir um atributo de segurança personalizado 
 
 - Conjunto de atributos: `Engineering`
 - Atributo: `Project`
-- Tipo de dados de atributo: coleção de cadeias de caracteres
+- Tipo de dados de atributo: Coleção de cadeias de caracteres
 - Valor do atributo: `["Baker","Cascade"]`
 
 #### <a name="request"></a>Solicitação
@@ -201,7 +204,7 @@ O exemplo a seguir mostra como atribuir um atributo de segurança personalizado 
 
 - Conjunto de atributos: `Engineering`
 - Atributo: `CostCenter`
-- Tipo de dados de atributo: coleção de inteiros
+- Tipo de dados de atributo: Coleção de inteiros
 - Valor do atributo: `[1001,1003]`
 
 #### <a name="request"></a>Solicitação
@@ -242,7 +245,7 @@ O exemplo a seguir mostra como atribuir um atributo de segurança personalizado 
 
 - Conjunto de atributos: `Engineering`
 - Atributo: `Certification`
-- Tipo de dados de atributo: Boolean
+- Tipo de dados de atributo: Booliano
 - Valor do atributo: `true`
 
 #### <a name="request"></a>Solicitação
@@ -326,7 +329,7 @@ O exemplo a seguir mostra como atualizar uma atribuição de atributo de seguran
 
 - Conjunto de atributos: `Engineering`
 - Atributo: `Certification`
-- Tipo de dados de atributo: Boolean
+- Tipo de dados de atributo: Booliano
 - Valor do atributo: `false`
 
 #### <a name="request"></a>Solicitação
