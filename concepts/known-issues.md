@@ -3,12 +3,12 @@ title: Problemas conhecidos com o Microsoft Graph
 description: Este artigo descreve os problemas conhecidos com o Microsoft Graph.
 author: MSGraphDocsVTeam
 ms.localizationpriority: high
-ms.openlocfilehash: 0321ad71dd1f9604f70eed5c4602610e867ed2fa
-ms.sourcegitcommit: bfd1ab7e015ef04cb2ca3fb85d308ba2ce830a89
+ms.openlocfilehash: c7cb3143124a3f5f1820b47391c6011a5417ce1a
+ms.sourcegitcommit: 9adf70c5da7c5b65f7d20f571d101ee06f023bc3
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/19/2022
-ms.locfileid: "62072562"
+ms.lasthandoff: 01/25/2022
+ms.locfileid: "62201593"
 ---
 # <a name="known-issues-with-microsoft-graph"></a>Problemas conhecidos com o Microsoft Graph
 
@@ -291,7 +291,7 @@ Usar o Microsoft Graph para criar e nomear um grupo do Microsoft 365 ignora qual
 
 Atualmente, há um problema que impede a configuração da propriedade **allowExternalSenders** de um grupo em uma operação de POST ou PATCH no `/v1.0` e no `/beta`.
 
-A propriedade **allowExternalSenders** somente pode ser acessada em grupos unificados. Acessar essa propriedade em listas de distribuição ou grupos de segurança, inclusive por meio de operações GET, resultará em um erro.
+A propriedade **allowExternalSenders** somente pode ser acessada em grupos unificados. Acessar essa propriedade em grupos de segurança, inclusive por meio de operações GET, resultará em um erro.
 
 ### <a name="removing-a-group-owner-also-removes-the-user-as-a-group-member"></a>Remover um proprietário de grupo também remove o usuário como um membro do grupo
 
