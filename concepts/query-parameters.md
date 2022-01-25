@@ -4,12 +4,12 @@ description: O Microsoft Graph fornece parâmetros de consulta opcionais que voc
 author: mumbi-o
 ms.localizationpriority: high
 ms.custom: graphiamtop20, scenarios:getting-started
-ms.openlocfilehash: 358fa02a09c1ded92fd86596b634d59783b2ee16
-ms.sourcegitcommit: bfd1ab7e015ef04cb2ca3fb85d308ba2ce830a89
+ms.openlocfilehash: d431299c1bb674236ac2e54e9324a438853a3157
+ms.sourcegitcommit: 709d2e3069765c2e570ac1128847c165ab233aa8
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/19/2022
-ms.locfileid: "62072058"
+ms.lasthandoff: 01/24/2022
+ms.locfileid: "62183937"
 ---
 # <a name="use-query-parameters-to-customize-responses"></a>Usar parâmetros de consulta para personalizar respostas
 
@@ -41,6 +41,7 @@ Clique nos exemplos para testá-los no [Explorador do Graph][graph-explorer].
 | [$skip](#skip-parameter)           | Índices em um conjunto de resultados. Também usado por algumas APIs para implementar a paginação e pode ser usado com `$top` para paginar resultados manualmente. | [`/me/messages?$skip=11`][skip-example]
 | [$top](#top-parameter)             | Define o tamanho de página de resultados. |[`/users?$top=2`][top-example]
 
+Para conhecer as opções de consulta do sistema OData que uma API e suas propriedades suportam, consulte a tabela **Propriedades** na página de recursos e a seção **Parâmetros de consulta opcionais** das operações LIST e GET para a API.
 
 ## <a name="other-query-parameters"></a>Outros parâmetros de consulta
 
@@ -126,9 +127,11 @@ GET https://graph.microsoft.com/v1.0/me/drive/root?$expand=children($select=id,n
 ```
 
 > [!NOTE]
-> Nem todos os relacionamentos e recursos oferecem suporte ao parâmetro de consulta `$expand`. Por exemplo, você pode expandir os relacionamentos **directReports**, **manager** e **memberOf** em um usuário, mas não pode expandir seus **eventos**, **mensagens** ou **fotos**. Nem todos os recursos ou relacionamentos suportam o uso de `$select` em itens expandidos. 
+> + Nem todos os relacionamentos e recursos oferecem suporte ao parâmetro de consulta `$expand`. Por exemplo, você pode expandir os relacionamentos **directReports**, **manager** e **memberOf** em um usuário, mas não pode expandir seus **eventos**, **mensagens** ou **fotos**. Nem todos os recursos ou relacionamentos suportam o uso de `$select` em itens expandidos. 
 > 
-> Com os recursos do Azure Active Directory derivados de [directoryObject](/graph/api/resources/directoryobject), como [usuário](/graph/api/resources/user) e [grupo](/graph/api/resources/group), `$expand` normalmente retorna no máximo 20 itens para o relacionamento expandido e não tem [@odata.nextLink](./paging.md). Veja mais [problemas conhecidos](known-issues.md#query-parameters).
+> + Com os recursos do Azure Active Directory derivados de [directoryObject](/graph/api/resources/directoryobject), como [usuário](/graph/api/resources/user) e [grupo](/graph/api/resources/group), `$expand` normalmente retorna no máximo 20 itens para o relacionamento expandido e não tem [@odata.nextLink](./paging.md). Veja mais [problemas conhecidos](known-issues.md#query-parameters).
+>
+> + `$expand` atualmente não é compatível com [consultas avançadas](/graph/aad-advanced-queries).
 
 ## <a name="filter-parameter"></a>parâmetro filter
 

@@ -4,12 +4,12 @@ description: Os aplicativos que estão se inscrevendo para alterar as notificaç
 author: FaithOmbongi
 ms.localizationpriority: high
 ms.custom: graphiamtop20
-ms.openlocfilehash: fed0c61d8cdf933d126c3ae880494afef51530a5
-ms.sourcegitcommit: c47e3d1f3c5f7e2635b2ad29dfef8fe7c8080bc8
+ms.openlocfilehash: 2bbce70adc5de7b1b1f17cf63d679a6d116680fd
+ms.sourcegitcommit: 709d2e3069765c2e570ac1128847c165ab233aa8
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/15/2021
-ms.locfileid: "61523241"
+ms.lasthandoff: 01/24/2022
+ms.locfileid: "62184063"
 ---
 # <a name="reduce-missing-subscriptions-and-change-notifications"></a>Reduzir assinaturas ausentes e alterar notificações
 
@@ -162,10 +162,29 @@ Alguns aspectos a serem observados neste tipo de notificação:
 
 Quando receber uma notificação `reauthorizationRequired` de ciclo de vida, você deve reautorizar a inscrição para manter o fluxo de dados.
 
-Você pode criar uma inscrição de longa duração (três dias) e as notificações de alteração começarão a fluir para o **notificationUrl**. Caso as condições de acesso tenham sido alteradas desde a criação da assinatura, o Microsoft Graph pode exigir que você recrie a assinatura para provar que ainda tem acesso aos dados do recurso. A seguir estão exemplos de alterações que afetam o acesso aos dados:
+Você pode criar uma assinatura de longa duração dependendo da [duração máxima da assinatura com suporte para o recurso](/graph/api/resources/subscription#maximum-length-of-subscription-per-resource-type), o que permite que as notificações de alteração fluam para o **notificationUrl**. Se as condições de acesso forem alteradas após a criação da assinatura ou o Microsoft Graph detectar que o fluxo de notificação pode ser interrompido em um futuro próximo, o Microsoft Graph poderá exigir que você reautorize a assinatura para provar que você ainda tem acesso aos dados do recurso. A seguir estão exemplos de condições que podem afetar o acesso aos dados:
 
 - Um administrador de locatários pode revogar as permissões do seu aplicativo para ler um recurso.
 - Em um cenário interativo, o usuário que fornece o token de autenticação ao seu aplicativo pode estar sujeito a políticas dinâmicas com base em vários fatores, como o local, o estado do dispositivo ou a avaliação de risco. Por exemplo, se o usuário alterar o seu local físico, pode ser que ele não tenha mais permissão para acessar os dados e seu aplicativo não conseguirá autorizar novamente a assinatura. Para saber mais sobre políticas dinâmicas que controlam o acesso, confira [Políticas de acesso condicional do Azure AD](/azure/active-directory/conditional-access/overview). 
+- Seu token de acesso expira. Isso só se aplica a notificações que incluem dados de recursos.
+- A assinatura expira antes de renová-la.
+
+Antes que qualquer uma dessas condições se torne verdadeira, Microsoft Graph enviará um desafio de autorização para o **lifecycleNotificationUrl**. O intervalo dessas notificações é ilustrado abaixo:
+
+```csharp
+    //The following code is for illustrative purposes only
+    var TokenTimeToExpirationInMinutes=(TokenExpirationTime-CurrentTime)/4;
+    if((TokenTimeToExpirationInMinutes)<=180 && TokenTimeToExpirationInMinutes>60){
+        //Microsoft Graph will send reauthorizationRequired notification
+        TokenTimeToExpirationInMinutes=TokenTimeToExpirationInMinutes/2;
+    }
+    elseif(TokenTimeToExpirationInMinutes<60 && TokenTimeToExpirationInMinutes>=0){
+            //Microsoft Graph will send reauthorizationRequired notification every 15 mins
+            TokenTimeToExpirationInMinutes=TokenTimeToExpirationInMinutes-15;
+    }else{
+      //Microsoft Graph will stop sending reauthorizationRequired notifications
+    }
+```
 
 As etapas a seguir representam o fluxo de um desafio de autorização para uma assinatura ativa:
 
@@ -178,14 +197,14 @@ As etapas a seguir representam o fluxo de um desafio de autorização para uma a
     Observe que o fluxo de notificações de alterações pode continuar por um tempo, dando a você tempo extra para responder. No entanto, eventualmente a alteração na entrega de notificação fará uma pausa até você executar a ação necessária.
 
 3. Responda a esta notificação do ciclo de vida de duas maneiras:
-    - Reautorize a assinatura. Isso não estende a data de expiração da assinatura.
-    - Renove a assinatura. Isso reautoriza e estende a data de expiração.
+    - Autorizar a assinatura novamente. Isso não estende a data de validade da assinatura.
+    - Renove a assinatura. Isso reautoriza e estende a data de validade.
 
-    Observação: as duas ações exigem a apresentação de um token de autenticação válido, semelhante a [criar uma nova assinatura](webhooks.md#creating-a-subscription) ou [renova uma assinatura antes da sua expiração](webhooks.md#renewing-a-subscription).
+    Observação: ambas as ações exigem que você apresente um token de autenticação válido, semelhante [criar uma nova assinatura](webhooks.md#creating-a-subscription) ou [renovar uma assinatura antes de sua expiração](webhooks.md#renewing-a-subscription).
 
-4. Se você reautorizar ou renovar a assinatura com êxito, as notificações de alteração continuarão. Caso contrário, as notificações de alteração permanecerão em pausa.
+4. Se você autorizar novamente ou renovar com êxito a inscrição, as notificações de alteração continuarão. Caso contrário, as notificações de alteração permanecerão pausadas. Observe que o Microsoft Graph descartará as notificações quatro horas depois que elas forem pausadas.
 
-### <a name="reauthorizationrequired-notification-example"></a>exemplo de notificação reauthorizationRequired
+### <a name="reauthorizationrequired-notification-payload-example"></a>exemplo de conteúdo de notificação reauthorizationRequired
 
 ```json
 {
@@ -203,9 +222,8 @@ As etapas a seguir representam o fluxo de um desafio de autorização para uma a
 
 Alguns aspectos a serem observados neste tipo de notificação:
 
-- O campo `"lifecycleEvent": "reauthorizationRequired"` identifica essa notificação como um desafio de autorização. Outros tipos de notificações de ciclo de vida também são possíveis, e novos serão disponibilizados no futuro.
+- O campo `"lifecycleEvent": "reauthorizationRequired"` identifica essa notificação como um desafio de autorização. `missed` e `subscriptionRemoved` notificações **lifecycleEvent** também são suportadas.
 - A notificação de ciclo de vida não contém informações sobre um recurso específico, porque ela não está relacionada a uma alteração de recurso, mas a alteração de estado da assinatura.
-- Semelhante às notificações de alteração, você pode agrupar as notificações do ciclo de vida em conjunto (na coleção de **valores**), cada uma com um valor possivelmente diferente do **lifecycleEvent**. Processe cada notificação de ciclo de vida no lote adequadamente.
 
 > **Observação:** para obter uma descrição completa dos dados enviados quando as notificações de alteração forem entregues, confira [changeNotificationCollection](/graph/api/resources/changenotificationcollection).
 
@@ -265,14 +283,14 @@ Você deve implementar seu código de forma à prova de futuro, para que ele nã
 
 ## <a name="see-also"></a>Confira também
 
-- [Tipo de recurso de assinatura](/graph/api/resources/subscription?view=graph-rest-1.0)
-- [Obter assinatura](/graph/api/subscription-get?view=graph-rest-1.0)
-- [Criar assinatura](/graph/api/subscription-post-subscriptions?view=graph-rest-1.0)
-- [Excluir assinatura](/graph/api/subscription-delete?view=graph-rest-1.0)
-- [Atualizar assinatura](/graph/api/subscription-update?view=graph-rest-1.0)
+- [Tipo de recurso de assinatura](/graph/api/resources/subscription)
+- [Obter assinatura](/graph/api/subscription-get)
+- [Criar assinatura](/graph/api/subscription-post-subscriptions)
+- [Excluir assinatura](/graph/api/subscription-delete)
+- [Atualizar assinatura](/graph/api/subscription-update)
 
 
-[contato]: /graph/api/resources/contact?view=graph-rest-1.0
-[event]: /graph/api/resources/event?view=graph-rest-1.0
-[message]: /graph/api/resources/message?view=graph-rest-1.0
+[contato]: /graph/api/resources/contact
+[event]: /graph/api/resources/event
+[message]: /graph/api/resources/message
 [chatMessage]: /graph/api/resources/chatmessage
