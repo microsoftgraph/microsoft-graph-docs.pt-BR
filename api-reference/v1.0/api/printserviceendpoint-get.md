@@ -5,20 +5,31 @@ author: nilakhan
 ms.localizationpriority: medium
 ms.prod: cloud-printing
 doc_type: apiPageType
-ms.openlocfilehash: 591ae544bc505cc4bc880b4e867f8bbeee0f002e
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: 5bc187b7179d73b165d45532e8e5fca1225058f1
+ms.sourcegitcommit: 9adf70c5da7c5b65f7d20f571d101ee06f023bc3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62116951"
+ms.lasthandoff: 01/25/2022
+ms.locfileid: "62201733"
 ---
 # <a name="get-printserviceendpoint"></a>Obter printServiceEndpoint
+
 Namespace: microsoft.graph
 
 Recupere as propriedades e as relações de um ponto de extremidade do serviço de impressão.
 
+> [!NOTE]
+> Para usar o serviço Impressão Universal, o usuário ou locatário do aplicativo deve ter uma assinatura de Impressão Universal ativa.
+
 ## <a name="permissions"></a>Permissões
-Uma das permissões **de** Impressão Universal delegada [é](/graph/permissions-reference#universal-print-permissions) necessária para chamar essa API.
+
+Uma das seguintes permissões é necessária para chamar essas APIs. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
+
+| Tipo de permissão                        | Permissões (da com menos para a com mais privilégios) |
+|:---------------------------------------|:------------------------------------|
+| Delegado (conta corporativa ou de estudante)     | PrintJob.ReadBasic, PrintJob.Read, PrintJob.ReadBasic.All, PrinterShare.ReadBasic.All, PrintJob.Read.All, Printer.Read.All, PrinterShare.Read.All, PrintConnector.Read.All, PrintSettings.Read.All, PrintJob.ReadWriteBasic, PrintJob.ReadWrite, PrintJob.ReadWriteBasic.All, Printer.ReadWrite.All, PrinterShare.ReadWrite.All, PrintJob.ReadWrite.All, PrintConnector.ReadWrite.All, PrintSettings.ReadWrite.All, Printer.Create, PrintJob.Create |
+| Delegado (conta pessoal da Microsoft) | Sem suporte.                      |
+| Aplicativo                            | Sem suporte.                      |
 
 ## <a name="http-request"></a>Solicitação HTTP
 
@@ -26,19 +37,23 @@ Uma das permissões **de** Impressão Universal delegada [é](/graph/permissions
   "blockType": "ignored"
 }
 -->
+
 ``` http
 GET /print/services/{printServiceId}/endpoints/{printServiceEndpointId}
 ```
 
 ## <a name="optional-query-parameters"></a>Parâmetros de consulta opcionais
+
 Este método dá suporte a alguns parâmetros de consulta OData para ajudar a personalizar a resposta. Para obter informações gerais, acesse [Parâmetros de consulta OData](/graph/query-parameters).
 
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
+
 |Nome|Descrição|
 |:---|:---|
 |Autorização|{token} de portador. Obrigatório.|
 
 ## <a name="request-body"></a>Corpo da solicitação
+
 Não forneça um corpo de solicitação para esse método.
 
 ## <a name="response"></a>Resposta
@@ -84,16 +99,16 @@ GET https://graph.microsoft.com/v1.0/print/services/{printServiceId}/endpoints/{
 
 ---
 
-
-
 ### <a name="response"></a>Resposta
-**Observação:** o objeto de resposta mostrado aqui pode ser encurtado para legibilidade.
+
+> **Observação:** o objeto de resposta mostrado aqui pode ser encurtado para legibilidade.
 <!-- {
   "blockType": "response",
   "truncated": true,
   "@odata.type": "microsoft.graph.printServiceEndpoint"
 }
 -->
+
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
@@ -105,4 +120,3 @@ Content-Type: application/json
   "uri": "https://discovery.print.microsoft.com"
 }
 ```
-

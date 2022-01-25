@@ -1,38 +1,38 @@
 ---
-title: 'Usar a API do Microsoft Graph para trabalhar com o Project Roma '
-description: 'O Project Roma é uma iniciativa da Microsoft para criar uma plataforma que permite aos desenvolvedores de aplicativos criar grandes experiências entre dispositivos. O Project Roma permite diferentes recursos que conectam diferentes serviços e pontos de extremidade do cliente quando o usuário entra com a mesma conta da Microsoft ou conta corporativa ou de estudante. Isso permite que você implemente experiências entre dispositivos e várias plataformas centradas em tarefas do usuário, em vez de dispositivos. '
-localization_priority: Normal
+title: 'Usar a API Graph Microsoft para trabalhar com Project Rome '
+description: 'Project Roma é uma iniciativa da Microsoft para criar uma plataforma que permite que os desenvolvedores de aplicativos criem ótimas experiências entre dispositivos. Project Rome habilita diferentes recursos que conectam diferentes serviços e pontos de extremidade do cliente quando o usuário se conecta com a mesma conta da Microsoft ou conta de trabalho ou de estudante. Isso permite que você implemente experiências entre dispositivos e plataformas centralizadas em torno de tarefas do usuário, em vez de dispositivos. '
+ms.localizationpriority: medium
 doc_type: conceptualPageType
 ms.prod: ''
 author: ailae
-ms.openlocfilehash: 3ebff1e816ee04a9bd6ffdbc0188cbb0b8015895
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 1ac28fb48ef7b954bd51519124e628fbb9029bab
+ms.sourcegitcommit: 9adf70c5da7c5b65f7d20f571d101ee06f023bc3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48029054"
+ms.lasthandoff: 01/25/2022
+ms.locfileid: "62201432"
 ---
-# <a name="use-the-microsoft-graph-api-to-work-with-project-rome"></a>Usar a API do Microsoft Graph para trabalhar com o Project Roma
+# <a name="use-the-microsoft-graph-api-to-work-with-project-rome"></a>Usar a API Graph Microsoft para trabalhar com Project Rome
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-O [Project Roma](https://developer.microsoft.com/en-us/windows/project-rome) é uma iniciativa da Microsoft para criar uma plataforma que permite aos desenvolvedores de aplicativos criar grandes experiências entre dispositivos. O Project Roma permite diferentes recursos que conectam diferentes serviços e pontos de extremidade do cliente quando o usuário entra com a mesma conta da Microsoft ou conta corporativa ou de estudante. Isso permite que você implemente experiências entre dispositivos e várias plataformas centradas em tarefas do usuário, em vez de dispositivos.
+[Project Roma é](https://developer.microsoft.com/en-us/windows/project-rome) uma iniciativa da Microsoft para criar uma plataforma que permite que os desenvolvedores de aplicativos criem ótimas experiências entre dispositivos. Project Rome habilita diferentes recursos que conectam diferentes serviços e pontos de extremidade do cliente quando o usuário se conecta com a mesma conta da Microsoft ou conta de trabalho ou de estudante. Isso permite que você implemente experiências entre dispositivos e plataformas centralizadas em torno de tarefas do usuário, em vez de dispositivos.
 
-Três principais recursos de Roma do projeto são expostos pelo Microsoft Graph para ajudá-lo a habilitar excelentes experiências entre dispositivos: atividades, dispositivos e notificações.
+Três principais Project de Roma são expostos por meio do Microsoft Graph para ajudá-lo a habilitar ótimas experiências entre dispositivos: atividades, dispositivos e notificações.
 
 ## <a name="activities"></a>Atividades
 
-As atividades no Microsoft Graph permitem que você direcionar o compromisso do usuário com seus aplicativos entre dispositivos e plataformas. Uma atividade é a unidade de contrato de usuário e consiste em três componentes:
+As atividades no Microsoft Graph permitem que você conduza o envolvimento do usuário com seus aplicativos em dispositivos e plataformas. Uma atividade é a unidade de envolvimento do usuário e consiste em três componentes:
 
 - Um link profundo
 - Uma representação visual
-- Metadados de conteúdo que descrevem a atividade, usando o [https://schema.org/](https://schema.org/) vocabulário compartilhado
+- Metadados de conteúdo que descrevem a atividade usando o [https://schema.org/](https://schema.org/) vocabulário compartilhado
 
-Quando uma sessão é criada por um aplicativo, um item de histórico é adicionado à atividade para refletir o período de envolvimento do usuário. Cada vez que um usuário reparticipa de uma atividade, um novo item de histórico é adicionado à atividade para acumular o envolvimento do usuário.
+Quando uma sessão é criada por um aplicativo, um item de histórico é adicionado à atividade para refletir o período de envolvimento do usuário. Sempre que um usuário reaja com uma atividade, um novo item de histórico é adicionado à atividade para acumular o envolvimento do usuário.
 
-Quando um aplicativo publica objetos de atividade do usuário, o objeto aparecerá em algumas das novas superfícies de interface de usuário no Windows; por exemplo, notificações e cronograma da Cortana. Você pode especificar tanto metadados avançados (para permitir que as atividades sejam apresentadas no contexto certo) e Visual ricos (usando a marcação de [cartão adaptável](https://adaptivecards.io/) ) em seus objetos de atividade.
+Quando um aplicativo publica objetos de atividade do usuário, o objeto aparece em algumas das novas superfícies da interface do usuário no Windows; por exemplo, Cortana Notificações e Linha do Tempo. Você pode especificar metadados ricos (para permitir que atividades sejam apresentadas [](https://adaptivecards.io/) apenas no contexto correto) e elementos visuais ricos (usando marcação de Cartão Adaptável) em seus objetos de atividade.
 
-Você pode usar as seguintes APIs do Microsoft Graph para criar e recuperar atividades do usuário:
+Você pode usar as seguintes APIs Graph Microsoft para criar e recuperar atividades do usuário:
 
 - [Criar ou substituir atividade](../api/projectrome-put-activity.md)
 - [Obter atividades](../api/projectrome-get-activities.md)
@@ -41,17 +41,17 @@ Você pode usar as seguintes APIs do Microsoft Graph para criar e recuperar ativ
 - [Criar ou substituir um item do histórico](../api/projectrome-put-historyitem.md)
 - [Excluir um item do histórico](../api/projectrome-delete-historyitem.md)
 
-## <a name="devices"></a>Dispositivos
+## <a name="devices-deprecated"></a>Dispositivos (preterido)
 
-Você pode usar as APIs do Project Roma no Microsoft Graph para:
+Você pode usar Project APIs de Roma no Microsoft Graph para:
 
-- Descobrir e conectar a dispositivos do usuário
+- Descobrir e conectar-se aos dispositivos do usuário
 - Iniciar remotamente aplicativos nesses dispositivos
 - Enviar mensagens para seus aplicativos nesses dispositivos
 
-Com essas APIs, você pode criar aplicativos que criam experiências ricas que transcendem um único dispositivo. Por exemplo, você pode estender seu aplicativo para iniciar em uma tela maior. Ou você pode criar uma experiência complementar para um aplicativo em outro dispositivo do usuário.
+Com essas APIs, você pode criar aplicativos que criam experiências ricas que transcendem um único dispositivo. Por exemplo, você pode estender seu aplicativo para iniciar em uma tela maior. Ou você pode criar uma experiência de companhia para um aplicativo em outro dispositivo do usuário.
 
-Você pode usar as seguintes APIs do Microsoft Graph para se comunicar com outros dispositivos do Windows:
+Você pode usar as seguintes APIs Graph Microsoft para se comunicar com outros Windows dispositivos:
 
 - [Listar os dispositivos do usuário](../api/user-list-devices.md)
 - [Enviar um comando para um dispositivo](../api/send-device-command.md)

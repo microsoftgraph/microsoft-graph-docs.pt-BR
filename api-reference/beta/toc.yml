@@ -920,7 +920,7 @@ items:
                         href: api/application-delete-extensionproperty.md
               - name: Credenciais de identidade federada (visualização)
                 items:
-                  - name: Visão Geral
+                  - name: Visão geral
                     href: resources/federatedidentitycredentials-overview.md
                   - name: Credenciais de identidade federada
                     href: resources/federatedidentitycredential.md
@@ -1547,7 +1547,7 @@ items:
                 href: api/call-logteleconferencedevicequality.md
           - name: Registros de chamadas
             items:
-              - name: Visão Geral
+              - name: Visão geral
                 href: resources/callrecords-api-overview.md
               - name: Registro de chamada
                 items:
@@ -1816,7 +1816,7 @@ items:
                     href: api/ediscovery-tag-ashierarchy.md
           - name: Solicitação de direitos do sujeito
             items:
-              - name: Visão Geral
+              - name: Visão geral
                 href: resources/subjectrightsrequest-subjectrightsrequestapioverview.md
               - name: Solicitação de direitos do sujeito
                 href: resources/subjectrightsrequest.md
@@ -1842,11 +1842,11 @@ items:
         items:
           - name: Visão Geral
             href: resources/project-rome-overview.md
-          - name: Listar os dispositivos do usuário
+          - name: Listar dispositivos de usuário (preterido)
             href: api/user-list-devices.md
-          - name: Enviar comando do dispositivo
+          - name: Comando enviar dispositivo (preterido)
             href: api/send-device-command.md
-          - name: Obter o status de comando do dispositivo
+          - name: Obter status de comando do dispositivo (preterido)
             href: api/get-device-command-status.md
           - name: Feed de atividades
             href: resources/activity-feed-api-overview.md
@@ -9988,7 +9988,7 @@ items:
                         href: api/intune-tem-telecomexpensemanagementpartner-update.md
           - name: Cloud PC (visualização)
             items:
-              - name: Visão Geral
+              - name: Visão geral
                 href: resources/cloudpc-api-overview.md
               - name: Ponto de extremidade virtual
                 href: resources/virtualendpoint.md
@@ -10376,7 +10376,7 @@ items:
                     href: api/managedtenants-windowsprotectionstate-get.md
           - name: Comunicações e integridade do serviço
             items:
-              - name: Visão Geral
+              - name: Visão geral
                 href: resources/service-communications-api-overview.md
               - name: Comunicado do serviço
                 href: resources/serviceannouncement.md
@@ -11069,7 +11069,7 @@ items:
                     href: api/contract-list.md
               - name: Atributos de segurança personalizados (visualização)
                 items:
-                  - name: Visão Geral
+                  - name: Visão geral
                     href: resources/custom-security-attributes-overview.md
                   - name: Conjuntos de atributos
                     href: resources/attributeset.md
@@ -13010,7 +13010,7 @@ items:
                 href: api/user-post-notifications.md
       - name: Inteligência de pessoas e local de trabalho
         items:
-          - name: Visão Geral
+          - name: Visão geral
             href: resources/social-overview.md
           - name: Pessoas
             items:
@@ -13455,7 +13455,7 @@ items:
                 href: api/contact-delta.md
           - name: Propriedades estendidas
             items:
-              - name: Visão Geral
+              - name: Visão geral
                 href: resources/extended-properties-overview.md
               - name: Propriedades estendidas de valor único
                 items:
@@ -13477,7 +13477,7 @@ items:
         items:
           - name: Relatórios de atividade do Azure AD
             items:
-              - name: Visão Geral
+              - name: Visão geral
                 href: resources/azure-ad-auditlog-overview.md
               - name: Auditoria de diretório
                 href: resources/directoryaudit.md
@@ -13500,7 +13500,7 @@ items:
                     href: api/provisioningobjectsummary-list.md
           - name: Relatórios de identidade e acesso
             items:
-              - name: Visão Geral
+              - name: Visão geral
                 href: resources/report-identity-access.md
               - name: Atividade de aplicativo no AD FS
                 items:
@@ -13530,33 +13530,40 @@ items:
                   - name: Contagem de Registro de Usuário credencial
                     href: resources/credentialuserregistrationcount.md
                     items:
-                      - name: Obter contagem de registro
+                      - name: Obter
                         href: api/reportroot-getcredentialuserregistrationcount.md
                   - name: Detalhes do registro do usuário credencial
                     href: resources/credentialuserregistrationdetails.md
                     items:
-                      - name: Listar detalhes do registro
+                      - name: List
                         href: api/reportroot-list-credentialuserregistrationdetails.md
                   - name: Detalhes de uso da credencial do usuário
                     href: resources/usercredentialusagedetails.md
                     items:
-                      - name: Listar detalhes de uso
+                      - name: List
                         href: api/reportroot-list-usercredentialusagedetails.md
                   - name: Resumo de uso de credenciais
                     href: resources/credentialusagesummary.md
                     items:
-                      - name: Obter resumo de uso
+                      - name: List
                         href: api/reportroot-getcredentialusagesummary.md
                   - name: Usuários registrados por recurso
                     href: resources/userregistrationfeaturesummary.md
                     items:
-                      - name: Obter usuários registrados por recurso
+                      - name: List
                         href: api/authenticationmethodsroot-usersregisteredbyfeature.md
                   - name: Usuários registrados pelo método
                     href: resources/userregistrationmethodsummary.md
                     items:
-                      - name: Obter usuários registrados pelo método de autenticação
+                      - name: List
                         href: api/authenticationmethodsroot-usersregisteredbymethod.md
+                  - name: Detalhes do registro do usuário
+                    href: resources/userregistrationdetails.md
+                    items:
+                      - name: Listar
+                        href: api/authenticationmethodsroot-list-userregistrationdetails.md
+                      - name: Obter
+                        href: api/userregistrationdetails-get.md
           - name: Microsoft 365 de uso
             items:
               - name: Visão Geral
@@ -13806,7 +13813,7 @@ items:
         items:
           - name: Consulta
             items:
-              - name: Visão Geral
+              - name: Visão geral
                 href: resources/search-api-overview.md
               - name: Tipo de solicitação de pesquisa
                 href: resources/searchrequest.md
@@ -14896,7 +14903,7 @@ items:
       - name: Tarefas pendentes
         displayName: Microsoft To Do
         items:
-          - name: Visão Geral
+          - name: Visão geral
             href: resources/tasks-overview.md
           - name: Lista de tarefas
             items:

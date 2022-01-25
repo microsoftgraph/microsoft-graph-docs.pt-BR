@@ -5,12 +5,12 @@ author: Jordanndahl
 ms.localizationpriority: high
 ms.prod: groups
 doc_type: conceptualPageType
-ms.openlocfilehash: 4fba8ecca0fd82c5e7e45bd5aa0e1c05d4ef84e0
-ms.sourcegitcommit: 2e94beae05043a88b389349f0767e3a657415e4c
+ms.openlocfilehash: bb455ffde8ab93ed0c93fcb35cdb088f2ce6979f
+ms.sourcegitcommit: 9adf70c5da7c5b65f7d20f571d101ee06f023bc3
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/19/2021
-ms.locfileid: "61124025"
+ms.lasthandoff: 01/25/2022
+ms.locfileid: "62201691"
 ---
 # <a name="working-with-groups-in-microsoft-graph"></a>Trabalhando com grupos no Microsoft Graph
 
@@ -18,12 +18,26 @@ Os grupos são coleções de [usuários](user.md) e de outras entidades de segur
 
 > **Observação**: os grupos só podem ser criados por meio de contas corporativas ou de estudante. As contas pessoais da Microsoft não são compatíveis com grupos.
 
-| Tipo              | Caso de uso | groupTypes | mailEnabled | securityEnabled | Criado e gerenciado via API |
+## <a name="group-types-in-azure-ad-and-microsoft-graph"></a>Tipos de grupo no Azure AD e no Microsoft Graph
+
+O Azure AD suporta os seguintes tipos de grupos.
+
++ Grupos do Microsoft 365
++ Grupos de segurança
++ Grupos de segurança habilitados para email
++ Grupos de distribuição
+
+Para obter mais informações sobre grupos do Azure AD, confira [comparar grupos no Azure AD](/microsoft-365/admin/create-groups/compare-groups).
+
+No Microsoft Graph, o tipo de grupo pode ser identificado pelas configurações de suas propriedades **groupType**, **mailEnabled** e **securityEnabled** conforme indicado na tabela abaixo.
+
+| Tipo              | Caso de uso | groupType | mailEnabled | securityEnabled | Criado e gerenciado via API |
 |-------------------|----------|-----------|--------------|------------------|--------------------------------|
 | [Grupos do Microsoft 365](#microsoft-365-groups) | Facilitar a colaboração entre usuários com os recursos compartilhados online da Microsoft. | `["Unified"]` | `true` | `true` ou `false` | Sim |
 | [Grupos de segurança](#security-groups-and-mail-enabled-security-groups) | Controlar o acesso do usuário aos recursos do aplicativo. | `[]` | `false` | `true` | Sim |
 | [Grupos de segurança habilitados para email](#security-groups-and-mail-enabled-security-groups) | Controlar o acesso do usuário aos recursos do aplicativo, com uma caixa de correio de grupo compartilhada. | `[]` | `true` | `true` | Não |
 | Grupos de distribuição | Distribuir emails aos membros do grupo. É recomendável usar os grupos do Microsoft 365 devido a grande quantidade de recursos que ele fornece. | `[]` | `true` | `false` | Não |
+
 
 ## <a name="microsoft-365-groups"></a>Grupos do Microsoft 365
 O diferencial dos grupos da Microsoft 365 está na natureza cooperativa, perfeito para as pessoas que trabalham em conjunto em um projeto ou uma equipe. Eles são criados com recursos compartilhados pelos membros do grupo, entre eles:

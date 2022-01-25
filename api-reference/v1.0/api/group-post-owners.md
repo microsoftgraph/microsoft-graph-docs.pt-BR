@@ -1,16 +1,16 @@
 ---
 title: Adicionar proprietários
-description: Adicione um usuário ou entidade de serviço a Microsoft 365 ou proprietários de um grupo de segurança. Os proprietários são um conjunto de usuários que não são administradores e que têm permissão para alterar o objeto de grupo.
+description: Adicione um usuário ou entidade de serviço a Microsoft 365 ou proprietários de um grupo de segurança. Os proprietários são um conjunto de usuários ou os diretores de serviço que têm permissão para modificar o objeto do grupo.
 ms.localizationpriority: high
 author: Jordanndahl
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: 3affc04192f198a23e0a7bc0b38141228a88dd1a
-ms.sourcegitcommit: 709d2e3069765c2e570ac1128847c165ab233aa8
+ms.openlocfilehash: 6d30d60e0bd0e15b4649cbd2ed298fa863a6fc7a
+ms.sourcegitcommit: 9adf70c5da7c5b65f7d20f571d101ee06f023bc3
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/24/2022
-ms.locfileid: "62184049"
+ms.lasthandoff: 01/25/2022
+ms.locfileid: "62201439"
 ---
 # <a name="add-owners"></a>Adicionar proprietários
 

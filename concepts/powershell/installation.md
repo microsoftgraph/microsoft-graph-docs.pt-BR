@@ -3,17 +3,21 @@ title: Instalar o Microsoft Graph PowerShell SDK
 description: Fornece instruções para instalar o Microsoft Graph PowerShell SDK.
 ms.localizationpriority: medium
 author: jasonjoh
-ms.openlocfilehash: 0e4a7f9269aef1700431921aead6014a15afd8dc
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 0337b4641f8c84e63c4c5e7eecf1da0f186dad0c
+ms.sourcegitcommit: 9adf70c5da7c5b65f7d20f571d101ee06f023bc3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59139041"
+ms.lasthandoff: 01/25/2022
+ms.locfileid: "62201677"
 ---
 # <a name="install-the-microsoft-graph-powershell-sdk"></a>Instalar o Microsoft Graph PowerShell SDK
 
 > [!NOTE]
-> A instalação do módulo principal do SDK instalará todos os 38 sub módulos. Considere apenas instalar os módulos necessários, incluindo `Microsoft.Graph.Authentication` .
+> A instalação do módulo principal do SDK instalará todos os 38 sub módulos. Considere apenas instalar os módulos necessários, incluindo `Microsoft.Graph.Authentication` . Para uma lista de módulos Graph Microsoft disponíveis, use o comando a seguir.
+>
+> ```powershell
+> Find-Module Microsoft.Graph*
+> ```
 
 O SDK do Microsoft Graph PowerShell é publicado na [Galeria do PowerShell.](https://www.powershellgallery.com/packages/Microsoft.Graph) Você pode instalar o SDK no PowerShell Core ou Windows PowerShell usando o comando a seguir.
 
@@ -51,7 +55,7 @@ Get-InstalledModule Microsoft.Graph
 A versão na saída deve corresponder à versão mais recente publicada na Galeria do PowerShell. Agora você está pronto para usar o SDK.
 
 > [!div class="nextstepaction"]
-> [Começar com o Microsoft Graph PowerShell SDK](get-started.md)
+> [Comece a usar o SDK do Microsoft Graph PowerShell](get-started.md)
 
 ## <a name="updating-the-sdk"></a>Atualizando o SDK
 

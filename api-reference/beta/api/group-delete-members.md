@@ -1,16 +1,16 @@
 ---
 title: Remover membro
-description: Use essa API para remover um membro de um grupo Microsoft 365, um grupo de segurança ou um grupo de segurança habilitado para email por meio da propriedade de navegação **de** membros. É possível remover usuários ou outros grupos.
+description: Remova um membro de um grupo Microsoft 365 ou um grupo de segurança por meio da propriedade de navegação de membros.
 ms.localizationpriority: medium
 author: Jordanndahl
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: e20a4b730412129a1b68c5837bad000d7b6ca2b9
-ms.sourcegitcommit: c47e3d1f3c5f7e2635b2ad29dfef8fe7c8080bc8
+ms.openlocfilehash: 20d51cee2eb4fc0ab9d53b9e178c04f2c851b966
+ms.sourcegitcommit: 9adf70c5da7c5b65f7d20f571d101ee06f023bc3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/15/2021
-ms.locfileid: "61525502"
+ms.lasthandoff: 01/25/2022
+ms.locfileid: "62201698"
 ---
 # <a name="remove-member"></a>Remover membro
 
@@ -18,7 +18,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Use essa API para remover um membro de um grupo por meio **da** propriedade de navegação membros. Não é possível remover um membro de grupos com associações dinâmicas.
+Remova um membro de um grupo por meio da **propriedade de navegação de** membros. Não é possível remover um membro de grupos com associações dinâmicas.
 
 ## <a name="permissions"></a>Permissions
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).

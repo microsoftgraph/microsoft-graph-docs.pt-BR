@@ -5,12 +5,12 @@ author: keylimesoda
 ms.localizationpriority: medium
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: f0e33bccc600175d4aebb877dde1c5a33fcb0dfb
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: dfbf2e33622a6f127afa45e511140df7834b05e1
+ms.sourcegitcommit: 9adf70c5da7c5b65f7d20f571d101ee06f023bc3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62090678"
+ms.lasthandoff: 01/25/2022
+ms.locfileid: "62201411"
 ---
 # <a name="list-deleted-items"></a>Listar itens excluídos
 
@@ -22,7 +22,7 @@ Recupere uma lista de itens recentemente excluídos em [itens excluídos](../res
 
 Atualmente, a funcionalidade de itens excluídos só tem suporte para os recursos [de](../resources/application.md)aplicativo, [grupo](../resources/group.md) [e](../resources/user.md) usuário.
 
->**Observação:** Grupos de segurança excluídos e listas de distribuição são excluídos permanentemente e não podem ser recuperados por meio dessa API.
+>**Observação:** Os grupos de segurança excluídos são excluídos permanentemente e não podem ser recuperados por meio dessa API.
 
 ## <a name="permissions"></a>Permissões
 

@@ -5,12 +5,12 @@ author: Jordanndahl
 ms.localizationpriority: medium
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: a5a40dbf101ba8f0e624f274d461ed2992fd1916
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: 3d69f11881c0e90f9b9051ade8fc110d99f99dac
+ms.sourcegitcommit: 9adf70c5da7c5b65f7d20f571d101ee06f023bc3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62113403"
+ms.lasthandoff: 01/25/2022
+ms.locfileid: "62201636"
 ---
 # <a name="create-event"></a>Criar evento
 
@@ -42,14 +42,14 @@ POST /groups/{id}/calendar/events
 | Autorização  | {token} de portador. Obrigatório.  |
 
 ## <a name="request-body"></a>Corpo da solicitação
-No corpo da solicitação, forneça uma representação JSON do objeto [event](../resources/event.md).
+No corpo da solicitação, fornece uma representação JSON de um [objeto event.](../resources/event.md)
 
 ## <a name="response"></a>Resposta
-Se bem-sucedido, este método retorna o código de resposta `201 Created` e o objeto [event](../resources/event.md) no corpo da resposta.
+Se bem-sucedido, este método retorna o código de resposta `201 Created` e um objeto [event](../resources/event.md) no corpo da resposta.
 
 ## <a name="example"></a>Exemplo
-#### <a name="request"></a>Solicitação
-Este é um exemplo de solicitação.
+### <a name="request"></a>Solicitação
+Veja a seguir um exemplo de uma solicitação.
 
 # <a name="http"></a>[HTTP](#tab/http)
 <!-- {
@@ -115,9 +115,7 @@ Content-type: application/json
 
 ---
 
-No corpo da solicitação, forneça uma representação JSON do objeto [event](../resources/event.md).
-
-#### <a name="response"></a>Resposta
+### <a name="response"></a>Resposta
 Este é um exemplo de resposta.
 >**Observação:** o objeto de resposta mostrado aqui pode ser encurtado para legibilidade.
 <!-- {

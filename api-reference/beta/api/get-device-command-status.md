@@ -1,24 +1,27 @@
 ---
-title: Obter o status de comando do dispositivo
+title: Obter status de comando do dispositivo (preterido)
 description: Obter o status de um comando em um dispositivo. Para ver a lista completa de códigos de status, consulte Lista de actionStatus.
-localization_priority: Normal
+ms.localizationpriority: medium
 doc_type: apiPageType
 author: ailae
 ms.prod: ''
-ms.openlocfilehash: c0747438a9921f2ed6f3ccf1ee551f4aced70fcb
-ms.sourcegitcommit: 3edf187fe4b42f81c09610782671776a27161126
+ms.openlocfilehash: bbe26243c9779e7917e4014038b26473a7cd17f7
+ms.sourcegitcommit: 9adf70c5da7c5b65f7d20f571d101ee06f023bc3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/06/2021
-ms.locfileid: "50515961"
+ms.lasthandoff: 01/25/2022
+ms.locfileid: "62201309"
 ---
-# <a name="get-device-command-status"></a>Obter o status de comando do dispositivo
+# <a name="get-device-command-status-deprecated"></a>Obter status de comando do dispositivo (preterido)
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Obter o status de um comando em um dispositivo. Para ver a lista completa de códigos de status, consulte [Lista de actionStatus](#list-of-actionstatus).
+
+> [!CAUTION]
+> Essa API foi preterida e parou de retornar dados em 30 de setembro de 2020.
 
 ## <a name="permissions"></a>Permissões
 

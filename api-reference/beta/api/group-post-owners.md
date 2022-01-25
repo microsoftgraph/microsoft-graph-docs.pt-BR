@@ -1,16 +1,16 @@
 ---
 title: Adicionar proprietários
-description: Adicione um usuário ou entidade de serviço a Microsoft 365 ou proprietários de um grupo de segurança.
+description: Adicione um usuário ou entidade de serviço a Microsoft 365 ou proprietários de um grupo de segurança. Os proprietários são um conjunto de usuários ou os diretores de serviço que têm permissão para modificar o objeto do grupo.
 ms.localizationpriority: medium
 author: Jordanndahl
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: bf7ee86fe521d876448dae2a8c92ac99b5e1f558
-ms.sourcegitcommit: 709d2e3069765c2e570ac1128847c165ab233aa8
+ms.openlocfilehash: 191ed9f6d5c28e2eef172cf508e1e3924d3237b5
+ms.sourcegitcommit: 9adf70c5da7c5b65f7d20f571d101ee06f023bc3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/24/2022
-ms.locfileid: "62184028"
+ms.lasthandoff: 01/25/2022
+ms.locfileid: "62201649"
 ---
 # <a name="add-owners"></a>Adicionar proprietários
 
@@ -43,14 +43,14 @@ POST /groups/{id}/owners/$ref
 | Content-type | application/json. Obrigatório. |
 
 ## <a name="request-body"></a>Corpo da solicitação
-No corpo da solicitação, fornece uma representação JSON com o **@odata.id** de um [usuário](../resources/user.md) ou [objeto servicePrincipal](../resources/user.md) a ser adicionado.
+No corpo da solicitação, forneça uma representação JSON com o **@odata.id** de um objeto [user](../resources/user.md) ou [servicePrincipal](../resources/user.md) a ser adicionado.
 
 ## <a name="response"></a>Resposta
 Se bem-sucedido, este método retorna um código de resposta `204 No Content`. Não retorna nada no corpo da resposta. Esse método retorna um `400 Bad Request` código de resposta quando o objeto já é um membro do grupo. Esse método retorna um `404 Not Found` código de resposta quando o objeto adicionado não existe.
 
 ## <a name="example"></a>Exemplo
 ### <a name="request"></a>Solicitação
-A seguir, um exemplo da solicitação que adiciona um usuário como proprietário do grupo.
+Veja a seguir um exemplo de solicitação que adiciona um usuário como proprietário de grupo.
 
 # <a name="http"></a>[HTTP](#tab/http)
 <!-- {
@@ -91,7 +91,7 @@ Content-type: application/json
 
 ---
 
-No corpo da solicitação, fornece uma representação JSON com o **@odata.id** de um [usuário](../resources/user.md) ou [objeto servicePrincipal](../resources/user.md) a ser adicionado.
+No corpo da solicitação, forneça uma representação JSON com o **@odata.id** de um objeto [user](../resources/user.md) ou [servicePrincipal](../resources/user.md) a ser adicionado.
 
 ### <a name="response"></a>Resposta
 Este é um exemplo de resposta.

@@ -1,16 +1,16 @@
 ---
 title: Trabalhando com a API de relatório de uso de métodos de autenticação
 description: O relatório de uso dos métodos de autenticação ajuda uma organização a entender como seus usuários finais estão usando Azure Active Directory recursos como redefinição de senha de autoatendados e autenticação multifato (MFA).
-localization_priority: Normal
+ms.localizationpriority: medium
 author: besiler
 ms.prod: identity-and-access-reports
 doc_type: conceptualPageType
-ms.openlocfilehash: 451d1abc82be09f37933dce7bbacdfc4931252d3
-ms.sourcegitcommit: 22bd45d272681658d46a8b99af3c3eabc7b05cb1
+ms.openlocfilehash: 6af5d1805b09add23cfc6c36c7d10acc1e31dc75
+ms.sourcegitcommit: 9adf70c5da7c5b65f7d20f571d101ee06f023bc3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/18/2021
-ms.locfileid: "58384363"
+ms.lasthandoff: 01/25/2022
+ms.locfileid: "62201600"
 ---
 # <a name="working-with-the-authentication-methods-usage-report-api"></a>Trabalhando com a API de relatório de uso de métodos de autenticação
 
@@ -31,8 +31,8 @@ As seguintes permissões são obrigatórias para chamar esta API. Para saber mai
 
 |Tipo de permissão|Permissões (da com menos para a com mais privilégios)|
 |:---|:---|
-|Delegada (conta corporativa ou de estudante)|Reports.Read.All, AuditLog.Read.All|
-|Delegada (conta pessoal da Microsoft)|Sem suporte.|
+|Delegado (conta corporativa ou de estudante)|Reports.Read.All, AuditLog.Read.All|
+|Delegado (conta pessoal da Microsoft)|Sem suporte.|
 |Aplicativo|Reports.Read.All, AuditLog.Read.All|
 
 Para acessar a API, uma [das seguintes funções](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles) é necessária:
@@ -41,7 +41,7 @@ Para acessar a API, uma [das seguintes funções](/azure/active-directory/users-
 * Leitor de segurança
 * Administrador de segurança
 * Leitor global
-* Administrador global
+* Administração global
 
 ## <a name="licenses"></a>Licenças
 
@@ -59,6 +59,7 @@ A tabela a seguir lista algumas solicitações comuns que você pode usar com es
 | [userCredentialUsageDetails](/graph/api/resources/usercredentialusagedetails?view=graph-rest-beta&preserve-view=true) | [GET /usercredentialusagedetails](https://developer.microsoft.com/graph/graph-explorer?request=reports/userCredentialUsageDetails&version=beta) | Obter detalhes do usuário para todas as atividades de redefinição de senha de autoatendados. |
 | [usersRegisteredByFeature](/graph/api/resources/userregistrationfeaturesummary?view=graph-rest-beta&preserve-view=true) | [GET /authenticationMethods/usersRegisteredByFeature](https://developer.microsoft.com/graph/graph-explorer?request=reports/authenticationMethods/usersRegisteredByFeature(includedUserTypes='all',includedUserRoles='all')&version=beta) | Obter o número de usuários capazes de autenticação multifafa, redefinição de senha de autoatendados e autenticação sem senha. |
 | [usersRegisteredByMethod](/graph/api/resources/userregistrationmethodsummary?view=graph-rest-beta&preserve-view=true) | [GET /authenticationMethods/usersRegisteredByMethod](https://developer.microsoft.com/graph/graph-explorer?request=reports/authenticationMethods/usersRegisteredByMethod(includedUserTypes='all',includedUserRoles='all')&version=beta) | Obter o número de usuários registrados para cada método de autenticação. |
+| [userRegistrationDetails](/graph/api/resources/userRegistrationDetails?view=graph-rest-beta&preserve-view=true) | [GET /authenticationMethods/userRegistrationDetails](https://developer.microsoft.com/graph/graph-explorer?request=reports/authenticationMethods/userRegistrationDetails&version=beta) | Obter os detalhes do registro MFA para todos os usuários. |
 
 ## <a name="next-steps"></a>Próximas etapas
 

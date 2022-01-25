@@ -5,12 +5,12 @@ author: nkramer
 ms.localizationpriority: high
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 73496030d454e6d8b5dd62f361f098bbecec4ea2
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: 0ce3e3b53d85d24bfc86c1ce4392a701ca95f8c5
+ms.sourcegitcommit: 9adf70c5da7c5b65f7d20f571d101ee06f023bc3
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62134256"
+ms.lasthandoff: 01/25/2022
+ms.locfileid: "62201705"
 ---
 # <a name="get-team"></a>Obter equipe
 
@@ -41,7 +41,7 @@ GET /teams/{team-id}
 ```
 
 ## <a name="optional-query-parameters"></a>Parâmetros de consulta opcionais
-Este método dá suporte aos [Parâmetros de consulta OData](/graph/query-parameters) $select e $expand para ajudar a personalizar a resposta.
+Este método oferece suporte aos parâmetros de consulta `$select` e `$expand`[OData](/graph/query-parameters)para ajudar a personalizar a resposta.
 
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
 | Cabeçalho       | Valor |
@@ -55,8 +55,8 @@ Não forneça um corpo de solicitação para esse método.
 
 Se tiver êxito, este método retornará um código de resposta `200 OK` e um objeto [team](../resources/team.md) no corpo da resposta.
 ## <a name="example"></a>Exemplo
-#### <a name="request"></a>Solicitação
-Este é um exemplo de solicitação.
+### <a name="request"></a>Solicitação
+Veja a seguir um exemplo de uma solicitação.
 
 
 # <a name="http"></a>[HTTP](#tab/http)
@@ -95,7 +95,7 @@ GET https://graph.microsoft.com/v1.0/teams/893075dd-2487-4122-925f-022c42e20265
 
 
 
-#### <a name="response"></a>Resposta
+### <a name="response"></a>Resposta
 Este é um exemplo de resposta. 
 
 >**Observação:** o objeto de resposta mostrado aqui pode ser encurtado para legibilidade.

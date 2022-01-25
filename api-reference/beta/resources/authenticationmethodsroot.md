@@ -5,12 +5,12 @@ author: danielwood95
 ms.localizationpriority: medium
 ms.prod: identity-and-access-reports
 doc_type: resourcePageType
-ms.openlocfilehash: e01fe33d73d67058bf765d3562c77ea657630ea6
-ms.sourcegitcommit: 33e0bbada1b47310a18d8f794914b1319d88e6f4
+ms.openlocfilehash: def78eddd43cdb7ea738d32e25c8d90adb23fbc4
+ms.sourcegitcommit: 9adf70c5da7c5b65f7d20f571d101ee06f023bc3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/10/2021
-ms.locfileid: "61403196"
+ms.lasthandoff: 01/25/2022
+ms.locfileid: "62201684"
 ---
 # <a name="authenticationmethodsroot-resource-type"></a>tipo de recurso authenticationMethodsRoot
 
@@ -29,11 +29,12 @@ Nenhum.
 ## <a name="properties"></a>Propriedades
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|id|String| Um identificador exclusivo. Herdado da [entidade](../resources/entity.md).|
+|id|Cadeia de caracteres| Um identificador exclusivo. Herdado da [entidade](../resources/entity.md).|
 
 ## <a name="relationships"></a>Relações
-
-Nenhum
+|Relação|Tipo|Descrição|
+|:---|:---|:---|
+|userRegistrationDetails|[userRegistrationDetails](../resources/userRegistrationDetails.md)| Representa o estado dos métodos de autenticação de um usuário, incluindo quais métodos são registrados e quais recursos o usuário é registrado e capaz (como autenticação multifato, redefinição de senha de autoatendados e autenticação sem senha).|
 
 ## <a name="json-representation"></a>Representação JSON
 Veja a seguir uma representação JSON do recurso.
