@@ -5,12 +5,12 @@ ms.localizationpriority: high
 author: Jordanndahl
 ms.prod: groups
 doc_type: resourcePageType
-ms.openlocfilehash: 0268b5247999cf01f38fbe87879933e228a2c22d
-ms.sourcegitcommit: 709d2e3069765c2e570ac1128847c165ab233aa8
+ms.openlocfilehash: 25c2570fa39159c34d8c38c90bd4f7fe7e96ed4e
+ms.sourcegitcommit: 9adf70c5da7c5b65f7d20f571d101ee06f023bc3
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/24/2022
-ms.locfileid: "62183923"
+ms.lasthandoff: 01/25/2022
+ms.locfileid: "62201425"
 ---
 # <a name="group-resource-type"></a>tipo de recurso de grupo
 
@@ -46,13 +46,13 @@ Esse recurso permite:
 | [Excluir configuração](../api/groupsetting-delete.md) | Nenhum | Excluir um objeto de configuração. |
 | [Obter configuração](../api/groupsetting-get.md) | [groupSetting](groupsetting.md) | Ler propriedades de um objeto de configuração específico. |
 | [Listar groupLifecyclePolicies](../api/group-list-grouplifecyclepolicies.md)  | Coleção [groupLifecyclePolicy](grouplifecyclepolicy.md) | Listar políticas de ciclo de vida de grupo. |
-| [Listar membros](../api/group-list-members.md) | Coleção [directoryObject](directoryobject.md) | Obter os usuários e grupos que são membros diretos desse grupo da propriedade de navegação **members**. |
+| [Listar membros](../api/group-list-members.md) | Coleção [directoryObject](directoryobject.md) | Obtenha os membros diretos deste grupo a partir da propriedade de navegação **membros**. |
 | [Listar proprietários](../api/group-list-owners.md) | Coleção [directoryObject](directoryobject.md) | Obter os proprietários do grupo da propriedade de navegação **owners**. |
 | [Listar configurações](../api/groupsetting-list.md) | Conjunto [groupSetting](groupsetting.md) | Lista propriedades de todos os objetos de configuração. |
 | [Listar membros transitivos](../api/group-list-transitivemembers.md) | Coleção [directoryObject](directoryobject.md) | Obtenha os usuários, grupos e dispositivos que são membros, inclusive membros aninhados desse grupo. |
 | [Listar memberOf transitivos](../api/group-list-transitivememberof.md) | Coleção [directoryObject](directoryobject.md) | Lista os grupos dos quais esse grupo é membro. Essa operação é transitiva e inclui os grupos que são membros aninhados desse grupo. |
-| [Remover membro](../api/group-delete-members.md) | Nenhum | Remover um membro de um grupo do Microsoft 365, de um grupo de segurança ou de um grupo de segurança habilitado para email por meio da propriedade de navegação **members**. É possível remover usuários ou outros grupos. |
-| [Remover proprietário](../api/group-delete-owners.md) | Nenhum | Remover um proprietário de um grupo do Microsoft 365, de um grupo de segurança ou de um grupo de segurança habilitado para email por meio da propriedade de navegação **owners**. |
+| [Remover membro](../api/group-delete-members.md) | Nenhum | Remova um membro de um grupo do Microsoft 365 ou de um grupo de segurança por meio da propriedade de navegação **membros**.|
+| [Remover proprietário](../api/group-delete-owners.md) | Nenhum | Remova um proprietário de um grupo do Microsoft 365 ou de um grupo de segurança por meio da propriedade de navegação **proprietários**. |
 | [Atualizar configuração](../api/groupsetting-update.md) | [groupSetting](groupsetting.md) | Atualizar um objeto setting. |
 | [assignLicense](../api/group-assignlicense.md) | [group](group.md) | Adicione ou remova inscrições para o grupo. Você também pode habilitar e desabilitar planos específicos associados a uma assinatura. |
 | [renovar](../api/group-renew.md) | Booleano | Renova a expiração de um grupo. Quando um grupo é renovado, a expiração do grupo é estendida pelo número de dias definido na política. |
@@ -141,7 +141,7 @@ Esse recurso permite:
 |hideFromOutlookClients |Booliano |Verdadeiro se o grupo não for exibido nos clientes do Outlook, como Outlook para Windows e Outlook na Web; caso contrário, falso. O valor padrão é `false`.<br><br>Retornado somente em `$select`. Com suporte apenas para a API Get group (`GET /groups/{ID}`).|
 |id|String|O identificador exclusivo do grupo. <br><br>Retornado por padrão. Herdado de [directoryObject](directoryobject.md). Chave. Não anulável. Somente leitura.<br><br>Suporta `$filter` (`eq`, `ne`, `not`, `in`).|
 |isAssignableToRole|Booliano|Indica se este grupo pode ser atribuído a uma função do Azure Active Directory ou não. Opcional.<br><br>Esta propriedade só pode ser definida durante a criação do grupo e é imutável. Se definida como `true`, a propriedade **securityEnabled** também deverá ser definida como `true` e o grupo não poderá ser um grupo dinâmico (ou seja, **groupTypes** não pode conter `DynamicMembership`). Somente chamadores em funções de Administrador global e de Administrador de funções com privilégios podem definir essa propriedade. O chamador deve receber a permissão *RoleManagement.ReadWrite.Directory* para definir essa propriedade ou atualizar a associação desses grupos. Para obter mais informações, confira [Usando um grupo para gerenciar atribuições de função do Azure Active Directory](https://go.microsoft.com/fwlink/?linkid=2103037)<br><br>Retornado por padrão. Suporta `$filter` (`eq`, `ne`, `not`).|
-|isSubscribedByMail|Boolean|Indica se o usuário conectado está inscrito para receber conversas por email. O valor padrão é `true`.<br><br>Retornado somente em `$select`. Compatível apenas com a API Obter grupo (`GET /groups/{ID}`). |
+|isSubscribedByMail|Boolean|Indica se o usuário conectado está inscrito para receber conversas por email. O valor padrão é `true`.<br><br>Retornado somente em `$select`. Com suporte apenas para a API Get group (`GET /groups/{ID}`). |
 |licenseProcessingState|String|Indica o status da atribuição de licença do grupo a todos os membros do grupo. O valor padrão é `false`. Somente leitura. Valores possíveis: `QueuedForProcessing`, `ProcessingInProgress` e `ProcessingComplete`.<br><br>Retornado apenas em `$select`. Somente leitura.|
 |email|String|O endereço SMTP do grupo, por exemplo, "serviceadmins@contoso.onmicrosoft.com". <br><br>Retornado por padrão. Somente leitura. Suporte `$filter` (`eq`, `ne`, `not`, `ge`, `le`, `in`, `startsWith`, e `eq` no `null` valores).|
 |mailEnabled|Boolean|Especifica se o grupo está habilitado para email. Obrigatório.<br><br>Retornado por padrão. Suporta `$filter` (`eq`, `ne`, `not`).|
@@ -190,10 +190,10 @@ Esse recurso permite:
 |extensions|Coleção [extension](extension.md)|A coleção de extensões abertas definidas para o grupo. Somente leitura. Anulável.|
 |groupLifecyclePolicies|Coleção [groupLifecyclePolicy](grouplifecyclepolicy.md)|A coleção de políticas de ciclo de vida para este grupo. Somente leitura. Anulável.|
 |memberOf|Coleção [directoryObject](directoryobject.md)|Grupos dos quais esse grupo é membro. Métodos HTTP: GET (com suporte para todos os grupos). Somente leitura. Anulável. Com suporte para `$expand`.|
-|members|Coleção [directoryObject](directoryobject.md)| Usuários e grupos que são membros deste grupo. Métodos HTTP: GET (com suporte para todos os grupos), POST (com suporte para grupos do Microsoft 365, grupos de segurança e grupos de segurança habilitados para email), DELETE (com suporte para grupos do Microsoft 365 e grupos de segurança). Anulável.<br/>Dá `$expand`, incluindo arquivos aninhados `$select`. Por exemplo, `/groups?$filter=startsWith(displayName,'Role')&$select=id,displayName&$expand=members($select=id,userPrincipalName,displayName)`.|
+|members|Coleção [directoryObject](directoryobject.md)| UMembros desse grupo, que podem ser usuários, dispositivos, outros grupos ou entidades de serviço. Suporta as operações [Membros da lista](../api/group-list-members.md), [Adicionar membro](../api/group-post-members.md) e [Remover membro](../api/group-delete-members.md). Anulável. <br/>Suporta `$expand` incluindo `$select` aninhado. Por exemplo, `/groups?$filter=startsWith(displayName,'Role')&$select=id,displayName&$expand=members($select=id,userPrincipalName,displayName)`.|
 |membersWithLicenseErrors|Coleção [user](user.md)|Uma lista de membros do grupo com erros de licença desta atribuição de licença baseada em grupo. Somente leitura.|
 |onenote|[Onenote](onenote.md)| Somente leitura.|
-|owners|Coleção [directoryObject](directoryobject.md)|Os proprietários do grupo. Os proprietários são um conjunto de usuários não administradores e que têm permissão para modificar esse objeto. Limitado a 100 proprietários. Anulável. Se essa propriedade não for especificada ao criar um grupo Microsoft 365, o usuário chamador será atribuído automaticamente como o proprietário do grupo. <br/>Dá `$expand`, incluindo arquivos aninhados `$select`. Por exemplo, `/groups?$filter=startsWith(displayName,'Role')&$select=id,displayName&$expand=owners($select=id,userPrincipalName,displayName)`.|
+|owners|Coleção [directoryObject](directoryobject.md)|Os proprietários do grupo. Limitado a 100 proprietários. Anulável. Se essa propriedade não for especificada ao criar um grupo Microsoft 365, o usuário chamador será atribuído automaticamente como o proprietário do grupo. <br/>Suporta `$expand` incluindo `$select` aninhado. Por exemplo, `/groups?$filter=startsWith(displayName,'Role')&$select=id,displayName&$expand=owners($select=id,userPrincipalName,displayName)`.|
 |permissionGrants|[resourceSpecificPermissionGrant](resourcespecificpermissiongrant.md)|A permissão que foi concedida a um grupo para um aplicativo específico. Com suporte para `$expand`.|
 |photo|[profilePhoto](profilephoto.md)| A foto de perfil do grupo |
 |fotos|Coleção [profilePhoto](profilephoto.md)| As fotos de perfil pertencentes ao grupo. Somente leitura. Anulável.|

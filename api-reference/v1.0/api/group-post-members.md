@@ -5,12 +5,12 @@ ms.localizationpriority: high
 author: Jordanndahl
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: fbcf86e2c2ff087d5b2ece680ecd50c140a61edf
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: 109208672ea8c16336171d41a3587ba48a30e207
+ms.sourcegitcommit: 9adf70c5da7c5b65f7d20f571d101ee06f023bc3
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62117373"
+ms.lasthandoff: 01/25/2022
+ms.locfileid: "62201356"
 ---
 # <a name="add-members"></a>Adicionar membros
 
@@ -21,9 +21,10 @@ Adicione um membro a um grupo de segurança ou Microsoft 365 por meio da proprie
 É possível adicionar usuários, contatos organizacionais, entidades de serviço ou outros grupos. 
 
 > [!IMPORTANT]
-> + Você só pode adicionar membros a grupos de segurança e Microsoft 365.
+> + Você pode adicionar membros somente a grupos de segurança e do Microsoft 365. Para obter mais informações, consulte [Tipos de grupo no Microsoft Azure AD e Microsoft Graph apenas](/graph/api/resources/groups-overview#group-types-in-azure-ad-and-microsoft-graph).
 > + Não é possível adicionar grupos de segurança a grupos do Microsoft 365.
 > + Não é possível adicionar grupos do Microsoft 365 a grupos de segurança ou a outros grupos do Microsoft 365.
+> + Um grupo de segurança pode ter usuários, dispositivos, grupos ou entidades de serviço como seus membros, enquanto um grupo do Microsoft 365 pode ter somente usuários como membros.
 
 ## <a name="permissions"></a>Permissões
 
