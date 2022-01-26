@@ -5,12 +5,12 @@ author: eddie-lee-msft
 ms.localizationpriority: medium
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: bf872f5609b7af3d0a47bdf4a88022d47438d948
-ms.sourcegitcommit: bfd1ab7e015ef04cb2ca3fb85d308ba2ce830a89
+ms.openlocfilehash: 8e197cfbceeb63a2a132025f570f9baaaec4a9f1
+ms.sourcegitcommit: 871db8b3f68489d24e2aeafe694725579ee44c47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/19/2022
-ms.locfileid: "62072352"
+ms.lasthandoff: 01/26/2022
+ms.locfileid: "62225683"
 ---
 # <a name="team-sendactivitynotification"></a>team: sendActivityNotification
 Namespace: microsoft.graph
@@ -24,7 +24,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |:---|:---|
 |Delegado (conta corporativa ou de estudante)|TeamsActivity.Send|
 |Delegado (conta pessoal da Microsoft)|Sem suporte.|
-|Aplicativo|TeamsActivity.Send.Group*, TeamsActivity.Send|
+|Application|TeamsActivity.Send.Group*, TeamsActivity.Send|
 
 >**Observação:** Permissões marcadas com * use [o consentimento específico do recurso.](/microsoftteams/platform/graph-api/rsc/resource-specific-consent)
 

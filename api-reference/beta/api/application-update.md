@@ -5,12 +5,12 @@ author: sureshja
 ms.localizationpriority: medium
 ms.prod: applications
 doc_type: apiPageType
-ms.openlocfilehash: c6d1e15b764521f1f078c88e1862efed0467dc33
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: 10cfb4ee29d9262f9a595799f75d0e78bf3d8724
+ms.sourcegitcommit: 871db8b3f68489d24e2aeafe694725579ee44c47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62126171"
+ms.lasthandoff: 01/26/2022
+ms.locfileid: "62224752"
 ---
 # <a name="update-application"></a>Atualizar aplicativo
 

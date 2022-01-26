@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 doc_type: apiPageType
 author: ArvindHarinder1
 ms.prod: applications
-ms.openlocfilehash: 8b84d54769f872ff3a0b2e534d9861a360cf045c
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: 8f6ffceae611f532d12f83538ac70ca668aebea2
+ms.sourcegitcommit: 871db8b3f68489d24e2aeafe694725579ee44c47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "61031685"
+ms.lasthandoff: 01/26/2022
+ms.locfileid: "62224990"
 ---
 # <a name="synchronizationjob-validatecredentials"></a>synchronizationJob: validateCredentials
 
@@ -27,7 +27,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |:--------------------------------------|:---------------------------------------------------------|
 |Delegado (conta corporativa ou de estudante)     |Directory.ReadWrite.All  |
 |Delegado (conta pessoal da Microsoft) |Sem suporte. |
-|Aplicativo                            |Application.ReadWrite.OwnedBy, Directory.ReadWrite.All | 
+|Application                            |Application.ReadWrite.OwnedBy, Directory.ReadWrite.All | 
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- { "blockType": "ignored" } -->
@@ -45,8 +45,8 @@ Forneça um objeto JSON com os seguintes parâmetros no corpo da solicitação.
 
 | Parâmetro    | Tipo   |Descrição|
 |:---------------|:--------|:----------|
-|useSavedCredentials|Booliano|Quando , o parâmetro será ignorado e as credenciais `true` `credentials` salvas anteriormente (se alguma) serão validadas. |
-|credenciais|[coleção synchronizationSecretKeyStringValuePair](../resources/synchronization-secretkeystringvaluepair.md)|Credenciais para validar. Ignorado quando o `useSavedCredentials` parâmetro é `true` .|
+|useSavedCredentials|Booleano|Quando , o parâmetro será ignorado e as credenciais `true` `credentials` salvas anteriormente (se alguma) serão validadas. |
+|credenciais|[coleção synchronizationSecretKeyStringValuePair](../resources/synchronization-synchronizationsecretkeystringvaluepair.md)|Credenciais para validar. Ignorado quando o `useSavedCredentials` parâmetro é `true` .|
 
 ## <a name="response"></a>Resposta
 Se a validação for bem-sucedida, este método retornará `204, No Content` um código de resposta. Não retorna nada no corpo da resposta.
@@ -88,7 +88,7 @@ Content-type: application/json
 [!INCLUDE [sample-code](../includes/snippets/java/synchronizationjob-validatecredentials-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[Go](#tab/go)
+# <a name="go"></a>[Ir](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/synchronizationjob-validatecredentials-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 

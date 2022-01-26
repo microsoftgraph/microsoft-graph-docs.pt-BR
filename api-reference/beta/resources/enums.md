@@ -5,16 +5,23 @@ doc_type: enumPageType
 ms.localizationpriority: medium
 ms.prod: non-product-specific
 author: MSGraphDocsvTeam
-ms.openlocfilehash: 3ab14e8814be6145cf19adffde1a37aec0811b6b
-ms.sourcegitcommit: 3f3975916b5c531ee63d92340ccd6e73e879e8d7
+ms.openlocfilehash: e300e3ec5d981376b1bc08c3aca3097ecda1ff9a
+ms.sourcegitcommit: 871db8b3f68489d24e2aeafe694725579ee44c47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/21/2022
-ms.locfileid: "62161638"
+ms.lasthandoff: 01/26/2022
+ms.locfileid: "62225543"
 ---
 # <a name="enum-values"></a>Valores denum
 
 Namespace: microsoft.graph
+
+### <a name="accesspackagefilterbycurrentuseroptions-values"></a>valores accessPackageFilterByCurrentUserOptions
+
+|Member|
+|:---|
+|allowedRequestor|
+|unknownFutureValue|
 
 ### <a name="usersigninrecommendationscope-values"></a>valores userSignInRecommendationScope 
 
@@ -220,11 +227,11 @@ Namespace: microsoft.graph
 
 |Member|
 |:---|
-|Cadeia de caracteres|
+|Cadeia de Caracteres|
 |Inteiro|
 |Referência|
 |Binária|
-|Booliano|
+|Booleano|
 |DateTime|
 
 ### <a name="mutability-values"></a>valores de mutabilidade

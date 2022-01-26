@@ -920,7 +920,7 @@ items:
                         href: api/application-delete-extensionproperty.md
               - name: Credenciais de identidade federada (visualização)
                 items:
-                  - name: Visão geral
+                  - name: Visão Geral
                     href: resources/federatedidentitycredentials-overview.md
                   - name: Credenciais de identidade federada
                     href: resources/federatedidentitycredential.md
@@ -1182,35 +1182,36 @@ items:
                   - name: Excluir credenciais de acesso único de senha
                     href: api/serviceprincipal-deletepasswordsinglesignoncredentials.md
           - name: Sincronização
-            href: resources/synchronization-overview.md
             items:
-              - name: Sincronizar atributos de destino personalizados
-                href: resources/synchronization-configure-with-custom-target-attributes.md
-              - name: Sincronizar atributos de extensão de diretório
-                href: resources/synchronization-configure-with-directory-extension-attributes.md
-              - name: Adquirir token de acesso
-                href: api/synchronization-synchronization-acquireaccesstoken.md
-              - name: Definição de diretório
-                href: resources/synchronization-directorydefinition.md
+              - name: Visão Geral
+                href: resources/synchronization-overview.md
+              - name: Sincronização
+                href: resources/synchronization-synchronization.md
                 items:
-                  - name: Descobrir
-                    href: api/directorydefinition-discover.md
+                  - name: Adquirir token de acesso
+                    href: api/synchronization-synchronization-acquireaccesstoken.md
+                  - name: Adicionar segredos
+                    href: api/synchronization-synchronization-secrets.md
+                  - name: Sincronizar atributos de destino personalizados
+                    href: resources/synchronization-configure-with-custom-target-attributes.md
+                  - name: Sincronizar atributos de extensão de diretório
+                    href: resources/synchronization-configure-with-directory-extension-attributes.md
               - name: Trabalho
                 href: resources/synchronization-synchronizationjob.md
                 items:
-                  - name: Listar trabalhos
+                  - name: Listar
                     href: api/synchronization-synchronizationjob-list.md
-                  - name: Criar trabalho
+                  - name: Criar
                     href: api/synchronization-synchronizationjob-post.md
-                  - name: Obter trabalho
+                  - name: Obter
                     href: api/synchronization-synchronizationjob-get.md
-                  - name: Iniciar trabalho
+                  - name: Início
                     href: api/synchronization-synchronizationjob-start.md
-                  - name: Pausar trabalho
+                  - name: Pausar
                     href: api/synchronization-synchronizationjob-pause.md
-                  - name: Reiniciar trabalho
+                  - name: Reiniciar
                     href: api/synchronization-synchronizationjob-restart.md
-                  - name: Excluir trabalho
+                  - name: Excluir
                     href: api/synchronization-synchronizationjob-delete.md
                   - name: Provisionamento sob demanda
                     href: api/synchronization-synchronizationjob-provision-on-demand.md
@@ -1229,12 +1230,17 @@ items:
                     href: api/synchronization-synchronizationschema-update.md
                   - name: Redefinir esquema
                     href: api/synchronization-synchronizationschema-delete.md
+                  - name: Definição de diretório
+                    href: resources/synchronization-directorydefinition.md
+                    items:
+                      - name: Descobrir
+                        href: api/directorydefinition-discover.md
               - name: Modelo
                 href: resources/synchronization-synchronizationtemplate.md
                 items:
-                  - name: Listar modelos
+                  - name: Listar
                     href: api/synchronization-synchronizationtemplate-list.md
-                  - name: Obter modelo
+                  - name: Obter
                     href: api/synchronization-synchronizationtemplate-get.md
       - name: Calendário
         href: resources/calendar.md
@@ -1547,7 +1553,7 @@ items:
                 href: api/call-logteleconferencedevicequality.md
           - name: Registros de chamadas
             items:
-              - name: Visão geral
+              - name: Visão Geral
                 href: resources/callrecords-api-overview.md
               - name: Registro de chamada
                 items:
@@ -1718,7 +1724,7 @@ items:
                     href: api/ediscovery-custodian-update.md
                   - name: Ativar
                     href: api/ediscovery-custodian-activate.md
-                  - name: Lançar
+                  - name: Liberar
                     href: api/ediscovery-custodian-release.md
               - name: Retenção legal
                 href: resources/ediscovery-legalhold.md
@@ -1744,7 +1750,7 @@ items:
                     href: api/ediscovery-noncustodialdatasource-get.md
                   - name: Listar datasource
                     href: api/ediscovery-noncustodialdatasource-list-datasource.md
-                  - name: Lançar
+                  - name: Liberar
                     href: api/ediscovery-noncustodialdatasource-release.md
               - name: Conjuntos de revisão
                 href: resources/ediscovery-reviewset.md
@@ -1816,7 +1822,7 @@ items:
                     href: api/ediscovery-tag-ashierarchy.md
           - name: Solicitação de direitos do sujeito
             items:
-              - name: Visão geral
+              - name: Visão Geral
                 href: resources/subjectrightsrequest-subjectrightsrequestapioverview.md
               - name: Solicitação de direitos do sujeito
                 href: resources/subjectrightsrequest.md
@@ -9988,7 +9994,7 @@ items:
                         href: api/intune-tem-telecomexpensemanagementpartner-update.md
           - name: Cloud PC (visualização)
             items:
-              - name: Visão geral
+              - name: Visão Geral
                 href: resources/cloudpc-api-overview.md
               - name: Ponto de extremidade virtual
                 href: resources/virtualendpoint.md
@@ -10376,7 +10382,7 @@ items:
                     href: api/managedtenants-windowsprotectionstate-get.md
           - name: Comunicações e integridade do serviço
             items:
-              - name: Visão geral
+              - name: Visão Geral
                 href: resources/service-communications-api-overview.md
               - name: Comunicado do serviço
                 href: resources/serviceannouncement.md
@@ -11069,7 +11075,7 @@ items:
                     href: api/contract-list.md
               - name: Atributos de segurança personalizados (visualização)
                 items:
-                  - name: Visão geral
+                  - name: Visão Geral
                     href: resources/custom-security-attributes-overview.md
                   - name: Conjuntos de atributos
                     href: resources/attributeset.md
@@ -12337,8 +12343,13 @@ items:
                         href: api/accessreviewset-list-historydefinitions.md
                       - name: Criar
                         href: api/accessreviewset-post-historydefinitions.md
-                      - name: Gerar URI de download
-                        href: api/accessreviewhistorydefinition-generatedownloaduri.md
+                      - name: Instância do histórico de revisão do Access
+                        href: resources/accessreviewhistoryinstance.md
+                        items:
+                          - name: List
+                            href: api/accessreviewhistorydefinition-list-instances.md
+                          - name: Gerar URI de download
+                            href: api/accessreviewhistoryinstance-generatedownloaduri.md
               - name: Avaliações do Access (preterida)
                 href: resources/accessreviews-root.md
                 items:
@@ -13010,7 +13021,7 @@ items:
                 href: api/user-post-notifications.md
       - name: Inteligência de pessoas e local de trabalho
         items:
-          - name: Visão geral
+          - name: Visão Geral
             href: resources/social-overview.md
           - name: Pessoas
             items:
@@ -13455,7 +13466,7 @@ items:
                 href: api/contact-delta.md
           - name: Propriedades estendidas
             items:
-              - name: Visão geral
+              - name: Visão Geral
                 href: resources/extended-properties-overview.md
               - name: Propriedades estendidas de valor único
                 items:
@@ -13477,7 +13488,7 @@ items:
         items:
           - name: Relatórios de atividade do Azure AD
             items:
-              - name: Visão geral
+              - name: Visão Geral
                 href: resources/azure-ad-auditlog-overview.md
               - name: Auditoria de diretório
                 href: resources/directoryaudit.md
@@ -13500,7 +13511,7 @@ items:
                     href: api/provisioningobjectsummary-list.md
           - name: Relatórios de identidade e acesso
             items:
-              - name: Visão geral
+              - name: Visão Geral
                 href: resources/report-identity-access.md
               - name: Atividade de aplicativo no AD FS
                 items:
@@ -13813,7 +13824,7 @@ items:
         items:
           - name: Consulta
             items:
-              - name: Visão geral
+              - name: Visão Geral
                 href: resources/search-api-overview.md
               - name: Tipo de solicitação de pesquisa
                 href: resources/searchrequest.md
@@ -14903,7 +14914,7 @@ items:
       - name: Tarefas pendentes
         displayName: Microsoft To Do
         items:
-          - name: Visão geral
+          - name: Visão Geral
             href: resources/tasks-overview.md
           - name: Lista de tarefas
             items:

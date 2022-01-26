@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: isabelleatmsft
 ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: fb5fd711253e15c8609ce7cac16452dae6a6c9c1
-ms.sourcegitcommit: 3f3975916b5c531ee63d92340ccd6e73e879e8d7
+ms.openlocfilehash: b3d8eb173a219f0d11b49d304040fc6436d97f89
+ms.sourcegitcommit: 871db8b3f68489d24e2aeafe694725579ee44c47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/21/2022
-ms.locfileid: "62162175"
+ms.lasthandoff: 01/26/2022
+ms.locfileid: "62225130"
 ---
 # <a name="accessreviewinstancedecisionitem-recordalldecisions"></a>accessReviewInstanceDecisionItem: recordAllDecisions
 Namespace: microsoft.graph
@@ -52,8 +52,8 @@ A tabela a seguir mostra os parâmetros que podem ser usados com esta ação.
 |Parâmetro|Tipo|Descrição|
 |:---|:---|:---|
 |decision|Cadeia de caracteres| A decisão de fornecer. Os valores possíveis são `Approve` `Deny` , , `DontKnow` . |
-|justification|Cadeia de caracteres|Justificativa para fornecer a decisão.|
-|principalId|Cadeia de caracteres|Se fornecido, todos os itens de decisão correspondentes ao principalId terão essa decisão registrada.|
+|justification|Cadeia de Caracteres|Justificativa para fornecer a decisão.|
+|principalId|Cadeia de Caracteres|Se fornecido, todos os itens de decisão correspondentes ao principalId terão essa decisão registrada.|
 |resourceId|Cadeia de caracteres|Se fornecido, todos os itens de decisão correspondentes ao resourceId terão essa decisão registrada.|
 
 
@@ -65,6 +65,8 @@ Se tiver êxito, esta ação retornará um código de resposta `204 No Content`.
 ## <a name="examples"></a>Exemplos
 
 ### <a name="request"></a>Solicitação
+
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "accessreviewinstancedecisionitem-recordalldecisions"
@@ -81,6 +83,24 @@ Content-Type: application/json
   "resourceId": "733ef921-89e1-4d7e-aeff-83612223c37e"
 }
 ```
+# <a name="c"></a>[C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/accessreviewinstancedecisionitem-recordalldecisions-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/accessreviewinstancedecisionitem-recordalldecisions-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/accessreviewinstancedecisionitem-recordalldecisions-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/accessreviewinstancedecisionitem-recordalldecisions-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 
 ### <a name="response"></a>Resposta

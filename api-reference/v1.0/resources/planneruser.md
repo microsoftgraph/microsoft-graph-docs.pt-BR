@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: TarkanSevilmis
 ms.prod: planner
 doc_type: resourcePageType
-ms.openlocfilehash: 5a2220ced0459118a6be00ee03a2b9282b6635cb
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 1c921b11c54075a8ff844f7ef932cc9c34172b44
+ms.sourcegitcommit: 871db8b3f68489d24e2aeafe694725579ee44c47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59129800"
+ms.lasthandoff: 01/26/2022
+ms.locfileid: "62225207"
 ---
 # <a name="planneruser-resource-type"></a>Tipo de recurso plannerUser
 
@@ -23,18 +23,18 @@ O **recurso plannerUser** fornece acesso aos recursos do Planner para um [usuár
 
 | Método           | Tipo de retorno    |Descrição|
 |:---------------|:--------|:----------|
-|[Listar planos](../api/planneruser-list-plans.md) |coleção [plannerPlan](plannerplan.md)| Obter uma **coleção de objetos plannerPlan.**|
+|[Listar planos](../api/planneruser-list-plans.md) |Coleção [plannerPlan](plannerplan.md)| Obter uma **coleção de objetos plannerPlan.**|
 |[Listar tarefas](../api/planneruser-list-tasks.md) |Coleção [plannerTask](plannertask.md)| Obter uma coleção de objetos **plannerTask**.|
 
 ## <a name="properties"></a>Propriedades
 | Propriedade     | Tipo   |Descrição|
 |:---------------|:--------|:----------|
-|id|String| Somente leitura. Identificador do planenrUser|
+|id|String| Somente leitura. Identificador do plannerUser|
 
 ## <a name="relationships"></a>Relações
 | Relação | Tipo   |Descrição|
 |:---------------|:--------|:----------|
-|plans|coleção [plannerPlan](plannerplan.md)| Somente leitura. Anulável. Retorna os [plannerTasks](plannertask.md) atribuídos ao usuário.|
+|plans|Coleção [plannerPlan](plannerplan.md)| Somente leitura. Anulável. Retorna os [plannerTasks](plannertask.md) atribuídos ao usuário.|
 |tarefas|Coleção [plannerTask](plannertask.md)| Somente leitura. Anulável. Retorna os [plannerPlans compartilhados](plannerplan.md) com o usuário.|
 
 ## <a name="json-representation"></a>Representação JSON

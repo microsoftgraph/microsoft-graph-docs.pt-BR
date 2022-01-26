@@ -5,12 +5,12 @@ author: subray
 ms.localizationpriority: high
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 82ee2dfc98d48afe052796051fb176cacb5b9f5b
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: 3aaaac0d0da06b6991c25171ab95aa5e5ba08644
+ms.sourcegitcommit: 871db8b3f68489d24e2aeafe694725579ee44c47
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62113871"
+ms.lasthandoff: 01/26/2022
+ms.locfileid: "62225585"
 ---
 # <a name="uninstall-app-in-a-chat"></a>Desinstalar o aplicativo em um chat
 

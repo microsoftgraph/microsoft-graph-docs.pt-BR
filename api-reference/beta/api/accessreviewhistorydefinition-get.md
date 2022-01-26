@@ -5,12 +5,12 @@ author: isabelleatmsft
 ms.localizationpriority: medium
 ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: 4c9daf4b156d4de58703a151f1d692391c071b1d
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: e88cfc3dd1e11f42feb3ede56594461a5f9d0b59
+ms.sourcegitcommit: 871db8b3f68489d24e2aeafe694725579ee44c47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "60987957"
+ms.lasthandoff: 01/26/2022
+ms.locfileid: "62224941"
 ---
 # <a name="get-accessreviewhistorydefinition"></a>Obter accessReviewHistoryDefinition
 
@@ -18,7 +18,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Recupere um [objeto accessReviewHistoryDefinition](../resources/accessreviewhistorydefinition.md) pelo identificador. Todas as propriedades do objeto de definição de histórico de revisão de acesso são retornadas. Se o link de download ainda for válido, ele será retornado junto com a definição. Se a definição for 30 dias ou mais antiga, um erro 404 será retornado.
+Recupere um [objeto accessReviewHistoryDefinition](../resources/accessreviewhistorydefinition.md) pelo identificador. Todas as propriedades do objeto de definição de histórico de revisão de acesso são retornadas. Se a definição for 30 dias ou mais antiga, um erro 404 será retornado.
 
 ## <a name="permissions"></a>Permissões
 
@@ -28,7 +28,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |:---|:---|
 |Delegado (conta corporativa ou de estudante)|AccessReview.ReadWrite.All|
 |Delegado (conta pessoal da Microsoft)|Sem suporte.|
-|Aplicativo|AccessReview.ReadWrite.All|
+|Application|AccessReview.ReadWrite.All|
 
 O usuário integrado também deve ser o criador da definição de histórico de revisão associada, um membro da função de diretório administrador global ou um membro da função de diretório Leitor Global para recuperar a definição.
 
@@ -38,16 +38,22 @@ O usuário integrado também deve ser o criador da definição de histórico de 
   "blockType": "ignored"
 }
 -->
+
 ``` http
 GET /identityGovernance/accessReviews/historyDefinitions/{definition-id}
 ```
+## <a name="optional-query-parameters"></a>Parâmetros de consulta opcionais
+
+Este método dá suporte aos `$select` `$expand` parâmetros de consulta E OData para ajudar a personalizar a resposta. Inclusive `?$expand=instances` incluirá no objeto de resposta as instâncias associadas ao [objeto accessReviewHistoryDefinition.](../resources/accessreviewhistorydefinition.md) Para obter informações gerais, acesse [Parâmetros de consulta OData](/graph/query-parameters).
 
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
+
 |Nome|Descrição|
 |:---|:---|
 |Autorização|{token} de portador. Obrigatório.|
 
 ## <a name="request-body"></a>Corpo da solicitação
+
 Não forneça um corpo de solicitação para esse método.
 
 ## <a name="response"></a>Resposta
@@ -59,14 +65,17 @@ Se tiver êxito, este método retornará um código de resposta e um `200 OK` [o
 ### <a name="request"></a>Solicitação
 
 # <a name="http"></a>[HTTP](#tab/http)
+
 <!-- {
   "blockType": "request",
   "name": "get_accessreviewhistorydefinition"
 }
 -->
+
 ``` http
 GET https://graph.microsoft.com/beta/identityGovernance/accessReviews/historyDefinitions/b2cb022f-b7e1-40f3-9854-c65a40861c38
 ```
+
 # <a name="c"></a>[C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-accessreviewhistorydefinition-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
@@ -83,15 +92,14 @@ GET https://graph.microsoft.com/beta/identityGovernance/accessReviews/historyDef
 [!INCLUDE [sample-code](../includes/snippets/java/get-accessreviewhistorydefinition-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[Go](#tab/go)
+# <a name="go"></a>[Ir](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/get-accessreviewhistorydefinition-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
-
-
 ### <a name="response"></a>Resposta
+
 >**Observação:** o objeto de resposta mostrado aqui pode ser encurtado para legibilidade.
 <!-- {
   "blockType": "response",
@@ -99,6 +107,7 @@ GET https://graph.microsoft.com/beta/identityGovernance/accessReviews/historyDef
   "@odata.type": "microsoft.graph.accessReviewHistoryDefinition"
 }
 -->
+
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
@@ -118,8 +127,6 @@ Content-Type: application/json
   ],
   "status": "done",
   "createdDateTime": "2021-04-14T00:22:48.9392594Z",
-  "fulfilledDateTime": "2021-04-14T00:22:58.5276552Z",
-  "downloadUri": "https://contoso.com/df-erm-reports/Last quarter's group reviews April 2021-22be232e-a93d-42a3-8ac5-313cfd29a0eb.csv?sv=2015-04-05&ss=b&srt=o&sp=rl&st=2021-04-15T00:22:58.5276552Z&se=2021-03-23T19:41:38.0000000Z&spr=https&sig=84rlGCIgU4ToMn%2FFLncBXq95O8a8RsFlwQY1Knl%2Fo%2FI%3D",
   "createdBy": {
     "id": "957f1027-c0ee-460d-9269-b8444459e0fe",
     "displayName": "MOD Administrator",

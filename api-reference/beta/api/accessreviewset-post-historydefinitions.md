@@ -5,12 +5,12 @@ author: isabelleatmsft
 ms.localizationpriority: medium
 ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: b348f889eb9a04d10c186e9ce7364d56e8d8edea
-ms.sourcegitcommit: fd609cb401ff862c3f5c21847bac9af967c6bf82
+ms.openlocfilehash: d8a6b1d34b21e28ec5ec52bfc83afdc81261d68a
+ms.sourcegitcommit: 871db8b3f68489d24e2aeafe694725579ee44c47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/31/2021
-ms.locfileid: "61650937"
+ms.lasthandoff: 01/26/2022
+ms.locfileid: "62225284"
 ---
 # <a name="create-historydefinitions"></a>Criar historyDefinitions
 
@@ -28,7 +28,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |:---|:---|
 |Delegado (conta corporativa ou de estudante)|AccessReview.ReadWrite.All|
 |Delegado (conta pessoal da Microsoft)|Sem suporte.|
-|Aplicativo|AccessReview.ReadWrite.All|
+|Application|AccessReview.ReadWrite.All|
 
 O usuário de entrada também deve estar em uma função de diretório que permita que ele leia uma revisão de acesso para recuperar todos os dados.  Para obter mais detalhes, consulte os requisitos de função e permissão para [avaliações de acesso.](../resources/accessreviewsv2-overview.md)
 
@@ -38,6 +38,7 @@ O usuário de entrada também deve estar em uma função de diretório que permi
   "blockType": "ignored"
 }
 -->
+
 ``` http
 POST /identityGovernance/accessReviews/historyDefinitions
 ```
@@ -57,14 +58,15 @@ A tabela a seguir mostra as propriedades necessárias usadas para criar [um acce
 
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|displayName | String  | Nome da coleção de dados do histórico de revisão de acesso. Obrigatório. |
-|reviewHistoryPeriodStartDateTime  | DateTimeOffset  | Timestamp, as avaliações que começam em ou após essa data serão incluídas nos dados de histórico buscados. Obrigatório.  |
-|reviewHistoryPeriodEndDateTime  | DateTimeOffset  | Timestamp, as avaliações que começam em ou antes dessa data serão incluídas nos dados de histórico buscados. Obrigatório.  |
+|displayName | Cadeia de caracteres  | Nome da coleção de dados do histórico de revisão de acesso. Obrigatório. |
+|reviewHistoryPeriodStartDateTime  | DateTimeOffset  | Um timestamp. As avaliações que começam em ou após essa data serão incluídas nos dados de histórico buscados. Somente será necessário se **scheduleSettings** não for definido.  |
+|reviewHistoryPeriodEndDateTime  | DateTimeOffset  | Um timestamp. As avaliações que começam em ou antes dessa data serão incluídas nos dados de histórico buscados. Somente será necessário se **scheduleSettings** não for definido.  |
 |escopos|[Coleção accessReviewQueryScope](../resources/accessreviewqueryscope.md)| Usado para filtrar quais avaliações estão incluídas nos dados de histórico buscados. Busca avaliações cujo escopo corresponde a esse escopo fornecido. Obrigatório. <br> Para obter mais, consulte Consultas de escopo com [suporte para accessReviewHistoryDefinition](#supported-scope-queries-for-accessreviewhistorydefinition). |
+| scheduleSettings  |[accessReviewHistoryScheduleSettings](../resources/accessReviewHistoryScheduleSettings.md)| As configurações de uma série de definição de histórico de revisão de acesso recorrente. Somente será necessário se **reviewHistoryPeriodStartDateTime** ou **reviewHistoryPeriodEndDateTime** não estiver definido.|
 
 ### <a name="supported-scope-queries-for-accessreviewhistorydefinition"></a>Consultas de escopo com suporte para accessReviewHistoryDefinition
 
-A **propriedade scopes** [de accessReviewHistoryDefinition](../resources/accessreviewhistorydefinition.md) baseia-se no **accessReviewQueryScope**, um recurso que permite configurar diferentes recursos em sua propriedade de **consulta.** Esses recursos representam o escopo da definição de histórico e ditam o tipo de dados de histórico de revisão incluídos no arquivo CSV baixável que é gerado quando a definição de histórico é criada.
+A **propriedade scopes** [de accessReviewHistoryDefinition](../resources/accessreviewhistorydefinition.md) baseia-se no **accessReviewQueryScope**, um recurso que permite configurar diferentes recursos em sua propriedade de **consulta.** Esses recursos representam o escopo da definição de histórico e ditam o tipo de dados de histórico de revisão incluídos no arquivo CSV baixável gerado quando [accessReviewHistoryInstances](../resources/accessreviewhistoryinstance.md) da definição de histórico são criados.
 
 Use o seguinte formato para **a propriedade de** consulta:
 
@@ -96,6 +98,7 @@ O exemplo a seguir mostra como criar uma definição de histórico de revisão d
   "name": "create_accessreviewhistorydefinition_from_"
 }
 -->
+
 ``` http
 POST https://graph.microsoft.com/beta/identityGovernance/accessReviews/historyDefinitions
 Content-Type: application/json
@@ -109,8 +112,20 @@ Content-Type: application/json
     "notReviewed",
     "notNotified"
   ],
-  "reviewHistoryPeriodStartDateTime": "2021-01-01T00:00:00Z",
-  "reviewHistoryPeriodEndDateTime": "2021-04-05T00:00:00Z",
+  "scheduleSettings": {
+      "reportRange": "P1M",
+      "recurrence": {
+          "pattern": {
+              "type": "monthly",
+              "interval": 1
+          },
+          "range": {
+              "type": "noEnd",
+              "startDate": "2018-08-03T21:02:30.667Z",
+              "count": 0
+          }
+        }
+  },
   "scopes": [
     {
       "@odata.type": "#microsoft.graph.accessReviewQueryScope",
@@ -127,6 +142,7 @@ Content-Type: application/json
   ]
 }
 ```
+
 # <a name="c"></a>[C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/create-accessreviewhistorydefinition-from--csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
@@ -143,15 +159,14 @@ Content-Type: application/json
 [!INCLUDE [sample-code](../includes/snippets/java/create-accessreviewhistorydefinition-from--java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[Go](#tab/go)
+# <a name="go"></a>[Ir](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/create-accessreviewhistorydefinition-from--go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
-
-
 ### <a name="response"></a>Resposta
+
 >**Observação:** o objeto de resposta mostrado aqui pode ser encurtado para legibilidade.
 <!-- {
   "blockType": "response",
@@ -159,45 +174,56 @@ Content-Type: application/json
   "@odata.type": "microsoft.graph.accessReviewHistoryDefinition"
 }
 -->
+
 ``` http
 HTTP/1.1 201 Created
 Content-Type: application/json
 
 {
-  "@odata.type": "#microsoft.graph.accessReviewHistoryDefinition",
-  "id": "b2cb022f-b7e1-40f3-9854-c65a40861c38",
-  "displayName": "Last quarter's group reviews April 2021",
-  "reviewHistoryPeriodStartDateTime": "2021-01-01T00:00:00Z",
-  "reviewHistoryPeriodEndDateTime": "2021-04-05T00:00:00Z",
-  "decisions": [
-    "approve",
-    "deny",
-    "dontKnow",
-    "notReviewed",
-    "notNotified"
-  ],
-  "status": "requested",
-  "createdDateTime": "2021-04-14T00:22:48.9392594Z",
-  "fulfilledDateTime": null,
-  "downloadUri": null,
-  "createdBy": {
-      "id": "957f1027-c0ee-460d-9269-b8444459e0fe",
-      "displayName": "MOD Administrator",
-      "userPrincipalName": "admin@contoso.com"
-  },
-  "scopes": [
-    {
-      "@odata.type": "#microsoft.graph.accessReviewQueryScope",
-      "queryType": "MicrosoftGraph",     
-      "query": "/identityGovernance/accessReviews/definitions?$filter=contains(scope/query, 'accessPackageAssignments')",
-      "queryRoot": null
-    },  
-    {
-      "@odata.type": "#microsoft.graph.accessReviewQueryScope",
-      "queryType": "MicrosoftGraph",     
-      "query": "/identityGovernance/accessReviews/definitions?$filter=contains(scope/query, '/groups')",
-      "queryRoot": null
-    }
-  ]
+    "@odata.type": "#microsoft.graph.accessReviewHistoryDefinition",
+    "id": "b2cb022f-b7e1-40f3-9854-c65a40861c38",
+    "displayName": "Last quarter's group reviews April 2021",
+    "scheduleSettings": {
+        "reportRange": "P1M",
+        "recurrence": {
+            "pattern": {
+                "type": "monthly",
+                "interval": 1
+            },
+            "range": {
+                "type": "noEnd",
+                "startDate": "2018-08-03T21:02:30.667Z",
+                "count": 0
+            }
+        }
+    },
+    "decisions": [
+        "approve",
+        "deny",
+        "dontKnow",
+        "notReviewed",
+        "notNotified"
+    ],
+    "status": "requested",
+    "createdDateTime": "2021-04-14T00:22:48.9392594Z",
+    "createdBy": {
+        "id": "957f1027-c0ee-460d-9269-b8444459e0fe",
+        "displayName": "MOD Administrator",
+        "userPrincipalName": "admin@contoso.com"
+    },
+    "scopes": [
+        {
+            "@odata.type": "#microsoft.graph.accessReviewQueryScope",
+            "queryType": "MicrosoftGraph",
+            "query": "/identityGovernance/accessReviews/definitions?$filter=contains(scope/query, 'accessPackageAssignments')",
+            "queryRoot": null
+        },
+        {
+            "@odata.type": "#microsoft.graph.accessReviewQueryScope",
+            "queryType": "MicrosoftGraph",
+            "query": "/identityGovernance/accessReviews/definitions?$filter=contains(scope/query, '/groups')",
+            "queryRoot": null
+        }
+    ]
 }
 ```

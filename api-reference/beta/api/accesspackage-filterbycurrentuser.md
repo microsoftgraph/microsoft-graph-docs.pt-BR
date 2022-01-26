@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: markwahl-msft
 ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: 19ec2e0451b45284c8146b35aff62f046d515754
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: cf8ad468a0b496c20c57815fe6c4ed8d9593bec7
+ms.sourcegitcommit: 871db8b3f68489d24e2aeafe694725579ee44c47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62107253"
+ms.lasthandoff: 01/26/2022
+ms.locfileid: "62225054"
 ---
 # <a name="accesspackage-filterbycurrentuser"></a>accessPackage: filterByCurrentUser
 Namespace: microsoft.graph
@@ -43,7 +43,7 @@ A tabela a seguir mostra os parâmetros que podem ser usados com esta função.
 
 |Parâmetro|Tipo|Descrição|
 |:---|:---|:---|
-|on|[accessPackageFilterByCurrentUserOptions](../resources/accesspackage-accesspackagefilterbycurrentuseroptions.md)|A lista de opções de usuário atuais que podem ser usadas para filtrar na lista de pacotes de acesso. O valor permitido é `allowedRequestor` .|
+|on|accessPackageFilterByCurrentUserOptions|A lista de opções de usuário atuais que podem ser usadas para filtrar na lista de pacotes de acesso. O valor permitido é `allowedRequestor` .|
 
 - `allowedRequestor` é usado para obter os objetos para os quais o usuário interno tem permissão `accessPackage` para enviar solicitações de acesso. A lista resultante inclui todos os pacotes de acesso que podem ser solicitados pelo chamador em todos os catálogos.
 
