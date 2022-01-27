@@ -273,7 +273,7 @@ items:
             href: azuread-identity-access-management-concept-overview.md
           - name: Gerenciamento de diretório
             items:
-              - name: Designar atributos de segurança personalizados (versão prévia)
+              - name: Gerenciar os atributos de segurança personalizados (visualização)
                 href: custom-security-attributes-examples.md
               - name: Usar o PIM para Azure AD para atribuir funções
                 href: tutorial-assign-azureadroles.md
