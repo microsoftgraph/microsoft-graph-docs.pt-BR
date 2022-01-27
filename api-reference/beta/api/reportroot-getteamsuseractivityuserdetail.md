@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 ms.prod: reports
 author: sarahwxy
 doc_type: apiPageType
-ms.openlocfilehash: d1572262d0c5729b7ea86ad65e024e2eb2df3298
-ms.sourcegitcommit: 42e0e15ff90815e0126c34b928405486cfb1ed86
+ms.openlocfilehash: e5a0d99a1f17c9a61a221b4df0c06a0b4e5f2dac
+ms.sourcegitcommit: de9df4bf6313b49afba74b6e9ef819907669c662
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/17/2021
-ms.locfileid: "61044691"
+ms.lasthandoff: 01/27/2022
+ms.locfileid: "62239054"
 ---
 # <a name="reportroot-getteamsuseractivityuserdetail"></a>reportRoot: getTeamsUserActivityUserDetail
 
@@ -71,6 +71,7 @@ As URLs de download previamente autenticadas são válidas apenas por um curto p
 O arquivo CSV possui os seguintes cabeçalhos para colunas.
 
 - Data de atualização do relatório
+- User Id
 - Nome UPN
 - Data da última atividade
 - Excluído
@@ -149,7 +150,7 @@ Siga o redirecionamento 302 e o arquivo CSV baixado terá o seguinte esquema.
 HTTP/1.1 200 OK
 Content-Type: application/octet-stream
 
-Report Refresh Date,User Principal Name,Last Activity Date,Is Deleted,Deleted Date,Assigned Products,Team Chat Message Count,Private Chat Message Count,Call Count,Meeting Count,Meetings Organized Count,Meetings Attended Count,Ad Hoc Meetings Organized Count,Ad Hoc Meetings Attended Count,Scheduled One-time Meetings Organized Count,Scheduled One-time Meetings Attended Count,Scheduled Recurring Meetings Organized Count,Scheduled Recurring Meetings Attended Count,Audio Duration,Video Duration,Screen Share Duration,Audio Duration In Seconds,Video Duration In Seconds,Screen Share Duration In Seconds,Has Other Action,Is Licensed,Report Period
+Report Refresh Date,User Id,User Principal Name,Last Activity Date,Is Deleted,Deleted Date,Assigned Products,Team Chat Message Count,Private Chat Message Count,Call Count,Meeting Count,Meetings Organized Count,Meetings Attended Count,Ad Hoc Meetings Organized Count,Ad Hoc Meetings Attended Count,Scheduled One-time Meetings Organized Count,Scheduled One-time Meetings Attended Count,Scheduled Recurring Meetings Organized Count,Scheduled Recurring Meetings Attended Count,Audio Duration,Video Duration,Screen Share Duration,Audio Duration In Seconds,Video Duration In Seconds,Screen Share Duration In Seconds,Has Other Action,Is Licensed,Report Period
 ```
 
 ### <a name="json"></a>JSON
@@ -192,6 +193,7 @@ Content-Length: 452
   "value": [
     {
       "reportRefreshDate": "2017-09-01", 
+      "userId": "userId-value", 
       "userPrincipalName": "userPrincipalName-value", 
       "isLicensed": true, 
       "lastActivityDate": "2017-09-01", 

@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 ms.prod: reports
 author: sarahwxy
 doc_type: apiPageType
-ms.openlocfilehash: b5acbd22596c335a1b067f27773f3f2e28d4f9a1
-ms.sourcegitcommit: 2e94beae05043a88b389349f0767e3a657415e4c
+ms.openlocfilehash: cf2fdd968cdfc0d94c7b76e8c089ef6491ea7f3c
+ms.sourcegitcommit: de9df4bf6313b49afba74b6e9ef819907669c662
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/19/2021
-ms.locfileid: "61123758"
+ms.lasthandoff: 01/27/2022
+ms.locfileid: "62239145"
 ---
 # <a name="reportroot-getteamsdeviceusageuserdetail"></a>reportRoot: getTeamsDeviceUsageUserDetail
 
@@ -71,6 +71,7 @@ As URLs de download previamente autenticadas são válidas apenas por um curto p
 O arquivo CSV possui os seguintes cabeçalhos para colunas.
 
 - Data de atualização do relatório
+- User Id
 - Nome UPN
 - Data da última atividade
 - Excluído
@@ -137,7 +138,7 @@ Siga o redirecionamento 302 e o arquivo CSV baixado terá o seguinte esquema.
 HTTP/1.1 200 OK
 Content-Type: application/octet-stream
 
-Report Refresh Date,User Principal Name,Last Activity Date,Is Deleted,Deleted Date,Used Web,Used Windows Phone,Used iOS,Used Mac,Used Android Phone,Used Windows,Used Chrome OS,Used Linux,Is Licensed,Report Period
+Report Refresh Date,User Id,User Principal Name,Last Activity Date,Is Deleted,Deleted Date,Used Web,Used Windows Phone,Used iOS,Used Mac,Used Android Phone,Used Windows,Used Chrome OS,Used Linux,Is Licensed,Report Period
 ```
 
 ### <a name="json"></a>JSON
@@ -180,6 +181,7 @@ Content-Length: 374
   "value": [
     {
       "reportRefreshDate": "2017-09-01", 
+      "userId": "userId-value", 
       "userPrincipalName": "userPrincipalName-value", 
       "isLicensed": true, 
       "lastActivityDate": "2017-09-01", 

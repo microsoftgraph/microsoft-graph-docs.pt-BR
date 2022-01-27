@@ -5,12 +5,12 @@ author: mmcla
 ms.localizationpriority: medium
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: e6a453d6993f00b4c39ef72befc6add16071402b
-ms.sourcegitcommit: e497ed9bb56400bdd2bb53d52ddf057d9966220b
+ms.openlocfilehash: 596afa411778190bd3f264d3dc37ed6515f142d9
+ms.sourcegitcommit: de9df4bf6313b49afba74b6e9ef819907669c662
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/30/2021
-ms.locfileid: "61223912"
+ms.lasthandoff: 01/27/2022
+ms.locfileid: "62239320"
 ---
 # <a name="get-emailauthenticationmethodconfiguration"></a>Obter emailAuthenticationMethodConfiguration
 
@@ -30,7 +30,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 Para cenários delegados, o administrador precisa de uma das seguintes funções [do Azure AD:](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles)
 
-* Leitor Global
+* Leitor global
 * Administrador de Política de Autenticação
 * Administrador Global
 
@@ -107,11 +107,12 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-  "value": {
+    "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#authenticationMethodConfigurations/$entity",
     "@odata.type": "#microsoft.graph.emailAuthenticationMethodConfiguration",
     "id": "Email",
     "state": "enabled",
-    "allowExternalIdToUseEmailOtp": "enabled"
-  }
+    "allowExternalIdToUseEmailOtp": "default",
+    "includeTargets@odata.context": "https://graph.microsoft.com/v1.0/$metadata#policies/authenticationMethodsPolicy/authenticationMethodConfigurations('Email')/microsoft.graph.emailAuthenticationMethodConfiguration/includeTargets",
+    "includeTargets": []
 }
 ```

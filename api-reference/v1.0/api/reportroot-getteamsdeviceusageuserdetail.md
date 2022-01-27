@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 ms.prod: reports
 author: sarahwxy
 doc_type: apiPageType
-ms.openlocfilehash: 0589d8f4c398814605bacb6eafde26d7df34587f
-ms.sourcegitcommit: 2e94beae05043a88b389349f0767e3a657415e4c
+ms.openlocfilehash: b3f542369e7f39600aa49ea0d37c13d9f0264c15
+ms.sourcegitcommit: de9df4bf6313b49afba74b6e9ef819907669c662
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/19/2021
-ms.locfileid: "61123409"
+ms.lasthandoff: 01/27/2022
+ms.locfileid: "62239306"
 ---
 # <a name="reportroot-getteamsdeviceusageuserdetail"></a>reportRoot: getTeamsDeviceUsageUserDetail
 
@@ -65,6 +65,7 @@ As URLs de download previamente autenticadas são válidas apenas por um curto p
 O arquivo CSV possui os seguintes cabeçalhos para colunas:
 
 - Data de atualização do relatório
+- User Id
 - Nome UPN
 - Data da última atividade
 - Excluído
@@ -118,7 +119,7 @@ Siga o redirecionamento 302 e o arquivo CSV baixado terá o seguinte esquema.
 HTTP/1.1 200 OK
 Content-Type: application/octet-stream
 
-Report Refresh Date,User Principal Name,Last Activity Date,Is Deleted,Deleted Date,Used Web,Used Windows Phone,Used iOS,Used Mac,Used Android Phone,Used Windows,Report Period
+Report Refresh Date,User Id,User Principal Name,Last Activity Date,Is Deleted,Deleted Date,Used Web,Used Windows Phone,Used iOS,Used Mac,Used Android Phone,Used Windows,Report Period
 ```
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79 
 2015-10-25 14:57:30 UTC -->

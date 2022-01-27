@@ -2,15 +2,15 @@
 title: tipo de recurso authenticationMethodsPolicy
 description: Define os métodos de autenticação e os usuários que têm permissão para usá-los para entrar e executar a autenticação multifato (MFA).
 author: mmcla
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: identity-and-sign-in
 doc_type: resourcePageType
-ms.openlocfilehash: fdf86929b4098d9fb62f1426883b55d95c669f32
-ms.sourcegitcommit: 4fa6fcc058c7f8d8cad58c0b82db23d6c7da37d2
+ms.openlocfilehash: 470e9cb94fc6145fde98aaa6e35a3b99aef66f8e
+ms.sourcegitcommit: de9df4bf6313b49afba74b6e9ef819907669c662
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/27/2021
-ms.locfileid: "52682864"
+ms.lasthandoff: 01/27/2022
+ms.locfileid: "62239362"
 ---
 # <a name="authenticationmethodspolicy-resource-type"></a>tipo de recurso authenticationMethodsPolicy
 
@@ -30,8 +30,8 @@ Define os métodos de autenticação e os usuários que têm permissão para us�
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
 |description|String|Uma descrição da política.|
-|displayName|String|O nome da política.|
-|id|String|O identificador da política. Herdado da [entidade](../resources/entity.md).|
+|displayName|Cadeia de caracteres|O nome da política.|
+|id|Cadeia de caracteres|O identificador da política. Herdado da [entidade](../resources/entity.md).|
 |lastModifiedDateTime|DateTimeOffset|A data e a hora da última atualização para a política.|
 |policyVersion|String|A versão da política em uso.|
 |registrationEnforcement|[registrationEnforcement](../resources/registrationenforcement.md)|Impor o registro no momento da inscrição. Essa propriedade pode ser usada para lembrar os usuários de configurar métodos de autenticação direcionados.|
@@ -39,7 +39,7 @@ Define os métodos de autenticação e os usuários que têm permissão para us�
 ## <a name="relationships"></a>Relações
 |Relação|Tipo|Descrição|
 |:---|:---|:---|
-|authenticationMethodConfigurations|[coleção authenticationMethodConfiguration](../resources/authenticationmethodconfiguration.md)|Representa as configurações de cada método de autenticação.|
+|authenticationMethodConfigurations|[coleção authenticationMethodConfiguration](../resources/authenticationmethodconfiguration.md)|Representa as configurações de cada método de autenticação. Expandida automaticamente no `GET /policies/authenticationMethodsPolicy`.|
 
 ## <a name="json-representation"></a>Representação JSON
 Veja a seguir uma representação JSON do recurso.

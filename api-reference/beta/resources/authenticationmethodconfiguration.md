@@ -2,28 +2,35 @@
 title: authenticationMethodConfigurations
 description: objeto authenticationMethodConfigurations.
 author: mmcla
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: 691184b1dfbf0323204debd70488d232d77b4f7a
-ms.sourcegitcommit: 9d98d9e9cc1e193850ab9b82aaaf906d70e1378b
+ms.openlocfilehash: 8ea9d69b724be32eff0f9d6bafc4ef1bff7c33a7
+ms.sourcegitcommit: de9df4bf6313b49afba74b6e9ef819907669c662
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/12/2021
-ms.locfileid: "50761132"
+ms.lasthandoff: 01/27/2022
+ms.locfileid: "62239117"
 ---
 # <a name="authenticationmethodconfiguration-resource-type"></a>tipo de recurso authenticationMethodConfiguration
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Representa uma política de método de autenticação.
+Esse é um tipo abstrato que representa as configurações de cada método de autenticação. Ele tem a configuração de se um método de autenticação específico está habilitado ou desabilitado para o locatário e quais usuários e grupos podem registrar e usar esse método.
+
+Os seguintes métodos de autenticação são derivados do tipo de recurso **authenticationMethodConfiguration:**
++ [emailAuthenticationMethodConfiguration](emailauthenticationmethodconfiguration.md)
++ [fido2AuthenticationMethodConfiguration](fido2authenticationmethodconfiguration.md)
++ [microsoftAuthenticatorAuthenticationMethodConfiguration](microsoftauthenticatorauthenticationmethodconfiguration.md)
++ [smsAuthenticationMethodConfiguration](smsauthenticationmethodconfiguration.md)
++ [temporaryAccessPassAuthenticationMethodConfiguration](smsauthenticationmethodconfiguration.md)
 
 ## <a name="properties"></a>Propriedades
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
 |id|Cadeia de caracteres|O nome da política.|
-|state|authenticationMethodState|O estado da política. Os valores possíveis são: `enabled`, `disabled`.|
+|estado|authenticationMethodState|O estado da política. Os valores possíveis são: `enabled`, `disabled`.|
 
 ## <a name="relationships"></a>Relações
 Nenhum

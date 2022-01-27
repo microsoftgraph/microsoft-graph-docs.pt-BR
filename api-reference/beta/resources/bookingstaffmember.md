@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: arvindmicrosoft
 ms.prod: bookings
 doc_type: resourcePageType
-ms.openlocfilehash: 1763191ae18be8ac5c77a40727ea38f388326648
-ms.sourcegitcommit: c47e3d1f3c5f7e2635b2ad29dfef8fe7c8080bc8
+ms.openlocfilehash: b65e8b3a8bf9234b55cc6fab4573aaf389a5656b
+ms.sourcegitcommit: de9df4bf6313b49afba74b6e9ef819907669c662
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/15/2021
-ms.locfileid: "61524884"
+ms.lasthandoff: 01/27/2022
+ms.locfileid: "62238998"
 ---
 # <a name="bookingstaffmember-resource-type"></a>Tipo de recurso bookingStaffMember
 
@@ -28,7 +28,9 @@ Ao reservar compromissos, a API do Bookings considera as seguintes configuraçõ
 2. Se **useBusinessHours** for false, as horas de trabalho específicas do membro da equipe (**propriedade workingHours** da **entidade bookingStaffmember)** representam a disponibilidade geral desse membro.
 3. Se **availabilityIsAffectedByPersonalCalendar** for true, a API do Bookings primeiro olharia para os horários geralmente disponíveis do membro da equipe (conforme determinado pelo #1 ou #2) e verificaria a disponibilidade durante essas horas no calendário pessoal do membro da equipe, antes de fazer uma reserva.
 
-## <a name="methods"></a>Methods
+O Microsoft Bookings oferece suporte a no máximo 100 membros da equipe em um calendário de reserva.
+
+## <a name="methods"></a>Métodos
 
 | Método           | Tipo de retorno    |Descrição|
 |:---------------|:--------|:----------|
@@ -36,14 +38,14 @@ Ao reservar compromissos, a API do Bookings considera as seguintes configuraçõ
 |[Criar bookingStaff](../api/bookingbusiness-post-staffmembers.md) | [coleção bookingStaffMember](bookingstaffmember.md) | Crie um novo **bookingStaffMember** no [bookingbusiness especificado.](../resources/bookingbusiness.md) |
 |[Obter bookingStaffMember](../api/bookingstaffmember-get.md) | [bookingStaffMember](bookingstaffmember.md) |Obter as propriedades e relações de **um bookingStaffMember** no [bookingbusiness especificado.](../resources/bookingbusiness.md)|
 |[Atualizar](../api/bookingstaffmember-update.md) | [bookingStaffMember](bookingstaffmember.md)    |Atualize as propriedades de **um bookingStaffMember** no [bookingbusiness especificado.](../resources/bookingbusiness.md)|
-|[Delete](../api/bookingstaffmember-delete.md) | Nenhuma |Exclua um membro da equipe no [bookingbusiness especificado.](../resources/bookingbusiness.md) |
+|[Delete](../api/bookingstaffmember-delete.md) | Nenhum |Exclua um membro da equipe no [bookingbusiness especificado.](../resources/bookingbusiness.md) |
 
 ## <a name="properties"></a>Propriedades
 | Propriedade     | Tipo   |Descrição|
 |:---------------|:--------|:----------|
 |availabilityIsAffectedByPersonalCalendar|Booliano|True significa que, se o membro da equipe for um usuário Microsoft 365, a API do Bookings verificaria a disponibilidade do membro da equipe em seu calendário pessoal no Microsoft 365, antes de fazer uma reserva. |
 |colorIndex|Int32|Identifica uma cor para representar o membro da equipe. A cor corresponde à paleta de cores na página **Detalhes da** Equipe no aplicativo Bookings.|
-|displayName|Cadeia de caracteres|O nome do membro da equipe, conforme exibido para os clientes. Obrigatório.|
+|displayName|String|O nome do membro da equipe, conforme exibido para os clientes. Obrigatório.|
 |emailAddress|String|O endereço de email do membro da equipe. Isso pode estar no mesmo Microsoft 365 locatário que a empresa ou em um domínio de email diferente. Esse endereço de email pode ser usado **se a propriedade sendConfirmationsToOwner** estiver definida como true na política de agendamento da empresa. Obrigatório.|
 |id|Cadeia de caracteres| A ID do membro da equipe, em um formato GUID. Somente leitura.|
 |role|bookingStaffRole| A função do membro da equipe na empresa. Os valores possíveis são: `guest` `administrator` , , e `viewer` `externalGuest` `unknownFutureValue` . Obrigatório.|

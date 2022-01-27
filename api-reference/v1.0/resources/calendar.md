@@ -5,12 +5,12 @@ ms.localizationpriority: high
 author: harini84
 ms.prod: outlook
 doc_type: resourcePageType
-ms.openlocfilehash: 17eb6e419a4f7a0944ee1bcfbfe5d1b2988bf671
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: d7b8a1886f37979860a5bef93339944f4f8597c7
+ms.sourcegitcommit: de9df4bf6313b49afba74b6e9ef819907669c662
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59129982"
+ms.lasthandoff: 01/27/2022
+ms.locfileid: "62239341"
 ---
 # <a name="calendar-resource-type"></a>tipo de recurso calendar
 
@@ -72,7 +72,7 @@ Representa um contêiner para recursos de [evento](event.md). Pode ser um calend
 
 ## <a name="json-representation"></a>Representação JSON
 
-Veja a seguir uma representação JSON do recurso
+Veja a seguir uma representação JSON do recurso.
 
 <!--{
   "blockType": "resource",
@@ -127,7 +127,6 @@ Veja a seguir uma representação JSON do recurso
   "name": "string",
   "owner": {"@odata.type": "microsoft.graph.emailAddress"}
 }
-
 ```
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->

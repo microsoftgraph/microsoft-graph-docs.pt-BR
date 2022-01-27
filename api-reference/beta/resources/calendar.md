@@ -5,12 +5,12 @@ ms.localizationpriority: high
 author: harini84
 ms.prod: outlook
 doc_type: resourcePageType
-ms.openlocfilehash: 9c2067a358ea1641b48b81fa4b792654a31072c5
-ms.sourcegitcommit: c333953a9188b4cd4a9ab94cbe68871e8f3563e5
+ms.openlocfilehash: 70b9bda54de9e1d2f5d0abc4361740198b0a82e2
+ms.sourcegitcommit: de9df4bf6313b49afba74b6e9ef819907669c662
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/30/2021
-ms.locfileid: "58696222"
+ms.lasthandoff: 01/27/2022
+ms.locfileid: "62239012"
 ---
 # <a name="calendar-resource-type"></a>tipo de recurso calendar
 
@@ -60,7 +60,7 @@ Representa um contêiner para recursos de [evento](event.md). Pode ser um calend
 |id|String|O identificador exclusivo do calendário. Somente leitura.|
 |isDefaultCalendar|Booliano|`true` se este for o calendário padrão onde novos eventos são criados por padrão, `false` caso contrário.|
 |isRemovable|Booliano| Indica se o calendário deste usuário pode ser excluído da caixa de correio do usuário.|
-|isShared |Booliano |`true` se o usuário compartilhou a agenda com outros usuários, `false` caso contrário. Como apenas o usuário que criou o calendário pode compartilhá-lo, **isShared** e **isSharedWithMe** não podem ser `true` do mesmo usuário. Essa propriedade é definida quando o compartilhamento é iniciado em um cliente do Outlook e pode ser redefinido quando o compartilhamento é cancelado pelo cliente ou pelo recurso [calendarPermission](calendarpermission.md) correspondente. Somente leitura.|
+|isShared |Booliano |`true` se o usuário compartilhou a agenda com outros usuários, `false` caso contrário. Como apenas o usuário que criou o calendário pode compartilhá-lo, **isShared** e **isSharedWithMe** não podem ser `true` do mesmo usuário. Essa propriedade é definida quando o compartilhamento é iniciado em um cliente do Outlook e pode ser redefinido quando o compartilhamento é cancelado pelo cliente ou pelo recurso [calendarPermission](calendarpermission.md) correspondente. Apenas leitura.|
 |isSharedWithMe |Booliano |`true` se o usuário foi compartilhado neste calendário, `false` caso contrário. Esta propriedade é sempre `false` para o proprietário de um calendário. Essa propriedade é definida quando o compartilhamento é iniciado em um cliente do Outlook e pode ser redefinido quando o compartilhamento é cancelado pelo cliente ou pelo recurso [calendarPermission](calendarpermission.md) correspondente. Apenas leitura. |
 |isTallyingResponses|Booliano|Indica se o calendário deste usuário dá suporte ao acompanhamento de respostas de reunião. Somente os convites para reuniões enviados do calendário principal do usuário oferecem suporte para respostas de reunião.|
 |nome|String|O nome do calendário.|
@@ -77,7 +77,7 @@ Representa um contêiner para recursos de [evento](event.md). Pode ser um calend
 
 ## <a name="json-representation"></a>Representação JSON
 
-Veja a seguir uma representação JSON do recurso
+Veja a seguir uma representação JSON do recurso.
 
 <!-- {
   "blockType": "resource",
@@ -110,7 +110,6 @@ Veja a seguir uma representação JSON do recurso
   "name": "string",
   "owner": {"@odata.type": "microsoft.graph.emailAddress"}
 }
-
 ```
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->

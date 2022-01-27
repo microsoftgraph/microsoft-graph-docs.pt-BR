@@ -5,23 +5,28 @@ author: mmcla
 ms.localizationpriority: medium
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: 27f0c8e809b88ad77a12a0f5e28acb9eeed953c9
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: b7dee4297fb00dd54e9f9b8edf19da00c866a0f4
+ms.sourcegitcommit: de9df4bf6313b49afba74b6e9ef819907669c662
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59126986"
+ms.lasthandoff: 01/27/2022
+ms.locfileid: "62238970"
 ---
 # <a name="authenticationmethodconfiguration-resource-type"></a>tipo de recurso authenticationMethodConfiguration
 Namespace: microsoft.graph
 
-Representa uma política de método de autenticação.
+Esse é um tipo abstrato que representa as configurações de cada método de autenticação. Ele tem a configuração de se um método de autenticação específico está habilitado ou desabilitado para o locatário e quais usuários e grupos podem registrar e usar esse método.
+
+Os seguintes métodos de autenticação são derivados do tipo de recurso **authenticationMethodConfiguration:**
++ [emailAuthenticationMethodConfiguration](emailauthenticationmethodconfiguration.md)
++ [fido2AuthenticationMethodConfiguration](fido2authenticationmethodconfiguration.md)
++ [microsoftAuthenticatorAuthenticationMethodConfiguration](microsoftauthenticatorauthenticationmethodconfiguration.md)
 
 ## <a name="properties"></a>Propriedades
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
 |id|Cadeia de caracteres|O nome da política.|
-|state|authenticationMethodState|O estado da política. Os valores possíveis são: `enabled`, `disabled`.|
+|estado|authenticationMethodState|O estado da política. Os valores possíveis são: `enabled`, `disabled`.|
 
 ## <a name="relationships"></a>Relações
 Nenhum

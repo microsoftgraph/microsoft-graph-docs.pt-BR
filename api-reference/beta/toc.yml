@@ -1561,9 +1561,9 @@ items:
                     href: resources/callrecords-callrecord.md
                   - name: Obter
                     href: api/callrecords-callrecord-get.md
-              - name: Sessão
+              - name: Session
                 items:
-                  - name: Sessão
+                  - name: Session
                     href: resources/callrecords-session.md
                   - name: List
                     href: api/callrecords-session-list.md
@@ -12221,21 +12221,21 @@ items:
                         href: api/identityuserflowattribute-delete.md
                   - name: Atribuição de atributo de fluxo de usuário
                     items:
-                      - name: Atribuição de atributo de fluxo de usuário
+                      - name: User
                         href: resources/identityuserflowattributeassignment.md
-                      - name: Obter atribuição de atributo de fluxo de usuário
+                      - name: Obter
                         href: api/identityuserflowattributeassignment-get.md
-                      - name: Atualizar a atribuição de atributo de fluxo de usuário
+                      - name: Atualizar
                         href: api/identityuserflowattributeassignment-update.md
-                      - name: Excluir atribuição de atributo de fluxo de usuário
+                      - name: Excluir
                         href: api/identityuserflowattributeassignment-delete.md
                   - name: Configuração do idioma de fluxo do usuário
                     items:
                       - name: Configuração do idioma de fluxo do usuário
                         href: resources/userflowlanguageconfiguration.md
-                      - name: Obter userFlowLanguageConfiguration
+                      - name: Obter configuração de idioma de fluxo de usuário
                         href: api/userflowlanguageconfiguration-get.md
-                      - name: Excluir userFlowLanguageConfiguration
+                      - name: Excluir configuração de idioma de fluxo de usuário
                         href: api/userflowlanguageconfiguration-delete.md
                       - name: Listar defaultPages
                         href: api/userflowlanguageconfiguration-list-defaultpages.md
@@ -12243,11 +12243,11 @@ items:
                         href: api/userflowlanguageconfiguration-list-overridespages.md
                       - name: Página de idioma de fluxo de usuário
                         href: resources/userflowlanguagepage.md
-                      - name: Obter userFlowLanguagePage
+                      - name: Obter página de idioma de fluxo de usuário
                         href: api/userflowlanguagepage-get.md
-                      - name: Atualizar userFlowLanguagePage
+                      - name: Atualizar a página de idioma de fluxo do usuário
                         href: api/userflowlanguagepage-put.md
-                      - name: Excluir userFlowLanguagePage
+                      - name: Excluir página de idioma de fluxo de usuário
                         href: api/userflowlanguagepage-delete.md
                   - name: Conectores de API
                     items:

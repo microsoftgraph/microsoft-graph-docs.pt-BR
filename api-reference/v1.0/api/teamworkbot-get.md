@@ -5,12 +5,12 @@ author: AkJo
 ms.localizationpriority: medium
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 38995c4717d83a4ac74c75b1189fa65dfb0e8908
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: 0c59e08d67eae74cc17a28a98761799602ebda1d
+ms.sourcegitcommit: de9df4bf6313b49afba74b6e9ef819907669c662
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62134227"
+ms.lasthandoff: 01/27/2022
+ms.locfileid: "62239180"
 ---
 # <a name="get-teamworkbot"></a>Obter o teamworkBot
 
@@ -25,7 +25,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |:---|:---|
 |Delegado (conta corporativa ou de estudante)| AppCatalog.Read.All, AppCatalog.ReadWrite.All, AppCatalog.Submit |
 |Delegado (conta pessoal da Microsoft)| Sem suporte. |
-|Aplicativo| Sem suporte.|
+|Aplicativo| AppCatalog.Read.All, AppCatalog.ReadWrite.All |
 
 ## <a name="http-request"></a>Solicitação HTTP
 

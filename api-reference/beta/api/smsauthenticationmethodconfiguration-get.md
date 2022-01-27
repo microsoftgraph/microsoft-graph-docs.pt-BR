@@ -5,12 +5,12 @@ author: mmcla
 ms.localizationpriority: medium
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: 4257286e8e7162e9f6131d561e9a298d0fa42e85
-ms.sourcegitcommit: e497ed9bb56400bdd2bb53d52ddf057d9966220b
+ms.openlocfilehash: 0d584c5bd95425e705b55409a0651426c479f92c
+ms.sourcegitcommit: de9df4bf6313b49afba74b6e9ef819907669c662
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/30/2021
-ms.locfileid: "61225151"
+ms.lasthandoff: 01/27/2022
+ms.locfileid: "62239243"
 ---
 # <a name="get-smsauthenticationmethodconfiguration"></a>Obter smsAuthenticationMethodConfiguration
 Namespace: microsoft.graph
@@ -30,7 +30,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 Para cenários delegados, o administrador precisa de uma das seguintes funções [do Azure AD:](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles)
 
-* Leitor Global
+* Leitor global
 * Administrador de Política de Autenticação
 * Administrador Global
 
@@ -101,11 +101,19 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-  "value": {
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#authenticationMethodConfigurations/$entity",
     "@odata.type": "#microsoft.graph.smsAuthenticationMethodConfiguration",
-    "id": "713980c7-80c7-7139-c780-3971c7803971",
-    "state": "String"
-  }
+    "id": "Sms",
+    "state": "enabled",
+    "includeTargets@odata.context": "https://graph.microsoft.com/beta/$metadata#policies/authenticationMethodsPolicy/authenticationMethodConfigurations('Sms')/microsoft.graph.smsAuthenticationMethodConfiguration/includeTargets",
+    "includeTargets": [
+        {
+            "targetType": "group",
+            "id": "all_users",
+            "isRegistrationRequired": false,
+            "isUsableForSignIn": true
+        }
+    ]
 }
 ```
 
