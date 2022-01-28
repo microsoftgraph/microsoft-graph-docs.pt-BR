@@ -5,12 +5,12 @@ doc_type: enumPageType
 ms.localizationpriority: medium
 ms.prod: non-product-specific
 author: MSGraphDocsvTeam
-ms.openlocfilehash: e300e3ec5d981376b1bc08c3aca3097ecda1ff9a
-ms.sourcegitcommit: 871db8b3f68489d24e2aeafe694725579ee44c47
+ms.openlocfilehash: f05bbd5eadcbff53cc91eba9a2847aca6c91b765
+ms.sourcegitcommit: e4796212a2e8bbec61b6da8336f776c0305c49df
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/26/2022
-ms.locfileid: "62225543"
+ms.lasthandoff: 01/28/2022
+ms.locfileid: "62261935"
 ---
 # <a name="enum-values"></a>Valores denum
 
@@ -227,11 +227,11 @@ Namespace: microsoft.graph
 
 |Member|
 |:---|
-|Cadeia de Caracteres|
+|Cadeia de caracteres|
 |Inteiro|
 |Referência|
 |Binária|
-|Booleano|
+|Booliano|
 |DateTime|
 
 ### <a name="mutability-values"></a>valores de mutabilidade
@@ -1021,7 +1021,7 @@ Namespace: microsoft.graph
 |site|
 |list|
 |listItem|
-|Unidade|
+|drive|
 |unknownFutureValue|
 
 ### <a name="searchalterationtype-values"></a>searchAlterationType values
@@ -2777,6 +2777,70 @@ Valores possíveis para tipos de conta de usuário (associação ao grupo), por 
 |staff|
 |customer|
 |unknownFutureValue|
+
+### <a name="teamworkconnectionstatus-values"></a>valores de teamworkConnectionStatus
+
+| Member |
+|:--------|
+|desconhecido|
+|connected|
+|desconectado|
+|unknownFutureValue|
+
+### <a name="teamworkdeviceactivitystate-values"></a>valores de teamworkDeviceActivityState
+
+| Membro | Valor| Descrição |
+|:---------------|:--------|:----------|
+|desconhecido|0|Estado desconhecido.|
+|ocupado|1|O dispositivo está ocupado.|
+|idle|2|O dispositivo está ocioso.|
+|unavailable|3|O dispositivo não está disponível.|
+|unknownFutureValue|4|Valor de sentinela de enumeração evolvável. Não usar.|
+
+### <a name="teamworkdeviceoperationtype-values"></a>valores de teamworkDeviceOperationType
+
+| Membro | Valor| Descrição |
+|:---------------|:--------|:----------|
+|deviceRestart|0|Reinicie um dispositivo.|
+|configUpdate|1|Atualize a configuração do dispositivo.|
+|deviceDiagnostics|2|Obter os logs do dispositivo.|
+|softwareUpdate|3|Atualize um software no dispositivo.|
+|deviceManagementAgentConfigUpdate|4|Atualize a configuração do agente de dispositivo.|
+|remoteLogin|5|Logon remoto do dispositivo.|
+|remoteLogout|6 |Logout remoto do dispositivo.|
+|unknownFutureValue|7 |Valor de sentinela de enumeração evolvável. Não usar.|
+
+### <a name="teamworksoftwarefreshness-values"></a>valores de teamworkSoftwareFreshness
+
+| Membro | Valor| Descrição |
+|:---------------|:--------|:----------|
+|desconhecido|0|Valor desconhecido.|
+|latest|1|Indica se um componente de dispositivo executa a versão mais recente do software.|
+|updateAvailable|2|Indica que uma atualização de software está disponível para um componente de dispositivo.|
+|unknownFutureValue|3|Valor de sentinela de enumeração evolvável. Não usar.|
+
+### <a name="teamworksoftwaretype-values"></a>valores de teamworkSoftwareType
+
+| Member |
+|:---------------|
+|adminAgent|
+|operatingSystem|
+|teamsClient|
+|firmware|
+|partnerAgent|
+|companyPortal|
+|unknownFutureValue|
+
+### <a name="teamworksupportedclient-values"></a>valores de teamworkSupportedClient
+
+| Membro | Valor| Descrição |
+|:---------------|:--------|:----------|
+|desconhecido|0|Valor desconhecido.|
+|skypeDefaultAndTeams|1|Dá suporte a `Skype` ambos e `Teams` . O padrão é `Skype`.|
+|teamsDefaultAndSkype|2|Dá suporte a `Skype` ambos e `Teams` . O padrão é `Teams`.|
+|skypeOnly|3|Dá suporte somente `Skype` a .|
+|teamsOnly|4|Dá suporte somente `Teams` a .|
+|unknownFutureValue|5|Valor de sentinela de enumeração evolvável. Não usar.|
 
 ### <a name="longrunningoperationstatus-values"></a>valores longRunningOperationStatus
 

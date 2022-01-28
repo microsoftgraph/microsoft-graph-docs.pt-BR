@@ -5,12 +5,12 @@ author: swapnil1993
 ms.localizationpriority: medium
 ms.prod: sites-and-lists
 doc_type: apiPageType
-ms.openlocfilehash: 675722b02361a0231a4ba66109fd4e20029f1658
-ms.sourcegitcommit: 871db8b3f68489d24e2aeafe694725579ee44c47
+ms.openlocfilehash: 0457265d9c6db8cf8207a3a440bf89b3d10bc2d2
+ms.sourcegitcommit: e4796212a2e8bbec61b6da8336f776c0305c49df
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/26/2022
-ms.locfileid: "62225229"
+ms.lasthandoff: 01/28/2022
+ms.locfileid: "62261991"
 ---
 # <a name="contenttype-getcompatiblehubcontenttypes"></a>contentType: getCompatibleHubContentTypes
 Namespace: microsoft.graph
@@ -19,6 +19,8 @@ Namespace: microsoft.graph
 
 Obter tipos de conteúdo compatíveis no hub de tipo de conteúdo que podem ser adicionados a um site de [destino](../resources/site.md) ou a uma [lista](../resources/list.md).
 
+Esse método faz parte das alterações de publicação de tipo de conteúdo para otimizar a sincronização de tipos de conteúdo publicados para sites e listas, alternando efetivamente de uma abordagem "push everywhere" para "puxar conforme necessário". O método permite que os usuários puxem tipos de conteúdo diretamente do hub de tipo de conteúdo para um site ou lista. Para obter mais informações, [consulte addCopyFromContentTypeHub](contenttype-addcopyfromcontenttypehub.md) e o blog post [Syntex Product Updates – August 2021](https://techcommunity.microsoft.com/t5/sharepoint-syntex-blog/syntex-product-updates-august-2021/ba-p/2606438).
+
 ## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
@@ -26,7 +28,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |:---|:---|
 |Delegado (conta corporativa ou de estudante) | Sites.Manage.All, Sites.FullControl.All |
 |Delegado (conta pessoal da Microsoft) | Sem suporte.    |
-|Application | Sites.Manage.All, Sites.FullControl.All |
+|Aplicativo | Sites.Manage.All, Sites.FullControl.All |
 
 ## <a name="http-request"></a>Solicitação HTTP
 
@@ -104,11 +106,12 @@ Content-Type: application/json
   "value": [
     {
       "@odata.type": "#microsoft.graph.contentType",
-      "id": "String (identifier)",
-      "description": "String",
-      "group": "String",
-      "isBuiltIn": "Boolean",
-      "name": "String"
+      "id": "0x0101",
+      "description": "Document content type",
+      "group": "Document Content Types",
+      "hidden": false,
+      "isBuiltIn": true,
+      "name": "Document"
     }
   ]
 }

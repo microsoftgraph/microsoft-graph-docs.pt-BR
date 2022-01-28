@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: hpsin
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: 8c7f41b3b92275d5ddb3cb66600f30aec2814a16
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: af92deb72f515008bce7c229fe644178c2f87388
+ms.sourcegitcommit: e4796212a2e8bbec61b6da8336f776c0305c49df
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62127598"
+ms.lasthandoff: 01/28/2022
+ms.locfileid: "62261942"
 ---
 # <a name="update-homerealmdiscoverypolicy"></a>Atualizar homerealmdiscoverypolicy
 
@@ -51,8 +51,8 @@ No corpo da solicitação, forneça os valores para os campos relevantes que dev
 
 | Propriedade     | Tipo        | Descrição |
 |:-------------|:------------|:------------|
-|definition|Coleção de cadeias de caracteres| Uma coleção de cadeias de caracteres que contém uma cadeia de caracteres JSON que define as regras e as configurações dessa política.  Obrigatório.|
-|description|Cadeia de caracteres| Descrição dessa política.|
+|definition|String collection| Uma coleção de cadeias de caracteres que contém uma cadeia de caracteres JSON que define as regras e as configurações dessa política.  Obrigatório.|
+|description|String| Descrição dessa política.|
 |displayName|Cadeia de caracteres| Nome de exibição para esta política. Obrigatório.|
 |isOrganizationDefault|Booliano|Se definido como true, ativa essa política. Pode haver muitas políticas para o mesmo tipo de política, mas apenas uma pode ser ativada como o padrão da organização. Opcional, o valor padrão é false.|
 
@@ -77,11 +77,13 @@ PATCH https://graph.microsoft.com/beta/policies/homeRealmDiscoveryPolicies/{id}
 Content-type: application/json
 
 {
-  "definition": [
-    "definition-value"
+    "definition": [
+    "{\"HomeRealmDiscoveryPolicy\":
+     {\"AccelerateToFederatedDomain\":true,
+      \"PreferredDomain\":\"federated.example.edu\",
+      \"AlternateIdLogin\":{\"Enabled\":true}}}"
   ],
-  "displayName": "displayName-value",
-  "isOrganizationDefault": true
+    "displayName": "Contoso default HRD Policy"
 }
 ```
 # <a name="javascript"></a>[JavaScript](#tab/javascript)
@@ -115,26 +117,13 @@ Content-type: application/json
 
 Este é um exemplo de resposta.
 
-> **Observação:** o objeto de resposta mostrado aqui pode ser encurtado para legibilidade.
-
 <!-- {
   "blockType": "response",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.homeRealmDiscoveryPolicy"
+  "truncated": true
 } -->
 
 ```http
 HTTP/1.1 204 No Content
-Content-type: application/json
-
-{
-  "definition": [
-    "definition-value"
-  ],
-  "displayName": "displayName-value",
-  "isOrganizationDefault": true,
-  "id": "id-value"
-}
 ```
 
 <!-- uuid: 16cd6b66-4b1a-43a1-adaf-3a886856ed98

@@ -4,12 +4,12 @@ description: O Microsoft Graph expõe as permissões granulares que controlam o 
 author: jackson-woods
 ms.localizationpriority: high
 ms.custom: graphiamtop20, scenarios:getting-started
-ms.openlocfilehash: c03900468268c903db79e122dc4f02fc1d5b7222
-ms.sourcegitcommit: 71186ad44d8d0df15e10b0f89df68d2ef0cf9d14
+ms.openlocfilehash: 56a6d97dbaba0a66e2d30d0a9afea481f78063e5
+ms.sourcegitcommit: e4796212a2e8bbec61b6da8336f776c0305c49df
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/12/2022
-ms.locfileid: "61860912"
+ms.lasthandoff: 01/28/2022
+ms.locfileid: "62261760"
 ---
 # <a name="microsoft-graph-permissions-reference"></a>Referência de permissões do Microsoft Graph
 
@@ -1340,7 +1340,7 @@ _Notes.ReadWrite_ e _Notes.ReadWrite.All_ também permitem que o aplicativo modi
 Para contas corporativas ou de estudante, _Notes.Read.All_ e _Notes.ReadWrite.All_ permitem que o aplicativo acesse o conteúdo do OneNote de outros usuários ao qual o usuário conectado tenha permissão dentro da organização.
 
 ### <a name="example-usage"></a>Exemplo de uso
-#### <a name="delegated"></a>Delegado
+#### <a name="delegated"></a>Delegated
 
 * _Notes.Create_: Criar novos blocos de anotações para o usuário conectado (`POST /me/onenote/notebooks`).
 * _Notes.Read_: Criar blocos de anotações para o usuário conectado (`GET /me/onenote/notebooks`).
@@ -2091,6 +2091,22 @@ As permissões de taxonomia só são válidas para contas do trabalho ou da esco
 | _TeamsAppInstallation.ReadWriteForTeam.All_ | Gerenciar aplicativos de Teams para todas as equipes| Permite que o aplicativo leia, instale, atualize e desinstale aplicativos do Teams em qualquer equipe, sem um usuário conectado. Não permite ler configurações específicas do aplicativo.| Sim |
 | _TeamsAppInstallation.ReadWriteSelfForTeam.All_ | Permitir que o aplicativo do Teams se gerencie para todas as equipes| Permite que o aplicativo do Teams se leia, se instale, se atualize e se desinstale em qualquer equipe, sem um usuário conectado.| Sim |
 
+## <a name="teams-device-management-permissions"></a>Permissões de Gerenciamento de Dispositivo do Teams
+
+#### <a name="delegated-permissions"></a>Permissões delegadas
+
+|   Permissão    |  Exibir Cadeia de Caracteres   |  Descrição | Consentimento Obrigatório do Administrador | Suporte da conta da Microsoft |
+|:----------------|:------------------|:-------------|:-----------------------|:--------------|
+| _TeamworkDevice.Read.All_ | Ler dispositivos do Teams. | Permite que o aplicativo leia os dados de gerenciamento de dispositivos do Teams em nome do usuário conectado.   | Sim | Não |
+| _TeamworkDevice.ReadWrite.All_ | Ler e gravar dispositivos do Teams. | Permite que o aplicativo leia e grave os dados de gerenciamento de dispositivos do Teams em nome do usuário conectado.  | Sim | Não |
+
+#### <a name="application-permissions"></a>Permissões de aplicativos
+
+|   Permissão    |  Exibir Cadeia de Caracteres   |  Descrição | Consentimento Obrigatório do Administrador | Suporte da conta da Microsoft |
+|:----------------|:------------------|:-------------|:-----------------------|:--------------|
+| _TeamworkDevice.Read.All_ | Ler dispositivos do Teams. | Permite que o aplicativo leia os dados de gerenciamento de dispositivos do Teams, sem um usuário conectado. | Sim | Não |
+| _TeamworkDevice.ReadWrite.All_ | Ler e gravar dispositivos do Teams. | Permite que o aplicativo leia e grave os dados de gerenciamento de dispositivos do Teams, sem um usuário conectado. | Sim | Não |
+
 ## <a name="team-member-permissions"></a>Permissões de membro da equipe 
 
 #### <a name="delegated-permissions"></a>Permissões delegadas
@@ -2469,7 +2485,7 @@ Para que um aplicativo leia ou grave todas as configurações de implantação c
 
 ### <a name="example-usage"></a>Exemplo de uso
 
-#### <a name="delegated"></a>Delegado
+#### <a name="delegated"></a>Delegated
 
 * _WindowsUpdates.ReadWrite.All_: crie uma implantação (`POST /beta/admin/windows/updates/deployments`).
 

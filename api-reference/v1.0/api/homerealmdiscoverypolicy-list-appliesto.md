@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: hpsin
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: 909a1a27e1dc02eac0e5646ad2033b423210abf4
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 8e98b4f8ffd346f858b6cc3d77d7980f7651d5a7
+ms.sourcegitcommit: e4796212a2e8bbec61b6da8336f776c0305c49df
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59045879"
+ms.lasthandoff: 01/28/2022
+ms.locfileid: "62262117"
 ---
 # <a name="list-appliesto"></a>Lista appliesTo
 
@@ -24,8 +24,8 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 | Tipo de permissão                        | Permissões (da com menos para a com mais privilégios) |
 |:---------------------------------------|:--------------------------------------------|
-| Delegada (conta corporativa ou de estudante)     | Policy.Read.All e Application.Read.All, Policy.ReadWrite.ApplicationConfiguration e Application.Read.All, Directory.Read.All |
-| Delegada (conta pessoal da Microsoft) | Sem suporte. |
+| Delegado (conta corporativa ou de estudante)     | Policy.Read.All e Application.Read.All, Policy.ReadWrite.ApplicationConfiguration e Application.Read.All, Directory.Read.All |
+| Delegado (conta pessoal da Microsoft) | Sem suporte. |
 | Aplicativo                            | Policy.Read.All e Application.Read.All, Policy.ReadWrite.ApplicationConfiguration e Application.Read.All, Directory.Read.All |
 
 ## <a name="http-request"></a>Solicitação HTTP
@@ -52,7 +52,7 @@ Não forneça um corpo de solicitação para esse método.
 
 ## <a name="response"></a>Resposta
 
-Se bem-sucedido, este método retorna um código de resposta `200 OK` e uma coleção de objetos [directoryObject](../resources/directoryobject.md) no corpo da resposta.
+Se bem-sucedido, este método retorna um código de resposta `200 OK` e uma coleção de objetos [directoryObject](../resources/directoryobject.md) no corpo da resposta. Ele retornará `404 Not Found` um código de resposta se a política não tiver sido aplicada a nenhum objeto de diretório.
 
 ## <a name="examples"></a>Exemplos
 
@@ -68,7 +68,7 @@ Este é um exemplo de solicitação.
 }-->
 
 ```msgraph-interactive
-GET https://graph.microsoft.com/v1.0/policies/homeRealmDiscoveryPolicies/{id}/appliesTo
+GET https://graph.microsoft.com/v1.0/policies/homeRealmDiscoveryPolicies/6c6f154f-cb39-4ff9-bf5b-62d5ad585cde/appliesTo
 ```
 # <a name="c"></a>[C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-appliesto-2-csharp-snippets.md)]
@@ -107,12 +107,58 @@ HTTP/1.1 200 OK
 Content-type: application/json
 
 {
-  "value": [
-    {
-      "id": "id-value",
-      "deletedDateTime": "datetime-value"
-    }
-  ]
+    "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#directoryObjects",
+    "value": [
+        {
+            "@odata.type": "#microsoft.graph.servicePrincipal",
+            "id": "19c308f2-e088-464d-8ccb-7137b7bab660",
+            "accountEnabled": true,
+            "alternativeNames": [],
+            "appDisplayName": "LinkedIn",
+            "appId": "c8e5820f-8e41-4b7c-8937-42777eb592a4",
+            "appOwnerOrganizationId": "84841066-274d-4ec0-a5c1-276be684bdd3",
+            "displayName": "LinkedIn",
+            "homepage": "https://account.activedirectory.windowsazure.com:444/applications/default.aspx?metadata=linkedin|ISV9.3|primary|z",
+            "servicePrincipalNames": [
+                "c8e5820f-8e41-4b7c-8937-42777eb592a4",
+                "http://LinkedIn/1a2d95c1-3cc7-46ad-82dd-2c768ae1b4ff"
+            ],
+            "servicePrincipalType": "Application",
+            "signInAudience": "AzureADMyOrg",
+            "tags": [
+                "4d57f64e-9941-4df2-bb70-8d9a2a38ab91",
+                "WindowsAzureActiveDirectoryGalleryApplicationPrimaryV1",
+                "WindowsAzureActiveDirectoryIntegratedApp"
+            ],
+            "appRoles": [
+                {
+                    "allowedMemberTypes": [
+                        "User"
+                    ],
+                    "description": "msiam_access",
+                    "displayName": "msiam_access",
+                    "id": "01c2bb8e-0895-42c8-b950-3ec8abc7a012",
+                    "isEnabled": true,
+                    "origin": "Application",
+                    "value": null
+                }
+            ],
+            "keyCredentials": [],
+            "oauth2PermissionScopes": [
+                {
+                    "adminConsentDescription": "Allow the application to access LinkedIn on behalf of the signed-in user.",
+                    "adminConsentDisplayName": "Access LinkedIn",
+                    "id": "6edde65d-3f90-4251-9df2-0329b678b368",
+                    "isEnabled": true,
+                    "type": "User",
+                    "userConsentDescription": "Allow the application to access LinkedIn on your behalf.",
+                    "userConsentDisplayName": "Access LinkedIn",
+                    "value": "user_impersonation"
+                }
+            ],
+            "passwordCredentials": []
+        }
+    ]
 }
 ```
 

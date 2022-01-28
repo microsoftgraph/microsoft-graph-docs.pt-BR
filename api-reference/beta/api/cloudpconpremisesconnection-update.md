@@ -5,12 +5,12 @@ author: AshleyYangSZ
 ms.localizationpriority: medium
 ms.prod: cloud-pc
 doc_type: apiPageType
-ms.openlocfilehash: fa4ec1dac69c728b5322b875cc3ed32fe52059cb
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: e94f25e60df83997442c46bb4720cfd0c71a3cdf
+ms.sourcegitcommit: e4796212a2e8bbec61b6da8336f776c0305c49df
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62106707"
+ms.lasthandoff: 01/28/2022
+ms.locfileid: "62261957"
 ---
 # <a name="update-cloudpconpremisesconnection"></a>Atualizar cloudPcOnPremisesConnection
 
@@ -59,10 +59,11 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar [o cloud
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
 |displayName|Cadeia de caracteres|O nome de exibição da conexão local.|
-|subscriptionId|Cadeia de caracteres|A ID da assinatura de destino do Azure associada ao seu locatário.|
+|type|cloudPcOnPremisesConnectionType|Especifica como o Cloud PC provisionado será ingressado no Azure Active Directory. O valor padrão é `hybridAzureADJoin`. Os valores possíveis são: `azureADJoin`, `hybridAzureADJoin`, `unknownFutureValue`.|
+|subscriptionId|String|A ID da assinatura de destino do Azure associada ao seu locatário.|
 |adDomainName|Cadeia de caracteres|O FQDN (nome de domínio totalmente qualificado) do domínio do Active Directory que você deseja ingressar.|
 |adDomainUsername|Cadeia de caracteres|O nome de usuário de uma conta do Active Directory (conta de usuário ou serviço) que tem permissões para criar objetos de computador no Active Directory. Formato obrigatório: username@contoso.com.|
-|adDomainPassword|Cadeia de caracteres|A senha associada a adDomainUsername.|
+|adDomainPassword|String|A senha associada a adDomainUsername.|
 |resourceGroupId|Cadeia de caracteres|A ID do grupo de recursos de destino. Formato obrigatório: "/subscriptions/{subscription-id}/resourceGroups/{resourceGroupName}".|
 |virtualNetworkId|Cadeia de caracteres|A ID da rede virtual de destino. Formato obrigatório: "/subscriptions/{subscription-id}/resourceGroups/{resourceGroupName}/providers/Microsoft.Network/virtualNetworks/{virtualNetworkName}".|
 |subnetId|Cadeia de caracteres|A ID da sub-rede de destino. Formato obrigatório: "/subscriptions/{subscription-id}/resourceGroups/{resourceGroupName}/providers/Microsoft.Network/virtualNetworks/{virtualNetworkId}/subnets/{subnetName}".|
@@ -145,6 +146,7 @@ Content-Type: application/json
 {
   "@odata.type": "#microsoft.graph.cloudPcOnPremisesConnection",
   "id": "9ec90ff8-fd63-4fb9-ab5a-aa4fdcc4ffff",
+  "type": "hybridAzureADJoin", 
   "displayName": "Display Name value",
   "subscriptionId": "0ac520ee-14c0-480f-b6c9-0a90c585ffff",
   "subscriptionName": "Subscription Name value",
