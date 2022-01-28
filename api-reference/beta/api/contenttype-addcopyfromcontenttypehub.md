@@ -5,20 +5,21 @@ author: swapnil1993
 ms.localizationpriority: medium
 ms.prod: sites-and-lists
 doc_type: apiPageType
-ms.openlocfilehash: dcef0c8b2ca8b21f2375a1d602b1fddd4914ef66
-ms.sourcegitcommit: 871db8b3f68489d24e2aeafe694725579ee44c47
+ms.openlocfilehash: de18d986844057dbf9e592f3b1d33d1fe87ed425
+ms.sourcegitcommit: e4796212a2e8bbec61b6da8336f776c0305c49df
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/26/2022
-ms.locfileid: "62224709"
+ms.lasthandoff: 01/28/2022
+ms.locfileid: "62262180"
 ---
 # <a name="contenttype-addcopyfromcontenttypehub"></a>contentType: addCopyFromContentTypeHub
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Adicione ou sincronize uma cópia de um tipo de conteúdo publicado do hub de tipo de conteúdo para um site de [destino](../resources/site.md) ou uma [lista.](../resources/list.md)
+Adicione ou sincronize uma cópia de um tipo de conteúdo publicado do hub de tipo de conteúdo para um [site de destino](../resources/site.md) ou uma [lista](../resources/list.md).
 
+Esse método faz parte das alterações de publicação de tipo de conteúdo para otimizar a sincronização de tipos de conteúdo publicados para sites e listas, alternando efetivamente de uma abordagem "push everywhere" para "puxar conforme necessário". O método permite que os usuários puxem tipos de conteúdo diretamente do hub de tipo de conteúdo para um site ou lista. Para obter mais informações, [consulte getCompatibleHubContentTypes](contenttype-getcompatiblehubcontenttypes.md) e o blog post [Syntex Product Updates – August 2021](https://techcommunity.microsoft.com/t5/sharepoint-syntex-blog/syntex-product-updates-august-2021/ba-p/2606438).
 ## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
@@ -26,7 +27,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |:---|:---|
 |Delegado (conta corporativa ou de estudante) | Sites.Manage.All, Sites.FullControl.All |
 |Delegado (conta pessoal da Microsoft) | Sem suporte.    |
-|Application | Sites.Manage.All, Sites.FullControl.All |
+|Aplicativo | Sites.Manage.All, Sites.FullControl.All |
 
 
 ## <a name="http-request"></a>Solicitação HTTP
@@ -53,13 +54,13 @@ A tabela a seguir mostra os parâmetros que podem ser usados com esta ação.
 
 |Parâmetro|Tipo|Descrição|
 |:---|:---|:---|
-|contentTypeId|Cadeia de Caracteres| ID do tipo de conteúdo no hub de tipo de conteúdo que deve ser adicionado ao site de destino ou a uma lista.|
+|contentTypeId|Cadeia de caracteres| ID do tipo de conteúdo no hub de tipo de conteúdo que deve ser adicionado ao site de destino ou a uma lista.|
 
 
 
 ## <a name="response"></a>Resposta
 
-Se tiver êxito, essa ação retornará um código de resposta e um objeto contentType no corpo da resposta se o tipo de conteúdo for adicionado de forma síncrona ou um código de resposta se o tipo de conteúdo for sincronizado de forma `200 OK` [](../resources/contenttype.md) `202 Accepted` assíncrona. A resposta também conterá um header, que contém o local do `Location` [richLongRunningOperation](../resources/richLongRunningOperation.md) que foi criado para manipular a cópia/sincronização. No caso de uma operação assíncrona, pode levar até 70 minutos para sincronizar ou adicionar um tipo de conteúdo.
+Se tiver êxito, `200 OK` essa ação retornará um código de resposta e um [objeto contentType](../resources/contenttype.md) `202 Accepted` no corpo da resposta se o tipo de conteúdo for adicionado de forma síncrona ou um código de resposta se o tipo de conteúdo for sincronizado de forma assíncrona. A resposta também conterá um header, que contém o local do [richLongRunningOperation](../resources/richLongRunningOperation.md) que foi criado para manipular a `Location` cópia/sincronização. No caso de uma operação assíncrona, pode levar até 70 minutos para sincronizar ou adicionar um tipo de conteúdo.
 
 ## <a name="examples"></a>Exemplos
 
@@ -79,7 +80,7 @@ Content-Type: application/json
 Content-length: 33
 
 {
-  "contentTypeId": "String"
+  "contentTypeId": "0x0101"
 }
 ```
 # <a name="c"></a>[C#](#tab/csharp)
@@ -119,15 +120,13 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-  "value": {
     "@odata.type": "#microsoft.graph.contentType",
-    "id": "String (identifier)",
-    "description": "String",
-    "group": "String",
-    "hidden": "Boolean",
-    "isBuiltIn": "Boolean",
-    "name": "String"
-  }
+    "id": "0x0101",
+    "description": "Document content type",
+    "group": "Document Content Types",
+    "hidden": false,
+    "isBuiltIn": true,
+    "name": "Document"
 }
 ```
 ### <a name="example-2-asynchronous-pull"></a>Exemplo 2: pull assíncrono

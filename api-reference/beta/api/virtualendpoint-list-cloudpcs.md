@@ -5,12 +5,12 @@ author: AshleyYangSZ
 ms.localizationpriority: medium
 ms.prod: cloud-pc
 doc_type: apiPageType
-ms.openlocfilehash: a6e78242b75ea676a0e149706130b56ae16eb5ee
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: 64406625dfcb8b4472a79a0fba694f4bb7d916d6
+ms.sourcegitcommit: e4796212a2e8bbec61b6da8336f776c0305c49df
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62095632"
+ms.lasthandoff: 01/28/2022
+ms.locfileid: "62262138"
 ---
 # <a name="list-cloudpcs"></a>Listar cloudPCs
 
@@ -18,7 +18,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Listar propriedades e relações dos objetos [cloudPC.](../resources/cloudpc.md)
+Listar propriedades e relações dos objetos [cloudPC](../resources/cloudpc.md) .
 
 ## <a name="permissions"></a>Permissões
 
@@ -43,7 +43,7 @@ GET /deviceManagement/virtualEndpoint/cloudPCs
 
 ## <a name="optional-query-parameters"></a>Parâmetros de consulta opcionais
 
-Este método oferece `$select` suporte a parâmetros de consulta OData e para `$filter` ajudar a personalizar a `$count` resposta. Para obter informações gerais, acesse [Parâmetros de consulta OData](/graph/query-parameters).
+Este método oferece suporte `$select`a parâmetros de `$filter` `$count` consulta OData e para ajudar a personalizar a resposta. Para obter informações gerais, acesse [Parâmetros de consulta OData](/graph/query-parameters).
 
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
 
@@ -57,7 +57,7 @@ Não forneça um corpo de solicitação para esse método.
 
 ## <a name="response"></a>Resposta
 
-Se tiver êxito, este método retornará um código de resposta e uma `200 OK` coleção de objetos [cloudPC](../resources/cloudpc.md) no corpo da resposta.
+Se tiver êxito, este método retornará um `200 OK` código de resposta e uma coleção de objetos [cloudPC](../resources/cloudpc.md) no corpo da resposta.
 
 ## <a name="examples"></a>Exemplos
 
@@ -119,6 +119,7 @@ Content-Type: application/json
   "value": [
     {
       "@odata.type": "#microsoft.graph.cloudPC",
+      "aadDeviceId": "f5ff445f-7488-40f8-8ab9-ee784a9c1f33",
       "id": "662009bc-7732-4f6f-8726-25883518ffff",
       "displayName": "Demo-1",
       "imageDisplayName": "Windows-10 19h1-evd",
@@ -129,6 +130,7 @@ Content-Type: application/json
       "onPremisesConnectionName": "on-Premises connection for HR",
       "servicePlanId": "dbb9148c-ff83-4a4c-8d7f-28752e93ffff",
       "servicePlanName": "lite",
+      "servicePlanType": "enterprise",
       "status": "provisioned",
       "userPrincipalName": "pmitchell@cpccustomer001.onmicrosoft.com",
       "lastModifiedDateTime": "2020-11-03T10:29:57Z",

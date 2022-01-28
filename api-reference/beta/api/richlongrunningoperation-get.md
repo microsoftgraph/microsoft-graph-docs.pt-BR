@@ -5,19 +5,19 @@ author: swapnil1993
 ms.localizationpriority: medium
 ms.prod: sites-and-lists
 doc_type: apiPageType
-ms.openlocfilehash: df3d59e7f97392e5289e6c823336e93eda77e962
-ms.sourcegitcommit: 871db8b3f68489d24e2aeafe694725579ee44c47
+ms.openlocfilehash: 38877c302bcb437a5fc551b83bbd37a31249ba2b
+ms.sourcegitcommit: e4796212a2e8bbec61b6da8336f776c0305c49df
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/26/2022
-ms.locfileid: "62225816"
+ms.lasthandoff: 01/28/2022
+ms.locfileid: "62262215"
 ---
 # <a name="get-richlongrunningoperation"></a>Obter richLongRunningOperation
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Leia as propriedades de [um objeto richLongRunningOperation.](../resources/richlongrunningoperation.md)
+Leia as propriedades de [um objeto richLongRunningOperation](../resources/richlongrunningoperation.md) .
 
 ## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
@@ -26,7 +26,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |:---|:---|
 |Delegado (conta corporativa ou de estudante)|Sites.Read.All, Sites.ReadWrite.All, Sites.Manage.All, Sites.FullControl.All|
 |Delegado (conta pessoal da Microsoft)|Sem suporte.|
-|Application|Sites.Read.All, Sites.ReadWrite.All, Sites.Manage.All, Sites.FullControl.All|
+|Aplicativo|Sites.Read.All, Sites.ReadWrite.All, Sites.Manage.All, Sites.FullControl.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
 
@@ -53,7 +53,7 @@ Não forneça um corpo de solicitação para esse método.
 
 ## <a name="response"></a>Resposta
 
-Se tiver êxito, este método retornará um código de resposta e um `200 OK` [objeto richLongRunningOperation](../resources/richlongrunningoperation.md) no corpo da resposta.
+Se tiver êxito, este método retornará um `200 OK` código de resposta e um [objeto richLongRunningOperation](../resources/richlongrunningoperation.md) no corpo da resposta.
 
 ## <a name="examples"></a>Exemplos
 
@@ -105,17 +105,12 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-  "value": {
-    "@odata.type": "#microsoft.graph.richLongRunningOperation",
-    "id": "0x0101,contentTypeCopy",
-    "createdDateTime": "String (timestamp)",
-    "resourceLocation": "String",
-    "status": "String",
-    "statusDetail": "String",
-    "percentageComplete": "Integer",
-    "resourceId": "String",
-    "type": "String"
-  }
+  "id": "contentTypeCopy,0x010100298A15181454D84EBB62EDD7559FCBFE",
+  "createdDateTime": "2022-01-24T16:28:23Z",
+  "resourceId": "0x010100298A15181454D84EBB62EDD7559FCBFE",
+  "resourceLocation": "https://graph.microsoft.com/beta/sites/5b3ea0e2-5fed-45ab-a8b8-7f7cd97189d6/contentTypes/0x010100298A15181454D84EBB62EDD7559FCBFE",
+  "status": "succeeded",
+  "type": "contentTypeCopy"
 }
 ```
 

@@ -5,12 +5,12 @@ author: AshleyYangSZ
 ms.localizationpriority: medium
 ms.prod: cloud-pc
 doc_type: apiPageType
-ms.openlocfilehash: b67ac59fa64f26c524265b743f0b2aadf85fe77a
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: c70571c0c1d658b30b65af5d3a52a0f084bafabc
+ms.sourcegitcommit: e4796212a2e8bbec61b6da8336f776c0305c49df
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62121263"
+ms.lasthandoff: 01/28/2022
+ms.locfileid: "62262082"
 ---
 # <a name="get-cloudpcdeviceimage"></a>Obter cloudPcDeviceImage
 
@@ -57,7 +57,7 @@ Não forneça um corpo de solicitação para esse método.
 
 ## <a name="response"></a>Resposta
 
-Se tiver êxito, este método retornará um código de resposta e um `200 OK` [objeto cloudPcDeviceImage](../resources/cloudpcdeviceimage.md) no corpo da resposta.
+Se tiver êxito, este método retornará um `200 OK` código de resposta e um [objeto cloudPcDeviceImage](../resources/cloudpcdeviceimage.md) no corpo da resposta.
 
 ## <a name="examples"></a>Exemplos
 
@@ -119,7 +119,9 @@ Content-Type: application/json
     "@odata.type": "#microsoft.graph.cloudPcDeviceImage",
     "id": "eda7ed64-7705-4079-9d08-c2bd883f4fff",
     "displayName": "Display Name value",
+    "expirationDate": "2022-11-10",
     "osBuildNumber": "OS Build Number value",
+    "osStatus": "supported",
     "operatingSystem": "Operating System value",
     "version": "Version value",
     "sourceImageResourceId": "/subscriptions/0ac520ee-14c0-480f-b6c9-0a90c58ffff/resourceGroups/Example/providers/Microsoft.Compute/images/exampleImage",

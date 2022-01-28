@@ -1,17 +1,16 @@
 ---
 author: JeremyKelley
 description: Obter a coleção de listas de um site.
-ms.date: 09/11/2017
 title: Lista as listas do SharePoint em um site
 ms.localizationpriority: medium
 ms.prod: sharepoint
 doc_type: apiPageType
-ms.openlocfilehash: 48496f3189dac6bf55fd4449837aec4ce5210cbc
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: 9c3d4f1f29ce44a9a59324885303bc486450b17c
+ms.sourcegitcommit: e4796212a2e8bbec61b6da8336f776c0305c49df
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62105945"
+ms.lasthandoff: 01/28/2022
+ms.locfileid: "62262167"
 ---
 # <a name="enumerate-lists-in-a-site"></a>Enumerar listas em um site
 
@@ -21,8 +20,12 @@ Namespace: microsoft.graph
 
 Obter a coleção de [listas][] de um [site][].
 
+Listas com a faceta [system][] estão ocultas por padrão.
+Para listá-los, inclua `system` na instrução `$select`.
+
 [listas]: ../resources/list.md
 [site]: ../resources/site.md
+[system]: ../resources/systemfacet.md
 
 ## <a name="permissions"></a>Permissões
 
@@ -42,7 +45,7 @@ GET /sites/{site-id}/lists
 
 ## <a name="example"></a>Exemplo
 
-#### <a name="request"></a>Solicitação
+### <a name="request"></a>Solicitação
 
 
 # <a name="http"></a>[HTTP](#tab/http)
@@ -78,7 +81,7 @@ GET https://graph.microsoft.com/beta/sites/{site-id}/lists
 ---
 
 
-##### <a name="response"></a>Resposta
+### <a name="response"></a>Resposta
 
 <!-- { "blockType": "response", "@type": "microsoft.graph.list", "isCollection": true, "truncated": true } -->
 
@@ -111,13 +114,6 @@ Content-type: application/json
   ]
 }
 ```
-
-## <a name="remarks"></a>Comentários
-
-Listas com a faceta [system][] estão ocultas por padrão.
-Para listá-los, inclua `system` na instrução `$select`.
-
-[system]: ../resources/systemfacet.md
 
 <!--
 {

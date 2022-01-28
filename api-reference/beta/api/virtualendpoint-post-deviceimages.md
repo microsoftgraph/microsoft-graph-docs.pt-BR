@@ -5,12 +5,12 @@ author: AshleyYangSZ
 ms.localizationpriority: medium
 ms.prod: cloud-pc
 doc_type: apiPageType
-ms.openlocfilehash: 174cb16055f1979ac322b2c2bd667ddcd941038e
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: e3a0150ee0912f57bf57f356ae18f6370b8ce5b1
+ms.sourcegitcommit: e4796212a2e8bbec61b6da8336f776c0305c49df
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62122530"
+ms.lasthandoff: 01/28/2022
+ms.locfileid: "62262131"
 ---
 # <a name="create-cloudpcdeviceimage"></a>Criar cloudPcDeviceImage
 
@@ -18,7 +18,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Crie um novo [objeto cloudPcDeviceImage.](../resources/cloudpcdeviceimage.md) Upload uma imagem personalizada do sistema operacional que você pode provisioná-la posteriormente em PCs na Nuvem.
+Crie um novo [objeto cloudPcDeviceImage](../resources/cloudpcdeviceimage.md) . Upload uma imagem personalizada do sistema operacional que você pode provisioná-la posteriormente em PCs na Nuvem.
 
 ## <a name="permissions"></a>Permissões
 
@@ -50,13 +50,13 @@ POST /deviceManagement/virtualEndpoint/deviceImages
 
 ## <a name="request-body"></a>Corpo da solicitação
 
-No corpo da solicitação, fornece uma representação JSON do [objeto cloudPcDeviceImage.](../resources/cloudpcdeviceimage.md)
+No corpo da solicitação, fornece uma representação JSON do [objeto cloudPcDeviceImage](../resources/cloudpcdeviceimage.md) .
 
 A tabela a seguir mostra as propriedades que são necessárias ao criar [o cloudPcDeviceImage](../resources/cloudpcdeviceimage.md).
 
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|displayName|Cadeia de caracteres|O nome de exibição da imagem.|
+|displayName|String|O nome de exibição da imagem.|
 |sourceImageResourceId|Cadeia de caracteres|A ID do recurso de imagem de origem no Azure. Formato obrigatório: "/subscriptions/{subscription-id}/resourceGroups/{resourceGroupName}/providers/Microsoft.Compute/images/{imageName}".|
 |operatingSystem|String|O sistema operacional da imagem. Por exemplo: Windows 10 Enterprise.|
 |osBuildNumber|Cadeia de caracteres|A versão de com build do sistema operacional da imagem. Por exemplo: 1909.|
@@ -64,7 +64,7 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar [o cloud
 
 ## <a name="response"></a>Resposta
 
-Se tiver êxito, este método retornará um código de resposta e um `201 Created` [objeto cloudPcDeviceImage](../resources/cloudpcdeviceimage.md) no corpo da resposta.
+Se tiver êxito, este método retornará um `201 Created` código de resposta e um [objeto cloudPcDeviceImage](../resources/cloudpcdeviceimage.md) no corpo da resposta.
 
 ## <a name="examples"></a>Exemplos
 
@@ -142,6 +142,8 @@ Content-Type: application/json
   "sourceImageResourceId": "/subscriptions/0ac520ee-14c0-480f-b6c9-0a90c58ffff/resourceGroups/Example/providers/Microsoft.Compute/images/exampleImage",
   "lastModifiedDateTime": "2020-11-03T07:03:44.97Z",
   "status": "pending",
-  "statusDetails": null
+  "statusDetails": null,
+  "osStatus":"supported",
+  "expirationDate":"2022-11-10"
 }
 ```

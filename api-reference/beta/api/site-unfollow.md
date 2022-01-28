@@ -5,16 +5,18 @@ description: Desa seguir o site de um usuário
 ms.localizationpriority: medium
 ms.prod: sharepoint
 doc_type: apiPageType
-ms.openlocfilehash: ca7f581ec196dcdf1080a90b0c1b162806ffdee9
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: be60fc6158877af221e3a9a15037a3eaa011fd65
+ms.sourcegitcommit: e4796212a2e8bbec61b6da8336f776c0305c49df
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59054720"
+ms.lasthandoff: 01/28/2022
+ms.locfileid: "62262236"
 ---
 # <a name="unfollow-site"></a>Deixar de seguir site 
 
 Namespace: microsoft.graph
+
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Desa siga o site de um [usuário ou](../resources/site.md) vários sites.
 
@@ -48,7 +50,7 @@ No corpo da solicitação, fornece uma matriz de objetos JSON com o parâmetro i
 ## <a name="response"></a>Resposta
 
 * Se a solicitação for bem-sucedida, este método retornará um `204` código de status sem conteúdo.  
-* Se ocorreu um erro ao não seguir nenhum dos sites especificados, este método retornará um código de status e o corpo da resposta conterá uma matriz de entradas contendo objetos de erro e siteIds indicando quais sites não podem ser `207` seguidos. [](/graph/errors)
+* Se ocorreu um erro ao não seguir nenhum dos sites especificados, `207` este método retornará um código de status e o corpo da resposta conterá uma matriz de entradas contendo objetos [](/graph/errors) de erro e siteIds indicando quais sites não podem ser seguidos.
 
 ## <a name="example"></a>Exemplo
 

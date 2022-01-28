@@ -5,19 +5,19 @@ author: swapnil1993
 ms.localizationpriority: medium
 ms.prod: sites-and-lists
 doc_type: apiPageType
-ms.openlocfilehash: f4540c9479446d2a204e8f1744e3653f80763619
-ms.sourcegitcommit: 871db8b3f68489d24e2aeafe694725579ee44c47
+ms.openlocfilehash: 81af50f680c9aefeb94920ed9bfb34077ec5e561
+ms.sourcegitcommit: e4796212a2e8bbec61b6da8336f776c0305c49df
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/26/2022
-ms.locfileid: "62225942"
+ms.lasthandoff: 01/28/2022
+ms.locfileid: "62262145"
 ---
 # <a name="list-operations"></a>Listar operações
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Obter a lista [de richLongRunningOperations](../resources/richlongrunningoperation.md) associado a um [site](../resources/site.md).
+Obter a lista [de richLongRunningOperations](../resources/richlongrunningoperation.md) associados a um [site](../resources/site.md).
 
 ## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
@@ -28,7 +28,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |:---|:---|
 |Delegado (conta corporativa ou de estudante)|Sites.Read.All, Sites.ReadWrite.All, Sites.Manage.All, Sites.FullControl.All|
 |Delegado (conta pessoal da Microsoft)|Sem suporte.|
-|Application|Sites.Read.All, Sites.ReadWrite.All, Sites.Manage.All, Sites.FullControl.All|
+|Aplicativo|Sites.Read.All, Sites.ReadWrite.All, Sites.Manage.All, Sites.FullControl.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
 
@@ -107,14 +107,12 @@ Content-Type: application/json
 {
   "value": [
     {
-      "@odata.type": "#microsoft.graph.richLongRunningOperation",
-      "id": "0x0101,contentTypeCopy",
-      "createdDateTime": "String (timestamp)",
-      "resourceLocation": "String",
-      "status": "String",
-      "percentageComplete": "Integer",
-      "resourceId": "String",
-      "type": "String"
+      "id": "contentTypeCopy,0x010100298A15181454D84EBB62EDD7559FCBFE",
+      "createdDateTime": "2022-01-24T16:28:23Z",
+      "resourceId": "0x010100298A15181454D84EBB62EDD7559FCBFE",
+      "resourceLocation": "https://graph.microsoft.com/beta/sites/5b3ea0e2-5fed-45ab-a8b8-7f7cd97189d6/contentTypes/0x010100298A15181454D84EBB62EDD7559FCBFE",
+      "status": "succeeded",
+      "type": "contentTypeCopy"
     }
   ]
 }
