@@ -5,12 +5,12 @@ author: akjo
 doc_type: resourcePageType
 ms.localizationpriority: high
 ms.prod: microsoft-teams
-ms.openlocfilehash: 89ad4d479135972c0bbcfa14163a750ba10841a3
-ms.sourcegitcommit: c333953a9188b4cd4a9ab94cbe68871e8f3563e5
+ms.openlocfilehash: ff6a364ed21286d2fb01791bc0ccef0997f3ab5f
+ms.sourcegitcommit: e4796212a2e8bbec61b6da8336f776c0305c49df
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/30/2021
-ms.locfileid: "58695592"
+ms.lasthandoff: 01/28/2022
+ms.locfileid: "62262222"
 ---
 # <a name="userteamwork-resource-type"></a>tipo de recurso userTeamwork
 
@@ -19,6 +19,11 @@ Namespace: microsoft.graph
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Um contêiner para o intervalo de funcionalidades do Microsoft Teams disponíveis por usuário no locatário.
+
+## <a name="methods"></a>Métodos
+|Método|Tipo de retorno|Descrição|
+|:---|:---|:---|
+|[Listar installedApps](../api/userteamwork-list-installedapps.md)|Coleção [teamsAppInstallation](../resources/teamsappinstallation.md)|Recupere a lista de aplicativos instalados no escopo pessoal do usuário especificado.|
 
 ## <a name="properties"></a>Propriedades
 
@@ -62,4 +67,6 @@ Veja a seguir uma representação JSON do recurso.
 }
 -->
 
+## <a name="see-also"></a>Confira também
 
+- [tipo de recurso de trabalho em equipe](teamwork.md)
