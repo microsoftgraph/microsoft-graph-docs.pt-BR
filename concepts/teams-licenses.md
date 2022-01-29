@@ -4,12 +4,12 @@ description: Saiba mais sobre os modelos de licenciamento e pagamento que se apl
 author: nkramer
 ms.localizationpriority: high
 ms.prod: microsoft-teams
-ms.openlocfilehash: 8edb5bc5e35c5c48d61a8e1d48ca724f023a5d8d
-ms.sourcegitcommit: bfd1ab7e015ef04cb2ca3fb85d308ba2ce830a89
+ms.openlocfilehash: e3f8637bc55c6cd1cb9055d6b914063b8980e858
+ms.sourcegitcommit: e4796212a2e8bbec61b6da8336f776c0305c49df
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/19/2022
-ms.locfileid: "62072653"
+ms.lasthandoff: 01/28/2022
+ms.locfileid: "62262103"
 ---
 # <a name="licensing-and-payment-requirements-for-microsoft-teams-apis-in-microsoft-graph"></a>Requisitos de licenciamento e pagamento para APIs do Microsoft Teams no Microsoft Graph
 
@@ -20,7 +20,8 @@ Algumas APIs oferecem a opção de escolher um modelo de licenciamento e pagamen
 - [`model=A`](#modela-requirements) é restrito a aplicativos que executam uma [função de segurança ou conformidade](https://www.microsoft.com/licensing/terms/productoffering/MicrosoftAzure/MCA#ServiceSpecificTerms) e exige uma [licença com suporte.](#required-licenses-for-modela)
 No futuro, os aplicativos também serão obrigados a pagar pelas mensagens que consomem além da [capacidade de propagação](#seeded-capacity).
 
-- [`model=B`](#modelb-requirements) está livre para usar hoje; no entanto, no futuro, os aplicativos pagarão com base no número de mensagens que consomem. Não há requisitos de licenciamento para `model=B`, e ele não está restrito a aplicativos que executam uma função de segurança ou conformidade.
+- [`model=B`](#modelb-requirements) é restrito a aplicações que não desempenham uma [função de segurança ou de conformidade](https://www.microsoft.com/licensing/terms/productoffering/MicrosoftAzure/MCA#ServiceSpecificTerms). 
+[`model=B`](#modelb-requirements) está livre para usar hoje; no entanto, no futuro, os aplicativos pagarão com base no número de mensagens que consomem. Não há requisitos de licenciamento para `model=B`.
 
 - [O Modo de Avaliação (padrão)](#evaluation-mode-default-requirements) permite o acesso a APIs com uso limitado por aplicativo solicitando para fins de avaliação. As notificações de alteração não serão enviadas se o limite for excedido.
 
@@ -28,7 +29,7 @@ No futuro, os aplicativos também serão obrigados a pagar pelas mensagens que c
 
 `model=A` é restrito a aplicativos que executam uma função de segurança ou conformidade. Para obter detalhes, consulte a seção Termos da API para Aplicativos de Segurança e Conformidade dos [termos do produto para Serviços do Microsoft Azure](https://www.microsoft.com/licensing/terms/productoffering/MicrosoftAzure/MCA#ServiceSpecificTerms).
 
-|API                   | Quem precisa de uma [licença](#required-licenses-for-modela)  | Capacidade propagada | Preço para uso adicional | Notas |
+|API                   | Quem precisa de uma [licença](#required-licenses-for-modela)  | Capacidade propagada | [Preço para uso adicional](#price-for-additional-use) | Notas |
 |:-----------------------------|:--------------------------------------------|:----------------|:-------|:------|
 | [notificações de alteração do chatMessage](/graph/api/subscription-post-subscriptions) | Remetente de mensagem | 800 mensagens por usuário por mês por aplicativo | $0,00075 por mensagem | A capacidade de semente é compartilhada com notificações de alteração de conversationMember |
 | [notificações de alteração de conversationMember](/graph/api/subscription-post-subscriptions) | Qualquer usuário no locatário | 800 notificações por usuário por mês por aplicativo  | US$ 0,00075 por notificação | A capacidade de propagação é compartilhada com notificações de alteração do chatMessage |
@@ -38,9 +39,11 @@ No futuro, os aplicativos também serão obrigados a pagar pelas mensagens que c
 
 ## <a name="modelb-requirements"></a>Requisitos do `model=B`
 
+`model=B` é restrito a aplicações que não desempenham uma função de segurança ou de conformidade. Para obter detalhes, consulte a seção Termos da API para Aplicativos de Segurança e Conformidade dos [termos do produto para Serviços do Microsoft Azure](https://www.microsoft.com/licensing/terms/productoffering/MicrosoftAzure/MCA#ServiceSpecificTerms).
+
 >**Observação:**[`model=B`](#modelb-requirements) é gratuito para uso hoje; no entanto, no futuro, os aplicativos pagarão com base no número de mensagens que consumirem. 
 
-|API                   | Quem precisa de uma [licença](#required-licenses-for-modela)  | Capacidade propagada | Preço para uso adicional | Notas |
+|API                   | Quem precisa de uma [licença](#required-licenses-for-modela)  | Capacidade propagada | [Preço para uso adicional](#price-for-additional-use) | Notas |
 |:-----------------------------|:--------------------------------------------|:----------------|:-------|:------|
 | [notificações de alteração do chatMessage](/graph/api/subscription-post-subscriptions) | N/D | Nenhum | $0,00075 por mensagem |  |
 | [notificações de alteração de conversationMember](/graph/api/subscription-post-subscriptions) | N/D | Nenhum  | US$ 0,00075 por notificação | |
@@ -49,7 +52,7 @@ No futuro, os aplicativos também serão obrigados a pagar pelas mensagens que c
 
 ## <a name="evaluation-mode-default-requirements"></a>Requisitos do modo de avaliação (padrão)
 
-|API                   | Quem precisa de uma [licença](#required-licenses-for-modela)  | Capacidade propagada | Preço para uso adicional | Notas |
+|API                   | Quem precisa de uma [licença](#required-licenses-for-modela)  | Capacidade propagada | [Preço para uso adicional](#price-for-additional-use) | Notas |
 |:-----------------------------|:--------------------------------------------|:----------------|:-------|:------|
 | [notificações de alteração do chatMessage](/graph/api/subscription-post-subscriptions) |  N/D | 500 mensagens por mês por aplicativo | N/D |
 | [notificações de alteração de conversationMember](/graph/api/subscription-post-subscriptions) | N/D | 500 mensagens por mês por aplicativo | N/D | 

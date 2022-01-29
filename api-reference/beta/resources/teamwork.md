@@ -5,12 +5,12 @@ author: akjo
 doc_type: resourcePageType
 ms.localizationpriority: high
 ms.prod: microsoft-teams
-ms.openlocfilehash: 012286f43a6ab31f29062317077042ce43b587e9
-ms.sourcegitcommit: c333953a9188b4cd4a9ab94cbe68871e8f3563e5
+ms.openlocfilehash: 63199426ae498a4fa79a6f419d49b0eaa257a181
+ms.sourcegitcommit: e4796212a2e8bbec61b6da8336f776c0305c49df
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/30/2021
-ms.locfileid: "58695900"
+ms.lasthandoff: 01/28/2022
+ms.locfileid: "62262096"
 ---
 # <a name="teamwork-resource-type"></a>tipo de recurso de trabalho em equipe
 
@@ -30,7 +30,8 @@ Um contêiner para o intervalo de funcionalidades do Microsoft Teams disponívei
 
 | Relação | Tipo | Descrição |
 |:---------------|:--------|:----------|
-|installedApps|Coleção [teamsAppInstallation](teamsappinstallation.md)|Os aplicativos instalados no escopo pessoal desse usuário.|
+|dispositivos|Coleção [teamworkDevice](../resources/teamworkdevice.md)|Os dispositivos do Teams provisionados para o locatário.|
+|workforceIntegrations|Coleção [workforceIntegration](../resources/workforceintegration.md)| Uma integração de força de trabalho com turnos.|
 
 ## <a name="json-representation"></a>Representação JSON
 
@@ -65,5 +66,3 @@ Veja a seguir uma representação JSON do recurso.
 ## <a name="see-also"></a>Confira Também
 
 - [recurso userTeamwork](userteamwork.md)
-
-
