@@ -5,12 +5,12 @@ author: swapnil1993
 ms.localizationpriority: medium
 ms.prod: sites-and-lists
 doc_type: apiPageType
-ms.openlocfilehash: 81af50f680c9aefeb94920ed9bfb34077ec5e561
-ms.sourcegitcommit: e4796212a2e8bbec61b6da8336f776c0305c49df
+ms.openlocfilehash: f9504ee561c69d51a2e4fb065d99cfaca07a914b
+ms.sourcegitcommit: a60e5e81cfa04b666a1df1111a1d91f6c11989e9
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/28/2022
-ms.locfileid: "62262145"
+ms.lasthandoff: 01/31/2022
+ms.locfileid: "62282188"
 ---
 # <a name="list-operations"></a>Listar operações
 Namespace: microsoft.graph
@@ -22,8 +22,6 @@ Obter a lista [de richLongRunningOperations](../resources/richlongrunningoperati
 ## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
-|Tipo de permissão|Permissões (da com menos para a com mais privilégios)|
-|:---|:---|
 |Tipo de permissão|Permissões (da com menos para a com mais privilégios)|
 |:---|:---|
 |Delegado (conta corporativa ou de estudante)|Sites.Read.All, Sites.ReadWrite.All, Sites.Manage.All, Sites.FullControl.All|
@@ -53,7 +51,7 @@ Não forneça um corpo de solicitação para esse método.
 
 ## <a name="response"></a>Resposta
 
-Se tiver êxito, este método retornará um código de resposta e uma `200 OK` coleção de [objetos richLongRunningOperation](../resources/richlongrunningoperation.md) no corpo da resposta.
+Se tiver êxito, este método retornará um `200 OK` código de resposta e uma coleção de [objetos richLongRunningOperation](../resources/richlongrunningoperation.md) no corpo da resposta.
 
 ## <a name="examples"></a>Exemplos
 

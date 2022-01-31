@@ -1,16 +1,16 @@
 ---
 title: 'searchEntity: consulta'
-description: Executa a consulta especificada no corpo da solicitação. Os resultados da pesquisa são fornecidos na resposta
+description: Execute uma consulta de pesquisa especificada. Os resultados da pesquisa são fornecidos na resposta.
 ms.localizationpriority: medium
 author: nmoreau
 ms.prod: search
 doc_type: apiPageType
-ms.openlocfilehash: 29414d21d939e5ac9280df9c6641a293d77eab90
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: 398ae83ba928f81a22688b39b9399e08c1f4066b
+ms.sourcegitcommit: a60e5e81cfa04b666a1df1111a1d91f6c11989e9
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "61031986"
+ms.lasthandoff: 01/31/2022
+ms.locfileid: "62282168"
 ---
 # <a name="searchentity-query"></a>searchEntity: consulta
 
@@ -18,7 +18,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Executa a consulta especificada no corpo da solicitação. Os resultados da pesquisa são fornecidos na resposta.
+Execute uma consulta de pesquisa especificada. Os resultados da pesquisa são fornecidos na resposta.
 
 [!INCLUDE [search-api-deprecation](../../includes/search-api-deprecation.md)]
 
@@ -52,11 +52,10 @@ Forneça um objeto JSON com os seguintes parâmetros no corpo da solicitação.
 | Parâmetro    | Tipo        | Descrição |
 |:-------------|:------------|:------------|
 |requests|[coleção searchRequest](../resources/searchrequest.md)|Uma coleção de uma ou mais solicitações de pesquisa formatadas em um blob JSON. Cada blob JSON contém os tipos de recursos esperados na resposta, as fontes subjacentes, os parâmetros de pajamento, os campos solicitados e a consulta de pesquisa real. <br> Esteja ciente das [limitações conhecidas na](../resources/search-api-overview.md#known-limitations) pesquisa de combinações específicas de tipos de entidade e classificação ou agregação de resultados de pesquisa. |
-|queryAlterationOptions|[searchAlterationOptions](../resources/searchalterationoptions.md)|Opções de alteração de consulta formatadas em um blob JSON que contém dois sinalizadores opcionais para correção ortográfica. Opcional. |
 
 ## <a name="response"></a>Resposta
 
-Se tiver êxito, este método retornará um código de resposta e um `HTTP 200 OK` [objeto searchResponse](../resources/searchresponse.md) no corpo da resposta.
+Se tiver êxito, este método retornará um `HTTP 200 OK` código de resposta e uma coleção [de objetos searchResponse](../resources/searchresponse.md) no corpo da resposta.
  
 
 ## <a name="examples"></a>Exemplos
@@ -113,7 +112,7 @@ Content-type: application/json
 [!INCLUDE [sample-code](../includes/snippets/java/search-query-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[Go](#tab/go)
+# <a name="go"></a>[Ir](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/search-query-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 

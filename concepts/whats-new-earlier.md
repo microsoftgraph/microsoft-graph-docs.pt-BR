@@ -3,14 +3,49 @@ title: Destaques de versões anteriores no Microsoft Graph
 description: O que havia de novo no Microsoft Graph
 author: angelgolfer-ms
 ms.localizationpriority: high
-ms.openlocfilehash: 9b31312e4592dcd9c09a50d4418a0dff64581075
-ms.sourcegitcommit: 71186ad44d8d0df15e10b0f89df68d2ef0cf9d14
+ms.openlocfilehash: 018d206a1fec429934334289bcc66ab2157b06b9
+ms.sourcegitcommit: a60e5e81cfa04b666a1df1111a1d91f6c11989e9
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/12/2022
-ms.locfileid: "61791816"
+ms.lasthandoff: 01/31/2022
+ms.locfileid: "62282020"
 ---
 # <a name="highlights-of-earlier-releases"></a>Destaques de versões anteriores
+
+## <a name="november-2021-new-and-generally-available"></a>Novembro de 2021: Novo e geralmente disponível ao público
+
+### <a name="files"></a>Arquivos
+Obtenha o estado de uma unidade a partir de um horário específico especificando o carimbo de data/hora codificado no URL correspondente. Veja um [exemplo](/graph/api/driveitem-delta#example-4-retrieving-delta-results-using-a-timestamp).
+
+### <a name="identity-and-access--identity-and-sign-in"></a>Identidade e acesso | Identidade e login
+- Execute [campanhas](/graph/api/resources/authenticationMethodsRegistrationCampaign) e [imponha os usuários a se registrarem](/graph/api/resources/registrationEnforcement) no momento da entrada para configurar os métodos de autenticação direcionados.
+-  Configurar um [provedor de identidade Apple](/graph/api/resources/applemanagedidentityprovider) em um locatário do Azure AD B2C.
+
+## <a name="november-2021-new-in-preview-only"></a>Novembro de 2021: Novo somente na pré-visualização
+
+### <a name="cloud-communications--online-meeting"></a>Comunicações na nuvem | Reunião online
+Admita automaticamente novos tipos de participantes em uma reunião online e ignore o lobby da reunião:
+- Somente pessoas convidadas pelo organizador.
+- Somente os participantes da mesma empresa.
+
+### <a name="devices-and-apps--cloud-pc"></a>Dispositivos e aplicativos | Computador na nuvem
+- Defina uma [configuração](/graph/api/resources/cloudPcDomainJoinConfiguration?view=graph-rest-beta&preserve-view=true) de como um dispositivo de PC na nuvem provisionado pode ingressar no Azure Active Directory (Microsoft Azure AD): somente nuvem e ingressar somente no Microsoft Azure AD, ou híbrido e ingressar no Active Directory local e no Microsoft Azure AD.
+- Obtenha o [recurso de imagem da galeria](/graph/api/resources/cloudPcGalleryImage?view=graph-rest-beta&preserve-view=true) da organização atual que pode ser usado para provisionar um PC na nuvem.
+
+### <a name="devices-and-apps--device-updates"></a>Dispositivos e aplicativos | Atualizações do dispositivo
+- Use as [configurações de salvaguarda](/graph/api/resources/windowsupdates-safeguardSettings?view=graph-rest-beta&preserve-view=true) para recusar as proteções contra prováveis problemas em uma implantação.
+- Suporte para um [estado de implantação](/graph/api/resources/windowsupdates-deploymentState?view=graph-rest-beta&preserve-view=true) em que uma implantação está com defeito devido ao conteúdo não ser mais implantável, por exemplo, no fim do serviço.
+
+### <a name="identity-and-access--directory-management"></a>Identidade e acesso | Gerenciamento do diretório
+- Defina e atribua [atributos de segurança personalizado ](/graph/api/resources/custom-security-attributes-overview?view=graph-rest-beta&preserve-view=true) aos objetos do Microsoft Azure AD. Use esses atributos para armazenar informações, categorizar objetos ou impor um controle de acesso refinado sobre recursos específicos do Azure. Use esses atributos com o [Controle de acesso baseado em atributo do Azure](/azure/role-based-access-control/conditions-overview) (Azure ABAC).
+- [Crie um grupo dentro de uma unidade administrativa](/graph/api/administrativeunit-post-members?view=graph-rest-beta&preserve-view=true).
+
+### <a name="reports--microsoft-365-usage-reports"></a>Relatórios | Relatórios de uso do Microsoft 365
+[Os relatórios de uso do Microsoft 365](/graph/api/resources/report?view=graph-rest-beta&preserve-view=true) no tipo de saída JSON não são mais fortemente tipados e são do tipo `Edm.Stream`. Para obter mais informações, consulte [Alterações da propriedade OData na API de relatórios de uso do Microsoft 365 no Microsoft Graph](https://devblogs.microsoft.com/microsoft365dev/odata-property-changes-to-microsoft-365-usage-reports-api-in-microsoft-graph/).
+
+### <a name="teamwork"></a>Trabalho em equipe
+Marque um chat como [lido](/graph/api/chat-markChatReadForUser?view=graph-rest-beta&preserve-view=true) ou [não lido](/graph/api/chat-markchatunreadforuser?view=graph-rest-beta&preserve-view=true) para um usuário.
+
 
 ## <a name="october-2021-new-and-generally-available"></a>Outubro de 2021: novo e em disponibilidade geral
 

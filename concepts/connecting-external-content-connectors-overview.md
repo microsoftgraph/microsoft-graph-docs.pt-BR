@@ -5,12 +5,12 @@ author: mecampos
 ms.localizationpriority: high
 doc_type: conceptualPageType
 ms.prod: search
-ms.openlocfilehash: 1b5cf1dd38a6d60e0211663330ebfd8d3f282c9a
-ms.sourcegitcommit: 2456cf3c4117b88afefef139593796a2f919e7cc
+ms.openlocfilehash: d87e316200f2cc6fc1cc8632151361ede9d16a57
+ms.sourcegitcommit: a60e5e81cfa04b666a1df1111a1d91f6c11989e9
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/18/2021
-ms.locfileid: "61076919"
+ms.lasthandoff: 01/31/2022
+ms.locfileid: "62282013"
 ---
 # <a name="microsoft-graph-connectors-overview"></a>Visão geral dos conectores do Microsoft Graph
 
@@ -39,5 +39,3 @@ Embora esses conectores ajudem a se conectar aos serviços populares, talvez voc
 * [Trabalhando com a API de conectores](connecting-external-content-connectors-api-overview.md)
 * [Use o Postman com a API de conectores do Microsoft Graph](connecting-external-content-connectors-api-postman.md)
 * [Criar seu primeiro conector Microsoft Graph personalizado](connecting-external-content-build-quickstart.yml)
---->
-

@@ -4,20 +4,20 @@ description: Você pode usar a API Pesquisa da Microsoft para obter a sugestão 
 author: nmoreau
 ms.localizationpriority: medium
 ms.prod: search
-ms.openlocfilehash: a16c1e0a69e202ca34c1c52c176a15c0b5da7e88
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: c672af903811af716ae7c597bdc748974d24a1e2
+ms.sourcegitcommit: a60e5e81cfa04b666a1df1111a1d91f6c11989e9
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59071725"
+ms.lasthandoff: 01/31/2022
+ms.locfileid: "62282181"
 ---
 # <a name="use-the-microsoft-search-api-in-microsoft-graph-to-request-spelling-correction-preview"></a>Use a API Pesquisa da Microsoft no Microsoft Graph para solicitar correção ortográfica (visualização)
 
-Você pode usar a API Pesquisa da Microsoft para solicitar correções ortográficas para lidar com incompatibilidades entre erros de digitação em consultas do usuário e palavras corretas em conteúdos matched. Para solicitar correções ortográficas, especifique as seguintes propriedades na **propriedade queryAlterationOptions** do corpo da solicitação do [método de](/graph/api/search-query?view=graph-rest-beta&preserve-view=true) consulta:
+Você pode usar a API Pesquisa da Microsoft para solicitar correções ortográficas para lidar com incompatibilidades entre erros de digitação em consultas do usuário e palavras corretas em conteúdos matched. Para solicitar correções ortográficas, especifique as seguintes propriedades na **propriedade queryAlterationOptions** do [searchRequest](/graph/api/resources/searchrequest?view=graph-rest-beta&preserve-view=true):
 
-- **enableSuggestion** to enable/disable spelling suggestions for the user query. Você pode passar `true` para obter as informações de correção ortográfica sugeridas para erros de digitação na consulta do usuário.
+- **enableSuggestion** to enable/disable spelling suggestions for the user query. Você pode passar para `true` obter as informações de correção ortográfica sugeridas para erros de digitação na consulta do usuário.
 
-- **enableModification** para habilitar/desabilitar modificações ortográficas para a consulta do usuário. Você pode passar para obter os resultados da pesquisa para a consulta corrigida quando não houver resultados para a consulta original com erros de digitação e obter as informações de `true` correção correspondentes. 
+- **enableModification** para habilitar/desabilitar modificações ortográficas para a consulta do usuário. Você pode passar `true` para obter os resultados da pesquisa para a consulta corrigida  quando não houver resultados para a consulta original com erros de digitação e obter as informações de correção correspondentes.
 
 A prioridade da modificação ortográfica é maior do que a sugestão ortográfica se ambas estão habilitadas.
 
@@ -45,13 +45,13 @@ Content-Type: application/json
                 "queryString": "accountt"
             },
             "from": 0,
-            "size": 25
+            "size": 25,
+            "queryAlterationOptions": {
+                "enableSuggestion": true,
+                "enableModification": false
+            }
         }
-    ],
-    "queryAlterationOptions": {
-        "enableSuggestion": true,
-        "enableModification": false
-    }
+    ]
 }
 ```
 
@@ -73,26 +73,26 @@ Content-type: application/json
                     "total": 0,
                     "moreResultsAvailable": false
                 }
-            ]
+            ],
+            "queryAlterationResponse": {
+                "@odata.type": "#microsoft.substrateSearch.alterationResponse",
+                "originalQueryString": "accountt",
+                "queryAlteration": {
+                    "@odata.type": "#microsoft.substrateSearch.searchAlteration",
+                    "alteredQueryString": "account",
+                    "alteredHighlightedQueryString": "account",
+                    "alteredQueryTokens": [
+                        {
+                            "offset": 0,
+                            "length": 8,
+                            "suggestion": "account"
+                        }
+                    ]
+                },
+                "queryAlterationType": "Suggestion"
+            }
         }
-    ],
-    "queryAlterationResponse": {
-        "@odata.type": "#microsoft.substrateSearch.alterationResponse",
-        "originalQueryString": "accountt",
-        "queryAlteration": {
-            "@odata.type": "#microsoft.substrateSearch.searchAlteration",
-            "alteredQueryString": "account",
-            "alteredHighlightedQueryString": "account",
-            "alteredQueryTokens": [
-                {
-                    "offset": 0,
-                    "length": 8,
-                    "suggestion": "account"
-                }
-            ]
-        },
-        "queryAlterationType": "Suggestion"
-    }
+    ]
 }
 ```
 
@@ -118,13 +118,13 @@ Content-Type: application/json
                 "queryString": "accountt"
             },
             "from": 0,
-            "size": 25
+            "size": 25,
+            "queryAlterationOptions": {
+                "enableSuggestion": true,
+                "enableModification": true
+            }
         }
-    ],
-    "queryAlterationOptions": {
-        "enableSuggestion": true,
-        "enableModification": true
-    }
+    ]
 }
 ```
 
@@ -180,32 +180,32 @@ Content-type: application/json
                         }
                     ]
                 }
-            ]
+            ],
+            "queryAlterationResponse": {
+                "@odata.type": "#microsoft.substrateSearch.alterationResponse",
+                "originalQueryString": "accountt",
+                "queryAlteration": {
+                    "@odata.type": "#microsoft.substrateSearch.searchAlteration",
+                    "alteredQueryString": "account",
+                    "alteredHighlightedQueryString": "account",
+                    "alteredQueryTokens": [
+                        {
+                            "offset": 0,
+                            "length": 8,
+                            "suggestion": "account"
+                        }
+                    ]
+                },
+                "queryAlterationType": "Modification"
+            }
         }
-    ],
-    "queryAlterationResponse": {
-        "@odata.type": "#microsoft.substrateSearch.alterationResponse",
-        "originalQueryString": "accountt",
-        "queryAlteration": {
-            "@odata.type": "#microsoft.substrateSearch.searchAlteration",
-            "alteredQueryString": "account",
-            "alteredHighlightedQueryString": "account",
-            "alteredQueryTokens": [
-                {
-                    "offset": 0,
-                    "length": 8,
-                    "suggestion": "account"
-                }
-            ]
-        },
-        "queryAlterationType": "Modification"
-    }
+    ]
 }
 ```
 
 ## <a name="known-limitations"></a>Limitações conhecidas
 
-A correção ortográfica só é suportada para os seguintes recursos: **message**, **event**, **site**, **drive**, **driveItem**, **list**, **listItem** **e externalItem**.
+A correção ortográfica só tem suporte para os seguintes recursos: **message**, **event**, **site**, **drive**, **driveItem**, **list**, **listItem** e **externalItem**.
 
 ## <a name="next-steps"></a>Próximas etapas
 

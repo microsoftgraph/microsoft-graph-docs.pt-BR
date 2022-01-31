@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: kevinbellinger
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: f99e9a204e3db2703d7e1126a78dba6baae9cb1c
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: 9c5161a610854fcd85ad1d1bce6c6eda843f1f64
+ms.sourcegitcommit: a60e5e81cfa04b666a1df1111a1d91f6c11989e9
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62130630"
+ms.lasthandoff: 01/31/2022
+ms.locfileid: "62282167"
 ---
 # <a name="list-contacts"></a>Listar contatos
 
@@ -37,7 +37,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 ## <a name="http-request"></a>Solicitação HTTP
 
-Para obter todos os contatos na caixa de correio do usuário:
+Para obter todos os contatos na pasta de Contatos padrão de um usuário:
 
 <!-- { "blockType": "ignored" } -->
 ```http
@@ -77,7 +77,7 @@ Não forneça um corpo de solicitação para esse método.
 
 ## <a name="response"></a>Resposta
 
-Se tiver êxito, este método retornará um código de resposta e uma coleção de objetos `200 OK` de contato no corpo da resposta. [](../resources/contact.md)
+Se tiver êxito, este método retornará um `200 OK` código de resposta e uma [coleção de objetos](../resources/contact.md) de contato no corpo da resposta.
 ## <a name="example"></a>Exemplo
 ##### <a name="request"></a>Solicitação
 O exemplo a seguir obtém as **propriedades displayName** e **emailAddresses** dos contatos do usuário assinado.

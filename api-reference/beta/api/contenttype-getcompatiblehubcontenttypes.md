@@ -5,19 +5,19 @@ author: swapnil1993
 ms.localizationpriority: medium
 ms.prod: sites-and-lists
 doc_type: apiPageType
-ms.openlocfilehash: 0457265d9c6db8cf8207a3a440bf89b3d10bc2d2
-ms.sourcegitcommit: e4796212a2e8bbec61b6da8336f776c0305c49df
+ms.openlocfilehash: 3356e933a8fa516561dd8efe32211e6c3846b978
+ms.sourcegitcommit: a60e5e81cfa04b666a1df1111a1d91f6c11989e9
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/28/2022
-ms.locfileid: "62261991"
+ms.lasthandoff: 01/31/2022
+ms.locfileid: "62282216"
 ---
 # <a name="contenttype-getcompatiblehubcontenttypes"></a>contentType: getCompatibleHubContentTypes
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Obter tipos de conteúdo compatíveis no hub de tipo de conteúdo que podem ser adicionados a um site de [destino](../resources/site.md) ou a uma [lista](../resources/list.md).
+Obter tipos de conteúdo compatíveis no hub de tipo de conteúdo que podem ser adicionados a um [site de destino](../resources/site.md) ou a uma [lista](../resources/list.md).
 
 Esse método faz parte das alterações de publicação de tipo de conteúdo para otimizar a sincronização de tipos de conteúdo publicados para sites e listas, alternando efetivamente de uma abordagem "push everywhere" para "puxar conforme necessário". O método permite que os usuários puxem tipos de conteúdo diretamente do hub de tipo de conteúdo para um site ou lista. Para obter mais informações, [consulte addCopyFromContentTypeHub](contenttype-addcopyfromcontenttypehub.md) e o blog post [Syntex Product Updates – August 2021](https://techcommunity.microsoft.com/t5/sharepoint-syntex-blog/syntex-product-updates-august-2021/ba-p/2606438).
 
@@ -51,7 +51,7 @@ Não forneça um corpo de solicitação para esse método.
 
 ## <a name="response"></a>Resposta
 
-Se tiver êxito, essa função retornará `200 OK` um código de resposta e uma coleção [contentType](../resources/contenttype.md) no corpo da resposta.
+Se tiver êxito, essa função retornará um `200 OK` código de resposta e uma [coleção contentType](../resources/contenttype.md) no corpo da resposta.
 
 ## <a name="examples"></a>Exemplos
 
@@ -64,7 +64,7 @@ Se tiver êxito, essa função retornará `200 OK` um código de resposta e uma 
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta//sites/{siteId}/lists/{listId}/contentTypes/getCompatibleHubContentTypes
+GET https://graph.microsoft.com/beta/sites/{siteId}/lists/{listId}/contentTypes/getCompatibleHubContentTypes
 ```
 # <a name="c"></a>[C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/contenttype-getcompatiblehubcontenttypes-csharp-snippets.md)]
