@@ -3,12 +3,12 @@ title: Novidades do Microsoft Graph
 description: O que há de novo no Microsoft Graph
 author: angelgolfer-ms
 ms.localizationpriority: high
-ms.openlocfilehash: 156f15534b102d5a3e17acd7b04c32e30f34a3f7
-ms.sourcegitcommit: 71186ad44d8d0df15e10b0f89df68d2ef0cf9d14
+ms.openlocfilehash: 96d68f14255178ad94bd9fdcc88c8358df018cff
+ms.sourcegitcommit: a60e5e81cfa04b666a1df1111a1d91f6c11989e9
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/12/2022
-ms.locfileid: "61803501"
+ms.lasthandoff: 01/31/2022
+ms.locfileid: "62282062"
 ---
 # <a name="whats-new-in-microsoft-graph"></a>Novidades do Microsoft Graph
 
@@ -18,10 +18,70 @@ Veja os destaques das novidades nos dois últimos meses do Microsoft Graph, [o q
 > Recursos, incluindo APIs e ferramentas, no status de _visualização_ podem mudar sem aviso prévio e alguns podem nunca ser promovidos ao status de disponibilidade geral (GA). Não utilize recursos de visualização em aplicativos de produção.
 
 
+## <a name="january-2022-new-and-generally-available"></a>Janeiro de 2022: Novo e disponível ao público em geral
+
+### <a name="devices-and-apps--service-health-and-communications"></a>Dispositivos e aplicativos | Integridade do serviço e comunicações
+Obtenha um [anexo de anúncio de serviço](/graph/api/resources/serviceAnnouncementAttachment) a uma [mensagem de atualização de serviço](/graph/api/resources/serviceupdatemessage).
+
+### <a name="identity-and-access--governance"></a>Identidade e acesso | Governança
+- Obtenha uma coleção de recursos de [revisão de acesso](/graph/api/resources/accessreviewreviewer) que é usada para definir revisores contatados para uma [instância de revisores de acesso](/graph/api/resources/accessReviewInstance).
+- Diferencie 3 tipos de recursos cujo acesso é representado por meio de uma [decisão de revisão de acesso](/graph/api/resources/accessreviewinstancedecisionitem):
+  - Uma [política de atribuição de pacote de acesso](/graph/api/resources/accessReviewInstanceDecisionItemAccessPackageAssignmentPolicyResource) para a qual o acesso é determinado por uma decisão de revisão de acesso.
+  - Uma [função de recurso do Azure](/graph/api/resources/accessReviewInstanceDecisionItemAzureRoleResource) para a qual o acesso é determinado por uma decisão de revisão de acesso.
+  - Uma [entidade de serviço](/graph/api/resources/accessReviewInstanceDecisionItemServicePrincipalResource) cujo acesso a um recurso é determinado por uma decisão de revisão de acesso.
+
+### <a name="identity-and-access--identity-and-sign-in"></a>Identidade e acesso | Identidade e login
+Imponha um [controle de sessão](/graph/api/resources/conditionalAccessSessionControls) (definindo a propriedade **disableResilienceDefaults**) para determinar se o Microsoft Azure AD deve estender as sessões existentes com base nas informações coletadas antes de uma interrupção.
+
+### <a name="teamwork"></a>Trabalho em equipe
+[Criar um chat](/graph/api/chat-post) usando as permissões do aplicativo.
+
+## <a name="january-2022-new-in-preview-only"></a>Janeiro de 2022: Novo somente na pré-visualização
+
+### <a name="compliance--ediscovery"></a>Conformidade | Descoberta eletrônica
+Obtenha a URL do site OneDrive for Business de um custodiante (propriedade **siteWebUrl** de [userSource](/graph/api/resources/ediscovery-userSource?view=graph-rest-beta&preserve-view=true)).
+
+### <a name="devices-and-apps--cloud-pc"></a>Dispositivos e aplicativos | Computador na nuvem
+- Obtenha ou atualize as [configurações de uma organização](/graph/api/resources/cloudpcorganizationsettings?view=graph-rest-beta&preserve-view=true), que incluem a versão do sistema operacional Windows para provisionar em PCs na nuvem e o tipo de conta de usuário nos PCs na nuvem provisionados.
+- [Altere o tipo de conta de usuário](/graph/api/cloudPC-changeUserAccountType?view=graph-rest-beta&preserve-view=true) em um PC na nuvem especificado.
+
+### <a name="identity-and-access--governance"></a>Identidade e acesso | Governança
+- Os revisores de uma revisão de acesso podem [registrar](/graph/api/accessreviewinstancedecisionitem-recordalldecisions?view=graph-rest-beta&preserve-view=true) as decisões para as quais o usuário atual é o revisor.
+- Configure [a data e hora do último login de um usuário como um insight](/graph/api/resources/userLastSignInRecommendationInsightSetting?view=graph-rest-beta&preserve-view=true) para ajudar os revisores na tomada de decisões para uma [definição de cronograma de revisão de acesso](/graph/api/resources/accessreviewscheduledefinition?view=graph-rest-beta&preserve-view=true).
+- Configure [a data e hora da última entrada de um usuário como um insight](/graph/api/resources/userSignInInsight?view=graph-rest-beta&preserve-view=true) para uma [decisão sobre o acesso de um usuário ou entidade de segurança em uma instância de uma revisão de acesso](/graph/api/resources/accessreviewinstancedecisionitem?view=graph-rest-beta&preserve-view=true).
+- O solicitante de um pacote de acesso pode fornecer informações personalizadas como parte de um [recurso de pacote de acesso](/graph/api/resources/accesspackageresource?view=graph-rest-beta&preserve-view=true) que pode ser usado para tomar decisões de aprovação do pacote de acesso.
+- Um solicitante pode editar a resposta para a uma [pergunta](/graph/api/resources/accessPackageQuestion?view=graph-rest-beta&preserve-view=true) em uma [política de atribuição de pacote de acesso](/graph/api/resources/accesspackageassignmentpolicy?view=graph-rest-beta&preserve-view=true).
+
+### <a name="reports--identity-and-access-reports"></a>Relatórios | Relatórios de identidade e acesso
+- Obtenha detalhes dos [métodos de autenticação registrados para um usuário](/graph/api/resources/userRegistrationDetails?view=graph-rest-beta&preserve-view=true), como autenticação multifator, redefinição de senha de autoatendimento e autenticação sem senha.
+- Obtenha as seguintes propriedades para um evento de [entrada](/graph/api/resources/signIn?view=graph-rest-beta&preserve-view=true) de um usuário ou aplicativo em uma organização: 
+  - Qualquer contexto de autenticação de [acesso condicional](/graph/api/resources/authenticationContext?view=graph-rest-beta&preserve-view=true).
+  - Qualquer [política de duração da sessão](/graph/api/resources/sessionLifetimePolicy?view=graph-rest-beta&preserve-view=true) de acesso condicional.
+  - A ID de um recurso do Azure acessada durante a entrada.
+  - O identificador da credencial de identidade federada de um aplicativo, caso tenha sido usado para entrar.
+  - O identificador da entidade de serviço que representa o recurso de destino no evento de entrada.
+
+### <a name="reports--microsoft-365-usage-reports"></a>Relatórios | Relatórios de uso do Microsoft 365
+Obtenha relatórios de uso do Outlook, OneDrive e SharePoint para o Microsoft Cloud for US Government. Veja o resumo de [implantações na nuvem](/graph/api/resources/report?view=graph-rest-beta&preserve-view=true#cloud-deployments).
+
+### <a name="sites-and-lists"></a>Sites e listas
+- Adicione ou sincronize um tipo de conteúdo do hub de tipo de conteúdo para um [site](/graph/api/resources/site?view=graph-rest-beta&preserve-view=true) ou [lista](/graph/api/resources/list?view=graph-rest-beta&preserve-view=true), usando a ação [addCopyFromContentTypeHub](/graph/api/contenttype-addcopyfromcontenttypehub?view=graph-rest-beta&preserve-view=true). Isso torna um tipo de conteúdo ou sua atualização disponível para um site ou lista específica onde é necessário. Essa é uma melhoria da infraestrutura de sincronização herdada que envia o tipo de conteúdo para todos os sites de uma organização, reduzindo os tempos de espera para a propagação da publicação. 
+- Obtenha uma ou mais [operações avançadas e de longa duração](/graph/api/resources/richlongrunningoperation?view=graph-rest-beta&preserve-view=true) ocorrendo em um site ou lista, o que pode acontecer ao adicionar um tipo de conteúdo de forma síncrona.
+- Obtenha uma coleção de recursos de [tipo de conteúdo](/graph/api/resources/contentType?view=graph-rest-beta&preserve-view=true) do hub de tipo de conteúdo que são compatíveis usando a ação [getCompatibleHubContentTypes](/graph/api/contenttype-getcompatiblehubcontenttypes?view=graph-rest-beta&preserve-view=true). 
+
+### <a name="teamwork"></a>Trabalho em equipe
+- Permita que os usuários escolham **LastModifiedDateTime** ou **CreatedDateTime** como a ordem de classificação ao [listar mensagens em um chat](/graph/api/chat-list-messages?view=graph-rest-beta&preserve-view=true).
+- Especifique a atribuição do usuário (na propriedade **onBehalfOf**) quando um bot envia uma [mensagem de chat](/graph/api/resources/chatmessage?view=graph-rest-beta&preserve-view=true) em nome de um usuário.
+- Adicione os seguintes tipos de membros a um [chat](/graph/api/resources/chat?view=graph-rest-beta&preserve-view=true):
+  - [Convidado anônimo](/graph/api/resources/anonymousGuestConversationMember?view=graph-rest-beta&preserve-view=true)
+  - [Usuário da conta Microsoft](/graph/api/resources/microsoftAccountUserConversationMember?view=graph-rest-beta&preserve-view=true)
+  - [Usuário do Skype for Business](/graph/api/resources/skypeForBusinessUserConversationMember?view=graph-rest-beta&preserve-view=true)
+  - [Skype usuário](/graph/api/resources/skypeUserConversationMember?view=graph-rest-beta&preserve-view=true)
+
 ## <a name="december-2021-new-and-generally-available"></a>Dezembro de 2021: novo e disponível ao público geral
 
 ### <a name="cloud-communications--presence"></a>Comunicações na nuvem | Presença
-[Inscreva-se nas notificações de alterações](/graph/api/subscription-post-subscriptions?view=graph-rest-beta&preserve-view=true) no status de [presença](/graph/api/resources/presence) de um usuário especificado. Sempre especifique um certificado de criptografia na solicitação de assinatura, pois são [notificações avançadas que incluem dados de recursos criptografados](webhooks-with-resource-data.md).
+[Inscreva-se nas notificações de alterações](/graph/api/subscription-post-subscriptions) no status de [presença](/graph/api/resources/presence) de um usuário especificado. Sempre especifique um certificado de criptografia na solicitação de assinatura, pois são [notificações avançadas que incluem dados de recursos criptografados](webhooks-with-resource-data.md).
 
 
 ### <a name="compliance--subject-rights-requests"></a>Conformidade | Solicitações de direitos de entidade
@@ -94,42 +154,6 @@ Use a operação [atualizar](/graph/api/externalconnectors-schema-update?view=gr
 - Divida uma tarefa mais [tarefa](/graph/api/resources/task?view=graph-rest-beta&preserve-view=true) em subtarefas menores e mais acionáveis. Cada subtarefa é representada por um [checklistItem](/graph/api/resources/checklistitem?view=graph-rest-beta&preserve-view=true) recurso.
 - [Mover](/graph/api/basetask-move?view=graph-rest-beta&preserve-view=true) uma tarefa entre listas.
 - Consulte esta [ postagem do blog ](https://devblogs.microsoft.com/microsoft365dev/announcing-the-public-preview-of-to-do-tasks-api/) para obter mais detalhes e migre todos os aplicativos existentes que usam a [API To Do anterior](/graph/api/resources/todo-overview?view=graph-rest-beta&preserve-view=true) para a [API To Do mais recente](/graph/api/resources/tasks-overview?view=graph-rest-beta&preserve-view=true).
-
-
-## <a name="november-2021-new-and-generally-available"></a>Novembro de 2021: Novo e geralmente disponível ao público
-
-### <a name="files"></a>Arquivos
-Obtenha o estado de uma unidade a partir de um horário específico especificando o carimbo de data/hora codificado no URL correspondente. Veja um [exemplo](/graph/api/driveitem-delta#example-4-retrieving-delta-results-using-a-timestamp).
-
-### <a name="identity-and-access--identity-and-sign-in"></a>Identidade e acesso | Identidade e login
-- Execute [campanhas](/graph/api/resources/authenticationMethodsRegistrationCampaign) e [imponha os usuários a se registrarem](/graph/api/resources/registrationEnforcement) no momento da entrada para configurar os métodos de autenticação direcionados.
--  Configurar um [provedor de identidade Apple](/graph/api/resources/applemanagedidentityprovider) em um locatário do Azure AD B2C.
-
-## <a name="november-2021-new-in-preview-only"></a>Novembro de 2021: Novo somente na pré-visualização
-
-### <a name="cloud-communications--online-meeting"></a>Comunicações na nuvem | Reunião online
-Admita automaticamente novos tipos de participantes em uma reunião online e ignore o lobby da reunião:
-- Somente pessoas convidadas pelo organizador.
-- Somente os participantes da mesma empresa.
-
-### <a name="devices-and-apps--cloud-pc"></a>Dispositivos e aplicativos | Computador na nuvem
-- Defina uma [configuração](/graph/api/resources/cloudPcDomainJoinConfiguration?view=graph-rest-beta&preserve-view=true) de como um dispositivo de PC na nuvem provisionado pode ingressar no Azure Active Directory (Microsoft Azure AD): somente nuvem e ingressar somente no Microsoft Azure AD, ou híbrido e ingressar no Active Directory local e no Microsoft Azure AD.
-- Obtenha o [recurso de imagem da galeria](/graph/api/resources/cloudPcGalleryImage?view=graph-rest-beta&preserve-view=true) da organização atual que pode ser usado para provisionar um PC na nuvem.
-
-### <a name="devices-and-apps--device-updates"></a>Dispositivos e aplicativos | Atualizações do dispositivo
-- Use as [configurações de salvaguarda](/graph/api/resources/windowsupdates-safeguardSettings?view=graph-rest-beta&preserve-view=true) para recusar as proteções contra prováveis problemas em uma implantação.
-- Suporte para um [estado de implantação](/graph/api/resources/windowsupdates-deploymentState?view=graph-rest-beta&preserve-view=true) em que uma implantação está com defeito devido ao conteúdo não ser mais implantável, por exemplo, no fim do serviço.
-
-### <a name="identity-and-access--directory-management"></a>Identidade e acesso | Gerenciamento do diretório
-- Defina e atribua [atributos de segurança personalizado ](/graph/api/resources/custom-security-attributes-overview?view=graph-rest-beta&preserve-view=true) aos objetos do Microsoft Azure AD. Use esses atributos para armazenar informações, categorizar objetos ou impor um controle de acesso refinado sobre recursos específicos do Azure. Use esses atributos com o [Controle de acesso baseado em atributo do Azure](/azure/role-based-access-control/conditions-overview) (Azure ABAC).
-- [Crie um grupo dentro de uma unidade administrativa](/graph/api/administrativeunit-post-members?view=graph-rest-beta&preserve-view=true).
-
-### <a name="reports--microsoft-365-usage-reports"></a>Relatórios | Relatórios de uso do Microsoft 365
-[Os relatórios de uso do Microsoft 365](/graph/api/resources/report?view=graph-rest-beta&preserve-view=true) no tipo de saída JSON não são mais fortemente tipados e são do tipo `Edm.Stream`. Para obter mais informações, consulte [Alterações da propriedade OData na API de relatórios de uso do Microsoft 365 no Microsoft Graph](https://devblogs.microsoft.com/microsoft365dev/odata-property-changes-to-microsoft-365-usage-reports-api-in-microsoft-graph/).
-
-### <a name="teamwork"></a>Trabalho em equipe
-Marque um chat como [lido](/graph/api/chat-markChatReadForUser?view=graph-rest-beta&preserve-view=true) ou [não lido](/graph/api/chat-markchatunreadforuser?view=graph-rest-beta&preserve-view=true) para um usuário.
-
 
 
 ## <a name="want-to-stay-in-the-loop"></a>Quer ficar por dentro?

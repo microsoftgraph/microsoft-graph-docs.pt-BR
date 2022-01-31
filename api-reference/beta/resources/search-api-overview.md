@@ -5,12 +5,12 @@ ms.localizationpriority: high
 author: nmoreau
 ms.prod: search
 doc_type: resourcePageType
-ms.openlocfilehash: 5f7453dd5c08f282baa7667ad5793c9223e586d0
-ms.sourcegitcommit: c333953a9188b4cd4a9ab94cbe68871e8f3563e5
+ms.openlocfilehash: 6a30360dddeb06d9f8ac4d1ff5b485229087c3ce
+ms.sourcegitcommit: a60e5e81cfa04b666a1df1111a1d91f6c11989e9
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/30/2021
-ms.locfileid: "58695445"
+ms.lasthandoff: 01/31/2022
+ms.locfileid: "62282030"
 ---
 # <a name="use-the-microsoft-search-api-to-query-data"></a>Usar a API de Pesquisa da Microsoft para consultar dados
 
@@ -150,7 +150,7 @@ Confira [refinar os resultados da pesquisa](/graph/search-concept-aggregation) p
 
 A verificação ortográfica é uma maneira popular de lidar com incompatibilidades entre erros de digitação em uma consulta do usuário e as palavras corretas em conteúdos combinados. Quando erros de digitação são detectados na consulta original do usuário, você pode obter o resultado da pesquisa tanto para a consulta original do usuário quanto para a consulta alternativa corrigida. Você também pode obter as informações de verificação ortográfica para erros de digitação na propriedade **queryAlterationResponse** da [searchresponse](searchresponse.md).
 
-No corpo de solicitação do método [query](/graph/api/search-query?view=graph-rest-beta&preserve-view=true), especifique as **queryAlterationOptions** que devem ser aplicadas à consulta para as verificações ortográficas. A descrição das **queryAlterationOptions** são definidas nas [searchAlterationOptions](./searchalterationoptions.md).
+Em [searchRequest](./searchrequest.md), especifique as **queryAlterationOptions** que devem ser aplicadas à consulta para correções ortográficas. Para obter detalhes sobre a propriedade **queryAlterationOptions**, consulte [searchAlterationOptions](./searchalterationoptions.md).
 
 Para exemplos que mostram como usar verificações ortográficas, consulte [Solicitar verificação ortográfica](/graph/search-concept-speller).
 
