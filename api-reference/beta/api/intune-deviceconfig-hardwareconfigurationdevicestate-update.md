@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 862e89589f32573af43267ae66e47a089c0c6f25
-ms.sourcegitcommit: 65f4e128f96783c18d607a6dcffbc914291285d4
+ms.openlocfilehash: 9a13b1d7d8a418d5332f098043bb3d3bd1428e4a
+ms.sourcegitcommit: 15956da1b4a7d523363ffa8afb5e2059fbf680ce
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/08/2021
-ms.locfileid: "61345382"
+ms.lasthandoff: 02/01/2022
+ms.locfileid: "62291419"
 ---
 # <a name="update-hardwareconfigurationdevicestate"></a>Atualizar hardwareConfigurationDeviceState
 
@@ -20,7 +20,7 @@ Namespace: microsoft.graph
 
 > **Observação:** A API do Microsoft Graph para Intune requer uma [licença ativa do Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
 
-Atualize as propriedades de [um objeto hardwareConfigurationDeviceState.](../resources/intune-deviceconfig-hardwareconfigurationdevicestate.md)
+Atualize as propriedades de [um objeto hardwareConfigurationDeviceState](../resources/intune-deviceconfig-hardwareconfigurationdevicestate.md) .
 
 ## <a name="prerequisites"></a>Pré-requisitos
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
@@ -47,26 +47,26 @@ PATCH /deviceManagement/hardwareConfigurations/{hardwareConfigurationId}/deviceR
 |Aceitar|application/json|
 
 ## <a name="request-body"></a>Corpo da solicitação
-No corpo da solicitação, fornece uma representação JSON para o [objeto hardwareConfigurationDeviceState.](../resources/intune-deviceconfig-hardwareconfigurationdevicestate.md)
+No corpo da solicitação, fornece uma representação JSON para o [objeto hardwareConfigurationDeviceState](../resources/intune-deviceconfig-hardwareconfigurationdevicestate.md) .
 
 A tabela a seguir mostra as propriedades que são necessárias ao criar [o hardwareConfigurationDeviceState](../resources/intune-deviceconfig-hardwareconfigurationdevicestate.md).
 
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|id|String|Chave da entidade de estado do dispositivo de script de configuração de hardware. Essa propriedade é somente leitura.|
+|id|Cadeia de caracteres|Chave da entidade de estado do dispositivo de script de configuração de hardware. Essa propriedade é somente leitura.|
 |deviceName|String|O nome do dispositivo|
-|osVersion|String|A versão do sistema operacional do dispositivo.|
+|osVersion|String|Versão do sistema operacional do dispositivo (por exemplo, 10.0.19042.1165, 10.0.19042.1288 etc.)|
 |upn|Cadeia de caracteres|Nome principal do usuário (UPN).|
 |internalVersion|Int32|A versão interna da Política|
 |lastStateUpdateDateTime|DateTimeOffset|O último período de data/hora de quando a configuração de hardware foi executada|
 |configurationState|[runState](../resources/intune-shared-runstate.md)|Estado de configuração da última execução de configuração de hardware. Os possíveis valores são: `unknown`, `success`, `fail`, `scriptError`, `pending`, `notApplicable`.|
-|configurationOutput|String|Saída da execução da configuração de hardware|
+|configurationOutput|Cadeia de caracteres|Saída da execução da configuração de hardware|
 |configurationError|String|Erro da execução da configuração de hardware|
 
 
 
 ## <a name="response"></a>Resposta
-Se tiver êxito, este método retornará um código de resposta e um `200 OK` [objeto hardwareConfigurationDeviceState](../resources/intune-deviceconfig-hardwareconfigurationdevicestate.md) atualizado no corpo da resposta.
+Se tiver êxito, este método retornará um `200 OK` código de resposta e um [objeto hardwareConfigurationDeviceState](../resources/intune-deviceconfig-hardwareconfigurationdevicestate.md) atualizado no corpo da resposta.
 
 ## <a name="example"></a>Exemplo
 

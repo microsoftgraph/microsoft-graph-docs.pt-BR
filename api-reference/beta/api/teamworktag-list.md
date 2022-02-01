@@ -5,12 +5,12 @@ author: anniecolonna
 ms.localizationpriority: medium
 ms.prod: teamwork
 doc_type: apiPageType
-ms.openlocfilehash: efe14cacb2106a2d781ebc68abde4b7f914fc487
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: 6cbfe743012b9179fc14d1b847a897dad208c31f
+ms.sourcegitcommit: 15956da1b4a7d523363ffa8afb5e2059fbf680ce
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62118120"
+ms.lasthandoff: 02/01/2022
+ms.locfileid: "62289990"
 ---
 # <a name="list-teamworktags"></a>Listar teamworkTags
 Namespace: microsoft.graph
@@ -24,7 +24,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 |Tipo de permissão|Permissões (de privilégios máximos a mínimos)|
 |:---|:---|
-|Delegado (conta corporativa ou de estudante)|Sem suporte.|
+|Delegado (conta corporativa ou de estudante)|TeamworkTag.Read, TeamworkTag.ReadWrite|
 |Delegado (conta pessoal da Microsoft)|Sem suporte.|
 |Aplicativo|TeamworkTag.Read.All, TeamworkTag.ReadWrite.All|
 
@@ -56,7 +56,7 @@ Não forneça um corpo de solicitação para esse método.
 
 ## <a name="response"></a>Resposta
 
-Se tiver êxito, este método retornará um código `200 OK` de resposta e uma coleção de objetos [teamworkTag](../resources/teamworktag.md) no corpo da resposta.
+Se tiver êxito, este método retornará um `200 OK` código de resposta e uma coleção de objetos [teamworkTag](../resources/teamworktag.md) no corpo da resposta.
 
 ## <a name="examples"></a>Exemplos
 

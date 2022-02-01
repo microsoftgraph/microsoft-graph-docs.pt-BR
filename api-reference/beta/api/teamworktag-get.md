@@ -5,26 +5,26 @@ author: anniecolonna
 ms.localizationpriority: medium
 ms.prod: teamwork
 doc_type: apiPageType
-ms.openlocfilehash: 0c2cba0986213edda69b6668b2cfc6d01ba586b8
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: 3ef00a4b1dc602c4ae9f9acad472873345c9c65c
+ms.sourcegitcommit: 15956da1b4a7d523363ffa8afb5e2059fbf680ce
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62129362"
+ms.lasthandoff: 02/01/2022
+ms.locfileid: "62290634"
 ---
 # <a name="get-teamworktag"></a>Obter teamworkTag
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Leia as propriedades e as relações de um [objeto tag.](../resources/teamworktag.md)
+Leia as propriedades e as relações de um [objeto tag](../resources/teamworktag.md) .
 
 ## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão|Permissões (de privilégios máximos a mínimos)|
 |:---|:---|
-|Delegado (conta corporativa ou de estudante)|Sem suporte.|
+|Delegado (conta corporativa ou de estudante)|TeamworkTag.Read, TeamworkTag.ReadWrite|
 |Delegado (conta pessoal da Microsoft)|Sem suporte.|
 |Aplicativo|TeamworkTag.Read.All, TeamworkTag.ReadWrite.All|
 
@@ -51,7 +51,7 @@ Não forneça um corpo de solicitação para esse método.
 
 ## <a name="response"></a>Resposta
 
-Se tiver êxito, este método retornará um código `200 OK` de resposta e um objeto [teamworkTag](../resources/teamworktag.md) no corpo da resposta.
+Se tiver êxito, este método retornará um `200 OK` código de resposta e um [objeto teamworkTag](../resources/teamworktag.md) no corpo da resposta.
 
 ## <a name="examples"></a>Exemplos
 

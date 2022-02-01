@@ -5,12 +5,12 @@ author: payiAzure
 ms.localizationpriority: medium
 ms.prod: service-communications
 doc_type: resourcePageType
-ms.openlocfilehash: c761c2b6071939912f59e9d44b6557af1d0c6273
-ms.sourcegitcommit: bfd1ab7e015ef04cb2ca3fb85d308ba2ce830a89
+ms.openlocfilehash: 2f6dbdecf9a1faa109456284baa31f1be7a9a65b
+ms.sourcegitcommit: 15956da1b4a7d523363ffa8afb5e2059fbf680ce
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/19/2022
-ms.locfileid: "62072773"
+ms.lasthandoff: 02/01/2022
+ms.locfileid: "62291952"
 ---
 # <a name="serviceannouncementattachment-resource-type"></a>Tipo de recurso serviceAnnouncementAttachment
 
@@ -18,14 +18,12 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Representa um anexo associado a um [objeto serviceUpdateMessage.](../resources/serviceupdatemessage.md)
+Representa um anexo associado a um [objeto serviceUpdateMessage](../resources/serviceupdatemessage.md) .
 
-Herda do [anexo](../resources/attachment.md).
-
-## <a name="methods"></a>Methods
+## <a name="methods"></a>Métodos
 |Método|Tipo de retorno|Descrição|
 |:---|:---|:---|
-|[Obter serviceAnnouncementAttachment](../api/serviceannouncementattachment-get.md)|[serviceAnnouncementAttachment](../resources/serviceannouncementattachment.md)|Leia as propriedades e as relações de um [objeto serviceAnnouncementAttachment.](../resources/serviceannouncementattachment.md)|
+|[Obter serviceAnnouncementAttachment](../api/serviceannouncementattachment-get.md)|[serviceAnnouncementAttachment](../resources/serviceannouncementattachment.md)|Leia as propriedades e as relações de um [objeto serviceAnnouncementAttachment](../resources/serviceannouncementattachment.md) .|
 
 ## <a name="properties"></a>Propriedades
 |Propriedade|Tipo|Descrição|

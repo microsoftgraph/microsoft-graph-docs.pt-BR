@@ -2,25 +2,25 @@
 title: Obter groupPolicyUploadedDefinitionFile
 description: Leia propriedades e relações do objeto groupPolicyUploadedDefinitionFile.
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 28411237f30dc8e1583670a644b3b1268b363c9a
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 1a7ff6d80865b9dc10e84376c99807a82bb8a259
+ms.sourcegitcommit: 15956da1b4a7d523363ffa8afb5e2059fbf680ce
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59041861"
+ms.lasthandoff: 02/01/2022
+ms.locfileid: "62289892"
 ---
 # <a name="get-grouppolicyuploadeddefinitionfile"></a>Obter groupPolicyUploadedDefinitionFile
 
 Namespace: microsoft.graph
 
-> **Importante:** As APIs Graph Microsoft na versão /beta estão sujeitas a alterações; não há suporte para uso de produção.
+> **Importante:** As GRAPH da Microsoft na versão /beta estão sujeitas a alterações; o uso de produção não é suportado.
 
 > **Observação:** A API do Microsoft Graph para Intune requer uma [licença ativa do Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
 
-Leia propriedades e relações do [objeto groupPolicyUploadedDefinitionFile.](../resources/intune-grouppolicy-grouppolicyuploadeddefinitionfile.md)
+Leia propriedades e relações do [objeto groupPolicyUploadedDefinitionFile](../resources/intune-grouppolicy-grouppolicyuploadeddefinitionfile.md) .
 
 ## <a name="prerequisites"></a>Pré-requisitos
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
@@ -53,7 +53,7 @@ Este método dá suporte a [Parâmetros de consulta OData](/graph/query-paramete
 Não forneça um corpo de solicitação para esse método.
 
 ## <a name="response"></a>Resposta
-Se tiver êxito, este método retornará um código de resposta e um `200 OK` [objeto groupPolicyUploadedDefinitionFile](../resources/intune-grouppolicy-grouppolicyuploadeddefinitionfile.md) no corpo da resposta.
+Se tiver êxito, este método retornará um `200 OK` código de resposta e um [objeto groupPolicyUploadedDefinitionFile](../resources/intune-grouppolicy-grouppolicyuploadeddefinitionfile.md) no corpo da resposta.
 
 ## <a name="example"></a>Exemplo
 
@@ -82,9 +82,9 @@ Content-Length: 1108
     "targetNamespace": "Target Namespace value",
     "policyType": "admxIngested",
     "revision": "Revision value",
+    "fileName": "File Name value",
     "id": "0ce1a8cf-a8cf-0ce1-cfa8-e10ccfa8e10c",
     "lastModifiedDateTime": "2017-01-01T00:00:35.1329464-08:00",
-    "fileName": "File Name value",
     "status": "uploadInProgress",
     "content": "Y29udGVudA==",
     "uploadDateTime": "2016-12-31T23:58:46.5747426-08:00",
@@ -102,6 +102,7 @@ Content-Length: 1108
   }
 }
 ```
+
 
 
 

@@ -5,12 +5,12 @@ author: AshleyYangSZ
 ms.localizationpriority: medium
 ms.prod: cloud-pc
 doc_type: apiPageType
-ms.openlocfilehash: d020b4babd2b43012cc3f02d7c0e382e2abb0216
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: d0461962933e62edd82462ae0fe7e5ccd93e7161
+ms.sourcegitcommit: 15956da1b4a7d523363ffa8afb5e2059fbf680ce
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62134101"
+ms.lasthandoff: 02/01/2022
+ms.locfileid: "62290704"
 ---
 # <a name="delete-cloudpconpremisesconnection"></a>Excluir cloudPcOnPremisesConnection
 
@@ -18,7 +18,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Exclua um [objeto cloudPcOnPremisesConnection](../resources/cloudpconpremisesconnection.md) específico.
+[Exclua um objeto cloudPcOnPremisesConnection](../resources/cloudpconpremisesconnection.md) específico.
 
 Quando você exclui uma conexão, as permissões para o serviço são removidas dos recursos especificados do Azure.
 
@@ -105,7 +105,6 @@ DELETE https://graph.microsoft.com/beta/deviceManagement/virtualEndpoint/onPremi
 
 ### <a name="response"></a>Resposta
 
-**Observação:** o objeto de resposta mostrado aqui pode ser encurtado para legibilidade.
 <!-- {
   "blockType": "response",
   "truncated": true

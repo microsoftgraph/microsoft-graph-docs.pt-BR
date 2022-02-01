@@ -5,26 +5,26 @@ author: anniecolonna
 ms.localizationpriority: medium
 ms.prod: teamwork
 doc_type: apiPageType
-ms.openlocfilehash: 0b00934fdc88db7a805b5eaabb60ec4b955c10ba
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: 55e149a0d892a680dadf6fc32df61d25cb7070dd
+ms.sourcegitcommit: 15956da1b4a7d523363ffa8afb5e2059fbf680ce
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62115579"
+ms.lasthandoff: 02/01/2022
+ms.locfileid: "62291194"
 ---
 # <a name="delete-teamworktag"></a>Excluir teamworkTag
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Exclua [um objeto tag.](../resources/teamworktag.md) 
+Exclua [um objeto tag](../resources/teamworktag.md) . 
 
 ## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão|Permissões (de privilégios máximos a mínimos)|
 |:---|:---|
-|Delegado (conta corporativa ou de estudante)|Sem suporte.|
+|Delegado (conta corporativa ou de estudante)|TeamworkTag.ReadWrite|
 |Delegado (conta pessoal da Microsoft)|Sem suporte.|
 |Aplicativo|TeamworkTag.ReadWrite.All|
 

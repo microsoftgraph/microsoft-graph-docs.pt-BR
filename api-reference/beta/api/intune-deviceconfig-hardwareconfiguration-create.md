@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 97b4d40b7bd99b70a46f7d6c929ff2209ef1821d
-ms.sourcegitcommit: 65f4e128f96783c18d607a6dcffbc914291285d4
+ms.openlocfilehash: e9ff99a24a02d579aa2d9056d2f019811aedcb4d
+ms.sourcegitcommit: 15956da1b4a7d523363ffa8afb5e2059fbf680ce
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/08/2021
-ms.locfileid: "61345334"
+ms.lasthandoff: 02/01/2022
+ms.locfileid: "62291033"
 ---
 # <a name="create-hardwareconfiguration"></a>Criar hardwareConfiguration
 
@@ -20,7 +20,7 @@ Namespace: microsoft.graph
 
 > **Observação:** A API do Microsoft Graph para Intune requer uma [licença ativa do Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
 
-Crie um novo [objeto hardwareConfiguration.](../resources/intune-deviceconfig-hardwareconfiguration.md)
+Crie um novo [objeto hardwareConfiguration](../resources/intune-deviceconfig-hardwareconfiguration.md) .
 
 ## <a name="prerequisites"></a>Pré-requisitos
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
@@ -53,22 +53,22 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar o hardwa
 
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|id|String|Identificador exclusivo para a configuração de hardware|
-|versão|Int32|Versão da configuração de hardware|
-|displayName|String|Nome da configuração de hardware|
-|descrição|String|Descrição da configuração de hardware|
+|id|Cadeia de caracteres|Identificador exclusivo para a configuração de hardware|
+|versão|Int32|Versão da configuração de hardware (por exemplo. 1, 2, 3 ...)|
+|displayName|Cadeia de caracteres|Nome da configuração de hardware|
+|description|Cadeia de caracteres|Descrição da configuração de hardware|
 |createdDateTime|DateTimeOffset|Data e hora de quando a configuração de hardware foi criada. Essa propriedade é somente leitura.|
 |lastModifiedDateTime|DateTimeOffset|Data e hora de quando a configuração de hardware foi modificada. Essa propriedade é somente leitura.|
 |fileName|String|Nome do arquivo da configuração de hardware|
 |configurationFileContent|Binária|Conteúdo do arquivo da configuração de hardware|
-|hardwareConfigurationFormat|[hardwareConfigurationFormat](../resources/intune-deviceconfig-hardwareconfigurationformat.md)|Tipo Oem da configuração de hardware. Os valores possíveis são: `dell`, `surface`, `surfaceDock`.|
-|roleScopeTagIds|Coleção de cadeias de caracteres|Lista de IDs de marca de escopo para a configuração de hardware|
+|hardwareConfigurationFormat|[hardwareConfigurationFormat](../resources/intune-deviceconfig-hardwareconfigurationformat.md)|Tipo de oem da configuração de hardware (por exemplo. DELL, HP, Surface e SurfaceDock). Os valores possíveis são: `dell`, `surface`, `surfaceDock`.|
+|roleScopeTagIds|Conjunto de cadeias de caracteres|Lista de IDs de marca de escopo para a configuração de hardware|
 |perDevicePasswordDisabled|Booliano|Um valor que indica se por pasword devcive desabilitado|
 
 
 
 ## <a name="response"></a>Resposta
-Se tiver êxito, este método retornará um código `201 Created` de resposta e um objeto [hardwareConfiguration](../resources/intune-deviceconfig-hardwareconfiguration.md) no corpo da resposta.
+Se tiver êxito, este método retornará um `201 Created` código de resposta e um [objeto hardwareConfiguration](../resources/intune-deviceconfig-hardwareconfiguration.md) no corpo da resposta.
 
 ## <a name="example"></a>Exemplo
 

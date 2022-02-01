@@ -5,12 +5,12 @@ author: mmast-msft
 ms.localizationpriority: medium
 ms.prod: education
 doc_type: resourcePageType
-ms.openlocfilehash: 4885c2b661d2346eb80d274243c9b15d58769407
-ms.sourcegitcommit: c7ff992ef63e480d070421ba99b28ee129cb6acb
+ms.openlocfilehash: eca233d7e375991f34bdd2b44351fe75f371fee1
+ms.sourcegitcommit: 15956da1b4a7d523363ffa8afb5e2059fbf680ce
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "60695276"
+ms.lasthandoff: 02/01/2022
+ms.locfileid: "62290585"
 ---
 # <a name="educationsynchronizationconnectionsettings-resource-type"></a>Tipo de recurso educationSynchronizationConnectionSettings
 
@@ -43,14 +43,13 @@ A seguir está uma representação JSON desse recurso.
 
 <!-- {
   "blockType": "resource",
-   truncated: true,
-   "isAbstract":true,
-  "optionalProperties": [
-
-  ],
   "@odata.type": "microsoft.graph.educationSynchronizationConnectionSettings"
 }-->
 
 ```json
-{}
+{
+  "@odata.type": "microsoft.graph.educationSynchronizationConnectionSettings",
+  "clientId": "String",
+  "clientSecret": "String",
+}
 ```

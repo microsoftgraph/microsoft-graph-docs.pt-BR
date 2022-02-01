@@ -5,12 +5,12 @@ author: anniecolonna
 ms.localizationpriority: medium
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 7d47ce126cba2ae33486b997da47793f86a3f20e
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: 3addb263255c61b3b2d547e0bc6b842eacd71e43
+ms.sourcegitcommit: 15956da1b4a7d523363ffa8afb5e2059fbf680ce
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62129348"
+ms.lasthandoff: 02/01/2022
+ms.locfileid: "62290977"
 ---
 # <a name="delete-teamworktagmember"></a>Excluir o trabalho em equipeTagMember
 Namespace: microsoft.graph
@@ -24,7 +24,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 |Tipo de permissão|Permissões (de privilégios máximos a mínimos)|
 |:---|:---|
-|Delegado (conta corporativa ou de estudante)|Sem suporte.|
+|Delegado (conta corporativa ou de estudante)|TeamworkTag.ReadWrite|
 |Delegado (conta pessoal da Microsoft)|Sem suporte.|
 |Aplicativo|TeamworkTag.ReadWrite.All|
 

@@ -1,16 +1,16 @@
 ---
 title: tipo de recurso educationSynchronizationProfile
-description: Representa um conjunto de configurações usadas para sincronizar entidades de educação e informações de lista de um diretório de origem para o Azure Active Directory (Azure AD). Este recurso fornece uma representação programática usada no School Data Sync.
+description: Representa um conjunto de configurações usadas para sincronizar entidades de educação e informações de lista de um diretório de origem para Azure Active Directory (Azure AD). Esse recurso fornece uma representação programática usada em School Data Sync.
 author: mmast-msft
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: education
 doc_type: resourcePageType
-ms.openlocfilehash: 2db53346ae270f5441637835ec5da0427d9d4ab8
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 09ae4b8fc02c1a1f13a91102241b119727e8bed2
+ms.sourcegitcommit: 15956da1b4a7d523363ffa8afb5e2059fbf680ce
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47989595"
+ms.lasthandoff: 02/01/2022
+ms.locfileid: "62289927"
 ---
 # <a name="educationsynchronizationprofile-resource-type"></a>tipo de recurso educationSynchronizationProfile
 
@@ -18,57 +18,57 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Representa um conjunto de configurações usadas para sincronizar entidades de educação e informações de lista de um diretório de origem para o Azure Active Directory (Azure AD). Este recurso fornece uma representação programática usada no [School Data Sync](https://sds.microsoft.com).
+Representa um conjunto de configurações usadas para sincronizar entidades de educação e informações de lista de um diretório de origem para Azure Active Directory (Azure AD). Esse recurso fornece uma representação programática usada em [School Data Sync](https://sds.microsoft.com).
 
-## <a name="methods"></a>Methods
+## <a name="methods"></a>Métodos
 
 | Método                                                                    | Tipo de retorno                                                 | Descrição                                                                                                                    |
 | :------------------------------------------------------------------------ | :---------------------------------------------------------- | :----------------------------------------------------------------------------------------------------------------------------- |
-| [Listar perfis](../api/educationsynchronizationprofile-list.md)           | coleção [educationSynchronizationProfile]                | Obtenha uma lista de todos os perfis de sincronização no locatário.                                                                  |
-| [Obter perfil](../api/educationsynchronizationprofile-get.md)              | [educationSynchronizationProfile]                           | Recupere um perfil específico dado o identificador de perfil.                                                                      |
-| [Criar perfil](../api/educationsynchronizationprofile-post.md)          | Nenhum                                                        | Criar um novo perfil de sincronização.                                                                                          |
-| [Excluir perfil](../api/educationsynchronizationprofile-delete.md)        | [educationSynchronizationProfile]                           | Excluir um perfil específico dado o identificador de perfil.                                                                        |
-| [Pausar perfil](../api/educationsynchronizationprofile-pause.md)          | Nenhum                                                        | Pausar uma sincronização em andamento.                                                                                              |
-| [Retomar perfil](../api/educationsynchronizationprofile-resume.md)        | Nenhum                                                        | Retomar uma sincronização pausada.                                                                                               |
-| [Redefinir perfil](../api/educationsynchronizationprofile-reset.md)          | Nenhum                                                        | Redefina o estado do perfil e reinicie a sincronização.                                                                    |
-| [Iniciar perfil CSV](../api/educationsynchronizationprofile-start.md)      | coleção [educationFileSynchronizationVerificationMessage] | Verifique os arquivos de origem carregados e inicie a sincronização. Aplica-se somente quando o provedor de dados é [educationCsvDataProvider]. |
-| [Obter URL de upload de CSV](../api/educationsynchronizationprofile-uploadurl.md) | string                                                      | Retornar a URL de curta duração para carregar arquivos de dados CSV. Aplica-se somente quando o provedor de dados é [educationCsvDataProvider].        |
-| [Obter status](../api/educationsynchronizationprofilestatus-get.md)         | [educationsynchronizationProfileStatus]                     | Retornar o status de um perfil de sincronização específico.                                                                       |
-| [Obter erros](../api/educationsynchronizationerrors-get.md)                | coleção [educationSynchronizationError]                  | Obtenha todos os erros gerados durante a sincronização.                                                                           |
+| [Listar perfis](../api/educationsynchronizationprofile-list.md)           | [coleção educationSynchronizationProfile]                | Obter uma lista de todos os perfis de sincronização no locatário.                                                                  |
+| [Obter perfil](../api/educationsynchronizationprofile-get.md)              | [educationSynchronizationProfile]                           | Recupere um perfil específico, dado o identificador de perfil.                                                                      |
+| [Criar perfil](../api/educationsynchronizationprofile-post.md)          | Nenhuma                                                        | Crie um novo perfil de sincronização.                                                                                          |
+| [Excluir perfil](../api/educationsynchronizationprofile-delete.md)        | [educationSynchronizationProfile]                           | Exclua um perfil específico dado o identificador de perfil.                                                                        |
+| [Pausar perfil](../api/educationsynchronizationprofile-pause.md)          | Nenhuma                                                        | Pause uma sincronização contínua.                                                                                              |
+| [Retomar perfil](../api/educationsynchronizationprofile-resume.md)        | Nenhuma                                                        | Retomar uma sincronização pausada.                                                                                               |
+| [Redefinir perfil](../api/educationsynchronizationprofile-reset.md)          | Nenhuma                                                        | Redefina o estado do perfil e reinicie a sincronização.                                                                    |
+| [Iniciar perfil CSV](../api/educationsynchronizationprofile-start.md)      | [educationFileSynchronizationVerificationMessagecollection] | Verifique os arquivos de origem carregados e inicie a sincronização. Aplica-se somente quando o provedor de dados [é educationCsvDataProvider]. |
+| [Obter URL de carregamento CSV](../api/educationsynchronizationprofile-uploadurl.md) | cadeia de caracteres                                                      | Retorne a URL de curta duração para carregar arquivos de dados CSV. Aplica-se somente quando o provedor de dados [é educationCsvDataProvider].        |
+| [Obter status](../api/educationsynchronizationprofilestatus-get.md)         | [educationsynchronizationProfileStatus]                     | Retorne o status de um perfil de sincronização específico.                                                                       |
+| [Obter erros](../api/educationsynchronizationerrors-get.md)                | [coleção educationSynchronizationError]                  | Obter todos os erros gerados durante a sincronização.                                                                           |
 
 ## <a name="properties"></a>Propriedades
 
 | Propriedade                             | Tipo                                                   | Descrição                                                                                                                       |
 | :----------------------------------- | :----------------------------------------------------- | :-------------------------------------------------------------------------------------------------------------------------------- |
-| id                                   | String                                                 | O identificador exclusivo do recurso. (somente leitura)                                                                               |
-| displayName                          | String                                                 | Nome do perfil de configuração para sincronizar identidades.                                                                         |
-| DataProvider                         | [educationSynchronizationDataProvider]                 | O provedor de dados usado para o perfil.                                                                                           |
-| expirationDate                       | Data                                                   | A data em que o perfil deve ser considerado expirado e parar a sincronização. Quando `null` . o perfil nunca expirará. (opcional)       |
-| handleSpecialCharacterConstraint     | Bool                                                   | Determina se a escola de sincronização de dados deve substituir automaticamente caracteres especiais não suportados durante a sincronização da origem.             |
-| identitySynchronizationConfiguration | [educationIdentitySynchronizationConfiguration]        | Determina como o perfil deve [criar usuários novos][fullsync] ou [correspondentes existentes][dirsync] do AAD.                                  |
-| licensesToAssign                     | coleção [educationSynchronizationLicenseAssignment] | Configuração da instalação da licença.                                                                                                      |
-| state                                | educationSynchronizationProfileState                   | O estado do perfil. Os valores possíveis são: `provisioning`, `provisioned`, `provisioningFailed`, `deleting`, `deletionFailed`. |
+| id                                   | Cadeia de caracteres                                                 | O identificador exclusivo do recurso. (somente leitura)                                                                               |
+| displayName                          | Cadeia de caracteres                                                 | Nome do perfil de configuração para sincronização de identidades.                                                                         |
+| dataProvider                         | [educationSynchronizationDataProvider]                 | O provedor de dados usado para o perfil.                                                                                           |
+| expirationDate                       | Data                                                   | A data em que o perfil deve ser considerado expirado e interromper a sincronização. Quando `null`. o perfil nunca expirará. (opcional)       |
+| handleSpecialCharacterConstraint     | Bool                                                   | Determina se o School Data Sync deve substituir automaticamente caracteres especiais sem suporte durante a sincronização da origem.             |
+| identitySynchronizationConfiguration | [educationIdentitySynchronizationConfiguration]        | Determina como o Perfil deve [criar novos ou][fullsync] [corresponder aos][dirsync] AAD Usuários existentes.                                  |
+| licensesToAssign                     | [coleção educationSynchronizationLicenseAssignment] | Configuração de configuração de licença.                                                                                                      |
+| estado                                | educationSynchronizationProfileState                   | O estado do perfil. Os valores possíveis são: `provisioning`, `provisioned`, `provisioningFailed`, `deleting`, `deletionFailed`. |
 
 ## <a name="relationships"></a>Relações
 
 | Relação  | Tipo                                       | Descrição                                              |
 | :------------ | :----------------------------------------- | :------------------------------------------------------- |
-| erros        | coleção [educationSynchronizationError] | Todos os erros associados a este perfil de sincronização. |
-| profileStatus | [educationSynchronizationProfileStatus]    | O status da sincronização.                              |
+| erros        | [coleção educationSynchronizationError] | Todos os erros associados a esse perfil de sincronização. |
+| profileStatus | [educationSynchronizationProfileStatus]    | O status de sincronização.                              |
 
 ## <a name="data-providers"></a>Provedores de dados
 
-Cada [educationSynchronizationProfile] deve especificar um dos provedores de dados a seguir para usar como a fonte de sincronização.
+Cada [educationSynchronizationProfile] deve especificar um dos provedores de dados a seguir a ser usado como fonte de sincronização.
 
 | Data Provider                                                             | Descrição                                                                                        |
 | :------------------------------------------------------------------------ | :------------------------------------------------------------------------------------------------- |
-| [educationCsvDataProvider]                                                | Arquivos CSV carregados para a [URL SAS](../api/educationsynchronizationprofile-uploadurl.md) do perfil |
-| [educationOneRosterApiDataProvider](educationonerosterapidataprovider.md) | API do OneRoster v 1.1                                                                                 |
+| [educationCsvDataProvider]                                                | Arquivos CSV carregados na [URL SAS do Perfil](../api/educationsynchronizationprofile-uploadurl.md) |
+| [educationOneRosterApiDataProvider](educationonerosterapidataprovider.md) | OneRoster v1.1 API                                                                                 |
 | [educationPowerSchoolDataProvider]                                        | API da PowerSchool                                                                                    |
 
 ## <a name="json-representation"></a>Representação JSON
 
-Veja a seguir uma representação JSON do recurso **educationSynchronizationProfile** .
+A seguir está uma representação JSON do **recurso educationSynchronizationProfile** .
 
 <!-- {
   "blockType": "resource",
@@ -132,9 +132,6 @@ Veja a seguir uma representação JSON do recurso **educationSynchronizationProf
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": [
-      "Error: microsoft.graph.educationSynchronizationProfile/dataProvider:\r\n      Referenced type microsoft.graph.educationSynchronizationDataProvider is not defined in the doc set! Potential suggestion: UNKNOWN"
-  ]
 }-->
 
 

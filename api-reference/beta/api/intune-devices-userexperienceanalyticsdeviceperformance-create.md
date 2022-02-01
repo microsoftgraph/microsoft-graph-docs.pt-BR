@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 9a7e21e295b4ac7671d1dba96a064a3a3f346714
-ms.sourcegitcommit: 65f4e128f96783c18d607a6dcffbc914291285d4
+ms.openlocfilehash: 67b3f73a633cdff7a411d85851ef2cf1856a1083
+ms.sourcegitcommit: 15956da1b4a7d523363ffa8afb5e2059fbf680ce
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/08/2021
-ms.locfileid: "61343473"
+ms.lasthandoff: 02/01/2022
+ms.locfileid: "62290669"
 ---
 # <a name="create-userexperienceanalyticsdeviceperformance"></a>Criar userExperienceAnalyticsDevicePerformance
 
@@ -20,7 +20,7 @@ Namespace: microsoft.graph
 
 > **Observação:** A API do Microsoft Graph para Intune requer uma [licença ativa do Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
 
-Crie um novo [objeto userExperienceAnalyticsDevicePerformance.](../resources/intune-devices-userexperienceanalyticsdeviceperformance.md)
+Crie um novo [objeto userExperienceAnalyticsDevicePerformance](../resources/intune-devices-userexperienceanalyticsdeviceperformance.md) .
 
 ## <a name="prerequisites"></a>Pré-requisitos
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
@@ -53,11 +53,11 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar o userEx
 
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|id|String|O identificador exclusivo do dispositivo de desempenho de inicialização do dispositivo de análise de experiência do usuário.|
+|id|Cadeia de caracteres|O identificador exclusivo do dispositivo de desempenho de inicialização do dispositivo de análise de experiência do usuário.|
 |deviceName|String|O nome do dispositivo de análise de experiência do usuário.|
 |modelo|String|O modelo de dispositivo de análise de experiência do usuário.|
 |fabricante|String|O fabricante do dispositivo de análise de experiência do usuário.|
-|diskType|[diskType](../resources/intune-devices-disktype.md)|O tipo de disco do dispositivo de análise de experiência do usuário. Os valores possíveis são: `unkown`, `hdd`, `ssd`.|
+|diskType|[diskType](../resources/intune-devices-disktype.md)|O tipo de disco do dispositivo de análise de experiência do usuário. Os valores possíveis são: `hdd`, `ssd`, `unknown`.|
 |operatingSystemVersion|String|A versão do sistema operacional do dispositivo de análise de experiência do usuário.|
 |bootScore|Int32|A pontuação de inicialização do dispositivo de análise de experiência do usuário.|
 |coreBootTimeInMs|Int32|O tempo de inicialização principal do dispositivo de análise de experiência do usuário em milissegundos.|
@@ -78,7 +78,7 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar o userEx
 
 
 ## <a name="response"></a>Resposta
-Se tiver êxito, este método retornará um código de resposta e um `201 Created` [objeto userExperienceAnalyticsDevicePerformance](../resources/intune-devices-userexperienceanalyticsdeviceperformance.md) no corpo da resposta.
+Se tiver êxito, este método retornará `201 Created` um código de resposta e um [objeto userExperienceAnalyticsDevicePerformance](../resources/intune-devices-userexperienceanalyticsdeviceperformance.md) no corpo da resposta.
 
 ## <a name="example"></a>Exemplo
 
@@ -94,7 +94,7 @@ Content-length: 739
   "deviceName": "Device Name value",
   "model": "Model value",
   "manufacturer": "Manufacturer value",
-  "diskType": "hdd",
+  "diskType": "ssd",
   "operatingSystemVersion": "Operating System Version value",
   "bootScore": 9,
   "coreBootTimeInMs": 0,
@@ -127,7 +127,7 @@ Content-Length: 788
   "deviceName": "Device Name value",
   "model": "Model value",
   "manufacturer": "Manufacturer value",
-  "diskType": "hdd",
+  "diskType": "ssd",
   "operatingSystemVersion": "Operating System Version value",
   "bootScore": 9,
   "coreBootTimeInMs": 0,

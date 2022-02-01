@@ -1,16 +1,16 @@
 ---
 title: Tipo de recurso internetMessageHeader
-description: 'Um par chave-valor que representa um header de mensagem da Internet, conforme definido por RFC5322, que fornece '
-localization_priority: Normal
+description: 'Um par de valores-chave que representa um header de mensagem da Internet, conforme definido por RFC5322, que fornece '
+ms.localizationpriority: medium
 doc_type: resourcePageType
-ms.prod: ''
 author: abheek-das
-ms.openlocfilehash: 687465656844722a04c94549c4d8e6f90156f4f4
-ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
+ms.prod: outlook
+ms.openlocfilehash: 5c17023185261b86a53eb87eccc5fce8be8df1d1
+ms.sourcegitcommit: 15956da1b4a7d523363ffa8afb5e2059fbf680ce
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/06/2021
-ms.locfileid: "50130526"
+ms.lasthandoff: 02/01/2022
+ms.locfileid: "62291166"
 ---
 # <a name="internetmessageheader-resource-type"></a>Tipo de recurso internetMessageHeader
 
@@ -20,7 +20,7 @@ Namespace: microsoft.graph
 
 Um par chave-valor que representa um cabeçalho de mensagem da Internet, conforme definido pelo [RFC5322](https://www.ietf.org/rfc/rfc5322.txt), que fornece detalhes do caminho de rede obtido por uma mensagem do remetente para o destinatário.
 
-Confira exemplos de um cabeçalho de mensagem da Internet em [Exibir cabeçalhos de mensagens de email](https://support.office.com/en-us/article/View-e-mail-message-headers-CD039382-DC6E-4264-AC74-C048563D212C#bm4).
+Confira exemplos de um cabeçalho de mensagem da Internet em [Exibir cabeçalhos de mensagens de email](https://support.office.com/article/View-e-mail-message-headers-CD039382-DC6E-4264-AC74-C048563D212C#bm4).
 
 
 ## <a name="properties"></a>Propriedades

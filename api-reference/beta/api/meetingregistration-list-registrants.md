@@ -5,12 +5,12 @@ author: mkhribech
 ms.localizationpriority: medium
 ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: 4090d3ea94802d7e8835afc6b792f51d62f148c1
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: eac4cbc1c60c206edd3490ea206cefd37eb4d3be
+ms.sourcegitcommit: 15956da1b4a7d523363ffa8afb5e2059fbf680ce
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "61019770"
+ms.lasthandoff: 02/01/2022
+ms.locfileid: "62291110"
 ---
 # <a name="list-registrants"></a>Listar registrantes
 
@@ -20,7 +20,7 @@ Namespace: microsoft.graph
 
 Obter uma lista dos [meetingRegistrants](../resources/meetingregistrant.md) de um [onlineMeeting](../resources/onlinemeeting.md) em nome do organizador.
 
-Você pode usar esse método para obter o relatório de registro de [um Microsoft Teams webinar](https://support.microsoft.com/en-us/office/get-started-with-teams-webinars-42f3f874-22dc-4289-b53f-bbc1a69013e3).
+Você pode usar esse método para obter o relatório de registro de um [Microsoft Teams webinar](https://support.microsoft.com/office/get-started-with-teams-webinars-42f3f874-22dc-4289-b53f-bbc1a69013e3).
 
 ## <a name="permissions"></a>Permissões
 
@@ -54,7 +54,7 @@ Não forneça um corpo de solicitação para esse método.
 
 ## <a name="response"></a>Resposta
 
-Se tiver êxito, este método retornará um código de resposta e uma `200 OK` coleção [de objetos meetingRegistrant](../resources/meetingRegistrant.md) no corpo da resposta. As **propriedades joinWebUrl** **e questionId** serão `null` .
+Se tiver êxito, este método retornará um `200 OK` código de resposta e uma coleção [de objetos meetingRegistrant](../resources/meetingRegistrant.md) no corpo da resposta. As **propriedades joinWebUrl** **e questionId** serão `null`.
 
 ## <a name="example"></a>Exemplo
 
@@ -86,7 +86,7 @@ GET https://graph.microsoft.com/beta/me/onlineMeetings/MSpkYzE3Njc0Yy04MWQ5LTRhZ
 [!INCLUDE [sample-code](../includes/snippets/java/list-registratrants-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[Go](#tab/go)
+# <a name="go"></a>[Ir](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/list-registratrants-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 

@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: b483ac65e867bd8fd9ac5c63071f36b52176dca5
-ms.sourcegitcommit: 65f4e128f96783c18d607a6dcffbc914291285d4
+ms.openlocfilehash: f758e01fb2998a53c8a7f57782338b3f2281ab6b
+ms.sourcegitcommit: 15956da1b4a7d523363ffa8afb5e2059fbf680ce
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/08/2021
-ms.locfileid: "61336472"
+ms.lasthandoff: 02/01/2022
+ms.locfileid: "62291917"
 ---
 # <a name="list-userexperienceanalyticsdeviceperformances"></a>Listar userExperienceAnalyticsDevicePerformances
 
@@ -20,7 +20,7 @@ Namespace: microsoft.graph
 
 > **Observação:** A API do Microsoft Graph para Intune requer uma [licença ativa do Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
 
-Listar propriedades e relações dos [objetos userExperienceAnalyticsDevicePerformance.](../resources/intune-devices-userexperienceanalyticsdeviceperformance.md)
+Listar propriedades e relações dos [objetos userExperienceAnalyticsDevicePerformance](../resources/intune-devices-userexperienceanalyticsdeviceperformance.md) .
 
 ## <a name="prerequisites"></a>Pré-requisitos
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
@@ -50,7 +50,7 @@ GET /deviceManagement/userExperienceAnalyticsDevicePerformance
 Não forneça um corpo de solicitação para esse método.
 
 ## <a name="response"></a>Resposta
-Se tiver êxito, este método retornará um código de resposta e uma coleção de `200 OK` [objetos userExperienceAnalyticsDevicePerformance](../resources/intune-devices-userexperienceanalyticsdeviceperformance.md) no corpo da resposta.
+Se tiver êxito, este método retornará `200 OK` um código de resposta e uma coleção de [objetos userExperienceAnalyticsDevicePerformance](../resources/intune-devices-userexperienceanalyticsdeviceperformance.md) no corpo da resposta.
 
 ## <a name="example"></a>Exemplo
 
@@ -75,7 +75,7 @@ Content-Length: 909
       "deviceName": "Device Name value",
       "model": "Model value",
       "manufacturer": "Manufacturer value",
-      "diskType": "hdd",
+      "diskType": "ssd",
       "operatingSystemVersion": "Operating System Version value",
       "bootScore": 9,
       "coreBootTimeInMs": 0,

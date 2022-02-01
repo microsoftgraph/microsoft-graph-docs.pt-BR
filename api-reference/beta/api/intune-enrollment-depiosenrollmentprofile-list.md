@@ -5,22 +5,22 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 627344818ac69ecafe2c0771e6a360f57ed34008
-ms.sourcegitcommit: 4a960067cf2cd7d3c605550150eb3c9259adfe92
+ms.openlocfilehash: f0408664dece0615a13964ac685c105abdd4d091
+ms.sourcegitcommit: 15956da1b4a7d523363ffa8afb5e2059fbf680ce
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/19/2021
-ms.locfileid: "60491069"
+ms.lasthandoff: 02/01/2022
+ms.locfileid: "62290522"
 ---
 # <a name="list-depiosenrollmentprofiles"></a>Listar depIOSEnrollmentProfiles
 
 Namespace: microsoft.graph
 
-> **Importante:** As APIs Graph Microsoft na versão /beta estão sujeitas a alterações; não há suporte para uso de produção.
+> **Importante:** As GRAPH da Microsoft na versão /beta estão sujeitas a alterações; o uso de produção não é suportado.
 
 > **Observação:** A API do Microsoft Graph para Intune requer uma [licença ativa do Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
 
-Listar propriedades e relações dos [objetos depIOSEnrollmentProfile.](../resources/intune-enrollment-depiosenrollmentprofile.md)
+Listar propriedades e relações dos [objetos depIOSEnrollmentProfile](../resources/intune-enrollment-depiosenrollmentprofile.md) .
 
 ## <a name="prerequisites"></a>Pré-requisitos
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
@@ -50,7 +50,7 @@ GET /deviceManagement/depOnboardingSettings/{depOnboardingSettingId}/enrollmentP
 Não forneça um corpo de solicitação para esse método.
 
 ## <a name="response"></a>Resposta
-Se tiver êxito, este método retornará um código de resposta e uma `200 OK` coleção [de objetos depIOSEnrollmentProfile](../resources/intune-enrollment-depiosenrollmentprofile.md) no corpo da resposta.
+Se tiver êxito, este método retornará um `200 OK` código de resposta e uma coleção [de objetos depIOSEnrollmentProfile](../resources/intune-enrollment-depiosenrollmentprofile.md) no corpo da resposta.
 
 ## <a name="example"></a>Exemplo
 
@@ -65,7 +65,7 @@ Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado a
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 2662
+Content-Length: 2707
 
 {
   "value": [
@@ -130,11 +130,13 @@ Content-Length: 2662
       "temporarySessionTimeoutInSeconds": 0,
       "userSessionTimeoutInSeconds": 11,
       "passcodeLockGracePeriodInSeconds": 0,
-      "carrierActivationUrl": "https://example.com/carrierActivationUrl/"
+      "carrierActivationUrl": "https://example.com/carrierActivationUrl/",
+      "userlessSharedAadModeEnabled": true
     }
   ]
 }
 ```
+
 
 
 

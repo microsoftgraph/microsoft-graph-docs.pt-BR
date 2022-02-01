@@ -1,16 +1,16 @@
 ---
 title: tipo de recurso da pasta de trabalho
 description: Contém objetos de pasta de trabalho relacionados, como planilhas, tabelas, intervalos e assim por diante.
-localization_priority: Normal
+ms.localizationpriority: medium
 author: lumine2008
 ms.prod: excel
 doc_type: resourcePageType
-ms.openlocfilehash: 83f570301afe4a20aab6f77375e7a575df016d56
-ms.sourcegitcommit: 503c72036c376a30e08c29df8e7730a7afcab66e
+ms.openlocfilehash: ac8454ea02a81151be85267cb70e7909cb47e83d
+ms.sourcegitcommit: 15956da1b4a7d523363ffa8afb5e2059fbf680ce
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/10/2021
-ms.locfileid: "52870483"
+ms.lasthandoff: 02/01/2022
+ms.locfileid: "62291054"
 ---
 # <a name="workbook-resource-type"></a>tipo de recurso da pasta de trabalho
 
@@ -34,7 +34,7 @@ Nenhum.
 ## <a name="relationships"></a>Relações
 | Relação | Tipo   |Descrição|
 |:---------------|:--------|:----------|
-|names|coleção [workbookNamedItem](workbooknameditem.md) |Representa uma coleção de workbooks com escopo de itens nomeados (intervalos nomeados e constantes). Somente leitura.|
+|names|coleção [workbookNamedItem](workbooknameditem.md) |Representa uma coleta de itens denominados de escopo de pastas de trabalho (denominados intervalos e constantes). Somente leitura.|
 |tables|coleção [WorkbookTable](workbooktable.md) |Representa uma coleção de tabelas associadas à pasta de trabalho. Somente leitura.|
 |worksheets|coleção [WorkbookWorksheet](workbookworksheet.md) |Representa uma coleção de planilhas associadas à pasta de trabalho. Somente leitura.|
 |workbbookApplication|[workbookApplication](workbookapplication.md) |Representa a Excel workbookApplication que gerencia a workbook.|
@@ -44,7 +44,7 @@ Nenhum.
 
 [Funções do Excel](#functions): Invoque uma função de pasta de trabalho usando a sintaxe `POST /me/drive/root/workbook/functions/{function-name}` e fornecendo os argumentos de função no corpo usando um objeto JSON. O `value` resultante da função e quaisquer cadeias de caracteres `error` são retornados no objeto de resultado de função. O valor `error` de `null` indica a execução bem-sucedida da função. 
 
-A lista completa de funções com suporte está listada [aqui](https://support.office.com/en-us/article/Excel-functions-alphabetical-b3944572-255d-4efb-bb96-c6d90033e188). Confira a assinatura de função para tipos de dados e nomes de parâmetro específicos.
+A lista completa de funções com suporte está listada [aqui](https://support.office.com/article/Excel-functions-alphabetical-b3944572-255d-4efb-bb96-c6d90033e188). Confira a assinatura de função para tipos de dados e nomes de parâmetro específicos.
 
 _Observações importantes:_ 
 * O parâmetro de entrada do intervalo é fornecido usando um objeto range, em vez da cadeia de caracteres de endereço do intervalo.  
@@ -63,7 +63,7 @@ Dentro de uma célula, a função `vlookup` tem esta aparência:
 
 = PROCV(valor de pesquisa, intervalo que contém o valor de pesquisa, o número da coluna no intervalo que contém o valor de retorno, opcionalmente, TRUE para coincidência aproximada ou FALSE para uma correspondência exata)
 
-(Confira a documentação para a função do Excel [PROCV](https://support.office.com/en-us/article/VLOOKUP-function-0bbc8083-26fe-4963-8ab8-93a18ad188a1)).
+(Confira a documentação para a função do Excel [PROCV](https://support.office.com/article/VLOOKUP-function-0bbc8083-26fe-4963-8ab8-93a18ad188a1)).
 
 O exemplo abaixo mostra como chamar a função `vlookup` e passar esses parâmetros com a API REST do Excel.
 Solicitação: 
@@ -105,7 +105,7 @@ Dentro de uma célula, a função `median` se parece com este exemplo:
 
 =MED(A2:A6)
 
-(Confira a documentação para a função [MED](https://support.office.com/en-us/article/MEDIAN-function-d0916313-4753-414c-8537-ce85bdd967d2)).
+(Confira a documentação para a função [MED](https://support.office.com/article/MEDIAN-function-d0916313-4753-414c-8537-ce85bdd967d2)).
 
 O exemplo abaixo mostra como chamar a função `median` e um ou mais intervalos de entrada com a API REST do Excel. 
 

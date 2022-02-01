@@ -5,26 +5,26 @@ author: anniecolonna
 ms.localizationpriority: medium
 ms.prod: teamwork
 doc_type: apiPageType
-ms.openlocfilehash: 16e743648ecca3db186ad7b223d67c57f215c1bd
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: 69b747f9ceb08ddac13381f983dda8b8fc95f72b
+ms.sourcegitcommit: 15956da1b4a7d523363ffa8afb5e2059fbf680ce
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62122845"
+ms.lasthandoff: 02/01/2022
+ms.locfileid: "62291398"
 ---
 # <a name="update-teamworktag"></a>Atualizar o teamworkTag
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Atualize as propriedades de um [objeto teamworkTag.](../resources/teamworktag.md)
+Atualize as propriedades de um [objeto teamworkTag](../resources/teamworktag.md) .
 
 ## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão|Permissões (de privilégios máximos a mínimos)|
 |:---|:---|
-|Delegado (conta corporativa ou de estudante)|Sem suporte.|
+|Delegado (conta corporativa ou de estudante)|TeamworkTag.ReadWrite|
 |Delegado (conta pessoal da Microsoft)|Sem suporte.|
 |Aplicativo|TeamworkTag.ReadWrite.All|
 
@@ -45,9 +45,9 @@ PATCH /teams/{team-Id}/tags/{teamworkTag-Id}
 |Content-Type|application/json. Obrigatório.|
 
 ## <a name="request-body"></a>Corpo da solicitação
-No corpo da solicitação, fornece uma representação JSON do [objeto teamworkTag.](../resources/teamworktag.md)
+No corpo da solicitação, fornece uma representação JSON do [objeto teamworkTag](../resources/teamworktag.md) .
 
-A tabela a seguir mostra as propriedades que são necessárias ao atualizar o trabalho em [equipeTag](../resources/teamworktag.md).
+A tabela a seguir mostra as propriedades que são necessárias ao atualizar o [teamworkTag](../resources/teamworktag.md).
 
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
@@ -55,7 +55,7 @@ A tabela a seguir mostra as propriedades que são necessárias ao atualizar o tr
 
 ## <a name="response"></a>Resposta
 
-Se tiver êxito, este método retornará um código de resposta e um `200 OK` objeto [teamworkTag](../resources/teamworktag.md) atualizado no corpo da resposta.
+Se tiver êxito, este método retornará um `200 OK` código de resposta e um objeto [teamworkTag](../resources/teamworktag.md) atualizado no corpo da resposta.
 
 ## <a name="examples"></a>Exemplos
 

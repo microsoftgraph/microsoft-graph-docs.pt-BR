@@ -460,7 +460,7 @@ items:
                 href: api/mailfolder-list-messagerules.md
               - name: Enviar email
                 href: api/user-sendmail.md
-          - name: Notas
+          - name: Observações
             items:
               - name: Onenote
                 href: resources/onenote.md
@@ -8103,6 +8103,25 @@ items:
                         href: api/intune-notification-notificationmessagetemplate-sendtestmessage.md
                   - name: Opções de identidade visual do modelo de notificação
                     href: resources/intune-notification-notificationtemplatebrandingoptions.md
+                  - name: Garantia Oem
+                    href: resources/intune-devices-oemwarranty.md
+                  - name: Informações sobre a garantia do Oem ao abordar
+                    href: resources/intune-devices-oemwarrantyinformationonboarding.md
+                    items:
+                      - name: Listar
+                        href: api/intune-devices-oemwarrantyinformationonboarding-list.md
+                      - name: Obter
+                        href: api/intune-devices-oemwarrantyinformationonboarding-get.md
+                      - name: Criar
+                        href: api/intune-devices-oemwarrantyinformationonboarding-create.md
+                      - name: Excluir
+                        href: api/intune-devices-oemwarrantyinformationonboarding-delete.md
+                      - name: Atualizar
+                        href: api/intune-devices-oemwarrantyinformationonboarding-update.md
+                      - name: habilitar ação
+                        href: api/intune-devices-oemwarrantyinformationonboarding-enable.md
+                      - name: desabilitar ação
+                        href: api/intune-devices-oemwarrantyinformationonboarding-disable.md
                   - name: Qualificação de atualização do sistema operacional
                     href: resources/intune-devices-operatingsystemupgradeeligibility.md
                   - name: Contagem de versões do SO
@@ -8718,6 +8737,23 @@ items:
                         href: api/intune-devices-userexperienceanalyticsworkfromanywheremetric-delete.md
                       - name: Atualizar
                         href: api/intune-devices-userexperienceanalyticsworkfromanywheremetric-update.md
+                  - name: A análise de experiência do usuário funciona a partir do desempenho do modelo em qualquer lugar
+                    href: resources/intune-devices-userexperienceanalyticsworkfromanywheremodelperformance.md
+                    items:
+                      - name: Listar
+                        href: api/intune-devices-userexperienceanalyticsworkfromanywheremodelperformance-list.md
+                      - name: Obter
+                        href: api/intune-devices-userexperienceanalyticsworkfromanywheremodelperformance-get.md
+                      - name: Criar
+                        href: api/intune-devices-userexperienceanalyticsworkfromanywheremodelperformance-create.md
+                      - name: Excluir
+                        href: api/intune-devices-userexperienceanalyticsworkfromanywheremodelperformance-delete.md
+                      - name: Atualizar
+                        href: api/intune-devices-userexperienceanalyticsworkfromanywheremodelperformance-update.md
+                  - name: Oferta de garantia
+                    href: resources/intune-devices-warrantyoffer.md
+                  - name: Tipo de garantia
+                    href: resources/intune-devices-warrantytype.md
                   - name: Windows status do produto defender
                     href: resources/intune-devices-windowsdefenderproductstatus.md
                   - name: Resultado de ação de verificação do Windows Defender
@@ -12221,7 +12257,7 @@ items:
                         href: api/identityuserflowattribute-delete.md
                   - name: Atribuição de atributo de fluxo de usuário
                     items:
-                      - name: User
+                      - name: Usuário
                         href: resources/identityuserflowattributeassignment.md
                       - name: Obter
                         href: api/identityuserflowattributeassignment-get.md
@@ -13185,7 +13221,7 @@ items:
                     href: api/personname-update.md
                   - name: Excluir
                     href: api/personname-delete.md
-              - name: Notas
+              - name: Observações
                 items:
                   - name: Anotação de pessoa
                     href: resources/personannotation.md
@@ -14658,7 +14694,7 @@ items:
                     href: api/chat-teamsappinstallation-upgrade.md
                   - name: Remover aplicativo do chat
                     href: api/chat-delete-installedapps.md
-          - name: Device
+          - name: Dispositivo
             items:
               - name: Dispositivos provisionados
                 href: resources/teamworkdevice.md

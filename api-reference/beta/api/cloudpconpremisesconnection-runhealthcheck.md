@@ -5,12 +5,12 @@ author: AshleyYangSZ
 ms.localizationpriority: medium
 ms.prod: cloud-pc
 doc_type: apiPageType
-ms.openlocfilehash: 55d887d3902a7d3da980f81af63439b48f2d54b5
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: a6aee0fe6ca37337be452a8b701c9ba43c367e03
+ms.sourcegitcommit: 15956da1b4a7d523363ffa8afb5e2059fbf680ce
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "60987170"
+ms.lasthandoff: 02/01/2022
+ms.locfileid: "62291454"
 ---
 # <a name="cloudpconpremisesconnection-runhealthchecks"></a>CloudPcOnPremisesConnection: runHealthChecks
 
@@ -18,7 +18,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Execute verificações de saúde no [objeto cloudPcOnPremisesConnection.](../resources/cloudpconpremisesconnection.md)
+Execute verificações de saúde no [objeto cloudPcOnPremisesConnection](../resources/cloudpconpremisesconnection.md) .
 
 Isso disparará uma nova verificação de saúde para este objeto [cloudPcOnPremisesConnection](../resources/cloudpconpremisesconnection.md) e alterará as propriedades healthCheckStatus e [healthCheckStatusDetails](../resources/cloudpconpremisesconnectionstatusdetails.md) quando a verificação for concluída.
 
@@ -89,7 +89,7 @@ POST https://graph.microsoft.com/beta/deviceManagement/virtualEndpoint/onPremise
 [!INCLUDE [sample-code](../includes/snippets/java/cloudpconpremisesconnection-runhealthcheck-2-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[Go](#tab/go)
+# <a name="go"></a>[Ir](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/cloudpconpremisesconnection-runhealthcheck-2-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
@@ -98,7 +98,6 @@ POST https://graph.microsoft.com/beta/deviceManagement/virtualEndpoint/onPremise
 
 ### <a name="response"></a>Resposta
 
-**Observação:** o objeto de resposta mostrado aqui pode ser encurtado para legibilidade.
 <!-- {
   "blockType": "response",
   "truncated": true

@@ -2,21 +2,21 @@
 title: Listar windows10EndpointProtectionConfigurations
 description: Listar propriedades e relações dos objetos windows10EndpointProtectionConfiguration.
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: f536b2d3d7c8274d30c68c29db3c787c5a41b892
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 1878fbce7ebe7ca5829b62c2e66b56e0233b6ed5
+ms.sourcegitcommit: 15956da1b4a7d523363ffa8afb5e2059fbf680ce
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59088378"
+ms.lasthandoff: 02/01/2022
+ms.locfileid: "62292099"
 ---
 # <a name="list-windows10endpointprotectionconfigurations"></a>Listar windows10EndpointProtectionConfigurations
 
 Namespace: microsoft.graph
 
-> **Importante:** As APIs Graph Microsoft na versão /beta estão sujeitas a alterações; não há suporte para uso de produção.
+> **Importante:** As GRAPH da Microsoft na versão /beta estão sujeitas a alterações; o uso de produção não é suportado.
 
 > **Observação:** A API do Microsoft Graph para Intune requer uma [licença ativa do Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
 
@@ -66,7 +66,7 @@ Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado a
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 34441
+Content-Length: 34448
 
 {
   "value": [
@@ -533,7 +533,7 @@ Content-Length: 34441
       "localSecurityOptionsDoNotAllowAnonymousEnumerationOfSAMAccounts": true,
       "localSecurityOptionsAllowAnonymousEnumerationOfSAMAccountsAndShares": true,
       "localSecurityOptionsDoNotStoreLANManagerHashValueOnNextPasswordChange": true,
-      "localSecurityOptionsSmartCardRemovalBehavior": "noAction",
+      "localSecurityOptionsSmartCardRemovalBehavior": "lockWorkstation",
       "defenderSecurityCenterDisableAppBrowserUI": true,
       "defenderSecurityCenterDisableFamilyUI": true,
       "defenderSecurityCenterDisableHealthUI": true,
@@ -817,6 +817,7 @@ Content-Length: 34441
   ]
 }
 ```
+
 
 
 

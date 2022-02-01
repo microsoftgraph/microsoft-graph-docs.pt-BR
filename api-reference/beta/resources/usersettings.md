@@ -2,15 +2,15 @@
 title: Tipo de recurso de configurações do usuário (UserSettings)
 description: 'As atuais configurações de usuário para descoberta de conteúdo. '
 author: jpettere
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: users
 doc_type: resourcePageType
-ms.openlocfilehash: a16ab96bb04f6d7dfc4f9ceff29f49dc7d348d23
-ms.sourcegitcommit: d586ddb253d27f9ccb621bd128f6a6b4b1933918
+ms.openlocfilehash: bec57a52a6c12f6228539592ee7559047b7f0ba5
+ms.sourcegitcommit: 15956da1b4a7d523363ffa8afb5e2059fbf680ce
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/24/2021
-ms.locfileid: "53108870"
+ms.lasthandoff: 02/01/2022
+ms.locfileid: "62290865"
 ---
 # <a name="usersettings-resource-type"></a>Tipo de recurso de configurações do usuário (UserSettings)
 
@@ -18,7 +18,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Configurações que representam as preferências de um usuário para [localidades](../resources/regionalandlanguagesettings.md)regionais e idiomas, para agendamento de [turnos,](../resources/shiftpreferences.md)para Delve e para insights [de item.](../resources/officegraphinsights.md)
+Configurações que representam as preferências de um usuário para localidade [regional](../resources/regionalandlanguagesettings.md) e idiomas, para agendamento de [turnos,](../resources/shiftpreferences.md) para Delve e para insights [de item](../resources/officegraphinsights.md).
 
 Gerenciar as preferências baseadas na localidade do usuário: 
   - Determinando com qual idioma e formatação regional um usuário prefere exibir aplicativos.
@@ -32,7 +32,7 @@ Gerenciar Delve acessibilidade:
   - Verificar se um usuário e a organização do usuário têm acesso a Office Delve.
   - Desabilitando ou habilitando documentos em Office Delve para usuários específicos. 
 
-Configure a visibilidade dos [insights de itemInsights](../resources/iteminsights.md) e [de horas de reunião.](https://support.microsoft.com/en-us/office/update-your-meeting-hours-using-the-profile-card-0613d113-d7c1-4faa-bb11-c8ba30a78ef1) ItemInsights são derivados entre usuários e outros itens (como documentos ou sites) em Microsoft 365:
+Configure a visibilidade dos [insights de itemInsights](../resources/iteminsights.md) e [de horas de reunião](https://support.microsoft.com/office/update-your-meeting-hours-using-the-profile-card-0613d113-d7c1-4faa-bb11-c8ba30a78ef1). ItemInsights são derivados entre usuários e outros itens (como documentos ou sites) em Microsoft 365:
   - Verificando se os insights de item e horário de reunião de um usuário estão habilitados.
   - Desabilitando ou habilitando informações de item e horas de reunião para um usuário específico.
 
@@ -51,8 +51,8 @@ Para saber como obter ou atualizar as configurações de usuário, confira [Obte
 
 | Propriedade     | Tipo   |Descrição|
 |:---------------|:--------|:----------|
-|contributionToContentDiscoveryDisabled|Booliano|Os documentos do usuário do Office Delve serão desativados quando definidos como verdadeiros. Os usuários podem controlar essa configuração em [Office Delve](https://support.office.com/en-us/article/are-my-documents-safe-in-office-delve-f5f409a2-37ed-4452-8f61-681e5e1836f3?ui=en-US&rs=en-US&ad=US#bkmk_optout). |
-|contributionToContentDiscoveryAsOrganizationDisabled|Booliano|Reflete a configuração [Office Delve nível da organização.](https://support.office.com/en-us/article/office-delve-for-office-365-admins-54f87a42-15a4-44b4-9df0-d36287d9531b#bkmk_delveonoff) A organização não tem acesso ao Office Delve quando definido como verdadeiro. Essa configuração é somente leitura e pode ser alterada somente por administradores no [Centro de administração do SharePoint](https://support.office.com/article/about-the-office-365-admin-center-758befc4-0888-4009-9f14-0d147402fd23?ui=en-US&rs=en-US&ad=US).|
+|contributionToContentDiscoveryDisabled|Booliano|Os documentos do usuário do Office Delve serão desativados quando definidos como verdadeiros. Os usuários podem controlar essa configuração em [Office Delve](https://support.office.com/article/are-my-documents-safe-in-office-delve-f5f409a2-37ed-4452-8f61-681e5e1836f3?ui=en-US&rs=en-US&ad=US#bkmk_optout). |
+|contributionToContentDiscoveryAsOrganizationDisabled|Booliano|Reflete a configuração [Office Delve nível da organização](https://support.office.com/article/office-delve-for-office-365-admins-54f87a42-15a4-44b4-9df0-d36287d9531b#bkmk_delveonoff). A organização não tem acesso ao Office Delve quando definido como verdadeiro. Essa configuração é somente leitura e pode ser alterada somente por administradores no [Centro de administração do SharePoint](https://support.office.com/article/about-the-office-365-admin-center-758befc4-0888-4009-9f14-0d147402fd23?ui=en-US&rs=en-US&ad=US).|
 
 ## <a name="relationships"></a>Relações
 

@@ -3,15 +3,15 @@ author: daspek
 description: defaultColumnValue em um recurso columnDefinition especifica o valor padrão dessa coluna.
 ms.date: 09/12/2017
 title: DefaultColumnValue
-localization_priority: Normal
+ms.localizationpriority: medium
 doc_type: resourcePageType
-ms.prod: ''
-ms.openlocfilehash: b6e161f6d0e0c38ab6a1aeef7d17894ba11141c3
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.prod: sites-and-lists
+ms.openlocfilehash: 2ba670e93db2fc1c5284c309d23710f0ee4a23ff
+ms.sourcegitcommit: 15956da1b4a7d523363ffa8afb5e2059fbf680ce
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48049951"
+ms.lasthandoff: 02/01/2022
+ms.locfileid: "62291173"
 ---
 # <a name="defaultcolumnvalue-resource-type"></a>Tipo de recurso DefaultColumnValue
 
@@ -46,7 +46,7 @@ Somente uma **fórmula** ou um **valor** pode ser especificado por vez.
 As fórmulas do SharePoint usam uma sintaxe semelhante a fórmulas do Excel.
 Consulte [Exemplos de fórmulas comuns em listas do SharePoint][SPFormulas] para obter mais informações.
 
-[SPFormulas]: https://support.office.com/en-us/article/Examples-of-common-formulas-in-SharePoint-Lists-d81f5f21-2b4e-45ce-b170-bf7ebf6988b3
+[SPFormulas]: https://support.office.com/article/Examples-of-common-formulas-in-SharePoint-Lists-d81f5f21-2b4e-45ce-b170-bf7ebf6988b3
 
 
 <!--

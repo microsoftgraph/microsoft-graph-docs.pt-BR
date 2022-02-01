@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 2ae082010e409fc7d5e0310c565ac49f6052da08
-ms.sourcegitcommit: 65f4e128f96783c18d607a6dcffbc914291285d4
+ms.openlocfilehash: fade78521a9da94467a7cdc3fb85ac3a96b70065
+ms.sourcegitcommit: 15956da1b4a7d523363ffa8afb5e2059fbf680ce
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/08/2021
-ms.locfileid: "61338439"
+ms.lasthandoff: 02/01/2022
+ms.locfileid: "62292106"
 ---
 # <a name="get-macosdevicefeaturesconfiguration"></a>Obter macOSDeviceFeaturesConfiguration
 
@@ -70,7 +70,7 @@ Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado a
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 6823
+Content-Length: 6648
 
 {
   "value": {
@@ -202,16 +202,12 @@ Content-Length: 6823
       "blockActiveDirectorySiteAutoDiscovery": true,
       "passwordChangeUrl": "https://example.com/passwordChangeUrl/",
       "modeCredentialUsed": "Mode Credential Used value",
-      "usernameLableCustom": "Username Lable Custom value",
       "usernameLabelCustom": "Username Label Custom value",
       "userSetupDelayed": true,
       "signInHelpText": "Sign In Help Text value",
       "kerberosAppsInBundleIdACLIncluded": true,
       "managedAppsInBundleIdACLIncluded": true,
       "credentialsCacheMonitored": true,
-      "singleSignOnExtensionPreferredKDCs": [
-        "Single Sign On Extension Preferred KDCs value"
-      ],
       "preferredKDCs": [
         "Preferred KDCs value"
       ],

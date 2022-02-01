@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 6bf1eb012543eca23d2276e5939fbaf2f0c8b37d
-ms.sourcegitcommit: 65f4e128f96783c18d607a6dcffbc914291285d4
+ms.openlocfilehash: 426567287e71b0b54a8e87159aabfc6bca606f49
+ms.sourcegitcommit: 15956da1b4a7d523363ffa8afb5e2059fbf680ce
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/08/2021
-ms.locfileid: "61344159"
+ms.lasthandoff: 02/01/2022
+ms.locfileid: "62291440"
 ---
 # <a name="update-userexperienceanalyticsdeviceperformance"></a>Atualizar userExperienceAnalyticsDevicePerformance
 
@@ -20,7 +20,7 @@ Namespace: microsoft.graph
 
 > **Observação:** A API do Microsoft Graph para Intune requer uma [licença ativa do Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
 
-Atualize as propriedades de [um objeto userExperienceAnalyticsDevicePerformance.](../resources/intune-devices-userexperienceanalyticsdeviceperformance.md)
+Atualize as propriedades de [um objeto userExperienceAnalyticsDevicePerformance](../resources/intune-devices-userexperienceanalyticsdeviceperformance.md) .
 
 ## <a name="prerequisites"></a>Pré-requisitos
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
@@ -47,17 +47,17 @@ PATCH /deviceManagement/userExperienceAnalyticsDevicePerformance/{userExperience
 |Aceitar|application/json|
 
 ## <a name="request-body"></a>Corpo da solicitação
-No corpo da solicitação, fornece uma representação JSON para o [objeto userExperienceAnalyticsDevicePerformance.](../resources/intune-devices-userexperienceanalyticsdeviceperformance.md)
+No corpo da solicitação, fornece uma representação JSON para o [objeto userExperienceAnalyticsDevicePerformance](../resources/intune-devices-userexperienceanalyticsdeviceperformance.md) .
 
 A tabela a seguir mostra as propriedades que são necessárias ao criar [o userExperienceAnalyticsDevicePerformance](../resources/intune-devices-userexperienceanalyticsdeviceperformance.md).
 
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|id|String|O identificador exclusivo do dispositivo de desempenho de inicialização do dispositivo de análise de experiência do usuário.|
+|id|Cadeia de caracteres|O identificador exclusivo do dispositivo de desempenho de inicialização do dispositivo de análise de experiência do usuário.|
 |deviceName|String|O nome do dispositivo de análise de experiência do usuário.|
 |modelo|String|O modelo de dispositivo de análise de experiência do usuário.|
 |fabricante|String|O fabricante do dispositivo de análise de experiência do usuário.|
-|diskType|[diskType](../resources/intune-devices-disktype.md)|O tipo de disco do dispositivo de análise de experiência do usuário. Os valores possíveis são: `unkown`, `hdd`, `ssd`.|
+|diskType|[diskType](../resources/intune-devices-disktype.md)|O tipo de disco do dispositivo de análise de experiência do usuário. Os valores possíveis são: `hdd`, `ssd`, `unknown`.|
 |operatingSystemVersion|String|A versão do sistema operacional do dispositivo de análise de experiência do usuário.|
 |bootScore|Int32|A pontuação de inicialização do dispositivo de análise de experiência do usuário.|
 |coreBootTimeInMs|Int32|O tempo de inicialização principal do dispositivo de análise de experiência do usuário em milissegundos.|
@@ -78,7 +78,7 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar [o userE
 
 
 ## <a name="response"></a>Resposta
-Se tiver êxito, este método retornará um código de resposta e um `200 OK` [objeto userExperienceAnalyticsDevicePerformance](../resources/intune-devices-userexperienceanalyticsdeviceperformance.md) atualizado no corpo da resposta.
+Se tiver êxito, este método retornará `200 OK` um código de resposta e um [objeto userExperienceAnalyticsDevicePerformance](../resources/intune-devices-userexperienceanalyticsdeviceperformance.md) atualizado no corpo da resposta.
 
 ## <a name="example"></a>Exemplo
 
@@ -94,7 +94,7 @@ Content-length: 739
   "deviceName": "Device Name value",
   "model": "Model value",
   "manufacturer": "Manufacturer value",
-  "diskType": "hdd",
+  "diskType": "ssd",
   "operatingSystemVersion": "Operating System Version value",
   "bootScore": 9,
   "coreBootTimeInMs": 0,
@@ -127,7 +127,7 @@ Content-Length: 788
   "deviceName": "Device Name value",
   "model": "Model value",
   "manufacturer": "Manufacturer value",
-  "diskType": "hdd",
+  "diskType": "ssd",
   "operatingSystemVersion": "Operating System Version value",
   "bootScore": 9,
   "coreBootTimeInMs": 0,

@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 613c791d3f3e3dda11e6833d705fedbb5e7b887c
-ms.sourcegitcommit: 65f4e128f96783c18d607a6dcffbc914291285d4
+ms.openlocfilehash: 2a3083ff595397873718254e6b12447b92bf820e
+ms.sourcegitcommit: 15956da1b4a7d523363ffa8afb5e2059fbf680ce
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/08/2021
-ms.locfileid: "61345146"
+ms.lasthandoff: 02/01/2022
+ms.locfileid: "62291910"
 ---
 # <a name="list-userexperienceanalyticsmodelscoreses"></a>Listar userExperienceAnalyticsModelScoreses
 
@@ -20,7 +20,7 @@ Namespace: microsoft.graph
 
 > **Observação:** A API do Microsoft Graph para Intune requer uma [licença ativa do Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
 
-Listar propriedades e relações dos [objetos userExperienceAnalyticsModelScores.](../resources/intune-devices-userexperienceanalyticsmodelscores.md)
+Listar propriedades e relações dos [objetos userExperienceAnalyticsModelScores](../resources/intune-devices-userexperienceanalyticsmodelscores.md) .
 
 ## <a name="prerequisites"></a>Pré-requisitos
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
@@ -50,7 +50,7 @@ GET /deviceManagement/userExperienceAnalyticsModelScores
 Não forneça um corpo de solicitação para esse método.
 
 ## <a name="response"></a>Resposta
-Se tiver êxito, este método retornará um código de resposta e uma coleção de `200 OK` [objetos userExperienceAnalyticsModelScores](../resources/intune-devices-userexperienceanalyticsmodelscores.md) no corpo da resposta.
+Se tiver êxito, este método retornará `200 OK` um código de resposta e uma coleção de [objetos userExperienceAnalyticsModelScores](../resources/intune-devices-userexperienceanalyticsmodelscores.md) no corpo da resposta.
 
 ## <a name="example"></a>Exemplo
 
@@ -65,7 +65,7 @@ Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado a
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 469
+Content-Length: 506
 
 {
   "value": [
@@ -78,6 +78,7 @@ Content-Length: 469
       "endpointAnalyticsScore": 7.333333333333333,
       "startupPerformanceScore": 7.666666666666667,
       "appReliabilityScore": 6.333333333333333,
+      "workFromAnywhereScore": 7.0,
       "healthStatus": "insufficientData"
     }
   ]

@@ -5,12 +5,12 @@ author: mkhribech
 ms.localizationpriority: medium
 ms.prod: cloud-communications
 doc_type: resourcePageType
-ms.openlocfilehash: 72bf9ad32591dff339e090cd55e79a0d71b1164a
-ms.sourcegitcommit: ba46f9f77d1e0eb9c7f5b2f4366534bfcf99d9c0
+ms.openlocfilehash: ab41bebd48947851721e2adc78a07f01fc522117
+ms.sourcegitcommit: 15956da1b4a7d523363ffa8afb5e2059fbf680ce
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/17/2021
-ms.locfileid: "61561514"
+ms.lasthandoff: 02/01/2022
+ms.locfileid: "62291959"
 ---
 # <a name="meetingregistration-resource-type"></a>tipo de recurso meetingRegistration
 
@@ -18,11 +18,11 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Contém detalhes de registro de uma reunião online, como um [Microsoft Teams Webinar](https://support.microsoft.com/en-us/office/get-started-with-teams-webinars-42f3f874-22dc-4289-b53f-bbc1a69013e3). 
+Contém detalhes de registro de uma reunião online, como um [Microsoft Teams Webinar](https://support.microsoft.com/office/get-started-with-teams-webinars-42f3f874-22dc-4289-b53f-bbc1a69013e3). 
 
 Herda de [meetingRegistrationBase](meetingregistrationbase.md).
 
-## <a name="methods"></a>Methods
+## <a name="methods"></a>Métodos
 
 | Método | Tipo de retorno | Descrição |
 | :----- | :---------- | :---------- |
@@ -38,8 +38,8 @@ Herda de [meetingRegistrationBase](meetingregistrationbase.md).
 | allowedRegistrant | [meetingAudience](#meetingaudience-values) | Especifica quem pode se registrar na reunião. |
 | description | Cadeia de caracteres | A descrição da reunião. |
 | endDateTime | DateTime | A hora de término da reunião em UTC. |
-| registrationPageViewCount | Int32 | O número de vezes que a página de registro foi visitada. Somente leitura. |
-| registrationPageWebUrl | Cadeia de caracteres | A URL da página de registro. Somente leitura. |
+| registrationPageViewCount | Int32 | O número de vezes que a página de registro foi visitada. Apenas leitura. |
+| registrationPageWebUrl | Cadeia de caracteres | A URL da página de registro. Apenas leitura. |
 | falantes | [Coleção meetingSpeaker](meetingSpeaker.md) | As informações do orador da reunião. |
 | startDateTime | DateTime | O horário de início da reunião em UTC. |
 | assunto | Cadeia de caracteres | O assunto da reunião. |

@@ -5,12 +5,12 @@ ms.localizationpriority: high
 author: arvindmicrosoft
 ms.prod: bookings
 doc_type: conceptualPageType
-ms.openlocfilehash: 622feed07a5387301be148c926088add62946f25
-ms.sourcegitcommit: c333953a9188b4cd4a9ab94cbe68871e8f3563e5
+ms.openlocfilehash: 0dd5764332c81b8335258a60736e40e7802f6213
+ms.sourcegitcommit: 15956da1b4a7d523363ffa8afb5e2059fbf680ce
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/30/2021
-ms.locfileid: "58694857"
+ms.lasthandoff: 02/01/2022
+ms.locfileid: "62290970"
 ---
 # <a name="use-the-microsoft-bookings-api-in-microsoft-graph"></a>Usar a API do Microsoft Bookings no Microsoft Graph
 
@@ -29,7 +29,7 @@ Programaticamente, um [bookingBusiness](bookingbusiness.md) na API do Bookings e
 
 Siga as etapas a seguir antes de agendar os compromissos do cliente para uma empresa pela primeira vez. Certifique-se de fornecer os [tokens de acesso](/graph/auth-overview) apropriados para as operações correspondentes.
 
-1. Certifique-se que a empresa tenha um assinatura do [Microsoft 365 Business Premium](https://products.office.com/en-us/business/office-365-business-premium).
+1. Certifique-se que a empresa tenha um assinatura do [Microsoft 365 Business Premium](https://products.office.com/business/office-365-business-premium).
 2. Crie um novo **bookingBusiness** enviando uma operação POST para o conjunto de entidades. No mínimo, você deve especificar um nome para a nova empresa que os clientes verão:
 <!-- { "blockType": "ignored" } -->
 ```http

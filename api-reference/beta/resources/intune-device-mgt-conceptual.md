@@ -4,12 +4,12 @@ description: Lista a API Graph microsoft para pontos de extremidade do Intune (R
 author: dougeby
 ms.localizationpriority: medium
 ms.prod: intune
-ms.openlocfilehash: 314e4fd73b9495946aa2c056f307463c741f8bb0
-ms.sourcegitcommit: 65f4e128f96783c18d607a6dcffbc914291285d4
+ms.openlocfilehash: 3abcb3af4e8f9fd5337be8ea5f08010016b6fe0d
+ms.sourcegitcommit: 15956da1b4a7d523363ffa8afb5e2059fbf680ce
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/08/2021
-ms.locfileid: "61342941"
+ms.lasthandoff: 02/01/2022
+ms.locfileid: "62292036"
 ---
 # <a name="device-management-in-microsoft-intune"></a>Gerenciamento de dispositivos no Microsoft Intune
 
@@ -174,6 +174,8 @@ Namespace: microsoft.graph
 - [Estado de gerenciamento](intune-devices-managementstate.md)
 - [Modelo de mensagem de notificação](intune-notification-notificationmessagetemplate.md)
 - [Opções de identidade visual do modelo de notificação](intune-notification-notificationtemplatebrandingoptions.md)
+- [Garantia Oem](intune-devices-oemwarranty.md)
+- [Informações sobre a garantia do Oem ao abordar](intune-devices-oemwarrantyinformationonboarding.md)
 - [Qualificação de atualização do sistema operacional](intune-devices-operatingsystemupgradeeligibility.md)
 - [Contagem de versões do SO](intune-devices-osversioncount.md)
 - [Tipo de plataforma](intune-esim-platformtype.md)
@@ -252,6 +254,9 @@ Namespace: microsoft.graph
 - [Análise de experiência do usuário funciona em qualquer lugar resumo de dispositivos](intune-devices-userexperienceanalyticsworkfromanywheredevicessummary.md)
 - [A análise de experiência do usuário funciona de qualquer lugar métrica de preparação de hardware](intune-devices-userexperienceanalyticsworkfromanywherehardwarereadinessmetric.md)
 - [A análise de experiência do usuário funciona de qualquer lugar métrica](intune-devices-userexperienceanalyticsworkfromanywheremetric.md)
+- [A análise de experiência do usuário funciona a partir do desempenho do modelo em qualquer lugar](intune-devices-userexperienceanalyticsworkfromanywheremodelperformance.md)
+- [Oferta de garantia](intune-devices-warrantyoffer.md)
+- [Tipo de garantia](intune-devices-warrantytype.md)
 - [Windows status do produto defender](intune-devices-windowsdefenderproductstatus.md)
 - [Resultado da ação de verificação do Windows Defender](intune-devices-windowsdefenderscanactionresult.md)
 - [Conta do dispositivo Windows](intune-devices-windowsdeviceaccount.md)

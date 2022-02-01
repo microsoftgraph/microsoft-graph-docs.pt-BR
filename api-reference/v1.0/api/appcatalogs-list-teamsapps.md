@@ -5,22 +5,22 @@ author: nkramer
 ms.localizationpriority: medium
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: b64b01907e98ab7d52a18993c78ae274acf545ca
-ms.sourcegitcommit: de9df4bf6313b49afba74b6e9ef819907669c662
+ms.openlocfilehash: 2ff4843b5f1f1a9a25fee26676b377f4bd489f00
+ms.sourcegitcommit: 15956da1b4a7d523363ffa8afb5e2059fbf680ce
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/27/2022
-ms.locfileid: "62239355"
+ms.lasthandoff: 02/01/2022
+ms.locfileid: "62290480"
 ---
 # <a name="list-teamsapp"></a>Listar teamsApp
 
 Namespace: microsoft.graph
 
-Listar [aplicativos](../resources/teamsapp.md) do Microsoft Teams de aplicativos.
+[Listar aplicativos](../resources/teamsapp.md) do Microsoft Teams de aplicativos.
 Isso inclui aplicativos da Microsoft Teams, bem como aplicativos do catálogo de aplicativos da sua organização (o catálogo de aplicativos de locatário). Para obter aplicativos somente do catálogo de aplicativos da sua organização, especifique `organization` como **distributionMethod** na solicitação.
 
 > [!NOTE]
-> O `id` de um recurso **teamsApp** é gerado pelo servidor e não é o mesmo especificado em um manifesto Teams `id` aplicativo. O `id` fornecido pelo desenvolvedor como parte do manifesto Teams aplicativo é carimbado como o no recurso `externalId` **teamsApp.**
+> O `id` de um **recurso teamsApp** é gerado pelo servidor `id` e não é o mesmo especificado em um manifesto Teams aplicativo. O `id` fornecido pelo desenvolvedor como parte do manifesto Teams aplicativo é `externalId` carimbado como o no **recurso teamsApp**.
 
 ## <a name="permissions"></a>Permissões
 
@@ -46,7 +46,7 @@ GET /appCatalogs/teamsApps
 
 Este método suporta o `$filter`, `$select`, e `$expand` [parâmetros de consulta OData](/graph/query-parameters) para ajudar a personalizar a resposta.
 
-O uso retornará mais informações sobre o estado do aplicativo, como `$expand=AppDefinitions` **o publishingState**, que reflete o status da revisão de envio do aplicativo e retorna se um aplicativo foi aprovado, rejeitado ou permanece sob revisão. 
+O `$expand=AppDefinitions` uso retornará mais informações sobre o estado do aplicativo, como **o publishingState**, que reflete o status da revisão de envio do aplicativo e retorna se um aplicativo foi aprovado, rejeitado ou permanece sob revisão. 
 
 > **Observação:** Você pode filtrar em qualquer um dos campos do [objeto teamsApp](../resources/teamsapp.md) para reduzir a lista de resultados. Você pode usar qualquer uma das seguintes operações de filtro: Igual, não igual e ou não.
 
@@ -62,7 +62,7 @@ Não forneça um corpo de solicitação para esse método.
 
 ## <a name="response"></a>Resposta
 
-Se tiver êxito, este método retornará um código de resposta e uma `200 OK` lista de objetos [teamsApp](../resources/teamsapp.md) no corpo da resposta.
+Se tiver êxito, este método retornará um `200 OK` código de resposta e uma lista de objetos [teamsApp](../resources/teamsapp.md) no corpo da resposta.
 
 ## <a name="examples"></a>Exemplos
 
@@ -221,7 +221,7 @@ O exemplo a seguir lista aplicativos que corresponderem à "id" especificada no 
 }-->
 
 ```msgraph-interactive
-GET  https://graph.microsoft.com/v1.0/appCatalogs/teamsApps?$filter=externalId eq 'cf1ba4c7-f94e-4d80-ba90-5594b641a8ee'
+GET https://graph.microsoft.com/v1.0/appCatalogs/teamsApps?$filter=externalId eq 'cf1ba4c7-f94e-4d80-ba90-5594b641a8ee'
 ```
 # <a name="c"></a>[C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/list-teamsapp-filter-externalid-csharp-snippets.md)]
@@ -278,7 +278,7 @@ Content-Type: application/json
 
 ### <a name="example-4-list-applications-with-a-given-id-and-return-the-submission-review-state"></a>Exemplo 4: listar aplicativos com uma determinada ID e retornar o estado de revisão de envio
 
-O exemplo a seguir lista aplicativos com uma determinada ID e expande **appDefinitions** para retornar **o publishingState**, que reflete o estado de revisão de envio do aplicativo. `Submitted` significa que a revisão está pendente, significa que o aplicativo foi aprovado pelo administrador e significa que o `published` aplicativo foi rejeitado pelo `rejected` administrador.
+O exemplo a seguir lista aplicativos com uma determinada ID e expande **appDefinitions** para retornar **o publishingState**, que reflete o estado de revisão de envio do aplicativo. `Submitted` significa que a revisão está pendente, significa `published` que o aplicativo foi aprovado pelo administrador e `rejected` significa que o aplicativo foi rejeitado pelo administrador.
 
 #### <a name="request"></a>Solicitação
 
@@ -291,7 +291,7 @@ O exemplo a seguir lista aplicativos com uma determinada ID e expande **appDefin
 }-->
 
 ```msgraph-interactive
-GET  https://graph.microsoft.com/v1.0/appCatalogs/teamsApps?$filter=id eq '876df28f-2e78-423b-94a5-44181bd0e225'&$expand=appDefinitions
+GET https://graph.microsoft.com/v1.0/appCatalogs/teamsApps?$filter=id eq '876df28f-2e78-423b-94a5-44181bd0e225'&$expand=appDefinitions
 ```
 # <a name="c"></a>[C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/list-teamsapp-with-filter-expand-appdefinitions-csharp-snippets.md)]
@@ -373,7 +373,7 @@ O exemplo a seguir lista apenas os aplicativos no catálogo que contêm um bot.
 }-->
 
 ```msgraph-interactive
-GET  https://graph.microsoft.com/v1.0/appCatalogs/teamsApps?$expand=appDefinitions($expand=bot)&$filter=appDefinitions/any(a:a/bot ne null)
+GET https://graph.microsoft.com/v1.0/appCatalogs/teamsApps?$expand=appDefinitions($expand=bot)&$filter=appDefinitions/any(a:a/bot ne null)
 ```
 # <a name="c"></a>[C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/list-teamsapp-with-bots-csharp-snippets.md)]

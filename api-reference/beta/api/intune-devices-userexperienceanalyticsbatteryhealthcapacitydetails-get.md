@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: c8cbb5c4596e6e6aa906dfeb51be9eae20b85a64
-ms.sourcegitcommit: 65f4e128f96783c18d607a6dcffbc914291285d4
+ms.openlocfilehash: 9652cef38435ee3ecbe2afe3af80171c04ab43d2
+ms.sourcegitcommit: 15956da1b4a7d523363ffa8afb5e2059fbf680ce
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/08/2021
-ms.locfileid: "61347183"
+ms.lasthandoff: 02/01/2022
+ms.locfileid: "62290445"
 ---
 # <a name="get-userexperienceanalyticsbatteryhealthcapacitydetails"></a>Obter userExperienceAnalyticsBatteryHealthCapacityDetails
 
@@ -20,7 +20,7 @@ Namespace: microsoft.graph
 
 > **Observação:** A API do Microsoft Graph para Intune requer uma [licença ativa do Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
 
-Leia propriedades e relações do [objeto userExperienceAnalyticsBatteryHealthCapacityDetails.](../resources/intune-devices-userexperienceanalyticsbatteryhealthcapacitydetails.md)
+Leia propriedades e relações do [objeto userExperienceAnalyticsBatteryHealthCapacityDetails](../resources/intune-devices-userexperienceanalyticsbatteryhealthcapacitydetails.md) .
 
 ## <a name="prerequisites"></a>Pré-requisitos
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
@@ -53,7 +53,7 @@ Este método dá suporte a [Parâmetros de consulta OData](/graph/query-paramete
 Não forneça um corpo de solicitação para esse método.
 
 ## <a name="response"></a>Resposta
-Se tiver êxito, este método retornará um código de resposta e o `200 OK` [objeto userExperienceAnalyticsBatteryHealthCapacityDetails](../resources/intune-devices-userexperienceanalyticsbatteryhealthcapacitydetails.md) no corpo da resposta.
+Se tiver êxito, este método `200 OK` retornará um código de resposta e o [objeto userExperienceAnalyticsBatteryHealthCapacityDetails](../resources/intune-devices-userexperienceanalyticsbatteryhealthcapacitydetails.md) no corpo da resposta.
 
 ## <a name="example"></a>Exemplo
 
@@ -68,7 +68,7 @@ Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado a
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 284
+Content-Length: 351
 
 {
   "value": {
@@ -77,7 +77,8 @@ Content-Length: 284
     "activeDevices": 13,
     "batteryCapacityGood": 3,
     "batteryCapacityFair": 3,
-    "batteryCapacityPoor": 3
+    "batteryCapacityPoor": 3,
+    "lastRefreshedDateTime": "2017-01-01T00:02:37.7100903-08:00"
   }
 }
 ```

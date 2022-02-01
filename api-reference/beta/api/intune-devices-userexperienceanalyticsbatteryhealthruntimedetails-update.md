@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 51c4158b46f4fb3cc9a3f90fb01817d019ec2105
-ms.sourcegitcommit: 65f4e128f96783c18d607a6dcffbc914291285d4
+ms.openlocfilehash: 95472de35e9f49f511c1240c9208d0d390c6dc36
+ms.sourcegitcommit: 15956da1b4a7d523363ffa8afb5e2059fbf680ce
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/08/2021
-ms.locfileid: "61335093"
+ms.lasthandoff: 02/01/2022
+ms.locfileid: "62291229"
 ---
 # <a name="update-userexperienceanalyticsbatteryhealthruntimedetails"></a>Atualizar userExperienceAnalyticsBatteryHealthRuntimeDetails
 
@@ -20,7 +20,7 @@ Namespace: microsoft.graph
 
 > **Observação:** A API do Microsoft Graph para Intune requer uma [licença ativa do Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
 
-Atualize as propriedades de [um objeto userExperienceAnalyticsBatteryHealthRuntimeDetails.](../resources/intune-devices-userexperienceanalyticsbatteryhealthruntimedetails.md)
+Atualize as propriedades de [um objeto userExperienceAnalyticsBatteryHealthRuntimeDetails](../resources/intune-devices-userexperienceanalyticsbatteryhealthruntimedetails.md) .
 
 ## <a name="prerequisites"></a>Pré-requisitos
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
@@ -47,22 +47,23 @@ PATCH /deviceManagement/userExperienceAnalyticsBatteryHealthRuntimeDetails
 |Aceitar|application/json|
 
 ## <a name="request-body"></a>Corpo da solicitação
-No corpo da solicitação, fornece uma representação JSON para o [objeto userExperienceAnalyticsBatteryHealthRuntimeDetails.](../resources/intune-devices-userexperienceanalyticsbatteryhealthruntimedetails.md)
+No corpo da solicitação, fornece uma representação JSON para o [objeto userExperienceAnalyticsBatteryHealthRuntimeDetails](../resources/intune-devices-userexperienceanalyticsbatteryhealthruntimedetails.md) .
 
 A tabela a seguir mostra as propriedades que são necessárias ao criar [o userExperienceAnalyticsBatteryHealthRuntimeDetails](../resources/intune-devices-userexperienceanalyticsbatteryhealthruntimedetails.md).
 
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|id|String|O identificador exclusivo do objeto de tempo de execução da bateria de análise de experiência do usuário.|
+|id|Cadeia de caracteres|O identificador exclusivo do objeto de tempo de execução da bateria de análise de experiência do usuário.|
 |activeDevices|Int32|Número de dispositivos ativos no locatário. Valores válidos -2147483648 para 2147483647|
 |batteryRuntimeGood|Int32|Número de dispositivos cujo tempo de execução ativo é maior do que 5 horas. Valores válidos -2147483648 para 2147483647|
 |batteryRuntimeFair|Int32|Número de dispositivos cujo tempo de execução ativo é maior do que 3 horas, mas menor que 5 horas. Valores válidos -2147483648 para 2147483647|
 |batteryRuntimePoor|Int32|Número de dispositivos cujo tempo de execução ativo é inferior a 3 horas. Valores válidos -2147483648 para 2147483647|
+|lastRefreshedDateTime|DateTimeOffset|Hora da data registrada dessa instância de detalhes do tempo de execução.|
 
 
 
 ## <a name="response"></a>Resposta
-Se tiver êxito, este método retornará um código de resposta e um `200 OK` [objeto userExperienceAnalyticsBatteryHealthRuntimeDetails](../resources/intune-devices-userexperienceanalyticsbatteryhealthruntimedetails.md) atualizado no corpo da resposta.
+Se tiver êxito, este método `200 OK` retornará um código de resposta e um [objeto userExperienceAnalyticsBatteryHealthRuntimeDetails](../resources/intune-devices-userexperienceanalyticsbatteryhealthruntimedetails.md) atualizado no corpo da resposta.
 
 ## <a name="example"></a>Exemplo
 
@@ -71,14 +72,15 @@ Este é um exemplo da solicitação.
 ``` http
 PATCH https://graph.microsoft.com/beta/deviceManagement/userExperienceAnalyticsBatteryHealthRuntimeDetails
 Content-type: application/json
-Content-length: 200
+Content-length: 265
 
 {
   "@odata.type": "#microsoft.graph.userExperienceAnalyticsBatteryHealthRuntimeDetails",
   "activeDevices": 13,
   "batteryRuntimeGood": 2,
   "batteryRuntimeFair": 2,
-  "batteryRuntimePoor": 2
+  "batteryRuntimePoor": 2,
+  "lastRefreshedDateTime": "2017-01-01T00:02:37.7100903-08:00"
 }
 ```
 
@@ -87,7 +89,7 @@ Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado a
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 249
+Content-Length: 314
 
 {
   "@odata.type": "#microsoft.graph.userExperienceAnalyticsBatteryHealthRuntimeDetails",
@@ -95,7 +97,8 @@ Content-Length: 249
   "activeDevices": 13,
   "batteryRuntimeGood": 2,
   "batteryRuntimeFair": 2,
-  "batteryRuntimePoor": 2
+  "batteryRuntimePoor": 2,
+  "lastRefreshedDateTime": "2017-01-01T00:02:37.7100903-08:00"
 }
 ```
 

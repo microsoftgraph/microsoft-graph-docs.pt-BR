@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 286147139eb81f9d2e9d8ec0b8e4f463d433586f
-ms.sourcegitcommit: 65f4e128f96783c18d607a6dcffbc914291285d4
+ms.openlocfilehash: e49607876881a4e472554b7465764c7404d916fd
+ms.sourcegitcommit: 15956da1b4a7d523363ffa8afb5e2059fbf680ce
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/08/2021
-ms.locfileid: "61343410"
+ms.lasthandoff: 02/01/2022
+ms.locfileid: "62290894"
 ---
 # <a name="update-microsofttunnelconfiguration"></a>Atualizar microsoftTunnelConfiguration
 
@@ -20,7 +20,7 @@ Namespace: microsoft.graph
 
 > **Observação:** A API do Microsoft Graph para Intune requer uma [licença ativa do Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
 
-Atualize as propriedades de um [objeto microsoftTunnelConfiguration.](../resources/intune-mstunnel-microsofttunnelconfiguration.md)
+Atualize as propriedades de um [objeto microsoftTunnelConfiguration](../resources/intune-mstunnel-microsofttunnelconfiguration.md) .
 
 ## <a name="prerequisites"></a>Pré-requisitos
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
@@ -48,31 +48,31 @@ PATCH /deviceManagement/microsoftTunnelSites/{microsoftTunnelSiteId}/microsoftTu
 |Aceitar|application/json|
 
 ## <a name="request-body"></a>Corpo da solicitação
-No corpo da solicitação, fornece uma representação JSON para o [objeto microsoftTunnelConfiguration.](../resources/intune-mstunnel-microsofttunnelconfiguration.md)
+No corpo da solicitação, fornece uma representação JSON para o [objeto microsoftTunnelConfiguration](../resources/intune-mstunnel-microsofttunnelconfiguration.md) .
 
 A tabela a seguir mostra as propriedades que são necessárias ao criar [o microsoftTunnelConfiguration](../resources/intune-mstunnel-microsofttunnelconfiguration.md).
 
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|id|String|Id do MicrosoftTunnelConfiguration|
-|displayName|String|O nome de exibição do MicrosoftTunnelConfiguration|
-|descrição|String|A descrição do MicrosoftTunnelConfiguration|
-|network|String|A sub-rede que será usada para alocar endereço virtual para os clientes|
-|dnsServers|Coleção String|Os servidores DNS que serão usados pelos clientes|
-|defaultDomainSuffix|String|O apêndice Domínio Padrão que será usado pelos clientes|
-|routesInclude|Coleção de cadeias de caracteres|Os routs que serão roteados pelo servidor|
-|routesExclude|Coleção String|Subconjunto das rotas que não serão roteadas pelo servidor|
-|splitDNS|Coleção de cadeias de caracteres|Os domínios que serão resolvidos usando os servidores dns fornecidos|
+|id|Cadeia de caracteres|Id do MicrosoftTunnelConfiguration|
+|displayName|Cadeia de caracteres|O nome de exibição do MicrosoftTunnelConfiguration|
+|description|Cadeia de caracteres|A descrição do MicrosoftTunnelConfiguration|
+|network|Cadeia de caracteres|A sub-rede que será usada para alocar endereço virtual para os clientes|
+|dnsServers|Conjunto de cadeias de caracteres|Os servidores DNS que serão usados pelos clientes|
+|defaultDomainSuffix|Cadeia de caracteres|O apêndice Domínio Padrão que será usado pelos clientes|
+|routesInclude|Conjunto de cadeias de caracteres|Os routs que serão roteados pelo servidor|
+|routesExclude|String collection|Subconjunto das rotas que não serão roteadas pelo servidor|
+|splitDNS|Conjunto de cadeias de caracteres|Os domínios que serão resolvidos usando os servidores dns fornecidos|
 |listenPort|Int32|A porta que o TCP e o UPD escutarão no servidor|
 |advancedSettings|Coleção [keyValuePair](../resources/intune-shared-keyvaluepair.md)|Configurações adicionais que podem ser aplicadas ao servidor|
 |lastUpdateDateTime|DateTimeOffset|Quando o MicrosoftTunnelConfiguration foi atualizado pela última vez|
-|roleScopeTagIds|Coleção de cadeias de caracteres|Lista de marcas de escopo para esta instância entity.|
-|disableUDPConnections|Boolean|Quando DisableUDPConnections for definido, os clientes e o servidor VPN não usarão as connctions DTLS para fazer o tansfer de dados.|
+|roleScopeTagIds|String collection|Lista de marcas de escopo para esta instância entity.|
+|disableUDPConnections|Booliano|Quando DisableUdpConnections for definido, os clientes e o servidor VPN não usarão conexões DTLS para dados de tansfer.|
 
 
 
 ## <a name="response"></a>Resposta
-Se tiver êxito, este método retornará um código de resposta e um `200 OK` [objeto microsoftTunnelConfiguration](../resources/intune-mstunnel-microsofttunnelconfiguration.md) atualizado no corpo da resposta.
+Se tiver êxito, este método retornará um `200 OK` código de resposta e um [objeto microsoftTunnelConfiguration](../resources/intune-mstunnel-microsofttunnelconfiguration.md) atualizado no corpo da resposta.
 
 ## <a name="example"></a>Exemplo
 

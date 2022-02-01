@@ -2,21 +2,21 @@
 title: Tipo de número eapType
 description: Tipos de configuração do Protocolo de Autenticação Extensível (EAP).
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 824a31def3479f1aa1c9fed8cc1b480220eef02d
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: ec70c9f00a5723855690b67bc9515b33f6ed7244
+ms.sourcegitcommit: 15956da1b4a7d523363ffa8afb5e2059fbf680ce
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59064326"
+ms.lasthandoff: 02/01/2022
+ms.locfileid: "62292029"
 ---
 # <a name="eaptype-enum-type"></a>Tipo de número eapType
 
 Namespace: microsoft.graph
 
-> **Importante:** As APIs Graph Microsoft na versão /beta estão sujeitas a alterações; não há suporte para uso de produção.
+> **Importante:** As GRAPH da Microsoft na versão /beta estão sujeitas a alterações; o uso de produção não é suportado.
 
 > **Observação:** A API do Microsoft Graph para Intune requer uma [licença ativa do Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
 
@@ -31,6 +31,8 @@ Tipos de configuração do Protocolo de Autenticação Extensível (EAP).
 |eapTtls| 21 |EAP-Tunneled Segurança da Camada de Transporte (EAP-TTLS).|
 |peap|25|Protocolo de Autenticação Extensível Protegido (PEAP).|
 |eapFast|43|EAP-Flexible Autenticação via Túnel Seguro (EAP-FAST).|
+|teap|55|Tunnel Protocolo de Autenticação Extensível (TEAP).|
+
 
 
 

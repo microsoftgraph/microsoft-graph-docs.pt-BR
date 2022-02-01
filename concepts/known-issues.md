@@ -3,12 +3,12 @@ title: Problemas conhecidos com o Microsoft Graph
 description: Este artigo descreve os problemas conhecidos com o Microsoft Graph.
 author: MSGraphDocsVTeam
 ms.localizationpriority: high
-ms.openlocfilehash: c7cb3143124a3f5f1820b47391c6011a5417ce1a
-ms.sourcegitcommit: 9adf70c5da7c5b65f7d20f571d101ee06f023bc3
+ms.openlocfilehash: 19f4441e04928b53bb5b96f34680d54ba18fcffc
+ms.sourcegitcommit: 15956da1b4a7d523363ffa8afb5e2059fbf680ce
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/25/2022
-ms.locfileid: "62201593"
+ms.lasthandoff: 02/01/2022
+ms.locfileid: "62290557"
 ---
 # <a name="known-issues-with-microsoft-graph"></a>Problemas conhecidos com o Microsoft Graph
 
@@ -387,10 +387,6 @@ Esse erro ocorre por causa das falhas de verificação de licença intermitentes
 
 
 ## <a name="teamwork-microsoft-teams"></a>Trabalho em equipe (Microsoft Teams)
-
-### <a name="get-teams-is-not-supported"></a>GET /teams não tem suporte
-
-Para obter uma lista de equipes, confira [listar todas as equipes](teams-list-all-teams.md) e [listar suas equipes](/graph/api/user-list-joinedteams).
 
 ### <a name="unable-to-filter-team-members-by-roles"></a>Não é possível filtrar os membros da equipe por funções
 Filtros de consulta de função junto com outros filtros `GET /teams/team-id/members?$filter=roles/any(r:r eq 'owner') and displayName eq 'dummy'` podem não funcionar. O servidor pode responder com uma.`BAD REQUEST`

@@ -5,22 +5,22 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 7e6e9cc9370dc4d21b879d6a64be6f80e41b97d8
-ms.sourcegitcommit: 4a960067cf2cd7d3c605550150eb3c9259adfe92
+ms.openlocfilehash: 30bcfe01e4cb866918a37bba67166ca7a4d8c4a7
+ms.sourcegitcommit: 15956da1b4a7d523363ffa8afb5e2059fbf680ce
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/19/2021
-ms.locfileid: "60488231"
+ms.lasthandoff: 02/01/2022
+ms.locfileid: "62290536"
 ---
 # <a name="get-depiosenrollmentprofile"></a>Obter depIOSEnrollmentProfile
 
 Namespace: microsoft.graph
 
-> **Importante:** As APIs Graph Microsoft na versão /beta estão sujeitas a alterações; não há suporte para uso de produção.
+> **Importante:** As GRAPH da Microsoft na versão /beta estão sujeitas a alterações; o uso de produção não é suportado.
 
 > **Observação:** A API do Microsoft Graph para Intune requer uma [licença ativa do Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
 
-Leia propriedades e relações do [objeto depIOSEnrollmentProfile.](../resources/intune-enrollment-depiosenrollmentprofile.md)
+Leia propriedades e relações do [objeto depIOSEnrollmentProfile](../resources/intune-enrollment-depiosenrollmentprofile.md) .
 
 ## <a name="prerequisites"></a>Pré-requisitos
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
@@ -53,7 +53,7 @@ Este método dá suporte a [Parâmetros de consulta OData](/graph/query-paramete
 Não forneça um corpo de solicitação para esse método.
 
 ## <a name="response"></a>Resposta
-Se tiver êxito, este método retornará um código de resposta e `200 OK` [um objeto depIOSEnrollmentProfile](../resources/intune-enrollment-depiosenrollmentprofile.md) no corpo da resposta.
+Se tiver êxito, este método retornará um `200 OK` código de resposta e [um objeto depIOSEnrollmentProfile](../resources/intune-enrollment-depiosenrollmentprofile.md) no corpo da resposta.
 
 ## <a name="example"></a>Exemplo
 
@@ -68,7 +68,7 @@ Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado a
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 2526
+Content-Length: 2569
 
 {
   "value": {
@@ -132,10 +132,12 @@ Content-Length: 2526
     "temporarySessionTimeoutInSeconds": 0,
     "userSessionTimeoutInSeconds": 11,
     "passcodeLockGracePeriodInSeconds": 0,
-    "carrierActivationUrl": "https://example.com/carrierActivationUrl/"
+    "carrierActivationUrl": "https://example.com/carrierActivationUrl/",
+    "userlessSharedAadModeEnabled": true
   }
 }
 ```
+
 
 
 

@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 49a10889dd977b6f091dd1b1efb7d93f0e6d1edc
-ms.sourcegitcommit: 65f4e128f96783c18d607a6dcffbc914291285d4
+ms.openlocfilehash: c33589948501809f8bd09b1bd42d2a9dc8e2cc49
+ms.sourcegitcommit: 15956da1b4a7d523363ffa8afb5e2059fbf680ce
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/08/2021
-ms.locfileid: "61341464"
+ms.lasthandoff: 02/01/2022
+ms.locfileid: "62290998"
 ---
 # <a name="list-userexperienceanalyticsbatteryhealthdeviceperformances"></a>Listar userExperienceAnalyticsBatteryHealthDevicePerformances
 
@@ -20,7 +20,7 @@ Namespace: microsoft.graph
 
 > **Observação:** A API do Microsoft Graph para Intune requer uma [licença ativa do Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
 
-Listar propriedades e relações dos [objetos userExperienceAnalyticsBatteryHealthDevicePerformance.](../resources/intune-devices-userexperienceanalyticsbatteryhealthdeviceperformance.md)
+Listar propriedades e relações dos [objetos userExperienceAnalyticsBatteryHealthDevicePerformance](../resources/intune-devices-userexperienceanalyticsbatteryhealthdeviceperformance.md) .
 
 ## <a name="prerequisites"></a>Pré-requisitos
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
@@ -50,7 +50,7 @@ GET /deviceManagement/userExperienceAnalyticsBatteryHealthDevicePerformance
 Não forneça um corpo de solicitação para esse método.
 
 ## <a name="response"></a>Resposta
-Se tiver êxito, este método retornará um código de resposta e uma coleção de objetos `200 OK` [userExperienceAnalyticsBatteryHealthDevicePerformance](../resources/intune-devices-userexperienceanalyticsbatteryhealthdeviceperformance.md) no corpo da resposta.
+Se tiver êxito, este `200 OK` método retornará um código de resposta e uma coleção de objetos [userExperienceAnalyticsBatteryHealthDevicePerformance](../resources/intune-devices-userexperienceanalyticsbatteryhealthdeviceperformance.md) no corpo da resposta.
 
 ## <a name="example"></a>Exemplo
 
@@ -65,7 +65,7 @@ Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado a
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 484
+Content-Length: 526
 
 {
   "value": [
@@ -75,11 +75,12 @@ Content-Length: 484
       "deviceId": "Device Id value",
       "deviceName": "Device Name value",
       "model": "Model value",
+      "manufacturer": "Manufacturer value",
       "maxCapacityPercentage": 5,
       "estimatedRuntimeInMinutes": 9,
       "batteryAgeInDays": 0,
       "deviceBatteryHealthScore": 8,
-      "healthStatus": "Health Status value"
+      "healthStatus": "insufficientData"
     }
   ]
 }

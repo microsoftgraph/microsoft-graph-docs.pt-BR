@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 2ae7ad86c4beb0dc221daef729cb6314944d56f0
-ms.sourcegitcommit: 65f4e128f96783c18d607a6dcffbc914291285d4
+ms.openlocfilehash: 61656b66e38b0e6e85c0e7c62dd1f1fe0a55c874
+ms.sourcegitcommit: 15956da1b4a7d523363ffa8afb5e2059fbf680ce
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/08/2021
-ms.locfileid: "61343256"
+ms.lasthandoff: 02/01/2022
+ms.locfileid: "62290438"
 ---
 # <a name="create-userexperienceanalyticsbatteryhealthdeviceperformance"></a>Criar userExperienceAnalyticsBatteryHealthDevicePerformance
 
@@ -20,7 +20,7 @@ Namespace: microsoft.graph
 
 > **Observação:** A API do Microsoft Graph para Intune requer uma [licença ativa do Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
 
-Crie um novo [objeto userExperienceAnalyticsBatteryHealthDevicePerformance.](../resources/intune-devices-userexperienceanalyticsbatteryhealthdeviceperformance.md)
+Crie um novo [objeto userExperienceAnalyticsBatteryHealthDevicePerformance](../resources/intune-devices-userexperienceanalyticsbatteryhealthdeviceperformance.md) .
 
 ## <a name="prerequisites"></a>Pré-requisitos
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
@@ -53,20 +53,21 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar o userEx
 
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|id|String|O identificador exclusivo do objeto de desempenho do dispositivo de saúde da bateria de análise de experiência do usuário.|
+|id|Cadeia de caracteres|O identificador exclusivo do objeto de desempenho do dispositivo de saúde da bateria de análise de experiência do usuário.|
 |deviceId|Cadeia de caracteres|O identificador exclusivo do dispositivo, Intune DeviceID.|
 |deviceName|String|Nome amigável do dispositivo.|
 |modelo|String|O nome do modelo do dispositivo.|
+|fabricante|String|O nome do fabricante do dispositivo.|
 |maxCapacityPercentage|Int32|Taxa de capacidade atual e capacidade de design da bateria com a menor capacidade. Unidade em porcentagem e valores variam de 0 a 100. Valores válidos -2147483648 para 2147483647|
 |estimatedRuntimeInMinutes|Int32|O tempo de execução estimado do dispositivo quando a bateria é totalmente carregada. Unidade em minutos. Valores válidos -2147483648 para 2147483647|
 |batteryAgeInDays|Int32|Idade estimada da bateria. Unidade em dias. Valores válidos -2147483648 para 2147483647|
 |deviceBatteryHealthScore|Int32|Uma média ponderada da pontuação máxima de capacidade de um dispositivo e da pontuação da estimativa do tempo de execução. Os valores variam de 0 a 100. Valores válidos -2147483648 para 2147483647|
-|healthStatus|String|O status geral da bateria do dispositivo.|
+|healthStatus|[userExperienceAnalyticsHealthState](../resources/intune-devices-userexperienceanalyticshealthstate.md)|O status geral da bateria do dispositivo. Os valores possíveis são: `unknown`, `insufficientData`, `needsAttention`, `meetingGoals`.|
 
 
 
 ## <a name="response"></a>Resposta
-Se tiver êxito, este método retornará um código de resposta e um `201 Created` [objeto userExperienceAnalyticsBatteryHealthDevicePerformance](../resources/intune-devices-userexperienceanalyticsbatteryhealthdeviceperformance.md) no corpo da resposta.
+Se tiver êxito, este método `201 Created` retornará um código de resposta e um [objeto userExperienceAnalyticsBatteryHealthDevicePerformance](../resources/intune-devices-userexperienceanalyticsbatteryhealthdeviceperformance.md) no corpo da resposta.
 
 ## <a name="example"></a>Exemplo
 
@@ -75,18 +76,19 @@ Este é um exemplo da solicitação.
 ``` http
 POST https://graph.microsoft.com/beta/deviceManagement/userExperienceAnalyticsBatteryHealthDevicePerformance
 Content-type: application/json
-Content-length: 362
+Content-length: 400
 
 {
   "@odata.type": "#microsoft.graph.userExperienceAnalyticsBatteryHealthDevicePerformance",
   "deviceId": "Device Id value",
   "deviceName": "Device Name value",
   "model": "Model value",
+  "manufacturer": "Manufacturer value",
   "maxCapacityPercentage": 5,
   "estimatedRuntimeInMinutes": 9,
   "batteryAgeInDays": 0,
   "deviceBatteryHealthScore": 8,
-  "healthStatus": "Health Status value"
+  "healthStatus": "insufficientData"
 }
 ```
 
@@ -95,7 +97,7 @@ Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado a
 ``` http
 HTTP/1.1 201 Created
 Content-Type: application/json
-Content-Length: 411
+Content-Length: 449
 
 {
   "@odata.type": "#microsoft.graph.userExperienceAnalyticsBatteryHealthDevicePerformance",
@@ -103,11 +105,12 @@ Content-Length: 411
   "deviceId": "Device Id value",
   "deviceName": "Device Name value",
   "model": "Model value",
+  "manufacturer": "Manufacturer value",
   "maxCapacityPercentage": 5,
   "estimatedRuntimeInMinutes": 9,
   "batteryAgeInDays": 0,
   "deviceBatteryHealthScore": 8,
-  "healthStatus": "Health Status value"
+  "healthStatus": "insufficientData"
 }
 ```
 

@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: preetikr
 ms.prod: security
 doc_type: apiPageType
-ms.openlocfilehash: 026eb386beed8b9dc181d9734425f72e2a9719ce
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: 116f965baa0e64b55c4b748378165b0004c98a15
+ms.sourcegitcommit: 15956da1b4a7d523363ffa8afb5e2059fbf680ce
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62109971"
+ms.lasthandoff: 02/01/2022
+ms.locfileid: "62290767"
 ---
 # <a name="list-alerts"></a>Listar alertas
 
@@ -53,7 +53,7 @@ Este método suporta os seguintes [parâmetros de consulta OData](/graph/query-p
 - `$top` - Retorna os principais resultados agregados de cada provedor de API de segurança.
 - `$filter`
 
-A tabela a seguir lista as palavras-chave `$filter` para cada nome de fornecedor. Embora alguns desses produtos tenham sido renomeados, a API ainda deve ser atualizada. As palavras-chave de filtro continuarão a usar os nomes herdados até mais aviso. Consulte o [changelog](https://developer.microsoft.com/en-us/graph/changelog) para atualizações.
+A tabela a seguir lista as palavras-chave `$filter` para cada nome de fornecedor. Embora alguns desses produtos tenham sido renomeados, a API ainda deve ser atualizada. As palavras-chave de filtro continuarão a usar os nomes herdados até mais aviso. Consulte o [changelog](https://developer.microsoft.com/graph/changelog) para atualizações.
 
 | Anotações do fornecedor      |palavra-chave $filter|
 |:----------|:----------|

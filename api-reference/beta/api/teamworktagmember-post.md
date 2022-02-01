@@ -5,12 +5,12 @@ author: anniecolonna
 ms.localizationpriority: medium
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 21aee21f6666cabd60b9d486288f1d0d90bf933f
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: e967d5acd148da3e597777f07615c1aa87c6ecc5
+ms.sourcegitcommit: 15956da1b4a7d523363ffa8afb5e2059fbf680ce
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62118070"
+ms.lasthandoff: 02/01/2022
+ms.locfileid: "62290620"
 ---
 # <a name="create-teamworktagmember"></a>Criar trabalho em equipeTagMember
 Namespace: microsoft.graph
@@ -24,7 +24,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 |Tipo de permissão|Permissões (de privilégios máximos a mínimos)|
 |:---|:---|
-|Delegado (conta corporativa ou de estudante)|Sem suporte.|
+|Delegado (conta corporativa ou de estudante)|TeamworkTag.ReadWrite|
 |Delegado (conta pessoal da Microsoft)|Sem suporte.|
 |Aplicativo|TeamworkTag.ReadWrite.All|
 
@@ -45,9 +45,9 @@ POST /teams/{team-Id}/tags/{teamworkTag-Id}/members
 |Content-Type|application/json. Obrigatório.|
 
 ## <a name="request-body"></a>Corpo da solicitação
-No corpo da solicitação, fornece uma representação JSON do [objeto teamworkTagMember.](../resources/teamworktagmember.md)
+No corpo da solicitação, fornece uma representação JSON do [objeto teamworkTagMember](../resources/teamworktagmember.md) .
 
-A tabela a seguir mostra as propriedades que são necessárias ao criar o trabalho em [equipeTagMember](../resources/teamworktagmember.md).
+A tabela a seguir mostra as propriedades que são necessárias ao criar [o trabalho em equipeTagMember](../resources/teamworktagmember.md).
 
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
@@ -57,7 +57,7 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar o trabal
 
 ## <a name="response"></a>Resposta
 
-Se tiver êxito, este método retornará um código de resposta e um `201 Created` objeto [teamworkTagMember](../resources/teamworktagmember.md) no corpo da resposta.
+Se tiver êxito, este método retornará um `201 Created` código de resposta e um objeto [teamworkTagMember](../resources/teamworktagmember.md) no corpo da resposta.
 
 ## <a name="examples"></a>Exemplos
 
