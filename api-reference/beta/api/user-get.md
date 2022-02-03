@@ -5,12 +5,12 @@ author: jpettere
 ms.localizationpriority: high
 ms.prod: users
 doc_type: apiPageType
-ms.openlocfilehash: ef4ff687c3f4ee73fafefd489743e1a721a020a3
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: 20ae426d206e0737ff40200989db955bb7503de1
+ms.sourcegitcommit: 25acfa7d0153336c9a35d30a1dd422aeadc1342c
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62119797"
+ms.lasthandoff: 02/03/2022
+ms.locfileid: "62344528"
 ---
 # <a name="get-a-user"></a>Obter um usuário
 
@@ -41,8 +41,9 @@ Para um usuário específico:
 GET /users/{id | userPrincipalName}
 ```
 
->**Observação:**
-> + Quando o **userPrincipalName** começa com um caractere `$`, remova a barra (/) após `/users` e coloque o **userPrincipalName** entre parênteses e aspas simples. Por exemplo, `/users('$AdeleVance@contoso.com')`. Para obter detalhes, confira a lista de [problemas conhecidos](/graph/known-issues#users).
+> [!TIP]
+> 
+> + Quando **userPrincipalName** começa com um caractere `$`, a sintaxe de URL de solicitação GET `/users/$x@y.com` falha com um código de erro `400 Bad Request`. Isso porque essa URL de solicitação viola a convenção de URL OData que espera que apenas as opções de consulta do sistema sejam prefixadas com um caractere `$`. Remova a barra (/) depois `/users` e coloque o **userPrincipalName** entre parênteses e aspas simples, como segue: `/users('$x@y.com')`. Por exemplo, `/users('$AdeleVance@contoso.com')`.
 > + Para consultar um usuário B2B usando o **usuárioPrincipalName**, codifique o caractere hash (#). Ou seja, substituir o símbolo `#` por `%23`. Por exemplo, `/users/AdeleVance_adatum.com%23EXT%23@contoso.com`.
 
 Para o usuário conectado:

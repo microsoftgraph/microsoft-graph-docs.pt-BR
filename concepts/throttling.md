@@ -4,12 +4,12 @@ description: Os limites de controle limitam número de chamadas simultâneas par
 author: FaithOmbongi
 ms.localizationpriority: high
 ms.custom: graphiamtop20
-ms.openlocfilehash: e7431245c63bb9c29ed32a2f07c55394198f1b60
-ms.sourcegitcommit: bfd1ab7e015ef04cb2ca3fb85d308ba2ce830a89
+ms.openlocfilehash: da749ed702e60837fb654963a3bbe78f16bfa36e
+ms.sourcegitcommit: 25acfa7d0153336c9a35d30a1dd422aeadc1342c
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/19/2022
-ms.locfileid: "62072121"
+ms.lasthandoff: 02/03/2022
+ms.locfileid: "62346566"
 ---
 # <a name="microsoft-graph-throttling-guidance"></a>Diretrizes de limitação do Microsoft Graph
 
@@ -208,9 +208,9 @@ A limitação baseia-se em um algoritmo no bucket de token, que funciona adicion
 
 | Tipo de limite | Cota de unidade de recurso | Gravar cota |
 | ---------- | ----------- | -------------- |
-| aplicação+par de locatários | S: 3500, M:5000, L:8000 por 10 segundos | 3000 por 2 minutos e 30 segundos |
-| aplicação | 150,000 por 20 segundos  | 70,000 por 5 minutos |
-| locatário | Não aplicável | 18,000 por 5 minutos |
+| aplicação+par de locatários | S: 3.500 solicitações por 10 segundos <br/> M: 5.000 solicitações por 10 segundos <br/> L: 8.000 solicitações por 10 segundos | 3.000 solicitações por 2 minutos e 30 segundos |
+| aplicação | 150.000 solicitações por 20 segundos  | 70.000 solicitações por 5 minutos|
+| locatário | Não aplicável | 18.000 solicitações por 5 minutos |
 
 > **Observação**: A aplicação + limite do par de locatários varia dependendo do número de usuários nas solicitações de locatário. Os tamanhos dos locatários são definidos da seguinte maneira: S - em 50 usuários, M - entre 50 e 500 usuários, e L para acima de 500 usuários.
 
@@ -245,6 +245,10 @@ A tabela a seguir lista a base dos custos da solicitação. Qualquer solicitaç�
 | PATCH | Qualquer caminho de identidade não listado na tabela | 1 | 1 |
 | PUT | Qualquer caminho de identidade não listado na tabela | 1 | 1 |
 | EXCLUIR | Qualquer caminho de identidade não listado na tabela | 1 | 1 |
+
+> [!IMPORTANT]
+> 
+> O custo das operações POST, PATCH e DELETE no caminho da solicitação `applications` depende do tipo **signInAudience**. Para aplicativos em que o **signInAudience** é `AzureADMyOrg` ou `AzureADMultipleOrgs`, o custo é de 70.000 solicitações por 5 minutos; enquanto para aplicativos em que o **signInAudience** é `AzureADandPersonalMicrosoftAccount` ou `PersonalMicrosoftAccount`, o custo é de 60 solicitações por minuto.
 
 Outros fatores que afetam um custo da solicitação:
 
