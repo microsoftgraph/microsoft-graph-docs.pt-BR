@@ -5,12 +5,12 @@ author: ananmishr
 ms.localizationpriority: medium
 ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: a5efe4e26598449c193403ee44136bcdd6847820
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: 36acccdec73dd2c5e7ae088d45329272aa47f348
+ms.sourcegitcommit: 25acfa7d0153336c9a35d30a1dd422aeadc1342c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "60987287"
+ms.lasthandoff: 02/03/2022
+ms.locfileid: "62341373"
 ---
 # <a name="call-transfer"></a>call: transfer
 
@@ -104,8 +104,12 @@ Content-Length: 430
 [!INCLUDE [sample-code](../includes/snippets/objc/call-transfer-1-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[Go](#tab/go)
+# <a name="go"></a>[Ir](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/call-transfer-1-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/call-transfer-1-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -216,7 +220,7 @@ Content-Type: application/json
 
 #### <a name="notification---transfer-failed"></a>Notificação - falha na transferência
 
-> **Observação:** Quando uma transferência de chamada falhar, o estado da chamada será `established` .
+> **Observação:** Quando uma transferência de chamada falhar, o estado da chamada será `established`.
 
 ```http
 POST https://bot.contoso.com/api/calls
@@ -297,8 +301,12 @@ Content-Type: application/json
 [!INCLUDE [sample-code](../includes/snippets/objc/call-transfer-2-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[Go](#tab/go)
+# <a name="go"></a>[Ir](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/call-transfer-2-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/call-transfer-2-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -404,7 +412,7 @@ Content-Type: application/json
 
 #### <a name="notification---transfer-failed"></a>Notificação - falha na transferência
 
-> **Observação:** Quando uma transferência de chamada falhar, o estado da chamada será `established` .
+> **Observação:** Quando uma transferência de chamada falhar, o estado da chamada será `established`.
 
 ```http
 POST https://bot.contoso.com/api/calls
@@ -441,7 +449,7 @@ Content-Type: application/json
 
 ### <a name="example-3-call-transfer-from-a-peer-to-peer-call-to-pstn-number"></a>Exemplo 3: Transferência de chamada de uma chamada ponto a ponto para o número PSTN
 
-Essa chamada requer uma instância de aplicativo com um número PSTN atribuído. Para obter detalhes, [consulte Atribuir um número de telefone ao seu bot](/graph/cloud-communications-phone-number#assign-a-phone-number-to-your-bot).
+Essa chamada requer uma instância de aplicativo com um número PSTN atribuído. Para obter detalhes, [consulte Atribuir um número de telefone ao bot](/graph/cloud-communications-phone-number#assign-a-phone-number-to-your-bot).
 > **Observação:** Telefone ID é o número de telefone no formato E.164.
 
 #### <a name="request"></a>Solicitação
@@ -480,8 +488,12 @@ Content-Length: 430
 [!INCLUDE [sample-code](../includes/snippets/javascript/call-transfer-3-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[Go](#tab/go)
+# <a name="go"></a>[Ir](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/call-transfer-3-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/call-transfer-3-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -591,7 +603,7 @@ Content-Type: application/json
 ```
 ### <a name="notification---transfer-failed"></a>Notificação - falha na transferência
 
-> **Observação:** Quando uma transferência de chamada falhar, o estado da chamada será `established` .
+> **Observação:** Quando uma transferência de chamada falhar, o estado da chamada será `established`.
 
 ```http
 POST https://bot.contoso.com/api/calls
@@ -627,7 +639,7 @@ Content-Type: application/json
 
 ### <a name="example-4-consultative-transfer-from-a-peer-to-peer-call-to-pstn-number"></a>Exemplo 4: transferência consultiva de uma chamada ponto a ponto para o número PSTN
 
-Essa chamada requer uma instância de aplicativo com um número PSTN atribuído. Para obter detalhes, [consulte Atribuir um número de telefone ao seu bot](/graph/cloud-communications-phone-number#assign-a-phone-number-to-your-bot).
+Essa chamada requer uma instância de aplicativo com um número PSTN atribuído. Para obter detalhes, [consulte Atribuir um número de telefone ao bot](/graph/cloud-communications-phone-number#assign-a-phone-number-to-your-bot).
 > **Observação:** Telefone ID é o número de telefone no formato E.164.
 
 #### <a name="request"></a>Solicitação
@@ -669,8 +681,12 @@ Content-Type: application/json
 [!INCLUDE [sample-code](../includes/snippets/javascript/call-transfer-4-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[Go](#tab/go)
+# <a name="go"></a>[Ir](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/call-transfer-4-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/call-transfer-4-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -776,7 +792,7 @@ Content-Type: application/json
 
 #### <a name="notification---transfer-failed"></a>Notificação - falha na transferência
 
-> **Observação:** Quando uma transferência de chamada falhar, o estado da chamada será `established` .
+> **Observação:** Quando uma transferência de chamada falhar, o estado da chamada será `established`.
 
 ```http
 POST https://bot.contoso.com/api/calls
@@ -859,8 +875,12 @@ Content-Length: 430
 [!INCLUDE [sample-code](../includes/snippets/objc/call-transfer-5-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[Go](#tab/go)
+# <a name="go"></a>[Ir](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/call-transfer-5-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/call-transfer-5-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -970,7 +990,7 @@ Content-Type: application/json
 
 #### <a name="notification---transfer-failed"></a>Notificação - falha na transferência
 
-> **Observação:** Quando uma transferência de chamada falhar, o estado da chamada será `established` .
+> **Observação:** Quando uma transferência de chamada falhar, o estado da chamada será `established`.
 
 ```http
 POST https://bot.contoso.com/api/calls

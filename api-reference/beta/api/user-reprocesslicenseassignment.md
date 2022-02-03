@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: jpettere
 ms.prod: users
 doc_type: apiPageType
-ms.openlocfilehash: a2ffa675291fca51b6b70aad7275fcd4733aa854
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: ddb124ffc02787587c1c22023db9a9bd519adc04
+ms.sourcegitcommit: 25acfa7d0153336c9a35d30a1dd422aeadc1342c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "60984993"
+ms.lasthandoff: 02/03/2022
+ms.locfileid: "62345830"
 ---
 # <a name="user-reprocesslicenseassignment"></a>user: reprocessLicenseAssignment
 
@@ -18,7 +18,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Reprocesse todas as atribuições de licença baseadas em grupo para o usuário. Para saber mais sobre o licenciamento baseado em grupo, consulte O que é licenciamento baseado em [grupo em Azure Active Directory](/azure/active-directory/fundamentals/active-directory-licensing-whatis-azure-portal). Consulte Também Identificar [e resolver problemas de atribuição](/azure/active-directory/users-groups-roles/licensing-groups-resolve-problems) de licença para um grupo Azure Active Directory para obter mais detalhes.
+Reprocesse todas as atribuições de licença baseadas em grupo para o usuário. Para saber mais sobre o licenciamento baseado em grupo, consulte [O que é](/azure/active-directory/fundamentals/active-directory-licensing-whatis-azure-portal) licenciamento baseado em grupo no Azure Active Directory. Consulte Também Identificar [e resolver problemas de atribuição de licença para um grupo Azure Active Directory](/azure/active-directory/users-groups-roles/licensing-groups-resolve-problems) para obter mais detalhes.
 
 
 ## <a name="permissions"></a>Permissões
@@ -46,7 +46,7 @@ Não forneça um corpo de solicitação para esse método.
 
 ## <a name="response"></a>Resposta
 
-Se tiver êxito, este método retornará `200 OK` o código de resposta e um objeto de [usuário](../resources/user.md) atualizado no corpo da resposta.
+Se tiver êxito, este método retornará `200 OK` o código de resposta e um [objeto de usuário](../resources/user.md) atualizado no corpo da resposta.
 
 ## <a name="example"></a>Exemplo
 O exemplo a seguir mostra como reprocessar atribuições de licença para o usuário.
@@ -77,8 +77,12 @@ POST https://graph.microsoft.com/beta/users/047dd774-f1c4-40f2-82f0-278de79f9b83
 [!INCLUDE [sample-code](../includes/snippets/java/user-reprocesslicenseassignment-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[Go](#tab/go)
+# <a name="go"></a>[Ir](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/user-reprocesslicenseassignment-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/user-reprocesslicenseassignment-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

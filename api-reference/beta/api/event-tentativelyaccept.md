@@ -5,12 +5,12 @@ author: harini84
 ms.localizationpriority: medium
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 49035bad309c5e232577a610b0a83dff0049cbc8
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: e4c815b6e8780096ae4990607a02074e4bda5e79
+ms.sourcegitcommit: 25acfa7d0153336c9a35d30a1dd422aeadc1342c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "61034457"
+ms.lasthandoff: 02/03/2022
+ms.locfileid: "62345582"
 ---
 # <a name="event-tentativelyaccept"></a>event: tentativelyAccept
 
@@ -18,9 +18,9 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Aceite provisamente o evento [especificado](../resources/event.md) em um calendário do [usuário.](../resources/calendar.md)
+Aceite provisamente o evento [especificado](../resources/event.md) em um calendário do [usuário](../resources/calendar.md).
 
-Se o evento permitir propostas para novos horários, ao responder provisão ao evento, um convidado pode optar por sugerir uma hora alternativa incluindo o parâmetro **proposedNewTime.** Para obter mais informações sobre como propor uma hora e como receber e aceitar uma nova proposta de hora, consulte [Propor novos horários de reunião.](/graph/outlook-calendar-meeting-proposals)
+Se o evento permitir propostas para novos horários, ao responder provisão ao evento, um convidado pode optar por sugerir uma hora alternativa incluindo o parâmetro **proposedNewTime** . Para obter mais informações sobre como propor um horário e como receber e aceitar uma nova proposta de hora, consulte [Propor novos horários de reunião](/graph/outlook-calendar-meeting-proposals).
 
 ## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
@@ -59,7 +59,7 @@ Forneça um objeto JSON com os seguintes parâmetros no corpo da solicitação.
 |:---------------|:--------|:----------|
 |comment|String|Texto incluído na resposta. Opcional.|
 |sendResponse|Booliano|`true` se uma resposta deve ser enviada ao organizador; caso contrário, `false`. Opcional. O padrão é `true`.|
-|proposedNewTime|[timeSlot](../resources/timeslot.md)|Uma data/hora alternativa proposta por um convidado para que uma solicitação de reunião seja inicial e final. Válido somente para eventos que permitem novas propostas de tempo. A configuração desse parâmetro requer **a definição de sendResponse** como `true` . Opcional.|
+|proposedNewTime|[timeSlot](../resources/timeslot.md)|Uma data/hora alternativa proposta por um convidado para que uma solicitação de reunião seja inicial e final. Válido somente para eventos que permitem novas propostas de tempo. A configuração desse parâmetro requer **a definição de sendResponse** como `true`. Opcional.|
 
 ## <a name="response"></a>Resposta
 
@@ -67,13 +67,13 @@ Se bem-sucedido, este método retorna um código de resposta `202 Accepted`. Nã
 
 Essa ação retornará HTTP 400 se ocorrer um ou ambos os seguintes:
 
-- O **parâmetro proposedNewTime** está incluído, **mas a propriedade allowNewTimeProposals** do **evento** é `false` . 
-- O **parâmetro proposedNewTime** está incluído, mas o **parâmetro sendResponse** é definido como `false` .
+- O **parâmetro proposedNewTime** está incluído, **mas a propriedade allowNewTimeProposals** do **evento** é `false`. 
+- O **parâmetro proposedNewTime** está incluído, mas o **parâmetro sendResponse** é definido como `false`.
 
 ## <a name="example"></a>Exemplo
 Eis um exemplo de como chamar esta API.
 ### <a name="request"></a>Solicitação
-No exemplo a seguir, o usuário in-loco responde provisivo ao evento especificado, define o parâmetro **sendResponse** como true e inclui uma hora alternativa no parâmetro **proposedNewTime.**
+No exemplo a seguir, o usuário in-loco responde provisivo ao evento especificado, define o parâmetro **sendResponse** como true e inclui uma hora alternativa no parâmetro **proposedNewTime** .
 
 # <a name="http"></a>[HTTP](#tab/http)
 <!-- {
@@ -115,8 +115,12 @@ Content-type: application/json
 [!INCLUDE [sample-code](../includes/snippets/java/event-tentativelyaccept-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[Go](#tab/go)
+# <a name="go"></a>[Ir](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/event-tentativelyaccept-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/event-tentativelyaccept-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

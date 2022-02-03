@@ -5,12 +5,12 @@ author: isabelleatmsft
 ms.localizationpriority: medium
 ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: 2b586e5925f34bd74f7dc2351a6b91fa102767fd
-ms.sourcegitcommit: 871db8b3f68489d24e2aeafe694725579ee44c47
+ms.openlocfilehash: 44079aafaf994546530d5c9474a774a181b2b6b0
+ms.sourcegitcommit: 25acfa7d0153336c9a35d30a1dd422aeadc1342c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/26/2022
-ms.locfileid: "62226056"
+ms.lasthandoff: 02/03/2022
+ms.locfileid: "62340540"
 ---
 # <a name="accessreviewhistoryinstance-generatedownloaduri"></a>accessReviewHistoryInstance: generateDownloadUri
 
@@ -18,7 +18,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Gera um URI para um [objeto accessReviewHistoryInstance](../resources/accessReviewHistoryInstance.md) para o **qual o status** é `done` . Cada URI pode ser usado para recuperar os dados de histórico de revisão da instância. Cada URI é válido por 24 horas e pode ser recuperado buscando a propriedade **downloadUri** do [objeto accessReviewHistoryInstance.](../resources/accessReviewHistoryInstance.md)
+Gera um URI para um [objeto accessReviewHistoryInstance](../resources/accessReviewHistoryInstance.md) para o **qual o status** é `done`. Cada URI pode ser usado para recuperar os dados de histórico de revisão da instância. Cada URI é válido por 24 horas e pode ser recuperado buscando a propriedade **downloadUri** do [objeto accessReviewHistoryInstance](../resources/accessReviewHistoryInstance.md) .
 
 ## <a name="permissions"></a>Permissões
 
@@ -28,9 +28,9 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |:---|:---|
 |Delegado (conta corporativa ou de estudante)|AccessReview.ReadWrite.All|
 |Delegado (conta pessoal da Microsoft)|Sem suporte.|
-|Application|AccessReview.ReadWrite.All|
+|Aplicativo|AccessReview.ReadWrite.All|
 
-Para gerar o link, o usuário associado deve ser o criador da definição de histórico de revisão associada ou as funções de diretório Administrador *Global* ou *Leitor Global.* [](/azure/active-directory/roles/permissions-reference)
+Para gerar o link, o usuário inscreveu deve ser o criador da definição de histórico de revisão associada ou as funções de diretório Administrador *Global* ou *Leitor Global*[.](/azure/active-directory/roles/permissions-reference)
 
 ## <a name="http-request"></a>Solicitação HTTP
 
@@ -55,12 +55,14 @@ Não forneça um corpo de solicitação para esse método.
 
 ## <a name="response"></a>Resposta
 
-Se tiver êxito, essa ação retornará um código `200 OK` de resposta e um [accessReviewHistoryInstances](../resources/accessReviewHistoryInstance.md) no corpo da resposta.
+Se tiver êxito, essa ação retornará um `200 OK` código de resposta e um [accessReviewHistoryInstances](../resources/accessReviewHistoryInstance.md) no corpo da resposta.
 
 ## <a name="examples"></a>Exemplos
 
 ### <a name="request"></a>Solicitação
 
+
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "accessreviewhistoryinstance_generatedownloaduri"
@@ -70,6 +72,28 @@ Se tiver êxito, essa ação retornará um código `200 OK` de resposta e um [ac
 ``` http
 POST https://graph.microsoft.com/beta/identityGovernance/accessReviews/historyDefinitions/b2cb022f-b7e1-40f3-9854-c65a40861c38/instances/b2cb022f-b7e1-40f3-9854-c65a40861c38/generateDownloadUri
 ```
+# <a name="c"></a>[C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/accessreviewhistoryinstance-generatedownloaduri-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/accessreviewhistoryinstance-generatedownloaduri-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/accessreviewhistoryinstance-generatedownloaduri-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/accessreviewhistoryinstance-generatedownloaduri-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[Ir](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/accessreviewhistoryinstance-generatedownloaduri-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 ### <a name="response"></a>Resposta
 

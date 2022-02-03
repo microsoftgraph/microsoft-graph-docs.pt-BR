@@ -5,19 +5,19 @@ ms.localizationpriority: medium
 author: markwahl-msft
 ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: b158fcfee76d583bd2b44baa1216badf4494f8a9
-ms.sourcegitcommit: 71186ad44d8d0df15e10b0f89df68d2ef0cf9d14
+ms.openlocfilehash: 14491683e302c89b41d5b01b3ea627e41999e0c1
+ms.sourcegitcommit: 25acfa7d0153336c9a35d30a1dd422aeadc1342c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/12/2022
-ms.locfileid: "61791914"
+ms.lasthandoff: 02/03/2022
+ms.locfileid: "62340690"
 ---
 # <a name="accesspackage-getapplicablepolicyrequirements"></a>accessPackage: getApplicablePolicyRequirements
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-No gerenciamento de direitos do [Azure AD,](../resources/entitlementmanagement-overview.md)essa ação recupera uma lista de objetos [accessPackageAssignmentRequestRequirements](../resources/accesspackageassignmentrequestrequirements.md) que o usuário atualmente está assinado pode usar para criar um [accessPackageAssignmentRequest](../resources/accesspackageassignmentrequest.md).  Cada objeto de requisito corresponde a uma política de atribuição de pacote de acesso para a que o usuário atualmente está autorizado a solicitar uma atribuição.
+No gerenciamento de direitos do [Azure AD](../resources/entitlementmanagement-overview.md), essa ação recupera uma lista de objetos [accessPackageAssignmentRequestRequirements](../resources/accesspackageassignmentrequestrequirements.md) que o usuário atualmente está assinado pode usar para criar um [accessPackageAssignmentRequest](../resources/accesspackageassignmentrequest.md).  Cada objeto de requisito corresponde a uma política de atribuição de pacote de acesso para a que o usuário atualmente está autorizado a solicitar uma atribuição.
 
 ## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
@@ -51,7 +51,7 @@ Nenhum.
 Não fornece um corpo de solicitação para esse método se quiser recuperar uma lista de requisitos de pacote de acesso, como no exemplo 1. Se você quiser obter requisitos de política para o escopo do usuário, como no exemplo 2, deverá fornecer um corpo da solicitação.
 
 ## <a name="response"></a>Resposta
-Se tiver êxito, este método retornará um código de resposta e uma coleção `200 OK` [accessPackageAssignmentRequestRequirements](../resources/accesspackageassignmentrequestrequirements.md) no corpo da resposta, um objeto para cada política para a qual o usuário é **um allowedRequestor**. Se houver uma política sem requisitos, **o accessPackageAssignmentRequestRequirements** terá `false` e `null` valores. Se não houver políticas em que o usuário seja **um allowedRequestor**, uma coleção vazia será retornada.
+Se tiver êxito, `200 OK` este método retornará um código de resposta e uma coleção [accessPackageAssignmentRequestRequirements](../resources/accesspackageassignmentrequestrequirements.md) no corpo da resposta, um objeto para cada política para a qual o usuário é **um allowedRequestor**. Se houver uma política sem requisitos, **o accessPackageAssignmentRequestRequirements** terá `false` e valores `null` . Se não houver políticas em que o usuário seja **um allowedRequestor**, uma coleção vazia será retornada.
 
 ## <a name="examples"></a>Exemplos
 
@@ -86,6 +86,10 @@ POST https://graph.microsoft.com/beta/identityGovernance/entitlementManagement/a
 
 # <a name="go"></a>[Ir](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/accesspackage-getapplicablepolicyrequirements-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/accesspackage-getapplicablepolicyrequirements-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

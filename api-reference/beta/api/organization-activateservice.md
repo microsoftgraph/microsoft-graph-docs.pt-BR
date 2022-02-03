@@ -5,12 +5,12 @@ author: dkershaw10
 ms.localizationpriority: medium
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: 859bf503fb0fa2cdac018e194f3ead67e9ca4792
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: 2041afd2cb16b20a5863104e2b54247ecab77ba2
+ms.sourcegitcommit: 25acfa7d0153336c9a35d30a1dd422aeadc1342c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "60985938"
+ms.lasthandoff: 02/03/2022
+ms.locfileid: "62343091"
 ---
 # <a name="organization-activateservice"></a>organization: activateService
 
@@ -23,7 +23,7 @@ Ative um serviço para uma organização.
 ## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
-Para ativar um serviço para uma organização, o  solicitante precisa ter a função administrador da empresa com as seguintes permissões.
+Para ativar um serviço para uma organização, o solicitante precisa ter a função administrador  da empresa com as seguintes permissões.
 
 |Tipo de permissão|Permissões (da com menos para a com mais privilégios)|
 | :--- | :--- |
@@ -49,7 +49,7 @@ POST /organization/{organizationId}/activateService
 |Content-Type|application/json. Obrigatório.|
 
 ## <a name="request-body"></a>Corpo da solicitação
-No corpo da solicitação, fornece uma representação JSON do [objeto activateService.](../resources/activateService.md)
+No corpo da solicitação, fornece uma representação JSON do [objeto activateService](../resources/activateService.md) .
 Você deve definir **o serviço** ou (**servicePlanId** _e_ **skuId**) para que essa ação seja válida.
 
 | Propriedade         | Tipo         | Descrição                           |
@@ -97,8 +97,12 @@ Content-Type: application/json
 [!INCLUDE [sample-code](../includes/snippets/java/organization-activateservice-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[Go](#tab/go)
+# <a name="go"></a>[Ir](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/organization-activateservice-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/organization-activateservice-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

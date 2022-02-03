@@ -5,12 +5,12 @@ author: ananmishr
 ms.localizationpriority: medium
 ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: 24f26b346b3488b12824f591b8acb73ce6b23f98
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: 2722f649f5d30be05af9d469905b134171e856e0
+ms.sourcegitcommit: 25acfa7d0153336c9a35d30a1dd422aeadc1342c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "61022676"
+ms.lasthandoff: 02/03/2022
+ms.locfileid: "62346959"
 ---
 # <a name="call-recordresponse"></a>call: recordResponse
 
@@ -24,7 +24,7 @@ Um bot pode usar isso para capturar uma resposta de voz de um chamador depois de
 
 Para obter mais informações sobre como lidar com operações, consulte [commsOperation](../resources/commsOperation.md)
 
->**Observação:** Essa API só tem suporte para [chamadas](../resources/call.md) iniciadas com [serviceHostedMediaConfig](../resources/servicehostedmediaconfig.md).
+>**Observação:** Essa API só tem [suporte para chamadas](../resources/call.md) iniciadas com [serviceHostedMediaConfig](../resources/servicehostedmediaconfig.md).
 
 Essa ação não se destina a gravar a chamada inteira. O comprimento máximo da gravação é de 2 minutos. A gravação não é salva permanentemente pela Plataforma de Comunicações na Nuvem e é descartada logo após o final da chamada. O bot deve baixar a gravação imediatamente após a conclusão da operação de gravação usando o valor recordingLocation que é dado na notificação concluída.
 
@@ -70,7 +70,7 @@ Forneça um objeto JSON com os seguintes parâmetros no corpo da solicitação.
 > **Observação:** O tempo máximo de gravação foi reduzido de 5 minutos para 2 minutos.
 
 ## <a name="response"></a>Resposta
-Este método retorna um código de resposta HTTP e um cabeçalho Location com um URI para `200 OK` o [recordOperation](../resources/recordoperation.md) criado para essa solicitação.
+Este método retorna um código `200 OK` de resposta HTTP e um cabeçalho Location com um URI para o [recordOperation](../resources/recordoperation.md) criado para essa solicitação.
 
 ## <a name="example"></a>Exemplo
 O exemplo a seguir mostra como chamar essa API.
@@ -126,8 +126,12 @@ Content-Length: 394
 [!INCLUDE [sample-code](../includes/snippets/java/call-recordresponse-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[Go](#tab/go)
+# <a name="go"></a>[Ir](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/call-recordresponse-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/call-recordresponse-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

@@ -5,18 +5,18 @@ author: akumar39
 ms.localizationpriority: medium
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: c9bd65707ff7d1f8a09c9e84a7dc1b63dae3ac84
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: bfbc5c890d47ab765ac59f40ef89181533d2e1e7
+ms.sourcegitcommit: 25acfa7d0153336c9a35d30a1dd422aeadc1342c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62091810"
+ms.lasthandoff: 02/03/2022
+ms.locfileid: "62344723"
 ---
 # <a name="list-shifts"></a>Listar turnos
 
 Namespace: microsoft.graph
 
-Obter a lista de [instâncias de turno](../resources/shift.md) em um [agendamento](../resources/schedule.md).
+Obter a lista de [instâncias de](../resources/shift.md) turno em um [cronograma](../resources/schedule.md).
 
 ## <a name="permissions"></a>Permissões
 
@@ -39,7 +39,7 @@ GET /teams/{teamId}/schedule/shifts
 ```
 
 ## <a name="optional-query-parameters"></a>Parâmetros de consulta opcionais
-Este método dá suporte ao parâmetro $filter [consulta OData](/graph/query-parameters) para ajudar a personalizar a resposta.
+Este método dá suporte ao parâmetro `$filter` [de consulta OData](/graph/query-parameters) para ajudar a personalizar a resposta.
 
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
 
@@ -52,7 +52,7 @@ Não forneça um corpo de solicitação para esse método.
 
 ## <a name="response"></a>Resposta
 
-Se tiver êxito, este método retornará um código de resposta e uma `200 OK` coleção de objetos [shift](../resources/shift.md) no corpo da resposta.
+Se tiver êxito, este método retornará um `200 OK` código de resposta e uma coleção de objetos [shift](../resources/shift.md) no corpo da resposta.
 
 ## <a name="example"></a>Exemplo
 

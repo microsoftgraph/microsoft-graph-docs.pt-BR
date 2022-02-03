@@ -5,19 +5,19 @@ description: Associe um tipo de conteúdo a uma lista de sites de hub.
 ms.localizationpriority: medium
 doc_type: apiPageType
 ms.prod: sites-and-lists
-ms.openlocfilehash: 1f55baa3c64195f66cb9ef2f9df4db0c63426131
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: 7b84508946c99b201563bfa86ffa021b28832900
+ms.sourcegitcommit: 25acfa7d0153336c9a35d30a1dd422aeadc1342c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "60974169"
+ms.lasthandoff: 02/03/2022
+ms.locfileid: "62346762"
 ---
 # <a name="contenttype-associatewithhubsites"></a>contentType: associateWithHubSites
 
 Namespace: microsoft.graph
 
 
-Associe um tipo [de conteúdo][contentType] publicado presente em um hub de tipo de conteúdo com uma lista de sites de hub.
+[Associe um tipo de conteúdo][contentType] publicado presente em um hub de tipo de conteúdo com uma lista de sites de hub.
 
 >**Observação:** Esse recurso é limitado a locatários que têm uma SharePoint Syntex de usuário.
   
@@ -60,7 +60,7 @@ A tabela a seguir mostra os parâmetros que podem ser usados com esta ação.
 |Parâmetro|Tipo|Descrição|
 |-|-|-|
 |hubSiteUrls| Collection(string) |Lista de URLs canônicas para os sites de hub onde o tipo de conteúdo precisa ser imposto. Obrigatório.|
-|propagateToExistingLists| Booliano |Se , os tipos de conteúdo serão impostos em listas existentes nos sites do hub; caso contrário, ele será aplicado somente a listas `true` recém-criadas.|
+|propagateToExistingLists| Boolean |Se `true`, os tipos de conteúdo serão impostos em listas existentes nos sites do hub; caso contrário, ele será aplicado somente a listas recém-criadas.|
 
 ## <a name="response"></a>Resposta
 
@@ -104,8 +104,12 @@ Content-Type: application/json
 [!INCLUDE [sample-code](../includes/snippets/java/contenttype-associatewithhubsites-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[Go](#tab/go)
+# <a name="go"></a>[Ir](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/contenttype-associatewithhubsites-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/contenttype-associatewithhubsites-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
