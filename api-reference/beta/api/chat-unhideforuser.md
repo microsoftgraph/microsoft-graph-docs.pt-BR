@@ -5,12 +5,12 @@ author: RamjotSingh
 ms.prod: microsoft-teams
 doc_type: apiPageType
 ms.localizationpriority: medium
-ms.openlocfilehash: f38d55c11ef65621d83c14407b025207190a9468
-ms.sourcegitcommit: e497ed9bb56400bdd2bb53d52ddf057d9966220b
+ms.openlocfilehash: 42a56bb483cdc70a9cfef80428e9649c3d73c2e8
+ms.sourcegitcommit: 25acfa7d0153336c9a35d30a1dd422aeadc1342c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/30/2021
-ms.locfileid: "61225795"
+ms.lasthandoff: 02/03/2022
+ms.locfileid: "62342187"
 ---
 # <a name="chat-unhideforuser"></a>chat: unhideForUser
 Namespace: microsoft.graph
@@ -24,7 +24,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 |Tipo de permissão|Permissões (da com menos para a com mais privilégios)|
 |:---|:---|
-|Delegada (conta corporativa ou de estudante)|Chat.ReadWrite|
+|Delegado (conta corporativa ou de estudante)|Chat.ReadWrite|
 |Delegado (conta pessoal da Microsoft) | Sem suporte. |
 |Aplicativo | Sem suporte. |
 
@@ -51,7 +51,7 @@ A tabela a seguir mostra os parâmetros que podem ser usados com esta ação.
 
 |Parâmetro|Tipo|Descrição|
 |:---|:---|:---|
-|usuário|[teamworkUserIdentity](../resources/teamworkuseridentity.md)|User to unhide the chat for. **No modo delegado, os usuários só podem desaconsindir um chat para si mesmos.**|
+|usuário|[teamworkUserIdentity](../resources/teamworkuseridentity.md)|User to unhide the chat for. **No modo delegado, os usuários só podem desaconsinuir um chat por conta própria**.|
 |tenantId|String|ID de locatário do usuário.|
 
 ## <a name="response"></a>Resposta
@@ -95,8 +95,12 @@ Content-Type: application/json
 [!INCLUDE [sample-code](../includes/snippets/java/chat-unhideforuser-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[Go](#tab/go)
+# <a name="go"></a>[Ir](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/chat-unhideforuser-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/chat-unhideforuser-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

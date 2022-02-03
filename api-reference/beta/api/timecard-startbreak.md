@@ -5,12 +5,12 @@ author: akumar39
 ms.localizationpriority: medium
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 954e481ee1a4865ca688ecfbd8363075ea80aa37
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: bac078c790703c9b3a04992fbcdf36ae5403f0a0
+ms.sourcegitcommit: 25acfa7d0153336c9a35d30a1dd422aeadc1342c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "60988927"
+ms.lasthandoff: 02/03/2022
+ms.locfileid: "62341921"
 ---
 # <a name="timecard-startbreak"></a>timeCard: startBreak
 
@@ -18,7 +18,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Inicie uma pausa em um [cartão de ponto específico.](../resources/timeCard.md)
+Inicie uma pausa em um [cartão de ponto específico](../resources/timeCard.md).
 
 ## <a name="permissions"></a>Permissões
 
@@ -30,7 +30,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |Delegado (conta pessoal da Microsoft) | Sem suporte.    |
 |Aplicativo | Schedule.ReadWrite.All* |
 
->\***Importante:** Quando você usa permissões de aplicativo, deve incluir `MS-APP-ACTS-AS` o header na solicitação.
+>\***Importante:** Quando você usa permissões de aplicativo, deve incluir o `MS-APP-ACTS-AS` header na solicitação.
 
 ## <a name="http-request"></a>Solicitação HTTP
 
@@ -93,8 +93,12 @@ Content-type: application/json
 [!INCLUDE [sample-code](../includes/snippets/objc/timecard-startbreak-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[Go](#tab/go)
+# <a name="go"></a>[Ir](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/timecard-startbreak-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/timecard-startbreak-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

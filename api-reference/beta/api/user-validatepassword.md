@@ -5,12 +5,12 @@ author: yyuank
 ms.localizationpriority: medium
 ms.prod: users
 doc_type: apiPageType
-ms.openlocfilehash: 687480f3973cc1fc3621cf2355a708815f724998
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: 499aa0aebc2df0e27a8469070d66628897b585f8
+ms.sourcegitcommit: 25acfa7d0153336c9a35d30a1dd422aeadc1342c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "60984937"
+ms.lasthandoff: 02/03/2022
+ms.locfileid: "62340913"
 ---
 # <a name="user-validatepassword"></a>user: validatePassword
 Namespace: microsoft.graph
@@ -55,7 +55,7 @@ A tabela a seguir mostra os parâmetros necessários com essa ação.
 
 ## <a name="response"></a>Resposta
 
-Se tiver êxito, essa ação retornará um código `200 OK` de resposta e um objeto [passwordValidationInformation](../resources/passwordvalidationinformation.md) no corpo da resposta.
+Se tiver êxito, essa ação retornará um `200 OK` código de resposta e um [objeto passwordValidationInformation](../resources/passwordvalidationinformation.md) no corpo da resposta.
 
 ## <a name="examples"></a>Exemplos 
 
@@ -91,8 +91,12 @@ Content-Type: application/json
 [!INCLUDE [sample-code](../includes/snippets/java/user-validatepassword-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[Go](#tab/go)
+# <a name="go"></a>[Ir](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/user-validatepassword-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/user-validatepassword-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

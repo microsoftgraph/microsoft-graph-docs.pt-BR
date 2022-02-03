@@ -5,12 +5,12 @@ author: AshleyYangSZ
 ms.localizationpriority: medium
 ms.prod: cloud-pc
 doc_type: apiPageType
-ms.openlocfilehash: 73bf1a8883e27b3c2b36529706700531320419e8
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: 93d18e141003bb2ff864744a22b753433a6a0c48
+ms.sourcegitcommit: 25acfa7d0153336c9a35d30a1dd422aeadc1342c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62095646"
+ms.lasthandoff: 02/03/2022
+ms.locfileid: "62343771"
 ---
 # <a name="virtualendpoint-geteffectivepermissions"></a>virtualEndpoint: getEffectivePermissions
 
@@ -53,7 +53,7 @@ Não forneça um corpo de solicitação para esse método.
 
 ## <a name="response"></a>Resposta
 
-Se tiver êxito, essa função retornará o código de resposta `200 OK` e a Coleção de cadeias de caracteres no corpo da resposta. Se o usuário tiver permissões completas, a resposta será `["*"]` .
+Se tiver êxito, essa função retornará o código de resposta `200 OK` e a Coleção de cadeias de caracteres no corpo da resposta. Se o usuário tiver permissões completas, a resposta será `["*"]`.
 
 ## <a name="examples"></a>Exemplos
 
@@ -88,6 +88,10 @@ GET https://graph.microsoft.com/beta/deviceManagement/virtualEndpoint/getEffecti
 
 # <a name="go"></a>[Ir](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/virtualendpoint-geteffectivepermissions-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/virtualendpoint-geteffectivepermissions-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

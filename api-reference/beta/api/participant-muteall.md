@@ -5,12 +5,12 @@ author: ananmishr
 ms.localizationpriority: medium
 ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: a4d04bce478c0ab4eb94769a222cf7bee6b272ce
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: 4805c8aa107d2f056fad0b2c112caef58a629ddb
+ms.sourcegitcommit: 25acfa7d0153336c9a35d30a1dd422aeadc1342c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "61019756"
+ms.lasthandoff: 02/03/2022
+ms.locfileid: "62341985"
 ---
 # <a name="participant-muteall"></a>participante: muteAll
 
@@ -30,7 +30,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |:---------------------------------------|:--------------------------------------------|
 | Delegado (conta corporativa ou de estudante)     | Não suportado                               |
 | Delegado (conta pessoal da Microsoft) | Não suportado                               |
-| Aplicativo                            | Nenhuma                                        |
+| Aplicativo                            | Nenhum                                        |
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- { "blockType": "ignored" } -->
@@ -51,11 +51,11 @@ Forneça um objeto JSON com os seguintes parâmetros no corpo da solicitação.
 
 | Parâmetro      | Tipo    |Descrição|
 |:---------------|:--------|:----------|
-|participants|Coleção de cadeias de caracteres|Os participantes a serem mudos.|
-|clientContext|Cadeia de caracteres|O contexto do cliente.|
+|participants|Conjunto de cadeias de caracteres|Os participantes a serem mudos.|
+|clientContext|String|O contexto do cliente.|
 
 ## <a name="response"></a>Resposta
-Se tiver êxito, este método retornará um código de resposta e um `200 OK` [objeto commsOperation](../resources/commsoperation.md) no corpo da resposta.
+Se tiver êxito, este método retornará um `200 OK` código de resposta e um [objeto commsOperation](../resources/commsoperation.md) no corpo da resposta.
 
 ## <a name="example"></a>Exemplo
 O exemplo a seguir mostra como chamar essa API.
@@ -96,8 +96,12 @@ Content-Length: 81
 [!INCLUDE [sample-code](../includes/snippets/java/participant-muteall-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[Go](#tab/go)
+# <a name="go"></a>[Ir](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/participant-muteall-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/participant-muteall-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

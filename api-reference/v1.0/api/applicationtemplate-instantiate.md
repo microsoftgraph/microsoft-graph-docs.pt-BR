@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: luleonpla
 ms.prod: applications
 doc_type: apiPageType
-ms.openlocfilehash: 46fe76d14fc1b972cb0ce19222ee7a0343381c37
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: 17e923f27906f6845761aa86f3ce566b3645842b
+ms.sourcegitcommit: 25acfa7d0153336c9a35d30a1dd422aeadc1342c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "60974568"
+ms.lasthandoff: 02/03/2022
+ms.locfileid: "62346357"
 ---
 # <a name="applicationtemplate-instantiate"></a>applicationTemplate: instaurá-lo
 
@@ -48,11 +48,11 @@ Forneça um objeto JSON com os seguintes parâmetros no corpo da solicitação.
 
 | Parâmetro   | Tipo   | Descrição                    |
 | :---------- | :----- | :----------------------------- |
-| displayName | Cadeia de caracteres | Nome personalizado do aplicativo |
+| displayName | String | Nome personalizado do aplicativo |
 
 ## <a name="response"></a>Resposta
 
-Se tiver êxito, este método retornará um código de resposta e um `201 OK` novo [objeto applicationServicePrincipal](../resources/applicationserviceprincipal.md) no corpo da resposta.
+Se tiver êxito, este método retornará um `201 OK` código de resposta e um novo [objeto applicationServicePrincipal](../resources/applicationserviceprincipal.md) no corpo da resposta.
 
 ## <a name="examples"></a>Exemplos
 
@@ -62,7 +62,7 @@ O exemplo a seguir mostra como chamar essa API.
 
 Este é um exemplo de solicitação.
 
-> Você pode usar essa API para insinuar [aplicativos que não são da galeria.](/azure/active-directory/manage-apps/add-non-gallery-app) Use a ID a seguir para **applicationTemplate**: `8adf8e6e-67b2-4cf2-a259-e3dc5476c621` .
+> Você pode usar essa API para insinuar [aplicativos que não são da galeria](/azure/active-directory/manage-apps/add-non-gallery-app). Use a ID a seguir para **applicationTemplate**: `8adf8e6e-67b2-4cf2-a259-e3dc5476c621`.
 
 
 # <a name="http"></a>[HTTP](#tab/http)
@@ -95,8 +95,12 @@ Content-type: application/json
 [!INCLUDE [sample-code](../includes/snippets/java/applicationtemplate-instantiate-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[Go](#tab/go)
+# <a name="go"></a>[Ir](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/applicationtemplate-instantiate-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/applicationtemplate-instantiate-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

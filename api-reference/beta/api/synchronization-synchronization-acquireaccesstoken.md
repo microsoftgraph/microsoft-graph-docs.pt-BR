@@ -5,12 +5,12 @@ author: ArvindHarinder1
 ms.localizationpriority: medium
 ms.prod: applications
 doc_type: apiPageType
-ms.openlocfilehash: 27e405bdd6374975058a5fa5bbb0c673f8f0a5b6
-ms.sourcegitcommit: 871db8b3f68489d24e2aeafe694725579ee44c47
+ms.openlocfilehash: 4052383c869f768394384d95c769549a352540fe
+ms.sourcegitcommit: 25acfa7d0153336c9a35d30a1dd422aeadc1342c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/26/2022
-ms.locfileid: "62225368"
+ms.lasthandoff: 02/03/2022
+ms.locfileid: "62347071"
 ---
 # <a name="acquireaccesstoken"></a>acquireAccessToken
 Namespace: microsoft.graph
@@ -24,7 +24,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |:---|:---|
 |Delegado (conta corporativa ou de estudante)|Directory.ReadWrite.All|
 |Delegado (conta pessoal da Microsoft)|Sem suporte.|
-|Application|Application.ReadWrite.OwnedBy, Directory.ReadWrite.All|
+|Aplicativo|Application.ReadWrite.OwnedBy, Directory.ReadWrite.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
 
@@ -98,6 +98,10 @@ Content-Type: application/json
 
 # <a name="go"></a>[Ir](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/synchronization-acquireaccesstoken-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/synchronization-acquireaccesstoken-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

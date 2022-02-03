@@ -5,12 +5,12 @@ description: Conceder uma lista de usuários acesso para usar o link especificad
 ms.localizationpriority: medium
 ms.prod: sharepoint
 doc_type: apiPageType
-ms.openlocfilehash: 6c966424dc1358e8a41a9015d3beaed0154b7468
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: 27546f296091c120315283a64920072c5f6ff3e9
+ms.sourcegitcommit: 25acfa7d0153336c9a35d30a1dd422aeadc1342c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "60978873"
+ms.lasthandoff: 02/03/2022
+ms.locfileid: "62347812"
 ---
 # <a name="permission-grant"></a>permission: grant
 
@@ -59,14 +59,14 @@ Forneça um objeto JSON com os seguintes parâmetros no corpo da solicitação.
 
 | Parâmetro          | Tipo                           | Descrição
 |:-------------------|:-------------------------------|:-------------------------
-| destinatários         | Coleção([driveRecipient][]) | Uma coleção de destinatários que receberão acesso.
+| destinatários         | Collection([driveRecipient][]) | Uma coleção de destinatários que receberão acesso.
 | funções              | Collection(String)             | Se o link for um link de "acesso existente", especificará funções a serem concedidas aos usuários. Caso contrário, deverá corresponder à função do link.
 
 Para ver uma lista de funções disponíveis, consulte [roles property values](../resources/permission.md#roles-property-values).
 
 ## <a name="response"></a>Resposta
 
-Se tiver êxito, este método retornará um código `200 OK` de resposta e uma coleção [de][] permissões no corpo da resposta.
+Se tiver êxito, este método retornará um `200 OK` código de resposta e uma coleção [de][] permissões no corpo da resposta.
 
 Uma [permissão][] que representa o link atualizado sempre será retornada no conjunto de resultados sobre o sucesso. O link atualizado pode ser identificado pela presença de uma faceta 'link' contendo a propriedade 'escopo'. Em alguns casos, pode ser possível que o link atualizado tenha uma URL diferente do link original, nesse caso, a nova URL deve ser usada.
 
@@ -115,8 +115,12 @@ Content-type: application/json
 [!INCLUDE [sample-code](../includes/snippets/java/permission-grant-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[Go](#tab/go)
+# <a name="go"></a>[Ir](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/permission-grant-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/permission-grant-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -151,9 +155,9 @@ Content-type: application/json
 
 >**Observação:** o objeto de resposta mostrado aqui pode ser encurtado para legibilidade.
 
-Se o link for um link [de acesso](../resources/permission.md) existente, permissões adicionais serão retornadas representando o seguinte:
+Se o link for [um link de acesso](../resources/permission.md) existente, permissões adicionais serão retornadas representando o seguinte:
 
-- Permissões de tipo de usuário que representam destinatários que tiveram acesso concedido com êxito. Eles podem ser identificados pela presença da **propriedade grantedTo.**
+- Permissões de tipo de usuário que representam destinatários que tiveram acesso concedido com êxito. Eles podem ser identificados pela presença da **propriedade grantedTo** .
 - Permissões de tipo de link que representam convites que precisam ser enviados a usuários externos não reconhecedos para que eles obtenham acesso. Eles podem ser identificados pela presença de uma faceta [de](../resources/sharinginvitation.md) convite. Essas entradas conterão um [link][sharing-link] com a URL do convite e a coleção grantedToIdentities indicará os usuários aos quais o link deve ser enviado.
 
 <!-- { "blockType": "response", "@odata.type": "Collection(microsoft.graph.permission)", "truncated": true } -->

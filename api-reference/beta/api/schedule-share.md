@@ -5,12 +5,12 @@ author: nkramer
 ms.localizationpriority: medium
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: b14688102dd7f08cad8ee46f2b62fab7d9995feb
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: 06622a92c35964957df9e73a7eaebd5c87b3a07d
+ms.sourcegitcommit: 25acfa7d0153336c9a35d30a1dd422aeadc1342c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "60993856"
+ms.lasthandoff: 02/03/2022
+ms.locfileid: "62345568"
 ---
 # <a name="schedule-share"></a>schedule: share
 
@@ -19,8 +19,8 @@ Namespace: microsoft.graph
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Compartilhe um [intervalo de](../resources/schedule.md) tempo de agendamento com membros de agendamento.
-Tornar as coleções de itens [shift](../resources/shift.md), [openshift](../resources/openshift.md) e [](../resources/schedule.md) [timeOff](../resources/timeoff.md) no intervalo de tempo especificado do cronograma visualizado pelos membros da equipe especificados, incluindo funcionários e gerentes.
-Cada [turno](../resources/shift.md), [instância openshift](../resources/openshift.md) [](../resources/schedule.md) [e timeOff](../resources/timeoff.md) em uma agenda suporta uma versão de rascunho e uma versão compartilhada do item. A versão de rascunho pode ser visualizada somente por gerentes, e a versão compartilhada pode ser visualizada por funcionários e gerentes. Para cada [turno](../resources/shift.md), [instância openshift](../resources/openshift.md) e [timeOff](../resources/timeoff.md) no intervalo de tempo especificado, a ação de compartilhamento atualiza a versão compartilhada da versão de rascunho, para que, além dos gerentes, os funcionários também possam exibir as informações mais atuais sobre o item. O **parâmetro notifyTeam** especifica ainda quais funcionários podem exibir o item.
+Faça com que as coleções de itens [shift](../resources/shift.md), [openshift](../resources/openshift.md) e [timeOff](../resources/timeoff.md) no intervalo de tempo especificado do [](../resources/schedule.md) cronograma sejam visualizadas pelos membros da equipe especificados, incluindo funcionários e gerentes.
+Cada [turno](../resources/shift.md), [instância openshift](../resources/openshift.md) [e timeOff](../resources/timeoff.md) em um [cronograma](../resources/schedule.md) oferece suporte a uma versão de rascunho e uma versão compartilhada do item. A versão de rascunho pode ser visualizada somente por gerentes, e a versão compartilhada pode ser visualizada por funcionários e gerentes. Para cada [turno](../resources/shift.md), [instância openshift](../resources/openshift.md) e [timeOff](../resources/timeoff.md) no intervalo de tempo especificado, a ação de compartilhamento atualiza a versão compartilhada da versão de rascunho, para que, além dos gerentes, os funcionários também possam exibir as informações mais atuais sobre o item. O **parâmetro notifyTeam** especifica ainda quais funcionários podem exibir o item.
 
 ## <a name="permissions"></a>Permissões
 
@@ -98,8 +98,12 @@ Content-type: application/json
 [!INCLUDE [sample-code](../includes/snippets/java/schedule-share-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[Go](#tab/go)
+# <a name="go"></a>[Ir](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/schedule-share-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/schedule-share-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

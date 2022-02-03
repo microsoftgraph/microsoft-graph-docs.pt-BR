@@ -5,12 +5,12 @@ author: AshleyYangSZ
 ms.localizationpriority: medium
 ms.prod: cloud-pc
 doc_type: apiPageType
-ms.openlocfilehash: a31c56aa3f43c37dfff19d9d885ccfcfb4b94336
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: 09632e6f375e41968b239028675623bee9370bfe
+ms.sourcegitcommit: 25acfa7d0153336c9a35d30a1dd422aeadc1342c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "61018825"
+ms.lasthandoff: 02/03/2022
+ms.locfileid: "62347210"
 ---
 # <a name="cloudpcdeviceimage-getsourceimages"></a>cloudPcDeviceImage: getSourceImages
 
@@ -18,7 +18,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Obter [objetos cloudPcSourceDeviceImage.](../resources/cloudpcsourcedeviceimage.md) Exibir uma lista de todos os recursos de imagem gerenciados de suas Azure Active Directory assinaturas.
+Obter [objetos cloudPcSourceDeviceImage](../resources/cloudpcsourcedeviceimage.md) . Exibir uma lista de todos os recursos de imagem gerenciados de suas Azure Active Directory assinaturas.
 
 ## <a name="permissions"></a>Permissões
 
@@ -53,7 +53,7 @@ Não forneça um corpo de solicitação para esse método.
 
 ## <a name="response"></a>Resposta
 
-Se tiver êxito, essa função retornará um código de resposta e uma coleção `200 OK` [cloudPcSourceDeviceImage](../resources/cloudpcsourcedeviceimage.md) no corpo da resposta.
+Se tiver êxito, essa função retornará um `200 OK` código de resposta e uma coleção [cloudPcSourceDeviceImage](../resources/cloudpcsourcedeviceimage.md) no corpo da resposta.
 
 ## <a name="examples"></a>Exemplos
 
@@ -86,8 +86,12 @@ GET https://graph.microsoft.com/beta/deviceManagement/virtualEndpoint/deviceImag
 [!INCLUDE [sample-code](../includes/snippets/java/cloudpcdeviceimage-getsourceimages-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[Go](#tab/go)
+# <a name="go"></a>[Ir](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/cloudpcdeviceimage-getsourceimages-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/cloudpcdeviceimage-getsourceimages-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

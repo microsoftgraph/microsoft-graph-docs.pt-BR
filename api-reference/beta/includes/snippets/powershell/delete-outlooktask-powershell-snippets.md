@@ -1,16 +1,17 @@
 ---
 description: Arquivo gerado automaticamente. NÃO MODIFICAR
-ms.openlocfilehash: 1a3a4d1920e8bac688c1ab2443f6b212c58df940
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: f1388858e0f298c9fec6122f8d1708d8b093d08e
+ms.sourcegitcommit: 25acfa7d0153336c9a35d30a1dd422aeadc1342c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62123426"
+ms.lasthandoff: 02/03/2022
+ms.locfileid: "62351251"
 ---
 ```powershell
 
 Import-Module Microsoft.Graph.Users
 
+# A UPN can also be used as -UserId.
 Remove-MgUserOutlookTask -UserId $userId -OutlookTaskId $outlookTaskId
 
 ```

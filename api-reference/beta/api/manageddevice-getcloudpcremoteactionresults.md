@@ -5,12 +5,12 @@ author: RuiHou105
 ms.localizationpriority: medium
 ms.prod: cloud-pc
 doc_type: apiPageType
-ms.openlocfilehash: de8ac29ba5212702633a1fab9110a5aff0e84b37
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: a078f5c3c24765507d6bcf06ce5c359cb553dc07
+ms.sourcegitcommit: 25acfa7d0153336c9a35d30a1dd422aeadc1342c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62127367"
+ms.lasthandoff: 02/03/2022
+ms.locfileid: "62341074"
 ---
 # <a name="manageddevice-getcloudpcremoteactionresults"></a>managedDevice: getCloudPcRemoteActionResults
 
@@ -18,7 +18,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Verifique os resultados da ação remota especificada pelo [computador na nuvem](../resources/cloudpcremoteactionresult.md) para um dispositivo cloud pc. O Cloud PC dá suporte a reprovisionamento e ressarmos ações remotas.
+Verifique os [resultados da ação remota especificada pelo computador na nuvem](../resources/cloudpcremoteactionresult.md) para um dispositivo cloud pc. O Cloud PC dá suporte a reprovisionamento e ressarmos ações remotas.
 
 ## <a name="permissions"></a>Permissões
 
@@ -53,7 +53,7 @@ Não forneça um corpo de solicitação para esse método.
 
 ## <a name="response"></a>Resposta
 
-Se tiver êxito, este método retornará um código de resposta e um `200 OK` [objeto cloudPcRemoteActionResult](../resources/cloudpcremoteactionresult.md) no corpo da resposta.
+Se tiver êxito, este método retornará um `200 OK` código de resposta e um [objeto cloudPcRemoteActionResult](../resources/cloudpcremoteactionresult.md) no corpo da resposta.
 
 ## <a name="examples"></a>Exemplos
 
@@ -88,6 +88,10 @@ GET https://graph.microsoft.com/beta/deviceManagement/managedDevices/{managedDev
 
 # <a name="go"></a>[Ir](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/manageddevice-getcloudpcremoteactionresults-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/manageddevice-getcloudpcremoteactionresults-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

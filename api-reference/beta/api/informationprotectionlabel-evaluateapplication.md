@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: tommoser
 ms.prod: security
 doc_type: apiPageType
-ms.openlocfilehash: a2f2a0fbe7576523584ea56f04a0e608c5d68075
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: 869933f62e4378a48454322d8b88b9e3f5cac14c
+ms.sourcegitcommit: 25acfa7d0153336c9a35d30a1dd422aeadc1342c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "61023823"
+ms.lasthandoff: 02/03/2022
+ms.locfileid: "62342125"
 ---
 # <a name="informationprotectionlabel-evaluateapplication"></a>informationProtectionLabel: evaluateApplication
 
@@ -20,7 +20,7 @@ Namespace: microsoft.graph
 
 Calcule o [rótulo de proteção](../resources/informationprotectionlabel.md) de informações que deve ser aplicado e retorne o conjunto de ações que devem ser tomadas para rotular corretamente as informações. Essa API é útil quando um rótulo deve ser definido manualmente ou explicitamente por um usuário ou serviço, em vez de se basear automaticamente no conteúdo do arquivo. 
 
-Dado [contentInfo](../resources/contentInfo.md), que inclui pares de [chave/valor](../resources/keyvaluepair.md)de metadados de conteúdo existentes e [labelingOptions](../resources/labelingoptions.md) como uma entrada, a API retorna um [objeto informationProtectionAction](../resources/informationprotectionaction.md) que contém um dos seguintes: 
+Dado [o contentInfo](../resources/contentInfo.md), que inclui pares de chave/valor de metadados de conteúdo [existentes](../resources/keyvaluepair.md) e [labelingOptions](../resources/labelingoptions.md) como uma entrada, a API retorna um [objeto informationProtectionAction](../resources/informationprotectionaction.md) que contém um dos seguintes: 
 
 * [addContentFooterAction](../resources/addcontentfooteraction.md)
 * [addContentHeaderAction](../resources/addcontentheaderaction.md)
@@ -76,7 +76,7 @@ Forneça um objeto JSON com os seguintes parâmetros no corpo da solicitação.
 
 ## <a name="response"></a>Resposta
 
-Se tiver êxito, este método retornará um código de resposta e um novo objeto da coleção `200 OK` [informationProtectionAction](../resources/informationprotectionaction.md) no corpo da resposta.
+Se tiver êxito, este método retornará um `200 OK` código de resposta e um novo [objeto da coleção informationProtectionAction](../resources/informationprotectionaction.md) no corpo da resposta.
 
 ## <a name="examples"></a>Exemplos
 
@@ -172,8 +172,12 @@ User-agent: ContosoLOBApp/1.0
 [!INCLUDE [sample-code](../includes/snippets/java/informationprotectionlabel-evaluateapplication-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[Go](#tab/go)
+# <a name="go"></a>[Ir](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/informationprotectionlabel-evaluateapplication-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/informationprotectionlabel-evaluateapplication-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

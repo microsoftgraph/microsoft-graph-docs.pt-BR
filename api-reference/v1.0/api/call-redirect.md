@@ -5,18 +5,18 @@ author: ananmishr
 ms.localizationpriority: medium
 ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: aad2786e2f0d91d4975a56235d2b3f3606e53139
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: 51530e58d72ff2809d53832138bd50ec16d551d5
+ms.sourcegitcommit: 25acfa7d0153336c9a35d30a1dd422aeadc1342c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "60974393"
+ms.lasthandoff: 02/03/2022
+ms.locfileid: "62347295"
 ---
 # <a name="call-redirect"></a>call: redirect
 
 Namespace: microsoft.graph
 
-Redirecionar uma chamada de entrada que ainda não foi [atendida](./call-answer.md) [ou rejeitada.](./call-reject.md) Os termos "redirecionamento" e "encaminhamento" de uma chamada são usados de forma intercambiável.
+Redirecionar uma chamada de entrada que ainda não foi [atendida](./call-answer.md) [ou rejeitada](./call-reject.md) . Os termos "redirecionamento" e "encaminhamento" de uma chamada são usados de forma intercambiável.
 
 Espera-se que o bot redirecione a chamada antes do tempo de chamada. O valor de tempo decoro atual é 15 segundos.
 
@@ -52,7 +52,7 @@ Forneça um objeto JSON com os seguintes parâmetros no corpo da solicitação.
 |:---------------|:--------|:----------|
 |targets|conjunto [invitationParticipantInfo](../resources/invitationparticipantinfo.md)|Os participantes de destino da operação de redirecionamento. Se mais de um destino for especificado, será uma chamada simulring. Isso significa que todos os destinos serão tordos ao mesmo tempo e somente o primeiro destino que escolher será conectado. Suportamos até 25 destinos para simulação.
 |timeout|Int32|O tempo decoro (em segundos) para a operação de redirecionamento. O intervalo do valor de tempo decor entre 15 e 90 segundos, inclusive. O valor de tempo decoro padrão é 55 segundos para um destino e 60 segundos para vários destinos (sujeitos a alterações). |
-|callbackUri|String|Isso permite que os bots forneçam um URI de retorno de chamada específico para que a chamada atual receba notificações posteriores. Se essa propriedade não tiver sido definida, o URI de retorno de chamada global do bot será usado em vez disso. Isso deve ser `https` .|
+|callbackUri|String|Isso permite que os bots forneçam um URI de retorno de chamada específico para que a chamada atual receba notificações posteriores. Se essa propriedade não tiver sido definida, o URI de retorno de chamada global do bot será usado em vez disso. Isso deve ser `https`.|
 
 ## <a name="response"></a>Resposta
 Se tiver êxito, este método retornará um código de resposta `202 Accepted`.
@@ -158,8 +158,12 @@ Content-Type: application/json
 [!INCLUDE [sample-code](../includes/snippets/java/call-redirect-1-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[Go](#tab/go)
+# <a name="go"></a>[Ir](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/call-redirect-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/call-redirect-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -404,7 +408,7 @@ Content-Type: application/json
 
 ### <a name="example-3-forward-a-call-to-a-pstn-number"></a>Exemplo 3: encaminhar uma chamada para um número PSTN
 
-Essa chamada requer uma instância de aplicativo com um número PSTN atribuído. Para obter detalhes, [consulte Atribuir um número de telefone ao seu bot](/graph/cloud-communications-phone-number#assign-a-phone-number-to-your-bot).
+Essa chamada requer uma instância de aplicativo com um número PSTN atribuído. Para obter detalhes, [consulte Atribuir um número de telefone ao bot](/graph/cloud-communications-phone-number#assign-a-phone-number-to-your-bot).
 > **Observação:** Telefone ID é o número de telefone no formato E.164.
 
 #### <a name="notification---incoming"></a>Notificação - entrada

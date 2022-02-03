@@ -5,12 +5,12 @@ author: ananmishr
 ms.localizationpriority: medium
 ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: 56bbc2640b8b60be5975399682f3622c8e37c713
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: ef8ea1bf9b5e48bba453addfe3e778856ce4126c
+ms.sourcegitcommit: 25acfa7d0153336c9a35d30a1dd422aeadc1342c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "61022627"
+ms.lasthandoff: 02/03/2022
+ms.locfileid: "62341169"
 ---
 # <a name="call-updaterecordingstatus"></a>call: updateRecordingStatus
 
@@ -18,9 +18,9 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Atualize o status de gravação do aplicativo associado a uma chamada. Isso requer o uso da solução de [gravação Teams baseada em](/MicrosoftTeams/teams-recording-policy) política.
+Atualize o status de gravação do aplicativo associado a uma chamada. Isso requer o uso da solução de [gravação Teams baseada](/MicrosoftTeams/teams-recording-policy) em política.
 
-> Restrição adicional **:** você não pode usar a API do Media Access para gravar ou persistir conteúdo de mídia de chamadas ou reuniões acessadas pelo aplicativo ou dados derivados desse conteúdo de mídia ("registro" ou "gravação"), sem chamar primeiro a API **updateRecordingStatus** para indicar que a gravação foi iniciada e receber uma resposta de sucesso dessa API. Se o aplicativo começar a gravar qualquer reunião, ele deverá encerrar a gravação antes de chamar a API **updateRecordingStatus** para indicar que a gravação terminou.
+> Restrição **adicional: você** não pode usar a API do Media Access para gravar ou persistir conteúdo de mídia de chamadas ou reuniões acessadas pelo aplicativo ou dados derivados desse conteúdo de mídia ("registro" ou "gravação"), sem chamar primeiro a API **updateRecordingStatus** para indicar que a gravação foi iniciada e receber uma resposta de sucesso dessa API. Se o aplicativo começar a gravar qualquer reunião, ele deverá encerrar a gravação antes de chamar a API **updateRecordingStatus** para indicar que a gravação terminou.
 
 ## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
@@ -50,11 +50,11 @@ Forneça um objeto JSON com os seguintes parâmetros no corpo da solicitação.
 
 | Parâmetro       | Tipo    | Descrição                                                                           |
 |:----------------|:--------|:--------------------------------------------------------------------------------------|
-| clientContext   | Cadeia de caracteres  | Cadeia de caracteres de contexto de cliente exclusiva. O limite máximo é 256 caracteres.                                 |
+| clientContext   | String  | Cadeia de caracteres de contexto de cliente exclusiva. O limite máximo é 256 caracteres.                                 |
 | status          | Cadeia de caracteres  | O status da gravação. Os valores possíveis são: `notRecording`, `recording` ou `failed`.  |
 
 ## <a name="response"></a>Resposta
-Este método retorna um código de resposta e um header location com um URI para o `200 OK` [objeto updateRecordingStatusOperation](../resources/updaterecordingstatusoperation.md) criado para essa solicitação.
+Este método retorna um código `200 OK` de resposta e um header location com um URI para o [objeto updateRecordingStatusOperation](../resources/updaterecordingstatusoperation.md) criado para essa solicitação.
 
 ## <a name="example"></a>Exemplo
 O exemplo a seguir mostra como chamar essa API.
@@ -94,8 +94,12 @@ Content-Length: 79
 [!INCLUDE [sample-code](../includes/snippets/java/call-updaterecordingstatus-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[Go](#tab/go)
+# <a name="go"></a>[Ir](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/call-updaterecordingstatus-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/call-updaterecordingstatus-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

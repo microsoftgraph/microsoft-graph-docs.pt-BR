@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: tommoser
 ms.prod: security
 doc_type: apiPageType
-ms.openlocfilehash: 53283d6c90c99fa848bb67d0547a8ad12d285c93
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: a4629a32e3f4d91306e36b371744ffe93104f37d
+ms.sourcegitcommit: 25acfa7d0153336c9a35d30a1dd422aeadc1342c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "61012071"
+ms.lasthandoff: 02/03/2022
+ms.locfileid: "62349186"
 ---
 # <a name="informationprotectionlabel-extractlabel"></a>informationProtectionLabel: extractLabel
 
@@ -59,7 +59,7 @@ Forneça um objeto JSON com os seguintes parâmetros no corpo da solicitação.
 
 ## <a name="response"></a>Resposta
 
-Se tiver êxito, este método retornará um código de resposta e um `200 OK` novo [objeto informationProtectionContentLabel](../resources/informationprotectioncontentlabel.md) no corpo da resposta.
+Se tiver êxito, este método retornará um `200 OK` código de resposta e um novo [objeto informationProtectionContentLabel](../resources/informationprotectioncontentlabel.md) no corpo da resposta.
 
 ## <a name="examples"></a>Exemplos
 
@@ -145,8 +145,12 @@ User-agent: ContosoLOBApp/1.0
 [!INCLUDE [sample-code](../includes/snippets/java/informationprotectionlabel-extractlabel-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[Go](#tab/go)
+# <a name="go"></a>[Ir](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/informationprotectionlabel-extractlabel-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/informationprotectionlabel-extractlabel-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

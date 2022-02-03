@@ -1,16 +1,17 @@
 ---
 description: Arquivo gerado automaticamente. NÃO MODIFICAR
-ms.openlocfilehash: b98870a69aa7a30b45985194c6929dc288df867e
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: f955ebef4d4ca1a1c7875dfdaef9eaf5d7cddcb7
+ms.sourcegitcommit: 25acfa7d0153336c9a35d30a1dd422aeadc1342c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62128236"
+ms.lasthandoff: 02/03/2022
+ms.locfileid: "62351059"
 ---
 ```powershell
 
 Import-Module Microsoft.Graph.Users
 
+# A UPN can also be used as -UserId.
 Get-MgUserTodoListTask -UserId $userId -TodoTaskListId $todoTaskListId
 
 ```

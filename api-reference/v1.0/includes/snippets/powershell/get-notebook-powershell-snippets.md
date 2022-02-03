@@ -1,16 +1,17 @@
 ---
 description: Arquivo gerado automaticamente. NÃO MODIFICAR
-ms.openlocfilehash: 55e9f21e9c5046b878c2dd0a9ea78dc266ef682c
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: 28f691700037f643289f81cd052f47b5b69c9c77
+ms.sourcegitcommit: 25acfa7d0153336c9a35d30a1dd422aeadc1342c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62128620"
+ms.lasthandoff: 02/03/2022
+ms.locfileid: "62350247"
 ---
 ```powershell
 
 Import-Module Microsoft.Graph.Notes
 
+# A UPN can also be used as -UserId.
 Get-MgUserOnenoteNotebook -UserId $userId -NotebookId $notebookId
 
 ```

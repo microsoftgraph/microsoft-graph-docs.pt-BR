@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: jewan-microsoft
 ms.prod: onenote
 doc_type: apiPageType
-ms.openlocfilehash: 841f0c667646843a1c51dccfd90fe9214e1bb4f5
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: 1616790f9042b0048976a43698ccd7523720735d
+ms.sourcegitcommit: 25acfa7d0153336c9a35d30a1dd422aeadc1342c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "60976375"
+ms.lasthandoff: 02/03/2022
+ms.locfileid: "62347180"
 ---
 # <a name="section-copytonotebook"></a>section: copyToNotebook
 
@@ -45,12 +45,12 @@ No corpo da solicitação, forneça um objeto JSON que contém os parâmetros de
 | Parâmetro    | Tipo   |Descrição|
 |:---------------|:--------|:----------|
 |groupId|Cadeia de caracteres|A id do grupo para o que copiar. Use somente ao copiar para um Microsoft 365 grupo.|
-|id|String|Obrigatório. A id do bloco de anotações de destino. |
+|id|Cadeia de caracteres|Obrigatório. A id do bloco de anotações de destino. |
 |renameAs|Cadeia de caracteres|O nome da cópia. Padrão para o nome do item existente. |
 
 ## <a name="response"></a>Resposta
 
-Se tiver êxito, este método retornará `202 Accepted` um código de resposta e um `Operation-Location` header. Sondar Operation-Location ponto de extremidade para [obter o status da operação de cópia.](onenoteoperation-get.md)
+Se tiver êxito, este método retornará um `202 Accepted` código de resposta e um `Operation-Location` header. Sondar Operation-Location ponto de extremidade para [obter o status da operação de cópia](onenoteoperation-get.md).
 
 ## <a name="example"></a>Exemplo
 Eis um exemplo de como chamar esta API.
@@ -88,8 +88,12 @@ Content-type: application/json
 [!INCLUDE [sample-code](../includes/snippets/java/section-copytonotebook-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[Go](#tab/go)
+# <a name="go"></a>[Ir](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/section-copytonotebook-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/section-copytonotebook-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

@@ -5,12 +5,12 @@ author: aarononeal
 ms.localizationpriority: medium
 ms.prod: w10
 doc_type: apiPageType
-ms.openlocfilehash: 159d2fdc19a8f47e93dfb7d9f734e6566b57f5d6
-ms.sourcegitcommit: 71186ad44d8d0df15e10b0f89df68d2ef0cf9d14
+ms.openlocfilehash: 9b36cef6a8267d8d4733851beb1db95589e6a78d
+ms.sourcegitcommit: 25acfa7d0153336c9a35d30a1dd422aeadc1342c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/12/2022
-ms.locfileid: "61811528"
+ms.lasthandoff: 02/03/2022
+ms.locfileid: "62348128"
 ---
 # <a name="updatableasset-enrollassets"></a>updatableAsset: enrollAssets
 Namespace: microsoft.graph.windowsUpdates
@@ -106,6 +106,10 @@ Content-Type: application/json
 
 # <a name="go"></a>[Ir](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/updatableasset-enrollassets-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/updatableasset-enrollassets-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

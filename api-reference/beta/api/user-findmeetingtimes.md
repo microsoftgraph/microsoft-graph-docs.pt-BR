@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: vrod9429
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 6793243feccc7e6a976e394959dffe03aa8f93a6
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: 63b92042ffc5657aa0986ac4bc70a387ec3b024e
+ms.sourcegitcommit: 25acfa7d0153336c9a35d30a1dd422aeadc1342c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "61009824"
+ms.lasthandoff: 02/03/2022
+ms.locfileid: "62339109"
 ---
 # <a name="user-findmeetingtimes"></a>user: findMeetingTimes
 
@@ -52,11 +52,11 @@ Todos os parâmetros suportados estão listados abaixo. Dependendo do cenário, 
 
 | Parâmetro    | Tipo   |Descrição|
 |:---------------|:--------|:----------|
-|attendees|Coleção [attendeeBase](../resources/attendeebase.md)|Uma coleção de participantes ou recursos da reunião. Na propriedade **tipo correspondente,** especifique `required` ou para uma pessoa e para um recurso como sala de `optional` `resource` reunião. Se não for especificado, **findMeetingTimes** assume `required` a propriedade **type.** Uma coleção vazia faz com que **findMeetingTimes** procure gratuitamente alocações de tempo somente para o organizador. Opcional.|
+|attendees|Coleção [attendeeBase](../resources/attendeebase.md)|Uma coleção de participantes ou recursos da reunião. Na propriedade **tipo correspondente** , especifique `required` ou para `optional` uma pessoa e `resource` para um recurso como sala de reunião. Se não for especificado, **findMeetingTimes** assume a `required` **propriedade type** . Uma coleção vazia faz com que **findMeetingTimes** procure gratuitamente alocações de tempo somente para o organizador. Opcional.|
 |isOrganizerOptional|Edm.Boolean|Especifique `True` se o organizador não tiver necessariamente que participar. O padrão é `false`. Opcional.|
 |locationConstraint|[locationConstraint](../resources/locationconstraint.md)|Os requisitos do organizador sobre o local da reunião, tal como se é necessário sugerir de um local de encontro, ou há locais específicos apenas onde a reunião pode ocorrer. Opcional.|
 |maxCandidates|Edm.Int32|O número máximo de sugestões de horários de reunião a ser retornados. Opcional.|
-|meetingDuration|Edm.Duration|O tamanho da reunião, denotado no [formato ISO 8601.](https://www.iso.org/iso/iso8601) Por exemplo, 1 hora é denotada como 'PT1H', onde 'P' é o designador de duração, 'T' é o designador de hora e 'H' é o designador de hora. Use M para indicar minutos para a duração; por exemplo, 2 horas e 30 minutos seria 'PT2H30M'. Se a duração da reunião não for especificada, **findMeetingTimes** usará o padrão de 30 minutos. Opcional.|
+|meetingDuration|Edm.Duration|O tamanho da reunião, denotado no [formato ISO 8601](https://www.iso.org/iso/iso8601) . Por exemplo, 1 hora é denotada como 'PT1H', onde 'P' é o designador de duração, 'T' é o designador de hora e 'H' é o designador de hora. Use M para indicar minutos para a duração; por exemplo, 2 horas e 30 minutos seria 'PT2H30M'. Se a duração da reunião não for especificada, **findMeetingTimes** usará o padrão de 30 minutos. Opcional.|
 |minimumAttendeePercentage|Edm.Double| O mínimo necessário de [confiança](#the-confidence-of-a-meeting-suggestion) para um intervalo de tempo a ser retornado na resposta. É um valor de % variando de 0 a 100. Opcional.|
 |returnSuggestionReasons|Edm.Boolean|Especifique `True` para retornar um motivo para cada sugestão de reunião na propriedade **suggestionReason**. O padrão é `false` para não retornar essa propriedade. Opcional.|
 |timeConstraint|[timeConstraint](../resources/timeconstraint.md)|Qualquer restrição de tempo para uma reunião, o que pode incluir a natureza da reunião (propriedade **activityDomain**) e possíveis intervalos de tempo da reunião (propriedade **timeSlots**). **findMeetingTimes** pressupõe **activityDomain** como `work` se você não especificar este parâmetro. Opcional.|
@@ -190,8 +190,12 @@ Content-Type: application/json
 [!INCLUDE [sample-code](../includes/snippets/java/user-findmeetingtimes-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[Go](#tab/go)
+# <a name="go"></a>[Ir](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/user-findmeetingtimes-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/user-findmeetingtimes-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

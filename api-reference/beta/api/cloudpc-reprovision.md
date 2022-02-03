@@ -5,12 +5,12 @@ author: AshleyYangSZ
 ms.localizationpriority: medium
 ms.prod: cloud-pc
 doc_type: apiPageType
-ms.openlocfilehash: e7241a8a44d96397c8f31fce2c1496ae71668e3e
-ms.sourcegitcommit: 871db8b3f68489d24e2aeafe694725579ee44c47
+ms.openlocfilehash: 7d774e49173354d10f80cdaae74157c88e9f1a14
+ms.sourcegitcommit: 25acfa7d0153336c9a35d30a1dd422aeadc1342c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/26/2022
-ms.locfileid: "62225084"
+ms.lasthandoff: 02/03/2022
+ms.locfileid: "62341225"
 ---
 # <a name="cloudpc-reprovision"></a>cloudPC: reprovision
 
@@ -28,7 +28,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |:---|:---|
 |Delegado (conta corporativa ou de estudante)|CloudPC.ReadWrite.All|
 |Delegado (conta pessoal da Microsoft)|Sem suporte.|
-|Application|CloudPC.ReadWrite.All|
+|Aplicativo|CloudPC.ReadWrite.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
 
@@ -56,8 +56,8 @@ A tabela a seguir mostra os parâmetros que podem ser usados com esta ação.
 
 |Parâmetro|Tipo|Descrição|
 |:---|:---|:---|
-|osVersion|[cloudPcOperatingSystem](../resources/cloudpcorganizationsettings.md#cloudpcoperatingsystem-values)|A versão do sistema operacional (OS) a ser provisionada em PCs na Nuvem. Os valores possíveis são: `windows10` `windows11` , e `unknownFutureValue` .|
-|userAccountType|[cloudPcUserAccountType](../resources/cloudpcorganizationsettings.md#cloudpcuseraccounttype-values)|O tipo de conta do usuário em PCs de Nuvem provisionados. Os valores possíveis são: `standardUser` `administrator` , e `unknownFutureValue` .|
+|osVersion|[cloudPcOperatingSystem](../resources/cloudpcorganizationsettings.md#cloudpcoperatingsystem-values)|A versão do sistema operacional (OS) a ser provisionada em PCs na Nuvem. Os valores possíveis são: `windows10`, `windows11`e `unknownFutureValue`.|
+|userAccountType|[cloudPcUserAccountType](../resources/cloudpcorganizationsettings.md#cloudpcuseraccounttype-values)|O tipo de conta do usuário em PCs de Nuvem provisionados. Os valores possíveis são: `standardUser`, `administrator`e `unknownFutureValue`.|
 
 ## <a name="response"></a>Resposta
 
@@ -103,6 +103,10 @@ Content-length: 61
 
 # <a name="go"></a>[Ir](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/cloudpc-reprovision-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/cloudpc-reprovision-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

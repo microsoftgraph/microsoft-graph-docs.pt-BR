@@ -5,12 +5,12 @@ author: adimitui
 ms.localizationpriority: medium
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: 5f44e63d47519bd61f6e57005c7354d39c8afc5f
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: d5e6d0a3e6334cee35790494e33f76e1dc2c2c43
+ms.sourcegitcommit: 25acfa7d0153336c9a35d30a1dd422aeadc1342c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "61022417"
+ms.lasthandoff: 02/03/2022
+ms.locfileid: "62346153"
 ---
 # <a name="domain-forcedelete"></a>domain: forceDelete
 
@@ -20,7 +20,7 @@ Namespace: microsoft.graph
 
 Exclui um domínio usando uma operação assíncrona.
 
-Antes de chamar [forceDelete](domain-forcedelete.md), você deve atualizar ou remover quaisquer referências **Exchange** como o serviço de provisionamento.
+Antes de chamar [forceDelete](domain-forcedelete.md), você deve atualizar ou remover quaisquer **referências Exchange como** o serviço de provisionamento.
 
 As seguintes ações são executadas como parte desta operação:
 
@@ -69,7 +69,7 @@ Forneça um objeto JSON com os seguintes parâmetros no corpo da solicitação.
 
 | Parâmetro    | Tipo   |Descrição|
 |:---------------|:--------|:----------|
-|disableUserAccounts|Booliano| Opção para desabilitar contas de usuário renomeadas. Se uma conta de usuário estiver desabilitada, o usuário não poderá entrar.<br>*True* (padrão) - As contas de usuário renomeadas como parte dessa operação estão desabilitadas.<br>*False* - As contas de usuário renomeadas como parte dessa operação não estão desabilitadas. |
+|disableUserAccounts|Boolean| Opção para desabilitar contas de usuário renomeadas. Se uma conta de usuário estiver desabilitada, o usuário não poderá entrar.<br>*True* (padrão) - As contas de usuário renomeadas como parte dessa operação estão desabilitadas.<br>*False* - As contas de usuário renomeadas como parte dessa operação não estão desabilitadas. |
 
 ## <a name="response"></a>Resposta
 
@@ -107,8 +107,12 @@ Content-type: application/json
 [!INCLUDE [sample-code](../includes/snippets/java/domain-forcedelete-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[Go](#tab/go)
+# <a name="go"></a>[Ir](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/domain-forcedelete-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/domain-forcedelete-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

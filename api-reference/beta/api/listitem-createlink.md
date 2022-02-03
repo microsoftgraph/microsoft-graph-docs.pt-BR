@@ -5,12 +5,12 @@ author: learafa
 ms.localizationpriority: medium
 ms.prod: sharepoint
 doc_type: apiPageType
-ms.openlocfilehash: 7a3d71a12958d551ba5ccce900cb7195bbcdd589
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: a52612c99bea7cba2da86ae26ec03306f29e5544
+ms.sourcegitcommit: 25acfa7d0153336c9a35d30a1dd422aeadc1342c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "60981185"
+ms.lasthandoff: 02/03/2022
+ms.locfileid: "62349171"
 ---
 # <a name="listitem-createlink"></a>listItem: createLink
 
@@ -18,7 +18,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Criar um link de compartilhamento para [um listItem](../resources/listitem.md).
+Crie um link de compartilhamento para [um listItem](../resources/listitem.md).
 
 A **ação createLink** criará um novo link de compartilhamento se o tipo de link especificado ainda não existir para o aplicativo de chamada.
 Se um link de compartilhamento do tipo especificado já existir para o aplicativo, essa ação retornará o link de compartilhamento existente.
@@ -59,7 +59,7 @@ A tabela a seguir mostra os parâmetros que podem ser usados com esta ação.
 |   Propriedade             |  Tipo  |           Descrição                        |
 | :----------------------| :----- | :--------------------------------------------|
 |type|Cadeia de caracteres|O tipo de link de compartilhamento a ser criado. Opcional. |
-|escopo|String|O escopo do link a ser criado. Ou `anonymous` `organization` `users` . Opcional. |
+|escopo|String|O escopo do link a ser criado. `organization` `users`Ou `anonymous`. Opcional. |
 |expirationDateTime|DateTimeOffset|Uma cadeia de caracteres com formato de yyyy-MM-ddTHH:mm:ssZ de DateTime indica o tempo de expiração da permissão. Opcional. |
 |password|String|A senha do link de compartilhamento definido pelo criador. Opcional. |
 |destinatários|[Coleção driveRecipient](../resources/driverecipient.md)|Uma coleção de destinatários que receberão acesso ao link de compartilhamento. Opcional. |
@@ -91,9 +91,9 @@ Os seguintes valores são permitidos para o parâmetro **scope**.
 
 ## <a name="response"></a>Resposta
 
-Se tiver êxito, este método retornará um [único](../resources/permission.md) recurso de permissão no corpo da resposta que representa as permissões de compartilhamento solicitadas.
+Se tiver êxito, este método retornará [um único recurso](../resources/permission.md) de permissão no corpo da resposta que representa as permissões de compartilhamento solicitadas.
 
-A resposta será `201 Created` se um novo link de compartilhamento for criado para o listItem ou se um link existente for `200 OK` retornado.
+A resposta será se `201 Created` um novo link de compartilhamento for criado para o listItem ou `200 OK` se um link existente for retornado.
 
 ## <a name="examples"></a>Exemplos
 
@@ -142,8 +142,12 @@ Content-Type: application/json
 [!INCLUDE [sample-code](../includes/snippets/java/listitem-createlink-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[Go](#tab/go)
+# <a name="go"></a>[Ir](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/listitem-createlink-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/listitem-createlink-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -218,8 +222,12 @@ Content-Type: application/json
 [!INCLUDE [sample-code](../includes/snippets/java/listitem-createlink-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[Go](#tab/go)
+# <a name="go"></a>[Ir](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/listitem-createlink-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/listitem-createlink-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 doc_type: apiPageType
 ms.prod: governance
 author: carolinetempleton
-ms.openlocfilehash: 823f3fcd84bc94e0b9996ea4a3b6e35ee05d7eef
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: af0aa900c13e401cf3f70cc992c02e7bc9162713
+ms.sourcegitcommit: 25acfa7d0153336c9a35d30a1dd422aeadc1342c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "61023705"
+ms.lasthandoff: 02/03/2022
+ms.locfileid: "62340151"
 ---
 # <a name="privilegedapproval-myrequests"></a>privilegedApproval: myRequests
 
@@ -47,7 +47,7 @@ GET /privilegedApproval/myRequests
 
 ## <a name="response"></a>Resposta
 
-Se tiver êxito, este método retornará `200 OK` o código de resposta e o objeto [privilegedApproval](../resources/privilegedapproval.md) no corpo da resposta.
+Se tiver êxito, este método retornará `200 OK` o código de resposta e [o objeto privilegedApproval](../resources/privilegedapproval.md) no corpo da resposta.
 
 Observe que o locatário precisa ser registrado no PIM. Caso contrário, o código de status HTTP 403 Forbidden será retornado.
 
@@ -80,8 +80,12 @@ GET https://graph.microsoft.com/beta/privilegedApproval/myRequests
 [!INCLUDE [sample-code](../includes/snippets/java/privilegedapproval-myrequests-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[Go](#tab/go)
+# <a name="go"></a>[Ir](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/privilegedapproval-myrequests-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/privilegedapproval-myrequests-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

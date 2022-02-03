@@ -5,18 +5,18 @@ ms.localizationpriority: medium
 author: keylimesoda
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: 501ac437fed4870a7e5f40dd1297f9589b11dea3
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: c41a217d781738292d52912dc8525fc64565b2a4
+ms.sourcegitcommit: 25acfa7d0153336c9a35d30a1dd422aeadc1342c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "61016299"
+ms.lasthandoff: 02/03/2022
+ms.locfileid: "62339479"
 ---
 # <a name="directoryobject-validateproperties"></a>directoryObject: validateProperties
 
 Namespace: microsoft.graph
 
-Valide se o nome de exibição ou apelido de email de um grupo da Microsoft 365 está em conformidade com as políticas de nomenclatura.  Os clientes podem usar essa API para determinar se um nome de exibição ou apelido de email é válido antes de tentar [criar](group-post-groups.md) um Microsoft 365 grupo. Para validar as propriedades de um grupo existente, use a função [group: validateProperties.](group-validateproperties.md)
+Valide se o nome de exibição ou apelido de email de um grupo da Microsoft 365 está em conformidade com as políticas de nomenclatura.  Os clientes podem usar essa API para determinar se um nome de exibição ou apelido de email é válido antes de [tentar criar um](group-post-groups.md) Microsoft 365 grupo. Para validar as propriedades de um grupo existente, use a função [group: validateProperties](group-validateproperties.md) .
 
 As seguintes validações de política são executadas para as propriedades de nome de exibição e apelido de email:
 1. Validar a política de nomeação de prefixo e sufixo
@@ -52,18 +52,18 @@ Forneça um objeto JSON com os seguintes parâmetros no corpo da solicitação.
 
 | Parâmetro    | Tipo   |Descrição|
 |:---------------|:--------|:----------|
-|entityType|String| O grupo é o único tipo de entidade com suporte. |
-|displayName|Cadeia de caracteres| O nome de exibição do grupo a ser validado. A propriedade não é necessária individualmente. No entanto, pelo menos uma propriedade (**displayName** **ou mailNickname**) é necessária. |
+|entityType|Cadeia de caracteres| O grupo é o único tipo de entidade com suporte. |
+|displayName|String| O nome de exibição do grupo a ser validado. A propriedade não é necessária individualmente. No entanto, pelo menos uma propriedade (**displayName** **ou mailNickname**) é necessária. |
 |mailNickname|String| O apelido de email do grupo a ser validado. A propriedade não é necessária individualmente. No entanto, pelo menos uma propriedade (**displayName** **ou mailNickname**) é necessária. |
-|onBehalfOfUserId|Guid| A ID do usuário a ser personificado ao chamar a API. Os resultados da validação são para os atributos e funções de **onBehalfOfUserId.** |
+|onBehalfOfUserId|Guid| A ID do usuário a ser personificado ao chamar a API. Os resultados da validação são **para os atributos e funções de onBehalfOfUserId** . |
 
 ## <a name="response"></a>Resposta
 
-Se tiver êxito e não houver erros de validação, o método retornará `204 No Content` o código de resposta. Não retorna nada no corpo da resposta.
+Se tiver êxito e não houver erros de validação, o método retornará o `204 No Content` código de resposta. Não retorna nada no corpo da resposta.
 
-Se a solicitação for inválida, o método retornará `400 Bad Request` o código de resposta. Uma mensagem de erro com detalhes sobre a solicitação inválida é retornada no corpo da resposta.
+Se a solicitação for inválida, o método retornará o `400 Bad Request` código de resposta. Uma mensagem de erro com detalhes sobre a solicitação inválida é retornada no corpo da resposta.
 
-Se houver um erro de validação, o método retornará `422 Unprocessable Entity` o código de resposta. Uma mensagem de erro e uma coleção de detalhes de erro é retornada no corpo da resposta.
+Se houver um erro de validação, o método retornará o `422 Unprocessable Entity` código de resposta. Uma mensagem de erro e uma coleção de detalhes de erro é retornada no corpo da resposta.
 
 ## <a name="examples"></a>Exemplos
 
@@ -104,8 +104,12 @@ Content-type: application/json
 [!INCLUDE [sample-code](../includes/snippets/java/directoryobject-validateproperties-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[Go](#tab/go)
+# <a name="go"></a>[Ir](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/directoryobject-validateproperties-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/directoryobject-validateproperties-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

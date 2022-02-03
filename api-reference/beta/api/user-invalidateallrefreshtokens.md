@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: jpettere
 ms.prod: users
 doc_type: apiPageType
-ms.openlocfilehash: 15c943f5618cba11b80a02da6429f85ea81f9c89
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: b98b5b5c64e790c01d1e2eaf90baa45fdef0d335
+ms.sourcegitcommit: 25acfa7d0153336c9a35d30a1dd422aeadc1342c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "61033471"
+ms.lasthandoff: 02/03/2022
+ms.locfileid: "62339139"
 ---
 # <a name="user-invalidateallrefreshtokens"></a>user: invalidateAllRefreshTokens
 
@@ -51,7 +51,7 @@ Esta operação não tem conteúdo de solicitação.
 Quando é bem-sucedido, este método retorna um código de resposta `204 No Content`.
 
 >[!NOTE]
->Essa API retorna um código de resposta HTTP diferente, semelhante à ação [revokeSignInSessions.](user-revokesigninsessions.md) Para obter detalhes, consulte [problema conhecido](/graph/known-issues#revoke-sign-in-sessions-returns-wrong-HTTP-code). 
+>Essa API retorna um código de resposta HTTP diferente, semelhante à ação [revokeSignInSessions](user-revokesigninsessions.md) . Para obter detalhes, consulte [problema conhecido](/graph/known-issues#revoke-sign-in-sessions-returns-wrong-HTTP-code). 
 
 ## <a name="example"></a>Exemplo
 
@@ -82,8 +82,12 @@ POST https://graph.microsoft.com/beta/me/invalidateAllRefreshTokens
 [!INCLUDE [sample-code](../includes/snippets/java/user-invalidateallrefreshtokens-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[Go](#tab/go)
+# <a name="go"></a>[Ir](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/user-invalidateallrefreshtokens-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/user-invalidateallrefreshtokens-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

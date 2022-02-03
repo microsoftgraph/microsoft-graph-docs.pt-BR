@@ -1,11 +1,11 @@
 ---
 description: Arquivo gerado automaticamente. NÃO MODIFICAR
-ms.openlocfilehash: c2c28517d8d866ee5e4b53a6c560800c004be207
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: eca9fd741c64cece3e64458a8195800e551df320
+ms.sourcegitcommit: 25acfa7d0153336c9a35d30a1dd422aeadc1342c
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62110286"
+ms.lasthandoff: 02/03/2022
+ms.locfileid: "62339422"
 ---
 ```powershell
 
@@ -18,6 +18,7 @@ $params = @{
     OfficeLocation = "18/2111"
 }
 
+# A UPN can also be used as -UserId.
 Update-MgUser -UserId $userId -BodyParameter $params
 
 ```

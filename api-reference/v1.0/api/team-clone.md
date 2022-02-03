@@ -5,12 +5,12 @@ author: nkramer
 ms.localizationpriority: medium
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 5da091152a259a2987b2d99a9082a9f6795a60aa
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: 739d4b1eed49bce36ad478877e701c9137991019
+ms.sourcegitcommit: 25acfa7d0153336c9a35d30a1dd422aeadc1342c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "60973680"
+ms.lasthandoff: 02/03/2022
+ms.locfileid: "62342307"
 ---
 # <a name="clone-a-team"></a>Clonar uma equipe
 
@@ -21,7 +21,7 @@ Namespace: microsoft.graph
 Crie uma cópia de uma [equipe](../resources/team.md). Essa operação também cria uma cópia do grupo [correspondente](../resources/group.md).
 Você pode especificar quais partes da equipe clonar:
 
-- **apps** - Copia Microsoft Teams aplicativos instalados na equipe. 
+- **apps** - copia Microsoft Teams aplicativos instalados na equipe. 
 - **canais** – Copia a estrutura do canal (mas não as mensagens no canal).
 - **membros** – Copia os membros e proprietários do grupo.
 - **configurações** – Copia todas as configurações dentro da equipe, juntamente com as principais configurações de grupo.
@@ -30,7 +30,7 @@ Você pode especificar quais partes da equipe clonar:
 Quando as guias são clonadas, elas são colocadas em um estado não configurado - elas são exibidas na barra de guias no Microsoft Teams e, na primeira vez que você abri-las, você vai passar pela tela de configuração. (Se a pessoa que abre a guia não tiver permissão para configurar aplicativos, ela verá uma mensagem explicando que a guia não foi configurada.)
 
 A clonagem é uma operação de longa duração.
-Depois que o clone POST retorna, você precisa OBTER a operação para ver se ela está "em execução" ou "bem-sucedida" ou "falhou". [](../resources/teamsasyncoperation.md) Você deve continuar a OBTER até que o status não seja "em execução". O atraso recomendado entre GETs é de 5 segundos.
+Depois que o clone POST retorna, você precisa OBTER a [](../resources/teamsasyncoperation.md) operação para ver se ela está "em execução" ou "bem-sucedida" ou "falhou". Você deve continuar a OBTER até que o status não seja "em execução". O atraso recomendado entre GETs é de 5 segundos.
 
 ## <a name="permissions"></a>Permissões
 
@@ -65,11 +65,11 @@ POST /teams/{id}/clone
 |displayName|String|O nome de exibição do grupo. Essa propriedade é obrigatória quando um grupo é criado e não pode ser apagado durante atualizações. Oferece suporte a $filter e $orderby.|
 |mailNickname|String|O alias de email do grupo, exclusivo na organização. Essa propriedade deve ser especificada quando um grupo é criado. Oferece suporte a $filter. Se essa propriedade não for especificada, ela será calculada a partir do displayName. Problema conhecido: essa propriedade é ignorada no momento.|
 |partsToClone| [clonableTeamParts](../resources/clonableteamparts.md) |Uma lista separada por vírgulas das partes a ser clonada. As partes legais são "aplicativos, guias, configurações, canais, membros".|
-|visibility|[teamVisibilityType](../resources/teamvisibilitytype.md) (opcional)| Especifica a visibilidade do grupo. Os valores possíveis são: **Private**, **Public**. Se a visibilidade não for especificada, a visibilidade será copiada da equipe/grupo original. Se a equipe que está sendo clonada for uma equipe **educationClass,** o parâmetro de visibilidade será ignorado e a visibilidade do novo grupo será definida como HiddenMembership.|
+|visibility|[teamVisibilityType](../resources/teamvisibilitytype.md) (opcional)| Especifica a visibilidade do grupo. Os valores possíveis são: **Privado**, **Público**. Se a visibilidade não for especificada, a visibilidade será copiada da equipe/grupo original. Se a equipe que está sendo clonada for uma equipe **educationClass** , o parâmetro de visibilidade será ignorado e a visibilidade do novo grupo será definida como HiddenMembership.|
 
 ## <a name="response"></a>Resposta
 
-Se tiver êxito, este método retornará um código `202 Accepted` de resposta com um header Location: apontando para o recurso [de](../resources/teamsasyncoperation.md) operação.
+Se tiver êxito, este método retornará um `202 Accepted` código de resposta com um header Location: apontando para o recurso [de](../resources/teamsasyncoperation.md) operação.
 Quando a operação for concluída, o recurso de operação dirá a id da equipe criada.
 
 ## <a name="example"></a>Exemplo
@@ -109,8 +109,12 @@ Content-Type: application/json
 [!INCLUDE [sample-code](../includes/snippets/java/clone-team-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[Go](#tab/go)
+# <a name="go"></a>[Ir](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/clone-team-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/clone-team-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

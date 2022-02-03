@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: nkramer
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 6d0f92087f658b5c368fbb4f48bef835dabe4443
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: d8fd36a75c74bade692a38b83d6a236ccd5a8423
+ms.sourcegitcommit: 25acfa7d0153336c9a35d30a1dd422aeadc1342c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "61018959"
+ms.lasthandoff: 02/03/2022
+ms.locfileid: "62339437"
 ---
 # <a name="unarchive-team"></a>Desarquivar equipe
 
@@ -18,7 +18,7 @@ Namespace: microsoft.graph
 
 
 
-Restaurar uma equipe [arquivada.](../resources/team.md) Isso restaura a capacidade dos usuários de enviar mensagens e editar a equipe, acatando as configurações de locatário e equipe. Teams são arquivados usando a API [de](team-archive.md) arquivo morto.
+Restaure uma equipe [arquivada](../resources/team.md). Isso restaura a capacidade dos usuários de enviar mensagens e editar a equipe, acatando as configurações de locatário e equipe. Teams são arquivados usando a API [de](team-archive.md) arquivo morto.
 
 A desarquivação é uma operação assíncrona. Uma equipe é desarquivada quando a operação assíncrona é concluída com êxito, o que pode ocorrer subsequentemente a uma resposta dessa API.
 
@@ -51,7 +51,7 @@ Não forneça um corpo de solicitação para esse método.
 
 ## <a name="response"></a>Resposta
 
-Se a desarquivação for iniciada com êxito, este método retornará um `202 Accepted` código de resposta. A resposta também conterá um header, que contém o local do `Location` [teamsAsyncOperation](../resources/teamsasyncoperation.md) que foi criado para lidar com a desarquivação da equipe. Verifique o status da operação de desarquivamento fazendo uma solicitação GET para esse local.
+Se a desarquivação for iniciada com êxito, este método retornará um `202 Accepted` código de resposta. A resposta também conterá um header, que contém o local do [teamsAsyncOperation](../resources/teamsasyncoperation.md) que foi criado para lidar com a `Location` desarquivação da equipe. Verifique o status da operação de desarquivamento fazendo uma solicitação GET para esse local.
 
 ## <a name="example"></a>Exemplo
 #### <a name="request"></a>Solicitação
@@ -81,8 +81,12 @@ POST https://graph.microsoft.com/v1.0/teams/{id}/unarchive
 [!INCLUDE [sample-code](../includes/snippets/java/unarchive-team-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[Go](#tab/go)
+# <a name="go"></a>[Ir](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/unarchive-team-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/unarchive-team-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

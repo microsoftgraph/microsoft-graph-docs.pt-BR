@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: Nickgmicrosoft
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: ab970f02adc1433627cb5bb6371f559a30cc1f92
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: eea0c1829273837bf37917298684ea78d1a26bc4
+ms.sourcegitcommit: 25acfa7d0153336c9a35d30a1dd422aeadc1342c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "61031524"
+ms.lasthandoff: 02/03/2022
+ms.locfileid: "62344514"
 ---
 # <a name="trustframeworkkeyset-generatekey"></a>trustFrameworkKeySet: generateKey
 
@@ -18,7 +18,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Gere [um trustFrameworkKey](../resources/trustFrameworkKey.md) e um segredo automaticamente [no trustFrameworkKeyset](../resources/trustframeworkkeyset.md). O chamador não precisa fornecer um segredo.
+Gere [um trustFrameworkKey](../resources/trustFrameworkKey.md) e um segredo automaticamente no [trustFrameworkKeyset](../resources/trustframeworkkeyset.md). O chamador não precisa fornecer um segredo.
 
 ## <a name="permissions"></a>Permissões
 
@@ -51,14 +51,14 @@ Forneça um objeto JSON com os seguintes parâmetros no corpo da solicitação.
 
 | Parâmetro    | Tipo        | Descrição |
 |:-------------|:------------|:------------|
-| use | string | Semelhante à propriedade **use** de **trustFrameworkKey**. |
-| kty | string | Semelhante à **propriedade kty** **de trustFrameworkKey**. |
+| use | cadeia de caracteres | Semelhante à propriedade **use** **de trustFrameworkKey**. |
+| kty | cadeia de caracteres | Semelhante à **propriedade kty** **de trustFrameworkKey**. |
 | nbf | int | Semelhante à **propriedade nbf** **de trustFrameworkKey**. |
 | exp | int | Semelhante à **propriedade exp** **de trustFrameworkKey**. |
 
 ## <a name="response"></a>Resposta
 
-Se tiver êxito, este método retornará um código `200 OK` de resposta e um novo objeto [trustFrameworkKey](../resources/trustframeworkkey.md) no corpo da resposta.
+Se tiver êxito, este método retornará um `200 OK` código de resposta e um novo [objeto trustFrameworkKey](../resources/trustframeworkkey.md) no corpo da resposta.
 
 ## <a name="examples"></a>Exemplos
 
@@ -99,8 +99,12 @@ Content-type: application/json
 [!INCLUDE [sample-code](../includes/snippets/java/trustframeworkkeyset-generatekey-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[Go](#tab/go)
+# <a name="go"></a>[Ir](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/trustframeworkkeyset-generatekey-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/trustframeworkkeyset-generatekey-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

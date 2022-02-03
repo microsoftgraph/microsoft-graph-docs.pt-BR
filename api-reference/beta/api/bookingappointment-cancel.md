@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: arvindmicrosoft
 ms.prod: bookings
 doc_type: apiPageType
-ms.openlocfilehash: d45135e615c221fb5d9787508e8f8a08adea8cd1
-ms.sourcegitcommit: c47e3d1f3c5f7e2635b2ad29dfef8fe7c8080bc8
+ms.openlocfilehash: 5ae148f44e5234f2101b656eb3d4155d9de8512b
+ms.sourcegitcommit: 25acfa7d0153336c9a35d30a1dd422aeadc1342c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/15/2021
-ms.locfileid: "61524606"
+ms.lasthandoff: 02/03/2022
+ms.locfileid: "62343492"
 ---
 # <a name="bookingappointment-cancel"></a>bookingAppointment: cancel
 
@@ -18,15 +18,15 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Cancele o [bookingAppointment](../resources/bookingappointment.md) especificado no [bookingbusiness](../resources/bookingbusiness.md)especificado e envie uma mensagem aos clientes envolvidos e aos membros da equipe.
+Cancele o [bookingAppointment](../resources/bookingappointment.md) especificado no [bookingbusiness](../resources/bookingbusiness.md) especificado e envie uma mensagem aos clientes envolvidos e aos membros da equipe.
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
 |:--------------------|:---------------------------------------------------------|
 |Delegado (conta corporativa ou de estudante) |  BookingsAppointment.ReadWrite.All, Bookings.ReadWrite.All, Bookings.Manage.All   |
-|Delegada (conta pessoal da Microsoft) | Sem suporte.   |
+|Delegado (conta pessoal da Microsoft) | Sem suporte.   |
 |Aplicativo | Sem suporte.  |
 
 ## <a name="http-request"></a>Solicitação HTTP
@@ -50,7 +50,7 @@ Forneça um objeto JSON com os seguintes parâmetros no corpo da solicitação.
 ## <a name="response"></a>Resposta
 Se bem-sucedido, este método retorna um código de resposta `204 No content`. Não retorna nada no corpo da resposta.
 
-Se você tentar cancelar um compromisso que não exisit, este método retornará `HTTP 404 Not found` .
+Se você tentar cancelar um compromisso que não exisit, este método retornará `HTTP 404 Not found`.
 
 ## <a name="example"></a>Exemplo
 Veja a seguir um exemplo de como chamar essa API.
@@ -86,8 +86,12 @@ Content-type: application/json
 [!INCLUDE [sample-code](../includes/snippets/java/bookingappointment-cancel-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[Go](#tab/go)
+# <a name="go"></a>[Ir](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/bookingappointment-cancel-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/bookingappointment-cancel-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

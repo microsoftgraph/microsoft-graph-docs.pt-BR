@@ -5,12 +5,12 @@ author: mahage-msft
 ms.localizationpriority: medium
 ms.prod: ediscovery
 doc_type: apiPageType
-ms.openlocfilehash: f7dfc09c1cd67d9f5f62ffdf506424cd4b6cb4cb
-ms.sourcegitcommit: 871db8b3f68489d24e2aeafe694725579ee44c47
+ms.openlocfilehash: 8935ff163e82f154420ca9acae247c164ea7554c
+ms.sourcegitcommit: 25acfa7d0153336c9a35d30a1dd422aeadc1342c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/26/2022
-ms.locfileid: "62226040"
+ms.lasthandoff: 02/03/2022
+ms.locfileid: "62340246"
 ---
 # <a name="sourcecollection-estimatestatistics"></a>sourceCollection: estimateStatistics
 
@@ -18,7 +18,7 @@ Namespace: microsoft.graph.ediscovery
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Execute uma estimativa do número de emails e documentos na coleção de origem. Para saber mais sobre coleções de origem (também conhecidas como pesquisas na Descoberta eDiscovery), consulte Coletar dados para um caso [em Advanced eDiscovery](/microsoft-365/compliance/collecting-data-for-ediscovery).
+Execute uma estimativa do número de emails e documentos na coleção de origem. Para saber mais sobre coleções de origem (também conhecidas como pesquisas na Descoberta eDiscovery), consulte Coletar dados para uma ocorrência [em Advanced eDiscovery](/microsoft-365/compliance/collecting-data-for-ediscovery).
 
 ## <a name="permissions"></a>Permissões
 
@@ -53,7 +53,7 @@ Não forneça um corpo de solicitação para esse método.
 
 ## <a name="response"></a>Resposta
 
-Se a estimativa for iniciada com êxito, essa ação retornará um `202 Accepted` código de resposta. A resposta também conterá um header, que contém o local da `Location` [estimateStatisticsOperation](../resources/ediscovery-estimatestatisticsoperation.md) que foi criada para manipular a estimativa. Verifique o status da operação de estimativa fazendo uma solicitação GET para o local, quando concluído com êxito, o [status](../resources/ediscovery-caseoperation.md#caseoperationstatus-values) será alterado para `succeeded` .
+Se a estimativa for iniciada com êxito, essa ação retornará um código `202 Accepted` de resposta. A resposta também conterá um header, que contém o `Location` local da [estimateStatisticsOperation](../resources/ediscovery-estimatestatisticsoperation.md) que foi criada para manipular a estimativa. Verifique o status da operação de estimativa fazendo uma solicitação GET para o local, quando concluído com êxito, o [status](../resources/ediscovery-caseoperation.md#caseoperationstatus-values) será alterado para `succeeded`.
 
 ## <a name="examples"></a>Exemplos
 
@@ -88,6 +88,10 @@ POST https://graph.microsoft.com/beta/compliance/ediscovery/cases/{caseId}/sourc
 
 # <a name="go"></a>[Ir](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/sourcecollection-estimatestatistics-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/sourcecollection-estimatestatistics-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

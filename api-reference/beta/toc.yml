@@ -10597,16 +10597,16 @@ items:
           - name: Configurações de atribuição
             href: resources/educationassignmentsettings.md
             items:
-              - name: Obter configurações de atribuição
+              - name: Obter
                 href: api/educationassignmentsettings-get.md
-              - name: Atualizar configurações de atribuição
+              - name: Atualizar
                 href: api/educationassignmentsettings-update.md
           - name: Padrões de atribuição
             href: resources/educationassignmentdefaults.md
             items:
-              - name: Obter padrões de atribuição
+              - name: Obter
                 href: api/educationassignmentdefaults-get.md
-              - name: Atualizar padrões de atribuição
+              - name: Atualizar
                 href: api/educationassignmentdefaults-update.md
           - name: Categoria
             href: resources/educationcategory.md
@@ -10622,13 +10622,13 @@ items:
           - name: Rubric
             href: resources/educationrubric.md
             items:
-              - name: Criar rubrica
+              - name: Criar
                 href: api/educationuser-post-rubrics.md
-              - name: Obter rubric
+              - name: Obter
                 href: api/educationrubric-get.md
-              - name: Atualizar rubric
+              - name: Atualizar
                 href: api/educationrubric-update.md
-              - name: Excluir rubric
+              - name: Excluir
                 href: api/educationrubric-delete.md
           - name: Envio
             href: resources/educationsubmission.md
@@ -10695,12 +10695,12 @@ items:
           - name: Status do perfil de sincronização
             href: resources/educationsynchronizationprofilestatus.md
             items:
-              - name: Obter status de sincronização
+              - name: Obter
                 href: api/educationsynchronizationprofilestatus-get.md
           - name: Erros de sincronização
             href: resources/educationsynchronizationerror.md
             items:
-              - name: Obter erros de sincronização
+              - name: Obter
                 href: api/educationsynchronizationerrors-get.md
       - name: Extensões
         items:

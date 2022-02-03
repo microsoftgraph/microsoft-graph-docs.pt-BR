@@ -5,22 +5,22 @@ ms.localizationpriority: medium
 author: abheek-das
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: e27da3cd3093d4936ed3add2f6f0efbf5a477bab
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: 9784c14e209cec385a932ca86c35ab0222da77f8
+ms.sourcegitcommit: 25acfa7d0153336c9a35d30a1dd422aeadc1342c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "61033197"
+ms.lasthandoff: 02/03/2022
+ms.locfileid: "62343275"
 ---
 # <a name="message-createreplyall"></a>message: createReplyAll
 
 Namespace: microsoft.graph
 
-Crie um rascunho para responder ao remetente e [a](../resources/message.md) todos os destinatários de uma mensagem no formato JSON ou MIME. 
+Crie um rascunho para responder ao remetente [e a todos](../resources/message.md) os destinatários de uma mensagem no formato JSON ou MIME. 
 
 Ao usar o formato JSON:
 - Especifique um comentário ou **a propriedade body** do `message` parâmetro. Especificar ambos retornará um erro HTTP 400 - Solicitação incorreta.
-- Se a mensagem original especificar um destinatário na propriedade **replyTo,** por Formato de Mensagem da Internet ([RFC 2822](https://www.rfc-editor.org/info/rfc2822)), você deverá enviar a resposta aos destinatários nas propriedades **replyTo** e **toRecipients,** e não os destinatários nas propriedades **from** e **toRecipients.** 
+- Se a mensagem original especificar um destinatário na propriedade **replyTo** , por Formato de Mensagem da Internet ([RFC 2822](https://www.rfc-editor.org/info/rfc2822)), você deverá enviar a resposta aos destinatários nas propriedades **replyTo** e **toRecipients** e não os destinatários nas propriedades **from** e **toRecipients** . 
 - Você pode [atualizar o](../api/message-update.md) rascunho posteriormente para adicionar conteúdo de resposta ao **corpo** ou alterar outras propriedades da mensagem.
 
 Ao utilizar o formato MIME:
@@ -96,8 +96,12 @@ POST https://graph.microsoft.com/v1.0/me/messages/{id}/createReplyAll
 [!INCLUDE [sample-code](../includes/snippets/java/message-createreplyall-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[Go](#tab/go)
+# <a name="go"></a>[Ir](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/message-createreplyall-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/message-createreplyall-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

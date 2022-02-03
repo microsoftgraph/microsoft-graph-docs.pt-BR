@@ -5,12 +5,12 @@ author: cristobal-buenrostro
 ms.localizationpriority: medium
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: f61bdccac7a1b38c92026de01c3e9cd127b3397f
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: 5621a0682a35f06acc41e198375845ea8f87027a
+ms.sourcegitcommit: 25acfa7d0153336c9a35d30a1dd422aeadc1342c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "61034527"
+ms.lasthandoff: 02/03/2022
+ms.locfileid: "62343562"
 ---
 # <a name="educationsubmission-reassign"></a>educationSubmission: reatribuir
 
@@ -22,7 +22,7 @@ Namespace: microsoft.graph
 
 Somente os professores podem executar essa ação. 
 
-Inclua o `Prefer: include-unknown-enum-members` header quando você chamar esse método; caso contrário, um envio reatribuido será tratado como um envio retornado. Isso significa que o status será mapeado para o status, e as propriedades `reassigned` `returned` **reassignedDateTime** e **reassignedBy** serão mapeadas para **returnedDateTime** e **returnedBy** respectivamente.
+Inclua o `Prefer: include-unknown-enum-members` header quando você chamar esse método; caso contrário, um envio reatribuido será tratado como um envio retornado. Isso significa que o `reassigned` status `returned` será mapeado para o status, e as propriedades **reassignedDateTime** e **reassignedBy** serão mapeadas para **returnedDateTime** e **returnedBy** respectivamente.
 
 Se o header `Prefer: include-unknown-enum-members` for fornecido, um envio reatribuido manterá o `reassigned` status. Para obter detalhes, consulte a seção exemplos.
 
@@ -50,10 +50,10 @@ POST /education/classes/{id}/assignments/{id}/submissions/{id}/reassign
 Não fornece um corpo de solicitação para este método.
 
 ## <a name="response"></a>Resposta
-Se tiver êxito, este método retornará `200 OK` o código de resposta e um objeto [educationSubmission](../resources/educationsubmission.md) no corpo da resposta.
+Se tiver êxito, este método retornará `200 OK` o código de resposta e um [objeto educationSubmission](../resources/educationsubmission.md) no corpo da resposta.
 
 ## <a name="examples"></a>Exemplos
-### <a name="example-1-request-without-optional-prefer-header"></a>Exemplo 1: Solicitar sem o header Prefer opcional
+### <a name="example-1-request-without-optional-prefer-header"></a>Exemplo 1: Solicitação sem Cabeçalho preferencial opcional
 
 #### <a name="request"></a>Solicitação
 Este é um exemplo de solicitação.
@@ -84,15 +84,19 @@ POST /education/classes/72a7baec-c3e9-4213-a850-f62de0adad5f/assignments/7192332
 [!INCLUDE [sample-code](../includes/snippets/java/educationsubmission-reassign-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[Go](#tab/go)
+# <a name="go"></a>[Ir](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/educationsubmission-reassign-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/educationsubmission-reassign-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
 
 #### <a name="response"></a>Resposta
-A seguir, um exemplo da resposta quando NOT é fornecido no header de solicitação e o `Prefer: include-unknown-enum-members` envio não foi retornado antes.
+A seguir, um exemplo da resposta quando `Prefer: include-unknown-enum-members` NOT é fornecido no header de solicitação e o envio não foi retornado antes.
 
 <!-- {
   "blockType": "response",
@@ -183,15 +187,19 @@ Prefer: include-unknown-enum-members
 [!INCLUDE [sample-code](../includes/snippets/java/educationsubmission-prefer-reassign-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[Go](#tab/go)
+# <a name="go"></a>[Ir](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/educationsubmission-prefer-reassign-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/educationsubmission-prefer-reassign-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
 
 #### <a name="response"></a>Resposta
-A seguir, um exemplo da resposta quando é fornecido no header de solicitação e o `Prefer: include-unknown-enum-members` envio não foi retornado antes.
+A seguir, um exemplo da resposta quando `Prefer: include-unknown-enum-members` é fornecido no header de solicitação e o envio não foi retornado antes.
 
 <!-- {
   "blockType": "response",

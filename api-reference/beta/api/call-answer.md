@@ -5,12 +5,12 @@ author: ananmishr
 ms.localizationpriority: medium
 ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: 54f57cc549810e3429e88e6d5b9edcbf2851cc32
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: ae80594e940b288403f04aa7885fd5c8e8fb20db
+ms.sourcegitcommit: 25acfa7d0153336c9a35d30a1dd422aeadc1342c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "61005856"
+ms.lasthandoff: 02/03/2022
+ms.locfileid: "62343208"
 ---
 # <a name="call-answer"></a>call: answer
 
@@ -18,7 +18,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Habilitar um bot para atender uma [chamada de entrada.](../resources/call.md) A solicitação de chamada de entrada pode ser um convite de um participante em uma chamada de grupo ou uma chamada ponto a ponto. Se um convite para uma chamada de grupo for recebido, a notificação conterá os parâmetros [chatInfo](../resources/chatinfo.md) e [meetingInfo.](../resources/meetinginfo.md)
+Habilitar um bot para atender uma [chamada de entrada](../resources/call.md). A solicitação de chamada de entrada pode ser um convite de um participante em uma chamada de grupo ou uma chamada ponto a ponto. Se um convite para uma chamada de grupo for recebido, a notificação conterá os parâmetros [chatInfo](../resources/chatinfo.md) e [meetingInfo](../resources/meetinginfo.md) .
 
 Espera-se que o bot atenda, [rejeite](./call-reject.md) ou [redirecione a](./call-redirect.md) chamada antes do tempo de chamada. O valor de tempo decoro atual é 15 segundos. O valor de tempo decoro atual é de 15 segundos para cenários regulares e 5 segundos para cenários de gravação baseados em política.
 
@@ -31,7 +31,7 @@ Você não precisa de nenhuma permissão para responder a uma chamada ponto a po
 | Delegado (conta pessoal da Microsoft) | Não suportado                        |
 | Aplicativo     | Calls.JoinGroupCalls.All ou Calls.JoinGroupCallsasGuest.All |
 
-> **Observação:** Para uma chamada que usa mídia hospedada por aplicativo, você também precisa da permissão Calls.AccessMedia.All. Você deve ter pelo menos uma das seguintes permissões para garantir que a notificação de chamada de entrada seja `source` descriptografada: Calls.AccessMedia.All, Calls.Initiate.All, Calls.InitiateGroupCall.All, Calls.JoinGroupCall.All, Calls.JoinGroupCallAsGuest.All. São `source` as informações do chamador na notificação de chamada de entrada. Sem pelo menos uma dessas permissões, `source` o permanecerá criptografado.
+> **Observação:** Para uma chamada que usa mídia hospedada por aplicativo, você também precisa da permissão Calls.AccessMedia.All. `source` Você deve ter pelo menos uma das seguintes permissões para garantir que a notificação de chamada de entrada seja descriptografada: Calls.AccessMedia.All, Calls.Initiate.All, Calls.InitiateGroupCall.All, Calls.JoinGroupCall.All, Calls.JoinGroupCallAsGuest.All. São `source` as informações do chamador na notificação de chamada de entrada. Sem pelo menos uma dessas permissões, o `source` permanecerá criptografado.
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- {"blockType": "ignored" } -->
@@ -52,13 +52,13 @@ Forneça um objeto JSON com os seguintes parâmetros no corpo da solicitação.
 
 | Parâmetro           | Tipo                                                                                                                                 | Descrição                                                                                                                                                                                                         |
 | :-----------------  | :-----------------------------------------                                                                                           | :----------------------------------------------------------------------------------------------------------------------------------------------                                                                     |
-| callbackUri         | String                                                                                                                               | Permite que os bots forneçam um URI de retorno de chamada específico para que a chamada simultânea receba notificações posteriores. Se essa propriedade não tiver sido definida, o URI de retorno de chamada global do bot será usado em vez disso. Isso deve ser `https` . |
-| acceptedModalities  | Coleção de cadeias de caracteres                                                                                                                    | A lista de modalidades de aceitação. Os valores possíveis são: `audio` `video` , , `videoBasedScreenSharing` . Obrigatório para atender uma chamada.                                                                                      |
+| callbackUri         | String                                                                                                                               | Permite que os bots forneçam um URI de retorno de chamada específico para que a chamada simultânea receba notificações posteriores. Se essa propriedade não tiver sido definida, o URI de retorno de chamada global do bot será usado em vez disso. Isso deve ser `https`. |
+| acceptedModalities  | String collection                                                                                                                    | A lista de modalidades de aceitação. Os valores possíveis são: `audio`, `video`, `videoBasedScreenSharing`. Obrigatório para atender uma chamada.                                                                                      |
 | mediaConfig         | [appHostedMediaConfig](../resources/apphostedmediaconfig.md) ou [serviceHostedMediaConfig](../resources/servicehostedmediaconfig.md) | A configuração de mídia. Necessário.                                                                                                                                                                                 |
-| participantCapacity | Int                                                                                                                                  | O número de participantes que o aplicativo pode manipular para a chamada, Teams cenário de gravação [baseado em](/MicrosoftTeams/teams-recording-policy) política.                                                     |
+| participantCapacity | Int                                                                                                                                  | O número de participantes que o aplicativo pode manipular para a chamada, para Teams [de gravação baseada](/MicrosoftTeams/teams-recording-policy) em política.                                                     |
 
 ## <a name="response"></a>Resposta
-Este método retorna um `202 Accepted` código de resposta.
+Este método retorna um código `202 Accepted` de resposta.
 
 ## <a name="examples"></a>Exemplos
 O exemplo a seguir mostra como chamar essa API.
@@ -106,8 +106,12 @@ Esse blob é a configuração serializada para sessões de mídia geradas a part
 [!INCLUDE [sample-code](../includes/snippets/java/call-answer-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[Go](#tab/go)
+# <a name="go"></a>[Ir](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/call-answer-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/call-answer-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -386,8 +390,12 @@ Content-Type: application/json
 [!INCLUDE [sample-code](../includes/snippets/java/call-answer-app-hosted-media-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[Go](#tab/go)
+# <a name="go"></a>[Ir](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/call-answer-app-hosted-media-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/call-answer-app-hosted-media-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -464,10 +472,10 @@ Content-Type: application/json
 
 ### <a name="example-3-answer-a-policy-based-recording-call"></a>Exemplo 3: atender a uma chamada de gravação baseada em política
 
-No cenário de registro [baseado](/microsoftteams/teams-recording-policy)em Política , antes de um participante em política ingressar em uma chamada, uma notificação de chamada de entrada será enviada para o bot associado à política.
-As informações de junção podem ser encontradas na **propriedade botData.** Em seguida, o bot pode optar por atender à chamada e [atualizar o status da](call-updaterecordingstatus.md) gravação de acordo.
+No cenário [de registro baseado](/microsoftteams/teams-recording-policy) em política, antes de um participante em política ingressar em uma chamada, uma notificação de chamada de entrada será enviada para o bot associado à política.
+As informações de junção podem ser encontradas na **propriedade botData** . Em seguida, o bot pode optar por atender à chamada e [atualizar o status da](call-updaterecordingstatus.md) gravação de acordo.
 
-Quando for especificado na solicitação de uma notificação de registro baseada em política, o evento de participação do participante subsequente pertencente ao mesmo grupo de política será enviado como `participantCpapacity` `Answer` [participanteJoiningNotification](../resources/participantJoiningNotification.md) em vez de uma nova notificação de chamada de entrada, até que o número de participantes que a instância de chamada atual está manipulando tenha atingido o número especificado em `participantCapacity` .
+Quando for especificado na solicitação de uma notificação de registro baseada em política, o evento de participação do participante subsequente pertencente ao mesmo grupo de política será enviado como [participanteJoiningNotification](../resources/participantJoiningNotification.md) em vez de uma nova notificação de chamada de entrada, até que o número de participantes que a instância de chamada atual está manipulando tenha atingido o número especificado em `participantCapacity`.`participantCpapacity` `Answer`
 
 Veja a seguir um exemplo da notificação de chamada de entrada que um bot receberia nesse caso.
 

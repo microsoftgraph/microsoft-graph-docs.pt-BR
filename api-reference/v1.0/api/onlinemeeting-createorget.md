@@ -5,12 +5,12 @@ author: mkhribech
 ms.localizationpriority: medium
 ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: c7d243034ae506d9312c321c4ff45657ffa1986b
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: e2c22e9b1427d42812463d50fe511b53a6e78675
+ms.sourcegitcommit: 25acfa7d0153336c9a35d30a1dd422aeadc1342c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "61023256"
+ms.lasthandoff: 02/03/2022
+ms.locfileid: "62345782"
 ---
 # <a name="onlinemeeting-createorget"></a>onlineMeeting: createOrGet
 
@@ -30,16 +30,16 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 | Aplicativo                            | OnlineMeetings.ReadWrite.All*                |
 
 > [!IMPORTANT]
-> \*Os administradores [](/graph/cloud-communication-online-meeting-application-access-policy) devem criar uma política de acesso a aplicativos e concedi-la a um usuário, autorizando o aplicativo configurado na política para criar ou obter uma reunião online com a ID externa em nome desse usuário (ID do usuário especificada no caminho da solicitação).
+> \*Os administradores devem criar [](/graph/cloud-communication-online-meeting-application-access-policy) uma política de acesso a aplicativos e concedi-la a um usuário, autorizando o aplicativo configurado na política para criar ou obter uma reunião online com a ID externa em nome desse usuário (ID do usuário especificada no caminho da solicitação).
 
 ## <a name="http-request"></a>Solicitação HTTP
-Para chamar a API **createOrGet** com token delegado:
+Para chamar **a API createOrGet** com token delegado:
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /me/onlineMeetings/createOrGet
 ```
 
-Para chamar a API **createOrGet** com token de aplicativo:
+Para chamar **a API createOrGet** com token de aplicativo:
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /users/{userId}/onlineMeetings/createOrGet
@@ -63,18 +63,18 @@ Forneça um objeto JSON com os seguintes parâmetros no corpo da solicitação.
 | externalId       | Cadeia de caracteres                                   | A ID externa. Uma ID personalizada. (Obrigatório) |
 | participants     | [meetingParticipants](../resources/meetingparticipants.md)          | Os participantes associados à reunião online.  Isso inclui o organizador e os participantes. |
 | startDateTime    | DateTime                                 | O horário de início da reunião em UTC. |
-| assunto          | String                                   | O assunto da reunião online. |
+| assunto          | Cadeia de caracteres                                   | O assunto da reunião online. |
 
 > **Observações:**
 >
-> - Se **o startDateTime** e **endDateTime** não são fornecidos, o **startDateTime** será padrão para o valor dateTime atual e o valor **endDateTime** será igual ao **startDateTime** + 1 hora.
+> - Se **o startDateTime** e **endDateTime** não são fornecidos, o **startDateTime** será padrão para o valor dateTime atual e **o valor endDateTime** será igual ao **startDateTime** + 1 hora.
 >
 > - Se o **startDateTime** for fornecido, mas **endDateTime** não for, o valor **endDateTime** será igual ao **startDateTime** + 1 hora.
 >
-> - Um erro será lançado se **endDateTime** for fornecido sem **o startDateTime** ou se **endDateTime** for anterior ao **startDateTime**.
+> - Um erro será lançado se **endDateTime** for fornecido sem **o startDateTime ou se endDateTime** for anterior ao **startDateTime**.
 
 ## <a name="response"></a>Resposta
-Se tiver êxito, este método retornará um código de resposta se uma nova reunião for criada ou um código de resposta se uma reunião existente `201 Created` `200 OK` for recuperada. Em ambos os casos, um [objeto onlineMeeting](../resources/onlinemeeting.md) é retornado no corpo da resposta.
+Se tiver êxito, este método retornará um `201 Created` código de resposta se uma nova reunião for criada ou `200 OK` um código de resposta se uma reunião existente for recuperada. Em ambos os casos, um [objeto onlineMeeting](../resources/onlinemeeting.md) é retornado no corpo da resposta.
 
 ## <a name="examples"></a>Exemplos
 
@@ -128,8 +128,12 @@ Content-Type: application/json
 [!INCLUDE [sample-code](../includes/snippets/java/create-or-get-onlinemeeting-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[Go](#tab/go)
+# <a name="go"></a>[Ir](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/create-or-get-onlinemeeting-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/create-or-get-onlinemeeting-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

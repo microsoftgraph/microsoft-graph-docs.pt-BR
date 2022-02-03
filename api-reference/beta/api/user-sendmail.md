@@ -5,12 +5,12 @@ author: abheek-das
 ms.localizationpriority: medium
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 6f398f27fa1239b7d59594bfb928e09e4595cde0
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: a0bbd42edc52be9dc9f9d5c48efa9eb977ddf1b8
+ms.sourcegitcommit: 25acfa7d0153336c9a35d30a1dd422aeadc1342c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "60985011"
+ms.lasthandoff: 02/03/2022
+ms.locfileid: "62340070"
 ---
 # <a name="send-mail"></a>Enviar email
 
@@ -20,7 +20,7 @@ Namespace: microsoft.graph
 
 Enviar a mensagem especificada no corpo da solicitação usando o formato JSON ou MIME.
 
-Ao usar o formato JSON, você [](../resources/mention.md) pode incluir um [anexo](../resources/attachment.md) e usar uma menção para chamar outro usuário na nova mensagem.
+Ao usar o formato JSON, você pode incluir um [anexo](../resources/attachment.md) e [](../resources/mention.md) usar uma menção para chamar outro usuário na nova mensagem.
 
 Ao utilizar o formato MIME:
 - Fornecer os [cabeçalhos de mensagem da Internet](https://tools.ietf.org/html/rfc2076) e o [conteúdo MIME](https://tools.ietf.org/html/rfc2045) aplicáveis, todos codificados no formato **base64** no corpo da solicitação.
@@ -61,8 +61,8 @@ Ao usar o formato JSON, forneça um objeto JSON com os seguintes parâmetros.
 |SaveToSentItems|Boolean|Indica se é necessário salvar a mensagem nos Itens Enviados. Especifique-a somente se o parâmetro for false; o padrão é true.  Opcional.|
 
 Para usar **a menção** para chamar outro usuário na nova mensagem:
-- Inclua a propriedade **required toRecipients,** a propriedade **mentions** e quaisquer propriedades de mensagem writable no corpo da solicitação.
-- Para cada menção na **propriedade mentions,** você deve especificar a **propriedade** mencionada.
+- Inclua a propriedade **required toRecipients** , a propriedade **mentions** e quaisquer propriedades de mensagem writable no corpo da solicitação.
+- Para cada menção na **propriedade mentions** , você deve especificar a **propriedade** mencionada.
 
 Ao especificar o corpo no formato MIME, forneça o conteúdo MIME como **uma cadeia de caracteres codificada em base64** no corpo da solicitação. Não inclua parâmetros.
 
@@ -128,8 +128,12 @@ Content-type: application/json
 [!INCLUDE [sample-code](../includes/snippets/java/user-sendmail-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[Go](#tab/go)
+# <a name="go"></a>[Ir](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/user-sendmail-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/user-sendmail-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -196,8 +200,12 @@ Content-type: application/json
 [!INCLUDE [sample-code](../includes/snippets/java/user-sendmail-with-mentions-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[Go](#tab/go)
+# <a name="go"></a>[Ir](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/user-sendmail-with-mentions-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/user-sendmail-with-mentions-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -270,8 +278,12 @@ Content-type: application/json
 [!INCLUDE [sample-code](../includes/snippets/java/user-sendmail-with-headers-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[Go](#tab/go)
+# <a name="go"></a>[Ir](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/user-sendmail-with-headers-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/user-sendmail-with-headers-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -340,8 +352,12 @@ Content-type: application/json
 [!INCLUDE [sample-code](../includes/snippets/java/user-sendmail-with-attachment-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[Go](#tab/go)
+# <a name="go"></a>[Ir](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/user-sendmail-with-attachment-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/user-sendmail-with-attachment-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

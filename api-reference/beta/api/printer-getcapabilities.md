@@ -5,12 +5,12 @@ author: braedenp-msft
 ms.localizationpriority: medium
 ms.prod: universal-print
 doc_type: apiPageType
-ms.openlocfilehash: b285607d5d20ad5aefbcbc03244ee1fa8ed49bf8
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: e82886850e577efe4cd30f1aaa1bac989aacea07
+ms.sourcegitcommit: 25acfa7d0153336c9a35d30a1dd422aeadc1342c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62129579"
+ms.lasthandoff: 02/03/2022
+ms.locfileid: "62343948"
 ---
 # <a name="printer-getcapabilities"></a>printer: getCapabilities
 
@@ -23,7 +23,7 @@ Obter uma lista de recursos para a [impressora](../resources/printer.md).
 ## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
-Para usar o serviço Impressão Universal, o usuário ou locatário do aplicativo deve ter uma assinatura de Impressão Universal ativa, além das permissões listadas na tabela a seguir. O usuário inscreveu deve ser um [Administrador de Impressora.](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#printer-administrator)
+Para usar o serviço Impressão Universal, o usuário ou locatário do aplicativo deve ter uma assinatura de Impressão Universal ativa, além das permissões listadas na tabela a seguir. O usuário inscreveu deve ser um [Administrador de Impressora](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#printer-administrator).
 
 |Tipo de permissão | Permissões (da com menos para a com mais privilégios) |
 |:---------------|:--------------------------------------------|
@@ -44,7 +44,7 @@ GET /print/printers/{id}/getCapabilities
 ## <a name="request-body"></a>Corpo da solicitação
 
 ## <a name="response"></a>Resposta
-Se tiver êxito, este método retornará um código `200 OK` de resposta e um objeto [printerCapabilities](../resources/printercapabilities.md) no corpo da resposta.
+Se tiver êxito, este método retornará um `200 OK` código de resposta e um [objeto printerCapabilities](../resources/printercapabilities.md) no corpo da resposta.
 
 ## <a name="example"></a>Exemplo
 O exemplo a seguir mostra como chamar essa API.
@@ -77,6 +77,10 @@ GET https://graph.microsoft.com/beta/print/printers/{id}/getCapabilities
 
 # <a name="go"></a>[Ir](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/printer-getcapabilities-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/printer-getcapabilities-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

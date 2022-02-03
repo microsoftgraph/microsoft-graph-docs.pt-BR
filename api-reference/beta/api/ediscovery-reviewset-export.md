@@ -5,12 +5,12 @@ author: mahage-msft
 ms.localizationpriority: medium
 ms.prod: ediscovery
 doc_type: apiPageType
-ms.openlocfilehash: 577f219e004b790ab144715dbcccaf5c29e94492
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: f4e431bf23f73d482d9fd9fa2eae929f125a3dc4
+ms.sourcegitcommit: 25acfa7d0153336c9a35d30a1dd422aeadc1342c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "60998644"
+ms.lasthandoff: 02/03/2022
+ms.locfileid: "62347686"
 ---
 # <a name="reviewset-export"></a>reviewSet: export
 
@@ -18,7 +18,7 @@ Namespace: microsoft.graph.ediscovery
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Iniciar uma exportação de um **reviewSet**.  Para obter detalhes, [consulte Exportar documentos de um conjunto de revisão em Advanced eDiscovery](/microsoft-365/compliance/export-documents-from-review-set).
+Inicie uma exportação de um **reviewSet**.  Para obter detalhes, [consulte Export documents from a review set in Advanced eDiscovery](/microsoft-365/compliance/export-documents-from-review-set).
 
 ## <a name="permissions"></a>Permissões
 
@@ -56,7 +56,7 @@ A tabela a seguir mostra os parâmetros que podem ser usados com esta ação.
 
 |Parâmetro|Tipo|Descrição|
 |:---|:---|:---|
-|outputName|Cadeia de caracteres| Nome da exportação. Obrigatório. |
+|outputName|String| Nome da exportação. Obrigatório. |
 |description|String| Descrição da exportação |
 |azureBlobContainer|String| Ao exportar para sua própria conta de armazenamento do Azure, essa é a URL do contêiner. |
 |azureBlobToken|Cadeia de caracteres| Ao exportar para sua própria conta de armazenamento do Azure, o token SAS para a URL do contêiner. |
@@ -65,7 +65,7 @@ A tabela a seguir mostra os parâmetros que podem ser usados com esta ação.
 
 ## <a name="response"></a>Resposta
 
-Se a exportação for iniciada com êxito, essa ação retornará um `202 Accepted` código de resposta. A resposta também conterá um header, que contém o local `Location` [do caseExportOperation](../resources/ediscovery-caseexportoperation.md) que foi criado para manipular a exportação. Verifique o status da operação de exportação fazendo uma solicitação GET para o local, quando concluído com êxito, o [status](../resources/ediscovery-caseoperation.md#caseoperationstatus-values) mudará para `succeeded` .
+Se a exportação for iniciada com êxito, essa ação retornará um `202 Accepted` código de resposta. A resposta também conterá um header, que contém o `Location` local [do caseExportOperation](../resources/ediscovery-caseexportoperation.md) que foi criado para manipular a exportação. Verifique o status da operação de exportação fazendo uma solicitação GET para o local, quando concluído com êxito, o [status](../resources/ediscovery-caseoperation.md#caseoperationstatus-values) mudará para `succeeded`.
 
 ## <a name="examples"></a>Exemplos
 
@@ -106,8 +106,12 @@ Content-Type: application/json
 [!INCLUDE [sample-code](../includes/snippets/java/reviewset-export-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[Go](#tab/go)
+# <a name="go"></a>[Ir](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/reviewset-export-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/reviewset-export-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

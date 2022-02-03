@@ -1,16 +1,17 @@
 ---
 description: Arquivo gerado automaticamente. NÃO MODIFICAR
-ms.openlocfilehash: 31c3e12291f1b99d097beee71b7b0b19bf75c2a7
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: 6a250b6827d4a61aaa5194aa7dff306504a302ef
+ms.sourcegitcommit: 25acfa7d0153336c9a35d30a1dd422aeadc1342c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62096735"
+ms.lasthandoff: 02/03/2022
+ms.locfileid: "62350440"
 ---
 ```powershell
 
 Import-Module Microsoft.Graph.Files
 
+# A UPN can also be used as -UserId.
 Get-MgUserDrive -UserId $userId
 
 ```

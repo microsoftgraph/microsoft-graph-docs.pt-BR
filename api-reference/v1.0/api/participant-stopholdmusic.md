@@ -5,12 +5,12 @@ author: mkhribech
 ms.localizationpriority: medium
 ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: 191b8340fa262890c5bd789e75101f8ef11bbe3d
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: b37f26086bcab8ab7d0450a8ece612f7d7f5a25c
+ms.sourcegitcommit: 25acfa7d0153336c9a35d30a1dd422aeadc1342c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "61025209"
+ms.lasthandoff: 02/03/2022
+ms.locfileid: "62342740"
 ---
 # <a name="participant-stopholdmusic"></a>participante: stopHoldMusic
 
@@ -49,7 +49,7 @@ Forneça um objeto JSON com os seguintes parâmetros no corpo da solicitação.
 |clientContext|String|Opcional. Cadeia de caracteres de contexto de cliente exclusiva. Pode ter no máximo 256 caracteres.|
 
 ## <a name="response"></a>Resposta
-Se tiver êxito, este método retornará um código de resposta e um `202 Accepted` [objeto stopHoldMusicOperation](../resources/stopHoldmusicoperation.md) no corpo da resposta.
+Se tiver êxito, este método retornará um `202 Accepted` código de resposta e um [objeto stopHoldMusicOperation](../resources/stopHoldmusicoperation.md) no corpo da resposta.
 
 ## <a name="example"></a>Exemplo
 O exemplo a seguir mostra como chamar essa API.
@@ -88,8 +88,12 @@ Content-type: application/json
 [!INCLUDE [sample-code](../includes/snippets/java/participant-stopholdmusic-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[Go](#tab/go)
+# <a name="go"></a>[Ir](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/participant-stopholdmusic-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/participant-stopholdmusic-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

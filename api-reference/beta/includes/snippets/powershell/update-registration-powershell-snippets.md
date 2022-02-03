@@ -1,11 +1,11 @@
 ---
 description: Arquivo gerado automaticamente. NÃO MODIFICAR
-ms.openlocfilehash: a18084ad7164634743c8ab0f52b6eb3ad609881a
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: 8ba05d3f7b527d642fa7e3fc819616252125d881
+ms.sourcegitcommit: 25acfa7d0153336c9a35d30a1dd422aeadc1342c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62113165"
+ms.lasthandoff: 02/03/2022
+ms.locfileid: "62351939"
 ---
 ```powershell
 
@@ -27,6 +27,7 @@ $params = @{
     )
 }
 
+# A UPN can also be used as -UserId.
 Update-MgUserOnlineMeetingRegistration -UserId $userId -OnlineMeetingId $onlineMeetingId -BodyParameter $params
 
 ```

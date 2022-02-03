@@ -5,17 +5,17 @@ author: eddie-lee-msft
 ms.localizationpriority: medium
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 389a34e20b630a4178dcbeb47fba62d3543e4e84
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: 6139751d315db8dcf995ce69cf18b0b38e4d03c6
+ms.sourcegitcommit: 25acfa7d0153336c9a35d30a1dd422aeadc1342c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "61006708"
+ms.lasthandoff: 02/03/2022
+ms.locfileid: "62339571"
 ---
 # <a name="chat-sendactivitynotification"></a>chat: sendActivityNotification
 Namespace: microsoft.graph
 
-Envie uma notificação de feed de atividade no escopo de um chat. Para obter mais detalhes sobre o envio de notificações e os requisitos para fazer isso, consulte [o Teams de atividades.](/graph/teams-send-activityfeednotifications)
+Envie uma notificação de feed de atividade no escopo de um chat. Para obter mais detalhes sobre o envio de notificações e os requisitos para fazer isso, consulte [enviando Teams de atividades](/graph/teams-send-activityfeednotifications).
 
 ## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
@@ -50,13 +50,13 @@ A tabela a seguir mostra os parâmetros que podem ser usados com esta ação.
 |Parâmetro|Tipo|Descrição|
 |:---|:---|:---|
 |topic|[teamworkActivityTopic](../resources/teamworkactivitytopic.md)|Tópico da notificação. Especifica o recurso que está sendo falado.|
-|activityType|Cadeia de caracteres|Tipo de atividade. Isso deve ser declarado no manifesto Teams [app](/microsoftteams/platform/overview).|
-|chainId|Int64|Opcional. Usado para substituir uma notificação anterior. Use o mesmo `chainId` em solicitações subsequentes para substituir a notificação anterior.|
+|activityType|Cadeia de caracteres|Tipo de atividade. Isso deve ser declarado no manifesto Teams [aplicativo.](/microsoftteams/platform/overview)|
+|chainId|Int64|Opcional. Usado para substituir uma notificação anterior. Use o mesmo em `chainId` solicitações subsequentes para substituir a notificação anterior.|
 |previewText|[itemBody](../resources/itembody.md)|Visualizar texto para a notificação. Microsoft Teams mostrará apenas os primeiros 150 caracteres.|
-|templateParameters|Coleção [keyValuePair](../resources/keyvaluepair.md)|Valores para variáveis de modelo definidas na entrada de feed de atividade `activityType` correspondentes [Teams manifesto do aplicativo](/microsoftteams/platform/overview).|
+|templateParameters|Coleção [keyValuePair](../resources/keyvaluepair.md)|Valores para variáveis de modelo definidas na entrada de feed de atividade correspondentes `activityType` [Teams manifesto do aplicativo](/microsoftteams/platform/overview).|
 |destinatário|[teamworkNotificationRecipient](../resources/teamworknotificationrecipient.md)|Destinatário da notificação. Somente usuários do Azure AD são suportados. Consulte também [aadUserNotificationRecipient](../resources/aadusernotificationrecipient.md). |
 
-Os seguintes recursos são suportados ao definir o `source` valor da propriedade **topic** como `entityURL` :
+Os seguintes recursos são suportados ao definir o `source` valor da **propriedade topic** como `entityURL`:
 
 - [chat](../resources/chat.md)
 - [chatMessage](../resources/chatmessage.md)
@@ -71,7 +71,7 @@ Se tiver êxito, esta ação retornará um código de resposta `204 No Content`.
 
 ### <a name="example-1-notify-a-user-about-a-task-created-in-a-chat"></a>Exemplo 1: Notificar um usuário sobre uma tarefa criada em um chat
 
-Este exemplo mostra como você pode enviar uma notificação de feed de atividade para uma nova tarefa criada em um chat. Para obter mais detalhes, consulte [sending Teams activity notifications](/graph/teams-send-activityfeednotifications).
+Este exemplo mostra como você pode enviar uma notificação de feed de atividade para uma nova tarefa criada em um chat. Para obter mais detalhes, consulte [enviando Teams de atividades](/graph/teams-send-activityfeednotifications).
 
 #### <a name="request"></a>Solicitação
 
@@ -123,8 +123,12 @@ Content-Type: application/json
 [!INCLUDE [sample-code](../includes/snippets/java/chat-sendactivitynotification-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[Go](#tab/go)
+# <a name="go"></a>[Ir](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/chat-sendactivitynotification-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/chat-sendactivitynotification-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -142,7 +146,7 @@ HTTP/1.1 204 No Content
 
 ### <a name="example-2-notify-a-user-about-an-approval-needed-in-a-chat-message"></a>Exemplo 2: Notificar um usuário sobre uma aprovação necessária em uma mensagem de chat
 
-Semelhante ao exemplo anterior, este exemplo usa `entityUrl` para `topic` o . No entanto, nesse caso, ele se vincula a uma mensagem no chat. A mensagem pode conter um cartão com o botão de aprovação.
+Semelhante ao exemplo anterior, este exemplo usa `entityUrl` para `topic`o . No entanto, nesse caso, ele se vincula a uma mensagem no chat. A mensagem pode conter um cartão com o botão de aprovação.
 
 #### <a name="request"></a>Solicitação
 <!-- {
@@ -188,7 +192,7 @@ HTTP/1.1 204 No Content
 
 ### <a name="example-3-notify-a-user-about-an-approval-needed-in-a-chat-message-using-user-principal-name"></a>Exemplo 3: Notificar um usuário sobre uma aprovação necessária em uma mensagem de chat usando o nome principal do usuário
 
-Semelhante ao exemplo anterior, este exemplo usa `entityUrl` para `topic` o . No entanto, nesse caso, ele se vincula a uma mensagem no chat. A mensagem pode conter um cartão com o botão de aprovação.
+Semelhante ao exemplo anterior, este exemplo usa `entityUrl` para `topic`o . No entanto, nesse caso, ele se vincula a uma mensagem no chat. A mensagem pode conter um cartão com o botão de aprovação.
 
 #### <a name="request"></a>Solicitação
 
@@ -240,8 +244,12 @@ Content-Type: application/json
 [!INCLUDE [sample-code](../includes/snippets/java/chat-sendactivitynotification-upn-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[Go](#tab/go)
+# <a name="go"></a>[Ir](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/chat-sendactivitynotification-upn-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/chat-sendactivitynotification-upn-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -260,7 +268,7 @@ HTTP/1.1 204 No Content
 
 ### <a name="example-4-notify-a-user-about-an-event-in-relation-to-a-chat"></a>Exemplo 4: Notificar um usuário sobre um evento em relação a um chat
 
-Como mostrado nos exemplos anteriores, você pode vincular a diferentes aspectos do chat. No entanto, se você deseja vincular a um aspecto que não faz parte do chat ou não é representado pelo Microsoft Graph, você pode definir a origem do para e passar um valor personalizado para `topic` `text` ele. Além disso, `webUrl` é necessário ao definir a fonte como `topic` `text` .
+Como mostrado nos exemplos anteriores, você pode vincular a diferentes aspectos do chat. No entanto, se você deseja vincular a um aspecto que não faz parte do chat ou não é representado pelo Microsoft Graph, `topic` `text` você pode definir a origem do para e passar um valor personalizado para ele. Além disso, `webUrl` é necessário ao definir `topic` a fonte como `text`.
 
 #### <a name="request"></a>Solicitação
 <!-- {

@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: besiler
 ms.prod: identity-and-access-reports
 doc_type: apiPageType
-ms.openlocfilehash: d9ba5d31d622dbf282e0ef3b51a7af9d5fd0f6ff
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: 97b164aa29701ab8917791f1710439311059f664
+ms.sourcegitcommit: 25acfa7d0153336c9a35d30a1dd422aeadc1342c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62093239"
+ms.lasthandoff: 02/03/2022
+ms.locfileid: "62346826"
 ---
 # <a name="reportroot-getcredentialuserregistrationcount"></a>reportRoot: getCredentialUserRegistrationCount
 
@@ -51,7 +51,7 @@ Não forneça um corpo de solicitação para esse método.
 
 ## <a name="response"></a>Resposta
 
-Se tiver êxito, este método retornará um código de resposta e um novo objeto da coleção `200 OK` [credentialUserRegistrationCount](../resources/credentialuserregistrationcount.md) no corpo da resposta.
+Se tiver êxito, este método retornará um `200 OK` código de resposta e um novo [objeto da coleção credentialUserRegistrationCount](../resources/credentialuserregistrationcount.md) no corpo da resposta.
 
 ## <a name="examples"></a>Exemplos
 
@@ -88,6 +88,10 @@ GET https://graph.microsoft.com/beta/reports/getCredentialUserRegistrationCount
 
 # <a name="go"></a>[Ir](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/reportroot-getcredentialuserregistrationcount-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/reportroot-getcredentialuserregistrationcount-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

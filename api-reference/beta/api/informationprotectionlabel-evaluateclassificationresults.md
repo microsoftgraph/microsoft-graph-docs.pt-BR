@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: tommoser
 ms.prod: security
 doc_type: apiPageType
-ms.openlocfilehash: 26c65411ba7ce83fdae9d6d5ac46038deea84ac3
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: a832aeedbe8f4d44cb6e33b11daf7c6b0ab2a72b
+ms.sourcegitcommit: 25acfa7d0153336c9a35d30a1dd422aeadc1342c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "61004784"
+ms.lasthandoff: 02/03/2022
+ms.locfileid: "62346868"
 ---
 # <a name="informationprotectionlabel-evaluateclassificationresults"></a>informationProtectionLabel: evaluateClassificationResults
 
@@ -18,9 +18,9 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Usando [resultados de](../resources/classificationresult.md)classificação, calcule o rótulo de proteção de informações que deve ser aplicado e retorne o conjunto de ações que devem ser tomadas para rotular corretamente as informações. [](../resources/informationprotectionlabel.md) Essa API é útil quando um rótulo deve ser definido automaticamente com base na classificação do conteúdo do arquivo, em vez de rotulado diretamente por um usuário ou serviço. 
+Usando [resultados de classificação](../resources/classificationresult.md), calcule [](../resources/informationprotectionlabel.md) o rótulo de proteção de informações que deve ser aplicado e retorne o conjunto de ações que devem ser tomadas para rotular corretamente as informações. Essa API é útil quando um rótulo deve ser definido automaticamente com base na classificação do conteúdo do arquivo, em vez de rotulado diretamente por um usuário ou serviço. 
 
-Para avaliar com base nos resultados da classificação, forneça [contentInfo](../resources/contentinfo.md), que inclui pares de [chave/valor](../resources/keyvaluepair.md)de metadados de conteúdo existentes e resultados [de classificação.](../resources/classificationresult.md) A API retorna [uma informationProtectionAction](../resources/informationprotectionaction.md) que contém um dos seguintes: 
+Para avaliar com base nos resultados da classificação, forneça [contentInfo](../resources/contentinfo.md), que inclui pares de chave/valor de metadados de conteúdo [existentes](../resources/keyvaluepair.md) e resultados [de classificação](../resources/classificationresult.md). A API retorna [uma informationProtectionAction](../resources/informationprotectionaction.md) que contém um dos seguintes: 
 
 * [addContentFooterAction](../resources/addcontentfooteraction.md)
 * [addContentHeaderAction](../resources/addcontentheaderaction.md)
@@ -75,7 +75,7 @@ Forneça um objeto JSON com os seguintes parâmetros no corpo da solicitação.
 
 ## <a name="response"></a>Resposta
 
-Se tiver êxito, este método retornará um código de resposta e um novo objeto da coleção `200 OK` [informationProtectionAction](../resources/informationprotectionaction.md) no corpo da resposta.
+Se tiver êxito, este método retornará um `200 OK` código de resposta e um novo [objeto da coleção informationProtectionAction](../resources/informationprotectionaction.md) no corpo da resposta.
 
 ## <a name="examples"></a>Exemplos
 
@@ -130,8 +130,12 @@ User-agent: ContosoLOBApp/1.0
 [!INCLUDE [sample-code](../includes/snippets/java/informationprotectionlabel-evaluateclassificationresults-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[Go](#tab/go)
+# <a name="go"></a>[Ir](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/informationprotectionlabel-evaluateclassificationresults-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/informationprotectionlabel-evaluateclassificationresults-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

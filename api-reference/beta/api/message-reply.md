@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: abheek-das
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: a408b1309392520ba5be6b2d0040ed3e2d5b0a6d
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: 15e300bfc82a25316325c80c49f3b2299b29e617
+ms.sourcegitcommit: 25acfa7d0153336c9a35d30a1dd422aeadc1342c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "61004756"
+ms.lasthandoff: 02/03/2022
+ms.locfileid: "62349144"
 ---
 # <a name="message-reply"></a>message: reply
 
@@ -22,7 +22,7 @@ Responder ao remetente de uma mensagem [usando](../resources/message.md) o forma
 
 Ao usar o formato JSON:
 - Especifique um comentário ou **a propriedade body** do `message` parâmetro. Especificar ambos retornará um erro HTTP 400 - Solicitação incorreta.
-- Se a mensagem original especificar um destinatário na propriedade **replyTo,** por Formato de Mensagem da Internet ([RFC 2822](https://www.rfc-editor.org/info/rfc2822)), envie a resposta aos destinatários em **replyTo** e não ao destinatário na propriedade **from.**
+- Se a mensagem original especificar um destinatário na propriedade **replyTo** , por Formato de Mensagem da Internet ([RFC 2822](https://www.rfc-editor.org/info/rfc2822)), envie a resposta aos destinatários em **replyTo** e não ao destinatário na propriedade **from** .
 
 Ao utilizar o formato MIME:
 - Fornecer os [cabeçalhos de mensagem da Internet](https://tools.ietf.org/html/rfc2076) e o [conteúdo MIME](https://tools.ietf.org/html/rfc2045) aplicáveis, todos codificados no formato **base64** no corpo da solicitação.
@@ -30,7 +30,7 @@ Ao utilizar o formato MIME:
 
 Este método salva a mensagem na pasta **Itens Enviados**.
 
-Como alternativa, [crie um rascunho para responder a uma mensagem](../api/message-createreply.md)e [envie-a](../api/message-send.md) mais tarde.
+Como alternativa, [crie um rascunho para responder a uma mensagem](../api/message-createreply.md) e [envie-a](../api/message-send.md) mais tarde.
 
 ## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, consulte [Permissões](/graph/permissions-reference).
@@ -56,7 +56,7 @@ POST /users/{id | userPrincipalName}/mailFolders/{id}/messages/{id}/reply
 | Nome       | Tipo | Descrição|
 |:---------------|:--------|:----------|
 | Autorização  | string  | Portador {token}. Obrigatório |
-| Content-Type | string  | Natureza dos dados no corpo de uma entidade. Obrigatório <br/> Usar `application/json` para um objeto JSON e para conteúdo `text/plain` MIME |
+| Content-Type | string  | Natureza dos dados no corpo de uma entidade. Obrigatório <br/> Usar `application/json` para um objeto JSON e para `text/plain` conteúdo MIME |
 
 ## <a name="request-body"></a>Corpo da solicitação
 Ao usar o formato JSON, inclua um objeto JSON com os seguintes parâmetros.
@@ -130,8 +130,12 @@ Content-Type: application/json
 [!INCLUDE [sample-code](../includes/snippets/java/message-reply-beta-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[Go](#tab/go)
+# <a name="go"></a>[Ir](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/message-reply-beta-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/message-reply-beta-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

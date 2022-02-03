@@ -5,12 +5,12 @@ author: devindrajit
 ms.localizationpriority: medium
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: c02db8a23a6d9ec5a7c534095968b3d66377ac74
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: 9f3fe575d2614ea2e9763fd7679e66cf03c928bd
+ms.sourcegitcommit: 25acfa7d0153336c9a35d30a1dd422aeadc1342c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62124190"
+ms.lasthandoff: 02/03/2022
+ms.locfileid: "62341712"
 ---
 # <a name="basetask-move"></a>baseTask: move
 Namespace: microsoft.graph
@@ -57,13 +57,13 @@ A tabela a seguir mostra os parâmetros que podem ser usados com esta ação.
 
 |Parâmetro|Tipo|Descrição|
 |:---|:---|:---|
-|destinationTaskListId|Cadeia de caracteres|O [baseTaskList para](../resources/basetasklist.md) o qual [o objeto baseTask](../resources/basetask.md) deve ser movido.|
+|destinationTaskListId|String|O [baseTaskList para](../resources/basetasklist.md) o qual [o objeto baseTask](../resources/basetask.md) deve ser movido.|
 
 
 
 ## <a name="response"></a>Resposta
 
-Se tiver êxito, essa ação retornará `200 OK` um código de resposta e um [baseTask](../resources/basetask.md) no corpo da resposta.
+Se tiver êxito, essa ação retornará um `200 OK` código de resposta e [um baseTask](../resources/basetask.md) no corpo da resposta.
 
 ## <a name="examples"></a>Exemplos
 
@@ -102,6 +102,10 @@ Content-length: 41
 
 # <a name="go"></a>[Ir](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/basetask-move-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/basetask-move-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

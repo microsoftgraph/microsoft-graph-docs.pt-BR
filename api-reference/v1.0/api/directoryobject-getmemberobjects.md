@@ -5,18 +5,18 @@ ms.localizationpriority: medium
 author: keylimesoda
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: 3cf34fcf3c3fb613a2fd1337f6e272bf71d920bc
-ms.sourcegitcommit: e497ed9bb56400bdd2bb53d52ddf057d9966220b
+ms.openlocfilehash: 5ad24b3ed6b98b2338c2605ed47021b7bd27ea6f
+ms.sourcegitcommit: 25acfa7d0153336c9a35d30a1dd422aeadc1342c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/30/2021
-ms.locfileid: "61226572"
+ms.lasthandoff: 02/03/2022
+ms.locfileid: "62339493"
 ---
 # <a name="get-member-objects"></a>Obter objetos de membros
 
 Namespace: microsoft.graph
 
-Retorne todos os grupos, unidades administrativas e funções de diretório das quais um usuário [,](../resources/user.md) [grupo,](../resources/group.md) [entidade](../resources/serviceprincipal.md)de [serviço,](../resources/orgcontact.md)contato [organizacional,](../resources/device.md)dispositivo ou [objeto de diretório](../resources/directoryobject.md) é membro. Esta função é transitiva.
+Retorne todos os grupos, unidades administrativas e funções de diretório das quais um [usuário, grupo](../resources/user.md)[,](../resources/group.md) [entidade](../resources/serviceprincipal.md) de [serviço, contato](../resources/orgcontact.md) [organizacional, dispositivo](../resources/device.md) ou objeto [de diretório](../resources/directoryobject.md) é membro. Esta função é transitiva.
 
 **Observação:** Somente usuários e grupos habilitados para função podem ser membros de funções de diretório.
 
@@ -27,7 +27,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegada (conta corporativa ou de estudante) | Directory.Read.All    |
+|Delegado (conta corporativa ou de estudante) | Directory.Read.All    |
 |Delegado (conta pessoal da Microsoft) | Sem suporte.    |
 |Aplicativo | Directory.Read.All |
 
@@ -35,7 +35,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegada (conta corporativa ou de estudante) | User.Read, User.Read.All, Directory.Read.All, User.ReadWrite.All, Directory.ReadWrite.All, Directory.AccessAsUser.All    |
+|Delegado (conta corporativa ou de estudante) | User.Read, User.Read.All, Directory.Read.All, User.ReadWrite.All, Directory.ReadWrite.All, Directory.AccessAsUser.All    |
 |Delegado (conta pessoal da Microsoft) | Sem suporte.    |
 |Application | User.Read.All, Directory.Read.All, User.ReadWrite.All, Directory.ReadWrite.All |
 
@@ -51,7 +51,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegada (conta corporativa ou de estudante) | Application.Read.All, Directory.Read.All, Application.ReadWrite.All, Directory.ReadWrite.All, Directory.AccessAsUser.All    |
+|Delegado (conta corporativa ou de estudante) | Application.Read.All, Directory.Read.All, Application.ReadWrite.All, Directory.ReadWrite.All, Directory.AccessAsUser.All    |
 |Delegado (conta pessoal da Microsoft) | Sem suporte.    |
 |Aplicativo | Application.Read.All, Directory.Read.All, Application.ReadWrite.All, Directory.ReadWrite.All |
 
@@ -67,7 +67,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 | Tipo de permissão                        | Permissões (da com menos para a com mais privilégios) |
 |:---------------------------------------|:--------------------------------------------|
-| Delegada (conta corporativa ou de estudante)     | Device.Read.All, Directory.Read.All, Directory.ReadWrite.All, Directory.AccessAsUser.All |
+| Delegado (conta corporativa ou de estudante)     | Device.Read.All, Directory.Read.All, Directory.ReadWrite.All, Directory.AccessAsUser.All |
 | Delegado (conta pessoal da Microsoft) | Sem suporte. |
 | Aplicativo                            | Device.Read.All, Device.ReadWrite.All, Directory.Read.All, Directory.ReadWrite.All |
 
@@ -122,7 +122,7 @@ Forneça um objeto JSON com os seguintes parâmetros no corpo da solicitação.
 
 | Parâmetro    | Tipo   |Descrição|
 |:---------------|:--------|:----------|
-|securityEnabledOnly|Booliano| `true` para especificar que apenas grupos de segurança dos quais a entidade é membro devem ser retornados; para especificar que todos os grupos, unidades administrativas e funções de diretório das quais a entidade é membro devem `false` ser retornadas. |
+|securityEnabledOnly|Booliano| `true` para especificar que apenas grupos de segurança dos quais a entidade é membro devem ser retornados; `false` para especificar que todos os grupos, unidades administrativas e funções de diretório das quais a entidade é membro devem ser retornadas. |
 
 ## <a name="response"></a>Resposta
 
@@ -161,8 +161,12 @@ Content-type: application/json
 [!INCLUDE [sample-code](../includes/snippets/java/directoryobject-getmemberobjects-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[Go](#tab/go)
+# <a name="go"></a>[Ir](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/directoryobject-getmemberobjects-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/directoryobject-getmemberobjects-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

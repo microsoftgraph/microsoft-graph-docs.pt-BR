@@ -5,12 +5,12 @@ author: harini84
 ms.localizationpriority: medium
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: a9eb231855e3941893456556b431b846c0872646
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: 154ad325b02c0d1f6f52185661e8dc0aee6b43e0
+ms.sourcegitcommit: 25acfa7d0153336c9a35d30a1dd422aeadc1342c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "61024832"
+ms.lasthandoff: 02/03/2022
+ms.locfileid: "62341713"
 ---
 # <a name="event-decline"></a>event: decline
 
@@ -20,7 +20,7 @@ Namespace: microsoft.graph
 
 Recusar convite para o evento [especificado](../resources/event.md) em um calendário do [usuário](../resources/calendar.md).
 
-Se o evento permitir propostas para novos horários, ao declinar o evento, um convidado poderá optar por sugerir uma hora alternativa incluindo o parâmetro **proposedNewTime.** Para obter mais informações sobre como propor uma hora e como receber e aceitar uma nova proposta de hora, consulte [Propor novos horários de reunião.](/graph/outlook-calendar-meeting-proposals)
+Se o evento permitir propostas para novos horários, ao declinar o evento, um convidado poderá optar por sugerir uma hora alternativa incluindo o parâmetro **proposedNewTime** . Para obter mais informações sobre como propor um horário e como receber e aceitar uma nova proposta de hora, consulte [Propor novos horários de reunião](/graph/outlook-calendar-meeting-proposals).
 
 
 ## <a name="permissions"></a>Permissões
@@ -67,7 +67,7 @@ Forneça um objeto JSON com os seguintes parâmetros no corpo da solicitação.
 |:---------------|:--------|:----------|
 |comment|String|Texto incluído na resposta. Opcional.|
 |sendResponse|Booliano|`true` se uma resposta deve ser enviada ao organizador; caso contrário, `false`. Opcional. O padrão é `true`.|
-|proposedNewTime|[timeSlot](../resources/timeslot.md)|Uma data/hora alternativa proposta por um convidado para que uma solicitação de reunião seja inicial e final. Válido somente para eventos que permitem novas propostas de tempo. A configuração desse parâmetro requer **a definição de sendResponse** como `true` . Opcional.|
+|proposedNewTime|[timeSlot](../resources/timeslot.md)|Uma data/hora alternativa proposta por um convidado para que uma solicitação de reunião seja inicial e final. Válido somente para eventos que permitem novas propostas de tempo. A configuração desse parâmetro requer **a definição de sendResponse** como `true`. Opcional.|
 
 ## <a name="response"></a>Resposta
 
@@ -75,8 +75,8 @@ Se bem-sucedido, este método retorna um código de resposta `202 Accepted`. Nã
 
 Essa ação retornará HTTP 400 se ocorrer um ou ambos os seguintes:
 
-- O **parâmetro proposedNewTime** está incluído, **mas a propriedade allowNewTimeProposals** do **evento** é `false` . 
-- O **parâmetro proposedNewTime** está incluído, mas o **parâmetro sendResponse** é definido como `false` .
+- O **parâmetro proposedNewTime** está incluído, **mas a propriedade allowNewTimeProposals** do **evento** é `false`. 
+- O **parâmetro proposedNewTime** está incluído, mas o **parâmetro sendResponse** é definido como `false`.
 
 ## <a name="example"></a>Exemplo
 
@@ -128,8 +128,12 @@ Content-type: application/json
 [!INCLUDE [sample-code](../includes/snippets/java/event-decline-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[Go](#tab/go)
+# <a name="go"></a>[Ir](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/event-decline-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/event-decline-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

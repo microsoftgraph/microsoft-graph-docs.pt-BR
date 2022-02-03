@@ -5,12 +5,12 @@ author: RamjotSingh
 ms.prod: microsoft-teams
 doc_type: apiPageType
 ms.localizationpriority: medium
-ms.openlocfilehash: f9e82324ab33fafbead3e3590869c9e8a7bf43a1
-ms.sourcegitcommit: e497ed9bb56400bdd2bb53d52ddf057d9966220b
+ms.openlocfilehash: 62dc95efbf2df79497125e37c47cd84d36321475
+ms.sourcegitcommit: 25acfa7d0153336c9a35d30a1dd422aeadc1342c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/30/2021
-ms.locfileid: "61224241"
+ms.lasthandoff: 02/03/2022
+ms.locfileid: "62339184"
 ---
 # <a name="chat-hideforuser"></a>chat: hideForUser
 Namespace: microsoft.graph
@@ -26,7 +26,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 |Tipo de permissão|Permissões (da com menos para a com mais privilégios)|
 |:---|:---|
-|Delegada (conta corporativa ou de estudante)|Chat.ReadWrite|
+|Delegado (conta corporativa ou de estudante)|Chat.ReadWrite|
 |Delegado (conta pessoal da Microsoft) | Sem suporte. |
 |Aplicativo | Sem suporte. |
 
@@ -53,7 +53,7 @@ A tabela a seguir mostra os parâmetros que podem ser usados com esta ação.
 
 |Parâmetro|Tipo|Descrição|
 |:---|:---|:---|
-|usuário|[teamworkUserIdentity](../resources/teamworkuseridentity.md)|Usuário para o que ocultar o chat. **No modo delegado, os usuários só podem ocultar um chat para si mesmos.**|
+|usuário|[teamworkUserIdentity](../resources/teamworkuseridentity.md)|Usuário para o que ocultar o chat. **No modo delegado, os usuários só podem ocultar um chat para si mesmos**.|
 |tenantId|String|ID de locatário do usuário.|
 
 ## <a name="response"></a>Resposta
@@ -97,8 +97,12 @@ Content-Type: application/json
 [!INCLUDE [sample-code](../includes/snippets/java/chat-hideforuser-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[Go](#tab/go)
+# <a name="go"></a>[Ir](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/chat-hideforuser-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/chat-hideforuser-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

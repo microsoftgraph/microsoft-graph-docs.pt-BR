@@ -5,18 +5,18 @@ author: harini84
 ms.localizationpriority: medium
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 876e9ec708ce89fbe475d81ad23323e2b282edd4
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: c558178f7f451c9bb205e5742327dccd278f4d2f
+ms.sourcegitcommit: 25acfa7d0153336c9a35d30a1dd422aeadc1342c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "60984770"
+ms.lasthandoff: 02/03/2022
+ms.locfileid: "62343758"
 ---
 # <a name="event-snoozereminder"></a>event: snoozeReminder
 
 Namespace: microsoft.graph
 
-Adie um lembrete para [um evento](../resources/event.md) em um calendário do [usuário](../resources/calendar.md) até uma nova hora.
+Adie um lembrete para [um evento](../resources/event.md) em um [calendário do usuário](../resources/calendar.md) até uma nova hora.
 
 ## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
@@ -96,8 +96,12 @@ Content-type: application/json
 [!INCLUDE [sample-code](../includes/snippets/java/event-snoozereminder-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[Go](#tab/go)
+# <a name="go"></a>[Ir](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/event-snoozereminder-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/event-snoozereminder-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

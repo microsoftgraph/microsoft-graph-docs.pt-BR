@@ -1,11 +1,11 @@
 ---
 description: Arquivo gerado automaticamente. NÃO MODIFICAR
-ms.openlocfilehash: 1dfb0e400d760e5a12bc85a94e275f814f6a104ee955ac5657626b862a8fabc1
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: d49ae455e726e28f37ef30864ad8e8bf0e328c9f
+ms.sourcegitcommit: 25acfa7d0153336c9a35d30a1dd422aeadc1342c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "57158261"
+ms.lasthandoff: 02/03/2022
+ms.locfileid: "62346382"
 ---
 ```csharp
 
@@ -15,11 +15,11 @@ var homeRealmDiscoveryPolicy = new HomeRealmDiscoveryPolicy
 {
     AdditionalData = new Dictionary<string, object>()
     {
-        {"@odata.id", "https://graph.microsoft.com/beta/policies/homeRealmDiscoveryPolicies/cd3d9b57-0aee-4f25-8ee3-ac74ef5986a9"}
+        {"@odata.id", "https://graph.microsoft.com/beta/policies/homeRealmDiscoveryPolicies/6c6f154f-cb39-4ff9-bf5b-62d5ad585cde"}
     }
 };
 
-await graphClient.ServicePrincipals["{servicePrincipal-id}"].HomeRealmDiscoveryPolicies
+await graphClient.ServicePrincipals["{servicePrincipal-id}"].HomeRealmDiscoveryPolicies.References
     .Request()
     .AddAsync(homeRealmDiscoveryPolicy);
 

@@ -5,12 +5,12 @@ author: TarkanSevilmis
 ms.localizationpriority: medium
 ms.prod: planner
 doc_type: apiPageType
-ms.openlocfilehash: 5f12f6218dd6bb16704acc13e434fc7743836b6f
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: 62d51a9677eadd997336f00fc834f9e825f79299
+ms.sourcegitcommit: 25acfa7d0153336c9a35d30a1dd422aeadc1342c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "60989964"
+ms.lasthandoff: 02/03/2022
+ms.locfileid: "62347099"
 ---
 # <a name="planner-delta"></a>Planner: delta
 
@@ -18,7 +18,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Recupera as alterações nos objetos aos que o usuário [está inscrito.](../resources/planner-overview.md#track-changes-using-delta-query)
+Recupera as alterações nos objetos aos que o usuário [está inscrito](../resources/planner-overview.md#track-changes-using-delta-query) .
 
 Esse método permite que seu aplicativo acompanhe as alterações nos objetos que o usuário pode acessar no Planner ao longo do tempo.
 
@@ -45,7 +45,7 @@ GET /me/planner/all/delta
 GET /users/{id}/planner/all/delta
 ```
 
-No momento, não há suporte para parâmetros de consulta adicionais (como , ou ) na implementação de consultas `$select` `$expand` delta do `$filter` Planner.
+No momento, não há suporte para parâmetros de consulta adicionais ( `$select`como , `$expand`ou `$filter`) na implementação de consultas delta do Planner.
 
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
 
@@ -59,7 +59,7 @@ Não forneça um corpo de solicitação para esse método.
 
 ## <a name="response"></a>Resposta
 
-Se tiver êxito, este método retornará um código de resposta e uma coleção de alterações a serem aplicadas a objetos no corpo da resposta e um link de Sincronização `200 OK` Delta a ser seguido.
+Se tiver êxito, este método `200 OK` retornará um código de resposta e uma coleção de alterações a serem aplicadas a objetos no corpo da resposta e um link de Sincronização Delta a ser seguido.
 
 Se o `deltaLink` que o chamador usa estiver malformado, esse ponto de extremidade retornará HTTP 400.
 
@@ -99,8 +99,12 @@ GET https://graph.microsoft.com/beta/me/planner/all/delta
 [!INCLUDE [sample-code](../includes/snippets/java/get-delta-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[Go](#tab/go)
+# <a name="go"></a>[Ir](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/get-delta-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/get-delta-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

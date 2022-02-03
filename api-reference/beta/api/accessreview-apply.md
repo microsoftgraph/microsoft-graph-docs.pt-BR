@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: markwahl-msft
 ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: 3faf81557d66b5fe66f5cfcfda16f4ef578d1df6
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: 04b17b5ae906d3a5465505f6c8be530f89559acc
+ms.sourcegitcommit: 25acfa7d0153336c9a35d30a1dd422aeadc1342c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "60983097"
+ms.lasthandoff: 02/03/2022
+ms.locfileid: "62340696"
 ---
 # <a name="apply-accessreview"></a>Aplicar accessReview
 
@@ -18,7 +18,9 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-No recurso de revisões de acesso do Azure [AD,](../resources/accessreviews-root.md) aplique as decisões de um [accessReview concluído.](../resources/accessreview.md)  O objeto de destino pode ser uma revisão de acesso único ou uma instância de uma revisão de acesso recorrente.  
+[!INCLUDE [accessreviews-disclaimer](../../includes/accessreviews-disclaimer.md)]
+
+No recurso de revisões de acesso do Azure [AD,](../resources/accessreviews-root.md) aplique as decisões de um [accessReview concluído](../resources/accessreview.md).  O objeto de destino pode ser uma revisão de acesso único ou uma instância de uma revisão de acesso recorrente.  
 
 
 Depois que uma revisão de acesso for concluída, porque ela atingiu a data de término ou um administrador a interrompeu manualmente e a aplicação automática não foi configurada para a revisão, você pode chamar Apply para aplicar as alterações. Até que ocorra a aplicação, as decisões para remover direitos de acesso não aparecem no recurso de origem, os usuários, por exemplo, retêm suas associações de grupo. Ao chamar aplicar, o resultado da revisão é implementado atualizando o grupo ou aplicativo. Se o acesso de um usuário foi negado na revisão, quando um administrador chama essa API, o Azure AD remove sua atribuição de associação ou aplicativo. 
@@ -81,8 +83,12 @@ POST https://graph.microsoft.com/beta/accessReviews/2975E9B5-44CE-4E71-93D3-30F0
 [!INCLUDE [sample-code](../includes/snippets/java/apply-accessreview-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[Go](#tab/go)
+# <a name="go"></a>[Ir](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/apply-accessreview-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/apply-accessreview-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

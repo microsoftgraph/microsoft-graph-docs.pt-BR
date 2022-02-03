@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: preetikr
 ms.prod: security
 doc_type: apiPageType
-ms.openlocfilehash: e90fd3b95e302956a250f2acf08ff18daa0298ca
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: 9bddd0b86054550cd17b9add45af3b327fdfaec3
+ms.sourcegitcommit: 25acfa7d0153336c9a35d30a1dd422aeadc1342c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "60989432"
+ms.lasthandoff: 02/03/2022
+ms.locfileid: "62341895"
 ---
 # <a name="tiindicator-updatetiindicators"></a>tiIndicator: updateTiIndicators
 
@@ -46,7 +46,7 @@ POST /security/tiIndicators/updateTiIndicators
 
 ## <a name="request-body"></a>Corpo da solicitação
 
-Forneça um objeto JSON com os seguintes parâmetros no corpo da solicitação. Para obter detalhes sobre propriedades que podem ser atualizadas, consulte [update tiIndicator](tiindicator-update.md). Os campos necessários para cada tiIndicator são: `id` , `expirationDateTime` , `targetProduct` .
+Forneça um objeto JSON com os seguintes parâmetros no corpo da solicitação. Para obter detalhes sobre as propriedades que podem ser atualizadas, consulte [update tiIndicator](tiindicator-update.md). Os campos necessários para cada tiIndicator são: `id`, , `expirationDateTime`. `targetProduct`
 
 | Parâmetro    | Tipo        | Descrição |
 |:-------------|:------------|:------------|
@@ -54,7 +54,7 @@ Forneça um objeto JSON com os seguintes parâmetros no corpo da solicitação. 
 
 ## <a name="response"></a>Resposta
 
-Se tiver êxito, este método retornará um código de resposta e uma `200 OK` coleção de [objetos tiIndicator](../resources/tiindicator.md) no corpo da resposta.  Se houver um erro, este método retornará um `206 Partial Content` código de resposta.  Consulte [Erros para](../resources/security-error-codes.md#threat-indicator-bulk-action-errors) obter mais informações.
+Se tiver êxito, este método retornará um `200 OK` código de resposta e uma coleção de [objetos tiIndicator](../resources/tiindicator.md) no corpo da resposta.  Se houver um erro, este método retornará um código `206 Partial Content` de resposta.  Consulte [Erros para](../resources/security-error-codes.md#threat-indicator-bulk-action-errors) obter mais informações.
 
 ## <a name="examples"></a>Exemplos
 
@@ -104,8 +104,12 @@ Content-type: application/json
 [!INCLUDE [sample-code](../includes/snippets/java/tiindicator-updatetiindicators-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[Go](#tab/go)
+# <a name="go"></a>[Ir](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/tiindicator-updatetiindicators-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/tiindicator-updatetiindicators-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
