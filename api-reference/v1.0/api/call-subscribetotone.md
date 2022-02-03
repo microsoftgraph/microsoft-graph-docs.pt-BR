@@ -5,12 +5,12 @@ author: ananmishr
 ms.localizationpriority: medium
 ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: e47e90664ab81451179904306d92adb416f73f4d
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: 33a8d72f9beb72707d25790e9026d4525895d59a
+ms.sourcegitcommit: 25acfa7d0153336c9a35d30a1dd422aeadc1342c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "61006918"
+ms.lasthandoff: 02/03/2022
+ms.locfileid: "62344303"
 ---
 # <a name="call-subscribetotone"></a>call: subscribeToTone
 
@@ -91,8 +91,12 @@ Content-Length: 46
 [!INCLUDE [sample-code](../includes/snippets/java/call-subscribetotone-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[Go](#tab/go)
+# <a name="go"></a>[Ir](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/call-subscribetotone-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/call-subscribetotone-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -124,7 +128,7 @@ Location: https://graph.microsoft.com/v1.0/communications/calls/57dab8b1-894c-40
 
 ##### <a name="notification---tone-notification"></a>Notificação - notificação de tom
 
-A notificação contém informações do tom pressionado no [recurso toneinfo.](../resources/toneinfo.md)
+A notificação contém informações do tom pressionado no [recurso toneinfo](../resources/toneinfo.md) .
 
 ```http
 POST https://bot.contoso.com/api/calls

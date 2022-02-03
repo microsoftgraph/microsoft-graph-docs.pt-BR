@@ -5,12 +5,12 @@ description: Associe um tipo de conteúdo à lista de hubsites.
 ms.localizationpriority: medium
 doc_type: apiPageType
 ms.prod: sites-and-lists
-ms.openlocfilehash: 84c2700f90d8740ed6e353fbac3daee2f475de80
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: f61e2f599a9c21109d86b77f0c09f94e7d9fdada
+ms.sourcegitcommit: 25acfa7d0153336c9a35d30a1dd422aeadc1342c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "61028794"
+ms.lasthandoff: 02/03/2022
+ms.locfileid: "62344555"
 ---
 # <a name="contenttype-associatewithhubsites"></a>contentType: associateWithHubSites
 
@@ -59,7 +59,7 @@ A tabela a seguir mostra os parâmetros que podem ser usados com esta ação.
 |Parâmetro|Tipo|Descrição|
 |-|-|-|
 |hubSiteUrls| Collection(string) |Lista de URLs canônicas para os sites de hub onde o tipo de conteúdo precisa ser imposto. Obrigatório.|
-|propagateToExistingLists| Boolean |Se , os tipos de conteúdo serão impostos em listas existentes nos sites de hub; caso contrário, ele será aplicado somente a listas `true` recém-criadas. 
+|propagateToExistingLists| Boolean |Se `true`, os tipos de conteúdo serão impostos em listas existentes nos sites de hub; caso contrário, ele será aplicado somente a listas recém-criadas. 
 
 ## <a name="response"></a>Resposta
 
@@ -102,8 +102,12 @@ Content-Type: application/json
 [!INCLUDE [sample-code](../includes/snippets/java/contenttype-associatewithhubsites-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[Go](#tab/go)
+# <a name="go"></a>[Ir](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/contenttype-associatewithhubsites-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/contenttype-associatewithhubsites-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

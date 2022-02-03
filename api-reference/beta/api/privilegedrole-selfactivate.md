@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 doc_type: apiPageType
 ms.prod: governance
 author: carolinetempleton
-ms.openlocfilehash: 2d120ffb3d1628611404db9b50e7099cf00cc808
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: d1d0fe73770e6ef5994423ebeee0152975ccd047
+ms.sourcegitcommit: 25acfa7d0153336c9a35d30a1dd422aeadc1342c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "60980345"
+ms.lasthandoff: 02/03/2022
+ms.locfileid: "62340137"
 ---
 # <a name="privilegedrole-selfactivate"></a>privilegedRole: selfActivate
 
@@ -22,7 +22,7 @@ Namespace: microsoft.graph
 
 Ative a função atribuída ao solicitante.
 
->**Observação:** A partir de dezembro de 2018, essa API não terá mais suporte e não deverá ser usada. Em vez [disso, use Create PrivilegedRoleAssignmentRequest.](privilegedroleassignmentrequest-post.md)
+>**Observação:** A partir de dezembro de 2018, essa API não terá mais suporte e não deverá ser usada. Em vez [disso, use Create PrivilegedRoleAssignmentRequest](privilegedroleassignmentrequest-post.md) .
 
 
 ## <a name="permissions"></a>Permissões
@@ -55,13 +55,13 @@ Forneça um objeto JSON com os seguintes parâmetros no corpo da solicitação.
 | Parâmetro    | Tipo   |Descrição|
 |:---------------|:--------|:----------|
 |motivo|string|Opcional. Descrição sobre o motivo da ativação dessa função.|
-|duração|string|Opcional. Os valores válidos podem ser (duração mínima de ativação), (duração de ativação padrão para a função) ou um valor duplo para especificar quantas horas ```min``` ```default``` é a ativação. A duração especificada não pode ser maior do que a duração de ativação da função na configuração da função. |
+|duração|string|Opcional. Os valores válidos podem ser ```min``` (duração mínima de ativação), ```default``` (duração de ativação padrão para a função) ou um valor duplo para especificar quantas horas é a ativação. A duração especificada não pode ser maior do que a duração de ativação da função na configuração da função. |
 |ticketNumber|string|Opcional. O número do tíquete usado para controlar essa ativação de função.|
 |ticketSystem|string|Opcional. O sistema de tíquetes.|
 
 ## <a name="response"></a>Resposta
 
-Se tiver êxito, este método retornará um código de resposta e um `200 OK` [objeto privilegedRoleAssignment](../resources/privilegedroleassignment.md) no corpo da resposta.
+Se tiver êxito, este método retornará um `200 OK` código de resposta e um [objeto privilegedRoleAssignment](../resources/privilegedroleassignment.md) no corpo da resposta.
 
 Observe que o locatário precisa ser registrado no PIM. Caso contrário, o código de status HTTP 403 Forbidden será retornado.
 ## <a name="example"></a>Exemplo
@@ -101,8 +101,12 @@ Content-type: application/json
 [!INCLUDE [sample-code](../includes/snippets/java/privilegedrole-selfactivate-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[Go](#tab/go)
+# <a name="go"></a>[Ir](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/privilegedrole-selfactivate-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/privilegedrole-selfactivate-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

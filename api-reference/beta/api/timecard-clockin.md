@@ -5,12 +5,12 @@ author: akumar39
 ms.localizationpriority: medium
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 85c8b917b83bf5285373f0b0684e4295cce4fc7e
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: 27b5918e8f5b8bd19353ab2dfb31698870d5c1f4
+ms.sourcegitcommit: 25acfa7d0153336c9a35d30a1dd422aeadc1342c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "60989284"
+ms.lasthandoff: 02/03/2022
+ms.locfileid: "62348204"
 ---
 # <a name="timecard-clockin"></a>timeCard: clockIn
 
@@ -18,7 +18,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Clock in to start a [timeCard](../resources/timeCard.md).
+Entre para iniciar um [cartão de ponto](../resources/timeCard.md).
 
 ## <a name="permissions"></a>Permissões
 
@@ -30,7 +30,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |Delegado (conta pessoal da Microsoft) | Sem suporte.    |
 |Aplicativo | Schedule.ReadWrite.All* |
 
->\***Importante:** Quando você usa permissões de aplicativo, deve incluir `MS-APP-ACTS-AS` o header na solicitação.
+>\***Importante:** Quando você usa permissões de aplicativo, deve incluir o `MS-APP-ACTS-AS` header na solicitação.
 
 ## <a name="http-request"></a>Solicitação HTTP
 
@@ -55,12 +55,12 @@ Forneça um objeto JSON com os seguintes parâmetros no corpo da solicitação.
 | Parâmetro    | Tipo        | Descrição |
 |:-------------|:------------|:------------|
 |atApprovedLocation| `Edm.boolean ` | Indique se essa ação acontece em um local aprovado.|
-|onBehalfOfUserId| Cadeia de caracteres | Parâmetro opcional usado pelo gerente para entrar no relógio em nome de um usuário.|
+|onBehalfOfUserId| String | Parâmetro opcional usado pelo gerente para entrar no relógio em nome de um usuário.|
 |notes| [itemBody](../resources/itembody.md)  |Observações para o relógio em. |
 
 ## <a name="response"></a>Resposta
 
-Se tiver êxito, este método retornará um código `201 Created` de resposta e um objeto [timeCard](../resources/timeCard.md) no corpo da resposta.
+Se tiver êxito, este método retornará um `201 Created` código de resposta e um [objeto timeCard](../resources/timeCard.md) no corpo da resposta.
 
 ## <a name="example"></a>Exemplo
 
@@ -93,8 +93,12 @@ Content-type: application/json
 [!INCLUDE [sample-code](../includes/snippets/objc/timecard-clockin-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[Go](#tab/go)
+# <a name="go"></a>[Ir](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/timecard-clockin-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/timecard-clockin-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

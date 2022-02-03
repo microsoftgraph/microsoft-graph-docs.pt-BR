@@ -3,12 +3,12 @@ title: Problemas conhecidos com o Microsoft Graph
 description: Este artigo descreve os problemas conhecidos com o Microsoft Graph.
 author: MSGraphDocsVTeam
 ms.localizationpriority: high
-ms.openlocfilehash: 19f4441e04928b53bb5b96f34680d54ba18fcffc
-ms.sourcegitcommit: 15956da1b4a7d523363ffa8afb5e2059fbf680ce
+ms.openlocfilehash: 4c183efa64f8df151df8ff070dd0df1555b101b5
+ms.sourcegitcommit: 25acfa7d0153336c9a35d30a1dd422aeadc1342c
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/01/2022
-ms.locfileid: "62290557"
+ms.lasthandoff: 02/03/2022
+ms.locfileid: "62341774"
 ---
 # <a name="known-issues-with-microsoft-graph"></a>Problemas conhecidos com o Microsoft Graph
 
@@ -409,10 +409,6 @@ As chamadas de API a seguir não suportam a instalação de aplicativos que exig
 - [Atualizar aplicativo instalado no chat](/graph/api/chat-teamsappinstallation-upgrade.md)
 
 ## <a name="users"></a>Usuários
-
-### <a name="get-user-by-userprincipalname-that-starts-with-a-dollar--symbol"></a>Obter usuário pelo userPrincipalName que começa com um símbolo de dólar ($)
-
-O Microsoft Graph permite que o **userPrincipalName** comece com um caractere de cifrão (`$`). No entanto, ao consultar usuários por userPrincipalName, a url de solicitação `/users/$x@y.com` falha. Isso porque essa URL de solicitação viola a convenção de URL OData que espera que apenas as opções de consulta do sistema sejam prefixadas com um caractere `$`. Como alternativa, remova a barra (/) após `/users` e coloque o **userPrincipalName** entre parênteses e aspas simples como a seguir: `/users('$x@y.com')`
 
 ### <a name="encode-number--symbols-in-userprincipalname"></a>Codificar símbolos de número (#) em userPrincipalName
 

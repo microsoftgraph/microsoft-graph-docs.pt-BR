@@ -1,11 +1,11 @@
 ---
 description: Arquivo gerado automaticamente. NÃO MODIFICAR
-ms.openlocfilehash: 8053ce06530f3e7b4ff73cac0d3ac49e53cbe505
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: 1b59172657d75a9092bd6cc2d51ed96b85cc6f0f
+ms.sourcegitcommit: 25acfa7d0153336c9a35d30a1dd422aeadc1342c
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62136019"
+ms.lasthandoff: 02/03/2022
+ms.locfileid: "62349515"
 ---
 ```powershell
 
@@ -20,6 +20,7 @@ $params = @{
     InferenceClassification = "other"
 }
 
+# A UPN can also be used as -UserId.
 Update-MgUserMessage -UserId $userId -MessageId $messageId -BodyParameter $params
 
 ```

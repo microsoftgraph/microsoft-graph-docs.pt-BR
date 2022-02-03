@@ -5,12 +5,12 @@ author: aarononeal
 ms.localizationpriority: medium
 ms.prod: w10
 doc_type: apiPageType
-ms.openlocfilehash: 73548492a90dae28a9749ba4b19edd0ee2a333f8
-ms.sourcegitcommit: 71186ad44d8d0df15e10b0f89df68d2ef0cf9d14
+ms.openlocfilehash: 97a8744d77777c4cf574a59d443f5bc4c8c3a167
+ms.sourcegitcommit: 25acfa7d0153336c9a35d30a1dd422aeadc1342c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/12/2022
-ms.locfileid: "61860940"
+ms.lasthandoff: 02/03/2022
+ms.locfileid: "62342486"
 ---
 # <a name="updatableasset-enrollassetsbyid"></a>updatableAsset: enrollAssetsById
 Namespace: microsoft.graph.windowsUpdates
@@ -54,8 +54,8 @@ A tabela a seguir mostra os parâmetros que podem ser usados com esta ação.
 |Parâmetro|Tipo|Descrição|
 |:---|:---|:---|
 |updateCategory|microsoft.graph.windowsUpdates.updateCategory|A categoria de atualizações para o serviço gerenciar. Oferece suporte a um subconjunto dos valores **para updateCategory**. Os valores possíveis são: `feature` e `unknownFutureValue`.|
-|memberEntityType|String|O tipo completo dos **recursos updatableAsset.** Os valores possíveis são: `#microsoft.graph.windowsUpdates.azureADDevice` .|
-|ids|Coleção de cadeias de caracteres|Lista de identificadores correspondentes aos **recursos updatableAsset** para se inscrever no gerenciamento de atualizações pelo serviço para **a atualização determinadaCategory**.|
+|memberEntityType|Cadeia de caracteres|O tipo completo dos **recursos updatableAsset** . Os valores possíveis são: `#microsoft.graph.windowsUpdates.azureADDevice`.|
+|ids|Coleção de cadeias de caracteres|Lista de identificadores correspondentes aos **recursos updatableAsset** para se inscrever no gerenciamento de atualizações pelo serviço para a **determinada updateCategory**.|
 
 ## <a name="response"></a>Resposta
 
@@ -103,6 +103,10 @@ Content-Type: application/json
 
 # <a name="go"></a>[Ir](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/updatableasset-enrollassetsbyid-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/updatableasset-enrollassetsbyid-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

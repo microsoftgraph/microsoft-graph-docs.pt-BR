@@ -1,16 +1,17 @@
 ---
 description: Arquivo gerado automaticamente. NÃO MODIFICAR
-ms.openlocfilehash: d1ba644236257b4604ad729cf311b28a1fc1b797
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: 111c1b5a3e25ee7ed8459f9743a95ca1b1aaf2e2
+ms.sourcegitcommit: 25acfa7d0153336c9a35d30a1dd422aeadc1342c
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62134593"
+ms.lasthandoff: 02/03/2022
+ms.locfileid: "62352321"
 ---
 ```powershell
 
 Import-Module Microsoft.Graph.Mail
 
+# A UPN can also be used as -UserId.
 Get-MgUserMessage -UserId $userId -MessageId $messageId -ExpandProperty "extensions(`$filter=id eq 'Microsoft.OutlookServices.OpenTypeExtension.Com.Contoso.Referral')" 
 
 ```

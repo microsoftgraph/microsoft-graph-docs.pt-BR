@@ -5,12 +5,12 @@ author: Gopal-MSFT
 ms.localizationpriority: medium
 ms.prod: reports
 doc_type: apiPageType
-ms.openlocfilehash: fb1af678cb07b9ced378f00b02576919fe637b68
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: 623b1632540f2ec7be56d649cd62cb0e4bf447dc
+ms.sourcegitcommit: 25acfa7d0153336c9a35d30a1dd422aeadc1342c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62135074"
+ms.lasthandoff: 02/03/2022
+ms.locfileid: "62341971"
 ---
 # <a name="reportroot-getattacksimulationsimulationusercoverage"></a>reportRoot: getAttackSimulationSimulationUserCoverage
 Namespace: microsoft.graph
@@ -19,7 +19,7 @@ Namespace: microsoft.graph
 
 Obter [cobertura de simulação](../resources/attacksimulationsimulationusercoverage.md) para usuários de um locatário em campanhas de simulação e treinamento de ataques.
 
-Esta função é `@odata.nextLink` compatível com paginação.
+Esta função é compatível `@odata.nextLink` com paginação.
 
 ## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
@@ -50,7 +50,7 @@ Não forneça um corpo de solicitação para esse método.
 
 ## <a name="response"></a>Resposta
 
-Se tiver êxito, essa função retornará um código de resposta e uma `200 OK` [coleção attackSimulationSimulationUserCoverage](../resources/attacksimulationsimulationusercoverage.md) no corpo da resposta.
+Se tiver êxito, essa função retornará `200 OK` um código de resposta e uma [coleção attackSimulationSimulationUserCoverage](../resources/attacksimulationsimulationusercoverage.md) no corpo da resposta.
 
 ## <a name="examples"></a>Exemplos
 
@@ -83,6 +83,10 @@ GET https://graph.microsoft.com/beta/reports/getAttackSimulationSimulationUserCo
 
 # <a name="go"></a>[Ir](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/reportroot-getattacksimulationsimulationusercoverage-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/reportroot-getattacksimulationsimulationusercoverage-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

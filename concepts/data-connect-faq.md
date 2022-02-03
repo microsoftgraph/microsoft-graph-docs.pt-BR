@@ -4,12 +4,12 @@ description: Obtenha dicas que o ajudarão a aproveitar as vantagens da Conexão
 author: fercobo-msft
 ms.localizationpriority: high
 ms.prod: data-connect
-ms.openlocfilehash: 08a88e86850e2ca82f5f8eac46f74b7edec72d3f
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: ef06383c4e7447adcad1682d2e2caae9682ab28c
+ms.sourcegitcommit: 25acfa7d0153336c9a35d30a1dd422aeadc1342c
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59139195"
+ms.lasthandoff: 02/03/2022
+ms.locfileid: "62339352"
 ---
 # <a name="microsoft-graph-data-connect-frequently-asked-questions"></a>Perguntas frequentes sobre a Conexão de Dados do Microsoft Graph
 
@@ -68,10 +68,6 @@ Você pode eliminar as duplicatas dos objetos JSON exportados baseados em `inter
 ## <a name="can-i-use-puser-field-to-determine-the-relevant-user"></a>Posso usar o campo puser para determinar a relevância do usuário?
 
 Os dados extraídos incluem algumas propriedades meta que não existem se forem usadas as APIs correspondentes do Microsoft Graph. Especificamente, o campo `puser` pode ser útil para determinar de quais usuários os dados foram extraídos. No cenário em que você tem duas cópias do mesmo email em caixas de correio diferentes, você pode usar o campo `puser` para determinar as caixas de correio de origem das cópias. O campo `puser` também é útil para conjuntos de dados, como o conjunto de dados `Manager`. JSON exportado inclui informações sobre um gerenciador, mas isso é útil apenas se você souber o que gerenciam. O campo `puser` indicará qual gerenciador corresponde ao objeto JSON.
-
-## <a name="is-a-mix-of-users-with-and-without-workplace-analytics-licenses-supported"></a>Existe suporte para uma combinação de usuários com e sem licenças do Workplace Analytics?
-
-Hoje, exigimos que todos os usuários na lista de usuários tenham a licença do Workplace Analytics ou que todos os usuários na lista de usuários não tenham licença do Workplace Analytics. Infelizmente, não temos suporte para listas mistas de usuários, ou seja, alguns usuários têm licença de análise do local de trabalho e outros não. Isto porque se os usuários na lista de usuários têm licença do Workplace Analytics, então não são necessários custos adicionais para a Conexão de Dados, enquanto que se os clientes não têm licença do Workplace Analytics, então os clientes são cobrados usando o faturamento de consumo detalhado aqui. Se isso está quebrando seu caso de uso hoje, informe-nos e podemos ver se há oportunidades para ajudar em seu cenário aqui.
 
 ## <a name="is-hybrid-mode-tenant-setup-supported"></a>A configuração do locatário no modo híbrido é compatível?
 

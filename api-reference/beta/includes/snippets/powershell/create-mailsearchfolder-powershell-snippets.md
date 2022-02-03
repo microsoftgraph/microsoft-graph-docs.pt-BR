@@ -1,11 +1,11 @@
 ---
 description: Arquivo gerado automaticamente. NÃO MODIFICAR
-ms.openlocfilehash: 7b1a764447766cfd86ca79971316d5a8eabd6bf1
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: c1b92e175fc71299bc11207f30392850181f4721
+ms.sourcegitcommit: 25acfa7d0153336c9a35d30a1dd422aeadc1342c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62116014"
+ms.lasthandoff: 02/03/2022
+ms.locfileid: "62352600"
 ---
 ```powershell
 
@@ -21,6 +21,7 @@ $params = @{
     FilterQuery = "contains(subject, 'weekly digest')"
 }
 
+# A UPN can also be used as -UserId.
 New-MgUserMailFolderChildFolder -UserId $userId -MailFolderId $mailFolderId -BodyParameter $params
 
 ```

@@ -5,12 +5,12 @@ author: dipakboyed
 ms.localizationpriority: medium
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: 718c08cf8971a16893395033c24a79ef15592e82
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: 877cd2b1d37af250944c2b708f04f3eab6deac54
+ms.sourcegitcommit: 25acfa7d0153336c9a35d30a1dd422aeadc1342c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "61015459"
+ms.lasthandoff: 02/03/2022
+ms.locfileid: "62345228"
 ---
 # <a name="educationsubmission-submit"></a>educationSubmission: submit
 
@@ -18,7 +18,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Indica que um aluno terminou com o trabalho e está pronto para entregar a atribuição. Essa ação só pode ser tomada pelo aluno. Isso alterará o status do envio de "working" para "submitted". Durante o processo de envio, todos os recursos serão copiados para o **bucket submittedResources.** O professor estará olhando para a lista de recursos enviados para classificação.
+Indica que um aluno terminou com o trabalho e está pronto para entregar a atribuição. Essa ação só pode ser tomada pelo aluno. Isso alterará o status do envio de "working" para "submitted". Durante o processo de envio, todos os recursos serão copiados para o **bucket submittedResources** . O professor estará olhando para a lista de recursos enviados para classificação.
 
 ## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
@@ -44,7 +44,7 @@ POST /education/classes/{class-id}/assignments/{assignment-id}/submissions/{subm
 Não fornece um corpo de solicitação para este método.
 
 ## <a name="response"></a>Resposta
-Se tiver êxito, este método retornará um código de resposta e um `200 Ok` [objeto educationSubmission](../resources/educationsubmission.md) no corpo da resposta.
+Se tiver êxito, este método retornará um `200 Ok` código de resposta e um [objeto educationSubmission](../resources/educationsubmission.md) no corpo da resposta.
 
 ## <a name="example"></a>Exemplo
 O exemplo a seguir mostra como chamar essa API.
@@ -76,8 +76,12 @@ POST https://graph.microsoft.com/beta/education/classes/72a7baec-c3e9-4213-a850-
 [!INCLUDE [sample-code](../includes/snippets/java/educationsubmission-submit-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[Go](#tab/go)
+# <a name="go"></a>[Ir](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/educationsubmission-submit-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/educationsubmission-submit-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: dkershaw10
 doc_type: apiPageType
 ms.prod: extensions
-ms.openlocfilehash: b2a85cac85d2f61974fa15d9931d03a9d254ecb6
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: f834fc291a2294de095a6e223d3b144e4e3e995a
+ms.sourcegitcommit: 25acfa7d0153336c9a35d30a1dd422aeadc1342c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62130927"
+ms.lasthandoff: 02/03/2022
+ms.locfileid: "62339719"
 ---
 # <a name="create-open-extension"></a>Criar extensão aberta
 
@@ -18,7 +18,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Crie uma extensão aberta ([objeto openTypeExtension)](../resources/opentypeextension.md) e adicione propriedades personalizadas em uma instância nova ou existente de um recurso com suporte.
+Crie uma extensão aberta ([objeto openTypeExtension](../resources/opentypeextension.md) ) e adicione propriedades personalizadas em uma instância nova ou existente de um recurso com suporte.
 
 A tabela na seção [Permissões](#permissions) lista os recursos que oferecem suporte a extensões abertas.
 
@@ -102,7 +102,7 @@ Confira a seção [Solicitar corpo](#request-body) sobre como incluir _a extens�
 
 ## <a name="request-body"></a>Corpo da solicitação
 
-Forneça um corpo JSON de [um openTypeExtension](../resources/opentypeextension.md), com os seguintes pares de nome-valor necessários e quaisquer dados personalizados adicionais. Os dados na carga JSON podem ser tipos primitivos ou matrizes de tipos primitivos.
+Forneça um corpo JSON de [um openTypeExtension](../resources/opentypeextension.md), com os seguintes pares de valores de nome necessários e quaisquer dados personalizados adicionais. Os dados na carga JSON podem ser tipos primitivos ou matrizes de tipos primitivos.
 
 | Nome       | Valor |
 |:---------------|:----------|
@@ -489,6 +489,10 @@ Content-type: application/json
 
 # <a name="go"></a>[Ir](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/post-opentypeextension-4-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/post-opentypeextension-4-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

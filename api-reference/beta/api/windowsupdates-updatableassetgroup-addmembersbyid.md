@@ -5,12 +5,12 @@ author: aarononeal
 ms.localizationpriority: medium
 ms.prod: w10
 doc_type: apiPageType
-ms.openlocfilehash: ef0e17df9073c56f249f590544feaff696691925
-ms.sourcegitcommit: 71186ad44d8d0df15e10b0f89df68d2ef0cf9d14
+ms.openlocfilehash: 10929a5fe01feb5c265c3ed6af3c5026f5314e01
+ms.sourcegitcommit: 25acfa7d0153336c9a35d30a1dd422aeadc1342c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/12/2022
-ms.locfileid: "61862787"
+ms.lasthandoff: 02/03/2022
+ms.locfileid: "62348996"
 ---
 # <a name="updatableassetgroup-addmembersbyid"></a>updatableAssetGroup: addMembersById
 Namespace: microsoft.graph.windowsUpdates
@@ -54,7 +54,7 @@ A tabela a seguir mostra os parâmetros que podem ser usados com esta ação.
 |Parâmetro|Tipo|Descrição|
 |:---|:---|:---|
 |ids|Coleção de cadeias de caracteres|Lista de identificadores correspondentes aos [recursos updatableAsset](../resources/windowsupdates-updatableasset.md) a adicionar como membros do **updatableAssetGroup**.|
-|memberEntityType|String|O tipo completo dos **recursos updatableAsset.** Os valores possíveis são: `#microsoft.graph.windowsUpdates.azureADDevice` .|
+|memberEntityType|Cadeia de caracteres|O tipo completo dos **recursos updatableAsset** . Os valores possíveis são: `#microsoft.graph.windowsUpdates.azureADDevice`.|
 
 ## <a name="response"></a>Resposta
 
@@ -101,6 +101,10 @@ Content-Type: application/json
 
 # <a name="go"></a>[Ir](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/updatableassetgroup-addmembersbyid-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/updatableassetgroup-addmembersbyid-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

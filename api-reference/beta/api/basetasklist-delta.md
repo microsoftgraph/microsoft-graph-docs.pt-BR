@@ -5,12 +5,12 @@ author: devindrajit
 ms.localizationpriority: medium
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: c8c321bf4b3f09e38fe1d53318d6ff9e89b5e7c6
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: 61922688438f294271e87b819523b6c07b476336
+ms.sourcegitcommit: 25acfa7d0153336c9a35d30a1dd422aeadc1342c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62094871"
+ms.lasthandoff: 02/03/2022
+ms.locfileid: "62343543"
 ---
 # <a name="basetasklist-delta"></a>baseTaskList: delta
 Namespace: microsoft.graph
@@ -19,7 +19,7 @@ Namespace: microsoft.graph
 
 Obter um conjunto de [recursos baseTaskList](../resources/basetasklist.md) que foram adicionados, excluídos ou removidos em Microsoft To Do.
 
-Uma **chamada** de função delta para **baseTaskList** é semelhante a uma solicitação GET, exceto que, aplicando adequadamente [tokens](/graph/delta-query-overview) de estado em uma ou mais dessas chamadas, você pode consultar alterações incrementais na **baseTaskList**. Isso permite manter e sincronizar um armazenamento local de **baseTaskList** de um usuário sem precisar buscar todas as **baseTaskList** do servidor sempre.
+Uma **chamada** de função delta para **baseTaskList** é semelhante a uma solicitação GET, exceto que, aplicando adequadamente [tokens](/graph/delta-query-overview) de estado em uma ou mais dessas chamadas, você pode consultar alterações incrementais no **baseTaskList**. Isso permite manter e sincronizar um armazenamento local de **baseTaskList** de um usuário sem precisar buscar todas as **baseTaskList** do servidor sempre.
 
 ## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
@@ -43,16 +43,16 @@ GET /users/{userId|userPrincipalName}/tasks/lists/delta
 
 ## <a name="query-parameters"></a>Parâmetros de consulta
 
-Controlar alterações nos **recursos baseTaskList** incorre em uma rodada de uma ou mais chamadas de **função delta.** Se você usar qualquer parâmetro de consulta (diferente de `$deltatoken` e `$skiptoken`), especifique-o na primeira solicitação **delta**. O Microsoft Graph codifica automaticamente todos os parâmetros especificados na parte do token da URL `nextLink` ou `deltaLink` fornecida na resposta. Você só precisa especificar uma vez os parâmetros de consulta desejados antecipadamente. Em solicitações subsequentes, basta copiar e aplicar a URL ou da resposta anterior, pois essa URL já inclui os `nextLink` `deltaLink` parâmetros codificados e desejados.
+Controlar alterações nos **recursos baseTaskList** incorre em uma rodada de uma ou mais **chamadas de função delta** . Se você usar qualquer parâmetro de consulta (diferente de `$deltatoken` e `$skiptoken`), especifique-o na primeira solicitação **delta**. O Microsoft Graph codifica automaticamente todos os parâmetros especificados na parte do token da URL `nextLink` ou `deltaLink` fornecida na resposta. Você só precisa especificar uma vez os parâmetros de consulta desejados antecipadamente. Em solicitações subsequentes, basta copiar `nextLink` `deltaLink` e aplicar a URL ou da resposta anterior, pois essa URL já inclui os parâmetros codificados e desejados.
 
 | Parâmetro de consulta    | Tipo |Descrição|
 |:---------------|:--------|:----------|
-| $deltatoken | string | Um [token de estado](/graph/delta-query-overview) retornado na URL da chamada de função delta anterior para a mesma coleção `deltaLink` **baseTaskList,** indicando a conclusão dessa rodada de controle de alterações.  Salve e aplique toda a URL `deltaLink`, incluindo esse token na primeira solicitação da próxima série de controle de alterações desse conjunto.|
-| $skiptoken | string | Um [token de estado](/graph/delta-query-overview) retornado na URL da chamada de função delta anterior, indicando que há outras alterações a serem controladas na mesma coleção `nextLink` **baseTaskList.**  |
+| $deltatoken | cadeia de caracteres | Um [token de estado](/graph/delta-query-overview) retornado na `deltaLink` URL da chamada de função **delta** anterior para a mesma **coleção baseTaskList** , indicando a conclusão dessa rodada de controle de alterações. Salve e aplique toda a URL `deltaLink`, incluindo esse token na primeira solicitação da próxima série de controle de alterações desse conjunto.|
+| $skiptoken | string | Um [token de estado](/graph/delta-query-overview) retornado na `nextLink` URL da chamada de função **delta** anterior, indicando que há outras alterações a serem controladas na mesma **coleção baseTaskList** . |
 
 ### <a name="odata-query-parameters"></a>Parâmetros de consulta OData
 
-- Suporte à consulta delta e parâmetros de consulta `$filter` `$top` para `$expand` **baseTaskList**. 
+- Suporte à consulta delta `$filter` `$top`e parâmetros `$expand` de consulta para **baseTaskList**. 
 - Não há suporte para `$search`. 
 
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
@@ -66,7 +66,7 @@ Não forneça um corpo de solicitação para esse método.
 
 ## <a name="response"></a>Resposta
 
-Se tiver êxito, essa função retornará um código `200 OK` de resposta e uma coleção [baseTaskList](../resources/basetasklist.md) no corpo da resposta.
+Se tiver êxito, essa função retornará um `200 OK` código de resposta e uma [coleção baseTaskList](../resources/basetasklist.md) no corpo da resposta.
 
 ## <a name="examples"></a>Exemplos
 
@@ -99,6 +99,10 @@ GET https://graph.microsoft.com/beta/me/tasks/lists/delta
 
 # <a name="go"></a>[Ir](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/basetasklist-delta-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/basetasklist-delta-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

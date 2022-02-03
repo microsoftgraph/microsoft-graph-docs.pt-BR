@@ -5,12 +5,12 @@ author: cristobal-buenrostro
 ms.localizationpriority: medium
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: 075a74b56d3d28c0a40a1f703efe0ee6e0ee9787
-ms.sourcegitcommit: c47e3d1f3c5f7e2635b2ad29dfef8fe7c8080bc8
+ms.openlocfilehash: 5be75f26718c2ef5f0b7f7105a006c33d8eae7ca
+ms.sourcegitcommit: 25acfa7d0153336c9a35d30a1dd422aeadc1342c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/15/2021
-ms.locfileid: "61524718"
+ms.lasthandoff: 02/03/2022
+ms.locfileid: "62347679"
 ---
 # <a name="educationassignment-delta"></a>educationAssignment: delta
 Namespace: microsoft.graph
@@ -21,19 +21,19 @@ Obter uma lista de atribuições recém-criadas ou [atualizadas](../resources/ed
 
 Um professor ou um aplicativo em execução com permissões de aplicativo pode ver todos os objetos **de atribuição** da classe. Os alunos só podem **ver atribuições atribuídas** a eles.
 
-> **Observação:** Este método não retorna atribuições **excluídas.**
+> **Observação:** Esse método não retorna atribuições **excluídas**.
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 | Tipo de permissão                        | Permissões (da com menos para a com mais privilégios)                                                            |
 | :------------------------------------- | :----------------------------------------------------------------------------------------------------- |
 | Delegado (conta corporativa ou de estudante)     | EduAssignments.ReadBasic, EduAssignments.ReadWriteBasic, EduAssignments.Read, EduAssignments.ReadWrite |
-| Delegada (conta pessoal da Microsoft) | Sem suporte.                                                                                         |
+| Delegado (conta pessoal da Microsoft) | Sem suporte.                                                                                         |
 | Aplicativo                            | EduAssignments.ReadBasic.All, EduAssignments.ReadWriteBasic.All, EduAssignments.Read.All, EduAssignments.ReadWrite.All |
 
 ## <a name="optional-query-parameters"></a>Parâmetros de consulta opcionais
-Esse método não dá suporte aos `$expand` `$orderby` parâmetros de consulta , `$search` e `$filter` OData.
+Esse método não dá suporte aos `$expand`parâmetros de consulta , `$orderby`e `$search``$filter` OData.
 
 Esse método só dá suporte ao parâmetro `$top` de consulta OData.
 
@@ -58,7 +58,7 @@ Não forneça um corpo de solicitação para esse método.
 
 ## <a name="response"></a>Resposta
 
-Se tiver êxito, essa função retornará um código de resposta e uma coleção `200 OK` [educationAssignment](../resources/educationassignment.md) no corpo da resposta.
+Se tiver êxito, essa função retornará um `200 OK` código de resposta e uma coleção [educationAssignment](../resources/educationassignment.md) no corpo da resposta.
 
 ## <a name="examples"></a>Exemplos
 
@@ -96,8 +96,12 @@ GET https://graph.microsoft.com/beta/education/education/classes/72a7baec-c3e9-4
 [!INCLUDE [sample-code](../includes/snippets/java/get-assignments-delta-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[Go](#tab/go)
+# <a name="go"></a>[Ir](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/get-assignments-delta-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/get-assignments-delta-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -252,8 +256,12 @@ GET /education/classes/72a7baec-c3e9-4213-a850-f62de0adad5f/assignments/delta?$s
 [!INCLUDE [sample-code](../includes/snippets/java/get-assignments-delta-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[Go](#tab/go)
+# <a name="go"></a>[Ir](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/get-assignments-delta-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/get-assignments-delta-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -409,8 +417,12 @@ GET /education/classes/72a7baec-c3e9-4213-a850-f62de0adad5f/assignments/delta?$d
 [!INCLUDE [sample-code](../includes/snippets/java/get-assignments-delta-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[Go](#tab/go)
+# <a name="go"></a>[Ir](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/get-assignments-delta-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/get-assignments-delta-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -421,9 +433,9 @@ GET /education/classes/72a7baec-c3e9-4213-a850-f62de0adad5f/assignments/delta?$d
 
 Este é um exemplo de resposta.
 
->**Observação:** Você deve continuar usando o `@odata.deltaLink` para obter as atribuições recém-criadas ou modificadas desde a chamada delta inicial.
+>**Observação:** Você deve continuar usando o para `@odata.deltaLink` obter as atribuições recém-criadas ou modificadas desde a chamada delta inicial.
 
->Às vezes, a resposta delta será muito grande e, nesse caso, um será retornado para continuar a buscar `@odata.nextLink` alterações até você atingir um `@odata.deltaLink` novamente.
+>Às vezes, a resposta delta será muito grande e, nesse caso, um `@odata.nextLink` será retornado para continuar a buscar alterações até você atingir um novamente `@odata.deltaLink` .
 
 <!-- {
   "blockType": "response",

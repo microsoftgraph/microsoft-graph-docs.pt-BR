@@ -5,12 +5,12 @@ author: abheek-das
 ms.localizationpriority: medium
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 7036a86ccadedbbfa354a5f230fe8525b2a67e9c
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: 20fac290ea2baf68b2780e75224724616a2814c3
+ms.sourcegitcommit: 25acfa7d0153336c9a35d30a1dd422aeadc1342c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "60984959"
+ms.lasthandoff: 02/03/2022
+ms.locfileid: "62341012"
 ---
 # <a name="user-translateexchangeids"></a>user: translateExchangeIds
 
@@ -49,7 +49,7 @@ POST /users/{id|userPrincipalName}/translateExchangeIds
 
 | Parâmetro | Tipo | Descrição |
 |:----------|:-----|:------------|
-| inputIds | Conjunto de cadeias de caracteres | Uma coleção de identificadores a converter. Todos os identificadores da coleção DEVEM ter o mesmo tipo de ID de origem e DEVEM ser para itens na mesma caixa de correio. O tamanho máximo dessa coleção é de 1000 cadeias de caracteres. |
+| inputIds | String collection | Uma coleção de identificadores a converter. Todos os identificadores da coleção DEVEM ter o mesmo tipo de ID de origem e DEVEM ser para itens na mesma caixa de correio. O tamanho máximo dessa coleção é de 1000 cadeias de caracteres. |
 | sourceIdType | exchangeIdFormat | O tipo de ID dos identificadores no `InputIds` parâmetro. |
 | targetIdType | exchangeIdFormat | O tipo de ID solicitado a ser convertido. |
 
@@ -63,20 +63,20 @@ POST /users/{id|userPrincipalName}/translateExchangeIds
 | restId | O formato de ID padrão usado pela Microsoft Graph. |
 | restImmutableEntryId | O formato ID imutável usado pela Microsoft Graph. |
 
-Os formatos binários ( e ) são codificados com `entryId` base em URL `immutableEntryId` segura64. A segurança de URL é implementada modificando a codificação base64 dos dados binários da seguinte maneira:
+Os formatos binários (`entryId` e `immutableEntryId`) são codificados com base em URL segura64. A segurança de URL é implementada modificando a codificação base64 dos dados binários da seguinte maneira:
 
 - Substituir `+` por `-`
 - Substituir `/` por `_`
-- Remover quaisquer caracteres de preenchimento à parte ( `=` )
-- Adicione um inteiro ao final da cadeia de caracteres indicando quantos caracteres de preenchimento estavam no original ( `0` , `1` ou `2` )
+- Remover quaisquer caracteres de preenchimento à parte (`=`)
+- Adicione um inteiro ao final da cadeia de caracteres indicando quantos caracteres de preenchimento estavam no original (`0`, `1`, ou `2`)
 
 ## <a name="response"></a>Resposta
 
-Se tiver êxito, este método retornará `200 OK` o código de resposta e uma coleção [convertIdResult](../resources/convertidresult.md) no corpo da resposta.
+Se tiver êxito, este método retornará `200 OK` o código de resposta e uma [coleção convertIdResult](../resources/convertidresult.md) no corpo da resposta.
 
 ## <a name="example"></a>Exemplo
 
-O exemplo a seguir mostra como converter vários identificadores do formato normal da API REST ( ) para o `restId` formato imutável REST ( `restImmutableEntryId` ).
+O exemplo a seguir mostra como converter vários identificadores do formato normal da API REST (`restId`) para o formato rest imutável (`restImmutableEntryId`).
 
 ### <a name="request"></a>Solicitação
 
@@ -117,8 +117,12 @@ Content-Type: application/json
 [!INCLUDE [sample-code](../includes/snippets/java/user-translateexchangeids-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[Go](#tab/go)
+# <a name="go"></a>[Ir](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/user-translateexchangeids-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/user-translateexchangeids-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

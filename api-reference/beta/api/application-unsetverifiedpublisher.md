@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: jesakowi
 ms.prod: applications
 doc_type: apiPageType
-ms.openlocfilehash: d92c94a139048bf5af21db4de7eb740473b83298
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: c3bce6fcce58d960fe83de406fb1b08e59d7a739
+ms.sourcegitcommit: 25acfa7d0153336c9a35d30a1dd422aeadc1342c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "60982802"
+ms.lasthandoff: 02/03/2022
+ms.locfileid: "62339303"
 ---
 # <a name="application-unsetverifiedpublisher"></a>application: unsetVerifiedPublisher
 
@@ -18,7 +18,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Desajuste [o verificadoPublisher](../resources/verifiedPublisher.md) definido anteriormente em um [aplicativo,](../resources/application.md)removendo todas as propriedades do editor verificadas. Para obter mais informações, [consulte Publisher verificação](/azure/active-directory/develop/publisher-verification-overview).
+Desajuste [o verificadoPublisher](../resources/verifiedPublisher.md) definido anteriormente em um [aplicativo](../resources/application.md), removendo todas as propriedades do editor verificadas. Para obter mais informações, [consulte Publisher verificação](/azure/active-directory/develop/publisher-verification-overview).
 
 ## <a name="permissions"></a>Permissões
 
@@ -82,8 +82,12 @@ POST https://graph.microsoft.com/beta/applications/{id}/unsetVerifiedPublisher
 [!INCLUDE [sample-code](../includes/snippets/java/application-unsetverifiedpublisher-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[Go](#tab/go)
+# <a name="go"></a>[Ir](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/application-unsetverifiedpublisher-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/application-unsetverifiedpublisher-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

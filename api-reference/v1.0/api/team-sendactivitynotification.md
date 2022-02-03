@@ -5,17 +5,17 @@ author: eddie-lee-msft
 ms.localizationpriority: medium
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 8e197cfbceeb63a2a132025f570f9baaaec4a9f1
-ms.sourcegitcommit: 871db8b3f68489d24e2aeafe694725579ee44c47
+ms.openlocfilehash: a4d93b1fc6da20ad391641f55c050103b24d8816
+ms.sourcegitcommit: 25acfa7d0153336c9a35d30a1dd422aeadc1342c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/26/2022
-ms.locfileid: "62225683"
+ms.lasthandoff: 02/03/2022
+ms.locfileid: "62339928"
 ---
 # <a name="team-sendactivitynotification"></a>team: sendActivityNotification
 Namespace: microsoft.graph
 
-Envie uma notificação de feed de atividade no escopo de uma equipe. Para obter mais detalhes sobre o envio de notificações e os requisitos para fazer isso, consulte [o Teams de atividades.](/graph/teams-send-activityfeednotifications)
+Envie uma notificação de feed de atividade no escopo de uma equipe. Para obter mais detalhes sobre o envio de notificações e os requisitos para fazer isso, consulte [enviando Teams de atividades](/graph/teams-send-activityfeednotifications).
 
 ## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
@@ -24,9 +24,9 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |:---|:---|
 |Delegado (conta corporativa ou de estudante)|TeamsActivity.Send|
 |Delegado (conta pessoal da Microsoft)|Sem suporte.|
-|Application|TeamsActivity.Send.Group*, TeamsActivity.Send|
+|Aplicativo|TeamsActivity.Send.Group*, TeamsActivity.Send|
 
->**Observação:** Permissões marcadas com * use [o consentimento específico do recurso.](/microsoftteams/platform/graph-api/rsc/resource-specific-consent)
+>**Observação:** Permissões marcadas com * use [o consentimento específico do recurso](/microsoftteams/platform/graph-api/rsc/resource-specific-consent).
 
 ## <a name="http-request"></a>Solicitação HTTP
 
@@ -52,13 +52,13 @@ A tabela a seguir mostra os parâmetros que podem ser usados com esta ação.
 |Parâmetro|Tipo|Descrição|
 |:---|:---|:---|
 |topic|[teamworkActivityTopic](../resources/teamworkactivitytopic.md)|Tópico da notificação. Especifica o recurso que está sendo falado.|
-|activityType|Cadeia de caracteres|Tipo de atividade. Isso deve ser declarado no manifesto Teams [app](/microsoftteams/platform/overview).|
-|chainId|Int64|Opcional. Usado para substituir uma notificação anterior. Use o mesmo `chainId` em solicitações subsequentes para substituir a notificação anterior.|
+|activityType|Cadeia de caracteres|Tipo de atividade. Isso deve ser declarado no manifesto Teams [aplicativo.](/microsoftteams/platform/overview)|
+|chainId|Int64|Opcional. Usado para substituir uma notificação anterior. Use o mesmo em `chainId` solicitações subsequentes para substituir a notificação anterior.|
 |previewText|[itemBody](../resources/itembody.md)|Visualizar texto para a notificação. Microsoft Teams mostrará apenas os primeiros 150 caracteres.|
-|templateParameters|Coleção [keyValuePair](../resources/keyvaluepair.md)|Valores para variáveis de modelo definidas na entrada de feed de atividade `activityType` correspondentes [Teams manifesto do aplicativo](/microsoftteams/platform/overview).|
+|templateParameters|Coleção [keyValuePair](../resources/keyvaluepair.md)|Valores para variáveis de modelo definidas na entrada de feed de atividade correspondentes `activityType` [Teams manifesto do aplicativo](/microsoftteams/platform/overview).|
 |destinatário|[teamworkNotificationRecipient](../resources/teamworknotificationrecipient.md)|Destinatário da notificação. Somente usuários do Azure AD são suportados. Consulte também [aadUserNotificationRecipient](../resources/aadusernotificationrecipient.md). |
 
-Os seguintes recursos são suportados ao definir o `source` valor da propriedade **topic** como `entityUrl` :
+Os seguintes recursos são suportados ao definir o `source` valor da **propriedade topic** como `entityUrl`:
 
 - [team](../resources/team.md)
 - [channel](../resources/channel.md)
@@ -131,6 +131,10 @@ Content-Type: application/json
 [!INCLUDE [sample-code](../includes/snippets/go/team-sendactivitynotification-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/team-sendactivitynotification-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 
@@ -150,7 +154,7 @@ HTTP/1.1 204 No Content
 
 ### <a name="example-2-notify-a-user-about-a-channel-tab"></a>Exemplo 2: Notificar um usuário sobre uma guia de canal
 
-Semelhante ao exemplo anterior, este exemplo usa `entityUrl` para `topic` o . No entanto, este exemplo se vincula a [uma guia](../resources/teamstab.md) em um [canal](../resources/channel.md). A guia hospeda uma página mostrando ao usuário o status de sua reserva de hotel. Selecionar a notificação levará o usuário para a guia, onde ele pode verificar sua reserva.
+Semelhante ao exemplo anterior, este exemplo usa `entityUrl` para `topic`o . No entanto, este exemplo se vincula a uma [guia](../resources/teamstab.md) em um [canal](../resources/channel.md). A guia hospeda uma página mostrando ao usuário o status de sua reserva de hotel. Selecionar a notificação levará o usuário para a guia, onde ele pode verificar sua reserva.
 
 #### <a name="request"></a>Solicitação
 <!-- {
@@ -200,7 +204,7 @@ HTTP/1.1 204 No Content
 
 ### <a name="example-3-notify-a-user-about-a-channel-tab-using-user-principal-name"></a>Exemplo 3: Notificar um usuário sobre uma guia de canal usando o nome principal do usuário
 
-Semelhante ao exemplo anterior, este exemplo usa `entityUrl` para `topic` o . No entanto, este exemplo se vincula a [uma guia](../resources/teamstab.md) em um [canal](../resources/channel.md). A guia hospeda uma página mostrando ao usuário o status de sua reserva de hotel. Selecionar a notificação levará o usuário para a guia, onde ele pode verificar sua reserva.
+Semelhante ao exemplo anterior, este exemplo usa `entityUrl` para `topic`o . No entanto, este exemplo se vincula a uma [guia](../resources/teamstab.md) em um [canal](../resources/channel.md). A guia hospeda uma página mostrando ao usuário o status de sua reserva de hotel. Selecionar a notificação levará o usuário para a guia, onde ele pode verificar sua reserva.
 
 #### <a name="request"></a>Solicitação
 
@@ -260,6 +264,10 @@ Content-Type: application/json
 [!INCLUDE [sample-code](../includes/snippets/go/team-sendactivitynotification-upn-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/team-sendactivitynotification-upn-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 
@@ -276,7 +284,7 @@ HTTP/1.1 204 No Content
 
 ### <a name="example-4-notify-a-user-about-an-event-using-custom-topic"></a>Exemplo 4: Notificar um usuário sobre um evento usando tópico personalizado
 
-Como visto nos exemplos anteriores, você pode vincular a diferentes aspectos da equipe. No entanto, se você deseja vincular a um aspecto que não faz parte da equipe ou não é representado pela Microsoft Graph, ou deseja personalizar o nome, você pode definir a origem do para e passar um valor personalizado para `topic` `text` ele. `webUrl` é necessário ao definir `topic` a fonte como `text` .
+Como visto nos exemplos anteriores, você pode vincular a diferentes aspectos da equipe. No entanto, se você deseja vincular a um aspecto que não faz parte da equipe ou não é representado pela Microsoft Graph, ou deseja personalizar o nome, `topic` `text` você pode definir a origem do para e passar um valor personalizado para ele. `webUrl` é necessário ao definir a `topic` fonte como `text`.
 
 #### <a name="request"></a>Solicitação
 <!-- {

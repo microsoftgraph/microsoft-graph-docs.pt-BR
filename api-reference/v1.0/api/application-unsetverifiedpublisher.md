@@ -5,18 +5,18 @@ ms.localizationpriority: medium
 author: jesakowi
 ms.prod: applications
 doc_type: apiPageType
-ms.openlocfilehash: d4da4cc4e61fdd08a8f6c7e895759b373d1da935
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: 3c9f8c45cb23da2a3de5fc1481c8d9414ed8613d
+ms.sourcegitcommit: 25acfa7d0153336c9a35d30a1dd422aeadc1342c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "60996725"
+ms.lasthandoff: 02/03/2022
+ms.locfileid: "62346325"
 ---
 # <a name="application-unsetverifiedpublisher"></a>application: unsetVerifiedPublisher
 
 Namespace: microsoft.graph
 
-[Desajuste o verificadoPublisher](../resources/verifiedPublisher.md) anteriormente definido em um [aplicativo,](../resources/application.md)removendo todas as propriedades do editor verificadas. Para obter mais informações, [consulte Publisher verificação](/azure/active-directory/develop/publisher-verification-overview).
+[Desajuste o verificadoPublisher](../resources/verifiedPublisher.md) anteriormente definido em um [aplicativo](../resources/application.md), removendo todas as propriedades do editor verificadas. Para obter mais informações, [consulte Publisher verificação](/azure/active-directory/develop/publisher-verification-overview).
 
 ## <a name="permissions"></a>Permissões
 
@@ -80,8 +80,12 @@ POST https://graph.microsoft.com/v1.0/applications/{id}/unsetVerifiedPublisher
 [!INCLUDE [sample-code](../includes/snippets/java/application-unsetverifiedpublisher-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[Go](#tab/go)
+# <a name="go"></a>[Ir](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/application-unsetverifiedpublisher-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/application-unsetverifiedpublisher-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: preetikr
 ms.prod: security
 doc_type: apiPageType
-ms.openlocfilehash: f6cf291183a4f12c8252b09eec70fa948bba49a1
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: 56dbbc3e3b2632d154b0347feac1b525fe040247
+ms.sourcegitcommit: 25acfa7d0153336c9a35d30a1dd422aeadc1342c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "60991104"
+ms.lasthandoff: 02/03/2022
+ms.locfileid: "62339367"
 ---
 # <a name="alert-updatealerts"></a>alert: updateAlerts
 
@@ -46,15 +46,15 @@ POST /security/alerts/updateAlerts
 
 ## <a name="request-body"></a>Corpo da solicitação
 
-Forneça um objeto JSON com os seguintes parâmetros no corpo da solicitação. Cada entidade deve ter **propriedades id** e **vendorInformation.** Para obter detalhes sobre as propriedades que podem ser atualizadas, consulte [update alert](alert-update.md).
+Forneça um objeto JSON com os seguintes parâmetros no corpo da solicitação. Cada entidade deve ter **propriedades id** e **vendorInformation** . Para obter detalhes sobre as propriedades que podem ser atualizadas, consulte [alerta de atualização](alert-update.md).
 
 | Parâmetro    | Tipo        | Descrição |
 |:-------------|:------------|:------------|
-|valor|conjunto [alerta](../resources/alert.md) | Coleção de alertas a ser atualizado. Cada entidade deve ter **id,** **vendorInformation** e outras propriedades editáveis a serem atualizadas.|
+|valor|conjunto [alerta](../resources/alert.md) | Coleção de alertas a ser atualizado. Cada entidade deve ter **id**, **vendorInformation** e outras propriedades editáveis a serem atualizadas.|
 
 ## <a name="response"></a>Resposta
 
-Se tiver êxito, este método retornará o código de resposta e o objeto `200, OK` [da](../resources/alert.md) coleção de alertas no corpo da resposta.
+Se tiver êxito, este método retornará `200, OK` o código de resposta e [o objeto da](../resources/alert.md) coleção de alertas no corpo da resposta.
 
 ## <a name="examples"></a>Exemplos
 
@@ -110,8 +110,12 @@ Content-type: application/json
 [!INCLUDE [sample-code](../includes/snippets/java/alert-updatealerts-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[Go](#tab/go)
+# <a name="go"></a>[Ir](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/alert-updatealerts-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/alert-updatealerts-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

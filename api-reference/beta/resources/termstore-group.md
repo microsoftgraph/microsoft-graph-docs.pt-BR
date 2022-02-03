@@ -3,14 +3,14 @@ author: mohitpcad
 title: Tipo de recurso de grupo
 doc_type: resourcePageType
 description: Representa um grupo usado em um armazenamento de termos.
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: taxonomy
-ms.openlocfilehash: ec2e9609b2de278d2596d42b18cae2fe450efd86
-ms.sourcegitcommit: 73bbf84e6f5dbc8c3db8ed2c48cc5ab9ae3cff78
+ms.openlocfilehash: c43001533c5d0b81eb0f9064915a33d9d3e93815
+ms.sourcegitcommit: 25acfa7d0153336c9a35d30a1dd422aeadc1342c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/16/2021
-ms.locfileid: "53456356"
+ms.lasthandoff: 02/03/2022
+ms.locfileid: "62347385"
 ---
 # <a name="group-resource-type"></a>Tipo de recurso de grupo
 
@@ -19,34 +19,34 @@ Namespace: microsoft.graph.termStore
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 
-Representa um grupo usado em um armazenamento de [termos.](../resources/termstore-store.md) Um grupo é uma hierarquia lógica que contém uma coleção de conjuntos sob ele. 
+Representa um grupo usado em um armazenamento de [termos](../resources/termstore-store.md). Um grupo é uma hierarquia lógica que contém uma coleção de conjuntos sob ele. 
 
 Herda da [entidade](../resources/entity.md).
 
 
-## <a name="methods"></a>Métodos
+## <a name="methods"></a>Methods
 
-| Método                                                   | Tipo de retorno       |    Descrição
-|:---------------------------------------------------------|:------------------|:---------------------
-| [Criar grupo](../api/termstore-group-post.md)                     | [microsoft.graph.termStore.group] | Criar um grupo em um armazenamento de [termos.]
-| [Obter grupo](../api/termstore-group-get.md)                           | [microsoft.graph.termStore.group] | Recupere os dados de um grupo em um armazenamento de [termos.]
-| [Excluir grupo](../api/termstore-group-delete.md)                     | Nenhum |  Excluir um grupo em um armazenamento de [termos.]
+| Método                                                   | Tipo de retorno       |    Descrição|
+|:---------------------------------------------------------|:------------------|:---------------------|
+| [Criar grupo](../api/termstore-group-post.md)                     | [microsoft.graph.termStore.group] | Crie um grupo em um armazenamento de [termos].|
+| [Obter grupo](../api/termstore-group-get.md)                           | [microsoft.graph.termStore.group] | Recupere os dados de um grupo em um armazenamento de [termos].|
+| [Excluir grupo](../api/termstore-group-delete.md)                     | Nenhum |  Exclua um grupo em um [armazenamento de termos].|
 
 ## <a name="properties"></a>Propriedades
 
-| Propriedade             | Tipo               | Descrição
-|:---------------------|:-------------------|:------------------------------------
-| createdDateTime      | DateTimeOffset     | Data e hora da criação do grupo. Somente leitura.
-| description          | string             | Descrição que dá detalhes sobre o uso do termo.
-| id                   | cadeia de caracteres             | Identificador exclusivo do grupo. Somente Leitura.
-| displayName          | cadeia de caracteres             | Nome do grupo.
-| escopo                | string              | Retorna o tipo de grupo. Os valores possíveis são 'global', 'system' e 'siteCollection'.
-| parentSiteId         | cadeia de caracteres             | ID do site pai deste grupo.
+| Propriedade             | Tipo               | Descrição|
+|:---------------------|:-------------------|:------------------------------------|
+| createdDateTime      | DateTimeOffset     | Data e hora da criação do grupo. Somente leitura.|
+| description          | string             | Descrição que fornece detalhes sobre o uso do termo.|
+| id                   | cadeia de caracteres             | Identificador exclusivo do grupo. Somente Leitura.|
+| displayName          | cadeia de caracteres             | Nome do grupo.|
+| escopo                | string              | Retorna o tipo do grupo. Os valores possíveis são: `global`, `system` e `siteCollection`.|
+| parentSiteId         | cadeia de caracteres             | ID do site pai deste grupo.|
 
 ## <a name="relationships"></a>Relações
-| Relação       | Tipo                        | Descrição
-|:-------------------|:----------------------------|:--------------------------
-| sets           | [coleção microsoft.graph.termStore.set][] | Todos os conjuntos sob o grupo em um armazenamento de [termos].
+| Relação       | Tipo                        | Descrição|
+|:-------------------|:----------------------------|:--------------------------|
+| sets           | [coleção microsoft.graph.termStore.set][] | Todos os conjuntos sob o grupo em um armazenamento de [termos].|
 
 ## <a name="json-representation"></a>Representação JSON
 

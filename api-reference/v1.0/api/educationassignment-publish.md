@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: cristobal-buenrostro
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: 5fab26d510efe5bc9b331b0a5c4d127026bc73a6
-ms.sourcegitcommit: 7a0f9f1a535795c6f77c80e02fd97581c36f1273
+ms.openlocfilehash: afa624caba599ed665d9ebe63a58d8b7499b9e43
+ms.sourcegitcommit: 25acfa7d0153336c9a35d30a1dd422aeadc1342c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/27/2021
-ms.locfileid: "61608707"
+ms.lasthandoff: 02/03/2022
+ms.locfileid: "62347232"
 ---
 # <a name="educationassignment-publish"></a>educationAssignment: publish
 
@@ -20,13 +20,13 @@ Publicar uma atribuição de educação.
 
 Altere o estado de [um educationAssignment](../resources/educationassignment.md) de seu status original `draft` para o `published` status. 
 
-Você pode alterar o estado de `draft` para `scheduled` se a **atribuição** estiver agendada para uma data futura. 
+Você pode alterar o estado de `draft` para se `scheduled` a **atribuição** estiver agendada para uma data futura. 
 
 Somente um professor da classe pode fazer essa chamada. Quando uma atribuição estiver no status de rascunho, os alunos não verão a atribuição, nem haverá objetos de envio. Chamar essa API [cria objetos educationSubmission](../resources/educationsubmission.md) e exibe a atribuição na lista de cada aluno.
 
-O estado da atribuição volta para se houver alguma falha `draft` de back-end durante o processo de publicação.
+O estado da atribuição volta para se `draft` houver alguma falha de back-end durante o processo de publicação.
 
-Para atualizar as propriedades de uma atribuição **publicada,** consulte [atualizar uma atribuição](../api/educationassignment-update.md).
+Para atualizar as propriedades de uma atribuição **publicada**, consulte [atualizar uma atribuição](../api/educationassignment-update.md).
 
 ## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
@@ -52,7 +52,7 @@ POST /education/classes/{id}/assignments/{id}/publish
 Não fornece um corpo de solicitação para este método.
 
 ## <a name="response"></a>Resposta
-Se tiver êxito, este método retornará um código de resposta e um `200 Ok` [objeto educationAssignment](../resources/educationassignment.md) no corpo da resposta.
+Se tiver êxito, este método retornará um `200 Ok` código de resposta e um [objeto educationAssignment](../resources/educationassignment.md) no corpo da resposta.
 
 ## <a name="example"></a>Exemplo
 O exemplo a seguir mostra como chamar essa API.
@@ -87,8 +87,12 @@ POST https://graph.microsoft.com/v1.0/education/classes/72a7baec-c3e9-4213-a850-
 [!INCLUDE [sample-code](../includes/snippets/java/educationassignment-publish-2-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[Go](#tab/go)
+# <a name="go"></a>[Ir](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/educationassignment-publish-2-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/educationassignment-publish-2-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

@@ -5,23 +5,23 @@ author: aarononeal
 ms.localizationpriority: medium
 ms.prod: w10
 doc_type: apiPageType
-ms.openlocfilehash: 0782a630e0dcbc4ed5e55af79abee554f8d0a87b
-ms.sourcegitcommit: 71186ad44d8d0df15e10b0f89df68d2ef0cf9d14
+ms.openlocfilehash: e77e15fb422b645d88532b72b134b5e55a2c681c
+ms.sourcegitcommit: 25acfa7d0153336c9a35d30a1dd422aeadc1342c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/12/2022
-ms.locfileid: "61860007"
+ms.lasthandoff: 02/03/2022
+ms.locfileid: "62342481"
 ---
 # <a name="updatableassetgroup-addmembers"></a>updatableAssetGroup: addMembers
 Namespace: microsoft.graph.windowsUpdates
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Adicionar membros a [um updatableAssetGroup](../resources/windowsupdates-updatableassetgroup.md).
+Adicione membros a [um updatableAssetGroup](../resources/windowsupdates-updatableassetgroup.md).
 
 Você pode adicionar [recursos do azureADDevice](../resources/windowsupdates-azureaddevice.md) como membros, mas pode não adicionar **recursos updatableAssetGroup** como membros.
 
-Adicionar um dispositivo do Azure AD como membro de um grupo de ativos atualizável cria automaticamente um **objeto azureADDevice,** se ainda não existir.
+Adicionar um dispositivo do Azure AD como membro de um grupo de ativos atualizável cria **automaticamente um objeto azureADDevice** , se ainda não existir.
 
 Você também pode usar o [método addMembersById](windowsupdates-updatableassetgroup-addmembersbyid.md) para adicionar membros.
 
@@ -104,6 +104,10 @@ Content-Type: application/json
 
 # <a name="go"></a>[Ir](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/updatableassetgroup-addmembers-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/updatableassetgroup-addmembers-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

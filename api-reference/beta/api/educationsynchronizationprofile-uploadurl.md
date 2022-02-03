@@ -5,12 +5,12 @@ author: mmast-msft
 ms.localizationpriority: medium
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: dafd238642c49572ec776326584b75fd902b149a
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: ce9fbe4843560c65ad132cc37c543b84605daa7e
+ms.sourcegitcommit: 25acfa7d0153336c9a35d30a1dd422aeadc1342c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62109060"
+ms.lasthandoff: 02/03/2022
+ms.locfileid: "62340214"
 ---
 # <a name="educationsynchronizationprofile-uploadurl"></a>educationSynchronizationProfile: uploadUrl
 
@@ -18,11 +18,11 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Recupere uma assinatura de acesso compartilhado (SAS) para carregar arquivos de origem no armazenamento de blob do Azure para um perfil específico de sincronização de dados escolares no locatário. [](../resources/educationsynchronizationprofile.md) O token SAS tem uma validade de uma hora.
+Recupere uma assinatura de acesso compartilhado (SAS) para carregar arquivos de origem no armazenamento de blob do Azure para [](../resources/educationsynchronizationprofile.md) um perfil específico de sincronização de dados escolares no locatário. O token SAS tem uma validade de uma hora.
 
-A URL de carregamento é fornecida apenas para o provedor de dados [CSV.](../resources/educationcsvdataprovider.md)
+A URL de carregamento é fornecida apenas para o [provedor de dados CSV](../resources/educationcsvdataprovider.md).
 
-> **Observação:** Para acessar o armazenamento de blob com o token SAS, use os [SDKs](https://github.com/search?q=org%3AAzure+azure-storage) de armazenamento do Azure ou [o AzCopy](/azure/storage/storage-use-azcopy).
+> **Observação:** Para acessar o armazenamento de blob com o token SAS, use os [SDKs de armazenamento do Azure](https://github.com/search?q=org%3AAzure+azure-storage) ou [o AzCopy](/azure/storage/storage-use-azcopy).
 
 ## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
@@ -47,9 +47,9 @@ GET /education/synchronizationProfiles/{id}/uploadUrl
 ## <a name="request-body"></a>Corpo da solicitação
 Não forneça um corpo de solicitação para esse método.
 ## <a name="response"></a>Resposta
-Se tiver êxito, este método retornará um código de resposta e uma URL SAS para `200 OK` [educationSynchronizationProfile](../resources/educationsynchronizationprofile.md) no corpo da resposta.
+Se tiver êxito, este método retornará `200 OK` um código de resposta e uma URL SAS para [educationSynchronizationProfile](../resources/educationsynchronizationprofile.md) no corpo da resposta.
 
-Se uma solicitação anterior ainda estiver sendo processada, este método retornará um indicando que o carregamento está bloqueado no momento para `409 Conflict` [educationSynchronizationProfile](../resources/educationsynchronizationprofile.md).
+Se uma solicitação anterior ainda estiver sendo processada, `409 Conflict` este método retornará um indicando que o carregamento está bloqueado no momento para [educationSynchronizationProfile](../resources/educationsynchronizationprofile.md).
 
 ## <a name="example"></a>Exemplo
 ##### <a name="request"></a>Solicitação
@@ -81,6 +81,10 @@ GET https://graph.microsoft.com/beta/education/synchronizationProfiles/{id}/uplo
 
 # <a name="go"></a>[Ir](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/get-educationsynchronizationprofile-uploadurl-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/get-educationsynchronizationprofile-uploadurl-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

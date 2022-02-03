@@ -1,11 +1,11 @@
 ---
 description: Arquivo gerado automaticamente. NÃO MODIFICAR
-ms.openlocfilehash: 11e16a6b25a5b4a58b163df89802e299be0b6a94
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: e61618aa29bac5271e08b7c50a54059ff2bb8cb5
+ms.sourcegitcommit: 25acfa7d0153336c9a35d30a1dd422aeadc1342c
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62104189"
+ms.lasthandoff: 02/03/2022
+ms.locfileid: "62350876"
 ---
 ```powershell
 
@@ -70,6 +70,7 @@ $params = @{
     AllowNewTimeProposals = $true
 }
 
+# A UPN can also be used as -UserId.
 New-MgUserEvent -UserId $userId -BodyParameter $params
 
 ```

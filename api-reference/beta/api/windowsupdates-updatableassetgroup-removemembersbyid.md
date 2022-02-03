@@ -5,19 +5,19 @@ author: aarononeal
 ms.localizationpriority: medium
 ms.prod: w10
 doc_type: apiPageType
-ms.openlocfilehash: 5e187fadab110c3d8570c79736a3032ab7f41f5c
-ms.sourcegitcommit: 71186ad44d8d0df15e10b0f89df68d2ef0cf9d14
+ms.openlocfilehash: e19e435878826f916aec2843669c5a39c12aeef2
+ms.sourcegitcommit: 25acfa7d0153336c9a35d30a1dd422aeadc1342c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/12/2022
-ms.locfileid: "61792145"
+ms.lasthandoff: 02/03/2022
+ms.locfileid: "62343773"
 ---
 # <a name="updatableassetgroup-removemembersbyid"></a>updatableAssetGroup: removeMembersById
 Namespace: microsoft.graph.windowsUpdates
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Remover membros do mesmo tipo de um [updatableAssetGroup](../resources/windowsupdates-updatableassetgroup.md).
+Remova membros do mesmo tipo de um [updatableAssetGroup](../resources/windowsupdates-updatableassetgroup.md).
 
 Você também pode usar o [método removeMembers para](windowsupdates-updatableassetgroup-removemembers.md) remover membros.
 
@@ -53,8 +53,8 @@ A tabela a seguir mostra os parâmetros que podem ser usados com esta ação.
 
 |Parâmetro|Tipo|Descrição|
 |:---|:---|:---|
-|ids|Coleção de cadeias de caracteres|Lista de identificadores correspondentes aos [recursos updatableAsset](../resources/windowsupdates-updatableasset.md) a remover como membros do **updatableAssetGroup**.|
-|memberEntityType|String|O tipo completo dos **recursos updatableAsset.** Os valores possíveis são: `#microsoft.graph.windowsUpdates.azureADDevice` .|
+|ids|Coleção de cadeias de caracteres|Lista de identificadores correspondentes aos [recursos updatableAsset](../resources/windowsupdates-updatableasset.md) para remover como membros do **updatableAssetGroup**.|
+|memberEntityType|Cadeia de caracteres|O tipo completo dos **recursos updatableAsset** . Os valores possíveis são: `#microsoft.graph.windowsUpdates.azureADDevice`.|
 
 ## <a name="response"></a>Resposta
 
@@ -101,6 +101,10 @@ Content-Type: application/json
 
 # <a name="go"></a>[Ir](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/updatableassetgroup-removemembersbyid-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/updatableassetgroup-removemembersbyid-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

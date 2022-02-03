@@ -5,12 +5,12 @@ author: mkhribech
 ms.localizationpriority: medium
 doc_type: apiPageType
 ms.prod: cloud-communications
-ms.openlocfilehash: f3a62e802d8ade524669aa68a0d6fb13ea717cc7
-ms.sourcegitcommit: f336c5c49fbcebe55312656aa8b50511fd99a657
+ms.openlocfilehash: c5060f956b4b965ca6918934bc2d1b8bdd5847a0
+ms.sourcegitcommit: 25acfa7d0153336c9a35d30a1dd422aeadc1342c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/09/2021
-ms.locfileid: "61391071"
+ms.lasthandoff: 02/03/2022
+ms.locfileid: "62341585"
 ---
 # <a name="presence-setpresence"></a>presença: setPresence
 
@@ -27,14 +27,14 @@ Da mesma forma, um aplicativo pode ter sua própria sessão de presença para um
 
 A seguir está a precedência de como os estados de sessão são agregados, com "A > B" representando A tendo precedência sobre B:
 * Estado preferencial do usuário > de nível de sessão (o estado preferencial do usuário substitui estados no nível da sessão)
-* Entre estados de nível de sessão: DoNotDisturb (atualmente sem suporte para **setPresence**) > Ocupado > Disponível > Away
+* Entre os estados de nível de sessão: DoNotDisturb (atualmente sem suporte para **setPresence**) > Ocupado > Disponível > Distância
 
 ### <a name="timeout-expiration-and-keep-alive"></a>Tempo de expiração, expiração e manter-se vivo
-Uma sessão de presença pode **expirar** e **expirar**, portanto, o aplicativo precisa chamar essa API antes do tempo de tempo, para manter o estado da sessão; ou antes da **expiração**, para manter a sessão viva.
+Uma sessão de presença pode **expirar** **e expirar**, portanto, o aplicativo precisa chamar essa API antes do tempo **final, para** manter o estado da sessão; ou antes da **expiração**, para manter a sessão viva.
 
-Uma sessão de presença pode ser limitada se a disponibilidade for `Available` e o tempo-de-tempo for de 5 minutos. Quando o tempo passa, o estado de presença desaparece em estágios. Por exemplo, se um aplicativo define a sessão de presença como , o estado será alternado para em 5 minutos com o primeiro tempo de tempo, em seguida, em outros 5 minutos com o `Available/Available` `Available/AvailableInactive` segundo `Away/Away` tempo.
+Uma sessão de presença pode ser limitada se a disponibilidade for `Available` e o tempo-de-tempo for de 5 minutos. Quando o tempo passa, o estado de presença desaparece em estágios. Por exemplo, se `Available/Available`um aplicativo define a sessão de presença como , `Available/AvailableInactive` o estado será alternado para em 5 minutos com o primeiro tempo de tempo, em seguida, `Away/Away` em outros 5 minutos com o segundo tempo.
 
-A expiração de uma sessão de presença é configurável com o `expirationDuration` parâmetro. Quando uma sessão expira, ela se torna `Offline` .
+A expiração de uma sessão de presença é configurável com o `expirationDuration` parâmetro. Quando uma sessão expira, ela se torna `Offline`.
 
 ## <a name="permissions"></a>Permissões
 A permissão a seguir é necessária para chamar a API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
@@ -62,16 +62,16 @@ Forneça um objeto JSON com os seguintes parâmetros no corpo da solicitação.
 
 | Parâmetro          | Tipo     | Descrição                                                                                            |
 | :----------------- | :------- | :----------------------------------------------------------------------------------------------------- |
-| sessionId          | string   | A ID da sessão de presença do aplicativo.                                                          |
-| availability       | string   | As informações de presença base.                                                                         |
-| atividade           | string   | As informações complementares à disponibilidade.                                                          |
+| sessionId          | cadeia de caracteres   | A ID da sessão de presença do aplicativo.                                                          |
+| availability       | cadeia de caracteres   | As informações de presença base.                                                                         |
+| atividade           | cadeia de caracteres   | As informações complementares à disponibilidade.                                                          |
 | expirationDuration | duração | A expiração da sessão de presença do aplicativo. O valor é representado no formato ISO 8601 por durações.</p>Se não for fornecido, será aplicada uma expiração padrão de 5 minutos. |
 
 > [!IMPORTANT]
 >
 > Forneça a ID do aplicativo como `sessionId` na solicitação.
 
-Combinações com suporte de `availability` e `activity` são:
+Combinações com suporte de `availability` e são `activity` :
 
 | availability | atividade          | Descrição                                              |
 | :----------- | :---------------- | :------------------------------------------------------- |
@@ -84,7 +84,7 @@ Combinações com suporte de `availability` e `activity` são:
 Se tiver êxito, este método retornará um código de resposta `200 OK`.
 
 ## <a name="examples"></a>Exemplos
-A solicitação a seguir mostra o aplicativo com ID `22553876-f5ab-4529-bffb-cfe50aa89f87` que define sua sessão de presença para o usuário `fa8bf3dc-eca7-46b7-bad1-db199b62afc3` .
+A solicitação a seguir mostra o aplicativo com ID `22553876-f5ab-4529-bffb-cfe50aa89f87` que define sua sessão de presença para o usuário `fa8bf3dc-eca7-46b7-bad1-db199b62afc3`.
 
 ### <a name="request"></a>Solicitação
 
@@ -122,8 +122,12 @@ Content-Type: application/json
 [!INCLUDE [sample-code](../includes/snippets/java/set-presence-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[Go](#tab/go)
+# <a name="go"></a>[Ir](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/set-presence-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/set-presence-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

@@ -5,12 +5,12 @@ author: mahage-msft
 ms.localizationpriority: medium
 ms.prod: ediscovery
 doc_type: apiPageType
-ms.openlocfilehash: 8eea4dc8cb0890570ff397e0752f8f7d69b0e5e8
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: 3d75d1366a88a2618949db86f6c9c2090ffb1327
+ms.sourcegitcommit: 25acfa7d0153336c9a35d30a1dd422aeadc1342c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "60986666"
+ms.lasthandoff: 02/03/2022
+ms.locfileid: "62344073"
 ---
 # <a name="reviewsetquery-applytags"></a>reviewSetQuery: applyTags
 
@@ -18,7 +18,7 @@ Namespace: microsoft.graph.ediscovery
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Aplicar [marcas](../resources/ediscovery-tag.md) a documentos que corresponderem à [revisão especificadaSetQuery](../resources/ediscovery-reviewsetquery.md).
+Aplicar [marcas](../resources/ediscovery-tag.md) a documentos que corresponderem ao [reviewSetQuery especificado](../resources/ediscovery-reviewsetquery.md).
 
 ## <a name="permissions"></a>Permissões
 
@@ -63,7 +63,7 @@ A tabela a seguir mostra os parâmetros que podem ser usados com esta ação.
 
 Se tiver êxito, esta ação retornará um código de resposta `202 Accepted`.
 
-Se a operação de marcação for iniciada com êxito, essa ação retornará um `202 Accepted` código de resposta. A resposta também conterá um header, que contém o local da `Location` [tagOperation](../resources/ediscovery-tagOperation.md) que foi criada para manipular a marcação. Verifique o status da operação de marcação fazendo uma solicitação GET para o local, quando concluído com êxito, o [status](../resources/ediscovery-caseoperation.md#caseoperationstatus-values) mudará para `succeeded` .
+Se a operação de marcação for iniciada com êxito, essa ação retornará um código `202 Accepted` de resposta. A resposta também conterá um header, que contém o local da [tagOperation](../resources/ediscovery-tagOperation.md) que foi criada para manipular a `Location` marcação. Verifique o status da operação de marcação fazendo uma solicitação GET para o local, quando concluído com êxito, o [status](../resources/ediscovery-caseoperation.md#caseoperationstatus-values) mudará para `succeeded`.
 
 ## <a name="examples"></a>Exemplos
 
@@ -105,8 +105,12 @@ Content-Type: application/json
 [!INCLUDE [sample-code](../includes/snippets/java/reviewsetquery-applytags-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[Go](#tab/go)
+# <a name="go"></a>[Ir](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/reviewsetquery-applytags-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/reviewsetquery-applytags-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: abheek-das
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 02825d29d3ab476c91311f9d1b700860790e2348
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: e771d4fdc9647d9e0750ec7bc757af45689768a6
+ms.sourcegitcommit: 25acfa7d0153336c9a35d30a1dd422aeadc1342c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "61028311"
+ms.lasthandoff: 02/03/2022
+ms.locfileid: "62341628"
 ---
 # <a name="message-createreplyall"></a>message: createReplyAll
 
@@ -18,11 +18,11 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Crie um rascunho para responder ao remetente e [a](../resources/message.md) todos os destinatários de uma mensagem no formato JSON ou MIME.
+Crie um rascunho para responder ao remetente [e a todos](../resources/message.md) os destinatários de uma mensagem no formato JSON ou MIME.
 
 Ao usar o formato JSON:
 - Especifique um comentário ou **a propriedade body** do `message` parâmetro. Especificar ambos retornará um erro HTTP 400 - Solicitação incorreta.
-- Se a mensagem original especificar um destinatário na propriedade **replyTo,** por Formato de Mensagem da Internet ([RFC 2822](https://www.rfc-editor.org/info/rfc2822)), você deverá enviar a resposta aos destinatários nas propriedades **replyTo** e **toRecipients,** e não os destinatários nas propriedades **from** e **toRecipients.** 
+- Se a mensagem original especificar um destinatário na propriedade **replyTo** , por Formato de Mensagem da Internet ([RFC 2822](https://www.rfc-editor.org/info/rfc2822)), você deverá enviar a resposta aos destinatários nas propriedades **replyTo** e **toRecipients** e não os destinatários nas propriedades **from** e **toRecipients** . 
 - Você pode [atualizar a](../api/message-update.md) mensagem de rascunho mais tarde.
 
 Ao utilizar o formato MIME:
@@ -74,7 +74,7 @@ Se o corpo da solicitação incluir conteúdo MIME malformado, este método reto
 
 ## <a name="examples"></a>Exemplos
 ### <a name="example-1-create-a-draft-in-json-format-to-reply-all-to-an-existing-message"></a>Exemplo 1: Criar um rascunho no formato JSON para responder tudo a uma mensagem existente
-O exemplo a seguir cria um rascunho para responder a todos e adiciona um anexo e um comentário em **uma chamada createReplyAll.**
+O exemplo a seguir cria um rascunho para responder a todos e adiciona um anexo e um comentário em **uma chamada createReplyAll** .
 ##### <a name="request"></a>Solicitação
 Este é um exemplo da solicitação.
 
@@ -116,8 +116,12 @@ Content-Type: application/json
 [!INCLUDE [sample-code](../includes/snippets/java/message-createreplyall-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[Go](#tab/go)
+# <a name="go"></a>[Ir](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/message-createreplyall-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/message-createreplyall-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

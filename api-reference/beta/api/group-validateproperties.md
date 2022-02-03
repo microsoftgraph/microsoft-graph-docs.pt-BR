@@ -5,18 +5,18 @@ ms.localizationpriority: medium
 author: Jordanndahl
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: 4cc1aa6a36a0e270313c1654814149ee3e8d5ce4
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: 0cca89397a96e8ec3859ed0360e98bb4a73cdd4c
+ms.sourcegitcommit: 25acfa7d0153336c9a35d30a1dd422aeadc1342c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "61015067"
+ms.lasthandoff: 02/03/2022
+ms.locfileid: "62341145"
 ---
 # <a name="group-validateproperties"></a>group: validateProperties
 
 Namespace: microsoft.graph
 
-Valide se Microsoft 365 nome de exibição de um grupo ou apelido de email estiver em conformidade com as políticas de nomenização. Os clientes podem usar **a** API para determinar se um nome de exibição ou apelido de email é válido antes de tentar atualizar um Microsoft 365 grupo. Para validar propriedades antes de criar um grupo, use a [função validateProperties](directoryobject-validateproperties.md) para objetos de diretório.
+Valide se Microsoft 365 nome de exibição de um grupo ou apelido de email estiver em conformidade com as políticas de nomenização. Os clientes podem **usar a API** para determinar se um nome de exibição ou apelido de email é válido antes de tentar atualizar um Microsoft 365 grupo. Para validar propriedades antes de criar um grupo, use a [função validateProperties](directoryobject-validateproperties.md) para objetos de diretório.
 
 As seguintes validações são executadas para as propriedades nome de exibição e apelido de email: 
 1. Validar a política de nomeação de prefixo e sufixo
@@ -58,11 +58,11 @@ Forneça um objeto JSON com os seguintes parâmetros no corpo da solicitação.
 |onBehalfOfUserId|Guid| A ID do objeto do usuário a ser personificado ao chamar a API. Os resultados da validação são para os atributos e funções de onBehalfOfUserId. |
 
 ## <a name="response"></a>Resposta
-Se tiver êxito e não houver erros de validação, o método retornará `204 No Content` o código de resposta. Não retorna nada no corpo da resposta.
+Se tiver êxito e não houver erros de validação, o método retornará o `204 No Content` código de resposta. Não retorna nada no corpo da resposta.
 
-Se a solicitação for inválida, o método retornará `400 Bad Request` o código de resposta. Uma mensagem de erro com detalhes sobre a solicitação inválida é retornada no corpo da resposta.
+Se a solicitação for inválida, o método retornará o `400 Bad Request` código de resposta. Uma mensagem de erro com detalhes sobre a solicitação inválida é retornada no corpo da resposta.
 
-Se houver um erro de validação. O método retorna `422 Unprocessable Entity` o código de resposta. Uma mensagem de erro e uma coleção de detalhes de erro é retornada no corpo da resposta.
+Se houver um erro de validação. O método retorna o `422 Unprocessable Entity` código de resposta. Uma mensagem de erro e uma coleção de detalhes de erro é retornada no corpo da resposta.
 
 ## <a name="examples"></a>Exemplos
 
@@ -101,8 +101,12 @@ Content-type: application/json
 [!INCLUDE [sample-code](../includes/snippets/java/group-validateproperties-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[Go](#tab/go)
+# <a name="go"></a>[Ir](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/group-validateproperties-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/group-validateproperties-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

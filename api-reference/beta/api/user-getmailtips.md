@@ -5,12 +5,12 @@ author: abheek-das
 ms.localizationpriority: medium
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 33934b8866ec553f5f9e127349bd16ef921d5b32
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: f4c3c8ce16f8f2b9f73454062ada6334b4465af4
+ms.sourcegitcommit: 25acfa7d0153336c9a35d30a1dd422aeadc1342c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "61013407"
+ms.lasthandoff: 02/03/2022
+ms.locfileid: "62345803"
 ---
 # <a name="user-getmailtips"></a>user: getMailTips
 
@@ -18,9 +18,9 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Obter as Dicas de Email de um ou mais destinatários, conforme disponível para o usuário [de logom.](../resources/user.md)
+Obter as Dicas de Email de um ou mais destinatários, conforme disponível para o usuário [inscrevido](../resources/user.md).
 
-Observe que, ao fazer uma chamada para a ação, você pode solicitar que tipos específicos de Dicas de Email sejam retornados por mais de `POST` um destinatário de cada `getMailTips` vez. As Dicas de Email solicitadas são retornadas em uma coleção [mailTips.](../resources/mailtips.md)
+Observe que, ao fazer uma chamada `getMailTips` para a `POST` ação, você pode solicitar que tipos específicos de Dicas de Email sejam retornados por mais de um destinatário de cada vez. As Dicas de Email solicitadas são retornadas em uma coleção [mailTips](../resources/mailtips.md) .
 
 ## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
@@ -51,11 +51,11 @@ Forneça um objeto JSON com os seguintes parâmetros no corpo da solicitação.
 | Propriedade     | Tipo   |Descrição|
 |:---------------|:--------|:----------|
 |EndereçosEmail|Conjunto de cadeias de caracteres|Uma coleção de endereços SMTP de destinatários para receber as Dicas de Email.|
-|MailTipsOptions|Cadeia de caracteres|Uma enumeração de sinalizadores que representa as dicas de email solicitadas. Os valores possíveis são: `automaticReplies` , , , , , , , , , `customMailTip` e `deliveryRestriction` `externalMemberCount` `mailboxFullStatus` `maxMessageSize` `moderationStatus` `recipientScope` `recipientSuggestions` `totalMemberCount` .|
+|MailTipsOptions|Cadeia de caracteres|Uma enumeração de sinalizadores que representa as dicas de email solicitadas. Os valores possíveis são: , , , , , `mailboxFullStatus`, `maxMessageSize``moderationStatus`, `recipientScope`, , `recipientSuggestions`e `totalMemberCount`. `externalMemberCount``deliveryRestriction``customMailTip``automaticReplies`|
 
 ## <a name="response"></a>Resposta
 
-Se tiver êxito, este método retornará um código de resposta e uma `200 OK` coleção de [objetos mailTips](../resources/mailtips.md) no corpo da resposta.
+Se tiver êxito, este método retornará um `200 OK` código de resposta e uma coleção de [objetos mailTips](../resources/mailtips.md) no corpo da resposta.
 ## <a name="example"></a>Exemplo
 ##### <a name="request"></a>Solicitação
 O exemplo a seguir obtém Dicas de Email para os destinatários especificados, para qualquer configuração de resposta automática e o status completo da caixa de correio.
@@ -94,8 +94,12 @@ Content-Type: application/json
 [!INCLUDE [sample-code](../includes/snippets/java/user-getmailtips-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[Go](#tab/go)
+# <a name="go"></a>[Ir](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/user-getmailtips-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/user-getmailtips-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

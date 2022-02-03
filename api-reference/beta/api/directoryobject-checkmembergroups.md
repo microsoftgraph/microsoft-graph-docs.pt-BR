@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: keylimesoda
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: 7175adaa7eaf60b4e23c5cf3ccc8407ee513b4eb
-ms.sourcegitcommit: e497ed9bb56400bdd2bb53d52ddf057d9966220b
+ms.openlocfilehash: acf57a66d535f39d9ce29d1152b2ec22bc334781
+ms.sourcegitcommit: 25acfa7d0153336c9a35d30a1dd422aeadc1342c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/30/2021
-ms.locfileid: "61225014"
+ms.lasthandoff: 02/03/2022
+ms.locfileid: "62345640"
 ---
 # <a name="directoryobject-checkmembergroups"></a>directoryObject: checkMemberGroups
 
@@ -18,7 +18,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Verifique se há associação em uma lista especificada de grupos e retorne dessa lista os grupos dos [](../resources/device.md)quais o usuário [especificado](../resources/user.md) [,](../resources/group.md)grupo, entidade de [serviço,](../resources/serviceprincipal.md)contato [organizacional,](../resources/orgcontact.md)dispositivo ou objeto [de diretório](../resources/directoryobject.md) é um membro. Esta função é transitiva.
+Verifique se há associação em uma lista especificada de grupos e retorne dessa lista os grupos dos quais o [usuário, grupo](../resources/user.md)[, entidade](../resources/group.md) de serviço [especificado, contato](../resources/serviceprincipal.md) [organizacional, dispositivo](../resources/orgcontact.md) ou [](../resources/device.md)objeto [de diretório é](../resources/directoryobject.md) um membro. Esta função é transitiva.
 
 Você pode fazer check-up de no máximo 20 grupos por solicitação. Essa função dá suporte a todos os grupos provisionados no Azure AD. Como Microsoft 365 grupos não podem conter outros grupos, a associação em um Microsoft 365 grupo é sempre direta.
 
@@ -30,7 +30,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 | Tipo de permissão                        | Permissões (da com menos para a com mais privilégios)           |
 |:---------------------------------------|:------------------------------------------------------|
-| Delegada (conta corporativa ou de estudante)     | User.ReadBasic.All, User.Read.All, Directory.Read.All |
+| Delegado (conta corporativa ou de estudante)     | User.ReadBasic.All, User.Read.All, Directory.Read.All |
 | Delegado (conta pessoal da Microsoft) | Sem suporte.                                        |
 | Aplicativo                            | User.Read.All, Directory.Read.All                     |
 
@@ -54,7 +54,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegada (conta corporativa ou de estudante) | Application.Read.All, Directory.Read.All, Application.ReadWrite.All, Directory.ReadWrite.All, Directory.AccessAsUser.All    |
+|Delegado (conta corporativa ou de estudante) | Application.Read.All, Directory.Read.All, Application.ReadWrite.All, Directory.ReadWrite.All, Directory.AccessAsUser.All    |
 |Delegado (conta pessoal da Microsoft) | Sem suporte.    |
 |Aplicativo | Application.Read.All, Directory.Read.All, Application.ReadWrite.All, Directory.ReadWrite.All |
 
@@ -178,8 +178,12 @@ Content-type: application/json
 [!INCLUDE [sample-code](../includes/snippets/java/directoryobject-checkmembergroups-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[Go](#tab/go)
+# <a name="go"></a>[Ir](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/directoryobject-checkmembergroups-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/directoryobject-checkmembergroups-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -248,8 +252,12 @@ Content-type: application/json
 [!INCLUDE [sample-code](../includes/snippets/java/directoryobject-checkmembergroups-me-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[Go](#tab/go)
+# <a name="go"></a>[Ir](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/directoryobject-checkmembergroups-me-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/directoryobject-checkmembergroups-me-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

@@ -5,12 +5,12 @@ author: mkhribech
 ms.localizationpriority: medium
 doc_type: apiPageType
 ms.prod: cloud-communications
-ms.openlocfilehash: af78f3718c45861b82428c6733c1dc8e7468bfc0
-ms.sourcegitcommit: f336c5c49fbcebe55312656aa8b50511fd99a657
+ms.openlocfilehash: 1c02f930357889b53eac955f49d4095b289170ed
+ms.sourcegitcommit: 25acfa7d0153336c9a35d30a1dd422aeadc1342c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/09/2021
-ms.locfileid: "61390875"
+ms.lasthandoff: 02/03/2022
+ms.locfileid: "62344948"
 ---
 # <a name="presence-clearpresence"></a>presença: clearPresence
 
@@ -18,9 +18,9 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-[Desmarcar uma sessão de](presence-setpresence.md#presence-sessions) presença de um aplicativo para um usuário. Se for a única sessão de presença do usuário, uma **clearPresence** bem-sucedida altera a presença do usuário para `Offline/Offline` .
+[Desmarcar uma sessão de](presence-setpresence.md#presence-sessions) presença de um aplicativo para um usuário. Se for a única sessão de presença do usuário, uma **clearPresence** bem-sucedida altera a presença do usuário para `Offline/Offline`.
 
-Leia mais sobre [sessões de presença](presence-setpresence.md#presence-sessions) e seu [tempo de expiração e expiração.](presence-setpresence.md#timeout-expiration-and-keep-alive) 
+Leia mais sobre [sessões de presença](presence-setpresence.md#presence-sessions) e seu [tempo de expiração e expiração](presence-setpresence.md#timeout-expiration-and-keep-alive). 
 
 ## <a name="permissions"></a>Permissões
 A permissão a seguir é necessária para chamar a API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
@@ -49,7 +49,7 @@ Forneça um objeto JSON com os seguintes parâmetros no corpo da solicitação.
 
 | Parâmetro | Tipo   | Descrição                                   |
 | :-------- | :----- | :-------------------------------------------- |
-| sessionId | string | A ID da sessão de presença do aplicativo. |
+| sessionId | cadeia de caracteres | A ID da sessão de presença do aplicativo. |
 
 
 > [!IMPORTANT]
@@ -62,7 +62,7 @@ Se bem-sucedido, este método retorna um código de resposta `200 OK`.
 Se a sessão de presença não existir, este método retornará um `404 NotFound` código de resposta.
 
 ## <a name="examples"></a>Exemplos
-A solicitação a seguir mostra o aplicativo com ID `22553876-f5ab-4529-bffb-cfe50aa89f87` que limpa sua sessão de presença para o usuário `fa8bf3dc-eca7-46b7-bad1-db199b62afc3` .
+A solicitação a seguir mostra o aplicativo com ID `22553876-f5ab-4529-bffb-cfe50aa89f87` que limpa sua sessão de presença para o usuário `fa8bf3dc-eca7-46b7-bad1-db199b62afc3`.
 
 ### <a name="request"></a>Solicitação
 
@@ -97,8 +97,12 @@ Content-Type: application/json
 [!INCLUDE [sample-code](../includes/snippets/java/clear--presence-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[Go](#tab/go)
+# <a name="go"></a>[Ir](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/clear--presence-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/clear--presence-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

@@ -5,40 +5,40 @@ doc_type: resourcePageType
 description: Representa um grupo usado em um armazenamento de termos.
 ms.localizationpriority: medium
 ms.prod: taxonomy
-ms.openlocfilehash: 121f195e8054645be47d7a98c5287c52d754b4e7
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 1fa25c258050f1bf5cf2cea3e95a13e95f9b8125
+ms.sourcegitcommit: 25acfa7d0153336c9a35d30a1dd422aeadc1342c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59129751"
+ms.lasthandoff: 02/03/2022
+ms.locfileid: "62339911"
 ---
 # <a name="group-resource-type"></a>Tipo de recurso de grupo
 
 Namespace: microsoft.graph.termStore
 
 
-Representa um grupo usado em um armazenamento de [termos.](../resources/termstore-store.md) Um grupo é uma hierarquia lógica que contém uma coleção de conjuntos sob ele. 
+Representa um grupo usado em um armazenamento de [termos](../resources/termstore-store.md). Um grupo é uma hierarquia lógica que contém uma coleção de conjuntos sob ele. 
 
 Herda da [entidade](../resources/entity.md).
 
 
-## <a name="methods"></a>Métodos
+## <a name="methods"></a>Methods
 
 | Método                                                   | Tipo de retorno       |    Descrição      |
 |:---------------------------------------------------------|:------------------|:---------------------
-| [Criar grupo](../api/termstore-group-post.md)                     | [microsoft.graph.termStore.group] | Criar um grupo em um armazenamento de [termos.] |
-| [Obter grupo](../api/termstore-group-get.md)                           | [microsoft.graph.termStore.group] | Recupere os dados de um grupo em um armazenamento de [termos.] |
-| [Excluir grupo](../api/termstore-group-delete.md)                     | Nenhum |  Excluir um grupo em um armazenamento de [termos.] |
+| [Criar grupo](../api/termstore-group-post.md)                     | [microsoft.graph.termStore.group] | Crie um grupo em um armazenamento de [termos]. |
+| [Obter grupo](../api/termstore-group-get.md)                           | [microsoft.graph.termStore.group] | Recupere os dados de um grupo em um armazenamento de [termos]. |
+| [Excluir grupo](../api/termstore-group-delete.md)                     | Nenhum |  Exclua um grupo em um [armazenamento de termos]. |
 
 ## <a name="properties"></a>Propriedades
 
 | Propriedade             | Tipo               | Descrição                        |
 |:---------------------|:-------------------|:------------------------------------
 | createdDateTime      | DateTimeOffset     | Data e hora da criação do grupo. Somente leitura. |
-| description          | string             | Descrição que dá detalhes sobre o uso do termo. |
+| description          | string             | Descrição que fornece detalhes sobre o uso do termo. |
 | id                   | cadeia de caracteres             | Identificador exclusivo do grupo. Somente Leitura. |
 | displayName          | cadeia de caracteres             | Nome do grupo. |
-| escopo                | string              | Retorna o tipo de grupo. Os valores possíveis são 'global', 'system' e 'siteCollection'. |
+| escopo                | string              | Retorna o tipo do grupo. Os valores possíveis são: `global`, `system` e `siteCollection`. |
 | parentSiteId         | cadeia de caracteres             | ID do site pai deste grupo. |
 
 ## <a name="relationships"></a>Relações

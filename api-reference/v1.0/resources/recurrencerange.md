@@ -5,18 +5,18 @@ ms.localizationpriority: medium
 author: harini84
 ms.prod: governance
 doc_type: resourcePageType
-ms.openlocfilehash: db4f92ba06c7ba2d3bc6faed402b91161be5e300
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 826a5b8ff6075fa832ac4eaf0a6eb66ac6ef83b7
+ms.sourcegitcommit: 25acfa7d0153336c9a35d30a1dd422aeadc1342c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59078620"
+ms.lasthandoff: 02/03/2022
+ms.locfileid: "62341417"
 ---
 # <a name="recurrencerange-resource-type"></a>Tipo de recurso recurrenceRange
 
 Namespace: microsoft.graph
 
-Descreve um intervalo de datas sobre o qual um [event](event.md) recorrente se repete.
+Descreve um intervalo de datas sobre o qual um evento recorrente. Esse objeto compartilhado é usado para definir a recorrência de avaliações de [acesso, eventos](accessreviewscheduledefinition.md) de calendário e atribuições de pacote de [](event.md)[acesso no](accesspackageassignment.md) Azure AD.
 
 É possível especificar o intervalo de datas para um evento recorrente de uma de três maneiras, dependendo do seu cenário. Como você deve sempre especificar um valor de **startDate** para o intervalo de datas, é possível especificar um evento recorrente que termina em uma data específica, que não termina ou que termina após um número específico de ocorrências. As ocorrências reais dentro do intervalo de datas sempre seguem o padrão de recorrência que você especifica para o evento recorrente. Um evento recorrente é sempre definido por seu [recurrencePattern](recurrencepattern.md) (com que frequência o evento se repete) e seu **recurrenceRange** (por quanto tempo o evento se repete).
 

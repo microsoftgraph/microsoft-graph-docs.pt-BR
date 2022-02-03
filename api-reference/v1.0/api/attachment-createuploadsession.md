@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: abheek-das
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: bbb1aa1924283096e9caf41915c430ffe96212d1
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: 7ea2c56af093873ccb6c1d96e324905672f071ec
+ms.sourcegitcommit: 25acfa7d0153336c9a35d30a1dd422aeadc1342c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62111516"
+ms.lasthandoff: 02/03/2022
+ms.locfileid: "62342406"
 ---
 # <a name="attachment-createuploadsession"></a>attachment: createUploadSession
 
@@ -18,9 +18,9 @@ Namespace: microsoft.graph
 
 Crie uma sessão de carregamento que permita que um aplicativo carregue de forma iterativa intervalos de um arquivo, de modo a anexar o arquivo ao item Outlook especificado. O item pode ser uma [mensagem](../resources/message.md) ou [evento](../resources/event.md).
 
-Use essa abordagem para anexar um arquivo se o tamanho do arquivo estiver entre 3 MB e 150 MB. Para anexar um arquivo menor que 3 MB, faça uma operação na propriedade de navegação anexos do item Outlook; consulte como fazer isso para uma mensagem ou para um `POST` [evento](event-post-attachments.md).  [](message-post-attachments.md) 
+Use essa abordagem para anexar um arquivo se o tamanho do arquivo estiver entre 3 MB e 150 MB. Para anexar um arquivo menor que 3 MB, `POST` faça uma operação na propriedade de navegação **anexos** do item Outlook; consulte como fazer isso para uma mensagem ou para um [evento](event-post-attachments.md).[](message-post-attachments.md) 
 
-Como parte da resposta, essa ação retorna uma URL de carregamento que você pode usar em consultas `PUT` sequenciais subsequentes. Os headers de solicitação para `PUT` cada operação permitem especificar o intervalo exato de bytes a serem carregados. Isso permite que a transferência seja retomada, caso a conexão de rede seja largada durante o carregamento. 
+Como parte da resposta, essa ação retorna uma URL de carregamento que você pode usar em consultas sequenciais subsequentes `PUT` . Os headers de solicitação para cada `PUT` operação permitem especificar o intervalo exato de bytes a serem carregados. Isso permite que a transferência seja retomada, caso a conexão de rede seja largada durante o carregamento. 
 
 Veja a seguir as etapas para anexar um arquivo a um item Outlook usando uma sessão de carregamento:
 
@@ -78,17 +78,17 @@ Forneça um objeto JSON com os seguintes parâmetros no corpo da solicitação.
 
 | Parâmetro    | Tipo        | Descrição |
 |:-------------|:------------|:------------|
-|AttachmentItem|[attachmentItem](../resources/attachmentitem.md)|Representa atributos do item a ser carregado e anexado. No mínimo, especifique o tipo de anexo ( `file` ), um nome e o tamanho do arquivo.|
+|AttachmentItem|[attachmentItem](../resources/attachmentitem.md)|Representa atributos do item a ser carregado e anexado. No mínimo, especifique o tipo de anexo (`file`), um nome e o tamanho do arquivo.|
 
 ## <a name="response"></a>Resposta
 
-Se tiver êxito, este método retornará um código de resposta e um `201 Created` novo [objeto uploadSession](../resources/uploadsession.md) no corpo da resposta.
+Se tiver êxito, este método retornará um `201 Created` código de resposta e um novo [objeto uploadSession](../resources/uploadsession.md) no corpo da resposta.
 
 >**Observação**: 
 >
->A **propriedade uploadUrl** retornada como parte do objeto de resposta **uploadSession** é uma URL opaca para consultas subsequentes para carregar intervalos de `PUT` byte do arquivo. Ele contém o token de auth apropriado para consultas `PUT` subsequentes que expiram por **expirationDateTime**. Não personalize essa URL.
+>A **propriedade uploadUrl** retornada como parte do **objeto de resposta uploadSession** é uma URL `PUT` opaca para consultas subsequentes para carregar intervalos de byte do arquivo. Ele contém o token de auth apropriado para consultas `PUT` subsequentes que expiram por **expirationDateTime**. Não personalize essa URL.
 >
->A **propriedade nextExpectedRanges** especifica o próximo local de byte de arquivo a ser carregado, por exemplo, `"NextExpectedRanges":["2097152"]` . Você deve carregar os bytes em um arquivo na ordem.
+>A **propriedade nextExpectedRanges** especifica o próximo local de byte de arquivo a ser carregado, por exemplo, `"NextExpectedRanges":["2097152"]`. Você deve carregar os bytes em um arquivo na ordem.
 
 <!-- The **nextExpectedRanges** property specifies one or more ranges of bytes that the server is still missing for the file. These ranges are zero-indexed and of the format `{start}-{end}`, unless if the server misses the remainder of the bytes from the start of that range, in which case the format is simply `{start}`.  -->
 
@@ -139,6 +139,10 @@ Content-type: application/json
 [!INCLUDE [sample-code](../includes/snippets/go/attachment-createuploadsession-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/attachment-createuploadsession-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 #### <a name="response"></a>Resposta
@@ -170,7 +174,7 @@ Content-type: application/json
 
 O exemplo a seguir mostra como criar uma sessão de carregamento que pode ser usada para adicionar um anexo em linha grande a uma mensagem de rascunho.
 
-Para um anexo em linha, de set _isInline_ property to `true` and use the _contentId_ property to specify a CID for the attachment as shown below. No corpo da mensagem de rascunho, use o mesmo valor CID para indicar a posição onde você deseja incluir o anexo usando uma marca de referência HTML CID, por exemplo `<img src="cid:my_inline_picture">` . Ao carregar o arquivo com êxito, a mensagem renderizada incluirá o anexo como parte do corpo da mensagem no local especificado.
+Para um anexo em linha, de set _isInline_ property to `true` and use the _contentId_ property to specify a CID for the attachment as shown below. No corpo da mensagem de rascunho, use o mesmo valor CID para indicar a posição onde você deseja incluir o anexo usando uma marca de referência HTML CID, por exemplo `<img src="cid:my_inline_picture">`. Ao carregar o arquivo com êxito, a mensagem renderizada incluirá o anexo como parte do corpo da mensagem no local especificado.
 
 #### <a name="request"></a>Solicitação
 
@@ -214,6 +218,10 @@ Content-type: application/json
 
 # <a name="go"></a>[Ir](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/attachment-createuploadsession-inline-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/attachment-createuploadsession-inline-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
