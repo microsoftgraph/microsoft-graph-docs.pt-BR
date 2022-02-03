@@ -5,12 +5,12 @@ author: jpettere
 ms.localizationpriority: high
 ms.prod: users
 doc_type: resourcePageType
-ms.openlocfilehash: 561c90f89699638e4c9846074f9160b461ec9032
-ms.sourcegitcommit: 086e9a2ccaef411f9471cca164a79197bb254521
+ms.openlocfilehash: 275855ffe5b23e5a7d8b89a23bbb837984210610
+ms.sourcegitcommit: 25acfa7d0153336c9a35d30a1dd422aeadc1342c
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/13/2022
-ms.locfileid: "62014324"
+ms.lasthandoff: 02/03/2022
+ms.locfileid: "62345560"
 ---
 # <a name="user-resource-type"></a>Tipo de recurso de usuário
 
@@ -179,7 +179,7 @@ Esse recurso permite:
 | birthday | DateTimeOffset | O aniversário do usuário. O tipo de carimbo de data/hora representa informações de data e hora usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite UTC em 1º de janeiro de 2014 é `2014-01-01T00:00:00Z` <br><br>Retornado apenas em `$select`. |
 | businessPhones | Coleção de cadeias de caracteres | Números de telefone para o usuário. Somente um número pode ser definido para essa propriedade.<br><br>Somente leitura para usuários sincronizados do diretório local. Suporta `$filter` (`eq`, `not`, `ge`, `le`, `startsWith`).|
 | city | Cadeia de caracteres | A cidade em que o usuário está localizado. O comprimento máximo é de 128 caracteres. <br><br>Suporte `$filter` (`eq`, `ne`, `not`, `ge`, `le`, `in`, `startsWith`, e `eq` no `null` valores). |
-| CompanyName | String | O nome da empresa em que o usuário está associado. Essa propriedade pode ser útil para descrever a empresa de onde procede um usuário externo. O comprimento máximo do nome da empresa é 64 caracteres.<br><br>Suporte `$filter` (`eq`, `ne`, `not`, `ge`, `le`, `in`, `startsWith`, e `eq` no `null` valores).|
+| CompanyName | String | O nome da empresa em que o usuário está associado. Essa propriedade pode ser útil para descrever a empresa de onde procede um usuário externo. O tamanho máximo é de 64 caracteres.<br><br>Suporte `$filter` (`eq`, `ne`, `not`, `ge`, `le`, `in`, `startsWith`, e `eq` no `null` valores).|
 | consentProvidedForMinor | [consentProvidedForMinor](#consentprovidedforminor-values) | Define se o consentimento foi obtido para menores. Valores permitidos: `null`, `granted`, `denied` e `notRequired`. Confira as [definições de propriedades da faixa etária legal](#legal-age-group-property-definitions) para obter mais informações. <br><br>Suporte `$filter` (`eq`, `ne`, `not` e `in`).|
 | country | Cadeia de caracteres | O país/região em que o usuário está localizado; por exemplo, `US` ou `UK`. O comprimento máximo é de 128 caracteres. <br><br>Suporte `$filter` (`eq`, `ne`, `not`, `ge`, `le`, `in`, `startsWith`, e `eq` no `null` valores). |
 | createdDateTime | DateTimeOffset | A data e hora que o usuário foi criado. Não é possível modificar o valor e ele é preenchido automaticamente quando a entidade é criada. O tipo DateTimeOffset representa informações de data e hora usando o formato ISO 8601 e está sempre no horário UTC. A propriedade é anulável. Um valor nulo indica que uma hora de criação exata não pode ser determinada pelo usuário. Somente leitura. <br><br>Suporta `$filter` (`eq`, `ne`, `not` , `ge`, `le`, `in`). |
@@ -189,7 +189,7 @@ Esse recurso permite:
 | departamento | String | O nome do departamento no qual o usuário trabalha. O comprimento máximo é de 64 caracteres.<br><br>Suporte `$filter` (`eq`, `ne`, `not` , `ge`, `le`, `in`, e `eq` no `null` valores). |
 | displayName | String | O nome exibido no catálogo de endereços para o usuário. Geralmente é a combinação do nome do usuário, inicial do meio e sobrenome. Esta propriedade é necessária quando um usuário é criado e não pode ser limpa durante as atualizações. O comprimento máximo é de 256 caracteres.<br><br>Suporte `$filter` (`eq`, `ne`, `not` , `ge`, `le`, `in`, `startsWith`, e `eq` no `null` valores), `$orderBy`, e `$search`.|
 | employeeHireDate | DateTimeOffset | A data e a hora em que o usuário foi contratado ou começará a trabalhar em caso de futura contratação. <br><br>Suporta `$filter` (`eq`, `ne`, `not` , `ge`, `le`, `in`).|
-| employeeId | String | O identificador de funcionário atribuído ao usuário pela organização. <br><br>Suporte `$filter` (`eq`, `ne`, `not` , `ge`, `le`, `in`, `startsWith`, e `eq` no `null` valores).|
+| employeeId | String | O identificador de funcionário atribuído ao usuário pela organização. O comprimento máximo é de 16 caracteres.<br><br>Suporte `$filter` (`eq`, `ne`, `not` , `ge`, `le`, `in`, `startsWith`, e `eq` no `null` valores).|
 |employeeOrgData|[employeeOrgData](employeeorgdata.md) |Representa os dados da organização (por exemplo, divisão e costCenter) associados a um usuário. <br><br>Suporta `$filter` (`eq`, `ne`, `not` , `ge`, `le`, `in`).|
 | employeeType | String | Captura o tipo de trabalhador corporativo. Por exemplo, `Employee`, `Contractor`, `Consultant` ou `Vendor`. Suporta `$filter` (`eq`, `ne`, `not` , `ge`, `le`, `in`, `startsWith`).|
 | externalUserState | String | Para um usuário externo convidado para o locatário usando a [API de convite](../api/invitation-post.md), essa propriedade representa o status do convite do usuário convidado. Para usuários convidados, o estado pode ser `PendingAcceptance` ou `Accepted` ou `null` para todos os outros usuários. <br><br>Suporta `$filter` (`eq`, `ne`, `not` , `in`). |
