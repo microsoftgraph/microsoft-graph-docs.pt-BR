@@ -5,12 +5,12 @@ author: mahage-msft
 ms.localizationpriority: medium
 ms.prod: ediscovery
 doc_type: apiPageType
-ms.openlocfilehash: c683bac5f72425c5f580fbeeccbc5fd5391295f8
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: 14e967c54d69c211489e14aa3ac82b427045bde1
+ms.sourcegitcommit: 25acfa7d0153336c9a35d30a1dd422aeadc1342c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "61030257"
+ms.lasthandoff: 02/03/2022
+ms.locfileid: "62343564"
 ---
 # <a name="case-close"></a>case: close
 
@@ -18,7 +18,7 @@ Namespace: microsoft.graph.ediscovery
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Feche um caso de Descoberta e. Para obter detalhes, consulte [Close a case](/microsoft-365/compliance/close-or-delete-case#close-a-case).
+Feche um caso de Descoberta e. Para obter detalhes, consulte [Fechar um caso](/microsoft-365/compliance/close-or-delete-case#close-a-case).
 
 ## <a name="permissions"></a>Permissões
 
@@ -91,8 +91,12 @@ POST https://graph.microsoft.com/beta/compliance/ediscovery/cases/061b9a92-8926-
 [!INCLUDE [sample-code](../includes/snippets/java/ediscoverycase-close-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[Go](#tab/go)
+# <a name="go"></a>[Ir](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/case-close-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/case-close-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

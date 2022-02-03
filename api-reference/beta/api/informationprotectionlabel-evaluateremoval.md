@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: tommoser
 ms.prod: security
 doc_type: apiPageType
-ms.openlocfilehash: c6937aefa936f48fa0054490991c7c85c4625fa1
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: 09cfa79cf9eb0d4dfb9b1d5935c1bc715daf2e36
+ms.sourcegitcommit: 25acfa7d0153336c9a35d30a1dd422aeadc1342c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "61019854"
+ms.lasthandoff: 02/03/2022
+ms.locfileid: "62339847"
 ---
 # <a name="informationprotectionlabel-evaluateremoval"></a>informationProtectionLabel: evaluateRemoval
 
@@ -20,7 +20,7 @@ Namespace: microsoft.graph
 
 Indique ao aplicativo de consumo quais ações devem ser tomadas para remover as informações do rótulo.
 
-Dado [contentInfo](../resources/contentinfo.md) como uma entrada, que inclui pares de chave/valor de metadados de conteúdo [existentes,](../resources/keyvaluepair.md)a API retorna uma [informationProtectionAction](../resources/informationprotectionaction.md) que contém alguma combinação de um dos seguintes: 
+Dado [contentInfo](../resources/contentinfo.md) como uma entrada, que inclui pares de chave/valor de metadados de conteúdo [existentes](../resources/keyvaluepair.md), a API retorna uma [informationProtectionAction](../resources/informationprotectionaction.md) que contém alguma combinação de um dos seguintes: 
 
 * [justifyAction](../resources/justifyaction.md)
 * [metadataAction](../resources/metadataaction.md)
@@ -67,7 +67,7 @@ Forneça um objeto JSON com os seguintes parâmetros no corpo da solicitação.
 
 ## <a name="response"></a>Resposta
 
-Se tiver êxito, este método retornará um código de resposta e um novo objeto da coleção `200 OK` [informationProtectionAction](../resources/informationprotectionaction.md) no corpo da resposta. O [objeto informationProtectionAction](../resources/informationprotectionaction.md) conterá um [objeto metadataAction](../resources/metadataaction.md) que informa ao aplicativo quais metadados remover. 
+Se tiver êxito, este método retornará um `200 OK` código de resposta e um novo [objeto da coleção informationProtectionAction](../resources/informationprotectionaction.md) no corpo da resposta. O [objeto informationProtectionAction](../resources/informationprotectionaction.md) conterá um [objeto metadataAction](../resources/metadataaction.md) que informa ao aplicativo quais metadados remover. 
 
 ## <a name="examples"></a>Exemplos
 
@@ -157,8 +157,12 @@ User-agent: ContosoLOBApp/1.0
 [!INCLUDE [sample-code](../includes/snippets/java/informationprotectionlabel-evaluateremoval-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[Go](#tab/go)
+# <a name="go"></a>[Ir](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/informationprotectionlabel-evaluateremoval-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/informationprotectionlabel-evaluateremoval-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

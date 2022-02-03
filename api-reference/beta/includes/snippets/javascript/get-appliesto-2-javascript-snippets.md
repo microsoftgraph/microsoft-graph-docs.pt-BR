@@ -1,11 +1,11 @@
 ---
 description: Arquivo gerado automaticamente. NÃO MODIFICAR
-ms.openlocfilehash: 041c78f529cbd674ac3f0da5f8021ce15e27a73919679a36c27de0d3a78dfaea
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 4057d5a93811f2c4aebde910be1dda1967e2587d
+ms.sourcegitcommit: 25acfa7d0153336c9a35d30a1dd422aeadc1342c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "57213590"
+ms.lasthandoff: 02/03/2022
+ms.locfileid: "62352414"
 ---
 ```javascript
 
@@ -15,7 +15,7 @@ const options = {
 
 const client = Client.init(options);
 
-let appliesTo = await client.api('/policies/homeRealmDiscoveryPolicies/{id}/appliesTo')
+let appliesTo = await client.api('/policies/homeRealmDiscoveryPolicies/6c6f154f-cb39-4ff9-bf5b-62d5ad585cde/appliesTo')
     .version('beta')
     .get();
 

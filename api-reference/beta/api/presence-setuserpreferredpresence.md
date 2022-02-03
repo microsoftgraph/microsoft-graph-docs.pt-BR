@@ -5,12 +5,12 @@ author: mkhribech
 ms.localizationpriority: medium
 doc_type: apiPageType
 ms.prod: cloud-communications
-ms.openlocfilehash: 005c0c6cd0f35455780c11650a10bab96280bc6d
-ms.sourcegitcommit: c47e3d1f3c5f7e2635b2ad29dfef8fe7c8080bc8
+ms.openlocfilehash: 37fd49ea1f45ae8c1bb06e609d6fbc91d465a521
+ms.sourcegitcommit: 25acfa7d0153336c9a35d30a1dd422aeadc1342c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/15/2021
-ms.locfileid: "61526083"
+ms.lasthandoff: 02/03/2022
+ms.locfileid: "62344934"
 ---
 # <a name="presence-setuserpreferredpresence"></a>presença: setUserPreferredPresence
 
@@ -24,15 +24,15 @@ A presença preferencial só entra em vigor quando há pelo menos uma sessão [d
 
 Uma sessão de presença pode ser criada como resultado de uma operação [setPresence](presence-setpresence.md) bem-sucedida ou se o usuário estiver Teams cliente. 
 
-Leia mais sobre [sessões de presença](presence-setpresence.md#presence-sessions) e seu [tempo de expiração e expiração.](presence-setpresence.md#timeout-expiration-and-keep-alive) 
+Leia mais sobre [sessões de presença](presence-setpresence.md#presence-sessions) e seu [tempo de expiração e expiração](presence-setpresence.md#timeout-expiration-and-keep-alive). 
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>Permissões
 A permissão a seguir é necessária para chamar a API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 | Tipo de permissão                        | Permissões (da com menos para a com mais privilégios) |
 | :------------------------------------- | :------------------------------------------ |
 | Delegado (conta corporativa ou de estudante)     | Presence.ReadWrite                          |
-| Delegada (conta pessoal da Microsoft) | Sem suporte.                              |
+| Delegado (conta pessoal da Microsoft) | Sem suporte.                              |
 | Aplicativo                            | Presence.ReadWrite.All                      |
 
 ## <a name="http-request"></a>Solicitação HTTP
@@ -52,11 +52,11 @@ Forneça um objeto JSON com os seguintes parâmetros no corpo da solicitação.
 
 | Parâmetro          | Tipo     | Descrição                                                                                                                                                                                                                                    |
 | :----------------- | :------- | :--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| availability       | string   | As informações de presença base.                                                                                                                                                                                                                 |
-| atividade           | string   | As informações complementares à disponibilidade.                                                                                                                                                                                                  |
+| availability       | cadeia de caracteres   | As informações de presença base.                                                                                                                                                                                                                 |
+| atividade           | cadeia de caracteres   | As informações complementares à disponibilidade.                                                                                                                                                                                                  |
 | expirationDuration | duração | A expiração da sessão de presença do aplicativo. O valor é representado no formato ISO 8601 por durações.<br/>Se não for fornecido, será aplicada uma expiração padrão:<br/>DoNotDisturb ou Ocupado: expira em 1 dia<br/>Todos os outros: expira em 7 dias |
 
-As combinações de **disponibilidade** e atividade com suporte **são:**
+As combinações **de disponibilidade e** atividade com **suporte são:**
 
 | availability | atividade     | Descrição                                         |
 | :----------- | :----------- | :-------------------------------------------------- |
@@ -72,7 +72,7 @@ Se tiver êxito, este método retornará um código de resposta `200 OK`.
 
 ## <a name="examples"></a>Exemplos
 
-A solicitação a seguir define a presença preferencial do usuário como DoNotDisturb para o usuário , com a `fa8bf3dc-eca7-46b7-bad1-db199b62afc3` expiração de 8 horas.
+A solicitação a seguir define a presença preferencial do usuário como DoNotDisturb para o usuário `fa8bf3dc-eca7-46b7-bad1-db199b62afc3`, com a expiração de 8 horas.
 
 #### <a name="request"></a>Solicitação
 
@@ -108,8 +108,12 @@ Content-Type: application/json
 [!INCLUDE [sample-code](../includes/snippets/java/setuserpreferredpresence-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[Go](#tab/go)
+# <a name="go"></a>[Ir](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/setuserpreferredpresence-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/setuserpreferredpresence-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

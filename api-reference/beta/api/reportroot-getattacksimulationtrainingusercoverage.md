@@ -5,21 +5,21 @@ author: Gopal-MSFT
 ms.localizationpriority: medium
 ms.prod: reports
 doc_type: apiPageType
-ms.openlocfilehash: da87fd3327a81836668e9591124b4603b4bcc4fd
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: 6f15b6ff9c2d85f83b6df333d3ed38fdfe7b972e
+ms.sourcegitcommit: 25acfa7d0153336c9a35d30a1dd422aeadc1342c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62093357"
+ms.lasthandoff: 02/03/2022
+ms.locfileid: "62346147"
 ---
 # <a name="reportroot-getattacksimulationtrainingusercoverage"></a>reportRoot: getAttackSimulationTrainingUserCoverage
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Listar [cobertura de treinamento](../resources/attacksimulationtrainingusercoverage.md) para cada usuário de um locatário em campanhas de simulação e treinamento de ataques.
+[Listar cobertura de treinamento](../resources/attacksimulationtrainingusercoverage.md) para cada usuário de um locatário em campanhas de simulação e treinamento de ataques.
 
-Esta função é `@odata.nextLink` compatível com paginação.
+Esta função é compatível `@odata.nextLink` com paginação.
 
 ## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
@@ -50,7 +50,7 @@ Não forneça um corpo de solicitação para esse método.
 
 ## <a name="response"></a>Resposta
 
-Se tiver êxito, essa função retornará um código de resposta e uma `200 OK` [coleção attackSimulationTrainingUserCoverage](../resources/attacksimulationtrainingusercoverage.md) no corpo da resposta.
+Se tiver êxito, essa função retornará `200 OK` um código de resposta e uma [coleção attackSimulationTrainingUserCoverage](../resources/attacksimulationtrainingusercoverage.md) no corpo da resposta.
 
 ## <a name="examples"></a>Exemplos
 
@@ -83,6 +83,10 @@ GET https://graph.microsoft.com/beta/reports/getAttackSimulationTrainingUserCove
 
 # <a name="go"></a>[Ir](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/reportroot-getattacksimulationtrainingusercoverage-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/reportroot-getattacksimulationtrainingusercoverage-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

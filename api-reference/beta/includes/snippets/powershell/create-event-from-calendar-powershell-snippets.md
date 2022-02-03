@@ -1,11 +1,11 @@
 ---
 description: Arquivo gerado automaticamente. NÃO MODIFICAR
-ms.openlocfilehash: b8a638f5e1d311fd6f5c0fae8f55f8859a3908c9
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: 015288f54d42b5282592518c49b1b7c71f02265f
+ms.sourcegitcommit: 25acfa7d0153336c9a35d30a1dd422aeadc1342c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62130020"
+ms.lasthandoff: 02/03/2022
+ms.locfileid: "62349355"
 ---
 ```powershell
 
@@ -40,6 +40,7 @@ $params = @{
     TransactionId = "7E163156-7762-4BEB-A1C6-729EA81755A7"
 }
 
+# A UPN can also be used as -UserId.
 New-MgUserCalendarEvent -UserId $userId -CalendarId $calendarId -BodyParameter $params
 
 ```
