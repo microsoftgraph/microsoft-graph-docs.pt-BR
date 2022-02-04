@@ -5,13 +5,8 @@ author: mkhribech
 ms.localizationpriority: medium
 ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: edabeb0cee6148d55b1cf52052ababda367d9064
-ms.sourcegitcommit: ba46f9f77d1e0eb9c7f5b2f4366534bfcf99d9c0
-ms.translationtype: MT
-ms.contentlocale: pt-BR
-ms.lasthandoff: 12/17/2021
-ms.locfileid: "61561323"
 ---
+
 # <a name="create-meetingregistration"></a>Criar meetingRegistration
 
 Namespace: microsoft.graph
@@ -20,7 +15,7 @@ Namespace: microsoft.graph
 
 Crie e habilita o registro [para um onlineMeeting](../resources/onlinemeeting.md) em nome do organizador. Uma reunião online só pode ter um registro habilitado.
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>Permissões
 
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
@@ -45,14 +40,14 @@ POST /me/onlineMeetings/{id}/registration
 
 ## <a name="request-body"></a>Corpo da solicitação
 
-No corpo da solicitação, fornece uma representação JSON de um [objeto meetingRegistration.](../resources/meetingregistration.md)
+No corpo da solicitação, fornece uma representação JSON de um [objeto meetingRegistration](../resources/meetingregistration.md) .
 
 > [!IMPORTANT]
-> Você deve fornecer a **propriedade @odata.type** para especificar o tipo de registro. Para obter mais detalhes, consulte o exemplo [a seguir](#example).
+> Você deve fornecer a **propriedade @odata.type** para especificar o tipo de registro. Para obter mais detalhes, consulte o [exemplo a seguir](#example).
 
 ## <a name="response"></a>Resposta
 
-Se tiver êxito, este método retornará um código de resposta e um `201 Created` [objeto meetingRegistration](../resources/meetingregistration.md) no corpo da resposta.
+Se tiver êxito, este método retornará um `201 Created` código de resposta e um [objeto meetingRegistration](../resources/meetingregistration.md) no corpo da resposta.
 
 > [!NOTE]
 >
@@ -119,7 +114,7 @@ Content-Type: application/json
 [!INCLUDE [sample-code](../includes/snippets/java/create-registration-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[Go](#tab/go)
+# <a name="go"></a>[Ir](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/create-registration-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 

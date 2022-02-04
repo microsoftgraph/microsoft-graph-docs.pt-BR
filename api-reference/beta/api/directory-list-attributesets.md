@@ -5,13 +5,8 @@ author: rolyon
 ms.localizationpriority: medium
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: ce1a84bad9dd6b814af51c1cb32b6427a670f740
-ms.sourcegitcommit: 709d2e3069765c2e570ac1128847c165ab233aa8
-ms.translationtype: MT
-ms.contentlocale: pt-BR
-ms.lasthandoff: 01/24/2022
-ms.locfileid: "62184042"
 ---
+
 # <a name="list-attributesets"></a>Listar attributeSets
 Namespace: microsoft.graph
 
@@ -24,11 +19,11 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 |Tipo de permissão|Permissões (da com menos para a com mais privilégios)|
 |:---|:---|
-|Delegado (conta corporativa ou de estudante)|CustomSecAttributeDefinition.ReadWrite.All|
+|Delegado (conta corporativa ou de estudante)|CustomSecAttributeDefinition.Read.All, CustomSecAttributeDefinition.ReadWrite.All|
 |Delegado (conta pessoal da Microsoft)|Sem suporte.|
-|Application|CustomSecAttributeDefinition.ReadWrite.All|
+|Aplicativo|CustomSecAttributeDefinition.Read.All, CustomSecAttributeDefinition.ReadWrite.All|
 
-O usuário inscreveu também deve ter uma das seguintes funções [de diretório:](/azure/active-directory/roles/permissions-reference)
+O usuário inscreveu também deve ter uma das seguintes funções [de diretório](/azure/active-directory/roles/permissions-reference):
 
 + Leitor de Atribuição de Atributo
 + Leitor de Definição de Atributo
@@ -48,7 +43,7 @@ GET /directory/attributeSets
 ```
 
 ## <a name="optional-query-parameters"></a>Parâmetros de consulta opcionais
-Este método dá suporte `$select` aos `$top` parâmetros de consulta , e OData para ajudar a personalizar `$orderBy` a resposta. Para obter informações gerais, acesse [Parâmetros de consulta OData](/graph/query-parameters).
+Este método dá suporte aos `$select`parâmetros de consulta , `$top`e `$orderBy` OData para ajudar a personalizar a resposta. Para obter informações gerais, acesse [Parâmetros de consulta OData](/graph/query-parameters).
 
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
 |Nome|Descrição|
@@ -60,7 +55,7 @@ Não forneça um corpo de solicitação para esse método.
 
 ## <a name="response"></a>Resposta
 
-Se tiver êxito, este método retornará um código de resposta e uma `200 OK` coleção [de objetos attributeSet](../resources/attributeset.md) no corpo da resposta.
+Se tiver êxito, este método retornará um `200 OK` código de resposta e uma coleção [de objetos attributeSet](../resources/attributeset.md) no corpo da resposta.
 
 ## <a name="examples"></a>Exemplos
 

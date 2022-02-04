@@ -5,13 +5,8 @@ author: rolyon
 ms.localizationpriority: medium
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: 9317e824ce91efe2f5afe7158f595e75b1f50893
-ms.sourcegitcommit: 709d2e3069765c2e570ac1128847c165ab233aa8
-ms.translationtype: MT
-ms.contentlocale: pt-BR
-ms.lasthandoff: 01/24/2022
-ms.locfileid: "62184014"
 ---
+
 # <a name="list-allowedvalues"></a>Listar allowedValues
 Namespace: microsoft.graph
 
@@ -24,11 +19,11 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 |Tipo de permissão|Permissões (da com menos para a com mais privilégios)|
 |:---|:---|
-|Delegado (conta corporativa ou de estudante)|CustomSecAttributeDefinition.ReadWrite.All|
+|Delegado (conta corporativa ou de estudante)|CustomSecAttributeDefinition.Read.All, CustomSecAttributeDefinition.ReadWrite.All|
 |Delegado (conta pessoal da Microsoft)|Sem suporte.|
-|Application|CustomSecAttributeDefinition.ReadWrite.All|
+|Aplicativo|CustomSecAttributeDefinition.Read.All, CustomSecAttributeDefinition.ReadWrite.All|
 
-O usuário inscreveu também deve ter uma das seguintes funções [de diretório:](/azure/active-directory/roles/permissions-reference)
+O usuário inscreveu também deve ter uma das seguintes funções [de diretório](/azure/active-directory/roles/permissions-reference):
 
 + Leitor de Atribuição de Atributo
 + Leitor de Definição de Atributo
@@ -49,7 +44,7 @@ GET /directory/customSecurityAttributeDefinitions/{customSecurityAttributeDefini
 
 
 ## <a name="optional-query-parameters"></a>Parâmetros de consulta opcionais
-Este método dá suporte aos `$select` parâmetros de consulta OData para ajudar a personalizar a resposta. Para obter informações gerais, acesse [Parâmetros de consulta OData](/graph/query-parameters).
+Este método dá suporte aos parâmetros `$select` de consulta OData para ajudar a personalizar a resposta. Para obter informações gerais, acesse [Parâmetros de consulta OData](/graph/query-parameters).
 
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
 |Nome|Descrição|
@@ -61,7 +56,7 @@ Não forneça um corpo de solicitação para esse método.
 
 ## <a name="response"></a>Resposta
 
-Se tiver êxito, este método retornará um código de resposta e uma `200 OK` coleção [de objetos allowedValue](../resources/allowedvalue.md) no corpo da resposta.
+Se tiver êxito, este método retornará um `200 OK` código de resposta e uma coleção [de objetos allowedValue](../resources/allowedvalue.md) no corpo da resposta.
 
 ## <a name="examples"></a>Exemplos
 

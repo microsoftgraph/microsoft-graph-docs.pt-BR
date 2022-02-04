@@ -3,13 +3,8 @@ title: Problemas conhecidos com o Microsoft Graph
 description: Este artigo descreve os problemas conhecidos com o Microsoft Graph.
 author: MSGraphDocsVTeam
 ms.localizationpriority: high
-ms.openlocfilehash: 4c183efa64f8df151df8ff070dd0df1555b101b5
-ms.sourcegitcommit: 25acfa7d0153336c9a35d30a1dd422aeadc1342c
-ms.translationtype: HT
-ms.contentlocale: pt-BR
-ms.lasthandoff: 02/03/2022
-ms.locfileid: "62341774"
 ---
+
 # <a name="known-issues-with-microsoft-graph"></a>Problemas conhecidos com o Microsoft Graph
 
 Este artigo descreve os problemas conhecidos com o Microsoft Graph. 
@@ -337,7 +332,7 @@ No momento, as solicitações de lote JSON estão limitadas a 20 solicitações 
 * Dependendo da parte das APIs da solicitação em lote, os serviços subjacentes impõem suas próprias limitações que afetam os aplicativos que usam o Microsoft Graph para acessá-los.
 * As solicitações em um lote são avaliadas individualmente em relação às limitações e, se qualquer solicitação exceder os limites, ela falhará com um status de 429.
 
-Para obter mais detalhes, visite [Limitação e envio em lote](/graph/concepts/throttling.md#throttling-and-batching).
+Para obter mais detalhes, visite [Limitação e envio em lote](/graph/throttling#throttling-and-batching).
 
 ### <a name="request-dependencies-are-limited"></a>As dependências de solicitação são limitadas
 

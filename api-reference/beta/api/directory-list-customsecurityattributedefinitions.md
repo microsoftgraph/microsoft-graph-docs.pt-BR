@@ -5,13 +5,8 @@ author: rolyon
 ms.localizationpriority: medium
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: 034214b59f3279534df41b26454e7be27311247a
-ms.sourcegitcommit: 709d2e3069765c2e570ac1128847c165ab233aa8
-ms.translationtype: MT
-ms.contentlocale: pt-BR
-ms.lasthandoff: 01/24/2022
-ms.locfileid: "62184077"
 ---
+
 # <a name="list-customsecurityattributedefinitions"></a>Listar customSecurityAttributeDefinitions
 Namespace: microsoft.graph
 
@@ -24,11 +19,11 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 |Tipo de permissão|Permissões (da com menos para a com mais privilégios)|
 |:---|:---|
-|Delegado (conta corporativa ou de estudante)|CustomSecAttributeDefinition.ReadWrite.All|
+|Delegado (conta corporativa ou de estudante)|CustomSecAttributeDefinition.Read.All, CustomSecAttributeDefinition.ReadWrite.All|
 |Delegado (conta pessoal da Microsoft)|Sem suporte.|
-|Application|CustomSecAttributeDefinition.ReadWrite.All|
+|Aplicativo|CustomSecAttributeDefinition.Read.All, CustomSecAttributeDefinition.ReadWrite.All|
 
-O usuário inscreveu também deve ter uma das seguintes funções [de diretório:](/azure/active-directory/roles/permissions-reference)
+O usuário inscreveu também deve ter uma das seguintes funções [de diretório](/azure/active-directory/roles/permissions-reference):
 
 + Leitor de Definição de Atributo
 + Administrador de Atribuição de Atributo
@@ -47,7 +42,7 @@ GET /directory/customSecurityAttributeDefinitions
 ```
 
 ## <a name="optional-query-parameters"></a>Parâmetros de consulta opcionais
-Este método dá suporte aos parâmetros de consulta , , e ( ) OData para `$select` ajudar a personalizar a `$top` `$expand` `$filter` `eq` resposta. Para obter informações gerais, acesse [Parâmetros de consulta OData](/graph/query-parameters).
+Este método dá suporte aos `$select`parâmetros de consulta , `$top``$expand`, e `$filter` (`eq`) OData para ajudar a personalizar a resposta. Para obter informações gerais, acesse [Parâmetros de consulta OData](/graph/query-parameters).
 
 A `allowedValues` propriedade de navegação não é retornada ou expandida por padrão e deve ser especificada em uma `$expand` consulta. Por exemplo, `/directory/customSecurityAttributeDefinitions?$expand=allowedValues`.
 
@@ -61,7 +56,7 @@ Não forneça um corpo de solicitação para esse método.
 
 ## <a name="response"></a>Resposta
 
-Se tiver êxito, este método retornará um código de resposta e uma `200 OK` coleção [de objetos customSecurityAttributeDefinition](../resources/customsecurityattributedefinition.md) no corpo da resposta.
+Se tiver êxito, este método retornará `200 OK` um código de resposta e uma coleção [de objetos customSecurityAttributeDefinition](../resources/customsecurityattributedefinition.md) no corpo da resposta.
 
 ## <a name="examples"></a>Exemplos
 
@@ -244,7 +239,7 @@ Content-Type: application/json
 
 ### <a name="example-3-filter-custom-security-attributes-based-on-attribute-set"></a>Exemplo 3: Filtrar atributos de segurança personalizados com base no conjunto de atributos
 
-O exemplo a seguir recupera definições de atributo de segurança personalizadas que estão no conjunto de atributos, estão ativas `Engineering` e do tipo String.
+O exemplo a seguir recupera definições de atributo de segurança personalizadas que estão `Engineering` no conjunto de atributos, estão ativas e do tipo String.
 
 #### <a name="request"></a>Solicitação
 
