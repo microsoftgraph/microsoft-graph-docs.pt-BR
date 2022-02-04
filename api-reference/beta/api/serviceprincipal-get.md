@@ -5,13 +5,8 @@ author: sureshja
 ms.localizationpriority: high
 ms.prod: applications
 doc_type: apiPageType
-ms.openlocfilehash: 4009a12b4bfbbf3635a8138fbd7391445c303505
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
-ms.translationtype: HT
-ms.contentlocale: pt-BR
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62098924"
 ---
+
 # <a name="get-serviceprincipal"></a>Obter um servicePrincipal
 
 Namespace: microsoft.graph
@@ -145,6 +140,11 @@ Content-type: application/json
         ],
         "signInAudience": "AzureADandPersonalMicrosoftAccount",
         "tags": [],
+        "verifiedPublisher": {
+            "displayName": "publisher_contoso",
+            "verifiedPublisherId": "9999999",
+             "addedDateTime": "2021-04-24T17:49:44Z"
+        },
         "addIns": [],
         "api": {
             "resourceSpecificApplicationPermissions": []
@@ -209,7 +209,7 @@ Atributo nº 4
 + Tipo de dados de atributo: cadeia de caracteres
 + Valor do atributo: `"Public"`
 
-Para obter atribuições de atributo de segurança personalizados, a entidade de chamada deve receber a função Leitor de Atribuição de Atributos ou Administrador de Atribuição de Atributos e deve receber a permissão *CustomSecAttributeAssignment.ReadWrite.All*.
+Para obter atribuições de atributo de segurança personalizadas, a entidade de chamada deve receber a função Leitor de Atribuição de Atributo ou Administrador de Atribuição de Atributo e deve receber a permissão *CustomSecAttributeAssignment.Read.All* ou *CustomSecAttributeAssignment.ReadWrite.All*.
 
 #### <a name="request"></a>Solicitação
 
