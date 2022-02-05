@@ -1,22 +1,17 @@
 ---
 title: 'directoryObject: checkMemberObjects'
-description: Verifique se há associação em uma lista de grupos, unidades administrativas ou funções de diretório para o usuário, grupo, entidade de serviço, contato organizacional, dispositivo ou objeto de diretório especificado.
+description: 'Verifique se há associação em uma lista de grupos, unidades administrativas ou funções de diretório para o usuário, grupo, entidade de serviço, contato organizacional, dispositivo ou objeto de diretório especificado.'
 ms.localizationpriority: medium
 author: jpettere
 ms.prod: users
 doc_type: apiPageType
-ms.openlocfilehash: 2d4c707862931d44319eda8a7fc7037868775c0b
-ms.sourcegitcommit: 25acfa7d0153336c9a35d30a1dd422aeadc1342c
-ms.translationtype: MT
-ms.contentlocale: pt-BR
-ms.lasthandoff: 02/03/2022
-ms.locfileid: "62346706"
 ---
+
 # <a name="directoryobject-checkmemberobjects"></a>directoryObject: checkMemberObjects
 
 Namespace: microsoft.graph
 
-Verifique se há associação em uma lista de grupos, unidades administrativas ou funções de diretório para o [usuário, grupo](../resources/user.md)[, entidade](../resources/group.md) de [serviço](../resources/serviceprincipal.md), contato [organizacional,](../resources/orgcontact.md) [dispositivo](../resources/device.md) ou [objeto de diretório especificado](../resources/directoryobject.md). Esse método é transitivo.
+Verifique se há associação em uma lista de IDs de grupo, IDs de unidade administrativa ou IDs de função de diretório, para as IDs do [usuário, grupo](../resources/user.md)[,](../resources/group.md) [entidade de serviço](../resources/serviceprincipal.md), contato [](../resources/device.md)[organizacional, dispositivo](../resources/orgcontact.md) ou objeto [de diretório especificado](../resources/directoryobject.md). Esse método é transitivo.
 
 ## <a name="permissions"></a>Permissões
 

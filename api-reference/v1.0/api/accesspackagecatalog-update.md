@@ -5,12 +5,6 @@ author: markwahl-msft
 ms.localizationpriority: medium
 ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: 9e98ef1781168a502d5db95de9c87680fb5fc40d
-ms.sourcegitcommit: e1dd9860906e0b415fd376d70df1f928d1f3d29e
-ms.translationtype: MT
-ms.contentlocale: pt-BR
-ms.lasthandoff: 12/01/2021
-ms.locfileid: "61242181"
 ---
 # <a name="update-accesspackagecatalog"></a>Atualizar accessPackageCatalog
 
@@ -50,8 +44,8 @@ PATCH /identityGovernance/entitlementManagement/catalogs/{accessPackageCatalogId
 
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|displayName|Cadeia de caracteres|O nome do catálogo de pacotes de acesso.|
-|description|Cadeia de caracteres|A descrição do catálogo de pacotes de acesso.|
+|displayName|String|O nome do catálogo de pacotes de acesso.|
+|description|String|A descrição do catálogo de pacotes de acesso.|
 |catalogType|accessPackageCatalogType|Se o catálogo é criado por um usuário ou gerenciamento de direitos. Os valores possíveis são: `userManaged`, `serviceDefault`, `serviceManaged`, `unknownFutureValue`.|
 |state|accessPackageCatalogState|Tem o valor `published` se os pacotes de acesso estão disponíveis para gerenciamento. Os valores possíveis são: `unpublished`, `published`, `unknownFutureValue`.|
 |isExternallyVisible|Booliano|Se os pacotes de acesso neste catálogo podem ser solicitados por usuários fora do locatário.|
@@ -73,7 +67,7 @@ Se tiver êxito, este método retornará um código de resposta `204 No Content`
 }
 -->
 ```http
-PATCH https://graph.microsoft.com/v1.0/identityGovernance/entitlementManagement/accessPackageCatalogs/{accessPackageCatalogId}
+PATCH https://graph.microsoft.com/v1.0/identityGovernance/entitlementManagement/catalogs/{accessPackageCatalogId}
 Content-Type: application/json
 
 {

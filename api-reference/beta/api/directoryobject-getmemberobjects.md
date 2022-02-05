@@ -1,24 +1,19 @@
 ---
 title: 'directoryObject: getMemberObjects'
-description: Retorne todos os grupos, unidades administrativas e funções de diretório das quais um usuário, grupo, entidade de serviço, contato organizacional, dispositivo ou objeto de diretório é membro. Esta função é transitiva.
+description: 'Retorne todos os grupos, unidades administrativas e funções de diretório das quais um usuário, grupo, entidade de serviço, contato organizacional, dispositivo ou objeto de diretório é membro. Esta função é transitiva.'
 ms.localizationpriority: medium
 author: keylimesoda
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: 8afc7252d7900674b89c44168127aa229faac1dc
-ms.sourcegitcommit: 25acfa7d0153336c9a35d30a1dd422aeadc1342c
-ms.translationtype: MT
-ms.contentlocale: pt-BR
-ms.lasthandoff: 02/03/2022
-ms.locfileid: "62346553"
 ---
+
 # <a name="directoryobject-getmemberobjects"></a>directoryObject: getMemberObjects
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Retorne todos os grupos, unidades administrativas e funções de diretório das quais um [usuário, grupo](../resources/user.md)[,](../resources/group.md) [entidade](../resources/serviceprincipal.md) de [serviço, contato](../resources/orgcontact.md) [organizacional, dispositivo](../resources/device.md) ou objeto [de diretório](../resources/directoryobject.md) é membro. Esta função é transitiva.
+Retorne todas as IDs dos grupos, unidades administrativas e funções de diretório das quais um [usuário, grupo](../resources/user.md)[,](../resources/group.md) [entidade](../resources/serviceprincipal.md) de [serviço, contato](../resources/orgcontact.md) [organizacional, dispositivo](../resources/device.md) ou [objeto de diretório é](../resources/directoryobject.md) membro. Esta função é transitiva.
 
 **Observação:** Somente usuários e grupos habilitados para função podem ser membros de funções de diretório.
 

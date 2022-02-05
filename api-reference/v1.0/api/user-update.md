@@ -5,13 +5,8 @@ author: jpettere
 ms.localizationpriority: high
 ms.prod: users
 doc_type: apiPageType
-ms.openlocfilehash: 525141e222625eb74daff99f91286f1736770ca5
-ms.sourcegitcommit: 25acfa7d0153336c9a35d30a1dd422aeadc1342c
-ms.translationtype: HT
-ms.contentlocale: pt-BR
-ms.lasthandoff: 02/03/2022
-ms.locfileid: "62339423"
 ---
+
 # <a name="update-user"></a>Atualizar usuário
 
 Namespace: microsoft.graph
@@ -51,12 +46,12 @@ No corpo da solicitação, forneça os valores para os campos relevantes que dev
 |:---------------|:--------|:----------|
 |aboutMe|String|Um campo de entrada de texto em forma livre para o usuário se descrever.|
 |accountEnabled|Booliano| `true` se a conta estiver habilitada; caso contrário, `false`. Essa propriedade é obrigatória quando um usuário é criado. Um administrador global com a permissão delegada _Directory.AccessAsUser.All_ pode atualizar o status **accountEnabled** de todos os administradores no locatário.|
-| ageGroup | [ageGroup](../resources/user.md#agegroup-values) | Define a faixa etária do usuário. Valores permitidos: `null`, `minor`, `notAdult` e `adult`. Confira as [definições de propriedades da faixa etária legal](../resources/user.md#legal-age-group-property-definitions) para obter mais informações. |
+| ageGroup | [ageGroup](../resources/user.md#agegroup-values) | Define a faixa etária do usuário. Valores permitidos: `null`, `Minor`, `NotAdult` e `Adult`. Confira as [definições de propriedades da faixa etária legal](../resources/user.md#legal-age-group-property-definitions) para obter mais informações. |
 |birthday|DateTimeOffset|O aniversário do usuário. O tipo de carimbo de data/hora representa informações de data e hora usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite UTC em 1º de janeiro de 2014 é `2014-01-01T00:00:00Z`|
 |businessPhones| String collection | Números de telefone para o usuário. OBSERVAÇÃO: Embora isso seja uma coleção de cadeias de caracteres, somente um número pode ser definido para essa propriedade.|
 |city|String|A cidade em que o usuário está localizado.|
 | CompanyName | String | O nome da empresa em que o usuário está associado. Essa propriedade pode ser útil para descrever a empresa de onde procede um usuário externo. O tamanho máximo é de 64 caracteres. |
-| consentProvidedForMinor | [consentProvidedForMinor](../resources/user.md#consentprovidedforminor-values) | Define se o consentimento foi obtido para menores. Valores permitidos: `null`, `granted`, `denied` e `notRequired`. Confira as [definições de propriedades da faixa etária legal](../resources/user.md#legal-age-group-property-definitions) para obter mais informações. |
+| consentProvidedForMinor | [consentProvidedForMinor](../resources/user.md#consentprovidedforminor-values) | Define se o consentimento foi obtido para menores. Valores permitidos: `null`, `Granted`, `Denied` e `NotRequired`. Confira as [definições de propriedades da faixa etária legal](../resources/user.md#legal-age-group-property-definitions) para obter mais informações. |
 |country|Cadeia de caracteres|O país/região em que o usuário está localizado; por exemplo, `US` ou `UK`.|
 |department|String|O nome do departamento no qual o usuário trabalha.|
 |displayName|String|O nome exibido no catálogo de endereços do usuário. É geralmente a combinação do nome, da inicial do meio e do sobrenome do usuário. Essa propriedade é obrigatória quando um usuário é criado e não pode ser apagado durante atualizações. |

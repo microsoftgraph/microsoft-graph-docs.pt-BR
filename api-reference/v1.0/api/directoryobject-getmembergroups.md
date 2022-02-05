@@ -1,22 +1,17 @@
 ---
 title: 'directoryObject: getMemberGroups'
-description: Retorne todos os grupos dos qual o usuário, grupo, entidade de serviço, contato organizacional, dispositivo ou objeto de diretório especificado é membro. Esta função é transitiva.
+description: 'Retorne todos os grupos dos qual o usuário, grupo, entidade de serviço, contato organizacional, dispositivo ou objeto de diretório especificado é membro. Esta função é transitiva.'
 ms.localizationpriority: medium
 author: keylimesoda
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: c39385631f55cd2d491584ba6fb0baeb0833b1ac
-ms.sourcegitcommit: 25acfa7d0153336c9a35d30a1dd422aeadc1342c
-ms.translationtype: MT
-ms.contentlocale: pt-BR
-ms.lasthandoff: 02/03/2022
-ms.locfileid: "62339508"
 ---
+
 # <a name="directoryobject-getmembergroups"></a>directoryObject: getMemberGroups
 
 Namespace: microsoft.graph
 
-Retorne todos os grupos dos qual o [usuário, grupo](../resources/user.md)[, entidade](../resources/group.md) de [serviço](../resources/serviceprincipal.md), contato [organizacional](../resources/orgcontact.md)[, dispositivo](../resources/device.md) ou [objeto de diretório especificado](../resources/directoryobject.md) é membro. Esta função é transitiva.
+Retorne todas as IDs de grupo dos grupos dos qual o [usuário, grupo](../resources/user.md)[,](../resources/group.md) [entidade de serviço](../resources/serviceprincipal.md) [especificado, contato](../resources/orgcontact.md) [organizacional, dispositivo](../resources/device.md) ou [objeto de diretório é](../resources/directoryobject.md) membro. Esta função é transitiva.
 
 ## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).

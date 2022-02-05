@@ -1,24 +1,19 @@
 ---
 title: Visão geral da API de política de métodos de autenticação do Azure AD
 description: As políticas de métodos de autenticação definem quais métodos de autenticação podem ser usados pelos usuários no Azure AD.
-localization_priority: Normal
+ms.localizationpriority: medium
 author: mmcla
 ms.prod: identity-and-sign-in
 doc_type: conceptualPageType
-ms.openlocfilehash: 35d3beecb26a5ae4455502ed0535c959cf7f502e
-ms.sourcegitcommit: 4fa6fcc058c7f8d8cad58c0b82db23d6c7da37d2
-ms.translationtype: MT
-ms.contentlocale: pt-BR
-ms.lasthandoff: 05/27/2021
-ms.locfileid: "52682128"
 ---
+
 # <a name="azure-ad-authentication-methods-policies-api-overview"></a>Visão geral das políticas de políticas de autenticação do Azure AD
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-As políticas de [](/azure/active-directory/authentication/concept-authentication-methods) métodos de autenticação definem métodos de autenticação e os usuários que têm permissão para usá-los para entrar e executar a autenticação multifato (MFA) no Azure Active Directory (Azure AD). As políticas de métodos de autenticação que podem ser gerenciadas no Microsoft Graph incluem chaves de segurança fido2 e Telefone de acesso sem senha com Microsoft Authenticator aplicativo.
+As políticas de métodos de [](/azure/active-directory/authentication/concept-authentication-methods) autenticação definem métodos de autenticação e os usuários que têm permissão para usá-los para entrar e executar a autenticação multifato (MFA) no Azure Active Directory (Azure AD). As políticas de métodos de autenticação que podem ser gerenciadas no Microsoft Graph incluem chaves de segurança fido2 e Telefone de acesso sem senha com Microsoft Authenticator aplicativo.
 
 As APIs de políticas de método de autenticação são usadas para gerenciar configurações de política. Por exemplo:
 
@@ -36,6 +31,7 @@ As APIs de políticas de método de autenticação são usadas para gerenciar co
 |[emailauthenticationmethodconfiguration](emailauthenticationmethodconfiguration.md)|Definir usuários que podem usar o OTP de email no locatário do Azure AD.|
 |[passwordlessmicrosoftauthenticatorauthenticationmethodconfiguration](passwordlessmicrosoftauthenticatorauthenticationmethodconfiguration.md) (preterido)|Defina os usuários que podem usar a senha Telefone entrar para entrar no Azure AD.|
 |[temporaryaccesspassauthenticationmethodconfiguration](temporaryaccesspassauthenticationmethodconfiguration.md)|Defina os usuários que podem usar o Passe de Acesso Temporário para entrar no Azure AD.|
+|[x509CertificateAuthenticationMethodConfiguration](x509CertificateAuthenticationMethodConfiguration.md)|Defina os usuários que podem usar o certificado X.509 para entrar no Azure AD.|
 
 ## <a name="policies-available-to-push-users-to-set-up-authentication-methods"></a>Políticas disponíveis para pressionar os usuários a configurar métodos de autenticação:
 |Política       | Descrição |

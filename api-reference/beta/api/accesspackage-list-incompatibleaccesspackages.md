@@ -1,24 +1,19 @@
 ---
 title: Listar incompatívelAccessPackages
 description: Recupere uma lista de pacotes de acesso cujos direitos de acesso são incompatíveis com um pacote de acesso específico.
-localization_priority: Normal
+ms.localizationpriority: medium
 author: markwahl-msft
 ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: fc30ee9ae6a80b04820b363dea87f376e5db638b
-ms.sourcegitcommit: 8b23038be1141d7f22eb61de6aafdb16d4f9c826
-ms.translationtype: MT
-ms.contentlocale: pt-BR
-ms.lasthandoff: 07/13/2021
-ms.locfileid: "53401028"
 ---
+
 # <a name="list-incompatibleaccesspackages"></a>Listar incompatívelAccessPackages
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Recuperar uma lista dos [objetos accessPackage](../resources/accesspackage.md) que foram marcados como incompatíveis em [um accessPackage](../resources/accesspackage.md).  
+Recupere uma lista dos [objetos accessPackage](../resources/accesspackage.md) que foram marcados como incompatíveis em [um accessPackage](../resources/accesspackage.md).  
 
 ## <a name="permissions"></a>Permissões
 
@@ -35,7 +30,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 <!-- { "blockType": "ignored" } -->
 
 ```http
-GET /identityGovernance/entitlementManagement/accessPackage/{id}/incompatibleAccessPackages
+GET /identityGovernance/entitlementManagement/accessPackages/{id}/incompatibleAccessPackages
 ```
 
 ## <a name="optional-query-parameters"></a>Parâmetros de consulta opcionais
@@ -54,7 +49,7 @@ Não forneça um corpo de solicitação para esse método.
 
 ## <a name="response"></a>Resposta
 
-Se tiver êxito, este método retornará um código de resposta e uma `200 OK` coleção de [objetos accessPackage](../resources/accesspackage.md) no corpo da resposta.
+Se tiver êxito, este método retornará um `200 OK` código de resposta e uma coleção de [objetos accessPackage](../resources/accesspackage.md) no corpo da resposta.
 
 ## <a name="examples"></a>Exemplos
 

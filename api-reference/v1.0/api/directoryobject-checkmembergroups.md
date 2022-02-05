@@ -1,22 +1,17 @@
 ---
 title: 'directoryObject: checkMemberGroups'
-description: Verifique se há associação em uma lista especificada de grupos e retorne dessa lista os grupos dos quais o usuário, grupo, entidade de serviço especificado, contato organizacional, dispositivo ou objeto de diretório é um membro.
+description: 'Verifique se há associação em uma lista especificada de grupos e retorne dessa lista os grupos dos quais o usuário, grupo, entidade de serviço especificado, contato organizacional, dispositivo ou objeto de diretório é um membro.'
 ms.localizationpriority: medium
 author: keylimesoda
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: 5aab6bbb01b942b6f842e410ada87405f2620bdb
-ms.sourcegitcommit: 25acfa7d0153336c9a35d30a1dd422aeadc1342c
-ms.translationtype: MT
-ms.contentlocale: pt-BR
-ms.lasthandoff: 02/03/2022
-ms.locfileid: "62346778"
 ---
+
 # <a name="directoryobject-checkmembergroups"></a>directoryObject: checkMemberGroups
 
 Namespace: microsoft.graph
 
-Verifique se há associação em uma lista especificada de grupos e retorne dessa lista os grupos dos quais o [usuário, grupo](../resources/user.md)[, entidade](../resources/group.md) de serviço [especificado, contato](../resources/serviceprincipal.md) [organizacional, dispositivo](../resources/orgcontact.md) ou [](../resources/device.md)objeto [de diretório é](../resources/directoryobject.md) um membro. Esta função é transitiva.
+Verifique se há associação em uma lista especificada de IDs de grupo e retorne dessa lista esses grupos (identificados por IDs) dos quais o [usuário, grupo](../resources/user.md)[, entidade](../resources/group.md) de serviço [especificado, contato](../resources/serviceprincipal.md) [organizacional, dispositivo](../resources/orgcontact.md) ou objeto de [](../resources/directoryobject.md) diretório é um membro. [](../resources/device.md) Esta função é transitiva.
 
 Você pode fazer check-up de no máximo 20 grupos por solicitação. Essa função dá suporte a todos os grupos provisionados no Azure AD. Como Microsoft 365 grupos não podem conter outros grupos, a associação em um Microsoft 365 grupo é sempre direta.
 

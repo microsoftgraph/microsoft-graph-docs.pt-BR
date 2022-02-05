@@ -5,19 +5,14 @@ author: rolyon
 ms.localizationpriority: medium
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: 7340f4d3bd13f42efc6f453e818416a5fd169ba8
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
-ms.translationtype: MT
-ms.contentlocale: pt-BR
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62096878"
 ---
+
 # <a name="update-customsecurityattributedefinition"></a>Atualizar customSecurityAttributeDefinition
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Atualize as propriedades de [um objeto customSecurityAttributeDefinition.](../resources/customsecurityattributedefinition.md)
+Atualize as propriedades de [um objeto customSecurityAttributeDefinition](../resources/customsecurityattributedefinition.md) .
 
 ## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
@@ -28,7 +23,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |Delegado (conta pessoal da Microsoft)|Sem suporte.|
 |Aplicativo|CustomSecAttributeDefinition.ReadWrite.All|
 
-O usuário inscreveu também deve ter a função de diretório Administrador de Definição [de Atributo.](/azure/active-directory/roles/permissions-reference) Por padrão, o Administrador Global e outras funções de administrador não têm permissões para ler, definir ou atribuir atributos de segurança personalizados.
+O usuário inscreveu também deve ter a função de diretório Administrador de Definição [de Atributo](/azure/active-directory/roles/permissions-reference). Por padrão, o Administrador Global e outras funções de administrador não têm permissões para ler, definir ou atribuir atributos de segurança personalizados.
 
 ## <a name="http-request"></a>Solicitação HTTP
 
@@ -45,6 +40,10 @@ PATCH /directory/customSecurityAttributeDefinitions/{customSecurityAttributeDefi
 |:---|:---|
 |Autorização|{token} de portador. Obrigatório.|
 |Content-Type|application/json. Obrigatório.|
+|OData-Version|4.01. Opcional.|
+
+> [!NOTE]
+> Para atualizar os valores predefinidos para um atributo de segurança personalizado, você deve adicionar o header **OData-Version e atribuí-lo** o valor `4.01`.
 
 ## <a name="request-body"></a>Corpo da solicitação
 No corpo da solicitação, forneça *apenas* os valores das propriedades que devem ser atualizadas. As propriedades existentes que não estão incluídas no corpo da solicitação manterão seus valores anteriores ou serão recalculadas com base nas alterações em outros valores de propriedade.
@@ -53,9 +52,9 @@ A tabela a seguir especifica as propriedades que podem ser atualizadas.
 
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|description|Cadeia de caracteres|Descrição do atributo de segurança personalizado. Pode ter até 128 caracteres e incluir caracteres Unicode. Opcional.|
-|status|Cadeia de caracteres|Especifica se o atributo de segurança personalizado está ativo ou desativado. Os valores aceitáveis são `Available` e `Deprecated` . Opcional.|
-|usePreDefinedValuesOnly|Booliano|Indica se somente valores predefinidos podem ser atribuídos ao atributo de segurança personalizado. Se definido como false, os valores de formulário livre serão permitidos. Pode ser alterado de true para false, mas não pode ser alterado de falso para verdadeiro. Se `type` estiver definido como Boolean, não será possível definir como `usePreDefinedValuesOnly` true. Opcional.|
+|description|String|Descrição do atributo de segurança personalizado. Pode ter até 128 caracteres e incluir caracteres Unicode. Opcional.|
+|status|String|Especifica se o atributo de segurança personalizado está ativo ou desativado. Os valores aceitáveis são `Available` e `Deprecated`. Opcional.|
+|usePreDefinedValuesOnly|Booliano|Indica se somente valores predefinidos podem ser atribuídos ao atributo de segurança personalizado. Se definido como false, os valores de formulário livre serão permitidos. Pode ser alterado de true para false, mas não pode ser alterado de falso para verdadeiro. Se `type` estiver definido como Boolean, `usePreDefinedValuesOnly` não será possível definir como true. Opcional.|
 
 
 
@@ -126,7 +125,56 @@ Content-Type: application/json
 HTTP/1.1 204 No Content
 ```
 
-### <a name="example-2-deactivate-a-custom-security-attribute"></a>Exemplo 2: Desativar um atributo de segurança personalizado
+### <a name="example-2-update-the-predefined-values-for-a-custom-security-attribute"></a>Exemplo 2: atualizar os valores predefinidos para um atributo de segurança personalizado
+
+O exemplo a seguir atualiza o status de um valor predefinido existente e adiciona um novo valor predefinido para uma definição de atributo de segurança personalizada.
+
++ Conjunto de atributos: `Engineering`
++ Atributo: `Project`
++ Tipo de dados de atributo: Coleção de cadeias de caracteres
++ Atualizar o valor predefinido: `Baker`
++ Novo valor predefinido: `Skagit`
+
+> [!NOTE]
+> Para essa solicitação, você deve adicionar o header **OData-Version e atribuí-lo** o valor `4.01`.
+
+#### <a name="request"></a>Solicitação
+
+<!-- {
+  "blockType": "request",
+  "name": "update_customsecurityattributedefinition_allowedvalues"
+}
+-->
+``` msgraph-interactive
+PATCH https://graph.microsoft.com/beta/directory/customSecurityAttributeDefinitions/Engineering_Project
+Content-Type: application/json
+OData-Version: 4.01
+
+{
+    "allowedValues@delta": [
+        {
+            "id": "Baker",
+            "isActive": false
+        },
+        {
+            "id": "Skagit",
+            "isActive": true
+        }
+    ]
+}
+```
+
+#### <a name="response"></a>Resposta
+<!-- {
+  "blockType": "response",
+  "truncated": true
+}
+-->
+``` http
+HTTP/1.1 204 No Content
+```
+
+### <a name="example-3-deactivate-a-custom-security-attribute"></a>Exemplo 3: Desativar um atributo de segurança personalizado
 
 O exemplo a seguir desativa uma definição de atributo de segurança personalizada.
 

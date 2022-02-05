@@ -5,13 +5,8 @@ ms.localizationpriority: medium
 author: markwahl-msft
 ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: 17445a90e134ff3aa8757d79e33155b8eea28277
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
-ms.translationtype: MT
-ms.contentlocale: pt-BR
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62091271"
 ---
+
 # <a name="list-accesspackagesincompatiblewith"></a>Listar accessPackagesIncompatibleWith
 
 Namespace: microsoft.graph
@@ -35,7 +30,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 <!-- { "blockType": "ignored" } -->
 
 ```http
-GET /identityGovernance/entitlementManagement/accessPackage/{id}/accessPackagesIncompatibleWith
+GET /identityGovernance/entitlementManagement/accessPackages/{id}/accessPackagesIncompatibleWith
 ```
 
 ## <a name="optional-query-parameters"></a>Parâmetros de consulta opcionais
@@ -54,7 +49,7 @@ Não forneça um corpo de solicitação para esse método.
 
 ## <a name="response"></a>Resposta
 
-Se tiver êxito, este método retornará um código de resposta e uma `200 OK` coleção de [objetos accessPackage](../resources/accesspackage.md) no corpo da resposta.
+Se tiver êxito, este método retornará um `200 OK` código de resposta e uma coleção de [objetos accessPackage](../resources/accesspackage.md) no corpo da resposta.
 
 ## <a name="examples"></a>Exemplos
 

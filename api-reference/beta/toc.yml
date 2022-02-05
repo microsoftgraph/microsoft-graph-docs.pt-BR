@@ -7151,7 +7151,7 @@ items:
                         href: api/intune-deviceconfig-windowswifienterpriseeapconfiguration-update.md
                   - name: Interface de rede com fio
                     href: resources/intune-deviceconfig-wirednetworkinterface.md
-              - name: Gerenciamento de dispositivos
+              - name: Gerenciamento de dispositivo
                 href: resources/intune-device-mgt-conceptual.md
                 items:
                   - name: Ativar o resultado da ação esim do dispositivo
@@ -9468,7 +9468,7 @@ items:
                         href: api/intune-rbac-deviceandappmanagementroledefinition-delete.md
                       - name: Atualizar
                         href: api/intune-rbac-deviceandappmanagementroledefinition-update.md
-                  - name: Identidade
+                  - name: Identity
                     href: resources/intune-rbac-identity.md
                   - name: Conjunto de identidade
                     href: resources/intune-rbac-identityset.md
@@ -11934,6 +11934,15 @@ items:
                             href: api/fido2authenticationmethodconfiguration-update.md
                           - name: Excluir
                             href: api/fido2authenticationmethodconfiguration-delete.md
+                      - name: Certificado X509
+                        href: resources/x509Certificateauthenticationmethodconfiguration.md
+                        items:
+                          - name: Obter
+                            href: api/x509certificateauthenticationmethodconfiguration-get.md
+                          - name: Atualizar
+                            href: api/x509certificateauthenticationmethodconfiguration-update.md
+                          - name: Excluir
+                            href: api/x509certificateauthenticationmethodconfiguration-delete.md
                       - name: Microsoft Authenticator política
                         href: resources/microsoftauthenticatorauthenticationmethodconfiguration.md
                         items:
@@ -14284,7 +14293,7 @@ items:
         items:
           - name: Visão Geral
             href: resources/planner-overview.md
-          - name: Planejar
+          - name: Plano
             href: resources/plannerplan.md
             items:
               - name: Listar os planos do grupo

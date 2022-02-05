@@ -5,13 +5,8 @@ doc_type: enumPageType
 ms.localizationpriority: medium
 ms.prod: non-product-specific
 author: MSGraphDocsvTeam
-ms.openlocfilehash: f05bbd5eadcbff53cc91eba9a2847aca6c91b765
-ms.sourcegitcommit: e4796212a2e8bbec61b6da8336f776c0305c49df
-ms.translationtype: MT
-ms.contentlocale: pt-BR
-ms.lasthandoff: 01/28/2022
-ms.locfileid: "62261935"
 ---
+
 # <a name="enum-values"></a>Valores denum
 
 Namespace: microsoft.graph
@@ -227,7 +222,7 @@ Namespace: microsoft.graph
 
 |Member|
 |:---|
-|Cadeia de caracteres|
+|String|
 |Inteiro|
 |Referência|
 |Binária|
@@ -928,6 +923,20 @@ Namespace: microsoft.graph
 |block|
 |unknownFutureValue|
 
+### <a name="x509certificateauthenticationmode-values"></a>valores x509CertificateAuthenticationMode
+|Member|
+|:---|
+|x509CertificateSingleFactor|
+|x509CertificateMultiFactor|
+|unknownFutureValue|
+
+### <a name="x509certificateruletype-values"></a>valores x509CertificateRuleType
+|Member|
+|:---|
+|issuerSubject|
+|policyOID|
+|unknownFutureValue|
+
 ### <a name="anniversarytype-values"></a>valores anniversaryType
 
 |Member|
@@ -1021,7 +1030,7 @@ Namespace: microsoft.graph
 |site|
 |list|
 |listItem|
-|drive|
+|Unidade|
 |unknownFutureValue|
 
 ### <a name="searchalterationtype-values"></a>searchAlterationType values
@@ -1359,7 +1368,7 @@ Namespace: microsoft.graph
 |:-------------
 | desconhecido
 | authentication
-| authorization
+| autorização
 | accountValidation
 | userValidation
 | deviceNotSupported
@@ -1669,7 +1678,7 @@ Possíveis valores de comentários sobre o alerta fornecido por um analista.
 
 ### <a name="registryhive-values"></a>valores registryHive
 
-Enum para hives do Registro conforme definido por [https://docs.microsoft.com/windows/desktop/sysinfo/registry-hives](/windows/desktop/sysinfo/registry-hives) .
+Enum para hives do Registro conforme definido por [https://docs.microsoft.com/windows/desktop/sysinfo/registry-hives](/windows/desktop/sysinfo/registry-hives).
 
 | Membro                  | Valor | Descrição                       |
 | :---------------------- | :---- | :-------------------------------- |
@@ -1679,7 +1688,7 @@ Enum para hives do Registro conforme definido por [https://docs.microsoft.com/wi
 | localMachineSam         | 3     | HKEY_LOCAL_MACHINE\SAM hive.      |
 | localMachineSamSoftware | 4     | HKEY_LOCAL_MACHINE\Software hive. |
 | localMachineSystem      | 5     | HKEY_LOCAL_MACHINE\System hive.   |
-| usersDefault            | 6      | HKEY_USERS \\ . Hive PADRÃO.        |
+| usersDefault            | 6      | \\HKEY_USERS. Hive PADRÃO.        |
 
 ### <a name="registryoperation-values"></a>valores registryOperation
 
@@ -1694,7 +1703,7 @@ Operação que alterou o nome e/ou o valor da chave do Registro.
 
 ### <a name="registryvaluetype-values"></a>valores registryValueType
 
-Enum para tipos de valor do Registro conforme definido pelos [tipos de valor do Registro.](/windows/desktop/sysinfo/registry-value-types)
+Enum para tipos de valor do Registro conforme definido pelos [tipos de valor do Registro](/windows/desktop/sysinfo/registry-value-types).
 
 | Membro            | Valor | Descrição                                  |
 | :---------------- | :---- | :------------------------------------------- |
@@ -1962,9 +1971,9 @@ Valores possíveis para tipos de conta de usuário (associação ao grupo), por 
 | Member   | Valor int |  Descrição |
 |:---------------|:--------|:----------|
 | Nenhum | 0 |  O usuário não tem permissão para substituir a mensagem. O usuário não tem permissão para relatar uma mensagem como falso positivo se policyTip não for fornecida. Em todos os outros cenários, o usuário pode relatar uma mensagem como falso positivo.|
-| AllowFalsePositiveOverride | 1 |  O usuário não tem permissão para substituir explicitamente o bloco, a menos que isso seja combinado `AllowOverrideWithoutJustification` com ou `AllowOverrideWithJustification` sinalizadores. Relatar um falso positivo na violação substitui automaticamente o bloco e envia a mensagem. |
-| AllowOverrideWithoutJustification | 2 | O usuário tem permissão para substituir o bloco e enviar a mensagem. O texto de justificativa não é necessário. Exclusivo para `AllowOverrideWithJustification` . |
-| AllowOverrideWithJustification | 4 |  O usuário tem permissão para substituir o bloco e enviar a mensagem. O texto de justificativa é necessário. Exclusivo para `AllowOverrideWithoutJustification` .|
+| AllowFalsePositiveOverride | 1 |  O usuário não tem permissão para substituir explicitamente o bloco, a menos que isso seja combinado com `AllowOverrideWithoutJustification` ou `AllowOverrideWithJustification` sinalizadores. Relatar um falso positivo na violação substitui automaticamente o bloco e envia a mensagem. |
+| AllowOverrideWithoutJustification | 2 | O usuário tem permissão para substituir o bloco e enviar a mensagem. O texto de justificativa não é necessário. Exclusivo para `AllowOverrideWithJustification`. |
+| AllowOverrideWithJustification | 4 |  O usuário tem permissão para substituir o bloco e enviar a mensagem. O texto de justificativa é necessário. Exclusivo para `AllowOverrideWithoutJustification`.|
 
 ### <a name="entitytype-values"></a>valores entityType
 
@@ -2027,7 +2036,7 @@ Valores possíveis para tipos de conta de usuário (associação ao grupo), por 
 | :--------- | :---- | :------------------------------------------------------------------------------------------------------------------------------- |
 | standard   | 0     | O rótulo foi definido por uma condição de serviço ou política.                                                                              |
 | privileged | 1     | O rótulo foi definido explicitamente por um usuário.                                                                                          |
-| Automático       | 2     | Permite a substituição de qualquer rótulo existente. Justification required on downgrade. Resulta no `standard` método de atribuição em metadados. |
+| Automático       | 2     | Permite a substituição de qualquer rótulo existente. Justification required on downgrade. Resulta no método `standard` de atribuição em metadados. |
 
 ### <a name="actionsource-values"></a>valores actionSource
 
@@ -2228,8 +2237,8 @@ Valores possíveis para tipos de conta de usuário (associação ao grupo), por 
 
 | Membro                       | Valor | Descrição                                                            |
 |:-----------------------------|:------|:-----------------------------------------------------------------------|
-| threatCategory               | 1     | Agregação de solicitação de avaliação de ameaças por `threatCategory` .               |
-| mailDestinationRoutingReason | 2     | Agregação de solicitação de avaliação de ameaças por `mailDestinationRoutingReason` . |
+| threatCategory               | 1     | Agregação de solicitação de avaliação de ameaças por `threatCategory`.               |
+| mailDestinationRoutingReason | 2     | Agregação de solicitação de avaliação de ameaças por `mailDestinationRoutingReason`. |
 
 ### <a name="userflowtype-values"></a>valores userFlowType
 
@@ -2298,8 +2307,8 @@ Valores possíveis para tipos de conta de usuário (associação ao grupo), por 
 
 | Membro                | Valor | Descrição                                                                                                                                                                                                        |
 |:----------------------| :-----|:-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| configurado            | 0     | As organizações conectadas com esse valor de estado são incluídas em políticas de atribuição com o tipo de escopo do `AllConfiguredConnectedOrganizationSubjects` solicitante.                                                          |
-| proposta              | 1     | As organizações conectadas que são criadas automaticamente pelo sistema têm esse valor de estado. Eles não são incluídos em políticas de atribuição com o tipo de escopo do `AllConfiguredConnectedOrganizationSubjects` solicitante.   |
+| configurado            | 0     | As organizações conectadas com esse valor de estado são incluídas em políticas de atribuição com o tipo de escopo do solicitante `AllConfiguredConnectedOrganizationSubjects`.                                                          |
+| proposta              | 1     | As organizações conectadas que são criadas automaticamente pelo sistema têm esse valor de estado. Eles não são incluídos em políticas de atribuição com o tipo de escopo do solicitante `AllConfiguredConnectedOrganizationSubjects`.   |
 | unknownFutureValue    | 2     | Um membro do sentinel.                                                                                                                                                                                                 |
 
 ### <a name="identityuserflowattributedatatype-values"></a>identityUserFlowAttributeDataType values
@@ -2836,10 +2845,10 @@ Valores possíveis para tipos de conta de usuário (associação ao grupo), por 
 | Membro | Valor| Descrição |
 |:---------------|:--------|:----------|
 |desconhecido|0|Valor desconhecido.|
-|skypeDefaultAndTeams|1|Dá suporte a `Skype` ambos e `Teams` . O padrão é `Skype`.|
-|teamsDefaultAndSkype|2|Dá suporte a `Skype` ambos e `Teams` . O padrão é `Teams`.|
-|skypeOnly|3|Dá suporte somente `Skype` a .|
-|teamsOnly|4|Dá suporte somente `Teams` a .|
+|skypeDefaultAndTeams|1|Dá suporte a `Skype` ambos e `Teams`. O padrão é `Skype`.|
+|teamsDefaultAndSkype|2|Dá suporte a `Skype` ambos e `Teams`. O padrão é `Teams`.|
+|skypeOnly|3|Dá suporte somente `Skype`a .|
+|teamsOnly|4|Dá suporte somente `Teams`a .|
 |unknownFutureValue|5|Valor de sentinela de enumeração evolvável. Não usar.|
 
 ### <a name="longrunningoperationstatus-values"></a>valores longRunningOperationStatus
