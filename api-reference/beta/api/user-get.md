@@ -5,13 +5,8 @@ author: jpettere
 ms.localizationpriority: high
 ms.prod: users
 doc_type: apiPageType
-ms.openlocfilehash: 20ae426d206e0737ff40200989db955bb7503de1
-ms.sourcegitcommit: 25acfa7d0153336c9a35d30a1dd422aeadc1342c
-ms.translationtype: HT
-ms.contentlocale: pt-BR
-ms.lasthandoff: 02/03/2022
-ms.locfileid: "62344528"
 ---
+
 # <a name="get-a-user"></a>Obter um usuário
 
 Namespace: microsoft.graph
@@ -308,7 +303,7 @@ Atributo nº 4
 + Tipo de dados de atributo: cadeia de caracteres
 + Valor do atributo: `"Public"`
 
-Para obter atribuições de atributo de segurança personalizados, a entidade de chamada deve receber a função Leitor de Atribuição de Atributos ou Administrador de Atribuição de Atributos e deve receber a permissão *CustomSecAttributeAssignment.ReadWrite.All*.
+Para obter atribuições do atributo de segurança personalizadas, a entidade de chamada deve receber a função Leitor de Atribuição de Atributo ou Administrador de Atribuição de Atributo e deve receber a permissão *CustomSecAttributeAssignment.Read.All* ou *CustomSecAttributeAssignment.ReadWrite.All*.
 
 #### <a name="request"></a>Solicitação
 
