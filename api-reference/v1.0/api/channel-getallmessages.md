@@ -5,13 +5,8 @@ author: RamjotSingh
 ms.localizationpriority: high
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 243771069666410fc997aff1cbc70ef9ae290526
-ms.sourcegitcommit: 70b3caded085ba8ef15e389f81fa005506f1e2fb
-ms.translationtype: HT
-ms.contentlocale: pt-BR
-ms.lasthandoff: 11/20/2021
-ms.locfileid: "61131914"
 ---
+
 # <a name="channel-getallmessages"></a>channel: getAllMessages
 
 Namespace: microsoft.graph
@@ -44,7 +39,8 @@ GET /teams/{team-id}/channels/getAllMessages
 
 ## <a name="optional-query-parameters"></a>Parâmetros de consulta opcionais
 
-Você pode usar `model` parâmetro de consulta, que suporta os valores `A` e `B`, com base nos requisitos preferenciais de licenciamento e pagamento, como mostrado nos exemplos a seguir. 
+Você pode usar o parâmetro de consulta `model`, que suporta os valores `A` e `B`, com base nos requisitos preferenciais de [modelo de licenciamento e pagamento](/graph/teams-licenses), como mostrado nos exemplos a seguir.  
+Se nenhum `model` for especificado, [modo de avaliação](/graph/teams-licenses#evaluation-mode-default-requirements) será usado.
 
 ```http
 GET /teams/{team-id}/channels/getAllMessages?model=A
@@ -96,7 +92,7 @@ GET https://graph.microsoft.com/v1.0/teams/01fe12e0-e720-44fd-8854-28c66d1bee40/
 [!INCLUDE [sample-code](../includes/snippets/java/channel-getallchannelmessages-1-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[Go](#tab/go)
+# <a name="go"></a>[Ir](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/channel-getallchannelmessages-1-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 

@@ -5,13 +5,8 @@ author: RamjotSingh
 ms.localizationpriority: high
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 98681b5dc0fd59a246bdd1f545a9189f1cb6ee2a
-ms.sourcegitcommit: 70b3caded085ba8ef15e389f81fa005506f1e2fb
-ms.translationtype: HT
-ms.contentlocale: pt-BR
-ms.lasthandoff: 11/20/2021
-ms.locfileid: "61131935"
 ---
+
 # <a name="chats-getallmessages"></a>chats: getAllMessages
 
 Namespace: microsoft.graph
@@ -44,7 +39,8 @@ GET /users/{id | user-principal-name}/chats/getAllMessages
 
 ## <a name="optional-query-parameters"></a>Parâmetros de consulta opcionais
 
-Você pode usar `model` parâmetro de consulta que suporta os valores `A` e `B`, com base nos requisitos preferenciais de licenciamento e pagamento. Se nenhum `model` for especificado, [modo de avaliação](/graph/teams-licenses#evaluation-mode-default-requirements) será usado. A seguir estão os exemplos.
+Você pode usar o parâmetro de consulta `model`, que suporta os valores `A` e `B`, com base no [modelo de licenciamento e pagamento](/graph/teams-licenses) preferido, conforme mostrado nos exemplos a seguir.  
+Se nenhum `model` for especificado, [modo de avaliação](/graph/teams-licenses#evaluation-mode-default-requirements) será usado.
 
 ```http
 GET /users/{id | user-principal-name}/chats/getAllMessages?model=A

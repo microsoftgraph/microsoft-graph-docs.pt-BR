@@ -1,16 +1,11 @@
 ---
 title: 'Referência de permissões do Microsoft Graph '
-description: O Microsoft Graph expõe as permissões granulares que controlam o acesso que os aplicativos têm aos recursos, como email, grupos e usuários. Como desenvolvedor, você decide quais permissões para o Microsoft Graph seu aplicativo deverá solicitar.
+description: 'O Microsoft Graph expõe as permissões granulares que controlam o acesso que os aplicativos têm aos recursos, como email, grupos e usuários. Como desenvolvedor, você decide quais permissões para o Microsoft Graph seu aplicativo deverá solicitar.'
 author: jackson-woods
 ms.localizationpriority: high
-ms.custom: graphiamtop20, scenarios:getting-started
-ms.openlocfilehash: d169638dd2565101bcf5e21fb8becdc88b9d25dd
-ms.sourcegitcommit: 15956da1b4a7d523363ffa8afb5e2059fbf680ce
-ms.translationtype: HT
-ms.contentlocale: pt-BR
-ms.lasthandoff: 02/01/2022
-ms.locfileid: "62291461"
+ms.custom: 'graphiamtop20, scenarios:getting-started'
 ---
+
 # <a name="microsoft-graph-permissions-reference"></a>Referência de permissões do Microsoft Graph
 
 Para que o aplicativo acesse os dados no Microsoft Graph, o usuário ou administrador deve conceder a ele as permissões corretas por meio de um processo de consentimento. Este tópico lista as permissões associadas a cada grande conjunto de APIs do Microsoft Graph. Ele também fornece orientações sobre como usar as permissões.
@@ -689,14 +684,18 @@ Para cenários mais complexos que envolvem várias permissões, confira [Cenári
 
 |   Permissão    |  Exibir Cadeia de Caracteres   |  Descrição | Consentimento Obrigatório do Administrador | Suporte da conta da Microsoft |
 |:----------------|:------------------|:-------------|:-----------------------|:--------------|
+| _CustomSecAttributeAssignment.Read.All_ | Ler atribuições de atributo de segurança personalizadas | Permite que o aplicativo leia e grave atribuições de atributos de segurança personalizados para todos os principais no locatário em nome de um usuário conectado. | Sim | Não |
 | _CustomSecAttributeAssignment.ReadWrite.All_ | Ler e escrever atribuições de atributos de segurança personalizados | Permite que o aplicativo leia e grave atribuições de atributos de segurança personalizados para todos os principais no locatário em nome de um usuário conectado. | Sim | Não |
+| _CustomSecAttributeDefinition.Read.All_ | Ler definições de atributo de segurança personalizadas | Permite que o aplicativo leia e grave definições de atributo de segurança personalizadas para o locatário em nome de um usuário conectado. | Sim | Não |
 | _CustomSecAttributeDefinition.ReadWrite.All_ | Ler e escrever definições de atributos de segurança personalizados | Permite que o aplicativo leia e grave definições de atributo de segurança personalizadas para o locatário em nome de um usuário conectado. | Sim | Não |
 
 #### <a name="application-permissions"></a>Permissões de aplicativos
 
 |   Permissão    |  Exibir Cadeia de Caracteres   |  Descrição | Consentimento Obrigatório do Administrador |
 |:-----------------------------|:-----------------------------------------|:-----------------|:-----------------|
+| _CustomSecAttributeAssignment.Read.All_ | Ler atribuições de atributo de segurança personalizadas | Permite que o aplicativo leia e grave atribuições de atributos de segurança personalizados para todos os principais no locatário sem um usuário conectado. | Sim |
 | _CustomSecAttributeAssignment.ReadWrite.All_ | Ler e escrever atribuições de atributos de segurança personalizados | Permite que o aplicativo leia e grave atribuições de atributos de segurança personalizados para todos os principais no locatário sem um usuário conectado. | Sim |
+| _CustomSecAttributeDefinition.Read.All_ | Ler definições de atributo de segurança personalizadas | Permite que o aplicativo leia e grave definições de atributos de segurança personalizados para o locatário sem um usuário conectado. | Sim |
 | _CustomSecAttributeDefinition.ReadWrite.All_ | Ler e escrever definições de atributos de segurança personalizados | Permite que o aplicativo leia e grave definições de atributos de segurança personalizados para o locatário sem um usuário conectado. | Sim |
 
 ---

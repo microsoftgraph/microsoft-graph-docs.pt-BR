@@ -5,13 +5,8 @@ author: jpettere
 ms.localizationpriority: high
 ms.prod: users
 doc_type: resourcePageType
-ms.openlocfilehash: 053a18ba0a991e67efb2c5dc065b9ed27872fd3a
-ms.sourcegitcommit: 25acfa7d0153336c9a35d30a1dd422aeadc1342c
-ms.translationtype: HT
-ms.contentlocale: pt-BR
-ms.lasthandoff: 02/03/2022
-ms.locfileid: "62348933"
 ---
+
 # <a name="user-resource-type"></a>Tipo de recurso de usuário
 
 Namespace: microsoft.graph
@@ -144,14 +139,14 @@ Esse recurso permite:
 |:---------------|:--------|:----------|
 |aboutMe|String|Um campo de entrada de texto de forma livre para o usuário se descrever. Retornado apenas em `$select`.|
 |accountEnabled|Booliano| `true` se a conta estiver habilitada. Caso contrário, `false`. Essa propriedade é obrigatória quando um usuário é criado.<br><br>Retornado apenas em `$select`. Suporte `$filter` (`eq`, `ne`, `not` e `in`).    |
-|ageGroup|[ageGroup](#agegroup-values)|Define a faixa etária do usuário. Valores permitidos: `null`, `minor`, `notAdult` e `adult`. Confira as [definições de propriedades da faixa etária legal](#legal-age-group-property-definitions) para obter mais informações. <br><br>Retornado apenas em `$select`. Suporte `$filter` (`eq`, `ne`, `not` e `in`).|
+|ageGroup|[ageGroup](#agegroup-values)|Define a faixa etária do usuário. Valores permitidos: `null`, `Minor`, `NotAdult` e `Adult`. Confira as [definições de propriedades da faixa etária legal](#legal-age-group-property-definitions) para obter mais informações. <br><br>Retornado apenas em `$select`. Suporte `$filter` (`eq`, `ne`, `not` e `in`).|
 |assignedLicenses|Coleção [assignedLicense](assignedlicense.md)|As licenças atribuídas ao usuário, incluindo licenças herdadas (baseadas em grupo).  Não anulável. Retornado apenas em `$select`. Suporte para `$filter` (`eq` e `not`).           |
 |assignedPlans|Coleção [assignedPlan](assignedplan.md)|Os planos que são atribuídos ao usuário. Somente leitura. Não anulável.<br><br>Retornado apenas em `$select`. Suporte para `$filter` (`eq` e `not`). |
 |birthday|DateTimeOffset|O aniversário do usuário. O tipo de carimbo de data/hora representa informações de data e hora usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite UTC em 1 de janeiro de 2014 é: `2014-01-01T00:00:00Z` <br><br>Retornado apenas em `$select`.|
 |businessPhones|Coleção de cadeias de caracteres|Os números de telefone do usuário. OBSERVAÇÃO: Embora esta seja uma coleção de cadeia de caracteres, somente um número pode ser definido para esta propriedade. Somente leitura para usuários sincronizados do diretório local.<br><br>Devolvido por padrão. Suporta `$filter` (`eq`, `not`, `ge`, `le`, `startsWith`).|
 |city|Cadeia de caracteres|A cidade em que o usuário está localizado. O comprimento máximo é de 128 caracteres. <br><br>Retornado apenas em `$select`. Suporta `$filter` (`eq`, `ne`, `not`, `ge`, `le`, `in`, `startsWith`, e `eq` em `null` valores).|
 |CompanyName | String | O nome da empresa em que o usuário está associado. Essa propriedade pode ser útil para descrever a empresa de onde procede um usuário externo. O tamanho máximo é de 64 caracteres.<br><br>Retornado apenas em `$select`. Suporta `$filter` (`eq`, `ne`, `not`, `ge`, `le`, `in`, `startsWith`, e `eq` em `null` valores).|
-|consentProvidedForMinor|[consentProvidedForMinor](#consentprovidedforminor-values)|Define se o consentimento foi obtido para menores. Valores permitidos: `null`, `granted`, `denied` e `notRequired`. Confira as [definições de propriedades da faixa etária legal](#legal-age-group-property-definitions) para obter mais informações. <br><br>Retornado apenas em `$select`. Suporte `$filter` (`eq`, `ne`, `not` e `in`).|
+|consentProvidedForMinor|[consentProvidedForMinor](#consentprovidedforminor-values)|Define se o consentimento foi obtido para menores. Valores permitidos: `null`, `Granted`, `Denied` e `NotRequired`. Confira as [definições de propriedades da faixa etária legal](#legal-age-group-property-definitions) para obter mais informações. <br><br>Retornado apenas em `$select`. Suporte `$filter` (`eq`, `ne`, `not` e `in`).|
 |country|Cadeia de caracteres|O país/região em que o usuário está localizado; por exemplo, `US` ou `UK`. O comprimento máximo é de 128 caracteres. <br><br>Retornado apenas em `$select`. Suporta `$filter` (`eq`, `ne`, `not`, `ge`, `le`, `in`, `startsWith`, e `eq` em `null` valores).|
 |createdDateTime | DateTimeOffset |A data de criação do objeto de usuário. Somente leitura.<br><br>Retornado apenas em `$select`. Suporta `$filter` (`eq`, `ne`, `not` , `ge`, `le`, `in`).|
 | creationType | String | Indica se a conta do usuário foi criada por meio de um dos seguintes métodos: <br/> <ul><li>Como uma conta corporativa ou de estudante (`null`). <li>Como uma conta externa (`Invitation`). <li>Como uma conta local para um locatário do Azure Active Directory B2C (`LocalAccount`). <li>Por meio da inscrição de autoatendimento feita por um usuário interno usando a verificação por email (`EmailVerified`). <li>Por meio da inscrição de autoatendimento feita por um usuário externo que se inscreveu usando um link que faz parte de um fluxo do usuário (`SelfServiceSignUp`).</ul> <br>Somente leitura.<br>Retornado apenas em `$select`. Suporta `$filter` (`eq`, `ne`, `not`, `in`). |
@@ -174,14 +169,14 @@ Esse recurso permite:
 |isResourceAccount|Boolean| Não use – reservado para uso futuro.|
 |jobTitle|String|O cargo do usuário. O comprimento máximo é de 128 caracteres. <br><br>Retornado por padrão. Suporta `$filter` (`eq`, `ne`, `not` , `ge`, `le`, `in`, `startsWith`, e `eq` em `null` valores).|
 |lastPasswordChangeDateTime| DateTimeOffset | A hora em que esse usuário do Azure Active Directory alterou sua senha pela última vez ou quando sua senha foi criada, qualquer que seja a data em que a ação mais recente foi realizada. As informações de data e hora usam o formato ISO 8601 e estão sempre no horário UTC. Por exemplo, meia-noite UTC de 1º de janeiro de 2014 é `2014-01-01T00:00:00Z`. <br><br>Retornado apenas em `$select`.|
-|legalAgeGroupClassification|[legalAgeGroupClassification](#legalagegroupclassification-values)| Usado por aplicativos empresariais para determinar a faixa etária legal do usuário. Essa propriedade é somente leitura e calculada com base nas propriedades **ageGroup** e **consentProvidedForMinor**. Valores permitidos: `null`, `minorWithOutParentalConsent`, `minorWithParentalConsent`, `minorNoParentalConsentRequired`, `notAdult` e `adult`. Confira as [definições de propriedades da faixa etária legal](#legal-age-group-property-definitions) para obter mais informações. <br><br>Retornado apenas em `$select`.|
+|legalAgeGroupClassification|[legalAgeGroupClassification](#legalagegroupclassification-values)| Usado por aplicativos empresariais para determinar a faixa etária legal do usuário. Essa propriedade é somente leitura e calculada com base nas propriedades **ageGroup** e **consentProvidedForMinor**. Valores permitidos: `null`, `MinorWithOutParentalConsent`, `MinorWithParentalConsent`, `MinorNoParentalConsentRequired`, `NotAdult` e `Adult`. Confira as [definições de propriedades da faixa etária legal](#legal-age-group-property-definitions) para obter mais informações. <br><br>Retornado apenas em `$select`.|
 |licenseAssignmentStates|Coleção [licenseAssignmentState](licenseassignmentstate.md)|Estado das atribuições de licença para este usuário. Somente leitura.<br><br>Retornado apenas em `$select`.|
 |email|String|O endereço SMTP do usuário, por exemplo, `jeff@contoso.onmicrosoft.com`.<br>As alterações feitas nessa propriedade também atualizarão a coleção **proxyAddresses** do usuário para incluir o valor como um endereço SMTP. Para contas do Azure AD B2C, esta propriedade só pode ser atualizada até dez vezes com endereços SMTP exclusivos. Esta propriedade não pode conter caracteres de ênfase.<br><br>Retornado por padrão. Suporta `$filter` (`eq`, `ne`, `not`, `ge`, `le`, `in`, `startsWith`, `endsWith`e `eq` em `null` valores).|
 |mailboxSettings|[mailboxSettings](mailboxsettings.md)|Configurações da caixa de correio principal do usuário conectado. Você pode [obter](../api/user-get-mailboxsettings.md) ou [atualizar](../api/user-update-mailboxsettings.md) as configurações de localidade, fuso horário ou de envio de respostas automáticas a mensagens de entrada.<br><br>Retornado apenas em `$select`.|
 |mailNickname|String|O alias de email do usuário. Essa propriedade deve ser especificada quando um usuário é criado. O comprimento máximo é de 64 caracteres.<br><br>Retornado apenas em `$select`. Suporta `$filter` (`eq`, `ne`, `not`, `ge`, `le`, `in`, `startsWith`, e `eq` em `null` valores).|
-|mobilePhone|String|O número de celular principal do usuário. Somente leitura para usuários sincronizados do diretório local. O comprimento máximo é de 64 caracteres. <br><br>Retornado por padrão. Suporte `$filter` (`eq`, `ne`, `not`, `ge`, `le`, `in`, `startsWith`, e `eq` no `null` valores). |
+|mobilePhone|String|O número de celular principal do usuário. Somente leitura para usuários sincronizados do diretório local. O comprimento máximo é de 64 caracteres. <br><br>Retornado por padrão. Suporta `$filter` (`eq`, `ne`, `not`, `ge`, `le`, `in`, `startsWith`, e `eq` em `null` valores). |
 |mySite|String|A URL do site pessoal do usuário. <br><br>Retornado apenas em `$select`.|
-|officeLocation|String|A localização do escritório no local de trabalho do usuário. <br><br>Retornado por padrão. Suporte `$filter` (`eq`, `ne`, `not`, `ge`, `le`, `in`, `startsWith`, e `eq` no `null` valores).|
+|officeLocation|String|A localização do escritório no local de trabalho do usuário. <br><br>Retornado por padrão. Suporta `$filter` (`eq`, `ne`, `not`, `ge`, `le`, `in`, `startsWith`, e `eq` em `null` valores).|
 |onPremisesDistinguishedName|String| Contém `distinguished name` ou `DN` do Active Directory local. A propriedade somente é preenchida para os clientes que estejam sincronizando o seu diretório local com o Azure Active Directory pelo Azure AD Connect. Somente leitura.<br><br>Retornado apenas em `$select`. |
 |onPremisesDomainName|String| Contém o `domainFQDN` local, também chamado dnsDomainName, sincronizado do diretório local. A propriedade é preenchida apenas para clientes que estão sincronizando seu diretório local com o Azure Active Directory por meio do Azure AD Connect. Somente leitura. <br><br>Retornado apenas em `$select`.|
 |onPremisesExtensionAttributes|[onPremisesExtensionAttributes](onpremisesextensionattributes.md)|Contém extensionAttributes1-15 para o usuário. Os atributos de extensão individuais não são selecionáveis nem filtráveis. <br><li>Para um usuário **onPremisesSyncEnabled**, a fonte de autoridade para este conjunto de propriedades é o local e é somente leitura. </li><li>Para um usuário apenas na nuvem (onde **onPremisesSyncEnabled** é `false`), essas propriedades podem ser definidas durante a criação ou atualização de um objeto de usuário.  </li><li>Para um usuário somente na nuvem previamente sincronizado a partir do Active Directory local, essas propriedades são somente leitura no Microsoft Graph, mas podem ser totalmente gerenciadas através do Centro de Administração do Exchange ou do módulo Exchange Online V2 no PowerShell.</li><br> Esses atributos de extensão também são conhecidos como atributos personalizados do Exchange 1-15. |
@@ -210,7 +205,7 @@ Esse recurso permite:
 |signInSessionsValidFromDateTime|DateTimeOffset| Os tokens de atualização ou de sessão (cookies de sessão) emitidos antes dessa hora são inválidos e os aplicativos recebem um erro ao usar um token de atualização ou de sessão inválido para adquirir um token de acesso delegado (para acessar APIs como o Microsoft Graph).  Se isso acontecer, o aplicativo precisará adquirir um novo token de atualização, fazendo uma solicitação ao ponto de extremidade de autorização. Somente leitura. Use [revokeSignInSessions](../api/user-revokesigninsessions.md) para redefinir. <br><br>Retornado apenas em `$select`.|
 |state|String|O estado ou município no endereço do usuário. O comprimento máximo é de 128 caracteres. <br><br>Retornado apenas em `$select`. Suporta `$filter` (`eq`, `ne`, `not`, `ge`, `le`, `in`, `startsWith`, e `eq` em `null` valores).|
 |streetAddress|String|O endereço do local de trabalho do usuário. O comprimento máximo é de 1024 caracteres. <br><br>Retornado apenas em `$select`. Suporta `$filter` (`eq`, `ne`, `not`, `ge`, `le`, `in`, `startsWith`, e `eq` em `null` valores).|
-|surname|String|O sobrenome do usuário (nome de família ou sobrenome). O comprimento máximo é de 64 caracteres. <br><br>Retornado por padrão. Suporte `$filter` (`eq`, `ne`, `not`, `ge`, `le`, `in`, `startsWith`, e `eq` no `null` valores).|
+|surname|String|O sobrenome do usuário (nome de família ou sobrenome). O comprimento máximo é de 64 caracteres. <br><br>Retornado por padrão. Suporta `$filter` (`eq`, `ne`, `not`, `ge`, `le`, `in`, `startsWith`, e `eq` em `null` valores).|
 |usageLocation|String|Um código de duas letras (padrão ISO 3166). Obrigatório para os usuários que receberão licenças devido à exigência legal de verificar a disponibilidade de serviços nos países/regiões. Por exemplo: `US`, `JP`, e `GB`. Não anulável.<br><br>Retornado apenas em `$select`. Suporta `$filter` (`eq`, `ne`, `not`, `ge`, `le`, `in`, `startsWith`, e `eq` em `null` valores).|
 |userPrincipalName|Cadeia de caracteres|O nome UPN do usuário. O nome UPN é um nome de logon para o usuário ao estilo da Internet com base na RFC 822 padrão da Internet. Por convenção, ele deve ser mapeado para o nome de email do usuário. O formato geral é alias@domain, em que o domínio deve estar presente na coleção de domínios verificados do locatário. Essa propriedade é obrigatória quando um usuário é criado. Os domínios verificados para o locatário podem ser acessados pela propriedade **verifiedDomains** da [organização](organization.md).<br>OBSERVAÇÃO: esta propriedade não pode conter caracteres de ênfase. Somente os seguintes caracteres são permitidos `A - Z`, `a - z`, `0 - 9`, ` ' . - _ ! # ^ ~`. Para obter a lista completa de caracteres permitidos, consulte as [políticas de nome de usuário](/azure/active-directory/authentication/concept-sspr-policy#userprincipalname-policies-that-apply-to-all-user-accounts). <br><br>Retornado por padrão. Suporta `$filter` (`eq`, `ne`, `not`, `ge`, `le`, `in`, `startsWith`, `endsWith`) e `$orderBy`.
 |userType|String|Um valor de string que pode ser usado para classificar tipos de usuário em seu diretório, como `Member` e `Guest`. <br><br>Retornado apenas em `$select`. Suporta `$filter` (`eq`, `ne`, `not`, `in` e `eq` em `null` valores). **OBSERVAÇÃO:** Para obter mais informações sobre as permissões para usuários membros e convidados, consulte [Quais são as permissões padrão de usuário em Azure Active Directory?](/azure/active-directory/fundamentals/users-default-permissions#member-and-guest-users)         |
@@ -241,29 +236,29 @@ Por exemplo: Cameron é o administrador de um diretório em uma escola de ensino
 | Member    | Descrição|
 |:---------------|:----------|
 |null|Valor padrão, nenhum **ageGroup** foi definido para o usuário.|
-|minorWithoutParentalConsent |(Reservado para uso futuro)|
-|minorWithParentalConsent| O usuário é considerado menor baseado nos regulamentos relacionados com a idade de seu país ou região, e o administrador da conta obteve o consentimento apropriado dos pais ou responsável.|
-|adult|O usuário é considerado adulto baseado nos regulamentos relacionadas com a idade do seu país ou região.|
-|notAdult|O usuário é de um país ou região com regulamentos adicionais relacionados à idade (por exemplo, Estados Unidos, Reino Unido, União Europeia ou Coreia do Sul) e a idade do usuário está entre menor e adulto (como estipulado com base no país ou região). Em geral, isso significa que adolescentes são considerados como `notAdult` nos países/regiões regulamentados.|
-|minorNoParentalConsentRequired|O usuário é menor de idade, mas é de um país ou região que não tem com regulamentações relacionadas com a idade.|
+|MenorSemConsentimentoDosPais |(Reservado para uso futuro)|
+|MenorComConsentimentoDosPais| O usuário é considerado menor baseado nos regulamentos relacionados com a idade de seu país ou região, e o administrador da conta obteve o consentimento apropriado dos pais ou responsável.|
+|Adulto|O usuário é considerado adulto baseado nos regulamentos relacionadas com a idade do seu país ou região.|
+|NãoAdulto|O usuário é de um país ou região com regulamentos adicionais relacionados à idade (por exemplo, Estados Unidos, Reino Unido, União Europeia ou Coreia do Sul) e a idade do usuário está entre menor e adulto (como estipulado com base no país ou região). Em geral, isso significa que adolescentes são considerados como `notAdult` nos países/regiões regulamentados.|
+|MenorSemExigênciaDeConsentimentoDosPais|O usuário é menor de idade, mas é de um país ou região que não tem com regulamentações relacionadas com a idade.|
 
 #### <a name="agegroup-values"></a>ageGroup values
 
 | Member    | Descrição|
 |:---------------|:--------|
 |null|Valor padrão, nenhum **ageGroup** foi definido para o usuário.|
-|menor|O usuário é considerado um menor.|
-|notAdult|O usuário é de um país que possui regulamentos legais (como Estados Unidos, Reino Unido, União Europeia ou Coreia do Sul) e a idade do usuário é superior ao limite superior de idade infantil (conforme o país) e inferior ao limite inferior de adulto idade (conforme estipulado com base no país ou região). Basicamente, os adolescentes são considerados como `notAdult` nos países/regiões regulamentados.|
-|adult|O usuário deve ser tratado como um adulto.|
+|Secundária|O usuário é considerado um menor.|
+|NãoAdulto|O usuário é de um país que possui regulamentos legais (como Estados Unidos, Reino Unido, União Europeia ou Coreia do Sul) e a idade do usuário é superior ao limite superior de idade infantil (conforme o país) e inferior ao limite inferior de adulto idade (conforme estipulado com base no país ou região). Basicamente, os adolescentes são considerados como `notAdult` nos países/regiões regulamentados.|
+|Adulto|O usuário deve ser tratado como um adulto.|
 
 #### <a name="consentprovidedforminor-values"></a>consentProvidedForMinor values
 
 | Member    | Descrição|
 |:---------------|:----------|
 |null|Valor padrão, nenhum **consentimentoProvidedForMinor** foi definido para o usuário.|
-|concedido|O consentimento foi obtido para o usuário ter uma conta.|
-|denied|O consentimento não foi obtido para o usuário ter uma conta.|
-|notRequired|O usuário é de um local que não exige consentimento.|
+|Concedido|O consentimento foi obtido para o usuário ter uma conta.|
+|Negado|O consentimento não foi obtido para o usuário ter uma conta.|
+|NãoExigido|O usuário é de um local que não exige consentimento.|
 
 ## <a name="relationships"></a>Relações
 

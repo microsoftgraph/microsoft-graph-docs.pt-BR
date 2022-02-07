@@ -5,13 +5,8 @@ author: jpettere
 ms.localizationpriority: high
 ms.prod: users
 doc_type: resourcePageType
-ms.openlocfilehash: 275855ffe5b23e5a7d8b89a23bbb837984210610
-ms.sourcegitcommit: 25acfa7d0153336c9a35d30a1dd422aeadc1342c
-ms.translationtype: HT
-ms.contentlocale: pt-BR
-ms.lasthandoff: 02/03/2022
-ms.locfileid: "62345560"
 ---
+
 # <a name="user-resource-type"></a>Tipo de recurso de usuário
 
 Namespace: microsoft.graph
@@ -173,14 +168,14 @@ Esse recurso permite:
 |:---------------|:--------|:------------|
 | aboutMe | String | Um campo de entrada de texto em forma livre para o usuário se descrever. <br><br>Retornado apenas em `$select`. |
 | accountEnabled | Booliano | `true` se a conta estiver habilitada. Caso contrário, `false`. Essa propriedade é obrigatória quando um usuário é criado.<br><br>Suporte `$filter` (`eq`, `ne`, `not` e `in`). |
-| ageGroup | [ageGroup](#agegroup-values) | Define a faixa etária do usuário. Valores permitidos: `null`, `minor`, `notAdult` e `adult`. Confira as [definições de propriedades da faixa etária legal](#legal-age-group-property-definitions) para obter mais informações. <br><br>Suporte `$filter` (`eq`, `ne`, `not` e `in`). |
+| ageGroup | [ageGroup](#agegroup-values) | Define a faixa etária do usuário. Valores permitidos: `null`, `Minor`, `NotAdult` e `Adult`. Confira as [definições de propriedades da faixa etária legal](#legal-age-group-property-definitions) para obter mais informações. <br><br>Suporte `$filter` (`eq`, `ne`, `not` e `in`). |
 | assignedLicenses | Coleção [assignedLicense](assignedlicense.md) | As licenças atribuídas ao usuário, incluindo licenças herdadas (baseadas em grupo). <br><br>Não anulável. Suporte para `$filter` (`eq` e `not`). |
 | assignedPlans | Coleção [assignedPlan](assignedplan.md) | Os planos que são atribuídos ao usuário. Somente leitura. Não anulável.<br><br>Suporte para `$filter` (`eq` e `not`). |
 | birthday | DateTimeOffset | O aniversário do usuário. O tipo de carimbo de data/hora representa informações de data e hora usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite UTC em 1º de janeiro de 2014 é `2014-01-01T00:00:00Z` <br><br>Retornado apenas em `$select`. |
 | businessPhones | Coleção de cadeias de caracteres | Números de telefone para o usuário. Somente um número pode ser definido para essa propriedade.<br><br>Somente leitura para usuários sincronizados do diretório local. Suporta `$filter` (`eq`, `not`, `ge`, `le`, `startsWith`).|
 | city | Cadeia de caracteres | A cidade em que o usuário está localizado. O comprimento máximo é de 128 caracteres. <br><br>Suporte `$filter` (`eq`, `ne`, `not`, `ge`, `le`, `in`, `startsWith`, e `eq` no `null` valores). |
 | CompanyName | String | O nome da empresa em que o usuário está associado. Essa propriedade pode ser útil para descrever a empresa de onde procede um usuário externo. O tamanho máximo é de 64 caracteres.<br><br>Suporte `$filter` (`eq`, `ne`, `not`, `ge`, `le`, `in`, `startsWith`, e `eq` no `null` valores).|
-| consentProvidedForMinor | [consentProvidedForMinor](#consentprovidedforminor-values) | Define se o consentimento foi obtido para menores. Valores permitidos: `null`, `granted`, `denied` e `notRequired`. Confira as [definições de propriedades da faixa etária legal](#legal-age-group-property-definitions) para obter mais informações. <br><br>Suporte `$filter` (`eq`, `ne`, `not` e `in`).|
+| consentProvidedForMinor | [consentProvidedForMinor](#consentprovidedforminor-values) | Define se o consentimento foi obtido para menores. Valores permitidos: `null`, `Granted`, `Denied` e `NotRequired`. Confira as [definições de propriedades da faixa etária legal](#legal-age-group-property-definitions) para obter mais informações. <br><br>Suporte `$filter` (`eq`, `ne`, `not` e `in`).|
 | country | Cadeia de caracteres | O país/região em que o usuário está localizado; por exemplo, `US` ou `UK`. O comprimento máximo é de 128 caracteres. <br><br>Suporte `$filter` (`eq`, `ne`, `not`, `ge`, `le`, `in`, `startsWith`, e `eq` no `null` valores). |
 | createdDateTime | DateTimeOffset | A data e hora que o usuário foi criado. Não é possível modificar o valor e ele é preenchido automaticamente quando a entidade é criada. O tipo DateTimeOffset representa informações de data e hora usando o formato ISO 8601 e está sempre no horário UTC. A propriedade é anulável. Um valor nulo indica que uma hora de criação exata não pode ser determinada pelo usuário. Somente leitura. <br><br>Suporta `$filter` (`eq`, `ne`, `not` , `ge`, `le`, `in`). |
 | creationType | String | Indica se a conta do usuário foi criada por meio de um dos seguintes métodos: <br/> <ul><li>Como uma conta corporativa ou de estudante (`null`). <li>Como uma conta externa (`Invitation`). <li>Como uma conta local para um locatário do Azure Active Directory B2C (`LocalAccount`). <li>Por meio da inscrição de autoatendimento feita por um usuário interno usando a verificação por email (`EmailVerified`). <li>Por meio da inscrição de autoatendimento feita por um usuário externo que se inscreveu usando um link que faz parte de um fluxo do usuário (`SelfServiceSignUp`). </ul> <br>Somente leitura.<br>Suporte `$filter` (`eq`, `ne`, `not` e `in`). |
@@ -205,7 +200,7 @@ Esse recurso permite:
 | isResourceAccount | Boolean | Não use – reservado para uso futuro. |
 | jobTitle | String | O cargo do usuário. O comprimento máximo é de 128 caracteres. <br><br>Suporte `$filter` (`eq`, `ne`, `not` , `ge`, `le`, `in`, `startsWith`, e `eq` no `null` valores).|
 | lastPasswordChangeDateTime | DateTimeOffset | A hora em que esse usuário do Azure AD alterou a senha pela última vez ou quando a senha foi criada, seja qual for a data em que a ação mais recente foi executada. O tipo de carimbo de data/hora representa informações de data e hora usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite UTC em 1º de janeiro de 2014 é `2014-01-01T00:00:00Z`. Somente leitura.<br><br>Retornado apenas em `$select`.  |
-| legalAgeGroupClassification | [legalAgeGroupClassification](#legalagegroupclassification-values) | Usado por aplicativos empresariais para determinar a faixa etária legal do usuário. Essa propriedade é somente leitura e calculada com base nas propriedades **ageGroup** e **consentProvidedForMinor**. Valores permitidos: `null`, `minorWithOutParentalConsent`, `minorWithParentalConsent`, `minorNoParentalConsentRequired`, `notAdult` e `adult`. Confira as [definições de propriedades da faixa etária legal](#legal-age-group-property-definitions) para obter mais informações. <br><br>Retornado apenas em `$select`. |
+| legalAgeGroupClassification | [legalAgeGroupClassification](#legalagegroupclassification-values) | Usado por aplicativos empresariais para determinar a faixa etária legal do usuário. Essa propriedade é somente leitura e calculada com base nas propriedades **ageGroup** e **consentProvidedForMinor**. Valores permitidos: `null`, `MinorWithOutParentalConsent`, `MinorWithParentalConsent`, `MinorNoParentalConsentRequired`, `NotAdult` e `Adult`. Confira as [definições de propriedades da faixa etária legal](#legal-age-group-property-definitions) para obter mais informações. <br><br>Retornado apenas em `$select`. |
 | licenseAssignmentStates | Coleção [licenseAssignmentState](licenseassignmentstate.md) | Estado das atribuições de licença para este usuário. Somente leitura.<br><br>Retornado apenas em `$select`. |
 | email | String | O endereço SMTP do usuário, por exemplo, `admin@contoso.com`. As alterações feitas nessa propriedade também atualizarão a coleção **proxyAddresses** do usuário para incluir o valor como um endereço SMTP. Para contas do Azure AD B2C, esta propriedade só pode ser atualizada até dez vezes com endereços SMTP exclusivos. Esta propriedade não pode conter caracteres de destaque. <br><br> Suporte `$filter` (`eq`, `ne`, `not`, `ge`, `le`, `in`, `startsWith`, `endsWith`, e `eq` no `null` valores). |
 | mailboxSettings | [mailboxSettings](mailboxsettings.md) | Configurações para a caixa de correio principal do usuário conectado. Você pode [obter](../api/user-get-mailboxsettings.md) ou [atualizar](../api/user-update-mailboxsettings.md) as configurações de localidade, fuso horário ou de envio de respostas automáticas a mensagens de entrada. Para obter mais informações, confira [Preferências do usuário para idiomas e formatos regionais](#user-preferences-for-languages-and-regional-formats). <br><br>Retornado apenas em `$select`. |
@@ -278,29 +273,29 @@ Por exemplo: Cameron é o administrador de um diretório em uma escola de ensino
 | Member    | Descrição|
 |:---------------|:----------|
 |null|Valor padrão, nenhum **ageGroup** foi definido para o usuário.|
-|minorWithoutParentalConsent |(Reservado para uso futuro)|
-|minorWithParentalConsent| O usuário é considerado menor baseado nos regulamentos relacionados com a idade de seu país ou região, e o administrador da conta obteve o consentimento apropriado dos pais ou responsável.|
-|adult|O usuário é considerado adulto baseado nos regulamentos relacionadas com a idade do seu país ou região.|
-|notAdult|O usuário é de um país ou região com regulamentos adicionais relacionados à idade (por exemplo, Estados Unidos, Reino Unido, União Europeia ou Coreia do Sul) e a idade do usuário está entre menor e adulto (como estipulado com base no país ou região). Em geral, isso significa que adolescentes são considerados como `notAdult` nos países/regiões regulamentados.|
-|minorNoParentalConsentRequired|O usuário é menor de idade, mas é de um país ou região que não tem com regulamentações relacionadas com a idade.|
+|MenorSemConsentimentoDosPais |(Reservado para uso futuro)|
+|MenorComConsentimentoDosPais| O usuário é considerado menor baseado nos regulamentos relacionados com a idade de seu país ou região, e o administrador da conta obteve o consentimento apropriado dos pais ou responsável.|
+|Adulto|O usuário é considerado adulto baseado nos regulamentos relacionadas com a idade do seu país ou região.|
+|NãoAdulto|O usuário é de um país ou região com regulamentos adicionais relacionados à idade (por exemplo, Estados Unidos, Reino Unido, União Europeia ou Coreia do Sul) e a idade do usuário está entre menor e adulto (como estipulado com base no país ou região). Em geral, isso significa que adolescentes são considerados como `notAdult` nos países/regiões regulamentados.|
+|MenorSemExigênciaDeConsentimentoDosPais|O usuário é menor de idade, mas é de um país ou região que não tem com regulamentações relacionadas com a idade.|
 
 #### <a name="agegroup-values"></a>ageGroup values
 
 | Member    | Descrição|
 |:---------------|:--------|
 |null|Valor padrão, nenhum **ageGroup** foi definido para o usuário.|
-|menor|O usuário é considerado um menor.|
-|notAdult|O usuário é de um país que possui regulamentos legais (como Estados Unidos, Reino Unido, União Europeia ou Coreia do Sul) e a idade do usuário é superior ao limite superior de idade infantil (conforme o país) e inferior ao limite inferior de adulto idade (conforme estipulado com base no país ou região). Basicamente, os adolescentes são considerados como `notAdult` nos países/regiões regulamentados.|
-|adult|O usuário deve ser tratado como um adulto.|
+|Secundária|O usuário é considerado um menor.|
+|NãoAdulto|O usuário é de um país que possui regulamentos legais (como Estados Unidos, Reino Unido, União Europeia ou Coreia do Sul) e a idade do usuário é superior ao limite superior de idade infantil (conforme o país) e inferior ao limite inferior de adulto idade (conforme estipulado com base no país ou região). Basicamente, os adolescentes são considerados como `notAdult` nos países/regiões regulamentados.|
+|Adulto|O usuário deve ser tratado como um adulto.|
 
 #### <a name="consentprovidedforminor-values"></a>consentProvidedForMinor values
 
 | Member    | Descrição|
 |:---------------|:----------|
 |null|Valor padrão, nenhum **consentimentoProvidedForMinor** foi definido para o usuário.|
-|concedido|O consentimento foi obtido para o usuário ter uma conta.|
-|denied|O consentimento não foi obtido para o usuário ter uma conta.|
-|notRequired|O usuário é de um local que não exige consentimento.|
+|Concedido|O consentimento foi obtido para o usuário ter uma conta.|
+|Negado|O consentimento não foi obtido para o usuário ter uma conta.|
+|NãoExigido|O usuário é de um local que não exige consentimento.|
 
 ## <a name="relationships"></a>Relações
 

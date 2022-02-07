@@ -3,13 +3,8 @@ author: nkramer
 ms.topic: include
 ms.date: 01/25/2021
 ms.localizationpriority: medium
-ms.openlocfilehash: e9b65c0ed6c82e94a38bbeb08b208fbe24d60176
-ms.sourcegitcommit: f336c5c49fbcebe55312656aa8b50511fd99a657
-ms.translationtype: HT
-ms.contentlocale: pt-BR
-ms.lasthandoff: 12/09/2021
-ms.locfileid: "61390805"
 ---
+
 <!-- markdownlint-disable MD041-->
 
 ### <a name="chatmessage"></a>chatMessage
@@ -21,8 +16,8 @@ Assinaturas **chatMessage** com permissões de aplicativo incluem dados de recur
 Você deve usar o cabeçalho da solicitação `Prefer: include-unknown-enum-members` para obter os seguintes valores nos recursos **chatMessage** **messageType** [enumeração evoluível](/graph/best-practices-concept#handling-future-members-in-evolvable-enumerations): `systemEventMessage` para `/teams/{id}/channels/{id}/messages` e `/chats/{id}/messages`.
 
 > [!NOTE]
->`/teams/getAllMessages` e `/chats/getAllMessages` tem [requisitos de licenciamento e pagamento](/graph/teams-licenses).
-> `/teams/getAllMessages` e `/chats/getAllMessages` suportam os parâmetros de consulta `model=A` e `model=B`.
+>`/teams/getAllMessages`, `/chats/getAllMessages`, `/me/chats/getAllMessages` e `/users/{id}/chats/getAllMessages` tem [requisitos de licenciamento e pagamento](/graph/teams-licenses).
+> `/teams/getAllMessages` e `/chats/getAllMessages` suportam ambos parâmetros de consulta `model=A` e `model=B`, `/me/chats/getAllMessages` e `/users/{id}/chats/getAllMessages` dão suporte apenas `model=B`.
 > Se nenhum modelo for especificado, o [modo de avaliação](/graph/teams-licenses#evaluation-mode-default-requirements) será usado.
 
 ### <a name="conversationmember"></a>conversationMember
