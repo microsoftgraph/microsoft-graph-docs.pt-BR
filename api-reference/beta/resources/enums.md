@@ -11,6 +11,21 @@ author: MSGraphDocsvTeam
 
 Namespace: microsoft.graph
 
+### <a name="crosstenantaccesspolicytargetconfigurationaccesstype-values"></a>crossTenantAccessPolicyTargetConfigurationAccessType values
+
+|Member|
+|:---|
+|allowed|
+|blocked|
+|unknownFutureValue|
+
+### <a name="crosstenantaccesspolicytargettype-values"></a>valores crossTenantAccessPolicyTargetType
+
+|Member|
+|:---|
+|usuário|
+|group|
+
 ### <a name="accesspackagefilterbycurrentuseroptions-values"></a>valores accessPackageFilterByCurrentUserOptions
 
 |Member|
@@ -226,7 +241,7 @@ Namespace: microsoft.graph
 |Inteiro|
 |Referência|
 |Binária|
-|Booliano|
+|Boolean|
 |DateTime|
 
 ### <a name="mutability-values"></a>valores de mutabilidade
@@ -2672,7 +2687,6 @@ Valores possíveis para tipos de conta de usuário (associação ao grupo), por 
 |:---|
 |ou|
 |e|
-
 
 ### <a name="subjectrightsrequeststage-values"></a>valores subjectRightsRequestStage 
 
