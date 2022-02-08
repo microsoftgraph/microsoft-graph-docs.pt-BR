@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: Jumaodhiss
 doc_type: apiPageType
 ms.prod: change-notifications
-ms.openlocfilehash: 0ee9a4a9d9786b20cbef9af1417e3d2d5126bad2
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: 1fa6de2c7b8f9dea65e63c7473f66924f6449201
+ms.sourcegitcommit: 4c8444b732b8d6d0de8a95f6666c42095f146266
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62105308"
+ms.lasthandoff: 02/08/2022
+ms.locfileid: "62443090"
 ---
 # <a name="list-subscriptions"></a>Listar assinaturas
 
@@ -41,14 +41,14 @@ Esta API suporta os seguintes escopos de permissão; para saber mais, incluindo 
 |[contato](../resources/contact.md) | Contacts.Read, Subscription.Read.All | Contacts.Read, Subscription.Read.All | Contacts.Read |
 |[conversationMember](../resources/conversationmember.md) (/chats/getAllMembers) | Incompatível | Sem suporte | ChatMember.Read.All, ChatMember.ReadWrite.All, Chat.ReadBasic.All, Chat.Read.All, Chat.ReadWrite.All |
 |[conversationMember](../resources/conversationmember.md) (/chats/{id}/members) | ChatMember.Read, ChatMember.ReadWrite, Chat.ReadBasic, Chat.Read, Chat.ReadWrite, Subscription.Read.All | Incompatível | ChatMember.Read.Chat *, Chat.Manage.Chat*, ChatMember.Read.All, ChatMember.ReadWrite.All, Chat.ReadBasic.All, Chat.Read.All, Chat.ReadWrite.All |
-|[conversationMember](../resources/conversationmember.md) (/teams/getAllMembers) | Incompatível | Sem suporte | TeamMember.Read.All, TeamMember.ReadWrite.All |
+|[conversationMember](../resources/conversationmember.md) (/teams/getAllMembers) | Sem suporte | Sem suporte | TeamMember.Read.All, TeamMember.ReadWrite.All |
 |[conversationMember](../resources/conversationmember.md) (/teams/{id}/members) | TeamMember.Read.All, Subscription.Read.All | Incompatível | TeamMember.Read.All |
 |[conversationMember](../resources/conversationmember.md) (/teams/{id}/channels/getAllMembers) | Incompatível | Incompatível | ChannelMember.Read.All |
 |[driveItem](../resources/driveitem.md) (OneDrive pessoal de um usuário) | Sem suporte | Files.ReadWrite, Subscription.Read.All | Sem suporte |
 |[driveItem](../resources/driveitem.md) (OneDrive for Business) | Files.ReadWrite.All, Subscription.Read.All | Sem suporte | Files.ReadWrite.All |
 |[evento](../resources/event.md) | Calendars.Read, Subscription.Read.All | Calendars.Read, Subscription.Read.All | Calendars.Read |
 |[grupo](../resources/group.md) | Group.Read.All, Subscription.Read.All | Sem suporte | Group.Read.All |
-|[conversa em grupo](../resources/conversation.md) | Group.Read.All, Subscription.Read.All | Incompatível | Sem suporte |
+|[conversa em grupo](../resources/conversation.md) | Group.Read.All, Subscription.Read.All | Sem suporte | Sem suporte |
 |[list](../resources/list.md) | Sites.ReadWrite.All, Subscription.Read.All | Sem suporte | Sites.ReadWrite.All |
 |[message](../resources/message.md) | Mail.ReadBasic, Mail.Read, Subscription.Read.All | Mail.ReadBasic, Mail.Read, Subscription.Read.All | Mail.ReadBasic, Mail.Read |
 |[presence](../resources/presence.md) | Presence.Read.All, Subscription.Read.All | Sem suporte | Incompatível |
@@ -60,7 +60,7 @@ Esta API suporta os seguintes escopos de permissão; para saber mais, incluindo 
 |[todoTask](../resources/todotask.md) | Tasks.ReadWrite, Subscription.Read.All | Tasks.ReadWrite, Subscription.Read.All | Incompatível |
 |[user](../resources/user.md) | User.Read.All, Subscription.Read.All | User.Read.All | User.Read.All |
 
-> **Observação**: Permissões marcadas com * usam [consentimento específico de recurso]( https://aka.ms/teams-rsc).
+> **Observação**: Permissões marcadas com * usam [consentimento específico de recurso](/microsoftteams/platform/graph-api/rsc/resource-specific-consent).
 
 Os resultados da resposta são baseados no contexto do aplicativo de chamada. As seções a seguir descrevem os cenários comuns.
 

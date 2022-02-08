@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: RamjotSingh
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: b6731887ec9c9f364c6ce5dbdb910abd995dca06
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: ccb06fe2585c48935bb670ba2da2a7030c049980
+ms.sourcegitcommit: 4c8444b732b8d6d0de8a95f6666c42095f146266
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62109446"
+ms.lasthandoff: 02/08/2022
+ms.locfileid: "62443237"
 ---
 # <a name="send-chatmessage-in-a-channel-or-a-chat"></a>Enviar chatMessage em um canal ou chat
 
@@ -35,9 +35,9 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 | Delegado (conta pessoal da Microsoft) | Sem suporte. |
 | Aplicativo                            | Teamwork.Migrate.All |
 
-> **Observação**: as permissões marcadas com ** foram preteridas e não devem ser usadas.
+> **Observação**: As permissões marcadas com ** só têm suporte para compatibilidade com compatibilidade Recomendamos que você atualize suas soluções para usar permissões diferentes e evite usar essas permissões adiante.
 
-> **Observação**: as permissões de aplicativo só *são* suportadas para [migração](/microsoftteams/platform/graph-api/import-messages/import-external-messages-to-teams). No futuro, a Microsoft pode exigir que você ou seus clientes paguem taxas adicionais com base na quantidade de dados importados.
+> **Observação**: As permissões de aplicativo só *são* suportadas para [migração](/microsoftteams/platform/graph-api/import-messages/import-external-messages-to-teams). No futuro, a Microsoft pode exigir que você ou seus clientes paguem taxas adicionais com base na quantidade de dados importados.
 
 ### <a name="permissions-for-chat"></a>Permissões para o chat
 | Tipo de permissão                        | Permissões (da com menos para a com mais privilégios) |
@@ -75,16 +75,16 @@ POST /chats/{chat-id}/messages
 
 ## <a name="request-body"></a>Corpo da solicitação
 
-No corpo da solicitação, fornece uma representação JSON de um [objeto chatMessage.](../resources/chatmessage.md) Somente a propriedade body é obrigatória; outras propriedades são opcionais.
+No corpo da solicitação, fornece uma representação JSON de um [objeto chatMessage](../resources/chatmessage.md) . Somente a propriedade body é obrigatória; outras propriedades são opcionais.
 
 
 ## <a name="response"></a>Resposta
 
-Se tiver êxito, este método retornará um código de resposta e um `201 Created` novo [objeto chatMessage](../resources/chatmessage.md) no corpo da resposta.
+Se tiver êxito, este método retornará um `201 Created` código de resposta e um novo [objeto chatMessage](../resources/chatmessage.md) no corpo da resposta.
 
 ## <a name="examples"></a>Exemplos
 
-Nos exemplos a seguir, [a](channel-post-messages.md)URL pode usar a sintaxe [HTTP](#http-request) descrita para enviar uma mensagem para um [chat,](chat-post-messages.md)enviar uma mensagem para um canal ou enviar [resposta para um canal](chatmessage-post-replies.md).
+Nos exemplos [a](channel-post-messages.md) seguir, a URL pode usar a sintaxe [HTTP](#http-request) descrita para enviar uma mensagem para um [chat](chat-post-messages.md), enviar uma mensagem para um canal ou enviar [resposta para um canal](chatmessage-post-replies.md).
 
 ### <a name="example-1-send-a-hello-world-message-in-a-channel"></a>Exemplo 1: Enviar uma mensagem hello world em um canal
 
@@ -324,7 +324,7 @@ Content-type: application/json
 #### <a name="request"></a>Solicitação
 Este é um exemplo de solicitação.
 
-> **Observação:** A ID do anexo deve ser exclusiva e pode ser um novo GUID gerado aleatoriamente. No entanto, a ID do anexo deve ser a mesma no _corpo_ e nos _elementos anexos._
+> **Observação:** A ID do anexo deve ser exclusiva e pode ser um novo GUID gerado aleatoriamente. No entanto, a ID do anexo deve ser a mesma _no corpo e_ _nos elementos anexos_ .
 
 
 # <a name="http"></a>[HTTP](#tab/http)
@@ -449,7 +449,7 @@ Content-type: application/json
 #### <a name="request"></a>Solicitação
 Este é um exemplo de solicitação.
 
->**Observação:** O arquivo já deve estar SharePoint. Para encontrar as propriedades do arquivo, GET **the driveItem** for the file. Por exemplo, /drives/{id}/items/{id}. Sua ID de anexo é o GUID na **eTag** do **driveItem**, seu **contentURL** de anexo é o **webUrl** da pasta **do driveItem** mais o nome do **driveItem** e seu nome de anexo é o nome **do driveItem.**
+>**Observação:** O arquivo já deve estar SharePoint. Para encontrar as propriedades do arquivo, GET **the driveItem** for the file. Por exemplo, /drives/{id}/items/{id}. Sua ID de anexo é o GUID na **eTag** do **driveItem**, seu **contentURL** de anexo é o **webUrl** da pasta **do driveItem** mais o nome do **driveItem** e seu nome de anexo é o nome do **driveItem**.
 
 
 # <a name="http"></a>[HTTP](#tab/http)
@@ -571,7 +571,7 @@ Content-type: application/json
 #### <a name="request"></a>Solicitação
 Este é um exemplo de solicitação.
 
-> **Observação:** A **temporaryId** na **coleção hostedContents** é uma ID aleatória, mas deve ser a mesma no corpo e nos elementos **hostedContents.**  (Observe o **conjunto temporaryId** como **1** e a referência no corpo como `../hostedContents/1/$value` .)
+> **Observação:** A **temporaryId** na **coleção hostedContents** é uma ID aleatória, mas deve ser a mesma no corpo  e **nos elementos hostedContents**. (Observe o **conjunto temporaryId** como **1** e a referência no corpo como `../hostedContents/1/$value`.)
 
 **contentBytes** deve ser definido como bytes binários codificados em cadeia de caracteres Base64. Você pode fazer isso em C# usando `Convert.ToBase64String(File.ReadAllBytes("image.png"));`
 
@@ -682,7 +682,7 @@ Content-type: application/json
 #### <a name="request"></a>Solicitação
 Este é um exemplo de solicitação.
 
-> **Observação:** A **temporaryId** na coleção **hostedContents** é uma ID aleatória, mas deve ser a mesma em todo o conteúdo **(em** **anexos**) e **elementos hostedContents.** (Observe a **temporaryId** definida como **1** e a referência no conteúdo como `../hostedContents/1/$value` .)
+> **Observação:** A **temporaryId** na coleção **hostedContents** é uma ID aleatória, mas deve ser a mesma em todo o **conteúdo (em** **anexos**) e elementos **hostedContents** . (Observe a **temporaryId** definida como **1** e a referência no conteúdo como `../hostedContents/1/$value`.)
 
 **contentBytes** deve ser definido como bytes binários codificados em cadeia de caracteres Base64. Você pode fazer isso em C# usando `Convert.ToBase64String(File.ReadAllBytes("image.png"));`
 
@@ -813,7 +813,7 @@ Content-type: application/json
 ### <a name="example-7--mention-a-channel-in-a-channel-message"></a>Exemplo 7 : @mention um canal em uma mensagem de canal
 
 #### <a name="request"></a>Solicitação
-Este é um exemplo de solicitação. Para obter informações sobre como obter uma lista de canais em uma equipe, consulte [List channels](../api/channel-list.md).
+Este é um exemplo de solicitação. Para obter informações sobre como obter uma lista de canais em uma equipe, consulte [Listar canais](../api/channel-list.md).
 
 > Observação: **conversationIdentityType** deve ser definido como `channel` @mention um canal.
 
@@ -949,7 +949,7 @@ Content-type: application/json
 #### <a name="request"></a>Solicitação
 Este é um exemplo de solicitação.
 
-> Observação: **conversationIdentityType** deve ser definido como `team` @mention uma equipe.
+> Observação: **conversationIdentityType** deve ser definido `team` como @mention uma equipe.
 
 
 # <a name="http"></a>[HTTP](#tab/http)
@@ -1082,7 +1082,7 @@ Content-type: application/json
 ### <a name="example-9--mention-a-tag-in-a-channel-message"></a>Exemplo 9 : @mention uma marca em uma mensagem de canal
 
 #### <a name="request"></a>Solicitação
-Este é um exemplo de solicitação. Para obter informações sobre como obter uma lista de marcas em uma equipe, consulte [Listar trabalho em equipeTags](../api/teamworktag-list.md).
+Este é um exemplo de solicitação. Para obter informações sobre como obter uma lista de marcas em uma equipe, consulte [Listar trabalhos em equipeTags](../api/teamworktag-list.md).
 
 
 # <a name="http"></a>[HTTP](#tab/http)

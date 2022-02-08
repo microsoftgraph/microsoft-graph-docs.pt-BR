@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: nkramer
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: b375d06cfc93861e9114515db19dc92e82eae703
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: db01e3cab8f6e10b7f43ed6aefae0efb9975a9d4
+ms.sourcegitcommit: 4c8444b732b8d6d0de8a95f6666c42095f146266
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62108094"
+ms.lasthandoff: 02/08/2022
+ms.locfileid: "62443195"
 ---
 # <a name="delete-teamsapp"></a>Excluir teamsApp
 
@@ -20,7 +20,7 @@ Namespace: microsoft.graph
 
 <!-- markdownlint-disable MD001 -->
 
-[Exclua um aplicativo](../resources/teamsapp.md) do catálogo de aplicativos de uma organização (o catálogo de aplicativos do locatário). Para excluir um aplicativo, a **propriedade distributionMethod** para o aplicativo deve ser definida como `organization` .
+[Exclua um aplicativo](../resources/teamsapp.md) do catálogo de aplicativos de uma organização (o catálogo de aplicativos do locatário). Para excluir um aplicativo, a **propriedade distributionMethod** para o aplicativo deve ser definida como `organization`.
 
 Você também pode usar essa API para remover um aplicativo enviado do processo de revisão.
 
@@ -36,7 +36,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 | Delegado (conta pessoal da Microsoft) | Sem suporte.|
 | Aplicativo                            | Sem suporte. |
 
-> **Observação**: as permissões marcadas com ** foram preteridas e não devem ser usadas.
+> **Observação**: As permissões marcadas com ** só têm suporte para compatibilidade com compatibilidade Recomendamos que você atualize suas soluções para usar permissões diferentes e evite usar essas permissões adiante.
 
 ## <a name="http-request"></a>Solicitação HTTP
 
@@ -64,7 +64,7 @@ DELETE appCatalogs/teamsApps/{appId}/appDefinitions/{appDefinitionId}
 
 Não forneça um corpo de solicitação para esse método.
 
->**Observação:** Use a ID retornada da chamada Lista [de](./appcatalogs-list-teamsapps.md) aplicativos publicados para fazer referência ao aplicativo que você gostaria de excluir. Não use a ID do manifesto do pacote do aplicativo zip.
+>**Observação:** Use a ID retornada da [chamada Lista de](./appcatalogs-list-teamsapps.md) aplicativos publicados para fazer referência ao aplicativo que você gostaria de excluir. Não use a ID do manifesto do pacote do aplicativo zip.
 
 ## <a name="response"></a>Resposta
 

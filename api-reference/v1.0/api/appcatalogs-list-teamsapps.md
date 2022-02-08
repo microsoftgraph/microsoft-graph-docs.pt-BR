@@ -5,12 +5,12 @@ author: nkramer
 ms.localizationpriority: medium
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 2ff4843b5f1f1a9a25fee26676b377f4bd489f00
-ms.sourcegitcommit: 15956da1b4a7d523363ffa8afb5e2059fbf680ce
+ms.openlocfilehash: 830f2aa138db9e4c2dfcd15e8b7d7712612e888e
+ms.sourcegitcommit: 4c8444b732b8d6d0de8a95f6666c42095f146266
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/01/2022
-ms.locfileid: "62290480"
+ms.lasthandoff: 02/08/2022
+ms.locfileid: "62443153"
 ---
 # <a name="list-teamsapp"></a>Listar teamsApp
 
@@ -32,7 +32,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 | Delegado (conta pessoal da Microsoft) | Sem suporte. |
 | Aplicativo                            | AppCatalog.Read.All, AppCatalog.ReadWrite.All |
 
-> **Observação**: as permissões marcadas com ** foram preteridas e não devem ser usadas.
+> **Observação**: As permissões marcadas com ** só têm suporte para compatibilidade com compatibilidade Recomendamos que você atualize suas soluções para usar permissões diferentes e evite usar essas permissões adiante.
 
 ## <a name="http-request"></a>Solicitação HTTP
 

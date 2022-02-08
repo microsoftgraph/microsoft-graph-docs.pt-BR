@@ -5,18 +5,18 @@ author: akjo
 ms.localizationpriority: medium
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: e2379fe3c78d5a0304b607f5d877903a1c5060ce
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: 76e9facf94532b36d70b39c72dba90d0674283e6
+ms.sourcegitcommit: 4c8444b732b8d6d0de8a95f6666c42095f146266
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62121795"
+ms.lasthandoff: 02/08/2022
+ms.locfileid: "62443097"
 ---
 # <a name="list-apps-in-team"></a>Listar aplicativos em equipe
 
 Namespace: microsoft.graph
 
-Recupere uma lista de [aplicativos instalados](../resources/teamsappinstallation.md) na equipe [especificada.](../resources/team.md)
+Recupere uma lista de [aplicativos instalados](../resources/teamsappinstallation.md) na equipe [especificada](../resources/team.md).
 
 
 > [!NOTE]
@@ -32,7 +32,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |Delegado (conta pessoal da Microsoft) | Sem suporte.    |
 |Aplicativo | TeamsAppInstallation.Read.Group *, TeamsAppInstallation.ReadForTeam.All, TeamsAppInstallation.ReadWriteForTeam.All, Group.Read.All **, Group.ReadWrite.All**, Directory.Read.All**, Directory.ReadWrite.All** |
 
-> **Observação**: Permissões marcadas com * usam [consentimento específico de recurso]( https://aka.ms/teams-rsc). As permissões marcadas com ** foram preteridas e não devem ser usadas.
+> **Observação**: As permissões marcadas com ** só têm suporte para compatibilidade com compatibilidade Recomendamos que você atualize suas soluções para usar permissões diferentes e evite usar essas permissões adiante. Permissões marcadas com * use [o consentimento específico do recurso](/microsoftteams/platform/graph-api/rsc/resource-specific-consent).
 
 ## <a name="http-request"></a>Solicitação HTTP
 
@@ -44,7 +44,7 @@ GET /teams/{team-id}/installedApps
 
 ## <a name="optional-query-parameters"></a>Parâmetros de consulta opcionais
 
-Este método dá suporte `$filter` aos `$select` parâmetros , e `$expand` [OData Query para](/graph/query-parameters) ajudar a personalizar a resposta.
+Este método dá suporte aos `$filter`parâmetros , `$select`e `$expand` [OData Query para](/graph/query-parameters) ajudar a personalizar a resposta.
 
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
 
@@ -58,7 +58,7 @@ Não forneça um corpo de solicitação para esse método.
 
 ## <a name="response"></a>Resposta
 
-Se tiver êxito, este método retornará um código de resposta `200 OK` e uma coleção de objetos [teamsAppInstallation](../resources/teamsappinstallation.md) no corpo da resposta.
+Se tiver êxito, este método retornará um código `200 OK` de resposta e uma coleção de [objetos teamsAppInstallation](../resources/teamsappinstallation.md) no corpo da resposta.
 
 ## <a name="examples"></a>Exemplos
 

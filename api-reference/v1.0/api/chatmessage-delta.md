@@ -5,12 +5,12 @@ ms.localizationpriority: high
 doc_type: apiPageType
 author: RamjotSingh
 ms.prod: microsoft-teams
-ms.openlocfilehash: b9b04e4d7ceeb914311470bb61eff214475ace52
-ms.sourcegitcommit: 25acfa7d0153336c9a35d30a1dd422aeadc1342c
+ms.openlocfilehash: 2aaa800fd49bc87f6dbe6f107d72a4818e8bc6d6
+ms.sourcegitcommit: 4c8444b732b8d6d0de8a95f6666c42095f146266
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/03/2022
-ms.locfileid: "62344335"
+ms.lasthandoff: 02/08/2022
+ms.locfileid: "62443048"
 ---
 # <a name="chatmessage-delta"></a>chatMessage: delta
 
@@ -43,7 +43,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |Delegado (conta pessoal da Microsoft) | Não suportado                                |
 |Aplicativo                            | ChannelMessage.Read.Group*, ChannelMessage.Read.All |
 
-> **Observação**: Permissões marcadas com * usam [consentimento específico de recurso]( https://aka.ms/teams-rsc).
+> **Observação**: Permissões marcadas com * usam [consentimento específico de recurso](/microsoftteams/platform/graph-api/rsc/resource-specific-consent).
 
 > [!NOTE]
 > É necessário solicitar acesso antes de chamar essa API com permissões de aplicativo. Para obter detalhes, confira [APIs protegidas no Microsoft Teams](/graph/teams-protected-apis).

@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: RamjotSingh
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: d4eb1ec1ffeeee61f395e4b223a195773a851b41
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: 6d40ecefd86d92b113e9cd4bf3bf3c2d3997f529
+ms.sourcegitcommit: 4c8444b732b8d6d0de8a95f6666c42095f146266
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62123974"
+ms.lasthandoff: 02/08/2022
+ms.locfileid: "62443335"
 ---
 # <a name="list-hostedcontents"></a>Listar hostedContents
 
@@ -30,7 +30,7 @@ Recupere a lista de [objetos chatMessageHostedContent](../resources/chatmessageh
 |Delegado (conta pessoal da Microsoft)|Sem suporte.|
 |Application| ChannelMessage.Read.Group, ChannelMessage.Read.All, Group.Read.All **, Group.ReadWrite.All** |
 
-> **Observação**: as permissões marcadas com ** foram preteridas e não devem ser usadas.
+> **Observação**: As permissões marcadas com ** só têm suporte para compatibilidade com compatibilidade Recomendamos que você atualize suas soluções para usar permissões diferentes e evite usar essas permissões adiante.
 
 ### <a name="permissions-for-chat"></a>Permissões para o chat
 
@@ -77,7 +77,7 @@ Não forneça um corpo de solicitação para esse método.
 
 ## <a name="response"></a>Resposta
 
-Se tiver êxito, este método retornará um código de resposta e uma `200 OK` coleção de [objetos chatMessageHostedContent](../resources/chatmessagehostedcontent.md) no corpo da resposta.
+Se tiver êxito, este método retornará um `200 OK` código de resposta e uma coleção de [objetos chatMessageHostedContent](../resources/chatmessagehostedcontent.md) no corpo da resposta.
 
 ## <a name="examples"></a>Exemplos
 

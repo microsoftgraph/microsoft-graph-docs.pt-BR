@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: cristobal-buenrostro
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: cb1cc349ae7787e5daf95e50b882f2045605129f
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: 351e65433016fe4b9b6ee0e5a69831cfde19eb58
+ms.sourcegitcommit: 4c8444b732b8d6d0de8a95f6666c42095f146266
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62090235"
+ms.lasthandoff: 02/08/2022
+ms.locfileid: "62443279"
 ---
 # <a name="update-educationassignment"></a>Atualizar educationassignment
 
@@ -18,9 +18,9 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Atualize [um objeto educationAssignment.](../resources/educationassignment.md) 
+Atualize [um objeto educationAssignment](../resources/educationassignment.md) . 
 
-Somente os professores da classe podem fazer isso. Observe que você não pode usar uma solicitação PATCH para alterar o status de uma **atribuição**. Use a [ação publicar](../api/educationassignment-publish.md) para alterar o status **da atribuição.**
+Somente os professores da classe podem fazer isso. Observe que você não pode usar uma solicitação PATCH para alterar o status de uma **atribuição**. Use a [ação publicar](../api/educationassignment-publish.md) para alterar o status **da atribuição** .
 
 ## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
@@ -47,10 +47,10 @@ No corpo da solicitação, forneça os valores para os campos relevantes que dev
 
 | Propriedade     | Tipo   |Descrição|
 |:---------------|:--------|:----------|
-|addedStudentAction|Cadeia de caracteres| Controla o comportamento dos alunos que são adicionados após a publicação da atribuição.|
-|addToCalendarAction|educationAddToCalendarOptions|Campo opcional para controlar o comportamento de atribuição para adicionar atribuições aos calendários dos alunos e professores quando a atribuição for publicada. Os valores possíveis são: `none` `studentsAndPublisher` , , e `studentsAndTeamOwners` `studentsOnly` `unknownFutureValue` . O valor padrão é `none`. Não é possível modificar quando a atribuição está **no estado** Publicado. |
-|allowLateSubmissions|Booliano| Se os envios podem ser enviados após a data de vencimento.|
-|allowStudentsToAddResourcesToSubmission|Booliano| Se um aluno pode adicionar recursos a um envio. Indica se os únicos itens no envio vieram da lista de recursos de atribuição. |
+|addedStudentAction|String| Controla o comportamento dos alunos que são adicionados após a publicação da atribuição.|
+|addToCalendarAction|educationAddToCalendarOptions|Campo opcional para controlar o comportamento de atribuição para adicionar atribuições aos calendários dos alunos e professores quando a atribuição for publicada. Os valores possíveis são: `none`, `studentsAndPublisher`, `studentsAndTeamOwners`e `studentsOnly` `unknownFutureValue`. O valor padrão é `none`. Não é possível modificar quando a atribuição está **no estado** Publicado. |
+|allowLateSubmissions|Boolean| Se os envios podem ser enviados após a data de vencimento.|
+|allowStudentsToAddResourcesToSubmission|Boolean| Se um aluno pode adicionar recursos a um envio. Indica se os únicos itens no envio vieram da lista de recursos de atribuição. |
 |assignDateTime|DateTimeOffset| Data em que a atribuição deve ser publicada para os alunos. Não é possível editar após a publicação da atribuição. |
 |assignTo|[educationAssignmentRecipient](../resources/educationassignmentrecipient.md)| Alunos que receberão a atribuição.|
 |closeDateTime|DateTimeOffset| Data em que a atribuição será fechada para envios. Este é um campo opcional que pode ser nulo se a atribuição não permitirLateSubmissions ou closeDateTime for igual ao dueDateTime, mas se especificado, ele deve ser maior ou igual ao dueDateTime.|
@@ -58,10 +58,10 @@ No corpo da solicitação, forneça os valores para os campos relevantes que dev
 |dueDateTime|DateTimeOffset| A atribuição de data é devido. |
 |grading|[educationAssignmentGradeType](../resources/educationassignmentgradetype.md)| Como a atribuição será gradeada.|
 |instructions|itemBody| Instruções a serem fornecidas aos alunos juntamente com a atribuição. |
-|notificationChannelUrl|Cadeia de caracteres| Canal para postar notificação de publicação de atribuição. A atualização da URL do canal não é permitida após a publicação da atribuição e só é permitida quando o valor **assignTo** é [educationAssignmentClassRecipient](../resources/educationassignmentclassrecipient.md).|
+|notificationChannelUrl|String| Canal para postar notificação de publicação de atribuição. A atualização da URL do canal não é permitida após a publicação da atribuição e só é permitida quando o valor **assignTo** é [educationAssignmentClassRecipient](../resources/educationassignmentclassrecipient.md).|
 
 ## <a name="response"></a>Resposta
-Se tiver êxito, este método retornará um código de resposta e um `200 OK` objeto [educationAssignment](../resources/educationassignment.md) atualizado no corpo da resposta.
+Se tiver êxito, este método retornará um `200 OK` código de resposta e um objeto [educationAssignment](../resources/educationassignment.md) atualizado no corpo da resposta.
 ## <a name="example"></a>Exemplo
 ### <a name="request"></a>Solicitação
 Este é um exemplo de solicitação.
@@ -179,6 +179,7 @@ Content-type: application/json
 ## <a name="see-also"></a>Confira também
 
 * [Estados, transições e limitações para atribuições e envios](/graph/assignments-submissions-states-transition)
+* [Especificar o canal padrão para notificações de atribuição de educação](/graph/education-build-notificationchannelurl)
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->

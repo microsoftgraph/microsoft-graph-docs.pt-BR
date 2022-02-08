@@ -5,27 +5,27 @@ author: devindrajit
 ms.localizationpriority: medium
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: bfc6d6992e086a8aa2a4795d944e70f3f29be1f4
-ms.sourcegitcommit: c900d22144429ac7aecae3355a4cdc1987cc4234
+ms.openlocfilehash: c48baeb01351804dede10b72a9cc496650b39d7c
+ms.sourcegitcommit: 4c8444b732b8d6d0de8a95f6666c42095f146266
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/13/2021
-ms.locfileid: "61424811"
+ms.lasthandoff: 02/08/2022
+ms.locfileid: "62443427"
 ---
 # <a name="delete-basetasklist"></a>Excluir baseTaskList
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Exclui um [objeto taskList.](../resources/tasklist.md)
+Exclui um [objeto taskList](../resources/tasklist.md) .
 
 ## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão|Permissões (da com menos para a com mais privilégios)|
 |:---|:---|
-|Delegada (conta corporativa ou de estudante)|Tasks.ReadWrite|
-|Delegada (conta pessoal da Microsoft)|Tasks.ReadWrite|
+|Delegado (conta corporativa ou de estudante)|Tasks.ReadWrite|
+|Delegado (conta pessoal da Microsoft)|Tasks.ReadWrite|
 |Aplicativo|Sem suporte|
 
 ## <a name="http-request"></a>Solicitação HTTP
@@ -60,7 +60,7 @@ Se tiver êxito, este método retornará um código de resposta `204 No Content`
 }
 -->
 ``` http
-DELETE https://graph.microsoft.com/beta/user/tasks/lists/AAMkAGVjMzJmMWZjLTgyYjgtNGIyNi1hOGQ0LWRjMjNmMGRmOWNiYQAu
+DELETE https://graph.microsoft.com/beta/me/tasks/lists/AAMkAGVjMzJmMWZjLTgyYjgtNGIyNi1hOGQ0LWRjMjNmMGRmOWNiYQAu
 ```
 
 

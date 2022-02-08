@@ -5,12 +5,12 @@ author: RamjotSingh
 ms.localizationpriority: medium
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 4dd07e29f5dc5167b86b9c8e8f718326b4f40849
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: 817b77f9d7170b64d6c4919c12b5126bfa9d8cc5
+ms.sourcegitcommit: 4c8444b732b8d6d0de8a95f6666c42095f146266
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62121348"
+ms.lasthandoff: 02/08/2022
+ms.locfileid: "62443251"
 ---
 # <a name="list-replies"></a>Listar respostas
 
@@ -20,7 +20,7 @@ Namespace: microsoft.graph
 
 Listar todas as respostas a uma [mensagem](../resources/chatmessage.md) em um [canal](../resources/channel.md) de uma equipe.
 
-Este método lista apenas as respostas da mensagem especificada, se alguma. Para obter a mensagem em si, basta chamar [get channel message](chatmessage-get.md).
+Este método lista apenas as respostas da mensagem especificada, se alguma. Para obter a mensagem em si, basta chamar [obter mensagem de canal](chatmessage-get.md).
 
 > **Observação**: Esta API oferece suporte à inscrição para alterações (criar, atualizar e excluir) usando [notificações de alteração](../resources/webhooks.md). Isso permite aos chamadores assinar e obter alterações em tempo real. Para obter detalhes, confira [obter notificações de](/graph/teams-changenotifications-chatmessage)de mensagens.
 
@@ -33,7 +33,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |Delegado (conta pessoal da Microsoft)|Sem suporte.|
 |Aplicativo| ChannelMessage.Read.Group*, ChannelMessage.Read.All, Group.Read.All, Group.ReadWrite.All |
 
-> **Observação**: Permissões marcadas com * usam [consentimento específico de recurso]( https://aka.ms/teams-rsc).
+> **Observação**: Permissões marcadas com * usam [consentimento específico de recurso](/microsoftteams/platform/graph-api/rsc/resource-specific-consent).
 
 > [!NOTE]
 > É necessário solicitar acesso antes de chamar essa API com permissões de aplicativo. Para obter detalhes, confira [APIs protegidas no Microsoft Teams](/graph/teams-protected-apis).

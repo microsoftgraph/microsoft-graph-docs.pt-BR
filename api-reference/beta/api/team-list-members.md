@@ -5,12 +5,12 @@ author: AkJo
 ms.localizationpriority: high
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 0487d4df9a23aa360f9cebb65746948404195e68
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: 63055b148879454cf15ce3ac15487cf0e38b9c77
+ms.sourcegitcommit: 4c8444b732b8d6d0de8a95f6666c42095f146266
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62089398"
+ms.lasthandoff: 02/08/2022
+ms.locfileid: "62443118"
 ---
 # <a name="list-members-of-team"></a>Listar membros de equipe
 Namespace: microsoft.graph
@@ -33,7 +33,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |Delegado (conta pessoal da Microsoft) | Sem suporte.    |
 |Aplicativo| TeamMember.Read.Group*, TeamMember.Read.All, TeamMember.ReadWrite.All |
 
-> **Observação**: Permissões marcadas com * usam [consentimento específico de recurso]( https://aka.ms/teams-rsc).
+> **Observação**: Permissões marcadas com * usam [consentimento específico de recurso](/microsoftteams/platform/graph-api/rsc/resource-specific-consent).
 
 ## <a name="http-request"></a>Solicitação HTTP
 

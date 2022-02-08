@@ -5,12 +5,12 @@ author: RamjotSingh
 ms.localizationpriority: high
 ms.prod: microsoft-teams
 ms.custom: scenarios:getting-started
-ms.openlocfilehash: 9069a4b2ec82c14c5de0b7bdda91e48b5ae1b53a
-ms.sourcegitcommit: 6ae8c124fac63a195ccf516c9cff739f730b6b13
+ms.openlocfilehash: 0b2f2c9cff290ec80a298a43744fa357d9c3bdf0
+ms.sourcegitcommit: 4c8444b732b8d6d0de8a95f6666c42095f146266
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/02/2021
-ms.locfileid: "60084025"
+ms.lasthandoff: 02/08/2022
+ms.locfileid: "62442922"
 ---
 # <a name="get-change-notifications-for-chat-membership-using-microsoft-graph"></a>Obtenha as notificações de alteração para associação de chat o usando o Microsoft Graph
 
@@ -60,7 +60,7 @@ Para obter notificações de alteração de membros em um chat específico, insc
 |Delegado (conta pessoal da Microsoft) | Sem suporte.    | Sem suporte. |
 |Aplicativo | ChatMember.Read.Chat *, Chat.Manage.Chat*, ChatMember.Read.All, ChatMember.ReadWrite.All, Chat.ReadBasic.All, Chat.Read.All, Chat.ReadWrite.All  | beta |
 
-> **Observação**: Permissões marcadas com * usam [consentimento específico de recurso]( https://aka.ms/teams-rsc).
+> **Observação**: Permissões marcadas com * usam [consentimento específico de recurso](/microsoftteams/platform/graph-api/rsc/resource-specific-consent).
 
 ### <a name="example"></a>Exemplo
 

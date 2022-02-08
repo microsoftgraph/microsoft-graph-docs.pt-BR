@@ -5,12 +5,12 @@ author: AkJo
 ms.localizationpriority: medium
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 893ea20683fe480ba06a91a4564e251fe507915f
-ms.sourcegitcommit: 871db8b3f68489d24e2aeafe694725579ee44c47
+ms.openlocfilehash: 2309e80c9e32c87a4ff08b457f00f375617908b5
+ms.sourcegitcommit: 4c8444b732b8d6d0de8a95f6666c42095f146266
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/26/2022
-ms.locfileid: "62225214"
+ms.lasthandoff: 02/08/2022
+ms.locfileid: "62442565"
 ---
 # <a name="get-installed-app-in-team"></a>Obter aplicativo instalado na equipe
 
@@ -28,9 +28,9 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |:--------------------|:---------------------------------------------------------|
 |Delegado (conta corporativa ou de estudante) | TeamsAppInstallation.ReadWriteSelfForTeam, TeamsAppInstallation.ReadForUser, TeamsAppInstallation.ReadForTeam, TeamsAppInstallation.ReadWriteForTeam, Group.Read.All **, Group.ReadWrite.All**, Directory.Read.All **, Directory.ReadWrite.All** |
 |Delegado (conta pessoal da Microsoft) | Sem suporte.    |
-|Application | TeamsAppInstallation.Read.Group *, TeamsAppInstallation.ReadWriteSelfForTeam, TeamsAppInstallation.ReadForTeam.All, TeamsAppInstallation.ReadWriteForTeam.All, Group.Read.All **, Group.ReadWrite.All**, Directory.Read.All**, Directory.ReadWrite.All** |
+|Aplicativo | TeamsAppInstallation.Read.Group *, TeamsAppInstallation.ReadWriteSelfForTeam, TeamsAppInstallation.ReadForTeam.All, TeamsAppInstallation.ReadWriteForTeam.All, Group.Read.All **, Group.ReadWrite.All**, Directory.Read.All**, Directory.ReadWrite.All** |
 
-> **Observação**: Permissões marcadas com * usam [consentimento específico de recurso](/microsoftteams/platform/graph-api/rsc/resource-specific-consent). As permissões marcadas com ** foram preteridas e não devem ser usadas.
+> **Observação**: As permissões marcadas com ** só têm suporte para compatibilidade com compatibilidade Recomendamos que você atualize suas soluções para usar permissões diferentes e evite usar essas permissões adiante. Permissões marcadas com * use [o consentimento específico do recurso](/microsoftteams/platform/graph-api/rsc/resource-specific-consent).
 
 ## <a name="http-request"></a>Solicitação HTTP
 
@@ -52,7 +52,7 @@ Não forneça um corpo de solicitação para esse método.
 
 ## <a name="response"></a>Resposta
 
-Se tiver êxito, este método retornará um código `200 OK` de resposta e um objeto [teamsAppInstallation](../resources/teamsappinstallation.md) no corpo da resposta.
+Se tiver êxito, este método retornará um `200 OK` código de resposta e um [objeto teamsAppInstallation](../resources/teamsappinstallation.md) no corpo da resposta.
 
 ## <a name="examples"></a>Exemplos
 

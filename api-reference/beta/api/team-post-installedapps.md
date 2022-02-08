@@ -5,12 +5,12 @@ author: akjo
 ms.localizationpriority: medium
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 1822e4a61258f9027bee91de6fa1b08a65af5fff
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: fe02288b4141309c78cb206ae6bf286361cfd073
+ms.sourcegitcommit: 4c8444b732b8d6d0de8a95f6666c42095f146266
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62108114"
+ms.lasthandoff: 02/08/2022
+ms.locfileid: "62443104"
 ---
 # <a name="add-app-to-team"></a>Adicionar aplicativo à equipe
 
@@ -18,7 +18,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Instale um [aplicativo](../resources/teamsapp.md) na equipe [especificada.](../resources/team.md)
+Instale um [aplicativo](../resources/teamsapp.md) na equipe [especificada](../resources/team.md).
 
 > **Observação:** Atualmente, essa operação não dá suporte à instalação de aplicativos que exigem permissões de consentimento específicas do recurso. Para mais detalhes, confira [Problemas conhecidos](/graph/known-issues#Installation-of-apps-that-require-resource-specific-consent-permissions-is-not-supported).
 
@@ -32,7 +32,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |Delegado (conta pessoal da Microsoft) | Sem suporte.    |
 |Aplicativo | TeamsAppInstallation.ReadWriteForTeam.All, Group.ReadWrite.All **, Directory.ReadWrite.All** |
 
-> **Observação**: as permissões marcadas com ** foram preteridas e não devem ser usadas.
+> **Observação**: As permissões marcadas com ** só têm suporte para compatibilidade com compatibilidade Recomendamos que você atualize suas soluções para usar permissões diferentes e evite usar essas permissões adiante.
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- { "blockType": "ignored" } -->

@@ -5,19 +5,19 @@ author: dipakboyed
 ms.localizationpriority: medium
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: 3b905198eee032e422a7882afb4bedfbe3f2be28
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: 02b2b9abee6979b9bed0708abce1572e14a8a967
+ms.sourcegitcommit: 4c8444b732b8d6d0de8a95f6666c42095f146266
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62113808"
+ms.lasthandoff: 02/08/2022
+ms.locfileid: "62443293"
 ---
 # <a name="update-educationassignmentdefaults"></a>Atualizar educationAssignmentDefaults
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Atualize as propriedades de um [objeto educationAssignmentDefaults.](../resources/educationassignmentdefaults.md) Somente os professores podem atualizar essas configurações.
+Atualize as propriedades de um [objeto educationAssignmentDefaults](../resources/educationassignmentdefaults.md) . Somente os professores podem atualizar essas configurações.
 
 ## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
@@ -45,19 +45,19 @@ PATCH /education/classes/{id}/assignmentDefaults
 |Content-Type|application/json. Obrigatório.|
 
 ## <a name="request-body"></a>Corpo da solicitação
-No corpo da solicitação, fornece os valores para campos relevantes do [objeto educationAssignmentDefaults](../resources/educationassignmentdefaults.md) que devem ser atualizados. As propriedades existentes que não estão incluídas no corpo da solicitação manterão seus valores anteriores. Para alcançar o melhor desempenho, não inclua valores existentes que não foram alterados.
+No corpo da solicitação, fornece os valores para campos [relevantes do objeto educationAssignmentDefaults](../resources/educationassignmentdefaults.md) que devem ser atualizados. As propriedades existentes que não estão incluídas no corpo da solicitação manterão seus valores anteriores. Para alcançar o melhor desempenho, não inclua valores existentes que não foram alterados.
 
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
 |addedStudentAction|educationAddedStudentAction|Comportamento padrão no nível de classe para lidar com alunos que são adicionados após a publicação da atribuição. Os valores possíveis são: `none` e `assignIfOpen`. O valor padrão é `none`.|
 |dueTime|TimeOfDay|Valor padrão de nível de classe para o campo de tempo de vencimento. O valor padrão é `23:59:00`|
-|notificationChannelUrl|Cadeia de caracteres|Canal Teams padrão para o qual as notificações serão enviadas. O valor padrão é `null`.|
+|notificationChannelUrl|String|Canal Teams padrão para o qual as notificações serão enviadas. O valor padrão é `null`.|
 
 
 
 ## <a name="response"></a>Resposta
 
-Se tiver êxito, este método retornará um código de resposta e um `200 OK` [objeto educationAssignmentDefaults](../resources/educationassignmentdefaults.md) atualizado no corpo da resposta.
+Se tiver êxito, este método retornará um `200 OK` código de resposta e um [objeto educationAssignmentDefaults](../resources/educationassignmentdefaults.md) atualizado no corpo da resposta.
 
 ## <a name="examples"></a>Exemplos
 
@@ -126,4 +126,6 @@ Content-Type: application/json
   "notificationChannelUrl": "https://graph.microsoft.com/beta/teams('id')/channels('id')"
 }
 ```
+## <a name="see-also"></a>Confira também
 
+* [Especificar o canal padrão para notificações de atribuição de educação](/graph/education-build-notificationchannelurl)

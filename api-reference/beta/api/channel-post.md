@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: akjo
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: f074dbac59189e33f72b18092fe31c2faa6b0b92
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: e3343b55800a6842e1ebad41373ba3952fdc7474
+ms.sourcegitcommit: 4c8444b732b8d6d0de8a95f6666c42095f146266
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62131564"
+ms.lasthandoff: 02/08/2022
+ms.locfileid: "62442859"
 ---
 # <a name="create-channel"></a>Criar canal
 
@@ -30,11 +30,11 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |Delegado (conta pessoal da Microsoft) | Sem suporte.    |
 |Aplicativo | Channel.Create.Group *, Channel.Create, Teamwork.Migrate.All, Group.ReadWrite.All**, Directory.ReadWrite.All** |
 
-> **Observação**: Permissões marcadas com * usam [consentimento específico de recurso]( https://aka.ms/teams-rsc). As permissões marcadas com ** são preteridas e não devem ser usadas.
+> **Observação**: As permissões marcadas com ** só têm suporte para compatibilidade com compatibilidade Recomendamos que você atualize suas soluções para usar permissões diferentes e evite usar essas permissões adiante. Permissões marcadas com * use [o consentimento específico do recurso](/microsoftteams/platform/graph-api/rsc/resource-specific-consent).
 
 > **Observação**: esta API dá suporte a permissões de administrador. Os administradores globais e os administradores de serviços do Microsoft Teams podem acessar equipes das quais não são membros.
 
-> **Observação**: no futuro, a Microsoft pode exigir que você ou seus clientes paguem taxas adicionais com base na quantidade de dados importados usando o Teamwork.Migrate.All e/ou APIs de [migração.](/microsoftteams/platform/graph-api/import-messages/import-external-messages-to-teams)
+> **Observação**: no futuro, a Microsoft pode exigir que você ou seus clientes paguem taxas adicionais com base na quantidade de dados importados usando APIs de trabalho em equipe.Migrate.All e/ou [migração](/microsoftteams/platform/graph-api/import-messages/import-external-messages-to-teams).
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- { "blockType": "ignored" } -->
@@ -51,7 +51,7 @@ POST /teams/{team-id}/channels
 
 ## <a name="request-body"></a>Corpo da solicitação
 
-No corpo da solicitação, fornece uma representação JSON de um [objeto channel.](../resources/channel.md)
+No corpo da solicitação, fornece uma representação JSON de um [objeto channel](../resources/channel.md) .
 
 ## <a name="response"></a>Resposta
 
@@ -60,7 +60,7 @@ Se tiver êxito, este método retornará um código de resposta `201 Created` e 
 Se a solicitação não for bem-sucedida, este método retorna um código de resposta `400 Bad Request`. Os seguintes são motivos comuns para esta resposta:
 
 * **createdDateTime** é definido no futuro.
-* **createdDateTime** é especificado corretamente, mas o atributo de instância **channelCreationMode** está ausente ou definido como um valor inválido.
+* **createdDateTime** é especificado corretamente, mas o **atributo de instância channelCreationMode** está ausente ou definido como um valor inválido.
 
 ## <a name="examples"></a>Exemplos
 

@@ -5,17 +5,17 @@ author: sharad-sharma-msft
 ms.localizationpriority: medium
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: ac354e9e373b7c733652fb22fab326dd1a0010be
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: e07737d9a5afcd2c97342425b7f47966e5c26350
+ms.sourcegitcommit: 4c8444b732b8d6d0de8a95f6666c42095f146266
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62111357"
+ms.lasthandoff: 02/08/2022
+ms.locfileid: "62442838"
 ---
 # <a name="update-educationassignmentdefaults"></a>Atualizar educationAssignmentDefaults
 Namespace: microsoft.graph
 
-Atualize as propriedades de um [objeto educationAssignmentDefaults.](../resources/educationassignmentdefaults.md)
+Atualize as propriedades de um [objeto educationAssignmentDefaults](../resources/educationassignmentdefaults.md) .
 
 Somente os professores podem atualizar essas configurações.
 
@@ -52,7 +52,7 @@ Propriedades existentes que não estão incluídas no corpo da solicitação ter
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
 |addedStudentAction|educationAddedStudentAction| Ações padrão de nível de classe para alunos adicionados após a data de publicação da atribuição. Os valores possíveis são: `none` e `assignIfOpen`. O valor padrão é `none`.|
-|addToCalendarAction|educationAddToCalendarOptions|Campo opcional para controlar o comportamento **de atribuição** para adicionar atribuições aos **calendários** dos alunos e professores quando a **atribuição** for publicada. Os valores possíveis são: `none`, `studentsAndPublisher`, `studentsAndTeamOwners`, `unknownFutureValue`, `studentsOnly`. Observe que você deve usar o header de solicitação para obter os seguintes valores nesta `Prefer: include - unknown -enum-members` [enum evolvável](/graph/best-practices-concept#handling-future-members-in-evolvable-enumerations): `studentsOnly` . Opcional.|
+|addToCalendarAction|educationAddToCalendarOptions|Campo opcional para controlar o comportamento **de atribuição** para adicionar **atribuições aos calendários** dos alunos e professores quando a **atribuição** for publicada. Os valores possíveis são: `none`, `studentsAndPublisher`, `studentsAndTeamOwners`, `unknownFutureValue`, `studentsOnly`. Observe que você deve usar o `Prefer: include - unknown -enum-members` header de solicitação para obter os seguintes valores neste [número evolvável](/graph/best-practices-concept#handling-future-members-in-evolvable-enumerations): `studentsOnly`. Opcional.|
 |dueTime|TimeOfDay| Valor padrão de nível de classe para o campo de tempo de vencimento. O valor padrão é `23:59:00`|
 |notificationChannelUrl|Cadeia de caracteres| Canal Teams padrão para enviar notificações relacionadas à atribuição. O valor padrão é `null`.|
 
@@ -60,7 +60,7 @@ Propriedades existentes que não estão incluídas no corpo da solicitação ter
 
 ## <a name="response"></a>Resposta
 
-Se tiver êxito, este método retornará um código de resposta e um `200 OK` [objeto educationAssignmentDefaults](../resources/educationassignmentdefaults.md) atualizado no corpo da resposta.
+Se tiver êxito, este método retornará um `200 OK` código de resposta e um [objeto educationAssignmentDefaults](../resources/educationassignmentdefaults.md) atualizado no corpo da resposta.
 
 ## <a name="examples"></a>Exemplos
 
@@ -128,3 +128,6 @@ Content-Type: application/json
 }
 ```
 
+## <a name="see-also"></a>Confira também
+
+* [Especificar o canal padrão para notificações de atribuição de educação](/graph/education-build-notificationchannelurl)

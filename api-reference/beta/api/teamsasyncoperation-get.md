@@ -5,12 +5,12 @@ author: jecha
 ms.localizationpriority: medium
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: bfbb9f7face458382af90f9899d76461a336871b
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: 059b68c1f7ffafce9484d83d3642fd078e8a88d1
+ms.sourcegitcommit: 4c8444b732b8d6d0de8a95f6666c42095f146266
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62118148"
+ms.lasthandoff: 02/08/2022
+ms.locfileid: "62443223"
 ---
 # <a name="get-teamsasyncoperation"></a>Obter teamsAsyncOperation
 Namespace: microsoft.graph
@@ -30,7 +30,7 @@ As seguintes permissões são para obter a operação em um chat:
 | Delegado (conta pessoal da Microsoft) | Sem suporte. |
 | Aplicativo                            | ChatSettings.Read.Chat *, ChatSettings.ReadWrite.Chat*, Chat.Manage.Chat*, Chat.ReadBasic.All, Chat.Read.All, Chat.ReadWrite.All |
 
-> **Observação**: Permissões marcadas com * usam [consentimento específico de recurso]( https://aka.ms/teams-rsc).
+> **Observação**: Permissões marcadas com * usam [consentimento específico de recurso](/microsoftteams/platform/graph-api/rsc/resource-specific-consent).
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- { 
@@ -43,7 +43,7 @@ GET /chats/{chat-id}/operations/{operation-id}
 
 ## <a name="optional-query-parameters"></a>Parâmetros de consulta opcionais
 
-Este método dá suporte ao `$select` [parâmetro de consulta OData](/graph/query-parameters) para ajudar a personalizar a resposta.
+Este método dá suporte ao parâmetro `$select` [de consulta OData](/graph/query-parameters) para ajudar a personalizar a resposta.
 
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
 
@@ -57,7 +57,7 @@ Não forneça um corpo de solicitação para esse método.
 
 ## <a name="response"></a>Resposta
 
-Se tiver êxito, isso retornará um código `200 OK` de resposta e um objeto [teamsAsyncOperation](../resources/teamsasyncoperation.md) no corpo da resposta.
+Se tiver êxito, isso retornará um `200 OK` código de resposta e um [objeto teamsAsyncOperation](../resources/teamsasyncoperation.md) no corpo da resposta.
 
 ## <a name="example-get-operation-on-chat"></a>Exemplo: Obter operação no chat
 

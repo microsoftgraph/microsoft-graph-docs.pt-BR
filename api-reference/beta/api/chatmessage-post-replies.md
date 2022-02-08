@@ -5,12 +5,12 @@ author: RamjotSingh
 ms.localizationpriority: medium
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: df2de65747bca99a38cdb7bd283093965ecd28d1
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: 23f58a21464edf4446a45672b963a203d294e0cf
+ms.sourcegitcommit: 4c8444b732b8d6d0de8a95f6666c42095f146266
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62134124"
+ms.lasthandoff: 02/08/2022
+ms.locfileid: "62443328"
 ---
 # <a name="send-replies-to-a-message-in-a-channel"></a>Enviar respostas a uma mensagem em um canal
 
@@ -18,7 +18,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Envie uma nova resposta a [um chatMessage](../resources/chatmessage.md) em um canal [especificado](../resources/channel.md).
+Envie uma nova resposta para um [chatMessage](../resources/chatmessage.md) em um canal [especificado](../resources/channel.md).
 
 > **Observação**: é uma violação dos termos [de](/legal/microsoft-apis/terms-of-use) uso para usar Microsoft Teams como um arquivo de log. Envie apenas mensagens que as pessoas lerão.
 <!-- markdownlint-disable MD024 -->
@@ -35,9 +35,9 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 | Delegado (conta pessoal da Microsoft) | Sem suporte. |
 | Aplicativo                            | Teamwork.Migrate.All |
 
-> **Observação**: as permissões marcadas com ** foram preteridas e não devem ser usadas.
+> **Observação**: As permissões marcadas com ** só têm suporte para compatibilidade com compatibilidade Recomendamos que você atualize suas soluções para usar permissões diferentes e evite usar essas permissões adiante.
 
-> **Observação**: as permissões de aplicativo só *são* suportadas para [migração](/microsoftteams/platform/graph-api/import-messages/import-external-messages-to-teams).
+> **Observação**: As permissões de aplicativo só *são* suportadas para [migração](/microsoftteams/platform/graph-api/import-messages/import-external-messages-to-teams).
 No futuro, a Microsoft pode exigir que você ou seus clientes paguem taxas adicionais com base na quantidade de dados importados.
 
 ## <a name="http-request"></a>Solicitação HTTP
@@ -52,7 +52,7 @@ POST /teams/{team-id}/channels/{channel-id}/messages/{message-id}/replies
 | Autorização  | string  | {token} de portador. Obrigatório. |
 
 ## <a name="request-body"></a>Corpo da solicitação
-No corpo da solicitação, fornece uma representação JSON de um [objeto message.](../resources/chatmessage.md) Somente a propriedade body é obrigatória, outras propriedades são opcionais.
+No corpo da solicitação, fornece uma representação JSON de um [objeto message](../resources/chatmessage.md) . Somente a propriedade body é obrigatória, outras propriedades são opcionais.
 
 ## <a name="response"></a>Resposta
 
@@ -167,11 +167,11 @@ Content-type: application/json
 
 ### <a name="example-2-import-messages"></a>Exemplo 2: Importar mensagens
 
-> **Observação**: o escopo `Teamwork.Migrate.All` de permissão é necessário para este cenário.
+> **Observação**: o escopo de `Teamwork.Migrate.All` permissão é necessário para este cenário.
 
 #### <a name="request"></a>Solicitação
 
-O exemplo a seguir mostra como importar mensagens back-in-time usando `createDateTime` as chaves e no corpo da `from` solicitação.
+O exemplo a seguir mostra como importar mensagens back-in-time usando `createDateTime` as chaves `from` e no corpo da solicitação.
 
 
 # <a name="http"></a>[HTTP](#tab/http)

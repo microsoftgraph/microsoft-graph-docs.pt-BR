@@ -5,12 +5,12 @@ author: RamjotSingh
 ms.localizationpriority: high
 ms.prod: microsoft-teams
 ms.custom: scenarios:getting-started
-ms.openlocfilehash: 87e41e104ecc538d8b3a7d21e289d41430ff789b
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 0846cef129ff103cbf5ba8ca8095fe7bdf26aa4e
+ms.sourcegitcommit: 4c8444b732b8d6d0de8a95f6666c42095f146266
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59138929"
+ms.lasthandoff: 02/08/2022
+ms.locfileid: "62442817"
 ---
 # <a name="get-change-notifications-for-chats-using-microsoft-graph"></a>Obtenha notificações de alteração para chats usando o Microsoft Graph
 
@@ -59,7 +59,7 @@ Para obter notificações de alteração para todas as alterações relacionadas
 |Delegado (conta pessoal da Microsoft) | Sem suporte.    | Sem suporte. |
 |Aplicativo | ChatSettings.Read.Chat *, ChatSettings.ReadWrite.Chat*, Chat.Manage.Chat*, Chat.ReadBasic.All, Chat.Read.All, Chat.ReadWrite.All | beta |
 
-> **Observação**: Permissões marcadas com * usam [consentimento específico de recurso]( https://aka.ms/teams-rsc).
+> **Observação**: Permissões marcadas com * usam [consentimento específico de recurso](/microsoftteams/platform/graph-api/rsc/resource-specific-consent).
 
 ### <a name="example"></a>Exemplo
 

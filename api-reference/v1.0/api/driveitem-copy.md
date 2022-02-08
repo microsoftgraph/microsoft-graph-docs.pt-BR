@@ -1,6 +1,16 @@
 ---
-autor: Título de JeremyKelley: driveItem: copy ms.localizationpriority: ms.prod médio: descrição "sharepoint": "Cria de forma assíncrona uma cópia de um driveItem (incluindo qualquer filho), sob um novo item pai ou com um novo nome."
+author: JeremyKelley
+title: 'driveItem: copiar'
+ms.localizationpriority: medium
+ms.prod: sharepoint
+description: Cria uma cópia de forma assíncrona de um driveItem (incluindo os filhos), em um novo item pai ou com um novo nome.
 doc_type: apiPageType
+ms.openlocfilehash: f5ec199fee10ca140f0fc9a067244a73660a3dee
+ms.sourcegitcommit: 4c8444b732b8d6d0de8a95f6666c42095f146266
+ms.translationtype: MT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 02/08/2022
+ms.locfileid: "62443349"
 ---
 # <a name="driveitem-copy"></a>driveItem: copiar
 
@@ -32,7 +42,7 @@ POST /users/{userId}/drive/items/{itemId}/copy
 
 ## <a name="optional-query-parameters"></a>Parâmetros de consulta opcionais
 
-Este método dá suporte `@microsoft.graph.conflictBehavior` ao parâmetro de consulta para personalizar o comportamento quando ocorre um conflito.
+Este método dá suporte ao `@microsoft.graph.conflictBehavior` parâmetro de consulta para personalizar o comportamento quando ocorre um conflito.
 
 | Valor           | Descrição                                    |
 |:----------------|:---------------------------------------------- |
@@ -109,7 +119,7 @@ Location: https://contoso.sharepoint.com/_api/v2.0/monitor/4A3407B5-88FC-4504-8B
 ```
 
 O valor do cabeçalho `Location` fornece uma URL para um serviço que irá retornar o estado atual da operação de cópia.
-Você pode usar essas informações para [determinar quando a cópia foi concluída](/graph/long-running-actions-overview).
+Você pode usar essas informações [para determinar quando a cópia foi concluída](/graph/long-running-actions-overview).
 
 ### <a name="remarks"></a>Comentários
 

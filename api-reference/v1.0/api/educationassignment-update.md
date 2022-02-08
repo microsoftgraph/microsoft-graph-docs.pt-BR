@@ -5,18 +5,18 @@ ms.localizationpriority: medium
 author: cristobal-buenrostro
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: faca28843e5e9b6c6f4eadea6f9be265ff56bd9e
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: bc09b5ce5318616de5ca0f138897453b49da8f91
+ms.sourcegitcommit: 4c8444b732b8d6d0de8a95f6666c42095f146266
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62092356"
+ms.lasthandoff: 02/08/2022
+ms.locfileid: "62442845"
 ---
 # <a name="update-educationassignment"></a>Atualizar educationassignment
 
 Namespace: microsoft.graph
 
-Atualize [um objeto educationAssignment.](../resources/educationassignment.md) 
+Atualize [um objeto educationAssignment](../resources/educationassignment.md) . 
 
 Somente os professores podem executar essa ação. 
 
@@ -49,21 +49,21 @@ Propriedades existentes que não estão incluídas no corpo da solicitação ter
 
 | Propriedade     | Tipo   |Descrição|
 |:---------------|:--------|:----------|
-|addedStudentAction|Cadeia de caracteres| Descreve se a atribuição deve ser distribuída aos alunos que são adicionados após a data de publicação da atribuição.|
-|addToCalendarAction|educationAddToCalendarOptions|Campo opcional para controlar o comportamento **de atribuição** para adicionar atribuições aos **calendários** dos alunos e professores quando a **atribuição** for publicada. Os valores possíveis são: `none`, `studentsAndPublisher`, `studentsAndTeamOwners`, `unknownFutureValue`, `studentsOnly`. Observe que você deve usar o header de solicitação para obter os seguintes valores nesta `Prefer: include - unknown -enum-members` [enum evolvável](/graph/best-practices-concept#handling-future-members-in-evolvable-enumerations): `studentsOnly` . Opcional.|
-|allowLateSubmissions|Booliano| Se os alunos podem enviar envio após a data de vencimento.|
-|allowStudentsToAddResourcesToSubmission|Booliano| Se um aluno pode adicionar recursos a um envio ou não. Além disso, indica se todos os recursos no envio correspondem à lista de recursos de atribuição. |
+|addedStudentAction|String| Descreve se a atribuição deve ser distribuída aos alunos que são adicionados após a data de publicação da atribuição.|
+|addToCalendarAction|educationAddToCalendarOptions|Campo opcional para controlar o comportamento **de atribuição** para adicionar **atribuições aos calendários** dos alunos e professores quando a **atribuição** for publicada. Os valores possíveis são: `none`, `studentsAndPublisher`, `studentsAndTeamOwners`, `unknownFutureValue`, `studentsOnly`. Observe que você deve usar o `Prefer: include - unknown -enum-members` header de solicitação para obter os seguintes valores neste [número evolvável](/graph/best-practices-concept#handling-future-members-in-evolvable-enumerations): `studentsOnly`. Opcional.|
+|allowLateSubmissions|Boolean| Se os alunos podem enviar envio após a data de vencimento.|
+|allowStudentsToAddResourcesToSubmission|Boolean| Se um aluno pode adicionar recursos a um envio ou não. Além disso, indica se todos os recursos no envio correspondem à lista de recursos de atribuição. |
 |assignDateTime|DateTimeOffset| Indica a data para publicar a atribuição aos alunos. Não é possível editar após a publicação da atribuição.|
 |assignTo|[educationAssignmentRecipient](../resources/educationassignmentrecipient.md)| Alunos que receberão a atribuição.|
 |closeDateTime|DateTimeOffset| Data em que a atribuição será fechada para envios. Este é um campo opcional que pode ser nulo se a atribuição não permitirLateSubmissions ou closeDateTime for igual ao dueDateTime, mas se especificado, ele deve ser maior ou igual ao dueDateTime.|
-|displayName|Cadeia de caracteres| Nome da atribuição. |
+|displayName|String| Nome da atribuição. |
 |dueDateTime|DateTimeOffset| A atribuição de data é devido. |
 |grading|[educationAssignmentGradeType](../resources/educationassignmentgradetype.md)| Como a atribuição será gradeada.|
 |instructions|itemBody| Instruções a serem fornecidas aos alunos juntamente com a atribuição. |
-|notificationChannelUrl|Cadeia de caracteres| O canal para comunicar notificações relacionadas à atribuição. Para alterar a URL, de definir `assignTo` o valor [como educationAssignmentClassRecipient](../resources/educationassignmentclassrecipient.md). A URL do canal não pode ser mudada após a publicação da atribuição.|
+|notificationChannelUrl|Cadeia de caracteres| O canal para comunicar notificações relacionadas à atribuição. Para alterar a URL, de definir o `assignTo` valor [como educationAssignmentClassRecipient](../resources/educationassignmentclassrecipient.md). A URL do canal não pode ser mudada após a publicação da atribuição.|
 
 ## <a name="response"></a>Resposta
-Se tiver êxito, este método retornará um código de resposta e um `200 OK` objeto [educationAssignment](../resources/educationassignment.md) atualizado no corpo da resposta.
+Se tiver êxito, este método retornará um `200 OK` código de resposta e um objeto [educationAssignment](../resources/educationassignment.md) atualizado no corpo da resposta.
 
 ## <a name="example"></a>Exemplo
 
@@ -183,6 +183,7 @@ Content-type: application/json
 ## <a name="see-also"></a>Confira também
 
 * [Estados, transições e limitações para atribuições e envios](/graph/assignments-submissions-states-transition)
+* [Especificar o canal padrão para notificações de atribuição de educação](/graph/education-build-notificationchannelurl)
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->

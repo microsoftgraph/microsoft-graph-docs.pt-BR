@@ -3,14 +3,14 @@ title: Conjuntos de listas
 description: Obter uma lista dos objetos definidos e suas propriedades.
 author: vishriv
 ms.localizationpriority: medium
-ms.prod: taxonomy
+ms.prod: sites-and-lists
 doc_type: apiPageType
-ms.openlocfilehash: 9532079cf515409ea5b421c5fdabb9ef95adaa68
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 5b222bde2791d62107176973490f55e8f9fdf8f2
+ms.sourcegitcommit: 4c8444b732b8d6d0de8a95f6666c42095f146266
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59094706"
+ms.lasthandoff: 02/08/2022
+ms.locfileid: "62442586"
 ---
 # <a name="list-sets"></a>Conjuntos de listas
 Namespace: microsoft.graph.termStore
@@ -50,7 +50,7 @@ Não forneça um corpo de solicitação para esse método.
 
 ## <a name="response"></a>Resposta
 
-Se tiver êxito, este método retornará um código de resposta e uma `200 OK` coleção [de objetos definidos](../resources/termstore-set.md) no corpo da resposta.
+Se tiver êxito, este método retornará um `200 OK` código de resposta e uma coleção [de objetos definidos](../resources/termstore-set.md) no corpo da resposta.
 
 ## <a name="examples"></a>Exemplos
 
@@ -62,7 +62,7 @@ Se tiver êxito, este método retornará um código de resposta e uma `200 OK` c
 }-->
 
 ``` http
-GET https://graph.microsoft.com/v1.0/microsoft.sharepoint.com,b9b0bc03-cbc4-40d2-aba9-2c9dd9821ddf,6a742cee-9216-4db5-8046-13a595684e74/termStore/groups/03577abb-975e-4fb4-9ee0-4102a9108f94/sets
+GET https://graph.microsoft.com/v1.0/sites/microsoft.sharepoint.com,b9b0bc03-cbc4-40d2-aba9-2c9dd9821ddf,6a742cee-9216-4db5-8046-13a595684e74/termStore/groups/03577abb-975e-4fb4-9ee0-4102a9108f94/sets
 ```
 
 ### <a name="response"></a>Resposta

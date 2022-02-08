@@ -1,6 +1,16 @@
 ---
-autor: Descrição de JeremyKelley: "Criar uma sessão de carregamento para permitir que seu aplicativo carregue arquivos até o tamanho máximo do arquivo."
-título: driveItem: createUploadSession ms.localizationpriority: ms.prod médio: "sites e listas" doc_type: apiPageType
+author: JeremyKelley
+description: Crie uma sessão de upload para permitir que seu aplicativo carregue arquivos até o tamanho máximo de arquivo.
+title: 'driveItem: createUploadSession'
+ms.localizationpriority: medium
+ms.prod: sites-and-lists
+doc_type: apiPageType
+ms.openlocfilehash: dfb6b231b0db8664b7c01fd81f2697f4387554b6
+ms.sourcegitcommit: 4c8444b732b8d6d0de8a95f6666c42095f146266
+ms.translationtype: MT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 02/08/2022
+ms.locfileid: "62442642"
 ---
 # <a name="driveitem-createuploadsession"></a>driveItem: createUploadSession
 
@@ -210,8 +220,7 @@ Se `deferCommit` for verdadeiro, você pode concluir explicitamente o carregamen
 - Após o intervalo de bytes final do arquivo ser COLOCADO na URL de carregamento, envie uma solicitação final de PUT na mesma maneira que você [resolveria erros de carregamento](#handle-upload-errors) (no momento, com suporte somente no OneDrive for Business e no SharePoint).
 
 
-Quando o carregamento for concluído, o servidor responderá à solicitação final com `HTTP 201 Created` ou `HTTP 200 OK`.
-O corpo da resposta também incluirá o conjunto de propriedades padrão para o **driveItem** que representa o arquivo concluído.
+Quando o carregamento for concluído, o servidor responderá à solicitação final com `HTTP 201 Created` ou `HTTP 200 OK`. O corpo da resposta também incluirá o conjunto de propriedades padrão do **driveItem** que representa o arquivo concluído.
 
 <!-- { "blockType": "request", "opaqueUrl": true, "name": "upload-fragment-final", "scopes": "files.readwrite" } -->
 

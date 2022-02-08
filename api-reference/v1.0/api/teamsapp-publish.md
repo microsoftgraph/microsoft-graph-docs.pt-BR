@@ -5,19 +5,19 @@ author: nkramer
 ms.localizationpriority: medium
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 9667a92d801777cd279bf698c93d3c645c877efd
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: 420b983d20038d5449bf48b4192a931b98ac90c9
+ms.sourcegitcommit: 4c8444b732b8d6d0de8a95f6666c42095f146266
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62110567"
+ms.lasthandoff: 02/08/2022
+ms.locfileid: "62443062"
 ---
 # <a name="publish-teamsapp"></a>Publicar teamsapp
 
 Namespace: microsoft.graph
 
 Publique [um aplicativo](../resources/teamsapp.md) no catálogo Microsoft Teams aplicativos.
-Especificamente, essa API publica o aplicativo no catálogo da sua organização (o catálogo de aplicativos de locatários); o recurso criado terá um **valor de propriedade distributionMethod** de `organization` .
+Especificamente, essa API publica o aplicativo no catálogo da sua organização (o catálogo de aplicativos de locatários); o recurso criado terá um **valor de propriedade distributionMethod** de `organization`.
 
 A **propriedade requiresReview** permite que qualquer usuário envie um aplicativo para revisão por um administrador. Os administradores podem aprovar ou rejeitar esses aplicativos por meio dessa API ou do Microsoft Teams de administração.
 
@@ -31,7 +31,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 | Delegado (conta pessoal da Microsoft) | Sem suporte|
 | Aplicativo                            | Sem suporte. |
 
-> **Observação**: as permissões marcadas com ** foram preteridas e não devem ser usadas.
+> **Observação**: As permissões marcadas com ** só têm suporte para compatibilidade com compatibilidade Recomendamos que você atualize suas soluções para usar permissões diferentes e evite usar essas permissões adiante.
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- { "blockType": "ignored" } -->
@@ -49,7 +49,7 @@ POST /appCatalogs/teamsApps?requiresReview:{Boolean}
 
 |Propriedade|Tipo|Descrição|
 |----|----|----|
-|requiresReview| Booliano | Esse parâmetro de consulta opcional aciona o processo de revisão do aplicativo. Os usuários com privilégios de administrador podem enviar aplicativos sem disparar uma revisão. Se os usuários quiserem solicitar uma revisão antes da publicação, eles deverão definir  `requiresReview` como `true` . Um usuário com privilégios de administrador pode optar por não definir ou definir o valor como e o aplicativo será considerado aprovado e `requiresReview` `false`  publicará instantaneamente.|
+|requiresReview| Boolean | Esse parâmetro de consulta opcional aciona o processo de revisão do aplicativo. Os usuários com privilégios de administrador podem enviar aplicativos sem disparar uma revisão. Se os usuários quiserem solicitar uma revisão antes da publicação, eles deverão definir  `requiresReview` como `true`. Um usuário com privilégios de administrador pode `requiresReview` `false`  optar por não definir ou definir o valor como e o aplicativo será considerado aprovado e publicará instantaneamente.|
 
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
 
@@ -60,13 +60,13 @@ POST /appCatalogs/teamsApps?requiresReview:{Boolean}
 
 ## <a name="request-body"></a>Corpo da solicitação
 
-No corpo da solicitação, inclua uma carga Teams de manifesto zip. Para obter detalhes, consulte [Create an app package](/microsoftteams/platform/concepts/apps/apps-package).
+No corpo da solicitação, inclua uma carga Teams de manifesto zip. Para obter detalhes, consulte [Criar um pacote de aplicativos](/microsoftteams/platform/concepts/apps/apps-package).
 
 Cada aplicativo no catálogo de aplicativos deve ter uma ID de manifesto exclusiva.
 
 ## <a name="response"></a>Resposta
 
-Se tiver êxito, este método retornará um `200 OK` código de resposta e um objeto [teamsApp.](../resources/teamsapp.md)
+Se tiver êxito, este método retornará um código `200 OK` de resposta e um [objeto teamsApp](../resources/teamsapp.md) .
 
 ## <a name="examples"></a>Exemplos
 

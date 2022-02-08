@@ -5,12 +5,12 @@ author: cristobal-buenrostro
 ms.localizationpriority: medium
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: 5be75f26718c2ef5f0b7f7105a006c33d8eae7ca
-ms.sourcegitcommit: 25acfa7d0153336c9a35d30a1dd422aeadc1342c
+ms.openlocfilehash: ff8725eec97c40b1c94125d250456e08bb23d38a
+ms.sourcegitcommit: 4c8444b732b8d6d0de8a95f6666c42095f146266
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/03/2022
-ms.locfileid: "62347679"
+ms.lasthandoff: 02/08/2022
+ms.locfileid: "62443300"
 ---
 # <a name="educationassignment-delta"></a>educationAssignment: delta
 Namespace: microsoft.graph
@@ -78,7 +78,7 @@ Use o `$top` parâmetro para especificar o número de atribuições a serem reto
 }-->
 
 ```msgraph-interactive
-GET https://graph.microsoft.com/beta/education/education/classes/72a7baec-c3e9-4213-a850-f62de0adad5f/assignments/delta?$top=2
+GET https://graph.microsoft.com/beta/education/classes/72a7baec-c3e9-4213-a850-f62de0adad5f/assignments/delta?$top=2
 ```
 # <a name="c"></a>[C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-assignments-delta-csharp-snippets.md)]

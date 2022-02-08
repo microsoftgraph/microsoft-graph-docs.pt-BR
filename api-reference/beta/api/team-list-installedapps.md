@@ -5,12 +5,12 @@ author: akjo
 ms.localizationpriority: medium
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: dc3f5bbaccafc1b8d6bb7af5a781721d686c6b03
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: f16263cc7bdc7b689bfb6d54106ba6627dc6f7f7
+ms.sourcegitcommit: 4c8444b732b8d6d0de8a95f6666c42095f146266
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62108170"
+ms.lasthandoff: 02/08/2022
+ms.locfileid: "62442824"
 ---
 # <a name="list-apps-in-team"></a>Listar aplicativos em equipe
 
@@ -30,7 +30,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |Delegado (conta pessoal da Microsoft) | Sem suporte.    |
 |Aplicativo | TeamsAppInstallation.Read.Group *, TeamsAppInstallation.ReadForTeam.All, TeamsAppInstallation.ReadWriteForTeam.All, Group.Read.All **, Group.ReadWrite.All**, Directory.Read.All**, Directory.ReadWrite.All** |
 
-> **Observação**: Permissões marcadas com * usam [consentimento específico de recurso]( https://aka.ms/teams-rsc). As permissões marcadas com ** foram preteridas e não devem ser usadas.
+> **Observação**: As permissões marcadas com ** só têm suporte para compatibilidade com compatibilidade Recomendamos que você atualize suas soluções para usar permissões diferentes e evite usar essas permissões adiante. Permissões marcadas com * use [o consentimento específico do recurso](/microsoftteams/platform/graph-api/rsc/resource-specific-consent).
 
 ## <a name="http-request"></a>Solicitação HTTP
 
@@ -56,7 +56,7 @@ Não forneça um corpo de solicitação para esse método.
 
 ## <a name="response"></a>Resposta
 
-Se tiver êxito, este método retornará um código de resposta `200 OK` e uma coleção de objetos [teamsAppInstallation](../resources/teamsappinstallation.md) no corpo da resposta.
+Se tiver êxito, este método retornará um código `200 OK` de resposta e uma coleção de [objetos teamsAppInstallation](../resources/teamsappinstallation.md) no corpo da resposta.
 
 ## <a name="examples"></a>Exemplos
 
@@ -237,7 +237,7 @@ Content-type: application/json
 
 #### <a name="request"></a>Solicitação
 
-Este é um exemplo de solicitação. No exemplo, a ID do manifesto do Teams app é `cf1ba4c7-f94e-4d80-ba90-5594b641a8ee` .
+Este é um exemplo de solicitação. No exemplo, a ID do manifesto do Teams app é `cf1ba4c7-f94e-4d80-ba90-5594b641a8ee`.
 
 # <a name="http"></a>[HTTP](#tab/http)
 <!-- {

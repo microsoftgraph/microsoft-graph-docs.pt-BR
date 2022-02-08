@@ -5,19 +5,19 @@ author: jecha
 ms.localizationpriority: medium
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: ce3f28a74eaf904331b21810509237b219077c5f
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: e4310d314ed345c969be17e4d894ce1b36d82da3
+ms.sourcegitcommit: 4c8444b732b8d6d0de8a95f6666c42095f146266
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62103851"
+ms.lasthandoff: 02/08/2022
+ms.locfileid: "62443132"
 ---
 # <a name="list-operations-on-a-chat"></a>Listar operações em um chat
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Listar [todas Teams assíncronas](../resources/teamsasyncoperation.md) que executam ou estão sendo executados no [chat especificado.](../resources/chat.md)
+Lista todas [as Teams assíncronas](../resources/teamsasyncoperation.md) que executam ou estão em execução no [chat especificado](../resources/chat.md).
 
 ## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
@@ -28,7 +28,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 | Delegado (conta pessoal da Microsoft) | Sem suporte. |
 | Aplicativo                            | ChatSettings.Read.Chat *, ChatSettings.ReadWrite.Chat*, Chat.Manage.Chat*, Chat.ReadBasic.All, Chat.Read.All, Chat.ReadWrite.All |
 
-> **Observação**: Permissões marcadas com * usam [consentimento específico de recurso]( https://aka.ms/teams-rsc).
+> **Observação**: Permissões marcadas com * usam [consentimento específico de recurso](/microsoftteams/platform/graph-api/rsc/resource-specific-consent).
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- { 
@@ -41,7 +41,7 @@ GET /chats/{chat-id}/operations
 
 ## <a name="optional-query-parameters"></a>Parâmetros de consulta opcionais
 
-Este método dá suporte `$filter` aos `$select` parâmetros de consulta , , e OData para `$top` ajudar a personalizar a `$skip` [](/graph/query-parameters) resposta.
+Este método dá suporte aos `$filter`[parâmetros](/graph/query-parameters) de consulta , `$select`, `$top`e `$skip` OData para ajudar a personalizar a resposta.
 
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
 
@@ -55,7 +55,7 @@ Não forneça um corpo de solicitação para esse método.
 
 ## <a name="response"></a>Resposta
 
-Se tiver êxito, isso retornará um código de resposta e uma `200 OK` coleção de [objetos teamsAsyncOperation](../resources/teamsasyncoperation.md) no corpo da resposta.
+Se tiver êxito, isso retornará um `200 OK` código de resposta e uma coleção de [objetos teamsAsyncOperation](../resources/teamsasyncoperation.md) no corpo da resposta.
 
 ## <a name="examples"></a>Exemplos
 

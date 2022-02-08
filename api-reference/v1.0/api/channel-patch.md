@@ -5,12 +5,12 @@ author: anandjo
 ms.localizationpriority: medium
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 55fc6efa586fd9d12ad11ec0a84243b9a7fe03de
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: 195382a5ae90f61050a4e65f2164279f3e122dfd
+ms.sourcegitcommit: 4c8444b732b8d6d0de8a95f6666c42095f146266
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62101562"
+ms.lasthandoff: 02/08/2022
+ms.locfileid: "62443448"
 ---
 # <a name="patch-channel"></a>Canal patch
 
@@ -28,7 +28,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |Delegado (conta pessoal da Microsoft) | Sem suporte.    |
 |Aplicativo | ChannelSettings.ReadWrite.Group *, ChannelSettings.ReadWrite.All, Group.ReadWrite.All**, Directory.ReadWrite.All** |
 
-> **Observação**: Permissões marcadas com * usam [consentimento específico de recurso]( https://aka.ms/teams-rsc). As permissões marcadas com ** são preteridas e não devem ser usadas.
+> **Observação**: As permissões marcadas com ** só têm suporte para compatibilidade com compatibilidade Recomendamos que você atualize suas soluções para usar permissões diferentes e evite usar essas permissões adiante. Permissões marcadas com * use [o consentimento específico do recurso](/microsoftteams/platform/graph-api/rsc/resource-specific-consent).
 
 > **Observação**: esta API dá suporte a permissões de administrador. Os administradores globais e os administradores de serviços do Microsoft Teams podem acessar equipes das quais não são membros.
 
@@ -48,7 +48,7 @@ PATCH /teams/{team-id}/channels/{channel-id}
 
 No corpo da solicitação, fornça uma representação JSON do objeto [canal](../resources/channel.md).
 
-> **Observação:** Não é possível atualizar `membershipType` o valor de um canal existente.
+> **Observação:** Não é possível atualizar o `membershipType` valor de um canal existente.
 
 ## <a name="response"></a>Resposta
 

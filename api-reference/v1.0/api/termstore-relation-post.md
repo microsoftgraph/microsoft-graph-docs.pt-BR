@@ -3,19 +3,19 @@ title: Criar relação
 description: Crie um novo objeto relation.
 author: vishriv
 ms.localizationpriority: medium
-ms.prod: taxonomy
+ms.prod: sites-and-lists
 doc_type: apiPageType
-ms.openlocfilehash: 5d76e8e424b9ab1aad1311eb1b9a8b3053bfef31
-ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
+ms.openlocfilehash: 7e2c77a47f89eadf5140da215a0386917520f644
+ms.sourcegitcommit: 4c8444b732b8d6d0de8a95f6666c42095f146266
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/12/2021
-ms.locfileid: "60942594"
+ms.lasthandoff: 02/08/2022
+ms.locfileid: "62443399"
 ---
 # <a name="create-relation"></a>Criar relação
 Namespace: microsoft.graph.termStore
 
-Crie um novo [objeto relation.](../resources/termstore-relation.md) Eles são usados para criar relações fixadas e reutilizadas entre termos ou entre um termo e um conjunto. Se você criar um termo fixado/reutilizado entre o termo e o conjunto, **fromTerm**  deve ser definido como *nulo* no corpo da postagem.
+Crie um novo [objeto relation](../resources/termstore-relation.md) . Eles são usados para criar relações fixadas e reutilizadas entre termos ou entre um termo e um conjunto. Se você criar um termo fixado/reutilizado entre o termo e o conjunto, **fromTerm**  deve ser definido como *nulo* no corpo da postagem.
 
 ## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
@@ -23,7 +23,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |Tipo de permissão|Permissões (da com menos para a com mais privilégios)|
 |:---|:---|
 |Delegado (conta corporativa ou de estudante) |TermStore.ReadWrite.All |
-|Delegada (conta pessoal da Microsoft) | Sem suporte.    |
+|Delegado (conta pessoal da Microsoft) | Sem suporte.    |
 |Aplicativo | Sem suporte. |
 
 
@@ -44,9 +44,9 @@ POST sites/{site-id}/termStore/sets/{set-id}/terms/{term-id}/relations
 |Content-Type|application/json. Obrigatório.|
 
 ## <a name="request-body"></a>Corpo da solicitação
-No corpo da solicitação, fornece uma representação JSON do [objeto relation.](../resources/termstore-relation.md)
+No corpo da solicitação, fornece uma representação JSON do [objeto relation](../resources/termstore-relation.md) .
 
-A tabela a seguir mostra as propriedades que são necessárias ao criar o [objeto relation.](../resources/termstore-relation.md)
+A tabela a seguir mostra as propriedades que são necessárias ao criar o [objeto relation](../resources/termstore-relation.md) .
 
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
@@ -58,7 +58,7 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar o [objet
 
 ## <a name="response"></a>Resposta
 
-Se tiver êxito, este método retornará um código de `201 Created` resposta e um objeto [microsoft.graph.termStore.relation](../resources/termstore-relation.md) no corpo da resposta.
+Se tiver êxito, este método retornará um `201 Created` código de resposta e um [objeto microsoft.graph.termStore.relation](../resources/termstore-relation.md) no corpo da resposta.
 
 ## <a name="examples"></a>Exemplos
 
@@ -71,7 +71,7 @@ Se tiver êxito, este método retornará um código de `201 Created` resposta e 
 -->
 
 ``` http
-POST https://graph.microsoft.com/v1.0/sites/microsoft.sharepoint.com,b9b0bc03-cbc4-40d2-aba9-2c9dd9821ddf,6a742cee-9216-4db5-8046-13a595684e74/termStore/v1.0/27fd2d26-60d3-485c-9420-0c71f74a0cfd/terms/8861b57a-c777-49e7-826f-47d6afecf80d/relations
+POST https://graph.microsoft.com/v1.0/sites/microsoft.sharepoint.com,b9b0bc03-cbc4-40d2-aba9-2c9dd9821ddf,6a742cee-9216-4db5-8046-13a595684e74/termStore/27fd2d26-60d3-485c-9420-0c71f74a0cfd/terms/8861b57a-c777-49e7-826f-47d6afecf80d/relations
 Content-Type: application/json
 
 {

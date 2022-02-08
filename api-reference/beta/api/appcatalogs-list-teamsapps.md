@@ -5,12 +5,12 @@ author: nkramer
 ms.localizationpriority: medium
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: e07b7d8f7e81543730724ac566da5fe1adddccde
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: 26c133798aa0484922c565e3f8f30929f499842c
+ms.sourcegitcommit: 4c8444b732b8d6d0de8a95f6666c42095f146266
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62110072"
+ms.lasthandoff: 02/08/2022
+ms.locfileid: "62442915"
 ---
 # <a name="list-teamsapp"></a>Listar teamsApp
 
@@ -18,11 +18,11 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Listar [aplicativos](../resources/teamsapp.md) do Microsoft Teams de aplicativos.
+[Listar aplicativos](../resources/teamsapp.md) do Microsoft Teams de aplicativos.
 Isso inclui aplicativos da Microsoft Teams, bem como aplicativos do catálogo de aplicativos da sua organização (o catálogo de aplicativos de locatário). Para obter aplicativos somente do catálogo de aplicativos da sua organização, especifique `organization` como **distributionMethod** na solicitação.
 
 > [!NOTE]
-> O `id` de um recurso **teamsApp** é gerado pelo servidor e não é o mesmo especificado em um manifesto Teams `id` aplicativo. O `id` fornecido pelo desenvolvedor como parte do manifesto Teams aplicativo é carimbado como o no recurso `externalId` **teamsApp.**
+> O `id` de um **recurso teamsApp** é gerado pelo servidor `id` e não é o mesmo especificado em um manifesto Teams aplicativo. O `id` fornecido pelo desenvolvedor como parte do manifesto Teams aplicativo é `externalId` carimbado como o no **recurso teamsApp**.
 
 ## <a name="permissions"></a>Permissões
 
@@ -34,7 +34,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 | Delegado (conta pessoal da Microsoft) | Sem suporte. |
 | Aplicativo                            | AppCatalog.Read.All, AppCatalog.ReadWrite.All |
 
-> **Observação**: as permissões marcadas com ** foram preteridas e não devem ser usadas.
+> **Observação**: As permissões marcadas com ** só têm suporte para compatibilidade com compatibilidade Recomendamos que você atualize suas soluções para usar permissões diferentes e evite usar essas permissões adiante.
 
 ## <a name="http-request"></a>Solicitação HTTP
 
@@ -48,7 +48,7 @@ GET /appCatalogs/teamsApps
 
 Este método suporta o `$filter`, `$select`, e `$expand` [parâmetros de consulta OData](/graph/query-parameters) para ajudar a personalizar a resposta.
 
-O uso retornará mais informações sobre o estado do aplicativo, como `$expand=AppDefinitions` **o publishingState**, que reflete o status da revisão de envio do aplicativo e retorna se um aplicativo foi aprovado, rejeitado ou permanece sob revisão. 
+O `$expand=AppDefinitions` uso retornará mais informações sobre o estado do aplicativo, como **o publishingState**, que reflete o status da revisão de envio do aplicativo e retorna se um aplicativo foi aprovado, rejeitado ou permanece sob revisão. 
 
 > **Observação:** Você pode filtrar em qualquer um dos campos do [objeto teamsApp](../resources/teamsapp.md) para reduzir a lista de resultados. Você pode usar qualquer uma das seguintes operações de filtro: Igual, não igual e ou não.
 
@@ -64,7 +64,7 @@ Não forneça um corpo de solicitação para esse método.
 
 ## <a name="response"></a>Resposta
 
-Se tiver êxito, este método retornará um código de resposta e uma `200 OK` lista de objetos [teamsApp](../resources/teamsapp.md) no corpo da resposta.
+Se tiver êxito, este método retornará um `200 OK` código de resposta e uma lista de objetos [teamsApp](../resources/teamsapp.md) no corpo da resposta.
 
 ## <a name="examples"></a>Exemplos
 
@@ -282,7 +282,7 @@ Content-Type: application/json
 
 ### <a name="example-4-list-applications-with-a-given-id-and-return-the-submission-review-state"></a>Exemplo 4: listar aplicativos com uma determinada ID e retornar o estado de revisão de envio
 
-O exemplo a seguir lista aplicativos com uma determinada ID e expande **appDefinitions** para retornar **o publishingState**, que reflete o estado de revisão de envio do aplicativo. `Submitted` significa que a revisão está pendente, significa que o aplicativo foi aprovado pelo administrador e significa que o `published` aplicativo foi rejeitado pelo `rejected` administrador.
+O exemplo a seguir lista aplicativos com uma determinada ID e expande **appDefinitions** para retornar **o publishingState**, que reflete o estado de revisão de envio do aplicativo. `Submitted` significa que a revisão está pendente, significa `published` que o aplicativo foi aprovado pelo administrador e `rejected` significa que o aplicativo foi rejeitado pelo administrador.
 
 #### <a name="request"></a>Solicitação
 

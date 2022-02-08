@@ -5,12 +5,12 @@ author: nkramer
 ms.localizationpriority: medium
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: b53266a5bc129d54081cf86f0be03b97fa6c7154
-ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
+ms.openlocfilehash: 7f30f7a5c6e5e0617fa44edb828be94134a56a9d
+ms.sourcegitcommit: 4c8444b732b8d6d0de8a95f6666c42095f146266
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/12/2021
-ms.locfileid: "60926102"
+ms.lasthandoff: 02/08/2022
+ms.locfileid: "62442971"
 ---
 # <a name="update-teamsapp"></a>Atualizar teamsApp
 
@@ -18,7 +18,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Atualize [um aplicativo](../resources/teamsapp.md) publicado anteriormente no Microsoft Teams de aplicativos. Para atualizar um aplicativo, a **propriedade distributionMethod** para o aplicativo deve ser definida como `organization` .
+Atualize [um aplicativo](../resources/teamsapp.md) publicado anteriormente no Microsoft Teams de aplicativos. Para atualizar um aplicativo, a **propriedade distributionMethod** para o aplicativo deve ser definida como `organization`.
 
 Essa API atualiza especificamente um aplicativo publicado no catálogo de aplicativos da sua organização (o catálogo de aplicativos de locatário).  
 
@@ -34,7 +34,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 | Delegado (conta pessoal da Microsoft) | Sem suporte|
 | Aplicativo                            | Sem suporte. |
 
-> **Observação**: as permissões marcadas com ** foram preteridas e não devem ser usadas.
+> **Observação**: As permissões marcadas com ** só têm suporte para compatibilidade com compatibilidade Recomendamos que você atualize suas soluções para usar permissões diferentes e evite usar essas permissões adiante.
 
 ## <a name="http-request"></a>Solicitação HTTP
 
@@ -48,7 +48,7 @@ POST /appCatalogs/teamsApps/{id}/appDefinitions
 
 |Propriedade|Tipo|Descrição|
 |----|----|----|
-|requiresReview| Boolean | Esse parâmetro de consulta opcional aciona o processo de revisão do aplicativo. Os usuários com privilégios de administrador podem enviar aplicativos sem disparar uma revisão. Se os usuários quiserem solicitar uma revisão antes da publicação, eles deverão definir  `requiresReview` como `true` . Um usuário com privilégios de administrador pode optar por não definir ou definir o valor como e o aplicativo será considerado aprovado e `requiresReview` `false`  publicará instantaneamente.|
+|requiresReview| Boolean | Esse parâmetro de consulta opcional aciona o processo de revisão do aplicativo. Os usuários com privilégios de administrador podem enviar aplicativos sem disparar uma revisão. Se os usuários quiserem solicitar uma revisão antes da publicação, eles deverão definir  `requiresReview` como `true`. Um usuário com privilégios de administrador pode `requiresReview` `false`  optar por não definir ou definir o valor como e o aplicativo será considerado aprovado e publicará instantaneamente.|
 
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
 
@@ -59,9 +59,9 @@ POST /appCatalogs/teamsApps/{id}/appDefinitions
 
 ## <a name="request-body"></a>Corpo da solicitação
 
-No corpo da solicitação, inclua uma carga Teams de manifesto zip. Para obter detalhes, consulte [Create an app package](/microsoftteams/platform/concepts/apps/apps-package).
+No corpo da solicitação, inclua uma carga Teams de manifesto zip. Para obter detalhes, consulte [Criar um pacote de aplicativos](/microsoftteams/platform/concepts/apps/apps-package).
 
->**Observação:** Use a ID retornada da chamada Lista [de](./appcatalogs-list-teamsapps.md) aplicativos publicados para fazer referência ao aplicativo que você gostaria de atualizar. Não use a ID do manifesto do pacote do aplicativo zip.
+>**Observação:** Use a ID retornada da [chamada Lista de](./appcatalogs-list-teamsapps.md) aplicativos publicados para fazer referência ao aplicativo que você gostaria de atualizar. Não use a ID do manifesto do pacote do aplicativo zip.
 
 ## <a name="response"></a>Resposta
 
@@ -116,7 +116,7 @@ Content-type: application/zip
 
 ### <a name="response"></a>Resposta
 
-Se tiver êxito, este método retornará um código de resposta e o par `201 Created` chave/valor `publishingState` : no corpo da `submitted` resposta. *Consulte* [teamsappdefinition](../resources/teamsappdefinition.md).
+Se tiver êxito, este método retornará um `201 Created` código de resposta e o par chave/valor `publishingState`: `submitted` no corpo da resposta. *Consulte* [teamsappdefinition](../resources/teamsappdefinition.md).
 
 <!-- {
   "blockType": "response",

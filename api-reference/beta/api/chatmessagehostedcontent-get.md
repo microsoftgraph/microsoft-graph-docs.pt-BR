@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: RamjotSingh
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: e177be3384110185c215507d4d7b2bcddc00af44
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: aeb9356fe4ab324b42353fb7fc1ecfd9b6e5b613
+ms.sourcegitcommit: 4c8444b732b8d6d0de8a95f6666c42095f146266
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62109326"
+ms.lasthandoff: 02/08/2022
+ms.locfileid: "62443209"
 ---
 # <a name="get-chatmessagehostedcontent"></a>Obter chatMessageHostedContent
 
@@ -18,7 +18,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Recupere as propriedades e as relações do [objeto chatMessageHostedContent.](../resources/chatmessagehostedcontent.md)
+Recupere as propriedades e as relações do [objeto chatMessageHostedContent](../resources/chatmessagehostedcontent.md) .
 
 ## <a name="permissions"></a>Permissões
 
@@ -32,7 +32,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |Delegado (conta pessoal da Microsoft)|Sem suporte.|
 |Application| ChannelMessage.Read.Group, ChannelMessage.Read.All, Group.Read.All **, Group.ReadWrite.All** |
 
-> **Observação**: as permissões marcadas com ** foram preteridas e não devem ser usadas.
+> **Observação**: As permissões marcadas com ** só têm suporte para compatibilidade com compatibilidade Recomendamos que você atualize suas soluções para usar permissões diferentes e evite usar essas permissões adiante.
 
 ### <a name="permissions-for-chat"></a>Permissões para o chat
 
@@ -79,7 +79,7 @@ Não forneça um corpo de solicitação para esse método.
 
 ## <a name="response"></a>Resposta
 
-Se tiver êxito, este método retornará um código de resposta e `200 OK` o [objeto chatMessageHostedContent](../resources/chatmessagehostedcontent.md) solicitado no corpo da resposta.
+Se tiver êxito, este método retornará um `200 OK` código de resposta e o [objeto chatMessageHostedContent](../resources/chatmessagehostedcontent.md) solicitado no corpo da resposta.
 
 ## <a name="examples"></a>Exemplos
 

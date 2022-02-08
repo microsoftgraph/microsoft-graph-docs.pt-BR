@@ -4,15 +4,15 @@ description: Obtém um objeto do cliente no Dynamics 365 Business Central.
 services: project-madeira
 documentationcenter: ''
 author: SusanneWindfeldPedersen
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: dynamics-365-business-central
 doc_type: apiPageType
-ms.openlocfilehash: df34248e6977752504f1f1c8f0997fbc0fa8f434
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: b72df8585d56a8325ff1d7e6885430854ef6a0a2
+ms.sourcegitcommit: 4c8444b732b8d6d0de8a95f6666c42095f146266
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52045632"
+ms.lasthandoff: 02/08/2022
+ms.locfileid: "62442887"
 ---
 # <a name="get-customers"></a>Obter clientes
 
@@ -20,7 +20,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Recupere as propriedades e as relações de um objeto do cliente para o Dynamics 365 Business Central.
+Recupere as propriedades e as relações de um [objeto do](../resources/dynamics-customer.md) cliente para o Dynamics 365 Business Central.
 
 ## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
@@ -29,10 +29,10 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |:---------------|:------------------------------------------|
 |Delegado (conta corporativa ou de estudante)|Financials.ReadWrite.All |
 |Delegada (conta pessoal da Microsoft|Sem suporte.|
-|Application|Financials.ReadWrite.All|
+|Aplicativo|Financials.ReadWrite.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
-```
+```http
 GET /financials/companies/{id}/customers/{id}
 ```
 
@@ -48,19 +48,21 @@ Este método dá suporte a [Parâmetros de consulta OData](/graph/query-paramete
 Não forneça um corpo de solicitação para esse método.
 
 ## <a name="response"></a>Resposta
-Se tiver êxito, este método retornará um código `200 OK` de resposta e um objeto **customers** no corpo da resposta.
+Se tiver êxito, este método retornará um `200 OK` código de resposta e um objeto **customers** no corpo da resposta.
 
-**Solicitação**
+## <a name="examples"></a>Exemplos
 
-Este é um exemplo da solicitação.
+### <a name="request"></a>Solicitação
+
+Veja a seguir um exemplo de uma solicitação.
 
 ```http
 GET https://graph.microsoft.com/beta/financials/companies/{id}/customers/{id}
 ```
 
-**Response**
+### <a name="response"></a>Resposta
 
-Veja a seguir um exemplo da resposta. 
+Este é um exemplo de resposta. 
 
 > **Observação**: o objeto de resposta mostrado aqui pode ser encurtado com fins de legibilidade.
 
