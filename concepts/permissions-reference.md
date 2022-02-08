@@ -1,11 +1,16 @@
 ---
 title: 'Referência de permissões do Microsoft Graph '
-description: 'O Microsoft Graph expõe as permissões granulares que controlam o acesso que os aplicativos têm aos recursos, como email, grupos e usuários. Como desenvolvedor, você decide quais permissões para o Microsoft Graph seu aplicativo deverá solicitar.'
+description: O Microsoft Graph expõe as permissões granulares que controlam o acesso que os aplicativos têm aos recursos, como email, grupos e usuários. Como desenvolvedor, você decide quais permissões para o Microsoft Graph seu aplicativo deverá solicitar.
 author: jackson-woods
 ms.localizationpriority: high
-ms.custom: 'graphiamtop20, scenarios:getting-started'
+ms.custom: graphiamtop20, scenarios:getting-started
+ms.openlocfilehash: 7d34d827bd45a44114ad36a1c2a122d92f7b7083
+ms.sourcegitcommit: 59918804365570a1a6b7f45c29e546e777c74c85
+ms.translationtype: HT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 02/07/2022
+ms.locfileid: "62436065"
 ---
-
 # <a name="microsoft-graph-permissions-reference"></a>Referência de permissões do Microsoft Graph
 
 Para que o aplicativo acesse os dados no Microsoft Graph, o usuário ou administrador deve conceder a ele as permissões corretas por meio de um processo de consentimento. Este tópico lista as permissões associadas a cada grande conjunto de APIs do Microsoft Graph. Ele também fornece orientações sobre como usar as permissões.
@@ -1589,6 +1594,7 @@ Para cenários mais complexos que envolvem várias permissões, confira [Cenári
 | _Policy.ReadWrite.Authorization_ | Ler e gravar a política de autorização da sua organização | Permite que o aplicativo leia e grave a política de autorização da sua organização, em nome do usuário conectado.  Por exemplo, as políticas de autorização podem controlar algumas das permissões que a função do usuário pronto tem por padrão. | Sim | Não |
 | _Policy.ReadWrite.ConditionalAccess_ | Ler e gravar as políticas de acesso condicional da sua organização | Permite que o aplicativo leia e grave todas as políticas de acesso condicional em nome do usuário conectado. | Sim | Não |
 | _Policy.ReadWrite.ConsentRequest_ | Ler e escrever a política de solicitações de consentimento da sua organização | Permite que o aplicativo leia e grave a política de solicitações de consentimento da sua organização, em nome do usuário conectado. | Sim | Não |
+| _Policy.ReadWrite.CrossTenantAccessPolicy_ | Ler e gravar a política de acesso entre os locatários da sua organização | Permita que o aplicativo leia e grave a política de acesso entre locatários da sua organização em nome do usuário conectado. | Sim | Não |
 | _Policy.ReadWrite.FeatureRollout_ | Ler e gravar as políticas de implantação de novos recursos da sua organização | Permite que o aplicativo leia e grave todas as políticas de implantação de novos recursos em nome do usuário conectado. Inclui habilidades para atribuir e remover usuários e grupos para a implantação de um recurso específico. | Sim | Não |
 | _Policy.ReadWrite.PermissionGrant_ | Gerenciar as políticas de concessão de consentimento e permissão | Permite que o aplicativo gerencie as políticas relacionadas a concessões de consentimento e permissão para aplicativos, em nome do usuário conectado. | Sim | Não |
 | _Policy.ReadWrite.TrustFramework_ | Ler e gravar as políticas TrustFramework (Estrutura de Confiança) da sua organização | Permite que o aplicativo leia e grave todas as políticas de TrustFramework da sua organização em nome do usuário conectado. | Sim | Não |
@@ -1605,6 +1611,9 @@ Para cenários mais complexos que envolvem várias permissões, confira [Cenári
 | _Policy.ReadWrite.AccessReview_ | Ler e gravar a política de autorização da sua organização | Permite ao aplicativo ler e gravar a política de revisão de acesso da sua organização, sem um usuário conectado. | Sim |
 | _Policy.ReadWrite.ApplicationConfiguration_ | Leia e escreva as políticas de configuração dos aplicativos da sua organização | Permite que o aplicativo leia e grave as políticas de configuração dos aplicativos da sua organização, sem um usuário conectado. | Sim |
 | _Policy.ReadWrite.AuthenticationFlows_ | Ler e gravar as políticas de fluxo de autenticação da sua organização | Permite que o aplicativo leia e grave todas as políticas de fluxo de autenticação do locatário, sem um usuário conectado. | Sim |
+| _Policy.ReadWrite.Authorization_ | Ler e gravar a política de autorização da sua organização | Permite que o aplicativo leia e grave a política de autorização da sua organização, em nome do usuário conectado.  Por exemplo, as políticas de autorização podem controlar algumas das permissões que a função do usuário pronto tem por padrão. | Sim | 
+| _Policy.ReadWrite.ConsentRequest_ | Ler e escrever a política de solicitações de consentimento da sua organização | Permite que o aplicativo leia e escreva a política de solicitações de consentimento da sua organização sem um usuário conectado. | Sim |
+| _Policy.ReadWrite.CrossTenantAccessPolicy_ | Ler e gravar a política de acesso entre os locatários da sua organização | Permita que o aplicativo leia e grave a política de acesso entre locatários da sua organização sem um usuário conectado. | Sim |
 | _Policy.ReadWrite.AuthenticationMethod_   | Ler e gravar todas as políticas de método de autenticação    | Permite que o aplicativo leia e grave todas as políticas de método de autenticação do locatário, sem um usuário conectado. | Sim |
 | _Policy.ReadWrite.Authorization_ | Ler e gravar a política de autorização da sua organização | Permite que o aplicativo leia e grave a política de autorização da sua organização, em nome do usuário conectado.  Por exemplo, as políticas de autorização podem controlar algumas das permissões que a função do usuário pronto tem por padrão. | Sim |
 | _Policy.ReadWrite.ConsentRequest_ | Ler e escrever a política de solicitações de consentimento da sua organização | Permite que o aplicativo leia e escreva a política de solicitações de consentimento da sua organização sem um usuário conectado. | Sim |
@@ -1624,6 +1633,7 @@ Os seguintes usos são válidos para permissões delegadas e permissões de apli
 * _Policy.ReadWrite.AuthenticationFlows_: Ler e gravar a política de fluxos de autenticação da sua organização (`PATCH /beta/policies/authenticationFlowsPolicy`)
 * _Policy.ReadWrite.AuthenticationMethod_: use as permissões para gerenciar as configurações na política de métodos de autenticação, incluindo habilitar e desabilitar métodos de autenticação, permitir que usuários e grupos usem esses métodos e definir outras configurações relacionadas aos métodos de autenticação que os usuários podem registrar e usar em um locatário.
 * _Policy.ReadWrite.ConditionalAccess_: Leia e escreva as políticas de acesso condicional da sua organização (`POST /beta/identity/conditionalAccess/policies`)
+* _Policy.ReadWrite.CrossTenantAccessPolicy_: Leia e escreva a política de acesso entre locatário da sua organização (`PATCH /beta/policies/crossTenantAccessPolicy`)
 * _Policy.ReadWrite.FeatureRollout_: Ler e gravar todas as políticas de distribuição de recursos da sua organização (`POST /beta/directory/featureRolloutPolicies`)
 * _Policy.ReadWrite.TrustFramework_: Leitura e gravação de todas as políticas da estrutura de confiança da sua organização (`POST /beta/trustFramework/policies`)
 
