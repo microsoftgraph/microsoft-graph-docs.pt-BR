@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: markwahl-msft
 ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: 5c146dcaa4827e814ed32743c46068992c780803
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: 1221cd9af225a9a59009b56861879c93506e059f
+ms.sourcegitcommit: 2d61a35735aeb060cc9f7374dd6b50900566293b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62119045"
+ms.lasthandoff: 02/09/2022
+ms.locfileid: "62468311"
 ---
 # <a name="create-accesspackageresourcerequest"></a>Criar accessPackageResourceRequest
 
@@ -47,20 +47,20 @@ POST /identityGovernance/entitlementManagement/accessPackageResourceRequests
 
 ## <a name="request-body"></a>Corpo da solicitação
 
-No corpo da solicitação, fornece uma representação JSON de um [objeto accessPackageResourceRequest.](../resources/accesspackageresourcerequest.md) Inclua a `accessPackageResource` relação com um objeto [accessPackageResource](../resources/accesspackageresource.md) como parte da solicitação.
+No corpo da solicitação, fornece uma representação JSON de um [objeto accessPackageResourceRequest](../resources/accesspackageresourcerequest.md) . Inclua a `accessPackageResource` relação com um [objeto accessPackageResource](../resources/accesspackageresource.md) como parte da solicitação.
 
-Para adicionar um grupo do Azure AD como um recurso a um catálogo, de definir a **catalogId** como da ID do catálogo, **requestType** como e representando o `AdminAdd` `accessPackageResource` recurso. O valor da **propriedade originSystem** dentro do deve ser e `accessPackageResource` o valor da `AadGroup` **originId** é o identificador do grupo.
+Para adicionar um grupo do Azure AD como um recurso a um catálogo, de definir a **catalogId** como da ID do catálogo, **requestType** `AdminAdd`como e `accessPackageResource` representando o recurso. O valor da **propriedade originSystem** dentro do `accessPackageResource` deve ser `AadGroup` e o valor da **originId** é o identificador do grupo.
 
-Para remover um aplicativo do Azure AD de um catálogo, de definir **a catalogId** como da ID do catálogo, **requestType** como e o objeto de recurso a ser `AdminRemove` `accessPackageResource` removido.  O objeto resource pode ser recuperado usando [accessPackageResources](accesspackagecatalog-list-accesspackageresources.md)de lista.
+Para remover um aplicativo do Azure AD de um catálogo, de definir **a catalogId** como da ID do catálogo, **requestType** `AdminRemove`como e `accessPackageResource` o objeto de recurso a ser removido.  O objeto resource pode ser recuperado usando [list accessPackageResources](accesspackagecatalog-list-accesspackageresources.md).
 
 Para atribuir o ambiente de localização geográfica a um recurso do Sharepoint Online multilocação geográfica, inclua a relação **accessPackageResourceEnvironment** no `accessPackageResource` objeto. Isso pode ser feito de duas maneiras:
-+ Use `@odata.bind` anotação para atribuir `id` o do a um `accessPackageResourceEnvironment` `accessPackageResourceEnvironment` objeto.
-+ `originId`Especifique o parâmetro do em um `accessPackageResourceEnvironment` `accessPackageResourceEnvironment` objeto.
++ Use `@odata.bind` anotação para atribuir o `id` do a `accessPackageResourceEnvironment` um `accessPackageResourceEnvironment` objeto.
++ Especifique `originId` o parâmetro do `accessPackageResourceEnvironment` em um `accessPackageResourceEnvironment` objeto.
 
 
 ## <a name="response"></a>Resposta
 
-Se tiver êxito, este método retornará um código de resposta e um `201 Created` novo [objeto accessPackageResourceRequest](../resources/accesspackageresourcerequest.md) no corpo da resposta.
+Se tiver êxito, este método retornará um `201 Created` código de resposta e um novo [objeto accessPackageResourceRequest](../resources/accesspackageresourcerequest.md) no corpo da resposta.
 
 ## <a name="examples"></a>Exemplos
 
@@ -152,7 +152,7 @@ Content-type: application/json
 
 #### <a name="request"></a>Solicitação
 
-Este é um exemplo de solicitação. Neste exemplo, a `@odata.bind` anotação é usada para atribuir o `id` do a um `accessPackageResourceEnvironment` `accessPackageResourceEnvironment` objeto.
+Este é um exemplo de solicitação. Neste exemplo, a `@odata.bind` anotação é usada para atribuir o `id` do a `accessPackageResourceEnvironment` um `accessPackageResourceEnvironment` objeto.
 
 
 
@@ -479,6 +479,82 @@ Content-type: application/json
 }
 ```
 
+### <a name="example-6-create-an-accesspackageresourcerequest-for-adding-an-application"></a>Exemplo 6: Criar um accessPackageResourceRequest para adicionar um aplicativo
+
+#### <a name="request"></a>Solicitação
+
+A seguir, um exemplo da solicitação para adicionar um aplicativo a um catálogo, incluindo a especificação de um atributo necessário desse aplicativo.
+
+<!-- {
+  "blockType": "request",
+  "name": "create_accesspackageresourcerequest_from_accesspackageresourcerequests6"
+}-->
+```http
+POST https://graph.microsoft.com/beta/identityGovernance/entitlementManagement/accessPackageResourceRequests
+Content-type: application/json
+
+{
+  "catalogId": "26ac0c0a-08bc-4a7b-a313-839f58044ba5",
+  "requestType": "AdminAdd",
+  "justification": "",
+  "accessPackageResource": {
+      "displayName": "Faculty cafeteria ordering",
+      "description": "Example application",
+      "url": "https://myapps.microsoft.com/example.com/signin/Faculty%20cafeteria%20ordering/f1e3b407-942d-4934-9a3f-cef1975cb988/",
+      "resourceType": "Application",
+      "originId": "2f1099a6-d4fc-4cc9-a0ef-ddd3f1bf0b7e",
+      "originSystem": "AadApplication",
+      "attributes": [
+        {
+          "attributeName": "extension_2b676109c7c74ae2b41549205f1947ed_personalTitle",
+          "isEditable": true,
+          "isPersistedOnAssignmentRemoval": true,
+          "attributeSource": {
+              "@odata.type": "#microsoft.graph.accessPackageResourceAttributeQuestion",
+              "question": {
+                  "@odata.type": "#microsoft.graph.accessPackageTextInputQuestion",
+                  "isRequired": false,
+                  "sequence": 0,
+                  "isSingleLineQuestion": true,
+                  "text": {
+                      "defaultText": "Title",
+                      "localizedTexts": []
+                  }
+              }
+          },
+          "attributeDestination": {
+              "@odata.type": "#microsoft.graph.accessPackageUserDirectoryAttributeStore"
+          }
+        }
+      ]
+  }
+}
+
+```
+
+#### <a name="response"></a>Resposta
+
+Este é um exemplo de resposta.
+
+> **Observação:** o objeto de resposta mostrado aqui pode ser encurtado para legibilidade.
+
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.accessPackageResourceRequest"
+} -->
+
+```http
+HTTP/1.1 201 Created
+Content-type: application/json
+
+{
+  "id": "f0e632ed-afd2-41d3-8d6e-ccefda457e5e",
+  "requestType": "AdminAdd",
+  "requestState": "Delivered",
+  "requestStatus": "Fulfilled"
+}
+```
 <!-- uuid: 16cd6b66-4b1a-43a1-adaf-3a886856ed98
 2019-02-04 14:57:30 UTC -->
 <!-- {

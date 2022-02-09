@@ -6,12 +6,12 @@ title: Obter uma página em um site
 ms.localizationpriority: medium
 ms.prod: sharepoint
 doc_type: apiPageType
-ms.openlocfilehash: 44ca1a9c5a601f8a2afca85a100c1511643d7f03
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: 28eee4100f8ef9fec393ce9fbb3dd37362b58120
+ms.sourcegitcommit: 2d61a35735aeb060cc9f7374dd6b50900566293b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62108206"
+ms.lasthandoff: 02/09/2022
+ms.locfileid: "62468255"
 ---
 # <a name="get-a-page-in-the-site-pages-list-of-a-site"></a>Obter uma página na lista de páginas de site de um site
 
@@ -43,7 +43,7 @@ GET /sites/{site-id}/pages/{page-id}
 
 ## <a name="example"></a>Exemplo
 
-##### <a name="request"></a>Solicitação
+### <a name="request"></a>Solicitação
 
 
 # <a name="http"></a>[HTTP](#tab/http)
@@ -79,7 +79,7 @@ GET /sites/{site-id}/pages/{page-id}
 ---
 
 
-##### <a name="response"></a>Resposta
+### <a name="response"></a>Resposta
 
 <!-- { "blockType": "response", "@odata.type": "microsoft.graph.sitePage", "truncated": true } -->
 

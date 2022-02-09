@@ -5,12 +5,12 @@ author: markwahl-msft
 ms.localizationpriority: medium
 ms.prod: governance
 doc_type: resourcePageType
-ms.openlocfilehash: a5731575e5368e50699b57da419b357d145f786f
-ms.sourcegitcommit: 71186ad44d8d0df15e10b0f89df68d2ef0cf9d14
+ms.openlocfilehash: 5ced0c1e769000f3624681d92dade18cf8dddcc9
+ms.sourcegitcommit: 2d61a35735aeb060cc9f7374dd6b50900566293b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/12/2022
-ms.locfileid: "61865405"
+ms.lasthandoff: 02/09/2022
+ms.locfileid: "62468276"
 ---
 # <a name="accesspackageresourceattributequestion-resource-type"></a>Tipo de recurso accessPackageResourceAttributeQuestion
 
@@ -18,9 +18,11 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Recurso que define a pergunta fornecida a um usuário final, com o objetivo de obter um valor de atributo a ser passado para o sistema final ou para o aprovador de solicitação.
+Recurso que define a [pergunta](accesspackagequestion.md) fornecida a um usuário final, com o objetivo de obter um valor de atributo a ser passado para o sistema final ou para o aprovador de solicitação.
 
-Herda de [accessPackageResourceAttributeSource](../resources/accesspackageresourceattributesource.md).
+Esse tipo herda de [accessPackageResourceAttributeSource](../resources/accesspackageresourceattributesource.md) e é usado na **propriedade attributeSource** de [um accessPackageResourceAttribute](accesspackageresourceattribute.md).
+
+A única propriedade é **question**, que pode ser [um tipo de objeto accessPackageTextInputQuestion](accesspackagetextinputquestion.md) ou [accessPackageMultipleChoiceQuestion](accesspackagemultiplechoicequestion.md) .
 
 ## <a name="properties"></a>Propriedades
 |Propriedade|Tipo|Descrição|
