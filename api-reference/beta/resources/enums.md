@@ -5,8 +5,13 @@ doc_type: enumPageType
 ms.localizationpriority: medium
 ms.prod: non-product-specific
 author: MSGraphDocsvTeam
+ms.openlocfilehash: f28d28301e4eb9268d1d4961574c3d318e38e7e2
+ms.sourcegitcommit: 4e16f26b6b685a6a3dae855a04979c84105609b9
+ms.translationtype: MT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 02/10/2022
+ms.locfileid: "62519506"
 ---
-
 # <a name="enum-values"></a>Valores denum
 
 Namespace: microsoft.graph
@@ -724,6 +729,8 @@ Namespace: microsoft.graph
 |hidden|
 |adminConfirmedUserCompromised|
 |unknownFutureValue|
+|adminConfirmedServicePrincipalCompromised|
+|adminDismissedAllRiskForServicePrincipal|
 
 
 <!-- maintenance comment: Do not delete enum delcaration for riskEventType until all properties of this type are marked as deleted. Dec 28, 2021: Pending eventTypes (in riskUserActivity) and riskType (in riskDetection)-->
@@ -1972,6 +1979,7 @@ Valores possíveis para tipos de conta de usuário (associação ao grupo), por 
 |signin|
 |usuário|
 |unknownFutureValue|
+|servicePrincipal|
 
 ### <a name="chatmessagepolicyviolationuseractiontype-values"></a>valores chatMessagePolicyViolationUserActionType
 
@@ -2184,7 +2192,7 @@ Valores possíveis para tipos de conta de usuário (associação ao grupo), por 
 
 | Membro | Valor | Descrição             |
 |:-------|:------|:------------------------|
-| email   | 1     | Ameaça de email.            |
+| Email   | 1     | Ameaça de email.            |
 | url    | 2     | Ameaça de URL.             |
 | file   | 3     | Ameaça de arquivo de anexo. |
 

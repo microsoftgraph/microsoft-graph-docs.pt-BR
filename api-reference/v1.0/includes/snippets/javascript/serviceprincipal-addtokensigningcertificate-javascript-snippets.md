@@ -1,11 +1,11 @@
 ---
 description: Arquivo gerado automaticamente. NÃO MODIFICAR
-ms.openlocfilehash: 04c43b75295094bcd09f33ed844b20273f4fa0cb
-ms.sourcegitcommit: 65f4e128f96783c18d607a6dcffbc914291285d4
+ms.openlocfilehash: 3debb4b875a06bcaf58567b2f5c4d869aab42e24
+ms.sourcegitcommit: 4e16f26b6b685a6a3dae855a04979c84105609b9
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/08/2021
-ms.locfileid: "61335458"
+ms.lasthandoff: 02/10/2022
+ms.locfileid: "62519214"
 ---
 ```javascript
 
@@ -15,12 +15,12 @@ const options = {
 
 const client = Client.init(options);
 
-const addTokenSigningCertificate = {
+const selfSignedCertificate = {
     displayName: 'CN=customDisplayName',
     endDateTime: '2024-01-25T00:00:00Z'
 };
 
 await client.api('/servicePrincipals/004375c5-6e2e-4dec-95e3-626838cb9f80/addTokenSigningCertificate')
-    .post(addTokenSigningCertificate);
+    .post(selfSignedCertificate);
 
 ```

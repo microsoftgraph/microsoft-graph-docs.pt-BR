@@ -5,8 +5,13 @@ author: charlenezheng
 ms.localizationpriority: medium
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
+ms.openlocfilehash: aa70e6e77e65ed4cdb126a21c003335f3a306ef3
+ms.sourcegitcommit: 4e16f26b6b685a6a3dae855a04979c84105609b9
+ms.translationtype: MT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 02/10/2022
+ms.locfileid: "62519373"
 ---
-
 # <a name="update-x509certificateauthenticationmethodconfiguration"></a>Atualizar x509CertificateAuthenticationMethodConfiguration
 Namespace: microsoft.graph
 
@@ -14,7 +19,7 @@ Namespace: microsoft.graph
 
 Atualize as propriedades do método de autenticação [de certificado X.509](../resources/x509certificateauthenticationmethodconfiguration.md).
 
-## <a name="permissions"></a>Permissões
+## <a name="permissions"></a>Permissions
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão|Permissões (da com menos para a com mais privilégios)|
@@ -64,6 +69,8 @@ Se tiver êxito, este método `204 No Content` retornará um código de resposta
 ## <a name="examples"></a>Exemplos
 
 ### <a name="request"></a>Solicitação
+
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "update_x509certificateauthenticationmethodconfiguration"
@@ -99,6 +106,20 @@ Content-Type: application/json
     }]
 }
 ```
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/update-x509certificateauthenticationmethodconfiguration-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/update-x509certificateauthenticationmethodconfiguration-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/update-x509certificateauthenticationmethodconfiguration-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 ### <a name="response"></a>Resposta
 

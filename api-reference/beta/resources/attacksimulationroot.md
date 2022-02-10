@@ -5,12 +5,12 @@ author: Gopal-MSFT
 ms.localizationpriority: medium
 ms.prod: security
 doc_type: resourcePageType
-ms.openlocfilehash: 56c0f8f8ce514e21b39e24494132ee6fec123d31
-ms.sourcegitcommit: 84d9a50dfa9526a207696c69d92381c8763d986a
+ms.openlocfilehash: e38107d7c6d95706508ea5260fa9e88c87774672
+ms.sourcegitcommit: 4e16f26b6b685a6a3dae855a04979c84105609b9
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/28/2021
-ms.locfileid: "59979493"
+ms.lasthandoff: 02/10/2022
+ms.locfileid: "62519737"
 ---
 # <a name="attacksimulationroot-resource-type"></a>Tipo de recurso attackSimulationRoot
 
@@ -21,14 +21,13 @@ Namespace: microsoft.graph
 Fornece aos locatários a capacidade de iniciar ataques de phishing realistas e aprender com ele.
 Esse é um tipo abstrato.
 
-## <a name="methods"></a>Métodos
+## <a name="methods"></a>Methods
 |Método|Tipo de retorno|Descrição|
 |:---|:---|:---|
 |[Listar simulações](../api/attacksimulationroot-list-simulations.md)|[coleção simulation](../resources/simulation.md)|Obter os recursos de simulação da propriedade de navegação de simulações.|
 
 ## <a name="properties"></a>Propriedades
-|Propriedade|Tipo|Descrição|
-|:---|:---|:---|
+Nenhum.
 
 ## <a name="relationships"></a>Relações
 |Relação|Tipo|Descrição|

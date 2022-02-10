@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: davidspooner
 ms.prod: identity-and-sign-in
 doc_type: resourcePageType
-ms.openlocfilehash: 3afaf15ced8c5dac79e21aaf92f2b509aae49eb6
-ms.sourcegitcommit: de9df4bf6313b49afba74b6e9ef819907669c662
+ms.openlocfilehash: 3dbd7a5a1a436709deed0bf342718ea81a282798
+ms.sourcegitcommit: 4e16f26b6b685a6a3dae855a04979c84105609b9
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/27/2022
-ms.locfileid: "62239159"
+ms.lasthandoff: 02/10/2022
+ms.locfileid: "62519443"
 ---
 # <a name="conditionalaccessconditionset-resource-type"></a>Tipo de recurso conditionalAccessConditionSet
 
@@ -32,12 +32,13 @@ Representa o tipo de condições que regem quando a política se aplica.
 |dispositivos|[conditionalAccessDevices](conditionalaccessdevices.md)| Dispositivos na política. |
 |locations|[conditionalAccessLocations](conditionalaccesslocations.md)| Locais incluídos e excluídos da política. |
 |plataformas|[conditionalAccessPlatforms](conditionalaccessplatforms.md)| Plataformas incluídas e excluídas da política. |
+|servicePrincipalRiskLevels|Coleção riskLevel| Níveis de risco da entidade de serviço incluídos na política. Os valores possíveis são: `low`, `medium`, `high`, `none`, `unknownFutureValue`.|
 |signInRiskLevels|Coleção riskLevel| Níveis de risco de login incluídos na política. Os possíveis valores são: `low`, `medium`, `high`, `hidden`, `none`, `unknownFutureValue`. Obrigatório.|
 |userRiskLevels|Coleção riskLevel| Níveis de risco de usuário incluídos na política. Os possíveis valores são: `low`, `medium`, `high`, `hidden`, `none`, `unknownFutureValue`. Obrigatório.|
 
 >**Observação:**
->* **clientAppType** `modern` será preterido e substituído por `mobileAppsAndDesktopClients` . <br>
->* **clientAppType** `easUnsupported` será preterido em favor do que inclui plataformas com suporte e sem suporte do `exchangeActiveSync` EAS. <br>
+>* **clientAppType** `modern` será preterido e substituído por `mobileAppsAndDesktopClients`. <br>
+>* **clientAppType** `easUnsupported` será preterido `exchangeActiveSync` em favor do que inclui plataformas com suporte e sem suporte do EAS. <br>
 >* Estamos preterindo a condição **deviceStates** e ela pode ser removida no futuro. Em frente, use a **condição de** dispositivos.
 
 ## <a name="relationships"></a>Relações
@@ -64,6 +65,7 @@ Veja a seguir uma representação JSON do recurso.
 
 ```json
 {
+  "@odata.type": "#microsoft.graph.conditionalAccessConditionSet",
   "applications": {"@odata.type": "microsoft.graph.conditionalAccessApplications"},
   "users": {"@odata.type": "microsoft.graph.conditionalAccessUsers"},
   "clientApplications": {"@odata.type": "microsoft.graph.conditionalAccessClientApplications"},
@@ -72,6 +74,7 @@ Veja a seguir uma representação JSON do recurso.
   "devices": {"@odata.type": "microsoft.graph.conditionalAccessDevices"},
   "locations": {"@odata.type": "microsoft.graph.conditionalAccessLocations"},
   "platforms": {"@odata.type": "microsoft.graph.conditionalAccessPlatforms"},
+  "servicePrincipalRiskLevels": ["String"],
   "signInRiskLevels": ["String"]
 }
 ```
