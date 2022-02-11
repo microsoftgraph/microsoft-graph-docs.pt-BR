@@ -4,12 +4,12 @@ description: O Microsoft Graph expõe as permissões granulares que controlam o 
 author: jackson-woods
 ms.localizationpriority: high
 ms.custom: graphiamtop20, scenarios:getting-started
-ms.openlocfilehash: 7d34d827bd45a44114ad36a1c2a122d92f7b7083
-ms.sourcegitcommit: 59918804365570a1a6b7f45c29e546e777c74c85
+ms.openlocfilehash: 0cf655c04e074e7b8c9fb3c1f65c843fee7e2589
+ms.sourcegitcommit: 4e16f26b6b685a6a3dae855a04979c84105609b9
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/07/2022
-ms.locfileid: "62436065"
+ms.lasthandoff: 02/10/2022
+ms.locfileid: "62519205"
 ---
 # <a name="microsoft-graph-permissions-reference"></a>Referência de permissões do Microsoft Graph
 
@@ -1043,7 +1043,7 @@ Para cenários mais complexos que envolvem várias permissões, confira [Cenári
 
 ---
 
-## <a name="identity-risk-permissions"></a>Permissões de risco de identidade
+## <a name="identity-protection-risk-permissions"></a>Permissões de risco de proteção de identidade
 
 #### <a name="delegated-permissions"></a>Permissões delegadas
 
@@ -1052,7 +1052,8 @@ Para cenários mais complexos que envolvem várias permissões, confira [Cenári
 | _IdentityRiskEvent.Read.All_ |   Leia as informações de evento de risco de identidade  | Permite que o aplicativo para leia as informações de evento de risco de identidade para todos os usuários em sua organização em nome do usuário conectado. | Sim | Não |
 | _IdentityRiskyUser.Read.All_ |   Leia as informações de risco de identidade do usuário.  | Permite que o aplicativo para leia as informações de risco de identidade do usuário para todos os usuários em sua organização em nome do usuário conectado. | Sim | Não |
 | _IdentityRiskyUser.ReadWrite.All_ |   Ler e atualizar as informações de risco de identidade do usuário.  | Permite que o aplicativo leia as informações de risco de identidade do usuário para todos os usuários em sua organização em nome do usuário conectado. | Sim | Não |
-
+| _IdentityRiskyServicePrincipal.Read.All_ |   Leia todas as informações da entidade de serviço de risco  | Permite que o aplicativo leia todas as informações da entidade de serviço de risco para a sua organização, em nome do usuário conectado. | Sim | Não |
+| _IdentityRiskyServicePrincipal.ReadWrite.All_ |   Ler e gravar todas as informações da entidade de serviço de risco  | Permite que o aplicativo leia e atualize as informações da entidade de serviço de risco para todas as entidades de serviço em sua organização, em nome do usuário conectado. As operações de atualização incluem ignorar entidades de serviço arriscadas.| Sim | Não |
 
 #### <a name="application-permissions"></a>Permissões de aplicativos
 
@@ -1061,7 +1062,8 @@ Para cenários mais complexos que envolvem várias permissões, confira [Cenári
 | _IdentityRiskEvent.Read.All_ |   Leia as informações de evento de risco de identidade | Permite que o aplicativo leia as informações do evento de risco de identidade para todos os usuários em sua organização sem um usuário conectado. | Sim |
 | _IdentityRiskyUser.Read.All_ |   Leia as informações de risco de identidade do usuário. | Permite que o aplicativo leia as informações de risco de identidade do usuário para todos os usuários em sua organização sem um usuário conectado. | Sim |
 | _IdentityRiskyUser.ReadWrite.All_ |   Ler e atualizar as informações de risco de identidade do usuário. | Permite que o aplicativo leia as informações de risco de identidade do usuário para todos os usuários em sua organização sem um usuário conectado. | Sim |
-
+| _IdentityRiskyServicePrincipal.Read.All_ |   Leia todas as informações da entidade de serviço de risco  | Permite que o aplicativo leia todas as informações de entidade de serviço arriscadas para sua organização, sem um usuário conectado. | Sim |
+| _IdentityRiskyServicePrincipal.ReadWrite.All_ |   Ler e gravar todas as informações da entidade de serviço de risco  | Permite que o aplicativo leia e atualize as informações de usuário de risco da sua organização sem um usuário conectado.| Sim |
 
 Todas as permissões de risco de identidade são válidas somente para contas corporativas ou de estudante. Para um aplicativo com permissões delegadas para ler informações de risco de identidade, o usuário conectado deve ser membro de uma das seguintes [funções de administrador do Azure Active Directory](/azure/active-directory/roles/permissions-reference): Administrador Global, Administrador de Segurança ou Leitor de Segurança.
 
@@ -1079,6 +1081,12 @@ Os seguintes usos são válidos para permissões delegadas e permissões de apli
 * Ler todos os usuários de risco e propriedades no locatário (`GET /identityProtection/riskyUsers`)
 * Ler todos os usuários de risco cujo nível de risco agregação é Médio (`GET /identityProtection/riskyUsers?$filter=riskLevel eq 'medium'`)
 * Leia as informações de riscos de um usuário específico (`GET /identityProtection/riskyUsers?$filter=id eq 'userId'`)
+
+#### <a name="read-risky-service-principals"></a>Ler entidades de serviço de risco
+
+* Ler todas as entidades de serviço de risco e propriedades no locatário (`GET /identityProtection/riskyServicePrincipals`)
+* Ler todas as entidades de serviço de risco cujo nível de risco agregado é Médio (`GET /identityProtection/riskyServicePrincipals?$filter=riskLevel eq 'medium'`)
+* Leia as informações de risco para uma entidade de serviço específica (`GET /identityProtection/riskyServicePrincipals?$filter=id eq '{riskyServicePrincipalsId}'`)
 
 Para cenários mais complexos que envolvem várias permissões, confira [Cenários de permissões](#permission-scenarios).
 
