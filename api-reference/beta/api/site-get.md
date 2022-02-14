@@ -1,17 +1,16 @@
 ---
 author: JeremyKelley
 description: Recupere as propriedades e as relações de um recurso do site.
-ms.date: 09/10/2017
 title: Obter um Site do SharePoint
 ms.localizationpriority: medium
 ms.prod: sharepoint
 doc_type: apiPageType
-ms.openlocfilehash: 5e95805ca4ac127475f26fd10949a1883361836e
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: 2787a12f1364ff90ca1b005327572af958534157
+ms.sourcegitcommit: dbacb04ae7138ac3b109683e63a6ff27c166f421
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62098839"
+ms.lasthandoff: 02/14/2022
+ms.locfileid: "62804525"
 ---
 # <a name="get-a-site-resource"></a>Obter um recurso de site
 

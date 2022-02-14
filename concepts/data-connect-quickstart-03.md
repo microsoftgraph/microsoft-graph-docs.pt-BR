@@ -1,11 +1,11 @@
 ---
 ms.localizationpriority: medium
 ms.openlocfilehash: a31594b0add328d1515eeb4965334be724b02a05
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.sourcegitcommit: dbacb04ae7138ac3b109683e63a6ff27c166f421
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59289500"
+ms.lasthandoff: 02/14/2022
+ms.locfileid: "62805191"
 ---
 <!-- markdownlint-disable MD002 MD041 -->
 
@@ -15,15 +15,15 @@ Neste exercício, você criará, executará e aprovará um pipeline da Fábrica 
 
 A primeira etapa é criar um aplicativo do Azure AD que será usado como entidade de segurança para executar o processo de extração de dados.
 
-1. Abra um navegador e vá para o [Portal do Azure.](https://portal.azure.com/)
+1. Abra um navegador e vá para o [Portal do Azure](https://portal.azure.com/).
 
-1. Entre usando uma conta com direitos **de administrador global** para seu Azure e Microsoft 365 locatários.
+1. Entre usando uma conta com direitos **de administrador global** para seus locatários do Azure e Microsoft 365.
 
 1. Na navegação da barra lateral, selecione **Azure Active Directory** (Azure AD).
 
-1. Na página Visão geral do Azure AD, selecione **Registros de** aplicativo na seção **Gerenciar** do menu.
+1. Na página Visão geral do Azure AD, selecione **Registros de aplicativo na** seção **Gerenciar** do menu.
 
-1. Selecione o **botão Novo registro.**
+1. Selecione o **botão Novo registro** .
 
     ![Uma captura de tela mostrando os registros do aplicativo no serviço Azure Active Directory no portal do Azure.](images/data-connect-azure-aad-app-reg.png)
 
@@ -39,16 +39,16 @@ A primeira etapa é criar um aplicativo do Azure AD que será usado como entidad
 
 1. Localize **a ID de Diretório (locatário)** e copie-a como você precisará mais adiante neste tutorial. Isso será chamado de ID do locatário.
 
-1. Na navegação na barra lateral, selecione **Certificados e segredos em** **Gerenciar**.
+1. Na navegação na barra lateral, selecione **Certificados e segredos** em **Gerenciar**.
 
-1. Selecione o **botão Novo segredo do cliente.** Definir *Descrição* como qualquer nome, definir **Expira como** qualquer valor no menu suspenso e escolha **Adicionar**.
+1. Selecione o **botão Novo segredo do cliente**. Definir *Descrição* como qualquer nome, definir **Expira como** qualquer valor no menu suspenso e escolha **Adicionar**.
 
     ![Uma captura de tela mostrando o processo para criar um novo segredo do cliente no portal do Azure.](images/data-connect-aad-certs-secrets.png)
 
     - Depois que o segredo do cliente for criado, salve o **Valor** em algum lugar seguro, pois ele não estará mais disponível posteriormente e você precisará criar um novo.
     - Isso será referenciado como a chave principal do serviço.
 
-1. Na navegação da barra lateral do aplicativo, selecione **Proprietários**.
+1. Na navegação na barra lateral do aplicativo, selecione **Proprietários**.
 
 1. Verifique se sua conta está listada como proprietária do aplicativo. Se ele não estiver listado como proprietário, adicione-o.
 

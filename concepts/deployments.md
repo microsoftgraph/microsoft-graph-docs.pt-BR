@@ -1,10 +1,15 @@
 ---
 title: Implantações de nuvens nacionais
-description: 'Além de uma rede global de datacenters, os serviços em nuvem da Microsoft estão disponíveis em três nuvens nacionais separadas.'
+description: Além de uma rede global de datacenters, os serviços em nuvem da Microsoft estão disponíveis em três nuvens nacionais separadas.
 author: arpitha-dhanapathi
 ms.localizationpriority: medium
+ms.openlocfilehash: 5ced4d1032c1b45d62474d0cfe21f7e421e90216
+ms.sourcegitcommit: dbacb04ae7138ac3b109683e63a6ff27c166f421
+ms.translationtype: MT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 02/14/2022
+ms.locfileid: "62804434"
 ---
-
 # <a name="national-cloud-deployments"></a>Implantações de nuvem nacional
 
 Além de uma rede global de datacenters, os serviços em nuvem da Microsoft estão disponíveis em três nuvens nacionais separadas. Essas versões de nuvem nacionais são instâncias físicas e lógicas isoladas de rede dos serviços de nuvem empresariais da Microsoft que estão confinadas dentro das bordas geográficas de países específicos e operadas por funcionários locais.
@@ -79,7 +84,7 @@ Os seguintes recursos do Microsoft Graph estão `/v1.0` geralmente disponíveis 
 | Contatos pessoais | ✔ | ✔ | ✔ |
 | Planner | ✔ | ✔ | ✔ |
 | Relatórios | ➖ | ➖ | ➖ |
-| Pesquisa (Pesquisa da Microsoft) | ➖ | ➖ | ➖ |
+| Pesquisa (Pesquisa da Microsoft) | ✔ | ➖ | ➖ |
 | Segurança | ✔ | ✔ | ✔ |
 | Comunicações e integridade do serviço | ✔ | ✔ | ✔ |
 | Entidades de serviço | ✔ | ➖ | ➖ |

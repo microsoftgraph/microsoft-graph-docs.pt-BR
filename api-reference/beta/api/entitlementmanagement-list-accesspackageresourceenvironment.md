@@ -5,12 +5,12 @@ author: hanki-microsoft
 ms.localizationpriority: medium
 ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: b4918acbcb4c373bb4725599de9bf20235a7ec40
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: 1b8a56a9f5e9c01836b61a4974a44c66f8429ac8
+ms.sourcegitcommit: dbacb04ae7138ac3b109683e63a6ff27c166f421
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62099755"
+ms.lasthandoff: 02/14/2022
+ms.locfileid: "62805050"
 ---
 # <a name="list-accesspackageresourceenvironments"></a>Listar accessPackageResourceEnvironments
 Namespace: microsoft.graph
@@ -26,7 +26,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |:---|:---|
 |Delegado (conta corporativa ou de estudante)|EntitlementManagement.Read.All, EntitlementManagement.ReadWrite.All|
 |Delegado (conta pessoal da Microsoft)|Sem suporte|
-|Aplicativo|Sem suporte|
+|Aplicativo|EntitlementManagement.Read.All, EntitlementManagement.ReadWrite.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
 
@@ -40,7 +40,7 @@ GET identityGovernance/entitlementManagement/accessPackageResourceEnvironments?$
 
 ## <a name="query-parameters"></a>Parâmetros de consulta
 
-Este método requer o parâmetro `$filter` [de consulta OData](/graph/query-parameters). Você deve aplicar `$filter` para recuperar a **origemSystem** atribuída ao valor `SharePointOnline` .
+Este método requer o parâmetro `$filter` [de consulta OData](/graph/query-parameters). Você deve aplicar para `$filter` recuperar a **origemSystem** atribuída ao valor `SharePointOnline`.
 
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
 |Nome|Descrição|
@@ -52,7 +52,7 @@ Não forneça um corpo de solicitação para esse método.
 
 ## <a name="response"></a>Resposta
 
-Se tiver êxito, este método retornará um código de resposta e uma coleção de `200 OK` [objetos accessPackageResourceEnvironment](../resources/accesspackageresourceenvironment.md) no corpo da resposta.
+Se tiver êxito, este método retornará um `200 OK` código de resposta e uma coleção de [objetos accessPackageResourceEnvironment](../resources/accesspackageresourceenvironment.md) no corpo da resposta.
 
 ## <a name="examples"></a>Exemplos
 

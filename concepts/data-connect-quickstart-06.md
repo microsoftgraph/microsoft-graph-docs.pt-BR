@@ -1,11 +1,11 @@
 ---
 ms.localizationpriority: medium
 ms.openlocfilehash: e436d95637255e52b5028c8b3b80f5f7aab6e1e5
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.sourcegitcommit: dbacb04ae7138ac3b109683e63a6ff27c166f421
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59289504"
+ms.lasthandoff: 02/14/2022
+ms.locfileid: "62805218"
 ---
 <!-- markdownlint-disable MD002 MD041 -->
 
@@ -17,11 +17,11 @@ Um Microsoft 365 administrador tem a capacidade de aprovar ou negar solicitaçõ
 
 1. Abra um navegador e vá para seu [Administração Microsoft 365 Portal](https://admin.microsoft.com).
 
-1. Para aprovar ou negar solicitações de consentimento, acesse [Acesso Privilegiado.](https://portal.office.com/adminportal/home#/Settings/PrivilegedAccess)
+1. Para aprovar ou negar solicitações de consentimento, acesse [Acesso Privilegiado](https://portal.office.com/adminportal/home#/Settings/PrivilegedAccess).
 
-1. Selecione uma Solicitação pendente **de Acesso a Dados**.
+1. Selecione uma Solicitação de **Acesso a Dados pendente**.
 
-1. Na chamada **Solicitação de Acesso** a Dados, selecione o **botão Aprovar.**
+1. Na chamada **Solicitação de Acesso** a Dados, selecione o **botão Aprovar** .
 
     ![Uma captura de tela mostrando uma solicitação de acesso a dados aguardando aprovação de consentimento no Centro de administração do Microsoft 365.](images/data-connect-m365-approve.png)
 
@@ -36,7 +36,7 @@ Um Microsoft 365 administrador tem a capacidade de aprovar ou negar solicitaçõ
 
 1. Conexão para Exchange Online.
 
-    1. Obtenha uma credencial de logom executando o PowerShell a seguir. Entre usando um usuário diferente do que aquele que criou e iniciou o pipeline da Fábrica de Dados do Azure, que tem a função de administrador **global** aplicada, que é membro do grupo que tem direitos para aprovar solicitações para dados no Microsoft 365 e tem a autenticação multifafação habilitada.
+    1. Obtenha uma credencial de logom executando o PowerShell a seguir. Entre usando um usuário diferente do que aquele que criou e iniciou o pipeline da Fábrica de Dados do Azure, que tem a função de administrador **global** aplicada, que é membro do grupo que tem direitos para aprovar solicitações a dados no Microsoft 365 e tem a autenticação multifa factor habilitada.
 
         ```powershell
         $UserCredential = Get-Credential
@@ -50,7 +50,7 @@ Um Microsoft 365 administrador tem a capacidade de aprovar ou negar solicitaçõ
         ```
 
         > [!IMPORTANT]
-        > Depois de terminar essa sessão, certifique-se de desconectar da sessão usando o comando do PowerShell `Remove-PSSession $Session` . Exchange Online permite apenas três sessões do PowerShell remotas abertas para proteger contra ataques de negação de serviço (DoS). Se você simplesmente fechar a janela do PowerShell, ela deixará a conexão aberta.
+        > Depois de terminar essa sessão, certifique-se de desconectar da sessão usando o comando do PowerShell `Remove-PSSession $Session`. Exchange Online permite apenas três sessões do PowerShell remotas abertas para proteger contra ataques de negação de serviço (DoS). Se você simplesmente fechar a janela do PowerShell, ela deixará a conexão aberta.
 
 1. Obter uma lista de todas as solicitações de dados pendentes Conexão de dados do Microsoft Graph executando o PowerShell a seguir.
 
@@ -81,15 +81,15 @@ Um Microsoft 365 administrador tem a capacidade de aprovar ou negar solicitaçõ
 
 ## <a name="verify-extracted-data-from-microsoft-365-to-azure-storage-blob"></a>Verificar dados extraídos do Microsoft 365 para o Azure Armazenamento Blob
 
-1. Abra um navegador e vá para o [Portal do Azure.](https://portal.azure.com/)
+1. Abra um navegador e vá para o [Portal do Azure](https://portal.azure.com/).
 
-1. Entre usando uma conta com direitos **de administrador global** para seu Azure e Microsoft 365 locatários.
+1. Entre usando uma conta com direitos **de administrador global** para seus locatários do Azure e Microsoft 365.
 
-1. Na navegação da barra lateral, selecione o item de menu **Todos os recursos.**
+1. Na navegação da barra lateral, selecione o item de menu **Todos os recursos** .
 
-1. Na lista de recursos, selecione a conta de Armazenamento **do Azure** que você criou anteriormente neste tutorial.
+1. Na lista de recursos, selecione a **conta de Armazenamento do Azure** que você criou anteriormente neste tutorial.
 
-1. No menu de navegação da barra lateral, selecione **Blobs** na folha de Armazenamento **conta do Azure.**
+1. No menu de navegação da barra lateral, selecione **Blobs** na folha **de Armazenamento conta do Azure**.
 
 1. Selecione o **contêiner** criado anteriormente neste tutorial que você configurou o pipeline da Fábrica de Dados do Azure como o pia para os dados extraídos. Você deve ver dados neste contêiner agora.
 

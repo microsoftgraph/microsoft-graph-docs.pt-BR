@@ -1,18 +1,18 @@
 ---
-title: Listar instâncias
+title: Instâncias de lista (de accessReviewHistoryDefinition)
 description: Recupere as instâncias de uma definição de histórico de revisão de acesso.
 author: isabelleatmsft
 ms.localizationpriority: medium
 ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: 5d4d22c28cf4c25014c93d70abfaeeaf506a3e8b
-ms.sourcegitcommit: 25acfa7d0153336c9a35d30a1dd422aeadc1342c
+ms.openlocfilehash: 5283ae971621745251891afac1b4fbc6ba0de736
+ms.sourcegitcommit: dbacb04ae7138ac3b109683e63a6ff27c166f421
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/03/2022
-ms.locfileid: "62340535"
+ms.lasthandoff: 02/14/2022
+ms.locfileid: "62803944"
 ---
-# <a name="list-instances"></a>Instâncias de lista
+# <a name="list-instances-of-an-accessreviewhistorydefinition"></a>Instâncias de lista (de accessReviewHistoryDefinition)
 
 Namespace: microsoft.graph
 

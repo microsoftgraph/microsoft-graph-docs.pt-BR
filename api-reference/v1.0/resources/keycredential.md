@@ -1,34 +1,34 @@
 ---
 title: Tipo de recurso keyCredential
-description: Contém uma credencial de chave associada a um aplicativo ou uma entidade de serviço. A **propriedade keyCredentials** das entidades application and servicePrincipal é uma coleção de **keyCredential**.
+description: Contém uma credencial de chave associada a um aplicativo ou uma entidade de serviço. A **propriedade keyCredentials das entidades** application e servicePrincipal é uma coleção **de keyCredential**.
 ms.localizationpriority: medium
 doc_type: resourcePageType
 ms.prod: applications
 author: madansr7
-ms.openlocfilehash: e08803389b9e24ab8a4214a4696f672e8167b71a
-ms.sourcegitcommit: b16e230f4347f23d8e1bda0681daa93025a39a6d
+ms.openlocfilehash: f5c33fe77f2da4ab4d7085fa72935db86cd0d592
+ms.sourcegitcommit: dbacb04ae7138ac3b109683e63a6ff27c166f421
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/03/2021
-ms.locfileid: "61285109"
+ms.lasthandoff: 02/14/2022
+ms.locfileid: "62804301"
 ---
 # <a name="keycredential-resource-type"></a>Tipo de recurso keyCredential
 
 Namespace: microsoft.graph
 
-Contém uma credencial de chave associada a um aplicativo ou uma entidade de serviço. A **propriedade keyCredentials** das entidades [application](application.md) and [servicePrincipal](serviceprincipal.md) é uma coleção **de keyCredential**.
+Contém uma credencial de chave associada a um aplicativo ou uma entidade de serviço. A **propriedade keyCredentials das entidades** [application](application.md) e [servicePrincipal](serviceprincipal.md) é uma coleção **de keyCredential**.
 
 ## <a name="properties"></a>Propriedades
 | Propriedade     | Tipo   |Descrição|
 |:---------------|:--------|:----------|
 |customKeyIdentifier|Binária| Identificador de chave personalizada |
 | displayName | Cadeia de caracteres | Nome amigável para a chave. Opcional. |
-|endDateTime|DateTimeOffset|A data e a hora em que a credencial expira. O tipo Timestamp representa informações de data e hora usando o formato ISO 8601 e está sempre em horário UTC. Por exemplo, meia-noite UTC em 1 de janeiro de 2014 é `2014-01-01T00:00:00Z`.|
-|chave|Binário| Os dados brutos do certificado na matriz de byte convertidos na cadeia de caracteres Base64; por exemplo, `[System.Convert]::ToBase64String($Cert.GetRawCertData())` . |
+|endDateTime|DateTimeOffset|A data e a hora em que a credencial expira. O tipo DateTimeOffset representa informações de data e hora usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite UTC em 1 de janeiro de 2014 é `2014-01-01T00:00:00Z`.|
+|chave|Binário| Os dados brutos do certificado na matriz de byte convertidos na cadeia de caracteres Base64. Retornado somente para `$select` um único objeto, ou seja`GET servicePrincipals/{servicePrincipalId}?$select=keyCredentials`, `GET applications/{applicationId}?$select=keyCredentials` ou ; caso contrário, sempre será `null`. |
 |keyId|Guid|O identificador exclusivo (GUID) da chave.|
 |startDateTime|DateTimeOffset|A data e a hora em que a credencial se torna válida. O tipo Timestamp representa informações de data e hora usando o formato ISO 8601 e está sempre em horário UTC. Por exemplo, meia-noite UTC em 1 de janeiro de 2014 é `2014-01-01T00:00:00Z`.|
-|type|Cadeia de caracteres|O tipo de credencial de chave; por exemplo, `Symmetric` .|
-|usage|Cadeia de caracteres|Uma cadeia de caracteres que descreve a finalidade para a qual a chave pode ser usada; por exemplo, `Verify` .|
+|type|Cadeia de caracteres|O tipo de credencial de chave; por exemplo, `Symmetric`, `AsymmetricX509Cert`.|
+|usage|Cadeia de caracteres|Uma cadeia de caracteres que descreve a finalidade para a qual a chave pode ser usada; por exemplo, `Verify`.|
 
 ## <a name="json-representation"></a>Representação JSON
 

@@ -5,16 +5,26 @@ doc_type: enumPageType
 ms.localizationpriority: medium
 ms.prod: non-product-specific
 author: MSGraphDocsvTeam
-ms.openlocfilehash: f28d28301e4eb9268d1d4961574c3d318e38e7e2
-ms.sourcegitcommit: 4e16f26b6b685a6a3dae855a04979c84105609b9
+ms.openlocfilehash: f7f0016b8f709001ea1adf8621afdcf435e4a190
+ms.sourcegitcommit: dbacb04ae7138ac3b109683e63a6ff27c166f421
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/10/2022
-ms.locfileid: "62519506"
+ms.lasthandoff: 02/14/2022
+ms.locfileid: "62804574"
 ---
 # <a name="enum-values"></a>Valores denum
 
 Namespace: microsoft.graph
+
+### <a name="accessreviewhistorystatus-values"></a>valores accessReviewHistoryStatus
+
+|Member|
+|:---|
+|done|
+|inprogress|
+|erro|
+|solicitado|
+|unknownFutureValue|
 
 ### <a name="crosstenantaccesspolicytargetconfigurationaccesstype-values"></a>crossTenantAccessPolicyTargetConfigurationAccessType values
 
@@ -242,7 +252,7 @@ Namespace: microsoft.graph
 
 |Member|
 |:---|
-|String|
+|Cadeia de caracteres|
 |Inteiro|
 |Referência|
 |Binária|
@@ -1512,7 +1522,7 @@ Namespace: microsoft.graph
 | Automático
 | noPreview
 | checklist
-| description
+| descrição
 | referência
 
 

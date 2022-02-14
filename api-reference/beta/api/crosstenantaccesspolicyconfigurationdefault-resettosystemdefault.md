@@ -5,8 +5,13 @@ author: jkdouglas
 ms.localizationpriority: medium
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
+ms.openlocfilehash: 22a2b3914d4a526c57146cf395d8255435199f5f
+ms.sourcegitcommit: dbacb04ae7138ac3b109683e63a6ff27c166f421
+ms.translationtype: MT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 02/14/2022
+ms.locfileid: "62804420"
 ---
-
 # <a name="crosstenantaccesspolicyconfigurationdefault-resettosystemdefault"></a>crossTenantAccessPolicyConfigurationDefault: resetToSystemDefault
 
 Namespace: microsoft.graph
@@ -48,7 +53,7 @@ Não forneça um corpo de solicitação para esse método.
 
 ## <a name="response"></a>Resposta
 
-Se tiver êxito, essa ação retornará um `200 OK` código de resposta e uma resposta vazia. Para confirmar se a configuração padrão foi restaurada para os padrões do sistema, execute [Get crossTenantAccessPolicyConfigurationDefault](../api/crosstenantaccesspolicyconfigurationdefault-get.md) e confirme se **isSystemDefault** está definido como `true`.
+Se tiver êxito, esta ação retornará um código de resposta `204 No Content`. Para confirmar se a configuração padrão foi restaurada para os padrões do sistema, execute [Get crossTenantAccessPolicyConfigurationDefault](../api/crosstenantaccesspolicyconfigurationdefault-get.md) e confirme se **isSystemDefault** está definido como `true`.
 
 ## <a name="examples"></a>Exemplos
 
@@ -68,16 +73,10 @@ POST https://graph.microsoft.com/beta/policies/crossTenantAccessPolicy/default/r
 
 <!-- {
   "blockType": "response",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.crossTenantAccessPolicyConfigurationDefault"
+  "truncated": true
 }
 -->
 
 ``` http
-HTTP/1.1 200 OK
-Content-Type: application/json
-
-{
-
-}
+HTTP/1.1 204 No Content
 ```

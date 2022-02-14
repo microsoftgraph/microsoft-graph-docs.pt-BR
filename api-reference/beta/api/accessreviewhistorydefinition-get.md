@@ -5,12 +5,12 @@ author: isabelleatmsft
 ms.localizationpriority: medium
 ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: e88cfc3dd1e11f42feb3ede56594461a5f9d0b59
-ms.sourcegitcommit: 871db8b3f68489d24e2aeafe694725579ee44c47
+ms.openlocfilehash: 28028bfe970f5a63f8d877bfebe55a68cced21ec
+ms.sourcegitcommit: dbacb04ae7138ac3b109683e63a6ff27c166f421
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/26/2022
-ms.locfileid: "62224941"
+ms.lasthandoff: 02/14/2022
+ms.locfileid: "62804175"
 ---
 # <a name="get-accessreviewhistorydefinition"></a>Obter accessReviewHistoryDefinition
 
@@ -18,7 +18,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Recupere um [objeto accessReviewHistoryDefinition](../resources/accessreviewhistorydefinition.md) pelo identificador. Todas as propriedades do objeto de definição de histórico de revisão de acesso são retornadas. Se a definição for 30 dias ou mais antiga, um erro 404 será retornado.
+Recupere um [objeto accessReviewHistoryDefinition](../resources/accessreviewhistorydefinition.md) pelo identificador. Todas as propriedades do objeto de definição de histórico de revisão de acesso são retornadas. Se a definição for 30 dias ou mais antiga, um `404 Not Found` erro será retornado.
 
 ## <a name="permissions"></a>Permissões
 
@@ -28,7 +28,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |:---|:---|
 |Delegado (conta corporativa ou de estudante)|AccessReview.ReadWrite.All|
 |Delegado (conta pessoal da Microsoft)|Sem suporte.|
-|Application|AccessReview.ReadWrite.All|
+|Aplicativo|AccessReview.ReadWrite.All|
 
 O usuário integrado também deve ser o criador da definição de histórico de revisão associada, um membro da função de diretório administrador global ou um membro da função de diretório Leitor Global para recuperar a definição.
 
@@ -44,7 +44,7 @@ GET /identityGovernance/accessReviews/historyDefinitions/{definition-id}
 ```
 ## <a name="optional-query-parameters"></a>Parâmetros de consulta opcionais
 
-Este método dá suporte aos `$select` `$expand` parâmetros de consulta E OData para ajudar a personalizar a resposta. Inclusive `?$expand=instances` incluirá no objeto de resposta as instâncias associadas ao [objeto accessReviewHistoryDefinition.](../resources/accessreviewhistorydefinition.md) Para obter informações gerais, acesse [Parâmetros de consulta OData](/graph/query-parameters).
+Este método dá suporte aos parâmetros `$select` `$expand` de consulta E OData para ajudar a personalizar a resposta. Inclusive `?$expand=instances` incluirá no objeto de resposta as instâncias associadas ao [objeto accessReviewHistoryDefinition](../resources/accessreviewhistorydefinition.md) . Para obter informações gerais, acesse [Parâmetros de consulta OData](/graph/query-parameters).
 
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
 
@@ -58,7 +58,7 @@ Não forneça um corpo de solicitação para esse método.
 
 ## <a name="response"></a>Resposta
 
-Se tiver êxito, este método retornará um código de resposta e um `200 OK` [objeto accessReviewHistoryDefinition](../resources/accessreviewhistorydefinition.md) no corpo da resposta.
+Se tiver êxito, este método retornará um `200 OK` código de resposta e um [objeto accessReviewHistoryDefinition](../resources/accessreviewhistorydefinition.md) no corpo da resposta.
 
 ## <a name="examples"></a>Exemplos
 

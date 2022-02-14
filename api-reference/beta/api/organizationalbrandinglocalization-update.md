@@ -5,12 +5,12 @@ author: AlexanderMars
 ms.localizationpriority: medium
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: 6721b8c03d2bbb52e3fa9bd037e3775ea2939a2f
-ms.sourcegitcommit: 65f4e128f96783c18d607a6dcffbc914291285d4
+ms.openlocfilehash: 515dfc01827dec33ea9c63e8477965c3b62cbb6b
+ms.sourcegitcommit: dbacb04ae7138ac3b109683e63a6ff27c166f421
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/08/2021
-ms.locfileid: "61343723"
+ms.lasthandoff: 02/14/2022
+ms.locfileid: "62804469"
 ---
 # <a name="update-organizationalbrandinglocalization"></a>Atualizar organizationalBrandingLocalization
 Namespace: microsoft.graph
@@ -19,7 +19,7 @@ Namespace: microsoft.graph
 
 Atualize as propriedades de [um objeto organizationalBrandingLocalization](../resources/organizationalbrandinglocalization.md) para uma localização específica.
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 | Tipo de permissão                        | Permissões (da com menos para a com mais privilégios) |
@@ -30,7 +30,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 ## <a name="http-request"></a>Solicitação HTTP
 
-Somente os tipos de dados stream, incluindo **backgroundLogo** e **backgroundImage**, são atualizados usando o método PUT. Para atualizar tipos de dados de cadeia de caracteres, incluindo **signInPageText** e **usernameHintText,** use o método PATCH. Não é possível atualizar tipos de fluxo com outros tipos de dados na mesma solicitação.
+Somente os tipos de dados Stream, incluindo **backgroundLogo** e **backgroundImage**, são atualizados usando o método PUT. Para atualizar tipos de dados de cadeia de caracteres, incluindo **signInPageText** e **usernameHintText**, use o método PATCH. Não é possível atualizar tipos de fluxo com outros tipos de dados na mesma solicitação.
 
 <!-- {
   "blockType": "ignored"
@@ -48,18 +48,27 @@ PUT /organization/{organizationId}/branding/localizations/{organizationalBrandin
 |Content-Type|application/json. Obrigatório.|
 
 ## <a name="request-body"></a>Corpo da solicitação
-No corpo da solicitação, forneça *apenas* os valores das propriedades que devem ser atualizadas. As propriedades existentes que não estão incluídas no corpo da solicitação manterão seus valores anteriores ou serão recalculadas com base nas alterações em outros valores de propriedade.
 
-A tabela a seguir especifica as propriedades que podem ser atualizadas. 
+[!INCLUDE [table-intro](../../includes/update-property-table-intro.md)]
 
 | Propriedade     | Tipo        | Descrição |
 |:-------------|:------------|:------------|
-| backgroundColor | String | Cor que aparecerá no lugar da imagem de plano de fundo em conexões de baixa largura de banda. Recomendamos que você use a cor primária do logotipo da faixa ou da cor da sua organização. Especifique isso no formato hexadecimal, por exemplo, branco é `#FFFFFF` . |
+| backgroundColor | Cadeia de caracteres | Cor que aparece no lugar da imagem de plano de fundo em conexões de baixa largura de banda. Recomendamos que você use a cor primária do logotipo da faixa ou da cor da sua organização. Especifique isso no formato hexadecimal, por exemplo, branco é `#FFFFFF`. |
 | backgroundImage | Stream | Imagem que aparece como o plano de fundo da página de login. Os tipos permitidos são PNG ou JPEG não menores que 300 KB e não maiores que 1920 × 1080 pixels. Uma imagem menor reduzirá os requisitos de largura de banda e tornará a carga da página mais rápida. |
 | bannerLogo | Stream | Uma versão em faixa do logotipo da sua empresa que aparece na página de entrada. Os tipos permitidos são PNG ou JPEG não maiores que 36 × 245 pixels. Recomendamos usar uma imagem transparente sem preenchimento ao redor do logotipo. |
-| signInPageText | String | Texto que aparece na parte inferior da caixa de login. Você pode usar isso para comunicar informações adicionais, como o número de telefone para o seu help desk ou uma declaração legal. Este texto deve ser Unicode e não exceder 1024 caracteres. |
-| squareLogo | Stream | Uma versão quadrada do logotipo da sua empresa que aparece Windows 10 experiências in-loco (OOBE) e quando o Windows Autopilot está habilitado para implantação. Os tipos permitidos são PNG ou JPEG não maiores que 240 x 240 pixels e no máximo 10 KB de tamanho. Recomendamos usar uma imagem transparente sem preenchimento ao redor do logotipo.|
-| usernameHintText | String | Cadeia de caracteres que mostra como a dica na caixa de texto do nome de usuário na tela de entrada. Este texto deve ser um Unicode, sem links ou código, e não pode exceder 64 caracteres.|
+| customAccountResetCredentialsUrl | Cadeia de caracteres | Uma URL personalizada para redefinir credenciais de conta. Essa URL deve estar no formato ASCII ou caracteres não ASCII devem ser codificados em URL e não exceder 128 caracteres. |
+| customCannotAccessYourAccountText | Cadeia de caracteres | Uma cadeia de caracteres para substituir o padrão "Não é possível acessar sua conta?" texto de hiperlink de redefinição de senha de autoatendados (SSPR) na página de login. Este texto deve estar no formato Unicode e não exceder 256 caracteres. |
+| customForgotMyPasswordText | Cadeia de caracteres | Uma cadeia de caracteres para substituir o texto padrão do hiperlink "Esqueci minha senha" no formulário de login. Este texto deve estar no formato Unicode e não exceder 256 caracteres. |
+| customPrivacyAndCookiesText | Cadeia de caracteres | Uma cadeia de caracteres para substituir o texto padrão de hiperlink "Privacidade e Cookies" no rodapé. Este texto deve estar no formato Unicode e não exceder 256 caracteres. |
+| customPrivacyAndCookiesUrl | Cadeia de caracteres | Uma URL personalizada para substituir a URL padrão do hiperlink "Privacidade e Cookies" no rodapé. Essa URL deve estar no formato ASCII ou caracteres não ASCII devem ser codificados em URL e não exceder 128 caracteres. |
+| customTermsOfUseText | Cadeia de caracteres | Uma cadeia de caracteres para substituir o texto padrão de hiperlink "Termos de Uso" no rodapé. Este texto deve estar no formato Unicode e não exceder 256 caracteres. |
+| customTermsOfUseUrl | Cadeia de caracteres | Uma URL personalizada para substituir a URL padrão do hiperlink "Termos de Uso" no rodapé. Essa URL deve estar no formato ASCII ou caracteres não ASCII devem ser codificados por URL e não exceder 128characters. |
+| favicon | Stream | Um ícone personalizado (favicon) para substituir um favicon de produto padrão da Microsoft em um locatário do Azure AD. |
+| headerBackgroundColor | Cadeia de caracteres | A cor RGB a ser aplicada para personalizar a cor do header. |
+| loginPageTextVisibilitySettings | [loginPageTextVisibilitySettings](../resources/loginPageTextVisibilitySettings.md) | Representa os vários textos que podem ser ocultos na página de logon de um locatário. Todas as propriedades podem ser atualizadas. |
+| signInPageText | Cadeia de caracteres | Texto que aparece na parte inferior da caixa de login. Use isso para comunicar informações adicionais, como o número de telefone para sua assistência médica ou uma declaração legal. Este texto deve estar no formato Unicode e não exceder 1024 caracteres. |
+| squareLogo | Stream | Uma versão quadrada do logotipo da sua empresa que aparece Windows 10 experiências in-loco (OOBE) e quando o Windows Autopilot está habilitado para implantação. Os tipos permitidos são PNG ou JPEG não maiores que 240 x 240 pixels e não mais de 10 KB de tamanho. Recomendamos usar uma imagem transparente sem preenchimento ao redor do logotipo.|
+| usernameHintText | Cadeia de caracteres | Uma cadeia de caracteres que mostra como a dica na caixa de texto do nome de usuário na tela de entrada. Este texto deve ser um Unicode, sem links ou código, e não pode exceder 64 caracteres. |
 
 ## <a name="response"></a>Resposta
 
@@ -95,12 +104,12 @@ Content-Type: image/jpeg
 } -->
 
 ```http
-HTTP/1.1 204 NO CONTENT
+HTTP/1.1 204 No Content
 ```
 
 ### <a name="example-2-update-the-backgroundcolor-and-signinpagetext-for-the-fr-fr-localization-using-patch"></a>Exemplo 2: atualizar o backgroundColor e signInPageText para a localização fr-FR usando PATCH
 
-A solicitação a seguir atualiza o logotipo da faixa para `fr-FR` a localização.
+A solicitação a seguir atualiza o logotipo da faixa para a `fr-FR` localização.
 
 #### <a name="request"></a>Solicitação
 
@@ -196,6 +205,8 @@ Content-Type: application/json
 
 #### <a name="response"></a>Resposta
 
+Após a solicitação, **o usernameHintText** `fr-FR` para a localização estará vazio em vez de herdar o valor do objeto de identidade visual padrão.
+
 <!-- {
   "blockType": "response"
 } -->
@@ -203,5 +214,3 @@ Content-Type: application/json
 ```http
 HTTP/1.1 204 No Content
 ```
-
-Após essa solicitação, usernameHintText para a localização estará vazio em vez de herdar o valor do `fr-FR` objeto de identidade visual padrão.

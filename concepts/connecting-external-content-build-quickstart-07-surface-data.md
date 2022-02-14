@@ -1,11 +1,11 @@
 ---
 ms.localizationpriority: medium
 ms.openlocfilehash: 04ba810183228e3834069d9bfa620fe3c71fdb12
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.sourcegitcommit: dbacb04ae7138ac3b109683e63a6ff27c166f421
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59289493"
+ms.lasthandoff: 02/14/2022
+ms.locfileid: "62805208"
 ---
 <!-- markdownlint-disable MD002 MD025 MD041 -->
 
@@ -13,24 +13,24 @@ Crie tipos de resultados e verticais de pesquisa para personalizar os resultados
 
 ## <a name="create-a-vertical"></a>Criar uma vertical
 
-Para criar e habilitar uma pesquisa vertical no nível da organização, entre no centro de Administração Microsoft 365 [usando](https://admin.microsoft.com/) a função de administrador global e faça o seguinte:
+Para criar e habilitar uma pesquisa vertical no nível da organização, entre no [](https://admin.microsoft.com/) centro de Administração Microsoft 365 usando a função de administrador global e faça o seguinte:
 
-1. Vá para **Configurações**  >  **Search & de** inteligência  >  **Personalizações.**
-2. Vá para **Vertical** e clique no **botão Adicionar.**
+1. Vá para **Configurações** >  **Search &** **intelligenceCustomizations** > .
+2. Vá para **Vertical** e clique no **botão Adicionar** .
 3. Forneça os seguintes detalhes:
   * **Nomeia o vertical:** Partes do dispositivo.
 
    ![Captura de tela da seção "Nome da vertical"](images/connectors-images/build11.png)
 
-  * **Fonte de** conteúdo : o conector criado com o aplicativo. (Inventário de Partes)
+  * **Fonte de** conteúdo: o conector criado com o aplicativo. (Inventário de Partes)
 
    ![Captura de tela da seção "Fonte de conteúdo"](images/connectors-images/build12.png)
 
-  * **Adicionar uma consulta**: Deixar em branco.
+  * **Adicione uma consulta**: deixe em branco.
 
    ![Captura de tela da seção "Adicionar uma consulta"](images/connectors-images/build13.png)
 
-  * **Filtros**: Deixar em branco.
+  * **Filtros**: deixe em branco.
 
    ![Captura de tela da seção "Filters"](images/connectors-images/build14.png)
 
@@ -38,22 +38,22 @@ Para criar e habilitar uma pesquisa vertical no nível da organização, entre n
 
 Para criar um tipo de resultado:
 
-1. Vá para **Configurações**  >  **Search & de** inteligência  >  **Personalizações.**
-2. Vá até a **guia tipo de** resultado e clique no botão **Adicionar.**
+1. Vá para **Configurações** >  **Search &** **intelligenceCustomizations** > .
+2. Vá até a **guia tipo de** resultado e clique no **botão Adicionar** .
 3. Forneça os seguintes detalhes:
 
   * **Nome**: Parte do Dispositivo
 
    ![Captura de tela da seção "Nomear o tipo de resultado"](images/connectors-images/build15.png)
 
-  * **Fonte de** conteúdo : o conector criado no aplicativo.
+  * **Fonte de** conteúdo: o conector criado no aplicativo.
 
    ![Captura de tela da seção "Selecionar uma fonte de conteúdo"](images/connectors-images/build16.png)
 
-  * **Regras**: Nenhum
+  * **Regras**: Nenhuma
 
    ![Captura de tela da seção "Definir regras"](images/connectors-images/build17.png)
 
-  * Colar o conteúdoresult-type.js[ na](https://github.com/microsoftgraph/msgraph-search-connector-sample/blob/master/result-type.json) caixa de texto do designer de layout.
+  * Colar conteúdo de [result-type.json](https://github.com/microsoftgraph/msgraph-search-connector-sample/blob/master/result-type.json) na caixa de texto do designer de layout.
 
    ![Captura de tela da seção "Design layout"](images/connectors-images/build18.png)

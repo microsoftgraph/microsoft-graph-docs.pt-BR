@@ -1,11 +1,11 @@
 ---
 ms.localizationpriority: medium
 ms.openlocfilehash: c804bdd39ebc2c460aa261355703b50ba530b197
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.sourcegitcommit: dbacb04ae7138ac3b109683e63a6ff27c166f421
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59289494"
+ms.lasthandoff: 02/14/2022
+ms.locfileid: "62805250"
 ---
 <!-- markdownlint-disable MD002 MD025 MD041 -->
 <!--- # Introduction --->
@@ -23,15 +23,15 @@ O exemplo cria um Windows da área de trabalho que adquire um token do plataform
 ## <a name="prerequisites"></a>Pré-requisitos
 
 * Instale [Visual Studio 2019](https://visualstudio.microsoft.com/) com [o .NET Core 3.1 SDK](https://www.microsoft.com/net/download/core) em seu computador de desenvolvimento.
-* Certifique-se de ter uma [conta pessoal da Microsoft](https://signup.live.com/)ou uma conta de estudante ou de trabalho.
-* Instale as Ferramentas Principais da Estrutura de [Entidades](/ef/core/miscellaneous/cli/dotnet) como uma ferramenta global usando o seguinte comando:
+* Certifique-se de que você tenha uma [conta pessoal da Microsoft](https://signup.live.com/) ou uma conta de trabalho ou de estudante.
+* Instale as [Ferramentas Principais da Estrutura de Entidades](/ef/core/miscellaneous/cli/dotnet) como uma ferramenta global usando o seguinte comando:
 
     ```dotnetcli
     dotnet tool install --global dotnet-ef
     ```
 
 * Instale uma ferramenta para atualizar um banco de dados SQLite. Por exemplo, o [Navegador DB para SQLite](https://sqlitebrowser.org/).
-* Baixe o **ApplianceParts.csv** do repo de exemplo [do conector de pesquisa.](https://github.com/microsoftgraph/msgraph-search-connector-sample/blob/master/PartsInventoryConnector/ApplianceParts.csv)
+* Baixe o **arquivoApplianceParts.csv** do [repo de exemplo do conector de pesquisa](https://github.com/microsoftgraph/msgraph-search-connector-sample/blob/master/PartsInventoryConnector/ApplianceParts.csv).
 
 > [!TIP]
 > A melhor maneira de baixar arquivos GitHub é ir para o nível superior do projeto. No botão de download **de código** verde à direita, escolha **Baixar ZIP**. O arquivo ZIP conterá o conteúdo do repositório.

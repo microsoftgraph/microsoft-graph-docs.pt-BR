@@ -5,12 +5,12 @@ author: nkramer
 ms.localizationpriority: medium
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 17d2125299952a2a89ab3e86d4a66dee4aa9119c
-ms.sourcegitcommit: 4c8444b732b8d6d0de8a95f6666c42095f146266
+ms.openlocfilehash: 28b9a664dea0c3a434d96a7408ff87f6a6fcec47
+ms.sourcegitcommit: dbacb04ae7138ac3b109683e63a6ff27c166f421
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/08/2022
-ms.locfileid: "62442831"
+ms.lasthandoff: 02/14/2022
+ms.locfileid: "62804105"
 ---
 # <a name="clone-a-team"></a>Clonar uma equipe
 
@@ -42,7 +42,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |Delegado (conta pessoal da Microsoft) | Sem suporte.    |
 |Aplicativo                            | Team.Create, Group.ReadWrite.All **, Directory.ReadWrite.All** |
 
-> **Observação**: As permissões marcadas com ** só têm suporte para compatibilidade com compatibilidade Recomendamos que você atualize suas soluções para usar permissões diferentes e evite usar essas permissões adiante.
+> **Observação**: as permissões marcadas com ** têm suporte apenas para compatibilidade com versões anteriores. Recomendamos que você atualize suas soluções para usar uma permissão alternativa listada na tabela anterior e evite usar essas permissões adiante.
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- { "blockType": "ignored" } -->
@@ -61,7 +61,7 @@ POST /teams/{id}/clone
 | Propriedade     | Tipo   |Descrição|
 |:---------------|:--------|:----------|
 |classificação|Cadeia de caracteres (opcional)|Descreve uma classificação para o grupo (como baixo, médio ou alto impacto comercial). Os valores válidos para essa propriedade são definidos criando um valor de configuração [ClassificationList,](../resources/directorysetting.md) com base na [definição do modelo](../resources/directorysettingtemplate.md). Se a classificação não for especificada, a classificação será copiada da equipe/grupo original.|
-|description|Cadeia de caracteres (opcional)|Uma descrição opcional para o grupo. Se essa propriedade não for especificada, ela ficará em branco.|
+|descrição|Cadeia de caracteres (opcional)|Uma descrição opcional para o grupo. Se essa propriedade não for especificada, ela ficará em branco.|
 |displayName|String|O nome de exibição do grupo. Essa propriedade é obrigatória quando um grupo é criado e não pode ser apagado durante atualizações. Oferece suporte a $filter e $orderby.|
 |mailNickname|String|O alias de email do grupo, exclusivo na organização. Essa propriedade deve ser especificada quando um grupo é criado. Oferece suporte a $filter. Se essa propriedade não for especificada, ela será calculada a partir do displayName. Problema conhecido: essa propriedade é ignorada no momento.|
 |partsToClone| [clonableTeamParts](../resources/clonableteamparts.md) |Uma lista separada por vírgulas das partes a ser clonada. As partes legais são "aplicativos, guias, configurações, canais, membros".|

@@ -5,19 +5,19 @@ author: hanki-microsoft
 ms.localizationpriority: medium
 ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: d015690c83cc3f9d5195e94ea857ed81f95189cc
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: 5d6105291a92f5566f61bd9f52289af691f65c78
+ms.sourcegitcommit: dbacb04ae7138ac3b109683e63a6ff27c166f421
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62110131"
+ms.lasthandoff: 02/14/2022
+ms.locfileid: "62804077"
 ---
 # <a name="get-accesspackageresourceenvironment"></a>Obter accessPackageResourceEnvironment
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Leia as propriedades e as relações de um [objeto accessPackageResourceEnvironment.](../resources/accesspackageresourceenvironment.md)
+Leia as propriedades e as relações de um [objeto accessPackageResourceEnvironment](../resources/accesspackageresourceenvironment.md) .
 
 ## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
@@ -26,7 +26,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |:---|:---|
 |Delegado (conta corporativa ou de estudante)|EntitlementManagement.Read.All, EntitlementManagement.ReadWrite.All|
 |Delegado (conta pessoal da Microsoft)|Sem suporte.|
-|Aplicativo|Sem suporte.|
+|Aplicativo|EntitlementManagement.Read.All, EntitlementManagement.ReadWrite.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
 
@@ -39,7 +39,7 @@ GET /identityGovernance/entitlementManagement/accessPackageResourceEnvironments/
 ```
 
 ## <a name="optional-query-parameters"></a>Parâmetros de consulta opcionais
-Este método atualmente não dá suporte a [parâmetros de consulta OData.](/graph/query-parameters)
+Este método atualmente não dá suporte a [parâmetros de consulta OData](/graph/query-parameters).
 
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
 |Nome|Descrição|
@@ -51,7 +51,7 @@ Não forneça um corpo de solicitação para esse método.
 
 ## <a name="response"></a>Resposta
 
-Se tiver êxito, este método retornará um código de resposta e um `200 OK` [objeto accessPackageResourceEnvironment](../resources/accesspackageresourceenvironment.md) no corpo da resposta.
+Se tiver êxito, este método retornará um `200 OK` código de resposta e um [objeto accessPackageResourceEnvironment](../resources/accesspackageresourceenvironment.md) no corpo da resposta.
 
 ## <a name="examples"></a>Exemplos
 

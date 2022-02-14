@@ -1,26 +1,26 @@
 ---
-title: tipo de recurso onenoteResource
-description: 'Uma imagem ou outro recurso de arquivo em uma página do OneNote. '
-localization_priority: Normal
+title: Tipo de recurso do onenoteResource
+description: 'Uma imagem ou outro recurso de arquivo em uma OneNote página. '
+ms.localizationpriority: medium
 doc_type: resourcePageType
 ms.prod: ''
 author: jewan-microsoft
-ms.openlocfilehash: 6e95775881ef78c70c50a634134ba20341173e77
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: f7a479ec529cae209fef085da2978c3e412a844f
+ms.sourcegitcommit: dbacb04ae7138ac3b109683e63a6ff27c166f421
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48039192"
+ms.lasthandoff: 02/14/2022
+ms.locfileid: "62804917"
 ---
-# <a name="onenoteresource-resource-type"></a>tipo de recurso onenoteResource
+# <a name="onenoteresource-resource-type"></a>Tipo de recurso do onenoteResource
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Uma imagem ou outro recurso de arquivo em uma página do OneNote.
+Uma imagem ou outro recurso de arquivo em uma OneNote página.
 
-Você pode obter os dados binários de um recurso, mas obter uma representação JSON de um objeto Resource ou uma coleção de recursos não é suportada.
+Você pode obter os dados binários de um recurso, mas não há suporte para obter uma representação JSON de um objeto de recurso ou uma coleção de recursos.
 
 <!-- {
   "blockType": "resource",
@@ -35,22 +35,23 @@ Você pode obter os dados binários de um recurso, mas obter uma representação
   "content": "String (Stream)",
   "contentUrl": "String"
 }
-
 ```
-Obtenha os dados binários de um recurso específico enviando uma solicitação GET para o ponto de `content` extremidade do recurso:
 
-```
+Obter os dados binários de um recurso específico enviando uma solicitação GET para o ponto de extremidade do `content` recurso:
+
+```http
 GET ../onenote/resources/{id}/content
 ```
 
-O URI de recurso do arquivo é retornado quando você obtém o conteúdo HTML de uma página usando a seguinte solicitação:
+O URI de recurso do arquivo é retornado quando você obter o conteúdo HTML de uma página usando a seguinte solicitação:
 
-```
+```http
 GET ../onenote/pages/{id}/content
 ```
 
-Na página HTML, uma `img` marca inclui pontos de extremidade do recurso de imagem original no `data-fullres-src` atributo e a imagem otimizada no `src` atributo:
-```
+Na página HTML, uma `img` marca inclui pontos de extremidade para o recurso de imagem original `data-fullres-src` no atributo e a imagem otimizada no `src` atributo:
+
+```html
 <img
     src="image-resource-url"
     data-src-type="media-type"
@@ -58,29 +59,28 @@ Na página HTML, uma `img` marca inclui pontos de extremidade do recurso de imag
     data-fullres-src-type="media-type" ... />
 ```
 
-Uma `object` marca (que representa arquivos como PDF, docx e png) inclui o ponto de extremidade para o recurso de arquivo no `data` atributo:
+Uma `object` marca (que representa arquivos como PDF, DOCX e PNG) inclui o ponto de extremidade do recurso de arquivo no `data` atributo:
 
-```
+```html
 <object
     data="file-resource-url"
     data-attachment="file-name.file-type"
     type="media-type" ... />
 ```
 
-## <a name="properties"></a>Propriedades
-| Propriedade     | Tipo   |Descrição|
-|:---------------|:--------|:----------|
-| content | EDM. Stream||
-| contentUrl | String ||
-
-## <a name="relationships"></a>Relações
-Nenhum
-
-
 ## <a name="methods"></a>Métodos
 | Método           | Tipo de retorno    |Descrição|
 |:---------------|:--------|:----------|
-|[Obter dados binários do recurso](../api/resource-get.md) | Stream |Recupere os dados binários de um recurso de arquivo ou imagem.|
+|[Obter dados binários de recursos](../api/resource-get.md) | Stream |Recupere os dados binários de um recurso de arquivo ou imagem.|
+
+## <a name="properties"></a>Propriedades
+| Propriedade     | Tipo   |Descrição|
+|:---------------|:--------|:----------|
+| content | Edm.Stream||
+| contentUrl | Cadeia de caracteres ||
+
+## <a name="relationships"></a>Relações
+Nenhum
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->

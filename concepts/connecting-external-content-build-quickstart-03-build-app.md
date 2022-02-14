@@ -1,11 +1,11 @@
 ---
 ms.localizationpriority: medium
 ms.openlocfilehash: 93112b4ae67b3fe6352f0569613f8df064bc9de3
-ms.sourcegitcommit: 08e9b0bac39c1b1d2c8a79539d24aaa93364baf2
+ms.sourcegitcommit: dbacb04ae7138ac3b109683e63a6ff27c166f421
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/24/2021
-ms.locfileid: "59929112"
+ms.lasthandoff: 02/14/2022
+ms.locfileid: "62805214"
 ---
 <!-- markdownlint-disable MD002 MD025 MD041 -->
 
@@ -13,9 +13,9 @@ Nesta etapa, você criará um aplicativo de console .NET Core. Depois disso, voc
 
 ## <a name="create-a-net-core-console-app"></a>Criar um aplicativo de console .NET Core 
 
-1. Iniciar Visual Studio 2019 e ir para **Arquivo**  >    >  **Novo Project**.
-2. Selecione o **modelo aplicativo de console (.NET Core)** e selecione **Next**.
-3. Insira o Project : "PartsInventoryConnector", selecione **a** caixa de seleção para "**Colocar** solução  e projeto no mesmo diretório ", e selecione Criar conforme mostrado na próxima imagem.
+1. Iniciar Visual Studio 2019 e ir para **FileNew** >  >  **Project**.
+2. Selecione o **modelo aplicativo de console (.NET Core)** e selecione **Próximo**.
+3. Insira o **Project**: "PartsInventoryConnector", selecione a caixa de seleção "Colocar solução e projeto no mesmo **diretório**", e selecione Criar conforme mostrado na próxima imagem.
 
 ![Captura de tela da seção "Configurar seu novo projeto"](images/connectors-images/build7.png)
 
@@ -24,7 +24,7 @@ Nesta etapa, você criará um aplicativo de console .NET Core. Depois disso, voc
 
 ## <a name="add-nuget-packages"></a>Adicionar pacotes NuGet
 
-Para adicionar NuGet pacotes, primeiro clique com o botão direito do **mouse Project Solução** e selecione Abrir no **Terminal**.
+Para adicionar NuGet pacotes, primeiro clique com o botão direito do **mouse Project Solution** e selecione **Abrir no Terminal**.
 
 ![Captura de tela mostrando a opção Abrir terminal](images/connectors-images/build8.png)
 
@@ -53,7 +53,7 @@ dotnet add package Microsoft.Identity.Client --version 4.13.0
 
 Essa autenticação é necessária para obter o token de acesso OAuth necessário para chamar a API de conectores.
 
-1. Crie um novo diretório chamado **Authentication** no diretório **PartsInventoryConnector.**
+1. Crie um novo diretório chamado **Authentication** no diretório **PartsInventoryConnector** .
 2. Crie um novo arquivo no diretório **authentication** chamado ClientCredentialAuthProvider.cs e coloque o seguinte código nesse arquivo:
 
 ```c
@@ -148,7 +148,7 @@ namespace PartsInventoryConnector.Console
 
 ## <a name="set-up-data-model"></a>Configurar o modelo de dados
 
-1. Crie um novo diretório no diretório **PartsInventoryConnector** chamado **Models**.
+1. Crie um novo diretório no diretório **PartsInventoryConnector** denominado **Modelos**.
 2. Crie um novo arquivo no diretório **Modelos** chamado AppliancePart.cs e coloque o seguinte código nesse arquivo:
 
 
@@ -279,7 +279,7 @@ namespace PartsInventoryConnector.Models
 }
 ```
 
-4. Crie um novo diretório chamado **Data** no diretório **PartsInventoryConnector.**
+4. Crie um novo diretório chamado **Data** no diretório **PartsInventoryConnector** .
 5. Crie um novo arquivo no **diretório De** dados chamado CsvDataLoader.cs e coloque o seguinte código nesse arquivo:
 
 ```c
@@ -332,7 +332,7 @@ namespace PartsInventoryConnector.Data
 
 ## <a name="write-the-microsoft-graph-helper-service"></a>Gravar o serviço auxiliar Graph Microsoft
 
-1. Crie um novo diretório chamado **MicrosoftGraph** no **diretório PartsInventoryConnector.**
+1. Crie um novo diretório chamado **MicrosoftGraph** no **diretório PartsInventoryConnector** .
 2. Crie um novo arquivo no **diretório do MicrosoftGraph** chamado CustomSerializer.cs e coloque o seguinte código nesse arquivo:
 
 ```c
@@ -602,7 +602,7 @@ namespace PartsInventoryConnector
 
 ## <a name="create-the-connection"></a>Criar a conexão
 
-1. Em **MicrosoftGraph**, abra o arquivo MicrosoftGraphHelper.cs e adicione o código a seguir após o **método construtor.**
+1. Em **MicrosoftGraph**, abra o arquivo MicrosoftGraphHelper.cs e adicione o código a seguir após o **método construtor** .
 
 ```c
 #region Connections
@@ -625,7 +625,7 @@ namespace PartsInventoryConnector
 #endregion
 ```
 
-2. Abra o arquivo Program.cs e adicione o seguinte código após o **método Main:**
+2. Abra o arquivo Program.cs e adicione o seguinte código após o **método Main** :
 
 
 ```c
@@ -652,7 +652,7 @@ private static async Task CreateConnectionAsync()
 
 ## <a name="register-schema"></a>Registrar esquema
 
-1. Em **MicrosoftGraph**, abra o arquivo MicrosoftGraphHelper.cs e adicione o código a seguir após o **método construtor.**
+1. Em **MicrosoftGraph**, abra o arquivo MicrosoftGraphHelper.cs e adicione o código a seguir após o **método construtor** .
 
 ```c
 #region Schema
@@ -727,7 +727,7 @@ private static async Task CreateConnectionAsync()
 #endregion
 ```
 
-2. Abra o arquivo Program.cs e adicione o seguinte código após o **método Main.**
+2. Abra o arquivo Program.cs e adicione o seguinte código após o **método Main** .
 
 ```c
 private static async Task RegisterSchemaAsync()
@@ -774,7 +774,7 @@ private static async Task RegisterSchemaAsync()
 
 ## <a name="sync-items"></a>Itens de sincronização
 
-1. Em **Microsoft Graph**, abra o arquivo MicrosoftGraphHelper.cs e adicione o seguinte código após o método **Constructor.**
+1. Em **Microsoft Graph**, abra o arquivo MicrosoftGraphHelper.cs e adicione o código a seguir após o **método Constructor**.
 
 ```c
 #region PushData
@@ -806,7 +806,7 @@ private static async Task RegisterSchemaAsync()
         #endregion
 ```
 
-2. Abra o arquivo Program.cs e adicione o seguinte código após o **método Main.**
+2. Abra o arquivo Program.cs e adicione o seguinte código após o **método Main** .
 
 ```c
 private static async Task UpdateItemsFromDatabase()

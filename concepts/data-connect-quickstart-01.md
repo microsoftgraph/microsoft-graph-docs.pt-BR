@@ -1,11 +1,11 @@
 ---
 ms.localizationpriority: medium
 ms.openlocfilehash: f0ba3bbafa065bce8bb29fa760704df691bd5d79
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.sourcegitcommit: dbacb04ae7138ac3b109683e63a6ff27c166f421
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59289501"
+ms.lasthandoff: 02/14/2022
+ms.locfileid: "62805200"
 ---
 <!-- markdownlint-disable MD002 MD041 -->
 
@@ -35,7 +35,7 @@ Para concluir esse laboratório, você precisará das seguintes assinaturas ou l
 
 1. **Assinatura do Microsoft Azure**
 
-   - Se você não tiver um, poderá obter um (gratuitamente) em nosso [site do Azure.](https://azure.microsoft.com/free/)
+   - Se você não tiver um, poderá obter um (gratuitamente) em nosso [site do Azure](https://azure.microsoft.com/free/).
    - A conta usada para entrar deve ter a função de administrador **global** concedida a ela.
    - A assinatura do Azure deve estar no mesmo locatário que o locatário Microsoft 365, pois o Graph Data Conexão exportará apenas dados para uma assinatura do Azure no mesmo locatário, não entre locatários.
    - Seus Microsoft 365 e locatários do Azure devem estar no mesmo Microsoft Azure Active Directory locatário.

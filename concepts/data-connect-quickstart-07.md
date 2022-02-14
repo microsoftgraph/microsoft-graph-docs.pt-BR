@@ -1,11 +1,11 @@
 ---
 ms.localizationpriority: medium
 ms.openlocfilehash: 726484cb0f6cd3e91b77dc6f89e800f8546b6f42
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.sourcegitcommit: dbacb04ae7138ac3b109683e63a6ff27c166f421
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59289506"
+ms.lasthandoff: 02/14/2022
+ms.locfileid: "62805210"
 ---
 <!-- markdownlint-disable MD002 MD041 -->
 
@@ -15,38 +15,38 @@ Nesta seção, criaremos seu primeiro aplicativo de projeto ASP.NET para process
 
 1. Abra Visual Studio e selecione **Arquivo > Novo > Project**.
 
-1. Na caixa **de diálogo Novo Project,** faça o seguinte.
+1. Na caixa **de diálogo Novo Project**, faça o seguinte.
 
-    1. **Pesquise** ASP.NET Web Application na caixa de pesquisa e selecione a opção ASP.NET **Aplicativo Web (.NET Framework).**
+    1. **Pesquise ASP.NET Aplicativo Web** na caixa de pesquisa e selecione **a opção ASP.NET Aplicativo Web (.NET Framework).**
     1. Clique em **Próximo**.
 
         ![Uma captura de tela da interface Visual Studio de usuário mostrando as opções para criar um novo projeto usando ASP.NET Web.](images/data-connect-vs-create-app.png)
 
     1. Insira **EmailMetrics** para o nome do projeto.
     1. Selecione **.NET Framework 4.7.2** para a opção de estrutura.
-    1. Selecione **Criar**.
+    1. Selecionar **Criar**.
 
     > [!IMPORTANT]
     > Certifique-se de inserir exatamente o mesmo nome para o Visual Studio Project especificado nas instruções de início rápido. O nome do projeto Visual Studio torna-se parte do namespace no código. O código dentro dessas instruções depende do namespace correspondente ao nome do projeto Visual Studio especificado nessas instruções. Se você usar um nome de projeto diferente, o código não será compilado, a menos que você ajuste todos os namespaces para corresponder ao nome do projeto do Visual Studio inserido ao criar o projeto.
 
-    1. Na nova caixa **de ASP.NET de projeto do Aplicativo Web,** selecione MVC.
-    1. Selecione **Criar**.
+    1. Na nova caixa **de ASP.NET de projeto do Aplicativo Web**, selecione MVC.
+    1. Selecionar **Criar**.
 
     ![Uma captura de tela da interface Visual Studio mostrando as opções para escolher um aplicativo Web MVC (Model-View-Controller ASP.NET).](images/data-connect-vs-create-app-mvc.png)
 
 ## <a name="add-and-configure-your-azure-storage-as-a-connected-service"></a>Adicionar e configurar seu Azure Armazenamento como um Serviço Conectado
 
-1. Na janela **Ferramenta do Explorador** de Soluções, clique com o botão direito do mouse no nó Serviços **Conectados** e selecione **Adicionar Serviço Conectado**.
+1. Na janela **Ferramenta do Explorador** de Soluções, clique com o botão direito do mouse no nó **Serviços Conectados** e selecione **Adicionar Serviço Conectado**.
 
     ![Visual-Studio-Add-Connected-Service](images/data-connect-vs-add-connected-service-sa.png)
 
-1. Na caixa **de diálogo Serviços Conectados,** selecione o sinal verde localizado no canto superior direito da caixa **+** de diálogo.
+1. Na caixa **de diálogo Serviços Conectados** , selecione o sinal **+** verde localizado no canto superior direito da caixa de diálogo.
 
-1. Na caixa de diálogo Adicionar **dependência,** selecione **Azure Armazenamento** e selecione **Próximo**.
+1. Na caixa **de diálogo Adicionar dependência**, selecione **Azure Armazenamento** e selecione **Próximo**.
 
     ![Uma captura de tela da interface Visual Studio mostrando a caixa de diálogo adicionar dependecy para a opção Armazenamento Azure.](images/data-connect-vs-add-dependency-azsa.png)
 
-1. Na caixa de diálogo Armazenamento do **Azure,** selecione a conta de assinatura e armazenamento onde você exportou os dados no exercício anterior, selecione **Próximo**.
+1. Na caixa **de diálogo Armazenamento do Azure**, selecione a conta de assinatura e armazenamento onde você exportou os dados no exercício anterior, selecione **Next**.
 
     ![Uma captura de tela da interface Visual Studio que mostra a Armazenamento configurar o Azure, onde você seleciona a conta de assinatura e armazenamento.](images/data-connect-vs-configure-az-storage.png)
 
@@ -57,11 +57,11 @@ Nesta seção, criaremos seu primeiro aplicativo de projeto ASP.NET para process
 
 ## <a name="create-a-new-model-class-that-will-be-used-to-store-the-email-metrics"></a>Criar uma nova classe de modelo que será usada para armazenar as métricas de email
 
-1. Na janela  **Ferramenta do Explorador** de Soluções, clique com o botão direito do mouse na pasta **Modelos** e selecione Adicionar **> Classe**.
+1. Na janela  **Ferramenta do Explorador** de Soluções, clique com o botão direito do mouse na pasta **Modelos** e selecione **Adicionar > Classe**.
 
     ![Uma captura de tela da interface Visual Studio mostrando como você pode adicionar uma nova classe clicando com o botão direito do mouse na pasta de modelos.](images/data-connect-vs-add-new-model-class.png)
 
-1. Na caixa **de diálogo Adicionar Novo Item,** selecione **Classe**, de definir o nome do arquivo como _EmailMetric.cs_ e **selecione Adicionar**.
+1. Na caixa **de diálogo Adicionar Novo Item** , selecione **Classe**, de definir o nome do arquivo como _EmailMetric.cs_ e selecione **Adicionar**.
 
 1. Adicione o código a seguir à classe EmailMetric que você acabou de criar.
 
@@ -74,11 +74,11 @@ Nesta seção, criaremos seu primeiro aplicativo de projeto ASP.NET para process
 
 1. Clique com o botão direito do mouse na **pasta Controladores** e selecione **Adicionar > Controlador**.
 
-1. Na caixa **de diálogo Adicionar Scaffold,** selecione **Controlador MVC 5 - Vazio** e selecione **Adicionar**.
+1. Na caixa **de diálogo Adicionar Scaffold** , selecione **Controlador MVC 5 - Vazio** e selecione **Adicionar**.
 
 1. Quando solicitado, nomeia o controlador **EmailMetricsController** e selecione **OK**.
 
-1. Adicione as instruções de uso a seguir após as instruções de uso existentes na parte superior do arquivo que contém a **classe EmailMetricsController.**
+1. Adicione as instruções de uso a seguir após as instruções de uso existentes na parte superior do arquivo que contém a **classe EmailMetricsController** .
 
     ```csharp
     using System.Collections.Generic;
@@ -92,7 +92,7 @@ Nesta seção, criaremos seu primeiro aplicativo de projeto ASP.NET para process
     using Newtonsoft.Json.Linq;
     ```
 
-1. Adicione o código a seguir à **classe EmailMetricsController.** Elas serão usadas para se conectar à conta do **Azure Armazenamento que** contém os dados exportados.
+1. Adicione o código a seguir à **classe EmailMetricsController** . Elas serão usadas para se conectar à conta **do Azure Armazenamento que** contém os dados exportados.
 
     ```csharp
     private const string connectionStringName = "AzureStorageConnectionString";
@@ -100,7 +100,7 @@ Nesta seção, criaremos seu primeiro aplicativo de projeto ASP.NET para process
 
     ```
 
-1. Adicione o método a seguir à **classe EmailMetricsController.** Isso processará um **Blob do Azure** e atualizará uma coleção que representa as contas de email e quantos destinatários foram combinados em todos os emails encontrados para as contas extraídas.
+1. Adicione o método a seguir à **classe EmailMetricsController** . Isso processará um **Blob do Azure** e atualizará uma coleção que representa as contas de email e quantos destinatários foram combinados em todos os emails encontrados para as contas extraídas.
 
     ```csharp
     private async Task ProcessBlobEmails(List<Models.EmailMetric> emailMetrics, BlobClient emailBlob)
@@ -149,7 +149,7 @@ Nesta seção, criaremos seu primeiro aplicativo de projeto ASP.NET para process
     }
     ```
 
-1. Adicione o método a seguir à **classe EmailMetricsController.** Isso enumerará todos os blobs no contêiner especificado da conta do **Azure Armazenamento** e enviará cada um para o método adicionado `ProcessBlobEmails()` na última etapa.
+1. Adicione o método a seguir à **classe EmailMetricsController** . Isso enumerará todos os blobs no contêiner especificado da conta do **Azure Armazenamento** `ProcessBlobEmails()` e enviará cada um para o método adicionado na última etapa.
 
     ```csharp
     private async Task<List<Models.EmailMetric>> ProcessBlobFiles()
@@ -192,9 +192,9 @@ Nesta seção, criaremos seu primeiro aplicativo de projeto ASP.NET para process
 
 1. Na janela  **Ferramenta do Explorador** de Soluções, clique com o botão direito do mouse na pasta **Exibições > EmailMetrics** e selecione **Adicionar > Exibir**.
 
-1. Na caixa **de diálogo Adicionar Novo Item** EmFalso, selecione **MVC 5 Exibir** e, em seguida, selecione **Adicionar**.
+1. Na caixa **de diálogo Adicionar Novo Item** EmFalso, selecione **MVC 5 View** e, em seguida, **selecione Adicionar**.
 
-1. Na caixa **de diálogo Adicionar Modo** de Exibição, desmarque o nome **de** exibição como **Index**, deixe os controles de entrada restantes para seus valores padrão e selecione **Adicionar**.
+1. Na caixa **de diálogo Adicionar Modo** de Exibição, desmarque o nome **de** exibição como **Index**, deixe os controles de entrada restantes como seus valores padrão e selecione **Adicionar**.
 
     ![Uma captura de tela da interface Visual Studio mostrando como adicionar um novo exibição chamado índice.](images/data-connect-vs-add-view-index.png)
 
@@ -230,9 +230,9 @@ Nesta seção, criaremos seu primeiro aplicativo de projeto ASP.NET para process
 
 1. Na caixa **de diálogo Adicionar Modo** de Exibição, desmarque os seguintes valores e deixe os controles de entrada restantes para seus valores padrão e selecione **Adicionar**.
 
-    - **Nome da exibição**: ShowMetrics
+    - **Nome da** exibição: ShowMetrics
     - **Modelo**: Lista
-    - **Classe Model**: EmailMetric (EmailMetric.Models)
+    - **Classe model**: EmailMetric (EmailMetric.Models)
 
         ![Uma captura de tela da interface Visual Studio mostrando como adicionar um novo exibição chamado ShowMetrics.](images/data-connect-vs-add-view-showmetrics.png)
 
@@ -269,7 +269,7 @@ Nesta seção, criaremos seu primeiro aplicativo de projeto ASP.NET para process
 
 ## <a name="update-the-navigation-to-have-a-way-to-get-to-the-new-controller"></a>Atualizar a navegação para ter uma maneira de chegar ao novo controlador
 
-1. Na janela **Ferramenta do Explorador** de Soluções, localize e abra o arquivo Views > shared > **_Layout.cshtml_**.
+1. Na janela **Ferramenta do Explorador** de Soluções, localize e abra o arquivo **Views > shared > _Layout.cshtml_**.
 1. Substitua o conteúdo pelo código a seguir.
 
     ```html
@@ -281,9 +281,9 @@ Nesta seção, criaremos seu primeiro aplicativo de projeto ASP.NET para process
 
 1. Em Visual Studio, selecione **Depurar > Iniciar Depuração**.
 
-1. Quando o aplicativo for criado e carregado em uma nova janela do navegador, selecione o item **Métricas** de Email na barra de navegação superior.
+1. Quando o aplicativo for criado e carregado em uma nova janela do navegador, selecione o item **Métricas de Email** na barra de navegação superior.
 
-1. Na página **Métricas de Email,** selecione o botão Exibir métricas **de email.**
+1. Na página **Métricas de Email** , selecione o botão **Exibir métricas de email** .
 
     ![Uma captura de tela da interface de aplicativo Web ASP.NET de exibição mostrando o botão exibir métricas de email.](images/data-connect-vs-select-view-metrics.png)
 
