@@ -1,16 +1,16 @@
 ---
 title: Atualizar accessReviewInstanceDecisionItem
-description: Atualize um objeto accessReviewInstanceDecisionItem existente de que chamar o usuário é o revisor.
+description: Atualize um objeto accessReviewInstanceDecisionItem existente para o qual o usuário de chamada é o revisor.
 ms.localizationpriority: medium
 author: isabelleatmsft
 ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: c83ebbe6b79f987e8c7d523114dd31e570f155df
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: 9b3e75d9817b2e41a332d0138dc409301d58f4e1
+ms.sourcegitcommit: 2dd01b49fbd8f330bead92f4708ed1966237c3f4
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "60987716"
+ms.lasthandoff: 02/15/2022
+ms.locfileid: "62815844"
 ---
 # <a name="update-accessreviewinstancedecisionitem"></a>Atualizar accessReviewInstanceDecisionItem
 
@@ -21,7 +21,7 @@ Namespace: microsoft.graph
 Atualizar decisões de acesso, conhecidas como [accessReviewInstanceDecisionItems](../resources/accessreviewinstancedecisionitem.md), para as quais o usuário é o revisor.
 
 >[!NOTE]
->Todas as atualizações feitas em **um accessReviewInstanceDecisionItem** só podem ser feitas chamando usuários listados como revisores do [accessReviewInstance pai.](../resources/accessreviewinstance.md)
+>Todas as atualizações feitas em **um accessReviewInstanceDecisionItem** só podem ser feitas chamando usuários listados como revisores do [accessReviewInstance pai](../resources/accessreviewinstance.md).
 
 ## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é necessária para chamar essa API. Não há suporte para permissões delegadas para contas pessoais da Microsoft. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
@@ -32,31 +32,44 @@ Uma das seguintes permissões é necessária para chamar essa API. Não há supo
 |Delegado (conta pessoal da Microsoft)|Sem suporte.|
 
 ## <a name="http-request"></a>Solicitação HTTP
+
+Para atualizar uma decisão sobre um accessReviewInstance:
 <!-- { "blockType": "ignored" } -->
 ```http
-PATCH /me/pendingAccessReviewInstances/{instance-id}/decisions/{decision-id}
+PATCH /identityGovernance/accessReviews/definitions/{accessReviewScheduleDefinitionId}/instances/{accessReviewInstanceId}/decisions/{accessReviewInstanceDecisionItemId}
 ```
+
+Para atualizar uma decisão em um estágio de accessReviewInstance que tem vários estágios:
+<!-- { "blockType": "ignored" } -->
+```http
+PATCH /identityGovernance/accessReviews/definitions/{accessReviewScheduleDefinitionId}/instances/{accessReviewInstanceId}/stages/{accessReviewStageId}/decisions/{accessReviewInstanceDecisionItemId}
+```
+
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
 | Nome         | Descrição |
 |:-------------|:------------|
-|Autorização|{token} de portador. Obrigatório.|
+| Autorização|{token} de portador. Obrigatório.|
 | Content-type | application/json. Obrigatório. |
 
 ## <a name="request-body"></a>Corpo da solicitação
-A tabela a seguir mostra as propriedades aceitas para atualizar um `accessReviewInstanceDecisionItem` .
+A tabela a seguir mostra as propriedades aceitas para atualizar um `accessReviewInstanceDecisionItem`.
 
 | Propriedade     | Tipo       | Descrição |
 |:-------------|:------------|:------------|
-| decision  | Cadeia de caracteres | Decisão de acesso para a entidade que está sendo revisada. Os valores possíveis são: `Approve` `Deny` `NotReviewed` `DontKnow` . Obrigatório.  |
+| decision  | String | Decisão de acesso para a entidade que está sendo revisada. Os valores possíveis são: `Approve` `NotReviewed` `Deny` `DontKnow`. Obrigatório.  |
 |  justification | String | Contexto da revisão fornecida aos administradores. Obrigatório se justificationRequiredOnApproval for True no accessReviewScheduleDefinition.  |
 
 ## <a name="response"></a>Resposta
-Se tiver êxito, este método retornará um `204, NoContent` código de resposta e nenhum corpo de resposta.
+Se tiver êxito, este método retornará um código `204 No Content` de resposta e nenhum corpo de resposta.
 
-### <a name="request"></a>Solicitação
+
 ## <a name="examples"></a>Exemplos
 
-Este é um exemplo de aprovação do acesso a um usuário representado por `accessReviewInstanceDecisionItem` um .
+### <a name="example-1-update-a-decision-on-an-accessreviewinstance"></a>Exemplo 1: atualizar uma decisão em um accessReviewInstance
+
+#### <a name="request"></a>Solicitação
+
+A seguir, um exemplo de decisão de aprovação de acesso para um usuário.
 
 
 
@@ -66,7 +79,7 @@ Este é um exemplo de aprovação do acesso a um usuário representado por `acce
   "name": "update_accessReviewInstanceDecisionItem"
 }-->
 ``` http
-PATCH https://graph.microsoft.com/beta/me/pendingAccessReviewInstances/70a68410-67f3-4d4c-b946-6989e050be19/decisions/12348410-67f3-4d4c-b946-6989e050be19
+PATCH https://graph.microsoft.com/beta/identityGovernance/accessReviews/definitions/5eac5a70-7cd7-4f20-92b0-f9dba70dd7f0/instances/6444d4fd-ab55-4608-8cf9-c6702d172bcc/stages/9458f255-dff2-4d86-9a05-69438f49d7f8/decisions/e6cafba0-cbf0-4748-8868-0810c7f4cc06
 Content-Type: application/json
 
 {
@@ -90,18 +103,43 @@ Content-Type: application/json
 [!INCLUDE [sample-code](../includes/snippets/java/update-accessreviewinstancedecisionitem-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[Go](#tab/go)
+# <a name="go"></a>[Ir](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/update-accessreviewinstancedecisionitem-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
 
----
+
+#### <a name="response"></a>Resposta
+
+<!-- {
+  "blockType": "response"
+} -->
+```http
+HTTP/1.1 204 Accepted
+```
 
 
-### <a name="response"></a>Resposta
->**Observação:** o objeto de resposta mostrado aqui pode ser encurtado para legibilidade.
+### <a name="example-2-update-a-decision-on-an-stage-in-a-multi-stage-access-review"></a>Exemplo 2: atualizar uma decisão em um estágio em uma revisão de acesso em vários estágios
+
+#### <a name="request"></a>Solicitação
+<!-- {
+  "blockType": "request",
+  "name": "update_accessReviewInstanceDecisionItem"
+}-->
+``` http
+PATCH https://graph.microsoft.com/beta/identityGovernance/accessReviews/definitions/5eac5a70-7cd7-4f20-92b0-f9dba70dd7f0/instances/6444d4fd-ab55-4608-8cf9-c6702d172bcc/stages/9458f255-dff2-4d86-9a05-69438f49d7f8/decisions/e6cafba0-cbf0-4748-8868-0810c7f4cc06
+Content-Type: application/json
+
+{
+  "decision": "Approve",
+  "justification": "This person is still on my team",
+}
+```
+
+#### <a name="response"></a>Resposta
+
 <!-- {
   "blockType": "response"
 } -->

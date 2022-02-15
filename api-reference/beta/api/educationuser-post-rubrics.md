@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: dipakboyed
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: 283a739fc6b606d91034542ad5ef1ab4eff073cf
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: 99c4736855f17d89c466bdcd9353a37fa2567346
+ms.sourcegitcommit: 2dd01b49fbd8f330bead92f4708ed1966237c3f4
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62096486"
+ms.lasthandoff: 02/15/2022
+ms.locfileid: "62815843"
 ---
 # <a name="create-educationrubric"></a>Criar educationRubric
 
@@ -18,7 +18,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Crie um novo [objeto educationRubric.](../resources/educationrubric.md)
+Crie um novo [objeto educationRubric](../resources/educationrubric.md) .
 
 ## <a name="permissions"></a>Permissões
 
@@ -46,11 +46,11 @@ POST /education/me/rubrics
 
 ## <a name="request-body"></a>Corpo da solicitação
 
-No corpo da solicitação, fornece uma representação JSON de um [objeto educationRubric.](../resources/educationrubric.md)
+No corpo da solicitação, fornece uma representação JSON de um [objeto educationRubric](../resources/educationrubric.md) .
 
 ## <a name="response"></a>Resposta
 
-Se tiver êxito, este método retornará `201 Created` o código de resposta e um novo objeto [educationRubric](../resources/educationrubric.md) no corpo da resposta.
+Se tiver êxito, este método retornará `201 Created` o código de resposta e um novo [objeto educationRubric](../resources/educationrubric.md) no corpo da resposta.
 
 ## <a name="examples"></a>Exemplos
 
@@ -167,8 +167,7 @@ Content-type: application/json
 
 Este é um exemplo de resposta.
 
-> [!NOTE]
-> O objeto de resposta mostrado aqui pode ser reduzido para facilitar a leitura.
+>**Observação:** o objeto de resposta mostrado aqui pode ser encurtado para legibilidade.
 
 <!-- {
   "blockType": "response",
@@ -376,8 +375,7 @@ Content-type: application/json
 
 Este é um exemplo de resposta.
 
-> [!NOTE]
-> O objeto de resposta mostrado aqui pode ser reduzido para facilitar a leitura.
+>**Observação:** o objeto de resposta mostrado aqui pode ser encurtado para legibilidade.
 
 <!-- {
   "blockType": "response",

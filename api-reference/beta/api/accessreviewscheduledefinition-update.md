@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: isabelleatmsft
 ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: 60473551b20dc38ba12c97d68b370fa524ddae03
-ms.sourcegitcommit: c7ff992ef63e480d070421ba99b28ee129cb6acb
+ms.openlocfilehash: 149ea6004caf2c3f74003fd17815bda92d74b0b2
+ms.sourcegitcommit: 2dd01b49fbd8f330bead92f4708ed1966237c3f4
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "60688065"
+ms.lasthandoff: 02/15/2022
+ms.locfileid: "62815853"
 ---
 # <a name="update-accessreviewscheduledefinition"></a>Atualizar accessReviewScheduleDefinition
 
@@ -31,7 +31,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |:--------------------------------------|:---------------------------------------------------------|
 |Delegado (conta corporativa ou de estudante)     | AccessReview.ReadWrite.All |
 |Delegado (conta pessoal da Microsoft)|Sem suporte.|
-|Aplicativo                            | AccessReview.ReadWrite.All |
+|Application                            | AccessReview.ReadWrite.All |
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- { "blockType": "ignored" } -->
@@ -45,31 +45,32 @@ PUT /identityGovernance/accessReviews/definitions/{review-id}
 | Content-type | application/json. Obrigatório. |
 
 ## <a name="request-body"></a>Corpo da solicitação
-No corpo da solicitação, fornece uma representação JSON de [um objeto accessReviewScheduleDefinition.](../resources/accessreviewscheduledefinition.md)
+No corpo da solicitação, fornece uma representação JSON de [um objeto accessReviewScheduleDefinition](../resources/accessreviewscheduledefinition.md) .
 
 A tabela a seguir mostra as propriedades aceitas para atualizar um accessReviewScheduleDefinition.
 
 | Propriedade | Tipo | Descrição |
 |:-------------|:------------|:------------|
-| descriptionForAdmins | String | Contexto da revisão fornecida aos administradores. |
+| descriptionForAdmins | Cadeia de caracteres | Contexto da revisão fornecida aos administradores. |
 | descriptionForReviewers | String | Contexto da revisão fornecida aos revisadores. |
-| displayName | String | Nome da série de revisão de acesso. |
+| displayName | Cadeia de caracteres | Nome da série de revisão de acesso. |
 | fallbackReviewers|[Coleção accessReviewReviewerScope](../resources/accessreviewreviewerscope.md)|Uma coleção de escopos do revistor usado para definir a lista de revisadores de fallback que são notificados para tomar medidas se nenhum usuário for encontrado na lista de revisadores especificados. Isso pode ocorrer quando o proprietário do grupo é especificado como o revistor, mas o proprietário do grupo não existe, ou o gerente é especificado como revistor, mas o gerente de um usuário não existe.|
 | revisadores | [Coleção accessReviewReviewerScope](../resources/accessreviewreviewerscope.md)|  Define quem são os revisadores. Se nenhum for especificado, a revisão será uma autoavaliação (os usuários revisam seu próprio acesso). A **propriedade reviewers** só será atualizável se usuários individuais são atribuídos como revistores. Consulte [accessReviewReviewerScope](../resources/accessreviewreviewerscope.md). |
-| configurações | [accessReviewScheduleSettings](../resources/accessreviewschedulesettings.md) | As configurações de uma série de revisão de acesso. Consulte [accessReviewScheduleSettings](../resources/accessreviewschedulesettings.md). |
+|stageSettings|[Coleção accessReviewStageSettings](../resources/accessreviewstagesettings.md)| Define quantos estágios cada instância de uma série de revisão de acesso terá. Estágios serão criados sequencialmente com base na **propriedade dependsOn** . Cada estágio pode ter um conjunto diferente de revisadores, revisadores de fallback e configurações. Somente revisadores e revisadores de fallback podem ser atualizados. Consulte [accessReviewStageSettings](../resources/accessreviewstagesettings.md). Opcional.|
+| settings | [accessReviewScheduleSettings](../resources/accessreviewschedulesettings.md) | As configurações de uma série de revisão de acesso. Consulte [accessReviewScheduleSettings](../resources/accessreviewschedulesettings.md). |
 | backupReviewers (preterido)|[Coleção accessReviewReviewerScope](../resources/accessreviewreviewerscope.md)| Essa propriedade foi substituída por **fallbackReviewers**. No entanto, especificar **backupReviewers** ou **fallbackReviewers** preenche automaticamente os mesmos valores para a outra propriedade. |
 
 Uma **solicitação PUT** espera que o objeto completo seja passado, o que inclui todas as propriedades que podem ser escritas, e não apenas as propriedades que estão sendo atualizadas.
 
 ## <a name="response"></a>Resposta
-Se tiver êxito, este método retornará um `204 No Content` código de resposta e nenhum corpo de resposta.
+Se tiver êxito, este método retornará um código `204 No Content` de resposta e nenhum corpo de resposta.
 
 ## <a name="examples"></a>Exemplos
 
 Este é um exemplo de atualização do displayName de uma série de revisão de acesso existente.
 
 ### <a name="request"></a>Solicitação
-No corpo da solicitação, fornece uma representação JSON das novas propriedades do [objeto accessReviewScheduleDefinition.](../resources/accessreviewscheduledefinition.md)
+No corpo da solicitação, fornece uma representação JSON das novas propriedades do [objeto accessReviewScheduleDefinition](../resources/accessreviewscheduledefinition.md) .
 
 
 

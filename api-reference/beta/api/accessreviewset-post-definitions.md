@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: isabelleatmsft
 ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: a3421fc0e98404602982d7307221517e1cb4f850
-ms.sourcegitcommit: fd609cb401ff862c3f5c21847bac9af967c6bf82
+ms.openlocfilehash: ab5489b0df4a44d256a1ebad709dbecf541071dd
+ms.sourcegitcommit: 2dd01b49fbd8f330bead92f4708ed1966237c3f4
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/31/2021
-ms.locfileid: "61650938"
+ms.lasthandoff: 02/15/2022
+ms.locfileid: "62815899"
 ---
 # <a name="create-definitions"></a>Criar definições
 
@@ -18,7 +18,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Crie um novo [objeto accessReviewScheduleDefinition.](../resources/accessreviewscheduledefinition.md)
+Crie um novo [objeto accessReviewScheduleDefinition](../resources/accessreviewscheduledefinition.md) .
 
 ## <a name="permissions"></a>Permissões
 
@@ -28,9 +28,9 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |:--------------------------------------|:---------------------------------------------------------|
 |Delegado (conta corporativa ou de estudante)     | AccessReview.ReadWrite.All  |
 |Delegado (conta pessoal da Microsoft)|Sem suporte.|
-|Aplicativo                            | AccessReview.ReadWrite.All |
+|Application                            | AccessReview.ReadWrite.All |
 
-O usuário interno também deve estar em uma função de diretório que permita que ele crie uma revisão de acesso.  Para obter mais detalhes, consulte os requisitos de função e permissão para [avaliações de acesso.](../resources/accessreviewsv2-overview.md)
+O usuário interno também deve estar em uma função de diretório que permita que ele crie uma revisão de acesso.  Para obter mais detalhes, consulte os requisitos de função e permissão para [avaliações de acesso](../resources/accessreviewsv2-overview.md).
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- { "blockType": "ignored" } -->
@@ -44,7 +44,7 @@ POST /identityGovernance/accessReviews/definitions
 | Content-type | application/json. Obrigatório. |
 
 ## <a name="request-body"></a>Corpo da solicitação
-No corpo da solicitação, fornece uma representação JSON de [um objeto accessReviewScheduleDefinition.](../resources/accessreviewscheduledefinition.md)
+No corpo da solicitação, fornece uma representação JSON de [um objeto accessReviewScheduleDefinition](../resources/accessreviewscheduledefinition.md) .
 
 A tabela a seguir mostra as propriedades aceitas para criar um accessReview.
 
@@ -52,30 +52,29 @@ A tabela a seguir mostra as propriedades aceitas para criar um accessReview.
 |:-------------|:------------|:------------|
 | additionalNotificationRecipients   |[Coleção accessReviewNotificationRecipientItem](../resources/accessReviewNotificationRecipientItem.md)| Define a lista de usuários adicionais ou membros do grupo a serem notificados sobre o progresso da revisão de acesso. |
 | descriptionForAdmins | String | Contexto da revisão fornecida aos administradores. Obrigatório. |
-  descriptionForReviewers | String | Contexto da revisão fornecida aos revisadores em notificações por email. As notificações por email suportam até 256 caracteres. Obrigatório. |
-| displayName | String | Nome da série de revisão de acesso. Obrigatório.|
-| fallbackReviewers |[Coleção accessReviewReviewerScope](../resources/accessreviewreviewerscope.md)|Se fornecido, os revisadores de fallback serão solicitados a concluir uma revisão se os revistores primários não existirem. Por exemplo, se os gerentes forem selecionados como e uma entidade em revisão não tiver um gerente no Azure AD, os revisadores de fallback serão solicitados a revisar `reviewers` essa entidade.|
-| instanceEnumerationScope | [accessReviewScope](../resources/accessreviewscope.md) | No caso de uma revisão de todos os grupos, isso determina o escopo de quais grupos serão revisados. Consulte [accessReviewScope](../resources/accessreviewscope.md) e também saiba como [configurar o escopo da sua definição de revisão de acesso.](/graph/accessreviews-scope-concept)| 
-| revisadores | [Coleção accessReviewReviewerScope](../resources/accessreviewreviewerscope.md) | Define quem são os revisadores. Se nenhum for especificado, a revisão será uma autoavaliação (os usuários revisam seu próprio acesso).  Para exemplos de opções para atribuir revisadores, consulte Atribuir revisadores à sua definição de revisão de acesso [usando a API do Microsoft Graph](/graph/accessreviews-reviewers-concept). |
-| scope | [accessReviewScope](../resources/accessreviewscope.md) | Define as entidades cujo acesso é revisado. Consulte [accessReviewScope](../resources/accessreviewscope.md) e também saiba como [configurar o escopo da sua definição de revisão de acesso.](/graph/accessreviews-scope-concept) Obrigatório.| 
-| configurações | [accessReviewScheduleSettings](../resources/accessreviewschedulesettings.md)| As configurações de uma série de revisão de acesso. A recorrência é determinada aqui. Consulte [accessReviewScheduleSettings](../resources/accessreviewschedulesettings.md). |
+  descriptionForReviewers | Cadeia de caracteres | Contexto da revisão fornecida aos revisadores em notificações por email. As notificações por email suportam até 256 caracteres. Obrigatório. |
+| displayName | Cadeia de caracteres | Nome da série de revisão de acesso. Obrigatório.|
+| fallbackReviewers |[Coleção accessReviewReviewerScope](../resources/accessreviewreviewerscope.md)|Se fornecido, os revisadores de fallback serão solicitados a concluir uma revisão se os revistores primários não existirem. Por exemplo, se `reviewers` os gerentes forem selecionados como e uma entidade em revisão não tiver um gerente no Azure AD, os revisadores de fallback serão solicitados a revisar essa entidade. <br/><br/>**OBSERVAÇÃO:** O valor dessa propriedade será ignorado se os revisores de fallback são atribuídos por meio da **propriedade stageSettings** .|
+| instanceEnumerationScope | [accessReviewScope](../resources/accessreviewscope.md) | No caso de uma revisão de todos os grupos, isso determina o escopo de quais grupos serão revisados. Consulte [accessReviewScope](../resources/accessreviewscope.md) e também saiba como [configurar o escopo da sua definição de revisão de acesso](/graph/accessreviews-scope-concept).| 
+| revisadores | [Coleção accessReviewReviewerScope](../resources/accessreviewreviewerscope.md) | Define quem são os revisadores. Se nenhum for especificado, a revisão será uma autoavaliação (os usuários revisam seu próprio acesso).  Para ver exemplos de opções para atribuir revisadores, consulte [Assign reviewers to your access review definition using the Microsoft Graph API](/graph/accessreviews-reviewers-concept). <br/><br/>**OBSERVAÇÃO:** O valor dessa propriedade será ignorado se os revisores são atribuídos por meio da **propriedade stageSettings** . |
+| scope | [accessReviewScope](../resources/accessreviewscope.md) | Define as entidades cujo acesso é revisado. Consulte  [accessReviewScope](../resources/accessreviewscope.md) e também saiba como [configurar o escopo da sua definição de revisão de acesso](/graph/accessreviews-scope-concept). Obrigatório.| 
+|stageSettings|[Coleção accessReviewStageSettings](../resources/accessreviewstagesettings.md)| Define quantos estágios cada instância de uma série de revisão de acesso terá. Estágios serão criados sequencialmente com base na propriedade dependsOn. Cada estágio pode ter um conjunto diferente de revisadores, revisadores de fallback e configurações. <br/><br/>Quando essa propriedade é definida, seus valores são usados em vez dos valores correspondentes no [objeto accessReviewScheduleDefinition](../resources/accessreviewscheduledefinition.md) e sua **propriedade settings** . Opcional. |
+| settings | [accessReviewScheduleSettings](../resources/accessreviewschedulesettings.md)| As configurações de uma série de revisão de acesso. A recorrência é determinada aqui. Consulte [accessReviewScheduleSettings](../resources/accessreviewschedulesettings.md). |
 | backupReviewers (preterido) |[Coleção accessReviewReviewerScope](../resources/accessreviewreviewerscope.md)| Essa propriedade foi substituída por **fallbackReviewers**. No entanto, especificar **backupReviewers** ou **fallbackReviewers** preenche automaticamente os mesmos valores para a outra propriedade. |
 
 ## <a name="response"></a>Resposta
-Se tiver êxito, este método retornará um código de resposta e um `201 Created` [objeto accessReviewScheduleDefinition](../resources/accessreviewscheduledefinition.md) no corpo da resposta.
+Se tiver êxito, este método retornará um `201 Created` código de resposta e um [objeto accessReviewScheduleDefinition](../resources/accessreviewscheduledefinition.md) no corpo da resposta.
 
 ## <a name="examples"></a>Exemplos
 
 ### <a name="example-1-create-an-access-review-on-a-group"></a>Exemplo 1: Criar uma revisão de acesso em um grupo
 
-Este é um exemplo de criação de uma revisão de acesso com as seguintes configurações:
-+ A revisão revisa todos os membros de um grupo, cuja **id de grupo** é `02f3bafb-448c-487c-88c2-5fd65ce49a41` .
-+ Um usuário específico, cuja **id de usuário** `398164b1-5196-49dd-ada2-364b49f99b27` é o revistor.
+O exemplo a seguir cria uma revisão de acesso com as seguintes configurações:
++ A revisão revisa todos os membros de um grupo com **a id** `02f3bafb-448c-487c-88c2-5fd65ce49a41`.
++ Um usuário específico com **a id do usuário** `398164b1-5196-49dd-ada2-364b49f99b27` é o revistor.
 + Ela se recursa semanalmente e continua indefinidamente.
 
 #### <a name="request"></a>Solicitação
-No corpo da solicitação, fornece uma representação JSON do [objeto accessReviewScheduleDefinition.](../resources/accessreviewscheduledefinition.md)
-
 
 # <a name="http"></a>[HTTP](#tab/http)
 <!-- {
@@ -138,7 +137,7 @@ Content-type: application/json
 [!INCLUDE [sample-code](../includes/snippets/java/create-accessreviewscheduledefinition-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[Go](#tab/go)
+# <a name="go"></a>[Ir](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/create-accessreviewscheduledefinition-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
@@ -217,14 +216,14 @@ Content-type: application/json
 
 ### <a name="example-2-create-an-access-review-on-all-teams-with-inactive-guest-users"></a>Exemplo 2: Criar uma revisão de acesso em todas as equipes com usuários convidados inativos
 
-Este é um exemplo de criação de uma revisão de acesso com as seguintes configurações:
+O exemplo a seguir cria uma revisão de acesso com as seguintes configurações:
 + A revisão revisa todas as equipes com usuários convidados inativos. O período de inatividade é de 30 dias a partir da data de início da revisão de acesso.
 + Os proprietários do grupo são os revisadores e os revisadores de fallback são atribuídos.
 + Ela se recorre no terceiro dia de cada trimestre e continua indefinidamente.
-+ **autoApplyDecisionsEnabled** é definido como `true` com **o defaultDecision** definido como `Deny` .
++ **autoApplyDecisionsEnabled** é definido como `true` com **o defaultDecision** definido como `Deny`.
 
 #### <a name="request"></a>Solicitação
-No corpo da solicitação, fornece uma representação JSON do [objeto accessReviewScheduleDefinition.](../resources/accessreviewscheduledefinition.md)
+No corpo da solicitação, fornece uma representação JSON do [objeto accessReviewScheduleDefinition](../resources/accessreviewscheduledefinition.md) .
 
 # <a name="http"></a>[HTTP](#tab/http)
 <!-- {
@@ -301,7 +300,7 @@ Content-type: application/json
 [!INCLUDE [sample-code](../includes/snippets/java/create-accessreviewscheduledefinition-inactiveguests-m365-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[Go](#tab/go)
+# <a name="go"></a>[Ir](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/create-accessreviewscheduledefinition-inactiveguests-m365-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
@@ -395,7 +394,7 @@ Content-type: application/json
 ```
 ### <a name="example-3-create-an-access-review-of-all-users-to-an-application"></a>Exemplo 3: Criar uma revisão de acesso de todos os usuários para um aplicativo
 
-Este é um exemplo de criação de uma revisão de acesso com as seguintes configurações:
+O exemplo a seguir cria uma revisão de acesso com as seguintes configurações:
 + A revisão revisa o acesso do usuário a um aplicativo.
 + Os gerentes de pessoas são revisadores e revisadores de fallback são membros de um grupo.
 + Ela recorre semesanuais e termina 1 ano a partir do startDate.
@@ -491,7 +490,7 @@ Content-type: application/json
 [!INCLUDE [sample-code](../includes/snippets/java/create-accessreviewscheduledefinition-allusers-m365-aadrole-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[Go](#tab/go)
+# <a name="go"></a>[Ir](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/create-accessreviewscheduledefinition-allusers-m365-aadrole-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
@@ -572,6 +571,198 @@ Content-type: application/json
         "endDate": "2022-05-05"
       }
     }
+  },
+  "additionalNotificationRecipients": []
+}
+```
+
+### <a name="example-4-create-an-access-review-on-a-group-with-multiple-stages"></a>Exemplo 4: Criar uma revisão de acesso em um grupo com vários estágios
+
+O exemplo a seguir cria uma revisão de acesso com as seguintes configurações:
++ A revisão revisa todos os membros de um grupo com **a id** `02f3bafb-448c-487c-88c2-5fd65ce49a41`.
++ Ele tem dois estágios:
+  + Um usuário específico com **a id do usuário** `398164b1-5196-49dd-ada2-364b49f99b27` é o revistor do primeiro estágio.
+  + Os gerentes de pessoas são revisadores e revisadores de fallback para o segundo estágio.
++ Ela se recursa semanalmente e continua indefinidamente.
+
+#### <a name="request"></a>Solicitação
+
+
+<!-- {
+  "blockType": "request",
+  "name": "create_accessReviewScheduleDefinition_group_multiStage"
+}-->
+```http
+POST https://graph.microsoft.com/beta/identityGovernance/accessReviews/definitions
+Content-type: application/json
+
+{
+  "displayName": "Group Multi-stage Access Review",
+  "descriptionForAdmins": "New scheduled access review",
+  "descriptionForReviewers": "If you have any questions, contact jerry@contoso.com",
+  "scope": {
+    "@odata.type": "#microsoft.graph.accessReviewQueryScope",
+    "query": "/groups/02f3bafb-448c-487c-88c2-5fd65ce49a41/transitiveMembers",
+    "queryType": "MicrosoftGraph"
+  },
+  "stageSettings": [
+    {
+      "stageId": "1",
+      "durationInDays": 2,
+      "recommendationsEnabled": false,
+      "decisionsThatWillMoveToNextStage": [
+          "NotReviewed",
+          "Approve"
+      ],
+      "reviewers": [
+        {
+          "query": "/users/398164b1-5196-49dd-ada2-364b49f99b27",
+          "queryType": "MicrosoftGraph"
+        }
+      ]
+    },
+    {
+      "stageId": "2",
+      "dependsOn": [
+          "1"
+      ],
+      "durationInDays": 2,
+      "recommendationsEnabled": true,
+      "reviewers": [
+        {
+          "query": "./manager",
+          "queryType": "MicrosoftGraph",
+          "queryRoot": "decisions"
+        }
+      ],
+      "fallbackReviewers": [
+        {
+          "query": "/groups/072ac5f4-3f13-4088-ab30-0a276f3e6322/transitiveMembers",
+          "queryType": "MicrosoftGraph"
+        }
+      ]
+    }
+  ],
+  "settings": {
+    "mailNotificationsEnabled": true,
+    "reminderNotificationsEnabled": true,
+    "justificationRequiredOnApproval": true,
+    "defaultDecisionEnabled": false,
+    "defaultDecision": "None",
+    "instanceDurationInDays": 4,
+    "recurrence": {
+      "pattern": {
+        "type": "weekly",
+        "interval": 1
+      },
+      "range": {
+        "type": "noEnd",
+        "startDate": "2020-09-08T12:02:30.667Z"
+      }
+    },
+    "decisionHistoriesForReviewersEnabled": true
+  }
+}
+
+```
+
+#### <a name="response"></a>Resposta
+>**Observação:** o objeto de resposta mostrado aqui pode ser encurtado para legibilidade.
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.accessReviewScheduleDefinition"
+} -->
+```http
+HTTP/1.1 201 Created
+Content-type: application/json
+
+{
+  "id": "29f2d16e-9ca6-4052-bbfe-802c48944448",
+  "displayName": "Group Multi-stage Access Review",
+  "createdDateTime": "0001-01-01T00:00:00Z",
+  "lastModifiedDateTime": "0001-01-01T00:00:00Z",
+  "status": "NotStarted",
+  "descriptionForAdmins": "New scheduled access review",
+  "descriptionForReviewers": "If you have any questions, contact jerry@contoso.com",
+  "instanceEnumerationScope": null,
+  "createdBy": {
+    "id": "957f1027-c0ee-460d-9269-b8444459e0fe",
+    "displayName": "MOD Administrator",
+    "userPrincipalName": "admin@contoso.com"
+  },
+  "scope": {
+    "@odata.type": "#microsoft.graph.accessReviewQueryScope",
+    "query": "/groups/b74444cb-038a-4802-8fc9-b9d1ed0cf11f/transitiveMembers",
+    "queryType": "MicrosoftGraph"
+  },
+  "stageSettings": [
+    {
+      "stageId": "1",
+      "durationInDays": 2,
+      "recommendationsEnabled": false,
+      "decisionsThatWillMoveToNextStage": [
+          "NotReviewed",
+          "Approve"
+      ],
+      "reviewers": [
+        {
+          "query": "/users/398164b1-5196-49dd-ada2-364b49f99b27",
+          "queryType": "MicrosoftGraph"
+        }
+      ]
+    },
+    {
+      "stageId": "2",
+      "dependsOn": [
+          "1"
+      ],
+      "durationInDays": 2,
+      "recommendationsEnabled": true,
+      "reviewers": [
+        {
+          "query": "./manager",
+          "queryType": "MicrosoftGraph",
+          "queryRoot": "decisions"
+        }
+      ],
+      "fallbackReviewers": [
+        {
+          "query": "/groups/072ac5f4-3f13-4088-ab30-0a276f3e6322/transitiveMembers",
+          "queryType": "MicrosoftGraph"
+        }
+      ]
+    }
+  ], 
+  "settings": {
+    "mailNotificationsEnabled": true,
+    "reminderNotificationsEnabled": true,
+    "justificationRequiredOnApproval": true,
+    "defaultDecisionEnabled": false,
+    "defaultDecision": "None",
+    "instanceDurationInDays": 1,
+    "autoApplyDecisionsEnabled": false,
+    "recommendationsEnabled": false,
+    "recurrence": {
+      "pattern": {
+        "type": "weekly",
+        "interval": 1,
+        "month": 0,
+        "dayOfMonth": 0,
+        "daysOfWeek": [],
+        "firstDayOfWeek": "sunday",
+        "index": "first"
+      },
+      "range": {
+        "type": "noEnd",
+        "numberOfOccurrences": 0,
+        "recurrenceTimeZone": null,
+        "startDate": "2020-09-08",
+        "endDate": null
+      }
+    },
+    "decisionHistoriesForReviewersEnabled": true,
+    "applyActions": []
   },
   "additionalNotificationRecipients": []
 }

@@ -5,12 +5,12 @@ doc_type: enumPageType
 ms.localizationpriority: medium
 ms.prod: non-product-specific
 author: MSGraphDocsvTeam
-ms.openlocfilehash: f7f0016b8f709001ea1adf8621afdcf435e4a190
-ms.sourcegitcommit: dbacb04ae7138ac3b109683e63a6ff27c166f421
+ms.openlocfilehash: b7db893231e7c28479b446e081e9501a79b27aa3
+ms.sourcegitcommit: 2dd01b49fbd8f330bead92f4708ed1966237c3f4
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/14/2022
-ms.locfileid: "62804574"
+ms.lasthandoff: 02/15/2022
+ms.locfileid: "62815962"
 ---
 # <a name="enum-values"></a>Valores denum
 
@@ -78,6 +78,13 @@ Namespace: microsoft.graph
 |unknownFutureValue|
 
 ### <a name="accessreviewinstancedecisionitemfilterbycurrentuseroptions-values"></a>valores accessReviewInstanceDecisionItemFilterByCurrentUserOptions 
+
+|Member|
+|:---|
+|revistor|
+|unknownFutureValue|
+
+### <a name="accessreviewstagefilterbycurrentuseroptions-values"></a>valores accessReviewStageFilterByCurrentUserOptions 
 
 |Member|
 |:---|
@@ -256,7 +263,7 @@ Namespace: microsoft.graph
 |Inteiro|
 |Referência|
 |Binária|
-|Boolean|
+|Booliano|
 |DateTime|
 
 ### <a name="mutability-values"></a>valores de mutabilidade
@@ -2451,7 +2458,7 @@ Valores possíveis para tipos de conta de usuário (associação ao grupo), por 
 
 |Membro    |Valor    |Descrição |
 |:---------|:--------|:----------- |
-|team      |0        |Indica que o aplicativo Teams pode ser instalado em uma equipe e está autorizado a acessar os dados dessa equipe.|
+|equipe      |0        |Indica que o aplicativo Teams pode ser instalado em uma equipe e está autorizado a acessar os dados dessa equipe.|
 |groupChat |1        |Indica que o aplicativo Teams pode ser instalado em um chat de grupo e está autorizado a acessar os dados desse chat de grupo.|
 |pessoal  |2        |Indica que o aplicativo Teams pode ser instalado no escopo pessoal de um usuário e está autorizado a acessar os dados desse usuário.|
 
@@ -2624,7 +2631,7 @@ Valores possíveis para tipos de conta de usuário (associação ao grupo), por 
 
 |Member|
 |:---|
-|team|
+|equipe|
 |channel|
 |chat|
 |unknownFutureValue|

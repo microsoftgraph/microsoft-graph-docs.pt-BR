@@ -163,7 +163,7 @@ items:
         href: /graph/toolkit/overview?context=graph/api/beta
       - name: Introdução
         items:
-          - name: Visão Geral
+          - name: Visão geral
             href: /graph/toolkit/get-started/overview?context=graph/api/beta
           - name: /graph/toolkit para React
             href: /graph/toolkit/get-started/mgt-react?context=graph/api/beta
@@ -260,11 +260,11 @@ items:
   - name: Referência beta
     expanded: true
     items:
-      - name: Visão Geral
+      - name: Visão geral
         href: overview.md
       - name: Usuários
         items:
-          - name: Visão Geral
+          - name: Visão geral
             href: resources/users.md
           - name: Usuário
             href: resources/user.md
@@ -560,7 +560,7 @@ items:
                 href: api/profile-get.md
               - name: Excluir perfil do usuário
                 href: api/profile-delete.md
-          - name: Trabalho em equipe
+          - name: Teamwork
             items:
               - name: Aplicativo instalado
                 href: resources/teamsappinstallation.md
@@ -920,7 +920,7 @@ items:
                         href: api/application-delete-extensionproperty.md
               - name: Credenciais de identidade federada (visualização)
                 items:
-                  - name: Visão Geral
+                  - name: Visão geral
                     href: resources/federatedidentitycredentials-overview.md
                   - name: Credenciais de identidade federada
                     href: resources/federatedidentitycredential.md
@@ -1115,7 +1115,7 @@ items:
                 items:
                   - name: Listar memberOf
                     href: api/serviceprincipal-list-memberof.md
-                  - name: Listar memberOf transitivos
+                  - name: List transitive memberOf
                     href: api/serviceprincipal-list-transitivememberof.md
                   - name: Verificar grupos de membros
                     href: api/directoryobject-checkmembergroups.md
@@ -1553,7 +1553,7 @@ items:
                 href: api/call-logteleconferencedevicequality.md
           - name: Registros de chamadas
             items:
-              - name: Visão Geral
+              - name: Visão geral
                 href: resources/callrecords-api-overview.md
               - name: Registro de chamada
                 items:
@@ -1662,11 +1662,11 @@ items:
       - name: Conformidade
         displayName: 'Compliance API, Microsoft Graph Compliance API'
         items:
-          - name: Visão Geral
+          - name: Visão geral
             href: resources/complianceapioverview.md
           - name: Descoberta eDiscovery (visualização)
             items:
-              - name: Visão Geral
+              - name: Visão geral
                 href: resources/ediscovery-eDiscoveryapioverview.md
               - name: Caso de Descoberta Eletrônica
                 href: resources/ediscovery-case.md
@@ -1822,7 +1822,7 @@ items:
                     href: api/ediscovery-tag-ashierarchy.md
           - name: Solicitação de direitos do sujeito
             items:
-              - name: Visão Geral
+              - name: Visão geral
                 href: resources/subjectrightsrequest-subjectrightsrequestapioverview.md
               - name: Solicitação de direitos do sujeito
                 href: resources/subjectrightsrequest.md
@@ -1880,7 +1880,7 @@ items:
       - name: Reserva de clientes
         displayName: 'Bookings, Microsoft Bookings'
         items:
-          - name: Visão Geral
+          - name: Visão geral
             href: resources/booking-api-overview.md
           - name: Negócio de reservas
             href: resources/bookingbusiness.md
@@ -10030,7 +10030,7 @@ items:
                         href: api/intune-tem-telecomexpensemanagementpartner-update.md
           - name: Cloud PC (visualização)
             items:
-              - name: Visão Geral
+              - name: Visão geral
                 href: resources/cloudpc-api-overview.md
               - name: Ponto de extremidade virtual
                 href: resources/virtualendpoint.md
@@ -10418,7 +10418,7 @@ items:
                     href: api/managedtenants-windowsprotectionstate-get.md
           - name: Comunicações e integridade do serviço
             items:
-              - name: Visão Geral
+              - name: Visão geral
                 href: resources/service-communications-api-overview.md
               - name: Comunicado do serviço
                 href: resources/serviceannouncement.md
@@ -11111,7 +11111,7 @@ items:
                     href: api/contract-list.md
               - name: Atributos de segurança personalizados (visualização)
                 items:
-                  - name: Visão Geral
+                  - name: Visão geral
                     href: resources/custom-security-attributes-overview.md
                   - name: Conjuntos de atributos
                     href: resources/attributeset.md
@@ -11517,7 +11517,7 @@ items:
             items:
               - name: Métodos de autenticação
                 items:
-                  - name: Visão Geral
+                  - name: Visão geral
                     href: resources/authenticationmethods-overview.md
                   - name: Listar todos os métodos
                     href: api/authentication-list-methods.md
@@ -11914,7 +11914,7 @@ items:
                         href: api/activitybasedtimeoutpolicy-delete.md
                   - name: Política de método de autenticação de aplicativo (visualização)
                     items:
-                      - name: Visão Geral
+                      - name: Visão geral
                         href: resources/applicationAuthenticationMethodPolicy.md
                       - name: Política de gerenciamento de aplicativos de locatário
                         items:
@@ -11974,7 +11974,7 @@ items:
                         href: api/authenticationflowspolicy-update.md
                   - name: Política de métodos de autenticação
                     items:
-                      - name: Visão Geral
+                      - name: Visão geral
                         href: resources/authenticationmethodspolicies-overview.md
                       - name: Política de métodos de autenticação
                         href: resources/authenticationmethodspolicy.md
@@ -12415,21 +12415,36 @@ items:
                         href: api/accessreviewinstance-list-contactedreviewers.md
                       - name: Listar aprovação pendente (preterida)
                         href: api/accessreviewinstance-pendingaccessreviewinstances.md
-                      - name: Item de decisão da instância de revisão do Access
-                        href: resources/accessreviewinstancedecisionitem.md
-                        items:
-                          - name: Listar
-                            href: api/accessreviewinstance-list-decisions.md
-                          - name: Obter
-                            href: api/accessreviewinstancedecisionitem-get.md
-                          - name: Filtrar pelo usuário atual
-                            href: api/accessreviewinstancedecisionitem-filterbycurrentuser.md
-                          - name: Atualizar
-                            href: api/accessreviewinstancedecisionitem-update.md
-                          - name: Registrar todas as decisões
-                            href: api/accessreviewinstancedecisionitem-recordalldecisions.md
-                          - name: Listar aprovação pendente (preterida)
-                            href: api/accessreviewinstancedecisionitem-listpendingapproval.md
+                  - name: Estágio de revisão do Access
+                    href: resources/accessreviewstage.md
+                    items:
+                      - name: Listar
+                        href: api/accessreviewinstance-list-stages.md
+                      - name: Obter
+                        href: api/accessreviewstage-get.md
+                      - name: Atualizar
+                        href: api/accessreviewstage-update.md
+                      - name: Filtrar pelo usuário atual
+                        href: api/accessreviewstage-filterbycurrentuser.md
+                      - name: Parar
+                        href: api/accessreviewstage-stop.md
+                  - name: Item de decisão da instância de revisão do Access
+                    href: resources/accessreviewinstancedecisionitem.md
+                    items:
+                      - name: Listar decisões de uma instância
+                        href: api/accessreviewinstance-list-decisions.md
+                      - name: Listar decisões de um estágio de uma instância
+                        href: api/accessreviewstage-list-decisions.md
+                      - name: Obter
+                        href: api/accessreviewinstancedecisionitem-get.md
+                      - name: Filtrar pelo usuário atual
+                        href: api/accessreviewinstancedecisionitem-filterbycurrentuser.md
+                      - name: Atualizar
+                        href: api/accessreviewinstancedecisionitem-update.md
+                      - name: Registrar todas as decisões
+                        href: api/accessreviewinstancedecisionitem-recordalldecisions.md
+                      - name: Listar aprovação pendente (preterida)
+                        href: api/accessreviewinstancedecisionitem-listpendingapproval.md
                   - name: Política de revisão do Access
                     href: resources/accessreviewpolicy.md
                     items:
@@ -13680,7 +13695,7 @@ items:
                         href: api/userregistrationdetails-get.md
           - name: Microsoft 365 de uso
             items:
-              - name: Visão Geral
+              - name: Visão geral
                 href: resources/report.md
               - name: Uso do dispositivo do Microsoft Teams
                 href: resources/microsoft-teams-device-usage-reports.md
@@ -13937,7 +13952,7 @@ items:
                 href: api/search-query.md
           - name: Index
             items:
-              - name: Visão Geral
+              - name: Visão geral
                 href: resources/indexing-api-overview.md
               - name: Conexão externa
                 items:
@@ -14074,7 +14089,7 @@ items:
                     href: api/informationprotectionlabel-extractlabel.md
               - name: Avaliação de ameaças
                 items:
-                  - name: Visão Geral
+                  - name: Visão geral
                     href: resources/threatassessment-api-overview.md
                   - name: Solicitação de avaliação de ameaças
                     href: resources/threatassessmentrequest.md
@@ -14130,7 +14145,7 @@ items:
       - name: Sites e listas
         displayName: 'SharePoint, OneDrive, OneDrive for Business, OneDrive business, OneDrive personal'
         items:
-          - name: Visão Geral
+          - name: Visão geral
             href: resources/sharepoint.md
           - name: Sites
             items:
@@ -14168,7 +14183,7 @@ items:
                 href: api/site-search.md
               - name: Listar operações
                 href: api/site-list-operations.md
-              - name: Permissions
+              - name: Permissões
                 items:
                   - name: Permissão
                     href: resources/permission.md
@@ -14349,7 +14364,7 @@ items:
       - name: Tarefas e planos
         displayName: Planner
         items:
-          - name: Visão Geral
+          - name: Visão geral
             href: resources/planner-overview.md
           - name: Planejar
             href: resources/plannerplan.md
@@ -14761,7 +14776,7 @@ items:
                     href: api/chat-teamsappinstallation-upgrade.md
                   - name: Remover aplicativo do chat
                     href: api/chat-delete-installedapps.md
-          - name: Dispositivo
+          - name: Device
             items:
               - name: Dispositivos provisionados
                 href: resources/teamworkdevice.md
@@ -15058,7 +15073,7 @@ items:
       - name: Tarefas pendentes
         displayName: Microsoft To Do
         items:
-          - name: Visão Geral
+          - name: Visão geral
             href: resources/tasks-overview.md
           - name: Lista de tarefas
             items:
@@ -15136,7 +15151,7 @@ items:
                 href: api/linkedresource_v2-delete.md
           - name: Tarefas a fazer(antigo)
             items:
-              - name: Visão Geral
+              - name: Visão geral
                 href: resources/todo-overview.md
               - name: Lista de tarefas
                 href: resources/todotasklist.md
@@ -15275,7 +15290,7 @@ items:
                     href: api/outlookcategory-delete.md
               - name: Propriedades estendidas
                 items:
-                  - name: Visão Geral
+                  - name: Visão geral
                     href: resources/extended-properties-overview.md
                   - name: Propriedades estendidas de valor único
                     items:

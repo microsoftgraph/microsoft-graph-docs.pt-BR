@@ -5,18 +5,18 @@ ms.localizationpriority: medium
 author: sharad-sharma-msft
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: 993671d20f8c18da480c344e110bb8e7ca5acf89
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: ed9478c322441350ca856febb1d23d60f8839461
+ms.sourcegitcommit: 2dd01b49fbd8f330bead92f4708ed1966237c3f4
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62101001"
+ms.lasthandoff: 02/15/2022
+ms.locfileid: "62815969"
 ---
 # <a name="create-educationrubric"></a>Criar educationRubric
 
 Namespace: microsoft.graph
 
-Crie um novo [objeto educationRubric.](../resources/educationrubric.md)
+Crie um novo [objeto educationRubric](../resources/educationrubric.md) .
 
 ## <a name="permissions"></a>Permissões
 
@@ -44,11 +44,11 @@ POST /education/me/rubrics
 
 ## <a name="request-body"></a>Corpo da solicitação
 
-No corpo da solicitação, fornece uma representação JSON de um [objeto educationRubric.](../resources/educationrubric.md)
+No corpo da solicitação, fornece uma representação JSON de um [objeto educationRubric](../resources/educationrubric.md) .
 
 ## <a name="response"></a>Resposta
 
-Se tiver êxito, este método retornará um código `201 Created` de resposta e um novo objeto [educationRubric](../resources/educationrubric.md) no corpo da resposta.
+Se tiver êxito, este método retornará um `201 Created` código de resposta e um novo [objeto educationRubric](../resources/educationrubric.md) no corpo da resposta.
 
 ## <a name="examples"></a>Exemplos
 
@@ -166,8 +166,7 @@ Content-type: application/json
 
 Este é um exemplo de resposta.
 
-> [!NOTE]
-> O objeto de resposta mostrado aqui pode ser reduzido para facilitar a leitura.
+>**Observação:** o objeto de resposta mostrado aqui pode ser encurtado para legibilidade.
 
 <!-- {
   "blockType": "response",
@@ -376,8 +375,7 @@ Content-type: application/json
 
 Este é um exemplo de resposta.
 
-> [!NOTE]
-> O objeto de resposta mostrado aqui pode ser reduzido para facilitar a leitura.
+>**Observação:** o objeto de resposta mostrado aqui pode ser encurtado para legibilidade.
 
 <!-- {
   "blockType": "response",

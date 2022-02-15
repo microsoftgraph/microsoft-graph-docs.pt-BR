@@ -1,16 +1,16 @@
 ---
 title: Tipo de recurso accessReviewInstance
-description: Representa uma recorrência de um `accessReviewScheduleDefinition` .
+description: Representa uma recorrência de um `accessReviewScheduleDefinition`.
 author: isabelleatmsft
 ms.localizationpriority: medium
 ms.prod: governance
 doc_type: resourcePageType
-ms.openlocfilehash: 8bc572a62347952cbad711cf9dd9604ab55e9f1d
-ms.sourcegitcommit: 3f3975916b5c531ee63d92340ccd6e73e879e8d7
+ms.openlocfilehash: 68863a90e4b059a22525c6f8342c32fb513a2e7c
+ms.sourcegitcommit: 2dd01b49fbd8f330bead92f4708ed1966237c3f4
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/21/2022
-ms.locfileid: "62161989"
+ms.lasthandoff: 02/15/2022
+ms.locfileid: "62815976"
 ---
 # <a name="accessreviewinstance-resource-type"></a>Tipo de recurso accessReviewInstance
 
@@ -29,8 +29,8 @@ Cada **accessReviewInstance** contém uma lista de [decisões](accessreviewinsta
 | Método | Tipo de retorno | Descrição |
 |:---------------|:--------|:----------|
 |[Listar accessReviewInstances](../api/accessreviewscheduledefinition-list-instances.md) | [Coleção accessReviewInstance](accessreviewinstance.md) | Obter uma lista dos [objetos accessReviewInstance](../resources/accessreviewinstance.md) e suas propriedades. |
-|[Obter accessReviewInstance](../api/accessreviewinstance-get.md) | [accessReviewInstance](accessreviewinstance.md) | Leia as propriedades e as relações de um [objeto accessReviewInstance.](../resources/accessreviewinstance.md) |
-|[Atualizar accessReviewInstance](../api/accessreviewinstance-update.md)|[accessReviewInstance](../resources/accessreviewinstance.md)|Atualize os revisores de [um objeto accessReviewInstance.](../resources/accessreviewinstance.md)|
+|[Obter accessReviewInstance](../api/accessreviewinstance-get.md) | [accessReviewInstance](accessreviewinstance.md) | Leia as propriedades e as relações de um [objeto accessReviewInstance](../resources/accessreviewinstance.md) . |
+|[Atualizar accessReviewInstance](../api/accessreviewinstance-update.md)|[accessReviewInstance](../resources/accessreviewinstance.md)|Atualize os revisores de [um objeto accessReviewInstance](../resources/accessreviewinstance.md) .|
 |[filterByCurrentUser](../api/accessreviewinstance-filterbycurrentuser.md)|[Coleção accessReviewInstance](../resources/accessreviewinstance.md)|Retorna todas as instâncias em um [determinado accessReviewScheduleDefinition](accessreviewscheduledefinition.md) para o qual o usuário de chamada é o revisor de uma ou mais decisões.|
 |[Listar revisadores contatados](../api/accessreviewinstance-list-contactedreviewers.md)|[Coleção accessReviewReviewer](../resources/accessreviewreviewer.md)|Obter os revisadores que receberam notificações para uma instância de revisão de acesso.|
 |[sendReminder](../api/accessreviewinstance-sendreminder.md) | Nenhum. | Envie um lembrete aos revisores de um accessReviewInstance. |
@@ -38,9 +38,10 @@ Cada **accessReviewInstance** contém uma lista de [decisões](accessreviewinsta
 |[acceptRecommendations](../api/accessreviewinstance-acceptrecommendations.md) | Nenhum. | Permite que o usuário de chamada aceite a recomendação de decisão para cada acesso NotReviewInstanceDecisionItem em que ele é o revisor para um accessReviewInstance específico. |
 |[applyDecisions](../api/accessreviewinstance-applydecisions.md) | Nenhum. | Aplicar decisões manualmente em um accessReviewInstance. |
 |[batchRecordDecisions](../api/accessreviewinstance-batchrecorddecisions.md)|Nenhum|Revise lotes de entidades ou recursos em uma chamada.|
-|[resetDecisions](../api/accessreviewinstance-resetdecisions.md)|Nenhum|Redefine todos os itens de decisão em uma instância para `notReviewed` .|
+|[resetDecisions](../api/accessreviewinstance-resetdecisions.md)|Nenhum|Redefine todos os itens de decisão em uma instância para `notReviewed`.|
+|[Listar estágios](../api/accessreviewinstance-list-stages.md)|[Coleção accessReviewStage](../resources/accessreviewstage.md)| Recupere os estágios em uma instância de revisão de acesso de vários estágios.|
 |[Listar decisões](../api/accessreviewinstance-list-decisions.md)|[Coleção accessReviewInstanceDecisionItem](../resources/accessreviewinstancedecisionitem.md)|Obter os recursos accessReviewInstanceDecisionItem da propriedade de navegação de decisões.|
-|[Lista pendingAccessReviewInstances (preterido)](../api/accessreviewinstance-pendingaccessreviewinstances.md) | [Coleção accessReviewInstance.](accessreviewinstance.md) | Obter todos os recursos de accessReviewInstance pendentes atribuídos ao usuário de chamada. Este método está sendo preterido e substituído por [filterByCurrentUser](../api/accessreviewinstance-filterbycurrentuser.md). |
+|[Lista pendingAccessReviewInstances (preterido)](../api/accessreviewinstance-pendingaccessreviewinstances.md) | [Coleção accessReviewInstance](accessreviewinstance.md) . | Obter todos os recursos de accessReviewInstance pendentes atribuídos ao usuário de chamada. Este método está sendo preterido e substituído por [filterByCurrentUser](../api/accessreviewinstance-filterbycurrentuser.md). |
 
 ## <a name="properties"></a>Propriedades
 | Propriedade | Tipo | Descrição |
@@ -48,11 +49,11 @@ Cada **accessReviewInstance** contém uma lista de [decisões](accessreviewinsta
 | endDateTime | DateTimeOffset | DateTime quando a instância de revisão está agendada para terminar. O tipo DatetimeOffset representa informações de data e hora usando o formato ISO 8601 e está sempre em horário UTC. Por exemplo, meia-noite UTC em 1 de janeiro de 2014 é `2014-01-01T00:00:00Z`. Oferece suporte para `$select`. Somente leitura.|
 | erros | [Coleção accessReviewError](accessreviewerror.md)| Coleção de erros em um ciclo de vida da instância de revisão de acesso. Somente leitura. |
 | fallbackReviewers   |[Coleção accessReviewReviewerScope](../resources/accessreviewreviewerscope.md)| Essa coleção de escopos do revistor é usada para definir a lista de revisadores de fallback. Esses revisadores de fallback serão notificados para tomar medidas se nenhum usuário for encontrado na lista de revisadores especificados. Isso pode ocorrer quando o proprietário do grupo é especificado como o revistor, mas o proprietário do grupo não existe, ou o gerente é especificado como revistor, mas o gerente de um usuário não existe. Suporta o `$select`.|
-| id | Cadeia de caracteres | Identificador exclusivo da instância. Oferece suporte para `$select`. Somente leitura.|
-| escopo | [accessReviewScope](accessreviewscope.md) | Criado com base **no escopo** e **instanceEnumerationScope** no nível accessReviewScheduleDefinition. Define o escopo dos usuários revisados em um grupo. Suporta `$select` e `$filter` ( `contains` somente). Somente leitura. |
+| id | String | Identificador exclusivo da instância. Oferece suporte para `$select`. Somente leitura.|
+| escopo | [accessReviewScope](accessreviewscope.md) | Criado com base **no escopo** e **instanceEnumerationScope** no nível accessReviewScheduleDefinition. Define o escopo dos usuários revisados em um grupo. Suporta `$select` e `$filter` (`contains` somente). Somente leitura. |
 | startDateTime | DateTimeOffset | DateTime quando a instância de revisão está agendada para começar. Pode ser no futuro. O tipo DateTimeOffset representa informações de data e hora usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite UTC em 1 de janeiro de 2014 é `2014-01-01T00:00:00Z`. Oferece suporte para `$select`. Somente leitura. |
-| status | Cadeia de caracteres | Especifica o status de um accessReview. Valores possíveis: `Initializing` , , , , , , e `NotStarted` `Starting` `InProgress` `Completing` `Completed` `AutoReviewing` `AutoReviewed` . Suporta `$select` `$orderby` , e ( `$filter` `eq` somente). Somente leitura.|
-| revisadores   |[Coleção accessReviewReviewerScope](../resources/accessreviewreviewerscope.md)| Essa coleção de escopos de revisão de acesso é usada para definir quem são os revisadores. Suporta o `$select`. Para exemplos de opções para atribuir revisadores, consulte Atribuir revisadores à sua definição de revisão de acesso [usando a API do Microsoft Graph](/graph/accessreviews-scope-concept).|
+| status | String | Especifica o status de um accessReview. Valores possíveis: `Initializing`, `NotStarted`, `Starting`, `InProgress`, `Completing`, `Completed`, `AutoReviewing`e `AutoReviewed`. Suporta `$select`, `$orderby`e `$filter` (`eq` somente). Somente leitura.|
+| revisadores   |[Coleção accessReviewReviewerScope](../resources/accessreviewreviewerscope.md)| Essa coleção de escopos de revisão de acesso é usada para definir quem são os revisadores. Suporta o `$select`. Para ver exemplos de opções para atribuir revisadores, consulte [Assign reviewers to your access review definition using the Microsoft Graph API](/graph/accessreviews-scope-concept).|
 
 
 ## <a name="relationships"></a>Relações
@@ -61,6 +62,7 @@ Cada **accessReviewInstance** contém uma lista de [decisões](accessreviewinsta
 |:---------------|:--------|:----------|
 | contactedReviewers   |[Coleção accessReviewReviewer](../resources/accessreviewreviewer.md)| Retorna a coleção de revisadores que foram contatados para concluir essa revisão. Embora as propriedades **reviewers** e **fallbackReviewers** do **accessReviewScheduleDefinition** possam especificar proprietários de grupo ou gerentes como revisores **,** **contactedReviewers** retorna suas identidades individuais. Oferece suporte para `$select`. Somente leitura. |
 | definition               |[accessReviewScheduleDefinition](accessreviewscheduledefinition.md)          | Há exatamente um **accessReviewScheduleDefinition** associado a cada instância. É a agenda pai da instância, onde as instâncias são criadas para cada recorrência de uma definição de revisão e cada grupo selecionado para revisar pela definição. |
+|Estágios|[Coleção accessReviewStage](accessreviewstage.md)| Se a instância tiver vários estágios, isso retornará a coleção de estágios. Um novo estágio só será criado quando o estágio anterior terminar. A existência, o número e as configurações de estágios em uma instância de revisão são criadas com base no [accessReviewStageSettings](accessreviewstagesettings.md) no [access PaiReviewScheduleDefinition](accessreviewscheduledefinition.md). |
 | decisions               |[Coleção accessReviewInstanceDecisionItem](accessreviewinstancedecisionitem.md)        | Cada usuário revisado em **um accessReviewInstance** tem um item de decisão que representa se foi aprovado, negado ou ainda não revisado. |
 
 ## <a name="json-representation"></a>Representação JSON
