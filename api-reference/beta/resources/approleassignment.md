@@ -5,12 +5,12 @@ ms.localizationpriority: high
 doc_type: resourcePageType
 ms.prod: applications
 author: psignoret
-ms.openlocfilehash: ffaa1d5825b45dff67a2a530f0e682b18618c379
-ms.sourcegitcommit: c333953a9188b4cd4a9ab94cbe68871e8f3563e5
+ms.openlocfilehash: 771df4c51645ac6f8782f50f97184722a6d0e0aa
+ms.sourcegitcommit: 6968f5aaf40089684efb0c38a95f6cca353c1d92
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/30/2021
-ms.locfileid: "58696236"
+ms.lasthandoff: 02/16/2022
+ms.locfileid: "62854661"
 ---
 # <a name="approleassignment-resource-type"></a>Tipo de recurso appRoleAssignment
 
@@ -34,12 +34,12 @@ Quando um usuário ou administrador consentir a uma [permissão somente para apl
 |:---------------|:--------|:----------|
 | id | Cadeia de caracteres | Um identificador exclusivo para a chave **appRoleAssignment**. Não anulável. Somente leitura. |
 | creationTimestamp | DateTimeOffset | A hora em que a atribuição de função do aplicativo foi criada. O tipo de carimbo de data/hora representa informações de data e hora usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite UTC de 1º de janeiro de 2014 é `2014-01-01T00:00:00Z`. Somente leitura. |
-| principalId | Guid | O identificador exclusivo (**id**) para o [usuário](user.md), [grupo](group.md) ou [principal de serviço](serviceprincipal.md) que está recebendo a função de aplicativo. Obrigatório na criação.  |
+| principalId | GUID | O identificador exclusivo (**id**) para o [usuário](user.md), [grupo](group.md) ou [principal de serviço](serviceprincipal.md) que está recebendo a função de aplicativo. Obrigatório na criação.  |
 | principalType | Cadeia de caracteres | O tipo da entidade de segurança atribuída. Isso pode ser `User`, `Group` ou `ServicePrincipal`. Somente leitura. |
 | principalDisplayName | Cadeia de caracteres |O nome de exibição do usuário, grupo ou entidade de serviço que recebeu a atribuição de função de aplicativo. Somente leitura. Suporta `$filter` (`eq` e `startswith`). |
-| resourceId | Guid |O identificador exclusivo (**id**) do [principal de serviço](serviceprincipal.md) de recurso para o qual a atribuição é feita. Obrigatório na criação. Suporta `$filter` (`eq` apenas). |
+| resourceId | GUID |O identificador exclusivo (**id**) do [principal de serviço](serviceprincipal.md) de recurso para o qual a atribuição é feita. Obrigatório na criação. Suporta `$filter` (`eq` apenas). |
 | resourceDisplayName | Cadeia de caracteres | O nome de exibição da entidade de serviço da função do aplicativo para o qual a atribuição foi feita.  |
-| appRoleId | Guid | O identificador (**id**) da [função do aplicativo](approle.md) que está atribuída à entidade de segurança. Essa função de aplicativo deve ser exposta na propriedade **appRoles** na entidade de serviço do aplicativo de recurso (**ResourceId**). Se o aplicativo de recurso não tiver declarado todas as funções do aplicativo, uma ID de função de aplicativo padrão de `00000000-0000-0000-0000-000000000000` poderá ser especificada para sinalizar que a entidade de segurança está atribuída ao aplicativo de recursos sem nenhuma função específica do aplicativo. Obrigatório durante a criação. |
+| appRoleId | GUID | O identificador (**id**) da [função do aplicativo](approle.md) que está atribuída à entidade de segurança. Essa função de aplicativo deve ser exposta na propriedade **appRoles** na entidade de serviço do aplicativo de recurso (**ResourceId**). Se o aplicativo de recurso não tiver declarado todas as funções do aplicativo, uma ID de função de aplicativo padrão de `00000000-0000-0000-0000-000000000000` poderá ser especificada para sinalizar que a entidade de segurança está atribuída ao aplicativo de recursos sem nenhuma função específica do aplicativo. Obrigatório durante a criação. |
 
 ## <a name="json-representation"></a>Representação JSON
 
@@ -55,14 +55,14 @@ Veja a seguir uma representação JSON do recurso
 
 ```json
 {
-  "id": "string",
+  "id": "String",
   "creationTimestamp": "String (timestamp)",
-  "principalDisplayName": "string",
-  "principalId": "guid",
-  "principalType": "string",
-  "resourceDisplayName": "string",
-  "resourceId": "guid",
-  "appRoleId": "guid"
+  "principalDisplayName": "String",
+  "principalId": "GUID",
+  "principalType": "String",
+  "resourceDisplayName": "String",
+  "resourceId": "GUID",
+  "appRoleId": "GUID"
 }
 ```
 

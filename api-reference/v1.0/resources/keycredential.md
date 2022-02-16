@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 doc_type: resourcePageType
 ms.prod: applications
 author: madansr7
-ms.openlocfilehash: f5c33fe77f2da4ab4d7085fa72935db86cd0d592
-ms.sourcegitcommit: dbacb04ae7138ac3b109683e63a6ff27c166f421
+ms.openlocfilehash: 18a96212ca00ad211d1e1848cbfa5e73c552501f
+ms.sourcegitcommit: 6968f5aaf40089684efb0c38a95f6cca353c1d92
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/14/2022
-ms.locfileid: "62804301"
+ms.lasthandoff: 02/16/2022
+ms.locfileid: "62853232"
 ---
 # <a name="keycredential-resource-type"></a>Tipo de recurso keyCredential
 
@@ -22,13 +22,13 @@ Contém uma credencial de chave associada a um aplicativo ou uma entidade de ser
 | Propriedade     | Tipo   |Descrição|
 |:---------------|:--------|:----------|
 |customKeyIdentifier|Binária| Identificador de chave personalizada |
-| displayName | Cadeia de caracteres | Nome amigável para a chave. Opcional. |
+| displayName | String | Nome amigável para a chave. Opcional. |
 |endDateTime|DateTimeOffset|A data e a hora em que a credencial expira. O tipo DateTimeOffset representa informações de data e hora usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite UTC em 1 de janeiro de 2014 é `2014-01-01T00:00:00Z`.|
 |chave|Binário| Os dados brutos do certificado na matriz de byte convertidos na cadeia de caracteres Base64. Retornado somente para `$select` um único objeto, ou seja`GET servicePrincipals/{servicePrincipalId}?$select=keyCredentials`, `GET applications/{applicationId}?$select=keyCredentials` ou ; caso contrário, sempre será `null`. |
-|keyId|Guid|O identificador exclusivo (GUID) da chave.|
+|keyId|GUID|O identificador exclusivo (GUID) da chave.|
 |startDateTime|DateTimeOffset|A data e a hora em que a credencial se torna válida. O tipo Timestamp representa informações de data e hora usando o formato ISO 8601 e está sempre em horário UTC. Por exemplo, meia-noite UTC em 1 de janeiro de 2014 é `2014-01-01T00:00:00Z`.|
-|type|Cadeia de caracteres|O tipo de credencial de chave; por exemplo, `Symmetric`, `AsymmetricX509Cert`.|
-|usage|Cadeia de caracteres|Uma cadeia de caracteres que descreve a finalidade para a qual a chave pode ser usada; por exemplo, `Verify`.|
+|type|String|O tipo de credencial de chave; por exemplo, `Symmetric`, `AsymmetricX509Cert`.|
+|usage|String|Uma cadeia de caracteres que descreve a finalidade para a qual a chave pode ser usada; por exemplo, `Verify`.|
 
 ## <a name="json-representation"></a>Representação JSON
 
@@ -49,7 +49,7 @@ Veja a seguir uma representação JSON do recurso
   "displayName": "String",
   "endDateTime": "String (timestamp)",
   "key": "Binary",
-  "keyId": "Guid",
+  "keyId": "GUID",
   "startDateTime": "String (timestamp)",
   "type": "String",
   "usage": "String"

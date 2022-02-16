@@ -5,12 +5,12 @@ ms.localizationpriority: high
 doc_type: resourcePageType
 ms.prod: applications
 author: sureshja
-ms.openlocfilehash: 063a42de506b0e7885ffb1ebef12d1a68d7c4803
-ms.sourcegitcommit: bfd1ab7e015ef04cb2ca3fb85d308ba2ce830a89
+ms.openlocfilehash: 248aabf5a846f5ecdd8a2aacb1a01e8e501d0571
+ms.sourcegitcommit: 6968f5aaf40089684efb0c38a95f6cca353c1d92
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/19/2022
-ms.locfileid: "62072296"
+ms.lasthandoff: 02/16/2022
+ms.locfileid: "62854484"
 ---
 # <a name="serviceprincipal-resource-type"></a>Tipo de recurso servicePrincipal
 
@@ -89,7 +89,7 @@ Esse recurso tem suporte para o uso da [consulta delta](/graph/delta-query-overv
 |appDescription|String|A descrição exposta pelo aplicativo associado.|
 |appDisplayName|String|O nome de exibição exposto pelo aplicativo associado.|
 |appId|String|O identificador exclusivo do aplicativo associado (sua propriedade **appId**). Suporta `$filter` (`eq`, `ne`, `not`, `in`, `startsWith`).|
-|applicationTemplateId|Cadeia de caracteres|Identificador exclusivo do applicationTemplate do qual a servicePrincipal foi criada. Somente leitura. Suporta `$filter` (`eq`, `ne`, `NOT`, `startsWith`).|
+|applicationTemplateId|String|Identificador exclusivo do applicationTemplate do qual a servicePrincipal foi criada. Somente leitura. Suporta `$filter` (`eq`, `ne`, `NOT`, `startsWith`).|
 |appOwnerOrganizationId|Cadeia de caracteres|Contém a ID de locatário onde o aplicativo está registrado. Isso é aplicável apenas a entidades de serviço respaldadas por aplicativos. Suporta `$filter` (`eq`, `ne`, `NOT`, `ge`, `le`).|
 |appRoleAssignmentRequired|Booliano|Especifica se os usuários ou outras entidade de serviço precisam receber uma atribuição de função de aplicativo para essa entidade de serviço antes que os usuários possam entrar ou os aplicativos possam obter tokens. O valor padrão é `false`. Não anulável. <br><br>Suporta `$filter` (`eq`, `ne`, `NOT`). |
 |appRoles|Coleção [appRole](approle.md)|As funções expostas pelo aplicativo que essa entidade de serviço representa. Para obter mais informações, confira definição da propriedade **appRoles** na entidade [aplicativo](application.md). Não anulável. |
@@ -98,7 +98,7 @@ Esse recurso tem suporte para o uso da [consulta delta](/graph/delta-query-overv
 | disabledByMicrosoftStatus | Cadeia de caracteres | Especifica se a Microsoft desabilitou o aplicativo registrado. Os valores possíveis são: `null`(valor padrão), `NotDisabled` e (os motivos podem incluir atividades suspeitas, abusivas ou mal-intencionadas ou uma violação do `DisabledDueToViolationOfServicesAgreement` Contrato de Serviços Microsoft). <br><br> Suporta `$filter` (`eq`, `ne`, `not`).  |
 |displayName|String|O nome de exibição da entidade de serviço. Suporte `$filter` (`eq`, `ne`, `not`, `ge`, `le`, `in`, `startsWith`, e `eq` em `null` valores), `$search`e `$orderBy`. |
 |homepage|Cadeia de caracteres|Página inicial ou página de aterrissagem do aplicativo.|
-|id|Cadeia de caracteres|O identificador exclusivo da entidade de serviço. Herdado de [directoryObject](directoryobject.md). Chave. Não anulável. Somente leitura. Suporta `$filter` (`eq`, `ne`, `not`, `in`).|
+|id|String|O identificador exclusivo da entidade de serviço. Herdado de [directoryObject](directoryobject.md). Chave. Não anulável. Somente leitura. Suporta `$filter` (`eq`, `ne`, `not`, `in`).|
 | informações  | [informationalUrl](informationalurl.md) | Informações básicas de perfil do aplicativo adquirido, como marketing, suporte, termos de serviço e URLs de política de privacidade do aplicativo. Os termos de serviço e a política de privacidade são revelados aos usuários por meio da experiência de consentimento do usuário. Para obter mais informações, confira [Como adicionar termos de serviço e política de privacidade a aplicativos do Azure AD registrados](/azure/active-directory/develop/howto-add-terms-of-service-privacy-statement). <br><br>Suporta `$filter` (`eq`, `ne`, `not`, `ge`, `le`e `eq` em `null` valores).  |
 |keyCredentials|[keyCredential](keycredential.md) collection|A coleção de credenciais principais associada à entidade de serviço. Não anulável. Suporta `$filter` (`eq`, `not`, `ge`, `le`).            |
 |loginUrl|Cadeia de caracteres|Especifica a URL na qual o provedor de serviços redireciona o usuário para a autenticação do Azure AD. O Azure AD usa a URL para iniciar o aplicativo do Microsoft 365 ou o Azure AD My Apps. Quando em branco, o Azure AD executa o logon iniciado pelo IdP de aplicativos configurados com o [logon único baseado em SAML](/azure/active-directory/manage-apps/what-is-single-sign-on#saml-sso). O usuário inicia o aplicativo do Microsoft 365, o Azure AD My Apps ou a URL de SSO do Azure AD.|
@@ -156,26 +156,26 @@ Veja a seguir uma representação JSON do recurso
 {
   "accountEnabled": true,
   "addIns": [{"@odata.type": "microsoft.graph.addIn"}],
-  "alternativeNames": ["string"] ,
-  "appDisplayName": "string",
-  "appId": "string",
-  "appOwnerOrganizationId": "guid",
+  "alternativeNames": ["String"] ,
+  "appDisplayName": "String",
+  "appId": "String",
+  "appOwnerOrganizationId": "GUID",
   "appRoleAssignmentRequired": true,
   "appRoles": [{"@odata.type": "microsoft.graph.appRole"}],
-  "disabledByMicrosoftStatus": "string",
-  "displayName": "string",
-  "homepage": "string",
-  "id": "string (identifier)",
+  "disabledByMicrosoftStatus": "String",
+  "displayName": "String",
+  "homepage": "String",
+  "id": "String (identifier)",
   "info": {"@odata.type": "microsoft.graph.informationalUrl"},
   "keyCredentials": [{"@odata.type": "microsoft.graph.keyCredential"}],
-  "logoutUrl": "string",
-  "notes": "string",
+  "logoutUrl": "String",
+  "notes": "String",
   "oauth2PermissionScopes": [{"@odata.type": "microsoft.graph.permissionScope"}],
   "passwordCredentials": [{"@odata.type": "microsoft.graph.passwordCredential"}],
-  "replyUrls": ["string"],
-  "servicePrincipalNames": ["string"],
-  "servicePrincipalType": "string",
-  "tags": ["string"],
+  "replyUrls": ["String"],
+  "servicePrincipalNames": ["String"],
+  "servicePrincipalType": "String",
+  "tags": ["String"],
   "tokenEncryptionKeyId": "String",
   "verifiedPublisher": {"@odata.type": "microsoft.graph.verifiedPublisher"}
 }

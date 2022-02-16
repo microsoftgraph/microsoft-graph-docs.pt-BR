@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: jpettere
 ms.prod: users
 doc_type: apiPageType
-ms.openlocfilehash: c2c1f1c0139d2b328eb1fed7bbba8d9b1f3566ba
-ms.sourcegitcommit: 25acfa7d0153336c9a35d30a1dd422aeadc1342c
+ms.openlocfilehash: a4871a3a06e5581eb4efc1427198c4599c681f6e
+ms.sourcegitcommit: 6968f5aaf40089684efb0c38a95f6cca353c1d92
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/03/2022
-ms.locfileid: "62344858"
+ms.lasthandoff: 02/16/2022
+ms.locfileid: "62855196"
 ---
 # <a name="user-assignlicense"></a>usuário: assignLicense
 
@@ -48,15 +48,17 @@ Forneça um objeto JSON com os seguintes parâmetros no corpo da solicitação.
 | Parâmetro    | Tipo   |Descrição|
 |:---------------|:--------|:----------|
 |addLicenses|Coleção [assignedLicense](../resources/assignedlicense.md)|Uma coleção de objetos [assignedLicense](../resources/assignedlicense.md) que especifica as licenças a adicionar. Você pode desabilitar servicePlans associado a uma licença definindo a propriedade **disabledPlans** em [um objeto assignedLicense](../resources/assignedlicense.md) .|
-|removeLicenses|Coleção de GUIDs|Uma coleção de skuIds que identificam as licenças a remover.|
+|removeLicenses|Coleção GUID|Uma coleção de skuIds que identificam as licenças a remover.|
 
 ## <a name="response"></a>Resposta
 
 Se tiver êxito, este método retornará `200 OK` o código de resposta e um [objeto de usuário](../resources/user.md) atualizado no corpo da resposta.
 
-## <a name="example"></a>Exemplo
-Adicione licenças ao usuário.
-##### <a name="request"></a>Solicitação
+## <a name="examples"></a>Exemplos
+
+### <a name="example-1-assign-licenses-to-the-signed-in-user"></a>Exemplo 1: Atribuir licenças ao usuário in-locar
+
+#### <a name="request"></a>Solicitação
 
 # <a name="http"></a>[HTTP](#tab/http)
 <!-- {
@@ -68,17 +70,19 @@ POST https://graph.microsoft.com/beta/me/assignLicense
 Content-type: application/json
 
 {
-  "addLicenses": [
-    {
-      "disabledPlans": [ "11b0131d-43c8-4bbb-b2c8-e80f9a50834a" ],
-      "skuId": "skuId-value-1"
-    },
-    {
-      "disabledPlans": [ "a571ebcc-fqe0-4ca2-8c8c-7a284fd6c235" ],
-      "skuId": "skuId-value-2"
-    }
-  ],
-  "removeLicenses": []
+    "addLicenses": [
+        {
+            "disabledPlans": [
+                "8a256a2b-b617-496d-b51b-e76466e88db0"
+            ],
+            "skuId": "84a661c4-e949-4bd2-a560-ed7766fcaf2b"
+        },
+        {
+            "disabledPlans": [],
+            "skuId": "f30db892-07e9-47e9-837c-80727f46fd3d"
+        }
+    ],
+    "removeLicenses": []
 }
 ```
 # <a name="c"></a>[C#](#tab/csharp)
@@ -108,22 +112,8 @@ Content-type: application/json
 ---
 
 
-## <a name="example"></a>Exemplo
-Remover licenças do usuário.
-
-##### <a name="request"></a>Solicitação
-```http
-POST https://graph.microsoft.com/beta/me/assignLicense
-Content-type: application/json
-
-{
-  "addLicenses": [],
-  "removeLicenses": ["skuId-value-1", "skuId-value-2"]
-}
-```
-
-##### <a name="response"></a>Resposta
-Em ambos os exemplos, a resposta é o objeto de usuário atualizado. Observação: o objeto de resposta mostrado aqui pode ser encurtado para legibilidade.
+#### <a name="response"></a>Resposta
+>**Observação:** o objeto de resposta mostrado aqui pode ser encurtado para legibilidade.
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -136,24 +126,59 @@ Content-type: application/json
 {
   "accountEnabled": true,
   "assignedLicenses": [
-    {
-      "disabledPlans": [ "11b0131d-43c8-4bbb-b2c8-e80f9a50834a" ],
-      "skuId": "skuId-value"
-    }
-  ],
-  "assignedPlans": [
-    {
-      "assignedDateTime": "2016-10-19T10:37:00Z",
-      "capabilityStatus": "capabilityStatus-value",
-      "service": "service-value",
-      "servicePlanId": "bea13e0c-3828-4daa-a392-28af7ff61a0f"
-    }
-  ],
-  "businessPhones": [
-    "businessPhones-value"
-  ],
-  "city": "city-value",
-  "companyName": "companyName-value"
+        {
+            "disabledPlans": [
+                "8a256a2b-b617-496d-b51b-e76466e88db0"
+            ],
+            "skuId": "84a661c4-e949-4bd2-a560-ed7766fcaf2b"
+        },
+        {
+            "disabledPlans": [],
+            "skuId": "f30db892-07e9-47e9-837c-80727f46fd3d"
+        }
+    ],
+  "city": "Nairobi",
+  "companyName": "Contoso"
+}
+```
+
+### <a name="example-2-remove-licenses-from-the-signed-in-user"></a>Exemplo 2: Remover licenças do usuário in-locar
+
+#### <a name="request"></a>Solicitação
+
+<!-- {
+  "blockType": "request",
+  "name": "user_assignlicense_removelicenses"
+}-->
+```http
+POST https://graph.microsoft.com/beta/me/assignLicense
+Content-type: application/json
+
+{
+    "addLicenses": [],
+    "removeLicenses": [
+        "f30db892-07e9-47e9-837c-80727f46fd3d",
+        "84a661c4-e949-4bd2-a560-ed7766fcaf2b"
+    ]
+}
+```
+
+#### <a name="response"></a>Resposta
+>**Observação:** o objeto de resposta mostrado aqui pode ser encurtado para legibilidade.
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.user"
+} -->
+```http
+HTTP/1.1 200 OK
+Content-type: application/json
+
+{
+  "accountEnabled": true,
+  "assignedLicenses": [],
+  "city": "Nairobi",
+  "companyName": "Contoso"
 }
 ```
 

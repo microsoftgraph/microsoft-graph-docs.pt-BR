@@ -2,15 +2,15 @@
 title: Tipo de recurso directoryObjectPartnerReference
 description: Representa uma referência a um objeto de diretório em um locatário parceiro. Herda de directoryObject.
 author: keylimesoda
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: directory-management
 doc_type: resourcePageType
-ms.openlocfilehash: 8b9d6a8826c38171dc7b32c281c371e841906f82
-ms.sourcegitcommit: 9d98d9e9cc1e193850ab9b82aaaf906d70e1378b
+ms.openlocfilehash: 0b8825a7bd20e7e76aa3825cf29e8b7246e3ad8a
+ms.sourcegitcommit: 6968f5aaf40089684efb0c38a95f6cca353c1d92
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/12/2021
-ms.locfileid: "50761553"
+ms.lasthandoff: 02/16/2022
+ms.locfileid: "62855074"
 ---
 # <a name="directoryobjectpartnerreference-resource-type"></a>Tipo de recurso directoryObjectPartnerReference
 
@@ -24,10 +24,10 @@ Representa uma referência a um objeto de diretório em uma organização parcei
 
 | Propriedade | Tipo | Descrição |
 |:---------------|:--------|:----------|
-|description|Cadeia de caracteres| Descrição do objeto retornado. Somente leitura. |
-|displayName|Cadeia de caracteres| Nome do objeto de diretório sendo retornado, como grupo ou aplicativo. Somente leitura. |
-|externalPartnerTenantId|Guid| O identificador de locatário do locatário parceiro. Somente leitura. |
-|id|Cadeia de caracteres| O identificador exclusivo do recurso. Herdado de [directoryObject](directoryobject.md). Somente leitura. |
+|description|String| Descrição do objeto retornado. Somente leitura. |
+|displayName|String| Nome do objeto de diretório sendo retornado, como grupo ou aplicativo. Somente leitura. |
+|externalPartnerTenantId|GUID| O identificador de locatário do locatário parceiro. Somente leitura. |
+|id|String| O identificador exclusivo do recurso. Herdado de [directoryObject](directoryobject.md). Somente leitura. |
 |objectType|String| O tipo do objeto referenciado no locatário do parceiro. Somente leitura. |
 
 ## <a name="json-representation"></a>Representação JSON

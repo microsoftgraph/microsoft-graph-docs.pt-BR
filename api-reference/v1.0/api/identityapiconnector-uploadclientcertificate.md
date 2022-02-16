@@ -5,18 +5,18 @@ ms.localizationpriority: medium
 author: nickgmicrosoft
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: c9413f1aaa5332fe083a1de9ee6edc5d7add5706
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: 729d9676d9a1f2915b82ff5e289e19ce5a3b9db7
+ms.sourcegitcommit: 6968f5aaf40089684efb0c38a95f6cca353c1d92
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "61027603"
+ms.lasthandoff: 02/16/2022
+ms.locfileid: "62854696"
 ---
 # <a name="identityapiconnector-uploadclientcertificate"></a>identityApiConnector: uploadClientCertificate
 
 Namespace: microsoft.graph
 
-Upload uma chave de formato PKCS 12 (.pfx) para a configuração de autenticação de um conector de API. A entrada é um valor codificado de base 64 do conteúdo do certificado PKCS 12. Este método retorna uma [apiConnector](../resources/identityApiConnector.md).
+Upload uma chave de formato PKCS 12 (.pfx) para a configuração de autenticação de um conector de API. A entrada é um valor codificado de base 64 do conteúdo do certificado PKCS 12. Este método retorna um [apiConnector](../resources/identityApiConnector.md).
 
 ## <a name="permissions"></a>Permissões
 
@@ -55,11 +55,11 @@ Forneça um objeto JSON com os seguintes parâmetros no corpo da solicitação.
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
 |pkcs12Value|Cadeia de caracteres| Este é o campo para enviar o conteúdo pfx. O valor deve ser uma versão codificada de base 64 do conteúdo real do certificado. Obrigatório.|
-|password|String| Essa é a senha do arquivo pfx. Obrigatório. Se nenhuma senha for usada, ainda deverá fornecer um valor `""` de .|
+|password|String| Essa é a senha do arquivo pfx. Obrigatório. Se nenhuma senha for usada, ainda deverá fornecer um valor de `""`.|
 
 ## <a name="response"></a>Resposta
 
-Se tiver êxito, este método retornará um código de resposta e o `200 OK` [apiConnector](../resources/identityApiConnector.md) cujo `authenticationConfiguration` contém as informações públicas do certificado do cliente.
+Se tiver êxito, este método retornará um `200 OK` código de resposta e o [apiConnector](../resources/identityApiConnector.md) cujo `authenticationConfiguration` contém as informações públicas do certificado do cliente.
 
 ## <a name="examples"></a>Exemplos
 
@@ -99,7 +99,7 @@ Content-type: application/json
 [!INCLUDE [sample-code](../includes/snippets/java/identityapiconnector-uploadclientcertificate-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[Go](#tab/go)
+# <a name="go"></a>[Ir](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/identityapiconnector-uploadclientcertificate-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
@@ -125,7 +125,7 @@ Content-type: application/json
 
 {
     "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#identity/apiConnectors/$entity",
-    "id": "guid",
+    "id": "45715bb8-13f9-4bf6-927f-ef96c102d394",
     "displayName": "My API connector",
     "targetUrl": "https://api.contoso.com/endpoint",
     "authenticationConfiguration": {

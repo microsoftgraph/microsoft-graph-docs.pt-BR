@@ -1,16 +1,16 @@
 ---
 title: Tipo de recurso groupLifecyclePolicy
 description: Representa uma política de ciclo de vida para um Microsoft 365 grupo.
-localization_priority: Normal
+ms.localizationpriority: medium
 author: Jordanndahl
 ms.prod: groups
 doc_type: resourcePageType
-ms.openlocfilehash: 4cd6b11989d21fea0095fec9099bdc3cc7dc3a66
-ms.sourcegitcommit: 0116750a01323bc9bedd192d4a780edbe7ce0fdc
+ms.openlocfilehash: e50277f78cfff92a0329fe7b8198e18bed42fdd5
+ms.sourcegitcommit: 6968f5aaf40089684efb0c38a95f6cca353c1d92
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58256091"
+ms.lasthandoff: 02/16/2022
+ms.locfileid: "62854477"
 ---
 # <a name="grouplifecyclepolicy-resource-type"></a>Tipo de recurso groupLifecyclePolicy
 
@@ -38,7 +38,7 @@ Representa uma política de ciclo de vida para um Microsoft 365 grupo. Uma polí
 |:---------------|:--------|:----------|
 |alternateNotificationEmails|Cadeia de caracteres| Lista de endereços de email para o envio de notificações para grupos sem proprietários. É possível definir vários endereços de email separando-os com ponto-e-vírgula. |
 |groupLifetimeInDays|Int32| Número de dias antes que um grupo expire e precise ser renovado. Após renová-lo, o período de validade é estendido de acordo com o número de dias definido. |
-|id|Cadeia de caracteres| Um identificador exclusivo de uma política. Somente leitura.|
+|id|String| Um identificador exclusivo de uma política. Somente leitura.|
 |managedGroupTypes|Cadeia de caracteres| O tipo de grupo ao qual se aplica a política de expiração. Os valores possíveis são **All**, **Selected** ou **None**. |
 
 ## <a name="relationships"></a>Relações
@@ -61,7 +61,7 @@ Veja a seguir uma representação JSON do recurso.
 {
   "alternateNotificationEmails": "String",
   "groupLifetimeInDays": 180,
-  "id": "Guid (identifier)",
+  "id": "GUID (identifier)",
   "managedGroupTypes": "String"
 }
 ```

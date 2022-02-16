@@ -5,12 +5,12 @@ author: keylimesoda
 ms.localizationpriority: medium
 ms.prod: directory-management
 doc_type: resourcePageType
-ms.openlocfilehash: 35cc8be163a9bbbbcdf9330d6b6cf861673e7edf
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 17356a5e865fceb9da49447064d141120387328e
+ms.sourcegitcommit: 6968f5aaf40089684efb0c38a95f6cca353c1d92
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59123786"
+ms.lasthandoff: 02/16/2022
+ms.locfileid: "62854334"
 ---
 # <a name="directoryobjectpartnerreference-resource-type"></a>Tipo de recurso directoryObjectPartnerReference
 
@@ -23,8 +23,8 @@ Representa uma referência a um objeto de diretório em uma organização parcei
 | Propriedade | Tipo | Descrição |
 |:---------------|:--------|:----------|
 |description|String| Descrição do objeto retornado. Somente leitura. |
-|displayName|Cadeia de caracteres| Nome do objeto de diretório sendo retornado, como grupo ou aplicativo. Somente leitura. |
-|externalPartnerTenantId|Guid| O identificador de locatário do locatário parceiro. Somente leitura. |
+|displayName|String| Nome do objeto de diretório sendo retornado, como grupo ou aplicativo. Somente leitura. |
+|externalPartnerTenantId|GUID| O identificador de locatário do locatário parceiro. Somente leitura. |
 |id|String| O identificador exclusivo do recurso. Herdado de [directoryObject](/graph/api/resources/directoryobject?view=graph-rest-v1.0). Somente leitura. |
 |objectType|String| O tipo do objeto referenciado no locatário do parceiro. Somente leitura. |
 
@@ -40,11 +40,11 @@ Veja a seguir uma representação JSON do recurso.
 
 ```json
 {
-  "description": "string ",
-  "displayName": "string",
-  "externalPartnerTenantId": "string (identifier)",
-  "id": "string (identifier)",
-  "objectType": "string"
+  "description": "String ",
+  "displayName": "String",
+  "externalPartnerTenantId": "String (identifier)",
+  "id": "String (identifier)",
+  "objectType": "String"
 }
 ```
 

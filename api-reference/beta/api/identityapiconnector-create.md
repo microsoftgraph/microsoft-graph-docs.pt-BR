@@ -5,12 +5,12 @@ author: nickgmicrosoft
 ms.localizationpriority: medium
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: cd614ddce1ba2391dc5b1b01f9e9c75fdb3dbd09
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: 8f29672b3df0bf0ff3deed910f919bd34091183b
+ms.sourcegitcommit: 6968f5aaf40089684efb0c38a95f6cca353c1d92
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "60986260"
+ms.lasthandoff: 02/16/2022
+ms.locfileid: "62854526"
 ---
 # <a name="create-identityapiconnector"></a>Criar identityApiConnector
 
@@ -18,7 +18,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Crie um novo [objeto identityApiConnector.](../resources/identityapiconnector.md)
+Crie um novo [objeto identityApiConnector](../resources/identityapiconnector.md) .
 
 ## <a name="permissions"></a>Permissões
 
@@ -55,19 +55,19 @@ POST /identity/apiConnectors
 
 ## <a name="request-body"></a>Corpo da solicitação
 
-No corpo da solicitação, fornece uma representação JSON do [objeto identityApiConnector.](../resources/identityapiconnector.md)
+No corpo da solicitação, fornece uma representação JSON do [objeto identityApiConnector](../resources/identityapiconnector.md) .
 
 A tabela a seguir mostra as propriedades que são necessárias ao criar [identityApiConnector](../resources/identityapiconnector.md).
 
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|displayName|Cadeia de caracteres| O nome do conector da API. |
+|displayName|String| O nome do conector da API. |
 |targetUrl|Cadeia de caracteres| A URL do ponto de extremidade da API a ser chamada. |
-|authenticationConfiguration|[apiAuthenticationConfigurationBase](../resources/apiauthenticationconfigurationbase.md)|O objeto que descreve os detalhes de configuração de autenticação para chamar a API. [Autenticação básica](../resources/basicauthentication.md) e certificado cliente [PKCS 12](../resources/pkcs12certificate.md) são suportados.|
+|authenticationConfiguration|[apiAuthenticationConfigurationBase](../resources/apiauthenticationconfigurationbase.md)|O objeto que descreve os detalhes de configuração de autenticação para chamar a API. [Autenticação básica](../resources/basicauthentication.md) e [certificado cliente PKCS 12](../resources/pkcs12certificate.md) são suportados.|
 
 ## <a name="response"></a>Resposta
 
-Se tiver êxito, este método retornará um código de resposta e um `201 Created` [objeto identityApiConnector](../resources/identityapiconnector.md) no corpo da resposta.
+Se tiver êxito, este método retornará um `201 Created` código de resposta e um [objeto identityApiConnector](../resources/identityapiconnector.md) no corpo da resposta.
 
 ## <a name="examples"></a>Exemplos
 
@@ -115,7 +115,7 @@ Content-Type: application/json
 [!INCLUDE [sample-code](../includes/snippets/java/create-identityapiconnector-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[Go](#tab/go)
+# <a name="go"></a>[Ir](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/create-identityapiconnector-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
@@ -141,7 +141,7 @@ Content-Type: application/json
 
 {
     "@odata.context": "https://graph.microsoft.com/beta/$metadata#identity/apiConnectors/$entity",
-    "id":"guid",
+    "id":"GUID",
     "displayName": "Test API",
     "targetUrl": "https://someapi.com/api",
     "authenticationConfiguration": {
@@ -158,7 +158,7 @@ Content-Type: application/json
 
 Este é um exemplo de solicitação.
 
-> **Observação:** `authenticationConfiguration` na solicitação é do tipo [microsoft.graph.pkcs12certificate](../resources/pkcs12certificate.md), que representa a configuração de um certificado necessário para carregar ou criar.
+> **Observação:** `authenticationConfiguration` na solicitação é do tipo [microsoft.graph.pkcs12certificate](../resources/pkcs12certificate.md), que representa a configuração de um certificado necessário ao carregar ou criar.
 
 <!-- {
   "blockType": "request",
@@ -199,7 +199,7 @@ Content-Type: application/json
 
 {
     "@odata.context": "https://graph.microsoft.com/beta/$metadata#identity/apiConnectors/$entity",
-    "id":"guid",
+    "id":"GUID",
     "displayName": "Test API",
     "targetUrl": "https://someotherapi.com/api",
     "authenticationConfiguration": {

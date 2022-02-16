@@ -5,12 +5,12 @@ author: markwahl-msft
 ms.localizationpriority: medium
 ms.prod: governance
 doc_type: resourcePageType
-ms.openlocfilehash: ca963bd2a538cad8efe8692e82c6e1da678c0a21
-ms.sourcegitcommit: fd609cb401ff862c3f5c21847bac9af967c6bf82
+ms.openlocfilehash: 2359206a9984cd8ab63697e91cc8313bbd4e594e
+ms.sourcegitcommit: 6968f5aaf40089684efb0c38a95f6cca353c1d92
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/31/2021
-ms.locfileid: "61651446"
+ms.lasthandoff: 02/16/2022
+ms.locfileid: "62854717"
 ---
 # <a name="accesspackageassignmentrequest-resource-type"></a>Tipo de recurso accessPackageAssignmentRequest
 
@@ -22,29 +22,29 @@ No [Azure AD Entitlement Management](entitlementmanagement-overview.md), uma sol
 ## <a name="methods"></a>Métodos
 |Método|Tipo de retorno|Descrição|
 |:---|:---|:---|
-|[Listar accessPackageAssignmentRequests](../api/entitlementmanagement-list-assignmentrequests.md)|[coleção accessPackageAssignmentRequest](accesspackageassignmentrequest.md)|Recupere uma lista **de objetos accesspackageassignmentrequest.** |
-| [Criar accessPackageAssignmentRequest](../api/entitlementmanagement-post-assignmentrequests.md) | [accessPackageAssignmentRequest](accesspackageassignmentrequest.md) | Cria um novo **objeto accessPackageAssignmentRequest.** |
-|[Obter accessPackageAssignmentRequest](../api/accesspackageassignmentrequest-get.md)|[accessPackageAssignmentRequest](accesspackageassignmentrequest.md)|Leia propriedades e relações de um **objeto accessPackageAssignmentRequest.** |
-|[Excluir accessPackageAssignmentRequest](../api/accesspackageassignmentrequest-delete.md)|Nenhum|Excluir um **accessPackageAssignmentRequest**. |
+|[Listar accessPackageAssignmentRequests](../api/entitlementmanagement-list-assignmentrequests.md)|[coleção accessPackageAssignmentRequest](accesspackageassignmentrequest.md)|Recupere uma lista **de objetos accesspackageassignmentrequest** . |
+| [Criar accessPackageAssignmentRequest](../api/entitlementmanagement-post-assignmentrequests.md) | [accessPackageAssignmentRequest](accesspackageassignmentrequest.md) | Cria um novo **objeto accessPackageAssignmentRequest** . |
+|[Obter accessPackageAssignmentRequest](../api/accesspackageassignmentrequest-get.md)|[accessPackageAssignmentRequest](accesspackageassignmentrequest.md)|Leia propriedades e relações de um **objeto accessPackageAssignmentRequest** . |
+|[Excluir accessPackageAssignmentRequest](../api/accesspackageassignmentrequest-delete.md)|Nenhum|**Exclua um accessPackageAssignmentRequest**. |
 |[filterByCurrentUser](../api/accesspackageassignmentrequest-filterbycurrentuser.md)|[coleção accessPackageAssignmentRequest](../resources/accesspackageassignmentrequest.md)|Recupere a lista de **objetos accessPackageAssignmentRequest** filtrados no usuário de entrada.|
 |[cancel](../api/accesspackageassignmentrequest-cancel.md)|[coleção accessPackageAssignmentRequest](../resources/accesspackageassignmentrequest.md)|Cancele **um objeto accessPackageAssignmentRequest** que está em estado cancelável.|
 
 ## <a name="properties"></a>Propriedades
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|completedDate|DateTimeOffset|A data do final do processamento, bem-sucedida ou falha, de uma solicitação. O tipo Timestamp representa informações de data e hora usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite UTC em 1 de janeiro de 2014 é `2014-01-01T00:00:00Z`. Somente leitura.|
+|completedDateTime|DateTimeOffset|A data do final do processamento, bem-sucedida ou falha, de uma solicitação. O tipo Timestamp representa informações de data e hora usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite UTC em 1 de janeiro de 2014 é `2014-01-01T00:00:00Z`. Somente leitura.|
 |createdDateTime|DateTimeOffset|O tipo Timestamp representa informações de data e hora usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite UTC em 1 de janeiro de 2014 é `2014-01-01T00:00:00Z`. Somente leitura.|
 |id|String|Somente leitura.|
-|requestType|accessPackageRequestType|O tipo da solicitação. Os valores possíveis são: `notSpecified` , , , , , , , , `userAdd` , , , `userUpdate` , , `userRemove` `adminAdd` `adminUpdate` `adminRemove` `systemAdd` `systemUpdate` `systemRemove` `onBehalfAdd` `unknownFutureValue` . Uma solicitação do próprio usuário teria requestType de `UserAdd` ou `UserRemove` . Essa propriedade não pode ser alterada uma vez definida.|
+|requestType|accessPackageRequestType|O tipo da solicitação. Os valores possíveis são: , , , , `userRemove`, `adminAdd`, `adminUpdate`, `adminRemove`, `systemAdd`, `systemUpdate`, , `systemRemove`, `onBehalfAdd`, `unknownFutureValue`. `userUpdate``userAdd``notSpecified` Uma solicitação do próprio usuário teria requestType de `UserAdd` ou `UserRemove`. Essa propriedade não pode ser alterada uma vez definida.|
 |Cronograma|[entitlementManagementSchedule](../resources/entitlementmanagementschedule.md)|O intervalo de datas que o acesso deve ser atribuído ao solicitante. Essa propriedade não pode ser alterada uma vez definida.|
 |state|accessPackageRequestState|O estado da solicitação. Os valores possíveis são `submitted`, `pendingApproval`, `delivering`, `delivered`, `deliveryFailed`, `denied`, `scheduled`, `canceled`, `partiallyDelivered`, `unknownFutureValue`. Somente leitura.|
-|status|String|Mais informações sobre o status do processamento de solicitação. Somente leitura.|
+|status|Cadeia de caracteres|Mais informações sobre o status do processamento de solicitação. Somente leitura.|
 
 ## <a name="relationships"></a>Relações
 |Relação|Tipo|Descrição|
 |:---|:---|:---|
 |accessPackage|[accessPackage](../resources/accesspackage.md)|O pacote de acesso associado ao accessPackageAssignmentRequest. Um pacote de acesso define as coleções de funções de recurso e as políticas de como um ou mais usuários podem obter acesso a esses recursos. Somente leitura. Anulável. <br/><br/> Suporta o `$expand`.|
-|assignment|[accessPackageAssignment](../resources/accesspackageassignment.md)|Para um **requestType** de `UserAdd` ou , esta é uma `AdminAdd` atribuição de pacote de acesso solicitada a ser criada.  Para um **requestType** `UserRemove` de , ou , isso tem a propriedade de uma `AdminRemove` `SystemRemove` `id` atribuição existente a ser removida.  <br/><br/> Suporta o `$expand`.|
+|assignment|[accessPackageAssignment](../resources/accesspackageassignment.md)|Para um **requestType** de `UserAdd` ou `AdminAdd`, esta é uma atribuição de pacote de acesso solicitada a ser criada.  Para um **requestType** de `UserRemove`, `AdminRemove` ou `SystemRemove`, isso tem `id` a propriedade de uma atribuição existente a ser removida.  <br/><br/> Suporta o `$expand`.|
 |requestor|[accessPackageSubject](../resources/accesspackagesubject.md)|O assunto que solicitou ou, se uma atribuição direta, foi atribuído. Somente leitura. Anulável. Suporta o `$expand`.|
 
 ## <a name="json-representation"></a>Representação JSON
@@ -64,7 +64,7 @@ Veja a seguir uma representação JSON do recurso.
   "state": "String",
   "status": "String",
   "createdDateTime": "String (timestamp)",
-  "completedDate": "String (timestamp)",
+  "completedDateTime": "String (timestamp)",
   "schedule": {
     "@odata.type": "microsoft.graph.entitlementManagementSchedule"
   }

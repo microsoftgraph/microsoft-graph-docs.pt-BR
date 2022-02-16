@@ -5,18 +5,18 @@ author: DougKirschner
 ms.localizationpriority: medium
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: 1db5779f3642112cffc47fcf738bfd25cf5b0549
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: f41e063e402aec90e63693371549d1957297448d
+ms.sourcegitcommit: 6968f5aaf40089684efb0c38a95f6cca353c1d92
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62125030"
+ms.lasthandoff: 02/16/2022
+ms.locfileid: "62853981"
 ---
 # <a name="get-administrativeunit"></a>Obter administrativeUnit
 
 Namespace: microsoft.graph
 
-Recupere as propriedades e as relações de um [objeto administrativeUnit.](../resources/administrativeunit.md)
+Recupere as propriedades e as relações de um [objeto administrativeUnit](../resources/administrativeunit.md) .
 
 
 ## <a name="permissions"></a>Permissões
@@ -35,7 +35,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 GET /directory/administrativeUnits/{id}
 ```
 ## <a name="optional-query-parameters"></a>Parâmetros de consulta opcionais
-Este método dá suporte ao `$select` [parâmetro de consulta OData](/graph/query-parameters) para ajudar a personalizar a resposta.
+Este método dá suporte ao parâmetro `$select` [de consulta OData](/graph/query-parameters) para ajudar a personalizar a resposta.
 
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
 | Nome      |Descrição|
@@ -47,9 +47,9 @@ Não forneça um corpo de solicitação para esse método.
 
 ## <a name="response"></a>Resposta
 
-Se tiver êxito, este método retornará um código de resposta e um `200 OK` objeto [administrativeUnit](../resources/administrativeunit.md) no corpo da resposta.
+Se tiver êxito, este método retornará um `200 OK` código de resposta e um objeto [administrativeUnit](../resources/administrativeunit.md) no corpo da resposta.
 ## <a name="example"></a>Exemplo
-##### <a name="request"></a>Solicitação
+### <a name="request"></a>Solicitação
 Este é um exemplo da solicitação.
 
 
@@ -59,7 +59,7 @@ Este é um exemplo da solicitação.
   "name": "get_administrativeunit"
 }-->
 ```msgraph-interactive
-GET https://graph.microsoft.com/v1.0/directory/administrativeUnits/{id}
+GET https://graph.microsoft.com/v1.0/directory/administrativeUnits/4d7ea995-bc0f-45c0-8c3e-132e93bf95f8
 ```
 # <a name="c"></a>[C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-administrativeunit-csharp-snippets.md)]
@@ -88,10 +88,10 @@ GET https://graph.microsoft.com/v1.0/directory/administrativeUnits/{id}
 ---
 
 
----
 
-##### <a name="response"></a>Resposta
-Aqui está um exemplo da resposta. Observação: o objeto de resposta mostrado aqui pode ser reduzido para facilitar a leitura.
+### <a name="response"></a>Resposta
+Veja a seguir um exemplo da resposta.
+>**Observação:** o objeto de resposta mostrado aqui pode ser encurtado para legibilidade.
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -102,10 +102,15 @@ HTTP/1.1 200 OK
 Content-type: application/json
 
 {
-  "displayName": "displayName-value",
-  "description": "description-value",
-  "visibility": "visibility-value",
-  "id": "id-value"
+    "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#directory/administrativeUnits/$entity",
+    "id": "4d7ea995-bc0f-45c0-8c3e-132e93bf95f8",
+    "deletedDateTime": null,
+    "displayName": "Seattle District Technical Schools",
+    "description": "Seattle district technical schools administration",
+    "membershipRule": null,
+    "membershipType": null,
+    "membershipRuleProcessingState": null,
+    "visibility": "HiddenMembership"
 }
 ```
 

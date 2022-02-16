@@ -1,27 +1,22 @@
 ---
-title: Obter administrativeUnit
-description: Recupere as propriedades e as relações de um objeto administrativeUnit.
+title: Listar administrativeUnits
+description: Recupere uma lista de objetos administrativeUnit.
 author: DougKirschner
 ms.localizationpriority: medium
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: 0a6f68be5c3cbcb2daef5baa26230b451a93f70c
+ms.openlocfilehash: 776238cdcff6b7f839fddfb0d8a30ef83c533922
 ms.sourcegitcommit: 6968f5aaf40089684efb0c38a95f6cca353c1d92
 ms.translationtype: MT
 ms.contentlocale: pt-BR
 ms.lasthandoff: 02/16/2022
-ms.locfileid: "62854017"
+ms.locfileid: "62855293"
 ---
-# <a name="get-administrativeunit"></a>Obter administrativeUnit
+# <a name="list-administrativeunits"></a>Listar administrativeUnits
 
 Namespace: microsoft.graph
 
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
-
-Recupere as propriedades e as relações de um [objeto administrativeUnit](../resources/administrativeunit.md) .
-
-Como o **recurso administrativeUnit** dá suporte a extensões, `GET` você também pode usar a operação para obter propriedades [personalizadas](/graph/extensibility-overview) e dados de extensão em uma **instância administrativeUnit**.
-
+Recupere uma lista de [objetos administrativeUnit](../resources/administrativeunit.md) .
 ## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
@@ -35,58 +30,61 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- { "blockType": "ignored" } -->
 ```http
-GET /administrativeUnits/{id}
-GET /directory/administrativeUnits/{id}
+GET /directory/administrativeUnits
 ```
 ## <a name="optional-query-parameters"></a>Parâmetros de consulta opcionais
-Este método dá suporte ao parâmetro `$select` [de consulta OData](/graph/query-parameters) para ajudar a personalizar a resposta.
+Este método dá suporte aos `$count`[parâmetros](/graph/query-parameters) de consulta , `$select`, `$search`, `$filter` (`eq`) `$expand` e OData para ajudar a personalizar a resposta.
 
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
 | Nome      |Descrição|
 |:----------|:----------|
-| Autorização  | {token} de portador. Obrigatório. |
+| Autorização  | {token} de portador. Obrigatório.|
 
 ## <a name="request-body"></a>Corpo da solicitação
 Não forneça um corpo de solicitação para esse método.
 
 ## <a name="response"></a>Resposta
 
-Se tiver êxito, este método retornará um `200 OK` código de resposta e um objeto [administrativeUnit](../resources/administrativeunit.md) no corpo da resposta.
+Se tiver êxito, este método retornará um `200 OK` código de resposta e uma coleção de [objetos administrativeUnit](../resources/administrativeunit.md) no corpo da resposta.
 ## <a name="example"></a>Exemplo
 ### <a name="request"></a>Solicitação
 Este é um exemplo da solicitação.
 
+
 # <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "get_administrativeunit"
+  "name": "get_administrativeunits"
 }-->
 ```msgraph-interactive
-GET https://graph.microsoft.com/beta/administrativeUnits/4d7ea995-bc0f-45c0-8c3e-132e93bf95f8
+GET https://graph.microsoft.com/v1.0/directory/administrativeUnits
 ```
 # <a name="c"></a>[C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/get-administrativeunit-csharp-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/csharp/get-administrativeunits-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="javascript"></a>[JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/get-administrativeunit-javascript-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/javascript/get-administrativeunits-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="objective-c"></a>[Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/get-administrativeunit-objc-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/objc/get-administrativeunits-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="java"></a>[Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/get-administrativeunit-java-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/java/get-administrativeunits-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="go"></a>[Ir](#tab/go)
-[!INCLUDE [sample-code](../includes/snippets/go/get-administrativeunit-go-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/go/get-administrativeunits-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="powershell"></a>[PowerShell](#tab/powershell)
-[!INCLUDE [sample-code](../includes/snippets/powershell/get-administrativeunit-powershell-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/powershell/get-administrativeunits-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 ---
 
@@ -96,41 +94,36 @@ Veja a seguir um exemplo da resposta.
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.administrativeUnit"
+  "@odata.type": "microsoft.graph.administrativeUnit",
+  "isCollection": true
 } -->
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
 
 {
-    "@odata.context": "https://graph.microsoft.com/beta/$metadata#administrativeUnits/$entity",
-    "id": "4d7ea995-bc0f-45c0-8c3e-132e93bf95f8",
-    "deletedDateTime": null,
-    "displayName": "Seattle District Technical Schools",
-    "description": "Seattle district technical schools administration",
-    "isMemberManagementRestricted": null,
-    "visibility": "HiddenMembership",
-    "membershipRule": null,
-    "membershipType": null,
-    "membershipRuleProcessingState": null
+    "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#directory/administrativeUnits",
+    "value": [
+        {
+            "id": "4d7ea995-bc0f-45c0-8c3e-132e93bf95f8",
+            "deletedDateTime": null,
+            "displayName": "Seattle District Technical Schools",
+            "description": "Seattle district technical schools administration",
+            "membershipRule": null,
+            "membershipType": null,
+            "membershipRuleProcessingState": null,
+            "visibility": "HiddenMembership"
+        }
+    ]
 }
 ```
-
-## <a name="see-also"></a>Confira também
-
-- [Adicionar dados personalizados a recursos usando extensões](/graph/extensibility-overview)
-- [Adicionar dados personalizados aos usuários usando extensões abertas (visualização)](/graph/extensibility-open-users)
-<!--
-- [Add custom data to groups using schema extensions (preview)](/graph/extensibility-schema-groups)
--->
-
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
 <!--
 {
   "type": "#page.annotation",
-  "description": "Get administrativeUnit",
+  "description": "List administrativeUnits",
   "keywords": "",
   "section": "documentation",
   "tocPath": "",

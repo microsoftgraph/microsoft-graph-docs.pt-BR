@@ -5,12 +5,12 @@ author: charlenezheng
 ms.localizationpriority: medium
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: 0c4ededfdeeb8f221bd9b0089205a27520a20b44
-ms.sourcegitcommit: 4e16f26b6b685a6a3dae855a04979c84105609b9
+ms.openlocfilehash: 762d62bd0e34daa0ea7be5f9c35fc4cc6477009f
+ms.sourcegitcommit: 6968f5aaf40089684efb0c38a95f6cca353c1d92
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/10/2022
-ms.locfileid: "62519527"
+ms.lasthandoff: 02/16/2022
+ms.locfileid: "62855151"
 ---
 # <a name="get-x509certificateauthenticationmethodconfiguration"></a>Obter x509CertificateAuthenticationMethodConfiguration
 Namespace: microsoft.graph
@@ -19,7 +19,7 @@ Namespace: microsoft.graph
 
 Leia os detalhes de configuração do método de autenticação de certificado [X.509](../resources/x509certificateauthenticationmethodconfiguration.md) na política [de métodos de autenticação](../resources/authenticationmethodspolicy.md).
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão|Permissões (da com menos para a com mais privilégios)|
@@ -92,6 +92,8 @@ GET https://graph.microsoft.com/beta/policies/authenticationMethodsPolicy/authen
 
 
 ### <a name="response"></a>Resposta
+
+O objeto de resposta a seguir mostra um x509CertificateAuthenticationMethodConfiguration com sua configuração padrão.
 >**Observação:** o objeto de resposta mostrado aqui pode ser encurtado para legibilidade.
 <!-- {
   "blockType": "response",
@@ -104,10 +106,12 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#authenticationMethodConfigurations/$entity",
     "@odata.type": "#microsoft.graph.x509CertificateAuthenticationMethodConfiguration",
     "id": "X509Certificate",
     "state": "disabled",
-    "certificateUserBindings": [{
+    "certificateUserBindings": [
+        {
             "x509CertificateField": "PrincipalName",
             "userProperty": "onPremisesUserPrincipalName",
             "priority": 1
@@ -122,11 +126,14 @@ Content-Type: application/json
         "x509CertificateAuthenticationDefaultMode": "x509CertificateSingleFactor",
         "rules": []
     },
-    "includeTargets": [{
-        "targetType": "group",
-        "id": "all_users",
-        "isRegistrationRequired": false
-    }]
+    "includeTargets@odata.context": "https://graph.microsoft.com/beta/$metadata#policies/authenticationMethodsPolicy/authenticationMethodConfigurations('X509Certificate')/microsoft.graph.x509CertificateAuthenticationMethodConfiguration/includeTargets",
+    "includeTargets": [
+        {
+            "targetType": "group",
+            "id": "all_users",
+            "isRegistrationRequired": false
+        }
+    ]
 }
 ```
 

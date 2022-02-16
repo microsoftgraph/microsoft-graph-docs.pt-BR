@@ -5,12 +5,12 @@ author: dkershaw10
 ms.localizationpriority: medium
 ms.prod: users
 doc_type: apiPageType
-ms.openlocfilehash: 686a8f1a88781cff9c7469606d5e5cc61a86a4bd
-ms.sourcegitcommit: 25acfa7d0153336c9a35d30a1dd422aeadc1342c
+ms.openlocfilehash: 4e39fc0f9c6d27c4c820c5fd10eb7e648ed07bba
+ms.sourcegitcommit: 6968f5aaf40089684efb0c38a95f6cca353c1d92
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/03/2022
-ms.locfileid: "62341922"
+ms.lasthandoff: 02/16/2022
+ms.locfileid: "62855158"
 ---
 # <a name="user-activateserviceplan"></a>user: activateServicePlan
 
@@ -54,8 +54,8 @@ No corpo da solicitação, forneça um objeto JSON com o seguinte parâmetro:
 
 | Parâmetro | Tipo | Descrição |
 | :--- | :--- | :--- |
-| servicePlanId | Guid | PlanId do ServicePlan a ser ativado. |
-| skuId | Guid | SkuId de SKU o plano de serviço está em. |
+| servicePlanId | GUID | PlanId do ServicePlan a ser ativado. |
+| skuId | GUID | SkuId de SKU o plano de serviço está em. |
 
 ## <a name="response"></a>Resposta
 

@@ -1,17 +1,16 @@
 ---
 author: JeremyKelley
 description: O recurso de lista representa uma lista em um site.
-ms.date: 09/11/2017
-title: Listar
+title: Recurso List
 ms.localizationpriority: medium
 ms.prod: sharepoint
 doc_type: resourcePageType
-ms.openlocfilehash: 0703f3df00f97391f7f06785bebc880b29bbefbd
-ms.sourcegitcommit: 3f3975916b5c531ee63d92340ccd6e73e879e8d7
+ms.openlocfilehash: c2f0fd3fe48eaebbf7f730d0e52e964aab2e057b
+ms.sourcegitcommit: 6968f5aaf40089684efb0c38a95f6cca353c1d92
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/21/2022
-ms.locfileid: "62161862"
+ms.lasthandoff: 02/16/2022
+ms.locfileid: "62854470"
 ---
 # <a name="list-resource"></a>Recurso List
 
@@ -43,7 +42,7 @@ Todos os exemplos abaixo são relativos a um site, por exemplo, `https://graph.m
 | [Obter canal WebSocket][] | GET /lists/{list-id}/subscriptions/socketIo
 |[Tipos de conteúdo de lista][]          | GET /lists/{list-id}/contentTypes
 |[Adicionar cópia do tipo de conteúdo do site][] | POST /lists/{list-id}/contentTypes/addCopy
-|[List columns][]               | GET /lists/{list-id}/columns
+|[Colunas de lista][]               | GET /lists/{list-id}/columns
 |[Criar coluna][]              | POST /lists/{list-id}/columns
 |[Listar operações](../api/list-list-operations.md)|GET /lists/{list-id}/operations
 
@@ -60,44 +59,6 @@ Todos os exemplos abaixo são relativos a um site, por exemplo, `https://graph.m
 [Adicionar cópia do tipo de conteúdo do site]: ../api/contenttype-addCopy.md
 [Colunas de lista]: ../api/list-list-columns.md
 [Criar coluna]: ../api/list-post-columns.md
-
-## <a name="json-representation"></a>Representação JSON
-
-Veja a seguir uma representação JSON de um recurso **list**.
-
-<!-- { "blockType": "resource", 
-       "@odata.type": "microsoft.graph.list",
-       "keyProperty": "id", 
-       "optionalProperties": [ "items", "drive"] } -->
-
-```json
-{
-  "activities": [{"@odata.type": "microsoft.graph.itemActivity"}],
-  "columns": [ { "@odata.type": "microsoft.graph.columnDefinition" }],
-  "contentTypes": [ { "@odata.type": "microsoft.graph.contentType" }],
-  "displayName": "title of list",
-  "drive": { "@odata.type": "microsoft.graph.drive" },
-  "items": [ { "@odata.type": "microsoft.graph.listItem" } ],
-  "list": {
-    "@odata.type": "microsoft.graph.listInfo",
-    "hidden": false,
-    "template&quot;: &quot;documentLibrary | genericList | survey | links | announcements | contacts ..."
-  },
-  "system": false,
-  "subscriptions": [ {"@odata.type": "microsoft.graph.subscription"} ],
-
-  /* inherited from baseItem */
-  "id": "string",
-  "name": "name of list",
-  "createdBy": { "@odata.type": "microsoft.graph.identitySet" },
-  "createdDateTime": "timestamp",
-  "description": "description of list",
-  "eTag": "string",
-  "lastModifiedBy": { "@odata.type": "microsoft.graph.identitySet" },
-  "lastModifiedDateTime": "timestamp",
-  "webUrl&quot;: &quot;url to visit the list in a browser"
-}
-```
 
 ## <a name="properties"></a>Propriedades
 
@@ -134,7 +95,7 @@ O recurso **list** tem as seguintes relações com outros recursos.
 | **drive**         | [drive][]                   | Presente apenas em bibliotecas de documentos. Permite o acesso à lista como um recurso [drive][] com [driveItems][driveItem].
 | **items**         | Collection([listItem][])    | Todos os itens contidos na lista.
 | assinaturas      | conjunto de [assinaturas][] | O conjunto de assinaturas na lista.
-|**operations**|[coleção richLongRunningOperation](../resources/richlongrunningoperation.md)| A coleção de operações em execução longa para a lista.
+|**operations**|Coleção [richLongRunningOperation](../resources/richlongrunningoperation.md)| A coleção de operações em execução longa para a lista.
 
 [baseItem]: baseitem.md
 [contentType]: contenttype.md
@@ -148,6 +109,44 @@ O recurso **list** tem as seguintes relações com outros recursos.
 [site]: site.md
 [systemFacet]: systemfacet.md
 [assinatura]: subscription.md
+
+## <a name="json-representation"></a>Representação JSON
+
+Veja a seguir uma representação JSON do recurso.
+
+<!-- { "blockType": "resource", 
+       "@odata.type": "microsoft.graph.list",
+       "keyProperty": "id", 
+       "optionalProperties": [ "items", "drive"] } -->
+
+```json
+{
+  "activities": [{"@odata.type": "microsoft.graph.itemActivity"}],
+  "columns": [ { "@odata.type": "microsoft.graph.columnDefinition" }],
+  "contentTypes": [ { "@odata.type": "microsoft.graph.contentType" }],
+  "displayName": "title of list",
+  "drive": { "@odata.type": "microsoft.graph.drive" },
+  "items": [ { "@odata.type": "microsoft.graph.listItem" } ],
+  "list": {
+    "@odata.type": "microsoft.graph.listInfo",
+    "hidden": false,
+    "template&quot;: &quot;documentLibrary | genericList | survey | links | announcements | contacts ..."
+  },
+  "system": false,
+  "subscriptions": [ {"@odata.type": "microsoft.graph.subscription"} ],
+
+  /* inherited from baseItem */
+  "id": "string",
+  "name": "name of list",
+  "createdBy": { "@odata.type": "microsoft.graph.identitySet" },
+  "createdDateTime": "timestamp",
+  "description": "description of list",
+  "eTag": "string",
+  "lastModifiedBy": { "@odata.type": "microsoft.graph.identitySet" },
+  "lastModifiedDateTime": "timestamp",
+  "webUrl&quot;: &quot;url to visit the list in a browser"
+}
+```
 
 <!--
 {

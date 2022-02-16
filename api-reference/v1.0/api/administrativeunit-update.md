@@ -5,18 +5,18 @@ author: DougKirschner
 ms.localizationpriority: medium
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: aa8fc7c6dbc3a65af5f1a92361e09f4863762728
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: c8629132cbe4c55336b466d07ec384c4ac9acdc7
+ms.sourcegitcommit: 6968f5aaf40089684efb0c38a95f6cca353c1d92
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62125001"
+ms.lasthandoff: 02/16/2022
+ms.locfileid: "62853974"
 ---
-# <a name="update-administrativeunit"></a>Atualizar administrativeunit
+# <a name="update-administrativeunit"></a>Atualizar administrativeUnit
 
 Namespace: microsoft.graph
 
-Atualize as propriedades de [um objeto administrativeUnit.](../resources/administrativeunit.md)
+Atualize as propriedades de [um objeto administrativeUnit](../resources/administrativeunit.md) .
 ## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
@@ -48,9 +48,8 @@ No corpo da solicitação, forneça os valores para os campos relevantes que dev
 |:---------------|:--------|:----------|
 |description|string|Descrição da unidade administrativa.|
 |displayName|string|Nome de exibição da unidade administrativa.|
-|visibilidade|string|Visibilidade da unidade administrativa. Se não for definido, o padrão será "público". Pode ser definido como "HiddenMembership", que oculta a associação de não membros.|
 
-Como o **recurso administrativeUnit** dá suporte a extensões, você pode usar a operação para adicionar, atualizar ou excluir seus próprios dados específicos do aplicativo em propriedades [personalizadas](/graph/extensibility-overview)de uma extensão em uma instância `PATCH` **administrativeUnit** existente.
+Como o **recurso administrativeUnit** dá suporte a extensões, `PATCH` você pode usar a operação para adicionar, atualizar ou excluir seus próprios dados específicos do aplicativo em propriedades [personalizadas](/graph/extensibility-overview) de uma extensão em uma instância **administrativeUnit** existente.
 
 ## <a name="response"></a>Resposta
 
@@ -58,7 +57,7 @@ Se tiver êxito, este método retornará um código de resposta `204 No Content`
 
 ## <a name="example"></a>Exemplo
 
-##### <a name="request"></a>Solicitação
+### <a name="request"></a>Solicitação
 
 
 # <a name="http"></a>[HTTP](#tab/http)
@@ -67,13 +66,11 @@ Se tiver êxito, este método retornará um código de resposta `204 No Content`
   "name": "update_administrativeunit"
 }-->
 ```http
-PATCH https://graph.microsoft.com/v1.0/directory/administrativeUnits/{id}
+PATCH https://graph.microsoft.com/v1.0/directory/administrativeUnits/4d7ea995-bc0f-45c0-8c3e-132e93bf95f8
 Content-type: application/json
 
 {
-  "displayName": "displayName-value",
-  "description": "description-value",
-  "visibility": "visibility-value"
+    "displayName": "Greater Seattle District Technical Schools"
 }
 ```
 # <a name="c"></a>[C#](#tab/csharp)
@@ -103,10 +100,7 @@ Content-type: application/json
 ---
 
 
----
-
-
-##### <a name="response"></a>Resposta
+### <a name="response"></a>Resposta
 
 <!-- {
   "blockType": "response"

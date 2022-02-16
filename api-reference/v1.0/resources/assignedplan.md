@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: jpettere
 ms.prod: directory-management
 doc_type: resourcePageType
-ms.openlocfilehash: fefb2f204af1f3f64d7b23968722c13fdc36a51b
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: e7ffa073280c3b6b88284f95ce5f582566b629e6
+ms.sourcegitcommit: 6968f5aaf40089684efb0c38a95f6cca353c1d92
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59123801"
+ms.lasthandoff: 02/16/2022
+ms.locfileid: "62854866"
 ---
 # <a name="assignedplan-resource-type"></a>Tipo de recurso assignedPlan
 
@@ -24,9 +24,9 @@ A propriedade **assignedPlans** das entidades [user](user.md) e [organization](o
 | Propriedade     | Tipo   |Descrição|
 |:---------------|:--------|:----------|
 |assignedDateTime|DateTimeOffset|A data e a hora em que o plano foi atribuído. O tipo Timestamp representa informações de data e hora usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite UTC em 1 de janeiro de 2014 é `2014-01-01T00:00:00Z`.|
-|capabilityStatus|Cadeia de caracteres|Condição da atribuição de recursos. Os valores possíveis `Enabled` são , , , , `Warning` `Suspended` `Deleted` `LockedOut` . Consulte [uma descrição detalhada](#capabilitystatus-values) de cada valor.|
+|capabilityStatus|Cadeia de caracteres|Condição da atribuição de recursos. Os valores possíveis são , , , , `LockedOut``Deleted`. `Suspended``Warning``Enabled` Consulte [uma descrição detalhada](#capabilitystatus-values) de cada valor.|
 |service|Cadeia de caracteres|O nome do serviço; por exemplo, "Exchange".|
-|servicePlanId|Guid|Um GUID que identifica o plano de serviço.|
+|servicePlanId|GUID|Um GUID que identifica o plano de serviço.|
 
 
 ### <a name="capabilitystatus-values"></a>valores de capabilityStatus
@@ -54,9 +54,9 @@ Veja a seguir uma representação JSON do recurso
 ```json
 {
   "assignedDateTime": "String (timestamp)",
-  "capabilityStatus": "string",
-  "service": "string",
-  "servicePlanId": "guid"
+  "capabilityStatus": "String",
+  "service": "String",
+  "servicePlanId": "GUID"
 }
 
 ```

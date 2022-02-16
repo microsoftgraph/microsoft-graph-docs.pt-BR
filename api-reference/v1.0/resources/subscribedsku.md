@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: SumitParikh
 ms.prod: directory-management
 doc_type: resourcePageType
-ms.openlocfilehash: dd497dd40e691fe8751517b7c9b540844e29e615
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 1e3b3c6e289f0b82f66c7936880557961ee9c191
+ms.sourcegitcommit: 6968f5aaf40089684efb0c38a95f6cca353c1d92
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59134451"
+ms.lasthandoff: 02/16/2022
+ms.locfileid: "62854759"
 ---
 # <a name="subscribedsku-resource-type"></a>Tipo de recurso subscribedSku
 
@@ -30,12 +30,12 @@ Somente a operação de leitura tem nos SKUs inscritos; criar, atualizar e exclu
 | Propriedade     | Tipo   |Descrição|
 |:---------------|:--------|:----------|
 |appliesTo|Cadeia de caracteres| Por exemplo, “Usuário” ou “Empresa”. |
-|capabilityStatus|Cadeia de caracteres|  Os valores possíveis são: `Enabled`, `Warning`, `Suspended`, `Deleted`, `LockedOut`. O capabilityStatus é se a propriedade `Enabled` **prepaidUnits** tiver pelo menos uma unidade habilitada e se o cliente `LockedOut` cancelar sua assinatura. |
+|capabilityStatus|Cadeia de caracteres|  Os valores possíveis são: `Enabled`, `Warning`, `Suspended`, `Deleted`, `LockedOut`. O capabilityStatus é `Enabled` se a propriedade **prepaidUnits** tiver pelo menos uma `LockedOut` unidade habilitada e se o cliente cancelar sua assinatura. |
 |consumedUnits|Int32| O número de licenças que foram atribuídas. |
-|id|Cadeia de caracteres| O identificador exclusivo do objeto SKU assinado. Chave, não anulada. |
+|id|String| O identificador exclusivo do objeto SKU assinado. Chave, não anulada. |
 |prepaidUnits|[licenseUnitsDetail](licenseunitsdetail.md)| Informações sobre o número e o status das licenças pré-pagas. |
 |servicePlans|Coleção [servicePlanInfo](serviceplaninfo.md)| Informações sobre os planos do serviço que estão disponíveis com o SKU. Não anulada |
-|skuId|Guid| O identificador exclusivo (GUID) do SKU do serviço. |
+|skuId|GUID| O identificador exclusivo (GUID) do SKU do serviço. |
 |skuPartNumber|Cadeia de caracteres| O número de peça do SKU, por exemplo: "AAD_PREMIUM" ou "RMSBASIC". Para obter uma lista de assinaturas comerciais que uma organização adquiriu, consulte [List subscribedSkus](../api/subscribedsku-list.md).|
 
 ## <a name="relationships"></a>Relações
@@ -68,14 +68,14 @@ Veja a seguir uma representação JSON do recurso
 
 ```json
 {
-  "appliesTo": "string",
-  "capabilityStatus": "string",
+  "appliesTo": "String",
+  "capabilityStatus": "String",
   "consumedUnits": 1024,
-  "id": "string (identifier)",
+  "id": "String (identifier)",
   "prepaidUnits": {"@odata.type": "microsoft.graph.licenseUnitsDetail"},
   "servicePlans": [{"@odata.type": "microsoft.graph.servicePlanInfo"}],
-  "skuId": "guid",
-  "skuPartNumber": "string"
+  "skuId": "GUID",
+  "skuPartNumber": "String"
 }
 
 ```

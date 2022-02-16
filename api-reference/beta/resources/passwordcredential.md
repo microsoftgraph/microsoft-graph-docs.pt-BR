@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 doc_type: resourcePageType
 ms.prod: applications
 author: madansr7
-ms.openlocfilehash: 69bd0e70bb67e9940b2ce6f7774e7797c553ca71
-ms.sourcegitcommit: c7ff992ef63e480d070421ba99b28ee129cb6acb
+ms.openlocfilehash: 2a4fb91208a09ccf0ca8e06b5431e88b4793e4cc
+ms.sourcegitcommit: 6968f5aaf40089684efb0c38a95f6cca353c1d92
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "60689043"
+ms.lasthandoff: 02/16/2022
+ms.locfileid: "62854710"
 ---
 # <a name="passwordcredential-resource-type"></a>Tipo de recurso passwordCredential
 
@@ -18,10 +18,10 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Representa uma credencial de senha associada a um aplicativo ou uma entidade de serviço. A **propriedade passwordCredentials** dos direitos [de](application.md) aplicativo e [servicePrincipal](serviceprincipal.md) é uma coleção de **objetos passwordCredential.**
+Representa uma credencial de senha associada a um aplicativo ou uma entidade de serviço. A **propriedade passwordCredentials** dos direitos [de](application.md) [aplicativo e servicePrincipal](serviceprincipal.md) é uma coleção de **objetos passwordCredential** .
 
 > [!IMPORTANT]
-> Não há suporte para usar POST ou PATCH **para definir passwordCredential.** Use os seguintes métodos addPassword e removePassword para atualizar a senha de um aplicativo ou um servicePrincipal:
+> Não há suporte para usar POST ou PATCH **para definir passwordCredential** . Use os seguintes métodos addPassword e removePassword para atualizar a senha de um aplicativo ou um servicePrincipal:
 >
 > - [application: addPassword](../api/application-addpassword.md)
 > - [application: removePassword](../api/application-removepassword.md)
@@ -32,11 +32,11 @@ Representa uma credencial de senha associada a um aplicativo ou uma entidade de 
 ## <a name="properties"></a>Propriedades
 | Propriedade     | Tipo   |Descrição|
 |:---------------|:--------|:----------|
-| customKeyIdentifier | Binário | Não usar. |
+| customKeyIdentifier | Binária | Não usar. |
 | displayName | String | Nome amigável para a senha. Opcional. |
 | endDateTime | DateTimeOffset | A data e a hora em que a senha expira representada usando o formato ISO 8601 e está sempre em horário UTC. Por exemplo, meia-noite UTC em 1 de janeiro de 2014 é `2014-01-01T00:00:00Z`. Opcional. |
 | dica | String | Contém os três primeiros caracteres da senha. Somente leitura. |
-| keyId | Guid | O identificador exclusivo da senha. |
+| keyId | GUID | O identificador exclusivo da senha. |
 | secretText | String | Somente leitura; Contém as senhas fortes geradas pelo Azure AD que têm entre 16 e 64 caracteres. O valor de senha gerado só é retornado durante a solicitação POST inicial [para addPassword](../api/application-addpassword.md). Não há como recuperar essa senha no futuro. |
 | startDateTime | DateTimeOffset | A data e a hora em que a senha se torna válida. O tipo Timestamp representa informações de data e hora usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite UTC em 1 de janeiro de 2014 é `2014-01-01T00:00:00Z`. Opcional. |
 
@@ -73,7 +73,7 @@ Veja a seguir uma representação JSON do recurso.
   "displayName": "String",
   "endDateTime": "String (timestamp)",
   "hint": "String",
-  "keyId": "Guid",
+  "keyId": "GUID",
   "secretText": "String",
   "startDateTime": "String (timestamp)"
 }

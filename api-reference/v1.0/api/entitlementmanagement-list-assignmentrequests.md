@@ -5,18 +5,18 @@ author: markwahl-msft
 ms.localizationpriority: medium
 ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: 448a35b90f8ee3e8f8ef42d7187fb7064ffadf86
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: 37e974d2eca2fb4dbae0731dda34281f858307c7
+ms.sourcegitcommit: 6968f5aaf40089684efb0c38a95f6cca353c1d92
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62130419"
+ms.lasthandoff: 02/16/2022
+ms.locfileid: "62854540"
 ---
 # <a name="list-assignmentrequests"></a>Listar assignmentRequests
 
 Namespace: microsoft.graph
 
-No gerenciamento de direitos do [Azure AD,](../resources/entitlementmanagement-overview.md)recupere uma lista de objetos [accessPackageAssignmentRequest.](../resources/accesspackageassignmentrequest.md)  A lista resultante inclui todas as solicitações de atribuição, atuais e bem como expiradas, que o chamador tem acesso à leitura, em todos os catálogos e pacotes de acesso.
+No [gerenciamento de direitos do Azure AD](../resources/entitlementmanagement-overview.md), recupere uma lista de objetos [accessPackageAssignmentRequest](../resources/accesspackageassignmentrequest.md) .  A lista resultante inclui todas as solicitações de atribuição, atuais e bem como expiradas, que o chamador tem acesso à leitura, em todos os catálogos e pacotes de acesso.
 
 ## <a name="permissions"></a>Permissões
 
@@ -40,14 +40,14 @@ GET /identityGovernance/entitlementManagement/assignmentRequests
 
 ## <a name="optional-query-parameters"></a>Parâmetros de consulta opcionais
 
-Este método dá suporte aos `$select` parâmetros de consulta , `$expand` e `$filter` OData para ajudar a personalizar a resposta.
+Este método dá suporte aos `$select`parâmetros de consulta , `$expand` `$filter` e OData para ajudar a personalizar a resposta.
 
 ### <a name="example-scenarios-for-using-query-parameters"></a>Cenários de exemplo para o uso de parâmetros de consulta
 
-- Para recuperar o pacote de acesso de cada solicitação, `$expand=accessPackage` inclua na consulta.
-- Para recuperar apenas solicitações para um pacote de acesso específico, inclua na consulta um filtro como `$expand=accessPackage&$filter=accessPackage/id eq '9bbe5f7d-f1e7-4eb1-a586-38cdf6f8b1ea'` .
-- Para recuperar a atribuição resultante, `$expand=assignment` inclua na consulta.
-- Para obter mais detalhes sobre o solicitante, `$expand=requestor` inclua na consulta.
+- Para recuperar o pacote de acesso de cada solicitação, inclua `$expand=accessPackage` na consulta.
+- Para recuperar apenas solicitações para um pacote de acesso específico, inclua na consulta um filtro como `$expand=accessPackage&$filter=accessPackage/id eq '9bbe5f7d-f1e7-4eb1-a586-38cdf6f8b1ea'`.
+- Para recuperar a atribuição resultante, inclua `$expand=assignment` na consulta.
+- Para obter mais detalhes sobre o solicitante, inclua `$expand=requestor` na consulta.
 
 Para obter informações gerais, acesse [Parâmetros de consulta OData](/graph/query-parameters).
 
@@ -62,7 +62,7 @@ Não forneça um corpo de solicitação para esse método.
 
 ## <a name="response"></a>Resposta
 
-Se tiver êxito, este método retornará um código de resposta e uma coleção de `200 OK` [objetos accessPackageAssignmentRequest](../resources/accesspackageassignmentrequest.md) no corpo da resposta.
+Se tiver êxito, este método retornará um `200 OK` código de resposta e uma coleção de [objetos accessPackageAssignmentRequest](../resources/accesspackageassignmentrequest.md) no corpo da resposta.
 
 ## <a name="examples"></a>Exemplos
 
@@ -125,7 +125,7 @@ Content-Type: application/json
       "state": "delivered",
       "status": "Delivered",
       "createdDateTime": "2019-10-25T22:55:11.623Z",
-      "completedDate": "2019-10-26T22:55:11.623Z",
+      "completedDateTime": "2019-10-26T22:55:11.623Z",
       "schedule": {
         "@odata.type": "microsoft.graph.entitlementManagementSchedule"
       }

@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 doc_type: resourcePageType
 ms.prod: applications
 author: psignoret
-ms.openlocfilehash: 088fd0264abebaec5e4bf4d9af14bbb4031de1e4
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: faa6afc6c7f72efc73189d373c4f9223b558ecc7
+ms.sourcegitcommit: 6968f5aaf40089684efb0c38a95f6cca353c1d92
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59118747"
+ms.lasthandoff: 02/16/2022
+ms.locfileid: "62854348"
 ---
 # <a name="delegatedpermissionclassification-resource-type"></a>Tipo de recurso delegatedPermissionClassification
 
@@ -24,9 +24,9 @@ As classificações de permissão delegadas podem ser usadas em combinação com
 
 | Propriedade | Tipo | Descrição |
 |:---------------|:--------|:----------|
-| id | Cadeia de caracteres | Um identificador exclusivo para **a chave delegatedPermissionClassification.** Não anulável. Somente leitura. |
-| classificação | permissionClassificationType | O valor de classificação que está sendo dado. Valor possível: `low` . O não tem suporte para `$filter`. |
-| permissionId | Guid | O identificador exclusivo (**id**) da permissão delegada listada na coleção **oauth2PermissionScopes** [do servicePrincipal](servicePrincipal.md). Obrigatório durante a criação. O não tem suporte para `$filter`. |
+| id | String | Um identificador exclusivo para **a chave delegatedPermissionClassification** . Não anulável. Somente leitura. |
+| classificação | permissionClassificationType | O valor de classificação que está sendo dado. Valor possível: `low`. O não tem suporte para `$filter`. |
+| permissionId | String | O identificador exclusivo (**id**) da permissão delegada listada na coleção **oauth2PermissionScopes** do [servicePrincipal](servicePrincipal.md). Obrigatório durante a criação. O não tem suporte para `$filter`. |
 | permissionName | String | O valor da declaração (**valor**) da permissão delegada listada na coleção **oauth2PermissionScopes** do [servicePrincipal](servicePrincipal.md). O não tem suporte para `$filter`. |
 
 ## <a name="json-representation"></a>Representação JSON
@@ -43,9 +43,9 @@ Veja a seguir uma representação JSON do recurso.
 
 ```json
 {
-  "id": "string (identifier)",
+  "id": "String (identifier)",
   "classification": "low",
-  "permissionId": "string",
-  "permissionName": "string"
+  "permissionId": "String",
+  "permissionName": "String"
 }
 ```

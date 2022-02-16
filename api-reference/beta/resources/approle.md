@@ -1,16 +1,16 @@
 ---
 title: Tipo de recurso appRole
 description: Representa uma função de aplicativo.
-localization_priority: Normal
+ms.localizationpriority: medium
 doc_type: resourcePageType
 ms.prod: applications
 author: psignoret
-ms.openlocfilehash: 06a5f97048be74388b49a79c8661b49043ddf727
-ms.sourcegitcommit: aa18eb8a9965f99cc97680808abba8df46f31ba5
+ms.openlocfilehash: ac443bc36a6f14b56dad653abeb3daed9ec23218
+ms.sourcegitcommit: 6968f5aaf40089684efb0c38a95f6cca353c1d92
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/08/2021
-ms.locfileid: "51638834"
+ms.lasthandoff: 02/16/2022
+ms.locfileid: "62854442"
 ---
 # <a name="approle-resource-type"></a>Tipo de recurso appRole
 
@@ -20,21 +20,21 @@ Namespace: microsoft.graph
 
 Representa uma função de aplicativo que pode ser solicitada por (e concedida a) um aplicativo cliente ou que pode ser usada para atribuir um aplicativo a usuários ou grupos em uma função especificada. 
 
-Para adicionar, atualizar ou remover funções de aplicativo para um aplicativo, [atualize o aplicativo](../api/application-update.md) para o aplicativo ou serviço. As funções do aplicativo na entidade de aplicativo estarão disponíveis em todos os locatários onde o aplicativo é usado. Para definir funções de aplicativo que só são aplicáveis em seu locatário (por exemplo, funções [](../api/serviceprincipal-update.md) de aplicativo que representam funções personalizadas em sua instância de um aplicativo de vários locatários), você também pode atualizar a entidade de serviço do aplicativo, para adicionar ou atualizar funções de aplicativo à coleção **appRoles.**
+Para adicionar, atualizar ou remover funções de aplicativo para um aplicativo, [atualize o aplicativo](../api/application-update.md) para o aplicativo ou serviço. As funções do aplicativo na entidade de aplicativo estarão disponíveis em todos os locatários onde o aplicativo é usado. Para definir funções de aplicativo que só são aplicáveis em seu locatário (por exemplo, funções de aplicativo que representam funções personalizadas em sua instância de um aplicativo de vários [](../api/serviceprincipal-update.md) locatários), você também pode atualizar a entidade de serviço do aplicativo, para adicionar ou atualizar funções de aplicativo à coleção **appRoles**.
 
-Com [appRoleAssignments,](approleassignment.md)as funções do aplicativo podem ser atribuídas a usuários, grupos ou entidades de serviço de outros aplicativos.
+Com [appRoleAssignments](approleassignment.md), as funções do aplicativo podem ser atribuídas a usuários, grupos ou entidades de serviço de outros aplicativos.
 
 ## <a name="properties"></a>Propriedades
 
 | Propriedade   | Tipo |Descrição|
 |:---------------|:--------|:----------|
-|allowedMemberTypes|Coleção de cadeias de caracteres|Especifica se essa função de aplicativo pode ser atribuída a usuários e grupos (definindo como ), para outro aplicativo (definindo como , ou `["User"]` `["Application"]` ambos (definindo como `["User", "Application"]` ). Funções de aplicativo que suportam a atribuição a entidades de serviço de outros aplicativos também são conhecidas como [permissões de aplicativo.](/graph/auth/auth-concepts#microsoft-graph-permissions) O valor "Application" só é suportado para funções de aplicativo definidas em **entidades de** aplicativo. |
-|description|String|A descrição da função de aplicativo. Isso é exibido quando a função do aplicativo está sendo atribuída e, se a função do aplicativo funcionar como uma permissão de aplicativo, durante experiências de consentimento.|
+|allowedMemberTypes|String collection|Especifica se essa função de aplicativo pode ser atribuída a usuários e grupos ( `["User"]`definindo como ), para outro aplicativo ( `["Application"]`definindo como , ou ambos (definindo como `["User", "Application"]`). Funções de aplicativo que suportam a atribuição a entidades de serviço de outros aplicativos também são [conhecidas como permissões de aplicativo](/graph/auth/auth-concepts#microsoft-graph-permissions). O valor "Application" só é suportado para funções de aplicativo definidas em **entidades de** aplicativo. |
+|descrição|String|A descrição da função de aplicativo. Isso é exibido quando a função do aplicativo está sendo atribuída e, se a função do aplicativo funcionar como uma permissão de aplicativo, durante experiências de consentimento.|
 |displayName|String|Nome de exibição para a permissão que aparece na atribuição de função de aplicativo e experiências de consentimento.|
-|id|Guid|Identificador de função exclusivo dentro da **coleção appRoles.** Ao criar uma nova função de aplicativo, um novo identificador guid deve ser fornecido. |
+|id|GUID|Identificador de função exclusivo dentro da **coleção appRoles** . Ao criar uma nova função de aplicativo, um novo identificador GUID deve ser fornecido. |
 |isEnabled|Booliano|Ao criar ou atualizar uma função de aplicativo, isso deve ser definido como **true** (que é o padrão). Para excluir uma função, isso deve ser definido primeiro como **false**.  Nesse ponto, em uma chamada subsequente, essa função pode ser removida.|
-|origin|String| Especifica se a função de aplicativo é definida no objeto [application](application.md) ou na [entidade servicePrincipal.](serviceprincipal.md) Não _deve_ ser incluído em nenhuma solicitação POST ou PATCH. Somente leitura. |
-|value|Cadeia de caracteres|Especifica o valor a ser incluído na declaração em tokens de ID e tokens de acesso autenticando um usuário ou entidade `roles` de serviço atribuído. Não deve exceder 120 caracteres de comprimento. Os caracteres `:` `!` `#` `$` `%` `&` `'` `(` `)` `*` `+` `,` `-` `.` `/` `:` `;` <code>&lt;</code> `=` <code>&gt;</code> `?` `@` `[` `]` `^` `+` `_` <code>&#96;</code> `{` <code>&#124;</code> `}` `~` permitidos são , bem como caracteres nos intervalos `0-9` `A-Z` e `a-z` . Qualquer outro caractere, incluindo o caractere de espaço, não é permitido. Pode não começar com `.` . |
+|origin|String| Especifica se a função de aplicativo é definida no objeto [application](application.md) ou na [entidade servicePrincipal](serviceprincipal.md) . Não _deve_ ser incluído em nenhuma solicitação POST ou PATCH. Somente leitura. |
+|value|Cadeia de caracteres|Especifica o valor a ser incluído na `roles` declaração em tokens de ID e tokens de acesso autenticando um usuário ou entidade de serviço atribuído. Não deve exceder 120 caracteres de comprimento. Os caracteres permitidos `:` <code>&#96;</code> `]` `@` `^` `'` `&` `(` `%` `$` `#` `!` <code>&gt;</code> `?` `[` `;` `~`<code>&lt;</code> `}` `+` `*` `,` `/` `.` `)` `:` <code>&#124;</code> `+` `-` `{` `=` `_` são , bem como caracteres nos intervalos `0-9`e . `A-Z` `a-z` Qualquer outro caractere, incluindo o caractere de espaço, não é permitido. Pode não começar com `.`. |
 
 ## <a name="json-representation"></a>Representação JSON
 
@@ -50,13 +50,13 @@ Veja a seguir uma representação JSON do recurso.
 
 ```json
 {
-  "allowedMemberTypes": ["string"],
-  "description": "string",
-  "displayName": "string",
-  "id": "guid",
+  "allowedMemberTypes": ["String"],
+  "description": "String",
+  "displayName": "String",
+  "id": "GUID",
   "isEnabled": true,
-  "origin": "string",
-  "value": "string"
+  "origin": "String",
+  "value": "String"
 }
 ```
 

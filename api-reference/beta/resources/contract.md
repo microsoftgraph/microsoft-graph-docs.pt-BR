@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: adimitui
 ms.prod: directory-management
 doc_type: resourcePageType
-ms.openlocfilehash: d4247d2bbf61c6c0d5a22089d16029c9b2b61ed9
-ms.sourcegitcommit: 15956da1b4a7d523363ffa8afb5e2059fbf680ce
+ms.openlocfilehash: e872f2f102f9b906e55e917efdc80d50135c3514
+ms.sourcegitcommit: 6968f5aaf40089684efb0c38a95f6cca353c1d92
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/01/2022
-ms.locfileid: "62292085"
+ms.lasthandoff: 02/16/2022
+ms.locfileid: "62854554"
 ---
 # <a name="contract-resource-type"></a>Tipo de recurso de contrato
 
@@ -32,11 +32,11 @@ Representa uma parceria existente que o locatário parceiro tem com um locatári
 ## <a name="properties"></a>Propriedades
 | Propriedade   | Tipo | Descrição |
 |:---------------|:--------|:----------|
-|contractType|String|Tipo de contrato. Os valores possíveis são:  `SyndicationPartner`, `BreadthPartner`, `ResellerPartner`. Confira mais na [tabela abaixo](#contracttype-values). |
-|customerId|Guid|O identificador exclusivo do locatário do cliente referenciado por essa parceria. Corresponde à propriedade id do recurso de organização do locatário do cliente. |
-|defaultDomainName|Cadeia de caracteres|Uma cópia do nome de domínio padrão do locatário do cliente. A cópia é feita quando a parceria com o cliente é estabelecida. Ele não será atualizado automaticamente se o nome de domínio padrão do locatário do cliente mudar.|
-|displayName|String|Uma cópia do nome de exibição do locatário do cliente. A cópia é feita quando a parceria com o cliente é estabelecida. Ele não será atualizado automaticamente se o nome de exibição do locatário do cliente mudar.|
-|id|Cadeia de caracteres| O identificador exclusivo da parceria. Chave, somente leitura |
+|contractType|Cadeia de caracteres|Tipo de contrato. Os valores possíveis são:  `SyndicationPartner`, `BreadthPartner`, `ResellerPartner`. Confira mais na [tabela abaixo](#contracttype-values). |
+|customerId|GUID|O identificador exclusivo do locatário do cliente referenciado por essa parceria. Corresponde à propriedade id do recurso de organização do locatário do cliente. |
+|defaultDomainName|String|Uma cópia do nome de domínio padrão do locatário do cliente. A cópia é feita quando a parceria com o cliente é estabelecida. Ele não será atualizado automaticamente se o nome de domínio padrão do locatário do cliente mudar.|
+|displayName|Cadeia de caracteres|Uma cópia do nome de exibição do locatário do cliente. A cópia é feita quando a parceria com o cliente é estabelecida. Ele não será atualizado automaticamente se o nome de exibição do locatário do cliente mudar.|
+|id|String| O identificador exclusivo da parceria. Chave, somente leitura |
 
 ### <a name="contracttype-values"></a>valores contractType
 
@@ -64,7 +64,7 @@ Veja a seguir uma representação JSON do recurso.
 ```json
 {
   "contractType": "String",
-  "customerId": "Guid",
+  "customerId": "GUID",
   "defaultDomainName": "String",
   "displayName": "String",
   "id": "String (identifier)"

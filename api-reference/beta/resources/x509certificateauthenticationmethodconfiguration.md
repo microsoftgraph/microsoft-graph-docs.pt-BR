@@ -1,12 +1,17 @@
 ---
 title: Tipo de recurso x509CertificateAuthenticationMethodConfiguration
-description: 'Representa os detalhes do Azure AD native Certificate-Based Authentication (CBA) no locatário, incluindo se o método de autenticação está habilitado ou desabilitado e os usuários e grupos que podem se registrar e usá-lo.'
+description: Representa os detalhes do Azure AD native Certificate-Based Authentication (CBA) no locatário, incluindo se o método de autenticação está habilitado ou desabilitado e os usuários e grupos que podem se registrar e usá-lo.
 author: charlenezheng
 ms.localizationpriority: medium
 ms.prod: identity-and-sign-in
 doc_type: resourcePageType
+ms.openlocfilehash: 415f17972c6163314cfdb54a5828e4db65dca04a
+ms.sourcegitcommit: 6968f5aaf40089684efb0c38a95f6cca353c1d92
+ms.translationtype: MT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 02/16/2022
+ms.locfileid: "62854362"
 ---
-
 # <a name="x509certificateauthenticationmethodconfiguration-resource-type"></a>Tipo de recurso x509CertificateAuthenticationMethodConfiguration
 
 Namespace: microsoft.graph
@@ -22,7 +27,7 @@ Herda de [authenticationMethodConfiguration](../resources/authenticationmethodco
 |:---|:---|:---|
 |[Obter x509CertificateAuthenticationMethodConfiguration](../api/x509certificateauthenticationmethodconfiguration-get.md)|[x509CertificateAuthenticationMethodConfiguration](../resources/x509certificateauthenticationmethodconfiguration.md)|Leia as propriedades e as relações de um objeto x509CertificateAuthenticationMethodConfiguration.|
 |[Atualizar x509CertificateAuthenticationMethodConfiguration](../api/x509certificateauthenticationmethodconfiguration-update.md)|[x509CertificateAuthenticationMethodConfiguration](../resources/x509certificateauthenticationmethodconfiguration.md)|Atualize as propriedades de um objeto x509CertificateAuthenticationMethodConfiguration.|
-|[Excluir x509CertificateAuthenticationMethodConfiguration](../api/x509certificateauthenticationmethodconfiguration-delete.md)|Nenhum| Restaure o objeto x509CertificateAuthenticationMethodConfiguration para sua configuração padrão.|
+|[Excluir x509CertificateAuthenticationMethodConfiguration](../api/x509certificateauthenticationmethodconfiguration-delete.md)|Nenhum| Exclua o objeto x509CertificateAuthenticationMethodConfiguration personalizado pelo locatário e restaure a configuração padrão.|
 
 
 ## <a name="properties"></a>Propriedades

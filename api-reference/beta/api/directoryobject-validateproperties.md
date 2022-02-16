@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: keylimesoda
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: 7add5d22a55071a77fe431f675ee992ec3b32f9d
-ms.sourcegitcommit: 25acfa7d0153336c9a35d30a1dd422aeadc1342c
+ms.openlocfilehash: 39bd3f2aeeb87ff82fca521173b78f2be6a9b215
+ms.sourcegitcommit: 6968f5aaf40089684efb0c38a95f6cca353c1d92
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/03/2022
-ms.locfileid: "62348731"
+ms.lasthandoff: 02/16/2022
+ms.locfileid: "62854561"
 ---
 # <a name="directoryobject-validateproperties"></a>directoryObject: validateProperties
 
@@ -55,7 +55,7 @@ Forneça um objeto JSON com os seguintes parâmetros no corpo da solicitação.
 |entityType|String| `Group` é o único tipo de entidade com suporte. |
 |displayName|String| O nome de exibição do grupo a ser validado. A propriedade não é necessária individualmente. No entanto, pelo menos uma propriedade (displayName ou mailNickname) é necessária. |
 |mailNickname|String| O apelido de email do grupo a ser validado. A propriedade não é necessária individualmente. No entanto, pelo menos uma propriedade (displayName ou mailNickname) é necessária. |
-|onBehalfOfUserId|Guid| A ID do objeto do usuário a ser personificado ao chamar a API. Os resultados da validação são para os atributos e funções de onBehalfOfUserId. |
+|onBehalfOfUserId|GUID| A ID do objeto do usuário a ser personificado ao chamar a API. Os resultados da validação são para os atributos e funções de onBehalfOfUserId. |
 
 ## <a name="response"></a>Resposta
 

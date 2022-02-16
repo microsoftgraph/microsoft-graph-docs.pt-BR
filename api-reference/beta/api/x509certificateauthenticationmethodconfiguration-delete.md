@@ -1,25 +1,25 @@
 ---
 title: Excluir x509CertificateAuthenticationMethodConfiguration
-description: Exclua um objeto x509CertificateAuthenticationMethodConfiguration e restaura todas as outras propriedades às suas configurações padrão
+description: Exclua o objeto x509CertificateAuthenticationMethodConfiguration personalizado pelo locatário e restaure a configuração padrão.
 author: charlenezheng
 ms.localizationpriority: medium
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: 78f50f37eaa4a1310a0c599eaaf92f66857800db
-ms.sourcegitcommit: 4e16f26b6b685a6a3dae855a04979c84105609b9
+ms.openlocfilehash: 852b63fbfc51401e4f5f2761aad8082c5c261ffd
+ms.sourcegitcommit: 6968f5aaf40089684efb0c38a95f6cca353c1d92
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/10/2022
-ms.locfileid: "62519562"
+ms.lasthandoff: 02/16/2022
+ms.locfileid: "62854752"
 ---
 # <a name="delete-x509certificateauthenticationmethodconfiguration"></a>Excluir x509CertificateAuthenticationMethodConfiguration
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Restaure [o objeto x509CertificateAuthenticationMethodConfiguration](../resources/x509certificateauthenticationmethodconfiguration.md) para sua configuração padrão.
+Exclua o objeto [x509CertificateAuthenticationMethodConfiguration](../resources/x509certificateauthenticationmethodconfiguration.md) personalizado pelo locatário e restaure a configuração padrão.
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão|Permissões (da com menos para a com mais privilégios)|

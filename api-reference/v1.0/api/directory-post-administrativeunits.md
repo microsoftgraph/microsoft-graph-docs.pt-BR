@@ -1,97 +1,109 @@
 ---
-title: Obter administrativeUnit
-description: Recupere as propriedades e as relações de um objeto administrativeUnit.
+title: Criar administrativeUnit
+description: Use essa API para criar um novo administrativeUnit.
 author: DougKirschner
 ms.localizationpriority: medium
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: 0a6f68be5c3cbcb2daef5baa26230b451a93f70c
+ms.openlocfilehash: 4eae588f2975c543c19bc53aabda4fec1b8c3d5b
 ms.sourcegitcommit: 6968f5aaf40089684efb0c38a95f6cca353c1d92
 ms.translationtype: MT
 ms.contentlocale: pt-BR
 ms.lasthandoff: 02/16/2022
-ms.locfileid: "62854017"
+ms.locfileid: "62855297"
 ---
-# <a name="get-administrativeunit"></a>Obter administrativeUnit
+# <a name="create-administrativeunit"></a>Criar administrativeUnit
 
 Namespace: microsoft.graph
 
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
-
-Recupere as propriedades e as relações de um [objeto administrativeUnit](../resources/administrativeunit.md) .
-
-Como o **recurso administrativeUnit** dá suporte a extensões, `GET` você também pode usar a operação para obter propriedades [personalizadas](/graph/extensibility-overview) e dados de extensão em uma **instância administrativeUnit**.
-
+Use essa API para criar um [novo administrativeUnit](../resources/administrativeunit.md).
 ## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegado (conta corporativa ou de estudante) | AdministrativeUnit.Read.All, Directory.Read.All, AdministrativeUnit.ReadWrite.All, Directory.ReadWrite.All, Directory.AccessAsUser.All    |
+|Delegado (conta corporativa ou de estudante) | AdministrativeUnit.ReadWrite.All, Directory.AccessAsUser.All    |
 |Delegado (conta pessoal da Microsoft) | Sem suporte.    |
-|Aplicativo | AdministrativeUnit.Read.All, Directory.Read.All, AdministrativeUnit.ReadWrite.All, Directory.ReadWrite.All |
+|Aplicativo | AdministrativeUnit.ReadWrite.All |
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- { "blockType": "ignored" } -->
 ```http
-GET /administrativeUnits/{id}
-GET /directory/administrativeUnits/{id}
-```
-## <a name="optional-query-parameters"></a>Parâmetros de consulta opcionais
-Este método dá suporte ao parâmetro `$select` [de consulta OData](/graph/query-parameters) para ajudar a personalizar a resposta.
+POST /directory/administrativeUnits
 
+```
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
 | Nome      |Descrição|
 |:----------|:----------|
 | Autorização  | {token} de portador. Obrigatório. |
+| Content-type | application/json. Obrigatório. |
 
 ## <a name="request-body"></a>Corpo da solicitação
-Não forneça um corpo de solicitação para esse método.
+No corpo da solicitação, fornece uma representação JSON de um [objeto administrativeUnit](../resources/administrativeunit.md) .
+
+Como o **recurso administrativeUnit** dá suporte a extensões, você pode usar `POST` a operação e adicionar propriedades [personalizadas](/graph/extensibility-overview) com seus próprios dados à unidade administrativa durante a criação.
 
 ## <a name="response"></a>Resposta
 
-Se tiver êxito, este método retornará um `200 OK` código de resposta e um objeto [administrativeUnit](../resources/administrativeunit.md) no corpo da resposta.
+Se tiver êxito, este método retornará um `201 Created` código de resposta e um [objeto administrativeUnit](../resources/administrativeunit.md) no corpo da resposta.
+
 ## <a name="example"></a>Exemplo
+
 ### <a name="request"></a>Solicitação
-Este é um exemplo da solicitação.
+
+Este é um exemplo de solicitação.
+
 
 # <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "get_administrativeunit"
+  "name": "create_administrativeunit_from_administrativeunits"
 }-->
-```msgraph-interactive
-GET https://graph.microsoft.com/beta/administrativeUnits/4d7ea995-bc0f-45c0-8c3e-132e93bf95f8
+```http
+POST https://graph.microsoft.com/v1.0/directory/administrativeUnits
+Content-type: application/json
+
+{
+    "displayName": "Seattle District Technical Schools",
+    "description": "Seattle district technical schools administration",
+    "visibility": "HiddenMembership"
+}
 ```
 # <a name="c"></a>[C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/get-administrativeunit-csharp-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/csharp/create-administrativeunit-from-administrativeunits-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="javascript"></a>[JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/get-administrativeunit-javascript-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/javascript/create-administrativeunit-from-administrativeunits-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="objective-c"></a>[Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/get-administrativeunit-objc-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/objc/create-administrativeunit-from-administrativeunits-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="java"></a>[Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/get-administrativeunit-java-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/java/create-administrativeunit-from-administrativeunits-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="go"></a>[Ir](#tab/go)
-[!INCLUDE [sample-code](../includes/snippets/go/get-administrativeunit-go-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/go/create-administrativeunit-from-administrativeunits-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="powershell"></a>[PowerShell](#tab/powershell)
-[!INCLUDE [sample-code](../includes/snippets/powershell/get-administrativeunit-powershell-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/powershell/create-administrativeunit-from-administrativeunits-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
+
+---
+
+No corpo da solicitação, fornece uma representação JSON de um [objeto administrativeUnit](../resources/administrativeunit.md) .
+
 ### <a name="response"></a>Resposta
-Veja a seguir um exemplo da resposta. 
+
+Este é um exemplo de resposta. 
 >**Observação:** o objeto de resposta mostrado aqui pode ser encurtado para legibilidade.
 <!-- {
   "blockType": "response",
@@ -99,20 +111,16 @@ Veja a seguir um exemplo da resposta.
   "@odata.type": "microsoft.graph.administrativeUnit"
 } -->
 ```http
-HTTP/1.1 200 OK
+HTTP/1.1 201 Created
 Content-type: application/json
 
 {
-    "@odata.context": "https://graph.microsoft.com/beta/$metadata#administrativeUnits/$entity",
-    "id": "4d7ea995-bc0f-45c0-8c3e-132e93bf95f8",
+    "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#administrativeUnits/$entity",
+    "id": "7a3dc8f3-b3a0-4164-9a99-ed36f3af039f",
     "deletedDateTime": null,
     "displayName": "Seattle District Technical Schools",
     "description": "Seattle district technical schools administration",
-    "isMemberManagementRestricted": null,
-    "visibility": "HiddenMembership",
-    "membershipRule": null,
-    "membershipType": null,
-    "membershipRuleProcessingState": null
+    "visibility": "HiddenMembership"
 }
 ```
 
@@ -130,7 +138,7 @@ Content-type: application/json
 <!--
 {
   "type": "#page.annotation",
-  "description": "Get administrativeUnit",
+  "description": "Create administrativeUnit",
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
