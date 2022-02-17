@@ -5,12 +5,12 @@ ms.localizationpriority: high
 doc_type: apiPageType
 ms.prod: applications
 author: sureshja
-ms.openlocfilehash: f1ea2c8f86f054d4832003037c52ff1205838b4a
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: e14378d9333572e4ae2fdda31e3c8dfcb865591b
+ms.sourcegitcommit: b19b19bf192688f4c513492e8391e4d8dc104633
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62128558"
+ms.lasthandoff: 02/17/2022
+ms.locfileid: "62878369"
 ---
 # <a name="list-approleassignments-granted-to-a-service-principal"></a>Listar appRoleAssignments concedidos a uma entidade de serviço
 
@@ -20,6 +20,8 @@ Namespace: microsoft.graph
 Recuperar a lista[appRoleAssignment](../resources/approleassignment.md) concedida a uma entidade de serviço.
 
 As funções do aplicativo atribuídas às entidades de serviço também são conhecidas como [permissões de aplicativo](/azure/active-directory/develop/v2-permissions-and-consent#permission-types). As permissões de aplicativo podem ser concedidas diretamente, criando atribuições de função de aplicativo ou por meio de uma [experiência de consentimento](/azure/active-directory/develop/application-consent-experience).
+
+>**Observação** Essa solicitação pode ter atrasos de replicação para atribuições de função de aplicativo que foram concedidas ou removidas recentemente.
 
 ## <a name="permissions"></a>Permissões
 

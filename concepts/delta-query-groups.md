@@ -1,30 +1,30 @@
 ---
 title: Obter as alterações incrementais para grupos
-description: A consulta delta permite consultar adições, exclusões ou atualizações de grupos, por meio de uma série de chamadas de função delta. A consulta delta permite que você descubra alterações nos grupos
+description: A consulta delta no Microsoft Graph permite que você consulte adições, exclusões ou atualizações para recursos com suporte. Ele é habilitado por meio de uma série de solicitações delta. Para grupos, a consulta delta permite que você descubra alterações sem buscar todo o conjunto de grupos para comparar as alterações.
 author: FaithOmbongi
 ms.localizationpriority: high
 ms.custom: graphiamtop20
-ms.openlocfilehash: 465f0f4b0ade12d71c0e07cdeb99de708c651a4b
-ms.sourcegitcommit: c47e3d1f3c5f7e2635b2ad29dfef8fe7c8080bc8
+ms.openlocfilehash: c7e336d4bcfe0de5d64153c50ede0d8008a17708
+ms.sourcegitcommit: b19b19bf192688f4c513492e8391e4d8dc104633
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/15/2021
-ms.locfileid: "61524641"
+ms.lasthandoff: 02/17/2022
+ms.locfileid: "62878740"
 ---
 # <a name="get-incremental-changes-for-groups"></a>Obter as alterações incrementais para grupos
 
-A [Consulta delta](./delta-query-overview.md) permite que você consulte adições, exclusões ou atualizações de grupos, por meio de uma série de chamadas de função [delta](/graph/api/group-delta?view=graph-rest-1.0). A consulta Delta permite que você descubra alterações em grupos sem ter que buscar todo o conjunto de grupos do Microsoft Graph e comparar as alterações.
+A [consulta delta](./delta-query-overview.md) no Microsoft Graph permite consultar adições, exclusões ou atualizações de [recursos com suporte](delta-query-overview.md#supported-resources). Ele é habilitado por meio de uma série de [delta](/graph/api/group-delta?) solicitações. Para grupos, a consulta delta permite que você descubra alterações sem buscar todo o conjunto de grupos para comparar as alterações.
 
-Clientes que sincronizam grupos com um repositório de perfil local, podem usar a Consulta Delta para a sincronização completa inicial juntamente com as sincronizações incrementais no futuro. Normalmente, um cliente faria uma sincronização completa inicial de todos os grupos em um locatário e, logo após, obteria alterações incrementais para esses grupos periodicamente.
+Os clientes que sincronizam grupos com um repositório de perfil local podem usar a consulta delta para a sincronização completa inicial, juntamente com as sincronizações incrementais subsequentes. Normalmente, um cliente faria uma sincronização completa inicial de todos os grupos em um locatário e, em seguida, obteria alterações incrementais para grupos periodicamente.
 
-## <a name="tracking-group-changes"></a>Controle de alterações de grupo
+## <a name="track-changes-to-groups"></a>Controlar alterações em grupos
 
-O controle de alterações de grupo corresponde a uma série de uma ou mais solicitações GET com a função **delta**. Criar uma solicitação GET é muito parecido com a forma de [listar grupos](/graph/api/group-list?view=graph-rest-1.0), exceto se você incluir o seguinte:
+Acompanhe as alterações de grupos por meio de uma ou mais solicitações GET com função **delta**. A solicitação GET é como uma solicitação de [grupos de lista](/graph/api/group-list?), exceto com os seguintes objetos extras na URL:
 
 - A função **delta**.
-- Um [token de estado](./delta-query-overview.md) (*deltaToken* ou *skipToken*) da chamada de função GET **delta** anterior.
+- Um [token de estado](./delta-query-overview.md) (_deltaToken_ ou _skipToken_) da chamada de função GET **delta** anterior.
 
-## <a name="example"></a>Exemplo
+## <a name="example-to-track-changes-to-groups"></a>Exemplo para controlar alterações em grupos
 
 O exemplo a seguir mostra uma série de solicitações para rastrear as alterações nos grupos:
 
@@ -33,11 +33,25 @@ O exemplo a seguir mostra uma série de solicitações para rastrear as alteraç
 3. [Solicitação final nextLink](#final-nextlink-request) e [resposta](#final-nextlink-response)
 4. [Solicitação deltaLink](#deltalink-request) e [resposta deltaLink](#deltalink-response)
 
-## <a name="initial-request"></a>Solicitação inicial
 
-Para iniciar o rastreamento de alterações no recurso de grupo, faça uma solicitação incluindo a função delta no recurso de grupo.
+O exemplo a seguir mostra uma série de solicitações para controlar alterações em grupos:
 
-Observe o seguinte:
+1. Uma [solicitação inicial](#initial-request) e [réplica](#initial-response)
+2. Uma [solicitação do nextLink](#nextlink-request) e [réplica](#nextlink-response)
+3. Uma [final da solicitação nextLink](#final-nextlink-request) e [resposta](#final-nextlink-response)
+4. Uma [solicitação de deltaLink](#deltalink-request) e [réplica de deltaLink](#deltalink-response)
+
+Anote o seguinte nas respostas:
+
+- Quando um grupo é excluído (Microsoft 365 grupos), o item contém uma anotação: `@removed` com valor de `"reason": "changed"`.
+- Quando o grupo é excluído permanentemente (um grupo de segurança ou [excluindo permanentemente um grupo Microsoft 365](/graph/api/directory-deleteditems-list.)), o item contém uma anotação: `@removed` com valor de `"reason": "deleted"`.
+- Quando o grupo é criado ou restaurado, não há anotação.
+
+### <a name="initial-request"></a>Solicitação inicial
+
+Para acompanhar as alterações no recurso de grupo, faça uma solicitação e inclua a função **delta** como um segmento de URL.
+
+Anote os seguintes itens:
 
 - O parâmetro de consulta `$select` opcional está incluído na solicitação para demonstrar como os parâmetros de consulta são automaticamente incluídos nas futuras solicitações.
 - O parâmetro de consulta `$select` opcional também é usado para mostrar como os membros do grupo podem ser recuperados em conjunto com objetos de grupo. Isso permite o controle de alterações de associação, como quando usuários são adicionados ou removidos de grupos.
@@ -47,9 +61,9 @@ Observe o seguinte:
 GET https://graph.microsoft.com/v1.0/groups/delta?$select=displayName,description,members
 ```
 
-## <a name="initial-response"></a>Resposta inicial
+### <a name="initial-response"></a>Resposta inicial
 
-Se bem-sucedido, este método retorna o código de resposta `200 OK` e uma coleção de objetos [group](/graph/api/resources/group?view=graph-rest-1.0) no corpo da resposta. Se o conjunto de grupos inteiro for muito grande para caber em uma resposta, um `nextLink` contendo um token de estado também será incluído.
+Se bem-sucedido, este método retorna o código de resposta `200 OK` e uma coleção de objetos [group](/graph/api/resources/group) no corpo da resposta. Se o conjunto de grupos inteiro for muito grande para caber em uma resposta, um `nextLink` contendo um token de estado também será incluído.
 
 Neste exemplo, um `nextLink` foi incluído; o parâmetro de consulta `$select` original é codificado no token de estado.
 
@@ -62,8 +76,8 @@ Content-type: application/json
   "@odata.nextLink":"https://graph.microsoft.com/v1.0/groups/delta?$skiptoken=pqwSUjGYvb3jQpbwVAwEL7yuI3dU1LecfkkfLPtnIjvB7XnF_yllFsCrZJ",
   "value": [
     {
-      "displayName":"TestGroup1",
-      "description":"Employees in test group 1",
+      "displayName":"All Company",
+      "description":"This is the default group for everyone in the network",
       "id":"c2f798fd-f95d-4623-8824-63aec21fffff",
       "members@delta": [
                {
@@ -77,27 +91,27 @@ Content-type: application/json
       ]
     },
     {
-      "displayName":"TestGroup2",
-      "description":"Employees in test group 2",
+      "displayName":"sg-HR",
+      "description":"All HR personnel",
       "id":"ec22655c-8eb2-432a-b4ea-8b8a254bffff"
     }
   ]
 }
 ```
 
->**Observação:** a propriedade `members@delta` está incluída no primeiro objeto de grupo, o TestGroup1, e contém os dois membros atuais do grupo. O TestGroup2 não contém essa propriedade porque o grupo não tem nenhum membro.
+>**Observação:** A `members@delta` propriedade está incluída no primeiro objeto de grupo – **Toda Empresa** – e contém os dois membros atuais do grupo. **sg-HR** não contém essa propriedade porque o grupo não tem membros.
 
-## <a name="nextlink-request"></a>solicitação nextLink
+### <a name="nextlink-request"></a>solicitação nextLink
 
-A segunda solicitação usa o `nextLink` da resposta anterior, que contém o `skipToken`. Observe que o parâmetro `$select` não está presente explicitamente porque ele é codificado no token.
+A segunda solicitação usa o `nextLink` da resposta anterior, que contém o `skipToken`. Observe que o parâmetro `$select` não está visivelmente presente, pois está codificado e incluído no token.
 
 ``` http
 GET https://graph.microsoft.com/v1.0/groups/delta?$skiptoken=pqwSUjGYvb3jQpbwVAwEL7yuI3dU1LecfkkfLPtnIjvB7XnF_yllFsCrZJ
 ```
 
-## <a name="nextlink-response"></a>Resposta nextLink
+### <a name="nextlink-response"></a>Resposta nextLink
 
-A resposta contém outro `nextLink` com outro valor de `skipToken`, indicando que há mais grupos disponíveis. Você deve continuar criando solicitações usando a `nextLink` URL até que uma `deltaLink` URL seja retornada na resposta final, mesmo que o valor seja uma matriz vazia (isso pode ocorrer em determinadas circunstâncias).
+A resposta contém outro `nextLink` com um novo valor `skipToken`, o que indica que mais alterações controladas para grupos estão disponíveis. Use a URL `nextLink` em mais solicitações até que uma URL de `deltaLink` (em um parâmetro `@odata.deltaLink`) seja retornada na resposta final, mesmo que o valor seja uma matriz vazia.
 
 ```http
 HTTP/1.1 200 OK
@@ -108,8 +122,8 @@ Content-type: application/json
   "@odata.nextLink":"https://graph.microsoft.com/v1.0/groups/delta?$skiptoken=pqwSUjGYvb3jQpbwVAwEL7yuI3dU1LecfkkfLPtnIjtQ5LOhVoS7qQG_wdVCHHlbQpga7",
   "value": [
     {
-      "displayName":"TestGroup3",
-      "description":"Employees in test group 3",
+      "displayName":"Mark 8 Project Team",
+      "description":"Mark 8 Project Team",
       "id":"2e5807ce-58f3-4a94-9b37-ffff2e085957",
       "members@delta": [
                {
@@ -119,8 +133,8 @@ Content-type: application/json
       ]
     },
     {
-      "displayName":"TestGroup4",
-      "description":"Employees in test group 4",
+      "displayName":"Sales and Marketing",
+      "description":"Sales and Marketing",
       "id":"421e797f-9406-4934-b778-4908421e3505",
       "members@delta": [
                {
@@ -137,17 +151,17 @@ Content-type: application/json
 }
 ```
 
-## <a name="final-nextlink-request"></a>Solicitação nextLink final
+### <a name="final-nextlink-request"></a>Solicitação nextLink final
 
-A terceira solicitação novamente usa o `nextLink` mais recente.
+A terceira solicitação usa a última `nextLink` retornada da última solicitação de sincronização.
 
 ``` http
 GET https://graph.microsoft.com/v1.0/groups/delta?$skiptoken=ppqwSUjGYvb3jQpbwVAwEL7yuI3dU1LecfkkfLPtnIjtQ5LOhVoS7qQG_wdVCHHlbQpga7
 ```
 
-## <a name="final-nextlink-response"></a>Resposta nextLink final
+### <a name="final-nextlink-response"></a>Resposta nextLink final
 
-Por fim, a URL `deltaLink` é retornada, o que significa que não há mais dados para o estado de grupos existente. Para solicitações futuras, o aplicativo usa o `deltaLink` e o valor de `deltaToken` que contém para saber mais sobre novas alterações nos grupos.
+Quando uma URL `deltaLink` é retornada, não há mais dados sobre o estado existente dos objetos de grupo.  Para solicitações futuras, o aplicativo usa `deltaLink` URL para saber mais sobre outras alterações nos grupos. Salve o `deltaToken` e use-o na URL de solicitação subsequente para descobrir mais alterações nos grupos.
 
 ```http
 HTTP/1.1 200 OK
@@ -158,34 +172,34 @@ Content-type: application/json
   "@odata.deltaLink":"https://graph.microsoft.com/v1.0/groups/delta?$deltatoken=sZwAFZibx-LQOdZIo1hHhmmDhHzCY0Hs6snoIHJCSIfCHdqKdWNZ2VX3kErpyna9GygROwBk-rqWWMFxJC3pw",
   "value": [
     {
-      "displayName":"TestGroup5",
-      "description":"Employees in test group 5",
+      "displayName":"All Employees",
       "id":"bed7f0d4-750e-4e7e-ffff-169002d06fc9"
     },
     {
-      "displayName":"TestGroup6",
-      "description":"Employees in test group 6",
+      "displayName":"Remote living",
+      "description":"Remote living",
       "id":"421e797f-9406-ffff-b778-4908421e3505"
     }
   ]
 }
 ```
 
-## <a name="deltalink-request"></a>Solicitação deltaLink
+### <a name="deltalink-request"></a>Solicitação deltaLink
 
-Usando a partir da última resposta, você poderá obter novas mudanças líquidas para grupos desde a `deltaLink`[última réplica](#final-nextlink-response). As alterações incluem:
+Usando o `deltaLink` da [última réplica](#final-nextlink-response), você receberá alterações (adições, exclusões ou atualizações) para grupos desde a última solicitação. As alterações incluem:
+
 - Objetos de grupo recém-criados.
 - Objetos de grupo excluídos.
-- Objetos de grupo cuja propriedade mudou (por exemplo, **displayName** foi modificada).
+- Objetos de grupo para os quais uma propriedade foi alterada (por exemplo, **displayName** foi modificado).
 - Objetos de grupo cujos objetos de membro foram adicionados ou removidos.
 
 ``` http
 GET https://graph.microsoft.com/v1.0/groups/delta?$deltatoken=sZwAFZibx-LQOdZIo1hHhmmDhHzCY0Hs6snoIHJCSIfCHdqKdWNZ2VX3kErpyna9GygROwBk-rqWWMFxJC3pw
 ```
 
-## <a name="deltalink-response"></a>Resposta deltaLink
+### <a name="deltalink-response"></a>Resposta deltaLink
 
-Se não houver alterações, um `deltaLink` será retornado sem resultados. A propriedade `value` fica em branco. Substitua o link anterior no aplicativo pelo novo para usar em chamadas futuras.
+Se nenhuma alteração tiver ocorrido, um `deltaLink` será retornado sem resultados - o **valor** propriedade é uma matriz vazia. Substitua o link anterior no aplicativo pelo novo para usar em chamadas futuras.
 
 ```http
 HTTP/1.1 200 OK
@@ -198,7 +212,9 @@ Content-type: application/json
 }
 ```
 
-Se houver alterações, um conjunto de grupos alterados será incluído. A resposta também contém um `nextLink`, caso haja várias páginas de alterações a serem recuperadas, ou um `deltaLink`. Implemente o mesmo padrão, seguindo os `nextLinks`, como antes, e mantenha o `deltaLink` final para chamadas futuras.
+Se houver alterações, um conjunto de grupos alterados será incluído. A resposta também contém um `nextLink`, caso haja várias páginas de alterações a serem recuperadas, ou um `deltaLink`. Implemente o mesmo padrão de seguir o `nextLink` e persistir o `deltaLink` final para chamadas futuras.
+
+>**Observação:** essa solicitação pode ter atrasos de replicação para grupos que foram criados, atualizados ou excluídos recentemente. Repita a operação `nextLink` ou `deltaLink` depois de algum tempo para recuperar as alterações mais recentes.
 
 ```http
 HTTP/1.1 200 OK
@@ -234,21 +250,21 @@ Alguns aspectos a observar sobre a resposta do exemplo acima:
 
 - Os objetos são retornados com o mesmo conjunto de propriedades originalmente especificado pelo parâmetro de consulta `$select`.
 
-- As propriedades alteradas e inalteradas são incluídas. No exemplo acima, a `description` propriedade tem um novo valor, enquanto a `displayName` propriedade não foi alterada.
+- Propriedades alteradas e inalteradas estão incluídas. No exemplo acima, a `description` propriedade tem um novo valor, enquanto a propriedade `displayName` não foi alterada.
 
-- `members@delta` contém todas as alterações de associação.
+- `members@delta` contém as seguintes alterações na associação de grupo.
 
-  - O primeiro usuário da lista foi removido do grupo. Isso foi feito por meio da remoção da associação ou exclusão do objeto de usuário. A propriedade `@removed` descreve esse procedimento. Somente os usuários que tiverem sido excluídos permanentemente serão removidos dos grupos. Os usuários que foram excluídos temporariamente mantêm suas participações no grupo e não serão exibidos no resultado delta até que tenham sido excluídos permanentemente. Para obter mais detalhes, consulte [diretório (itens deletados)](/graph/api/resources/directory?view=graph-rest-1.0).
+  - O primeiro usuário da lista foi removido do grupo. Isso foi feito por meio da remoção da associação ou exclusão do objeto de usuário. A propriedade `@removed` descreve esse procedimento. Somente os usuários que tiverem sido excluídos permanentemente serão removidos dos grupos. Os usuários que foram excluídos temporariamente mantêm suas associações de grupo e não aparecerão no resultado delta até que sejam excluídos permanentemente. Para obter mais detalhes, consulte [diretório (itens deletados)](/graph/api/resources/directory).
 
   - O segundo usuário foi adicionado ao grupo.
 
 ## <a name="paging-through-members-in-a-large-group"></a>Ver membros de um grande grupo
 
-A propriedade `members@delta` é incluída em objetos de grupo por padrão quando o parâmetro de consulta `$select` não foi especificado ou quando o parâmetro `$select=members` é explicitamente especificado. No caso de grupos com muitos membros, é possível que nem todos caibam em uma resposta única. Nesta seção, descrevemos o padrão a ser implementado para lidar com essas situações.
+A propriedade `members@delta` é incluída em objetos de grupo por padrão, quando o parâmetro de consulta `$select` não foi especificado ou quando o parâmetro `$select=members` é especificado explicitamente. Para grupos com muitos membros, é possível que todos os membros não caibam em uma única resposta. Implemente o padrão a seguir para lidar com esses casos.
 
 >**Observação:** esse padrão aplica-se à recuperação inicial do estado de grupo e às chamadas subsequentes para obter as alterações da consulta delta.
 
-Vamos supor que você esteja executando a consulta delta a seguir para capturar o estado inicial completo de grupos ou posteriormente para obter alterações da consulta delta:
+Vamos supor que você esteja executando a seguinte consulta delta– para capturar o estado completo inicial dos grupos ou posteriormente para obter alterações delta:
 
 ``` http
 GET https://graph.microsoft.com/v1.0/groups/delta?$select=displayName,description,members
@@ -290,7 +306,7 @@ Content-type: application/json
 }
 ```
 
-2. Quando você seguir o `nextLink`, poderá receber uma resposta novamente com o mesmo objeto de grupo. Os mesmos valores de propriedade serão retornados, mas a propriedade `members@delta` agora contém uma lista de usuários diferente.
+2. Ao seguir o `nextLink`, você poderá receber uma resposta contendo o mesmo objeto de grupo. Os mesmos valores de propriedade serão retornados, mas a propriedade `members@delta` agora contém uma lista de usuários diferente.
 
 **Segunda página**
 
@@ -329,7 +345,7 @@ Content-type: application/json
 
 As seguintes práticas recomendadas devem ser seguidas para lidar corretamente com esse padrão:
 - Siga sempre o `nextLink` e mescle localmente o estado de cada grupo. Quando receber respostas relacionadas ao mesmo grupo, use-as para criar a lista completa de associação no aplicativo.
-- É aconselhável não presumir uma sequência específica de respostas. Suponha que o mesmo grupo possa aparecer em qualquer lugar na sequência do `nextLink` e leve isso em conta na sua lógica de mesclagem.
+- Não suponha uma sequência específica das respostas. Suponha que o mesmo grupo possa aparecer em qualquer lugar na sequência do `nextLink` e leve isso em conta na sua lógica de mesclagem.
 
 
 ## <a name="see-also"></a>Confira também

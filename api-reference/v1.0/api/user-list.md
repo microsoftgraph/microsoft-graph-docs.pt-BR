@@ -5,18 +5,20 @@ author: jpettere
 ms.localizationpriority: high
 ms.prod: users
 doc_type: apiPageType
-ms.openlocfilehash: 5de10fa333178b67cb8983bf28ac4324a8bab2d6
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: 109db1591dd2c7e572dd26468d7207dd93a44c1d
+ms.sourcegitcommit: b19b19bf192688f4c513492e8391e4d8dc104633
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62100783"
+ms.lasthandoff: 02/17/2022
+ms.locfileid: "62878712"
 ---
 # <a name="list-users"></a>Listar usuários
 
 Namespace: microsoft.graph
 
 Recupere uma lista de objetos [user](../resources/user.md).
+
+>**Observação:** Essa solicitação pode ter atrasos de replicação para usuários que foram criados, atualizados ou excluídos recentemente.
 
 ## <a name="permissions"></a>Permissões
 
