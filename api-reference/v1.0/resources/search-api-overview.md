@@ -5,12 +5,12 @@ ms.localizationpriority: high
 author: nmoreau
 ms.prod: search
 doc_type: resourcePageType
-ms.openlocfilehash: 04a9f843da8326f257a7a48537353a10ac458a81
-ms.sourcegitcommit: 08e9b0bac39c1b1d2c8a79539d24aaa93364baf2
+ms.openlocfilehash: 2d0ec33b510c24002339a7fef64c7080fcbee4ce
+ms.sourcegitcommit: b19b19bf192688f4c513492e8391e4d8dc104633
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/24/2021
-ms.locfileid: "59766933"
+ms.lasthandoff: 02/17/2022
+ms.locfileid: "62878852"
 ---
 # <a name="use-the-microsoft-search-api-to-query-data"></a>Usar a API de Pesquisa da Microsoft para consultar dados
 
@@ -35,6 +35,8 @@ As solicitações de pesquisa são executadas em nome do usuário. Os resultados
 |[Usar KQL em termos de consulta](#keyword-query-language-kql-support) | **query** |
 |[Classificar resultados de pesquisa](#sort-search-results)| **sort** |
 |[Refinar os resultados usando agregações](#refine-results-using-aggregations)| **aggregations** |
+|[Solicitar verificação ortográfica](#request-spelling-correction)| **queryAlterationOptions** |
+|[Layout de exibição de pesquisa](#search-display-layout) (visualização)| **resultTemplateOptions**|
 
 ## <a name="scope-search-based-on-entity-types"></a>Pesquisa de escopo com base em tipos de entidade
 
@@ -135,7 +137,23 @@ Uma vez que a resposta é retornada contendo a coleção de objetos [searchBucke
 
 As agregações atualmente têm suporte para qualquer propriedade refinável nos seguintes tipos do SharePoint e OneDrive: [driveItem](driveitem.md), [listItem](listitem.md), [list](list.md), [site](site.md) e nos conectores do Microsoft Graph [externalItem](externalconnectors-externalitem.md).
 
-Confira [refinar os resultados da pesquisa](/graph/search-concept-aggregation) para obter exemplos que mostram como usar a agregação para melhorar e restringir os resultados da pesquisa.
+Confira [Refinar os resultados da pesquisa](/graph/search-concept-aggregation) para obter exemplos que mostram como usar a agregação para melhorar e restringir os resultados da pesquisa.
+
+## <a name="request-spelling-correction"></a>Solicitar verificação ortográfica
+
+A verificação ortográfica é uma maneira popular de lidar com incompatibilidades entre erros de digitação em uma consulta do usuário e as palavras corretas em conteúdos combinados. Quando erros de digitação são detectados na consulta original do usuário, você pode obter o resultado da pesquisa tanto para a consulta original do usuário quanto para a consulta alternativa corrigida. Você também pode obter as informações de verificação ortográfica para erros de digitação na propriedade **queryAlterationResponse** da [searchresponse](searchresponse.md).
+
+No corpo de solicitação do método [query](/graph/api/search-query), especifique as **queryAlterationOptions** que devem ser aplicadas à consulta para as verificações ortográficas. A descrição das **queryAlterationOptions** são definidas em [searchrequest](./searchrequest.md).
+
+Para exemplos que mostram como usar verificações ortográficas, consulte [Solicitar verificação ortográfica](/graph/search-concept-speller).
+
+## <a name="search-display-layout"></a>Layout de exibição de pesquisa
+
+A API de pesquisa permite renderizar resultados de pesquisa de [conectores](/microsoftsearch/connectors-overview), usando o layout de exibição ou modelo de resultado configurado pelo administrador de TI para cada conector. Os modelos de resultados são [Cartões Adaptáveis](https://adaptivecards.io/), que são uma combinação semanticamente significativa de layout e dados.
+
+Para obter o modelo de resultado em [searchresponse](searchresponse.md), você deve definir como **true** a propriedade **enableResultTemplate**, definida em [resultTemplateOptions](./resulttemplateoption.md), em [searchRequest](./searchrequest.md). A resposta inclui um **resultTemplateId** para cada [searchHit](./searchhit.md), que mapeia para um dos layouts de exibição incluídos no dicionário **resultTemplates** incluído na resposta.
+
+Para obter exemplos que mostram como renderizar os resultados da pesquisa, consulte [Usar o layout de exibição de pesquisa](/graph/search-concept-display-layout).
 
 ## <a name="error-handling"></a>Tratamento de erros
 
@@ -168,6 +186,8 @@ As combinações envolvendo **mensagem**, **evento**, tipos do SharePoint e do O
   - [Pesquisar conteúdo no OneDrive e Microsoft Office SharePoint Online](/graph/search-concept-files)
   - [Classificar resultados de pesquisa](/graph/search-concept-sort)
   - [Refinar resultados de pesquisa](/graph/search-concept-aggregation)
+  - [Solicitar verificação ortográfica](/graph/search-concept-speller)
+  - [Usar layout de exibição de pesquisa](/graph/search-concept-display-layout)
 
 - Explore as APIs no [Explorador do Graph](https://developer.microsoft.com/graph/graph-explorer).
 - Saiba mais sobre os [novos recursos e atualizações mais recentes](/graph/whats-new-overview) para este conjunto de APIs.
