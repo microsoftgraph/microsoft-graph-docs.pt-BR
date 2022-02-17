@@ -5,12 +5,12 @@ ms.localizationpriority: high
 doc_type: apiPageType
 ms.prod: applications
 author: sureshja
-ms.openlocfilehash: 6da57eacca4065fa019776547097863d26f3008b
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: 2656ac0a23a11384878f36eb05dd32f84647664b
+ms.sourcegitcommit: b19b19bf192688f4c513492e8391e4d8dc104633
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62115825"
+ms.lasthandoff: 02/17/2022
+ms.locfileid: "62878635"
 ---
 # <a name="list-approleassignments-granted-for-a-service-principal"></a>Listar appRoleAssignments concedidos para uma entidade de serviço
 
@@ -23,6 +23,8 @@ Recuperar uma lista de [appRoleAssignment](../resources/approleassignment.md) qu
 Por exemplo, se a entidade de serviço do recurso for a entidade de serviço para a API do Microsoft Graph, isso retornará todas as entidades de serviço que receberam todas as permissões de aplicativo para o Microsoft Graph.
 
 Se a entidade de serviço do recurso for um aplicativo com funções de aplicativo concedidas a usuários e grupos, isso retornará todos as funções de aplicativo dos usuários e grupos atribuídas para esse aplicativo.
+
+>**Observação** Essa solicitação pode ter atrasos de replicação para atribuições de função de aplicativo que foram concedidas ou removidas recentemente.
 
 ## <a name="permissions"></a>Permissões
 

@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: nmoreau
 ms.prod: search
 doc_type: resourcePageType
-ms.openlocfilehash: e64d4d3a2d7599df3ce6674abab352ab474ae18f
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 487fbee4e501b6d4154b1ed08102730fd278730c
+ms.sourcegitcommit: b19b19bf192688f4c513492e8391e4d8dc104633
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59137543"
+ms.lasthandoff: 02/17/2022
+ms.locfileid: "62878824"
 ---
 # <a name="searchhit-resource-type"></a>Tipo de recurso searchHit
 
@@ -22,11 +22,12 @@ Representa um único resultado na lista de resultados da pesquisa.
 
 | Propriedade     | Tipo        | Descrição |
 |:-------------|:------------|:------------|
-|hitId|Cadeia de caracteres|O identificador interno do item.|
+|contentSource|Cadeia de caracteres|O nome da fonte de conteúdo da **qual o externalItem** faz parte .|
+|hitId|String|O identificador interno do item.|
 |classificação|Int32|A classificação ou a ordem do resultado.|
-|contentSource|String|O nome da fonte de conteúdo da **qual o externalItem** faz parte .|
-|summary|String|Um resumo do resultado, se um resumo estiver disponível.|
+|resultTemplateId|String|ID do modelo de resultado usado para renderizar o resultado da pesquisa. Essa ID deve mapear para um layout de exibição no dicionário **resultTemplates** que também está incluído na [searchResponse](searchresponse.md).|
 |recurso|[entity](entity.md)|A representação básica da Microsoft Graph do resultado da pesquisa.|
+|summary|String|Um resumo do resultado, se um resumo estiver disponível.|
 
 ## <a name="json-representation"></a>Representação JSON
 
@@ -43,11 +44,12 @@ Veja a seguir uma representação JSON do recurso.
 
 ```json
 {
-  "hitId": "String",
-  "rank": 1,
-  "summary": "String",
   "contentSource": "String",
-  "resource": { "@odata.type": "microsoft.graph.entity" }
+  "hitId": "String",
+  "rank": "Int32",
+  "resultTemplateId": "String",
+  "resource": { "@odata.type": "microsoft.graph.entity" },
+  "summary": "String"
 }
 ```
 

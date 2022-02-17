@@ -4,12 +4,12 @@ description: A consulta delta permite que aplicativos localizem entidades recém
 author: FaithOmbongi
 ms.localizationpriority: high
 ms.custom: graphiamtop20
-ms.openlocfilehash: 83f49d98145c4d795fac3c8df5eac0a7667bf06d
-ms.sourcegitcommit: c47e3d1f3c5f7e2635b2ad29dfef8fe7c8080bc8
+ms.openlocfilehash: 8b2a302157a7f3a1309d0f7917d1c16816bfab82
+ms.sourcegitcommit: b19b19bf192688f4c513492e8391e4d8dc104633
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/15/2021
-ms.locfileid: "61526160"
+ms.lasthandoff: 02/17/2022
+ms.locfileid: "62878747"
 ---
 # <a name="use-delta-query-to-track-changes-in-microsoft-graph-data"></a>Usar a consulta delta para controlar alterações nos dados do Microsoft Graph
 
@@ -117,7 +117,7 @@ A consulta delta é compatível atualmente com os seguintes recursos. Observe qu
 | Funções de diretório                                                | Função [delta](/graph/api/directoryrole-delta) do recurso [directoryRole](/graph/api/resources/directoryrole) |
 | Itens de unidade\*                                                  | Função [delta](/graph/api/driveitem-delta) do recurso [driveItem](/graph/api/resources/driveitem)             |
 | Atribuições de educação                                          | função [delta](/graph/api/educationassignment-delta) do recurso [educationAssignment](/graph/api/resources/educationassignment)                                    |
-| Ccasses Educacionais                                              | Função [delta](/graph/api/educationclass-delta) do recurso [educationClass](/graph/api/resources/educationclass)                                      |
+| Aulas de educação                                              | Função [delta](/graph/api/educationclass-delta) do recurso [educationClass](/graph/api/resources/educationclass)                                      |
 | Usuários da educação                                                | Função [delta](/graph/api/educationuser-delta) do recurso [educationUser](/graph/api/resources/educationuser)                                         |
 | Escolas da Educação                                              | Função [delta](/graph/api/educationschool-delta) do recurso [educationSchool](/graph/api/resources/educationschool)                                   |
 | Eventos em um modo de exibição de calendário (intervalo de datas) do calendário principal | função [delta](/graph/api/event-delta) do recurso [evento](/graph/api/resources/event)                         |
@@ -185,6 +185,8 @@ Não há suporte para propriedades de navegação. Por exemplo, você não pode 
 ### <a name="processing-delays"></a>Atrasos de processamento
 
 Esperar atrasos variáveis entre o tempo que uma alteração é feita em uma instância de recurso, que pode ser por meio de uma interface de aplicativo ou API, e o tempo em que a alteração controlada é refletida em uma resposta de consulta Delta.
+
+Às vezes, as alterações que ocorreram no objeto podem não ser indicadas ao selecionar `nextLink` ou `deltaLink`. Isso porque algumas solicitações podem ter atrasos de replicação para objetos que foram criados, atualizados ou excluídos recentemente. Repita `nextLink` ou `deltaLink` depois de algum tempo para recuperar as alterações mais recentes.
 
 ### <a name="national-clouds"></a>Nuvens nacionais
 

@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: jpettere
 ms.prod: users
 doc_type: apiPageType
-ms.openlocfilehash: e8ba47189367fdae88647c6b8d2e82f41928028b
-ms.sourcegitcommit: 25acfa7d0153336c9a35d30a1dd422aeadc1342c
+ms.openlocfilehash: 5603d0982b28fb25ccdaa60e204592b751e078ed
+ms.sourcegitcommit: b19b19bf192688f4c513492e8391e4d8dc104633
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/03/2022
-ms.locfileid: "62343567"
+ms.lasthandoff: 02/17/2022
+ms.locfileid: "62878831"
 ---
 # <a name="user-revokesigninsessions"></a>user: revokeSignInSessions
 
@@ -51,19 +51,19 @@ Esta operação não tem conteúdo de solicitação.
 
 ## <a name="response"></a>Resposta
 
-Se bem-sucedido, este método retorna um código de resposta `204 No Content`.
+Se tiver êxito, este método retornará um código de resposta `200 OK`.
 
 >[!NOTE]
->Essa API tem um [problema conhecido](/graph/known-issues#revoke-sign-in-sessions-returns-wrong-HTTP-code). Ele retorna um código de resposta HTTP diferente.
+>Essa API tem um [problema conhecido](/graph/known-issues#revoke-sign-in-sessions-returns-wrong-http-code). Ele retorna um código de resposta HTTP diferente.
 
 ## <a name="example"></a>Exemplo
 O exemplo a seguir mostra como chamar essa API.
 
-##### <a name="request"></a>Solicitação
+### <a name="request"></a>Solicitação
 
 # <a name="http"></a>[HTTP](#tab/http)
 <!-- {
-  "blockType": "request",
+  "blockType": "ignored",
   "name": "user_revokesigninsessionss"
 }-->
 ```http
@@ -96,13 +96,19 @@ POST https://graph.microsoft.com/v1.0/me/revokeSignInSessions
 ---
 
 
-##### <a name="response"></a>Resposta
+### <a name="response"></a>Resposta
 <!-- {
   "blockType": "response",
   "truncated": true
 } -->
 ```http
-HTTP/1.1 204 No Content
+HTTP/1.1 200 OK
+Content-type: application/json
+
+{
+    "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#Edm.Boolean",
+    "value": true
+}
 ```
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79

@@ -5,18 +5,18 @@ description: Obter um site, uma lista ou uma coluna de tipo de conteúdo.
 ms.localizationpriority: medium
 doc_type: apiPageType
 ms.prod: sites-and-lists
-ms.openlocfilehash: c7f9fa5e0002e786f8444b2bbf9d1dbb38e4f53e
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: 2e148f0c5fe6ea7ed664c7b9840c43134eae3a04
+ms.sourcegitcommit: b19b19bf192688f4c513492e8391e4d8dc104633
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62128914"
+ms.lasthandoff: 02/17/2022
+ms.locfileid: "62878796"
 ---
 # <a name="get-columndefinition"></a>Obter columnDefinition
 Namespace: microsoft.graph
 
 
-Recupere os metadados de um [site,][]uma [lista][]ou uma [coluna contentType.][] [][columnDefinition]
+Recupere os metadados de [um site][], uma [lista][] ou uma [coluna][] [contentType][columnDefinition].
 
   
 
@@ -57,18 +57,18 @@ GET /sites/{site-id}/lists/{list-id}/contentTypes/{contentType-id}/columns/{colu
 
 ## <a name="request-body"></a>Corpo da solicitação
 
-  
+Não forneça um corpo de solicitação para esse método.
 
-Não forneça um corpo de solicitação com esse método.
+## <a name="response"></a>Resposta
 
+Se tiver êxito, este método retornará um `200 OK` código de resposta e um [objeto columnDefinition][columnDefinition] no corpo da resposta.
   
 
 ## <a name="example"></a>Exemplo
 
-  
-
 ### <a name="request"></a>Solicitação
 
+Veja a seguir um exemplo de uma solicitação.
 
 # <a name="http"></a>[HTTP](#tab/http)
 <!-- { "blockType": "request", "name": "get_column_from_contenttype" } -->
@@ -107,7 +107,7 @@ GET /sites/{site-id}/contentTypes/{contentType-id}/columns/{column-id}
 
 ### <a name="response"></a>Resposta
 
-  
+Este é um exemplo de resposta.
 
 <!-- { "blockType": "response", "@type": "microsoft.graph.columnDefinition", "truncated": true } -->
 

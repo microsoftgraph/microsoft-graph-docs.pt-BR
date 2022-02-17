@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: nmoreau
 ms.prod: search
 doc_type: resourcePageType
-ms.openlocfilehash: 3b45bbfb4b20f4422a24bb2d90c7279b06efd67c
-ms.sourcegitcommit: 08e9b0bac39c1b1d2c8a79539d24aaa93364baf2
+ms.openlocfilehash: d7801fc7ba8d1bcdfcb9fa6da5508fb5d973d3d9
+ms.sourcegitcommit: b19b19bf192688f4c513492e8391e4d8dc104633
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/24/2021
-ms.locfileid: "59763825"
+ms.lasthandoff: 02/17/2022
+ms.locfileid: "62878859"
 ---
 # <a name="searchrequest-resource-type"></a>Tipo de recurso searchRequest
 
@@ -26,16 +26,18 @@ O blob JSON contém os tipos de recursos esperados na resposta, as fontes subjac
 
 ## <a name="properties"></a>Propriedades
 
-| Propriedade     | Tipo        | Descrição 
-|:-------------|:------------|:------------
+| Propriedade     | Tipo        | Descrição| 
+|:-------------|:------------|:------------|
+|aggregationFilters|String collection|Contém um ou mais filtros para obter resultados de pesquisa agregados e filtrados para um valor específico de um campo. Opcional.<br>Crie esse filtro com base em uma pesquisa anterior que agrega pelo mesmo campo. Na resposta da pesquisa anterior, identifique o [searchBucket](searchBucket.md) que filtra os resultados para o valor específico do campo, use a cadeia de caracteres em sua propriedade **aggregationFilterToken** e crie uma cadeia de caracteres de filtro de agregação no formato **"{field}:\\"{aggregationFilterToken}\\".** <br>Se vários valores para o mesmo campo precisarem ser fornecidos, use as cadeias de caracteres em sua propriedade **aggregationFilterToken** e crie uma cadeia de caracteres de filtro de agregação no formato **"{field}:or(\\"{aggregationFilterToken1}\\",\\"{aggregationFilterToken2}\\")"**. <br>Por exemplo, pesquisar e agregar itens de unidade por tipo de arquivo retorna um **searchBucket** para o tipo de `docx` arquivo na resposta. Você pode convenientemente usar a `docx` **agregaçãoFilterToken** retornada para este **searchBucket** em uma consulta de pesquisa subsequente e o filtro corresponde aos itens de unidade do tipo de arquivo. [O Exemplo 1](/graph/search-concept-aggregation#example-1-request-aggregations-by-string-fields) [e o exemplo 2](/graph/search-concept-aggregation#example-2-apply-an-aggregation-filter-based-on-a-previous-request) mostram as solicitações e respostas reais.|
 |aggregations|[Coleção aggregationOption](aggregationOption.md)|Especifica as agregação (também conhecidas como refinadores) a serem retornadas juntamente com os resultados da pesquisa. Opcional.|
-|aggregationFilters|Coleção de cadeias de caracteres|Contém um ou mais filtros para obter resultados de pesquisa agregados e filtrados para um valor específico de um campo. Opcional.<br>Crie esse filtro com base em uma pesquisa anterior que agrega pelo mesmo campo. Na resposta da pesquisa anterior, identifique o [searchBucket](searchBucket.md) que filtra os resultados para o valor específico do campo, use a cadeia de caracteres em sua propriedade **aggregationFilterToken** e crie uma cadeia de caracteres de filtro de agregação no formato **"{field}: \\ "{aggregationFilterToken} \\ ""**. <br>Se vários valores para o mesmo campo precisarem ser fornecidos, use as cadeias de caracteres em sua propriedade **aggregationFilterToken** e crie uma cadeia de caracteres de filtro de agregação no formato **"{field}:or( \\ "{aggregationFilterToken1} \\ ", \\ "{aggregationFilterToken2} \\ ")"**. <br>Por exemplo, pesquisar e agregar itens de unidade por tipo de arquivo retorna um **searchBucket** para o tipo de `docx` arquivo na resposta. Você pode convenientemente usar **a agregaçãoFilterToken** retornada para este **searchBucket** em uma consulta de pesquisa subsequente e o filtro corresponde aos itens de unidade do tipo `docx` de arquivo. [O Exemplo 1](/graph/search-concept-aggregation#example-1-request-aggregations-by-string-fields) [e o exemplo 2](/graph/search-concept-aggregation#example-2-apply-an-aggregation-filter-based-on-a-previous-request) mostram as solicitações e respostas reais.|
 |contentSources|Coleção de cadeias de caracteres|Contém a conexão a ser direcionada.|
-|enableTopResults|Boolean|Isso dispara a classificação híbrida para mensagens: as três primeiras mensagens são as mais relevantes. Essa propriedade só é aplicável a entityType= `message` . Opcional.|
+|enableTopResults|Booliano|Isso dispara a classificação híbrida para mensagens: as três primeiras mensagens são as mais relevantes. Essa propriedade só é aplicável a entityType=`message`. Opcional.|
 |entityTypes|coleção entityType| Um ou mais tipos de recursos esperados na resposta. Os valores possíveis são: `list`, `site`, `listItem`, `message`, `event`, `drive`, `driveItem`, `externalItem`. Consulte [limitações conhecidas](search-api-overview.md#known-limitations) para essas combinações de dois ou mais tipos de entidade com suporte na mesma solicitação de pesquisa. Obrigatório.|
-|campos|Coleção de cadeias de caracteres |Contém os campos a serem retornados para cada objeto de recurso especificado em **entityTypes**, permitindo a personalização dos campos retornados por padrão caso contrário, incluindo campos adicionais, como propriedades gerenciadas personalizadas do SharePoint e OneDrive. Opcional.|
+|campos|String collection |Contém os campos a serem retornados para cada objeto de recurso especificado em **entityTypes**, permitindo a personalização dos campos retornados por padrão; caso contrário, incluindo campos adicionais, como propriedades gerenciadas personalizadas de SharePoint e OneDrive, ou campos personalizados em **externalItem** do conteúdo que os conectores do Microsoft Graph trazem. A **propriedade fields** pode usar os [rótulos semânticos](/microsoftsearch/configure-connector#step-6-assign-property-labels) aplicados às propriedades. Por exemplo, se uma propriedade for rotulada como título, você poderá recuperá-la usando a seguinte sintaxe: `label_title`. Opcional.|
 |from|Int32|Especifica o deslocamento para os resultados da pesquisa. Deslocamento 0 retorna o primeiro resultado. Opcional.|
 |consulta|[searchQuery](searchquery.md)|Contém os termos de consulta. Obrigatório.|
+|queryAlterationOptions|[searchAlterationOptions](searchalterationoptions.md)|Opções de alteração de consulta formatadas em um blob JSON que contém dois sinalizadores opcionais relacionados à correção ortográfica. Opcional. |
+|resultTemplateOptions|[coleção resultTemplateOption](resulttemplateoption.md)|Fornece as opções de modelo de resultado de pesquisa para renderizar resultados de pesquisa de conectores.|
 |size|Int32|O tamanho da página a ser recuperada. Opcional.|
 |sortProperties|[Coleção sortProperty](sortProperty.md)|Contém a coleção ordenada de campos e direção para classificar resultados. Pode haver no máximo 5 propriedades de classificação na coleção. Opcional.|
 
@@ -45,13 +47,17 @@ Veja a seguir uma representação JSON do recurso.
 
 ```json
 {
+  "aggregationFilters": ["String"],
+  "aggregations": {"@odata.type": "microsoft.graph.aggregationOption"},
+  "enableTopResults": "Boolean",
   "entityTypes": ["String"],
   "contentSources": ["String"],
-  "query": {"@odata.type": "microsoft.graph.searchQuery"},
-  "from": 1024,
-  "size": 1024,
   "fields": ["String"],
-  "enableTopResults": true  
+  "from": "Int32",
+  "query": {"@odata.type": "microsoft.graph.searchQuery"},
+  "queryAlterationOptions": {"@odata.type": "microsoft.graph.searchAlterationOptions"},
+  "resultTemplateOptions": [{"@odata.type": "microsoft.graph.resultTemplateOption"}],
+  "size": "Int32"
 }
 ```
 
@@ -61,7 +67,8 @@ Veja a seguir uma representação JSON do recurso.
 - Pesquisar conteúdo em SharePoint e OneDrive ([arquivos, listas e sites](/graph/search-concept-files))
 - [Classificar resultados](/graph/search-concept-sort) da pesquisa
 - Usar [agregação para](/graph/search-concept-aggregations) refinar resultados de pesquisa
-
+- Usar [layout de exibição](/graph/search-concept-display-layout.md)
+- [Habilitar correções ort](/graph/search-concept-speller) spell nos resultados da pesquisa
 
 
 <!-- uuid: 16cd6b66-4b1a-43a1-adaf-3a886856ed98

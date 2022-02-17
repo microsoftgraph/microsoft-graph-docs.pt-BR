@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 ms.prod: non-product-specific
 author: MSGraphDocsvTeam
 doc_type: enumPageType
-ms.openlocfilehash: 2b0bf8890f4929d499b7a58f81d107f3b7c293d5
-ms.sourcegitcommit: 15dd0e98e69f872ed5a709600608b244759b0967
+ms.openlocfilehash: 4fed63c948e03fd94cb89ccf2ac07106dc700e9f
+ms.sourcegitcommit: b19b19bf192688f4c513492e8391e4d8dc104633
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/18/2021
-ms.locfileid: "61567374"
+ms.lasthandoff: 02/17/2022
+ms.locfileid: "62878754"
 ---
 # <a name="enum-values"></a>Valores denum
 
@@ -788,7 +788,7 @@ Namespace: microsoft.graph
 |:-------------
 | desconhecido
 | authentication
-| authorization
+| autorização
 | accountValidation
 | userValidation
 | deviceNotSupported
@@ -910,7 +910,7 @@ Namespace: microsoft.graph
 | Automático
 | noPreview
 | checklist
-| description
+| descrição
 | referência
 
 
@@ -1106,7 +1106,7 @@ Possíveis valores de nível de integridade do processo.
 
 ### <a name="registryhive-values"></a>valores registryHive
 
-Enum para hives do Registro conforme definido por [/windows/desktop/sysinfo/registry-hives](/windows/desktop/sysinfo/registry-hives).
+Número para hives do registro conforme definido por [/windows/desktop/sysinfo/registry-hives](/windows/desktop/sysinfo/registry-hives).
 
 |Membro|Valor|Descrição|
 |:---|:---|:---|
@@ -1116,7 +1116,7 @@ Enum para hives do Registro conforme definido por [/windows/desktop/sysinfo/regi
 |localMachineSam|3| HKEY_LOCAL_MACHINE\SAM hive.|
 |localMachineSamSoftware|4| HKEY_LOCAL_MACHINE\Software hive.|
 |localMachineSystem|5| HKEY_LOCAL_MACHINE\System hive.|
-|usersDefault|6 | HKEY_USERS \\ . Hive PADRÃO.|
+|usersDefault|6 | \\HKEY_USERS. Hive PADRÃO.|
 
 ### <a name="registryoperation-values"></a>valores registryOperation
 
@@ -1131,7 +1131,7 @@ Operação que alterou o nome e/ou o valor da chave do Registro.
 
 ### <a name="registryvaluetype-values"></a>valores registryValueType
 
-Enum para tipos de valor do Registro conforme definido por [/windows/desktop/sysinfo/registry-value-types](/windows/desktop/sysinfo/registry-value-types).
+Número para tipos de valor do Registro conforme definido por [/windows/desktop/sysinfo/registry-value-types](/windows/desktop/sysinfo/registry-value-types).
 
 |Membro|Valor|Descrição|
 |:---|:---|:---|
@@ -1419,9 +1419,9 @@ Valores possíveis para tipos de conta de usuário (associação ao grupo), por 
 | Member   | Valor int |  Descrição |
 |:---------------|:--------|:----------|
 | Nenhum | 0 |  O usuário não tem permissão para substituir a mensagem. O usuário não tem permissão para relatar uma mensagem como falso positivo se policyTip não for fornecida. Em todos os outros cenários, o usuário pode relatar uma mensagem como falso positivo.|
-| AllowFalsePositiveOverride | 1 |  O usuário não tem permissão para substituir explicitamente o bloco, a menos que isso seja combinado `AllowOverrideWithoutJustification` com ou `AllowOverrideWithJustification` sinalizadores. Relatar um falso positivo na violação substitui automaticamente o bloco e envia a mensagem. |
-| AllowOverrideWithoutJustification | 2 | O usuário tem permissão para substituir o bloco e enviar a mensagem. O texto de justificativa não é necessário. Exclusivo para `AllowOverrideWithJustification` . |
-| AllowOverrideWithJustification | 4 |  O usuário tem permissão para substituir o bloco e enviar a mensagem. O texto de justificativa é necessário. Exclusivo para `AllowOverrideWithoutJustification` .|
+| AllowFalsePositiveOverride | 1 |  O usuário não tem permissão para substituir explicitamente o bloco, a menos que isso seja combinado com `AllowOverrideWithoutJustification` ou `AllowOverrideWithJustification` sinalizadores. Relatar um falso positivo na violação substitui automaticamente o bloco e envia a mensagem. |
+| AllowOverrideWithoutJustification | 2 | O usuário tem permissão para substituir o bloco e enviar a mensagem. O texto de justificativa não é necessário. Exclusivo para `AllowOverrideWithJustification`. |
+| AllowOverrideWithJustification | 4 |  O usuário tem permissão para substituir o bloco e enviar a mensagem. O texto de justificativa é necessário. Exclusivo para `AllowOverrideWithoutJustification`.|
 
 ### <a name="channelmembershiptype-values"></a>Valores channelMembershipType
 
@@ -1726,6 +1726,13 @@ Valores possíveis para tipos de conta de usuário (associação ao grupo), por 
 |quick|
 |estratégico|
 |unknownFutureValue|
+
+### <a name="searchalterationtype-values"></a>searchAlterationType values
+
+| Member | Descrição |
+|:---------------|:----------|
+|modification|
+|suggestion|
 
 ### <a name="servicehealthclassificationtype-values"></a>valores serviceHealthClassificationType 
 

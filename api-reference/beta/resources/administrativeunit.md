@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: DougKirschner
 ms.prod: directory-management
 doc_type: resourcePageType
-ms.openlocfilehash: 5f689a44f614d7eb263d5d24fbaae6b7c7998543
-ms.sourcegitcommit: 6968f5aaf40089684efb0c38a95f6cca353c1d92
+ms.openlocfilehash: 2d1083dcca8eb48697d12e6c5bc7a3fa5b1e544a
+ms.sourcegitcommit: b19b19bf192688f4c513492e8391e4d8dc104633
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/16/2022
-ms.locfileid: "62854745"
+ms.lasthandoff: 02/17/2022
+ms.locfileid: "62878733"
 ---
 # <a name="administrativeunit-resource-type"></a>Tipo de recurso administrativeUnit
 
@@ -18,7 +18,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Uma unidade administrativa fornece um contêiner conceitual para objetos de diretório usuário e grupo. Usando unidades administrativas, um administrador da empresa agora pode delegar responsabilidades administrativas para gerenciar os usuários e grupos contidos dentro ou com escopo para uma unidade administrativa para um administrador regional ou departamento.
+Uma unidade administrativa fornece um contêiner conceitual para objetos de diretório de usuário, grupo e dispositivo. Usando unidades administrativas, um administrador da empresa agora pode delegar responsabilidades administrativas para gerenciar os usuários, grupos e dispositivos contidos dentro ou com escopo para uma unidade administrativa para um administrador regional ou departamento.
 
 Esse recurso tem suporte para o uso da [consulta delta](/graph/delta-query-overview) para controlar adições, exclusões e atualizações incrementais oferecendo uma função [delta](../api/administrativeunit-delta.md). Esse recurso é um tipo aberto que permite que outras propriedades sejam passadas.
 
@@ -39,8 +39,8 @@ Este tópico fornece descrições das propriedades declaradas e propriedades de 
 |[Atualizar](../api/administrativeunit-update.md) | [administrativeUnit](administrativeunit.md)    |Atualizar o objeto administrativeUnit. |
 |[Delete](../api/administrativeunit-delete.md) | Nenhum |Excluir objeto administrativeUnit. |
 |[Obter delta](../api/administrativeunit-delta.md)|[administrativeUnit](administrativeunit.md)|Get newly created, updated, or **deleted administrativeUnits** without having to perform a full read of the entire resource collection.|
-|[Adicionar um membro](../api/administrativeunit-post-members.md) |[directoryObject](directoryobject.md)| Adicionar um membro (usuário ou grupo).|
-|[Listar membros](../api/administrativeunit-list-members.md) |Coleção [directoryObject](directoryobject.md)| Obter a lista de membros (usuário e grupo).|
+|[Adicionar um membro](../api/administrativeunit-post-members.md) |[directoryObject](directoryobject.md)| Adicione um membro (usuário, grupo ou dispositivo).|
+|[Listar membros](../api/administrativeunit-list-members.md) |Coleção [directoryObject](directoryobject.md)| Obter a lista de membros (usuário, grupo e dispositivo).|
 |[Obter um membro](../api/administrativeunit-get-members.md) |[directoryObject](directoryobject.md)| Obter um membro específico.|
 |[Remover um membro](../api/administrativeunit-delete-members.md) |[directoryObject](directoryobject.md)| Remova um membro.|
 |[Adicionar membro de função com escopo](../api/administrativeunit-post-scopedrolemembers.md) |[scopedRoleMembership](scopedrolemembership.md)| Adicione um membro de função com escopo.|
@@ -90,10 +90,10 @@ Veja a seguir uma representação JSON do recurso.
 
 ```json
 {
-  "description": "string",
-  "displayName": "string",
-  "id": "string (identifier)",
-  "visibility": "string"
+  "description": "String",
+  "displayName": "String",
+  "id": "String (identifier)",
+  "visibility": "String"
 }
 
 ```

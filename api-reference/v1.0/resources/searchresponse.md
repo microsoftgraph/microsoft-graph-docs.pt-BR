@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: nmoreau
 ms.prod: search
 doc_type: resourcePageType
-ms.openlocfilehash: e3efe104e00538900ad6bcbe844b7b9d567403ee
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: b7d5668a86204e95e3f0f5e024ec985f98027ac9
+ms.sourcegitcommit: b19b19bf192688f4c513492e8391e4d8dc104633
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59126713"
+ms.lasthandoff: 02/17/2022
+ms.locfileid: "62878649"
 ---
 # <a name="searchresponse-resource-type"></a>Tipo de recurso searchResponse
 
@@ -23,7 +23,9 @@ Representa os resultados de uma consulta de pesquisa e os termos usados para a c
 | Propriedade     | Tipo        | Descrição |
 |:-------------|:------------|:------------|
 |hitsContainers|[coleção searchHitsContainer](searchhitscontainer.md)|Uma coleção de resultados de pesquisa.|
-|searchTerms|Coleção String|Contém os termos de pesquisa enviados na consulta de pesquisa inicial.|
+|resultTemplates|[coleção resultTemplate](resulttemplate.md)|Um dicionário de **resultTemplateIds** e valores associados, que incluem o nome e o esquema JSON dos modelos de resultado.|
+|searchTerms|Coleção de cadeias de caracteres|Contém os termos de pesquisa enviados na consulta de pesquisa inicial.|
+|queryAlterationResponse|[alterationResponse](alterationresponse.md)|Fornece informações relacionadas a correções ortográficas na resposta à alteração.|
 
 ## <a name="json-representation"></a>Representação JSON
 
@@ -41,6 +43,8 @@ Veja a seguir uma representação JSON do recurso.
 ```json
 {
   "hitsContainers": [{"@odata.type": "microsoft.graph.searchHitsContainer"}],
+  "queryAlterationResponse": {"@odata.type": "microsoft.graph.alterationResponse"},
+  "resultTemplates": [{"@odata.type":"microsoft.graph.resultTemplateDictionary"}],
   "searchTerms": ["String"]
 }
 ```

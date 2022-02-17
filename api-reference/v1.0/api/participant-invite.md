@@ -1,16 +1,16 @@
 ---
 title: 'participante: invite'
 description: Convide participantes para a chamada ativa.
-author: ananmishr
+author: mkhribech
 ms.localizationpriority: medium
 ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: 432961612318a5db4f0b15a5d238dc19a0447bd9
-ms.sourcegitcommit: 25acfa7d0153336c9a35d30a1dd422aeadc1342c
+ms.openlocfilehash: f59bddee4fe1ca18f6a8e702e0893b6924ce13e4
+ms.sourcegitcommit: b19b19bf192688f4c513492e8391e4d8dc104633
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/03/2022
-ms.locfileid: "62338977"
+ms.lasthandoff: 02/17/2022
+ms.locfileid: "62878880"
 ---
 # <a name="participant-invite"></a>participante: invite
 
@@ -20,7 +20,7 @@ Convide participantes para a chamada ativa.
 
 Para obter mais informações sobre como lidar com operações, consulte [commsoperation](../resources/commsoperation.md).
 
->**Observação:** Essa API só tem suporte para chamadas de grupo.
+>**Observação:** Convidar vários participantes em uma solicitação só é suportado para chamadas de grupo.
 
 ## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
@@ -52,7 +52,7 @@ Forneça um objeto JSON com os seguintes parâmetros no corpo da solicitação.
 |clientContext|String|Cadeia de caracteres de contexto de cliente exclusiva. O limite máximo é 256 caracteres.|
 
 ## <a name="response"></a>Resposta
-Se succsessivo, `200 OK` este método retorna um código de resposta e um header de local com um URI para [o inviteParticipantsOperation](../resources/inviteparticipantsoperation.md) criado para essa solicitação. 
+Se tiver êxito, este método retornará `200 OK` um código de resposta e um header de local com um URI para [o inviteParticipantsOperation](../resources/inviteparticipantsoperation.md) criado para essa solicitação. 
 
 O corpo da resposta contém o [inviteParticipantsOperation criado](../resources/inviteparticipantsoperation.md).
 
@@ -64,7 +64,7 @@ Os exemplos a seguir mostram como chamar essa API.
 
 > **Observação:** Os objetos de resposta podem ser reduzidos para a capacidade de leitura. Todas as propriedades serão retornadas de uma chamada real.
 
-### <a name="example-1-invite-one-participant-to-an-existing-group-call"></a>Exemplo 1: convidar um participante para uma chamada de grupo existente
+### <a name="example-1-invite-one-participant-to-an-existing-call"></a>Exemplo 1: convidar um participante para uma chamada existente
 
 ##### <a name="request"></a>Solicitação
 

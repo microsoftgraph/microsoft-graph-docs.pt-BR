@@ -5,12 +5,12 @@ author: jpettere
 ms.localizationpriority: high
 ms.prod: users
 doc_type: apiPageType
-ms.openlocfilehash: d4e27286ea1d3352d892dbc7cac6ca0bc13a3da2
-ms.sourcegitcommit: 25acfa7d0153336c9a35d30a1dd422aeadc1342c
+ms.openlocfilehash: d477e0333c94114818a0bd4fa8ec7723c1a06150
+ms.sourcegitcommit: b19b19bf192688f4c513492e8391e4d8dc104633
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/03/2022
-ms.locfileid: "62342286"
+ms.lasthandoff: 02/17/2022
+ms.locfileid: "62878642"
 ---
 # <a name="get-a-user"></a>Obter um usuário
 
@@ -18,7 +18,9 @@ Namespace: microsoft.graph
 
 Recuperar as propriedades e os relacionamentos do objeto user.
 
-> Observação: obter um usuário retorna uma coleção padrão de propriedades somente (*businessPhones, displayName, givenName, id, jobTitle, mail, mobilePhone, officeLocation, preferredLanguage, surname, userPrincipalName*). Use `$select` para obter outras propriedades e relacionamentos para o objeto [user](../resources/user.md).
+> **Observação:** a obtenção de um usuário retorna somente um conjunto padrão de propriedades (*businessPhones, displayName, givenName, id, jobTitle, mail, mobilePhone, officeLocation, preferredLanguage, surname, userPrincipalName*). Use `$select` para obter outras propriedades e relacionamentos para o objeto [user](../resources/user.md).
+>
+> Essa solicitação pode ter atrasos de replicação para usuários que foram criados, atualizados ou excluídos recentemente.
 
 ## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
