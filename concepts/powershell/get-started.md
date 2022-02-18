@@ -1,18 +1,18 @@
 ---
-title: Começar com o Microsoft Graph PowerShell SDK
+title: Introdução ao SDK Microsoft Graph PowerShell
 description: Começar a usar o Microsoft Graph PowerShell SDK usando-o para executar algumas tarefas básicas.
 ms.localizationpriority: medium
 author: jasonjoh
-ms.openlocfilehash: 623c034622054150ff6b58b97e063f3e833489de
-ms.sourcegitcommit: f7956d25472a55af03be83b6ab986a7149a7ac88
+ms.openlocfilehash: d92a6057b9c7df7df4f9a7014df20e7a21bfe923
+ms.sourcegitcommit: 7deb4fad6acc69fd6bc02cd4e2f6774de5784c97
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/12/2021
-ms.locfileid: "60270310"
+ms.lasthandoff: 02/18/2022
+ms.locfileid: "62894765"
 ---
-# <a name="get-started-with-the-microsoft-graph-powershell-sdk"></a>Começar com o Microsoft Graph PowerShell SDK
+# <a name="get-started-with-the-microsoft-graph-powershell-sdk"></a>Introdução ao SDK Microsoft Graph PowerShell
 
-Neste guia, você usará o Microsoft Graph PowerShell SDK para executar algumas tarefas básicas. Se você ainda não [instalou o SDK,](installation.md)faça isso antes de seguir este guia.
+Neste guia, você usará o Microsoft Graph PowerShell SDK para executar algumas tarefas básicas. Se você ainda não [instalou o SDK](installation.md), faça isso antes de seguir este guia.
 
 ## <a name="api-version"></a>Versão da API
 
@@ -37,7 +37,7 @@ Cada API no microsoft Graph é protegida por um ou mais escopos de permissão. O
 - [Listar canais](/graph/api/channel-list?view=graph-rest-1.0&preserve-view=true) para obter os canais em uma equipe.
 - [Enviar mensagem](/graph/api/channel-post-messages?view=graph-rest-1.0&preserve-view=true) para enviar uma mensagem para um canal de equipe.
 
-O `User.Read.All` escopo de permissão habilita as duas primeiras chamadas e o escopo `Group.ReadWrite.All` habilita o restante. Essas permissões exigem uma conta de administrador.
+O `User.Read.All` escopo de permissão habilita as duas primeiras chamadas e o `Group.ReadWrite.All` escopo habilita o restante. Essas permissões exigem uma conta de administrador.
 
 ### <a name="sign-in"></a>Entrar
 
@@ -55,6 +55,8 @@ O comando solicita que você acesse uma página da Web para entrar usando um có
 ## <a name="call-microsoft-graph"></a>Chamar o Microsoft Graph
 
 Agora que você está assinado, você pode começar a fazer chamadas para o Microsoft Graph.
+
+[!INCLUDE [aad-advanced-queries-note](../../includes/aad-advanced-queries-note.md)]
 
 ### <a name="get-the-signed-in-user"></a>Obter o usuário com assinatura
 
@@ -80,7 +82,7 @@ ce73bdb5-bf12-405e-ab85-40122fdd6eb7 Brian Johnson (TAILSPIN) BrianJ@contoso.onm
 df1347a3-7ce7-4b4d-8aab-7c65b5c907b9 Cameron White                                                  CameronW@contoso…
 ```
 
-Você pode usar um [filtro OData para](../query-parameters.md#filter-parameter) ajudar a localizar o usuário específico que deseja. Execute o seguinte comando, `Megan Bowen` substituindo pelo nome de exibição do usuário com o que você se inscreveu.
+Você pode usar um [filtro OData para](../query-parameters.md#filter-parameter) ajudar a localizar o usuário específico que deseja. Execute o seguinte comando, substituindo `Megan Bowen` pelo nome de exibição do usuário com o que você se inscreveu.
 
 ```powershell
 $user = Get-MgUser -Filter "displayName eq 'Megan Bowen'"
@@ -100,11 +102,11 @@ Agora use a ID do usuário como um parâmetro para o `Get-MgUserJoinedTeam` coma
 Get-MgUserJoinedTeam -UserId $user.Id
 ```
 
-Assim como o `Get-MgUser` comando, isso fornece uma lista de equipes. Selecione uma das equipes ingressada pelo usuário e copie seu `Id` .
+Assim como o `Get-MgUser` comando, isso fornece uma lista de equipes. Selecione uma das equipes ingressada pelo usuário e copie seu `Id`.
 
 ### <a name="list-team-channels"></a>Listar canais de equipe
 
-Agora use a ID da equipe como um parâmetro para o comando, seguindo um padrão semelhante de listagem de todos os canais e filtrando a lista para obter o canal específico que `Get-MgTeamChannel` você deseja.
+Agora use a ID da equipe como um parâmetro para o comando, seguindo um padrão semelhante de listagem de todos os canais e filtrando a `Get-MgTeamChannel` lista para obter o canal específico que você deseja.
 
 ```powershell
 Get-MgTeamChannel -TeamId $team.Id
@@ -119,7 +121,7 @@ Agora que você tem a ID da Equipe e a ID do canal, você pode postar uma mensag
 New-MgTeamChannelMessage -TeamId $team.Id -ChannelId $channel.Id -Body @{ Content="Hello World" }
 ```
 
-Esse comando difere dos comandos anteriores que você usou. Em vez de apenas consultar dados, ele está realmente criando algo. No Microsoft Graph, isso se converte em HTTP e requer um objeto no `POST` corpo dessa postagem. Nesse caso, o objeto é [um chatMessage](/graph/resources/chatmessage?view=graph-rest-1.0&preserve-view=true). Observe que o `-Body` parâmetro para o comando mapeia para a propriedade em `body` `chatMessage` . Outras propriedades são mapeadas de maneira semelhante, para que você possa alterar a mensagem enviada. Por exemplo, para enviar uma mensagem urgente, use o seguinte comando.
+Esse comando difere dos comandos anteriores que você usou. Em vez de apenas consultar dados, ele está realmente criando algo. No Microsoft Graph, isso se converte em HTTP `POST`e requer um objeto no corpo dessa postagem. Nesse caso, o objeto é [um chatMessage](/graph/resources/chatmessage?view=graph-rest-1.0&preserve-view=true). Observe que o `-Body` parâmetro para o comando mapeia para a `body` propriedade em `chatMessage`. Outras propriedades são mapeadas de maneira semelhante, para que você possa alterar a mensagem enviada. Por exemplo, para enviar uma mensagem urgente, use o seguinte comando.
 
 ```powershell
 New-MgTeamChannelMessage -TeamId $team.Id -ChannelId $channel.Id -Body @{ Content="Hello World" } -Importance "urgent"
@@ -133,7 +135,7 @@ Use o `Disconnect-MgGraph` comando para sair.
 Disconnect-MgGraph
 ```
 
-## <a name="next-steps"></a>Próximos passos
+## <a name="next-steps"></a>Próximas etapas
 
 - [Saiba como navegar no SDK](navigating.md)
 - [Usar autenticação somente aplicativo com o Microsoft Graph PowerShell SDK](app-only.md)

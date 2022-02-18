@@ -5,12 +5,12 @@ author: harini84
 ms.localizationpriority: medium
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 9effe9adee28cad2ad038c97b76388163beeb9ac
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: ad0c1a1383b35df1a576f3d5656c9f44c952c3fc
+ms.sourcegitcommit: 7deb4fad6acc69fd6bc02cd4e2f6774de5784c97
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62103085"
+ms.lasthandoff: 02/18/2022
+ms.locfileid: "62894681"
 ---
 # <a name="get-event"></a>Obter evento
 
@@ -25,7 +25,7 @@ Um aplicativo pode obter um evento no calendário de outro usuário se:
 * O aplicativo tem permissões de aplicativo
 * O aplicativo tem as permissões delegadas [apropriadas](#permissions) de um usuário e outro usuário compartilhou um calendário com esse usuário ou deu acesso delegado a esse usuário. Confira os [detalhes e um exemplo](/graph/outlook-get-shared-events-calendars).
 
-Como o **recurso event** dá suporte a [extensões,](/graph/extensibility-overview)você também pode usar a operação para obter propriedades personalizadas e dados de extensão em uma `GET` instância **de** evento.
+Como o **recurso de** evento dá suporte a [extensões](/graph/extensibility-overview), você também pode usar `GET` a operação para obter propriedades personalizadas e dados de extensão em uma **instância de** evento.
 
 
 ### <a name="support-various-time-zones"></a>Suporte para vários fusos horários
@@ -218,7 +218,7 @@ Preference-Applied: outlook.timezone="Pacific Standard Time"
 ```
 ### <a name="example-2-get-the-body-property-in-text-format"></a>Exemplo 2: Obter a propriedade body no formato de texto
 #### <a name="request"></a>Solicitação
-O exemplo a seguir mostra como usar um header para obter a propriedade body do `Prefer: outlook.body-content-type="text"` evento especificado no formato de texto. 
+O exemplo a seguir mostra como usar um header para obter a `Prefer: outlook.body-content-type="text"` propriedade **body** do evento especificado no formato de texto.
 
 A solicitação também usa um parâmetro de consulta `$select` para retornar propriedades específicas. Sem um parâmetro `$select`, todas as propriedades do evento serão retornadas.
 
@@ -328,7 +328,7 @@ GET https://graph.microsoft.com/beta/me/events/AAMkADAGAADDdm4NAAA=/?$select=sub
 #### <a name="response"></a>Resposta
 A propriedade **locations** inclui detalhes dos três locais para os quais o evento é organizado. 
 
-Como a solicitação não especifica nenhum ou um header, as propriedades inicial e final são exibidas no fuso horário UTC padrão e o corpo está no `Prefer: outlook.timezone` `Prefer: outlook.body-content-type` formato HTML padrão.    
+Como a solicitação não `Prefer: outlook.timezone` `Prefer: outlook.body-content-type` especifica nenhum ou um header,  as propriedades inicial e **final** são exibidas no fuso horário UTC padrão e o corpo está no formato HTML padrão.  
 
 <!-- {
   "blockType": "response",
@@ -438,7 +438,7 @@ O exemplo a seguir mostra a expansão de um evento mestre de série de uma séri
   "name": "get_event_seriesMaster_expansion"
 }-->
 ```msgraph-interactive
-GET https://graph.microsoft.com/beta/me/events/AAMkADAGAADDdm4NAAA=/?$select=subject,start,end,occurrenceId,exceptionOccurrences,cancelledOccurrences$expand=exceptionOccurrences
+GET https://graph.microsoft.com/beta/me/events/AAMkADAGAADDdm4NAAA=/?$select=subject,start,end,occurrenceId,exceptionOccurrences,cancelledOccurrences&$expand=exceptionOccurrences
 ```
 # <a name="go"></a>[Ir](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/get-event-seriesmaster-expansion-go-snippets.md)]
@@ -451,7 +451,7 @@ GET https://graph.microsoft.com/beta/me/events/AAMkADAGAADDdm4NAAA=/?$select=sub
 ---
 
 #### <a name="response"></a>Resposta
-A operação GET retorna as propriedades selecionadas para o evento mestre da série. Especificamente, para eventos na coleção **exceptionOccurrences,** a operação retorna a propriedade **id** e as propriedades selecionadas aplicáveis (**subject**, **start**, **end**, **occurrenceId**). Quanto aos eventos na coleção **cancelledOccurrences,** como os eventos não existem mais, a operação retorna apenas seus valores de propriedade **occurrenceId.**
+A operação GET retorna as propriedades selecionadas para o evento mestre da série. Especificamente, para eventos na coleção **exceptionOccurrences** , a operação retorna a propriedade **id** e as propriedades selecionadas aplicáveis (**assunto**, **início**, **fim**, **occurrenceId**). Quanto aos eventos na coleção **cancelledOccurrences** , como os eventos não existem mais, a operação retorna apenas seus **valores de propriedade occurrenceId** .
 
 <!-- {
   "blockType": "response",

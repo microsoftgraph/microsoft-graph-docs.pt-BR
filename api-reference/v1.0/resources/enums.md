@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 ms.prod: non-product-specific
 author: MSGraphDocsvTeam
 doc_type: enumPageType
-ms.openlocfilehash: 4fed63c948e03fd94cb89ccf2ac07106dc700e9f
-ms.sourcegitcommit: b19b19bf192688f4c513492e8391e4d8dc104633
+ms.openlocfilehash: 20b05fea6ed20a11ac236f3ad9cbd560c1250d87
+ms.sourcegitcommit: 7deb4fad6acc69fd6bc02cd4e2f6774de5784c97
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/17/2022
-ms.locfileid: "62878754"
+ms.lasthandoff: 02/18/2022
+ms.locfileid: "62894667"
 ---
 # <a name="enum-values"></a>Valores denum
 
@@ -1729,8 +1729,8 @@ Valores possíveis para tipos de conta de usuário (associação ao grupo), por 
 
 ### <a name="searchalterationtype-values"></a>searchAlterationType values
 
-| Member | Descrição |
-|:---------------|:----------|
+| Member |
+|:---------------|
 |modification|
 |suggestion|
 

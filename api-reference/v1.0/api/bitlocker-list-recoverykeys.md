@@ -5,12 +5,12 @@ author: hafowler
 ms.localizationpriority: medium
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: c3cce594bb7fd6bec167b7b191c636a6c765a23c
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: 3cf3335abf971b9c55d322e7e18e697a62654a4b
+ms.sourcegitcommit: 7deb4fad6acc69fd6bc02cd4e2f6774de5784c97
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62092538"
+ms.lasthandoff: 02/18/2022
+ms.locfileid: "62894751"
 ---
 # <a name="list-recoverykeys"></a>Listar recoveryKeys
 
@@ -18,7 +18,7 @@ Namespace: microsoft.graph
 
 Obter uma lista dos [objetos bitlockerRecoveryKey](../resources/bitlockerrecoverykey.md) e suas propriedades. 
 
-Esta operação não retorna a **propriedade key.** Para obter informações sobre como ler a **propriedade key,** consulte [Get bitlockerRecoveryKey](bitlockerrecoverykey-get.md).
+Esta operação não retorna a **propriedade key** . Para obter informações sobre como ler a **propriedade key** , consulte [Get bitlockerRecoveryKey](bitlockerrecoverykey-get.md).
 
 ## <a name="permissions"></a>Permissões
 
@@ -30,7 +30,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |Delegado (conta pessoal da Microsoft)|Sem suporte|
 |Aplicativo|Sem suporte|
 
-Para permissões delegadas, o usuário de chamada deve ser o proprietário registrado do dispositivo do qual a chave de recuperação do BitLocker foi originalmente backup, ou ele deve estar em uma das seguintes funções de [diretório:](/azure/active-directory/roles/permissions-reference)
+Para permissões delegadas, o usuário de chamada deve ser o proprietário registrado do dispositivo do qual a chave de recuperação do BitLocker foi originalmente backup ou deve estar em uma das seguintes funções de [diretório:](/azure/active-directory/roles/permissions-reference)
 
 * Administrador global
 * Administrador de dispositivos de nuvem
@@ -55,15 +55,16 @@ GET /informationProtection/bitlocker/recoveryKeys
 
 ## <a name="optional-query-parameters"></a>Parâmetros de consulta opcionais
 
-Este método dá suporte ao parâmetro de consulta OData para filtrar os resultados pela deviceId do dispositivo em que a chave foi mais recentemente `$filter` feita backup.  Este método não dá suporte `$top` a . Para obter informações gerais, acesse [Parâmetros de consulta OData](/graph/query-parameters).
+Este método dá suporte ao `$filter` parâmetro de consulta OData para filtrar os resultados pela **deviceId** do dispositivo em que a chave foi mais recentemente feita backup. Este método não dá suporte a `$top`. Para obter informações gerais, acesse [Parâmetros de consulta OData](/graph/query-parameters).
 
-A resposta também pode conter `odata.nextLink` um , que você pode usar para página através do conjunto de resultados. Para obter detalhes, [consulte Paging Microsoft Graph data](/graph/paging).
+A resposta também pode conter um `odata.nextLink`, que você pode usar para página através do conjunto de resultados. Para obter detalhes, [consulte Paging Microsoft Graph data](/graph/paging).
 
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
 
 |Nome|Descrição|
 |:---|:---|
 |Autorização|{token} de portador. Obrigatório.|
+|User-Agent|O identificador do aplicativo de chamada. Esse valor contém informações sobre o sistema operacional e o navegador usado. Obrigatório.|
 |ocp-client-name|O nome do aplicativo cliente que executa a chamada da API. Esse header é usado para fins de depuração. Opcional.|
 |ocp-client-version|A versão do aplicativo cliente que executa a chamada da API. Esse header é usado para fins de depuração. Opcional.|
 
@@ -73,7 +74,7 @@ Não forneça um corpo de solicitação para esse método.
 
 ## <a name="response"></a>Resposta
 
-Se tiver êxito, este método retornará um código de resposta e uma `200 OK` coleção de [objetos bitlockerRecoveryKey](../resources/bitlockerrecoverykey.md) no corpo da resposta.
+Se tiver êxito, este método retornará um `200 OK` código de resposta e uma coleção de [objetos bitlockerRecoveryKey](../resources/bitlockerrecoverykey.md) no corpo da resposta.
 
 ## <a name="examples"></a>Exemplos
 
@@ -92,6 +93,7 @@ Este é um exemplo de solicitação.
 -->
 ``` http
 GET https://graph.microsoft.com/v1.0/informationProtection/bitlocker/recoveryKeys
+User-Agent: "Dsreg/10.0 (Windows 10.0.19043.1466)"
 ocp-client-name: "My Friendly Client"
 ocp-client-version: "1.2"
 ```
@@ -174,6 +176,7 @@ Este é um exemplo de solicitação.
 -->
 ``` http
 GET https://graph.microsoft.com/v1.0/informationProtection/bitlocker/recoveryKeys?$filter=deviceId eq '1ab40ab2-32a8-4b00-b6b5-ba724e407de9'
+User-Agent: "Dsreg/10.0 (Windows 10.0.19043.1466)"
 ocp-client-name: "My Friendly Client"
 ocp-client-version: "1.2"
 ```

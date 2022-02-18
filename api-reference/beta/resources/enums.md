@@ -5,12 +5,12 @@ doc_type: enumPageType
 ms.localizationpriority: medium
 ms.prod: non-product-specific
 author: MSGraphDocsvTeam
-ms.openlocfilehash: cd3be7143a53b7985fe2a677f685c3f2ed2b4b18
-ms.sourcegitcommit: b19b19bf192688f4c513492e8391e4d8dc104633
+ms.openlocfilehash: 480689881eb5b806cd5e2fa734068da013c86966
+ms.sourcegitcommit: 7deb4fad6acc69fd6bc02cd4e2f6774de5784c97
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/17/2022
-ms.locfileid: "62878719"
+ms.lasthandoff: 02/18/2022
+ms.locfileid: "62894793"
 ---
 # <a name="enum-values"></a>Valores denum
 
@@ -1074,10 +1074,10 @@ Namespace: microsoft.graph
 
 ### <a name="searchalterationtype-values"></a>searchAlterationType values
 
-| Member | Descrição |
-|:---------------|:----------|
-|modification|Obter resultados de pesquisa para a consulta alterada corrigida e as informações de correção ortográfica para erros de digitação.|
-|suggestion|Obter resultados de pesquisa para consulta de usuário original e as informações de correção ortográfica sugeridas para erros de digitação na consulta.|
+| Member |
+|:---------------|
+|modification|
+|suggestion|
 
 ### <a name="bucketaggregationsortproperty-values"></a>valores bucketAggregationSortProperty
 
