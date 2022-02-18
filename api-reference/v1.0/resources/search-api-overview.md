@@ -5,12 +5,12 @@ ms.localizationpriority: high
 author: nmoreau
 ms.prod: search
 doc_type: resourcePageType
-ms.openlocfilehash: 2d0ec33b510c24002339a7fef64c7080fcbee4ce
-ms.sourcegitcommit: b19b19bf192688f4c513492e8391e4d8dc104633
+ms.openlocfilehash: 046fd5a8e3463ab9efcdd63c79eacb82302d70fa
+ms.sourcegitcommit: 7deb4fad6acc69fd6bc02cd4e2f6774de5784c97
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/17/2022
-ms.locfileid: "62878852"
+ms.lasthandoff: 02/18/2022
+ms.locfileid: "62894758"
 ---
 # <a name="use-the-microsoft-search-api-to-query-data"></a>Usar a API de Pesquisa da Microsoft para consultar dados
 
@@ -143,7 +143,7 @@ Confira [Refinar os resultados da pesquisa](/graph/search-concept-aggregation) p
 
 A verificação ortográfica é uma maneira popular de lidar com incompatibilidades entre erros de digitação em uma consulta do usuário e as palavras corretas em conteúdos combinados. Quando erros de digitação são detectados na consulta original do usuário, você pode obter o resultado da pesquisa tanto para a consulta original do usuário quanto para a consulta alternativa corrigida. Você também pode obter as informações de verificação ortográfica para erros de digitação na propriedade **queryAlterationResponse** da [searchresponse](searchresponse.md).
 
-No corpo de solicitação do método [query](/graph/api/search-query), especifique as **queryAlterationOptions** que devem ser aplicadas à consulta para as verificações ortográficas. A descrição das **queryAlterationOptions** são definidas em [searchrequest](./searchrequest.md).
+No corpo de solicitação do método [query](/graph/api/search-query), especifique as **queryAlterationOptions** que devem ser aplicadas à consulta para as verificações ortográficas. A descrição das **queryAlterationOptions** são definidas em [searchRequest](./searchrequest.md).
 
 Para exemplos que mostram como usar verificações ortográficas, consulte [Solicitar verificação ortográfica](/graph/search-concept-speller).
 

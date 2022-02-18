@@ -4,12 +4,12 @@ description: O Microsoft Graph expõe as permissões granulares que controlam o 
 author: jackson-woods
 ms.localizationpriority: high
 ms.custom: graphiamtop20, scenarios:getting-started
-ms.openlocfilehash: 0cf655c04e074e7b8c9fb3c1f65c843fee7e2589
-ms.sourcegitcommit: 4e16f26b6b685a6a3dae855a04979c84105609b9
+ms.openlocfilehash: 85a5991cfe230e6588a2bb2c663914b14b816a17
+ms.sourcegitcommit: 7deb4fad6acc69fd6bc02cd4e2f6774de5784c97
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/10/2022
-ms.locfileid: "62519205"
+ms.lasthandoff: 02/18/2022
+ms.locfileid: "62894660"
 ---
 # <a name="microsoft-graph-permissions-reference"></a>Referência de permissões do Microsoft Graph
 
@@ -1287,6 +1287,21 @@ Para cenários mais complexos que envolvem várias permissões, confira [Cenári
 
 ---
 
+## <a name="managed-tenant-permissions"></a>Permissões de locatário gerenciado
+
+#### <a name="delegated-permissions"></a>Permissões delegadas
+
+|   Permissão    |  Exibir Cadeia de Caracteres   |  Descrição | Consentimento Obrigatório do Administrador | Suporte da conta da Microsoft |
+|:----------------|:------------------|:-------------|:-----------------------|:--------------|
+| _ManagedTenants.Read.All_ | Ler todas as informações específicas do locatário gerenciado | Permite que o aplicativo leia todas as informações do locatário gerenciado em nome do usuário conectado. | Sim | Não |
+| _ManagedTenants.ReadWrite.All_ | Ler e gravar todas as informações específicas do locatário gerenciado | Permite que o aplicativo leia e grave todas as informações do locatário gerenciado em nome do usuário conectado. | Sim | Não |
+
+#### <a name="application-permissions"></a>Permissões de aplicativos
+
+Nenhum.
+
+---
+
 ## <a name="member-permissions"></a>Permissões de membro
 
 #### <a name="delegated-permissions"></a>Permissões delegadas
@@ -1320,6 +1335,7 @@ A associação pode estar oculta em alguns grupos do Office 365. Isso significa 
 
 Para cenários mais complexos que envolvem várias permissões, confira [Cenários de permissões](#permission-scenarios).
 
+---
 
 ## <a name="notes-permissions"></a>Permissões de anotações
 
@@ -1366,6 +1382,8 @@ Para contas corporativas ou de estudante, _Notes.Read.All_ e _Notes.ReadWrite.Al
 * _Notes.ReadWrite.All_: Atualizar a página em um bloco de anotações para qualquer usuário da organização (`PATCH /users/{id}/onenote/pages/{id}/$value`).
 
 Para cenários mais complexos que envolvem várias permissões, confira [Cenários de permissões](#permission-scenarios).
+
+---
 
 ## <a name="notifications-permissions"></a>Permissões de notificações
 #### <a name="delegated-permissions"></a>Permissões delegadas
