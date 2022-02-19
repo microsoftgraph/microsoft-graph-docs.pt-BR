@@ -1,12 +1,17 @@
 ---
 title: Obter um servicePrincipal
-description: Recuperar as propriedades e as relações do objeto serviceprincipal.
+description: Recuperar as propriedades e relacionamentos do objeto servicePrincipal.
 author: sureshja
 ms.localizationpriority: high
 ms.prod: applications
 doc_type: apiPageType
+ms.openlocfilehash: 5630f5888be3a7c84d2075907231c3d73fc29cb5
+ms.sourcegitcommit: 7deb4fad6acc69fd6bc02cd4e2f6774de5784c97
+ms.translationtype: HT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 02/18/2022
+ms.locfileid: "62894772"
 ---
-
 # <a name="get-serviceprincipal"></a>Obter um servicePrincipal
 
 Namespace: microsoft.graph
@@ -21,6 +26,9 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |Delegado (conta corporativa ou de estudante) | Application.Read.All, Application.ReadWrite.All, Directory.Read.All, Directory.ReadWrite.All, Directory.AccessAsUser.All    |
 |Delegado (conta pessoal da Microsoft) | Sem suporte.    |
 |Aplicativo | Application.Read.All, Application.ReadWrite.All, Application.ReadWrite.OwnedBy, Directory.Read.All |
+
+> [!NOTE]
+> Uma entidade de serviço pode recuperar seus próprios detalhes de aplicativo e entidade de serviço sem receber nenhuma permissão de aplicativo.
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- { "blockType": "ignored" } -->

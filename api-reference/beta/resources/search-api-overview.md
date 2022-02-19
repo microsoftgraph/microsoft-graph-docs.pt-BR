@@ -5,12 +5,12 @@ ms.localizationpriority: high
 author: nmoreau
 ms.prod: search
 doc_type: resourcePageType
-ms.openlocfilehash: 6a30360dddeb06d9f8ac4d1ff5b485229087c3ce
-ms.sourcegitcommit: a60e5e81cfa04b666a1df1111a1d91f6c11989e9
+ms.openlocfilehash: 3ebab5bc652f6e6b484312420fb779d849eabb20
+ms.sourcegitcommit: 7deb4fad6acc69fd6bc02cd4e2f6774de5784c97
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "62282030"
+ms.lasthandoff: 02/18/2022
+ms.locfileid: "62894744"
 ---
 # <a name="use-the-microsoft-search-api-to-query-data"></a>Usar a API de Pesquisa da Microsoft para consultar dados
 
@@ -24,9 +24,9 @@ As solicitações de pesquisa são executadas no contexto do usuário conectado,
 
 ## <a name="common-use-cases"></a>Casos de uso comuns
 
-A API de pesquisa da Microsoft fornece um método de [consulta](../api/search-query.md) para pesquisar os dados na Pesquisa da Microsoft, no qual você passa um[searchRequest](searchRequest.md) no corpo da solicitação, definindo as especificações da pesquisa.
+A API de pesquisa da Microsoft fornece um método de [consulta](../api/search-query.md) para pesquisar os dados na Pesquisa da Microsoft, no qual você passa um[searchRequest](searchrequest.md) no corpo da solicitação, definindo as especificações da pesquisa.
 
-Essa seção lista os casos de uso comuns do método de **consulta**, com base nas propriedades e parâmetros definidos no corpo da **consulta** [searchRequest](searchRequest.md).
+Essa seção lista os casos de uso comuns do método de **consulta**, com base nas propriedades e parâmetros definidos no corpo da **consulta** [searchRequest](searchrequest.md).
 
 As solicitações de pesquisa são executadas em nome do usuário. Os resultados da pesquisa têm escopo para impor o controle de acesso aplicado aos itens.  Por exemplo, no contexto de arquivos, as permissões em relação aos arquivos serão avaliadas como parte da solicitação de pesquisa. Os usuários não podem acessar mais itens em uma pesquisa do que eles poderiam obter de uma operação GET correspondente com as mesmas permissões e controle de acesso.
 
@@ -158,7 +158,7 @@ Para exemplos que mostram como usar verificações ortográficas, consulte [Soli
 
 A API de pesquisa permite renderizar resultados de pesquisa de [conectores](/microsoftsearch/connectors-overview), usando o layout de exibição ou modelo de resultado configurado pelo administrador de TI para cada conector. Os modelos de resultados são [Cartões Adaptáveis](https://adaptivecards.io/), que são uma combinação semanticamente significativa de layout e dados.
 
-Para obter o modelo de resultado em [searchresponse](searchresponse.md), você deve definir como **true** a propriedade **enableResultTemplate**, definida em [resultTemplateOptions](./resulttemplateoption.md), em [searchRequest](./searchrequest.md). A resposta inclui um **resultTemplateId** para cada [ocorrência de pesquisa](./searchhit.md), que mapeia para um dos layouts de exibição incluídos no dicionário **resultTemplates** incluído na resposta.
+Para obter o modelo de resultado no [searchResponse](searchresponse.md), você tem que definir **verdadeiro** o **enableResultTemplate** propriedade, definida no [resultTemplateOptions](./resulttemplateoption.md), em o [searchRequest](./searchrequest.md). A resposta inclui um **resultTemplateId** para cada [ocorrência de pesquisa](./searchhit.md), que mapeia para um dos layouts de exibição incluídos no dicionário **resultTemplates** incluído na resposta.
 
 Confira [Usar layout de exibição de pesquisa](/graph/search-concept-display-layout) para obter exemplos.
 

@@ -5,8 +5,13 @@ author: sureshja
 ms.localizationpriority: high
 ms.prod: applications
 doc_type: apiPageType
+ms.openlocfilehash: 933a7cd6f4cee0fdb0abdc78296eaac949824948
+ms.sourcegitcommit: 7deb4fad6acc69fd6bc02cd4e2f6774de5784c97
+ms.translationtype: HT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 02/18/2022
+ms.locfileid: "62894695"
 ---
-
 # <a name="get-serviceprincipal"></a>Obter um servicePrincipal
 
 Namespace: microsoft.graph
@@ -24,6 +29,9 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |Delegado (conta corporativa ou de estudante) | Application.Read.All, Directory.Read.All, Application.ReadWrite.All, Directory.ReadWrite.All, Directory.AccessAsUser.All    |
 |Delegado (conta pessoal da Microsoft) | Sem suporte.    |
 |Aplicativo | Application.Read.All, Directory.Read.All, Application.ReadWrite.OwnedBy, Application.ReadWrite.All, Directory.ReadWrite.All |
+
+> [!NOTE]
+> Uma entidade de serviço pode recuperar seus próprios detalhes de aplicativo e entidade de serviço sem receber nenhuma permissão de aplicativo.
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- { "blockType": "ignored" } -->
@@ -209,7 +217,7 @@ Atributo nº 4
 + Tipo de dados de atributo: cadeia de caracteres
 + Valor do atributo: `"Public"`
 
-Para obter atribuições de atributo de segurança personalizadas, a entidade de chamada deve receber a função Leitor de Atribuição de Atributo ou Administrador de Atribuição de Atributo e deve receber a permissão *CustomSecAttributeAssignment.Read.All* ou *CustomSecAttributeAssignment.ReadWrite.All*.
+Para obter atribuições do atributo de segurança personalizadas, a entidade de chamada deve receber a função Leitor de Atribuição de Atributo ou Administrador de Atribuição de Atributo e deve receber a permissão *CustomSecAttributeAssignment.Read.All* ou *CustomSecAttributeAssignment.ReadWrite.All*.
 
 #### <a name="request"></a>Solicitação
 
