@@ -1,16 +1,16 @@
 ---
 title: Tipo de recurso changeNotificationCollection
 description: Representa uma coleção de notificações de assinatura enviadas ao assinante.
-localization_priority: Normal
+ms.localizationpriority: medium
 author: Jumaodhiss
 doc_type: resourcePageType
 ms.prod: change-notifications
-ms.openlocfilehash: f2e634f8635927a1ac6f9be42f7de0971f7b1604
-ms.sourcegitcommit: 8ca598ac70647bf4f897361ee90d3aa31d2ecca5
+ms.openlocfilehash: 905a8364b650f4adfc8a634bb804ab0ceabf1132
+ms.sourcegitcommit: 77d2ab5018371f153d47cc1cd25f9dcbaca28a95
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "51469378"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63337037"
 ---
 # <a name="changenotificationcollection-resource-type"></a>Tipo de recurso changeNotificationCollection
 
@@ -30,7 +30,7 @@ Nenhum.
 
 | Propriedade | Tipo | Descrição |
 |:---------|:-----|:------------|
-| validationTokens | collection(string) | Contém uma matriz de tokens JWT gerados pelo Microsoft Graph para o aplicativo validar a origem das notificações. O Microsoft Graph gera um único token para cada par de aplicativos e locatários distintos para um item se ele existir na matriz de valores. Lembre-se de que as notificações podem conter uma combinação de itens para vários aplicativos e locatários que assinaram usando a mesma URL de notificação. Fornecido apenas para [notificações de alteração com dados de recurso](/graph/webhooks-with-resource-data.md) Opcional. |
+| validationTokens | collection(string) | Contém uma matriz de tokens JWT gerados pela Microsoft Graph para o aplicativo validar a origem das notificações. O Microsoft Graph gera um único token para cada par de aplicativos e locatários distintos para um item se ele existir na matriz de valores. Lembre-se de que as notificações podem conter uma combinação de itens para vários aplicativos e locatários que assinaram usando a mesma URL de notificação. Fornecido apenas para [notificações de alteração com dados de recurso](/graph/webhooks-with-resource-data.md) Opcional. |
 | valor | collection([changeNotification](changenotification.md)) | O conjunto de notificações que está sendo enviado para a URL de notificação. Obrigatório. |
 
 ## <a name="relationships"></a>Relações
@@ -48,12 +48,16 @@ Veja a seguir uma representação JSON do recurso.
   ],
   "@odata.type": "microsoft.graph.changeNotificationCollection"
 }-->
-
-```json
+``` json
 {
-  "value": [],
+  "@odata.type": "#microsoft.graph.changeNotificationCollection",
   "validationTokens": [
-    "eyJ0eXAiOiJKV1QiLCJhbGciOiJSU..."
+    "String"
+  ],
+  "value": [
+    {
+      "@odata.type": "microsoft.graph.changeNotification"
+    }
   ]
 }
 ```

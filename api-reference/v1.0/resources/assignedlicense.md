@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: jpettere
 ms.prod: users
 doc_type: resourcePageType
-ms.openlocfilehash: 8c635f863eda10ece261a722f3bc5ae31871799b
-ms.sourcegitcommit: 6968f5aaf40089684efb0c38a95f6cca353c1d92
+ms.openlocfilehash: e1411c40b6c85b5b0a60fb45e1adcc2ad42d0c48
+ms.sourcegitcommit: 77d2ab5018371f153d47cc1cd25f9dcbaca28a95
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/16/2022
-ms.locfileid: "62854913"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63337156"
 ---
 # <a name="assignedlicense-resource-type"></a>Tipo de recurso assignedLicense
 
@@ -21,8 +21,8 @@ Representa uma licença atribuída a um usuário. A propriedade **assignedLicens
 ## <a name="properties"></a>Propriedades
 | Propriedade     | Tipo   |Descrição|
 |:---------------|:--------|:----------|
-|disabledPlans|Coleção GUID|Uma coleção dos identificadores exclusivos de planos que foram desabilitados.|
-|skuId|GUID|O identificador exclusivo da SKU.|
+|disabledPlans|Coleção de GUIDs|Uma coleção dos identificadores exclusivos de planos que foram desabilitados.|
+|skuId|Guid|O identificador exclusivo da SKU.|
 
 ## <a name="json-representation"></a>Representação JSON
 
@@ -38,8 +38,8 @@ Veja a seguir uma representação JSON do recurso
 
 ```json
 {
-  "disabledPlans": ["GUID"],
-  "skuId": "GUID"
+  "disabledPlans": ["Guid"],
+  "skuId": "Guid"
 }
 
 ```

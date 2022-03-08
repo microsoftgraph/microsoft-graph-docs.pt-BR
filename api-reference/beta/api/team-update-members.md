@@ -5,12 +5,12 @@ author: akjo
 doc_type: apiPageType
 ms.localizationpriority: medium
 ms.prod: microsoft-teams
-ms.openlocfilehash: a2e83999bcaf9754d7d0f48399453c5659a63227
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: 37ec2434d7627fd4762f0e76ef853b4756107152
+ms.sourcegitcommit: 77d2ab5018371f153d47cc1cd25f9dcbaca28a95
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62129376"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63331907"
 ---
 # <a name="update-member-in-team"></a>Atualizar membro na equipe
 
@@ -18,7 +18,10 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Atualize a função de [um conversationMember](../resources/conversationmember.md) em uma [equipe.](../resources/team.md)
+Atualize a função de [um conversationMember](../resources/conversationmember.md) em uma [equipe](../resources/team.md).
+
+> [!NOTE]
+> Membros da equipe com a função de `guest` não podem receber a função de `owner`.
 
 ## <a name="permissions"></a>Permissões
 
@@ -49,11 +52,11 @@ No corpo da solicitação, fornece os valores para que os campos relevantes atua
 
 | Propriedade   | Tipo |Descrição|
 |:---------------|:--------|:----------|
-|funções|coleção de cadeias de caracteres|A função do usuário. Deve estar `owner` ou vazio. Os usuários convidados são automaticamente carimbados `guest` com a função e esse valor não pode ser atualizado. |
+|funções|coleção de cadeias de caracteres|A função do usuário. Deve estar `owner` ou vazio. Os usuários convidados são automaticamente carimbados com `guest` a função e esse valor não pode ser atualizado. |
 
 ## <a name="response"></a>Resposta
 
-Se tiver êxito, este método retornará um código de resposta e um `200 OK` [objeto conversationMember](../resources/conversationmember.md) atualizado no corpo da resposta.
+Se tiver êxito, este método retornará um `200 OK` código de resposta e um [objeto conversationMember](../resources/conversationmember.md) atualizado no corpo da resposta.
 
 ## <a name="example"></a>Exemplo
 

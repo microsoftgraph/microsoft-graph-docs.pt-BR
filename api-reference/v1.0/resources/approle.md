@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 doc_type: resourcePageType
 ms.prod: applications
 author: psignoret
-ms.openlocfilehash: a5298eedfd5476e3aa6cb92e959f2f0822e4091e
-ms.sourcegitcommit: 6968f5aaf40089684efb0c38a95f6cca353c1d92
+ms.openlocfilehash: 8c9dfccaa9d41b78271f48119f3e23763232d0a6
+ms.sourcegitcommit: 77d2ab5018371f153d47cc1cd25f9dcbaca28a95
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/16/2022
-ms.locfileid: "62854682"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63337163"
 ---
 # <a name="approle-resource-type"></a>Tipo de recurso appRole
 
@@ -26,10 +26,10 @@ Com [appRoleAssignments](approleassignment.md), as funções do aplicativo podem
 
 | Propriedade   | Tipo |Descrição|
 |:---------------|:--------|:----------|
-|allowedMemberTypes|String collection|Especifica se essa função de aplicativo pode ser atribuída a usuários e grupos ( `["User"]`definindo como ), para outro aplicativo ( `["Application"]`definindo como , ou ambos (definindo como `["User", "Application"]`). Funções de aplicativo que suportam a atribuição a entidades de serviço de outros aplicativos também são [conhecidas como permissões de aplicativo](/graph/auth/auth-concepts#microsoft-graph-permissions). O valor "Application" só é suportado para funções de aplicativo definidas em **entidades de** aplicativo.|
+|allowedMemberTypes|Coleção de cadeias de caracteres|Especifica se essa função de aplicativo pode ser atribuída a usuários e grupos ( `["User"]`definindo como ), para outro aplicativo ( `["Application"]`definindo como , ou ambos (definindo como `["User", "Application"]`). Funções de aplicativo que suportam a atribuição a entidades de serviço de outros aplicativos também são [conhecidas como permissões de aplicativo](/graph/auth/auth-concepts#microsoft-graph-permissions). O valor "Application" só é suportado para funções de aplicativo definidas em **entidades de** aplicativo.|
 |descrição|String|A descrição da função de aplicativo. Isso é exibido quando a função do aplicativo está sendo atribuída e, se a função do aplicativo funcionar como uma permissão de aplicativo, durante experiências de consentimento.|
 |displayName|String|Nome de exibição para a permissão que aparece na atribuição de função de aplicativo e experiências de consentimento.|
-|id|GUID|Identificador de função exclusivo dentro da **coleção appRoles** . Ao criar uma nova função de aplicativo, um novo identificador GUID deve ser fornecido. |
+|id|Guid|Identificador de função exclusivo dentro da **coleção appRoles** . Ao criar uma nova função de aplicativo, um novo identificador GUID deve ser fornecido. |
 |isEnabled|Booliano|Ao criar ou atualizar uma função de aplicativo, isso deve ser definido como **true** (que é o padrão). Para excluir uma função, isso deve ser definido primeiro como **false**.  Nesse ponto, em uma chamada subsequente, essa função pode ser removida.|
 |origin|String| Especifica se a função de aplicativo é definida no objeto [application](application.md) ou na [entidade servicePrincipal](serviceprincipal.md) . Não _deve_ ser incluído em nenhuma solicitação POST ou PATCH. Somente leitura. |
 |value|Cadeia de caracteres|Especifica o valor a ser incluído na `roles` declaração em tokens de ID e tokens de acesso autenticando um usuário ou entidade de serviço atribuído. Não deve exceder 120 caracteres de comprimento. Os caracteres permitidos `:` <code>&#96;</code> `]` `@` `^` `'` `&` `(` `%` `$` `#` `!` <code>&gt;</code> `?` `[` `;` `~`<code>&lt;</code> `}` `+` `*` `,` `/` `.` `)` `:` <code>&#124;</code> `+` `-` `{` `=` `_` são , bem como caracteres nos intervalos `0-9`e . `A-Z` `a-z` Qualquer outro caractere, incluindo o caractere de espaço, não é permitido. Pode não começar com `.`. |
@@ -51,7 +51,7 @@ Veja a seguir uma representação JSON do recurso.
   "allowedMemberTypes": ["String"],
   "description": "String",
   "displayName": "String",
-  "id": "GUID",
+  "id": "Guid",
   "isEnabled": true,
   "origin": "String",
   "value": "String"

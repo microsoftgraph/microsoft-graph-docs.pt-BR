@@ -1,20 +1,18 @@
 ---
 description: Arquivo gerado automaticamente. NÃO MODIFICAR
-ms.openlocfilehash: c2daee41ab49679a8848335a128358cd00b6f067
+ms.openlocfilehash: 79e4f694de0a7cfff7ad85a2ee52c9565103993e
 ms.sourcegitcommit: 77d2ab5018371f153d47cc1cd25f9dcbaca28a95
-ms.translationtype: HT
+ms.translationtype: MT
 ms.contentlocale: pt-BR
 ms.lasthandoff: 03/08/2022
-ms.locfileid: "63351118"
+ms.locfileid: "63337352"
 ---
 ```csharp
 
 GraphServiceClient graphClient = new GraphServiceClient( authProvider );
 
-var installedApps = await graphClient.Chats["{chat-id}"].InstalledApps
+var riskyServicePrincipals = await graphClient.IdentityProtection.RiskyServicePrincipals
     .Request()
-    .Filter("teamsApp/externalId eq 'cf1ba4c7-f94e-4d80-ba90-5594b641a8ee'")
-    .Expand("teamsApp,teamsAppDefinition")
     .GetAsync();
 
 ```

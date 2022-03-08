@@ -4,12 +4,12 @@ description: O Microsoft Graph usa um mecanismo de webhook para fornecer notific
 author: Jumaodhiss
 ms.prod: non-product-specific
 ms.localizationpriority: high
-ms.openlocfilehash: 3a8d812aa344ae2a6fe43129c41f6786fad58ad8
-ms.sourcegitcommit: f336c5c49fbcebe55312656aa8b50511fd99a657
+ms.openlocfilehash: d13db88f179bbce58a6d45fa567b507199fa95f8
+ms.sourcegitcommit: 77d2ab5018371f153d47cc1cd25f9dcbaca28a95
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/09/2021
-ms.locfileid: "61390966"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63337058"
 ---
 # <a name="set-up-change-notifications-that-include-resource-data"></a>Configurar notificações de alteração que incluam dados de recurso
 
@@ -17,7 +17,7 @@ O Microsoft Graph permite que os aplicativos inscrevam-se para alterar as notifi
 
 A inclusão de dados de recursos como parte das notificações de alteração exige que, para atender aos requisitos de acesso e segurança de dados, você implemente a seguinte lógica adicional : 
 
-- [Lide com](webhooks-lifecycle.md#responding-to-reauthorizationrequired-notifications)) as notificações especiais sobre o ciclo de vida da assinatura (visualização) para manter um fluxo ininterrupto de dados. O Microsoft Graph envia notificações sobre o ciclo de vida de tempos em tempos para exigir que um aplicativo seja autorizado novamente e para garantir que os problemas de acesso não ocorram inesperadamente, incluindo dados de recursos nas notificações de alterações.
+- [Lide](webhooks-lifecycle.md#responding-to-reauthorizationrequired-notifications) com notificações de ciclo de vida de assinatura especial para manter um fluxo ininterrupto de dados. O Microsoft Graph envia notificações sobre o ciclo de vida de tempos em tempos para exigir que um aplicativo seja autorizado novamente e para garantir que os problemas de acesso não ocorram inesperadamente, incluindo dados de recursos nas notificações de alterações.
 - [Confirme](#validating-the-authenticity-of-notifications) a autenticidade das notificações de alteração como originárias do Microsoft Graph.
 - [Forneça](#decrypting-resource-data-from-change-notifications) uma chave de criptografia pública e utilize uma chave privada para decriptar os dados de recursos recebidos por meio das notificações de alteração.
 
@@ -32,17 +32,27 @@ Geralmente, esse tipo de notificação de alteração inclui os seguintes dados 
 
 ## <a name="supported-resources"></a>Recursos com suporte
 
-Atualmente, o [chatMessage](/graph/api/resources/chatmessage) do Microsoft Teams, bem como os recursos de [presença](/graph/api/resources/presence) do Microsoft Teams, oferecem suporte a notificações de alteração que incluem dados de recursos. Especificamente, você pode configurar uma assinatura que se aplique a uma das seguintes opções:
+Os recursos do Microsoft Teams [chatMessage](/graph/api/resources/chatmessage) e [presença](/graph/api/resources/presence)suportam notificações de alteração com dados de recursos. Os [outlook](/graph/api/resources/contact.md), [eventos](/graph/api/resources/event.md), [mensagem](/graph/api/resources/message.md) recursos têm suporte semelhante _na visualização_. Especificamente, você pode configurar uma assinatura para os casos de uso listados abaixo.
 
+Disponível nos pontos de extremidade v1.0 e beta:
 - Mensagens novas ou alteradas em um canal específico do Teams: `/teams/{id}/channels/{id}/messages`
 - Mensagens novas ou alteradas em todos os canais do Teams em toda a organização (locatário): `/teams/getAllMessages`
 - Mensagens novas ou alteradas em um bate-papo específico do Teams: `/chats/{id}/messages`
 - Mensagens novas ou alteradas em todos os bate-papos em toda a organização (locatário): `/chats/getAllMessages`
 - Atualização das informações de presença do usuário: `/communications/presences/{id}`
 
-Os recursos **chatMessage** e **presence** suportam, incluindo todas as propriedades de uma instância modificada em uma notificação de alteração. Eles não suportam o retorno de apenas propriedades seletivas da instância. 
+Disponível apenas no ponto de extremidade beta:
+- Contatos pessoais novos ou alterados na caixa de correio de um usuário: `/users/{id}/contacts`
+- Contatos pessoais novos ou alterados no contactFolder de um usuário: `/users/{id}/contactFolders/{id}/contacts`
+- Eventos novos ou alterados na caixa de correio de um usuário: `/users/{id}/events`
+- Mensagens novas ou alteradas na caixa de correio de um usuário: `/users/{id}/messages`
+- Mensagens novas ou alteradas na mailFolder de um usuário: `/users/{id}/mailFolders/{id}/messages`
 
-Este artigo mostra um exemplo de assinatura para alterar as notificações de mensagens em um canal do Teams, com cada notificação de alteração incluindo todos os dados do recurso da instância **chatMessage** alterada. Para obter mais detalhes sobre assinaturas baseadas em **chatMessage**, confira [Obter notificações de alteração para mensagens de chat e canal](teams-changenotifications-chatmessage.md).
+As notificações de alteração que incluem **chatMessage** ou dados de recursos de **presença** consistem em todas as propriedades da instância alterada. Eles não dão suporte ao retorno apenas das propriedades selecionadas da instância. 
+
+As notificações de alteração para os recursos **contato**, **evento**, ou de **mensagem** incluem apenas um subconjunto de propriedades para o recurso, que deve ser especificado na solicitação de assinatura correspondente usando um parâmetro de consulta `$select`. Para obter mais informações e um exemplo de assinatura para alterar notificações com dados de recurso para o recurso de **mensagem**, consulte [Alterar notificações para Outlook recursos no Microsoft Graph](outlook-change-notifications-overview.md). 
+
+O restante deste artigo explica um exemplo para assinar notificações de alteração para recursos **chatMessage** em um canal do Teams, com cada notificação de alteração, incluindo os dados completos de recursos da instância **chatMessage** alterada. Para obter mais detalhes sobre assinaturas baseadas em **chatMessage**, confira [Obter notificações de alteração para mensagens de chat e canal](teams-changenotifications-chatmessage.md).
 
 ## <a name="creating-a-subscription"></a>Criar uma assinatura
 
@@ -54,7 +64,7 @@ Para que os dados de recursos estejam incluídos nas notificações de alteraç�
 
 Lembre-se do seguinte:
 
-- Valide ambos os pontos de extremidade conforme descrito em [Validação de ponto de extremidade de notificação](webhooks.md#notification-endpoint-validation). Se você quiser usar a mesma URL para os dois pontos de extremidade, você receberá e responderá a duas solicitações de validação.
+- Valide os dois pontos de extremidade conforme descrito em [validação de ponto de extremidade de notificação](webhooks.md#notification-endpoint-validation). Se você optar por usar a mesma URL para ambos os pontos de extremidade, receberá e responderá a duas solicitações de validação.
 
 ### <a name="subscription-request-example"></a>Exemplo de solicitação de assinatura
 
@@ -91,11 +101,11 @@ Content-Type: application/json
 }
 ```
 
-## <a name="subscription-lifecycle-notifications-preview"></a>Notificações do ciclo de vida da assinatura (visualização)
+## <a name="subscription-lifecycle-notifications"></a>Notificações do ciclo de vida da assinatura
 
 Certos eventos podem interferir no fluxo de notificação de alterações em uma assinatura existente. As notificações sobre o ciclo de vida da assinatura informam as ações a serem tomadas para manter um fluxo ininterrupto. Ao contrário de uma notificação de alteração de recurso que informa uma alteração em uma instância de recurso, uma notificação do ciclo de vida é sobre a própria assinatura e seu estado atual no ciclo de vida. 
 
-Para obter mais informações sobre como receber e responder a, notificações de ciclo de vida (visualização), confira [Reduzir assinaturas ausentes e alterar as notificações (visualização)](webhooks-lifecycle.md)
+Para obter mais informações sobre como receber e responder a notificações de ciclo de vida, consulte [Reduzir assinaturas ausentes e notificações de alteração)](webhooks-lifecycle.md)
 
 ## <a name="validating-the-authenticity-of-notifications"></a>Validando a autenticidade das notificações
 
@@ -115,7 +125,7 @@ Nesta seção:
 
 Uma notificação de alteração com os dados do recurso contém uma propriedade adicional, **validationTokens**, com uma matriz de tokens JWT gerados pelo Microsoft Graph. O Microsoft Graph gera um token único para cada aplicativo distinto e um par de locatários onde existe um item no conunto **valor**. Tenha em mente que as notificações de alterações podem conter uma mistura de itens para vários aplicativos e locatários que fizeram assinatura usando o mesmo **notificationUrl**.
 
-> **Nota:** Se você estiver configurando [notificações de alteração entregues através dos Hubs de Eventos do Azure](change-notifications-delivery.md), o Microsoft Graph não enviará os tokens de validação. Microsoft Graph não precisa validar o **notificationUrl**.
+> **Observação:** se você estiver configurando notificações de alteração [entregues por meio do Hubs de Eventos do Azure](change-notifications-delivery.md), o Microsoft Graph não enviará os tokens de validação. Microsoft Graph não precisa validar o **notificationUrl**.
 
 
 No exemplo a seguir, a notificação de alteração contém dois itens para o mesmo aplicativo e para dois locatários diferentes, portanto, o conjunto **validationTokens** contém dois tokens que precisam ser validados.
@@ -393,7 +403,7 @@ Para decriptar os dados de recursos, o seu aplicativo deve executar as etapas in
 
 4. Use a chave simétrica para calcular a assinatura HMAC-SHA256 do valor em **dados**.
   
-    Compare-o com o valor em **dataSignature**. Se eles não corresponderem, considere que a carga foi adulterada e não a descriptografe.
+    Compare-o com o valor **dataSignature**. Se eles não corresponderem, suponha que a carga foi violada e não a descriptografe.
 
 5. Use a chave simétrica com a criptografia AES (como o .NET [AesCryptoServiceProvider](/dotnet/api/system.security.cryptography.aescryptoserviceprovider?view=netframework-4.8&preserve-view=true)) para descriptografar o conteúdo em **dados**.
 
@@ -408,7 +418,7 @@ Para decriptar os dados de recursos, o seu aplicativo deve executar as etapas in
 
 ### <a name="example-decrypting-a-notification-with-encrypted-resource-data"></a>Exemplo: decriptando uma notificação com dados de recurso criptografados
 
-A seguir, é apresentado um exemplo de notificação de alteração que inclui valores de propriedade criptografados de uma **chatMessage** instância em uma mensagem de canal. A instância é especificada pelo `@odata.id` valor.
+A seguir está um exemplo de notificação de alteração que inclui valores de propriedade criptografados de uma instância **chatMessage** em uma mensagem de canal. A instância é especificada pelo valor `@odata.id`.
 
 ```json
 {
@@ -587,3 +597,4 @@ decryptedPayload += decipher.final('utf8');
 - [Obter assinatura](/graph/api/subscription-get)
 - [Criar assinatura](/graph/api/subscription-post-subscriptions)
 - [Atualizar assinatura](/graph/api/subscription-update)
+- [Alterar notificações para recursos do Outlook no Microsoft Graph](outlook-change-notifications-overview.md)

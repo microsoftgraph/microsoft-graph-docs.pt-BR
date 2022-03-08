@@ -5,12 +5,12 @@ ms.localizationpriority: high
 author: jpettere
 ms.prod: users
 doc_type: apiPageType
-ms.openlocfilehash: 62542da816755ddbdc8f1f42d843520e1cc1ba11
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: 0760053904beb361518f78ddbed7d5ea99b63141
+ms.sourcegitcommit: 77d2ab5018371f153d47cc1cd25f9dcbaca28a95
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62107381"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63336680"
 ---
 # <a name="list-manager"></a>Listar gerente
 
@@ -53,14 +53,14 @@ Este método oferece suporte aos parâmetros de consulta `$select` e `$expand`[O
 >**Observação:** 
 > + O valor `n` de `$levels` pode ser `max` (para retornar todos os gerentes) ou um número entre 1 e 1000.  
 > + Quando o `$levels` parâmetro não for especificado, apenas o gerente imediato será retornado.  
-> + Você pode especificar `$select` dentro de `$expand` para selecionar as propriedades do gerente individual. O parâmetro `$levels` é necessário: `$expand=manager($levels=max;$select=id,displayName)`.
+> + Você pode especificar `$select` dentro `$expand` para selecionar as propriedades dos gerentes individuais. O parâmetro `$levels` é necessário: `$expand=manager($levels=max;$select=id,displayName)`.
 
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
 
 | Cabeçalho       | Valor|
 |:-----------|:------|
 | Autorização  | {token} de portador. Obrigatório.  |
-| ConsistencyLevel | eventualmente. Obrigatório quando a solicitação inclui a cadeia de caracteres de consulta `$count=true`. |
+| ConsistencyLevel | eventual. Obrigatório quando a solicitação inclui a cadeia de caracteres de consulta `$count=true`. |
 
 ## <a name="request-body"></a>Corpo da solicitação
 
@@ -158,6 +158,22 @@ ConsistencyLevel: eventual
 
 # <a name="powershell"></a>[PowerShell](#tab/powershell)
 [!INCLUDE [sample-code](../includes/snippets/powershell/get-transitive-managers-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="c"></a>[C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/get-transitive-managers-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/get-transitive-managers-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/get-transitive-managers-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/get-transitive-managers-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

@@ -5,12 +5,12 @@ ms.localizationpriority: high
 author: sureshja
 ms.prod: applications
 doc_type: resourcePageType
-ms.openlocfilehash: a62290e52b681e6b029d24d87135a80454839a1c
-ms.sourcegitcommit: 71186ad44d8d0df15e10b0f89df68d2ef0cf9d14
+ms.openlocfilehash: 04f8f16b6c83c97708a2e56cc77474f24b075274
+ms.sourcegitcommit: 77d2ab5018371f153d47cc1cd25f9dcbaca28a95
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/12/2022
-ms.locfileid: "61860028"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63333663"
 ---
 # <a name="application-resource-type"></a>tipo de recurso do aplicativo
 
@@ -41,9 +41,10 @@ Esse recurso tem suporte para o uso da [consulta delta](/graph/delta-query-overv
 |[Adicionar chave](../api/application-addkey.md)|[keyCredential](keycredential.md)|Adicione uma credencial de chave a um aplicativo.|
 |[Remover chave](../api/application-removekey.md)|Nenhum(a)|Remova uma credencial de chave de um aplicativo.|
 |**Extensões**| | |
-| [Listar extensões](../api/application-list-extensionproperty.md) | Coleção [extensionProperty](extensionProperty.md) | Listar propriedades de extensão em um objeto de aplicativo. |
-| [Criar extensão](../api/application-post-extensionproperty.md) | [extensionProperty](extensionProperty.md) | Criar uma propriedade de extensão em um objeto de aplicativo. |
-| [Excluir extensão](../api/application-delete-extensionproperty.md) | Nenhum | Excluir uma propriedade de extensão de um objeto de aplicativo. |
+| [Listar extensionProperties](../api/application-list-extensionproperty.md) | Coleção [extensionProperty](extensionProperty.md) | Listar propriedades de extensão em um objeto de aplicativo. |
+| [Criar extensionProperties](../api/application-post-extensionproperty.md) | [extensionProperty](extensionProperty.md) | Criar uma propriedade de extensão em um objeto de aplicativo. |
+| [Obter extensionProperty](../api/extensionproperty-delete.md) | Nenhum | Obter uma propriedade de extensão de um objeto de aplicativo. |
+| [Excluir extensionProperty](../api/extensionproperty-delete.md) | Nenhum | Excluir uma propriedade de extensão de um objeto de aplicativo. |
 |[Obtenha as propriedades de extensão disponíveis](../api/directoryobject-getavailableextensionproperties.md)|Coleção [extensionProperty](../resources/extensionproperty.md)|Obtenha todas as listas ou uma lista filtrada das propriedades de extensão do diretório que foram registradas em um diretório.|
 |**Owners**| | |
 |[Listar proprietários](../api/application-list-owners.md) |Coleção [directoryObject](directoryobject.md)| Obtenha uma coleção de objetos owner.|
@@ -97,7 +98,7 @@ Esse recurso tem suporte para o uso da [consulta delta](/graph/delta-query-overv
 | spa                     | [spaApplication](../resources/spaapplication.md)                            | Especifica as configurações de um aplicativo de página simples, incluindo URLs de saída e de redirecionamento de URIs para os códigos de autorização e tokens de acesso. |
 | categorias |Coleção String| Cadeias de caracteres personalizadas que podem ser usadas para categorizar e identificar o aplicativo. Não anulada.<br><br>Suporta `$filter` (`eq`, `not`, `ge`, `le`, `startsWith`).|
 | tokenEncryptionKeyId |Cadeia de caracteres|Especifica a keyId de uma chave pública da coleção keyCredentials. Quando configurado, o Azure AD criptografa todos os tokens emitidos usando a chave para a qual essa propriedade aponta. O código de aplicativo que recebe o token criptografado deve usar a chave privada correspondente para descriptografar o token a fim de que ele possa ser usado para o usuário conectado.|
-| verifiedPublisher          | [verifiedPublisher](verifiedPublisher.md)                            | Especifica o fornecedor verificado para o aplicativo. Para obter mais informações sobre como a verificação do editor ajuda a dar suporte à segurança, confiabilidade e conformidade do aplicativo, confira [verificação do Publisher](/azure/active-directory/develop/publisher-verification-overview).|
+| verifiedPublisher          | [verifiedPublisher](verifiedPublisher.md)                            | Especifica o editor verificado do aplicativo. Para obter mais informações sobre como a verificação do editor ajuda a dar suporte à segurança, confiabilidade e conformidade do aplicativo, consulte [Verificação do fornecedor](/azure/active-directory/develop/publisher-verification-overview).|
 | web |[webApplication](webapplication.md)| Especifica configurações para um aplicativo Web. |
 
 ### <a name="signinaudience-values"></a>signInAudience values

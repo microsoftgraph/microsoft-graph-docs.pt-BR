@@ -5,12 +5,12 @@ author: dkershaw10
 ms.localizationpriority: medium
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: d007512113ab46b25714942f93002936c97fe083
-ms.sourcegitcommit: 6968f5aaf40089684efb0c38a95f6cca353c1d92
+ms.openlocfilehash: 6645da51b2f292d787c277096465b0a4b65e0347
+ms.sourcegitcommit: 77d2ab5018371f153d47cc1cd25f9dcbaca28a95
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/16/2022
-ms.locfileid: "62854547"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63331864"
 ---
 # <a name="activateservice-resource-type"></a>Tipo de recurso activateService
 
@@ -25,8 +25,8 @@ Representa um serviço a ser ativado.
 | Propriedade         | Tipo         | Descrição                           |
 | ----------------- | ------------ | ------------------------------------- |
 | service| Cadeia de caracteres | O nome do serviço a ser ativado. |
-| servicePlanId | GUID | O identificador de plano do plano de serviço a ser ativado. |
-| skuId | GUID | O identificador SKU do plano de serviço. |
+| servicePlanId | Guid | O identificador de plano do plano de serviço a ser ativado. |
+| skuId | Guid | O identificador SKU do plano de serviço. |
 
 ## <a name="json-representation"></a>Representação JSON
 
@@ -43,8 +43,8 @@ Veja a seguir uma representação JSON do recurso.
 ```json
 {
     "service": "String",
-    "skuId": "GUID",
-    "servicePlanId": "GUID"
+    "skuId": "Guid",
+    "servicePlanId": "Guid"
 }
 
 ```

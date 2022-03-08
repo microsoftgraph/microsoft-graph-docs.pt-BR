@@ -1,17 +1,17 @@
 ---
-title: 'Tutorial: Use a API Privileged Identity Management (PIM) para atribuir funções do Azure AD'
+title: 'Tutorial: use a API Privileged Identity Management (PIM) para atribuir funções do Azure AD'
 description: Saiba como usar a API Privileged Identity Management (PIM) no Microsoft Graph para atribuir funções privilegiadas do Azure AD.
 author: FaithOmbongi
 ms.localizationpriority: medium
 ms.prod: governance
-ms.openlocfilehash: 9f706b6c8a39548fb65dcb46e83845b51fd9af21
-ms.sourcegitcommit: 08e9b0bac39c1b1d2c8a79539d24aaa93364baf2
+ms.openlocfilehash: 8a30d6d4640ea6c84801e1db0325c1f79c8e9b08
+ms.sourcegitcommit: 77d2ab5018371f153d47cc1cd25f9dcbaca28a95
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/24/2021
-ms.locfileid: "59777293"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63337331"
 ---
-# <a name="tutorial-use-the-privileged-identity-management-pim-api-to-assign-azure-ad-roles"></a>Tutorial: Use a API Privileged Identity Management (PIM) para atribuir funções do Azure AD
+# <a name="tutorial-use-the-privileged-identity-management-pim-api-to-assign-azure-ad-roles"></a>Tutorial: use a API Privileged Identity Management (PIM) para atribuir funções do Azure AD
 
 A API Graph PIM da Microsoft permite que as organizações gerenciem o acesso privilegiado aos recursos no Azure Active Directory (Azure AD). Ele também ajuda a gerenciar os riscos de acesso privilegiado limitando quando o acesso está ativo, gerenciando o escopo de acesso e fornecendo um log auditável de acesso privilegiado.
 
@@ -34,7 +34,7 @@ Para concluir este tutorial, você precisa dos seguintes recursos e privilégios
 + Um locatário do Azure AD funcionando com uma licença Azure AD Premium P2 ou EMS E5 habilitada.
 + Entre no Graph [Explorer](https://developer.microsoft.com/graph/graph-explorer) como usuário em uma função de Administrador Global.
   + [Opcional] Inicie uma nova sessão de navegador incógnita ou InPrivate ou inicie uma sessão em um navegador anônimo. Você entrará mais tarde neste tutorial.
-+ As seguintes permissões delegadas: `User.ReadWrite.All` , , , e e `Group.ReadWrite.All` `Directory.Read.All` `RoleEligibilitySchedule.ReadWrite.Directory` `RoleAssignmentSchedule.ReadWrite.Directory` `RoleManagement.ReadWrite.Directory` .
++ As seguintes permissões delegadas: `User.ReadWrite.All`, `Group.ReadWrite.All`, `Directory.Read.All`, `RoleEligibilitySchedule.ReadWrite.Directory`e `RoleAssignmentSchedule.ReadWrite.Directory`e `RoleManagement.ReadWrite.Directory`.
 + Authenticator aplicativo instalado em seu telefone para registrar um usuário para autenticação multifator (MFA).
 
 Para consentir com as permissões necessárias no Graph Explorer:
@@ -50,13 +50,13 @@ Para consentir com as permissões necessárias no Graph Explorer:
     + RoleManagement (3), expanda e selecione **RoleManagement.ReadWrite.Directory**.
     + Usuário (8), expanda e selecione **User.ReadWrite.All**.
    
-   Selecione **Consentimento** e, em seguida, selecione **Aceitar** para aceitar o consentimento das permissões. Para as `RoleEligibilitySchedule.ReadWrite.Directory` permissões `RoleAssignmentSchedule.ReadWrite.All` e, consentir em nome de sua organização.
+   Selecione **Consentimento** e, em seguida, selecione **Aceitar** para aceitar o consentimento das permissões. Para as `RoleEligibilitySchedule.ReadWrite.Directory` permissões e `RoleAssignmentSchedule.ReadWrite.All` , consentir em nome de sua organização.
 
       :::image type="content" source="/graph/images/GE-Permissions/User.ReadWrite.All-consent.png" alt-text="Consentimento para permissões Graph Microsoft." border="true":::
 
 ## <a name="step-1-create-a-test-user"></a>Etapa 1: Criar um usuário de teste
 
-Crie um usuário que deve redefinir sua senha ao entrar primeiro. Nesta etapa, grave o valor da **id** do novo usuário para uso na próxima etapa. Depois de criar o usuário, visite o portal do Azure e habilita a autenticação multifator (MFA) para o usuário. Para obter mais informações sobre a habilitação do MFA, consulte [a seção Consulte também.](#see-also)
+Crie um usuário que deve redefinir sua senha ao entrar primeiro. Nesta etapa, grave o valor da **id** do novo usuário para uso na próxima etapa. Depois de criar o usuário, visite o portal do Azure e habilita a autenticação multifator (MFA) para o usuário. Para obter mais informações sobre a habilitação do MFA, consulte [a seção Consulte também](#see-also) .
 
 
 ### <a name="request"></a>Solicitação
@@ -107,7 +107,7 @@ Crie um grupo que pode ser atribuído a uma função do Azure AD. Atribua a si m
 
 ### <a name="request-create-a-role-assignable-group"></a>Solicitação: Criar um grupo atribuível à função
 
-Substitua `1ed8ac56-4827-4733-8f80-86adc2e67db5` pela **id**.
+Substitua `1ed8ac56-4827-4733-8f80-86adc2e67db5` por sua ID e `7146daa8-1b4b-4a66-b2f7-cf593d03c8d2` pelo valor da ID de Aline.
 
 <!-- {
   "blockType": "request",
@@ -126,6 +126,10 @@ Content-type: application/json
     "isAssignableToRole": true,
     "owners@odata.bind": [
         "https://graph.microsoft.com/v1.0/users/1ed8ac56-4827-4733-8f80-86adc2e67db5"
+    ],
+    "members@odata.bind": [
+        "https://graph.microsoft.com/v1.0/users/1ed8ac56-4827-4733-8f80-86adc2e67db5",
+        "https://graph.microsoft.com/v1.0/users/7146daa8-1b4b-4a66-b2f7-cf593d03c8d2"
     ]
 }
 ```
@@ -158,40 +162,6 @@ Content-type: application/json
 }
 ```
 
-### <a name="request"></a>Solicitação
-
-Atribua a si mesmo e a Aline como os dois membros ao grupo de segurança. Na solicitação a seguir, substitua:
-+ `e77cbb23-0ff2-4e18-819c-690f58269752`na URL com o valor da **id do grupo.**
-+ `7146daa8-1b4b-4a66-b2f7-cf593d03c8d2` com o valor da **id** de Aline.
-+ `1ed8ac56-4827-4733-8f80-86adc2e67db5` com o valor de **sua id**.
-
-<!-- {
-  "blockType": "request",
-  "name": "tutorial-assignaadroles-addGroupMembers"
-}-->
-```msgraph-interactive
-PATCH https://graph.microsoft.com/v1.0/groups/e77cbb23-0ff2-4e18-819c-690f58269752
-Content-type: application/json
-
-{
-    "members@odata.bind": [
-        "https://graph.microsoft.com/v1.0/users/1ed8ac56-4827-4733-8f80-86adc2e67db5",
-        "https://graph.microsoft.com/v1.0/users/7146daa8-1b4b-4a66-b2f7-cf593d03c8d2"
-    ]
-}
-```
-
-### <a name="response"></a>Resposta
-
-<!-- {
-  "blockType": "response",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.group"
-} -->
-```
-HTTP/1.1 204 No Content
-```
-
 ## <a name="step-3-create-a-unifiedroleeligibilityschedulerequest"></a>Etapa 3: Criar um unifiedRoleEligibilityScheduleRequest
 
 Agora que você tem um grupo de segurança, atribua-o como qualificado para a função de Administrador do Usuário. Nesta etapa:
@@ -201,7 +171,7 @@ Agora que você tem um grupo de segurança, atribua-o como qualificado para a fu
 
 ### <a name="request"></a>Solicitação
 
-Substitua `e77cbb23-0ff2-4e18-819c-690f58269752` pelo valor da **id do** grupo de segurança do Helpdesk de IT **(Usuário).** Essa **principalId** identifica o destinatário da qualificação para a função de Administrador do Usuário. A funçãoDefinitionId é o identificador de modelo global para a função administrador do usuário `fe930be7-5e62-47db-91af-98c3a49a38b1` no Azure AD.
+Substitua `e77cbb23-0ff2-4e18-819c-690f58269752` pelo valor da **id do** grupo de segurança **do Helpdesk de IT (Usuário** ). Essa **principalId** identifica o destinatário da qualificação para a função de Administrador do Usuário. A funçãoDefinitionId `fe930be7-5e62-47db-91af-98c3a49a38b1` é o identificador de modelo global para a função administrador do usuário no Azure AD.
 
 <!-- {
   "blockType": "request",
@@ -274,7 +244,7 @@ Embora os membros do grupo agora sejam qualificados para a função de Administr
 
 ### <a name="request"></a>Solicitação
 
-Na solicitação a seguir, `7146daa8-1b4b-4a66-b2f7-cf593d03c8d2` substitua pelo valor da id de **Aline.**
+Na solicitação a seguir, substitua `7146daa8-1b4b-4a66-b2f7-cf593d03c8d2` pelo valor da **id de Aline**.
 
 <!-- {
   "blockType": "request",
@@ -317,9 +287,9 @@ Depois de entrar, ative sua função de Administrador de Usuário por cinco hora
 
 ### <a name="request"></a>Solicitação
 
-Para ativar uma função, chame o `roleAssignmentScheduleRequests` ponto de extremidade. Nesta solicitação, a ação permite ativar sua atribuição qualificada, nesse `UserActivate` caso, por cinco horas.
+Para ativar uma função, chame o `roleAssignmentScheduleRequests` ponto de extremidade. Nesta solicitação, a `UserActivate` ação permite ativar sua atribuição qualificada, nesse caso, por cinco horas.
 
-+ Para **principalId,** fornece o valor da **id**(de Aline).
++ Para **principalId**, fornece o valor da **id** (de Aline).
 + A **funçãoDefinitionId** é a **id** da função que você está qualificado para, nesse caso, a função administrador do usuário.
 + Insira os detalhes do sistema de tíquetes que fornece uma justificativa auditável para ativar a solicitação.
 
@@ -396,7 +366,7 @@ Content-type: application/json
 }
 ```
 
-Você pode confirmar sua atribuição executando `GET https://graph.microsoft.com/beta/roleManagement/directory/roleAssignmentScheduleRequests/filterByCurrentUser(on='principal')` . O objeto response retorna sua atribuição de função recém-ativada com seu status definido como `Granted` . Com seu novo privilégio, realize todas as ações permitidas dentro de cinco horas em que sua atribuição está ativa. Isso inclui a invalidação dos tokens de atualização de todos os funcionários. Após cinco horas, a atribuição ativa expira, mas por meio de sua associação ao grupo de Suporte a TI **(Usuários),** você ainda permanece qualificado para a função de Administrador de Usuário.
+Você pode confirmar sua atribuição executando `GET https://graph.microsoft.com/beta/roleManagement/directory/roleAssignmentScheduleRequests/filterByCurrentUser(on='principal')`. O objeto response retorna sua atribuição de função recém-ativada com seu status definido como `Granted`. Com seu novo privilégio, realize todas as ações permitidas dentro de cinco horas em que sua atribuição está ativa. Isso inclui a invalidação dos tokens de atualização de todos os funcionários. Após cinco horas, a atribuição ativa expira, mas por meio de sua associação ao grupo de Suporte a TI **(Usuários** ), você ainda permanece qualificado para a função de Administrador de Usuário.
 
 De volta à sessão de administrador global, você recebeu notificações da atribuição qualificada e da ativação de função. Isso permite que o administrador global esteja ciente de todas as elevações aos privilégios de administrador em toda a sua organização.
 
@@ -477,7 +447,7 @@ HTTP/1.1 204 No Content
 
 #### <a name="request"></a>Solicitação
 
-Substitua `7146daa8-1b4b-4a66-b2f7-cf593d03c8d2` pelo valor da **id** de Aline.
+Substitua `7146daa8-1b4b-4a66-b2f7-cf593d03c8d2` pelo valor da **id de Aline**.
 
 <!-- {
   "blockType": "request",
