@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: Jordanndahl
 ms.prod: groups
 doc_type: resourcePageType
-ms.openlocfilehash: e50277f78cfff92a0329fe7b8198e18bed42fdd5
-ms.sourcegitcommit: 6968f5aaf40089684efb0c38a95f6cca353c1d92
+ms.openlocfilehash: 5c2e67fc0bf4b1347c40dcadae9a84208368d061
+ms.sourcegitcommit: 77d2ab5018371f153d47cc1cd25f9dcbaca28a95
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/16/2022
-ms.locfileid: "62854477"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63335637"
 ---
 # <a name="grouplifecyclepolicy-resource-type"></a>Tipo de recurso groupLifecyclePolicy
 
@@ -61,7 +61,7 @@ Veja a seguir uma representação JSON do recurso.
 {
   "alternateNotificationEmails": "String",
   "groupLifetimeInDays": 180,
-  "id": "GUID (identifier)",
+  "id": "String (identifier)",
   "managedGroupTypes": "String"
 }
 ```

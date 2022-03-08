@@ -5,12 +5,12 @@ author: AshleyYangSZ
 ms.localizationpriority: medium
 ms.prod: cloud-pc
 doc_type: apiPageType
-ms.openlocfilehash: 34ac23f83984aa685a0cca4699042bd0051ea574
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: b16ea1571cc59831cb4736429a6fe6286fa64ff7
+ms.sourcegitcommit: 77d2ab5018371f153d47cc1cd25f9dcbaca28a95
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62109227"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63335483"
 ---
 # <a name="update-cloudpcusersetting"></a>Atualizar cloudPcUserSetting
 
@@ -18,7 +18,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Atualize as propriedades de [um objeto cloudPcUserSetting.](../resources/cloudpcusersetting.md)
+Atualize as propriedades de [um objeto cloudPcUserSetting](../resources/cloudpcusersetting.md) .
 
 ## <a name="permissions"></a>Permissões
 
@@ -50,22 +50,23 @@ PATCH /deviceManagement/virtualEndpoint/provisioningPolicies/{id}
 
 ## <a name="request-body"></a>Corpo da solicitação
 
-No corpo da solicitação, fornece uma representação JSON do [objeto cloudPcUserSetting.](../resources/cloudpcusersetting.md)
+No corpo da solicitação, fornece uma representação JSON do [objeto cloudPcUserSetting](../resources/cloudpcusersetting.md) .
 
 A tabela a seguir mostra as propriedades que são necessárias ao atualizar [o cloudPcUserSetting](../resources/cloudpcusersetting.md).
 
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|displayName|Cadeia de caracteres|O nome da configuração exibido na interface do usuário.|
-|localAdminEnabled|Booliano|Para ativar a opção de administrador local, altere essa configuração para `True` .  |
-|selfServiceEnabled|Booliano|Para ativar a opção self-service, altere essa configuração para `True` . |
+|displayName|String|O nome da configuração exibido na interface do usuário.|
+|localAdminEnabled|Booliano|Para ativar a opção de administrador local, altere essa configuração para `True`.  |
+|selfServiceEnabled|Booliano|Para ativar a opção self-service, altere essa configuração para `True`. |
+|restorePointSetting|[cloudPcRestorePointSetting](../resources/cloudpcrestorepointsetting.md)|Define com que frequência um ponto de restauração é criado (ou seja, um instantâneo é feito) para os PCs de Nuvem provisionados dos usuários (o padrão é de 12 horas) e se o usuário tem permissão para restaurar seus próprios PCs de Nuvem para um backup feito em um ponto específico no tempo.|
 |lastModifiedDateTime|DateTimeOffset|A última data e hora em que a configuração foi modificada. O tipo Timestamp representa as informações de data e hora usando o formato ISO 8601 e está sempre em horário UTC. Por exemplo, meia-noite UTC em 1º de janeiro de 2014 tem esta aparência: '2014-01-01T00:00:00Z'. |
 
 
 
 ## <a name="response"></a>Resposta
 
-Se tiver êxito, este método retornará um código de resposta e um `200 OK` [objeto cloudPcUserSetting](../resources/cloudpcusersetting.md) atualizado no corpo da resposta.
+Se tiver êxito, este método retornará um `200 OK` código de resposta e um [objeto cloudPcUserSetting](../resources/cloudpcusersetting.md) atualizado no corpo da resposta.
 
 ## <a name="examples"></a>Exemplos
 
@@ -85,6 +86,10 @@ Content-Type: application/json
   "@odata.type": "#microsoft.graph.cloudPcUserSetting",
   "displayName": "Example",
   "selfServiceEnabled": true,
+  "restorePointSetting": {
+    "frequencyInHours": "16",
+    "userRestoreEnabled": true
+  },
   "localAdminEnabled": false
 }
 ```

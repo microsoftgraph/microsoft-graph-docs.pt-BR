@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: abhijeetsinha
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: 3b82cd234cb06271a8a95c82d5b8d2e626cebc8b
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: c0d2a061f25b6a5f56f0c4b989298b69fc5e0a51
+ms.sourcegitcommit: 77d2ab5018371f153d47cc1cd25f9dcbaca28a95
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62112052"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63335455"
 ---
 # <a name="list-unifiedroleassignments"></a>Listar unifiedRoleAssignments
 
@@ -67,12 +67,12 @@ GET /roleManagement/entitlementManagement/roleAssignments?$filter=principalId eq
 
 GET /roleManagement/entitlementManagement/roleAssignments?$filter=roleDefinitionId eq '{roleDefinition id}'
 
-GET /roleManagement/entitlementManagement/roleAssignments?$filter=appScopeId eq '/accessPackageCatalog/{catalog id}'
+GET /roleManagement/entitlementManagement/roleAssignments?$filter=appScopeId eq '/AccessPackageCatalog/{catalog id}'
 ```
 
 ## <a name="query-parameters"></a>Parâmetros de consulta
 
-Essa operação requer `$filter` o parâmetro de consulta. Você pode filtrar as `roleDefinitionId` propriedades `principalId` ou. A propriedade pode ser uma ID de objeto de função ou uma ID de objeto `roleDefinitionId` de modelo de função. O `$expand` parâmetro de consulta também é suportado na entidade **principal**. Para obter informações gerais, acesse [Parâmetros de consulta OData](/graph/query-parameters).
+Essa operação requer o `$filter` parâmetro de consulta. Você pode filtrar nas `roleDefinitionId`propriedades , `principalId` ou `appScopeId` . A `roleDefinitionId` propriedade pode ser uma ID de objeto de função ou uma ID de objeto de modelo de função. O `$expand` parâmetro de consulta também é suportado na **entidade principal**. Para obter informações gerais, acesse [Parâmetros de consulta OData](/graph/query-parameters).
 
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
 
@@ -86,7 +86,7 @@ Não forneça um corpo de solicitação para esse método.
 
 ## <a name="response"></a>Resposta
 
-Se tiver êxito, este método retornará um código de resposta e uma `200 OK` coleção de [objetos unifiedRoleAssignment](../resources/unifiedroleassignment.md) no corpo da resposta.
+Se tiver êxito, este método retornará um `200 OK` código de resposta e uma coleção de [objetos unifiedRoleAssignment](../resources/unifiedroleassignment.md) no corpo da resposta.
 
 ## <a name="examples"></a>Exemplos
 
@@ -331,6 +331,55 @@ Content-type: application/json
     ]
 }
 ```
+
+### <a name="example-3-request-using-filter-for-role-assignments-on-an-access-package-catalog-and-expand-principal"></a>Exemplo 3: Solicitar usando o $filter para atribuições de função em um catálogo de pacotes de acesso e expandir a entidade
+
+#### <a name="request"></a>Solicitação
+
+Este é um exemplo de solicitação.
+
+<!-- {
+  "blockType": "request",
+  "name": "get_roleAssignments_3"
+}-->
+
+```msgraph-interactive
+GET https://graph.microsoft.com/beta/roleManagement/entitlementManagement/roleAssignments?$filter=appScopeId eq '/AccessPackageCatalog/4cee616b-fdf9-4890-9d10-955e0ccb12bc'&$expand=principal
+```
+
+#### <a name="response"></a>Resposta
+
+Este é um exemplo de resposta.
+
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.unifiedRoleAssignment",
+  "isCollection": true
+} -->
+
+```http
+HTTP/1.1 200 OK
+Content-type: application/json
+
+{
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#roleManagement/directory/roleAssignments",
+    "value": [
+        {
+            "id": "900633fe-2508-4b13-a561-a15e320ad35f",
+            "principalId": "39228473-522e-4533-88cc-a9553180cb99",
+            "roleDefinitionId": "ae79f266-94d4-4dab-b730-feca7e132178",
+            "appScopeId": "/AccessPackageCatalog/4cee616b-fdf9-4890-9d10-955e0ccb12bc",
+            "principal": {
+                "@odata.type": "#microsoft.graph.user",
+                "id": "39228473-522e-4533-88cc-a9553180cb99"
+            }    
+        }
+    ]
+}
+```
+
+
 
 <!-- uuid: 16cd6b66-4b1a-43a1-adaf-3a886856ed98
 2019-02-04 14:57:30 UTC -->

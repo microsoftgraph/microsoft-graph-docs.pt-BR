@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 doc_type: resourcePageType
 ms.prod: identity-and-sign-in
 author: psignoret
-ms.openlocfilehash: 9683cfdaa94ed8c35b338e1d4aa77e0b9f15c625
-ms.sourcegitcommit: 6968f5aaf40089684efb0c38a95f6cca353c1d92
+ms.openlocfilehash: e06af959ffa280256489912e3e3df3dd2490cf74
+ms.sourcegitcommit: 77d2ab5018371f153d47cc1cd25f9dcbaca28a95
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/16/2022
-ms.locfileid: "62854312"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63335213"
 ---
 # <a name="permissionscope-resource-type"></a>Tipo de recurso permissionScope
 
@@ -28,7 +28,7 @@ As permissões delegadas podem ser solicitadas por aplicativos cliente que preci
 |:---------------|:--------|:----------|
 |adminConsentDescription|Cadeia de caracteres|Uma descrição das permissões delegadas, destinadas a ser lidas por um administrador concedendo a permissão em nome de todos os usuários. Este texto aparece em experiências de consentimento de administrador em todo o locatário.|
 |adminConsentDisplayName|Cadeia de caracteres|O título da permissão, destinado a ser lido por um administrador concedendo a permissão em nome de todos os usuários.|
-|id|GUID|Identificador de permissão delegado exclusivo dentro da coleção de permissões delegadas definidas para um aplicativo de recurso.|
+|id|Guid|Identificador de permissão delegado exclusivo dentro da coleção de permissões delegadas definidas para um aplicativo de recurso.|
 |isEnabled|Booliano|Ao criar ou atualizar uma permissão, essa propriedade deve ser definida como **true** (que é o padrão). Para excluir uma permissão, essa propriedade deve primeiro ser definida como **false**.  Nesse ponto, em uma chamada subsequente, a permissão pode ser removida.|
 |type|Cadeia de caracteres| Os valores possíveis são: `User` e `Admin`. Especifica se essa permissão delegada deve ser considerada segura para que usuários não administradores consentam em nome de si mesmos ou se um consentimento de administrador sempre deve ser necessário. Embora o Microsoft Graph define o requisito de consentimento padrão para cada permissão, o administrador de locatários pode substituir o comportamento em sua organização (permitindo, restringindo ou limitando o consentimento do usuário para essa permissão delegada). Para obter mais informações, consulte [Configure how users consent to applications](/azure/active-directory/manage-apps/configure-user-consent). |
 |userConsentDescription|String|Uma descrição das permissões delegadas, destinadas a ser lidas por um usuário concedendo a permissão em seu próprio nome. Este texto aparece em experiências de consentimento em que o usuário está consentindo apenas em nome de si mesmo.|
@@ -49,7 +49,7 @@ Veja a seguir uma representação JSON do recurso
 
 ```json
 {
-  "id": "GUID",
+  "id": "Guid",
   "adminConsentDisplayName": "String",
   "adminConsentDescription": "String",
   "userConsentDisplayName": "String",

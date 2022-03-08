@@ -5,12 +5,12 @@ author: RamjotSingh
 ms.localizationpriority: medium
 ms.prod: microsoft-teams
 doc_type: resourcePageType
-ms.openlocfilehash: 3b9c3d04db7a7d03a0f5d7f3926383e1af429a9b
-ms.sourcegitcommit: 1a607ea5bee096944e0fea14167d372f1ff652f6
+ms.openlocfilehash: 62ceb8079a9e5fb9f59c3d69d1d4148b9178f942
+ms.sourcegitcommit: 77d2ab5018371f153d47cc1cd25f9dcbaca28a95
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/16/2021
-ms.locfileid: "61545319"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63335280"
 ---
 # <a name="chat-resource-type"></a>tipo de recurso de chat
 
@@ -20,9 +20,9 @@ Namespace: microsoft.graph
 
 Um chat é uma coleção [de chatMessages](chatmessage.md) entre um ou mais participantes. Os participantes podem ser usuários ou aplicativos.
 
-> **Observação**: se o chat estiver associado a uma instância [onlineMeeting,](../resources/onlinemeeting.md) alguns dos métodos listados afetarão transitivamente a reunião.
+> **Observação**: se o chat estiver associado a uma instância [onlineMeeting](../resources/onlinemeeting.md) , alguns dos métodos listados afetarão transitivamente a reunião.
 
-## <a name="methods"></a>Methods
+## <a name="methods"></a>Métodos
 
 |  Método       |  Tipo de retorno  | Descrição| 
 |:---------------|:--------|:----------|
@@ -36,10 +36,10 @@ Um chat é uma coleção [de chatMessages](chatmessage.md) entre um ou mais part
 |[Obter membro do bate-papo](../api/chat-get-members.md) | [conversationMember](conversationmember.md) | Obter um único usuário no bate-papo.| 
 |[Remover membro do bate-papo](../api/chat-delete-members.md)|Nenhum|Remova um usuário do chat.|
 |[Obter chat entre o usuário e o aplicativo](../api/userscopeteamsappinstallation-get-chat.md) | [chat](chat.md)| Obter chat um-a-um entre o usuário e o aplicativo.|
-|[Marcar o chat como leitura](../api/chat-markchatreadforuser.md) |Nenhuma| Marque o chat como lido para um usuário.|
-|[Marcar o chat como não lido](../api/chat-markchatunreadforuser.md) |Nenhuma| Marque o chat como não lido para um usuário.|
-|[Ocultar chat](../api/chat-hideforuser.md)|Nenhuma|Ocultar um chat para um usuário.|
-|[Chat não criptografado](../api/chat-unhideforuser.md)|Nenhuma|Desaconsear um chat para um usuário.|
+|[Marcar o chat como leitura](../api/chat-markchatreadforuser.md) |Nenhum| Marque o chat como lido para um usuário.|
+|[Marcar o chat como não lido](../api/chat-markchatunreadforuser.md) |Nenhum| Marque o chat como não lido para um usuário.|
+|[Ocultar chat](../api/chat-hideforuser.md)|Nenhum|Ocultar um chat para um usuário.|
+|[Chat não criptografado](../api/chat-unhideforuser.md)|Nenhum|Desaconsear um chat para um usuário.|
 | **Mensagens** |||
 |[Listar mensagens no chat](../api/chat-list-messages.md)  | [chatMessage](../resources/chatmessage.md) | Obter mensagens em um chat. | 
 |[Receba uma mensagem no bate-papo](../api/chatmessage-get.md)  | [chatMessage](../resources/chatmessage.md) | Receba uma única mensagem em um bate-papo. | 
@@ -48,15 +48,15 @@ Um chat é uma coleção [de chatMessages](chatmessage.md) entre um ou mais part
 |[Listar aplicativos no chat](../api/chat-list-installedapps.md) |Coleção [teamsAppInstallation](teamsappinstallation.md) | Listar aplicativos instalados em um chat (e reunião associada).|
 |[Obter aplicativo no chat](../api/chat-get-installedapps.md) | [teamsAppInstallation](teamsappinstallation.md) | Obter um aplicativo específico instalado em um chat (e reunião associada).|
 |[Adicionar aplicativo no chat](../api/chat-post-installedapps.md) | | Adicionar (instalar) um aplicativo em um chat (e reunião associada).|
-|[Atualizar aplicativo no chat](../api/chat-teamsappinstallation-upgrade.md) | Nenhuma | Atualizar para a versão mais recente do aplicativo instalado no chat (e reunião associada).|
-|[Desinstalar aplicativo do chat](../api/chat-delete-installedapps.md) | Nenhuma | Remover (desinstalar) aplicativo de um chat (e reunião associada).|
+|[Atualizar aplicativo no chat](../api/chat-teamsappinstallation-upgrade.md) | Nenhum | Atualizar para a versão mais recente do aplicativo instalado no chat (e reunião associada).|
+|[Desinstalar aplicativo do chat](../api/chat-delete-installedapps.md) | Nenhum | Remover (desinstalar) aplicativo de um chat (e reunião associada).|
 |[Listar as concessões de permissões](../api/chat-list-permissiongrants.md) | Coleção [resourceSpecificPermissionGrant](resourcespecificpermissiongrant.md) | Listar permissões concedidas aos aplicativos neste chat.|
 | **Guias** |||
 |[Listar guias no chat](../api/chat-list-tabs.md) | [teamsTab](teamstab.md) | Listar guias fixadas em um chat (e reunião associada).|
 |[Obter guia no chat](../api/chat-get-tabs.md) | [teamsTab](teamstab.md) | Obter uma guia específica fixada em um chat (e reunião associada).|
 |[Adicionar guia ao chat](../api/chat-post-tabs.md) | [teamsTab](teamstab.md) | Adicione (pin) uma guia a um chat (e reunião associada).|
 |[Guia Atualizar no chat](../api/chat-patch-tabs.md) | [teamsTab](teamstab.md) | Atualize as propriedades de uma guia em um chat (e reunião associada).|
-|[Remover guia do chat](../api/chat-delete-tabs.md) | Nenhuma | Remover (desempinar) uma guia de um chat (e reunião associada).|
+|[Remover guia do chat](../api/chat-delete-tabs.md) | Nenhum | Remover (desempinar) uma guia de um chat (e reunião associada).|
 | **Operations** |||
 |[Listar operações no chat](../api/chat-list-operations.md) | Coleção [teamsAsyncOperation](teamsAsyncOperation.md) | Obter a lista de operações assíncronas que executaram ou estão sendo executados no chat.|
 |[Obter operação no chat](../api/teamsasyncoperation-get.md#example-get-operation-on-chat) | [teamsAsyncOperation](teamsAsyncOperation.md) | Obter uma única operação assíncrona que foi executado ou está sendo executado no chat.|
@@ -69,7 +69,7 @@ Um chat é uma coleção [de chatMessages](chatmessage.md) entre um ou mais part
 |:---------------|:--------|:----------|
 | chatType| [chatType](../resources/chat.md#chattype-values) | Especifica o tipo de chat. Os valores possíveis são: `group`, `oneOnOne`, `meeting`, `unknownFutureValue`.|
 | createdDateTime| dateTimeOffset|  Data e hora em que o chat foi criado. Somente leitura.|
-| id| Cadeia de caracteres| O identificador exclusivo do chat. Somente leitura.|
+| id| String| O identificador exclusivo do chat. Somente leitura.|
 | lastUpdatedDateTime| dateTimeOffset|  Data e hora em que o chat foi renomeado ou a lista de membros foi alterada pela última vez. Somente leitura.|
 | onlineMeetingInfo | [teamworkOnlineMeetingInfo](../resources/teamworkonlinemeetinginfo.md) | Representa detalhes sobre uma reunião online. Se o chat não estiver associado a uma reunião online, a propriedade será vazia. Somente leitura.|
 | tenantId| String | O identificador do locatário no qual o chat foi criado. Somente leitura.|
@@ -97,6 +97,7 @@ Um chat é uma coleção [de chatMessages](chatmessage.md) entre um ou mais part
 | permissionGrants| Coleção [resourceSpecificPermissionGrant](resourcespecificpermissiongrant.md)| Uma coleção de permissões concedidas aos aplicativos para o chat.|
 | operations | Coleção [teamsAsyncOperation](teamsasyncoperation.md) | Uma coleção de todas as Teams assíncronas que foram executados ou executados no chat. Anulável. 
 | lastMessagePreview | [chatMessageInfo](chatmessageinfo.md)| Visualização da última mensagem enviada no chat. Nulo se nenhuma mensagem tiver sido enviada no chat. Atualmente, somente a [operação de chats de](../api/chat-list.md) lista oferece suporte a essa propriedade.|
+| guias | [teamsTab](teamstab.md) collection | Uma coleção de todas as guias no chat. Anulável. |
 
 ## <a name="json-representation"></a>Representação JSON
 

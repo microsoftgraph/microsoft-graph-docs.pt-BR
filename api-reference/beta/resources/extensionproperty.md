@@ -5,8 +5,13 @@ ms.localizationpriority: medium
 author: keylimesoda
 ms.prod: directory-management
 doc_type: resourcePageType
+ms.openlocfilehash: 2f26495298d38b80544108f2d0c2967c5d4a9a7f
+ms.sourcegitcommit: 77d2ab5018371f153d47cc1cd25f9dcbaca28a95
+ms.translationtype: MT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63335994"
 ---
-
 # <a name="extensionproperty-resource-type"></a>Tipo de recurso extensionProperty
 
 Namespace: microsoft.graph
@@ -17,8 +22,10 @@ Representa uma extensão de diretório que pode ser usada para adicionar uma pro
 
 Extensões podem ser adicionadas a [recursos de usuário](user.md), [grupo](group.md), [organização](organization.md), [dispositivo](device.md) [e](application.md) aplicativo. Somente 100 valores de extensão, em todos *os* tipos  e todos os aplicativos, podem ser gravados em qualquer único recurso do Azure AD.
 
+Herda de [directoryObject](directoryobject.md).
+
 > [!IMPORTANT]
-> As extensões de esquema do Azure AD descritas aqui estão disponíveis no Microsoft Graph apenas por motivos de compatibilidade com compatibilidade.
+> As extensões de esquema do Azure AD descritas aqui estão disponíveis no Microsoft Graph apenas por motivos de compatibilidade com compatibilidade com vertidas.
 > Ele permite que você use o Microsoft Graph para continuar a gerenciar propriedades de extensão adicionadas por meio do Azure AD Graph (preterido) ou do [Azure AD Conexão](/azure/active-directory/hybrid/whatis-azure-ad-connect).
 > Para novas extensões personalizadas, recomendamos que você use extensões de esquema do Microsoft Graph para adicionar [dados personalizados aos recursos](/graph/extensibility-overview).
 
@@ -26,9 +33,14 @@ Extensões podem ser adicionadas a [recursos de usuário](user.md), [grupo](grou
 
 | Método       | Tipo de retorno | Descrição |
 |:-------------|:------------|:------------|
-| [Listar extensões](../api/application-list-extensionproperty.md) | Coleção [extensionProperty](extensionProperty.md) | Listar propriedades de extensão em um objeto de aplicativo. |
-| [Criar extensão](../api/application-post-extensionproperty.md) | [extensionProperty](extensionProperty.md) | Criar uma propriedade de extensão em um objeto de aplicativo. |
-| [Excluir extensão](../api/application-delete-extensionproperty.md) | Nenhum | Excluir uma propriedade de extensão de um objeto de aplicativo. |
+| [Criar extensionProperties](../api/application-post-extensionproperty.md) | [extensionProperty](extensionProperty.md) | Criar uma propriedade de extensão em um objeto de aplicativo. |
+| [Listar extensionProperties](../api/application-list-extensionproperty.md) | Coleção [extensionProperty](extensionProperty.md) | Listar propriedades de extensão em um objeto de aplicativo. |
+| [Obter extensionProperty](../api/extensionproperty-get.md) | Coleção [extensionProperty](extensionProperty.md) | Listar propriedades de extensão em um objeto de aplicativo. |
+| [Excluir extensionProperty](../api/extensionproperty-delete.md) | Nenhum | Excluir uma propriedade de extensão de um objeto de aplicativo. |
+
+> [!TIP]
+> 1. Para definir um valor para a propriedade extension como uma instância de um recurso especificado em **targetObjects**, use a operação Update do recurso. Por exemplo, a API [atualizar usuário](../api/user-update.md) para definir o valor de um usuário.
+> 2. Para remover a propriedade extension e seu valor de uma instância de um recurso especificado em **targetObjects**, de definir o valor da propriedade extension como `null`.
 
 ## <a name="properties"></a>Propriedades
 
@@ -36,9 +48,10 @@ Extensões podem ser adicionadas a [recursos de usuário](user.md), [grupo](grou
 |:-------------|:------------|:------------|
 |appDisplayName|String| Nome de exibição do objeto application no qual essa propriedade de extensão é definida. Somente leitura. |
 |dataType|Cadeia de caracteres| Especifica o tipo de dados do valor que a propriedade extension pode manter. Os valores a seguir são suportados. Não anulável. <ul><li>`Binary` - Máximo de 256 bytes</li><li>`Boolean`</li><li>`DateTime` - Deve ser especificado no formato ISO 8601. Serão armazenados no UTC.</li><li>`Integer` - Valor de 32 bits.</li><li>`LargeInteger` - Valor de 64 bits.</li><li>`String` - Máximo de 256 caracteres</li></ul>|
+|deletedDateTime|DateTimeOffset|Data e hora em que esse objeto foi excluído. Sempre `null` quando o objeto não foi excluído. Herdado de [directoryObject](directoryobject.md).|
 |isSyncedFromOnPremises|Booliano| Indica se essa propriedade de extensão foi sincronizada do Active Directory local usando o Azure AD Conexão. Somente leitura. |
-|name|String| Nome da propriedade extension. Não anulável. |
-|targetObjects|Coleção String| Os valores a seguir são suportados. Não anulável. <ul><li>`User`</li><li>`Group`</li><li>`Organization`</li><li>`Device`</li><li>`Application`</li></ul>|
+|name|Cadeia de caracteres| Nome da propriedade extension. Não anulável. |
+|targetObjects|String collection| Os valores a seguir são suportados. Não anulável. <ul><li>`User`</li><li>`Group`</li><li>`Organization`</li><li>`Device`</li><li>`Application`</li></ul>|
 
 ## <a name="relationships"></a>Relações
 
@@ -50,20 +63,24 @@ Veja a seguir uma representação JSON do recurso.
 
 <!-- {
   "blockType": "resource",
-  "optionalProperties": [
-
-  ],
+  "keyProperty": "id",
   "@odata.type": "microsoft.graph.extensionProperty",
-  "keyProperty": "id"
-}-->
-
-```json
+  "baseType": "microsoft.graph.directoryObject",
+  "openType": true
+}
+-->
+``` json
 {
+  "@odata.type": "#microsoft.graph.extensionProperty",
+  "id": "String (identifier)",
+  "deletedDateTime": "String (timestamp)",
   "appDisplayName": "String",
-  "dataType": "String",
-  "isSyncedFromOnPremises": true,
   "name": "String",
-  "targetObjects": ["String"]
+  "dataType": "String",
+  "isSyncedFromOnPremises": "Boolean",
+  "targetObjects": [
+    "String"
+  ]
 }
 ```
 

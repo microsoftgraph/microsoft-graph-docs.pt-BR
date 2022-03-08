@@ -4,12 +4,12 @@ description: Este artigo fornece práticas recomendadas e exemplos para trabalha
 author: KirtiPereira
 ms.localizationpriority: medium
 ms.prod: teamwork
-ms.openlocfilehash: 1be6c8e007de42dc014b6b457beae895bb59245b
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 8ebb19f3b10a85862be2d12eeb61a96d33ed40bc
+ms.sourcegitcommit: 77d2ab5018371f153d47cc1cd25f9dcbaca28a95
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59138943"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63335805"
 ---
 # <a name="best-practices-for-using-microsoft-teams-activity-feed-notifications"></a>Práticas recomendadas para o uso Microsoft Teams de feed de atividade
 
@@ -18,7 +18,7 @@ Este artigo aborda as práticas recomendadas para o uso Microsoft Teams notifica
 * Solicitando respostas a notificações
 * Criando notificações sobre eventos externos
 
-A imagem a seguir mostra um exemplo de uma notificação de feed de atividade Teams:
+A imagem a seguir mostra um exemplo de uma notificação de feed de atividade no Teams:
 
 ![Captura de tela de um aplicativo Teams exibição de notificação de feed de atividade.](./images/activity-feed-notification.png)
 
@@ -32,9 +32,9 @@ Ao implementar notificações de feed de atividade, lembre-se dos seguintes pont
 
 Microsoft Teams exibe notificações em formatos de feed de atividade e notificação de notificação. Os usuários recebem notificações de várias fontes em chats, canais, reuniões ou outros aplicativos. Para aprimorar a experiência do usuário, aplique as seguintes recomendações:
 
-* Localize o conteúdo em um notificação ou feed. A localização só acontecerá se o conteúdo do aplicativo for [localizado](/microsoftteams/platform/concepts/build-and-test/apps-localization).
-* Forneça títulos e descrições apropriados para seus **Tipos de Atividade.** Use títulos curtos, **como** @mention e **Comunicados.** Evite títulos longos, como **Atividade de usuário mencionada e** atividade de criação de **postagem.**
-* As notificações devem transmitir informações importantes que são relevantes para o usuário. Por exemplo, *Diego atribuiu um tíquete de vendas* a você é uma mensagem relevante; *Joni deixou a equipe de vendas* não.
+* Localize o conteúdo em um notificação ou feed. A localização só acontece se o conteúdo do aplicativo estiver [localizado](/microsoftteams/platform/concepts/build-and-test/apps-localization).
+* Forneça títulos e descrições apropriados para seus **Tipos de Atividade**. Use títulos curtos **, como @mention** **e Comunicados**. Evite títulos longos, como **Atividade de usuário mencionada e** **atividade de criação post.**
+* As notificações devem transmitir informações importantes que são relevantes para o usuário. Por exemplo, *Diego atribuiu um tíquete de vendas a você* é uma mensagem relevante; *Joni deixou a equipe de vendas* não.
 * Evite o envio de notificações promocionais de natureza, como *Experimentar o novo recurso no aplicativo Cycling*.
 * Evite notificações duplicadas de mensagens bot e notificações de feed de atividade. Para obter mais informações, consulte [activity feed notifications or bot framework messages](#activity-feed-notifications-or-bot-framework-messages).
 * Use a **seção visualização de** texto em notificações. Forneça informações para ajudar o usuário a determinar a importância da notificação e tomar medidas, se necessário.
@@ -57,16 +57,20 @@ As notificações de feed de atividade aparecem no feed Teams atividade e podem 
 * Permitir que o usuário tome medidas ou triagem da notificação.
 * Leve o usuário a uma guia em um chat ou canal, um aplicativo pessoal ou uma mensagem de chat ou canal. 
 
-A API de notificações de feed de atividade permite que os usuários configurem notificações para **cada** tipo de notificação a partir das configurações de notificação.
+A API de notificações de feed de atividade permite que os usuários configurem notificações **para cada tipo** de notificação a partir das configurações de notificação.
 
 Se você usar notificações de feed de atividade, esteja ciente de que seu aplicativo pode enviar notificações duplas, se ele enviar notificações de bot para chats ou canais e também para o feed de atividades. Envie notificações duplas somente se o cenário exigir. 
 
 Use notificações delegadas para criar uma experiência de notificação melhor. A API de notificação de feed de atividade pode enviar chamadas delegadas ou somente de aplicativos. Em chamadas delegadas, o remetente da notificação aparece como o usuário que iniciou a notificação e, em chamadas somente de aplicativo, o remetente aparece como o aplicativo. 
 
-Você pode atualizar uma notificação de feed de atividade existente em vez de criar uma nova notificação usando o *parâmetro chainId.*
+Você pode atualizar uma notificação de feed de atividade existente em vez de criar uma nova notificação usando o *parâmetro chainId* .
 
 ### <a name="bot-framework-messages"></a>Mensagens de estrutura bot
 
-As mensagens bot são entregues como mensagens de chat ou canal. Se o usuário ativar notificações de chat ou canal, as notificações disparadas serão enviadas como mensagens de chat ou canal. Para enviar mensagens bot, *@mention* o nome do usuário para que a notificação apareça no feed de atividades.
+As mensagens bot são entregues como mensagens de chat ou canal. Se o usuário ativar notificações de chat ou canal, as notificações disparadas serão enviadas como mensagens de chat ou canal. Para enviar mensagens de bot, *@mention* o nome do usuário para que a notificação apareça no feed de atividades.
 
 É útil que o alerta seja consumido como uma mensagem de chat ou canal; por exemplo, uma mensagem que é consumida por todos os membros do canal.
+
+## <a name="see-also"></a>Confira também
+
+[Criar notificações de feed de atividade para Microsoft Teams](/microsoftteams/platform/concepts/design/activity-feed-notifications?tabs=mobile) 

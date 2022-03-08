@@ -5,22 +5,22 @@ description: Obter itemAnalytics sobre os exibições que ocorreram sob esse rec
 ms.localizationpriority: medium
 ms.prod: sharepoint
 doc_type: apiPageType
-ms.openlocfilehash: 7889051fa6ae191fb8c5af7df84e7a63ffc8226c
-ms.sourcegitcommit: 08e9b0bac39c1b1d2c8a79539d24aaa93364baf2
+ms.openlocfilehash: 9f469d2403d1a474780d847a86e5ffdecf361b3c
+ms.sourcegitcommit: 77d2ab5018371f153d47cc1cd25f9dcbaca28a95
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/24/2021
-ms.locfileid: "59766331"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63335630"
 ---
 # <a name="get-itemanalytics"></a>Obter itemAnalytics
 
 Namespace: microsoft.graph
 
 Obter [itemAnalytics][] sobre os exibições que ocorreram sob esse recurso.
-O **recurso itemAnalytics** é uma maneira conveniente de obter estatísticas de atividade para `allTime` e para o `lastSevenDays` .
-Para um intervalo ou intervalo de tempo personalizado, use a API [getActivitiesByInterval.][]
+O **recurso itemAnalytics** é uma maneira conveniente de obter estatísticas de atividade para `allTime` e `lastSevenDays`para o .
+Para um intervalo ou intervalo de tempo personalizado, use a API [getActivitiesByInterval][] .
 
->**Observação:** O **recurso itemAnalytics** ainda não está disponível em todas as [implantações nacionais.](/graph/deployments)
+>**Observação:** O **recurso itemAnalytics** ainda não está disponível em todas as [implantações nacionais](/graph/deployments).
 
 [itemAnalytics]: ../resources/itemanalytics.md
 [getActivitiesByInterval]: ../api/itemactivitystat-getactivitybyinterval.md
@@ -29,11 +29,11 @@ Para um intervalo ou intervalo de tempo personalizado, use a API [getActivitiesB
 
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
-|Tipo de permissão                        | Permissões (da com menos para a com mais privilégios)
-|:--------------------------------------|:-------------------------------------
-|Delegado (conta corporativa ou de estudante)     | Files.Read, Files.ReadWrite, Files.Read.All, Files.ReadWrite.All, Sites.Read.All, Sites.ReadWrite.All
-|Delegado (conta pessoal da Microsoft) | Sem suporte.
-|Aplicativo                            | Files.Read.All, Files.ReadWrite.All, Sites.Read.All, Sites.ReadWrite.All
+|Tipo de permissão                        | Permissões (da com menos para a com mais privilégios)|
+|:--------------------------------------|:-------------------------------------|
+|Delegado (conta corporativa ou de estudante)     | Files.Read, Files.ReadWrite, Files.Read.All, Files.ReadWrite.All, Sites.Read.All, Sites.ReadWrite.All|
+|Delegado (conta pessoal da Microsoft) | Sem suporte.|
+|Aplicativo                            | Files.Read.All, Files.ReadWrite.All, Sites.Read.All, Sites.ReadWrite.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
 
@@ -59,12 +59,13 @@ Não forneça um corpo de solicitação para esse método.
 
 ## <a name="response"></a>Resposta 
 
-Se tiver êxito, este método retornará um código de resposta e uma `200 OK` coleção [de objeto itemAnalytics][] no corpo da resposta. 
+Se tiver êxito, este método retornará um `200 OK` código de resposta e uma coleção [de objeto itemAnalytics][] no corpo da resposta. 
 
 ## <a name="example"></a>Exemplo
 
 ### <a name="request"></a>Solicitação
 
+Veja a seguir um exemplo de uma solicitação.
 
 # <a name="http"></a>[HTTP](#tab/http)
 <!-- { "blockType": "request", "name": "get-analytics" } -->
@@ -92,6 +93,8 @@ GET /drives/{drive-id}/items/{item-id}/analytics
 
 
 ### <a name="response"></a>Resposta
+
+Este é um exemplo de resposta.
 
 <!-- { "blockType": "response", "@type": "microsoft.graph.itemAnalytics", "truncated": true } -->
 

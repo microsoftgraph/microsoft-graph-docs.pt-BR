@@ -1,25 +1,25 @@
 ---
 author: JeremyKelley
-description: Baixar o conteúdo do fluxo principal (arquivo) de um DriveItem. Somente driveItems com a propriedade file podem ser baixados.
-ms.date: 09/10/2017
+description: Baixe o conteúdo do fluxo principal (arquivo) de um driveItem. Somente driveItems com a propriedade file podem ser baixados.
 title: Baixar um arquivo
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: sharepoint
 doc_type: apiPageType
-ms.openlocfilehash: a6f466788158d0461ecb796e85be94c420227b2b
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 8a20bf3cb894cc09dbae58ce4da8f438aef5e2ca
+ms.sourcegitcommit: 77d2ab5018371f153d47cc1cd25f9dcbaca28a95
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58806534"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63335700"
 ---
-# <a name="download-the-contents-of-a-driveitem"></a>Baixe o conteúdo de um DriveItem
+# <a name="download-the-contents-of-a-driveitem"></a>Baixar o conteúdo de um driveItem
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+[!INCLUDE [tls-1.2-required](../../includes/tls-1.2-required.md)]
 
-Baixar o conteúdo do fluxo principal (arquivo) de um DriveItem. Somente driveItems com a propriedade **file** podem ser baixados.
+Baixe o conteúdo do fluxo principal (arquivo) de [um driveItem](../resources/driveitem.md). Somente **driveItems** com a **propriedade file** podem ser baixados.
 
 ## <a name="permissions"></a>Permissões
 
@@ -55,7 +55,7 @@ GET /users/{userId}/drive/items/{item-id}/content
 
 Aqui está um exemplo para baixar um arquivo completo.
 
-
+### <a name="request"></a>Solicitação
 
 # <a name="http"></a>[HTTP](#tab/http)
 <!-- { "blockType": "request", "name": "download-item-content", "scopes": "files.read" } -->
@@ -96,6 +96,36 @@ URLs de download previamente autenticadas são válidas apenas por um curto per�
 HTTP/1.1 302 Found
 Location: https://b0mpua-by3301.files.1drv.com/y23vmagahszhxzlcvhasdhasghasodfi
 ```
+
+## <a name="downloading-files-in-javascript-apps"></a>Baixar arquivos em aplicativos JavaScript
+Para baixar arquivos em um aplicativo JavaScript, você não pode usar `/content` a API, pois isso responde com um redirecionamento `302` .
+Um `302` redirecionamento é explicitamente proibido quando um pré-voo de Compartilhamento de Recursos de Origem Cruzada [(CORS)](https://developer.mozilla.org/en-US/docs/Web/HTTP/CORS)  é necessário, como ao fornecer o header **authorization**.
+
+Em vez disso, seu aplicativo precisa selecionar a `@microsoft.graph.downloadUrl` propriedade, que retorna a mesma URL que `/content` direciona para.
+Essa URL pode ser solicitada diretamente usando XMLHttpRequest.
+Como essas URLs são pré-autenticadas, elas podem ser recuperadas sem uma solicitação de pré-voo do CORS.
+
+### <a name="example"></a>Exemplo
+
+Para recuperar a URL de download de um arquivo, faça primeiro uma solicitação que inclua a propriedade `@microsoft.graph.downloadUrl`:
+
+```http
+GET /drive/items/{item-ID}?select=id,@microsoft.graph.downloadUrl
+```
+
+Isso retorna a ID e a URL de download de um arquivo:
+
+```http
+HTTP/1.1 200 OK
+Content-Type: application/json
+
+{
+  "id": "12319191!11919",
+  "@microsoft.graph.downloadUrl": "https://..."
+}
+```
+
+Você pode fazer uma XMLHttpRequest para a URL fornecida em `@microsoft.graph.downloadUrl` para recuperar o arquivo.
 
 ## <a name="partial-range-downloads"></a>Downloads de intervalo parcial
 

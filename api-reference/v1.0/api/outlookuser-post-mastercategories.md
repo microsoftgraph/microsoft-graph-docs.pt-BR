@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: abheek-das
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: fd0945944a6962c757c72e2108369d3cd0982b7f
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: 9b10f2419430b7626cbcfb0b968fe097273a24c9
+ms.sourcegitcommit: 77d2ab5018371f153d47cc1cd25f9dcbaca28a95
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62097656"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63335952"
 ---
 # <a name="create-outlook-category"></a>Criar categoria do Outlook
 
@@ -38,18 +38,18 @@ POST /users/{id|userPrincipalName}/outlook/masterCategories
 | Nome       | Descrição|
 |:---------------|:----------|
 | Autorização  | {token} de portador. Obrigatório. |
-
+|Content-Type|application/json. Obrigatório.|
 
 ## <a name="request-body"></a>Corpo da solicitação
-No corpo da solicitação, forneça uma representação JSON do objeto [outlookCategory](../resources/outlookcategory.md).
+No corpo da solicitação, fornece uma representação JSON de um [objeto outlookCategory](../resources/outlookcategory.md) .
 
 ## <a name="response"></a>Resposta
 
-Se tiver êxito, este método retornará um código de resposta `201 Created` e o objeto [outlookCategory](../resources/outlookcategory.md) no corpo da resposta.
+Se tiver êxito, este método retornará um `201 Created` código de resposta e um [objeto outlookCategory](../resources/outlookcategory.md) no corpo da resposta.
 
 ## <a name="example"></a>Exemplo
-##### <a name="request"></a>Solicitação
-Este é um exemplo da solicitação.
+### <a name="request"></a>Solicitação
+Veja a seguir um exemplo de uma solicitação.
 
 # <a name="http"></a>[HTTP](#tab/http)
 <!-- {
@@ -62,8 +62,8 @@ Content-type: application/json
 Content-Length: 70
 
 {
-      "displayName":"Project expenses",
-      "color":"preset9"
+   "displayName": "Project expenses",
+   "color": "preset9"
 }
 ```
 # <a name="c"></a>[C#](#tab/csharp)
@@ -92,9 +92,9 @@ Content-Length: 70
 
 ---
 
-No corpo da solicitação, forneça uma representação JSON do objeto [outlookCategory](../resources/outlookcategory.md).
-##### <a name="response"></a>Resposta
-Aqui está um exemplo da resposta. Observação: o objeto de resposta mostrado aqui pode ser reduzido para facilitar a leitura.
+### <a name="response"></a>Resposta
+Este é um exemplo de resposta. 
+>**Observação:** o objeto de resposta mostrado aqui pode ser encurtado para legibilidade.
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -105,10 +105,10 @@ HTTP/1.1 201 Created
 Content-type: application/json
 
 {
-  "@odata.context":"https://graph.microsoft.com/v1.0/$metadata#users('8ae6f565-0d7f-4ead-853e-7db94c912a1f')/outlook/masterCategories/$entity",
-  "id":"bac262b7-485d-4739-b436-e31467d64fac",
-  "displayName":"Project expenses",
-  "color":"preset9"
+   "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#users('8ae6f565-0d7f-4ead-853e-7db94c912a1f')/outlook/masterCategories/$entity",
+   "id": "bac262b7-485d-4739-b436-e31467d64fac",
+   "displayName": "Project expenses",
+   "color": "preset9"
 }
 ```
 

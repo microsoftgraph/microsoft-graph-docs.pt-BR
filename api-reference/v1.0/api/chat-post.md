@@ -5,17 +5,17 @@ author: RamjotSingh
 ms.localizationpriority: medium
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 988125a5c2e8e11f319e2f9d66698a2543a6ffdc
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: e6a84f714afcbfaff254f77b439ac431d0f695dc
+ms.sourcegitcommit: 77d2ab5018371f153d47cc1cd25f9dcbaca28a95
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62122334"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63335154"
 ---
 # <a name="create-chat"></a>Criar chat
 Namespace: microsoft.graph
 
-Crie um novo [objeto de chat.](../resources/chat.md)
+Crie um novo [objeto de chat](../resources/chat.md) .
 
 ## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
@@ -43,19 +43,19 @@ POST /chats
 |Content-Type|application/json. Obrigatório.|
 
 ## <a name="request-body"></a>Corpo da solicitação
-No corpo da solicitação, fornece uma representação JSON do [objeto chat.](../resources/chat.md)
+No corpo da solicitação, fornece uma representação JSON do [objeto chat](../resources/chat.md) .
 
 A tabela a seguir lista as propriedades necessárias para criar um objeto de chat.
 
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
 |topic|(Opcional) Cadeia de caracteres|O título do chat. O título do chat só poderá ser fornecido se o chat for do `group` tipo.|
-|chatType|[chatType](../resources/chat.md#chattype-values)| Especifica o tipo de chat. Os valores possíveis são: `group` e `oneOnOne` . |
-|membros|coleção [conversationMember](../resources/conversationmember.md)|Lista de membros da conversa que devem ser adicionados. Todos os usuários, incluindo o usuário que inicia a solicitação de criação, que participarão do chat devem ser especificados nesta lista.|
+|chatType|[chatType](../resources/chat.md#chattype-values)| Especifica o tipo de chat. Os valores possíveis são: `group` e `oneOnOne`. |
+|members|coleção [conversationMember](../resources/conversationmember.md)|Lista de membros da conversa que devem ser adicionados. Todos os usuários que participarão do chat, incluindo o usuário que inicia a solicitação de criação, devem ser especificados nesta lista. Cada membro deve ter uma função de `owner` ou `guest`. Os usuários de locatários convidados devem ser atribuídos à `guest` função.|
 
 ## <a name="response"></a>Resposta
 
-Se tiver êxito, este método retornará um código de resposta Criado 201 e o recurso de **chat** recém-criado no corpo da resposta.
+Se tiver êxito, este método retornará um `201 Created` código de resposta e o recurso **de chat** recém-criado no corpo da resposta.
 
 ## <a name="examples"></a>Exemplos
 
@@ -308,3 +308,89 @@ Content-Type: application/json
 }
 ```
 
+### <a name="example-4-create-a-group-chat-with-tenant-guest-user"></a>Exemplo 4: Criar um chat em grupo com o usuário convidado do locatário
+
+#### <a name="request"></a>Solicitação
+
+
+# <a name="http"></a>[HTTP](#tab/http)
+<!-- {
+  "blockType": "request",
+  "name": "create_chat_group"
+}
+-->
+``` http
+POST https://graph.microsoft.com/v1.0/chats
+Content-Type: application/json
+
+{
+  "chatType": "group",
+  "topic": "Group chat title",
+  "members": [
+    {
+      "@odata.type": "#microsoft.graph.aadUserConversationMember",
+      "roles": ["owner"],
+      "user@odata.bind": "https://graph.microsoft.com/v1.0/users('8c0a1a67-50ce-4114-bb6c-da9c5dbcf6ca')"
+    },
+    {
+      "@odata.type": "#microsoft.graph.aadUserConversationMember",
+      "roles": ["owner"],
+      "user@odata.bind": "https://graph.microsoft.com/v1.0/users('82fe7758-5bb3-4f0d-a43f-e555fd399c6f')"
+    },
+    {
+      "@odata.type": "#microsoft.graph.aadUserConversationMember",
+      "roles": ["guest"],
+      "user@odata.bind": "https://graph.microsoft.com/v1.0/users('8ba98gf6-7fc2-4eb2-c7f2-aef9f21fd98g')"
+    }
+  ]
+}
+```
+# <a name="c"></a>[C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/create-chat-group-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/create-chat-group-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/create-chat-group-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/create-chat-group-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[Ir](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/create-chat-group-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/create-chat-group-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
+
+
+#### <a name="response"></a>Resposta
+>**Observação:** o objeto de resposta mostrado aqui pode ser encurtado para legibilidade.
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.chat"
+}
+-->
+``` http
+HTTP/1.1 201 Created
+Content-Type: application/json
+
+{
+    "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#chats/$entity",
+    "id": "19:1c5b01696d2e4a179c292bc9cf04e63b@thread.v2",
+    "topic": "Group chat title",
+    "createdDateTime": "2020-12-04T23:11:16.175Z",
+    "lastUpdatedDateTime": "2020-12-04T23:11:16.175Z",
+    "chatType": "group"
+}
+```

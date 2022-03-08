@@ -1,16 +1,16 @@
 ---
 title: Tipo de recurso directorySettingTemplate
 description: Os modelos de configuração de diretório representam configurações definidas pelo sistema disponíveis para o locatário.
-localization_priority: Normal
+ms.localizationpriority: medium
 author: dkershaw10
 ms.prod: directory-management
 doc_type: resourcePageType
-ms.openlocfilehash: 71984d472aab9f78197134fae0668fd0a90d7716
-ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
+ms.openlocfilehash: 372abab6126a9e2174638fd59fceb609f6f072c3
+ms.sourcegitcommit: 77d2ab5018371f153d47cc1cd25f9dcbaca28a95
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50440406"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63335231"
 ---
 # <a name="directorysettingtemplate-resource-type"></a>Tipo de recurso directorySettingTemplate
 
@@ -18,11 +18,14 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Os modelos de configuração de diretório representam configurações definidas pelo sistema disponíveis para o locatário. [As configurações de](directorysetting.md) diretório podem ser criadas com base nos directorySettingTemplates disponíveis e valores alterados de seus padrões predefinidos. Modelos de configuração de diretório não podem ser criados, atualizados ou excluídos. Essas configurações podem representar configurações de todo o locatário ou podem representar configurações de entidade específicas.  Atualmente, os únicos modelos disponíveis se aplicam a grupos do Office e incluem configurações como se os usuários podem criar grupos ou convidar convidados de fora da organização para se tornarem membros de um grupo.
+Os modelos de configuração de diretório representam configurações definidas pelo sistema disponíveis para o locatário. [As configurações de](directorysetting.md) diretório podem ser criadas com base nos **directorySettingTemplates** disponíveis e valores alterados de seus padrões predefinidos. Modelos de configuração de diretório não podem ser criados, atualizados ou excluídos. Essas configurações podem representar configurações de todo o locatário ou podem representar configurações de entidade específicas. Atualmente, os únicos modelos disponíveis para grupos se aplicam Microsoft 365 grupos e incluem configurações como se os usuários podem criar grupos ou convidar convidados de fora da organização para se tornarem membros de um grupo.
 
-> **Observação**: a versão /beta do tipo de recurso directorySettingTemplate só se aplica a grupos. A versão /v1.0 foi renomeada para groupSettingTemplate.
+Para obter mais informações sobre as configurações Microsoft 365 de grupo disponíveis, consulte [Configurações de modelo](/azure/active-directory/enterprise-users/groups-settings-cmdlets).
 
-## <a name="methods"></a>Methods
+> [!TIP]
+> A `/v1.0` versão desse recurso é chamada [groupSettingTemplate](/graph/api/resources/groupsettingtemplate?view=graph-rest-1.0&preserve-view=true).
+
+## <a name="methods"></a>Métodos
 
 | Método           | Tipo de retorno    |Descrição|
 |:---------------|:--------|:----------|

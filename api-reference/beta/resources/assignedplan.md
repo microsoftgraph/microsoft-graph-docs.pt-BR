@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 doc_type: resourcePageType
 ms.prod: directory-management
 author: jpettere
-ms.openlocfilehash: 3996d374d6fadde598c242f5b68ef9a79238e115
-ms.sourcegitcommit: 6968f5aaf40089684efb0c38a95f6cca353c1d92
+ms.openlocfilehash: 762e6f6fb955b477d0331872f9a4670ff07b61d6
+ms.sourcegitcommit: 77d2ab5018371f153d47cc1cd25f9dcbaca28a95
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/16/2022
-ms.locfileid: "62854647"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63335294"
 ---
 # <a name="assignedplan-resource-type"></a>Tipo de recurso assignedPlan
 
@@ -27,8 +27,8 @@ A propriedade **assignedPlans** das entidades [user](user.md) e [organization](o
 |:---------------|:--------|:----------|
 |assignedDateTime|DateTimeOffset|A data e hora em que o plano foi atribuído; por exemplo: 2013-01-02T19:32:30Z. O tipo Timestamp representa informações de data e hora usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite UTC em 1 de janeiro de 2014 é `2014-01-01T00:00:00Z`|
 |capabilityStatus|[capabilityStatus](#capabilitystatus-values)|Condição da atribuição de recursos. Os valores possíveis são , , , , `LockedOut``Deleted`. `Suspended``Warning``Enabled`|
-|service|Cadeia de caracteres|O nome do serviço; por exemplo, "Exchange".|
-|servicePlanId|GUID|Um GUID que identifica o plano de serviço.|
+|service|Cadeia de caracteres|O nome do serviço; por exemplo, `exchange`.|
+|servicePlanId|Guid|Um GUID que identifica o plano de serviço. Para uma lista completa de GUIDs e seus nomes de serviço amigáveis equivalentes, consulte Nomes de produtos e identificadores de plano de [serviço para licenciamento](/azure/active-directory/enterprise-users/licensing-service-plan-reference).|
 
 
 ### <a name="capabilitystatus-values"></a>valores de capabilityStatus
@@ -58,7 +58,7 @@ Veja a seguir uma representação JSON do recurso
   "assignedDateTime": "String (timestamp)",
   "capabilityStatus": "String",
   "service": "String",
-  "servicePlanId": "GUID"
+  "servicePlanId": "Guid"
 }
 
 ```

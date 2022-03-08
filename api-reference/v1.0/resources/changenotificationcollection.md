@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: Jumaodhiss
 doc_type: resourcePageType
 ms.prod: change-notifications
-ms.openlocfilehash: a024481ed1cd5076d5e97a415448375700c522f5
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 74af713c082cb8070b2329785647274c29c259bb
+ms.sourcegitcommit: 77d2ab5018371f153d47cc1cd25f9dcbaca28a95
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59104240"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63335392"
 ---
 # <a name="changenotificationcollection-resource-type"></a>Tipo de recurso changeNotificationCollection
 
@@ -46,12 +46,16 @@ Veja a seguir uma representação JSON do recurso.
   ],
   "@odata.type": "microsoft.graph.changeNotificationCollection"
 }-->
-
-```json
+``` json
 {
-  "value": [],
+  "@odata.type": "#microsoft.graph.changeNotificationCollection",
   "validationTokens": [
-    "eyJ0eXAiOiJKV1QiLCJhbGciOiJSU..."
+    "String"
+  ],
+  "value": [
+    {
+      "@odata.type": "microsoft.graph.changeNotification"
+    }
   ]
 }
 ```

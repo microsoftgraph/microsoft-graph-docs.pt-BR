@@ -5,43 +5,43 @@ ms.localizationpriority: medium
 author: jpettere
 ms.prod: users
 doc_type: resourcePageType
-ms.openlocfilehash: 36388026cdce3b11a7ccdbf32b94d76b19d2a68e
-ms.sourcegitcommit: 0eb843a6f61f384bc28c0cce1ccb74f64bdb1fa6
+ms.openlocfilehash: d43bcc3e838a9d7955954127dbc5960f45b60b15
+ms.sourcegitcommit: 77d2ab5018371f153d47cc1cd25f9dcbaca28a95
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/23/2021
-ms.locfileid: "60560755"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63335931"
 ---
 # <a name="onpremisesextensionattributes-resource-type"></a>Tipo de recurso onPremisesExtensionAttributes
 
 Namespace: microsoft.graph
 
-O tipo de retorno da **propriedade onPremisesExtensionAttributes** do objeto [de](user.md) usuário e da propriedade **extensionAttributes** do [objeto device.](device.md) Retorna quinze propriedades de atributo de extensão personalizadas.
+O tipo de retorno da **propriedade onPremisesExtensionAttributes** do objeto [de](user.md) usuário e da propriedade **extensionAttributes** do [objeto device](device.md) . Retorna quinze propriedades de atributo de extensão personalizadas.
 
-Na [](user.md) entidade do usuário e para um usuário **onPremisesSyncEnabled,** a fonte de autoridade para esse conjunto de propriedades é o Active Directory local que é sincronizado com o Azure AD e é somente leitura. Para um usuário somente na nuvem (onde **onPremisesSyncEnabled** é ), essas propriedades podem ser definidas durante a `false` [criação](../api/user-post-users.md) ou [atualização.](../api/user-update.md) Se um usuário somente na nuvem tiver sido sincronizado anteriormente do Active Directory local, essas propriedades não poderão ser gerenciadas por meio da API do Microsoft Graph. Em vez disso, eles podem ser gerenciados por meio do Exchange Admin Center ou do módulo Exchange Online V2 no PowerShell.
+Na entidade [](user.md) do usuário e para um usuário **onPremisesSyncEnabled**, a fonte de autoridade para esse conjunto de propriedades é o Active Directory local que é sincronizado com o Azure AD e é somente leitura. Para um usuário somente na nuvem (onde **onPremisesSyncEnabled** `false` está ou `null`), essas propriedades podem ser definidas durante a [criação](../api/user-post-users.md) ou [atualização](../api/user-update.md). Se um usuário somente na nuvem tiver sido sincronizado anteriormente do Active Directory local, essas propriedades não poderão ser gerenciadas por meio da API do Microsoft Graph. Em vez disso, eles podem ser gerenciados por meio do Centro de administração Exchange ou o módulo Exchange Online V2 no PowerShell.
 
-A **propriedade extensionAttributes** da entidade [de](device.md) dispositivo é gerenciada somente no Azure AD durante a criação [ou](../api/device-post-devices.md) atualização do [dispositivo.](../api/device-update.md)
+A **propriedade extensionAttributes** da entidade [de](device.md) dispositivo é gerenciada somente no Azure AD durante a [criação ou atualização](../api/device-post-devices.md) do [dispositivo](../api/device-update.md).
 
 > **Observação:** Esses atributos de extensão também são conhecidos como Exchange atributos personalizados 1-15.
 
 ## <a name="properties"></a>Propriedades
 | Propriedade     | Tipo   |Descrição|
 |:---------------|:--------|:----------|
-|extensionAttribute1|Cadeia de Caracteres| Primeiro atributo de extensão personalizável. |
-|extensionAttribute2|Cadeia de Caracteres| Segundo atributo de extensão personalizável. |
-|extensionAttribute3|Cadeia de Caracteres| Terceiro atributo de extensão personalizável. |
-|extensionAttribute4|Cadeia de Caracteres| Quarto atributo de extensão personalizável. |
-|extensionAttribute5|Cadeia de Caracteres| Quinto atributo de extensão personalizável. |
-|extensionAttribute6|Cadeia de Caracteres| Sexto atributo de extensão personalizável. |
-|extensionAttribute7|Cadeia de Caracteres| Sétimo atributo de extensão personalizável. |
-|extensionAttribute8|Cadeia de Caracteres| Oitavo atributo de extensão personalizável. |
-|extensionAttribute9|Cadeia de Caracteres| Nono atributo de extensão personalizável. |
-|extensionAttribute10|Cadeia de Caracteres| Décimo atributo de extensão personalizável. |
-|extensionAttribute11|Cadeia de Caracteres| Décimo primeiro atributo de extensão personalizável. |
-|extensionAttribute12|Cadeia de Caracteres| Décimo segundo atributo de extensão personalizável. |
-|extensionAttribute13|Cadeia de Caracteres| Décimo terceiro atributo de extensão personalizável. |
-|extensionAttribute14|Cadeia de Caracteres| Décimo quarto atributo de extensão personalizável. |
-|extensionAttribute15|Cadeia de Caracteres| Décimo quinto atributo de extensão personalizável. |
+|extensionAttribute1|Cadeia de caracteres| Primeiro atributo de extensão personalizável. |
+|extensionAttribute2|String| Segundo atributo de extensão personalizável. |
+|extensionAttribute3|String| Terceiro atributo de extensão personalizável. |
+|extensionAttribute4|Cadeia de caracteres| Quarto atributo de extensão personalizável. |
+|extensionAttribute5|String| Quinto atributo de extensão personalizável. |
+|extensionAttribute6|String| Sexto atributo de extensão personalizável. |
+|extensionAttribute7|Cadeia de caracteres| Sétimo atributo de extensão personalizável. |
+|extensionAttribute8|Cadeia de caracteres| Oitavo atributo de extensão personalizável. |
+|extensionAttribute9|Cadeia de caracteres| Nono atributo de extensão personalizável. |
+|extensionAttribute10|Cadeia de caracteres| Décimo atributo de extensão personalizável. |
+|extensionAttribute11|String| Décimo primeiro atributo de extensão personalizável. |
+|extensionAttribute12|Cadeia de caracteres| Décimo segundo atributo de extensão personalizável. |
+|extensionAttribute13|String| Décimo terceiro atributo de extensão personalizável. |
+|extensionAttribute14|String| Décimo quarto atributo de extensão personalizável. |
+|extensionAttribute15|String| Décimo quinto atributo de extensão personalizável. |
 
 ## <a name="json-representation"></a>Representação JSON
 

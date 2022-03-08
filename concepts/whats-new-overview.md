@@ -3,12 +3,12 @@ title: Novidades do Microsoft Graph
 description: O que há de novo no Microsoft Graph
 author: angelgolfer-ms
 ms.localizationpriority: high
-ms.openlocfilehash: 96d68f14255178ad94bd9fdcc88c8358df018cff
-ms.sourcegitcommit: a60e5e81cfa04b666a1df1111a1d91f6c11989e9
+ms.openlocfilehash: 79d281a04cf4ae1dc683efa93da394e59bdc9149
+ms.sourcegitcommit: 77d2ab5018371f153d47cc1cd25f9dcbaca28a95
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "62282062"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63333831"
 ---
 # <a name="whats-new-in-microsoft-graph"></a>Novidades do Microsoft Graph
 
@@ -17,6 +17,33 @@ Veja os destaques das novidades nos dois últimos meses do Microsoft Graph, [o q
 > [!IMPORTANT]
 > Recursos, incluindo APIs e ferramentas, no status de _visualização_ podem mudar sem aviso prévio e alguns podem nunca ser promovidos ao status de disponibilidade geral (GA). Não utilize recursos de visualização em aplicativos de produção.
 
+
+## <a name="february-2022-new-and-generally-available"></a>Janeiro de 2022: Novo e disponível ao público em geral
+
+### <a name="teamwork"></a>Trabalho em equipe
+Obtenha [detalhes sobre uma reunião online](/graph/api/resources/teamworkOnlineMeetingInfo) associada a um [chat](/graph/api/resources/chat) através da propriedade **onlineMeetingInfo**.
+
+## <a name="february-2022-new-in-preview-only"></a>Fevereiro de 2022: novo somente para visualização
+
+### <a name="change-notifications"></a>Notificações de alteração
+Assine para alterações de contatos, eventos ou mensagens do Outlook e receba notificações que incluem dados de recursos na carga. Para obter mais informações, confira [Alterar notificações para recursos do Outlook no Microsoft Graph](outlook-change-notifications-overview.md).
+
+### <a name="identity-and-access--directory-management"></a>Identidade e acesso | Gerenciamento do diretório
+Use as permissões de aplicativo `CustomSecAttributeAssignment.Read.All` para ler [definições de atributo de segurança personalizadas](/graph/api/resources/customsecurityattributedefinition?view=graph-rest-beta&preserve-view=true) para uma organização sem um usuário conectado.
+
+### <a name="identity-and-access--governance"></a>Identidade e acesso | Governança
+- Defina as [configurações](/graph/api/resources/accessreviewstagesettings?view=graph-rest-beta&preserve-view=true) para cada [estágio](/graph/api/resources/accessreviewstage?view=graph-rest-beta&preserve-view=true) em uma revisão de acesso em vários estágios. Além de [obter](/graph/api/accessreviewstage-get?view=graph-rest-beta&preserve-view=true) ou [atualizar](/graph/api/accessreviewstage-update?view=graph-rest-beta&preserve-view=true) um estágio de revisão de acesso, você pode fazer o seguinte: 
+  - [Interrompa](/graph/api/accessreviewstage-stop?view=graph-rest-beta&preserve-view=true) os revisores de dar mais entrada a um estágio e prossiga para o próximo estágio, se aplicável. 
+  - [Filtre](/graph/api/accessreviewstage-filterbycurrentuser?view=graph-rest-beta&preserve-view=true) e obtenha todos os estágios em uma [instância de revisão de acesso](/graph/api/resources/accessreviewinstance?view=graph-rest-beta&preserve-view=true) para a qual o usuário da chamada é um revisor
+  - [Liste decisões](/graph/api/accessreviewstage-list-decisions?view=graph-rest-beta&preserve-view=true) de uma revisão de acesso em vários estágios.
+- Os aplicativos podem usar a permissão de aplicativo `EntitlementManagement.ReadWrite.All` para [criar uma solicitação de recurso do pacote de acesso](/graph/api/entitlementmanagement-post-accesspackageresourcerequests?view=graph-rest-beta&preserve-view=true) para adicionar ou remover um recurso de um [catálogo de pacotes de acesso](/graph/api/resources/accesspackagecatalog?view=graph-rest-beta&preserve-view=true).
+
+### <a name="identity-and-access--identity-and-sign-in"></a>Identidade e acesso | Identidade e login
+- Use uma série de novas propriedades para configurar a [identidade visual de uma organização](/graph/api/resources/organizationalbrandingproperties?view=graph-rest-beta&preserve-view=true). Por exemplo, uma versão de banner do logotipo da empresa para a página de entrada, um favicon personalizado com URL baseado em CDN e algumas outras propriedades personalizadas para que os usuários gerenciem contas.
+- Inclua ou exclua o Linux como uma das [condições da plataforma](/graph/api/resources/conditionalaccessplatforms?view=graph-rest-beta&preserve-view=true) em uma [política de acesso condicional](/graph/api/resources/conditionalaccesspolicy?view=graph-rest-beta&preserve-view=true).
+- Identifique [entidades de serviço em risco](/graph/api/resources/riskyserviceprincipal?view=graph-rest-beta&preserve-view=true) de uma organização com o Azure AD, que continuamente [detecta e avalia os riscos](/graph/api/resources/serviceprincipalriskdetection?view=graph-rest-beta&preserve-view=true) com base em vários sinais e aprendizado de máquina. Você pode [confirmar](/graph/api/riskyserviceprincipal-confirmcompromised?view=graph-rest-beta&preserve-view=true) se uma entidade de serviço em risco está realmente comprometida, na qual a Microsoft desabilitará esse objeto de entidade do serviço. Você pode [descartar](/graph/api/riskyserviceprincipal-dismiss?view=graph-rest-beta&preserve-view=true) o risco de uma entidade de serviço em risco. E você pode [listar o histórico de risco](/graph/api/riskyserviceprincipal-list-history?view=graph-rest-beta&preserve-view=true) de uma entidade de serviço.
+- Use [configurações de acesso entre locatários](/graph/api/resources/crosstenantaccesspolicy-overview?view=graph-rest-beta&preserve-view=true) para controlar e gerenciar a colaboração entre usuários de sua organização e de outras organizações. Eles são granulares para permitir que você determine os usuários, grupos e aplicativos, tanto da sua organização quanto de organizações externas, que podem participar da colaboração do Azure AD B2B e da conexão direta do Azure AD B2B. 
+- Habilite ou desabilite usuários e grupos em uma organização para usar o [CBA (autenticação baseada em certificado) nativo do Azure AD](/graph/api/resources/x509CertificateAuthenticationMethodConfiguration?view=graph-rest-beta&preserve-view=true).
 
 ## <a name="january-2022-new-and-generally-available"></a>Janeiro de 2022: Novo e disponível ao público em geral
 
@@ -39,7 +66,7 @@ Imponha um [controle de sessão](/graph/api/resources/conditionalAccessSessionCo
 ## <a name="january-2022-new-in-preview-only"></a>Janeiro de 2022: Novo somente na pré-visualização
 
 ### <a name="compliance--ediscovery"></a>Conformidade | Descoberta eletrônica
-Obtenha a URL do site OneDrive for Business de um custodiante (propriedade **siteWebUrl** de [userSource](/graph/api/resources/ediscovery-userSource?view=graph-rest-beta&preserve-view=true)).
+Obtenha a URL do site OneDrive for Business de um custodiante (propriedade **siteWebUrl** de [userSource](/graph/api/resources/ediscovery-userSource?view=graph-rest-beta&preserve-view=true).
 
 ### <a name="devices-and-apps--cloud-pc"></a>Dispositivos e aplicativos | Computador na nuvem
 - Obtenha ou atualize as [configurações de uma organização](/graph/api/resources/cloudpcorganizationsettings?view=graph-rest-beta&preserve-view=true), que incluem a versão do sistema operacional Windows para provisionar em PCs na nuvem e o tipo de conta de usuário nos PCs na nuvem provisionados.
@@ -62,7 +89,7 @@ Obtenha a URL do site OneDrive for Business de um custodiante (propriedade **sit
   - O identificador da entidade de serviço que representa o recurso de destino no evento de entrada.
 
 ### <a name="reports--microsoft-365-usage-reports"></a>Relatórios | Relatórios de uso do Microsoft 365
-Obtenha relatórios de uso do Outlook, OneDrive e SharePoint para o Microsoft Cloud for US Government. Veja o resumo de [implantações na nuvem](/graph/api/resources/report?view=graph-rest-beta&preserve-view=true#cloud-deployments).
+Obtenha relatórios de uso do Outlook, OneDrive e SharePoint para o Microsoft Cloud for US Government. Confira o resumo sobre [implantações na nuvem](/graph/api/resources/report?view=graph-rest-beta&preserve-view=true#cloud-deployments).
 
 ### <a name="sites-and-lists"></a>Sites e listas
 - Adicione ou sincronize um tipo de conteúdo do hub de tipo de conteúdo para um [site](/graph/api/resources/site?view=graph-rest-beta&preserve-view=true) ou [lista](/graph/api/resources/list?view=graph-rest-beta&preserve-view=true), usando a ação [addCopyFromContentTypeHub](/graph/api/contenttype-addcopyfromcontenttypehub?view=graph-rest-beta&preserve-view=true). Isso torna um tipo de conteúdo ou sua atualização disponível para um site ou lista específica onde é necessário. Essa é uma melhoria da infraestrutura de sincronização herdada que envia o tipo de conteúdo para todos os sites de uma organização, reduzindo os tempos de espera para a propagação da publicação. 
@@ -77,84 +104,7 @@ Obtenha relatórios de uso do Outlook, OneDrive e SharePoint para o Microsoft Cl
   - [Usuário da conta Microsoft](/graph/api/resources/microsoftAccountUserConversationMember?view=graph-rest-beta&preserve-view=true)
   - [Usuário do Skype for Business](/graph/api/resources/skypeForBusinessUserConversationMember?view=graph-rest-beta&preserve-view=true)
   - [Skype usuário](/graph/api/resources/skypeUserConversationMember?view=graph-rest-beta&preserve-view=true)
-
-## <a name="december-2021-new-and-generally-available"></a>Dezembro de 2021: novo e disponível ao público geral
-
-### <a name="cloud-communications--presence"></a>Comunicações na nuvem | Presença
-[Inscreva-se nas notificações de alterações](/graph/api/subscription-post-subscriptions) no status de [presença](/graph/api/resources/presence) de um usuário especificado. Sempre especifique um certificado de criptografia na solicitação de assinatura, pois são [notificações avançadas que incluem dados de recursos criptografados](webhooks-with-resource-data.md).
-
-
-### <a name="compliance--subject-rights-requests"></a>Conformidade | Solicitações de direitos de entidade
-Como parte do [gerenciamento de privacidade no Microsoft 365](/privacy/solutions/privacymanagement/privacy-management?view=o365-worldwide&preserve-view=true), a [API de solicitações de direitos do sujeito](/graph/api/resources/subjectrightsrequest) estreia nos pontos de extremidade v1 e beta do Microsoft Graph. A API permite que os usuários façam solicitações para revisar ou gerenciar seus dados pessoais em suas organizações. Ele também permite que as organizações automatizem e dimensionem o gerenciamento dessas solicitações, ajudando-as a atender às regulamentações do setor com mais eficiência.
-
-### <a name="customer-booking"></a>Reserva de clientes
-Use a API do Microsoft Bookings em aplicativos de produção e aproveite os seguintes novos recursos e atualizações:
-- Notifique seus clientes nos EUA ou Canadá por SMS para um [compromisso](/graph/api/resources/bookingappointment) ou serviço [ específico ](/graph/api/resources/bookingservice) associado a um compromisso.
-- Habilite a reunião online para um serviço e gere automaticamente um link de reunião do Microsoft Teams para o compromisso.
-- Permita um ou mais clientes em um compromisso de grupo, definindo uma contagem máxima de participantes para um serviço e para um compromisso e acompanhando a contagem real de participantes em um compromisso.
-- Crie uma [pergunta personalizada](/graph/api/resources/bookingcustomquestion) para uma [empresa](/graph/api/resources/bookingbusiness), associe uma pergunta a uma opção para especificá-la como obrigatória para um serviço e acompanhe perguntas e respostas em um compromisso.
-- Obter ou definir o fuso horário de um cliente em um compromisso ou [membro da equipe](/graph/api/resources/bookingstaffmember).
-- Obtenha ou defina o local e o número de telefone de um [cliente](/graph/api/resources/bookingcustomer).
-- Acesse a API v1 do novo ponto de extremidade `https://graph.microsoft.com/v1.0/solutions/`. Observe que a API beta permanece no `https://graph.microsoft.com/beta` ponto de extremidade.
-
-### <a name="education"></a>Educação
-- Especifique [tarefa](/graph/api/resources/educationassignment) ser adicionada somente aos calendários dos alunos usando a propriedade **addToCalendarAction**.
-- [Reatribuir](/graph/api/educationsubmission-reassign) uma [tarefa enviada](/graph/api/resources/educationsubmission) a um aluno com feedback para revisão.
-- [Listar atribuições](/graph/api/educationuser-list-assignments) para [um educationUser](/graph/api/resources/educationuser). 
-
-### <a name="identity-and-access--governance"></a>Identidade e acesso | Governança
-[Atualizar](/graph/api/accessreviewinstance-update) revisores e revisores de fallback para uma instância [de uma análise de acesso](/graph/api/resources/accessreviewinstance).
-
-### <a name="teamwork"></a>Trabalho em equipe
-- Identifique um [chat](/graph/api/resources/chat) no Microsoft Teams por sua URL da Web (por meio da propriedade **webUrl** ).
-- Obtenha detalhes de um evento que aconteceu em um chat, canal ou equipe, acessando [eventMessageDetail](/graph/api/resources/EventMessageDetail) de um [chatMessage](/graph/api/resources/chatmessage) ou [chat](/graph/api/resources/chat). Por exemplo, membros adicionados a um canal ou chat, e a descrição da equipe atualizada.
-
-## <a name="december-2021-new-in-preview-only"></a>Dezembro de 2021: novo apenas na visualização
-
-### <a name="cloud-communications--online-meetings"></a>Comunicações na nuvem | Reuniões online
-Habilite o registro para uma [reunião online](/graph/api/resources/onlinemeeting?view=graph-rest-beta&preserve-view=true) usando um sistema de [registro externo](/graph/api/resources/externalmeetingregistration?view=graph-rest-beta&preserve-view=true). 
-
-### <a name="cloud-communications--presence"></a>Comunicações na nuvem | Presença
-- Use a ação [setUserPreferredPresence](/graph/api/presence-setuserpreferredpresence?view=graph-rest-beta&preserve-view=true) para definir o status de disponibilidade e atividade preferencial de um usuário. A presença do usuário se torna a presença preferencial.
-- Use a ação [clearUserPreferredPresence](/graph/api/presence-clearuserpreferredpresence?view=graph-rest-beta&preserve-view=true) para limpar os status de disponibilidade e atividade preferencial de um usuário.
-- Use `Presence.ReadWrite` como permissão delegada com [setPresence](/graph/api/presence-setpresence?view=graph-rest-beta&preserve-view=true), [clearPresence](/graph/api/presence-clearpresence?view=graph-rest-beta&preserve-view=true), [setUserPreferredPresence](/graph/api/presence-setuserpreferredpresence?view=graph-rest-beta&preserve-view=true)ou [clearUserPreferredPresence](/graph/api/presence-clearuserpreferredpresence?view=graph-rest-beta&preserve-view=true).
-- Use `Presence.ReadWrite.All` como permissão de aplicativo com [setPresence](/graph/api/presence-setpresence?view=graph-rest-beta&preserve-view=true), [clearPresence](/graph/api/presence-clearpresence?view=graph-rest-beta&preserve-view=true), [setUserPreferredPresence](/graph/api/presence-setuserpreferredpresence?view=graph-rest-beta&preserve-view=true)ou [clearUserPreferredPresence](/graph/api/presence-clearuserpreferredpresence?view=graph-rest-beta&preserve-view=true).
-
-### <a name="devices-and-apps--cloud-pc"></a>Dispositivos e aplicativos | Computador na nuvem
-- Os administradores podem habilitar o [Microsoft Managed Desktop](/graph/api/resources/microsoftmanageddesktop?view=graph-rest-beta&preserve-view=true) especificando as configurações em uma [política de provisionamento de PC na nuvem](/graph/api/resources/cloudpcprovisioningpolicy?view=graph-rest-beta&preserve-view=true) e configurando uma experiência de dispositivo gerenciado para um PC na nuvem.
-- [Reinicializar](/graph/api/cloudpc-reboot?view=graph-rest-beta&preserve-view=true) um [PC na nuvem](/graph/api/resources/cloudpc?view=graph-rest-beta&preserve-view=true).
-- [Renomear](/graph/api/cloudpc-rename?view=graph-rest-beta&preserve-view=true) para atualizar o nome de exibição de um PC na nuvem.
-- [Solução](/graph/api/cloudpc-troubleshoot?view=graph-rest-beta&preserve-view=true) para verificar o status de integridade de um PC na nuvem e do host da sessão.
-- Acompanhe o último resultado da ação remota em um PC na nuvem, incluindo reinicialização, renomeação, reprovisionamento, solução de problemas, pela propriedade **lastRemoteActionResult**.
-- Acompanhe o último carimbo de data/hora de logon de um PC na nuvem pela propriedade **lastLoginResult**.
-- Rastreie a data em que uma [imagem de dispositivo PC na nuvem](/graph/api/resources/cloudpcdeviceimage?view=graph-rest-beta&preserve-view=true) se torna indisponível pela propriedade **expireDate**.
-- Acompanhe o status do sistema operacional em uma [imagem de dispositivo de PC na nuvem](/graph/api/resources/cloudpcdeviceimage?view=graph-rest-beta&preserve-view=true) pela propriedade **osStatus**.
-- [Crie](/graph/api/rbacapplication-post-roledefinitions?view=graph-rest-beta&preserve-view=true), [atualize](/graph/api/unifiedroledefinition-update?view=graph-rest-beta&preserve-view=true) e [exclua](/graph/api/unifiedroledefinition-delete?view=graph-rest-beta&preserve-view=true)um objeto[unifiedRoleDefinition](/graph/api/resources/unifiedroledefinition?view=graph-rest-beta&preserve-view=true) para um provedor RBAC do PC na nuvem.
-
-### <a name="education"></a>Educação
-- [Acompanhe as alterações](delta-query-overview.md) nos recursos [educationClass](/graph/api/resources/educationclass?view=graph-rest-beta&preserve-view=true) e [educationUser](/graph/api/resources/educationuser?view=graph-rest-beta&preserve-view=true).
-- Especifique [tarefa](/graph/api/resources/educationassignment) ser adicionada somente aos calendários dos alunos usando a propriedade **addToCalendarAction**.
-
-### <a name="identity-and-access--directory-management"></a>Identidade e acesso | Gerenciamento do diretório
-- [Obter](/graph/api/application-get?view=graph-rest-beta&preserve-view=true) os detalhes de certificação de um [aplicativo](/graph/api/resources/application?view=graph-rest-beta&preserve-view=true) pela propriedade de **certificação**. A propriedade é definida apenas quando o aplicativo é certificado pelo [Programa de Conformidade do Aplicativo do Microsoft 365](/microsoft-365-app-certification/docs/enterprise-app-certification-guide).  
-- [Inclua](/graph/api/permissiongrantpolicy-post-includes?view=graph-rest-beta&preserve-view=true) ou [exclua](/graph/api/permissiongrantpolicy-post-excludes?view=graph-rest-beta&preserve-view=true) a certificação como uma [condição](/graph/api/resources/permissionGrantConditionSet?view=graph-rest-beta&preserve-view=true) em uma [política de concessão de permissão](/graph/api/resources/permissiongrantpolicy?view=graph-rest-beta&preserve-view=true) pela propriedade **certifiedClientApplicationsOnly** de [permissionGrantConditionSet](/graph/api/resources/permissionGrantConditionSet?view=graph-rest-beta&preserve-view=true).
-
-### <a name="search--index"></a>Pesquisa | Índice
-Use a operação [atualizar](/graph/api/externalconnectors-schema-update?view=graph-rest-beta&preserve-view=true) para atualizar as propriedades dos itens em um esquema de [conexão](/graph/api/resources/externalconnectors-externalconnection?view=graph-rest-beta&preserve-view=true), incluindo seus aliases e rótulos.
-
-### <a name="teamwork"></a>Trabalho em equipe
-- [Liste](/graph/api/teams-list?view=graph-rest-beta&preserve-view=true) todas as equipes em uma organização.
-
-### <a name="to-do-tasks"></a>Tarefas pendentes
-- Para prever a capacidade de gerenciar em um único lugar todas as tarefas de várias fontes (como mensagens do Outlook, chats do Teams, documentos do OneDrive):
-  - Use a [Api de Tarefas Pendentes](/graph/api/resources/tasks-overview?view=graph-rest-beta&preserve-view=true) e acesse-o no novo ponto de extremidade `https://graph.microsoft.com/beta/me/tasks/`.
-  - Use o segmento `allTasks` para obter todas as tarefas de um usuário: `https://graph.microsoft.com/beta/me/tasks/alltasks`.
-  - Diferencie entre uma lista de tarefas interna (como **Email sinalizado** ou **Tarefas**) e uma lista de tarefas definida pelo usuário. Uma lista de tarefas integrada é representada pelo recurso [wellKnownTaskList](/graph/api/resources/wellknowntasklist?view=graph-rest-beta&preserve-view=true) e uma lista de tarefas definida pelo usuário é representada pelo recurso [taskList](/graph/api/resources/tasklist?view=graph-rest-beta&preserve-view=true).
-  - Diferencie entre o tipo de tarefas atualmente definido, [tarefa](/graph/api/resources/task?view=graph-rest-beta&preserve-view=true), de um tipo base [baseTask](/graph/api/resources/basetask?view=graph-rest-beta&preserve-view=true).
-- Divida uma tarefa mais [tarefa](/graph/api/resources/task?view=graph-rest-beta&preserve-view=true) em subtarefas menores e mais acionáveis. Cada subtarefa é representada por um [checklistItem](/graph/api/resources/checklistitem?view=graph-rest-beta&preserve-view=true) recurso.
-- [Mover](/graph/api/basetask-move?view=graph-rest-beta&preserve-view=true) uma tarefa entre listas.
-- Consulte esta [ postagem do blog ](https://devblogs.microsoft.com/microsoft365dev/announcing-the-public-preview-of-to-do-tasks-api/) para obter mais detalhes e migre todos os aplicativos existentes que usam a [API To Do anterior](/graph/api/resources/todo-overview?view=graph-rest-beta&preserve-view=true) para a [API To Do mais recente](/graph/api/resources/tasks-overview?view=graph-rest-beta&preserve-view=true).
-
+- Use a permissão delegada `TeamworkTag.Read` para ler [marcas](/graph/api/resources/teamworktag?view=graph-rest-beta&preserve-view=true) e [membros de marcas](/graph/api/resources/teamworktagmember?view=graph-rest-beta&preserve-view=true) no Teams, em nome do usuário conectado.
 
 ## <a name="want-to-stay-in-the-loop"></a>Quer ficar por dentro?
 

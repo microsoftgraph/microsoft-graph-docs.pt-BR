@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: isabelleatmsft
 ms.prod: governance
 doc_type: conceptualPageType
-ms.openlocfilehash: 39c908982adb576a72c1683bcf176dd566b30ae2
-ms.sourcegitcommit: dbacb04ae7138ac3b109683e63a6ff27c166f421
+ms.openlocfilehash: 580d1299503924486dab1be11c33e8f771592baa
+ms.sourcegitcommit: 77d2ab5018371f153d47cc1cd25f9dcbaca28a95
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/14/2022
-ms.locfileid: "62805106"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63336057"
 ---
 # <a name="azure-ad-access-reviews"></a>Revisões de acesso ao Azure AD
 
@@ -28,7 +28,7 @@ Cenários típicos do cliente para análises de acesso incluem:
 - Os clientes podem revisar e certificar o acesso dos funcionários aos recursos do Azure AD.
 - Os clientes podem revisar e auditar atribuições para funções privilegiadas do Azure AD. Isso dá suporte a organizações no gerenciamento de acesso privilegiado.
 
-Observe que o recurso de críticas de acesso, incluindo a API, está incluído Azure AD Premium P2.  O locatário em que uma revisão de acesso está sendo criada deve ter uma assinatura válida de compra ou avaliação Azure AD Premium P2 ou EMS E5.
+Observe que o recurso de críticas de acesso, incluindo a API, está incluído Azure AD Premium P2.  O locatário em que uma revisão de acesso está sendo criada deve ter uma assinatura válida comprada ou de avaliação Azure AD Premium P2 ou EMS E5. Para obter mais informações sobre os requisitos de licença, consulte [Requisitos de licença de revisão do Access](/azure/active-directory/governance/access-reviews-overview#license-requirements).
 
 
 ## <a name="methods"></a>Métodos
@@ -76,7 +76,7 @@ A tabela a seguir lista os métodos que você pode usar para interagir com recur
 
 As seguintes [funções do Azure AD](/azure/active-directory/roles/permissions-reference) são necessárias para que um usuário de chamada gerencie as críticas de acesso.
 
-| Operation | Permissões de aplicativos | Função de diretório necessária do usuário chamador |
+| Operação | Permissões de aplicativos | Função de diretório necessária do usuário chamador |
 |:------------------|:------------|:--------------------------------------------|
 | Ler | AccessReview.Read.All ou AccessReview.ReadWrite.All | Administrador Global, Leitor Global, Administrador de Segurança, Leitor de Segurança ou Administrador do Usuário |
 | Criar, atualizar ou excluir | AccessReview.ReadWrite.All | Administrador Global ou Administrador de Usuário |

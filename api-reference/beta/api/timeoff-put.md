@@ -1,16 +1,16 @@
 ---
 title: Substituir timeOff
 description: Substitua um timeOff existente.
-author: nkramer
+author: aaku
 ms.localizationpriority: medium
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 5545a8bb2b33f717b56b718faddd288165137083
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: 49840649eeafc90b7c9d47b1f14ffafc563e37f6
+ms.sourcegitcommit: 77d2ab5018371f153d47cc1cd25f9dcbaca28a95
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "61001592"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63336071"
 ---
 # <a name="replace-timeoff"></a>Substituir timeOff
 
@@ -18,9 +18,9 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Substitua um [timeOff existente.](../resources/timeoff.md)
+Substitua um [timeOff existente](../resources/timeoff.md).
 
-Se o [timeOff](../resources/timeoff.md) especificado não existir, este método retornará `404 Not found` .
+Se o [timeOff](../resources/timeoff.md) especificado não existir, este método retornará `404 Not found`.
 
 ## <a name="permissions"></a>Permissões
 
@@ -53,11 +53,11 @@ PUT /teams/{teamId}/schedule/timesOff/{timeOffId}
 
 ## <a name="request-body"></a>Corpo da solicitação
 
-No corpo da solicitação, fornece uma representação JSON de um [objeto timeOff.](../resources/timeoff.md)
+No corpo da solicitação, fornece uma representação JSON de um [objeto timeOff](../resources/timeoff.md) .
 
 ## <a name="response"></a>Resposta
 
-Se tiver êxito, este método retornará um código `200 OK` de resposta e um objeto [timeOff](../resources/timeoff.md) no corpo da resposta.
+Se tiver êxito, este método retornará um `200 OK` código de resposta e um [objeto timeOff](../resources/timeoff.md) no corpo da resposta.
 
 ## <a name="example"></a>Exemplo
 
@@ -107,7 +107,7 @@ Prefer: return=representation
 [!INCLUDE [sample-code](../includes/snippets/java/timeoff-put-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[Go](#tab/go)
+# <a name="go"></a>[Ir](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/timeoff-put-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 

@@ -1,16 +1,16 @@
 ---
 title: Tipo de recurso shiftItem
 description: Um shiftItem representa uma versão do shift.
-author: nkramer
-localization_priority: Normal
+author: aaku
+ms.localizationpriority: medium
 ms.prod: microsoft-teams
 doc_type: resourcePageType
-ms.openlocfilehash: 3998176fbd001e1136a107dd3aa53ff8442fe8f3
-ms.sourcegitcommit: 14648839f2feac2e5d6c8f876b7ae43e996ea6a0
+ms.openlocfilehash: 906333758a580e8a89a7f6994c298330fc7f1b60
+ms.sourcegitcommit: 77d2ab5018371f153d47cc1cd25f9dcbaca28a95
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/11/2021
-ms.locfileid: "50721108"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63335987"
 ---
 # <a name="shiftitem-resource-type"></a>Tipo de recurso shiftItem
 
@@ -23,10 +23,10 @@ Representa uma versão de um [turno](shift.md).
 ## <a name="properties"></a>Propriedades
 | Propriedade                         | Tipo                    | Descrição                                                                             |
 |------------------------------|-------------------------|---------------------------------------------------------------------------------------------|
-| notes               | cadeia de caracteres                  | As notas de turno para `shiftItem` o .      |
-| displayName               | cadeia de caracteres                  | O rótulo de turno do `shiftItem` . |
-| startDateTime               | DateTimeOffset                  | A data e a hora de início do `shiftItem` . O tipo Timestamp representa informações de data e hora usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite UTC em 1 de janeiro de 2014 é `2014-01-01T00:00:00Z`. Obrigatório. |
-| endDateTime               | DateTimeOffset                 | A data e a hora de término do `shiftItem` . Obrigatório. O tipo Timestamp representa informações de data e hora usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite UTC em 1 de janeiro de 2014 é `2014-01-01T00:00:00Z`. |
+| notes               | string                  | As notas de turno para o `shiftItem`.      |
+| displayName               | string                  | O rótulo de turno do `shiftItem`. |
+| startDateTime               | DateTimeOffset                  | A data e a hora de início do `shiftItem`. O tipo Timestamp representa informações de data e hora usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite UTC em 1 de janeiro de 2014 é `2014-01-01T00:00:00Z`. Obrigatório. |
+| endDateTime               | DateTimeOffset                 | A data e a hora de término do `shiftItem`. Obrigatório. O tipo Timestamp representa informações de data e hora usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite UTC em 1 de janeiro de 2014 é `2014-01-01T00:00:00Z`. |
 | tema | scheduleEntityTheme   |  Cores com suporte: branco; azul; verde; roxo; rosa; amarelo; cinza; darkBlue; darkGreen; darkPurple; darkPink; darkYellow. |
 | activities    | [Coleção shiftActivity](shiftactivity.md)   | Uma parte incremental de um turno que pode abranger detalhes de quando e onde um funcionário está durante o turno. Por exemplo, uma atribuição ou uma pausa ou almoço agendado. Obrigatório. |
 

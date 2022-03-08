@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: markwahl-msft
 ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: 2572861ff28e285a833202f095a4d7e2b11e5275
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: 32527bd5388693837edf9cb6a87b8388f4e3cb79
+ms.sourcegitcommit: 77d2ab5018371f153d47cc1cd25f9dcbaca28a95
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62120493"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63335693"
 ---
 # <a name="create-accesspackageassignmentpolicy"></a>Criar accessPackageAssignmentPolicy
 
@@ -18,7 +18,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-No gerenciamento de direitos do [Azure AD,](../resources/entitlementmanagement-overview.md)crie um novo [objeto accessPackageAssignmentPolicy.](../resources/accesspackageassignmentpolicy.md)
+No [gerenciamento de direitos do Azure AD](../resources/entitlementmanagement-overview.md), crie um novo [objeto accessPackageAssignmentPolicy](../resources/accesspackageassignmentpolicy.md) .
 
 ## <a name="permissions"></a>Permissões
 
@@ -47,7 +47,7 @@ POST /identityGovernance/entitlementManagement/accessPackageAssignmentPolicies
 
 ## <a name="request-body"></a>Corpo da solicitação
 
-No corpo da solicitação, fornece uma representação JSON de um [objeto accessPackageAssignmentPolicy.](../resources/accesspackageassignmentpolicy.md)
+No corpo da solicitação, fornece uma representação JSON de um [objeto accessPackageAssignmentPolicy](../resources/accesspackageassignmentpolicy.md) .
 
 ## <a name="response"></a>Resposta
 
@@ -503,6 +503,97 @@ Content-type: application/json
 }
 ```
 
+
+
+### <a name="example-4-create-a-policy-and-specify-the-stages-to-trigger-pre-defined-custom-workflow-extensions"></a>Exemplo 4: Criar uma política e especificar os estágios para disparar extensões de fluxo de trabalho personalizadas pré-definidas
+
+#### <a name="request"></a>Solicitação
+
+No exemplo a seguir, o objeto **customAccessPackageWorkflowExtension** predefinido é acionado quando uma solicitação atribuída a um pacote de acesso é criada e quando é concedida.
+
+<!-- {
+  "blockType": "request",
+  "name": "create_accesspackageassignmentpolicy_customaccesspackageworkflowextension"
+}-->
+```msgraph-interactive
+POST https://graph.microsoft.com/beta/identityGovernance/entitlementManagement/accessPackageAssignmentPolicies
+Content-type: application/json
+
+{
+  "displayName": "extension-policy",
+  "description": "test",
+  "accessPackageId": "ba5807c7-2aa9-4c8a-907e-4a17ee587500",
+  "expiration": {
+    "type": "afterDuration",
+    "duration": "P365D"
+  },
+  "canExtend": false,
+  "requestApprovalSettings": null,
+  "requestorSettings": {
+    "acceptRequests": true,
+    "scopeType": "AllExistingDirectorySubjects",
+    "allowedRequestors": [],
+    "isOnBehalfAllowed": false
+  },
+  "accessReviewSettings": null,
+  "questions": [],
+  "customExtensionHandlers": [
+    {
+      "stage": "assignmentRequestCreated",
+      "customExtension": {
+        "id": "219f57b6-7983-45a1-be01-2c228b7a43f8" //customAccessPackageWorkflowExtension.id
+      }
+    },
+    {
+      "stage": "assignmentRequestGranted",
+      "customExtension": {
+        "id": "219f57b6-7983-45a1-be01-2c228b7a43f8"
+      }
+    }
+  ]
+}
+```
+
+
+#### <a name="response"></a>Resposta
+
+Este é um exemplo de resposta. O **objeto customExtensionHandlers** não é retornado por padrão. Para recuperar esse objeto, use o **método GET** com `$expand`. Para obter mais informações, consulte [Recuperar os manipuladores de extensão personalizados para uma política](accesspackageassignmentpolicy-get.md#example-2-retrieve-the-custom-extension-handlers-for-a-policy)
+
+> **Observação:** o objeto de resposta mostrado aqui pode ser encurtado para legibilidade.
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.accessPackageAssignmentPolicy"
+} -->
+
+```http
+HTTP/1.1 201 Created
+Content-type: application/json
+
+{
+  "id": "d0324cbb-24a2-4edb-acca-fee5384c6a5e",
+  "displayName": "extension-policy",
+  "description": "test",
+  "canExtend": false,
+  "durationInDays": 0,
+  "expirationDateTime": null,
+  "accessPackageId": "ba5807c7-2aa9-4c8a-907e-4a17ee587500",
+  "accessReviewSettings": null,
+  "questions": [],
+  "requestorSettings": {
+    "scopeType": "AllExistingDirectorySubjects",
+    "acceptRequests": true,
+    "allowedRequestors": []
+  },
+  "requestApprovalSettings": {
+    "isApprovalRequired": false,
+    "isApprovalRequiredForExtension": false,
+    "isRequestorJustificationRequired": false,
+    "approvalMode": "NoApproval",
+    "approvalStages": []
+  }
+}
+```
 
 <!-- uuid: 16cd6b66-4b1a-43a1-adaf-3a886856ed98
 2019-02-04 14:57:30 UTC -->

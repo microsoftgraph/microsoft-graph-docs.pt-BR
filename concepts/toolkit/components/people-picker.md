@@ -3,20 +3,20 @@ title: People-Picker componente
 description: Você pode usar o componente web mgt-people-picker para pesquisar um número especificado de pessoas e renderizar a lista de resultados por meio do Microsoft Graph.
 ms.localizationpriority: medium
 author: elisenyang
-ms.openlocfilehash: 3646640ca9960d49e862d4791ddab3530e12e3a9
-ms.sourcegitcommit: c7ff992ef63e480d070421ba99b28ee129cb6acb
+ms.openlocfilehash: 110a28d5c9309d95591e210441784a63208fa02f
+ms.sourcegitcommit: 77d2ab5018371f153d47cc1cd25f9dcbaca28a95
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "60694782"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63335364"
 ---
 # <a name="people-picker-component-in-the-microsoft-graph-toolkit"></a>People-Picker componente no microsoft Graph Toolkit
 
-Você pode usar o `mgt-people-picker` componente web para pesquisar pessoas e/ou grupos. Por padrão, o componente procurará por todas as pessoas e usuários na organização, mas você pode alterar o comportamento para também pesquisar grupos ou somente grupos. Você também pode filtrar a pesquisa para um grupo específico. Além disso, você pode permitir que o usuário insira e selecione qualquer endereço de email.
+Você pode usar o componente `mgt-people-picker` web para pesquisar pessoas e/ou grupos. Por padrão, o componente procurará por todas as pessoas e usuários na organização, mas você pode alterar o comportamento para também pesquisar grupos ou somente grupos. Você também pode filtrar a pesquisa para um grupo específico. Além disso, você pode permitir que o usuário insira e selecione qualquer endereço de email.
 
 ## <a name="example"></a>Exemplo
 
-O exemplo a seguir mostra o `mgt-people-picker` componente. Comece a procurar um nome para ver os resultados [](#properties) renderizar e use o editor de código para ver como as propriedades alteram o comportamento do componente.
+O exemplo a seguir mostra o `mgt-people-picker` componente. Comece a procurar um nome para ver os resultados renderizar e use o editor de código para [](#properties) ver como as propriedades alteram o comportamento do componente.
 
 <iframe src="https://mgt.dev/iframe.html?id=components-mgt-people-picker--people-picker&source=docs" height="450"></iframe>
 
@@ -24,24 +24,29 @@ O exemplo a seguir mostra o `mgt-people-picker` componente. Comece a procurar um
 
 ## <a name="properties"></a>Propriedades
 
-Por padrão, `mgt-people-picker` o componente busca pessoas dos pontos de extremidade `/me/people` `/users` e. Use os atributos a seguir para alterar esse comportamento.
+Por padrão, o `mgt-people-picker` componente busca pessoas dos pontos `/me/people` de `/users` extremidade e. Use os atributos a seguir para alterar esse comportamento.
 
 | Atributo | Propriedade | Descrição                                                                                                                                                                            |
 | -------- | --------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | show-max | showMax   | Um valor de número para indicar o número máximo de pessoas a mostrar. o valor padrão é 6.                                                                                             |
 | group-id    | groupId     | Um valor de cadeia de caracteres que pertence a um grupo Graph da Microsoft para filtrar ainda mais os resultados da pesquisa.                                                                            |
 | transitive-search     | transitiveSearch      | Um valor Boolean para executar uma pesquisa transitiva retornando uma lista simples de todos os membros aninhados - por padrão, a pesquisa transitiva não é usada.|
-| type     | type      | O tipo de entidades a ser pesquisada. As opções disponíveis são: `person` , `group` , `any` . O valor padrão é `person`. Esse atributo não terá efeito se `group-id` a propriedade for definida.         
-| tipo de usuário     | userType      | O tipo de usuário a ser pesquisado. As opções disponíveis são: `any` , para `user` usuários organizacionais ou `contact` para contatos. O valor padrão é `any`. |
-| tipo de grupo     | groupType      | O tipo de grupo a ser pesquisado. As opções disponíveis são: `unified` , , , , `security` `mailenabledsecurity` `distribution` `any` . O valor padrão é `any`. Esse atributo não terá efeito se a `type` propriedade for definida como `person` .  |
+| type     | type      | O tipo de entidades a ser pesquisada. As opções disponíveis são: `person`, , `group`. `any` O valor padrão é `person`. Esse atributo não terá efeito se a `group-id` propriedade for definida.         
+| tipo de usuário     | userType      | O tipo de usuário a ser pesquisado. As opções disponíveis são: `any`, para `user` usuários organizacionais ou `contact` para contatos. O valor padrão é `any`. |
+| tipo de grupo     | groupType      | O tipo de grupo a ser pesquisado. As opções disponíveis são: `unified`, `security`, `mailenabledsecurity`, , `distribution`. `any` O valor padrão é `any`. Esse atributo não terá efeito se a `type` propriedade for definida como `person`.  |
 | selected-people  | selectedPeople     | Uma matriz de pessoas selecionadas. De definir esse valor para selecionar pessoas programaticamente.|
 | people   | people    | Uma matriz de pessoas encontradas e renderizadas no resultado da pesquisa |
 | placeholder   | placeholder    | O texto padrão que parece explicar como usar o componente. O valor padrão é `Start typing a name`.
 | default-selected-user-ids | defaultSelectedUserIds | Quando fornecido uma cadeia de caracteres de IDs de usuário separadas por vírgulas da Microsoft Graph, o componente renderiza os respectivos usuários como selecionados após a inicialização.
 | default-selected-group-ids | defaultSelectedGroupIds | Semelhante a IDs de grupo padrão selecionadas-user-ids, quando fornecida uma cadeia de caracteres de IDs de grupo do Microsoft Graph separadas por vírgulas, o componente renderiza os respectivos grupos como selecionados após a inicialização.
-| modo de seleção | selectionMode | Usado para indicar se é possível selecionar vários itens (usuários ou grupos) ou apenas um único item. As opções disponíveis são: `single` , `multiple` . O valor padrão é `multiple`.
+| modo de seleção | selectionMode | Usado para indicar se é possível selecionar vários itens (usuários ou grupos) ou apenas um único item. As opções disponíveis são: `single`, `multiple`. O valor padrão é `multiple`.
 | desabilitadas | desabilitadas | Define se o se picker de pessoas está desabilitado. Quando desabilitado, o usuário não é capaz de pesquisar ou selecionar pessoas.
-| allow-any-email | allowAnyEmail | Indica se o seletor de pessoas pode aceitar endereços de email sem selecionar uma pessoa. O valor padrão é `false`. Ao concluir a digitação de um endereço de email, você pode pressionar vírgula ( ), ponto e vírgula ( ), guia ou inserir `,` `;` teclas para adicioná-lo.
+| disable-images | disableImages | Define se deve desabilitar a busca e a exibição de imagens de pessoas. Quando definido como `true`, as iniciais do usuário são exibidas em vez disso.
+| allow-any-email | allowAnyEmail | Indica se o seletor de pessoas pode aceitar endereços de email sem selecionar uma pessoa. O valor padrão é `false`. Ao concluir a digitação de um endereço de email, você pode pressionar vírgula (`,`), ponto e vírgula (`;`), guia ou inserir teclas para adicioná-lo.
+| user-ids | userIds | Uma cadeia de caracteres de IDs de usuário separadas por vírgulas. Eles aparecerão apenas no menu suspenso ou nos resultados da pesquisa quando você digitar uma consulta. Por exemplo `48d31887-5fad-4d73-a9f5-3c356e68a038,24fcbca3-c3e2-48bf-9ffc-c7f81b81483d` , exibirá apenas os dois usuários no menu suspenso quando a entrada estiver focalizada. Quando você digitar um texto de pesquisa, ele retornará resultados que corresponderão apenas aos usuários nas duas IDs de usuário.
+| user-filters | userFilters | Especifica os critérios de filtro a ser usado ao consultar o ponto de extremidade dos usuários. Ele exige que `user-type` seja definido como `user` ou `contact`. Por padrão, o `user-type` é `any` e isso leva a consulta a ocorrer no bloco `people` do ponto de extremidade. Exemplo: `user-filters="startsWith(displayName,'a')"`. Esse atributo é opcional. Saiba mais sobre [o suporte para filtro em propriedades de usuário de objetos de diretório do Azure AD](/graph/aad-advanced-queries?tabs=http#user-properties).
+| group-filters | groupFilters | Especifica os critérios de filtro a ser usado ao consultar o `groups` ponto de extremidade. Ele exige que `type` seja definido como `group`. Exemplo: `group-filters="startsWith(displayName,'a')"`. Esse atributo é opcional.
+| people-filters | peopleFilters | Especifica os critérios de filtro a ser usado ao consultar o `people` ponto de extremidade. Ele é usado como está. Exemplo: `people-filters="jobTitle eq 'Web Marketing Manager'"`. Esse atributo é opcional. Saiba mais sobre [a filtragem e os recursos com suporte no recurso de pessoas](/graph/people-example).
 
 A seguir, um `show-max` exemplo.
 
@@ -64,16 +69,16 @@ Você pode preencher dados de pessoas selecionadas fazendo um dos seguintes:
     document.querySelector('mgt-people-picker').selectedPeople.push(personObject);
     ```
 
-- Usando o método, que aceita uma matriz de IDs de usuário do Microsoft Graph para `selectUsersById()` encontrar detalhes de usuário [associados](/graph/api/resources/users) para seleção.
+- Usando o `selectUsersById()` método, que aceita uma matriz de [IDs](/graph/api/resources/users) de usuário do Microsoft Graph para encontrar detalhes de usuário associados para seleção.
 
-     >**Observação:** Se nenhum usuário for encontrado para `id` um , nenhum dado será renderizado para isso `id` .
+     >**Observação:** Se nenhum usuário for encontrado para um `id`, nenhum dado será renderizado para isso `id`.
 
     ```javascript
     // id = Microsoft graph User "id"
     document.querySelector('mgt-people-picker').selectUsersById(["id","id"])
     ```
 
-- Usando o método, que aceita uma matriz de IDs de grupo do Microsoft Graph para encontrar os `selectGroupsById()` grupos com usuários associados. [](/graph/api/resources/group)
+- Usando o `selectGroupsById()` método, que aceita uma matriz de [IDs](/graph/api/resources/group) de grupo do Microsoft Graph para encontrar os grupos com usuários associados.
 
     ```javascript
     // groupid = Microsoft graph group "id"
@@ -84,9 +89,9 @@ Você pode preencher dados de pessoas selecionadas fazendo um dos seguintes:
 
 Os eventos a seguir são disparados do componente.
 
-Event | Quando é emitido | Dados personalizados | Cancelável | Bolhas | Funciona com modelo personalizado
+Evento | Quando é emitido | Dados personalizados | Cancelável | Bolhas | Funciona com modelo personalizado
 ------|-------------------|--------------|:-----------:|:---------:|:---------------------------:|
-`selectionChanged` | O usuário adicionou ou removeu uma pessoa da lista de pessoas selecionadas/selecionadas | Matriz de pessoas selecionadas, onde uma pessoa [](/graph/api/resources/person) pode [](/graph/api/resources/contact) ser um usuário Graph [,](/graph/api/resources/user)pessoa ou contato com uma propriedade adicional que contém a URL da foto `personImage` do usuário | Não | Não | Sim, a menos que você substitua o modelo padrão
+`selectionChanged` | O usuário adicionou ou removeu uma pessoa da lista de pessoas selecionadas/selecionadas | Matriz de pessoas selecionadas, onde uma pessoa pode ser [Graph usuário,](/graph/api/resources/user)[](/graph/api/resources/contact) `personImage` pessoa ou contato [](/graph/api/resources/person) com uma propriedade adicional que contém a URL da foto do usuário | Não | Não | Sim, a menos que você substitua o modelo padrão
 
 Para obter mais informações sobre como lidar com eventos, consulte [eventos](../customize-components/events.md).
 
@@ -121,7 +126,7 @@ mgt-people-picker {
 
 ## <a name="templates"></a>Modelos
 
- `mgt-people-picker` oferece suporte [a vários modelos](../customize-components/templates.md) que você pode usar para substituir determinadas partes do componente. Para especificar um modelo, inclua um elemento dentro de um componente e de definir o `<template>` valor como um dos `data-type` seguintes.
+ `mgt-people-picker` oferece suporte [a vários modelos](../customize-components/templates.md) que você pode usar para substituir determinadas partes do componente. Para especificar um modelo, inclua um `<template>` elemento dentro de um componente e de `data-type` definir o valor como um dos seguintes.
 
 | Tipo de dados | Contexto de dados | Descrição |
 | --- | --- | --- |
@@ -148,9 +153,9 @@ Esse componente usa as seguintes APIs Graph Microsoft e permissões.
 
 | Configuração | Permissão | API
 | --- | ---------- | ------- |
-| `group-id` set | People.Read, User.Read.All, GroupMember.Read.All | [/groups/ \$ {groupId}/members](/graph/api/group-list-members) |
+| `group-id` set | People.Read, User.Read.All, GroupMember.Read.All | [/groups/\${groupId}/members](/graph/api/group-list-members) |
 | `type` definir como `Person` ou `any` | People.Read | [/me/people](/graph/api/user-list-people) |
-| `type` definir ou `Group` pesquisar usuários e definir como `type` `Group` ou `any` | Group.Read.All | [/groups](/graph/api/group-list) |
+| `type` definir ou `Group` pesquisar usuários e `type` definir como `Group` ou `any` | Group.Read.All | [/groups](/graph/api/group-list) |
 | `default-selected-user-ids` set | User.ReadBasic.All | [/users](/graph/api/user-list) |
 | procurando usuários e `type` definido como `Person` ou `any` | People.Read, User.ReadBasic.All | [/me/people](/graph/api/user-list-people), [/users](/graph/api/user-list) |
 
@@ -170,7 +175,7 @@ Consulte [Caching](../customize-components/cache.md) para obter mais detalhes so
 
 ## <a name="extend-for-more-control"></a>Estender para obter mais controle
 
-Para cenários mais complexos ou um UX realmente personalizado, esse componente expõe vários métodos para substituição `protected render*` em extensões de componentes.
+Para cenários mais complexos ou um UX realmente personalizado, `protected render*` esse componente expõe vários métodos para substituição em extensões de componentes.
 
 | Método | Descrição |
 | - | - |

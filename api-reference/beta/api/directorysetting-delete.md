@@ -1,26 +1,24 @@
 ---
-title: Excluir uma configuração de diretório
+title: Excluir directorySetting
 description: Excluir uma configuração de diretório.
 author: adimitui
 ms.localizationpriority: medium
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: 8895677736d713564e351ac1b7f91568a1317d3c
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: 0fcecbfbb3d5133eb2bed9377f653ebe1cc8608c
+ms.sourcegitcommit: 77d2ab5018371f153d47cc1cd25f9dcbaca28a95
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62096781"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63336099"
 ---
-# <a name="delete-a-directory-setting"></a>Excluir uma configuração de diretório
+# <a name="delete-directorysetting"></a>Excluir directorySetting
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Excluir uma configuração de diretório.
-
-> **Observação**: a versão /beta dessa API só se aplica a grupos. A versão /v1.0 desta API foi renomeada para *Excluir groupSettings*.
 
 ## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
@@ -33,12 +31,17 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- { "blockType": "ignored" } -->
-Excluir uma configuração específica de grupo ou de locatário
+Exclua uma configuração em todo o locatário.
 ```http
-DELETE /settings/{id}
-DELETE /groups/{id}/settings/{id}
-
+DELETE /settings/{directorySettingId}
 ```
+
+<!-- { "blockType": "ignored" } -->
+Exclua uma configuração específica do grupo.
+```http
+DELETE /groups/{groupId}/settings/{directorySettingId}
+```
+
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
 | Nome       | Descrição|
 |:---------------|:----------|
@@ -52,7 +55,7 @@ Não forneça um corpo de solicitação para esse método.
 Se bem-sucedido, este método retorna um código de resposta `204 No Content`. Não retorna nada no corpo da resposta.
 
 ## <a name="example"></a>Exemplo
-##### <a name="request"></a>Solicitação
+### <a name="request"></a>Solicitação
 Este é um exemplo da solicitação.
 
 # <a name="http"></a>[HTTP](#tab/http)
@@ -60,8 +63,8 @@ Este é um exemplo da solicitação.
   "blockType": "request",
   "name": "delete_directorysetting"
 }-->
-```http
-DELETE https://graph.microsoft.com/beta/settings/{id}
+```msgraph-interactive
+DELETE https://graph.microsoft.com/beta/settings/3c105fc3-2254-4861-9e2d-d59e2126f3ef
 ```
 # <a name="c"></a>[C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/delete-directorysetting-csharp-snippets.md)]
@@ -89,7 +92,7 @@ DELETE https://graph.microsoft.com/beta/settings/{id}
 
 ---
 
-##### <a name="response"></a>Resposta
+### <a name="response"></a>Resposta
 <!-- {
   "blockType": "response",
   "truncated": true

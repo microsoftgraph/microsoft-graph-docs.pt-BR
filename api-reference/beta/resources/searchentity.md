@@ -1,16 +1,16 @@
 ---
 title: Tipo de recurso searchEntity
-description: Um objeto de nível superior que representa o ponto de extremidade da API de Pesquisa da Microsoft.
-localization_priority: Normal
+description: Um objeto de nível superior que representa o ponto de extremidade Pesquisa da Microsoft API.
+ms.localizationpriority: medium
 author: nmoreau
 ms.prod: search
 doc_type: resourcePageType
-ms.openlocfilehash: d62292b3a4890589d72214a3544059eaf8af8817
-ms.sourcegitcommit: 1b09298649d5606b471b4cbe1055419bbe2fc7e5
+ms.openlocfilehash: 39f5213e9be29f9fd87332513c3d0b090e3d3e1f
+ms.sourcegitcommit: 77d2ab5018371f153d47cc1cd25f9dcbaca28a95
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "52067128"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63335182"
 ---
 # <a name="searchentity-resource-type"></a>Tipo de recurso searchEntity
 
@@ -18,20 +18,27 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Um objeto de nível superior que representa o ponto de extremidade da API de Pesquisa da Microsoft. Ele não se comporta como qualquer outro recurso no Graph, mas serve como uma âncora para a [ação de](../api/search-query.md) consulta. 
+Um objeto de nível superior que representa o ponto de extremidade Pesquisa da Microsoft API.
+
+Ele serve como âncora para a ação [de](../api/search-query.md) consulta e relações de resposta de pesquisa, como acrônimos, [indicadores](../resources/search-bookmark.md) e [qnas](../resources/search-qna.md).[](../resources/search-acronym.md) 
 
 [!INCLUDE [search-api-preview](../../includes/search-api-preview-signup.md)]
 
 ## <a name="methods"></a>Métodos
 |Método|Tipo de retorno|Descrição|
 |:---|:---|:---|
-|[query](../api/search-query.md) |[searchResponse](searchresponse.md) | Executa a consulta especificada no corpo da solicitação.  |
+|[query](../api/search-query.md) |[Coleção searchResponse](searchresponse.md) | Execute uma consulta de pesquisa especificada.   |
 
 ## <a name="properties"></a>Propriedades
 Nenhum.
 
 ## <a name="relationships"></a>Relações
-Nenhum
+| Relação | Tipo |Descrição|
+|:---------------|:--------|:----------|
+| acrônimos | [coleção microsoft.graph.search.acronym](../resources/search-acronym.md) | Resposta administrativa em Pesquisa da Microsoft para definir acrônimos comuns em uma organização.  |
+| indicadores | [coleção microsoft.graph.search.bookmark](../resources/search-bookmark.md) | Resposta administrativa em Pesquisa da Microsoft resultados para consultas de pesquisa comuns em uma organização. |
+| qnas | [coleção microsoft.graph.search.qna](../resources/search-qna.md) | Resposta administrativa em Pesquisa da Microsoft resultados que fornecem respostas para palavras-chave de pesquisa específicas em uma organização. |
+
 
 ## <a name="json-representation"></a>Representação JSON
 Veja a seguir uma representação JSON do recurso.
@@ -48,9 +55,9 @@ Veja a seguir uma representação JSON do recurso.
 ```
 
 
-## <a name="next-steps"></a>Próximas etapas
+## <a name="see-also"></a>Confira também
 
-Explore [a ação de](../api/search-query.md) consulta.
+[query](../api/search-query.md)
 
 
 <!-- uuid: 16cd6b66-4b1a-43a1-adaf-3a886856ed98

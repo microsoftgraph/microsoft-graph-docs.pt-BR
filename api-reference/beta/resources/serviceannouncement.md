@@ -2,15 +2,15 @@
 title: Tipo de recurso serviceAnnouncement
 description: Um contêiner de nível superior para recursos de comunicações de serviço
 author: payiAzure
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: service-communications
 doc_type: resourcePageType
-ms.openlocfilehash: c22cbcd9fd8e67137e649cc099ff7980468c246f
-ms.sourcegitcommit: d586ddb253d27f9ccb621bd128f6a6b4b1933918
+ms.openlocfilehash: 86cd4c330cb84b75cf218191ad76b1ed9ed21154
+ms.sourcegitcommit: 77d2ab5018371f153d47cc1cd25f9dcbaca28a95
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/24/2021
-ms.locfileid: "53109069"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63335427"
 ---
 # <a name="serviceannouncement-resource-type"></a>Tipo de recurso serviceAnnouncement
 
@@ -31,9 +31,9 @@ Um contêiner de nível superior para recursos de comunicações de serviço.
 Nenhum.
 
 ## <a name="relationships"></a>Relações
-|Propriedade|Tipo|Descrição|
+|Relação|Tipo|Descrição|
 |-|-|-|
-|messages|Coleção([serviceUpdateMessage](serviceupdatemessage.md))|Uma coleção de mensagens de serviço para locatário. Essa propriedade é uma propriedade de navegação contida, ela é anulada e readonly.|
+|messages|Collection([serviceUpdateMessage](serviceupdatemessage.md))|Uma coleção de mensagens de serviço para locatário. Essa propriedade é uma propriedade de navegação contida, ela é anulada e readonly.|
 |healthOverviews|Collection([serviceHealth](servicehealth.md))|Uma coleção de informações de saúde do serviço para locatário. Essa propriedade é uma propriedade de navegação contida, ela é anulada e readonly.|
 |issues|Collection([serviceHealthIssue](servicehealthissue.md))|Uma coleção de problemas de serviço para locatário. Essa propriedade é uma propriedade de navegação contida, ela é anulada e readonly.|
 

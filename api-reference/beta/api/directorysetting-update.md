@@ -1,18 +1,18 @@
 ---
-title: Atualizar uma configuração de diretório
+title: Atualizar directorySetting
 description: Atualize as propriedades de um objeto de configuração de diretório específico.
 author: adimitui
 ms.localizationpriority: medium
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: fc260ec6493417a6d0786ca8c7f8572b3845e3e4
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: bd25d5b60fff3211c0db874b7b634171658d8cba
+ms.sourcegitcommit: 77d2ab5018371f153d47cc1cd25f9dcbaca28a95
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62100288"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63335462"
 ---
-# <a name="update-a-directory-setting"></a>Atualizar uma configuração de diretório
+# <a name="update-directorysetting"></a>Atualizar directorySetting
 
 Namespace: microsoft.graph
 
@@ -20,7 +20,6 @@ Namespace: microsoft.graph
 
 Atualize as propriedades de um objeto de configuração de diretório específico.
 
-> **Observação**: a versão /beta dessa API só se aplica a grupos. A versão /v1.0 desta API foi renomeada para *Update groupSettings*.
 
 ## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
@@ -31,13 +30,20 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |Delegado (conta pessoal da Microsoft) | Sem suporte.    |
 |Aplicativo | Directory.ReadWrite.All |
 
+
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- { "blockType": "ignored" } -->
-Atualizar uma configuração específica de grupo ou de locatário como um todo.
+Atualize uma configuração de todo o locatário.
 ```http
-PATCH /settings/{id}
-PATCH /groups/{id}/settings/{id}
+PATCH /settings/{directorySettingId}
 ```
+
+<!-- { "blockType": "ignored" } -->
+Atualize uma configuração específica do grupo.
+```http
+PATCH /groups/{groupId}/settings/{directorySettingId}
+```
+
 ## <a name="optional-request-headers"></a>Cabeçalhos de solicitação opcionais
 | Nome       | Descrição|
 |:-----------|:-----------|
@@ -55,7 +61,7 @@ No corpo da solicitação, forneça os valores para os campos relevantes que dev
 Se tiver êxito, este método retornará um código de resposta `204 OK`.
 
 ## <a name="example"></a>Exemplo
-##### <a name="request"></a>Solicitação
+### <a name="request"></a>Solicitação
 Este é um exemplo da solicitação.
 
 # <a name="http"></a>[HTTP](#tab/http)
@@ -63,17 +69,17 @@ Este é um exemplo da solicitação.
   "blockType": "request",
   "name": "update_directorysetting"
 }-->
-```http
-PATCH https://graph.microsoft.com/beta/settings/{id}
+```msgraph-interactive
+PATCH https://graph.microsoft.com/beta/settings/3c105fc3-2254-4861-9e2d-d59e2126f3ef
 Content-type: application/json
 
 {
-  "values": [
-    {
-      "name": "name-value",
-      "value": "value-value"
-    }
-  ]
+    "values": [
+        {
+            "name": "CustomBlockedWordsList",
+            "value": "Contoso"
+        }
+    ]
 }
 ```
 # <a name="c"></a>[C#](#tab/csharp)
@@ -102,7 +108,7 @@ Content-type: application/json
 
 ---
 
-##### <a name="response"></a>Resposta
+### <a name="response"></a>Resposta
 <!-- {
   "blockType": "response"
 } -->

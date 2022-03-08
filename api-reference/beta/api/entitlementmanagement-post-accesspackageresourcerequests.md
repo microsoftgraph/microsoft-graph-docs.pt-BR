@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: markwahl-msft
 ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: ad210433e5a02282016273fbd0b3e708f2ffac79
-ms.sourcegitcommit: dbacb04ae7138ac3b109683e63a6ff27c166f421
+ms.openlocfilehash: c0dd53ebb2c8c76814b44a7423b9ee5e896746cb
+ms.sourcegitcommit: 77d2ab5018371f153d47cc1cd25f9dcbaca28a95
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/14/2022
-ms.locfileid: "62804147"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63334895"
 ---
 # <a name="create-accesspackageresourcerequest"></a>Criar accessPackageResourceRequest
 
@@ -49,14 +49,15 @@ POST /identityGovernance/entitlementManagement/accessPackageResourceRequests
 
 No corpo da solicitação, fornece uma representação JSON de um [objeto accessPackageResourceRequest](../resources/accesspackageresourcerequest.md) . Inclua a `accessPackageResource` relação com um [objeto accessPackageResource](../resources/accesspackageresource.md) como parte da solicitação.
 
-Para adicionar um grupo do Azure AD como um recurso a um catálogo, de definir a **catalogId** como da ID do catálogo, **requestType** `AdminAdd`como e `accessPackageResource` representando o recurso. O valor da **propriedade originSystem** dentro do `accessPackageResource` deve ser `AadGroup` e o valor da **originId** é o identificador do grupo.
+Para adicionar um grupo do Azure AD como um recurso a um catálogo, de definir a **catalogId** como da ID do catálogo, **requestType** `AdminAdd`como e `accessPackageResource` representando o recurso. O valor da **propriedade originSystem** dentro do `accessPackageResource` deve ser `AadGroup` e o valor da **originId** é o identificador do grupo.  Se estiver usando permissões delegadas, o usuário que solicitar adicionar um grupo deverá ser um proprietário do grupo ou em uma função de diretório que permita modificar grupos. Se estiver usando permissões de aplicativo, o aplicativo solicitando adicionar o grupo também deverá ter a `Group.ReadWrite.All` permissão atribuída.
 
-Para remover um aplicativo do Azure AD de um catálogo, de definir **a catalogId** como da ID do catálogo, **requestType** `AdminRemove`como e `accessPackageResource` o objeto de recurso a ser removido.  O objeto resource pode ser recuperado usando [list accessPackageResources](accesspackagecatalog-list-accesspackageresources.md).
+Para adicionar um aplicativo do Azure AD como um recurso a um catálogo, de definir a **catalogId** como da ID do catálogo, **requestType** `AdminAdd`como e `accessPackageResource` representando o recurso. O valor da **propriedade originSystem** `accessPackageResource` dentro do deve ser `AadApplication` e o valor da **originId** é o identificador do [servicePrincipal](../resources/serviceprincipal.md).  Se estiver usando permissões delegadas, o usuário que solicitar adicionar um aplicativo deverá ser proprietário do aplicativo ou em uma função de diretório que permita modificar atribuições de função de aplicativo.
 
-Para atribuir o ambiente de localização geográfica a um recurso do Sharepoint Online multilocação geográfica, inclua a relação **accessPackageResourceEnvironment** no `accessPackageResource` objeto. Isso pode ser feito de duas maneiras:
+Para adicionar um site SharePoint Online como um recurso a um catálogo, de definir a **catalogId** como da ID do catálogo, **requestType** `AdminAdd`como e `accessPackageResource` representando o recurso. O valor da **propriedade originSystem** dentro do `accessPackageResource` deve ser `SharePointOnline` e o valor do **originId** é o URI do [site](../resources/site.md).  Se estiver usando permissões delegadas, o usuário deverá estar na função SharePoint Administrador. Se estiver usando permissões de aplicativo, o aplicativo solicitando adicionar o site também deverá ter a `Sites.FullControl.All` permissão atribuída. Para atribuir o ambiente de localização geográfica a um recurso do Sharepoint Online multilocação geográfica, inclua a relação **accessPackageResourceEnvironment** no `accessPackageResource` objeto. Isso pode ser feito de duas maneiras:
 + Use `@odata.bind` anotação para atribuir o `id` do a `accessPackageResourceEnvironment` um `accessPackageResourceEnvironment` objeto.
 + Especifique `originId` o parâmetro do `accessPackageResourceEnvironment` em um `accessPackageResourceEnvironment` objeto.
 
+Para remover um recurso de um catálogo, de definir **a catalogId** como da ID do catálogo, **requestType** `AdminRemove`como , `accessPackageResource` e o objeto de recurso a ser removido.  O objeto resource pode ser recuperado usando [list accessPackageResources](accesspackagecatalog-list-accesspackageresources.md).
 
 ## <a name="response"></a>Resposta
 
@@ -148,7 +149,7 @@ Content-type: application/json
 }
 ```
 
-### <a name="example-2-create-an-accesspackageresourcerequest-for-adding-a-site-as-a-resource-and-assign-an-accesspackageresourceenvironment-using-odatabind"></a>Exemplo 2: crie um accessPackageResourceRequest para adicionar um site como um recurso e atribuir um accessPackageResourceEnvironment usando @odata.bind
+### <a name="example-2-create-an-accesspackageresourcerequest-for-adding-a-site-as-a-resource-and-assign-an-accesspackageresourceenvironment-using-odatabind"></a>Exemplo 2: criar um accessPackageResourceRequest para adicionar um site como um recurso e atribuir um accessPackageResourceEnvironment usando @odata.bind
 
 #### <a name="request"></a>Solicitação
 
@@ -485,6 +486,8 @@ Content-type: application/json
 
 A seguir, um exemplo da solicitação para adicionar um aplicativo a um catálogo, incluindo a especificação de um atributo necessário desse aplicativo.
 
+
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "create_accesspackageresourcerequest_from_accesspackageresourcerequests6"
@@ -531,6 +534,32 @@ Content-type: application/json
 }
 
 ```
+# <a name="c"></a>[C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/create-accesspackageresourcerequest-from-accesspackageresourcerequests6-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/create-accesspackageresourcerequest-from-accesspackageresourcerequests6-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/create-accesspackageresourcerequest-from-accesspackageresourcerequests6-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/create-accesspackageresourcerequest-from-accesspackageresourcerequests6-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[Ir](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/create-accesspackageresourcerequest-from-accesspackageresourcerequests6-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/create-accesspackageresourcerequest-from-accesspackageresourcerequests6-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 #### <a name="response"></a>Resposta
 
