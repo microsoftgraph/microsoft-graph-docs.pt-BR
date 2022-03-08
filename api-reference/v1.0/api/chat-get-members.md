@@ -1,16 +1,16 @@
 ---
 title: Obtenha o conversationMember em um bate-papo.
 description: Recuperar um membro de um bate-papo.
-author: bhartono
+author: anandjo
 ms.localizationpriority: high
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 64b3b256b14a13023598def4651bb36a86d9f399
-ms.sourcegitcommit: 871db8b3f68489d24e2aeafe694725579ee44c47
+ms.openlocfilehash: ccda8ea94471818ece8073cf9ada0a02e9bb0330
+ms.sourcegitcommit: 77d2ab5018371f153d47cc1cd25f9dcbaca28a95
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/26/2022
-ms.locfileid: "62224459"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63333306"
 ---
 # <a name="get-conversationmember-in-a-chat"></a>Obtenha o conversationMember em um bate-papo.
 

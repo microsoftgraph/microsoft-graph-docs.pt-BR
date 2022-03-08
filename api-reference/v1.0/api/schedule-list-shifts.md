@@ -5,12 +5,12 @@ author: akumar39
 ms.localizationpriority: medium
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: bfbc5c890d47ab765ac59f40ef89181533d2e1e7
-ms.sourcegitcommit: 25acfa7d0153336c9a35d30a1dd422aeadc1342c
+ms.openlocfilehash: 09cc43fe73d68ecc51c69218389fbad6c94f3ab9
+ms.sourcegitcommit: 77d2ab5018371f153d47cc1cd25f9dcbaca28a95
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/03/2022
-ms.locfileid: "62344723"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63333250"
 ---
 # <a name="list-shifts"></a>Listar turnos
 
@@ -26,7 +26,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |:--------------------|:---------------------------------------------------------|
 |Delegado (conta corporativa ou de estudante) | Schedule.Read.All, Group.Read.All,Schedule.ReadWrite.All, Group.ReadWrite.All    |
 |Delegado (conta pessoal da Microsoft) | Sem suporte.    |
-|Aplicativo | Schedule.Read.All, Schedule.ReadWrite.All |
+|Application | Schedule.Read.All, Schedule.ReadWrite.All |
 
 > **Observação**: esta API oferece transporte a permissões de administrador. Os administradores globais podem acessar grupos dos que não são membros.
 
@@ -39,7 +39,11 @@ GET /teams/{teamId}/schedule/shifts
 ```
 
 ## <a name="optional-query-parameters"></a>Parâmetros de consulta opcionais
+
 Este método dá suporte ao parâmetro `$filter` [de consulta OData](/graph/query-parameters) para ajudar a personalizar a resposta.
+
+> [!NOTE]
+> O `$filter` parâmetro não dá suporte ao uso da mesma propriedade mais de uma vez em uma consulta. Por exemplo, a seguinte consulta não funcionará: `sharedShift/startDateTime ge 2019-05-09T00:00:00Z and sharedShift/startDateTime le 2019-05-09T23:59:59Z`.
 
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
 

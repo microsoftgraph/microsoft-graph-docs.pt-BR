@@ -1,21 +1,21 @@
 ---
 title: Atualizar chat
 description: Atualize as propriedades de um objeto de chat.
-author: bhartono
+author: anandjo
 ms.localizationpriority: medium
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 307100bc9c7987d390eadaaf37d41fa98409f57f
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: 852ed7f4ac74829d5a3c319599126255258bbd89
+ms.sourcegitcommit: 77d2ab5018371f153d47cc1cd25f9dcbaca28a95
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62117938"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63333698"
 ---
 # <a name="update-chat"></a>Atualizar chat
 Namespace: microsoft.graph
 
-Atualize as propriedades de um [objeto de chat.](../resources/chat.md)
+Atualize as propriedades de um [objeto de chat](../resources/chat.md) .
 
 ## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
@@ -43,18 +43,18 @@ PATCH /chats/{chat-id}
 |Content-Type|application/json. Obrigatório.|
 
 ## <a name="request-body"></a>Corpo da solicitação
-No corpo da solicitação, fornece uma representação JSON do [objeto chat.](../resources/chat.md)
+No corpo da solicitação, fornece uma representação JSON do [objeto chat](../resources/chat.md) .
 
 A tabela a seguir mostra as propriedades que podem ser usadas com essa ação.
 
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|topic|String|O título do chat. Isso só pode ser definido para um chat com um **valor chatType** de `group` .|
+|topic|String|O título do chat. Isso só pode ser definido para um chat com um **valor chatType** de `group`.|
 
 
 ## <a name="response"></a>Resposta
 
-Se tiver êxito, este método retornará um `200 OK response` código e o recurso de **chat** atualizado no corpo da resposta.
+Se tiver êxito, este método retornará um `200 OK response` código e o recurso **de chat** atualizado no corpo da resposta.
 
 ## <a name="examples"></a>Exemplos
 

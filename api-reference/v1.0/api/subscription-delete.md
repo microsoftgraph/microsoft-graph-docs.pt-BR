@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: Jumaodhiss
 doc_type: apiPageType
 ms.prod: change-notifications
-ms.openlocfilehash: efb5e63a5354f595a3e7e697a7089b57441d8dd3
-ms.sourcegitcommit: 4c8444b732b8d6d0de8a95f6666c42095f146266
+ms.openlocfilehash: 8cb0ea6ce1d95a1548cc02de4640ab3a5e3dadac
+ms.sourcegitcommit: 77d2ab5018371f153d47cc1cd25f9dcbaca28a95
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/08/2022
-ms.locfileid: "62443392"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63333922"
 ---
 # <a name="delete-subscription"></a>Excluir assinatura
 
@@ -57,13 +57,9 @@ No OneDrive pessoal, você pode se inscrever em qualquer pasta raiz ou qualquer 
 
 ### <a name="contact-event-and-message"></a>contato, evento e mensagem
 
-As limitações adicionais se aplicam aos itens do Outlook. As limitações se aplicam para criação e gerenciamento de assinaturas (receber, atualizar e excluir assinaturas).
+Você pode assinar as alterações nos recursos de **contato****, evento** **ou mensagem Outlook** contato.
 
-- A permissão delegada dá suporte a inscrição de itens em pastas apenas na caixa de correio do usuário conectado. Por exemplo, você não pode usar os Calendários de permissões delegadas. Leia para assinar eventos na caixa de correio de outro usuário.
-- Se inscrever para alterar as notificações de contatos, eventos no Outlook ou mensagens em pastas _compartilhadas ou delegadas_:
-
-  - Usar a permissão de aplicativos correspondentes para inscrever as alterações dos itens em uma pasta ou uma caixa de correio de _qualquer_ usuários no locatário.
-  - Não use as permissões de compartilhamento do Outlook (Contacts.Read.Shared Calendars.Read.Shared, Mail.Read.Shared e seus equivalentes de somente leitura), pois eles **não** suportam inscrições que alteram as notificações em itens de pastas compartilhadas ou delegadas.
+[!INCLUDE [outlook-subscription-notes](../../includes/outlook-subscription-notes.md)]
 
 
 ## <a name="http-request"></a>Solicitação HTTP

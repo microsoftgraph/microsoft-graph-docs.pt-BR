@@ -1,22 +1,22 @@
 ---
-title: Atualizar uma configuração de grupo
+title: Atualizar groupSetting
 description: Atualize as propriedades de um objeto de configuração de grupo específico.
 author: Jordanndahl
 ms.localizationpriority: medium
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: e003606daf271aa0a6da6eeb483f5524bdc555bc
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: 896762d4478cb02a6cd0d1c0007ba3cb58548398
+ms.sourcegitcommit: 77d2ab5018371f153d47cc1cd25f9dcbaca28a95
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "60993094"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63331857"
 ---
-# <a name="update-a-group-setting"></a>Atualizar uma configuração de grupo
+# <a name="update-groupsetting"></a>Atualizar groupSetting
 
 Namespace: microsoft.graph
 
-Atualize as propriedades de um objeto [](../resources/group.md) [groupSetting](../resources/groupsetting.md) para configurações de grupo em todo o locatário ou uma configuração de grupo específica.
+Atualize as propriedades de um [objeto groupSetting](../resources/groupsetting.md) para configurações [](../resources/group.md) de grupo em todo o locatário ou uma configuração de grupo específica.
 
 ## <a name="permissions"></a>Permissões
 
@@ -27,17 +27,22 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |:--------------------|:---------------------------------------------------------|
 |Delegado (conta corporativa ou de estudante) | Directory.ReadWrite.All, Directory.AccessAsUser.All    |
 |Delegado (conta pessoal da Microsoft) | Sem suporte.    |
-|Aplicativo | Directory.ReadWrite.All |
+|Application | Directory.ReadWrite.All |
 
 ## <a name="http-request"></a>Solicitação HTTP
+
 <!-- { "blockType": "ignored" } -->
-
-
-
+Atualize uma configuração de todo o locatário.
 ```http
-PATCH /groupSettings/{id}
-PATCH /groups/{id}/settings/{id}
+PATCH /groupSettings/{groupSettingId}
 ```
+
+<!-- { "blockType": "ignored" } -->
+Atualize uma configuração específica do grupo.
+```http
+PATCH /groups/{groupId}/settings/{groupSettingId}
+```
+
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
 | Nome | Descrição |
 |:-----------|:-----------|
@@ -59,7 +64,7 @@ Se tiver êxito, este método retornará um código de resposta `204 No Content`
 
 ### <a name="example-1-update-a-tenant-wide-group-setting"></a>Exemplo 1: atualizar uma configuração de grupo em todo o locatário
 
-Neste exemplo, é o identificador do objeto groupSetting em todo o `{id}` locatário.
+Neste exemplo, é `84af2ca5-c274-41bf-86e4-6e374ec4def6` o identificador do objeto **groupSetting** em todo o locatário.
 
 #### <a name="request"></a>Solicitação
 
@@ -67,19 +72,19 @@ Neste exemplo, é o identificador do objeto groupSetting em todo o `{id}` locat�
 # <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "update_tenant_setting"
+  "name": "update_tenant_groupsetting"
 }-->
-```http
-PATCH https://graph.microsoft.com/v1.0/groupSettings/f0b2d6f5-097d-4177-91af-a24e530b53cc
+```msgraph-interactive
+PATCH https://graph.microsoft.com/v1.0/groupSettings/84af2ca5-c274-41bf-86e4-6e374ec4def6
 Content-type: application/json
 
 {
-  "values": [
-    {
-      "name": "AllowToAddGuests",
-      "value": "false"
-    }
-  ]
+    "values": [
+        {
+            "name": "AllowToAddGuests",
+            "value": "false"
+        }
+    ]
 }
 ```
 # <a name="c"></a>[C#](#tab/csharp)
@@ -98,7 +103,7 @@ Content-type: application/json
 [!INCLUDE [sample-code](../includes/snippets/java/update-tenant-setting-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[Go](#tab/go)
+# <a name="go"></a>[Ir](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/update-tenant-setting-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
@@ -117,18 +122,16 @@ HTTP/1.1 204 No Content
 
 ### <a name="example-2-update-a-specific-group-setting"></a>Exemplo 2: Atualizar uma configuração de grupo específica
 
-Neste exemplo, o primeiro na solicitação é o identificador do grupo e o segundo é o identificador do `{id}` `{id}` objeto groupSetting.
+Neste exemplo, é `0167b5af-f3d1-4910-82d2-398747fa381c` o identificador do grupo e `fa6df613-159b-4f94-add2-7093f961900b` é o identificador do objeto groupSetting.
 
 #### <a name="request"></a>Solicitação
-
-
 
 # <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "update_groupsetting"
 }-->
-```http
+```msgraph-interactive
 PATCH https://graph.microsoft.com/v1.0/groups/0167b5af-f3d1-4910-82d2-398747fa381c/settings/fa6df613-159b-4f94-add2-7093f961900b
 Content-type: application/json
 
@@ -157,7 +160,7 @@ Content-type: application/json
 [!INCLUDE [sample-code](../includes/snippets/java/update-groupsetting-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[Go](#tab/go)
+# <a name="go"></a>[Ir](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/update-groupsetting-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 

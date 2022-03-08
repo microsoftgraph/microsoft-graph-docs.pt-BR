@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: jpettere
 ms.prod: directory-management
 doc_type: resourcePageType
-ms.openlocfilehash: e7ffa073280c3b6b88284f95ce5f582566b629e6
-ms.sourcegitcommit: 6968f5aaf40089684efb0c38a95f6cca353c1d92
+ms.openlocfilehash: 599a462e49822c6b69fe75ac7104a101e986db6c
+ms.sourcegitcommit: 77d2ab5018371f153d47cc1cd25f9dcbaca28a95
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/16/2022
-ms.locfileid: "62854866"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63333187"
 ---
 # <a name="assignedplan-resource-type"></a>Tipo de recurso assignedPlan
 
@@ -25,8 +25,8 @@ A propriedade **assignedPlans** das entidades [user](user.md) e [organization](o
 |:---------------|:--------|:----------|
 |assignedDateTime|DateTimeOffset|A data e a hora em que o plano foi atribuído. O tipo Timestamp representa informações de data e hora usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite UTC em 1 de janeiro de 2014 é `2014-01-01T00:00:00Z`.|
 |capabilityStatus|Cadeia de caracteres|Condição da atribuição de recursos. Os valores possíveis são , , , , `LockedOut``Deleted`. `Suspended``Warning``Enabled` Consulte [uma descrição detalhada](#capabilitystatus-values) de cada valor.|
-|service|Cadeia de caracteres|O nome do serviço; por exemplo, "Exchange".|
-|servicePlanId|GUID|Um GUID que identifica o plano de serviço.|
+|service|Cadeia de caracteres|O nome do serviço; por exemplo, `exchange`.|
+|servicePlanId|Guid|Um GUID que identifica o plano de serviço. Para uma lista completa de GUIDs e seus nomes de serviço amigáveis equivalentes, consulte Nomes de produtos e identificadores de plano de [serviço para licenciamento](/azure/active-directory/enterprise-users/licensing-service-plan-reference).|
 
 
 ### <a name="capabilitystatus-values"></a>valores de capabilityStatus
@@ -56,7 +56,7 @@ Veja a seguir uma representação JSON do recurso
   "assignedDateTime": "String (timestamp)",
   "capabilityStatus": "String",
   "service": "String",
-  "servicePlanId": "GUID"
+  "servicePlanId": "Guid"
 }
 
 ```

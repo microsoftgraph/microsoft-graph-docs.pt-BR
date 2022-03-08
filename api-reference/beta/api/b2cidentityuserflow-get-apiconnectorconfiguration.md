@@ -2,15 +2,15 @@
 title: Obter userFlowApiConnectorConfiguration
 description: Obter a propriedade userFlowApiConnectorConfiguration de um b2cIdentityUserFlow.
 author: nickgmicrosoft
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: d582b55a37845a855e79ff90e8eb510f50c4e03e
-ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
+ms.openlocfilehash: 2ca6062f803cfe1323d5de880369693babe5b91b
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50438320"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "63332403"
 ---
 # <a name="get-userflowapiconnectorconfiguration"></a>Obter userFlowApiConnectorConfiguration
 
@@ -28,12 +28,12 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |:--------------------|:---------------------------------------------------------|
 |Delegado (conta corporativa ou de estudante)|IdentityUserFlow.ReadWrite.All|
 |Delegado (conta pessoal da Microsoft)| Sem suporte.|
-|Aplicativo|IdentityUserFlow.ReadWrite.All|
+|Application|IdentityUserFlow.ReadWrite.All|
 
 A conta de trabalho ou de estudante precisa pertencer a uma das seguintes funções:
 
 * Administrador global
-* Administrador de Fluxo de Usuário de Identidade Externa
+* Administrador de identidade externa Flow usuário
 
 ## <a name="http-request"></a>Solicitação HTTP
 
@@ -48,7 +48,7 @@ GET identity/b2cUserFlows/{id}/apiConnectorConfiguration
 
 ## <a name="optional-query-parameters"></a>Parâmetros de consulta opcionais
 
-Este método dá suporte ao `$expand` parâmetro de consulta OData para ajudar a personalizar a resposta. Por exemplo, para recuperar o conector de API para as `postFederationSignup` etapas `postAttributeCollection` e, adicione `$expand=postFederationSignup,postAttributeCollection` . Para obter informações gerais, acesse [Parâmetros de consulta OData](/graph/query-parameters).
+Este método dá suporte ao parâmetro `$expand` de consulta OData para ajudar a personalizar a resposta. Por exemplo, para recuperar o conector de API para as etapas `postFederationSignup` e `postAttributeCollection` , adicione `$expand=postFederationSignup,postAttributeCollection`. Para obter informações gerais, acesse [Parâmetros de consulta OData](/graph/query-parameters).
 
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
 
@@ -62,7 +62,7 @@ Não forneça um corpo de solicitação para esse método.
 
 ## <a name="response"></a>Resposta
 
-Se tiver êxito, este método retornará um código `200 OK` de resposta e um objeto [apiConnectorConfiguration.](../resources/userflowapiconnectorconfiguration.md)
+Se tiver êxito, este método retornará um `200 OK` código de resposta e um [objeto apiConnectorConfiguration](../resources/userflowapiconnectorconfiguration.md) .
 
 ## <a name="examples"></a>Exemplos
 

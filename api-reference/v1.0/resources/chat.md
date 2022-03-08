@@ -5,12 +5,12 @@ author: RamjotSingh
 ms.localizationpriority: medium
 ms.prod: microsoft-teams
 doc_type: resourcePageType
-ms.openlocfilehash: 05f8614ca9f869d23f987e268e48c101bf7462e4
-ms.sourcegitcommit: 4c8444b732b8d6d0de8a95f6666c42095f146266
+ms.openlocfilehash: a4082bd35d23a7b221f914da5521e91db4892e63
+ms.sourcegitcommit: 77d2ab5018371f153d47cc1cd25f9dcbaca28a95
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/08/2022
-ms.locfileid: "62443034"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63333159"
 ---
 # <a name="chat-resource-type"></a>tipo de recurso de chat
 
@@ -60,10 +60,10 @@ Um chat é uma coleção [de chatMessages](chatmessage.md) entre um ou mais part
 | createdDateTime| dateTimeOffset|  Data e hora em que o chat foi criado. Somente leitura.|
 | id| Cadeia de caracteres| O identificador exclusivo do chat. Somente leitura.|
 | lastUpdatedDateTime| dateTimeOffset|  Data e hora em que o chat foi renomeado ou a lista de membros foi alterada pela última vez. Somente leitura.|
+| onlineMeetingInfo | [teamworkOnlineMeetingInfo](../resources/teamworkonlinemeetinginfo.md) | Representa detalhes sobre uma reunião online. Se o chat não estiver associado a uma reunião online, a propriedade será vazia. Somente leitura.|
+| tenantId| String | O identificador do locatário no qual o chat foi criado. Somente leitura.|
 | topic| String|  (Opcional) Assunto ou tópico para o chat. Disponível apenas para chats em grupo.|
 | webUrl | String| A URL do chat no Microsoft Teams. A URL deve ser tratada como um blob opaco e não analisado. Somente leitura. |
-| tenantId| String | O identificador do locatário no qual o chat foi criado. Somente leitura.|
-| onlineMeetingInfo | [teamworkOnlineMeetingInfo](../resources/teamworkonlinemeetinginfo.md) | Representa detalhes sobre uma reunião online. Se o chat não estiver associado a uma reunião online, a propriedade será vazia. Somente leitura.|
 
 ### <a name="chattype-values"></a>valores chatType 
 
@@ -81,6 +81,7 @@ Um chat é uma coleção [de chatMessages](chatmessage.md) entre um ou mais part
 | installedApps | Coleção [teamsAppInstallation](teamsappinstallation.md) | Uma coleção de todos os aplicativos no chat. Anulável. |
 | members | coleção [conversationMember](conversationmember.md) | Uma coleção de todos os membros no chat. Anulável. |
 | messages | [chatMessage](chatmessage.md) collection | Uma coleção de todas as mensagens no chat. Anulável. |
+| guias | [teamsTab](teamstab.md) collection | Uma coleção de todas as guias no chat. Anulável. |
 
 ## <a name="json-representation"></a>Representação JSON
 

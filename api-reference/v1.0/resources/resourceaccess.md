@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 doc_type: resourcePageType
 ms.prod: identity-and-sign-in
 author: psignoret
-ms.openlocfilehash: 82cbf3f8823b53d45f89013d97892fc4ba5c751b
-ms.sourcegitcommit: 6968f5aaf40089684efb0c38a95f6cca353c1d92
+ms.openlocfilehash: 8986b14e5dba79eaf989fd0a6bf6a4ed479f5aa0
+ms.sourcegitcommit: 77d2ab5018371f153d47cc1cd25f9dcbaca28a95
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/16/2022
-ms.locfileid: "62854463"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63333145"
 ---
 # <a name="resourceaccess-resource-type"></a>tipo de recurso resourceAccess
 
@@ -21,7 +21,7 @@ Objeto usado para especificar um escopo de permissão OAuth 2.0 ou uma função 
 ## <a name="properties"></a>Propriedades
 | Propriedade     | Tipo   |Descrição|
 |:---------------|:--------|:----------|
-|id|GUID|O identificador exclusivo de uma função [de aplicativo](approle.md) ou permissão [delegada](permissionScope.md) exposta pelo aplicativo de recurso. Para permissões delegadas, isso deve corresponder à propriedade **id** de uma das permissões [delegadas](permissionscope.md) na **coleção oauth2PermissionScopes** da entidade de serviço do aplicativo de [recurso](serviceprincipal.md). Para funções de aplicativo (permissões de aplicativo), isso deve corresponder à propriedade **id** de [](approle.md) uma função de aplicativo na coleção **appRoles** da entidade de serviço [do aplicativo de recursos](serviceprincipal.md).|
+|id|Guid|O identificador exclusivo de uma função [de aplicativo](approle.md) ou permissão [delegada](permissionScope.md) exposta pelo aplicativo de recurso. Para permissões delegadas, isso deve corresponder à propriedade **id** de uma das permissões [delegadas](permissionscope.md) na **coleção oauth2PermissionScopes** da entidade de serviço do aplicativo de [recurso](serviceprincipal.md). Para funções de aplicativo (permissões de aplicativo), isso deve corresponder à propriedade **id** de [](approle.md) uma função de aplicativo na coleção **appRoles** da entidade de serviço [do aplicativo de recursos](serviceprincipal.md).|
 |type|Cadeia de caracteres|Especifica se a **propriedade id** faz referência a uma [permissão delegada](permissionscope.md) ou a uma função [de aplicativo](approle.md) (permissão de aplicativo). Os valores possíveis são: `Scope` (para permissões delegadas) ou `Role` (para funções de aplicativo).|
 
 ## <a name="json-representation"></a>Representação JSON
@@ -38,7 +38,7 @@ Veja a seguir uma representação JSON do recurso.
 
 ```json
 {
-  "id": "GUID",
+  "id": "Guid",
   "type": "String"
 }
 

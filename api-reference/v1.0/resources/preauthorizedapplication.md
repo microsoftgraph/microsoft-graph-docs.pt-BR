@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 doc_type: resourcePageType
 ms.prod: applications
 author: sureshja
-ms.openlocfilehash: 0f28c771f267324a25198edd66ac64ff7bcdaadd
-ms.sourcegitcommit: ddeee0eec277df06d9e635e5b5c257d14c856273
+ms.openlocfilehash: 79a186ebc899f54f4915183a0afd6eaab8eca9fe
+ms.sourcegitcommit: 77d2ab5018371f153d47cc1cd25f9dcbaca28a95
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/04/2021
-ms.locfileid: "60780538"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63334356"
 ---
 # <a name="preauthorizedapplication-resource-type"></a>Tipo de recurso preAuthorizedApplication
 
@@ -23,7 +23,7 @@ Lista os aplicativos cliente pré-autorizados com as permissões especificadas p
 | Propriedade | Tipo | Descrição |
 |:---------------|:--------|:----------|
 |appId|String| O identificador exclusivo do aplicativo. |
-|permissionIds|Coleção de cadeias de caracteres| O identificador exclusivo para [o oauth2PermissionScopes](permissionscope.md) que o aplicativo requer. |
+|delegatedPermissionIds|String collection| O identificador exclusivo para [o oauth2PermissionScopes](permissionscope.md) que o aplicativo requer. |
 
 ## <a name="json-representation"></a>Representação JSON
 Veja a seguir uma representação JSON do recurso.
@@ -39,7 +39,7 @@ Veja a seguir uma representação JSON do recurso.
 ```json
 {
   "appId": "String",
-  "permissionIds": ["String"]
+  "delegatedPermissionIds": ["String"]
 }
 
 ```

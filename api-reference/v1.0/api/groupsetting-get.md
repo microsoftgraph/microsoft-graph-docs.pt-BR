@@ -1,27 +1,29 @@
 ---
-title: Obter uma configuração de grupo
+title: Obter groupSetting
 description: Recupere as propriedades de um objeto de configuração de grupo específico.
 author: Jordanndahl
 ms.localizationpriority: medium
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: e15976e8782f79c8b3c5467f121a8e877ffd6f66
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: 95970a57aa5642097cc1b77cbfd7b99b9085dc0e
+ms.sourcegitcommit: 77d2ab5018371f153d47cc1cd25f9dcbaca28a95
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "61023453"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63333677"
 ---
-# <a name="get-a-group-setting"></a>Obter uma configuração de grupo
+# <a name="get-groupsetting"></a>Obter groupSetting
 
 Namespace: microsoft.graph
 
-Recupere as propriedades de um objeto de configuração de grupo específico.
+Recupere as propriedades de um objeto de configuração de grupo específico. A configuração pode ser uma configuração específica de nível de locatário ou grupo.
 
 ## <a name="permissions"></a>Permissões
 
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
+
+### <a name="list-tenant-wide-settings"></a>Listar configurações de todo o locatário
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
 |:--------------------|:---------------------------------------------------------|
@@ -29,19 +31,33 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |Delegado (conta pessoal da Microsoft) | Sem suporte.    |
 |Aplicativo | Directory.Read.All, Directory.ReadWrite.All |
 
+### <a name="list-group-specific-settings"></a>Listar configurações específicas do grupo
+
+|Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
+|:--------------------|:---------------------------------------------------------|
+|Delegado (conta corporativa ou de estudante) | Group.Read.All, Group.ReadWrite.All    |
+|Delegado (conta pessoal da Microsoft) | Sem suporte.    |
+|Aplicativo | Group.Read.All, Group.ReadWrite.All  |
+
+
 ## <a name="http-request"></a>Solicitação HTTP
+
 <!-- { "blockType": "ignored" } -->
 
-Obter uma configuração específica de locatário ou grupo.
+Obter uma configuração em todo o locatário.
 
 ```http
-GET /groupSettings/{id}
-GET /groups/{id}/settings/{id}
+GET /groupSettings/{groupSettingId}
 ```
-## <a name="optional-query-parameters"></a>Parâmetros de consulta opcionais
-Este método dá suporte a [Parâmetros de consulta OData](/graph/query-parameters) para ajudar a personalizar a resposta.
 
-> Observação: $filter não é suportado.
+<!-- { "blockType": "ignored" } -->
+Obter uma configuração específica do grupo.
+```http
+GET /groups/{groupId}/settings/{groupSettingId}
+```
+
+## <a name="optional-query-parameters"></a>Parâmetros de consulta opcionais
+Este método dá suporte ao parâmetro `$select` [de consulta OData](/graph/query-parameters) para ajudar a personalizar a resposta.
 
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
 | Nome | Descrição |
@@ -54,19 +70,22 @@ Não forneça um corpo de solicitação para esse método.
 
 ## <a name="response"></a>Resposta
 
-Se tiver êxito, este método retornará `200 OK` um código de resposta e um objeto [groupSetting](../resources/groupsetting.md) no corpo da resposta.
+Se tiver êxito, este método retornará um código `200 OK` de resposta e [um objeto groupSetting](../resources/groupsetting.md) no corpo da resposta.
 
-## <a name="example"></a>Exemplo
-##### <a name="request"></a>Solicitação
+## <a name="examples"></a>Exemplos
+
+### <a name="example-1-get-a-group-setting-for-a-specific-group"></a>Exemplo 1: Obter uma configuração de grupo para um grupo específico
+
+#### <a name="request"></a>Solicitação
 
 # <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "get_groupsetting"
+  "name": "get_groupsettings"
 }-->
 
 ```msgraph-interactive
-GET https://graph.microsoft.com/v1.0/groupSettings/{id}
+GET https://graph.microsoft.com/v1.0/groups/05aa6a98-956a-45c0-b13b-88076a23f2cd/settings/a06fa228-3042-4662-bd09-33e298da1afe
 ```
 # <a name="c"></a>[C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-groupsetting-csharp-snippets.md)]
@@ -84,15 +103,14 @@ GET https://graph.microsoft.com/v1.0/groupSettings/{id}
 [!INCLUDE [sample-code](../includes/snippets/java/get-groupsetting-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[Go](#tab/go)
+# <a name="go"></a>[Ir](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/get-groupsetting-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
-##### <a name="response"></a>Resposta
+#### <a name="response"></a>Resposta
 
-Observação: o objeto de resposta exibido aqui pode ser encurtado para legibilidade.
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -103,18 +121,107 @@ HTTP/1.1 200 OK
 Content-type: application/json
 
 {
-  "displayName": "displayName-value",
-  "templateId": "templateId-value",
-  "values": [
-    {
-      "name": "name-value",
-      "value": "value-value"
-    }
-  ],
-  "id": "id-value"
+    "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#groupSettings/$entity",
+    "id": "a06fa228-3042-4662-bd09-33e298da1afe",
+    "displayName": "Group.Unified.Guest",
+    "templateId": "08d542b9-071f-4e16-94b0-74abb372e3d9",
+    "values": [
+        {
+            "name": "AllowToAddGuests",
+            "value": "false"
+        }
+    ]
 }
 ```
 
+### <a name="example-2-get-the-group-settings-for-all-microsoft-365-groups"></a>Exemplo 2: Obter as configurações de grupo para todos os Microsoft 365 grupos
+
+#### <a name="request"></a>Solicitação
+
+<!-- {
+  "blockType": "request",
+  "name": "get_groupsettings_tenantwide"
+}-->
+```msgraph-interactive
+GET https://graph.microsoft.com/v1.0/groupSettings/84af2ca5-c274-41bf-86e4-6e374ec4def6
+```
+
+#### <a name="response"></a>Resposta
+
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.groupSetting"
+} -->
+```http
+HTTP/1.1 200 OK
+Content-type: application/json
+
+{
+    "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#groupSettings/$entity",
+    "id": "84af2ca5-c274-41bf-86e4-6e374ec4def6",
+    "displayName": "Group.Unified",
+    "templateId": "62375ab9-6b52-47ed-826b-58e47e0e304b",
+    "values": [
+        {
+            "name": "EnableMIPLabels",
+            "value": "true"
+        },
+        {
+            "name": "CustomBlockedWordsList",
+            "value": ""
+        },
+        {
+            "name": "EnableMSStandardBlockedWords",
+            "value": "true"
+        },
+        {
+            "name": "ClassificationDescriptions",
+            "value": ""
+        },
+        {
+            "name": "DefaultClassification",
+            "value": ""
+        },
+        {
+            "name": "PrefixSuffixNamingRequirement",
+            "value": "[Contoso-][GroupName]"
+        },
+        {
+            "name": "AllowGuestsToBeGroupOwner",
+            "value": "false"
+        },
+        {
+            "name": "AllowGuestsToAccessGroups",
+            "value": "true"
+        },
+        {
+            "name": "GuestUsageGuidelinesUrl",
+            "value": "https://privacy.contoso.com/privacystatement"
+        },
+        {
+            "name": "GroupCreationAllowedGroupId",
+            "value": ""
+        },
+        {
+            "name": "AllowToAddGuests",
+            "value": "true"
+        },
+        {
+            "name": "UsageGuidelinesUrl",
+            "value": ""
+        },
+        {
+            "name": "ClassificationList",
+            "value": ""
+        },
+        {
+            "name": "EnableGroupCreation",
+            "value": "true"
+        }
+    ]
+}
+```
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
 <!-- {

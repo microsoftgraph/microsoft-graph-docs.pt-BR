@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: Jordanndahl
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: 39e2abe4b6fe668209055163ffc4ec6c1a467b18
-ms.sourcegitcommit: 25acfa7d0153336c9a35d30a1dd422aeadc1342c
+ms.openlocfilehash: 48e23d332c2383bf1bc43ce1d9e73126660550a6
+ms.sourcegitcommit: 77d2ab5018371f153d47cc1cd25f9dcbaca28a95
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/03/2022
-ms.locfileid: "62340838"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63333691"
 ---
 # <a name="group-assignlicense"></a>group: assignLicense
 
@@ -46,7 +46,7 @@ Forneça um objeto JSON com os seguintes parâmetros no corpo da solicitação.
 | Parâmetro    | Tipo   |Descrição|
 |:---------------|:--------|:----------|
 |addLicenses|Coleção [assignedLicense](../resources/assignedlicense.md)|Uma coleção de objetos [assignedLicense](../resources/assignedlicense.md) que especifica as licenças a adicionar. Você pode desabilitar servicePlans associado a uma licença definindo a propriedade **disabledPlans** em [um objeto assignedLicense](../resources/assignedlicense.md) .|
-|removeLicenses|Coleção GUID|Uma coleção de skuIds que identificam as licenças a remover.|
+|removeLicenses|Coleção de GUIDs|Uma coleção de skuIds que identificam as licenças a remover.|
 
 ## <a name="response"></a>Resposta
 
