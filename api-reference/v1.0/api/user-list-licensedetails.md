@@ -1,16 +1,16 @@
 ---
 title: Listar licenseDetails
 description: Recupere uma lista de objetos licenseDetails.
-author: jpettere
+author: cindycrane
 ms.localizationpriority: medium
 ms.prod: users
 doc_type: apiPageType
-ms.openlocfilehash: 2c0b0d81afd190fc1ceddf4c2cd4be8f46bd40bf
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: 2968fa9baa1602eda0cee776a3428aaa377dd75c
+ms.sourcegitcommit: 77d2ab5018371f153d47cc1cd25f9dcbaca28a95
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62121579"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63334419"
 ---
 # <a name="list-licensedetails"></a>Listar licenseDetails
 
@@ -34,19 +34,19 @@ GET /me/licenseDetails
 GET /users/{id}/licenseDetails
 ```
 ## <a name="optional-query-parameters"></a>Parâmetros de consulta opcionais
-Este método dá suporte `$select` ao parâmetro de consulta. Para obter informações gerais, acesse [Parâmetros de consulta OData](/graph/query-parameters).
+Este método dá suporte ao `$select` parâmetro de consulta. Para obter informações gerais, acesse [Parâmetros de consulta OData](/graph/query-parameters).
 
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
 | Nome      |Descrição|
 |:----------|:----------|
-| Autorização  | Código do &lt; portador&gt;|
+| Autorização  | Código do &lt;portador&gt;|
 
 ## <a name="request-body"></a>Corpo da solicitação
 Não forneça um corpo de solicitação para esse método.
 
 ## <a name="response"></a>Resposta
 
-Se tiver êxito, este método retornará um código de resposta e uma `200 OK` coleção de [objetos licenseDetails](../resources/licensedetails.md) no corpo da resposta.
+Se tiver êxito, este método retornará um `200 OK` código de resposta e uma coleção de [objetos licenseDetails](../resources/licensedetails.md) no corpo da resposta.
 ## <a name="example"></a>Exemplo
 ### <a name="request"></a>Solicitação
 

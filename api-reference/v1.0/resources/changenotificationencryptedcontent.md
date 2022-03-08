@@ -4,13 +4,13 @@ description: Um objeto changeNotificationEncryptedContent representa os dados cr
 ms.localizationpriority: medium
 author: baywet
 doc_type: resourcePageType
-ms.prod: ''
-ms.openlocfilehash: 3ca826bd2790fef77dd78f183a34fc306f28e47b
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.prod: change-notifications
+ms.openlocfilehash: c1ee1628796a8c9e3d527a965363f59b79d11242
+ms.sourcegitcommit: 77d2ab5018371f153d47cc1cd25f9dcbaca28a95
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59126944"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63334384"
 ---
 # <a name="changenotificationencryptedcontent-resource-type"></a>Tipo de recurso changeNotificationEncryptedContent
 
@@ -24,11 +24,11 @@ Para obter mais informações, consulte [Set up change notifications that includ
 
 | Propriedade | Tipo | Descrição |
 |:---------|:-----|:------------|
-| data | cadeia de caracteres | Dados criptografados codificados com base64 que produzem um recurso completo respresentado como JSON. Os dados foram criptografados com o fornecido `dataKey` usando um pacote de `AES/CBC/PKCS5PADDING` codificação. |
-| dataSignature | cadeia de caracteres | Hash HMAC-SHA256 codificado com base64 dos dados para fins de validação. |
-| dataKey | cadeia de caracteres | Chave simétrica codificada com base64 gerada pela Microsoft Graph criptografar o valor de dados e gerar a assinatura de dados. Essa chave é criptografada com a chave pública do certificado fornecida durante a assinatura. Ele deve ser descriptografado com a chave privada do certificado antes de poder ser usado para descriptografar os dados ou verificar a assinatura. Essa chave foi criptografada com o seguinte pacote de codificação: `RSA/ECB/OAEPWithSHA1AndMGF1Padding` . |
-| encryptionCertificateId | cadeia de caracteres | ID do certificado usado para criptografar `dataKey` o . |
-| encryptionCertificateThumbprint | cadeia de caracteres | Representação hexadecimal da impressão digital do certificado usado para criptografar `dataKey` o . |
+| data | string | Dados criptografados codificados com base64 que produzem um recurso completo respresentado como JSON. Os dados foram criptografados com o fornecido usando `dataKey` um pacote `AES/CBC/PKCS5PADDING` de codificação. |
+| dataSignature | string | Hash HMAC-SHA256 codificado com base64 dos dados para fins de validação. |
+| dataKey | string | Chave simétrica codificada com base64 gerada pela Microsoft Graph criptografar o valor de dados e gerar a assinatura de dados. Essa chave é criptografada com a chave pública do certificado fornecida durante a assinatura. Ele deve ser descriptografado com a chave privada do certificado antes de poder ser usado para descriptografar os dados ou verificar a assinatura. Essa chave foi criptografada com o seguinte pacote de codificação: `RSA/ECB/OAEPWithSHA1AndMGF1Padding`. |
+| encryptionCertificateId | cadeia de caracteres | ID do certificado usado para criptografar o `dataKey`. |
+| encryptionCertificateThumbprint | string | Representação hexadecimal da impressão digital do certificado usado para criptografar o `dataKey`. |
 
 ## <a name="json-representation"></a>Representação JSON
 
@@ -42,13 +42,14 @@ Veja a seguir uma representação JSON do recurso.
   "@odata.type": "microsoft.graph.changeNotificationEncryptedContent"
 }-->
 
-```json
+``` json
 {
-  "data": "{encrypted data that produces a full resource}",
-  "dataSignature": "<HMAC-SHA256 hash>",
-  "dataKey": "{encrypted symmetric key from Microsoft Graph}",
-  "encryptionCertificateId": "MySelfSignedCert/DDC9651A-D7BC-4D74-86BC-A8923584B0AB",
-  "encryptionCertificateThumbprint": "07293748CC064953A3052FB978C735FB89E61C3D"
+  "@odata.type": "#microsoft.graph.changeNotificationEncryptedContent",
+  "data": "String",
+  "dataSignature": "String",
+  "dataKey": "String",
+  "encryptionCertificateId": "String",
+  "encryptionCertificateThumbprint": "String"
 }
 ```
 
