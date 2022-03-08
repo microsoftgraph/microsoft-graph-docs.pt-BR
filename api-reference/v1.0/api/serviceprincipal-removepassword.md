@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: sureshja
 ms.prod: applications
 doc_type: apiPageType
-ms.openlocfilehash: 232892b41778d6c93ae8bc0544c1159cca34be88
-ms.sourcegitcommit: 25acfa7d0153336c9a35d30a1dd422aeadc1342c
+ms.openlocfilehash: 65622e70fbaea89b36ea5a5f88aab1321199c4a7
+ms.sourcegitcommit: 77d2ab5018371f153d47cc1cd25f9dcbaca28a95
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/03/2022
-ms.locfileid: "62342726"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63336883"
 ---
 # <a name="serviceprincipal-removepassword"></a>servicePrincipal: removePassword
 
@@ -47,7 +47,7 @@ POST /servicePrincipals/{id}/removePassword
 
 | Propriedade     | Tipo   |Descrição|
 |:---------------|:--------|:----------|
-| keyId | GUID | O identificador exclusivo da senha. Obrigatório. |
+| keyId | Guid | O identificador exclusivo da senha. Obrigatório. |
 
 ## <a name="response"></a>Resposta
 

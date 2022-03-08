@@ -1,16 +1,16 @@
 ---
 title: Excluir schedulingGroup
 description: Marcar um schedulingGroup como inativo definindo sua propriedade isActive
-author: nkramer
+author: aaku
 ms.localizationpriority: medium
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 1980b36f2f3d26ae70f7609c9fc2d5384fa9e232
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: 414bcf4d355e4c1ef337c2a291f64326041b5845
+ms.sourcegitcommit: 77d2ab5018371f153d47cc1cd25f9dcbaca28a95
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62102318"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63337527"
 ---
 # <a name="delete-schedulinggroup"></a>Excluir schedulingGroup
 
@@ -18,7 +18,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Marque um [schedulingGroup](../resources/schedulinggroup.md) como inativo definindo sua **propriedade isActive.**
+Marque um [schedulingGroup](../resources/schedulinggroup.md) como inativo definindo sua **propriedade isActive** .
 Este método não remove o [scheduleingGroup](../resources/schedulinggroup.md) da agenda. As instâncias [de turno](../resources/shift.md) existentes atribuídas ao grupo de agendamento permanecem parte do grupo.
 
 ## <a name="permissions"></a>Permissões

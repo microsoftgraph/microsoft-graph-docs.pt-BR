@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: madansr7
 ms.prod: identity-and-sign-in
 doc_type: conceptualPageType
-ms.openlocfilehash: c9b9fd8ac70e8d00563ff2c96eb15e56eeae706d
-ms.sourcegitcommit: c6a8c1cc13ace38d6c4371139ee84707c5c93352
+ms.openlocfilehash: 8c89a07cae63959904d902ae96ffb886f4877cda
+ms.sourcegitcommit: 77d2ab5018371f153d47cc1cd25f9dcbaca28a95
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/10/2021
-ms.locfileid: "60890371"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63334111"
 ---
 # <a name="azure-ad-application-authentication-methods-api-overview-preview"></a>Visão geral da API dos métodos de autenticação do aplicativo do Azure AD (visualização)
 
@@ -38,7 +38,7 @@ Essas propriedades permitem que a organização bloqueie aplicativos que se orig
 
 ## <a name="app-management-policy-for-applications-and-service-principals"></a>Política de gerenciamento de aplicativos para aplicativos e entidades de serviço
 
-As políticas de gerenciamento de aplicativos são definidas no recurso [appManagementPolicy,](appmanagementpolicy.md) que contém uma coleção de políticas com restrições variáveis ou datas de imposição diferentes do que é definido na política padrão do locatário. Uma dessas políticas pode ser atribuída a um aplicativo ou entidade de serviço, excluindo-as da política padrão do locatário.
+As políticas de gerenciamento de aplicativos são definidas no recurso [appManagementPolicy](appmanagementpolicy.md) , que contém uma coleção de políticas com restrições variáveis ou datas de imposição diferentes do que é definido na política padrão do locatário. Uma dessas políticas pode ser atribuída a um aplicativo ou entidade de serviço, excluindo-as da política padrão do locatário.
 
 Quando a política padrão do locatário e uma política de gerenciamento de aplicativos existem, a política de gerenciamento de aplicativos tem precedência e o aplicativo ou entidade de serviço atribuído não herda da política padrão do locatário. Somente uma política pode ser atribuída a um aplicativo ou entidade de serviço.
 
@@ -49,16 +49,19 @@ Quando a política padrão do locatário e uma política de gerenciamento de apl
 
 A API de política de métodos de autenticação de aplicativo oferece as seguintes restrições:
 
-| Nome da restrição      | Descrição                                           | Exemplos                                                                                     |
-| :--------------- | :---------------------------------------------------- | :------------------------------------------------------------------------------------------- |
-| passwordAddition | Restringir segredos de senha em aplicativos completamente. | Bloquear novas senhas em aplicativos criados em ou após '01/01/2019'.                        |
-| passwordLifetime | Impor um intervalo máximo de vida útil para um segredo de senha.   | Restrinja todos os novos segredos de senha a no máximo 30 dias para aplicativos criados após 01/01/2015. |
-| symmetricKeyAddition | Restringir chaves simétricas em aplicativos. | Bloquear novas chaves simétricas em aplicativos criados em ou após 01/01/2019. |
-| symmetricKeyLifetime | Impor um intervalo máximo de vida útil para uma chave simétrica.   | Restrinja todas as novas chaves simétricas a um máximo de 30 dias para aplicativos criados após 01/01/2019. |
-| asymmetricKeyLifetime | Impor um intervalo máximo de vida útil para uma chave assimétrica (certificado).   | Restrinja todos os novos segredos de chave assimétricas a no máximo 30 dias para aplicativos criados após 01/01/2019. |
+| Nome da restrição       | Descrição                                                            | Exemplos                                                                                                    |
+| :--------------------- | :--------------------------------------------------------------------- | :---------------------------------------------------------------------------------------------------------- |
+| passwordAddition       | Restringir segredos de senha em aplicativos completamente.                  | Bloquear novas senhas em aplicativos criados em ou após '01/01/2019'.                                       |
+| passwordLifetime       | Impor um intervalo máximo de vida útil para um segredo de senha.                    | Restrinja todos os novos segredos de senha a no máximo 30 dias para aplicativos criados após 01/01/2015.        |
+| customPasswordAddition | Restringir um segredo de senha personalizado no aplicativo ou na entidade de serviço. | Restrinja todos os novos segredos de senha personalizados (não gerados pelo Azure AD) em aplicativos criados após 01/01/2015. |
+| symmetricKeyAddition   | Restringir chaves simétricas em aplicativos.                               | Bloquear novas chaves simétricas em aplicativos criados em ou após 01/01/2019.                                    |
+| symmetricKeyLifetime   | Impor um intervalo máximo de vida útil para uma chave simétrica.                      | Restrinja todas as novas chaves simétricas a um máximo de 30 dias para aplicativos criados após 01/01/2019.          |
+| asymmetricKeyLifetime  | Impor um intervalo máximo de vida útil para uma chave assimétrica (certificado).      | Restrinja todos os novos segredos de chave assimétricas a no máximo 30 dias para aplicativos criados após 01/01/2019.  |
 
 > [!Note]
 > Todas as restrições de vida são expressas no formato de duração ISO-8601 (Por exemplo: P4DT12H30M5S).
+>
+> A aplicação da **restrição customPasswordAddition** bloqueará todos os módulos herdado do PowerShell que adicionem um segredo de senha gerado pelo cliente a aplicativos ou entidades de serviço. Essa restrição não bloqueia os segredos de senha do aplicativo ou da entidade de serviço gerados pelo Azure AD.
 
 ### <a name="single-vs-multi-tenant-apps"></a>Aplicativos single vs multi-tenant
 
@@ -70,15 +73,15 @@ Dependendo de seu aplicativo ser um único locatário ou aplicativo multitenente
 
 ### <a name="summary-of-key-differences-between-the-tenant-default-policy-and-app-management-policies"></a>Resumo das principais diferenças entre a política padrão do locatário e as políticas de gerenciamento de aplicativos
 
-| Política padrão de locatário                                                     | Política de gerenciamento de aplicativos                                                                      |
-| ------------------------------------------------------------------ | --------------------------------------------------------------------------------------------------------- |
-| A política sempre existe.                                              | Os objetos de política podem ser criados ou atualizados para substituir a política padrão.                                         |
-| As restrições são desabilitadas por padrão para app/SP.                   | Permite a personalização para locatário único ou multi locatário(aplicativo de backing em locatários ou aplicativos provisionados).     |
-| Permite apenas a definição de objeto de restrição única para todos os recursos.| Permite que vários objetos de política sejam definidos, mas apenas um pode ser aplicado a um recurso.                  |
-|Permite a distinção de restrições para objetos de aplicativo versus entidades de serviço. | A política pode ser aplicada a um objeto de entidade de serviço ou aplicativo.                             |
-| Aplica todas as restrições configuradas a todos os aplicativos ou entidades de serviço.              |  Aplica apenas as restrições configuradas na política de recurso à entidade de serviço ou aplicativo especificada e não herda da política padrão. |
+| Política padrão de locatário                                                              | Política de gerenciamento de aplicativos                                                                                                                               |
+| ---------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------- |
+| A política sempre existe.                                                              | Os objetos de política podem ser criados ou atualizados para substituir a política padrão.                                                                                |
+| As restrições são desabilitadas por padrão para app/SP.                                   | Permite a personalização para locatário único ou multi locatário(aplicativo de backing em locatários ou aplicativos provisionados).                                             |
+| Permite apenas a definição de objeto de restrição única para todos os recursos.                | Permite que vários objetos de política sejam definidos, mas apenas um pode ser aplicado a um recurso.                                                            |
+| Permite a distinção de restrições para objetos de aplicativo versus entidades de serviço. | A política pode ser aplicada a um objeto de entidade de serviço ou aplicativo.                                                                         |
+| Aplica todas as restrições configuradas a todos os aplicativos ou entidades de serviço.             | Aplica apenas as restrições configuradas na política de recurso à entidade de serviço ou aplicativo especificada e não herda da política padrão. |
 
 ## <a name="next-steps"></a>Próximas etapas
 
-- [Tipo de recurso tenantAppManagementPolicy.](tenantappmanagementpolicy.md)
-- [Tipo de recurso appManagementPolicy.](appmanagementpolicy.md)
+- [Tipo de recurso tenantAppManagementPolicy](tenantappmanagementpolicy.md) .
+- [Tipo de recurso appManagementPolicy](appmanagementpolicy.md) .

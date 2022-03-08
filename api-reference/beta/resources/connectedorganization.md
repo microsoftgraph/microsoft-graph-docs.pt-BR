@@ -5,12 +5,12 @@ author: markwahl-msft
 ms.localizationpriority: medium
 ms.prod: governance
 doc_type: resourcePageType
-ms.openlocfilehash: 81719d0c6028461561b50f93ecf96ed5645d3794
-ms.sourcegitcommit: fd609cb401ff862c3f5c21847bac9af967c6bf82
+ms.openlocfilehash: 6e782def17541cbfe48923d788e8cbf774c1a473
+ms.sourcegitcommit: 77d2ab5018371f153d47cc1cd25f9dcbaca28a95
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/31/2021
-ms.locfileid: "61650591"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63334097"
 ---
 # <a name="connectedorganization-resource-type"></a>Tipo de recurso connectedOrganization
 
@@ -18,9 +18,9 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-No gerenciamento de direitos do [Azure AD,](entitlementmanagement-overview.md)uma organização conectada é uma referência a um diretório ou domínio de outra organização cujos usuários podem solicitar acesso.
+No [gerenciamento de direitos do Azure AD](entitlementmanagement-overview.md), uma organização conectada é uma referência a um diretório ou domínio de outra organização cujos usuários podem solicitar acesso.
 
-## <a name="methods"></a>Métodos
+## <a name="methods"></a>Methods
 
 |Método|Tipo de retorno|Descrição|
 |:---|:---|:---|
@@ -31,10 +31,10 @@ No gerenciamento de direitos do [Azure AD,](entitlementmanagement-overview.md)um
 |[Excluir connectedOrganization](../api/connectedorganization-delete.md) |Nenhum | Excluir uma connectedOrganization. |
 |[Listar internalSponsors](../api/connectedorganization-list-internalsponsors.md) | Coleção [directoryObject](directoryobject.md) | Recupere uma lista dos patrocinadores internos de uma connectedOrganization. |
 |[Listar externalSponsors](../api/connectedorganization-list-externalsponsors.md) | Coleção [directoryObject](directoryobject.md) | Recupere uma lista de patrocinadores externos de uma connectedOrganization. |
-|[Adicionar internalSponsors](../api/connectedorganization-post-internalsponsors.md) | Nenhum | Adicione um usuário ou grupo aos patrocinadores internos de um connectedOrganization. |
+|[Adicionar internalSponsors](../api/connectedorganization-post-internalsponsors.md) | Nenhum(a) | Adicione um usuário ou grupo aos patrocinadores internos de um connectedOrganization. |
 |[Adicionar externalSponsors](../api/connectedorganization-post-externalsponsors.md) | Nenhum | Adicione um usuário ou grupo aos patrocinadores externos de um connectedOrganization. |
 |[Remover internalSponsors](../api/connectedorganization-delete-internalsponsors.md) | Nenhum | Remova um usuário ou grupo dos patrocinadores internos de uma connectedOrganization. |
-|[Remover externalSponsors](../api/connectedorganization-delete-externalsponsors.md) | Nenhum | Remova um usuário ou grupo dos patrocinadores externos de uma connectedOrganization. |
+|[Remover externalSponsors](../api/connectedorganization-delete-externalsponsors.md) | Nenhum(a) | Remova um usuário ou grupo dos patrocinadores externos de uma connectedOrganization. |
 
 ## <a name="properties"></a>Propriedades
 
@@ -47,15 +47,15 @@ No gerenciamento de direitos do [Azure AD,](entitlementmanagement-overview.md)um
 |id|String| Somente leitura.|
 |modifiedBy|String|UPN do usuário que modificou esse recurso pela última vez. Somente leitura.|
 |modifiedDateTime|DateTimeOffset|O tipo Timestamp representa informações de data e hora usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite UTC em 1 de janeiro de 2014 é `2014-01-01T00:00:00Z`. Somente leitura.|
-|state|connectedOrganizationState|O estado de uma organização conectada define se as políticas de atribuição com o tipo de escopo do solicitante `AllConfiguredConnectedOrganizationSubjects` são aplicáveis ou não. Os valores possíveis são: `configured`, `proposed`.|
+|state|connectedOrganizationState|O estado de uma organização conectada define se as políticas de atribuição com o tipo de `AllConfiguredConnectedOrganizationSubjects` escopo do solicitante são aplicáveis ou não. Os valores possíveis são: `configured` e `proposed`.|
+|identitySources|[Coleção identitySource](identitySource.md)| As fontes de identidade nesta organização conectada, uma das [azureActiveDirectoryTenant](azureactivedirectorytenant.md), [domainIdentitySource](domainidentitysource.md) [ou externalDomainFederation](externaldomainfederation.md). Somente leitura. Anulável. Suporta `$select` e `$filter`(`eq`). Para filtrar pelos tipos derivados, você deve declarar o recurso usando seu cast OData completo, por exemplo, `$filter=identitySources/any(is:is/microsoft.graph.azureActiveDirectoryTenant/tenantId eq 'bcfdfff4-cbc3-43f2-9000-ba7b7515054f')`.|
 
 ## <a name="relationships"></a>Relações
 
 |Relação|Tipo|Descrição|
 |:---|:---|:---|
-|identitySources|[Coleção identitySource](identitySource.md)| As fontes de identidade nesta organização conectada, uma de [azureActiveDirectoryTenant](azureactivedirectorytenant.md), [domainIdentitySource](domainidentitysource.md) ou [externalDomainFederation](externaldomainfederation.md). Somente leitura. Anulável. Suporta `$select` e `$filter` ( `eq` ). Para filtrar pelos tipos derivados, você deve declarar o recurso usando seu cast OData completo, por exemplo, `microsoft.graph.azureActiveDirectoryTenant.`|
-|internalSponsors| Coleção [directoryObject](directoryobject.md)| Anulável.|
-|externalSponsors| Coleção [directoryObject](directoryobject.md)| Anulável.|
+|internalSponsors| [directoryObject](directoryobject.md) collection| Anulável.|
+|externalSponsors| [directoryObject](directoryobject.md) collection| Anulável.|
 
 ## <a name="json-representation"></a>Representação JSON
 

@@ -1,16 +1,16 @@
 ---
 title: Lista schedulingGroups
 description: Obter a lista de scheduleingGroup nesta agenda.
-author: nkramer
+author: aaku
 ms.localizationpriority: medium
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 61663b58f3581cedc7398dbb53120f5ff2b6a98b
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: 8294dc255f7ee4061eadafb260a75c6d1ec3dd10
+ms.sourcegitcommit: 77d2ab5018371f153d47cc1cd25f9dcbaca28a95
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62115888"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63334517"
 ---
 # <a name="list-schedulegroups"></a>Listar scheduleGroups
 
@@ -18,7 +18,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Obter a lista de [scheduleingGroups](../resources/schedulinggroup.md) nesta [agenda](../resources/schedule.md).
+Obter a lista [de scheduleingGroups](../resources/schedulinggroup.md) nesta [agenda](../resources/schedule.md).
 
 ## <a name="permissions"></a>Permissões
 
@@ -49,7 +49,7 @@ Não forneça um corpo de solicitação para esse método.
 
 ## <a name="response"></a>Resposta
 
-Se tiver êxito, este método retornará um código de resposta e uma `200 OK` coleção de [objetos schedulingGroup](../resources/schedulinggroup.md) no corpo da resposta.
+Se tiver êxito, este método retornará um `200 OK` código de resposta e uma coleção de [objetos schedulingGroup](../resources/schedulinggroup.md) no corpo da resposta.
 
 ## <a name="example"></a>Exemplo
 

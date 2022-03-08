@@ -1,16 +1,16 @@
 ---
 title: Listar timesOff
 description: Obter a lista de timesOff nesta agenda.
-author: nkramer
+author: aaku
 ms.localizationpriority: medium
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 3c979f9b9a0912edfce4566d1724f99ecb344490
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: 60b7539bc126b3ef13b8bd03c721e9aea95c3727
+ms.sourcegitcommit: 77d2ab5018371f153d47cc1cd25f9dcbaca28a95
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62129481"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63337324"
 ---
 # <a name="list-timesoff"></a>Listar timesOff
 
@@ -54,7 +54,7 @@ Não forneça um corpo de solicitação para esse método.
 
 ## <a name="response"></a>Resposta
 
-Se tiver êxito, este método retornará um código de resposta e uma `200 OK` coleção de [objetos timeOff](../resources/timeoff.md) no corpo da resposta.
+Se tiver êxito, este método retornará um `200 OK` código de resposta e uma coleção de [objetos timeOff](../resources/timeoff.md) no corpo da resposta.
 
 ## <a name="example"></a>Exemplo
 

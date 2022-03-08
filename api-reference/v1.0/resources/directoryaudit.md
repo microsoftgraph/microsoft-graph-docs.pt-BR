@@ -5,12 +5,12 @@ author: SarahBar
 ms.localizationpriority: medium
 ms.prod: identity-and-access-reports
 doc_type: resourcePageType
-ms.openlocfilehash: ce775dc99750fe887f3df3c1ac55eedd782976ca
-ms.sourcegitcommit: 6968f5aaf40089684efb0c38a95f6cca353c1d92
+ms.openlocfilehash: 749fd5e525848cadece6b6ed5272057bc7c225eb
+ms.sourcegitcommit: 77d2ab5018371f153d47cc1cd25f9dcbaca28a95
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/16/2022
-ms.locfileid: "62854341"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63337443"
 ---
 # <a name="directoryaudit-resource-type"></a>Tipo de recurso directoryObject
 
@@ -18,7 +18,7 @@ Namespace: microsoft.graph
 
 Representa os itens de auditoria de diretório e sua coleção.
 
-## <a name="methods"></a>Métodos
+## <a name="methods"></a>Methods
 
 | Método           | Tipo de retorno    |Descrição|
 |:---------------|:--------|:----------|
@@ -33,7 +33,7 @@ Representa os itens de auditoria de diretório e sua coleção.
 | activityDisplayName | Cadeia de caracteres                                              | Indica o nome da atividade ou o nome da operação (exemplos: "Criar Usuário" e "Adicionar membro ao grupo"). Para ver a lista completa, consulte [a lista de atividades do Azure AD](/azure/active-directory/active-directory-reporting-activity-audit-logs#azure-ad-audit-activity-list). |
 | additionalDetails   | Coleção [KeyValue](keyvalue.md)                  | Indica detalhes adicionais sobre a atividade.                                                                                                                                                                                                                                      |
 | category            | Cadeia de caracteres                                              | Indica qual categoria de recurso direcionada pela atividade. (Por exemplo: gerenciamento de usuário, grupo gerenciamento etc..)                                                                                                                                                          |
-| correlationId       | GUID                                                | Indica uma ID exclusiva que ajuda correlacionar atividades que englobam vários serviços. Pode ser usado para os logs de serviços de rastreamento.                                                                                                                                                |
+| correlationId       | Guid                                                | Indica uma ID exclusiva que ajuda correlacionar atividades que englobam vários serviços. Pode ser usado para os logs de serviços de rastreamento.                                                                                                                                                |
 | id                  | Cadeia de caracteres                                              | Indica que a ID exclusiva para a atividade. Este é um GUID.                                                                                                                                                                                                                          |
 | initiatedBy         | [auditActivityInitiator](auditactivityinitiator.md) | Indica que informações sobre o usuário ou o aplicativo iniciou a atividade.                                                                                                                                                                                                                |
 | loggedByService     | Cadeia de caracteres                                              | Indica informações sobre quais serviços iniciaram a atividade (Por exemplo: `Self-service Password Management`, , `Core Directory`, `B2C`, `Invited Users`, `Microsoft Identity Manager`, `Privileged Identity Management`.                                                                      |
@@ -63,7 +63,7 @@ Veja a seguir uma representação JSON do recurso.
   "activityDisplayName": "String",
   "additionalDetails": [{"@odata.type": "microsoft.graph.keyValue"}],
   "category": "String",
-  "correlationId": "GUID",
+  "correlationId": "Guid",
   "id": "String (identifier)",
   "initiatedBy": {"@odata.type": "microsoft.graph.auditActivityInitiator"},
   "loggedByService": "String",

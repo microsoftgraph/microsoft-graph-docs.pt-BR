@@ -5,17 +5,17 @@ author: mmcla
 ms.localizationpriority: medium
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: 1337eb2f6bcf903873537ab9f25fe55c541e8696
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: b5e44401e2767d7b40e65a8386239f646d9b4d46
+ms.sourcegitcommit: 77d2ab5018371f153d47cc1cd25f9dcbaca28a95
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62114557"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63336652"
 ---
 # <a name="get-windowshelloforbusinessauthenticationmethod"></a>Obter windowsHelloForBusinessAuthenticationMethod
 Namespace: microsoft.graph
 
-Leia as propriedades e as relações de um [objeto windowsHelloForBusinessAuthenticationMethod.](../resources/windowshelloforbusinessauthenticationmethod.md)
+Leia as propriedades e as relações de um [objeto windowsHelloForBusinessAuthenticationMethod](../resources/windowshelloforbusinessauthenticationmethod.md) .
 
 ## <a name="permissions"></a>Permissões
 
@@ -37,7 +37,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 | Delegado (conta pessoal da Microsoft) | Sem suporte. |
 | Aplicativo                            | UserAuthenticationMethod.Read.All, UserAuthenticationMethod.ReadWrite.All |
 
-Para cenários delegados em que um administrador está agindo em outro usuário, o administrador precisa de uma das seguintes funções [do Azure AD:](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles)
+Para cenários delegados em que um administrador está atuando em outro usuário, o administrador precisa de uma das seguintes funções [do Azure AD](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles):
 * Administrador global
 * Leitor global
 * Administrador de autenticação privilegiada
@@ -54,6 +54,8 @@ GET /me/authentication/windowsHelloForBusinessMethods/{windowsHelloForBusinessAu
 GET /users/{id | userPrincipalName}/authentication/windowsHelloForBusinessMethods/{windowsHelloForBusinessAuthenticationMethodId}
 ```
 
+>**Observação:** Para ler a **propriedade de** navegação do dispositivo para outro usuário, especifique-a `$expand` em uma consulta da seguinte maneira: `/users/{id}/authentication/windowsHelloForBusinessMethods/{id}?$expand=device`.
+
 ## <a name="optional-query-parameters"></a>Parâmetros de consulta opcionais
 
 Sem suporte.
@@ -68,7 +70,7 @@ Não forneça um corpo de solicitação para esse método.
 
 ## <a name="response"></a>Resposta
 
-Se tiver êxito, este método retornará um código de resposta e um `200 OK` [objeto windowsHelloForBusinessAuthenticationMethod](../resources/windowshelloforbusinessauthenticationmethod.md) no corpo da resposta.
+Se tiver êxito, este método retornará `200 OK` um código de resposta e um [objeto windowsHelloForBusinessAuthenticationMethod](../resources/windowshelloforbusinessauthenticationmethod.md) no corpo da resposta.
 
 ## <a name="examples"></a>Exemplos
 

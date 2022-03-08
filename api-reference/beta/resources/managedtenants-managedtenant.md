@@ -5,12 +5,12 @@ author: idwilliams
 ms.localizationpriority: medium
 ms.prod: microsoft-365-lighthouse
 doc_type: resourcePageType
-ms.openlocfilehash: 9047977dd701e9844ae7158b6a6c1845a189de4e
-ms.sourcegitcommit: 71186ad44d8d0df15e10b0f89df68d2ef0cf9d14
+ms.openlocfilehash: c072c5b127a4e7b22022d03b674e8a3a8bdacd19
+ms.sourcegitcommit: 77d2ab5018371f153d47cc1cd25f9dcbaca28a95
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/12/2022
-ms.locfileid: "61791900"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63337023"
 ---
 # <a name="managedtenant-resource-type"></a>Tipo de recurso managedTenant
 
@@ -18,9 +18,9 @@ Namespace: microsoft.graph.managedTenants
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Como o recurso raiz da API Microsoft 365 Lighthouse, **managedTenant** representa os recursos disponíveis para um MSP (Provedor de Serviços Gerenciados) para dimensionar o gerenciamento remoto de seus locatários de clientes para ajudá-los a obter um estado íntegre e seguro.
+Como o recurso raiz da API Microsoft 365 Lighthouse, **managedTenant** representa os recursos disponíveis para um Provedor de Serviços Gerenciados (MSP) para dimensionar o gerenciamento remoto de seus locatários de clientes para ajudá-los a obter um estado íntegre e seguro.
 
-A Microsoft 365 Lighthouse api é definida no subnamespace OData, `microsoft.graph.managedTenants` .
+A Microsoft 365 Lighthouse api é definida no subnamespace OData, `microsoft.graph.managedTenants`.
 
 ## <a name="properties"></a>Propriedades
 Nenhum.
@@ -29,6 +29,7 @@ Nenhum.
 |Relação|Tipo|Descrição|
 |:---|:---|:---|
 |aggregatedPolicyCompliances|[coleção microsoft.graph.managedTenants.aggregatedPolicyCompliance](../resources/managedtenants-aggregatedpolicycompliance.md)|Visão agregada das políticas de conformidade do dispositivo entre locatários gerenciados.|
+|auditEvents|[coleção microsoft.graph.managedTenants.auditEvent](../resources/managedtenants-auditevent.md)|A coleção de eventos de auditoria entre locatários gerenciados.|
 |cloudPcConnections|[coleção microsoft.graph.managedTenants.cloudPcConnection](../resources/managedtenants-cloudpcconnection.md)|A coleção de conexões de computador na nuvem entre locatários gerenciados.|
 |cloudPcDevices|[coleção microsoft.graph.managedTenants.cloudPcDevice](../resources/managedtenants-cloudpcdevice.md)|A coleção de dispositivos de computador na nuvem em locatários gerenciados.|
 |cloudPcsOverview|[coleção microsoft.graph.managedTenants.cloudPcOverview](../resources/managedtenants-cloudpcoverview.md)|Visão geral das informações do computador na nuvem em locatários gerenciados.|
@@ -47,7 +48,7 @@ Nenhum.
 |tenantsDetailedInformation|[coleção microsoft.graph.managedTenants.tenantDetailedInformation](../resources/managedtenants-tenantdetailedinformation.md)|O nível de locatário de coleção informações detalhadas entre locatários gerenciados.|
 |tenantTags|[coleção microsoft.graph.managedTenants.tenantTag](../resources/managedtenants-tenanttag.md)|A coleção de marcas de locatários entre locatários gerenciados.|
 |windowsDeviceMalwareStates|[coleção microsoft.graph.managedTenants.windowsDeviceMalwareState](../resources/managedtenants-windowsdevicemalwarestate.md)|O estado de malware para Windows dispositivos, registrados com Microsoft Endpoint Manager, em locatários gerenciados.|
-|windowsProtectionStates|[coleção microsoft.graph.managedTenants.windowsProtectionState](../resources/managedtenants-windowsprotectionstate.md)|O estado de proteção para Windows, registrado com Microsoft Endpoint Manager, entre locatários gerenciados.|
+|windowsProtectionStates|[coleção microsoft.graph.managedTenants.windowsProtectionState](../resources/managedtenants-windowsprotectionstate.md)|O estado de proteção para Windows, registrado com Microsoft Endpoint Manager, em locatários gerenciados.|
 
 ## <a name="json-representation"></a>Representação JSON
 Veja a seguir uma representação JSON do recurso.

@@ -5,12 +5,12 @@ author: nkramer
 ms.localizationpriority: medium
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 7f86f2943f2954b60b924160cc82ad839aac3898
-ms.sourcegitcommit: dbacb04ae7138ac3b109683e63a6ff27c166f421
+ms.openlocfilehash: 6798469f3527163610b7b7c49403ff0fbdab8195
+ms.sourcegitcommit: 77d2ab5018371f153d47cc1cd25f9dcbaca28a95
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/14/2022
-ms.locfileid: "62804777"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63337464"
 ---
 # <a name="list-tabs-in-channel"></a>Listar guias no canal
 
@@ -18,6 +18,8 @@ Namespace: microsoft.graph
 
 
 Recupere a lista de [guias](../resources/teamstab.md) no canal [especificado](../resources/channel.md) dentro de uma [equipe](../resources/team.md). 
+
+> **Observação**: a guia Arquivos é nativa de um canal ou chat e não é retornada por essa API.
 
 ## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).

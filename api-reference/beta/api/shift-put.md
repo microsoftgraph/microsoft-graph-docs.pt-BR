@@ -1,16 +1,16 @@
 ---
 title: Substituir turno
 description: Substitua um turno existente.
-author: nkramer
+author: aaku
 ms.localizationpriority: medium
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: a829b88600e5f2cfbc21a193c7e8ebf0ca95e6c5
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: 3706b0f2c9df2ae7ed85fae8ad7396937d3d2605
+ms.sourcegitcommit: 77d2ab5018371f153d47cc1cd25f9dcbaca28a95
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "61002341"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63337226"
 ---
 # <a name="replace-shift"></a>Substituir turno
 
@@ -20,7 +20,7 @@ Namespace: microsoft.graph
 
 Substitua um turno [existente](../resources/shift.md).
 
-Se o turno [especificado](../resources/shift.md) não existir, este método retornará `404 Not found` .
+Se o turno [especificado](../resources/shift.md) não existir, este método retornará `404 Not found`.
 
 ## <a name="permissions"></a>Permissões
 
@@ -49,11 +49,11 @@ PUT /teams/{teamId}/schedule/shifts/{shiftId}
 
 ## <a name="request-body"></a>Corpo da solicitação
 
-No corpo da solicitação, fornece uma representação JSON de um [objeto shift.](../resources/shift.md)
+No corpo da solicitação, fornece uma representação JSON de um [objeto shift](../resources/shift.md) .
 
 ## <a name="response"></a>Resposta
 
-Se tiver êxito, este método retornará `200 OK` um código de resposta e um objeto [shift](../resources/shift.md) no corpo da resposta.
+Se tiver êxito, este método retornará um `200 OK` código de resposta e um [objeto shift](../resources/shift.md) no corpo da resposta.
 
 ## <a name="example"></a>Exemplo
 
@@ -136,7 +136,7 @@ Prefer: return=representation
 [!INCLUDE [sample-code](../includes/snippets/java/shift-put-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[Go](#tab/go)
+# <a name="go"></a>[Ir](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/shift-put-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 

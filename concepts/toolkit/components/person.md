@@ -3,12 +3,12 @@ title: Componente person no microsoft Graph Toolkit
 description: O componente de pessoa é usado para exibir uma pessoa ou contato usando sua foto, nome e/ou endereço de email.
 ms.localizationpriority: medium
 author: nmetulev
-ms.openlocfilehash: ab941533b816d80c490c74e157f3d6aa09760928
-ms.sourcegitcommit: 71186ad44d8d0df15e10b0f89df68d2ef0cf9d14
+ms.openlocfilehash: 59f2c6f286aa176ea2ebdad0044388bcfb25f896
+ms.sourcegitcommit: 77d2ab5018371f153d47cc1cd25f9dcbaca28a95
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/12/2022
-ms.locfileid: "61859950"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63336106"
 ---
 # <a name="person-component-in-the-microsoft-graph-toolkit"></a>Componente person no microsoft Graph Toolkit
 
@@ -28,15 +28,15 @@ O exemplo a seguir exibe uma pessoa usando o `mgt-person` componente. Você pode
 
 Você pode usar três propriedades para definir os detalhes da pessoa. Use apenas uma das seguintes propriedades por instância:
 
-* De definir `user-id` o atributo ou a propriedade para buscar o usuário da Microsoft Graph usando sua `userId` ID.
+* De definir o `user-id` atributo ou `userId` a propriedade para buscar o usuário da Microsoft Graph usando sua ID.
 
-* De definir `person-query` o atributo ou a propriedade para pesquisar o Microsoft Graph uma determinada `personQuery` pessoa. Ele escolherá a primeira pessoa disponível e buscará os detalhes da pessoa. Um email funciona melhor para garantir que a pessoa certa seja consultada, mas um nome também funciona.
+* De definir o `person-query` atributo ou `personQuery` a propriedade para pesquisar o Microsoft Graph uma determinada pessoa. Ele escolherá a primeira pessoa disponível e buscará os detalhes da pessoa. Um email funciona melhor para garantir que a pessoa certa seja consultada, mas um nome também funciona.
 
-* De definir `person-presence` o atributo ou a propriedade para adicionar um selo de presença ao avatar da pessoa `personPresence` manualmente.
+* De definir o `person-presence` atributo ou `personPresence` a propriedade para adicionar um selo de presença ao avatar da pessoa manualmente.
 
-* De definir `avatar-size` o atributo ou a propriedade como ou para determinar o tamanho do `avatarSize` `small` `large` avatar. Isso ajuda a adicionar [o selo de presença correto](https://mgt.dev/?path=/story/components-mgt-person--person-presence-display-all) ao avatar. Você precisará escolher as propriedades personalizadas css correspondentes corretas mostradas abaixo para personalizar ainda mais o tamanho do avatar. Por padrão, o valor é definido para o qual decidirá automaticamente como renderizar a `auto` presença com base na `view` propriedade. Recomendamos usar `small` se seu avatar for menor que 32px por 32px. 
+* De definir o `avatar-size` atributo ou `avatarSize` a propriedade como `small` ou `large` para determinar o tamanho do avatar. Isso ajuda a adicionar [o selo de presença correto](https://mgt.dev/?path=/story/components-mgt-person--person-presence-display-all) ao avatar. Você precisará escolher as propriedades personalizadas css correspondentes corretas mostradas abaixo para personalizar ainda mais o tamanho do avatar. Por padrão, o valor é definido para `auto` o qual decidirá automaticamente como renderizar a presença com base na `view` propriedade. Recomendamos usar `small` se seu avatar for menor que 32px por 32px. 
 
-* Use o atributo ou a propriedade para definir manualmente os detalhes da `person-details` `personDetails` pessoa, conforme mostrado no exemplo a seguir.
+* Use o `person-details` atributo ou `personDetails` a propriedade para definir manualmente os detalhes da pessoa, conforme mostrado no exemplo a seguir.
 
 
     ```js
@@ -50,7 +50,7 @@ Você pode usar três propriedades para definir os detalhes da pessoa. Use apena
 
   Se nenhuma imagem for fornecida, uma será buscada (se disponível).
 
-* Por padrão, o componente de pessoa solicitará apenas o conjunto de propriedades padrão da Microsoft Graph [usuário.](/graph/api/user-get?&tabs=http#optional-query-parameters) Para solicitar propriedades adicionais, declare-as como qualquer parte do `line(x)Property` . 
+* Por padrão, o componente de pessoa solicitará apenas o conjunto de propriedades padrão da Microsoft Graph [usuário.](/graph/api/user-get?&tabs=http#optional-query-parameters) Para solicitar propriedades adicionais, declare-as como qualquer parte do `line(x)Property`. 
 
 
 ## <a name="properties"></a>Propriedades
@@ -59,19 +59,20 @@ Você pode usar várias propriedades para personalizar o componente.
 
 | Atributo       | Propriedade       | Descrição                                                   |
 | -----------     | ----------     | ------------------------------------------------------------- |
-| user-id         | userId         | De definida como uma id do usuário para buscar os detalhes e a imagem desse usuário da Microsoft Graph.|
+| user-id         | userId         | De acordo com uma id do usuário para buscar os detalhes e a imagem desse usuário da Microsoft Graph.|
 | person-query    | personQuery    | De definida como um nome ou email de uma pessoa para pesquisar uma pessoa no Microsoft Graph e buscar os detalhes e a imagem da primeira pessoa.|
 | person-details  | personDetails  | De acordo com um objeto que representa uma pessoa. Funciona com o objeto de pessoas, usuários, contatos ou grupos, recursos. |
 | fallback-details| fallbackDetails| De acordo com um objeto que representa uma pessoa quando nenhum usuário/pessoa/contato é encontrado no gráfico.
 | person-image    | personImage    | De definir a imagem para mostrar para a pessoa. |
 | presença de pessoa | personPresence | Desmarcar a presença da pessoa. |
-| fetch-image     | fetchImage     | De definir o sinalizador para buscar automaticamente do `personImage` Microsoft Graph com base no objeto fornecido pelo `personDetails` usuário. |
-| tipo avatar     | avatarType     | Definir ou `initials` `photo` renderizar o estado de exibição - o padrão é foto. |
-| modo de exibição            | modo de exibição           | Definir para controlar como a pessoa é renderizada. O padrão é `avatar` <br /> `avatar` - mostrar somente o avatar <br /> `oneline` - mostrar avatar e primeira linha ( `displayName` por padrão) <br /> `twolines` - mostrar avatar e duas linhas de texto ( `displayName` `mail` e por padrão) <br /> `threelines` - mostrar avatar e três linhas de texto ( `displayName` e `mail` por `jobTitle` padrão) |
+| fetch-image     | fetchImage     | De definir o sinalizador para buscar `personImage` automaticamente do Microsoft Graph com base no `personDetails` objeto fornecido pelo usuário. |
+| disable-image-fetch | disableImageFetch | De definir sinalizador para desabilitar a busca da imagem da pessoa. Pode ser usado para evitar busca desnecessária da Microsoft Graph ao especificar a `personImage` propriedade.
+| tipo avatar     | avatarType     | Definir ou `initials` renderizar `photo` o estado de exibição - o padrão é foto. |
+| modo de exibição            | modo de exibição           | Definir para controlar como a pessoa é renderizada. O padrão é `avatar` <br /> `avatar` - mostrar somente o avatar <br /> `oneline` - mostrar avatar e primeira linha (`displayName` por padrão) <br /> `twolines` - mostrar avatar e duas linhas de texto (`displayName` e `mail` por padrão) <br /> `threelines`- mostrar avatar e três linhas de texto (`displayName`e `jobTitle` por `mail` padrão) |
 | line1-property  | line1Property  | Define a propriedade da personDetails a ser usada para a primeira linha de texto. O padrão é `displayName`.|
 | line2-property  | line2Property  | Define a propriedade da personDetails a ser usada para a segunda linha de texto. O padrão é `mail`.|
 | line3-property  | line3Property  | Define a propriedade da personDetails a ser usada para a terceira linha de texto. O padrão é `jobTitle`.|
-| show-presence   | showPresence   | Definir sinalizador para exibir a presença da pessoa - o padrão é `false` .|
+| show-presence   | showPresence   | Definir sinalizador para exibir a presença da pessoa - o padrão é `false`.|
 
 ## <a name="css-custom-properties"></a>Propriedades personalizadas CSS
 
@@ -112,21 +113,21 @@ mgt-person {
 
 Para saber mais, confira [componentes de estilo](../customize-components/style.md).
 
-## <a name="events"></a>Events
+## <a name="events"></a>Eventos
 
 Os eventos a seguir são disparados do componente.
 
 Evento | Quando é emitido | Dados personalizados | Cancelável | Bolhas | Funciona com modelo personalizado
 ------|-------------------|--------------|:-----------:|:---------:|:---------------------------:|
-`line1clicked` | Disparado quando a linha1 é clicada | O objeto que pode ser um usuário Graph , pessoa ou contato com uma propriedade adicional que contém a URL da `person` foto do [](/graph/api/resources/user) [](/graph/api/resources/person) [](/graph/api/resources/contact) `personImage` usuário | Não | Não | Sim, a menos que você substitua o modelo padrão
-`line2clicked` | Disparado quando a linha2 é clicada | O objeto que pode ser um usuário Graph , pessoa ou contato com uma propriedade adicional que contém a URL da `person` foto do [](/graph/api/resources/user) [](/graph/api/resources/person) [](/graph/api/resources/contact) `personImage` usuário | Não | Não | Sim, a menos que você substitua o modelo padrão
-`line3clicked` | Disparado quando a linha3 é clicada | O objeto que pode ser um usuário Graph , pessoa ou contato com uma propriedade adicional que contém a URL da `person` foto do [](/graph/api/resources/user) [](/graph/api/resources/person) [](/graph/api/resources/contact) `personImage` usuário | Não | Não | Sim, a menos que você substitua o modelo padrão
+`line1clicked` | Disparado quando a linha1 é clicada | O `person` objeto que pode ser um usuário [Graph, pessoa](/graph/api/resources/user) ou [](/graph/api/resources/person) contato com [](/graph/api/resources/contact) uma propriedade adicional que contém a `personImage` URL da foto do usuário | Não | Não | Sim, a menos que você substitua o modelo padrão
+`line2clicked` | Disparado quando a linha2 é clicada | O `person` objeto que pode ser um usuário [Graph, pessoa](/graph/api/resources/user) ou [](/graph/api/resources/person) contato com [](/graph/api/resources/contact) uma propriedade adicional que contém a `personImage` URL da foto do usuário | Não | Não | Sim, a menos que você substitua o modelo padrão
+`line3clicked` | Disparado quando a linha3 é clicada | O `person` objeto que pode ser um usuário [Graph, pessoa](/graph/api/resources/user) ou [](/graph/api/resources/person) contato com [](/graph/api/resources/contact) uma propriedade adicional que contém a `personImage` URL da foto do usuário | Não | Não | Sim, a menos que você substitua o modelo padrão
 
 Para obter mais informações sobre como lidar com eventos, consulte [eventos](../customize-components/events.md).
 
 ## <a name="templates"></a>Modelos
 
-O `mgt-person` componente dá suporte a vários [modelos](../customize-components/templates.md) que permitem substituir determinadas partes do componente. Para especificar um modelo, inclua um elemento dentro de um componente e de definir o `<template>` valor como um dos `data-type` seguintes:
+O `mgt-person` componente dá suporte a [vários modelos](../customize-components/templates.md) que permitem substituir determinadas partes do componente. Para especificar um modelo, inclua um `<template>` elemento dentro de um componente e de `data-type` definir o valor como um dos seguintes:
 
 | Tipo de dados | Contexto de dados | Descrição |
 | --------- | ------------ | ----------- |
@@ -175,7 +176,7 @@ O exemplo a seguir define um modelo para o componente da pessoa.
 
 ## <a name="person-card"></a>Cartão pessoal
 
-O `mgt-person` componente pode mostrar um ao passar o mouse ou `mgt-person-card` clicar.
+O `mgt-person` componente pode mostrar um `mgt-person-card` ao passar o mouse ou clicar.
 
 ### <a name="add-the-control-to-the-html-page"></a>Adicionar o controle à página HTML
 ```html
@@ -184,14 +185,14 @@ O `mgt-person` componente pode mostrar um ao passar o mouse ou `mgt-person-card`
 
 | Atributo    |  Propriedade     | Descrição                                                                     |
 | ------------ | ------------- | ------------------------------------------------------------------------------- |
-| person-card | personCardInteraction | Uma enumeração para determinar a ação do usuário necessária para ativar o painel do sub-sub-plano - `hover` ou `click` . O valor padrão é `none` |
+| person-card | personCardInteraction | Uma enumeração para determinar a ação do usuário necessária para ativar o painel do sub-sub-plano - `hover` ou `click`. O valor padrão é `none` |
 
 
 Para obter mais informações sobre a templating, o estilo e os atributos, consulte [Person Card component](./person-card.md).
 
 ## <a name="global-component-configuration"></a>Configuração de componente global
 
-A `MgtPerson` classe expõe um objeto `config` estático que configura todos os componentes da pessoa no aplicativo.
+A `MgtPerson` classe expõe um objeto estático `config` que configura todos os componentes da pessoa no aplicativo.
 
 O exemplo a seguir mostra como usar o objeto config.
 
@@ -213,17 +214,17 @@ Esse controle usa as seguintes APIs Graph Microsoft e permissões.
 
 | Configuração | Permissão | API |
 | ------------- | ---------- | --- |
-| `personDetails` set without image, `fetchImage` set to , set to , `true` `avatarType` `photo` retrieved person is a contact and `useContactApis` set to `true` | Contacts.Read | [/me/contacts/\*](/graph/api/user-list-contacts) |
-| `personDetails` set without image, `fetchImage` set to , set to and person is not a contact or is set `true` `avatarType` `photo` `useContactApis` to `false` | User.ReadBasic.All | [/users/{id}/photo/$value](/graph/api/profilephoto-get) |
-| `personDetails` set without image, `fetchImage` set to , set to and user `true` `avatarType` `photo` specified via email | User.ReadBasic.All | [/users/{id}/photo/$value](/graph/api/profilephoto-get) |
-| `personDetails` set without image, `fetchImage` set to , set to and contact `true` `avatarType` `photo` specified via email | Contacts.Read | [/me/contacts/\*](/graph/api/user-list-contacts) |
+| `personDetails` set without image, `fetchImage` set to `true`, `avatarType` set to `photo`, retrieved person is a contact and `useContactApis` set to `true` | Contacts.Read | [/me/contacts/\*](/graph/api/user-list-contacts) |
+| `personDetails` set without image, `fetchImage` set to `true`, `avatarType` set to `photo` and person is not a contact or `useContactApis` is set to `false` | User.ReadBasic.All | [/users/{id}/photo/$value](/graph/api/profilephoto-get) |
+| `personDetails` set without image, `fetchImage` set to `true`, `avatarType` set to `photo` and user specified via email | User.ReadBasic.All | [/users/{id}/photo/$value](/graph/api/profilephoto-get) |
+| `personDetails` set without image, `fetchImage` set to `true`, `avatarType` set to and `photo` contact specified via email | Contacts.Read | [/me/contacts/\*](/graph/api/user-list-contacts) |
 | `userId` set | User.ReadBasic.All | [/users/{id}](/graph/api/user-list-people) |
 | `personQuery` definir como `me` e `avatarType` definir como `photo` | User.Read | [/me/photo/$value](/graph/api/profilephoto-get) |
-| `personQuery` definir para `me` e definir para outra coisa que `avatarType` não `photo` | User.Read | [/me](/graph/api/user-get) |
-| `personQuery` definido como um valor diferente `me` e `useContactApis` definido como `true` | People.Read, User.ReadBasic.All, Contacts.Read | [/me/people/?$search=](/graph/api/user-list-people), [/users?$search=](/graph/api/user-list-people), [/me/contacts/ \* ](/graph/api/user-list-contacts) |
-| `personQuery` definido como um valor diferente `me` e `useContactApis` definido como `false` | People.Read, User.ReadBasic.All | [/me/people/?$search=](/graph/api/user-list-people), [/users?$search=](/graph/api/user-list-people) |
+| `personQuery` definir para `me` e `avatarType` definir para outra coisa que não `photo` | User.Read | [/me](/graph/api/user-get) |
+| `personQuery` definido como um valor diferente e `me` `useContactApis` definido como `true` | People.Read, User.ReadBasic.All, Contacts.Read | [/me/people/?$search=](/graph/api/user-list-people), [/users?$search=](/graph/api/user-list-people), [/me/contacts/\*](/graph/api/user-list-contacts) |
+| `personQuery` definido como um valor diferente e `me` `useContactApis` definido como `false` | People.Read, User.ReadBasic.All | [/me/people/?$search=](/graph/api/user-list-people), [/users?$search=](/graph/api/user-list-people) |
 | `showPresence` definir como `true` e `personQuery` definir como `me` | Presence.Read | [/me/presence](/graph/api/presence-get) |
-| `showPresence` definir como `true` e definir como um valor `personQuery` diferente `me` | Presence.Read.All | [/users/{id}/presence](/graph/api/presence-get) |
+| `showPresence` definir como `true` e `personQuery` definir como um valor diferente `me` | Presence.Read.All | [/users/{id}/presence](/graph/api/presence-get) |
 | `personCardInteraction` definido como um valor diferente de `PersonCardInteraction.none` | Consulte [permissões de cartão de pessoa](/graph/toolkit/components/person-card#microsoft-graph-permissions) | Consulte [chamadas de API de cartão de pessoa](/graph/toolkit/components/person-card#microsoft-graph-permissions) |
 
 ## <a name="authentication"></a>Autenticação
@@ -234,7 +235,7 @@ O controle usa o provedor de autenticação global descrito na [documentação d
 
 |Armazenamento de objetos|Dados armazenados em cache|Comentários|
 |---------|-----------|-------|
-|`photos`|Foto da pessoa|Usado, quando `avatarType` é definido como e é definido `photo` `fetchImage` como `true`|
+|`photos`|Foto da pessoa|Usado, quando `avatarType` é definido como `photo` e `fetchImage` é definido como `true`|
 |`presence`|Presença da pessoa|Usado, quando `showPresence` está definido como `true`|
 |`users`|Informações do usuário da pessoa|
 
@@ -242,7 +243,7 @@ Consulte [Caching](../customize-components/cache.md) para obter mais detalhes so
 
 ## <a name="extend-for-more-control"></a>Estender para obter mais controle
 
-Para cenários mais complexos ou um UX realmente personalizado, esse componente expõe vários métodos para substituição `protected render*` em extensões de componentes.
+Para cenários mais complexos ou um UX realmente personalizado, `protected render*` esse componente expõe vários métodos para substituição em extensões de componentes.
 
 | Método | Descrição |
 | - | - |

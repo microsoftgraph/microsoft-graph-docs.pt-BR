@@ -1,18 +1,18 @@
 ---
-title: Obter uma configuração de diretório
+title: Obter directorySetting
 description: Recupere as propriedades de um objeto de configuração de diretório específico.
 author: adimitui
 ms.localizationpriority: medium
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: 79bb4851ea0aec7a84aa7c3e0ce1d4362a4d3bdd
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: 8a71153b7ed99a4eece21bdb766fef5dee915321
+ms.sourcegitcommit: 77d2ab5018371f153d47cc1cd25f9dcbaca28a95
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62090607"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63336393"
 ---
-# <a name="get-a-directory-setting"></a>Obter uma configuração de diretório
+# <a name="get-directorysetting"></a>Obter directorySetting
 
 Namespace: microsoft.graph
 
@@ -20,10 +20,11 @@ Namespace: microsoft.graph
 
 Recupere as propriedades de um objeto de configuração de diretório específico.
 
-> **Observação**: a versão /beta dessa API só se aplica a grupos. A versão /v1.0 dessa API foi renomeada para *Get groupSettings*.
-
 ## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
+
+
+### <a name="list-tenant-wide-settings"></a>Listar configurações de todo o locatário
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
 |:--------------------|:---------------------------------------------------------|
@@ -31,15 +32,33 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |Delegado (conta pessoal da Microsoft) | Sem suporte.    |
 |Aplicativo | Directory.Read.All, Directory.ReadWrite.All |
 
+### <a name="list-group-specific-settings"></a>Listar configurações específicas do grupo
+
+|Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
+|:--------------------|:---------------------------------------------------------|
+|Delegado (conta corporativa ou de estudante) | Group.Read.All, Group.ReadWrite.All    |
+|Delegado (conta pessoal da Microsoft) | Sem suporte.    |
+|Aplicativo | Group.Read.All, Group.ReadWrite.All  |
+
+
 ## <a name="http-request"></a>Solicitação HTTP
+
 <!-- { "blockType": "ignored" } -->
-Obter uma configuração específica de locatário ou grupo
+
+Obter uma configuração em todo o locatário.
+
 ```http
-GET /settings/{id}
-GET /groups/{id}/settings/{id}
+GET /settings/{directorySettingId}
 ```
+
+<!-- { "blockType": "ignored" } -->
+Obter uma configuração específica do grupo.
+```http
+GET /groups/{groupId}/settings/{directorySettingId}
+```
+
 ## <a name="optional-query-parameters"></a>Parâmetros de consulta opcionais
-Este método dá suporte a [Parâmetros de consulta OData](/graph/query-parameters) para ajudar a personalizar a resposta.
+Este método dá suporte a `$select` [Parâmetros de consulta OData](/graph/query-parameters) para ajudar a personalizar a resposta.
 
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
 | Nome      |Descrição|
@@ -51,7 +70,7 @@ Não forneça um corpo de solicitação para esse método.
 
 ## <a name="response"></a>Resposta
 
-Se tiver êxito, este método retornará um código `200 OK` de resposta e um objeto [directorySetting](../resources/directorysetting.md) no corpo da resposta.
+Se tiver êxito, este método retornará um `200 OK` código de resposta e [um objeto directorySetting](../resources/directorysetting.md) no corpo da resposta.
 
 ## <a name="example"></a>Exemplo
 ### <a name="request"></a>Solicitação
@@ -93,7 +112,7 @@ GET https://graph.microsoft.com/beta/settings/f0b2d6f5-097d-4177-91af-a24e530b53
 ---
 
 
-##### <a name="response"></a>Resposta
+### <a name="response"></a>Resposta
 Este é um exemplo de resposta. 
 >**Observação:** o objeto de resposta mostrado aqui pode ser encurtado para legibilidade.
 <!-- {

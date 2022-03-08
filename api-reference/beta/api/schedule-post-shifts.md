@@ -1,16 +1,16 @@
 ---
 title: Criar turno
 description: Crie um novo turno.
-author: nkramer
+author: aaku
 ms.localizationpriority: medium
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: bf7b80efd09f7ddc937f23beddf4d5dc60e2e7c4
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: 2da457fd8c08e83a322fb71174dae4a67fba8122
+ms.sourcegitcommit: 77d2ab5018371f153d47cc1cd25f9dcbaca28a95
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62125500"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63331906"
 ---
 # <a name="create-shift"></a>Criar turno
 
@@ -18,7 +18,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Crie uma nova [instância de turno](../resources/shift.md) em um [agendamento](../resources/schedule.md).
+Crie uma nova [instância de turno](../resources/shift.md) em um [cronograma](../resources/schedule.md).
 
 ## <a name="permissions"></a>Permissões
 
@@ -47,7 +47,7 @@ POST /teams/{teamId}/schedule/shifts
 
 ## <a name="response"></a>Resposta
 
-Se tiver êxito, este método retornará `201 Created` um código de resposta e um objeto [shift](../resources/shift.md) no corpo da resposta.
+Se tiver êxito, este método retornará um `201 Created` código de resposta e um [objeto shift](../resources/shift.md) no corpo da resposta.
 
 ## <a name="example"></a>Exemplo
 

@@ -5,12 +5,12 @@ author: sureshja
 ms.localizationpriority: medium
 ms.prod: applications
 doc_type: apiPageType
-ms.openlocfilehash: 10cfb4ee29d9262f9a595799f75d0e78bf3d8724
-ms.sourcegitcommit: 871db8b3f68489d24e2aeafe694725579ee44c47
+ms.openlocfilehash: 7fac54742cca998d94af7792db820c2c0859983a
+ms.sourcegitcommit: 77d2ab5018371f153d47cc1cd25f9dcbaca28a95
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/26/2022
-ms.locfileid: "62224752"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63332487"
 ---
 # <a name="update-application"></a>Atualizar aplicativo
 
@@ -18,7 +18,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Atualize as propriedades de um [objeto application.](../resources/application.md)
+Atualize as propriedades de um [objeto application](../resources/application.md) .
 
 > [!IMPORTANT]
 > Não há suporte para o uso do PATCH para definir [**passwordCredential**](../resources/passwordcredential.md). Use os [métodos addPassword](./application-addpassword.md) e [removePassword](./application-removepassword.md) para atualizar a senha de um aplicativo.
@@ -55,7 +55,7 @@ No corpo da solicitação, forneça os valores para os campos relevantes que dev
 | groupMembershipClaims   | Cadeia de caracteres                                                                      | Configura a declaração **de grupos** emitida em um usuário ou token de acesso OAuth 2.0 que o aplicativo espera. Para definir esse atributo, use um dos seguintes valores válidos de cadeia de caracteres:<ul><li>`None`</li><li>`SecurityGroup`: Para grupos de segurança e Azure Active Directory funções (Azure AD)</li><li>`All`: isso obterá todos os grupos de segurança e de distribuição e funções de diretório do Azure AD dos quais o usuário conectado é membro.</li></ul>                                                                                                                       |
 | identifierUris          | Coleção de cadeias de caracteres                                                           | Os URIs que identificam o aplicativo em seu locatário do Azure AD ou em um domínio personalizado verificado, se o aplicativo é multilocatário. Para saber mais, confira [Objetos de aplicativo e Objetos de entidade de serviço](/azure/active-directory/develop/app-objects-and-service-principals). O operador *any* é obrigatório para expressões de filtro em propriedades de vários valores. Não anulável.                                                                                                                                                                           |
 | informações                     | [informationalUrl](../resources/informationalurl.md)                        | Informações básicas de perfil do aplicativo, como URLs de marketing, suporte, termos de serviço e declaração de privacidade do aplicativo. Os termos de serviço e a política de privacidade são revelados aos usuários por meio da experiência de consentimento do usuário. Para obter mais informações, [consulte Add Terms of service and privacy statement for registered Azure AD apps](/azure/active-directory/develop/howto-add-terms-of-service-privacy-statement).                                                                                                                                                 |
-| isFallbackPublicClient  | Booliano                                                                     | Especifica o tipo de aplicativo de fallback como cliente público; por exemplo, um aplicativo instalado em um dispositivo móvel. O valor padrão é , o que significa que o tipo de `false` aplicativo de fallback é cliente confidencial, como aplicativo Web. Há certos cenários em que o Azure AD não pode determinar o tipo de aplicativo cliente (por exemplo, o fluxo [ropc](https://tools.ietf.org/html/rfc6749#section-4.3) em que ele é configurado sem especificar um URI de redirecionamento). Nesses casos, o Azure AD interpretará o tipo de aplicativo com base no valor dessa propriedade. |
+| isFallbackPublicClient  | Booliano                                                                     | Especifica o tipo de aplicativo de fallback como cliente público; por exemplo, um aplicativo instalado em um dispositivo móvel. O valor padrão é `false`, o que significa que o tipo de aplicativo de fallback é cliente confidencial, como aplicativo Web. Há certos cenários em que o Azure AD não pode determinar o tipo de aplicativo cliente (por exemplo, o fluxo [ropc](https://tools.ietf.org/html/rfc6749#section-4.3) em que ele é configurado sem especificar um URI de redirecionamento). Nesses casos, o Azure AD interpretará o tipo de aplicativo com base no valor dessa propriedade. |
 | keyCredentials          | [keyCredential](../resources/keycredential.md) collection                   | A coleção das principais credenciais associadas ao aplicativo. Não anulável.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       |
 | logo                    | Stream                                                                      | O logotipo principal do aplicativo. Não anulável.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       |
 | onPremisesPublishing    | [onPremisesPublishing](../resources/onpremisespublishing.md)                | Representa o conjunto de propriedades para configurar o Proxy de Aplicativo [do Azure AD](/azure/active-directory/app-proxy/what-is-application-proxy) para um aplicativo local. Essa propriedade só pode ser definida após a criação do aplicativo.                                                                                                                                                                                                                                                                                                                                                        |
@@ -69,10 +69,11 @@ No corpo da solicitação, forneça os valores para os campos relevantes que dev
 | Nome único | Cadeia de caracteres | O identificador exclusivo que pode ser atribuído a um aplicativo como um identificador alternativo. Imutável. Somente leitura.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         |
 | web                     | [webApplication](../resources/webapplication.md)                            | Especifica configurações para um aplicativo Web.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              |
 | spa                     | [spaApplication](../resources/spaapplication.md)                            | Especifica as configurações de um aplicativo de página simples, incluindo URLs de saída e de redirecionamento de URIs para os códigos de autorização e tokens de acesso. |
+| windows                     | [windowsApplication](../resources/windowsapplication.md)                            | Especifica as configurações para aplicativos que executam o Microsoft Windows e publicados no Microsoft Store ou no armazenamento de jogos do Xbox. Inclui SID do pacote e URIs de redirecionamento para códigos de autorização e tokens de acesso. |
 
 ## <a name="response"></a>Resposta
 
-Se tiver êxito, este método retornará um código `204 No Content` de resposta e não retornará nada no corpo da resposta.
+Se tiver êxito, este método retornará um `204 No Content` código de resposta e não retornará nada no corpo da resposta.
 ## <a name="example"></a>Exemplo
 ##### <a name="request"></a>Solicitação
 Este é um exemplo da solicitação.

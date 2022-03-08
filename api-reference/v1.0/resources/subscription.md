@@ -5,12 +5,12 @@ ms.localizationpriority: high
 author: Jumaodhiss
 ms.prod: change-notifications
 doc_type: resourcePageType
-ms.openlocfilehash: 966f44ea3ed9fc6edc4580043bd4f9cdbe9be9c0
-ms.sourcegitcommit: 9759b647acfbed99d5675a6f512aaa33932a723f
+ms.openlocfilehash: c5d25b8de538d96784e5001107063355497c073c
+ms.sourcegitcommit: 77d2ab5018371f153d47cc1cd25f9dcbaca28a95
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/23/2021
-ms.locfileid: "61603913"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63335903"
 ---
 # <a name="subscription-resource-type"></a>tipo de recurso de assinatura
 
@@ -26,7 +26,7 @@ Uma assinatura que permite a um aplicativo cliente receber notificações sobre 
 - Um [grupo][] no Azure Active Directory.
 - Uma [list][] em um [site][] do SharePoint.
 - Uma [message][], [event][] ou [contact][] no Outlook.
-- Uma [printer][] (quando um trabalho de impressão para a impressora chegar ao estado JobFetchable – pronto para ser buscado para impressão) e uma [PrintTaskDefinition][] em Impressão Universal. Para saber mais, confira [Inscrever-se para alterar notificações de APIs de impressão na nuvem](/graph/universal-print-webhook-notifications).
+- Uma [impressora][] (quando um trabalho de impressão da impressora chegar ao estado JobFetchable – pronto para ser buscado para impressão) e uma [printTaskDefinition][] na Impressão Universal. Para obter mais informações, consulte [Assinar para alterar as notificações de APIs de impressão na nuvem](/graph/universal-print-webhook-notifications).
 - Um [usuário][] no Azure Active Directory.
 
 Para obter os possíveis valores de caminho de recurso para cada recurso com suporte e saber como os recursos usam notificações de ciclo de vida, consulte [Usar a API Microsoft Graph para obter notificações de alteração](webhooks.md).
@@ -46,20 +46,20 @@ Para obter os possíveis valores de caminho de recurso para cada recurso com sup
 
 | Propriedade | Tipo | Descrição | Recursos com Suporte |
 |:---------|:-----|:------------|:--------------|
-| ApplicationId | Cadeia de caracteres | Identificador do aplicativo utilizado para criar a assinatura. Somente leitura. | Todos |
+| ApplicationId | Cadeia de caracteres | Opcional. Identificador do aplicativo usado para criar a assinatura. Somente leitura. | Todos |
 | changeType | Cadeia de caracteres | Obrigatório. Indica qual é o tipo de alteração no recurso inscrito que irá emitir uma notificação de alteração. Os valores com suporte são: `created`, `updated`, `deleted`. Vários valores podem ser combinados usando uma lista separada por vírgula. <br><br>**Observação:** <li> As notificações de alteração de lista e item raiz da unidade dão suporte apenas `updated` changeType. <li>[Usuário](../resources/user.md) e [grupo](../resources/user.md) notificações de alteração dão suporte `updated` e `deleted` changeType. | Todos |
 | clientState | String | Opcional. Especifica o valor da propriedade `clientState` enviada pelo serviço em cada notificação de alteração. O comprimento máximo é de 128 caracteres. O cliente pode verificar se a notificação de alteração veio do serviço pela comparação do valor da propriedade `clientState` enviada com a assinatura com o valor da propriedade `clientState` recebida contendo cada notificação de alteração. | Todos |
-| creatorId | Cadeia de caracteres | Identificador de usuário ou entidade de serviço que criou a assinatura. Se o aplicativo usado delegada permissões para criar a assinatura, esse campo contém a id do usuário que entrou no aplicativo chamado em nome dele. Se o aplicativo usou permissões do aplicativo, esse campo contém a id da entidade de serviço correspondente ao aplicativo. Somente leitura. | Todos |
-| encryptionCertificate | Cadeia de caracteres | Uma representação codificada em Base64 de um certificado com uma chave pública usada para criptografar os dados de recursos nas notificações de alteração. Opcional, mas necessário quando **includeResourceData** é `true`. | Todos |
-| encryptionCertificateId | String | Opcional. Um identificador personalizado fornecido pelo aplicativo para ajudar a identificar o certificado necessário para descriptografar os dados do recurso. | Todos |
-| expirationDateTime | DateTimeOffset | Obrigatório. Especifica a data e a hora em que a assinatura do webhook expira. O horário está em UTC e pode ser uma quantidade de tempo desde a criação da assinatura que varia para o recurso assinado. Para obter o período máximo de assinatura com suporte, consulte [tabela abaixo](#maximum-length-of-subscription-per-resource-type). | Todos |
-| id | Cadeia de caracteres | Identificador exclusivo da assinatura. Somente leitura. | Todos |
+| creatorId | String | Opcional. Identificador de usuário ou entidade de serviço que criou a assinatura. Se o aplicativo usado delegada permissões para criar a assinatura, esse campo contém a id do usuário que entrou no aplicativo chamado em nome dele. Se o aplicativo usou permissões do aplicativo, esse campo contém a id da entidade de serviço correspondente ao aplicativo. Somente leitura. | Todos |
+| encryptionCertificate | Cadeia de caracteres | Opcional. Uma representação codificada em Base64 de um certificado com uma chave pública usada para criptografar os dados dos recursos nas notificações de alteração. Opcional, mas necessário quando **includeResourceData** for `true`. | Todos |
+| encryptionCertificateId | String | Opcional. Um aplicativo personalizado forneceu um identificador para ajudar a identificar o certificado necessário para decodificar os dados dos recursos. | Todos |
+| expirationDateTime | DateTimeOffset | Obrigatório. Especifique a data e a hora em que a assinatura do Webhook expira. O forário está em UTC e pode ser um período de tempo desde a criação da assinatura que varia de acordo com o recurso assinado. Para obter o período máximo de assinaturas com suporte, consulte [a tabela abaixo](#maximum-length-of-subscription-per-resource-type). | Todos |
+| id | Cadeia de caracteres | Opcional. Identificador exclusivo da assinatura. Somente leitura. | Todos |
 | includeResourceData | Booleano | Opcional. Quando definido como `true`, alterar as notificações [inclui dados de recurso](/graph/webhooks-with-resource-data) (como o conteúdo de uma mensagem de bate-papo). | Todos |
-| latestSupportedTlsVersion | Cadeia de caracteres | Especifica a versão mais recente do protocolo TLS que o ponto de extremidade, especificado por **notificationUrl**, é compatível. Os valores possíveis são: `v1_0`, `v1_1`, `v1_2`, `v1_3`. </br></br>Para os assinantes cujo ponto de extremidade de notificação suporta uma versão menor que a versão recomendada atualmente (TLS 1.2), especificar essa propriedade por uma [linha do tempo](https://developer.microsoft.com/graph/blogs/microsoft-graph-subscriptions-deprecating-tls-1-0-and-1-1/) definida, permite o uso temporário da versão preterida do TLS antes de concluir a atualização para o TLS 1.2. Para esses assinantes, não definir essa propriedade pela linha do tempo resultaria em uma falha nas operações da assinatura. </br></br>Para os assinantes cujo ponto de extremidade já tem suporte ao TLS 1.2, a configuração dessa propriedade é opcional. Nesses casos, o Microsoft Graph padroniza a propriedade como `v1_2`. | Todos |
+| latestSupportedTlsVersion | Cadeia de caracteres | Opcional. Especifique a versão mais recente do Protocolo TLS que o ponto de extremidade de notificação, especificado por **notificationUrl**, oferece suporte. Os valores possíveis são: `v1_0`, `v1_1`, `v1_2`, `v1_3`. </br></br>Quanto aos assinantes cujo ponto de extremidade de notificação oferece suporte a uma versão inferior à versão recomendada no momento (TLS 1.2), especificar essa propriedade por um conjunto de [linhas do tempo](https://developer.microsoft.com/graph/blogs/microsoft-graph-subscriptions-deprecating-tls-1-0-and-1-1/) permite que eles usem temporariamente sua versão preterida do TLS antes de concluir a atualização para o TLS 1.2. Para esses assinantes, não definir essa propriedade de acordo com a linha do tempo resultaria em erro nas operações de assinatura.</br></br>Para os assinantes cujo ponto de extremidade já tem suporte ao TLS 1.2, a configuração dessa propriedade é opcional. Nesses casos, o Microsoft Graph padroniza a propriedade como `v1_2`. | Todos |
 | lifecycleNotificationUrl | String | Opcional. A URL do ponto de extremidade que recebe notificações do ciclo de vida, incluindo notificações de `subscriptionRemoved` e `missed`. Esta URL deve fazer uso do protocolo HTTPS. | Todos |
-| notificationContentType | Cadeia de caracteres | O **tipo de conteúdo** desejado para notificações de alteração do Microsoft Graph para tipos de recursos com suporte. O tipo de conteúdo padrão é `application/json`. | Todos |
-| notificationQueryOptions | Cadeia de caracteres | Opções de consulta OData para especificar o valor para o recurso de direcionamento. Os clientes recebem notificações quando o recurso atinge ao estado correspondente às opções de consulta aqui fornecidas. Com essa nova propriedade na carga de criação da assinatura, juntamente com todas as propriedades existentes, os Webhooks entregarão notificações sempre que um recurso atingir o estado desejado mencionado na propriedade notificationQueryOptions. Por exemplo, quando o trabalho de impressão é concluído ou quando um valor de propriedade de recurso de trabalho de impressão `isFetchable` torna-se `true` etc. | [Serviço de Impressão Universal](/graph/universal-print-webhook-notifications) |
+| notificationQueryOptions | String | Opcional. Opções de consulta OData para especificar o valor para o recurso de direcionamento. Os clientes recebem notificações quando o recurso atinge ao estado correspondente às opções de consulta aqui fornecidas. Com essa nova propriedade na carga de criação da assinatura, juntamente com todas as propriedades existentes, os Webhooks entregarão notificações sempre que um recurso atingir o estado desejado mencionado na propriedade notificationQueryOptions. Por exemplo, quando o trabalho de impressão é concluído ou quando um valor de propriedade de recurso de trabalho de impressão `isFetchable` torna-se `true` etc. | [Serviço de Impressão Universal](/graph/universal-print-webhook-notifications) |
 | notificationUrl | Cadeia de caracteres | Obrigatório. O URL do ponto de extremidade que receberá as notificações de alteração. Este URL deve fazer uso do protocolo HTTPS. | Todos |
+| notificationUrlAppId| String | Opcional. A ID do aplicativo que o serviço de assinatura pode usar para gerar o token de validação. Isso permite que o cliente valide a autenticidade da notificação recebida.  | Todos |
 | recurso | Cadeia de caracteres | Obrigatório. Especifica o recurso que será monitorado para detectar alterações. Não incluir a URL base (`https://graph.microsoft.com/v1.0/`). Consulte os possíveis valores do [caminho](webhooks.md) do recurso de cada recurso suportado.| Todos |
 
 ### <a name="maximum-length-of-subscription-per-resource-type"></a>Tamanho máximo da assinatura por tipo de recurso
@@ -74,6 +74,7 @@ Para obter os possíveis valores de caminho de recurso para cada recurso com sup
 | **Lista** do Microsoft Office SharePoint Online    | 42.300 minutos (menos de 30 dias)    |
 | Outlook **mensagem**, **evento**, **contato**              | 4230 minutos (em 3 dias)    |
 | **usuário**, **grupo**, outros recursos de diretório   | 41760 minutos (menos de 29 dias)    |
+| **presence**        | 60 minutos (1 hora) |
 | Imprimir **printer** | 4230 minutos (em 3 dias)    |
 | Imprimir **printTaskDefinition** | 4230 minutos (em 3 dias)    |
 
@@ -109,23 +110,24 @@ Veja a seguir uma representação JSON do recurso.
   ]
 }-->
 
-```json
+``` json
 {
-  "changeType": "String",
-  "notificationUrl": "String",
-  "lifecycleNotificationUrl": "String",
-  "resource": "String",
-  "applicationId" : "String",
-  "expirationDateTime": "String (timestamp)",
+  "@odata.type": "#microsoft.graph.subscription",
   "id": "String (identifier)",
+  "resource": "String",
+  "changeType": "String",
   "clientState": "String",
+  "notificationUrl": "String",
+  "expirationDateTime": "String (timestamp)",
+  "applicationId": "String",
   "creatorId": "String",
   "includeResourceData": "Boolean",
+  "lifecycleNotificationUrl": "String",
   "encryptionCertificate": "String",
   "encryptionCertificateId": "String",
   "latestSupportedTlsVersion": "String",
-  "notificationContentType": "String",
-  "notificationQueryOptions": "String"
+  "notificationQueryOptions": "String",
+  "notificationUrlAppId": "String"
 }
 ```
 

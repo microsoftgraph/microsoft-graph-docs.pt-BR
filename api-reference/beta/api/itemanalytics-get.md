@@ -1,17 +1,16 @@
 ---
 author: daspek
 description: Obter itemAnalytics sobre os exibições que ocorreram sob esse recurso.
-ms.date: 10/06/2017
 title: Obter análises
-localization_priority: Normal
+ms.localizationpriority: medium
 doc_type: apiPageType
 ms.prod: ''
-ms.openlocfilehash: 6366106097b4f6b9b43d8fe0eacddeaeab53826d
-ms.sourcegitcommit: d014f72cf2cd130bedb02651092c0be12967b679
+ms.openlocfilehash: c3fc4057142e5a6706d0302328a27b703b0e9b8b
+ms.sourcegitcommit: 77d2ab5018371f153d47cc1cd25f9dcbaca28a95
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "50475797"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63337002"
 ---
 # <a name="get-analytics"></a>Obter análises
 
@@ -20,10 +19,10 @@ Namespace: microsoft.graph
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Obter [itemAnalytics][] sobre os exibições que ocorreram sob esse recurso.
-O **recurso itemAnalytics** é uma maneira conveniente de obter estatísticas de atividade para `allTime` e para o `lastSevenDays` .
-Para um intervalo ou intervalo de tempo personalizado, use a API [getActivitiesByInterval.][]
+O **recurso itemAnalytics** é uma maneira conveniente de obter estatísticas de atividade para `allTime` e `lastSevenDays`para o .
+Para um intervalo ou intervalo de tempo personalizado, use a API [getActivitiesByInterval][] .
 
->**Observação:** O **recurso itemAnalytics** ainda não está disponível em todas as [implantações nacionais.](/graph/deployments)
+>**Observação:** O **recurso itemAnalytics** ainda não está disponível em todas as [implantações nacionais](/graph/deployments).
 
 [itemAnalytics]: ../resources/itemanalytics.md
 [getActivitiesByInterval]: ../api/itemactivity-getbyinterval.md
@@ -32,11 +31,11 @@ Para um intervalo ou intervalo de tempo personalizado, use a API [getActivitiesB
 
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
-|Tipo de permissão                        | Permissões (da com menos para a com mais privilégios)
-|:--------------------------------------|:-------------------------------------
-|Delegado (conta corporativa ou de estudante)     | Files.Read, Files.ReadWrite, Files.Read.All, Files.ReadWrite.All, Sites.Read.All, Sites.ReadWrite.All
-|Delegado (conta pessoal da Microsoft) | Sem suporte.
-|Aplicativo                            | Files.Read.All, Files.ReadWrite.All, Sites.Read.All, Sites.ReadWrite.All
+|Tipo de permissão                        | Permissões (da com menos para a com mais privilégios)|
+|:--------------------------------------|:-------------------------------------|
+|Delegado (conta corporativa ou de estudante)     | Files.Read, Files.ReadWrite, Files.Read.All, Files.ReadWrite.All, Sites.Read.All, Sites.ReadWrite.All|
+|Delegado (conta pessoal da Microsoft) | Sem suporte.|
+|Aplicativo                            | Files.Read.All, Files.ReadWrite.All, Sites.Read.All, Sites.ReadWrite.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
 
@@ -48,10 +47,28 @@ GET /sites/{site-id}/analytics
 GET /sites/{site-id}/lists/{list-id}/items/{item-id}/analytics
 ```
 
+## <a name="optional-query-parameters"></a>Parâmetros de consulta opcionais
+Este método dá suporte a [Parâmetros de consulta OData](/graph/query-parameters) para ajudar a personalizar a resposta.
+
+## <a name="request-headers"></a>Cabeçalhos de solicitação
+
+| Nome          | Descrição               |
+| :------------ | :------------------------ |
+| Autorização | {token} de portador. Obrigatório. |
+
+## <a name="request-body"></a>Corpo da solicitação
+
+Não forneça um corpo de solicitação para esse método.
+
+## <a name="response"></a>Resposta
+
+Se tiver êxito, este método retornará um `200 OK` código de resposta e uma coleção [de objeto itemAnalytics][] no corpo da resposta. 
+
 ## <a name="example"></a>Exemplo
 
-#### <a name="request"></a>Solicitação
+### <a name="request"></a>Solicitação
 
+Veja a seguir um exemplo de uma solicitação.
 
 # <a name="http"></a>[HTTP](#tab/http)
 <!-- { "blockType": "request", "name": "get-analytics" } -->
@@ -78,7 +95,9 @@ GET /drives/{drive-id}/items/{item-id}/analytics
 ---
 
 
-#### <a name="response"></a>Resposta
+### <a name="response"></a>Resposta
+
+Este é um exemplo de resposta.
 
 <!-- { "blockType": "response", "@type": "microsoft.graph.itemAnalytics", "truncated": true } -->
 

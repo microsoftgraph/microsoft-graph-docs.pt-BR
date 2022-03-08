@@ -5,12 +5,12 @@ author: mkhribech
 ms.localizationpriority: medium
 doc_type: resourcePageType
 ms.prod: cloud-communications
-ms.openlocfilehash: 8589be83cc647952676b7f0059c60c1d60778b91
-ms.sourcegitcommit: f336c5c49fbcebe55312656aa8b50511fd99a657
+ms.openlocfilehash: 4743cef5b2772f636d7c40118a11e886839acc95
+ms.sourcegitcommit: 77d2ab5018371f153d47cc1cd25f9dcbaca28a95
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/09/2021
-ms.locfileid: "61390987"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63334013"
 ---
 # <a name="presence-resource-type"></a>tipo de recurso de presença
 
@@ -22,9 +22,9 @@ Contém informações sobre a presença de um usuário, incluindo sua disponibil
 
 > **Observação:** Atualmente, esse recurso só tem suporte para Microsoft Teams usuários.
 
-Esse recurso dá suporte à assinatura para [alterar notificações.](/graph/webhooks)
+Esse recurso dá suporte à assinatura para [alterar notificações](/graph/webhooks).
 
-## <a name="methods"></a>Métodos
+## <a name="methods"></a>Methods
 
 | Método                                                                               | Tipo de retorno                                     | Descrição                                                                       |
 | :----------------------------------------------------------------------------------- | :---------------------------------------------- | :-------------------------------------------------------------------------------- |
@@ -37,14 +37,14 @@ Esse recurso dá suporte à assinatura para [alterar notificações.](/graph/web
 
 ## <a name="properties"></a>Propriedades
 
-| Relação        | Tipo                                          | Descrição                                                                                                                                                                                                                                                                                    |
+| Propriedade        | Tipo                                          | Descrição                                                                                                                                                                                                                                                                                    |
 | :------------------ | :-------------------------------------------- | :--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| id                  | string                                        | A ID do objeto user                                                                                                                                                                                                                                                                             |
-| availability        | coleção de cadeias de caracteres                             | As informações de presença base para um usuário. Os valores possíveis `Available` são , , , , , , , `AvailableIdle` ,  `Away` `BeRightBack` `Busy` `BusyIdle` `DoNotDisturb` `Offline` , `PresenceUnknown`                                                                                                           |
-| atividade            | coleção de cadeias de caracteres                             | As informações complementares à disponibilidade de um usuário. Os valores `Available` possíveis `Away` são , , , , , , , `BeRightBack` , , , `Busy` , , , `DoNotDisturb` `InACall` , `InAConferenceCall` `Inactive` `InAMeeting` `Offline` `OffWork` `OutOfOffice` `PresenceUnknown` `Presenting` `UrgentInterruptionsOnly` . |
+| id                  | cadeia de caracteres                                        | A ID do objeto user                                                                                                                                                                                                                                                                             |
+| availability        | coleção de cadeias de caracteres                             | As informações de presença base para um usuário. Os valores possíveis `Available`são , `AvailableIdle``Away`, , `BeRightBack`, `Busy`, `BusyIdle`, `DoNotDisturb`, , `Offline`,`PresenceUnknown`                                                                                                           |
+| atividade            | coleção de cadeias de caracteres                             | As informações complementares à disponibilidade de um usuário. Os valores possíveis `Available`são , `BeRightBack``Away`, , `Busy`, `DoNotDisturb`, `InACall`, `InAConferenceCall`, `Inactive`, `Offline``InAMeeting`, , `OffWork`,`OutOfOffice`, `PresenceUnknown`,, ,`Presenting`, `UrgentInterruptionsOnly`. |
 | outOfOfficeSettings | [outOfOfficeSettings](outOfOfficeSettings.md) | As configurações fora do escritório para um usuário.                                                                                                                                                                                                                                                         |
 
->**Observação:** Para saber mais sobre os diferentes estados de presença, consulte [Presença do usuário em Teams](/microsoftteams/presence-admins). 
+>**Observação:** Para saber mais sobre os diferentes estados de presença, consulte [Presença do usuário no Teams](/microsoftteams/presence-admins). 
 
 ## <a name="relationships"></a>Relações
 

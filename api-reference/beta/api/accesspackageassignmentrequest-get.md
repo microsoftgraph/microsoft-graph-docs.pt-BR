@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: markwahl-msft
 ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: 6d641e1531efbe6e3d72c69799f64756ebe568bb
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: 279ee832c072abe460e16a885bfdc69655b5b283
+ms.sourcegitcommit: 77d2ab5018371f153d47cc1cd25f9dcbaca28a95
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62091195"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63332963"
 ---
 # <a name="get-accesspackageassignmentrequest"></a>Obter accessPackageAssignmentRequest
 
@@ -18,7 +18,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-No gerenciamento de direitos do [Azure AD,](../resources/entitlementmanagement-overview.md)recupere as propriedades e as relações de um [objeto accessPackageAssignmentRequest.](../resources/accesspackageassignmentrequest.md)
+No [gerenciamento de direitos do Azure AD](../resources/entitlementmanagement-overview.md), recupere as propriedades e as relações de um  [objeto accessPackageAssignmentRequest](../resources/accesspackageassignmentrequest.md) .
 
 ## <a name="permissions"></a>Permissões
 
@@ -40,7 +40,7 @@ GET /identityGovernance/entitlementManagement/accessPackageAssignmentRequests/{i
 
 ## <a name="optional-query-parameters"></a>Parâmetros de consulta opcionais
 
-Este método dá suporte ao parâmetro de consulta OData para `$expand` expandir as relações, para recuperar o , `accessPackage` e `requestor` `acccessPackageAssignment` .  Por exemplo, para recuperar o destino da atribuição do pacote de acesso, `$expand=accessPackageAssignment($expand=target)` inclua na consulta.  Para obter informações gerais, acesse [Parâmetros de consulta OData](/graph/query-parameters).
+Este método dá suporte ao `$expand` parâmetro de consulta OData para expandir as relações, para recuperar `accessPackage`o , `requestor` e `acccessPackageAssignment`.  Por exemplo, para recuperar o destino da atribuição do pacote de acesso, inclua `$expand=accessPackageAssignment($expand=target)` na consulta.  Para obter informações gerais, acesse [Parâmetros de consulta OData](/graph/query-parameters).
 
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
 
@@ -54,7 +54,7 @@ Não forneça um corpo de solicitação para esse método.
 
 ## <a name="response"></a>Resposta
 
-Se tiver êxito, este método retornará um código de resposta e `200 OK` o [objeto accessPackageAssignmentRequest](../resources/accesspackageassignmentrequest.md) solicitado no corpo da resposta.
+Se tiver êxito, este método retornará `200 OK` um código de resposta e o [objeto accessPackageAssignmentRequest](../resources/accesspackageassignmentrequest.md) solicitado no corpo da resposta.
 
 ## <a name="examples"></a>Exemplos
 
@@ -115,12 +115,29 @@ HTTP/1.1 200 OK
 Content-type: application/json
 
 {
-  "id": "433dafca-5047-4614-95f7-a03510b1ded3",
-  "requestType": "AdminAdd",
-  "requestState": "Delivered",
-  "requestStatus": "Fulfilled",
-  "isValidationOnly": false,
-  "createdDateTime": "2019-10-25T22:55:11.623Z"
+    "id": "c0cfd117-f90e-4f48-8226-e282a2ae752c",
+    "requestType": "UserAdd",
+    "requestState": "delivered",
+    "requestStatus": "Delivered",
+    "createdDateTime": "2022-01-07T00:51:12.817Z",
+    "completedDate": "2022-01-07T00:53:15.127Z",
+    "schedule": {
+        "startDateTime": null,
+        "recurrence": null,
+        "expiration": {
+            "endDateTime": null,
+            "duration": null,
+            "type": "notSpecified"
+        }
+    },
+    "customExtensionHandlerInstances": [
+        {
+            "status": "requestReceived",
+            "externalCorrelationId": "08585600902100964604743022906CU13",
+            "customExtensionId": "e59ef33d-7bc4-4b15-8d3c-01153de8a498",
+            "stage": "assignmentRequestCreated"
+        }
+    ]
 }
 ```
 

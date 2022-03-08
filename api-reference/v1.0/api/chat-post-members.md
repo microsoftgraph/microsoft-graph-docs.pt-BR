@@ -1,16 +1,16 @@
 ---
 title: Adicionar membro a um chat
 description: Adicione um conversationMember a um chat.
-author: bhartono
+author: anandjo
 doc_type: apiPageType
 ms.localizationpriority: medium
 ms.prod: microsoft-teams
-ms.openlocfilehash: 3195d4b2d8da21359f799b0c5f0469f449a5e336
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: 5648fdb585fe47ac05a7605e0b8cbfaddfe032ce
+ms.sourcegitcommit: 77d2ab5018371f153d47cc1cd25f9dcbaca28a95
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62088785"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63336904"
 ---
 # <a name="add-member-to-a-chat"></a>Adicionar membro a um chat
 
@@ -46,7 +46,7 @@ No corpo da solicitação, forneça uma representação JSON do objeto [conversa
 
 ## <a name="response"></a>Resposta
 
-Se tiver êxito, este método retornará um código de resposta e um header location que fornece um caminho `201 Created` de URL para o objeto membro recém-criado.
+Se tiver êxito, este método retornará um `201 Created` código de resposta e um header location que fornece um caminho de URL para o objeto membro recém-criado.
 
 ## <a name="examples"></a>Exemplos
 
@@ -185,7 +185,7 @@ HTTP/1.1 201 Created
 Location: /chats/19:cf66807577b149cca1b7af0c32eec122@thread.v2/members/MCMjMjQzMmI1N2ItMGFiZC00M2RiLWFhN2ItMTZlYWRkMTE1ZDM0IyMxOTpiZDlkYTQ2MzIzYWY0MjUzOTZkMGZhNjcyMDAyODk4NEB0aHJlYWQudjIjIzQ4YmY5ZDUyLWRjYTctNGE1Zi04Mzk4LTM3Yjk1Y2M3YmQ4Mw==
 ```
 
-### <a name="example-3-adding-a-single-member-to-a-microsoft-teams-chat-sharing-the-whole-history-of-the-chat"></a>Exemplo 3: Adicionar um único membro a um Microsoft Teams chat, compartilhando todo o histórico do chat
+### <a name="example-3-adding-a-single-member-to-a-microsoft-teams-chat-sharing-the-whole-history-of-the-chat"></a>Exemplo 3: adicionar um único membro a um Microsoft Teams chat, compartilhando todo o histórico do chat
 
 #### <a name="request"></a>Solicitação
 

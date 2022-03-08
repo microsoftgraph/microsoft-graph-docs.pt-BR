@@ -5,12 +5,12 @@ author: ebasseri
 ms.localizationpriority: medium
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: d3b9cbafcf8ca4676f8d2cb6c381eb597bfde43d
-ms.sourcegitcommit: 4e16f26b6b685a6a3dae855a04979c84105609b9
+ms.openlocfilehash: e05c7babbea8f51f849e574d687ebde88c284d94
+ms.sourcegitcommit: 77d2ab5018371f153d47cc1cd25f9dcbaca28a95
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/10/2022
-ms.locfileid: "62519925"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63334587"
 ---
 # <a name="list-history-risk-history-of-riskyserviceprincipal"></a>Histórico de lista (histórico de risco de riskyServicePrincipal)
 Namespace: microsoft.graph
@@ -21,7 +21,7 @@ Obter o histórico de risco de [um objeto riskyServicePrincipal](../resources/ri
 
 >**Observação:** Usar a API riskyServicePrincipal requer uma Azure AD Premium P2 de usuário.
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão|Permissões (da com menos para a com mais privilégios)|
@@ -54,6 +54,8 @@ Se tiver êxito, este método retornará `200 OK` um código de resposta e uma c
 ## <a name="example"></a>Exemplo
 
 ### <a name="request"></a>Solicitação
+
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "list_riskyserviceprincipalhistoryitem"
@@ -62,6 +64,28 @@ Se tiver êxito, este método retornará `200 OK` um código de resposta e uma c
 ``` http
 GET https://graph.microsoft.com/beta/identityProtection/riskyServicePrincipals/{riskyServicePrincipalId}/history
 ```
+# <a name="c"></a>[C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/list-riskyserviceprincipalhistoryitem-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/list-riskyserviceprincipalhistoryitem-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/list-riskyserviceprincipalhistoryitem-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/list-riskyserviceprincipalhistoryitem-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[Ir](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/list-riskyserviceprincipalhistoryitem-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 
 ### <a name="response"></a>Resposta

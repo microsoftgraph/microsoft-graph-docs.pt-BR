@@ -1,16 +1,16 @@
 ---
 title: 'schedule: share'
 description: Compartilhe um intervalo de tempo de agendamento com membros de agendamento.
-author: nkramer
+author: aaku
 ms.localizationpriority: medium
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 06622a92c35964957df9e73a7eaebd5c87b3a07d
-ms.sourcegitcommit: 25acfa7d0153336c9a35d30a1dd422aeadc1342c
+ms.openlocfilehash: da31a4a02da016f485002129b5cc3a2675a61cea
+ms.sourcegitcommit: 77d2ab5018371f153d47cc1cd25f9dcbaca28a95
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/03/2022
-ms.locfileid: "62345568"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63337317"
 ---
 # <a name="schedule-share"></a>schedule: share
 

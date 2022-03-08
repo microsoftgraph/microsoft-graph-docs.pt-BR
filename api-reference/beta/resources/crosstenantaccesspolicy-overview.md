@@ -5,8 +5,13 @@ author: jkdouglas
 ms.localizationpriority: medium
 ms.prod: identity-and-sign-in
 doc_type: resourcePageType
+ms.openlocfilehash: d427c0cc6e0d4c1de6378556103f4efd3a10f103
+ms.sourcegitcommit: 77d2ab5018371f153d47cc1cd25f9dcbaca28a95
+ms.translationtype: MT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63337030"
 ---
-
 # <a name="cross-tenant-access-settings-api-overview"></a>Visão geral da API de configurações de acesso entre locatários
 
 Namespace: microsoft.graph
@@ -53,9 +58,11 @@ As configurações de confiança de entrada também permitem que você confie em
 
 A API de configurações de acesso entre locatários pode ser usada para configurar várias configurações para permitir ou bloquear o acesso de e para sua organização. A tabela a seguir realça cenários, mostra um exemplo da resposta à API e qual deve ser a interpretação dessa resposta. **b2bSetting** é usado como um espaço reservado para qualquer configuração de entrada B2B (**b2bCollaborationInbound** ou **b2bDirectConnectInbound**) ou de saída (**b2bCollaborationOutbound** ou **b2bDirectConnectOutbound**).
 
+<br/>
+
 <table>
 <tr>
-<td> Cenário </td> <td> Saída da API </td> <td> Interpretação </td>
+<th> Cenário </th> <th> Saída da API </th> <th> Interpretação </th>
 </tr>
 <tr>
 <td> Bloquear todos os usuários e bloquear todos os aplicativos </td>

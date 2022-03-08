@@ -1,17 +1,16 @@
 ---
 author: JeremyKelley
 description: Criar uma nova lista em um site.
-ms.date: 09/11/2017
 title: Criar uma lista do SharePoint
 ms.localizationpriority: medium
 ms.prod: sharepoint
 doc_type: apiPageType
-ms.openlocfilehash: aa73126f9b7e79e50ca81757ad4fcd77d006a5ef
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: e3c4c4942f9d66f23f70a51e592a36c3aa377fc0
+ms.sourcegitcommit: 77d2ab5018371f153d47cc1cd25f9dcbaca28a95
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62116105"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63333782"
 ---
 # <a name="create-a-new-list"></a>Criar uma nova lista
 
@@ -39,13 +38,31 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 POST https://graph.microsoft.com/beta/sites/{site-id}/lists
 ```
 
+## <a name="request-headers"></a>Cabeçalhos de solicitação
+
+|Nome|Descrição|
+|:---|:---|
+|Autorização|{token} de portador. Obrigatório.|
+|Content-Type|application/json. Obrigatório.|
+
 ## <a name="request-body"></a>Corpo da solicitação
 
-No corpo da solicitação, forneça uma representação JSON do recurso [lista][] a criar.
+No corpo da solicitação, fornece uma representação JSON de um [objeto list][] .
 
-## <a name="example"></a>Exemplo
+## <a name="response"></a>Resposta
 
-Aqui está um exemplo de como criar uma nova lista genérica.
+Se tiver êxito, este método retornará um `201 Created` código de resposta e um [objeto list][] no corpo da resposta. 
+
+## <a name="examples"></a>Exemplos
+
+### <a name="request"></a>Solicitação
+
+Veja a seguir um exemplo de como criar uma nova lista genérica.
+
+> **Observação:** Colunas personalizadas são opcionais.
+
+Além de todas as colunas especificadas aqui, novas listas são criadas com colunas definidas no **modelo** referenciado.
+Se a **faceta** da lista ou o **modelo** não for especificado, `genericList` a lista será padrão para o modelo, que inclui uma _coluna Title_ .
 
 
 # <a name="http"></a>[HTTP](#tab/http)
@@ -99,14 +116,11 @@ Content-Type: application/json
 ---
 
 
-**Observação:** Colunas personalizadas são opcionais.
+### <a name="response"></a>Resposta
 
-Além de todas as colunas especificadas aqui, novas listas são criadas com colunas definidas no **modelo** referenciado.
-Se a faceta **lista** ou **modelo** não for especificada, a lista considera como padrão o modelo `genericList`, que inclui uma coluna _Título_.
+Este é um exemplo de resposta.
 
-## <a name="response"></a>Resposta
-
-Se for bem-sucedido, esse método retornará uma [lista][] no corpo da resposta da lista criada.
+> **Observação:** O objeto Response será truncado para mais clareza. As propriedades padrão serão retornadas da chamada real.
 
 <!-- { "blockType": "response", "@odata.type": "microsoft.graph.list", "truncated": true } -->
 
@@ -132,9 +146,6 @@ Content-type: application/json
   }
 }
 ```
-
-**Observação:** O objeto Response será truncado para mais clareza.
-As propriedades padrão serão retornadas da chamada real.
 
 [list]: ../resources/list.md
 [site]: ../resources/site.md

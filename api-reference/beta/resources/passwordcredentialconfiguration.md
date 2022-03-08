@@ -5,12 +5,12 @@ author: madansr7
 ms.localizationpriority: medium
 ms.prod: identity-and-sign-in
 doc_type: resourcePageType
-ms.openlocfilehash: 5f62d6bf87453a99b11c6888edc5feadb52456f4
-ms.sourcegitcommit: 42e0e15ff90815e0126c34b928405486cfb1ed86
+ms.openlocfilehash: fb7d9728100d15fcbc485f5825cafab5b5726973
+ms.sourcegitcommit: 77d2ab5018371f153d47cc1cd25f9dcbaca28a95
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/17/2021
-ms.locfileid: "61044649"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63337513"
 ---
 # <a name="passwordcredentialconfiguration-resource-type"></a>Tipo de recurso passwordCredentialConfiguration
 
@@ -22,11 +22,11 @@ Objeto de configuração de credencial de senha que contém propriedades para co
 
 ## <a name="properties"></a>Propriedades
 
-| Propriedade                            | Tipo                                                                               | Descrição                                                                                                                                                                                                                                                                                   |
-| :---------------------------------- | :--------------------------------------------------------------------------------- | :-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| restrictionType                     | appCredentialRestrictionType |  O tipo de restrição que está sendo aplicado. Os valores possíveis são: `passwordAddition`, `passwordLifetime`, `symmetricKeyAddition`, `symmetricKeyLifetime`, `unknownFutureValue`. Cada valor de restrictionType pode ser usado apenas uma vez por política. |
-| maxLifeTime                         | Duração                                                                           | Valor que pode ser usado como o número máximo para definir o tempo de expiração da senha em dias, horas, minutos ou segundos. Definido no formato ISO 8601 para Durações. Por exemplo, "P4DT12H30M5S" representa uma duração de quatro dias, doze horas, trinta minutos e cinco segundos. Essa propriedade é necessária quando o tipo de restrição é definido como `passwordLifetime` . |
-| restrictForAppsCreatedAfterDateTime | DateTimeOffset                                                                     | Impõe a política para um aplicativo criado na ou após a data de aplicação. Para aplicativos existentes, a data de aplicação seria datada de volta. Para aplicar a todos os aplicativos, o tempo de data de imposição seria nulo.                                                                               |
+| Propriedade                            | Tipo                         | Descrição                                                                                                                                                                                                                                                                                                                                                   |
+| :---------------------------------- | :--------------------------- | :------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| restrictionType                     | appCredentialRestrictionType | O tipo de restrição que está sendo aplicado. Os valores possíveis são: `passwordAddition`, `passwordLifetime`, `symmetricKeyAddition`, , `symmetricKeyLifetime`,`customPasswordAddition`, `unknownFutureValue`. Cada valor de restrictionType pode ser usado apenas uma vez por política.                                                                                        |
+| maxLifeTime                         | Duration                     | Valor que pode ser usado como o número máximo para definir o tempo de expiração da senha em dias, horas, minutos ou segundos. Definido no formato ISO 8601 para Durações. Por exemplo, "P4DT12H30M5S" representa uma duração de quatro dias, doze horas, trinta minutos e cinco segundos. Essa propriedade é necessária quando o tipo de restrição é definido como `passwordLifetime`. |
+| restrictForAppsCreatedAfterDateTime | DateTimeOffset               | Impõe a política para um aplicativo criado na ou após a data de aplicação. Para aplicativos existentes, a data de aplicação seria desatualizada. Para aplicar a todos os aplicativos, essa data seria `null`.                                                                                                                                               |
 
 ## <a name="relationships"></a>Relações
 

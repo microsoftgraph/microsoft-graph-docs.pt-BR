@@ -5,12 +5,12 @@ author: AshleyYangSZ
 ms.localizationpriority: medium
 ms.prod: cloud-pc
 doc_type: apiPageType
-ms.openlocfilehash: d45251fa7287f73b81677d9e9457b4b4528af8a6
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: 46c2f062de8194267175d2e0220affd4b684c270
+ms.sourcegitcommit: 77d2ab5018371f153d47cc1cd25f9dcbaca28a95
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62106672"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63334286"
 ---
 # <a name="get-cloudpcusersetting"></a>Obter cloudPcUserSetting
 
@@ -18,7 +18,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Leia as propriedades e as relações de um [objeto cloudPcUserSetting.](../resources/cloudpcusersetting.md)
+Leia as propriedades e as relações de um [objeto cloudPcUserSetting](../resources/cloudpcusersetting.md) .
 
 ## <a name="permissions"></a>Permissões
 
@@ -43,7 +43,7 @@ GET /deviceManagement/virtualEndpoint/userSettings/{id}
 
 ## <a name="optional-query-parameters"></a>Parâmetros de consulta opcionais
 
-Este método oferece `$select` suporte e `$expand` parâmetros de consulta OData para ajudar a personalizar a resposta. Para obter informações gerais, acesse [Parâmetros de consulta OData](/graph/query-parameters).
+Este método oferece suporte `$select` e `$expand` parâmetros de consulta OData para ajudar a personalizar a resposta. Para obter informações gerais, acesse [Parâmetros de consulta OData](/graph/query-parameters).
 
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
 
@@ -57,7 +57,7 @@ Não forneça um corpo de solicitação para esse método.
 
 ## <a name="response"></a>Resposta
 
-Se tiver êxito, este método retornará um código de resposta e um `200 OK` [objeto cloudPcUserSetting](../resources/cloudpcusersetting.md) no corpo da resposta.
+Se tiver êxito, este método retornará um `200 OK` código de resposta e um [objeto cloudPcUserSetting](../resources/cloudpcusersetting.md) no corpo da resposta.
 
 ## <a name="examples"></a>Exemplos
 
@@ -121,6 +121,10 @@ Content-Type: application/json
     "displayName": "String",
     "selfServiceEnabled": true,
     "localAdminEnabled": false,
+    "restorePointSetting": {
+      "frequencyInHours": 16,
+      "userRestoreEnabled": true
+    },
     "lastModifiedDateTime": "2021-02-01T10:29:57Z",
     "createdDateTime": "2021-02-01T10:29:57Z"
   }
@@ -189,6 +193,10 @@ Content-Type: application/json
     "displayName": "Display Name value",
     "selfServiceEnabled": true,
     "localAdminEnabled": false,
+    "restorePointSetting": {
+      "frequencyInHours": 16,
+      "userRestoreEnabled": true
+    },
     "lastModifiedDateTime": "2021-02-01T10:29:57Z",
     "createdDateTime": "2021-02-01T10:29:57Z",
     "assignments": [

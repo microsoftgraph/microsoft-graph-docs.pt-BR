@@ -1,16 +1,16 @@
 ---
 title: Remover membro
-description: Remova um membro de um grupo Microsoft 365 ou um grupo de segurança por meio da propriedade de navegação de membros.
+description: Remova um membro de um grupo do Microsoft 365 ou de um grupo de segurança por meio da propriedade de navegação membros.
 ms.localizationpriority: medium
 author: Jordanndahl
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: 20d51cee2eb4fc0ab9d53b9e178c04f2c851b966
-ms.sourcegitcommit: 9adf70c5da7c5b65f7d20f571d101ee06f023bc3
+ms.openlocfilehash: 12802ccd5486776dcdaeeb32c10f0971c78b7f39
+ms.sourcegitcommit: 77d2ab5018371f153d47cc1cd25f9dcbaca28a95
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/25/2022
-ms.locfileid: "62201698"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63333432"
 ---
 # <a name="remove-member"></a>Remover membro
 
@@ -28,6 +28,9 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |Delegado (conta corporativa ou de estudante) | GroupMember.ReadWrite.All, Group.ReadWrite.All, Directory.ReadWrite.All, Directory.AccessAsUser.All |
 |Delegado (conta pessoal da Microsoft) | Sem suporte. |
 |Aplicativo | GroupMember.ReadWrite.All, Group.ReadWrite.All, Directory.ReadWrite.All |
+
+> [!IMPORTANT]
+> Para remover membros de um grupo atribuível a função, o usuário ou aplicativo de chamada também deve ter a permissão *RoleManagement.ReadWrite.Directory* .
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- { "blockType": "ignored" } -->

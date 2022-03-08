@@ -1,16 +1,16 @@
 ---
 title: Obter agendamento
-description: Recupere as propriedades e as relações de um **objeto schedule.**
-author: nkramer
+description: Recupere as propriedades e as relações de um **objeto schedule** .
+author: aaku
 ms.localizationpriority: medium
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 157b8b5dd451d81dad412e275236ed5081329900
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: afa32e2025c55cb513d57ffdef560487af10773a
+ms.sourcegitcommit: 77d2ab5018371f153d47cc1cd25f9dcbaca28a95
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62105455"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63333411"
 ---
 # <a name="get-schedule"></a>Obter agendamento
 
@@ -18,12 +18,12 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Recupere as propriedades e as relações de um [objeto schedule.](../resources/schedule.md)
+Recupere as propriedades e as relações de um [objeto schedule](../resources/schedule.md) .
 
-O processo de criação de agendamento está em conformidade com a diretriz da API One para operações de longa execução [(RELO)](https://github.com/Microsoft/api-guidelines/blob/master/Guidelines.md#131-resource-based-long-running-operations-relo)baseadas em recursos.
-Quando os clientes usam o [método PUT](team-put-schedule.md), se o agendamento for provisionado, a operação atualiza o cronograma; caso contrário, a operação inicia o processo de provisionamento de agendamento em segundo plano.
+O processo de criação de agendamento está em conformidade com a [diretriz da API One para operações de execução longa (RELO) baseadas em recursos](https://github.com/Microsoft/api-guidelines/blob/master/Guidelines.md#131-resource-based-long-running-operations-relo).
+Quando os clientes usam o [método PUT](team-put-schedule.md), se o agendamento estiver provisionado, a operação atualiza o cronograma; caso contrário, a operação inicia o processo de provisionamento de agendamento em segundo plano.
 
-Durante o provisionamento de agendamento, os clientes podem usar o método GET para obter o agendamento e olhar para a propriedade para o estado `provisionStatus` atual do provisionamento. Se o provisionamento falhar, os clientes poderão obter informações adicionais da `provisionStatusCode` propriedade.
+Durante o provisionamento de agendamento, os clientes podem usar o método GET `provisionStatus` para obter o agendamento e olhar para a propriedade para o estado atual do provisionamento. Se o provisionamento falhar, os clientes poderão obter informações adicionais da `provisionStatusCode` propriedade.
 
 Os clientes também podem inspecionar a configuração da agenda.
 
@@ -61,7 +61,7 @@ Não forneça um corpo de solicitação para esse método.
 
 ## <a name="response"></a>Resposta
 
-Se tiver êxito, este método retornará `200 OK` um código de resposta e um objeto [schedule](../resources/schedule.md) no corpo da resposta.
+Se tiver êxito, este método retornará um `200 OK` código de resposta e um [objeto schedule](../resources/schedule.md) no corpo da resposta.
 
 ## <a name="example"></a>Exemplo
 

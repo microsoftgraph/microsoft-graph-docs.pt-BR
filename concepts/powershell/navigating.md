@@ -3,12 +3,12 @@ title: Navegando o SDK do Microsoft Graph PowerShell
 description: O Microsoft Graph PowerShell SDK contém um grande número de comandos. Saiba como encontrar o comando certo para o que você deseja alcançar.
 ms.localizationpriority: medium
 author: jasonjoh
-ms.openlocfilehash: c4e127df5f8703df6712cc8a28cf0ace078694d6
-ms.sourcegitcommit: 7deb4fad6acc69fd6bc02cd4e2f6774de5784c97
+ms.openlocfilehash: 2c4135691712bcc6cbe8a32a776aa40844ec668e
+ms.sourcegitcommit: 77d2ab5018371f153d47cc1cd25f9dcbaca28a95
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/18/2022
-ms.locfileid: "62894779"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63336218"
 ---
 # <a name="navigating-the-microsoft-graph-powershell-sdk"></a>Navegando o SDK do Microsoft Graph PowerShell
 
@@ -34,9 +34,9 @@ Para operações REST básicas, o verbo é determinado pelo método HTTP usado p
 | PATCH       | Atualizar       | `Update-MgUserEvent` [Referência de API](/graph/api/event-update?view=graph-rest-1.0&preserve-view=true) |
 | EXCLUIR      | Remover       | `Remove-MgDriveItem` [Referência de API](/graph/api/driveitem-delete?view=graph-rest-1.0&preserve-view=true) |
 
-Para funções e ações, é um pouco mais complicado. APIs no Microsoft Graph que são implementadas como funções ou ações OData geralmente são nomeadas com pelo menos um verbo. O verbo do comando correspondente é baseado no verbo na função ou no nome da ação. No entanto, os verbos de comando no PowerShell devem estar em conformidade com regras de nomenis [específicas](/powershell/scripting/developer/cmdlet/approved-verbs-for-windows-powershell-commands), para que isso possa resultar em mapeamentos não intuitivos de nome para comando.
+Para funções e ações, é um pouco mais complicado. APIs no Microsoft Graph implementadas como funções ou ações OData geralmente são nomeadas com pelo menos um verbo. O verbo do comando correspondente é baseado no verbo na função ou no nome da ação. No entanto, os verbos de comando no PowerShell devem estar em conformidade com regras de nomenis [específicas](/powershell/scripting/developer/cmdlet/approved-verbs-for-windows-powershell-commands), para que isso possa resultar em mapeamentos não intuitivos de nome para comando.
 
-Vejamos alguns exemplos. A API [getSchedule](/graph/api/calendar-getschedule?view=graph-rest-1.0&preserve-view=true) usa `get`e `Get` é um verbo aprovado do PowerShell, portanto, seu comando é `Get-MgUserCalendarSchedule`. [A API](/graph/api/event-cancel?view=graph-rest-beta&preserve-view=true) de cancelamento em um evento, por outro lado, usa um verbo não aprovado `cancel`. O verbo aprovado para cancelar ou descontinuar algo é `Stop`, portanto, seu comando é `Stop-MgUserEvent`. Por fim, [o verbo da API snoozeReminder](/graph/api/event-snoozereminder?view=graph-rest-1.0&preserve-view=true) , `snooze`, não tem equivalente aprovado pelo PowerShell. Para API é assim, o SDK usa o verbo `Invoke`, de modo que o comando da API é `Invoke-MgSnoozeUserEventReminder`.
+Vejamos alguns exemplos. A API [getSchedule](/graph/api/calendar-getschedule?view=graph-rest-1.0&preserve-view=true) usa `get`e `Get` é um verbo aprovado do PowerShell, portanto, seu comando é `Get-MgUserCalendarSchedule`. [A API](/graph/api/event-cancel?view=graph-rest-beta&preserve-view=true) de cancelamento em um evento, por outro lado, usa um verbo não aprovado `cancel`. O verbo aprovado para cancelar ou descontinuar algo é `Stop`, portanto, o comando é `Stop-MgUserEvent`. Por fim, [o verbo da API snoozeReminder](/graph/api/event-snoozereminder?view=graph-rest-1.0&preserve-view=true) , `snooze`, não tem equivalente aprovado pelo PowerShell. Para API é assim, o SDK usa o verbo `Invoke`, de modo que o comando da API é `Invoke-MgSnoozeUserEventReminder`.
 
 ### <a name="command-nouns"></a>Substantivos de comando
 

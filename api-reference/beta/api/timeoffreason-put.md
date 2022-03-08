@@ -1,16 +1,16 @@
 ---
 title: Substituir timeOffReason
 description: Substitua um timeOffReason existente.
-author: nkramer
+author: aaku
 ms.localizationpriority: medium
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: a6b3f24d4b1fe2b52d161f4c02afb1ce6734e585
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: d8486f3ca4cf04160d4025ae26778ba76e857f36
+ms.sourcegitcommit: 77d2ab5018371f153d47cc1cd25f9dcbaca28a95
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "60977362"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63333341"
 ---
 # <a name="replace-timeoffreason"></a>Substituir timeOffReason
 
@@ -18,9 +18,9 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Substitua um [timeOffReason](../resources/timeoffreason.md)existente.
+Substitua um [timeOffReason existente](../resources/timeoffreason.md).
 
-Se o [timeOffReason especificado](../resources/timeoffreason.md) não existir, este método retornará `404 Not found` .
+Se o [timeOffReason especificado](../resources/timeoffreason.md) não existir, este método retornará `404 Not found`.
 
 ## <a name="permissions"></a>Permissões
 
@@ -53,11 +53,11 @@ PUT /teams/{teamId}/schedule/timeOffReasons/{timeOffReasonId}
 
 ## <a name="request-body"></a>Corpo da solicitação
 
-No corpo da solicitação, fornece uma representação JSON de um [objeto timeOffReason.](../resources/timeoffreason.md)
+No corpo da solicitação, fornece uma representação JSON de um [objeto timeOffReason](../resources/timeoffreason.md) .
 
 ## <a name="response"></a>Resposta
 
-Se tiver êxito, este método retornará um código `200 OK` de resposta e um objeto [timeOffReason](../resources/timeoffreason.md) no corpo da resposta.
+Se tiver êxito, este método retornará um `200 OK` código de resposta e um [objeto timeOffReason](../resources/timeoffreason.md) no corpo da resposta.
 
 ## <a name="example"></a>Exemplo
 
@@ -97,7 +97,7 @@ Prefer: return=representation
 [!INCLUDE [sample-code](../includes/snippets/java/timeoffreason-put-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[Go](#tab/go)
+# <a name="go"></a>[Ir](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/timeoffreason-put-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 

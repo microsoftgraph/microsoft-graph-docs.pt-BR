@@ -1,16 +1,16 @@
 ---
 title: 'servicePrincipal: removePassword'
 description: Remover uma senha de um servicePrincipal
-localization_priority: Normal
+ms.localizationpriority: medium
 author: sureshja
 ms.prod: applications
 doc_type: apiPageType
-ms.openlocfilehash: c1f252fba7ce753c0240b47850e79d71177705b6
-ms.sourcegitcommit: 94c4acf8bd03c10a44b12952b6cb4827df55b978
+ms.openlocfilehash: 7069e9bb6f0d3031884915251fe4fb260c0dd2fe
+ms.sourcegitcommit: 77d2ab5018371f153d47cc1cd25f9dcbaca28a95
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/06/2021
-ms.locfileid: "52786106"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63337261"
 ---
 # <a name="serviceprincipal-removepassword"></a>servicePrincipal: removePassword
 
@@ -18,9 +18,9 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Remova uma senha de um [objeto servicePrincipal.](../resources/serviceprincipal.md)
+Remova uma senha de um [objeto servicePrincipal](../resources/serviceprincipal.md) .
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>Permissões
 
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
@@ -49,7 +49,7 @@ POST /servicePrincipals/{id}/removePassword
 
 | Propriedade     | Tipo   |Descrição|
 |:---------------|:--------|:----------|
-| keyId | GUID | O identificador exclusivo da senha. Obrigatório. |
+| keyId | Guid | O identificador exclusivo da senha. Obrigatório. |
 
 ## <a name="response"></a>Resposta
 

@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 ms.prod: non-product-specific
 author: MSGraphDocsvTeam
 doc_type: enumPageType
-ms.openlocfilehash: 20b05fea6ed20a11ac236f3ad9cbd560c1250d87
-ms.sourcegitcommit: 7deb4fad6acc69fd6bc02cd4e2f6774de5784c97
+ms.openlocfilehash: 0be72cacf043727e0a08a6524a0685ec99bce47a
+ms.sourcegitcommit: 77d2ab5018371f153d47cc1cd25f9dcbaca28a95
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/18/2022
-ms.locfileid: "62894667"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63336946"
 ---
 # <a name="enum-values"></a>Valores denum
 
@@ -501,7 +501,7 @@ Namespace: microsoft.graph
 |:---|
 |Nenhum|
 |SecurityGroup|
-|Tudo|
+|Todos|
 
 ### <a name="recipientscopetype-values"></a>valores recipientScopeType
 
@@ -1323,7 +1323,7 @@ Valores possíveis para tipos de conta de usuário (associação ao grupo), por 
 
 | Membro | Valor | Descrição             |
 |:-------|:------|:------------------------|
-| Email   | 1     | Ameaça de email.            |
+| email   | 1     | Ameaça de email.            |
 | url    | 2     | Ameaça de URL.             |
 | file   | 3     | Ameaça de arquivo de anexo. |
 
@@ -1371,7 +1371,7 @@ Valores possíveis para tipos de conta de usuário (associação ao grupo), por 
 | Membro                | Valor | Descrição                         |
 |:----------------------|:------|:------------------------------------|
 | none                  | 0     | Ainda não sabemos.                       |
-| mailFlowRule          | 1     | Exchange regra de transporte.            |
+| mailFlowRule          | 1     | Exchange de transporte.            |
 | safeSender            | 2     | Cofre lista de remetentes.                   |
 | blockedSender         | 3     | Lista de remetentes bloqueados.                |
 | advancedSpamFiltering | 4     | Opção avançada de filtragem de spam.     |
@@ -1597,7 +1597,7 @@ Valores possíveis para tipos de conta de usuário (associação ao grupo), por 
 
 | Member                |
 |:----------------------|
-| string                |
+| cadeia de caracteres                |
 | booliano               |
 | int64                 |
 | stringCollection      |
@@ -1912,4 +1912,25 @@ Valores possíveis para tipos de conta de usuário (associação ao grupo), por 
 |priceVaries|
 |callUs|
 |notSet|
+|unknownFutureValue|
+
+### <a name="accessreviewhistorystatus-values"></a>valores accessReviewHistoryStatus
+
+| Member|
+|:-----------------|
+|done|
+|inprogress|
+|erro|
+|solicitado|
+|unknownFutureValue|
+
+### <a name="accessreviewhistorydecisionfilter-values"></a>valores accessReviewHistoryDecisionFilter
+
+| Member|
+|:-----------------|
+|aprovar|
+|deny|
+|notReviewed|
+|dontKnow|
+|notNotified|
 |unknownFutureValue|

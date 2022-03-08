@@ -1,11 +1,11 @@
 ---
 description: Arquivo gerado automaticamente. NÃO MODIFICAR
-ms.openlocfilehash: 14fa540167cdcbe951f664451ae739ec3d959e8c1d805e56b178d72c547fa7f9
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 8e484e7cd610fe34c068fe9175517097404b4418
+ms.sourcegitcommit: 77d2ab5018371f153d47cc1cd25f9dcbaca28a95
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "57099741"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63351054"
 ---
 ```csharp
 
@@ -13,9 +13,7 @@ GraphServiceClient graphClient = new GraphServiceClient( authProvider );
 
 var administrativeUnit = new AdministrativeUnit
 {
-    DisplayName = "displayName-value",
-    Description = "description-value",
-    Visibility = "visibility-value"
+    DisplayName = "Greater Seattle District Technical Schools"
 };
 
 await graphClient.AdministrativeUnits["{administrativeUnit-id}"]

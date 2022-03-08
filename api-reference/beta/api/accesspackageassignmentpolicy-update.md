@@ -5,12 +5,12 @@ author: markwahl-msft
 ms.localizationpriority: medium
 ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: 8fa0f3f1b304c830165c30496ca7e40c1dee2dcd
-ms.sourcegitcommit: 3e2239e60b6dc53997b7d4356a20fc3d365d6238
+ms.openlocfilehash: a5c02fc2b0850ec3a58638ce98e0dac45683ee39
+ms.sourcegitcommit: 77d2ab5018371f153d47cc1cd25f9dcbaca28a95
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/02/2021
-ms.locfileid: "61266022"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63332970"
 ---
 # <a name="update-accesspackageassignmentpolicy"></a>Atualizar accessPackageAssignmentPolicy
 
@@ -44,30 +44,31 @@ PUT /identityGovernance/entitlementManagement/accessPackageAssignmentPolicies/{a
 |Content-Type|application/json. Obrigatório.|
 
 ## <a name="request-body"></a>Corpo da solicitação
-No corpo da solicitação, fornece uma representação JSON do [objeto accessPackageAssignmentPolicy.](../resources/accesspackageassignmentpolicy.md)
+No corpo da solicitação, fornece uma representação JSON do [objeto accessPackageAssignmentPolicy](../resources/accesspackageassignmentpolicy.md) .
 
 A tabela a seguir mostra as propriedades que são necessárias ao atualizar [um accessPackageAssignmentPolicy](../resources/accesspackageassignmentpolicy.md).
 
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|displayName|String|O nome de exibição da política.|
-|description|String|A descrição da política.|
-|canExtend|Boolean|Indica se um usuário pode estender a duração da atribuição do pacote de acesso após a aprovação.|
+|displayName|Cadeia de caracteres|O nome de exibição da política.|
+|descrição|String|A descrição da política.|
+|canExtend|Booliano|Indica se um usuário pode estender a duração da atribuição do pacote de acesso após a aprovação.|
 |durationInDays|Int32|O número de dias em que as atribuições dessa política duram até expirar.|
 |expirationDateTime|DateTimeOffset|A data de expiração das atribuições criadas nesta política. O tipo Timestamp representa informações de data e hora usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite UTC em 1 de janeiro de 2014 é `2014-01-01T00:00:00Z`|
 |requestorSettings|[requestorSettings](../resources/requestorsettings.md)|Who pode solicitar esse pacote de acesso a partir desta política.|
-|requestApprovalSettings|[approvalSettings](../resources/approvalsettings.md)|Who deve aprovar solicitações de pacote de acesso nesta política.|
+|requestApprovalSettings|[approvalSettings](../resources/approvalsettings.md)|Who deve aprovar solicitações para o pacote de acesso nesta política.|
 |accessReviewSettings|[assignmentReviewSettings](../resources/assignmentreviewsettings.md)|Who deve revisar e com que frequência as atribuições para o pacote de acesso desta política. Essa propriedade será nula se as avaliações não são necessárias.|
 
 
 ## <a name="response"></a>Resposta
-Se tiver êxito, este método retornará um código de resposta e um `200 OK` [objeto accessPackageAssignmentPolicy](../resources/accesspackageassignmentpolicy.md) atualizado no corpo da resposta.
-
+Se tiver êxito, este método retornará um `200 OK` código de resposta e um [objeto accessPackageAssignmentPolicy](../resources/accesspackageassignmentpolicy.md) atualizado no corpo da resposta.
 
 
 ## <a name="examples"></a>Exemplos
 
-### <a name="request"></a>Solicitação
+### <a name="example-1-update-the-details-of-a-policy"></a>Exemplo 1: atualizar os detalhes de uma política
+
+#### <a name="request"></a>Solicitação
 Nesta atualização de política, uma das opções para a pergunta de múltipla escolha foi removida. Os futuros solicitadores não terão mais a opção removida disponível para eles.
 
 
@@ -176,7 +177,7 @@ Content-Type: application/json
 [!INCLUDE [sample-code](../includes/snippets/objc/update-accesspackageassignmentpolicy-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[Go](#tab/go)
+# <a name="go"></a>[Ir](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/update-accesspackageassignmentpolicy-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
@@ -184,7 +185,7 @@ Content-Type: application/json
 
 
 
-### <a name="response"></a>Resposta
+#### <a name="response"></a>Resposta
 > **Observação:** o objeto de resposta mostrado aqui pode ser encurtado para legibilidade.
 <!-- {
   "blockType": "response",
@@ -251,6 +252,86 @@ Content-Type: application/json
         "@odata.type": "#microsoft.graph.accessPackageTextInputQuestion",
         "isSingleLineQuestion": false
     }]
+}
+```
+
+
+
+### <a name="example-2-remove-the-customextensionhandlers-from-a-policy"></a>Exemplo 2: Remover os customExtensionHandlers de uma política
+
+Para remover a coleção **de customExtensionHandlers** e seus objetos de extensão de fluxo de trabalho personalizados associados de uma política, atribua uma coleção vazia ao **objeto customExtensionHandlers** .
+
+#### <a name="request"></a>Solicitação
+
+
+# <a name="http"></a>[HTTP](#tab/http)
+<!-- {
+  "blockType": "request",
+  "name": "update_accesspackageassignmentpolicy_delete_customExtensionHandlers"
+}
+-->
+
+```http
+PUT https://graph.microsoft.com/beta/identityGovernance/entitlementManagement/accessPackageAssignmentPolicies/4540a08f-8ab5-43f6-a923-015275799197
+Content-Type: application/json
+
+{
+    "id": "4540a08f-8ab5-43f6-a923-015275799197",
+    "displayName": "policy with custom access package workflow extension",
+    "description": "Run specified custom access package workflow extension at different stages.",
+    "accessPackageId": "ba5807c7-2aa9-4c8a-907e-4a17ee587500",
+    "expiration": {
+        "type": "afterDuration",
+        "duration": "P365D"
+    },
+    "requestApprovalSettings": null,
+    "requestorSettings": {
+        "acceptRequests": true,
+        "scopeType": "AllExistingDirectorySubjects",
+        "allowedRequestors": []
+    },
+    "accessReviewSettings": null,
+    "customExtensionHandlers": []
+}
+```
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/update-accesspackageassignmentpolicy-delete-customextensionhandlers-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
+
+
+
+#### <a name="response"></a>Resposta
+> **Observação:** o objeto de resposta mostrado aqui pode ser encurtado para legibilidade.
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.accessPackageAssignmentPolicy"
+}
+-->
+
+```http
+HTTP/1.1 200 OK
+Content-Type: application/json
+
+{
+    "id": "4540a08f-8ab5-43f6-a923-015275799197",
+    "displayName": "policy with custom access package workflow extension",
+    "description": "Run specified custom access package workflow extension at different stages.",
+    "accessPackageId": "ba5807c7-2aa9-4c8a-907e-4a17ee587500",
+    "expiration": {
+        "type": "afterDuration",
+        "duration": "P365D"
+    },
+    "requestApprovalSettings": null,
+    "requestorSettings": {
+        "acceptRequests": true,
+        "scopeType": "AllExistingDirectorySubjects",
+        "allowedRequestors": []
+    },
+    "accessReviewSettings": null
 }
 ```
 

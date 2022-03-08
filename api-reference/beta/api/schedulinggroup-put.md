@@ -1,16 +1,16 @@
 ---
 title: Subtituir schedulingGroup
 description: Substitua um schedulingGroup existente.
-author: nkramer
+author: aaku
 ms.localizationpriority: medium
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 68f75c33913aa5cd7a4eb1e9363b7ed614dfb96d
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: d8f833e2516017b7724481b683265ea91a8bd2b5
+ms.sourcegitcommit: 77d2ab5018371f153d47cc1cd25f9dcbaca28a95
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "61020562"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63334510"
 ---
 # <a name="replace-schedulinggroup"></a>Subtituir schedulingGroup
 
@@ -18,9 +18,9 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Substitua um [schedulingGroup existente.](../resources/schedulinggroup.md)
+Substitua um [schedulingGroup existente](../resources/schedulinggroup.md).
 
-Se o [schedulingGroup especificado](../resources/schedulinggroup.md) não existir, este método retornará `404 Not found` .
+Se o [schedulingGroup especificado](../resources/schedulinggroup.md) não existir, este método retornará `404 Not found`.
 
 ## <a name="permissions"></a>Permissões
 
@@ -49,11 +49,11 @@ PUT /teams/{teamId}/schedule/schedulingGroups/{schedulingGroupId}
 
 ## <a name="request-body"></a>Corpo da solicitação
 
-No corpo da solicitação, fornece uma representação JSON de [um objeto schedulingGroup.](../resources/schedulinggroup.md)
+No corpo da solicitação, fornece uma representação JSON de [um objeto schedulingGroup](../resources/schedulinggroup.md) .
 
 ## <a name="response"></a>Resposta
 
-Se tiver êxito, este método retornará um código de resposta e um `200 OK` [objeto schedulingGroup](../resources/schedulinggroup.md) no corpo da resposta.
+Se tiver êxito, este método retornará um `200 OK` código de resposta e um [objeto schedulingGroup](../resources/schedulinggroup.md) no corpo da resposta.
 
 ## <a name="example"></a>Exemplo
 
@@ -96,7 +96,7 @@ Prefer: return=representation
 [!INCLUDE [sample-code](../includes/snippets/java/schedule-put-schedulinggroups-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[Go](#tab/go)
+# <a name="go"></a>[Ir](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/schedule-put-schedulinggroups-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 

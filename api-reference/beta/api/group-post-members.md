@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: Jordanndahl
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: f3902d3e1dffd6396c57d948dc209d028197a015
-ms.sourcegitcommit: 9adf70c5da7c5b65f7d20f571d101ee06f023bc3
+ms.openlocfilehash: d026b9be994cd5f4cf3b7613ed726c8d9f8a14fd
+ms.sourcegitcommit: 77d2ab5018371f153d47cc1cd25f9dcbaca28a95
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/25/2022
-ms.locfileid: "62201355"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63333796"
 ---
 # <a name="add-members"></a>Adicionar membros
 
@@ -23,10 +23,10 @@ Adicione um membro a um grupo de segurança ou Microsoft 365 por meio da proprie
 Você pode adicionar usuários, dispositivos, entidades de serviço ou outros grupos. 
 
 > [!IMPORTANT]
-> + Você pode adicionar membros somente a grupos Microsoft 365 segurança. Para obter mais informações, consulte [Group types in Azure AD and Microsoft Graph only](/graph/api/resources/groups-overview#group-types-in-azure-ad-and-microsoft-graph).
+> + Você pode adicionar membros somente a grupos de segurança e do Microsoft 365. Para obter mais informações, consulte [Tipos de grupo no Microsoft Azure AD e Microsoft Graph apenas](/graph/api/resources/groups-overview#group-types-in-azure-ad-and-microsoft-graph).
 > + Não é possível adicionar grupos de segurança a grupos do Microsoft 365.
 > + Não é possível adicionar grupos do Microsoft 365 a grupos de segurança ou a outros grupos do Microsoft 365.
-> + Um grupo de segurança pode ter usuários, dispositivos, grupos ou entidades de serviço como membros, enquanto um grupo de Microsoft 365 pode ter apenas usuários como membros.
+> + Um grupo de segurança pode ter usuários, dispositivos, grupos ou entidades de serviço como seus membros, enquanto um grupo do Microsoft 365 pode ter somente usuários como membros.
 
 
 ## <a name="permissions"></a>Permissões
@@ -37,6 +37,9 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |Delegado (conta corporativa ou de estudante) | GroupMember.ReadWrite.All, Group.ReadWrite.All, Directory.ReadWrite.All, Directory.AccessAsUser.All    |
 |Delegado (conta pessoal da Microsoft) | Sem suporte.    |
 |Aplicativo | GroupMember.ReadWrite.All, Group.ReadWrite.All, Directory.ReadWrite.All |
+
+> [!IMPORTANT]
+> Para adicionar membros a um grupo atribuível a função, o usuário ou aplicativo de chamada também deve ser atribuído à *permissão RoleManagement.ReadWrite.Directory* .
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- { "blockType": "ignored" } -->
@@ -98,7 +101,7 @@ Content-type: application/json
 
 ---
 
-No corpo da solicitação, fornece uma representação JSON do `id` [objeto directoryObject](../resources/directoryobject.md), [user](../resources/user.md)ou [group](../resources/group.md) que você deseja adicionar.
+No corpo da solicitação, fornece uma representação JSON `id` do [objeto directoryObject](../resources/directoryobject.md), [usuário](../resources/user.md) [ou grupo que](../resources/group.md) você deseja adicionar.
 
 ### <a name="response"></a>Resposta
 Este é um exemplo de resposta.

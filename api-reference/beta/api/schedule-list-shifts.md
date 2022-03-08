@@ -1,16 +1,16 @@
 ---
 title: Listar turnos
 description: Obter a lista de turnos em um cronograma.
-author: nkramer
+author: aaku
 ms.localizationpriority: medium
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 4e1fa04145e79d44f2cd87582a7b4c5eb9a4e874
-ms.sourcegitcommit: 25acfa7d0153336c9a35d30a1dd422aeadc1342c
+ms.openlocfilehash: 788b8f49e3ce4fbe43079e47497d0261ed4cc73f
+ms.sourcegitcommit: 77d2ab5018371f153d47cc1cd25f9dcbaca28a95
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/03/2022
-ms.locfileid: "62341543"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63333397"
 ---
 # <a name="list-shifts"></a>Listar turnos
 
@@ -38,7 +38,11 @@ GET /teams/{teamId}/schedule/shifts
 ```
 
 ## <a name="optional-query-parameters"></a>Parâmetros de consulta opcionais
+
 Este método dá suporte ao parâmetro `$filter` [de consulta OData](/graph/query-parameters) para ajudar a personalizar a resposta.
+
+> [!NOTE]
+> O `$filter` parâmetro não dá suporte ao uso da mesma propriedade mais de uma vez em uma consulta. Por exemplo, a seguinte consulta não funcionará: `sharedShift/startDateTime ge 2019-05-09T00:00:00Z and sharedShift/startDateTime le 2019-05-09T23:59:59Z`.
 
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
 

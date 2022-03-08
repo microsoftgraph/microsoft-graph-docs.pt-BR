@@ -1,24 +1,27 @@
 ---
-title: Criar uma configuração de diretório em grupos
+title: Criar configurações
 description: Use essa API para criar uma nova configuração de diretório para o grupo.
 author: Jordanndahl
 ms.localizationpriority: medium
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: fc706e05df060ac9c5cf850646ac95a2c48e0a4b
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: 64d9318b1d56094975ad92a5cb43a01269cd5c7b
+ms.sourcegitcommit: 77d2ab5018371f153d47cc1cd25f9dcbaca28a95
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62135502"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63332277"
 ---
-# <a name="create-a-directory-setting-on-groups"></a>Criar uma configuração de diretório em grupos
+# <a name="create-settings"></a>Criar configurações
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Use essa API para criar uma nova configuração de diretório para o grupo.
+Crie uma nova configuração com base nos modelos disponíveis em [directorySettingTemplates](../resources/directorysettingtemplate.md). Essas configurações podem estar no nível do locatário ou no nível do grupo.
+
+As configurações de grupo se aplicam apenas Microsoft 365 grupos. O modelo nomeado `Group.Unified` pode ser usado para configurar configurações de grupo em todo o Microsoft 365 de locatários, `Group.Unified.Guest` enquanto o modelo nomeado pode ser usado para configurar configurações específicas do grupo.
+
 ## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
@@ -29,47 +32,56 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |Aplicativo | Directory.ReadWrite.All |
 
 ## <a name="http-request"></a>Solicitação HTTP
+
+Crie uma configuração em todo o locatário.
+<!-- { "blockType": "ignored" } -->
+```http
+POST /settings
+```
+
+Crie uma configuração específica do grupo.
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /groups/{id}/settings
 ```
+
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
 | Nome       | Descrição|
 |:---------------|:----------|
 | Autorização  | Portador {token}. Obrigatório|
 
 ## <a name="request-body"></a>Corpo da solicitação
-No corpo da solicitação, fornece uma representação JSON do [objeto directorySetting.](../resources/directorysetting.md)
+No corpo da solicitação, fornece uma representação JSON do [objeto directorySetting](../resources/directorysetting.md) .
 
 ## <a name="response"></a>Resposta
 
-Se tiver êxito, este método retornará o código de resposta e `201 Created` [o objeto directorySetting](../resources/directorysetting.md) no corpo da resposta.
+Se tiver êxito, este método retornará `201 Created` o código de resposta e [o objeto directorySetting](../resources/directorysetting.md) no corpo da resposta.
 
-## <a name="example"></a>Exemplo
-### <a name="request"></a>Solicitação
+## <a name="examples"></a>Exemplos
+
+### <a name="example-1-create-a-setting-to-block-guests-for-a-specific-microsoft-365-group"></a>Exemplo 1: Criar uma configuração para bloquear convidados para um grupo Microsoft 365 específico
+
+#### <a name="request"></a>Solicitação
 Este é um exemplo de solicitação.
 
 
 # <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "create_directorysetting_from_group"
+  "name": "create_groupsetting_from_groupsettings_for_guests"
 }-->
 ```http
-POST https://graph.microsoft.com/beta/groups/{id}/settings
+POST https://graph.microsoft.com/beta/groups/05aa6a98-956a-45c0-b13b-88076a23f2cd/settings
 Content-type: application/json
 
 {
-  "directorySetting": {
-    "displayName": "displayName-value",
-    "templateId": "templateId-value",
+    "templateId": "08d542b9-071f-4e16-94b0-74abb372e3d9",
     "values": [
-      {
-        "name": "name-value",
-        "value": "value-value"
-      }
+        {
+            "name": "AllowToAddGuests",
+            "value": "false"
+        }
     ]
-  }
 }
 ```
 # <a name="c"></a>[C#](#tab/csharp)
@@ -92,7 +104,7 @@ Content-type: application/json
 
 
 
-### <a name="response"></a>Resposta
+#### <a name="response"></a>Resposta
 Este é um exemplo de resposta.
 >**Observação:** o objeto de resposta mostrado aqui pode ser encurtado para legibilidade.
 <!-- {
@@ -105,17 +117,87 @@ HTTP/1.1 201 Created
 Content-type: application/json
 
 {
-  "directorySetting": {
-    "id": "id-value",
-    "displayName": "displayName-value",
-    "templateId": "templateId-value",
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#settings/$entity",
+    "id": "a06fa228-3042-4662-bd09-33e298da1afe",
+    "displayName": null,
+    "templateId": "08d542b9-071f-4e16-94b0-74abb372e3d9",
     "values": [
-      {
-        "name": "name-value",
-        "value": "value-value"
-      }
+        {
+            "name": "AllowToAddGuests",
+            "value": "false"
+        }
     ]
-  }
+}
+```
+
+### <a name="example-2-create-a-directory-or-tenant-level-setting"></a>Exemplo 2: Criar uma configuração de diretório ou de nível de locatário
+
+#### <a name="request"></a>Solicitação
+<!-- {
+  "blockType": "request",
+  "name": "create_directorysettings"
+}-->
+```msgraph-interactive
+POST https://graph.microsoft.com/beta/settings
+Content-type: application/json
+
+{
+    "templateId": "62375ab9-6b52-47ed-826b-58e47e0e304b",
+    "values": [
+        {
+            "name": "GuestUsageGuidelinesUrl",
+            "value": "https://privacy.contoso.com/privacystatement"
+        },
+        {
+            "name": "EnableMSStandardBlockedWords",
+            "value": "true"
+        },
+        {
+            "name": "EnableMIPLabels",
+            "value": "true"
+        },
+        {
+            "name": "PrefixSuffixNamingRequirement",
+            "value": "[Contoso-][GroupName]"
+        }
+    ]
+}
+```
+
+#### <a name="response"></a>Resposta
+
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.directorySetting"
+} -->
+```http
+HTTP/1.1 201 Created
+Content-type: application/json
+
+{
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#settings/$entity",
+    "id": "844d252c-4de2-43eb-a784-96df77231aae",
+    "displayName": null,
+    "templateId": "62375ab9-6b52-47ed-826b-58e47e0e304b",
+    "values": [
+        {
+            "name": "GuestUsageGuidelinesUrl",
+            "value": "https://privacy.contoso.com/privacystatement"
+        },
+        {
+            "name": "EnableMSStandardBlockedWords",
+            "value": "true"
+        },
+        {
+            "name": "EnableMIPLabels",
+            "value": "true"
+        },
+        {
+            "name": "PrefixSuffixNamingRequirement",
+            "value": "[Contoso-][GroupName]"
+        }
+    ]
 }
 ```
 

@@ -1,16 +1,16 @@
 ---
 title: Adicionar membro a um chat
 description: Adicione um conversationMember a um chat.
-author: bhartono
+author: anandjo
 doc_type: apiPageType
 ms.localizationpriority: medium
 ms.prod: microsoft-teams
-ms.openlocfilehash: b4d8bc91aa3b6632ecb2a67a1d9bfaf2c0ac5f89
-ms.sourcegitcommit: 871db8b3f68489d24e2aeafe694725579ee44c47
+ms.openlocfilehash: 1042c358d1588bbe4cae1af4998aea1ce8c6e1e3
+ms.sourcegitcommit: 77d2ab5018371f153d47cc1cd25f9dcbaca28a95
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/26/2022
-ms.locfileid: "62225438"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63334349"
 ---
 # <a name="add-member-to-a-chat"></a>Adicionar membro a um chat
 
@@ -28,7 +28,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |---------|-------------|
 |Delegado (conta corporativa ou de estudante)| ChatMember.ReadWrite, Chat.ReadWrite |
 |Delegado (conta pessoal da Microsoft)|Sem suporte.|
-|Application| Chat.Manage.Chat*, ChatMember.ReadWrite.All, Chat.ReadWrite.All |
+|Aplicativo| Chat.Manage.Chat*, ChatMember.ReadWrite.All, Chat.ReadWrite.All |
 
 > **Observação**: Permissões marcadas com * usam [consentimento específico de recurso](/microsoftteams/platform/graph-api/rsc/resource-specific-consent).
 
@@ -50,7 +50,7 @@ No corpo da solicitação, forneça uma representação JSON do objeto [conversa
 
 ## <a name="response"></a>Resposta
 
-Se tiver êxito, este método retornará um código de resposta e um header location que fornece um caminho `201 Created` de URL para o objeto membro recém-criado.
+Se tiver êxito, este método retornará um `201 Created` código de resposta e um header location que fornece um caminho de URL para o objeto membro recém-criado.
 
 ## <a name="examples"></a>Exemplos
 
@@ -192,7 +192,7 @@ HTTP/1.1 201 Created
 Location: /chats/19:cf66807577b149cca1b7af0c32eec122@thread.v2/members/MCMjMjQzMmI1N2ItMGFiZC00M2RiLWFhN2ItMTZlYWRkMTE1ZDM0IyMxOTpiZDlkYTQ2MzIzYWY0MjUzOTZkMGZhNjcyMDAyODk4NEB0aHJlYWQudjIjIzQ4YmY5ZDUyLWRjYTctNGE1Zi04Mzk4LTM3Yjk1Y2M3YmQ4Mw==
 ```
 
-### <a name="example-3-adding-a-single-member-to-a-microsoft-teams-chat-sharing-the-whole-history-of-the-chat"></a>Exemplo 3: Adicionar um único membro a um Microsoft Teams chat, compartilhando todo o histórico do chat
+### <a name="example-3-adding-a-single-member-to-a-microsoft-teams-chat-sharing-the-whole-history-of-the-chat"></a>Exemplo 3: adicionar um único membro a um Microsoft Teams chat, compartilhando todo o histórico do chat
 
 #### <a name="request"></a>Solicitação
 

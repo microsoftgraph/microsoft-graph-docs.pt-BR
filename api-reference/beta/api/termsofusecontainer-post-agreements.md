@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 doc_type: apiPageType
 ms.prod: governance
 author: raprakasMSFT
-ms.openlocfilehash: 967f81da4b5f1b33eed421677b1dfd45487d61ea
-ms.sourcegitcommit: fd609cb401ff862c3f5c21847bac9af967c6bf82
+ms.openlocfilehash: 74d9cacc9f38c8693fb21b52bb194cf461b443cc
+ms.sourcegitcommit: 77d2ab5018371f153d47cc1cd25f9dcbaca28a95
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/31/2021
-ms.locfileid: "61651675"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63336932"
 ---
 # <a name="create-agreement"></a>Criar contrato
 
@@ -28,7 +28,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |Delegado (conta pessoal da Microsoft) | Sem suporte. |
 |Aplicativo                            | Sem suporte. |
 
-Ao chamar em nome de um usuário, o usuário precisa pertencer a uma das seguintes funções de diretório. Para saber mais sobre funções de diretório, consulte Funções do [Azure AD integrados](/azure/active-directory/roles/permissions-reference):
+Ao chamar em nome de um usuário, o usuário precisa pertencer a uma das seguintes funções de diretório. Para saber mais sobre funções de diretório, consulte [Funções in-loco do Azure AD](/azure/active-directory/roles/permissions-reference):
 + Administrador Global
 + Administrador de Acesso Condicional
 + Administrador de Segurança
@@ -44,13 +44,13 @@ POST /identityGovernance/termsOfUse/agreements
 | Autorização | string | \{token\} de portador. Obrigatório. |
 
 ## <a name="request-body"></a>Corpo da solicitação
-No corpo da solicitação, fornece uma representação JSON do [objeto agreement.](../resources/agreement.md)
+No corpo da solicitação, fornece uma representação JSON do [objeto agreement](../resources/agreement.md) .
 
 A tabela a seguir mostra as propriedades que são necessárias ao criar um usuário.
 
 | Propriedade     | Tipo        | Descrição |
 |:-------------|:------------|:------------|
-|displayName|String|Nome de exibição do contrato.|
+|displayName|Cadeia de caracteres|Nome de exibição do contrato.|
 |isViewingBeforeAcceptanceRequired|Booliano|Indica se o usuário precisa expandir e exibir o contrato antes de aceitar.|
 |files/fileName|String|Nome do arquivo de contrato (por exemplo, TOU.pdf).|
 |files/isDefault|Booliano|Indica se esse é o arquivo de contrato padrão se nenhuma cultura corresponde à preferência do cliente. Se nenhum arquivo for marcado como padrão, o primeiro será tratado como padrão.|
@@ -58,11 +58,11 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar um usuá
 |files/fileData/data|Binária|Dados que representam os termos de uso do documento PDF.|
 
 ## <a name="response"></a>Resposta
-Se tiver êxito, este método retornará `201, Created` um código de resposta e um objeto [agreement](../resources/agreement.md) no corpo da resposta.
+Se tiver êxito, este método retornará um `201, Created` código de resposta [e um objeto agreement](../resources/agreement.md) no corpo da resposta.
 
 ## <a name="example"></a>Exemplo
 ##### <a name="request"></a>Solicitação
-No corpo da solicitação, fornece uma representação JSON do [objeto agreement.](../resources/agreement.md)
+No corpo da solicitação, fornece uma representação JSON do [objeto agreement](../resources/agreement.md) .
 
 
 
@@ -106,8 +106,12 @@ Content-type: application/json
 [!INCLUDE [sample-code](../includes/snippets/java/create-agreement-from-agreements-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[Go](#tab/go)
+# <a name="go"></a>[Ir](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/create-agreement-from-agreements-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/create-agreement-from-agreements-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

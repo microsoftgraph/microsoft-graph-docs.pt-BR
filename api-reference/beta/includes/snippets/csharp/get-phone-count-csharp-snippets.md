@@ -1,15 +1,20 @@
 ---
 description: Arquivo gerado automaticamente. NÃO MODIFICAR
-ms.openlocfilehash: 62d8452c0995c17c1adf44697607599dc2d962d925c1489571ef7aae9fb035cb
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 343a9aad77878388c84db80b521d7a9c2bb4f47c
+ms.sourcegitcommit: 77d2ab5018371f153d47cc1cd25f9dcbaca28a95
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "57214103"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63351072"
 ---
 ```csharp
 
 GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+
+var queryOptions = new List<QueryOption>()
+{
+    new QueryOption("$count", "true")
+};
 
 var contacts = await graphClient.Contacts
     .Request()

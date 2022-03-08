@@ -1,16 +1,16 @@
 ---
 title: Obter schedulingGroup
 description: Recupere as propriedades e as relações de um [schedulingGroup](../resources/schedulinggroup.md) por ID.
-author: nkramer
+author: aaku
 ms.localizationpriority: medium
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: d60174fd843237c1f43e1a3f3e98c425a38611a0
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: 938604da3a6934ac4e4f61c941e54437c7924b4d
+ms.sourcegitcommit: 77d2ab5018371f153d47cc1cd25f9dcbaca28a95
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62118267"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63336771"
 ---
 # <a name="get-schedulinggroup"></a>Obter schedulingGroup
 
@@ -53,7 +53,7 @@ Não forneça um corpo de solicitação para esse método.
 
 ## <a name="response"></a>Resposta
 
-Se tiver êxito, este método retornará um código de resposta e um `200 OK` [objeto schedulingGroup](../resources/schedulinggroup.md) no corpo da resposta.
+Se tiver êxito, este método retornará um `200 OK` código de resposta e um [objeto schedulingGroup](../resources/schedulinggroup.md) no corpo da resposta.
 
 ## <a name="example"></a>Exemplo
 

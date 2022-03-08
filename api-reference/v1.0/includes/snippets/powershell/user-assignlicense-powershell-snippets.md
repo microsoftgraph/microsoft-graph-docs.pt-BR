@@ -1,11 +1,11 @@
 ---
 description: Arquivo gerado automaticamente. NÃO MODIFICAR
-ms.openlocfilehash: 8ef8cbc25f66aecaa832e7f8e69ea05635454f42
-ms.sourcegitcommit: 25acfa7d0153336c9a35d30a1dd422aeadc1342c
+ms.openlocfilehash: 338d6bb704de4a234aaa5bf2b270df46966f0455
+ms.sourcegitcommit: 77d2ab5018371f153d47cc1cd25f9dcbaca28a95
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/03/2022
-ms.locfileid: "62344709"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63336820"
 ---
 ```powershell
 
@@ -17,7 +17,7 @@ $params = @{
             DisabledPlans = @(
                 "11b0131d-43c8-4bbb-b2c8-e80f9a50834a"
             )
-            SkuId = "guid"
+            SkuId = "45715bb8-13f9-4bf6-927f-ef96c102d394"
         }
     )
     RemoveLicenses = @(

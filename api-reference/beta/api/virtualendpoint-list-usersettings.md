@@ -5,12 +5,12 @@ author: AshleyYangSZ
 ms.localizationpriority: medium
 ms.prod: cloud-pc
 doc_type: apiPageType
-ms.openlocfilehash: b47434b128e801e4bc5fbf2fef9dc59247059a10
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: 7416c94db0f88a298bfd243ec19e507abeb5aa3f
+ms.sourcegitcommit: 77d2ab5018371f153d47cc1cd25f9dcbaca28a95
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62136789"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63337051"
 ---
 # <a name="list-usersettings"></a>Listar userSettings
 
@@ -18,7 +18,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Recupere uma lista de [objetos cloudPcUserSetting.](../resources/cloudpcusersetting.md)
+Recupere uma lista de [objetos cloudPcUserSetting](../resources/cloudpcusersetting.md) .
 
 ## <a name="permissions"></a>Permissões
 
@@ -43,7 +43,7 @@ GET /deviceManagement/virtualEndpoint/userSettings
 
 ## <a name="optional-query-parameters"></a>Parâmetros de consulta opcionais
 
-Este método oferece suporte `$select` aos `$filter` parâmetros de consulta , e `$expand` OData para ajudar a personalizar a resposta. Para obter informações gerais, acesse [Parâmetros de consulta OData](/graph/query-parameters).
+Este método oferece suporte aos `$select`parâmetros de consulta , `$filter`e `$expand` OData para ajudar a personalizar a resposta. Para obter informações gerais, acesse [Parâmetros de consulta OData](/graph/query-parameters).
 
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
 
@@ -57,7 +57,7 @@ Não forneça um corpo de solicitação para esse método.
 
 ## <a name="response"></a>Resposta
 
-Se tiver êxito, este método retornará um código de resposta e uma coleção de objetos `200 OK` [cloudPcUserSetting](../resources/cloudpcusersetting.md) no corpo da resposta.
+Se tiver êxito, este método retornará um `200 OK` código de resposta e uma coleção de objetos [cloudPcUserSetting](../resources/cloudpcusersetting.md) no corpo da resposta.
 
 ## <a name="examples"></a>Exemplos
 
@@ -121,6 +121,10 @@ Content-Type: application/json
       "displayName": "Test1",
       "selfServiceEnabled": true,
       "localAdminEnabled": false,
+      "restorePointSetting": {
+        "frequencyInHours": 16,
+        "userRestoreEnabled": true
+      },
       "lastModifiedDateTime": "2021-02-01T10:29:57Z",
       "createdDateTime": "2021-02-01T10:29:57Z"
     }

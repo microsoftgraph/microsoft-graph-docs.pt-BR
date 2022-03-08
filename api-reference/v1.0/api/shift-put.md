@@ -5,12 +5,12 @@ author: akumar39
 ms.localizationpriority: medium
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 8b4d960faec1363a0acc37587af4a0c39514c53e
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: 9a4a2ad025ad039bf869b68ad6ea51462670973b
+ms.sourcegitcommit: 77d2ab5018371f153d47cc1cd25f9dcbaca28a95
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62131988"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63336862"
 ---
 # <a name="replace-shift"></a>Substituir turno
 
@@ -18,7 +18,7 @@ Namespace: microsoft.graph
 
 Substitua um turno [existente](../resources/shift.md).
 
-Se o turno [especificado](../resources/shift.md) não existir, este método retornará `404 Not found` .
+Se o turno [especificado](../resources/shift.md) não existir, este método retornará `404 Not found`.
 
 ## <a name="permissions"></a>Permissões
 
@@ -35,7 +35,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 <!-- { "blockType": "ignored" } -->
 
 ```http
-PATCH /teams/{teamId}/schedule/shifts/{shiftId}
+PUT /teams/{teamId}/schedule/shifts/{shiftId}
 ```
 
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
@@ -47,11 +47,11 @@ PATCH /teams/{teamId}/schedule/shifts/{shiftId}
 
 ## <a name="request-body"></a>Corpo da solicitação
 
-No corpo da solicitação, fornece uma representação JSON de um [objeto shift.](../resources/shift.md)
+No corpo da solicitação, fornece uma representação JSON de um [objeto shift](../resources/shift.md) .
 
 ## <a name="response"></a>Resposta
 
-Se tiver êxito, este método retornará `200 OK` um código de resposta e um objeto [shift](../resources/shift.md) no corpo da resposta.
+Se tiver êxito, este método retornará um `200 OK` código de resposta e um [objeto shift](../resources/shift.md) no corpo da resposta.
 
 ## <a name="example"></a>Exemplo
 
@@ -66,7 +66,7 @@ Este é um exemplo de solicitação.
   "name": "shift-put"
 }-->
 ```http
-PATCH https://graph.microsoft.com/v1.0/teams/{teamId}/schedule/shifts/{shiftId}
+PUT https://graph.microsoft.com/v1.0/teams/{teamId}/schedule/shifts/{shiftId}
 Content-type: application/json
 Prefer: return=representation
 

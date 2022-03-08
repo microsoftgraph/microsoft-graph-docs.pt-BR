@@ -1,16 +1,16 @@
 ---
 title: Tipo de recurso resourceData
 description: Representa os dados de resouce anexados à notificação de alteração enviada ao assinante.
-localization_priority: Normal
+ms.localizationpriority: medium
 author: Jumaodhiss
 doc_type: resourcePageType
 ms.prod: change-notifications
-ms.openlocfilehash: b2ddfd62a797cbf5674f522d6fa3c93eca528c30
-ms.sourcegitcommit: 8ca598ac70647bf4f897361ee90d3aa31d2ecca5
+ms.openlocfilehash: 87fcd715bce5a58d3503ef48e43eebcca088cc9d
+ms.sourcegitcommit: 77d2ab5018371f153d47cc1cd25f9dcbaca28a95
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "51469364"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63336750"
 ---
 # <a name="resourcedata-resource-type"></a>Tipo de recurso resourceData
 
@@ -18,7 +18,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Representa os dados de resouce anexados à notificação de alteração enviada ao assinante.
+Representa os dados de resouce anexados à notificação de alteração enviada ao assinante. Esse recurso é um tipo aberto e permite que outras propriedades sejam passadas.
 
 Para obter detalhes, confira [Usar a API do Microsoft Graph para receber notificações de alteração](webhooks.md).
 
@@ -28,16 +28,16 @@ Nenhum.
 
 ## <a name="properties"></a>Propriedades
 
-Para recursos do Outlook, **resourceData** contém os seguintes campos:
+Nenhum, exceto Outlook recursos **em que resourceData** contém os seguintes campos:
 
 | Propriedade | Tipo | Descrição |
 |:---------|:-----|:------------|
-| @odata.type | string | O tipo de entidade OData no Microsoft Graph que descreve o objeto representado. |
-| @odata.id | string | O identificador OData do objeto. |
-| @odata.etag | string | A marca da entidade HTTP que representa a versão do objeto. |
-| id | string | O identificador do objeto. |
+| @odata.type | String | O tipo de entidade OData no Microsoft Graph que descreve o objeto representado. |
+| @odata.id | String | O identificador OData do objeto. |
+| @odata.etag | String | A marca da entidade HTTP que representa a versão do objeto. |
+| id | String | O identificador do objeto. |
 
-> **Observação:** O `id` valor fornecido em **resourceData** é válido no momento em que a notificação de alteração foi gerada. Algumas ações, como mover uma mensagem para outra pasta, podem resultar na não validade quando a notificação `id` de alteração for processada.
+> **Observação:** O **valor de id** fornecido **em resourceData** é válido no momento em que a notificação de alteração foi gerada. Algumas ações, como mover uma mensagem para outra pasta, `id` podem resultar na não validade quando a notificação de alteração for processada.
 
 ## <a name="relationships"></a>Relações
 
@@ -50,16 +50,17 @@ Veja a seguir uma representação JSON do recurso.
 <!-- {
   "blockType": "resource",
   "optionalProperties": [
-
+    "@odata.type",
+    "@odata.id",
+    "@odata.etag",
+    "id"
   ],
   "@odata.type": "microsoft.graph.resourceData"
 }-->
 
 ```json
 {
-  "id": "1565293727947",
-  "@odata.type": "#Microsoft.Graph.ChatMessage",
-  "@odata.id": "teams('88cbc8fc-164b-44f0-b6a6-b59b4a1559d3')/channels('19:8d9da062ec7647d4bb1976126e788b47@thread.tacv2')/messages('1565293727947')/replies('1565293727947')"
+  "@odata.type": "#microsoft.graph.resourceData"
 }
 ```
 

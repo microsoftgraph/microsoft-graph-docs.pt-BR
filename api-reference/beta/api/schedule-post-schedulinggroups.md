@@ -1,16 +1,16 @@
 ---
 title: Criar schedulingGroup
 description: Criar um nov schedulingGroup.
-author: nkramer
+author: aaku
 ms.localizationpriority: medium
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 75c9e6729e36f47b8bde9e29ea11da636bb289fa
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: cda25f134f3ceb896b4a9a3ac59b7d8cdba1d651
+ms.sourcegitcommit: 77d2ab5018371f153d47cc1cd25f9dcbaca28a95
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62099000"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63336778"
 ---
 # <a name="create-schedulinggroup"></a>Criar schedulingGroup
 
@@ -47,7 +47,7 @@ POST /teams/{teamId}/schedule/schedulingGroups
 
 ## <a name="response"></a>Resposta
 
-Se tiver êxito, este método retornará um código de resposta e um `201 Created` [objeto schedulingGroup](../resources/schedulinggroup.md) no corpo da resposta.
+Se tiver êxito, este método retornará um `201 Created` código de resposta e um [objeto schedulingGroup](../resources/schedulinggroup.md) no corpo da resposta.
 
 ## <a name="example"></a>Exemplo
 

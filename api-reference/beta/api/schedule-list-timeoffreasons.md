@@ -1,16 +1,16 @@
 ---
 title: Listar timeOffReasons
 description: Obter a lista de timeOffReasons em um cronograma.
-author: nkramer
+author: aaku
 ms.localizationpriority: medium
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 7e5625a1739eba988e53d9677636bb28876d5485
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: 5d31936d88855e27501eb3120163778f001bea53
+ms.sourcegitcommit: 77d2ab5018371f153d47cc1cd25f9dcbaca28a95
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62111939"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63337541"
 ---
 # <a name="list-timeoffreasons"></a>Listar timeOffReasons
 
@@ -52,7 +52,7 @@ Não forneça um corpo de solicitação para esse método.
 
 ## <a name="response"></a>Resposta
 
-Se tiver êxito, este método retornará um código de resposta e uma `200 OK` coleção [de objetos timeOffReason](../resources/timeoffreason.md) no corpo da resposta.
+Se tiver êxito, este método retornará um `200 OK` código de resposta e uma coleção [de objetos timeOffReason](../resources/timeoffreason.md) no corpo da resposta.
 
 ## <a name="example"></a>Exemplo
 

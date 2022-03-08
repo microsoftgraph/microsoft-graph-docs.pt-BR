@@ -1,16 +1,16 @@
 ---
 title: tipo de recurso shift
 description: Um turno é uma unidade de trabalho agendada na agenda.
-author: nkramer
+author: aaku
 ms.localizationpriority: medium
 ms.prod: microsoft-teams
 doc_type: resourcePageType
-ms.openlocfilehash: ae5e89d2d483219157d5f2e82b051cee751b02d4
-ms.sourcegitcommit: 54e19ec90dc5441e1b93f713889ddc831782789e
+ms.openlocfilehash: 52b170fef5a283cfaa31199d78bd943212539434
+ms.sourcegitcommit: 77d2ab5018371f153d47cc1cd25f9dcbaca28a95
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/12/2022
-ms.locfileid: "61995946"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63334440"
 ---
 # <a name="shift-resource-type"></a>tipo de recurso shift
 
@@ -25,21 +25,21 @@ Uma unidade de trabalho agendada em um [cronograma](schedule.md).
 | Método       | Tipo de retorno  |Descrição|
 |:---------------|:--------|:----------|
 |[Criar turno](../api/schedule-post-shifts.md) | [shift](shift.md) | Criar uma página `shift`.|
-|[Listar turnos](../api/schedule-list-shifts.md) | [coleção shift](shift.md) | Obter a lista `shifts` de nesta agenda.|
+|[Listar turnos](../api/schedule-list-shifts.md) | [coleção shift](shift.md) | Obter a lista de `shifts` nesta agenda.|
 |[Obter turno](../api/shift-get.md) | [shift](shift.md) | Obter um `shift` por ID.|
 |[Substituir turno](../api/shift-put.md) | [shift](shift.md) | Substituir um `shift`.|
-|[Excluir turno](../api/shift-delete.md) | Nenhum(a) | `shift`Exclua um da agenda.|
+|[Excluir turno](../api/shift-delete.md) | Nenhum(a) | Exclua um `shift` da agenda.|
 
 ## <a name="properties"></a>Propriedades
 |Nome          |Tipo           |Descrição                                                                                                                                      |
 |--------------|---------------|-------------------------------------------------------------------------------------------------------------------------------------------------|
 | id            |`string`      |A ID da tarefa `shift`.|
-| userId            |`string`      |ID do usuário atribuído ao `shift` . Obrigatório. |
-| schedulingGroupId         |`string`      |ID do grupo de `shift` agendamento do que faz parte. Obrigatório. |
-| sharedShift   |[shiftItem](shiftitem.md)  |A versão compartilhada disso `shift` que pode ser visualizada por funcionários e gerentes. Obrigatório. |
-| draftShift        |[shiftItem](shiftitem.md)        |A versão de rascunho disso `shift` que pode ser visualizada pelos gerentes. Obrigatório. |
+| userId            |`string`      |ID do usuário atribuído ao `shift`. Obrigatório. |
+| schedulingGroupId         |`string`      |ID do grupo de agendamento `shift` do que faz parte. Obrigatório. |
+| sharedShift   |[shiftItem](shiftitem.md)  |A versão compartilhada disso que `shift` pode ser visualizada por funcionários e gerentes. Obrigatório. |
+| draftShift        |[shiftItem](shiftitem.md)        |A versão de rascunho disso que `shift` pode ser visualizada pelos gerentes. Obrigatório. |
 | createdDateTime       |`DateTimeOffset`        |O timestamp no qual isso `shift` foi criado pela primeira vez. O tipo Timestamp representa informações de data e hora usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite UTC em 1 de janeiro de 2014 é `2014-01-01T00:00:00Z`. |
-| lastModifiedDateTime      |`DateTimeOffset`        |O data/hora no qual isso `shift` foi atualizado pela última vez. O tipo Timestamp representa informações de data e hora usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite UTC em 1 de janeiro de 2014 é `2014-01-01T00:00:00Z`. |
+| lastModifiedDateTime      |`DateTimeOffset`        |O data/hora no qual isso foi `shift` atualizado pela última vez. O tipo Timestamp representa informações de data e hora usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite UTC em 1 de janeiro de 2014 é `2014-01-01T00:00:00Z`. |
 | lastModifiedBy        | [identitySet](identityset.md)        |A identidade da última atualização `shift`.|
 
 ## <a name="json-representation"></a>Representação JSON

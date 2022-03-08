@@ -1,16 +1,16 @@
 ---
 title: Excluir timeOff
 description: Exclua uma instância timeOff de um agendamento.
-author: nkramer
+author: aaku
 ms.localizationpriority: medium
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 690ee8e989b34166c92c7a6f62d6e70dcf8cf9a8
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: 350400e059a7cfd3969b7636358e67988c377a15
+ms.sourcegitcommit: 77d2ab5018371f153d47cc1cd25f9dcbaca28a95
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62130749"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63333376"
 ---
 # <a name="delete-timeoff"></a>Excluir timeOff
 

@@ -5,18 +5,18 @@ author: Jordanndahl
 ms.localizationpriority: medium
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: 2796e67f34bc0ee24788c71b735a3483f20d746c
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: 9a640b25e65c8b541171d918dfa15793eb6a6dc7
+ms.sourcegitcommit: 77d2ab5018371f153d47cc1cd25f9dcbaca28a95
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "61027729"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63336323"
 ---
 # <a name="delete-a-group-setting"></a>Excluir uma configuração de grupo
 
 Namespace: microsoft.graph
 
-Excluir uma configuração de grupo.
+Exclua um objeto [groupSetting](../resources/groupsetting.md) específico do locatário ou grupo.
 
 ## <a name="permissions"></a>Permissões
 
@@ -31,10 +31,15 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- { "blockType": "ignored" } -->
+Exclua uma configuração em todo o locatário.
 ```http
-DELETE /groupSettings/{id}
-DELETE /groups/{id}/settings/{id}
+DELETE /groupSettings/{groupSettingId}
+```
 
+<!-- { "blockType": "ignored" } -->
+Exclua uma configuração específica do grupo.
+```http
+DELETE /groups/{groupId}/settings/{groupSettingId}
 ```
 
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
@@ -52,14 +57,17 @@ Não forneça um corpo de solicitação para esse método.
 Se bem-sucedido, este método retorna um código de resposta `204 No Content`. Não retorna nada no corpo da resposta.
 
 ## <a name="example"></a>Exemplo
-##### <a name="request"></a>Solicitação
+
+### <a name="request"></a>Solicitação
+
+Neste exemplo, você exclui o objeto de configuração de grupo no nível de locatário.
 
 # <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "delete_groupsetting"
 }-->
-```http
+```msgraph-interactive
 DELETE https://graph.microsoft.com/v1.0/groupSettings/{id}
 ```
 # <a name="c"></a>[C#](#tab/csharp)
@@ -78,13 +86,13 @@ DELETE https://graph.microsoft.com/v1.0/groupSettings/{id}
 [!INCLUDE [sample-code](../includes/snippets/java/delete-groupsetting-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[Go](#tab/go)
+# <a name="go"></a>[Ir](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/delete-groupsetting-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
-##### <a name="response"></a>Resposta
+### <a name="response"></a>Resposta
 <!-- {
   "blockType": "response",
   "truncated": true

@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: sureshja
 ms.prod: applications
 doc_type: apiPageType
-ms.openlocfilehash: be422d4206bc2fdbf22d3b4f8856996a92621827
-ms.sourcegitcommit: 25acfa7d0153336c9a35d30a1dd422aeadc1342c
+ms.openlocfilehash: 52406c1a646d8cba0da4ad36c13a11da11c600af
+ms.sourcegitcommit: 77d2ab5018371f153d47cc1cd25f9dcbaca28a95
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/03/2022
-ms.locfileid: "62347854"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63337191"
 ---
 # <a name="application-removekey"></a>application: removeKey
 
@@ -55,7 +55,7 @@ No corpo da solicitação, forneça as seguintes propriedades necessárias.
 
 | Propriedade  | Tipo | Descrição|
 |:----------|:-----|:-----------|
-| keyId     | GUID | O identificador exclusivo da senha.|
+| keyId     | Guid | O identificador exclusivo da senha.|
 | proof | String | Um token JWT auto-assinado usado como prova de posse das chaves existentes. Esse token de JWT deve ser assinado usando a chave privada de um dos certificados válidos existentes do aplicativo. O token deve conter os seguintes argumentos:<ul><li>`aud` – A audiência deve ser `00000002-0000-0000-c000-000000000000`.</li><li>`iss` - O emissor deve ser o __ID__ do aplicativo que está fazendo a chamada.</li><li>`nbf` – Não antes da hora.</li><li>`exp` – O tempo de expiração deve ser "nbf" + 10 min.</li></ul><br>Aqui está um exemplo [de código](/graph/application-rollkey-prooftoken) que pode ser usado para gerar essa prova de token de posse.|
 
 ## <a name="response"></a>Resposta

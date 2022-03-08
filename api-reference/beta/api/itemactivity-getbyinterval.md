@@ -1,17 +1,16 @@
 ---
 author: daspek
 description: Obter itemActivityStats para as atividades que ocorreram sob esse recurso dentro do intervalo de tempo especificado.
-ms.date: 10/06/2017
 title: Obter estatísticas de atividade de item por intervalo
-localization_priority: Normal
+ms.localizationpriority: medium
 doc_type: apiPageType
-ms.prod: ''
-ms.openlocfilehash: 112c08515e053cde7ff3e2d30965f1c9b1400629
-ms.sourcegitcommit: cde4a3386b08a67cb476df6d46b51885c643d94f
+ms.prod: files
+ms.openlocfilehash: 731cb1d9e93a478e9ca3159c5a703c163deb0e41
+ms.sourcegitcommit: 77d2ab5018371f153d47cc1cd25f9dcbaca28a95
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/10/2021
-ms.locfileid: "50626100"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63333775"
 ---
 # <a name="get-item-activity-stats-by-interval"></a>Obter estatísticas de atividade de item por intervalo
 
@@ -21,21 +20,19 @@ Namespace: microsoft.graph
 
 Obter [itemActivityStats][] para as atividades que ocorreram sob esse recurso dentro do intervalo de tempo especificado.
 
->**Observação:** O **recurso itemAnalytics** ainda não está disponível em todas as [implantações nacionais.](/graph/deployments)
+>**Observação:** O **recurso itemAnalytics** ainda não está disponível em todas as [implantações nacionais](/graph/deployments).
 
 Os agregados de análise podem não estar disponíveis para todos os tipos de ação.
-
-[itemActivityStats]: ../resources/itemactivitystat.md
 
 ## <a name="permissions"></a>Permissões
 
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
-|Tipo de permissão                        | Permissões (da com menos para a com mais privilégios)
-|:--------------------------------------|:-------------------------------------
-|Delegado (conta corporativa ou de estudante)     | Files.Read, Files.ReadWrite, Files.Read.All, Files.ReadWrite.All, Sites.Read.All, Sites.ReadWrite.All
-|Delegado (conta pessoal da Microsoft) | Sem suporte.
-|Aplicativo                            | Files.Read.All, Files.ReadWrite.All, Sites.Read.All, Sites.ReadWrite.All
+|Tipo de permissão                        | Permissões (da com menos para a com mais privilégios)|
+|:--------------------------------------|:-------------------------------------|
+|Delegado (conta corporativa ou de estudante)     | Files.Read, Files.ReadWrite, Files.Read.All, Files.ReadWrite.All, Sites.Read.All, Sites.ReadWrite.All|
+|Delegado (conta pessoal da Microsoft) | Sem suporte.|
+|Aplicativo                            | Files.Read.All, Files.ReadWrite.All, Sites.Read.All, Sites.ReadWrite.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
 
@@ -55,10 +52,25 @@ GET /sites/{site-id}/lists/{list-id}/items/{item-id}/getActivitiesByInterval(sta
 | endDateTime    | string (timestamp) | O tempo final sobre o qual agregar atividades.
 | interval       | cadeia de caracteres             | O intervalo de agregação.
 
+## <a name="request-headers"></a>Cabeçalhos de solicitação
+
+| Nome          | Descrição               |
+| :------------ | :------------------------ |
+| Autorização | {token} de portador. Obrigatório. |
+
+## <a name="request-body"></a>Corpo da solicitação
+
+Não forneça um corpo de solicitação para esse método.
+
+## <a name="response"></a>Resposta
+
+Se tiver êxito, este método retornará um `200 OK` código de resposta e um [objeto itemActivityStats][] no corpo da resposta.
+
 ## <a name="example"></a>Exemplo
 
-#### <a name="request"></a>Solicitação
+### <a name="request"></a>Solicitação
 
+Veja a seguir um exemplo de uma solicitação.
 
 # <a name="http"></a>[HTTP](#tab/http)
 <!-- { "blockType": "request", "name": "get-activities-by-interval" } -->
@@ -85,7 +97,9 @@ GET /drives/{drive-id}/items/{item-id}/getActivitiesByInterval(startDateTime='20
 ---
 
 
-#### <a name="response"></a>Resposta
+### <a name="response"></a>Resposta
+
+Este é um exemplo de resposta.
 
 <!-- { "blockType": "response", "@type": "Collection(microsoft.graph.itemActivityStat)", "truncated": true } -->
 
@@ -122,6 +136,8 @@ Content-type: application/json
     ]
 }
 ```
+
+[itemActivityStats]: ../resources/itemactivitystat.md
 
 <!--
 {

@@ -1,16 +1,16 @@
 ---
 title: Criar timeOffReason
 description: Crie um novo timeOffReason.
-author: nkramer
+author: aaku
 ms.localizationpriority: medium
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: f07dd222ac10721ff321b75b73383a50fc8b395b
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: b081babc4f700d9b235eb03a48db45a933d10bec
+ms.sourcegitcommit: 77d2ab5018371f153d47cc1cd25f9dcbaca28a95
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62096081"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63337534"
 ---
 # <a name="create-timeoffreason"></a>Criar timeOffReason
 
@@ -51,7 +51,7 @@ POST /teams/{teamId}/schedule/timeOffReasons
 
 ## <a name="response"></a>Resposta
 
-Se tiver êxito, este método retornará um código `201 Created` de resposta e um objeto [timeOffReason](../resources/timeoffreason.md) no corpo da resposta.
+Se tiver êxito, este método retornará um `201 Created` código de resposta e um [objeto timeOffReason](../resources/timeoffreason.md) no corpo da resposta.
 
 ## <a name="example"></a>Exemplo
 
