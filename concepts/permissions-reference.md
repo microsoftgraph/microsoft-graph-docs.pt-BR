@@ -4,12 +4,12 @@ description: O Microsoft Graph expõe as permissões granulares que controlam o 
 author: jackson-woods
 ms.localizationpriority: high
 ms.custom: graphiamtop20, scenarios:getting-started
-ms.openlocfilehash: 85a5991cfe230e6588a2bb2c663914b14b816a17
-ms.sourcegitcommit: 7deb4fad6acc69fd6bc02cd4e2f6774de5784c97
+ms.openlocfilehash: b9c5bc264a8f41c8f30550de548089428badbbc1
+ms.sourcegitcommit: 77d2ab5018371f153d47cc1cd25f9dcbaca28a95
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/18/2022
-ms.locfileid: "62894660"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63336225"
 ---
 # <a name="microsoft-graph-permissions-reference"></a>Referência de permissões do Microsoft Graph
 
@@ -32,7 +32,9 @@ O elemento _constraint_ do nome determina a extensão potencial do acesso que o 
 * **AppFolder** concede permissão para o aplicativo ler e gravar arquivos em uma pasta dedicada no OneDrive. Essa restrição é exposta somente em [Permissões de arquivos](#files-permissions) e só é válida para contas da Microsoft.
 * Se **sem restrição** estiver especificado, o aplicativo estará limitado a executar as operações nos recursos pertencentes ao usuário conectado. Por exemplo, _User.Read_ concede privilégios para ler o perfil apenas do usuário conectado e _Mail.Read_ concede permissão para ler apenas os emails na caixa de correio do usuário conectado.
 
-> **Observação**: em cenários delegados, as permissões efetivas concedidas ao seu aplicativo são restritas pelos privilégios do usuário conectado na organização.
+> [!NOTE]
+> Em cenários delegados, o acesso de seu aplicativo também é limitado pelos privilégios do usuário conectado. Estes privilégios são determinados pelas funções atribuídas ao usuário e sua relação com os dados que estão sendo acessados.
+> Por exemplo, se o usuário assinante não tiver os privilégios apropriados para visualizar um arquivo, então o aplicativo cliente também não poderá ler esse arquivo, mesmo que o aplicativo tenha a `File.Read.All` permissão delegada.
 
 ## <a name="microsoft-accounts-and-work-or-school-accounts"></a>Contas da Microsoft e contas corporativas e de estudante
 
@@ -65,7 +67,7 @@ Com as permissões apropriadas, o aplicativo pode ler os perfis de usuários ou 
 
 Objetos de contêiner, como grupos, oferecem suporte a membros de vários tipos; por exemplo, usuários e dispositivos. Quando um aplicativo consulta a associação de um objeto contêiner e não tem permissão para ler um determinado tipo, os membros desse tipo são retornados, mas com informações limitadas.  O aplicativo recebe umas 200 respostas e uma coleção de objetos.  Informações completas são retornadas para os tipos de objetos que o aplicativo tem permissões para ler.  Para os tipos de objetos que o aplicativo não tem permissão para ler, apenas o tipo e a ID do objeto são retornados.
 
-Isso é aplicado a todos as relações que são do tipo [directoryObject](/graph/api/resources/directoryobject) (não apenas aos links de membro). Os exemplos incluem `/groups/{id}/members`, `/users/{id}/memberOf` ou `me/ownedObjects`.
+Isso é aplicado a todos as relações que são do tipo [directoryObject](/graph/api/resources/directoryobject) (não apenas aos links de membro). Exemplos incluem `/groups/{id}/members`, `/users/{id}/memberOf`, ou `me/ownedObjects`.
 
 Por exemplo, digamos que um aplicativo tenha as permissões de [User.Read.All](#user-permissions) e [Group.Read.All](#group-permissions) do Microsoft Graph.  Um grupo foi criado e esse grupo contém um usuário, um grupo e um dispositivo.  O aplicativo chama aos [membros do grupo de listas](/graph/api/group-list-members).  O aplicativo tem acesso aos objetos de usuário e grupo no grupo, mas não ao objeto do dispositivo.  Na resposta, todas as propriedades selecionadas dos objetos de usuário e grupo são retornadas. No entanto, para o objeto de dispositivo, apenas as informações limitadas são retornadas.  O tipo de dados e a ID do objeto são retornados para o dispositivo, mas todas as outras propriedades têm um valor *nulo*. Os aplicativos sem permissão não poderão usar a ID para obter o objeto real.
 
@@ -183,6 +185,9 @@ Com a permissão _AdministrativeUnit.Read.All_ um aplicativo pode cria, ler, atu
 _AdministrativeUnit.Read.All_ e _AdministrativeUnit. ReadWrite.All_ só são válidos para contas corporativas ou de estudante.
 
 ### <a name="example-usage"></a>Exemplo de uso
+
+> [!NOTE]
+> O `v1.0` ponto de extremidade para a API de unidades administrativas é `/v1.0/directory/administrativeUnits`.
 
 - _AdministrativeUnit.Read.All_: Ler unidades administrativas (`GET /beta/administrativeUnits`)
 - _AdministrativeUnit.Read.All_: Ler lista de membros de uma unidade administrativa (`GET /beta/administrativeUnits/<id>/members`)
@@ -322,7 +327,7 @@ A permissão _Application.ReadWrite.OwnedBy_ permite as mesmas operações que _
 
 |   Permissão    |  Exibir Cadeia de Caracteres   |  Descrição | Consentimento Obrigatório do Administrador | Suporte da conta da Microsoft |
 |:----------------|:------------------|:-------------|:-----------------------|:--------------|
-| _BitlockerKey.ReadBasic.All_ | Ler as informações básicas das chaves do BitLocker | Permite que um aplicativo leia as propriedades da chave do BitLocker para todos os dispositivos no locatário. A chave de recuperação não será retornada. | Sim | Não |
+| _BitlockerKey.ReadBasic.All_ | Ler as informações básicas das chaves do BitLocker | Permite que um aplicativo leia as propriedades da chave do BitLocker para todos os dispositivos no locatário. A chave de recuperação não é retornada. | Sim | Não |
 | _BitlockerKey.Read.All_ | Ler a chave do BitLocker | Permite que um aplicativo leia as chaves do BitLocker para todos os dispositivos no locatário. A chave de recuperação será retornada. | Sim | Não |
 
 #### <a name="application-permissions"></a>Permissões de aplicativos
@@ -859,7 +864,7 @@ Para cenários mais complexos que envolvem várias permissões, confira [Cenári
 | _EduAssignments.ReadWriteBasic_ | Ler e gravar as tarefas de classe sem notas dos usuários           | Permite ao aplicativo ler e gravar as tarefas sem notas em nome do usuário                                                                                                                                                                                                | Sim                    | Não                          |
 | _EduAssignments.Read_           | Ler o modo de exibição de tarefas de classe e as notas delas dos usuários           | Permite ao aplicativo ler as tarefas e as notas delas em nome do usuário                                                                                                                                                                                                        | Sim                    | Não                          |
 | _EduAssignments.ReadWrite_      | Ler e gravar o modo de exibição de tarefas da classe e as notas delas dos usuários | Permite ao aplicativo ler e gravar as tarefas e as notas delas em nome do usuário                                                                                                                                                                                              | Sim                    | Não                          |
-| _EduRoster.ReadBasic_           | Ler um subconjunto limitado do modo de exibição dos usuários da lista de participantes               | Permite que o aplicativo leia um subconjunto limitado das propriedades da estrutura de escolas e classes da lista de participantes de uma organização e um subconjunto limitado das propriedades dos usuários a serem lidos em nome do usuário. Inclui nome, status, função de formação, endereço de email e foto. | Sim                    | Não                          |
+| _EduRoster.ReadBasic_           | Ler um subconjunto limitado do modo de exibição dos usuários da lista de participantes               | Permite que o aplicativo leia um subconjunto limitado de propriedades da estrutura das escolas e classes de uma organização e um subconjunto limitado de propriedades sobre os usuários para ser lido em nome do usuário. Inclui nome, status, função educacional, endereço de e-mail e foto. | Sim                    | Não                          |
 | _EduRoster. Read_                | Ler modo de exibição dos usuários da lista de participantes                                   | Permite ao aplicativo ler a estrutura de escolas e aulas na lista de participação de uma organização e informações específicas de educação sobre os usuários a serem lidas em nome do usuário.                                                                                                         | Sim                    |
 | _EduRoster.ReadWrite_           | Ler e escrever o modo de exibição dos usuários da lista de participantes                         | Permite ao aplicativo ler e escrever a estrutura de escolas e aulas na lista de participação de uma organização e informações específicas de educação sobre os usuários a serem lidas e escritas em nome do usuário.                                                                                   | Sim                    |
 
@@ -1053,7 +1058,7 @@ Para cenários mais complexos que envolvem várias permissões, confira [Cenári
 | _IdentityRiskyUser.Read.All_ |   Leia as informações de risco de identidade do usuário.  | Permite que o aplicativo para leia as informações de risco de identidade do usuário para todos os usuários em sua organização em nome do usuário conectado. | Sim | Não |
 | _IdentityRiskyUser.ReadWrite.All_ |   Ler e atualizar as informações de risco de identidade do usuário.  | Permite que o aplicativo leia as informações de risco de identidade do usuário para todos os usuários em sua organização em nome do usuário conectado. | Sim | Não |
 | _IdentityRiskyServicePrincipal.Read.All_ |   Leia todas as informações da entidade de serviço de risco  | Permite que o aplicativo leia todas as informações da entidade de serviço de risco para a sua organização, em nome do usuário conectado. | Sim | Não |
-| _IdentityRiskyServicePrincipal.ReadWrite.All_ |   Ler e gravar todas as informações da entidade de serviço de risco  | Permite que o aplicativo leia e atualize as informações da entidade de serviço de risco para todas as entidades de serviço em sua organização, em nome do usuário conectado. As operações de atualização incluem ignorar entidades de serviço arriscadas.| Sim | Não |
+| _IdentityRiskyServicePrincipal.ReadWrite.All_ |   Ler e gravar todas as informações da entidade de serviço de risco  | Permite que o aplicativo leia e atualize informações principais de serviços de risco para todos os diretores de serviços de sua organização, em nome do usuário inscrito. As operações de atualização incluem ignorar entidades de serviços arriscadas.| Sim | Não |
 
 #### <a name="application-permissions"></a>Permissões de aplicativos
 
@@ -1065,7 +1070,7 @@ Para cenários mais complexos que envolvem várias permissões, confira [Cenári
 | _IdentityRiskyServicePrincipal.Read.All_ |   Leia todas as informações da entidade de serviço de risco  | Permite que o aplicativo leia todas as informações de entidade de serviço arriscadas para sua organização, sem um usuário conectado. | Sim |
 | _IdentityRiskyServicePrincipal.ReadWrite.All_ |   Ler e gravar todas as informações da entidade de serviço de risco  | Permite que o aplicativo leia e atualize as informações de usuário de risco da sua organização sem um usuário conectado.| Sim |
 
-Todas as permissões de risco de identidade são válidas somente para contas corporativas ou de estudante. Para um aplicativo com permissões delegadas para ler informações de risco de identidade, o usuário conectado deve ser membro de uma das seguintes [funções de administrador do Azure Active Directory](/azure/active-directory/roles/permissions-reference): Administrador Global, Administrador de Segurança ou Leitor de Segurança.
+Todas as permissões de risco de identidade são válidas somente para contas corporativas ou de estudante. Para um aplicativo com permissões delegadas para ler informações de risco de identidade, o usuário signatário deve ser um membro de uma das seguintes funções de administrador do [Azure AD funções de administrador](/azure/active-directory/roles/permissions-reference): Administrador Global, Administrador de Segurança, ou Leitor de Segurança.
 
 ### <a name="example-usage"></a>Exemplo de uso
 
@@ -1233,7 +1238,7 @@ Para cenários mais complexos que envolvem várias permissões, confira [Cenári
 |   Permissão    |  Exibir Cadeia de Caracteres   |  Descrição | Consentimento Obrigatório do Administrador | Suporte da conta da Microsoft |
 |:----------------|:------------------|:-------------|:-----------------------|:--------------|
 | _Mail.Read_ |    Ler emails do usuário | Permite ao aplicativo ler emails em caixas de correio do usuário. | Não | Sim
-| _Mail.ReadBasic_ |    Ler emails básicos do usuário | Permite que o aplicativo leia e-mails na caixa de correio do usuário conectado, exceto **body**, **bodyPreview**, **uniqueBody**, **anexos**, **extensões**, e quaisquer propriedades estendidas. Não inclui permissões para pesquisar mensagens. | Não | Não
+| _Mail.ReadBasic_ |    Ler emails básicos do usuário | Permite que o aplicativo leia o e-mail na caixa de correio do usuário conectado, exceto o **corpo**, **bodyPreview**, **uniqueBody**, **anexos**, **extensões**, e quaisquer propriedades estendidas. Não inclui permissões para pesquisar mensagens. | Não | Não
 | _Mail.ReadWrite_ |    Acesso de leitura e gravação aos emails do usuário | Permite ao aplicativo criar, ler, atualizar e excluir emails em caixas de correio do usuário. Não inclui a permissão para enviar emails.| Não | Sim
 | _Mail.Read.Shared_ |    Ler email compartilhado e de usuário | Permite que o aplicativo leia os emails que o usuário pode acessar, incluindo os próprios contatos do usuário e os emails compartilhados. | Não | Não
 | _Mail.ReadWrite.Shared_ |    Ler e registrar usuário e emails compartilhados | Permite que o aplicativo crie, leia, atualize e exclua emails que o usuário tem permissão de acessar, incluindo os emails compartilhados e os do próprio usuário. Não inclui a permissão para enviar emails. | Não | Não
@@ -1849,6 +1854,34 @@ O acesso aos dados por meio de pesquisa requer permissão de leitura para o item
 
 ---
 
+## <a name="search-configuration-permissions"></a>Escolher permissões de configuração
+
+#### <a name="delegated-permissions"></a>Permissões delegadas
+
+|   Permissão    |  Exibir Cadeia de Caracteres   |  Descrição | Consentimento Obrigatório do Administrador | Suporte da conta da Microsoft |
+|:----------------|:------------------|:-------------|:-----------------------|:-----------------------|
+| _SearchConfiguration.Read.All_ | Ler a configuração de pesquisa da sua organização | Permite que o aplicativo leia a configuração de pesquisa, em nome do usuário conectado. | Sim | Não |
+| _SearchConfiguration.ReadWrite.All_ | Ler e gravar a configuração de pesquisa da sua organização | Permite que o aplicativo leia e grave configurações de pesquisa, em nome do usuário conectado. | Sim | Não |
+
+#### <a name="application-permissions"></a>Permissões de aplicativos
+|   Permissão    |  Exibir Cadeia de Caracteres   |  Descrição | Consentimento Obrigatório do Administrador | 
+|:----------------|:------------------|:-------------|:-----------------------|
+| _SearchConfiguration.Read.All_ | Ler a configuração de pesquisa da sua organização | Permite que o aplicativo leia as configurações de pesquisa, sem um usuário conectado. | Sim | 
+| _SearchConfiguration.ReadWrite.All_ | Ler e gravar a configuração de pesquisa da sua organização | Permite que o aplicativo leia e grave configurações de pesquisa, sem um usuário conectado. | Sim | 
+
+
+### <a name="remarks"></a>Comentários
+As permissões de pesquisa só são válidas para contas corporativas ou de estudante.
+
+### <a name="example-usage"></a>Exemplo de uso
+
+#### <a name="delegated-and-application"></a>Permissões delegadas e de aplicativo
+
+- _SearchConfiguration.Read.All_: Leia a lista de todos os indicadores criados para seu locatário (`GET /beta/search/bookmarks`)
+- _SearchConfiguration.ReadWrite.All_: Atualize ou leia todos os indicadores criados para seu locatário (`PATCH /beta/search/bookmarks/{id}`)
+
+---
+
 ## <a name="security-permissions"></a>Permissões de segurança
 
 #### <a name="delegated-permissions"></a>Permissões delegadas
@@ -2418,7 +2451,7 @@ Para contas corporativas ou de estudante, o perfil completo inclui todas as prop
 
 Com a Permissão de aplicativo _User.ReadWrite.All_, o aplicativo pode atualizar todas as propriedades declaradas das contas corporativas ou de estudante, com exceção da senha.
 
-Com a permissão _User.ReadWrite.All_ delegada ou de aplicativo, a atualização de **businessPhones**, **mobilePhone** ou **otherMails** de outro usuário é permitida apenas em usuários que não são administradores ou que tenham uma das seguintes funções: Leitor de Diretório, Emissor de Convites Independente, Leitor do Centro de Mensagens e Leitor de Relatórios. Para obter mais detalhes, confira Administrador de suporte técnico (senha) nas [funções disponíveis do Azure AD](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles).
+Com o _Usuário.ReadWrite.All_ autorização delegada ou de aplicação, atualizar os **BusinessPhones**, **mobilePhone** ou **otherMails** de outro usuário só é permitido em usuários que não sejam administradores ou aos quais tenha sido atribuída uma das seguintes funções: Leitores de Diretório, Convidado, Leitor de Centro de Mensagens e Leitor de Relatórios. Para mais detalhes, consulte o Helpdesk (Senha) Administrador no [Azure AD funções disponíveis](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles).
 
 Para ler ou gravar os subordinados diretos (`directReports`) ou o gerente (`manager`) de uma conta corporativa ou de estudante, o aplicativo deve ter as permissões _User.Read.All_ (somente leitura) ou _User.ReadWrite.All_.
 

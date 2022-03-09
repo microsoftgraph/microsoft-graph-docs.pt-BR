@@ -5,12 +5,12 @@ ms.localizationpriority: high
 author: keylimesoda
 ms.prod: directory-management
 doc_type: resourcePageType
-ms.openlocfilehash: 545ab52782c8bec83f711faf3928d10d4c3105c1
-ms.sourcegitcommit: 00ac72f7b1cdde4f71ff332c2e7953908ef9de52
+ms.openlocfilehash: 3be3d259d76c20b02ccf4da1ef2bc995f82517e3
+ms.sourcegitcommit: 77d2ab5018371f153d47cc1cd25f9dcbaca28a95
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/04/2022
-ms.locfileid: "61711588"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63337142"
 ---
 # <a name="directoryobject-resource-type"></a>Tipo de recurso directoryObject
 
@@ -18,17 +18,19 @@ Namespace: microsoft.graph
 
 Representa um objeto do Active Directory do Azure. O tipo **directoryObject** é o tipo básico de muitos outros tipos de entidade de diretório.
 
-## <a name="methods"></a>Métodos
+Herda de [entidade](entity.md).
+
+## <a name="methods"></a>Methods
 
 | Método       | Tipo de retorno  |Descrição|
 |:---------------|:--------|:----------|
 |[Get directoryObject](../api/directoryobject-get.md) | [directoryObject](directoryobject.md) |Leia as propriedades de um objeto de diretório.|
 |[Delete directoryObject](../api/directoryobject-delete.md) | Nenhum |Exclua um objeto de diretório. |
 |[Obtenha as propriedades de extensão disponíveis](../api/directoryobject-getavailableextensionproperties.md)|Coleção [extensionProperty](../resources/extensionproperty.md)|Obtenha todas as listas ou uma lista filtrada das propriedades de extensão do diretório que foram registradas em um diretório.|
-|[checkMemberGroups](../api/directoryobject-checkmembergroups.md)|String collection|Verifique se há associação em uma lista especificada de grupos e retorne dessa lista os grupos dos quais o usuário, grupo, entidade de serviço especificado, contato organizacional, dispositivo ou objeto de diretório é um membro. A verificação é transitiva.|
-|[getMemberGroups](../api/directoryobject-getmembergroups.md)|String collection|Retorne todos os grupos dos qual o usuário, grupo, entidade de serviço, contato organizacional, dispositivo ou objeto de diretório é membro. A verificação é transitiva.|
-|[checkMemberObjects](../api/directoryobject-checkmemberobjects.md)|Coleção de cadeias de caracteres|Verifique se há associação em uma lista de funções de grupo, unidades administrativas ou diretórios para o usuário, grupo, dispositivo, contato organizacional ou objeto de diretório especificado. Esse método é transitivo.|
-|[getMemberObjects](../api/directoryobject-getmemberobjects.md)|String collection| Retorne todos os grupos, unidades administrativas e funções de diretório das quais o usuário, grupo, dispositivo, contato organizacional ou objeto de diretório é membro. A verificação é transitiva. |
+|[checkMemberGroups](../api/directoryobject-checkmembergroups.md)|Coleção de cadeias de caracteres|Verifique se há associação em uma lista especificada de grupos e retorne dessa lista os grupos dos quais o usuário, grupo, entidade de serviço especificado, contato organizacional, dispositivo ou objeto de diretório é um membro. A verificação é transitória.|
+|[getMemberGroups](../api/directoryobject-getmembergroups.md)|Coleção de cadeias de caracteres|Retorne todos os grupos dos qual o usuário, grupo, entidade de serviço, contato organizacional, dispositivo ou objeto de diretório é membro. A verificação é transitória.|
+|[checkMemberObjects](../api/directoryobject-checkmemberobjects.md)|Coleção de cadeias de caracteres|Verifique se há associação em uma lista de funções de grupo, unidades administrativas ou diretórios para o usuário, grupo, dispositivo, contato organizacional ou objeto de diretório especificado. Esse método é transitório.|
+|[getMemberObjects](../api/directoryobject-getmemberobjects.md)|Coleção de cadeias de caracteres| Retorne todos os grupos, unidades administrativas e funções de diretório das quais o usuário, grupo, dispositivo, contato organizacional ou objeto de diretório é membro. A verificação é transitória. |
 |[getByIds](../api/directoryobject-getbyids.md) | Coleção [directoryObject](directoryobject.md) | Obtenha um conjunto de objetos de diretório com base em um conjunto de ids fornecidas. |
 |[validateProperties](../api/directoryobject-validateproperties.md)|JSON| Valide se o nome de exibição ou apelido de email de um grupo da Microsoft 365 está em conformidade com as políticas de nomenclatura. |
 |delta|Coleção [directoryObject](directoryObject.md)| Obtenha alterações incrementais para objetos de diretório, por exemplo, [usuários](../api/user-delta.md), [grupos](../api/group-delta.md), [aplicativos](../api/application-delta.md) e [entidades de serviço](../api/serviceprincipal-delta.md). Cada tipo derivado oferece suporte à filtragem pelo **id**. Para obter mais informações sobre consultas delta, consulte [Usar consulta delta para rastrear alterações nos dados do Microsoft Graph](/graph/delta-query-overview).|
@@ -37,7 +39,9 @@ Representa um objeto do Active Directory do Azure. O tipo **directoryObject** é
 
 | Propriedade   | Tipo |Descrição|
 |:---------------|:--------|:----------|
-|id|Cadeia de caracteres|O identificador exclusivo do objeto. Por exemplo, 12345678-9abc-def0-1234-56789abcde. O valor da propriedade da **ID** é geralmente, mas não exclusivamente na forma de um GUID; trate-o como um identificador opaco e não confie que ele seja um GUID. Chave. Não pode ser anulado. Somente leitura.|
+|deletedDateTime|DateTimeOffset|Data e hora em que este objeto foi excluído. Sempre `null` quando o objeto não tiver sido excluído. |
+|id|Cadeia de caracteres|O identificador exclusivo para o objeto. Por exemplo, `12345678-9abc-def0-1234-56789abcde`. O valor da propriedade **ID** é frequentemente, mas não exclusivamente, sob o formato de um GUID; O valor deve ser tratado como um identificador opaco e não confie no fato de ser um GUID. Chave. Não anulável. Somente leitura. Herdado da [entidade](entity.md).|
+
 
 ## <a name="relationships"></a>Relações
 

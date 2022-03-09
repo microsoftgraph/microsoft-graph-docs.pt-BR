@@ -5,12 +5,12 @@ ms.localizationpriority: high
 author: Jumaodhiss
 ms.prod: change-notifications
 doc_type: apiPageType
-ms.openlocfilehash: c3209c4facf5cf6c200fabdeb73e80e566a8979d
-ms.sourcegitcommit: 4c8444b732b8d6d0de8a95f6666c42095f146266
+ms.openlocfilehash: 95a6ea99386aa69aa7c0f783719ef0731d50dba7
+ms.sourcegitcommit: 77d2ab5018371f153d47cc1cd25f9dcbaca28a95
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/08/2022
-ms.locfileid: "62443370"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63336288"
 ---
 # <a name="create-subscription"></a>Criar assinatura
 
@@ -18,7 +18,9 @@ Namespace: microsoft.graph
 
 Inscreve um aplicativo de ouvinte para receber notificações de alterações quando o tipo de alteração solicitado ocorrer no recurso especificado no Microsoft Graph.
 
-Consulte a tabela na seção [Permissões](#permissions) para obter a lista de recursos que oferecem suporte à inscrição para alterar notificações.
+Consulte a tabela na seção [Permissões](#permissions) para obter a lista de recursos que oferecem suporte à inscrição para alterar notificações. 
+
+Alguns recursos suportam a opção de incluir dados de recursos criptografados em notificações de alteração. Esses recursos incluem [chatMessage](../resources/chatmessage.md), [contato](../resources/contact.md), [evento](../resources/event.md), [mensagem](../resources/message.md) e [presença](../resources/presence.md). Para obter mais informações, consulte [Configurar notificações de alteração que incluem dados de recursos](/graph/webhooks-with-resource-data) e [Notificações de alteração para recursos do Outlook no Microsoft Graph](/graph/outlook-change-notification-overview).
 
 ## <a name="permissions"></a>Permissões
 
@@ -61,13 +63,9 @@ OneDrive for Business e Microsoft Office SharePoint Online suportam o envio de n
 
 ### <a name="contact-event-and-message"></a>contato, evento e mensagem
 
-As limitações adicionais se aplicam aos itens do Outlook. As limitações se aplicam para criação e gerenciamento de assinaturas (receber, atualizar e excluir assinaturas).
+Você pode assinar alterações nos recursos de **contato,** **evento** ou mensagem **do** Outlook.
 
-- A permissão delegada dá suporte a inscrição de itens em pastas apenas na caixa de correio do usuário conectado. Por exemplo, você não pode usar os Calendários de permissões delegadas. Leia para assinar eventos na caixa de correio de outro usuário.
-- Se inscrever para alterar as notificações de contatos, eventos no Outlook ou mensagens em pastas _compartilhadas ou delegadas_:
-
-  - Usar a permissão de aplicativos correspondentes para inscrever as alterações dos itens em uma pasta ou uma caixa de correio de _qualquer_ usuários no locatário.
-  - Não use as permissões de compartilhamento do Outlook (Contacts.Read.Shared Calendars.Read.Shared, Mail.Read.Shared e seus equivalentes de somente leitura), pois eles **não** suportam inscrições que alteram as notificações em itens de pastas compartilhadas ou delegadas.
+[!INCLUDE [outlook-subscription-notes](../../includes/outlook-subscription-notes.md)]
 
 ### <a name="presence"></a>presença
 
