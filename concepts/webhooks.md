@@ -5,12 +5,12 @@ author: FaithOmbongi
 ms.prod: non-product-specific
 ms.localizationpriority: high
 ms.custom: graphiamtop20
-ms.openlocfilehash: 79042bd6f11b52cd3cd688cf6e778cd430bd6dd3
-ms.sourcegitcommit: 9759b647acfbed99d5675a6f512aaa33932a723f
+ms.openlocfilehash: ee62ed00b557155bc31f587412806ff00521ec04
+ms.sourcegitcommit: efa06c63cd3154bcc7ecc993011f314c2dea9a92
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/23/2021
-ms.locfileid: "61604326"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63367983"
 ---
 # <a name="set-up-notifications-for-changes-in-user-data"></a>Configurar notificações para alterações nos dados de usuário
 
@@ -49,6 +49,7 @@ Usando a API do Microsoft Graph, um aplicativo pode se inscrever para alteraçõ
 - [chatMessage][] do Teams
 - [conversationMember][] do Teams
 - Teams [presença][]
+- [onlineMeeting][] do Teams
 - Equipe do [Teams][]
 - [todoTask][] (pré-visualização)
 - [usuário][]
@@ -57,7 +58,7 @@ Você pode criar uma assinatura para uma pasta de específica do Outlook, como a
 
 Ou para um recurso de nível superior: `/me/messages`, `/me/contacts`, `/me/events`, `users`, `groups`, `/communications/callRecords`
 
-Ou para uma instância de recurso específica: `users/{id}`, `groups/{id}`, `groups/{id}/conversations`, `sites/{site-id}/lists/{list-id}`, `/communications/presences/{id}`
+Ou para uma instância de recurso específica: `users/{id}`, `groups/{id}`, `groups/{id}/conversations`, `sites/{site-id}/lists/{list-id}`, `/communications/presences/{id}`, `/communications/onlinemeeting/{meeting-id}`
 
 Ou para alguma pasta no OneDrive pessoal de um usuário: `/drives/{id}/root`
 `/drives/{id}/root/subfolder`
@@ -224,7 +225,7 @@ Se tiver êxito, o Microsoft Graph retornará um código `204 No Content`.
 
 Com uma assinatura do cliente em um recurso, o Microsoft Graph envia uma solicitação `POST` para a URL da notificação sempre que o recurso é alterado. Notificações são enviadas somente para as alterações do tipo especificado na assinatura, por exemplo, `created`.
 
-> **Observação:** se um cliente tiver várias assinaturas que monitoram o mesmo recurso e usam a mesma URL de notificação, o Microsoft Graph poderá enviar várias notificações de alteração que correspondam a diferentes assinaturas, cada uma mostrando a ID da assinatura correspondente. Não há garantias de que todas as notificações na solicitação `POST` pertencerão a uma única assinatura.
+> **Observação:** se um cliente tiver várias assinaturas que monitoram o mesmo recurso e usam a mesma URL de notificação, o Microsoft Graph poderá enviar várias notificações de alteração que correspondam a diferentes assinaturas, cada uma mostrando a ID da assinatura correspondente. Não há nenhuma garantir de que todas as notificações de alteração na solicitação `POST` pertençam a uma única assinatura.
 
 ### <a name="change-notification-example"></a>Exemplo de notificação de alteração
 
@@ -322,6 +323,7 @@ A tabela a seguir lista a latência esperada entre um evento acontecendo no serv
 |[grupo][] | Menos de 2 minutos | 15 minutos |
 |[lista][] | Menos de 1 minuto | 5 minutos |
 |[mensagem][] | Desconhecido | Desconhecido |
+|[onlineMeeting][] | Menos de 10 segundos | 1 minuto |
 |[presence][] | Menos de 10 segundos | 1 minuto |
 |[impressora][] | Menos de 1 minuto | 5 minutos |
 |[printTaskDefinition][] | Menos de 1 minuto | 5 minutos |
@@ -360,3 +362,4 @@ A tabela a seguir lista a latência esperada entre um evento acontecendo no serv
 [chat]: /graph/api/resources/chat
 [conversationMember]: /graph/api/resources/conversationmember
 [equipe]: /graph/api/resources/team
+[onlineMeeting]: /graph/api/resources/onlinemeeting

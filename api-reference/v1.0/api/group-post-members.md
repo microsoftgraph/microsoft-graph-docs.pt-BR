@@ -5,12 +5,12 @@ ms.localizationpriority: high
 author: Jordanndahl
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: 109208672ea8c16336171d41a3587ba48a30e207
-ms.sourcegitcommit: 9adf70c5da7c5b65f7d20f571d101ee06f023bc3
+ms.openlocfilehash: 0b6eb77312d4fef189f776670eb446b5ab167b97
+ms.sourcegitcommit: 77d2ab5018371f153d47cc1cd25f9dcbaca28a95
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/25/2022
-ms.locfileid: "62201356"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63335406"
 ---
 # <a name="add-members"></a>Adicionar membros
 
@@ -35,6 +35,9 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |Delegado (conta corporativa ou de estudante) | GroupMember.ReadWrite.All, Group.ReadWrite.All, Directory.ReadWrite.All, Directory.AccessAsUser.All    |
 |Delegado (conta pessoal da Microsoft) | Sem suporte.    |
 |Aplicativo | GroupMember.ReadWrite.All, Group.ReadWrite.All and Directory.ReadWrite.All |
+
+> [!IMPORTANT]
+> Para adicionar membros a um grupo atribuível a função, o usuário ou aplicativo de chamada também deve ser atribuído à permissão *RoleManagement.ReadWrite.Directory*.
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- { "blockType": "ignored" } -->

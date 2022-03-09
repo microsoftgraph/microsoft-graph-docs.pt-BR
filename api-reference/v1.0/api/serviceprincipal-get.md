@@ -5,12 +5,12 @@ author: sureshja
 ms.localizationpriority: high
 ms.prod: applications
 doc_type: apiPageType
-ms.openlocfilehash: 5630f5888be3a7c84d2075907231c3d73fc29cb5
-ms.sourcegitcommit: 7deb4fad6acc69fd6bc02cd4e2f6774de5784c97
+ms.openlocfilehash: d78005e99e4eb585eb326a4dc225c8ab3b83cfb1
+ms.sourcegitcommit: efa06c63cd3154bcc7ecc993011f314c2dea9a92
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/18/2022
-ms.locfileid: "62894772"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63367934"
 ---
 # <a name="get-serviceprincipal"></a>Obter um servicePrincipal
 
@@ -24,7 +24,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
 |:--------------------|:---------------------------------------------------------|
 |Delegado (conta corporativa ou de estudante) | Application.Read.All, Application.ReadWrite.All, Directory.Read.All, Directory.ReadWrite.All, Directory.AccessAsUser.All    |
-|Delegado (conta pessoal da Microsoft) | Sem suporte.    |
+|Delegada (conta pessoal da Microsoft) | Sem suporte.    |
 |Aplicativo | Application.Read.All, Application.ReadWrite.All, Application.ReadWrite.OwnedBy, Directory.Read.All |
 
 > [!NOTE]
@@ -39,8 +39,7 @@ GET /servicePrincipals/{id}
 ## <a name="optional-query-parameters"></a>Parâmetros de consulta opcionais
 Este método dá suporte a [Parâmetros de consulta OData](/graph/query-parameters) para ajudar a personalizar a resposta.
 
-Por padrão, esta API não retorna o valor da chave pública da **chave** na propriedade **keyCredentials** a menos que **keyCredentials** seja especificado em uma `$select`consulta.
-Por exemplo, `$select=id,appId,keyCredentials`.
+Por padrão, esta API não retorna o valor da chave pública da **chave** na propriedade **keyCredentials**, a menos que **keyCredentials** seja especificado em uma `$select`consulta. por exemplo: `$select=id,appId,keyCredentials`.
 
 O uso de `$select` para obter **keyCredentials** para diretores de serviços tem um limite de 150 pedidos por minuto para cada locatário.
 
@@ -143,6 +142,7 @@ Content-type: application/json
   "passwordCredentials": [],
   "publisherName": null,
   "replyUrls": [],
+  "resourceSpecificApplicationPermissions": [],
   "servicePrincipalNames": [],
   "servicePrincipalType": null,
   "signInAudience": "AzureADandPersonalMicrosoftAccount",

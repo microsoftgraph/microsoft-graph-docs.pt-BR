@@ -5,21 +5,22 @@ author: nkramer
 ms.localizationpriority: high
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 30ecd7e128f96c222997f660d4853a693b00d281
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: 3b56b90a958d516daec194873319cb266546d067
+ms.sourcegitcommit: 77d2ab5018371f153d47cc1cd25f9dcbaca28a95
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62108130"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63335686"
 ---
 # <a name="add-member-to-team"></a>Adicionar membro à equipe.
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Adicione um novo [conversationMember](../resources/conversationmember.md) à uma [equipe](../resources/team.md).
+Adicione um novo [membro da conversa](../resources/conversationmember.md) a uma [equipe](../resources/team.md).
 
 ## <a name="permissions"></a>Permissões
+
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão|Permissões (da com menos para a com mais privilégios)|
@@ -27,6 +28,9 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |Delegado (conta corporativa ou de estudante)| TeamMember.ReadWrite.All |
 |Delegado (conta pessoal da Microsoft) | Sem suporte.    |
 |Aplicativo| TeamMember.ReadWrite.All |
+
+> [!NOTE]
+> Não há suporte para usar permissões de aplicativo para [adicionar membros convidados](/microsoft-365/admin/add-users/about-guest-users?view=o365-worldwide&preserve-view=true) a uma equipe.
 
 ## <a name="http-request"></a>Solicitação HTTP
 

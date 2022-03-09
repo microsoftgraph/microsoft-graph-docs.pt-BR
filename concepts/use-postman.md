@@ -3,12 +3,12 @@ title: Use o Postman com a API do Microsoft Graph
 description: Use a coleção do Microsoft Graph Postman para começar a usar as APIs do Microsoft Graph em questão minutos.
 author: jasonjoh
 ms.localizationpriority: high
-ms.openlocfilehash: 75adbacc5339fc28ad741915cf287d9c458d8615
-ms.sourcegitcommit: f7956d25472a55af03be83b6ab986a7149a7ac88
+ms.openlocfilehash: ef4b7a6c990ce831b9f2a7ac10b9d828eded9c13
+ms.sourcegitcommit: efa06c63cd3154bcc7ecc993011f314c2dea9a92
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/12/2021
-ms.locfileid: "60270331"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63368256"
 ---
 # <a name="use-postman-with-the-microsoft-graph-api"></a>Use o Postman com a API do Microsoft Graph
 
@@ -47,7 +47,8 @@ Para usar essa coleção no próprio locatário de desenvolvedor, crie um aplica
 1. No menu à esquerda, selecione **Registros de aplicativo**.
 1. No menu horizontal, selecione **Novo registro**.
 1. Defina o **Nome do aplicativo** como `Postman`.
-1. Defina a **URI de redirecionamento** como`https://oauth.pstmn.io/v1/browser-callback`.
+1. No menu suspenso, selecione **Web**. 
+1. Defina a **URI de redirecionamento** como`https://oauth.pstmn.io/v1/callback`.
 1. Selecione **Registrar**.
 1. No menu esquerdo, selecione **Autenticação**.
 1. Em **Redirecionar URIs**, selecione **Adicionar URI**. Defina o valor para `https://app.getpostman.com/oauth2/callback` e selecione **Salvar**.
@@ -134,7 +135,7 @@ Se você quiser contribuir com seus próprios pedidos, precisará de uma licenç
 
 ### <a name="authentication-fails-with-you-cant-get-there-from-here"></a>Autenticação falhou com "Você não pode chegar lá a partir daqui"
 
-Certas [políticas de acesso condicional](/azure/active-directory/conditional-access/overview) configuradas pelos administradores da sua organização podem bloquear o fluxo de autenticação do Postman. Entre em contato com seus administradores para explorar as alternativas.
+Algumas [políticas de acesso condicional](/azure/active-directory/conditional-access/overview) configuradas pelos administradores da sua organização podem bloquear o fluxo de autenticação do Postman. Entre em contato com os administradores para explorar alternativas.
 
 ## <a name="see-also"></a>Confira também
 

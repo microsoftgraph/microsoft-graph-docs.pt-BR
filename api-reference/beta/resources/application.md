@@ -5,12 +5,12 @@ ms.localizationpriority: high
 author: sureshja
 ms.prod: applications
 doc_type: resourcePageType
-ms.openlocfilehash: bed40c0a9bf5c5e411ae073de3d7eb9af5a2bf60
-ms.sourcegitcommit: 6968f5aaf40089684efb0c38a95f6cca353c1d92
+ms.openlocfilehash: d72b8a9e823d9f10276cb13b789de089250f67fe
+ms.sourcegitcommit: 77d2ab5018371f153d47cc1cd25f9dcbaca28a95
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/16/2022
-ms.locfileid: "62854731"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63335301"
 ---
 # <a name="application-resource-type"></a>tipo de recurso do aplicativo
 
@@ -48,9 +48,10 @@ Esse recurso tem suporte para o uso da [consulta delta](/graph/delta-query-overv
 |[Adicionar chave](../api/application-addkey.md)|[keyCredential](keycredential.md)|Adicione uma credencial de chave a um aplicativo.|
 |[Remover chave](../api/application-removekey.md)|Nenhum(a)|Remova uma credencial de chave de um aplicativo.|
 |**Extensões**| | |
-| [Listar extensões](../api/application-list-extensionproperty.md) | Coleção [extensionProperty](extensionProperty.md) | Listar propriedades de extensão em um objeto de aplicativo. |
-| [Criar extensão](../api/application-post-extensionproperty.md) | [extensionProperty](extensionProperty.md) | Criar uma propriedade de extensão em um objeto de aplicativo. |
-| [Excluir extensão](../api/application-delete-extensionproperty.md) | Nenhum | Excluir uma propriedade de extensão de um objeto de aplicativo. |
+| [Listar extensionProperties](../api/application-list-extensionproperty.md) | Coleção [extensionProperty](extensionProperty.md) | Listar propriedades de extensão em um objeto de aplicativo. |
+| [Criar extensionProperties](../api/application-post-extensionproperty.md) | [extensionProperty](extensionProperty.md) | Criar uma propriedade de extensão em um objeto de aplicativo. |
+| [Obter extensionProperty](../api/extensionproperty-delete.md) | Nenhum | Obter uma propriedade de extensão de um objeto de aplicativo. |
+| [Excluir extensionProperty](../api/extensionproperty-delete.md) | Nenhum | Excluir uma propriedade de extensão de um objeto de aplicativo. |
 |**Credenciais de identidade federada**| | |
 | [Lista federatedIdentityCredential](../api/application-list-federatedidentitycredentials.md) | Coleção [federatedIdentityCredential](../resources/federatedidentitycredential.md) | Listar credenciais de identidade federada em um objeto de aplicativo. |
 | [Criar federatedIdentityCredential](../api/application-post-federatedidentitycredentials.md) | [federatedIdentityCredential](../resources/federatedidentitycredential.md) | Crie uma credencial de identidade federada em um objeto de aplicativo. |
@@ -88,7 +89,7 @@ Esse recurso tem suporte para o uso da [consulta delta](/graph/delta-query-overv
 | createdDateTime | DateTimeOffset | A data e a hora em que o aplicativo foi registrado. O tipo DateTimeOffset representa informações de data e hora usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite UTC em 1º de janeiro de 2014 é `2014-01-01T00:00:00Z`. Somente leitura. <br><br> Suporta `$filter` (`eq`, `ne`, `not`, `ge`, `le`, `in`, e `eq` em `null` valores) e `$orderBy`. |
 |defaultRedirectUri|String|O URI de redirecionamento padrão. Se especificado e não houver nenhum URI de redirecionamento explícito na solicitação de entrada para fluxos SAML e OIDC, o Azure AD enviará o token para esse URI de redirecionamento. O Azure AD também envia o token para esse URI padrão no logon único iniciado pelo IdP do SAML. O valor deve corresponder a um dos URIs de redirecionamento configurados para o aplicativo.|
 | deletedDateTime | DateTimeOffset | A data e a hora em que o aplicativo foi excluído. O tipo DateTimeOffset representa informações de data e hora usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite UTC em 1º de janeiro de 2014 é `2014-01-01T00:00:00Z`. Somente leitura. |
-| description | Cadeia de caracteres | Campo de texto livre para fornecer uma descrição do objeto de aplicativo aos usuários finais. O tamanho máximo permitido é de 1.024 caracteres. <br><br>Devolvido por padrão. Suporta `$filter` (`eq`, `ne`, `not`, `ge`, `le`, `startsWith`) e `$search`. |
+| description | Cadeia de caracteres | Campo de texto livre para fornecer uma descrição do objeto de aplicativo aos usuários finais. O tamanho máximo permitido é de 1.024 caracteres. <br><br>Retornado por padrão. Suporta `$filter` (`eq`, `ne`, `not`, `ge`, `le`, `startsWith`) e `$search`. |
 | disabledByMicrosoftStatus | Cadeia de caracteres | Especifica se a Microsoft desabilitou o aplicativo registrado. Os valores possíveis são: `null`(valor padrão), `NotDisabled` e (os motivos podem incluir atividades suspeitas, abusivas ou mal-intencionadas ou uma violação do `DisabledDueToViolationOfServicesAgreement` Contrato de Serviços Microsoft). <br><br> Suporta `$filter` (`eq`, `ne`, `not`). |
 | displayName | String | O nome de exibição do aplicativo. Suporta `$filter` (`eq`, `ne`, `not`, `ge`, `le`, `in`, `startsWith`, e `eq` em `null` valores), `$search`, e `$orderBy`. |
 | groupMembershipClaims | Cadeia de caracteres | Configura a declaração `groups` emitida em um usuário ou token de acesso OAuth 2.0 que o aplicativo espera. Para definir esse atributo, use um dos seguintes valores de cadeia de caracteres: `None`, (para grupos de segurança e funções do `SecurityGroup` Azure AD), (isso obtém todos os grupos de segurança, grupos de distribuição e funções de diretório do Azure AD dos qual o usuário conectado é `All` membro). |
@@ -111,10 +112,11 @@ Esse recurso tem suporte para o uso da [consulta delta](/graph/delta-query-overv
 | signInAudience | Cadeia de caracteres | Especifique quais contas Microsoft têm suporte para o aplicativo atual. Os valores possíveis são: `AzureADMyOrg`, `AzureADMultipleOrgs`, `AzureADandPersonalMicrosoftAccount` (padrão) e `PersonalMicrosoftAccount`. Confira mais na [tabela abaixo](#signinaudience-values). <br><br>Suporta `$filter` (`eq`, `ne`, `not`).|
 | spa                     | [spaApplication](../resources/spaapplication.md)                            | Especifica as configurações de um aplicativo de página simples, incluindo URLs de saída e de redirecionamento de URIs para os códigos de autorização e tokens de acesso. |
 | categorias |Coleção String| Cadeias de caracteres personalizadas que podem ser usadas para categorizar e identificar o aplicativo. Não anulada.<br><br>Suporta `$filter` (`eq`, `not`, `ge`, `le`, `startsWith`).|
-| tokenEncryptionKeyId |GUID|Especifica a keyId de uma chave pública da coleção keyCredentials. Quando configurado, o Azure AD criptografa todos os tokens emitidos usando a chave para a qual essa propriedade aponta. O código de aplicativo que recebe o token criptografado deve usar a chave privada correspondente para descriptografar o token a fim de que ele possa ser usado para o usuário conectado.|
-| verifiedPublisher          | [verifiedPublisher](verifiedPublisher.md)                            | Especifica o fornecedor verificado para o aplicativo. Para obter mais informações sobre como a verificação do editor ajuda a dar suporte à segurança, confiabilidade e conformidade do aplicativo, confira [verificação do Publisher](/azure/active-directory/develop/publisher-verification-overview).|
+| tokenEncryptionKeyId |Guid|Especifica a keyId de uma chave pública da coleção keyCredentials. Quando configurado, o Azure AD criptografa todos os tokens emitidos usando a chave para a qual essa propriedade aponta. O código de aplicativo que recebe o token criptografado deve usar a chave privada correspondente para descriptografar o token a fim de que ele possa ser usado para o usuário conectado.|
+| verifiedPublisher          | [verifiedPublisher](verifiedPublisher.md)                            | Especifica o editor verificado do aplicativo. Para obter mais informações sobre como a verificação do editor ajuda a dar suporte à segurança, confiabilidade e conformidade do aplicativo, consulte [Verificação do Publisher](/azure/active-directory/develop/publisher-verification-overview).|
 | Nome único | Cadeia de caracteres | O identificador exclusivo que pode ser atribuído a um aplicativo como um identificador alternativo. Imutável. Somente leitura. |
 | web |[webApplication](webapplication.md)| Especifica configurações para um aplicativo Web. |
+| windows |[windowsApplication](windowsapplication.md)| Especifica as configurações dos aplicativos que executam o Microsoft Windows e publicados no Microsoft Store ou no armazenamento de jogos do Xbox.|
 
 ### <a name="signinaudience-values"></a>signInAudience values
 
@@ -134,7 +136,7 @@ Esse recurso tem suporte para o uso da [consulta delta](/graph/delta-query-overv
 |connectorGroup|[connectorGroup](connectorgroup.md)| O conectorGrupo que o aplicativo está usando com o Proxy de Aplicativo do Microsoft Azure Active Directory. Anulável.|
 |createdOnBehalfOf|[directoryObject](directoryobject.md)| Somente leitura.|
 |extensionProperties|Coleção [extensionProperty](extensionproperty.md)| Somente leitura. Anulável.|
-|federatedIdentityCredentials|Coleção [federatedIdentityCredential](federatedidentitycredential.md) |Identidades federadas para aplicativos. Esse objeto só pode ser recuperado em uma única solicitação GET (`GET /applications/{id}/federatedIdentityCredentials`).|
+|federatedIdentityCredentials|Coleção [federatedIdentityCredential](federatedidentitycredential.md) |Identidades federadas dos aplicativos. Esse objeto só pode ser recuperado em uma única solicitação do GET (`GET /applications/{id}/federatedIdentityCredentials`).|
 |onlineMeetings  |Coleção [onlineMeeting](onlinemeeting.md)|Somente leitura. Anulável.|
 |owners|Coleção [directoryObject](directoryobject.md)|Objetos de diretório que são proprietários do aplicativo. Somente leitura. Nullable. Dá `$expand`.|
 |tokenLifetimePolicies|Conjunto [tokenLifetimePolicy](tokenLifetimePolicy.md)|O tokenLifetimePolicies atribuído a este aplicativo. Dá `$expand`.|
@@ -187,7 +189,8 @@ Veja a seguir uma representação JSON do recurso.
   "tokenEncryptionKeyId": "String",
   "uniqueName": "String",
   "verifiedPublisher": {"@odata.type": "microsoft.graph.verifiedPublisher"},
-  "web": {"@odata.type": "microsoft.graph.webApplication"}
+  "web": {"@odata.type": "microsoft.graph.webApplication"},
+  "windows": {"@odata.type": "microsoft.graph.windowsApplication"}
 }
 ```
 

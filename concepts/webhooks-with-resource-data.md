@@ -4,12 +4,12 @@ description: O Microsoft Graph usa um mecanismo de webhook para fornecer notific
 author: Jumaodhiss
 ms.prod: non-product-specific
 ms.localizationpriority: high
-ms.openlocfilehash: d13db88f179bbce58a6d45fa567b507199fa95f8
-ms.sourcegitcommit: 77d2ab5018371f153d47cc1cd25f9dcbaca28a95
+ms.openlocfilehash: 3cb94fcc4ba55447646e31635a0e9a68a9b8d1a2
+ms.sourcegitcommit: efa06c63cd3154bcc7ecc993011f314c2dea9a92
 ms.translationtype: HT
 ms.contentlocale: pt-BR
 ms.lasthandoff: 03/08/2022
-ms.locfileid: "63337058"
+ms.locfileid: "63368179"
 ---
 # <a name="set-up-change-notifications-that-include-resource-data"></a>Configurar notificações de alteração que incluam dados de recurso
 
@@ -32,7 +32,7 @@ Geralmente, esse tipo de notificação de alteração inclui os seguintes dados 
 
 ## <a name="supported-resources"></a>Recursos com suporte
 
-Os recursos do Microsoft Teams [chatMessage](/graph/api/resources/chatmessage) e [presença](/graph/api/resources/presence)suportam notificações de alteração com dados de recursos. Os [outlook](/graph/api/resources/contact.md), [eventos](/graph/api/resources/event.md), [mensagem](/graph/api/resources/message.md) recursos têm suporte semelhante _na visualização_. Especificamente, você pode configurar uma assinatura para os casos de uso listados abaixo.
+Os recursos do Microsoft Teams [chatMessage](/graph/api/resources/chatmessage), [onlineMeetings](/graph/api/resources/onlinemeeting)e [presença](/graph/api/resources/presence) dão suporte a notificações de alteração com dados de recurso. Os recursos [contatos](/graph/api/resources/contact.md), [eventos](/graph/api/resources/event.md) e [mensagem](/graph/api/resources/message.md) do Outlook têm suporte semelhante _na visualização_. Especificamente, você pode configurar uma assinatura para os casos de uso a seguir.
 
 Disponível nos pontos de extremidade v1.0 e beta:
 - Mensagens novas ou alteradas em um canal específico do Teams: `/teams/{id}/channels/{id}/messages`
@@ -47,12 +47,13 @@ Disponível apenas no ponto de extremidade beta:
 - Eventos novos ou alterados na caixa de correio de um usuário: `/users/{id}/events`
 - Mensagens novas ou alteradas na caixa de correio de um usuário: `/users/{id}/messages`
 - Mensagens novas ou alteradas na mailFolder de um usuário: `/users/{id}/mailFolders/{id}/messages`
+- Atualizações de informações de status da Reunião do Microsoft Teams: `/communications/onlineMeetings/{meeting-id}`
 
-As notificações de alteração que incluem **chatMessage** ou dados de recursos de **presença** consistem em todas as propriedades da instância alterada. Eles não dão suporte ao retorno apenas das propriedades selecionadas da instância. 
+As notificações de alteração que incluem dados de recursos **chatMessage**, **onlineMeeting** ou **presença** consistem de todas as propriedades da instância alterada. Eles não dão suporte ao retorno apenas das propriedades selecionadas da instância. 
 
 As notificações de alteração para os recursos **contato**, **evento**, ou de **mensagem** incluem apenas um subconjunto de propriedades para o recurso, que deve ser especificado na solicitação de assinatura correspondente usando um parâmetro de consulta `$select`. Para obter mais informações e um exemplo de assinatura para alterar notificações com dados de recurso para o recurso de **mensagem**, consulte [Alterar notificações para Outlook recursos no Microsoft Graph](outlook-change-notifications-overview.md). 
 
-O restante deste artigo explica um exemplo para assinar notificações de alteração para recursos **chatMessage** em um canal do Teams, com cada notificação de alteração, incluindo os dados completos de recursos da instância **chatMessage** alterada. Para obter mais detalhes sobre assinaturas baseadas em **chatMessage**, confira [Obter notificações de alteração para mensagens de chat e canal](teams-changenotifications-chatmessage.md).
+O restante deste artigo apresenta um exemplo para assinar notificações de alteração para recursos **chatMessage** em um canal do Microsoft Teams, com cada notificação de alteração, incluindo os dados completos de recursos da instância alterada **chatMessage**. Para obter mais detalhes sobre assinaturas **chatMessage**, consulte [Obter notificações de alteração para mensagens de chat e canal](teams-changenotifications-chatmessage.md).
 
 ## <a name="creating-a-subscription"></a>Criar uma assinatura
 

@@ -3,12 +3,12 @@ title: Práticas recomendadas para trabalhar com o Microsoft Graph
 description: Este artigo descreve as práticas recomendadas que você pode aplicar para ajudar seus aplicativos a tirar o máximo proveito do Microsoft Graph, caso isso envolva saber mais sobre o Microsoft Graph, melhorar o desempenho do aplicativo ou tornar seu aplicativo mais confiável para os usuários finais.
 ms.localizationpriority: high
 ms.custom: graphiamtop20
-ms.openlocfilehash: 1395bca7e84156e1e7eea640387c2167c147fbc3
-ms.sourcegitcommit: c7ff992ef63e480d070421ba99b28ee129cb6acb
+ms.openlocfilehash: 0d80e6c0f2458ab6a7880e2276bf895d8b6ec52e
+ms.sourcegitcommit: 77d2ab5018371f153d47cc1cd25f9dcbaca28a95
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "60688104"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63336232"
 ---
 # <a name="best-practices-for-working-with-microsoft-graph"></a>Práticas recomendadas para trabalhar com o Microsoft Graph
 
@@ -22,7 +22,7 @@ Experimente novas APIs antes de integrá-las em seu aplicativo.
 
 ## <a name="authentication"></a>Autenticação
 
-Para acessar os dados no Microsoft Graph, seu aplicativo precisará adquirir um token de acesso do OAuth 2.0 e apresentá-lo ao Microsoft Graph em um dos itens a seguir:
+Para acessar dados por meio do Microsoft Graph, seu aplicativo precisará adquirir um token de acesso OAuth 2.0 e apresentá-lo ao Microsoft Graph em uma das seguintes opções:
 
 - O cabeçalho de solicitação HTTP *Authorization*, como um token de *Portador*
 - O construtor do cliente gráfico ao usar uma biblioteca de cliente do Microsoft Graph
@@ -33,22 +33,23 @@ Use a API da Biblioteca de Autenticação Microsoft, [MSAL](/azure/active-direct
 
 Aplique as seguintes práticas recomendadas de consentimento e autorização ao aplicativo:
 
-- **Use privilégios mínimos**. Apenas solicite permissões absolutamente necessárias e somente quando você precisar delas. Para as APIs que o aplicativo chama, verifique a seção de permissões nos tópicos do método (por exemplo, confira [como criar um usuário](/graph/api/user-post-users) e escolha as permissões com menos privilégios. Uma ver uma lista completa de permissões, confira [referência de permissões](permissions-reference.md).
+- **Aplicar privilégios mínimos**. Conceda aos usuários e aplicativos apenas a permissão com privilégios mínimos necessário para chamar a API. Verifique a seção de permissões nos tópicos do método (por exemplo, confira [criando um usuário](/graph/api/user-post-users)) e escolha as permissões com privilégios mínimos. Por exemplo, se o aplicativo ler apenas o perfil do usuário conectado no momento, conceda *User.Read* em vez de *User.ReadBasic.All*. Se um aplicativo não ler o calendário do usuário, não conceda a permissão *Calendars.Read*. Uma ver uma lista completa de permissões, confira [referência de permissões](permissions-reference.md).
 
-- **Use o tipo de permissão correto com base nos cenários**. Se você estiver criando um aplicativo interativo no qual um usuário conectado está presente, seu aplicativo deverá usar permissões *delegadas* nas quais o aplicativo recebe permissão de atuar como um usuário conectado ao fazer chamadas para o Microsoft Graph. Se, no entanto, seu aplicativo for executado sem um usuário conectado, como um serviço em segundo plano ou um daemon, seu aplicativo deverá usar permissões de aplicativo.
+- **Use o tipo de permissão correto com base nos cenários**. Evite usar tanto o aplicativo quanto as permissões delegadas no mesmo aplicativo. Se você estiver criando um aplicativo interativo em que um usuário conectado esteja presente, seu aplicativo deverá usar as *permissões delegadas*. Se, no entanto, seu aplicativo for executado sem um usuário conectado, como um serviço ou daemon em segundo plano, seu aplicativo deverá usar as *permissões de aplicativo*.
 
-    >**Observação:** o uso de permissões de aplicativo para cenários interativos pode colocar a conformidade e a segurança de seu aplicativo em risco. Isso pode elevar inadvertidamente os privilégios de um usuário para acessar dados, contornando as políticas configuradas por um administrador.
-<!-- LG: Use a more clear lead-in here, like "Consider the end user and admin experience"? -->
+  > [!CAUTION]
+  > O uso de permissões de aplicativo em cenários interativos pode colocar seu aplicativo em risco de conformidade e segurança. Ele pode elevar inadvertidamente os privilégios de um usuário para acessar dados, ignorando as políticas configuradas por um administrador.
+
 - **Esteja atento ao configurar seu aplicativo**. Isso afetará diretamente as experiências do usuário final e do administrador, além da adoção e segurança do aplicativo. Por exemplo:
 
-  - A declaração de privacidade, os termos de uso, o nome, o logotipo e o domínio do seu aplicativo serão exibidos com consentimento e outras experiências. Portanto, verifique se foram configurados com cuidado para que sejam compreendidos pelos usuários finais.
+  - O nome, logotipo, domínio, status de verificação do editor, declaração de privacidade e termos de uso do seu aplicativo aparecerão no consentimento e em outras experiências. Defina essas configurações com cuidado para que sejam compreendidas pelos usuários finais.
   - Leve em consideração quem consentirá com seu aplicativo, seja o usuário final ou administrador, e configure seu aplicativo para [solicitar permissões de forma adequada](/azure/active-directory/develop/active-directory-v2-scopes).
-  - Verifique se você entende a diferença entre [consentimento estático, dinâmico e incremental](/azure/active-directory/develop/v2-permissions-and-consent#consent-types).
+  - Certifique-se de entender a diferença entre [consentimento estático, dinâmico e incremental](/azure/active-directory/develop/v2-permissions-and-consent#consent-types).
 
 - **Considere aplicativos multilocatário**. Tenha em mente que os clientes podem ter vários controles de aplicativo e consentimentos em diferentes estados. Por exemplo:
 
   - os administradores de locatários podem desabilitar a capacidade dos usuários finais permitirem os aplicativos. Nesse caso, um administrador precisaria consentir em nome de seus usuários.
-  - Os administradores de locatários podem definir políticas de autorização personalizadas, como impedir que os usuários leiam perfis de outros usuários ou limitar a criação de grupos de autoatendimento a um conjunto limitado de usuários. Nesse caso, seu aplicativo deve esperar que a resposta de erro 403 seja tratada ao atuar em nome de um usuário.
+  - Os administradores de locatários podem definir políticas de autorização personalizadas, como impedir que os usuários leiam perfis de outros usuários ou limitar a criação de grupos de autoatendimento a um conjunto limitado de usuários. Nesse caso, seu aplicativo deve esperar lidar com a resposta de erro `403 Forbidden` ao agir em nome de um usuário.
 
 ## <a name="handle-responses-effectively"></a>Controlar as respostas com eficiência
 
@@ -56,7 +57,7 @@ Dependendo das solicitações feitas ao Microsoft Graph, seus aplicativos devem 
 
 ### <a name="pagination"></a>Paginação
 
-Ao consultar um conjunto de recursos, você deve esperar que o Microsoft Graph retorne o conjunto de resultados em várias páginas devido aos limites de tamanho de página do lado do servidor. Quando um conjunto de resultados se estende por várias páginas, o Microsoft Graph retorna uma propriedade `@odata.nextLink` na resposta que contém uma URL para a próxima página de resultados.
+Ao consultar uma coleção de recursos, você deve esperar que o Microsoft Graph retorne o conjunto de resultados em várias páginas, devido aos limites de tamanho da página do lado do servidor. Quando um conjunto de resultados se estende por várias páginas, o Microsoft Graph retorna uma propriedade `@odata.nextLink` na resposta que contém uma URL para a próxima página de resultados.
 
 Por exemplo, listar as mensagens de usuários conectados:
 
