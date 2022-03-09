@@ -2,15 +2,15 @@
 author: JeremyKelley
 title: Remover item do pacote
 description: Remover item de um pacote de driveItems
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: sharepoint
 doc_type: apiPageType
-ms.openlocfilehash: edd7647be648b5eda1560157d35c6a7b2d4aa130
-ms.sourcegitcommit: 5b0aab5422e0619ce8806664c479479d223129ec
+ms.openlocfilehash: 1a84ceeee22736c7ac02fa50403523734fe2e65b
+ms.sourcegitcommit: dfa87904fb26dd5161f604f2716ce1d90dad31ed
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/14/2021
-ms.locfileid: "50774359"
+ms.lasthandoff: 03/09/2022
+ms.locfileid: "63395185"
 ---
 # <a name="remove-item-from-bundle"></a>Remover item do pacote
 
@@ -18,7 +18,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Remover um item de um [pacote][].
+Remova um item de um [pacote][].
 
 ## <a name="permissions"></a>Permissões
 
@@ -48,7 +48,7 @@ Não forneça um corpo de solicitação com esse método.
 
 ## <a name="response"></a>Resposta
 
-Se tiver êxito, a resposta será `204 No Content` .
+Se tiver êxito, a resposta será `204 No Content`.
 
 Leia o tópico [Respostas de erro][error-response] para obter mais informações sobre como os erros são retornados.
 
@@ -79,6 +79,10 @@ DELETE https://graph.microsoft.com/beta/drive/bundles/{bundle-id}/children/{item
 [!INCLUDE [sample-code](../includes/snippets/java/remove-from-bundle-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# <a name="go"></a>[Ir](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/remove-from-bundle-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 
@@ -91,14 +95,14 @@ HTTP/1.1 204 No Content
 ```
 
 
-[pacote]: ../resources/bundle.md
+[bundle]: ../resources/bundle.md
 [error-response]: /graph/errors
 
 <!-- {
   "type": "#page.annotation",
   "description": "Remove an item from a bundle.",
   "keywords": "",
-  "section": "documentation"
+  "section&quot;: &quot;documentation"
 } -->
 
 

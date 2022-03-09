@@ -5,12 +5,12 @@ description: Siga o site/sites de um usuário.
 ms.localizationpriority: medium
 ms.prod: sharepoint
 doc_type: apiPageType
-ms.openlocfilehash: 89822d1050f0cb1a492927f07caa8ff8f1667bef
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: fb65815ef073e6b3e300e170e7ede813394aecbf
+ms.sourcegitcommit: dfa87904fb26dd5161f604f2716ce1d90dad31ed
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59092228"
+ms.lasthandoff: 03/09/2022
+ms.locfileid: "63396907"
 ---
 # <a name="follow-site"></a>Seguir site 
 
@@ -49,7 +49,7 @@ No corpo da solicitação, fornece uma matriz de objetos JSON com o parâmetro i
 ## <a name="response"></a>Resposta 
 
 * Se a solicitação for bem-sucedida, este método retornará uma matriz de sites que foram seguidos.  
-* Se ocorrer um erro ao seguir qualquer um dos sites especificados, este método retornará um código de status e o corpo da resposta conterá uma matriz de entradas contendo objetos de erro e siteIds indicando quais sites não puderam ser `207` seguidos. [](/graph/errors)
+* Se ocorrer um erro ao seguir qualquer um dos sites especificados, `207` este método retornará um código de status e o corpo da resposta conterá uma matriz de entradas [](/graph/errors) contendo objetos de erro e siteIds indicando quais sites não puderam ser seguidos.
 
 ## <a name="example"></a>Exemplo
 
@@ -91,6 +91,10 @@ Content-Type: application/json
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/follow-site-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[Ir](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/follow-site-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 doc_type: apiPageType
 ms.prod: governance
 author: markwahl-msft
-ms.openlocfilehash: a61b606288b7bd184a74fa115b2061d98c12b223
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: 0aaa99de12963528a5b0dc08c8556c5d632f4d30
+ms.sourcegitcommit: de9df4bf6313b49afba74b6e9ef819907669c662
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62089514"
+ms.lasthandoff: 01/27/2022
+ms.locfileid: "63398027"
 ---
 # <a name="update-program"></a>Atualizar programa
 
@@ -18,14 +18,16 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
+[!INCLUDE [accessreviews-disclaimer](../../includes/accessreviews-disclaimer.md)]
+
 No recurso de [revisões](../resources/accessreviews-root.md) de acesso do Azure AD, atualize um objeto [de programa](../resources/program.md) existente.
 ## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão                        | Permissões (da com menos para a com mais privilégios)              |
 |:--------------------------------------|:---------------------------------------------------------|
-|Delegado (conta corporativa ou de estudante)     | ProgramControl.ReadWrite.All   |
-|Delegado (conta pessoal da Microsoft) | Sem suporte. |
+|Delegada (conta corporativa ou de estudante)     | ProgramControl.ReadWrite.All   |
+|Delegada (conta pessoal da Microsoft) | Sem suporte. |
 |Aplicativo                            | Sem suporte. |
 
 O usuário inscreveu também deve estar em uma função de diretório que permita que ele atualize um programa.
@@ -41,7 +43,7 @@ PATCH /programs/{programId}
 | Autorização | string | \{token\} de portador. Obrigatório. |
 
 ## <a name="request-body"></a>Corpo da solicitação
-No corpo da solicitação, fornece uma representação JSON de um [objeto program.](../resources/program.md)
+No corpo da solicitação, fornece uma representação JSON de um [objeto program](../resources/program.md) .
 
 A tabela a seguir mostra as propriedades que podem ser fornecidas quando você atualiza um programa.
 
@@ -52,7 +54,7 @@ A tabela a seguir mostra as propriedades que podem ser fornecidas quando você a
 
 
 ## <a name="response"></a>Resposta
-Se tiver êxito, este método retornará `204, Accepted` um código de resposta e um objeto [program](../resources/program.md) no corpo da resposta.
+Se tiver êxito, este método retornará um `204, Accepted` código de resposta [e um objeto program](../resources/program.md) no corpo da resposta.
 
 ## <a name="example"></a>Exemplo
 ##### <a name="request"></a>Solicitação

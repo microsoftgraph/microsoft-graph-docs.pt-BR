@@ -1,26 +1,26 @@
 ---
 title: Tipo de recurso rbacApplication
-description: Contêiner para definições de função e atribuições de função Microsoft 365 provedores de controle de acesso baseado em função (RBAC)
+description: Contêiner para definições de função e atribuições de função para Microsoft 365 RBAC (controle de acesso baseado em função)
 ms.localizationpriority: medium
 author: abhijeetsinha
 ms.prod: directory-management
 doc_type: resourcePageType
-ms.openlocfilehash: eeb36364691fb31f30bde2313598b62ab06f950f
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 294bf357465002a180549e5654fbfd7f2baabac6
+ms.sourcegitcommit: dfa87904fb26dd5161f604f2716ce1d90dad31ed
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59148497"
+ms.lasthandoff: 03/09/2022
+ms.locfileid: "63393470"
 ---
 # <a name="rbacapplication-resource-type"></a>Tipo de recurso rbacApplication
 
 Namespace: microsoft.graph
 
-Contêiner de gerenciamento de função para definições unificadas de função e atribuições de função Microsoft 365 provedores de controle de acesso baseado em função (RBAC). As atribuições de função suportam apenas uma única entidade e um único escopo. Atualmente, **o diretório** é o único provedor RBAC com suporte.
+Contêiner de gerenciamento de função para definições unificadas de função e atribuições de função Microsoft 365 provedores de controle de acesso baseado em função (RBAC). As atribuições de função suportam apenas uma única entidade e um único escopo. Atualmente, **o diretório** **e o direitoManagement** são os dois provedores RBAC suportados.
 
-## <a name="methods"></a>Métodos
+## <a name="methods"></a>Methods
 
-Nenhum(a)
+Nenhum
 
 ## <a name="properties"></a>Propriedades
 

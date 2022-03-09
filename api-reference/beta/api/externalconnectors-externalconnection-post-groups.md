@@ -2,15 +2,15 @@
 title: Criar externalGroup
 description: Crie um novo objeto externalGroup.
 author: snlraju-msft
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: search
 doc_type: apiPageType
-ms.openlocfilehash: 4bd53a81d0efb6e36945cd18d395b7662adb4c74
-ms.sourcegitcommit: 6efd9df497d795988cd85474f379d1989b0995b7
+ms.openlocfilehash: c558a0452984ee67a5adb92269af6e40c80d39e5
+ms.sourcegitcommit: dfa87904fb26dd5161f604f2716ce1d90dad31ed
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/30/2021
-ms.locfileid: "58697391"
+ms.lasthandoff: 03/09/2022
+ms.locfileid: "63394828"
 ---
 # <a name="create-externalgroup"></a>Criar externalGroup
 
@@ -18,7 +18,7 @@ Namespace: microsoft.graph.externalConnectors
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Crie um novo [objeto externalGroup.](../resources/externalconnectors-externalgroup.md)
+Crie um novo [objeto externalGroup](../resources/externalconnectors-externalgroup.md) .
 
 ## <a name="permissions"></a>Permissões
 
@@ -50,19 +50,19 @@ POST /external/connections/{connectionId}/groups
 
 ## <a name="request-body"></a>Corpo da solicitação
 
-No corpo da solicitação, fornece uma representação JSON do **objeto externalGroup.**
+No corpo da solicitação, fornece uma representação JSON do **objeto externalGroup** .
 
-Você pode especificar as seguintes propriedades ao criar **um externalGroup**.
+Você pode especificar as seguintes propriedades ao criar um **externalGroup**.
 
 | Propriedade    | Tipo   | Descrição                                                                                                              |
 |:------------|:-------|:-------------------------------------------------------------------------------------------------------------------------|
 | id          | Cadeia de caracteres | A ID exclusiva do grupo externo dentro de uma conexão. Ele deve ser alfanumérico e pode ter até 128 caracteres. |
 | displayName | Cadeia de caracteres | O nome amigável do grupo externo. Opcional.                                                                      |
-| descrição | Cadeia de caracteres | A descrição do grupo externo. Opcional.                                                                         |
+| description | Cadeia de caracteres | A descrição do grupo externo. Opcional.                                                                         |
 
 ## <a name="response"></a>Resposta
 
-Se tiver êxito, este método retornará um código `201 Created` de resposta e um objeto **externalGroup** no corpo da resposta.
+Se tiver êxito, este método retornará um `201 Created` código de resposta e um **objeto externalGroup** no corpo da resposta.
 
 ## <a name="examples"></a>Exemplos
 
@@ -100,6 +100,10 @@ Content-Type: application/json
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/create-externalgroup-from-connection-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[Ir](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/create-externalgroup-from-connection-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

@@ -5,25 +5,25 @@ author: mecampos
 ms.localizationpriority: medium
 ms.prod: search
 doc_type: apiPageType
-ms.openlocfilehash: 4d6b334dbe9911a12ef92e52e7a18b68be6dabff
-ms.sourcegitcommit: 3e2239e60b6dc53997b7d4356a20fc3d365d6238
+ms.openlocfilehash: d473b69481916a07afce30c7d401fc12ab826096
+ms.sourcegitcommit: dfa87904fb26dd5161f604f2716ce1d90dad31ed
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/02/2021
-ms.locfileid: "61266219"
+ms.lasthandoff: 03/09/2022
+ms.locfileid: "63394009"
 ---
 # <a name="get-schema"></a>Obter esquema
 Namespace: microsoft.graph.externalConnectors
 
-Leia as propriedades e as relações de um [objeto de esquema.](../resources/externalconnectors-schema.md)
+Leia as propriedades e as relações de um [objeto de esquema](../resources/externalconnectors-schema.md) .
 
 ## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão|Permissões (da com menos para a com mais privilégios)|
 |:---|:---|
-|Delegado (conta corporativa ou de estudante)|Não aplicável|
-|Delegado (conta pessoal da Microsoft)|Não aplicável|
+|Delegada (conta corporativa ou de estudante)|Não aplicável|
+|Delegada (conta pessoal da Microsoft)|Não aplicável|
 |Aplicativo| ExternalConnection.ReadWrite.OwnedBy|
 
 ## <a name="http-request"></a>Solicitação HTTP
@@ -38,7 +38,7 @@ GET /external/connections/{connectionsId}/schema
 
 ## <a name="optional-query-parameters"></a>Parâmetros de consulta opcionais
 
-Este método não dá suporte a [parâmetros de](/graph/query-parameters) consulta OData para personalizar a resposta.
+Este método não dá suporte a [parâmetros de consulta OData](/graph/query-parameters) para personalizar a resposta.
 
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
 |Nome|Descrição|
@@ -50,7 +50,7 @@ Não forneça um corpo de solicitação para esse método.
 
 ## <a name="response"></a>Resposta
 
-Se tiver êxito, este método retornará um código de resposta e um objeto `200 OK` [de esquema](../resources/externalconnectors-schema.md) no corpo da resposta.
+Se tiver êxito, este método retornará um `200 OK` código de resposta e um objeto [de esquema](../resources/externalconnectors-schema.md) no corpo da resposta.
 
 ## <a name="examples"></a>Exemplos
 
@@ -81,6 +81,10 @@ GET https://graph.microsoft.com/v1.0/external/connections/contosohr/schema
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/get-schema-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[Ir](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/get-schema-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

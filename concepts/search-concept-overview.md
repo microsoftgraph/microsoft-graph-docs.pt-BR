@@ -5,12 +5,12 @@ ms.localizationpriority: high
 ms.prod: search
 author: snlraju-msft
 scenarios: getting-started
-ms.openlocfilehash: 8cf6fd78cdb56523c92bc1d67e69bd0e87b999b4
-ms.sourcegitcommit: 94dc71a6d4fbdc46f2681a1add13416bc9b4a6e9
+ms.openlocfilehash: 5e50b61d2989f01eefd61d1d318da174c9a53421
+ms.sourcegitcommit: 77d2ab5018371f153d47cc1cd25f9dcbaca28a95
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/05/2021
-ms.locfileid: "60115232"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63336211"
 ---
 # <a name="overview-of-the-microsoft-search-api-in-microsoft-graph"></a>Visão geral da API da Pesquisa da Microsoft no Microsoft Graph
 
@@ -41,6 +41,7 @@ A API de pesquisa da Microsoft suporta para pesquisar o seguinte conteúdo na nu
 - Arquivos e pastas do SharePoint e OneDrive (recursos [driveItem](/graph/api/resources/driveitem)), [lista](/graph/api/resources/list), [listItem](/graph/api/resources/listitem), [site](/graph/api/resources/site) e recursos de [unidade](/graph/api/resources/drive).
 - Recursos [pessoais](/graph/api/resources/person) em uma organização que são mais relevantes para um usuário.
 - Conteúdo ingerido por meio da plataforma de conectores do Microsoft Graph: recursos [externalItem](/graph/api/resources/externalitem?view=graph-rest-beta&preserve-view=true).
+- Recursos de resposta de pesquisa administrativa: [acrônimos](/graph/api/resources/search-acronym), [indicadores](/graph/api/resources/search-bookmark) e [recursos QnA](/graph/api/resources/search-qna).
 
 ## <a name="api-reference"></a>Referência da API
 
@@ -49,6 +50,7 @@ Está procurando a referência de API para esse serviço?
 - [Usar a API de Pesquisa da Microsoft para consultar dados](/graph/api/resources/search-api-overview?view=graph-rest-1.0&preserve-view=true)(v1.0)
 - [Usar a API de Pesquisa da Microsoft para consultar dados](/graph/api/resources/search-api-overview?view=graph-rest-beta&preserve-view=true)(pré-visualização)
 - [Usar a API de Pesquisa da Microsoft para indexar dados](/graph/api/resources/indexing-api-overview) (pré-visualização)
+- [Usar a API da Pesquisa da Microsoft para gerenciar as respostas de pesquisa administrativa](/graph/api/resources/search-api-answers-overview?view=graph-rest-beta&preserve-view=true) (versão prévia)
 
 ## <a name="next-steps"></a>Próximas etapas
 
@@ -61,15 +63,11 @@ Está procurando a referência de API para esse serviço?
   - [Pesquisar conteúdo no OneDrive e Microsoft Office SharePoint Online](search-concept-files.md)
   - [Pesquisar conteúdo externo](search-concept-custom-types.md)
   - [Pesquisar pessoa](search-concept-person.md) (visualização)
-  - [Classificar resultados de pesquisa](search-concept-sort.md) (pré-visualização)
-  - [Refinar resultados de pesquisa](search-concept-aggregation.md) (pré-visualização)
+  - [Gerenciar respostas de pesquisa administrativa](search-concept-answers.md) (versão prévia)
+  - [Gerenciar o layout dos resultados de pesquisa](search-concept-display-layout.md) (versão prévia)
+  - [Refinar resultados de pesquisa](search-concept-aggregation.md)
   - [Solicitar correção ortográfica](search-concept-speller.md) (versão prévia)
-  - [Layout de exibição de pesquisa](search-concept-display-layout.md) (versão prévia)
- 
-  
+  - [Classificar resultados de pesquisa](search-concept-sort.md)
 - Explore as APIs no [Explorador do Graph](https://developer.microsoft.com/graph/graph-explorer).
 - Baixe o [exemplo de conector de pesquisa](https://github.com/microsoftgraph/msgraph-search-connector-sample) no GitHub.
-
-## <a name="see-also"></a>Confira também
-
-- Envolva-se com a comunidade no [Microsoft Q&A](/answers/products/m365#microsoft-graph)  ou no GitHub
+- Interaja com a comunidade do [Microsoft Q&A](/answers/products/m365#microsoft-graph) ou no GitHub.

@@ -5,12 +5,12 @@ title: Lista as listas do SharePoint em um site
 ms.localizationpriority: medium
 ms.prod: sharepoint
 doc_type: apiPageType
-ms.openlocfilehash: 9c3d4f1f29ce44a9a59324885303bc486450b17c
-ms.sourcegitcommit: e4796212a2e8bbec61b6da8336f776c0305c49df
+ms.openlocfilehash: f7a88f770968c2970e66f462200f36d4fb1b3aab
+ms.sourcegitcommit: dfa87904fb26dd5161f604f2716ce1d90dad31ed
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/28/2022
-ms.locfileid: "62262167"
+ms.lasthandoff: 03/09/2022
+ms.locfileid: "63395661"
 ---
 # <a name="enumerate-lists-in-a-site"></a>Enumerar listas em um site
 
@@ -23,10 +23,6 @@ Obter a coleção de [listas][] de um [site][].
 Listas com a faceta [system][] estão ocultas por padrão.
 Para listá-los, inclua `system` na instrução `$select`.
 
-[listas]: ../resources/list.md
-[site]: ../resources/site.md
-[system]: ../resources/systemfacet.md
-
 ## <a name="permissions"></a>Permissões
 
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
@@ -34,7 +30,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
 |:--------------------|:---------------------------------------------------------|
 |Delegado (conta corporativa ou de estudante) | Sites.Read.All, Sites.ReadWrite.All    |
-|Delegado (conta pessoal da Microsoft) | Sem suporte.    |
+|Delegada (conta pessoal da Microsoft) | Sem suporte.    |
 |Aplicativo | Sites.Read.All, Sites.ReadWrite.All |
 
 ## <a name="http-request"></a>Solicitação HTTP
@@ -43,9 +39,25 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 GET /sites/{site-id}/lists
 ```
 
+## <a name="request-headers"></a>Cabeçalhos de solicitação
+
+| Nome          | Descrição               |
+| :------------ | :------------------------ |
+| Autorização | {token} de portador. Obrigatório. |
+
+## <a name="request-body"></a>Corpo da solicitação
+
+Não forneça um corpo de solicitação para esse método.
+
+## <a name="response"></a>Resposta
+
+Se tiver êxito, este método retornará um `200 OK` código de resposta e uma coleção de [objetos de][] lista no corpo da resposta. 
+
 ## <a name="example"></a>Exemplo
 
 ### <a name="request"></a>Solicitação
+
+Veja a seguir um exemplo de uma solicitação.
 
 
 # <a name="http"></a>[HTTP](#tab/http)
@@ -83,6 +95,8 @@ GET https://graph.microsoft.com/beta/sites/{site-id}/lists
 
 ### <a name="response"></a>Resposta
 
+Este é um exemplo de resposta.
+
 <!-- { "blockType": "response", "@type": "microsoft.graph.list", "isCollection": true, "truncated": true } -->
 
 ```http
@@ -114,6 +128,11 @@ Content-type: application/json
   ]
 }
 ```
+
+[lists]: ../resources/list.md
+[list]: ../resources/list.md
+[site]: ../resources/site.md
+[system]: ../resources/systemfacet.md
 
 <!--
 {

@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: snlraju-msft
 ms.prod: search
 doc_type: apiPageType
-ms.openlocfilehash: 09709899718d2823026b43dc67bc61065819aff5
-ms.sourcegitcommit: 3e2239e60b6dc53997b7d4356a20fc3d365d6238
+ms.openlocfilehash: 2d23fcfb568951e9797d76c2fc0080782ee5435b
+ms.sourcegitcommit: dfa87904fb26dd5161f604f2716ce1d90dad31ed
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/02/2021
-ms.locfileid: "61266149"
+ms.lasthandoff: 03/09/2022
+ms.locfileid: "63395038"
 ---
 # <a name="create-schema"></a>Criar esquema
 
@@ -18,7 +18,7 @@ Namespace: microsoft.graph.externalConnectors
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Crie o esquema para uma conexão Pesquisa da Microsoft [.](../resources/externalconnectors-externalconnection.md)
+Crie o esquema para uma conexão Pesquisa da Microsoft[.](../resources/externalconnectors-externalconnection.md)
 
 ## <a name="permissions"></a>Permissões
 
@@ -48,13 +48,13 @@ POST /external/connections/{id}/schema
 
 ## <a name="request-body"></a>Corpo da solicitação
 
-No corpo da solicitação, fornece uma representação JSON de um [objeto de esquema.](../resources/externalconnectors-schema.md)
+No corpo da solicitação, fornece uma representação JSON de um [objeto de esquema](../resources/externalconnectors-schema.md) .
 
-Quando você registra um esquema de item  personalizado, o objeto **de esquema** deve ter a **propriedade baseType** definida como e `microsoft.graph.externalItem` **deve** conter a **propriedade properties.** O **objeto properties** **deve** conter pelo menos uma propriedade, até um máximo de 128.
+Quando você registra um esquema de item personalizado, o objeto **de esquema** deve ter a **propriedade baseType** definida como `microsoft.graph.externalItem` e **deve** conter a **propriedade properties**. O **objeto properties** **deve** conter pelo menos uma propriedade, até um máximo de 128.
 
 ## <a name="response"></a>Resposta
 
-Se tiver êxito, este método retornará um código de resposta e uma URL no header de resposta que podem ser usados `202 Accepted` para obter o status da `Location` [operação.](../api/externalconnectors-connectionoperation-get.md)
+Se tiver êxito, este método retornará `202 Accepted` um código de resposta e uma URL `Location` no header de resposta que podem ser usados para [obter o status da operação](../api/externalconnectors-connectionoperation-get.md).
 
 ## <a name="examples"></a>Exemplos
 
@@ -117,6 +117,10 @@ Content-type: application/json
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/create-schema-from-connection-async-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[Ir](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/create-schema-from-connection-async-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

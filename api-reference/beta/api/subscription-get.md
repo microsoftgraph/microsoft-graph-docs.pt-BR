@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: Jumaodhiss
 doc_type: apiPageType
 ms.prod: change-notifications
-ms.openlocfilehash: 31a7d4e550308570dc95c5928536f9bce977e02f
-ms.sourcegitcommit: efa06c63cd3154bcc7ecc993011f314c2dea9a92
+ms.openlocfilehash: 3f14900318d75b132286b0bc34aebe20ab782c3c
+ms.sourcegitcommit: dfa87904fb26dd5161f604f2716ce1d90dad31ed
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63368004"
+ms.lasthandoff: 03/09/2022
+ms.locfileid: "63397999"
 ---
 # <a name="get-subscription"></a>Obter assinatura
 
@@ -60,7 +60,7 @@ Dependendo do recurso e do tipo de permissão (delegado ou aplicativo) solicitad
 |[teams](../resources/team.md) (/teams/{id}) | Team.ReadBasic.All, TeamSettings.Read.All | Incompatível | Team.ReadBasic.All, TeamSettings.Read.All |
 |[todoTask](../resources/todotask.md) | Tasks.ReadWrite | Tasks.ReadWrite | Incompatível |
 |[baseTask](../resources/basetask.md) | Tasks.ReadWrite | Tasks.ReadWrite | Incompatível |
-|[user](../resources/user.md) | User.Read.All | User.Read.All | User.Read.All |
+|[Usuário](../resources/user.md) | User.Read.All | User.Read.All | User.Read.All |
 
 > **Observação**: Permissões marcadas com * usam [consentimento específico de recurso](/microsoftteams/platform/graph-api/rsc/resource-specific-consent).
 
@@ -78,9 +78,9 @@ Você Outlook pode assinar as alterações nos recursos de **contato, evento** o
 
 [!INCLUDE [outlook-subscription-notes](../../includes/outlook-subscription-notes.md)]
 
-### <a name="presence"></a>presença
+### <a name="onlinemeetings-presence"></a>onlineMeetings, presença
 
-**assinaturas** de presença exigem [criptografia](/graph/webhooks-with-resource-data). A criação da assinatura falhará se [encryptionCertificate](../resources/subscription.md) não for especificado.
+**OnlineMeetings e assinaturas** de presença exigem [criptografia](/graph/webhooks-with-resource-data) para notificações com dados de recursos. A criação de assinatura falhará se [encryptionCertificate](../resources/subscription.md) e [encryptionCertificateId](../resources/subscription.md) não são especificados se os dados de recursos são desejados em notificações.
 
 ## <a name="http-request"></a>Solicitação HTTP
 

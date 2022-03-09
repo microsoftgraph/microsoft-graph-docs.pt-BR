@@ -5,26 +5,26 @@ author: snlraju-msft
 ms.localizationpriority: medium
 ms.prod: search
 doc_type: apiPageType
-ms.openlocfilehash: d5224481604e9fcdbe2ee0071c3cc8fea9d3f8d8
-ms.sourcegitcommit: 71186ad44d8d0df15e10b0f89df68d2ef0cf9d14
+ms.openlocfilehash: 15e8d1de626d0cb64806c3398c880a9b15a4b6b6
+ms.sourcegitcommit: dfa87904fb26dd5161f604f2716ce1d90dad31ed
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/12/2022
-ms.locfileid: "61792103"
+ms.lasthandoff: 03/09/2022
+ms.locfileid: "63393589"
 ---
 # <a name="create-externalitem"></a>Criar externalItem
 
 Namespace: microsoft.graph.externalConnectors
 
-Crie um novo [objeto externalItem.](../resources/externalconnectors-externalitem.md)
+Crie um novo [objeto externalItem](../resources/externalconnectors-externalitem.md) .
 
 ## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão|Permissões (da com menos para a com mais privilégios)|
 |:---|:---|
-|Delegado (conta corporativa ou de estudante)|Não aplicável|
-|Delegado (conta pessoal da Microsoft)|Não aplicável|
+|Delegada (conta corporativa ou de estudante)|Não aplicável|
+|Delegada (conta pessoal da Microsoft)|Não aplicável|
 |Aplicativo| ExternalItem.ReadWrite.OwnedBy, ExternalItem.ReadWrite.All |
 
 ## <a name="http-request"></a>Solicitação HTTP
@@ -44,13 +44,13 @@ PUT /external/connections/{connection-id}/items/{item-id}
 |Content-Type|application/json. Obrigatório.|
 
 ## <a name="request-body"></a>Corpo da solicitação
-No corpo da solicitação, fornece uma representação JSON do [objeto externalItem.](../resources/externalconnectors-externalitem.md)
+No corpo da solicitação, fornece uma representação JSON do [objeto externalItem](../resources/externalconnectors-externalitem.md) .
 
 Você pode especificar as seguintes propriedades ao criar [um externalItem](../resources/externalconnectors-externalitem.md).
 
 |Propriedade|Tipo| Descrição|
 |:---|:---|:---|
-|id|String|A ID do item. Obrigatório.|
+|id|Cadeia de caracteres|A ID do item. Obrigatório.|
 |properties|[microsoft.graph.externalConnectors.properties](../resources/externalconnectors-properties.md)|As propriedades do item. O `properties` objeto deve conter pelo menos uma propriedade. Todas `DateTime` as propriedades de tipo devem estar no formato ISO 8601. Obrigatório.|
 |conteúdo|[microsoft.graph.externalConnectors.externalItemContent](../resources/externalconnectors-externalitemcontent.md)|O conteúdo do item externo. Opcional.|
 |acl|[Coleção microsoft.graph.externalConnectors.acl](../resources/externalconnectors-acl.md)|A lista de controles de acesso. Obrigatório.|
@@ -75,7 +75,7 @@ As propriedades em um `externalItem` devem usar especificadores de tipo na carga
     ```
 
     > [!IMPORTANT]
-    > Ao incluir uma propriedade do tipo `Collection(DateTime)` , você deve usar o especificador de tipo `Collection(DateTimeOffset)` .
+    > Ao incluir uma propriedade do tipo `Collection(DateTime)`, você deve usar o especificador de tipo `Collection(DateTimeOffset)`.
 
 ## <a name="response"></a>Resposta 
 
@@ -133,6 +133,10 @@ Content-type: application/json
 
 # <a name="objective-c"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/create-externalitem-from-externalconnections-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[Ir](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/create-externalitem-from-externalconnections-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

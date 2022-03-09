@@ -5,19 +5,19 @@ author: sacampbe-msft
 ms.localizationpriority: medium
 ms.prod: search
 doc_type: apiPageType
-ms.openlocfilehash: 56ae5e53863e18146ec7eed101bd39d872916f07
-ms.sourcegitcommit: 0eb843a6f61f384bc28c0cce1ccb74f64bdb1fa6
+ms.openlocfilehash: d9079597be37d3b4c66400eaaadb42f69e01d72b
+ms.sourcegitcommit: dfa87904fb26dd5161f604f2716ce1d90dad31ed
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/23/2021
-ms.locfileid: "60559285"
+ms.lasthandoff: 03/09/2022
+ms.locfileid: "63393231"
 ---
 # <a name="create-externalgroup"></a>Criar externalGroup
 Namespace: microsoft.graph.externalConnectors
 
 
 
-Crie um novo [objeto externalGroup.](../resources/externalconnectors-externalgroup.md)
+Crie um novo [objeto externalGroup](../resources/externalconnectors-externalgroup.md) .
 
 ## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
@@ -46,9 +46,9 @@ POST /external/connections/{connectionsId}/groups
 | Content-Type  | application/json. Obrigatório. |
 
 ## <a name="request-body"></a>Corpo da solicitação
-No corpo da solicitação, fornece uma representação JSON do **objeto externalGroup.**
+No corpo da solicitação, fornece uma representação JSON do **objeto externalGroup** .
 
-Você pode especificar as seguintes propriedades ao criar **um externalGroup**.
+Você pode especificar as seguintes propriedades ao criar um **externalGroup**.
 
 | Propriedade    | Tipo   | Descrição                                                                                                              |
 |:------------|:-------|:-------------------------------------------------------------------------------------------------------------------------|
@@ -60,7 +60,7 @@ Você pode especificar as seguintes propriedades ao criar **um externalGroup**.
 
 ## <a name="response"></a>Resposta
 
-Se tiver êxito, este método retornará um código `201 Created` de resposta e um objeto **externalGroup** no corpo da resposta.
+Se tiver êxito, este método retornará um `201 Created` código de resposta e um **objeto externalGroup** no corpo da resposta.
 
 ## <a name="example"></a>Exemplo
 
@@ -98,6 +98,10 @@ Content-Type: application/json
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/create-externalgroup-from-connection-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[Ir](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/create-externalgroup-from-connection-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

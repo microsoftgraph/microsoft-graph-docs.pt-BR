@@ -5,16 +5,25 @@ ms.localizationpriority: medium
 ms.prod: non-product-specific
 author: MSGraphDocsvTeam
 doc_type: enumPageType
-ms.openlocfilehash: 0be72cacf043727e0a08a6524a0685ec99bce47a
-ms.sourcegitcommit: 77d2ab5018371f153d47cc1cd25f9dcbaca28a95
+ms.openlocfilehash: ed4b66b4fbaf281ed8be07d3d8cab7432402819b
+ms.sourcegitcommit: dfa87904fb26dd5161f604f2716ce1d90dad31ed
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63336946"
+ms.lasthandoff: 03/09/2022
+ms.locfileid: "63394513"
 ---
 # <a name="enum-values"></a>Valores denum
 
 Namespace: microsoft.graph
+
+### <a name="approvalfilterbycurrentuseroptions-values"></a>valores approvalFilterByCurrentUserOptions 
+
+|Member|
+|:---|
+|destino|
+|createdBy|
+|aprovador|
+|unknownFutureValue|
 
 ### <a name="accesspackageassignmentfilterbycurrentuseroptions-values"></a>valores accessPackageAssignmentFilterByCurrentUserOptions
 
@@ -910,7 +919,7 @@ Namespace: microsoft.graph
 | Automático
 | noPreview
 | checklist
-| descrição
+| description
 | referência
 
 
@@ -1323,7 +1332,7 @@ Valores possíveis para tipos de conta de usuário (associação ao grupo), por 
 
 | Membro | Valor | Descrição             |
 |:-------|:------|:------------------------|
-| email   | 1     | Ameaça de email.            |
+| Email   | 1     | Ameaça de email.            |
 | url    | 2     | Ameaça de URL.             |
 | file   | 3     | Ameaça de arquivo de anexo. |
 
@@ -1597,7 +1606,7 @@ Valores possíveis para tipos de conta de usuário (associação ao grupo), por 
 
 | Member                |
 |:----------------------|
-| cadeia de caracteres                |
+| string                |
 | booliano               |
 | int64                 |
 | stringCollection      |
@@ -1700,7 +1709,7 @@ Valores possíveis para tipos de conta de usuário (associação ao grupo), por 
 
 |Member|
 |:---|
-|team|
+|equipe|
 |channel|
 |chat|
 |unknownFutureValue|

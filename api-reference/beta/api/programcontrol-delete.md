@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 doc_type: apiPageType
 ms.prod: governance
 author: markwahl-msft
-ms.openlocfilehash: 40fe71bd2b0c1c9f400efbacae1c45525c804151
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: d593f6961b470874576e8ff266fabe85a9441723
+ms.sourcegitcommit: de9df4bf6313b49afba74b6e9ef819907669c662
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62135173"
+ms.lasthandoff: 01/27/2022
+ms.locfileid: "63396312"
 ---
 # <a name="delete-programcontrol"></a>Excluir programControl
 
@@ -18,17 +18,19 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-No recurso de revisões de acesso do Azure [AD,](../resources/accessreviews-root.md) exclua um [objeto programControl.](../resources/programcontrol.md)  Isso desvincula uma revisão de acesso de um programa.
+[!INCLUDE [accessreviews-disclaimer](../../includes/accessreviews-disclaimer.md)]
+
+No recurso de revisões de acesso do Azure [AD,](../resources/accessreviews-root.md) exclua um [objeto programControl](../resources/programcontrol.md) .  Isso desvincula uma revisão de acesso de um programa.
 ## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão                        | Permissões (da com menos para a com mais privilégios)              |
 |:--------------------------------------|:---------------------------------------------------------|
-|Delegado (conta corporativa ou de estudante)     | ProgramControl.ReadWrite.All   |
-|Delegado (conta pessoal da Microsoft) | Sem suporte. |
+|Delegada (conta corporativa ou de estudante)     | ProgramControl.ReadWrite.All   |
+|Delegada (conta pessoal da Microsoft) | Sem suporte. |
 |Aplicativo                            | ProgramControl.ReadWrite.All  |
 
-O usuário inscreveu também deve estar em uma função de diretório que permita que ele exclua um `programControl` .
+O usuário inscreveu também deve estar em uma função de diretório que permita que ele exclua um `programControl`.
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- { "blockType": "ignored" } -->

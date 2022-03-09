@@ -6,24 +6,32 @@ ms.localizationpriority: high
 ms.prod: sharepoint
 description: Use esta API para recuperar os conteúdos de um item em um formato específico.
 doc_type: apiPageType
-ms.openlocfilehash: fc5e59362e2e10ab8538edf7f8a0ba8260c5ac37
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: afa151dbeeab58a83a8570b8f94f82ffc02c6160
+ms.sourcegitcommit: dfa87904fb26dd5161f604f2716ce1d90dad31ed
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59037996"
+ms.lasthandoff: 03/09/2022
+ms.locfileid: "63394989"
 ---
 # <a name="download-a-file-in-another-format"></a>Baixar um arquivo em outro formato
 
 Namespace: microsoft.graph
 
+[!INCLUDE [tls-1.2-required](../../includes/tls-1.2-required.md)]
+
 Use esta API para recuperar os conteúdos de um item em um formato específico. Nem todos os arquivos podem ser convertidos em todos os formatos.
 
 Para baixar o item no formato original, confira [Baixar o conteúdo de um item](driveitem-get-content.md).
 
-## <a name="prerequisites"></a>Pré-requisitos
+## <a name="permissions"></a>Permissões
 
-Para chamar esta API, o usuário deve ter concedido acesso de leitura ao aplicativo para o arquivo que o aplicativo deseja converter.
+Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
+
+| Tipo de permissão                        | Permissões (da com menos para a com mais privilégios) |
+|:---------------------------------------|:------------------------------------|
+| Delegado (conta corporativa ou de estudante)     | Files.Read, Files.ReadWrite, Files.Read.All, Files.ReadWrite.All, Sites.Read.All, Sites.ReadWrite.All |
+| Delegado (conta pessoal da Microsoft) | Files.Read, Files.ReadWrite, Files.Read.All, Files.ReadWrite.All |
+| Aplicativo                            | Files.Read.All, Files.ReadWrite.All, Sites.Read.All, Sites.ReadWrite.All |
 
 ## <a name="http-request"></a>Solicitação HTTP
 
@@ -40,7 +48,6 @@ GET /drive/root:/{path and filename}:/content?format={format}
 |:----------|:-------|:---------------------------------------------------------------|
 | _format_  | string | Especifique o formato em que o conteúdo do item deve ser baixado. |
 
-
 ### <a name="format-options"></a>Opções de formato
 
 Os seguintes valores são válidos para o parâmetro **format**:
@@ -51,12 +58,11 @@ Os seguintes valores são válidos para o parâmetro **format**:
 
 ## <a name="optional-request-headers"></a>Cabeçalhos de solicitação opcionais
 
-| Name            | Valor   | Descrição                                                                                                                                              |
+| Nome            | Valor   | Descrição                                                                                                                                              |
 |:----------------|:--------|:---------------------------------------------------------------------------------------------------------------------------------------------------------|
 | _if-none-match_ | String  | Se este cabeçalho de solicitação estiver incluso e a eTag (ou cTag) fornecida corresponder à marca atual do arquivo, uma resposta `HTTP 304 Not Modified` será exibida. |
 
 ## <a name="example"></a>Exemplo
-
 
 # <a name="http"></a>[HTTP](#tab/http)
 <!-- { "blockType": "request", "name": "convert-item-content", "scopes": "files.read" } -->

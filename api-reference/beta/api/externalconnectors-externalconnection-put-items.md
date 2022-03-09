@@ -1,16 +1,16 @@
 ---
 title: Criar externalItem
 description: Crie um novo externalItem.
-localization_priority: Normal
+ms.localizationpriority: medium
 author: snlraju-msft
 ms.prod: search
 doc_type: apiPageType
-ms.openlocfilehash: 7939689cf113e709853e5da666d1479e600fe4cd
-ms.sourcegitcommit: 1940be9846055aa650c6c03982b74a961f1e316a
+ms.openlocfilehash: 9df3496e49fe7017641b98d2d867e67b420ceede
+ms.sourcegitcommit: dfa87904fb26dd5161f604f2716ce1d90dad31ed
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/17/2021
-ms.locfileid: "53467551"
+ms.lasthandoff: 03/09/2022
+ms.locfileid: "63396781"
 ---
 # <a name="create-externalitem"></a>Criar externalItem
 
@@ -18,7 +18,7 @@ Namespace: microsoft.graph.externalConnectors
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Crie um novo [externalItem](../resources/externalconnectors-externalitem.md).
+Crie um [novo externalItem](../resources/externalconnectors-externalitem.md).
 
 Essa API pode ser usada para criar um item personalizado. O [externalConnection que contém](../resources/externalconnectors-externalconnection.md) deve ter um [esquema](../resources/externalconnectors-schema.md) registrado do tipo correspondente.
 
@@ -44,8 +44,8 @@ PUT /external/connections/{connection-id}/items/{item-id}
 
 | Parâmetro     | Tipo   | Descrição                                         |
 |:--------------|:-------|:----------------------------------------------------|
-| connection-id | cadeia de caracteres | A `id` propriedade do [externalConnection que](../resources/externalconnectors-externalconnection.md) contém |
-| item-id       | cadeia de caracteres | A propriedade fornecida `id` pelo desenvolvedor do [externalItem](../resources/externalconnectors-externalitem.md). Se nenhum item já existir com `id` isso, um novo item será criado. Se um item já existir com isso `id` , ele será substituído pelo objeto enviado no corpo. |
+| connection-id | string | A `id` propriedade do [externalConnection que](../resources/externalconnectors-externalconnection.md) contém |
+| item-id       | string | A propriedade fornecida pelo `id` desenvolvedor do [externalItem](../resources/externalconnectors-externalitem.md). Se nenhum item já existir com isso `id`, um novo item será criado. Se um item já existir com isso `id`, ele será substituído pelo objeto enviado no corpo. |
 
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
 
@@ -56,11 +56,11 @@ PUT /external/connections/{connection-id}/items/{item-id}
 
 ## <a name="request-body"></a>Corpo da solicitação
 
-No corpo da solicitação, fornece uma representação JSON de um [objeto externalItem.](../resources/externalconnectors-externalitem.md) A carga é limitada a 4 MB.
+No corpo da solicitação, fornece uma representação JSON de um [objeto externalItem](../resources/externalconnectors-externalitem.md) . A carga é limitada a 4 MB.
 
 ### <a name="creating-an-externalitem"></a>Criando um externalItem
 
-Ao criar `externalItem` um , os campos a seguir são necessários: e `acl` `properties` . O `properties` objeto deve conter pelo menos uma propriedade.
+Ao criar um `externalItem`, os campos a seguir são necessários: `acl`e `properties`. O `properties` objeto deve conter pelo menos uma propriedade.
 
 Todas `DateTime` as propriedades de tipo devem estar no formato ISO 8601.
 
@@ -84,11 +84,11 @@ As propriedades em um `externalItem` devem usar especificadores de tipo na carga
     ```
 
     > [!IMPORTANT]
-    > Ao incluir uma propriedade do tipo `Collection(DateTime)` , você deve usar o especificador de tipo `Collection(DateTimeOffset)` .
+    > Ao incluir uma propriedade do tipo `Collection(DateTime)`, você deve usar o especificador de tipo `Collection(DateTimeOffset)`.
 
 ## <a name="response"></a>Resposta
 
-Se bem sucedido, este método retorna um código de resposta `200 OK`.
+Quando é bem-sucedido, este método retorna um código de resposta `200 OK`.
 
 ## <a name="examples"></a>Exemplos
 
@@ -145,6 +145,10 @@ Content-type: application/json
 
 # <a name="objective-c"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/create-externalitem-from-connections-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[Ir](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/create-externalitem-from-connections-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

@@ -5,8 +5,13 @@ author: jkdouglas
 ms.localizationpriority: medium
 ms.prod: identity-and-sign-in
 doc_type: resourcePageType
+ms.openlocfilehash: 88a8d3fe3480360be8e05beff535de56ed2be617
+ms.sourcegitcommit: dfa87904fb26dd5161f604f2716ce1d90dad31ed
+ms.translationtype: MT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 03/09/2022
+ms.locfileid: "63395948"
 ---
-
 # <a name="crosstenantaccesspolicyconfigurationpartner-resource-type"></a>Tipo de recurso crossTenantAccessPolicyConfigurationPartner
 
 Namespace: microsoft.graph
@@ -19,7 +24,7 @@ Para qualquer propriedade específica do parceiro que seja `null`, essas configu
 
 Herda [de crossTenantAccessPolicyConfigurationBase](../resources/crosstenantaccesspolicyconfigurationbase.md).
 
-## <a name="methods"></a>Métodos
+## <a name="methods"></a>Methods
 
 |Método|Tipo de retorno|Descrição|
 |:---|:---|:---|
@@ -38,8 +43,8 @@ Herda [de crossTenantAccessPolicyConfigurationBase](../resources/crosstenantacce
 | b2bDirectConnectInbound | [crossTenantAccessPolicyB2BSetting](../resources/crosstenantaccesspolicyb2bsetting.md) | Define a configuração específica do parceiro para usuários de outras organizações acessando seus recursos por meio de conexão direta do Azure B2B. Herdado [de crossTenantAccessPolicyConfigurationBase](../resources/crosstenantaccesspolicyconfigurationbase.md). |
 | b2bDirectConnectOutbound | [crossTenantAccessPolicyB2BSetting](../resources/crosstenantaccesspolicyb2bsetting.md) | Define a configuração específica do parceiro para usuários em sua organização que vão de saída para acessar recursos em outra organização por meio da conexão direta do Azure AD B2B. Herdado [de crossTenantAccessPolicyConfigurationBase](../resources/crosstenantaccesspolicyconfigurationbase.md). |
 | inboundTrust | [crossTenantAccessPolicyInboundTrust](../resources/crosstenantaccesspolicyinboundtrust.md) | Determina a configuração específica do parceiro para confiar em outras declarações de Acesso Condicional de organizações externas do Azure AD. Herdado [de crossTenantAccessPolicyConfigurationBase](../resources/crosstenantaccesspolicyconfigurationbase.md). |
-| isServiceProvider | Boolean | Identifica se a configuração específica do parceiro é um Provedor de Serviços de Nuvem para sua organização. |
-| tenantId | String | O identificador de locatário da organização do Azure AD do parceiro. Somente leitura.|
+| isServiceProvider | Booliano | Identifica se a configuração específica do parceiro é um Provedor de Serviços de Nuvem para sua organização. |
+| tenantId | String | O identificador de locatário da organização do Azure AD do parceiro. Somente leitura. Chave.|
 
 ## <a name="relationships"></a>Relações
 
@@ -50,7 +55,7 @@ Nenhum
 Veja a seguir uma representação JSON do recurso.
 <!-- {
   "blockType": "resource",
-  "keyProperty": "id",
+  "keyProperty": "tenantId",
   "@odata.type": "microsoft.graph.crossTenantAccessPolicyConfigurationPartner",
   "baseType": "microsoft.graph.crossTenantAccessPolicyConfigurationBase",
   "openType": false
@@ -60,7 +65,7 @@ Veja a seguir uma representação JSON do recurso.
 ``` json
 {
   "@odata.type": "#microsoft.graph.crossTenantAccessPolicyConfigurationPartner",
-  "tenantId": "String",
+  "tenantId": "String (identifier)",
   "inboundTrust": {
     "@odata.type": "microsoft.graph.crossTenantAccessPolicyInboundTrust"
   },

@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: snlraju-msft
 ms.prod: search
 doc_type: apiPageType
-ms.openlocfilehash: 9af589d20df4acccc942b296ab236c6b1fa1db4b
-ms.sourcegitcommit: 3e2239e60b6dc53997b7d4356a20fc3d365d6238
+ms.openlocfilehash: 7909bfba11da8ba0fb24549f4a21c040d0375864
+ms.sourcegitcommit: dfa87904fb26dd5161f604f2716ce1d90dad31ed
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/02/2021
-ms.locfileid: "61266198"
+ms.lasthandoff: 03/09/2022
+ms.locfileid: "63397229"
 ---
 # <a name="get-schema"></a>Obter esquema
 
@@ -40,7 +40,7 @@ GET /external/connections/{id}/schema
 
 ## <a name="optional-query-parameters"></a>Parâmetros de consulta opcionais
 
-Este método não dá suporte a [parâmetros de](/graph/query-parameters) consulta OData para personalizar a resposta.
+Este método não dá suporte a [parâmetros de consulta OData](/graph/query-parameters) para personalizar a resposta.
 
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
 
@@ -54,7 +54,7 @@ Não forneça um corpo de solicitação para esse método.
 
 ## <a name="response"></a>Resposta
 
-Se tiver êxito, este método retornará um código de resposta e o objeto de esquema solicitado `200 OK` no corpo da resposta. [](../resources/externalconnectors-schema.md)
+Se tiver êxito, este método retornará um `200 OK` código de resposta e o objeto [de esquema](../resources/externalconnectors-schema.md) solicitado no corpo da resposta.
 
 ## <a name="examples"></a>Exemplos
 
@@ -85,6 +85,10 @@ GET https://graph.microsoft.com/beta/external/connections/contosohr/schema
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/get-schema-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[Ir](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/get-schema-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

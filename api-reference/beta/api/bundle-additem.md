@@ -2,15 +2,15 @@
 author: JeremyKelley
 title: Adicionar item a um pacote
 description: Adicionar item a um pacote de driveItems
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: sharepoint
 doc_type: apiPageType
-ms.openlocfilehash: f632b8054c1819c1af8bdd632c0d13092117cb30
-ms.sourcegitcommit: 5b0aab5422e0619ce8806664c479479d223129ec
+ms.openlocfilehash: ae6b0f0aabb4c9aeacb0411b2cbf80568fd09b16
+ms.sourcegitcommit: dfa87904fb26dd5161f604f2716ce1d90dad31ed
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/14/2021
-ms.locfileid: "50774380"
+ms.lasthandoff: 03/09/2022
+ms.locfileid: "63395521"
 ---
 # <a name="add-item-to-a-bundle"></a>Adicionar item a um pacote
 
@@ -20,10 +20,10 @@ Namespace: microsoft.graph
 
 Adicione um [driveItem][] adicional de uma unidade a um [pacote][].
 
-[pacote]: ../resources/bundle.md
+[bundle]: ../resources/bundle.md
 [driveItem]: ../resources/driveItem.md
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>Permissões
 
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
@@ -51,7 +51,7 @@ O corpo da solicitação inclui o identificador de um item que deve ser adiciona
 
 ## <a name="response"></a>Resposta
 
-Se tiver êxito, a resposta será `204 No Content` .
+Se tiver êxito, a resposta será `204 No Content`.
 
 Leia o tópico [Respostas de Erro][error-response] para obter mais informações sobre como os erros são retornados.
 
@@ -89,6 +89,10 @@ Content-Type: application/json
 [!INCLUDE [sample-code](../includes/snippets/java/add-to-bundle-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# <a name="go"></a>[Ir](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/add-to-bundle-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 
@@ -106,7 +110,7 @@ HTTP/1.1 204 No Content
   "type": "#page.annotation",
   "description": "Add items to an existing bundle.",
   "keywords": "",
-  "section": "documentation"
+  "section&quot;: &quot;documentation"
 } -->
 
 

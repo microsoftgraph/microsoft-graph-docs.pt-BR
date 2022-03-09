@@ -5,12 +5,12 @@ author: mmast-msft
 ms.localizationpriority: medium
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: c1901cdacfee980fd195715281b3f48ca98a53e4
-ms.sourcegitcommit: e497ed9bb56400bdd2bb53d52ddf057d9966220b
+ms.openlocfilehash: 9d3a4bb2945edafef30bb7eef07ad7ba6a586ef5
+ms.sourcegitcommit: dfa87904fb26dd5161f604f2716ce1d90dad31ed
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/30/2021
-ms.locfileid: "61223765"
+ms.lasthandoff: 03/09/2022
+ms.locfileid: "63396683"
 ---
 # <a name="remove-member-from-educationclass"></a>Remover membro do educationClass
 
@@ -18,7 +18,7 @@ Namespace: microsoft.graph
 
 Remover um [educationUser](../resources/educationuser.md) de uma [educationClass](../resources/educationclass.md).
 
-> **Observação:** professores _e_ alunos estão na coleção **members** da aula. Antes de chamar essa API, verifique se **o educationUser** que você está removendo não é um professor. Obter a lista de professores chamando educationclass_list_teachers [e](educationclass-list-teachers.md) verificando se a ID do usuário a ser removida não está na lista de professores retornados.
+> **Observação:** professores _e_ alunos estão na coleção **members** da aula. Antes de chamar essa API, verifique se **o educationUser** que você está removendo não é um professor. Obter a lista de professores chamando [educationclass_list_teachers e verificando](educationclass-list-teachers.md) se a ID do usuário a ser removida não está na lista de professores retornados.
 
 ## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
@@ -72,6 +72,10 @@ DELETE https://graph.microsoft.com/v1.0/education/classes/{class-id}/members/{me
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/create-educationclass-from-educationschool-1-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[Ir](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/create-educationclass-from-educationschool-1-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

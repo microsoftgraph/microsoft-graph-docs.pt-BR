@@ -5,12 +5,12 @@ author: mmcla
 ms.localizationpriority: medium
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: 86d26ed3d0a6dacda0c2176834de10d2ead5ab80
-ms.sourcegitcommit: e497ed9bb56400bdd2bb53d52ddf057d9966220b
+ms.openlocfilehash: b809d05d2f3b58ed17b108fee3d4ec3871b0062c
+ms.sourcegitcommit: dfa87904fb26dd5161f604f2716ce1d90dad31ed
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/30/2021
-ms.locfileid: "61226591"
+ms.lasthandoff: 03/09/2022
+ms.locfileid: "63395395"
 ---
 # <a name="update-passwordlessmicrosoftauthenticatorauthenticationmethodconfiguration-deprecated"></a>Atualizar passwordlessMicrosoftAuthenticatorAuthenticationMethodConfiguration (preterido)
 Namespace: microsoft.graph
@@ -20,7 +20,7 @@ Namespace: microsoft.graph
 Atualize as propriedades do [objetoMicrosoftAuthenticatorAuthenticationMethodConfiguration](../resources/passwordlessmicrosoftauthenticatorauthenticationmethodconfiguration.md) sem senha, que representa Microsoft Authenticator política de método de autenticação de Telefone sem senha para o locatário do Azure AD.
 
 > [!CAUTION]
-> A MICROSOFT AUTHENTICATOR de autenticação sem senha Telefone a API do método de autenticação de login é preterida e parou de retornar resultados em 31 de dezembro de 2020. Use a nova política de [Microsoft Authenticator de autenticação](../resources/microsoftAuthenticatorAuthenticationMethodConfiguration.md).
+> A MICROSOFT AUTHENTICATOR de autenticação sem senha Telefone a API do método de autenticação de login está preterida e parou de retornar resultados em 31 de dezembro de 2020. Use a nova política de [Microsoft Authenticator de autenticação](../resources/microsoftAuthenticatorAuthenticationMethodConfiguration.md).
 
 ## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
@@ -28,10 +28,10 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |Tipo de permissão|Permissões (da com menos para a com mais privilégios)|
 |:---|:---|
 |Delegada (conta corporativa ou de estudante)|Policy.ReadWrite.AuthenticationMethod|
-|Delegado (conta pessoal da Microsoft)|Sem suporte.|
+|Delegada (conta pessoal da Microsoft)|Sem suporte.|
 |Aplicativo|Sem suporte.|
 
-Para cenários delegados, o administrador precisa de uma das seguintes funções [do Azure AD:](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles)
+Para cenários delegados, o administrador precisa de uma das seguintes funções [do Azure AD](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles):
 
 * Administrador de Política de Autenticação
 * Administrador Global
@@ -58,7 +58,7 @@ No corpo da solicitação, fornece uma representação JSON de um [objetoMicroso
 
 Para ver a lista de propriedades, consulte [passwordlessMicrosoftAuthenticatorAuthenticationMethodConfiguration](../resources/passwordlessmicrosoftauthenticatorauthenticationmethodconfiguration.md).
 
->**Observação:** A `@odata.type` propriedade com um valor de deve ser incluída no `#microsoft.graph.passwordlessMicrosoftAuthenticatorAuthenticationMethodConfiguration` corpo.
+>**Observação:** A `@odata.type` propriedade com um valor de `#microsoft.graph.passwordlessMicrosoftAuthenticatorAuthenticationMethodConfiguration` deve ser incluída no corpo.
 
 
 ## <a name="response"></a>Resposta
@@ -98,6 +98,10 @@ Content-Type: application/json
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/update-passwordlessmicrosoftauthenticatorauthenticationmethodconfiguration-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[Ir](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/update-passwordlessmicrosoftauthenticatorauthenticationmethodconfiguration-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

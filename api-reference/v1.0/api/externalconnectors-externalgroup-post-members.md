@@ -5,19 +5,19 @@ author: sacampbe
 ms.localizationpriority: medium
 ms.prod: search
 doc_type: apiPageType
-ms.openlocfilehash: ab13c0cf77a4b6416d574e109dbb579caa40c639
-ms.sourcegitcommit: 0eb843a6f61f384bc28c0cce1ccb74f64bdb1fa6
+ms.openlocfilehash: 508189bc61dcc7eec8f35da1b8733d72e957b0e0
+ms.sourcegitcommit: dfa87904fb26dd5161f604f2716ce1d90dad31ed
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/23/2021
-ms.locfileid: "60561266"
+ms.lasthandoff: 03/09/2022
+ms.locfileid: "63394940"
 ---
 # <a name="create-identity"></a>Criar identidade
 Namespace: microsoft.graph.externalConnectors
 
 
 
-Criar um [recurso](../resources/externalconnectors-identity.md) de identidade para um novo membro em [um externalGroup](../resources/externalconnectors-externalgroup.md).
+Crie um [recurso](../resources/externalconnectors-identity.md) de identidade para um novo membro em [um externalGroup](../resources/externalconnectors-externalgroup.md).
 
 ## <a name="permissions"></a>Permissões
 
@@ -48,19 +48,19 @@ POST /external/connections/{connectionsId}/groups/{externalGroupId}/members
 
 ## <a name="request-body"></a>Corpo da solicitação
 
-No corpo da solicitação, fornece uma representação JSON do **objeto identity.**
+No corpo da solicitação, fornece uma representação JSON do **objeto identity** .
 
 Você pode especificar as seguintes propriedades ao criar um recurso **de** identidade para um membro em **um externalGroup**.
 
 | Propriedade       | Tipo                    | Descrição                                              |
 |:---------------|:------------------------|:---------------------------------------------------------|
-| id             | Cadeia de caracteres                  | O exclusivo `id` do membro. Seria **objectId no** caso de Azure Active Directory ou grupos e **externalGroupId** no caso de grupos externos. Obrigatório.                                    |
-| type           | microsoft.graph.externalConnectors.identityType | O tipo de membro adicionado ao grupo externo. Os valores possíveis são: `user` , `group` , `externalGroup` . Obrigatório. |
+| id             | Cadeia de caracteres                  | O exclusivo `id` do membro. Seria o **objectId no** caso de Azure Active Directory ou grupos e **externalGroupId** no caso de grupos externos. Obrigatório.                                    |
+| type           | microsoft.graph.externalConnectors.identityType | O tipo de membro adicionado ao grupo externo. Os valores possíveis são: `user`,`group`, `externalGroup`. Obrigatório. |
 
 
 ## <a name="response"></a>Resposta
 
-Se tiver êxito, este método retornará `201 Created` um código de resposta e um objeto **identity** no corpo da resposta.
+Se tiver êxito, este método retornará um `201 Created` código de resposta e **um objeto identity** no corpo da resposta.
 
 ## <a name="examples"></a>Exemplos
 
@@ -99,6 +99,10 @@ Content-Type: application/json
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/create-aad-user-identity-from-group-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[Ir](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/create-aad-user-identity-from-group-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -161,6 +165,10 @@ Content-Type: application/json
 [!INCLUDE [sample-code](../includes/snippets/java/create-aad-group-identity-from-group-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# <a name="go"></a>[Ir](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/create-aad-group-identity-from-group-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 
@@ -218,6 +226,10 @@ Content-Type: application/json
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/create-external-group-identity-from-group-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[Ir](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/create-external-group-identity-from-group-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

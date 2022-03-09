@@ -5,26 +5,26 @@ author: payiAzure
 ms.localizationpriority: medium
 ms.prod: service-communications
 doc_type: apiPageType
-ms.openlocfilehash: a5dec619dd9b4b6a13797f5bb74c74abd64e4641
-ms.sourcegitcommit: 871db8b3f68489d24e2aeafe694725579ee44c47
+ms.openlocfilehash: 6483cc811ccabea84463504cf3ce055ff083ec88
+ms.sourcegitcommit: dfa87904fb26dd5161f604f2716ce1d90dad31ed
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/26/2022
-ms.locfileid: "62225690"
+ms.lasthandoff: 03/09/2022
+ms.locfileid: "63396445"
 ---
 # <a name="get-serviceannouncementattachment"></a>Obter serviceAnnouncementAttachment
 Namespace: microsoft.graph
 
-Leia as propriedades e as relações de um [objeto serviceAnnouncementAttachment.](../resources/serviceannouncementattachment.md)
+Leia as propriedades e as relações de um [objeto serviceAnnouncementAttachment](../resources/serviceannouncementattachment.md) .
 
 ## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão|Permissões (da com menos para a com mais privilégios)|
 |:---|:---|
-|Delegado (conta corporativa ou de estudante)|ServiceMessage.Read.All|
-|Delegado (conta pessoal da Microsoft)|Sem suporte.|
-|Application|ServiceMessage.Read.All|
+|Delegada (conta corporativa ou de estudante)|ServiceMessage.Read.All|
+|Delegada (conta pessoal da Microsoft)|Sem suporte.|
+|Aplicativo|ServiceMessage.Read.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
 
@@ -49,13 +49,13 @@ Não forneça um corpo de solicitação para esse método.
 
 ## <a name="response"></a>Resposta
 
-Se tiver êxito, este método retornará um código de resposta e um `200 OK` [objeto serviceAnnouncementAttachment](../resources/serviceannouncementattachment.md) no corpo da resposta.
+Se tiver êxito, este método retornará um `200 OK` código de resposta e um [objeto serviceAnnouncementAttachment](../resources/serviceannouncementattachment.md) no corpo da resposta.
 
 ## <a name="examples"></a>Exemplos
 
 ### <a name="example-1-get-an-attachment-message-id"></a>Exemplo 1: Obter uma ID de mensagem de anexo
 
-A solicitação a seguir retorna [um recurso serviceAnnouncementAttachment.](../resources/serviceannouncementattachment.md)
+A solicitação a seguir retorna [um recurso serviceAnnouncementAttachment](../resources/serviceannouncementattachment.md) .
 
 #### <a name="request"></a>Solicitação
 
@@ -86,6 +86,10 @@ GET https://graph.microsoft.com/v1.0/admin/serviceAnnouncement/messages/MC54091/
 
 # <a name="go"></a>[Ir](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/get-serviceannouncementattachment-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/get-serviceannouncementattachment-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -147,6 +151,10 @@ GET https://graph.microsoft.com/v1.0/admin/serviceAnnouncement/messages/MC54091/
 
 # <a name="go"></a>[Ir](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/get-serviceannouncementattachment-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/get-serviceannouncementattachment-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

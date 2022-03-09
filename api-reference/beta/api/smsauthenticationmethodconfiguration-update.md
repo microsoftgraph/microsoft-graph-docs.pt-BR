@@ -5,19 +5,19 @@ author: mmcla
 ms.localizationpriority: medium
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: 46a2a151bdaa6735f5d6594c48198cab40c11cbe
-ms.sourcegitcommit: e497ed9bb56400bdd2bb53d52ddf057d9966220b
+ms.openlocfilehash: ef0ac7aebb2c100448f1e4aa640eaf1739a892f4
+ms.sourcegitcommit: dfa87904fb26dd5161f604f2716ce1d90dad31ed
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/30/2021
-ms.locfileid: "61225144"
+ms.lasthandoff: 03/09/2022
+ms.locfileid: "63396214"
 ---
 # <a name="update-smsauthenticationmethodconfiguration"></a>Atualizar smsAuthenticationMethodConfiguration
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Atualize as propriedades de um [objeto smsAuthenticationMethodConfiguration,](../resources/smsauthenticationmethodconfiguration.md) que representa a política de método de autenticação de Mensagem de Texto para o locatário do Azure AD.
+Atualize as propriedades de um [objeto smsAuthenticationMethodConfiguration](../resources/smsauthenticationmethodconfiguration.md) , que representa a política de método de autenticação de Mensagem de Texto para o locatário do Azure AD.
 
 ## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
@@ -25,10 +25,10 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |Tipo de permissão|Permissões (da com menos para a com mais privilégios)|
 |:---|:---|
 |Delegada (conta corporativa ou de estudante)|Policy.ReadWrite.AuthenticationMethod|
-|Delegado (conta pessoal da Microsoft)|Sem suporte.|
+|Delegada (conta pessoal da Microsoft)|Sem suporte.|
 |Aplicativo|Policy.ReadWrite.AuthenticationMethod|
 
-Para cenários delegados, o administrador precisa de uma das seguintes funções [do Azure AD:](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles)
+Para cenários delegados, o administrador precisa de uma das seguintes funções [do Azure AD](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles):
 
 * Administrador de Política de Autenticação
 * Administrador Global
@@ -52,18 +52,18 @@ PATCH /policies/authenticationMethodsPolicy/authenticationMethodConfigurations/s
 ## <a name="request-body"></a>Corpo da solicitação
 No corpo da solicitação, fornece uma representação JSON do [objeto smsAuthenticationMethodConfiguration](../resources/smsauthenticationmethodconfiguration.md) com os valores dos campos que devem ser atualizados. Propriedades existentes que não estão incluídas no corpo da solicitação terão seus valores anteriores mantidos ou serão recalculadas com base nas alterações a outros valores de propriedade. Para alcançar o melhor desempenho, não inclua valores existentes que não foram alterados.
 
-A tabela a seguir mostra as propriedades que são necessárias ao atualizar o [objeto smsAuthenticationMethodConfiguration.](../resources/smsauthenticationmethodconfiguration.md)
+A tabela a seguir mostra as propriedades que são necessárias ao atualizar o [objeto smsAuthenticationMethodConfiguration](../resources/smsauthenticationmethodconfiguration.md) .
 
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|id|String|O identificador de política do método de autenticação.|
+|id|Cadeia de caracteres|O identificador de política do método de autenticação.|
 |estado|authenticationMethodState|Os valores possíveis são: `enabled` e `disabled`.|
 
->**Observação:** A `@odata.type` propriedade com um valor de deve ser incluída no `#microsoft.graph.smsAuthenticationMethodConfiguration` corpo.
+>**Observação:** A `@odata.type` propriedade com um valor de `#microsoft.graph.smsAuthenticationMethodConfiguration` deve ser incluída no corpo.
 
 ## <a name="response"></a>Resposta
 
-Se tiver êxito, este método retornará um código de resposta e um `200 OK` [objeto smsAuthenticationMethodConfiguration](../resources/smsauthenticationmethodconfiguration.md) atualizado no corpo da resposta.
+Se tiver êxito, este método retornará `200 OK` um código de resposta e um [objeto smsAuthenticationMethodConfiguration](../resources/smsauthenticationmethodconfiguration.md) atualizado no corpo da resposta.
 
 ## <a name="examples"></a>Exemplos
 
@@ -99,6 +99,10 @@ Content-Type: application/json
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/update-smsauthenticationmethodconfiguration-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[Ir](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/update-smsauthenticationmethodconfiguration-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

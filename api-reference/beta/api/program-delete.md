@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 doc_type: apiPageType
 ms.prod: governance
 author: markwahl-msft
-ms.openlocfilehash: c93ab2112346b082d9a9e6e24a1dc528bdbc549c
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: 2220f7dc45749723e813fdcd85a8313001ff1804
+ms.sourcegitcommit: de9df4bf6313b49afba74b6e9ef819907669c662
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62132744"
+ms.lasthandoff: 01/27/2022
+ms.locfileid: "63396760"
 ---
 # <a name="delete-program"></a>Excluir programa
 
@@ -18,9 +18,11 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-No recurso de revisões de acesso do Azure [AD,](../resources/accessreviews-root.md) exclua um [objeto program.](../resources/program.md)
+[!INCLUDE [accessreviews-disclaimer](../../includes/accessreviews-disclaimer.md)]
 
-Não exclua um programa que ainda tenha sido vinculado a ele, essas avaliações de acesso devem primeiro ser excluídas ou `programControl` desvinculadas do programa e vinculadas a um programa diferente.  Além disso, observe que o programa padrão integrado não pode ser excluído.
+No recurso de revisões de acesso do Azure [AD,](../resources/accessreviews-root.md) exclua um [objeto program](../resources/program.md) .
+
+Não exclua um programa que `programControl` ainda tenha sido vinculado a ele, essas avaliações de acesso devem primeiro ser excluídas ou desvinculadas do programa e vinculadas a um programa diferente.  Além disso, observe que o programa padrão integrado não pode ser excluído.
 
 
 ## <a name="permissions"></a>Permissões
@@ -28,8 +30,8 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 |Tipo de permissão                        | Permissões (da com menos para a com mais privilégios)              |
 |:--------------------------------------|:---------------------------------------------------------|
-|Delegado (conta corporativa ou de estudante)     | ProgramControl.ReadWrite.All   |
-|Delegado (conta pessoal da Microsoft) | Sem suporte. |
+|Delegada (conta corporativa ou de estudante)     | ProgramControl.ReadWrite.All   |
+|Delegada (conta pessoal da Microsoft) | Sem suporte. |
 |Aplicativo                            | Sem suporte. |
 
 O usuário inscreveu também deve estar em uma função de diretório que permita que ele crie um programa.

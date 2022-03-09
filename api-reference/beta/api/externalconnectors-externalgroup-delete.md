@@ -2,15 +2,15 @@
 title: Excluir externalGroup
 description: Exclua um objeto externalGroup.
 author: snlraju-msft
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: search
 doc_type: apiPageType
-ms.openlocfilehash: b4cfa91878df8bf93f78fe1afdc06490b7c308c6
-ms.sourcegitcommit: 6efd9df497d795988cd85474f379d1989b0995b7
+ms.openlocfilehash: 6f062ac511c3769115e85967d2d3232366a19eb3
+ms.sourcegitcommit: dfa87904fb26dd5161f604f2716ce1d90dad31ed
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/30/2021
-ms.locfileid: "58697461"
+ms.lasthandoff: 03/09/2022
+ms.locfileid: "63395472"
 ---
 # <a name="delete-externalgroup"></a>Excluir externalGroup
 
@@ -18,7 +18,7 @@ Namespace: microsoft.graph.externalConnectors
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-[Exclua um objeto externalGroup.](../resources/externalconnectors-externalgroup.md)
+[Exclua um objeto externalGroup](../resources/externalconnectors-externalgroup.md).
 
 ## <a name="permissions"></a>Permissões
 
@@ -84,6 +84,10 @@ DELETE https://graph.microsoft.com/beta/external/connections/contosohr/groups/31
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/delete-externalgroup-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[Ir](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/delete-externalgroup-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

@@ -5,17 +5,17 @@ author: AlexanderMars
 ms.localizationpriority: medium
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: 5bce770759d9988b6c08a5dab49af897865f8754
-ms.sourcegitcommit: 12f07c009c57db3cc9174b165b5ec30195c00996
+ms.openlocfilehash: 387bfa83159675f8fc8e144fa3825c13aa964e71
+ms.sourcegitcommit: dfa87904fb26dd5161f604f2716ce1d90dad31ed
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/30/2021
-ms.locfileid: "61646990"
+ms.lasthandoff: 03/09/2022
+ms.locfileid: "63396571"
 ---
 # <a name="create-organizationalbrandinglocalization"></a>Criar organizationalBrandingLocalization
 Namespace: microsoft.graph
 
-Crie um novo [objeto organizationalBrandingLocalization.](../resources/organizationalBrandingLocalization.md) Isso cria uma identidade visual localizada e, ao mesmo tempo, a identidade visual padrão se ela não existir.
+Crie um novo [objeto organizationalBrandingLocalization](../resources/organizationalBrandingLocalization.md) . Isso cria uma identidade visual localizada e, ao mesmo tempo, a identidade visual padrão se ela não existir.
 
 A identidade visual padrão é criada apenas uma vez. Ele é carregado quando uma identidade visual localizada não é configurada para o idioma do navegador do usuário. Para recuperar a identidade visual padrão, consulte [Obter identidade visual](organizationalbranding-get.md).
 
@@ -24,8 +24,8 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 | Tipo de permissão                        | Permissões (da com menos para a com mais privilégios) |
 |:---------------------------------------|:--------------------------------------------|
-| Delegado (conta corporativa ou de estudante)     | Organization.ReadWrite.All |
-| Delegado (conta pessoal da Microsoft) | Sem suporte. |
+| Delegada (conta corporativa ou de estudante)     | Organization.ReadWrite.All |
+| Delegada (conta pessoal da Microsoft) | Sem suporte. |
 | Aplicativo                            | Sem suporte. |
 
 ## <a name="http-request"></a>Solicitação HTTP
@@ -46,19 +46,19 @@ POST /organization/{organizationId}/branding/localizations
 
 ## <a name="request-body"></a>Corpo da solicitação
 
-A tabela a seguir mostra as propriedades que são necessárias ao criar o [objeto organizationalBrandingLocalization.](../resources/organizationalbrandinglocalization.md)
+A tabela a seguir mostra as propriedades que são necessárias ao criar o [objeto organizationalBrandingLocalization](../resources/organizationalbrandinglocalization.md) .
 
 | Propriedade     | Tipo        | Descrição |
 |:-------------|:------------|:------------|
-| id | String | Um identificador que representa a localidade especificada usando nomes de cultura. Os nomes de cultura seguem o padrão RFC 1766 no formato "languagecode2-country/regioncode2", onde "languagecode2" é um código de duas letras minúsculo derivado da ISO 639-1 e "country/regioncode2" é um código de duas letras maiúscula derivado da ISO 3166. Por exemplo, inglês dos EUA é `en-US` . Não é possível criar a identidade visual padrão definindo o valor da **id** para os tipos de cadeia de caracteres `0` ou `default` .  <br/><br/>**OBSERVAÇÃO:** No momento, não há suporte para várias marcas para uma única localidade. |
+| id | Cadeia de caracteres | Um identificador que representa a localidade especificada usando nomes de cultura. Os nomes de cultura seguem o padrão RFC 1766 no formato "languagecode2-country/regioncode2", onde "languagecode2" é um código de duas letras minúsculo derivado da ISO 639-1 e "country/regioncode2" é um código de duas letras maiúscula derivado da ISO 3166. Por exemplo, inglês dos EUA é `en-US`. Não é possível criar a identidade visual padrão definindo o valor da **id** para os tipos de cadeia de caracteres `0` ou `default`.  <br/><br/>**OBSERVAÇÃO:** No momento, não há suporte para várias marcas para uma única localidade. |
 
 ## <a name="response"></a>Resposta
 
-Se tiver êxito, este método retornará um código de resposta e um `201 Created` [objeto organizationalBrandingLocalization](../resources/organizationalbrandinglocalization.md) no corpo da resposta.
+Se tiver êxito, este método retornará um `201 Created` código de resposta e um [objeto organizationalBrandingLocalization](../resources/organizationalbrandinglocalization.md) no corpo da resposta.
 
 ## <a name="examples"></a>Exemplos
 
-O exemplo a seguir cria uma localização de identidade visual para localização em francês ( `fr-FR` ) . Quaisquer propriedades não especificadas do tipo String herdam do valor no objeto de identidade visual padrão. Por exemplo, se o signInPageText no objeto de identidade visual padrão for `null` , o signInPageText para a identidade visual criada nesta solicitação também `fr-FR` será `null` . Para substituir um `null` valor sem qualquer texto, use uma cadeia de caracteres que contenha apenas espaço em branco.
+O exemplo a seguir cria uma localização de identidade visual para localização em francês (`fr-FR`). Quaisquer propriedades não especificadas do tipo String herdam do valor no objeto de identidade visual padrão. Por exemplo, se o signInPageText `null`no objeto de identidade visual padrão for , o signInPageText `fr-FR` para a identidade visual criada nesta solicitação também será `null`. Para substituir um `null` valor sem qualquer texto, use uma cadeia de caracteres que contenha apenas espaço em branco.
 
 ### <a name="request"></a>Solicitação
 
@@ -94,6 +94,10 @@ Content-Type: application/json
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/create-organizationalbrandinglocalization-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[Ir](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/create-organizationalbrandinglocalization-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

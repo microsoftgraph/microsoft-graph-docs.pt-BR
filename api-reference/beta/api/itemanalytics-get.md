@@ -4,13 +4,13 @@ description: Obter itemAnalytics sobre os exibições que ocorreram sob esse rec
 title: Obter análises
 ms.localizationpriority: medium
 doc_type: apiPageType
-ms.prod: ''
-ms.openlocfilehash: c3fc4057142e5a6706d0302328a27b703b0e9b8b
-ms.sourcegitcommit: 77d2ab5018371f153d47cc1cd25f9dcbaca28a95
+ms.prod: sharepoint
+ms.openlocfilehash: ad9520c5605467fd515a1abd59402ed693845fef
+ms.sourcegitcommit: dfa87904fb26dd5161f604f2716ce1d90dad31ed
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63337002"
+ms.lasthandoff: 03/09/2022
+ms.locfileid: "63393329"
 ---
 # <a name="get-analytics"></a>Obter análises
 
@@ -62,7 +62,7 @@ Não forneça um corpo de solicitação para esse método.
 
 ## <a name="response"></a>Resposta
 
-Se tiver êxito, este método retornará um `200 OK` código de resposta e uma coleção [de objeto itemAnalytics][] no corpo da resposta. 
+Se tiver êxito, este método retornará um `200 OK` código de resposta e uma coleção [de objetos itemAnalytics][] no corpo da resposta. 
 
 ## <a name="example"></a>Exemplo
 
@@ -90,6 +90,10 @@ GET /drives/{drive-id}/items/{item-id}/analytics
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/get-analytics-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[Ir](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/get-analytics-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

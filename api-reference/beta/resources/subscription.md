@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: Jumaodhiss
 doc_type: resourcePageType
 ms.prod: change-notifications
-ms.openlocfilehash: 70bc8842ed3ccda835e836c5e4c9337668e54ec8
-ms.sourcegitcommit: efa06c63cd3154bcc7ecc993011f314c2dea9a92
+ms.openlocfilehash: f13d607c1f15bb3dcefba5f50d0db9830c8dd280
+ms.sourcegitcommit: dfa87904fb26dd5161f604f2716ce1d90dad31ed
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63368100"
+ms.lasthandoff: 03/09/2022
+ms.locfileid: "63396172"
 ---
 # <a name="subscription-resource-type"></a>tipo de recurso de assinatura
 
@@ -67,7 +67,7 @@ Para obter os possíveis valores de caminho de recurso para cada recurso com sup
 | includeResourceData | Booleano | Opcional. Quando definido como `true`, alterar as notificações [inclui dados de recurso](/graph/webhooks-with-resource-data) (como o conteúdo de uma mensagem de bate-papo). | Todos |
 | latestSupportedTlsVersion | Cadeia de caracteres | Opcional. Especifique a versão mais recente do Protocolo TLS que o ponto de extremidade de notificação, especificado por **notificationUrl**, oferece suporte. Os valores possíveis são: `v1_0`, `v1_1`, `v1_2`, `v1_3`. </br></br>Quanto aos assinantes cujo ponto de extremidade de notificação oferece suporte a uma versão inferior à versão recomendada no momento (TLS 1.2), especificar essa propriedade por um conjunto de [linhas do tempo](https://developer.microsoft.com/graph/blogs/microsoft-graph-subscriptions-deprecating-tls-1-0-and-1-1/) permite que eles usem temporariamente sua versão preterida do TLS antes de concluir a atualização para o TLS 1.2. Para esses assinantes, não definir essa propriedade de acordo com a linha do tempo resultaria em erro nas operações de assinatura.</br></br>Para os assinantes cujo ponto de extremidade já tem suporte ao TLS 1.2, a configuração dessa propriedade é opcional. Nesses casos, o Microsoft Graph padroniza a propriedade como `v1_2`. | Todos |
 | lifecycleNotificationUrl | String | Opcional. A URL do ponto de extremidade que recebe notificações do ciclo de vida, incluindo notificações de `subscriptionRemoved` e `missed`. Esta URL deve fazer uso do protocolo HTTPS. | Todos |
-| notificationContentType | String | Opcional. O **tipo de conteúdo** desejado para notificações de alteração do Microsoft Graph para tipos de recursos com suporte. O tipo de conteúdo padrão é `application/json`. | Todos |
+| notificationContentType | Cadeia de caracteres | Opcional. O **tipo de conteúdo** desejado para notificações de alteração do Microsoft Graph para tipos de recursos com suporte. O tipo de conteúdo padrão é `application/json`. | Todos |
 | notificationQueryOptions | String |Opcional.  Opções de consulta OData para especificar o valor do recurso de direcionamento. Os clientes recebem notificações quando o recurso atinge o estado correspondente às opções de consulta fornecidas aqui. Com essa nova propriedade na carga de criação de assinatura juntamente com todas as propriedades existentes, os Webhooks fornecerão notificações sempre que um recurso atingir o estado desejado mencionado na propriedade **notificationQueryOptions** . Por exemplo, quando o trabalho de impressão é concluído ou quando um valor de propriedade de recurso de trabalho de impressão `isFetchable` torna-se `true` etc. | [Serviço de Impressão Universal](/graph/universal-print-webhook-notifications) |
 | notificationUrl | Cadeia de caracteres | Obrigatório. A URL do ponto de extremidade que recebe as notificações de alteração. Esta URL deve fazer uso do protocolo HTTPS.  | Todos |
 | notificationUrlAppId| String | Opcional. A ID do aplicativo que o serviço de assinatura pode usar para gerar o token de validação. Isso permite que o cliente valide a autenticidade da notificação recebida.  | Todos |
@@ -83,13 +83,14 @@ Para obter os possíveis valores de caminho de recurso para cada recurso com sup
 | **Chat** do Teams | 60 minutos (1 hora) |
 | Teams **chatMessage**    | 60 minutos (1 hora)  |
 | **conversationMember** do Teams    | 60 minutos (1 hora)  |
-| Teams **onlineMeeting** | 4320 minutos (3 dias) |
+| **onlineMeeting** do Teams | 4320 minutos (3 dias) |
 | Equipe do **Teams**    | 60 minutos (1 hora)  |
 | **Conversa** em grupo | 4230 minutos (em 3 dias)    |
 | OneDrive **driveItem**    | 42.300 minutos (menos de 30 dias)    |
 | **Lista** do Microsoft Office SharePoint Online    | 42.300 minutos (menos de 30 dias)    |
 | Outlook **mensagem**, **evento**, **contato**              | 4230 minutos (em 3 dias)    |
 | **usuário**, **grupo**, outros recursos de diretório   | 41760 minutos (menos de 29 dias)    |
+| **onlineMeeting** | 4230 minutos (em 3 dias) |
 | **presence**        | 60 minutos (1 hora) |
 | Imprimir **printer** | 4230 minutos (em 3 dias)    |
 | Imprimir **printTaskDefinition** | 4230 minutos (em 3 dias)    |

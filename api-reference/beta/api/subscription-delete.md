@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: Jumaodhiss
 doc_type: apiPageType
 ms.prod: change-notifications
-ms.openlocfilehash: d6fe30d453ea8ae00daf8b9f0d077963ddadaaa7
-ms.sourcegitcommit: efa06c63cd3154bcc7ecc993011f314c2dea9a92
+ms.openlocfilehash: fd99c3017337177433d2e554fdcd88b53a9ca4cf
+ms.sourcegitcommit: dfa87904fb26dd5161f604f2716ce1d90dad31ed
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63368053"
+ms.lasthandoff: 03/09/2022
+ms.locfileid: "63396235"
 ---
 # <a name="delete-subscription"></a>Excluir assinatura
 
@@ -53,7 +53,7 @@ Dependendo do recurso e do tipo de permissão (delegado ou aplicativo) solicitad
 |[message](../resources/message.md) | Mail.ReadBasic, Mail.Read | Mail.ReadBasic, Mail.Read | Mail.ReadBasic, Mail.Read |
 |[reunião online](../resources/onlinemeeting.md) | Incompatível | Sem suporte | OnlineMeetings.Read.All, OnlineMeetings.ReadWrite.All |
 |[presence](../resources/presence.md) | Presence.Read.All | Sem suporte. | Sem suporte. |
-|[printer](../resources/printer.md) | Sem suporte. | Sem suporte. | Printer.Read.All, Printer.ReadWrite.All |
+|[impressora](../resources/printer.md) | Sem suporte. | Sem suporte. | Printer.Read.All, Printer.ReadWrite.All |
 |[printTaskDefinition](../resources/printtaskdefinition.md) | Sem suporte. | Sem suporte. | PrintTaskDefinition.ReadWrite.All |
 |[alerta de segurança](../resources/alert.md) | SecurityEvents.ReadWrite.All | Sem suporte. | SecurityEvents.ReadWrite.All |
 |[teams](../resources/team.md) (/teams – todas as equipes em uma organização) | Sem suporte. | Sem suporte. | Team.ReadBasic.All, TeamSettings.Read.All |
@@ -78,9 +78,9 @@ Você Outlook pode assinar as alterações nos recursos de **contato, evento** o
 
 [!INCLUDE [outlook-subscription-notes](../../includes/outlook-subscription-notes.md)]
 
-### <a name="presence"></a>presença
+### <a name="onlinemeetings-presence"></a>onlineMeetings, presença
 
-**assinaturas** de presença exigem [criptografia](/graph/webhooks-with-resource-data). A criação da assinatura falhará se [encryptionCertificate](../resources/subscription.md) não for especificado.
+**OnlineMeetings e assinaturas** de presença exigem [criptografia](/graph/webhooks-with-resource-data) para notificações com dados de recursos. A criação de assinatura falhará se [encryptionCertificate](../resources/subscription.md) e [encryptionCertificateId](../resources/subscription.md) não são especificados se os dados de recursos são desejados em notificações.
 
 ## <a name="http-request"></a>Solicitação HTTP
 
@@ -102,7 +102,7 @@ Não forneça um corpo de solicitação para esse método.
 
 ## <a name="response"></a>Resposta
 
-Se tiver êxito, este método retornará um código de resposta `204 No Content`.
+Se bem-sucedido, este método retorna um código de resposta `204 No Content`.
 
 Para detalhes sobre como os erros são retornados, confira [Respostas de erro][error-response].
 

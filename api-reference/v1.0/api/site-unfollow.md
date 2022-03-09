@@ -5,12 +5,12 @@ description: Desa seguir o site de um usuário
 ms.localizationpriority: medium
 ms.prod: sharepoint
 doc_type: apiPageType
-ms.openlocfilehash: ccc8ba3e812e5bb8824ea0932c00ea8d85765cfc
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 88f107070d8688c1a347b425766f5668a1dc9e38
+ms.sourcegitcommit: dfa87904fb26dd5161f604f2716ce1d90dad31ed
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59118899"
+ms.lasthandoff: 03/09/2022
+ms.locfileid: "63393182"
 ---
 # <a name="unfollow-site"></a>Deixar de seguir site 
 
@@ -48,7 +48,7 @@ No corpo da solicitação, fornece uma matriz de objetos JSON com o parâmetro i
 ## <a name="response"></a>Resposta
 
 * Se a solicitação for bem-sucedida, este método retornará um `204` código de status sem conteúdo.  
-* Se ocorreu um erro ao não seguir nenhum dos sites especificados, este método retornará um código de status e o corpo da resposta conterá uma matriz de entradas contendo objetos de erro e siteIds indicando quais sites não podem ser `207` seguidos. [](/graph/errors)
+* Se ocorreu um erro ao não seguir nenhum dos sites especificados, `207` este método retornará um código de status e o corpo da resposta conterá uma matriz de entradas contendo objetos [](/graph/errors) de erro e siteIds indicando quais sites não podem ser seguidos.
 
 ## <a name="example"></a>Exemplo
 
@@ -90,6 +90,10 @@ Content-Type: application/json
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/unfollow-site-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[Ir](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/unfollow-site-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
