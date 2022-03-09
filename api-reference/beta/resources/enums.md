@@ -5,12 +5,12 @@ doc_type: enumPageType
 ms.localizationpriority: medium
 ms.prod: non-product-specific
 author: MSGraphDocsvTeam
-ms.openlocfilehash: 3ddafab129251829d797d8de943b76182a6d5418
-ms.sourcegitcommit: 77d2ab5018371f153d47cc1cd25f9dcbaca28a95
+ms.openlocfilehash: d3624b1b57ba0883447a41fbc3ef08c910e51fc1
+ms.sourcegitcommit: efa06c63cd3154bcc7ecc993011f314c2dea9a92
 ms.translationtype: MT
 ms.contentlocale: pt-BR
 ms.lasthandoff: 03/08/2022
-ms.locfileid: "63335413"
+ms.locfileid: "63368130"
 ---
 # <a name="enum-values"></a>Valores denum
 
@@ -1572,7 +1572,7 @@ Namespace: microsoft.graph
 | Automático
 | noPreview
 | checklist
-| descrição
+| description
 | referência
 
 
@@ -2489,6 +2489,15 @@ Valores possíveis para tipos de conta de usuário (associação ao grupo), por 
 |other|
 |unknownFutureValue|
 
+### <a name="plannercontextstate-values"></a>valores plannerContextState
+
+|Member             |
+|:------------------|
+|active             |
+|delinked           |
+|unknownFutureValue |  
+
+
 ### <a name="policyscope-values"></a>Valores policyScope
 
 |Member|
@@ -2501,7 +2510,7 @@ Valores possíveis para tipos de conta de usuário (associação ao grupo), por 
 
 |Membro    |Valor    |Descrição |
 |:---------|:--------|:----------- |
-|equipe      |0        |Indica que o aplicativo Teams pode ser instalado em uma equipe e está autorizado a acessar os dados dessa equipe.|
+|team      |0        |Indica que o aplicativo Teams pode ser instalado em uma equipe e está autorizado a acessar os dados dessa equipe.|
 |groupChat |1        |Indica que o aplicativo Teams pode ser instalado em um chat de grupo e está autorizado a acessar os dados desse chat de grupo.|
 |pessoal  |2        |Indica que o aplicativo Teams pode ser instalado no escopo pessoal de um usuário e está autorizado a acessar os dados desse usuário.|
 

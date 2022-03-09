@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: Jumaodhiss
 doc_type: apiPageType
 ms.prod: change-notifications
-ms.openlocfilehash: b2335d3419e73f1554395ddece8c9d7351e1dfc7
-ms.sourcegitcommit: 77d2ab5018371f153d47cc1cd25f9dcbaca28a95
+ms.openlocfilehash: a1dad572417a97793dd6b1b25176a18879edb491
+ms.sourcegitcommit: efa06c63cd3154bcc7ecc993011f314c2dea9a92
 ms.translationtype: MT
 ms.contentlocale: pt-BR
 ms.lasthandoff: 03/08/2022
-ms.locfileid: "63335238"
+ms.locfileid: "63368165"
 ---
 # <a name="create-subscription"></a>Criar assinatura
 
@@ -22,11 +22,11 @@ Inscreve um aplicativo de ouvinte para receber notificações de alterações qu
 
 Consulte a tabela na seção [Permissões](#permissions) para obter a lista de recursos que oferecem suporte à inscrição para alterar notificações.
 
-Alguns recursos suportam a opção de incluir dados de recursos criptografados em notificações de alteração. Esses recursos [incluem chatMessage](../resources/chatmessage.md), [contato](../resources/contact.md), [evento](../resources/event.md), [mensagem](../resources/message.md) e [presença](../resources/presence.md). Para obter mais informações, consulte [Set up change notifications that include resource data](/graph/webhooks-with-resource-data) and [Change notifications for Outlook resources in Microsoft Graph](/graph/outlook-change-notification-overview).
+Alguns recursos suportam a opção de incluir dados de recursos criptografados em notificações de alteração. Esses recursos [incluem chatMessage](../resources/chatmessage.md), [contato](../resources/contact.md), [evento](../resources/event.md), [mensagem](../resources/message.md), [onlineMeetings](../resources/onlinemeeting.md) e [presença](../resources/presence.md). Para obter mais informações, consulte [Set up change notifications that include resource data](/graph/webhooks-with-resource-data) and [Change notifications for Outlook resources in Microsoft Graph](/graph/outlook-change-notification-overview).
 
-## <a name="permissions"></a>Permissões
+## <a name="permissions"></a>Permissions
 
-A criação de uma assinatura requer permissão de leitura para o recurso. Por exemplo, para receber notificações de alteração em mensagens, seu aplicativo precisa da permissão Mail.Read. 
+A criação de uma assinatura requer permissão de leitura para o recurso. Por exemplo, para receber notificações de alteração nas mensagens, seu aplicativo precisa da permissão Mail.Read. 
 
 Dependendo do recurso e do tipo de permissão (delegado ou aplicativo) solicitado, a permissão especificada na tabela a seguir é a menos privilegiada necessária para fazer chamadas a esta API. Para saber mais, incluindo [tomar cuidado](/graph/auth/auth-concepts#best-practices-for-requesting-permissions) antes de escolher as permissões mais privilegiadas, pesquise as seguintes permissões em [Permissões](/graph/permissions-reference).
 
@@ -55,13 +55,14 @@ Dependendo do recurso e do tipo de permissão (delegado ou aplicativo) solicitad
 |[conversa em grupo](../resources/conversation.md) | Group.Read.All | Sem suporte | Sem suporte |
 |[list](../resources/list.md) | Sites.ReadWrite.All | Sem suporte | Sites.ReadWrite.All |
 |[message](../resources/message.md) | Mail.ReadBasic, Mail.Read | Mail.ReadBasic, Mail.Read | Mail.ReadBasic, Mail.Read |
+|[reunião online](../resources/onlinemeeting.md) | Incompatível | Sem suporte | OnlineMeetings.Read.All, OnlineMeetings.ReadWrite.All |
 |[presence](../resources/presence.md) | Presence.Read.All | Incompatível | Incompatível |
 |[printer](../resources/printer.md) | Sem suporte | Sem suporte | Printer.Read.All, Printer.ReadWrite.All |
 |[printTaskDefinition](../resources/printtaskdefinition.md) | Sem suporte | Sem suporte | PrintTaskDefinition.ReadWrite.All |
 |[alerta de segurança](../resources/alert.md) | SecurityEvents.ReadWrite.All | Sem suporte | SecurityEvents.ReadWrite.All |
 |[teams](../resources/team.md) (/teams – todas as equipes em uma organização) | Sem suporte | Incompatível | Team.ReadBasic.All, TeamSettings.Read.All |
 |[teams](../resources/team.md) (/teams/{id}) | Team.ReadBasic.All, TeamSettings.Read.All | Incompatível | Team.ReadBasic.All, TeamSettings.Read.All |
-|[todoTask](../resources/todotask.md) | Tasks.ReadWrite | Tasks.ReadWrite | Incompatível |
+|[todoTask](../resources/todotask.md) | Tasks.ReadWrite | Tasks.ReadWrite | Sem suporte |
 |[baseTask](../resources/basetask.md) | Tasks.ReadWrite | Tasks.ReadWrite | Incompatível |
 |[user](../resources/user.md) | User.Read.All | User.Read.All | User.Read.All |
 

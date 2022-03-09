@@ -5,12 +5,12 @@ ms.localizationpriority: high
 author: mecampos
 doc_type: conceptualPageType
 ms.prod: search
-ms.openlocfilehash: e9e0b6c1c1e79ab6af0dc9cd67afec066844b3e4
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 50248f9a1edbd3fa1ea054a05e7e6b3410180362
+ms.sourcegitcommit: 77d2ab5018371f153d47cc1cd25f9dcbaca28a95
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59139286"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63335875"
 ---
 <!---<author of this doc: rsamai>--->
 
@@ -67,13 +67,13 @@ Uma conexão permite que seu aplicativo [defina um esquema](/graph/api/externalc
 
 ## <a name="create-a-connection"></a>Criar uma conexão
 
-Antes que um aplicativo possa adicionar itens ao índice de pesquisa, ele deve criar e configurar uma conexão usando as etapas a seguir.
+Antes que um aplicativo possa adicionar itens ao índice de pesquisa, ele deve criar e configurar uma conexão usando as etapas a seguir:
 
 - [Criar uma conexão](/graph/api/external-post-connections?view=graph-rest-beta&preserve-view=true) com ID exclusiva, nome de exibição e descrição.
 - [Registre um esquema](/graph/api/externalconnection-post-schema?view=graph-rest-beta&preserve-view=true) para definir os campos que serão incluídos no índice.
 
-> [!IMPORTANT]
-> Depois que um esquema é registrado, ele não pode ser alterado para uma conexão existente.
+> [!NOTE]
+> Para obter informações sobre como atualizar o esquema de uma conexão existente, consulte [Recursos da atualização do esquema](/graph/connecting-external-content-manage-schema#schema-update-capabilities).
 
 ## <a name="update-a-connection"></a>Atualizar uma conexão
 
@@ -85,7 +85,7 @@ Você pode [excluir uma conexão](/graph/api/externalconnection-delete?view=grap
 
 ## <a name="next-steps"></a>Próximas etapas
 
-- [Registrar o esquema de conexão](./connecting-external-content-manage-schema.md)
+- [Registrar o esquema de conexão](/graph/connecting-external-content-manage-schema.md)
 - [Revisar a referência da API do conectores do Graph](/graph/api/resources/indexing-api-overview?view=graph-rest-beta&preserve-view=true)
 - [Visão geral dos conectores do Microsoft Graph](/microsoftsearch/connectors-overview)
 - Baixe o [exemplo de conector de pesquisa](https://github.com/microsoftgraph/msgraph-search-connector-sample) no GitHub

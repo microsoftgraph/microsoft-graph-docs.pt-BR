@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: arvindmicrosoft
 ms.prod: bookings
 doc_type: apiPageType
-ms.openlocfilehash: aa5d45583e05cd2352191b86fcda88353fe7ae8b
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: 7b1fd5d57bd5c92e74d18b3a8f87fdac284fd703
+ms.sourcegitcommit: efa06c63cd3154bcc7ecc993011f314c2dea9a92
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62131720"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63367787"
 ---
 # <a name="create-bookingappointment"></a>Criar bookingAppointment
 
@@ -18,14 +18,14 @@ Namespace: microsoft.graph
 
  [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Crie um novo [bookingAppointment](../resources/bookingappointment.md) para o [bookingBusiness especificado.](../resources/bookingbusiness.md)
-## <a name="permissions"></a>Permissões
+Crie um [novo bookingAppointment](../resources/bookingappointment.md) para o [bookingBusiness especificado](../resources/bookingbusiness.md).
+## <a name="permissions"></a>Permissions
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
 |:--------------------|:---------------------------------------------------------|
 |Delegado (conta corporativa ou de estudante) |  BookingsAppointment.ReadWrite.All, Bookings.ReadWrite.All, Bookings.Manage.All   |
-|Delegado (conta pessoal da Microsoft) | Sem suporte.   |
+|Delegada (conta pessoal da Microsoft) | Sem suporte.   |
 |Aplicativo | Sem suporte.  |
 
 ## <a name="http-request"></a>Solicitação HTTP
@@ -34,19 +34,28 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 POST /bookingBusinesses/{id}/appointments
 
 ```
+
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
+
 | Nome       | Descrição|
 |:---------------|:----------|
 | Autorização  | {code} do portador. Obrigatório.|
 
 ## <a name="request-body"></a>Corpo da solicitação
-No corpo da solicitação, fornece uma representação JSON do [objeto bookingAppointment.](../resources/bookingappointment.md)
 
+No corpo da solicitação, fornece uma representação JSON do [objeto bookingAppointment](../resources/bookingappointment.md) .
+
+Se o número máximo de clientes (**maximumAttedeesCount**) permitido no [serviço](../resources/bookingservice.md) for maior que 1:
+
+- Certifique-se de que os clientes existam no Calendário da Reserva. Se não o fazem, crie usando a [operação Criar bookingCustomer](bookingbusiness-post-customers.md) .
+- Passe as IDs de cliente válidas ao criar ou atualizar o compromisso. Se a ID do cliente não for válida, esse cliente não será incluído no objeto appointment.
 
 ## <a name="response"></a>Resposta
-Se tiver êxito, este método retornará um código de resposta e um `201 Created` [objeto bookingAppointment](../resources/bookingappointment.md) no corpo da resposta.
+
+Se tiver êxito, este método retornará um `201 Created` código de resposta e um [objeto bookingAppointment](../resources/bookingappointment.md) no corpo da resposta.
 
 ## <a name="example"></a>Exemplo
+
 ### <a name="request"></a>Solicitação
 Este é um exemplo de solicitação. Esse compromisso não envolve a reserva de membros específicos da equipe.
 

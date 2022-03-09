@@ -4,12 +4,12 @@ description: Lista a API Graph microsoft para pontos de extremidade do Intune (R
 author: dougeby
 ms.localizationpriority: medium
 ms.prod: intune
-ms.openlocfilehash: 8372aa4c125f0b0e56423bb248fabcd0ee604005
-ms.sourcegitcommit: 00ac72f7b1cdde4f71ff332c2e7953908ef9de52
+ms.openlocfilehash: 1ce759c274bf2762eebeb3a4784162a6a9fe364a
+ms.sourcegitcommit: efa06c63cd3154bcc7ecc993011f314c2dea9a92
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/04/2022
-ms.locfileid: "61711946"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63367647"
 ---
 # <a name="how-to-protect-your-company-app-data-with-microsoft-intune"></a>Como proteger dados de aplicativos corporativos com o Microsoft Intune
 
@@ -56,7 +56,7 @@ Os seguintes recursos do Graph estão disponíveis para gerenciar políticas de 
 - [Tipo de ação de permissão do Android](intune-apps-androidpermissionactiontype.md)
 - [Aplicabilidade do perfil android](intune-apps-androidprofileapplicability.md)
 - [Aplicativo da loja Android](intune-apps-androidstoreapp.md)
-- [Tipo Wi-Fi de segurança aosp](intune-androidforwork-aospwifisecuritytype.md)
+- [Tipo de Wi-Fi de segurança aosp](intune-androidforwork-aospwifisecuritytype.md)
 - [Item de definição de configuração do aplicativo](intune-apps-appconfigurationsettingitem.md)
 - [Status de certificado](intune-apps-certificatestatus.md)
 - [Estado de instalação do dispositivo](intune-books-deviceinstallstate.md)
@@ -78,6 +78,7 @@ Os seguintes recursos do Graph estão disponíveis para gerenciar políticas de 
 - [Resultado da ação de revogar licenças de aplicativo do VPP do iOS](intune-apps-iosvppapprevokelicensesactionresult.md)
 - [Livro eletrônico do VPP do iOS](intune-books-iosvppebook.md)
 - [Atribuição de livros eletrônicos do VPP do iOS](intune-books-iosvppebookassignment.md)
+- [Par chave/valor](intune-androidforwork-keyvaluepair.md)
 - [macOS dmg app](intune-apps-macosdmgapp.md)
 - [aplicativo incluído no macOS](intune-apps-macosincludedapp.md)
 - [Aplicativo LOB para macOS](intune-apps-macoslobapp.md)
@@ -179,7 +180,7 @@ Os seguintes recursos do Graph estão disponíveis para gerenciar políticas de 
 - [Windows AppX](intune-apps-windowsappx.md)
 - [Arquitetura do Windows](intune-apps-windowsarchitecture.md)
 - [Tipo de dispositivo Windows](intune-apps-windowsdevicetype.md)
-- [Windows microsoft edge app](intune-apps-windowsmicrosoftedgeapp.md)
+- [Windows aplicativo microsoft edge](intune-apps-windowsmicrosoftedgeapp.md)
 - [Sistema operacional mínimo do Windows](intune-apps-windowsminimumoperatingsystem.md)
 - [Windows Mobile MSI](intune-apps-windowsmobilemsi.md)
 - [Windows configuração do cliente do office](intune-cirrus-windowsofficeclientconfiguration.md)

@@ -4,12 +4,12 @@ description: Lista a API Graph microsoft para pontos de extremidade do Intune (R
 author: dougeby
 ms.localizationpriority: medium
 ms.prod: intune
-ms.openlocfilehash: f59329e22a916582d13ee4da01179f31440d7f2d
-ms.sourcegitcommit: 00ac72f7b1cdde4f71ff332c2e7953908ef9de52
+ms.openlocfilehash: 574998aa66144f8b3a6a90c92f69e016891268aa
+ms.sourcegitcommit: efa06c63cd3154bcc7ecc993011f314c2dea9a92
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/04/2022
-ms.locfileid: "61712023"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63368214"
 ---
 # <a name="device-configuration-in-microsoft-intune"></a>Configuração de dispositivo no Microsoft Intune
 
@@ -121,8 +121,11 @@ Os seguintes recursos do Graph estão disponíveis para gerenciar configuraçõe
 - [Configuração de VPN do perfil de trabalho do Android](intune-deviceconfig-androidworkprofilevpnconfiguration.md)
 - [Tipo de conexão de VPN do perfil de trabalho do Android](intune-deviceconfig-androidworkprofilevpnconnectiontype.md)
 - [Configuração de Wi-Fi do perfil de trabalho do Android](intune-deviceconfig-androidworkprofilewificonfiguration.md)
+- [Base de perfil de certificado do proprietário do dispositivo Aosp](intune-deviceconfig-aospdeviceownercertificateprofilebase.md)
 - [Política de conformidade do proprietário do dispositivo Aosp](intune-deviceconfig-aospdeviceownercompliancepolicy.md)
 - [Configuração do dispositivo proprietário do dispositivo Aosp](intune-deviceconfig-aospdeviceownerdeviceconfiguration.md)
+- [Perfil de certificado PKCS do proprietário do dispositivo Aosp](intune-deviceconfig-aospdeviceownerpkcscertificateprofile.md)
+- [Certificado raiz confiável do proprietário do dispositivo Aosp](intune-deviceconfig-aospdeviceownertrustedrootcertificate.md)
 - [Tipo de controle de instalação de aplicativo](intune-deviceconfig-appinstallcontroltype.md)
 - [Item da lista do aplicativo](intune-deviceconfig-applistitem.md)
 - [Tipo de lista do aplicativo](intune-deviceconfig-applisttype.md)
@@ -373,6 +376,8 @@ Os seguintes recursos do Graph estão disponíveis para gerenciar configuraçõe
 - [Par de valores de cadeia de caracteres de chave](intune-deviceconfig-keystringvaluepair.md)
 - [Par de valores digitados por chave](intune-deviceconfig-keytypedvaluepair.md)
 - [Valor da chave](intune-deviceconfig-keyvalue.md)
+- [Par chave/valor](intune-deviceconfig-keyvaluepair.md)
+- [Par chave/valor](intune-deviceconfig-keyvaluepair.md)
 - [Complexidade de PIN de tela inicial gerenciada do modo quiosque](intune-deviceconfig-kioskmodemanagedhomescreenpincomplexity.md)
 - [Nível de autenticação do LAN Manager](intune-deviceconfig-lanmanagerauthenticationlevel.md)
 - [Tipo de comportamento da solicitação de elevação do administrador de opções de segurança local](intune-deviceconfig-localsecurityoptionsadministratorelevationpromptbehaviortype.md)
@@ -495,6 +500,7 @@ Os seguintes recursos do Graph estão disponíveis para gerenciar configuraçõe
 - [Estado de aplicativos restritos](intune-deviceconfig-restrictedappsstate.md)
 - [Violação de aplicativos restritos](intune-deviceconfig-restrictedappsviolation.md)
 - [Retirar dispositivo gerenciado agendado](intune-deviceconfig-retirescheduledmanageddevice.md)
+- [Estado da execução](intune-deviceconfig-runstate.md)
 - [Tipo de filtro de pesquisa segura](intune-deviceconfig-safesearchfiltertype.md)
 - [Estado de reforma agendado](intune-deviceconfig-scheduledretirestate.md)
 - [Tipo de conta de avaliação segura](intune-deviceconfig-secureassessmentaccounttype.md)

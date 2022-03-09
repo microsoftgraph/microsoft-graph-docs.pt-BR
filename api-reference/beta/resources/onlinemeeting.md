@@ -5,12 +5,12 @@ author: mkhribech
 ms.localizationpriority: medium
 doc_type: resourcePageType
 ms.prod: cloud-communications
-ms.openlocfilehash: c82b4991262e23041d04b2d35ad01c54c8c9d33e
-ms.sourcegitcommit: ba46f9f77d1e0eb9c7f5b2f4366534bfcf99d9c0
+ms.openlocfilehash: 985c6ff19c9078116b4de875ba4b7270a1a408c2
+ms.sourcegitcommit: efa06c63cd3154bcc7ecc993011f314c2dea9a92
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/17/2021
-ms.locfileid: "61561316"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63368200"
 ---
 # <a name="onlinemeeting-resource-type"></a>Tipo de recurso onlineMeeting
 
@@ -20,14 +20,16 @@ Namespace: microsoft.graph
 
 Contém informações sobre uma reunião, incluindo a URL usada para ingressar em uma reunião, a lista de participantes e a descrição.
 
+Esse recurso dá suporte à assinatura para [alterar notificações](/graph/webhooks).
+
 ## <a name="methods"></a>Methods
 
 | Método | Tipo de retorno |Descrição |
 | ------ | ----------- | ---------- |
 | [Criar](../api/application-post-onlineMeetings.md) | [onlineMeeting](onlinemeeting.md) | Criar uma reunião online. |
-| [Get](../api/onlinemeeting-get.md) | [onlineMeeting](onlinemeeting.md) | Leia as propriedades e as relações de um **objeto onlineMeeting.** |
-| [Atualizar](../api/onlinemeeting-update.md) | [onlineMeeting](onlinemeeting.md) | Atualize as propriedades de um **objeto onlineMeeting.** |
-| [Delete](../api/onlinemeeting-delete.md) | Nenhum | Excluir um **objeto onlineMeeting.** |
+| [Get](../api/onlinemeeting-get.md) | [onlineMeeting](onlinemeeting.md) | Leia as propriedades e as relações de um **objeto onlineMeeting** . |
+| [Update](../api/onlinemeeting-update.md) | [onlineMeeting](onlinemeeting.md) | Atualize as propriedades de um **objeto onlineMeeting** . |
+| [Delete](../api/onlinemeeting-delete.md) | Nenhuma | Excluir um **objeto onlineMeeting** . |
 | [Criar ou obter OnlineMeeting](../api/onlinemeeting-createorget.md) | [onlineMeeting](onlinemeeting.md) | Crie uma reunião online com uma ID externa personalizada. Se a reunião já existir, recupere suas propriedades. |
 
 ## <a name="properties"></a>Propriedades
@@ -48,9 +50,9 @@ Contém informações sobre uma reunião, incluindo a URL usada para ingressar e
 | endDateTime           | DateTime | A hora de término da reunião em UTC.   |
 | externalId            | Cadeia de caracteres | A ID externa. Uma ID personalizada. Opcional.      |
 | id | Cadeia de caracteres | A ID padrão associada à reunião online. Somente leitura.    |
-| isBroadcast | Booliano | Indica se esse é um evento [Teams ao vivo.](/microsoftteams/teams-live-events/what-are-teams-live-events) |
+| isBroadcast | Booliano | Indica se esse é um evento [Teams ao vivo](/microsoftteams/teams-live-events/what-are-teams-live-events). |
 | isEntryExitAnnounced  | Booliano | Indica se os chamadores ingressarão ou sairão. |
-| joinWebUrl | Cadeia de caracteres | A URL de junção da reunião online. Somente leitura. |
+| joinWebUrl | String | A URL de junção da reunião online. Somente leitura. |
 | joinInformation | [itemBody](itembody.md) | As informações de junção no idioma e na variante de localidade especificadas no cabeçalho HTTP de solicitação "Accept-Language". Somente leitura. |
 | lobbyBypassSettings | [lobbyBypassSettings](lobbyBypassSettings.md) | Especifica quais participantes podem ignorar o lobby da reunião. |
 | participants | [meetingParticipants](meetingparticipants.md) | Os participantes associados à reunião online. Isso inclui o organizador e os participantes. |
@@ -59,13 +61,13 @@ Contém informações sobre uma reunião, incluindo a URL usada para ingressar e
 | startDateTime | DateTime | O horário de início da reunião em UTC. |
 | assunto | Cadeia de caracteres | O assunto da reunião online. |
 | videoTeleconferenceId | Cadeia de caracteres | A ID de teleconferência de vídeo. Somente leitura. |
-| autoAdmittedUsers (preterido) | Cadeia de caracteres | A configuração que especifica o tipo de participantes que serão automaticamente permitidos na reunião online. Os valores possíveis são: `everyone`, `everyoneInSameAndFederatedCompany`, `everyoneInCompany`, `invitedUsersInCompany`, `organizer`. Somente leitura. |
-| capabilities (preterido) | coleção meetingCapabilities | A lista de recursos de reunião. Os valores possíveis são: `questionAndAnswer` , `unknownFutureValue` . |
+| autoAdmittedUsers (preterido) | String | A configuração que especifica o tipo de participantes que serão automaticamente permitidos na reunião online. Os valores possíveis são: `everyone`, `everyoneInSameAndFederatedCompany`, `everyoneInCompany`, `invitedUsersInCompany`, `organizer`. Somente leitura. |
+| capabilities (preterido) | coleção meetingCapabilities | A lista de recursos de reunião. Os valores possíveis são: `questionAndAnswer`,`unknownFutureValue`. |
 
 > [!CAUTION]
 >
->- A **propriedade autoAdmittedUsers** é preterida. Use a **propriedade scope** do [lobbyBypassSettings.](lobbyBypassSettings.md)
->- A **propriedade capabilities** é preterida. Use a **propriedade isQuestionAndAnswerEnabled** [de broadcastMeetingSettings.](broadcastMeetingSettings.md)
+>- A **propriedade autoAdmittedUsers** é preterida. Use a **propriedade scope** do [lobbyBypassSettings](lobbyBypassSettings.md) .
+>- A **propriedade capabilities** é preterida. Use a **propriedade isQuestionAndAnswerEnabled** [de broadcastMeetingSettings](broadcastMeetingSettings.md) .
 
 ### <a name="onlinemeetingpresenters-values"></a>valores onlineMeetingPresenters
 
@@ -79,8 +81,8 @@ Contém informações sobre uma reunião, incluindo a URL usada para ingressar e
 
 > [!TIP]
 >
->- Ao criar ou atualizar uma reunião online com o valor **de allowedPresenters** definido como , inclua uma lista completa de participantes com a função de participantes especificada definida como no corpo `roleIsPresenter` da   `presenter` solicitação.
->- Ao criar ou atualizar uma reunião online com o valor **de allowedPresenters** definido como outros valores que não a função dos participantes será mostrar como no corpo `roleIsPresenter` da  `null` resposta.
+>- Ao criar ou atualizar uma reunião online com o valor **de allowedPresenters** `roleIsPresenter`definido como , inclua uma lista completa de participantes  com a  `presenter` função de participantes especificada definida como no corpo da solicitação.
+>- Ao criar ou atualizar uma reunião online com o valor **de allowedPresenters** `roleIsPresenter`definido como outros valores que não a função dos participantes será  mostrar como `null` no corpo da resposta.
 
 ### <a name="meetingchatmode-values"></a>valores meetingChatMode
 

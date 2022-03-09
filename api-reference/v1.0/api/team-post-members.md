@@ -5,12 +5,12 @@ author: nkramer
 ms.localizationpriority: high
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 67752bb1780dcb5c972a5410e85752a28992d7bd
-ms.sourcegitcommit: 4c8444b732b8d6d0de8a95f6666c42095f146266
+ms.openlocfilehash: 27c2e61b6e5b94731071b504d78f2d7c70e721ca
+ms.sourcegitcommit: 77d2ab5018371f153d47cc1cd25f9dcbaca28a95
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/08/2022
-ms.locfileid: "62443314"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63333222"
 ---
 # <a name="add-member-to-team"></a>Adicionar membro à equipe.
 Namespace: microsoft.graph
@@ -18,6 +18,7 @@ Namespace: microsoft.graph
 Adicione um novo [conversationMember](../resources/conversationmember.md) à uma [equipe](../resources/team.md).
 
 ## <a name="permissions"></a>Permissões
+
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão|Permissões (da com menos para a com mais privilégios)|
@@ -26,7 +27,8 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |Delegado (conta pessoal da Microsoft) | Sem suporte.    |
 |Aplicativo| TeamMember.ReadWrite.All |
 
-> **Observação**: Permissões marcadas com * usam [consentimento específico de recurso](/microsoftteams/platform/graph-api/rsc/resource-specific-consent).
+> [!NOTE]
+> Não há suporte para usar permissões de aplicativo para [adicionar membros convidados](/microsoft-365/admin/add-users/about-guest-users?view=o365-worldwide&preserve-view=true) a uma equipe.
 
 ## <a name="http-request"></a>Solicitação HTTP
 

@@ -4,12 +4,12 @@ description: Lista a API Graph microsoft para pontos de extremidade do Intune (R
 ms.localizationpriority: medium
 author: dougeby
 ms.prod: intune
-ms.openlocfilehash: 7f0955ad5ddad757dc4b189eafff925670e0590e
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 75d06ef328c6af99eaba70df8b0d3fd858921bd1
+ms.sourcegitcommit: efa06c63cd3154bcc7ecc993011f314c2dea9a92
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59039739"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63367738"
 ---
 # <a name="enroll-devices-for-management-in-intune"></a>Registrar dispositivos para o gerenciamento no Intune
 
@@ -28,6 +28,7 @@ Os seguintes recursos do Graph estão disponíveis para gerenciar registros no I
 - [Atribuição de parceiro de gerenciamento de conformidade](intune-onboarding-compliancemanagementpartnerassignment.md)
 - [Dados de gerenciamento de aplicativo e dispositivo](intune-onboarding-deviceandappmanagementdata.md)
 - [Configuração da autoridade de comanagement de dispositivo](intune-onboarding-devicecomanagementauthorityconfiguration.md)
+- [Tipo de configuração de registro de dispositivo](intune-onboarding-deviceenrollmentconfigurationtype.md)
 - [Configuração de limite do registro do dispositivo](intune-onboarding-deviceenrollmentlimitconfiguration.md)
 - [Restrição da plataforma de registro do dispositivo](intune-onboarding-deviceenrollmentplatformrestriction.md)
 - [Configuração de restrição de plataforma de registro de dispositivo](intune-onboarding-deviceenrollmentplatformrestrictionconfiguration.md)

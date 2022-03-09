@@ -5,18 +5,18 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: d7c8c747dea90883c7b5587a9d96ab4d40453ecc
-ms.sourcegitcommit: 65f4e128f96783c18d607a6dcffbc914291285d4
+ms.openlocfilehash: ee45c31df0eb2bdd8f65eb670af4a3a83b64f0b9
+ms.sourcegitcommit: efa06c63cd3154bcc7ecc993011f314c2dea9a92
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/08/2021
-ms.locfileid: "61341772"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63368158"
 ---
 # <a name="assignmentfilterevaluaterequest-resource-type"></a>Tipo de recurso assignmentFilterEvaluateRequest
 
 Namespace: microsoft.graph
 
-> **Importante:** As GRAPH da Microsoft na versão /beta estão sujeitas a alterações; o uso de produção não é suportado.
+> **Importante:** As APIs Graph Microsoft na versão /beta estão sujeitas a alterações; o uso de produção não é suportado.
 
 > **Observação:** A API do Microsoft Graph para Intune requer uma [licença ativa do Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
 
@@ -29,9 +29,10 @@ Solicitação de avaliação de filtro de atribuição para dispositivos.
 |rule|String|Definição de regra do Filtro de Atribuição.|
 |top|Int32|Limite de registros por solicitação. O valor padrão é 100, se fornecido menor que 0 ou maior que 100|
 |skip|Int32|Número de registros a ignorar. O valor padrão é 0|
+|orderBy|String collection|Ordem em que os dispositivos devem ser organizados. O padrão é crescente no nome do dispositivo.|
 
 ## <a name="relationships"></a>Relações
-Nenhum
+Nenhuma
 
 ## <a name="json-representation"></a>Representação JSON
 Veja a seguir uma representação JSON do recurso.
@@ -46,7 +47,10 @@ Veja a seguir uma representação JSON do recurso.
   "platform": "String",
   "rule": "String",
   "top": 1024,
-  "skip": 1024
+  "skip": 1024,
+  "orderBy": [
+    "String"
+  ]
 }
 ```
 

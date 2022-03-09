@@ -5,12 +5,12 @@ author: AkJo
 ms.localizationpriority: high
 ms.prod: microsoft-teams
 doc_type: resourcePageType
-ms.openlocfilehash: 554e16245616605a86beb797adfca0370e948e49
-ms.sourcegitcommit: 4e16f26b6b685a6a3dae855a04979c84105609b9
+ms.openlocfilehash: ad4cb5d1031c3c8f30e014ad99de01255e737937
+ms.sourcegitcommit: 77d2ab5018371f153d47cc1cd25f9dcbaca28a95
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/10/2022
-ms.locfileid: "62519674"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63334328"
 ---
 # <a name="team-resource-type"></a>tipo de recurso de equipe
 
@@ -21,7 +21,7 @@ Namespace: microsoft.graph
 No Microsoft Teams, uma equipe é um conjunto de objetos de [canal](channel.md).
 Um canal representa um tópico e, portanto, um isolamento lógico da discussão em uma equipe.
 
-Cada equipe está associada a um [grupo](../resources/group.md).
+Cada equipe está associada a um [grupo Microsoft 365](../resources/group.md).
 O grupo tem a mesma ID da equipe, por exemplo, `/groups/{id}/team` é o mesmo `/teams/{id}`.
 Confira mais informações sobre como trabalhar com grupos e membros em equipes, confira [Usar a API REST do Microsoft Graph para trabalhar com o Microsoft Teams](teams-api-overview.md).
 
@@ -30,7 +30,7 @@ Confira mais informações sobre como trabalhar com grupos e membros em equipes,
 | Método       | Tipo de retorno  |Descrição|
 |:---------------|:--------|:----------|
 |[Criar equipe](../api/team-post.md) | [teamsAsyncOperation](teamsasyncoperation.md) | Crie uma equipe do zero. |
-|[Criar equipe a partir do grupo](../api/team-put-teams.md) | [team](team.md) | Crie uma nova equipe ou adicione uma equipe a um grupo existente.|
+|[Criar equipe a partir do grupo](../api/team-put-teams.md) | [team](team.md) | Crie uma nova equipe ou adicione uma equipe a um grupo Microsoft 365 existente.|
 |[Obter equipe](../api/team-get.md) | [team](team.md) | Recupere as propriedades e relações da equipe especificada.|
 |[Atualizar equipe](../api/team-update.md) | [team](team.md) |Atualize as propriedades da equipe especificada. |
 |[Excluir equipe](../api/group-delete.md) | Nenhum |Exclua a equipe e o grupo associado. |
@@ -89,7 +89,7 @@ Para um exemplo de solicitação POST, confira [Solicitação (criar equipe no e
 |operations|Coleção [teamsAsyncOperation](teamsasyncoperation.md)| As operações assíncronas que foram executadas ou estão em execução nesta equipe. | 
 |[primaryChannel](../api/team-get-primarychannel.md)|[channel](channel.md)| O canal geral da equipe. | 
 |Cronograma|[Cronograma](schedule.md)| Cronograma de turno para essa equipe.|
-|template|[teamsTemplate](teamstemplate.md)| O modelo usado para criar essa equipe. Confira os [modelos disponíveis](/MicrosoftTeams/get-started-with-teams-templates). |
+|template|[teamsTemplate](teamstemplate.md)| O modelo do qual essa equipe foi criada. Consulte [modelos disponíveis](/MicrosoftTeams/get-started-with-teams-templates). |
 
 ## <a name="json-representation"></a>Representação JSON
 

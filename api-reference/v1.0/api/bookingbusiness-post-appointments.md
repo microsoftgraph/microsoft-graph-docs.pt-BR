@@ -5,25 +5,25 @@ ms.localizationpriority: medium
 author: arvindmicrosoft
 ms.prod: bookings
 doc_type: apiPageType
-ms.openlocfilehash: 0262ab76e127f2104bdf2edc2e896b8f4a2873b8
-ms.sourcegitcommit: 086e9a2ccaef411f9471cca164a79197bb254521
+ms.openlocfilehash: 8c967b78bb7e3d09aae73268011bc77f34f63d05
+ms.sourcegitcommit: efa06c63cd3154bcc7ecc993011f314c2dea9a92
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/13/2022
-ms.locfileid: "62014219"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63368249"
 ---
 # <a name="create-bookingappointment"></a>Criar bookingAppointment
 
 Namespace: microsoft.graph
 
-Crie um novo [bookingAppointment](../resources/bookingappointment.md) para o [bookingBusiness especificado.](../resources/bookingbusiness.md)
-## <a name="permissions"></a>Permissões
+Crie um [novo bookingAppointment](../resources/bookingappointment.md) para o [bookingBusiness especificado](../resources/bookingbusiness.md).
+## <a name="permissions"></a>Permissions
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
 |:--------------------|:---------------------------------------------------------|
 |Delegado (conta corporativa ou de estudante) |  BookingsAppointment.ReadWrite.All, Bookings.ReadWrite.All, Bookings.Manage.All   |
-|Delegado (conta pessoal da Microsoft) | Sem suporte.   |
+|Delegada (conta pessoal da Microsoft) | Sem suporte.   |
 |Aplicativo | Sem suporte.  |
 
 ## <a name="http-request"></a>Solicitação HTTP
@@ -38,11 +38,17 @@ POST /solutions/bookingBusinesses/{id}/appointments
 | Autorização  | {code} do portador. Obrigatório.|
 
 ## <a name="request-body"></a>Corpo da solicitação
-No corpo da solicitação, fornece uma representação JSON de um [objeto bookingAppointment.](../resources/bookingappointment.md)
 
+No corpo da solicitação, fornece uma representação JSON de um [objeto bookingAppointment](../resources/bookingappointment.md) .
+
+Se o número máximo de clientes (**maximumAttedeesCount**) permitido no [serviço](../resources/bookingservice.md) for maior que 1:
+
+- Certifique-se de que os clientes existam no Calendário da Reserva. Se não o fazem, crie usando a [operação Criar bookingCustomer](bookingbusiness-post-customers.md) .
+
+- Passe as IDs de cliente válidas ao criar ou atualizar o compromisso. Se a ID do cliente não for válida, esse cliente não será incluído no objeto appointment.
 
 ## <a name="response"></a>Resposta
-Se tiver êxito, este método retornará um código `201 Created` de resposta e um objeto [bookingAppointment](../resources/bookingappointment.md) no corpo da resposta.
+Se tiver êxito, este método retornará um `201 Created` código de resposta e um [objeto bookingAppointment](../resources/bookingappointment.md) no corpo da resposta.
 
 ## <a name="example"></a>Exemplo
 ### <a name="request"></a>Solicitação

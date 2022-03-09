@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: Jumaodhiss
 doc_type: apiPageType
 ms.prod: change-notifications
-ms.openlocfilehash: 8cb0ea6ce1d95a1548cc02de4640ab3a5e3dadac
-ms.sourcegitcommit: 77d2ab5018371f153d47cc1cd25f9dcbaca28a95
+ms.openlocfilehash: 0703504f98312b39e1c0b2e22d9407e56662e576
+ms.sourcegitcommit: efa06c63cd3154bcc7ecc993011f314c2dea9a92
 ms.translationtype: MT
 ms.contentlocale: pt-BR
 ms.lasthandoff: 03/08/2022
-ms.locfileid: "63333922"
+ms.locfileid: "63367633"
 ---
 # <a name="delete-subscription"></a>Excluir assinatura
 
@@ -18,7 +18,7 @@ Namespace: microsoft.graph
 
 Exclua uma assinatura.
 
-Consulte a tabela na seção [Permissões](#permissions) para obter a lista de recursos que oferecem suporte à inscrição para alterar notificações.
+Para ver a lista de recursos que suportam a assinatura para alterar notificações, consulte a tabela na [seção Permissões](#permissions) .
 
 ## <a name="permissions"></a>Permissões
 
@@ -26,22 +26,22 @@ Dependendo do recurso e do tipo de permissão (delegado ou aplicativo) solicitad
 
 | Recurso com suporte | Delegada (conta corporativa ou de estudante) | Delegada (conta pessoal da Microsoft) | Aplicativo |
 |:-----|:-----|:-----|:-----|
-|[callRecord](../resources/callrecords-callrecord.md) | Incompatível | Incompatível | CallRecords.Read.All |
-|[chatMessage](../resources/chatmessage.md) (/teams/{id}/channels/{id}/messages) | ChannelMessage.Read.All | Sem suporte |  ChannelMessage.Read.Group*, ChannelMessage.Read.All  |
-|[chatMessage](../resources/chatmessage.md) (/teams/getAllMessages -- todas as mensagens de canal na organização) | Sem suporte | Sem suporte | ChannelMessage.Read.All  |
-|[chatMessage](../resources/chatmessage.md) (/chats/{id}/messages) | Sem suporte | Sem suporte | Chat.Read.All  |
-|[chatMessage](../resources/chatmessage.md) (/teams/getAllMessages -- todas as mensagens de chat na organização) | Sem suporte | Sem suporte | Chat.Read.All  |
+|[callRecord](../resources/callrecords-callrecord.md) | Sem suporte. | Sem suporte. | CallRecords.Read.All |
+|[chatMessage](../resources/chatmessage.md) (/teams/{id}/channels/{id}/messages) | ChannelMessage.Read.All | Sem suporte. |  ChannelMessage.Read.Group*, ChannelMessage.Read.All  |
+|[chatMessage](../resources/chatmessage.md) (/teams/getAllMessages -- todas as mensagens de canal na organização) | Sem suporte. | Sem suporte. | ChannelMessage.Read.All  |
+|[chatMessage](../resources/chatmessage.md) (/chats/{id}/messages) | Sem suporte. | Sem suporte. | Chat.Read.All  |
+|[chatMessage](../resources/chatmessage.md) (/teams/getAllMessages -- todas as mensagens de chat na organização) | Sem suporte. | Sem suporte. | Chat.Read.All  |
 |[contato](../resources/contact.md) | Contacts.Read | Contacts.Read | Contacts.Read |
-|[driveItem](../resources/driveitem.md) (OneDrive pessoal de um usuário) | Sem suporte | Files.ReadWrite | Sem suporte |
-|[driveItem](../resources/driveitem.md) (OneDrive for Business) | Files.ReadWrite.All | Sem suporte | Files.ReadWrite.All |
+|[driveItem](../resources/driveitem.md) (OneDrive pessoal de um usuário) | Sem suporte. | Files.ReadWrite | Sem suporte. |
+|[driveItem](../resources/driveitem.md) (OneDrive for Business) | Files.ReadWrite.All | Sem suporte. | Files.ReadWrite.All |
 |[evento](../resources/event.md) | Calendars.Read | Calendars.Read | Calendars.Read |
-|[grupo](../resources/group.md) | Group.Read.All | Sem suporte | Group.Read.All |
-|[conversa em grupo](../resources/conversation.md) | Group.Read.All | Sem suporte | Sem suporte |
-|[list](../resources/list.md) | Sites.ReadWrite.All | Sem suporte | Sites.ReadWrite.All |
+|[grupo](../resources/group.md) | Group.Read.All | Sem suporte. | Group.Read.All |
+|[conversa em grupo](../resources/conversation.md) | Group.Read.All | Sem suporte. | Sem suporte. |
+|[list](../resources/list.md) | Sites.ReadWrite.All | Sem suporte. | Sites.ReadWrite.All |
 |[message](../resources/message.md) | Mail.ReadBasic, Mail.Read | Mail.ReadBasic, Mail.Read | Mail.ReadBasic, Mail.Read |
-|[printer](../resources/printer.md) | Sem suporte | Sem suporte | Printer.Read.All, Printer.ReadWrite.All |
-|[printTaskDefinition](../resources/printtaskdefinition.md) | Sem suporte | Sem suporte | PrintTaskDefinition.ReadWrite.All |
-|[alerta de segurança](../resources/alert.md) | SecurityEvents.ReadWrite.All | Sem suporte | SecurityEvents.ReadWrite.All |
+|[printer](../resources/printer.md) | Sem suporte. | Sem suporte. | Printer.Read.All, Printer.ReadWrite.All |
+|[printTaskDefinition](../resources/printtaskdefinition.md) | Sem suporte. | Sem suporte. | PrintTaskDefinition.ReadWrite.All |
+|[alerta de segurança](../resources/alert.md) | SecurityEvents.ReadWrite.All | Sem suporte. | SecurityEvents.ReadWrite.All |
 |[Usuário](../resources/user.md) | User.Read.All | User.Read.All | User.Read.All |
 
 
@@ -57,7 +57,7 @@ No OneDrive pessoal, você pode se inscrever em qualquer pasta raiz ou qualquer 
 
 ### <a name="contact-event-and-message"></a>contato, evento e mensagem
 
-Você pode assinar as alterações nos recursos de **contato****, evento** **ou mensagem Outlook** contato.
+Você pode assinar as alterações nos recursos **contato**, **evento** ou **mensagem** do Outlook.
 
 [!INCLUDE [outlook-subscription-notes](../../includes/outlook-subscription-notes.md)]
 
@@ -83,13 +83,14 @@ Não forneça um corpo de solicitação para esse método.
 ## <a name="response"></a>Resposta
 
 Se tiver êxito, este método retornará um código de resposta `204 No Content`.
+
 Para detalhes sobre como os erros são retornados, confira [Respostas de erro][error-response].
 
 ## <a name="example"></a>Exemplo
 
-##### <a name="request"></a>Solicitação
+### <a name="request"></a>Solicitação
 
-Este é um exemplo da solicitação.
+Veja a seguir um exemplo de uma solicitação.
 
 # <a name="http"></a>[HTTP](#tab/http)
 <!-- {
@@ -127,9 +128,10 @@ DELETE https://graph.microsoft.com/v1.0/subscriptions/7f105c7d-2dc5-4530-97cd-4e
 ---
 
 
-##### <a name="response"></a>Resposta
+### <a name="response"></a>Resposta
 
-Veja a seguir um exemplo da resposta.
+Este é um exemplo de resposta.
+
 <!-- {
   "blockType": "response"
 } -->

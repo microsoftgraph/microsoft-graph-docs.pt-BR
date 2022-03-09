@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: Jumaodhiss
 doc_type: apiPageType
 ms.prod: change-notifications
-ms.openlocfilehash: 3ab9f3fe8e756e737ac5959926e87665d1b03d0a
-ms.sourcegitcommit: 77d2ab5018371f153d47cc1cd25f9dcbaca28a95
+ms.openlocfilehash: 7e61a3c931c5c6b12cd633556733c7145c623902
+ms.sourcegitcommit: efa06c63cd3154bcc7ecc993011f314c2dea9a92
 ms.translationtype: MT
 ms.contentlocale: pt-BR
 ms.lasthandoff: 03/08/2022
-ms.locfileid: "63333719"
+ms.locfileid: "63368067"
 ---
 # <a name="update-subscription"></a>Atualizar assinatura
 
@@ -53,6 +53,7 @@ Dependendo do recurso e do tipo de permissão (delegado ou aplicativo) solicitad
 |[conversa em grupo](../resources/conversation.md) | Group.Read.All | Sem suporte | Sem suporte |
 |[list](../resources/list.md) | Sites.ReadWrite.All | Sem suporte | Sites.ReadWrite.All |
 |[message](../resources/message.md) | Mail.ReadBasic, Mail.Read | Mail.ReadBasic, Mail.Read | Mail.ReadBasic, Mail.Read |
+|[reunião online](../resources/onlinemeeting.md) | Sem suporte | Incompatível | OnlineMeetings.Read.All, OnlineMeetings.ReadWrite.All |
 |[presence](../resources/presence.md) | Presence.Read.All | Incompatível | Incompatível |
 |[printer](../resources/printer.md) | Sem suporte | Sem suporte | Printer.Read.All, Printer.ReadWrite.All |
 |[printTaskDefinition](../resources/printtaskdefinition.md) | Sem suporte | Sem suporte | PrintTaskDefinition.ReadWrite.All |
@@ -75,7 +76,7 @@ No OneDrive pessoal, você pode se inscrever em qualquer pasta raiz ou qualquer 
 
 ### <a name="contact-event-and-message"></a>contato, evento e mensagem
 
-Você pode assinar as alterações nos recursos de **contato, evento** ou  mensagem do Outlook e, opcionalmente **, especificar** na carga de solicitação POST se deve incluir dados de recursos criptografados em notificações.
+Você Outlook pode assinar as alterações nos recursos de **contato, evento** ou mensagem e, opcionalmente **, especificar** na carga de solicitação POST se deve incluir dados de recursos criptografados em notificações.
 
 [!INCLUDE [outlook-subscription-notes](../../includes/outlook-subscription-notes.md)]
 

@@ -5,24 +5,24 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: e0d9215d583461073b504897ce82588f7d2420c9
-ms.sourcegitcommit: 15956da1b4a7d523363ffa8afb5e2059fbf680ce
+ms.openlocfilehash: 444168c83f34ad8da35f23b0bee27095e495bc4a
+ms.sourcegitcommit: efa06c63cd3154bcc7ecc993011f314c2dea9a92
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/01/2022
-ms.locfileid: "62292008"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63367675"
 ---
 # <a name="userexperienceanalyticsdeviceperformance-resource-type"></a>Tipo de recurso userExperienceAnalyticsDevicePerformance
 
 Namespace: microsoft.graph
 
-> **Importante:** As GRAPH da Microsoft na versão /beta estão sujeitas a alterações; o uso de produção não é suportado.
+> **Importante:** As APIs Graph Microsoft na versão /beta estão sujeitas a alterações; o uso de produção não é suportado.
 
 > **Observação:** A API do Microsoft Graph para Intune requer uma [licença ativa do Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
 
 A entidade de desempenho do dispositivo de análise de experiência do usuário contém detalhes do desempenho da inicialização do dispositivo.
 
-## <a name="methods"></a>Métodos
+## <a name="methods"></a>Methods
 |Método|Tipo de retorno|Descrição|
 |:---|:---|:---|
 |[Listar userExperienceAnalyticsDevicePerformances](../api/intune-devices-userexperienceanalyticsdeviceperformance-list.md)|[coleção userExperienceAnalyticsDevicePerformance](../resources/intune-devices-userexperienceanalyticsdeviceperformance.md)|Listar propriedades e relações dos [objetos userExperienceAnalyticsDevicePerformance](../resources/intune-devices-userexperienceanalyticsdeviceperformance.md) .|
@@ -35,11 +35,11 @@ A entidade de desempenho do dispositivo de análise de experiência do usuário 
 ## <a name="properties"></a>Propriedades
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|id|Cadeia de caracteres|O identificador exclusivo do dispositivo de desempenho de inicialização do dispositivo de análise de experiência do usuário.|
+|id|String|O identificador exclusivo do dispositivo de desempenho de inicialização do dispositivo de análise de experiência do usuário.|
 |deviceName|String|O nome do dispositivo de análise de experiência do usuário.|
 |modelo|String|O modelo de dispositivo de análise de experiência do usuário.|
 |fabricante|String|O fabricante do dispositivo de análise de experiência do usuário.|
-|diskType|[diskType](../resources/intune-devices-disktype.md)|O tipo de disco do dispositivo de análise de experiência do usuário. Os valores possíveis são: `hdd`, `ssd`, `unknown`.|
+|diskType|[diskType](../resources/intune-devices-disktype.md)|O tipo de disco do dispositivo de análise de experiência do usuário. Os valores possíveis são: `unknown`, `hdd`, `ssd`, `unknownFutureValue`.|
 |operatingSystemVersion|String|A versão do sistema operacional do dispositivo de análise de experiência do usuário.|
 |bootScore|Int32|A pontuação de inicialização do dispositivo de análise de experiência do usuário.|
 |coreBootTimeInMs|Int32|O tempo de inicialização principal do dispositivo de análise de experiência do usuário em milissegundos.|

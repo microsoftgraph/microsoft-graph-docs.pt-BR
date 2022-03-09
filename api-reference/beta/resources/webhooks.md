@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: Jumaodhiss
 doc_type: conceptualPageType
 ms.prod: change-notifications
-ms.openlocfilehash: 9812aeca1d2a8a057389aaec5183b42032b64674
-ms.sourcegitcommit: 77d2ab5018371f153d47cc1cd25f9dcbaca28a95
+ms.openlocfilehash: acbb51dcc2bde867003bb5ec3d8fd15133f3f22a
+ms.sourcegitcommit: efa06c63cd3154bcc7ecc993011f314c2dea9a92
 ms.translationtype: MT
 ms.contentlocale: pt-BR
 ms.lasthandoff: 03/08/2022
-ms.locfileid: "63335959"
+ms.locfileid: "63368046"
 ---
 # <a name="use-the-microsoft-graph-api-to-get-change-notifications"></a>Usar a API do Microsoft Graph para acessar as notificações de alteração
 
@@ -40,6 +40,7 @@ Usando a API do Microsoft Graph, um aplicativo pode se inscrever para alteraçõ
 | [Chat][] do Teams | Alterações em qualquer chat no locatário:<br>`/chats` <br>Alterações em um chat específico:<br>`/chats/{id}` | Sim |
 | Equipes [chatmessage][] | Alterações nas mensagens de chat em todos os canais de todas as equipes:<br>`/teams/getAllMessages` <br>Alterações nas mensagens de um chat específico:<br>`/teams/{id}/channels/{id}/messages`<br>Alterações nas mensagens de todos os chats:<br>`/chats/getAllMessages` <br>Alterações nas mensagens de um chat específico:<br>`/chats/{id}/messages`<br>Alterações nas mensagens de chat em todos os chats de que um usuário específico faz parte:<br>`/users/{id}/chats/getAllMessages` | Sim |
 | [conversationMember][] do Teams | Alterações na associação em uma equipe específica:<br>`/teams/{id}/members` <br> Alterações na associação em um chat específico:<br>`/chats/{id}/members` <br> Alterações na associação em todos os chats:<br>`/chats/getAllMembers` <br> Alterações na associação em todos os canais em uma equipe específica:<br>`teams/{id}/channels/getAllMembers` | Sim |
+| Teams [onlineMeeting][] | Alterações em uma reunião online: <br>`/communications/onlinemeeting/{meeting-id}` | Sim |
 | Teams [presença][] | Alterações na presença de um único usuário: `/communications/presences/{id}` <br> Alterações em várias presenças de usuário:<br> `/communications/presences?$filter=id in ({id},{id}...)` | Sim |
 | Equipe do [Teams][] | Alterações em qualquer equipe no locatário:<br>`/teams` <br>Alterações em uma equipe específica:<br>`/teams/{id}` | Sim |
 | [baseTask][] | Alterações em todas as tarefas em uma lista de tarefas específica:<br>`/me/tasks/lists/{baseTaskListId}/tasks`<br>Alterações em todas as tarefas:<br>`/me/tasks/lists/alltasks` | Não |
@@ -56,7 +57,7 @@ Em geral, as operações de assinatura exigem permissão de leitura ao recurso. 
 | :------------------------------------- | :------------------------------------------------------------------------------------ |
 | Delegado - conta corporativa ou de estudante     | [alert][], [channel][], [chat][], [contact][], [conversation][], [conversationMember][], [driveItem][], [list][], [event][], [group][], [message][][, user][], [presence][], [chatMessage][] (visualização), [team][], [baseTask][] |
 | Delegado - conta pessoal da Microsoft | [contact][], [driveItem][], [list][], [event][], [message][], [baseTask][]                                     |
-| Aplicativo                            | [alert][], [channel][], [chat][], [contact][], [driveItem][], [list][], [][]event, [group][], [message][], [user][], [callRecord][], [chatMessage][], [conversationMember][], [printer][], [printTaskDefinition][], [team][] |
+| Aplicativo                            | [alert][], [channel][], [chat][], [contact][], [driveItem][], [list][], [][]event, [group][], [message][], [user][], [callRecord][], [chatMessage][], [conversationMember][], [onlinemeeting][], [printer][], [printTaskDefinition][], [team][] |
 
 ## <a name="see-also"></a>Confira também
 
@@ -85,6 +86,7 @@ Em geral, as operações de assinatura exigem permissão de leitura ao recurso. 
 [presence]: ./presence.md
 [impressora]: ./printer.md
 [printTaskDefinition]: ./printtaskdefinition.md
-[team]: ./team.md
+[equipe]: ./team.md
 [baseTask]: ./baseTask.md
+[onlineMeeting]: ./onlinemeeting.md
 

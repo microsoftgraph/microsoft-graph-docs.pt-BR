@@ -5,12 +5,12 @@ author: mecampos
 ms.localizationpriority: high
 doc_type: conceptualPageType
 ms.prod: search
-ms.openlocfilehash: d87e316200f2cc6fc1cc8632151361ede9d16a57
-ms.sourcegitcommit: a60e5e81cfa04b666a1df1111a1d91f6c11989e9
+ms.openlocfilehash: b74b4222e2f0065edb9b97c4adba0abd0f2df5b5
+ms.sourcegitcommit: 77d2ab5018371f153d47cc1cd25f9dcbaca28a95
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "62282013"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63334993"
 ---
 # <a name="microsoft-graph-connectors-overview"></a>Visão geral dos conectores do Microsoft Graph
 
@@ -35,7 +35,7 @@ Para saber mais sobre os conectores existentes do Microsoft Graph, visite a [gal
 
 Embora esses conectores ajudem a se conectar aos serviços populares, talvez você queira integrar com serviços que não estão disponíveis na [galeria de conectores](https://www.microsoft.com/microsoft-search/connectors/) existente. Você pode usar a API de conectores do Microsoft Graph para criar conectores personalizados para trazer seus dados externos para experiências do Microsoft 365, incluindo a Pesquisa da Microsoft, Viva Topics e muito mais (em breve), dentro de sua organização.
 
-## <a name="get-started-with-custom-graph-connectors"></a>Começar a trabalhar com conectores Graph personalizados:
+## <a name="get-started-with-custom-microsoft-graph-connectors"></a>Introdução aos conectores personalizados do Microsoft Graph:
 * [Trabalhando com a API de conectores](connecting-external-content-connectors-api-overview.md)
 * [Use o Postman com a API de conectores do Microsoft Graph](connecting-external-content-connectors-api-postman.md)
 * [Criar seu primeiro conector Microsoft Graph personalizado](connecting-external-content-build-quickstart.yml)

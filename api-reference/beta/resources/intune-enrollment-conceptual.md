@@ -4,12 +4,12 @@ description: Lista a API Graph microsoft para pontos de extremidade do Intune (R
 author: dougeby
 ms.localizationpriority: medium
 ms.prod: intune
-ms.openlocfilehash: 46be1dedc9d9b50f92959ef90c0d76a3353ca7f3
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 5e0e299a5275e55ddf70d604916f163b02da990b
+ms.sourcegitcommit: efa06c63cd3154bcc7ecc993011f314c2dea9a92
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59091241"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63368018"
 ---
 # <a name="enroll-corporate-owned-devices-by-using-intune"></a>Registrar dispositivos de propriedade corporativa por meio do Intune
 
@@ -54,6 +54,7 @@ Os seguintes recursos do Graph estão disponíveis para gerenciar dispositivos c
 - [Limite de inscrição sugerido](intune-enrollment-suggestedenrollmentlimit.md)
 - [Atribuição do perfil de implantação do Windows Autopilot](intune-enrollment-windowsautopilotdeploymentprofileassignment.md)
 - [Identidade do dispositivo do Windows Autopilot](intune-enrollment-windowsautopilotdeviceidentity.md)
+- [Windows estado de correção do dispositivo de piloto automático](intune-enrollment-windowsautopilotdeviceremediationstate.md)
 - [Tipo de dispositivo do Windows Autopilot](intune-enrollment-windowsautopilotdevicetype.md)
 - [Status detalhado de atribuição do perfil do Windows Autopilot](intune-enrollment-windowsautopilotprofileassignmentdetailedstatus.md)
 - [Status de atribuição do perfil do Windows Autopilot](intune-enrollment-windowsautopilotprofileassignmentstatus.md)
@@ -62,3 +63,4 @@ Os seguintes recursos do Graph estão disponíveis para gerenciar dispositivos c
 - [Tipo de uso do dispositivo Windows](intune-enrollment-windowsdeviceusagetype.md)
 - [Configurações de tela de status de registro do Windows](intune-enrollment-windowsenrollmentstatusscreensettings.md)
 - [Tipo de usuário do Windows](intune-enrollment-windowsusertype.md)
+

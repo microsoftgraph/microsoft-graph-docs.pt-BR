@@ -4,12 +4,12 @@ description: Lista a API Graph microsoft para pontos de extremidade do Intune (R
 author: dougeby
 ms.localizationpriority: medium
 ms.prod: intune
-ms.openlocfilehash: 3abcb3af4e8f9fd5337be8ea5f08010016b6fe0d
-ms.sourcegitcommit: 15956da1b4a7d523363ffa8afb5e2059fbf680ce
+ms.openlocfilehash: c9f4eee1ab3c4b1ea58b27fd0fea2af879b909e9
+ms.sourcegitcommit: efa06c63cd3154bcc7ecc993011f314c2dea9a92
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/01/2022
-ms.locfileid: "62292036"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63368193"
 ---
 # <a name="device-management-in-microsoft-intune"></a>Gerenciamento de dispositivos no Microsoft Intune
 
@@ -194,6 +194,7 @@ Namespace: microsoft.graph
 - [Resultado de ação de revogar licenças VPP da Apple](intune-devices-revokeapplevpplicensesactionresult.md)
 - [Informações da marca de escopo de função](intune-auditing-rolescopetaginfo.md)
 - [Girar o resultado da ação do dispositivo de chaves do BitLocker](intune-devices-rotatebitlockerkeysdeviceactionresult.md)
+- [Estado da execução](intune-devices-runstate.md)
 - [Resumo do estado da categoria de linha de base de segurança](intune-deviceintent-securitybaselinecategorystatesummary.md)
 - [Estado de conformidade da linha de base de segurança](intune-deviceintent-securitybaselinecompliancestate.md)
 - [Política de contribuição da linha de base de segurança](intune-deviceintent-securitybaselinecontributingpolicy.md)
@@ -249,7 +250,7 @@ Namespace: microsoft.graph
 - [Histórico de pontuação da análise da experiência do usuário](intune-devices-userexperienceanalyticsscorehistory.md)
 - [Configurações de análise de experiência do usuário](intune-devices-userexperienceanalyticssettings.md)
 - [Análise de experiência do usuário resumida por](intune-devices-userexperienceanalyticssummarizedby.md)
-- [Análise de experiência do usuário Windows 10 resumo de dispositivos](intune-devices-userexperienceanalyticswindows10devicessummary.md)
+- [Resumo de análise de experiência do usuário Windows 10 dispositivos](intune-devices-userexperienceanalyticswindows10devicessummary.md)
 - [A análise de experiência do usuário funciona em qualquer lugar do dispositivo](intune-devices-userexperienceanalyticsworkfromanywheredevice.md)
 - [Análise de experiência do usuário funciona em qualquer lugar resumo de dispositivos](intune-devices-userexperienceanalyticsworkfromanywheredevicessummary.md)
 - [A análise de experiência do usuário funciona de qualquer lugar métrica de preparação de hardware](intune-devices-userexperienceanalyticsworkfromanywherehardwarereadinessmetric.md)

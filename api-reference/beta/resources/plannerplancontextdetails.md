@@ -1,29 +1,40 @@
 ---
-title: tipo de recurso plannerPlanContextDetails
-description: O recurso **plannerPlanContextDetails** contém informações adicionais sobre um plannerPlanContext.
-localization_priority: Normal
+title: Tipo de recurso plannerPlanContextDetails
+description: O **recurso plannerPlanContextDetails** contém informações adicionais sobre um plannerPlanContext.
+ms.localizationpriority: medium
 author: TarkanSevilmis
 ms.prod: planner
 doc_type: resourcePageType
-ms.openlocfilehash: 0ba8155957b015e5b826253f382281bb7852d5a3
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: bdb65fab6aecf9c61e066c7e80e9226220c3491c
+ms.sourcegitcommit: efa06c63cd3154bcc7ecc993011f314c2dea9a92
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48064077"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63367920"
 ---
-# <a name="plannerplancontextdetails-resource-type"></a>tipo de recurso plannerPlanContextDetails
+# <a name="plannerplancontextdetails-resource-type"></a>Tipo de recurso plannerPlanContextDetails
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-O recurso **plannerPlanContextDetails** contém informações adicionais sobre um [plannerPlanContext](plannerplancontext.md).
+O **recurso plannerPlanContextDetails** contém informações adicionais sobre um [plannerPlanContext](plannerplancontext.md).
 
 ## <a name="properties"></a>Propriedades
 | Propriedade     | Tipo   |Descrição|
 |:---------------|:--------|:----------|
-|url|Cadeia de caracteres|URL da experiência do usuário representada pelo [plannerPlanContext](plannerplancontext.md)associado. |
+|customLinkText|String|Anulável. Especifica o texto a ser usado em uma experiência do usuário para exibir um link do [plannerPlanContext associado](plannerplancontext.md). Se nulo, os aplicativos devem exibir o link com um texto personalizado com base na **propriedade displayLinkType** .|
+|displayLinkType|plannerPlanContextType|Especifica como um aplicativo deve exibir o link para o **plannerPlanContext associado**. Os aplicativos podem optar por fornecer texto, descrição, ícones ou outras experiências personalizadas com base no tipo do link. Os valores possíveis são: `teamsTab`, `sharePointPage`, `meetingNotes`, `other`, `unknownFutureValue`.|
+|url|Cadeia de caracteres|URL da experiência do usuário representada pelo **plannerPlanContext associado**. |
+|estado|plannerContextState| Indica o estado do **plannerPlanContext associado**. |
+
+### <a name="plannercontextstate-values"></a>valores plannerContextState
+
+|Valor              |Descrição|
+|:------------------|:----------------------------------------------------------------------|
+|active             | O contexto não tem problemas.                                          |
+|delinked           | Um **plannerPlanContext** anteriormente vinculado não está mais vinculado ao plano. |
+|unknownFutureValue | Valor de sentinela de enumeração evolvável. Não usar.                     |
 
 ## <a name="json-representation"></a>Representação JSON
 
@@ -31,15 +42,15 @@ Veja a seguir uma representação JSON do recurso.
 
 <!-- {
   "blockType": "resource",
-  "optionalProperties": [
-
-  ],
   "@odata.type": "microsoft.graph.plannerPlanContextDetails"
 }-->
 
 ```json
 {
-  "url": "String"
+  "url": "string",
+  "customLinkText": "string",
+  "displayLinkType": "string",
+  "state": "string"
 }
 
 ```
