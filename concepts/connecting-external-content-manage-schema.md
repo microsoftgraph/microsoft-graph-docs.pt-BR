@@ -5,12 +5,12 @@ ms.localizationpriority: high
 author: mecampos
 doc_type: conceptualPageType
 ms.prod: search
-ms.openlocfilehash: c9a90807ae45184d6ae86d9ca9a5a6f9161f38b5
-ms.sourcegitcommit: 3e2239e60b6dc53997b7d4356a20fc3d365d6238
+ms.openlocfilehash: 77a233c41a09af0e5ec305b29ba25f19805c27bc
+ms.sourcegitcommit: 77d2ab5018371f153d47cc1cd25f9dcbaca28a95
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/02/2021
-ms.locfileid: "61266170"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63335567"
 ---
 <!---<author of this doc: rsamai>--->
 
@@ -73,11 +73,12 @@ Se uma propriedade for recuperável, seu valor poderá ser retornado nos resulta
 
 ### <a name="refinable"></a>Refinável
 
-Se uma propriedade for refinável, um administrador poderá configurá-la como um filtro personalizado na página de resultados da Pesquisa da Microsoft.
+Se uma propriedade for refinável, um administrador poderá configurá-la como um filtro personalizado na página de resultados da Pesquisa da Microsoft. Uma propriedade `refinable` não pode ser `searchable`.
 
 ![Refinar resultados por categorias, uma propriedade refinável](./images/connectors-images/connecting-external-content-manage-schema-5.svg)
 
 *Refinar resultados por `tags`, uma propriedade refináveis.*
+
 
 ## <a name="semantic-labels"></a>Rótulos semânticos
 

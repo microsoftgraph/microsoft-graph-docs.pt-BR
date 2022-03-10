@@ -5,12 +5,12 @@ author: AkJo
 ms.localizationpriority: high
 ms.prod: microsoft-teams
 doc_type: resourcePageType
-ms.openlocfilehash: d048f38389ed85781556b526b5592ea7a72f819e
-ms.sourcegitcommit: 4e16f26b6b685a6a3dae855a04979c84105609b9
+ms.openlocfilehash: 27c31e3bd23f5a3e204b8747f9724af93be7a4c5
+ms.sourcegitcommit: 77d2ab5018371f153d47cc1cd25f9dcbaca28a95
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/10/2022
-ms.locfileid: "62519681"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63335980"
 ---
 # <a name="team-resource-type"></a>tipo de recurso de equipe
 
@@ -20,14 +20,14 @@ Namespace: microsoft.graph
 
 No Microsoft Teams, uma equipe é um conjunto de objetos de [canal](channel.md). Um canal representa um tópico e, portanto, um isolamento lógico da discussão em uma equipe.
 
-Cada equipe está associada a um [grupo](../resources/group.md). O grupo tem a mesma ID da equipe, por exemplo, `/groups/{id}/team` é o mesmo `/teams/{id}`. Confira mais informações sobre como trabalhar com grupos e membros em equipes, confira [Usar a API REST do Microsoft Graph para trabalhar com o Microsoft Teams](teams-api-overview.md).
+Cada equipe está associada a um [grupo Microsoft 365](../resources/group.md). O grupo tem a mesma ID da equipe, por exemplo, `/groups/{id}/team` é o mesmo `/teams/{id}`. Confira mais informações sobre como trabalhar com grupos e membros em equipes, confira [Usar a API REST do Microsoft Graph para trabalhar com o Microsoft Teams](teams-api-overview.md).
 
 ## <a name="methods"></a>Métodos
 
 | Método       | Tipo de retorno  |Descrição|
 |:---------------|:--------|:----------|
 |[Criar equipe](../api/team-post.md) | [teamsAsyncOperation](teamsasyncoperation.md) | Crie uma equipe do zero. |
-|[Criar equipe a partir do grupo](../api/team-put-teams.md) | [team](team.md) | Crie uma nova equipe ou adicione uma equipe a um grupo existente.|
+|[Criar equipe a partir do grupo](../api/team-put-teams.md) | [team](team.md) | Crie uma nova equipe ou adicione uma equipe a um grupo Microsoft 365 existente.|
 |[Obter equipe](../api/team-get.md) | [team](team.md) | Recupere as propriedades e relações da equipe especificada.|
 |[Atualizar equipe](../api/team-update.md) | [team](team.md) |Atualize as propriedades da equipe especificada. |
 |[Excluir equipe](../api/group-delete.md) | Nenhum |Exclua a equipe e o grupo associado. |
@@ -94,7 +94,7 @@ Para um exemplo de solicitação POST, confira [Solicitação (criar equipe no e
 |photo|[profilePhoto](../resources/profilephoto.md)|Foto da equipe.|
 |[primaryChannel](../api/team-get-primarychannel.md)|[channel](channel.md)| O canal geral da equipe. |
 |Cronograma|[Cronograma](schedule.md)| Cronograma de turno para essa equipe.|
-|template|[teamsTemplate](teamstemplate.md)| O modelo usado para criar essa equipe. Confira os [modelos disponíveis](/MicrosoftTeams/get-started-with-teams-templates). |
+|template|[teamsTemplate](teamstemplate.md)| O modelo a partir do qual essa equipe foi criada. Consulte [modelos disponíveis](/MicrosoftTeams/get-started-with-teams-templates). |
 |permissionGrants|Coleção [resourceSpecificPermissionGrant](resourcespecificpermissiongrant.md)| Uma coleção de permissões concedidas a aplicativos para acessar a equipe.|
 |tags|Coleção [teamworkTag](../resources/teamworktag.md)|Os rótulos associados com a equipe.|
 
