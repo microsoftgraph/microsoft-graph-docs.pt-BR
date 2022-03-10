@@ -1,11 +1,11 @@
 ---
 description: Arquivo gerado automaticamente. NÃO MODIFICAR
-ms.openlocfilehash: d50038885e83aeee9cc7c03fcc1be49511b734cf
-ms.sourcegitcommit: 2456cf3c4117b88afefef139593796a2f919e7cc
+ms.openlocfilehash: 52cda61456831d234a2e53a881b9c91a6b7d8da5
+ms.sourcegitcommit: dfa87904fb26dd5161f604f2716ce1d90dad31ed
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/18/2021
-ms.locfileid: "61101602"
+ms.lasthandoff: 03/09/2022
+ms.locfileid: "63411041"
 ---
 ```go
 
@@ -21,7 +21,7 @@ options := &msgraphsdk.AuthenticationContextClassReferenceRequestBuilderPatchOpt
     Body: requestBody,
 }
 authenticationContextClassReferenceId := "authenticationContextClassReference-id"
-graphClient.Identity().ConditionalAccess().AuthenticationContextClassReferencesById(&authenticationContextClassReferenceId).Patch(options)
+result, err := graphClient.Identity().ConditionalAccess().AuthenticationContextClassReferencesById(&authenticationContextClassReferenceId).Patch(options)
 
 
 ```

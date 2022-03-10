@@ -1,11 +1,11 @@
 ---
 description: Arquivo gerado automaticamente. NÃO MODIFICAR
-ms.openlocfilehash: 8571892ed35a7267d5c963e8b72907ec9f99110d796d1974b26fb5177f5bdf74
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 2dd2910228ace13effd129a477db23b9df0d45b3
+ms.sourcegitcommit: dfa87904fb26dd5161f604f2716ce1d90dad31ed
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "56899806"
+ms.lasthandoff: 03/09/2022
+ms.locfileid: "63410533"
 ---
 ```java
 
@@ -14,12 +14,12 @@ GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProv
 DirectorySetting directorySetting = new DirectorySetting();
 LinkedList<SettingValue> valuesList = new LinkedList<SettingValue>();
 SettingValue values = new SettingValue();
-values.name = "name-value";
-values.value = "value-value";
+values.name = "CustomBlockedWordsList";
+values.value = "Contoso";
 valuesList.add(values);
 directorySetting.values = valuesList;
 
-graphClient.settings("{id}")
+graphClient.settings("3c105fc3-2254-4861-9e2d-d59e2126f3ef")
     .buildRequest()
     .patch(directorySetting);
 

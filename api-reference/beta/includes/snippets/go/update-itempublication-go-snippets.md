@@ -1,11 +1,11 @@
 ---
 description: Arquivo gerado automaticamente. NÃO MODIFICAR
-ms.openlocfilehash: 02177edb8484673bb577c81e12a2844afe9d8d3f
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: 425e97610a561591ecc0d17f1bb0256471d39254
+ms.sourcegitcommit: dfa87904fb26dd5161f604f2716ce1d90dad31ed
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62127465"
+ms.lasthandoff: 03/09/2022
+ms.locfileid: "63411410"
 ---
 ```go
 
@@ -22,7 +22,7 @@ options := &msgraphsdk.ItemPublicationRequestBuilderPatchOptions{
 }
 userId := "user-id"
 itemPublicationId := "itemPublication-id"
-graphClient.UsersById(&userId).Profile().PublicationsById(&itemPublicationId).Patch(options)
+result, err := graphClient.UsersById(&userId).Profile().PublicationsById(&itemPublicationId).Patch(options)
 
 
 ```

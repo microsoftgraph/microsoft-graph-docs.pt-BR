@@ -1,11 +1,11 @@
 ---
 description: Arquivo gerado automaticamente. NÃO MODIFICAR
-ms.openlocfilehash: 371cf16294da84260f36571800383106c7a6970a
-ms.sourcegitcommit: 2456cf3c4117b88afefef139593796a2f919e7cc
+ms.openlocfilehash: 16abb53dde6dbce121ea8bef18bae862b0c1ddd0
+ms.sourcegitcommit: dfa87904fb26dd5161f604f2716ce1d90dad31ed
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/18/2021
-ms.locfileid: "61084609"
+ms.lasthandoff: 03/09/2022
+ms.locfileid: "63410829"
 ---
 ```go
 
@@ -44,7 +44,7 @@ options := &msgraphsdk.SendActivityNotificationRequestBuilderPostOptions{
     Body: requestBody,
 }
 chatId := "chat-id"
-graphClient.ChatsById(&chatId).SendActivityNotification().Post(options)
+graphClient.ChatsById(&chatId).SendActivityNotification(chat-id).Post(options)
 
 
 ```

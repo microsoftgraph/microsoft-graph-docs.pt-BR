@@ -1,25 +1,25 @@
 ---
 description: Arquivo gerado automaticamente. NÃO MODIFICAR
-ms.openlocfilehash: 68e9d8db2971c8581313b702ae5baf9b56a60c18
-ms.sourcegitcommit: 2456cf3c4117b88afefef139593796a2f919e7cc
+ms.openlocfilehash: c76393fbed46ab8873b3f3386c485659b9f57c63
+ms.sourcegitcommit: dfa87904fb26dd5161f604f2716ce1d90dad31ed
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/18/2021
-ms.locfileid: "61101414"
+ms.lasthandoff: 03/09/2022
+ms.locfileid: "63410636"
 ---
 ```go
 
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
 graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
-requestBody := msgraphsdk.New()
+requestBody := msgraphsdk.NewClientContextRequestBody()
 clientContext := "clientContext-value"
 requestBody.SetClientContext(&clientContext)
 options := &msgraphsdk.CancelMediaProcessingRequestBuilderPostOptions{
     Body: requestBody,
 }
 callId := "call-id"
-result, err := graphClient.Communications().CallsById(&callId).CancelMediaProcessing().Post(options)
+result, err := graphClient.Communications().CallsById(&callId).CancelMediaProcessing(call-id).Post(options)
 
 
 ```

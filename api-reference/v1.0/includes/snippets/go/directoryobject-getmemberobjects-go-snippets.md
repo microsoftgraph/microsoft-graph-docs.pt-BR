@@ -1,25 +1,25 @@
 ---
 description: Arquivo gerado automaticamente. NÃO MODIFICAR
-ms.openlocfilehash: 340266b5ff335f188837ac6511135f99f3ba9adb
-ms.sourcegitcommit: 2456cf3c4117b88afefef139593796a2f919e7cc
+ms.openlocfilehash: 03839ad9038d788c87c6e2cb4ea7f528922d1898
+ms.sourcegitcommit: dfa87904fb26dd5161f604f2716ce1d90dad31ed
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/18/2021
-ms.locfileid: "61083424"
+ms.lasthandoff: 03/09/2022
+ms.locfileid: "63411428"
 ---
 ```go
 
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
 graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
-requestBody := msgraphsdk.New()
+requestBody := msgraphsdk.NewSecurityEnabledOnlyRequestBody()
 securityEnabledOnly := true
 requestBody.SetSecurityEnabledOnly(&securityEnabledOnly)
 options := &msgraphsdk.GetMemberObjectsRequestBuilderPostOptions{
     Body: requestBody,
 }
 directoryObjectId := "directoryObject-id"
-result, err := graphClient.DirectoryObjectsById(&directoryObjectId).GetMemberObjects().Post(options)
+result, err := graphClient.DirectoryObjectsById(&directoryObjectId).GetMemberObjects(directoryObject-id).Post(options)
 
 
 ```

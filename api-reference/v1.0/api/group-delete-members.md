@@ -1,22 +1,22 @@
 ---
 title: Remover membro
-description: Use essa API para remover um membro de um grupo por meio **da** propriedade de navegação membros.
+description: Remove um membro de um grupo através da propriedade de navegação dos membros.
 ms.localizationpriority: high
 author: Jordanndahl
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: 7cf15af53ba9322489b694a507741065881d3e8a
-ms.sourcegitcommit: c47e3d1f3c5f7e2635b2ad29dfef8fe7c8080bc8
+ms.openlocfilehash: e9c07307c8276b02c536effaa81a77296a85cf6b
+ms.sourcegitcommit: 77d2ab5018371f153d47cc1cd25f9dcbaca28a95
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/15/2021
-ms.locfileid: "61524872"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63335966"
 ---
 # <a name="remove-member"></a>Remover membro
 
 Namespace: microsoft.graph
 
-Use essa API para remover um membro de um grupo por meio **da** propriedade de navegação membros. Não é possível remover um membro de grupos com associações dinâmicas.
+Remove um membro de um grupo através da propriedade de navegação dos **membros**. Não é possível remover um membro de grupos com associações dinâmicas.
 
 ## <a name="permissions"></a>Permissions
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
@@ -26,6 +26,9 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |Delegado (conta corporativa ou de estudante) | GroupMember.ReadWrite.All, Group.ReadWrite.All, Directory.ReadWrite.All, Directory.AccessAsUser.All |
 |Delegado (conta pessoal da Microsoft) | Sem suporte. |
 |Aplicativo | GroupMember.ReadWrite.All, Group.ReadWrite.All, Directory.ReadWrite.All |
+
+> [!IMPORTANT]
+> Para remover membros de um grupo de atribuição de funções, o usuário ou aplicativo de chamada também deve receber a permissão *RoleManagement.ReadWrite.Directory*.
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- { "blockType": "ignored" } -->

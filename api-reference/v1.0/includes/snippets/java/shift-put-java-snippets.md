@@ -1,11 +1,11 @@
 ---
 description: Arquivo gerado automaticamente. NÃO MODIFICAR
-ms.openlocfilehash: ada1ee40c15d5744362c1fd790888cea1234d014c5e7b13bd06480ea234cb048
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: f3a08b86463b89339ad14bf1ed9ca600a0fd78f0
+ms.sourcegitcommit: dfa87904fb26dd5161f604f2716ce1d90dad31ed
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "57274670"
+ms.lasthandoff: 03/09/2022
+ms.locfileid: "63410845"
 ---
 ```java
 
@@ -64,6 +64,6 @@ shift.draftShift = draftShift;
 
 graphClient.teams("{teamId}").schedule().shifts("{shiftId}")
     .buildRequest( requestOptions )
-    .patch(shift);
+    .put(shift);
 
 ```

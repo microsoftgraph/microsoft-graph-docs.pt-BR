@@ -1,11 +1,11 @@
 ---
 description: Arquivo gerado automaticamente. NÃO MODIFICAR
-ms.openlocfilehash: ace3906384f1bea01b33ca18e572197fdeaaa5d2
-ms.sourcegitcommit: 2456cf3c4117b88afefef139593796a2f919e7cc
+ms.openlocfilehash: af220ff111b66881d162b8b744863b3476ce964a
+ms.sourcegitcommit: dfa87904fb26dd5161f604f2716ce1d90dad31ed
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/18/2021
-ms.locfileid: "61100435"
+ms.lasthandoff: 03/09/2022
+ms.locfileid: "63410615"
 ---
 ```go
 
@@ -25,7 +25,7 @@ options := &msgraphsdk.ApplyTagsRequestBuilderPostOptions{
 caseId := "case-id"
 reviewSetId := "reviewSet-id"
 reviewSetQueryId := "reviewSetQuery-id"
-graphClient.Compliance().Ediscovery().CasesById(&caseId).ReviewSetsById(&reviewSetId).QueriesById(&reviewSetQueryId).ApplyTags().Post(options)
+graphClient.Compliance().Ediscovery().CasesById(&caseId).ReviewSetsById(&reviewSetId).QueriesById(&reviewSetQueryId).ApplyTags(case-id, reviewSet-id, reviewSetQuery-id).Post(options)
 
 
 ```

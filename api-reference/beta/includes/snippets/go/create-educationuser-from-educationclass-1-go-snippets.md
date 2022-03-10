@@ -1,11 +1,11 @@
 ---
 description: Arquivo gerado automaticamente. NÃO MODIFICAR
-ms.openlocfilehash: 8284395125c5826fa11c1a37dfd18678c815fb8b
-ms.sourcegitcommit: 2456cf3c4117b88afefef139593796a2f919e7cc
+ms.openlocfilehash: a9fb31b3a6410de85b74dd25b22922b9506c1883
+ms.sourcegitcommit: dfa87904fb26dd5161f604f2716ce1d90dad31ed
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/18/2021
-ms.locfileid: "61102179"
+ms.lasthandoff: 03/09/2022
+ms.locfileid: "63411489"
 ---
 ```go
 
@@ -16,11 +16,12 @@ requestBody := msgraphsdk.New()
 requestBody.SetAdditionalData(map[string]interface{}{
     "@odata.id": "https://graph.microsoft.com/beta/education/users/13015",
 }
-options := &msgraphsdk.RefRequestBuilderPostOptions{
+options := &msgraphsdk.EducationUserRequestBuilderPostOptions{
     Body: requestBody,
 }
 educationClassId := "educationClass-id"
-result, err := graphClient.Education().ClassesById(&educationClassId).Members().$ref().Post(options)
+educationUserId := "educationUser-id"
+graphClient.Education().ClassesById(&educationClassId).MembersById(&educationUserId).Post(options)
 
 
 ```

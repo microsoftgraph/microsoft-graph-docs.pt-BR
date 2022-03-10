@@ -1,18 +1,18 @@
 ---
 description: Arquivo gerado automaticamente. NÃO MODIFICAR
-ms.openlocfilehash: 5aeb019f31ae2d7e09792bb18c0300e83e66da6b
-ms.sourcegitcommit: 2456cf3c4117b88afefef139593796a2f919e7cc
+ms.openlocfilehash: fbbf87da0b37f39da1a840332b8545da29034007
+ms.sourcegitcommit: dfa87904fb26dd5161f604f2716ce1d90dad31ed
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/18/2021
-ms.locfileid: "61095138"
+ms.lasthandoff: 03/09/2022
+ms.locfileid: "63411205"
 ---
 ```go
 
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
 graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
-requestBody := msgraphsdk.New()
+requestBody := msgraphsdk.NewCriteriaRequestBody()
 criteria := msgraphsdk.NewSynchronizationJobRestartCriteria()
 requestBody.SetCriteria(criteria)
 resetScope := "Watermark, Escrows, QuarantineState"
@@ -26,7 +26,7 @@ options := &msgraphsdk.RestartRequestBuilderPostOptions{
 }
 servicePrincipalId := "servicePrincipal-id"
 synchronizationJobId := "synchronizationJob-id"
-graphClient.ServicePrincipalsById(&servicePrincipalId).Synchronization().JobsById(&synchronizationJobId).Restart().Post(options)
+graphClient.ServicePrincipalsById(&servicePrincipalId).Synchronization().JobsById(&synchronizationJobId).Restart(servicePrincipal-id, synchronizationJob-id).Post(options)
 
 
 ```

@@ -1,11 +1,11 @@
 ---
 description: Arquivo gerado automaticamente. NÃO MODIFICAR
-ms.openlocfilehash: eb251991366e53cf099143cd41f2a2f014f01b03
-ms.sourcegitcommit: 2456cf3c4117b88afefef139593796a2f919e7cc
+ms.openlocfilehash: ecfd595cf1e779c76dcfcb82458d378a7ec3f530
+ms.sourcegitcommit: dfa87904fb26dd5161f604f2716ce1d90dad31ed
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/18/2021
-ms.locfileid: "61089197"
+ms.lasthandoff: 03/09/2022
+ms.locfileid: "63411422"
 ---
 ```go
 
@@ -16,11 +16,12 @@ requestBody := msgraphsdk.New()
 requestBody.SetAdditionalData(map[string]interface{}{
     "@odata.id": "https://graph.microsoft.com/v1.0/directoryObjects/{id}",
 }
-options := &msgraphsdk.RefRequestBuilderPostOptions{
+options := &msgraphsdk.DirectoryObjectRequestBuilderPostOptions{
     Body: requestBody,
 }
 groupId := "group-id"
-result, err := graphClient.GroupsById(&groupId).Members().$ref().Post(options)
+directoryObjectId := "directoryObject-id"
+graphClient.GroupsById(&groupId).MembersById(&directoryObjectId).Post(options)
 
 
 ```
