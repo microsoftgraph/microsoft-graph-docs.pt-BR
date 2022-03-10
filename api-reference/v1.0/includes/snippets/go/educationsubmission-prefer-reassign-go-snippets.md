@@ -1,11 +1,11 @@
 ---
 description: Arquivo gerado automaticamente. NÃO MODIFICAR
-ms.openlocfilehash: 92b61ba71cefba15f375f2736d43773a4c885c02
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: 1bad3adc011d05fe9f741692379b9253b95dba02
+ms.sourcegitcommit: dfa87904fb26dd5161f604f2716ce1d90dad31ed
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62111176"
+ms.lasthandoff: 03/09/2022
+ms.locfileid: "63410862"
 ---
 ```go
 
@@ -21,7 +21,7 @@ options := &msgraphsdk.ReassignRequestBuilderPostOptions{
 educationClassId := "educationClass-id"
 educationAssignmentId := "educationAssignment-id"
 educationSubmissionId := "educationSubmission-id"
-result, err := graphClient.Education().ClassesById(&educationClassId).AssignmentsById(&educationAssignmentId).SubmissionsById(&educationSubmissionId).Reassign().Post(options)
+result, err := graphClient.Education().ClassesById(&educationClassId).AssignmentsById(&educationAssignmentId).SubmissionsById(&educationSubmissionId).Reassign(educationClass-id, educationAssignment-id, educationSubmission-id).Post(options)
 
 
 ```

@@ -1,11 +1,11 @@
 ---
 description: Arquivo gerado automaticamente. NÃO MODIFICAR
-ms.openlocfilehash: 1c303ad4380a9f17dc57338e2d3ca3c088feb7c1
-ms.sourcegitcommit: 2456cf3c4117b88afefef139593796a2f919e7cc
+ms.openlocfilehash: c0914a8d37d661418d8c1b9d6255a0222fed4f62
+ms.sourcegitcommit: dfa87904fb26dd5161f604f2716ce1d90dad31ed
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/18/2021
-ms.locfileid: "61090651"
+ms.lasthandoff: 03/09/2022
+ms.locfileid: "63410930"
 ---
 ```go
 
@@ -22,7 +22,7 @@ requestBody.SetIsPhoneOneTimePasswordAuthenticationEnabled(&isPhoneOneTimePasswo
 options := &msgraphsdk.B2cAuthenticationMethodsPolicyRequestBuilderPatchOptions{
     Body: requestBody,
 }
-graphClient.Policies().B2cAuthenticationMethodsPolicy().Patch(options)
+result, err := graphClient.Policies().B2cAuthenticationMethodsPolicy().Patch(options)
 
 
 ```

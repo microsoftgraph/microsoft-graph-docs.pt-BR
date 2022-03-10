@@ -1,21 +1,21 @@
 ---
 description: Arquivo gerado automaticamente. NÃO MODIFICAR
-ms.openlocfilehash: e9a8cc29248ad410d03e7346b28d7e9ab404fe63
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: 7ffbe816e6771eac4934d56a5b5cc355ca4b6bb8
+ms.sourcegitcommit: dfa87904fb26dd5161f604f2716ce1d90dad31ed
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62114382"
+ms.lasthandoff: 03/09/2022
+ms.locfileid: "63410696"
 ---
 ```powershell
 
 Import-Module Microsoft.Graph.Applications
 
 $params = @{
-    Name = "extensionName"
-    DataType = "string"
+    Name = "jobGroup"
+    DataType = "String"
     TargetObjects = @(
-        "Application"
+        "User"
     )
 }
 

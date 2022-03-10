@@ -1,11 +1,11 @@
 ---
 description: Arquivo gerado automaticamente. NÃO MODIFICAR
-ms.openlocfilehash: 0d0fac34b747884873bd707b17d70b9b48d5b33f
-ms.sourcegitcommit: 2456cf3c4117b88afefef139593796a2f919e7cc
+ms.openlocfilehash: aaeafda61ddaced303cdc8f1492bd3ff1839f8c3
+ms.sourcegitcommit: dfa87904fb26dd5161f604f2716ce1d90dad31ed
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/18/2021
-ms.locfileid: "61091372"
+ms.lasthandoff: 03/09/2022
+ms.locfileid: "63411609"
 ---
 ```go
 
@@ -33,7 +33,7 @@ options := &msgraphsdk.CreatePasswordSingleSignOnCredentialsRequestBuilderPostOp
     Body: requestBody,
 }
 servicePrincipalId := "servicePrincipal-id"
-result, err := graphClient.ServicePrincipalsById(&servicePrincipalId).CreatePasswordSingleSignOnCredentials().Post(options)
+result, err := graphClient.ServicePrincipalsById(&servicePrincipalId).CreatePasswordSingleSignOnCredentials(servicePrincipal-id).Post(options)
 
 
 ```

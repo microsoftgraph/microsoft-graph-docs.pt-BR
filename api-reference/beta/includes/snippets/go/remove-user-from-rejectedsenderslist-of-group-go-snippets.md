@@ -1,25 +1,26 @@
 ---
 description: Arquivo gerado automaticamente. NÃO MODIFICAR
-ms.openlocfilehash: 1430038467925fe92cedfc747873f2a829627a2a
-ms.sourcegitcommit: 2456cf3c4117b88afefef139593796a2f919e7cc
+ms.openlocfilehash: 23d93122d8af7341901c504a10e9713f42a4ea8a
+ms.sourcegitcommit: dfa87904fb26dd5161f604f2716ce1d90dad31ed
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/18/2021
-ms.locfileid: "61097475"
+ms.lasthandoff: 03/09/2022
+ms.locfileid: "63411446"
 ---
 ```go
 
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
 graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
-requestParameters := &msgraphsdk.RefRequestBuilderDeleteQueryParameters{
+requestParameters := &msgraphsdk.DirectoryObjectRequestBuilderDeleteQueryParameters{
     Id: "https://graph.microsoft.com/beta/users/%7Bid%7D",
 }
-options := &msgraphsdk.RefRequestBuilderDeleteOptions{
+options := &msgraphsdk.DirectoryObjectRequestBuilderDeleteOptions{
     Q: requestParameters,
 }
 groupId := "group-id"
-graphClient.GroupsById(&groupId).RejectedSenders().$ref().Delete(options)
+directoryObjectId := "directoryObject-id"
+graphClient.GroupsById(&groupId).RejectedSendersById(&directoryObjectId).Delete(options)
 
 
 ```

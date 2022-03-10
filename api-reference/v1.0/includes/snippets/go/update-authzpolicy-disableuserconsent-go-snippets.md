@@ -1,11 +1,11 @@
 ---
 description: Arquivo gerado automaticamente. NÃO MODIFICAR
-ms.openlocfilehash: 95fbea01cbc1ea27499c95f84cb2590b6218e48e
-ms.sourcegitcommit: 2456cf3c4117b88afefef139593796a2f919e7cc
+ms.openlocfilehash: e0ee1b1c79d624f8f6513bef186a26bf8cc161f9
+ms.sourcegitcommit: dfa87904fb26dd5161f604f2716ce1d90dad31ed
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/18/2021
-ms.locfileid: "61085102"
+ms.lasthandoff: 03/09/2022
+ms.locfileid: "63411330"
 ---
 ```go
 
@@ -20,7 +20,7 @@ defaultUserRolePermissions.SetPermissionGrantPoliciesAssigned( []string {
 options := &msgraphsdk.AuthorizationPolicyRequestBuilderPatchOptions{
     Body: requestBody,
 }
-graphClient.Policies().AuthorizationPolicy().Patch(options)
+result, err := graphClient.Policies().AuthorizationPolicy().Patch(options)
 
 
 ```

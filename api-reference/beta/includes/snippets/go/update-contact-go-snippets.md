@@ -1,11 +1,11 @@
 ---
 description: Arquivo gerado automaticamente. NÃO MODIFICAR
-ms.openlocfilehash: 5bbd614ec3a8a3558010f1a5d99faa6c9bbfed6e
-ms.sourcegitcommit: 2456cf3c4117b88afefef139593796a2f919e7cc
+ms.openlocfilehash: 927f5448b30a8846492d50829efd179aa9338060
+ms.sourcegitcommit: dfa87904fb26dd5161f604f2716ce1d90dad31ed
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/18/2021
-ms.locfileid: "61095442"
+ms.lasthandoff: 03/09/2022
+ms.locfileid: "63410913"
 ---
 ```go
 
@@ -32,7 +32,7 @@ options := &msgraphsdk.ContactRequestBuilderPatchOptions{
     Body: requestBody,
 }
 contactId := "contact-id"
-graphClient.Me().ContactsById(&contactId).Patch(options)
+result, err := graphClient.Me().ContactsById(&contactId).Patch(options)
 
 
 ```

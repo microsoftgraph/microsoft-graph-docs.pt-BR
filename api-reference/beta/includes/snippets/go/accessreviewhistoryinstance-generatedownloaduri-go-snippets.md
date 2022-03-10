@@ -1,11 +1,11 @@
 ---
 description: Arquivo gerado automaticamente. NÃO MODIFICAR
-ms.openlocfilehash: 6c3c28106c8fe7bacf361359575d80b2d68e66c7
-ms.sourcegitcommit: 25acfa7d0153336c9a35d30a1dd422aeadc1342c
+ms.openlocfilehash: 762f53cc24c9604a3622480e7e96d303581ec66d
+ms.sourcegitcommit: dfa87904fb26dd5161f604f2716ce1d90dad31ed
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/03/2022
-ms.locfileid: "62340541"
+ms.lasthandoff: 03/09/2022
+ms.locfileid: "63410715"
 ---
 ```go
 
@@ -14,7 +14,7 @@ graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
 accessReviewHistoryDefinitionId := "accessReviewHistoryDefinition-id"
 accessReviewHistoryInstanceId := "accessReviewHistoryInstance-id"
-result, err := graphClient.IdentityGovernance().AccessReviews().HistoryDefinitionsById(&accessReviewHistoryDefinitionId).InstancesById(&accessReviewHistoryInstanceId).GenerateDownloadUri().Post(nil)
+result, err := graphClient.IdentityGovernance().AccessReviews().HistoryDefinitionsById(&accessReviewHistoryDefinitionId).InstancesById(&accessReviewHistoryInstanceId).GenerateDownloadUri(accessReviewHistoryDefinition-id, accessReviewHistoryInstance-id).Post(nil)
 
 
 ```

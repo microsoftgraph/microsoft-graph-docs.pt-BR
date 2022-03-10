@@ -1,11 +1,11 @@
 ---
 description: Arquivo gerado automaticamente. NÃO MODIFICAR
-ms.openlocfilehash: 8878f1898baaa96c2e935b079872a0822626235b
-ms.sourcegitcommit: 2456cf3c4117b88afefef139593796a2f919e7cc
+ms.openlocfilehash: e387352c321d03540426351aed9b92ab581d8c97
+ms.sourcegitcommit: dfa87904fb26dd5161f604f2716ce1d90dad31ed
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/18/2021
-ms.locfileid: "61084582"
+ms.lasthandoff: 03/09/2022
+ms.locfileid: "63411145"
 ---
 ```go
 
@@ -20,7 +20,7 @@ options := &msgraphsdk.TeamworkTagRequestBuilderPatchOptions{
 }
 teamId := "team-id"
 teamworkTagId := "teamworkTag-id"
-graphClient.TeamsById(&teamId).TagsById(&teamworkTagId).Patch(options)
+result, err := graphClient.TeamsById(&teamId).TagsById(&teamworkTagId).Patch(options)
 
 
 ```

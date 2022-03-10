@@ -1,11 +1,11 @@
 ---
 description: Arquivo gerado automaticamente. NÃO MODIFICAR
-ms.openlocfilehash: ab883eac255c9b0d718855bb66b165a0e28f382f
-ms.sourcegitcommit: 2456cf3c4117b88afefef139593796a2f919e7cc
+ms.openlocfilehash: 266034c6801507a26f5413ae7581c833c89b3756
+ms.sourcegitcommit: dfa87904fb26dd5161f604f2716ce1d90dad31ed
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/18/2021
-ms.locfileid: "61082005"
+ms.lasthandoff: 03/09/2022
+ms.locfileid: "63411358"
 ---
 ```go
 
@@ -21,7 +21,7 @@ options := &msgraphsdk.ActivateServiceRequestBuilderPostOptions{
     Body: requestBody,
 }
 organizationId := "organization-id"
-graphClient.OrganizationById(&organizationId).ActivateService().Post(options)
+graphClient.OrganizationById(&organizationId).ActivateService(organization-id).Post(options)
 
 
 ```

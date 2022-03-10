@@ -1,11 +1,11 @@
 ---
 description: Arquivo gerado automaticamente. NÃO MODIFICAR
-ms.openlocfilehash: cc1a96891d9e9d9b3c3349348a19357ebdd7075d
-ms.sourcegitcommit: 2456cf3c4117b88afefef139593796a2f919e7cc
+ms.openlocfilehash: e844cfba0ee117e4039aa66597d5764c49a2e635
+ms.sourcegitcommit: dfa87904fb26dd5161f604f2716ce1d90dad31ed
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/18/2021
-ms.locfileid: "61098344"
+ms.lasthandoff: 03/09/2022
+ms.locfileid: "63411104"
 ---
 ```go
 
@@ -22,7 +22,7 @@ options := &msgraphsdk.ItemEmailRequestBuilderPatchOptions{
 }
 userId := "user-id"
 itemEmailId := "itemEmail-id"
-graphClient.UsersById(&userId).Profile().EmailsById(&itemEmailId).Patch(options)
+result, err := graphClient.UsersById(&userId).Profile().EmailsById(&itemEmailId).Patch(options)
 
 
 ```

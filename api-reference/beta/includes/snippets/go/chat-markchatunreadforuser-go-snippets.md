@@ -1,11 +1,11 @@
 ---
 description: Arquivo gerado automaticamente. NÃO MODIFICAR
-ms.openlocfilehash: 5de4fa79da11715118ec951ebf78446df2c3fcb1
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: 2bce47d008606823f8b6faaaf891ca8faef23da1
+ms.sourcegitcommit: dfa87904fb26dd5161f604f2716ce1d90dad31ed
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62137566"
+ms.lasthandoff: 03/09/2022
+ms.locfileid: "63410545"
 ---
 ```go
 
@@ -25,7 +25,7 @@ options := &msgraphsdk.MarkChatUnreadForUserRequestBuilderPostOptions{
     Body: requestBody,
 }
 chatId := "chat-id"
-graphClient.ChatsById(&chatId).MarkChatUnreadForUser().Post(options)
+graphClient.ChatsById(&chatId).MarkChatUnreadForUser(chat-id).Post(options)
 
 
 ```

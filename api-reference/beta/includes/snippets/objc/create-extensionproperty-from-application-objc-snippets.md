@@ -1,26 +1,26 @@
 ---
 description: Arquivo gerado automaticamente. NÃO MODIFICAR
-ms.openlocfilehash: 254cfa4d6932a74246525de27cf1e678715cff45293a3797260a626bf84f8caa
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 89e7db833ec31553c80ff9607156c5c14f58262b
+ms.sourcegitcommit: dfa87904fb26dd5161f604f2716ce1d90dad31ed
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "57156839"
+ms.lasthandoff: 03/09/2022
+ms.locfileid: "63410697"
 ---
 ```objc
 
 MSHTTPClient *httpClient = [MSClientFactory createHTTPClientWithAuthenticationProvider:authenticationProvider];
 
 NSString *MSGraphBaseURL = @"https://graph.microsoft.com/beta/";
-NSMutableURLRequest *urlRequest = [NSMutableURLRequest requestWithURL:[NSURL URLWithString:[MSGraphBaseURL stringByAppendingString:@"/applications/{id}/extensionProperties"]]];
+NSMutableURLRequest *urlRequest = [NSMutableURLRequest requestWithURL:[NSURL URLWithString:[MSGraphBaseURL stringByAppendingString:@"/applications/fd918e4b-c821-4efb-b50a-5eddd23afc6f/extensionProperties"]]];
 [urlRequest setHTTPMethod:@"POST"];
 [urlRequest setValue:@"application/json" forHTTPHeaderField:@"Content-Type"];
 
 MSGraphExtensionProperty *extensionProperty = [[MSGraphExtensionProperty alloc] init];
-[extensionProperty setName:@"extensionName"];
-[extensionProperty setDataType:@"string"];
+[extensionProperty setName:@"jobGroup"];
+[extensionProperty setDataType:@"String"];
 NSMutableArray *targetObjectsList = [[NSMutableArray alloc] init];
-[targetObjectsList addObject: @"Application"];
+[targetObjectsList addObject: @"User"];
 [extensionProperty setTargetObjects:targetObjectsList];
 
 NSError *error;
