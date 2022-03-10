@@ -24,7 +24,7 @@ items:
             href: users-you-can-reach.md
           - name: Implantações de nuvem nacional
             href: deployments.md
-          - name: Implantações híbridas (visualização)
+          - name: Implantações híbridas (preteridas)
             href: hybrid-rest-support.md
       - name: Tutoriais
         items:
@@ -147,6 +147,8 @@ items:
             href: outlook-large-attachments.md
           - name: ID Imutável
             href: outlook-immutable-id.md
+          - name: Inscreva-se para alterar as notificações
+            href: outlook-change-notifications-overview.md
       - name: Comunicações na nuvem
         items:
           - name: Visão Geral
@@ -206,7 +208,7 @@ items:
       - name: Reserva de clientes (visualização)
         href: booking-concept-overview.md
         displayName: 'Bookings, Microsoft Bookings'
-      - name: Dispositivos e aplicativos
+      - name: Gerenciamento de aplicativo e dispositivo
         expanded: true
         items:
           - name: Impressão na nuvem
@@ -217,7 +219,7 @@ items:
               - name: Upload dados para upload sessão
                 href: upload-data-to-upload-session.md
                 displayName: Universal Print Job Submission
-              - name: Alterar notificações
+              - name: Inscreva-se para alterar as notificações
                 href: universal-print-webhook-notifications.md
                 displayName: Universal Print Webhook Notifications
           - name: Gerenciamento corporativo
@@ -283,7 +285,7 @@ items:
             items:
               - name: Gerenciar os atributos de segurança personalizados (visualização)
                 href: custom-security-attributes-examples.md
-              - name: Usar o PIM para Azure AD para atribuir funções
+              - name: Usar o PIM para atribuir funções do Azure AD
                 href: tutorial-assign-azureadroles.md
           - name: Identidade e entrada
             items:
@@ -301,13 +303,15 @@ items:
                     href: accessreviews-overview.md
                   - name: Analisar o acesso a um grupo de segurança
                     href: tutorial-accessreviews-securitygroup.md
-                  - name: Analisar o acesso a um grupo do Microsoft 365
+                  - name: Examinar o acesso de usuários convidados
                     href: tutorial-accessreviews-M365group.md
+                  - name: Analisar o acesso a funções privilegiadas
+                    href: tutorial-accessreviews-roleassignments.md
                   - name: Configure o escopo
                     href: accessreviews-scope-concept.md
                   - name: Atribuir revisores
                     href: accessreviews-reviewers-concept.md
-              - name: Usar o PIM para Azure AD para atribuir funções
+              - name: Usar o PIM para atribuir funções do Azure AD
                 href: tutorial-assign-azureadroles.md
       - name: Correio
         displayName: 'Outlook, Outlook mail'
@@ -330,6 +334,8 @@ items:
             href: outlook-send-mail-from-other-user.md
           - name: ID Imutável
             href: outlook-immutable-id.md
+          - name: Inscreva-se para alterar as notificações
+            href: outlook-change-notifications-overview.md
       - name: Observações
         displayName: OneNote
         items:
@@ -407,6 +413,8 @@ items:
             href: outlook-get-shared-contacts-folders.md
           - name: ID Imutável
             href: outlook-immutable-id.md
+          - name: Inscreva-se para alterar as notificações
+            href: outlook-change-notifications-overview.md
       - name: Relatórios
         items:
           - name: Visão Geral
@@ -427,14 +435,16 @@ items:
             href: search-concept-custom-types.md
           - name: Pesquisar pessoas (visualização)
             href: search-concept-person.md
-          - name: Classificar resultados de pesquisa
-            href: search-concept-sort.md
+          - name: Gerenciar respostas de pesquisa do administrador (versão prévia)
+            href: search-concept-answers.md
+          - name: Gerenciar layout de resultados da pesquisa (versão prévia)
+            href: search-concept-display-layout.md
           - name: Refinar resultados de pesquisa
             href: search-concept-aggregation.md
           - name: Solicitar correção ortográfica (prévia)
             href: search-concept-speller.md
-          - name: Layout de exibição de pesquisa (visualização)
-            href: search-concept-display-layout.md
+          - name: Classificar resultados de pesquisa
+            href: search-concept-sort.md
       - name: Segurança
         items:
           - name: Visão Geral
@@ -480,6 +490,10 @@ items:
                 href: teams-send-activityfeednotifications.md
               - name: Práticas recomendadas
                 href: teams-activity-feed-notifications-best-practices.md
+          - name: Inscreva-se para alterar as notificações
+            href: teams-change-notification-in-microsoft-teams-overview.md
+          - name: Obter notificações de alteração de reuniões online
+            href: changenotifications-for-onlinemeeting.md
           - name: Mensagens do sistema
             href: system-messages.md
       - name: Tarefas pendentes
@@ -566,7 +580,7 @@ items:
                 href: change-notifications-delivery.md
               - name: Alterar notificações para impressão na nuvem
                 href: universal-print-webhook-notifications.md
-              - name: Notificações de mudanças no Microsoft Teams
+              - name: Alterar notificações do Microsoft Teams
                 items:
                   - name: Visão Geral
                     href: teams-change-notification-in-microsoft-teams-overview.md
@@ -580,6 +594,8 @@ items:
                     href: teams-changenotifications-chat.md
                   - name: Chat da associação
                     href: teams-changenotifications-chatMembership.md
+              - name: Alterar notificações de recursos do Outlook
+                href: outlook-change-notifications-overview.md
           - name: Controle de alterações
             displayName: 'Delta query, track changes, Outlook calendar, Groups, Outlook mail, Users'
             items:
