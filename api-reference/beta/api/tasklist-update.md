@@ -5,19 +5,19 @@ author: devindrajit
 ms.localizationpriority: medium
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: d51e5e22602dfd6aecbd9f69653d81c6dd77cf87
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: 6b8c543bb5c07979c26654b64245cde8bddcd6bd
+ms.sourcegitcommit: 6950d15d8cce5e04733738b8debb92cd8c1d63fe
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62119975"
+ms.lasthandoff: 03/12/2022
+ms.locfileid: "63451162"
 ---
 # <a name="update-basetasklist"></a>Atualizar baseTaskList
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Atualize as propriedades de um [objeto taskList.](../resources/tasklist.md)
+Atualize as propriedades de um [objeto taskList](../resources/tasklist.md) .
 
 ## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
@@ -56,7 +56,7 @@ PATCH /users/{userId|userPrincipalName}/tasks/lists/{baseTaskListId}
 
 ## <a name="response"></a>Resposta
 
-Se tiver êxito, este método retornará um código de resposta e um `200 OK` [objeto baseTaskList](../resources/basetasklist.md) atualizado no corpo da resposta.
+Se tiver êxito, este método retornará um `200 OK` código de resposta e um [objeto baseTaskList](../resources/basetasklist.md) atualizado no corpo da resposta.
 
 ## <a name="examples"></a>Exemplos
 
@@ -74,6 +74,7 @@ Content-Type: application/json
 Content-length: 82
 
 {
+    "@odata.type": "#microsoft.graph.taskList",
     "displayName": "Travel Plan"
 }
 ```

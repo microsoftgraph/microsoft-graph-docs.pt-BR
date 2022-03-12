@@ -508,7 +508,7 @@ items:
                 href: api/chat-get.md
               - name: Listar chats para usuário
                 href: api/chat-list.md
-          - name: Tarefas To do
+          - name: Tarefas pendentes
             items:
               - name: Tarefa
                 href: resources/todotask.md
@@ -1332,7 +1332,7 @@ items:
                 href: api/call-logteleconferencedevicequality.md
           - name: Registros de chamadas
             items:
-              - name: Visão Geral
+              - name: Visão geral
                 href: resources/callrecords-api-overview.md
               - name: Registro de chamada
                 items:
@@ -4269,7 +4269,7 @@ items:
                         href: api/intune-tem-telecomexpensemanagementpartner-update.md
           - name: Comunicações e integridade do serviço
             items:
-              - name: Visão Geral
+              - name: Visão geral
                 href: resources/service-communications-api-overview.md
               - name: Comunicado do serviço
                 href: resources/serviceannouncement.md
@@ -5081,7 +5081,7 @@ items:
                         href: api/organizationalbrandinglocalization-delete.md
               - name: Políticas
                 items:
-                  - name: Visão Geral
+                  - name: Visão geral
                     href: resources/policy-overview.md
                   - name: Política de tempo de tempo de atividade baseada em atividade
                     href: resources/activitybasedtimeoutpolicy.md
@@ -5542,9 +5542,26 @@ items:
                     href: api/agreement-update.md
                   - name: Excluir
                     href: api/agreement-delete.md
-                  - name: Listar status de aceitação
-                    href: api/user-list-agreementacceptances.md
-      - name: Email
+                  - name: Aceitaçãos de contrato
+                    href: resources/agreementacceptance.md
+                    items:
+                      - name: Aceitação de lista
+                        href: api/user-list-agreementacceptances.md
+                      - name: Listar status de aceitação
+                        href: api/agreement-list-acceptances.md
+                  - name: Arquivos de contrato
+                    items:
+                      - name: Arquivo de contrato padrão
+                        href: resources/agreementfile.md
+                      - name: Arquivos de contrato localizados
+                        href: resources/agreementfilelocalization.md
+                      - name: Obter arquivo padrão
+                        href: api/agreementfile-get.md
+                      - name: Criar arquivos localizados
+                        href: api/agreement-post-files.md
+                      - name: Listar arquivos localizados
+                        href: api/agreement-list-files.md
+      - name: Correio
         displayName: 'Outlook, Outlook mail'
         items:
           - name: Visão Geral
@@ -5806,7 +5823,7 @@ items:
                 href: api/resource-get.md
       - name: Inteligência de pessoas e local de trabalho
         items:
-          - name: Visão Geral
+          - name: Visão geral
             href: resources/social-overview.md
           - name: Pessoas
             items:
@@ -5919,7 +5936,7 @@ items:
         items:
           - name: Relatórios de atividade do Azure AD
             items:
-              - name: Visão Geral
+              - name: Visão geral
                 href: resources/azure-ad-auditlog-overview.md
               - name: Auditoria de diretório
                 href: resources/directoryaudit.md
@@ -5942,7 +5959,7 @@ items:
                     href: api/provisioningobjectsummary-list.md
           - name: Microsoft 365 de uso
             items:
-              - name: Visão Geral
+              - name: Visão geral
                 href: resources/report.md
               - name: Uso do dispositivo do Microsoft Teams
                 href: resources/microsoft-teams-device-usage-reports.md
@@ -6140,7 +6157,7 @@ items:
                     href: api/reportroot-getyammergroupsactivitygroupcounts.md
                   - name: Obter contagens de atividades
                     href: api/reportroot-getyammergroupsactivitycounts.md
-      - name: Pesquisa
+      - name: Pesquisar
         displayname: Microsoft Search API
         items:
           - name: Consulta
@@ -6231,7 +6248,7 @@ items:
             items:
               - name: Avaliação de ameaças
                 items:
-                  - name: Visão Geral
+                  - name: Visão geral
                     href: resources/threatassessment-api-overview.md
                   - name: Solicitação de avaliação de ameaças
                     href: resources/threatassessmentrequest.md
@@ -7002,7 +7019,7 @@ items:
             items:
               - name: Lista para grupo
                 href: api/group-list-permissiongrants.md
-      - name: Tarefas To do
+      - name: Tarefas pendentes
         displayName: Microsoft To Do
         items:
           - name: Visão Geral

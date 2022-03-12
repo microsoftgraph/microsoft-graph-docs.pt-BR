@@ -590,7 +590,7 @@ items:
                 href: api/chat-get.md
               - name: Listar chats para usuário
                 href: api/chat-list.md
-          - name: Tarefas To do
+          - name: Tarefas pendentes
             items:
               - name: Tarefa
                 href: resources/todotask.md
@@ -1195,7 +1195,7 @@ items:
                     href: api/serviceprincipal-deletepasswordsinglesignoncredentials.md
           - name: Sincronização
             items:
-              - name: Visão Geral
+              - name: Visão geral
                 href: resources/synchronization-overview.md
               - name: Sincronização
                 href: resources/synchronization-synchronization.md
@@ -1565,7 +1565,7 @@ items:
                 href: api/call-logteleconferencedevicequality.md
           - name: Registros de chamadas
             items:
-              - name: Visão Geral
+              - name: Visão geral
                 href: resources/callrecords-api-overview.md
               - name: Registro de chamada
                 items:
@@ -1834,7 +1834,7 @@ items:
                     href: api/ediscovery-tag-ashierarchy.md
           - name: Solicitação de direitos do sujeito
             items:
-              - name: Visão Geral
+              - name: Visão geral
                 href: resources/subjectrightsrequest-subjectrightsrequestapioverview.md
               - name: Solicitação de direitos do sujeito
                 href: resources/subjectrightsrequest.md
@@ -7206,7 +7206,7 @@ items:
                         href: api/intune-deviceconfig-windowswifienterpriseeapconfiguration-update.md
                   - name: Interface de rede com fio
                     href: resources/intune-deviceconfig-wirednetworkinterface.md
-              - name: Gerenciamento de dispositivo
+              - name: Gerenciamento de dispositivos
                 href: resources/intune-device-mgt-conceptual.md
                 items:
                   - name: Ativar o resultado da ação esim do dispositivo
@@ -9529,7 +9529,7 @@ items:
                         href: api/intune-rbac-deviceandappmanagementroledefinition-delete.md
                       - name: Atualizar
                         href: api/intune-rbac-deviceandappmanagementroledefinition-update.md
-                  - name: Identity
+                  - name: Identidade
                     href: resources/intune-rbac-identity.md
                   - name: Conjunto de identidade
                     href: resources/intune-rbac-identityset.md
@@ -10085,7 +10085,7 @@ items:
                         href: api/intune-tem-telecomexpensemanagementpartner-update.md
           - name: Cloud PC (visualização)
             items:
-              - name: Visão Geral
+              - name: Visão geral
                 href: resources/cloudpc-api-overview.md
               - name: Ponto de extremidade virtual
                 href: resources/virtualendpoint.md
@@ -11184,7 +11184,7 @@ items:
                     href: api/contract-list.md
               - name: Atributos de segurança personalizados (visualização)
                 items:
-                  - name: Visão Geral
+                  - name: Visão geral
                     href: resources/custom-security-attributes-overview.md
                   - name: Conjuntos de atributos
                     href: resources/attributeset.md
@@ -11607,7 +11607,7 @@ items:
             items:
               - name: Métodos de autenticação
                 items:
-                  - name: Visão Geral
+                  - name: Visão geral
                     href: resources/authenticationmethods-overview.md
                   - name: Listar todos os métodos
                     href: api/authentication-list-methods.md
@@ -11988,7 +11988,7 @@ items:
                         href: api/organizationalbrandinglocalization-delete.md
               - name: Políticas
                 items:
-                  - name: Visão Geral
+                  - name: Visão geral
                     href: resources/policy-overview.md
                   - name: Política de tempo de tempo de atividade baseada em atividade
                     href: resources/activitybasedtimeoutpolicy.md
@@ -12957,19 +12957,36 @@ items:
                 items:
                   - name: Contrato
                     href: resources/agreement.md
-                  - name: Criar
-                    href: api/termsofusecontainer-post-agreements.md
                   - name: Listar
                     href: api/termsofusecontainer-list-agreements.md
+                  - name: Criar
+                    href: api/termsofusecontainer-post-agreements.md
                   - name: Obter
                     href: api/agreement-get.md
                   - name: Atualizar
                     href: api/agreement-update.md
                   - name: Excluir
                     href: api/agreement-delete.md
-                  - name: Listar status de aceitação
-                    href: api/user-list-agreementacceptances.md
-      - name: Email
+                  - name: Aceitaçãos de contrato
+                    href: resources/agreementacceptance.md
+                    items:
+                      - name: Aceitação de lista
+                        href: api/user-list-agreementacceptances.md
+                      - name: Listar status de aceitação
+                        href: api/agreement-list-acceptances.md
+                  - name: Arquivos de contrato
+                    items:
+                      - name: Arquivo de contrato padrão
+                        href: resources/agreementfile.md
+                      - name: Arquivos de contrato localizados
+                        href: resources/agreementfilelocalization.md
+                      - name: Obter arquivo padrão
+                        href: api/agreementfile-get.md
+                      - name: Criar arquivos localizados
+                        href: api/agreement-post-files.md
+                      - name: Listar arquivos localizados
+                        href: api/agreement-list-files.md
+      - name: Correio
         displayName: 'Outlook, Outlook mail'
         items:
           - name: Visão Geral
@@ -13721,7 +13738,7 @@ items:
         items:
           - name: Relatórios de atividade do Azure AD
             items:
-              - name: Visão Geral
+              - name: Visão geral
                 href: resources/azure-ad-auditlog-overview.md
               - name: Auditoria de diretório
                 href: resources/directoryaudit.md
@@ -14052,12 +14069,12 @@ items:
                     href: resources/attacksimulationtrainingusercoverage.md
                   - name: Obter cobertura de treinamento para usuários
                     href: api/reportroot-getattacksimulationtrainingusercoverage.md
-      - name: Pesquisa
+      - name: Pesquisar
         displayname: Microsoft Search API
         items:
           - name: Consulta
             items:
-              - name: Visão Geral
+              - name: Visão geral
                 href: resources/search-api-overview.md
               - name: Tipo de solicitação de pesquisa
                 href: resources/searchrequest.md
@@ -14067,7 +14084,7 @@ items:
                 href: api/search-query.md
           - name: Resposta
             items:
-              - name: Visão Geral
+              - name: Visão geral
                 href: resources/search-api-answers-overview.md
               - name: Acrônimo
                 href: resources/search-acronym.md
@@ -14110,7 +14127,7 @@ items:
                     href: api/search-qna-delete.md
           - name: Index
             items:
-              - name: Visão Geral
+              - name: Visão geral
                 href: resources/indexing-api-overview.md
               - name: Conexão externa
                 items:
@@ -15228,10 +15245,10 @@ items:
                 href: api/group-list-permissiongrants.md
               - name: Lista para chat
                 href: api/chat-list-permissiongrants.md
-      - name: Tarefas To do
+      - name: Tarefas pendentes
         displayName: Microsoft To Do
         items:
-          - name: Visão Geral
+          - name: Visão geral
             href: resources/tasks-overview.md
           - name: Lista de tarefas
             items:
@@ -15281,7 +15298,7 @@ items:
                 href: api/opentypeextension-post-opentypeextension.md
               - name: Obter extensão aberta
                 href: api/opentypeextension-get.md
-          - name: Lista de Verificação
+          - name: Item checklist
             href: resources/checklistitem.md
             items:
               - name: Listar

@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 doc_type: apiPageType
 ms.prod: governance
 author: raprakasMSFT
-ms.openlocfilehash: aa17625e8121726dd371dee7946655249fb64991
-ms.sourcegitcommit: 77d2ab5018371f153d47cc1cd25f9dcbaca28a95
+ms.openlocfilehash: 90a687abff58532e73b6b12edc8b670441b3c06a
+ms.sourcegitcommit: 6950d15d8cce5e04733738b8debb92cd8c1d63fe
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63336253"
+ms.lasthandoff: 03/12/2022
+ms.locfileid: "63451274"
 ---
 # <a name="create-agreement"></a>Criar contrato
 
@@ -44,7 +44,7 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar um contr
 
 | Propriedade     | Tipo        | Descrição |
 |:-------------|:------------|:------------|
-|displayName|String|Nome de exibição do contrato.|
+|displayName|Cadeia de caracteres|Nome de exibição do contrato.|
 |isViewingBeforeAcceptanceRequired|Booliano|Indica se o usuário precisa expandir e exibir o contrato antes de aceitar.|
 |fileName|String|Nome do arquivo de contrato (por exemplo, TOU.pdf).|
 |isDefault|Booliano|Indica se esse é o arquivo de contrato padrão se o idioma corresponde à preferência do cliente. Se nenhum dos arquivos for marcado como padrão, o primeiro será tratado como padrão.|
@@ -69,7 +69,7 @@ POST https://graph.microsoft.com/v1.0/identityGovernance/termsOfUse/agreements
 Content-type: application/json
 
 {
-  "displayName": "MSGraph Sample",
+  "displayName": "Contoso ToU for guest users",
   "isViewingBeforeAcceptanceRequired": true,
   "files": [
     {
@@ -77,7 +77,7 @@ Content-type: application/json
       "language": "en",
       "isDefault": true,
       "fileData": {
-        "data": "SGVsbG8gd29ybGQ="
+        "data": "SGVsbG8gd29ybGQ=//truncated-binary"
       }
     }
   ]

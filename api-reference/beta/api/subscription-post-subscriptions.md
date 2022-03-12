@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: Jumaodhiss
 doc_type: apiPageType
 ms.prod: change-notifications
-ms.openlocfilehash: 3746db66d1f79c27d0910de55f9a20b08214b653
-ms.sourcegitcommit: dfa87904fb26dd5161f604f2716ce1d90dad31ed
+ms.openlocfilehash: a348466b45132e641d68785e0537cd4826a299b9
+ms.sourcegitcommit: 6950d15d8cce5e04733738b8debb92cd8c1d63fe
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/09/2022
-ms.locfileid: "63395654"
+ms.lasthandoff: 03/12/2022
+ms.locfileid: "63451393"
 ---
 # <a name="create-subscription"></a>Criar assinatura
 
@@ -34,7 +34,7 @@ Dependendo do recurso e do tipo de permissão (delegado ou aplicativo) solicitad
 |:-----|:-----|:-----|:-----|
 |[callRecord](../resources/callrecords-callrecord.md) (/communications/callRecords) | Incompatível | Incompatível | CallRecords.Read.All  |
 |[canais](../resources/channel.md) (/teams/getAllChannels todos – os canais em uma organização) | Incompatível  | Sem suporte | Channel.ReadBasic.All, ChannelSettings.Read.All |
-|[canais](../resources/channel.md) (/teams/{id}/channels) | Channel.ReadBasic.All, ChannelSettings.Read.All  | Incompatível | Channel.ReadBasic.All, ChannelSettings.Read.All  |
+|[canais](../resources/channel.md) (/teams/{id}/channels) | Channel.ReadBasic.All, ChannelSettings.Read.All  | Sem suporte | Channel.ReadBasic.All, ChannelSettings.Read.All  |
 |[chat](../resources/chat.md) chat (/conversa – todos os chats em uma organização) | Incompatível | Incompatível | Chat.ReadBasic.All, Chat.Read.All, Chat.ReadWrite.All |
 |[chat](../resources/chat.md) (/chats/{id}) | Chat.ReadBasic, Chat.Read, Chat.ReadWrite | Sem suporte | ChatSettings.Read.Chat *, ChatSettings.ReadWrite.Chat*, Chat.Manage.Chat*, Chat.ReadBasic.All, Chat.Read.All, Chat.ReadWrite.All |
 |[chatMessage](../resources/chatmessage.md) (/teams/{id}/channels/{id}/messages) | ChannelMessage.Read.All, Group.Read.All, Group.ReadWrite.All | Sem suporte | ChannelMessage.Read.Group*, ChannelMessage.Read.All  |
@@ -45,7 +45,7 @@ Dependendo do recurso e do tipo de permissão (delegado ou aplicativo) solicitad
 |[contato](../resources/contact.md) | Contacts.Read | Contacts.Read | Contacts.Read |
 |[conversationMember](../resources/conversationmember.md) (/chats/getAllMembers) | Incompatível | Sem suporte | ChatMember.Read.All, ChatMember.ReadWrite.All, Chat.ReadBasic.All, Chat.Read.All, Chat.ReadWrite.All |
 |[conversationMember](../resources/conversationmember.md) (/chats/{id}/members) | ChatMember.Read, ChatMember.ReadWrite, Chat.ReadBasic, Chat.Read, Chat.ReadWrite | Incompatível | ChatMember.Read.Chat *, Chat.Manage.Chat*, ChatMember.Read.All, ChatMember.ReadWrite.All, Chat.ReadBasic.All, Chat.Read.All, Chat.ReadWrite.All |
-|[conversationMember](../resources/conversationmember.md) (/teams/getAllMembers) | Incompatível | Sem suporte | TeamMember.Read.All, TeamMember.ReadWrite.All |
+|[conversationMember](../resources/conversationmember.md) (/teams/getAllMembers) | Incompatível | Incompatível | TeamMember.Read.All, TeamMember.ReadWrite.All |
 |[conversationMember](../resources/conversationmember.md) (/teams/{id}/members) | TeamMember.Read.All | Incompatível | TeamMember.Read.All |
 |[conversationMember](../resources/conversationmember.md) (/teams/{id}/channels/getAllMembers) | Incompatível | Incompatível | ChannelMember.Read.All |
 |[driveItem](../resources/driveitem.md) (OneDrive pessoal de um usuário) | Sem suporte | Files.ReadWrite | Sem suporte |
@@ -55,7 +55,7 @@ Dependendo do recurso e do tipo de permissão (delegado ou aplicativo) solicitad
 |[conversa em grupo](../resources/conversation.md) | Group.Read.All | Sem suporte | Sem suporte |
 |[list](../resources/list.md) | Sites.ReadWrite.All | Sem suporte | Sites.ReadWrite.All |
 |[message](../resources/message.md) | Mail.ReadBasic, Mail.Read | Mail.ReadBasic, Mail.Read | Mail.ReadBasic, Mail.Read |
-|[reunião online](../resources/onlinemeeting.md) | Incompatível | Sem suporte | OnlineMeetings.Read.All, OnlineMeetings.ReadWrite.All |
+|[reunião online](../resources/onlinemeeting.md) | Sem suporte | Sem suporte | OnlineMeetings.Read.All, OnlineMeetings.ReadWrite.All |
 |[presence](../resources/presence.md) | Presence.Read.All | Incompatível | Incompatível |
 |[printer](../resources/printer.md) | Sem suporte | Sem suporte | Printer.Read.All, Printer.ReadWrite.All |
 |[printTaskDefinition](../resources/printtaskdefinition.md) | Sem suporte | Sem suporte | PrintTaskDefinition.ReadWrite.All |
@@ -64,7 +64,7 @@ Dependendo do recurso e do tipo de permissão (delegado ou aplicativo) solicitad
 |[teams](../resources/team.md) (/teams/{id}) | Team.ReadBasic.All, TeamSettings.Read.All | Incompatível | Team.ReadBasic.All, TeamSettings.Read.All |
 |[todoTask](../resources/todotask.md) | Tasks.ReadWrite | Tasks.ReadWrite | Sem suporte |
 |[baseTask](../resources/basetask.md) | Tasks.ReadWrite | Tasks.ReadWrite | Incompatível |
-|[Usuário](../resources/user.md) | User.Read.All | User.Read.All | User.Read.All |
+|[user](../resources/user.md) | User.Read.All | User.Read.All | User.Read.All |
 
 > **Observação**: Permissões marcadas com * usam [consentimento específico de recurso](/microsoftteams/platform/graph-api/rsc/resource-specific-consent).
 
@@ -84,9 +84,9 @@ Você Outlook pode assinar as alterações nos recursos de **contato, evento** o
 
 [!INCLUDE [outlook-subscription-notes](../../includes/outlook-subscription-notes.md)]
 
-### <a name="presence"></a>presença
+### <a name="onlinemeetings-presence"></a>onlineMeetings, presença
 
-As assinaturas na **presença** exigem que todos os dados de recursos incluídos em uma notificação de alteração sejam criptografados. Sempre especifique o parâmetro **encryptionCertificate** ao [criar uma assinatura](/graph/webhooks-with-resource-data#creating-a-subscription) para evitar falha. Veja mais informações sobre como[ configurar notificações de mudança para incluir dados de recursos](/graph/webhooks-with-resource-data).
+As assinaturas **em onlineMeetings** e **presença** exigem [a](/graph/webhooks-with-resource-data#creating-a-subscription) propriedade **encryptionCertificate** e **encryptionCertificateId** ao criar uma assinatura para notificações com dados de recursos criptografados. Para obter mais informações, consulte [setting up change notifications to include resource data](/graph/webhooks-with-resource-data).
 
 ## <a name="http-request"></a>Solicitação HTTP
 

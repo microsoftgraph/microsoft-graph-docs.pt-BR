@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 doc_type: resourcePageType
 ms.prod: governance
 author: raprakasMSFT
-ms.openlocfilehash: e3e09d6de89caa6638e5ce6f163414c5a1b99e30
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 25d24851827b469bf7b6a6d121e1ba92bd79b0b0
+ms.sourcegitcommit: 6950d15d8cce5e04733738b8debb92cd8c1d63fe
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59099102"
+ms.lasthandoff: 03/12/2022
+ms.locfileid: "63451365"
 ---
 # <a name="agreementfiledata-resource-type"></a>Tipo de recurso agreementFileData
 
@@ -19,9 +19,9 @@ Namespace: microsoft.graph
 Representa um Azure Active Directory (Azure AD) de termos de contrato de uso.
 
 ## <a name="properties"></a>Propriedades
-| Método       | Tipo de retorno | Descrição |
+| Propriedade       | Tipo | Descrição |
 |:-------------|:------------|:------------|
-|data|Binário|Dados que representam os termos de uso do documento PDF. Somente leitura.|
+|data|Binária|Dados que representam os termos de uso do documento PDF. Somente leitura.|
 
 ## <a name="json-representation"></a>Representação JSON
 

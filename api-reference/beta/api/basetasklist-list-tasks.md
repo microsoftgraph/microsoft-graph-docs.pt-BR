@@ -5,19 +5,19 @@ author: devindrajit
 ms.localizationpriority: medium
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: d1e09db9d4976521c67138a2c510604ae3b2c699
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: 84128000fb785e9d5d572de5e81b8d0b8d71b308
+ms.sourcegitcommit: 6950d15d8cce5e04733738b8debb92cd8c1d63fe
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62114154"
+ms.lasthandoff: 03/12/2022
+ms.locfileid: "63451379"
 ---
 # <a name="list-basetasks"></a>Listar baseTasks
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Obter os [recursos baseTask](../resources/basetask.md) da propriedade de navegação tarefas de uma [baseTaskList específica.](../resources/basetasklist.md)
+Obter os [recursos baseTask](../resources/basetask.md) da propriedade de navegação tarefas de uma [baseTaskList específica](../resources/basetasklist.md).
 
 ## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
@@ -40,7 +40,7 @@ GET /users/{userId|userPrincipalName}/tasks/lists/{baseTaskListId}/tasks
 ```
 
 ## <a name="optional-query-parameters"></a>Parâmetros de consulta opcionais
-Este método oferece `$expand` suporte a `$filter` `$top` [parâmetros de consulta EData](/graph/query-parameters) para personalizar a resposta.  
+Este método oferece suporte `$expand`a [parâmetros de](/graph/query-parameters) `$filter` `$top` consulta EData para personalizar a resposta.  
 
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
 |Nome|Descrição|
@@ -52,7 +52,7 @@ Não forneça um corpo de solicitação para esse método.
 
 ## <a name="response"></a>Resposta
 
-Se tiver êxito, este método retornará um código de resposta e uma `200 OK` coleção de [objetos baseTask](../resources/basetask.md) no corpo da resposta.
+Se tiver êxito, este método retornará um `200 OK` código de resposta e uma coleção de [objetos baseTask](../resources/basetask.md) no corpo da resposta.
 
 ## <a name="examples"></a>Exemplos
 
@@ -115,10 +115,7 @@ Content-Type: application/json
             "createdDateTime": "2021-11-17T06:58:32.4882235Z",
             "lastModifiedDateTime": "2021-11-17T07:02:49.1697427Z",
             "id": "AAkALgAAAAAAHYQDEapmEc2byACqAC",
-            "body": {
-                "content": "",
-                "contentType": "text"
-            },
+            "textBody":  "",
             "parentList": {
                 "id": "AQMkAGVjMzJmMWZjLTgyYjgtNGIyNi1hOGQ0LWRjMjNm"
             }

@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 doc_type: apiPageType
 ms.prod: governance
 author: raprakasMSFT
-ms.openlocfilehash: b380477ab5b84c02062c817ef0684f5bbd217c4c
-ms.sourcegitcommit: 77d2ab5018371f153d47cc1cd25f9dcbaca28a95
+ms.openlocfilehash: 82c5ebe0ce5fdfa2223a9df41360dc6e0cb2f683
+ms.sourcegitcommit: 6950d15d8cce5e04733738b8debb92cd8c1d63fe
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63332705"
+ms.lasthandoff: 03/12/2022
+ms.locfileid: "63451351"
 ---
 # <a name="update-agreement"></a>Atualizar contrato
 
@@ -48,11 +48,11 @@ No corpo da solicitação, forneça os valores para os campos relevantes que dev
 
 | Propriedade     | Tipo        | Descrição |
 |:-------------|:------------|:------------|
-|displayName|String|Nome de exibição do contrato.|
+|displayName|Cadeia de caracteres|Nome de exibição do contrato.|
 |isViewingBeforeAcceptanceRequired|Booliano|Se o usuário precisa expandir e exibir o contrato antes de aceitar.|
 
 ## <a name="response"></a>Resposta
-Se tiver êxito, este método retornará um `200 OK` código de resposta e um objeto [de contrato](../resources/agreement.md) atualizado no corpo da resposta.
+Se tiver êxito, este método retornará um código de resposta `204 No Content`.
 ## <a name="example"></a>Exemplo
 ##### <a name="request"></a>Solicitação
 
@@ -62,13 +62,13 @@ Se tiver êxito, este método retornará um `200 OK` código de resposta e um ob
   "blockType": "request",
   "name": "update_agreement"
 }-->
-```http
-PATCH https://graph.microsoft.com/beta/identityGovernance/termsOfUse/agreements/{id}
+```msgraph-interactive
+PATCH https://graph.microsoft.com/beta/identityGovernance/termsOfUse/agreements/0ec9f6a6-159d-4dd8-a563-1f0b5935e80b
 Content-type: application/json
 
 {
-  "displayName": "displayName-value",
-  "isViewingBeforeAcceptanceRequired": true
+    "displayName": "All Contoso volunteers - Terms of use",
+    "isViewingBeforeAcceptanceRequired": true
 }
 ```
 # <a name="c"></a>[C#](#tab/csharp)
@@ -99,22 +99,13 @@ Content-type: application/json
 
 
 ##### <a name="response"></a>Resposta
->**Observação:** o objeto de resposta mostrado aqui pode ser encurtado para legibilidade.
 
 <!-- {
   "blockType": "response",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.agreement"
+  "truncated": true
 } -->
 ```http
-HTTP/1.1 200 OK
-Content-type: application/json
-
-{
-  "displayName": "displayName-value",
-  "isViewingBeforeAcceptanceRequired": true,
-  "id": "id-value"
-}
+HTTP/1.1 204 No Content
 ```
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79

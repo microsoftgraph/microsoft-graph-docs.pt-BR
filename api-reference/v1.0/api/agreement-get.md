@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 doc_type: apiPageType
 ms.prod: governance
 author: raprakasMSFT
-ms.openlocfilehash: 7f8d8ec54eec709551281e5d6085e3ea6c5c7b47
-ms.sourcegitcommit: 77d2ab5018371f153d47cc1cd25f9dcbaca28a95
+ms.openlocfilehash: e70bfb567f43d506bbfc0ce208208456aa9ac8a7
+ms.sourcegitcommit: 6950d15d8cce5e04733738b8debb92cd8c1d63fe
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63337471"
+ms.lasthandoff: 03/12/2022
+ms.locfileid: "63451442"
 ---
 # <a name="get-agreement"></a>Obter contrato
 
@@ -33,7 +33,7 @@ GET /identityGovernance/termsOfUse/agreements/{id}
 ```
 
 ## <a name="optional-query-parameters"></a>Parâmetros de consulta opcionais
-Este método dá suporte a [Parâmetros de consulta OData](/graph/query-parameters) para ajudar a personalizar a resposta.
+Este método dá suporte ao parâmetro `$select` [de consulta OData](/graph/query-parameters) para ajudar a personalizar a resposta.
 
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
 | Nome         | Tipo        | Descrição |
@@ -44,14 +44,50 @@ Este método dá suporte a [Parâmetros de consulta OData](/graph/query-paramete
 Não forneça um corpo de solicitação para esse método.
 ## <a name="response"></a>Resposta
 Se tiver êxito, este método retornará um `200 OK` código de resposta [e um objeto agreement](../resources/agreement.md) no corpo da resposta.
-## <a name="example"></a>Exemplo
-### <a name="request"></a>Solicitação
+## <a name="examples"></a>Exemplos
 
+### <a name="example-1-retrieve-an-agreement"></a>Exemplo 1: Recuperar um contrato
+
+#### <a name="request"></a>Solicitação
+<!-- {
+  "blockType": "request",
+  "name": "get_agreement"
+}-->
+```msgraph-interactive
+GET https://graph.microsoft.com/v1.0/identityGovernance/termsOfUse/agreements/0ec9f6a6-159d-4dd8-a563-1f0b5935e80b
+```
+
+#### <a name="response"></a>Resposta
+>**Observação:** o objeto de resposta mostrado aqui pode ser encurtado para legibilidade.
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.agreement"
+} -->
+```http
+HTTP/1.1 200 OK
+Content-type: application/json
+
+{
+    "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#agreements/$entity",
+    "id": "0ec9f6a6-159d-4dd8-a563-1f0b5935e80b",
+    "displayName": "All users terms of use",
+    "termsExpiration": null,
+    "userReacceptRequiredFrequency": "P90D",
+    "isViewingBeforeAcceptanceRequired": false,
+    "isPerDeviceAcceptanceRequired": false
+}
+```
+
+
+### <a name="example-2-retrieve-an-agreement-and-its-related-files"></a>Exemplo 2: recuperar um contrato e seus arquivos relacionados
+
+#### <a name="request"></a>Solicitação
 
 # <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "get_agreement"
+  "name": "get_agreement_files"
 }-->
 ```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/identityGovernance/termsOfUse/agreements/093b947f-8363-4979-a47d-4c52b33ee1be?$expand=files
@@ -83,7 +119,7 @@ GET https://graph.microsoft.com/v1.0/identityGovernance/termsOfUse/agreements/09
 ---
 
 
-### <a name="response"></a>Resposta
+#### <a name="response"></a>Resposta
 >**Observação:** o objeto de resposta mostrado aqui pode ser encurtado para legibilidade.
 <!-- {
   "blockType": "response",
@@ -95,17 +131,26 @@ HTTP/1.1 200 OK
 Content-type: application/json
 
 {
-  "displayName": "MSGraph Sample",
-  "isViewingBeforeAcceptanceRequired": true,
-  "id": "id-value",
-  "files": [
-    {
-      "id": "093b947f-8363-4979-a47d-4c52b33ee1be",
-      "language": "en",
-      "fileName": "TOU.pdf",
-      "isDefault": true
-    }
-  ]
+    "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#agreements(files())/$entity",
+    "id": "0ec9f6a6-159d-4dd8-a563-1f0b5935e80b",
+    "displayName": "All users terms of use",
+    "termsExpiration": null,
+    "userReacceptRequiredFrequency": "P90D",
+    "isViewingBeforeAcceptanceRequired": false,
+    "isPerDeviceAcceptanceRequired": false,
+    "files@odata.context": "https://graph.microsoft.com/v1.0/$metadata#identityGovernance/termsOfUse/agreements('0ec9f6a6-159d-4dd8-a563-1f0b5935e80b')/files",
+    "files": [
+        {
+            "id": "681b73a7-e9ae-4f2d-aca5-9e857599cd15",
+            "fileName": "ToU.pdf",
+            "displayName": "Contoso Terms of Use",
+            "language": "en-GB",
+            "isDefault": true,
+            "isMajorVersion": false,
+            "createdDateTime": "2022-03-02T14:11:32.885186Z",
+            "fileData": null
+        }
+    ]
 }
 ```
 

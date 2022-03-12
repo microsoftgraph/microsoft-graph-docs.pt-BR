@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 doc_type: apiPageType
 ms.prod: governance
 author: raprakasMSFT
-ms.openlocfilehash: 007c3fb51f5136ba639fd25bca71d7dc0d1e4f5b
-ms.sourcegitcommit: 77d2ab5018371f153d47cc1cd25f9dcbaca28a95
+ms.openlocfilehash: 1733714cd3ef6f971caefa204c14f73bde82605d
+ms.sourcegitcommit: 6950d15d8cce5e04733738b8debb92cd8c1d63fe
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63332719"
+ms.lasthandoff: 03/12/2022
+ms.locfileid: "63451358"
 ---
 # <a name="get-agreement"></a>Obter contrato
 
@@ -38,10 +38,9 @@ Ao chamar em nome de um usuário, o usuário precisa pertencer a uma das seguint
 ```http
 GET /identityGovernance/termsOfUse/agreements/{id}
 ```
-<!--
-## Optional query parameters
-This method supports the [OData Query Parameters](/graph/query-parameters) to help customize the response.
--->
+
+## <a name="optional-query-parameters"></a>Parâmetros de consulta opcionais
+Este método dá suporte ao parâmetro `$select` [de consulta OData](/graph/query-parameters) para ajudar a personalizar a resposta.
 
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
 | Nome         | Tipo        | Descrição |
@@ -52,46 +51,21 @@ This method supports the [OData Query Parameters](/graph/query-parameters) to he
 Não forneça um corpo de solicitação para esse método.
 ## <a name="response"></a>Resposta
 Se tiver êxito, este método retornará um `200 OK` código de resposta [e um objeto agreement](../resources/agreement.md) no corpo da resposta.
-## <a name="example"></a>Exemplo
-##### <a name="request"></a>Solicitação
 
+## <a name="examples"></a>Exemplos
 
-# <a name="http"></a>[HTTP](#tab/http)
+### <a name="example-1-retrieve-an-agreement"></a>Exemplo 1: Recuperar um contrato
+
+#### <a name="request"></a>Solicitação
 <!-- {
   "blockType": "request",
   "name": "get_agreement"
 }-->
 ```msgraph-interactive
-GET https://graph.microsoft.com/beta/identityGovernance/termsOfUse/agreements/{id}?$expand=files
+GET https://graph.microsoft.com/beta/identityGovernance/termsOfUse/agreements/0ec9f6a6-159d-4dd8-a563-1f0b5935e80b
 ```
-# <a name="c"></a>[C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/get-agreement-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascript"></a>[JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/get-agreement-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# <a name="objective-c"></a>[Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/get-agreement-objc-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# <a name="java"></a>[Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/get-agreement-java-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# <a name="go"></a>[Ir](#tab/go)
-[!INCLUDE [sample-code](../includes/snippets/go/get-agreement-go-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# <a name="powershell"></a>[PowerShell](#tab/powershell)
-[!INCLUDE [sample-code](../includes/snippets/powershell/get-agreement-powershell-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
----
-
-
-##### <a name="response"></a>Resposta
+#### <a name="response"></a>Resposta
 >**Observação:** o objeto de resposta mostrado aqui pode ser encurtado para legibilidade.
 <!-- {
   "blockType": "response",
@@ -103,17 +77,62 @@ HTTP/1.1 200 OK
 Content-type: application/json
 
 {
-  "displayName": "MSGraph Sample",
-  "isViewingBeforeAcceptanceRequired": true,
-  "id": "id-value",
-  "files": [
-    {
-      "id": "id-value",
-      "language": "en",
-      "fileName": "TOU.pdf",
-      "isDefault": true
-    }
-  ]
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#agreements/$entity",
+    "id": "0ec9f6a6-159d-4dd8-a563-1f0b5935e80b",
+    "displayName": "All users terms of use",
+    "termsExpiration": null,
+    "userReacceptRequiredFrequency": "P90D",
+    "isViewingBeforeAcceptanceRequired": false,
+    "isPerDeviceAcceptanceRequired": false
+}
+```
+
+
+### <a name="example-2-retrieve-an-agreement-and-its-related-files"></a>Exemplo 2: recuperar um contrato e seus arquivos relacionados
+
+#### <a name="request"></a>Solicitação
+
+<!-- {
+  "blockType": "request",
+  "name": "get_agreement_files"
+}-->
+```msgraph-interactive
+GET https://graph.microsoft.com/beta/identityGovernance/termsOfUse/agreements/093b947f-8363-4979-a47d-4c52b33ee1be?$expand=files
+```
+
+
+#### <a name="response"></a>Resposta
+>**Observação:** o objeto de resposta mostrado aqui pode ser encurtado para legibilidade.
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.agreement"
+} -->
+```http
+HTTP/1.1 200 OK
+Content-type: application/json
+
+{
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#agreements(files())/$entity",
+    "id": "0ec9f6a6-159d-4dd8-a563-1f0b5935e80b",
+    "displayName": "All users terms of use",
+    "termsExpiration": null,
+    "userReacceptRequiredFrequency": "P90D",
+    "isViewingBeforeAcceptanceRequired": false,
+    "isPerDeviceAcceptanceRequired": false,
+    "files@odata.context": "https://graph.microsoft.com/beta/$metadata#identityGovernance/termsOfUse/agreements('0ec9f6a6-159d-4dd8-a563-1f0b5935e80b')/files",
+    "files": [
+        {
+            "id": "681b73a7-e9ae-4f2d-aca5-9e857599cd15",
+            "fileName": "ToU.pdf",
+            "displayName": "Contoso Terms of Use",
+            "language": "en-GB",
+            "isDefault": true,
+            "isMajorVersion": false,
+            "createdDateTime": "2022-03-02T14:11:32.885186Z",
+            "fileData": null
+        }
+    ]
 }
 ```
 

@@ -5,19 +5,19 @@ author: devindrajit
 ms.localizationpriority: medium
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 5e3eda405e5821587afc653ec366476fd7303991
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: 291bfa800ce25c333836bf8e45565c61bc6005c6
+ms.sourcegitcommit: 6950d15d8cce5e04733738b8debb92cd8c1d63fe
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62106960"
+ms.lasthandoff: 03/12/2022
+ms.locfileid: "63451337"
 ---
 # <a name="update-basetask"></a>Atualizar baseTask
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Atualize as propriedades de um [objeto baseTask.](../resources/basetask.md)
+Atualize as propriedades de um [objeto baseTask](../resources/basetask.md) .
 
 ## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
@@ -53,7 +53,7 @@ PATCH /users/{userId|userPrincipalName}/tasks/alltasks/{baseTaskId}
 
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|corpo|[itemBody](../resources/itembody.md)|Corpo da tarefa que normalmente contém informações sobre a tarefa.|
+|textBody|Cadeia de caracteres|O corpo da tarefa no formato de texto que normalmente contém informações sobre a tarefa.|
 |createdDateTime|DateTimeOffset|A data no fuso horário especificado que a tarefa foi concluída.|
 |lastModifiedDateTime|DateTimeOffset|A data e hora da última modificação da tarefa. Por padrão, está definida em UTC. Você pode fornecer um fuso horário personalizado no cabeçalho da solicitação.|
 |bodyLastModifiedDateTime|DateTimeOffset|A data e a hora em que o corpo da tarefa foi modificado pela última vez. Por padrão, está definida em UTC. Você pode fornecer um fuso horário personalizado no cabeçalho da solicitação.|
@@ -64,13 +64,13 @@ PATCH /users/{userId|userPrincipalName}/tasks/alltasks/{baseTaskId}
 |recurrence|[patternedRecurrence](../resources/patternedrecurrence.md)|O padrão de recorrência da tarefa.|
 |displayName|Cadeia de caracteres|Uma breve descrição da tarefa.|
 |status|taskStatus_v2|Indica o estado ou o andamento da tarefa. Os valores possíveis são: `notStarted`, `inProgress`, `completed`, `unknownFutureValue`.|
-|personalProperties|[personalTaskProperties](../resources/personaltaskproperties.md)|Propriedades que são pessoais para um usuário, como reminderDateTime.|
+|mirante|[taskViewpoint](../resources/taskviewpoint.md)|Propriedades que são pessoais para um usuário, como reminderDateTime.|
 
 
 
 ## <a name="response"></a>Resposta
 
-Se tiver êxito, este método retornará um código `200 OK` de resposta e um objeto [baseTask](../resources/basetask.md) atualizado no corpo da resposta.
+Se tiver êxito, este método retornará um `200 OK` código de resposta e um [objeto baseTask](../resources/basetask.md) atualizado no corpo da resposta.
 
 ## <a name="examples"></a>Exemplos
 
@@ -88,10 +88,8 @@ Content-Type: application/json
 Content-length: 634
 
 {
-  "@odata.type": "#microsoft.graph.baseTask",
-  "body": {
-    "@odata.type": "microsoft.graph.itemBody"
-  },
+  "@odata.type": "#microsoft.graph.task",
+  "textBody":  "String",
   "bodyLastModifiedDateTime": "String (timestamp)",
   "completedDateTime": "String (timestamp)",
   "dueDateTime": {
@@ -106,8 +104,8 @@ Content-length: 634
   },
   "displayName": "String",
   "status": "String",
-  "personalProperties": {
-    "@odata.type": "microsoft.graph.personalTaskProperties"
+  "viewpoint": {
+    "@odata.type": "microsoft.graph.taskViewpoint"
   }
 }
 ```
@@ -140,7 +138,7 @@ Content-length: 634
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.baseTask"
+  "@odata.type": "microsoft.graph.task"
 }
 -->
 ``` http
@@ -156,10 +154,7 @@ Content-Type: application/json
     "createdDateTime": "2021-11-15T14:38:25.6868632Z",
     "lastModifiedDateTime": "2021-11-15T15:51:13.3606631Z",
     "id": "AAkALgAAAAAAHYQDEapmEc2byACqAC-EWg0AkOO4xOT",
-    "body": {
-        "content": "",
-        "contentType": "text"
-    },
+    "textBody":  "",
     "parentList": {
         "id": "AAMkAGVjMzJmMWZjLTgyYjgtNGIyNi1hOGQ0LWRjMjNmMGRmOWNiYQAuAAAAAAAboFsPFj7gQpLAt"
     }

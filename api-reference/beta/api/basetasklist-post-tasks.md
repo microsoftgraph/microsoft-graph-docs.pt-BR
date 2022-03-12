@@ -5,19 +5,19 @@ author: devindrajit
 ms.localizationpriority: medium
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 0814b150c20f6651379800eeefad25bd4c4ffe9f
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: 3b58413d2933a236bf9e5772dc8063be9414e7fa
+ms.sourcegitcommit: 6950d15d8cce5e04733738b8debb92cd8c1d63fe
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62130097"
+ms.lasthandoff: 03/12/2022
+ms.locfileid: "63451330"
 ---
 # <a name="create-basetask"></a>Criar baseTask
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Crie um novo [objeto baseTask](../resources/basetask.md) em uma [baseTaskList específica.](../resources/basetasklist.md)
+Crie um novo [objeto baseTask](../resources/basetask.md) em uma [baseTaskList específica](../resources/basetasklist.md).
 
 ## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
@@ -46,13 +46,13 @@ POST /users/{userId|userPrincipalName}/tasks/lists/{baseTaskListId}/tasks
 |Content-Type|application/json. Obrigatório.|
 
 ## <a name="request-body"></a>Corpo da solicitação
-No corpo da solicitação, fornece uma representação JSON do [objeto baseTask.](../resources/basetask.md)
+No corpo da solicitação, fornece uma representação JSON do [objeto baseTask](../resources/basetask.md) .
 
 Você pode especificar as seguintes propriedades ao criar **uma baseTask**.
 
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|corpo|[itemBody](../resources/itembody.md)|Corpo da tarefa que normalmente contém informações sobre a tarefa.|
+|textBody|Cadeia de caracteres|O corpo da tarefa no formato de texto que normalmente contém informações sobre a tarefa.|
 |createdDateTime|DateTimeOffset|A data no fuso horário especificado que a tarefa foi concluída.|
 |lastModifiedDateTime|DateTimeOffset|A data e hora da última modificação da tarefa. Por padrão, está definida em UTC. Você pode fornecer um fuso horário personalizado no cabeçalho da solicitação. O valor da propriedade usa o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite UTC em 1º de janeiro de 2020 teria esta aparência: '2020-01-01T00:00:00Z'.|
 |bodyLastModifiedDateTime|DateTimeOffset|A data e hora da última modificação da tarefa. Por padrão, está definida em UTC. Você pode fornecer um fuso horário personalizado no cabeçalho da solicitação. O valor da propriedade usa o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite UTC em 1º de janeiro de 2020 teria esta aparência: '2020-01-01T00:00:00Z'.|
@@ -63,13 +63,13 @@ Você pode especificar as seguintes propriedades ao criar **uma baseTask**.
 |recurrence|[patternedRecurrence](../resources/patternedrecurrence.md)|O padrão de recorrência da tarefa.|
 |displayName|Cadeia de caracteres|Uma breve descrição da tarefa.|
 |status|taskStatus_v2|Indica o estado ou o andamento da tarefa. Os valores possíveis são: `notStarted`, `inProgress`, `completed`, `unknownFutureValue`. Obrigatório.|
-|personalProperties|[personalTaskProperties](../resources/personaltaskproperties.md)|Propriedades que são pessoais para um usuário, como reminderDateTime.|
+|mirante|[taskViewpoint](../resources/taskviewpoint.md)|Propriedades que são pessoais para um usuário, como reminderDateTime.|
 
 
 
 ## <a name="response"></a>Resposta
 
-Se tiver êxito, este método retornará um código `201 Created` de resposta e um objeto [baseTask](../resources/basetask.md) no corpo da resposta.
+Se tiver êxito, este método retornará um `201 Created` código de resposta e um [objeto baseTask](../resources/basetask.md) no corpo da resposta.
 
 ## <a name="examples"></a>Exemplos
 
@@ -87,10 +87,8 @@ Content-Type: application/json
 Content-length: 634
 
 {
-  "@odata.type": "#microsoft.graph.baseTask",
-  "body": {
-    "@odata.type": "microsoft.graph.itemBody"
-  },
+  "@odata.type": "#microsoft.graph.task",
+  "textBody":  "String",
   "bodyLastModifiedDateTime": "String (timestamp)",
   "completedDateTime": "String (timestamp)",
   "dueDateTime": {
@@ -105,8 +103,8 @@ Content-length: 634
   },
   "displayName": "String",
   "status": "String",
-  "personalProperties": {
-    "@odata.type": "microsoft.graph.personalTaskProperties"
+  "viewpoint": {
+    "@odata.type": "microsoft.graph.taskViewpoint"
   }
 }
 ```
@@ -139,7 +137,7 @@ Content-length: 634
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.baseTask"
+  "@odata.type": "microsoft.graph.task"
 }
 -->
 ``` http
@@ -155,10 +153,7 @@ Content-Type: application/json
     "createdDateTime": "2021-11-17T10:11:18.0229364Z",
     "lastModifiedDateTime": "2021-11-17T10:11:18.19789Z",
     "id": "AAkALgAAAAAAHYQDEapmEc2byACqAC",
-    "body": {
-        "content": "",
-        "contentType": "text"
-    },
+    "textBody":  "",
     "parentList": {
         "id": "AQMkAGVjMzJmMWZjLTgyYjgtNGIyNi1hOGQ0LWRjMjNmMGRmOWNi"
     }

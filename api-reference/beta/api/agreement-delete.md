@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 doc_type: apiPageType
 ms.prod: governance
 author: raprakasMSFT
-ms.openlocfilehash: b34d70990cf603237a78cc16ec53f43433680641
-ms.sourcegitcommit: 77d2ab5018371f153d47cc1cd25f9dcbaca28a95
+ms.openlocfilehash: 98875f34f056dfc7bc56ccc5014a0af7d606cb6b
+ms.sourcegitcommit: 6950d15d8cce5e04733738b8debb92cd8c1d63fe
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63332732"
+ms.lasthandoff: 03/12/2022
+ms.locfileid: "63451372"
 ---
 # <a name="delete-agreement"></a>Excluir contrato
 
@@ -48,10 +48,10 @@ Não forneça um corpo de solicitação para esse método.
 
 
 ## <a name="response"></a>Resposta
-Se bem-sucedido, este método retorna um código de resposta `204, No Content`. Não retorna nada no corpo da resposta.
+Se bem-sucedido, este método retorna um código de resposta `204 No Content`. Não retorna nada no corpo da resposta.
 
 ## <a name="example"></a>Exemplo
-##### <a name="request"></a>Solicitação
+### <a name="request"></a>Solicitação
 
 
 # <a name="http"></a>[HTTP](#tab/http)
@@ -60,7 +60,7 @@ Se bem-sucedido, este método retorna um código de resposta `204, No Content`. 
   "name": "delete_agreement"
 }-->
 ```http
-DELETE https://graph.microsoft.com/beta/identityGovernance/termsOfUse/agreements/{id}
+DELETE https://graph.microsoft.com/beta/identityGovernance/termsOfUse/agreements/0ec9f6a6-159d-4dd8-a563-1f0b5935e80b
 ```
 # <a name="c"></a>[C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/delete-agreement-csharp-snippets.md)]
@@ -89,8 +89,7 @@ DELETE https://graph.microsoft.com/beta/identityGovernance/termsOfUse/agreements
 ---
 
 
-##### <a name="response"></a>Resposta
->**Observação:** o objeto de resposta mostrado aqui pode ser encurtado para legibilidade.
+### <a name="response"></a>Resposta
 <!-- {
   "blockType": "response",
   "truncated": true

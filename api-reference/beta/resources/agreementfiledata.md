@@ -1,16 +1,16 @@
 ---
 title: Tipo de recurso agreementFileData
 description: Representa o blob de um arquivo de contrato de Azure Active Directory (Azure AD).
-localization_priority: Normal
+ms.localizationpriority: medium
 doc_type: resourcePageType
 ms.prod: governance
 author: raprakasMSFT
-ms.openlocfilehash: 0531cfd16c42fb7d2a050c8899eea63b8e333f41
-ms.sourcegitcommit: d700b7e3b411e3226b5adf1f213539f05fe802e8
+ms.openlocfilehash: 3fa6c94497ae42b102f03bee6142ec38677eda93
+ms.sourcegitcommit: 6950d15d8cce5e04733738b8debb92cd8c1d63fe
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52547559"
+ms.lasthandoff: 03/12/2022
+ms.locfileid: "63451309"
 ---
 # <a name="agreementfiledata-resource-type"></a>Tipo de recurso agreementFileData
 
@@ -21,9 +21,9 @@ Namespace: microsoft.graph
 Representa o blob de um arquivo de contrato de Azure Active Directory (Azure AD).
 
 ## <a name="properties"></a>Propriedades
-| Método       | Tipo de retorno | Descrição |
+| Propriedade       | Tipo | Descrição |
 |:-------------|:------------|:------------|
-|data|Binário|Dados que representam os termos de uso do documento PDF. Somente leitura.|
+|data|Binária|Dados que representam os termos de uso do documento PDF. Somente leitura. <br/><br/>**Observação:** Você pode usar o método .NET [Convert.ToBase64String](/dotnet/api/system.convert.tobase64string) para converter seu arquivo em dados binários para carregar usando a API [Criar contratos](../api/termsofusecontainer-post-agreements.md) . Uma sintaxe de exemplo que usa esse método no PowerShell é `[convert]::ToBase64String((Get-Content -path "your_file_path" -Encoding byte))`. |
 
 ## <a name="json-representation"></a>Representação JSON
 

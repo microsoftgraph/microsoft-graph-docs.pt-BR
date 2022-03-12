@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 doc_type: apiPageType
 ms.prod: governance
 author: raprakasMSFT
-ms.openlocfilehash: 74d9cacc9f38c8693fb21b52bb194cf461b443cc
-ms.sourcegitcommit: 77d2ab5018371f153d47cc1cd25f9dcbaca28a95
+ms.openlocfilehash: 03ac058dd53861502bee64f85e254be53db4ab3a
+ms.sourcegitcommit: 6950d15d8cce5e04733738b8debb92cd8c1d63fe
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63336932"
+ms.lasthandoff: 03/12/2022
+ms.locfileid: "63451449"
 ---
 # <a name="create-agreement"></a>Criar contrato
 
@@ -52,9 +52,9 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar um usuá
 |:-------------|:------------|:------------|
 |displayName|Cadeia de caracteres|Nome de exibição do contrato.|
 |isViewingBeforeAcceptanceRequired|Booliano|Indica se o usuário precisa expandir e exibir o contrato antes de aceitar.|
-|files/fileName|String|Nome do arquivo de contrato (por exemplo, TOU.pdf).|
+|files/fileName|Cadeia de caracteres|Nome do arquivo de contrato (por exemplo, TOU.pdf).|
 |files/isDefault|Booliano|Indica se esse é o arquivo de contrato padrão se nenhuma cultura corresponde à preferência do cliente. Se nenhum arquivo for marcado como padrão, o primeiro será tratado como padrão.|
-|files/language|String|Cultura do arquivo de contrato no formato languagecode2-country/regioncode2. languagecode2 é um código de duas letras minúsculo derivado da ISO 639-1. country/regioncode2 é derivado da ISO 3166 e geralmente consiste em duas letras maiúsculas, ou uma marca de idioma BCP-47 (por exemplo, en-US).|
+|files/language|Cadeia de caracteres|Cultura do arquivo de contrato no formato languagecode2-country/regioncode2. languagecode2 é um código de duas letras minúsculo derivado da ISO 639-1. country/regioncode2 é derivado da ISO 3166 e geralmente consiste em duas letras maiúsculas, ou uma marca de idioma BCP-47 (por exemplo, en-US).|
 |files/fileData/data|Binária|Dados que representam os termos de uso do documento PDF.|
 
 ## <a name="response"></a>Resposta
@@ -76,7 +76,7 @@ POST https://graph.microsoft.com/beta/identityGovernance/termsOfUse/agreements
 Content-type: application/json
 
 {
-  "displayName": "MSGraph Sample",
+  "displayName": "Contoso ToU for guest users",
   "isViewingBeforeAcceptanceRequired": true,
   "files": [
     {
@@ -84,7 +84,7 @@ Content-type: application/json
       "language": "en",
       "isDefault": true,
       "fileData": {
-        "data": "SGVsbG8gd29ybGQ="
+        "data": "SGVsbG8gd29ybGQ=//truncated-binary"
       }
     }
   ]
@@ -130,9 +130,13 @@ HTTP/1.1 201 Created
 Content-type: application/json
 
 {
-  "displayName": "MSGraph Sample",
-  "isViewingBeforeAcceptanceRequired": true,
-  "id": "id-value"
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#agreements/$entity",
+    "id": "94410bbf-3d3e-4683-8149-f034e55c39dd",
+    "displayName": "Contoso ToU for guest users",
+    "termsExpiration": null,
+    "userReacceptRequiredFrequency": null,
+    "isViewingBeforeAcceptanceRequired": true,
+    "isPerDeviceAcceptanceRequired": false
 }
 ```
 

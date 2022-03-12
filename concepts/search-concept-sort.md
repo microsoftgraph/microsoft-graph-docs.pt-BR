@@ -1,22 +1,23 @@
 ---
-title: Use a API Pesquisa da Microsoft para classificar os resultados da pesquisa (visualização)
-description: Você classificará os resultados da pesquisa usando Pesquisa da Microsoft API.
+title: Usar a API Pesquisa da Microsoft para classificar os resultados da pesquisa (visualização)
+description: Você classificar os resultados da pesquisa usando a API Pesquisa da Microsoft de pesquisa.
 author: nmoreau
 ms.localizationpriority: medium
 ms.prod: search
-ms.openlocfilehash: 56c0c5ed92098afe9df4eb699d113b62baa5522e
-ms.sourcegitcommit: 08e9b0bac39c1b1d2c8a79539d24aaa93364baf2
+ms.openlocfilehash: 43852737729eb2d8d36e48093302e21b3fecfe7c
+ms.sourcegitcommit: 6950d15d8cce5e04733738b8debb92cd8c1d63fe
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/24/2021
-ms.locfileid: "59766940"
+ms.lasthandoff: 03/12/2022
+ms.locfileid: "63451386"
 ---
 # <a name="use-the-microsoft-search-api-to-sort-search-results"></a>Usar a API Pesquisa da Microsoft para classificar os resultados da pesquisa
 
 Você pode usar a API Pesquisa da Microsoft no Microsoft Graph para classificar os resultados da pesquisa. Para classificar os resultados, especifique a propriedade **sortProperties** em um objeto [searchRequest](/graph/api/resources/searchrequest?view=graph-rest-beta&preserve-view=true) e identifique uma propriedade de recurso em **entityTypes** para classificar as corresponde por, em ordem crescente ou decrescente.
 
-A classificação só é suportada para SharePoint e OneDrive itens.
-A propriedade a ser classificação deve ser *Sortable* no esquema de pesquisa.
+A classificação é suportada para SharePoint e OneDrive itens. A propriedade SharePoint e OneDrive itens a serem organizados devem ser *sortíveis* no esquema de pesquisa.
+
+A classificação também é suportada para [itens externos](/graph/api/resources/externalconnectors-externalitem). A [propriedade](/graph/api/resources/externalconnectors-property) de itens externos a serem classificação deve ser *refinável* no esquema de pesquisa.
 
 A ordem de classificação padrão é crescente. De definir **a propriedade isDescending** para alterá-la.
 
@@ -316,7 +317,7 @@ Content-type: application/json
 
 ## <a name="known-limitations"></a>Limitações conhecidas
 
-- Não há suporte para classificação para **mensagem,** **evento** e **externalItem**.
+- A classificação não é suportada para **mensagens** e **eventos**.
 - Classificar por relevância não pode ser especificado em **sortProperties**.
 
 ## <a name="next-steps"></a>Próximas etapas
