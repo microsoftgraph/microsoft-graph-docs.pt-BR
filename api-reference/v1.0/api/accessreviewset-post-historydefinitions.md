@@ -5,12 +5,12 @@ author: isabelleatmsft
 ms.localizationpriority: medium
 ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: 660a9e24980694688e0db5799ec58bed175af3e1
-ms.sourcegitcommit: 77d2ab5018371f153d47cc1cd25f9dcbaca28a95
+ms.openlocfilehash: 7533b52e58f7229043bf9e6132ca02d36d7acc29
+ms.sourcegitcommit: 1ae0079021dfcbcc910dcdc74440d367ec4af7d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63337577"
+ms.lasthandoff: 03/12/2022
+ms.locfileid: "63460130"
 ---
 # <a name="create-historydefinitions"></a>Criar historyDefinitions
 
@@ -56,7 +56,7 @@ A tabela a seguir mostra as propriedades necessárias usadas para criar [um acce
 
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|displayName | String  | Nome da coleção de dados do histórico de revisão de acesso. Obrigatório. |
+|displayName | Cadeia de caracteres  | Nome da coleção de dados do histórico de revisão de acesso. Obrigatório. |
 |reviewHistoryPeriodStartDateTime  | DateTimeOffset  | Um timestamp. As avaliações que começam em ou após essa data serão incluídas nos dados de histórico buscados. Somente será necessário se **scheduleSettings** não for definido.  |
 |reviewHistoryPeriodEndDateTime  | DateTimeOffset  | Um timestamp. As avaliações que começam em ou antes dessa data serão incluídas nos dados de histórico buscados. Somente será necessário se **scheduleSettings** não for definido.  |
 |escopos|[Coleção accessReviewQueryScope](../resources/accessreviewqueryscope.md)| Usado para filtrar quais avaliações estão incluídas nos dados de histórico buscados. Busca avaliações cujo escopo corresponde a esse escopo fornecido. Obrigatório. <br> Para obter mais, consulte [Consultas de escopo com suporte para accessReviewHistoryDefinition](#supported-scope-queries-for-accessreviewhistorydefinition). |
@@ -72,7 +72,7 @@ Use o seguinte formato para **a propriedade de** consulta:
 /identityGovernance/accessReviews/definitions?$filter=contains(scope/query, '{object}')
 ```
 
-O valor de `{object}` é um dos recursos que podem ser configurados em **um accessReviewScheduleDefinition**. Por exemplo, o seguinte inclui todos os resultados de revisão accessReviewScheduleDefinition em grupos individuais (e exclui definições com escopo para todos os grupos do Microsoft 365 com usuários convidados).
+O valor de `{object}` é um dos recursos que podem ser configurados em **um accessReviewScheduleDefinition**. Por exemplo, o seguinte inclui todos os resultados de revisão accessReviewScheduleDefinition em grupos individuais (e exclui definições com escopo para todos os grupos Microsoft 365 com usuários convidados).
 
 ```http
 /identityGovernance/accessReviews/definitions?$filter=contains(scope/query, '/groups')
@@ -89,8 +89,6 @@ Se tiver êxito, este método retornará um `201 Created` código de resposta e 
 O exemplo a seguir mostra como criar uma definição de histórico de revisão de acesso com escopo para acessar análises em pacotes e grupos de acesso, em execução entre a data de início de 01/01/2021 e a data de término de 05/04/2021.
 
 ### <a name="request"></a>Solicitação
-
-# <a name="http"></a>[HTTP](#tab/http)
 
 # <a name="http"></a>[HTTP](#tab/http)
 <!-- {

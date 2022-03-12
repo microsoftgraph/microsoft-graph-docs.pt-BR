@@ -3341,34 +3341,6 @@ items:
                         href: api/intune-auditing-devicemanagement-get.md
                       - name: Atualizar
                         href: api/intune-auditing-devicemanagement-update.md
-                  - name: Gerenciamento de dispositivo
-                    href: resources/intune-auditing-devicemanagement.md
-                    items:
-                      - name: Obter
-                        href: api/intune-auditing-devicemanagement-get.md
-                      - name: Atualizar
-                        href: api/intune-auditing-devicemanagement-update.md
-                  - name: Gerenciamento de dispositivo
-                    href: resources/intune-auditing-devicemanagement.md
-                    items:
-                      - name: Obter
-                        href: api/intune-auditing-devicemanagement-get.md
-                      - name: Atualizar
-                        href: api/intune-auditing-devicemanagement-update.md
-                  - name: Gerenciamento de dispositivo
-                    href: resources/intune-auditing-devicemanagement.md
-                    items:
-                      - name: Obter
-                        href: api/intune-auditing-devicemanagement-get.md
-                      - name: Atualizar
-                        href: api/intune-auditing-devicemanagement-update.md
-                  - name: Gerenciamento de dispositivo
-                    href: resources/intune-auditing-devicemanagement.md
-                    items:
-                      - name: Obter
-                        href: api/intune-auditing-devicemanagement-get.md
-                      - name: Atualizar
-                        href: api/intune-auditing-devicemanagement-update.md
                   - name: Estado de acesso do Exchange de gerenciamento de dispositivo
                     href: resources/intune-devices-devicemanagementexchangeaccessstate.md
                   - name: Motivo do estado de acesso do Exchange de gerenciamento de dispositivo
@@ -5823,7 +5795,7 @@ items:
                 href: api/resource-get.md
       - name: Inteligência de pessoas e local de trabalho
         items:
-          - name: Visão geral
+          - name: Visão Geral
             href: resources/social-overview.md
           - name: Pessoas
             items:
@@ -5936,7 +5908,7 @@ items:
         items:
           - name: Relatórios de atividade do Azure AD
             items:
-              - name: Visão geral
+              - name: Visão Geral
                 href: resources/azure-ad-auditlog-overview.md
               - name: Auditoria de diretório
                 href: resources/directoryaudit.md
@@ -6224,7 +6196,7 @@ items:
                     href: api/externalconnectors-externalgroup-delete.md
               - name: Membro do grupo externo
                 items:
-                  - name: Identity
+                  - name: Identidade
                     href: resources/externalconnectors-identity.md
                   - name: Criar
                     href: api/externalconnectors-externalgroup-post-members.md
@@ -6248,7 +6220,7 @@ items:
             items:
               - name: Avaliação de ameaças
                 items:
-                  - name: Visão geral
+                  - name: Visão Geral
                     href: resources/threatassessment-api-overview.md
                   - name: Solicitação de avaliação de ameaças
                     href: resources/threatassessmentrequest.md
@@ -7022,7 +6994,7 @@ items:
       - name: Tarefas pendentes
         displayName: Microsoft To Do
         items:
-          - name: Visão Geral
+          - name: Visão geral
             href: resources/todo-overview.md
           - name: Lista de tarefas
             href: resources/todotasklist.md
