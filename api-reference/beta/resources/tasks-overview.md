@@ -1,22 +1,22 @@
 ---
-title: Usar a API de Tarefas do Microsoft To Do
+title: Usar a API To Do no Microsoft Graph
 description: Você pode usar a API Microsoft Graph para criar um aplicativo que se conecta a tarefas e listas de tarefas no Microsoft To Do.
 author: avijityadav
 ms.localizationpriority: high
 ms.prod: outlook
 doc_type: conceptualPageType
-ms.openlocfilehash: 1275e9de566bad3797255d232d2edf5892ac4b6d
-ms.sourcegitcommit: c99d3feb3ab5cae506c1f758bc277a637adc9111
+ms.openlocfilehash: 5db7dbb8a853fa7a2752d3b4931a22b5ae1e1b4b
+ms.sourcegitcommit: 6950d15d8cce5e04733738b8debb92cd8c1d63fe
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/13/2021
-ms.locfileid: "61432638"
+ms.lasthandoff: 03/12/2022
+ms.locfileid: "63451126"
 ---
-# <a name="use-the-microsoft-to-do-api"></a>Usar a API do Microsoft To Do
+# <a name="use-the-to-do-api-in-microsoft-graph"></a>Usar a API To Do no Microsoft Graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Use a API de Tarefas Pendentes do Microsoft Graph para criar um aplicativo que se conecta às tarefas dos usuários em suas caixas de correio. Compilar uma variedade de experiências com tarefas, tais como as seguintes:
+Usar a API do Microsoft Graph To Do para criar um aplicativo que se conecta à tarefa dos usuários em suas caixas de correio. Compilar uma variedade de experiências com tarefas, tais como as seguintes:
 
 * Crie tarefas a partir do fluxo de trabalho do seu aplicativo, por exemplo, por email ou notificações, e salve-as no To Do. Use a entidade [linkedResource](linkedresource.md) para armazenar o link de volta ao seu aplicativo.
 * Sincronize as tarefas existentes de seu aplicativo com o To Do e crie uma única exibição de tarefa para melhor priorização e gerenciabilidade.
@@ -25,13 +25,13 @@ Use a API de Tarefas Pendentes do Microsoft Graph para criar um aplicativo que s
 
 Atualmente, a API suporta apenas as permissões delegadas pelo usuário conectado.
 
-Antes de começar com a API de Tarefas Pendentes, dê uma olhada nos recursos e como eles se relacionam entre si.
+Antes de começar com a API To Do, dê uma olhada nos recursos e como eles se relacionam entre si.
 
-![Captura de tela que destaca as entidades da API de Tarefas Pendentes. A captura de tela mostra a lista de listas de tarefas à esquerda, tarefas dentro de uma lista de tarefas específica no centro e, à direita, itens de lista de verificação e recurso vinculado junto com outras propriedades da tarefa.](/graph/images/tasks-api-entities.png)
+![Captura de tela realçando entidades de To Do API pendentes. A captura de tela mostra uma lista de listas de tarefas à esquerda, tarefas dentro de uma lista de tarefas específica no centro e, à direita, itens de lista de verificação e recursos vinculados junto com outras propriedades de tarefas.](/graph/images/tasks-api-entities.png)
 
 ## <a name="task-list"></a>Lista de tarefas
 
-Uma [TaskList](./basetasklist.md) representa um contêiner lógico de recursos [Tarefa](./basetask.md). Atualmente, você só pode criar tarefas em uma lista de tarefas. As tarefas criadas sem especificar a lista são criadas na lista de Tarefas padrão. Para [obter todas as suas listas de tarefas](../api/basetasklist-get.md), faça a seguinte solicitação HTTP:
+Uma [taskList](./basetasklist.md) representa um contêiner lógico de [tarefa](./basetask.md) recursos. Atualmente, você só pode criar tarefas em uma lista de tarefas. As tarefas criadas sem especificar a lista são criadas na lista de Tarefas padrão. Para [obter todas as suas listas de tarefas](../api/basetasklist-get.md), faça a seguinte solicitação HTTP:
 
 ``` http
 GET /me/tasks/lists
@@ -39,21 +39,21 @@ GET /me/tasks/lists
 
 ## <a name="task"></a>Tarefas
 
-Uma [Tarefa](./basetask.md) representa uma tarefa, ou seja, um trabalho ou item pessoal que pode ser rastreado e concluído. Para obter suas tarefas de uma lista de tarefas, faça a seguinte solicitação HTTP:
+Uma [tarefa](./basetask.md) representa uma tarefa, ou seja, um trabalho ou item pessoal que pode ser rastreado e concluído. Para obter suas tarefas de uma lista de tarefas, faça a seguinte solicitação HTTP:
 ``` http
 GET /me/tasks/lists/{taskListId}/tasks
 ```
 
-## <a name="checklist-item"></a>Item da Lista de Verificação 
+## <a name="checklist-item"></a>Item da lista de verificação 
 
-Um [ChecklistItem](linkedresource_v2.md) um item que ajuda a dividir tarefas complexas em etapas muito menores. Para obter um checklistItems de uma tarefa, faça a seguinte solicitação HTTP:
+Um [checklistItem](checklistitem.md) representa um item que ajuda a dividir tarefas complexas em etapas muito menores. Para obter um **checklistItem** de uma tarefa, faça a seguinte solicitação HTTP:
 ``` http
 GET /me/tasks/lists/{taskListId}/tasks/{taskId}/checklistItems/{checklistItems}
 ```
 
 ## <a name="linked-resource"></a>Recurso vinculado
 
-O [linkedResource](linkedresource_v2.md) representa qualquer item de um aplicativo de parceiro relacionado à tarefa, por exemplo, um item como o email de onde uma tarefa foi criada. Você pode usá-la para armazenar informações e o link de volta para o item relacionado em seu aplicativo. Para obter um recurso vinculado de uma tarefa, faça a seguinte solicitação HTTP:
+Um [linkedResource](linkedresource_v2.md) representa qualquer item de um aplicativo parceiro relacionado à tarefa; por exemplo, um email de onde uma tarefa foi criada. Você pode usá-la para armazenar informações e o link de volta para o item relacionado em seu aplicativo. Para obter um recurso vinculado de uma tarefa, faça a seguinte solicitação HTTP:
 ``` http
 GET /me/tasks/lists/{taskListId}/tasks/{taskId}/linkedresources/{linkedResourceId}
 ```
