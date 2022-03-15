@@ -4,12 +4,12 @@ description: As notificações de alteração podem ser enviadas por meio de tec
 author: Jumaodhiss
 ms.localizationpriority: high
 ms.custom: graphiamtop20, devx-track-azurecli
-ms.openlocfilehash: 9e61d8352c2566b902fea045bc69eff5a91d0a8e
-ms.sourcegitcommit: e497ed9bb56400bdd2bb53d52ddf057d9966220b
+ms.openlocfilehash: 5a93ed69c7e0ed83dcb9ac9d877a59b9033d30b2
+ms.sourcegitcommit: 0fa7148e0b776663eaca3e79e72b85046d4b8b1a
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/30/2021
-ms.locfileid: "61225977"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "63500900"
 ---
 # <a name="get-change-notifications-delivered-in-different-ways"></a>Receber notificações de alterações de maneiras diferentes
 
@@ -95,7 +95,7 @@ Etapas:
 1. Dê um nome para o novo Hub de Eventos e clique em **Criar**.  
 1. Depois que o Hub de Eventos foi criado, clique no nome do Hub de Eventos e, em seguida, clique em **Políticas de acesso compartilhado** e **+ Adicionar** para adicionar uma nova política.  
 1. Dê um nome à política, marque **Enviar**, e clique em **Criar**.  
-1. Depois de criar a política, clique no nome da política para abrir o painel de detalhes e, em seguida, copie o valor da **Chave principal da cadeia de conexão**. Anote-o; você precisará dele para a próxima etapa.  
+1. Depois que a política for criada, clique no nome da política para abrir o painel de detalhes e, em seguida, copie o valor da **Chave primária da cadeia de conexão**. Anote-a; você precisará dela na próxima etapa.  
 
 ##### <a name="configuring-the-azure-key-vault"></a>Configurando o Azure Key Vault
 
@@ -114,12 +114,12 @@ Etapas:
 1. Selecione a sugestão do **Cofre de Chaves**. A página de criação do Cofre de Chaves será carregada.
 1. Na página de criação do Cofre de Chaves clique **criar**.  
 1. Preencha os detalhes da criação do cofre de chaves e, em seguida, clique em **Revisar + Criar** e **Criar**.  
-1. Vá para o cofre de chaves recém-criado usando **Ir para o recurso** da notificação.  
+1. Acesse o cofre de chaves recém-criado usando o **recurso Vá para** da notificação.  
 1. Copie o **nome do DNS**; você precisará dele para a próxima etapa.  
 1. Vá para **Segredos** e clique em **+ Gerar/Importar**.  
 1. Dê um nome ao segredo e guarde-o para mais tarde; você precisará dele para a próxima etapa. Para o valor, cole a cadeia de conexão que você gerou na etapa Hubs de Eventos. Clique em **Criar**.  
 1. Clique em **Políticas de Acesso** e **+ Adicionar Política de Acesso**.  
-1. Para **Permissões de segredo**, selecione **Obter**, e para **Selecionar Principal**, selecione **Controle de Alterações do Microsoft Graph**. Clique em **Adicionar**.  
+1. Para **Permissões secretas**, selecione **Obter** e para **Selecionar Principal**, selecione **Controle de Alterações do Microsoft Graph**. Clique em **Adicionar**.  
 
 ### <a name="creating-the-subscription-and-receiving-notifications"></a>Criando a assinatura e recebendo notificações
 
@@ -182,7 +182,7 @@ POST https://graph.microsoft.com/v1.0/servicePrincipals
 
 > **Observação:** Esta API só funciona com uma conta corporativa ou de estudante e não com uma conta pessoal. Certifique-se que você está conectado com uma conta no seu domínio.
 
-Alternativamente, você pode usar cmdlet [New-MgServicePrincipal](/powershell/module/microsoft.graph.applications/new-mgserviceprincipal?view=graph-powershell-1.0&preserve-view=true) no Microsoft Graph PowerShell para adicionar o principal de serviço ausente. A seguir está um script de exemplo.
+Como alternativa, você pode utilizar o cmdlet [New-MgServicePrincipal](/powershell/module/microsoft.graph.applications/new-mgserviceprincipal?view=graph-powershell-1.0&preserve-view=true) no PowerShell do Microsoft Graph para adicionar a entidade de serviço ausente. Veja a seguir um exemplo de script.
 
 ```PowerShell
 Connect-Graph -Scopes "Application.ReadWrite.All"

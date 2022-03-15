@@ -5,12 +5,12 @@ author: AkJo
 ms.localizationpriority: high
 ms.prod: microsoft-teams
 doc_type: resourcePageType
-ms.openlocfilehash: 27c31e3bd23f5a3e204b8747f9724af93be7a4c5
-ms.sourcegitcommit: 77d2ab5018371f153d47cc1cd25f9dcbaca28a95
+ms.openlocfilehash: 419e88921785cb66d03fe763ff4badd490008ec7
+ms.sourcegitcommit: 0fa7148e0b776663eaca3e79e72b85046d4b8b1a
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63335980"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "63500893"
 ---
 # <a name="team-resource-type"></a>tipo de recurso de equipe
 
@@ -71,6 +71,7 @@ Cada equipe está associada a um [grupo Microsoft 365](../resources/group.md). O
 |classSettings|[teamClassSettings](teamclasssettings.md) |Definir configurações de uma classe. Disponível apenas quando a equipe representa uma classe.|
 |isMembershipLimitedToOwners|Booliano|Se definido para `true`, a equipe está atualmente no estado de membro da equipe apenas para o proprietário e não é acessível a outros membros da equipe, tais como estudantes.|
 |createdDateTime|dateTimeOffset|Carimbo de data/hora de criação da equipe.|
+|summary|[teamSummary](teamsummary.md)| Contém informações resumidas sobre a equipe, incluindo o número de proprietários, membros e convidados. |
 
 ### <a name="instance-attributes"></a>Atributos de instância
 
@@ -127,7 +128,8 @@ Veja a seguir uma representação JSON do recurso.
   "visibility": "string",
   "classSettings": {"@odata.type": "microsoft.graph.teamClassSettings"},
   "isMembershipLimitedToOwners":"boolean",
-  "createdDateTime": "dateTimeOffset"
+  "createdDateTime": "dateTimeOffset",
+  "summary":  {"@odata.type": "microsoft.graph.teamSummary"}
 }
 ```
 
