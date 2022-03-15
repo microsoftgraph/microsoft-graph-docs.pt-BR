@@ -5,12 +5,12 @@ author: AshleyYangSZ
 ms.localizationpriority: medium
 ms.prod: cloud-pc
 doc_type: apiPageType
-ms.openlocfilehash: b16ea1571cc59831cb4736429a6fe6286fa64ff7
-ms.sourcegitcommit: 77d2ab5018371f153d47cc1cd25f9dcbaca28a95
+ms.openlocfilehash: f6e6d6618e4bc90d23c0b3ec552026953a82bfb9
+ms.sourcegitcommit: 0fa7148e0b776663eaca3e79e72b85046d4b8b1a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63335483"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "63500928"
 ---
 # <a name="update-cloudpcusersetting"></a>Atualizar cloudPcUserSetting
 
@@ -56,7 +56,7 @@ A tabela a seguir mostra as propriedades que são necessárias ao atualizar [o c
 
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|displayName|String|O nome da configuração exibido na interface do usuário.|
+|displayName|Cadeia de caracteres|O nome da configuração exibido na interface do usuário.|
 |localAdminEnabled|Booliano|Para ativar a opção de administrador local, altere essa configuração para `True`.  |
 |selfServiceEnabled|Booliano|Para ativar a opção self-service, altere essa configuração para `True`. |
 |restorePointSetting|[cloudPcRestorePointSetting](../resources/cloudpcrestorepointsetting.md)|Define com que frequência um ponto de restauração é criado (ou seja, um instantâneo é feito) para os PCs de Nuvem provisionados dos usuários (o padrão é de 12 horas) e se o usuário tem permissão para restaurar seus próprios PCs de Nuvem para um backup feito em um ponto específico no tempo.|
@@ -87,7 +87,7 @@ Content-Type: application/json
   "displayName": "Example",
   "selfServiceEnabled": true,
   "restorePointSetting": {
-    "frequencyInHours": "16",
+    "frequencyInHours": 16,
     "userRestoreEnabled": true
   },
   "localAdminEnabled": false

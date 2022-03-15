@@ -284,7 +284,7 @@ items:
           - name: Atribuição de funções do aplicativo
             href: resources/approleassignment.md
             items:
-              - name: Lista
+              - name: List
                 href: api/user-list-approleassignments.md
               - name: Adicionar
                 href: api/user-post-approleassignments.md
@@ -304,7 +304,7 @@ items:
                 href: api/user-findmeetingtimes.md
               - name: Obter agenda de disponibilidade
                 href: api/calendar-getschedule.md
-              - name: Lista
+              - name: List
                 href: api/user-list-calendars.md
               - name: Listar grupos de calendários
                 href: api/user-list-calendargroups.md
@@ -321,13 +321,13 @@ items:
                 href: api/user-post-contacts.md
               - name: Criar pasta de contatos
                 href: api/user-post-contactfolders.md
-              - name: Lista
+              - name: List
                 href: api/user-list-contacts.md
               - name: Listar pastas de contatos
                 href: api/user-list-contactfolders.md
           - name: Concessões de permissão delegadas
             items:
-              - name: Lista
+              - name: List
                 href: api/user-list-oauth2permissiongrants.md
           - name: Objetos de diretório
             href: resources/directoryobject.md
@@ -627,7 +627,7 @@ items:
           - name: Atribuição de funções do aplicativo
             href: resources/approleassignment.md
             items:
-              - name: Lista
+              - name: List
                 href: api/group-list-approleassignments.md
               - name: Adicionar
                 href: api/group-post-approleassignments.md
@@ -862,7 +862,7 @@ items:
                         href: api/directoryobject-getavailableextensionproperties.md
               - name: Proprietários
                 items:
-                  - name: Lista
+                  - name: List
                     href: api/application-list-owners.md
                   - name: Adicionar
                     href: api/application-post-owners.md
@@ -875,7 +875,7 @@ items:
                     items:
                       - name: Atribuir
                         href: api/application-post-tokenissuancepolicies.md
-                      - name: Lista
+                      - name: List
                         href: api/application-list-tokenissuancepolicies.md
                       - name: Remover
                         href: api/application-delete-tokenissuancepolicies.md
@@ -884,7 +884,7 @@ items:
                     items:
                       - name: Atribuir
                         href: api/application-post-tokenlifetimepolicies.md
-                      - name: Lista
+                      - name: List
                         href: api/application-list-tokenlifetimepolicies.md
                       - name: Remover
                         href: api/application-delete-tokenlifetimepolicies.md
@@ -916,7 +916,7 @@ items:
               - name: Atribuição de funções do aplicativo
                 href: resources/approleassignment.md
                 items:
-                  - name: Lista
+                  - name: List
                     href: api/serviceprincipal-list-approleassignments.md
                   - name: Adicionar
                     href: api/serviceprincipal-post-approleassignments.md
@@ -942,7 +942,7 @@ items:
                     href: api/serviceprincipal-addtokensigningcertificate.md
               - name: Concessões de permissão delegadas
                 items:
-                  - name: Lista
+                  - name: List
                     href: api/serviceprincipal-list-oauth2permissiongrants.md
               - name: Classificações de permissão delegada
                 href: resources/delegatedpermissionclassification.md
@@ -969,7 +969,7 @@ items:
                     href: api/directoryobject-getmemberobjects.md
               - name: Proprietários
                 items:
-                  - name: Lista
+                  - name: List
                     href: api/serviceprincipal-list-owners.md
                   - name: Adicionar
                     href: api/serviceprincipal-post-owners.md
@@ -982,7 +982,7 @@ items:
                     items:
                       - name: Atribuir
                         href: api/serviceprincipal-post-claimsmappingpolicies.md
-                      - name: Lista
+                      - name: List
                         href: api/serviceprincipal-list-claimsmappingpolicies.md
                       - name: Remover
                         href: api/serviceprincipal-delete-claimsmappingpolicies.md
@@ -991,7 +991,7 @@ items:
                     items:
                       - name: Atribuir
                         href: api/serviceprincipal-post-homerealmdiscoverypolicies.md
-                      - name: Lista
+                      - name: List
                         href: api/serviceprincipal-list-homerealmdiscoverypolicies.md
                       - name: Remover
                         href: api/serviceprincipal-delete-homerealmdiscoverypolicies.md
@@ -1028,7 +1028,7 @@ items:
                     items:
                       - name: Atribuir
                         href: api/application-post-tokenissuancepolicies.md
-                      - name: Lista
+                      - name: List
                         href: api/application-list-tokenissuancepolicies.md
                       - name: Remover
                         href: api/application-delete-tokenissuancepolicies.md
@@ -1037,7 +1037,7 @@ items:
                     items:
                       - name: Atribuir
                         href: api/application-post-tokenlifetimepolicies.md
-                      - name: Lista
+                      - name: List
                         href: api/application-list-tokenlifetimepolicies.md
                       - name: Remover
                         href: api/application-delete-tokenlifetimepolicies.md
@@ -1332,7 +1332,7 @@ items:
                 href: api/call-logteleconferencedevicequality.md
           - name: Registros de chamadas
             items:
-              - name: Visão geral
+              - name: Visão Geral
                 href: resources/callrecords-api-overview.md
               - name: Registro de chamada
                 items:
@@ -1383,7 +1383,7 @@ items:
                   - name: Registro de presença
                     href: resources/attendancerecord.md
                     items:
-                      - name: Lista
+                      - name: List
                         href: api/attendancerecord-list.md
           - name: Presença
             href: resources/presence.md
@@ -4107,7 +4107,7 @@ items:
                   - name: Uso do PIN do Windows Hello para empresas
                     href: resources/intune-onboarding-windowshelloforbusinesspinusage.md
               - name: Controle de Acesso Baseado em Função (RBAC)
-                href: /resources/intune-rbac-conceptual.md
+                href: resources/intune-rbac-conceptual.md
                 items:
                   - name: Atribuição de função de gerenciamento de aplicativo e dispositivo
                     href: resources/intune-rbac-deviceandappmanagementroleassignment.md
@@ -4241,7 +4241,7 @@ items:
                         href: api/intune-tem-telecomexpensemanagementpartner-update.md
           - name: Comunicações e integridade do serviço
             items:
-              - name: Visão geral
+              - name: Visão Geral
                 href: resources/service-communications-api-overview.md
               - name: Comunicado do serviço
                 href: resources/serviceannouncement.md
@@ -5053,7 +5053,7 @@ items:
                         href: api/organizationalbrandinglocalization-delete.md
               - name: Políticas
                 items:
-                  - name: Visão geral
+                  - name: Visão Geral
                     href: resources/policy-overview.md
                   - name: Política de tempo de tempo de atividade baseada em atividade
                     href: resources/activitybasedtimeoutpolicy.md
@@ -5362,7 +5362,7 @@ items:
                       - name: Instância do histórico de revisão do Access
                         href: resources/accessreviewhistoryinstance.md
                         items:
-                          - name: Lista
+                          - name: List
                             href: api/accessreviewhistorydefinition-list-instances.md
                           - name: Gerar URI de download
                             displayName: Downloadable access review history report
@@ -5418,7 +5418,7 @@ items:
                   - name: Atribuição de pacote do Access
                     href: resources/accesspackageassignment.md
                     items:
-                      - name: Lista
+                      - name: List
                         href: api/entitlementmanagement-list-assignments.md
                       - name: Filtrar pelo usuário atual
                         href: api/accesspackageassignment-filterbycurrentuser.md
@@ -5931,7 +5931,7 @@ items:
                     href: api/provisioningobjectsummary-list.md
           - name: Microsoft 365 de uso
             items:
-              - name: Visão geral
+              - name: Visão Geral
                 href: resources/report.md
               - name: Uso do dispositivo do Microsoft Teams
                 href: resources/microsoft-teams-device-usage-reports.md
@@ -6309,7 +6309,7 @@ items:
                     href: api/site-delete-permission.md
           - name: Listas
             items:
-              - name: Lista
+              - name: List
                 href: resources/list.md
               - name: Criar lista
                 href: api/list-create.md
@@ -6402,7 +6402,7 @@ items:
               - name: Set
                 href: resources/termstore-set.md
                 items:
-                  - name: Lista
+                  - name: List
                     href: api/termstore-group-list-sets.md
                   - name: Listar filhos
                     href: api/termstore-term-list-children.md
@@ -6865,7 +6865,7 @@ items:
                     href: api/offershiftrequest-post.md
                   - name: Obter
                     href: api/offershiftrequest-get.md
-                  - name: Lista
+                  - name: List
                     href: api/offershiftrequest-list.md
                   - name: Aprovar
                     href: api/offershiftrequest-approve.md
@@ -6994,7 +6994,7 @@ items:
       - name: Tarefas pendentes
         displayName: Microsoft To Do
         items:
-          - name: Visão geral
+          - name: Visão Geral
             href: resources/todo-overview.md
           - name: Lista de tarefas
             href: resources/todotasklist.md
@@ -7015,7 +7015,7 @@ items:
                 href: api/opentypeextension-post-opentypeextension.md
               - name: Obter extensão aberta
                 href: api/opentypeextension-get.md
-          - name: Tarefa
+          - name: Tarefas
             href: resources/todotask.md
             items:
               - name: Listar tarefas

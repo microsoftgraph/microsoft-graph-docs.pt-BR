@@ -314,7 +314,7 @@ items:
                 href: api/user-findroomlists.md
               - name: Obter agenda de disponibilidade
                 href: api/calendar-getschedule.md
-              - name: Lista
+              - name: List
                 href: api/user-list-calendars.md
               - name: Listar grupos de calendários
                 href: api/user-list-calendargroups.md
@@ -962,7 +962,7 @@ items:
                     items:
                       - name: Atribuir
                         href: api/application-post-tokenissuancepolicies.md
-                      - name: Lista
+                      - name: List
                         href: api/application-list-tokenissuancepolicies.md
                       - name: Remover
                         href: api/application-delete-tokenissuancepolicies.md
@@ -971,7 +971,7 @@ items:
                     items:
                       - name: Atribuir
                         href: api/application-post-tokenlifetimepolicies.md
-                      - name: Lista
+                      - name: List
                         href: api/application-list-tokenlifetimepolicies.md
                       - name: Remover
                         href: api/application-delete-tokenlifetimepolicies.md
@@ -1152,7 +1152,7 @@ items:
                     items:
                       - name: Atribuir
                         href: api/serviceprincipal-post-claimsmappingpolicies.md
-                      - name: Lista
+                      - name: List
                         href: api/serviceprincipal-list-claimsmappingpolicies.md
                       - name: Remover
                         href: api/serviceprincipal-delete-claimsmappingpolicies.md
@@ -1161,7 +1161,7 @@ items:
                     items:
                       - name: Atribuir
                         href: api/serviceprincipal-post-homerealmdiscoverypolicies.md
-                      - name: Lista
+                      - name: List
                         href: api/serviceprincipal-list-homerealmdiscoverypolicies.md
                       - name: Remover
                         href: api/serviceprincipal-delete-homerealmdiscoverypolicies.md
@@ -1170,7 +1170,7 @@ items:
                     items:
                       - name: Atribuir
                         href: api/application-post-tokenissuancepolicies.md
-                      - name: Lista
+                      - name: List
                         href: api/application-list-tokenissuancepolicies.md
                       - name: Remover
                         href: api/application-delete-tokenissuancepolicies.md
@@ -1179,7 +1179,7 @@ items:
                     items:
                       - name: Atribuir
                         href: api/application-post-tokenlifetimepolicies.md
-                      - name: Lista
+                      - name: List
                         href: api/application-list-tokenlifetimepolicies.md
                       - name: Remover
                         href: api/application-delete-tokenlifetimepolicies.md
@@ -1195,7 +1195,7 @@ items:
                     href: api/serviceprincipal-deletepasswordsinglesignoncredentials.md
           - name: Sincronização
             items:
-              - name: Visão geral
+              - name: Visão Geral
                 href: resources/synchronization-overview.md
               - name: Sincronização
                 href: resources/synchronization-synchronization.md
@@ -1565,7 +1565,7 @@ items:
                 href: api/call-logteleconferencedevicequality.md
           - name: Registros de chamadas
             items:
-              - name: Visão geral
+              - name: Visão Geral
                 href: resources/callrecords-api-overview.md
               - name: Registro de chamada
                 items:
@@ -1577,7 +1577,7 @@ items:
                 items:
                   - name: Sessão
                     href: resources/callrecords-session.md
-                  - name: Lista
+                  - name: List
                     href: api/callrecords-session-list.md
               - name: Chamadas PSTN
                 items:
@@ -1616,7 +1616,7 @@ items:
                   - name: Registro de presença
                     href: resources/attendancerecord.md
                     items:
-                      - name: Lista
+                      - name: List
                         href: api/attendancerecord-list.md
               - name: Registro de reunião
                 href: resources/meetingregistration.md
@@ -1834,7 +1834,7 @@ items:
                     href: api/ediscovery-tag-ashierarchy.md
           - name: Solicitação de direitos do sujeito
             items:
-              - name: Visão geral
+              - name: Visão Geral
                 href: resources/subjectrightsrequest-subjectrightsrequestapioverview.md
               - name: Solicitação de direitos do sujeito
                 href: resources/subjectrightsrequest.md
@@ -9499,7 +9499,7 @@ items:
                   - name: Uso do PIN do Windows Hello para empresas
                     href: resources/intune-onboarding-windowshelloforbusinesspinusage.md
               - name: Controle de Acesso Baseado em Função (RBAC)
-                href: /resources/intune-rbac-conceptual.md
+                href: resources/intune-rbac-conceptual.md
                 items:
                   - name: Detalhes de função atribuídos ao gerenciamento de aplicativo e dispositivo
                     href: resources/intune-rbac-deviceandappmanagementassignedroledetails.md
@@ -9807,7 +9807,7 @@ items:
                         href: api/intune-shared-devicemanagementderivedcredentialsettings-get.md
                       - name: Atualizar
                         href: api/intune-shared-devicemanagementderivedcredentialsettings-update.md
-                      - name: Lista
+                      - name: List
                         href: api/intune-shared-devicemanagementderivedcredentialsettings-list.md
                       - name: Excluir
                         href: api/intune-shared-devicemanagementderivedcredentialsettings-delete.md
@@ -10085,7 +10085,7 @@ items:
                         href: api/intune-tem-telecomexpensemanagementpartner-update.md
           - name: Cloud PC (visualização)
             items:
-              - name: Visão geral
+              - name: Visão Geral
                 href: resources/cloudpc-api-overview.md
               - name: Ponto de extremidade virtual
                 href: resources/virtualendpoint.md
@@ -10204,12 +10204,12 @@ items:
               - name: Região suportada pelo Cloud PC
                 href: resources/cloudpcsupportedregion.md
                 items:
-                  - name: Lista
+                  - name: List
                     href: api/virtualendpoint-list-supportedregions.md
               - name: Plano de serviço de computador na nuvem
                 href: resources/cloudpcserviceplan.md
                 items:
-                  - name: Lista
+                  - name: List
                     href: api/virtualendpoint-list-serviceplans.md
               - name: Instantâneo do computador na nuvem
                 href: resources/cloudpcsnapshot.md
@@ -11184,7 +11184,7 @@ items:
                     href: api/contract-list.md
               - name: Atributos de segurança personalizados (visualização)
                 items:
-                  - name: Visão geral
+                  - name: Visão Geral
                     href: resources/custom-security-attributes-overview.md
                   - name: Conjuntos de atributos
                     href: resources/attributeset.md
@@ -11607,7 +11607,7 @@ items:
             items:
               - name: Métodos de autenticação
                 items:
-                  - name: Visão geral
+                  - name: Visão Geral
                     href: resources/authenticationmethods-overview.md
                   - name: Listar todos os métodos
                     href: api/authentication-list-methods.md
@@ -11988,7 +11988,7 @@ items:
                         href: api/organizationalbrandinglocalization-delete.md
               - name: Políticas
                 items:
-                  - name: Visão geral
+                  - name: Visão Geral
                     href: resources/policy-overview.md
                   - name: Política de tempo de tempo de atividade baseada em atividade
                     href: resources/activitybasedtimeoutpolicy.md
@@ -12556,7 +12556,7 @@ items:
                       - name: Instância do histórico de revisão do Access
                         href: resources/accessreviewhistoryinstance.md
                         items:
-                          - name: Lista
+                          - name: List
                             href: api/accessreviewhistorydefinition-list-instances.md
                           - name: Gerar URI de download
                             displayName: Downloadable access review history report
@@ -12690,7 +12690,7 @@ items:
                   - name: Atribuição de pacote do Access
                     href: resources/accesspackageassignment.md
                     items:
-                      - name: Lista
+                      - name: List
                         href: api/entitlementmanagement-list-accesspackageassignments.md
                       - name: Filtrar pelo usuário atual
                         href: api/accesspackageassignment-filterbycurrentuser.md
@@ -13738,7 +13738,7 @@ items:
         items:
           - name: Relatórios de atividade do Azure AD
             items:
-              - name: Visão geral
+              - name: Visão Geral
                 href: resources/azure-ad-auditlog-overview.md
               - name: Auditoria de diretório
                 href: resources/directoryaudit.md
@@ -13768,7 +13768,7 @@ items:
                   - name: Resumo detalhado da parte de base
                     href: resources/relyingpartydetailedsummary.md
                     items:
-                      - name: Lista
+                      - name: List
                         href: api/relyingpartydetailedsummary-list.md
               - name: Entrar no aplicativo
                 items:
@@ -13796,27 +13796,27 @@ items:
                   - name: Detalhes do registro do usuário credencial
                     href: resources/credentialuserregistrationdetails.md
                     items:
-                      - name: Lista
+                      - name: List
                         href: api/reportroot-list-credentialuserregistrationdetails.md
                   - name: Detalhes de uso da credencial do usuário
                     href: resources/usercredentialusagedetails.md
                     items:
-                      - name: Lista
+                      - name: List
                         href: api/reportroot-list-usercredentialusagedetails.md
                   - name: Resumo de uso de credenciais
                     href: resources/credentialusagesummary.md
                     items:
-                      - name: Lista
+                      - name: List
                         href: api/reportroot-getcredentialusagesummary.md
                   - name: Usuários registrados por recurso
                     href: resources/userregistrationfeaturesummary.md
                     items:
-                      - name: Lista
+                      - name: List
                         href: api/authenticationmethodsroot-usersregisteredbyfeature.md
                   - name: Usuários registrados pelo método
                     href: resources/userregistrationmethodsummary.md
                     items:
-                      - name: Lista
+                      - name: List
                         href: api/authenticationmethodsroot-usersregisteredbymethod.md
                   - name: Detalhes do registro do usuário
                     href: resources/userregistrationdetails.md
@@ -14074,7 +14074,7 @@ items:
         items:
           - name: Consulta
             items:
-              - name: Visão geral
+              - name: Visão Geral
                 href: resources/search-api-overview.md
               - name: Tipo de solicitação de pesquisa
                 href: resources/searchrequest.md
@@ -14084,7 +14084,7 @@ items:
                 href: api/search-query.md
           - name: Resposta
             items:
-              - name: Visão geral
+              - name: Visão Geral
                 href: resources/search-api-answers-overview.md
               - name: Acrônimo
                 href: resources/search-acronym.md
@@ -14127,7 +14127,7 @@ items:
                     href: api/search-qna-delete.md
           - name: Index
             items:
-              - name: Visão geral
+              - name: Visão Geral
                 href: resources/indexing-api-overview.md
               - name: Conexão externa
                 items:
@@ -14374,7 +14374,7 @@ items:
                     href: api/site-delete-permission.md
           - name: Listas
             items:
-              - name: Lista
+              - name: List
                 href: resources/list.md
               - name: Obter listas em um site
                 href: api/list-list.md
@@ -14504,7 +14504,7 @@ items:
               - name: Set
                 href: resources/termstore-set.md
                 items:
-                  - name: Lista
+                  - name: List
                     href: api/termstore-group-list-sets.md
                   - name: Listar filhos
                     href: api/termstore-term-list-children.md
@@ -15092,7 +15092,7 @@ items:
                     href: api/offershiftrequest-post.md
                   - name: Obter
                     href: api/offershiftrequest-get.md
-                  - name: Lista
+                  - name: List
                     href: api/offershiftrequest-list.md
                   - name: Aprovar
                     href: api/offershiftrequest-approve.md
@@ -15248,7 +15248,7 @@ items:
       - name: Tarefas pendentes
         displayName: Microsoft To Do
         items:
-          - name: Visão geral
+          - name: Visão Geral
             href: resources/tasks-overview.md
           - name: Lista de tarefas
             items:
@@ -15274,11 +15274,11 @@ items:
                 href: api/opentypeextension-post-opentypeextension.md
               - name: Obter extensão aberta
                 href: api/opentypeextension-get.md
-          - name: Tarefa
+          - name: Tarefas
             items:
               - name: Tarefa base
                 href: resources/basetask.md
-              - name: Tarefa
+              - name: Tarefas
                 href: resources/task.md
               - name: Listar tarefas
                 href: api/basetasklist-list-tasks.md
@@ -15298,7 +15298,7 @@ items:
                 href: api/opentypeextension-post-opentypeextension.md
               - name: Obter extensão aberta
                 href: api/opentypeextension-get.md
-          - name: Item checklist
+          - name: Item da lista de verificação
             href: resources/checklistitem.md
             items:
               - name: Listar
@@ -15347,7 +15347,7 @@ items:
                     href: api/opentypeextension-post-opentypeextension.md
                   - name: Obter extensão aberta
                     href: api/opentypeextension-get.md
-              - name: Tarefa
+              - name: Tarefas
                 href: resources/todotask.md
                 items:
                   - name: Listar tarefas

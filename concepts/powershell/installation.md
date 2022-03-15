@@ -3,23 +3,23 @@ title: Instalar o Microsoft Graph PowerShell SDK
 description: Fornece instruções para instalar o Microsoft Graph PowerShell SDK.
 ms.localizationpriority: medium
 author: jasonjoh
-ms.openlocfilehash: 0337b4641f8c84e63c4c5e7eecf1da0f186dad0c
-ms.sourcegitcommit: 9adf70c5da7c5b65f7d20f571d101ee06f023bc3
+ms.openlocfilehash: 80086e4879ce9acb547e060c45891bd58dc602bf
+ms.sourcegitcommit: 0fa7148e0b776663eaca3e79e72b85046d4b8b1a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/25/2022
-ms.locfileid: "62201677"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "63500956"
 ---
 # <a name="install-the-microsoft-graph-powershell-sdk"></a>Instalar o Microsoft Graph PowerShell SDK
 
 > [!NOTE]
-> A instalação do módulo principal do SDK instalará todos os 38 sub módulos. Considere apenas instalar os módulos necessários, incluindo `Microsoft.Graph.Authentication` . Para uma lista de módulos Graph Microsoft disponíveis, use o comando a seguir.
+> A instalação do módulo principal do SDK instalará todos os 38 sub módulos. Considere apenas instalar os módulos necessários, incluindo `Microsoft.Graph.Authentication`. Para uma lista de módulos Graph Microsoft disponíveis, use o comando a seguir.
 >
 > ```powershell
 > Find-Module Microsoft.Graph*
 > ```
 
-O SDK do Microsoft Graph PowerShell é publicado na [Galeria do PowerShell.](https://www.powershellgallery.com/packages/Microsoft.Graph) Você pode instalar o SDK no PowerShell Core ou Windows PowerShell usando o comando a seguir.
+O Microsoft Graph SDK do PowerShell é publicado na [Galeria do PowerShell](https://www.powershellgallery.com/packages/Microsoft.Graph). Você pode instalar o SDK no PowerShell Core ou Windows PowerShell usando o comando a seguir.
 
 ```powershell
 Install-Module Microsoft.Graph -Scope CurrentUser
@@ -82,4 +82,4 @@ Uninstall-Module Microsoft.Graph.Authentication
 
 ## <a name="provide-feedback"></a>Faça comentários
 
-Comentários de boas-vindas! Forneça comentários ou informe quaisquer problemas no [repositório GitHub SDK.](https://github.com/microsoftgraph/msgraph-sdk-powershell/issues)
+Comentários de boas-vindas! Forneça comentários ou informe quaisquer problemas no [repositório de GitHub SDK](https://github.com/microsoftgraph/msgraph-sdk-powershell/issues).

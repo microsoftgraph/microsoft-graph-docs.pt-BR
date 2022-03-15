@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: abhijeetsinha
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: 09e45b8db050a79a6e80e3a70d275493c78aa28c
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: d9ae143051bd839ac34b4d5b326d2768bc821186
+ms.sourcegitcommit: 0fa7148e0b776663eaca3e79e72b85046d4b8b1a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62089249"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "63500914"
 ---
 # <a name="delete-unifiedroledefinition"></a>Excluir unifiedRoleDefinition
 
@@ -27,15 +27,15 @@ No momento, há suporte para os seguintes provedores RBAC:
 
 ## <a name="permissions"></a>Permissões
 
-Dependendo do provedor RBAC e do tipo de permissão (delegado ou aplicativo) necessário, escolha entre as tabelas a permissão menos privilegiada necessária para chamar essa API. Para saber mais, incluindo [ter cuidado antes](/graph/auth/auth-concepts#best-practices-for-requesting-permissions) de escolher permissões mais privilegiadas, consulte [Permissions](/graph/permissions-reference). 
+Dependendo do provedor RBAC e do tipo de permissão (delegado ou aplicativo) necessário, escolha entre as tabelas a permissão menos privilegiada necessária para chamar essa API. Para saber mais, incluindo [ter cuidado antes](/graph/auth/auth-concepts#best-practices-for-requesting-permissions) de escolher permissões mais privilegiadas, consulte [Permissões](/graph/permissions-reference). 
 
 ### <a name="for-a-cloud-pc-provider"></a>Para um provedor de computadores na nuvem
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegado (conta corporativa ou de estudante) | CloudPC.ReadWrite.All   |
+|Delegado (conta corporativa ou de estudante) | RoleManagement.ReadWrite.CloudPC, CloudPC.ReadWrite.All   |
 |Delegado (conta pessoal da Microsoft) | Sem suporte.    |
-|Aplicativo | CloudPC.ReadWrite.All  |
+|Aplicativo | RoleManagement.ReadWrite.CloudPC, CloudPC.ReadWrite.All  |
 
 ### <a name="for-a-device-management-intune-provider"></a>Para um provedor de gerenciamento de dispositivos (Intune)
 

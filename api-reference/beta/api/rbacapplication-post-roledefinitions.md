@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: abhijeetsinha
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: 0f133cdd0568dadf392ef6d88c2f57fd78d8da89
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: f067315b35b3a54f95b184e3f83c961174eded1c
+ms.sourcegitcommit: 0fa7148e0b776663eaca3e79e72b85046d4b8b1a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62120029"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "63500935"
 ---
 # <a name="create-unifiedroledefinition"></a>Criar unifiedRoleDefinition
 
@@ -27,15 +27,15 @@ No momento, há suporte para os seguintes provedores RBAC:
 
 ## <a name="permissions"></a>Permissões
 
-Dependendo do provedor RBAC e do tipo de permissão (delegado ou aplicativo) necessário, escolha entre as tabelas a permissão menos privilegiada necessária para chamar essa API. Para saber mais, incluindo [ter cuidado antes](/graph/auth/auth-concepts#best-practices-for-requesting-permissions) de escolher permissões mais privilegiadas, consulte [Permissions](/graph/permissions-reference). 
+Dependendo do provedor RBAC e do tipo de permissão (delegado ou aplicativo) necessário, escolha entre as tabelas a permissão menos privilegiada necessária para chamar essa API. Para saber mais, incluindo [ter cuidado antes](/graph/auth/auth-concepts#best-practices-for-requesting-permissions) de escolher permissões mais privilegiadas, consulte [Permissões](/graph/permissions-reference). 
 
 ### <a name="for-a-cloud-pc-provider"></a>Para um provedor de computadores na nuvem
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegado (conta corporativa ou de estudante) | CloudPC.ReadWrite.All   |
+|Delegado (conta corporativa ou de estudante) | RoleManagement.ReadWrite.CloudPC, CloudPC.ReadWrite.All   |
 |Delegado (conta pessoal da Microsoft) | Sem suporte.    |
-|Aplicativo | CloudPC.ReadWrite.All  |
+|Aplicativo | RoleManagement.ReadWrite.CloudPC, CloudPC.ReadWrite.All  |
 
 ### <a name="for-a-device-management-intune-provider"></a>Para um provedor de gerenciamento de dispositivos (Intune)
 
@@ -81,19 +81,19 @@ POST /roleManagement/cloudPc/roleDefinitions
 
 ## <a name="request-body"></a>Corpo da solicitação
 
-No corpo da solicitação, fornece uma representação JSON do [objeto unifiedRoleDefinition.](../resources/unifiedroledefinition.md)
+No corpo da solicitação, fornece uma representação JSON do [objeto unifiedRoleDefinition](../resources/unifiedroledefinition.md) .
 
 A tabela a seguir mostra as propriedades que são necessárias ao criar uma roleDefinition.
 
 | Parâmetro | Tipo | Descrição|
 |:---------------|:--------|:----------|
-|displayName |string |O nome de exibição da definição de função.|
+|displayName |cadeia de caracteres |O nome de exibição da definição de função.|
 |isEnabled |Booliano |Sinalizador indicando se a função está habilitada para atribuição. Se for false, a função não estará disponível para atribuição.|
 |rolePermissions |[Coleção unifiedRolePermission](../resources/unifiedrolepermission.md) |Lista de permissões incluídas na função.|
 
 ## <a name="response"></a>Resposta
 
-Se tiver êxito, este método retornará `201 Created` o código de resposta e um novo objeto [unifiedRoleDefinition](../resources/unifiedroledefinition.md) no corpo da resposta.
+Se tiver êxito, este método retornará `201 Created` o código de resposta e um novo [objeto unifiedRoleDefinition](../resources/unifiedroledefinition.md) no corpo da resposta.
 
 ## <a name="example-1create-a-custom-role-for-a-directory-provider"></a>Exemplo 1:Criar uma função personalizada para um provedor de diretórios
 
