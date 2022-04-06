@@ -5,22 +5,22 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 4e31ef67c8b29b6c01a4fa882afac0d1511b1707
-ms.sourcegitcommit: 4a960067cf2cd7d3c605550150eb3c9259adfe92
+ms.openlocfilehash: 86463766943210043762e9fd00d6f1cccd2adce4
+ms.sourcegitcommit: 0076eb6abb89be3dca3575631924a74a5202be30
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/19/2021
-ms.locfileid: "60489048"
+ms.lasthandoff: 04/03/2022
+ms.locfileid: "64630083"
 ---
 # <a name="list-deviceenrollmentplatformrestrictionconfigurations"></a>Listar deviceEnrollmentPlatformRestrictionConfigurations
 
 Namespace: microsoft.graph
 
-> **Importante:** As APIs Graph Microsoft na versão /beta estão sujeitas a alterações; não há suporte para uso de produção.
+> **Importante:** As APIs Graph Microsoft na versão /beta estão sujeitas a alterações; o uso de produção não é suportado.
 
 > **Observação:** A API do Microsoft Graph para Intune requer uma [licença ativa do Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
 
-Listar propriedades e relações dos [objetos deviceEnrollmentPlatformRestrictionConfiguration.](../resources/intune-onboarding-deviceenrollmentplatformrestrictionconfiguration.md)
+Listar propriedades e relações dos [objetos deviceEnrollmentPlatformRestrictionConfiguration](../resources/intune-onboarding-deviceenrollmentplatformrestrictionconfiguration.md) .
 
 ## <a name="prerequisites"></a>Pré-requisitos
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
@@ -28,7 +28,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |Tipo de permissão|Permissões (da com menos para a com mais privilégios)|
 |:---|:---|
 |Delegado (conta corporativa ou de estudante)|DeviceManagementServiceConfig.Read.All, DeviceManagementServiceConfig.ReadWrite.All|
-|Delegado (conta pessoal da Microsoft)|Sem suporte.|
+|Delegada (conta pessoal da Microsoft)|Sem suporte.|
 |Aplicativo|DeviceManagementServiceConfig.Read.All, DeviceManagementServiceConfig.ReadWrite.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
@@ -50,7 +50,7 @@ GET /deviceManagement/deviceEnrollmentConfigurations
 Não forneça um corpo de solicitação para esse método.
 
 ## <a name="response"></a>Resposta
-Se tiver êxito, este método retornará um código de resposta e uma coleção de `200 OK` [objetos deviceEnrollmentPlatformRestrictionConfiguration](../resources/intune-onboarding-deviceenrollmentplatformrestrictionconfiguration.md) no corpo da resposta.
+Se tiver êxito, este método retornará `200 OK` um código de resposta e uma coleção de [objetos deviceEnrollmentPlatformRestrictionConfiguration](../resources/intune-onboarding-deviceenrollmentplatformrestrictionconfiguration.md) no corpo da resposta.
 
 ## <a name="example"></a>Exemplo
 
@@ -65,7 +65,7 @@ Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado a
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 1021
+Content-Length: 1074
 
 {
   "value": [
@@ -81,6 +81,7 @@ Content-Length: 1021
       "roleScopeTagIds": [
         "Role Scope Tag Ids value"
       ],
+      "deviceEnrollmentConfigurationType": "limit",
       "platformRestriction": {
         "@odata.type": "microsoft.graph.deviceEnrollmentPlatformRestriction",
         "platformBlocked": true,
@@ -99,6 +100,7 @@ Content-Length: 1021
   ]
 }
 ```
+
 
 
 

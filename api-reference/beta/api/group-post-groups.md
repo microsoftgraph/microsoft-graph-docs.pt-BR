@@ -5,12 +5,12 @@ author: Jordanndahl
 ms.localizationpriority: high
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: ac356d2a1b66ff9a0a6605262c84045f677d88b8
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: 40e64178ff682ae9db4c58bffce686a84471361b
+ms.sourcegitcommit: 0e7927f34b7e55d323acbf281e11560cb40a89ed
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62127712"
+ms.lasthandoff: 03/20/2022
+ms.locfileid: "63671395"
 ---
 # <a name="create-group"></a>Criar grupo
 
@@ -32,7 +32,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegado (conta corporativa ou de estudante) | Group.ReadWrite.All, Directory.ReadWrite.All, Directory.AccessAsUser.All  |
+|Delegado (conta corporativa ou de estudante) | Group.ReadWrite.All, Directory.ReadWrite.All  |
 |Delegado (conta pessoal da Microsoft) | Sem suporte.    |
 |Aplicativo | Group.Create, Group.ReadWrite.All, Directory.ReadWrite.All |
 
@@ -57,7 +57,7 @@ A tabela a seguir mostra as propriedades necessárias ao criar o [grupo](../reso
 
 | Propriedade | Tipo | Descrição|
 |:---------------|:--------|:----------|
-| displayName | string | O nome para exibição no catálogo de endereços do grupo. O comprimento máximo é de 256 caracteres. Obrigatório. |
+| displayName | string | O nome a ser exibido no catálogo de endereços do grupo. O comprimento máximo é de 256 caracteres. Requeridos. |
 | mailEnabled | booliano | Definir como `true` para grupos habilitados para e-mail. Obrigatório. |
 | mailNickname | string | O alias de email do grupo, exclusivo para grupos do Microsoft 365 na organização. O comprimento máximo é de 64 caracteres. Essa propriedade pode conter apenas caracteres no [conjunto de caracteres ASCII de 0 a 127](/office/vba/language/reference/user-interface-help/character-set-0127), exceto o seguinte: ` @ () \ [] " ; : . <> , SPACE`. Obrigatório. |
 | securityEnabled | booliano | Definido como `true` para grupos habilitados para segurança, incluindo Microsoft 365 grupos. Obrigatório. **Observação:** os grupos criados usando o portal do Microsoft Azure sempre terão **securityEnabled** definido inicialmente como `true`.|
@@ -88,7 +88,7 @@ Se bem-sucedido, esse método retorna um código de resposta `201 Created` e um 
 
 ### <a name="example-1-create-a-microsoft-365-group"></a>Exemplo 1: Criar um grupo do Microsoft 365
 
-O exemplo a seguir cria um grupo do Microsoft 365. Como os proprietários não foram especificados, o usuário que fez a chamada é adicionado automaticamente como proprietário do grupo.
+O exemplo a seguir cria um grupo do Microsoft 365. Como os proprietários não foram especificados, o usuário chamador é adicionado automaticamente como proprietário do grupo.
 
 
 #### <a name="request"></a>Solicitação

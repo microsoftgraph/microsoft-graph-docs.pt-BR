@@ -1,16 +1,16 @@
 ---
 title: 'call: recordResponse'
 description: Registra uma resposta de áudio curta do chamador. Isso será útil se o bot desejar capturar uma resposta de voz do chamador após um prompt.
-author: ananmishr
+author: mkhribech
 ms.localizationpriority: medium
 ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: 28c93cc765036e5461d6f2b83b6172fecc5e043d
-ms.sourcegitcommit: 25acfa7d0153336c9a35d30a1dd422aeadc1342c
+ms.openlocfilehash: 1b7ab605e6dfe44d7f0c80242524e3e7845b5055
+ms.sourcegitcommit: 10719607271380ea56076ccff5a3b774d0005773
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/03/2022
-ms.locfileid: "62344306"
+ms.lasthandoff: 04/01/2022
+ms.locfileid: "64607971"
 ---
 # <a name="call-recordresponse"></a>call: recordResponse
 
@@ -27,7 +27,7 @@ Essa ação não se destina a gravar a chamada inteira. O comprimento máximo da
 
 >**Observação:** Qualquer mídia coletada pode **não** ser persistente. Certifique-se de que você está em conformidade com as leis e regulamentos de sua área quando se trata de gravação de chamada. Consulte um consultor jurídico para obter mais informações.
 
-## <a name="permissions"></a>Permissões
+## <a name="permissions"></a>Permissions
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 | Tipo de permissão | Permissões (da com menos para a com mais privilégios) |
@@ -59,7 +59,7 @@ Forneça um objeto JSON com os seguintes parâmetros no corpo da solicitação.
 |maxRecordDurationInSeconds|Int32| Duração máxima da operação recordResponse antes de interromper a gravação. Padrão = 5 segundos, Min = 1 segundo, Máx = 120 segundos.|
 |playBeep|Boolean| Se for true, reproduz um sinal sonoro para indicar ao usuário que ele pode começar a gravar a mensagem. Padrão = true.|
 |stopTones|String collection|Pare os tons especificados para encerrar a gravação.|
-|clientContext|String|Cadeia de caracteres de contexto de cliente exclusiva. O limite máximo é 256 caracteres.|
+|clientContext|Cadeia de caracteres|Cadeia de caracteres de contexto de cliente exclusiva. O limite máximo é 256 caracteres.|
 
 ## <a name="response"></a>Resposta
 Este método retorna um código `200 OK` de resposta e um header location com um URI para o [recordOperation](../resources/recordoperation.md) criado para essa solicitação.

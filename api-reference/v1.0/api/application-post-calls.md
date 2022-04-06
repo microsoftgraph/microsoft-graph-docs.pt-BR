@@ -1,16 +1,16 @@
 ---
 title: Criar chamada
 description: Crie uma nova chamada.
-author: ananmishr
+author: mkhribech
 ms.localizationpriority: medium
 ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: 132dc8bcceeee11383f6e429addcb3542b970420
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: fff18805550d888a493573d1f2200277d09fc128
+ms.sourcegitcommit: 10719607271380ea56076ccff5a3b774d0005773
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62136571"
+ms.lasthandoff: 04/01/2022
+ms.locfileid: "64607824"
 ---
 # <a name="create-call"></a>Criar chamada
 
@@ -18,7 +18,7 @@ Namespace: microsoft.graph
 
 Criar [chamada](../resources/call.md) permite que seu bot crie uma nova chamada ponto a ponto ou grupo de saída ou participe de uma reunião existente. Você precisará registrar [o bot de chamada](/microsoftteams/platform/concepts/calls-and-meetings/registering-calling-bot) e passar pela lista de permissões necessárias, conforme mencionado abaixo.
 
-## <a name="permissions"></a>Permissões
+## <a name="permissions"></a>Permissions
 
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/microsoftteams/platform/concepts/calls-and-meetings/registering-calling-bot#add-microsoft-graph-permissions).
 
@@ -46,7 +46,7 @@ POST /communications/calls
 No corpo da solicitação, fornece uma representação JSON de um [objeto de](../resources/call.md) chamada.
 
 ## <a name="response"></a>Resposta
-Se tiver êxito, este método retornará um código de resposta e um `201 Created` [objeto de](../resources/call.md) chamada no corpo da resposta.
+Se tiver êxito, este método retornará um `201 Created` código de resposta e um [objeto de](../resources/call.md) chamada no corpo da resposta.
 
 ## <a name="examples"></a>Exemplos
 
@@ -874,7 +874,7 @@ Content-Type: application/json
 >**Observação:** Para participar de cenários de reunião, além das notificações de estado de chamada, recebemos notificações de lista.
 
 ### <a name="example-6-join-scheduled-meeting-with-application-hosted-media"></a>Exemplo 6: Participar de uma reunião agendada com a mídia hospedada pelo aplicativo
-Atualize a configuração de mídia com [o AppHostedMediaConfig,](../resources/apphostedmediaconfig.md) conforme mostrado abaixo.
+Atualize a configuração de mídia com [o AppHostedMediaConfig](../resources/apphostedmediaconfig.md) , conforme mostrado abaixo.
 
 <!-- {
   "blockType": "example",
@@ -921,7 +921,7 @@ Content-Type: application/json
 
 > **Observação:** Essa chamada requer a permissão Calls.Initiate.All.
 
-Essa chamada requer uma instância de aplicativo com um número PSTN atribuído. Para obter detalhes, [consulte Atribuir um número de telefone ao seu bot](/graph/cloud-communications-phone-number#assign-a-phone-number-to-your-bot).
+Essa chamada requer uma instância de aplicativo com um número PSTN atribuído. Para obter detalhes, [consulte Atribuir um número de telefone ao bot](/graph/cloud-communications-phone-number#assign-a-phone-number-to-your-bot).
 
 #### <a name="request"></a>Solicitação
 O exemplo a seguir mostra a solicitação para fazer uma chamada ponto a ponto entre o bot e um número PSTN. Neste exemplo, a mídia é hospedada pelo serviço. Os valores de token de autorização, URL de retorno de chamada, ID da instância do aplicativo, nome de exibição da instância do aplicativo, ID de telefone e ID de locatário devem ser substituídos por valores reais para fazer o exemplo funcionar.
@@ -1088,7 +1088,7 @@ Content-Type: application/json
 
 > **Observação**: este exemplo requer permissões Calls.Initiate.All e Calls.AccessMedia.All.
 
-Essa chamada requer uma instância de aplicativo com um número PSTN atribuído. Para obter detalhes, [consulte Atribuir um número de telefone ao seu bot](/graph/cloud-communications-phone-number#assign-a-phone-number-to-your-bot).
+Essa chamada requer uma instância de aplicativo com um número PSTN atribuído. Para obter detalhes, [consulte Atribuir um número de telefone ao bot](/graph/cloud-communications-phone-number#assign-a-phone-number-to-your-bot).
 
 #### <a name="request"></a>Solicitação
 O exemplo a seguir mostra uma solicitação para fazer uma chamada ponto a ponto entre o bot e um número PSTN. Neste exemplo, a mídia é hospedada localmente pelo aplicativo. Os valores de token de autorização, URL de retorno de chamada, ID da instância do aplicativo, nome de exibição da instância do aplicativo, ID de telefone e ID de locatário devem ser substituídos por valores reais para fazer o exemplo funcionar.

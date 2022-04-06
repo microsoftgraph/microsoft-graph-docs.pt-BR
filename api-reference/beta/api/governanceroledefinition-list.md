@@ -4,28 +4,28 @@ description: Obter uma coleção de governanceRoleDefinitions em um recurso.
 ms.localizationpriority: medium
 doc_type: apiPageType
 ms.prod: governance
-author: carolinetempleton
-ms.openlocfilehash: 89ce17091cf141269414b29d06c81110308fab82
-ms.sourcegitcommit: c7ff992ef63e480d070421ba99b28ee129cb6acb
+author: japere
+ms.openlocfilehash: 35f3d30a39dda6aacdfd6f06215b82746b75788e
+ms.sourcegitcommit: 43a7c971a97ce1e4c55cbae089820bfce7dfe42b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "60695013"
+ms.lasthandoff: 03/29/2022
+ms.locfileid: "64510285"
 ---
 # <a name="list-governanceroledefinitions"></a>Listar governançaRoleDefinitions
 
 Namespace: microsoft.graph [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-[!INCLUDE [pim-v1resourceroles-deprecation](../../includes/pim-v1resourceroles-deprecation.md)]
+[!INCLUDE [pim-v2ResourceRoles-deprecation](../../includes/pim-v2ResourceRoles-deprecation.md)]
 
 Obter uma coleção de [governanceRoleDefinitions](../resources/governanceroledefinition.md) em um recurso.
 
-## <a name="permissions"></a>Permissões
+## <a name="permissions"></a>Permissions
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference#privileged-access-permissions).
 
 ### <a name="azure-resources"></a>Recursos do Azure
 
-| Tipo de permissão | Permissões |
+| Tipo de permissão | Permissions |
 |:--------------- |:----------- |
 | Delegada (conta corporativa ou de estudante) | PrivilegedAccess.ReadWrite.AzureResources |
 | Delegado (conta pessoal da Microsoft) | Sem suporte. |
@@ -33,7 +33,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 ### <a name="azure-ad"></a>Microsoft Azure AD
 
-| Tipo de permissão | Permissões |
+| Tipo de permissão | Permissions |
 |:--------------- |:----------- |
 | Delegada (conta corporativa ou de estudante) | PrivilegedAccess.ReadWrite.AzureAD |
 | Delegado (conta pessoal da Microsoft) | Sem suporte. |
@@ -41,7 +41,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 ### <a name="groups"></a>Grupos
 
-|Tipo de permissão | Permissões |
+|Tipo de permissão | Permissions |
 |:-------------- |:----------- |
 | Delegada (conta corporativa ou de estudante) | PrivilegedAccess.ReadWrite.AzureADGroup |
 | Delegado (conta pessoal da Microsoft) | Sem suporte. |
@@ -66,7 +66,7 @@ Este método dá suporte a [Parâmetros de consulta OData](/graph/query-paramete
 ## <a name="request-body"></a>Corpo da solicitação
 Não forneça um corpo de solicitação para esse método.
 ## <a name="response"></a>Resposta
-Se tiver êxito, este método retornará um código de resposta e uma coleção de `200 OK` [objetos governanceRoleDefinition](../resources/governanceroledefinition.md) no corpo da resposta.
+Se tiver êxito, este método retornará um `200 OK` código de resposta e uma coleção de [objetos governanceRoleDefinition](../resources/governanceroledefinition.md) no corpo da resposta.
 ## <a name="example"></a>Exemplo
 <!-- {
   "blockType": "request",

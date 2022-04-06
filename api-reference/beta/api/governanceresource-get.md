@@ -4,13 +4,13 @@ description: Recupere as propriedades e as relações de um objeto governanceRes
 ms.localizationpriority: medium
 doc_type: apiPageType
 ms.prod: governance
-author: carolinetempleton
-ms.openlocfilehash: 79e564c1219417f5f065c41b6f2dba785bb85335
-ms.sourcegitcommit: c7ff992ef63e480d070421ba99b28ee129cb6acb
+author: japere
+ms.openlocfilehash: 7670a7a2fb157d6c9dcf752f54d673c8604ed067
+ms.sourcegitcommit: 43a7c971a97ce1e4c55cbae089820bfce7dfe42b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "60696725"
+ms.lasthandoff: 03/29/2022
+ms.locfileid: "64510496"
 ---
 # <a name="get-governanceresource"></a>Obter governanceResource
 
@@ -18,16 +18,16 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-[!INCLUDE [pim-v1resourceroles-deprecation](../../includes/pim-v1resourceroles-deprecation.md)]
+[!INCLUDE [pim-v2ResourceRoles-deprecation](../../includes/pim-v2ResourceRoles-deprecation.md)]
 
-Recupere as propriedades e as relações de um [objeto governanceResource.](../resources/governanceresource.md)
+Recupere as propriedades e as relações de um [objeto governanceResource](../resources/governanceresource.md) .
 
-## <a name="permissions"></a>Permissões
+## <a name="permissions"></a>Permissions
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference#privileged-access-permissions).
 
 ### <a name="azure-resources"></a>Recursos do Azure
 
-| Tipo de permissão | Permissões |
+| Tipo de permissão | Permissions |
 |:--------------- |:----------- |
 | Delegada (conta corporativa ou de estudante) | PrivilegedAccess.ReadWrite.AzureResources |
 | Delegado (conta pessoal da Microsoft) | Sem suporte. |
@@ -35,7 +35,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 ### <a name="azure-ad"></a>Microsoft Azure AD
 
-| Tipo de permissão | Permissões |
+| Tipo de permissão | Permissions |
 |:--------------- |:----------- |
 | Delegada (conta corporativa ou de estudante) | PrivilegedAccess.ReadWrite.AzureAD |
 | Delegado (conta pessoal da Microsoft) | Sem suporte. |
@@ -43,7 +43,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 ### <a name="groups"></a>Grupos
 
-|Tipo de permissão | Permissões |
+|Tipo de permissão | Permissions |
 |:-------------- |:----------- |
 | Delegada (conta corporativa ou de estudante) | PrivilegedAccess.ReadWrite.AzureADGroup |
 | Delegado (conta pessoal da Microsoft) | Sem suporte. |
@@ -58,7 +58,7 @@ GET /privilegedAccess/azureResources/resources/{id}
 ```
 
 ## <a name="optional-query-parameters"></a>Parâmetros de consulta opcionais
-Esse método **só dá** suporte  `$select` a `$expand` [parâmetros de consulta OData](/graph/query-parameters) para ajudar a personalizar a resposta.
+Esse método **só dá** suporte `$select` a [parâmetros](/graph/query-parameters) `$expand` de consulta OData para ajudar a personalizar a resposta.
 
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
 | Nome      |Descrição|
@@ -68,7 +68,7 @@ Esse método **só dá** suporte  `$select` a `$expand` [parâmetros de consulta
 ## <a name="request-body"></a>Corpo da solicitação
 Não forneça um corpo de solicitação para esse método.
 ## <a name="response"></a>Resposta
-Se tiver êxito, este método retornará um código `200 OK` de resposta e um objeto [governanceResource](../resources/governanceresource.md) no corpo da resposta.
+Se tiver êxito, este método retornará um `200 OK` código de resposta e [um objeto governanceResource](../resources/governanceresource.md) no corpo da resposta.
 
 ## <a name="example"></a>Exemplo
 Este exemplo mostra como obter os detalhes da assinatura Wingtip Toys - Prod (e5e7d29d-5465-45ac-885f-4716a5ee74b5).

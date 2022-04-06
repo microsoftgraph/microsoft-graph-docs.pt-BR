@@ -4,12 +4,12 @@ description: Descubra como solucionar os erros de autorização do Microsoft Gra
 author: FaithOmbongi
 ms.localizationpriority: high
 ms.prod: applications
-ms.openlocfilehash: 38fab3502dbf025408b6abc45c9d50021284c727
-ms.sourcegitcommit: c47e3d1f3c5f7e2635b2ad29dfef8fe7c8080bc8
+ms.openlocfilehash: a004370af868648e77cc3d7a1c89e9897a7da0f5
+ms.sourcegitcommit: 0249c86925c9b4797908394c952073b5d9137911
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/15/2021
-ms.locfileid: "61525824"
+ms.lasthandoff: 03/25/2022
+ms.locfileid: "64477941"
 ---
 # <a name="resolve-microsoft-graph-authorization-errors"></a>Resolver erros de autorização do Microsoft Graph
 
@@ -40,7 +40,7 @@ Verifique se você solicitou o conjunto correto de permissões com base nas APIs
 Certifique-se de que o tipo de permissão solicitado ou concedido corresponda ao tipo de token de acesso que seu aplicativo adquire. Você pode estar solicitando e concedendo permissões do aplicativo, mas usando tokens de fluxo de código interativo delegados, em vez de tokens de fluxo de credencial de cliente, ou solicitando e concedendo permissões delegadas, mas usando tokens de fluxo de credenciais de cliente em vez de tokens de fluxo de código delegados. <br>
 * [Obtenha acesso em nome de usuários e permissões delegadas](/graph/auth_v2_user) 
 * [Azure AD v2.0 - fluxo de código de autorização OAuth 2.0](/azure/active-directory/develop/v2-oauth2-auth-code-flow)
-* [Obter acesso sem um usuário (serviço daemon) e permissões de aplicativo](/graph/auth_v2_service)
+* [Obter acesso sem um usuário (serviço daemon) e permissões de aplicativo](/graph/auth-v2-service)
 * [Azure AD v2.0 - fluxo de credenciais do cliente OAuth 2.0](/azure/active-directory/develop/v2-oauth2-client-creds-grant-flow)
 
 **Erro 403 Proibido: redefinindo a senha** <br>

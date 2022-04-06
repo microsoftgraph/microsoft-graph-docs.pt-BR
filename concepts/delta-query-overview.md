@@ -4,12 +4,12 @@ description: A consulta delta permite que aplicativos localizem entidades recém
 author: FaithOmbongi
 ms.localizationpriority: high
 ms.custom: graphiamtop20
-ms.openlocfilehash: 8b2a302157a7f3a1309d0f7917d1c16816bfab82
-ms.sourcegitcommit: b19b19bf192688f4c513492e8391e4d8dc104633
+ms.openlocfilehash: be2f0aa1df6edc791f2e34b34ad0c7ab4b8c9555
+ms.sourcegitcommit: 0249c86925c9b4797908394c952073b5d9137911
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/17/2022
-ms.locfileid: "62878747"
+ms.lasthandoff: 03/25/2022
+ms.locfileid: "64477969"
 ---
 # <a name="use-delta-query-to-track-changes-in-microsoft-graph-data"></a>Usar a consulta delta para controlar alterações nos dados do Microsoft Graph
 
@@ -105,7 +105,7 @@ O objeto `@removed` pode ser retornado na resposta de consulta delta inicial e n
 
 ## <a name="supported-resources"></a>Recursos com suporte
 
-A consulta delta é compatível atualmente com os seguintes recursos. Observe que alguns recursos que estão disponíveis na versão 1.0 têm suas funções **delta** correspondente ainda em estado de visualização prévia, como indicado.
+Atualmente, a consulta delta é compatível com os recursos a seguir. Observe que alguns recursos que estão disponíveis na v1.0 têm suas funções **delta** correspondentes ainda em status de versão prévia, conforme indicado.
 
 | **Coleção de recursos**                                        | **API**                                                                                                                                                      |
 | :------------------------------------------------------------- | :----------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -113,7 +113,6 @@ A consulta delta é compatível atualmente com os seguintes recursos. Observe qu
 | Unidades administrativas (visualização)                                 | Função [delta](/graph/api/administrativeunit-delta) (visualização) do recurso [administrativeUnit](/graph/api/resources/administrativeunit)                |
 | Categorias de atribuição                                          | função [delta](/graph/api/educationcategory-delta) do recurso [educationCategory](/graph/api/resources/educationcategory)                                    |
 | Mensagens de chat em um canal.                                     | Função [delta](/graph/api/chatmessage-delta) (visualização) do [chatMessage](/graph/api/resources/chatmessage)                                              |
-| Objetos de diretório                                              | Função [delta](/graph/api/directoryobject-delta) (visualização) do recurso [directoryObjects](/graph/api/resources/directoryobject)                         |
 | Funções de diretório                                                | Função [delta](/graph/api/directoryrole-delta) do recurso [directoryRole](/graph/api/resources/directoryrole) |
 | Itens de unidade\*                                                  | Função [delta](/graph/api/driveitem-delta) do recurso [driveItem](/graph/api/resources/driveitem)             |
 | Atribuições de educação                                          | função [delta](/graph/api/educationassignment-delta) do recurso [educationAssignment](/graph/api/resources/educationassignment)                                    |
@@ -137,7 +136,7 @@ A consulta delta é compatível atualmente com os seguintes recursos. Observe qu
 
 > \* O padrão de uso dos recursos do OneDrive é semelhante a outros recursos compatíveis com algumas diferenças secundárias de sintaxe. A consulta delta para unidades será atualizada no futuro para serem consistentes com outros tipos de recursos. Confira mais detalhes sobre a sintaxe atual em [Controlar alterações para uma unidade](/graph/api/driveitem-delta).
 
-> \*\* O padrão de uso dos recursos do Planner é semelhante a outros recursos compatíveis, mas com algumas diferenças.  Para saber mais, consulte [Controlar alterações para o Planner](/graph/api/planneruser-list-delta).
+> \*\* O padrão de uso dos recursos do Planner é semelhante a outros recursos com suporte com algumas diferenças. Para obter detalhes, consulte [Rastrear alterações no Planner](/graph/api/planneruser-list-delta).
 
 ## <a name="limitations"></a>Limitações
 
@@ -145,7 +144,7 @@ A consulta delta é compatível atualmente com os seguintes recursos. Observe qu
 
 Alguns recursos contêm propriedades armazenadas fora do repositório de dados principal do recurso (por exemplo, o recurso de usuário é armazenado no sistema Azure AD, enquanto algumas propriedades, como **skills**, são armazenadas no SharePoint Online). Atualmente, não há suporte para essas propriedades como parte do controle de alterações; uma alteração em uma dessas propriedades não resultará em um objeto aparecendo na resposta de consulta Delta. Atualmente, apenas as propriedades armazenadas no repositório de dados principal disparam alterações na consulta Delta.
 
-Para verificar se uma propriedade pode ser usada na consulta Delta, experimente executar uma operação de `GET` regular na coleção de recursos e selecione a propriedade que você está interessado. Por exemplo, você pode usar a propriedade **skills** na coleção de usuários.
+Para verificar se uma propriedade pode ser usada na consulta delta, tente executar uma operação `GET` regular na coleção de recursos e selecione a propriedade na qual você está interessado. Por exemplo, você pode tentar a propriedade **skills** na coleção de usuários.
 
 ```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/users/?$select=skills
@@ -180,7 +179,7 @@ Isso informa que não há suporte para a propriedade **skills** para a consulta 
 
 ### <a name="navigation-properties"></a>Propriedades de navegação
 
-Não há suporte para propriedades de navegação. Por exemplo, você não pode controlar alterações na coleção de usuários que incluiriam alterações na propriedade **photo**; **photo** é uma propriedade de navegação armazenada fora da entidade do usuário, e as alterações feitas nela não fazem com que o objeto de usuário seja incluído na resposta Delta.
+As propriedades de navegação não são suportadas. Por exemplo, você não pode rastrear alterações na coleção de usuários que incluam alterações na propriedade da **foto**; **photo** é uma propriedade de navegação armazenada fora da entidade do usuário e as alterações nela não fazem com que o objeto do usuário seja incluído na resposta delta.
 
 ### <a name="processing-delays"></a>Atrasos de processamento
 

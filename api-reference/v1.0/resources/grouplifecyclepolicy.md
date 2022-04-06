@@ -2,15 +2,15 @@
 title: Tipo de recurso groupLifecyclePolicy
 description: Representa uma política de ciclo de vida para um Microsoft 365 grupo.
 ms.localizationpriority: medium
-author: Jordanndahl
+author: psaffaie
 ms.prod: groups
 doc_type: resourcePageType
-ms.openlocfilehash: 71b163c23626ce9838c1a0f1b0db3199fe5ff1f0
-ms.sourcegitcommit: 6968f5aaf40089684efb0c38a95f6cca353c1d92
+ms.openlocfilehash: 44d1a454ee59e1a1b02c3903e6309afeaa4eee80
+ms.sourcegitcommit: cc9e5b3630cb84c48bbbb2d84a963b9562d1fb78
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/16/2022
-ms.locfileid: "62854305"
+ms.lasthandoff: 03/31/2022
+ms.locfileid: "64588159"
 ---
 # <a name="grouplifecyclepolicy-resource-type"></a>Tipo de recurso groupLifecyclePolicy
 
@@ -20,23 +20,23 @@ Representa uma política de ciclo de vida para um Microsoft 365 grupo. Uma polí
 
 ## <a name="methods"></a>Métodos
 
-| Método | Tipo de retorno | Descrição |
-|:---------------|:--------|:----------|
-|[Obter groupLifecyclePolicy](../api/grouplifecyclepolicy-get.md) | [groupLifecyclePolicy](grouplifecyclepolicy.md) |Leia as propriedades e os relacionamentos de um objeto groupLifecyclePolicy.|
-|[Listar groupLifecyclePolicies](../api/grouplifecyclepolicy-list.md) | Coleção [groupLifecyclePolicy](grouplifecyclepolicy.md) | Listar todos os objetos groupLifecyclePolicies. |
-|[Atualizar groupLifecyclePolicy](../api/grouplifecyclepolicy-update.md) | [groupLifecyclePolicy](grouplifecyclepolicy.md) | Atualizar um objeto groupLifecyclePolicy. |
-|[Excluir groupLifecyclePolicy](../api/grouplifecyclepolicy-delete.md) | Nenhum | Excluir um objeto groupLifecyclePolicy. |
-|[Adicionar um grupo a um objeto groupLifecyclePolicy](../api/grouplifecyclepolicy-addgroup.md)|Nenhum| Adicionar um grupo a uma política de ciclo de vida |
-|[Remover um grupo de um objeto groupLifecyclePolicy](../api/grouplifecyclepolicy-removegroup.md)|Nenhum| Remover um grupo de uma política de ciclo de vida. |
+| Método                                                                                   | Tipo de retorno                                                | Descrição                                                         |
+| :--------------------------------------------------------------------------------------- | :--------------------------------------------------------- | :------------------------------------------------------------------ |
+| [Obter groupLifecyclePolicy](../api/grouplifecyclepolicy-get.md)                           | [groupLifecyclePolicy](grouplifecyclepolicy.md)            | Leia as propriedades e os relacionamentos de um objeto groupLifecyclePolicy. |
+| [Listar groupLifecyclePolicies](../api/grouplifecyclepolicy-list.md)                       | Coleção [groupLifecyclePolicy](grouplifecyclepolicy.md) | Listar todos os objetos groupLifecyclePolicies.                                |
+| [Atualizar groupLifecyclePolicy](../api/grouplifecyclepolicy-update.md)                     | [groupLifecyclePolicy](grouplifecyclepolicy.md)            | Atualizar um objeto groupLifecyclePolicy.                               |
+| [Excluir groupLifecyclePolicy](../api/grouplifecyclepolicy-delete.md)                     | Nenhum                                                       | Excluir um objeto groupLifecyclePolicy.                               |
+| [Adicionar um grupo a um objeto groupLifecyclePolicy](../api/grouplifecyclepolicy-addgroup.md)         | Nenhum                                                       | Adicionar um grupo a uma política de ciclo de vida                                   |
+| [Remover um grupo de um objeto groupLifecyclePolicy](../api/grouplifecyclepolicy-removegroup.md) | Nenhum                                                       | Remover um grupo de uma política de ciclo de vida.                               |
 
 ## <a name="properties"></a>Propriedades
 
-| Propriedade | Tipo | Descrição |
-|:---------------|:--------|:----------|
-|alternateNotificationEmails|Cadeia de caracteres| Lista de endereços de email para o envio de notificações para grupos sem proprietários. É possível definir vários endereços de email separando-os com ponto-e-vírgula. |
-|groupLifetimeInDays|Int32| Número de dias antes que um grupo expire e precise ser renovado. Após renová-lo, o período de validade é estendido de acordo com o número de dias definido. |
-|id|String| Um identificador exclusivo de uma política. Somente leitura.|
-|managedGroupTypes|Cadeia de caracteres| O tipo de grupo ao qual se aplica a política de expiração. Os valores possíveis são **All**, **Selected** ou **None**. |
+| Propriedade                    | Tipo   | Descrição                                                                                                                                                |
+| :-------------------------- | :----- | :--------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| alternateNotificationEmails | Cadeia de caracteres | Lista de endereços de email para o envio de notificações para grupos sem proprietários. É possível definir vários endereços de email separando-os com ponto-e-vírgula. |
+| groupLifetimeInDays         | Int32  | Número de dias antes que um grupo expire e precise ser renovado. Após renová-lo, o período de validade é estendido de acordo com o número de dias definido.               |
+| id                          | Cadeia de caracteres | Um identificador exclusivo de uma política. Somente leitura.                                                                                                               |
+| managedGroupTypes           | Cadeia de caracteres | O tipo de grupo ao qual se aplica a política de expiração. Os valores possíveis são **All**, **Selected** ou **None**.                                             |
 
 ## <a name="relationships"></a>Relações
 
@@ -61,7 +61,6 @@ Veja a seguir uma representação JSON do recurso.
   "id": "String (identifier)",
   "managedGroupTypes": "String"
 }
-
 ```
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
@@ -73,4 +72,3 @@ Veja a seguir uma representação JSON do recurso.
   "section": "documentation",
   "tocPath": ""
 }-->
-

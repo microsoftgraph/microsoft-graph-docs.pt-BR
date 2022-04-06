@@ -5,21 +5,21 @@ author: markwahl-msft
 ms.localizationpriority: medium
 ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: a0babe007c61c897513ec5b3aa676b63f3dcf408
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: a83e07fcfdf004f12a8f3c74085890d4679df071
+ms.sourcegitcommit: 10719607271380ea56076ccff5a3b774d0005773
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62136670"
+ms.lasthandoff: 04/01/2022
+ms.locfileid: "64607992"
 ---
 # <a name="get-accesspackage"></a>Obter accessPackage
 
 Namespace: microsoft.graph
 
 
-Recupere as propriedades e as relações de um [objeto accessPackage.](../resources/accesspackage.md)
+Recupere as propriedades e as relações de um [objeto accessPackage](../resources/accesspackage.md) .
 
-## <a name="permissions"></a>Permissões
+## <a name="permissions"></a>Permissions
 
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
@@ -41,7 +41,9 @@ GET /identityGovernance/entitlementManagement/accessPackages/{accessPackageId}
 
 ## <a name="optional-query-parameters"></a>Parâmetros de consulta opcionais
 
-Este método dá suporte ao `$select` [parâmetro de consulta OData](/graph/query-parameters) para recuperar propriedades específicas.
+Este método dá suporte ao parâmetro `$select` [de consulta OData](/graph/query-parameters) para recuperar propriedades específicas e o `$expand` parâmetro para recuperar relações.
+
+Por exemplo, para recuperar as políticas de atribuição do pacote de acesso, adicione `$expand=assignmentPolicies`.
 
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
 
@@ -54,7 +56,7 @@ Não forneça um corpo de solicitação para esse método.
 
 ## <a name="response"></a>Resposta
 
-Se tiver êxito, este método retornará um código `200 OK` de resposta e o objeto [accessPackage](../resources/accesspackage.md) solicitado no corpo da resposta.
+Se tiver êxito, este método retornará um `200 OK` código de resposta e o objeto [accessPackage](../resources/accesspackage.md) solicitado no corpo da resposta.
 
 ## <a name="examples"></a>Exemplos
 

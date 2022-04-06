@@ -5,12 +5,12 @@ author: jpettere
 ms.localizationpriority: high
 ms.prod: users
 doc_type: apiPageType
-ms.openlocfilehash: 1542519e6a61fd0179363770c43e86bdab573c37
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: ca76958de22160e61a9fcb874126893619fed688
+ms.sourcegitcommit: 43a7c971a97ce1e4c55cbae089820bfce7dfe42b
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62126639"
+ms.lasthandoff: 03/29/2022
+ms.locfileid: "64509109"
 ---
 # <a name="list-users"></a>Listar usuários
 
@@ -28,11 +28,11 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegado (conta corporativa ou de estudante) | User.ReadBasic.All, User.Read.All, User.ReadWrite.All, Directory.Read.All, Directory.ReadWrite.All, Directory.AccessAsUser.All |
+|Delegado (conta corporativa ou de estudante) | User.ReadBasic.All, User.Read.All, User.ReadWrite.All, Directory.Read.All, Directory.ReadWrite.All |
 |Delegado (conta pessoal da Microsoft) | Sem suporte.    |
 |Aplicativo | User.Read.All, User.ReadWrite.All, Directory.Read.All, Directory.ReadWrite.All |
 
-Os usuários convidados não podem chamar esta API. Para obter mais informações sobre as permissões para usuários membros e convidados, consulte [Quais são as permissões de usuário padrão no Azure Active Directory?](/azure/active-directory/fundamentals/users-default-permissions#member-and-guest-users)
+Os usuários convidados não podem chamar essa API. Para obter mais informações sobre as permissões para usuários membros e convidados, confira [Quais são as permissões de usuário padrão no Azure Active Directory](/azure/active-directory/fundamentals/users-default-permissions#member-and-guest-users)?
 
 ## <a name="http-request"></a>Solicitação HTTP
 
@@ -467,7 +467,7 @@ Este é um exemplo de solicitação. Esta solicitação exige o cabeçalho **Con
 
 <!-- {
   "blockType": "ignored",
-  "name": "get_a_count"
+  "name": "list_users_startswith"
 }-->
 ```msgraph-interactive
 GET https://graph.microsoft.com/beta/users?$filter=startswith(displayName,'a')&$orderby=displayName&$count=true&$top=1

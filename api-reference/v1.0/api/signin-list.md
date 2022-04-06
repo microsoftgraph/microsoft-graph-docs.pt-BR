@@ -1,16 +1,16 @@
 ---
 title: Listar logons
-description: Descreve o método de lista do recurso signIn (entidade) da API Graph Microsoft.
+description: Descreve o método de lista do recurso signIn (entidade) do microsoft API do Graph.
 ms.localizationpriority: medium
 author: besiler
 ms.prod: identity-and-access-reports
 doc_type: apiPageType
-ms.openlocfilehash: 615566490fb902724142a96d4ca0fc7c3622e4e9
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: f4e3f31e3a713d39129d99d726b6628b3d4e10dc
+ms.sourcegitcommit: 0076eb6abb89be3dca3575631924a74a5202be30
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62128462"
+ms.lasthandoff: 04/03/2022
+ms.locfileid: "64629014"
 ---
 # <a name="list-signins"></a>Listar logons
 
@@ -18,7 +18,7 @@ Namespace: microsoft.graph
 
 Recupera os logons de usuário do Azure AD para seu locatário. As inserções interativas de natureza (onde um nome de usuário/senha é passado como parte do token de autenticação) e as inserções federadas bem-sucedidas estão atualmente incluídas nos logs de login. 
 
-O tamanho máximo e padrão da página é de 1.000 objetos e, por padrão, as inscrições mais recentes são retornadas primeiro. Somente os eventos de login que ocorreram dentro do período [](/azure/active-directory/reports-monitoring/reference-reports-data-retention#how-long-does-azure-ad-store-the-data) de retenção padrão do Azure Active Directory (Azure AD) estão disponíveis.
+O tamanho máximo e padrão da página é de 1.000 objetos e, por padrão, as inscrições mais recentes são retornadas primeiro. Somente os eventos de login que ocorreram dentro do período de retenção padrão Azure Active Directory (Azure AD[) estão](/azure/active-directory/reports-monitoring/reference-reports-data-retention#how-long-does-azure-ad-store-the-data) disponíveis.
 
 ## <a name="permissions"></a>Permissões
 
@@ -31,17 +31,17 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |Aplicativo | AuditLog.Read.All e Directory.Read.All  |
 
 > [!IMPORTANT]
-> Esta API tem um [problema conhecido](/graph/known-issues#license-check-errors-for-azure-ad-activity-reports) e atualmente requer consentimento para as permissões **AuditLog.Read.All** e **Directory.Read.All.**
+> Esta API tem um [problema conhecido](/graph/known-issues#license-check-errors-for-azure-ad-activity-reports) e atualmente requer consentimento para as permissões **AuditLog.Read.All** e **Directory.Read.All** .
 
-Os aplicativos devem [estar registrados corretamente](/azure/active-directory/active-directory-reporting-api-prerequisites-azure-portal) no Azure AD.
+Os aplicativos devem [estar registrados](/azure/active-directory/active-directory-reporting-api-prerequisites-azure-portal) corretamente no Azure AD.
 
-Além das permissões delegadas, o usuário inscreveu precisa pertencer a uma das seguintes funções de diretório que permitem ler relatórios de logons. Para saber mais sobre funções de diretório, consulte Funções do [Azure AD integrados](/azure/active-directory/roles/permissions-reference):
+Além das permissões delegadas, o usuário inscreveu precisa pertencer a uma das seguintes funções de diretório que permitem ler relatórios de logons. Para saber mais sobre funções de diretório, consulte [Funções in-loco do Azure AD](/azure/active-directory/roles/permissions-reference):
 + Administrador global
 + Leitor global
 + Leitor de Relatórios
 + Administrador de Segurança
 + Operador de segurança
-+ Leitor de segurança
++ Leitor de Segurança
 
 ## <a name="http-request"></a>Solicitação HTTP
 
@@ -52,7 +52,7 @@ GET auditLogs/signIns
 
 ## <a name="optional-query-parameters"></a>Parâmetros de consulta opcionais
 
-Este método dá suporte `$top` aos `$skiptoken` parâmetros , e `$filter` OData Query para ajudar a personalizar a resposta. Para obter detalhes sobre como usar esses parâmetros, confira [Parâmetros de consulta do OData](/graph/query-parameters).
+Este método dá suporte aos `$top`parâmetros , `$skiptoken`e `$filter` OData Query para ajudar a personalizar a resposta. Para obter detalhes sobre como usar esses parâmetros, confira [Parâmetros de consulta do OData](/graph/query-parameters).
 
 ## <a name="response"></a>Resposta
 
@@ -199,7 +199,7 @@ Este é um exemplo da solicitação.
   "name": "list_signins_2"
 }-->
 ```msgraph-interactive
-GET https://graph.microsoft.com/v1.0/auditLogs/signIns?&$filter=startsWith(appDisplayName,'Graph')&top=10
+GET https://graph.microsoft.com/v1.0/auditLogs/signIns?&$filter=startsWith(appDisplayName,'Graph')&$top=10
 ```
 # <a name="c"></a>[C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/list-signins-2-csharp-snippets.md)]
@@ -230,7 +230,7 @@ GET https://graph.microsoft.com/v1.0/auditLogs/signIns?&$filter=startsWith(appDi
 
 #### <a name="response"></a>Resposta
 
-Veja a seguir um exemplo da resposta. A resposta inclui uma `@odata.nextLink` propriedade que contém uma URL que pode ser usada para recuperar os próximos 10 resultados.
+Veja a seguir um exemplo da resposta. A resposta inclui uma propriedade `@odata.nextLink` que contém uma URL que pode ser usada para recuperar os próximos 10 resultados.
 >**Observação:** o objeto de resposta mostrado aqui pode ser encurtado para legibilidade.
 
 <!-- {

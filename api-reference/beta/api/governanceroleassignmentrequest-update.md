@@ -1,16 +1,16 @@
 ---
 title: Atualizar governançaRoleAssignmentRequests
-description: Permitir que os administradores atualizem suas decisões ( ou ) sobre `AdminApproved` `AdminDenied` governançaRoleAssignmentRequests que estão em status de `PendingAdminDecision` .
+description: Permitir que os administradores atualizem suas decisões (`AdminApproved` ou `AdminDenied`) sobre governançaRoleAssignmentRequests que estão em status de `PendingAdminDecision`.
 ms.localizationpriority: medium
 doc_type: apiPageType
 ms.prod: governance
-author: carolinetempleton
-ms.openlocfilehash: 9d08b6786d16956161a3e4835e961cc893ae8241
-ms.sourcegitcommit: c7ff992ef63e480d070421ba99b28ee129cb6acb
+author: japere
+ms.openlocfilehash: 4d07d05d9335b6d8dd7a1a123e0432d4f702deed
+ms.sourcegitcommit: 43a7c971a97ce1e4c55cbae089820bfce7dfe42b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "60688483"
+ms.lasthandoff: 03/29/2022
+ms.locfileid: "64510454"
 ---
 # <a name="update-governanceroleassignmentrequests"></a>Atualizar governançaRoleAssignmentRequests
 
@@ -18,18 +18,18 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-[!INCLUDE [pim-v1resourceroles-deprecation](../../includes/pim-v1resourceroles-deprecation.md)]
+[!INCLUDE [pim-v2ResourceRoles-deprecation](../../includes/pim-v2ResourceRoles-deprecation.md)]
 
-Permitir que os administradores atualizem suas decisões ( ou ) sobre `AdminApproved` `AdminDenied` [governançaRoleAssignmentRequests](../resources/governanceroleassignmentrequest.md) que estão em status de `PendingAdminDecision` .
+Permitir que os administradores atualizem suas decisões (`AdminApproved` ou `AdminDenied`) sobre [governançaRoleAssignmentRequests](../resources/governanceroleassignmentrequest.md) que estão em status de `PendingAdminDecision`.
 
-## <a name="permissions"></a>Permissões
+## <a name="permissions"></a>Permissions
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference#privileged-access-permissions).
 
->**Observação:** Essa API também exige que o solicitante tenha pelo menos uma atribuição de função de administrador ( ou ) no recurso ao qual a `Active` `owner` `user access administrator` [governanceRoleAssignmentRequest](../resources/governanceroleassignmentrequest.md) pertence. 
+>**Observação:** Essa API também exige que o solicitante tenha pelo menos uma atribuição `Active` de função de administrador (`owner` ou `user access administrator`) no recurso ao qual a [governanceRoleAssignmentRequest](../resources/governanceroleassignmentrequest.md) pertence. 
 
 ### <a name="azure-resources"></a>Recursos do Azure
 
-| Tipo de permissão | Permissões |
+| Tipo de permissão | Permissions |
 |:--------------- |:----------- |
 | Delegada (conta corporativa ou de estudante) | PrivilegedAccess.ReadWrite.AzureResources |
 | Delegado (conta pessoal da Microsoft) | Sem suporte. |
@@ -37,7 +37,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 ### <a name="azure-ad"></a>Microsoft Azure AD
 
-| Tipo de permissão | Permissões |
+| Tipo de permissão | Permissions |
 |:--------------- |:----------- |
 | Delegada (conta corporativa ou de estudante) | PrivilegedAccess.ReadWrite.AzureAD |
 | Delegado (conta pessoal da Microsoft) | Sem suporte. |
@@ -45,7 +45,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 ### <a name="groups"></a>Grupos
 
-|Tipo de permissão | Permissões |
+|Tipo de permissão | Permissions |
 |:-------------- |:----------- |
 | Delegada (conta corporativa ou de estudante) | PrivilegedAccess.ReadWrite.AzureADGroup |
 | Delegado (conta pessoal da Microsoft) | Sem suporte. |
@@ -67,12 +67,12 @@ POST /privilegedAccess/azureResources/roleAssignmentRequests/{id}/updateRequest
 
 |Parâmetros      |Tipo                   |Obrigatório |Descrição|
 |:-------------|:----------------------|:--------|:----------|
-|motivo        |String                 |✓        |O motivo fornecido pelo administrador para sua decisão.|
-|decision        |String                 |✓        |A decisão do administrador da solicitação de atribuição de função. O valor deve ser atualizado como `AdminApproved` ou `AdminDenied` .|
-|Cronograma      |[governanceSchedule](../resources/governanceschedule.md)|        | O cronograma da solicitação de atribuição de função. Para o status `AdminApproved` de , é necessário.|
-|assignmentState      |String|         | O estado da atribuição e os valores podem `Eligible` ser ou `Active` . Para a decisão `AdminApproved` de , é necessário. |
+|motivo        |Cadeia de caracteres                 |✓        |O motivo fornecido pelo administrador para sua decisão.|
+|decision        |String                 |✓        |A decisão do administrador da solicitação de atribuição de função. O valor deve ser atualizado como `AdminApproved` ou `AdminDenied`.|
+|Cronograma      |[governanceSchedule](../resources/governanceschedule.md)|        | O cronograma da solicitação de atribuição de função. Para o status `AdminApproved`de , é necessário.|
+|assignmentState      |Cadeia de caracteres|         | O estado da atribuição e os valores podem ser `Eligible` ou `Active`. Para a decisão `AdminApproved`de , é necessário. |
 ### <a name="response"></a>Resposta
-Esse método só pode ser aplicado a solicitações que estão em status de `PendingAdminDecision` .
+Esse método só pode ser aplicado a solicitações que estão em status de `PendingAdminDecision`.
 
 Se bem-sucedido, este método retorna um código de resposta `204 No Content`. Não retorna nada no corpo da resposta.
 

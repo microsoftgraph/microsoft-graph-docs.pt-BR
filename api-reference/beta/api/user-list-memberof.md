@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: jpettere
 ms.prod: users
 doc_type: apiPageType
-ms.openlocfilehash: e34125f89a3c9fe9e2f84ba12d7e29091bd63120
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: a16b1a3130b0ab7667624c4a20149cc5eab55ae5
+ms.sourcegitcommit: 0076eb6abb89be3dca3575631924a74a5202be30
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62098335"
+ms.lasthandoff: 04/03/2022
+ms.locfileid: "64630006"
 ---
 # <a name="list-user-memberof"></a>Listar usuário memberOf
 
@@ -26,7 +26,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 | Tipo de permissão | Permissões (da com menos para a com mais privilégios) |
 |:--------------- |:------------------------------------------- |
-| Delegado (conta corporativa ou de estudante) | User.Read, GroupMember.Read.All, Directory.Read.All, Directory.ReadWrite.All, Directory.AccessAsUser.All |
+| Delegado (conta corporativa ou de estudante) | User.Read, GroupMember.Read.All, Directory.Read.All, Directory.ReadWrite.All |
 | Delegado (conta pessoal da Microsoft) | Sem suporte. |
 | Aplicativo | Directory.Read.All, Directory.ReadWrite.All |
 
@@ -37,7 +37,6 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /me/memberOf
-or
 GET /users/{id | userPrincipalName}/memberOf
 ```
 
@@ -241,7 +240,7 @@ Este é um exemplo de solicitação.
 
 <!-- {
   "blockType": "ignored",
-  "name": "get_a_count"
+  "name": "list_users_memberof_startswith"
 }-->
 ```msgraph-interactive
 GET https://graph.microsoft.com/beta/users/{id}/transitiveMemberOf/microsoft.graph.group?$count=true&$orderby=displayName&$filter=startswith(displayName, 'a') 

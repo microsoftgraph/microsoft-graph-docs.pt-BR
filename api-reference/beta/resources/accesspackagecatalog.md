@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: markwahl-msft
 ms.prod: governance
 doc_type: resourcePageType
-ms.openlocfilehash: 2088bfea2aea6a8383b05826bf3783ea1a84de3f
-ms.sourcegitcommit: 77d2ab5018371f153d47cc1cd25f9dcbaca28a95
+ms.openlocfilehash: 6122c36481204c7f6e7269839be625e45db5432a
+ms.sourcegitcommit: 0249c86925c9b4797908394c952073b5d9137911
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63331865"
+ms.lasthandoff: 03/25/2022
+ms.locfileid: "64477465"
 ---
 # <a name="accesspackagecatalog-resource-type"></a>Tipo de recurso accessPackageCatalog
 
@@ -18,10 +18,12 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-No [gerenciamento de direitos do Azure AD](entitlementmanagement-overview.md), um catálogo de pacotes de acesso é um contêiner para zero ou mais pacotes de acesso. Um catálogo de pacotes de acesso também pode ter recursos vinculados usados nesses pacotes de acesso para fornecer acesso. Para exibir ou alterar a associação de funções com escopo de catálogo, use [a API de](unifiedroleassignment.md) atribuições de função com o provedor RBAC de gerenciamento de direitos.
+No [gerenciamento de direitos do Azure AD](entitlementmanagement-overview.md), um catálogo de pacotes de acesso é um contêiner para zero ou mais pacotes de acesso. O gerenciamento de direitos do Azure AD inclui um catálogo integrado chamado **Geral**.
+
+Um catálogo de pacotes de acesso também pode ter recursos vinculados usados nesses pacotes de acesso para fornecer acesso. Para exibir ou alterar a associação de funções com escopo de catálogo, use [a API de](unifiedroleassignment.md) atribuições de função com o provedor RBAC de gerenciamento de direitos.
 
 
-## <a name="methods"></a>Methods
+## <a name="methods"></a>Métodos
 
 | Método       | Tipo de retorno | Descrição |
 |:-------------|:------------|:------------|
@@ -39,7 +41,7 @@ No [gerenciamento de direitos do Azure AD](entitlementmanagement-overview.md), u
 |[Criar customAccessPackageWorkflowExtensions](../api/accesspackagecatalog-post-customaccesspackageworkflowextensions.md)|[customAccessPackageWorkflowExtension](../resources/customaccesspackageworkflowextension.md)|Crie um novo [objeto customAccessPackageWorkflowExtension](../resources/customaccesspackageworkflowextension.md) .|
 |[Obter customAccessPackageWorkflowExtension](../api/customaccesspackageworkflowextension-get.md)|[customAccessPackageWorkflowExtension](../resources/customaccesspackageworkflowextension.md)|Leia as propriedades e as relações de um [objeto customAccessPackageWorkflowExtension](../resources/customaccesspackageworkflowextension.md) .|
 |[Atualizar customAccessPackageWorkflowExtension](../api/customaccesspackageworkflowextension-update.md)|[customAccessPackageWorkflowExtension](../resources/customaccesspackageworkflowextension.md)|Atualize as propriedades de [um objeto customAccessPackageWorkflowExtension](../resources/customaccesspackageworkflowextension.md) .|
-|[Excluir customAccessPackageWorkflowExtension](../api/customaccesspackageworkflowextension-delete.md)|Nenhum(a)|Exclui um [objeto customAccessPackageWorkflowExtension](../resources/customaccesspackageworkflowextension.md) .|
+|[Excluir customAccessPackageWorkflowExtension](../api/customaccesspackageworkflowextension-delete.md)|Nenhum|Exclui um [objeto customAccessPackageWorkflowExtension](../resources/customaccesspackageworkflowextension.md) .|
 
 ## <a name="properties"></a>Propriedades
 
@@ -52,7 +54,7 @@ No [gerenciamento de direitos do Azure AD](entitlementmanagement-overview.md), u
 |description|String|A descrição do catálogo de pacotes de acesso.|
 |displayName|String|O nome de exibição do catálogo de pacotes de acesso. Suporta `$filter` (`eq`, `contains`).|
 |id|String| Somente leitura.|
-|isExternallyVisible|Booliano|Se os pacotes de acesso neste catálogo podem ser solicitados por usuários fora do locatário.|
+|isExternallyVisible|Boolean|Se os pacotes de acesso neste catálogo podem ser solicitados por usuários fora do locatário.|
 |modifiedBy|String|O UPN do usuário que modificou esse recurso pela última vez. Somente leitura.|
 |modifiedDateTime|DateTimeOffset|O tipo Timestamp representa informações de data e hora usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite UTC em 1 de janeiro de 2014 é `2014-01-01T00:00:00Z`. Somente leitura. |
 

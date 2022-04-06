@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: abhijeetsinha
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: d9ae143051bd839ac34b4d5b326d2768bc821186
-ms.sourcegitcommit: 0fa7148e0b776663eaca3e79e72b85046d4b8b1a
+ms.openlocfilehash: e45be47c3ed71b86f0a6415abd54f2a442a9cc2e
+ms.sourcegitcommit: 0e7927f34b7e55d323acbf281e11560cb40a89ed
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "63500914"
+ms.lasthandoff: 03/20/2022
+ms.locfileid: "63671423"
 ---
 # <a name="delete-unifiedroledefinition"></a>Excluir unifiedRoleDefinition
 
@@ -49,7 +49,7 @@ Dependendo do provedor RBAC e do tipo de permissão (delegado ou aplicativo) nec
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegado (conta corporativa ou de estudante) |  RoleManagement.ReadWrite.Directory, Directory.ReadWrite.All, Directory.AccessAsUser.All   |
+|Delegado (conta corporativa ou de estudante) |  RoleManagement.ReadWrite.Directory, Directory.ReadWrite.All   |
 |Delegado (conta pessoal da Microsoft) | Sem suporte.    |
 |Aplicativo | RoleManagement.ReadWrite.Directory, Directory.ReadWrite.All |
 

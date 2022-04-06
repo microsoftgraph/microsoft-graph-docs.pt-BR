@@ -3,15 +3,15 @@ author: JeremyKelley
 description: O recurso sharedDriveItem é retornado ao se usar a API Shares para acessar um driveItem compartilhado.
 ms.date: 09/10/2017
 title: SharedDriveItem
-localization_priority: Normal
+ms.localizationpriority: medium
 doc_type: resourcePageType
 ms.prod: ''
-ms.openlocfilehash: a2e1252437608d474e92346ed0aaba4a3a50053d
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: ffe187e280c10e265857700750cc1502c4d53e8a
+ms.sourcegitcommit: e5d5095e26dca6f434354a0970e789e94ee6afb0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48060024"
+ms.lasthandoff: 03/22/2022
+ms.locfileid: "63722202"
 ---
 # <a name="shareddriveitem-resource-type"></a>Tipo de recurso SharedDriveItem
 
@@ -54,26 +54,26 @@ O recurso **sharedDriveItem** é derivado de [**baseItem**](baseitem.md) e herda
 
 | Propriedade | Tipo                          | Descrição                                                      |
 | :------- | :---------------------------- | :--------------------------------------------------------------- |
-| id       | Cadeia de caracteres                        | O identificador exclusivo do compartilhamento que está sendo acessado.              |
-| name     | Cadeia de caracteres                        | O nome de exibição do item compartilhado.                             |
+| id       | String                        | O identificador exclusivo do compartilhamento que está sendo acessado.              |
+| nome     | String                        | O nome de exibição do item compartilhado.                             |
 | owner    | [IdentitySet](identityset.md) | Informações sobre o proprietário do item compartilhado que está sendo referenciado. |
 
 ## <a name="relationships"></a>Relações
 
-| Nome da relação | Tipo                | Descrição
-| ------------------|:--------------------|:-----------------------------------
-| **driveItem**     | [**driveItem**][driveItem] | Usado para acessar o **driveItem** subjacente
-| **list**          | [**list**][list]           | Usado para acessar a **lista** subjacente
-| **listItem**      | [**listItem**][listItem]   | Usado para acessar o **listItem** subjacente
-| **permissão**    | [**autorização**][permission] | Usado para acessar a **permissão** que representa o link de compartilhamento subjacente
-| **site**          | [**site**][site]           | Usado para acessar o **site** subjacente
+| Relação   | Tipo                         | Descrição                                                                |
+| -------------- | :--------------------------- | :------------------------------------------------------------------------- |
+| **driveItem**  | [**driveItem**][driveItem]   | Usado para acessar o **driveItem** subjacente                                |
+| **list**       | [**list**][list]             | Usado para acessar a **lista** subjacente                                     |
+| **listItem**   | [**listItem**][listItem]     | Usado para acessar o **listItem** subjacente                                 |
+| **permissão** | [**permissão**][permission] | Usado para acessar a **permissão** que representa o link de compartilhamento subjacente |
+| **site**       | [**site**][site]             | Usado para acessar o **site** subjacente                                     |
 
 Como alternativa, para **driveItems** compartilhados de contas pessoais do OneDrive, as relações a seguir também podem ser usadas.
 
-| Nome da relação | Tipo                         | Descrição
-| ------------------|:-----------------------------|:-----------------------------------
-| **items**         | coleção [**driveItem**][driveItem] | Todos os driveItems contidos na raiz de compartilhamento. Não é possível enumerar esta coleção.
-| **driveItem**     | [**driveItem**][driveItem]            | Usado para acessar o **driveItem** subjacente
+| Nome da relação | Tipo                                  | Descrição                                                                         |
+| ----------------- | :------------------------------------ | :---------------------------------------------------------------------------------- |
+| **items**         | [**Coleção driveItem**][driveItem] | Todos os driveItems contidos na raiz de compartilhamento. Não é possível enumerar esta coleção. |
+| **driveItem**     | [**driveItem**][driveItem]            | Usado para acessar o **driveItem** subjacente                                         |
 
 [driveItem]: driveitem.md
 [list]: list.md
@@ -81,7 +81,7 @@ Como alternativa, para **driveItems** compartilhados de contas pessoais do OneDr
 [permission]: permission.md
 [site]: site.md
 
-## <a name="methods"></a>Métodos
+## <a name="methods"></a>Methods
 
 | Método                                  | Caminho REST                |
 | :-------------------------------------- | :----------------------- |
@@ -101,5 +101,3 @@ Para saber mais sobre as facetas de um DriveItem, confira [DriveItem](driveitem.
   "suppressions": []
 }
 -->
-
-

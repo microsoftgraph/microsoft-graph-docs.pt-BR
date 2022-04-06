@@ -1,17 +1,16 @@
 ---
 author: JeremyKelley
 description: Obter a coleção de itens em uma lista.
-ms.date: 09/11/2017
 title: Recuperar itens de uma lista do SharePoint
 ms.localizationpriority: medium
 ms.prod: sharepoint
 doc_type: apiPageType
-ms.openlocfilehash: bc6f0d0f8fc96ceffd3114a4cfc3ac99ebf8a0e9
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: 5eb0910bb74119ab99a99b5b59b19ae90b050efe
+ms.sourcegitcommit: 0bcc0a93f37db6013be40dc8d36717aeeeef7fb6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62096277"
+ms.lasthandoff: 03/16/2022
+ms.locfileid: "63516195"
 ---
 # <a name="enumerate-items-in-a-list"></a>Enumerar itens em uma lista
 
@@ -42,10 +41,25 @@ GET /sites/{site-id}/lists/{list-id}/items?expand=fields
 GET /sites/{site-id}/lists/{list-id}/items?expand=fields(select=Column1,Column2)
 ```
 
+## <a name="request-headers"></a>Cabeçalhos de solicitação
+
+| Nome      |Descrição|
+|:----------|:----------|
+| Autorização  | {code} do portador. Obrigatório.|
+
+## <a name="request-body"></a>Corpo da solicitação
+
+Não forneça um corpo de solicitação para esse método.
+
+## <a name="response"></a>Resposta 
+
+Se tiver êxito, este método retornará um `200 OK` código de resposta e uma coleção [de objetos listItem][item] no corpo da resposta. 
+
 ## <a name="example"></a>Exemplo
 
-#### <a name="request"></a>Solicitação
+### <a name="request"></a>Solicitação
 
+Veja a seguir um exemplo de uma solicitação.
 
 # <a name="http"></a>[HTTP](#tab/http)
 <!-- { "blockType": "request", "name": "get-list-items" } -->
@@ -80,7 +94,9 @@ GET https://graph.microsoft.com/beta/sites/{site-id}/lists/{list-id}/items?expan
 ---
 
 
-#### <a name="response"></a>Resposta
+### <a name="response"></a>Resposta
+
+Este é um exemplo de resposta.
 
 <!-- { "blockType": "response", "@odata.type": "Collection(microsoft.graph.listItem)", "truncated": true } -->
 

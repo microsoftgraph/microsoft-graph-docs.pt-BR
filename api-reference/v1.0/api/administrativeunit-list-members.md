@@ -5,12 +5,12 @@ author: DougKirschner
 ms.localizationpriority: medium
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: 518acaa07960f5569b2996c797b7cfcb4671a9d1
-ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
+ms.openlocfilehash: 4a87d88bbd69a9a9a93b80968b1719780d2f032e
+ms.sourcegitcommit: 0e7927f34b7e55d323acbf281e11560cb40a89ed
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/12/2021
-ms.locfileid: "60947032"
+ms.lasthandoff: 03/20/2022
+ms.locfileid: "63672494"
 ---
 # <a name="list-members"></a>Listar membros
 
@@ -23,8 +23,8 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegado (conta corporativa ou de estudante) | AdministrativeUnit.Read.All, Directory.Read.All, AdministrativeUnit.ReadWrite.All, Directory.ReadWrite.All, Directory.AccessAsUser.All    |
-|Delegada (conta pessoal da Microsoft) | Sem suporte.    |
+|Delegado (conta corporativa ou de estudante) | AdministrativeUnit.Read.All, Directory.Read.All, AdministrativeUnit.ReadWrite.All, Directory.ReadWrite.All    |
+|Delegado (conta pessoal da Microsoft) | Sem suporte.    |
 |Aplicativo | AdministrativeUnit.Read.All, Directory.Read.All, AdministrativeUnit.ReadWrite.All, Directory.ReadWrite.All |
 
 > Observação: para listar os membros de uma associação oculta em uma unidade administrativa, a permissão Member.Read.Hidden é necessária.
@@ -47,7 +47,7 @@ Não forneça um corpo de solicitação para esse método.
 
 ## <a name="response"></a>Resposta
 
-Se tiver êxito, este método retornará um código de resposta e uma coleção de objetos `200 OK` de usuário [](../resources/user.md) e/ou grupo no corpo da resposta. [](../resources/group.md)  Em vez disso, se você colocar no final da solicitação, a resposta conterá uma coleção de `$ref` `@odata.id` links/URLs para os membros.
+Se tiver êxito, este método retornará um `200 OK` código de resposta e uma [coleção de objetos](../resources/user.md) de usuário e [/ou grupo](../resources/group.md) no corpo da resposta.  Em vez disso, se `$ref` você colocar no final da solicitação, a resposta conterá uma coleção `@odata.id` de links/URLs para os membros.
 
 ## <a name="examples"></a>Exemplos
 ##### <a name="list-member-objects"></a>Listar objetos membros
@@ -84,7 +84,7 @@ Content-type: application/json
 ```
 
 ##### <a name="list-member-references"></a>Listar referências de membro
-A solicitação a seguir lista as referências de membro da unidade administrativa, retornando uma coleção de `@odata.id` referências aos membros.
+A solicitação a seguir lista as referências de membro da unidade administrativa, retornando uma coleção `@odata.id` de referências aos membros.
 ```
 GET https://graph.microsoft.com/v1.0/directory/administrativeUnits/{id}/members/$ref
 ```

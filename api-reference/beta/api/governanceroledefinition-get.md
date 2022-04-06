@@ -4,13 +4,13 @@ description: Recupere as propriedades e as relações de um governanceRoleDefini
 ms.localizationpriority: medium
 doc_type: apiPageType
 ms.prod: governance
-author: carolinetempleton
-ms.openlocfilehash: 441e23267b4b2358331fc08f92872c4839d7f4fc
-ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
+author: japere
+ms.openlocfilehash: c154871edfb183ba56d0e03a8fdac16c8500a0d2
+ms.sourcegitcommit: 43a7c971a97ce1e4c55cbae089820bfce7dfe42b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/12/2021
-ms.locfileid: "60934315"
+ms.lasthandoff: 03/29/2022
+ms.locfileid: "64510468"
 ---
 # <a name="get-governanceroledefinition"></a>Obter governançaRoleDefinition
 
@@ -18,35 +18,35 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-[!INCLUDE [pim-v1resourceroles-deprecation](../../includes/pim-v1resourceroles-deprecation.md)]
+[!INCLUDE [pim-v2ResourceRoles-deprecation](../../includes/pim-v2ResourceRoles-deprecation.md)]
 
-Recupere as propriedades e as relações de um [governanceRoleDefinition](../resources/governanceroledefinition.md).
+Recupere as propriedades e as relações de [um governanceRoleDefinition](../resources/governanceroledefinition.md).
 
-## <a name="permissions"></a>Permissões
+## <a name="permissions"></a>Permissions
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference#privileged-access-permissions).
 
 ### <a name="azure-resources"></a>Recursos do Azure
 
-| Tipo de permissão | Permissões |
+| Tipo de permissão | Permissions |
 |:--------------- |:----------- |
 | Delegada (conta corporativa ou de estudante) | PrivilegedAccess.ReadWrite.AzureResources |
-| Delegada (conta pessoal da Microsoft) | Sem suporte. |
+| Delegado (conta pessoal da Microsoft) | Sem suporte. |
 | Aplicativo | PrivilegedAccess.Read.AzureResources |
 
 ### <a name="azure-ad"></a>Microsoft Azure AD
 
-| Tipo de permissão | Permissões |
+| Tipo de permissão | Permissions |
 |:--------------- |:----------- |
 | Delegada (conta corporativa ou de estudante) | PrivilegedAccess.ReadWrite.AzureAD |
-| Delegada (conta pessoal da Microsoft) | Sem suporte. |
+| Delegado (conta pessoal da Microsoft) | Sem suporte. |
 | Aplicativo | PrivilegedAccess.Read.AzureAD |
 
 ### <a name="groups"></a>Grupos
 
-|Tipo de permissão | Permissões |
+|Tipo de permissão | Permissions |
 |:-------------- |:----------- |
 | Delegada (conta corporativa ou de estudante) | PrivilegedAccess.ReadWrite.AzureADGroup |
-| Delegada (conta pessoal da Microsoft) | Sem suporte. |
+| Delegado (conta pessoal da Microsoft) | Sem suporte. |
 | Aplicativo | PrivilegedAccess.Read.AzureADGroup |
 
 Além do escopo de permissão, essa API exige que o solicitante tenha pelo menos uma atribuição de função no recurso, à qual a [governanceRoleDefinition](../resources/governanceroledefinition.md) pertence.
@@ -69,7 +69,7 @@ Este método não **dá suporte** aos [Parâmetros de Consulta OData](/graph/que
 ## <a name="request-body"></a>Corpo da solicitação
 Não forneça um corpo de solicitação para esse método.
 ## <a name="response"></a>Resposta
-Se tiver êxito, este método retornará um código de resposta e um `200 OK` [objeto governanceRoleDefinition](../resources/governanceroledefinition.md) no corpo da resposta.
+Se tiver êxito, este método retornará um `200 OK` código de resposta e um [objeto governanceRoleDefinition](../resources/governanceroledefinition.md) no corpo da resposta.
 ## <a name="example"></a>Exemplo
 Este exemplo mostra como obter detalhes da definição de função DNS Zone Contributor na assinatura Wingtip Toys - Prod.
 <!-- {

@@ -5,12 +5,12 @@ author: mecampos
 ms.localizationpriority: high
 doc_type: conceptualPageType
 ms.prod: search
-ms.openlocfilehash: 2049332c4eb5f82cf44d3cde3fad71f02bd9049a
-ms.sourcegitcommit: 0eb843a6f61f384bc28c0cce1ccb74f64bdb1fa6
+ms.openlocfilehash: 8f63a225231365f7dfd654c11b797a52489633ce
+ms.sourcegitcommit: ecdca55147779405dbb99710e833fa7bcf90bf07
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/23/2021
-ms.locfileid: "60561462"
+ms.lasthandoff: 03/24/2022
+ms.locfileid: "63780538"
 ---
 # <a name="use-postman-with-the-microsoft-graph-connectors-api"></a>Usar o Postman com a API de conectores do Microsoft Graph
 
@@ -125,7 +125,7 @@ Observe que você está usando o [fluxo de credencial do cliente](/azure/active-
 
 ## <a name="step-6--create-a-new-connection"></a>Etapa 6 - Criar uma nova conexão
 
-Uma [conexão](/concepts/connecting-external-content-manage-connections.md) é um contêiner lógico de dados externos que você pode gerenciar como uma única unidade. Escolha um nome, id e descrição da conexão. Obtenha os detalhes necessários do administrador para se conectar à fonte de dados e forneça um mecanismo para autorizar a fonte de conteúdo ao configurar a conexão. Você pode usar as APIs e o [SDK do Microsoft Graph](/graph/sdks/sdks-overview) para programar a configuração do conector. Se deseja armazenar credenciais, você pode usar o Azure Key Vault.
+Uma [conexão](/graph/connecting-external-content-manage-connections) é um contêiner lógico de dados externos que você pode gerenciar como uma única unidade. Escolha um nome, id e descrição da conexão. Obtenha os detalhes necessários do administrador para se conectar à fonte de dados e forneça um mecanismo para autorizar a fonte de conteúdo ao configurar a conexão. Você pode usar as APIs e o [SDK do Microsoft Graph](/graph/sdks/sdks-overview) para programar a configuração do conector. Se deseja armazenar credenciais, você pode usar o Azure Key Vault.
 
 ```http
 POST /external/connections

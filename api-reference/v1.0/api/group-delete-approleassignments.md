@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 doc_type: apiPageType
 ms.prod: groups
 author: psignoret
-ms.openlocfilehash: 2e1bd0c6d5dacf0323570360d7a0050777408435
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: 5c14868f94816fbc79ab71100a9d7d3fbcb86b05
+ms.sourcegitcommit: 0e7927f34b7e55d323acbf281e11560cb40a89ed
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62117448"
+ms.lasthandoff: 03/20/2022
+ms.locfileid: "63670940"
 ---
 # <a name="delete-approleassignment"></a>Excluir appRoleAssignment
 
@@ -24,8 +24,8 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegada (conta corporativa ou de estudante) | AppRoleAssignment.ReadWrite.All, Directory.AccessAsUser.All    |
-|Delegada (conta pessoal da Microsoft) | Sem suporte.    |
+|Delegado (conta corporativa ou de estudante) | AppRoleAssignment.ReadWrite.All    |
+|Delegado (conta pessoal da Microsoft) | Sem suporte.    |
 |Aplicativo | AppRoleAssignment.ReadWrite.All |
 
 ## <a name="http-request"></a>Solicitação HTTP
@@ -37,7 +37,7 @@ DELETE /groups/{id}/appRoleAssignments/{id}
 ```
 
 > [!NOTE]
-> Como prática prática, recomendamos excluir atribuições de função de aplicativo usando o método [Delete appRoleAssignedTo](serviceprincipal-delete-approleassignedto.md) que exclui por meio da relação **appRoleAssignedTo** da entidade de serviço de recursos, em vez deste método. 
+> Como prática prática, recomendamos excluir atribuições de função de aplicativo usando o método [Delete appRoleAssignedTo](serviceprincipal-delete-approleassignedto.md) que exclui por meio da relação **appRoleAssignedTo** da entidade  de serviço de recursos, em vez deste método.
 
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
 

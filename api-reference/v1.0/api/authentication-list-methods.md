@@ -5,20 +5,20 @@ ms.localizationpriority: medium
 author: mmcla
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: ca231fb1c794660171aeed59a67b39152318767d
-ms.sourcegitcommit: e497ed9bb56400bdd2bb53d52ddf057d9966220b
+ms.openlocfilehash: 8814d4bcb6b5ebee28cf19cbdcbe6b4f5889bfc0
+ms.sourcegitcommit: 43a7c971a97ce1e4c55cbae089820bfce7dfe42b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/30/2021
-ms.locfileid: "61224936"
+ms.lasthandoff: 03/29/2022
+ms.locfileid: "64510419"
 ---
 # <a name="list-methods"></a>Métodos de List
 
 Namespace: microsoft.graph
 
-Recupere uma lista de objetos [do método de autenticação.](../resources/authenticationmethod.md) Essa API retorna apenas os métodos de autenticação suportados nesta versão da API. Consulte [Azure AD authentication methods API overview](../resources/authenticationmethods-overview.md) for a list of currently supported methods.
+Recuperar uma lista de [objetos authenticationMethod](../resources/authenticationmethod.md) . Essa API retorna apenas os métodos de autenticação suportados nesta versão da API. Consulte [Azure AD authentication methods API overview](../resources/authenticationmethods-overview.md) for a list of currently supported methods.
 
-## <a name="permissions"></a>Permissões
+## <a name="permissions"></a>Permissions
 
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
@@ -26,7 +26,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
 |:---------------------------------------|:-------------------------|
-| Delegada (conta corporativa ou de estudante)     | UserAuthenticationMethod.Read, UserAuthenticationMethod.ReadWrite |
+| Delegado (conta corporativa ou de estudante)     | UserAuthenticationMethod.Read, UserAuthenticationMethod.ReadWrite |
 | Delegado (conta pessoal da Microsoft) | Sem suporte. |
 | Aplicativo                            | Sem suporte. |
 
@@ -34,11 +34,11 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
 |:---------------------------------------|:-------------------------|:-----------------|
-| Delegada (conta corporativa ou de estudante)     | UserAuthenticationMethod.Read.All, UserAuthenticationMethod.ReadWrite.All |
+| Delegado (conta corporativa ou de estudante)     | UserAuthenticationMethod.Read.All, UserAuthenticationMethod.ReadWrite.All |
 | Delegado (conta pessoal da Microsoft) | Sem suporte. |
 | Aplicativo                            | UserAuthenticationMethod.Read.All, UserAuthenticationMethod.ReadWrite.All |
 
-Para cenários delegados em que um administrador está agindo em outro usuário, o administrador precisa de uma das seguintes funções [do Azure AD:](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles)
+Para cenários delegados em que um administrador está atuando em outro usuário, o administrador precisa de uma das seguintes funções [do Azure AD](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles):
 * Administrador global
 * Leitor global
 * Administrador de autenticação privilegiada
@@ -69,7 +69,7 @@ Não forneça um corpo de solicitação para esse método.
 
 ## <a name="response"></a>Resposta
 
-Se tiver êxito, este método retornará um código de resposta e uma coleção de objetos `200 OK` [authenticationMethod](../resources/authenticationmethod.md) no corpo da resposta.
+Se tiver êxito, este método retornará um `200 OK` código de resposta e uma coleção de objetos [authenticationMethod](../resources/authenticationmethod.md) no corpo da resposta.
 
 ## <a name="examples"></a>Exemplos
 

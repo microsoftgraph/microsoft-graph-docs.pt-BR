@@ -1,16 +1,16 @@
 ---
 title: 'call: mute'
 description: Permite que o aplicativo se silencie.
-author: ananmishr
+author: mkhribech
 ms.localizationpriority: medium
 ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: cdc0588e9a168ba478b066d4944c82c3a72da86e
-ms.sourcegitcommit: 25acfa7d0153336c9a35d30a1dd422aeadc1342c
+ms.openlocfilehash: ee6839511bc24d0eec7f43b65a13f45adc184a9c
+ms.sourcegitcommit: 10719607271380ea56076ccff5a3b774d0005773
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/03/2022
-ms.locfileid: "62344649"
+ms.lasthandoff: 04/01/2022
+ms.locfileid: "64607677"
 ---
 # <a name="call-mute"></a>call: mute
 
@@ -26,14 +26,16 @@ Para obter mais detalhes sobre como lidar com operações de mudo, consulte [mut
 
 > **Observação:** Esse método só tem suporte para chamadas de grupo.
 
-## <a name="permissions"></a>Permissões
+## <a name="permissions"></a>Permissions
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 | Tipo de permissão                        | Permissões (da com menos para a com mais privilégios) |
 |:---------------------------------------|:--------------------------------------------|
 | Delegado (conta corporativa ou de estudante)     | Sem suporte.                               |
 | Delegado (conta pessoal da Microsoft) | Sem suporte.                               |
-| Aplicativo                            | Nenhum.                                        |
+| Aplicativo     | Calls.Initiate.All, Calls.AccessMedia.All  |
+
+> **Observação:** As permissões são verificadas quando a chamada é criada; nenhuma verificação de permissão adicional é feita ao chamar essa API. Calls.AccessMedia.All só é necessário para chamadas que usam mídia hospedada pelo aplicativo.
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- { "blockType": "ignored" } -->
@@ -54,7 +56,7 @@ Forneça um objeto JSON com os seguintes parâmetros no corpo da solicitação.
 
 | Parâmetro      | Tipo    |Descrição|
 |:---------------|:--------|:----------|
-|clientContext|String|O contexto do cliente.|
+|clientContext|Cadeia de caracteres|O contexto do cliente.|
 
 ## <a name="response"></a>Resposta
 Se tiver êxito, este método retornará um `200 OK` código de resposta e um [objeto muteParticipantOperation](../resources/muteParticipantoperation.md) no corpo da resposta.

@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: davidspooner
 ms.prod: identity-and-sign-in
 doc_type: resourcePageType
-ms.openlocfilehash: 4ad83c28f11fbc44dab79ea357060b1b830534b0
-ms.sourcegitcommit: 3f3975916b5c531ee63d92340ccd6e73e879e8d7
+ms.openlocfilehash: ca34f949e910907910a2aa14e64951538ab4bb13
+ms.sourcegitcommit: 0e7927f34b7e55d323acbf281e11560cb40a89ed
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/21/2022
-ms.locfileid: "62161204"
+ms.lasthandoff: 03/20/2022
+ms.locfileid: "63672536"
 ---
 # <a name="conditionalaccessplatforms-resource-type"></a>Tipo de recurso conditionalAccessPlatforms
 
@@ -22,8 +22,8 @@ Plataformas incluídas e excluídas do escopo da política.
 
 | Propriedade     | Tipo        | Descrição |
 |:-------------|:------------|:------------|
-|includePlatforms|Coleção conditionalAccessDevicePlatform| Os valores possíveis são: `android`, `iOS`, `windows`, `windowsPhone`, `macOS`, `all`, `unknownFutureValue`.|
-|excludePlatforms|Coleção conditionalAccessDevicePlatform| Os valores possíveis são: `android`, `iOS`, `windows`, `windowsPhone`, `macOS`, `all`, `unknownFutureValue`.|
+|includePlatforms|Coleção conditionalAccessDevicePlatform| Os valores possíveis são: `android`, `iOS`, `windows`, `windowsPhone`, `macOS`, `linux`, `all`, `unknownFutureValue`.|
+|excludePlatforms|Coleção conditionalAccessDevicePlatform| Os valores possíveis são: `android`, `iOS`, `windows`, `windowsPhone`, `macOS`, `linux`, `all`, `unknownFutureValue`.|
 
 ## <a name="relationships"></a>Relações
 

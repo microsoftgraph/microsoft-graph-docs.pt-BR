@@ -1,16 +1,16 @@
 ---
 title: Listar grupos de roteamento de áudio
-description: Recupere uma lista de **objetos audioRoutingGroup.**
-author: ananmishr
+description: Recupere uma lista de **objetos audioRoutingGroup** .
+author: mkhribech
 ms.localizationpriority: medium
 ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: e175b9de2e4230098503600bd926612f340dda78
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: 324365fb111c22146f8e3c265a3ec6de3e75057d
+ms.sourcegitcommit: 10719607271380ea56076ccff5a3b774d0005773
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62129944"
+ms.lasthandoff: 04/01/2022
+ms.locfileid: "64607572"
 ---
 # <a name="list-audio-routing-groups"></a>Listar grupos de roteamento de áudio
 
@@ -18,9 +18,9 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Recupere uma lista de **objetos audioRoutingGroup.**
+Recupere uma lista de **objetos audioRoutingGroup** .
 
-## <a name="permissions"></a>Permissões
+## <a name="permissions"></a>Permissions
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 | Tipo de permissão                        | Permissões (da com menos para a com mais privilégios) |
@@ -49,7 +49,7 @@ Este método dá suporte a [Parâmetros de consulta OData](/graph/query-paramete
 Não forneça um corpo de solicitação para esse método.
 
 ## <a name="response"></a>Resposta
-Se tiver êxito, este método retornará um código de resposta e uma `200 OK` coleção de [objetos audioRoutingGroup](../resources/audioroutinggroup.md) no corpo da resposta.
+Se tiver êxito, este método retornará um `200 OK` código de resposta e uma coleção de [objetos audioRoutingGroup](../resources/audioroutinggroup.md) no corpo da resposta.
 
 ## <a name="example"></a>Exemplo
 

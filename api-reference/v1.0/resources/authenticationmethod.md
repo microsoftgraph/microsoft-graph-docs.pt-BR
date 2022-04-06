@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: mmcla
 ms.prod: identity-and-sign-in
 doc_type: resourcePageType
-ms.openlocfilehash: 92c504bf5cbbec90c11bb51c6d8e19a67e4d7cfb
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: ef8a1576865fa3bf4fc8e2e9e9908bdbba792c64
+ms.sourcegitcommit: 43a7c971a97ce1e4c55cbae089820bfce7dfe42b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59127042"
+ms.lasthandoff: 03/29/2022
+ms.locfileid: "64510131"
 ---
 # <a name="authenticationmethod-resource-type"></a>tipo de recurso authenticationMethod
 
@@ -19,9 +19,9 @@ Namespace: microsoft.graph
 Representa um método de autenticação registrado para um usuário. Um [método de autenticação](/azure/active-directory/authentication/concept-authentication-methods) é algo usado por um usuário para autenticar ou provar sua identidade para o sistema. Alguns exemplos incluem senha, telefone (usável por SMS ou chamada de voz), chaves de segurança FIDO2 e muito mais.
 
 > [!IMPORTANT]
-> Listar os métodos de autenticação dos usuários retorna apenas os métodos suportados nesta versão da API. Consulte [Azure AD authentication methods API overview](authenticationmethods-overview.md) for a list of currently supported methods.
+> Listar os métodos de autenticação dos usuários retorna apenas os métodos suportados nesta versão da API e registrados para o usuário. Consulte [Azure AD authentication methods API overview](authenticationmethods-overview.md) for a list of currently supported methods.
 
-## <a name="methods"></a>Métodos
+## <a name="methods"></a>Methods
 
 | Método       | Tipo de retorno | Descrição |
 |:-------------|:------------|:------------|

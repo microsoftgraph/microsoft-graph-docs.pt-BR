@@ -2,15 +2,15 @@
 author: swapnil1993
 title: Tipo de recurso documentSetContent
 description: O recurso documentSetContent contém metadados sobre um arquivo presente no local de conteúdo padrão de um conteúdo.
-localization_priority: Normal
+ms.localizationpriority: medium
 doc_type: resourcePageType
 ms.prod: sites-and-lists
-ms.openlocfilehash: 8597dfb8a762d2166a9253fb4e806b9c2fcf5223
-ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
+ms.openlocfilehash: 0ec71779247f143c0f43f1695c75049af15d453f
+ms.sourcegitcommit: e5d5095e26dca6f434354a0970e789e94ee6afb0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50445907"
+ms.lasthandoff: 03/22/2022
+ms.locfileid: "63722979"
 ---
 # <a name="documentsetcontent-resource-type"></a>Tipo de recurso documentSetContent
 
@@ -21,15 +21,16 @@ Contém metadados sobre um arquivo presente no local de conteúdo padrão de um 
 
 ## <a name="properties"></a>Propriedades
 
-| Nome da propriedade  | Tipo    | Descrição
-|:---------------|:--------|:--------------------------------------------------
-| contentType    | microsoft.graph.contentTypeInfo | Informações de tipo de conteúdo do arquivo. 
-| fileName      | string  | Nome do arquivo na pasta de recursos que deve ser adicionado como um conteúdo padrão ou um modelo no conjunto de documentos  
-| folderName         | string  | Nome da pasta no qual o arquivo será colocado quando um novo conjunto de documentos for criado na biblioteca.
+| Propriedade    | Tipo                            | Descrição                                                                                                     |
+| :---------- | :------------------------------ | :-------------------------------------------------------------------------------------------------------------- |
+| contentType | microsoft.graph.contentTypeInfo | Informações de tipo de conteúdo do arquivo.                                                                           |
+| fileName    | string                          | Nome do arquivo na pasta de recursos que deve ser adicionado como um conteúdo padrão ou um modelo no conjunto de documentos |
+| folderName  | string                          | Nome da pasta no qual o arquivo será colocado quando um novo conjunto de documentos for criado na biblioteca.                 |
 
 ## <a name="json-representation"></a>Representação JSON
 
-Aqui está uma representação JSON de um **recurso documentSetContent.**
+Aqui está uma representação JSON de um **recurso documentSetContent** .
+
 <!-- { "blockType": "resource", "@odata.type": "microsoft.graph.documentSetContent" } -->
 
 ```json

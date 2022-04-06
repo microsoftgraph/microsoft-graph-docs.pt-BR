@@ -5,12 +5,12 @@ author: sandeo-MSFT
 ms.localizationpriority: medium
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: f52b09635a002c271907b6cb087ed6bbc182b57f
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: e6e252916848fa1b40158eef64e3982c07560b45
+ms.sourcegitcommit: 43a7c971a97ce1e4c55cbae089820bfce7dfe42b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62133978"
+ms.lasthandoff: 03/29/2022
+ms.locfileid: "64509802"
 ---
 # <a name="list-devices"></a>Listar dispositivos
 
@@ -20,14 +20,14 @@ Namespace: microsoft.graph
 
 Recupere uma lista de dispositivos registrados no diretório. 
 
-## <a name="permissions"></a>Permissões
+## <a name="permissions"></a>Permissions
 
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 
 | Tipo de permissão | Permissões (da com menos para a com mais privilégios) |
 |:--------------- |:------------------------------------------- |
-| Delegado (conta corporativa ou de estudante) | Device.Read.All, Directory.Read.All, Directory.ReadWrite.All, Directory.AccessAsUser.All |
+| Delegado (conta corporativa ou de estudante) | Device.Read.All, Directory.Read.All, Directory.ReadWrite.All |
 | Delegado (conta pessoal da Microsoft) | Sem suporte. |
 | Aplicativo | Device.Read.All, Device.ReadWrite.All, Directory.Read.All, Directory.ReadWrite.All |
 
@@ -206,7 +206,11 @@ GET https://graph.microsoft.com/beta/devices?$select=id,extensionAttributes
 #### <a name="response"></a>Resposta
 
 Este é um exemplo de resposta.
-
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.device"
+} -->
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
@@ -246,8 +250,8 @@ Este é um exemplo de solicitação. Esta solicitação exige o cabeçalho **Con
 
 >**Observação:** os parâmetros de consulta `$count` e `$search` não estão disponíveis atualmente nos locatários do Azure Active Directory B2C.
 <!-- {
-  "blockType": "ignored",
-  "name": "get_a_count"
+  "blockType": "request",
+  "name": "list_devices_startswith"
 }-->
 ```msgraph-interactive
 GET https://graph.microsoft.com/beta/devices?$filter=startswith(displayName, 'a')&$count=true&$top=1&$orderby=displayName 
@@ -351,7 +355,7 @@ Content-type: application/json
 
 #### <a name="request"></a>Solicitação
 
-Este é um exemplo de solicitação. Essa solicitação requer o header **ConsistencyLevel** definido como e a cadeia de caracteres de consulta porque a propriedade `eventual` `$count=true` extensionAttributes oferece suporte apenas a parâmetros de `$filter` consulta avançados. Para obter mais informações sobre o uso de **ConsistencyLevel** e `$count`, consulte [Funcionalidades avançadas de consulta nos objetos de diretório do Microsoft Azure AD](/graph/aad-advanced-queries).
+Este é um exemplo de solicitação. Essa solicitação requer o header `eventual` `$count=true` **ConsistencyLevel** definido como e a cadeia de caracteres de consulta porque a propriedade extensionAttributes `$filter` oferece suporte apenas a parâmetros de consulta avançados. Para obter mais informações sobre o uso de **ConsistencyLevel** e `$count`, consulte [Funcionalidades avançadas de consulta nos objetos de diretório do Microsoft Azure AD](/graph/aad-advanced-queries).
 
 >**Observação:** os parâmetros de consulta `$count` e `$search` não estão disponíveis atualmente nos locatários do Azure Active Directory B2C.
 

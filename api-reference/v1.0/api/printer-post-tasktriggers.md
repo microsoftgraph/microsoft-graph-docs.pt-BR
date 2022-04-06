@@ -5,27 +5,29 @@ author: nilakhan
 ms.localizationpriority: medium
 ms.prod: cloud-printing
 doc_type: apiPageType
-ms.openlocfilehash: b9a392eed805fa816e3eb4ac84e91965880d7091
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: ba37207f1f1a776925ce4db60ed7a89f93fb3fa7
+ms.sourcegitcommit: 0076eb6abb89be3dca3575631924a74a5202be30
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62132239"
+ms.lasthandoff: 04/03/2022
+ms.locfileid: "64629236"
 ---
 # <a name="create-printtasktrigger"></a>Criar printTaskTrigger
 Namespace: microsoft.graph
 
-Crie um novo [gatilho de tarefas](../resources/printtasktrigger.md) na impressora [especificada.](../resources/printer.md) Atualmente, apenas **um gatilho** de tarefa pode ser especificado por impressora, mas esse limite pode ser removido no futuro. 
+Crie um novo [gatilho de tarefas](../resources/printtasktrigger.md) na impressora [especificada](../resources/printer.md). Atualmente, apenas **um gatilho** de tarefas pode ser especificado por impressora, mas esse limite pode ser removido no futuro. 
+
+>**Observação:** O appId usado para gerar um token de acesso para criar um gatilho de tarefa deve ser o mesmo appId usado para criar a definição de tarefa correspondente.
 
 ## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
-Além das permissões a seguir, o locatário do usuário deve ter uma assinatura de Impressão Universal ativa. O usuário inscreveu deve ser um [Administrador de Impressora.](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#printer-administrator)
+Além das permissões a seguir, o locatário do usuário deve ter uma assinatura de Impressão Universal ativa. O usuário inscreveu deve ser um [Administrador de Impressora](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#printer-administrator).
 
 |Tipo de permissão | Permissões (da com menos para a com mais privilégios) |
 |:---------------|:--------------------------------------------|
 |Delegado (conta corporativa ou de estudante)| Printer.ReadWrite.All, Printer.FullControl.All |
-|Delegado (conta pessoal da Microsoft)|Sem suporte.|
+|Delegada (conta pessoal da Microsoft)|Sem suporte.|
 |Aplicativo|Sem suporte.|
 
 ## <a name="http-request"></a>Solicitação HTTP
@@ -45,10 +47,10 @@ POST /print/printers/{printerId}/taskTriggers
 |Content-Type|application/json. Obrigatório.|
 
 ## <a name="request-body"></a>Corpo da solicitação
-No corpo da solicitação, fornece uma representação JSON de um [objeto printTaskTrigger.](../resources/printtasktrigger.md) Fornecer uma referência a [uma printTaskDefinition](../resources/printtaskdefinition.md) usando o formato, conforme `@odata.bind` mostrado no exemplo a seguir.
+No corpo da solicitação, fornece uma representação JSON de um [objeto printTaskTrigger](../resources/printtasktrigger.md) . Fornecer uma referência a [uma printTaskDefinition](../resources/printtaskdefinition.md) `@odata.bind` usando o formato, conforme mostrado no exemplo a seguir.
 
 ## <a name="response"></a>Resposta
-Se tiver êxito, este método retornará um código `201 Created` de resposta e um [printTaskTrigger](../resources/printtasktrigger.md) no corpo da resposta.
+Se tiver êxito, este método retornará um `201 Created` código de resposta e um [printTaskTrigger](../resources/printtasktrigger.md) no corpo da resposta.
 
 ## <a name="examples"></a>Exemplos
 
@@ -98,7 +100,7 @@ Content-Type: application/json
 
 
 ### <a name="response"></a>Resposta
-**Observação:** o objeto de resposta mostrado aqui pode ser encurtado para legibilidade.
+>**Observação:** o objeto de resposta mostrado aqui pode ser encurtado para legibilidade.
 <!-- {
   "blockType": "response",
   "truncated": true,

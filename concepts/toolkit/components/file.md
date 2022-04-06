@@ -1,18 +1,18 @@
 ---
-title: Componente de arquivo no Microsoft Graph Toolkit
+title: Componente de arquivo no microsoft Graph Toolkit
 description: O componente de arquivo é usado para exibir um arquivo mostrando o ícone e o nome
 ms.localizationpriority: medium
-author: beth-panx
-ms.openlocfilehash: 8b3aaac8e0216cad39b0dd566de763d26eacfb4a
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+author: sebastienlevert
+ms.openlocfilehash: 1519b314be1d41d1a2df87cebbfb99d2e593c6a4
+ms.sourcegitcommit: cc9e5b3630cb84c48bbbb2d84a963b9562d1fb78
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59035329"
+ms.lasthandoff: 03/31/2022
+ms.locfileid: "64589062"
 ---
-# <a name="file-component-in-the-microsoft-graph-toolkit"></a>Componente de arquivo no Microsoft Graph Toolkit
+# <a name="file-component-in-the-microsoft-graph-toolkit"></a>Componente de arquivo no microsoft Graph Toolkit
 
-O componente File é usado para representar um [arquivo/pasta](/graph/onedrive-concept-overview) individual do OneDrive ou SharePoint exibindo informações como o nome do arquivo/pasta, um ícone que indica o tipo de arquivo e outras propriedades, como o autor, data da última modificação ou outros detalhes. Você pode fornecer os identificadores de um arquivo e o componente gerará a consulta para recuperar o arquivo com base nos identificadores fornecidos. Esse componente pode ser usado por conta própria ou como parte dos [componentes mgt-file-list.](./file-list.md)
+O componente File é usado para representar um arquivo[/](/graph/onedrive-concept-overview)pasta individual do OneDrive ou SharePoint exibindo informações como o nome do arquivo/pasta, um ícone que indica o tipo de arquivo e outras propriedades, como o autor, data da última modificação ou outros detalhes. Você pode fornecer os identificadores de um arquivo e o componente gerará a consulta para recuperar o arquivo com base nos identificadores fornecidos. Esse componente pode ser usado por conta própria ou como parte dos [componentes mgt-file-list](./file-list.md) .
 
 ## <a name="example"></a>Exemplo
 
@@ -29,17 +29,17 @@ Você pode usar várias propriedades para personalizar o componente.
 | Atributo | Propriedade | Descrição |
 | --------- | -------- | ----------- |
 | file-query | fileQuery | A consulta completa ou o caminho para o arquivo a ser recuperado. |
-| drive-id | driveId | A ID da unidade à que o arquivo pertence. Também deve fornecer um `item-id` ou `item-path` . |
-| group-id | groupId | ID do grupo ao que o arquivo pertence. Também deve fornecer um `item-id` ou `item-path` . |
-| site-id | siteId | ID do site ao que o arquivo pertence. Também deve fornecer um `{item-id}` ou `{item-path}` . Forneça o `{list-id}` também se você estiver fazendo referência a um arquivo de uma lista específica. |
-| list-id | listId | ID da lista à que o arquivo pertence. Também deve fornecer `{site-id}` e `{item-id}` . |
-| item-id | itemId | ID do arquivo. A consulta padrão é `/me/drive/items` . Forneça `{drive-id}` , , ou para consultar um local `{group-id}` `{site-id}` `{user-id}` específico. |
-| item-path | itemPath | Caminho do item do arquivo. A consulta padrão é `/me/drive/root` . Forneça `{drive-id}` , , ou para consultar um local `{group-id}` `{site-id}` `{user-id}` específico. |
-| tipo de insight | insightType | Tipo de insight do qual o arquivo é recuperado. Pode `trending` ser `used` , ou `shared` . |
+| drive-id | driveId | A ID da unidade à que o arquivo pertence. Também deve fornecer um ou `item-id` `item-path`. |
+| group-id | groupId | ID do grupo ao que o arquivo pertence. Também deve fornecer um ou `item-id` `item-path`. |
+| site-id | siteId | ID do site ao que o arquivo pertence. Também deve fornecer um ou `{item-id}` `{item-path}`. Forneça o `{list-id}` também se você estiver fazendo referência a um arquivo de uma lista específica. |
+| list-id | listId | ID da lista à que o arquivo pertence. Também deve fornecer `{site-id}` e `{item-id}`. |
+| item-id | itemId | ID do arquivo. A consulta padrão é `/me/drive/items`. Forneça `{drive-id}`, `{group-id}`, `{site-id}`ou `{user-id}` para consultar um local específico. |
+| item-path | itemPath | Caminho do item do arquivo. A consulta padrão é `/me/drive/root`. Forneça `{drive-id}`, `{group-id}`, `{site-id}`ou `{user-id}` para consultar um local específico. |
+| tipo de insight | insightType | Tipo de insight do qual o arquivo é recuperado. Pode ser `trending`, `used`ou `shared`. |
 | insight-id | insightId | ID do recurso insight. |
 | file-details | fileDetails | Definir como um objeto que representa um arquivo |
 | file-icon | fileIcon | Definir como um ícone para mostrar o arquivo |
-| modo de exibição | modo de exibição | Definir para controlar como o arquivo é renderizado. O padrão é `oneline`. <br>`image` - mostrar apenas o ícone <br>`oneline` - mostrar o ícone e uma linha de texto (o padrão é arquivo `name` ) <br>`twolines` - mostrar o ícone e duas linhas de texto ( `name` `lastModifiedDateTime` e por padrão)<br> `threelines` - mostrar o ícone e três linhas de texto ( `name` , e do autor por `lastModifiedDateTime` `displayName` padrão) |
+| modo de exibição | modo de exibição | Definir para controlar como o arquivo é renderizado. O padrão é `oneline`. <br>`image` - mostrar apenas o ícone <br>`oneline` - mostrar o ícone e uma linha de texto (o padrão é arquivo `name`) <br>`twolines` - mostrar o ícone e duas linhas de texto (`name` e `lastModifiedDateTime` por padrão)<br> `threelines` - mostrar o ícone e três linhas de texto (`name`, `lastModifiedDateTime`e `displayName` do autor por padrão) |
 | line1-property | line1Property | Define a propriedade de `fileDetails` usar para a primeira linha de texto. O padrão `name` é do arquivo. |
 | line2-property | line2Property | Define a propriedade de `fileDetails` usar para a segunda linha de texto. O padrão é `lastModifiedDateTime`. |
 | line3-property | line3Property | Define a propriedade de `fileDetails` usar para a terceira linha de texto. O padrão `size` é do arquivo. |
@@ -123,20 +123,20 @@ Esse controle usa as seguintes APIs Graph Microsoft e permissões.
 | Desenvolvedor fornece `{user-id}` AND `{item-id}` | Files.Read, Files.Read.All, Sites.Read.All | `GET /users/{user-id}/drive/items/{item-id}` |
 | Desenvolvedor fornece `{user-id}` AND `{item-path}` | Files.Read, Files.Read.All, Sites.Read.All | `GET /users/{user-id}/drive/root:/{item-path}` |
 | `insight-type` está definido como `trending` e o desenvolvedor fornece `{insight-id}` | Sites.Read.All | `GET /me/insights/trending/{insight-id}/resource` |
-| O desenvolvedor fornece `{user-id or upn}` AND e está definido `{insight-id}` `insight-type` como `trending` | Sites.Read.All | `GET /users/{id or userPrincipalName}/insights/trending/{insight-id}/resource` |
+| O desenvolvedor fornece `{user-id or upn}` AND `{insight-id}` e `insight-type` está definido como `trending` | Sites.Read.All | `GET /users/{id or userPrincipalName}/insights/trending/{insight-id}/resource` |
 | `insight-type` está definido como `used` e o desenvolvedor fornece `{insight-id}` | Sites.Read.All | `GET /me/insights/used/{id}/resource` |
-| O desenvolvedor fornece `{user-id or upn}` AND e está definido `{insight-id}` `insight-type` como `used` | Sites.Read.All | `GET /users/{id or userPrincipalName}/insights/used/{id}/resource` |
+| O desenvolvedor fornece `{user-id or upn}` AND `{insight-id}` e `insight-type` está definido como `used` | Sites.Read.All | `GET /users/{id or userPrincipalName}/insights/used/{id}/resource` |
 | `insight-type` is `shared` AND developer provides `{insight-id}` | Sites.Read.All | `GET /me/insights/shared/{id}/resource` |
-| O desenvolvedor fornece `{user-id or upn}` AND e está definido `{insight-id}` `insight-type` como `shared` | Sites.Read.All | `GET /users/{id or userPrincipalName}/insights/shared/{id}/resource` |
+| O desenvolvedor fornece `{user-id or upn}` AND `{insight-id}` e `insight-type` está definido como `shared` | Sites.Read.All | `GET /users/{id or userPrincipalName}/insights/shared/{id}/resource` |
 
 ## <a name="templates"></a>Modelos
 
-O `mgt-file` componente dá suporte a vários [modelos](../customize-components/templates.md) que permitem substituir determinadas partes do componente. Para especificar um modelo, inclua um elemento dentro de um componente e de definir o `<template>` valor como um dos `data-type` seguintes:
+O `mgt-file` componente dá suporte a [vários modelos](../customize-components/templates.md) que permitem substituir determinadas partes do componente. Para especificar um modelo, inclua um `<template>` elemento dentro de um componente e de `data-type` definir o valor como um dos seguintes:
 
 | Tipo de dados | Contexto de dados | Descrição |
 | ----------- | -------------- | ------------- |
-| loading | Nenhuma | O modelo a ser render enquanto o componente está em um estado de carregamento. |
-| no-data | Nenhuma | O modelo a ser renderização quando nenhum dado de arquivo estiver disponível. |
+| loading | none | O modelo a ser render enquanto o componente está em um estado de carregamento. |
+| no-data | none | O modelo a ser renderização quando nenhum dado de arquivo estiver disponível. |
 | Padrão. | file: o objeto de detalhes do arquivo | O modelo padrão substitui todo o componente por seu próprio. |
 
 ## <a name="authentication"></a>Autenticação

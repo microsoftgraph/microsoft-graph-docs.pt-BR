@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: sharad-sharma-msft
 ms.prod: education
 doc_type: resourcePageType
-ms.openlocfilehash: 87751e7b59f883e5d317bcc16e5d97c141faff98
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: e0dcab6cc22aa694754c13fce2104aed97d10200
+ms.sourcegitcommit: c21fefa5c3c62df14147e7918cb43327f7d72e69
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59044717"
+ms.lasthandoff: 04/06/2022
+ms.locfileid: "64685219"
 ---
 # <a name="educationpointsoutcome-resource-type"></a>Tipo de recurso educationPointsOutcome
 
@@ -22,13 +22,14 @@ Um [educationOutcome](educationoutcome.md) que fornece uma nota numérica.
 
 | Método       | Tipo de retorno | Descrição |
 |:-------------|:------------|:------------|
-| [Atualizar educationOutcome](../api/educationoutcome-update.md) | [educationOutcome](educationoutcome.md) | Atualizar o objeto educationOutcome. |
+| [Atualizar educationOutcome](../api/educationoutcome-update.md) | [educationOutcome](educationoutcome.md) | Atualize o objeto educationOutcome. |
 
 ## <a name="properties"></a>Propriedades
 
 | Propriedade     | Tipo        | Descrição |
 |:-------------|:------------|:------------|
-|points|[educationAssignmentPointsGrade](educationassignmentpointsgrade.md)|A nota numérica que o professor deu ao aluno para essa atribuição.|
+|id|Cadeia de caracteres|Identificador exclusivo para educationPointsOutcome.|
+|points|[educationAssignmentPointsGrade](educationassignmentpointsgrade.md)|A nota numérica que o professor deu ao aluno para essa tarefa.|
 |publishedPoints|[educationAssignmentPointsGrade](educationassignmentpointsgrade.md)|Uma cópia da propriedade points que é feita quando a nota é liberada para o aluno.|
 
 ## <a name="relationships"></a>Relações
@@ -50,6 +51,7 @@ Veja a seguir uma representação JSON do recurso.
 
 ```json
 {
+  "id": "String (identifier)",
   "points": {"@odata.type": "microsoft.graph.educationAssignmentPointsGrade"},
   "publishedPoints": {"@odata.type": "microsoft.graph.educationAssignmentPointsGrade"}
 }

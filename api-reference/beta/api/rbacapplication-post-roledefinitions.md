@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: abhijeetsinha
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: f067315b35b3a54f95b184e3f83c961174eded1c
-ms.sourcegitcommit: 0fa7148e0b776663eaca3e79e72b85046d4b8b1a
+ms.openlocfilehash: 49a6b986055207205f1af3778dfed7a5ccf01e74
+ms.sourcegitcommit: 0e7927f34b7e55d323acbf281e11560cb40a89ed
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "63500935"
+ms.lasthandoff: 03/20/2022
+ms.locfileid: "63669869"
 ---
 # <a name="create-unifiedroledefinition"></a>Criar unifiedRoleDefinition
 
@@ -49,7 +49,7 @@ Dependendo do provedor RBAC e do tipo de permissão (delegado ou aplicativo) nec
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegado (conta corporativa ou de estudante) |  RoleManagement.ReadWrite.Directory, Directory.ReadWrite.All, Directory.AccessAsUser.All   |
+|Delegado (conta corporativa ou de estudante) |  RoleManagement.ReadWrite.Directory, Directory.ReadWrite.All   |
 |Delegado (conta pessoal da Microsoft) | Sem suporte.    |
 |Aplicativo | RoleManagement.ReadWrite.Directory, Directory.ReadWrite.All |
 
@@ -87,7 +87,7 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar uma role
 
 | Parâmetro | Tipo | Descrição|
 |:---------------|:--------|:----------|
-|displayName |cadeia de caracteres |O nome de exibição da definição de função.|
+|displayName |string |O nome de exibição da definição de função.|
 |isEnabled |Booliano |Sinalizador indicando se a função está habilitada para atribuição. Se for false, a função não estará disponível para atribuição.|
 |rolePermissions |[Coleção unifiedRolePermission](../resources/unifiedrolepermission.md) |Lista de permissões incluídas na função.|
 

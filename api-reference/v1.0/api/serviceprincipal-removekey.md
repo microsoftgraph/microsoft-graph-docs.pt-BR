@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: sureshja
 ms.prod: applications
 doc_type: apiPageType
-ms.openlocfilehash: b7fbc28d9d9f819b3c1308c8a25e6f622c60cbe6
-ms.sourcegitcommit: 77d2ab5018371f153d47cc1cd25f9dcbaca28a95
+ms.openlocfilehash: 1e5200388b81543f096883584f17f295fe26a3ba
+ms.sourcegitcommit: 0e7927f34b7e55d323acbf281e11560cb40a89ed
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63336281"
+ms.lasthandoff: 03/20/2022
+ms.locfileid: "63672452"
 ---
 # <a name="serviceprincipal-removekey"></a>servicePrincipal: removeKey
 
@@ -27,7 +27,7 @@ Como parte da validação de solicitação para esse método, uma prova de posse
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegado (conta corporativa ou de estudante) | Directory.AccessAsUser.All, Application.ReadWrite.All, Directory.ReadWrite.All   |
+|Delegado (conta corporativa ou de estudante) | Application.ReadWrite.All, Directory.ReadWrite.All   |
 |Delegado (conta pessoal da Microsoft) | Nenhum.    |
 |Aplicativo | Application.ReadWrite.OwnedBy, Application.ReadWrite.All, Directory.ReadWrite.All |
 
@@ -53,7 +53,7 @@ No corpo da solicitação, forneça as seguintes propriedades necessárias.
 | Propriedade  | Tipo | Descrição|
 |:----------|:-----|:-----------|
 | keyId     | Guid | O identificador exclusivo da senha.|
-| proof | Cadeia de caracteres | Um token JWT auto-assinado usado como prova de posse das chaves existentes. Esse token JWT deve ser assinado usando a chave privada de um dos certificados válidos existentes do servicePrincipal. O token deve conter os seguintes argumentos:<ul><li>`aud` – A audiência deve ser `00000002-0000-0000-c000-000000000000`.</li><li>`iss` - O emissor precisa ser __a id__  do servicePrincipal que está fazendo a chamada.</li><li>`nbf` – Não antes da hora.</li><li>`exp` – O tempo de expiração deve ser "nbf" + 10 min.</li></ul><br>Aqui está um exemplo [de código](/graph/application-rollkey-prooftoken) que pode ser usado para gerar essa prova de token de posse.|
+| proof | String | Um token JWT auto-assinado usado como prova de posse das chaves existentes. Esse token JWT deve ser assinado usando a chave privada de um dos certificados válidos existentes do servicePrincipal. O token deve conter os seguintes argumentos:<ul><li>`aud` – A audiência deve ser `00000002-0000-0000-c000-000000000000`.</li><li>`iss` - O emissor precisa ser __a id__  do servicePrincipal que está fazendo a chamada.</li><li>`nbf` – Não antes da hora.</li><li>`exp` – O tempo de expiração deve ser "nbf" + 10 min.</li></ul><br>Aqui está um exemplo [de código](/graph/application-rollkey-prooftoken) que pode ser usado para gerar essa prova de token de posse.|
 
 ## <a name="response"></a>Resposta
 

@@ -1,16 +1,16 @@
 ---
 title: Excluir groupLifecyclePolicy
-description: Exclui um objeto groupLifecyclePolicy.
+description: Excluir um groupLifecyclePolicy.
 author: Jordanndahl
 ms.localizationpriority: medium
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: b60dc737115ee3d265b82c18ee265ed8b8c87b61
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: d4611478fbf90e91367a3762267fe62110ed7016
+ms.sourcegitcommit: 43a7c971a97ce1e4c55cbae089820bfce7dfe42b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62133521"
+ms.lasthandoff: 03/29/2022
+ms.locfileid: "64509578"
 ---
 # <a name="delete-grouplifecyclepolicy"></a>Excluir groupLifecyclePolicy
 
@@ -18,23 +18,22 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Exclui um objeto [groupLifecyclePolicy](../resources/grouplifecyclepolicy.md).
+Excluir um [groupLifecyclePolicy](../resources/grouplifecyclepolicy.md).
 
-## <a name="permissions"></a>Permissões
+## <a name="permissions"></a>Permissions
 
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
 |:--------------------|:---------------------------------------------------------|
 |Delegado (conta corporativa ou de estudante) | Directory.ReadWrite.All    |
-|Delegado (conta pessoal da Microsoft) | Sem suporte |
+|Delegado (conta pessoal da Microsoft) | Sem suporte. |
 |Aplicativo | Directory.ReadWrite.All |
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- { "blockType": "ignored" } -->
 ```http
 DELETE /groupLifecyclePolicies/{id}
-
 ```
 
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
@@ -54,8 +53,9 @@ Se bem-sucedido, este método retorna um código de resposta `204 No Content`. N
 
 ## <a name="example"></a>Exemplo
 
-##### <a name="request"></a>Solicitação
+### <a name="request"></a>Solicitação
 
+Veja a seguir um exemplo de uma solicitação.
 
 # <a name="http"></a>[HTTP](#tab/http)
 <!-- {
@@ -91,7 +91,9 @@ DELETE https://graph.microsoft.com/beta/groupLifecyclePolicies/{id}
 
 ---
 
-##### <a name="response"></a>Resposta
+### <a name="response"></a>Resposta
+
+Este é um exemplo de resposta.
 
 <!-- {
   "blockType": "response",

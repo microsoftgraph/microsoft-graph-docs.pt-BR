@@ -1,15 +1,15 @@
 ---
 title: Configuração de dispositivo Microsoft Intune - API do Microsoft Gaaph
-description: Lista a API Graph microsoft para pontos de extremidade do Intune (REST) que definem configurar dispositivos para uma organização de locatários.
+description: Lista o Microsoft API do Graph para Intune pontos de extremidade (REST) que definem configurar dispositivos para uma organização de locatários.
 author: dougeby
 ms.localizationpriority: medium
 ms.prod: intune
-ms.openlocfilehash: 574998aa66144f8b3a6a90c92f69e016891268aa
-ms.sourcegitcommit: efa06c63cd3154bcc7ecc993011f314c2dea9a92
+ms.openlocfilehash: 15533e2fc60f32dc924b6557e8039b8e7851213d
+ms.sourcegitcommit: 0076eb6abb89be3dca3575631924a74a5202be30
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63368214"
+ms.lasthandoff: 04/03/2022
+ms.locfileid: "64629418"
 ---
 # <a name="device-configuration-in-microsoft-intune"></a>Configuração de dispositivo no Microsoft Intune
 
@@ -124,8 +124,12 @@ Os seguintes recursos do Graph estão disponíveis para gerenciar configuraçõe
 - [Base de perfil de certificado do proprietário do dispositivo Aosp](intune-deviceconfig-aospdeviceownercertificateprofilebase.md)
 - [Política de conformidade do proprietário do dispositivo Aosp](intune-deviceconfig-aospdeviceownercompliancepolicy.md)
 - [Configuração do dispositivo proprietário do dispositivo Aosp](intune-deviceconfig-aospdeviceownerdeviceconfiguration.md)
+- [Configuração corporativa do Wi-Fi proprietário do dispositivo Aosp](intune-deviceconfig-aospdeviceownerenterprisewificonfiguration.md)
 - [Perfil de certificado PKCS do proprietário do dispositivo Aosp](intune-deviceconfig-aospdeviceownerpkcscertificateprofile.md)
+- [Perfil de certificado SCEP do proprietário do dispositivo Aosp](intune-deviceconfig-aospdeviceownerscepcertificateprofile.md)
 - [Certificado raiz confiável do proprietário do dispositivo Aosp](intune-deviceconfig-aospdeviceownertrustedrootcertificate.md)
+- [Proprietário do dispositivo Aosp Wi-Fi configuração](intune-deviceconfig-aospdeviceownerwificonfiguration.md)
+- [O proprietário do dispositivo Aosp Wi-Fi tipo de segurança](intune-deviceconfig-aospdeviceownerwifisecuritytype.md)
 - [Tipo de controle de instalação de aplicativo](intune-deviceconfig-appinstallcontroltype.md)
 - [Item da lista do aplicativo](intune-deviceconfig-applistitem.md)
 - [Tipo de lista do aplicativo](intune-deviceconfig-applisttype.md)
@@ -379,6 +383,7 @@ Os seguintes recursos do Graph estão disponíveis para gerenciar configuraçõe
 - [Par chave/valor](intune-deviceconfig-keyvaluepair.md)
 - [Par chave/valor](intune-deviceconfig-keyvaluepair.md)
 - [Complexidade de PIN de tela inicial gerenciada do modo quiosque](intune-deviceconfig-kioskmodemanagedhomescreenpincomplexity.md)
+- [Tipo de modo quiosque](intune-deviceconfig-kioskmodetype.md)
 - [Nível de autenticação do LAN Manager](intune-deviceconfig-lanmanagerauthenticationlevel.md)
 - [Tipo de comportamento da solicitação de elevação do administrador de opções de segurança local](intune-deviceconfig-localsecurityoptionsadministratorelevationpromptbehaviortype.md)
 - [Formato das opções de segurança local e remoção do tipo de usuário permitido para mídias removíveis](intune-deviceconfig-localsecurityoptionsformatandejectofremovablemediaallowedusertype.md)
@@ -657,4 +662,7 @@ Os seguintes recursos do Graph estão disponíveis para gerenciar configuraçõe
 - [Tipo de conexão de VPN do Windows](intune-deviceconfig-windowsvpnconnectiontype.md)
 - [Configuração de Wi-Fi do Windows](intune-deviceconfig-windowswificonfiguration.md)
 - [Configuração de EAP corporativa de Wi-Fi do Windows](intune-deviceconfig-windowswifienterpriseeapconfiguration.md)
+- [Windows de rede com fio](intune-deviceconfig-windowswirednetworkconfiguration.md)
+- [Método de autenticação de rede com fio](intune-deviceconfig-wirednetworkauthenticationmethod.md)
+- [Tipo de autenticação de rede com fio](intune-deviceconfig-wirednetworkauthenticationtype.md)
 - [Interface de rede com fio](intune-deviceconfig-wirednetworkinterface.md)

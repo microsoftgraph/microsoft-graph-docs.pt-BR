@@ -5,12 +5,12 @@ author: braedenp-msft
 ms.localizationpriority: high
 ms.prod: cloud-printing
 ms.custom: scenarios:getting-started
-ms.openlocfilehash: d6fba6ddbf3611bd2c8b14dfdfcd91de67e2077f
-ms.sourcegitcommit: 71186ad44d8d0df15e10b0f89df68d2ef0cf9d14
+ms.openlocfilehash: 0fab7fd9b7bc1902b2a643d8cb825301c846a8ff
+ms.sourcegitcommit: 0076eb6abb89be3dca3575631924a74a5202be30
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/12/2022
-ms.locfileid: "61805236"
+ms.lasthandoff: 04/03/2022
+ms.locfileid: "64629713"
 ---
 # <a name="universal-print-cloud-printing-api-overview"></a>Visão geral da API de impressão em nuvem da Impressão Universal
 
@@ -44,10 +44,10 @@ Siga estas etapas para enviar trabalhos de impressão para o printerShare:
 * **Fique de olho no estado, configurações e disponibilidade da impressora**, usando a [Lista de impressoras](/graph/api/print-list-printers) e o [printerStatus](/graph/api/resources/printerstatus).
 
 * **Veja quem está usando as impressoras e o quanto elas estão imprimindo** usando as APIs de relatórios:
-  * [Listar dailyPrintUsageSummariesByUser](/graph/api/reportroot-list-dailyprintusagesummariesbyuser)
-  * [Listar monthlyPrintUsageSummariesByUser](/graph/api/reportroot-list-monthlyprintusagesummariesbyuser)
-  * [Listar dailyPrintUsageSummariesByPrinter](/graph/api/reportroot-list-dailyprintusagesummariesbyprinter)
-  * [Listar monthlyPrintUsageSummariesByPrinter](/graph/api/reportroot-list-monthlyprintusagesummariesbyprinter)
+  * [Listar dailyPrintUsageByUser](/graph/api/reportroot-list-dailyprintusagebyuser)
+  * [Listar monthlyPrintUsageByUser](/graph/api/reportroot-list-monthlyprintusagebyuser)
+  * [Listar dailyPrintUsageByPrinter](/graph/api/reportroot-list-dailyprintusagebyprinter)
+  * [Listar monthlyPrintUsageByPrinter](/graph/api/reportroot-list-monthlyprintusagebyprinter)
 
 * **Configurar permissões de usuário** modificando a associação de usuários e grupos das impressoras:
   * [Listar allowedUsers](/graph/api/printershare-list-allowedusers)
@@ -79,7 +79,7 @@ Siga estes passos para habilitar a impressão segura:
 
 3. [Atualize os atributos de sua impressora virtual](/graph/api/printer-update) usando as permissões do aplicativo e um `application/ipp` tipo de mídia (veja exemplos).
 
-4. [Crie um acionador de tarefas para sua impressora virtual](/graph/api/printer-post-tasktriggers) usando um token de autenticação de administrador que irá associar a definição da sua tarefa com a impressora virtual.
+4. [Crie um acionador de tarefas para sua impressora virtual](/graph/api/printer-post-tasktriggers) usando um token de autenticação de administrador que irá associar a definição da sua tarefa com a impressora virtual. O appId usado para gerar o token de acesso deve ser o mesmo appId que foi usado para criar a definição de tarefa.
 
 5. Quando um trabalho de impressão é enviado para a impressora virtual, ele será pausado devido ao [ Acionador de Tarefas de impressão](/graph/api/resources/printtasktrigger). Uma [Tarefa de impressão](/graph/api/resources/printtask) com `processing`estado será criada com base na [Definição da Tarefa de impressão associada](/graph/api/resources/printtaskdefinition).
 

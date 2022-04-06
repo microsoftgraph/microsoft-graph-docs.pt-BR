@@ -5,22 +5,22 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 456928b16a18ff3bedb4d743bd39e95e07e30c43
-ms.sourcegitcommit: 65f4e128f96783c18d607a6dcffbc914291285d4
+ms.openlocfilehash: d687fabbba373c4199a5845e2128e2bf988a4b36
+ms.sourcegitcommit: 0076eb6abb89be3dca3575631924a74a5202be30
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/08/2021
-ms.locfileid: "61346350"
+ms.lasthandoff: 04/03/2022
+ms.locfileid: "64630727"
 ---
 # <a name="create-windowsdriverupdateprofile"></a>Criar windowsDriverUpdateProfile
 
 Namespace: microsoft.graph
 
-> **Importante:** As GRAPH da Microsoft na versão /beta estão sujeitas a alterações; o uso de produção não é suportado.
+> **Importante:** As APIs Graph Microsoft na versão /beta estão sujeitas a alterações; o uso de produção não é suportado.
 
 > **Observação:** A API do Microsoft Graph para Intune requer uma [licença ativa do Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
 
-Crie um novo [objeto windowsDriverUpdateProfile.](../resources/intune-softwareupdate-windowsdriverupdateprofile.md)
+Crie um novo [objeto windowsDriverUpdateProfile](../resources/intune-softwareupdate-windowsdriverupdateprofile.md) .
 
 ## <a name="prerequisites"></a>Pré-requisitos
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
@@ -28,7 +28,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |Tipo de permissão|Permissões (da com menos para a com mais privilégios)|
 |:---|:---|
 |Delegado (conta corporativa ou de estudante)|DeviceManagementConfiguration.ReadWrite.All|
-|Delegado (conta pessoal da Microsoft)|Sem suporte.|
+|Delegada (conta pessoal da Microsoft)|Sem suporte.|
 |Aplicativo|DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
@@ -53,7 +53,7 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar o window
 
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|id|String|A ID da política do Intune.|
+|id|String|A Intune de política.|
 |displayName|String|O nome de exibição do perfil.|
 |descrição|String|A descrição do perfil especificado pelo usuário.|
 |approvalType|[driverUpdateProfileApprovalType](../resources/intune-softwareupdate-driverupdateprofileapprovaltype.md)|Tipo de aprovação de perfil de atualização de driver. Por exemplo, aprovação manual ou automática. Os valores possíveis são: `manual` e `automatic`.|
@@ -62,12 +62,13 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar o window
 |deploymentDeferralInDays|Int32|Configurações de adiamento de implantação em dias, aplicável somente quando ApprovalType é definido como aprovação automática.|
 |createdDateTime|DateTimeOffset|A data em que o perfil foi criado.|
 |lastModifiedDateTime|DateTimeOffset|A data em que o perfil foi modificado pela última vez.|
-|roleScopeTagIds|Coleção de cadeias de caracteres|Lista de Marcas de Escopo para essa entidade de Atualização de Driver.|
+|roleScopeTagIds|Conjunto de cadeias de caracteres|Lista de Marcas de Escopo para essa entidade de Atualização de Driver.|
+|inventorySyncStatus|[windowsDriverUpdateProfileInventorySyncStatus](../resources/intune-softwareupdate-windowsdriverupdateprofileinventorysyncstatus.md)|Status de sincronização de inventário de driver para este perfil.|
 
 
 
 ## <a name="response"></a>Resposta
-Se tiver êxito, este método retornará um código de resposta e um `201 Created` [objeto windowsDriverUpdateProfile](../resources/intune-softwareupdate-windowsdriverupdateprofile.md) no corpo da resposta.
+Se tiver êxito, este método retornará um `201 Created` código de resposta e um [objeto windowsDriverUpdateProfile](../resources/intune-softwareupdate-windowsdriverupdateprofile.md) no corpo da resposta.
 
 ## <a name="example"></a>Exemplo
 
@@ -76,7 +77,7 @@ Este é um exemplo da solicitação.
 ``` http
 POST https://graph.microsoft.com/beta/deviceManagement/windowsDriverUpdateProfiles
 Content-type: application/json
-Content-length: 322
+Content-length: 555
 
 {
   "@odata.type": "#microsoft.graph.windowsDriverUpdateProfile",
@@ -88,7 +89,12 @@ Content-length: 322
   "deploymentDeferralInDays": 8,
   "roleScopeTagIds": [
     "Role Scope Tag Ids value"
-  ]
+  ],
+  "inventorySyncStatus": {
+    "@odata.type": "microsoft.graph.windowsDriverUpdateProfileInventorySyncStatus",
+    "lastSuccessfulSyncDateTime": "2017-01-01T00:03:28.120883-08:00",
+    "driverInventorySyncState": "success"
+  }
 }
 ```
 
@@ -97,7 +103,7 @@ Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado a
 ``` http
 HTTP/1.1 201 Created
 Content-Type: application/json
-Content-Length: 494
+Content-Length: 727
 
 {
   "@odata.type": "#microsoft.graph.windowsDriverUpdateProfile",
@@ -112,7 +118,12 @@ Content-Length: 494
   "lastModifiedDateTime": "2017-01-01T00:00:35.1329464-08:00",
   "roleScopeTagIds": [
     "Role Scope Tag Ids value"
-  ]
+  ],
+  "inventorySyncStatus": {
+    "@odata.type": "microsoft.graph.windowsDriverUpdateProfileInventorySyncStatus",
+    "lastSuccessfulSyncDateTime": "2017-01-01T00:03:28.120883-08:00",
+    "driverInventorySyncState": "success"
+  }
 }
 ```
 

@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 doc_type: apiPageType
 ms.prod: applications
 author: psignoret
-ms.openlocfilehash: 1ba67578e8ab3452fa99b2987d4577c3be5dcd57
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: 9c6fb15e77e7ae8045e450ca8559121dcd91f68e
+ms.sourcegitcommit: 43a7c971a97ce1e4c55cbae089820bfce7dfe42b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62128543"
+ms.lasthandoff: 03/29/2022
+ms.locfileid: "64509830"
 ---
 # <a name="create-delegatedpermissionclassification"></a>Criar delegatedPermissionClassification
 
@@ -18,15 +18,15 @@ Namespace: microsoft.graph
 
 Classifique uma permissão delegada adicionando [uma delegatedPermissionClassification](../resources/delegatedpermissionclassification.md) ao [servicePrincipal](../resources/servicePrincipal.md) que representa a API.
 
-## <a name="permissions"></a>Permissões
+## <a name="permissions"></a>Permissions
 
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegado (conta corporativa ou de estudante) | PermissionGrantPolicy.ReadWrite.All |
+|Delegado (conta corporativa ou de estudante) | Policy.ReadWrite.PermissionGrant |
 |Delegado (conta pessoal da Microsoft) | Sem suporte.    |
-|Aplicativo | PermissionGrantPolicy.ReadWrite.All |
+|Aplicativo | Policy.ReadWrite.PermissionGrant |
 
 ## <a name="http-request"></a>Solicitação HTTP
 
@@ -44,11 +44,11 @@ POST /servicePrincipals/{id}/delegatedPermissionClassifications
 
 ## <a name="request-body"></a>Corpo da solicitação
 
-No corpo da solicitação, fornece uma representação JSON de um [objeto delegatedPermissionClassification.](../resources/delegatedpermissionclassification.md)
+No corpo da solicitação, fornece uma representação JSON de um [objeto delegatedPermissionClassification](../resources/delegatedpermissionclassification.md) .
 
 ## <a name="response"></a>Resposta
 
-Se tiver êxito, este método retornará um código de resposta e um `201 Created` [objeto delegatedPermissionClassification](../resources/delegatedpermissionclassification.md) no corpo da resposta.
+Se tiver êxito, este método retornará um `201 Created` código de resposta e um [objeto delegatedPermissionClassification](../resources/delegatedpermissionclassification.md) no corpo da resposta.
 
 ## <a name="examples"></a>Exemplos
 

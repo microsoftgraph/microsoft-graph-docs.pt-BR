@@ -5,28 +5,28 @@ ms.localizationpriority: medium
 author: dkershaw10
 ms.prod: extensions
 doc_type: apiPageType
-ms.openlocfilehash: 5d7bda5c61400bc0cdb9d0c2cd9678ccffc97f98
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: c7ce32659933eaf2ed64148eae0e6db0dcc3739c
+ms.sourcegitcommit: 0e7927f34b7e55d323acbf281e11560cb40a89ed
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62110868"
+ms.lasthandoff: 03/20/2022
+ms.locfileid: "63672249"
 ---
 # <a name="update-schemaextension"></a>Update schemaExtension
 
 Namespace: microsoft.graph
 
-Atualizar propriedades na definição do [esquemaExtension especificado.](../resources/schemaextension.md) 
+Atualizar propriedades na definição do [esquemaExtension especificado](../resources/schemaextension.md). 
 
 Isso significa que propriedades personalizadas ou tipos de recurso de destino não podem ser removidos da definição, mas novas propriedades personalizadas podem ser adicionadas e a descrição da extensão alterada.
 
-Atualizações aditivas para a extensão só podem ser feitas quando a extensão estiver no status **InDevelopment** ou **Disponível.** 
+Atualizações aditivas para a extensão só podem ser feitas quando a extensão estiver no status **InDevelopment** ou **Disponível** . 
 
-A atualização se aplica a todos os recursos incluídos na **propriedade targetTypes** da extensão. Esses recursos estão entre os [tipos de recursos de suporte.](/graph/extensibility-overview#supported-resources)
+A atualização se aplica a todos os recursos incluídos na **propriedade targetTypes** da extensão. Esses recursos estão entre os [tipos de recursos de suporte](/graph/extensibility-overview#supported-resources).
 
-Para fluxos delegados, o usuário inscreveu pode atualizar  uma extensão de esquema desde que a propriedade proprietária da extensão seja definida como **appId** de um aplicativo que o usuário de entrada possui. Esse aplicativo pode ser aquele que inicialmente criou a extensão ou algum outro aplicativo pertencente ao usuário in-locar. 
+Para fluxos delegados, o usuário inscreveu pode atualizar uma extensão de esquema desde que a propriedade  proprietária da extensão seja definida como **appId** de um aplicativo que o usuário de entrada possui. Esse aplicativo pode ser aquele que inicialmente criou a extensão ou algum outro aplicativo pertencente ao usuário in-locar. 
 
-Esse critério para a propriedade **owner** permite que um usuário in-loco faça atualizações por meio de outros aplicativos que eles não têm, como o Microsoft Graph Explorer. Ao usar Graph Explorer para atualizar um recurso **schemaExtension,** inclua a propriedade **owner** no corpo da solicitação PATCH. Para obter mais informações, consulte a seção [Extensões](/graph/known-issues#extensions) em [Problemas conhecidos com a Microsoft Graph](/graph/known-issues).
+Esse critério para a propriedade **owner** permite que um usuário in-loco faça atualizações por meio de outros aplicativos que eles não têm, como o Microsoft Graph Explorer. Ao usar Graph Explorer para atualizar um recurso **schemaExtension**, inclua a propriedade **owner** no corpo da solicitação PATCH. Para obter mais informações, consulte a seção [Extensões](/graph/known-issues#extensions) em [Problemas conhecidos com o Microsoft Graph](/graph/known-issues).
 
 ## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
@@ -34,8 +34,8 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegada (conta corporativa ou de estudante) | Application.ReadWrite.All, Directory.AccessAsUser.All    |
-|Delegada (conta pessoal da Microsoft) | Sem suporte.    |
+|Delegado (conta corporativa ou de estudante) | Application.ReadWrite.All    |
+|Delegado (conta pessoal da Microsoft) | Sem suporte.    |
 |Aplicativo | Sem suporte. |
 
 ## <a name="http-request"></a>Solicitação HTTP
@@ -60,12 +60,12 @@ No corpo da solicitação, forneça os valores para os campos relevantes que dev
 |:---------------|:--------|:----------|
 |description|String|Descrição da extensão de esquema.|
 |properties|Coleção [extensionSchemaProperty](../resources/extensionschemaproperty.md)|A coleção de tipos e nomes de propriedades que compõem a definição da extensão de esquema. Somente alterações aditiva são permitidas. |
-|status|Cadeia de caracteres|O estado do ciclo de vida da extensão do esquema. O estado inicial após a criação **é InDevelopment**. As transições de estados possíveis **são de InDevelopment** **para Disponível** e **Disponível** **para Preterido**.|
+|status|String|O estado do ciclo de vida da extensão do esquema. O estado inicial após a criação **é InDevelopment**. As transições de estados possíveis **são de InDevelopment** **para Disponível** e Disponíveis **para Preterido**.|
 |targetTypes|Coleção de cadeias de caracteres|Conjunto de tipos Graph microsoft (que podem dar suporte a extensões) aos quais a extensão de esquema pode ser aplicada.  Somente alterações aditiva são permitidas.|
 
 ## <a name="response"></a>Resposta
 
-Se tiver êxito, este método retornará um código de resposta `204 No Content`. Tentar executar essa solicitação de um aplicativo que você não possui (e sem definir a propriedade **owner** como **appId** de um aplicativo que você possui) retorna um código `403 Forbidden` de resposta.
+Se bem-sucedido, este método retorna um código de resposta `204 No Content`. Tentar executar essa solicitação de um aplicativo que você não possui (e sem definir a **propriedade owner como** **appId** de um aplicativo que você possui) retorna um `403 Forbidden` código de resposta.
 
 ## <a name="example"></a>Exemplo
 

@@ -1,16 +1,16 @@
 ---
 title: Remover membro do canal
-description: Remova um membro de um canal.
+description: Remover um membro de um canal.
 author: akjo
 doc_type: apiPageType
 ms.localizationpriority: medium
 ms.prod: microsoft-teams
-ms.openlocfilehash: 3957e2b26e05dec8a95d230678c29528240dd932
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: 6bfce0fee2dd2d1f00f4b5a8aead51d716cde253
+ms.sourcegitcommit: c21fefa5c3c62df14147e7918cb43327f7d72e69
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62126093"
+ms.lasthandoff: 04/06/2022
+ms.locfileid: "64684883"
 ---
 # <a name="remove-member-from-channel"></a>Remover membro do canal
 
@@ -18,8 +18,7 @@ Namespace: microsoft.graph
  
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Excluir uma [conversaMember](../resources/conversationmember.md) de um [canal](../resources/channel.md). Essa operação só é permitida para canais com **um valor membershipType** de `private` .
-
+[Exclua um conversationMember](../resources/conversationmember.md) de um [canal](../resources/channel.md). Esta operação só é permitida para canais com um **valor membershipType** de `private` ou `shared`.
 
 ## <a name="permissions"></a>Permissões
 

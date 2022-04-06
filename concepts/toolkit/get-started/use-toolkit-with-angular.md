@@ -1,14 +1,14 @@
 ---
 title: Use o microsoft Graph Toolkit com Angular
-description: Começar a usar o microsoft Graph Toolkit em um Angular aplicativo.
+description: Introdução usando o microsoft Graph Toolkit em um Angular aplicativo.
 ms.localizationpriority: medium
-author: elisenyang
-ms.openlocfilehash: da50a18176a5945c3b90b136766149ff83951692
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+author: sebastienlevert
+ms.openlocfilehash: 9131fa4a1e161c93983fea3d615ebd1fc78bf0b7
+ms.sourcegitcommit: cc9e5b3630cb84c48bbbb2d84a963b9562d1fb78
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59032080"
+ms.lasthandoff: 03/31/2022
+ms.locfileid: "64588754"
 ---
 # <a name="use-the-microsoft-graph-toolkit-with-angular"></a>Use o microsoft Graph Toolkit com Angular
 
@@ -16,7 +16,7 @@ Os Graph Toolkit da Microsoft funcionam muito bem com estruturas da Web, como An
 
 ## <a name="add-the-microsoft-graph-toolkit"></a>Adicionar o microsoft Graph Toolkit
 
-Primeiro, você precisa habilitar elementos personalizados em seu aplicativo Angular adicionando o `CUSTOM_ELEMENT_SCHEMA` ao `@NgModule() decorator` em `app.module.ts` . O exemplo a seguir mostra como fazer isso:
+Primeiro, você precisa habilitar elementos personalizados em seu aplicativo Angular adicionando `CUSTOM_ELEMENT_SCHEMA` o ao `@NgModule() decorator` em `app.module.ts`. O exemplo a seguir mostra como fazer isso:
 ```TypeScript
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule, CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
@@ -42,7 +42,7 @@ Os provedores do Kit de ferramentas do Microsoft Graph permitem autenticação e
 
 O exemplo a seguir mostra como adicionar o [Provedor MSAL2](../providers/msal2.md), mas você pode seguir o mesmo modelo com qualquer um dos provedores.
 >[!NOTE] 
->Se você estiver usando o Provedor MSAL no momento e quiser atualizar para o Provedor MSAL2, siga as etapas no artigo provedor [MSAL2.](../providers/msal2.md#migrating-from-msal-provider-to-msal2-provider)
+>Se você estiver usando o Provedor MSAL no momento e quiser atualizar para o Provedor MSAL2, siga as etapas no artigo provedor [MSAL2](../providers/msal2.md#migrating-from-msal-provider-to-msal2-provider) .
 
 Import the provider and set it to initialize when the application initializes. Substitua `<YOUR-CLIENT-ID>` pela ID do cliente para seu aplicativo.
 
@@ -91,9 +91,9 @@ Todos os Graph Toolkit microsoft [suportam modelos personalizados](../customize-
 
 No Angular, no entanto, chaves duplas são usadas para vinculação de dados e o compilador Angular lançará um erro se você tentar usar a sintaxe de chave dupla.
 
-Você pode evitar esses erros alterando os caracteres padrão usados pelo Toolkit para algo diferente de chaves duplas usando `TemplateHelper` o . É melhor fazer isso em seu componente de aplicativo de nível superior para que ele se aplique globalmente.
+Você pode evitar esses erros alterando os caracteres padrão usados pela Toolkit para algo diferente de chaves duplas usando o `TemplateHelper`. É melhor fazer isso em seu componente de aplicativo de nível superior para que ele se aplique globalmente.
 
-Importe e `TemplateHelper` use o método para definir sua sintaxe de associação `.setBindingSyntax()` personalizada.
+Importe e `TemplateHelper` use o método `.setBindingSyntax()` para definir sua sintaxe de associação personalizada.
 
 ```TypeScript
 import { Component, OnInit } from '@angular/core';

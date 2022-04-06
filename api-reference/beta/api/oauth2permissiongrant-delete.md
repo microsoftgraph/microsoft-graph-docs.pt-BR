@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 doc_type: apiPageType
 ms.prod: identity-and-sign-in
 author: psignoret
-ms.openlocfilehash: a3a92a817e82be4f513758f887b35ea1d29802e7
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: 6f2d7d0a0f0efdcd0c5fadf2dc1f49a53db82e7a
+ms.sourcegitcommit: 0e7927f34b7e55d323acbf281e11560cb40a89ed
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62130959"
+ms.lasthandoff: 03/20/2022
+ms.locfileid: "63669547"
 ---
 # <a name="delete-oauth2permissiongrant-a-delegated-permission-grant"></a>Excluir oAuth2PermissionGrant (uma concessão de permissão delegada)
 
@@ -20,10 +20,10 @@ Namespace: microsoft.graph
 
 [Exclua um oAuth2PermissionGrant](../resources/oauth2permissiongrant.md), representando uma concessão de permissão delegada.
 
-Quando uma concessão de permissão delegada é excluída, o acesso concedido é revogado. Tokens de acesso existentes continuarão a ser válidos para sua vida útil, mas novos tokens de acesso não serão concedidos para as permissões delegadas identificadas no **oAuth2PermissionGrant** excluído .
+Quando uma concessão de permissão delegada é excluída, o acesso concedido é revogado. Tokens de acesso existentes continuarão a ser válidos para sua vida útil, mas novos tokens de acesso não serão concedidos para as permissões delegadas identificadas no **oAuth2PermissionGrant** excluído.
 
 > [!NOTE]
-> Pode haver duas concessões de permissão delegadas autorizando um aplicativo a agir em nome de um usuário ao chamar uma API. Isso pode acontecer quando um usuário consente para o aplicativo em seu próprio nome (criando um **oAuth2PermissionGrant** com **consentType** *Principal*, identificando o usuário) e, em seguida, um administrador concede consentimento de administrador em todo o locatário em nome de todos os usuários (criando um segundo **oAuth2PermissionGrant** com **consentType** de *AllPrincipals*).
+> Pode haver duas concessões de permissão delegadas autorizando um aplicativo a agir em nome de um usuário ao chamar uma API. Isso pode acontecer quando um usuário consente o aplicativo em seu próprio nome (criando um **oAuth2PermissionGrant** com **consentType** *Principal*, identificando o usuário) e, em seguida, um administrador concede o consentimento de administrador em todo o locatário em nome de todos os usuários (criando um segundo **oAuth2PermissionGrant** com **consentType** de *AllPrincipals*).
 
 ## <a name="permissions"></a>Permissões
 
@@ -31,7 +31,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegado (conta corporativa ou de estudante) | DelegatedPermissionGrant.ReadWrite.All, Directory.ReadWrite.All, Directory.AccessAsUser.All    |
+|Delegado (conta corporativa ou de estudante) | DelegatedPermissionGrant.ReadWrite.All, Directory.ReadWrite.All    |
 |Delegado (conta pessoal da Microsoft) | Sem suporte.    |
 |Aplicativo | Directory.ReadWrite.All |
 
@@ -69,7 +69,7 @@ Este é um exemplo da solicitação.
   "name": "delete_oAuth2PermissionGrant"
 }-->
 ```http
-DELETE https://graph.microsoft.com/beta/oauth2PermissionGrants/{id}
+DELETE https://graph.microsoft.com/beta/oauth2PermissionGrants/l5eW7x0ga0-WDOntXzHateQDNpSH5-lPk9HjD3Sarjk
 ```
 
 # <a name="c"></a>[C#](#tab/csharp)

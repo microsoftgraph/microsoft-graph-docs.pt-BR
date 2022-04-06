@@ -4,12 +4,12 @@ description: O Microsoft Graph fornece parâmetros de consulta opcionais que voc
 author: mumbi-o
 ms.localizationpriority: high
 ms.custom: graphiamtop20, scenarios:getting-started
-ms.openlocfilehash: d431299c1bb674236ac2e54e9324a438853a3157
-ms.sourcegitcommit: 709d2e3069765c2e570ac1128847c165ab233aa8
+ms.openlocfilehash: fc9f732c3cb5269866f9dafc24043b0b06c65fcb
+ms.sourcegitcommit: 0076eb6abb89be3dca3575631924a74a5202be30
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/24/2022
-ms.locfileid: "62183937"
+ms.lasthandoff: 04/03/2022
+ms.locfileid: "64629411"
 ---
 # <a name="use-query-parameters-to-customize-responses"></a>Usar parâmetros de consulta para personalizar respostas
 
@@ -160,6 +160,8 @@ O suporte para operadores `$filter` varia entre as APIs do Microsoft Graph. Os s
 
 OData define os operadores `any` e `all` para avaliar correspondências em propriedades com valores múltiplos, ou seja, uma coleção de valores primitivos, como tipos de cadeia de caracteres ou coleção de entidades.
 
+#### <a name="any-operator"></a>Operador  `any`
+
 O operador `any` aplica iterativamente uma expressão booleana a cada membro de uma coleção e retorna `true` se a expressão for `true` para *qualquer membro* da coleção, caso contrário, retorna `false`. A seguir está a sintaxe do operador `any`:
 
 ```http
@@ -191,6 +193,8 @@ Para negar o resultado da expressão dentro da cláusula `any`, use o operador `
 GET https://graph.microsoft.com/v1.0/users?$filter=NOT(imAddresses/any(s:s eq 'admin@contoso.com'))&$count=true
 ConsistencyLevel: eventual
 ```
+
+#### <a name="all-operator"></a>Operador  `all`
 
 O operador `all` aplica uma Expressão booleana a cada membro de uma coleção e retorna `true` se a expressão for `true` para *todos os membros* da coleção, caso contrário, retorna `false`. Não é suportado por nenhuma propriedade.
 

@@ -1,16 +1,16 @@
 ---
 title: 'call: reject'
 description: Habilitar um bot para rejeitar uma chamada de entrada.
-author: ananmishr
+author: mkhribech
 ms.localizationpriority: medium
 ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: a06be383c4b0b2056c52da17d9b6990a6b401b45
-ms.sourcegitcommit: 25acfa7d0153336c9a35d30a1dd422aeadc1342c
+ms.openlocfilehash: 2ea1381b9250e2bf89a727be6844da01b8f4ab8b
+ms.sourcegitcommit: 10719607271380ea56076ccff5a3b774d0005773
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/03/2022
-ms.locfileid: "62340311"
+ms.lasthandoff: 04/01/2022
+ms.locfileid: "64607922"
 ---
 # <a name="call-reject"></a>call: reject
 
@@ -24,7 +24,7 @@ Espera-se que o bot atenda ou rejeite a chamada antes do tempo de chamada. O val
 
 Essa API não termina chamadas existentes que já foram atendidas. Use [excluir chamada para](../api/call-delete.md) encerrar uma chamada.
 
-## <a name="permissions"></a>Permissões
+## <a name="permissions"></a>Permissions
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 | Tipo de permissão | Permissões (da com menos para a com mais privilégios)                |
@@ -52,7 +52,7 @@ Forneça um objeto JSON com os seguintes parâmetros no corpo da solicitação.
 
 | Parâmetro      | Tipo    |Descrição|
 |:---------------|:--------|:----------|
-|motivo|String|O motivo da rejeição. Os valores possíveis são `None`e `Busy``Forbidden` |
+|motivo|Cadeia de caracteres|O motivo da rejeição. Os valores possíveis são `None`e `Busy``Forbidden` |
 |callbackUri|String|Isso permite que os bots forneçam um URI de retorno de chamada específico para que a chamada atual receba notificações posteriores. Se essa propriedade não tiver sido definida, o URI de retorno de chamada global do bot será usado em vez disso. Isso deve ser `https`.|
 
 ## <a name="response"></a>Resposta

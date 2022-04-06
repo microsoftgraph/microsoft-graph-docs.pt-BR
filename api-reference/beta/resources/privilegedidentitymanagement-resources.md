@@ -2,15 +2,15 @@
 title: Privileged Identity Management - recursos do Azure
 description: APIs para o Privileged Identity Management do Azure AD para gerenciar recursos do Azure.
 ms.localizationpriority: high
-author: carolinetempleton
+author: japere
 ms.prod: governance
 doc_type: conceptualPageType
-ms.openlocfilehash: 63543f793c780165f8df130c47592c1f1dd93c0c
-ms.sourcegitcommit: c7ff992ef63e480d070421ba99b28ee129cb6acb
+ms.openlocfilehash: 2441f547fdfbe5777d021b58d84cebe6bb5632f8
+ms.sourcegitcommit: 43a7c971a97ce1e4c55cbae089820bfce7dfe42b
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "60695486"
+ms.lasthandoff: 03/29/2022
+ms.locfileid: "64509522"
 ---
 # <a name="privileged-identity-management---azure-resources"></a>Privileged Identity Management - recursos do Azure
 
@@ -18,7 +18,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-[!INCLUDE [pim-v1resourceroles-deprecation](../../includes/pim-v1resourceroles-deprecation.md)]
+[!INCLUDE [pim-v2ResourceRoles-deprecation](../../includes/pim-v2ResourceRoles-deprecation.md)]
 
 Você pode usar o [Privileged Identity Management (PIM) do Azure Active Directory (Azure AD)](/azure/active-directory/privileged-identity-management/pim-configure) para recursos do Azure para configurar o fluxo de trabalho de acesso just-in-time para suas funções de infraestrutura do Azure em um grupo de gerenciamento, assinatura, grupo de recursos e nível de recurso. Isso inclui funções internas, como Proprietário e Colaborador, bem como funções RBAC personalizadas.
 
@@ -31,6 +31,8 @@ Você pode usar o [Privileged Identity Management (PIM) do Azure Active Director
 | Recuperar todas as configurações de função de um recurso ou fazer uma atualização para uma configuração de função | [governanceRoleSetting](governancerolesetting.md) | [Definir configuração de função](/azure/active-directory/privileged-identity-management/pim-resource-roles-configure-role-settings) |
 | Listar e exportar todas as atribuições de função de um recurso. | [governanceRoleAssignment](governanceroleassignment.md) | [Exportar atribuições de função](/azure/active-directory/privileged-identity-management/azure-pim-resource-rbac#export-role-assignments-with-children) |
 | Criar ou remover uma atribuição de função elegível ou ativa, ativar/desativar uma atribuição qualificada, visualizar uma lista de solicitações pendentes, aprovar ou negar uma solicitação pendente ou cancelar sua própria solicitação pendente. | [governanceRoleAssignmentRequest](governanceroleassignmentrequest.md) | [Atribuição de Função](/azure/active-directory/privileged-identity-management/pim-resource-roles-assign-roles)<br/>[Ativação de função](/azure/active-directory/privileged-identity-management/pim-resource-roles-activate-your-roles)<br/>[Aprovar solicitações](/azure/active-directory/privileged-identity-management/azure-ad-pim-approval-workflow) |
+
+[!INCLUDE [pimv2AzureResources-migration](../../includes/pimv2AzureResources-migration.md)]
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->

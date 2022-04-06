@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 doc_type: apiPageType
 ms.prod: applications
 author: sureshja
-ms.openlocfilehash: cd9b04a334862b9d6e03dac84724a66ba58397fe
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: 90d48a82249840b893900c6111f0a8edf5c8ab3a
+ms.sourcegitcommit: 0e7927f34b7e55d323acbf281e11560cb40a89ed
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62121992"
+ms.lasthandoff: 03/20/2022
+ms.locfileid: "63668490"
 ---
 # <a name="delete-approleassignment"></a>Excluir appRoleAssignment
 
@@ -18,7 +18,7 @@ Namespace: microsoft.graph
 
 Exclui um [appRoleAssignment](../resources/approleassignment.md) que uma entidade de serviço recebeu.
 
-Funções de aplicativo atribuídas a entidades de serviço também são conhecidas como [permissões de aplicativo.](/azure/active-directory/develop/v2-permissions-and-consent#permission-types) Excluir uma atribuição de função de aplicativo para uma entidade de serviço equivale a revogar a concessão de permissão somente aplicativo.
+Funções de aplicativo atribuídas a entidades de serviço também são [conhecidas como permissões de aplicativo](/azure/active-directory/develop/v2-permissions-and-consent#permission-types). Excluir uma atribuição de função de aplicativo para uma entidade de serviço equivale a revogar a concessão de permissão somente aplicativo.
 
 ## <a name="permissions"></a>Permissões
 
@@ -26,8 +26,8 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegada (conta corporativa ou de estudante) | AppRoleAssignment.ReadWrite.All, Directory.AccessAsUser.All    |
-|Delegada (conta pessoal da Microsoft) | Sem suporte.    |
+|Delegado (conta corporativa ou de estudante) | AppRoleAssignment.ReadWrite.All    |
+|Delegado (conta pessoal da Microsoft) | Sem suporte.    |
 |Aplicativo | AppRoleAssignment.ReadWrite.All |
 
 ## <a name="http-request"></a>Solicitação HTTP
@@ -39,7 +39,7 @@ DELETE /servicePrincipals/{servicePrincipal-id}/appRoleAssignments/{appRoleAssig
 ```
 
 > [!NOTE]
-> Como prática prática, recomendamos excluir atribuições de função de aplicativo usando o método [Delete appRoleAssignedTo](serviceprincipal-delete-approleassignedto.md) que exclui por meio da relação **appRoleAssignedTo** da entidade de serviço de recursos, em vez deste método. 
+> Como prática prática, recomendamos excluir atribuições de função de aplicativo usando o método [Delete appRoleAssignedTo](serviceprincipal-delete-approleassignedto.md) que exclui por meio da relação **appRoleAssignedTo** da entidade  de serviço de recursos, em vez deste método.
 
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
 

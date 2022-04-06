@@ -1,16 +1,16 @@
 ---
 title: 'servicePrincipal: addKey'
 description: Adicione uma credencial de chave a uma servicePrincipal.
-localization_priority: Normal
+ms.localizationpriority: medium
 author: sureshja
 ms.prod: applications
 doc_type: apiPageType
-ms.openlocfilehash: ef3c1d740b2fe84232d6c6732d5ad15f6f591f6b
-ms.sourcegitcommit: c6f7a931a8d83ac54f577b7bec08237fd17ce51a
+ms.openlocfilehash: 0fbeb8479463fd52c2cbbf041ba24470ae2d7307
+ms.sourcegitcommit: 0e7927f34b7e55d323acbf281e11560cb40a89ed
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/24/2021
-ms.locfileid: "58490634"
+ms.lasthandoff: 03/20/2022
+ms.locfileid: "63671661"
 ---
 # <a name="serviceprincipal-addkey"></a>servicePrincipal: addKey
 
@@ -31,7 +31,7 @@ ServicePrincipals que não têm certificados válidos existentes (ou seja: nenhu
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegado (conta corporativa ou de estudante) | Directory.AccessAsUser.All, Application.ReadWrite.All, Directory.ReadWrite.All   |
+|Delegado (conta corporativa ou de estudante) | Application.ReadWrite.All, Directory.ReadWrite.All   |
 |Delegado (conta pessoal da Microsoft) | Nenhum.    |
 |Aplicativo | Application.ReadWrite.OwnedBy, Application.ReadWrite.All, Directory.ReadWrite.All |
 
@@ -57,13 +57,13 @@ No corpo da solicitação, forneça as seguintes propriedades necessárias.
 
 | Propriedade     | Tipo   |Descrição|
 |:---------------|:--------|:----------|
-| keyCredential | [keyCredential](../resources/keycredential.md) | A nova credencial de chave servicePrincipal a ser acrescentada. O __tipo__, __uso__ __e chave__ são propriedades necessárias para esse uso. Os tipos de chave com suporte são:<br><ul><li>`AsymmetricX509Cert`: O uso deve ser `Verify` .</li><li>`X509CertAndPassword`: O uso deve ser `Sign`</li></ul>|
-| passwordCredential | [passwordCredential](../resources/passwordcredential.md) | Somente __secretText__ é necessário para ser definido que deve conter a senha da chave. Essa propriedade é necessária apenas para chaves do tipo `X509CertAndPassword` . De defini-lo como `null` caso contrário.|
-| proof | Cadeia de caracteres | Um token JWT auto-assinado usado como prova de posse das chaves existentes. Esse token JWT deve ser assinado usando a chave privada de um dos certificados válidos existentes do servicePrincipal. O token deve conter os seguintes argumentos:<ul><li>`aud` – A audiência deve ser `00000002-0000-0000-c000-000000000000`.</li><li>`iss` - O emissor precisa ser __a id__  do servicePrincipal que está fazendo a chamada.</li><li>`nbf` – Não antes da hora.</li><li>`exp` – O tempo de expiração deve ser "nbf" + 10 min.</li></ul><br>Aqui está um exemplo [de código](/graph/application-rollkey-prooftoken) que pode ser usado para gerar essa prova de token de posse.|
+| keyCredential | [keyCredential](../resources/keycredential.md) | A nova credencial de chave servicePrincipal a ser acrescentada. O __tipo__, __o uso__ __e a chave__ são propriedades necessárias para esse uso. Os tipos de chave com suporte são:<br><ul><li>`AsymmetricX509Cert`: O uso deve ser `Verify`.</li><li>`X509CertAndPassword`: O uso deve ser `Sign`</li></ul>|
+| passwordCredential | [passwordCredential](../resources/passwordcredential.md) | Somente __secretText__ é necessário para ser definido que deve conter a senha da chave. Essa propriedade é necessária apenas para chaves do tipo `X509CertAndPassword`. De defini-lo como `null` caso contrário.|
+| proof | String | Um token JWT auto-assinado usado como prova de posse das chaves existentes. Esse token JWT deve ser assinado usando a chave privada de um dos certificados válidos existentes do servicePrincipal. O token deve conter os seguintes argumentos:<ul><li>`aud` – A audiência deve ser `00000002-0000-0000-c000-000000000000`.</li><li>`iss` - O emissor precisa ser __a id__  do servicePrincipal que está fazendo a chamada.</li><li>`nbf` – Não antes da hora.</li><li>`exp` - O tempo de expiração deve ser `nbf` + 10 minutos.</li></ul><br>Para etapas para gerar essa prova de token de posse, consulte [Generating proof of possess tokens for rolling keys](/graph/application-rollkey-prooftoken).|
 
 ## <a name="response"></a>Resposta
 
-Se tiver êxito, este método retornará um código de resposta e um `200 OK` novo [objeto keyCredential](../resources/keycredential.md) no corpo da resposta.
+Se tiver êxito, este método retornará um `200 OK` código de resposta e um novo [objeto keyCredential](../resources/keycredential.md) no corpo da resposta.
 
 ## <a name="examples"></a>Exemplos
 

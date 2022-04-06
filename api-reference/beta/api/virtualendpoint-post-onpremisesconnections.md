@@ -5,12 +5,12 @@ author: AshleyYangSZ
 ms.localizationpriority: medium
 ms.prod: cloud-pc
 doc_type: apiPageType
-ms.openlocfilehash: 2a820d7def58d956d275e17c0e7cf92e771535ef
-ms.sourcegitcommit: e4796212a2e8bbec61b6da8336f776c0305c49df
+ms.openlocfilehash: a1b2968ea12b703e228a55fea6b2c2efbf3e4bdf
+ms.sourcegitcommit: 0e7927f34b7e55d323acbf281e11560cb40a89ed
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/28/2022
-ms.locfileid: "62262068"
+ms.lasthandoff: 03/20/2022
+ms.locfileid: "63670632"
 ---
 # <a name="create-cloudpconpremisesconnection"></a>Criar cloudPcOnPremisesConnection
 
@@ -56,15 +56,15 @@ A tabela a seguir mostra as propriedades necessárias ao criar [o cloudPcOnPremi
 
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|displayName|Cadeia de caracteres|O nome de exibição da conexão local.|
+|displayName|String|O nome de exibição da conexão local.|
 |type|cloudPcOnPremisesConnectionType|Especifica como o Cloud PC provisionado será ingressado no Azure Active Directory. O valor padrão é `hybridAzureADJoin`. Os valores possíveis são: `azureADJoin`, `hybridAzureADJoin`, `unknownFutureValue`.|
 |subscriptionId|String|A ID da assinatura de destino do Azure associada ao seu locatário.|
-|adDomainName|Cadeia de caracteres|O FQDN (nome de domínio totalmente qualificado) do domínio do Active Directory que você deseja ingressar.|
-|adDomainUsername|Cadeia de caracteres|O nome de usuário de uma conta do Active Directory (conta de usuário ou serviço) que tem permissões para criar objetos de computador no Active Directory. Formato obrigatório: admin@contoso.com.|
-|adDomainPassword|Cadeia de caracteres|A senha associada a adDomainUsername.|
-|resourceGroupId|Cadeia de caracteres|A ID do grupo de recursos de destino. Formato obrigatório: "/subscriptions/{subscription-id}/resourceGroups/{resourceGroupName}".|
+|adDomainName|String|O FQDN (nome de domínio totalmente qualificado) do domínio do Active Directory que você deseja ingressar.|
+|adDomainUsername|String|O nome de usuário de uma conta do Active Directory (conta de usuário ou serviço) que tem permissões para criar objetos de computador no Active Directory. Formato obrigatório: admin@contoso.com.|
+|adDomainPassword|String|A senha associada a adDomainUsername.|
+|resourceGroupId|String|A ID do grupo de recursos de destino. Formato obrigatório: "/subscriptions/{subscription-id}/resourceGroups/{resourceGroupName}".|
 |virtualNetworkId|String|A ID da rede virtual de destino. Formato obrigatório: "/subscriptions/{subscription-id}/resourceGroups/{resourceGroupName}/providers/Microsoft.Network/virtualNetworks/{virtualNetworkName}".|
-|subnetId|Cadeia de caracteres|A ID da sub-rede de destino. Formato obrigatório: "/subscriptions/{subscription-id}/resourceGroups/{resourceGroupName}/providers/Microsoft.Network/virtualNetworks/{virtualNetworkId}/subnets/{subnetName}".|
+|subnetId|String|A ID da sub-rede de destino. Formato obrigatório: "/subscriptions/{subscription-id}/resourceGroups/{resourceGroupName}/providers/Microsoft.Network/virtualNetworks/{virtualNetworkId}/subnets/{subnetName}".|
 
 ## <a name="response"></a>Resposta
 
@@ -146,6 +146,7 @@ Content-Type: application/json
 {
   "@odata.type": "#microsoft.graph.cloudPcOnPremisesConnection",
   "id": "ac2ad805-167e-49ee-9bef-196c4ce7ffff",
+  "managedBy": "windows365",
   "displayName": "test-canary-02",
   "type": "hybridAzureADJoin",
   "subscriptionId": "0ac520ee-14c0-480f-b6c9-0a90c585ffff",

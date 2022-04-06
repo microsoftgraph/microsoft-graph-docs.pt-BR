@@ -3,15 +3,15 @@ author: daspek
 description: O recurso ItemActivityTimeSet fornece informações sobre quando uma atividade em um item foi realizada.
 ms.date: 09/14/2017
 title: ItemActivityTimeSet
-localization_priority: Normal
+ms.localizationpriority: medium
 doc_type: resourcePageType
 ms.prod: ''
-ms.openlocfilehash: 9295337237c681fd0ec02c9fa8061bf206059600
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: eb0477255783b3aba7aaa61a0e9ece868c1882d1
+ms.sourcegitcommit: e5d5095e26dca6f434354a0970e789e94ee6afb0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48075657"
+ms.lasthandoff: 03/22/2022
+ms.locfileid: "63724322"
 ---
 # <a name="itemactivitytimeset-resource-type"></a>Tipo de recurso ItemActivityTimeSet
 
@@ -31,7 +31,7 @@ O recurso **ItemActivityTimeSet** fornece informações sobre quando uma [ativid
   "keyProperty": "id",
   "@type": "microsoft.graph.itemActivityTimeSet",
   "@type.aka": "oneDrive.times",
-  "@property.aka": "observedDateTime=observedTime recordedDateTime=recordedTime"
+  "@property.aka&quot;: &quot;observedDateTime=observedTime recordedDateTime=recordedTime"
 }-->
 
 ```json
@@ -43,10 +43,10 @@ O recurso **ItemActivityTimeSet** fornece informações sobre quando uma [ativid
 
 ## <a name="properties"></a>Propriedades
 
-| Nome da propriedade    | Tipo           | Descrição
-|:-----------------|:---------------|:-----------------------------------------
-| observedDateTime | DateTimeOffset | Quando observamos a atividade ocorrer.
-| recordedDateTime | DateTimeOffset | Quando a observação foi gravada no serviço.
+| Propriedade         | Tipo           | Descrição                                       |
+| :--------------- | :------------- | :------------------------------------------------ |
+| observedDateTime | DateTimeOffset | Quando observamos a atividade ocorrer.     |
+| recordedDateTime | DateTimeOffset | Quando a observação foi gravada no serviço. |
 
 A diferença entre os tempos de **observado** e **gravado** é particularmente importante para cenários de colaboração offline.
 Se um usuário comenta em um arquivo enquanto está offline, o tempo pelo qual eles fazem o comentário é definido como o **observedDateTime**.
@@ -66,5 +66,3 @@ Registros de atividade de item atualmente só estão disponíveis no SharePoint 
   "suppressions": []
 }
 -->
-
-

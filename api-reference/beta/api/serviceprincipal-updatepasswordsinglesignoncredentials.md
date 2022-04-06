@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: sureshja
 ms.prod: applications
 doc_type: apiPageType
-ms.openlocfilehash: 5ce13ebb62408769eada4b4056be543dfaf806d7
-ms.sourcegitcommit: 25acfa7d0153336c9a35d30a1dd422aeadc1342c
+ms.openlocfilehash: bdd82bffa60bd2c2c9b967f01e644c91b7997b79
+ms.sourcegitcommit: 0e7927f34b7e55d323acbf281e11560cb40a89ed
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/03/2022
-ms.locfileid: "62343950"
+ms.lasthandoff: 03/20/2022
+ms.locfileid: "63668700"
 ---
 # <a name="serviceprincipal-updatepasswordsinglesignoncredentials"></a>servicePrincipal: updatePasswordSingleSignOnCredentials
 
@@ -26,7 +26,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 | Tipo de permissão                        | Permissões (da com menos para a com mais privilégios) |
 |:---------------------------------------|:--------------------------------------------|
-| Delegado (conta corporativa ou de estudante)     | Application.ReadWrite.All e Directory.Read.All, Directory.ReadWrite.All, Directory.AccessAsUser.All |
+| Delegado (conta corporativa ou de estudante)     | Application.ReadWrite.All e Directory.Read.All, Directory.ReadWrite.All |
 | Delegado (conta pessoal da Microsoft) | Sem suporte. |
 | Aplicativo                            | Application.ReadWrite.All e Directory.Read.All, Directory.ReadWrite.All |
 

@@ -5,12 +5,12 @@ author: isabelleatmsft
 ms.localizationpriority: medium
 ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: 099240b1f73e5dad7f0b56590c695f30f6188088
-ms.sourcegitcommit: 77d2ab5018371f153d47cc1cd25f9dcbaca28a95
+ms.openlocfilehash: b991b24b2d8b3c09c882c3e2087641c571e32d2b
+ms.sourcegitcommit: e5d5095e26dca6f434354a0970e789e94ee6afb0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63337596"
+ms.lasthandoff: 03/22/2022
+ms.locfileid: "63722993"
 ---
 # <a name="list-historydefinitions"></a>Histórico da listaDefinitions
 
@@ -18,12 +18,7 @@ Namespace: microsoft.graph
 
 Recupere os [objetos accessReviewHistoryDefinition criados](../resources/accessreviewhistorydefinition.md) nos últimos 30 dias, incluindo todas as propriedades aninhadas.
 
->[!NOTE]
->O tamanho padrão da página para essa API é de 100 **objetos accessReviewHistoryDefinitions** . Para melhorar a eficiência e evitar tempos-de-tempo devido a grandes conjuntos de resultados, aplique paginação usando os `$skip` parâmetros e `$top` de consulta. Para mais informações, consulte [Paginação de dados do Microsoft Graph em seu aplicativo](/graph/paging).
->
->Se nenhum parâmetro de consulta for fornecido e houver mais de 100 resultados, o Microsoft Graph paginará automaticamente os resultados em 100 resultados por página.
-
-## <a name="permissions"></a>Permissões
+## <a name="permissions"></a>Permissions
 
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
@@ -49,6 +44,8 @@ GET /identityGovernance/accessReviews/historyDefinitions
 ## <a name="optional-query-parameters"></a>Parâmetros de consulta opcionais
 
 Este método dá suporte aos `$top`parâmetros de consulta , `$filter`, `$expand`e `$skip` OData para ajudar a personalizar a resposta. Para obter informações gerais, acesse [Parâmetros de consulta OData](/graph/query-parameters). Inclusive `?$expand=instances` retornará [os objetos accessReviewHistoryDefinitions](../resources/accessreviewhistorydefinition.md) juntamente com suas instâncias associadas.
+
+O tamanho padrão da página para essa API é de 100 **objetos accessReviewHistoryDefinitions** . Para melhorar a eficiência e evitar tempos-de-tempo devido a grandes conjuntos de resultados, aplique paginação usando os `$skip` parâmetros e `$top` de consulta. Para mais informações, consulte [Paginação de dados do Microsoft Graph em seu aplicativo](/graph/paging).
 
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
 

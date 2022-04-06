@@ -1,22 +1,22 @@
 ---
 title: Adicionar proprietários
-description: Adicione um usuário ou entidade de serviço a Microsoft 365 ou proprietários de um grupo de segurança. Os proprietários são um conjunto de usuários ou os diretores de serviço que têm permissão para modificar o objeto do grupo.
+description: Adicione um usuário ou entidade de serviço aos proprietários de grupo de segurança ou de um Microsoft 365. Os proprietários são um conjunto de usuários ou entidades de serviço com permissão para modificar o objeto do grupo.
 ms.localizationpriority: high
 author: Jordanndahl
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: 6d30d60e0bd0e15b4649cbd2ed298fa863a6fc7a
-ms.sourcegitcommit: 9adf70c5da7c5b65f7d20f571d101ee06f023bc3
+ms.openlocfilehash: e0966f288264611d21a31e87a68dbb7e56f5c11b
+ms.sourcegitcommit: 0e7927f34b7e55d323acbf281e11560cb40a89ed
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/25/2022
-ms.locfileid: "62201439"
+ms.lasthandoff: 03/20/2022
+ms.locfileid: "63672725"
 ---
 # <a name="add-owners"></a>Adicionar proprietários
 
 Namespace: microsoft.graph
 
-Adicione um usuário ou entidade de serviço a Microsoft 365 ou proprietários de um grupo de segurança. Os proprietários são um conjunto de usuários ou os diretores de serviço que têm permissão para modificar o objeto do grupo.
+Adicione um usuário ou entidade de serviço aos proprietários de grupo de segurança ou de um Microsoft 365. Os proprietários são um conjunto de usuários ou entidades de serviço com permissão para modificar o objeto do grupo.
 
 >**Importante:** se você atualizar os proprietários do grupo, e você criou uma equipe para o grupo, poderá levar até duas horas para que os proprietários sejam sincronizados com o Microsoft Teams. Além disso, se você quiser que o proprietário seja capaz de fazer alterações em uma equipe - por exemplo, criando um plano Planner - o proprietário também precisará ser adicionado como um membro do grupo/equipe. 
 
@@ -25,7 +25,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegado (conta corporativa ou de estudante) | Group.ReadWrite.All, Directory.ReadWrite.All, Directory.AccessAsUser.All    |
+|Delegado (conta corporativa ou de estudante) | Group.ReadWrite.All, Directory.ReadWrite.All    |
 |Delegado (conta pessoal da Microsoft) | Sem suporte.    |
 |Aplicativo | Group.ReadWrite.All, Directory.ReadWrite.All |
 

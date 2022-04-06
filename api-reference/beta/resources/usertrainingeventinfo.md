@@ -5,12 +5,12 @@ author: Gopal-MSFT
 ms.localizationpriority: medium
 ms.prod: security
 doc_type: resourcePageType
-ms.openlocfilehash: 9b6eca7e4c911b9cc5e5019244b04f2e48e6cb30
-ms.sourcegitcommit: 84d9a50dfa9526a207696c69d92381c8763d986a
+ms.openlocfilehash: 1a33cba93e61752d33b9829871b3280955895360
+ms.sourcegitcommit: 0d6d39dd6450e0c5fd6844cb78aead00a0782e46
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/28/2021
-ms.locfileid: "59979458"
+ms.lasthandoff: 03/23/2022
+ms.locfileid: "63758232"
 ---
 # <a name="usertrainingeventinfo-resource-type"></a>Tipo de recurso userTrainingEventInfo
 
@@ -24,7 +24,7 @@ Representa eventos de um treinamento atribuído a um usuário em uma campanha de
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
 |displayName|Cadeia de caracteres|Nome de exibição do treinamento.|
-|latestTrainingStatus|trainingStatus|Status mais recente do treinamento atribuído ao usuário. Os valores possíveis são: `unknown`, `assigned`, `inProgress`, `completed`, `overdue`, `notCompleted`, `unknownFutureValue`.|
+|latestTrainingStatus|trainingStatus|Status mais recente do treinamento atribuído ao usuário. Os possíveis valores são: `unknown`, `assigned`, `inProgress`, `completed`, `overdue`, `unknownFutureValue`.|
 |trainingAssignedProperties|[userTrainingContentEventInfo](../resources/usertrainingcontenteventinfo.md)|Detalhes do evento do treinamento quando ele foi atribuído ao usuário.|
 |trainingCompletedProperties|[userTrainingContentEventInfo](../resources/usertrainingcontenteventinfo.md)|Detalhes do evento do treinamento quando ele foi concluído pelo usuário.|
 |trainingUpdatedProperties|[userTrainingContentEventInfo](../resources/usertrainingcontenteventinfo.md)|Detalhes do evento do treinamento quando ele foi atualizado/em andamento pelo usuário.|

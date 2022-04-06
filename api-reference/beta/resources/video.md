@@ -3,15 +3,15 @@ author: JeremyKelley
 description: O recurso Video agrupa itens de dados relacionados a vídeos em uma única estrutura.
 ms.date: 09/10/2017
 title: Vídeo
-localization_priority: Normal
+ms.localizationpriority: medium
 doc_type: resourcePageType
 ms.prod: ''
-ms.openlocfilehash: 4a21c889f83491742af653c5702ccf886b63b001
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: f8442cbd6ca6971ad0ad2a67214964b9e4425c77
+ms.sourcegitcommit: e5d5095e26dca6f434354a0970e789e94ee6afb0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48057735"
+ms.lasthandoff: 03/22/2022
+ms.locfileid: "63724044"
 ---
 # <a name="video-resource-type"></a>Tipo de recurso Video
 
@@ -50,18 +50,18 @@ Veja a seguir uma representação JSON do recurso
 
 ## <a name="properties"></a>Propriedades
 
-| Nome da propriedade             | Tipo   | Descrição
-|:--------------------------|:-------|:----------------------------------------
-| **audioBitsPerSample**    | Int32  | Número de bits áudio por amostra.
-| **audioChannels**         | Int32  | Número de canais de áudio.
-| **audioFormat**           | string | Nome do formato áudio (AAC, MP3, etc.).
-| **audioSamplesPerSecond** | Int32  | Número de amostras de áudio por segundo.
-| **bitrate**               | Int32  | Taxa de bits do vídeo em bits por segundo.
-| **duration**              | Int64  | Duração do arquivo em milissegundos.
-| **fourCC**                | string | Nome do formato de vídeo "Código de quatro caracteres".
-| **framerate**             | double | Taxa de quadros do vídeo.
-| **height**                | Int32  | A altura do vídeo em pixels.
-| **width**                 | Int32  | A largura do vídeo em pixels.
+| Propriedade                  | Tipo   | Descrição                                     |
+| :------------------------ | :----- | :---------------------------------------------- |
+| **audioBitsPerSample**    | Int32  | Número de bits áudio por amostra.                |
+| **audioChannels**         | Int32  | Número de canais de áudio.                       |
+| **audioFormat**           | string | Nome do formato áudio (AAC, MP3, etc.).      |
+| **audioSamplesPerSecond** | Int32  | Número de amostras de áudio por segundo.             |
+| **bitrate**               | Int32  | Taxa de bits do vídeo em bits por segundo.       |
+| **duration**              | Int64  | Duração do arquivo em milissegundos.           |
+| **fourCC**                | string | Nome do formato de vídeo "Código de quatro caracteres". |
+| **framerate**             | double | Taxa de quadros do vídeo.                        |
+| **height**                | Int32  | A altura do vídeo em pixels.                 |
+| **width**                 | Int32  | A largura do vídeo em pixels.                  |
 
 [item-resource]: ../resources/driveitem.md
 
@@ -69,12 +69,9 @@ Veja a seguir uma representação JSON do recurso
 
 Para saber mais sobre as facetas de um DriveItem, confira [DriveItem](driveitem.md).
 
-
-
-
-
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
+
 <!--
 {
   "type": "#page.annotation",
@@ -85,5 +82,3 @@ Para saber mais sobre as facetas de um DriveItem, confira [DriveItem](driveitem.
   "suppressions": []
 }
 -->
-
-

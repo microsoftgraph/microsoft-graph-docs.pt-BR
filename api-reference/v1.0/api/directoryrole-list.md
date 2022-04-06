@@ -5,12 +5,12 @@ author: abhijeetsinha
 ms.localizationpriority: medium
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: 245bf0b2fe5b5df3def91d88269b6f3a2f353287
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: d2003c5592064d1983c0eecbe6261905584ff379
+ms.sourcegitcommit: 0e7927f34b7e55d323acbf281e11560cb40a89ed
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62128768"
+ms.lasthandoff: 03/20/2022
+ms.locfileid: "63672515"
 ---
 # <a name="list-directoryroles"></a>Listar directoryRoles
 
@@ -18,7 +18,7 @@ Namespace: microsoft.graph
 
 Lista as funções de diretório ativadas no locatário.
 
-Essa operação retorna apenas funções que foram ativadas. Uma função é ativada quando um administrador ativa a função usando a API [Activate directoryRole.](directoryrole-post-directoryroles.md) Nem todas as funções in-iciais são ativadas inicialmente. 
+Essa operação retorna apenas funções que foram ativadas. Uma função é ativada quando um administrador ativa a função usando a API [Activate directoryRole](directoryrole-post-directoryroles.md) . Nem todas as funções in-iciais são ativadas inicialmente. 
 
 Ao atribuir uma função usando o portal do Azure, a etapa de ativação de função é feita implicitamente em nome do administrador. Para obter a lista completa de funções disponíveis no Azure AD, use [List directoryRoleTemplates](directoryroletemplate-list.md).
 
@@ -27,7 +27,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegado (conta corporativa ou de estudante) | RoleManagement.Read.Directory, Directory.Read.All, RoleManagement.ReadWrite.Directory, Directory.ReadWrite.All, Directory.AccessAsUser.All    |
+|Delegado (conta corporativa ou de estudante) | RoleManagement.Read.Directory, Directory.Read.All, RoleManagement.ReadWrite.Directory, Directory.ReadWrite.All    |
 |Delegado (conta pessoal da Microsoft) | Sem suporte.    |
 |Aplicativo | RoleManagement.Read.Directory, Directory.Read.All, RoleManagement.ReadWrite.Directory, Directory.ReadWrite.All |
 
@@ -37,7 +37,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 GET /directoryRoles
 ```
 ## <a name="optional-query-parameters"></a>Parâmetros de consulta opcionais
-Este método dá suporte aos parâmetros de consulta , , e OData para `$count` ajudar a personalizar a `$select` `$search` `$filter` `eq` `$expand` [](/graph/query-parameters) resposta.
+Este método dá suporte aos `$count`[parâmetros](/graph/query-parameters) de consulta , `$select`, `$search`, `$filter` (`eq`) `$expand` e OData para ajudar a personalizar a resposta.
 
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
 | Nome       | Descrição|
@@ -49,7 +49,7 @@ Não forneça um corpo de solicitação para esse método.
 
 ## <a name="response"></a>Resposta
 
-Se tiver êxito, este método retornará um código de resposta e uma `200 OK` coleção de [objetos directoryRole](../resources/directoryrole.md) no corpo da resposta.
+Se tiver êxito, este método retornará um `200 OK` código de resposta e uma coleção de [objetos directoryRole](../resources/directoryrole.md) no corpo da resposta.
 ## <a name="example"></a>Exemplo
 ##### <a name="request"></a>Solicitação
 

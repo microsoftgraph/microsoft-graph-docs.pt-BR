@@ -5,12 +5,12 @@ author: jpettere
 ms.localizationpriority: medium
 ms.prod: users
 doc_type: apiPageType
-ms.openlocfilehash: d21f2a4e25ff42f37df238fc2304d52f825c40f4
-ms.sourcegitcommit: 77d2ab5018371f153d47cc1cd25f9dcbaca28a95
+ms.openlocfilehash: bf1a8b16076575272c215c28a81bd0b3246a32c9
+ms.sourcegitcommit: 0076eb6abb89be3dca3575631924a74a5202be30
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63334482"
+ms.lasthandoff: 04/03/2022
+ms.locfileid: "64629453"
 ---
 # <a name="update-user"></a>Atualizar usuário
 
@@ -294,7 +294,7 @@ O exemplo a seguir mostra como atribuir um atributo de segurança personalizado 
 
 Para atribuir atributos de segurança personalizados, o principal de chamada deve ser atribuído à função de Administrador de Atribuição de Atributo e deve receber a permissão *CustomSecAttributeAssignment.ReadWrite.All*.
 
-Para obter mais exemplos para usuários, consulte [Assign, update ou remove custom security attributes using the Microsoft Graph API](/graph/custom-security-attributes-examples).
+Para obter mais exemplos para usuários, consulte [Assign, update ou remove custom security attributes using the Microsoft API do Graph](/graph/custom-security-attributes-examples).
 
 #### <a name="request"></a>Solicitação
 
@@ -346,6 +346,46 @@ Content-type: application/json
 HTTP/1.1 204 No Content
 ```
 
+### <a name="example-5-add-or-update-the-values-of-a-schema-extension-for-a-user"></a>Exemplo 5: Adicionar ou atualizar os valores de uma extensão de esquema para um usuário
+
+Você pode atualizar ou atribuir um valor a uma única propriedade ou a todas as propriedades na extensão.
+
+#### <a name="request"></a>Solicitação
+
+<!-- {
+  "blockType": "request",
+  "name": "update_schemaextension"
+}-->
+```msgraph-interactive
+PATCH https://graph.microsoft.com/beta/users/4562bcc8-c436-4f95-b7c0-4f8ce89dca5e
+Content-type: application/json
+
+{
+    "ext55gb1l09_msLearnCourses": {
+        "courseType": "Admin"
+    }
+}
+```
+
+#### <a name="response"></a>Resposta
+
+<!-- {
+  "blockType": "response"
+} -->
+```http
+HTTP/1.1 204 No Content
+```
+
+>**Observação:** Para remover o valor da extensão de esquema do objeto do usuário, de definir a propriedade como `null`. Por exemplo:
+>
+>```http
+>PATCH https://graph.microsoft.com/v1.0/users/4562bcc8-c436-4f95-b7c0-4f8ce89dca5e
+>Content-type: application/json
+>
+>{
+>    "ext55gb1l09_msLearnCourses": null
+>}
+>```
 
 ## <a name="see-also"></a>Confira também
 

@@ -1,15 +1,15 @@
 ---
-title: Gerenciamento de dispositivos Microsoft Intune - API Graph Microsoft
-description: Lista a API Graph microsoft para pontos de extremidade do Intune (REST) que definem gerenciar dispositivos para uma organização de locatários.
+title: Gerenciamento de dispositivos Microsoft Intune - Microsoft API do Graph
+description: Lista os API do Graph microsoft Intune pontos de extremidade (REST) que definem gerenciar dispositivos para uma organização de locatários.
 author: dougeby
 ms.localizationpriority: medium
 ms.prod: intune
-ms.openlocfilehash: c9f4eee1ab3c4b1ea58b27fd0fea2af879b909e9
-ms.sourcegitcommit: efa06c63cd3154bcc7ecc993011f314c2dea9a92
+ms.openlocfilehash: a5c2263feafc8316be17d5e3ec6051c77861b7f8
+ms.sourcegitcommit: 0076eb6abb89be3dca3575631924a74a5202be30
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63368193"
+ms.lasthandoff: 04/03/2022
+ms.locfileid: "64628830"
 ---
 # <a name="device-management-in-microsoft-intune"></a>Gerenciamento de dispositivos no Microsoft Intune
 
@@ -203,6 +203,8 @@ Namespace: microsoft.graph
 - [Resumo do estado da linha de base de segurança](intune-deviceintent-securitybaselinestatesummary.md)
 - [Modelo de linha da base de segurança](intune-deviceintent-securitybaselinetemplate.md)
 - [Usuário de dispositivo Apple compartilhado](intune-devices-sharedappledeviceuser.md)
+- [Locatário anexar r b a c](intune-devices-tenantattachrbac.md)
+- [Locatário anexar r b a c estado](intune-devices-tenantattachrbacstate.md)
 - [Tuple_2 de execução type_ i collection_1 de operação](intune-esim-tuple_2ofexecutiontype_icollection_1ofoperation.md)
 - [Parâmetro da ação de atualização de conta de dispositivo Windows](intune-devices-updatewindowsdeviceaccountactionparameter.md)
 - [Desempenho do aplicativo de avaliação de experiência do usuário por versão do aplicativo](intune-devices-userexperienceanalyticsapphealthappperformancebyappversion.md)

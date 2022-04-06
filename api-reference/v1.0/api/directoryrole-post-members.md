@@ -5,12 +5,12 @@ author: abhijeetsinha
 ms.localizationpriority: medium
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: 34a3ac2d66eebf46f3e230bc6754f6113fa094f3
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: ae37ba6b68dbe1130d5150b3856a41e031fbd8f8
+ms.sourcegitcommit: 0e7927f34b7e55d323acbf281e11560cb40a89ed
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62097950"
+ms.lasthandoff: 03/20/2022
+ms.locfileid: "63672263"
 ---
 # <a name="add-directory-role-member"></a>Adicionar membro da função de diretório
 
@@ -25,7 +25,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegado (conta corporativa ou de estudante) | RoleManagement.ReadWrite.Directory, Directory.AccessAsUser.All    |
+|Delegado (conta corporativa ou de estudante) | RoleManagement.ReadWrite.Directory    |
 |Delegado (conta pessoal da Microsoft) | Sem suporte.    |
 |Aplicativo | RoleManagement.ReadWrite.Directory |
 
@@ -53,7 +53,7 @@ Quando é bem-sucedido, este método retorna um código de resposta `204 No Cont
 
 ### <a name="example-1-add-a-new-member-to-a-directory-role-using-role-id"></a>Exemplo 1: Adicionar um novo membro a uma função de diretório usando id de função
 
-Nesta solicitação, substitua pelo valor de id da função `fe8f10bf-c9c2-47eb-95cb-c26cc85f1830` de diretório que você deseja atribuir ao usuário ou objeto de  diretório. Substitua `15c1a2d5-9101-44b2-83ab-885db8a647ca` pelo valor de **id** do seu objeto de diretório ou usuário. 
+Nesta solicitação, substitua pelo `fe8f10bf-c9c2-47eb-95cb-c26cc85f1830` valor **de id** da função de diretório que você deseja atribuir ao usuário ou objeto de diretório. Substitua `15c1a2d5-9101-44b2-83ab-885db8a647ca` pelo valor **de id** do seu objeto de diretório ou usuário. 
 
 #### <a name="request"></a>Solicitação
 
@@ -111,7 +111,7 @@ Content-type: text/plain
 
 ### <a name="example-2-add-a-new-member-to-a-directory-role-using-roletemplateid"></a>Exemplo 2: Adicionar um novo membro a uma função de diretório usando roleTemplateId
 
-Nesta solicitação, substitua pelo valor da `88d8e3e3-8f55-4a1e-953a-9b9898b8876b` **funçãoTemplateId** para a função de diretório que você deseja atribuir ao usuário ou objeto de diretório. Substitua `bb165b45-151c-4cf6-9911-cd7188912848` pelo valor de **id** do seu objeto de diretório ou usuário. 
+Nesta solicitação, substitua `88d8e3e3-8f55-4a1e-953a-9b9898b8876b` pelo valor da **funçãoTemplateId** para a função de diretório que você deseja atribuir ao usuário ou objeto de diretório. Substitua `bb165b45-151c-4cf6-9911-cd7188912848` pelo valor **de id** do seu objeto de diretório ou usuário. 
 
 #### <a name="request"></a>Solicitação
 

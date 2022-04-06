@@ -5,12 +5,12 @@ author: jpettere
 ms.localizationpriority: high
 ms.prod: users
 doc_type: resourcePageType
-ms.openlocfilehash: 28f778723b12e6400a84079fb79eb4e7f842f63b
-ms.sourcegitcommit: 77d2ab5018371f153d47cc1cd25f9dcbaca28a95
-ms.translationtype: HT
+ms.openlocfilehash: 63a760648d7fcb58a6a24ee3505c82c65ee5c273
+ms.sourcegitcommit: 43a7c971a97ce1e4c55cbae089820bfce7dfe42b
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63336890"
+ms.lasthandoff: 03/29/2022
+ms.locfileid: "64510222"
 ---
 # <a name="user-resource-type"></a>Tipo de recurso de usuário
 
@@ -250,7 +250,7 @@ Esse recurso permite:
 ### <a name="mail-and-proxyaddresses-properties"></a>propriedades mail e proxyAddresses
 **email** e **proxyAddresses** são propriedades relacionadas a email. **proxyAddresses** é uma coleção de endereços relevantes apenas para o servidor do Microsoft Exchange. Ele é usado para armazenar uma lista de endereços de email para um usuário que está vinculado a uma única caixa de correio. **email** propriedade é usada como o endereço de email do usuário para várias finalidades, incluindo a entrada do usuário e define o endereço proxy principal.
  
-**email** e **proxyAddresses** podem ser recuperados por meio da API de [usuário GET](add link) no MS Graph. **email** pode ser atualizado por meio do método [PATCH da API de usuário de atualização](add link), mas **proxyAddresses** não pode ser atualizado por meio do Microsoft Graph. Quando a propriedade de **email** de um usuário é atualizada, ela aciona o recálculo de **proxyAddresses** e o email recém-atualizado é definido como o endereço de proxy primário, exceto nos seguintes cenários: 
+**email** e **proxyAddresses** podem ser recuperados por meio da API de [usuário GET](../api/user-get.md) no MS Graph. **email** pode ser atualizado por meio do método [PATCH da API de usuário de atualização](../api/user-update.md), mas **proxyAddresses** não pode ser atualizado por meio do Microsoft Graph. Quando a propriedade de **email** de um usuário é atualizada, ela aciona o recálculo de **proxyAddresses** e o email recém-atualizado é definido como o endereço de proxy primário, exceto nos seguintes cenários: 
  
 1. Se um usuário tiver uma licença que inclua o Microsoft Exchange, todos os endereços proxy deverão pertencer a um domínio verificado no locatário. Qualquer um que não pertença a domínios verificados é removido silenciosamente.
 2. O email de um usuário NÃO será definido como o endereço de proxy primário se o usuário for um convidado e o endereço de proxy primário contiver a cadeia de caracteres UPN do usuário convidado com #EXT#.
@@ -308,6 +308,7 @@ Por exemplo: Cameron é o administrador de um diretório em uma escola de ensino
 |:---------------|:--------|:----------|
 |agreementAcceptances|Coleção [agreementAcceptance](agreementacceptance.md)| Status de aceitação dos termos de uso do usuário. Somente leitura. Anulável.|
 |appRoleAssignments|[appRoleAssignment](approleassignment.md) collection|Representa as funções de aplicativo que um usuário recebeu para um aplicativo. Dá suporte a `$expand`. |
+|autenticação|[autenticação](../resources/authentication.md)|**TODO: adicionar descrição**|
 |calendar|[calendar](calendar.md)|O calendário principal do usuário. Somente leitura.|
 |calendarGroups|Coleção [CalendarGroup](calendargroup.md)|Os grupos de calendários do usuário. Somente leitura. Anulável.|
 |calendarView|Coleção [event](event.md)|O modo de exibição do calendário. Somente leitura. Anulável.|
@@ -318,7 +319,7 @@ Por exemplo: Cameron é o administrador de um diretório em uma escola de ensino
 |directReports|Coleção [directoryObject](directoryobject.md)|Os usuários e contatos subordinados ao usuário. (Os usuários e contatos cuja propriedade de gerenciamento está definida para esse usuário.) Somente leitura. Anulável. Dá suporte a `$expand`. |
 |Unidade|[drive](drive.md)|O OneDrive do usuário. Somente leitura.|
 |unidades|Coleção [drive](drive.md)| Uma coleção de unidades disponíveis para este usuário. Somente leitura. |
-|eventos|Coleção [event](event.md)|Os eventos do usuário. O padrão é mostrar eventos no Calendário Padrão. Somente leitura. Anulável.|
+|events|Coleção [event](event.md)|Os eventos do usuário. O padrão é mostrar eventos no Calendário Padrão. Somente leitura. Anulável.|
 |extensions|Coleção [extension](extension.md)|A coleção de extensões abertas definidas para o usuário. Anulável.|
 |inferenceClassification|[inferenceClassification](inferenceclassification.md)| Classificação de relevância das mensagens do usuário com base em designações explícitas que substituem a relevância ou importância deduzida. |
 |insights|[itemInsights](iteminsights.md) | Somente leitura. Anulável.|

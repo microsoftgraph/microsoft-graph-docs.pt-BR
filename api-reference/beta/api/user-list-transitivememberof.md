@@ -2,15 +2,15 @@
 title: Listar usuário transitivo memberOf
 description: Obter grupos, funções de diretório e unidades administrativas das quais o usuário é membro. Essa solicitação de API é transitiva e também retornará todos os grupos de que o usuário é membro aninhado.
 ms.localizationpriority: medium
-author: jpettere
+author: Jordanndahl
 ms.prod: users
 doc_type: apiPageType
-ms.openlocfilehash: 1e62c19a93cde4a7e2aa3e0500880a89f2c5a444
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: ab79028a05cd5765db414d4164061248a5597049
+ms.sourcegitcommit: 43a7c971a97ce1e4c55cbae089820bfce7dfe42b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62118002"
+ms.lasthandoff: 03/29/2022
+ms.locfileid: "64510355"
 ---
 # <a name="list-user-transitive-memberof"></a>Listar usuário transitivo memberOf
 
@@ -20,13 +20,13 @@ Namespace: microsoft.graph
 
 Obter grupos, funções de diretório e unidades administrativas das quais o usuário é membro. Essa solicitação de API é transitiva e também retornará todos os grupos de que o usuário é membro aninhado.
 
-## <a name="permissions"></a>Permissões
+## <a name="permissions"></a>Permissions
 
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 | Tipo de permissão | Permissões (da com menos para a com mais privilégios) |
 |:--------------- |:------------------------------------------- |
-| Delegado (conta corporativa ou de estudante) | Directory.Read.All, Directory.ReadWrite.All, Directory.AccessAsUser.All    |
+| Delegado (conta corporativa ou de estudante) | Directory.Read.All, Directory.ReadWrite.All    |
 | Delegado (conta pessoal da Microsoft) | Sem suporte. |
 | Aplicativo | Directory.Read.All, Directory.ReadWrite.All |
 
@@ -250,7 +250,7 @@ Este é um exemplo de solicitação.
 
 <!-- {
   "blockType": "ignored",
-  "name": "get_a_count"
+  "name": "list_users_transitivememberof_startswith"
 }-->
 ```msgraph-interactive
 GET https://graph.microsoft.com/beta/users/{id}/transitiveMemberOf/microsoft.graph.group?$count=true&$orderby=displayName&$filter=startswith(displayName, 'a')

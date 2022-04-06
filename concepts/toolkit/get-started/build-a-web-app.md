@@ -1,18 +1,18 @@
 ---
 title: Criar um aplicativo Web com o microsoft Graph Toolkit
-description: Começar a criar um aplicativo Web usando o microsoft Graph Toolkit.
+description: Introdução criar um aplicativo Web usando o microsoft Graph Toolkit.
 ms.localizationpriority: medium
-author: elisenyang
-ms.openlocfilehash: 22f5e81f8c382694389ddcffbe5e0f8a77fa55a9
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+author: sebastienlevert
+ms.openlocfilehash: e464f822f6c08c51443ac24b482c99081954acf7
+ms.sourcegitcommit: cc9e5b3630cb84c48bbbb2d84a963b9562d1fb78
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59103834"
+ms.lasthandoff: 03/31/2022
+ms.locfileid: "64589006"
 ---
 # <a name="build-a-web-application-with-the-microsoft-graph-toolkit"></a>Criar um aplicativo Web com o microsoft Graph Toolkit
 
-Este tópico descreve como começar a usar o microsoft Graph Toolkit em um aplicativo Web escrito em JavaScript de baunilha. Para obter um tutorial passo a passo, experimente o [módulo Introdução ao microsoft Graph Toolkit .](/learn/modules/msgraph-toolkit-intro/) Se você quiser aprender a usar o Toolkit com uma estrutura da Web, consulte [Build a web app (React) ou](./use-toolkit-with-react.md) Build a Web app [(Angular)](./use-toolkit-with-angular.md).
+Este tópico descreve como começar a usar o microsoft Graph Toolkit em um aplicativo Web escrito em JavaScript de baunilha. Para um tutorial passo a passo, experimente o Introdução [com o módulo Graph Toolkit Microsoft](/learn/modules/msgraph-toolkit-intro/). Se você quiser aprender a usar o Toolkit com uma estrutura da Web, consulte [Build a web app (React)](./use-toolkit-with-react.md) ou [Build a Web app (Angular)](./use-toolkit-with-angular.md).
 
 Começar com o microsoft Graph Toolkit envolve as seguintes etapas:
 1. Adicione o Microsoft Graph Toolkit ao seu projeto.
@@ -41,13 +41,13 @@ npm install @microsoft/mgt
 ## <a name="initialize-the-msal2-provider"></a>Inicializar o provedor MSAL2
 Os provedores do Kit de ferramentas do Microsoft Graph permitem autenticação e acesso ao Microsoft Graph para os componentes. Para saber mais, confira [Usando os provedores](../providers/providers.md). O [Provedor MSAL2](../providers/msal2.md) usa o msal-browser para entrar nos usuários e adquirir tokens. Você pode inicializar esse provedor em seu HTML ou JavaScript.
 
-> **Observação**: se você estiver usando o Provedor MSAL no momento e quiser atualizar para o Provedor MSAL2, siga as etapas listadas [aqui](../providers/msal2.md#migrating-from-msal-provider-to-msal2-provider).
+> **Observação**: se você estiver usando o Provedor MSAL no momento e quiser atualizar para o Provedor MSAL2, siga as etapas [listadas aqui](../providers/msal2.md#migrating-from-msal-provider-to-msal2-provider).
 Se você quiser usar sua própria autenticação de back-end, use o [Provedor de Proxy](../providers/proxy.md) no lugar do Provedor MSAL2.
 
 Você pode optar por inicializar o provedor em seu HTML ou no código JavaScript. 
 
 # <a name="html"></a>[HTML](#tab/HTML)
-Adicione o `mgt-msal2-provider` componente à sua página HTML e desmarcar o para o seu aplicativo `client-id` client-id.
+Adicione o `mgt-msal2-provider` componente à sua página HTML e desmarcar o `client-id` para o seu aplicativo client-id.
 
 ```html
 <mgt-msal2-provider client-id="<YOUR_CLIENT_ID>"></mgt-msal2-provider>
@@ -71,7 +71,7 @@ A ID do cliente é a única propriedade necessária para inicializar o provedor,
 Para obter uma ID do cliente, você precisa registrar [seu aplicativo](./add-aad-app-registration.md) no Azure AD.
 
 ## <a name="add-components"></a>Adicionar os componentes
-Depois de inicializar o provedor MSAL2, você pode começar a usar qualquer um dos Toolkit componentes.
+Depois de inicializar o provedor MSAL2, você pode começar a usar qualquer um dos componentes Toolkit.
 
 # <a name="html"></a>[HTML](#tab/HTML)
 Veja a seguir um exemplo de trabalho completo usando mgt-loader, o Provedor MSAL2 inicializado em HTML e o componente logon:
@@ -115,8 +115,8 @@ document.body.appendChild(component());
 
 Para testar seu aplicativo, o MSAL exige que a página seja hospedada em um servidor Web para os redirecionamentos de autenticação. 
 
-Se você estiver apenas começando e quiser brincar, poderá usar o [Live Server](https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer) Visual Studio Code ou qualquer servidor de desenvolvimento leve semelhante. Baixe a extensão e abra seu arquivo HTML usando o servidor ao vivo.
-> **Observação:** Certifique-se **de que o URI de** redirecionamento no registro do aplicativo está definido para a porta localhost em que seu aplicativo está hospedado. Vá para o registro do aplicativo no [portal do Azure,](https://portal.azure.com)clique em **Autenticação** em gerenciar e adicione o **URI de redirecionamento correto.**
+Se você estiver apenas começando e quiser brincar, poderá usar o [Live Server](https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer) em Visual Studio Code ou em qualquer servidor de desenvolvimento leve semelhante. Baixe a extensão e abra seu arquivo HTML usando o servidor ao vivo.
+> **Observação:** Certifique-se **de que o URI de** redirecionamento no registro do aplicativo está definido para a porta localhost em que seu aplicativo está hospedado. Vá para o registro do aplicativo no [portal do Azure](https://portal.azure.com), clique em **Autenticação** em gerenciar e adicione o **URI de redirecionamento correto**.
 
 ## <a name="track-a-users-sign-in-state"></a>Rastrear o estado de login de um usuário
 
@@ -126,7 +126,7 @@ Para inspecionar corretamente o estado de login do usuário, adicione um manipul
 
 # <a name="html"></a>[HTML](#tab/HTML)
 
-Se você estiver usando a `mgt-loader` biblioteca, poderá acessar e `Provider` a partir da propriedade `ProviderState` `mgt` global.
+Se você estiver usando a biblioteca `mgt-loader` , poderá acessar e `Provider` `ProviderState` a partir da propriedade global `mgt` .
 
 ```html
 <!DOCTYPE html>
@@ -153,7 +153,7 @@ Se você estiver usando a `mgt-loader` biblioteca, poderá acessar e `Provider` 
 
 # <a name="javascript"></a>[JavaScript](#tab/JavaScript)
 
-Se você estiver usando o kit de ferramentas por meio dos pacotes npm, poderá importar `Provider` o e `ProviderState` de `@microsoft/mgt` .
+Se você estiver usando o kit de ferramentas por meio dos pacotes npm, poderá importar o `Provider` e `ProviderState` de `@microsoft/mgt`.
 
 ```javascript
 import { Providers, ProviderState, Msal2Provider } from '@microsoft/mgt';
@@ -175,7 +175,7 @@ Providers.onProviderUpdated(loadAgenda);
 
 ## <a name="next-steps"></a>Próximas etapas
 
-- Confira o [tutorial Introdução ao Microsoft Graph Toolkit](/learn/modules/msgraph-toolkit-intro/) passo a passo.
+- Confira o tutorial [Introdução com o Microsoft Graph Toolkit](/learn/modules/msgraph-toolkit-intro/) passo a passo.
 - Experimente os componentes do [playground](https://mgt.dev).
 - Faça uma pergunta no [Stack Overflow](https://aka.ms/mgt-question).
 - Relate bugs ou deixe uma solicitação de recurso no [GitHub](https://aka.ms/mgt).

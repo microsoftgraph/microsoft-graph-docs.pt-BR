@@ -5,12 +5,12 @@ author: ebasseri
 ms.localizationpriority: medium
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: 511c51b3b7beb8d5ef02e4a939d23d5f2d9a7d7e
-ms.sourcegitcommit: 77d2ab5018371f153d47cc1cd25f9dcbaca28a95
+ms.openlocfilehash: d9fc67aa8a0b8db0efd2db016392b790e43ebfe3
+ms.sourcegitcommit: 43a7c971a97ce1e4c55cbae089820bfce7dfe42b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63334769"
+ms.lasthandoff: 03/29/2022
+ms.locfileid: "64510341"
 ---
 # <a name="list-serviceprincipalriskdetections"></a>Listar servicePrincipalRiskDetections
 Namespace: microsoft.graph
@@ -21,14 +21,14 @@ Recupere as propriedades de uma coleção de [objetos servicePrincipalRiskDetect
 
 >**Observação:** Você deve ter uma Azure AD Premium P1 ou P2 para usar a API servicePrincipalRiskDetection.
 
-## <a name="permissions"></a>Permissões
+## <a name="permissions"></a>Permissions
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão|Permissões (da com menos para a com mais privilégios)|
 |:---|:---|
-|Delegado (conta corporativa ou de estudante)|IdentityRiskyServicePrincipal.Read.All, IdentityRiskyServicePrincipal.ReadWrite.All|
+|Delegado (conta corporativa ou de estudante)|IdentityRiskEvent.Read.All|
 |Delegado (conta pessoal da Microsoft)|Sem suporte.|
-|Aplicativo|IdentityRiskyServicePrincipal.Read.All, IdentityRiskyServicePrincipal.ReadWrite.All|
+|Aplicativo|IdentityRiskEvent.Read.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
 

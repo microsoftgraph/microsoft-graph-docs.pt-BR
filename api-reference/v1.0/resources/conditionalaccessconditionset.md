@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: davidspooner
 ms.prod: identity-and-sign-in
 doc_type: resourcePageType
-ms.openlocfilehash: d331a2e1995b6c33ab45f1a99f680b772d090dec
-ms.sourcegitcommit: 3f3975916b5c531ee63d92340ccd6e73e879e8d7
+ms.openlocfilehash: 6bb96bd08f9ffdd3876ba3836b19878b24fad686
+ms.sourcegitcommit: 0e7927f34b7e55d323acbf281e11560cb40a89ed
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/21/2022
-ms.locfileid: "62161701"
+ms.lasthandoff: 03/20/2022
+ms.locfileid: "63672543"
 ---
 # <a name="conditionalaccessconditionset-resource-type"></a>Tipo de recurso conditionalAccessConditionSet
 
@@ -24,6 +24,7 @@ Representa o tipo de condições que regem quando a política se aplica.
 |:-------------|:------------|:------------|
 |applications|[conditionalAccessApplications](conditionalaccessapplications.md)| Aplicativos e ações do usuário incluídas e excluídas da política. Obrigatório. |
 |usuários|[conditionalAccessUsers](conditionalaccessusers.md)| Usuários, grupos e funções incluídos e excluídos da política. Obrigatório. |
+|clientApplications|[conditionalAccessClientApplications](../resources/conditionalaccessclientapplications.md)|Aplicativos cliente (entidades de serviço e identidades de carga de trabalho) incluídos e excluídos da política. Os **usuários** ou **clientApplications** são necessários. |
 |clientAppTypes|coleção conditionalAccessClientApp| Tipos de aplicativo cliente incluídos na política. Os possíveis valores são: `all`, `browser`, `mobileAppsAndDesktopClients`, `exchangeActiveSync`, `easSupported`, `other`. Obrigatório.|
 |dispositivos|[conditionalAccessDevices](conditionalaccessdevices.md)| Dispositivos na política. |
 |locations|[conditionalAccessLocations](conditionalaccesslocations.md)| Locais incluídos e excluídos da política. |
@@ -56,6 +57,7 @@ Veja a seguir uma representação JSON do recurso.
 {
   "applications": {"@odata.type": "microsoft.graph.conditionalAccessApplications"},
   "users": {"@odata.type": "microsoft.graph.conditionalAccessUsers"},
+  "clientApplications": {"@odata.type": "microsoft.graph.conditionalAccessClientApplications"},
   "clientAppTypes": ["String"],
   "devices": {"@odata.type": "microsoft.graph.conditionalAccessDevices"},
   "locations": {"@odata.type": "microsoft.graph.conditionalAccessLocations"},

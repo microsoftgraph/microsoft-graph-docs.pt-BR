@@ -5,12 +5,12 @@ author: AshleyYangSZ
 ms.localizationpriority: medium
 ms.prod: cloud-pc
 doc_type: resourcePageType
-ms.openlocfilehash: cb1b3dc86aa941720411db9f577e2b12a5817151
-ms.sourcegitcommit: 3e2239e60b6dc53997b7d4356a20fc3d365d6238
+ms.openlocfilehash: e56a960bc1dc8c7bc767cc7673c68ebee2c8ed4e
+ms.sourcegitcommit: 0e7927f34b7e55d323acbf281e11560cb40a89ed
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/02/2021
-ms.locfileid: "61266002"
+ms.lasthandoff: 03/20/2022
+ms.locfileid: "63672648"
 ---
 # <a name="cloudpconpremisesconnection-resource-type"></a>Tipo de recurso cloudPcOnPremisesConnection
 
@@ -24,33 +24,42 @@ Representa uma coleção definida de informações de recursos do Azure que pode
 
 |Método|Tipo de retorno|Descrição|
 |:---|:---|:---|
-|[Listar onPremisesConnections](../api/virtualendpoint-list-onpremisesconnections.md)|[Coleção cloudPcOnPremisesConnection](../resources/cloudpconpremisesconnection.md)|Listar propriedades e relações dos objetos [cloudPcOnPremisesConnection.](../resources/cloudpconpremisesconnection.md)|
-|[Obter cloudPcOnPremisesConnection](../api/cloudpconpremisesconnection-get.md)|[cloudPcOnPremisesConnection](../resources/cloudpconpremisesconnection.md)|Leia as propriedades e as relações do [objeto cloudPcOnPremisesConnection.](../resources/cloudpconpremisesconnection.md)|
-|[Criar cloudPcOnPremisesConnection](../api/virtualendpoint-post-onpremisesconnections.md)|[cloudPcOnPremisesConnection](../resources/cloudpconpremisesconnection.md)|Crie um novo [objeto cloudPcOnPremisesConnection.](../resources/cloudpconpremisesconnection.md)|
-|[Atualizar cloudPcOnPremisesConnection](../api/cloudpconpremisesconnection-update.md)|[cloudPcOnPremisesConnection](../resources/cloudpconpremisesconnection.md)|Atualize as propriedades de [um objeto cloudPcOnPremisesConnection.](../resources/cloudpconpremisesconnection.md)|
-|[Excluir cloudPcOnPremisesConnection](../api/cloudpconpremisesconnection-delete.md)|Nenhum|[Exclua um objeto cloudPcOnPremisesConnection.](../resources/cloudpconpremisesconnection.md) Você não pode excluir uma conexão que está em uso.|
+|[Listar onPremisesConnections](../api/virtualendpoint-list-onpremisesconnections.md)|[Coleção cloudPcOnPremisesConnection](../resources/cloudpconpremisesconnection.md)|Listar propriedades e relações dos objetos [cloudPcOnPremisesConnection](../resources/cloudpconpremisesconnection.md) .|
+|[Obter cloudPcOnPremisesConnection](../api/cloudpconpremisesconnection-get.md)|[cloudPcOnPremisesConnection](../resources/cloudpconpremisesconnection.md)|Leia as propriedades e as relações do [objeto cloudPcOnPremisesConnection](../resources/cloudpconpremisesconnection.md) .|
+|[Criar cloudPcOnPremisesConnection](../api/virtualendpoint-post-onpremisesconnections.md)|[cloudPcOnPremisesConnection](../resources/cloudpconpremisesconnection.md)|Crie um novo [objeto cloudPcOnPremisesConnection](../resources/cloudpconpremisesconnection.md) .|
+|[Atualizar cloudPcOnPremisesConnection](../api/cloudpconpremisesconnection-update.md)|[cloudPcOnPremisesConnection](../resources/cloudpconpremisesconnection.md)|Atualize as propriedades de [um objeto cloudPcOnPremisesConnection](../resources/cloudpconpremisesconnection.md) .|
+|[Excluir cloudPcOnPremisesConnection](../api/cloudpconpremisesconnection-delete.md)|Nenhum|[Exclua um objeto cloudPcOnPremisesConnection](../resources/cloudpconpremisesconnection.md). Você não pode excluir uma conexão que está em uso.|
 |[RunHealthChecks de cloudPcOnPremisesConnection](../api/cloudpconpremisesconnection-runhealthcheck.md)|Nenhum|Execute verificações de saúde na [nuvemPcOnPremisesConnection](../resources/cloudpconpremisesconnection.md).|
-|[updateAdDomainPassword](../api/cloudpconpremisesconnection-updateaddomainpassword.md)|Nenhum|Atualize a senha de domínio do Active Directory para uma [nuvem bem-sucedidaPcOnPremisesConnection](../resources/cloudpconpremisesconnection.md). Essa API é suportada quando o tipo do **onPremisesConnection** é `hybridAzureADJoin` .|
+|[updateAdDomainPassword](../api/cloudpconpremisesconnection-updateaddomainpassword.md)|Nenhum|Atualize a senha de domínio do Active Directory para uma [nuvem bem-sucedidaPcOnPremisesConnection](../resources/cloudpconpremisesconnection.md). Essa API é suportada quando o tipo do **onPremisesConnection** é `hybridAzureADJoin`.|
 
 ## <a name="properties"></a>Propriedades
 
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|id|Cadeia de caracteres|Identificador exclusivo da conexão local. Somente leitura.|
+|id|String|Identificador exclusivo da conexão local. Somente leitura.|
+|managedBy|[cloudPcManagementService](#cloudpcmanagementservice-values)|Especifica quais serviços gerenciam a conexão local. Os valores possíveis são: `windows365`e `devBox` `unknownFutureValue`. Somente leitura.
 |type|[cloudPcOnPremisesConnectionType](#cloudpconpremisesconnectiontype-values)|Especifica como o Cloud PC provisionado será ingressado no Azure Active Directory. O valor padrão é `hybridAzureADJoin`. Os valores possíveis são: `azureADJoin`, `hybridAzureADJoin`, `unknownFutureValue`.|
-|displayName|Cadeia de caracteres|O nome de exibição da conexão local.|
-|subscriptionId|Cadeia de caracteres|A ID da assinatura de destino do Azure associada ao seu locatário.|
+|displayName|String|O nome de exibição da conexão local.|
+|subscriptionId|String|A ID da assinatura de destino do Azure associada ao seu locatário.|
 |subscriptionName|String|O nome da assinatura de destino do Azure. Somente leitura.|
 |adDomainName|String|O FQDN (nome de domínio totalmente qualificado) do domínio do Active Directory que você deseja ingressar. Opcional.|
-|adDomainUsername|Cadeia de caracteres|O nome de usuário de uma conta do Active Directory (conta de usuário ou serviço) que tem permissões para criar objetos de computador no Active Directory. Formato obrigatório: admin@contoso.com. Opcional.|
-|adDomainPassword|Cadeia de caracteres|A senha associada **a adDomainUsername**.|
+|adDomainUsername|String|O nome de usuário de uma conta do Active Directory (conta de usuário ou serviço) que tem permissões para criar objetos de computador no Active Directory. Formato obrigatório: admin@contoso.com. Opcional.|
+|adDomainPassword|String|A senha associada **a adDomainUsername**.|
 |organizationalUnit|String|A unidade organizacional (OU) na qual a conta do computador é criada. Se deixado nulo, a UO configurada como padrão (um contêiner de objeto de computador conhecido) em seu domínio do Active Directory (OU) será usada. Opcional.|
-|resourceGroupId|Cadeia de caracteres|A ID do grupo de recursos de destino. Formato obrigatório: "/subscriptions/{subscription-id}/resourceGroups/{resourceGroupName}".|
-|virtualNetworkId|Cadeia de caracteres|A ID da rede virtual de destino. Formato obrigatório: "/subscriptions/{subscription-id}/resourceGroups/{resourceGroupName}/providers/Microsoft.Network/virtualNetworks/{virtualNetworkName}".|
+|resourceGroupId|String|A ID do grupo de recursos de destino. Formato obrigatório: "/subscriptions/{subscription-id}/resourceGroups/{resourceGroupName}".|
+|virtualNetworkId|String|A ID da rede virtual de destino. Formato obrigatório: "/subscriptions/{subscription-id}/resourceGroups/{resourceGroupName}/providers/Microsoft.Network/virtualNetworks/{virtualNetworkName}".|
 |subnetId|String|A ID da sub-rede de destino. Formato obrigatório: "/subscriptions/{subscription-id}/resourceGroups/{resourceGroupName}/providers/Microsoft.Network/virtualNetworks/{virtualNetworkId}/subnets/{subnetName}".|
 |healthCheckStatus|[cloudPcOnPremisesConnectionStatus](#cloudpconpremisesconnectionstatus-values)|O status da verificação de saúde mais recente feita na conexão local. Por exemplo, se o status for "passado", a conexão local passou todas as verificações executados pelo serviço. Os valores possíveis são: `pending`, `running`, `passed`, `failed`, `unknownFutureValue`. Somente leitura.|
-|healthCheckStatusDetails|[cloudPcOnPremisesConnectionStatusDetails](../resources/cloudpconpremisesconnectionstatusdetails.md)|Os detalhes das verificações de saúde da conexão e os resultados correspondentes. Retornado somente em `$select` . Para obter um exemplo que mostra como obter a propriedade **inUse,** consulte o Exemplo 2: Obter as propriedades selecionadas de uma conexão local, incluindo [healthCheckStatusDetails](../api/cloudpconpremisesconnection-get.md). Somente leitura.|
-|inUse|Boolean|Quando `true` , a conexão local está em uso. Quando `false` , a conexão não está em uso. Não é possível excluir uma conexão que está em uso. Retornado apenas em `$select`. Para obter um exemplo que mostra como obter a propriedade **inUse,** consulte o Exemplo 2: Obter as propriedades selecionadas de uma conexão local, incluindo [healthCheckStatusDetails](../api/cloudpconpremisesconnection-get.md). Somente leitura.|
+|healthCheckStatusDetails|[cloudPcOnPremisesConnectionStatusDetails](../resources/cloudpconpremisesconnectionstatusdetails.md)|Os detalhes das verificações de saúde da conexão e os resultados correspondentes. Retornado somente em `$select`. Para obter um exemplo que mostra como obter a propriedade **inUse** , consulte Exemplo 2: Obter as propriedades selecionadas de uma conexão local [, incluindo healthCheckStatusDetails](../api/cloudpconpremisesconnection-get.md). Somente leitura.|
+|inUse|Booliano|Quando `true`, a conexão local está em uso. Quando `false`, a conexão não está em uso. Não é possível excluir uma conexão que está em uso. Retornado apenas em `$select`. Para obter um exemplo que mostra como obter a propriedade **inUse** , consulte Exemplo 2: Obter as propriedades selecionadas de uma conexão local [, incluindo healthCheckStatusDetails](../api/cloudpconpremisesconnection-get.md). Somente leitura.|
+
+### <a name="cloudpcmanagementservice-values"></a>Valores do cloudPcManagementService
+
+|Membro| Valor |Descrição|
+|:---|:---|:---|
+|windows365|1| A conexão local foi criada com êxito por meio do Windows365.|
+|devBox|2| A conexão local foi criada com êxito por meio Project Fidalgo.|
+|unknownFutureValue|4| Valor de sentinela de enumeração evolvável. Não usar.|
 
 ### <a name="cloudpconpremisesconnectiontype-values"></a>valores cloudPcOnPremisesConnectionType
 
@@ -92,6 +101,7 @@ Veja a seguir uma representação JSON do recurso.
 {
   "@odata.type": "#microsoft.graph.cloudPcOnPremisesConnection",
   "id": "String (identifier)",
+  "managedBy": "String",
   "type": "String",
   "displayName": "String",
   "subscriptionId": "String",

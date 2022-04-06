@@ -1,16 +1,16 @@
 ---
 title: 'call: unmute'
 description: Permitir que o aplicativo se desmute sozinho.
-author: ananmishr
+author: mkhribech
 ms.localizationpriority: medium
 ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: 14882251b3c07fa3e8f45dc2a5da9b96dd5442a1
-ms.sourcegitcommit: 25acfa7d0153336c9a35d30a1dd422aeadc1342c
+ms.openlocfilehash: d7d9d0729715fd5d7d5437c30396c3a02e6ebb4a
+ms.sourcegitcommit: 10719607271380ea56076ccff5a3b774d0005773
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/03/2022
-ms.locfileid: "62342871"
+ms.lasthandoff: 04/01/2022
+ms.locfileid: "64608118"
 ---
 # <a name="call-unmute"></a>call: unmute
 
@@ -30,7 +30,9 @@ Para obter mais informações sobre como lidar com operações sem deslocamento,
 |:---------------------------------------|:--------------------------------------------|
 | Delegado (conta corporativa ou de estudante)     | Sem suporte.                               |
 | Delegado (conta pessoal da Microsoft) | Sem suporte.                               |
-| Aplicativo                            | Nenhum.                                        |
+| Aplicativo                            | Calls.Initiate.All, Calls.AccessMedia.All |
+
+> **Observação:** As permissões são verificadas quando a chamada é criada; nenhuma verificação de permissão adicional é feita ao chamar essa API. Calls.AccessMedia.All só é necessário para chamadas que usam mídia hospedada pelo aplicativo.
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- { "blockType": "ignored" } -->
@@ -49,7 +51,7 @@ Forneça um objeto JSON com os seguintes parâmetros no corpo da solicitação.
 
 | Parâmetro      | Tipo    |Descrição|
 |:---------------|:--------|:----------|
-|clientContext|String|Cadeia de caracteres de contexto de cliente exclusiva. O limite máximo é 256 caracteres.|
+|clientContext|Cadeia de caracteres|Cadeia de caracteres de contexto de cliente exclusiva. O limite máximo é 256 caracteres.|
 
 ## <a name="response"></a>Resposta
 Se tiver êxito, este método retornará um `200 OK` código de resposta e um [objeto unmuteParticipantOperation](../resources/unmuteParticipantoperation.md) no corpo da resposta.

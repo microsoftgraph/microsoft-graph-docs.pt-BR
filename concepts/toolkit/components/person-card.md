@@ -3,12 +3,12 @@ title: Person-Card componente no microsoft Graph Toolkit
 description: Um Person-Card é um componente para exibir mais informações relacionadas a uma pessoa.
 ms.localizationpriority: medium
 author: vogtn
-ms.openlocfilehash: fcbb58a29405c5491db988a26b2c35a237aab346
-ms.sourcegitcommit: 77d2ab5018371f153d47cc1cd25f9dcbaca28a95
+ms.openlocfilehash: a9ebf62b31756702b925ca9b696bf62624205ee6
+ms.sourcegitcommit: 0e7927f34b7e55d323acbf281e11560cb40a89ed
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63337380"
+ms.lasthandoff: 03/20/2022
+ms.locfileid: "63672039"
 ---
 # <a name="person-card-component-in-the-microsoft-graph-toolkit"></a>Person-Card componente no microsoft Graph Toolkit
 
@@ -92,11 +92,11 @@ Por padrão, o `mgt-person` componente passará os detalhes da pessoa para o `mg
 | Atributo         | Tipo                     | Descrição                                                                           |
 | ---------------- | -------------------------------- | ------------------------------------------------------------------------------------- |
 | person-details | MicrosoftGraph.User <br> MicrosoftGraph.Person <br> MicrosoftGraph.Contact | Objeto Person conforme definido pelo Microsoft Graph, contendo detalhes relacionados ao usuário. |
-| person-image   | cadeia de caracteres                    | Uri de imagem relacionado à pessoa exibida no cartão.                                   |
-| inherit-details   | Nenhum.                  | Permite que o cartão de pessoa ande na árvore pai para `mgt-person` que o componente use os mesmos e `person-details` os `person-image` dados.                      |
-| user-id | cadeia de caracteres | Permite que os desenvolvedores fornecem a ID do usuário para recuperar dados mostrados no componente person-card |
-| person-query | cadeia de caracteres | Permite que os desenvolvedores fornecem consulta de pessoa para recuperar dados mostrados no componente person-card |
-| person-card | cadeia de caracteres | Especifica que o componente `person-card` pode ser mostrado como um cartão pop-up quando você passar o mouse ou clicar no `mgt-person` componente. Os valores permitidos são `hover` ou `click`.
+| person-image   | string                    | Uri de imagem relacionado à pessoa exibida no cartão.                                   |
+| inherit-details   | Nenhuma.                  | Permite que o cartão de pessoa ande na árvore pai para `mgt-person` que o componente use os mesmos e `person-details` os `person-image` dados.                      |
+| user-id | string | Permite que os desenvolvedores fornecem a ID do usuário para recuperar dados mostrados no componente person-card |
+| person-query | string | Permite que os desenvolvedores fornecem consulta de pessoa para recuperar dados mostrados no componente person-card |
+| person-card | string | Especifica que o componente `person-card` pode ser mostrado como um cartão pop-up quando você passar o mouse ou clicar no `mgt-person` componente. Os valores permitidos são `hover` ou `click`.
 
 
 ## <a name="templates"></a>Modelos
@@ -164,7 +164,7 @@ Para saber mais, confira [componentes de estilo](../customize-components/style.m
 
 ## <a name="microsoft-graph-permissions"></a>Permissões do Microsoft Graph
 
-O Person-Card usa as seguintes APIs e permissões do Microsoft Graph.
+O Person-Card usa as seguintes APIs e permissões Graph Microsoft.
 
 | Configuração | Permissão | API | Section |
 | --- | ---------- | ------- | --------- |
@@ -176,6 +176,7 @@ O Person-Card usa as seguintes APIs e permissões do Microsoft Graph.
 | `sections.organization.showWorksWith` set (padrão) | People.Read.All | [/users/{id}/people](/graph/api/user-list-people) | Organização |
 | `sections.mailMessages` habilitado (padrão) | Mail.ReadBasic | [/me/messages](/graph/api/user-list-messages) | Mensagens |
 | `sections.files` habilitado (padrão) | Sites.Read.All | [/me/insights/shared](/graph/api/insights-list-shared) e [/me/insights/used](/graph/api/insights-list-used) | Arquivos |
+| `sections.profile` habilitado (padrão) | User.Read.All | [/users/{id}/profile](/graph/api/profile-get?view=graph-rest-beta) | Perfil |
 
 A `MgtPersonCard` classe também expõe um método `getScopes` estático que retorna uma matriz de escopos necessários para que o cartão de pessoa funcione com base na configuração global do cartão de pessoa.
 
@@ -201,4 +202,4 @@ O Person-Card usa o provedor de autenticação global descrito na [documentaçã
 |`presence`|Presença da pessoa|Usado, quando `showPresence` está definido como `true`|
 |`users`|Informações do usuário da pessoa|Usado quando `userId` especificado ou definido `personQuery` como `me`|
 
-Consulte [Cache para](../customize-components/cache.md) obter mais detalhes sobre como configurar o cache.
+Consulte [Caching](../customize-components/cache.md) para obter mais detalhes sobre como configurar o cache.

@@ -5,19 +5,19 @@ author: rolyon
 ms.localizationpriority: medium
 ms.prod: directory-management
 doc_type: conceptualPageType
-ms.openlocfilehash: 45e3ab02292deea2af8c6e632b2cb698ac13867d
-ms.sourcegitcommit: 2456cf3c4117b88afefef139593796a2f919e7cc
+ms.openlocfilehash: 609e92333195f883ed8387320f925255654fa5ad
+ms.sourcegitcommit: 10719607271380ea56076ccff5a3b774d0005773
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/18/2021
-ms.locfileid: "61077676"
+ms.lasthandoff: 04/01/2022
+ms.locfileid: "64607754"
 ---
 # <a name="overview-of-custom-security-attributes-using-the-microsoft-graph-api-preview"></a>Visão geral dos atributos de segurança personalizados usando a API do Microsoft Graph (Visualização)
 
 > [!IMPORTANT]
-> O recurso de atributos de segurança personalizados está atualmente em Visualização. Consulte os [Termos complementares](https://azure.microsoft.com/support/legal/preview-supplemental-terms/) de Uso para visualizações Microsoft Azure para termos legais que se aplicam aos recursos do Azure que estão em beta, visualização ou que ainda não foram lançados em disponibilidade geral.
+> O recurso de atributos de segurança personalizados está atualmente em Visualização. Consulte Os [Termos de](https://azure.microsoft.com/support/legal/preview-supplemental-terms/) Uso Suplementares para visualizações Microsoft Azure para termos legais que se aplicam aos recursos do Azure que estão em beta, visualização ou que ainda não foram lançados em disponibilidade geral.
 
-[Atributos de](/azure/active-directory/fundamentals/custom-security-attributes-overview) segurança personalizados no Azure Active Directory (Azure AD) são atributos específicos dos negócios (pares de valores-chave) que você pode definir e atribuir a objetos do Azure AD. Esses atributos podem ser usados para armazenar informações, categorizar objetos ou impor o controle de acesso fino sobre recursos específicos do Azure. Atributos de segurança personalizados podem ser usados com o controle de acesso baseado em atributo [do Azure (Azure ABAC)](/azure/role-based-access-control/conditions-overview).
+[Atributos de](/azure/active-directory/fundamentals/custom-security-attributes-overview) segurança personalizados no Azure Active Directory (Azure AD) são atributos específicos dos negócios (pares de valores-chave) que você pode definir e atribuir a objetos do Azure AD. Esses atributos podem ser usados para armazenar informações, categorizar objetos ou impor o controle de acesso fino sobre recursos específicos do Azure. Atributos de segurança personalizados podem ser usados com o controle de acesso baseado em [atributo do Azure (Azure ABAC)](/azure/role-based-access-control/conditions-overview).
 
 Este artigo fornece uma visão geral de como usar a API do Microsoft Graph para definir e atribuir programaticamente seus próprios atributos de segurança personalizados.
 
@@ -33,7 +33,7 @@ Um *conjunto de atributos* é um grupo de atributos de segurança personalizados
 + Não é possível renomeá-los ou excluídos.
 + Pode ser delegado a outros usuários para definir e atribuir atributos de segurança personalizados.
 
-Para configurar conjuntos de atributos, use o [tipo de recurso attributeSet.](attributeset.md)
+Para configurar conjuntos de atributos, use o [tipo de recurso attributeSet](attributeset.md).
  
 ### <a name="custom-security-attribute-definitions"></a>Definições de atributo de segurança personalizadas
 
@@ -43,7 +43,7 @@ Uma *definição de atributo de segurança personalizada* é o esquema de um atr
 + Não pode ser renomeado ou excluído, mas pode ser desativado.
 + Deve fazer parte de um conjunto de atributos.
 
-Para configurar definições de atributo de segurança personalizadas, use o tipo de recurso [customSecurityAttributeDefinition](customsecurityattributedefinition.md).
+Para configurar definições de atributo de segurança personalizadas, use o [tipo de recurso customSecurityAttributeDefinition](customsecurityattributedefinition.md).
 
 ### <a name="allowed-values"></a>Valores permitidos
 
@@ -65,24 +65,9 @@ Atributos de segurança personalizados podem ser atribuídos aos seguintes objet
 
 ## <a name="limits-and-constraints"></a>Limites e restrições
 
-Aqui estão alguns dos limites e restrições para atributos de segurança personalizados.
+Para uma lista dos limites e restrições para atributos de segurança personalizados, consulte [Limites e restrições](/azure/active-directory/fundamentals/custom-security-attributes-overview#limits-and-constraints).
 
-| Recurso | Limite | Observações |
-| --- | :---: | --- |
-| Definições de atributo por locatário | 500 | Aplica-se apenas a atributos ativos no locatário |
-| Conjuntos de atributos por locatário | 500 |  |
-| Comprimento do nome do conjunto de atributos | 32 | Caracteres Unicode e maiúsculas de minúsculas |
-| Comprimento da descrição do conjunto de atributos | 128 | Caracteres Unicode |
-| Comprimento do nome do atributo | 32 | Caracteres Unicode e maiúsculas de minúsculas |
-| Comprimento da descrição do atributo | 128 | Caracteres Unicode |
-| Valores predefinidos |  | Caracteres Unicode e minúsculas confidenciais |
-| Valores predefinidos por definição de atributo | 100 |  |
-| Comprimento do valor do atributo | 64 | Caracteres Unicode |
-| Valores de atributo atribuídos por objeto | 50 | Os valores podem ser distribuídos entre atributos individuais e de vários valores.<br/>Exemplo: 5 atributos com 10 valores cada ou 50 atributos com 1 valor cada |
-| Caracteres não permitidos para:<br/>Nome do conjunto de atributos<br/>Nome do atributo | ``<space> ` ~ ! @ # $ % ^ & * ( ) _ - + = { [ } ] \| \ : ; " ' < , > . ? /`` |  |
-| Caracteres não permitidos para:<br/>Valores de atributo | `# % & * + \ : " / < > ?` |  |
-
-## <a name="permissions"></a>Permissões
+## <a name="permissions"></a>Permissions
 
 Para gerenciar atributos de segurança personalizados, a entidade de chamada deve ser atribuída a uma das seguintes funções do Azure AD. Por padrão, o Administrador Global e outras funções de administrador não têm permissões para ler, definir ou atribuir atributos de segurança personalizados.
 
@@ -91,7 +76,7 @@ Para gerenciar atributos de segurança personalizados, a entidade de chamada dev
 + [Leitor de Atribuição de Atributo](/azure/active-directory/roles/permissions-reference#attribute-assignment-reader)
 + [Administrador de Atribuição de Atributo](/azure/active-directory/roles/permissions-reference#attribute-assignment-administrator)
 
-Além disso, a entidade de chamada deve ter as permissões de atributos de [segurança personalizados apropriados.](/graph/permissions-reference#custom-security-attributes-permissions)
+Além disso, a entidade de chamada deve ter as permissões de atributos de [segurança personalizados apropriados](/graph/permissions-reference#custom-security-attributes-permissions).
 
 ## <a name="license-requirements"></a>Requisitos de licença
 

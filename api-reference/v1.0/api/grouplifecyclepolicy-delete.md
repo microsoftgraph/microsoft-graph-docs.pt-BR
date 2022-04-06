@@ -5,20 +5,20 @@ author: Jordanndahl
 ms.localizationpriority: medium
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: 7cdb2354858ca1afd215f4360680792b08966630
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: 8828fd3c01e989e2fd122802d3728765fef57664
+ms.sourcegitcommit: 43a7c971a97ce1e4c55cbae089820bfce7dfe42b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62114754"
+ms.lasthandoff: 03/29/2022
+ms.locfileid: "64510706"
 ---
 # <a name="delete-grouplifecyclepolicy"></a>Excluir groupLifecyclePolicy
 
 Namespace: microsoft.graph
 
-Exclui um objeto [groupLifecyclePolicy](../resources/grouplifecyclepolicy.md).
+Excluir um [groupLifecyclePolicy](../resources/grouplifecyclepolicy.md).
 
-## <a name="permissions"></a>Permissões
+## <a name="permissions"></a>Permissions
 
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
@@ -32,7 +32,6 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 <!-- { "blockType": "ignored" } -->
 ```http
 DELETE /groupLifecyclePolicies/{id}
-
 ```
 
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
@@ -52,8 +51,9 @@ Se bem-sucedido, este método retorna um código de resposta `204 No Content`. N
 
 ## <a name="example"></a>Exemplo
 
-##### <a name="request"></a>Solicitação
+### <a name="request"></a>Solicitação
 
+Veja a seguir um exemplo de uma solicitação.
 
 # <a name="http"></a>[HTTP](#tab/http)
 <!-- {
@@ -89,7 +89,9 @@ DELETE https://graph.microsoft.com/v1.0/groupLifecyclePolicies/{id}
 
 ---
 
-##### <a name="response"></a>Resposta
+### <a name="response"></a>Resposta
+
+Este é um exemplo de solicitação.
 
 <!-- {
   "blockType": "response",

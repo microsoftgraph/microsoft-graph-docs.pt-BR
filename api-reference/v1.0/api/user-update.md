@@ -5,12 +5,12 @@ author: jpettere
 ms.localizationpriority: high
 ms.prod: users
 doc_type: apiPageType
-ms.openlocfilehash: 95eaa9d149fd34b6665c94e2df062aa055db841a
-ms.sourcegitcommit: 77d2ab5018371f153d47cc1cd25f9dcbaca28a95
+ms.openlocfilehash: 2465cdff0cfccc8b6d6b3d7e234b5acec8c159f7
+ms.sourcegitcommit: 0076eb6abb89be3dca3575631924a74a5202be30
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63333908"
+ms.lasthandoff: 04/03/2022
+ms.locfileid: "64630937"
 ---
 # <a name="update-user"></a>Atualizar usuário
 
@@ -23,7 +23,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegado (conta corporativa ou de estudante) | User.ReadWrite, User.ReadWrite.All, User.ManageIdentities.All, Directory.ReadWrite.All, Directory.AccessAsUser.All    |
+|Delegado (conta corporativa ou de estudante) | User.ReadWrite, User.ReadWrite.All, User.ManageIdentities.All, Directory.ReadWrite.All    |
 |Delegado (conta pessoal da Microsoft) | User.ReadWrite    |
 |Aplicativo | User.ReadWrite.All, User.ManageIdentities.All, Directory.ReadWrite.All |
 
@@ -267,7 +267,6 @@ Content-type: application/json
 ---
 
 
-
 #### <a name="response"></a>Resposta
 <!-- {
   "blockType": "response"
@@ -275,6 +274,54 @@ Content-type: application/json
 ```http
 HTTP/1.1 204 No Content
 ```
+
+
+### <a name="example-4-add-or-update-the-values-of-a-schema-extension-for-a-user"></a>Exemplo 4: Adicionar ou atualizar os valores de uma extensão de esquema para um usuário
+
+Você pode atualizar ou atribuir um valor a uma única propriedade ou a todas as propriedades na extensão.
+
+#### <a name="request"></a>Solicitação
+
+<!-- {
+  "blockType": "request",
+  "name": "update_schemaextension"
+}-->
+```msgraph-interactive
+PATCH https://graph.microsoft.com/v1.0/users/4562bcc8-c436-4f95-b7c0-4f8ce89dca5e
+Content-type: application/json
+
+{
+    "ext55gb1l09_msLearnCourses": {
+        "courseType": "Admin"
+    }
+}
+```
+
+#### <a name="response"></a>Resposta
+
+<!-- {
+  "blockType": "response"
+} -->
+```http
+HTTP/1.1 204 No Content
+```
+
+>**Observação:** para remover o valor da extensão de esquema do objeto de usuário, defina a propriedade como `null`. Por exemplo:
+>
+>```http
+>PATCH https://graph.microsoft.com/v1.0/users/4562bcc8-c436-4f95-b7c0-4f8ce89dca5e
+>Content-type: application/json
+>
+>{
+>    "ext55gb1l09_msLearnCourses": null
+>}
+>```
+
+## <a name="see-also"></a>Confira também
+
+- [Adicionar dados personalizados a recursos usando extensões](/graph/extensibility-overview)
+- [Adicionar dados personalizados aos usuários usando extensões abertas (visualização)](/graph/extensibility-open-users)
+- [Adicionar dados personalizados a grupos usando extensões do esquema (visualização)](/graph/extensibility-schema-groups)
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->

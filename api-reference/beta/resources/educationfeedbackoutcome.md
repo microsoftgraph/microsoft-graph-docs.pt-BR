@@ -1,16 +1,16 @@
 ---
 title: Tipo de recurso educationFeedbackOutcome
 description: Um educationOutcome que fornece comentários na forma de texto.
-localization_priority: Normal
+ms.localizationpriority: medium
 author: dipakboyed
 ms.prod: education
 doc_type: resourcePageType
-ms.openlocfilehash: 1c50776f6b8dde27d8f937e8b7ee2028ce1cfca1
-ms.sourcegitcommit: eb31a6b4a582a59b44df3453450a82fd366342d0
+ms.openlocfilehash: 325994248fc72abbf96ec1c3113699f05ba3a75e
+ms.sourcegitcommit: c21fefa5c3c62df14147e7918cb43327f7d72e69
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/09/2021
-ms.locfileid: "50153639"
+ms.lasthandoff: 04/06/2022
+ms.locfileid: "64684701"
 ---
 # <a name="educationfeedbackoutcome-resource-type"></a>Tipo de recurso educationFeedbackOutcome
 
@@ -18,7 +18,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Representa comentários sobre [um objeto educationOutcome](educationoutcome.md) na forma de texto. 
+Representa comentários sobre um [objeto educationOutcome](educationoutcome.md) na forma de texto. 
 
 ## <a name="methods"></a>Métodos
 
@@ -30,8 +30,9 @@ Representa comentários sobre [um objeto educationOutcome](educationoutcome.md) 
 
 | Propriedade     | Tipo        | Descrição |
 |:-------------|:------------|:------------|
-|comentários|[educationFeedback](educationfeedback.md)|Comentários escritos pelo professor para o aluno.|
-|publishedFeedback|[educationFeedback](educationfeedback.md)|Uma cópia da propriedade de feedback que é feita quando a nota é liberada para o aluno.|
+|id|Cadeia de caracteres|Identificador exclusivo para educationFeedbackOutcome.|
+|comentários|[educationFeedback](educationfeedback.md)|Comentários escritos do professor para o aluno.|
+|publishedFeedback|[educationFeedback](educationfeedback.md)|Uma cópia da propriedade de comentários que é feita quando a nota é liberada para o aluno.|
 
 ## <a name="relationships"></a>Relações
 
@@ -52,6 +53,7 @@ Veja a seguir uma representação JSON do recurso.
 
 ```json
 {
+  "id": "String (identifier)",
   "feedback": {"@odata.type": "microsoft.graph.educationFeedback"},
   "publishedFeedback": {"@odata.type": "microsoft.graph.educationFeedback"}
 }

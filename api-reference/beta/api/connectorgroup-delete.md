@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: japere
 ms.prod: applications
 doc_type: apiPageType
-ms.openlocfilehash: a411dac19133b036ad95155dc937c1656df1a9fa
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: 52f3f5995a3b1dd650f79c4645042e611e38cdd3
+ms.sourcegitcommit: 0e7927f34b7e55d323acbf281e11560cb40a89ed
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62103705"
+ms.lasthandoff: 03/20/2022
+ms.locfileid: "63671178"
 ---
 # <a name="delete-connectorgroup"></a>Excluir connectorGroup
 
@@ -18,7 +18,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Excluir um [connectorGroup](../resources/connectorgroup.md). Todos [os conectores](../resources/connector.md) e aplicativos devem ser removidos do grupo de conectores antes que um grupo de conectores possa ser excluído.
+Exclua um [connectorGroup](../resources/connectorgroup.md). Todos [os conectores e aplicativos](../resources/connector.md) devem ser removidos do grupo de conectores antes que um grupo de conectores possa ser excluído.
 
 ## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
@@ -26,7 +26,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegado (conta corporativa ou de estudante) | Directory.ReadWrite.All, Directory.AccessAsUser.All    |
+|Delegado (conta corporativa ou de estudante) | Directory.ReadWrite.All    |
 |Delegado (conta pessoal da Microsoft) | Sem suporte.    |
 |Aplicativo | Sem suporte.  |
 

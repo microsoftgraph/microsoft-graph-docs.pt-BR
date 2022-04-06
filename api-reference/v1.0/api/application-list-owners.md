@@ -5,25 +5,25 @@ author: sureshja
 ms.localizationpriority: medium
 ms.prod: applications
 doc_type: apiPageType
-ms.openlocfilehash: cb8e7f62c87aa53adf3dac95d63a25f322959867
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: 9fd7f667e25fea2df629d3f3ce3020c976a8d154
+ms.sourcegitcommit: 0e7927f34b7e55d323acbf281e11560cb40a89ed
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62129194"
+ms.lasthandoff: 03/20/2022
+ms.locfileid: "63669666"
 ---
 # <a name="list-owners"></a>Listar proprietários
 
 Namespace: microsoft.graph
 
-Recupere uma lista de proprietários de um aplicativo que são [objetos directoryObject.](../resources/directoryobject.md)
+Recupere uma lista de proprietários de um aplicativo que são [objetos directoryObject](../resources/directoryobject.md) .
 
 ## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegado (conta corporativa ou de estudante) | Application.ReadWrite.All, Directory.Read.All, Directory.ReadWrite.All, Directory.AccessAsUser.All    |
+|Delegado (conta corporativa ou de estudante) | Application.ReadWrite.All, Directory.Read.All, Directory.ReadWrite.All    |
 |Delegado (conta pessoal da Microsoft) | Sem suporte.    |
 |Aplicativo | Application.ReadWrite.All, Directory.Read.All, Directory.ReadWrite.All |
 
