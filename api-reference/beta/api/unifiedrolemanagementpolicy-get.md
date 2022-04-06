@@ -1,25 +1,25 @@
 ---
 title: Obter unifiedRoleManagementPolicy
 description: Leia as propriedades e as relações de um objeto unifiedRoleManagementPolicy.
-author: carolinetempleton
+author: japere
 ms.localizationpriority: medium
 ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: 1098d2f2a97d1bb66dcbe695fa142d37159f1742
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: 2cbedbdd3c3217fcd4d0fe87e66a2b05ed3f4ee6
+ms.sourcegitcommit: 43a7c971a97ce1e4c55cbae089820bfce7dfe42b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62115243"
+ms.lasthandoff: 03/29/2022
+ms.locfileid: "64510271"
 ---
 # <a name="get-unifiedrolemanagementpolicy"></a>Obter unifiedRoleManagementPolicy
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Leia as propriedades e as relações de [um objeto unifiedRoleManagementPolicy.](../resources/unifiedrolemanagementpolicy.md)
+Leia as propriedades e as relações de [um objeto unifiedRoleManagementPolicy](../resources/unifiedrolemanagementpolicy.md) . Para ler uma política que se aplica ao Azure RBAC, use a [API DE PIM REST do Azure para políticas de gerenciamento de função](/rest/api/authorization/role-management-policies/get).
 
-## <a name="permissions"></a>Permissões
+## <a name="permissions"></a>Permissions
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão|Permissões (da com menos para a com mais privilégios)|
@@ -51,7 +51,7 @@ Não forneça um corpo de solicitação para esse método.
 
 ## <a name="response"></a>Resposta
 
-Se tiver êxito, este método retornará um código de resposta e um `200 OK` [objeto unifiedRoleManagementPolicy](../resources/unifiedrolemanagementpolicy.md) no corpo da resposta.
+Se tiver êxito, este método retornará um `200 OK` código de resposta e um [objeto unifiedRoleManagementPolicy](../resources/unifiedrolemanagementpolicy.md) no corpo da resposta.
 
 ## <a name="examples"></a>Exemplos
 

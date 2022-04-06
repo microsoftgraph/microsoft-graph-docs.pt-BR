@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: adimitui
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: c9e1f065f3fdd21dcdb4d7cf067f0a7bf25c3d62
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: 725b5685b46a5c61ab6f17378794afdd50fe8784
+ms.sourcegitcommit: 0e7927f34b7e55d323acbf281e11560cb40a89ed
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62096718"
+ms.lasthandoff: 03/20/2022
+ms.locfileid: "63670975"
 ---
 # <a name="get-a-directory-setting-template"></a>Obter um modelo de configuração de diretório
 
@@ -18,7 +18,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Um modelo de configuração de diretório representa um modelo de configurações a partir dos quais as configurações podem ser criadas em um locatário. Essa operação permite a recuperação das propriedades do **objeto directorySettingTemplate,** incluindo as configurações disponíveis e seus padrões.
+Um modelo de configuração de diretório representa um modelo de configurações a partir dos quais as configurações podem ser criadas em um locatário. Essa operação permite a recuperação das propriedades do **objeto directorySettingTemplate** , incluindo as configurações disponíveis e seus padrões.
 
 > **Observação**: a versão /beta dessa API só se aplica a grupos. A versão /v1.0 desta API foi renomeada para *Get groupSettingTemplate*.
 
@@ -27,7 +27,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegado (conta corporativa ou de estudante) | Directory.Read.All, Directory.ReadWrite.All, Directory.AccessAsUser.All    |
+|Delegado (conta corporativa ou de estudante) | Directory.Read.All, Directory.ReadWrite.All    |
 |Delegado (conta pessoal da Microsoft) | Sem suporte.    |
 |Aplicativo | Directory.Read.All, Directory.ReadWrite.All |
 
@@ -49,7 +49,7 @@ Não forneça um corpo de solicitação para esse método.
 
 ## <a name="response"></a>Resposta
 
-Se tiver êxito, este método retornará um código `200 OK` de resposta e um objeto [directorySettingTemplate](../resources/directorysettingtemplate.md) no corpo da resposta.
+Se tiver êxito, este método retornará um `200 OK` código de resposta e [um objeto directorySettingTemplate](../resources/directorysettingtemplate.md) no corpo da resposta.
 ## <a name="example"></a>Exemplo
 ### <a name="request"></a>Solicitação
 Este é um exemplo da solicitação.

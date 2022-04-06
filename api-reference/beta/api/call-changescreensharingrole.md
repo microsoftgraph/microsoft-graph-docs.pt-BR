@@ -1,16 +1,16 @@
 ---
 title: 'call: changeScreenSharingRole'
 description: Permitir que os aplicativos compartilhem conteúdo de tela com os participantes de uma chamada de grupo.
-author: ananmishr
+author: mkhribech
 ms.localizationpriority: medium
 ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: 360ceab522ca22d95fb58ae4d691e54800ad0a84
-ms.sourcegitcommit: 25acfa7d0153336c9a35d30a1dd422aeadc1342c
+ms.openlocfilehash: 2595beeb9fa00c15853a1dbd776f14d05632694a
+ms.sourcegitcommit: 10719607271380ea56076ccff5a3b774d0005773
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/03/2022
-ms.locfileid: "62345695"
+ms.lasthandoff: 04/01/2022
+ms.locfileid: "64607432"
 ---
 # <a name="call-changescreensharingrole"></a>call: changeScreenSharingRole
 
@@ -22,7 +22,7 @@ Permitir que os aplicativos compartilhem conteúdo de tela com os participantes 
 
 > **Observação:** Isso só é suportado para chamadas de grupo que usam App-Hosted Mídia.
 
-## <a name="permissions"></a>Permissões
+## <a name="permissions"></a>Permissions
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 | Tipo de permissão                        | Permissões (da com menos para a com mais privilégios) |
@@ -50,7 +50,7 @@ Forneça um objeto JSON com os seguintes parâmetros no corpo da solicitação.
 
 | Parâmetro      | Tipo    |Descrição|
 |:---------------|:--------|:----------|
-|role|String|Os valores possíveis são: 'visualizador', 'sharer'|
+|role|Cadeia de caracteres|Os valores possíveis são: 'visualizador', 'sharer'|
 
 ## <a name="response"></a>Resposta
 Se tiver êxito, este método retornará um `202 Accepted` código de resposta e todos os participantes receberão uma atualização de lista.

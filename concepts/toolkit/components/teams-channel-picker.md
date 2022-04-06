@@ -1,18 +1,18 @@
 ---
-title: Microsoft Teams Componente selador de canal no Microsoft Graph Toolkit
+title: Microsoft Teams do Selador de Canal no Microsoft Graph Toolkit
 description: Você pode usar o mgt-teams-channel-picker para pesquisar canais e equipes associadas ao usuário no microsoft Graph.
 ms.localizationpriority: medium
-author: vogtn
-ms.openlocfilehash: 5e44218da3f2ec1e0e2b36cfd9137bb91e189b6d
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+author: sebastienlevert
+ms.openlocfilehash: 0b37085f580258abb14737384d4a3d4c0a535b45
+ms.sourcegitcommit: cc9e5b3630cb84c48bbbb2d84a963b9562d1fb78
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59129660"
+ms.lasthandoff: 03/31/2022
+ms.locfileid: "64589258"
 ---
-# <a name="microsoft-teams-channel-picker-component-in-the-microsoft-graph-toolkit"></a>Microsoft Teams Componente selador de canal no Microsoft Graph Toolkit
+# <a name="microsoft-teams-channel-picker-component-in-the-microsoft-graph-toolkit"></a>Microsoft Teams do Selador de Canal no Microsoft Graph Toolkit
 
-Você pode usar o `mgt-teams-channel-picker` componente para habilitar pesquisas Microsoft Teams canais associados a um usuário. O componente pode pesquisar todas as equipes que o usuário ingressou e cada canal nessas equipes. 
+Você pode usar o componente `mgt-teams-channel-picker` para habilitar pesquisas Microsoft Teams canais associados a um usuário. O componente pode pesquisar todas as equipes que o usuário ingressou e cada canal nessas equipes. 
 
 ## <a name="example"></a>Exemplo
 
@@ -24,7 +24,7 @@ O exemplo a seguir mostra o `mgt-teams-channel-picker` componente. Comece a proc
 
 ## <a name="getting-the-selected-channel"></a>Obter o canal selecionado
 
-Use a propriedade para recuperar o canal selecionado no momento `selectedItem` e a equipe pai. Esse valor será nulo se nenhum canal tiver sido selecionado. `selectedItem` contém duas propriedades: `channel` ([MicrosoftGraph.Channel](/graph/api/resources/channel)) e `team` ([MicrosoftGraph.Team](/graph/api/resources/team)).
+Use a `selectedItem` propriedade para recuperar o canal selecionado no momento e a equipe pai. Esse valor será nulo se nenhum canal tiver sido selecionado. `selectedItem` contém duas propriedades: `channel` ([MicrosoftGraph.Channel](/graph/api/resources/channel)) e `team` ([MicrosoftGraph.Team](/graph/api/resources/team)).
 
 ```javascript
 const channelPicker = document.querySelector('mgt-teams-channel-picker');
@@ -76,17 +76,17 @@ mgt-teams-channel-picker {
 }
 ```
 
-## <a name="events"></a>Events
+## <a name="events"></a>Eventos
 
 Evento | Quando é emitido | Dados personalizados | Cancelável | Bolhas | Funciona com modelo personalizado
 ------|-------------------|--------------|:-----------:|:---------:|:---------------------------:|
-`selectionChanged` | Disparado quando o usuário faz uma alteração na seleção de um canal | O item selecionado no momento como equipe `{ channel: ` [de](/graph/api/resources/channel) `, team: ` [canal](/graph/api/resources/team)`}` | Não | Não | Sim
+`selectionChanged` | Disparado quando o usuário faz uma alteração na seleção de um canal | O item selecionado no momento como `{ channel: `[channelteam](/graph/api/resources/team)[](/graph/api/resources/channel)`, team: ``}` | Não | Não | Sim
 
 Para obter mais informações sobre como lidar com eventos, consulte [eventos](../customize-components/events.md).
 
 ## <a name="templates"></a>Modelos
 
-`mgt-teams-channel-picker` oferece suporte [a vários modelos](../customize-components/templates.md) que você pode usar para substituir determinadas partes do componente. Para especificar um modelo, inclua um elemento dentro de um componente e de definir o `<template>` valor como um dos `data-type` seguintes.
+`mgt-teams-channel-picker` oferece suporte [a vários modelos](../customize-components/templates.md) que você pode usar para substituir determinadas partes do componente. Para especificar um modelo, inclua um `<template>` elemento dentro de um componente e de `data-type` definir o valor como um dos seguintes.
 
 | Tipo de dados | Contexto de dados | Descrição |
 | --- | --- | --- |
@@ -105,7 +105,7 @@ O exemplo a seguir mostra como usar o `error` modelo.
 
 ## <a name="microsoft-graph-permissions"></a>Permissões do Microsoft Graph
 
-Este componente usa as seguintes APIs Graph Microsoft e permissões por padrão.
+Esse componente usa as seguintes APIs Graph Microsoft e permissões por padrão.
 
 | API                                                                                                              | Permissão  |
 | ---------------------------------------------------------------------------------------------------------------- | ----------- |
@@ -120,7 +120,7 @@ import {MgtTeamsChannelPicker} from "@microsoft/mgt-components";
 MgtTeamsChannelPicker.config.useTeamsBasedScopes = true;
 ```
 
-Com `useTeamsBasedScopes` definido como , o Teams Selador de Canal usará os seguintes `true` escopos. 
+Com `useTeamsBasedScopes` definido como `true`, o Teams Selador de Canal usará os seguintes escopos. 
 
 | API                                                                                                              | Permissão  |
 | ---------------------------------------------------------------------------------------------------------------- | ----------- |
@@ -139,7 +139,7 @@ O `mgt-teams-channel-picker` componente não armazena dados em cache.
 
 ## <a name="extend-for-more-control"></a>Estender para obter mais controle
 
-Para cenários mais complexos ou um UX realmente personalizado, esse componente expõe vários métodos para substituição `protected render*` em extensões de componentes:
+Para cenários mais complexos ou um UX realmente personalizado, `protected render*` esse componente expõe vários métodos para substituição em extensões de componentes:
 
 | Método | Descrição |
 | - | - |

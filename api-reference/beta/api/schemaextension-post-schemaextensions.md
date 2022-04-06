@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: dkershaw10
 doc_type: apiPageType
 ms.prod: extensions
-ms.openlocfilehash: 5f7d579d2d265800526213b8b745cd6f8b059275
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: 362688a24163da2ed26c625b81d21790269467c8
+ms.sourcegitcommit: 0e7927f34b7e55d323acbf281e11560cb40a89ed
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62105422"
+ms.lasthandoff: 03/20/2022
+ms.locfileid: "63671934"
 ---
 # <a name="create-schemaextension"></a>Criar schemaExtension
 
@@ -30,8 +30,8 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegada (conta corporativa ou de estudante) | Application.ReadWrite.All, Directory.AccessAsUser.All    |
-|Delegada (conta pessoal da Microsoft) | Sem suporte.    |
+|Delegado (conta corporativa ou de estudante) | Application.ReadWrite.All    |
+|Delegado (conta pessoal da Microsoft) | Sem suporte.    |
 |Aplicativo | Sem suporte. |
 
 > [!NOTE]
@@ -72,7 +72,7 @@ Se bem-sucedido, este método retorna o código de resposta `201 Created` e o ob
 
 #### <a name="request"></a>Solicitação
 
-O exemplo a seguir mostra o uso de um nome de domínio verificado e um nome de esquema, para formar uma cadeia de caracteres exclusiva para a propriedade id da definição de extensão `graphlearn` `courses` de esquema.  A cadeia de caracteres exclusiva é baseada neste formato,\{_&#65279;domainName_\}\_\{_&#65279;schemaName_\}.
+O exemplo a seguir mostra o uso de um nome de domínio verificado e `graphlearn`um nome de esquema, `courses`para formar uma cadeia de caracteres exclusiva para a propriedade **id** da definição de extensão de esquema. A cadeia de caracteres exclusiva é baseada neste formato,\{_&#65279;domainName_\}\_\{_&#65279;schemaName_\}.
 
 No corpo da solicitação, forneça uma representação JSON do objeto [schemaExtension](../resources/schemaextension.md).
 

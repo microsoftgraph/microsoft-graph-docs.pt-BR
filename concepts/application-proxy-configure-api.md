@@ -1,24 +1,24 @@
 ---
-title: Configurar Proxy de Aplicativo usando APIs Graph Microsoft
-description: Configure o Proxy de Aplicativo usando as APIs do Microsoft Graph para fornecer acesso remoto e um único login a aplicativos locais.
+title: Configurar Proxy de Aplicativo apIs do Microsoft Graph
+description: Configure Proxy de Aplicativo usando as APIs do Microsoft Graph para fornecer acesso remoto e logon único a aplicativos locais.
 author: davidmu1
 ms.topic: conceptual
 ms.localizationpriority: medium
 ms.prod: applications
-ms.openlocfilehash: 96a1f390b41f585d530b04a831a2d9a79a12aa88
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: c6466de02e1521889db27b509bc0ecb2d07cd4af
+ms.sourcegitcommit: c21fefa5c3c62df14147e7918cb43327f7d72e69
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59142422"
+ms.lasthandoff: 04/06/2022
+ms.locfileid: "64685205"
 ---
-# <a name="configure-application-proxy-using-the-microsoft-graph-api"></a>Configurar o Proxy de Aplicativo usando a API Graph Microsoft
+# <a name="configure-application-proxy-using-the-microsoft-graph-api"></a>Configurar Proxy de Aplicativo usando o Microsoft API do Graph
 
-Neste artigo, você aprenderá a configurar o proxy de aplicativo Azure Active Directory (Azure AD) para um aplicativo. O Proxy de Aplicativo fornece acesso remoto seguro e um único login em aplicativos Web locais. Depois de configurar o Proxy de Aplicativo para um aplicativo, os usuários podem acessar seus aplicativos locais por meio de uma URL externa, do portal Meus Aplicativos ou de outros portais de aplicativos internos.
+Neste artigo, você aprenderá a configurar o Azure Active Directory (Azure AD) Proxy de Aplicativo para um aplicativo. Proxy de Aplicativo fornece acesso remoto seguro e logon único para aplicativos Web locais. Depois de Proxy de Aplicativo para um aplicativo, os usuários podem acessar seus aplicativos locais por meio de uma URL externa, do portal do Meus Aplicativos ou de outros portais de aplicativos internos.
 
 ## <a name="prerequisites"></a>Pré-requisitos
 
-- Este tutorial supõe que você já instalou um conector e concluiu os [pré-requisitos](/azure/active-directory/manage-apps/application-proxy-add-on-premises-application#before-you-begin) para o Proxy de Aplicativo para que os conectores possam se comunicar com os serviços do Azure AD.
+- Este tutorial pressupõe que você já instalou um conector e concluiu os [pré-requisitos](/azure/active-directory/app-proxy/application-proxy-add-on-premises-application#prerequisites) do Proxy de Aplicativo para que os conectores possam se comunicar com os serviços do Azure AD.
 - Este tutorial assume que você está usando o Microsoft Graph Explorer, mas você pode usar o Postman ou criar seu próprio aplicativo cliente para chamar o Microsoft Graph. Para chamar as APIs do Microsoft Graph neste tutorial, você precisa usar uma conta com a função de administrador global e as permissões apropriadas. Conclua as seguintes etapas para definir as permissões no Microsoft Graph Explorer:
     1. Inicie o [Microsoft Graph Explorer](https://developer.microsoft.com/graph/graph-explorer).
     2. Selecione **Entrar com a conta da Microsoft** e entre usando uma conta de administrador global do Azure AD. Uma vez acessado, você verá os detalhes da conta do usuário no painel esquerdo.
@@ -26,7 +26,7 @@ Neste artigo, você aprenderá a configurar o proxy de aplicativo Azure Active D
 
         ![Definir permissões](./images/application-proxy-configure-api/set-permissions.png)
         
-    4. Role a lista de permissões para **Directory (3),** expanda e selecione `Directory.ReadWrite.All` .
+    4. Percorra a lista de permissões para **o Diretório (3),** expanda e selecione `Directory.ReadWrite.All`.
 
         ![Pesquisar permissões](./images/application-proxy-configure-api/select-permissions.png)
     
@@ -35,13 +35,13 @@ Neste artigo, você aprenderá a configurar o proxy de aplicativo Azure Active D
         ![Aceitar permissões](./images/application-proxy-configure-api/accept-permissions.png)
 
 > [!NOTE]
-> Os objetos de resposta mostrados podem ser reduzidos para a capacidade de leitura. 
+> Os objetos de resposta mostrados podem ser reduzidos para legibilidade. 
 
 ## <a name="step-1-create-a-custom-application"></a>Etapa 1: Criar um aplicativo personalizado
 
-Para configurar o Proxy de Aplicativo para um aplicativo usando a API, primeiro crie um aplicativo personalizado e atualize a propriedade **onPremisesPublishing** do aplicativo para configurar as configurações do Proxy de Aplicativo. Neste tutorial, você usa um modelo de aplicativo para criar uma instância de um aplicativo personalizado e entidade de serviço em seu locatário para gerenciamento. A ID do modelo de um aplicativo personalizado é `8adf8e6e-67b2-4cf2-a259-e3dc5476c621` .
+Para configurar Proxy de Aplicativo aplicativo usando a API, primeiro crie um aplicativo personalizado e atualize a propriedade **onPremisesPublishing** do aplicativo para definir as configurações do Proxy de Aplicativo. Neste tutorial, você usará um modelo de aplicativo para criar uma instância de um aplicativo personalizado e uma entidade de serviço em seu locatário para gerenciamento. A ID do modelo para um aplicativo personalizado é `8adf8e6e-67b2-4cf2-a259-e3dc5476c621`.
 
-Grave o **id**, **appId**, **servicePrincipalId** do aplicativo a ser usado posteriormente no tutorial.
+Registre **a id**, **appId**, **servicePrincipalId** do aplicativo a ser usado posteriormente no tutorial.
 
 #### <a name="request"></a>Solicitação
 
@@ -91,13 +91,13 @@ Content-type: application/json
 }
 ```
 
-## <a name="step-2-configure-application-proxy"></a>Etapa 2: Configurar o Proxy de Aplicativo
+## <a name="step-2-configure-application-proxy"></a>Etapa 2: Configurar Proxy de Aplicativo
 
-Use a **id** que você gravou para o aplicativo para iniciar a configuração do Proxy de Aplicativo. Atualize as seguintes propriedades:
+Use a **ID que** você registrou para o aplicativo para iniciar a configuração do Proxy de Aplicativo. Atualize as seguintes propriedades:
 
-- **onPremisesPublishing** - Neste exemplo, você está usando um aplicativo com a URL interna: `https://contosoiwaapp.com` . Você também usa o domínio padrão para a URL externa: `https://contosoiwaapp-contoso.msappproxy.net` . 
-- **redirectUri**, **identifierUri** e **homepageUrl** - Defina como a mesma URL externa configurada na **propriedade onPremisesPublishing.**
-- **implicitGrantSettings** - Definir como `true` **para enabledTokenIssuance** e `false` **enabledAccessTokenIssuance**.
+- **onPremisesPublishing** – neste exemplo, você está usando um aplicativo com a URL interna: `https://contosoiwaapp.com`. Você também usa o domínio padrão para a URL externa: `https://contosoiwaapp-contoso.msappproxy.net`. 
+- **redirectUri**, **identifierUri** e **homepageUrl** – defina como a mesma URL externa configurada na **propriedade onPremisesPublishing** .
+- **implicitGrantSettings** - Definido `true` como **para enabledTokenIssuance** `false` e **para enabledAccessTokenIssuance**.
 
 #### <a name="request"></a>Solicitação
 
@@ -133,7 +133,7 @@ HTTP/1.1 204 No content
 
 ### <a name="get-connectors"></a>Obter conectores
 
-Listar os conectores disponíveis. Grave a **id** do conector que você deseja atribuir a um grupo de conectores.
+Liste os conectores disponíveis. Registre **a ID** do conector que você deseja atribuir a um grupo de conectores.
 
 #### <a name="request"></a>Solicitação
 
@@ -168,7 +168,7 @@ Content-type: application/json
 
 ### <a name="create-a-connectorgroup"></a>Criar um connectorGroup
 
-Para este exemplo, um novo connectorGroup é criado chamado `IWA Demo Connector Group` que é usado para o aplicativo. Grave a **id** retornada para uso na próxima etapa.
+Para este exemplo, um novo connectorGroup é criado chamado `IWA Demo Connector Group` que é usado para o aplicativo. Registre **a ID** que será usada na próxima etapa.
 
 #### <a name="request"></a>Solicitação
 
@@ -234,9 +234,9 @@ Content-type: application/json
 HTTP/1.1 204 No content
 ```
 
-## <a name="step-4-configure-single-sign-on"></a>Etapa 4: Configurar o login único
+## <a name="step-4-configure-single-sign-on"></a>Etapa 4: Configurar o logon único
 
-Este aplicativo usa a Autenticação Windows Integrada (IWA). Para configurar o IWA, de definir as propriedades de login único para **onPremisesPublishing**.
+Esse aplicativo usa a Autenticação Windows Integrada (IWA). Para configurar o IWA, defina as propriedades de logon único para **onPremisesPublishing**.
 
 #### <a name="request"></a>Solicitação
 
@@ -267,7 +267,7 @@ HTTP/1.1 204 No content
 
 ### <a name="retrieve-the-approle-for-the-application"></a>Recuperar o appRole para o aplicativo
 
-Obter as funções do aplicativo usando a **id** da entidade de serviço. Grave a **id** da **função de** aplicativo usuário a ser usada na próxima etapa.
+Obtenha as funções de aplicativo para o aplicativo usando **a ID da** entidade de serviço. Registre **a ID** da **função de** aplicativo usuário a ser usada na próxima etapa.
 
 #### <a name="request"></a>Solicitação
 
@@ -301,7 +301,7 @@ Content-type: application/json
 
 ### <a name="create-a-user-account"></a>Criar uma conta de usuário
 
-Para este tutorial, você cria uma conta de usuário atribuída à função de aplicativo. No corpo da solicitação, `contoso.com` altere para o nome de domínio do locatário. Encontre informações sobre locatários na página de visão geral do Azure Active Directory. Grave a **id** da conta de usuário a ser usada na próxima etapa.
+Para este tutorial, você criará uma conta de usuário atribuída à função de aplicativo. No corpo da solicitação, altere `contoso.com` para o nome de domínio do locatário. Encontre informações sobre locatários na página de visão geral do Azure Active Directory. Registre **a ID** da conta de usuário a ser usada na próxima etapa.
 
 #### <a name="request"></a>Solicitação
 
@@ -344,9 +344,9 @@ Content-type: application/json
 
 No exemplo a seguir, substitua os valores dessas propriedades:
 
-- **principalId** com **a id** do usuário
-- **appRoleId** com **a id** da função de aplicativo
-- **resourceId** com **a id** da entidade de serviço
+- **principalId** com **a ID** do usuário
+- **appRoleId** com **a ID** da função de aplicativo
+- **resourceId** com **a ID** da entidade de serviço
 
 #### <a name="request"></a>Solicitação
 
@@ -382,11 +382,11 @@ Content-type: application/json
 ```
 ## <a name="step-6-test-access-to-the-application"></a>Etapa 6: Testar o acesso ao aplicativo
 
-Teste o aplicativo visitando a **URL externa** configurada para o aplicativo em seu navegador e, em seguida, entre com seu usuário de teste. Você deve poder fazer logoff no aplicativo e acessar o aplicativo.
+Teste o aplicativo visitando a **URL externa** configurada para o aplicativo no navegador e entre com o usuário de teste. Você deve ser capaz de fazer logon no aplicativo e acessar o aplicativo.
 
 ## <a name="step-7-clean-up-resources"></a>Etapa 7: Limpar recursos
 
-Os recursos criados neste tutorial não se destinam a ser usados em um ambiente de produção. Nessa etapa, remova os recursos que criou.
+Os recursos criados neste tutorial não devem ser usados em um ambiente de produção. Nessa etapa, remova os recursos que criou.
 
 ### <a name="delete-the-user-account"></a>Excluir a conta de usuário
 
@@ -434,14 +434,14 @@ No Content - 204
 
 ## <a name="see-also"></a>Confira também
 
-- [Proxy de aplicativo](/azure/active-directory/manage-apps/what-is-application-proxy)
+- [Proxy de Aplicativo](/azure/active-directory/manage-apps/what-is-application-proxy)
 - [application](/graph/api/resources/application?view=graph-rest-1.0)
-- [applicationTemplate: instaurá-lo](/graph/api/applicationtemplate-instantiate?view=graph-rest-1.0)
+- [applicationTemplate: criar uma instância](/graph/api/applicationtemplate-instantiate?view=graph-rest-1.0)
 - [appRoleAssignment](/graph/api/resources/approleassignment?view=graph-rest-beta)
 - [connector](/graph/api/resources/connector?view=graph-rest-beta)
 - [connectorGroup](/graph/api/resources/connectorGroup?view=graph-rest-beta)
 - [implicitGrantSettings](/graph/api/resources/implicitgrantsettings?view=graph-rest-1.0)
-- [perfis de publicação local](/graph/api/resources/onpremisespublishingprofile-root?view=graph-rest-beta)
+- [perfis de publicação locais](/graph/api/resources/onpremisespublishingprofile-root?view=graph-rest-beta)
 - [servicePrincipal](/graph/api/resources/serviceprincipal?view=graph-rest-1.0)
 - [singleSignOnSettings](/graph/api/resources/onpremisespublishingsinglesignon?view=graph-rest-beta)
 - [user](/graph/api/resources/user?view=graph-rest-1.0)

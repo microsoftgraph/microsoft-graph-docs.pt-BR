@@ -4,12 +4,12 @@ description: O Microsoft Graph expõe as permissões granulares que controlam o 
 author: jackson-woods
 ms.localizationpriority: high
 ms.custom: graphiamtop20, scenarios:getting-started
-ms.openlocfilehash: badc1ef730ee517aa92a629a320d041236db8664
-ms.sourcegitcommit: dfa87904fb26dd5161f604f2716ce1d90dad31ed
+ms.openlocfilehash: 856dbe141f03ed88de587ae3fa6142b7ddc6751b
+ms.sourcegitcommit: 43a7c971a97ce1e4c55cbae089820bfce7dfe42b
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/09/2022
-ms.locfileid: "63397908"
+ms.lasthandoff: 03/29/2022
+ms.locfileid: "64510061"
 ---
 # <a name="microsoft-graph-permissions-reference"></a>Referência de permissões do Microsoft Graph
 
@@ -229,7 +229,7 @@ No momento o único catálogo é a lista de aplicativos no [Microsoft Teams](tea
 ### <a name="example-usage"></a>Exemplo de uso
 
 #### <a name="delegated"></a>Delegated
-* _AppCatalog.ReadWrite.All_: [Lista todos os aplicativos no catálogo](/graph/api/teamsapp-list?view=graph-rest-beta&preserve-view=true) (`GET /beta/appCatalogs/teamsApps`)
+* _AppCatalog.ReadWrite.All_: [Lista todos os aplicativos no catálogo](/graph/api/appcatalogs-list-teamsapps) (`GET /beta/appCatalogs/teamsApps`)
 * _AppCatalog.ReadWrite.All_: [Publicar um aplicativo](/graph/api/teamsapp-publish?view=graph-rest-beta&preserve-view=true) (`POST /beta/appCatalogs/teamsApps`)
 * _AppCatalog.ReadWrite.All_: [Atualizar um aplicativo publicado](/graph/api/teamsapp-update?view=graph-rest-beta&preserve-view=true) (`PATCH /beta/appCatalogs/teamsApps/{id}`)
 * _AppCatalog.ReadWrite.All_: [Remover um aplicativo publicado](/graph/api/teamsapp-delete?view=graph-rest-beta&preserve-view=true) (`DELETE /beta/appCatalogs/teamsApps/{id}`)
@@ -503,7 +503,6 @@ Para cenários mais complexos que envolvem várias permissões, confira [Cenári
 
 |   Permissão    |  Exibir Cadeia de Caracteres   |  Descrição | Consentimento Obrigatório do Administrador | Suporte da conta da Microsoft |
 |:----------------|:------------------|:-------------|:-----------------------|:--------------|
-|_ChannelMessage.Delete_ (visualização privada)|Excluir mensagens de canal do usuário |Permite que um aplicativo exclua mensagens de canal no Microsoft Teams, em nome do usuário conectado. |Sim | Não |
 |_ChannelMessage.Edit_ (visualização privada)|Editar mensagens de canal do usuário |Permite que um aplicativo edite mensagens de canal no Microsoft Teams, em nome do usuário conectado. |Sim | Não |
 |_ChannelMessage.Read.All_ |Ler mensagens do canal do usuário  |Permite que um aplicativo leia as mensagens de um canal no Microsoft Teams, em nome do usuário conectado. |Sim | Não |
 |_ChannelMessage.Send_ |Enviar a mensagem do canal |Permite que um aplicativo envie mensagens de canal no Microsoft Teams, em nome do usuário conectado. |Não| Não |
@@ -1355,7 +1354,7 @@ _Notes.ReadWrite_ e _Notes.ReadWrite.All_ também permitem que o aplicativo modi
 Para contas corporativas ou de estudante, _Notes.Read.All_ e _Notes.ReadWrite.All_ permitem que o aplicativo acesse o conteúdo do OneNote de outros usuários ao qual o usuário conectado tenha permissão dentro da organização.
 
 ### <a name="example-usage"></a>Exemplo de uso
-#### <a name="delegated"></a>Delegado
+#### <a name="delegated"></a>Delegated
 
 * _Notes.Create_: Criar novos blocos de anotações para o usuário conectado (`POST /me/onenote/notebooks`).
 * _Notes.Read_: Criar blocos de anotações para o usuário conectado (`GET /me/onenote/notebooks`).
@@ -2541,7 +2540,7 @@ Para que um aplicativo leia ou grave todas as configurações de implantação c
 
 ### <a name="example-usage"></a>Exemplo de uso
 
-#### <a name="delegated"></a>Delegado
+#### <a name="delegated"></a>Delegated
 
 * _WindowsUpdates.ReadWrite.All_: crie uma implantação (`POST /beta/admin/windows/updates/deployments`).
 

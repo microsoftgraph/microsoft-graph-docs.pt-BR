@@ -1,16 +1,16 @@
 ---
 title: Obter participante
 description: Recupere as propriedades e as relações de um **objeto** participante.
-author: ananmishr
+author: mkhribech
 ms.localizationpriority: medium
 ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: c2b078acaca3b3a994768f12e40448ebd67432e8
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: c524f3b77842ade97be031cdf1f642772578dc67
+ms.sourcegitcommit: 10719607271380ea56076ccff5a3b774d0005773
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62094002"
+ms.lasthandoff: 04/01/2022
+ms.locfileid: "64607593"
 ---
 # <a name="get-participant"></a>Obter participante
 
@@ -26,7 +26,7 @@ Recupere as propriedades e as relações de um **objeto** participante.
 | :-------------- | :------------------------------------------ |
 | Delegado (conta corporativa ou de estudante)     | Não suportado        |
 | Delegado (conta pessoal da Microsoft) | Não suportado        |
-| Aplicativo     | Nenhum                                        |
+| Aplicativo     | Calls.JoinGroupCallsasGuest.All ou Calls.JoinGroupCalls.All |
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- { "blockType": "ignored" } -->
@@ -48,7 +48,7 @@ Este método dá suporte a [Parâmetros de consulta OData](/graph/query-paramete
 Não forneça um corpo de solicitação para esse método.
 
 ## <a name="response"></a>Resposta
-Se tiver êxito, este método retornará um código `200 OK` de resposta e um [objeto](../resources/participant.md) participante no corpo da resposta.
+Se tiver êxito, este método retornará um `200 OK` código de resposta e [um objeto](../resources/participant.md) participante no corpo da resposta.
 
 ## <a name="example"></a>Exemplo
 

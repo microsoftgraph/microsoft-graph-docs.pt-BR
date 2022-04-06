@@ -1,16 +1,16 @@
 ---
 title: Listar unifiedRoleAssignmentScheduleRequests
 description: Obter uma lista dos objetos unifiedRoleAssignmentScheduleRequest e suas propriedades.
-author: carolinetempleton
+author: japere
 ms.localizationpriority: medium
 ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: e16e54b17b72c1f137e32cda27c5a1d00afb04d5
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: 17f49c14e155282b992caeceb19d49a9eaebebe4
+ms.sourcegitcommit: 43a7c971a97ce1e4c55cbae089820bfce7dfe42b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62136845"
+ms.lasthandoff: 03/29/2022
+ms.locfileid: "64509382"
 ---
 # <a name="list-unifiedroleassignmentschedulerequests"></a>Listar unifiedRoleAssignmentScheduleRequests
 
@@ -20,7 +20,7 @@ Namespace: microsoft.graph
 
 Obter uma lista dos [objetos unifiedRoleAssignmentScheduleRequest](../resources/unifiedroleassignmentschedulerequest.md) e suas propriedades.
 
-## <a name="permissions"></a>Permissões
+## <a name="permissions"></a>Permissions
 
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
@@ -57,7 +57,7 @@ Não forneça um corpo de solicitação para esse método.
 
 ## <a name="response"></a>Resposta
 
-Se tiver êxito, este método retornará um código de resposta e uma coleção de objetos `200 OK` [unifiedRoleAssignmentScheduleRequest](../resources/unifiedroleassignmentschedulerequest.md) no corpo da resposta.
+Se tiver êxito, este método retornará `200 OK` um código de resposta e uma coleção de objetos [unifiedRoleAssignmentScheduleRequest](../resources/unifiedroleassignmentschedulerequest.md) no corpo da resposta.
 
 ## <a name="examples"></a>Exemplos
 

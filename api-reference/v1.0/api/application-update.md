@@ -5,30 +5,30 @@ author: sureshja
 ms.localizationpriority: medium
 ms.prod: applications
 doc_type: apiPageType
-ms.openlocfilehash: 4082fcccb42b60baa0a6f3d9fc4825ec97fbce70
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: e1e7756b8663b2d370d1dc1f0b9b8ca189fcc229
+ms.sourcegitcommit: 0249c86925c9b4797908394c952073b5d9137911
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62129181"
+ms.lasthandoff: 03/25/2022
+ms.locfileid: "64477983"
 ---
 # <a name="update-application"></a>Atualizar aplicativo
 
 Namespace: microsoft.graph
 
-Atualize as propriedades de um [objeto application.](../resources/application.md)
+Atualize as propriedades de um [objeto application](../resources/application.md) .
 
 > [!IMPORTANT]
-> Não há suporte para o uso do PATCH para definir [**passwordCredential**](../resources/passwordcredential.md). Use os [métodos addPassword](./application-addpassword.md) e [removePassword](./application-removepassword.md) para atualizar a senha de um aplicativo.
+> Não há suporte para o uso do PATCH para definir [**passwordCredential**](../resources/passwordcredential.md). Use os [métodos addPassword](./application-addpassword.md) e [removePassword](./application-removepassword.md) para atualizar a senha ou o segredo de um aplicativo.
 
-## <a name="permissions"></a>Permissões
+## <a name="permissions"></a>Permissions
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegada (conta corporativa ou de estudante) |  Application.ReadWrite.All, Directory.AccessAsUser.All    |
-|Delegada (conta pessoal da Microsoft) | Application.ReadWrite.All |
+|Delegado (conta corporativa ou de estudante) |  Application.ReadWrite.All    |
+|Delegado (conta pessoal da Microsoft) | Application.ReadWrite.All |
 |Aplicativo | Application.ReadWrite.OwnedBy, Application.ReadWrite.All |
 
 ## <a name="http-request"></a>Solicitação HTTP
@@ -53,7 +53,7 @@ No corpo da solicitação, forneça os valores para os campos relevantes que dev
 | groupMembershipClaims   | Cadeia de caracteres                                                                      | Configura a declaração **de grupos** emitida em um usuário ou token de acesso OAuth 2.0 que o aplicativo espera. Para definir esse atributo, use um dos seguintes valores válidos de cadeia de caracteres:<ul><li>`None`</li><li>`SecurityGroup`: Para grupos de segurança e Azure Active Directory funções (Azure AD)</li><li>`All`: isso obterá todos os grupos de segurança e de distribuição e funções de diretório do Azure AD dos quais o usuário conectado é membro.</li></ul>                                                                                                                       |
 | identifierUris          | Coleção de cadeias de caracteres                                                           | Os URIs que identificam o aplicativo em seu locatário do Azure AD ou em um domínio personalizado verificado, se o aplicativo é multilocatário. Para saber mais, confira [Objetos de aplicativo e Objetos de entidade de serviço](/azure/active-directory/develop/app-objects-and-service-principals). O operador *any* é obrigatório para expressões de filtro em propriedades de vários valores. Não anulável.                                                                                                                                                                           |
 | informações                     | [informationalUrl](../resources/informationalurl.md)                        | Informações básicas de perfil do aplicativo, como URLs de marketing, suporte, termos de serviço e declaração de privacidade do aplicativo. Os termos de serviço e a política de privacidade são revelados aos usuários por meio da experiência de consentimento do usuário. Para obter mais informações, [consulte Add Terms of service and privacy statement for registered Azure AD apps](/azure/active-directory/develop/howto-add-terms-of-service-privacy-statement).                                                                                                                                                 |
-| isFallbackPublicClient  | Booliano                                                                     | Especifica o tipo de aplicativo de fallback como cliente público; por exemplo, um aplicativo instalado em um dispositivo móvel. O valor padrão é , o que significa que o tipo de `false` aplicativo de fallback é cliente confidencial, como aplicativo Web. Há certos cenários em que o Azure AD não pode determinar o tipo de aplicativo cliente (por exemplo, o fluxo [ropc](https://tools.ietf.org/html/rfc6749#section-4.3) em que ele é configurado sem especificar um URI de redirecionamento). Nesses casos, o Azure AD interpretará o tipo de aplicativo com base no valor dessa propriedade. |
+| isFallbackPublicClient  | Booliano                                                                     | Especifica o tipo de aplicativo de fallback como cliente público; por exemplo, um aplicativo instalado em um dispositivo móvel. O valor padrão é `false`, o que significa que o tipo de aplicativo de fallback é cliente confidencial, como aplicativo Web. Há certos cenários em que o Azure AD não pode determinar o tipo de aplicativo cliente (por exemplo, o fluxo [ropc](https://tools.ietf.org/html/rfc6749#section-4.3) em que ele é configurado sem especificar um URI de redirecionamento). Nesses casos, o Azure AD interpretará o tipo de aplicativo com base no valor dessa propriedade. |
 | keyCredentials          | [keyCredential](../resources/keycredential.md) collection                   | A coleção das principais credenciais associadas ao aplicativo. Não anulável.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       |
 | logo                    | Stream                                                                      | O logotipo principal do aplicativo. Não anulável.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       |
 | optionalClaims          | optionalClaims                                                              | Desenvolvedores de aplicativos podem configurar declarações opcionais em aplicativos do Azure AD para especificar quais declarações desejam em tokens enviados ao aplicativo pelo serviço de token de segurança da Microsoft. Consulte [declarações opcionais](/azure/active-directory/develop/active-directory-optional-claims) para obter mais informações.                                                                                                                                                                                                                                                               |
@@ -67,7 +67,7 @@ No corpo da solicitação, forneça os valores para os campos relevantes que dev
 
 ## <a name="response"></a>Resposta
 
-Se tiver êxito, este método retornará um código `204 No Content` de resposta e não retornará nada no corpo da resposta.
+Se tiver êxito, este método retornará um `204 No Content` código de resposta e não retornará nada no corpo da resposta.
 ## <a name="example"></a>Exemplo
 ##### <a name="request"></a>Solicitação
 Este é um exemplo da solicitação.

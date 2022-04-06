@@ -5,12 +5,12 @@ author: nkramer
 ms.localizationpriority: high
 ms.prod: microsoft-teams
 ms.custom: scenarios:getting-started
-ms.openlocfilehash: 9397644c2f9bc8d4e2807fe8f351b158d9d14b21
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 64a314223a333b5ba945ed10426a5ea4bce83283
+ms.sourcegitcommit: 0249c86925c9b4797908394c952073b5d9137911
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59071655"
+ms.lasthandoff: 03/25/2022
+ms.locfileid: "64477948"
 ---
 # <a name="microsoft-teams-api-overview"></a>Visão geral da API do Microsoft Teams
 
@@ -24,7 +24,7 @@ O [Microsoft Teams](https://products.office.com/microsoft-teams) é o hub defini
 
 ### <a name="automate-team-lifecycles"></a>Automatizar o ciclo de vida da equipe
 
-Use o Microsoft Graph para [criar uma nova equipe virtual](/graph/api/team-put-teams) quando surgir um novo problema de negócios, [preencher a equipe](/graph/api/group-post-members) com as pessoas certas e configurar a equipe com [canais](/graph/api/channel-post), [guias](/graph/api/teamstab-add) e [aplicativos](/graph/api/teamsappinstallation-add).
+Use o Microsoft Graph para [criar uma nova equipe virtual](/graph/api/team-put-teams) quando surgir um novo problema de negócios, [preencher a equipe](/graph/api/group-post-members) com as pessoas certas e configurar a equipe com [canais](/graph/api/channel-post), [guias](/graph/teams-configuring-builtin-tabs) e [aplicativos](/graph/api/teamsappinstallation-add).
 Se quiser reunir a nova equipe para discutir o problema de negócios, [adicione um novo evento](/graph/api/group-post-events) à agenda da equipe.
 
 ![Automatize os ciclos de vida da equipe criando uma equipe, adicionando membros e proprietários, definindo configurações de equipe, adicionando canais, instalando aplicativos, adicionando guias e arquivando ou excluindo a equipe quanto o momento chegar.](images/teams-lifecycle.png)
@@ -41,7 +41,7 @@ Crie equipes automaticamente para aulas no início do ano letivo e arquive essas
 Permita que os clientes criem novas [equipes](/graph/api/resources/team) e [canais](/graph/api/resources/channel). 
 [Instale](/graph/api/teamsappinstallation-add) seu [Aplicativo de Equipes](/microsoftteams/platform/#pivot=home&panel=home-all) nas novas equipes. 
 [Fixe o aplicativo em uma guia](/graph/api/teamstab-add) no novo canal. 
-[Envie mensagens](/graph/api/channel-post-message) para o canal vinculando-o ao seu site.
+[Envie mensagens](/graph/api/chatmessage-post) para o canal vinculando-o ao seu site.
 
 ### <a name="create-and-manage-multiple-teams-and-channels"></a>Criar e gerenciar várias equipes e canais
 

@@ -443,6 +443,10 @@ items:
             href: search-concept-aggregation.md
           - name: Solicitar correção ortográfica (prévia)
             href: search-concept-speller.md
+          - name: Cortar resultados de pesquisa duplicados (versão prévia)
+            href: search-concept-trim-duplicate.md
+          - name: Usar modelos de consulta (versão prévia)
+            href: search-concept-query-template.md
           - name: Classificar resultados de pesquisa
             href: search-concept-sort.md
       - name: Segurança
@@ -523,7 +527,7 @@ items:
   - name: Desenvolver
     expanded: true
     items:
-      - name: Obter tokens de autenticação
+      - name: Autenticação e autorização
         items:
           - name: Visão geral
             href: auth/index.yml
@@ -666,6 +670,15 @@ items:
                 href: migrate-azure-ad-graph-faq.md
               - name: Configurar permissões do Azure AD Graph
                 href: migrate-azure-ad-graph-configure-permissions.md
+          - name: Serviços de Web do Exchange
+            displayName: 'Migration, Exchange Web Services, EWS'
+            items:
+              - name: Visão Geral
+                href: migrate-exchange-web-services-overview.md
+              - name: Autenticação
+                href: migrate-exchange-web-services-authentication.md
+              - name: Mapeamento de API
+                href: migrate-exchange-web-services-api-mapping.md
       - name: Usar SDKs
         items:
           - name: Visão geral

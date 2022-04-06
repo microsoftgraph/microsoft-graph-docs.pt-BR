@@ -5,12 +5,12 @@ author: isabelleatmsft
 ms.localizationpriority: medium
 ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: 4971ef6f4a65b4a6c0e1fd9d3f319da3ffb87a4c
-ms.sourcegitcommit: 871db8b3f68489d24e2aeafe694725579ee44c47
+ms.openlocfilehash: 9c36cb64449cef065810176a631a9bd8e68c3098
+ms.sourcegitcommit: e5d5095e26dca6f434354a0970e789e94ee6afb0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/26/2022
-ms.locfileid: "62224714"
+ms.lasthandoff: 03/22/2022
+ms.locfileid: "63721885"
 ---
 # <a name="list-historydefinitions"></a>Histórico da listaDefinitions
 
@@ -20,12 +20,7 @@ Namespace: microsoft.graph
 
 Recupere os [objetos accessReviewHistoryDefinition criados](../resources/accessreviewhistorydefinition.md) nos últimos 30 dias, incluindo todas as propriedades aninhadas.
 
->[!NOTE]
->O tamanho padrão da página para essa API é de 100 **objetos accessReviewHistoryDefinitions.** Para melhorar a eficiência e evitar tempos-de-tempo devido a grandes conjuntos de resultados, aplique paginação usando os `$skip` parâmetros e `$top` de consulta. Para mais informações, consulte [Paginação de dados do Microsoft Graph em seu aplicativo](/graph/paging).
->
->Se nenhum parâmetro de consulta for fornecido e houver mais de 100 resultados, o Microsoft Graph paginará automaticamente os resultados em 100 resultados por página.
-
-## <a name="permissions"></a>Permissões
+## <a name="permissions"></a>Permissions
 
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
@@ -33,7 +28,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |:---|:---|
 |Delegado (conta corporativa ou de estudante)|AccessReview.ReadWrite.All|
 |Delegado (conta pessoal da Microsoft)|Sem suporte.|
-|Application|AccessReview.ReadWrite.All|
+|Aplicativo|AccessReview.ReadWrite.All|
 
 Se o usuário de entrada não for um membro de função de diretório do Administrador Global ou um membro da função de diretório Leitor Global, somente as definições criadas pelo usuário in-loco serão retornadas.
 
@@ -50,7 +45,9 @@ GET /identityGovernance/accessReviews/historyDefinitions
 
 ## <a name="optional-query-parameters"></a>Parâmetros de consulta opcionais
 
-Este método dá suporte `$top` aos `$filter` parâmetros de consulta , , e OData para ajudar a `$expand` personalizar a `$skip` resposta. Para obter informações gerais, acesse [Parâmetros de consulta OData](/graph/query-parameters). Inclusive `?$expand=instances` retornará [os objetos accessReviewHistoryDefinitions](../resources/accessreviewhistorydefinition.md) juntamente com suas instâncias associadas.
+Este método dá suporte aos `$top`parâmetros de consulta , `$filter`, `$expand`e `$skip` OData para ajudar a personalizar a resposta. Para obter informações gerais, acesse [Parâmetros de consulta OData](/graph/query-parameters). Inclusive `?$expand=instances` retornará [os objetos accessReviewHistoryDefinitions](../resources/accessreviewhistorydefinition.md) juntamente com suas instâncias associadas.
+
+O tamanho padrão da página para essa API é de 100 **objetos accessReviewHistoryDefinitions** . Para melhorar a eficiência e evitar tempos-de-tempo devido a grandes conjuntos de resultados, aplique paginação usando os `$skip` parâmetros e `$top` de consulta. Para mais informações, consulte [Paginação de dados do Microsoft Graph em seu aplicativo](/graph/paging).
 
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
 
@@ -64,7 +61,7 @@ Não forneça um corpo de solicitação para esse método.
 
 ## <a name="response"></a>Resposta
 
-Se tiver êxito, este método retornará um código de resposta e uma coleção de `200 OK` [objetos accessReviewHistoryDefinition](../resources/accessreviewhistorydefinition.md) no corpo da resposta.
+Se tiver êxito, este método retornará um `200 OK` código de resposta e uma coleção de [objetos accessReviewHistoryDefinition](../resources/accessreviewhistorydefinition.md) no corpo da resposta.
 
 ## <a name="examples"></a>Exemplos
 

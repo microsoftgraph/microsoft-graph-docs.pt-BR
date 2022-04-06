@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: vrod9429
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 3de053a10db3e96252e65061a497cdf3b5c9c2a7
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: 229b977f1dca627a92aae9d9b7a17caddec8901a
+ms.sourcegitcommit: 0249c86925c9b4797908394c952073b5d9137911
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62135921"
+ms.lasthandoff: 03/25/2022
+ms.locfileid: "64477976"
 ---
 # <a name="list-places"></a>Listar locais
 
@@ -19,18 +19,20 @@ Namespace: microsoft.graph
 
 Obter uma coleção do tipo especificado de [objetos de local](../resources/place.md) definidos no locatário. Por exemplo, você pode obter todas as salas, todas as listas de salas ou as salas em uma lista de salas específica no locatário.
 
+>**Observação:** Salas marcadas como "Ocultas da GAL" não podem ser recuperadas por meio desse ponto de extremidade.
+
 Um **objeto place** pode ser um dos seguintes tipos:
 
 * Uma [sala](../resources/room.md) que inclui propriedades ricas, como um endereço de email para a sala e acessibilidade, capacidade e suporte a dispositivos.
 * Uma [lista de](../resources/roomlist.md) sala que inclui um endereço de email para a lista de sala e uma propriedade de navegação para obter a coleção de instâncias de sala na lista de sala.
 
-Sala **e** **roomList** são derivados do **objeto place.**
+Sala **e** **roomList** são derivados do **objeto place** .
 
 Por padrão, essa operação retorna 100 locais por página.
 
-Em comparação com [as funções findRooms](/graph/api/user-findrooms?view=graph-rest-beta) e [findRoomLists,](/graph/api/user-findroomlists?view=graph-rest-beta) essa operação retorna uma carga mais rica para salas e listas de salas. Confira [detalhes](../resources/place.md#using-the-places-api) sobre como eles se comparam.
+Em comparação com [as funções findRooms](/graph/api/user-findrooms?view=graph-rest-beta) e [findRoomLists](/graph/api/user-findroomlists?view=graph-rest-beta) , essa operação retorna uma carga mais rica para salas e listas de salas. Confira [detalhes](../resources/place.md#using-the-places-api) sobre como eles se comparam.
 
-## <a name="permissions"></a>Permissões
+## <a name="permissions"></a>Permissions
 
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
@@ -62,7 +64,7 @@ Para obter todas as salas na lista de salas especificada:
 GET /places/{room-list-emailaddress}/microsoft.graph.roomlist/rooms
 ```
 
->**Observação**: para obter salas em uma lista de salas, você deve especificar a lista de salas por sua **propriedade emailAddress,** não por **sua id**.
+>**Observação**: para obter salas em uma lista de salas, você deve especificar a lista de salas por sua **propriedade emailAddress** , não por **sua id**.
 
 ## <a name="optional-query-parameters"></a>Parâmetros de consulta opcionais
 Este método dá suporte aos seguintes parâmetros de consulta para ajudar a personalizar a resposta:
@@ -88,7 +90,7 @@ Não forneça um corpo de solicitação para esse método.
 
 ## <a name="response"></a>Resposta
 
-Se tiver êxito, este método retornará um código de resposta e uma `200 OK` coleção de objetos [place](../resources/place.md) no corpo da resposta.
+Se tiver êxito, este método retornará um `200 OK` código de resposta e uma coleção de [objetos place](../resources/place.md) no corpo da resposta.
 
 ## <a name="examples"></a>Exemplos
 

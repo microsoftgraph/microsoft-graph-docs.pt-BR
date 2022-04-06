@@ -1,27 +1,27 @@
 ---
-title: Visão geral do Windows 365 Cloud PC no Microsoft Graph
-description: Windows 365 é um serviço baseado em nuvem que provisiona e hospeda PCs de nuvem como máquinas virtuais para usuários finais.
+title: Visão geral do PC na nuvem do Windows 365 no Microsoft Graph
+description: Windows 365 é um serviço baseado em nuvem que provisiona e hospeda PCs na nuvem como máquinas virtuais para usuários finais.
 author: cohanley
 ms.localizationpriority: medium
 ms.prod: cloud-pc
-ms.openlocfilehash: f0c8f2fe2e197a1f0b44d532e09438c889e5dc24
-ms.sourcegitcommit: 2e94beae05043a88b389349f0767e3a657415e4c
+ms.openlocfilehash: 3aada87e5f1087beb0f62b6fd2972edbcb0e6454
+ms.sourcegitcommit: cc9e5b3630cb84c48bbbb2d84a963b9562d1fb78
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/19/2021
-ms.locfileid: "61124144"
+ms.lasthandoff: 03/31/2022
+ms.locfileid: "64589328"
 ---
-# <a name="overview-for-windows-365-cloud-pc-on-microsoft-graph-preview"></a>Visão geral do Windows 365 Cloud PC no Microsoft Graph (visualização)
+# <a name="overview-for-windows-365-cloud-pc-on-microsoft-graph-preview"></a>Visão geral do PC na nuvem do Windows 365 no Microsoft Graph (visualização)
 
-Windows 365 é um serviço baseado em nuvem que provisiona e hospeda PCs de nuvem como máquinas virtuais para usuários finais. Os administradores podem configurar, gerenciar e dimensionar facilmente Windows 365 PCs de Nuvem para se ajustar às necessidades da organização. Os usuários finais individuais podem transmitir com segurança sua experiência rica e personalizada Windows , incluindo seus aplicativos, dados, conteúdo e configurações, da nuvem da Microsoft para qualquer dispositivo, a qualquer momento, com seu computador Windows 365 Cloud.
+Windows 365 é um serviço baseado em nuvem que provisiona e hospeda PCs na nuvem como máquinas virtuais para usuários finais. Os administradores podem configurar, gerenciar e dimensionar facilmente Windows 365 de nuvem para se ajustar às necessidades da organização. Os usuários finais individuais podem transmitir com segurança sua experiência de Windows personalizada , incluindo seus aplicativos, dados, conteúdo e configurações, da nuvem da Microsoft para qualquer dispositivo, a qualquer momento, com seus PC na nuvem do Windows 365.
 
 ## <a name="why-integrate-with-windows-365-cloud-pcs"></a>Por que se integrar com Windows 365 Cloud PCs? 
 
-Ao integrar e criar na parte superior do Windows 365, você pode provisionar, gerenciar e proteger os PCs de Nuvem para usuários finais o mais rápido e facilmente possível. Usando a API do Microsoft Graph, você pode provisionar PCs de nuvem, gerenciar imagens de dispositivo, criar e executar verificações de saúde em conexões de rede locais, criar e atribuir políticas de provisionamento e muito mais.  
+Ao integrar e criar em cima de Windows 365, você pode provisionar, gerenciar e proteger os PCs de Nuvem para usuários finais o mais rápido e facilmente possível. Usando o microsoft API do Graph, você pode provisionar PCs de nuvem, gerenciar imagens de dispositivo, criar e executar verificações de saúde em conexões de rede do Azure, criar e atribuir políticas de provisionamento e muito mais.  
 
-### <a name="create-on-premises-network-connections"></a>Criar conexões de rede locais
+### <a name="create-azure-network-connections"></a>Criar conexões de rede do Azure
 
-Crie [conexões de rede locais](/graph/api/resources/cloudpconpremisesconnection?view=graph-rest-beta&preserve-view=true) para dar linha de visão a um controlador de domínio. Uma vez criada, se não estiver em uso, uma conexão de rede local poderá ser excluída. Verificações de saúde também podem ser executados em uma conexão de rede local para verificar seu status de saúde e, se necessário, a senha de domínio do AD pode ser atualizada. 
+Crie [conexões de rede do Azure](/graph/api/resources/cloudpconpremisesconnection?view=graph-rest-beta&preserve-view=true) para dar linha de visão a um controlador de domínio. Uma vez criada, se não estiver em uso, uma conexão de rede do Azure poderá ser excluída. Verificações de saúde também podem ser executados em uma conexão de rede do Azure para verificar seu status de saúde e, se necessário, a senha de domínio do AD pode ser atualizada. 
 
 ### <a name="provision-cloud-pcs"></a>Provisione PCs na nuvem
 
@@ -29,11 +29,11 @@ Crie [políticas de provisionamento](/graph/api/resources/cloudpcprovisioningpol
 
 ### <a name="upload-device-images"></a>Upload de dispositivo
 
-Upload e gerenciar imagens [](/graph/api/resources/cloudpcdeviceimage?view=graph-rest-beta&preserve-view=true) do sistema operacional para PCs de Nuvem para determinar qual versão do Windows com quais aplicativos e outros detalhes de imagem devem ser usados para PCs na Nuvem quando provisionados.  
+Upload e gerenciar imagens do sistema operacional [](/graph/api/resources/cloudpcdeviceimage?view=graph-rest-beta&preserve-view=true) para PCs na Nuvem para determinar qual versão do Windows com quais aplicativos e outros detalhes de imagem devem ser usados para PCs de Nuvem quando provisionados.  
 
 ### <a name="view-end-users-cloud-pcs-and-their-properties"></a>Exibir os PCs de Nuvem dos usuários finais e suas propriedades
 
-Depois de provisionado, liste e exibirá os PCs de [Nuvem](/graph/api/resources/cloudpc?view=graph-rest-beta&preserve-view=true) dos usuários finais e todas as propriedades associadas. Essa visibilidade do Cloud PC permite o gerenciamento hands-on e a facilidade de solução de problemas quando necessário. 
+Depois de provisionado, liste e exibirá os [PCs de Nuvem](/graph/api/resources/cloudpc?view=graph-rest-beta&preserve-view=true) dos usuários finais e todas as propriedades associadas. Essa visibilidade do Cloud PC permite o gerenciamento hands-on e a facilidade de solução de problemas quando necessário. 
 
 ## <a name="api-reference"></a>Referência da API
 

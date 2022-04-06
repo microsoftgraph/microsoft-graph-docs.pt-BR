@@ -5,8 +5,13 @@ author: sureshja
 ms.localizationpriority: high
 ms.prod: applications
 doc_type: apiPageType
+ms.openlocfilehash: 93cf1bb04cdc0a1244adf403e0044d4c5893502b
+ms.sourcegitcommit: 0e7927f34b7e55d323acbf281e11560cb40a89ed
+ms.translationtype: HT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 03/20/2022
+ms.locfileid: "63672718"
 ---
-
 # <a name="get-application"></a>Obter aplicativo
 
 Namespace: microsoft.graph
@@ -18,7 +23,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegada (conta corporativa ou de estudante) | Application.Read.All, Directory.Read.All, Application.ReadWrite.All, Directory.ReadWrite.All    |
+|Delegado (conta corporativa ou de estudante) | Application.Read.All, Application.ReadWrite.All, , Directory.Read.All    |
 |Delegada (conta pessoal da Microsoft) | Application.Read.All, Application.ReadWrite.All |
 |Aplicativo | Application.Read.All, Application.ReadWrite.All, Application.ReadWrite.OwnedBy, Directory.Read.All |
 
@@ -32,7 +37,7 @@ GET /applications/{id}
 
 Este método suporta o `$select` [parâmetro de consulta OData](/graph/query-parameters) para recuperar as propriedades específicas do aplicativo.
 
-Por padrão, esta API não retorna o valor da **chave** pública da chave na propriedade **keyCredential**, a menos que **keyCredentials** seja especificado em uma `$select`consulta. Por exemplo, `$select=id,appId,keyCredentials`.
+Por padrão, essa API não retorna o valor da **chave** pública da chave na propriedade **keyCredential**, a menos que **keyCredentials** seja especificado em uma consulta `$select`. Por exemplo, `$select=id,appId,keyCredentials`.
 
 O uso de `$select` para obter **keyCredentials** para aplicativos tem um limite de aceleração de 150 solicitações por minuto para cada locatário.
 

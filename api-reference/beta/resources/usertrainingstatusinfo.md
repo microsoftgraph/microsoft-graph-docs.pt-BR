@@ -5,12 +5,12 @@ author: Gopal-MSFT
 ms.localizationpriority: medium
 ms.prod: reports
 doc_type: resourcePageType
-ms.openlocfilehash: 82b0c6b1de49c9b8eb0572dab33fca8c90e2b6fe
-ms.sourcegitcommit: 84d9a50dfa9526a207696c69d92381c8763d986a
+ms.openlocfilehash: d9e2900bb2c72ba8100d5fe49130b7229db988ee
+ms.sourcegitcommit: 0d6d39dd6450e0c5fd6844cb78aead00a0782e46
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/28/2021
-ms.locfileid: "59979476"
+ms.lasthandoff: 03/23/2022
+ms.locfileid: "63757840"
 ---
 # <a name="usertrainingstatusinfo-resource-type"></a>Tipo de recurso userTrainingStatusInfo
 
@@ -26,7 +26,7 @@ Representa um treinamento atribuído e seu status para um usuário em simulaçã
 |assignedDateTime|DateTimeOffset|Data e hora de atribuição do treinamento para o usuário.|
 |completionDateTime|DateTimeOffset|Data e hora de conclusão do treinamento pelo usuário.|
 |displayName|Cadeia de caracteres|Nome de exibição do treinamento atribuído.|
-|trainingStatus|trainingStatus|Status do treinamento atribuído ao usuário. Os valores possíveis são: `unknown`, `assigned`, `inProgress`, `completed`, `overdue`, `notCompleted`, `unknownFutureValue`.|
+|trainingStatus|trainingStatus|Status do treinamento atribuído ao usuário. Os possíveis valores são: `unknown`, `assigned`, `inProgress`, `completed`, `overdue`, `unknownFutureValue`.|
 
 ## <a name="relationships"></a>Relações
 Nenhum

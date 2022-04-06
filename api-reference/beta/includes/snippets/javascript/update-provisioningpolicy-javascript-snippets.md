@@ -1,11 +1,11 @@
 ---
 description: Arquivo gerado automaticamente. NÃO MODIFICAR
-ms.openlocfilehash: 5d928eb4754b1fe1b1d6886e3e60b18504692dee
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: 12e70a88601603b949a4e0bb858caf460f05393a
+ms.sourcegitcommit: 0d6d39dd6450e0c5fd6844cb78aead00a0782e46
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62131439"
+ms.lasthandoff: 03/23/2022
+ms.locfileid: "63759355"
 ---
 ```javascript
 
@@ -16,9 +16,16 @@ const options = {
 const client = Client.init(options);
 
 const cloudPcProvisioningPolicy = {
+  '@odata.type': '#microsoft.graph.cloudPcProvisioningPolicy',
   displayName: 'HR provisioning policy',
   description: 'Provisioning policy for India HR employees',
-  onPremisesConnectionId: '4e47d0f6-6f77-44f0-8893-c0fe1701b553'
+  onPremisesConnectionId: '4e47d0f6-6f77-44f0-8893-c0fe1701ffff',
+  imageId: 'Image ID value',
+  imageDisplayName: 'Image Display Name value',
+  imageType: 'custom',
+  windowsSettings: {
+    language: 'en-US'
+  }
 };
 
 await client.api('/deviceManagement/virtualEndpoint/provisioningPolicies/{id}')

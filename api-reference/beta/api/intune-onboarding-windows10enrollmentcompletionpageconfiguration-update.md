@@ -2,25 +2,25 @@
 title: Atualizar windows10EnrollmentCompletionPageConfiguration
 description: Atualize as propriedades de um objeto windows10EnrollmentCompletionPageConfiguration.
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 545d0e15456556fac29d31b978b9e47bf2ec8b1a
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 4879dee14b7350e4087ad6294c6e3d52cd397fd5
+ms.sourcegitcommit: 0076eb6abb89be3dca3575631924a74a5202be30
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59116497"
+ms.lasthandoff: 04/03/2022
+ms.locfileid: "64628935"
 ---
 # <a name="update-windows10enrollmentcompletionpageconfiguration"></a>Atualizar windows10EnrollmentCompletionPageConfiguration
 
 Namespace: microsoft.graph
 
-> **Importante:** As APIs Graph Microsoft na versão /beta estão sujeitas a alterações; não há suporte para uso de produção.
+> **Importante:** As APIs Graph Microsoft na versão /beta estão sujeitas a alterações; o uso de produção não é suportado.
 
 > **Observação:** A API do Microsoft Graph para Intune requer uma [licença ativa do Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
 
-Atualize as propriedades de um [objeto windows10EnrollmentCompletionPageConfiguration.](../resources/intune-onboarding-windows10enrollmentcompletionpageconfiguration.md)
+Atualize as propriedades de um [objeto windows10EnrollmentCompletionPageConfiguration](../resources/intune-onboarding-windows10enrollmentcompletionpageconfiguration.md) .
 
 ## <a name="prerequisites"></a>Pré-requisitos
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
@@ -28,7 +28,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |Tipo de permissão|Permissões (da com menos para a com mais privilégios)|
 |:---|:---|
 |Delegado (conta corporativa ou de estudante)|DeviceManagementServiceConfig.ReadWrite.All|
-|Delegado (conta pessoal da Microsoft)|Sem suporte.|
+|Delegada (conta pessoal da Microsoft)|Sem suporte.|
 |Aplicativo|DeviceManagementServiceConfig.ReadWrite.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
@@ -47,35 +47,36 @@ PATCH /deviceManagement/deviceEnrollmentConfigurations/{deviceEnrollmentConfigur
 |Aceitar|application/json|
 
 ## <a name="request-body"></a>Corpo da solicitação
-No corpo da solicitação, fornece uma representação JSON para o [objeto windows10EnrollmentCompletionPageConfiguration.](../resources/intune-onboarding-windows10enrollmentcompletionpageconfiguration.md)
+No corpo da solicitação, fornece uma representação JSON para o [objeto windows10EnrollmentCompletionPageConfiguration](../resources/intune-onboarding-windows10enrollmentcompletionpageconfiguration.md) .
 
 A tabela a seguir mostra as propriedades que são necessárias ao criar [o windows10EnrollmentCompletionPageConfiguration](../resources/intune-onboarding-windows10enrollmentcompletionpageconfiguration.md).
 
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|id|Cadeia de caracteres|Identificador exclusivo da conta Herdada de [deviceEnrollmentConfiguration](../resources/intune-shared-deviceenrollmentconfiguration.md)|
-|displayName|Cadeia de caracteres|O nome de exibição da configuração de registro de dispositivo Herdada de [deviceEnrollmentConfiguration](../resources/intune-shared-deviceenrollmentconfiguration.md)|
-|description|Cadeia de caracteres|A descrição da configuração de registro de dispositivo Herdada de [deviceEnrollmentConfiguration](../resources/intune-shared-deviceenrollmentconfiguration.md)|
+|id|String|Identificador exclusivo da conta Herdada de [deviceEnrollmentConfiguration](../resources/intune-shared-deviceenrollmentconfiguration.md)|
+|displayName|String|O nome de exibição da configuração de registro de dispositivo Herdada de [deviceEnrollmentConfiguration](../resources/intune-shared-deviceenrollmentconfiguration.md)|
+|descrição|String|A descrição da configuração de registro de dispositivo Herdada de [deviceEnrollmentConfiguration](../resources/intune-shared-deviceenrollmentconfiguration.md)|
 |prioridade|Int32|A prioridade é usada quando um usuário existe em vários grupos que são atribuídos à configuração de registro. Os usuários estão sujeitos apenas à configuração com o valor de prioridade mais baixo. Herdada do [deviceEnrollmentConfiguration](../resources/intune-shared-deviceenrollmentconfiguration.md)|
 |createdDateTime|DateTimeOffset|Hora de data criada em UTC da configuração de registro de dispositivo Herdada de [deviceEnrollmentConfiguration](../resources/intune-shared-deviceenrollmentconfiguration.md)|
 |lastModifiedDateTime|DateTimeOffset|Última data de modificação no UTC da configuração de registro de dispositivo Herdada de [deviceEnrollmentConfiguration](../resources/intune-shared-deviceenrollmentconfiguration.md)|
 |versão|Int32|A versão da configuração de registro de dispositivo Herdada de [deviceEnrollmentConfiguration](../resources/intune-shared-deviceenrollmentconfiguration.md)|
-|roleScopeTagIds|String collection|Marcas de escopo de função opcionais para as restrições de registro. Herdada do [deviceEnrollmentConfiguration](../resources/intune-shared-deviceenrollmentconfiguration.md)|
-|showInstallationProgress|Boleano|Mostrar ou ocultar o progresso da instalação para o usuário|
-|blockDeviceSetupRetryByUser|Boleano|Permitir que o usuário repetir a instalação na falha de instalação|
-|allowDeviceResetOnInstallFailure|Boleano|Permitir ou bloquear a redefinição do dispositivo na falha de instalação|
-|allowLogCollectionOnInstallFailure|Boleano|Permitir ou bloquear o conjunto de log na falha de instalação|
-|customErrorMessage|Cadeia de Caracteres|Definir mensagem de erro personalizada para mostrar após a falha na instalação|
+|roleScopeTagIds|Coleção de cadeias de caracteres|Marcas de escopo de função opcionais para as restrições de registro. Herdada do [deviceEnrollmentConfiguration](../resources/intune-shared-deviceenrollmentconfiguration.md)|
+|deviceEnrollmentConfigurationType|[deviceEnrollmentConfigurationType](../resources/intune-onboarding-deviceenrollmentconfigurationtype.md)|Suporte para Tipo de Configuração de Registro Herdado [de deviceEnrollmentConfiguration](../resources/intune-shared-deviceenrollmentconfiguration.md). Os valores possíveis são: `unknown`, `limit`, `platformRestrictions`, `windowsHelloForBusiness`, `defaultLimit`, `defaultPlatformRestrictions`, `defaultWindowsHelloForBusiness`, `defaultWindows10EnrollmentCompletionPageConfiguration`, `windows10EnrollmentCompletionPageConfiguration`, `deviceComanagementAuthorityConfiguration`, `singlePlatformRestriction`, `unknownFutureValue`.|
+|showInstallationProgress|Boolean|Mostrar ou ocultar o progresso da instalação para o usuário|
+|blockDeviceSetupRetryByUser|Booliano|Permitir que o usuário repetir a instalação na falha de instalação|
+|allowDeviceResetOnInstallFailure|Booliano|Permitir ou bloquear a redefinição do dispositivo na falha de instalação|
+|allowLogCollectionOnInstallFailure|Booliano|Permitir ou bloquear o conjunto de log na falha de instalação|
+|customErrorMessage|String|Definir mensagem de erro personalizada para mostrar após a falha na instalação|
 |installProgressTimeoutInMinutes|Int32|Definir o tempo de tempo de duração da instalação em minutos|
-|allowDeviceUseOnInstallFailure|Boleano|Permitir que o usuário continue usando o dispositivo na falha de instalação|
+|allowDeviceUseOnInstallFailure|Booleano|Permitir que o usuário continue usando o dispositivo na falha de instalação|
 |selectedMobileAppIds|String collection|Aplicativos selecionados para rastrear o status da instalação|
-|trackInstallProgressForAutopilotOnly|Boleano|Mostrar apenas o progresso da instalação para cenários de registro do Piloto Automático|
-|disableUserStatusTrackingAfterFirstUser|Boleano|Mostrar apenas o progresso da instalação para o primeiro registro de postagem do usuário|
+|trackInstallProgressForAutopilotOnly|Booleano|Mostrar apenas o progresso da instalação para cenários de registro do Piloto Automático|
+|disableUserStatusTrackingAfterFirstUser|Booliano|Mostrar apenas o progresso da instalação para o primeiro registro de postagem do usuário|
 
 
 
 ## <a name="response"></a>Resposta
-Se tiver êxito, este método retornará um código de resposta e um `200 OK` [objeto windows10EnrollmentCompletionPageConfiguration](../resources/intune-onboarding-windows10enrollmentcompletionpageconfiguration.md) atualizado no corpo da resposta.
+Se tiver êxito, este método retornará `200 OK` um código de resposta e um [objeto windows10EnrollmentCompletionPageConfiguration](../resources/intune-onboarding-windows10enrollmentcompletionpageconfiguration.md) atualizado no corpo da resposta.
 
 ## <a name="example"></a>Exemplo
 
@@ -84,7 +85,7 @@ Este é um exemplo da solicitação.
 ``` http
 PATCH https://graph.microsoft.com/beta/deviceManagement/deviceEnrollmentConfigurations/{deviceEnrollmentConfigurationId}
 Content-type: application/json
-Content-length: 746
+Content-length: 795
 
 {
   "@odata.type": "#microsoft.graph.windows10EnrollmentCompletionPageConfiguration",
@@ -95,6 +96,7 @@ Content-length: 746
   "roleScopeTagIds": [
     "Role Scope Tag Ids value"
   ],
+  "deviceEnrollmentConfigurationType": "limit",
   "showInstallationProgress": true,
   "blockDeviceSetupRetryByUser": true,
   "allowDeviceResetOnInstallFailure": true,
@@ -115,7 +117,7 @@ Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado a
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 918
+Content-Length: 967
 
 {
   "@odata.type": "#microsoft.graph.windows10EnrollmentCompletionPageConfiguration",
@@ -129,6 +131,7 @@ Content-Length: 918
   "roleScopeTagIds": [
     "Role Scope Tag Ids value"
   ],
+  "deviceEnrollmentConfigurationType": "limit",
   "showInstallationProgress": true,
   "blockDeviceSetupRetryByUser": true,
   "allowDeviceResetOnInstallFailure": true,
@@ -143,6 +146,7 @@ Content-Length: 918
   "disableUserStatusTrackingAfterFirstUser": true
 }
 ```
+
 
 
 

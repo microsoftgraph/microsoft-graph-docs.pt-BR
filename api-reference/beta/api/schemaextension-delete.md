@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: dkershaw10
 doc_type: apiPageType
 ms.prod: extensions
-ms.openlocfilehash: 60590d7959285b1c349618d813c5eb2ef6aa6409
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: 7fc50d29102b83465365365cec6bdc1d5149e9fd
+ms.sourcegitcommit: 0e7927f34b7e55d323acbf281e11560cb40a89ed
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62111925"
+ms.lasthandoff: 03/20/2022
+ms.locfileid: "63671990"
 ---
 # <a name="delete-schemaextension"></a>Excluir schemaExtension
 
@@ -29,12 +29,12 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegada (conta corporativa ou de estudante) | Application.ReadWrite.All, Directory.AccessAsUser.All    |
-|Delegada (conta pessoal da Microsoft) | Sem suporte.    |
+|Delegado (conta corporativa ou de estudante) | Application.ReadWrite.All    |
+|Delegado (conta pessoal da Microsoft) | Sem suporte.    |
 |Aplicativo | Sem suporte. |
 
 > [!NOTE]
-> Além disso, para o fluxo delegado, o usuário in-loco só pode excluir  esquemaExtensions que possui (onde a propriedade owner do esquemaExtension é a de um aplicativo que o usuário inscreveu `appId` possui).
+> Além disso, para o fluxo delegado, o usuário in-loco só pode excluir esquemaExtensions que possui (onde a  propriedade owner do esquemaExtension `appId` é a de um aplicativo que o usuário inscreveu possui).
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- { "blockType": "ignored" } -->

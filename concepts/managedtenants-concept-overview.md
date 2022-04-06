@@ -4,25 +4,25 @@ description: Microsoft 365 Lighthouse é um portal de administração que ajuda 
 author: idwilliams
 ms.localizationpriority: medium
 ms.prod: microsoft-365-lighthouse
-ms.openlocfilehash: 7ce7d5a12b73d0e67f4ecef35f6ff3465c362fa8
-ms.sourcegitcommit: 71186ad44d8d0df15e10b0f89df68d2ef0cf9d14
+ms.openlocfilehash: 5b7151b719823e880c1e6d90e5dbb3e739bff143
+ms.sourcegitcommit: 0249c86925c9b4797908394c952073b5d9137911
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/12/2022
-ms.locfileid: "61841788"
+ms.lasthandoff: 03/25/2022
+ms.locfileid: "64477962"
 ---
 # <a name="overview-for-multi-tenant-management-using-the-microsoft-365-lighthouse-api"></a>Visão geral do gerenciamento de vários locatários usando Microsoft 365 Lighthouse API
 
-Microsoft 365 Lighthouse é um portal de administração que permite que os MSPs (Provedores de Serviços Gerenciados) gerenciem remotamente vários locatários de clientes. Ele ajuda os MSPs a proteger e gerenciar dispositivos, dados e usuários em escala para clientes de pequenas e médias empresas (SMB) que estão usando Microsoft 365 Business Premium.
+Microsoft 365 Lighthouse é um portal de administração que permite que os Provedores de Serviços Gerenciados (MSPs) gerenciem remotamente vários locatários de clientes. Ele ajuda os MSPs a proteger e gerenciar dispositivos, dados e usuários em escala para clientes de pequenas e médias empresas (SMB) que estão usando Microsoft 365 Business Premium.
 
 Microsoft 365 Lighthouse ajuda os MSPs a simplificar a integração de Microsoft 365 Business Premium locatários do cliente. Ele oferece a um MSP a conveniência de exibições de vários locatários em todos os ambientes de locatários do cliente. Ele pode recomendar linhas de base de configuração de segurança personalizadas para os clientes SMB do MSP. Com Microsoft 365 Lighthouse, os MSPs podem dimensionar o gerenciamento de seus locatários de clientes, se concentrar no que é mais importante, encontrar e investigar riscos rapidamente e tomar medidas para ajudar a obter seus locatários de clientes para um estado íntegre e seguro.
 
 > [!NOTE]  
-> Esta documentação trata da API Microsoft 365 Lighthouse disponível no _Microsoft Graph_. Uma oferta semelhante, o Azure Lighthouse, ajuda os provedores de serviços a fornecer serviços gerenciados para serviços do Azure usando ferramentas de gerenciamento abrangentes e robustas integradas à plataforma _do Azure._ Para saber mais, confira [O que é o Farol do Azure.](/azure/lighthouse/overview)
+> Esta documentação trata da API Microsoft 365 Lighthouse disponível no _Microsoft Graph_. Uma oferta semelhante, o Azure Lighthouse, ajuda os provedores de serviços a fornecer serviços gerenciados para serviços do Azure usando ferramentas de gerenciamento abrangentes e robustas integradas à plataforma _do Azure_ . Para saber mais, confira [O que é o Farol do Azure](/azure/lighthouse/overview).
 
-## <a name="why-integrate-with-microsoft-365-lighthouse"></a>Por que se integrar Microsoft 365 Lighthouse?
+## <a name="why-integrate-with-microsoft-365-lighthouse"></a>Por que se integrar com Microsoft 365 Lighthouse?
 
-Como um MSP, você pode usar a API Microsoft 365 Lighthouse no Microsoft Graph para obter informações sobre riscos identificados e tomar medidas para ajudar a obter seus clientes em um estado saudável e seguro.
+Como um MSP, você pode usar a API de Microsoft 365 Lighthouse no Microsoft Graph para obter informações sobre riscos identificados e tomar medidas para ajudar a obter seus clientes em um estado saudável e seguro.
 
 ### <a name="devices"></a>Dispositivos
 
@@ -42,8 +42,8 @@ Você pode usar a API do Farol para executar as seguintes tarefas de gerenciamen
 
 Você pode usar a API do Farol para executar as seguintes tarefas de usuário:
 
-- Descubra [usuários arriscados](/graph/api/resources/managedtenants-riskyuser?view=graph-rest-beta&preserve-view=true) em seus clientes.
-- Exibir resumo do registro do usuário [de credencial](/graph/api/resources/managedtenants-credentialuserregistrationssummary?view=graph-rest-beta&preserve-view=true) para entender o que os usuários em seus clientes registraram para autenticação multifaionária e redefinição de senha de autoatendados.
+- Descubra [usuários arriscados](/graph/api/resources/riskyuser) em seus clientes.
+- Exibir [resumo do registro do usuário de credencial](/graph/api/resources/managedtenants-credentialuserregistrationssummary?view=graph-rest-beta&preserve-view=true) para entender o que os usuários em seus clientes registraram para autenticação multifaionária e redefinição de senha de autoatendados.
 
 ## <a name="api-reference"></a>Referência da API
 
@@ -52,7 +52,7 @@ Está procurando a referência de API para esse serviço?
 Consulte [Microsoft 365 Lighthouse API no Microsoft Graph (visualização)](/graph/api/resources/managedtenants-managedtenant?view=graph-rest-beta&preserve-view=true).
 
 > [!NOTE]
-> A Microsoft 365 Lighthouse api é definida no subnamespace OData, `microsoft.graph.managedTenants` .
+> A Microsoft 365 Lighthouse api é definida no subnamespace OData, `microsoft.graph.managedTenants`.
 
 
 ## <a name="next-steps"></a>Próximas etapas

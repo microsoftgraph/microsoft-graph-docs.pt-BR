@@ -1,25 +1,25 @@
 ---
 title: Listar regras
 description: Obter os recursos unifiedRoleManagementPolicyRule da propriedade de navegação de regras.
-author: carolinetempleton
+author: japere
 ms.localizationpriority: medium
 ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: 705ab989fac3e4e1b5c2af48ecb5d695c3447f21
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: ad00ffe481e6a419aad9f13524fef1e797eeaea4
+ms.sourcegitcommit: 43a7c971a97ce1e4c55cbae089820bfce7dfe42b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62119786"
+ms.lasthandoff: 03/29/2022
+ms.locfileid: "64510601"
 ---
 # <a name="list-rules"></a>Listar regras
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Obter os recursos unifiedRoleManagementPolicyRule da propriedade de navegação de regras.
+Obter os recursos unifiedRoleManagementPolicyRule da propriedade de navegação de regras. Para recuperar regras para uma política que se aplica ao Azure RBAC, use a [API DE PIM REST do Azure para políticas de gerenciamento de função](/rest/api/authorization/role-management-policies/list-for-scope).
 
-## <a name="permissions"></a>Permissões
+## <a name="permissions"></a>Permissions
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão|Permissões (da com menos para a com mais privilégios)|
@@ -51,7 +51,7 @@ Não forneça um corpo de solicitação para esse método.
 
 ## <a name="response"></a>Resposta
 
-Se tiver êxito, este método retornará um código de resposta e uma coleção de objetos `200 OK` [unifiedRoleManagementPolicyRule](../resources/unifiedrolemanagementpolicyrule.md) no corpo da resposta.
+Se tiver êxito, este método retornará um `200 OK` código de resposta e uma coleção de objetos [unifiedRoleManagementPolicyRule](../resources/unifiedrolemanagementpolicyrule.md) no corpo da resposta.
 
 ## <a name="examples"></a>Exemplos
 

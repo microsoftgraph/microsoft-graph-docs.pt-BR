@@ -1,23 +1,24 @@
 ---
 title: Criar plannerTask
-description: Use essa API para criar um novo **plannerTask**.
+description: Crie um novo plannerTask.
 ms.localizationpriority: high
 author: TarkanSevilmis
 ms.prod: planner
 doc_type: apiPageType
-ms.openlocfilehash: 15066999e8a559fb6a6a72f470c398a63a4dbdd6
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: d8b04ad94bf37d8ede0e9b285d3d555137c1b3fe
+ms.sourcegitcommit: 0249c86925c9b4797908394c952073b5d9137911
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62134536"
+ms.lasthandoff: 03/25/2022
+ms.locfileid: "64477661"
 ---
 # <a name="create-plannertask"></a>Criar plannerTask
 
 Namespace: microsoft.graph
 
-Use essa API para criar um novo **plannerTask**.
-## <a name="permissions"></a>Permissões
+Crie um novo **plannerTask**.
+
+## <a name="permissions"></a>Permissions
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
@@ -35,19 +36,20 @@ POST /planner/tasks
 | Nome       | Descrição|
 |:---------------|:----------|
 | Autorização  | {token} de portador. Obrigatório. |
+| Content-Type   | application/json. Obrigatório.|
 
 ## <a name="request-body"></a>Corpo da solicitação
-No corpo da solicitação, forneça uma representação JSON do objeto [plannerTask](../resources/plannertask.md). A propriedade planId do **plannerTask** deve ser definida como a id de um objeto [plannerPlan](../resources/plannerplan.md) existente.
+No corpo da solicitação, forneça uma representação JSON de um objeto [plannerTask](../resources/plannertask.md). A propriedade planId **plannerTask** deve ser definida para um ID de objeto [plannerPlan](../resources/plannerplan.md) existente.
 
 ## <a name="response"></a>Resposta
 
-Se bem-sucedido, este método retorna o código de resposta `201 Created` e o objeto [plannerTask](../resources/plannertask.md) no corpo da resposta.
+Se for bem-sucedido, esse método retornará um código de resposta `201 Created` e um objeto [plannerTask](../resources/plannertask.md) no corpo da resposta.
 
 Este método pode retornar qualquer um dos [códigos de status de HTTP](/graph/errors). Os erros mais comuns que os aplicativos devem tratar para esse método são as respostas 400, 403 e 404. Saiba mais sobre esses erros em [Condições de erro comuns do Planner](../resources/planner-overview.md#common-planner-error-conditions).
 
 ## <a name="example"></a>Exemplo
-##### <a name="request"></a>Solicitação
-Este é um exemplo da solicitação.
+### <a name="request"></a>Solicitação
+Este é um exemplo de solicitação.
 
 # <a name="http"></a>[HTTP](#tab/http)
 <!-- {
@@ -88,9 +90,9 @@ Content-type: application/json
 
 ---
 
-No corpo da solicitação, forneça uma representação JSON do objeto [plannerTask](../resources/plannertask.md).
-##### <a name="response"></a>Resposta
-Aqui está um exemplo da resposta. Observação: o objeto de resposta mostrado aqui pode ser reduzido para facilitar a leitura.
+### <a name="response"></a>Resposta
+Este é um exemplo de resposta. 
+> **Observação:** o objeto de resposta mostrado aqui pode ser encurtado para legibilidade.
 <!-- {
   "blockType": "response",
   "truncated": true,

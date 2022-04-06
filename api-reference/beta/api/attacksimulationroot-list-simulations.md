@@ -1,25 +1,25 @@
 ---
 title: Listar simulações
-description: Listar simulações de ataque de um locatário.
+description: Obter uma lista de campanhas de simulação de ataque para um locatário.
 author: Gopal-MSFT
 ms.localizationpriority: medium
 ms.prod: security
 doc_type: apiPageType
-ms.openlocfilehash: d0fb681c1f1d1e6eb1b4eff9eaf293e6c142e8b9
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: 24c73af15cdffa97007caa367a37a780f3cdbb4f
+ms.sourcegitcommit: 0d6d39dd6450e0c5fd6844cb78aead00a0782e46
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62114305"
+ms.lasthandoff: 03/23/2022
+ms.locfileid: "63758029"
 ---
 # <a name="list-simulations"></a>Listar simulações
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Listar simulações de ataque de um locatário.
+Obter uma lista de campanhas de simulação de ataque para um locatário.
 
-## <a name="permissions"></a>Permissões
+## <a name="permissions"></a>Permissions
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 | Tipo de permissão                        | Permissões (da com menos para a com mais privilégios) |
@@ -39,9 +39,9 @@ GET /security/attackSimulation/simulations
 ```
 
 ## <a name="optional-query-parameters"></a>Parâmetros de consulta opcionais
-Este método dá suporte aos seguintes parâmetros de consulta OData para ajudar a personalizar a resposta: `$count` , , , , , , `$filter` `$orderby` `$skiptoken` `$top` `$select` .
+Este método dá suporte aos seguintes parâmetros de consulta OData para ajudar a personalizar a resposta: `$count`, , `$filter`, `$orderby`, `$skiptoken`, `$top`, `$select`.
 
-As propriedades a seguir `$filter` suportam `$orderby` e : **attackTechnique**, **attackType**, **completionDateTime**, **displayName**, **isAutomated**, **launchDateTime**, **status**.
+As propriedades a seguir suportam `$filter` `$orderby`e : **attackTechnique**, **attackType**, **completionDateTime**, **displayName**, **isAutomated**, **launchDateTime**, **status**.
 
 Use `@odata.nextLink` para paginação.
 
@@ -72,13 +72,11 @@ Não forneça um corpo de solicitação para esse método.
 
 ## <a name="response"></a>Resposta
 
-Se tiver êxito, este método retornará um código `200 OK` de resposta e uma coleção de objetos [de](../resources/simulation.md) simulação no corpo da resposta.
+Se tiver êxito, este método retornará um `200 OK` código de resposta e uma coleção de objetos [de](../resources/simulation.md) simulação no corpo da resposta.
 
 ## <a name="examples"></a>Exemplos
 
 ### <a name="request"></a>Solicitação
-
-# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "list_simulation"
@@ -87,32 +85,6 @@ Se tiver êxito, este método retornará um código `200 OK` de resposta e uma c
 ``` http
 GET https://graph.microsoft.com/beta/security/attackSimulation/simulations
 ```
-# <a name="c"></a>[C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/list-simulation-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# <a name="javascript"></a>[JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/list-simulation-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# <a name="objective-c"></a>[Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/list-simulation-objc-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# <a name="java"></a>[Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/list-simulation-java-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# <a name="go"></a>[Ir](#tab/go)
-[!INCLUDE [sample-code](../includes/snippets/go/list-simulation-go-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# <a name="powershell"></a>[PowerShell](#tab/powershell)
-[!INCLUDE [sample-code](../includes/snippets/powershell/list-simulation-powershell-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
----
-
 
 
 ### <a name="response"></a>Resposta
@@ -150,15 +122,9 @@ Content-Type: application/json
       },
       "launchDateTime": "2021-01-01T02:01:01.01Z",
       "completionDateTime": "2021-01-07T01:01:01.01Z",
-      "includeAllAccountTargets": false,
-      "enableRegionTimezoneDelivery": false,
       "isAutomated": false,
-      "cleanupArtifacts": false,
-      "payloadSource": "global",
-      "payloadDeliveryPlatform": "email",
-      "trainingAssignmentPreference": "manual",
-      "trainingContentPreference": "microsoft",
-      "trainingDueDateTime": "2021-01-31T01:01:01.01Z"
+      "automationId": "f1b13829-3829-f1b1-2938-b1f12938b1ab",
+      "payloadDeliveryPlatform": "email"
     }
   ]
 }

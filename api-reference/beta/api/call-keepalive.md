@@ -1,16 +1,16 @@
 ---
 title: 'call: keepAlive'
 description: Faça uma solicitação a essa API a cada 15 a 45 minutos para garantir que uma chamada contínua permaneça ativa.
-author: ananmishr
+author: mkhribech
 ms.localizationpriority: medium
 ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: 4c7534a5e72dee54d0da5f7fb50d24a19348da92
-ms.sourcegitcommit: 25acfa7d0153336c9a35d30a1dd422aeadc1342c
+ms.openlocfilehash: 596a1d6abd9eb4986aa97cb31f8d956bbc2822c4
+ms.sourcegitcommit: 10719607271380ea56076ccff5a3b774d0005773
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/03/2022
-ms.locfileid: "62344100"
+ms.lasthandoff: 04/01/2022
+ms.locfileid: "64607943"
 ---
 # <a name="call-keepalive"></a>call: keepAlive
 
@@ -26,14 +26,16 @@ Recomendamos que você envie uma solicitação em intervalos de tempo mais curto
 
 Tentar enviar uma solicitação para uma chamada que já terminou resultará em um `404 Not-Found` erro. Os recursos relacionados à chamada devem ser limpos no lado do aplicativo.
 
-## <a name="permissions"></a>Permissões
+## <a name="permissions"></a>Permissions
 Uma das seguintes permissões pode ser necessária para chamar essa API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 | Tipo de permissão | Permissões (da com menos para a com mais privilégios) |
 | :-------------- | :------------------------------------------ |
 | Delegado (conta corporativa ou de estudante)     | Não suportado        |
 | Delegado (conta pessoal da Microsoft) | Não suportado        |
-| Aplicativo     | Nenhum                                        |
+| Aplicativo     | Calls.Initiate.All, Calls.AccessMedia.All |
+
+> **Observação:** As permissões são verificadas quando a chamada é criada; nenhuma verificação de permissão adicional é feita ao chamar essa API. Calls.AccessMedia.All só é necessário para chamadas que usam mídia hospedada pelo aplicativo.
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- { "blockType": "ignored" } -->

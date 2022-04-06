@@ -5,12 +5,12 @@ author: jpettere
 ms.localizationpriority: high
 ms.prod: users
 doc_type: apiPageType
-ms.openlocfilehash: ca76958de22160e61a9fcb874126893619fed688
-ms.sourcegitcommit: 43a7c971a97ce1e4c55cbae089820bfce7dfe42b
+ms.openlocfilehash: 4b43f13b984aa7a1708b48acc5a8959e4be78a60
+ms.sourcegitcommit: 0076eb6abb89be3dca3575631924a74a5202be30
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/29/2022
-ms.locfileid: "64509109"
+ms.lasthandoff: 04/03/2022
+ms.locfileid: "64629425"
 ---
 # <a name="list-users"></a>Listar usuários
 
@@ -794,6 +794,52 @@ Content-type: application/json
   ]
 }
 ```
+
+### <a name="example-12-get-the-value-of-a-schema-extension-for-all-users"></a>Exemplo 12: obter o valor de uma extensão de esquema para todos os usuários
+
+Neste exemplo, a ID da extensão do esquema é `ext55gb1l09_msLearnCourses`.
+
+#### <a name="request"></a>Solicitação
+
+<!-- {
+  "blockType": "request",
+  "name": "list_schemaextension"
+}-->
+```msgraph-interactive
+GET https://graph.microsoft.com/beta/users?$select=ext55gb1l09_msLearnCourses
+```
+
+#### <a name="response"></a>Resposta
+
+Na resposta a seguir, a propriedade de extensão de esquema `ext55gb1l09_msLearnCourses` não está designada em dois dos objetos de usuário.
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.user"
+} -->
+```http
+HTTP/1.1 200 OK
+Content-type: application/json
+
+{
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#users(ext55gb1l09_msLearnCourses)",
+    "value": [
+        {},
+        {
+            "ext55gb1l09_msLearnCourses": {
+                "@odata.type": "#microsoft.graph.ComplexExtensionValue",
+                "courseType": "Developer",
+                "courseName": "Introduction to Microsoft Graph",
+                "courseId": 1
+            }
+        },
+        {}
+    ]
+}
+```
+
+> **Observação**: você também pode aplicar `$filter` na propriedade de extensão do esquema para recuperar objetos em que uma propriedade na coleção corresponde a um valor especificado. A sintaxe é `/users?$filter={schemaPropertyID}/{propertyName} eq 'value'`. Por exemplo, `GET /users?$select=ext55gb1l09_msLearnCourses&$filter=ext55gb1l09_msLearnCourses/courseType eq 'Developer'`. Os `eq` e `not` operadores são compatíveis.
+
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->

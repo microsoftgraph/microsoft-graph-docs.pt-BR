@@ -5,30 +5,42 @@ ms.localizationpriority: medium
 author: abhijeetsinha
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: 89c777179b3315f81b7378f9a829c81019b70120
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: 5cd44344f9be5087627b3b4bdd335f121372c1f5
+ms.sourcegitcommit: 0076eb6abb89be3dca3575631924a74a5202be30
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62087526"
+ms.lasthandoff: 04/03/2022
+ms.locfileid: "64629013"
 ---
 # <a name="get-unifiedroleassignment"></a>Obter unifiedRoleAssignment
 
 Namespace: microsoft.graph
 
-Recupere as propriedades e as relações de um [objeto unifiedRoleAssignment.](../resources/unifiedroleassignment.md)
+Recupere as propriedades e as relações de um [objeto unifiedRoleAssignment](../resources/unifiedroleassignment.md) .
 
 ## <a name="permissions"></a>Permissões
 
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
+### <a name="for-the-directory-azure-ad-provider"></a>Para o provedor de diretório (Azure AD)
+
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegado (conta corporativa ou de estudante) | RoleManagement.Read.Directory, Directory.Read.All, RoleManagement.ReadWrite.Directory, Directory.ReadWrite.All, Directory.AccessAsUser.All    |
-|Delegado (conta pessoal da Microsoft) | Sem suporte.    |
+|Delegado (conta corporativa ou de estudante) | RoleManagement.Read.Directory, Directory.Read.All, RoleManagement.ReadWrite.Directory, Directory.ReadWrite.All    |
+|Delegada (conta pessoal da Microsoft) | Sem suporte.    |
 |Aplicativo | RoleManagement.Read.Directory, Directory.Read.All, RoleManagement.ReadWrite.Directory, Directory.ReadWrite.All |
 
+### <a name="for-the-entitlement-management-provider"></a>Para o provedor de gerenciamento de direitos
+
+|Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
+|:--------------------|:---------------------------------------------------------|
+|Delegado (conta corporativa ou de estudante) |  EntitlementManagement.Read.All, EntitlementManagement.ReadWrite.All  |
+|Delegada (conta pessoal da Microsoft) | Sem suporte.    |
+|Aplicativo | Sem suporte. |
+
 ## <a name="http-request"></a>Solicitação HTTP
+
+Obter uma atribuição de função para o provedor de diretórios:
 
 <!-- { "blockType": "ignored" } -->
 
@@ -36,9 +48,17 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 GET /roleManagement/directory/roleAssignments/{id}
 ```
 
+Obter uma atribuição de função para o provedor de gerenciamento de direitos:
+
+<!-- { "blockType": "ignored" } -->
+
+```http
+GET /roleManagement/entitlementManagement/roleAssignments/{id}
+```
+
 ## <a name="optional-query-parameters"></a>Parâmetros de consulta opcionais
 
-Este método dá suporte ao `$select` parâmetro de consulta OData para ajudar a personalizar a resposta. Para obter informações gerais, acesse [Parâmetros de consulta OData](/graph/query-parameters).
+Este método dá suporte ao parâmetro `$select` de consulta OData para ajudar a personalizar a resposta. Para obter informações gerais, acesse [Parâmetros de consulta OData](/graph/query-parameters).
 
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
 
@@ -52,7 +72,7 @@ Não forneça um corpo de solicitação para esse método.
 
 ## <a name="response"></a>Resposta
 
-Se tiver êxito, este método retornará um código de resposta e `200 OK` o objeto [unifiedRoleAssignment](../resources/unifiedroleassignment.md) solicitado no corpo da resposta.
+Se tiver êxito, este método retornará um `200 OK` código de resposta e o objeto [unifiedRoleAssignment](../resources/unifiedroleassignment.md) solicitado no corpo da resposta.
 
 ## <a name="examples"></a>Exemplos
 
@@ -130,7 +150,7 @@ Content-type: application/json
 
 #### <a name="request"></a>Solicitação
 
-A seguir, um exemplo da solicitação com o `$expand` parâmetro de consulta.
+A seguir, um exemplo da solicitação com o parâmetro `$expand` de consulta.
 
 
 
@@ -141,7 +161,7 @@ A seguir, um exemplo da solicitação com o `$expand` parâmetro de consulta.
 }-->
 
 ```msgraph-interactive
-GET https://graph.microsoft.com/v1.0/roleManagement/directory/roleAssignments/lAPpYvVpN0KRkAEhdxReEJC2sEqbR_9Hr48lds9SGHI-1?$expand=roleDefinition,principal,directoryScope
+GET https://graph.microsoft.com/v1.0/roleManagement/directory/roleAssignments/lAPpYvVpN0KRkAEhdxReEJC2sEqbR_9Hr48lds9SGHI-1?$expand=roleDefinition
 ```
 # <a name="c"></a>[C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-unifiedroleassignment-csharp-snippets.md)]
@@ -206,18 +226,7 @@ Content-type: application/json
       "isEnabled": true,
       },
     "principalId": "f8ca5a85-489a-49a0-b555-0a6d81e56f0d",
-    "principal": {
-      "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#users/$entity",
-      "id": "f8ca5a85-489a-49a0-b555-0a6d81e56f0d ",
-      "userPrincipalName": "alice@contoso.com",
-      "displayName": "Alice Smith"
-    },
-    "directoryScopeId": "28ca5a85-489a-49a0-b555-0a6d81e56f0d",
-    "directoryScope": {
-      "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#organization/$entity",
-      "id": "28ca5a85-489a-49a0-b555-0a6d81e56f0d",
-      "displayName": "Contoso_Seattle_Admins"
-    }
+    "directoryScopeId": "28ca5a85-489a-49a0-b555-0a6d81e56f0d"
 }
 ```
 <!-- uuid: 16cd6b66-4b1a-43a1-adaf-3a886856ed98

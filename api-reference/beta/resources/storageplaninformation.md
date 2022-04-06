@@ -1,25 +1,25 @@
 ---
 author: psampath
-description: O recurso Adicionadostorageplaninformation fornece informações sobre os planos de cota de armazenamento da unidade.
+description: O recurso storagePlanInformation fornece informações sobre os planos de cota de armazenamento da unidade.
 ms.date: 06/20/2018
-title: Adicionadostorageplaninformation
-localization_priority: Normal
+title: StoragePlanInformation
+ms.localizationpriority: medium
 doc_type: resourcePageType
 ms.prod: ''
-ms.openlocfilehash: 4c115276631c67cb796fd06c582dd490d4c59b20
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: db5707686f6104d8d9004696094c0bcc22066f5a
+ms.sourcegitcommit: e5d5095e26dca6f434354a0970e789e94ee6afb0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48019464"
+ms.lasthandoff: 03/22/2022
+ms.locfileid: "63723267"
 ---
-# <a name="storageplaninformation-resource-type"></a>tipo de recurso Adicionadostorageplaninformation
+# <a name="storageplaninformation-resource-type"></a>Tipo de recurso storagePlanInformation
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-O recurso **adicionadostorageplaninformation** fornece informações sobre os planos de cota de armazenamento da unidade.
+O **recurso storagePlanInformation** fornece informações sobre os planos de cota de armazenamento da unidade.
 
 ### <a name="json-representation"></a>Representação JSON
 
@@ -35,12 +35,12 @@ O recurso **adicionadostorageplaninformation** fornece informações sobre os pl
 }
 
 ```
+
 ## <a name="properties"></a>Propriedades
 
-| Nome da propriedade     | Tipo      | Descrição                                                             |
-|:------------------|:----------|:----------------------------------------------------------------------- |
-| upgradeAvailable  | Booliano   | Indica se há planos de cota de armazenamento mais altos disponíveis. Somente leitura. |
-
+| Propriedade         | Tipo    | Descrição                                                             |
+| :--------------- | :------ | :---------------------------------------------------------------------- |
+| upgradeAvailable | Booliano | Indica se há planos de cota de armazenamento mais altos disponíveis. Somente leitura. |
 
 <!--
 {
@@ -52,6 +52,3 @@ O recurso **adicionadostorageplaninformation** fornece informações sobre os pl
   "suppressions": []
 }
 -->
-
-
-

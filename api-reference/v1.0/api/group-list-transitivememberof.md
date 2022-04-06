@@ -1,30 +1,30 @@
 ---
 title: Listar transitivo de grupo memberOf
-description: Obter grupos dos que o grupo é membro.  Essa operação é transitiva e também incluirá todos os grupos dos que esses grupos são membros aninhados. Ao contrário de obter grupos Microsoft 365 usuários, isso retorna todos os tipos de grupos, não apenas Microsoft 365 grupos.
+description: Obter grupos dos que o grupo é membro.  Essa operação é transitiva e também incluirá todos os grupos dos que esses grupos são membros aninhados. Ao contrário de obter grupos Microsoft 365 de usuários, isso retorna todos os tipos de grupos, não apenas Microsoft 365 grupos.
 author: Jordanndahl
 ms.localizationpriority: medium
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: 7730efc4c61edcd568d352e765d7e76662350986
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: ec51cead8186c08d2bcd12206cee9af2af544f31
+ms.sourcegitcommit: 43a7c971a97ce1e4c55cbae089820bfce7dfe42b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62114824"
+ms.lasthandoff: 03/29/2022
+ms.locfileid: "64508510"
 ---
 # <a name="list-group-transitive-memberof"></a>Listar transitivo de grupo memberOf
 
 Namespace: microsoft.graph
 
-Obter grupos dos que o grupo é membro.  Essa operação é transitiva e também incluirá todos os grupos dos que esses grupos são membros aninhados. Ao contrário de obter grupos Microsoft 365 usuários, isso retorna todos os tipos de grupos, não apenas Microsoft 365 grupos.
+Obter grupos dos que o grupo é membro.  Essa operação é transitiva e também incluirá todos os grupos dos que esses grupos são membros aninhados. Ao contrário de obter grupos Microsoft 365 de usuários, isso retorna todos os tipos de grupos, não apenas Microsoft 365 grupos.
 
-## <a name="permissions"></a>Permissões
+## <a name="permissions"></a>Permissions
 
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegado (conta corporativa ou de estudante) | Directory.Read.All, Directory.ReadWrite.All, Directory.AccessAsUser.All    |
+|Delegado (conta corporativa ou de estudante) | Directory.Read.All, Directory.ReadWrite.All    |
 |Delegado (conta pessoal da Microsoft) | Sem suporte.    |
 |Aplicativo | Directory.Read.All, Directory.ReadWrite.All |
 
@@ -183,7 +183,7 @@ Content-type: text/plain
 ```
 
 
-### <a name="example-4-use-odata-cast-and-search-to-get-membership-in-groups-with-display-names-that-contain-the-letters-tier-including-a-count-of-returned-objects"></a>Exemplo 4: use o OData cast e $search para obter associação em grupos com nomes de exibição que contêm as letras 'camada' incluindo uma contagem de objetos retornados
+### <a name="example-4-use-odata-cast-and-search-to-get-membership-in-groups-with-display-names-that-contain-the-letters-tier-including-a-count-of-returned-objects"></a>Exemplo 4: use o OData cast e $search para obter associação em grupos com nomes de exibição que contêm as letras "camada" incluindo uma contagem de objetos retornados
 
 #### <a name="request"></a>Solicitação
 
@@ -234,7 +234,7 @@ Este é um exemplo de solicitação.
 
 <!-- {
   "blockType": "ignored",
-  "name": "get_a_count"
+  "name": "list_groups_transitivememberof_startswith"
 }-->
 ```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/groups/{id}/transitiveMemberOf/microsoft.graph.group?$count=true&$orderby=displayName&$filter=startswith(displayName, 'a')

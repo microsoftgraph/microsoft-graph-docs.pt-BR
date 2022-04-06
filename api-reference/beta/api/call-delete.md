@@ -1,16 +1,16 @@
 ---
 title: Excluir chamada
 description: Excluir ou desligar uma chamada ativa.
-author: ananmishr
+author: mkhribech
 ms.localizationpriority: medium
 ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: a603e90e404894e6e5b79c5a71d41f8206aca456
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: 4f4ada1c3f4fec91aa9e2ef9cb7dbc60f900c00e
+ms.sourcegitcommit: 10719607271380ea56076ccff5a3b774d0005773
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62116357"
+ms.lasthandoff: 04/01/2022
+ms.locfileid: "64607796"
 ---
 # <a name="delete-call"></a>Excluir chamada
 
@@ -26,7 +26,9 @@ Excluir ou desligar uma chamada ativa. Para chamadas de grupo, isso excluirá ap
 | :-------------- | :----------------------------------------------------------- |
 | Delegado (conta corporativa ou de estudante)     | Sem suporte.                         |
 | Delegado (conta pessoal da Microsoft) | Sem suporte.                         |
-| Aplicativo                            | Nenhum.                                  |
+| Aplicativo                            | Calls.Initiate.All, Calls.AccessMedia.All |
+
+> **Observação:** As permissões são verificadas quando a chamada é criada; nenhuma verificação de permissão adicional é feita ao chamar essa API. Calls.AccessMedia.All só é necessário para chamadas que usam mídia hospedada pelo aplicativo.
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- { "blockType": "ignored" } -->

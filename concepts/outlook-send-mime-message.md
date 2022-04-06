@@ -4,12 +4,12 @@ description: Os clientes de email têm a capacidade de enviar emails pelo Exchan
 author: isvargasmsft
 ms.localizationpriority: high
 ms.prod: outlook
-ms.openlocfilehash: d32aee40b5336c2a84fcc83d42692bede89c6bc8
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 80b669bfb757010d1842c8ba16513d2789e1e059
+ms.sourcegitcommit: 0249c86925c9b4797908394c952073b5d9137911
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59071739"
+ms.lasthandoff: 03/25/2022
+ms.locfileid: "64477710"
 ---
 # <a name="send-messages-with-mime-content"></a>Enviar mensagens com conteúdo MIME
 
@@ -38,7 +38,7 @@ Para saber mais sobre o formato MIME, consulte [como obter conteúdo MIME de uma
 | Criar um rascunho para responder uma mensagem | [createReply](/graph/api/message-createreply) |
 | Responder a todos por uma mensagem. | [replyAll](/graph/api/message-replyall) | 
 | Criar um rascunho para responderTodos em uma mensagem | [createReplyAll](/graph/api-reference/api/message-createreplyall) |
-| Encaminhar uma mensagem | [forward](/graph/api-reference/api/message-forward) |
+| Encaminhar uma mensagem | [forward](/graph/api/message-forward) |
 | Crie um rascunho para encaminhar a mensagem | [createForward](/graph/api-reference/api/message-createforward) | 
 
 

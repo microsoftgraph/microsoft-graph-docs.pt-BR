@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 doc_type: apiPageType
 ms.prod: identity-and-sign-in
 author: psignoret
-ms.openlocfilehash: c931a41be04555937831d13d22a99a9351e8efd3
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: 526c1d9093f258094a14f6ce2806d1293f58f805
+ms.sourcegitcommit: 43a7c971a97ce1e4c55cbae089820bfce7dfe42b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62112498"
+ms.lasthandoff: 03/29/2022
+ms.locfileid: "64508626"
 ---
 # <a name="create-permissiongrantpolicy"></a>Criar permissionGrantPolicy
 
@@ -22,15 +22,15 @@ Cria uma [permissionGrantPolicy](../resources/permissiongrantpolicy.md). Uma pol
 
 Depois de criar a política de concessão de permissão, você pode adicionar [conjuntos](permissiongrantpolicy-post-includes.md) de condições para adicionar regras correspondentes e adicionar conjuntos de condições [de](permissiongrantpolicy-post-excludes.md) exclusão para adicionar regras de exclusão.
 
-## <a name="permissions"></a>Permissões
+## <a name="permissions"></a>Permissions
 
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegado (conta corporativa ou de estudante) | PermissionGrantPolicy.ReadWrite.All |
+|Delegado (conta corporativa ou de estudante) | Policy.ReadWrite.PermissionGrant |
 |Delegado (conta pessoal da Microsoft) | Sem suporte.    |
-|Aplicativo | PermissionGrantPolicy.ReadWrite.All |
+|Aplicativo | Policy.ReadWrite.PermissionGrant |
 
 ## <a name="http-request"></a>Solicitação HTTP
 
@@ -48,11 +48,11 @@ POST /policies/permissionGrantPolicies
 
 ## <a name="request-body"></a>Corpo da solicitação
 
-No corpo da solicitação, fornece uma representação JSON de [um objeto permissionGrantPolicy.](../resources/permissiongrantpolicy.md)
+No corpo da solicitação, fornece uma representação JSON de [um objeto permissionGrantPolicy](../resources/permissiongrantpolicy.md) .
 
 ## <a name="response"></a>Resposta
 
-Se tiver êxito, este método retornará um código de resposta e um `201 Created` [objeto permissionGrantPolicy](../resources/permissiongrantpolicy.md) no corpo da resposta.
+Se tiver êxito, este método retornará um `201 Created` código de resposta e um [objeto permissionGrantPolicy](../resources/permissiongrantpolicy.md) no corpo da resposta.
 
 ## <a name="examples"></a>Exemplos
 

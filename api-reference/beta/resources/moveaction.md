@@ -3,15 +3,15 @@ author: daspek
 description: A presença do recurso MoveAction em uma itemActivity indica que a atividade moveu um item.
 ms.date: 09/14/2017
 title: MoveAction
-localization_priority: Normal
+ms.localizationpriority: medium
 doc_type: resourcePageType
 ms.prod: ''
-ms.openlocfilehash: 547a49e17a74be43500a9cf52aaa3a375272b810
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: d5da0b6502752f25ad59b9d19a8a4a366d473ec8
+ms.sourcegitcommit: e5d5095e26dca6f434354a0970e789e94ee6afb0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48021284"
+ms.lasthandoff: 03/22/2022
+ms.locfileid: "63722654"
 ---
 # <a name="moveaction-resource-type"></a>Tipo de recurso MoveAction
 
@@ -28,22 +28,22 @@ A presença do recurso **MoveAction** em uma [**itemActivity**][activity] indica
 <!-- {
   "blockType": "resource",
   "optionalProperties": [ ],
-  "@type": "microsoft.graph.moveAction"
+  "@type&quot;: &quot;microsoft.graph.moveAction"
 }-->
 
 ```json
 {
   "from": "string",
-  "to": "string"
+  "to&quot;: &quot;string"
 }
 ```
 
 ## <a name="properties"></a>Propriedades
 
-| Nome da propriedade | Tipo   | Descrição
-|:--------------|:-------|:----------------------------------------------------
-| from          | string | O nome do local do qual o item foi movido.
-| para            | string | O nome do local para o qual o item foi movido.
+| Propriedade | Tipo   | Descrição                                       |
+| :------- | :----- | :------------------------------------------------ |
+| from     | string | O nome do local do qual o item foi movido. |
+| para       | string | O nome do local para o qual o item foi movido.   |
 
 ## <a name="remarks"></a>Comentários
 
@@ -59,5 +59,3 @@ Registros de atividade de item atualmente só estão disponíveis no SharePoint 
   "suppressions": []
 }
 -->
-
-

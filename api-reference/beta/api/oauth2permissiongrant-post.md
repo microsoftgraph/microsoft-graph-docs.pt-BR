@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 doc_type: apiPageType
 ms.prod: identity-and-sign-in
 author: psignoret
-ms.openlocfilehash: dc32f5ba7ff9ed0ac412bc0257e9dc4c0d345dca
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: 631bc0ce35a597c44af163cf82d12bc3eb029298
+ms.sourcegitcommit: 0e7927f34b7e55d323acbf281e11560cb40a89ed
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62129656"
+ms.lasthandoff: 03/20/2022
+ms.locfileid: "63670835"
 ---
 # <a name="create-oauth2permissiongrant-a-delegated-permission-grant"></a>Criar oAuth2PermissionGrant (uma concessão de permissão delegada)
 
@@ -18,7 +18,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Crie uma concessão de permissão delegada, representada por um [objeto oAuth2PermissionGrant.](../resources/oauth2permissiongrant.md)
+Crie uma concessão de permissão delegada, representada por um [objeto oAuth2PermissionGrant](../resources/oauth2permissiongrant.md) .
 
 Uma concessão de permissão delegada autoriza uma entidade de serviço de cliente (representando um aplicativo cliente) a acessar uma entidade de serviço de recursos (representando uma API), em nome de um usuário assinado, para o nível de acesso limitado pelas permissões delegadas que foram concedidas.
 
@@ -28,7 +28,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegado (conta corporativa ou de estudante) | DelegatedPermissionGrant.ReadWrite.All, Directory.ReadWrite.All, Directory.AccessAsUser.All    |
+|Delegado (conta corporativa ou de estudante) | DelegatedPermissionGrant.ReadWrite.All, Directory.ReadWrite.All    |
 |Delegado (conta pessoal da Microsoft) | Sem suporte.    |
 |Aplicativo | Directory.ReadWrite.All |
 
@@ -48,17 +48,17 @@ POST /oauth2PermissionGrants
 
 ## <a name="request-body"></a>Corpo da solicitação
 
-No corpo da solicitação, fornece uma representação JSON de [um objeto oAuth2PermissionGrant.](../resources/oauth2permissiongrant.md)
+No corpo da solicitação, fornece uma representação JSON de [um objeto oAuth2PermissionGrant](../resources/oauth2permissiongrant.md) .
 
-A tabela a seguir mostra as propriedades que são necessárias ao criar [oAuth2PermissionGrant](../resources/oauth2permissiongrant.md).
+A tabela a seguir mostra as propriedades que são necessárias ao criar [oauth2PermissionGrant](../resources/oauth2permissiongrant.md).
 
 | Propriedade | Tipo | Descrição |
 |:---------------|:--------|:----------|
-| clientId | Cadeia de caracteres | A **id** da [](../resources/serviceprincipal.md) entidade de serviço do cliente para o aplicativo que está autorizado a agir em nome de um usuário interno ao acessar uma API. Obrigatório.  |
-| consentType | Cadeia de caracteres | Indica se a autorização é concedida para que o aplicativo cliente represente todos os usuários ou apenas um usuário específico. *AllPrincipals* indica autorização para representar todos os usuários. *A* entidade indica autorização para representar um usuário específico. O consentimento em nome de todos os usuários pode ser concedido por um administrador. Os usuários que não são administradores podem ser autorizados a consentir em nome de si mesmos em alguns casos, para algumas permissões delegadas. Obrigatório.  |
-| principalId | Cadeia de caracteres | A **id** do [usuário em](../resources/user.md) nome do qual o cliente está autorizado a acessar o recurso, quando **consentType** for *Principal*. Se **consentType** for *AllPrincipals,* esse valor será nulo. Obrigatório quando **consentType** for *Principal*. |
+| clientId | Cadeia de caracteres | A **id da** entidade de [](../resources/serviceprincipal.md) serviço do cliente para o aplicativo que está autorizado a agir em nome de um usuário interno ao acessar uma API. Obrigatório.  |
+| consentType | String | Indica se a autorização é concedida para que o aplicativo cliente represente todos os usuários ou apenas um usuário específico. *AllPrincipals* indica autorização para representar todos os usuários. *A* entidade indica autorização para representar um usuário específico. O consentimento em nome de todos os usuários pode ser concedido por um administrador. Os usuários que não são administradores podem ser autorizados a consentir em nome de si mesmos em alguns casos, para algumas permissões delegadas. Obrigatório.  |
+| principalId | String | A **id** do [usuário em](../resources/user.md) nome do qual o cliente está autorizado a acessar o recurso, quando **consentType** for *Principal*. Se **consentType** for *AllPrincipals* , esse valor será nulo. Obrigatório quando **consentType** for *Principal*. |
 | resourceId | Cadeia de caracteres | A **id da** entidade de [serviço de recursos](../resources/serviceprincipal.md) à qual o acesso está autorizado. Isso identifica a API que o cliente está autorizado a tentar chamar em nome de um usuário in-locar. |
-| escopo | String | Uma lista separada por espaço dos valores de declaração para permissões delegadas que devem ser incluídos em tokens de acesso para o aplicativo de recurso (a API). Por exemplo, `openid User.Read GroupMember.Read.All`. Cada valor de  declaração deve corresponder ao campo de valor de uma das permissões delegadas definidas pela API, listadas na propriedade **publishedPermissionScopes** da entidade de [serviço de recursos](../resources/serviceprincipal.md). |
+| escopo | String | Uma lista separada por espaço dos valores de declaração para permissões delegadas que devem ser incluídos em tokens de acesso para o aplicativo de recurso (a API). Por exemplo, `openid User.Read GroupMember.Read.All`. Cada valor de declaração deve corresponder  ao campo de valor de uma das permissões delegadas definidas pela API, listadas na propriedade **publishedPermissionScopes** da entidade de [serviço de recursos](../resources/serviceprincipal.md). |
 | startTime | DateTimeOffset | Atualmente, o valor de hora de início é ignorado, mas um valor é necessário. Obrigatório. |
 | expiryTime | DateTimeOffset | Atualmente, o valor de hora de término é ignorado, mas um valor é necessário. Obrigatório. |
 
@@ -81,13 +81,12 @@ POST https://graph.microsoft.com/beta/oauth2PermissionGrants
 Content-Type: application/json
 
 {
-  "clientId": "clientId-value",
-  "consentType": "consentType-value",
-  "principalId": "principalId-value",
-  "resourceId": "resourceId-value",
-  "scope": "scope-value",
-  "startTime": "2016-10-19T10:37:00Z",
-  "expiryTime": "2016-10-19T10:37:00Z"
+    "clientId": "ef969797-201d-4f6b-960c-e9ed5f31dab5",
+    "consentType": "AllPrincipals",
+    "resourceId": "943603e4-e787-4fe9-93d1-e30f749aae39",
+    "scope": "DelegatedPermissionGrant.ReadWrite.All",
+    "startTime": "2022-03-17T00:00:00Z",
+    "expiryTime": "2023-03-17T00:00:00Z"
 }
 ```
 # <a name="c"></a>[C#](#tab/csharp)
@@ -130,14 +129,15 @@ HTTP/1.1 201 Created
 Content-Type: application/json
 
 {
-  "id": "id-value",
-  "clientId": "clientId-value",
-  "consentType": "consentType-value",
-  "principalId": "principalId-value",
-  "resourceId": "resourceId-value",
-  "scope": "scope-value",
-  "startTime": "2016-10-19T10:37:00Z",
-  "expiryTime": "2016-10-19T10:37:00Z"
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#oauth2PermissionGrants/$entity",
+    "clientId": "ef969797-201d-4f6b-960c-e9ed5f31dab5",
+    "consentType": "AllPrincipals",
+    "expiryTime": "2023-03-17T00:00:00Z",
+    "id": "l5eW7x0ga0-WDOntXzHateQDNpSH5-lPk9HjD3Sarjk",
+    "principalId": null,
+    "resourceId": "943603e4-e787-4fe9-93d1-e30f749aae39",
+    "scope": "DelegatedPermissionGrant.ReadWrite.All",
+    "startTime": "2022-03-17T00:00:00Z"
 }
 ```
 

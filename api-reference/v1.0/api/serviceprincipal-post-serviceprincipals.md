@@ -5,12 +5,12 @@ author: sureshja
 ms.localizationpriority: high
 doc_type: apiPageType
 ms.prod: applications
-ms.openlocfilehash: df5935ce9a58857114c64ac1decd3b18fa3ab608
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: 6798c043ae90f1b3ebc75eb2189204e03f290b29
+ms.sourcegitcommit: 0249c86925c9b4797908394c952073b5d9137911
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62128529"
+ms.lasthandoff: 03/25/2022
+ms.locfileid: "64477829"
 ---
 # <a name="create-serviceprincipal"></a>Criar servicePrincipal
 
@@ -19,16 +19,16 @@ Namespace: microsoft.graph
 Criar um novo objeto do [servicePrincipal](../resources/serviceprincipal.md).
 
 > [!IMPORTANT]
-> Não há suporte para a adição de [**passwordCredential**](../resources/passwordcredential.md) durante a criação de servicePrincipals. Use o método [addpassword](serviceprincipal-addpassword.md) para adicionar senhas a um servicePrincipal.
+> Não há suporte para a adição de [**passwordCredential**](../resources/passwordcredential.md) durante a criação de servicePrincipals. Use o método [addPassword](serviceprincipal-addpassword.md) para adicionar senhas ou segredos para um servicePrincipal.
 
-## <a name="permissions"></a>Permissões
+## <a name="permissions"></a>Permissions
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegada (conta corporativa ou de estudante) | Application.ReadWrite.All, Directory.AccessAsUser.All    |
-|Delegada (conta pessoal da Microsoft) | Sem suporte.    |
+|Delegado (conta corporativa ou de estudante) | Application.ReadWrite.All    |
+|Delegado (conta pessoal da Microsoft) | Sem suporte.    |
 |Aplicativo | Application.ReadWrite.OwnedBy, Application.ReadWrite.All |
 
 ## <a name="http-request"></a>Solicitação HTTP

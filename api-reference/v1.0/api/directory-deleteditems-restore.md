@@ -5,12 +5,12 @@ author: keylimesoda
 ms.localizationpriority: medium
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: 016ed313ac225c28f187e7f713de71fea51140d4
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 60cd0e21852a0ae266075308f6b6ffb9c578817f
+ms.sourcegitcommit: cc9e5b3630cb84c48bbbb2d84a963b9562d1fb78
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59022804"
+ms.lasthandoff: 03/31/2022
+ms.locfileid: "64588950"
 ---
 # <a name="restore-deleted-item"></a>Restaurar item excluído
 
@@ -18,18 +18,18 @@ Namespace: microsoft.graph
 
 Restaura um item recentemente excluído de [itens excluídos](../resources/directory.md). 
 
-Atualmente, a funcionalidade de restaurar itens excluídos só é suportada para os recursos [de](../resources/application.md)aplicativo, [grupo](../resources/group.md) [e](../resources/user.md) usuário. Se um item foi excluído acidentalmente, você poderá restaurá-lo totalmente. Isso não se aplica a grupos de Segurança, que são excluídos permanentemente.
+Atualmente, a funcionalidade de restaurar itens excluídos só tem suporte para os recursos [de](../resources/application.md) aplicativo, [grupo](../resources/group.md) [e](../resources/user.md) usuário. Se um item foi excluído acidentalmente, você poderá restaurá-lo totalmente. Isso não se aplica a grupos de Segurança, que são excluídos permanentemente.
 
 Um item recentemente excluído permanecerá disponível por até 30 dias. Após 30 dias, esse item será excluído permanentemente.
 
-## <a name="permissions"></a>Permissões
+## <a name="permissions"></a>Permissions
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 ### <a name="for-applications"></a>Para aplicativos:
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegado (conta corporativa ou de estudante) | Directory.AccessAsUser.All    |
+|Delegado (conta corporativa ou de estudante) | Application.ReadWrite.All    |
 |Delegado (conta pessoal da Microsoft) | Sem suporte.    |
 |Aplicativo | Application.ReadWrite.OwnedBy, Application.ReadWrite.All |
 
@@ -38,16 +38,16 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegada (conta corporativa ou de estudante) | User.ReadWrite.All, Directory.AccessAsUser.All |
-|Delegada (conta pessoal da Microsoft) | Sem suporte. |
+|Delegado (conta corporativa ou de estudante) | User.ReadWrite.All |
+|Delegado (conta pessoal da Microsoft) | Sem suporte. |
 |Aplicativo | User.ReadWrite.All |
 
 ### <a name="for-groups"></a>Para grupos:
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegada (conta corporativa ou de estudante) | Group.ReadWrite.All, Directory.AccessAsUser.All |
-|Delegada (conta pessoal da Microsoft) | Sem suporte.    |
+|Delegado (conta corporativa ou de estudante) | Group.ReadWrite.All |
+|Delegado (conta pessoal da Microsoft) | Sem suporte.    |
 |Aplicativo | Group.ReadWrite.All |
 
 ## <a name="http-request"></a>Solicitação HTTP
@@ -59,7 +59,7 @@ POST /directory/deletedItems/{id}/restore
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
 | Nome       | Descrição|
 |:---------------|:----------|
-| Autorização  | Token de &lt; portador &gt; *Obrigatório*|
+| Autorização  | Token de &lt;portador&gt; *Obrigatório*|
 | Content-type | application/json |
 
 ## <a name="request-body"></a>Corpo da solicitação

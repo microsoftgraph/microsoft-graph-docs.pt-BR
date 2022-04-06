@@ -3,15 +3,15 @@ author: daspek
 description: A presença do recurso RenameAction em uma itemActivity indica que a atividade renomeou um item.
 ms.date: 09/14/2017
 title: RenameAction
-localization_priority: Normal
+ms.localizationpriority: medium
 doc_type: resourcePageType
 ms.prod: ''
-ms.openlocfilehash: e14521b6be27a9b4b2772cd80c172e5faf73b0d3
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 3f7d9e7dad20ff8c03e0135cfe90928561fede51
+ms.sourcegitcommit: e5d5095e26dca6f434354a0970e789e94ee6afb0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48003497"
+ms.lasthandoff: 03/22/2022
+ms.locfileid: "63723760"
 ---
 # <a name="renameaction-resource-type"></a>Tipo de recurso RenameAction
 
@@ -28,22 +28,22 @@ A presença do recurso **RenameAction** em uma [**itemActivity**][activity] indi
 <!-- {
   "blockType": "resource",
   "optionalProperties": [ ],
-  "@type": "microsoft.graph.renameAction"
+  "@type&quot;: &quot;microsoft.graph.renameAction"
 }-->
 
 ```json
 {
   "oldName": "string",
-  "newName": "string"
+  "newName&quot;: &quot;string"
 }
 ```
 
 ## <a name="properties"></a>Propriedades
 
-| Nome da propriedade | Tipo   | Descrição
-|:--------------|:-------|:----------------------------------------------------
-| oldName       | string | O nome anterior do item.
-| newName       | string | O novo nome do item.
+| Propriedade | Tipo   | Descrição                    |
+| :------- | :----- | :----------------------------- |
+| oldName  | string | O nome anterior do item. |
+| newName  | string | O novo nome do item.      |
 
 ## <a name="remarks"></a>Comentários
 
@@ -59,5 +59,3 @@ Registros de atividade de item atualmente só estão disponíveis no SharePoint 
   "suppressions": []
 }
 -->
-
-

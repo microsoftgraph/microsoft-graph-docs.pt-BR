@@ -1,29 +1,29 @@
 ---
-title: Cache Graph Toolkit Microsoft
+title: Microsoft Graph Toolkit cache
 description: Explicando como o Cache funciona e como configurar as opções fornecidas aos desenvolvedores
 ms.localizationpriority: medium
-author: adchau
-ms.openlocfilehash: 79ac43d0a0cc1a09ded730a9957fd1735f7790de
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+author: sebastienlevert
+ms.openlocfilehash: 88b3ed3c8a30f0fcfd79da3cd094420d4534e619
+ms.sourcegitcommit: cc9e5b3630cb84c48bbbb2d84a963b9562d1fb78
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59129639"
+ms.lasthandoff: 03/31/2022
+ms.locfileid: "64589251"
 ---
-# <a name="microsoft-graph-toolkit-caching"></a>Cache Graph Toolkit Microsoft
+# <a name="microsoft-graph-toolkit-caching"></a>Microsoft Graph Toolkit cache
 
-O Microsoft Graph Toolkit oferece suporte ao cache de chamadas de API Graph Microsoft. As chamadas estão sendo armazenadas em cache por entidade, como pessoas, contato, foto. Isso permite que um componente recupere os dados e outros componentes para reutilizar sem chamar o Microsoft Graph.
+O microsoft Graph Toolkit oferece suporte ao cache de chamadas API do Graph Microsoft. As chamadas estão sendo armazenadas em cache por entidade, como pessoas, contato, foto. Isso permite que um componente recupere os dados e outros componentes para reutilizar sem chamar o Microsoft Graph.
 
 > [!TIP]
 > Para obter mais informações sobre quais entidades são armazenadas em cache por cada componente, consulte a documentação do componente.
 
-Bancos de dados criados pelo mgt para cache são prefixados com `mgt-` . Os dados de cada entidade são armazenados em um armazenamento de objetos separado. Para inspecionar o cache, use **a** guia Aplicativo no painel do desenvolvedor (ferramentas F12) - na seção Armazenamento, clique na **guia IndexedDB.**  
+Bancos de dados criados pelo mgt para cache são prefixados com `mgt-`. Os dados de cada entidade são armazenados em um armazenamento de objetos separado. Para inspecionar o cache, use **a** guia Aplicativo no painel do desenvolvedor (ferramentas F12) - na seção Armazenamento, clique na **guia IndexedDB**. 
 
 ![devtools indexedDB](../images/indexedDBpanel.png)
 
 ## <a name="cache-configuration"></a>Configuração de cache
 
-Você pode ler e gravar as opções de cache por meio do objeto de classe `CacheService.config` estática. Ele é formatado conforme mostrado.
+Você pode ler e gravar as opções de cache por meio do objeto de classe estática `CacheService.config` . Ele é formatado conforme mostrado.
 
 ```TypeScript
 let config = {
@@ -64,13 +64,13 @@ let config = {
 };
 ```
 
-Períodos de invalidação de cache individuais são padrão no objeto config e padrão para o valor geral de `null` `defaultInvalidationPeriod` 3.600.000 ms (60 minutos). Qualquer valor passado para `config.x.invalidationPeriod` substituirá `defaultInvalidationPeriod` .
+Períodos de invalidação de cache individuais `null` são padrão no objeto config e padrão para o valor geral `defaultInvalidationPeriod` de 3.600.000 ms (60 minutos). Qualquer valor passado para substituirá `config.x.invalidationPeriod` `defaultInvalidationPeriod`.
 
 O armazenamento de presença é a única exceção e tem um valor padrão de 300000 ms ou 5 minutos.
 
 ### <a name="examples"></a>Exemplos
 
-Para desabilitar individualmente um armazenamento, basta definir o valor das propriedades de config desse armazenamento `isEnabled` como false:
+Para desabilitar individualmente um armazenamento, basta definir o `isEnabled` valor das propriedades de config desse armazenamento como false:
 ```JavaScript
 import { CacheService } from '@microsoft/mgt';
 
@@ -90,7 +90,7 @@ CacheService.config.users.invalidationPeriod = 1800000;
 
 O cache é automaticamente limpo quando o usuário sai. Ele também pode ser limpo manualmente.
 
-Se limpar todos os armazenamentos no cache, o método da classe limpará todos os `clearCaches()` `CacheService` armazenamentos mantidos pelo CacheService.
+Se limpar todos os armazenamentos no cache, `clearCaches()` `CacheService` o método da classe limpará todos os armazenamentos mantidos pelo CacheService.
 
 ```JavaScript
 import { CacheService } from '@microsoft/mgt';
@@ -100,12 +100,12 @@ CacheService.clearCaches();
 
 ## <a name="creating-your-own-cache-stores"></a>Criando seus próprios armazenamentos de cache
 
-Se você quiser criar e preencher seus próprios armazenamentos de cache para seus componentes personalizados, você pode usar a `CacheService` classe estática.
+Se você quiser criar e preencher seus próprios armazenamentos de cache para seus componentes personalizados, você pode usar a classe `CacheService` estática.
 
 ```JavaScript
 CacheService.getCache(schema: CacheSchema, storeName: String);
 ```
-> **Observação:** A `storeName` referência que você faz na chamada deve corresponder a um dos `getCache()` armazenamentos listados em seu `CacheSchema` objeto.
+> **Observação:** A `storeName` referência que você faz na chamada deve `getCache()` corresponder a um dos armazenamentos listados em seu `CacheSchema` objeto.
 
 O `CacheSchema` objeto é um dicionário com os pares de chave/valor.
 

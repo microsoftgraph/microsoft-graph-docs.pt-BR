@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 7d2fb4fb5e6abf1589eeb3fa0f6bc0284be346f6
-ms.sourcegitcommit: efa06c63cd3154bcc7ecc993011f314c2dea9a92
+ms.openlocfilehash: 6bce580a6141e8d32aaff5f1bb8343b33b5830ab
+ms.sourcegitcommit: 0076eb6abb89be3dca3575631924a74a5202be30
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63368289"
+ms.lasthandoff: 04/03/2022
+ms.locfileid: "64629075"
 ---
 # <a name="list-aospdeviceownerpkcscertificateprofiles"></a>Listar aospDeviceOwnerPkcsCertificateProfiles
 
@@ -66,7 +66,7 @@ Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado a
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 2052
+Content-Length: 2512
 
 {
   "value": [
@@ -103,6 +103,18 @@ Content-Length: 2052
       "description": "Description value",
       "displayName": "Display Name value",
       "version": 7,
+      "renewalThresholdPercentage": 10,
+      "subjectNameFormat": "commonNameIncludingEmail",
+      "certificateValidityPeriodValue": 14,
+      "certificateValidityPeriodScale": "months",
+      "extendedKeyUsages": [
+        {
+          "@odata.type": "microsoft.graph.extendedKeyUsage",
+          "name": "Name value",
+          "objectIdentifier": "Object Identifier value"
+        }
+      ],
+      "subjectAlternativeNameType": "emailAddress",
       "certificationAuthority": "Certification Authority value",
       "certificationAuthorityName": "Certification Authority Name value",
       "certificationAuthorityType": "microsoft",

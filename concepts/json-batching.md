@@ -4,12 +4,12 @@ description: 'Os lotes JSON permitem otimizar seu aplicativo combinando várias 
 author: FaithOmbongi
 ms.localizationpriority: high
 ms.custom: graphiamtop20
-ms.openlocfilehash: e20cc488589ae8403b5b6013de3f12caf3b62b92
-ms.sourcegitcommit: c47e3d1f3c5f7e2635b2ad29dfef8fe7c8080bc8
+ms.openlocfilehash: 55de4d5a122487173425ad297f8834267534f659
+ms.sourcegitcommit: 0249c86925c9b4797908394c952073b5d9137911
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/15/2021
-ms.locfileid: "61526076"
+ms.lasthandoff: 03/25/2022
+ms.locfileid: "64477423"
 ---
 # <a name="combine-multiple-requests-in-one-http-call-using-json-batching"></a>Combinar várias solicitações em uma chamada HTTP usando processamento JSON em lotes
 
@@ -27,13 +27,11 @@ Combinar essas três solicitações individuais em uma única solicitação em l
 
 Primeiro você cria a solicitação JSON em lote do exemplo anterior. Nesse cenário, as solicitações individuais não são interdependentes de qualquer forma e, portanto, podem ser colocadas na solicitação em lotes em qualquer ordem.
 
-```http
+```msgraph-interactive
 POST https://graph.microsoft.com/v1.0/$batch
 Accept: application/json
 Content-Type: application/json
-```
 
-```json
 {
   "requests": [
     {
@@ -66,14 +64,12 @@ Content-Type: application/json
 }
 ```
 
-As respostas para solicitações em lote podem aparecer em uma ordem diferente. A propriedade `id` pode ser usada para correlacionar solicitações e respostas individuais.
+As respostas às solicitações em lote podem aparecer em uma ordem diferente. A propriedade **id** pode ser usada para correlacionar solicitações e respostas individuais.
 
 ```http
 200 OK
 Content-Type: application/json
-```
 
-```json
 {
   "responses": [
     {
@@ -112,29 +108,32 @@ Content-Type: application/json
 
 ## <a name="request-format"></a>Formato da solicitação
 
-Solicitações de lote são sempre enviadas usando `POST` para o ponto de extremidade `/$batch`.
+As solicitações em lote são sempre enviadas usando um **POST** para o `/$batch` ponto de extremidade.
 
-O corpo da solicitação JSON em lote consiste em um único objeto JSON com uma propriedade obrigatória: `requests`. A propriedade `requests` é uma matriz de solicitações individuais. Para cada solicitação individual, as propriedades `id`, `method` e `url` propriedades são necessárias.
+Um corpo de solicitação em lote JSON consiste em um único objeto JSON com uma propriedade obrigatória: **solicitações**. A propriedade **solicitações** é uma coleção de solicitações individuais. Para cada solicitação individual, as propriedades a seguir podem ser passadas.
 
-A propriedade `id` funciona principalmente como um valor de correlação para associar solicitações a respostas individuais. Isso permite que o servidor processe solicitações em lote na ordem mais eficiente.
 
-As propriedades `method` e `url` são exatamente o que você vê no início de qualquer solicitação HTTP. O método é o método HTTP e a URL é a URL de recurso para a qual a solicitação individual normalmente seria enviada.
-
-As solicitações individuais podem, como opção, também conter uma propriedade `headers` e uma propriedade`body`. Essas duas propriedades geralmente são objetos JSON, conforme mostrado no exemplo anterior. Em alguns casos, o `body` pode ser um valor codificado como URL base64 em vez de um objeto JSON; por exemplo, quando o corpo é uma imagem. Quando um `body` está incluído na solicitação, o objeto `headers` deve conter um valor para `Content-Type`.
+| Propriedade | Descrição |
+|----------|-------------|
+| id       | Obrigatório. Um valor de correlação para associar respostas individuais a solicitações. Esse valor permite que o servidor processe solicitações no lote na ordem mais eficiente.    |
+| method   | Obrigatório. O método HTTP.    |
+| url      | Obrigatório. A URL de recurso relativa para a qual a solicitação individual normalmente seria enviada. Portanto, enquanto o URL absoluto é `https://graph.microsoft.com/v1.0/users`, este URL é `/users`. |
+| cabeçalhos   | Opcional, mas obrigatório quando o **corpo** é especificado. Um objeto JSON com o par chave/valor para os cabeçalhos. Por exemplo, quando o cabeçalho **ConsistencyLevel** for obrigatorio, essa propriedade será representada como `"headers": {"ConsistencyLevel": "eventual"}`. Quando o **corpo** é fornecido, um cabeçalho **Content-Type** deve ser incluído.    |
+| corpo   | Opcional. Pode ser um objeto JSON ou um valor codificado por URL base64, por exemplo, quando o corpo é uma imagem. Quando um **corpo** é incluído na solicitação, o objeto **cabeçalhos** deve conter um valor para **Content-Type**. |
 
 ## <a name="response-format"></a>Formato de resposta
 
 O formato de resposta para solicitações de lote JSON é semelhante ao formato da solicitação. A seguir estão as principais diferenças:
 
-* A propriedade no objeto JSON principal é denominada `responses` em vez de `requests`.
+* A propriedade no objeto principal do JSON é nomeada **respostas** em oposição a **solicitações**.
 * As respostas individuais podem aparecer em uma ordem diferente das solicitações.
-* Em vez de `method` e `url`, as respostas individuais têm uma propriedade `status`. O valor de `status` é um número que representa o código de status HTTP.
+* Em vez de **método** e **url**, as respostas individuais têm uma propriedade **status**. O valor de **status** é um número que representa o código de status HTTP.
 
-O código de status em uma resposta de lote geralmente é `200` ou `400`. Se a solicitação em lotes em si for mal formada, o código de status será `400`. Se a solicitação de lote for analisável, o código de status será `200`. Um código de status `200` na resposta em lote não indica que as solicitações individuais no lote são bem-sucedidas. É por isso que cada resposta individual na propriedade `responses` tem um código de status.
+O código de status em uma resposta em lote geralmente é `200` ou `400`. Se a própria solicitação de lote estiver malformada, o código de status será `400`. Se a solicitação em lote for analisável, o código de status será `200`. Um código de status `200` na resposta do lote não indica que as solicitações individuais dentro do lote foram bem-sucedidas. É por isso que cada resposta individual na propriedade **respostas** tem um código de status.
 
 ## <a name="sequencing-requests-with-the-dependson-property"></a>Solicitações de sequenciamento com a propriedade dependsOn
 
-As solicitações individuais podem ser executadas em uma ordem especificada pela propriedade `dependsOn`. Essa propriedade é uma matriz de cadeias de caracteres que fazem referência a `id` de uma solicitação individual diferente. Por esse motivo, os valores de `id` precisam ser exclusivos. Por exemplo, na solicitação a seguir, o cliente está especificando que as solicitações 1 e 3 devem ser executadas primeiro, em seguida a solicitação 2 e a solicitação 4.
+As solicitações individuais podem ser executadas em uma ordem especificada usando a propriedade **dependOn**. Essa propriedade é uma matriz de strings que faz referência ao **id** de uma solicitação individual diferente. Por esse motivo, os valores para **id** devem ser exclusivos. Por exemplo, na solicitação a seguir, o cliente está especificando que as solicitações devem ser executadas na solicitação de pedido 1, depois na solicitação 3, na solicitação 2 e na solicitação 4.
 
 ```json
 {
@@ -151,13 +150,14 @@ As solicitações individuais podem ser executadas em uma ordem especificada pel
       "url": "..."
     },
     {
-      "id": "3",
+      "id": "4",
+      "dependsOn": [ "2" ],
       "method": "GET",
       "url": "..."
     },
     {
-      "id": "4",
-      "dependsOn": [ "2" ],
+      "id": "3",
+      "dependsOn": [ "4" ],
       "method": "GET",
       "url": "..."
     }
@@ -166,6 +166,9 @@ As solicitações individuais podem ser executadas em uma ordem especificada pel
 ```
 
 Se uma solicitação individual falhar, qualquer solicitação que dependa dessa solicitação falhará com código de status `424` (dependência com falha).
+
+> [!TIP]
+> O lote deve ser totalmente sequencial ou totalmente paralelo.
 
 ## <a name="bypassing-url-length-limitations-with-batching"></a>Ignorar limitações de tamanho de URL com processamento em lotes
 

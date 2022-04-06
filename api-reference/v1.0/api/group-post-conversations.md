@@ -1,63 +1,72 @@
 ---
 title: Criar conversa
 description: 'Crie uma nova conversa incluindo um thread e uma postagem. '
-author: Jordanndahl
+author: psaffaie
 ms.localizationpriority: medium
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: 81cdd8d636028e18a693bdde77fbaafa883c9fbb
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: 48d5c2839a52f6fb9880748a3f5926f8eae62be5
+ms.sourcegitcommit: cc9e5b3630cb84c48bbbb2d84a963b9562d1fb78
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62136083"
+ms.lasthandoff: 03/31/2022
+ms.locfileid: "64588915"
 ---
 # <a name="create-conversation"></a>Criar conversa
 
-Namespace: microsoft.graph Crie uma nova [conversa](../resources/conversation.md) incluindo um thread e uma postagem. 
+Namespace: microsoft.graph Crie uma nova [conversa](../resources/conversation.md) incluindo um thread e uma postagem.
 
 Use [reply thread](conversationthread-reply.md) ou [reply post](post-reply.md) para postar mais na conversa.
 
-## <a name="permissions"></a>Permissões
+## <a name="permissions"></a>Permissions
+
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
-|Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
-|:--------------------|:---------------------------------------------------------|
-|Delegado (conta corporativa ou de estudante) | Group.ReadWrite.All    |
-|Delegado (conta pessoal da Microsoft) | Sem suporte.    |
-|Aplicativo | Sem suporte. |
+| Tipo de permissão                        | Permissões (da com menos para a com mais privilégios) |
+| :------------------------------------- | :------------------------------------------ |
+| Delegado (conta corporativa ou de estudante)     | Group.ReadWrite.All                         |
+| Delegado (conta pessoal da Microsoft) | Sem suporte.                              |
+| Aplicativo                            | Sem suporte.                              |
 
 ## <a name="http-request"></a>Solicitação HTTP
+
 <!-- { "blockType": "ignored" } -->
+
 ```http
 POST /groups/{id}/conversations
 ```
 
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
-| Cabeçalho       | Valor |
-|:---------------|:--------|
-| Autorização  | {token} de portador. Obrigatório.  |
-| Content-Type  | application/json  |
+
+| Cabeçalho        | Valor                     |
+| :------------ | :------------------------ |
+| Autorização | {token} de portador. Obrigatório. |
+| Content-Type  | application/json          |
 
 ## <a name="request-body"></a>Corpo da solicitação
+
 No corpo da solicitação, forneça uma representação JSON do objeto [conversation](../resources/conversation.md) que contém um [conversationThread](../resources/conversationthread.md) e um [post](../resources/post.md).
 
 ## <a name="response"></a>Resposta
+
 Se bem-sucedido, este método retorna um código de resposta `201 Created` e um objeto [conversation](../resources/conversation.md) no corpo da resposta.
 
 A resposta inclui as IDs da nova conversa e do thread, que você pode usar na operação [listar postagens](conversationthread-list-posts.md) para obter a nova postagem também.
 
 ## <a name="example"></a>Exemplo
+
 ### <a name="request"></a>Solicitação
+
 Este é um exemplo de solicitação.
 
-
 # <a name="http"></a>[HTTP](#tab/http)
+
 <!-- {
   "blockType": "request",
   "sampleKeys": ["29981b6a-0e57-42dc-94c9-cd24f5306196"],
   "name": "create_conversation_from_group"
 }-->
+
 ```http
 POST https://graph.microsoft.com/v1.0/groups/29981b6a-0e57-42dc-94c9-cd24f5306196/conversations
 Content-type: application/json
@@ -86,42 +95,51 @@ Content-type: application/json
     ]
 }
 ```
+
 # <a name="c"></a>[C#](#tab/csharp)
+
 [!INCLUDE [sample-code](../includes/snippets/csharp/create-conversation-from-group-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="javascript"></a>[JavaScript](#tab/javascript)
+
 [!INCLUDE [sample-code](../includes/snippets/javascript/create-conversation-from-group-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="objective-c"></a>[Objective-C](#tab/objc)
+
 [!INCLUDE [sample-code](../includes/snippets/objc/create-conversation-from-group-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="java"></a>[Java](#tab/java)
+
 [!INCLUDE [sample-code](../includes/snippets/java/create-conversation-from-group-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="go"></a>[Ir](#tab/go)
+
 [!INCLUDE [sample-code](../includes/snippets/go/create-conversation-from-group-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="powershell"></a>[PowerShell](#tab/powershell)
+
 [!INCLUDE [sample-code](../includes/snippets/powershell/create-conversation-from-group-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
-
 ### <a name="response"></a>Resposta
+
 Este é um exemplo de resposta.
->**Observação:** o objeto de resposta mostrado aqui pode ser encurtado para legibilidade.
+
+> **Observação:** o objeto de resposta mostrado aqui pode ser encurtado para legibilidade.
 
 <!-- {
   "blockType": "response",
   "truncated": true,
   "@odata.type": "microsoft.graph.conversation"
 } -->
+
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
@@ -149,4 +167,3 @@ Content-type: application/json
   "suppressions": [
   ]
 }-->
-

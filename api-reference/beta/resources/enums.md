@@ -5,12 +5,12 @@ doc_type: enumPageType
 ms.localizationpriority: medium
 ms.prod: non-product-specific
 author: MSGraphDocsvTeam
-ms.openlocfilehash: d3624b1b57ba0883447a41fbc3ef08c910e51fc1
-ms.sourcegitcommit: efa06c63cd3154bcc7ecc993011f314c2dea9a92
+ms.openlocfilehash: 5085bd3db401b09c24e93a556fd9e938e69f8d73
+ms.sourcegitcommit: 0d6d39dd6450e0c5fd6844cb78aead00a0782e46
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63368130"
+ms.lasthandoff: 03/23/2022
+ms.locfileid: "63758211"
 ---
 # <a name="enum-values"></a>Valores denum
 
@@ -302,7 +302,7 @@ Namespace: microsoft.graph
 
 |Member|
 |:---|
-|Cadeia de caracteres|
+|Cadeia de Caracteres|
 |Inteiro|
 |Referência|
 |Binária|
@@ -579,7 +579,7 @@ Namespace: microsoft.graph
 |aplicação|
 |usuários|
 |devicePlatform|
-|localização|
+|location|
 |clientType|
 |signInRisk|
 |userRisk|
@@ -1572,7 +1572,7 @@ Namespace: microsoft.graph
 | Automático
 | noPreview
 | checklist
-| description
+| descrição
 | referência
 
 
@@ -2378,7 +2378,7 @@ Valores possíveis para tipos de conta de usuário (associação ao grupo), por 
 |usuário | coluna de pessoa ou grupo. |
 |url | hyperlink ou coluna de imagem. |
 |calculado | coluna calculada. |
-|localização | coluna de local. |
+|location | coluna de local. |
 |geolocalização | coluna de localização geográfica. |
 |term | coluna de metadados gerenciados. |
 |multiterm | coluna de metadados gerenciados aceitando vários valores. |
@@ -2510,7 +2510,7 @@ Valores possíveis para tipos de conta de usuário (associação ao grupo), por 
 
 |Membro    |Valor    |Descrição |
 |:---------|:--------|:----------- |
-|team      |0        |Indica que o aplicativo Teams pode ser instalado em uma equipe e está autorizado a acessar os dados dessa equipe.|
+|equipe      |0        |Indica que o aplicativo Teams pode ser instalado em uma equipe e está autorizado a acessar os dados dessa equipe.|
 |groupChat |1        |Indica que o aplicativo Teams pode ser instalado em um chat de grupo e está autorizado a acessar os dados desse chat de grupo.|
 |pessoal  |2        |Indica que o aplicativo Teams pode ser instalado no escopo pessoal de um usuário e está autorizado a acessar os dados desse usuário.|
 
@@ -2709,23 +2709,6 @@ Valores possíveis para tipos de conta de usuário (associação ao grupo), por 
 |failure|
 |initial|
 |chunkFinished|
-|unknownFutureValue|
-
-### <a name="simulationstatus-values"></a>valores simulationStatus
-
-|Member|
-|:---|
-|desconhecido|
-|draft|
-|inProgress|
-|agendado|
-|completed|
-|partiallyCompleted|
-|failed|
-|cancelado|
-|excluded|
-|deleted|
-|included|
 |unknownFutureValue|
 
 ### <a name="payloaddeliveryplatform-values"></a>valores payloadDeliveryPlatform

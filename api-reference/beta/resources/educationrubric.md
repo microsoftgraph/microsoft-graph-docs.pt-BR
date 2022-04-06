@@ -1,16 +1,16 @@
 ---
 title: Tipo de recurso educationRubric
 description: Uma rubrica de classificação que pode ser anexada a uma atribuição
-localization_priority: Normal
+ms.localizationpriority: medium
 author: dipakboyed
 ms.prod: education
 doc_type: resourcePageType
-ms.openlocfilehash: 2e5c9713de4da614c8bfb0f6332930edb8ad775b
-ms.sourcegitcommit: 14648839f2feac2e5d6c8f876b7ae43e996ea6a0
+ms.openlocfilehash: 9411a9d4f9f1d2be8410a859d9749b39bcb14021
+ms.sourcegitcommit: c21fefa5c3c62df14147e7918cb43327f7d72e69
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/11/2021
-ms.locfileid: "50721576"
+ms.lasthandoff: 04/06/2022
+ms.locfileid: "64685086"
 ---
 # <a name="educationrubric-resource-type"></a>Tipo de recurso educationRubric
 
@@ -18,9 +18,9 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Uma rubrica de classificação que pode ser anexada a uma atribuição. Uma rubrica é associada a um **educationUser** (professor) e anexada a um ou mais recursos **educationAssignment.** 
+Uma rubrica de classificação que pode ser anexada a uma atribuição. Uma rubrica é associada a um **educationUser** (professor) e anexada a um ou mais **recursos educationAssignment** . 
 
-Consulte [Education rubric overview para](/graph/education-rubric-overview) obter mais informações.
+Consulte [a visão geral do education rubric](/graph/education-rubric-overview) para obter mais informações.
 
 ## <a name="methods"></a>Métodos
 
@@ -29,21 +29,22 @@ Consulte [Education rubric overview para](/graph/education-rubric-overview) obte
 | [Criar educationRubric](../api/educationuser-post-rubrics.md) | [educationRubric](educationrubric.md) | Crie um novo objeto educationRubric. |
 | [Obter educationRubric](../api/educationrubric-get.md) | [educationRubric](educationrubric.md) | Ler propriedades e relações do objeto educationRubric. |
 | [Atualizar educationRubric](../api/educationrubric-update.md) | [educationRubric](educationrubric.md) | Atualize o objeto educationRubric. |
-| [Excluir educationRubric](../api/educationrubric-delete.md) | Nenhum(a) | Exclua o objeto educationRubric. |
+| [Excluir educationRubric](../api/educationrubric-delete.md) | Nenhuma | Exclua o objeto educationRubric. |
 
 ## <a name="properties"></a>Propriedades
 
 | Propriedade     | Tipo        | Descrição |
 |:-------------|:------------|:------------|
+|id|Cadeia de caracteres|Identificador exclusivo para o rubric.|
 |createdBy|[identitySet](identityset.md)|O usuário que criou esse recurso.|
-|createdDateTime|DateTimeOffset|O tipo Timestamp representa informações de data e hora usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite UTC em 1 de janeiro de 2014 é `2014-01-01T00:00:00Z`|
-|description|[itemBody](itembody.md)|A descrição dessa rubrica.|
-|displayName|Cadeia de caracteres|O nome dessa rubrica.|
-|grading|[educationAssignmentGradeType](educationassignmentgradetype.md)|O tipo de classificação dessa rubrica -- nulo para uma rubrica sem pontos ou [educationAssignmentPointsGradeType](educationassignmentpointsgradetype.md) para um rubric de pontos.|
+|createdDateTime|DateTimeOffset|O tipo de carimbo de data/hora representa informações de data e hora usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite UTC em 1º de janeiro de 2014 é `2014-01-01T00:00:00Z`|
+|description|[itemBody](itembody.md)|A descrição desse rubric.|
+|displayName|Cadeia de caracteres|O nome desse rubric.|
+|Classificação|[educationAssignmentGradeType](educationassignmentgradetype.md)|O tipo de classificação desse rubric -- nulo para um rubric sem pontos ou [educationAssignmentPointsGradeType](educationassignmentpointsgradetype.md) para um rubric de pontos.|
 |lastModifiedBy|[identitySet](identityset.md)|O último usuário a modificar o recurso.|
 |lastModifiedDateTime|DateTimeOffset|Momento no tempo em que o recurso foi modificado pela última vez.  O tipo Timestamp representa informações de data e hora usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite UTC em 1 de janeiro de 2014 é `2014-01-01T00:00:00Z`|
-|levels|[Coleção rubricLevel](rubriclevel.md)|A coleção de níveis que comem essa rubrica.|
-|qualidades|[Coleção rubricQuality](rubricquality.md)|A coleção de qualidades que com isso é rubrica.|
+|Níveis|[Coleção rubricLevel](rubriclevel.md)|A coleção de níveis que compõem essa rubrica.|
+|Qualidades|[coleção rubricQuality](rubricquality.md)|A coleção de qualidades que compõem essa rubrica.|
 
 ## <a name="relationships"></a>Relações
 
@@ -64,6 +65,7 @@ Veja a seguir uma representação JSON do recurso.
 
 ```json
 {
+  "id": "String (identifier)",
   "createdBy": {"@odata.type": "microsoft.graph.identitySet"},
   "createdDateTime": "String (timestamp)",
   "description": {"@odata.type": "microsoft.graph.itemBody"},

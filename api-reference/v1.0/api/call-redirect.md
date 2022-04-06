@@ -1,16 +1,16 @@
 ---
 title: 'call: redirect'
 description: Redirecione as chamadas recebidas.
-author: ananmishr
+author: mkhribech
 ms.localizationpriority: medium
 ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: 51530e58d72ff2809d53832138bd50ec16d551d5
-ms.sourcegitcommit: 25acfa7d0153336c9a35d30a1dd422aeadc1342c
+ms.openlocfilehash: 74a2b2f6dd38799a2fe2ba7d8a9fbe8740becb9e
+ms.sourcegitcommit: 10719607271380ea56076ccff5a3b774d0005773
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/03/2022
-ms.locfileid: "62347295"
+ms.lasthandoff: 04/01/2022
+ms.locfileid: "64607810"
 ---
 # <a name="call-redirect"></a>call: redirect
 
@@ -20,7 +20,7 @@ Redirecionar uma chamada de entrada que ainda não foi [atendida](./call-answer.
 
 Espera-se que o bot redirecione a chamada antes do tempo de chamada. O valor de tempo decoro atual é 15 segundos.
 
-## <a name="permissions"></a>Permissões
+## <a name="permissions"></a>Permissions
 
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 

@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: Jordanndahl
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: 6e4e745343d26fe85310b949afc388d38f00c716
-ms.sourcegitcommit: 9adf70c5da7c5b65f7d20f571d101ee06f023bc3
+ms.openlocfilehash: e40944e9048fc34a4890948089a57de76179ab82
+ms.sourcegitcommit: 0e7927f34b7e55d323acbf281e11560cb40a89ed
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/25/2022
-ms.locfileid: "62201317"
+ms.lasthandoff: 03/20/2022
+ms.locfileid: "63672361"
 ---
 # <a name="remove-group-owner"></a>Remover proprietário do grupo
 
@@ -18,14 +18,14 @@ Namespace: microsoft.graph
 
 Use essa API para remover um proprietário de um grupo Microsoft 365 ou um grupo de segurança por meio da **propriedade de navegação dos** proprietários. Depois que os proprietários são atribuídos a um grupo, o último proprietário (um objeto de usuário) do grupo não pode ser removido.
 
-> **Observação:** Para problemas encontrados ao remover o proprietário de um grupo associado a uma [equipe,](/graph/api/resources/team.md)consulte [Problemas Conhecidos.](/graph/known-issues#removing-a-group-owner-also-removes-the-user-as-a-group-member)
+> **Observação:** Para problemas encontrados ao remover o proprietário de um grupo associado a uma [equipe](/graph/api/resources/team.md), consulte [Problemas Conhecidos](/graph/known-issues#removing-a-group-owner-also-removes-the-user-as-a-group-member).
 
 ## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegado (conta corporativa ou de estudante) | Group.ReadWrite.All, Directory.ReadWrite.All, Directory.AccessAsUser.All    |
+|Delegado (conta corporativa ou de estudante) | Group.ReadWrite.All, Directory.ReadWrite.All    |
 |Delegado (conta pessoal da Microsoft) | Sem suporte.    |
 |Aplicativo | Group.ReadWrite.All, Directory.ReadWrite.All |
 

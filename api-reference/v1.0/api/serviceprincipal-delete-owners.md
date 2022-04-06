@@ -5,26 +5,26 @@ author: sureshja
 ms.localizationpriority: medium
 ms.prod: applications
 doc_type: apiPageType
-ms.openlocfilehash: 2fc33c9be0dd234477ed9aee6e138d56cb1b7344
-ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
+ms.openlocfilehash: a13baf6216b8d532956dabd1c1fe9832e7a83bab
+ms.sourcegitcommit: 0e7927f34b7e55d323acbf281e11560cb40a89ed
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/12/2021
-ms.locfileid: "60934875"
+ms.lasthandoff: 03/20/2022
+ms.locfileid: "63668469"
 ---
 # <a name="remove-owner"></a>Remover proprietário
 
 Namespace: microsoft.graph
 
-Remova um proprietário de um [objeto servicePrincipal.](../resources/serviceprincipal.md)
+Remova um proprietário de um [objeto servicePrincipal](../resources/serviceprincipal.md) .
 
 ## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegada (conta corporativa ou de estudante) | Application.ReadWrite.All, Directory.ReadWrite.All, Directory.AccessAsUser.All    |
-|Delegada (conta pessoal da Microsoft) | Sem suporte.    |
+|Delegado (conta corporativa ou de estudante) | Application.ReadWrite.All, Directory.ReadWrite.All    |
+|Delegado (conta pessoal da Microsoft) | Sem suporte.    |
 |Aplicativo | Application.ReadWrite.All, Application.ReadWrite.OwnedBy |
 
 ## <a name="http-request"></a>Solicitação HTTP

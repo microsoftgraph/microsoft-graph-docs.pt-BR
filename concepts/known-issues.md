@@ -3,8 +3,13 @@ title: Problemas conhecidos com o Microsoft Graph
 description: Este artigo descreve os problemas conhecidos com o Microsoft Graph.
 author: MSGraphDocsVTeam
 ms.localizationpriority: high
+ms.openlocfilehash: 83c99695e82e4dde776eaadc4506668e4277d423
+ms.sourcegitcommit: ecdca55147779405dbb99710e833fa7bcf90bf07
+ms.translationtype: MT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 03/24/2022
+ms.locfileid: "63780510"
 ---
-
 # <a name="known-issues-with-microsoft-graph"></a>Problemas conhecidos com o Microsoft Graph
 
 Este artigo descreve os problemas conhecidos com o Microsoft Graph. 
@@ -256,9 +261,7 @@ O primeiro acesso a uma unidade pessoal de um usuário pelo Microsoft Graph ante
 
 ### <a name="admins-must-consent-to-permissions-for-groups-and-microsoft-teams"></a>Os administradores devem consentir com as permissões para grupos e Microsoft Teams
 
-O Microsoft Graph expõe duas permissões ([*Group.Read.All*](permissions-reference.md#group-permissions) e [*Group.ReadWrite.All*](permissions-reference.md#group-permissions)) para obter acesso a APIs de grupos e Microsoft Teams.
-As permissões do aplicativo devem ser consentidas por um administrador.
-No futuro, pretendemos adicionar novas permissões para grupos e equipes que possam ser consentidas pelos usuários.
+O Microsoft Graph expõe duas permissões ([*Group.Read.All*](permissions-reference.md#group-permissions) e [*Group.ReadWrite.All*](permissions-reference.md#group-permissions)) para acesso às APIs para grupos e Microsoft Teams. Essas permissões devem ser consentidas por um administrador. No futuro, planejamos adicionar novas permissões para grupos e equipes que os usuários podem consentir.
 
 ### <a name="some-group-apis-dont-support-delegated-or-app-only-permissions"></a>Algumas APIs de grupo não oferecem suporte para permissões delegadas ou somente de aplicativo
 
@@ -398,7 +401,7 @@ A chamada à API para [me/joinedTeams](/graph/api/user-list-joinedteams) retorna
 
 ### <a name="installation-of-apps-that-require-resource-specific-consent-permissions-is-not-supported"></a>A instalação de aplicativos que exigem permissões de consentimento específicas do recurso não é compatível
 As chamadas de API a seguir não suportam a instalação de aplicativos que exigem permissões de [consentimento específicas do recurso](/microsoftteams/platform/graph-api/rsc/resource-specific-consent).
-- [Adicionar aplicativo à equipe](/graph/api/team-post-installedapps.md)
+- [Adicionar aplicativo à equipe](/graph/api/team-post-installedapps)
 - [Atualizar o aplicativo instalado para a equipe](/graph/api/team-teamsappinstallation-upgrade.md)
 - [Adicionar o aplicativo ao chat](/graph/api/chat-post-installedapps.md)
 - [Atualizar aplicativo instalado no chat](/graph/api/chat-teamsappinstallation-upgrade.md)
@@ -466,4 +469,4 @@ As seguintes limitações se aplicam aos parâmetros de consulta:
 
 ## <a name="functionality-available-only-in-office-365-rest-or-azure-ad-graph-apis-deprecated"></a>Funcionalidade disponível somente nas APIs rest do Office 365 ou do Graph do Azure Active Directory (preterida)
 
-Alguns recursos ainda não estão disponíveis no Microsoft Graph. Se você não vir a funcionalidade que está procurando, poderá usar as [APIs REST do Office 365](/previous-versions/office/office-365-api/) específicas do ponto de extremidade. Para o Azure Active Directory Graph, consulte [Migrar aplicativos do Graph do Azure Active Directory (Azure AD) para Microsoft Graph](./migrate-azure-ad-graph-overview.md).
+Algumas funcionalidades ainda não estão disponíveis no Microsoft Graph. Se você não vir a funcionalidade que está procurando, poderá usar as [APIs REST do Office 365](/previous-versions/office/office-365-api/) específicas do ponto de extremidade. Para Azure AD Graph, veja [Migrar aplicativos de Gráfico do Azure Active Directory (Azure AD) para o Microsoft Graph](./migrate-azure-ad-graph-overview.md).

@@ -2,15 +2,15 @@
 title: Privileged Identity Management - recursos do Azure
 description: APIs para o Privileged Identity Management do Azure AD para gerenciar recursos do Azure.
 ms.localizationpriority: high
-author: japere
+author: carolinetempleton
 ms.prod: governance
 doc_type: conceptualPageType
-ms.openlocfilehash: 2441f547fdfbe5777d021b58d84cebe6bb5632f8
-ms.sourcegitcommit: 43a7c971a97ce1e4c55cbae089820bfce7dfe42b
+ms.openlocfilehash: ec3c67b8ffcb35a223f1491a40bab55e92563c28
+ms.sourcegitcommit: dfa87904fb26dd5161f604f2716ce1d90dad31ed
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/29/2022
-ms.locfileid: "64509522"
+ms.lasthandoff: 03/09/2022
+ms.locfileid: "64477927"
 ---
 # <a name="privileged-identity-management---azure-resources"></a>Privileged Identity Management - recursos do Azure
 

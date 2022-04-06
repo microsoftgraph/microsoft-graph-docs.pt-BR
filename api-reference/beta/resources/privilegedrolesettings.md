@@ -4,13 +4,13 @@ description: Representa as configurações de uma função privilegiada.
 ms.localizationpriority: medium
 doc_type: resourcePageType
 ms.prod: governance
-author: carolinetempleton
-ms.openlocfilehash: 6085d6bc74a1399ea4baf0cc575ecb316a3519e9
-ms.sourcegitcommit: c7ff992ef63e480d070421ba99b28ee129cb6acb
+author: japere
+ms.openlocfilehash: 4cc98c3db18569677e0d158da8b7cfb63b00dac7
+ms.sourcegitcommit: 43a7c971a97ce1e4c55cbae089820bfce7dfe42b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "60694164"
+ms.lasthandoff: 03/29/2022
+ms.locfileid: "64510545"
 ---
 # <a name="privilegedrolesettings-resource-type"></a>Tipo de recurso privilegedRoleSettings
 
@@ -26,12 +26,12 @@ Representa as configurações de uma função privilegiada.
 | Método           | Tipo de retorno    |Descrição|
 |:---------------|:--------|:----------|
 |[Get privilegedRoleSettings](../api/privilegedrolesettings-get.md) | [privilegedRoleSettings](privilegedrolesettings.md) |Ler propriedades e relações do objeto privilegedRoleSettings.|
-|[Atualizar privilegedRoleSettings](../api/privilegedrolesettings-update.md) | [privilegedRoleSettings](privilegedrolesettings.md) |Atualize o objeto privilegedRoleSettings.|
+|[Atualização de privilegedRoleSettings](../api/privilegedrolesettings-update.md) | [privilegedRoleSettings](privilegedrolesettings.md) |Atualize o objeto privilegedRoleSettings.|
 ## <a name="properties"></a>Propriedades
 | Propriedade     | Tipo   |Descrição|
 |:---------------|:--------|:----------|
 |elevationDuration|duração|A duração quando a função é ativada.|
-|id|cadeia de caracteres| O identificador exclusivo para as configurações de função. Somente leitura.|
+|id|string| O identificador exclusivo para as configurações de função. Somente leitura.|
 |isMfaOnElevationConfigurable|booliano|`true` se **mfaOnElevation** for configurável. `false` se **mfaOnElevation** não for configurável.|
 |lastGlobalAdmin|booliano|Somente uso interno.|
 |maxElavationDuration|duração|Duração máxima da função ativada.|
