@@ -5,12 +5,12 @@ author: mecampos
 ms.localizationpriority: high
 doc_type: conceptualPageType
 ms.prod: search
-ms.openlocfilehash: 8f63a225231365f7dfd654c11b797a52489633ce
-ms.sourcegitcommit: ecdca55147779405dbb99710e833fa7bcf90bf07
+ms.openlocfilehash: 3737a7203deb844a7fb45cb34e823dba02bb5b15
+ms.sourcegitcommit: 0249c86925c9b4797908394c952073b5d9137911
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/24/2022
-ms.locfileid: "63780538"
+ms.lasthandoff: 03/25/2022
+ms.locfileid: "64477563"
 ---
 # <a name="use-postman-with-the-microsoft-graph-connectors-api"></a>Usar o Postman com a API de conectores do Microsoft Graph
 
@@ -44,7 +44,7 @@ Para usar a coleção Postman, você precisa bifurcá-la para seu espaço de tra
 ## <a name="step-2---download-the-postman-agent-optional---postman-web-browser-only"></a>Etapa 2 - Baixar o agente Postman (Opcional - somente navegador da Web do Postman)
 
 Para usar esta coleção Postman em seu navegador, baixe o [Agente de área de trabalho do Postman](https://www.postman.com/downloads). Não é possível usar o Postman para a Web sem isso devido às restrições de CORS do navegador.
-"O número máximo de recursos de [conexão](/graph/api-reference/resources/externalconnection?view=graph-rest-beta&preserve-view=true) por locatário do Microsoft 365."
+"O número máximo de recursos de [conexão](/graph/api/resources/externalconnectors-externalconnection) por locatário do Microsoft 365."
 
 > [!NOTE]
 > Você não precisará do agente se estiver usando o aplicativo Postman para Windows. Se você abrir o Postman para Windows, verá essa coleção em seu espaço de trabalho.

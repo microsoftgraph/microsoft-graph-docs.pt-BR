@@ -1,16 +1,16 @@
 ---
 title: 'call: transfer'
 description: Transfira uma chamada de grupo ou uma chamada de grupo ponto a ponto ativa.
-author: ananmishr
+author: mkhribech
 ms.localizationpriority: medium
 ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: 36acccdec73dd2c5e7ae088d45329272aa47f348
-ms.sourcegitcommit: 25acfa7d0153336c9a35d30a1dd422aeadc1342c
+ms.openlocfilehash: 476bcb8d3e8188c9780ab2e16ee5356cd30e8395
+ms.sourcegitcommit: 10719607271380ea56076ccff5a3b774d0005773
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/03/2022
-ms.locfileid: "62341373"
+ms.lasthandoff: 04/01/2022
+ms.locfileid: "64608034"
 ---
 # <a name="call-transfer"></a>call: transfer
 
@@ -24,7 +24,7 @@ Transfira uma chamada de grupo ou uma chamada de grupo ponto a ponto ativa.
 
 Uma transferência consultiva significa que o transferidor pode informar a pessoa para a quem deseja transferir a chamada (o transferidor), antes que a transferência seja feita. Isso se opõe a transferir a chamada diretamente.
 
-## <a name="permissions"></a>Permissões
+## <a name="permissions"></a>Permissions
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 | Tipo de permissão | Permissões (da com menos para a com mais privilégios)         |

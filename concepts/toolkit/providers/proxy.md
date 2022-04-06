@@ -2,13 +2,13 @@
 title: Provedor de proxy
 description: O provedor de proxy permite que você use sua própria autenticação do lado do servidor com o microsoft Graph Toolkit.
 ms.localizationpriority: medium
-author: nmetulev
-ms.openlocfilehash: f545d39a14ac448fc926f5caa22a0b0c7aaab667
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+author: sebastienlevert
+ms.openlocfilehash: 44f247cb85dbe7444cfd86928387f510369a4193
+ms.sourcegitcommit: cc9e5b3630cb84c48bbbb2d84a963b9562d1fb78
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59126538"
+ms.lasthandoff: 03/31/2022
+ms.locfileid: "64586794"
 ---
 # <a name="proxy-provider"></a>Provedor de proxy
 
@@ -20,7 +20,7 @@ Seu serviço back-end deve expor uma API que será chamada para todas as chamada
 
 Sua implementação de API deve chamar a Microsoft Graph em nome do usuário e retornar os resultados para o componente.
 
-Para um exemplo de implementação, consulte o [exemplo ASP.NET MVC](https://github.com/microsoftgraph/microsoft-graph-toolkit/tree/master/samples/proxy-provider-asp-net-mvc). 
+Para um exemplo de implementação, consulte o [exemplo ASP.NET MVC.](https://github.com/microsoftgraph/microsoft-graph-toolkit/tree/master/samples/proxy-provider-asp-net-mvc) 
 
 Para saber mais sobre provedores de autenticação, consulte [provedores](./providers.md).
 
@@ -30,7 +30,7 @@ Você pode inicializar o provedor proxy em HTML ou JavaScript. Você deve fazer 
 
 ### <a name="initialize-in-your-html-page"></a>Inicializar em sua página HTML
 
-Inicializar o provedor proxy em HTML é a maneira mais simples de definir sua própria rota para autenticação personalizada do lado do servidor. Use o `mgt-proxy-provider` componente para definir o **graph-proxy-url**. Isso definirá o provedor de proxy definido como o provedor global.
+Inicializar o provedor proxy em HTML é a maneira mais simples de definir sua própria rota para autenticação personalizada do lado do servidor. Use o `mgt-proxy-provider` componente para definir **o graph-proxy-url**. Isso definirá o provedor de proxy definido como o provedor global.
 
 ```html
 <mgt-proxy-provider graph-proxy-url="https://myurl.com/api/GraphProxy"></mgt-proxy-provider>
@@ -66,7 +66,7 @@ Providers.globalProvider = new ProxyProvider("https://myurl.com/api/GraphProxy",
 
 Isso é útil quando você precisa passar tokens ou outros headers para seu back-end.
 
-Se você estiver usando o componente, também deverá especificar `mgt-login` as funções e para o `login` `logout` provedor:
+Se você estiver usando o componente `mgt-login` , também deverá especificar as `login` funções e `logout` para o provedor:
 
 ```ts
 import {Providers, ProxyProvider} from '@microsoft/mgt';

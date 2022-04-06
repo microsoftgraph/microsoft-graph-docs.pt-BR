@@ -5,12 +5,12 @@ author: mkhribech
 ms.localizationpriority: medium
 ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: 4f7b3c07eac3e870cd59e2a4998e6c22f15f05ef
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: 6cb1ab164f37ed08e8c941f75ea8b5b455dc5dc6
+ms.sourcegitcommit: 0e7927f34b7e55d323acbf281e11560cb40a89ed
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62124294"
+ms.lasthandoff: 03/20/2022
+ms.locfileid: "63670611"
 ---
 # <a name="list-attendancerecords"></a>Listar attendanceRecords
 Namespace: microsoft.graph
@@ -20,7 +20,7 @@ Namespace: microsoft.graph
 Obter uma lista de [objetos attendanceRecord](../resources/attendancerecord.md) e suas propriedades.
 
 > [!TIP]
-> Uma maneira mais conveniente de recuperar registros de participação é fazer com que eles se alimentem com um relatório de participação usando a `expand` opção de consulta. Para obter um exemplo e mais detalhes, consulte [Obter relatório de participação](meetingattendancereport-get.md).
+> Uma maneira mais conveniente de recuperar registros de participação é fazer com que eles se alimentem com um relatório de participação usando `expand` a opção de consulta. Para obter um exemplo e mais detalhes, consulte [Obter relatório de participação](meetingattendancereport-get.md).
 
 ## <a name="permissions"></a>Permissões
 
@@ -36,7 +36,7 @@ Para usar a permissão do aplicativo para essa API, os administradores de locat�
 
 ## <a name="http-request"></a>Solicitação HTTP
 
-Para obter registros de participação de um relatório de participação com permissão delegada ( `/me` ) e app ( `/users/{userId}` )
+Para obter registros de participação de um relatório de participação com permissão delegada (`/me`) e app (`/users/{userId}`) :
 <!-- {"blockType": "ignored"}-->
 ``` http
 GET /me/onlineMeetings/{meetingId}/attendanceReports/{reportId}/attendanceRecords
@@ -44,8 +44,8 @@ GET /users/{userId}/onlineMeetings/{meetingId}/attendanceReports/{reportId}/atte
 ```
 
 >- `userId` é a ID de objeto de um usuário no [Portal de gerenciamento de usuário do Azure](https://portal.azure.com/#blade/Microsoft_AAD_IAM/UsersManagementMenuBlade). Para obter mais detalhes, consulte [Permitir que os aplicativos acessem reuniões online em nome de um usuário](/graph/cloud-communication-online-meeting-application-access-policy).
->- `meetingId`é a **id** de um [objeto onlineMeeting.](../resources/onlinemeeting.md)
->- `reportId`é a **id** de um [objeto meetingAttendanceReport.](../resources/meetingAttendanceReport.md)
+>- `meetingId` é a **id** de um [objeto onlineMeeting](../resources/onlinemeeting.md) .
+>- `reportId` é a **id** de um [objeto meetingAttendanceReport](../resources/meetingAttendanceReport.md) .
 
 ## <a name="optional-query-parameters"></a>Parâmetros de consulta opcionais
 
@@ -63,7 +63,7 @@ Não forneça um corpo de solicitação para esse método.
 
 ## <a name="response"></a>Resposta
 
-Se tiver êxito, este método retornará um código de resposta e uma `200 OK` coleção de [objetos attendanceRecord](../resources/attendancerecord.md) no corpo da resposta.
+Se tiver êxito, este método retornará um `200 OK` código de resposta e uma coleção de [objetos attendanceRecord](../resources/attendancerecord.md) no corpo da resposta.
 
 ## <a name="examples"></a>Exemplos
 
@@ -127,6 +127,7 @@ Content-Type: application/json
       "emailAddress": "frederick.cormier@contoso.com",
       "totalAttendanceInSeconds": 322,
       "role": "Organizer",
+      "registrantId": null,
       "identity": {
         "id": "dc17674c-81d9-4adb-bfb2-8f6a442e4623",
         "displayName": "Frederick Cormier",
@@ -144,6 +145,7 @@ Content-Type: application/json
       "emailAddress": "lisa.adkins@contoso.com",
       "totalAttendanceInSeconds": 314,
       "role": "Presenter",
+      "registrantId": null,
       "identity": {
         "id": "57caaef9-5ed0-48d5-8862-e5abfa71b3e9",
         "displayName": "Lisa Adkins",

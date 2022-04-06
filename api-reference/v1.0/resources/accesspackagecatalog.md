@@ -5,19 +5,21 @@ author: markwahl-msft
 ms.localizationpriority: medium
 ms.prod: governance
 doc_type: resourcePageType
-ms.openlocfilehash: fa2614c7cdc70622bdab85b3afdd43666e253472
-ms.sourcegitcommit: fd609cb401ff862c3f5c21847bac9af967c6bf82
+ms.openlocfilehash: 556216ac7c7b51e18b2a918ccde63b5f730bf7d0
+ms.sourcegitcommit: 0249c86925c9b4797908394c952073b5d9137911
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/31/2021
-ms.locfileid: "61650675"
+ms.lasthandoff: 03/25/2022
+ms.locfileid: "64477556"
 ---
 # <a name="accesspackagecatalog-resource-type"></a>Tipo de recurso accessPackageCatalog
 
 Namespace: microsoft.graph
 
 
-No gerenciamento de direitos do [Azure AD,](entitlementmanagement-overview.md)um catálogo de pacotes de acesso é um contêiner para zero ou mais pacotes de acesso. Um catálogo de pacotes de acesso também pode ter recursos vinculados usados nesses pacotes de acesso para fornecer acesso. Para exibir ou alterar a associação de funções com escopo de catálogo, use a [API](unifiedroleassignment.md) de atribuições de função com o provedor RBAC de gerenciamento de direitos.
+No [gerenciamento de direitos do Azure AD](entitlementmanagement-overview.md), um catálogo de pacotes de acesso é um contêiner para zero ou mais pacotes de acesso. O gerenciamento de direitos do Azure AD inclui um catálogo integrado chamado **Geral**.
+
+Um catálogo de pacotes de acesso também pode ter recursos vinculados usados nesses pacotes de acesso para fornecer acesso. Para exibir ou alterar a associação de funções com escopo de catálogo, use [a API de](unifiedroleassignment.md) atribuições de função com o provedor RBAC de gerenciamento de direitos.
 
 
 
@@ -35,10 +37,10 @@ No gerenciamento de direitos do [Azure AD,](entitlementmanagement-overview.md)um
 |:---|:---|:---|
 |catalogType|accessPackageCatalogType|Se o catálogo é criado por um usuário ou gerenciamento de direitos. Os valores possíveis são: `userManaged`, `serviceDefault`, `serviceManaged`, `unknownFutureValue`.|
 |createdDateTime|DateTimeOffset|O tipo Timestamp representa informações de data e hora usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite UTC em 1 de janeiro de 2014 é `2014-01-01T00:00:00Z`. Somente leitura.|
-|description|String|A descrição do catálogo de pacotes de acesso.|
-|displayName|String|O nome de exibição do catálogo de pacotes de acesso.|
+|description|Cadeia de caracteres|A descrição do catálogo de pacotes de acesso.|
+|displayName|Cadeia de caracteres|O nome de exibição do catálogo de pacotes de acesso.|
 |id|String|Somente leitura.|
-|isExternallyVisible|Booliano|Se os pacotes de acesso neste catálogo podem ser solicitados por usuários fora do locatário.|
+|isExternallyVisible|Boolean|Se os pacotes de acesso neste catálogo podem ser solicitados por usuários fora do locatário.|
 |modifiedDateTime|DateTimeOffset|O tipo Timestamp representa informações de data e hora usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite UTC em 1 de janeiro de 2014 é `2014-01-01T00:00:00Z`. Somente leitura. |
 |state|accessPackageCatalogState|Tem o valor `published` se os pacotes de acesso estão disponíveis para gerenciamento. Os valores possíveis são: `unpublished`, `published`, `unknownFutureValue`.|
 

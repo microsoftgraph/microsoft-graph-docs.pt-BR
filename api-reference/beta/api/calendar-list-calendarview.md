@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: harini84
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 73c64648ce02d63e4d8d6f6979b0c45e0164ddbd
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: af8dcbe14bb956f211c7b18dd555cca0ba36a35e
+ms.sourcegitcommit: 0249c86925c9b4797908394c952073b5d9137911
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62106764"
+ms.lasthandoff: 03/25/2022
+ms.locfileid: "64477528"
 ---
 # <a name="list-calendarview"></a>Listar calendarView
 
@@ -80,7 +80,7 @@ Não forneça um corpo de solicitação para esse método.
 
 Se bem-sucedido, este método retorna um código de resposta `200 OK` e uma coleção de objetos [event](../resources/event.md) no corpo da resposta.
 
-Se o conjunto de resultados abranger várias páginas, o **calendarView** retornará uma propriedade **@odata.nextLink** na réplica que contém um URL para a próxima página de resultados. Consulte a [paginação](/graph/concepts/paging.md) para detalhes.
+Se o conjunto de resultados abranger várias páginas, o **calendarView** retornará uma propriedade **@odata.nextLink** na réplica que contém um URL para a próxima página de resultados. Consulte [Paginação](/graph/paging) para obter detalhes.
 
 ## <a name="example"></a>Exemplo
 ### <a name="request"></a>Solicitação

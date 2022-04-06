@@ -5,12 +5,12 @@ doc_type: enumPageType
 ms.localizationpriority: medium
 ms.prod: non-product-specific
 author: MSGraphDocsvTeam
-ms.openlocfilehash: aedf9e901c570fc53e65a519c4363d6f00d633c9
-ms.sourcegitcommit: cc9e5b3630cb84c48bbbb2d84a963b9562d1fb78
+ms.openlocfilehash: 775fa88e83b398ce1a6607ece80c53e1103051d0
+ms.sourcegitcommit: 0076eb6abb89be3dca3575631924a74a5202be30
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/31/2022
-ms.locfileid: "64588509"
+ms.lasthandoff: 04/03/2022
+ms.locfileid: "64630670"
 ---
 # <a name="enum-values"></a>Valores denum
 
@@ -95,7 +95,7 @@ Namespace: microsoft.graph
 |Member|
 |:---|
 |locatário|
-|aplicativo|
+|aplicação|
 
 ### <a name="incomingtokentype-values"></a>valores incomingTokenType 
 
@@ -302,9 +302,9 @@ Namespace: microsoft.graph
 
 |Member|
 |:---|
-|Cadeia de caracteres|
+|String|
 |Inteiro|
-|Referência|
+|Referências|
 |Binária|
 |Booliano|
 |DateTime|
@@ -576,7 +576,7 @@ Namespace: microsoft.graph
 |Member|
 |:---|
 |none|
-|aplicativo|
+|aplicação|
 |usuários|
 |devicePlatform|
 |location|
@@ -1572,7 +1572,7 @@ Namespace: microsoft.graph
 | Automático
 | noPreview
 | checklist
-| description
+| descrição
 | referência
 
 
@@ -1760,7 +1760,7 @@ Possíveis valores de comentários sobre o alerta fornecido por um analista.
 
 ### <a name="registryhive-values"></a>valores registryHive
 
-Enum para hives do Registro conforme definido por [https://docs.microsoft.com/windows/desktop/sysinfo/registry-hives](/windows/desktop/sysinfo/registry-hives).
+Número para hives do Registro conforme definido por [Hives do Registro](/windows/desktop/sysinfo/registry-hives).
 
 | Membro                  | Valor | Descrição                       |
 | :---------------------- | :---- | :-------------------------------- |
@@ -2424,7 +2424,7 @@ Valores possíveis para tipos de conta de usuário (associação ao grupo), por 
 
 | Member
 |:-------------------------
-| aplicativo
+| aplicação
 | delegado
 | delegatedUserConsentable
 
@@ -2510,7 +2510,7 @@ Valores possíveis para tipos de conta de usuário (associação ao grupo), por 
 
 |Membro    |Valor    |Descrição |
 |:---------|:--------|:----------- |
-|equipe      |0        |Indica que o aplicativo Teams pode ser instalado em uma equipe e está autorizado a acessar os dados dessa equipe.|
+|team      |0        |Indica que o aplicativo Teams pode ser instalado em uma equipe e está autorizado a acessar os dados dessa equipe.|
 |groupChat |1        |Indica que o aplicativo Teams pode ser instalado em um chat de grupo e está autorizado a acessar os dados desse chat de grupo.|
 |pessoal  |2        |Indica que o aplicativo Teams pode ser instalado no escopo pessoal de um usuário e está autorizado a acessar os dados desse usuário.|
 
@@ -2584,7 +2584,7 @@ Valores possíveis para tipos de conta de usuário (associação ao grupo), por 
 |Member|
 |:---|
 |itPro|
-|aplicativo|
+|aplicação|
 |partner|
 |desconhecido|
 
@@ -2745,7 +2745,7 @@ Valores possíveis para tipos de conta de usuário (associação ao grupo), por 
 
 |Member|
 |:---|
-|ou|
+|or|
 |e|
 
 ### <a name="subjectrightsrequeststage-values"></a>valores subjectRightsRequestStage 

@@ -1,28 +1,30 @@
 ---
-title: Tipo de recurso educationAssignmentPointsGrade
-description: Quando uma atribuição é definida como um tipo de grau de pontos, cada envio terá esse objeto associado à **propriedade submission.grade.**
+title: tipo de recurso educationAssignmentPointsGrade
+description: Quando uma tarefa é definida como um tipo de nota de pontos, cada envio terá esse objeto associado à propriedade **submission.grade** .
 ms.localizationpriority: medium
 author: sharad-sharma-msft
 ms.prod: education
 doc_type: resourcePageType
-ms.openlocfilehash: 91dbdc6a6a94a296dffafe32d6d6021dd23d3371
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 8019915e246a1b219357887ead1ee9ec8e7627d6
+ms.sourcegitcommit: c21fefa5c3c62df14147e7918cb43327f7d72e69
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59109147"
+ms.lasthandoff: 04/06/2022
+ms.locfileid: "64684666"
 ---
-# <a name="educationassignmentpointsgrade-resource-type"></a>Tipo de recurso educationAssignmentPointsGrade
+# <a name="educationassignmentpointsgrade-resource-type"></a>tipo de recurso educationAssignmentPointsGrade
 
 Namespace: microsoft.graph
 
-Quando uma atribuição é definida como um tipo de grau de pontos, cada envio terá esse objeto associado à **propriedade submission.grade.** Isso cria uma subclasse [de educationAssignmentGrade](educationassignmentgrade.md), que adicionará os dados de quem a essa propriedade. Os pontos máximos são armazenados na **propriedade assignments.grading.**
+Quando uma tarefa é definida como um tipo de nota de pontos, cada envio terá esse objeto associado à propriedade **submission.grade** . Isso cria uma subclasse [de educationAssignmentGrade](educationassignmentgrade.md), que adicionará os dados de quem a essa propriedade. Os pontos máximos são armazenados na **propriedade assignments.grading** .
 
 
 ## <a name="properties"></a>Propriedades
 | Propriedade     | Tipo   |Descrição|
 |:---------------|:--------|:----------|
-|points|Simples|Número de pontos que um professor está dando a esse objeto de envio.|
+|points|Único|Número de pontos que um professor está dando a esse objeto de envio.|
+|gradedBy|[identitySet](identityset.md)| Usuário que fez a classificação. |
+|gradedDateTime|DateTimeOffset| Momento no tempo em que a nota foi aplicada a este objeto de envio. O tipo Timestamp representa informações de data e hora usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite UTC em 1 de janeiro de 2014 é `2014-01-01T00:00:00Z`|
 
 ## <a name="json-representation"></a>Representação JSON
 
@@ -38,7 +40,9 @@ Veja a seguir uma representação JSON do recurso.
 
 ```json
 {
-  "points": "Double"
+  "points": "Double",
+  "gradedBy": {"@odata.type": "microsoft.graph.identitySet"},
+  "gradedDateTime": "String (timestamp)"
 }
 
 ```

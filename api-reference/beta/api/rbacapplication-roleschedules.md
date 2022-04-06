@@ -1,16 +1,16 @@
 ---
 title: 'rbacApplication: roleSchedules'
 description: Recupere tanto roleAssignmentSchedules quanto roleEligibilitySchedules.
-author: carolinetempleton
+author: japere
 ms.localizationpriority: medium
 ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: 51b175f2a7cf53cfe9a7778ccfc8ae6f2202fe18
-ms.sourcegitcommit: c7ff992ef63e480d070421ba99b28ee129cb6acb
+ms.openlocfilehash: 5bb7c202d222999266379692007c89543605d4a0
+ms.sourcegitcommit: 43a7c971a97ce1e4c55cbae089820bfce7dfe42b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "60695969"
+ms.lasthandoff: 03/29/2022
+ms.locfileid: "64510320"
 ---
 # <a name="rbacapplication-roleschedules"></a>rbacApplication: roleSchedules
 Namespace: microsoft.graph
@@ -19,7 +19,7 @@ Namespace: microsoft.graph
 
 Recupere tanto roleAssignmentSchedules quanto roleEligibilitySchedules.
 
-## <a name="permissions"></a>Permissões
+## <a name="permissions"></a>Permissions
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão|Permissões (da com menos para a com mais privilégios)|
@@ -44,8 +44,8 @@ A tabela a seguir mostra os parâmetros de consulta que podem ser usados com ess
 |Parâmetro|Tipo|Descrição|
 |:---|:---|:---|
 |directoryScopeId|String|Identificador do objeto directory que representa o escopo da atribuição. O escopo de uma atribuição determina o conjunto de recursos para os quais a entidade foi concedida acesso. Os escopos de diretório são escopos compartilhados armazenados no diretório que são compreendidos por vários aplicativos. Use `/` para escopo de todo o locatário. Use **appScopeId** para limitar o escopo somente a um aplicativo. |
-|appScopeId|String|Identificador do escopo específico do aplicativo quando o escopo de atribuição for específico do aplicativo. O escopo de uma atribuição determina o conjunto de recursos para os quais a entidade foi concedida acesso. Os escopos do aplicativo são escopos definidos e compreendidos somente por esse aplicativo. Use `/` para escopos de aplicativos de todo o locatário. Use **directoryScopeId** para limitar o escopo a objetos de diretório específicos, por exemplo, unidades administrativas. |
-|principalId|String| Identificador da entidade à qual a atribuição está sendo concedida. Pode ser um grupo ou um usuário. |
+|appScopeId|Cadeia de caracteres|Identificador do escopo específico do aplicativo quando o escopo de atribuição for específico do aplicativo. O escopo de uma atribuição determina o conjunto de recursos para os quais a entidade foi concedida acesso. Os escopos do aplicativo são escopos definidos e compreendidos somente por esse aplicativo. Use `/` para escopos de aplicativos de todo o locatário. Use **directoryScopeId** para limitar o escopo a objetos de diretório específicos, por exemplo, unidades administrativas. |
+|principalId|Cadeia de caracteres| Identificador da entidade à qual a atribuição está sendo concedida. Pode ser um grupo ou um usuário. |
 |roleDefinitionId|String|Identificador do unifiedRoleDefinition para a atribuição. Somente leitura.|
 
 
@@ -59,7 +59,7 @@ Não forneça um corpo de solicitação para esse método.
 
 ## <a name="response"></a>Resposta
 
-Se tiver êxito, este método retornará um código de resposta e uma coleção de objetos `200 OK` [unifiedRoleScheduleBase](../resources/unifiedroleschedulebase.md) no corpo da resposta.
+Se tiver êxito, este método retornará um `200 OK` código de resposta e uma coleção de objetos [unifiedRoleScheduleBase](../resources/unifiedroleschedulebase.md) no corpo da resposta.
 
 ## <a name="examples"></a>Exemplos
 

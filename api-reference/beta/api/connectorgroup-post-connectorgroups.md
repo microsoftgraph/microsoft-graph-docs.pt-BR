@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: japere
 ms.prod: applications
 doc_type: apiPageType
-ms.openlocfilehash: ab659a9d603e98d664b3562c40b795bf76c553a7
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: 41990833979b46433d057459ea5bc7812d00d16e
+ms.sourcegitcommit: 0e7927f34b7e55d323acbf281e11560cb40a89ed
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62106582"
+ms.lasthandoff: 03/20/2022
+ms.locfileid: "63671374"
 ---
 # <a name="create-connectorgroup"></a>Criar connectorGroup
 
@@ -18,14 +18,14 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Criar um novo [connectorGroup](../resources/connectorgroup.md).
+Crie um novo [connectorGroup](../resources/connectorgroup.md).
 
 ## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegado (conta corporativa ou de estudante) | Directory.ReadWrite.All, Directory.AccessAsUser.All    |
+|Delegado (conta corporativa ou de estudante) | Directory.ReadWrite.All   |
 |Delegado (conta pessoal da Microsoft) | Sem suporte.    |
 |Aplicativo | Directory.ReadWrite.All |
 
@@ -41,11 +41,11 @@ POST /onPremisesPublishingProfiles/applicationProxy/connectorGroups
 | Autorização  | Portador. Requried|
 
 ## <a name="request-body"></a>Corpo da solicitação
-No corpo da solicitação, fornece uma representação JSON do [objeto connectorGroup.](../resources/connectorgroup.md)
+No corpo da solicitação, fornece uma representação JSON do [objeto connectorGroup](../resources/connectorgroup.md) .
 
 ## <a name="response"></a>Resposta
 
-Se tiver êxito, este método retornará o código de resposta e o `201 Created` [objeto connectorGroup](../resources/connectorgroup.md) no corpo da resposta.
+Se tiver êxito, este método retornará `201 Created` o código de resposta e o [objeto connectorGroup](../resources/connectorgroup.md) no corpo da resposta.
 
 ## <a name="example"></a>Exemplo
 ##### <a name="request"></a>Solicitação
@@ -91,7 +91,7 @@ Content-type: application/json
 
 ---
 
-No corpo da solicitação, fornece uma representação JSON do [objeto connectorGroup.](../resources/connectorgroup.md)
+No corpo da solicitação, fornece uma representação JSON do [objeto connectorGroup](../resources/connectorgroup.md) .
 ##### <a name="response"></a>Resposta
 Aqui está um exemplo da resposta. Observação: o objeto de resposta mostrado aqui pode ser reduzido para facilitar a leitura.
 <!-- {

@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: jpettere
 ms.prod: users
 doc_type: apiPageType
-ms.openlocfilehash: 5603d0982b28fb25ccdaa60e204592b751e078ed
-ms.sourcegitcommit: b19b19bf192688f4c513492e8391e4d8dc104633
+ms.openlocfilehash: 3a635f8b6be26ea2f625f065ef6333c0f23e18df
+ms.sourcegitcommit: 0e7927f34b7e55d323acbf281e11560cb40a89ed
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/17/2022
-ms.locfileid: "62878831"
+ms.lasthandoff: 03/20/2022
+ms.locfileid: "63672319"
 ---
 # <a name="user-revokesigninsessions"></a>user: revokeSignInSessions
 
@@ -29,7 +29,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 |Tipo de permissão                        | Permissões (da com menos para a com mais privilégios)              |
 |:--------------------------------------|:---------------------------------------------------------|
-|Delegado (conta corporativa ou de estudante)     | User.ReadWrite.All, Directory.ReadWrite.All, Directory.AccessAsUser.All |
+|Delegado (conta corporativa ou de estudante)     | User.ReadWrite.All, Directory.ReadWrite.All |
 |Delegado (conta pessoal da Microsoft) | Sem suporte. |
 |Aplicativo                            | User.ReadWrite.All, Directory.ReadWrite.All,|
 
@@ -51,7 +51,7 @@ Esta operação não tem conteúdo de solicitação.
 
 ## <a name="response"></a>Resposta
 
-Se tiver êxito, este método retornará um código de resposta `200 OK`.
+Se bem-sucedido, este método retorna um código de resposta `200 OK`.
 
 >[!NOTE]
 >Essa API tem um [problema conhecido](/graph/known-issues#revoke-sign-in-sessions-returns-wrong-http-code). Ele retorna um código de resposta HTTP diferente.

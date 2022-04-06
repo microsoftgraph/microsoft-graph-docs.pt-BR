@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 doc_type: resourcePageType
 ms.prod: identity-and-sign-in
 author: psignoret
-ms.openlocfilehash: c4db52f4d09d8437d8b37879f40245c0acb79e5b
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 6d6142c7e97096f5d4f3fe9ccf4d3d8415ed772c
+ms.sourcegitcommit: 0e7927f34b7e55d323acbf281e11560cb40a89ed
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59015438"
+ms.lasthandoff: 03/20/2022
+ms.locfileid: "63672326"
 ---
 # <a name="oauth2permissiongrant-resource-type"></a>Tipo de recurso oAuth2PermissionGrant
 
@@ -29,8 +29,8 @@ As permissões delegadas às vezes são conhecidas como "escopos OAuth 2.0" ou "
 | [Listar oAuth2PermissionGrants](../api/oauth2permissiongrant-list.md) | [oAuth2PermissionGrant](oauth2permissiongrant.md) collection | Recupere uma lista de concessões de permissão delegadas. |
 | [Obter oAuth2PermissionGrant](../api/oauth2permissiongrant-get.md) | [oAuth2PermissionGrant](oauth2permissiongrant.md)  | Leia uma única concessão de permissão delegada.|
 | [Criar oAuth2PermissionGrant](../api/oauth2permissiongrant-post.md) | [oAuth2PermissionGrant](oauth2permissiongrant.md) | Crie uma concessão de permissão delegada. |
-| [Atualizar oAuth2PermissionGrant](../api/oauth2permissiongrant-update.md) | None | Atualizar o objeto oAuth2PermissionGrant. |
-| [Excluir oAuth2PermissionGrant](../api/oauth2permissiongrant-delete.md) | None  | Exclua uma concessão de permissão delegada. |
+| [Atualizar oAuth2PermissionGrant](../api/oauth2permissiongrant-update.md) | Nenhum | Atualizar o objeto oAuth2PermissionGrant. |
+| [Excluir oAuth2PermissionGrant](../api/oauth2permissiongrant-delete.md) | Nenhum  | Exclua uma concessão de permissão delegada. |
 |[Obter delta](../api/oauth2permissiongrant-delta.md)|[oAuth2PermissionGrant](oauth2permissiongrant.md)|Obter objetos **oauth2permissiongrant** recém-criados, atualizados ou excluídos sem executar uma leitura completa de toda a coleção de recursos.|
 
 ## <a name="properties"></a>Propriedades
@@ -38,11 +38,11 @@ As permissões delegadas às vezes são conhecidas como "escopos OAuth 2.0" ou "
 | Propriedade | Tipo | Descrição |
 |:---------------|:--------|:----------|
 | id | String | Identificador exclusivo do **oAuth2PermissionGrant**. Somente leitura.|
-| clientId | Cadeia de caracteres | A **id** da [](serviceprincipal.md) entidade de serviço do cliente para o aplicativo que está autorizado a agir em nome de um usuário interno ao acessar uma API. Obrigatório. Suporte para `$filter` (`eq` somente). |
-| consentType | Cadeia de caracteres | Indica se a autorização é concedida para que o aplicativo cliente represente todos os usuários ou apenas um usuário específico. *AllPrincipals* indica autorização para representar todos os usuários. *A* entidade indica autorização para representar um usuário específico. O consentimento em nome de todos os usuários pode ser concedido por um administrador. Os usuários que não são administradores podem ser autorizados a consentir em nome de si mesmos em alguns casos, para algumas permissões delegadas. Obrigatório. Suporte para `$filter` (`eq` somente). |
-| principalId | Cadeia de caracteres | A **id** do [usuário em](user.md) nome do qual o cliente está autorizado a acessar o recurso, quando **consentType** for *Principal*. Se **consentType** for *AllPrincipals,* esse valor será nulo. Obrigatório quando **consentType** for *Principal*. |
+| clientId | Cadeia de caracteres | A **id da** entidade de [](serviceprincipal.md) serviço do cliente para o aplicativo que está autorizado a agir em nome de um usuário interno ao acessar uma API. Obrigatório. Suporte para `$filter` (`eq` somente). |
+| consentType | String | Indica se a autorização é concedida para que o aplicativo cliente represente todos os usuários ou apenas um usuário específico. *AllPrincipals* indica autorização para representar todos os usuários. *A* entidade indica autorização para representar um usuário específico. O consentimento em nome de todos os usuários pode ser concedido por um administrador. Os usuários que não são administradores podem ser autorizados a consentir em nome de si mesmos em alguns casos, para algumas permissões delegadas. Obrigatório. Suporte para `$filter` (`eq` somente). |
+| principalId | String | A **id** do [usuário em](user.md) nome do qual o cliente está autorizado a acessar o recurso, quando **consentType** for *Principal*. Se **consentType** for *AllPrincipals* , esse valor será nulo. Obrigatório quando **consentType** for *Principal*. |
 | resourceId | Cadeia de caracteres | A **id da** entidade de [serviço de recursos](serviceprincipal.md) à qual o acesso está autorizado. Isso identifica a API que o cliente está autorizado a tentar chamar em nome de um usuário in-locar. |
-| escopo | String | Uma lista separada por espaço dos valores de declaração para permissões delegadas que devem ser incluídos em tokens de acesso para o aplicativo de recurso (a API). Por exemplo, `openid User.Read GroupMember.Read.All`. Cada valor de  declaração deve corresponder ao campo de valor de uma das permissões delegadas definidas pela API, listadas na propriedade **publishedPermissionScopes** da entidade de [serviço de recursos](serviceprincipal.md). |
+| escopo | String | Uma lista separada por espaço dos valores de declaração para permissões delegadas que devem ser incluídos em tokens de acesso para o aplicativo de recurso (a API). Por exemplo, `openid User.Read GroupMember.Read.All`. Cada valor de declaração deve corresponder  ao campo de valor de uma das permissões delegadas definidas pela API, listadas na **propriedade oauth2PermissionScopes** da entidade de serviço de [recursos](serviceprincipal.md). |
 
 ## <a name="relationships"></a>Relações
 

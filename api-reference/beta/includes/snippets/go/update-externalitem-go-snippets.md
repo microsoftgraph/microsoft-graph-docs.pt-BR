@@ -1,11 +1,11 @@
 ---
 description: Arquivo gerado automaticamente. NÃO MODIFICAR
-ms.openlocfilehash: 6bf9f518b526e07491f180cfb5c1ee82b1980cbf
-ms.sourcegitcommit: dfa87904fb26dd5161f604f2716ce1d90dad31ed
+ms.openlocfilehash: 7e452a88c4c9b460c5fd81a006db84f89924c30e
+ms.sourcegitcommit: 0bcc0a93f37db6013be40dc8d36717aeeeef7fb6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/09/2022
-ms.locfileid: "63396032"
+ms.lasthandoff: 03/16/2022
+ms.locfileid: "63527930"
 ---
 ```go
 
@@ -26,7 +26,7 @@ options := &msgraphsdk.ExternalItemRequestBuilderPatchOptions{
 }
 externalConnectionId := "externalConnection-id"
 externalItemId := "externalItem-id"
-result, err := graphClient.External().ConnectionsById(&externalConnectionId).ItemsById(&externalItemId).Patch(options)
+graphClient.External().ConnectionsById(&externalConnectionId).ItemsById(&externalItemId).Patch(options)
 
 
 ```

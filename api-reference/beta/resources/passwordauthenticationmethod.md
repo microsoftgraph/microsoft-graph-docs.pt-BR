@@ -1,16 +1,16 @@
 ---
 title: tipo de recurso passwordAuthenticationMethod
 description: Uma representação de uma senha registrada para um usuário.
-localization_priority: Normal
+ms.localizationpriority: medium
 author: mmcla
 ms.prod: identity-and-sign-in
 doc_type: resourcePageType
-ms.openlocfilehash: f902d47d0d06857537a07541456596c3a6204bc3
-ms.sourcegitcommit: 14648839f2feac2e5d6c8f876b7ae43e996ea6a0
+ms.openlocfilehash: 196964495c93a6d9dcdd35e58803500abee9c4a7
+ms.sourcegitcommit: dab085b74666e190974a35e6a124d3ff1645fa25
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/11/2021
-ms.locfileid: "50720565"
+ms.lasthandoff: 04/05/2022
+ms.locfileid: "64646572"
 ---
 # <a name="passwordauthenticationmethod-resource-type"></a>tipo de recurso passwordAuthenticationMethod
 
@@ -25,16 +25,16 @@ Uma representação da senha de um usuário. Por segurança, a senha em si nunca
 | Método       | Tipo de retorno | Descrição |
 |:-------------|:------------|:------------|
 |[Listar passwordAuthenticationMethods](../api/authentication-list-passwordmethods.md) | [coleção passwordAuthenticationMethod](passwordauthenticationmethod.md) | Leia as propriedades e as relações de todos os objetos **passwordAuthenticationMethod** deste usuário. |
-|[Obter passwordAuthenticationMethod](../api/passwordauthenticationmethod-get.md) | [passwordAuthenticationMethod](passwordauthenticationmethod.md) | Leia as propriedades e as relações de um **objeto PasswordAuthenticationMethod.** |
-|[Redefinir senha](../api/passwordauthenticationmethod-resetpassword.md)|Nenhum(a)|Redefinir a senha de um usuário na nuvem e, se sincronizado, no local.|
+|[Obter passwordAuthenticationMethod](../api/passwordauthenticationmethod-get.md) | [passwordAuthenticationMethod](passwordauthenticationmethod.md) | Leia as propriedades e as relações de um **objeto PasswordAuthenticationMethod** . |
+|[Redefinir senha](../api/passwordauthenticationmethod-resetpassword.md)|Nenhum|Redefinir a senha de um usuário na nuvem e, se sincronizado, no local.|
 
 ## <a name="properties"></a>Propriedades
 
 | Propriedade     | Tipo        | Descrição |
 |:-------------|:------------|:------------|
-|creationDateTime|DateTimeOffset|A data e a hora em que essa senha foi atualizada pela última vez. No momento, essa propriedade não está preenchida. Somente leitura. O tipo Timestamp representa informações de data e hora usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite UTC em 1 de janeiro de 2014 é `2014-01-01T00:00:00Z`|
-|id|Cadeia de caracteres| O identificador dessa senha registrado para esse usuário. Somente leitura.|
-|password|String|Para segurança, a senha sempre é retornada como nula de uma operação LIST ou GET.|
+|creationDateTime|DateTimeOffset|A data e a hora em que essa senha foi atualizada pela última vez. No momento, essa propriedade não está preenchida. Somente leitura. O tipo Timestamp representa informações de data e hora usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite UTC em 1 de janeiro de 2014 é `2014-01-01T00:00:00Z`.|
+|id|Cadeia de caracteres| O identificador dessa senha registrado para esse usuário. Isso geralmente é `28c10230-6103-485e-b985-444c60001490`. Somente leitura.|
+|password|String|Para segurança, a senha sempre é retornada a partir de `null` uma operação LIST ou GET.|
 
 ## <a name="relationships"></a>Relações
 

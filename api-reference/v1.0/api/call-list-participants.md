@@ -1,16 +1,16 @@
 ---
 title: Listar participantes
 description: Recupere uma lista de objetos participantes na chamada.
-author: ananmishr
+author: mkhribech
 ms.localizationpriority: medium
 ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: 7f9f1ebdd7013a57af558d1de142f345136cbcd6
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: fe6c78899390d6c55d23daf391f5cd92d61427e8
+ms.sourcegitcommit: 10719607271380ea56076ccff5a3b774d0005773
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62101610"
+ms.lasthandoff: 04/01/2022
+ms.locfileid: "64607985"
 ---
 # <a name="list-participants"></a>Listar participantes
 
@@ -24,7 +24,9 @@ Recupere uma lista de objetos participantes na chamada.
 | :-------------- | :------------------------------------------ |
 | Delegado (conta corporativa ou de estudante)     | Não suportado        |
 | Delegado (conta pessoal da Microsoft) | Não suportado        |
-| Aplicativo     | Nenhum                                        |
+| Aplicativo                            | Calls.Initiate.All, Calls.AccessMedia.All |
+
+> **Observação:** As permissões são verificadas quando a chamada é criada; nenhuma verificação de permissão adicional é feita ao chamar essa API. Calls.AccessMedia.All só é necessário para chamadas que usam mídia hospedada pelo aplicativo.
 
 ## <a name="http-request"></a>Solicitação HTTP
 
@@ -50,7 +52,7 @@ Não forneça um corpo de solicitação para esse método.
 
 ## <a name="response"></a>Resposta
 
-Se tiver êxito, este método retornará um código `200 OK` de resposta e uma coleção de objetos participantes no corpo da [](../resources/participant.md) resposta.
+Se tiver êxito, este método retornará um `200 OK` código de resposta e uma [coleção de objetos](../resources/participant.md) participantes no corpo da resposta.
 
 ## <a name="example"></a>Exemplo
 

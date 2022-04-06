@@ -4,12 +4,12 @@ description: A Conexão de Dados do Microsoft Graph depende do Privileged Access
 author: fercobo-msft
 ms.localizationpriority: high
 ms.prod: data-connect
-ms.openlocfilehash: 8c60df49086ac3b0ebc45475d152e7d7a7d973d9
-ms.sourcegitcommit: bfd1ab7e015ef04cb2ca3fb85d308ba2ce830a89
+ms.openlocfilehash: b7ac532d3a175e2ef93a77c8413b245da3bf1ec8
+ms.sourcegitcommit: e5d5095e26dca6f434354a0970e789e94ee6afb0
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/19/2022
-ms.locfileid: "62072597"
+ms.lasthandoff: 03/22/2022
+ms.locfileid: "63724016"
 ---
 # <a name="microsoft-graph-data-connect-integration-with-privileged-access-management"></a>Integração do Conexão de Dados do Microsoft Graph com o Privileged Access Management
 
@@ -71,7 +71,7 @@ Faça o seguinte para interagir com uma solicitação usando o módulo do PowerS
    >**Observação:** o campo contexto da solicitação de acesso aos dados descreve os parâmetros e as propriedades de atividade de cópia.
 
    ```powershell
-   Get-ElevatedAccessRequest -RequestId $requestId).Context | ConvertFrom-Json
+   Get-ElevatedAccessRequest -RequestId ($requestId).Context | ConvertFrom-Json
    ```
 
    Você recebe uma resposta semelhante ao seguinte exemplo.
@@ -138,7 +138,7 @@ Também é possível revogar as solicitações já aprovadas anteriormente. Seme
 
 Faça o seguinte para interagir com uma solicitação usando a experiência Web do PAM:
 
-1. Entre no portal de administração do Microsoft 365 usando credenciais de administrador e acesse a página [Experiência do usuário de aprovação do Privileged Access Management](https://admin.microsoft.com/AdminPortal/Home#/Settings/PrivilegedAccess). Isso mostra todas as solicitações de acesso (pendentes, aprovada, expiradas, negadas).
+1. Entrar no portal de administração do Microsoft 365 usando credenciais de administrador e vá para a página [Experiência do usuário de aprovação do Gerenciamento de acesso Privilegiado](https://admin.microsoft.com/AdminPortal/Home#/Settings/PrivilegedAccess). Isso mostrará todas as solicitações de acesso (pendentes/aprovadas/expiradas/negadas).
 
 2. Na página resultante, escolha a solicitação que você está interessado. Para selecionar uma lista de negação para depuração de privacidade, clique na lista suspensa **ListaNegações**, selecione o grupo que deve ser apagado e selecione **Aprovar**.
 

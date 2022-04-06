@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: mlafleur
 ms.prod: education
 doc_type: resourcePageType
-ms.openlocfilehash: dfe36d8068d0a9fa8d2c9f6c8d38b504ee9c83c5
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: e3b3a8618342afd21f9d18cc1d1c96fa2ed9bbf9
+ms.sourcegitcommit: c21fefa5c3c62df14147e7918cb43327f7d72e69
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59084556"
+ms.lasthandoff: 04/06/2022
+ms.locfileid: "64685240"
 ---
 # <a name="educationclass-resource-type"></a>Tipo de recurso educationClass
 
@@ -18,25 +18,25 @@ Namespace: microsoft.graph
 
 Representa uma aula em uma escola. O **recurso educationClass** corresponde ao grupo Microsoft 365 e compartilha a mesma ID. Os alunos são membros regulares da aula e os professores são proprietários e têm direitos apropriados. Para que as experiências do Office funcionem corretamente, os professores devem ser membros das coleções de professores e membros.
 
-Herda da [entidade](../resources/entity.md).
+Herda de [entidade](../resources/entity.md).
 
-## <a name="methods"></a>Métodos
+## <a name="methods"></a>Methods
 
 | Método                                                   | Tipo de retorno                                                 | Descrição                                                                                          |
 | :------------------------------------------------------- | :---------------------------------------------------------- | :--------------------------------------------------------------------------------------------------- |
-| [Listar educationClasses](../api/educationclass-list.md)   | Coleção [educationClass](../resources/educationclass.md) | Obter uma lista dos [objetos educationClass](../resources/educationclass.md) e suas propriedades.     |
-| [Criar educationClass](../api/educationclass-post.md) | [educationClass](../resources/educationclass.md)            | Crie um novo [objeto educationClass.](../resources/educationclass.md)                                |
-| [Obter educationClass](../api/educationclass-get.md)       | [educationClass](../resources/educationclass.md)            | Leia as propriedades e as relações de um [objeto educationClass.](../resources/educationclass.md) |
-| [Atualizar educationClass](../api/educationclass-update.md) | [educationClass](../resources/educationclass.md)            | Atualize as propriedades de um [objeto educationClass.](../resources/educationclass.md)                 |
-| [Excluir educationClass](../api/educationclass-delete.md) | Nenhum(a)                                                        | [Exclua um objeto educationClass.](../resources/educationclass.md)                                  |
+| [Listar educationClasses](../api/educationclass-list.md)   | Coleção [educationClass](../resources/educationclass.md) | Obtenha uma lista dos [objetos educationClass](../resources/educationclass.md) e suas propriedades.     |
+| [Criar educationClass](../api/educationclass-post.md) | [educationClass](../resources/educationclass.md)            | Crie um novo [objeto educationClass](../resources/educationclass.md) .                                |
+| [Obter educationClass](../api/educationclass-get.md)       | [educationClass](../resources/educationclass.md)            | Leia as propriedades e as relações de um [objeto educationClass](../resources/educationclass.md) . |
+| [Atualizar educationClass](../api/educationclass-update.md) | [educationClass](../resources/educationclass.md)            | Atualize as propriedades de um [objeto educationClass](../resources/educationclass.md) .                 |
+| [Excluir educationClass](../api/educationclass-delete.md) | Nenhuma                                                        | Exclua [um objeto educationClass](../resources/educationclass.md) .                                  |
 | [delta](../api/educationclass-delta.md)                  | Coleção [educationClass](../resources/educationclass.md) | Obter alterações incrementais na coleção de recursos.                                                  |
 
 ## <a name="properties"></a>Propriedades
 
 | Propriedade             | Tipo                                           | Descrição                                                        |
 | :------------------- | :--------------------------------------------- | :----------------------------------------------------------------- |
-| id                   | String                                         | Identificador de objeto. Herdado da [entidade](../resources/entity.md). |
-| displayName          | String                                         | Nome da aula.                                                 |
+| id                   | Cadeia de caracteres                                         | Identificador de objeto. Herdado da [entidade](../resources/entity.md). |
+| displayName          | Cadeia de caracteres                                         | Nome da aula.                                                 |
 | mailNickname         | String                                         | Nome de email para enviar email a todos os membros, se essa propriedade estiver habilitada.    |
 | description          | Cadeia de caracteres                                         | Descrição da aula.                                          |
 | createdBy            | [identitySet](../resources/identityset.md)     | Entidade que criou a aula                                       |
@@ -44,7 +44,7 @@ Herda da [entidade](../resources/entity.md).
 | externalName         | Cadeia de caracteres                                         | Nome da aula no sistema de sincronização.                           |
 | externalId           | Cadeia de caracteres                                         | ID da aula no sistema de sincronização.                           |
 | externalSource       | educationExternalSource                        | Como essa aula foi criada. Os valores possíveis são: `sis` e `manual`.  |
-| externalSourceDetail | Cadeia de caracteres                                         | O nome da fonte externa de onde esses recursos foram gerados. |
+| externalSourceDetail | Cadeia de caracteres                                         | O nome da fonte externa da qual esses recursos foram gerados. |
 | grade                | Cadeia de caracteres                                         | Nível de nota da classe.                                          |
 | term                 | [educationTerm](../resources/educationterm.md) | Termos dessa aula.                                               |
 
@@ -52,10 +52,14 @@ Herda da [entidade](../resources/entity.md).
 
 | Relação | Tipo                                                          | Descrição                                               |
 | :----------- | :------------------------------------------------------------ | :-------------------------------------------------------- |
+| assignments  | [coleção educationAssignment](educationAssignment.md) | Todas as atribuições associadas a essa classe. Anulável.     |
 | group        | [group](../resources/group.md)                                | O objeto Microsoft 365 grupo subjacente.                |
 | members      | Coleção [educationUser](../resources/educationuser.md)     | Todos os usuários da aula. Anulável.                         |
 | schools      | Coleção [educationSchool](../resources/educationschool.md) | Todas as escolas às quais essa aula está associada. Anulável. |
 | teachers     | Coleção [educationUser](../resources/educationuser.md)     | Todos os professores da aula. Anulável.                      |
+|assignmentCategories| [coleção educationCategory](educationcategory.md) | Todas as categorias associadas a essa classe. Anulável. |
+|assignmentDefaults| [coleção educationAssignmentDefaults](educationassignmentdefaults.md) | Especifica padrões de nível de classe respeitados por novas atribuições criadas na classe. |
+|assignmentSettings| [coleção educationAssignmentSettings](educationassignmentsettings.md) | Especifica as configurações de atribuições de nível de classe. |
 
 ## <a name="json-representation"></a>Representação JSON
 

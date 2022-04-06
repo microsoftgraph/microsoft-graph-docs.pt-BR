@@ -3,12 +3,12 @@ title: Changelog para Microsoft Graph (Arquivo Morto)
 description: Este tópico contém entradas de log de mudanças arquivadas para o Microsoft Graph.
 author: MSGraphDocsVteam
 ms.localizationpriority: high
-ms.openlocfilehash: 5e2dcded5ed5b84644ee60d7d9a7196cf75ddf7a
-ms.sourcegitcommit: fd609cb401ff862c3f5c21847bac9af967c6bf82
+ms.openlocfilehash: 3f504e45a6fa9becceb8d6afb4bb327a740f3242
+ms.sourcegitcommit: 0249c86925c9b4797908394c952073b5d9137911
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/31/2021
-ms.locfileid: "61651390"
+ms.lasthandoff: 03/25/2022
+ms.locfileid: "64477822"
 ---
 # <a name="changelog-for-microsoft-graph-archive"></a>Changelog para Microsoft Graph (Arquivo Morto)
 
@@ -55,7 +55,7 @@ Este tópico contém entradas de log de mudanças arquivadas para o Microsoft Gr
 |Adição|beta|Foram adicionados novos tipos complexos:<br/>[textInputQuestion](/graph/api/resources/textInputQuestion?view=graph-rest-beta)<br/>|
 |Adição|Beta|Foram adicionados novos tipos de enumeração:<br/>[androidManagedAppSafetyNetEvaluationType](/graph/api/resources/intune-mam-androidmanagedappsafetynetevaluationtype?view=graph-rest-beta)<br/>[androidRequiredPasswordComplexity](/graph/api/resources/intune-deviceconfig-androidrequiredpasswordcomplexity?view=graph-rest-beta)<br/>[macOSSoftwareUpdateDelayPolicy](/graph/api/resources/intune-deviceconfig-macossoftwareupdatedelaypolicy?view=graph-rest-beta)<br/>[managedDeviceManagementFeatures](/graph/api/resources/intune-devices-manageddevicemanagementfeatures?view=graph-rest-beta)<br/>[mobileAppRelationshipType](/graph/api/resources/intune-apps-mobileapprelationshiptype?view=graph-rest-beta)<br/>[mobileAppSupersedenceType](/graph/api/resources/intune-apps-mobileappsupersedencetype?view=graph-rest-beta)<br/>[settingSourceType](/graph/api/resources/intune-shared-settingsourcetype?view=graph-rest-beta)<br/>|
 |Adição|beta|Adicionada a ação [getAvailableExtensionProperties](/graph/api/resources/getAvailableExtensionProperties?view=graph-rest-beta)|
-|Adição|beta|Adicionada a ação [getObjectsById](/graph/api/resources/getObjectsById?view=graph-rest-beta)|
+|Adição|beta|Adicionada a ação [getObjectsById](/graph/api/directoryobject-getbyids)|
 |Adição|beta|A ação [syncLicenses](/graph/api/intune-onboarding-vpptoken-revokelicenses?view=graph-rest-beta) foi adicionada à entidade [vppToken](/graph/api/resources/intune-onboarding-vpptoken?view=graph-rest-beta) |
 |Adição|beta|Adicionou a função [getSuggestedEnrollmentLimit](/graph/api/intune-enrollment-devicemanagement-getsuggestedenrollmentlimit?view=graph-rest-beta) no [deviceManagement](/graph/api/resources/intune-shared-devicemanagement?view=graph-rest-beta) |
 |Exclusão|beta|Removeu a [revokeLicenses](/graph/api/intune-onboarding-vpptoken-revokelicenses?view=graph-rest-beta) ação em [vppToken](/graph/api/resources/intune-onboarding-vpptoken?view=graph-rest-beta) |
@@ -111,7 +111,7 @@ Este tópico contém entradas de log de mudanças arquivadas para o Microsoft Gr
 
 | **Tipo de alteração** | **Versão**   | **Descrição**                          |
 | :-------------- | :------------ | :--------------------------------------- |
-| Adição | v1.0 | Introduziu as [unidades administrativas da API](/graph/api/resources/administrativeunit?view=graph-rest-1.0). As unidades administrativas permitem às organizações subdividir seu Azure Active Directory e delegar tarefas administrativas a essas subdivisões. As subdivisões podem representar regiões, departamentos, centros de custo e assim por diante. Agora, isso pode ser gerenciado por meio da API do Microsoft Graph.|
+| Adição | v1.0 | Introduced the [administrative units API](/graph/api/resources/administrativeunit?view=graph-rest-1.0). Administrative units allow organizations to subdivide their Azure Active Directory, and delegate administrative duties to those subdivisions. Subdivisions can represent regions, departments, cost centers, and so on. This can now be managed through the Microsoft Graph API.|
 
 ### <a name="identity-and-access--identity-and-sign-in"></a>Identidade e acesso | Identidade e entrada
 
@@ -138,7 +138,7 @@ Este tópico contém entradas de log de mudanças arquivadas para o Microsoft Gr
 | Adição        | beta | [Classifique](/graph/api/resources/search-api-overview?view=graph-rest-beta&preserve-view=true#sort-search-results) os resultados da pesquisa do OneDrive e do SharePoint especificando **sortProperties** em um recurso [searchRequest](/graph/api/resources/searchRequest?view=graph-rest-beta&preserve-view=true).|
 | Adição        | beta | [Refinar os resultados usando agregações](/graph/api/resources/search-api-overview?view=graph-rest-beta&preserve-view=true#refine-results-using-aggregations) para o OneDrive e o SharePoint especificando as **agregações** e **aggregationFilters** em um recurso do **searchRequest**.|
 | Adição        | beta | Consultar dados externos em [mais de um de conexão](search-concept-custom-types.md).|
-| Alterar        | beta |Algumas propriedades na solicitação e resposta foram renomeadas e foram substituídas.  Encontre [mais detalhes](/graph/api/resources/search-api-overview?view=graph-rest-beta&preserve-view=true#schema-change-deprecation-warning) sobre a substituição.|
+| Alterar        | beta |Some properties in the request and response have been renamed and are deprecated.  See [more details](/graph/api/resources/search-api-overview?view=graph-rest-beta&preserve-view=true#schema-change-deprecation-warning) about the deprecation.|
 
 ### <a name="teamwork"></a>Trabalho em equipe
 
@@ -279,7 +279,7 @@ Este tópico contém entradas de log de mudanças arquivadas para o Microsoft Gr
 
 | **Tipo de alteração** | **Versão** | **Descrição** |
 |:---|:---|:---|
-|Adição|beta|Introduziu a API tarefas pendentes. Adicionado o [todoTask](/graph/api/resources/todotask?view=graph-rest-beta), [todoTaskList](/graph/api/resources/todotasklist?view=graph-rest-beta)e os recursos [linkedResource](/graph/api/resources/linkedresource?view=graph-rest-beta) e as operações CRUD.|
+|Adição|beta|Introduced the To Do API. Added the [todoTask](/graph/api/resources/todotask?view=graph-rest-beta), [todoTaskList](/graph/api/resources/todotasklist?view=graph-rest-beta), and [linkedResource](/graph/api/resources/linkedresource?view=graph-rest-beta) resources, and CRUD operations.|
 |Alterar|beta|Substituídas as API de tarefas do Outlook, incluindo o [outlookTask](/graph/api/resources/outlooktask?view=graph-rest-beta), [outlookTaskFolder](/graph/api/resources/outlooktaskfolder?view=graph-rest-beta), [outlookTaskGroup](/graph/api/resources/outlooktaskgroup?view=graph-rest-beta), além de operações e métodos relacionados.|
 
 ## <a name="july-2020"></a>Julho de 2020
@@ -629,9 +629,9 @@ Adicionando relatórios PSTN e de chamadas de roteamento direto ao Microsoft Gra
 
 | **Tipo de alteração** | **Versão**   | **Descrição**                          |
 | :-------------- | :------------ | :--------------------------------------- |
-|Adição | v1.0 | Posiciona a API disponível em v1. Adicionados os recursos [place](/graph/api/resources/place?view=graph-rest-1.0), [room](/graph/api/resources/room?view=graph-rest-1.0), [roomList](/graph/api/resources/room?view=graph-rest-1.0) e seus métodos para fornecer detalhes ricos para locais em aplicativos. |
+|Adição | v1.0 | Places API available in v1. Added the [place](/graph/api/resources/place?view=graph-rest-1.0), [room](/graph/api/resources/room?view=graph-rest-1.0), [roomList](/graph/api/resources/room?view=graph-rest-1.0) resources and their methods to provide rich details for locations in apps. |
 
-### <a name="change-notifications"></a>Alterar notificações
+### <a name="change-notifications"></a>Notificações de alteração
 
 | **Tipo de alteração** | **Versão** | **Descrição**                          |
 | :-------------- | :---------- | :--------------------------------------- |
@@ -660,7 +660,7 @@ Novas APIs e recursos adicionados à assinatura e à recuperação de registros 
 | Alterar | beta | Alterado o tipo de propriedade de navegação **shares** para **coleção printerShare** na entidade [printer](/graph/api/resources/printer?view=graph-rest-beta). |
 | Alterar | beta | Substituída a propriedade **name** na entidade [printerShare](/graph/api/resources/printerShare?view=graph-rest-beta). |
 | Alterar | beta | Substituídas as propriedades **name** e **acceptingJobs** na entidade [printer](/graph/api/resources/printer?view=graph-rest-beta). |
-| Alterar | beta | Substituída a propriedade de navegação **printerShares** na entidade [print](/graph/api/resources/print?view=graph-rest-beta).<br/> Em breve, caminhos de URL como "/print/printerShares/\*" deixarão de funcionar. Use "/print/shares/\*" em vez disso. |
+| Alterar | beta | Substituída a propriedade de navegação **printerShares** na entidade [print](/graph/api/resources/print?view=graph-rest-beta).<br/> Soon, URL paths such as "/print/printerShares/\*" will stop working. Use "/print/shares/\*" instead. |
 | Alterar | beta | Substituída a propriedade **registeredBy** na entidade [printer](/graph/api/resources/printerShare?view=graph-rest-beta). |
 | Adição | beta | Adicionada a propriedade de navegação **shared** na entidade [print](/graph/api/resources/print?view=graph-rest-beta). |
 | Adição | beta | Adicionadas as propriedades **displayName** e **isAcceptingJobs** à entidade [printer](/graph/api/resources/printer?view=graph-rest-beta). |
@@ -838,7 +838,7 @@ Novas APIs e recursos adicionados à assinatura e à recuperação de registros 
 
 | **Tipo de alteração** | **Versão**   | **Descrição**                          |
 | :-------------- | :------------ | :--------------------------------------- |
-| Adição | beta | Novo tipo de recurso [relyingPartyDetailedSummary](/graph/api/resources/relyingpartydetailedsummary?view=graph-rest-beta) adicionado. Esse tipo de recurso oferece suporte à [listagem](/graph/api/relyingpartydetailedsummary-list?view=graph-rest-beta) de terceiras partes confiáveis configuradas nos Serviços de Federação do Active Directory (AD FS).|
+| Adição | beta | Added a new resource type [relyingPartyDetailedSummary](/graph/api/resources/relyingpartydetailedsummary?view=graph-rest-beta). This resource type supports [listing](/graph/api/relyingpartydetailedsummary-list?view=graph-rest-beta) the relying parties configured in Active Directory Federation Services.|
 
 ### <a name="reports--microsoft-365-usage-reports"></a>Relatórios | Relatórios de uso do Microsoft 365
 
@@ -1161,7 +1161,7 @@ Novas APIs e recursos adicionados à assinatura e à recuperação de registros 
 
 | **Tipo de alteração** | **Versão**   | **Descrição**                          |
 | :-------------- | :------------ | :--------------------------------------- |
-| Adição | v1.0 | A propriedade **identidades** foi adicionada ao recurso [usuário](/graph/api/resources/user?view=graph-rest-1.0). Esta propriedade representa o conjunto de identidades (como contas locais e contas sociais) com as quais este usuário pode se conectar.|
+| Adição | v1.0 | Added the **identities** property to the [user](/graph/api/resources/user?view=graph-rest-1.0) resource. This property represents the set of identities (like local accounts and social accounts) that this user can use to sign in with.|
 
 ## <a name="december-2019"></a>Dezembro de 2019
 
@@ -1235,7 +1235,7 @@ A presença na versão beta foi adicionada e APIs de comunicações na nuvem par
 |:---|:---|:---|
 |Alterar | beta |Atualizado o comportamento das relações **appRoleAssignments** e **appRoleAssignedTo** relações em [servicePrincipal](/graph/api/resources/serviceprincipal.md) para retornar as funções conforme o documento. **appRoleAssignments** retorna funções de aplicativo concedidas à entidade de serviço e **appRoleAssignedTo** retorna as funções de aplicativo concedidas à entidade de serviço.|
 | Adição | beta | O novo tipo de entidade [accessPackageResourceRequest](/graph/api/resources/accesspackageresourcerequest?view=graph-rest-beta). |
-|Adição|Beta, v 1.0|Suporte adicional para retornar uma quantidade limitada de informações quando o aplicativo não tiver acesso a alguns tipos em uma coleção de resposta. Para obter mais detalhes, confira [Informações limitadas retornadas para objetos membro inacessíveis](permissions-reference.md#limited-information-returned-for-inaccessible-member-objects).|
+|Adição|Beta, v 1.0|Added support for returning a limited amount of information when your application does not have access to some of the types in a response's collection. For more details, see [Limited information returned for inaccessible member objects](permissions-reference.md#limited-information-returned-for-inaccessible-member-objects).|
 
 ### <a name="security"></a>Segurança
 
@@ -1274,7 +1274,7 @@ Introduziu a versão 1,1 do Microsoft Graph Toolkit.
 
 | **Tipo de alteração** | **Versão** | **Descrição**                  |
 |:----------------|:------------|:-----------------------------------------|
-| Alterar          | Beta e v1.0  | Para as permissões delegadas permitirem que aplicativos leiam relatórios de uso de serviço do Microsoft 365 em nome de um usuário, o administrador de locatários deve atribuir ao usuário uma função limitada de administrador do Azure AD. Para saber mais, confira [Autorização para APIs lerem os relatórios de uso do Microsoft 365](reportroot-authorization.md).|
+| Alterar          | Beta e v1.0  | For delegated permissions to allow apps to read Microsoft 365 service usage reports on behalf of a user, the tenant administrator must have assigned the user an Azure AD limited administrator role. For more details, see [Authorization for APIs to read Microsoft 365 usage reports](reportroot-authorization.md).|
 
 ### <a name="teamwork"></a>Trabalho em equipe
 
@@ -1546,7 +1546,7 @@ Agora a Pesquisa da Microsoft apresenta uma maneira de pesquisar e indexar dados
 | Adição | Beta e v1.0 | Propriedade **securityIdentifier** adicionada ao recurso [groupo](/graph/api/resources/group?view=graph-rest-1.0). |
 | Adição | Beta e v1.0 | Propriedade **mdmAppId** adicionada ao recurso [dispositivo](/graph/api/resources/group?view=graph-rest-1.0). |
 | Adição | Beta e v1.0 | As propriedades **fabricante** e **modelo** da entidade [dispositivo](/graph/api/resources/device?view=graph-rest-1.0). |
-| Adição | v1.0 | Adicionado novo recurso [orgContact](/graph/api/resources/orgcontact?view=graph-rest-1.0). Esses contatos são gerenciados pela organização e são diferentes dos [contatos pessoais](outlook-contacts-concept-overview.md)|
+| Adição | v1.0 | Added new [orgContact](/graph/api/resources/orgcontact?view=graph-rest-1.0) resource. These contacts are managed by the organization, and are different from [personal contacts](outlook-contacts-concept-overview.md)|
 | Adição | v1.0 | Adicionado novo recurso [physicalOfficeAddress](/graph/api/resources/physicalOfficeAddress?view=graph-rest-1.0). |
 | Adição | v1.0 | Adicionada nova entidade [certificateBasedAuthConfiguration](/graph/api/resources/certificatebasedauthconfiguration?view=graph-rest-1.0). |
 | Adição | v1.0 | Adicionado novo tipo de complexo [certificateAuthority](/graph/api/resources/certificateauthority?view=graph-rest-1.0). |
@@ -2010,7 +2010,7 @@ A estreia da API de locais para fornecer detalhes apurados para locais em aplica
 | **Tipo de alteração** | **Versão** | **Descrição**                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             |
 |:----------------|:------------|:----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Adição        | beta        | Adicionada a [API riskDetection](/graph/api/resources/riskdetection?view=graph-rest-beta), que representa as detecções de risco na Proteção de Identidades do Azure AD.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   |
-| Adição        | Beta        | Apresentação do novo tipo de recurso [applicationTemplate](/graph/api/resources/applicationtemplate.md). Esse tipo de recurso dá suporte a [instanciar](/graph/api/applicationtemplate-instantiate.md), [listar](/graph/api/applicationtemplate-instantiate.md) e [obter](/graph/api/applicationtemplate-get.md) aplicativos da galeria do aplicativo Azure AD.                                                                                                                                                                                                                                                                                                                                                                   |
+| Adição        | Beta        | Introduced the new resource type [applicationTemplate](/graph/api/resources/applicationtemplate.md). This resource type supports [instantiate](/graph/api/applicationtemplate-instantiate.md), [list](/graph/api/applicationtemplate-instantiate.md) and [get](/graph/api/applicationtemplate-get.md) applications from the Azure AD application gallery.                                                                                                                                                                                                                                                                                                                                                                   |
 | Adição        | beta        | Novos recursos adicionados: </br> [detailsInfo](/graph/api/resources/detailsInfo?view=graph-rest-beta)</br> [Iniciador](/graph/api/resources/initiator?view=graph-rest-beta)</br> [modifiedProperty](/graph/api/resources/modifiedProperty?view=graph-rest-beta)</br> [provisionedIdentity](/graph/api/resources/provisionedIdentity?view=graph-rest-beta)</br> [provisioningObjectsummary](/graph/api/resources/provisioningObjectsummary?view=graph-rest-beta)</br> [provisioningStep](/graph/api/resources/provisioningStep?view=graph-rest-beta)</br> [provisioningsystemDetails](/graph/api/resources/provisioningsystemDetails?view=graph-rest-beta)</br> [statusBase](/graph/api/resources/statusBase?view=graph-rest-beta) |
 | Adição        | beta        | Operação de [lista provisioningObjectSummary](/graph/api/resources/provisioning-object-summary-list?view=graph-rest-beta) adicionada</br>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       |
 | Adição        | v1.0        | Adicionada a propriedade **signInSessionsValidFromDateTime** no recurso do [usuário](/graph/api/resources/user?view=graph-rest-1.0).                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               |
@@ -2053,7 +2053,7 @@ A estreia da API de locais para fornecer detalhes apurados para locais em aplica
 
 | **Tipo de alteração** | **Versão**   | **Descrição**                          |
 | :-------------- | :------------ | :--------------------------------------- |
-| Adição | v1.0 e beta | Foi adicionada a capacidade de administradores limitaram o acesso do aplicativo apenas às caixas de correio específicas, mesmo quando um aplicativo recebe permissões de aplicativo para email, configurações de caixa de correio, calendários ou contatos. Para obter mais detalhes, confira [Escopo de permissões do aplicativo para caixas de correio específicas do Exchange Online](auth-limit-mailbox-access.md). |
+| Adição | v1.0 e beta | Added the capability for administrators to limit app access to only specific mailboxes, even when an app has been granted application permissions to mail, mailbox settings, calendars, or contacts. For more details, see [Scoping application permissions to specific Exchange Online mailboxes](auth-limit-mailbox-access.md). |
 
 ### <a name="devices-and-apps--corporate-management"></a>Dispositivos e aplicativos | Gerenciamento corporativo
 |Tipo de alteração|Versão|Descrição|
@@ -2119,7 +2119,7 @@ A estreia da API de locais para fornecer detalhes apurados para locais em aplica
 ### <a name="groups"></a>Grupos
 | **Tipo de alteração** | **Versão** | **Descrição** |
 | :-------------- | :------------ | :--------------------------------------- |
-| Adição | beta | Adicionada a propriedade **assignedlabels** à entidade do [grupo](/graph/api/resources/group?view=graph-rest-beta). Essa propriedade representa a lista de pares de rótulos de confidencialidade (ID do rótulo, nome do rótulo) associados a um grupo.
+| Adição | beta | Added **assignedlabels** property to the [group](/graph/api/resources/group?view=graph-rest-beta) entity. This property represents the list of sensitivity label pairs (label ID, label name) associated with a group.
 
 ### <a name="identity-and-access--identity-and-sign-in"></a>Identidade e acesso | Identidade e entrada
 
@@ -2228,7 +2228,7 @@ A estreia da API de locais para fornecer detalhes apurados para locais em aplica
 | **Tipo de alteração** | **Versão**   | **Descrição**                          |
 | :-------------- | :------------ | :--------------------------------------- |
 | Adição | v1.0 |  Introdução do novo **APIs de logs de auditoria do Azure AD**, oferecendo logs de atividades para tarefas de gerenciamento de diretório através de [directoryAudit](/graph/api/resources/directoryAudit?view=graph-rest-1.0) e atividade de entrada pelo [signIns](/graph/api/resources/signIns?view=graph-rest-1.0).|
-| Adição | beta | Adição de novas permissões de aplicativo para APIs de **avaliação de acesso**: AccessReview.Read.All, ProgramControl.Read.All e ProgramControl.ReadWrite.All. Para mais detalhes, confira a [referência da API de revisões de acesso](/graph/api/resources/accessreviews-root?view=graph-rest-beta). |
+| Adição | beta | Added new application permissions for **access reviews** APIs: AccessReview.Read.All, ProgramControl.Read.All and ProgramControl.ReadWrite.All. For details, see the [access reviews API reference](/graph/api/resources/accessreviews-root?view=graph-rest-beta). |
 | Adição | beta | Adicione a propriedade **signInSessionsValidFromDateTime** no recurso do [usuário](/graph/api/resources/user?view=graph-rest-beta). Essa é uma renomeação das propriedades **refreshTokensValidFromDateTime**, mas ambas as propriedades terão suporte para permitir que os clientes migrem sem problemas. Nos próximos dois meses, a propriedade antiga, **refreshTokensValidFromDateTime**, será removida.|
 | Adição | beta | Adicione a ação **revokeSignInSessions** no recurso do [usuário](/graph/api/resources/user?view=graph-rest-beta). Esta é uma renomeação da ação **invalidateAllRefreshTokens**, mas ambas as ações de serviço terão suporte para permitir que os clientes migrem sem problemas. Nos próximos dois meses, a ação de serviço antiga, **invalidateAllRefreshTokens**, será removida. |
 | Adição | Beta |Introduziu um novo tipo de recurso[trustFrameworkPolicy](/graph/api/resources/trustframeworkpolicy?view=graph-rest-beta) para suporte [Azure Active Directory B2C](/azure/active-directory-b2c/active-directory-b2c-overview). Este tipo de recurso oferece suporte a operações de [criar](/graph/api/trustframework-post-trustframeworkpolicy?view=graph-rest-beta), [listar](/graph/api/trustframework-list-trustframeworkpolicies?view=graph-rest-beta), [obter](/graph/api/trustframeworkpolicy-get?view=graph-rest-beta), [atualizar](/graph/api/trustframework-put-trustframeworkpolicy?view=graph-rest-beta), e [excluir](/graph/api/trustframerkpolicy-delete?view=graph-rest-beta).|
@@ -2499,9 +2499,9 @@ A estreia da API de locais para fornecer detalhes apurados para locais em aplica
 
 | **Tipo de alteração** | **Versão** | **Descrição**                          |
 | :-------------- | :---------- | :--------------------------------------- |
-|Adição |v1.0| Foi adicionada a nova entidade [dataPolicyOperation](/graph/api/resources/datapolicyoperation?view=graph-rest-1.0). Isso representa uma operação de política de dados enviados para fins de acompanhamento.
-|Adição |v1.0| Foi adicionada a ação [exportPersonalData](/graph/api/user-exportpersonaldata?view=graph-rest-1.0) em [users](/graph/api/resources/users?view=graph-rest-1.0). Essa ação envia uma solicitação de operação de política de dados para exportar dados pessoais armazenados pela Microsoft para um usuário. |
-|Adição |v1.0| Foi adicionado o método [dataPolicyOperations](/graph/api/datapolicyoperation-get?view=graph-rest-1.0). Isso recupera propriedades do objeto dataPolicyOperation.|
+|Adição |v1.0| Added new entity [dataPolicyOperation](/graph/api/resources/datapolicyoperation?view=graph-rest-1.0). This represents a submitted data policy operation for tracking purposes.
+|Adição |v1.0| Added the [exportPersonalData](/graph/api/user-exportpersonaldata?view=graph-rest-1.0) action on [users](/graph/api/resources/users?view=graph-rest-1.0). This action submits a data policy operation request to export personal data stored by Microsoft for a user. |
+|Adição |v1.0| Added method [dataPolicyOperations](/graph/api/datapolicyoperation-get?view=graph-rest-1.0). This retrieves properties of the dataPolicyOperation object.|
 
 ### <a name="identity-and-access"></a>Identidade e acesso
 
@@ -2511,7 +2511,7 @@ A estreia da API de locais para fornecer detalhes apurados para locais em aplica
 | Adição | beta | Adicionado novo tipo de recurso [directoryObjectPartnerReference](/graph/api/resources/directoryobjectpartnerreference?view=graph-rest-beta).|
 | Adição | beta | Adicionada a propriedade `createdDateTime` para o recurso [organization](/graph/api/resources/organization?view=graph-rest-beta).|
 | Adição | v1.0 | Adicionado método `memberOf` para obter uma direta [associação](/graph/api/resources/device?view=graph-rest-1.0) de [dispositivos](/graph/api/device-list-memberOf?view=graph-rest-1.0). Esse método foi adicionado para obter a lista de associações, incluindo associações aninhadas.|
-| Alterar    | Beta | O recurso de [contatos organizacionais](/graph/api/resources/orgcontact?view=graph-rest-beta) foi reestruturado. As propriedades de endereço físico (`city`, `country`, `postalCode`, `streetAddress` e `state`) e `officeLocation` agora estão em uma coleção de `addresses` (do novo tipo de recursos [physicalOfficeAddress](/graph/api/resources/physicalofficeaddress?view=graph-rest-beta)), e `mobilePhone`, `businessPhones` e `faxNumber` agora estão em uma coleção de `phones`. `companyName` e `imAddresses` também foram adicionados|
+| Alterar    | Beta | Restructured the [organizational contacts](/graph/api/resources/orgcontact?view=graph-rest-beta) resource. The physical address properties (`city`, `country`, `postalCode`, `streetAddress`, and `state`) and `officeLocation` are now in an `addresses` collection (of new [physicalOfficeAddress](/graph/api/resources/physicalofficeaddress?view=graph-rest-beta) resource type), and `mobilePhone`, `businessPhones` and `faxNumber` are now in a `phones` collection. `companyName` and `imAddresses` have also been added|
 
 ### <a name="identity-and-access--governance"></a>Identidade e acesso | Governança
 
@@ -3020,7 +3020,7 @@ A estreia da API de locais para fornecer detalhes apurados para locais em aplica
 
 | **Tipo de alteração** | **Versão** | **Descrição**                          |
 | :-------------- | :---------- | :--------------------------------------- |
-| Alterar          | Beta        | As APIs de [aplicativo](/graph/api/resources/application?view=graph-rest-beta) e [servicePrincipal](/graph/api/resources/serviceprincipal?view=graph-rest-beta) serão atualizadas na visualização (beta). O primeiro conjunto de alterações será aplicado em 16 de julho de 2018. As alterações incluem a renomeação e a reestruturação de propriedade. A maioria das propriedades existentes não estará disponível até que as alterações sejam concluídas. Novas propriedades serão adicionadas. As alterações serão lançadas na Visualização (beta) antes do lançamento da versão 1.0. |
+| Alterar          | Beta        | The [application](/graph/api/resources/application?view=graph-rest-beta) and [servicePrincipal](/graph/api/resources/serviceprincipal?view=graph-rest-beta) APIs will be updated in preview (beta). The first set of changes will be applied on July 16, 2018. The changes include property renaming and restructuring. Most of the existing properties will not be available until the changes are completed. There will be new properties added. The changes will be released in preview (beta) prior to releasing to v1.0. |
 
 ### <a name="applications"></a>Aplicativos
 
@@ -3128,7 +3128,7 @@ A estreia da API de locais para fornecer detalhes apurados para locais em aplica
 
 | **Tipo de alteração** | **Versão**   | **Descrição**                          |
 | :-------------- | :------------ | :--------------------------------------- |
-| Adição | Todos | Novas permissões de aplicativos _Application.ReadWrite.All_ e __Application.ReadWrite.OwnedBy_ que permitem ao aplicativo cliente criar, ler, atualizar e excluir aplicativos e entidades de serviço como descrito no [tópico de permissões](permissions-reference.md#application-resource-permissions). |
+| Adição | Tudo | Novas permissões de aplicativos _Application.ReadWrite.All_ e __Application.ReadWrite.OwnedBy_ que permitem ao aplicativo cliente criar, ler, atualizar e excluir aplicativos e entidades de serviço como descrito no [tópico de permissões](permissions-reference.md#application-resource-permissions). |
 | Adição | v1.0 | Adicionadas as propriedades **ageGroup**, **legalAgeGroupClassification**, e **ConsentRequiredForMinor** para recursos de [usuário](/graph/api/resources/user?view=graph-rest-1.0)
 
 ### <a name="identity-and-access--governance"></a>Identidade e acesso | Governança
@@ -3520,8 +3520,8 @@ A estreia da API de locais para fornecer detalhes apurados para locais em aplica
 
 | **Tipo de alteração** | **Versão** | **Descrição**                          |
 | :-------------- | :---------- | :--------------------------------------- |
-| Adição        | beta        | Foi adicionada a nova entidade [dataPolicyOperation](/graph/api/resources/datapolicyoperation?view=graph-rest-beta). Isso representa uma operação de política de dados enviados para fins de acompanhamento.
-| Adição        | Beta        | Foi adicionada a ação [exportPersonalData](/graph/api/user-exportpersonaldata?view=graph-rest-beta) em [users](/graph/api/resources/users?view=graph-rest-beta). Essa ação envia uma solicitação de operação de política de dados para exportar dados pessoais armazenados pela Microsoft para um usuário. |
+| Adição        | beta        | Added new entity [dataPolicyOperation](/graph/api/resources/datapolicyoperation?view=graph-rest-beta). This represents a submitted data policy operation for tracking purposes.
+| Adição        | beta        | Added the [exportPersonalData](/graph/api/user-exportpersonaldata?view=graph-rest-beta) action on [users](/graph/api/resources/users?view=graph-rest-beta). This action submits a data policy operation request to export personal data stored by Microsoft for a user. |
 
 ### <a name="identity-and-access"></a>Identidade e acesso
 

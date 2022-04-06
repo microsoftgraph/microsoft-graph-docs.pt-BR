@@ -5,12 +5,12 @@ title: tipo de recurso do site
 ms.localizationpriority: high
 ms.prod: sites-and-lists
 doc_type: resourcePageType
-ms.openlocfilehash: 06649de710e2145dfcd624b15b3fe6a45357f687
-ms.sourcegitcommit: e5d5095e26dca6f434354a0970e789e94ee6afb0
+ms.openlocfilehash: 52d5a66533304d2b7df479e2393a7a4a7cf41974
+ms.sourcegitcommit: cc9e5b3630cb84c48bbbb2d84a963b9562d1fb78
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2022
-ms.locfileid: "63721673"
+ms.lasthandoff: 03/31/2022
+ms.locfileid: "64586864"
 ---
 # <a name="site-resource-type"></a>tipo de recurso do site
 
@@ -46,6 +46,7 @@ O recurso **site** fornece metadados e relações para um site do SharePoint.
 | [Colunas de lista][]                                  | OBTER /sites/{site-id}/columns                                |
 | [Criar coluna][]                                 | POSTAR /sites/{site-id}/columns                               |
 | [Listar operações](../api/site-list-operations.md) | OBTER /sites/{site-id}/operações                             |
+| [Obter configurações do site][]                             | GET /sites/{site-id}/settings                               |
 
 [Obter site]: ../api/site-get.md
 [Obter site raiz]: ../api/site-get.md
@@ -68,6 +69,7 @@ O recurso **site** fornece metadados e relações para um site do SharePoint.
 [Criar contentType]: ../api/site-post-contenttypes.md
 [Colunas de lista]: ../api/site-list-columns.md
 [Criar coluna]: ../api/site-post-columns.md
+[Obter configurações do site]: ../api/sitesettings-get.md
 
 ## <a name="properties"></a>Propriedades
 
@@ -81,6 +83,7 @@ O recurso **site** fornece metadados e relações para um site do SharePoint.
 | **lastModifiedDateTime** | DateTimeOffset     | A data e a hora que o item foi modificado pela última vez. Somente leitura.                                       |
 | **name**                 | string             | O nome/título do item.                                                                  |
 | **root**                 | [root][]           | Se estiver presente, indica que este é o site raiz do conjunto de sites. Somente leitura.            |
+| **configurações**             | [siteSettings]     | As configurações neste site. Retornado apenas em $select. Somente leitura.                                |
 | **sharepointIds**        | [sharepointIds][]  | Retorna os identificadores úteis para fins de compatibilidade do REST do SharePoint. Somente leitura.                       |
 | **siteCollection**       | [siteCollection][] | Fornece detalhes sobre o conjunto de sites do site. Disponível apenas no site raiz. Somente leitura. |
 | **webUrl**               | string (url)       | A URL que exibe o item no navegador. Somente leitura.                                          |
@@ -126,6 +129,7 @@ O identificador `root` sempre faz referência ao site raiz de um determinado des
 [sitePage]: sitepage.md
 [root]: root.md
 [site]: site.md
+[siteSettings]: sitesettings.md
 [sharepointIds]: sharepointids.md
 [siteCollection]: sitecollection.md
 [microsoft.graph.termStore.store]: termstore-store.md
@@ -154,30 +158,32 @@ O recurso **site** é derivado de [**baseItem**](baseitem.md) e herda propriedad
 
 ```json
 {
+  "displayName": "string",
   "id": "string",
   "root": { "@odata.type": "microsoft.graph.root" },
+  "settings": { "@odata.type": "microsoft.graph.sitesettings" },
   "sharepointIds": { "@odata.type": "microsoft.graph.sharepointIds" },
   "siteCollection": {"@odata.type": "microsoft.graph.siteCollection"},
-  "displayName": "string",
 
   /* relationships */
   "analytics": { "@odata.type": "microsoft.graph.itemAnalytics" },
+  "columns": [ { "@odata.type": "microsoft.graph.columnDefinition" }],
   "contentTypes": [ { "@odata.type": "microsoft.graph.contentType" }],
+  "externalColumns": [ { "@odata.type": "microsoft.graph.columnDefinition" }],
   "drive": { "@odata.type": "microsoft.graph.drive" },
   "drives": [ { "@odata.type": "microsoft.graph.drive" }],
   "items": [ { "@odata.type": "microsoft.graph.baseItem" }],
   "lists": [ { "@odata.type": "microsoft.graph.list" }],
   "permissions": [ { "@odata.type": "microsoft.graph.permission" }],
   "sites": [ { "@odata.type": "microsoft.graph.site"} ],
-  "columns": [ { "@odata.type": "microsoft.graph.columnDefinition" }],
   "termStore": { "@odata.type": "microsoft.graph.termStore.store" },
-  "externalColumns": [ { "@odata.type": "microsoft.graph.columnDefinition" }],
+
   /* inherited from baseItem */
-  "name": "string",
   "createdDateTime": "datetime",
   "description": "string",
   "eTag": "string",
   "lastModifiedDateTime": "datetime",
+  "name": "string",
   "webUrl": "url"
 }
 ```

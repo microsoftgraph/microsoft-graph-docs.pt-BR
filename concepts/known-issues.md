@@ -3,12 +3,12 @@ title: Problemas conhecidos com o Microsoft Graph
 description: Este artigo descreve os problemas conhecidos com o Microsoft Graph.
 author: MSGraphDocsVTeam
 ms.localizationpriority: high
-ms.openlocfilehash: f1e25a40b970656ad9f47c68abad0cb7fc5addc1
-ms.sourcegitcommit: c21fefa5c3c62df14147e7918cb43327f7d72e69
+ms.openlocfilehash: fb9d91dc1390ecc217f94051006a8d10111d848b
+ms.sourcegitcommit: 0249c86925c9b4797908394c952073b5d9137911
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/06/2022
-ms.locfileid: "64684918"
+ms.lasthandoff: 03/25/2022
+ms.locfileid: "64477885"
 ---
 # <a name="known-issues-with-microsoft-graph"></a>Problemas conhecidos com o Microsoft Graph
 
@@ -405,24 +405,6 @@ As chamadas de API a seguir não suportam a instalação de aplicativos que exig
 - [Atualizar o aplicativo instalado para a equipe](/graph/api/team-teamsappinstallation-upgrade.md)
 - [Adicionar o aplicativo ao chat](/graph/api/chat-post-installedapps)
 - [Atualizar aplicativo instalado no chat](/graph/api/chat-teamsappinstallation-upgrade.md)
-
-### <a name="unable-to-access-a-cross-tenant-shared-channel-when-the-request-url-contains-tenantscross-tenant-id"></a>Não é possível acessar um canal compartilhado entre locatários quando a URL de solicitação contém locatários/{cross-tenant-id}
-As chamadas à API [para teams/{team-id}/incomingChannels](/graph/api/team-list-incomingchannels.md) e [teams/{team-id}/allChannels](/graph/api/team-list-allchannels.md) retornam **a propriedade @odata.id** que você pode usar para acessar o canal e executar outras operações no objeto de [](/graph/api/resources/channel.md) canal. Se você chamar a URL retornada da propriedade **@odata.id, a** solicitação falhará com o seguinte erro ao tentar acessar o canal compartilhado entre [locatários](/graph/api/resources/channel.md):
-```
-GET /tenants/{tenant-id}/teams/{team-id}/channels/{channel-id}
-{
-    "error": {
-        "code": "BadRequest",
-        "message": "TenantId in the optional tenants/{tenantId} segment should match the tenantId(tid) in the token used to call Graph.",
-        "innerError": {
-            "date": "2022-03-08T07:33:50",
-            "request-id": "dff19596-b5b2-421d-97d3-8d4b023263f3",
-            "client-request-id": "32ee2cbd-27f8-2441-e3be-477dbe0cedfa"
-        }
-    }
-}
-```
-Para resolver esse problema, remova `/tenants/{tenant-id}` a parte da URL antes de chamar a API para acessar o canal compartilhado entre [locatários](/graph/api/resources/channel.md).
 
 ## <a name="users"></a>Usuários
 

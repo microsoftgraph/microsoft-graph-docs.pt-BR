@@ -4,12 +4,12 @@ description: Listar práticas recomendadas e exemplos para Excel APIs no Microso
 author: grangeryy
 ms.localizationpriority: medium
 ms.prod: excel
-ms.openlocfilehash: d5318b51316a20fff00c70df0e655a6058743c29
-ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
+ms.openlocfilehash: 8f1dc872dd94547545c3ca9d47ec08909119e0ea
+ms.sourcegitcommit: 0e7927f34b7e55d323acbf281e11560cb40a89ed
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/12/2021
-ms.locfileid: "60944225"
+ms.lasthandoff: 03/20/2022
+ms.locfileid: "63672102"
 ---
 # <a name="best-practices-for-working-with-the-excel-api-in-microsoft-graph"></a>Práticas recomendadas para trabalhar com a API Excel no Microsoft Graph
 
@@ -120,17 +120,17 @@ workbook-session-id: {session-id}
 HTTP/1.1 204 No Content
 ```
 
-Para obter mais detalhes, consulte [Create session and](/graph/api/workbook-createsession?view=graph-rest-1.0) Close [session](/graph/api/workbook-closesession?view=graph-rest-1.0).
+Para obter mais detalhes, consulte [Create session and](/graph/api/workbook-createsession?view=graph-rest-1.0) [Close session](/graph/api/workbook-closesession?view=graph-rest-1.0).
 
 ## <a name="working-with-apis-that-take-a-long-time-to-complete"></a>Trabalhar com APIs que levam muito tempo para ser concluída
 
 Você pode notar que algumas operações levam um tempo indeterminado para ser concluída; por exemplo, abrir uma grande workbook. É fácil atingir o tempo de espera enquanto aguarda a resposta a essas solicitações. Para resolver esse problema, fornecemos o padrão de operação de longa duração. Quando você usa esse padrão, não precisa se preocupar com o tempo de espera da solicitação.
 
-Atualmente, a api de Excel de criação de sessão no Microsoft Graph tem o padrão de operação de longa execução habilitado. Esse padrão envolve as seguintes etapas:
+Atualmente, a api de criação Excel sessão no Microsoft Graph tem o padrão de operação de longa execução habilitado. Esse padrão envolve as seguintes etapas:
 
-1. Adicione um header à solicitação para indicar que é uma operação de longa `Prefer: respond-async` duração quando você engrada uma sessão.
-2. Uma operação de longa duração retornará uma resposta juntamente com um `202 Accepted` header location para recuperar o status da operação. Se a criação da sessão for concluída em alguns segundos, ela retornará uma resposta de sessão de criação regular em vez de usar o padrão de operação de longa execução.
-3. Com a `202 Accepted` resposta, você pode recuperar o status da operação no local especificado. Os valores de status da `notStarted` operação `running` incluem , `succeeded` , e `failed` .
+1. Adicione um `Prefer: respond-async` header à solicitação para indicar que é uma operação de longa duração quando você engrada uma sessão.
+2. Uma operação de longa duração retornará uma `202 Accepted` resposta juntamente com um header location para recuperar o status da operação. Se a criação da sessão for concluída em alguns segundos, ela retornará uma resposta de sessão de criação regular em vez de usar o padrão de operação de longa execução.
+3. Com a `202 Accepted` resposta, você pode recuperar o status da operação no local especificado. Os valores de status da operação incluem `notStarted``running`, , `succeeded`e `failed`.
 4. Depois que a operação for concluída, você poderá obter o resultado da criação da sessão por meio da URL especificada na resposta bem-sucedida.
 
 O exemplo a seguir cria uma sessão usando o padrão de operação de longa duração.
@@ -149,7 +149,7 @@ Content-type: application/json
 ```
 
 #### <a name="response"></a>Resposta
-O padrão de operação de longa duração retornará `202 Accepted` uma resposta semelhante à seguinte.
+O padrão de operação de longa duração retornará uma `202 Accepted` resposta semelhante à seguinte.
 
 ```http
 HTTP/1.1 202 Accepted
@@ -211,7 +211,7 @@ GET https://graph.microsoft.com/v1.0/me/drive/items/{drive-item-id}/workbook/ope
 
 #### <a name="response"></a>Resposta
 
-A seguir está a resposta quando a operação tem um status `running` de .
+A seguir está a resposta quando a operação tem um status de `running`.
 
 ```http
 HTTP/1.1 200 OK
@@ -223,7 +223,7 @@ Content-type: application/json
 }
 ```
 
-A seguir está a resposta quando o status da operação é `succeeded` .
+A seguir está a resposta quando o status da operação é `succeeded`.
 
 ```http
 HTTP/1.1 200 OK
@@ -236,7 +236,7 @@ Content-type: application/json
 }
 ```
 
-A seguir está a resposta quando o status da operação é `failed` .
+A seguir está a resposta quando o status da operação é `failed`.
 
 ```http
 HTTP/1.1 200 OK
@@ -266,7 +266,7 @@ Para obter mais detalhes sobre erros, consulte [Códigos de erro](workbook-error
 
 #### <a name="request"></a>Solicitação
 
-Com um status de , você pode obter as informações de sessão `succeeded` criadas `resourceLocation` com uma solicitação semelhante à seguinte.
+Com um status de `succeeded`, você pode obter as informações de sessão criadas com `resourceLocation` uma solicitação semelhante à seguinte.
 
 ```http
 GET https://graph.microsoft.com/v1.0/me/drive/items/{drive-item-id}/workbook/sessionInfoResource(key='{key}')
@@ -288,3 +288,17 @@ Content-type: application/json
 ```
 
 >**Observação:** Adquirir informações da sessão depende da solicitação inicial. Você não precisa adquirir o resultado se a solicitação inicial não retornar um corpo de resposta.
+
+## <a name="throttling"></a>Limitação
+
+Excel APIs na Microsoft Graph afetar o uso de recursos de vários serviços de dependência. O impacto pode variar entre solicitações diferentes: por exemplo, você pode esperar que a atualização de uma cadeia de caracteres curta em uma única célula de uma pequena workbook consumiria menos recursos do que adicionar uma tabela grande com fórmulas complexas a uma grande lista de trabalho. Mesmo com a mesma API, os parâmetros e as guias de trabalho de destino podem apresentar diferenças significativas. Portanto Excel limitação da API não é definida com números de limite simples e universais, pois resultariam em limites mais restritivos. As práticas recomendadas a seguir ajudarão você a concluir tarefas mais rapidamente, com menos erros de throttling.
+
+### <a name="retry-after-header"></a>Retry-After header
+
+Em muitos casos, uma resposta de throttling inclui um `Retry-After` header. Respeitar o valor do header e atrasar solicitações semelhantes ajudaria o cliente a se recuperar da throttling. Para obter detalhes sobre como lidar com respostas de erro de Excel APIs no Microsoft Graph, consulte Tratamento de erros para [APIs Excel no Microsoft Graph](workbook-error-handling.md).
+
+### <a name="throttling-and-concurrency"></a>Throttling and concurrency
+
+Outro fator relacionado à throttling é a concurreência de solicitação. Não recomendamos aumentar a simulta ao usar apIs de Excel (por exemplo, paralelizar as solicitações para a mesma workbook), especialmente para solicitações de gravação. Em vez disso, a menos que haja uma preocupação específica, como sobrecarga de rede significativa em comparação com o tempo de execução de solicitação muito curto, recomendamos o uso sequencial no caso mais comum: para cada uma das guias de trabalho, envie apenas a próxima solicitação após receber uma resposta bem-sucedida à solicitação atual.
+
+Solicitações de gravação simultâneas para a mesma lista de trabalho geralmente não são executados em paralelo (embora, em alguns casos, eles o fazem); em vez disso, eles geralmente são a causa da reação, do tempo de tempo (quando as solicitações são en filas em servidores), do conflito de mesclagem (quando sessões simultâneas estão envolvidas) e de outros tipos de falhas. Eles também complicam o tratamento de erros; por exemplo, quando você recebe uma resposta de falha, não há como confirmar o status de outras solicitações pendentes, o que torna difícil determinar ou recuperar o estado da workbook.

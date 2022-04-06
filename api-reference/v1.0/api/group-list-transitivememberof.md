@@ -5,12 +5,12 @@ author: Jordanndahl
 ms.localizationpriority: medium
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: ec51cead8186c08d2bcd12206cee9af2af544f31
-ms.sourcegitcommit: 43a7c971a97ce1e4c55cbae089820bfce7dfe42b
+ms.openlocfilehash: a3f3c1892acc9ba47814faa8fc8a9dee22759436
+ms.sourcegitcommit: 0e7927f34b7e55d323acbf281e11560cb40a89ed
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/29/2022
-ms.locfileid: "64508510"
+ms.lasthandoff: 03/20/2022
+ms.locfileid: "63672655"
 ---
 # <a name="list-group-transitive-memberof"></a>Listar transitivo de grupo memberOf
 
@@ -18,7 +18,7 @@ Namespace: microsoft.graph
 
 Obter grupos dos que o grupo é membro.  Essa operação é transitiva e também incluirá todos os grupos dos que esses grupos são membros aninhados. Ao contrário de obter grupos Microsoft 365 de usuários, isso retorna todos os tipos de grupos, não apenas Microsoft 365 grupos.
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>Permissões
 
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
@@ -234,7 +234,7 @@ Este é um exemplo de solicitação.
 
 <!-- {
   "blockType": "ignored",
-  "name": "list_groups_transitivememberof_startswith"
+  "name": "get_a_count"
 }-->
 ```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/groups/{id}/transitiveMemberOf/microsoft.graph.group?$count=true&$orderby=displayName&$filter=startswith(displayName, 'a')

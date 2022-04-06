@@ -1,14 +1,14 @@
 ---
 title: To Do componente no microsoft Graph Toolkit
-description: O To Do componente permite ao usuário exibir, adicionar, remover, concluir ou editar todas as tarefas. Ele funciona com qualquer tarefa no Microsoft To-Do.
+description: O To Do permite que o usuário exibir, adicionar, remover, concluir ou editar todas as tarefas. Ele funciona com qualquer tarefa no Microsoft To-Do.
 ms.localizationpriority: medium
-author: shweaver-MSFT
-ms.openlocfilehash: de9c49937b3db76c2d93c308b88d03ec577f76ed
-ms.sourcegitcommit: bfd1ab7e015ef04cb2ca3fb85d308ba2ce830a89
+author: sebastienlevert
+ms.openlocfilehash: 6a77d75609cbff22fbaccefe45cd1f8b9e5355ca
+ms.sourcegitcommit: cc9e5b3630cb84c48bbbb2d84a963b9562d1fb78
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/19/2022
-ms.locfileid: "62072688"
+ms.lasthandoff: 03/31/2022
+ms.locfileid: "64589244"
 ---
 # <a name="to-do-component-in-the-microsoft-graph-toolkit"></a>To Do componente no microsoft Graph Toolkit
 
@@ -107,7 +107,7 @@ Para obter mais informações sobre como lidar com eventos, consulte [eventos](.
 
 ## <a name="templates"></a>Modelos
 
-O `tasks` componente dá suporte a vários [modelos](../customize-components/templates.md) que permitem substituir determinadas partes do componente. Para especificar um modelo, inclua um elemento dentro de um componente e de definir o `<template>` valor como um dos `data-type` seguintes.
+O `tasks` componente dá suporte a [vários modelos](../customize-components/templates.md) que permitem substituir determinadas partes do componente. Para especificar um modelo, inclua um `<template>` elemento dentro de um componente e de `data-type` definir o valor como um dos seguintes.
 
 | Tipo de dados     | Contexto de dados              | Descrição                                                       |
 | ---------     | ------------------------- | ----------------------------------------------------------------- |
@@ -132,8 +132,8 @@ Esse controle usa as seguintes APIs Graph Microsoft e permissões.
 
 | Configuração | Permissão | API |
 | ------------- | ---------- | --- |
-| `targetId` set | Tasks.Read | [/me/todo/lists/${listId}](/graph/api/todotasklist-get?view=graph-rest-1.0&tabs=http), [/me/todo/lists/{todoTaskListId}/tasks](/graph/api/todotasklist-list-tasks) |
-| `targetId` não definido | Tasks.Read | [/me/todo/lists](/graph/api/todo-list-lists?view=graph-rest-1.0&tabs=http), [/me/todo/lists/{todoTaskListId}/tasks](/graph/api/todotasklist-list-tasks) |
+| `targetId` set | Tasks.Read | [/me/todo/lists/${listId}](/graph/api/todotasklist-get?tabs=http), [/me/todo/lists/{todoTaskListId}/tasks](/graph/api/todotasklist-list-tasks) |
+| `targetId` não definido | Tasks.Read | [/me/todo/lists](/graph/api/todo-list-lists?tabs=http), [/me/todo/lists/{todoTaskListId}/tasks](/graph/api/todotasklist-list-tasks) |
 | criar, atualizar ou excluir tarefa | Tasks.ReadWrite | [/me/todo/lists/{todoTaskListId}/tasks/{taskId}](/graph/api/todotask-get) |
 
 ## <a name="authentication"></a>Autenticação

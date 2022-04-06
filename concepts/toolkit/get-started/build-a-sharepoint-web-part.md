@@ -2,13 +2,13 @@
 title: Criar uma web part do Microsoft Office SharePoint Online com o Kit de ferramentas do Microsoft Graph
 description: Comece a usar o Kit de ferramentas do Microsoft Graph para construir uma web part do Microsoft Office SharePoint Online.
 ms.localizationpriority: medium
-author: elisenyang
-ms.openlocfilehash: d30a2dd4fbaa89890124332528ed157e9043f8a9
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+author: sebastienlevert
+ms.openlocfilehash: 700cfd44ddc115fc88451ce97880893b45feb9d3
+ms.sourcegitcommit: cc9e5b3630cb84c48bbbb2d84a963b9562d1fb78
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59083807"
+ms.lasthandoff: 03/31/2022
+ms.locfileid: "64588803"
 ---
 # <a name="build-a-sharepoint-web-part-with-the-microsoft-graph-toolkit"></a>Criar uma web part do Microsoft Office SharePoint Online com o Kit de ferramentas do Microsoft Graph
 

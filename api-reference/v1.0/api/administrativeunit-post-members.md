@@ -5,12 +5,12 @@ author: DougKirschner
 ms.localizationpriority: medium
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: c5095e34787f4739295ab4811356136c7fd30253
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: 22cc8c5022cdc27d434ba62bdf76891a7344d7e9
+ms.sourcegitcommit: 0e7927f34b7e55d323acbf281e11560cb40a89ed
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62092643"
+ms.lasthandoff: 03/20/2022
+ms.locfileid: "63672025"
 ---
 # <a name="add-a-member"></a>Adicionar um membro
 
@@ -26,7 +26,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegado (conta corporativa ou de estudante) | AdministrativeUnit.ReadWrite.All, Directory.AccessAsUser.All    |
+|Delegado (conta corporativa ou de estudante) | AdministrativeUnit.ReadWrite.All    |
 |Delegado (conta pessoal da Microsoft) | Sem suporte.    |
 |Aplicativo | AdministrativeUnit.ReadWrite.All |
 
@@ -42,7 +42,7 @@ POST /directory/administrativeUnits/{id}/members/$ref
 | Content-type | application/json. Obrigatório. |
 
 ## <a name="request-body"></a>Corpo da solicitação
-No corpo da solicitação, forneça o de um usuário , grupo ou `id` [directoryObject](../resources/directoryobject.md) a ser adicionado. [](../resources/user.md) [](../resources/group.md)
+No corpo da solicitação, forneça `id` o de um [usuário](../resources/user.md),  [grupo](../resources/group.md) ou [directoryObject](../resources/directoryobject.md) a ser adicionado.
 
 ## <a name="response"></a>Resposta
 
@@ -93,7 +93,7 @@ Content-type: application/json
 
 ---
 
-No corpo da solicitação, forneça o `id` objeto [do usuário](../resources/user.md) ou grupo que você deseja adicionar. [](../resources/group.md)
+No corpo da solicitação, forneça o `id` objeto [do usuário](../resources/user.md) [ou grupo](../resources/group.md) que você deseja adicionar.
 
 ### <a name="response"></a>Resposta
 Veja a seguir um exemplo da resposta.

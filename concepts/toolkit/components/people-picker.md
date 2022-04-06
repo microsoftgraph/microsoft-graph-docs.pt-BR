@@ -2,13 +2,13 @@
 title: People-Picker componente
 description: Você pode usar o componente web mgt-people-picker para pesquisar um número especificado de pessoas e renderizar a lista de resultados por meio do Microsoft Graph.
 ms.localizationpriority: medium
-author: elisenyang
-ms.openlocfilehash: 110a28d5c9309d95591e210441784a63208fa02f
-ms.sourcegitcommit: 77d2ab5018371f153d47cc1cd25f9dcbaca28a95
+author: sebastienlevert
+ms.openlocfilehash: c66f28ec02ea45f74f7590fb98f3cf17e5cbec0d
+ms.sourcegitcommit: cc9e5b3630cb84c48bbbb2d84a963b9562d1fb78
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63335364"
+ms.lasthandoff: 03/31/2022
+ms.locfileid: "64587417"
 ---
 # <a name="people-picker-component-in-the-microsoft-graph-toolkit"></a>People-Picker componente no microsoft Graph Toolkit
 
@@ -135,7 +135,7 @@ mgt-people-picker {
 | erro | null: sem dados | O modelo usado se a pesquisa do usuário não retornar usuários. |
 | no-data | null: sem dados | Um modelo alternativo usado se a pesquisa do usuário não retornar usuários. |
 | selected-person | pessoa: o objeto de detalhes da pessoa | O modelo para renderizar as pessoas selecionadas. |
-| pessoa | pessoa: o objeto de detalhes da pessoa | O modelo para renderizar pessoas no menu suspenso. |
+| person | pessoa: o objeto de detalhes da pessoa | O modelo para renderizar pessoas no menu suspenso. |
 
 Os exemplos a seguir mostram como usar o `error` modelo.
 

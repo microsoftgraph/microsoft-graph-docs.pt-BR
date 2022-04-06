@@ -5,12 +5,12 @@ author: jpettere
 ms.localizationpriority: medium
 ms.prod: users
 doc_type: apiPageType
-ms.openlocfilehash: 13b6c278e93685ffd0ac95af6f1588d33366db8b
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: 76aab90f6573c104cebd717c0619e85ff912c8e9
+ms.sourcegitcommit: 0e7927f34b7e55d323acbf281e11560cb40a89ed
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62126557"
+ms.lasthandoff: 03/20/2022
+ms.locfileid: "63671899"
 ---
 # <a name="create-user"></a>Criar usuário
 
@@ -31,7 +31,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegado (conta corporativa ou de estudante) | User.ReadWrite.All, Directory.ReadWrite.All, Directory.AccessAsUser.All    |
+|Delegado (conta corporativa ou de estudante) | User.ReadWrite.All, Directory.ReadWrite.All    |
 |Delegado (conta pessoal da Microsoft) | Sem suporte.    |
 |Aplicativo | User.ReadWrite.All, Directory.ReadWrite.All |
 
@@ -66,7 +66,7 @@ Como o recurso de **usuário** dá suporte a [extensões](/graph/extensibility-o
 Os usuários federados criados por meio dessa API serão forçados a entrar a cada 12 horas por padrão. Para obter informações sobre como alterar isso, consulte [Exceptions for token lifetimes](/azure/active-directory/develop/active-directory-configurable-token-lifetimes#exceptions).
 
 >[!NOTE]
->A adição de uma conta  [local B2C](../resources/objectidentity.md) a um objeto de usuário existente não é permitida, a menos que o objeto **de** usuário já contenha uma identidade de conta local.
+>A adição [de uma conta local B2C](../resources/objectidentity.md) a  um objeto de usuário existente não é permitida, a menos que o **objeto de usuário** já contenha uma identidade de conta local.
 
 ## <a name="response"></a>Resposta
 

@@ -1,16 +1,16 @@
 ---
 title: 'call: updateRecordingStatus'
 description: Atualize o status de gravação do aplicativo associado a uma chamada.
-author: ananmishr
+author: mkhribech
 ms.localizationpriority: medium
 ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: ef8ea1bf9b5e48bba453addfe3e778856ce4126c
-ms.sourcegitcommit: 25acfa7d0153336c9a35d30a1dd422aeadc1342c
+ms.openlocfilehash: 4b1757c3a4a3c28613ff8c45c4ced22beeb9e207
+ms.sourcegitcommit: 10719607271380ea56076ccff5a3b774d0005773
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/03/2022
-ms.locfileid: "62341169"
+ms.lasthandoff: 04/01/2022
+ms.locfileid: "64608006"
 ---
 # <a name="call-updaterecordingstatus"></a>call: updateRecordingStatus
 
@@ -22,7 +22,7 @@ Atualize o status de gravação do aplicativo associado a uma chamada. Isso requ
 
 > Restrição **adicional: você** não pode usar a API do Media Access para gravar ou persistir conteúdo de mídia de chamadas ou reuniões acessadas pelo aplicativo ou dados derivados desse conteúdo de mídia ("registro" ou "gravação"), sem chamar primeiro a API **updateRecordingStatus** para indicar que a gravação foi iniciada e receber uma resposta de sucesso dessa API. Se o aplicativo começar a gravar qualquer reunião, ele deverá encerrar a gravação antes de chamar a API **updateRecordingStatus** para indicar que a gravação terminou.
 
-## <a name="permissions"></a>Permissões
+## <a name="permissions"></a>Permissions
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 | Tipo de permissão                        | Permissões (da com menos para a com mais privilégios)      |
@@ -50,7 +50,7 @@ Forneça um objeto JSON com os seguintes parâmetros no corpo da solicitação.
 
 | Parâmetro       | Tipo    | Descrição                                                                           |
 |:----------------|:--------|:--------------------------------------------------------------------------------------|
-| clientContext   | String  | Cadeia de caracteres de contexto de cliente exclusiva. O limite máximo é 256 caracteres.                                 |
+| clientContext   | Cadeia de caracteres  | Cadeia de caracteres de contexto de cliente exclusiva. O limite máximo é 256 caracteres.                                 |
 | status          | Cadeia de caracteres  | O status da gravação. Os valores possíveis são: `notRecording`, `recording` ou `failed`.  |
 
 ## <a name="response"></a>Resposta

@@ -1,16 +1,16 @@
 ---
 title: Criar chamada
 description: Crie uma nova chamada.
-author: ananmishr
+author: mkhribech
 ms.localizationpriority: medium
 ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: 830a9c9bd41b885e6c2a3c19f5e0f4a981e1ff74
-ms.sourcegitcommit: 871db8b3f68489d24e2aeafe694725579ee44c47
+ms.openlocfilehash: b272eb839dd1bf2bb9384db9be58610bc5c7ce4e
+ms.sourcegitcommit: 10719607271380ea56076ccff5a3b774d0005773
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/26/2022
-ms.locfileid: "62225452"
+ms.lasthandoff: 04/01/2022
+ms.locfileid: "64607768"
 ---
 <!-- markdownlint-disable MD001 MD022 MD024 -->
 
@@ -22,7 +22,7 @@ Namespace: microsoft.graph
 
 Criar [chamada](../resources/call.md) permite que seu bot crie uma nova chamada ponto a ponto ou grupo de saída ou participe de uma reunião existente. Você precisará registrar [o bot de chamada](/microsoftteams/platform/concepts/calls-and-meetings/registering-calling-bot) e passar pela lista de permissões necessárias.
 
-## <a name="permissions"></a>Permissões
+## <a name="permissions"></a>Permissions
 
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/microsoftteams/platform/concepts/calls-and-meetings/registering-calling-bot#add-microsoft-graph-permissions).
 
@@ -34,7 +34,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 > **Observações:** Para uma chamada com mídia hospedada por aplicativo, você precisa da permissão Calls.AccessMedia.All ou calls.AccessMedia.Chat* além de uma das permissões listadas.
 >
-> Permissões marcadas com * use [o consentimento específico do recurso.]( https://aka.ms/teams-rsc)
+> Permissões marcadas com * usem [consentimento específico do recurso](/microsoftteams/platform/graph-api/rsc/resource-specific-consent).
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- { "blockType": "ignored" } -->
@@ -58,7 +58,7 @@ No corpo da solicitação, fornece uma representação JSON de um [objeto de](..
 
 ## <a name="response"></a>Resposta
 
-Se tiver êxito, este método retornará um código de resposta e um `201 Created` [objeto de](../resources/call.md) chamada no corpo da resposta.
+Se tiver êxito, este método retornará um `201 Created` código de resposta e um [objeto de](../resources/call.md) chamada no corpo da resposta.
 
 ## <a name="examples"></a>Exemplos
 
@@ -597,11 +597,11 @@ Content-Type: application/json
 ### <a name="example-5-join-scheduled-meeting-with-service-hosted-media"></a>Exemplo 5: Participar de reunião agendada com mídia hospedada pelo serviço
 
 Para participar da reunião agendada, precisamos obter a ID do thread, a ID da mensagem, a ID do organizador e a id do locatário na qual a reunião está agendada.
-Essas informações podem ser obtidas da [API Obter Reuniões Online.](../api/onlinemeeting-get.md)
+Essas informações podem ser obtidas da [API Obter Reuniões Online](../api/onlinemeeting-get.md).
 
 Os valores de token de autorização, url de retorno de chamada, id de aplicativo, nome do aplicativo, id de usuário, nome de usuário e id de locatário devem ser substituídos juntamente com os detalhes obtidos da  [API De](../api/onlinemeeting-get.md) Reuniões Get Online com valores reais para fazer o exemplo funcionar.
 
-> **Observação:** Este exemplo precisa da `Calls.JoinGroupCalls.All` permissão ou da permissão específica do `Calls.JoinGroupCalls.Chat` [recurso.](/microsoftteams/platform/graph-api/rsc/resource-specific-consent)
+> **Observação:** Este exemplo precisa da `Calls.JoinGroupCalls.All` permissão ou da `Calls.JoinGroupCalls.Chat` [permissão específica do recurso](/microsoftteams/platform/graph-api/rsc/resource-specific-consent).
 
 ##### <a name="request"></a>Solicitação
 
@@ -965,9 +965,9 @@ Content-Type: application/json
 >**Observação:** Para participar de cenários de reunião, além das notificações de estado de chamada, recebemos notificações de lista.
 
 ### <a name="example-6-join-scheduled-meeting-with-app-hosted-media"></a>Exemplo 6: Participar de uma reunião agendada com a mídia hospedada pelo aplicativo
-Para ingressar na reunião com a mídia hospedada pelo aplicativo, atualize a configuração de mídia com [o appHostedMediaConfig,](../resources/apphostedmediaconfig.md) conforme mostrado no exemplo a seguir.
+Para ingressar na reunião com a mídia hospedada pelo aplicativo, atualize a configuração de mídia com [o appHostedMediaConfig](../resources/apphostedmediaconfig.md) , conforme mostrado no exemplo a seguir.
 
->**Observação:** Este exemplo precisa da `Calls.AccessMedia.All` permissão ou da permissão específica do `Calls.AccessMedia.Chat` [recurso.](/microsoftteams/platform/graph-api/rsc/resource-specific-consent)
+>**Observação:** Este exemplo precisa da `Calls.AccessMedia.All` permissão ou da `Calls.AccessMedia.Chat` [permissão específica do recurso](/microsoftteams/platform/graph-api/rsc/resource-specific-consent).
 
 <!-- {
   "blockType": "example",
@@ -1013,7 +1013,7 @@ Content-Type: application/json
 ```
 
 ### <a name="example-7-join-channel-meeting-with-service-hosted-media"></a>Exemplo 7: Participar de reunião de canal com mídia hospedada pelo serviço
-A reunião dentro de um canal requer detalhes específicos, como id de thread, messageid e detalhes do organizador que podem ser obtidos usando a [API Obter Reuniões Online](../api/onlinemeeting-get.md).
+A reunião dentro de um canal requer detalhes específicos, como id de thread, messageid e detalhes do organizador que podem ser obtidos usando a [API de Reuniões Get Online](../api/onlinemeeting-get.md).
 
 Os valores de token de autorização, url de retorno de chamada, id de aplicativo, nome do aplicativo, id de usuário, nome de usuário e id de locatário devem ser substituídos juntamente com os detalhes obtidos da  [API De](../api/onlinemeeting-get.md) Reuniões Get Online com valores reais para fazer o exemplo funcionar.
 
@@ -1072,7 +1072,7 @@ Content-Type: application/json
 ```
 
 ### <a name="example-8-join-channel-meeting-as-a-guest-with-service-hosted-media"></a>Exemplo 8: participar da reunião do canal como convidado com mídia hospedada pelo serviço
-Para ingressar em uma reunião de canal como [](../resources/identityset.md) convidado, você precisará criar uma identidade de convidado e adicioná-la como fonte de chamada na solicitação de reunião de participação.
+Para ingressar em uma reunião de canal como convidado, você precisará criar uma identidade de [](../resources/identityset.md) convidado e adicioná-la como fonte de chamada na solicitação de reunião de participação.
 O nome para exibição é o nome que você deseja exibir na reunião para sua identidade de convidado. A id pode ser uma id exclusiva que identifica a identidade do convidado.
 
 > **Observação:** Este exemplo precisa da `Calls.JoinGroupCallsAsGuest.All` permissão.
@@ -1203,7 +1203,7 @@ Content-Type: application/json
 
 > **Observação:** Essa chamada requer a permissão Calls.Initiate.All.
 
-Essa chamada requer uma instância de aplicativo com um número PSTN atribuído. Para obter detalhes, [consulte Atribuir um número de telefone ao seu bot](/graph/cloud-communications-phone-number#assign-a-phone-number-to-your-bot).
+Essa chamada requer uma instância de aplicativo com um número PSTN atribuído. Para obter detalhes, [consulte Atribuir um número de telefone ao bot](/graph/cloud-communications-phone-number#assign-a-phone-number-to-your-bot).
 
 #### <a name="request"></a>Solicitação
 O exemplo a seguir mostra a solicitação para fazer uma chamada ponto a ponto entre o bot e um número PSTN. Neste exemplo, a mídia é hospedada pelo serviço. Os valores de token de autorização, URL de retorno de chamada, ID da instância do aplicativo, nome de exibição da instância do aplicativo, ID de telefone e ID de locatário devem ser substituídos por valores reais para fazer o exemplo funcionar.
@@ -1371,7 +1371,7 @@ Content-Type: application/json
 
 > **Observação**: este exemplo requer permissões Calls.Initiate.All e Calls.AccessMedia.All.
 
-Essa chamada requer uma instância de aplicativo com um número PSTN atribuído. Para obter detalhes, [consulte Atribuir um número de telefone ao seu bot](/graph/cloud-communications-phone-number#assign-a-phone-number-to-your-bot).
+Essa chamada requer uma instância de aplicativo com um número PSTN atribuído. Para obter detalhes, [consulte Atribuir um número de telefone ao bot](/graph/cloud-communications-phone-number#assign-a-phone-number-to-your-bot).
 
 #### <a name="request"></a>Solicitação
 O exemplo a seguir mostra uma solicitação para fazer uma chamada ponto a ponto entre o bot e um número PSTN. Neste exemplo, a mídia é hospedada localmente pelo aplicativo. Os valores de token de autorização, URL de retorno de chamada, ID da instância do aplicativo, nome de exibição da instância do aplicativo, ID de telefone e ID de locatário devem ser substituídos por valores reais para fazer o exemplo funcionar.

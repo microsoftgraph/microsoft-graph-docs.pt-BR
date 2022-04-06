@@ -1,16 +1,16 @@
 ---
 title: 'participante: muteAll'
 description: Ative o mudo para todos os participantes em uma chamada.
-author: ananmishr
+author: mkhribech
 ms.localizationpriority: medium
 ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: 4805c8aa107d2f056fad0b2c112caef58a629ddb
-ms.sourcegitcommit: 25acfa7d0153336c9a35d30a1dd422aeadc1342c
+ms.openlocfilehash: 35ed8ecc894235ff5b7af1b638e471cdbd37b072
+ms.sourcegitcommit: 10719607271380ea56076ccff5a3b774d0005773
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/03/2022
-ms.locfileid: "62341985"
+ms.lasthandoff: 04/01/2022
+ms.locfileid: "64608013"
 ---
 # <a name="participant-muteall"></a>participante: muteAll
 
@@ -23,14 +23,14 @@ Ative o mudo para todos os participantes em uma chamada.
 > **Observação:** Essa API foi preterida e será removida até 15 de março de 2020. Para silenciar um único participante, consulte [participante: mute](participant-mute.md).
 
 
-## <a name="permissions"></a>Permissões
+## <a name="permissions"></a>Permissions
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 | Tipo de permissão                        | Permissões (da com menos para a com mais privilégios) |
 |:---------------------------------------|:--------------------------------------------|
 | Delegado (conta corporativa ou de estudante)     | Não suportado                               |
 | Delegado (conta pessoal da Microsoft) | Não suportado                               |
-| Aplicativo                            | Nenhum                                        |
+| Aplicativo                            | Calls.JoinGroupCallsasGuest.All ou Calls.JoinGroupCalls.All |
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- { "blockType": "ignored" } -->
@@ -51,8 +51,8 @@ Forneça um objeto JSON com os seguintes parâmetros no corpo da solicitação.
 
 | Parâmetro      | Tipo    |Descrição|
 |:---------------|:--------|:----------|
-|participants|Conjunto de cadeias de caracteres|Os participantes a serem mudos.|
-|clientContext|String|O contexto do cliente.|
+|participants|Coleção String|Os participantes a serem mudos.|
+|clientContext|Cadeia de caracteres|O contexto do cliente.|
 
 ## <a name="response"></a>Resposta
 Se tiver êxito, este método retornará um `200 OK` código de resposta e um [objeto commsOperation](../resources/commsoperation.md) no corpo da resposta.

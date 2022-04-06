@@ -1,11 +1,11 @@
 ---
 ms.localizationpriority: medium
-ms.openlocfilehash: 91a5d7042cbb336be47fd11a0846980bb49a0a0a
-ms.sourcegitcommit: f65eee432cc903324b5f9b31710fdc6100590f36
+ms.openlocfilehash: 24543ebddf54800c7ca0d397712d88d37f91c795
+ms.sourcegitcommit: dab085b74666e190974a35e6a124d3ff1645fa25
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/07/2021
-ms.locfileid: "61323840"
+ms.lasthandoff: 04/05/2022
+ms.locfileid: "64646958"
 ---
 ### <a name="administrative-unit-properties"></a>Propriedades da unidade administrativa
 
@@ -76,7 +76,7 @@ ms.locfileid: "61323840"
 | onPremisesProvisioningErrors/any(o:o/category)             | ![Com suporte por Padrão][RDS]               |                                            |                                            |                                            | ![Não suportado][NS]                       |
 | onPremisesProvisioningErrors/any(o:o/propertyCausingError) | ![Com suporte por Padrão][RDS]               |                                            |                                            |                                            | ![Não suportado][NS]                       |
 | onPremisesSamAccountName                                   | ![Requer parâmetros de consulta avançados][AQP] | ![Requer parâmetros de consulta avançados][AQP] |                                            |                                            | ![Não suportado][NS]                       |
-| onPremisesSecurityIdentifier                               | ![Não suportado][NS]                       |                                            |                                            |                                            | ![Requer parâmetros de consulta avançados][AQP] |
+| onPremisesSecurityIdentifier                               | ![Com suporte por Padrão][RDS]               |                                            |                                            |                                            | ![Requer parâmetros de consulta avançados][AQP] |
 | onPremisesSyncEnabled                                      | ![Com suporte por Padrão][RDS]               |                                            |                                            |                                            | ![Requer parâmetros de consulta avançados][AQP] |
 | preferredLanguage                                          | ![Requer parâmetros de consulta avançados][AQP] | ![Requer parâmetros de consulta avançados][AQP] |                                            |                                            | ![Requer parâmetros de consulta avançados][AQP] |
 | proxyAddresses/any(p:p)                                    | ![Com suporte por Padrão][RDS]               | ![Com suporte por Padrão][RDS]               | ![Com suporte por Padrão][RDS]               | ![Com suporte por Padrão][RDS]               |                                            |
@@ -168,7 +168,7 @@ ms.locfileid: "61323840"
 | onPremisesProvisioningErrors/any(o:o/category)             | ![Com suporte por Padrão][RDS]               |                                            |                                            |                                            | ![Não suportado][NS]                       |
 | onPremisesProvisioningErrors/any(o:o/propertyCausingError) | ![Com suporte por Padrão][RDS]               |                                            |                                            |                                            | ![Não suportado][NS]                       |
 | onPremisesSamAccountName                                   | ![Requer parâmetros de consulta avançados][AQP] | ![Requer parâmetros de consulta avançados][AQP] |                                            |                                            | ![Não suportado][NS]                       |
-| onPremisesSecurityIdentifier                               | ![Não suportado][NS]                       |                                            |                                            |                                            | ![Requer parâmetros de consulta avançados][AQP] |
+| onPremisesSecurityIdentifier                               | ![Com suporte por Padrão][RDS]               |                                            |                                            |                                            | ![Requer parâmetros de consulta avançados][AQP] |
 | onPremisesSyncEnabled                                      | ![Com suporte por Padrão][RDS]               |                                            |                                            |                                            | ![Requer parâmetros de consulta avançados][AQP] |
 | otherMails/any(p:p)                                        | ![Com suporte por Padrão][RDS]               | ![Com suporte por Padrão][RDS]               | ![Com suporte por Padrão][RDS]               | ![Com suporte por Padrão][RDS]               |                                            |
 | passwordPolicies                                           | ![Não Suportado][NS]                       | ![Não Suportado][NS]                       |                                            |                                            | ![Requer parâmetros de consulta avançados][AQP] |

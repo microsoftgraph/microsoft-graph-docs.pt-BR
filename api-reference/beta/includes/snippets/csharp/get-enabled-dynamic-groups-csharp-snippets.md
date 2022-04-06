@@ -1,11 +1,11 @@
 ---
 description: Arquivo gerado automaticamente. NÃO MODIFICAR
-ms.openlocfilehash: 8fea0c86cc535959e0708f54c38e9764342075f8
-ms.sourcegitcommit: 77d2ab5018371f153d47cc1cd25f9dcbaca28a95
+ms.openlocfilehash: 27e38522c9036ebd5636a354e5edf79099e72d2c
+ms.sourcegitcommit: 0bcc0a93f37db6013be40dc8d36717aeeeef7fb6
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63334846"
+ms.lasthandoff: 03/16/2022
+ms.locfileid: "63528044"
 ---
 ```csharp
 
@@ -17,7 +17,7 @@ var queryOptions = new List<QueryOption>()
 };
 
 var groups = await graphClient.Groups
-    .Request()
+    .Request( queryOptions )
     .Filter("mailEnabled eq false and securityEnabled eq true and NOT(groupTypes/any(s:s eq 'Unified')) and membershipRuleProcessingState eq 'On'")
     .Select("id,membershipRule,membershipRuleProcessingState")
     .GetAsync();

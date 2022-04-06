@@ -5,12 +5,12 @@ author: jpettere
 ms.localizationpriority: high
 ms.prod: users
 doc_type: apiPageType
-ms.openlocfilehash: b37494d1c57d6a202d109c8d8c9c701a4622da5f
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: bff60a30b7bb22995eb2df470672b56081155311
+ms.sourcegitcommit: 0e7927f34b7e55d323acbf281e11560cb40a89ed
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62114650"
+ms.lasthandoff: 03/20/2022
+ms.locfileid: "63672137"
 ---
 # <a name="create-user"></a>Criar Usuário
 
@@ -27,7 +27,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegado (conta corporativa ou de estudante) | User.ReadWrite.All, Directory.ReadWrite.All, Directory.AccessAsUser.All    |
+|Delegado (conta corporativa ou de estudante) | User.ReadWrite.All, Directory.ReadWrite.All    |
 |Delegado (conta pessoal da Microsoft) | Sem suporte.    |
 |Aplicativo | User.ReadWrite.All, Directory.ReadWrite.All |
 
@@ -56,8 +56,8 @@ A tabela a seguir lista as propriedades que são necessárias ao criar um usuár
 |displayName |string |Nome de exibição no catálogo de endereços do usuário.|
 |onPremisesImmutableId |string |Só precisa ser especificado ao criar uma nova conta de usuário se você está usando um domínio federado para propriedade userPrincipalName (UPN) do usuário.|
 |mailNickname |string |O alias de email do usuário.|
-|passwordProfile|[PasswordProfile](../resources/passwordprofile.md) |O perfil de senha do usuário. Para locatários do Azure B2C, a propriedade **forceChangePasswordNextSignIn** deve ser definida como `false` e, em vez disso, use políticas personalizadas para forçar a redefinição de senha no primeiro logon.|
-|userPrincipalName |string |Nome UPN (usuario@contoso.com). É um nome de logon no estilo da Internet para o usuário com base no padrão da Internet RFC 822. Por convenção, ele deve ser mapeado para o nome de email do usuário. O formato geral é alias@domain, onde o domínio deve estar presente na coleta de domínios verificados pelo locatário. Os domínios verificados para o locatário podem ser acessados pela propriedade **verifiedDomains** de [organization](../resources/organization.md). <br>OBSERVAÇÃO: esta propriedade não pode conter caracteres de ênfase. Somente os seguintes caracteres são permitidos `A - Z`, `a - z`, `0 - 9`, ` ' . - _ ! # ^ ~`. Para obter a lista completa de caracteres permitidos, consulte as [políticas de nome de usuário](/azure/active-directory/authentication/concept-sspr-policy#userprincipalname-policies-that-apply-to-all-user-accounts).|
+|passwordProfile|[PasswordProfile](../resources/passwordprofile.md) |O perfil de senha do usuário. Para locatários do Azure B2C, a propriedade **forceChangePasswordNextSignIn** deve ser definida como `false` e, em vez disso, usar políticas personalizadas para forçar a redefinição de senha na primeira entrada.|
+|userPrincipalName |string |O UPN (someuser@contoso.com). É um nome de logon no estilo da Internet para o usuário baseado no padrão RFC 822 da Internet. Por convenção, isso deve ser mapeado para o nome de email do usuário. O formato geral é alias@domínio, onde domínio deve estar presente na coleção de domínios verificados do locatário. Os domínios verificados para o locatário podem ser acessados da propriedade **verifiedDomains** da [organização](../resources/organization.md).<br>OBSERVAÇÃO: esta propriedade não pode conter caracteres de ênfase. Somente os seguintes caracteres são permitidos `A - Z`, `a - z`, `0 - 9`, ` ' . - _ ! # ^ ~`. Para obter a lista completa de caracteres permitidos, consulte as [políticas de nome de usuário](/azure/active-directory/authentication/concept-sspr-policy#userprincipalname-policies-that-apply-to-all-user-accounts).|
 
 Como o recurso de **usuário** dá suporte a [extensões](/graph/extensibility-overview), você pode usar a `POST` operação e adicionar propriedades personalizadas com seus próprios dados à instância do usuário ao criá-la.
 

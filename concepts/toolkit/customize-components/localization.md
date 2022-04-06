@@ -2,13 +2,13 @@
 title: Localizando os componentes Graph Toolkit Microsoft
 description: Use LocalizationHelper para localização dos componentes Graph Toolkit Microsoft.
 ms.localizationpriority: medium
-author: vogtn
-ms.openlocfilehash: f3cba31d7b02370d30e1caa128a671534f9e4cae
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+author: sebastienlevert
+ms.openlocfilehash: 934873a6695ce2e858173e0a8f965a7762805c76
+ms.sourcegitcommit: cc9e5b3630cb84c48bbbb2d84a963b9562d1fb78
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59129576"
+ms.lasthandoff: 03/31/2022
+ms.locfileid: "64589230"
 ---
 # <a name="localizing-the-microsoft-graph-toolkit-components"></a>Localizando os componentes Graph Toolkit Microsoft
 
@@ -18,7 +18,7 @@ Você pode localizar os componentes Graph Toolkit microsoft para garantir que a 
 
 ## <a name="use-localizationhelper-to-add-localized-strings"></a>Use LocalizationHelper para adicionar cadeias de caracteres localizadas
 
-Nenhuma das cadeias de caracteres no kit de ferramentas está localizada, mas você pode fornecer suas próprias cadeias de caracteres localizadas e gerenciar idiomas diferentes por meio do mesmo processo usado para a localização do aplicativo. Para facilitar a localização, o kit de ferramentas expõe a `LocalizationHelper` classe estática.
+Nenhuma das cadeias de caracteres no kit de ferramentas está localizada, mas você pode fornecer suas próprias cadeias de caracteres localizadas e gerenciar idiomas diferentes por meio do mesmo processo usado para a localização do aplicativo. Para facilitar a localização, o kit de ferramentas expõe a classe `LocalizationHelper` estática.
 
 O exemplo a seguir mostra como localizar vários componentes.
 
@@ -68,7 +68,7 @@ LocalizationHelper.strings = {
 };
 ```
 
-Quando a propriedade de é atribuída, todos os componentes automaticamente pegarão as novas cadeias de caracteres e renderizarão, permitindo que você `strings` `LocalizationHelper` altere cadeias de caracteres dinamicamente. 
+Quando a `strings` propriedade de `LocalizationHelper` é atribuída, todos os componentes automaticamente pegarão as novas cadeias de caracteres e renderizarão, permitindo que você altere cadeias de caracteres dinamicamente. 
 
 As cadeias de caracteres podem ser definidas em nível global ou por componente (com a `_components:` propriedade).
 
@@ -103,7 +103,7 @@ As cadeias de caracteres podem ser definidas em nível global ou por componente 
 }
 ```
 
-### <a name="tasks"></a>Tasks
+### <a name="tasks"></a>Tarefas
 
 ```ts
 "tasks": {

@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: jpettere
 ms.prod: users
 doc_type: apiPageType
-ms.openlocfilehash: 4fa2449aa4dcf879cd0bcc96ee21f5ef6e21da30
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: 2e48767a89ddf52069962811b123f4a63ab16d77
+ms.sourcegitcommit: 0e7927f34b7e55d323acbf281e11560cb40a89ed
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62122685"
+ms.lasthandoff: 03/20/2022
+ms.locfileid: "63669939"
 ---
 # <a name="assign-a-manager"></a>Atribuir um gerente
 
@@ -26,7 +26,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegado (conta corporativa ou de estudante) | User.ReadWrite.All, Directory.ReadWrite.All, Directory.AccessAsUser.All    |
+|Delegado (conta corporativa ou de estudante) | User.ReadWrite.All, Directory.ReadWrite.All    |
 |Delegado (conta pessoal da Microsoft) | Sem suporte.    |
 |Aplicativo | User.ReadWrite.All, Directory.ReadWrite.All |
 
@@ -41,15 +41,15 @@ PUT /users/{id}/manager/$ref
 | Autorização  | {token} de portador. Obrigatório. |
 
 ## <a name="request-body"></a>Corpo da solicitação
-No corpo da solicitação, forneça uma representação JSON de um objeto [directoryObject](../resources/directoryobject.md) ou [user](../resources/user.md) a ser adicionado.
+No corpo da solicitação, fornece um objeto JSON e passa um parâmetro com a `@odata.id` URL de leitura do [objeto directoryObject](../resources/directoryobject.md) ou [do](../resources/user.md) usuário a ser adicionado.
 
 ## <a name="response"></a>Resposta
 
 Se bem-sucedido, este método retorna um código de resposta `204 No Content`. Não retorna nada no corpo da resposta.
 
 ## <a name="example"></a>Exemplo
-##### <a name="request"></a>Solicitação
-Este é um exemplo da solicitação.
+### <a name="request"></a>Solicitação
+Este é um exemplo da solicitação. O corpo da solicitação é um objeto JSON `@odata.id` com um parâmetro e a URL de leitura para o objeto [do](../resources/user.md) usuário a ser atribuído como gerente.
 
 # <a name="http"></a>[HTTP](#tab/http)
 <!-- {
@@ -57,11 +57,11 @@ Este é um exemplo da solicitação.
   "name": "create_manager_for_user"
 }-->
 ```http
-PUT https://graph.microsoft.com/v1.0/users/{id}/manager/$ref
+PUT https://graph.microsoft.com/beta/users/10f17b99-784c-4526-8747-aec8a3159d6a/manager/$ref
 Content-type: application/json
 
 {
-  "@odata.id": "https://graph.microsoft.com/v1.0/users/{id}"
+    "@odata.id": "https://graph.microsoft.com/beta/users/6ea91a8d-e32e-41a1-b7bd-d2d185eed0e0"
 }
 ```
 # <a name="c"></a>[C#](#tab/csharp)
@@ -90,9 +90,8 @@ Content-type: application/json
 
 ---
 
-No corpo da solicitação, forneça uma representação JSON de um objeto [user](../resources/user.md) a ser adicionado.
-##### <a name="response"></a>Resposta
-Aqui está um exemplo da resposta. Observação: o objeto de resposta mostrado aqui pode ser reduzido para facilitar a leitura.
+### <a name="response"></a>Resposta
+
 <!-- {
   "blockType": "response"
 } -->

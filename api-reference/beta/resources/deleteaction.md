@@ -3,15 +3,15 @@ author: daspek
 description: A presença do recurso DeleteAction em uma itemActivity indica que a atividade excluiu um item.
 ms.date: 09/14/2017
 title: DeleteAction
-localization_priority: Normal
+ms.localizationpriority: medium
 doc_type: resourcePageType
 ms.prod: ''
-ms.openlocfilehash: b8f00827a37ba9c010acd1b52e751bd55638afb3
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: f5e47f178da27708422e14897a1dd8b19ff328b9
+ms.sourcegitcommit: e5d5095e26dca6f434354a0970e789e94ee6afb0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48049881"
+ms.lasthandoff: 03/22/2022
+ms.locfileid: "63723497"
 ---
 # <a name="deleteaction-resource-type"></a>Tipo de recurso DeleteAction
 
@@ -28,22 +28,22 @@ A presença do recurso **DeleteAction** em uma [**itemActivity**][activity] indi
 <!-- {
   "blockType": "resource",
   "optionalProperties": [ ],
-  "@type": "microsoft.graph.deleteAction"
+  "@type&quot;: &quot;microsoft.graph.deleteAction"
 }-->
 
 ```json
 {
   "name": "string",
-  "objectType": "File | Folder"
+  "objectType&quot;: &quot;File | Folder"
 }
 ```
 
 ## <a name="properties"></a>Propriedades
 
-| Nome da propriedade | Tipo   | Descrição
-|:--------------|:-------|:----------------------------------------------------
-| nome          | string | O nome do item que foi excluído.
-| objectType    | cadeia de caracteres | `File` ou `Folder` , dependendo do tipo do item excluído.
+| Propriedade   | Tipo   | Descrição                                                    |
+| :--------- | :----- | :------------------------------------------------------------- |
+| nome       | string | O nome do item que foi excluído.                         |
+| objectType | string | `File` ou `Folder`, dependendo do tipo do item excluído. |
 
 ## <a name="remarks"></a>Comentários
 
@@ -59,5 +59,3 @@ Registros de atividade de item atualmente só estão disponíveis no SharePoint 
   "suppressions": []
 }
 -->
-
-

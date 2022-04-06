@@ -5,12 +5,12 @@ author: nkramer
 ms.localizationpriority: high
 ms.prod: microsoft-teams
 ms.custom: scenarios:getting-started
-ms.openlocfilehash: 64a314223a333b5ba945ed10426a5ea4bce83283
-ms.sourcegitcommit: 0249c86925c9b4797908394c952073b5d9137911
+ms.openlocfilehash: f0bed81ec3857dcb2ef7678b4ff1b1644e0eaae2
+ms.sourcegitcommit: 43a7c971a97ce1e4c55cbae089820bfce7dfe42b
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/25/2022
-ms.locfileid: "64477948"
+ms.lasthandoff: 03/29/2022
+ms.locfileid: "64510501"
 ---
 # <a name="microsoft-teams-api-overview"></a>Visão geral da API do Microsoft Teams
 
@@ -24,7 +24,7 @@ O [Microsoft Teams](https://products.office.com/microsoft-teams) é o hub defini
 
 ### <a name="automate-team-lifecycles"></a>Automatizar o ciclo de vida da equipe
 
-Use o Microsoft Graph para [criar uma nova equipe virtual](/graph/api/team-put-teams) quando surgir um novo problema de negócios, [preencher a equipe](/graph/api/group-post-members) com as pessoas certas e configurar a equipe com [canais](/graph/api/channel-post), [guias](/graph/teams-configuring-builtin-tabs) e [aplicativos](/graph/api/teamsappinstallation-add).
+Use o Microsoft Graph para [criar uma nova equipe virtual](/graph/api/team-put-teams) quando surgir um novo problema de negócios, [preencher a equipe](/graph/api/group-post-members) com as pessoas certas e configurar a equipe com [canais](/graph/api/channel-post), [guias](/graph/teams-configuring-builtin-tabs) e [aplicativos](/graph/api/team-post-installedapps).
 Se quiser reunir a nova equipe para discutir o problema de negócios, [adicione um novo evento](/graph/api/group-post-events) à agenda da equipe.
 
 ![Automatize os ciclos de vida da equipe criando uma equipe, adicionando membros e proprietários, definindo configurações de equipe, adicionando canais, instalando aplicativos, adicionando guias e arquivando ou excluindo a equipe quanto o momento chegar.](images/teams-lifecycle.png)

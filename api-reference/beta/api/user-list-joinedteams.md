@@ -5,12 +5,12 @@ author: nkramer
 ms.localizationpriority: high
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 7d49f0d971b00d21abbbaffc6989f297ce18ab09
-ms.sourcegitcommit: dbacb04ae7138ac3b109683e63a6ff27c166f421
-ms.translationtype: HT
+ms.openlocfilehash: b7770b939a7c125657c3ea751c515f108598127d
+ms.sourcegitcommit: c21fefa5c3c62df14147e7918cb43327f7d72e69
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/14/2022
-ms.locfileid: "62804665"
+ms.lasthandoff: 04/06/2022
+ms.locfileid: "64684925"
 ---
 # <a name="list-joinedteams"></a>Listar joinedTeams
 
@@ -19,6 +19,7 @@ Namespace: microsoft.graph
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Obtenha as [equipes](../resources/team.md) do Microsoft Teams das quais o usuário é um membro direto.
+> **Observação**: essa API não retorna a equipe de host do canal compartilhado do qual o usuário é membro direto.
 
 ## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
@@ -58,6 +59,7 @@ Se for bem-sucedido, este método retorna um `200 OK` código de resposta e uma 
 
 > [!Note]
 > Atualmente, essa chamada à API retorna apenas as propriedades **ID**, **displayName** e **description** de uma [equipe](../resources/team.md). Para obter todas as propriedades, use a operação[Obter equipe](../api/team-get.md). Para saber mais, confira [problemas conhecidos](/graph/known-issues#unable-to-return-all-values-for-properties-for-a-user-joined-teams).
+
 
 ## <a name="example"></a>Exemplo
 ### <a name="request"></a>Solicitação
@@ -124,7 +126,10 @@ Content-type: application/json
 
 ## <a name="see-also"></a>Confira também
 - [Listar todas as equipes](/graph/teams-list-all-teams)
+- [Listar equipes associadas](../api/associatedteaminfo-list.md)
+- [Listar todas as equipes em uma organização](../api/teams-list.md)
 - [Obter equipe](../api/team-get.md)
+
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->

@@ -1,33 +1,32 @@
 ---
 title: tipo de recurso relatedContact
-description: Registro de contato relacionado a um educationUser que fornece informações para tutores, auxiliares, médicos e assim por diante.
-author: mmast-msft
+description: Representa um registro de contato relacionado a um educationUser que fornece informações para tutores, auxiliares, médicos e assim por diante.
+author: marcla
 ms.localizationpriority: medium
 ms.prod: education
 doc_type: resourcePageType
-ms.openlocfilehash: 528244c6cc84ab26c21ec1ea5c15c7bc8e68c082
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: b5d833afe05480a1ae4e490220ad16755f268c7a
+ms.sourcegitcommit: cc9e5b3630cb84c48bbbb2d84a963b9562d1fb78
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59035994"
+ms.lasthandoff: 03/31/2022
+ms.locfileid: "64589433"
 ---
 # <a name="relatedcontact-resource-type"></a>tipo de recurso relatedContact
 
 Namespace: microsoft.graph
 
-Registro de contato relacionado a [um educationUser](../resources/educationuser.md) que fornece informações para tutores, auxiliares, médicos e assim por diante.
+Representa um registro de contato relacionado a [um educationUser](../resources/educationuser.md) que fornece informações para tutores, auxiliares, médicos e assim por diante.
 
 ## <a name="properties"></a>Propriedades
 
 | Propriedade      | Tipo                  | Descrição                                                                                                                               |
 | :------------ | :-------------------- | :---------------------------------------------------------------------------------------------------------------------------------------- |
-| id            | Cadeia de caracteres                | Identidade do contato dentro Azure Active Directory.                                                                                    |
-| displayName   | Cadeia de caracteres                | Nome do contato. Obrigatório.                                                                                                            |
-| emailAddress  | String                | Endereço de email principal do contato.                                                                                                     |
-| mobilePhone   | String                | Número de telefone celular do contato.                                                                                                       |
-| relação  | `contactRelationship` | Relação com o usuário. Os valores possíveis `parent` são , , , , , , , `relative` `aide` `doctor` `guardian` `child` `other` `unknownFutureValue` . |
 | accessConsent | Booliano               | Indica se o usuário foi consentido para acessar dados de alunos.                                                                     |
+| displayName   | Cadeia de caracteres                | Nome do contato. Obrigatório.                                                                                                            |
+| emailAddress  | String                | Endereço de email principal do contato. Obrigatório.                                                                                           |
+| mobilePhone   | String                | Número de telefone celular do contato.                                                                                                       |
+| relação  | contactRelationship | Relação com o usuário. Os valores possíveis são: `parent`, `relative`, `aide`, `doctor`, `guardian`, `child`, `other`, `unknownFutureValue`.|
 
 ## <a name="json-representation"></a>Representação JSON
 
@@ -43,12 +42,11 @@ Veja a seguir uma representação JSON do recurso.
 
 ```json
 {
-  "id": "String",
+  "accessConsent": true,
   "displayName": "String",
   "emailAddress": "String",
   "mobilePhone": "String",
-  "relationship": "contactRelationship",
-  "accessConsent": true
+  "relationship": "String"
 }
 ```
 
@@ -65,4 +63,3 @@ Veja a seguir uma representação JSON do recurso.
   ]
 }
 -->
-

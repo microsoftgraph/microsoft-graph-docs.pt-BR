@@ -1,32 +1,37 @@
 ---
-title: tipo de recurso educationExcelResource
-description: 'Uma subclasse de educationResource. Esse tipo de recurso representa um documento do Excel.  '
+title: Tipo de recurso educationExcelResource
+description: 'Uma subclasse de educationResource. Esse tipo de recurso representa um Excel documento.  '
 author: mmast-msft
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: education
 doc_type: resourcePageType
-ms.openlocfilehash: 96fc84227bc7c8e5140ef06ce62ea2d485badab7
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 29c892c8f1c4f4d961db654e008eed315407081b
+ms.sourcegitcommit: c21fefa5c3c62df14147e7918cb43327f7d72e69
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48095515"
+ms.lasthandoff: 04/06/2022
+ms.locfileid: "64685051"
 ---
-# <a name="educationexcelresource-resource-type"></a>tipo de recurso educationExcelResource
+# <a name="educationexcelresource-resource-type"></a>Tipo de recurso educationExcelResource
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Uma subclasse de [educationResource](educationresource.md). Esse tipo de recurso representa um documento do Excel.  
+Uma subclasse [de educationResource](educationresource.md). Esse tipo de recurso representa um Excel documento.  
  
->**Observação:** O arquivo do Excel deve estar na pasta de recursos associada à atribuição ou ao objeto de envio ao qual este recurso pertence.
+>**Nota:** O Excel deve estar na pasta de recursos associada ao objeto de atribuição ou envio ao qual esse recurso pertence.
 
 
 ## <a name="properties"></a>Propriedades
 | Propriedade     | Tipo   |Descrição|
 |:---------------|:--------|:----------|
-|fileUrl|Cadeia de caracteres|Ponteiro para o objeto de arquivo do Excel.|
+|fileUrl|String|Ponteiro para o objeto Excel arquivo.|
+|createdBy|Cadeia de caracteres|O nome de exibição do usuário que criou esse objeto.|
+|createdDateTime|DateTimeOffset|Data em que a reordenação foi adicionada.|
+|displayName|string|O nome de exibição do recurso.|
+|lastModifiedBy|[identitySet](identityset.md)|O último usuário a modificar o recurso.|
+|lastModifiedDateTime|DateTimeOffset|A data e a hora em que o recurso foi modificado pela última vez. O tipo Timestamp representa informações de data e hora usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite UTC em 1 de janeiro de 2014 é `2014-01-01T00:00:00Z`.|
 
 ## <a name="json-representation"></a>Representação JSON
 
@@ -42,7 +47,12 @@ Veja a seguir uma representação JSON do recurso.
 
 ```json
 {
-  "fileUrl": "String"
+  "fileUrl": "String",
+  "createdBy": "String (User)",
+  "createdDateTime": "String (timestamp)",
+  "displayName": "String",
+  "lastModifiedBy": "String (User)",
+  "lastModifiedDateTime": "String (timestamp)"
 }
 
 ```

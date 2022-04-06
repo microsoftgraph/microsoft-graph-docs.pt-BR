@@ -5,12 +5,12 @@ author: sureshja
 ms.localizationpriority: high
 ms.prod: applications
 doc_type: apiPageType
-ms.openlocfilehash: 933a7cd6f4cee0fdb0abdc78296eaac949824948
-ms.sourcegitcommit: 7deb4fad6acc69fd6bc02cd4e2f6774de5784c97
+ms.openlocfilehash: 108337592abcee2411c3f17327fbac36afdf648d
+ms.sourcegitcommit: 0e7927f34b7e55d323acbf281e11560cb40a89ed
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/18/2022
-ms.locfileid: "62894695"
+ms.lasthandoff: 03/20/2022
+ms.locfileid: "63669729"
 ---
 # <a name="get-serviceprincipal"></a>Obter um servicePrincipal
 
@@ -26,7 +26,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegado (conta corporativa ou de estudante) | Application.Read.All, Directory.Read.All, Application.ReadWrite.All, Directory.ReadWrite.All, Directory.AccessAsUser.All    |
+|Delegado (conta corporativa ou de estudante) | Application.Read.All, Directory.Read.All, Application.ReadWrite.All, Directory.ReadWrite.All    |
 |Delegado (conta pessoal da Microsoft) | Sem suporte.    |
 |Aplicativo | Application.Read.All, Directory.Read.All, Application.ReadWrite.OwnedBy, Application.ReadWrite.All, Directory.ReadWrite.All |
 
@@ -44,8 +44,7 @@ Este método dá suporte a [Parâmetros de consulta OData](/graph/query-paramete
 
 Este método suporta aos parâmetros de consulta `$count`, `$expand`, `$filter`, `$orderBy`, `$search`, `$select`, e `$top` [OData](/graph/query-parameters) para ajudar a personalizar a resposta. Algumas consultas são suportadas somente quando se usa o cabeçalho **ConsistencyLevel** definido como `eventual` e `$count`. Para obter mais informações, consulte [Funcionalidades avançadas de consulta nos objetos de diretório do Microsoft Azure AD](/graph/aad-advanced-queries).
 
-Por padrão, esta API não retorna o valor da chave pública da **chave** na propriedade **keyCredentials** a menos que **keyCredentials** seja especificado em uma `$select`consulta.
-Por exemplo, `$select=id,appId,keyCredentials`.
+Por padrão, esta API não retorna o valor da chave pública da **chave** na propriedade **keyCredentials**, a menos que **keyCredentials** seja especificado em uma `$select`consulta. por exemplo: `$select=id,appId,keyCredentials`.
 
 O uso de `$select` para obter **keyCredentials** para diretores de serviços tem um limite de 150 pedidos por minuto para cada locatário.
 
@@ -53,6 +52,9 @@ O uso de `$select` para obter **keyCredentials** para diretores de serviços tem
 | Nome           | Descrição                |
 |:---------------|:---------------------------|
 | Autorização  | {token} de portador. Obrigatório.  |
+| Accept-Language| Código de idioma. Opcional.   |
+
+Fornecer o cabeçalho **Accept-Language** com um código de idioma compatível, como `es-ES` ou `de-DE`, retornará valores localizados quando disponíveis. Observe que o cabeçalho não é compatível com [operações de lista](serviceprincipal-list.md).
 
 ## <a name="request-body"></a>Corpo da solicitação
 Não forneça um corpo de solicitação para esse método.

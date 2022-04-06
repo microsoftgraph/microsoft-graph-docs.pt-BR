@@ -3,15 +3,15 @@ author: daspek
 description: Um columnLink em um contentType anexa um columnDefinition de site para esse tipo de conteúdo.
 ms.date: 09/12/2017
 title: ColumnLink
-localization_priority: Normal
+ms.localizationpriority: medium
 doc_type: resourcePageType
 ms.prod: ''
-ms.openlocfilehash: f60392954cb1a214327edd4ffcc65449c6d976f0
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: ae75a605f8476b9ec25d5aab5cf50f1bf9508c95
+ms.sourcegitcommit: e5d5095e26dca6f434354a0970e789e94ee6afb0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48034060"
+ms.lasthandoff: 03/22/2022
+ms.locfileid: "63723525"
 ---
 # <a name="columnlink-resource-type"></a>Tipo de recurso ColumnLink
 
@@ -26,21 +26,22 @@ Um **columnLink** em um [contentType][] anexa um **columnDefinition** de site pa
 ## <a name="json-representation"></a>Representação JSON
 
 Aqui está uma representação JSON de um recurso **columnLink**.
+
 <!-- { "blockType": "resource", "@odata.type": "microsoft.graph.columnLink" } -->
 
 ```json
 {
   "id": "string",
-  "name": "string"
+  "name&quot;: &quot;string"
 }
 ```
 
 ## <a name="properties"></a>Propriedades
 
-| Nome da propriedade | Tipo   | Descrição
-|:--------------|:-------|:----------------------------------------------------
-| **id**        | string | O identificador exclusivo da coluna.
-| **name**      | string | O nome da coluna desse tipo de conteúdo.
+| Propriedade | Tipo   | Descrição                                   |
+| :------- | :----- | :-------------------------------------------- |
+| **id**   | string | O identificador exclusivo da coluna.         |
+| **name** | string | O nome da coluna desse tipo de conteúdo. |
 
 <!--
 {
@@ -52,5 +53,3 @@ Aqui está uma representação JSON de um recurso **columnLink**.
   "suppressions": []
 }
 -->
-
-

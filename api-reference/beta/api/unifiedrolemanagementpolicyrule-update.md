@@ -1,23 +1,23 @@
 ---
 title: Atualizar unifiedRoleManagementPolicyRule
 description: Atualize as propriedades de um objeto unifiedRoleManagementPolicyRule.
-author: carolinetempleton
+author: japere
 ms.localizationpriority: medium
 ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: afdaee102ddda3a5995d32b0d7dff0dfab26e748
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: 9450c28fba13722d6d30dde62f9d102ff9b32981
+ms.sourcegitcommit: 43a7c971a97ce1e4c55cbae089820bfce7dfe42b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62136818"
+ms.lasthandoff: 03/29/2022
+ms.locfileid: "64508542"
 ---
 # <a name="update-unifiedrolemanagementpolicyrule"></a>Atualizar unifiedRoleManagementPolicyRule
 Namespace: microsoft.graph
 
-Atualize as propriedades de [um objeto unifiedRoleManagementPolicyRule.](../resources/unifiedrolemanagementpolicyrule.md)
+Atualize as propriedades de [um objeto unifiedRoleManagementPolicyRule](../resources/unifiedrolemanagementpolicyrule.md) .
 
-## <a name="permissions"></a>Permissões
+## <a name="permissions"></a>Permissions
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão|Permissões (da com menos para a com mais privilégios)|
@@ -44,9 +44,9 @@ PATCH /policies/roleManagementPolicies/{unifiedRoleManagementPolicyId}/effective
 |Content-Type|application/json. Obrigatório.|
 
 ## <a name="request-body"></a>Corpo da solicitação
-No corpo da solicitação, fornece uma representação JSON do [objeto unifiedRoleManagementPolicyRule.](../resources/unifiedrolemanagementpolicyrule.md)
+No corpo da solicitação, fornece uma representação JSON do [objeto unifiedRoleManagementPolicyRule](../resources/unifiedrolemanagementpolicyrule.md) .
 
-A tabela a seguir mostra as propriedades que são necessárias ao atualizar [unifiedRoleManagementPolicyRule](../resources/unifiedrolemanagementpolicyrule.md).
+A tabela a seguir mostra as propriedades necessárias ao atualizar [unifiedRoleManagementPolicyRule](../resources/unifiedrolemanagementpolicyrule.md).
 
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
@@ -57,7 +57,7 @@ A tabela a seguir mostra as propriedades que são necessárias ao atualizar [uni
 
 ## <a name="response"></a>Resposta
 
-Se tiver êxito, este método retornará um código de resposta e um objeto `200 OK` [unifiedRoleManagementPolicyRule](../resources/unifiedrolemanagementpolicyrule.md) atualizado no corpo da resposta.
+Se tiver êxito, este método retornará um `200 OK` código de resposta e um objeto [unifiedRoleManagementPolicyRule](../resources/unifiedrolemanagementpolicyrule.md) atualizado no corpo da resposta.
 
 ## <a name="examples"></a>Exemplos
 

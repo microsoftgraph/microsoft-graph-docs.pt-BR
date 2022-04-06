@@ -5,12 +5,12 @@ author: braedenp-msft
 ms.localizationpriority: high
 ms.prod: cloud-printing
 ms.custom: scenarios:getting-started
-ms.openlocfilehash: 0fab7fd9b7bc1902b2a643d8cb825301c846a8ff
-ms.sourcegitcommit: 0076eb6abb89be3dca3575631924a74a5202be30
+ms.openlocfilehash: c66e967a4844226af29fecbcb1d6a9be2f47a2be
+ms.sourcegitcommit: 43a7c971a97ce1e4c55cbae089820bfce7dfe42b
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/03/2022
-ms.locfileid: "64629713"
+ms.lasthandoff: 03/29/2022
+ms.locfileid: "64510243"
 ---
 # <a name="universal-print-cloud-printing-api-overview"></a>Visão geral da API de impressão em nuvem da Impressão Universal
 
@@ -79,7 +79,7 @@ Siga estes passos para habilitar a impressão segura:
 
 3. [Atualize os atributos de sua impressora virtual](/graph/api/printer-update) usando as permissões do aplicativo e um `application/ipp` tipo de mídia (veja exemplos).
 
-4. [Crie um acionador de tarefas para sua impressora virtual](/graph/api/printer-post-tasktriggers) usando um token de autenticação de administrador que irá associar a definição da sua tarefa com a impressora virtual. O appId usado para gerar o token de acesso deve ser o mesmo appId que foi usado para criar a definição de tarefa.
+4. [Crie um acionador de tarefas para sua impressora virtual](/graph/api/printer-post-tasktriggers) usando um token de autenticação de administrador que irá associar a definição da sua tarefa com a impressora virtual.
 
 5. Quando um trabalho de impressão é enviado para a impressora virtual, ele será pausado devido ao [ Acionador de Tarefas de impressão](/graph/api/resources/printtasktrigger). Uma [Tarefa de impressão](/graph/api/resources/printtask) com `processing`estado será criada com base na [Definição da Tarefa de impressão associada](/graph/api/resources/printtaskdefinition).
 

@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: japere
 ms.prod: applications
 doc_type: apiPageType
-ms.openlocfilehash: 2fbf1eecad7267ce17ead81dd6573cf885a2ae5b
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: 1bf14d7060aae8a329259bd3a50772fc5252b72b
+ms.sourcegitcommit: 0e7927f34b7e55d323acbf281e11560cb40a89ed
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62121131"
+ms.lasthandoff: 03/20/2022
+ms.locfileid: "63671143"
 ---
 # <a name="assign-a-connectorgroup-to-an-application"></a>Atribuir um connectorGroup a um aplicativo
 
@@ -25,7 +25,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegado (conta corporativa ou de estudante) | Directory.ReadWrite.All, Directory.AccessAsUser.All    |
+|Delegado (conta corporativa ou de estudante) | Directory.ReadWrite.All    |
 |Delegado (conta pessoal da Microsoft) | Sem suporte.    |
 |Aplicativo | Sem suporte.  |
 
@@ -42,7 +42,7 @@ PUT /applications/{id}/connectorGroup/$ref
 | Content-type | application/json. Obrigatório.|
 
 ## <a name="request-body"></a>Corpo da solicitação
-No corpo da solicitação, fornece uma representação JSON de um [objeto connectorGroup.](../resources/connectorgroup.md)
+No corpo da solicitação, fornece uma representação JSON de um [objeto connectorGroup](../resources/connectorgroup.md) .
 
 ## <a name="response"></a>Resposta
 

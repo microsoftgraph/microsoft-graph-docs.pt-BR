@@ -1,18 +1,18 @@
 ---
-title: Crie uma Microsoft Teams SSO com o microsoft Graph Toolkit
-description: Começar a criar uma guia Microsoft Teams SSO usando o microsoft Graph Toolkit.
+title: Crie uma guia Microsoft Teams SSO com o microsoft Graph Toolkit
+description: Introdução criar uma guia Microsoft Teams SSO usando o microsoft Graph Toolkit.
 ms.localizationpriority: medium
-author: simonagren
-ms.openlocfilehash: fe37efb6fc009a862081b6a91a9a34a7c922785b
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+author: sebastienlevert
+ms.openlocfilehash: 43a7a7b4b1fee3f33b027f170eb66cd04e49157d
+ms.sourcegitcommit: cc9e5b3630cb84c48bbbb2d84a963b9562d1fb78
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59130609"
+ms.lasthandoff: 03/31/2022
+ms.locfileid: "64588810"
 ---
-# <a name="build-a-microsoft-teams-sso-tab-with-the-microsoft-graph-toolkit"></a>Crie uma Microsoft Teams SSO com o microsoft Graph Toolkit
+# <a name="build-a-microsoft-teams-sso-tab-with-the-microsoft-graph-toolkit"></a>Crie uma guia Microsoft Teams SSO com o microsoft Graph Toolkit
 
-Este tópico descreve como usar o microsoft Graph Toolkit em uma Microsoft Teams solução. Este guia é para um aplicativo de página única com SSO (sign-on único) e exige um back-end. Se você estiver implementando uma guia Teams com login interativo, consulte [Build a Microsoft Teams Tab](./build-a-microsoft-teams-tab.md).
+Este tópico descreve como usar o microsoft Graph Toolkit em uma solução Microsoft Teams. Este guia é para um aplicativo de página única com SSO (sign-on único) e exige um back-end. Se você estiver implementando uma guia Teams com login interativo, consulte [Build a Microsoft Teams Tab](./build-a-microsoft-teams-tab.md).
 
 A criação de uma guia SSO envolve as seguintes etapas: 
 
@@ -26,7 +26,7 @@ A criação de uma guia SSO envolve as seguintes etapas:
 
 ## <a name="add-the-microsoft-graph-toolkit"></a>Adicionar o microsoft Graph Toolkit
 
-Você pode usar o microsoft Graph Toolkit em seu aplicativo fazendo referência ao carregador diretamente (via unpkg) ou instalando os pacotes npm. Para usar o Toolkit, você também precisará do [Microsoft Teams SDK](/javascript/api/overview/msteams-client?view=msteams-client-js-latest&preserve-view=true#using-the-sdk).
+Você pode usar o microsoft Graph Toolkit em seu aplicativo fazendo referência direta ao carregador (via unpkg) ou instalando os pacotes npm. Para usar o Toolkit, você também precisará da Microsoft Teams [SDK](/javascript/api/overview/msteams-client?view=msteams-client-js-latest&preserve-view=true#using-the-sdk).
 
 # <a name="unpkg"></a>[unpkg](#tab/unpkg)
 Para usar o Toolkit e Teams SDK por meio dos carregadores, adicione a referência em um script ao seu código:
@@ -48,7 +48,7 @@ npm install @microsoft/teams-js @microsoft/mgt-element @microsoft/mgt-teams-msal
 
 ## <a name="create-the-auth-popup-page"></a>Criar a página pop-up de auth
 
-A menos que seu aplicativo seja pré-consentido por um administrador, os usuários talvez precisem consentir com permissões. Para habilitar isso, você precisará fornecer uma página que o aplicativo Teams abrirá em um pop-up para seguir o fluxo de autenticação. Você pode fazer com que o caminho para a página seja qualquer coisa, desde que ela seja no mesmo domínio que seu aplicativo (por exemplo, https://yourdomain.com/tabauth) . O único requisito para esta página é chamar o método, mas você `TeamsMsal2Provider.handleAuth()` pode adicionar qualquer conteúdo ou carregar o progresso que quiser.
+A menos que seu aplicativo seja pré-consentido por um administrador, os usuários talvez precisem consentir com permissões. Para habilitar isso, você precisará fornecer uma página que o aplicativo Teams abrirá em um pop-up para seguir o fluxo de autenticação. Você pode fazer com que o caminho para a página seja qualquer coisa, desde que ela seja no mesmo domínio que seu aplicativo (por exemplo, https://yourdomain.com/tabauth). O único requisito para esta página é chamar o `TeamsMsal2Provider.handleAuth()` método, mas você pode adicionar qualquer conteúdo ou carregar o progresso que quiser.
 
 
 A seguir está um exemplo de uma página básica que lida com o fluxo de auth no pop-up.
@@ -81,32 +81,32 @@ TeamsMsal2Provider.handleAuth();
 ## <a name="creating-an-appclient-id"></a>Criando uma ID de aplicativo/cliente
 Sua guia precisa ser executado como um aplicativo registrado do Azure AD para obter um token de acesso do Azure AD. Registre o aplicativo em seu locatário e Microsoft Teams permissão para obter tokens de acesso em seu nome:
 
-1. Abra um navegador e vá para o centro [de administração Azure Active Directory.](https://aad.portal.azure.com) Entre usando uma **conta pessoal** (Conta da Microsoft) ou Conta de Trabalho **ou Estudante.**
+1. Abra um navegador e vá para o Azure Active Directory [de administração](https://aad.portal.azure.com). Entre usando uma **conta pessoal** (Conta da Microsoft) ou **Conta de Trabalho ou Estudante**.
 
-1. No painel esquerdo, selecione **Azure Active Directory**, em seguida, selecione Registros de aplicativo **em** **Gerenciar**.
+1. No painel esquerdo, **selecione Azure Active Directory e** **selecione Registros de aplicativo** em **Gerenciar**.
 
-1. Selecione **Novo registro**. Na página **Registrar um aplicativo**, defina os valores da seguinte forma:
+1. Selecione **Novo registro**. Na página **Registrar um** aplicativo, de definir os valores da seguinte forma:
 
-    - Definir **Nome** `Node.js Teams SSO` como (ou um nome de sua escolha).
+    - Definir **Nome** como `Node.js Teams SSO` (ou um nome de sua escolha).
     - Defina **Tipos de conta com suporte** para **Contas em qualquer diretório organizacional e contas pessoais da Microsoft**.
-    - Em **Redirecionar URI**, de definir o primeiro menu suspenso como e definir o valor como a URL da página de autenticação que você criou na etapa `Single Page Application` anterior; por exemplo, `https://myapp.ngrok.io/tabauth` . 
+    - Em **URI** de redirecionamento, de definir o primeiro menu `Single Page Application` suspenso como e definir o valor como a URL da página de autenticação que você criou na etapa anterior; por exemplo, `https://myapp.ngrok.io/tabauth`. 
 
-1. Na página visão geral do aplicativo, copie o valor da ID do aplicativo **(cliente)** para posteriormente. Você precisará desse valor ao criar um novo provedor e em seu back-end.
+1. Na página visão geral do aplicativo, copie o valor da **ID do aplicativo (cliente)** para posteriormente. Você precisará desse valor ao criar um novo provedor e em seu back-end.
 
-1. Em **Gerenciar**, vá **para Certificados & segredos**. Selecione o botão **Novo segredo do cliente**. Insira um valor em **Descrição** e selecione uma das opções para **Expira** em e selecione **Adicionar**.
+1. Em **Gerenciar**, vá para **Certificados & segredos**. Selecione o botão **Novo segredo do cliente**. Insira um valor em **Descrição** e selecione uma das opções para **Expira** em e selecione **Adicionar**.
 
 1. Copie o valor de segredo do cliente antes de sair desta página. Você precisará disso para seu serviço de back-end.
 
     >[!IMPORTANT]
     >Este segredo do cliente nunca é mostrado novamente, portanto, certifique-se de copiá-lo agora.
 
-1. Em **Gerenciar**, vá para **permissões de API**. Selecione **Adicionar uma permissão microsoft**  >  **Graph** permissões delegadas , em seguida, adicione as seguintes  >  permissões: , , , `email` , `offline_access` `openid` `profile` `User.Read` . Selecione **Adicionar permissões**.
+1. Em **Gerenciar**, vá para **permissões de API**. Selecione **Adicionar uma** **permissãoMicrosoft** >  Graph  > **Permissõesdelegadas** e adicione as seguintes permissões: `email`, `offline_access`, `openid`, , `profile`, `User.Read`. Selecione **Adicionar permissões**.
 
-1. (OPCIONAL) Se você quiser pré-consentimento para quaisquer outros escopos, você pode adicionar mais permissões. Se você usar componentes diferentes ou planejar usar outras APIs Graph Microsoft, talvez seja necessário permissões adicionais. Para obter detalhes sobre permissões necessárias, consulte a [documentação](../overview.md) de cada componente.
+1. (OPCIONAL) Se você quiser pré-consentimento para quaisquer outros escopos, você pode adicionar mais permissões. Se você usar componentes diferentes ou planejar usar outras APIs Graph Microsoft, poderá exigir permissões adicionais. Para obter detalhes sobre permissões necessárias, consulte a [documentação](../overview.md) de cada componente.
 
-    - Para pré-consentimento como administrador, selecione **Conceder consentimento de administrador**, em seguida, selecione **Sim**.
+    - Para pré-consentimento como administrador, selecione **Conceder consentimento de administrador** e selecione **Sim**.
 
-1.  Em **Gerenciar**, vá para **Expor uma API**. Na parte superior da página, ao lado `Application ID URI` de , selecione **Definir**. Isso gera uma API na forma de: `api://{AppID}` . Atualize-o para adicionar seu subdomínio; por exemplo, `api://myapp.ngrok.io/{appID}` .
+1.  Em **Gerenciar**, vá para **Expor uma API**. Na parte superior da página, ao lado de `Application ID URI`, selecione **Definir**. Isso gera uma API na forma de: `api://{AppID}`. Atualize-o para adicionar seu subdomínio; por exemplo, `api://myapp.ngrok.io/{appID}`.
 
 1. Na mesma página, selecione **Adicionar um escopo**. Preencha os campos da seguinte forma e selecione **Adicionar escopo**:
 
@@ -118,18 +118,18 @@ Sua guia precisa ser executado como um aplicativo registrado do Azure AD para ob
     - Descrição do consentimento do usuário: `Enable Teams to call this app’s APIs with the same rights as the user.`
     - Estado: **Habilitado**
     
-    Sua URL da API deve ter esta aparência: `api://myapp.ngrok.io/{appID}/access_as_user` . 
+    Sua URL da API deve ter esta aparência: `api://myapp.ngrok.io/{appID}/access_as_user`. 
 
-1. Em seguida, adicione dois aplicativos cliente. Isso é para os clientes Teams desktop/mobile e o cliente Web. Na seção **Aplicativos cliente autorizados,** selecione **Adicionar um aplicativo cliente**. Preencha a ID do Cliente e selecione o escopo criado. Em seguida, **selecione Adicionar aplicativo**. Faça isso para as seguintes IDs:
+1. Em seguida, adicione dois aplicativos cliente. Isso é para os clientes Teams desktop/mobile e o cliente Web. Na seção **Aplicativos cliente Autorizados** , selecione **Adicionar um aplicativo cliente**. Preencha a ID do Cliente e selecione o escopo criado. Em seguida, **selecione Adicionar aplicativo**. Faça isso para as seguintes IDs:
     
     - 5e3ce6c0-2b1f-4285-8d4b-75ee78787346
     - 1fec8e78-bce4-4aaf-ab1b-5451cc387264
 
 ## <a name="create-the-backend"></a>Criar o back-end
 
-O back-end pode ser qualquer back-end que habilita a troca do token de autenticação Microsoft Teams por um token que pode ser usado para chamar o Microsoft Graph por meio do fluxo [on-behalf-of.](/azure/active-directory/develop/v2-oauth2-on-behalf-of-flow) 
+O back-end pode ser qualquer back-end que habilita a troca do token de autenticação Microsoft Teams com um token que pode ser usado para chamar o Microsoft Graph por meio do fluxo [on-behalf-of](/azure/active-directory/develop/v2-oauth2-on-behalf-of-flow). 
 
-Para referência, consulte o [Teams SSO Node Sample](https://github.com/microsoftgraph/microsoft-graph-toolkit/tree/main/samples/teams-sso-node).
+Para referência, consulte o [exemplo de Teams de nó SSO.](https://github.com/microsoftgraph/microsoft-graph-toolkit/tree/main/samples/teams-sso-node)
 
 Veja a seguir uma implementação de referência de um servidor de nó expresso:
 
@@ -250,7 +250,7 @@ app.listen(PORT, () => {
 
 Os provedores Graph Toolkit Microsoft habilitam a autenticação e o acesso ao Microsoft Graph. Para saber mais, confira [Usando os provedores](../providers/providers.md). O [Teams MSAL2](../providers/teams-msal2.md) lida com toda a lógica e interações que precisam ser implementadas com o SDK Teams para autenticar o usuário.
 
-Para o modo SSO, certifique-se de fornecer e fazer com que ele `sso-url`  /  `ssoUrl` aponte para sua API de back-end.
+Para o modo SSO, certifique-se de fornecer `sso-url` / `ssoUrl` e fazer com que ele aponte para sua API de back-end.
 
 # <a name="html"></a>[HTML](#tab/HTML)
 
@@ -266,11 +266,11 @@ Adicione o `mgt-teams-msal2-provider` em seu HTML.
   ></mgt-teams-msal2-provider>
 ```
 
-Substitua pela ID do cliente para seu aplicativo, substitua o pelo caminho completo ou relativo para sua página de auth e substitua pelo caminho completo ou relativo para seu serviço `<YOUR_CLIENT_ID>` `auth-popup-url` de `sso-url` back-end.
+Substitua `<YOUR_CLIENT_ID>` pela ID do cliente para seu aplicativo, `auth-popup-url` substitua o pelo caminho completo ou relativo para sua página de auth `sso-url` e substitua pelo caminho completo ou relativo para seu serviço de back-end.
 
 # <a name="javascript"></a>[JavaScript](#tab/JavaScript)
 
-Para inicializar o provedor em seu código JavaScript, importe `TeamsMsal2Provider` e de definir o `globalProvider` .
+Para inicializar o provedor em seu código JavaScript, importe `TeamsMsal2Provider` e de definir o `globalProvider`.
 
 ```TypeScript
 import {Providers} from '@microsoft/mgt-element';
@@ -287,7 +287,7 @@ Providers.globalProvider = new TeamsMsal2Provider({
   httpMethod: HttpMethod.POST
 });
 ```
-Substitua pela ID do cliente para seu aplicativo, substitua o pelo caminho completo ou relativo para sua página de auth e substitua pelo caminho completo ou relativo para seu serviço `<YOUR_CLIENT_ID>` `authPopupUrl` de `ssoUrl` back-end.
+Substitua `<YOUR_CLIENT_ID>` pela ID do cliente para seu aplicativo, `authPopupUrl` substitua o pelo caminho completo ou relativo para sua página de auth `ssoUrl` e substitua pelo caminho completo ou relativo para seu serviço de back-end.
 
 ---
 
@@ -295,7 +295,7 @@ Substitua pela ID do cliente para seu aplicativo, substitua o pelo caminho compl
 
 Agora, você está pronto para adicionar qualquer um dos componentes Graph Toolkit Microsoft. 
 
-Você pode adicionar componentes ao HTML como normalmente faria. Por exemplo, para adicionar o `Person` componente, adicione o código a seguir ao html.
+Você pode adicionar componentes ao HTML como normalmente faria. Por exemplo, para adicionar o componente `Person` , adicione o código a seguir ao html.
 
 ```HTML
 <mgt-person person-query="me"></mgt-person>
@@ -304,9 +304,9 @@ Você pode adicionar componentes ao HTML como normalmente faria. Por exemplo, pa
 Se você estiver usando React, recomendamos usar os componentes React em vez da `mgt-react` biblioteca. Para saber mais, consulte [Using Microsoft Graph Toolkit with React](./use-toolkit-with-react.md).
 
 ## <a name="test-the-sample"></a>Testar o exemplo
-Para a implementação completa, consulte Teams exemplo de [nó SSO](https://github.com/microsoftgraph/microsoft-graph-toolkit/tree/main/samples/teams-sso-node).
+Para a implementação completa, consulte o exemplo de [Teams SSO.](https://github.com/microsoftgraph/microsoft-graph-toolkit/tree/main/samples/teams-sso-node)
 
-Se tudo tiver sido configurado corretamente, você verá o componente `Person` renderizado sem a necessidade de fazer logoff.
+Se tudo tiver sido configurado corretamente, você verá `Person` o componente renderizado sem a necessidade de fazer logoff.
 >[!IMPORTANT]
 >Se você não tiver consentido previamente, talvez seja preciso consentir por meio de um prompt.
 

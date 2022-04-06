@@ -6,12 +6,12 @@ title: Áudio
 ms.localizationpriority: medium
 ms.prod: microsoft-teams
 doc_type: resourcePageType
-ms.openlocfilehash: 436ff5a46dd83c3a736765515678a3e2e47f620f
-ms.sourcegitcommit: 71186ad44d8d0df15e10b0f89df68d2ef0cf9d14
+ms.openlocfilehash: 53373f8d7b06efe549832287f6a9f8f786b3ab2b
+ms.sourcegitcommit: e5d5095e26dca6f434354a0970e789e94ee6afb0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/12/2022
-ms.locfileid: "61792061"
+ms.lasthandoff: 03/22/2022
+ms.locfileid: "63723604"
 ---
 # <a name="audio-facet"></a>Faceta Audio
 
@@ -28,6 +28,7 @@ O **recurso Audio** só é suportado no OneDrive Pessoal.
 ## <a name="json-representation"></a>Representação JSON
 
 <!-- { "blockType": "resource", "@odata.type": "microsoft.graph.audio" } -->
+
 ```json
 {
   "album": "string",
@@ -51,8 +52,8 @@ O **recurso Audio** só é suportado no OneDrive Pessoal.
 
 ## <a name="properties"></a>Propriedades
 
-| Nome da propriedade         | Tipo    | Descrição                                                          |
-|:----------------------|:--------|:---------------------------------------------------------------------|
+| Propriedade              | Tipo    | Descrição                                                          |
+| :-------------------- | :------ | :------------------------------------------------------------------- |
 | **album**             | string  | O título do álbum deste arquivo de áudio.                          |
 | **albumArtist**       | string  | Artista nomeado no álbum para o arquivo de áudio.                    |
 | **artist**            | string  | O artista do arquivo de áudio.                            |
@@ -86,5 +87,3 @@ Para saber mais sobre as facetas de um DriveItem, confira [DriveItem](driveitem.
   "suppressions": []
 }
 -->
-
-

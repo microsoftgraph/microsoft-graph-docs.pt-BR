@@ -5,12 +5,12 @@ author: adsrivastava2
 ms.localizationpriority: medium
 ms.prod: microsoft-teams
 doc_type: resourcePageType
-ms.openlocfilehash: 7cd91f9901c02d1008e5c08a72c47e416222ab75
-ms.sourcegitcommit: e4796212a2e8bbec61b6da8336f776c0305c49df
+ms.openlocfilehash: 38058cf2c1697a158eb31c356e22c20af9054156
+ms.sourcegitcommit: dab085b74666e190974a35e6a124d3ff1645fa25
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/28/2022
-ms.locfileid: "62262357"
+ms.lasthandoff: 04/05/2022
+ms.locfileid: "64646568"
 ---
 # <a name="teamworkdevice-resource-type"></a>Tipo de recurso teamworkDevice
 
@@ -20,15 +20,20 @@ Namespace: microsoft.graph
 
 Representa detalhes sobre um Microsoft Teams habilitado para Microsoft Teams que é provisionado para o locatário.
 
-Herda da [entidade](../resources/entity.md).
+Microsoft Teams habilitados para Teams de colaboração certificados. Eles incluem Salas do Microsoft Teams (em Windows e Android), Microsoft Teams telefones, painéis, Surface Hubs e dispositivos SIP. Essas categorias são as mesmas que as disponíveis no centro de administração Teams na seção Teams **dispositivos**.
 
-## <a name="methods"></a>Métodos
+Para obter mais detalhes, consulte [Manage your devices in Microsoft Teams.](/microsoftteams/devices/device-management)
+>**Observação**: isso não inclui telefones celulares, laptops, computadores, guias e assim por diante.
+
+Herda de [entidade](../resources/entity.md).
+
+## <a name="methods"></a>Methods
 |Método|Tipo de retorno|Descrição|
 |:---|:---|:---|
-|[Listar trabalho em equipeDevices](../api/teamworkdevice-list.md)|[Coleção teamworkDevice](../resources/teamworkdevice.md)|Obter uma lista de todos os Microsoft Teams habilitados para um locatário.|
+|[Listar trabalho em equipeDevices](../api/teamworkdevice-list.md)|Coleção [teamworkDevice](../resources/teamworkdevice.md)|Obter uma lista de todos os Microsoft Teams habilitados para um locatário.|
 |[Obter trabalho em equipeDevice](../api/teamworkdevice-get.md)|[teamworkDevice](../resources/teamworkdevice.md)|Obter as propriedades de um dispositivo Microsoft Teams habilitado para uso.|
 |[restart](../api/teamworkdevice-restart.md)|[teamworkDeviceOperation](../resources/teamworkdeviceoperation.md)|Reinicie o dispositivo Microsoft Teams habilitado para uso.|
-|[runDiagnostics](../api/teamworkdevice-rundiagnostics.md)|[teamworkDeviceOperation](../resources/teamworkdeviceoperation.md)|Execute e gere logs de diagnóstico para o dispositivo Microsoft Teams habilitado para uso específico.|
+|[runDiagnostics](../api/teamworkdevice-rundiagnostics.md)|[teamworkDeviceOperation](../resources/teamworkdeviceoperation.md)|Execute e gere logs de diagnóstico para o dispositivo Microsoft Teams habilitado para uso.|
 |[updateSoftware](../api/teamworkdevice-updatesoftware.md)|[teamworkDeviceOperation](../resources/teamworkdeviceoperation.md)|Atualize o software para um Microsoft Teams habilitado para uso.|
 |[Listar operações](../api/teamworkdeviceoperation-list.md)|[Coleção teamworkDeviceOperation](../resources/teamworkdeviceoperation.md)|Obter uma lista de operações que estão sendo executados em um dispositivo Teams habilitado para uso.|
 
@@ -58,10 +63,10 @@ Herda da [entidade](../resources/entity.md).
 |teamsRoom|2|Salas do Microsoft Teams são Windows dispositivos baseados em IoT projetados para estender a experiência de reunião para a sala de conferência.|
 |surfaceHub|3|Surface Hub dispositivos são dispositivos montados na parede ou com suporte para rolos com quadro de comunicação interativo.|
 |collaborationBar|4|As barras de colaboração Salas do Microsoft Teams no Android usadas para espaços de reunião pequenos.|
-|teamsDisplay|5|Teams dispositivos de exibição são a evolução de Teams telefones. Esses dispositivos são uma categoria de dispositivos de Teams exclusivos que apresentam uma tela touchscreen ambiente e uma experiência prática com Cortana.|
+|teamsDisplay|5|Teams dispositivos de exibição são a evolução de Teams telefones. Esses dispositivos são uma categoria de dispositivos de Teams exclusivos que apresentam uma tela sensível ao toque ambiente e uma experiência prática com Cortana.|
 |touchConsole|6 |Os dispositivos de console por toque são os periféricos opcionais para o Salas do Teams no Android para executar todas as operações do dispositivo.|
-|lowCostPhone|7 |Os dispositivos de telefone de baixo custo são de custo Microsoft Teams telefones.|
-|teamsPanel|8 |Microsoft Teams painéis são os dispositivos touchscreen compactos que exibem os detalhes da reunião agendados por Teams.|
+|lowCostPhone|7 |Dispositivos de telefone de baixo custo são telefones Microsoft Teams econômicos.|
+|teamsPanel|8 |Microsoft Teams painéis são os dispositivos touchscreen compactos que exibem os detalhes da reunião agendados por meio Teams.|
 |sip|9 |Dispositivos SIP (Session Initiation Protocol) que suportam Teams chamadas com o Gateway SIP da Microsoft.|
 |unknownFutureValue|10 |Valor de sentinela de enumeração evolvável. Não usar.|
 

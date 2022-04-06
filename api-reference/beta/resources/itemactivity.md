@@ -3,15 +3,15 @@ author: daspek
 description: O recurso ItemActivity fornece informações sobre atividades que ocorreram em um item ou dentro de um repositório.
 ms.date: 09/14/2017
 title: ItemActivity
-localization_priority: Normal
+ms.localizationpriority: medium
 doc_type: resourcePageType
 ms.prod: ''
-ms.openlocfilehash: a1ce6b675a1e28eb60bc7ebbf86d3cd1cd0dc5a7
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: dd1ff94bc03a06b69427a76339284ca783b17b39
+ms.sourcegitcommit: e5d5095e26dca6f434354a0970e789e94ee6afb0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48075671"
+ms.lasthandoff: 03/22/2022
+ms.locfileid: "63722699"
 ---
 # <a name="itemactivity-resource-type"></a>Tipo de recurso ItemActivity
 
@@ -47,25 +47,25 @@ Disponível atualmente só no SharePoint e no OneDrive for Business.
 
 ## <a name="properties"></a>Propriedades
 
-| Propriedade | Tipo                    | Descrição
-|:---------|:------------------------|:----------------------------------------
-| id       | cadeia de caracteres                  | O identificador exclusivo da atividade. Somente leitura.
-| Access   | [accessaction][]        | Um item foi acessado.
-| action   | [itemActionSet][]       | Detalhes sobre a ação que ocorreu. Somente leitura.
-| actor    | [identitySet][]         | Identidade de quem executou a ação. Somente leitura.
-| location | [location][]            | Local físico em que a ação foi executada. Somente leitura.
-| times    | [itemActivityTimeSet][] | Detalhes sobre quando ocorreu a atividade. Somente leitura.
+| Propriedade | Tipo                    | Descrição                                                  |
+| :------- | :---------------------- | :----------------------------------------------------------- |
+| id       | string                  | O identificador exclusivo da atividade. Somente leitura.            |
+| access   | [accessAction][]        | Um item foi acessado.                                        |
+| action   | [itemActionSet][]       | Detalhes sobre a ação que ocorreu. Somente leitura.         |
+| actor    | [identitySet][]         | Identidade de quem executou a ação. Somente leitura.             |
+| location | [location][]            | Local físico onde a ação foi executada. Somente leitura. |
+| times    | [itemActivityTimeSet][] | Detalhes sobre quando ocorreu a atividade. Somente leitura.       |
 
 [identitySet]: identityset.md
 [itemActionSet]: itemactionset.md
 [itemActivityTimeSet]: itemactivitytimeset.md
 
-## <a name="relationships"></a>Relacionamentos
+## <a name="relationships"></a>Relações
 
-| Nome da relação | Tipo          | Descrição
-|:------------------|:--------------|:-----------------------------------------
-| driveItem         | [driveItem][] | Expõe o **driveItem** ao qual essa atividade direcionou.
-| listItem          | [listItem][]  | Expõe o **listItem** ao qual essa atividade direcionou.
+| Relação | Tipo          | Descrição                                                     |
+| :----------- | :------------ | :-------------------------------------------------------------- |
+| driveItem    | [driveItem][] | Expõe o **driveItem** ao qual essa atividade direcionou. |
+| listItem     | [listItem][]  | Expõe o **listItem** ao qual essa atividade direcionou.  |
 
 [driveItem]: driveitem.md
 [listItem]: listitem.md
@@ -76,20 +76,20 @@ As ações que ocorreram dentro de uma atividade são detalhadas na propriedade 
 Abaixo estão as ações disponíveis atualmente.
 Novas ações podem ser registradas no futuro, portanto, verifique se o seu aplicativo tem tolerância à manipulação de um **itemActivity** sem quaisquer ações que seu aplicativo entenda.
 
-| Nome da ação | Tipo              | Descrição
-|:------------|:------------------|:-------------------------------------------
-| comment     | [commentAction][] | Um comentário foi adicionado ao item.
-| create      | [createAction][]  | Um item foi criado.
-| delete      | [deleteAction][]  | Um item foi excluído.
-| edit        | [editAction][]    | Um item foi editado.
-| mention     | [mentionAction][] | Um usuário foi mencionado no item.
-| move        | [moveAction][]    | Um item foi movido.
-| rename      | [renameAction][]  | Um item foi renomeado.
-| restore     | [restoreAction][] | Um item foi restaurado.
-| share       | [shareAction][]   | Um item foi compartilhado.
-| version     | [versionAction][] | Foi feito o controle de versão de um item.
+| Nome da ação | Tipo              | Descrição                       |
+| :---------- | :---------------- | :-------------------------------- |
+| comment     | [commentAction][] | Um comentário foi adicionado ao item.  |
+| create      | [createAction][]  | Um item foi criado.              |
+| delete      | [deleteAction][]  | Um item foi excluído.              |
+| edit        | [editAction][]    | Um item foi editado.               |
+| mention     | [mentionAction][] | Um usuário foi mencionado no item. |
+| move        | [moveAction][]    | Um item foi movido.                |
+| rename      | [renameAction][]  | Um item foi renomeado.              |
+| restore     | [restoreAction][] | Um item foi restaurado.             |
+| share       | [shareAction][]   | Um item foi compartilhado.               |
+| version     | [versionAction][] | Foi feito o controle de versão de um item.            |
 
-[accessaction]: accessaction.md
+[accessAction]: accessaction.md
 [commentAction]: commentaction.md
 [createAction]: createaction.md
 [deleteAction]: deleteaction.md
@@ -116,5 +116,3 @@ Novas ações podem ser registradas no futuro, portanto, verifique se o seu apli
   "suppressions": []
 }
 -->
-
-

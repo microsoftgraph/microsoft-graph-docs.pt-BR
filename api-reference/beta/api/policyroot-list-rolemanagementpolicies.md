@@ -1,16 +1,16 @@
 ---
 title: Listar roleManagementPolicies
 description: Obter os recursos unifiedRoleManagementPolicy da propriedade de navegação roleManagementPolicies.
-author: carolinetempleton
+author: japere
 ms.localizationpriority: medium
 ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: e8894ce30b35a1633d0b457f6d2edf6637f38dfe
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: 288727407c01fcba34a2f4abee6d6d9dacfe9f09
+ms.sourcegitcommit: 43a7c971a97ce1e4c55cbae089820bfce7dfe42b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62120157"
+ms.lasthandoff: 03/29/2022
+ms.locfileid: "64509949"
 ---
 # <a name="list-rolemanagementpolicies"></a>Listar roleManagementPolicies
 Namespace: microsoft.graph
@@ -21,7 +21,7 @@ Namespace: microsoft.graph
 Obter os recursos unifiedRoleManagementPolicy da propriedade de navegação roleManagementPolicies.
 
 
-## <a name="permissions"></a>Permissões
+## <a name="permissions"></a>Permissions
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão|Permissões (da com menos para a com mais privilégios)|
@@ -53,7 +53,7 @@ Não forneça um corpo de solicitação para esse método.
 
 ## <a name="response"></a>Resposta
 
-Se tiver êxito, este método retornará um código de resposta e uma coleção de objetos `200 OK` [unifiedRoleManagementPolicy](../resources/unifiedrolemanagementpolicy.md) no corpo da resposta.
+Se tiver êxito, este método retornará um `200 OK` código de resposta e uma coleção de objetos [unifiedRoleManagementPolicy](../resources/unifiedrolemanagementpolicy.md) no corpo da resposta.
 
 ## <a name="examples"></a>Exemplos
 

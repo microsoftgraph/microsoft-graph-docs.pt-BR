@@ -1,16 +1,16 @@
 ---
 author: JeremyKelley
 title: Listar pacotes
-description: Listar os pacotes na unidade de um usuário
+description: Listar os pacotes na unidade de um usuário.
 ms.localizationpriority: medium
 ms.prod: sharepoint
 doc_type: apiPageType
-ms.openlocfilehash: fa4bfb848d59df2922f6eb0c6e92813d50b0b8a5
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: 7071a7b36e55ff0b21f96bb2bbd155e3dc33f87c
+ms.sourcegitcommit: cc9e5b3630cb84c48bbbb2d84a963b9562d1fb78
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "61012700"
+ms.lasthandoff: 03/31/2022
+ms.locfileid: "64587522"
 ---
 # <a name="list-bundles"></a>Listar pacotes
 
@@ -18,9 +18,9 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Obter uma lista de todos os [pacotes de][pacotes] na unidade de um usuário.
+Obter uma lista de todos os [pacotesbundle] na unidade de um usuário.[]
 
-## <a name="permissions"></a>Permissões
+## <a name="permissions"></a>Permissions
 
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
@@ -40,25 +40,25 @@ GET /drive/bundles
 
 ## <a name="optional-query-parameters"></a>Parâmetros de consulta opcionais
 
-Esse método dá suporte a [Parâmetros de consulta OData][] para filtrar e dar forma à resposta.
+Este método dá suporte a `$filter` [Parâmetros de consulta OData](/graph/query-parameters) para ajudar a personalizar a resposta.
 
-Não é possível usar o `expand=children` parâmetro de consulta ao enumerar pacotes.
+Não é possível usar o parâmetro `expand=children` de consulta para listar pacotes.
 
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
 
 | Nome          | Descrição  |
 |:------------- |:------------ |
-| Autorização | \{token\} de portador. Obrigatório. |
+| Autorização | {token} de portador. Obrigatório. |
 
 ## <a name="request-body"></a>Corpo da solicitação
 
-Não forneça um corpo de solicitação com esse método.
+Não forneça um corpo de solicitação para esse método.
 
 ## <a name="response"></a>Resposta
 
-Se tiver êxito, essa solicitação retornará a lista de itens de pacote definidos para a unidade.
+Se tiver êxito, este método retornará um `200 OK` código de resposta e uma coleção de [objetos] [bundlebundle] no corpo da resposta.
 
-Leia o tópico [Respostas de erro][error-response] para obter mais informações sobre como os erros são retornados.
+Para obter informações sobre respostas a erros, consulte [Microsoft Graph respostas de erro e tipos de recursos][error-response].
 
 ## <a name="examples"></a>Exemplos
 
@@ -68,6 +68,7 @@ Para solicitar uma enumeração de todos os pacotes definidos na unidade, você 
 
 #### <a name="request"></a>Solicitação
 
+Veja a seguir um exemplo de uma solicitação.
 
 # <a name="http"></a>[HTTP](#tab/http)
 <!-- { "blockType": "request", "name": "list-all-bundles", "tags": "service.onedrive" } -->
@@ -91,7 +92,7 @@ GET https://graph.microsoft.com/beta/drive/bundles
 [!INCLUDE [sample-code](../includes/snippets/java/list-all-bundles-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[Go](#tab/go)
+# <a name="go"></a>[Ir](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/list-all-bundles-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
@@ -99,6 +100,10 @@ GET https://graph.microsoft.com/beta/drive/bundles
 
 
 #### <a name="response"></a>Resposta
+
+Este é um exemplo de resposta.
+
+> **Observação**: o objeto de resposta mostrado aqui pode ser encurtado com fins de legibilidade.
 
 <!-- { "blockType": "response", "@odata.type": "microsoft.graph.driveItem", "truncated": true, "isCollection": true } -->
 
@@ -128,15 +133,14 @@ Content-type: application/json
 }
 ```
 
-O objeto de resposta mostrado aqui pode ser reduzido para facilitar a leitura.
-
 
 ### <a name="example-2-list-all-photo-albums-in-a-drive"></a>Exemplo 2: Listar todos os álbuns de fotos em uma unidade
 
-Para filtrar a lista de pacotes retornados de uma solicitação para a coleção bundles, você pode usar o parâmetro de cadeia de caracteres de consulta para especificar o tipo de pacote a ser retornado verificando a existência de uma faceta no `filter` pacote:
+Para filtrar a lista de pacotes retornados de uma solicitação para a coleção bundles, `filter` você pode usar o parâmetro de cadeia de caracteres de consulta para especificar o tipo de pacote a ser retornado verificando a existência de uma faceta no pacote.
 
 #### <a name="request"></a>Solicitação
 
+Veja a seguir um exemplo de uma solicitação.
 
 # <a name="http"></a>[HTTP](#tab/http)
 <!-- {"blockType": "request", "name": "list-album-bundles", "tags": "service.onedrive" } -->
@@ -160,7 +164,7 @@ GET https://graph.microsoft.com/beta/drive/bundles?filter=bundle/album%20ne%20nu
 [!INCLUDE [sample-code](../includes/snippets/java/list-album-bundles-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[Go](#tab/go)
+# <a name="go"></a>[Ir](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/list-album-bundles-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
@@ -169,8 +173,10 @@ GET https://graph.microsoft.com/beta/drive/bundles?filter=bundle/album%20ne%20nu
 
 #### <a name="response"></a>Resposta
 
-A resposta a um GET para o ponto de extremidade de pacotes é uma matriz de [recursos driveItem][] com o [pacote][].
+Este é um exemplo de resposta. A resposta a um GET para o ponto de extremidade de pacotes é uma matriz de [recursos driveItem][] com o [pacote][].
 Como todos os pacotes são itens, você pode usar todas as operações de item padrão neles.
+
+> **Observação**: o objeto de resposta mostrado aqui pode ser encurtado com fins de legibilidade.
 
 <!-- { "blockType": "response", "@odata.type": "microsoft.graph.driveItem", "truncated": true, "isCollection": true } -->
 
@@ -206,13 +212,10 @@ Content-type: application/json
 }
 ```
 
-O objeto de resposta mostrado aqui pode ser reduzido para facilitar a leitura.
-
-
-[bundle]: ../resources/bundle.md
+[Agrupar]: ../resources/bundle.md
 [driveItem]: ../resources/driveItem.md
 [error-response]: /graph/errors
-[Parâmetros de consulta OData]: /graph/query-parameters
+[OData Query Parameters]: /graph/query-parameters
 
 <!-- {
   "type": "#page.annotation",

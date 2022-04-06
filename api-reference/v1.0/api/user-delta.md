@@ -5,18 +5,18 @@ ms.localizationpriority: high
 author: jpettere
 ms.prod: users
 doc_type: apiPageType
-ms.openlocfilehash: 8386e40dc74f5594f59b7f190d03e73886423bf5
-ms.sourcegitcommit: 25acfa7d0153336c9a35d30a1dd422aeadc1342c
+ms.openlocfilehash: e05e0b7ef4be952f7a87adc9fa20c82fa9583e9e
+ms.sourcegitcommit: 0e7927f34b7e55d323acbf281e11560cb40a89ed
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/03/2022
-ms.locfileid: "62344684"
+ms.lasthandoff: 03/20/2022
+ms.locfileid: "63672109"
 ---
 # <a name="user-delta"></a>user: delta
 
 Namespace: microsoft.graph
 
-Veja os usuários recentemente criados, atualizados ou excluídos sem ter que executar uma leitura completa da coleção de usuários inteira. Confira [controle de alterações](/graph/delta-query-overview) para obter detalhes.
+Veja os usuários recém-criados, atualizados ou excluídos sem precisar executar uma leitura completa de toda a coleção de usuários. Consulte o [acompanhamento de alterações](/graph/delta-query-overview) para obter detalhes.
 
 ## <a name="permissions"></a>Permissões
 
@@ -25,7 +25,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegado (conta corporativa ou de estudante) | User.Read, User.ReadWrite, User.ReadBasic.All, User.Read.All, User.ReadWrite.All, Directory.Read.All, Directory.ReadWrite.All, Directory.AccessAsUser.All    |
+|Delegado (conta corporativa ou de estudante) | User.Read, User.ReadWrite, User.ReadBasic.All, User.Read.All, User.ReadWrite.All, Directory.Read.All, Directory.ReadWrite.All    |
 |Delegado (conta pessoal da Microsoft) | Sem suporte.    |
 |Aplicativo | User.Read.All, User.ReadWrite.All, Directory.Read.All, Directory.ReadWrite.All |
 
@@ -40,7 +40,7 @@ GET /users/delta
 
 ## <a name="query-parameters"></a>Parâmetros de consulta
 
-O controle de alterações em usuários corresponde a uma série de uma ou mais chamadas de função **delta**. Se você usar qualquer parâmetro de consulta (diferente de `$deltatoken` e `$skiptoken`), especifique-o na primeira solicitação **delta**. O Microsoft Graph codifica automaticamente todos os parâmetros especificados na parte do token da URL `nextLink` ou `deltaLink` fornecida na resposta.
+O rastreamento de alterações nos usuários incorre em uma rodada de uma ou mais chamadas de função **delta**. Se você usar qualquer parâmetro de consulta (diferente de `$deltatoken` e `$skiptoken`), você deve especificá-lo na solicitação **delta** inicial. O Microsoft Graph codifica automaticamente quaisquer parâmetros especificados na parte do token do URL `nextLink` ou `deltaLink` fornecido na réplica.
 
 Você só precisa especificar uma vez os parâmetros de consulta desejados antecipadamente.
 
@@ -64,17 +64,17 @@ Este método fornece suporte opcional a Parâmetros de Consulta OData para ajuda
 |:---------------|:----------|
 | Autorização  | &lt;Token&gt; de portador|
 | Content-Type  | application/json |
-| Preferir | return=minimal <br><br>Especificar esse cabeçalho com uma solicitação que usa `deltaLink` retorna somente as propriedades do objeto que foram alteradas desde a última vez. Opcional. |
+| Preferir | return=minimal <br><br>Especificar este cabeçalho com uma solicitação que utiliza um `deltaLink` retornaria apenas as propriedades do objeto que foram alteradas desde a última rodada. Opcional. |
 
 ## <a name="request-body"></a>Corpo da solicitação
 Não forneça um corpo de solicitação para esse método.
 
 ## <a name="response"></a>Resposta
 
-Se bem-sucedido, este método retorna o código de resposta `200 OK` e o objeto da coleção [user](../resources/user.md) no corpo da resposta. A resposta também inclui uma URL `nextLink` ou `deltaLink`.
+Se for bem-sucedido, esse método retornará o código de resposta `200 OK` e o objeto da coleção [usuário](../resources/user.md) no corpo da resposta. A resposta também inclui um URL `nextLink` ou um URL `deltaLink`.
 
 - Se uma URL `nextLink` for retornada:
-  - Existem páginas de dados adicionais a recuperar na sessão. O aplicativo continua fazendo solicitações usando a URL `nextLink` até uma URL `deltaLink` ser incluída na resposta.
+  - Isso indica que há páginas adicionais de dados a serem recuperados na sessão. O aplicativo continua fazendo solicitações usando o URL `nextLink` até que um URL `deltaLink` seja incluído na resposta.
   - A resposta inclui o mesmo conjunto de propriedades como na solicitação de consulta delta inicial. Assim você pode capturar o estado atual de todos os objetos ao iniciar o ciclo de delta.
 
 - Se uma URL `deltaLink` for retornada:

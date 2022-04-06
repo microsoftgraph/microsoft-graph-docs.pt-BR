@@ -1,16 +1,16 @@
 ---
 title: 'call: cancelMediaProcessing'
 description: Cancela o processamento de mídia para quaisquer operações playPrompt ou recordResponse em andamento.
-author: ananmishr
+author: mkhribech
 ms.localizationpriority: medium
 ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: 3d8e257382f347c7203d071fd017bcde698f01e4
-ms.sourcegitcommit: 25acfa7d0153336c9a35d30a1dd422aeadc1342c
+ms.openlocfilehash: 3f2e20db5b503c5d74fca602c66edd864f617cd9
+ms.sourcegitcommit: 10719607271380ea56076ccff5a3b774d0005773
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/03/2022
-ms.locfileid: "62339269"
+ms.lasthandoff: 04/01/2022
+ms.locfileid: "64607376"
 ---
 # <a name="call-cancelmediaprocessing"></a>call: cancelMediaProcessing
 
@@ -22,14 +22,16 @@ Cancela o processamento de qualquer operação de mídia em andamento.
 
 As operações de mídia referem-se às operações IVR [playPrompt](./call-playprompt.md) e [recordResponse](./call-record.md), que por padrão são enluadas para processar em ordem. O **método cancelMediaProcessing** cancela qualquer operação que está em processo, bem como as operações que estão na fila. Por exemplo, essa API pode ser usada para limpar a fila de operação ivr para uma nova operação de mídia. No entanto, ele não cancelará uma operação **ubscribeToTone** porque opera independentemente de qualquer fila de operação.
 
-## <a name="permissions"></a>Permissões
+## <a name="permissions"></a>Permissions
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 | Tipo de permissão                        | Permissões (da com menos para a com mais privilégios) |
 |:---------------------------------------|:--------------------------------------------|
 | Delegado (conta corporativa ou de estudante)     | Sem suporte.                              |
 | Delegado (conta pessoal da Microsoft) | Sem suporte.                              |
-| Aplicativo                            | Nenhum.                                       |
+| Aplicativo                            | Calls.Initiate.All, Calls.AccessMedia.All |
+
+> **Observação:** As permissões são verificadas quando a chamada é criada; nenhuma verificação de permissão adicional é feita ao chamar essa API. Calls.AccessMedia.All só é necessário para chamadas que usam mídia hospedada pelo aplicativo.
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- { "blockType": "ignored" } -->

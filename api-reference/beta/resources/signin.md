@@ -5,12 +5,12 @@ description: Fornece detalhes sobre a atividade de login de usuário ou de aplic
 author: besiler
 ms.localizationpriority: medium
 ms.prod: identity-and-access-reports
-ms.openlocfilehash: 145968f60e1a777b95563095c0417a08f95968a8
-ms.sourcegitcommit: 25acfa7d0153336c9a35d30a1dd422aeadc1342c
+ms.openlocfilehash: 2f5b27d0b0a128896f4c575796514373b506bc55
+ms.sourcegitcommit: 0e7927f34b7e55d323acbf281e11560cb40a89ed
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/03/2022
-ms.locfileid: "62339091"
+ms.lasthandoff: 03/20/2022
+ms.locfileid: "63672179"
 ---
 # <a name="signin-resource-type"></a>tipo de recurso de domínio
 
@@ -18,11 +18,11 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Fornece detalhes sobre a atividade de login de usuário ou de aplicativo em seu diretório. Você deve ter uma Azure AD Premium P1 ou P2 para baixar logs de login usando a API Graph Microsoft.
+Fornece detalhes sobre a atividade de login de usuário ou de aplicativo em seu diretório. Você deve ter uma licença Azure AD Premium P1 ou P2 para baixar logs de login usando a API Graph Microsoft.
 
 A disponibilidade de logs de login é governada pelas políticas de retenção de dados do [Azure AD](/azure/active-directory/reports-monitoring/reference-reports-data-retention#how-long-does-azure-ad-store-the-data).
 
-## <a name="methods"></a>Methods
+## <a name="methods"></a>Métodos
 
 | Método           | Tipo de retorno    |Descrição|
 |:---------------|:--------|:----------|
@@ -33,11 +33,11 @@ A disponibilidade de logs de login é governada pelas políticas de retenção d
 | Propriedade     | Tipo   |Descrição|
 |:---------------|:--------|:----------|
 |appDisplayName|String|O nome do aplicativo exibido no Portal do Azure. Oferece suporte `$filter` (`eq` e `startsWith` somente operadores).|
-|appId|String|O identificador do aplicativo no Azure Active Directory. Suporta `$filter` (`eq` somente operador).|
+|appId|String|O identificador de aplicativo no Azure Active Directory. Suporta `$filter` (`eq` somente operador).|
 |appliedConditionalAccessPolicies|[coleção appliedConditionalAccessPolicy](appliedconditionalaccesspolicy.md)|Uma lista de políticas de acesso condicional que são disparadas pela atividade de entrada correspondente.|
 |authenticationContextClassReferences|[Coleção authenticationContext](authenticationcontext.md)|Contém uma coleção de valores que representam os contextos de autenticação de acesso condicional aplicados à entrada.|
 |authenticationDetails|[Coleção authenticationDetail](authenticationdetail.md)|O resultado da tentativa de autenticação e detalhes adicionais sobre o método de autenticação.|
-|authenticationMethodsUsed|String collection|Os métodos de autenticação usados. Valores possíveis: `SMS`, `Authenticator App`, `App Verification code`, `Password`, `FIDO`, `PTA`, ou `PHS`.|
+|authenticationMethodsUsed|Coleção de cadeias de caracteres|Os métodos de autenticação usados. Valores possíveis: `SMS`, `Authenticator App`, `App Verification code`, `Password`, `FIDO`, `PTA`, ou `PHS`.|
 |authenticationProcessingDetails|Coleção [KeyValue](keyvalue.md)|Detalhes adicionais de processamento de autenticação, como o nome do agente em caso de PTA/PHS ou nome de servidor/farm em caso de autenticação federada.|
 |authenticationProtocol|protocolType|Lista o tipo de protocolo ou tipo de concessão usado na autenticação. Os valores possíveis são `none`, `oAuth2`, `ropc`, `wsFederation`, `saml20`, `deviceCode`, `unknownFutureValue`. Para autenticações que usam protocolos diferentes dos valores possíveis listados, o tipo de protocolo é listado como `none`. |
 |authenticationRequirement | String | Isso mantém o nível mais alto de autenticação necessário por meio de todas as etapas de login, para que a assinatura seja bem-sucedida. Oferece suporte `$filter` (`eq` e `startsWith` somente operadores).|
@@ -52,8 +52,8 @@ A disponibilidade de logs de login é governada pelas políticas de retenção d
 |deviceDetail|[deviceDetail](devicedetail.md)|As informações do dispositivo de onde ocorreu a entrada. Inclui informações como deviceId, so e navegador. Oferece `$filter` suporte (`eq` e `startsWith` somente operadores) nas **propriedades browser** e **operatingSystem** .|
 |federatedCredentialId|String|Contém o identificador da credencial de identidade federada de um aplicativo, se uma credencial de identidade federada foi usada para entrar.|
 |flaggedForReview|Booliano|Durante uma falha na entrada, um usuário pode clicar em um botão no portal do Azure para marcar o evento com falha para administradores de locatários. Se um usuário clicou no botão para sinalizar a falha de login, esse valor será `true`.|
-|homeTenantId|Cadeia de caracteres|O identificador de locatário do usuário que inicia a login. Não aplicável em Identidades Gerenciadas ou em logins da entidade de serviço.|
-|homeTenantName|Cadeia de caracteres|Para entrar no usuário, o identificador do locatário de que o usuário é membro. Somente populado em casos em que o locatário da residência forneceu consentimento afirmativo ao Azure AD para mostrar o conteúdo do locatário.|
+|homeTenantId|String|O identificador de locatário do usuário que inicia a login. Não aplicável em Identidades Gerenciadas ou em logins da entidade de serviço.|
+|homeTenantName|String|Para entrar no usuário, o identificador do locatário de que o usuário é membro. Somente populado em casos em que o locatário da residência forneceu consentimento afirmativo ao Azure AD para mostrar o conteúdo do locatário.|
 |id|String|O identificador que representa a atividade de login. Herdado da [entidade](entity.md). Suporta `$filter` (`eq` somente operador).|
 |incomingTokenType|incomingTokenType|Indica os tipos de token que foram apresentados ao Azure AD para autenticar o ator na assinatura. Os valores possíveis são: `none`, `primaryRefreshToken`, `saml11`, `saml20`, `unknownFutureValue`. <br><br> **OBSERVAÇÃO** O Azure AD também pode ter usado tipos de token não listados neste tipo de Enumeração para autenticar o ator. Não infera a falta de um token se não for um dos tipos listados. |
 |ipAddress|Cadeia de caracteres|O endereço IP do cliente de onde ocorreu a entrada. Oferece suporte `$filter` (`eq` e `startsWith` somente operadores).|
@@ -65,12 +65,12 @@ A disponibilidade de logs de login é governada pelas políticas de retenção d
 |originalRequestId|Cadeia de caracteres|O identificador de solicitação da primeira solicitação na sequência de autenticação. Suporta `$filter` (`eq` somente operador).|
 |privateLinkDetails|[privateLinkDetails](../resources/privatelinkdetails.md)|Contém informações sobre a política de Link Privado do Azure AD associada ao evento de login.|
 |processingTimeInMilliseconds|Int|O tempo de processamento da solicitação em milissegundos no AD STS.|
-|resourceDisplayName|Cadeia de caracteres|O nome do recurso ao que o usuário se inscreveu. Suporta `$filter` (`eq` somente operador).|
+|resourceDisplayName|String|O nome do recurso ao que o usuário se inscreveu. Suporta `$filter` (`eq` somente operador).|
 |resourceId|Cadeia de caracteres|O identificador do recurso ao que o usuário se inscreveu. Suporta `$filter` (`eq` somente operador).|
 |resourceServicePrincipalId|String|O identificador da entidade de serviço que representa o recurso de destino no evento de entrada.|
 |resourceTenantId|String|O identificador de locatário do recurso referenciado na assinatura.|
 |riskDetail|riskDetail|O motivo por trás de um estado específico de um usuário arriscado, de entrar ou de um evento de risco. Valores possíveis: `none`, `adminGeneratedTemporaryPassword`, `userPerformedSecuredPasswordChange`, `userPerformedSecuredPasswordReset`, `adminConfirmedSigninSafe`, `aiConfirmedSigninSafe`, `userPassedMFADrivenByRiskBasedPolicy`, `adminDismissedAllRiskForUser`, , `adminConfirmedSigninCompromised`ou `unknownFutureValue`. O valor `none` significa que nenhuma ação foi realizada pelo usuário ou entrar até o momento. Suporta `$filter` (`eq` somente operador).<br> **Observação:** detalhes para esta propriedade estão disponíveis apenas para clientes do Azure AD Premium P2. Todos os outros clientes são retornados `hidden`.|
-|riskEventTypes_v2|Conjunto de cadeias de caracteres|A lista de tipos de eventos de risco associados à assinatura. Valores possíveis: `unlikelyTravel`, `anonymizedIPAddress`, `maliciousIPAddress`, `unfamiliarFeatures`, `malwareInfectedIPAddress`, `suspiciousIPAddress`, `leakedCredentials`, `investigationsThreatIntelligence`, ,  `generic`ou `unknownFutureValue`. Oferece suporte `$filter` (`eq` e `startsWith` somente operadores).|
+|riskEventTypes_v2|Coleção de cadeias de caracteres|A lista de tipos de eventos de risco associados à assinatura. Valores possíveis: `unlikelyTravel`, `anonymizedIPAddress`, `maliciousIPAddress`, `unfamiliarFeatures`, `malwareInfectedIPAddress`, `suspiciousIPAddress`, `leakedCredentials`, `investigationsThreatIntelligence`, ,  `generic`ou `unknownFutureValue`. Oferece suporte `$filter` (`eq` e `startsWith` somente operadores).|
 |riskLevelAggregated|riskLevel|O nível de risco agregado. Valores possíveis: `none`, `low`, `medium`, `high`, `hidden`ou `unknownFutureValue`. O valor `hidden` significa que o usuário ou entrada não foi habilitado para proteção de identidade do Azure AD. Suporta `$filter` (`eq` somente operador). <br>**Observação:** detalhes para esta propriedade estão disponíveis apenas para clientes do Azure AD Premium P2. Todos os outros clientes são retornados `hidden`.|
 |riskLevelDuringSignIn|riskLevel|O nível de risco durante a assinatura. Valores possíveis: `none`, `low`, `medium`, `high`, `hidden`ou `unknownFutureValue`. O valor `hidden` significa que o usuário ou entrada não foi habilitado para proteção de identidade do Azure AD. Suporta `$filter` (`eq` somente operador). <br>**Observação:** detalhes para esta propriedade estão disponíveis apenas para clientes do Azure AD Premium P2. Todos os outros clientes são retornados `hidden`.|
 |riskState|riskState|O estado de risco de um usuário arriscado, de entrar ou de um evento de risco. Valores possíveis: `none`, `confirmedSafe`, `remediated`, `dismissed`, `atRisk`, `confirmedCompromised`, ou `unknownFutureValue`. Suporta `$filter` (`eq` somente operador).|
@@ -79,7 +79,7 @@ A disponibilidade de logs de login é governada pelas políticas de retenção d
 |servicePrincipalId|String|O identificador de aplicativo usado para entrar. Esse campo é preenchido quando você está fazendo o registro usando um aplicativo. Oferece suporte `$filter` (`eq` e `startsWith` somente operadores).|
 |servicePrincipalName|Cadeia de caracteres|O nome do aplicativo usado para entrar. Esse campo é preenchido quando você está fazendo o registro usando um aplicativo. Oferece suporte `$filter` (`eq` e `startsWith` somente operadores).|
 |sessionLifetimePolicies|[Coleção sessionLifetimePolicy](sessionlifetimepolicy.md)|Quaisquer políticas de gerenciamento de sessão de acesso condicional que foram aplicadas durante o evento de entrada.|
-|signInEventTypes|String collection|Indica a categoria de sign in que o evento representa. Para entrar no usuário, a categoria pode ser `interactiveUser` `nonInteractiveUser` ou corresponde ao valor da **propriedade isInteractive** no recurso de signin. Para as insições de identidade gerenciada, a categoria é `managedIdentity`. Para as insições da entidade de serviço, a categoria **é servicePrincipal**. Os valores possíveis são: `interactiveUser`, `nonInteractiveUser`, `servicePrincipal`, `managedIdentity`, `unknownFutureValue`. Suporta `$filter` (`eq` somente operador).|
+|signInEventTypes|Coleção de cadeias de caracteres|Indica a categoria de sign in que o evento representa. Para entrar no usuário, a categoria pode ser `interactiveUser` `nonInteractiveUser` ou corresponde ao valor da **propriedade isInteractive** no recurso de signin. Para as insições de identidade gerenciada, a categoria é `managedIdentity`. Para as insições da entidade de serviço, a categoria **é servicePrincipal**. Os valores possíveis são: `interactiveUser`, `nonInteractiveUser`, `servicePrincipal`, `managedIdentity`, `unknownFutureValue`. Suporta `$filter` (`eq`, `ne`).|
 |signInIdentifier|String|A identificação que o usuário forneceu para entrar. Pode ser o userPrincipalName, mas também é preenchido quando um usuário entra usando outros identificadores.|
 |signInIdentifierType|signInIdentifierType|O tipo de identificador de login. Os possíveis valores são: `userPrincipalName`, `phoneNumber`, `proxyAddress`, `qrCode`, `onPremisesUserPrincipalName`, `unknownFutureValue`.|
 |status|[signInStatus](signinstatus.md)|O status de login. Inclui o código de erro e a descrição do erro (no caso de uma falha de login). Suporta `$filter` (`eq` somente operador) na **propriedade errorCode** .|
@@ -89,7 +89,7 @@ A disponibilidade de logs de login é governada pelas políticas de retenção d
 |userAgent|String|As informações do agente do usuário relacionadas à login. Oferece suporte `$filter` (`eq` e `startsWith` somente operadores).|
 |userDisplayName|Cadeia de caracteres|O nome de exibição do usuário. Oferece suporte `$filter` (`eq` e `startsWith` somente operadores).|
 |userId|Cadeia de caracteres|O identificador do usuário. Suporta `$filter` (`eq` somente operador).|
-|userPrincipalName|Cadeia de caracteres|O UPN do usuário. Oferece suporte `$filter` (`eq` e `startsWith` somente operadores).|
+|userPrincipalName|String|O UPN do usuário. Oferece suporte `$filter` (`eq` e `startsWith` somente operadores).|
 |userType|signInUserType|Identifica se o usuário é membro ou convidado no locatário. Os valores possíveis são: `member`, `guest`, `unknownFutureValue`.|
 |mfaDetail (preterido)|String|Essa propriedade é preterida.|
 

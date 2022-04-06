@@ -1,16 +1,16 @@
 ---
 title: Listar logons
 doc_type: apiPageType
-description: Obter uma lista dos logins do usuário em um Azure Active Directory locatário.
+description: Obter uma lista dos logins do usuário em um locatário Azure Active Directory usuário.
 ms.localizationpriority: medium
 author: besiler
 ms.prod: identity-and-access-reports
-ms.openlocfilehash: 699ca644b3c968953c36eff155440dea198aefd0
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: 07f4d9976fefe8d6af3f4e149e223b80f2ee9b92
+ms.sourcegitcommit: 0e7927f34b7e55d323acbf281e11560cb40a89ed
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62095911"
+ms.lasthandoff: 03/20/2022
+ms.locfileid: "63670947"
 ---
 # <a name="list-signins"></a>Listar logons
 
@@ -18,9 +18,9 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Obter uma lista de [objetos signIn.](../resources/signin.md) A lista contém as assinaturas do usuário para seu Azure Active Directory locatário. As inserções em que um nome de usuário e senha são passados como parte do token de autorização e as inserções federadas bem-sucedidas estão incluídas nos logs de login.
+Obter uma lista de [objetos signIn](../resources/signin.md) . A lista contém as assinaturas do usuário para seu Azure Active Directory locatário. As inserções em que um nome de usuário e senha são passados como parte do token de autorização e as inserções federadas bem-sucedidas estão incluídas nos logs de login.
 
-O tamanho máximo e padrão da página é de 1.000 objetos e, por padrão, as inscrições mais recentes são retornadas primeiro. Somente os eventos de login que ocorreram dentro do período [](/azure/active-directory/reports-monitoring/reference-reports-data-retention#how-long-does-azure-ad-store-the-data) de retenção padrão do Azure Active Directory (Azure AD) estão disponíveis.
+O tamanho máximo e padrão da página é de 1.000 objetos e, por padrão, as inscrições mais recentes são retornadas primeiro. Somente os eventos de login que ocorreram dentro do período de retenção padrão Azure Active Directory (Azure AD[) estão](/azure/active-directory/reports-monitoring/reference-reports-data-retention#how-long-does-azure-ad-store-the-data) disponíveis.
 
 ## <a name="permissions"></a>Permissões
 
@@ -33,17 +33,17 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 | Aplicativo | AuditLog.Read.All e Directory.Read.All | 
 
 > [!IMPORTANT]
-> Esta API tem um [problema conhecido](/graph/known-issues#license-check-errors-for-azure-ad-activity-reports) e atualmente requer consentimento para as permissões **AuditLog.Read.All** e **Directory.Read.All.**
+> Esta API tem um [problema conhecido](/graph/known-issues#license-check-errors-for-azure-ad-activity-reports) e atualmente requer consentimento para as permissões **AuditLog.Read.All** e **Directory.Read.All** .
 
-Os aplicativos devem [estar registrados corretamente](/azure/active-directory/active-directory-reporting-api-prerequisites-azure-portal) no Azure AD.
+Os aplicativos devem [estar registrados](/azure/active-directory/active-directory-reporting-api-prerequisites-azure-portal) corretamente no Azure AD.
 
-Além das permissões delegadas, o usuário inscreveu precisa pertencer a uma das seguintes funções de diretório que permitem ler relatórios de logons. Para saber mais sobre funções de diretório, consulte Funções do [Azure AD integrados](/azure/active-directory/roles/permissions-reference):
+Além das permissões delegadas, o usuário inscreveu precisa pertencer a uma das seguintes funções de diretório que permitem ler relatórios de logons. Para saber mais sobre funções de diretório, consulte [Funções in-loco do Azure AD](/azure/active-directory/roles/permissions-reference):
 + Administrador global
-+ Leitor global
++ Leitor Global
 + Leitor de Relatórios
 + Administrador de Segurança
 + Operador de segurança
-+ Leitor de segurança
++ Leitor de Segurança
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- { "blockType": "ignored" } -->
@@ -53,7 +53,7 @@ GET auditLogs/signIns
 
 ## <a name="optional-query-parameters"></a>Parâmetros de consulta opcionais
 
-Este método dá suporte `$top` aos `$skiptoken` parâmetros , e `$filter` OData Query para ajudar a personalizar a resposta. Para obter detalhes sobre como usar esses parâmetros, confira [Parâmetros de consulta do OData](/graph/query-parameters).
+Este método dá suporte aos `$top`parâmetros , `$skiptoken`e `$filter` OData Query para ajudar a personalizar a resposta. Para obter detalhes sobre como usar esses parâmetros, confira [Parâmetros de consulta do OData](/graph/query-parameters).
 
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
 
@@ -240,7 +240,7 @@ Content-type: application/json
 
 ### <a name="example-2-retrieve-the-first-10-sign-ins-to-apps-with-the-appdisplayname-that-starts-with-azure"></a>Exemplo 2: Recuperar os primeiros 10 logins em aplicativos com o appDisplayName que começa com 'Azure'
 
-Neste exemplo, o objeto de resposta mostra o usuário se inscreveu usando apenas o método de autenticação principal, uma senha de nuvem. A resposta inclui uma `@odata.nextLink` propriedade que contém uma URL que pode ser usada para recuperar os próximos 10 resultados.
+Neste exemplo, o objeto de resposta mostra o usuário se inscreveu usando apenas o método de autenticação principal, uma senha de nuvem. A resposta inclui uma propriedade `@odata.nextLink` que contém uma URL que pode ser usada para recuperar os próximos 10 resultados.
 
 #### <a name="request"></a>Solicitação
 
@@ -387,5 +387,166 @@ Content-type: application/json
       "sessionLifetimePolicies":[]
     }
   ]
+}
+```
+
+
+
+### <a name="example-3-retrieve-the-first-10-sign-ins-where-the-signineventtype-is-not-interactiveuser-starting-with-the-latest-sign-in"></a>Exemplo 3: Recuperar os primeiros 10 sign-ins em que o signInEventType não é interativoUsuário começando com a última login
+
+Neste exemplo, a resposta inclui uma `@odata.nextLink` propriedade que contém uma URL que pode ser usada para recuperar os próximos 10 resultados.
+
+#### <a name="request"></a>Solicitação
+
+<!-- {
+  "blockType": "request",
+  "name": "get_signins_ne_nonInteractiveUser"
+}-->
+```msgraph-interactive
+GET https://graph.microsoft.com/beta/auditLogs/signins?&$filter=(signInEventTypes/any(t: t ne 'interactiveUser'))&$orderBy=createdDateTime DESC&$top=10
+```
+
+
+#### <a name="response"></a>Resposta
+>**Observação:** o objeto de resposta mostrado aqui pode ser encurtado para legibilidade.
+
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.signIn"
+} -->
+
+```http
+HTTP/1.1 200 OK
+Content-type: application/json
+
+{
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#auditLogs/signIns",
+    "@odata.nextLink": "https://graph.microsoft.com/beta/auditLogs/signins?$filter=(signInEventTypes%2fany(t%3a+t+ne+%27interactiveUser%27))&$top=10&$orderBy=createdDateTime+DESC&$skiptoken=186ac5626b89ae2a991ff26b674ac381be50b941a40542cb66f8136f2887275b",
+    "value": [
+        {
+            "id": "ef1e1fcc-80bd-489b-82c5-16ad80770e00",
+            "createdDateTime": "2022-03-18T18:13:37Z",
+            "userDisplayName": "MOD Administrator",
+            "userPrincipalName": "admin@contoso.com",
+            "userId": "4562bcc8-c436-4f95-b7c0-4f8ce89dca5e",
+            "appId": "de8bc8b5-d9f9-48b1-a8ad-b748da725064",
+            "appDisplayName": "Graph Explorer",
+            "ipAddress": "197.178.9.154",
+            "ipAddressFromResourceProvider": null,
+            "clientAppUsed": "Browser",
+            "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/99.0.4844.51 Safari/537.36",
+            "correlationId": "17b4f05d-3659-42b8-856d-99322911d398",
+            "conditionalAccessStatus": "notApplied",
+            "originalRequestId": "",
+            "isInteractive": false,
+            "tokenIssuerName": "",
+            "tokenIssuerType": "AzureAD",
+            "processingTimeInMilliseconds": 132,
+            "riskDetail": "none",
+            "riskLevelAggregated": "none",
+            "riskLevelDuringSignIn": "none",
+            "riskState": "none",
+            "riskEventTypes_v2": [],
+            "resourceDisplayName": "Microsoft Graph",
+            "resourceId": "00000003-0000-0000-c000-000000000000",
+            "resourceTenantId": "84841066-274d-4ec0-a5c1-276be684bdd3",
+            "homeTenantId": "84841066-274d-4ec0-a5c1-276be684bdd3",
+            "homeTenantName": "",
+            "authenticationMethodsUsed": [],
+            "authenticationRequirement": "singleFactorAuthentication",
+            "signInIdentifier": "",
+            "signInIdentifierType": null,
+            "servicePrincipalName": "",
+            "signInEventTypes": [
+                "nonInteractiveUser"
+            ],
+            "servicePrincipalId": "",
+            "federatedCredentialId": "",
+            "userType": "member",
+            "flaggedForReview": false,
+            "isTenantRestricted": false,
+            "autonomousSystemNumber": 33771,
+            "crossTenantAccessType": "none",
+            "servicePrincipalCredentialKeyId": "",
+            "servicePrincipalCredentialThumbprint": "",
+            "uniqueTokenIdentifier": "ZWYxZTFmY2MtODBiZC00ODliLTgyYzUtMTZhZDgwNzcwZTAw",
+            "incomingTokenType": "none",
+            "authenticationProtocol": "none",
+            "resourceServicePrincipalId": "943603e4-e787-4fe9-93d1-e30f749aae39",
+            "mfaDetail": null,
+            "status": {
+                "errorCode": 0,
+                "failureReason": "Other.",
+                "additionalDetails": null
+            },
+            "deviceDetail": {
+                "deviceId": "eab73519-780d-4d43-be6d-a4a89af2a348",
+                "displayName": "DESKTOP-LK3PESR",
+                "operatingSystem": "Windows 10",
+                "browser": "Chrome 99.0.4844",
+                "isCompliant": false,
+                "isManaged": false,
+                "trustType": "Azure AD registered"
+            },
+            "location": {
+                "city": "Mombasa",
+                "state": "Coast",
+                "countryOrRegion": "KE",
+                "geoCoordinates": {}
+            },
+            "appliedConditionalAccessPolicies": [
+                {
+                    "id": "80290cf6-04c8-4a25-8252-2b4d7d88228a",
+                    "displayName": "Exchange Online Requires Compliant Device",
+                    "enforcedGrantControls": [],
+                    "enforcedSessionControls": [],
+                    "result": "notEnabled",
+                    "conditionsSatisfied": "none",
+                    "conditionsNotSatisfied": "none",
+                    "includeRulesSatisfied": [],
+                    "excludeRulesSatisfied": []
+                },
+                {
+                    "id": "a00746d4-8c33-47f7-b120-91936b367a54",
+                    "displayName": "Office 365 App Control",
+                    "enforcedGrantControls": [],
+                    "enforcedSessionControls": [],
+                    "result": "notEnabled",
+                    "conditionsSatisfied": "none",
+                    "conditionsNotSatisfied": "none",
+                    "includeRulesSatisfied": [],
+                    "excludeRulesSatisfied": []
+                }
+            ],
+            "authenticationProcessingDetails": [
+                {
+                    "key": "Root Key Type",
+                    "value": "Unknown"
+                },
+                {
+                    "key": "Oauth Scope Info",
+                    "value": "[\"Application.ReadWrite.All\",\"AppRoleAssignment.ReadWrite.All\",\"DelegatedPermissionGrant.ReadWrite.All\",\"Directory.ReadWrite.All\",\"openid\",\"profile\",\"RoleManagement.Read.Directory\",\"User.Read\",\"email\",\"AuditLog.Read.All\"]"
+                }
+            ],
+            "networkLocationDetails": [
+                {
+                    "networkType": "namedNetwork",
+                    "networkNames": [
+                        "Suspicious countries"
+                    ]
+                }
+            ],
+            "authenticationDetails": [],
+            "authenticationRequirementPolicies": [],
+            "sessionLifetimePolicies": [],
+            "privateLinkDetails": {
+                "policyId": "",
+                "policyName": "",
+                "resourceId": "",
+                "policyTenantId": ""
+            }
+        }
+    ]
 }
 ```

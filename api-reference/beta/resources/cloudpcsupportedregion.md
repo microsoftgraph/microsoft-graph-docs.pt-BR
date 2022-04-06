@@ -1,16 +1,16 @@
 ---
 title: Tipo de recurso cloudPcSupportedRegion
-description: Representa uma região com suporte para estabelecer uma conexão de rede local para PCs na Nuvem.
+description: Representa uma região com suporte para estabelecer uma conexão de rede do Azure para PCs de Nuvem.
 author: RuiHou105
 ms.localizationpriority: medium
 ms.prod: cloud-pc
 doc_type: resourcePageType
-ms.openlocfilehash: 150138b8be51fd8b333cb100aaa65dbbcd8bdfc6
-ms.sourcegitcommit: 36bae3615df41876493b25da478e589d1974f97b
+ms.openlocfilehash: d13bfb6709d856119dcfaa700d819b9ed6f55258
+ms.sourcegitcommit: cc9e5b3630cb84c48bbbb2d84a963b9562d1fb78
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "59997223"
+ms.lasthandoff: 03/31/2022
+ms.locfileid: "64588565"
 ---
 # <a name="cloudpcsupportedregion-resource-type"></a>Tipo de recurso cloudPcSupportedRegion
 
@@ -18,7 +18,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Representa uma região com suporte para estabelecer uma conexão de rede local para PCs na Nuvem.
+Representa uma região com suporte para estabelecer uma conexão de rede do Azure para PCs de Nuvem.
 
 ## <a name="methods"></a>Métodos
 

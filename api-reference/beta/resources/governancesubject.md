@@ -4,13 +4,13 @@ description: Representa usuários, grupos e entidades de serviço que estão sen
 ms.localizationpriority: medium
 doc_type: resourcePageType
 ms.prod: governance
-author: carolinetempleton
-ms.openlocfilehash: 5552ba73a20ed4e27b906244d5610f84dccadfe7
-ms.sourcegitcommit: c7ff992ef63e480d070421ba99b28ee129cb6acb
+author: japere
+ms.openlocfilehash: 99e668cc18ff38f8a4b26c11d514beddcc020e00
+ms.sourcegitcommit: 43a7c971a97ce1e4c55cbae089820bfce7dfe42b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "60695402"
+ms.lasthandoff: 03/29/2022
+ms.locfileid: "64509634"
 ---
 # <a name="governancesubject-resource-type"></a>Tipo de recurso governanceSubject
 
@@ -24,9 +24,9 @@ Representa usuários, grupos e entidades de serviço que estão sendo gerenciada
 ## <a name="properties"></a>Propriedades
 | Propriedade  | Tipo       |Descrição|
 |:----------|:----------|:----------|
-|id         |String     | A id do assunto.|
-|type       |String     |O tipo do assunto. O valor pode ``User`` ser ``Group`` , e ``ServicePrincipal`` .|
-|displayName|String     |O nome de exibição do assunto.|
+|id         |Cadeia de caracteres     | A id do assunto.|
+|type       |String     |O tipo do assunto. O valor pode ser ``User``, ``Group``e ``ServicePrincipal``.|
+|displayName|Cadeia de caracteres     |O nome de exibição do assunto.|
 |email      |Cadeia de caracteres     |O endereço de email do assunto do usuário. Se o assunto estiver em outros tipos, ele está vazio.|
 |principalName|Cadeia de caracteres   |O nome principal do assunto do usuário. Se o assunto estiver em outros tipos, ele está vazio.|
 

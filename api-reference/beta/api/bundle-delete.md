@@ -1,16 +1,16 @@
 ---
 author: JeremyKelley
 title: Excluir pacote
-description: Excluir um pacote de driveItems
+description: Exclua um pacote de driveItems.
 ms.localizationpriority: medium
 ms.prod: sharepoint
 doc_type: apiPageType
-ms.openlocfilehash: 7edd748b0e1a1298ed950ce885fb92bbfcf56064
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: f649bcda68e8eddfacecc24abd3ed5e0b80cb8bc
+ms.sourcegitcommit: 0d6d39dd6450e0c5fd6844cb78aead00a0782e46
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "60994695"
+ms.lasthandoff: 03/23/2022
+ms.locfileid: "63758148"
 ---
 # <a name="delete-bundle"></a>Excluir pacote
 
@@ -22,7 +22,7 @@ Namespace: microsoft.graph
 No entanto, ele não remove os itens que foram referenciados pelo pacote.
 Eles permanecerão em suas pastas pai.
 
-## <a name="permissions"></a>Permissões
+## <a name="permissions"></a>Permissions
 
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
@@ -44,23 +44,24 @@ DELETE /drive/items/{bundle-id}
 
 | Nome          | Descrição  |
 |:------------- |:------------ |
-| Autorização | \{token\} de portador. Obrigatório. |
-| if-match      | eTag. Opcional. Se esse header de solicitação estiver incluído e a eTag (ou cTag) fornecida não corresponder à marca atual no pacote, uma resposta será retornada e o pacote não `412 Precondition Failed` será excluído.
+| Autorização | {token} de portador. Obrigatório. |
+| if-match      | eTag. Opcional. Se esse header de solicitação estiver incluído e a eTag (ou cTag) fornecida não corresponder à marca atual no pacote, `412 Precondition Failed` uma resposta será retornada e o pacote não será excluído.|
 
 ## <a name="request-body"></a>Corpo da solicitação
 
-Não forneça um corpo de solicitação com esse método.
+Não forneça um corpo de solicitação para esse método.
 
 ## <a name="response"></a>Resposta
 
-Se bem sucedida, esta chamada retorna uma resposta `204 No Content` para indicar que o recurso foi excluído e que não havia nada a retornar.
+Se bem-sucedido, este método retorna um código de resposta `204 No Content`. Não retorna nada no corpo da resposta.
 
-Leia o tópico [Respostas de erro][error-response] para obter mais informações sobre como os erros são retornados.
+Para obter informações sobre respostas a erros, consulte [Microsoft Graph respostas de erro e tipos de recursos][error-response].
 
 ## <a name="example"></a>Exemplo
 
 ### <a name="request"></a>Solicitação
 
+Veja a seguir um exemplo de uma solicitação.
 
 # <a name="http"></a>[HTTP](#tab/http)
 <!-- { "blockType": "request", "name": "delete-bundle" } -->
@@ -84,7 +85,7 @@ DELETE https://graph.microsoft.com/beta/drive/items/{bundle-id}
 [!INCLUDE [sample-code](../includes/snippets/java/delete-bundle-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[Go](#tab/go)
+# <a name="go"></a>[Ir](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/delete-bundle-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
@@ -93,6 +94,8 @@ DELETE https://graph.microsoft.com/beta/drive/items/{bundle-id}
 
 ### <a name="response"></a>Resposta
 
+Este é um exemplo de resposta.
+
 <!-- { "blockType": "response" } -->
 
 ```http
@@ -100,7 +103,7 @@ HTTP/1.1 204 No Content
 ```
 
 
-[bundle]: ../resources/bundle.md
+[Agrupar]: ../resources/bundle.md
 [error-response]: /graph/errors
 
 <!-- {

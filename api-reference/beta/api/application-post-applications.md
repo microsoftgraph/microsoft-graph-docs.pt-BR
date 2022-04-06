@@ -5,12 +5,12 @@ author: sureshja
 ms.localizationpriority: high
 doc_type: apiPageType
 ms.prod: applications
-ms.openlocfilehash: d34b29722ae58a3244bc6629b49ee3c88727bf35
-ms.sourcegitcommit: 77d2ab5018371f153d47cc1cd25f9dcbaca28a95
+ms.openlocfilehash: a27891136f2092a4012188cfed6606cf3906e1f3
+ms.sourcegitcommit: 0249c86925c9b4797908394c952073b5d9137911
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63332627"
+ms.lasthandoff: 03/25/2022
+ms.locfileid: "64477584"
 ---
 # <a name="create-application"></a>Criar aplicativo
 
@@ -21,7 +21,7 @@ Namespace: microsoft.graph
 Crie um novo objeto [application](../resources/application.md).
 
 > [!IMPORTANT]
-> Não é possível adicionar [**passwordCredential**](../resources/passwordcredential.md) ao criar aplicativos. Utilize o método [addPassword](application-addpassword.md) para adicionar senhas a um aplicativo.
+> Não é possível adicionar [**passwordCredential**](../resources/passwordcredential.md) ao criar aplicativos. Use o método [addPassword](application-addpassword.md) para adicionar senhas ou segredos para um aplicativo.
 
 ## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
@@ -29,7 +29,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegada (conta corporativa ou de estudante) | Application.ReadWrite.All, Directory.ReadWrite.All, Directory.AccessAsUser.All    |
+|Delegado (conta corporativa ou de estudante) | Application.ReadWrite.All, Directory.ReadWrite.All    |
 |Delegada (conta pessoal da Microsoft) | Application.ReadWrite.All    |
 |Aplicativo | Application.ReadWrite.OwnedBy, Application.ReadWrite.All, Directory.ReadWrite.All |
 

@@ -1,16 +1,16 @@
 ---
 title: Tipo de recurso externalItemContent
-description: O conteúdo de um item indexado por meio de Pesquisa da Microsoft conexão.
-localization_priority: Normal
+description: O conteúdo de um item indexado por meio de uma Pesquisa da Microsoft conexão.
+ms.localizationpriority: medium
 author: snlraju-msft
 ms.prod: search
 doc_type: resourcePageType
-ms.openlocfilehash: d895d0056da71ea065dbc62d08c9deda054a6f29
-ms.sourcegitcommit: 1940be9846055aa650c6c03982b74a961f1e316a
+ms.openlocfilehash: 36ca1d19e9be37d7c47c9195fc2c63f677673c0e
+ms.sourcegitcommit: f5382652b6880fab42040df40a08de7cb2d74d35
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/17/2021
-ms.locfileid: "53467600"
+ms.lasthandoff: 03/17/2022
+ms.locfileid: "63560088"
 ---
 # <a name="externalitemcontent-resource-type"></a>Tipo de recurso externalItemContent
 
@@ -18,14 +18,14 @@ Namespace: microsoft.graph.externalConnectors
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-O conteúdo de [um externalItem](externalconnectors-externalitem.md) indexado por meio de uma conexão Pesquisa da Microsoft [.](externalconnectors-externalconnection.md)
+O conteúdo de [um externalItem](externalconnectors-externalitem.md) indexado por meio de Pesquisa da Microsoft [conexão](externalconnectors-externalconnection.md).
 
 ## <a name="properties"></a>Propriedades
 
 | Propriedade | Tipo   | Descrição                                                                                 |
 |:---------|:-------|:--------------------------------------------------------------------------------------------|
 | valor    | Cadeia de caracteres | O conteúdo do externalItem. Obrigatório.                                                 |
-| tipo     | String | O tipo de conteúdo na propriedade value. Os valores possíveis são: `text` e `html`. Obrigatório. |
+| type     | Cadeia de caracteres | O tipo de conteúdo na propriedade value. Os valores possíveis são: `text` e `html`. Esses são os tipos de conteúdo que o indexador suporta e não os tipos de extensão de arquivo permitidos. Obrigatório. |
 
 ## <a name="relationships"></a>Relações
 

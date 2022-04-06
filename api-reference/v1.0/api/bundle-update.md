@@ -1,30 +1,30 @@
 ---
 author: JeremyKelley
-title: Atualizar um pacote
+title: Pacote de atualização
 description: Atualizar um pacote de driveItems
 ms.localizationpriority: medium
 ms.prod: sharepoint
 doc_type: apiPageType
-ms.openlocfilehash: b9434f81eb832a98cb8199fe78dd76e9ac032625
-ms.sourcegitcommit: 0d6d39dd6450e0c5fd6844cb78aead00a0782e46
+ms.openlocfilehash: 07f69618fae4fe2424abee3a1ac274d6ed42e88d
+ms.sourcegitcommit: c21fefa5c3c62df14147e7918cb43327f7d72e69
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/23/2022
-ms.locfileid: "63758043"
+ms.lasthandoff: 04/06/2022
+ms.locfileid: "64684848"
 ---
-# <a name="update-bundle"></a>Pacote de atualizações
+# <a name="update-bundle"></a>Pacote de atualização
 
 Namespace: microsoft.graph
 
-Atualize os metadados [para][] um [pacote de driveItemsdriveItem][] por ID.
+Atualize os metadados [de um pacote][] [de driveItemsdriveItem][] por ID.
 Você só pode atualizar os seguintes metadados:
 
 * Nome do pacote
-* Album `coverImageItemId` (se aplicável)
+* Álbum `coverImageItemId` (se aplicável)
 
 Quaisquer outras solicitações de alteração serão ignoradas.
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>Permissões
 
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
@@ -47,7 +47,7 @@ PATCH /drive/items/{bundle-id}
 | Nome          | Descrição  |
 |:------------- |:------------ |
 | Autorização | \{token\} de portador. Obrigatório. |
-| if-match      | eTag. Opcional. Se esse header de solicitação estiver incluído e a eTag fornecida não corresponder à eTag atual no buncle, uma `412 Precondition Failed` resposta será retornada.
+| if-match      | Etag. Opcional. Se esse cabeçalho de solicitação for incluído e a eTag fornecida não corresponder à eTag atual no buncle, uma `412 Precondition Failed` resposta será retornada.
 
 ## <a name="request-body"></a>Corpo da solicitação
 
@@ -70,7 +70,7 @@ Este exemplo renomeia um pacote.
 <!-- { "blockType": "request", "name": "rename-bundle" } -->
 
 ```http
-PATCH https://graph.microsoft.com/beta/drive/items/{bundle-id}
+PATCH https://graph.microsoft.com/v1.0/drive/items/{bundle-id}
 Content-Type: application/json
 
 {

@@ -5,12 +5,12 @@ author: keylimesoda
 ms.localizationpriority: high
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: b55f5bc2d942ff622374fb44b3521df95667591f
-ms.sourcegitcommit: 25acfa7d0153336c9a35d30a1dd422aeadc1342c
+ms.openlocfilehash: 3aae6f488bfe2e652cdffaec85ad7f73cd664946
+ms.sourcegitcommit: 0e7927f34b7e55d323acbf281e11560cb40a89ed
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/03/2022
-ms.locfileid: "62339542"
+ms.lasthandoff: 03/20/2022
+ms.locfileid: "63668567"
 ---
 # <a name="directoryobject-getbyids"></a>directoryObject: getByIds
 
@@ -33,7 +33,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegado (conta corporativa ou de estudante) | Directory.Read.All, Directory.AccessAsUser.All    |
+|Delegado (conta corporativa ou de estudante) | Directory.Read.All    |
 |Delegado (conta pessoal da Microsoft) | Sem suporte.    |
 |Aplicativo | Directory.Read.All |
 

@@ -3,15 +3,15 @@ author: daspek
 description: O recurso CommentAction fornece informações sobre uma atividade de comentário feitas em um item.
 ms.date: 09/14/2017
 title: CommentAction
-localization_priority: Normal
+ms.localizationpriority: medium
 doc_type: resourcePageType
 ms.prod: ''
-ms.openlocfilehash: f09785ae438225aa109a3b6a30790546cf3f30c1
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 32532bf0771da739db86915091cdc8b79aa942c2
+ms.sourcegitcommit: e5d5095e26dca6f434354a0970e789e94ee6afb0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48033983"
+ms.lasthandoff: 03/22/2022
+ms.locfileid: "63722754"
 ---
 # <a name="commentaction-resource-type"></a>Tipo de recurso CommentAction
 
@@ -28,7 +28,7 @@ O recurso **CommentAction** fornece informações sobre uma [atividade][] de com
 <!-- {
   "blockType": "resource",
   "optionalProperties": [ ],
-  "@type": "microsoft.graph.commentAction"
+  "@type&quot;: &quot;microsoft.graph.commentAction"
 }-->
 
 ```json
@@ -41,11 +41,11 @@ O recurso **CommentAction** fornece informações sobre uma [atividade][] de com
 
 ## <a name="properties"></a>Propriedades
 
-| Nome da propriedade    | Tipo                       | Descrição
-|:-----------------|:---------------------------|:-----------------------------
-| isReply          | booliano                    | Se for verdadeiro, essa atividade era uma resposta para um thread de comentário existente.
-| parentAuthor     | [identitySet][]            | A identidade do usuário que iniciou o thread de comentários.
-| participantes     | Coleção [identitySet][] | As identidades dos usuários que participam deste thread de comentário.
+| Propriedade     | Tipo                       | Descrição                                                       |
+| :----------- | :------------------------- | :---------------------------------------------------------------- |
+| isReply      | booliano                    | Se for verdadeiro, essa atividade era uma resposta para um thread de comentário existente. |
+| parentAuthor | [identitySet][]            | A identidade do usuário que iniciou o thread de comentários.          |
+| participantes | Coleção [identitySet][] | As identidades dos usuários que participam deste thread de comentário. |
 
 [identitySet]: identityset.md
 
@@ -63,5 +63,3 @@ Registros de atividade de item atualmente só estão disponíveis no SharePoint 
   "suppressions": []
 }
 -->
-
-

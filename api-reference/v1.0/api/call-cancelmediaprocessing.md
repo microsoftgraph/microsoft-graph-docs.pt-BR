@@ -1,16 +1,16 @@
 ---
 title: 'call: cancelMediaProcessing'
 description: Cancela o processamento de mídia para quaisquer operações playPrompt ou recordResponse em andamento.
-author: ananmishr
+author: mkhribech
 ms.localizationpriority: medium
 ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: e6b01f13c0da8cb0c4c67e48d6c8b7b4c896ff96
-ms.sourcegitcommit: 25acfa7d0153336c9a35d30a1dd422aeadc1342c
+ms.openlocfilehash: f4ac6778b34e43017acc11f67afdf324381d70e1
+ms.sourcegitcommit: 10719607271380ea56076ccff5a3b774d0005773
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/03/2022
-ms.locfileid: "62348036"
+ms.lasthandoff: 04/01/2022
+ms.locfileid: "64608097"
 ---
 # <a name="call-cancelmediaprocessing"></a>call: cancelMediaProcessing
 
@@ -20,7 +20,7 @@ Cancela o processamento de qualquer operação de mídia em andamento.
 
 As operações de mídia referem-se às operações IVR [playPrompt](./call-playprompt.md) e [recordResponse](./call-record.md), que por padrão são enluadas para processar em ordem. O **método cancelMediaProcessing** cancela qualquer operação que está em processo, bem como as operações que estão na fila. Por exemplo, esse método pode ser usado para limpar a fila de operação ivr para uma nova operação de mídia. No entanto, ele não cancelará uma **operação subscribeToTone** porque opera independentemente de qualquer fila de operação.
 
-## <a name="permissions"></a>Permissões
+## <a name="permissions"></a>Permissions
 
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
@@ -28,7 +28,9 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 | :------------------------------------- | :------------------------------------------ |
 | Delegado (conta corporativa ou de estudante)     | Sem suporte.                              |
 | Delegado (conta pessoal da Microsoft) | Sem suporte.                              |
-| Aplicativo                            | Nenhum.                                       |
+| Aplicativo                            | Calls.Initiate.All, Calls.AccessMedia.All |
+
+> **Observação:** As permissões são verificadas quando a chamada é criada; nenhuma verificação de permissão adicional é feita ao chamar essa API. Calls.AccessMedia.All só é necessário para chamadas que usam mídia hospedada pelo aplicativo.
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- { "blockType": "ignored" } -->
@@ -49,7 +51,7 @@ Forneça um objeto JSON com os seguintes parâmetros no corpo da solicitação.
 
 | Parâmetro     | Tipo   | Descrição         |
 | :------------ | :----- | :------------------ |
-| clientContext | String | O contexto do cliente. |
+| clientContext | Cadeia de caracteres | O contexto do cliente. |
 
 ## <a name="response"></a>Resposta
 

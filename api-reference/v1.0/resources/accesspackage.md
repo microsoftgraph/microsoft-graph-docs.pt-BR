@@ -5,12 +5,12 @@ author: markwahl-msft
 ms.localizationpriority: medium
 ms.prod: governance
 doc_type: resourcePageType
-ms.openlocfilehash: 226715a4678b593e68a8364e326950c7af019212
-ms.sourcegitcommit: fd609cb401ff862c3f5c21847bac9af967c6bf82
+ms.openlocfilehash: faabd5198bb0ce31eef62a8c7f823ccb93a62458
+ms.sourcegitcommit: 10719607271380ea56076ccff5a3b774d0005773
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/31/2021
-ms.locfileid: "61651453"
+ms.lasthandoff: 04/01/2022
+ms.locfileid: "64608062"
 ---
 # <a name="accesspackage-resource-type"></a>Tipo de recurso accessPackage
 
@@ -25,11 +25,11 @@ Cada pacote de acesso é referenciado por um catálogo de pacotes de acesso úni
 ## <a name="methods"></a>Métodos
 |Método|Tipo de retorno|Descrição|
 |:---|:---|:---|
-|[Listar accessPackages](../api/entitlementmanagement-list-accesspackages.md)|[Coleção accessPackage](accesspackage.md)|Recupere uma lista de **objetos accesspackage.** |
-|[Criar accessPackage](../api/entitlementmanagement-post-accesspackages.md)|[accessPackage](accesspackage.md)|Crie um novo **objeto accesspackage.** |
-|[Obter accessPackage](../api/accesspackage-get.md)|[accessPackage](accesspackage.md)|Ler propriedades e relações de um **objeto accesspackage.** |
-|[Atualizar accessPackage](../api/accesspackage-update.md)|Nenhum|Atualize as propriedades de um **objeto accesspackage.** |
-|[Excluir accessPackage](../api/accesspackage-delete.md)|Nenhum|Excluir um **accesspackage**. |
+|[Listar accessPackages](../api/entitlementmanagement-list-accesspackages.md)|[Coleção accessPackage](accesspackage.md)|Recupere uma lista de **objetos accesspackage** . |
+|[Criar accessPackage](../api/entitlementmanagement-post-accesspackages.md)|[accessPackage](accesspackage.md)|Crie um novo **objeto accesspackage** . |
+|[Obter accessPackage](../api/accesspackage-get.md)|[accessPackage](accesspackage.md)|Ler propriedades e relações de um **objeto accesspackage** . |
+|[Atualizar accessPackage](../api/accesspackage-update.md)|Nenhum|Atualize as propriedades de um **objeto accesspackage** . |
+|[Excluir accessPackage](../api/accesspackage-delete.md)|Nenhum|**Exclua um accesspackage**. |
 |[filterByCurrentUser](../api/accesspackage-filterbycurrentuser.md)|[Coleção accessPackage](../resources/accesspackage.md)|Recupere a lista de **objetos accessPackage** filtrados no usuário de entrada.|
 |[getApplicablePolicyRequirements](../api/accesspackage-getapplicablepolicyrequirements.md)|[coleção accessPackageAssignmentRequestRequirements](../resources/accesspackageassignmentrequestrequirements.md)|Recupere uma lista de **objetos accessPackageAssignmentRequestRequirement** com requisitos de solicitação. |
 
@@ -37,8 +37,8 @@ Cada pacote de acesso é referenciado por um catálogo de pacotes de acesso úni
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
 |createdDateTime|DateTimeOffset|O tipo Timestamp representa informações de data e hora usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite UTC em 1 de janeiro de 2014 é `2014-01-01T00:00:00Z`. Somente leitura.|
-|description|String|A descrição do pacote de acesso.|
-|displayName|String|O nome de exibição do pacote de acesso. Suporta $filter ( `eq` , `contains` ).|
+|description|Cadeia de caracteres|A descrição do pacote de acesso.|
+|displayName|Cadeia de caracteres|O nome de exibição do pacote de acesso. Suporta $filter (`eq`, `contains`).|
 |id|String|Somente leitura.|
 |IsHidden|Booleano|Se o pacote de acesso está oculto do solicitante.|
 |modifiedDateTime|DateTimeOffset|O tipo Timestamp representa informações de data e hora usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite UTC em 1 de janeiro de 2014 é `2014-01-01T00:00:00Z`. Somente leitura. |
@@ -46,6 +46,7 @@ Cada pacote de acesso é referenciado por um catálogo de pacotes de acesso úni
 ## <a name="relationships"></a>Relações
 |Relação|Tipo|Descrição|
 |:---|:---|:---|
+|assignmentPolicies|[coleção accessPackageAssignmentPolicy](../resources/accesspackageassignmentpolicy.md)|Somente leitura. Anulável.|
 |catalog|[accessPackageCatalog](../resources/accesspackagecatalog.md)|Somente leitura. Anulável.|
 
 ## <a name="json-representation"></a>Representação JSON

@@ -4,12 +4,12 @@ description: Os limites de controle limitam número de chamadas simultâneas par
 author: FaithOmbongi
 ms.localizationpriority: high
 ms.custom: graphiamtop20
-ms.openlocfilehash: da749ed702e60837fb654963a3bbe78f16bfa36e
-ms.sourcegitcommit: 25acfa7d0153336c9a35d30a1dd422aeadc1342c
+ms.openlocfilehash: a91c82a3e7378e7abde7bccae0d7a953c7d94cb8
+ms.sourcegitcommit: 0e7927f34b7e55d323acbf281e11560cb40a89ed
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/03/2022
-ms.locfileid: "62346566"
+ms.lasthandoff: 03/20/2022
+ms.locfileid: "63671598"
 ---
 # <a name="microsoft-graph-throttling-guidance"></a>Diretrizes de limitação do Microsoft Graph
 
@@ -83,7 +83,7 @@ Para uma discussão mais ampla sobre a limitação no Microsoft Cloud, veja [Pad
 
 ## <a name="best-practices-to-avoid-throttling"></a>Práticas recomendadas para evitar a limitação
 
-Padrões de programação como pesquisando continuamente um recurso para verificar se há atualizações e a verificação regular das coleções de recursos para verificar se há recursos novos ou excluídos, possuem maior propensão de levar aplicativos a serem regulados e prejudicam o desempenho geral. Em vez disso, você deve aproveitar o [controle de alterações](delta-query-overview.md) e [notificações de alteração](webhooks.md) quando estiverem disponíveis.
+Padrões de programação, como pesquisar continuamente um recurso para verificar atualizações e verificar regularmente coleções de recursos para verificar recursos novos ou excluídos, são mais propensos a fazer com que os aplicativos sejam limitados e degradem o desempenho geral. Em vez disso, você deve aproveitar [controle de alterações](delta-query-overview.md) e [notificações de alterações](webhooks.md) quando disponíveis.
 
 >[!NOTE]
 >[Práticas recomendadas para descobrir arquivos e detectar alterações em escala](/onedrive/developer/rest-api/concepts/scan-guidance) descrevem as práticas recomendadas em detalhes.
@@ -272,7 +272,7 @@ Outros fatores que afetam um custo da solicitação:
 
 ##### <a name="regular-responses-requests"></a>Solicitações de respostas regulares
 
-- **x-ms-resource-unit** - Indica a unidade de recurso usada para esta solicitação. Os valores são números inteiros positivos.
+- **x-ms-resource-unit** - Indica a unidade de recurso usada para esta solicitação. Os valores são inteiros positivos.
 - **x-ms-throttle-limit-percentage** - Retornado somente quando a aplicação consumiu mais de 0.8 de seu limite. O valor varia de 0.8 a 1.8 e é uma porcentagem do uso do limite. O valor pode ser usado pelos chamadores para configurar um alerta e tomar providências.
 
 ##### <a name="throttled-responses-requests"></a>Solicitações de respostas limitadas
@@ -351,7 +351,7 @@ Os seguintes limites se aplicam a qualquer solicitação no `/reports`.
 | Qualquer pedido (CSV)         | 14 solicitações a cada 10 minutos   | 40 solicitações a cada 10 minutos |
 | Qualquer solicitação (JSON, beta)  | 100 solicitações a cada 10 minutos  | n/d                        |
 
-Os limites anteriores aplicam-se individualmente a cada relatório de API. Por exemplo, uma solicitação da API do relatório de atividades do usuário do Microsoft Teams e uma solicitação de relatório da API do usuário do Outlook dentro de 10 minutos contará como uma solicitação entre 14 para cada API e não duas solicitações entre 14 para ambas.
+Os limites anteriores se aplicam individualmente a cada API de relatório. Por exemplo, uma solicitação para a API do relatório de atividades do usuário do Microsoft Teams e uma solicitação para a API do relatório de atividades do usuário do Outlook em 10 minutos contará como 1 solicitação de 14 para cada API, não 2 solicitações de 14 para ambas.
 
 Os limites anteriores se aplicam a todos os recursos de [relatórios de uso](/graph/api/resources/report).
 
@@ -420,6 +420,8 @@ Os limites anteriores se aplicam aos seguintes recursos:
 
 ### <a name="excel-service-limits"></a>Limites de serviço do Excel
 
+Para explicações e práticas recomendadas relacionadas à limitação do serviço do Excel, veja [Limitação](workbook-best-practice.md#throttling). Além disso, a seguir estão alguns limites de limitação.
+  
 [!INCLUDE [Excel throttling documentation](../includes/throttling-excel.md)]
 
 ### <a name="identity-providers-service-limits"></a>Limites de serviço dos fornecedores de identidade

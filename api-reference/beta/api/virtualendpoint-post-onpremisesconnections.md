@@ -1,16 +1,16 @@
 ---
 title: Criar cloudPcOnPremisesConnection
-description: Crie uma conexão local para provisionar PCs na Nuvem.
+description: Crie uma conexão de rede do Azure para provisionar PCs na Nuvem.
 author: AshleyYangSZ
 ms.localizationpriority: medium
 ms.prod: cloud-pc
 doc_type: apiPageType
-ms.openlocfilehash: a1b2968ea12b703e228a55fea6b2c2efbf3e4bdf
-ms.sourcegitcommit: 0e7927f34b7e55d323acbf281e11560cb40a89ed
+ms.openlocfilehash: f541ae5a05ae79507cb042ad6685bbe25754eef8
+ms.sourcegitcommit: cc9e5b3630cb84c48bbbb2d84a963b9562d1fb78
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/20/2022
-ms.locfileid: "63670632"
+ms.lasthandoff: 03/31/2022
+ms.locfileid: "64589363"
 ---
 # <a name="create-cloudpconpremisesconnection"></a>Criar cloudPcOnPremisesConnection
 
@@ -20,7 +20,9 @@ Namespace: microsoft.graph
 
 Crie um novo [objeto cloudPcOnPremisesConnection](../resources/cloudpconpremisesconnection.md) para provisionar PCs de nuvem.
 
-## <a name="permissions"></a>Permissões
+[!INCLUDE [on-premise-rename-note](../../includes/on-premise-rename-note.md)]
+
+## <a name="permissions"></a>Permissions
 
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
@@ -56,14 +58,14 @@ A tabela a seguir mostra as propriedades necessárias ao criar [o cloudPcOnPremi
 
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|displayName|String|O nome de exibição da conexão local.|
+|displayName|Cadeia de caracteres|O nome de exibição da conexão de rede do Azure.|
 |type|cloudPcOnPremisesConnectionType|Especifica como o Cloud PC provisionado será ingressado no Azure Active Directory. O valor padrão é `hybridAzureADJoin`. Os valores possíveis são: `azureADJoin`, `hybridAzureADJoin`, `unknownFutureValue`.|
-|subscriptionId|String|A ID da assinatura de destino do Azure associada ao seu locatário.|
+|subscriptionId|Cadeia de caracteres|A ID da assinatura de destino do Azure associada ao seu locatário.|
 |adDomainName|String|O FQDN (nome de domínio totalmente qualificado) do domínio do Active Directory que você deseja ingressar.|
 |adDomainUsername|String|O nome de usuário de uma conta do Active Directory (conta de usuário ou serviço) que tem permissões para criar objetos de computador no Active Directory. Formato obrigatório: admin@contoso.com.|
-|adDomainPassword|String|A senha associada a adDomainUsername.|
+|adDomainPassword|Cadeia de caracteres|A senha associada a adDomainUsername.|
 |resourceGroupId|String|A ID do grupo de recursos de destino. Formato obrigatório: "/subscriptions/{subscription-id}/resourceGroups/{resourceGroupName}".|
-|virtualNetworkId|String|A ID da rede virtual de destino. Formato obrigatório: "/subscriptions/{subscription-id}/resourceGroups/{resourceGroupName}/providers/Microsoft.Network/virtualNetworks/{virtualNetworkName}".|
+|virtualNetworkId|Cadeia de caracteres|A ID da rede virtual de destino. Formato obrigatório: "/subscriptions/{subscription-id}/resourceGroups/{resourceGroupName}/providers/Microsoft.Network/virtualNetworks/{virtualNetworkName}".|
 |subnetId|String|A ID da sub-rede de destino. Formato obrigatório: "/subscriptions/{subscription-id}/resourceGroups/{resourceGroupName}/providers/Microsoft.Network/virtualNetworks/{virtualNetworkId}/subnets/{subnetName}".|
 
 ## <a name="response"></a>Resposta

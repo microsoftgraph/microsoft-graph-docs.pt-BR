@@ -5,12 +5,12 @@ author: sureshja
 ms.localizationpriority: medium
 ms.prod: applications
 doc_type: apiPageType
-ms.openlocfilehash: 7fac54742cca998d94af7792db820c2c0859983a
-ms.sourcegitcommit: 77d2ab5018371f153d47cc1cd25f9dcbaca28a95
+ms.openlocfilehash: 8cac1fcb4b35076b6349406630cd6a1460df5977
+ms.sourcegitcommit: 0e7927f34b7e55d323acbf281e11560cb40a89ed
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63332487"
+ms.lasthandoff: 03/20/2022
+ms.locfileid: "63669267"
 ---
 # <a name="update-application"></a>Atualizar aplicativo
 
@@ -29,7 +29,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegada (conta corporativa ou de estudante) |  Application.ReadWrite.All, Directory.ReadWrite.All, Directory.AccessAsUser.All |
+|Delegado (conta corporativa ou de estudante) |  Application.ReadWrite.All, Directory.ReadWrite.All |
 |Delegada (conta pessoal da Microsoft) | Application.ReadWrite.All    |
 |Aplicativo | Application.ReadWrite.OwnedBy, Application.ReadWrite.All, Directory.ReadWrite.All |
 
@@ -69,7 +69,7 @@ No corpo da solicitação, forneça os valores para os campos relevantes que dev
 | Nome único | Cadeia de caracteres | O identificador exclusivo que pode ser atribuído a um aplicativo como um identificador alternativo. Imutável. Somente leitura.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         |
 | web                     | [webApplication](../resources/webapplication.md)                            | Especifica configurações para um aplicativo Web.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              |
 | spa                     | [spaApplication](../resources/spaapplication.md)                            | Especifica as configurações de um aplicativo de página simples, incluindo URLs de saída e de redirecionamento de URIs para os códigos de autorização e tokens de acesso. |
-| windows                     | [windowsApplication](../resources/windowsapplication.md)                            | Especifica as configurações para aplicativos que executam o Microsoft Windows e publicados no Microsoft Store ou no armazenamento de jogos do Xbox. Inclui SID do pacote e URIs de redirecionamento para códigos de autorização e tokens de acesso. |
+| windows                     | [windowsApplication](../resources/windowsapplication.md)                            | Especifica as configurações dos aplicativos que executam o Microsoft Windows e publicados no Microsoft Store ou no armazenamento de jogos do Xbox. Inclui SID do pacote e URIs de redirecionamento para códigos de autorização e tokens de acesso. |
 
 ## <a name="response"></a>Resposta
 

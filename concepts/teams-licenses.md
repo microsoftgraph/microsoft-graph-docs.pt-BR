@@ -4,12 +4,12 @@ description: Saiba mais sobre os modelos de licenciamento e pagamento que se apl
 author: nkramer
 ms.localizationpriority: high
 ms.prod: microsoft-teams
-ms.openlocfilehash: e3f8637bc55c6cd1cb9055d6b914063b8980e858
-ms.sourcegitcommit: e4796212a2e8bbec61b6da8336f776c0305c49df
+ms.openlocfilehash: aac85b96442c7162d67f16d198a076402aa03314
+ms.sourcegitcommit: e5d5095e26dca6f434354a0970e789e94ee6afb0
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/28/2022
-ms.locfileid: "62262103"
+ms.lasthandoff: 03/22/2022
+ms.locfileid: "63722259"
 ---
 # <a name="licensing-and-payment-requirements-for-microsoft-teams-apis-in-microsoft-graph"></a>Requisitos de licenciamento e pagamento para APIs do Microsoft Teams no Microsoft Graph
 
@@ -67,7 +67,8 @@ No modo de avaliação, a capacidade de propagação é compartilhada em todas a
 
 ## <a name="required-licenses-for-modela"></a>Licenças necessárias para `model=A` 
 
-O usuário precisará de uma das [licenças com suporte.](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#microsoft-graph-apis-for-teams-data-loss-prevention-dlp-and-for-teams-export) Qual usuário precisa da licença varia de acordo com a API; para obter detalhes, consulte os [`model=A` requisitos](#modela-requirements).
+O usuário precisará de uma licença que suporte o [plano de serviço](/azure/active-directory/enterprise-users/licensing-service-plan-reference) DLP de Comunicações da Microsoft, como uma dessas [licenças suportadas](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#microsoft-graph-apis-for-teams-data-loss-prevention-dlp-and-for-teams-export).
+Qual usuário precisa da licença varia de acordo com a API; para obter detalhes, consulte os [`model=A` requisitos](#modela-requirements).
 
 Os usuários convidados estão isentos desses requisitos de licenciamento.
 Da mesma forma, as mensagens enviadas de fora do locatário (chat federado) são isentas.
@@ -101,3 +102,4 @@ A capacidade de propagação difere pela API, consulte [ `model=A` requisitos](#
 ## <a name="price-for-additional-use"></a>Preço para uso adicional
 
 No futuro, a Microsoft cobrará uma taxa de uso sobre a capacidade de propagação. Você também será capaz associar uma assinatura do Azure ao registro de aplicativo.
+A organização que possui o registro do aplicativo é responsável pelo pagamento, que para aplicativos de múltiplos clientes pode ser diferente da organização que executa o aplicativo.

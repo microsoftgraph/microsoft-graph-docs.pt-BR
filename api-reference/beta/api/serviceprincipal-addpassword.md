@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: sureshja
 ms.prod: applications
 doc_type: apiPageType
-ms.openlocfilehash: dff434b29e93480e8101cf393da09df491214d30
-ms.sourcegitcommit: 0e7927f34b7e55d323acbf281e11560cb40a89ed
+ms.openlocfilehash: 04520ec6146b3d63c05dbc6e48b900eca76d44df
+ms.sourcegitcommit: 0249c86925c9b4797908394c952073b5d9137911
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/20/2022
-ms.locfileid: "63669232"
+ms.lasthandoff: 03/25/2022
+ms.locfileid: "64477871"
 ---
 # <a name="serviceprincipal-addpassword"></a>servicePrincipal: addPassword
 
@@ -18,7 +18,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Adicione uma senha forte a um [objeto servicePrincipal](../resources/serviceprincipal.md) .
+Adicione uma senha forte ou segredo a um [objeto servicePrincipal](../resources/serviceprincipal.md) .
 
 ## <a name="permissions"></a>Permissões
 
@@ -57,7 +57,7 @@ No corpo da solicitação, forneça um objeto [passwordCredential](../resources/
 
 ## <a name="response"></a>Resposta
 
-Se tiver êxito, este método retornará um `200 OK` código de resposta e um novo [objeto passwordCredential](../resources/passwordcredential.md) no corpo da resposta. A **propriedade secretText** no objeto de resposta contém as senhas fortes geradas por Azure Active Directory que têm de 16 a 64 caracteres de comprimento. Não há como recuperar essa senha no futuro.
+Se tiver êxito, este método retornará um `200 OK` código de resposta e um novo [objeto passwordCredential](../resources/passwordcredential.md) no corpo da resposta. A **propriedade secretText** no objeto de resposta contém as senhas ou segredos fortes gerados por Azure Active Directory que têm de 16 a 64 caracteres de comprimento. Não há como recuperar essa senha no futuro.
 
 ## <a name="examples"></a>Exemplos
 

@@ -5,12 +5,12 @@ description: o recurso de unidade representa o OneDrive de um usuário ou uma bi
 ms.localizationpriority: high
 ms.prod: sharepoint
 doc_type: resourcePageType
-ms.openlocfilehash: 1df4114e9dd79dd5845ca0cf1aedfdc458b83668
-ms.sourcegitcommit: 2e94beae05043a88b389349f0767e3a657415e4c
+ms.openlocfilehash: c92e5ef52ed02ba1428624c65d7fd075a27cfc15
+ms.sourcegitcommit: f5382652b6880fab42040df40a08de7cb2d74d35
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/19/2021
-ms.locfileid: "61123713"
+ms.lasthandoff: 03/17/2022
+ms.locfileid: "63559994"
 ---
 # <a name="drive-resource-type"></a>tipo de recurso de unidade
 
@@ -63,12 +63,12 @@ Os usuários do OneDrive sempre terão pelo menos uma unidade disponível, sua u
 | Relação | Tipo                                 | Descrição
 |:-------------|:-------------------------------------|:-----------------------
 | activities   | Conjunto [itemActivity][]          | A lista de atividades recentes que ocorreram nesta unidade.
-| pacotes      | Coleção de [driveItem][]             | Coleção de [pacotes][bundle] (álbuns e conjuntos de itens compartilhados com seleção múltipla). Somente no OneDrive pessoal.
+| pacotes      | Coleção de [driveItem][]             | Coleção de [pacotes][bundle] (álbuns e conjuntos de itens compartilhados com várias seleções). Apenas no OneDrive pessoal.
 | following    | Coleção [driveItem][]             | A lista de itens que o usuário está seguindo. Somente no OneDrive for Business.
 | items        | Coleção [driveItem][]             | Todos os itens contidos na unidade. Somente leitura. Anulável.
 | root         | [driveItem][]                        | A pasta raiz da unidade. Somente leitura.
 | special      | Coleção [driveItem][]             | Coleção de pastas comuns disponíveis no OneDrive. Somente leitura. Anulável.
-
+| list         | [list][]                             | Para unidades no SharePoint, a lista de biblioteca de documentos subjacentes. Somente leitura. Anulável.
 
 ## <a name="json-representation"></a>Representação JSON
 
@@ -89,6 +89,7 @@ O recurso **drive** é derivado de [**baseItem**](baseitem.md) e herda proprieda
     "webUrl",
     "items",
     "root",
+    "sharepointIds",
     "special",
     "system"
   ],
@@ -113,10 +114,11 @@ O recurso **drive** é derivado de [**baseItem**](baseitem.md) e herda proprieda
   "owner": {"@odata.type": "microsoft.graph.identitySet"},
   "quota": {"@odata.type": "microsoft.graph.quota"},
   "root": {"@odata.type": "microsoft.graph.driveItem"},
+  "sharepointIds": {"@odata.type": "microsoft.graph.sharepointIds"},
   "special": [{"@odata.type": "microsoft.graph.driveItem"}],
   "system": {"@odata.type": "microsoft.graph.systemFacet"},
   "webUrl": "string",
-  "sharepointIds": {"@odata.type": "microsoft.graph.sharepointIds"}
+
 }
 ```
 
@@ -126,6 +128,7 @@ O recurso **drive** é derivado de [**baseItem**](baseitem.md) e herda proprieda
 [itemActivity]: itemactivity.md
 [item-resource]: driveitem.md
 [identity-set]: identityset.md
+[list]: list.md
 [quota-facet]: quota.md
 [drive-resource]: drive.md
 [drive-activities]: ../api/activities-list.md

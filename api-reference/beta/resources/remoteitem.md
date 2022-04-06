@@ -3,15 +3,15 @@ author: JeremyKelley
 description: O recurso remoteItem indica que um driveItem faz referência a um item que existe em outra unidade.
 ms.date: 09/10/2017
 title: RemoteItem
-localization_priority: Normal
+ms.localizationpriority: medium
 doc_type: resourcePageType
 ms.prod: ''
-ms.openlocfilehash: 87d3c19d6d6714f88fb3404f4485ed303a86e051
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 196f0105a2fb9f436d50728af1ab5865de47d397
+ms.sourcegitcommit: e5d5095e26dca6f434354a0970e789e94ee6afb0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48073445"
+ms.lasthandoff: 03/22/2022
+ms.locfileid: "63724222"
 ---
 # <a name="remoteitem-resource-type"></a>Tipo de recurso RemoteItem
 
@@ -57,24 +57,24 @@ Este recurso fornece as IDs exclusivas do da unidade de origem e do item de dest
 
 ## <a name="properties"></a>Propriedades
 
-| Nome da propriedade        | Tipo                                | Descrição                                                                                                                                                       |
+| Propriedade             | Tipo                                | Descrição                                                                                                                                                       |
 | :------------------- | :---------------------------------- | :---------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | createdBy            | [IdentitySet](identityset.md)       | Identidade do usuário, dispositivo e aplicativo que criou o item. Somente leitura.                                                                                  |
 | createdDateTime      | Timestamp                           | Data e hora de criação do item. Somente leitura.                                                                                                                        |
 | file                 | [File](file.md)                     | Indica que o item remoto é um arquivo. Somente leitura.                                                                                                              |
 | fileSystemInfo       | [FileSystemInfo](filesysteminfo.md) | Informações sobre o item remoto do sistema de arquivos local. Somente leitura.                                                                                          |
 | folder               | [Folder](folder.md)                 | Indica que o item remoto é uma pasta. Somente leitura.                                                                                                            |
-| id                   | Cadeia de caracteres                              | Identificador exclusivo do item remoto em sua unidade. Somente leitura.                                                                                                    |
-| image                | [Imagem](image.md)                   | Metadados de imagem, se o item for uma imagem. Somente leitura.                                                                                               |
+| id                   | String                              | Identificador exclusivo do item remoto em sua unidade. Somente leitura.                                                                                                    |
+| image                | [Imagem](image.md)                   | Metadados de imagem, se o item for uma imagem. Somente leitura.                                                                                                               |
 | lastModifiedBy       | [IdentitySet](identityset.md)       | Identidade do usuário, dispositivo e aplicativo que modificou o item pela última vez. Somente leitura.                                                                            |
 | lastModifiedDateTime | Timestamp                           | Data e hora em que o item foi modificado pela última vez. Somente leitura.                                                                                                              |
-| nome                 | Cadeia de caracteres                              | Opcional. Nome de arquivo do item remoto. Somente leitura.                                                                                                                 |
+| nome                 | String                              | Opcional. Nome de arquivo do item remoto. Somente leitura.                                                                                                                 |
 | pacote              | [Pacote](package.md)               | Se presente, indica que esse item é um pacote, e não uma pasta ou um arquivo. Pacotes são tratados como arquivos em alguns contextos e como pastas em outros. Somente leitura. |
 | parentReference      | [ItemReference](itemreference.md)   | Propriedades do pai do item remoto. Somente leitura.                                                                                                           |
 | compartilhado               | [compartilhado](shared.md)                 | Indica que o item foi compartilhado com outras pessoas e fornece informações sobre o estado compartilhado desse item. Somente leitura.                                       |
 | sharepointIds        | [SharepointIds](sharepointids.md)   | Fornece interoperabilidade entre itens no OneDrive for Business e no SharePoint com o conjunto completo de identificadores de item. Somente leitura.                                          |
 | size                 | Int64                               | Tamanho do item remoto. Somente leitura.                                                                                                                               |
-| video                | [Video](video.md)                   | Metadados de vídeo, se o item for um vídeo. Somente leitura.                                                                                                    |
+| video                | [Video](video.md)                   | Metadados de vídeo, se o item for um vídeo. Somente leitura.                                                                                                                |
 | webDavUrl            | URL                                 | URL compatível com DAV para o item.                                                                                                                                  |
 | webUrl               | URL                                 | URL que exibe o recurso no navegador. Somente leitura.                                                                                                         |
 
@@ -92,5 +92,3 @@ Para saber mais sobre as facetas de um **driveItem**, confira [driveItem](drivei
   "suppressions": []
 }
 -->
-
-

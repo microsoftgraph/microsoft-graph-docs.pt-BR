@@ -1,16 +1,16 @@
 ---
 author: JeremyKelley
 title: Remover item do pacote
-description: Remover item de um pacote de driveItems.
+description: Remover item de um pacote de driveItems
 ms.localizationpriority: medium
 ms.prod: sharepoint
 doc_type: apiPageType
-ms.openlocfilehash: 18068d3645c114dab38c6d7ae4d745e8c15a0e49
-ms.sourcegitcommit: 10719607271380ea56076ccff5a3b774d0005773
+ms.openlocfilehash: 90a9bcf1be20c6d514ff878f68e7ed942566587a
+ms.sourcegitcommit: f5382652b6880fab42040df40a08de7cb2d74d35
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/01/2022
-ms.locfileid: "64607380"
+ms.lasthandoff: 03/17/2022
+ms.locfileid: "63561569"
 ---
 # <a name="remove-item-from-bundle"></a>Remover item do pacote
 
@@ -18,7 +18,7 @@ Namespace: microsoft.graph
 
 Remova um item de um [pacote][].
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>Permissões
 
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
@@ -38,52 +38,29 @@ DELETE /drive/bundles/{bundle-id}/children/{item-id}
 
 | Nome          | Descrição  |
 |:------------- |:------------ |
-| Autorização | {token} de portador. Obrigatório. |
+| Autorização | \{token\} de portador. Obrigatório. |
 
 ## <a name="request-body"></a>Corpo da solicitação
 
-Não fornecer um corpo de solicitação para o método.
+Não forneça um corpo de solicitação com esse método.
 
 ## <a name="response"></a>Resposta
 
-Se tiver êxito, este método retornará um código de resposta `204 No Content`.
+Se tiver êxito, a resposta será `204 No Content`.
 
-Para obter informações sobre respostas a erros, consulte [Microsoft Graph respostas de erro e tipos de recursos][error-response].
+Para obter informações sobre respostas de erro, consulte [Respostas de erro][error-response].
 
 ## <a name="example"></a>Exemplo
 
 ### <a name="request"></a>Solicitação
 
-Veja a seguir um exemplo de uma solicitação.
-
-# <a name="http"></a>[HTTP](#tab/http)
 <!-- {"blockType": "request", "name": "remove-from-bundle" } -->
 
 ```http
-DELETE https://graph.microsoft.com/v1.0/drive/bundles/{bundle-id}/children/{item-id}
+DELETE https://graph.microsoft.com/beta/drive/bundles/{bundle-id}/children/{item-id}
 ```
-# <a name="c"></a>[C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/remove-from-bundle-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# <a name="javascript"></a>[JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/remove-from-bundle-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# <a name="objective-c"></a>[Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/remove-from-bundle-objc-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# <a name="java"></a>[Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/remove-from-bundle-java-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
----
-
 
 ### <a name="response"></a>Resposta
-
-Este é um exemplo de resposta.
 
 <!-- { "blockType": "response" } -->
 
@@ -92,7 +69,7 @@ HTTP/1.1 204 No Content
 ```
 
 
-[Agrupar]: ../resources/bundle.md
+[bundle]: ../resources/bundle.md
 [error-response]: /graph/errors
 
 <!-- {

@@ -1,16 +1,16 @@
 ---
 title: Listar unifiedRoleManagementPolicyAssignments
 description: Obter uma lista dos objetos unifiedRoleManagementPolicyAssignment e suas propriedades.
-author: japere
+author: carolinetempleton
 ms.localizationpriority: medium
 ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: 771ff41830a0a24c05704f9def617bb721613215
-ms.sourcegitcommit: 43a7c971a97ce1e4c55cbae089820bfce7dfe42b
+ms.openlocfilehash: 3887367fd8eed4ab68898802e39dbd9d853dbeb1
+ms.sourcegitcommit: 0249c86925c9b4797908394c952073b5d9137911
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/29/2022
-ms.locfileid: "64510615"
+ms.lasthandoff: 03/25/2022
+ms.locfileid: "64477955"
 ---
 # <a name="list-unifiedrolemanagementpolicyassignments"></a>Listar unifiedRoleManagementPolicyAssignments
 Namespace: microsoft.graph
@@ -19,7 +19,7 @@ Namespace: microsoft.graph
 
 Obter uma lista dos [objetos unifiedRoleManagementPolicyAssignment](../resources/unifiedrolemanagementpolicyassignment.md) e suas propriedades.
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão|Permissões (da com menos para a com mais privilégios)|

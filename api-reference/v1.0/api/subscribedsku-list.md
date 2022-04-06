@@ -5,18 +5,18 @@ ms.localizationpriority: high
 author: SumitParikh
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: c2f94819364a5fa197edb27da134d1ed1a79b549
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: c66b57165f26715a739e4d805580ac4198cf2b70
+ms.sourcegitcommit: 0e7927f34b7e55d323acbf281e11560cb40a89ed
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62128404"
+ms.lasthandoff: 03/20/2022
+ms.locfileid: "63668462"
 ---
 # <a name="list-subscribedskus"></a>Listar subscribedSkus
 
 Namespace: microsoft.graph
 
-Obtenha a lista de assinaturas comerciais que uma organização adquiriu. Quanto ao mapeamento de nomes de licença conforme exibido no portal do Azure ou no Centro de administração do Microsoft 365 em relação às suas propriedades **skuId** e **skuPartNumber** do Microsoft Graph, consulte [Nomes de produtos e identificadores de plano de serviço para licenciamento](/azure/active-directory/enterprise-users/licensing-service-plan-reference).
+Obtenha a lista de assinaturas comerciais que uma organização adquiriu. Para obter o mapeamento dos nomes de licença exibidos no portal do Azure ou no Centro de administração do Microsoft 365 em relação às propriedades **skuId** e **skuPartNumber** do Microsoft Graph, consulte [ Nomes de produtos e identificadores de plano de serviço para licenciamento](/azure/active-directory/enterprise-users/licensing-service-plan-reference).
 
 ## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
@@ -24,7 +24,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegado (conta corporativa ou de estudante) | Organization.Read.All, Directory.Read.All, Organization.ReadWrite.All, Directory.ReadWrite.All, Directory.AccessAsUser.All    |
+|Delegado (conta corporativa ou de estudante) | Organization.Read.All, Directory.Read.All, Organization.ReadWrite.All, Directory.ReadWrite.All    |
 |Delegado (conta pessoal da Microsoft) | Sem suporte.    |
 |Aplicativo | Organization.Read.All, Directory.Read.All, Organization.ReadWrite.All, Directory.ReadWrite.All |
 

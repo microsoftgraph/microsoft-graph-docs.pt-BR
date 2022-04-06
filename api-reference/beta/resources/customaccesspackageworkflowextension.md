@@ -5,12 +5,12 @@ author: currenmehta
 ms.localizationpriority: medium
 ms.prod: governance
 doc_type: resourcePageType
-ms.openlocfilehash: 0304fb18e2af0865dd9ff6ccde030dc68f067bc8
-ms.sourcegitcommit: 77d2ab5018371f153d47cc1cd25f9dcbaca28a95
+ms.openlocfilehash: b89d41ec573d6035e19590d7015df4e7269909f3
+ms.sourcegitcommit: 0e7927f34b7e55d323acbf281e11560cb40a89ed
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63337966"
+ms.lasthandoff: 03/20/2022
+ms.locfileid: "63672732"
 ---
 # <a name="customaccesspackageworkflowextension-resource-type"></a>Tipo de recurso customAccessPackageWorkflowExtension
 
@@ -26,7 +26,7 @@ Define os atributos de um aplicativo lógico, que pode ser chamado em vários es
 Herda e derivado de [customCalloutExtension](../resources/customcalloutextension.md).
 
 
-## <a name="methods"></a>Methods
+## <a name="methods"></a>Métodos
 |Método|Tipo de retorno|Descrição|
 |:---|:---|:---|
 |[Listar customAccessPackageWorkflowExtensions](../api/accesspackagecatalog-list-customaccesspackageworkflowextensions.md)|[coleção customAccessPackageWorkflowExtension](../resources/customaccesspackageworkflowextension.md)|Obter uma lista dos [objetos customAccessPackageWorkflowExtension](../resources/customaccesspackageworkflowextension.md) e suas propriedades.|
@@ -65,6 +65,12 @@ Veja a seguir uma representação JSON do recurso.
   "@odata.type": "#microsoft.graph.customAccessPackageWorkflowExtension",
   "id": "String (identifier)",
   "displayName": "String",
+  "clientConfiguration": {
+    "@odata.type": "microsoft.graph.customExtensionClientConfiguration"
+  },
+  "authenticationConfiguration": {
+    "@odata.type": "microsoft.graph.customExtensionAuthenticationConfiguration"
+  },
   "description": "String",
   "createdDateTime": "String (timestamp)",
   "lastModifiedDateTime": "String (timestamp)",

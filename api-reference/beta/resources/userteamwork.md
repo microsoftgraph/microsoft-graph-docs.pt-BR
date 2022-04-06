@@ -5,12 +5,12 @@ author: akjo
 doc_type: resourcePageType
 ms.localizationpriority: high
 ms.prod: microsoft-teams
-ms.openlocfilehash: ff6a364ed21286d2fb01791bc0ccef0997f3ab5f
-ms.sourcegitcommit: e4796212a2e8bbec61b6da8336f776c0305c49df
-ms.translationtype: HT
+ms.openlocfilehash: 709795ce885c5cad231d4aee289f2af18dc6d68a
+ms.sourcegitcommit: c21fefa5c3c62df14147e7918cb43327f7d72e69
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/28/2022
-ms.locfileid: "62262222"
+ms.lasthandoff: 04/06/2022
+ms.locfileid: "64685184"
 ---
 # <a name="userteamwork-resource-type"></a>tipo de recurso userTeamwork
 
@@ -36,6 +36,7 @@ Um contêiner para o intervalo de funcionalidades do Microsoft Teams disponívei
 | Relação | Tipo | Descrição |
 |:---------------|:--------|:----------|
 |installedApps|Coleção [teamsAppInstallation](teamsappinstallation.md)|Os aplicativos instalados no escopo pessoal desse usuário.|
+|associatedTeams|[coleção associatedTeamInfo](associatedteaminfo.md)| A lista de [objetos AssociatedTeamInfo](associatedteaminfo.md) aos [qual um](user.md) usuário está associado.|
 
 ## <a name="json-representation"></a>Representação JSON
 

@@ -5,12 +5,12 @@ author: spunukol
 ms.prod: directory-management
 ms.localizationpriority: medium
 doc_type: apiPageType
-ms.openlocfilehash: 469a9899a6443c6ab403a9d6118704b7fc4f93c0
-ms.sourcegitcommit: 43a7c971a97ce1e4c55cbae089820bfce7dfe42b
+ms.openlocfilehash: 0bf347808a302525903f3f445229eea44367c236
+ms.sourcegitcommit: 0e7927f34b7e55d323acbf281e11560cb40a89ed
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/29/2022
-ms.locfileid: "64510348"
+ms.lasthandoff: 03/20/2022
+ms.locfileid: "63672277"
 ---
 # <a name="list-device-transitive-groups"></a>Listar grupos transitivos de dispositivos
 
@@ -18,7 +18,7 @@ Namespace: microsoft.graph
 
 Obter grupos dos que o dispositivo é membro. Essa solicitação de API é transitiva e também retornará todos os grupos de que o dispositivo é membro aninhado.
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>Permissões
 
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
@@ -210,8 +210,8 @@ Content-type: application/json
 Este é um exemplo de solicitação.
 
 <!-- {
-  "blockType": "request",
-  "name": "list_devices_transitivememberof_startswith"
+  "blockType": "ignored",
+  "name": "get_a_count"
 }-->
 ```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/devices/{id}/transitiveMemberOf/microsoft.graph.group?$count=true&$orderBy=displayName&$filter=startswith(displayName, 'a')

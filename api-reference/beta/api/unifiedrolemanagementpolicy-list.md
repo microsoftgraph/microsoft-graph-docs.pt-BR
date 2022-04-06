@@ -1,16 +1,16 @@
 ---
 title: Listar unifiedRoleManagementPolicies
 description: Obter uma lista dos objetos unifiedRoleManagementPolicy e suas propriedades.
-author: japere
+author: carolinetempleton
 ms.localizationpriority: medium
 ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: 0ee14bcd9dd97689c1260b1f681be7a13ed8d0e1
-ms.sourcegitcommit: 43a7c971a97ce1e4c55cbae089820bfce7dfe42b
+ms.openlocfilehash: 12bdee34ff2abf81db65bb8f32f23aafe89a82f2
+ms.sourcegitcommit: 0e7927f34b7e55d323acbf281e11560cb40a89ed
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/29/2022
-ms.locfileid: "64510369"
+ms.lasthandoff: 03/20/2022
+ms.locfileid: "63670051"
 ---
 # <a name="list-unifiedrolemanagementpolicies"></a>Listar unifiedRoleManagementPolicies
 Namespace: microsoft.graph
@@ -19,7 +19,7 @@ Namespace: microsoft.graph
 
 Obter uma lista dos [objetos unifiedRoleManagementPolicy](../resources/unifiedrolemanagementpolicy.md) e suas propriedades. Essa API só se aplica às funções do Azure AD. Para recuperar políticas que se aplicam ao Azure RBAC, use a [API DE PIM REST do Azure para políticas de gerenciamento de função](/rest/api/authorization/role-management-policies/list-for-scope).
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão|Permissões (da com menos para a com mais privilégios)|

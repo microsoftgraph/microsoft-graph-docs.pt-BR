@@ -3,15 +3,15 @@ author: simonhult
 description: O recurso personOrGroupColumn em uma columnDefinition indica que os valores da coluna representam uma pessoa ou grupo escolhido no diretório.
 ms.date: 09/11/2017
 title: PersonOrGroupColumn
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: insights
 doc_type: resourcePageType
-ms.openlocfilehash: 261ed729bc865b6679bf6dc9d08060148f32006a
-ms.sourcegitcommit: 48fff935d56fe96e97577a80a3a0aa15c45419ba
+ms.openlocfilehash: 2e35c461dcec7cac70af8b6591a4fcb251ccc8e2
+ms.sourcegitcommit: e5d5095e26dca6f434354a0970e789e94ee6afb0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/10/2021
-ms.locfileid: "50176406"
+ms.lasthandoff: 03/22/2022
+ms.locfileid: "63720799"
 ---
 # <a name="personorgroupcolumn-resource-type"></a>Tipo de recurso PersonOrGroupColumn
 
@@ -24,6 +24,7 @@ O recurso **personOrGroupColumn** em uma [columnDefinition](columndefinition.md)
 ## <a name="json-representation"></a>Representação JSON
 
 Aqui está uma representação JSON de um recurso **personOrGroupColumn**.
+
 <!-- { "blockType": "resource", "@type": "microsoft.graph.personOrGroupColumn", "@property.aka": "chooseFromType=format" } -->
 
 ```json
@@ -36,16 +37,16 @@ Aqui está uma representação JSON de um recurso **personOrGroupColumn**.
 
 ## <a name="properties"></a>Propriedades
 
-| Nome da propriedade              | Tipo    | Descrição
-|:---------------------------|:--------|:--------------------------------------
-| **allowMultipleSelection** | booliano | Indica se vários valores podem ser selecionados da origem.
-| **displayAs**              | string  | Como exibir as informações sobre a pessoa ou grupo escolhido. Veja a seguir.
-| **chooseFromType**         | string  | Se permite somente a seleção de pessoas, ou de pessoas e grupos. Deve ser `peopleAndGroups` ou `peopleOnly`.
+| Propriedade                   | Tipo    | Descrição                                                                                                        |
+| :------------------------- | :------ | :----------------------------------------------------------------------------------------------------------------- |
+| **allowMultipleSelection** | booliano | Indica se vários valores podem ser selecionados da origem.                                                 |
+| **displayAs**              | string  | Como exibir as informações sobre a pessoa ou grupo escolhido. Veja a seguir.                                        |
+| **chooseFromType**         | string  | Se permite somente a seleção de pessoas, ou de pessoas e grupos. Deve ser `peopleAndGroups` ou `peopleOnly`. |
 
-## <a name="displayas-values"></a>Valores displayAs
+## <a name="displayas-values"></a>displayAs values
 
-| Valor               | Descrição                                                                                                 |
-|:------------------------------|:------------------------------------------------------------------------------------------------------------|
+| Valor                         | Descrição                                                                                                 |
+| :---------------------------- | :---------------------------------------------------------------------------------------------------------- |
 | **account**                   | A cadeia de caracteres de declaração codificada bruta do SharePoint para a pessoa ou grupo (por exemplo. `i:0#.f|membership|jane@contoso.com`). |
 | **department**                | O departamento da pessoa ou grupo.                                                                           |
 | **firstName**                 | O primeiro nome da pessoa.                                                                                    |
@@ -77,5 +78,3 @@ Observação: podem ser retornados tipos adicionais de DisplayAs.
   "suppressions": []
 }
 -->
-
-

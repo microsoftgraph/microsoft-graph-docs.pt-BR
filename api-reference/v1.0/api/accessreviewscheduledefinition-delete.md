@@ -5,21 +5,21 @@ author: isabelleatmsft
 ms.localizationpriority: medium
 ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: b5d44c3c9c559c641c6f8dc7897cf6257a750e2b
-ms.sourcegitcommit: e5d5095e26dca6f434354a0970e789e94ee6afb0
+ms.openlocfilehash: b958a7d071acf3fd5cc9ab18e8ec100300ab3ff5
+ms.sourcegitcommit: c21fefa5c3c62df14147e7918cb43327f7d72e69
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2022
-ms.locfileid: "63723590"
+ms.lasthandoff: 04/06/2022
+ms.locfileid: "64684771"
 ---
 # <a name="delete-accessreviewscheduledefinition"></a>Excluir accessReviewScheduleDefinition
 Namespace: microsoft.graph
 
 Exclui um [objeto accessReviewScheduleDefinition](../resources/accessreviewscheduledefinition.md) .
 
-[!INCLUDE [GDPR-related-guidance](../../includes/accessreviews-gdpr-intro-sentence.md)]
+[!INCLUDE [GDPR-related-guidance](../../includes/accessreviews-gdpr-delete-intro-sentence.md)]
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão|Permissões (da com menos para a com mais privilégios)|

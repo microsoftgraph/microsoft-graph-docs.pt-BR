@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: cristobal-buenrostro
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: 7a9f6e7ec2fe77f87c81717c406a56de7e1bbef7
-ms.sourcegitcommit: 871db8b3f68489d24e2aeafe694725579ee44c47
+ms.openlocfilehash: 4e3a9cfac827c7bc6e2b6d7c8afe9d838b25d291
+ms.sourcegitcommit: 0bcc0a93f37db6013be40dc8d36717aeeeef7fb6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/26/2022
-ms.locfileid: "62225998"
+ms.lasthandoff: 03/16/2022
+ms.locfileid: "63516135"
 ---
 # <a name="list-assignments-of-a-user"></a>Listar atribuições de um usuário
 
@@ -18,7 +18,9 @@ Namespace: microsoft.graph
 
 Retorna uma lista [de educationAssignment atribuído](../resources/educationassignment.md) a um [educationUser](../resources/educationuser.md) para todas as [classes](../resources/educationclass.md). 
 
-Esse método permite que um chamador encontre todas as atribuições **pertencentes** a um aluno ou professor em uma única chamada, em vez de ter que solicitar **atribuições** de cada **classe**. A **lista** de atribuições contém o que é necessário para obter as informações detalhadas para a atribuição **de** dentro do namespace **de** classe. Use os métodos definidos para a **atribuição** para todas as outras operações.
+Esse método permite que um chamador encontre todas as atribuições **pertencentes** a um aluno ou professor em uma única chamada, em vez de precisar solicitar **atribuições** de cada **classe**. A **lista** de atribuições contém o que é necessário para obter as informações detalhadas para a atribuição **de dentro** do namespace **de** classe. Use os métodos definidos para a **atribuição** para todas as outras operações.
+
+> **Observação:** As `instructions`propriedades , `assignTo``assignedDateTime`e `resourcesFolderUrl` sempre `webUrl` serão exibidas nulas.
 
 ## <a name="permissions"></a>Permissões
 
@@ -28,7 +30,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 | :------------------------------------- | :----------------------------------------------------------------------------------------------------- |
 | Delegado (conta corporativa ou de estudante)     | EduAssignments.ReadBasic, EduAssignments.ReadWriteBasic, EduAssignments.Read, EduAssignments.ReadWrite |
 | Delegado (conta pessoal da Microsoft) | Sem suporte.                                                                                         |
-| Application                            | EduAssignments.ReadBasic.All, EduAssignments.ReadWriteBasic.All, EduAssignments.Read.All, EduAssignments.ReadWrite.All |
+| Aplicativo                            | EduAssignments.ReadBasic.All, EduAssignments.ReadWriteBasic.All, EduAssignments.Read.All, EduAssignments.ReadWrite.All |
 
 Chamar o ponto de extremidade `/me` exige um usuário conectado e, portanto, uma permissão delegada. Não há suporte para permissões do aplicativo ao usar o ponto de extremidade `/me`.
 
@@ -43,7 +45,7 @@ GET /education/users/{user-id}/assignments
 
 ## <a name="optional-query-parameters"></a>Parâmetros de consulta opcionais
 
-Este método dá suporte aos Parâmetros de `$submissions` `$categories` [Consulta E OData](/graph/query-parameters) para ajudar a personalizar a resposta.
+Este método dá suporte aos `$submissions` Parâmetros `$categories` de [Consulta E OData](/graph/query-parameters) para ajudar a personalizar a resposta.
 
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
 
@@ -57,7 +59,7 @@ Não forneça um corpo de solicitação para esse método.
 
 ## <a name="response"></a>Resposta
 
-Se tiver êxito, este método retornará um código de resposta e uma `200 OK` coleção de [objetos educationAssignment](../resources/educationassignment.md) no corpo da resposta.
+Se tiver êxito, este método retornará um `200 OK` código de resposta e uma coleção de [objetos educationAssignment](../resources/educationassignment.md) no corpo da resposta.
 
 ## <a name="examples"></a>Exemplos
 
@@ -251,8 +253,6 @@ GET https://graph.microsoft.com/v1.0/education/users/f3a5344e-dbde-48b0-be24-b5b
 #### <a name="response"></a>Resposta
 
 Se o usuário tentar consultar uma ID de usuário diferente da sua, este método retornará um `403 Forbidden` código de resposta.
-
-As `instructions` propriedades , e sempre serão `assignedDateTime` `assignTo` `resourcesFolderUrl` `webUrl` exibidas nulas.
 
 Este é um exemplo de resposta. 
 

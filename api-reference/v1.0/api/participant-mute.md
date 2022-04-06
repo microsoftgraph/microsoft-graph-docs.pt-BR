@@ -1,16 +1,16 @@
 ---
 title: 'participante: mute'
 description: Silencie um participante específico na chamada.
-author: ananmishr
+author: mkhribech
 ms.localizationpriority: medium
 ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: 348cda658a38db68658d12e7472871d7f5a7c558
-ms.sourcegitcommit: 25acfa7d0153336c9a35d30a1dd422aeadc1342c
+ms.openlocfilehash: 40b0f32948b32a970760d5a3d29e4bf39310ff55
+ms.sourcegitcommit: 10719607271380ea56076ccff5a3b774d0005773
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/03/2022
-ms.locfileid: "62346231"
+ms.lasthandoff: 04/01/2022
+ms.locfileid: "64608132"
 ---
 # <a name="participant-mute"></a>participante: mute
 
@@ -30,7 +30,7 @@ Para obter mais informações sobre como lidar com operações de mudo, consulte
 | :-------------- | :------------------------------------------ |
 | Delegado (conta corporativa ou de estudante)     | Não suportado        |
 | Delegado (conta pessoal da Microsoft) | Não suportado        |
-| Aplicativo     | Nenhum                                        |
+| Aplicativo     | Calls.JoinGroupCallsasGuest.All ou Calls.JoinGroupCalls.All |
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- { "blockType": "ignored" } -->

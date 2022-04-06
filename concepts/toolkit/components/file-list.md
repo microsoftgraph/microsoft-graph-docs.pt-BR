@@ -2,17 +2,17 @@
 title: Componente de lista de arquivos no microsoft Graph Toolkit
 description: O componente de lista de arquivos é usado para exibir uma lista de arquivos mostrando seu ícone e nome
 ms.localizationpriority: medium
-author: beth-panx
-ms.openlocfilehash: 1f3aea2c4d012cd4627167523540fcfeaaaf7651
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+author: sebastienlevert
+ms.openlocfilehash: c9a219ca02e10bc5470c71e006ad99512a0e6382
+ms.sourcegitcommit: cc9e5b3630cb84c48bbbb2d84a963b9562d1fb78
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59035343"
+ms.lasthandoff: 03/31/2022
+ms.locfileid: "64588873"
 ---
 # <a name="file-list-component-in-the-microsoft-graph-toolkit"></a>Componente de lista de arquivos no microsoft Graph Toolkit
 
-O componente Lista [](/graph/api/resources/onedrive) de Arquivos exibe uma lista de várias pastas e arquivos usando o nome do arquivo/pasta, um ícone e outras propriedades que você especificar. Esse componente usa o [componente mgt-file.](./file.md) Você pode especificar uma unidade ou site específico, exibir uma lista de arquivos com base no tipo de insight (tendência, usado ou compartilhado) ou fornecer consultas para uma lista personalizada de arquivos. O componente também fornece a opção de permitir que os usuários carreguem arquivos em um local especificado no One Drive ou SharePoint.
+O componente Lista de Arquivos exibe [](/graph/api/resources/onedrive) uma lista de várias pastas e arquivos usando o nome do arquivo/pasta, um ícone e outras propriedades que você especificar. Esse componente usa o [componente mgt-file](./file.md) . Você pode especificar uma unidade ou site específico, exibir uma lista de arquivos com base no tipo de insight (tendência, usado ou compartilhado) ou fornecer consultas para uma lista personalizada de arquivos. O componente também fornece a opção de permitir que os usuários carreguem arquivos em um local especificado no One Drive ou SharePoint.
 
 ## <a name="example"></a>Exemplo
 
@@ -30,20 +30,20 @@ Você pode usar várias propriedades para personalizar o componente.
 | --------- | -------- | ----------- |
 | file-list-query | fileListQuery | A consulta completa ou o caminho para a unidade ou site que contém a lista de arquivos a ser renderização. |
 | file-queries | fileQueries | Uma matriz de consultas de arquivo a serem renderizadas pelo componente. |
-| Nenhuma | arquivos | Uma matriz de arquivos para obter ou definir a lista de arquivos renderizados pelo componente. Use isso para acessar os arquivos carregados pelo componente. De definir esse valor para carregar seus próprios arquivos. |
+| none | arquivos | Uma matriz de arquivos para obter ou definir a lista de arquivos renderizados pelo componente. Use isso para acessar os arquivos carregados pelo componente. De definir esse valor para carregar seus próprios arquivos. |
 | tipo de insight | insightType | Definido para mostrar os arquivos de tendência, usados ou compartilhados do usuário. |
-| drive-id | driveId | ID da unidade à que a pasta pertence. Também deve fornecer um `item-id` ou `item-path` . |
-| group-id | groupId | ID do grupo ao que a pasta pertence. Também deve fornecer um `item-id` ou `item-path` . |
-| site-id | siteId | ID do site ao que a pasta pertence. Também deve fornecer um `{item-id}` ou `{item-path}` . Forneça `{list-id}` se você estiver fazendo referência a um arquivo de uma lista específica. |
-| item-id | itemId | ID da pasta. A consulta padrão é `/me/drive/items` . Forneça `{drive-id}` , , ou para consultar um local `{group-id}` `{site-id}` `{user-id}` específico. |
-| item-path | itemPath | Caminho do item da pasta (em relação à raiz). A consulta padrão é `/me/drive/root` . Forneça `{drive-id}` , , ou para consultar um local `{group-id}` `{site-id}` `{user-id}` específico. |
-| tamanho da página | pageSize | Um valor de número para indicar o número máximo de arquivos a renderizar em cada página. **Observação:** `page-size` não tem suporte com `insight-type` . |
+| drive-id | driveId | ID da unidade à que a pasta pertence. Também deve fornecer um ou `item-id` `item-path`. |
+| group-id | groupId | ID do grupo ao que a pasta pertence. Também deve fornecer um ou `item-id` `item-path`. |
+| site-id | siteId | ID do site ao que a pasta pertence. Também deve fornecer um ou `{item-id}` `{item-path}`. Forneça `{list-id}` se você estiver fazendo referência a um arquivo de uma lista específica. |
+| item-id | itemId | ID da pasta. A consulta padrão é `/me/drive/items`. Forneça `{drive-id}`, `{group-id}`, `{site-id}`ou `{user-id}` para consultar um local específico. |
+| item-path | itemPath | Caminho do item da pasta (em relação à raiz). A consulta padrão é `/me/drive/root`. Forneça `{drive-id}`, `{group-id}`, `{site-id}`ou `{user-id}` para consultar um local específico. |
+| tamanho da página | pageSize | Um valor de número para indicar o número máximo de arquivos a renderizar em cada página. **Observação:** `page-size` não tem suporte com `insight-type`. |
 | file-extensions | fileExtensions | Uma matriz de extensões de arquivo usadas para filtrar arquivos para mostrar. |
 | hide-more-files-button | hideMoreFilesButton | Boolean para indicar se deve mostrar um botão para renderizar mais arquivos. |
 | enable-file-upload | enableFileUpload | Boolean para habilitar ou desabilitar a funcionalidade de carregamento de arquivo. O valor padrão é `false`.  |
-| excluded-file-extensions | excludedFileExtensions | Matriz de cadeias de caracteres de extensões de arquivo a serem excluídas do carregamento de arquivo. Também deve definir o `enable-file-upload` atributo como `true` . |
-| max-file-size | maxFileSize | Um número que representa o tamanho máximo de carregamento de arquivo (KB). Também deve definir o `enable-file-upload` atributo como `true` . |
-| max-upload-file | maxUploadFile | Um número que representa o número máximo de arquivos permitidos para serem carregados. O valor padrão são `10` arquivos. Também deve definir o `enable-file-upload` atributo como `true` . |
+| excluded-file-extensions | excludedFileExtensions | Matriz de cadeias de caracteres de extensões de arquivo a serem excluídas do carregamento de arquivo. Também deve definir o `enable-file-upload` atributo como `true`. |
+| max-file-size | maxFileSize | Um número que representa o tamanho máximo de carregamento de arquivo (KB). Também deve definir o `enable-file-upload` atributo como `true`. |
+| max-upload-file | maxUploadFile | Um número que representa o número máximo de arquivos permitidos para serem carregados. O valor padrão são arquivos `10` . Também deve definir o `enable-file-upload` atributo como `true`. |
 
 O exemplo a seguir altera o comportamento do componente para buscar uma lista de arquivos de uma consulta específica.
 
@@ -151,7 +151,7 @@ Para saber mais, confira [componentes de estilo](../customize-components/style.m
 
 ## <a name="microsoft-graph-apis-and-permissions"></a>ApIs Graph Microsoft e permissões
 
-| Configuração | Permissões | API |
+| Configuração | Permissions | API |
 | ------------- | ----------------- | --- |
 | Padrão (nenhum identificador ou consulta fornecida) | Files.Read, Files.Read.All, Sites.Read.All | `GET /me/drive/root/children` |
 | Fornecer `enable-file-upload` | Files.Read, Files.Read.All, Sites.Read.All, Files.ReadWrite, Files.ReadWrite.All, Sites.ReadWrite.All | `GET /me/drive/root/children` <br /> `PUT /me/drive/root:/{filename}:/content` <br /> `POST /me/drive/root:/{filename}:/createUploadSession` |
@@ -176,13 +176,13 @@ Para saber mais, confira [componentes de estilo](../customize-components/style.m
 | Fornecer somente `{item-path}` | Files.Read, Files.Read.All, Sites.Read.All | `GET /me/drive/root:/{item-path}:/children` |
 | Fornecer somente `{item-path}` AND `enable-file-upload` | Files.Read, Files.Read.All, Sites.Read.All, Files.ReadWrite, Files.ReadWrite.All, Sites.ReadWrite.All | `GET /me/drive/root:/{item-path}:/children` <br /> `PUT /me/drive/root:/{item-path}/{filename}:/content` <br /> `POST /me/drive/root:/{item-path}/{filename}:/createUploadSession` |
 | `insight-type` é definido como tendência | Sites.Read.All | `GET /me/insights/trending` |
-| Fornecer `{user-id or upn}` AND está definido `insight-type` como `trending` | Sites.Read.All | `GET /users/{id or userPrincipalName}/insights/trending` |
+| Fornecer `{user-id or upn}` AND `insight-type` está definido como `trending` | Sites.Read.All | `GET /users/{id or userPrincipalName}/insights/trending` |
 | `insight-type` está definido como `used` | Sites.Read.All | `GET /me/insights/used` |
-| Fornecer `{user-id or upn}` AND está definido `insight-type` como `used` | Sites.Read.All | `GET /users/{id or userPrincipalName}/insights/used` |
+| Fornecer `{user-id or upn}` AND `insight-type` está definido como `used` | Sites.Read.All | `GET /users/{id or userPrincipalName}/insights/used` |
 | `insight-type` é definido como compartilhado | Sites.Read.All | `GET /me/insights/shared` |
-| Fornecer `{user-id or upn}` AND está definido `insight-type` como `shared` | Sites.Read.All | `GET /users/{id or userPrincipalName}/insights/shared?$filter=((lastshared/sharedby/id eq '${user-id}') and (resourceReference/type eq 'microsoft.graph.driveItem'))` |
+| Fornecer `{user-id or upn}` AND `insight-type` está definido como `shared` | Sites.Read.All | `GET /users/{id or userPrincipalName}/insights/shared?$filter=((lastshared/sharedby/id eq '${user-id}') and (resourceReference/type eq 'microsoft.graph.driveItem'))` |
 
-## <a name="events"></a>Events
+## <a name="events"></a>Eventos
 
 Evento | Quando é emitido | Dados personalizados | Cancelável | Bolhas | Funciona com modelo personalizado
 ------|-------------------|--------------|:-----------:|:---------:|:---------------------------:|
@@ -192,7 +192,7 @@ Para obter mais informações sobre como lidar com eventos, consulte [eventos](.
 
 ## <a name="templates"></a>Modelos
 
-O `mgt-file-list` componente dá suporte a vários [modelos](../customize-components/templates.md) que permitem substituir determinadas partes do componente. Para especificar um modelo, inclua um elemento dentro de um componente e de definir o valor como um dos tipos de dados `<template>` `data-type` listados na tabela a seguir.
+O `mgt-file-list` componente dá suporte a [vários modelos](../customize-components/templates.md) que permitem substituir determinadas partes do componente. Para especificar um modelo, inclua um `<template>` elemento dentro de um componente e de `data-type` definir o valor como um dos tipos de dados listados na tabela a seguir.
 
 | Tipo de dados | Contexto de dados | Descrição |
 | ----------- | -------------- | ------------ |
@@ -213,6 +213,6 @@ O controle usa o provedor de autenticação global descrito na [documentação d
 |`insightfileLists`|Lista de listas de arquivos de insight|Usado quando `insightType` fornecido.|
 
 > [!NOTE]
-> O `mgt-file-list` componente também usa o armazenamento de objetos em `fileQueries` `mgt-file` IndexedDB para armazenar arquivos em cache quando `fileQueries` é fornecido.
+> O `mgt-file-list` componente também usa o armazenamento `fileQueries` de objetos em `mgt-file` IndexedDB para armazenar arquivos em cache quando `fileQueries` é fornecido.
 
 Para obter detalhes sobre como configurar o cache, [consulte Caching](../customize-components/cache.md).

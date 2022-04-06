@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: sharad-sharma-msft
 ms.prod: education
 doc_type: resourcePageType
-ms.openlocfilehash: dfeaae5b422c1d77fa5bfd64f991ed47d85e1778
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 831cac7de7510ebc83cf6dc0ddbf5190d1e3d9d9
+ms.sourcegitcommit: c21fefa5c3c62df14147e7918cb43327f7d72e69
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59123661"
+ms.lasthandoff: 04/06/2022
+ms.locfileid: "64685065"
 ---
 # <a name="educationrubricoutcome-resource-type"></a>Tipo de recurso educationRubricOutcome
 
@@ -22,18 +22,19 @@ Um [educationOutcome](educationoutcome.md) que fornece uma rubrica de notas.
 
 | Método       | Tipo de retorno | Descrição |
 |:-------------|:------------|:------------|
-| [Atualizar educationOutcome](../api/educationoutcome-update.md) | [educationOutcome](educationoutcome.md) | Atualizar o objeto educationOutcome. |
+| [Atualizar educationOutcome](../api/educationoutcome-update.md) | [educationOutcome](educationoutcome.md) | Atualize o objeto educationOutcome. |
 
 ## <a name="properties"></a>Propriedades
 
 | Propriedade     | Tipo        | Descrição |
 |:-------------|:------------|:------------|
+|id|Cadeia de caracteres|Identificador exclusivo para educationRubricOutcome.|
 |lastModifiedBy|[identitySet](identityset.md)|O último usuário a modificar o recurso.|
 |lastModifiedDateTime|DateTimeOffset|Momento no tempo em que o recurso foi modificado pela última vez.  O tipo Timestamp representa informações de data e hora usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite UTC em 1 de janeiro de 2014 é `2014-01-01T00:00:00Z`|
 |publishedRubricQualityFeedback|[Coleção rubricQualityFeedbackModel](rubricqualityfeedbackmodel.md)|Uma cópia da propriedade rubricQualityFeedback que é feita quando a nota é liberada para o aluno.|
 |publishedRubricQualitySelectedLevels|[Coleção rubricQualitySelectedColumnModel](rubricqualityselectedcolumnmodel.md)|Uma cópia da propriedade rubricQualitySelectedLevels que é feita quando a nota é liberada para o aluno.|
-|rubricQualityFeedback|[Coleção rubricQualityFeedbackModel](rubricqualityfeedbackmodel.md)|Uma coleção de comentários específicos para cada qualidade desse rubric.|
-|rubricQualitySelectedLevels|[Coleção rubricQualitySelectedColumnModel](rubricqualityselectedcolumnmodel.md)|O nível que o professor selecionou para cada qualidade durante a classificação dessa atribuição.|
+|rubricQualityFeedback|[Coleção rubricQualityFeedbackModel](rubricqualityfeedbackmodel.md)|Uma coleção de comentários específicos para cada qualidade dessa rubrica.|
+|rubricQualitySelectedLevels|[Coleção rubricQualitySelectedColumnModel](rubricqualityselectedcolumnmodel.md)|O nível que o professor selecionou para cada qualidade ao classificar essa tarefa.|
 
 ## <a name="relationships"></a>Relações
 
@@ -54,6 +55,7 @@ Veja a seguir uma representação JSON do recurso.
 
 ```json
 {
+  "id": "String (identifier)",
   "publishedRubricQualityFeedback": [{"@odata.type": "microsoft.graph.rubricQualityFeedbackModel"}],
   "publishedRubricQualitySelectedLevels": [{"@odata.type": "microsoft.graph.rubricQualitySelectedColumnModel"}],
   "rubricQualityFeedback": [{"@odata.type": "microsoft.graph.rubricQualityFeedbackModel"}],

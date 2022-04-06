@@ -3,15 +3,15 @@ author: JeremyKelley
 description: O recurso DriveItemVersion representa uma versão específica de um DriveItem.
 ms.date: 09/17/2017
 title: DriveItemVersion
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: sharepoint
 doc_type: resourcePageType
-ms.openlocfilehash: ae02fdd643f0aaa0f085f96e7c08adae50a81c63
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: d6f2245fe02657d883d1e6646ac6ff6fce0187ea
+ms.sourcegitcommit: e5d5095e26dca6f434354a0970e789e94ee6afb0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47979620"
+ms.lasthandoff: 03/22/2022
+ms.locfileid: "63723159"
 ---
 # <a name="driveitemversion-resource-type"></a>Tipo de recurso DriveItemVersion
 
@@ -21,16 +21,15 @@ Namespace: microsoft.graph
 
 O recurso **DriveItemVersion** representa uma versão específica de um [DriveItem](driveitem.md).
 
-
 ## <a name="tasks-on-driveitemversion-resources"></a>Tarefas em recursos DriveItemVersion
 
 As tarefas a seguir estão disponíveis para recursos driveItemVersion.
 
-|            Tarefa comum             |         Método HTTP         |
-| :--------------------------------- | :-------------------------- |
-| [Listar versões][version-list]      | `GET /drive/items/{item-id}/versions`  |
-| [Obter versão][version-get]         | `GET /drive/items/{item-id}/versions/{version-id}`     |
-| [Obter conteúdo][content-get]        | `GET /drive/items/{item-id}/versions/{version-id}/content` |
+| Tarefa comum                        | Método HTTP                                                        |
+| :--------------------------------- | :----------------------------------------------------------------- |
+| [Listar versões][version-list]      | `GET /drive/items/{item-id}/versions`                              |
+| [Obter versão][version-get]         | `GET /drive/items/{item-id}/versions/{version-id}`                 |
+| [Obter conteúdo][content-get]        | `GET /drive/items/{item-id}/versions/{version-id}/content`         |
 | [Restaurar versão][version-restore] | `POST /drive/items/{item-id}/versions/{version-id}/restoreversion` |
 
 [version-list]: ../api/driveitem-list-versions.md
@@ -57,7 +56,7 @@ Na tabela anterior, os exemplos usam `/drive`, mas há muitas solicitações vá
 
 ## <a name="properties"></a>Propriedades
 
-|      Nome da propriedade       |                         Tipo                         |                               Descrição                               |
+| Propriedade                 | Tipo                                                 | Descrição                                                             |
 | :----------------------- | :--------------------------------------------------- | :---------------------------------------------------------------------- |
 | **id**                   | string                                               | A ID da versão. Somente leitura.                                       |
 | **lastModifiedBy**       | [IdentitySet](../resources/identityset.md)           | Identidade do usuário que modificou a versão pela última vez. Somente leitura.        |
@@ -69,9 +68,9 @@ Na tabela anterior, os exemplos usam `/drive`, mas há muitas solicitações vá
 
 A tabela a seguir define as relações que o recurso **driveItemVersion** tem com outros recursos.
 
-| Nome da relação |  Tipo  |            Descrição             |
-| :---------------- | :----- | :--------------------------------- |
-| **content**       | Fluxo | O fluxo de conteúdo da versão. |
+| Relação | Tipo   | Descrição                        |
+| :----------- | :----- | :--------------------------------- |
+| **content**  | Fluxo | O fluxo de conteúdo da versão. |
 
 <!--
 {
@@ -83,5 +82,3 @@ A tabela a seguir define as relações que o recurso **driveItemVersion** tem co
   "suppressions": []
 }
 -->
-
-

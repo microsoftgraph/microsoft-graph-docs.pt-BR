@@ -1,16 +1,16 @@
 ---
 title: Tipo de recurso caseOperation
 description: Uma entidade abstrata que representa um processo de Descoberta eDiscovery de longa duração.
-localization_priority: Normal
+ms.localizationpriority: medium
 author: mahage-msft
 ms.prod: ediscovery
 doc_type: resourcePageType
-ms.openlocfilehash: b94aeba03a49f2c49cbf991f0046422a18b20b50
-ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
+ms.openlocfilehash: 6ac5cdfefb33fea8edc4eff92ef8c0b808092de6
+ms.sourcegitcommit: 10719607271380ea56076ccff5a3b774d0005773
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50446174"
+ms.lasthandoff: 04/01/2022
+ms.locfileid: "64608125"
 ---
 # <a name="caseoperation-resource-type"></a>Tipo de recurso caseOperation
 
@@ -24,7 +24,7 @@ Uma entidade abstrata que representa um processo de Descoberta eDiscovery de lon
 - [tagOperation](../resources/ediscovery-tagoperation.md)
 - [estimateStatisticsOperation](../resources/ediscovery-estimatestatisticsoperation.md)
 
-Herda da [entidade](../resources/entity.md).
+Herda de [entidade](../resources/entity.md).
 
 ## <a name="methods"></a>Methods
 
@@ -34,11 +34,11 @@ Nenhum.
 
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|ação|[microsoft.graph.ediscovery.caseAction](../resources/ediscovery-caseoperation.md#caseaction-values)| O tipo de ação que a operação representa. Os valores possíveis são: `addToReviewSet` , `applyTags` , `contentExport` , `convertToPdf``estimateStatistics`|
+|ação|[microsoft.graph.ediscovery.caseAction](../resources/ediscovery-caseoperation.md#caseaction-values)| O tipo de ação que a operação representa. Os valores possíveis são: `addToReviewSet`,`applyTags`,`contentExport`,,`convertToPdf`,`estimateStatistics`, `purgeData`|
 |completedDateTime|DateTimeOffset| A data e a hora em que a operação foi concluída. |
 |createdBy|[identitySet](../resources/identityset.md)| O usuário que criou a operação. |
 |createdDateTime|DateTimeOffset| A data e a hora em que a operação foi criada. |
-|id|String| A ID da operação. Somente leitura. |
+|id|Cadeia de caracteres| A ID da operação. Somente leitura. |
 |percentProgress|Int32| O progresso da operação. |
 |resultInfo|[resultInfo](../resources/resultinfo.md)| Contém informações de resultados específicas de falha e sucesso. |
 |status|[microsoft.graph.ediscovery.caseOperationStatus](../resources/ediscovery-caseoperation.md#caseoperationstatus-values)| O status da operação de caso. Os possíveis valores são: `notStarted`, `submissionFailed`, `running`, `succeeded`, `partiallySucceeded`, `failed`.|
@@ -51,7 +51,8 @@ Nenhum.
 | applyTags | A operação representa documentos de marcação em massa em um conjunto de revisão para a consulta do conjunto de revisão especificado. |
 | contentExport | A operação representa uma exportação de conteúdo de um conjunto de revisão. |
 | convertToPdf | A operação representa a conversão de documentos em PDFs com redação. |
-| estimateStatistics  | A operação representa a pesquisa em serviços do Microsoft 365, como Exchange, SharePoint e OneDrive para empresas. |
+| estimateStatistics  | A operação representa a pesquisa Microsoft 365 serviços como Exchange, SharePoint e OneDrive para empresas. |
+| purgeData | A operação representa a repuração de conteúdo das cargas de trabalho de origem. |
 
 ### <a name="caseoperationstatus-values"></a>valores caseOperationStatus
 
